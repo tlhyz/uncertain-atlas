@@ -663,6 +663,45 @@ Backtests should use candlesticks (5m/15m/1h) with disk cache, not tick reconstr
 """
 
 
+TICKER_CACHE_PATH = CACHE_DIR / "futures_usdt_tickers.json"
+
+
+def ticker_cache_path() -> Path:
+    return TICKER_CACHE_PATH
+
+
+def fetch_gate_futures_tickers(
+    cache_only: bool = False,
+    force_refresh: bool = False,
+    path: Path | None = None,
+) -> list[dict[str, Any]]:
+    """
+    One-shot Gate USDT-M ticker dump (all contracts). Prefer this over per-symbol
+    ticker calls. Writes disk cache so `--cache-only` / reruns stay quota-cheap.
+    """
+    path = Path(path) if path else TICKER_CACHE_PATH
+    if cache_only:
+        if not path.exists():
+            raise RuntimeError(f"--cache-only but no ticker cache at {path}")
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(raw, list):
+            raise RuntimeError(f"Ticker cache at {path} is not a list")
+        print(f"[cache-only] {path.name} contracts={len(raw)} api_calls=0")
+        return raw
+
+    if force_refresh and path.exists():
+        print(f"[fetch] force-refresh tickers (ignore {path.name})")
+    url = "https://api.gateio.ws/api/v4/futures/usdt/tickers"
+    print("[fetch] futures usdt tickers (1 call)")
+    raw = _http_get_json(url, {})
+    if not isinstance(raw, list):
+        raise RuntimeError("Gate futures tickers: expected a JSON list")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(raw, ensure_ascii=False), encoding="utf-8")
+    print(f"[fetch] wrote {path} contracts={len(raw)}")
+    return raw
+
+
 def resolve_gate_futures_contract(hint: str) -> str:
     """
     Resolve a user hint (Chinese name / alias) to a Gate USDT-M futures contract name.
