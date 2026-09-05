@@ -57,6 +57,8 @@ def _overrides(args: argparse.Namespace) -> dict[str, Any]:
     o: dict[str, Any] = {}
     if getattr(args, "symbol", ""):
         o["symbol"] = args.symbol
+        # Reuse style YAML on another contract: don't keep the bundled sample unless asked.
+        o["prefer_sample"] = False
     if getattr(args, "interval", ""):
         o["interval"] = args.interval
     if getattr(args, "days", 0):

@@ -77,6 +77,43 @@ python -m qtb.cli backtest -c configs/backtest_dual_martingale.yaml \
   --symbol ETH_USDT --interval 15m --days 30 --stop-loss 0.7
 ```
 
+---
+
+## 牛来_USDT 激进双开默认配置（用户风格，未改保守）
+
+这是 **LONG + SHORT 同时开、小仓、深加仓缓冲** 的现金流打法，不是保守单边。
+
+| 项 | 默认 |
+|----|------|
+| 合约 | `牛来_USDT`（任意合约可用 `--symbol` 覆盖） |
+| 周期 / 天数 | `5m` / `18`（`--interval` / `--days`） |
+| 投资额 | LONG **950** / SHORT **1380** USDT |
+| 杠杆 | **5x** |
+| 最大加仓 | **90**（缓冲；实际层数通常远低于 90） |
+| 止损 | 投资额回撤 `uPnL / initial_margin`：**50%** 或 **70%** |
+| 费率 | 期货 VIP7 + **75%** 返佣 |
+| SL50 非对称 | LONG 倍数 1.4 / 跌 2.5% / 止盈 1.2%；SHORT 1.2 / 涨 4.0% / 1.2% |
+| SL70 非对称 | LONG 倍数 1.8 / 跌 1.8% / 止盈 1.2%；SHORT 1.3 / 涨 4.0% / 1.2% |
+
+默认 `prefer_sample: true`，读 `data_sample/niulai_USDT_5m_futures.csv`，**不打 Gate 配额**。  
+`--symbol` 覆盖其他合约时会关掉 sample，改走缓存 / 行情。
+
+```bash
+# SL50 / SL70 固定参数回测（本地 sample）
+python -m qtb.cli backtest -c configs/backtest_niulai_aggressive_sl50.yaml
+python -m qtb.cli backtest -c configs/backtest_niulai_aggressive_sl70.yaml
+
+# 紧凑网格寻参 + 防过拟合（train/test、walk-forward、regime、Monte Carlo）
+python -m qtb.cli optimize -c configs/optimize_niulai_aggressive_sl50.yaml
+python -m qtb.cli optimize -c configs/optimize_niulai_aggressive_sl70.yaml
+
+# 同一套风格换任意合约（磁盘缓存，省配额）
+python -m qtb.cli backtest -c configs/backtest_niulai_aggressive_sl50.yaml \
+  --symbol ETH_USDT --interval 5m --days 18 --cache-only
+python -m qtb.cli optimize -c configs/optimize_niulai_aggressive_sl70.yaml \
+  --symbol BTC_USDT --days 14 --stop-loss 0.7 --cache-only
+```
+
 产物在 `outputs/<run_name>/`：
 
 | 文件 | 内容 |

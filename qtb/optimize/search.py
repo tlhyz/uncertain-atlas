@@ -14,6 +14,19 @@ from .antifit import anti_overfit_report, neighbor_stability
 from .score import composite_score
 
 
+def _custom_grid(opt: dict[str, Any]) -> dict[str, list] | None:
+    raw = opt.get("params") or opt.get("search") or opt.get("grid_params")
+    if not isinstance(raw, dict) or not raw:
+        return None
+    out: dict[str, list] = {}
+    for k, v in raw.items():
+        if isinstance(v, list) and v:
+            out[str(k)] = list(v)
+        elif v is not None and not isinstance(v, dict):
+            out[str(k)] = [v]
+    return out or None
+
+
 def _grid_for(style: str, size: str) -> dict[str, list]:
     if style in {"dual_martingale", "martingale", "aggressive_dual", "aggressive-dual"}:
         if size == "full":
@@ -80,7 +93,7 @@ def run_optimize(
     top_k = int(opt.get("top_k") or 8)
     weights = opt.get("weights") or {}
     style = str((cfg.get("strategy") or {}).get("name") or "dual_martingale")
-    grid = _grid_for(style, size)
+    grid = _custom_grid(opt) or _grid_for(style, size)
     keys = list(grid.keys())
     combos = list(product(*[grid[k] for k in keys]))
 
@@ -123,7 +136,8 @@ def run_optimize(
     best = top[0] if top else None
 
     antifit: dict[str, Any] = {}
-    if best is not None:
+    anti_on = opt.get("anti_overfit", True)
+    if best is not None and anti_on:
         best_cfg = _apply_params(cfg, best["params"])
 
         def _run_m(part: pd.DataFrame, c=best_cfg) -> dict[str, Any]:

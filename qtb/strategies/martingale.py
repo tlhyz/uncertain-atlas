@@ -11,11 +11,30 @@ from qtb.engine.types import Book, OrderIntent
 from .base import Strategy
 
 
+_SKIP_SIDE_PREFIX = {"long_capital", "short_capital"}
+
+
+def side_martingale_cfg(cfg: dict[str, Any], direction: str) -> dict[str, Any]:
+    """Shared keys + optional nested {long|short} + prefixed long_* / short_*."""
+    side = "long" if str(direction).lower() == "long" else "short"
+    out = {k: v for k, v in cfg.items() if not isinstance(v, dict)}
+    nested = cfg.get(side)
+    if isinstance(nested, dict):
+        out.update(nested)
+    prefix = f"{side}_"
+    for k, v in cfg.items():
+        if k in _SKIP_SIDE_PREFIX or not k.startswith(prefix):
+            continue
+        out[k[len(prefix) :]] = v
+    return out
+
+
 def martingale_intents(book: Book, bar: dict[str, Any], cfg: dict[str, Any]) -> list[OrderIntent]:
     if book.halted or book.liquidated:
         return []
     if book.stopped_adding and book.in_position:
         return []  # risk layer handles exits; no new adds
+    cfg = side_martingale_cfg(cfg, book.direction)
     base = float(cfg.get("base_order_quote") or 20.0)
     mult = float(cfg.get("multiplier") or 1.5)
     drop = float(cfg.get("add_drop_pct") or 0.015)
