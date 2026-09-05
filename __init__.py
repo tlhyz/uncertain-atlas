@@ -1,3 +1,5 @@
-"""Gate.io multi-coin futures/spot grid + Martingale backtesting toolkit with fee rebates."""
+"""Gate.io multi-coin futures/spot grid + Martingale toolkit (see the `qtb` package)."""
 
-__version__ = "0.2.0"
+from qtb import __version__
+
+__all__ = ["__version__"]

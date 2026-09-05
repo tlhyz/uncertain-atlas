@@ -1,0 +1,55 @@
+mode: backtest
+symbol: BTC_USDT
+interval: 1h
+days: 90
+market: futures
+prefer_sample: true
+sample_path: data_sample/BTCUSDT_1h_sample.csv
+output_dir: outputs
+run_name: demo_btc_optimize
+
+costs:
+  vip_tier: 7
+  rebate_rate: 0.75
+  slippage_bps: 1.0
+  quanto: 0.0001
+  apply_funding: true
+  maintenance_rate: 0.005
+
+strategy:
+  name: dual_martingale
+  leverage: 5.0
+  long_capital: 950.0
+  short_capital: 1380.0
+  cooldown_bars: 0
+
+risk:
+  investment_sl_pct: 0.50
+  max_drawdown_stop_pct: 0.45
+  stop_adding_float_loss_pct: 0.35
+  force_exit_before_liq_buffer_pct: 0.20
+  stop_if_price_breaks_range: false
+
+optimize:
+  grid: compact
+  train_ratio: 0.70
+  walk_forward_folds: 3
+  monte_carlo_paths: 40
+  regime_splits: 3
+  top_k: 8
+  heatmap_x: add_drop_pct
+  heatmap_y: take_profit_pct
+  weights:
+    return: 1.0
+    max_dd: 0.9
+    sharpe: 0.6
+    calmar: 0.5
+    win_rate: 0.25
+    profit_factor: 0.35
+    max_float_loss: 0.5
+    liq_risk: 2.0
+    fee_ratio: 0.3
+    stability: 0.4
+
+live:
+  dry_run: true

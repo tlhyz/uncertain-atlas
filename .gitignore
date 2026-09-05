@@ -6,7 +6,7 @@ __pycache__/
 .mypy_cache/
 cache/
 *.log
-# generated optimize artifacts (keep code; re-run cli to regenerate)
+# generated optimize artifacts from the legacy scripts
 opt_*_results.json
 opt_*_run.log
 opt_*_demo_snippet.txt

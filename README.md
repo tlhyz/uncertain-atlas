@@ -1,134 +1,177 @@
-# Gate.io 多币种网格 / 马丁研究工具（期货激进双开 + 现货）
+# qtb — Gate USDT-M 永续回测 / 寻参 / 报告框架
 
-面向 **Gate VIP7 + 返佣** 的现金流式回测工具包。  
-支持任意 USDT 永续合约（`BTC_USDT` / `ETH_USDT` / `牛来_USDT` 等中文合约名）。  
-**不是套利**，**不含实盘下单**，公开行情 **不需要 API Key**。
+面向 **Gate VIP7 + 高返佣** 的现金流型量化研究工具。  
+任意 USDT 永续合约（`BTC_USDT` / `ETH_USDT` / `牛来_USDT`）。  
+默认 **只做回测**。实盘模块存在，但 **强制 DRY_RUN**，没有真实下单通道。
 
-## 功能
+**不是套利。公开行情不需要 API Key。不要把回测当承诺收益。**
 
-- `data.py`：Gate 公开 K 线 + **磁盘缓存 / 增量补齐** + 429 退避；可选少量 REST trades；文档化 WebSocket `futures.trades`
-- `strategies/futures_martingale.py`：USDT 永续多空马丁（杠杆、保证金、投资额止损）
-- `strategies/grid.py` / `martingale.py`：现货网格 / 现货马丁
-- `optimize_futures.py`：激进双开（LONG+SHORT）参数搜索，`--stop-loss 0.5|0.7`
-- `fees.py`：`effective_fee = base_fee * (1 - rebate_rate)`（现货 VIP7+70% / 期货 VIP7+75%）
-- `cli.py`：统一命令行
+激进双开马丁（LONG + SHORT 对冲式加仓）是一等公民策略，不是「不建议」的边角功能。投资额止损默认提供 **50% / 70%** 两档（`risk.investment_sl_pct`）。
+
+---
+
+## 架构
+
+```
+qtb/
+  data/        K 线磁盘缓存 + 增量拉取、资金费、合约 quanto
+  costs/       VIP 费率 / 返佣 / 滑点 / 资金费 / 最小下单
+  strategies/  classic_grid / trend_grid / dual_grid / martingale / dual_martingale
+  risk/        止盈止损、回撤停机、接近强平强平前离场、破网格停机
+  engine/      统一逐 K 回测引擎
+  optimize/    复合打分 + 训练/测试、滚动、多行情、Monte Carlo、参数稳定
+  report/      成交 CSV、热力图、权益/回撤/持仓图、中文摘要
+  live/        实盘桩：默认 DRY_RUN；无私钥、无下单
+configs/       YAML / TOML
+outputs/       每次运行的产物
+```
+
+旧脚本（`optimize_futures.py`、`cli.py` / `gate-gm`）仍可用，核心实现已迁到 `qtb/`。
+
+---
 
 ## 环境
 
+Python 3.11+。
+
 ```bash
-cd /workspace/gate-grid-martingale
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+# 或: pip install -e .
 ```
 
-## 任意币种怎么跑
-
-合约名与 Gate 永续一致。中文合约直接写（或 URL 编码后的名字）；CLI 会交给 httpx 自动编码。
+入口：
 
 ```bash
-# 拉 K 线并写入 cache/（第二次几乎 0 次 API）
-python cli.py fetch --symbol BTC_USDT --interval 5m --days 30
-python cli.py fetch --symbol ETH_USDT --interval 15m --days 30
-python cli.py fetch --symbol 牛来_USDT --interval 5m --days 18
-
-# 只用本地缓存（断网 / 省配额）
-python cli.py fetch --symbol BTC_USDT --interval 5m --days 14 --cache-only
-
-# 激进双开优化（默认 compact 网格，止损 50%）
-python cli.py optimize --symbol BTC_USDT --stop-loss 0.5 --style aggressive-dual --days 14
-
-# 止损 70% + 中等搜索
-python cli.py optimize --symbol 牛来_USDT --stop-loss 0.7 --grid medium --days 18
-
-# 快速 demo（固定参数双开，不搜参）
-python cli.py demo --symbol BTC_USDT --stop-loss 0.7 --days 14
-
-# 现货对比（旧入口仍可用）
-python cli.py demo --style spot --symbol BTC_USDT --interval 1h --days 60 --prefer gate
+python -m qtb.cli --help
+# 安装后也可: qtb --help
 ```
 
-### 搜索网格大小
+---
 
-| `--grid` | 约每侧组合数 | 适用 |
-|----------|-------------|------|
-| `compact`（默认） | ~数百 | 日常多币 / `--days 14` |
-| `medium` | ~数千 | 更细搜索 |
-| `full` | ≈1 万+ | 重搜索；耗时长，按需使用 |
+## 怎么跑
 
-`full` 太重时请改用 `compact` / `medium`，不要为了省事去拉 tick 历史。
+所有关键参数写在 `configs/*.yaml`，不要改代码里的魔法数。
 
-## 配额策略（重要）
+```bash
+# 回测（默认）。示例用本地 BTC 1h sample，不打 API
+python -m qtb.cli backtest -c configs/backtest_dual_martingale.yaml
 
-Gate 公开接口有速率限制。本工具默认按「省配额」设计：
+# 经典网格 / 趋势网格 / 对称双网格
+python -m qtb.cli backtest -c configs/backtest_classic_grid.yaml
+python -m qtb.cli backtest -c configs/backtest_trend_grid.yaml
+python -m qtb.cli backtest -c configs/backtest_dual_grid.yaml
 
-1. **回测用 K 线，不用逐笔**  
-   优先 `5m` / `15m` / `1h`。用 REST `/futures/usdt/candlesticks`（或 spot candlesticks）。
-2. **磁盘缓存 + 增量**  
-   文件在 `cache/futures_<合约>_<周期>_candles.csv`。第二次 `fetch` / `optimize` 若无缺口 → **api_calls=0**。只补左/右缺口，不整段重下。
-3. **`--cache-only`**  
-   强制不访问网络；缓存不足则报错退出。
-4. **429 退避**  
-   遇到 HTTP 429 会指数 sleep / 尊重 `Retry-After`，并打印 `[rate-limit]`。
-5. **不要用 REST trades 拼 18 天历史**  
-   `python cli.py fetch --symbol BTC_USDT --trades` 只会拉**一小段**最近成交作样例。多日 tick = 配额自杀。  
-   **实盘/直播行情**请用 WebSocket：
+# 寻参 + 防过拟合（train/test、walk-forward、regime、Monte Carlo、邻域稳定）
+python -m qtb.cli optimize -c configs/optimize.yaml
+
+# 从已有 outputs/<run> 重看摘要
+python -m qtb.cli report outputs/demo_btc_dual_martingale
+
+# 多合约 / 多周期
+python -m qtb.cli batch -c configs/batch.yaml
+
+# 覆盖 CLI（不必改 YAML）
+python -m qtb.cli backtest -c configs/backtest_dual_martingale.yaml \
+  --symbol ETH_USDT --interval 15m --days 30 --stop-loss 0.7
+```
+
+产物在 `outputs/<run_name>/`：
+
+| 文件 | 内容 |
+|------|------|
+| `trades.csv` | 逐笔成交 |
+| `equity_curve.png` | 权益曲线 |
+| `drawdown_curve.png` | 回撤 |
+| `position_chart.png` | 净持仓 |
+| `parameter_heatmap.png` | 寻参热力图（optimize） |
+| `summary.md` | 中文摘要 |
+| `metrics.json` | 数值指标 |
+| `config.used.yaml` | 实际用到的配置 |
+
+---
+
+## 策略与风控
+
+| `strategy.name` | 含义 |
+|-----------------|------|
+| `classic_grid` | 经典网格 |
+| `trend_grid` | EMA 定方向的趋势网格 |
+| `dual_grid` | 多空对称网格（可加 `martingale_addon`） |
+| `martingale` | 单边马丁 |
+| `dual_martingale` | **激进双开**（默认） |
+
+止盈：单笔、组合、分批/`scaled_tp`、移动止盈、持仓 bar 数。  
+止损：单笔价格%、**投资额 50%/70%**、组合权益、最大回撤停机、浮亏达到阈值停止加仓、估计强平价前强平、价格跌破网格区间停机。
+
+复合分同时看：收益、最大回撤、Sharpe、Calmar、胜率、盈亏比、最大浮亏、强平风险、费用比、参数稳定性。强平直接重罚。
+
+---
+
+## 配额（重要）
+
+Gate 公开接口有速率限制。本框架按「省配额」设计：
+
+1. **回测用 K 线，不用逐笔。** 优先 `5m` / `15m` / `1h`。接口：`/futures/usdt/candlesticks`。
+2. **磁盘缓存 + 增量。** `cache/futures_<合约>_<周期>_candles.csv`。无缺口时 `api_calls=0`。
+3. **`--cache-only` / `prefer_sample: true`。** 断网或演示用本地 CSV。
+4. **HTTP 429** 指数退避，尊重 `Retry-After`。
+5. **不要用 REST trades 拼多日历史。** 直播用 WebSocket：
 
 ```text
 wss://fx-ws.gateio.ws/v4/ws/usdt
 channel: futures.trades
-payload: ["BTC_USDT"]   # 中文合约名同理
+payload: ["BTC_USDT"]
 ```
 
-查看内置说明：
+资金费：`/futures/usdt/funding_rate`，同样磁盘缓存；拉不到则用 8h 合成费率，保证成本模型仍在跑。
 
-```bash
-python cli.py fetch --symbol BTC_USDT --show-ws-doc
-```
+---
 
-## 费用模型（保持 VIP7+返佣）
+## 费用（VIP 可配）
 
-| 市场 | Maker 基础 | Taker 基础 | 返佣 | 有效 Maker / Taker |
-|------|------------|------------|------|---------------------|
+`effective_fee = base_fee * (1 - rebate_rate)`
+
+| 市场 | Maker 基础 | Taker 基础 | 默认返佣 | 有效 Maker / Taker |
+|------|------------|------------|----------|---------------------|
 | 现货 VIP7 | 0.08% | 0.085% | 70% | ≈0.024% / 0.0255% |
 | 期货 VIP7 | 0.008% | 0.02% | 75% | ≈0.002% / 0.005% |
 
+另计入：滑点 bps、资金费、quanto / 最小张数 / 最小名义。
+
+---
+
+## 实盘安全
+
+- 配置默认 `mode: backtest`，`live.dry_run: true`。
+- `LiveBroker.send_order` **不会**打私有下单 API。
+- 想「关闭 DRY_RUN」必须同时：环境变量 `ALLOW_LIVE=1` **且** `live.dry_run: false`。即便如此，模块仍会拒绝：`LiveStubError`（没有下单实现）。
+- 不要把 API Key 放进仓库。
+
 ```bash
-python cli.py fee-example --notional 10000
-python cli.py fee-example --futures --notional 10000
+python -m qtb.cli live -c configs/live.toml --ping
+# 输出 status=dry_run, filled=false
 ```
 
-## 策略风格（激进双开）
+---
 
-默认 **不**改成保守单边：
-
-- LONG + SHORT 同时跑（双开对冲风格）
-- 小仓（默认 LONG 950 / SHORT 1380，可用 `--long-cap` / `--short-cap` 改）
-- 杠杆默认 5x（`--leverage`）
-- 深 `max_adds`（搜索含 40/90，展示时可 buf 到 90）
-- `--stop-loss 0.5|0.7`：按 **投资额回撤**（`uPnL / initial_margin ≤ -SL`）止损平仓后开新周期
-
-注意：Gate UI 若把「止损%」解释成相对均价的**价格%**，与本回测经济含义不同；填写前请对照帮助中心。
-
-## 其他命令
+## 测试
 
 ```bash
-python cli.py recommend
-python cli.py backtest --rebate 0.70
-python cli.py gen-sample
 pytest -q
 ```
 
-## 风险提示
+覆盖：费用/滑点/资金费/quanto、止盈止损触发、复合分、DRY_RUN 守卫。
 
-1. 网格 / 马丁会占用资金，单边行情可能深度套牢或触发止损 / 强平；回测盈利 ≠ 未来盈利。  
-2. 仅研究用：无实盘、无密钥、无下单。  
-3. 返佣降低费用拖累，不能消除趋势与杠杆风险。  
-4. 未计入资金费、滑点、挂单失败。  
-5. 请只用闲置资金；作者不对任何资金损失负责。
+---
 
-## 目录提示
+## 风险声明
 
-- `cache/`：K 线磁盘缓存（可删，下次会重新拉）
-- `data_sample/`：示例 / 离线 CSV
-- `opt_*_results.json` / `opt_*_report.md`：优化输出
+1. 网格 / 马丁会占用资金；单边行情可能深套、反复止损或触发强平。回测盈利 ≠ 未来盈利。
+2. 仅研究用。无密钥、无真实下单。`live` 是桩。
+3. 返佣只降低费用拖累，不能消除趋势与杠杆风险。
+4. 强平价、维持保证金、部分成交、挂单失败与交易所不完全一致；这是研究级近似。
+5. 只用闲置资金。作者不对任何资金损失负责。
+
+Gate UI 若把「止损%」解释成相对均价的**价格%**，与本框架默认的 **投资额回撤止损**（`uPnL / initial_margin`）含义不同，下单前请对照帮助中心。
