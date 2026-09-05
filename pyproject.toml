@@ -1,20 +1,22 @@
 [project]
 name = "gate-grid-martingale"
-version = "0.2.0"
-description = "Gate.io multi-coin futures/spot grid + Martingale backtesting with VIP fee rebates"
+version = "0.3.0"
+description = "Gate USDT-M backtest / optimize / report framework (VIP fee rebates, dual Martingale)"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
   "pandas>=2.0",
   "numpy>=1.24",
   "httpx>=0.27",
+  "pyyaml>=6.0",
+  "matplotlib>=3.7",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
-plot = ["matplotlib>=3.7"]
 
 [project.scripts]
+qtb = "qtb.cli:main"
 gate-gm = "cli:main"
 
 [tool.pytest.ini_options]

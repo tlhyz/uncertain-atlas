@@ -1,0 +1,5 @@
+mode = "backtest"
+
+[live]
+dry_run = true
+note = "Live is a stub. Real orders require ALLOW_LIVE=1 AND dry_run=false, and still have no order path."
