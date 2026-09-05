@@ -1,7 +1,7 @@
 [project]
 name = "gate-grid-martingale"
-version = "0.1.0"
-description = "Gate.io spot grid + Martingale backtesting with VIP fee rebates"
+version = "0.2.0"
+description = "Gate.io multi-coin futures/spot grid + Martingale backtesting with VIP fee rebates"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

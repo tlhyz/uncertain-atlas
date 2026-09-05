@@ -1,22 +1,19 @@
-# Gate.io 现货网格 + 马丁格尔 回测工具包
+# Gate.io 多币种网格 / 马丁研究工具（期货激进双开 + 现货）
 
-面向 **Gate VIP7 + 现货返佣 70%** 的现金流式（cash-flow）网格 / 马丁研究工具。  
-**不是套利**，不含实盘下单，不需要 API Key。
+面向 **Gate VIP7 + 返佣** 的现金流式回测工具包。  
+支持任意 USDT 永续合约（`BTC_USDT` / `ETH_USDT` / `牛来_USDT` 等中文合约名）。  
+**不是套利**，**不含实盘下单**，公开行情 **不需要 API Key**。
 
 ## 功能
 
-- `fees.py`：手续费 / 返佣公式 `effective_fee = base_fee * (1 - rebate_rate)`
-- `strategies/grid.py`：现货网格模拟
-- `strategies/martingale.py`：现货马丁（加仓回本止盈，无杠杆）
-- `data.py`：拉取公开 K 线（默认 **Binance 公开 klines** 作为流动性代理；失败时尝试 Gate 公开接口；再失败用内置 CSV）
-- `backtest.py`：净盈亏、最大回撤、循环次数、费用拖累、胜率；无返佣 vs 有返佣对比
-- `optimize.py`：对间距 / 止盈 / 乘数 / 最大加仓做简单网格搜索
-- `cli.py`：命令行入口
+- `data.py`：Gate 公开 K 线 + **磁盘缓存 / 增量补齐** + 429 退避；可选少量 REST trades；文档化 WebSocket `futures.trades`
+- `strategies/futures_martingale.py`：USDT 永续多空马丁（杠杆、保证金、投资额止损）
+- `strategies/grid.py` / `martingale.py`：现货网格 / 现货马丁
+- `optimize_futures.py`：激进双开（LONG+SHORT）参数搜索，`--stop-loss 0.5|0.7`
+- `fees.py`：`effective_fee = base_fee * (1 - rebate_rate)`（现货 VIP7+70% / 期货 VIP7+75%）
+- `cli.py`：统一命令行
 
 ## 环境
-
-- Python 3.11+
-- 建议使用虚拟环境：
 
 ```bash
 cd /workspace/gate-grid-martingale
@@ -25,76 +22,113 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 一键 Demo
+## 任意币种怎么跑
+
+合约名与 Gate 永续一致。中文合约直接写（或 URL 编码后的名字）；CLI 会交给 httpx 自动编码。
 
 ```bash
-cd /workspace/gate-grid-martingale
-source .venv/bin/activate   # 若已创建
-python cli.py demo --symbol BTCUSDT --interval 1h --days 90
+# 拉 K 线并写入 cache/（第二次几乎 0 次 API）
+python cli.py fetch --symbol BTC_USDT --interval 5m --days 30
+python cli.py fetch --symbol ETH_USDT --interval 15m --days 30
+python cli.py fetch --symbol 牛来_USDT --interval 5m --days 18
+
+# 只用本地缓存（断网 / 省配额）
+python cli.py fetch --symbol BTC_USDT --interval 5m --days 14 --cache-only
+
+# 激进双开优化（默认 compact 网格，止损 50%）
+python cli.py optimize --symbol BTC_USDT --stop-loss 0.5 --style aggressive-dual --days 14
+
+# 止损 70% + 中等搜索
+python cli.py optimize --symbol 牛来_USDT --stop-loss 0.7 --grid medium --days 18
+
+# 快速 demo（固定参数双开，不搜参）
+python cli.py demo --symbol BTC_USDT --stop-loss 0.7 --days 14
+
+# 现货对比（旧入口仍可用）
+python cli.py demo --style spot --symbol BTC_USDT --interval 1h --days 60 --prefer gate
 ```
 
-将完整 stdout 保存示例：
+### 搜索网格大小
+
+| `--grid` | 约每侧组合数 | 适用 |
+|----------|-------------|------|
+| `compact`（默认） | ~数百 | 日常多币 / `--days 14` |
+| `medium` | ~数千 | 更细搜索 |
+| `full` | ≈1 万+ | 重搜索；耗时长，按需使用 |
+
+`full` 太重时请改用 `compact` / `medium`，不要为了省事去拉 tick 历史。
+
+## 配额策略（重要）
+
+Gate 公开接口有速率限制。本工具默认按「省配额」设计：
+
+1. **回测用 K 线，不用逐笔**  
+   优先 `5m` / `15m` / `1h`。用 REST `/futures/usdt/candlesticks`（或 spot candlesticks）。
+2. **磁盘缓存 + 增量**  
+   文件在 `cache/futures_<合约>_<周期>_candles.csv`。第二次 `fetch` / `optimize` 若无缺口 → **api_calls=0**。只补左/右缺口，不整段重下。
+3. **`--cache-only`**  
+   强制不访问网络；缓存不足则报错退出。
+4. **429 退避**  
+   遇到 HTTP 429 会指数 sleep / 尊重 `Retry-After`，并打印 `[rate-limit]`。
+5. **不要用 REST trades 拼 18 天历史**  
+   `python cli.py fetch --symbol BTC_USDT --trades` 只会拉**一小段**最近成交作样例。多日 tick = 配额自杀。  
+   **实盘/直播行情**请用 WebSocket：
+
+```text
+wss://fx-ws.gateio.ws/v4/ws/usdt
+channel: futures.trades
+payload: ["BTC_USDT"]   # 中文合约名同理
+```
+
+查看内置说明：
 
 ```bash
-python cli.py demo --symbol BTCUSDT --interval 1h --days 90 2>&1 | tee demo_output.txt
+python cli.py fetch --symbol BTC_USDT --show-ws-doc
 ```
 
-离线 / 网络失败时：
+## 费用模型（保持 VIP7+返佣）
+
+| 市场 | Maker 基础 | Taker 基础 | 返佣 | 有效 Maker / Taker |
+|------|------------|------------|------|---------------------|
+| 现货 VIP7 | 0.08% | 0.085% | 70% | ≈0.024% / 0.0255% |
+| 期货 VIP7 | 0.008% | 0.02% | 75% | ≈0.002% / 0.005% |
 
 ```bash
-python cli.py gen-sample
-python cli.py demo --prefer sample
+python cli.py fee-example --notional 10000
+python cli.py fee-example --futures --notional 10000
 ```
+
+## 策略风格（激进双开）
+
+默认 **不**改成保守单边：
+
+- LONG + SHORT 同时跑（双开对冲风格）
+- 小仓（默认 LONG 950 / SHORT 1380，可用 `--long-cap` / `--short-cap` 改）
+- 杠杆默认 5x（`--leverage`）
+- 深 `max_adds`（搜索含 40/90，展示时可 buf 到 90）
+- `--stop-loss 0.5|0.7`：按 **投资额回撤**（`uPnL / initial_margin ≤ -SL`）止损平仓后开新周期
+
+注意：Gate UI 若把「止损%」解释成相对均价的**价格%**，与本回测经济含义不同；填写前请对照帮助中心。
 
 ## 其他命令
 
 ```bash
-python cli.py fee-example --notional 10000 --rebate 0.70
 python cli.py recommend
-python cli.py backtest --rebate 0.70 --grid-spacing 0.008 --mart-tp 0.012
-python cli.py optimize --days 60
+python cli.py backtest --rebate 0.70
+python cli.py gen-sample
 pytest -q
 ```
 
-## VIP7 + 70% 现货返佣费用示例
+## 风险提示
 
-| 项目 | 数值 |
-|------|------|
-| VIP7 现货 Maker 基础费率 | 0.08% = 0.0008 |
-| VIP7 现货 Taker 基础费率 | 0.085% = 0.00085 |
-| 现货返佣 | 70% |
-| 有效 Maker | `0.0008 * (1 - 0.70) = 0.00024`（0.024%） |
-| 有效 Taker | `0.00085 * 0.30 = 0.000255`（0.0255%） |
+1. 网格 / 马丁会占用资金，单边行情可能深度套牢或触发止损 / 强平；回测盈利 ≠ 未来盈利。  
+2. 仅研究用：无实盘、无密钥、无下单。  
+3. 返佣降低费用拖累，不能消除趋势与杠杆风险。  
+4. 未计入资金费、滑点、挂单失败。  
+5. 请只用闲置资金；作者不对任何资金损失负责。
 
-举例：10,000 USDT Maker 成交  
+## 目录提示
 
-- 无返佣手续费：`10000 * 0.0008 = 8 USDT`  
-- 有返佣手续费：`10000 * 0.00024 = 2.4 USDT`  
-- **节省 5.6 USDT（约 70%）**
-
-期货返佣（75%）仅作对照说明；本工具默认做 **现货**，更符合「少用高杠杆马丁」的偏好。
-
-## 数据来源说明
-
-1. **默认**：Gate `GET /api/v4/spot/candlesticks`（公开、免 Key，自动分页，每页最多 1000 根）。  
-2. **备选**：Binance `GET /api/v3/klines` / `data-api.binance.vision`（部分地区可能 HTTP 451）。  
-3. **兜底**：`data_sample/BTCUSDT_1h_sample.csv` 或 `cli.py gen-sample` 合成数据。
-
-价格序列用于相对回测与费用敏感性分析，不保证与 Gate 成交价逐笔一致。
-
-## 风险提示（必读）
-
-1. **网格 / 马丁会占用资金并可能在单边行情中深度套牢**；回测盈利 ≠ 未来盈利。  
-2. 本工具 **仅研究用**，无实盘、无密钥、无下单接口。  
-3. 返佣降低费用拖累，**不能消除趋势风险**；马丁加仓会放大回撤。  
-4. 请只用闲置资金做小仓位实验；不要用高杠杆期货马丁硬刚行情。  
-5. 作者不对任何资金损失负责。
-
-## 推荐起步参数（VIP7 + 70% 返佣费用优势下）
-
-运行 `python cli.py recommend` 或 demo 结尾会打印，大致为：
-
-- **现货网格**：间距约 0.8%，约 24 格，单格 50 USDT（Maker）  
-- **现货马丁**：基数 80 USDT，乘数 1.4，跌 1.8% 加仓，均价上 1.2% 止盈，最多加 4 次  
-
-有返佣后费用拖累下降，可略微收紧间距 / 止盈；仍需严格限制最大加仓。
+- `cache/`：K 线磁盘缓存（可删，下次会重新拉）
+- `data_sample/`：示例 / 离线 CSV
+- `opt_*_results.json` / `opt_*_report.md`：优化输出

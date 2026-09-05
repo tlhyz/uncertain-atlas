@@ -56,10 +56,10 @@ VIP7_SPOT_70 = FeeConfig(
 )
 
 VIP7_FUTURES_75 = FeeConfig(
-    maker_rate=0.0002,  # illustrative futures maker; override if needed
-    taker_rate=0.0005,
-    rebate_rate=0.75,
-    label="VIP7 + 75% futures rebate (illustrative)",
+    maker_rate=0.00008,  # VIP7 futures maker 0.008%
+    taker_rate=0.0002,   # VIP7 futures taker 0.02%
+    rebate_rate=0.75,    # futures rebate 75%
+    label="VIP7 futures + 75% rebate (eff ~0.002%/0.005%)",
 )
 
 
@@ -84,3 +84,5 @@ def compare_fee_drag(
         "effective_rate": effective_fee(base_fee, rebate_rate),
         "base_rate": base_fee,
     }
+
+VIP7_FUTURES_75_EXACT = VIP7_FUTURES_75  # alias
