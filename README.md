@@ -22,6 +22,7 @@ qtb/
   optimize/    复合打分 + 训练/测试、滚动、多行情、Monte Carlo、参数稳定
   report/      成交 CSV、热力图、权益/回撤/持仓图、中文摘要
   live/        实盘桩：默认 DRY_RUN；无私钥、无下单
+  screen.py    USDT 永续选币（高波动 + 低路径效率）
 configs/       YAML / TOML
 outputs/       每次运行的产物
 ```
@@ -75,7 +76,40 @@ python -m qtb.cli batch -c configs/batch.yaml
 # 覆盖 CLI（不必改 YAML）
 python -m qtb.cli backtest -c configs/backtest_dual_martingale.yaml \
   --symbol ETH_USDT --interval 15m --days 30 --stop-loss 0.7
+
+# 选币（高波动 + 低路径效率，不是裸 24h 振幅）
+python -m qtb.cli screen
+python -m qtb.cli screen --min-volume 5000000 --min-range 0.12 --max-trend 0.28 --prefilter 40 --top 20
+python -m qtb.cli screen --cache-only --out outputs/screen_offline
+
+# 选币后对前 K 名跑激进双开 SL50（覆盖 YAML 里的 symbol）
+python -m qtb.cli screen --batch-backtest --picks 3
+python -m qtb.cli batch-screen --picks 3 --batch-mode backtest
+python -m qtb.cli batch-screen --batch-mode optimize -c configs/optimize_niulai_aggressive_sl50.yaml
 ```
+
+## 选币逻辑（给激进双开用）
+
+不要按「24h 振幅最大」直接开马丁。回测里：
+
+- **极端单边趋势**（如 BULLA / AKE）：路径效率高，一边吃尽加仓，另一边空转或止损。
+- **纯横盘碎抖**（如 BTW / TUT）：振幅/波动太碎，手续费和加仓间距吃掉现金流。
+- **更合适的是 牛来 / HYPE 一类**：中高波动、K 线来回走（**低路径效率**），双开马丁才有换手。
+
+流程（省配额：ticker **只拉一次**，K 线走磁盘缓存 + 429 退避）：
+
+1. `GET /futures/usdt/tickers`，24h quote volume ≥ `--min-volume`（默认 500 万 USDT）
+2. 24h range `(high-low)/last` ≥ `--min-range`（默认 0.12）做预筛
+3. 按 24h range 取前 `--prefilter`（默认 40），拉约 `--days` 天 `--interval` K 线（默认 7×1h，约 168 根）
+4. 每个合约：
+   - `vol` = 1h 收益率的 **pstdev**
+   - `amp` = mean((high-low)/close)
+   - `trend` / 路径效率 = `|净收益| / Σ|ret|`
+   - `score` = `vol * amp / (trend + 0.05)`
+5. 按 score 排序；默认再丢掉 `trend ≥ --max-trend`（0.28）
+6. 打印表格，并写 `outputs/screen_*.json` / `.md`
+
+`--max-trend` 设为负数可关闭趋势过滤。`--batch-backtest` / `batch-screen` 读取 `configs/optimize_niulai_aggressive_sl50.yaml`（或 `-c`），对前 `--picks`（默认 3）用入选合约覆盖 `symbol`（并关掉 sample），走 `qtb` 的 `backtest`（固定参数）或 `optimize`（compact 搜索）。对比摘要写到 `outputs/batch_screen_*.md`。
 
 ---
 
@@ -199,7 +233,7 @@ python -m qtb.cli live -c configs/live.toml --ping
 pytest -q
 ```
 
-覆盖：费用/滑点/资金费/quanto、止盈止损触发、复合分、DRY_RUN 守卫。
+覆盖：费用/滑点/资金费/quanto、止盈止损触发、复合分、DRY_RUN 守卫、选币 score/trend（合成序列，不打网络）。
 
 ---
 

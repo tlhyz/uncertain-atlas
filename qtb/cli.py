@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""qtb CLI: backtest | optimize | report | batch."""
+"""qtb CLI: backtest | optimize | report | batch | screen."""
 
 from __future__ import annotations
 
@@ -16,7 +16,10 @@ from qtb.live.broker import LiveBroker, is_dry_run_forced
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="qtb",
-        description="Gate USDT-M backtest / optimize / report (default mode=backtest, live is DRY_RUN stub).",
+        description=(
+            "Gate USDT-M backtest / optimize / report / screen "
+            "(default mode=backtest, live is DRY_RUN stub)."
+        ),
     )
     sub = p.add_subparsers(dest="cmd", required=True)
 
@@ -50,6 +53,20 @@ def build_parser() -> argparse.ArgumentParser:
     live = sub.add_parser("live", help="Live stub (always DRY_RUN unless dangerous override)")
     live.add_argument("-c", "--config", default="")
     live.add_argument("--ping", action="store_true")
+
+    from qtb.screen import add_screen_flags
+
+    screen = sub.add_parser(
+        "screen",
+        help="Screen liquid Gate USDT perps for high vol + low path efficiency",
+    )
+    add_screen_flags(screen, batch_default=False)
+
+    batch_screen = sub.add_parser(
+        "batch-screen",
+        help="Screen then batch-backtest top K picks (aggressive dual SL50)",
+    )
+    add_screen_flags(batch_screen, batch_default=True)
     return p
 
 
@@ -152,6 +169,12 @@ def cmd_batch(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_screen(args: argparse.Namespace) -> int:
+    from qtb.screen import execute_screen
+
+    return execute_screen(args)
+
+
 def cmd_live(args: argparse.Namespace) -> int:
     cfg = _cfg(args)
     broker = LiveBroker(config=cfg)
@@ -182,6 +205,8 @@ def main(argv: list[str] | None = None) -> int:
         "report": cmd_report,
         "batch": cmd_batch,
         "live": cmd_live,
+        "screen": cmd_screen,
+        "batch-screen": cmd_screen,
     }
     return handlers[args.cmd](args)
 

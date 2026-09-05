@@ -25,6 +25,7 @@ from data import (
     reset_api_stats,
     resolve_gate_futures_contract,
 )
+from qtb.screen import add_screen_flags, execute_screen
 from fees import VIP7_FUTURES_75, VIP7_SPOT_70, FeeConfig
 from optimize import run_optimize
 from optimize_futures import demo_fixed, estimate_combos, run_aggressive_dual
@@ -33,11 +34,14 @@ from strategies.martingale import MartingaleParams
 
 
 def build_parser() -> argparse.ArgumentParser:
+    argv0 = Path(sys.argv[0]).as_posix() if sys.argv else "cli.py"
+    prog = "python -m qtb.cli" if "qtb" in argv0 else "cli.py"
     p = argparse.ArgumentParser(
+        prog=prog,
         description=(
             "Gate.io multi-coin backtester — USDT-M futures Martingale (aggressive dual) "
             "+ spot grid/martingale. Public market data only; no live orders / no API keys."
-        )
+        ),
     )
     sub = p.add_subparsers(dest="cmd", required=True)
 
@@ -114,6 +118,18 @@ def build_parser() -> argparse.ArgumentParser:
     gen = sub.add_parser("gen-sample", help="Write bundled synthetic CSV sample")
     gen.add_argument("--path", default=str(ROOT / "data_sample" / "BTCUSDT_1h_sample.csv"))
     gen.add_argument("--bars", type=int, default=90 * 24)
+
+    screen = sub.add_parser(
+        "screen",
+        help="Screen liquid Gate USDT perps for high vol + low path efficiency",
+    )
+    add_screen_flags(screen, batch_default=False)
+
+    batch = sub.add_parser(
+        "batch-screen",
+        help="Screen then batch-backtest top K picks (aggressive dual SL50)",
+    )
+    add_screen_flags(batch, batch_default=True)
 
     return p
 
@@ -369,6 +385,10 @@ def cmd_gen_sample(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_screen(args: argparse.Namespace) -> int:
+    return execute_screen(args)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
@@ -380,6 +400,8 @@ def main(argv: list[str] | None = None) -> int:
         "fee-example": cmd_fee_example,
         "recommend": cmd_recommend,
         "gen-sample": cmd_gen_sample,
+        "screen": cmd_screen,
+        "batch-screen": cmd_screen,
     }
     return handlers[args.cmd](args)
 
