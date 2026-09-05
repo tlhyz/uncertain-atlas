@@ -122,8 +122,8 @@ def align_funding_to_bars(
         out.attrs["funding_source"] = "synthetic"
         return out
     f = funding[["timestamp", "funding_rate"]].copy()
-    f["timestamp"] = pd.to_datetime(f["timestamp"], utc=True)
-    out["timestamp"] = pd.to_datetime(out["timestamp"], utc=True)
+    f["timestamp"] = pd.to_datetime(f["timestamp"], utc=True).astype("datetime64[ns, UTC]")
+    out["timestamp"] = pd.to_datetime(out["timestamp"], utc=True).astype("datetime64[ns, UTC]")
     merged = pd.merge_asof(
         out.sort_values("timestamp"),
         f.sort_values("timestamp"),

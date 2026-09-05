@@ -49,10 +49,11 @@ def load_market(cfg: dict[str, Any]) -> pd.DataFrame:
     apply_funding = bool((cfg.get("costs") or {}).get("apply_funding", True))
     if apply_funding and market == "futures":
         funding = None
-        try:
-            funding = fetch_funding_cached(symbol, cache_only=cache_only)
-        except Exception:
-            funding = None
+        if not prefer_sample:
+            try:
+                funding = fetch_funding_cached(symbol, cache_only=cache_only)
+            except Exception:
+                funding = None
         df = align_funding_to_bars(df, funding)
     elif "funding_rate" not in df.columns:
         df = df.copy()

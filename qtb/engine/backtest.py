@@ -204,6 +204,13 @@ class BacktestEngine:
         book.cycle_realized += realized
         if level_idx is not None and level_idx in book.lots:
             del book.lots[level_idx]
+        # Grid lot TP is a completed round-trip even if other lots remain.
+        if reason in {"grid_sell_tp", "grid_cover_tp"} and book.qty > 1e-16:
+            book.cycles += 1
+            book.cycle_pnls.append(realized)
+            if realized > 0:
+                book.wins += 1
+            book.cycle_realized -= realized
         if book.qty <= 1e-16:
             book.cycle_id += 1
             book.cycles += 1
