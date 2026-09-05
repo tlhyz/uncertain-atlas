@@ -1,0 +1,62 @@
+# 牛来_USDT 激进双开马丁（用户风格，未改保守）
+# SL50 搜索赢家：LONG 1.4 / 2.5% / 1.2%；SHORT 1.2 / 4.0% / 1.2%
+# 换币不必改文件：python -m qtb.cli backtest -c <this> --symbol ETH_USDT --days 18 --cache-only
+mode: backtest
+symbol: 牛来_USDT
+interval: 5m
+days: 18
+market: futures
+prefer_sample: true
+sample_path: data_sample/niulai_USDT_5m_futures.csv
+output_dir: outputs
+run_name: demo_niulai_aggressive_sl50
+
+costs:
+  vip_tier: 7
+  rebate_rate: 0.75
+  market: futures
+  slippage_bps: 1.0
+  use_maker: false
+  quanto: 0.0001
+  min_order_size: 1.0
+  min_notional: 1.0
+  apply_funding: true
+  maintenance_rate: 0.005
+
+strategy:
+  name: dual_martingale
+  leverage: 5.0
+  long_capital: 950.0
+  short_capital: 1380.0
+  max_adds: 90
+  take_profit_pct: 0.012
+  cooldown_bars: 0
+  long:
+    multiplier: 1.4
+    add_drop_pct: 0.025
+    take_profit_pct: 0.012
+    base_order_quote: 237.5
+  short:
+    multiplier: 1.2
+    add_drop_pct: 0.040
+    take_profit_pct: 0.012
+    base_order_quote: 291.9385
+
+risk:
+  # 投资额回撤止损：uPnL / initial_margin <= -50% → 平仓后开新周期
+  investment_sl_pct: 0.50
+  per_trade_tp_pct: null
+  per_trade_sl_pct: null
+  portfolio_tp_pct: null
+  portfolio_equity_sl_pct: null
+  max_drawdown_stop_pct: null
+  stop_adding_float_loss_pct: null
+  force_exit_before_liq_buffer_pct: 0.20
+  stop_if_price_breaks_range: false
+  trailing_tp_pct: null
+  trailing_activation_pct: null
+  time_tp_bars: null
+  scaled_tp: []
+
+live:
+  dry_run: true

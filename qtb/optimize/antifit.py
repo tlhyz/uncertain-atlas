@@ -110,7 +110,17 @@ def monte_carlo_from_cycles(
 def neighbor_stability(
     run_fn: Callable[[dict[str, Any]], float],
     center: dict[str, Any],
-    keys: tuple[str, ...] = ("multiplier", "add_drop_pct", "take_profit_pct"),
+    keys: tuple[str, ...] = (
+        "multiplier",
+        "add_drop_pct",
+        "take_profit_pct",
+        "long_multiplier",
+        "short_multiplier",
+        "long_add_drop_pct",
+        "short_add_drop_pct",
+        "long_take_profit_pct",
+        "short_take_profit_pct",
+    ),
 ) -> float:
     """
     Score smoothness around a parameter point. Returns 1 / (1 + cv) in [0, 1].
@@ -120,6 +130,12 @@ def neighbor_stability(
         "multiplier": 0.1,
         "add_drop_pct": 0.002,
         "take_profit_pct": 0.002,
+        "long_multiplier": 0.1,
+        "short_multiplier": 0.1,
+        "long_add_drop_pct": 0.002,
+        "short_add_drop_pct": 0.002,
+        "long_take_profit_pct": 0.002,
+        "short_take_profit_pct": 0.002,
         "max_adds": 10,
         "spacing_pct": 0.002,
         "grid_count": 4,
