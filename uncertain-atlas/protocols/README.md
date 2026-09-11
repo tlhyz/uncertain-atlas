@@ -39,4 +39,6 @@
 | Solana | [solana/](solana/README.md) | 第一版已写 |
 | Sui | [sui/](sui/README.md) | 第一版已写 |
 | Aptos | [aptos/](aptos/README.md) | 第一版已写 |
+| Celestia | [celestia/](celestia/README.md) | 第一版已写 |
+| Polkadot | [polkadot/](polkadot/README.md) | 第一版已写 |
 | 其余 | 按 [`../index/02-research-order.md`](../index/02-research-order.md) | |

@@ -72,8 +72,8 @@
 | Solana | 5 | 重要 | 第一版已写 |
 | Sui | 5 | 重要 | 第一版已写 |
 | Aptos | 5 | 重要 | 第一版已写 |
-| Celestia | 6 | 重要 | 未开始（Level 7） |
-| Polkadot | 6 | 重要 | 未开始（Level 7） |
+| Celestia | 6 | 重要 | 第一版已写 |
+| Polkadot | 6 | 重要 | 第一版已写 |
 | Zcash | 7 | 进阶 / 对「不确定」重要 | 未开始（Level 8） |
 | Monero | 7 | 进阶 | 未开始（Level 8） |
 | Mina | 7 | 研究级 | 未开始（Level 8） |

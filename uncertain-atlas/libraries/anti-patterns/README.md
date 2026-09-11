@@ -12,3 +12,4 @@
 - [test-skip-as-pass](test-skip-as-pass.md)
 - [rpc-as-verification](rpc-as-verification.md)
 - [majority-vote-is-enough](majority-vote-is-enough.md)
+- [header-equals-settlement](header-equals-settlement.md)

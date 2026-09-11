@@ -143,3 +143,13 @@ Goal 保持 active。
 | A28 | 记录 | Tendermint 解锁谓词未抄规范原文 | 标「以规范为准」，避免写错过死的伪代码 |
 
 下一批：Celestia / Polkadot，或 L5 多客户端。
+
+### 2026-09-11 22:35 UTC · Celestia / Polkadot / L7
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A29 | 中 | 「头最终」易被当成 rollup 结算 | L7.1–7.2 与反模式 header-equals-settlement |
+| A30 | 低 | 把 Celestia 纠删码和 Ethereum KZG 写成同一种 DA | Celestia 档案第 10 节拆开 |
+| A31 | 低 | 「共享安全」易被理解成应用也安全 | L7.3 与 Polkadot 第 13 节写明 runtime 仍是自己的 |
+
+下一批：Zcash（链知道什么/不知道什么），或 L5 多客户端。

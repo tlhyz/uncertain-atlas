@@ -68,7 +68,7 @@ index 看路
 | 轨 | 状态 |
 |---|---|
 | index | 已立，路径已改到五条轨 |
-| courses L0–L4 | L4 为相交、轮步、锁、ABCI/WAL |
+| courses L0–L4、L7 | L7 为模块化 / DA / 共享安全 |
 | protocols/bitcoin | 19 节第一版 |
 | protocols/cometbft | 19 节第一版 |
 | protocols/ethereum | 19 节第一版 |
@@ -76,6 +76,8 @@ index 看路
 | protocols/solana | 19 节第一版 |
 | protocols/sui | 19 节第一版 |
 | protocols/aptos | 19 节第一版 |
+| protocols/celestia | 19 节第一版 |
+| protocols/polkadot | 19 节第一版 |
 | tracks/state-models | 指向 L2.4 |
 | tracks/consensus | 对照表 |
 | tracks/post-quantum | 工程账本第一版 |

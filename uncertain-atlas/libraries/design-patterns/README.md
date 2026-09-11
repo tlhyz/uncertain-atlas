@@ -12,3 +12,4 @@
 - [application-consensus-split](application-consensus-split.md)
 - [canonical-encoding](canonical-encoding.md)
 - [algorithm-agility](algorithm-agility.md)
+- [data-availability-sampling](data-availability-sampling.md)

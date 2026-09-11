@@ -31,6 +31,9 @@
 14. [`courses/level-04-bft/`](courses/level-04-bft/README.md)
 15. [`protocols/sui/`](protocols/sui/README.md)
 16. [`protocols/aptos/`](protocols/aptos/README.md)
+17. [`protocols/celestia/`](protocols/celestia/README.md)
+18. [`protocols/polkadot/`](protocols/polkadot/README.md)
+19. [`courses/level-07-modular/`](courses/level-07-modular/README.md)
 
 修改日志：[`CHANGELOG.md`](CHANGELOG.md) · 审核：[`AUDIT_LOG.md`](AUDIT_LOG.md)
 

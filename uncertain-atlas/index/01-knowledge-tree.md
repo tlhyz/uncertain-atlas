@@ -303,6 +303,8 @@ L1 见 `courses/level-01-crypto/`。L2 见 `courses/level-02-state/`。
 
 ---
 
+课程：`courses/level-07-modular/`。档案：`protocols/celestia/`、`protocols/polkadot/`。
+
 ## Level 7 · 模块化、数据可用、共享安全 · 重要
 
 依赖：L3 轻节点 + L5 rollup 入口 + L1 Merkle。
