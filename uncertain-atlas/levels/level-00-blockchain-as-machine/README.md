@@ -40,7 +40,8 @@
 | 0.9 | [L00-M09-fake-learning.md](L00-M09-fake-learning.md) | 哪些常见说法其实在害你？ |
 | 0.10 | [L00-M10-uncertain-lens.md](L00-M10-uncertain-lens.md) | Level 0 之后，「不确定」该问什么、还不该决定什么？ |
 
-每课末尾有 5 道测试题。**先不要查答案。** 写完发给我，我再批改。
+每课末尾有 5 道测试题。**先不要查答案。**  
+写在 [L00-answers-template.md](L00-answers-template.md)，发给我再批改。
 
 ---
 
