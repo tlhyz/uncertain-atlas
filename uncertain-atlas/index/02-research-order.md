@@ -258,9 +258,9 @@ Polkadot 把「小链借用大链安全」做成系统。
 |---|---|
 | Arbitrum / Optimism | 乐观滚动是模块化执行的另一半 |
 | Algorand | 密码抽签（19 节已写，对照不是默认骨架） |
-| Kaspa | 区块 DAG，对照 Nakamoto 孤块问题 |
-| Fuel | UTXO 并行，补状态模型地图 |
-| Cardano | 研究/形式化文化，eUTXO |
+| Kaspa | 区块 DAG（档案+L3.8 已写） |
+| Fuel | UTXO+调度（思想级档案已写） |
+| Cardano | eUTXO（L2.5 已写，不写全生态） |
 | 真实 PQ 部署实验 | 直接服务「不确定」主线 |
 
 默认后置：

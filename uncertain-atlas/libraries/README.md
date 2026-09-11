@@ -10,3 +10,4 @@
 | [decision-matrix/](decision-matrix/README.md) | 选型表，空着比填错好 |
 | [invariants/](invariants/README.md) | 可测试断言（逐渐从失败博物馆提取） |
 | [threat-model/](threat-model/README.md) | 「不确定」对手是谁 |
+| [new-chain-intake.md](new-chain-intake.md) | 新链 19 问；过不了过滤器不建档 |

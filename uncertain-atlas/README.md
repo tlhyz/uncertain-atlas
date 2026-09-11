@@ -16,13 +16,14 @@
 ## 从这里读
 
 1. [`ARCHITECTURE.md`](ARCHITECTURE.md) — 五条轨
-2. [`index/00-master-roadmap.md`](index/00-master-roadmap.md) — Level 0–10
-3. [`index/01-knowledge-tree.md`](index/01-knowledge-tree.md) — 依赖
-4. [`index/02-research-order.md`](index/02-research-order.md) — 为何先 Bitcoin
-5. 课程：[`courses/`](courses/README.md)（L0–L10 均已有正文）
-6. 协议：[`protocols/`](protocols/README.md)
-7. 横向地图：[`tracks/lifecycle/`](tracks/lifecycle/README.md)（目的 A）以及最终性 / 并行 / 轻节点 / 密码 / 共识 / 状态 / PQ / 失败博物馆
-8. 模式库：[`libraries/`](libraries/README.md)
+2. [`index/04-study-path.md`](index/04-study-path.md) — 目的 A：按通读，不要浏览
+3. [`index/00-master-roadmap.md`](index/00-master-roadmap.md) — Level 0–10
+4. [`index/01-knowledge-tree.md`](index/01-knowledge-tree.md) — 依赖
+5. [`index/02-research-order.md`](index/02-research-order.md) — 为何先 Bitcoin
+6. 课程：[`courses/`](courses/README.md)
+7. 协议：[`protocols/`](protocols/README.md)
+8. 横向：[`tracks/lifecycle/`](tracks/lifecycle/README.md) 与 PQ 迁移 [`tracks/post-quantum/migration.md`](tracks/post-quantum/migration.md)
+9. 新链接待：[`libraries/new-chain-intake.md`](libraries/new-chain-intake.md)
 
 修改日志：[`CHANGELOG.md`](CHANGELOG.md)
 

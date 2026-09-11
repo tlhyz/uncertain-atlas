@@ -2,7 +2,7 @@
 
 课程正文即第一版地图：
 
-[`../../courses/level-02-state/L02-M04-design-map.md`](../../courses/level-02-state/L02-M04-design-map.md)
+[`../../courses/level-02-state/L02-M04-design-map.md`](../../courses/level-02-state/L02-M04-design-map.md)；eUTXO 见 [`../../courses/level-02-state/L02-M05-eutxo.md`](../../courses/level-02-state/L02-M05-eutxo.md)。
 
 以后每学完一条链，回来加一列「它实际怎么做」，不要另起一套表。
 

@@ -9,3 +9,4 @@
 | 10.1 | [L10-M01-decision-discipline.md](L10-M01-decision-discipline.md) | 怎样写决策才不算愿望 |
 | 10.2 | [L10-M02-pq-ledger.md](L10-M02-pq-ledger.md) | 后量子工程账本先问哪些数 |
 | 10.3 | [L10-M03-v1-settlement-machine.md](L10-M03-v1-settlement-machine.md) | 第一版最小机器包含什么、永远不包含什么 |
+| 10.4 | [L10-M04-pq-migration.md](L10-M04-pq-migration.md) | 双算法状态机；旧签不能单独迁走账户 |

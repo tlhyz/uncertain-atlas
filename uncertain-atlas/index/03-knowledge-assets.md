@@ -34,7 +34,7 @@
 | 09 | 《后量子区块链工程手册》 | `tracks/post-quantum/` | 账本行已立；未测数字空 | 研究级 |
 | 10 | 《不确定协议设计决策库》 | `libraries/decision-matrix/` | 对照列已扩；候选列空 | 重要 |
 | 11 | 《不确定威胁模型》 | `libraries/threat-model/` | 草稿 | 必学 |
-| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 9 条 | 必学 |
+| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 11 条 | 必学 |
 | 13 | 《不确定 Adversarial Test Corpus》 | 以后实验与回归测试 | 未开始（方法在 L9.7） | 重要 |
 | 14 | 《不确定长期技术路线图》 | `courses/level-10-uncertain-studio/` | 建议清单，非选型 | 重要 |
 
@@ -45,6 +45,7 @@
 | 资产 | 路径 | 作用 |
 |---|---|---|
 | 最高准则 | [`../GOAL.md`](../GOAL.md) | 门禁 |
+| 通读顺序 | [`04-study-path.md`](04-study-path.md) | 目的 A 的六通，不是浏览 |
 | MASTER ROADMAP | [`00-master-roadmap.md`](00-master-roadmap.md) | 怎么走完 Level 0–10 |
 | 知识树 | [`01-knowledge-tree.md`](01-knowledge-tree.md) | 硬依赖 |
 | 研究顺序 | [`02-research-order.md`](02-research-order.md) | 为什么不按名气 |
