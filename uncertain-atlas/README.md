@@ -28,6 +28,9 @@
 11. [`protocols/avalanche/`](protocols/avalanche/README.md)
 12. [`protocols/solana/`](protocols/solana/README.md)
 13. [`courses/level-03-bitcoin/`](courses/level-03-bitcoin/README.md)
+14. [`courses/level-04-bft/`](courses/level-04-bft/README.md)
+15. [`protocols/sui/`](protocols/sui/README.md)
+16. [`protocols/aptos/`](protocols/aptos/README.md)
 
 修改日志：[`CHANGELOG.md`](CHANGELOG.md) · 审核：[`AUDIT_LOG.md`](AUDIT_LOG.md)
 

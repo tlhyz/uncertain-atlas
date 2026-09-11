@@ -37,4 +37,6 @@
 | Ethereum | [ethereum/](ethereum/README.md) | 第一版已写 |
 | Avalanche | [avalanche/](avalanche/README.md) | 第一版已写（对照） |
 | Solana | [solana/](solana/README.md) | 第一版已写 |
+| Sui | [sui/](sui/README.md) | 第一版已写 |
+| Aptos | [aptos/](aptos/README.md) | 第一版已写 |
 | 其余 | 按 [`../index/02-research-order.md`](../index/02-research-order.md) | |

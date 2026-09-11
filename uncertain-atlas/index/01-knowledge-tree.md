@@ -202,6 +202,8 @@ L1 见 `courses/level-01-crypto/`。L2 见 `courses/level-02-state/`。
 
 ---
 
+课程：`courses/level-04-bft/`。档案：`protocols/cometbft/`。
+
 ## Level 4 · BFT 与 Cosmos / CometBFT · 必学
 
 依赖：L0.6 + L1.2 + L2 任意一种状态模型。  
