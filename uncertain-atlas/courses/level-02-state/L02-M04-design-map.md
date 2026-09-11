@@ -103,4 +103,4 @@
 ## 精密检查
 
 **禁止假学习：** 「地图填完了所以已经选型。」
-**边界：** 不确定列空。见 decision-matrix/state-model.md。
+**边界：** 不确定列空。见 decision-matrix/state-model.md。占用 / 谁为磁盘付钱：L2.6。

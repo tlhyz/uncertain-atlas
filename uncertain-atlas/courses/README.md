@@ -7,7 +7,7 @@
 |---|---|---|---|
 | 0 | [level-00-machine](level-00-machine/README.md) | 十课 | 必学 |
 | 1 | [level-01-crypto](level-01-crypto/README.md) | 六课 | 必学 |
-| 2 | [level-02-state](level-02-state/README.md) | 五课（含 eUTXO） | 必学 |
+| 2 | [level-02-state](level-02-state/README.md) | 六课（含 eUTXO / 占用） | 必学 |
 | 3 | [level-03-bitcoin](level-03-bitcoin/README.md) | 八课 | 必学 |
 | 4 | [level-04-bft](level-04-bft/README.md) | 六课 | 必学 |
 | 5 | [level-05-ethereum](level-05-ethereum/README.md) | 四课 | 重要 |

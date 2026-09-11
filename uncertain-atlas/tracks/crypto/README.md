@@ -1,6 +1,7 @@
 # 横向地图：工程密码学
 
-课：L1。账本：`../post-quantum/engineering-ledger.md`。
+课：L1。账本：`../post-quantum/engineering-ledger.md`。  
+精读：[`worked-example-domain.md`](worked-example-domain.md)（投票字节被当成转账）。
 
 | 组件 | 挡住 | 挡不住 | 后量子税 |
 |---|---|---|---|

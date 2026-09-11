@@ -6,7 +6,7 @@
 
 ## 过滤器（先于 19 问）
 
-> 它提供了什么 Bitcoin / CometBFT / Ethereum / Solana / Sui / Aptos / Celestia / Polkadot / Zcash / Monero / Mina / 乐观 rollup / Algorand / Kaspa / Fuel **很少同时具备**的思想？
+> 它提供了什么 Bitcoin / CometBFT / Ethereum / Solana / Sui / Aptos / Celestia / Polkadot / Zcash / Monero / Mina / 乐观 rollup / Algorand / Kaspa / Fuel / Nervos **很少同时具备**的思想？
 
 答不出：降级。有名不是理由。
 

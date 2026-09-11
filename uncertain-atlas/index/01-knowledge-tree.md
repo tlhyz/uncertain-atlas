@@ -447,7 +447,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写） | L7 | 重要 |
 | EigenLayer / Babylon | 再质押 / BTC 时间戳安全 | L7 共享安全对照 | 进阶 |
 | Filecoin / Arweave | 存储证明、永久数据 | 仅当「不确定」要做存储 | 按需 |
-| Nervos | 状态租金、分层 | L2 + L9 经济 | 进阶 |
+| Nervos | 状态占用 / 链下生成（`protocols/nervos` + L2.6） | L2 + L9 经济 | 进阶 |
 | ICP | 容器、子网、链密钥 | 仅当独特思想被确认 | 研究级 |
 | 后量子实验链 | 真实 PQ 部署经验 | L10 轨道 C | 研究级 |
 

@@ -10,7 +10,7 @@
 | 编号 | 资产 | 路径 | 状态 | 优先级 |
 |---|---|---|---|---|
 | 01 | 《区块链基础课程》 | `courses/` | L0–L10 正文已写；L8.4 数学后置 | 必学 |
-| 02 | 《全球公链架构图谱》 | `protocols/` 19 节 + `tracks/` 横表 | 主线 11 链 + 乐观 rollup 品类 | 必学 |
+| 02 | 《全球公链架构图谱》 | `protocols/` 19 节 + `tracks/` 横表 | 主线 + 第 8 波择优（含 Nervos 思想级） | 必学 |
 | 03 | 《共识协议图谱》 | `tracks/consensus/` + `tracks/finality/` | 对照表已更新 | 必学 |
 | 04 | 《状态模型图谱》 | `tracks/state-models/` + `tracks/parallelism/` | 进行中 | 必学 |
 | 05 | 《区块链密码学地图》 | `tracks/crypto/` | 第一版对照表 | 必学 |
@@ -23,8 +23,8 @@
 | 编号 | 资产 | 路径 | 状态 | 优先级 |
 |---|---|---|---|---|
 | 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 五案（含 2012 Merkle、2019 Sprout） | 必学 |
-| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 12 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 16 条 | 重要 |
+| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 13 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 17 条 | 重要 |
 
 ---
 
@@ -35,7 +35,7 @@
 | 09 | 《后量子区块链工程手册》 | `tracks/post-quantum/` | 账本行已立；未测数字空 | 研究级 |
 | 10 | 《不确定协议设计决策库》 | `libraries/decision-matrix/` | 对照列已扩；候选列空 | 重要 |
 | 11 | 《不确定威胁模型》 | `libraries/threat-model/` | 草稿 | 必学 |
-| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 11 条 | 必学 |
+| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 15 条 | 必学 |
 | 13 | 《不确定 Adversarial Test Corpus》 | 以后实验与回归测试 | 未开始（方法在 L9.7） | 重要 |
 | 14 | 《不确定长期技术路线图》 | `courses/level-10-uncertain-studio/` | 建议清单，非选型 | 重要 |
 
@@ -69,6 +69,7 @@
 | Algorand | 8 | 进阶 | 抽签第一版 |
 | Kaspa | 8 | 进阶 | 块 DAG 第一版 |
 | Fuel | 8 | 进阶 | 思想级 |
+| Nervos CKB | 8 | 进阶 | 思想级（占用） |
 
 额外项目只在通过独特思想过滤器后建档。
 

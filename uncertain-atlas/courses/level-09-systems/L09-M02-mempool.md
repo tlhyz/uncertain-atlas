@@ -97,4 +97,4 @@ Bitcoin mempool + 标准性；Ethereum 本地池 + 构建者市场；Solana Gulf
 ## 精密检查
 
 **禁止假学习：** 「mempool 是全球公平队列。」「进池 = 结算。」
-**边界：** PBS 细节在 L5.4。
+**边界：** PBS 细节在 L5.4。精读：[`../../tracks/mempool/worked-example.md`](../../tracks/mempool/worked-example.md)。

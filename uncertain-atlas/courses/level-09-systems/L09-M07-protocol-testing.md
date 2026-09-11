@@ -104,4 +104,4 @@ skip 而无理由 = 反模式 test-skip-as-pass。
 ## 精密检查
 
 **禁止假学习：** 「覆盖率 90% 所以协议正确。」「fuzz 没炸所以安全。」  
-**边界：** 不教某一 fuzz 引擎的旗标。
+**边界：** 不教某一 fuzz 引擎的旗标。精读：[`../../tracks/testing/worked-example.md`](../../tracks/testing/worked-example.md)。

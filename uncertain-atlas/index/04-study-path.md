@@ -11,12 +11,12 @@
 2. L0.7 画自己的门。  
 3. [`../tracks/lifecycle/README.md`](../tracks/lifecycle/README.md) 五列表。  
 4. [`../tracks/lifecycle/worked-example.md`](../tracks/lifecycle/worked-example.md) 跟完阿安付 1。  
-5. 停。若还不能指出「钱包绿勾」在每一列指哪一层，不要进 L6。
+5. 停。若还不能指出「钱包绿勾」在每一列指哪一层，不要进 L6。日蚀 / 内存池：[`../tracks/network/worked-example-eclipse.md`](../tracks/network/worked-example-eclipse.md)、[`../tracks/mempool/worked-example.md`](../tracks/mempool/worked-example.md)。
 
 ## 第二通：工具
 
 6. L1 哈希 / 签名 / Merkle / 编码 / 随机数与确定性（L1.6）。  
-7. L2.1–L2.4 状态；L2.5 只在你关心「输出带数据」时读。  
+7. L2.1–L2.4 状态；L2.5 只在你关心「输出带数据」时读；L2.6 在你关心「谁为磁盘付钱」时读。  
 8. 打开决策矩阵状态表，确认最后一列是空的。
 
 ## 第三通：两种最终
@@ -30,7 +30,7 @@
 12. L5.3 多客户端同根。  
 13. [`../tracks/implementation/`](../tracks/implementation/README.md) 编码实例 + 崩溃实例。  
 14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50；隐私通再读 CVE-2019-7167。  
-15. L9.3 / L9.7。问：绿测试守哪一层。
+15. L9.3 / L9.7 + [`../tracks/testing/worked-example.md`](../tracks/testing/worked-example.md)。问：绿测试守哪一层。
 
 ## 第五通：别人用什么换
 

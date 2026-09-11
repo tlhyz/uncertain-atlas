@@ -16,3 +16,4 @@
 - [multi-client-determinism](multi-client-determinism.md)
 - [declare-then-schedule](declare-then-schedule.md)
 - [vrf-sortition](vrf-sortition.md)
+- [capacity-binds-storage](capacity-binds-storage.md)

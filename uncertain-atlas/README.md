@@ -22,7 +22,7 @@
 5. [`index/02-research-order.md`](index/02-research-order.md) — 为何先 Bitcoin
 6. 课程：[`courses/`](courses/README.md)
 7. 协议：[`protocols/`](protocols/README.md)
-8. 横向：[`tracks/lifecycle/`](tracks/lifecycle/README.md)、实现保证 [`tracks/implementation/`](tracks/implementation/README.md)、升级/经济精读、PQ 迁移 [`tracks/post-quantum/migration.md`](tracks/post-quantum/migration.md)
+8. 横向：生命周期、实现、轻节点、升级、经济、网络、内存池、测试、PQ 迁移 [`tracks/post-quantum/migration.md`](tracks/post-quantum/migration.md)
 9. 新链接待：[`libraries/new-chain-intake.md`](libraries/new-chain-intake.md)
 
 修改日志：[`CHANGELOG.md`](CHANGELOG.md)
