@@ -8,7 +8,13 @@ import pandas as pd
 import pytest
 
 from qtb.config import load_config
-from qtb.data.gatedata import deals_url, generate_sample_deals, month_range, parse_deals_csv
+from qtb.data.gatedata import (
+    audit_deals_tape,
+    deals_url,
+    generate_sample_deals,
+    month_range,
+    parse_deals_csv,
+)
 from qtb.engine.backtest import run_backtest
 from qtb.engine.spot_grid import run_spot_moving_grid
 from qtb.strategies.moving_grid import (
@@ -29,6 +35,9 @@ def _cfg(**overrides):
     strat = cfg.setdefault("strategy", {})
     strat["grid_count"] = 8
     strat["spacing_pct"] = 0.01
+    strat["range_up_pct"] = None
+    strat["range_down_pct"] = None
+    strat["spacing_mode"] = "geometric"
     strat["quote_capital"] = 800.0
     strat["order_size_quote"] = 100.0
     cfg.setdefault("risk", {})["investment_sl_pct"] = None
@@ -81,6 +90,29 @@ def test_parse_deals_csv_gate_layout():
     assert df.iloc[0]["side"] == "buy"
     assert df.iloc[1]["side"] == "sell"
     assert float(df.iloc[0]["price"]) == pytest.approx(1.00644)
+
+
+def test_parse_official_announcement_sample_row():
+    # Gate announcement: timestamp, dealid, price, amount, side
+    text = "1577830575.771538,215782675,0.032900,500.000000,1\n"
+    df = parse_deals_csv(text)
+    assert float(df.iloc[0]["price"]) == pytest.approx(0.0329)
+    assert float(df.iloc[0]["amount"]) == pytest.approx(500.0)
+    assert int(df.iloc[0]["dealid"]) == 215782675
+    assert df.iloc[0]["side"] == "sell"
+    audit = audit_deals_tape(df)
+    assert audit["tape_ok"] is True
+    assert audit["n_prints"] == 1
+
+
+def test_plus_minus_5pct_twenty_arithmetic_grids():
+    lv = build_moving_levels(
+        100.0, 20, mode="arithmetic", range_up_pct=0.05, range_down_pct=0.05
+    )
+    assert len(lv) == 21
+    assert lv[0] == pytest.approx(95.0)
+    assert lv[-1] == pytest.approx(105.0)
+    assert float(lv[1] - lv[0]) == pytest.approx(0.5)
 
 
 def test_levels_shift_and_lot_remap():
@@ -188,12 +220,54 @@ def test_generate_sample_deals_roundtrip(tmp_path: Path):
     assert df.attrs.get("feed") == "deals"
 
 
+def test_opening_print_does_not_buy_through_the_market():
+    cfg = _cfg()
+    cfg["strategy"]["grid_count"] = 20
+    cfg["strategy"]["range_up_pct"] = 0.05
+    cfg["strategy"]["range_down_pct"] = 0.05
+    cfg["strategy"]["spacing_mode"] = "arithmetic"
+    cfg["strategy"]["spacing_pct"] = None
+    result = run_spot_moving_grid(cfg, _tape([100.0, 100.0, 100.01, 99.99]))
+    assert result.trades == []
+    assert result.metrics["grid_harvest"] == 0
+    assert abs(result.metrics["pnl_identity_gap"]) < 1e-6
+
+
+def test_dip_fills_only_buy_levels_at_or_below_print():
+    cfg = _cfg()
+    cfg["strategy"]["grid_count"] = 20
+    cfg["strategy"]["range_up_pct"] = 0.05
+    cfg["strategy"]["range_down_pct"] = 0.05
+    cfg["strategy"]["spacing_mode"] = "arithmetic"
+    cfg["strategy"]["spacing_pct"] = None
+    cfg["strategy"]["quote_capital"] = 2000.0
+    cfg["strategy"]["order_size_quote"] = 100.0
+    result = run_spot_moving_grid(cfg, _tape([100.0, 97.0]))
+    buys = [t for t in result.trades if t.side == "buy"]
+    assert buys
+    assert all(t.price < 100.0 for t in buys)
+    assert all(t.price >= 97.0 - 1e-9 for t in buys)
+    assert all(t.price <= 99.5 + 1e-9 for t in buys)
+
+
+def test_harvest_identity_matches_equity_on_sample_tape():
+    cfg = _cfg()
+    tape = generate_sample_deals(n=240, mid=1.0, amp=0.02)
+    result = run_spot_moving_grid(cfg, tape)
+    assert result.metrics["tape_ok"] is True
+    assert abs(result.metrics["pnl_identity_gap"]) < 0.05
+
+
 def test_yaml_defaults_are_spot_tick_grid():
     cfg = load_config("configs/backtest_etf_moving_grid.yaml")
     assert cfg["feed"] == "deals"
     assert cfg["market"] == "spot"
     assert cfg["strategy"]["name"] == "moving_grid"
-    assert 20 <= int(cfg["strategy"]["grid_count"]) <= 30
+    assert int(cfg["strategy"]["grid_count"]) == 20
+    assert float(cfg["strategy"]["range_up_pct"]) == pytest.approx(0.05)
+    assert float(cfg["strategy"]["range_down_pct"]) == pytest.approx(0.05)
+    assert cfg["strategy"]["spacing_mode"] == "arithmetic"
+    assert cfg["strategy"]["shift_on_exit"] is True
     assert cfg["risk"]["stop_if_price_breaks_range"] is False
     assert cfg["risk"]["max_drawdown_stop_pct"] in (None, 0, 0.0)
     assert cfg["risk"]["investment_sl_pct"] in (None, 0, 0.0)

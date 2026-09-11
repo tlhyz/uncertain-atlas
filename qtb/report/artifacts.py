@@ -162,6 +162,15 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
             f"- 行情源：逐笔 deals（{m.get('n_prints', '?')} 笔打印）  | 移格：{m.get('grid_shifts')}  | "
             f"剩余底仓：{m.get('leftover_base')}"
         )
+        if m.get("first_print_px") is not None:
+            ret = m.get("tape_return_pct")
+            ret_txt = "n/a" if ret is None else f"{float(ret)*100:.2f}%"
+            lines.append(
+                f"- 逐笔首末价：{m.get('first_print_px')} → {m.get('last_print_px')}（{ret_txt}）"
+                f"  校验：{'通过' if m.get('tape_ok') else '失败'}"
+                f" / 时间戳单调={m.get('tape_ts_monotonic')}"
+                f" / 成交键唯一={m.get('tape_keys_unique')}"
+            )
         if m.get("grid_harvest") is not None:
             lines.append(
                 f"- 网格已实现差价：{m.get('grid_income', m.get('grid_harvest'))} USDT"
@@ -171,6 +180,11 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
                 f"- 移格遗留卖出：{m.get('leftover_harvest')}  | 期末底仓浮盈亏：{m.get('inventory_mtm')}  | "
                 f"停机：{'是' if m.get('halted') else '否'}"
             )
+            if m.get("pnl_identity_gap") is not None:
+                lines.append(
+                    f"- 账本恒等式缺口：{m.get('pnl_identity_gap')} "
+                    f"（净收益 ≈ 网格差价 + 底仓浮盈亏 − 未摊买费 {m.get('residual_buy_fees')}）"
+                )
     lines.extend(
         [
         "",

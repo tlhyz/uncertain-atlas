@@ -3,6 +3,8 @@
 Fills come from the official Gate deals tape, not OHLC wicks:
 
 - Resting buy at L fills when a print trades at or below L.
+- Buys are hung only strictly below the last hang / shift reference
+  (the robot never bids through the market on the opening print).
 - Resting sell at L fills when a print trades at or above L.
 - A print that exits the band shifts the window by one grid and re-hangs
   for *later* prints (the same print does not fill newly hung orders).
@@ -22,6 +24,7 @@ import pandas as pd
 
 from qtb.costs.fees import fee_preset
 from qtb.costs.model import CostModel
+from qtb.data.gatedata import audit_deals_tape
 from qtb.engine.backtest import BacktestResult, compute_metrics
 from qtb.engine.types import Book, Trade
 from qtb.risk.exits import RiskConfig, hit_investment_sl, hit_max_dd_stop
@@ -91,6 +94,8 @@ class SpotMovingGridEngine:
         )
         self._peak = self.strategy.quote_capital
         self._last_eq_ts: pd.Timestamp | None = None
+        self._hang_ref = 0.0
+        self._resting_buys: set[int] = set()
 
     def _open_lots(self) -> list[_Lot]:
         return list(self.lots.values()) + self.leftover_lots
@@ -98,8 +103,17 @@ class SpotMovingGridEngine:
     def _leftover_base(self) -> float:
         return float(sum(lot.qty for lot in self.leftover_lots))
 
+    def _grid_step(self) -> float:
+        if len(self.levels) > 1:
+            step = float(np.median(np.diff(self.levels)))
+            if step > 0:
+                return step
+        return float(self.strategy.spacing_pct) * float(self.levels[0] if len(self.levels) else 1.0)
+
     def _lot_take_profit(self, lot: _Lot) -> float:
         """Original +1 grid from this rung's buy — not the new window's bottom."""
+        if self.strategy.spacing_mode == "arithmetic":
+            return lot.cost + self._grid_step()
         return lot.cost * (1.0 + float(self.strategy.spacing_pct))
 
     def _rebuild_avg(self) -> None:
@@ -196,23 +210,29 @@ class SpotMovingGridEngine:
         self._record(ts, "sell", fill_px, qty, sell_fee, reason, realized, mark)
         return realized
 
+    def _rehang_buys(self, ref: float) -> None:
+        """Rest buys only strictly below the hang reference (native robot never bids through last)."""
+        self._hang_ref = float(ref)
+        n = len(self.levels)
+        self._resting_buys = {
+            i
+            for i in range(max(n - 1, 0))
+            if i not in self.lots and float(self.levels[i]) < self._hang_ref - 1e-12
+        }
+
     def _fill_against_print(self, px: float, ts: Any) -> None:
         n = len(self.levels)
         if n < 2:
             return
         min_quote = self.order_size_quote * 1.01
-        buy_idxs = [i for i in range(n - 1) if i not in self.lots and px <= float(self.levels[i])]
-        buy_idxs.sort(reverse=True)
-        for i in buy_idxs:
-            if self.quote < min_quote:
-                break
-            self._buy_level(i, ts, px)
+        # Inventory TPs first so a bounce frees quote before new dip-buys.
         sell_idxs = [i for i in list(self.lots) if i + 1 < n and px >= float(self.levels[i + 1])]
         sell_idxs.sort()
         for i in sell_idxs:
             lot = self.lots.pop(i)
             self._close_lot(lot, float(self.levels[i + 1]), ts, px, "grid_sell_tp")
-        # Shifted-out lots keep their own +1-grid TP (native robot does not dump at the new floor).
+            if float(self.levels[i]) < self._hang_ref - 1e-12:
+                self._resting_buys.add(i)
         still: list[_Lot] = []
         for lot in self.leftover_lots:
             tp = self._lot_take_profit(lot)
@@ -221,6 +241,17 @@ class SpotMovingGridEngine:
             else:
                 still.append(lot)
         self.leftover_lots = still
+        buy_idxs = [
+            i
+            for i in self._resting_buys
+            if i not in self.lots and px <= float(self.levels[i]) + 1e-12
+        ]
+        buy_idxs.sort(reverse=True)
+        for i in buy_idxs:
+            if self.quote < min_quote:
+                break
+            if self._buy_level(i, ts, px):
+                self._resting_buys.discard(i)
 
     def _maybe_shift(self, px: float) -> int:
         if not self.shift_on_exit or len(self.levels) < 2:
@@ -247,6 +278,8 @@ class SpotMovingGridEngine:
             )
             self.shifts += 1
             moved += 1
+        if moved:
+            self._rehang_buys(px)
         return moved
 
     def _flatten(self, px: float, ts: Any, reason: str) -> None:
@@ -287,9 +320,15 @@ class SpotMovingGridEngine:
         ).reset_index(drop=True)
         mid = float(work["price"].iloc[0])
         self.levels = build_moving_levels(
-            mid, self.strategy.grid_count, self.strategy.spacing_pct, self.strategy.spacing_mode
+            mid,
+            self.strategy.grid_count,
+            self.strategy.spacing_pct,
+            self.strategy.spacing_mode,
+            range_up_pct=self.strategy.range_up_pct,
+            range_down_pct=self.strategy.range_down_pct,
         )
         self.strategy.levels = self.levels
+        self._rehang_buys(mid)
 
         equity_curve: list[float] = []
         dd_curve: list[float] = []
@@ -345,11 +384,27 @@ class SpotMovingGridEngine:
         )
         grid_harvest = float(sum(t.realized_pnl for t in self.trades if t.reason == "grid_sell_tp"))
         leftover_harvest = float(sum(t.realized_pnl for t in self.trades if t.reason == "grid_sell_leftover"))
+        other_realized = float(
+            sum(
+                t.realized_pnl
+                for t in self.trades
+                if t.side == "sell" and t.reason not in {"grid_sell_tp", "grid_sell_leftover"}
+            )
+        )
         inventory_mtm = self._inventory_mtm(last_px)
+        residual_buy_fees = float(sum(lot.buy_fee for lot in self._open_lots()))
+        end_eq = float(equity_curve[-1]) if equity_curve else self.book.initial
+        net = end_eq - self.book.initial
+        explained = grid_harvest + leftover_harvest + other_realized + inventory_mtm - residual_buy_fees
+        tape = audit_deals_tape(work)
+        metrics.update(tape)
         metrics["grid_harvest"] = round(grid_harvest, 4)
         metrics["leftover_harvest"] = round(leftover_harvest, 4)
         metrics["grid_income"] = round(grid_harvest + leftover_harvest, 4)
         metrics["inventory_mtm"] = round(inventory_mtm, 4)
+        metrics["residual_buy_fees"] = round(residual_buy_fees, 4)
+        metrics["pnl_explained"] = round(explained, 4)
+        metrics["pnl_identity_gap"] = round(net - explained, 4)
         metrics["end_quote"] = round(self.quote, 4)
         metrics["end_base"] = round(self.base, 8)
         metrics["grid_shifts"] = self.shifts
@@ -387,11 +442,13 @@ class SpotMovingGridEngine:
             },
             notes=[
                 "feed=deals (official Gate tape; no OHLC wick path)",
+                "buys rest only below last hang; never bid through the opening print",
                 "no default drawdown halt; grid harvest is per-rung sell-buy-fees",
                 f"grid_count={self.strategy.grid_count} spacing_pct={self.strategy.spacing_pct} "
-                f"mode={self.strategy.spacing_mode}",
+                f"mode={self.strategy.spacing_mode} range=±{self.strategy.range_up_pct}/{self.strategy.range_down_pct}",
                 f"prints={n_prints} fills={len(self.trades)} shifts={self.shifts} "
-                f"harvest={grid_harvest:.4f}",
+                f"harvest={grid_harvest:.4f} tape_ok={tape.get('tape_ok')} "
+                f"identity_gap={net - explained:.6f}",
             ],
         )
 

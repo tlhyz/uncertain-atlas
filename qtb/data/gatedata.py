@@ -121,6 +121,54 @@ def deals_cache_path(market: str, yyyymm: str, root: Path | None = None) -> Path
     return base / pair / f"{pair}-{yyyymm}.csv"
 
 
+def audit_deals_tape(df: pd.DataFrame) -> dict[str, Any]:
+    """Sanity-check an official deals frame. Does not mutate the tape."""
+    if df is None or df.empty:
+        return {
+            "tape_ok": False,
+            "tape_error": "empty",
+            "n_prints": 0,
+            "source": "download.gatedata.org/spot/deals",
+        }
+    work = df
+    n = int(len(work))
+    prices = pd.to_numeric(work["price"], errors="coerce") if "price" in work.columns else pd.Series(dtype="float64")
+    ts = work["timestamp"] if "timestamp" in work.columns else None
+    first_px = float(prices.iloc[0]) if n else None
+    last_px = float(prices.iloc[-1]) if n else None
+    ret = None
+    if first_px and first_px > 0 and last_px is not None:
+        ret = last_px / first_px - 1.0
+    ts_mono = True
+    if ts is not None and n > 1:
+        ts_mono = bool((pd.to_datetime(ts).diff().iloc[1:] >= pd.Timedelta(0)).all())
+    keys_unique = True
+    if "dealid" in work.columns and ts is not None:
+        keys_unique = not bool(work.duplicated(subset=["timestamp", "dealid"]).any())
+    bad_px = int((prices <= 0).sum()) if n else 0
+    bad_amt = 0
+    if "amount" in work.columns and n:
+        amt = pd.to_numeric(work["amount"], errors="coerce")
+        bad_amt = int((amt <= 0).sum())
+    ok = n > 0 and ts_mono and keys_unique and bad_px == 0
+    return {
+        "tape_ok": ok,
+        "tape_source": str(work.attrs.get("source") or "download.gatedata.org/spot/deals"),
+        "n_prints": n,
+        "first_print_px": None if first_px is None else round(first_px, 8),
+        "last_print_px": None if last_px is None else round(last_px, 8),
+        "tape_return_pct": None if ret is None else round(ret, 6),
+        "first_print_ts": str(ts.iloc[0]) if ts is not None and n else None,
+        "last_print_ts": str(ts.iloc[-1]) if ts is not None and n else None,
+        "tape_ts_monotonic": ts_mono,
+        "tape_keys_unique": keys_unique,
+        "tape_nonpositive_price": bad_px,
+        "tape_nonpositive_amount": bad_amt,
+        "tape_high": None if n == 0 else round(float(prices.max()), 8),
+        "tape_low": None if n == 0 else round(float(prices.min()), 8),
+    }
+
+
 def parse_deals_csv(text: str) -> pd.DataFrame:
     """Parse official deals body (no header) into a typed frame."""
     if not text.strip():

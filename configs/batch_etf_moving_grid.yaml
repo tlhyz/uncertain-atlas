@@ -22,11 +22,12 @@ costs:
 strategy:
   name: moving_grid
   quote_capital: 2000.0
-  grid_count: 24
-  spacing_pct: 0.004
-  spacing_mode: geometric
-  order_size_quote: 80.0
+  grid_count: 20
+  range_up_pct: 0.05
+  range_down_pct: 0.05
+  spacing_mode: arithmetic
   shift_on_exit: true
+  order_size_quote: 100.0
   fill_policy: last_touch
 
 risk:

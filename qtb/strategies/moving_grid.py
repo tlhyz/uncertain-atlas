@@ -38,22 +38,33 @@ __all__ = [
 def build_moving_levels(
     mid: float,
     grid_count: int,
-    spacing_pct: float,
-    mode: SpacingMode = "geometric",
+    spacing_pct: float | None = None,
+    mode: SpacingMode = "arithmetic",
+    range_up_pct: float | None = None,
+    range_down_pct: float | None = None,
 ) -> np.ndarray:
-    """`grid_count` intervals (N+1 prices) centered on `mid`."""
+    """`grid_count` intervals (N+1 prices).
+
+    Gate UI form: 上 `range_up_pct` / 下 `range_down_pct` / N 格 / 等差.
+    Example: mid=100, ±5%, 20 grids → 95 … 105, step=0.5.
+    """
     if mid <= 0:
         raise ValueError(f"mid price must be > 0, got {mid}")
     n = int(grid_count)
     if n < 2:
         raise ValueError(f"grid_count must be >= 2, got {n}")
+    if range_up_pct is not None and range_down_pct is not None:
+        lo = mid * (1.0 - float(range_down_pct))
+        hi = mid * (1.0 + float(range_up_pct))
+        if hi <= lo:
+            raise ValueError(f"empty band lo={lo} hi={hi}")
+        return np.linspace(lo, hi, n + 1)
+    if spacing_pct is None or float(spacing_pct) <= 0:
+        raise ValueError("need spacing_pct or range_up_pct/range_down_pct")
     s = float(spacing_pct)
-    if s <= 0:
-        raise ValueError(f"spacing_pct must be > 0, got {s}")
     ks = np.arange(n + 1, dtype=float) - n / 2.0
     if mode == "arithmetic":
-        step = mid * s
-        return mid + step * ks
+        return mid + (mid * s) * ks
     if mode == "geometric":
         return mid * np.power(1.0 + s, ks)
     raise ValueError(f"spacing mode must be geometric|arithmetic, got {mode!r}")
@@ -109,17 +120,26 @@ class MovingGridStrategy(Strategy):
 
     def __init__(self, cfg: dict[str, Any]):
         super().__init__(cfg)
-        self.grid_count = int(cfg.get("grid_count") or 24)
-        self.spacing_pct = float(cfg.get("spacing_pct") or 0.004)
+        self.grid_count = int(cfg.get("grid_count") or 20)
+        up = cfg.get("range_up_pct")
+        down = cfg.get("range_down_pct")
+        self.range_up_pct = None if up in (None, "") else float(up)
+        self.range_down_pct = None if down in (None, "") else float(down)
+        n = max(self.grid_count, 2)
+        if cfg.get("spacing_pct") not in (None, ""):
+            self.spacing_pct = float(cfg["spacing_pct"])
+        elif self.range_up_pct is not None and self.range_down_pct is not None:
+            self.spacing_pct = (self.range_up_pct + self.range_down_pct) / n
+        else:
+            self.spacing_pct = 0.005
         self.spacing_mode: SpacingMode = (  # type: ignore[assignment]
-            str(cfg.get("spacing_mode") or "geometric").strip().lower()
+            str(cfg.get("spacing_mode") or "arithmetic").strip().lower()
         )
         if self.spacing_mode not in {"geometric", "arithmetic"}:
             raise ValueError(f"spacing_mode must be geometric|arithmetic, got {self.spacing_mode}")
         self.quote_capital = float(
             cfg.get("quote_capital") or cfg.get("long_capital") or cfg.get("initial_margin") or 2000.0
         )
-        n = max(self.grid_count, 2)
         self.order_size_quote = float(cfg.get("order_size_quote") or (self.quote_capital / n))
         self.shift_on_exit = bool(cfg.get("shift_on_exit", True))
         self.levels: np.ndarray | None = None
@@ -129,7 +149,14 @@ class MovingGridStrategy(Strategy):
 
     def setup(self, df: pd.DataFrame) -> None:
         mid = float(df["open"].iloc[0]) if "open" in df.columns else float(df["close"].iloc[0])
-        self.levels = build_moving_levels(mid, self.grid_count, self.spacing_pct, self.spacing_mode)
+        self.levels = build_moving_levels(
+            mid,
+            self.grid_count,
+            self.spacing_pct,
+            self.spacing_mode,
+            range_up_pct=self.range_up_pct,
+            range_down_pct=self.range_down_pct,
+        )
 
     def grid_range(self) -> tuple[float | None, float | None]:
         if self.levels is None or len(self.levels) == 0:
