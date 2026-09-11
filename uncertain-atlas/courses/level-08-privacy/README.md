@@ -12,3 +12,5 @@
 | 8.2 | [L08-M02-ring-vs-zk.md](L08-M02-ring-vs-zk.md) | 环混淆和电路证明差在哪 |
 | 8.3 | [L08-M03-succinct-history.md](L08-M03-succinct-history.md) | 小证明如何谈论整条历史 |
 | 8.4 | [L08-M04-circuit-as-machine.md](L08-M04-circuit-as-machine.md) | 电路/证人/可靠性（多项式后置） |
+
+覆盖声明：L8.1–8.3 → M8.1–8.3；L8.4 → M8.4 架构层。博物馆 CVE-2019-7167 钉「可靠性 ≠ 零知识」。

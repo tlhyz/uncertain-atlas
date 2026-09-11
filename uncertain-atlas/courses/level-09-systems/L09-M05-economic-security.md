@@ -97,4 +97,4 @@ Ethereum 质押与 PBS。
 ## 精密检查
 
 **禁止假学习：** 「质押市值 = 安全。」「有 slashing 所以不会审查。」  
-**边界：** 不预测币价；不把某年通胀表当规范永恒值。
+**边界：** 不预测币价；不把某年通胀表当规范永恒值。精读：[`../../tracks/economic/worked-example.md`](../../tracks/economic/worked-example.md)。

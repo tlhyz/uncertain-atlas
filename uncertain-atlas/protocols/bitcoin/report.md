@@ -173,12 +173,13 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 
 | 事件 | 层 | 备注 |
 |---|---|---|
-| CVE-2018-17144 | 实现 | 重复输入可通胀。协议意图固定供给。见 `tracks/failure-museum/cve-2018-17144.md` |
-| 2010 溢出通胀 | 实现 | 早期整数溢出。 |
-| 2013 级分叉（BDB 锁 / 块大小相关实现） | 实现+部署 | 不同实现/库限制导致链分裂经验 |
-| transaction malleability | 协议/实现 | 促使 SegWit |
+| CVE-2018-17144 | 实现 | 重复输入可通胀。见 `tracks/failure-museum/cve-2018-17144.md` |
+| CVE-2010-5139 | 实现 | 输出求和溢出。见 `tracks/failure-museum/cve-2010-5139.md` |
+| CVE-2012-2459 | 协议+实现 | Merkle 奇数复制 ⇒ 同根不同列表。见 `tracks/failure-museum/cve-2012-2459.md` |
+| 2013 分叉 | 实现+部署 | BIP 50（BDB 锁上限）。见 `tracks/failure-museum/bip-0050-2013-fork.md` |
+| transaction malleability | 协议/实现 | 促使 SegWit；结构课 L3.7 |
 
-详细七问档案只先写 2018 那条。其余标记待补，禁止用传闻填充。
+七问只写有 CVE / 官方披露 / BIP 原文的条目。禁止用传闻填充。
 
 ---
 

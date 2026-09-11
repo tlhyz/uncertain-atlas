@@ -150,8 +150,11 @@ Pedersen/类似承诺、Merkle、zk-SNARK / Halo 2、花费与查看密钥分离
 
 ## 15. 历史事故
 
-trusted setup 仪式的社会风险、早期参数与实现问题——补档须官方/ZIP。本版不编具体利用。  
-方向：电路约束漏一条 = 通胀。
+| 事件 | 层 | 备注 |
+|---|---|---|
+| CVE-2019-7167 | 密码 | BCTV14 可靠性破，屏蔽池可伪造；官方称不影响隐私。Sapling（2018-10-28）后改 Sprout-on-Groth16。见 `tracks/failure-museum/cve-2019-7167.md` |
+
+trusted setup 的社会风险仍只作方向，不编未核仪式事故。其它池的后续披露：有独立 CVE / 官方文再另档。
 
 ---
 

@@ -29,7 +29,7 @@
 
 12. L5.3 多客户端同根。  
 13. [`../tracks/implementation/`](../tracks/implementation/README.md) 编码实例 + 崩溃实例。  
-14. 博物馆：CVE-2010-5139、CVE-2018-17144、BIP 50。  
+14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50；隐私通再读 CVE-2019-7167。  
 15. L9.3 / L9.7。问：绿测试守哪一层。
 
 ## 第五通：别人用什么换
@@ -43,7 +43,7 @@
 ## 第六通：不确定镜头（仍不选型）
 
 21. L10.1 纪律。  
-22. 威胁模型 + [`../libraries/settlement-copy.md`](../libraries/settlement-copy.md)。  
+22. 威胁模型 + [`../libraries/settlement-copy.md`](../libraries/settlement-copy.md) + [`../tracks/upgrades/worked-example.md`](../tracks/upgrades/worked-example.md) + [`../tracks/economic/worked-example.md`](../tracks/economic/worked-example.md)。  
 23. L10.3 最小机器清单。  
 24. L10.4 / PQ 迁移状态机 + [`../tracks/post-quantum/worked-example-migration.md`](../tracks/post-quantum/worked-example-migration.md)。不填算法。
 

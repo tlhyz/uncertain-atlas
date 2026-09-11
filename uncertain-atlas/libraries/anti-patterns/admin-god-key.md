@@ -2,4 +2,4 @@
 
 一把管理员键可改共识规则或改余额。  
 这把钥匙比所有 BFT 假设都大。  
-升级要有延迟、可验证的规则、不能默默改历史。
+升级要有延迟、可验证的规则、不能默默改历史。精读：[`../../tracks/upgrades/worked-example.md`](../../tracks/upgrades/worked-example.md)。

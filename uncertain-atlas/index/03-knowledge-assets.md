@@ -22,9 +22,9 @@
 
 | 编号 | 资产 | 路径 | 状态 | 优先级 |
 |---|---|---|---|---|
-| 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | CVE-2010-5139、CVE-2018-17144、BIP 50 | 必学 |
+| 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 五案（含 2012 Merkle、2019 Sprout） | 必学 |
 | 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 12 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 15 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 16 条 | 重要 |
 
 ---
 

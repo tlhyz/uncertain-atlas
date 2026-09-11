@@ -93,4 +93,4 @@ Bitcoin 软分叉文化；Ethereum 硬分叉协调 + 社会共识；Cosmos 链�
 ## 精密检查
 
 **禁止假学习：** 「去中心化所以没有管理员。」「紧急钥只在紧急时用，所以安全。」  
-**边界：** 不写某 DAO 的投票术；不把 token 治理当协议安全证明。
+**边界：** 不写某 DAO 的投票术；不把 token 治理当协议安全证明。精读：[`../../tracks/upgrades/worked-example.md`](../../tracks/upgrades/worked-example.md)。
