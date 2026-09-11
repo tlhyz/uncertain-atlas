@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-11（续）
+
+- 协议档案：Avalanche（对照）、Solana（五笔账拆吞吐）。
+- 课程 L3：Nakamoto 最终性、费用/标准性、保守演化。
+- 事故细节仍只在有原文时写；Snow/Solana 停机七问留空。
+
 ## 2026-09-11
 
 - 建立 `uncertain-atlas/`，与 `qtb/` 隔离。根 README 仅一行指针。

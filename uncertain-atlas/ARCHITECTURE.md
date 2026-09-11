@@ -68,10 +68,12 @@ index 看路
 | 轨 | 状态 |
 |---|---|
 | index | 已立，路径已改到五条轨 |
-| courses L0–L2 | 已写 |
+| courses L0–L3 | L0–L2 全课；L3 三课 + Bitcoin 档案 |
 | protocols/bitcoin | 19 节第一版 |
 | protocols/cometbft | 19 节第一版 |
 | protocols/ethereum | 19 节第一版 |
+| protocols/avalanche | 19 节第一版（对照） |
+| protocols/solana | 19 节第一版 |
 | tracks/state-models | 指向 L2.4 |
 | tracks/consensus | 对照表 |
 | tracks/post-quantum | 工程账本第一版 |

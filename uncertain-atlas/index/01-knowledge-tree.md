@@ -167,6 +167,8 @@ L1 见 `courses/level-01-crypto/`。L2 见 `courses/level-02-state/`。
 
 ---
 
+课程：`courses/level-03-bitcoin/`。档案：`protocols/bitcoin/`。
+
 ## Level 3 · Bitcoin 作为完整系统 · 必学
 
 依赖：L2 的 UTXO + L1 哈希/签名/Merkle。

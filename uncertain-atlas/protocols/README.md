@@ -35,4 +35,6 @@
 | Bitcoin | [bitcoin/](bitcoin/README.md) | 第一版已写 |
 | Cosmos / CometBFT | [cometbft/](cometbft/README.md) | 第一版已写 |
 | Ethereum | [ethereum/](ethereum/README.md) | 第一版已写 |
+| Avalanche | [avalanche/](avalanche/README.md) | 第一版已写（对照） |
+| Solana | [solana/](solana/README.md) | 第一版已写 |
 | 其余 | 按 [`../index/02-research-order.md`](../index/02-research-order.md) | |

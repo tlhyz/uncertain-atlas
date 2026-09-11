@@ -3,7 +3,8 @@
 对照档案：
 
 - [`../../protocols/bitcoin/report.md`](../../protocols/bitcoin/report.md)  
-- [`../../protocols/cometbft/report.md`](../../protocols/cometbft/report.md)
+- [`../../protocols/cometbft/report.md`](../../protocols/cometbft/report.md)  
+- [`../../protocols/avalanche/report.md`](../../protocols/avalanche/report.md)
 
 | 家族 | 最终性 | 分区时 | 领导 | 主要假设 |
 |---|---|---|---|---|

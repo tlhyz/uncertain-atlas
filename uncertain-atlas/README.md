@@ -25,6 +25,9 @@
 8. [`protocols/bitcoin/`](protocols/bitcoin/README.md)
 9. [`protocols/cometbft/`](protocols/cometbft/README.md)
 10. [`protocols/ethereum/`](protocols/ethereum/README.md)
+11. [`protocols/avalanche/`](protocols/avalanche/README.md)
+12. [`protocols/solana/`](protocols/solana/README.md)
+13. [`courses/level-03-bitcoin/`](courses/level-03-bitcoin/README.md)
 
 修改日志：[`CHANGELOG.md`](CHANGELOG.md) · 审核：[`AUDIT_LOG.md`](AUDIT_LOG.md)
 
