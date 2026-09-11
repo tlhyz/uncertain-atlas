@@ -96,9 +96,9 @@ N2、N3 下载、验签、Apply
 
 ## F. 真实项目
 
-- **Bitcoin**：确认数是重组风险的经验代理，不是数学上的 commit。交易所常等多个确认，是经济+概率判断。
-- **CometBFT 应用链**：commit 后该高度不应再换。用户仍可能连到一个落后或作恶的 RPC。
-- **Ethereum**：有 head、justified、finalized 等不同「看起来确定」的等级。钱包若只显示 head，语义偏乐观。
+- **Bitcoin（事实）**：确认数是重组风险的经验代理，不是数学上的 commit。交易所常等多个确认，是经济+概率判断。
+- **CometBFT 应用链（事实）**：commit 后该高度不应再换。用户仍可能连到一个落后或作恶的 RPC。
+- **Ethereum（事实）**：有 head、justified、finalized 等不同「看起来确定」的等级。钱包若只显示 head，语义偏乐观。
 - **「不确定」（建议）**：产品文案必须把 pending / committed / finalized 分开。这是安全特性，不是 UI 细节。
 
 ---
