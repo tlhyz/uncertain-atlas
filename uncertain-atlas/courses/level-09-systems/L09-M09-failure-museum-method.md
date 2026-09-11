@@ -102,5 +102,13 @@ Level 10 的 invariant 库只收能回流测试的句子。
 
 ## 精密检查
 
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 只收 CVE / 官方披露 / 规范原文 |
+| 协议 | 七问必须指出坏在哪一层 |
+| 实现 | 回流成回归测试，不是恐怖故事 |
+| 部署 | 未核新闻不进馆 |
+| 经济 | 「出过事故所以架构不行」是假句 |
+
 **禁止假学习：** 「出过事故所以架构不行。」「没出事故所以架构对。」  
-**边界：** 本课不新增未核验事故。回流目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。
+**边界：** 本课不新增未核验事故。回流目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。五层对照：[`../../tracks/failure-museum/worked-example-five-layers.md`](../../tracks/failure-museum/worked-example-five-layers.md)。

@@ -96,5 +96,13 @@ WAL：安全。代价：磁盘延迟；实现复杂。
 
 ## 精密检查
 
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 应用验用户签，引擎验投票签；两插件可换 |
+| 协议 | ABCI：共识不知余额，应用不知票 |
+| 实现 | CheckTx ≠ Deliver；WAL 先写后投 |
+| 部署 | 崩溃必须回到原子高度 |
+| 经济 | 应用可收费；共识不该按余额改票权，除非经 V(h) |
+
 **禁止假学习：** 「CheckTx 等于已执行。」「应用和共识哪个先写磁盘无所谓。」
 **边界：** 存储通论在 L9.3。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)。

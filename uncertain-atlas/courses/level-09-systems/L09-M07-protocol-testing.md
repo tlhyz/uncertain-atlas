@@ -103,5 +103,13 @@ skip 而无理由 = 反模式 test-skip-as-pass。
 
 ## 精密检查
 
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 测试不证明密码假设成立 |
+| 协议 | 属性 / 不变量测试钉协议句 |
+| 实现 | unit / fuzz / 差分 / 变异 |
+| 部署 | chaos 才碰时钟与盘 |
+| 经济 | 覆盖率不是经济证明 |
+
 **禁止假学习：** 「覆盖率 90% 所以协议正确。」「fuzz 没炸所以安全。」  
 **边界：** 不教某一 fuzz 引擎的旗标。精读：[`../../tracks/testing/worked-example.md`](../../tracks/testing/worked-example.md)。语料目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。

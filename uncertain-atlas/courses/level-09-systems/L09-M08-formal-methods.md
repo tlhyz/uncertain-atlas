@@ -102,5 +102,13 @@ Liveness 必须写清公平性，否则工具会说「大家都睡着所以没 c
 
 ## 精密检查
 
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 模型通常把签名当预言机 |
+| 协议 | 锁 / 相交可进 TLA；不等于 `Apply` 确定 |
+| 实现 | 形式化过 ≠ 实现忠实（反模式 model-equals-implementation） |
+| 部署 | 模型不包含真实 NTP |
+| 经济 | 模型很少含贿赂 |
+
 **禁止假学习：** 「形式化过 = 不可能出事故。」  
 **边界：** 本课不教 TLA+ 语法；作业级模型后置。精读：[`../../tracks/formal-methods/worked-example.md`](../../tracks/formal-methods/worked-example.md)。

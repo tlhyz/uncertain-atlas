@@ -105,5 +105,13 @@ crash_at_any_point ⇒ restart ∈ {pre_H, post_H_complete}
 
 ## 精密检查
 
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 状态承诺哈希必须与落盘一致 |
+| 协议 | 原子高度：无半块状态 |
+| 实现 | WAL、fsync、剪枝切点 |
+| 部署 | 断电、磁盘满、状态同步源 |
+| 经济 | 存档成本谁付（L2.6） |
+
 **禁止假学习：** 「fsync 慢所以可以先写一半。」
 **边界：** 见反模式 half-written-state。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)。

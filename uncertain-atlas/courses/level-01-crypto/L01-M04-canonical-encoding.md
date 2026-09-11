@@ -113,5 +113,13 @@ mempool 策略可以比共识更严。
 
 ## 精密检查
 
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 编码本身不是签；签的是规范化后的字节 |
+| 协议 | 同一语义只允许一种字节串 |
+| 实现 | 接受非规范 = 分裂或可变哈希 |
+| 部署 | 解析器被灌爆是 DoS，不是「JSON 更方便」 |
+| 经济 | 裂链后跟错根放货 |
+
 **禁止假学习：** 「JSON 也能当共识编码。」
 **边界：** 具体编解码以各链规范为准。见反模式 noncanonical-accepted。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。

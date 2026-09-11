@@ -97,5 +97,13 @@ Celestia DAS；Ethereum blobs（另一条承诺路线）；Bitcoin 全节点默�
 
 ## 精密检查
 
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 纠删码与 KZG 是不同假设 |
+| 协议 | 有头 ≠ 有体；抽样 ≠ 执行正确 |
+| 实现 | NMT / 份额编码必须确定 |
+| 部署 | 轻节点必须真抽样，不能只问 RPC |
+| 经济 | 扣留数据的收益 vs 抽样抓住的概率（不填未核百分比） |
+
 **禁止假学习：** 「有头就是有数据。」「抽到份额所以执行正确。」
 **边界：** Celestia 纠删码 ≠ Ethereum KZG。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)。

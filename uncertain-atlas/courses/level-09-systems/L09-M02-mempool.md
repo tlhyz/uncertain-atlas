@@ -96,5 +96,13 @@ Bitcoin mempool + 标准性；Ethereum 本地池 + 构建者市场；Solana Gulf
 
 ## 精密检查
 
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 入池前验签配额（后量子预备） |
+| 协议 | 准入 / 替换 / 驱逐规则；入池 ≠ 结算 |
+| 实现 | 池索引、解析 DoS |
+| 部署 | 每节点一池，没有全球公平队列 |
+| 经济 | 排序权、抢跑、审查 |
+
 **禁止假学习：** 「mempool 是全球公平队列。」「进池 = 结算。」
 **边界：** PBS 细节在 L5.4。精读：[`../../tracks/mempool/worked-example.md`](../../tracks/mempool/worked-example.md)。
