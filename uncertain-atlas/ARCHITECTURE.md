@@ -72,6 +72,6 @@ index 看路
 | index | 已立；写作顺序已改「写全知识」 |
 | courses | L0–L10 均有正文；L8.4 数学后置；决策列空 |
 | protocols | 主线 11 链 + 乐观 rollup 品类 + Algorand 抽签对照 |
-| tracks | 共识/状态/PQ/失败馆 + 最终性/并行/轻节点/密码地图 |
+| tracks | 上表 + 生命周期五列对照 + 升级 |
 | libraries | 模式 12 + 反模式 13 + 决策/威胁/不变量 |
 | exams | L0 题已迁入，暂不考 |

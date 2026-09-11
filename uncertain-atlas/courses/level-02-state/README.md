@@ -14,5 +14,6 @@
 | 2.2 | [L02-M02-account.md](L02-M02-account.md) | 账户 + nonce 换来了什么 |
 | 2.3 | [L02-M03-object-resource.md](L02-M03-object-resource.md) | 对象/资源世界观差在哪 |
 | 2.4 | [L02-M04-design-map.md](L02-M04-design-map.md) | 《状态模型设计地图》 |
+| 2.5 | [L02-M05-eutxo.md](L02-M05-eutxo.md) | eUTXO：输出带着数据 |
 
 对应横向专题副本：`tracks/state-models/`（本课 2.4 即第一版地图）。

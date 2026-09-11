@@ -24,5 +24,7 @@
 | Mina | [mina/](mina/README.md) | 第一版 |
 | 乐观 Rollup（Arbitrum / Optimism 对照） | [optimistic-rollup/](optimistic-rollup/README.md) | 第一版（品类） |
 | Algorand | [algorand/](algorand/README.md) | 第一版（抽签对照） |
+| Kaspa | [kaspa/](kaspa/README.md) | 第一版（块 DAG 对照） |
+| Fuel | [fuel/](fuel/README.md) | 第一版（思想级 UTXO 调度） |
 
-其余第 8 波仍在过滤器后：Kaspa / Fuel / 真实 PQ 部署。
+其余第 8 波仍在过滤器后：真实 PQ 部署。

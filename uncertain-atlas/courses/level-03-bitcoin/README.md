@@ -13,5 +13,6 @@
 | 3.5 | [L03-M05-full-node-and-spv.md](L03-M05-full-node-and-spv.md) | M3.5 | 全节点 / 剪枝 / SPV |
 | 3.6 | [L03-M06-testing-and-culture.md](L03-M06-testing-and-culture.md) | M3.6 / M3.7 方法 | 事故如何回流成规则 |
 | 3.7 | [L03-M07-segwit-soft-fork.md](L03-M07-segwit-soft-fork.md) | M3.4 结构 | 见证如何软分叉进旧验证 |
+| 3.8 | [L03-M08-block-dag.md](L03-M08-block-dag.md) | Kaspa 对照 | 孤块为何出现、DAG 如何仍要全序 |
 
 Taproot / Miniscript 语言细节仍后置。2013 分叉七问见博物馆 BIP 50。

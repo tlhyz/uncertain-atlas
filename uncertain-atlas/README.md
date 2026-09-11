@@ -21,7 +21,7 @@
 4. [`index/02-research-order.md`](index/02-research-order.md) — 为何先 Bitcoin
 5. 课程：[`courses/`](courses/README.md)（L0–L10 均已有正文）
 6. 协议：[`protocols/`](protocols/README.md)
-7. 横向地图：最终性 / 并行 / 轻节点 / 密码 / 共识 / 状态 / PQ / 失败博物馆 — 见 `tracks/`
+7. 横向地图：[`tracks/lifecycle/`](tracks/lifecycle/README.md)（目的 A）以及最终性 / 并行 / 轻节点 / 密码 / 共识 / 状态 / PQ / 失败博物馆
 8. 模式库：[`libraries/`](libraries/README.md)
 
 修改日志：[`CHANGELOG.md`](CHANGELOG.md)

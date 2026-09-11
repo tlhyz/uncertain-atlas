@@ -15,3 +15,4 @@
 - [header-equals-settlement](header-equals-settlement.md)
 - [stm-replaces-consensus](stm-replaces-consensus.md)
 - [proof-size-equals-chain](proof-size-equals-chain.md)
+- [impl-limit-as-consensus](impl-limit-as-consensus.md)
