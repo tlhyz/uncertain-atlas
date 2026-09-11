@@ -12,4 +12,5 @@
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、客户端分歧、其它池的后续披露。
 
-写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)
+写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)  
+回流测试目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。

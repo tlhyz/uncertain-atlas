@@ -103,4 +103,4 @@ Level 10 的 invariant 库只收能回流测试的句子。
 ## 精密检查
 
 **禁止假学习：** 「出过事故所以架构不行。」「没出事故所以架构对。」  
-**边界：** 本课不新增未核验事故。
+**边界：** 本课不新增未核验事故。回流目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。
