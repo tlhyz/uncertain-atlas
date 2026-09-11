@@ -5,7 +5,7 @@ sells one grid above each filled buy. When last price leaves the band by one
 grid, the whole window shifts and orders are re-hung — same as the native
 spot-grid robot, not the futures classic_grid that halts on a range break.
 
-Designed for Gate ETF spot pairs (ETH3L / SOXL3L / …), not USDT-M perps.
+Designed for Gate ETF spot pairs (SOXLG / ETH3L / …), not USDT-M perps.
 """
 
 from __future__ import annotations

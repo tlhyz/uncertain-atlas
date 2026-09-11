@@ -83,7 +83,11 @@ def build_parser() -> argparse.ArgumentParser:
     )
     fetf.add_argument("--from", dest="deals_from", default="", help="YYYY-MM (default: last 3 complete months)")
     fetf.add_argument("--to", dest="deals_to", default="", help="YYYY-MM")
-    fetf.add_argument("--longs-only", action="store_true", help="Only *3L longs (SOXL3L/SNXX3L/ETH3L/SOL3L)")
+    fetf.add_argument(
+        "--longs-only",
+        action="store_true",
+        help="SOXLG/SNXXG/ETH3L/SOL3L (tokenized SOXL/SNXX + ETH/SOL 3x long)",
+    )
     fetf.add_argument("--cache-dir", default="", help="Override cache/spot_deals")
     return p
 
