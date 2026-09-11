@@ -43,7 +43,7 @@
 ## 第六通：不确定镜头（仍不选型）
 
 21. L10.1 纪律。  
-22. 威胁模型 + [`../libraries/settlement-copy.md`](../libraries/settlement-copy.md) + [`../tracks/upgrades/worked-example.md`](../tracks/upgrades/worked-example.md) + [`../tracks/economic/worked-example.md`](../tracks/economic/worked-example.md) + [`../tracks/economic/worked-example-evidence.md`](../tracks/economic/worked-example-evidence.md)。  
+22. 威胁模型 + [`../libraries/settlement-copy.md`](../libraries/settlement-copy.md) + [`../tracks/upgrades/worked-example.md`](../tracks/upgrades/worked-example.md) + [`../tracks/economic/worked-example.md`](../tracks/economic/worked-example.md) + [`../tracks/economic/worked-example-evidence.md`](../tracks/economic/worked-example-evidence.md) + [`../tracks/economic/worked-example-casper-slashing.md`](../tracks/economic/worked-example-casper-slashing.md)（两张签不够；要指出 double / surround / 同 slot 头 / 应用裁量）。  
 23. L10.3 最小机器清单。  
 24. L10.4 / PQ 迁移状态机 + [`../tracks/post-quantum/worked-example-migration.md`](../tracks/post-quantum/worked-example-migration.md)。不填算法。尺寸卡：[`../tracks/post-quantum/nist-size-card.md`](../tracks/post-quantum/nist-size-card.md)；投票字节：[`../tracks/post-quantum/worked-example-vote-bytes.md`](../tracks/post-quantum/worked-example-vote-bytes.md)。有状态哈希签：[`../tracks/post-quantum/stateful-hbs.md`](../tracks/post-quantum/stateful-hbs.md) + OTS 复用精读。FIPS 外部 `ctx`：[`../tracks/post-quantum/fips-context.md`](../tracks/post-quantum/fips-context.md) + 空 ctx 精读。CPU 仍空。 QRL 只读过滤器页，不抄生态。  
 25. [`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md) 对照不变量。这不是考试。

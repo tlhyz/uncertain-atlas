@@ -55,7 +55,7 @@ EigenLayer 是目前公开文献里把这句说得最清楚的产品名。它 **
 
 ## 对不确定的意义（建议）
 
-- 结算机的罚没条件应尽量 **客观、可上链归因**（见 [证据 ≠ 罚没](../../tracks/economic/worked-example-evidence.md)）。
+- 结算机的罚没条件应尽量 **客观、可上链归因**（见 [证据 ≠ 罚没](../../tracks/economic/worked-example-evidence.md)、[Casper 谓词](../../tracks/economic/worked-example-casper-slashing.md)）。
 - 若将来有「再声明同一份抵押」的设计，必须单列：第二份声明的证据形状、谁执行、与第一份冲突时谁先到。
 - 不要用 EigenLayer 的文档句冒充以太坊规范句。
 

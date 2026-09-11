@@ -464,3 +464,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A145 | 记录 | 0.14 官网有 IBD 小时与默认哈希 | 不抄；不写博客里的「两周埋葬」 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-11 23:51 UTC · Casper 可罚谓词 ≠ 任意两张签
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A146 | 中 | 「双签就会被罚」把四种对象糊成一句 | `worked-example-casper-slashing.md`：double / surround / 同 slot 双头 / CometBFT 证据 |
+| A147 | 中 | surround 被写成对称关系 | 钉 `process_attester_slashing` 只测 `attestation_1` 包住 `attestation_2` |
+| A148 | 中 | 信标协议内 slash 与 ABCI 应用裁量、Altair 无 slash、AVS 主观罚没会混 | 四列表；不变量 26；语料 C28；反模式 two-votes-sold-as-slash；L10.3 第 22 条 |
+| A149 | 记录 | 规范与博客有罚金商、现网人数、罚没总额 | 不抄；不填 `MIN_SLASHING_PENALTY_QUOTIENT` |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

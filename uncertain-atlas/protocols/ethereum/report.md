@@ -57,7 +57,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 ## 6. 共识
 
 合并后：Gasper 家族（LMD-GHOST fork choice + Casper FFG 最终性）。  
-验证者质押、attestation、slashing。  
+验证者质押、attestation、slashing。可罚关系是 phase0 `is_slashable_attestation_data` 的 **double**（同 target epoch、不同 data）与 **surround**（`attestation_1` 包住 `attestation_2`，顺序不对称），加上同 slot 双头的 proposer slashing；信标状态执行 `slash_validator`，不是 ABCI 应用裁量。精读：[`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。不抄现行罚金与验证者人数。  
 最终性是协议对象，但仍有弱主观性、长程攻击等 PoS 议题。精读：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)（检查点新鲜度；分发节规范未写完）。
 
 与 CometBFT 不同：有单独的 fork choice 头，不一定每个 slot 都像 Tendermint 那样「一高度一 commit」。不要混。

@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 31）
+
+- Casper 罚没精读：phase0 `is_slashable_attestation_data` 的 double / surround（容器顺序不对称）；同 slot 双头的 proposer slashing；信标状态执行 `slash_validator`。
+- 对照 CometBFT 证据≠罚没、Altair 同步委员会无同一套 slash、EigenLayer AVS 可主观。
+- 不变量 26；语料 C28；反模式 two-votes-sold-as-slash；L10.3 第 22 条。
+- 不抄罚金商、现网验证者人数、罚没总额。
+
 ## 2026-09-12（续 30）
 
 - assumevalid 精读：Bitcoin Core 0.14.0。跳祖先脚本/签名，不强迫那条链；`-assumevalid=0` 全验。旧 checkpoint 才要求块在链上。

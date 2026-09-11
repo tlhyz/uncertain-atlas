@@ -78,7 +78,7 @@ ABCI 附加字段（`TotalVotingPower`、`ValidatorPower`、时间戳等）**不
 1. 规范第一页写清：引擎提交 `Misbehavior`，应用写罚没公式。不要说「上链即罚光」。  
 2. 不变量 21 / 语料 C23：合法双签形状必须能被验为证据；同 BlockID 或错 `ChainID` 必须拒。  
 3. 后量子：一条 `DuplicateVoteEvidence` ≥ 两份投票 σ。`LightClientAttackEvidence` 还带整份 LightBlock。块预算与账本第 18 行先写公式，数字仍空。  
-4. Ethereum CL 把部分罚没写进信标状态机，不是同一架构。不要写成「所有 BFT 都会自动罚」。  
+4. Ethereum CL 把部分罚没写进信标状态机，不是同一架构。谓词与执行人见 [`worked-example-casper-slashing.md`](worked-example-casper-slashing.md)。不要写成「所有 BFT 都会自动罚」。  
 5. 不填 CPU，不选 CosmWasm 罚没百分比。
 
 ---
@@ -86,4 +86,4 @@ ABCI 附加字段（`TotalVotingPower`、`ValidatorPower`、时间戳等）**不
 ## 精密检查
 
 **禁止假学习：** 「证据进块所以已经 slash。」「BFT 自动经济安全。」「轻客户端被骗等于全网双最终。」  
-**边界：** 不写 IsolateAmnesiaAttacker 伪代码；不抄 10 秒流言间隔当永恒；不编无原文的 Cosmos 罚没事故。
+**边界：** 不写 IsolateAmnesiaAttacker 伪代码；不抄 10 秒流言间隔当永恒；不编无原文的 Cosmos 罚没事故。Casper 的 double / surround / 协议内 `slash_validator` 不在本页展开。

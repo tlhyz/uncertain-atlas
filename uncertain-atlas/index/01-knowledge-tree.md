@@ -228,7 +228,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.3 锁、解锁、超时 · 必学
 - locking / unlock / round change
 - 为了 safety 牺牲某一轮 liveness
-- 覆盖：课文 L4.3；打破锁的链上对象是证据，见 `tracks/economic/worked-example-evidence.md`
+- 覆盖：课文 L4.3；打破锁的链上对象是证据，见 `tracks/economic/worked-example-evidence.md`；Casper 两票谓词见 `tracks/economic/worked-example-casper-slashing.md`
 
 ### M4.4 验证者集合与投票权 · 必学
 - validator set、voting power
@@ -244,6 +244,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.7 HotStuff / Casper 对照预习 · 进阶
 - QC、view change
 - 先建立对照表，不深挖所有变体
+- 覆盖：课文 L4.6；Casper 两票谓词 `tracks/economic/worked-example-casper-slashing.md`
 
 ### M4.8 源码与测试 · 重要
 - CometBFT 状态机入口
@@ -392,7 +393,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.5 经济安全 · 重要
 - 发行、质押、罚没、MEV、审查、卡特尔
 - 密码学安全 ≠ 经济安全
-- 覆盖：课文 L9.5；桥资本精读；证据 ≠ slash `tracks/economic/worked-example-evidence.md`
+- 覆盖：课文 L9.5；桥资本精读；证据 ≠ slash `tracks/economic/worked-example-evidence.md`；Casper double / surround `tracks/economic/worked-example-casper-slashing.md`
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
@@ -432,11 +433,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–25）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–26）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C27；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C28；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

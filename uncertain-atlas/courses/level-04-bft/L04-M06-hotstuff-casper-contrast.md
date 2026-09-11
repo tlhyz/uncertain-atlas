@@ -62,7 +62,7 @@ CometBFT：同一高度上 Propose → Prevote → Precommit，靠锁防止对�
 
 同一冲突：块 A、块 B。  
 Tendermint：同一高度两张 precommit QC 在 <1/3 作恶下不应并存。  
-FFG：两个冲突检查点被最终，应可抽出可 slash 的矛盾票（规范细节以共识规范为准）。  
+FFG：两个冲突检查点被最终，应可抽出可 slash 的矛盾票。谓词是 phase0 的 double / surround（容器顺序不对称），由信标状态执行 `slash_validator`，不是「任意两张签」。见 [`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。  
 若实现只检查「票数够」不检查「同一目标/同一集合」，相交被架空。
 
 ---
@@ -113,4 +113,4 @@ FFG + fork choice：用户有三种「到了」，产品必须选一种结算。
 | 经济 | 「更新所以更安全」是广告 |
 
 **禁止假学习：** 「都是 BFT 所以最终性一样。」「HotStuff 更新所以更安全。」  
-**边界：** 不证论文、不列所有变体、不写未测的消息时延。
+**边界：** 不证论文、不列所有变体、不写未测的消息时延。不抄现行罚金。slash 谓词精读见 [`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。

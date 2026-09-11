@@ -96,7 +96,8 @@ Altair 另加（本表仍不是全集）：`DOMAIN_SYNC_COMMITTEE = 0x07000000`�
 2. `chain_id` / genesis 根进被签字节，不要只靠进程配置「我们只连这一条」。  
 3. 签名器状态（上次 height/round/type）是部署不变量；崩溃后读 WAL，不能靠内存。  
 4. 后量子：不变量 16 的「每高度票数」先数 prevote+precommit（再加 proposal）；`ctx` 按**消息家族**分，步类型仍在 `M` 里。  
-5. 不填 CPU，不选 Ed25519 / BLS / ML-DSA。
+5. 罚没谓词必须指到这些字节里的字段（同高同轮同 Type、同 target epoch、同 slot 头），见 [`../economic/worked-example-casper-slashing.md`](../economic/worked-example-casper-slashing.md)。  
+6. 不填 CPU，不选 Ed25519 / BLS / ML-DSA。
 
 ---
 

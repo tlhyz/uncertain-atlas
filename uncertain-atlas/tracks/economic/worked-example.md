@@ -51,4 +51,4 @@
 ## 精密检查
 
 **禁止假学习：** 「质押市值 = 安全。」「有桥所以是 L1 结算。」「有 slashing 所以不会审查。」  
-**边界：** 不预测币价；不写未披露的具体盗桥七问。有 CVE / 官方 postmortem 再进博物馆。
+**边界：** 不预测币价；不写未披露的具体盗桥七问。有 CVE / 官方 postmortem 再进博物馆。两票谓词与谁执行 slash 见 [`worked-example-casper-slashing.md`](worked-example-casper-slashing.md)。
