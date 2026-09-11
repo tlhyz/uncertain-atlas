@@ -1,0 +1,16 @@
+# Level 5 · Ethereum：可编程与多客户端
+
+优先级：重要  
+先修：L2.2 账户、L1.4 规范编码、L4.1 最终性对照（知道 CometBFT commit 长什么样）  
+档案：[`../../protocols/ethereum/`](../../protocols/ethereum/README.md)
+
+毕业：能解释「多个独立客户端如何仍对同一交易得到同一状态根」，并能把 head / justified / finalized 分开。
+
+本课不教写 Solidity，不背官网 TPS。
+
+| 课 | 文件 | 核心问题 |
+|---|---|---|
+| 5.1 | [L05-M01-evm-and-gas.md](L05-M01-evm-and-gas.md) | 任意程序如何仍是确定性状态机 |
+| 5.2 | [L05-M02-el-cl-finality.md](L05-M02-el-cl-finality.md) | 执行层和共识层各保证什么 |
+| 5.3 | [L05-M03-multi-client.md](L05-M03-multi-client.md) | 多实现为什么是药也是刀 |
+| 5.4 | [L05-M04-state-blobs-mev.md](L05-M04-state-blobs-mev.md) | 状态胀了、blob、mempool 不再是队列 |

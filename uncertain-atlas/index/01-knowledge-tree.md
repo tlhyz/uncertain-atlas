@@ -96,7 +96,8 @@ L0 机器直觉
 - 知识点：设计问题清单、过早优化
 
 **本 Level 完整课程已写。** 见 `courses/level-00-machine/`。  
-L1 见 `courses/level-01-crypto/`。L2 见 `courses/level-02-state/`。
+L1 见 `courses/level-01-crypto/`。L2 见 `courses/level-02-state/`。  
+L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖声明）。
 
 ---
 

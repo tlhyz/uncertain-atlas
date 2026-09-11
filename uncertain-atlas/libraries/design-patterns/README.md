@@ -13,3 +13,5 @@
 - [canonical-encoding](canonical-encoding.md)
 - [algorithm-agility](algorithm-agility.md)
 - [data-availability-sampling](data-availability-sampling.md)
+- [multi-client-determinism](multi-client-determinism.md)
+- [declare-then-schedule](declare-then-schedule.md)

@@ -4,6 +4,9 @@
 
 已归档：
 
-- [cve-2018-17144](cve-2018-17144.md)
+- [cve-2018-17144](cve-2018-17144.md)（实现：重复输入）
+- [cve-2010-5139](cve-2010-5139.md)（实现：输出求和溢出）
 
-待补（有原始出处再写，不写传闻）：2010 Bitcoin 溢出、2013 实现分叉、各链 halt、桥、客户端分歧。
+待补（有原始出处再写，不写传闻）：2013 Bitcoin 实现分叉（BDB/LevelDB 方向，须官方/Core 公告）、各链 halt、桥、客户端分歧。
+
+写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)

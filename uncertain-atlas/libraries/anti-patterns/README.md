@@ -13,3 +13,5 @@
 - [rpc-as-verification](rpc-as-verification.md)
 - [majority-vote-is-enough](majority-vote-is-enough.md)
 - [header-equals-settlement](header-equals-settlement.md)
+- [stm-replaces-consensus](stm-replaces-consensus.md)
+- [proof-size-equals-chain](proof-size-equals-chain.md)
