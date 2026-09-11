@@ -21,6 +21,7 @@ from qtb.strategies.moving_grid import (
     DEFAULT_ETF_3X,
     bar_touch_path,
     build_moving_levels,
+    count_pct_crosses,
     remap_lots_shift_down,
     remap_lots_shift_up,
     resolve_etf_markets,
@@ -106,6 +107,18 @@ def test_parse_official_announcement_sample_row():
     assert audit["n_prints"] == 1
 
 
+def test_count_pct_crosses_up_and_down():
+    # 0.5% geometric stairs: 100 → 100.5 → 101.0025 is two up-crosses.
+    ups = [100.0 * (1.005**k) for k in range(0, 6)]
+    got = count_pct_crosses(ups, 0.005)
+    assert got["up_crosses"] == 5
+    assert got["down_crosses"] == 0
+    downs = [100.0 / (1.005**k) for k in range(0, 6)]
+    got = count_pct_crosses(downs, 0.005)
+    assert got["down_crosses"] == 5
+    assert got["up_crosses"] == 0
+
+
 def test_plus_minus_5pct_twenty_arithmetic_grids():
     lv = build_moving_levels(
         100.0, 20, mode="arithmetic", range_up_pct=0.05, range_down_pct=0.05
@@ -135,8 +148,8 @@ def test_grid_harvest_uses_rung_cost_not_portfolio_average():
     cfg["strategy"]["grid_count"] = 8
     cfg["strategy"]["spacing_pct"] = 0.01
     cfg["strategy"]["order_size_quote"] = 100.0
-    # 96 fills a low buy; 99 fills a higher buy; 100.5 sells only the higher rung.
-    tape = _tape([100.0, 96.0, 99.0, 100.5])
+    # Stay inside the 8×1% band (~96.06–104.06): 98 fills, 99.1 sells that rung.
+    tape = _tape([100.0, 98.0, 99.1])
     result = run_spot_moving_grid(cfg, tape)
     sells = [t for t in result.trades if t.reason == "grid_sell_tp"]
     assert sells, "expected at least one completed grid rung"
@@ -167,6 +180,26 @@ def test_tick_tape_buy_then_sell_round_trip():
     assert "sell" in sides
     assert result.metrics["num_trades"] >= 2
     assert result.metrics["feed"] == "deals"
+
+
+def test_band_recenters_on_exit_and_leftover_tp_is_percent():
+    cfg = _cfg()
+    cfg["strategy"]["grid_count"] = 20
+    cfg["strategy"]["range_up_pct"] = 0.05
+    cfg["strategy"]["range_down_pct"] = 0.05
+    cfg["strategy"]["spacing_mode"] = "arithmetic"
+    cfg["strategy"]["spacing_pct"] = None
+    cfg["strategy"]["quote_capital"] = 2000.0
+    cfg["strategy"]["order_size_quote"] = 100.0
+    # Dip fills 97, then 94 leaves the 95–105 band. Frozen opening step is +0.5;
+    # percent TP for the 97 lot is 97*1.005=97.485. A print at 97.49 sells only the latter.
+    prices = [100.0, 97.0, 94.0, 97.49]
+    result = run_spot_moving_grid(cfg, _tape(prices))
+    assert result.metrics["grid_shifts"] >= 1
+    leftover_sells = [t for t in result.trades if t.reason == "grid_sell_leftover"]
+    assert leftover_sells
+    assert any(abs(t.price - 97.0 * 1.005) < 1e-6 for t in leftover_sells)
+    assert all(t.price < 97.5 - 1e-9 for t in leftover_sells)
 
 
 def test_uptrend_shifts_window_without_wick_invention():

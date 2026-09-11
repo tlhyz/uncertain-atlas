@@ -197,6 +197,9 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
                         f"完成来回：{m.get('grid_rounds_tp')} + 遗留卖出 {m.get('grid_rounds_leftover')}  | "
                         f"平均每刀：{m.get('avg_harvest_per_round')} USDT",
                         f"- 期末还锁在底仓里的市值：{m.get('quote_in_inventory')} USDT（现金 {m.get('end_quote')}）",
+                        f"- 逐笔路径跨格（{float((result.params.get('strategy') or {}).get('spacing_pct') or 0)*100:.2f}%）："
+                        f"往上 {m.get('tape_up_crosses')} / 往下 {m.get('tape_down_crosses')}"
+                        f"（0.1% 往上 {m.get('tape_up_crosses_10bps')}）。往下跨不是差价，往上跨才是一刀。",
                     ]
                 )
     lines.extend(

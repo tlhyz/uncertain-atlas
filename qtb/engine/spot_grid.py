@@ -31,7 +31,7 @@ from qtb.risk.exits import RiskConfig, hit_investment_sl, hit_max_dd_stop
 from qtb.strategies.moving_grid import (
     MovingGridStrategy,
     build_moving_levels,
-    shift_levels,
+    count_pct_crosses,
 )
 
 
@@ -111,9 +111,10 @@ class SpotMovingGridEngine:
         return float(self.strategy.spacing_pct) * float(self.levels[0] if len(self.levels) else 1.0)
 
     def _lot_take_profit(self, lot: _Lot) -> float:
-        """Original +1 grid from this rung's buy — not the new window's bottom."""
-        if self.strategy.spacing_mode == "arithmetic":
-            return lot.cost + self._grid_step()
+        """+1 grid from this lot's own cost, as a percent of that cost.
+
+        Never use the opening absolute step: at 0.015 a frozen 0.005 step is +33%.
+        """
         return lot.cost * (1.0 + float(self.strategy.spacing_pct))
 
     def _rebuild_avg(self) -> None:
@@ -256,31 +257,27 @@ class SpotMovingGridEngine:
     def _maybe_shift(self, px: float) -> int:
         if not self.shift_on_exit or len(self.levels) < 2:
             return 0
-        moved = 0
-        max_buy = int(self.strategy.grid_count) - 1
-        while px > float(self.levels[-1]) + 1e-12:
-            abandoned = self.lots.get(0)
-            self.lots = {i - 1: lot for i, lot in self.lots.items() if i > 0}
-            if abandoned is not None:
-                self.leftover_lots.append(abandoned)
-            self.levels = shift_levels(
-                self.levels, "up", self.strategy.spacing_pct, self.strategy.spacing_mode
-            )
-            self.shifts += 1
-            moved += 1
-        while px < float(self.levels[0]) - 1e-12:
-            abandoned = self.lots.get(max_buy)
-            self.lots = {i + 1: lot for i, lot in self.lots.items() if i < max_buy}
-            if abandoned is not None:
-                self.leftover_lots.append(abandoned)
-            self.levels = shift_levels(
-                self.levels, "down", self.strategy.spacing_pct, self.strategy.spacing_mode
-            )
-            self.shifts += 1
-            moved += 1
-        if moved:
-            self._rehang_buys(px)
-        return moved
+        lo = float(self.levels[0])
+        hi = float(self.levels[-1])
+        if lo - 1e-12 <= px <= hi + 1e-12:
+            return 0
+        # Price left the ±band: re-hang a fresh 上/下% window on last price.
+        # Old lots keep their own +1% TP (not dumped at the new floor).
+        if self.lots:
+            self.leftover_lots.extend(self.lots.values())
+            self.lots.clear()
+        self.levels = build_moving_levels(
+            px,
+            self.strategy.grid_count,
+            self.strategy.spacing_pct,
+            self.strategy.spacing_mode,
+            range_up_pct=self.strategy.range_up_pct,
+            range_down_pct=self.strategy.range_down_pct,
+        )
+        self.strategy.levels = self.levels
+        self.shifts += 1
+        self._rehang_buys(px)
+        return 1
 
     def _flatten(self, px: float, ts: Any, reason: str) -> None:
         open_lots = list(self.lots.values()) + self.leftover_lots
@@ -410,6 +407,13 @@ class SpotMovingGridEngine:
         metrics["avg_harvest_per_round"] = round(income / n_rounds, 6) if n_rounds else 0.0
         metrics["grid_step"] = round(self._grid_step(), 8)
         metrics["quote_in_inventory"] = round(self.base * last_px, 4)
+        step_pct = float(self.strategy.spacing_pct)
+        crosses = count_pct_crosses(work["price"].to_numpy(), step_pct)
+        crosses_10bps = count_pct_crosses(work["price"].to_numpy(), 0.001)
+        metrics["tape_up_crosses"] = int(crosses["up_crosses"])
+        metrics["tape_down_crosses"] = int(crosses["down_crosses"])
+        metrics["tape_up_crosses_10bps"] = int(crosses_10bps["up_crosses"])
+        metrics["tape_down_crosses_10bps"] = int(crosses_10bps["down_crosses"])
         metrics["inventory_mtm"] = round(inventory_mtm, 4)
         metrics["residual_buy_fees"] = round(residual_buy_fees, 4)
         metrics["pnl_explained"] = round(explained, 4)

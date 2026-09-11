@@ -29,6 +29,7 @@ __all__ = [
     "MovingGridStrategy",
     "bar_touch_path",
     "build_moving_levels",
+    "count_pct_crosses",
     "remap_lots_shift_down",
     "remap_lots_shift_up",
     "resolve_etf_markets",
@@ -69,6 +70,31 @@ def build_moving_levels(
     if mode == "geometric":
         return mid * np.power(1.0 + s, ks)
     raise ValueError(f"spacing mode must be geometric|arithmetic, got {mode!r}")
+
+
+def count_pct_crosses(prices, pct: float) -> dict[str, float]:
+    """How many times the tape walks through `pct` geometric grids.
+
+    An up-cross is a completed +1 grid for a long clip; a down-cross is a new buy
+    level, not income. This is the path, not a capital-constrained backtest.
+    """
+    arr = np.asarray(prices, dtype=float)
+    arr = arr[np.isfinite(arr) & (arr > 0)]
+    if len(arr) < 2 or float(pct) <= 0:
+        return {"up_crosses": 0, "down_crosses": 0, "end_level": 0.0}
+    level = float(arr[0])
+    up = 0
+    down = 0
+    r = 1.0 + float(pct)
+    for px in arr[1:]:
+        px = float(px)
+        while px >= level * r * (1.0 - 1e-12):
+            level *= r
+            up += 1
+        while px <= level / r * (1.0 + 1e-12):
+            level /= r
+            down += 1
+    return {"up_crosses": up, "down_crosses": down, "end_level": level}
 
 
 def shift_levels(
