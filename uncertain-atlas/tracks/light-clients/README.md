@@ -1,7 +1,7 @@
 # 横向地图：轻节点假设
 
 详见 L9.6。本表只防串词。  
-精读：[`worked-example.md`](worked-example.md)（阿比只看头就放货）；[`worked-example-bft-skip.md`](worked-example-bft-skip.md)（跳过中间块要重叠旧集合）；[`worked-example-sync-committee.md`](worked-example-sync-committee.md)（512 的 2/3 ≠ 全集的 2/3）。
+精读：[`worked-example.md`](worked-example.md)（阿比只看头就放货）；[`worked-example-bft-skip.md`](worked-example-bft-skip.md)（跳过中间块要重叠旧集合）；[`worked-example-sync-committee.md`](worked-example-sync-committee.md)（512 的 2/3 ≠ 全集的 2/3）；[`worked-example-blob-vs-das.md`](worked-example-blob-vs-das.md)（KZG blob ≠ PeerDAS 列抽样 ≠ Celestia 二维 DAS）。
 
 | 名称 | 少下 | 多信 | 常见假冒 |
 |---|---|---|---|
@@ -17,5 +17,8 @@
 | Monad 延迟根（文档） | 本块体 | 能证的是 `N-D` 的根，不是刚最终的那块 | 「顺序最终所以状态可证」 |
 | BFT 轻客户端（CometBFT 规范） | 中间头 | 信任期 + init 头 + 旧 `NextValidators` 重叠 | 「新委员会自己的 2/3」 |
 | Altair 同步委员会 | 全验证者集合 | 当期 512 人样本的超级多数 | 「所以是全网 2/3 最终」 |
+| 4844 blob sidecar | 袋里的字节（EVM 只见 hash） | 服务窗内 sidecar 可取 | 「有 KZG 所以是 DAS / 永远可重建」 |
+| PeerDAS（Fulu 规范） | 未抽到的列 | 一维扩列 + 每槽抽样组 | 「抽到了所以执行对 / 就是 Celestia」 |
+| Celestia DAS | 未抽到的份额 | 二维纠删 + 参数化概率 | 「有头所以有执行数据」 |
 
 「不确定」默认建议：结算用全节点路径。其他当显式配置。

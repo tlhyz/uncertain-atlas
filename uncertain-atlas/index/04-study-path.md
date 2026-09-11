@@ -35,7 +35,7 @@
 ## 第五通：别人用什么换
 
 16. L6.4 三种并行（先读对照，再按需回 6.1–6.3）。  
-17. L7.1–L7.4 + 生命周期表的乐观 L2 列。NEAR 只在你关心「一条链上的 chunk」时读 `protocols/near/`；不要和 Polkadot 共享安全混成一词。  
+17. L7.1–L7.4 + 生命周期表的乐观 L2 列。NEAR 只在你关心「一条链上的 chunk」时读 `protocols/near/`；不要和 Polkadot 共享安全混成一词。blob ≠ DAS：[`../tracks/light-clients/worked-example-blob-vs-das.md`](../tracks/light-clients/worked-example-blob-vs-das.md)（KZG sidecar ≠ PeerDAS 列 ≠ Celestia 二维抽样；4096 epoch 服务窗）。  
 18. L8.1–L8.3；L8.4 若要碰证明。  
 19. [`../tracks/light-clients/worked-example.md`](../tracks/light-clients/worked-example.md) 后再看 L9.6 表。BFT 跳过：[`../tracks/light-clients/worked-example-bft-skip.md`](../tracks/light-clients/worked-example-bft-skip.md)（新委员会自己的 2/3 ≠ 轻客户端信任）。Altair 抽样：[`../tracks/light-clients/worked-example-sync-committee.md`](../tracks/light-clients/worked-example-sync-committee.md)（512 的 2/3 ≠ 全集的 2/3；EIP-8390 是草案）。共享安全对照再读 [`../protocols/eigenlayer/README.md`](../protocols/eigenlayer/README.md)（仅过滤器；restake ≠ 中继质押 ≠ BTC 仍在比特币）。  
 20. 每读完一条档案，回 `tracks/` 对应表改一格或确认已有格。

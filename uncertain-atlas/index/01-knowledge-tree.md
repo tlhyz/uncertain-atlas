@@ -272,6 +272,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.5 EIP、交易类型、blobs、rollup 入口 · 重要
 - 协议如何演化
+- 覆盖：课文 L5.4；blob sidecar / PeerDAS / Celestia 三维对照 `tracks/light-clients/worked-example-blob-vs-das.md`（不变量 23）
 
 ### M5.6 MEV 与 PBS · 进阶
 - mempool 不再是简单队列
@@ -326,6 +327,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - DAS、纠删码、NMT
 - 数据扣留攻击
 - 「有区块头 ≠ 有验证状态所需的数据」
+- 覆盖：课文 L7.2；与 4844 / PeerDAS 分列 `tracks/light-clients/worked-example-blob-vs-das.md`
 
 ### M7.3 Rollup 作为执行租户 · 重要
 - 乐观 vs ZK（先架构，后数学）
@@ -429,11 +431,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–22）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–23）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C24；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C25；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

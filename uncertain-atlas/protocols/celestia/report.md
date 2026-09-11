@@ -90,7 +90,7 @@ DAS：轻节点向全节点要随机份额。
 ## 10. 密码学
 
 哈希、Merkle/NMT、纠删码（编码理论，不是签名）、共识投票签名。  
-KZG 等多项式承诺是别的 DA 路线（Ethereum blobs），不要和 Celestia 的 2D 纠删码抽样混成同一个零件。
+KZG 等多项式承诺是别的 DA 路线（Ethereum 4844 sidecar；Fulu PeerDAS 是一维列抽样）。不要和 Celestia 的 2D 纠删码抽样混成同一个零件。对照：[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)。
 
 ---
 

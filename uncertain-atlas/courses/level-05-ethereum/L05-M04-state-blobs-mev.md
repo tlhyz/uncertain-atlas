@@ -40,7 +40,7 @@
 
 blob 是给 rollup 一类租户用的短时大数据袋，用 KZG 承诺挂到信标块。  
 它主要加强的是 **DA 通道**，不是 L1 EVM 吞吐本身。  
-**不要**把 Celestia 纠删码抽样和 Ethereum KZG blob 写成同一种东西（A30）。
+**不要**把 Celestia 纠删码抽样和 Ethereum KZG blob 写成同一种东西。Fulu PeerDAS 是后一层列抽样，仍不是 Celestia 二维 DAS。精读：[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)。
 
 **MEV 与 PBS（描述，不写市值）**
 
@@ -116,4 +116,4 @@ Ethereum L1 + 各类 rollup。具体 rollup 19 节只在通过独特思想过滤
 | 经济 | MEV / PBS：排序权被卖；mempool 不是公平队列 |
 
 **禁止假学习：** 「有 blob 所以和 Celestia 一种 DA。」「L2 出块 = L1 最终。」「PBS 解决了 MEV。」  
-**边界：** 不写 Verkle 已完成；不写构建者名单。
+**边界：** 不写 Verkle 已完成；不写构建者名单。不把 Deneb 的 6 个 blob 或后来的上限当永恒。精读：[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)。KZG 不是后量子。

@@ -430,3 +430,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A132 | 记录 | EigenLayer 文献是 ELIP + 产品文档 | 不做 19 节；不抄 TVL；建议 v1 不把 restake 当默认模块 |
 
 未做：写出题、实现 runner、填 CPU、选型、Altair/EigenLayer 19 节、改交易代码。Goal 保持 active。
+
+### 2026-09-12 03:45 UTC · KZG blob ≠ 纠删 DAS
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A133 | 中 | L5.4 / L7.2 说了「不是同一种 DA」，没钉规范对象 | `worked-example-blob-vs-das.md`：4844 sidecar + versioned hash + 4096 epoch 窗 |
+| A134 | 中 | Fulu PeerDAS 会被糊进「以太坊一直有 DAS」 | 分列：一维 128 列、每槽至少 8 组、一半列可重建；4844 正文把 DAS 写成以后的替换 |
+| A135 | 中 | 头里的 hash 会被写成 L2 永存 | 不变量 23；语料 C25；反模式 kzg-sold-as-das；L10.3 第 19 条 |
+| A136 | 低 | EIP-7594 动机写「1/8」，规范是 8/128 | 页上以 `SAMPLES_PER_SLOT` / `NUMBER_OF_COLUMNS` 为准 |
+| A137 | 记录 | 不写现行 blob 个数、不写某网 fork 日期 | Deneb 的 `MAX_BLOBS_PER_BLOCK = 6` 只标「引入时」；KZG 不是后量子 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

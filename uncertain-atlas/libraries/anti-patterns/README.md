@@ -27,3 +27,4 @@
 - [new-set-quorum-as-light-trust](new-set-quorum-as-light-trust.md)
 - [evidence-equals-slash](evidence-equals-slash.md)
 - [sample-sold-as-full-set](sample-sold-as-full-set.md)
+- [kzg-sold-as-das](kzg-sold-as-das.md)

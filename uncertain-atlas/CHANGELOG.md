@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 28）
+
+- blob / DAS 精读：EIP-4844 sidecar + versioned hash + 4096 epoch 服务窗；Fulu PeerDAS 一维 128 列；Celestia 二维纠删另列。
+- 不变量 23；语料 C25；反模式 kzg-sold-as-das。
+- L10.3 建议清单第 19 条。L5.4 / L7.2 / L9.6 / Ethereum / Celestia 档案互指。
+- 不抄现行每块 blob 个数；不以 EIP 动机段的「1/8」覆盖规范常量。KZG 不是后量子。
+
 ## 2026-09-12（续 27）
 
 - Altair 同步委员会轻客户端精读：512 抽样的 2/3 ≠ 全验证者 2/3；`MIN_SYNC_COMMITTEE_PARTICIPANTS = 1` 是处理下限；EIP-8390 仅草案。
