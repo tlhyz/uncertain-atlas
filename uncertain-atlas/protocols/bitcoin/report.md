@@ -103,7 +103,7 @@ Sybil：身份便宜，抗 Sybil 主要靠算力成本，不是 KYC。
 
 ## 9. 存储
 
-区块原始数据可剪枝（pruning）但仍要能从创世验证到尖（或从 assumevalid 等检查点策略——实现细节，有安全含义）。
+区块原始数据可剪枝（pruning）但仍要能从创世验证到尖。加速同步是**实现开关**：assumevalid 跳祖先脚本且不强迫链；assumeutxo 先装 UTXO 快照、背景再验。不是弱主观周期，也不是旧 checkpoint。见 [`../../tracks/implementation/worked-example-assumevalid.md`](../../tracks/implementation/worked-example-assumevalid.md)。
 
 UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用库的原子与 flush 策略。具体崩溃语义属部署/实现，Level 9 再对照源码与测试。
 
@@ -135,7 +135,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | 用户把 RPC/浏览器当验证 | 用户层被骗，协议层可仍健康 |
 | 全节点极度稀少 | 验证文化变弱，实现/部署层变脆 |
 
-弱主观性对 Bitcoin 不如长程 PoS 那么中心，但创世与检查点仍是社会对象。
+弱主观性对 Bitcoin 不如长程 PoS 那么中心。创世与旧 checkpoint / 发行默认 assumevalid 仍是社会或实现对象，不要和 Ethereum WS 糊成一句。
 
 ---
 

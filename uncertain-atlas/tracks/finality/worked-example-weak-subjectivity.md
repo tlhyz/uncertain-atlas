@@ -66,7 +66,7 @@
 | 能得出的句子 | 「我从创世（或我接受的检查点）重放了规则」 | 「跳跃仍钉在信任期内的旧下一集合」 | 「我的同步路径经过这份未过期检查点」 |
 | 得不出的句子 | — | 「新委员会自己的 2/3」 | 「finalized 所以从创世跟和一直在线一样」 |
 
-Altair 同步委员会轻客户端是第三种亲戚：它的 bootstrap 也是一份社会/部署起点，而且分母是 512 抽样，见 [抽样精读](../light-clients/worked-example-sync-committee.md)。不要把 WS 检查点、抽样委员会、CometBFT `NextValidators` 写成一个词。
+Altair 同步委员会轻客户端是第三种亲戚：它的 bootstrap 也是一份社会/部署起点，而且分母是 512 抽样，见 [抽样精读](../light-clients/worked-example-sync-committee.md)。Bitcoin Core 的 assumevalid / assumeutxo 是第四种：跳的是脚本或 UTXO 重放，而且**不**用验证者换血来定义窗口，见 [assumevalid 精读](../implementation/worked-example-assumevalid.md)。不要把 WS 检查点、抽样委员会、CometBFT `NextValidators`、assumevalid 写成一个词。
 
 ---
 

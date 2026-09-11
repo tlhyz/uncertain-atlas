@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 30）
+
+- assumevalid 精读：Bitcoin Core 0.14.0。跳祖先脚本/签名，不强迫那条链；`-assumevalid=0` 全验。旧 checkpoint 才要求块在链上。
+- assumeutxo：UTXO 快照 + 背景 chainstate 验到基块并核编译哈希。不是弱主观周期。
+- 不变量 25；语料 C27；反模式 skip-sold-as-full-verify；L10.3 第 21 条。
+- 不抄 IBD 耗时与发行默认哈希。
+
 ## 2026-09-12（续 29）
 
 - 弱主观性精读：phase0 `weak-subjectivity.md`。检查点是任意 `Checkpoint`；周期由 churn 算出，下限 256 epoch；对不上路径应退出。分发节未写完。

@@ -453,3 +453,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A141 | 记录 | 分发节写 will be updated soon；全文标 WIP | 检查点从哪来保持部署/社会对象；不把 2014 博客当定义 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 04:20 UTC · assumevalid ≠ 旧 checkpoint ≠ WS
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A142 | 中 | Bitcoin 档案把 assumevalid 写成一句「检查点策略」 | `worked-example-assumevalid.md`：0.14.0 不强迫链；`-assumevalid=0` 关闭 |
+| A143 | 中 | 与弱主观 / 旧 checkpoint 会糊成一词 | 对照表四列；assumeutxo 是跳 UTXO 重放 + 背景全验 |
+| A144 | 中 | 「全节点已从创世验证」在默认 IBD 上可能假 | 不变量 25；语料 C27；反模式 skip-sold-as-full-verify；L10.3 第 21 条 |
+| A145 | 记录 | 0.14 官网有 IBD 小时与默认哈希 | 不抄；不写博客里的「两周埋葬」 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

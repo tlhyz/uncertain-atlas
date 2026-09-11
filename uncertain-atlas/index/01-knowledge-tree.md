@@ -196,6 +196,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.5 全节点、剪枝、SPV · 必学
 - 验证 vs 查看
 - 轻客户端的安全假设
+- 覆盖：课文 L3.5；assumevalid / assumeutxo ≠ 旧 checkpoint ≠ WS `tracks/implementation/worked-example-assumevalid.md`
 
 ### M3.6 工程哲学与测试 · 重要
 - fuzzing、软分叉、Bitcoin Core 的保守主义
@@ -431,11 +432,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–24）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–25）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C26；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C27；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

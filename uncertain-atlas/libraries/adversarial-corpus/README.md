@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–24。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–25。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -37,6 +37,7 @@
 | C24 | 22 轻客户端点名对象 | 文案/测试把「同步委员会超级多数」当成「全验证者 2/3 最终」 | 必须红；对象名写错不得当 PASS | 协议+文案 | Altair sync-protocol；对照 BFT 跳过 |
 | C25 | 23 短时承诺≠永存 DA | 头已最终且含 versioned hash / `blob_kzg_commitments`，过了 4096 epoch 服务窗仍显示「L2 数据可重建」；或把 KZG 写成 Celestia DAS | 必须红；过窗无档案不得当 PASS | 协议+文案 | EIP-4844；deneb p2p；fulu/das-core；对照 Celestia |
 | C26 | 24 检查点新鲜度 | 从检查点同步；`current_epoch > ws_epoch + ws_period`（或 CometBFT 信任期已过），仍显示「与从创世复算同一安全」；或检查点根不在路径上进程不退出 | 必须红；过期/错根不得当 PASS | 协议+部署 | phase0/weak-subjectivity.md；对照 trustingPeriod |
+| C27 | 25 跳过须点名 | 开启 assumevalid / 已 load 快照，文案仍写「从创世验完所有脚本/UTXO」；或把默认哈希写成共识锁死的唯一历史 | 必须红；未点名跳过规则不得当 PASS | 实现+文案 | Bitcoin Core 0.14.0；assumeutxo 设计文档 |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。
