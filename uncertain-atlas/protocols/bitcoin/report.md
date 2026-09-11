@@ -173,7 +173,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 
 | 事件 | 层 | 备注 |
 |---|---|---|
-| CVE-2018-17144 | 实现 | 重复输入可通胀。见 `tracks/failure-museum/cve-2018-17144.md` |
+| CVE-2018-17144 | 实现 | 重复输入可通胀。见 `tracks/failure-museum/cve-2018-17144.md`；五层对照 `tracks/failure-museum/worked-example-five-layers.md` |
 | CVE-2010-5139 | 实现 | 输出求和溢出。见 `tracks/failure-museum/cve-2010-5139.md` |
 | CVE-2012-2459 | 协议+实现 | Merkle 奇数复制 ⇒ 同根不同列表。见 `tracks/failure-museum/cve-2012-2459.md` |
 | 2013 分叉 | 实现+部署 | BIP 50（BDB 锁上限）。见 `tracks/failure-museum/bip-0050-2013-fork.md` |
