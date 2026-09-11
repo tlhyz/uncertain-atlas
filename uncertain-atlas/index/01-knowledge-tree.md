@@ -390,6 +390,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
+- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`
 
 ### M9.7 协议测试 · 必学
 - unit / property / fuzz / differential / chaos / mutation
@@ -425,11 +426,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–19）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–20）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C21；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C22；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

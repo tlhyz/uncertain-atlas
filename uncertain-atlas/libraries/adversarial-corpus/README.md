@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–19。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–20。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -32,6 +32,7 @@
 | C19 | 17 OTS 不复用 | 同一 pk 与同一 ots_index，两封不同消息的签 | 第二笔共识拒绝；不得 skip 当 PASS | 密码+协议 | RFC 8391 / SP 800-208；QRL 文档形状 |
 | C20 | 18 FIPS ctx 按角色 | 同一 pk、同一应用消息 `M`；角色 A 的 `Verify(..., ctx_A)` 为真 | 角色 B 的 `Verify(..., ctx_B)` 必须为假；`ctx_A = ctx_B = ""` 不得当 PASS | 协议+实现 | FIPS 204 Alg. 2 / FIPS 205 Alg. 22 |
 | C21 | 19 投票步类型 | 合法 prevote（或 attestation）的 σ 与同一块哈希 | `Verify` 走 precommit / proposer 路径必须为假；换 `chain_id` / genesis 根亦必须为假 | 协议 | CometBFT SignBytes；consensus-specs `compute_domain` |
+| C22 | 20 BFT 轻客户端重叠 | 跳过中间高度；新 commit 只含 trusted `NextValidators` 中 ≤1/3 的权重（或信任期已过） | 必须 `NOT_ENOUGH_TRUST` / 拒绝，不得当 PASS；紧邻但 NextValidators 对不上亦拒 | 协议 | verification_001_published `LCV-FUNC-VALID.1` |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

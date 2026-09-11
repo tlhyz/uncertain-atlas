@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 25）
+
+- BFT 轻客户端跳过精读：CometBFT `verification_001_published`。紧邻后继用旧集合 +2/3；跳过用旧 `NextValidators` 的 1/3+。
+- 反模式：新委员会自己的 2/3 当成轻客户端信任。
+- 不变量 20；语料 C22。L9.6 / L4.5 / CometBFT 档案互指。不抄解绑秒数。
+
 ## 2026-09-12（续 24）
 
 - BFT 投票被签字节精读：CometBFT `CanonicalVote`（type / chain_id / 固定宽度）+ 签名器双签纪律；Ethereum phase0 `DomainType` 与 `compute_signing_root`。

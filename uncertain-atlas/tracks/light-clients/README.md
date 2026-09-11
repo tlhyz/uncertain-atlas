@@ -1,7 +1,7 @@
 # 横向地图：轻节点假设
 
 详见 L9.6。本表只防串词。  
-精读：[`worked-example.md`](worked-example.md)（阿比只看头就放货）。
+精读：[`worked-example.md`](worked-example.md)（阿比只看头就放货）；[`worked-example-bft-skip.md`](worked-example-bft-skip.md)（跳过中间块要重叠旧集合）。
 
 | 名称 | 少下 | 多信 | 常见假冒 |
 |---|---|---|---|
@@ -15,5 +15,6 @@
 | Nervos 概述中的 light | 非自己的 Cell | 所订全节点 | 「所以是 SPV」 |
 | NEAR 分片 RPC | 非本分片状态 | 该 RPC 是否真跟踪并重建了 chunk | 「有块头所以执行过」 |
 | Monad 延迟根（文档） | 本块体 | 能证的是 `N-D` 的根，不是刚最终的那块 | 「顺序最终所以状态可证」 |
+| BFT 轻客户端（CometBFT 规范） | 中间头 | 信任期 + init 头 + 旧 `NextValidators` 重叠 | 「新委员会自己的 2/3」 |
 
 「不确定」默认建议：结算用全节点路径。其他当显式配置。

@@ -38,8 +38,10 @@
 | 状态证明 | 头/根 + 账户路径 | 根是 canonical | 未证明的槽、历史体 |
 | DAS | 头 + 若干份额 | 纠删码、抽样诚实足够 | 单独份额≠执行正确 |
 | 递归 SNARK | 小证明 + 现根 | 证明系统 + 电路 | 自动的账户内容、DA |
+| BFT 轻客户端 | 头 + commit + 集合 | 信任期、init 头、旧集合重叠 | `Apply` / 余额；检测要第二全节点 |
 
-**事实：** 四种可以组合（例如：递归证明 + 状态证明 + 外部 DA）。组合是假设相加，不是假设相消。  
+**事实：** 上表可以组合（例如：递归证明 + 状态证明 + 外部 DA）。组合是假设相加，不是假设相消。  
+**事实：** BFT 轻客户端不是 SPV。跳过中间块时，重叠的是**已信任的** `NextValidators`，不是新委员会自嗨的 2/3。精读：[`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。  
 **事实：** 轻客户端安全 ≠ 手机 App 安全。App 默认仍可能是 RPC。
 
 ---
@@ -99,4 +101,4 @@ Bitcoin SPV；Ethereum 轻客户端 / 同步委员会路线（细节以规范为
 | 经济 | 默认 RPC 则「无需信任」是假句 |
 
 **禁止假学习：** 「有 Merkle 就是全节点。」「有 ZK 就是无需信任。」  
-**边界：** 不讲同步委员会的当前常数；不把某一手机钱包当规范。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)。
+**边界：** 不讲同步委员会的当前常数；不把某一手机钱包当规范。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)、[`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。不抄某一链的解绑秒数。

@@ -171,7 +171,8 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 
 1. **consensus state machine** — round/step、锁。为什么：这是协议心脏。  
 2. **WAL / replay** — 崩溃恢复。  
-3. **ABCI 适配** — 引擎与应用的字节契约。
+3. **ABCI 适配** — 引擎与应用的字节契约。  
+4. **light client** — 跳过中间头时重叠的是 trusted `NextValidators`，不是新集合自嗨。见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。
 
 仓库：CometBFT 上游。打开时核路径。
 

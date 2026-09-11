@@ -395,3 +395,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A118 | 记录 | phase0 域表不是后续分叉全集 | 页上写明后续文件会加类型 |
 
 未做：写出题、实现 runner、填 CPU、选型、展开 vote extension、改交易代码。Goal 保持 active。
+
+### 2026-09-12 02:25 UTC · BFT 轻客户端跳过
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A119 | 中 | L9.6 四种「轻」没有 CometBFT 轻客户端 | `worked-example-bft-skip.md`：verification_001_published；跳过重叠旧集合 |
+| A120 | 中 | 「有 +2/3 签名」会被写成轻客户端已验证 | 反模式 new-set-quorum-as-light-trust；不变量 20；语料 C22 |
+| A121 | 低 | 信任期易被当成最终性 | 页上写 `trustingPeriod < unbondingPeriod`；过期后旧验证者可能已解绑 |
+| A122 | 记录 | 规范目录含草稿与 TLA+ | 只钉已发布验证文；形式化 ≠ 实现已对 |
+
+未做：写出题、检测/问责算法全文、填 CPU、选型、改交易代码。Goal 保持 active。
