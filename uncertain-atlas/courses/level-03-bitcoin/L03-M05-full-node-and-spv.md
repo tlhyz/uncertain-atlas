@@ -126,4 +126,4 @@ Ethereum 的轻客户端、Mina 的递归证明，是「少下数据」的另两
 | 经济 | 攻击 SPV 的成本 vs 攻击全网算力 |
 
 **禁止假学习：** 「轻钱包也是全节点，只是省空间。」「能查浏览器 = 我验证了。」  
-**边界：** 不讲 Neutrino 全部过滤器细节；不把某钱包的服务器模型写成 BIP。
+**边界：** 不讲 Neutrino 全部过滤器细节；不把某钱包的服务器模型写成 BIP。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)。

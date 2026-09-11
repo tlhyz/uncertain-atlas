@@ -98,4 +98,4 @@ Celestia DAS；Ethereum blobs（另一条承诺路线）；Bitcoin 全节点默�
 ## 精密检查
 
 **禁止假学习：** 「有头就是有数据。」「抽到份额所以执行正确。」
-**边界：** Celestia 纠删码 ≠ Ethereum KZG。
+**边界：** Celestia 纠删码 ≠ Ethereum KZG。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)。

@@ -6,6 +6,7 @@
 - [missing-domain-separation](missing-domain-separation.md)
 - [local-error-as-consensus-invalid](local-error-as-consensus-invalid.md)
 - [half-written-state](half-written-state.md)
+- [local-rng-in-apply](local-rng-in-apply.md)
 - [unbounded-verify](unbounded-verify.md)
 - [admin-god-key](admin-god-key.md)
 - [noncanonical-accepted](noncanonical-accepted.md)

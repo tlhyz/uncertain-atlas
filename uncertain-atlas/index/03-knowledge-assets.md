@@ -14,6 +14,7 @@
 | 03 | 《共识协议图谱》 | `tracks/consensus/` + `tracks/finality/` | 对照表已更新 | 必学 |
 | 04 | 《状态模型图谱》 | `tracks/state-models/` + `tracks/parallelism/` | 进行中 | 必学 |
 | 05 | 《区块链密码学地图》 | `tracks/crypto/` | 第一版对照表 | 必学 |
+| 05b | 《实现保证精读》 | `tracks/implementation/` | 编码 + 崩溃两则 | 必学 |
 
 ---
 
@@ -23,7 +24,7 @@
 |---|---|---|---|---|
 | 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | CVE-2010-5139、CVE-2018-17144、BIP 50 | 必学 |
 | 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 12 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 14 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 15 条 | 重要 |
 
 ---
 

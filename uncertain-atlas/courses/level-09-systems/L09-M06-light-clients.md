@@ -7,7 +7,8 @@
 
 ## A. 先修知识
 
-四种少下数据的办法已经散落在课里。本课把假设叠成一张表，避免串词。
+四种少下数据的办法已经散落在课里。本课把假设叠成一张表，避免串词。  
+精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)。
 
 ---
 
@@ -90,4 +91,4 @@ Bitcoin SPV；Ethereum 轻客户端 / 同步委员会路线（细节以规范为
 ## 精密检查
 
 **禁止假学习：** 「有 Merkle 就是全节点。」「有 ZK 就是无需信任。」  
-**边界：** 不讲同步委员会的当前常数；不把某一手机钱包当规范。
+**边界：** 不讲同步委员会的当前常数；不把某一手机钱包当规范。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)。

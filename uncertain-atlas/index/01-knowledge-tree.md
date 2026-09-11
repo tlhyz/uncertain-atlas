@@ -128,11 +128,13 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M1.5 随机数与确定性 · 重要
 - 签名随机数泄漏
 - 共识里的超时不是「随便 sleep」
+- 课程：[`../courses/level-01-crypto/L01-M06-randomness-and-determinism.md`](../courses/level-01-crypto/L01-M06-randomness-and-determinism.md)（课号 L1.6，避免与已占用的 L1.5 后量子预告撞号）
 
 ### M1.6 后量子预告 · 进阶
 - 经典椭圆曲线怕什么
 - 体积、验签、网络：工程代价先于数学
 - 现在只建立问题清单，不选算法
+- 课程：L1.5（`L01-M05-pq-preview.md`）
 
 ---
 

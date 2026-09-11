@@ -15,7 +15,7 @@
 
 ## 第二通：工具
 
-6. L1 哈希 / 签名 / Merkle / 编码。  
+6. L1 哈希 / 签名 / Merkle / 编码 / 随机数与确定性（L1.6）。  
 7. L2.1–L2.4 状态；L2.5 只在你关心「输出带数据」时读。  
 8. 打开决策矩阵状态表，确认最后一列是空的。
 
@@ -28,21 +28,23 @@
 ## 第四通：实现会骗人
 
 12. L5.3 多客户端同根。  
-13. 博物馆：CVE-2010-5139、CVE-2018-17144、BIP 50。  
-14. L9.3 / L9.7。问：绿测试守哪一层。
+13. [`../tracks/implementation/`](../tracks/implementation/README.md) 编码实例 + 崩溃实例。  
+14. 博物馆：CVE-2010-5139、CVE-2018-17144、BIP 50。  
+15. L9.3 / L9.7。问：绿测试守哪一层。
 
 ## 第五通：别人用什么换
 
-15. L6.4 三种并行（先读对照，再按需回 6.1–6.3）。  
-16. L7.1–L7.4 + 生命周期表的乐观 L2 列。  
-17. L8.1–L8.3；L8.4 若要碰证明。  
-18. 每读完一条档案，回 `tracks/` 对应表改一格或确认已有格。
+16. L6.4 三种并行（先读对照，再按需回 6.1–6.3）。  
+17. L7.1–L7.4 + 生命周期表的乐观 L2 列。  
+18. L8.1–L8.3；L8.4 若要碰证明。  
+19. [`../tracks/light-clients/worked-example.md`](../tracks/light-clients/worked-example.md) 后再看 L9.6 表。  
+20. 每读完一条档案，回 `tracks/` 对应表改一格或确认已有格。
 
 ## 第六通：不确定镜头（仍不选型）
 
-19. L10.1 纪律。  
-20. 威胁模型 + [`../libraries/settlement-copy.md`](../libraries/settlement-copy.md)。  
-21. L10.3 最小机器清单。  
-22. L10.4 / PQ 迁移状态机 + [`../tracks/post-quantum/worked-example-migration.md`](../tracks/post-quantum/worked-example-migration.md)。不填算法。
+21. L10.1 纪律。  
+22. 威胁模型 + [`../libraries/settlement-copy.md`](../libraries/settlement-copy.md)。  
+23. L10.3 最小机器清单。  
+24. L10.4 / PQ 迁移状态机 + [`../tracks/post-quantum/worked-example-migration.md`](../tracks/post-quantum/worked-example-migration.md)。不填算法。
 
 若有人丢给你一条新链：用 [`../libraries/new-chain-intake.md`](../libraries/new-chain-intake.md)，不要先打开官网首页。

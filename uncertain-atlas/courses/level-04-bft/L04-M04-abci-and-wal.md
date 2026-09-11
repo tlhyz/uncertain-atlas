@@ -97,4 +97,4 @@ WAL：安全。代价：磁盘延迟；实现复杂。
 ## 精密检查
 
 **禁止假学习：** 「CheckTx 等于已执行。」「应用和共识哪个先写磁盘无所谓。」
-**边界：** 存储通论在 L9.3。
+**边界：** 存储通论在 L9.3。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)。

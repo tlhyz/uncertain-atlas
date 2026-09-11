@@ -14,3 +14,5 @@
 | 5.2 | [L05-M02-el-cl-finality.md](L05-M02-el-cl-finality.md) | 执行层和共识层各保证什么 |
 | 5.3 | [L05-M03-multi-client.md](L05-M03-multi-client.md) | 多实现为什么是药也是刀 |
 | 5.4 | [L05-M04-state-blobs-mev.md](L05-M04-state-blobs-mev.md) | 状态胀了、blob、mempool 不再是队列 |
+
+覆盖声明：L5.1→M5.1；L5.2→M5.3；L5.3→M5.4；L5.4→M5.2/M5.5/M5.6；M5.7→博物馆方法 + L9.9，不编无原文事故。

@@ -133,4 +133,4 @@ Ethereum 用可执行规范、测试向量、hive 类套件、客户端交叉跑
 ## 精密检查
 
 **禁止假学习：** 「开源了所以实现正确。」「测试绿了所以两客户端不会分叉。」「客户端多所以一定去中心。」  
-**边界：** 不写市场份额；事故七问等官方 postmortem。
+**边界：** 不写市场份额；事故七问等官方 postmortem。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。

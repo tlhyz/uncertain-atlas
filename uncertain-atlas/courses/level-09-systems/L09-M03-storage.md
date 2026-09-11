@@ -106,4 +106,4 @@ crash_at_any_point ⇒ restart ∈ {pre_H, post_H_complete}
 ## 精密检查
 
 **禁止假学习：** 「fsync 慢所以可以先写一半。」
-**边界：** 见反模式 half-written-state。
+**边界：** 见反模式 half-written-state。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)。
