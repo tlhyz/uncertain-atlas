@@ -182,6 +182,25 @@ def test_tick_tape_buy_then_sell_round_trip():
     assert result.metrics["feed"] == "deals"
 
 
+def test_sells_are_cancelled_and_replaced_on_the_new_window():
+    """突破移动后旧卖单撤销，在新窗口高于最新价的格子上重挂。"""
+    cfg = _cfg()
+    cfg["strategy"]["grid_count"] = 20
+    cfg["strategy"]["range_up_pct"] = 0.05
+    cfg["strategy"]["range_down_pct"] = 0.05
+    cfg["strategy"]["spacing_mode"] = "arithmetic"
+    cfg["strategy"]["spacing_pct"] = None
+    cfg["strategy"]["quote_capital"] = 2000.0
+    cfg["strategy"]["order_size_quote"] = 100.0
+    # 97 fills; 94.4 is ≥1 grid below 95 → window slides; 94.6 hits the re-hung sell.
+    result = run_spot_moving_grid(cfg, _tape([100.0, 97.0, 94.4, 94.6]))
+    assert result.metrics["grid_shifts"] >= 1
+    sells = [t for t in result.trades if t.side == "sell"]
+    assert sells
+    assert any(t.price < 96.0 for t in sells)
+    assert all(t.price < 97.4 for t in sells)
+
+
 def test_breakout_moves_one_grid_only_when_outside_by_a_full_step():
     """Gate 突破移动: 高于上限至少一格才整窗上移一格，不是按现价重挂。"""
     cfg = _cfg()

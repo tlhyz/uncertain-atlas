@@ -7,7 +7,8 @@ Fills come from the official Gate deals tape, not OHLC wicks:
   (the robot never bids through the market on the opening print).
 - Resting sell at L fills when a print trades at or above L.
 - Gate 突破移动: last price must exceed the band by at least one grid
-  spacing; then the whole window slides one grid (not re-centered on last).
+  spacing; then the whole window slides one grid. Working sells are
+  cancelled and re-placed on the new window (not left at the old cost+q).
   See https://www.gate.com/zh/help/bots/spot-grid/36108
 
 Each grid rung keeps its own buy price. Harvest is sell − that buy − fees,
@@ -46,6 +47,7 @@ class _Lot:
     qty: float
     cost: float
     buy_fee: float
+    sell_px: float = 0.0
 
 
 class SpotMovingGridEngine:
@@ -113,10 +115,27 @@ class SpotMovingGridEngine:
         return float(self.strategy.spacing_pct) * float(self.levels[0] if len(self.levels) else 1.0)
 
     def _lot_take_profit(self, lot: _Lot) -> float:
-        """+1 grid from this lot's own cost. 等差 uses the constant spacing q."""
+        if lot.sell_px > 0:
+            return float(lot.sell_px)
         if self.strategy.spacing_mode == "arithmetic":
             return lot.cost + self._grid_step()
         return lot.cost * (1.0 + float(self.strategy.spacing_pct))
+
+    def _rehang_sells(self, ref: float) -> None:
+        """Gate 移动网格: cancel working sells and re-place them on the new window.
+
+        Held coins keep their cost. Sell orders sit on new-window levels above last.
+        """
+        held = self._open_lots()
+        sell_lvls = [float(x) for x in self.levels if float(x) > float(ref) + 1e-12]
+        if not sell_lvls:
+            step = self._grid_step()
+            sell_lvls = [float(ref) + step] if step > 0 else []
+        for lot, sp in zip(held, sell_lvls):
+            lot.sell_px = sp
+        extra = sell_lvls[-1] if sell_lvls else float(ref)
+        for lot in held[len(sell_lvls) :]:
+            lot.sell_px = extra
 
     def _rebuild_avg(self) -> None:
         held = self._open_lots()
@@ -182,7 +201,8 @@ class SpotMovingGridEngine:
             return False
         self.quote -= notional + fee
         self.base += qty
-        self.lots[idx] = _Lot(qty=qty, cost=fill_px, buy_fee=fee)
+        sell_px = float(self.levels[idx + 1]) if idx + 1 < len(self.levels) else fill_px
+        self.lots[idx] = _Lot(qty=qty, cost=fill_px, buy_fee=fee, sell_px=sell_px)
         self.book.last_entry = fill_px
         self._sync_book(mark)
         self._record(ts, "buy", fill_px, qty, fee, "grid_buy", 0.0, mark)
@@ -227,22 +247,27 @@ class SpotMovingGridEngine:
         if n < 2:
             return
         min_quote = self.order_size_quote * 1.01
-        # Inventory TPs first so a bounce frees quote before new dip-buys.
-        sell_idxs = [i for i in list(self.lots) if i + 1 < n and px >= float(self.levels[i + 1])]
-        sell_idxs.sort()
-        for i in sell_idxs:
-            lot = self.lots.pop(i)
-            self._close_lot(lot, float(self.levels[i + 1]), ts, px, "grid_sell_tp")
-            if float(self.levels[i]) < self._hang_ref - 1e-12:
-                self._resting_buys.add(i)
-        still: list[_Lot] = []
-        for lot in self.leftover_lots:
-            tp = self._lot_take_profit(lot)
-            if px >= tp:
-                self._close_lot(lot, tp, ts, px, "grid_sell_leftover")
+        # Working sells, cheapest first. After a move these were re-hung on the new window.
+        due: list[tuple[float, str, int | None, _Lot]] = []
+        for i, lot in list(self.lots.items()):
+            if lot.sell_px > 0 and px >= lot.sell_px:
+                due.append((lot.sell_px, "lot", i, lot))
+        for lot in list(self.leftover_lots):
+            if lot.sell_px > 0 and px >= lot.sell_px:
+                due.append((lot.sell_px, "left", None, lot))
+        due.sort(key=lambda row: row[0])
+        for sell_px, kind, idx, lot in due:
+            if kind == "lot" and idx in self.lots and self.lots[idx] is lot:
+                self.lots.pop(idx)
+                reason = "grid_sell_tp"
+                if idx is not None and float(self.levels[idx]) < self._hang_ref - 1e-12:
+                    self._resting_buys.add(idx)
+            elif kind == "left" and lot in self.leftover_lots:
+                self.leftover_lots = [item for item in self.leftover_lots if item is not lot]
+                reason = "grid_sell_leftover"
             else:
-                still.append(lot)
-        self.leftover_lots = still
+                continue
+            self._close_lot(lot, sell_px, ts, px, reason)
         buy_idxs = [
             i
             for i in self._resting_buys
@@ -296,6 +321,7 @@ class SpotMovingGridEngine:
             self.shifts += 1
             moved += 1
         if moved:
+            self._rehang_sells(px)
             self._rehang_buys(px)
         return moved
 
