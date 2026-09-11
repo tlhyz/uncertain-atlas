@@ -6,8 +6,9 @@ Fills come from the official Gate deals tape, not OHLC wicks:
 - Buys are hung only strictly below the last hang / shift reference
   (the robot never bids through the market on the opening print).
 - Resting sell at L fills when a print trades at or above L.
-- A print that exits the band shifts the window by one grid and re-hangs
-  for *later* prints (the same print does not fill newly hung orders).
+- Gate 突破移动: last price must exceed the band by at least one grid
+  spacing; then the whole window slides one grid (not re-centered on last).
+  See https://www.gate.com/zh/help/bots/spot-grid/36108
 
 Each grid rung keeps its own buy price. Harvest is sell − that buy − fees,
 not mark-to-market versus the portfolio average. The native robot does not
@@ -32,6 +33,7 @@ from qtb.strategies.moving_grid import (
     MovingGridStrategy,
     build_moving_levels,
     count_pct_crosses,
+    shift_levels,
 )
 
 
@@ -111,10 +113,9 @@ class SpotMovingGridEngine:
         return float(self.strategy.spacing_pct) * float(self.levels[0] if len(self.levels) else 1.0)
 
     def _lot_take_profit(self, lot: _Lot) -> float:
-        """+1 grid from this lot's own cost, as a percent of that cost.
-
-        Never use the opening absolute step: at 0.015 a frozen 0.005 step is +33%.
-        """
+        """+1 grid from this lot's own cost. 等差 uses the constant spacing q."""
+        if self.strategy.spacing_mode == "arithmetic":
+            return lot.cost + self._grid_step()
         return lot.cost * (1.0 + float(self.strategy.spacing_pct))
 
     def _rebuild_avg(self) -> None:
@@ -254,53 +255,49 @@ class SpotMovingGridEngine:
             if self._buy_level(i, ts, px):
                 self._resting_buys.discard(i)
 
-    def _snap_lots_to_levels(self) -> None:
-        """Keep lots whose cost still sits inside the new band; the rest are leftover."""
-        n = len(self.levels)
-        if n < 2:
-            return
-        step = self._grid_step()
-        tol = max(step * 0.51, 1e-12)
-        candidates = list(self.lots.values()) + self.leftover_lots
-        self.lots = {}
-        leftover: list[_Lot] = []
-        buy_levels = self.levels[: n - 1]
-        for lot in candidates:
-            idx = int(np.argmin(np.abs(buy_levels - lot.cost)))
-            if abs(float(buy_levels[idx]) - lot.cost) <= tol and idx not in self.lots:
-                self.lots[idx] = lot
-            else:
-                leftover.append(lot)
-        self.leftover_lots = leftover
-
-    def _close_out_of_band(self, px: float, ts: Any) -> None:
-        """2000U / 20 grids stays on the live window. Stale leftover is closed at mark."""
-        still = []
-        for lot in self.leftover_lots:
-            self._close_lot(lot, px, ts, px, "range_exit_rebalance")
-        self.leftover_lots = still
-
-    def _maybe_shift(self, px: float, ts: Any) -> int:
+    def _maybe_shift(self, px: float, ts: Any | None = None) -> int:
+        """Gate 突破移动: slide the whole window one grid when last is ≥1 grid outside."""
         if not self.shift_on_exit or len(self.levels) < 2:
             return 0
-        lo = float(self.levels[0])
-        hi = float(self.levels[-1])
-        if lo - 1e-12 <= px <= hi + 1e-12:
-            return 0
-        self.levels = build_moving_levels(
-            px,
-            self.strategy.grid_count,
-            self.strategy.spacing_pct,
-            self.strategy.spacing_mode,
-            range_up_pct=self.strategy.range_up_pct,
-            range_down_pct=self.strategy.range_down_pct,
-        )
-        self.strategy.levels = self.levels
-        self.shifts += 1
-        self._snap_lots_to_levels()
-        self._close_out_of_band(px, ts)
-        self._rehang_buys(px)
-        return 1
+        moved = 0
+        max_buy = int(self.strategy.grid_count) - 1
+        while True:
+            step = self._grid_step()
+            hi = float(self.levels[-1])
+            if px + 1e-12 < hi + step:
+                break
+            if self.strategy.stop_move_up is not None and hi >= float(self.strategy.stop_move_up):
+                break
+            abandoned = self.lots.get(0)
+            self.lots = {i - 1: lot for i, lot in self.lots.items() if i > 0}
+            if abandoned is not None:
+                self.leftover_lots.append(abandoned)
+            self.levels = shift_levels(
+                self.levels, "up", self.strategy.spacing_pct, self.strategy.spacing_mode
+            )
+            self.strategy.levels = self.levels
+            self.shifts += 1
+            moved += 1
+        while True:
+            step = self._grid_step()
+            lo = float(self.levels[0])
+            if px - 1e-12 > lo - step:
+                break
+            if self.strategy.stop_move_down is not None and lo <= float(self.strategy.stop_move_down):
+                break
+            abandoned = self.lots.get(max_buy)
+            self.lots = {i + 1: lot for i, lot in self.lots.items() if i < max_buy}
+            if abandoned is not None:
+                self.leftover_lots.append(abandoned)
+            self.levels = shift_levels(
+                self.levels, "down", self.strategy.spacing_pct, self.strategy.spacing_mode
+            )
+            self.strategy.levels = self.levels
+            self.shifts += 1
+            moved += 1
+        if moved:
+            self._rehang_buys(px)
+        return moved
 
     def _flatten(self, px: float, ts: Any, reason: str) -> None:
         open_lots = list(self.lots.values()) + self.leftover_lots

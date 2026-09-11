@@ -169,6 +169,14 @@ class MovingGridStrategy(Strategy):
         )
         self.order_size_quote = float(cfg.get("order_size_quote") or (self.quote_capital / n))
         self.shift_on_exit = bool(cfg.get("shift_on_exit", True))
+        self.move_mode = str(cfg.get("move_mode") or "breakout").strip().lower()
+        if self.move_mode not in {"breakout", "ma720"}:
+            raise ValueError(f"move_mode must be breakout|ma720, got {self.move_mode}")
+        up_stop = cfg.get("stop_move_up")
+        down_stop = cfg.get("stop_move_down")
+        self.stop_move_up = None if up_stop in (None, "") else float(up_stop)
+        self.stop_move_down = None if down_stop in (None, "") else float(down_stop)
+        self.ma_move_pct = float(cfg.get("ma_move_pct") or 0.0)
         self.levels: np.ndarray | None = None
 
     def books_spec(self) -> list[tuple[str, str, float]]:

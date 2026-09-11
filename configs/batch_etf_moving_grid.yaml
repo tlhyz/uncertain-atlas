@@ -27,6 +27,7 @@ strategy:
   range_down_pct: 0.05
   spacing_mode: arithmetic
   shift_on_exit: true
+  move_mode: breakout
   order_size_quote: 100.0
   fill_policy: last_touch
 

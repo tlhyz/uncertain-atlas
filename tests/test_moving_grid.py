@@ -16,7 +16,7 @@ from qtb.data.gatedata import (
     parse_deals_csv,
 )
 from qtb.engine.backtest import run_backtest
-from qtb.engine.spot_grid import run_spot_moving_grid
+from qtb.engine.spot_grid import SpotMovingGridEngine, run_spot_moving_grid
 from qtb.strategies.moving_grid import (
     DEFAULT_ETF_3X,
     bar_touch_path,
@@ -182,23 +182,26 @@ def test_tick_tape_buy_then_sell_round_trip():
     assert result.metrics["feed"] == "deals"
 
 
-def test_band_recenters_on_exit_and_leftover_tp_is_percent():
+def test_breakout_moves_one_grid_only_when_outside_by_a_full_step():
+    """Gate 突破移动: 高于上限至少一格才整窗上移一格，不是按现价重挂。"""
     cfg = _cfg()
     cfg["strategy"]["grid_count"] = 20
     cfg["strategy"]["range_up_pct"] = 0.05
     cfg["strategy"]["range_down_pct"] = 0.05
     cfg["strategy"]["spacing_mode"] = "arithmetic"
     cfg["strategy"]["spacing_pct"] = None
-    cfg["strategy"]["quote_capital"] = 2000.0
-    cfg["strategy"]["order_size_quote"] = 100.0
-    # Dip fills 97, then 94 leaves the 95–105 band. Frozen opening step is +0.5;
-    # percent TP for the 97 lot is 97*1.005=97.485. A print at 97.49 sells only the latter.
-    prices = [100.0, 97.0, 94.0, 97.49]
-    result = run_spot_moving_grid(cfg, _tape(prices))
-    assert result.metrics["grid_shifts"] >= 1
-    sells = [t for t in result.trades if t.side == "sell"]
-    assert sells
-    assert any(96.9 < t.price < 98.0 for t in sells)
+    cfg["strategy"]["move_mode"] = "breakout"
+    # Band 95–105, step 0.5. 105.4 is above the cap but not a full grid beyond.
+    inside = run_spot_moving_grid(cfg, _tape([100.0, 105.4]))
+    assert inside.metrics["grid_shifts"] == 0
+    cfg2 = _cfg()
+    cfg2["strategy"].update(cfg["strategy"])
+    eng = SpotMovingGridEngine(cfg2)
+    beyond = eng.run(_tape([100.0, 105.5]))
+    assert beyond.metrics["grid_shifts"] == 1
+    # 整窗平移一格 → 95.5–105.5。按现价重挂会变成 100.225–110.775。
+    assert float(eng.levels[0]) == pytest.approx(95.5)
+    assert float(eng.levels[-1]) == pytest.approx(105.5)
 
 
 def test_uptrend_shifts_window_without_wick_invention():
@@ -306,6 +309,7 @@ def test_yaml_defaults_are_spot_tick_grid():
     assert float(cfg["strategy"]["range_down_pct"]) == pytest.approx(0.05)
     assert cfg["strategy"]["spacing_mode"] == "arithmetic"
     assert cfg["strategy"]["shift_on_exit"] is True
+    assert cfg["strategy"]["move_mode"] == "breakout"
     assert cfg["risk"]["stop_if_price_breaks_range"] is False
     assert cfg["risk"]["max_drawdown_stop_pct"] in (None, 0, 0.0)
     assert cfg["risk"]["investment_sl_pct"] in (None, 0, 0.0)
