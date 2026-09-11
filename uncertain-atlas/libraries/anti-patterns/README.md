@@ -25,3 +25,4 @@
 - [empty-ctx-two-roles](empty-ctx-two-roles.md)
 - [order-sold-as-state](order-sold-as-state.md)
 - [new-set-quorum-as-light-trust](new-set-quorum-as-light-trust.md)
+- [evidence-equals-slash](evidence-equals-slash.md)

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 26）
+
+- 证据精读：CometBFT `DuplicateVoteEvidence` / `LightClientAttackEvidence`。引擎发现并通知应用，不自动 slash。
+- 三种轻客户端攻击分型（lunatic / equivocation / amnesia）只作分类。
+- 不变量 21；语料 C23；反模式 evidence-equals-slash。账本第 18 行证据字节公式，数字空。
+
 ## 2026-09-12（续 25）
 
 - BFT 轻客户端跳过精读：CometBFT `verification_001_published`。紧邻后继用旧集合 +2/3；跳过用旧 `NextValidators` 的 1/3+。

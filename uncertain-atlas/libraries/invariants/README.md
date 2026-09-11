@@ -24,7 +24,8 @@
 18. **FIPS ctx 按角色：** 使用 FIPS 204/205 外部 API 时，`Verify` 必须传入规范写明的 `ctx`（≤255 B）。同一把钥上的用户签与投票签不得都用空 `ctx`；pure 与 pre-hash 必须由算法标签区分（FIPS 204 Alg. 2；FIPS 205 Alg. 22）。  
 19. **投票步类型进被签字节：** Prevote 的 SignBytes（或 attestation 的 domain）不得使 Precommit / proposer 路径 Verify 为真。同一高度两步不是「再签一次同一哈希」（CometBFT signing.md；consensus-specs `compute_domain`）。  
 20. **BFT 轻客户端重叠旧集合：** 跳过中间高度时，新 commit 必须含 trusted `NextValidators` 中 **> max(1/3, trustThreshold)** 的投票权，且 trusted 仍在 `trustingPeriod` 内；紧邻后继必须集合哈希相接且旧集合 +2/3。只数新委员会自己的 2/3 不得接受（verification_001_published `LCV-FUNC-VALID.1`）。  
+21. **双签证据形状成立 ≠ 已罚没：** 同一 `(addr, height, round, type)`、不同 `BlockID`、本链 `ChainID` 上两张合法签，必须能被验为 `DuplicateVoteEvidence`；同 BlockID 或错链必须拒。引擎提交 `Misbehavior`，应用决定 slash。过期按规范的年龄参数忽略（CometBFT evidence.md）。  
 
 来源：L0–L10 课 + 档案 + 博物馆。每条应对 L9.7 的自动测试。用例目录：[`../adversarial-corpus/README.md`](../adversarial-corpus/README.md)。
 
-**对不确定（建议，不是选型）：** 第 16 条在选定 PQ 算法之前就算一遍。第 17 条：投票与热钱包不要用有状态 HBS。第 18 条：每个签名角色一个 `ctx` 常量（或一把钥只服务一个角色）；不要只靠「消息里已经写了 domain」。空 `ctx` 是 FIPS 默认，不是已分离。第 19 条：步类型进 `M`；签名器记住上次 `(height, round, type)`。第 20 条：轻客户端默认不是结算角色；若启用，跳过必须重叠旧集合，信任期必须短于解绑期。
+**对不确定（建议，不是选型）：** 第 16 条在选定 PQ 算法之前就算一遍。第 17 条：投票与热钱包不要用有状态 HBS。第 18 条：每个签名角色一个 `ctx` 常量（或一把钥只服务一个角色）；不要只靠「消息里已经写了 domain」。空 `ctx` 是 FIPS 默认，不是已分离。第 19 条：步类型进 `M`；签名器记住上次 `(height, round, type)`。第 20 条：轻客户端默认不是结算角色；若启用，跳过必须重叠旧集合，信任期必须短于解绑期。第 21 条：证据上链只通知应用；罚没公式写在 ABCI 一侧。

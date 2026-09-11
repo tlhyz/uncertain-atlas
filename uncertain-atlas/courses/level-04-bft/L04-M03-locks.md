@@ -114,4 +114,4 @@ HotStuff：锁往往体现在「我认的最高 QC」。对照：都是「可引
 | 经济 | 为 safety 牺牲一轮活性是设计，不是性能开关 |
 
 **禁止假学习：** 「锁是性能优化。」「崩溃后忘掉 lock 只是掉线。」
-**边界：** WAL 在 L4.4。
+**边界：** WAL 在 L4.4。锁被打破时，链上对象是 `DuplicateVoteEvidence`，不是钱包截图。见 [`../../tracks/economic/worked-example-evidence.md`](../../tracks/economic/worked-example-evidence.md)。

@@ -27,6 +27,7 @@
 | 15 | 与 ZK 的兼容 | 研究级 | 后置 |
 | 16 | 有状态 HBS 的 index 纪律 | 规范已写 | RFC 8391 先更新再输出；链上拒复用；投票签建议不用。见 stateful-hbs.md |
 | 17 | FIPS `ctx` 按角色 | 规范应写常量 | 不变量 18；语料 C20；pure 与 HashML-DSA / hash_slh 不得共用一钥 |
+| 18 | 证据字节（双签 / 轻客户端攻击） | 公式应写 | `DuplicateVoteEvidence` ≥ 2×投票 σ；LightBlock 另计。见 economic 证据精读。数字空 |
 
 ## 建议的测量纪律
 

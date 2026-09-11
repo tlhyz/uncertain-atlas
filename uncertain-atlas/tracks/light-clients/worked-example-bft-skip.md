@@ -56,7 +56,7 @@
 `Apply` 有没有把阿安的 1 记对，本协议**不验**。状态证明仍要另信「根来自你已接受的头」。  
 只信 primary 一台全节点：验证文只管「在失败模型下读操作安全」；**攻击检测**要第二台及以上（secondaries）。规范把验证与检测拆成两块。
 
-攻击类型（检测/问责文，本页不展开算法）：lunatic（乱造集合）、equivocation（同高两头）、amnesia（锁失忆）。形式化过 ≠ 实现已对。
+攻击类型与上链对象：[`../economic/worked-example-evidence.md`](../economic/worked-example-evidence.md)。检测要 secondaries；问责算法后置。形式化过 ≠ 实现已对。
 
 ---
 
