@@ -436,6 +436,10 @@ class SpotMovingGridEngine:
         metrics["range_exit_pnl"] = round(range_exit_pnl, 4)
         metrics["grid_rounds_tp"] = tp_n
         metrics["grid_rounds_leftover"] = left_n
+        clip_sells = [t for t in self.trades if t.reason in {"grid_sell_tp", "grid_sell_leftover"}]
+        metrics["n_completed_sells"] = len(clip_sells)
+        metrics["first_clip_ts"] = str(clip_sells[0].timestamp) if clip_sells else None
+        metrics["last_clip_ts"] = str(clip_sells[-1].timestamp) if clip_sells else None
         metrics["avg_harvest_per_round"] = round(income / n_rounds, 6) if n_rounds else 0.0
         metrics["grid_step"] = round(self._grid_step(), 8)
         metrics["quote_in_inventory"] = round(self.base * last_px, 4)

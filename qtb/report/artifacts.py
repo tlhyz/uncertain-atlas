@@ -194,7 +194,8 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
                         "- 只记已完成的「买进 → 该格 +1 格卖掉」。移格次数不是来回次数，没卖掉的底仓不算差价。",
                         "- 公式：`qty × (卖出价 − 该格买入价) − 买费 − 卖费`",
                         f"- 等差步长（开盘定死，移格不改）：{m.get('grid_step')}  | "
-                        f"完成来回：{m.get('grid_rounds_tp')} + 遗留卖出 {m.get('grid_rounds_leftover')}  | "
+                        f"完成卖单：{m.get('n_completed_sells')} "
+                        f"（{m.get('first_clip_ts')} → {m.get('last_clip_ts')}）  | "
                         f"平均每刀：{m.get('avg_harvest_per_round')} USDT",
                         f"- 期末还锁在底仓里的市值：{m.get('quote_in_inventory')} USDT（现金 {m.get('end_quote')}）",
                         f"- 逐笔路径跨格（{float((result.params.get('strategy') or {}).get('spacing_pct') or 0)*100:.2f}%）："
