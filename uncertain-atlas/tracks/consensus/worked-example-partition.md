@@ -18,6 +18,7 @@
 
 日蚀：阿比被六个对手围住，**以为**自己在全班。  
 分区：两边都是诚实同学，只是看不见对方。  
+调整钟（CVE-2024-52912）：仍连着真图，却把真块当「太未来」。见 [`../network/worked-example-adjusted-time.md`](../network/worked-example-adjusted-time.md)。  
 产品必须先选：帘子期间**停**，还是允许**两边各「到了」**。这不是性能参数。
 
 ---

@@ -33,3 +33,5 @@
 - [two-votes-sold-as-slash](two-votes-sold-as-slash.md)
 - [builder-sold-as-consensus](builder-sold-as-consensus.md)
 - [l2-accepted-sold-as-l1](l2-accepted-sold-as-l1.md)
+- [adjusted-clock-sold-as-consensus](adjusted-clock-sold-as-consensus.md)
+- [unseen-mempool-sold-as-invalid](unseen-mempool-sold-as-invalid.md)

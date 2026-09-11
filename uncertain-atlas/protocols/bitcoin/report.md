@@ -178,6 +178,8 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | CVE-2012-2459 | 协议+实现 | Merkle 奇数复制 ⇒ 同根不同列表。见 `tracks/failure-museum/cve-2012-2459.md` |
 | 2013 分叉 | 实现+部署 | BIP 50（BDB 锁上限）。见 `tracks/failure-museum/bip-0050-2013-fork.md` |
 | transaction malleability | 协议/实现 | 促使 SegWit；结构课 L3.7 |
+| CVE-2024-52912 | 实现+部署 | 调整钟绕过上限，拒收规范新块。见 `tracks/failure-museum/cve-2024-52912.md` |
+| CVE-2024-52913 | 实现+网络 | 有界索取表让节点看不见未确认交易。见 `tracks/failure-museum/cve-2024-52913.md` |
 
 七问只写有 CVE / 官方披露 / BIP 原文的条目。禁止用传闻填充。
 

@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-11（续 34）
+
+- 博物馆 CVE-2024-52912：`version` 时间偏移溢出 + `abs64(INT64_MIN)` 绕过上限，拒收规范新块。不是日蚀，不是分区。
+- 博物馆 CVE-2024-52913：有界 already-asked 表让 `GETDATA` 被单一对等节点独占。看不见未确认 ≠ 共识非法。
+- 不变量 29–30；语料 C31–C32；反模式 adjusted-clock-sold-as-consensus / unseen-mempool-sold-as-invalid。
+- 加密内存池：无冻结规范，明确不写页。不附利用构造。
+
 ## 2026-09-11（续 33）
 
 - Starknet 仅过滤器：SNOS 把「块有效」写成点名 Cairo 程序；Core 登记 `programHash`。v0.13.2 起还要 applicative bootloader。

@@ -185,6 +185,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.2 网络与传播 · 必学
 - mempool、compact block、eclipse、带宽
+- 覆盖：课文 L3.4；日蚀 `tracks/network/worked-example-eclipse.md`；调整钟 ≠ MTP `tracks/network/worked-example-adjusted-time.md`（CVE-2024-52912）
 
 ### M3.3 费用市场 · 重要
 - 有限区块空间如何定价
@@ -380,9 +381,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.1 P2P · 必学
 - 发现、gossip、eclipse、Sybil、分区、NAT
 - 很多链的瓶颈在网络不在执行
+- 覆盖：课文 L9.1；日蚀精读；调整钟 CVE-2024-52912；索取独占 CVE-2024-52913。加密内存池尚无冻结规范级独特对象，不写页
 
 ### M9.2 Mempool · 必学
 - 准入、替换、驱逐、垃圾、抢跑、加密内存池
+- 覆盖：课文 L9.2；筐精读；谁排序 `tracks/mempool/worked-example-who-orders.md`。看不见 ≠ 非法：CVE-2024-52913。加密内存池：无规范级对象，先不过滤器
 
 ### M9.3 存储 · 必学
 - WAL、原子提交、断电、剪枝、状态同步
@@ -410,6 +413,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（八案；含 CVE-2024-52912 / 52913）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -435,11 +439,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–28）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–30）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C30；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C32；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

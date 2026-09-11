@@ -105,4 +105,4 @@ Bitcoin mempool + 标准性；Ethereum 本地池 + 构建者市场；Solana Gulf
 | 经济 | 排序权、抢跑、审查 |
 
 **禁止假学习：** 「mempool 是全球公平队列。」「进池 = 结算。」
-**边界：** PBS 细节在 L5.4。精读：[`../../tracks/mempool/worked-example.md`](../../tracks/mempool/worked-example.md)、[`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。签了头 ≠ 自己排了序。
+**边界：** PBS 细节在 L5.4。精读：[`../../tracks/mempool/worked-example.md`](../../tracks/mempool/worked-example.md)、[`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。签了头 ≠ 自己排了序。本节点看不见未确认 ≠ 链拒绝：[`../../tracks/failure-museum/cve-2024-52913.md`](../../tracks/failure-museum/cve-2024-52913.md)。加密内存池尚无冻结规范，不写页。
