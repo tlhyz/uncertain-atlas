@@ -36,9 +36,10 @@ strategy:
   equity_sample_seconds: 60
 
 risk:
-  investment_sl_pct: 0.50
+  # Native moving grid keeps running. Halt is opt-in only.
+  investment_sl_pct: null
   per_trade_sl_pct: null
-  max_drawdown_stop_pct: 0.40
+  max_drawdown_stop_pct: null
   force_exit_before_liq_buffer_pct: null
   stop_if_price_breaks_range: false
 

@@ -162,6 +162,15 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
             f"- 行情源：逐笔 deals（{m.get('n_prints', '?')} 笔打印）  | 移格：{m.get('grid_shifts')}  | "
             f"剩余底仓：{m.get('leftover_base')}"
         )
+        if m.get("grid_harvest") is not None:
+            lines.append(
+                f"- 网格已实现差价：{m.get('grid_income', m.get('grid_harvest'))} USDT"
+                f"（窗内 {m.get('grid_harvest')} + 移格后仍按原+1格卖出 {m.get('leftover_harvest')}）"
+            )
+            lines.append(
+                f"- 移格遗留卖出：{m.get('leftover_harvest')}  | 期末底仓浮盈亏：{m.get('inventory_mtm')}  | "
+                f"停机：{'是' if m.get('halted') else '否'}"
+            )
     lines.extend(
         [
         "",

@@ -7,12 +7,14 @@ Fills come from the official Gate deals tape, not OHLC wicks:
 - A print that exits the band shifts the window by one grid and re-hangs
   for *later* prints (the same print does not fill newly hung orders).
 
-Candle open→low→high→close paths are intentionally unused: they invent
-touches that never printed.
+Each grid rung keeps its own buy price. Harvest is sell − that buy − fees,
+not mark-to-market versus the portfolio average. The native robot does not
+flatten on drawdown; halt is opt-in only.
 """
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 from typing import Any
 
 import numpy as np
@@ -26,14 +28,19 @@ from qtb.risk.exits import RiskConfig, hit_investment_sl, hit_max_dd_stop
 from qtb.strategies.moving_grid import (
     MovingGridStrategy,
     build_moving_levels,
-    remap_lots_shift_down,
-    remap_lots_shift_up,
     shift_levels,
 )
 
 
 def _equity(quote: float, base: float, price: float) -> float:
     return quote + base * price
+
+
+@dataclass
+class _Lot:
+    qty: float
+    cost: float
+    buy_fee: float
 
 
 class SpotMovingGridEngine:
@@ -63,14 +70,13 @@ class SpotMovingGridEngine:
         self.interval = str(cfg.get("interval") or "tick")
         self.order_size_quote = self.strategy.order_size_quote
         self.shift_on_exit = self.strategy.shift_on_exit
-        self.fill_policy = str(strat_cfg.get("fill_policy") or "last_touch").strip().lower()
         eq_sec = float(strat_cfg.get("equity_sample_seconds") or 60.0)
         self.equity_sample = pd.Timedelta(seconds=max(eq_sec, 1.0))
 
         self.quote = self.strategy.quote_capital
         self.base = 0.0
-        self.leftover = 0.0
-        self.lots: dict[int, float] = {}
+        self.leftover_lots: list[_Lot] = []
+        self.lots: dict[int, _Lot] = {}
         self.levels = np.asarray([], dtype=float)
         self.shifts = 0
         self.rejected = 0
@@ -86,10 +92,32 @@ class SpotMovingGridEngine:
         self._peak = self.strategy.quote_capital
         self._last_eq_ts: pd.Timestamp | None = None
 
+    def _open_lots(self) -> list[_Lot]:
+        return list(self.lots.values()) + self.leftover_lots
+
+    def _leftover_base(self) -> float:
+        return float(sum(lot.qty for lot in self.leftover_lots))
+
+    def _lot_take_profit(self, lot: _Lot) -> float:
+        """Original +1 grid from this rung's buy — not the new window's bottom."""
+        return lot.cost * (1.0 + float(self.strategy.spacing_pct))
+
+    def _rebuild_avg(self) -> None:
+        held = self._open_lots()
+        qty = float(sum(lot.qty for lot in held))
+        if qty <= 1e-16:
+            self.book.avg_entry = 0.0
+            return
+        self.book.avg_entry = float(sum(lot.qty * lot.cost for lot in held) / qty)
+
     def _sync_book(self, mark: float) -> None:
         self.book.wallet = self.quote
         self.book.qty = self.base
-        self.book.lots = dict(self.lots)
+        self.book.lots = {i: lot.qty for i, lot in self.lots.items()}
+        self._rebuild_avg()
+
+    def _inventory_mtm(self, mark: float) -> float:
+        return float(sum(lot.qty * (mark - lot.cost) for lot in self._open_lots()))
 
     def _record(
         self,
@@ -136,78 +164,84 @@ class SpotMovingGridEngine:
         if self.quote + 1e-12 < notional + fee:
             self.rejected += 1
             return False
-        new_cost = self.book.avg_entry * self.base + notional
         self.quote -= notional + fee
         self.base += qty
-        self.lots[idx] = self.lots.get(idx, 0.0) + qty
-        self.book.avg_entry = new_cost / self.base if self.base > 0 else 0.0
+        self.lots[idx] = _Lot(qty=qty, cost=fill_px, buy_fee=fee)
         self.book.last_entry = fill_px
         self._sync_book(mark)
         self._record(ts, "buy", fill_px, qty, fee, "grid_buy", 0.0, mark)
         return True
 
-    def _sell_qty(self, qty: float, raw_px: float, ts: Any, mark: float, reason: str, level_idx: int | None) -> bool:
-        qty = min(qty, self.base)
+    def _close_lot(self, lot: _Lot, raw_px: float, ts: Any, mark: float, reason: str) -> float:
+        qty = min(lot.qty, self.base)
         if qty <= 0:
-            return False
+            return 0.0
         fill_px = self.cost.fill_price(raw_px, "sell")
         notional = qty * fill_px
-        fee = self.cost.fee(notional)
-        raw_pnl = qty * (fill_px - self.book.avg_entry) if self.book.avg_entry > 0 else 0.0
-        realized = raw_pnl - fee
-        self.quote += notional - fee
+        sell_fee = self.cost.fee(notional)
+        buy_fee = lot.buy_fee * (qty / lot.qty) if lot.qty > 0 else 0.0
+        # Grid income = this rung's sell − its own buy − both fees.
+        realized = qty * (fill_px - lot.cost) - sell_fee - buy_fee
+        self.quote += notional - sell_fee
         self.base -= qty
-        if level_idx is not None:
-            self.lots.pop(level_idx, None)
         if self.base <= 1e-16:
             self.base = 0.0
-            self.book.avg_entry = 0.0
-        self.book.cycle_id += 1
-        self.book.cycles += 1
-        self.book.cycle_pnls.append(realized)
-        if realized > 0:
-            self.book.wins += 1
+        if reason == "grid_sell_tp":
+            self.book.cycle_id += 1
+            self.book.cycles += 1
+            self.book.cycle_pnls.append(realized)
+            if realized > 0:
+                self.book.wins += 1
         self._sync_book(mark)
-        self._record(ts, "sell", fill_px, qty, fee, reason, realized, mark)
-        return True
+        self._record(ts, "sell", fill_px, qty, sell_fee, reason, realized, mark)
+        return realized
 
     def _fill_against_print(self, px: float, ts: Any) -> None:
         n = len(self.levels)
         if n < 2:
             return
-        # Buys: highest crossed first (tape traded down through them).
+        min_quote = self.order_size_quote * 1.01
         buy_idxs = [i for i in range(n - 1) if i not in self.lots and px <= float(self.levels[i])]
         buy_idxs.sort(reverse=True)
         for i in buy_idxs:
+            if self.quote < min_quote:
+                break
             self._buy_level(i, ts, px)
-        # Assigned sells: lowest TP first.
         sell_idxs = [i for i in list(self.lots) if i + 1 < n and px >= float(self.levels[i + 1])]
         sell_idxs.sort()
         for i in sell_idxs:
-            self._sell_qty(self.lots[i], float(self.levels[i + 1]), ts, px, "grid_sell_tp", i)
-        # Leftover from abandoned lots: sell at the new lowest TP only.
-        if self.leftover > 0 and n > 1 and px >= float(self.levels[1]):
-            sold = self.leftover
-            self.leftover = 0.0
-            self._sell_qty(sold, float(self.levels[1]), ts, px, "grid_sell_leftover", None)
+            lot = self.lots.pop(i)
+            self._close_lot(lot, float(self.levels[i + 1]), ts, px, "grid_sell_tp")
+        # Shifted-out lots keep their own +1-grid TP (native robot does not dump at the new floor).
+        still: list[_Lot] = []
+        for lot in self.leftover_lots:
+            tp = self._lot_take_profit(lot)
+            if px >= tp:
+                self._close_lot(lot, tp, ts, px, "grid_sell_leftover")
+            else:
+                still.append(lot)
+        self.leftover_lots = still
 
     def _maybe_shift(self, px: float) -> int:
         if not self.shift_on_exit or len(self.levels) < 2:
             return 0
         moved = 0
         max_buy = int(self.strategy.grid_count) - 1
-        # Same print can exit several grids; shift one at a time, no new fills.
         while px > float(self.levels[-1]) + 1e-12:
-            self.lots, abandoned = remap_lots_shift_up(self.lots)
-            self.leftover += abandoned
+            abandoned = self.lots.get(0)
+            self.lots = {i - 1: lot for i, lot in self.lots.items() if i > 0}
+            if abandoned is not None:
+                self.leftover_lots.append(abandoned)
             self.levels = shift_levels(
                 self.levels, "up", self.strategy.spacing_pct, self.strategy.spacing_mode
             )
             self.shifts += 1
             moved += 1
         while px < float(self.levels[0]) - 1e-12:
-            self.lots, abandoned = remap_lots_shift_down(self.lots, max_buy)
-            self.leftover += abandoned
+            abandoned = self.lots.get(max_buy)
+            self.lots = {i + 1: lot for i, lot in self.lots.items() if i < max_buy}
+            if abandoned is not None:
+                self.leftover_lots.append(abandoned)
             self.levels = shift_levels(
                 self.levels, "down", self.strategy.spacing_pct, self.strategy.spacing_mode
             )
@@ -216,24 +250,24 @@ class SpotMovingGridEngine:
         return moved
 
     def _flatten(self, px: float, ts: Any, reason: str) -> None:
-        if self.base > 0:
-            self.leftover = 0.0
-            qty = self.base
-            self.lots.clear()
-            self._sell_qty(qty, px, ts, px, reason, None)
+        open_lots = list(self.lots.values()) + self.leftover_lots
+        self.lots.clear()
+        self.leftover_lots.clear()
+        for lot in open_lots:
+            self._close_lot(lot, px, ts, px, reason)
         self.halted = True
         if "sl" in reason or "stop" in reason:
             self.book.stop_outs += 1
 
     def _risk(self, px: float, ts: Any, eq: float) -> None:
         if self.book.qty > 0:
-            upnl = self.base * (px - self.book.avg_entry) if self.book.avg_entry > 0 else 0.0
+            upnl = self._inventory_mtm(px)
             if upnl < self.book.max_float_loss:
                 self.book.max_float_loss = upnl
+        # Opt-in only. Native moving grid keeps running; do not default-halt.
         if self.risk.investment_sl_pct and hit_investment_sl(
             eq - self.book.initial, self.book.initial, self.risk.investment_sl_pct
         ):
-            # hit_investment_sl expects uPnL; equity drawdown == eq - initial.
             self._flatten(px, ts, "investment_sl")
             return
         if eq > self._peak:
@@ -309,10 +343,20 @@ class SpotMovingGridEngine:
             rejected=self.rejected,
             min_cushion=1.0,
         )
+        grid_harvest = float(sum(t.realized_pnl for t in self.trades if t.reason == "grid_sell_tp"))
+        leftover_harvest = float(sum(t.realized_pnl for t in self.trades if t.reason == "grid_sell_leftover"))
+        inventory_mtm = self._inventory_mtm(last_px)
+        metrics["grid_harvest"] = round(grid_harvest, 4)
+        metrics["leftover_harvest"] = round(leftover_harvest, 4)
+        metrics["grid_income"] = round(grid_harvest + leftover_harvest, 4)
+        metrics["inventory_mtm"] = round(inventory_mtm, 4)
+        metrics["end_quote"] = round(self.quote, 4)
+        metrics["end_base"] = round(self.base, 8)
         metrics["grid_shifts"] = self.shifts
-        metrics["leftover_base"] = round(self.leftover, 8)
+        metrics["leftover_base"] = round(self._leftover_base(), 8)
         metrics["n_prints"] = n_prints
         metrics["feed"] = "deals"
+        metrics["halted"] = self.halted
         metrics["liquidated"] = False
         metrics["liq_risk"] = 0.0
         return BacktestResult(
@@ -343,9 +387,11 @@ class SpotMovingGridEngine:
             },
             notes=[
                 "feed=deals (official Gate tape; no OHLC wick path)",
+                "no default drawdown halt; grid harvest is per-rung sell-buy-fees",
                 f"grid_count={self.strategy.grid_count} spacing_pct={self.strategy.spacing_pct} "
                 f"mode={self.strategy.spacing_mode}",
-                f"prints={n_prints} fills={len(self.trades)} shifts={self.shifts}",
+                f"prints={n_prints} fills={len(self.trades)} shifts={self.shifts} "
+                f"harvest={grid_harvest:.4f}",
             ],
         )
 

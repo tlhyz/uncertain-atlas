@@ -30,8 +30,8 @@ strategy:
   fill_policy: last_touch
 
 risk:
-  investment_sl_pct: 0.50
-  max_drawdown_stop_pct: 0.40
+  investment_sl_pct: null
+  max_drawdown_stop_pct: null
   force_exit_before_liq_buffer_pct: null
   stop_if_price_breaks_range: false
 

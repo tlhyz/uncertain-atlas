@@ -89,11 +89,17 @@ def run_batch_job(cfg: dict[str, Any]) -> list[dict[str, Any]]:
     # Combined table
     out = Path(cfg.get("output_dir") or "outputs") / "batch_index.md"
     out.parent.mkdir(parents=True, exist_ok=True)
-    lines = ["# Batch report", "", "| symbol | interval | net_pnl | max_dd_pct | sharpe | liq | cycles |", "|---|---|---:|---:|---:|---|---:|"]
+    lines = [
+        "# Batch report",
+        "",
+        "| symbol | interval | net_pnl | grid_harvest | inventory_mtm | max_dd_pct | halted | cycles |",
+        "|---|---|---:|---:|---:|---:|---|---:|",
+    ]
     for r in reports:
         m = r["metrics"]
         lines.append(
-            f"| {r['symbol']} | {r['interval']} | {m.get('net_pnl')} | {m.get('max_dd_pct')} | {m.get('sharpe')} | {m.get('liquidated')} | {m.get('cycles')} |"
+            f"| {r['symbol']} | {r['interval']} | {m.get('net_pnl')} | {m.get('grid_harvest')} | "
+            f"{m.get('inventory_mtm')} | {m.get('max_dd_pct')} | {m.get('halted')} | {m.get('cycles')} |"
         )
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return reports

@@ -98,6 +98,34 @@ def test_levels_shift_and_lot_remap():
     assert lots == {1: 1.0}
 
 
+def test_grid_harvest_uses_rung_cost_not_portfolio_average():
+    """A completed grid must credit sell − that buy, even if another lot is cheaper."""
+    cfg = _cfg()
+    cfg["strategy"]["grid_count"] = 8
+    cfg["strategy"]["spacing_pct"] = 0.01
+    cfg["strategy"]["order_size_quote"] = 100.0
+    # 96 fills a low buy; 99 fills a higher buy; 100.5 sells only the higher rung.
+    tape = _tape([100.0, 96.0, 99.0, 100.5])
+    result = run_spot_moving_grid(cfg, tape)
+    sells = [t for t in result.trades if t.reason == "grid_sell_tp"]
+    assert sells, "expected at least one completed grid rung"
+    assert result.metrics["grid_harvest"] == pytest.approx(
+        sum(t.realized_pnl for t in sells), abs=1e-3
+    )
+    # Harvest must be positive on a +1% geometric rung after tiny maker fees.
+    assert result.metrics["grid_harvest"] > 0
+    assert result.metrics.get("halted") is False
+
+
+def test_no_drawdown_halt_by_default():
+    cfg = _cfg()
+    # Crash then grind — without a stop the robot keeps shifting.
+    prices = [100.0] + [70.0] * 5 + [70.0 + i * 2.0 for i in range(20)]
+    result = run_spot_moving_grid(cfg, _tape(prices))
+    assert result.metrics.get("halted") is False
+    assert result.metrics.get("stop_outs", 0) == 0
+
+
 def test_tick_tape_buy_then_sell_round_trip():
     # 8 geometric 1% grids around 100. A print at 96 fills a lower buy;
     # a later print at 104 fills the +1 grid sell.
@@ -169,3 +197,5 @@ def test_yaml_defaults_are_spot_tick_grid():
     assert cfg["strategy"]["name"] == "moving_grid"
     assert 20 <= int(cfg["strategy"]["grid_count"]) <= 30
     assert cfg["risk"]["stop_if_price_breaks_range"] is False
+    assert cfg["risk"]["max_drawdown_stop_pct"] in (None, 0, 0.0)
+    assert cfg["risk"]["investment_sl_pct"] in (None, 0, 0.0)
