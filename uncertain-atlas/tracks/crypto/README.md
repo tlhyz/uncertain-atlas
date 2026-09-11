@@ -3,6 +3,7 @@
 课：L1。账本：`../post-quantum/engineering-ledger.md`。  
 精读：[`worked-example-domain.md`](worked-example-domain.md)（投票字节被当成转账）。  
 三层编码对照：[`worked-example-tagged-hash.md`](worked-example-tagged-hash.md)（BIP-340 / EIP-712 / FIPS `ctx`）。  
+BFT 步类型：[`../consensus/worked-example-vote-signbytes.md`](../consensus/worked-example-vote-signbytes.md)。  
 FIPS 算法包装：[`../post-quantum/fips-context.md`](../post-quantum/fips-context.md)（空 `ctx` ≠ 已分角色）。
 
 | 组件 | 挡住 | 挡不住 | 后量子税 |

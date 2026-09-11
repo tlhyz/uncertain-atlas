@@ -89,6 +89,7 @@ devp2p / discv5 等。块与 blob（EIP-4844 后）传播是新带宽账。
 ## 10. 密码学
 
 secp256k1 ECDSA、Keccak-256、树哈希；共识层 BLS 聚合投票；blobs 涉及 KZG（EIP-4844）。  
+CL 的 `DomainType`（proposer ≠ attester）与 `compute_signing_root` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不要和 EIP-712 混名。  
 用户账户默认仍非后量子。
 
 ---

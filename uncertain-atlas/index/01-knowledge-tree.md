@@ -222,6 +222,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M4.2 高度、轮次、步骤 · 必学
 - propose / prevote / precommit / commit
+- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`
 
 ### M4.3 锁、解锁、超时 · 必学
 - locking / unlock / round change
@@ -262,6 +263,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.3 执行层 / 共识层 · 必学
 - validator、attestation、finality、fork choice
+- 覆盖：课文 L5.2；CL `DomainType` 见投票 SignBytes 精读
 
 ### M5.4 多客户端与可执行规范 · 必学
 - 为什么故意允许多个实现
@@ -423,11 +425,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–18）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–19）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C20；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C21；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

@@ -112,7 +112,8 @@ WAL：先记「我要投什么」，再投票，防崩溃后投出矛盾票。
 | 哈希 | 块 ID、状态哈希 |
 | 应用层签名 | 用户交易，引擎不当作共识票 |
 
-算法可换，但消息域必须把 vote 和 tx 分开。
+算法可换，但消息域必须把 vote 和 tx 分开。  
+SignBytes 是 `CanonicalVote`（type / height / round / block_id / timestamp / chain_id），不是块内 Vote 的普通编码。见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)。
 
 ---
 

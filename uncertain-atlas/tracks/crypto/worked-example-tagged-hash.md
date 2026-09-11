@@ -75,6 +75,7 @@ FIPS 204/205 外部 API 在把 `M` 交给内部签之前，先拼 `0x00 ‖ |ctx
 | BIP-340 `hash_name` | 密码构造（challenge / nonce / aux） | 跨方案哈希重解释；nonce 派生撞车漏钥 | `m` 里没写角色 |
 | EIP-191 / EIP-712 | 钱包与合约的 typed data | 聊天签变成 RLP 交易；跨 dapp（若域字段填全） | 共识投票；同一 typed 消息被执行两次（规范声明范围外） |
 | 消息前缀 `chain‖type‖version` | 协议 | 投票字节当用户 tx | 库走 FIPS **internal** API，跳过 `ctx` |
+| BFT SignBytes / CL `DomainType` | 协议（步类型） | Prevote 当 Precommit；attestation 当 proposer | `timestamp` 也在票里；σ 不是票身份 |
 | FIPS 外部 `ctx` | 算法包装 | 同一 `M` 在另一角色 Verify 为假 | 两个角色都用空默认 |
 
 **建议：** 「不确定」四层都写进规范：BIP 风格的构造标签（若沿用哈希构造）、协议消息前缀、FIPS `ctx`、钱包若签结构化数据再单独用 712 形状。缺一层就在审核里写「未钉」。

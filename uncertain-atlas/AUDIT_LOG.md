@@ -384,3 +384,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A114 | 记录 | Sei 仍无独立独特思想 | 树行写明不写页 |
 
 未做：写出题、Monad 19 节、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 02:10 UTC · BFT 投票 SignBytes / CL DomainType
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A115 | 中 | L4.2 讲了步，没钉「两步是两封信」 | `worked-example-vote-signbytes.md`：CometBFT `CanonicalVote` + signing.md 双签纪律 |
+| A116 | 中 | L5.2 讲 attestation，读者会以为 EIP-712 就是 CL 域 | phase0 `DomainType` / `compute_domain` / `compute_signing_root`；与 712 分列 |
+| A117 | 低 | 不变量 6 太粗，挡不住 prevote→precommit | 不变量 19 + 语料 C21；L10.3 第 14 条 |
+| A118 | 记录 | phase0 域表不是后续分叉全集 | 页上写明后续文件会加类型 |
+
+未做：写出题、实现 runner、填 CPU、选型、展开 vote extension、改交易代码。Goal 保持 active。

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 24）
+
+- BFT 投票被签字节精读：CometBFT `CanonicalVote`（type / chain_id / 固定宽度）+ 签名器双签纪律；Ethereum phase0 `DomainType` 与 `compute_signing_root`。
+- 不变量 19；语料 C21。Prevote 的印不得验成 Precommit。
+- L4.2 / L5.2 / 两份档案 / 通读第 10 步互指。phase0 表不是后续分叉全集。
+
 ## 2026-09-12（续 23）
 
 - Monad 仅过滤器页：共识先对顺序投票，本块可以没有状态根；延迟 `D` 块根是有效性条件。
