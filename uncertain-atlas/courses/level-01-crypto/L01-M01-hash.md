@@ -127,4 +127,4 @@ Bitcoin Core 可从 `hash.h` / 区块头序列化看起。本课不要求打开�
 | 经济 | 撞哈希的收益 vs 代价；更长 ≠ 已后量子 |
 
 **禁止假学习：** 「哈希就是加密。」「更长的哈希一定后量子安全。」
-**边界：** 不选具体哈希品牌当「不确定已定」。
+**边界：** 不选具体哈希品牌当「不确定已定」。BIP-340 把标签焊进 SHA256 的公式见 [`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)，本课不抄曲线。

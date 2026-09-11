@@ -113,7 +113,7 @@ Bitcoin Core：`src/pubkey.cpp` / secp256k1 库。go-ethereum：`crypto` 包。�
 1. 偷 `sk`。链无法分辨。
 2. 骗用户签错 `m`（盲签、钓鱼网站）。
 3. 跨链/跨类型重放。
-4. ECDSA 随机数重复或泄漏 → 私钥可解。这是实现/部署，不是协议口号。三种「nonce」的拆分见 L1.6。域分离精读：[`../../tracks/crypto/worked-example-domain.md`](../../tracks/crypto/worked-example-domain.md)。
+4. ECDSA 随机数重复或泄漏 → 私钥可解。这是实现/部署，不是协议口号。三种「nonce」的拆分见 L1.6。域分离精读：[`../../tracks/crypto/worked-example-domain.md`](../../tracks/crypto/worked-example-domain.md)。BIP-340 原文把「抄 nonce 派生却不换标签」写成漏钥：[`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)。
 5. 海量废签名打爆验签 CPU。后量子时代更狠。
 6. 量子计算机对椭圆曲线的长期威胁。见 L1.5。
 

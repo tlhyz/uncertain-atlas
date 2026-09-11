@@ -13,7 +13,7 @@
 | 02 | 《全球公链架构图谱》 | `protocols/` 19 节 + `tracks/` 横表 | 主线 + 第 8 波择优（含 Nervos 思想级） | 必学 |
 | 03 | 《共识协议图谱》 | `tracks/consensus/` + `tracks/finality/` | 对照表已更新 | 必学 |
 | 04 | 《状态模型图谱》 | `tracks/state-models/` + `tracks/parallelism/` | 进行中 | 必学 |
-| 05 | 《区块链密码学地图》 | `tracks/crypto/` | 第一版对照表 | 必学 |
+| 05 | 《区块链密码学地图》 | `tracks/crypto/` | 对照表 + 域分离三层编码精读 | 必学 |
 | 05b | 《实现保证精读》 | `tracks/implementation/` | 编码 + 崩溃两则 | 必学 |
 
 ---

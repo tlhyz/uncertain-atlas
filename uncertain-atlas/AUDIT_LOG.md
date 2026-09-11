@@ -363,3 +363,13 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、把库/OpenSSL 编码当 FIPS、改交易代码。Goal 保持 active。
 定时器：`uncertain-atlas-keepalive` 仍在，到期 2026-09-18T22:31:17Z，无需续订。
+
+### 2026-09-12 01:40 UTC · BIP-340 / EIP-712 不是 FIPS ctx
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A108 | 中 | 「域分离」会被说成一种编码 | `worked-example-tagged-hash.md`：BIP-340 `hash_name`、EIP-712 `domainSeparator`、FIPS `ctx` 分列 |
+| A109 | 中 | EIP-712 易被写成结算链已防重放 | 原文：同一 typed 消息出现两次，应用拒或幂等，**怎样做不在标准范围** |
+| A110 | 低 | BIP-340 标签会被当成协议 `type=vote` | 卡上写明：挡的是跨方案哈希重解释与 nonce 漏钥，不是消息角色 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

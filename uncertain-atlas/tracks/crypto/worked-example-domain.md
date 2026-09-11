@@ -14,7 +14,8 @@
 **层：协议工程（域分离），不是算法被破。**
 
 后量子换库若不换域标签，旧票仍可能在新编码里被读错（接 L10.4 无标签裂链）。  
-只用消息前缀、FIPS `ctx` 仍为空：算法层没有角色。第二层见 [`../post-quantum/fips-context.md`](../post-quantum/fips-context.md)、语料 C20。
+只用消息前缀、FIPS `ctx` 仍为空：算法层没有角色。第二层见 [`../post-quantum/fips-context.md`](../post-quantum/fips-context.md)、语料 C20。  
+BIP-340 标签与 EIP-712 域是另外两套编码，不要与 `ctx` 混名：[`worked-example-tagged-hash.md`](worked-example-tagged-hash.md)。
 
 ---
 

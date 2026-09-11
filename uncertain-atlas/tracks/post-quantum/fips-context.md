@@ -61,4 +61,5 @@ FIPS 205 的 `slh_sign` 同样允许 `opt_rand`（随机或改用公钥种子做
 3. 算法标签（不变量 11）还要能区分 ML-DSA / HashML-DSA、SLH-DSA / HashSLH-DSA。FIPS 自己要求 OID 标明版本。  
 4. 不填 CPU，不选 44/65/87。
 
-精读：[`worked-example-fips-ctx.md`](worked-example-fips-ctx.md)。
+精读：[`worked-example-fips-ctx.md`](worked-example-fips-ctx.md)。  
+和 BIP-340 / EIP-712 不要混名：[`../crypto/worked-example-tagged-hash.md`](../crypto/worked-example-tagged-hash.md)。

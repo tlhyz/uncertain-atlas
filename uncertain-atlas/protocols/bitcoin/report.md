@@ -118,7 +118,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | SHA-256 / HASH256 | 块头、txid、Merkle |
 | RIPEMD-160 | 地址派生（P2PKH 等） |
 | ECDSA secp256k1 | 旧式花费 |
-| Schnorr (BIP-340) | Taproot |
+| Schnorr (BIP-340) | Taproot。tagged hash 公式见 `tracks/crypto/worked-example-tagged-hash.md`；标签不是 FIPS `ctx` |
 | Merkle 树 | 交易承诺、SPV |
 
 没有 BLS，没有默认 zk。

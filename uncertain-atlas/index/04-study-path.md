@@ -15,7 +15,7 @@
 
 ## 第二通：工具
 
-6. L1 哈希 / 签名 / Merkle / 编码 / 随机数与确定性（L1.6）。  
+6. L1 哈希 / 签名 / Merkle / 编码 / 随机数与确定性（L1.6）。域分离三层编码：[`../tracks/crypto/worked-example-tagged-hash.md`](../tracks/crypto/worked-example-tagged-hash.md)（BIP-340 ≠ EIP-712 ≠ FIPS `ctx`）。  
 7. L2.1–L2.4 状态；L2.5 只在你关心「输出带数据」时读；L2.6 在你关心「谁为磁盘付钱」时读。  
 8. 打开决策矩阵状态表，确认最后一列是空的。
 

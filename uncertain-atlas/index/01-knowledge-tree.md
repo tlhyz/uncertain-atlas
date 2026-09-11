@@ -111,6 +111,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M1.1 哈希 · 必学
 - 抗碰撞、抗原像、承诺、内容寻址
 - 哈希撞了会发生什么
+- 覆盖：课文 L1.1；BIP-340 tagged hash 公式在 `tracks/crypto/worked-example-tagged-hash.md`
 
 ### M1.2 数字签名 · 必学
 - 签名、验签、公钥绑定

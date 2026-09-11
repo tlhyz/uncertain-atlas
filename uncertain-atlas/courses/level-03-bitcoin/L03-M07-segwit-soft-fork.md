@@ -114,4 +114,4 @@ Taproot 是后续软分叉，本课不展开。
 | 经济 | 矿工/节点激励是否执行新规则 |
 
 **禁止假学习：** 「SegWit 是硬分叉扩容。」「旧节点和以前一样安全。」「见证折扣 = 官方 TPS。」  
-**边界：** 不讲 Tapscript、不讲闪电路由、不背激活日期表。
+**边界：** 不讲 Tapscript、不讲闪电路由、不背激活日期表。Taproot 路径用 BIP-340；tagged hash 公式在 [`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)，本课不展开曲线。

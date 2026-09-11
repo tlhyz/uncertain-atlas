@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 22）
+
+- 域分离三层编码精读：BIP-340 tagged hash（规范公式 + nonce 漏钥警告）、EIP-712 `domainSeparator`（范围不含应用重放）、FIPS 外部 `ctx`。
+- 模式 domain-separation、L1.1/L1.2、L3.7、Bitcoin/Ethereum 档案互指。
+- 禁止把三种编码说成一句话。
+
 ## 2026-09-12（续 21）
 
 - FIPS 204/205 外部 `ctx` 卡：算法层域分离；空默认不是完成；共识只走外部 API。

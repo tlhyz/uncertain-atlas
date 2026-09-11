@@ -37,7 +37,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 
 ## 4. 一笔交易完整生命周期
 
-1. 签名（含 nonce、gas、chain id、数据）。  
+1. 签名（含 nonce、gas、chain id、数据）。钱包 typed data 是 EIP-712，**不是**共识投票域；对照 `tracks/crypto/worked-example-tagged-hash.md`。  
 2. RPC 广播。  
 3. 进若干 mempool；可被替换（同 nonce 更高费）。  
 4. 某 proposer / builder 选入执行块。  
