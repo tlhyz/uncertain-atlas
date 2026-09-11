@@ -24,7 +24,7 @@
 |---|---|---|---|---|
 | 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 五案（含 2012 Merkle、2019 Sprout） | 必学 |
 | 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 13 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 17 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 18 条 | 重要 |
 
 ---
 

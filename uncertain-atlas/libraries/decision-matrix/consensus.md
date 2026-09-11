@@ -12,4 +12,5 @@
 | 后量子 | 主要打用户签 | 用户签+投票签 | 视实现 | 用户签+投票签 | |
 | 结算文案 | 需确认数 | commit 可当结算 | 要解释参数 | 须钉 finalized | |
 
+分区时停还是两边长：见 [`../../tracks/consensus/worked-example-partition.md`](../../tracks/consensus/worked-example-partition.md)。  
 「不确定」若承诺「到了就是到了」，表会偏向 BFT 一类。这仍是建议方向，不是决定。

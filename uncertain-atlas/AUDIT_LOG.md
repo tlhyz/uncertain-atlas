@@ -288,3 +288,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A82 | 记录 | RFC0002 标 Draft | 档案第 13 节标明；数字回现行 RFC |
 
 未做：出题、选型、填 PQ 实测、编 Nervos 事故、改交易代码。Goal 保持 active。
+
+### 2026-09-12 00:10 UTC · 横表回填 + 分区/形式化缝
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A83 | 中 | 最终性/共识表停在第 5 波，第 6–8 波档案成孤立笔记 | 回填 Aptos/Celestia/Polkadot/Zcash/Mina/Nervos/Fuel/Algorand 等行 |
+| A84 | 中 | L0.6 讲分区但目的 A 会把日蚀和帘子混成一件事 | `worked-example-partition.md` |
+| A85 | 中 | L9.8 仍像口号，「形式化过」可挡审计 | 形式化缝精读 + 反模式 model-equals-implementation |
+| A86 | 低 | L10.3 清单未写入占用与分域 | 已补第 11、12 条 |
+
+未做：出题、选型、填 PQ 实测、改交易代码。Goal 保持 active。

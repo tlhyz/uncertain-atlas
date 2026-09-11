@@ -23,14 +23,14 @@
 
 9. L3.1 + Bitcoin 档案第 6、11、14 节。  
 10. L4.1–L4.5 + CometBFT 档案。  
-11. [`../tracks/finality/README.md`](../tracks/finality/README.md) 只看 Bitcoin 与 CometBFT 两行，先不要横扫全表。
+11. [`../tracks/finality/README.md`](../tracks/finality/README.md) 只看 Bitcoin 与 CometBFT 两行，再读 [`../tracks/consensus/worked-example-partition.md`](../tracks/consensus/worked-example-partition.md)。先不要横扫全表。
 
 ## 第四通：实现会骗人
 
 12. L5.3 多客户端同根。  
 13. [`../tracks/implementation/`](../tracks/implementation/README.md) 编码实例 + 崩溃实例。  
 14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50；隐私通再读 CVE-2019-7167。  
-15. L9.3 / L9.7 + [`../tracks/testing/worked-example.md`](../tracks/testing/worked-example.md)。问：绿测试守哪一层。
+15. L9.3 / L9.7 + [`../tracks/testing/worked-example.md`](../tracks/testing/worked-example.md)。问：绿测试守哪一层。形式化缝：[`../tracks/formal-methods/worked-example.md`](../tracks/formal-methods/worked-example.md)。
 
 ## 第五通：别人用什么换
 

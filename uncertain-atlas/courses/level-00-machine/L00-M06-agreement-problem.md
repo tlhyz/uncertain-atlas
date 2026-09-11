@@ -8,7 +8,8 @@
 ## A. 先修知识
 
 复制需要同一输入序列。区块会在同一高度竞争。  
-本课只建立共识的**问题意识**，不讲 Tendermint 的锁。锁是 Level 4。
+本课只建立共识的**问题意识**，不讲 Tendermint 的锁。锁是 Level 4。  
+分区精读：[`../../tracks/consensus/worked-example-partition.md`](../../tracks/consensus/worked-example-partition.md)。
 
 ---
 

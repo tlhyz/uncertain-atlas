@@ -103,4 +103,4 @@ Liveness 必须写清公平性，否则工具会说「大家都睡着所以没 c
 ## 精密检查
 
 **禁止假学习：** 「形式化过 = 不可能出事故。」  
-**边界：** 本课不教 TLA+ 语法；作业级模型后置。
+**边界：** 本课不教 TLA+ 语法；作业级模型后置。精读：[`../../tracks/formal-methods/worked-example.md`](../../tracks/formal-methods/worked-example.md)。
