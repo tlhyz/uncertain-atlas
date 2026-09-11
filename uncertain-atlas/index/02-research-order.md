@@ -261,6 +261,8 @@ Polkadot 把「小链借用大链安全」做成系统。
 | Kaspa | 区块 DAG（档案+L3.8 已写） |
 | Fuel | UTXO+调度（思想级档案已写） |
 | Nervos | 容量绑定存储 + 生成/验证分离（思想级档案 + L2.6） |
+| NEAR | 一条链 + chunk（思想级档案）；Doomslug ≠ BFT 标记 |
+| Babylon | BTC UTXO 留在 Bitcoin（仅过滤器页，无 19 节） |
 | Cardano | eUTXO（L2.5 已写，不写全生态） |
 | 真实 PQ 部署实验 | 直接服务「不确定」主线 |
 

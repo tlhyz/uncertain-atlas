@@ -329,3 +329,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A95 | 记录 | 未新编事故、未填 PQ CPU、未填决策列 | 博物馆仍五案；新页只分类已归档事实 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 00:55 UTC · 39137 + Nightshade + Babylon 过滤器
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A96 | 中 | M5.7 只有「方法在 L9.9」，无 Ethereum 官方实现案 | CVE-2021-39137：GHSA-9856-9gg9-qcmq + geth `docs/postmortems/2021-08-22-split-postmortem.md`；不附状态测试字节码 |
+| A97 | 中 | 知识树 Near 行只写「可能独特」 | 思想级 19 节；对照 Polkadot（中继+平行）与 Celestia（DA）；Nomicon 2021-03 脚注标明过期风险 |
+| A98 | 中 | 头上两个最终字段会被卖成一种 | 反模式 two-finality-sold-as-one；最终性/共识表加行 |
+| A99 | 低 | Babylon 有独特对象却无过滤器记录 | `protocols/babylon/README.md` 一页；契约委员会 + k-deep 先写代价；不写 19 节、不抄参数 |
+
+未做：写出题、实现 runner、填 CPU、选型、编无原文 NEAR 停机、改交易代码。Goal 保持 active。

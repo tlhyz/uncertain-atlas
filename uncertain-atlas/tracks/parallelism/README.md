@@ -12,5 +12,6 @@
 | eUTXO | 整笔校验；共享 datum 输出仍抢 | 同 UTXO | 共享脚本 UTXO 单行道 | L2.5 |
 | UTXO+声明调度 | 调度前 | 必须有序 L | 合约 UTXO 热点 | Fuel 档案 |
 | Cell + deps | 输入花费 / deps 只读 | 仍要 canonical 历史 | 热 Cell 单行道 | Nervos / L2.6 |
+| 分片账户（Nightshade） | 分片内执行时 | 跨分片靠收据，不是无序 | 热账户挤在同一分片则单行道 | `protocols/near/` |
 
 五笔账（任何高吞吐声称都要拆）：状态 / 执行 / 网络 / 协议 / 硬件。占用压的是存储账，不是并行账。

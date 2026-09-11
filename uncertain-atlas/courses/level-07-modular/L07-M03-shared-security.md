@@ -105,4 +105,4 @@ Polkadot 平行链；Ethereum rollup；对比：独立小 PoS 链自养安全。
 | 经济 | 桥里的钱 vs 能罚的钱 |
 
 **禁止假学习：** 「共享安全所以应用也安全。」
-**边界：** restaking 品牌不因有名展开。
+**边界：** restaking 品牌不因有名展开。NEAR Nightshade 是一条链上的 chunk，不是本课的「小链借用中继」；见 `protocols/near/`。Babylon 只过过滤器：`protocols/babylon/`。

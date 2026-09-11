@@ -22,9 +22,9 @@
 
 | 编号 | 资产 | 路径 | 状态 | 优先级 |
 |---|---|---|---|---|
-| 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 五案 + 17144 五层精读 | 必学 |
-| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 13 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 18 条 | 重要 |
+| 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 六案 + 17144 五层精读 | 必学 |
+| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 14 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 19 条 | 重要 |
 
 ---
 
@@ -70,6 +70,8 @@
 | Kaspa | 8 | 进阶 | 块 DAG 第一版 |
 | Fuel | 8 | 进阶 | 思想级 |
 | Nervos CKB | 8 | 进阶 | 思想级（占用） |
+| NEAR Nightshade | 8 | 进阶 | 思想级（一条链+chunk） |
+| Babylon | 8 | 进阶 | 仅过滤器页，无 19 节 |
 
 额外项目只在通过独特思想过滤器后建档。
 

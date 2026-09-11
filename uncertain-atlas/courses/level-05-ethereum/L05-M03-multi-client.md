@@ -126,7 +126,8 @@ Ethereum 用可执行规范、测试向量、hive 类套件、客户端交叉跑
 - 状态根断言；
 - 「第二个实现必须能对上」的位置。
 
-模式库：[multi-client-determinism](../../libraries/design-patterns/multi-client-determinism.md)。
+模式库：[multi-client-determinism](../../libraries/design-patterns/multi-client-determinism.md)。  
+博物馆（官方 postmortem，不是方法空话）：[`../../tracks/failure-museum/cve-2021-39137.md`](../../tracks/failure-museum/cve-2021-39137.md)。
 
 ---
 
@@ -141,4 +142,4 @@ Ethereum 用可执行规范、测试向量、hive 类套件、客户端交叉跑
 | 经济 | 客户端多样性成本 vs 单实现垄断 |
 
 **禁止假学习：** 「开源了所以实现正确。」「测试绿了所以两客户端不会分叉。」「客户端多所以一定去中心。」  
-**边界：** 不写市场份额；事故七问等官方 postmortem。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。
+**边界：** 不写市场份额。已归档实现案：CVE-2021-39137。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。

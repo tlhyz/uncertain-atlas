@@ -38,6 +38,7 @@
 | BIP 50 | 实现资源上限变成未写明的共识 |
 | CVE-2012-2459 | 协议构造允许不同叶列表同根；实现还可能拉黑合法块 |
 | CVE-2019-7167 | 密码学：Sprout 可靠性破，验证明通过仍可能伪造币 |
+| CVE-2021-39137 | 实现：一家 EVM 把返回缓冲和内存别名，算出错根 |
 
 对照方法：L9.9。语料表：[`../../libraries/adversarial-corpus/README.md`](../../libraries/adversarial-corpus/README.md)。
 

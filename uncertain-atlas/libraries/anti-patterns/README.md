@@ -20,3 +20,4 @@
 - [proof-ok-equals-no-inflation](proof-ok-equals-no-inflation.md)
 - [one-fee-eternal-state](one-fee-eternal-state.md)
 - [model-equals-implementation](model-equals-implementation.md)
+- [two-finality-sold-as-one](two-finality-sold-as-one.md)

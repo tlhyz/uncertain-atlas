@@ -439,14 +439,14 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | 候选 | 可能的独特思想 | 建议插入点 | 优先级 |
 |---|---|---|---|
 | Cardano | eUTXO（L2.5 已写；不写全生态 19 节） | L2 | 进阶 |
-| Near | Nightshade 分片、Doomslug | L7 | 进阶 |
+| Near | Nightshade 一条链+chunk（`protocols/near` 思想级）；Doomslug ≠ BFT 标记 | L7 | 进阶 |
 | Algorand | 密码抽签（`protocols/algorand` 已写） | L4 对照 | 进阶 |
 | Kaspa | 区块 DAG（`protocols/kaspa` + L3.8） | L3 | 进阶 |
 | Fuel | UTXO + 声明调度（思想级档案） | L2 + L6 | 进阶 |
 | Monad / Sei | EVM 并行的工程路线 | L5 + L6 | 进阶 |
 | Starknet / zkSync | ZK 执行层的不同证明系统 | L7 + L8 | 研究级 |
 | Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写） | L7 | 重要 |
-| EigenLayer / Babylon | 再质押 / BTC 时间戳安全 | L7 共享安全对照 | 进阶 |
+| EigenLayer / Babylon | 再质押 / BTC UTXO 仍留在 Bitcoin（`protocols/babylon` 仅过滤器页） | L7 共享安全对照 | 进阶 |
 | Filecoin / Arweave | 存储证明、永久数据 | 仅当「不确定」要做存储 | 按需 |
 | Nervos | 状态占用 / 链下生成（`protocols/nervos` + L2.6） | L2 + L9 经济 | 进阶 |
 | ICP | 容器、子网、链密钥 | 仅当独特思想被确认 | 研究级 |

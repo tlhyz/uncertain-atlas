@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 19）
+
+- 博物馆：CVE-2021-39137（Geth RETURNDATA 错根 / 少数分叉；GHSA + 官方 postmortem；不附利用构造）。
+- 语料 C18；威胁模型第 9 行（多数客户端同一实现洞）。
+- NEAR Nightshade 思想级 19 节：一条链 + chunk；Doomslug 标记 ≠ BFT 谓词。
+- 模式 single-chain-chunks；反模式 two-finality-sold-as-one。
+- Babylon 仅过滤器页：BTC UTXO 留在 Bitcoin；契约委员会是代价；无 19 节。
+
 ## 2026-09-12（续 18）
 
 - L0–L10 每课精密检查补齐五层表（密码学 / 协议 / 实现 / 部署 / 经济）。

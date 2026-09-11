@@ -27,5 +27,7 @@
 | Kaspa | [kaspa/](kaspa/README.md) | 第一版（块 DAG 对照） |
 | Fuel | [fuel/](fuel/README.md) | 第一版（思想级 UTXO 调度） |
 | Nervos CKB | [nervos/](nervos/README.md) | 第一版（思想级：占用 / 生成验证分离） |
+| NEAR Nightshade | [near/](near/README.md) | 第一版（思想级：一条链 + chunk） |
+| Babylon | [babylon/](babylon/README.md) | 仅过滤器页 |
 
 其余第 8 波仍在过滤器后：真实 PQ 部署。

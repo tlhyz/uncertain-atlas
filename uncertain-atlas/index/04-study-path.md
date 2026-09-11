@@ -29,13 +29,13 @@
 
 12. L5.3 多客户端同根。  
 13. [`../tracks/implementation/`](../tracks/implementation/README.md) 编码实例 + 崩溃实例。  
-14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50；先用 [`../tracks/failure-museum/worked-example-five-layers.md`](../tracks/failure-museum/worked-example-five-layers.md) 把 17144 拆进五层。隐私通再读 CVE-2019-7167。  
+14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50、CVE-2021-39137；先用 [`../tracks/failure-museum/worked-example-five-layers.md`](../tracks/failure-museum/worked-example-five-layers.md) 把 17144 拆进五层。隐私通再读 CVE-2019-7167。  
 15. L9.3 / L9.7 + [`../tracks/testing/worked-example.md`](../tracks/testing/worked-example.md)。问：绿测试守哪一层。形式化缝：[`../tracks/formal-methods/worked-example.md`](../tracks/formal-methods/worked-example.md)。
 
 ## 第五通：别人用什么换
 
 16. L6.4 三种并行（先读对照，再按需回 6.1–6.3）。  
-17. L7.1–L7.4 + 生命周期表的乐观 L2 列。  
+17. L7.1–L7.4 + 生命周期表的乐观 L2 列。NEAR 只在你关心「一条链上的 chunk」时读 `protocols/near/`；不要和 Polkadot 共享安全混成一词。  
 18. L8.1–L8.3；L8.4 若要碰证明。  
 19. [`../tracks/light-clients/worked-example.md`](../tracks/light-clients/worked-example.md) 后再看 L9.6 表。  
 20. 每读完一条档案，回 `tracks/` 对应表改一格或确认已有格。
