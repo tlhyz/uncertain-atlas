@@ -4,7 +4,8 @@
 **事实：** 下列字节是标准化参数集的**名义长度**。  
 **不是事实：** 「不确定已选用」「本仓库测过验签速度」「更大所以更安全」。
 
-对照：[`engineering-ledger.md`](engineering-ledger.md) 第 1–3 行可引用本卡；第 4 行 CPU 仍空。
+对照：[`engineering-ledger.md`](engineering-ledger.md) 第 1–3 行可引用本卡；第 4 行 CPU 仍空。  
+外部 `ctx` 不是尺寸：[`fips-context.md`](fips-context.md)。长度卡填不了「已经域分离」。
 
 ---
 

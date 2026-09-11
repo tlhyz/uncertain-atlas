@@ -93,4 +93,4 @@ X 未迁：按协议，X 的券不再能产生新意图。这是明确的用户�
 | 经济 | 「帮忙迁」是柜员模型 |
 
 **禁止假学习：** 「换了 NIST 算法所以迁移完成。」「管理员可以帮忙迁冷钱包。」  
-**边界：** 不选 A/B 的具体 OID；不填未测体积。有状态方案另有 index 状态机，见 [`../../tracks/post-quantum/stateful-hbs.md`](../../tracks/post-quantum/stateful-hbs.md)；不要把「迁到 XMSS」写成无状态换签。
+**边界：** 不选 A/B 的具体 OID；不填未测体积。有状态方案另有 index 状态机，见 [`../../tracks/post-quantum/stateful-hbs.md`](../../tracks/post-quantum/stateful-hbs.md)；不要把「迁到 XMSS」写成无状态换签。FIPS 外部 `ctx` 与 hedged 签：[`../../tracks/post-quantum/fips-context.md`](../../tracks/post-quantum/fips-context.md)；空 `ctx` 双角色 = 反模式。

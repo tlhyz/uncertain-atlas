@@ -7,4 +7,4 @@
 **缺点：** 忘写一次就全废；版本字段本身要规范编码。  
 **项目：** EIP-155；几乎所有现代 vote 消息。  
 **常见 bug：** 用户交易和验证者投票共用同一裸哈希。  
-**不确定：** 必做。后量子共存时更必做。精读：[`../../tracks/crypto/worked-example-domain.md`](../../tracks/crypto/worked-example-domain.md)。
+**不确定：** 必做。后量子共存时更必做。消息前缀是一层；FIPS 204/205 外部 API 的 `ctx` 是第二层，默认空串不算完成。精读：[`../../tracks/crypto/worked-example-domain.md`](../../tracks/crypto/worked-example-domain.md)、[`../../tracks/post-quantum/fips-context.md`](../../tracks/post-quantum/fips-context.md)。

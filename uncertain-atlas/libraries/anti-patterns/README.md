@@ -22,3 +22,4 @@
 - [model-equals-implementation](model-equals-implementation.md)
 - [two-finality-sold-as-one](two-finality-sold-as-one.md)
 - [ots-index-reuse](ots-index-reuse.md)
+- [empty-ctx-two-roles](empty-ctx-two-roles.md)

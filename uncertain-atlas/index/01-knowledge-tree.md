@@ -116,6 +116,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 签名、验签、公钥绑定
 - 签名算法被攻破 = 授权体系被攻破
 - domain separation：同一把钥匙签错域
+- 覆盖：课文 L1.2；消息前缀精读 `tracks/crypto/worked-example-domain.md`；FIPS 第二层 `tracks/post-quantum/fips-context.md`（不变量 18 / 语料 C20）
 
 ### M1.3 Merkle 树 · 必学
 - 包含证明、排除（先直觉）
@@ -414,16 +415,18 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - mempool DoS、批量验签、地址、算法敏捷
 - 密钥轮换、紧急迁移、冷账户、多算法共存
 - domain separation、PQ+ZK、轻节点、BFT 投票流量
+- 覆盖：L10.2 + L10.4；尺寸卡 / 投票字节 / 有状态 HBS / FIPS `ctx` 在 `tracks/post-quantum/`；CPU 与决策列仍空
 
 ### M10.3 威胁模型 · 必学
 - 对手能力、分区、量子、升级密钥、实现分歧
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–18）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C19；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C20；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

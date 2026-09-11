@@ -351,3 +351,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A103 | 记录 | QRL 参数集 ≠ SP 800-208 批准子集 | 过滤器页写明；不写「NIST 认证了这条链」；无 19 节 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 01:30 UTC · FIPS 外部 ctx（第二层域分离）
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A104 | 中 | 消息前缀域分离写完后，读者会以为 FIPS 默认空 `ctx` 已经分角色 | `fips-context.md`：FIPS 204 Alg. 2 / FIPS 205 Alg. 22；`M'` 含 `0x00‖len‖ctx`；空默认不是完成 |
+| A105 | 中 | 同一钥、同一 `M`、两角色 Verify 都可能为真 | 不变量 18 + 语料 C20 + 反模式 empty-ctx-two-roles；L10.3 第 13 条 |
+| A106 | 低 | hedged 签允许同一 `(sk,M,ctx)` 两个都真的 σ | 卡上写明：授权对象是 `(pk,M,ctx)`，不是 σ 十六进制；不与 Bitcoin scriptSig malleability 混成一事 |
+| A107 | 记录 | RFC 8554 Table 1 易被抄成 LMS 整签 | `stateful-hbs.md` 标明那是 LM-OTS 叶子；不进投票流量公式 |
+
+未做：写出题、实现 runner、填 CPU、选型、把库/OpenSSL 编码当 FIPS、改交易代码。Goal 保持 active。
+定时器：`uncertain-atlas-keepalive` 仍在，到期 2026-09-18T22:31:17Z，无需续订。

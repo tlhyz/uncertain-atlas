@@ -13,7 +13,8 @@
 验签通过。印是真的。意图是假的。  
 **层：协议工程（域分离），不是算法被破。**
 
-后量子换库若不换域标签，旧票仍可能在新编码里被读错（接 L10.4 无标签裂链）。
+后量子换库若不换域标签，旧票仍可能在新编码里被读错（接 L10.4 无标签裂链）。  
+只用消息前缀、FIPS `ctx` 仍为空：算法层没有角色。第二层见 [`../post-quantum/fips-context.md`](../post-quantum/fips-context.md)、语料 C20。
 
 ---
 
@@ -35,6 +36,7 @@
 Verify(pk, m, σ) 的 m 必须含 chain | type | version
 type=vote 的字节不得使 type=user-tx 为真
 用户签与投票签分域，即使第一版算法相同
+FIPS 204/205：ctx_vote ≠ ctx_tx，且都不得默认为空
 ```
 
 ---

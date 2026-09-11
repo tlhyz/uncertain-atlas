@@ -130,9 +130,9 @@ Grover 对哈希的平方加速，和 Shor 对椭圆曲线离散对数的打击�
 |---|---|
 | 密码学 | 椭圆曲线怕 Shor；PQ 候选仍有自己的假设 |
 | 协议 | 用户签与投票签体积进入区块 / 票预算 |
-| 实现 | 算法标签必须显式（不变量 11） |
+| 实现 | 算法标签必须显式（不变量 11）；外部 `ctx` 按角色，禁默认同空（不变量 18） |
 | 部署 | 未测 CPU 不得当容量规划 |
 | 经济 | 更大签 ≠ 更安全；先算投票字节（不变量 16） |
 
 **禁止假学习：** 「NIST 标准化了所以我们的链已后量子。」「签更大所以更安全。」
-**边界：** 不选算法；CPU / 本机实测必须空。名义长度见 [`../../tracks/post-quantum/nist-size-card.md`](../../tracks/post-quantum/nist-size-card.md)。有状态 XMSS/LMS：[`../../tracks/post-quantum/stateful-hbs.md`](../../tracks/post-quantum/stateful-hbs.md)，不要和 SLH-DSA 混成一种「哈希签」。
+**边界：** 不选算法；CPU / 本机实测必须空。名义长度见 [`../../tracks/post-quantum/nist-size-card.md`](../../tracks/post-quantum/nist-size-card.md)。外部 `ctx`：[`../../tracks/post-quantum/fips-context.md`](../../tracks/post-quantum/fips-context.md)。有状态 XMSS/LMS：[`../../tracks/post-quantum/stateful-hbs.md`](../../tracks/post-quantum/stateful-hbs.md)，不要和 SLH-DSA 混成一种「哈希签」。
