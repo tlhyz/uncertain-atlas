@@ -257,6 +257,11 @@ def test_harvest_identity_matches_equity_on_sample_tape():
     result = run_spot_moving_grid(cfg, tape)
     assert result.metrics["tape_ok"] is True
     assert abs(result.metrics["pnl_identity_gap"]) < 0.05
+    rounds = int(result.metrics["grid_rounds_tp"]) + int(result.metrics["grid_rounds_leftover"])
+    if rounds:
+        assert result.metrics["avg_harvest_per_round"] == pytest.approx(
+            result.metrics["grid_income"] / rounds, rel=1e-4
+        )
 
 
 def test_yaml_defaults_are_spot_tick_grid():

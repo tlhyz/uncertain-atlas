@@ -185,6 +185,20 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
                     f"- 账本恒等式缺口：{m.get('pnl_identity_gap')} "
                     f"（净收益 ≈ 网格差价 + 底仓浮盈亏 − 未摊买费 {m.get('residual_buy_fees')}）"
                 )
+            rounds = int(m.get("grid_rounds_tp") or 0) + int(m.get("grid_rounds_leftover") or 0)
+            if rounds or m.get("grid_step") is not None:
+                lines.extend(
+                    [
+                        "",
+                        "## 网格差价怎么算",
+                        "- 只记已完成的「买进 → 该格 +1 格卖掉」。移格次数不是来回次数，没卖掉的底仓不算差价。",
+                        "- 公式：`qty × (卖出价 − 该格买入价) − 买费 − 卖费`",
+                        f"- 等差步长（开盘定死，移格不改）：{m.get('grid_step')}  | "
+                        f"完成来回：{m.get('grid_rounds_tp')} + 遗留卖出 {m.get('grid_rounds_leftover')}  | "
+                        f"平均每刀：{m.get('avg_harvest_per_round')} USDT",
+                        f"- 期末还锁在底仓里的市值：{m.get('quote_in_inventory')} USDT（现金 {m.get('end_quote')}）",
+                    ]
+                )
     lines.extend(
         [
         "",

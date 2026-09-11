@@ -398,9 +398,18 @@ class SpotMovingGridEngine:
         explained = grid_harvest + leftover_harvest + other_realized + inventory_mtm - residual_buy_fees
         tape = audit_deals_tape(work)
         metrics.update(tape)
+        tp_n = int(sum(1 for t in self.trades if t.reason == "grid_sell_tp"))
+        left_n = int(sum(1 for t in self.trades if t.reason == "grid_sell_leftover"))
+        n_rounds = tp_n + left_n
+        income = grid_harvest + leftover_harvest
         metrics["grid_harvest"] = round(grid_harvest, 4)
         metrics["leftover_harvest"] = round(leftover_harvest, 4)
-        metrics["grid_income"] = round(grid_harvest + leftover_harvest, 4)
+        metrics["grid_income"] = round(income, 4)
+        metrics["grid_rounds_tp"] = tp_n
+        metrics["grid_rounds_leftover"] = left_n
+        metrics["avg_harvest_per_round"] = round(income / n_rounds, 6) if n_rounds else 0.0
+        metrics["grid_step"] = round(self._grid_step(), 8)
+        metrics["quote_in_inventory"] = round(self.base * last_px, 4)
         metrics["inventory_mtm"] = round(inventory_mtm, 4)
         metrics["residual_buy_fees"] = round(residual_buy_fees, 4)
         metrics["pnl_explained"] = round(explained, 4)
