@@ -157,7 +157,7 @@
 ## 精密检查
 
 **禁止假学习：** 「过半数投票就安全。」「拜占庭就是网络延迟。」
-**边界：** 2/3 算术在 L4.1。本课只立 safety/liveness。
+**边界：** 2/3 算术在 L4.1。本课只立 safety/liveness。精读：[`../../tracks/consensus/worked-example-partition.md`](../../tracks/consensus/worked-example-partition.md)。
 
 ---
 
