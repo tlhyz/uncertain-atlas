@@ -437,12 +437,12 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 |---|---|---|---|
 | Cardano | 研究驱动、形式化倾向、eUTXO | L2 之后 / L9 形式化 | 进阶 |
 | Near | Nightshade 分片、Doomslug | L7 | 进阶 |
-| Algorand | 密码抽签、纯 PoS 最终性 | L4 对照 | 进阶 |
+| Algorand | 密码抽签（`protocols/algorand` 已写） | L4 对照 | 进阶 |
 | Kaspa | 区块 DAG、高 orphan 处理 | L3 后的 DAG 分支 | 进阶 |
 | Fuel | UTXO + 并行执行 | L2 + L6 | 进阶 |
 | Monad / Sei | EVM 并行的工程路线 | L5 + L6 | 进阶 |
 | Starknet / zkSync | ZK 执行层的不同证明系统 | L7 + L8 | 研究级 |
-| Arbitrum / Optimism | 乐观滚动、欺诈证明 | L7 | 重要 |
+| Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写） | L7 | 重要 |
 | EigenLayer / Babylon | 再质押 / BTC 时间戳安全 | L7 共享安全对照 | 进阶 |
 | Filecoin / Arweave | 存储证明、永久数据 | 仅当「不确定」要做存储 | 按需 |
 | Nervos | 状态租金、分层 | L2 + L9 经济 | 进阶 |

@@ -12,5 +12,6 @@
 | 3.4 | [L03-M04-network-and-eclipse.md](L03-M04-network-and-eclipse.md) | M3.2 | 传播与日蚀 |
 | 3.5 | [L03-M05-full-node-and-spv.md](L03-M05-full-node-and-spv.md) | M3.5 | 全节点 / 剪枝 / SPV |
 | 3.6 | [L03-M06-testing-and-culture.md](L03-M06-testing-and-culture.md) | M3.6 / M3.7 方法 | 事故如何回流成规则 |
+| 3.7 | [L03-M07-segwit-soft-fork.md](L03-M07-segwit-soft-fork.md) | M3.4 结构 | 见证如何软分叉进旧验证 |
 
-M3.4 脚本/SegWit/Taproot 细节仍后置：3.3 只讲演化纪律，不讲脚本语言。
+Taproot / Miniscript 语言细节仍后置。2013 分叉七问见博物馆 BIP 50。

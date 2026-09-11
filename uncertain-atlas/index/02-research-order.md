@@ -257,7 +257,7 @@ Polkadot 把「小链借用大链安全」做成系统。
 | 值得排队 | 原因 |
 |---|---|
 | Arbitrum / Optimism | 乐观滚动是模块化执行的另一半 |
-| Algorand | 密码抽签，BFT 家族的干净变体 |
+| Algorand | 密码抽签（19 节已写，对照不是默认骨架） |
 | Kaspa | 区块 DAG，对照 Nakamoto 孤块问题 |
 | Fuel | UTXO 并行，补状态模型地图 |
 | Cardano | 研究/形式化文化，eUTXO |

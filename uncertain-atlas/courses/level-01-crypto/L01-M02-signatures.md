@@ -140,3 +140,10 @@ Bitcoin Core：`src/pubkey.cpp` / secp256k1 库。go-ethereum：`crypto` 包。�
 - 垃圾交易会不会先把 mempool 的 CPU 吃光
 
 这些数字进 `tracks/post-quantum/`。本课先把「签名 = 授权，不是身份」钉死。
+
+---
+
+## 精密检查
+
+**禁止假学习：** 「签名证明你是谁。」「验签过了所以经济安全。」
+**边界：** 体积数字进账本，本课不填未测值。

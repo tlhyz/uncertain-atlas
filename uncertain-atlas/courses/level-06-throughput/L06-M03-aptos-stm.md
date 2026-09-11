@@ -97,3 +97,10 @@ Aptos。档案第 3、6、7 节。
 **建议：** 先有确定的 L（BFT 或你们选的引擎），再谈要不要 STM。  
 第一版规则少、冲突可预期，单线程 `Apply` 更可审计。  
 反模式：[stm-replaces-consensus](../../libraries/anti-patterns/stm-replaces-consensus.md)。
+
+---
+
+## 精密检查
+
+**禁止假学习：** 「STM 代替共识。」「并行结果可以重排。」
+**边界：** 见反模式 stm-replaces-consensus。

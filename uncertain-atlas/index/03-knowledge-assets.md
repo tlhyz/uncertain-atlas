@@ -21,8 +21,8 @@
 
 | 编号 | 资产 | 路径 | 状态 | 优先级 |
 |---|---|---|---|---|
-| 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | CVE-2010-5139、CVE-2018-17144 | 必学 |
-| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 11 条 | 重要 |
+| 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | CVE-2010-5139、CVE-2018-17144、BIP 50 | 必学 |
+| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 12 条 | 重要 |
 | 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 13 条 | 重要 |
 
 ---
@@ -64,6 +64,7 @@
 | Celestia / Polkadot | 6 | 重要 | 第一版 |
 | Zcash / Monero / Mina | 7 | 进阶 | 第一版 |
 | 乐观 Rollup | 8 | 重要 | 品类第一版 |
+| Algorand | 8 | 进阶 | 抽签第一版 |
 
 额外项目只在通过独特思想过滤器后建档。
 

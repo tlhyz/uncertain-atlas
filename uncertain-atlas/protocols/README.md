@@ -23,5 +23,6 @@
 | Monero | [monero/](monero/README.md) | 第一版 |
 | Mina | [mina/](mina/README.md) | 第一版 |
 | 乐观 Rollup（Arbitrum / Optimism 对照） | [optimistic-rollup/](optimistic-rollup/README.md) | 第一版（品类） |
+| Algorand | [algorand/](algorand/README.md) | 第一版（抽签对照） |
 
-其余第 8 波只在独特思想确认后建档。Algorand / Kaspa / Fuel / 真实 PQ 部署仍在过滤器后。
+其余第 8 波仍在过滤器后：Kaspa / Fuel / 真实 PQ 部署。

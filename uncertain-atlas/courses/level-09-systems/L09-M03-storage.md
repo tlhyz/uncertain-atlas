@@ -100,3 +100,10 @@ crash_at_any_point ⇒ restart ∈ {pre_H, post_H_complete}
 
 见 `libraries/invariants/` 与反模式 half-written-state。  
 后量子验签再慢，也不许用「先写一半状态」换速度。
+
+---
+
+## 精密检查
+
+**禁止假学习：** 「fsync 慢所以可以先写一半。」
+**边界：** 见反模式 half-written-state。
