@@ -170,6 +170,10 @@ class MovingGridStrategy(Strategy):
         self.order_size_quote = float(cfg.get("order_size_quote") or (self.quote_capital / n))
         self.shift_on_exit = bool(cfg.get("shift_on_exit", True))
         self.open_base_inventory = bool(cfg.get("open_base_inventory", True))
+        # 贴着下限开仓：只挂卖、跌破后是否还下移。默认仍是官方双边突破移动。
+        self.sells_only = bool(cfg.get("sells_only", False))
+        self.allow_move_up = bool(cfg.get("allow_move_up", True))
+        self.allow_move_down = bool(cfg.get("allow_move_down", True))
         self.move_mode = str(cfg.get("move_mode") or "breakout").strip().lower()
         if self.move_mode not in {"breakout", "ma720"}:
             raise ValueError(f"move_mode must be breakout|ma720, got {self.move_mode}")

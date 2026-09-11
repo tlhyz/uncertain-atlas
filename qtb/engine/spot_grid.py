@@ -202,6 +202,9 @@ class SpotMovingGridEngine:
     def _rehang_buys(self, ref: float) -> None:
         """Rest buys only strictly below last (never bid through the market)."""
         self._hang_ref = float(ref)
+        if self.strategy.sells_only:
+            self._resting_buys = []
+            return
         buy_lvls, _ = self._slots(ref)
         self._resting_buys = buy_lvls
 
@@ -276,6 +279,8 @@ class SpotMovingGridEngine:
                 continue
             self.lots.remove(lot)
             self._close_lot(lot, sell_px, ts, px, "grid_sell")
+            if self.strategy.sells_only:
+                continue
             buy_px = self._prev_level(sell_px)
             if buy_px > 1e-12 and buy_px < self._hang_ref - 1e-12:
                 if buy_px not in self._resting_buys:
@@ -290,7 +295,7 @@ class SpotMovingGridEngine:
                 self._resting_buys = [x for x in self._resting_buys if abs(x - lv) > 1e-12]
 
     def _can_shift_up(self, px: float) -> bool:
-        if len(self.levels) < 2:
+        if not self.strategy.allow_move_up or len(self.levels) < 2:
             return False
         hi = float(self.levels[-1])
         if self.strategy.stop_move_up is not None and hi >= float(self.strategy.stop_move_up):
@@ -300,7 +305,7 @@ class SpotMovingGridEngine:
         return px + 1e-12 >= hi + self._grid_step()
 
     def _can_shift_down(self, px: float) -> bool:
-        if len(self.levels) < 2:
+        if not self.strategy.allow_move_down or len(self.levels) < 2:
             return False
         lo = float(self.levels[0])
         if self.strategy.stop_move_down is not None and lo <= float(self.strategy.stop_move_down):

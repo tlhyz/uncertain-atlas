@@ -363,6 +363,27 @@ def test_first_sell_matches_entry_price():
     assert first.realized_pnl == pytest.approx(first.qty * 0.5, rel=0.2, abs=0.05)
 
 
+def test_bottom_anchor_sells_only_does_not_buy_dips():
+    """贴着下限开仓：资金打成底仓，只挂卖，下跌不再接飞刀。"""
+    cfg = _cfg()
+    cfg["strategy"]["grid_count"] = 20
+    cfg["strategy"]["range_up_pct"] = 0.10
+    cfg["strategy"]["range_down_pct"] = 0.0
+    cfg["strategy"]["spacing_mode"] = "arithmetic"
+    cfg["strategy"]["spacing_pct"] = None
+    cfg["strategy"]["quote_capital"] = 2000.0
+    cfg["strategy"]["order_size_quote"] = 100.0
+    cfg["strategy"]["sells_only"] = True
+    cfg["strategy"]["allow_move_down"] = False
+    result = run_spot_moving_grid(cfg, _tape([100.0, 97.0, 94.0, 105.0]))
+    assert all(t.reason != "grid_buy" for t in result.trades)
+    assert any(t.reason == "grid_base_buy" for t in result.trades)
+    sells = [t for t in result.trades if t.reason == "grid_sell"]
+    assert sells
+    assert all(t.price > 100.0 for t in sells)
+    assert result.metrics["grid_shifts"] == 0
+
+
 def test_arithmetic_window_does_not_cross_zero():
     """等差突破下移：下限不能落到 0 以下，停在最后一档正价格窗。"""
     cfg = _cfg()
