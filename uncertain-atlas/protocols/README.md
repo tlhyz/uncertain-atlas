@@ -30,5 +30,6 @@
 | NEAR Nightshade | [near/](near/README.md) | 第一版（思想级：一条链 + chunk） |
 | Babylon | [babylon/](babylon/README.md) | 仅过滤器页 |
 | QRL | [qrl/](qrl/README.md) | 仅过滤器页（XMSS + OTS index） |
+| Monad | [monad/](monad/README.md) | 仅过滤器页（共识先定序，再 Apply） |
 
 其余第 8 波：有状态 HBS 思想已入 `tracks/post-quantum/stateful-hbs.md`。其它「PQ 品牌链」仍先过过滤器。

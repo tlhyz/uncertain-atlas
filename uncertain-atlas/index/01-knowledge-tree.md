@@ -447,7 +447,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | Algorand | 密码抽签（`protocols/algorand` 已写） | L4 对照 | 进阶 |
 | Kaspa | 区块 DAG（`protocols/kaspa` + L3.8） | L3 | 进阶 |
 | Fuel | UTXO + 声明调度（思想级档案） | L2 + L6 | 进阶 |
-| Monad / Sei | EVM 并行的工程路线 | L5 + L6 | 进阶 |
+| Monad / Sei | Monad：共识先定序、根延迟 `D` 块（`protocols/monad` 仅过滤器）。Sei 仍待独特思想，不写页 | L5 + L6 | 进阶 |
 | Starknet / zkSync | ZK 执行层的不同证明系统 | L7 + L8 | 研究级 |
 | Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写） | L7 | 重要 |
 | EigenLayer / Babylon | 再质押 / BTC UTXO 仍留在 Bitcoin（`protocols/babylon` 仅过滤器页） | L7 共享安全对照 | 进阶 |

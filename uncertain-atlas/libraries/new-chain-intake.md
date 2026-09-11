@@ -6,7 +6,7 @@
 
 ## 过滤器（先于 19 问）
 
-> 它提供了什么 Bitcoin / CometBFT / Ethereum / Solana / Sui / Aptos / Celestia / Polkadot / Zcash / Monero / Mina / 乐观 rollup / Algorand / Kaspa / Fuel / Nervos / NEAR / QRL（仅 XMSS 部署） **很少同时具备**的思想？
+> 它提供了什么 Bitcoin / CometBFT / Ethereum / Solana / Sui / Aptos / Celestia / Polkadot / Zcash / Monero / Mina / 乐观 rollup / Algorand / Kaspa / Fuel / Nervos / NEAR / QRL（仅 XMSS 部署） / Monad（仅异步执行过滤器） **很少同时具备**的思想？
 
 答不出：降级。有名不是理由。
 

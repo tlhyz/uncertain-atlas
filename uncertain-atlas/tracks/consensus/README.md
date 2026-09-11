@@ -13,6 +13,7 @@
 | HotStuff 类 | QC / 线性 view change | 视实现与超时 | 领袖 + QC | <1/3 + 部分同步 | L4.6 |
 | 块 DAG | 蓝序/全序变深 | 视图分裂 | 多块并行出 | 仍要全序规则 | L3.8 / Kaspa |
 | Nightshade 一条链 | 连续两高度盖上（Nomicon）+ 头上另有 Doomslug 标记 | 缺 chunk 仍「有块」 | 轮值出块者 + chunk 生产者 | <1/3 冲突签 + 分片件够用 | `protocols/near/` |
+| 异步执行（Monad 文档） | 先最终**顺序**；状态根延迟 `D` 块才交差 | 文案把序当余额 | 视其 BFT | 执行滞后 + Reserve Balance | 仅过滤器页 |
 
 Avalanche：思想 vs 产品层已有 leader，须分开。  
 Algorand 抽签 ≠ Avalanche 抽样。  

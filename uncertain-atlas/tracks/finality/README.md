@@ -22,5 +22,6 @@
 | Nervos | Nakamoto 变体（Consensus RFC） | 占用不等式 = 最终 | 两边可长 | L2.6 / 档案 |
 | Fuel | 取决于排序从哪来 | 并行执行完 = 最终 | 视部署 | 档案 |
 | NEAR | `last_final_block`（BFT 谓词）≠ `last_ds_final_block` | 出块 / Doomslug = commit | 视 approvals 与缺 chunk | 思想级档案 |
+| Monad（文档） | 共识最终的是**顺序**；状态根延迟 `D` 块 | 顺序最终 = 余额已到 | 视其 BFT；执行滞后是另一轴 | 仅过滤器页 |
 
 「不确定」列空。若产品要说「到了」，先在 L10.1 选一行协议对象。

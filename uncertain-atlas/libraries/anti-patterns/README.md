@@ -23,3 +23,4 @@
 - [two-finality-sold-as-one](two-finality-sold-as-one.md)
 - [ots-index-reuse](ots-index-reuse.md)
 - [empty-ctx-two-roles](empty-ctx-two-roles.md)
+- [order-sold-as-state](order-sold-as-state.md)

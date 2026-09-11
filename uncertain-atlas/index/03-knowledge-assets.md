@@ -24,7 +24,7 @@
 |---|---|---|---|---|
 | 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 六案 + 17144 五层精读 | 必学 |
 | 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 15 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 21 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 22 条 | 重要 |
 
 ---
 
@@ -73,6 +73,7 @@
 | NEAR Nightshade | 8 | 进阶 | 思想级（一条链+chunk） |
 | Babylon | 8 | 进阶 | 仅过滤器页，无 19 节 |
 | QRL | 8 | 研究级 | 仅过滤器页（XMSS / OTS） |
+| Monad | 8 | 进阶 | 仅过滤器页（先定序再 Apply） |
 
 额外项目只在通过独特思想过滤器后建档。
 
