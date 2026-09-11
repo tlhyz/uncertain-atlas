@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-11（续 33）
+
+- Starknet 仅过滤器：SNOS 把「块有效」写成点名 Cairo 程序；Core 登记 `programHash`。v0.13.2 起还要 applicative bootloader。
+- `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`。状态差 DA ≠ 「有证明就不用数据」。
+- 不变量 28；语料 C30；反模式 l2-accepted-sold-as-l1；L10.3 第 24 条。
+- 不抄吞吐口号、TVL、现行 hash。zkSync 仍无独立对象。
+
 ## 2026-09-11（续 32）
 
 - 谁排序精读：ethereum/builder-specs。提议者可只签 `ExecutionPayloadHeader`，交易列表事后揭示。Builder API 不是 `process_block`。

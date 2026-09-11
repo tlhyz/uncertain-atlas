@@ -6,7 +6,7 @@
 
 ## 过滤器（先于 19 问）
 
-> 它提供了什么 Bitcoin / CometBFT / Ethereum / Solana / Sui / Aptos / Celestia / Polkadot / Zcash / Monero / Mina / 乐观 rollup / Algorand / Kaspa / Fuel / Nervos / NEAR / QRL（仅 XMSS 部署） / Monad（仅异步执行过滤器） / EigenLayer（仅 restake 过滤器） / Babylon（仅 BTC UTXO 仍在比特币） **很少同时具备**的思想？
+> 它提供了什么 Bitcoin / CometBFT / Ethereum / Solana / Sui / Aptos / Celestia / Polkadot / Zcash / Monero / Mina / 乐观 rollup / Algorand / Kaspa / Fuel / Nervos / NEAR / QRL（仅 XMSS 部署） / Monad（仅异步执行过滤器） / EigenLayer（仅 restake 过滤器） / Babylon（仅 BTC UTXO 仍在比特币） / Starknet（仅 SNOS 程序哈希 + 两层 accepted 过滤器） **很少同时具备**的思想？
 
 答不出：降级。有名不是理由。
 

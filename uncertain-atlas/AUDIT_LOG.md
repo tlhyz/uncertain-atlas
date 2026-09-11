@@ -486,3 +486,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A153 | 记录 | 仪表盘有 MEV 金额与中继占比 | 不抄；enshrined PBS 提案族不当已激活 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-11 23:58 UTC · SNOS 程序哈希 ≠ 物理定律；L2 accepted ≠ L1
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A154 | 中 | 额外表 Starknet/zkSync 只有口号 | `protocols/starknet/` 过滤器：SNOS + Core `programHash` |
+| A155 | 中 | 「ZK 所以 L2 出块 = L1 最终」 | 钉 `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`；不变量 28；语料 C30 |
+| A156 | 中 | 验证明会被写成可提款 / 供给守恒 | 对照不变量 13、DA 状态差、桥条件；反模式 l2-accepted-sold-as-l1 |
+| A157 | 记录 | 文档有吞吐口号、现行 hash、0.14 mempool 参数 | 不抄；zkSync 无独立对象仍不写页 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

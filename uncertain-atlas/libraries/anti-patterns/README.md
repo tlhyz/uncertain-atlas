@@ -32,3 +32,4 @@
 - [skip-sold-as-full-verify](skip-sold-as-full-verify.md)
 - [two-votes-sold-as-slash](two-votes-sold-as-slash.md)
 - [builder-sold-as-consensus](builder-sold-as-consensus.md)
+- [l2-accepted-sold-as-l1](l2-accepted-sold-as-l1.md)

@@ -334,6 +334,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M7.3 Rollup 作为执行租户 · 重要
 - 乐观 vs ZK（先架构，后数学）
+- 覆盖：课文 L7.4；乐观品类 `protocols/optimistic-rollup/`；有效性租户仅过滤器 `protocols/starknet/`（点名 SNOS 程序哈希 + `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`；无 19 节）
 
 ### M7.4 Polkadot · 重要
 - Relay / Parachain、collator / validator
@@ -434,11 +435,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–27）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–28）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C29；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C30；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
@@ -459,7 +460,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | Kaspa | 区块 DAG（`protocols/kaspa` + L3.8） | L3 | 进阶 |
 | Fuel | UTXO + 声明调度（思想级档案） | L2 + L6 | 进阶 |
 | Monad / Sei | Monad：共识先定序、根延迟 `D` 块（`protocols/monad` 仅过滤器）。Sei 仍待独特思想，不写页 | L5 + L6 | 进阶 |
-| Starknet / zkSync | ZK 执行层的不同证明系统 | L7 + L8 | 研究级 |
+| Starknet / zkSync | 有效性租户：点名程序哈希 + 两层 accepted（`protocols/starknet` 仅过滤器）。zkSync 仍无独立对象，不写页 | L7 + L8 | 研究级 |
 | Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写） | L7 | 重要 |
 | EigenLayer / Babylon | 再质押：`protocols/eigenlayer` 仅过滤器（AVS 罚没不必客观可归属）。BTC UTXO 仍留在 Bitcoin：`protocols/babylon` 仅过滤器。都无 19 节 | L7 共享安全对照 | 进阶 |
 | Filecoin / Arweave | 存储证明、永久数据 | 仅当「不确定」要做存储 | 按需 |
