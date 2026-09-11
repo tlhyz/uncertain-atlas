@@ -363,6 +363,24 @@ def test_first_sell_matches_entry_price():
     assert first.realized_pnl == pytest.approx(first.qty * 0.5, rel=0.2, abs=0.05)
 
 
+def test_etf_sweep_combo_count_and_rank():
+    from qtb.optimize.etf_sweep import generate_combos, rank_combos
+
+    combos = generate_combos()
+    assert len(combos) == 3 * 4 * 2 * 3 * 2
+    assert {c["move"] for c in combos} == {"none", "up", "both"}
+    rows = []
+    for i, c in enumerate(combos[:4]):
+        for sym, eq in (("A", 2100 + i), ("B", 1900 + i), ("C", 2000), ("D", 2050)):
+            rows.append({**c, "symbol": sym, "window": "full", "equity": eq, "net": eq - 2000,
+                         "grid_profit": 10, "mtm": 0, "max_dd_pct": 0.1})
+            rows.append({**c, "symbol": sym, "window": "late", "equity": eq - 50, "net": eq - 2050,
+                         "grid_profit": 5, "mtm": 0, "max_dd_pct": 0.2})
+    ranked = rank_combos(pd.DataFrame(rows))
+    assert len(ranked) == 4
+    assert ranked.iloc[0]["score"] >= ranked.iloc[-1]["score"]
+
+
 def test_bottom_anchor_sells_only_does_not_buy_dips():
     """贴着下限开仓：资金打成底仓，只挂卖，下跌不再接飞刀。"""
     cfg = _cfg()

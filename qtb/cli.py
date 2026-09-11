@@ -89,6 +89,20 @@ def build_parser() -> argparse.ArgumentParser:
         help="SOXL3L/SOXL3S/SNXX3L/SNXX3S (3x long + short tokens)",
     )
     fetf.add_argument("--cache-dir", default="", help="Override cache/spot_deals")
+
+    sweep = sub.add_parser(
+        "sweep-etf",
+        help="Sweep Gate spot-grid hang params on official SOXL/SNXX 3x deals",
+    )
+    sweep.add_argument(
+        "--underlyings",
+        default="SOXL3L_USDT,SOXL3S_USDT,SNXX3L_USDT,SNXX3S_USDT",
+        help="raw pairs or soxl,snxx",
+    )
+    sweep.add_argument("--from", dest="deals_from", default="2026-06")
+    sweep.add_argument("--to", dest="deals_to", default="2026-08")
+    sweep.add_argument("--workers", type=int, default=4)
+    sweep.add_argument("--output-dir", default="outputs")
     return p
 
 
@@ -259,6 +273,35 @@ def cmd_live(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_sweep_etf(args: argparse.Namespace) -> int:
+    from qtb.data.gatedata import resolve_etf_markets
+    from qtb.optimize.etf_sweep import run_etf_sweep
+
+    markets = resolve_etf_markets(args.underlyings)
+    frame, ranked, written = run_etf_sweep(
+        symbols=markets,
+        deals_from=args.deals_from,
+        deals_to=args.deals_to,
+        workers=int(args.workers),
+        out_dir=args.output_dir,
+    )
+    best = ranked.iloc[0].to_dict() if len(ranked) else {}
+    print(
+        json.dumps(
+            {
+                "n_rows": int(len(frame)),
+                "n_combos": int(len(ranked)),
+                "best": best,
+                "artifacts": written,
+            },
+            indent=2,
+            ensure_ascii=False,
+            default=str,
+        )
+    )
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
@@ -271,6 +314,7 @@ def main(argv: list[str] | None = None) -> int:
         "screen": cmd_screen,
         "batch-screen": cmd_screen,
         "fetch-etf": cmd_fetch_etf,
+        "sweep-etf": cmd_sweep_etf,
     }
     return handlers[args.cmd](args)
 
