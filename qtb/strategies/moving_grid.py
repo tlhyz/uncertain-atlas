@@ -5,7 +5,7 @@ sells one grid above each filled buy. When last price leaves the band by one
 grid, the whole window shifts and orders are re-hung — same as the native
 spot-grid robot, not the futures classic_grid that halts on a range break.
 
-Designed for Gate ETF spot pairs (SOXLG / ETH3L / …), not USDT-M perps.
+Designed for Gate ETF spot pairs (SOXL3L / SOXL3S / SNXX3L / SNXX3S), not USDT-M perps.
 """
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ from typing import Any, Literal
 import numpy as np
 import pandas as pd
 
-from qtb.data.gatedata import DEFAULT_ETF_LONGS, ETF_FAMILIES, resolve_etf_markets
+from qtb.data.gatedata import DEFAULT_ETF_3X, DEFAULT_ETF_LONGS, ETF_FAMILIES, resolve_etf_markets
 from qtb.engine.types import Book, OrderIntent
 
 from .base import Strategy
@@ -23,6 +23,7 @@ from .base import Strategy
 SpacingMode = Literal["geometric", "arithmetic"]
 
 __all__ = [
+    "DEFAULT_ETF_3X",
     "DEFAULT_ETF_LONGS",
     "ETF_FAMILIES",
     "MovingGridStrategy",

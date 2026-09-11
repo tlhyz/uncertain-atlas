@@ -78,15 +78,15 @@ def build_parser() -> argparse.ArgumentParser:
     )
     fetf.add_argument(
         "--underlyings",
-        default="soxl,snxx,eth,sol",
-        help="soxl,snxx,eth,sol or raw pairs like ETH3L_USDT",
+        default="SOXL3L_USDT,SOXL3S_USDT,SNXX3L_USDT,SNXX3S_USDT",
+        help="soxl,snxx,eth,sol or raw pairs like SOXL3L_USDT",
     )
     fetf.add_argument("--from", dest="deals_from", default="", help="YYYY-MM (default: last 3 complete months)")
     fetf.add_argument("--to", dest="deals_to", default="", help="YYYY-MM")
     fetf.add_argument(
         "--longs-only",
         action="store_true",
-        help="SOXLG/SNXXG/ETH3L/SOL3L (tokenized SOXL/SNXX + ETH/SOL 3x long)",
+        help="SOXL3L/SOXL3S/SNXX3L/SNXX3S (3x long + short tokens)",
     )
     fetf.add_argument("--cache-dir", default="", help="Override cache/spot_deals")
     return p
@@ -203,14 +203,14 @@ def cmd_screen(args: argparse.Namespace) -> int:
 
 def cmd_fetch_etf(args: argparse.Namespace) -> int:
     from qtb.data.gatedata import (
-        DEFAULT_ETF_LONGS,
+        DEFAULT_ETF_3X,
         default_deals_window,
         download_spot_deals,
         resolve_etf_markets,
     )
 
     if args.longs_only:
-        markets = list(DEFAULT_ETF_LONGS)
+        markets = list(DEFAULT_ETF_3X)
     else:
         markets = resolve_etf_markets(args.underlyings)
     start = args.deals_from or ""

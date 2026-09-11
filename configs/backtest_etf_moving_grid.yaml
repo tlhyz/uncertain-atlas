@@ -1,5 +1,5 @@
 mode: backtest
-symbol: ETH3L_USDT
+symbol: SOXL3L_USDT
 interval: tick
 days: 0
 market: spot
@@ -11,7 +11,7 @@ deals_from: "2026-06"
 deals_to: "2026-08"
 cache_only: false
 output_dir: outputs
-run_name: etf_moving_grid_ETH3L
+run_name: etf_moving_grid_SOXL3L
 
 costs:
   market: spot

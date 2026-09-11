@@ -25,21 +25,22 @@ import pandas as pd
 
 from .candles import CACHE_DIR
 
-# Gate listings for the four underlyings.
-# SOXLG / SNXXG = tokenized SOXL / SNXX. *3L/*5L = leveraged tokens (can go to ~0).
+# Gate listings. *3L/*3S = 3x long/short tokens (can trend to ~0).
+# SOXLG / SNXXG = tokenized spot SOXL / SNXX (kept in the family, not the default batch).
 ETF_FAMILIES: dict[str, tuple[str, ...]] = {
-    "soxl": ("SOXLG_USDT", "SOXL3L_USDT", "SOXL3S_USDT"),
-    "snxx": ("SNXXG_USDT", "SNXX3L_USDT", "SNXX3S_USDT"),
+    "soxl": ("SOXL3L_USDT", "SOXL3S_USDT", "SOXLG_USDT"),
+    "snxx": ("SNXX3L_USDT", "SNXX3S_USDT", "SNXXG_USDT"),
     "eth": ("ETH3L_USDT", "ETH3S_USDT", "ETH5L_USDT", "ETH5S_USDT"),
     "sol": ("SOL3L_USDT", "SOL3S_USDT", "SOL5L_USDT", "SOL5S_USDT"),
 }
 
-DEFAULT_ETF_LONGS: tuple[str, ...] = (
-    "SOXLG_USDT",
-    "SNXXG_USDT",
-    "ETH3L_USDT",
-    "SOL3L_USDT",
+DEFAULT_ETF_3X: tuple[str, ...] = (
+    "SOXL3L_USDT",
+    "SOXL3S_USDT",
+    "SNXX3L_USDT",
+    "SNXX3S_USDT",
 )
+DEFAULT_ETF_LONGS = DEFAULT_ETF_3X
 
 BASE_URL = "https://download.gatedata.org"
 DEALS_CACHE = CACHE_DIR / "spot_deals"

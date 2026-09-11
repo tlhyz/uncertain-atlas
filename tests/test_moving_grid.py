@@ -18,7 +18,7 @@ from qtb.data.gatedata import (
 from qtb.engine.backtest import run_backtest
 from qtb.engine.spot_grid import run_spot_moving_grid
 from qtb.strategies.moving_grid import (
-    DEFAULT_ETF_LONGS,
+    DEFAULT_ETF_3X,
     bar_touch_path,
     build_moving_levels,
     remap_lots_shift_down,
@@ -65,16 +65,17 @@ def _tape(prices, start=1_720_000_000.0):
 
 def test_resolve_etf_markets_families_and_raw_pairs():
     soxl_snxx = resolve_etf_markets("soxl,snxx")
-    assert soxl_snxx[0] == "SOXLG_USDT"
-    assert "SOXL3L_USDT" in soxl_snxx
-    assert "SNXXG_USDT" in soxl_snxx
+    assert soxl_snxx[0] == "SOXL3L_USDT"
+    assert soxl_snxx[1] == "SOXL3S_USDT"
+    assert "SNXX3L_USDT" in soxl_snxx
+    assert "SNXX3S_USDT" in soxl_snxx
     assert "ETH3L_USDT" in resolve_etf_markets("eth")
-    assert resolve_etf_markets("ETH3L_USDT") == ["ETH3L_USDT"]
-    assert DEFAULT_ETF_LONGS == (
-        "SOXLG_USDT",
-        "SNXXG_USDT",
-        "ETH3L_USDT",
-        "SOL3L_USDT",
+    assert resolve_etf_markets("SOXL3L_USDT") == ["SOXL3L_USDT"]
+    assert DEFAULT_ETF_3X == (
+        "SOXL3L_USDT",
+        "SOXL3S_USDT",
+        "SNXX3L_USDT",
+        "SNXX3S_USDT",
     )
 
 

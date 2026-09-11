@@ -89,6 +89,7 @@ python -m qtb.cli batch-screen --batch-mode optimize -c configs/optimize_niulai_
 
 # ETF 现货移动网格（官方逐笔 deals，不是 K 线影子）
 python -m qtb.cli fetch-etf --longs-only --from 2026-06 --to 2026-08
+# default pairs: SOXL3L / SOXL3S / SNXX3L / SNXX3S
 python -m qtb.cli backtest -c configs/backtest_etf_moving_grid.yaml
 python -m qtb.cli batch -c configs/batch_etf_moving_grid.yaml
 # 断网演示：正弦合成带，仅测试用
