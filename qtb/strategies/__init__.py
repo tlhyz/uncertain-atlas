@@ -8,6 +8,7 @@ from .base import Strategy
 from .classic_grid import ClassicGridStrategy
 from .dual_grid import DualGridStrategy
 from .martingale import DualMartingaleStrategy, MartingaleStrategy
+from .moving_grid import MovingGridStrategy
 from .trend_grid import TrendGridStrategy
 
 STRATEGIES: dict[str, type[Strategy]] = {
@@ -16,10 +17,13 @@ STRATEGIES: dict[str, type[Strategy]] = {
     "dual_grid": DualGridStrategy,
     "martingale": MartingaleStrategy,
     "dual_martingale": DualMartingaleStrategy,
+    "moving_grid": MovingGridStrategy,
     # aliases
     "grid": ClassicGridStrategy,
     "aggressive_dual": DualMartingaleStrategy,
     "aggressive-dual": DualMartingaleStrategy,
+    "spot_moving_grid": MovingGridStrategy,
+    "etf_grid": MovingGridStrategy,
 }
 
 
@@ -38,6 +42,7 @@ __all__ = [
     "DualGridStrategy",
     "MartingaleStrategy",
     "DualMartingaleStrategy",
+    "MovingGridStrategy",
     "STRATEGIES",
     "build_strategy",
 ]

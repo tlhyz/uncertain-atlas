@@ -156,6 +156,14 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
         f"- 最大浮亏：{m.get('max_float_loss')}  | 强平风险分：{m.get('liq_risk')}  | 是否强平：{liq}",
         f"- 费用占比：{m.get('fee_ratio')}  | 总手续费：{m.get('total_fees')}  | 资金费：{m.get('funding_pnl')}",
         f"- 投资额止损：{sl_txt}（按 wallet/投资额回撤，不是价格%）",
+    ]
+    if m.get("feed") == "deals" or m.get("grid_shifts") is not None:
+        lines.append(
+            f"- 行情源：逐笔 deals（{m.get('n_prints', '?')} 笔打印）  | 移格：{m.get('grid_shifts')}  | "
+            f"剩余底仓：{m.get('leftover_base')}"
+        )
+    lines.extend(
+        [
         "",
         "## 稳健性提示",
         "- 网格/马丁在单边行情会深套或反复止损；回测盈利 ≠ 未来盈利。",

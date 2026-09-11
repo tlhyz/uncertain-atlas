@@ -9,6 +9,47 @@ import pandas as pd
 
 from .candles import fetch_candles_cached, fetch_ohlcv, load_csv, normalize_contract
 from .funding import align_funding_to_bars, fetch_funding_cached
+from .gatedata import default_deals_window, ensure_spot_deals, generate_sample_deals, load_deals_csv
+
+
+SPOT_MOVING_NAMES = {"moving_grid", "spot_moving_grid", "etf_grid"}
+SAMPLE_DEALS = Path("data_sample/etf_deals_sample.csv")
+
+
+def wants_deals_feed(cfg: dict[str, Any]) -> bool:
+    name = str((cfg.get("strategy") or {}).get("name") or "").strip().lower()
+    feed = str(cfg.get("feed") or "").strip().lower()
+    return feed == "deals" or name in SPOT_MOVING_NAMES
+
+
+def load_deals_market(cfg: dict[str, Any]) -> pd.DataFrame:
+    """Load the official (or sample) spot deals tape. Never falls back to OHLCV."""
+    symbol = normalize_contract(str(cfg.get("symbol") or "ETH3L_USDT"))
+    prefer_sample = bool(cfg.get("prefer_sample"))
+    sample_path = Path(cfg.get("sample_path") or SAMPLE_DEALS)
+    if prefer_sample or str(cfg.get("prefer") or "") == "sample":
+        if sample_path.exists():
+            df = load_deals_csv(sample_path)
+        else:
+            df = generate_sample_deals(sample_path)
+        df.attrs["symbol"] = symbol
+        df.attrs["market"] = "spot"
+        df.attrs["feed"] = "deals"
+        df.attrs["source"] = f"sample:{sample_path}"
+        return df
+
+    start = str(cfg.get("deals_from") or "").strip()
+    end = str(cfg.get("deals_to") or "").strip()
+    if not start or not end:
+        start, end = default_deals_window()
+    df = ensure_spot_deals(
+        symbol,
+        start,
+        end,
+        cache_only=bool(cfg.get("cache_only")),
+    )
+    df.attrs["symbol"] = symbol
+    return df
 
 
 def load_market(cfg: dict[str, Any]) -> pd.DataFrame:

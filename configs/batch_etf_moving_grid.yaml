@@ -1,0 +1,48 @@
+mode: backtest
+symbol: ETH3L_USDT
+interval: tick
+market: spot
+feed: deals
+prefer_sample: false
+deals_from: "2026-06"
+deals_to: "2026-08"
+output_dir: outputs
+
+costs:
+  market: spot
+  vip_tier: 7
+  rebate_rate: 0.70
+  slippage_bps: 0.0
+  use_maker: true
+  quanto: 0.00000001
+  min_order_size: 1
+  min_notional: 1.0
+  apply_funding: false
+
+strategy:
+  name: moving_grid
+  quote_capital: 2000.0
+  grid_count: 24
+  spacing_pct: 0.004
+  spacing_mode: geometric
+  order_size_quote: 80.0
+  shift_on_exit: true
+  fill_policy: last_touch
+
+risk:
+  investment_sl_pct: 0.50
+  max_drawdown_stop_pct: 0.40
+  force_exit_before_liq_buffer_pct: null
+  stop_if_price_breaks_range: false
+
+batch:
+  symbols:
+    - SOXL3L_USDT
+    - SNXX3L_USDT
+    - ETH3L_USDT
+    - SOL3L_USDT
+  intervals:
+    - tick
+
+live:
+  dry_run: true

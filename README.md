@@ -14,11 +14,11 @@
 
 ```
 qtb/
-  data/        K 线磁盘缓存 + 增量拉取、资金费、合约 quanto
+  data/        K 线磁盘缓存 + 官方逐笔 deals（gatedata.org）+ 资金费
   costs/       VIP 费率 / 返佣 / 滑点 / 资金费 / 最小下单
-  strategies/  classic_grid / trend_grid / dual_grid / martingale / dual_martingale
+  strategies/  classic_grid / trend_grid / dual_grid / martingale / dual_martingale / moving_grid
   risk/        止盈止损、回撤停机、接近强平强平前离场、破网格停机
-  engine/      统一逐 K 回测引擎
+  engine/      逐 K 期货引擎 + 逐笔现货移动网格
   optimize/    复合打分 + 训练/测试、滚动、多行情、Monte Carlo、参数稳定
   report/      成交 CSV、热力图、权益/回撤/持仓图、中文摘要
   live/        实盘桩：默认 DRY_RUN；无私钥、无下单
@@ -86,6 +86,13 @@ python -m qtb.cli screen --cache-only --out outputs/screen_offline
 python -m qtb.cli screen --batch-backtest --picks 3
 python -m qtb.cli batch-screen --picks 3 --batch-mode backtest
 python -m qtb.cli batch-screen --batch-mode optimize -c configs/optimize_niulai_aggressive_sl50.yaml
+
+# ETF 现货移动网格（官方逐笔 deals，不是 K 线影子）
+python -m qtb.cli fetch-etf --longs-only --from 2026-06 --to 2026-08
+python -m qtb.cli backtest -c configs/backtest_etf_moving_grid.yaml
+python -m qtb.cli batch -c configs/batch_etf_moving_grid.yaml
+# 断网演示：正弦合成带，仅测试用
+python -m qtb.cli backtest -c configs/backtest_etf_moving_grid.yaml --prefer-sample --run-name etf_grid_sample
 ```
 
 ## 选币逻辑（给激进双开用）
@@ -172,6 +179,7 @@ python -m qtb.cli optimize -c configs/optimize_niulai_aggressive_sl70.yaml \
 | `dual_grid` | 多空对称网格（可加 `martingale_addon`） |
 | `martingale` | 单边马丁 |
 | `dual_martingale` | **激进双开**（默认） |
+| `moving_grid` | **现货移动网格**（窄 20–30 格，破一格整窗移格；必须用逐笔 deals） |
 
 止盈：单笔、组合、分批/`scaled_tp`、移动止盈、持仓 bar 数。  
 止损：单笔价格%、**投资额 50%/70%**、组合权益、最大回撤停机、浮亏达到阈值停止加仓、估计强平价前强平、价格跌破网格区间停机。
@@ -189,6 +197,8 @@ Gate 公开接口有速率限制。本框架按「省配额」设计：
 3. **`--cache-only` / `prefer_sample: true`。** 断网或演示用本地 CSV。
 4. **HTTP 429** 指数退避，尊重 `Retry-After`。
 5. **不要用 REST trades 拼多日历史。** 直播用 WebSocket：
+
+现货 ETF 移动网格例外：历史逐笔走官方月包 `download.gatedata.org/spot/deals/{YYYYMM}/{PAIR}-{YYYYMM}.csv.gz`（`qtb.cli fetch-etf`）。限价成交只认打印是否穿过挂单价，不用 K 线高低点编路径。
 
 ```text
 wss://fx-ws.gateio.ws/v4/ws/usdt

@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from qtb.config import dump_yaml, load_config
-from qtb.data.load import load_market
+from qtb.data.load import load_deals_market, load_market, wants_deals_feed
 from qtb.engine.backtest import BacktestResult, run_backtest
 from qtb.optimize.search import run_optimize
 from qtb.report.artifacts import write_report
@@ -26,7 +26,7 @@ def resolve_output_dir(cfg: dict[str, Any], suffix: str = "backtest") -> Path:
 
 
 def run_backtest_job(cfg: dict[str, Any]) -> tuple[BacktestResult, dict[str, str]]:
-    df = load_market(cfg)
+    df = load_deals_market(cfg) if wants_deals_feed(cfg) else load_market(cfg)
     result = run_backtest(cfg, df)
     out = resolve_output_dir(cfg, "backtest")
     written = write_report(result, out, config=cfg)
@@ -38,7 +38,7 @@ def run_backtest_job(cfg: dict[str, Any]) -> tuple[BacktestResult, dict[str, str
 
 
 def run_optimize_job(cfg: dict[str, Any]) -> tuple[BacktestResult, dict[str, Any], dict[str, str]]:
-    df = load_market(cfg)
+    df = load_deals_market(cfg) if wants_deals_feed(cfg) else load_market(cfg)
     opt = run_optimize(cfg, df)
     best_params = ((opt.get("best") or {}).get("params")) or {}
     from copy import deepcopy

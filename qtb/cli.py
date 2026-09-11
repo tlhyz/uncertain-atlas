@@ -32,7 +32,11 @@ def build_parser() -> argparse.ArgumentParser:
         sp.add_argument("--prefer-sample", action="store_true")
         sp.add_argument("--output-dir", default="")
         sp.add_argument("--run-name", default="")
-        sp.add_argument("--strategy", default="", help="classic_grid|trend_grid|dual_grid|martingale|dual_martingale")
+        sp.add_argument(
+            "--strategy",
+            default="",
+            help="classic_grid|trend_grid|dual_grid|martingale|dual_martingale|moving_grid",
+        )
         sp.add_argument("--stop-loss", type=float, default=-1.0, help="Investment SL 0.5 or 0.7")
 
     bt = sub.add_parser("backtest", help="Run a single backtest and write outputs/")
@@ -67,6 +71,20 @@ def build_parser() -> argparse.ArgumentParser:
         help="Screen then batch-backtest top K picks (aggressive dual SL50)",
     )
     add_screen_flags(batch_screen, batch_default=True)
+
+    fetf = sub.add_parser(
+        "fetch-etf",
+        help="Download official Gate spot deals (tick tape) for ETF underlyings",
+    )
+    fetf.add_argument(
+        "--underlyings",
+        default="soxl,snxx,eth,sol",
+        help="soxl,snxx,eth,sol or raw pairs like ETH3L_USDT",
+    )
+    fetf.add_argument("--from", dest="deals_from", default="", help="YYYY-MM (default: last 3 complete months)")
+    fetf.add_argument("--to", dest="deals_to", default="", help="YYYY-MM")
+    fetf.add_argument("--longs-only", action="store_true", help="Only *3L longs (SOXL3L/SNXX3L/ETH3L/SOL3L)")
+    fetf.add_argument("--cache-dir", default="", help="Override cache/spot_deals")
     return p
 
 
@@ -94,6 +112,10 @@ def _overrides(args: argparse.Namespace) -> dict[str, Any]:
         o.setdefault("risk", {})["investment_sl_pct"] = float(args.stop_loss)
     if getattr(args, "grid", ""):
         o.setdefault("optimize", {})["grid"] = args.grid
+    if getattr(args, "deals_from", ""):
+        o["deals_from"] = args.deals_from
+    if getattr(args, "deals_to", ""):
+        o["deals_to"] = args.deals_to
     return o
 
 
@@ -175,6 +197,39 @@ def cmd_screen(args: argparse.Namespace) -> int:
     return execute_screen(args)
 
 
+def cmd_fetch_etf(args: argparse.Namespace) -> int:
+    from qtb.data.gatedata import default_deals_window, download_spot_deals
+    from qtb.strategies.moving_grid import DEFAULT_ETF_LONGS, resolve_etf_markets
+
+    if args.longs_only:
+        markets = list(DEFAULT_ETF_LONGS)
+    else:
+        markets = resolve_etf_markets(args.underlyings)
+    start = args.deals_from or ""
+    end = args.deals_to or ""
+    if not start or not end:
+        d0, d1 = default_deals_window()
+        start = start or d0
+        end = end or d1
+    root = Path(args.cache_dir) if args.cache_dir else None
+    recs = download_spot_deals(markets, start, end, root=root)
+    print(
+        json.dumps(
+            {
+                "markets": markets,
+                "from": start,
+                "to": end,
+                "ok": sum(1 for r in recs if r["status"] in {"ok", "skip"}),
+                "missing": sum(1 for r in recs if r["status"] == "missing"),
+                "records": recs,
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+    )
+    return 0
+
+
 def cmd_live(args: argparse.Namespace) -> int:
     cfg = _cfg(args)
     broker = LiveBroker(config=cfg)
@@ -207,6 +262,7 @@ def main(argv: list[str] | None = None) -> int:
         "live": cmd_live,
         "screen": cmd_screen,
         "batch-screen": cmd_screen,
+        "fetch-etf": cmd_fetch_etf,
     }
     return handlers[args.cmd](args)
 

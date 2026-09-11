@@ -31,6 +31,9 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "cache_only": False,
     "prefer_sample": False,
     "sample_path": "data_sample/BTCUSDT_1h_sample.csv",
+    "feed": "",
+    "deals_from": "",
+    "deals_to": "",
     "output_dir": "outputs",
     "run_name": "",
     "costs": {
