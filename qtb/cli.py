@@ -103,6 +103,11 @@ def build_parser() -> argparse.ArgumentParser:
     sweep.add_argument("--to", dest="deals_to", default="2026-08")
     sweep.add_argument("--workers", type=int, default=4)
     sweep.add_argument("--output-dir", default="outputs")
+    sweep.add_argument(
+        "--v-shape",
+        action="store_true",
+        help="Sweep drop-then-rise official-tape segments instead of full/late",
+    )
     return p
 
 
@@ -277,6 +282,29 @@ def cmd_sweep_etf(args: argparse.Namespace) -> int:
     from qtb.data.gatedata import resolve_etf_markets
     from qtb.optimize.etf_sweep import run_etf_sweep
 
+    if getattr(args, "v_shape", False):
+        from qtb.optimize.etf_sweep import run_v_shape_sweep
+
+        frame, high_rank, trough_rank, written = run_v_shape_sweep(
+            deals_from=args.deals_from,
+            deals_to=args.deals_to,
+            workers=int(args.workers),
+            out_dir=args.output_dir,
+        )
+        print(
+            json.dumps(
+                {
+                    "n_rows": int(len(frame)),
+                    "best_from_high": high_rank.iloc[0].to_dict() if len(high_rank) else {},
+                    "best_from_trough": trough_rank.iloc[0].to_dict() if len(trough_rank) else {},
+                    "artifacts": written,
+                },
+                indent=2,
+                ensure_ascii=False,
+                default=str,
+            )
+        )
+        return 0
     markets = resolve_etf_markets(args.underlyings)
     frame, ranked, written = run_etf_sweep(
         symbols=markets,

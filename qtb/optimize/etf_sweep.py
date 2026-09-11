@@ -43,8 +43,52 @@ def generate_combos() -> list[dict[str, Any]]:
     return rows
 
 
-def _slice_tape(tape: pd.DataFrame, window: str) -> pd.DataFrame:
-    if window == "full" or tape.empty:
+# Official-tape V shapes: drop then rally. `from_high` opens before the dump;
+# `from_trough` opens after the dump, on the way back up.
+V_WINDOWS: list[dict[str, str]] = [
+    # SOXL3L 0.81 → 0.34 → 0.88
+    {"id": "SOXL3L_jun_high", "scenario": "from_high", "symbol": "SOXL3L_USDT",
+     "start": "2026-06-26", "end": "2026-07-01"},
+    {"id": "SOXL3L_jun_trough", "scenario": "from_trough", "symbol": "SOXL3L_USDT",
+     "start": "2026-06-28", "end": "2026-07-01"},
+    # SOXL3S 1.12 → 0.71 → 1.84
+    {"id": "SOXL3S_jun_high", "scenario": "from_high", "symbol": "SOXL3S_USDT",
+     "start": "2026-06-30", "end": "2026-07-03"},
+    {"id": "SOXL3S_jun_trough", "scenario": "from_trough", "symbol": "SOXL3S_USDT",
+     "start": "2026-07-01", "end": "2026-07-03"},
+    # SNXX3L first day 1.00 → 0.46 → 2.35
+    {"id": "SNXX3L_open_high", "scenario": "from_high", "symbol": "SNXX3L_USDT",
+     "start": "2026-07-29", "end": "2026-07-31"},
+    {"id": "SNXX3L_open_trough", "scenario": "from_trough", "symbol": "SNXX3L_USDT",
+     "start": "2026-07-30", "end": "2026-07-31"},
+    # SNXX3L 2.17 → 0.47 → 4.05
+    {"id": "SNXX3L_aug_high", "scenario": "from_high", "symbol": "SNXX3L_USDT",
+     "start": "2026-08-05", "end": "2026-08-18"},
+    {"id": "SNXX3L_aug_trough", "scenario": "from_trough", "symbol": "SNXX3L_USDT",
+     "start": "2026-08-08", "end": "2026-08-18"},
+    # SOXL3S 0.57 → 0.43 → 0.96
+    {"id": "SOXL3S_aug_high", "scenario": "from_high", "symbol": "SOXL3S_USDT",
+     "start": "2026-08-17", "end": "2026-08-25"},
+    {"id": "SOXL3S_aug_trough", "scenario": "from_trough", "symbol": "SOXL3S_USDT",
+     "start": "2026-08-18", "end": "2026-08-25"},
+]
+
+
+def _slice_tape(
+    tape: pd.DataFrame,
+    window: str,
+    start: str | None = None,
+    end: str | None = None,
+) -> pd.DataFrame:
+    if start or end:
+        ts = pd.to_datetime(tape["timestamp"], utc=True)
+        mask = pd.Series(True, index=tape.index)
+        if start:
+            mask &= ts >= pd.Timestamp(start, tz="UTC")
+        if end:
+            mask &= ts < pd.Timestamp(end, tz="UTC")
+        out = tape.loc[mask].copy()
+    elif window == "full" or tape.empty:
         out = tape
     elif window == "late":
         ts = pd.to_datetime(tape["timestamp"], utc=True)
@@ -53,14 +97,19 @@ def _slice_tape(tape: pd.DataFrame, window: str) -> pd.DataFrame:
     else:
         raise ValueError(f"unknown window {window}")
     if out.empty:
-        raise ValueError(f"empty tape for window={window}")
+        raise ValueError(f"empty tape for window={window} start={start} end={end}")
     out.attrs.update(tape.attrs)
     return out.reset_index(drop=True)
 
 
 def _run_job(job: dict[str, Any]) -> dict[str, Any]:
     tape = load_cached_deals(job["symbol"], start=job["deals_from"], end=job["deals_to"])
-    cut = _slice_tape(tape, job["window"])
+    cut = _slice_tape(
+        tape,
+        job["window"],
+        start=job.get("start"),
+        end=job.get("end"),
+    )
     cfg = load_config("configs/backtest_etf_moving_grid.yaml")
     cfg["symbol"] = job["symbol"]
     strat = cfg.setdefault("strategy", {})
@@ -108,6 +157,8 @@ def _run_job(job: dict[str, Any]) -> dict[str, Any]:
         "end_quote": m.get("end_quote"),
         "inv": m.get("quote_in_inventory"),
         "gap": m.get("pnl_identity_gap"),
+        "scenario": job.get("scenario") or job["window"],
+        "seg_id": job.get("seg_id") or job["window"],
     }
 
 
@@ -261,6 +312,132 @@ def write_sweep_report(frame: pd.DataFrame, ranked: pd.DataFrame, out_dir: Path)
     }
 
 
+def _run_jobs(jobs: list[dict[str, Any]], workers: int) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    with ProcessPoolExecutor(max_workers=max(int(workers), 1)) as pool:
+        futs = [pool.submit(_run_job, job) for job in jobs]
+        for i, fut in enumerate(as_completed(futs), start=1):
+            rows.append(fut.result())
+            if i % 80 == 0 or i == len(futs):
+                print(f"[sweep] {i}/{len(futs)}", flush=True)
+    return pd.DataFrame(rows)
+
+
+def rank_v_combos(frame: pd.DataFrame, scenario: str) -> pd.DataFrame:
+    keys = ["range_down_pct", "range_up_pct", "grid_count", "move", "sells_only"]
+    sub = frame[frame["scenario"] == scenario].copy()
+    out = sub.groupby(keys, as_index=False).agg(
+        median_eq=("equity", "median"),
+        mean_eq=("equity", "mean"),
+        min_eq=("equity", "min"),
+        max_eq=("equity", "max"),
+        median_net=("net", "median"),
+        median_profit=("grid_profit", "median"),
+        median_mtm=("mtm", "median"),
+        n_green=("equity", lambda s: int((s >= 2000.0).sum())),
+        n_seg=("seg_id", "nunique"),
+    )
+    out["score"] = out["min_eq"] * 0.6 + out["median_eq"] * 0.4
+    return out.sort_values(["score", "min_eq", "median_eq"], ascending=False).reset_index(drop=True)
+
+
+def write_v_report(
+    frame: pd.DataFrame,
+    high_rank: pd.DataFrame,
+    trough_rank: pd.DataFrame,
+    out_dir: Path,
+) -> dict[str, str]:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = out_dir / "etf_vshape_sweep.csv"
+    frame.to_csv(csv_path, index=False)
+    high_rank.to_csv(out_dir / "etf_vshape_rank_from_high.csv", index=False)
+    trough_rank.to_csv(out_dir / "etf_vshape_rank_from_trough.csv", index=False)
+
+    def _top_lines(ranked: pd.DataFrame, title: str) -> list[str]:
+        lines = [
+            f"## {title}",
+            "",
+            "| 下 | 上 | 格 | 移动 | 挂法 | 最差段 | 中位 | 绿段数 | score |",
+            "|---:|---:|---:|---|---|---:|---:|---:|---:|",
+        ]
+        for _, r in ranked.head(8).iterrows():
+            sells = "只卖" if r["sells_only"] else "买卖都挂"
+            lines.append(
+                f"| {r['range_down_pct']:.0%} | {r['range_up_pct']:.0%} | {int(r['grid_count'])} | "
+                f"{r['move']} | {sells} | {r['min_eq']:.1f} | {r['median_eq']:.1f} | "
+                f"{int(r['n_green'])}/{int(r['n_seg'])} | {r['score']:.1f} |"
+            )
+        return lines
+
+    bh = high_rank.iloc[0]
+    bt = trough_rank.iloc[0]
+    lines = [
+        "# 先跌后涨区间：全量挂法扫描",
+        "",
+        "从官方逐笔里挑了 5 段 V 型（先跌后涨），每段两种开仓：",
+        "- `from_high`：下跌前开（对应「现在开、预估先跌后涨」）",
+        "- `from_trough`：跌完再开（对应「等低点再买」）",
+        "",
+        "144 挂法 × 10 段 = 1440 次回测。分数 = 0.6×最差段 + 0.4×中位。",
+        "",
+        f"- 下跌前开最优：下 {bh['range_down_pct']:.0%} / 上 {bh['range_up_pct']:.0%} / "
+        f"{int(bh['grid_count'])} 格 / {bh['move']} / {'只卖' if bh['sells_only'] else '买卖都挂'}；"
+        f"最差段 {bh['min_eq']:.1f}，中位 {bh['median_eq']:.1f}",
+        f"- 低点再开最优：下 {bt['range_down_pct']:.0%} / 上 {bt['range_up_pct']:.0%} / "
+        f"{int(bt['grid_count'])} 格 / {bt['move']} / {'只卖' if bt['sells_only'] else '买卖都挂'}；"
+        f"最差段 {bt['min_eq']:.1f}，中位 {bt['median_eq']:.1f}",
+        "",
+    ]
+    lines.extend(_top_lines(high_rank, "下跌前开仓 Top 8"))
+    lines.append("")
+    lines.extend(_top_lines(trough_rank, "低点再开仓 Top 8"))
+    lines.extend(
+        [
+            "",
+            "## 区间",
+            "",
+            "| id | 开仓 | 合约 | 起 | 止 |",
+            "|---|---|---|---|---|",
+        ]
+    )
+    for w in V_WINDOWS:
+        lines.append(
+            f"| {w['id']} | {w['scenario']} | {w['symbol']} | {w['start']} | {w['end']} |"
+        )
+    md_path = out_dir / "etf_vshape_sweep.md"
+    md_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return {"csv": str(csv_path), "md": str(md_path)}
+
+
+def run_v_shape_sweep(
+    deals_from: str = "2026-06",
+    deals_to: str = "2026-08",
+    workers: int = 4,
+    out_dir: str | Path = "outputs",
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, dict[str, str]]:
+    jobs = []
+    for combo in generate_combos():
+        for seg in V_WINDOWS:
+            jobs.append(
+                {
+                    "symbol": seg["symbol"],
+                    "window": seg["id"],
+                    "start": seg["start"],
+                    "end": seg["end"],
+                    "scenario": seg["scenario"],
+                    "seg_id": seg["id"],
+                    "deals_from": deals_from,
+                    "deals_to": deals_to,
+                    "combo": combo,
+                }
+            )
+    frame = _run_jobs(jobs, workers)
+    high_rank = rank_v_combos(frame, "from_high")
+    trough_rank = rank_v_combos(frame, "from_trough")
+    written = write_v_report(frame, high_rank, trough_rank, Path(out_dir))
+    return frame, high_rank, trough_rank, written
+
+
 def run_etf_sweep(
     symbols: list[str] | None = None,
     deals_from: str = "2026-06",
@@ -270,14 +447,7 @@ def run_etf_sweep(
 ) -> tuple[pd.DataFrame, pd.DataFrame, dict[str, str]]:
     symbols = list(symbols or SYMBOLS)
     jobs = _jobs(symbols, deals_from, deals_to)
-    rows: list[dict[str, Any]] = []
-    with ProcessPoolExecutor(max_workers=max(int(workers), 1)) as pool:
-        futs = [pool.submit(_run_job, job) for job in jobs]
-        for i, fut in enumerate(as_completed(futs), start=1):
-            rows.append(fut.result())
-            if i % 80 == 0 or i == len(futs):
-                print(f"[sweep] {i}/{len(futs)}", flush=True)
-    frame = pd.DataFrame(rows)
+    frame = _run_jobs(jobs, workers)
     ranked = rank_combos(frame)
     written = write_sweep_report(frame, ranked, Path(out_dir))
     return frame, ranked, written

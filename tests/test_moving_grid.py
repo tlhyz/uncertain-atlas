@@ -363,6 +363,18 @@ def test_first_sell_matches_entry_price():
     assert first.realized_pnl == pytest.approx(first.qty * 0.5, rel=0.2, abs=0.05)
 
 
+def test_v_windows_are_drop_then_rise_pairs():
+    from qtb.optimize.etf_sweep import V_WINDOWS
+
+    assert len(V_WINDOWS) == 10
+    highs = [w for w in V_WINDOWS if w["scenario"] == "from_high"]
+    lows = [w for w in V_WINDOWS if w["scenario"] == "from_trough"]
+    assert len(highs) == len(lows) == 5
+    for w in V_WINDOWS:
+        assert w["start"] < w["end"]
+        assert w["symbol"].endswith("_USDT")
+
+
 def test_etf_sweep_combo_count_and_rank():
     from qtb.optimize.etf_sweep import generate_combos, rank_combos
 
