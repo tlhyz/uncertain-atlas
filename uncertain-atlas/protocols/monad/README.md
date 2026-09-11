@@ -37,6 +37,7 @@
 - 执行揭晓：你的余额/回执在本地 `Apply` 之后才看见。
 
 把第一句绿勾写成「状态已经和全网一样」= 反模式 [`../../libraries/anti-patterns/order-sold-as-state.md`](../../libraries/anti-patterns/order-sold-as-state.md)。  
+「谁写顺序」是另一根钉子（Ethereum 域外 Builder API：签盲头 ≠ 本地选交易），见 [`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。不要和「顺序已最终 ≠ 状态已最终」糊成一词。  
 文档也写：节点可在块 `N` 尚未最终时**投机执行**提案，供 `eth_call` 使用。RPC 绿勾更不能当协议最终。
 
 ## 「不确定」四档（建议，本页即止）

@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-11（续 32）
+
+- 谁排序精读：ethereum/builder-specs。提议者可只签 `ExecutionPayloadHeader`，交易列表事后揭示。Builder API 不是 `process_block`。
+- 对照本地出块 / 协议内 PBS（合并时不存在）/ Monad「定序 ≠ 交差根」。
+- 不变量 27；语料 C29；反模式 builder-sold-as-consensus；L10.3 第 23 条。
+- 不抄 MEV 金额、中继占比；不把 enshrined-PBS 草案当已激活。
+
 ## 2026-09-12（续 31）
 
 - Casper 罚没精读：phase0 `is_slashable_attestation_data` 的 double / surround（容器顺序不对称）；同 slot 双头的 proposer slashing；信标状态执行 `slash_validator`。

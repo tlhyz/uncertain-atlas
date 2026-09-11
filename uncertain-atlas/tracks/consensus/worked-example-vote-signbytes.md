@@ -66,7 +66,8 @@ phase0 规范表（后续分叉文件会**再加**类型；引用时写文件名
 | `DOMAIN_SELECTION_PROOF` | `0x05000000` |
 | `DOMAIN_AGGREGATE_AND_PROOF` | `0x06000000` |
 
-Altair 另加（本表仍不是全集）：`DOMAIN_SYNC_COMMITTEE = 0x07000000`。同步委员会消息走这个域，不是 attester / proposer。见 [Altair 轻客户端精读](../light-clients/worked-example-sync-committee.md)。
+Altair 另加（本表仍不是全集）：`DOMAIN_SYNC_COMMITTEE = 0x07000000`。同步委员会消息走这个域，不是 attester / proposer。见 [Altair 轻客户端精读](../light-clients/worked-example-sync-committee.md)。  
+Builder API 的登记/出价走 `DOMAIN_APPLICATION_BUILDER`（`compute_domain` 默认参数）；盲块本身仍走 `DOMAIN_BEACON_PROPOSER`。域分不出「谁写的交易列表」，见 [谁排序](../mempool/worked-example-who-orders.md)。
 
 `DOMAIN_APPLICATION_MASK = 0x00000001`：应用自用的域，与 mask 按位与必须非零；共识层已列的类型与 mask 按位与必须为零。
 

@@ -12,6 +12,7 @@
 | 后量子 | 主要打用户签 | 用户签+投票签 | 视实现 | 用户签+投票签 | |
 | 结算文案 | 需确认数 | commit 可当结算 | 要解释参数 | 须钉 finalized | |
 | 罚没执行 | 无验证者罚没对象 | 引擎交证据，应用写公式 | 视实现 / 产品 | 信标 `slash_validator`（double / surround / 同 slot 双头） | |
+| 排序权 | 矿工写列表并出块 | 本高度 proposer 写整块 | 视实现 | 本 slot 提议者可只签盲头，列表由域外 builder 写 | |
 
 分区时停还是两边长：见 [`../../tracks/consensus/worked-example-partition.md`](../../tracks/consensus/worked-example-partition.md)。  
 「不确定」若承诺「到了就是到了」，表会偏向 BFT 一类。这仍是建议方向，不是决定。

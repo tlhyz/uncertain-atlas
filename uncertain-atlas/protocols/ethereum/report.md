@@ -40,7 +40,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 1. 签名（含 nonce、gas、chain id、数据）。钱包 typed data 是 EIP-712，**不是**共识投票域；对照 `tracks/crypto/worked-example-tagged-hash.md`。  
 2. RPC 广播。  
 3. 进若干 mempool；可被替换（同 nonce 更高费）。  
-4. 某 proposer / builder 选入执行块。  
+4. 某 proposer 签入执行块；列表可能由外部 builder 写（域外 Builder API：先签盲头再揭示）。见 [`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。不是协议内 PBS。  
 5. 执行：扣费、跑 EVM、写存储、出收据与日志。失败交易仍可能消耗 gas、推进 nonce（事实：视失败类型）。  
 6. 共识层把该执行结果纳入头。  
 7. 头可被 fork choice 摆动；justified / finalized 是更强的等级。  
@@ -118,7 +118,7 @@ CL 的 `DomainType`（proposer ≠ attester；Altair 另加 `DOMAIN_SYNC_COMMITT
 
 1. 状态膨胀与无状态未完成。  
 2. 账户热点，默认并行弱。  
-3. MEV / PBS 让「交易生命周期」不再是简单队列。  
+3. MEV / 域外 Builder API 让「交易生命周期」不再是简单队列；签头 ≠ 本地排序。见 [`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。  
 4. 协议极度复杂，升级协调成本高。  
 5. 用户层把浏览器当验证。
 

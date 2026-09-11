@@ -11,7 +11,7 @@
 2. L0.7 画自己的门。  
 3. [`../tracks/lifecycle/README.md`](../tracks/lifecycle/README.md) 五列表。  
 4. [`../tracks/lifecycle/worked-example.md`](../tracks/lifecycle/worked-example.md) 跟完阿安付 1。  
-5. 停。若还不能指出「钱包绿勾」在每一列指哪一层，不要进 L6。日蚀 / 内存池：[`../tracks/network/worked-example-eclipse.md`](../tracks/network/worked-example-eclipse.md)、[`../tracks/mempool/worked-example.md`](../tracks/mempool/worked-example.md)。
+5. 停。若还不能指出「钱包绿勾」在每一列指哪一层，不要进 L6。日蚀 / 内存池：[`../tracks/network/worked-example-eclipse.md`](../tracks/network/worked-example-eclipse.md)、[`../tracks/mempool/worked-example.md`](../tracks/mempool/worked-example.md)。读 L5.4 时补 [`../tracks/mempool/worked-example-who-orders.md`](../tracks/mempool/worked-example-who-orders.md)（签了头 ≠ 自己排了序）。
 
 ## 第二通：工具
 

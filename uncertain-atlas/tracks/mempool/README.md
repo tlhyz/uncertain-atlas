@@ -1,4 +1,4 @@
 # 横向：内存池
 
-课：L9.2、L3.2。  
-精读：[`worked-example.md`](worked-example.md)（筐里有信 ≠ 局长盖章）。
+课：L9.2、L3.2、L5.4。  
+精读：[`worked-example.md`](worked-example.md)（筐里有信 ≠ 局长盖章）；[`worked-example-who-orders.md`](worked-example-who-orders.md)（签了头 ≠ 自己排了序；Builder API ≠ 信标共识）。

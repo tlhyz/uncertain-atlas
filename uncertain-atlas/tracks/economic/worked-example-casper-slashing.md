@@ -78,7 +78,7 @@ surround: data_1.source.epoch < data_2.source.epoch
 
 `process_proposer_slashing`：两个 `SignedBeaconBlockHeader` 的 **slot 相同、proposer_index 相同、header 不同**，域是 `DOMAIN_BEACON_PROPOSER`，然后 `slash_validator`。
 
-这不是 attestation 的 double/surround。域不同，见 [SignBytes 精读](../consensus/worked-example-vote-signbytes.md)。
+这不是 attestation 的 double/surround。域不同，见 [SignBytes 精读](../consensus/worked-example-vote-signbytes.md)。盲头也是头：签了 `SignedBlindedBeaconBlock` 再签另一份同 slot 头，仍走这条，见 [谁排序](../mempool/worked-example-who-orders.md)。
 
 ---
 

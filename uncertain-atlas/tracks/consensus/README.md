@@ -2,6 +2,7 @@
 
 分区精读：[`worked-example-partition.md`](worked-example-partition.md)。  
 投票被签字节：[`worked-example-vote-signbytes.md`](worked-example-vote-signbytes.md)（Prevote ≠ Precommit；CL `DomainType`）。  
+谁写交易顺序：[`../mempool/worked-example-who-orders.md`](../mempool/worked-example-who-orders.md)（Builder API ≠ `process_block`）。  
 决策表：[`../../libraries/decision-matrix/consensus.md`](../../libraries/decision-matrix/consensus.md)（不确定列空）。
 
 | 家族 | 最终性 | 分区时 | 领导 | 主要假设 | 档案/课 |

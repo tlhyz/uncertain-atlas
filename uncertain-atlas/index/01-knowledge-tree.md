@@ -278,6 +278,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.6 MEV 与 PBS · 进阶
 - mempool 不再是简单队列
+- 覆盖：课文 L5.4；谁写列表 vs 谁签头 `tracks/mempool/worked-example-who-orders.md`（Builder API ≠ consensus-specs；不变量 27）
 
 ### M5.7 事故：共识分裂、客户端差异、状态问题 · 重要
 
@@ -433,11 +434,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–26）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–27）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C28；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C29；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

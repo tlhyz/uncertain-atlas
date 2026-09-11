@@ -47,4 +47,4 @@ PQ 验签配额先于「更大的池」
 ## 精密检查
 
 **禁止假学习：** 「进了 mempool 就是上链。」「标准性 = 共识非法。」  
-**边界：** 不写某池的当前默认费率。
+**边界：** 不写某池的当前默认费率。谁写顺序、盲头 vs 本地选交易：[`worked-example-who-orders.md`](worked-example-who-orders.md)。

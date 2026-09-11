@@ -475,3 +475,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A149 | 记录 | 规范与博客有罚金商、现网人数、罚没总额 | 不抄；不填 `MIN_SLASHING_PENALTY_QUOTIENT` |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-11 23:55 UTC · Builder API ≠ 信标共识；签头 ≠ 本地排序
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A150 | 中 | L5.4 / M5.6 把 PBS 写成一句口号 | `worked-example-who-orders.md`：盲头 + 事后揭示；文献是 builder-specs |
+| A151 | 中 | 域外 API 会被写成「共识已 PBS」 | README 原文：临时、更高信任、不改基础协议 |
+| A152 | 中 | 「提议者签了块」会被写成「他选过每一笔」 | header 只承诺 `transactions_root`；揭示失败是信任/活性 |
+| A153 | 记录 | 仪表盘有 MEV 金额与中继占比 | 不抄；enshrined PBS 提案族不当已激活 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

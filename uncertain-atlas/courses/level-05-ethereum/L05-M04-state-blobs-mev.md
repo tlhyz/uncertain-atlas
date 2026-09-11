@@ -45,7 +45,7 @@ blob 是给 rollup 一类租户用的短时大数据袋，用 KZG 承诺挂到�
 **MEV 与 PBS（描述，不写市值）**
 
 同一块里交易顺序会改变谁赚钱。搜索者/构建者竞争出「更值钱的块」。  
-PBS：构建者出执行载荷，提议者出块头。  
+PBS：构建者出执行载荷，提议者出块头。今天主网上常见的是 **域外 Builder API**（盲头 + 事后揭示），**不是**信标状态机里的协议内 PBS。精读：[`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。  
 **事实：** 用户交易的生命周期不再是「全球一个公平队列」。  
 **推断：** 审查与抽取会集中在构建者/中继，即使验证者集合看起来分散。
 
@@ -116,4 +116,4 @@ Ethereum L1 + 各类 rollup。具体 rollup 19 节只在通过独特思想过滤
 | 经济 | MEV / PBS：排序权被卖；mempool 不是公平队列 |
 
 **禁止假学习：** 「有 blob 所以和 Celestia 一种 DA。」「L2 出块 = L1 最终。」「PBS 解决了 MEV。」  
-**边界：** 不写 Verkle 已完成；不写构建者名单。不把 Deneb 的 6 个 blob 或后来的上限当永恒。精读：[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)。KZG 不是后量子。
+**边界：** 不写 Verkle 已完成；不写构建者名单；不抄 MEV 金额与中继占比。不把 Deneb 的 6 个 blob 或后来的上限当永恒。精读：[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)、[`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。KZG 不是后量子。Builder API 不是 consensus-specs。
