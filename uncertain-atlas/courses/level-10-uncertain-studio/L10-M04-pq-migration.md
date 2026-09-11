@@ -1,7 +1,7 @@
 # L10.4 后量子迁移不是换一个库
 
 优先级：研究级 / 对「不确定」主线重要  
-先修：L10.2，[`../../tracks/post-quantum/migration.md`](../../tracks/post-quantum/migration.md)
+先修：L10.2，[`../../tracks/post-quantum/migration.md`](../../tracks/post-quantum/migration.md)、[`../../tracks/post-quantum/worked-example-migration.md`](../../tracks/post-quantum/worked-example-migration.md)
 
 ---
 

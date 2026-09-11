@@ -43,6 +43,6 @@
 19. L10.1 纪律。  
 20. 威胁模型 + [`../libraries/settlement-copy.md`](../libraries/settlement-copy.md)。  
 21. L10.3 最小机器清单。  
-22. L10.4 / PQ 迁移：只列出必须测的量和迁移状态机，不填算法。
+22. L10.4 / PQ 迁移状态机 + [`../tracks/post-quantum/worked-example-migration.md`](../tracks/post-quantum/worked-example-migration.md)。不填算法。
 
 若有人丢给你一条新链：用 [`../libraries/new-chain-intake.md`](../libraries/new-chain-intake.md)，不要先打开官网首页。

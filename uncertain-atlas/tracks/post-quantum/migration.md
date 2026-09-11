@@ -57,3 +57,5 @@
 - 用未测体积承诺块大小与委员会人数。
 
 见 L10.1：没有测量，签名算法列保持空。
+
+精读：[`worked-example-migration.md`](worked-example-migration.md)（危急后单旧签 / 双签自愿 / 无标签裂链 / 投票与用户不同步）。
