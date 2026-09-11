@@ -178,7 +178,8 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
         "## 风险声明",
         "本框架默认只做回测。实盘模块强制 DRY_RUN，没有真实下单通道。",
         "作者不对任何资金损失负责；只用闲置资金做研究。",
-    ]
+        ]
+    )
     if extra:
         ao = extra.get("anti_overfit") or extra
         tt = (ao.get("train_test") if isinstance(ao, dict) else None) or {}

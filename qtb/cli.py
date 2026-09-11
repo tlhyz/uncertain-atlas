@@ -198,8 +198,12 @@ def cmd_screen(args: argparse.Namespace) -> int:
 
 
 def cmd_fetch_etf(args: argparse.Namespace) -> int:
-    from qtb.data.gatedata import default_deals_window, download_spot_deals
-    from qtb.strategies.moving_grid import DEFAULT_ETF_LONGS, resolve_etf_markets
+    from qtb.data.gatedata import (
+        DEFAULT_ETF_LONGS,
+        default_deals_window,
+        download_spot_deals,
+        resolve_etf_markets,
+    )
 
     if args.longs_only:
         markets = list(DEFAULT_ETF_LONGS)

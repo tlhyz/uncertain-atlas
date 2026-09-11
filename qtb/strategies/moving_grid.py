@@ -15,59 +15,24 @@ from typing import Any, Literal
 import numpy as np
 import pandas as pd
 
+from qtb.data.gatedata import DEFAULT_ETF_LONGS, ETF_FAMILIES, resolve_etf_markets
 from qtb.engine.types import Book, OrderIntent
 
 from .base import Strategy
 
 SpacingMode = Literal["geometric", "arithmetic"]
 
-# Leveraged Gate ETF tokens for the four underlyings the user named.
-# SOXLG / SNXXG are tokenized underlyings (no etf_leverage) — not in this set.
-ETF_FAMILIES: dict[str, tuple[str, ...]] = {
-    "soxl": ("SOXL3L_USDT", "SOXL3S_USDT"),
-    "snxx": ("SNXX3L_USDT", "SNXX3S_USDT"),
-    "eth": ("ETH3L_USDT", "ETH3S_USDT", "ETH5L_USDT", "ETH5S_USDT"),
-    "sol": ("SOL3L_USDT", "SOL3S_USDT", "SOL5L_USDT", "SOL5S_USDT"),
-}
-
-DEFAULT_ETF_LONGS: tuple[str, ...] = (
-    "SOXL3L_USDT",
-    "SNXX3L_USDT",
-    "ETH3L_USDT",
-    "SOL3L_USDT",
-)
-
-
-def resolve_etf_markets(hints: list[str] | tuple[str, ...] | str) -> list[str]:
-    """Map soxl/snxx/eth/sol (or a raw pair) to Gate ETF spot markets."""
-    if isinstance(hints, str):
-        raw = [p.strip() for p in hints.replace(";", ",").split(",") if p.strip()]
-    else:
-        raw = [str(x).strip() for x in hints if str(x).strip()]
-    out: list[str] = []
-    seen: set[str] = set()
-    for h in raw:
-        key = h.lower().replace("-", "_")
-        if key.endswith("_usdt"):
-            pair = h.upper().replace("-", "_")
-            if pair not in seen:
-                seen.add(pair)
-                out.append(pair)
-            continue
-        fam = ETF_FAMILIES.get(key)
-        if fam is None:
-            pair = h.upper().replace("-", "_")
-            if not pair.endswith("_USDT"):
-                pair = f"{pair}_USDT"
-            if pair not in seen:
-                seen.add(pair)
-                out.append(pair)
-            continue
-        for pair in fam:
-            if pair not in seen:
-                seen.add(pair)
-                out.append(pair)
-    return out
+__all__ = [
+    "DEFAULT_ETF_LONGS",
+    "ETF_FAMILIES",
+    "MovingGridStrategy",
+    "bar_touch_path",
+    "build_moving_levels",
+    "remap_lots_shift_down",
+    "remap_lots_shift_up",
+    "resolve_etf_markets",
+    "shift_levels",
+]
 
 
 def build_moving_levels(

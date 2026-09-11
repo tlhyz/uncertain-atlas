@@ -25,11 +25,58 @@ import pandas as pd
 
 from .candles import CACHE_DIR
 
+# Leveraged Gate ETF tokens for the four underlyings.
+ETF_FAMILIES: dict[str, tuple[str, ...]] = {
+    "soxl": ("SOXL3L_USDT", "SOXL3S_USDT"),
+    "snxx": ("SNXX3L_USDT", "SNXX3S_USDT"),
+    "eth": ("ETH3L_USDT", "ETH3S_USDT", "ETH5L_USDT", "ETH5S_USDT"),
+    "sol": ("SOL3L_USDT", "SOL3S_USDT", "SOL5L_USDT", "SOL5S_USDT"),
+}
+
+DEFAULT_ETF_LONGS: tuple[str, ...] = (
+    "SOXL3L_USDT",
+    "SNXX3L_USDT",
+    "ETH3L_USDT",
+    "SOL3L_USDT",
+)
+
 BASE_URL = "https://download.gatedata.org"
 DEALS_CACHE = CACHE_DIR / "spot_deals"
 DEAL_COLUMNS = ["timestamp_unix", "dealid", "price", "amount", "side_code"]
 SIDE_MAP = {1: "sell", 2: "buy", "1": "sell", "2": "buy"}
 USER_AGENT = "qtb-research/0.3 (gatedata deals)"
+
+
+def resolve_etf_markets(hints: list[str] | tuple[str, ...] | str) -> list[str]:
+    """Map soxl/snxx/eth/sol (or a raw pair) to Gate ETF spot markets."""
+    if isinstance(hints, str):
+        raw = [p.strip() for p in hints.replace(";", ",").split(",") if p.strip()]
+    else:
+        raw = [str(x).strip() for x in hints if str(x).strip()]
+    out: list[str] = []
+    seen: set[str] = set()
+    for h in raw:
+        key = h.lower().replace("-", "_")
+        if key.endswith("_usdt"):
+            pair = h.upper().replace("-", "_")
+            if pair not in seen:
+                seen.add(pair)
+                out.append(pair)
+            continue
+        fam = ETF_FAMILIES.get(key)
+        if fam is None:
+            pair = h.upper().replace("-", "_")
+            if not pair.endswith("_USDT"):
+                pair = f"{pair}_USDT"
+            if pair not in seen:
+                seen.add(pair)
+                out.append(pair)
+            continue
+        for pair in fam:
+            if pair not in seen:
+                seen.add(pair)
+                out.append(pair)
+    return out
 
 
 def parse_year_month(value: str | int) -> tuple[int, int]:
