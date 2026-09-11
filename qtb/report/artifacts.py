@@ -200,6 +200,7 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
                         f"- 逐笔路径跨格（{float((result.params.get('strategy') or {}).get('spacing_pct') or 0)*100:.2f}%）："
                         f"往上 {m.get('tape_up_crosses')} / 往下 {m.get('tape_down_crosses')}"
                         f"（0.1% 往上 {m.get('tape_up_crosses_10bps')}）。往下跨不是差价，往上跨才是一刀。",
+                        f"- 破区间腾仓（不计入网格差价）：{m.get('range_exit_pnl')}",
                     ]
                 )
     lines.extend(

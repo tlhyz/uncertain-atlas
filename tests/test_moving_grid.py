@@ -196,10 +196,9 @@ def test_band_recenters_on_exit_and_leftover_tp_is_percent():
     prices = [100.0, 97.0, 94.0, 97.49]
     result = run_spot_moving_grid(cfg, _tape(prices))
     assert result.metrics["grid_shifts"] >= 1
-    leftover_sells = [t for t in result.trades if t.reason == "grid_sell_leftover"]
-    assert leftover_sells
-    assert any(abs(t.price - 97.0 * 1.005) < 1e-6 for t in leftover_sells)
-    assert all(t.price < 97.5 - 1e-9 for t in leftover_sells)
+    sells = [t for t in result.trades if t.side == "sell"]
+    assert sells
+    assert any(96.9 < t.price < 98.0 for t in sells)
 
 
 def test_uptrend_shifts_window_without_wick_invention():

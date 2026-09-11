@@ -254,18 +254,39 @@ class SpotMovingGridEngine:
             if self._buy_level(i, ts, px):
                 self._resting_buys.discard(i)
 
-    def _maybe_shift(self, px: float) -> int:
+    def _snap_lots_to_levels(self) -> None:
+        """Keep lots whose cost still sits inside the new band; the rest are leftover."""
+        n = len(self.levels)
+        if n < 2:
+            return
+        step = self._grid_step()
+        tol = max(step * 0.51, 1e-12)
+        candidates = list(self.lots.values()) + self.leftover_lots
+        self.lots = {}
+        leftover: list[_Lot] = []
+        buy_levels = self.levels[: n - 1]
+        for lot in candidates:
+            idx = int(np.argmin(np.abs(buy_levels - lot.cost)))
+            if abs(float(buy_levels[idx]) - lot.cost) <= tol and idx not in self.lots:
+                self.lots[idx] = lot
+            else:
+                leftover.append(lot)
+        self.leftover_lots = leftover
+
+    def _close_out_of_band(self, px: float, ts: Any) -> None:
+        """2000U / 20 grids stays on the live window. Stale leftover is closed at mark."""
+        still = []
+        for lot in self.leftover_lots:
+            self._close_lot(lot, px, ts, px, "range_exit_rebalance")
+        self.leftover_lots = still
+
+    def _maybe_shift(self, px: float, ts: Any) -> int:
         if not self.shift_on_exit or len(self.levels) < 2:
             return 0
         lo = float(self.levels[0])
         hi = float(self.levels[-1])
         if lo - 1e-12 <= px <= hi + 1e-12:
             return 0
-        # Price left the ±band: re-hang a fresh 上/下% window on last price.
-        # Old lots keep their own +1% TP (not dumped at the new floor).
-        if self.lots:
-            self.leftover_lots.extend(self.lots.values())
-            self.lots.clear()
         self.levels = build_moving_levels(
             px,
             self.strategy.grid_count,
@@ -276,6 +297,8 @@ class SpotMovingGridEngine:
         )
         self.strategy.levels = self.levels
         self.shifts += 1
+        self._snap_lots_to_levels()
+        self._close_out_of_band(px, ts)
         self._rehang_buys(px)
         return 1
 
@@ -357,7 +380,7 @@ class SpotMovingGridEngine:
             if not self.halted:
                 n_before = self._trade_id
                 self._fill_against_print(px, ts)
-                self._maybe_shift(px)
+                self._maybe_shift(px, ts)
                 eq = _equity(self.quote, self.base, px)
                 self._risk(px, ts, eq)
                 _sample(ts, px, force=self._trade_id > n_before)
@@ -381,18 +404,29 @@ class SpotMovingGridEngine:
         )
         grid_harvest = float(sum(t.realized_pnl for t in self.trades if t.reason == "grid_sell_tp"))
         leftover_harvest = float(sum(t.realized_pnl for t in self.trades if t.reason == "grid_sell_leftover"))
+        range_exit_pnl = float(
+            sum(t.realized_pnl for t in self.trades if t.reason == "range_exit_rebalance")
+        )
         other_realized = float(
             sum(
                 t.realized_pnl
                 for t in self.trades
-                if t.side == "sell" and t.reason not in {"grid_sell_tp", "grid_sell_leftover"}
+                if t.side == "sell"
+                and t.reason not in {"grid_sell_tp", "grid_sell_leftover", "range_exit_rebalance"}
             )
         )
         inventory_mtm = self._inventory_mtm(last_px)
         residual_buy_fees = float(sum(lot.buy_fee for lot in self._open_lots()))
         end_eq = float(equity_curve[-1]) if equity_curve else self.book.initial
         net = end_eq - self.book.initial
-        explained = grid_harvest + leftover_harvest + other_realized + inventory_mtm - residual_buy_fees
+        explained = (
+            grid_harvest
+            + leftover_harvest
+            + range_exit_pnl
+            + other_realized
+            + inventory_mtm
+            - residual_buy_fees
+        )
         tape = audit_deals_tape(work)
         metrics.update(tape)
         tp_n = int(sum(1 for t in self.trades if t.reason == "grid_sell_tp"))
@@ -402,6 +436,7 @@ class SpotMovingGridEngine:
         metrics["grid_harvest"] = round(grid_harvest, 4)
         metrics["leftover_harvest"] = round(leftover_harvest, 4)
         metrics["grid_income"] = round(income, 4)
+        metrics["range_exit_pnl"] = round(range_exit_pnl, 4)
         metrics["grid_rounds_tp"] = tp_n
         metrics["grid_rounds_leftover"] = left_n
         metrics["avg_harvest_per_round"] = round(income / n_rounds, 6) if n_rounds else 0.0
