@@ -151,13 +151,15 @@ def test_grid_harvest_uses_rung_cost_not_portfolio_average():
     # Stay inside the 8×1% band (~96.06–104.06): 98 fills, 99.1 sells that rung.
     tape = _tape([100.0, 98.0, 99.1])
     result = run_spot_moving_grid(cfg, tape)
-    sells = [t for t in result.trades if t.reason == "grid_sell_tp"]
+    sells = [t for t in result.trades if t.reason == "grid_sell"]
     assert sells, "expected at least one completed grid rung"
     assert result.metrics["grid_harvest"] == pytest.approx(
         sum(t.realized_pnl for t in sells), abs=1e-3
     )
-    # Harvest must be positive on a +1% geometric rung after tiny maker fees.
-    assert result.metrics["grid_harvest"] > 0
+    # The 98 → ~99 rung is a positive clip after tiny maker fees.
+    rung = [t for t in sells if t.price < 100.5]
+    assert rung
+    assert sum(t.realized_pnl for t in rung) > 0
     assert result.metrics.get("halted") is False
 
 
@@ -283,7 +285,12 @@ def test_opening_print_does_not_buy_through_the_market():
     cfg["strategy"]["spacing_mode"] = "arithmetic"
     cfg["strategy"]["spacing_pct"] = None
     result = run_spot_moving_grid(cfg, _tape([100.0, 100.0, 100.01, 99.99]))
-    assert result.trades == []
+    limit_buys = [t for t in result.trades if t.reason == "grid_buy"]
+    base_buys = [t for t in result.trades if t.reason == "grid_base_buy"]
+    assert base_buys, "Gate 现货网格开仓要给现价以上的卖档建底仓"
+    assert all(t.price == pytest.approx(100.0) for t in base_buys)
+    assert limit_buys == []
+    assert not any(t.side == "sell" for t in result.trades)
     assert result.metrics["grid_harvest"] == 0
     assert abs(result.metrics["pnl_identity_gap"]) < 1e-6
 
@@ -298,7 +305,7 @@ def test_dip_fills_only_buy_levels_at_or_below_print():
     cfg["strategy"]["quote_capital"] = 2000.0
     cfg["strategy"]["order_size_quote"] = 100.0
     result = run_spot_moving_grid(cfg, _tape([100.0, 97.0]))
-    buys = [t for t in result.trades if t.side == "buy"]
+    buys = [t for t in result.trades if t.reason == "grid_buy"]
     assert buys
     assert all(t.price < 100.0 for t in buys)
     assert all(t.price >= 97.0 - 1e-9 for t in buys)
@@ -329,6 +336,44 @@ def test_yaml_defaults_are_spot_tick_grid():
     assert cfg["strategy"]["spacing_mode"] == "arithmetic"
     assert cfg["strategy"]["shift_on_exit"] is True
     assert cfg["strategy"]["move_mode"] == "breakout"
+    assert cfg["strategy"]["open_base_inventory"] is True
     assert cfg["risk"]["stop_if_price_breaks_range"] is False
     assert cfg["risk"]["max_drawdown_stop_pct"] in (None, 0, 0.0)
     assert cfg["risk"]["investment_sl_pct"] in (None, 0, 0.0)
+
+
+def test_first_sell_matches_entry_price():
+    """FAQ: 每个网格第一次卖出匹配入场价，不是组合均价。"""
+    cfg = _cfg()
+    cfg["strategy"]["grid_count"] = 20
+    cfg["strategy"]["range_up_pct"] = 0.05
+    cfg["strategy"]["range_down_pct"] = 0.05
+    cfg["strategy"]["spacing_mode"] = "arithmetic"
+    cfg["strategy"]["spacing_pct"] = None
+    cfg["strategy"]["quote_capital"] = 2000.0
+    cfg["strategy"]["order_size_quote"] = 100.0
+    # 底仓成本 100，最近一档卖 100.5。
+    result = run_spot_moving_grid(cfg, _tape([100.0, 100.5]))
+    sells = [t for t in result.trades if t.reason == "grid_sell"]
+    assert sells
+    first = min(sells, key=lambda t: t.price)
+    assert first.price == pytest.approx(100.5)
+    # 价差 = 100.5 − 入场价 100，扣掉买卖费后仍应 > 0。
+    assert first.realized_pnl > 0
+    assert first.realized_pnl == pytest.approx(first.qty * 0.5, rel=0.2, abs=0.05)
+
+
+def test_arithmetic_window_does_not_cross_zero():
+    """等差突破下移：下限不能落到 0 以下，停在最后一档正价格窗。"""
+    cfg = _cfg()
+    cfg["strategy"]["grid_count"] = 20
+    cfg["strategy"]["range_up_pct"] = 0.05
+    cfg["strategy"]["range_down_pct"] = 0.05
+    cfg["strategy"]["spacing_mode"] = "arithmetic"
+    cfg["strategy"]["spacing_pct"] = None
+    eng = SpotMovingGridEngine(cfg)
+    prices = [100.0] + [0.02] * 8
+    eng.run(_tape(prices))
+    assert float(eng.levels[0]) > 0
+    assert float(eng.levels[-1]) > float(eng.levels[0])
+    assert eng.q == pytest.approx(0.5)

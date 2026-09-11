@@ -28,6 +28,7 @@ strategy:
   spacing_mode: arithmetic
   shift_on_exit: true
   move_mode: breakout
+  open_base_inventory: true
   order_size_quote: 100.0
   fill_policy: last_touch
 

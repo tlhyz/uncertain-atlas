@@ -92,14 +92,16 @@ def run_batch_job(cfg: dict[str, Any]) -> list[dict[str, Any]]:
     lines = [
         "# Batch report",
         "",
-        "| symbol | interval | net_pnl | grid_harvest | inventory_mtm | max_dd_pct | halted | cycles |",
-        "|---|---|---:|---:|---:|---:|---|---:|",
+        "| symbol | interval | 套利次数 | 网格利润 | 浮动盈亏 | 总权益净额 | max_dd_pct | halted |",
+        "|---|---|---:|---:|---:|---:|---:|---|",
     ]
     for r in reports:
         m = r["metrics"]
         lines.append(
-            f"| {r['symbol']} | {r['interval']} | {m.get('net_pnl')} | {m.get('grid_harvest')} | "
-            f"{m.get('inventory_mtm')} | {m.get('max_dd_pct')} | {m.get('halted')} | {m.get('cycles')} |"
+            f"| {r['symbol']} | {r['interval']} | {m.get('arb_rounds', m.get('n_completed_sells'))} | "
+            f"{m.get('grid_profit', m.get('grid_harvest'))} | "
+            f"{m.get('unrealized_pnl', m.get('inventory_mtm'))} | {m.get('net_pnl')} | "
+            f"{m.get('max_dd_pct')} | {m.get('halted')} |"
         )
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return reports

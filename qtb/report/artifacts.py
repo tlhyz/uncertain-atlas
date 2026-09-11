@@ -148,7 +148,7 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
         f"# 回测摘要 — {result.symbol} / {result.interval} / {result.strategy}",
         "",
         "## 结论（研究用，非实盘）",
-        f"- 净收益：{m.get('net_pnl')} USDT（收益率 {float(m.get('return_pct') or 0)*100:.2f}%）",
+        f"- 总权益：{m.get('end_equity', m.get('net_pnl'))} USDT（净收益 {m.get('net_pnl')}，收益率 {float(m.get('return_pct') or 0)*100:.2f}%）",
         f"- 最大回撤：{m.get('max_dd')} USDT（{float(m.get('max_dd_pct') or 0)*100:.2f}%）",
         f"- Sharpe：{m.get('sharpe')}  | Calmar：{m.get('calmar')}",
         f"- 胜率：{float(m.get('win_rate') or 0)*100:.1f}%  | 盈亏比(PF)：{m.get('profit_factor')}",
@@ -159,8 +159,8 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
     ]
     if m.get("feed") == "deals" or m.get("grid_shifts") is not None:
         lines.append(
-            f"- 行情源：逐笔 deals（{m.get('n_prints', '?')} 笔打印）  | 移格：{m.get('grid_shifts')}  | "
-            f"剩余底仓：{m.get('leftover_base')}"
+            f"- 行情源：逐笔 deals（{m.get('n_prints', '?')} 笔打印）  | 突破移格：{m.get('grid_shifts')}  | "
+            f"期末持仓：{m.get('end_base', m.get('leftover_base'))}"
         )
         if m.get("first_print_px") is not None:
             ret = m.get("tape_return_pct")
@@ -171,37 +171,44 @@ def chinese_summary(result: BacktestResult, extra: dict[str, Any] | None = None)
                 f" / 时间戳单调={m.get('tape_ts_monotonic')}"
                 f" / 成交键唯一={m.get('tape_keys_unique')}"
             )
-        if m.get("grid_harvest") is not None:
+        if m.get("grid_harvest") is not None or m.get("grid_profit") is not None:
+            profit = m.get("grid_profit", m.get("grid_income", m.get("grid_harvest")))
             lines.append(
-                f"- 网格已实现差价：{m.get('grid_income', m.get('grid_harvest'))} USDT"
-                f"（窗内 {m.get('grid_harvest')} + 移格后仍按原+1格卖出 {m.get('leftover_harvest')}）"
+                f"- 套利次数：{m.get('arb_rounds', m.get('n_completed_sells'))}  "
+                f"（盈利 {m.get('n_win_sells')} / 亏损 {m.get('n_loss_sells')}）"
             )
             lines.append(
-                f"- 移格遗留卖出：{m.get('leftover_harvest')}  | 期末底仓浮盈亏：{m.get('inventory_mtm')}  | "
-                f"停机：{'是' if m.get('halted') else '否'}"
+                f"- 网格利润：{profit} USDT"
+                f"（盈利单 {m.get('grid_profit_win')} + 亏损单 {m.get('grid_profit_loss')}）"
+            )
+            lines.append(
+                f"- 浮动盈亏：{m.get('unrealized_pnl', m.get('inventory_mtm'))} USDT  | "
+                f"总权益：{m.get('end_equity')}  | 停机：{'是' if m.get('halted') else '否'}"
             )
             if m.get("pnl_identity_gap") is not None:
                 lines.append(
                     f"- 账本恒等式缺口：{m.get('pnl_identity_gap')} "
-                    f"（净收益 ≈ 网格差价 + 底仓浮盈亏 − 未摊买费 {m.get('residual_buy_fees')}）"
+                    f"（净收益 ≈ 网格利润 + 浮动盈亏 − 未摊买费 {m.get('residual_buy_fees')}）"
                 )
-            rounds = int(m.get("grid_rounds_tp") or 0) + int(m.get("grid_rounds_leftover") or 0)
+            rounds = int(m.get("arb_rounds") or m.get("n_completed_sells") or 0)
             if rounds or m.get("grid_step") is not None:
                 lines.extend(
                     [
                         "",
-                        "## 网格差价怎么算",
-                        "- 只记已完成的「买进 → 该格 +1 格卖掉」。移格次数不是来回次数，没卖掉的底仓不算差价。",
-                        "- 公式：`qty × (卖出价 − 该格买入价) − 买费 − 卖费`",
-                        f"- 等差步长（开盘定死，移格不改）：{m.get('grid_step')}  | "
-                        f"完成卖单：{m.get('n_completed_sells')} "
+                        "## Gate 现货网格怎么算",
+                        "- 建仓：现价以上用底仓挂卖，现价以下挂买。买成交后挂上一格卖，卖成交后挂下一格买。",
+                        "- 套利次数 = 已完成的低买高卖循环（已完成卖单数），不是下单数，也不是移格数。",
+                        "- 网格利润 = `单个网格价差 × 买入数量 × 已完成卖单`；"
+                        "单笔价差 = `卖出价 − 该笔买入价`（第一次卖匹配入场价）。",
+                        "- 没卖掉的底仓只进浮动盈亏，不进网格利润。突破移动后撤单重挂，价差仍是卖−该笔买。",
+                        f"- 等差步长 q（开盘定死，移格不改）：{m.get('grid_step')}  | "
+                        f"套利次数：{m.get('arb_rounds', m.get('n_completed_sells'))} "
                         f"（{m.get('first_clip_ts')} → {m.get('last_clip_ts')}）  | "
                         f"平均每刀：{m.get('avg_harvest_per_round')} USDT",
-                        f"- 期末还锁在底仓里的市值：{m.get('quote_in_inventory')} USDT（现金 {m.get('end_quote')}）",
+                        f"- 期末持仓市值：{m.get('quote_in_inventory')} USDT（现金 {m.get('end_quote')}）",
                         f"- 逐笔路径跨格（{float((result.params.get('strategy') or {}).get('spacing_pct') or 0)*100:.2f}%）："
                         f"往上 {m.get('tape_up_crosses')} / 往下 {m.get('tape_down_crosses')}"
-                        f"（0.1% 往上 {m.get('tape_up_crosses_10bps')}）。往下跨不是差价，往上跨才是一刀。",
-                        f"- 破区间腾仓（不计入网格差价）：{m.get('range_exit_pnl')}",
+                        f"（0.1% 往上 {m.get('tape_up_crosses_10bps')}）。路径跨格不是套利次数。",
                     ]
                 )
     lines.extend(

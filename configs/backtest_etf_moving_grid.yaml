@@ -35,6 +35,8 @@ strategy:
   shift_on_exit: true
   # Gate 现货网格高级设置：突破移动（不是均线移动）
   move_mode: breakout
+  # 现价以上挂卖需要底仓：开仓市价买入卖单档位
+  open_base_inventory: true
   order_size_quote: 100.0
   fill_policy: last_touch
   equity_sample_seconds: 60
