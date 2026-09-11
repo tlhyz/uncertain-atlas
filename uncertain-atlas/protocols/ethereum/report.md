@@ -58,7 +58,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 
 合并后：Gasper 家族（LMD-GHOST fork choice + Casper FFG 最终性）。  
 验证者质押、attestation、slashing。  
-最终性是协议对象，但仍有弱主观性、长程攻击等 PoS 议题（Level 5 深挖）。
+最终性是协议对象，但仍有弱主观性、长程攻击等 PoS 议题。精读：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)（检查点新鲜度；分发节规范未写完）。
 
 与 CometBFT 不同：有单独的 fork choice 头，不一定每个 slot 都像 Tendermint 那样「一高度一 commit」。不要混。
 

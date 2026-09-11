@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 29）
+
+- 弱主观性精读：phase0 `weak-subjectivity.md`。检查点是任意 `Checkpoint`；周期由 churn 算出，下限 256 epoch；对不上路径应退出。分发节未写完。
+- 对照 CometBFT `trustingPeriod`。不变量 24；语料 C26；反模式 stale-checkpoint-sold-as-genesis。
+- L10.3 第 20 条。不抄参考表人数，不把周期换成「多少天」。
+
 ## 2026-09-12（续 28）
 
 - blob / DAS 精读：EIP-4844 sidecar + versioned hash + 4096 epoch 服务窗；Fulu PeerDAS 一维 128 列；Celestia 二维纠删另列。

@@ -442,3 +442,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A137 | 记录 | 不写现行 blob 个数、不写某网 fork 日期 | Deneb 的 `MAX_BLOBS_PER_BLOCK = 6` 只标「引入时」；KZG 不是后量子 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 04:00 UTC · 弱主观性 ≠ 从创世安全
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A138 | 中 | L5.2 点了弱主观性，没钉检查点 / 周期函数 | `worked-example-weak-subjectivity.md`：任何 Checkpoint；`compute_weak_subjectivity_period`；256 epoch 下限 |
+| A139 | 中 | 「finalized 所以从创世跟一样」会假安全 | 不变量 24；语料 C26；反模式 stale-checkpoint-sold-as-genesis；L10.3 第 20 条 |
+| A140 | 低 | 规范参考表会被抄成现网人数 | 页上标明假设余额/人数；不换算成天；不重算现行周期 |
+| A141 | 记录 | 分发节写 will be updated soon；全文标 WIP | 检查点从哪来保持部署/社会对象；不把 2014 博客当定义 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

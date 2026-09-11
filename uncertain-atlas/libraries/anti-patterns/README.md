@@ -28,3 +28,4 @@
 - [evidence-equals-slash](evidence-equals-slash.md)
 - [sample-sold-as-full-set](sample-sold-as-full-set.md)
 - [kzg-sold-as-das](kzg-sold-as-das.md)
+- [stale-checkpoint-sold-as-genesis](stale-checkpoint-sold-as-genesis.md)

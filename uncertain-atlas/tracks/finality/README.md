@@ -1,13 +1,15 @@
 # 横向地图：最终性
 
 学完各波后必须回这里改表。空单元格表示未写或不适用，禁止用营销句填。  
-分区精读：[`../consensus/worked-example-partition.md`](../consensus/worked-example-partition.md)。
+分区精读：[`../consensus/worked-example-partition.md`](../consensus/worked-example-partition.md)。  
+弱主观性：[`worked-example-weak-subjectivity.md`](worked-example-weak-subjectivity.md)（finalized ≠ 从创世同步同样安全）。
 
 | 系统 | 协议对象 | 用户常误认 | 分区时 | 档案/课 |
 |---|---|---|---|---|
 | Bitcoin | 无「最终」；最重链 | k 确认 = 不可逆 | 两边可长 | L3.1 |
 | CometBFT | 高度上的 commit | 投票中 = 已提交 | 倾向停 | L4.3 |
 | Ethereum | head / justified / finalized | 出块 = finalized | 头可摆；最终有弱主观性 | L5.2 |
+| Ethereum WS 同步 | 未过期的 `Checkpoint` + 路径命中 | finalized = 从创世一样安全 | 过期检查点；旧钥匙已解绑 | 精读 |
 | Ethereum Altair LC | 512 抽样超多数签的信标头 | 抽样 2/3 = Casper finalized | 跟的是委员会视图，不是全集合最终 | L9.6 / 精读 |
 | Avalanche | 抽样固化 | 参数 = BFT commit | 视参数 | 档案 |
 | Algorand | 论文下快速最终（以规范为准） | 抽签 = 已结算 | 视同步假设 | 档案 |

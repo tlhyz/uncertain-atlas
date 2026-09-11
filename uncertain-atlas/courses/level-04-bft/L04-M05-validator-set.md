@@ -106,4 +106,4 @@ Polkadot 的 session / era 也是「何时换人」（档案）。
 | 经济 | 质押进出、惩罚窗口 |
 
 **禁止假学习：** 「验证者名单在网站上。」「2/3 永远是人数的三分之二。」  
-**边界：** 不抄某一版本 Cosmos 的精确延迟数字当永恒事实；以规范为准。轻客户端的 `trustingPeriod < unbondingPeriod` 与跳过重叠见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。
+**边界：** 不抄某一版本 Cosmos 的精确延迟数字当永恒事实；以规范为准。轻客户端的 `trustingPeriod < unbondingPeriod` 与跳过重叠见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。Ethereum 弱主观性是亲戚、不是同一对象：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。

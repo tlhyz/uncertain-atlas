@@ -84,4 +84,4 @@
 ## 精密检查
 
 **禁止假学习：** 「有 +2/3 签名就是轻客户端。」「BFT 轻客户端验证了余额。」「信任期等于最终性。」「TLA+ 过了所以实现安全。」  
-**边界：** 不写 IBC 反向高度的未完成问题；不抄某一链的解绑秒数；检测/问责算法后置。
+**边界：** 不写 IBC 反向高度的未完成问题；不抄某一链的解绑秒数；检测/问责算法后置。Ethereum 弱主观性是亲戚：[`../finality/worked-example-weak-subjectivity.md`](../finality/worked-example-weak-subjectivity.md)。

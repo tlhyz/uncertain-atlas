@@ -23,7 +23,7 @@
 
 9. L3.1 + Bitcoin 档案第 6、11、14 节。  
 10. L4.1–L4.5 + CometBFT 档案。投票 SignBytes：[`../tracks/consensus/worked-example-vote-signbytes.md`](../tracks/consensus/worked-example-vote-signbytes.md)（prevote 的印不能验成 precommit）。  
-11. [`../tracks/finality/README.md`](../tracks/finality/README.md) 只看 Bitcoin 与 CometBFT 两行，再读 [`../tracks/consensus/worked-example-partition.md`](../tracks/consensus/worked-example-partition.md)。先不要横扫全表。
+11. [`../tracks/finality/README.md`](../tracks/finality/README.md) 只看 Bitcoin 与 CometBFT 两行，再读 [`../tracks/consensus/worked-example-partition.md`](../tracks/consensus/worked-example-partition.md)。先不要横扫全表。读 L5.2 时补 [`../tracks/finality/worked-example-weak-subjectivity.md`](../tracks/finality/worked-example-weak-subjectivity.md)（finalized ≠ 从创世同步同样安全）。
 
 ## 第四通：实现会骗人
 
