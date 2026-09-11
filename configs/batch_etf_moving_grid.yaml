@@ -37,8 +37,8 @@ risk:
 
 batch:
   symbols:
-    - SOXL3L_USDT
-    - SNXX3L_USDT
+    - SOXLG_USDT
+    - SNXXG_USDT
     - ETH3L_USDT
     - SOL3L_USDT
   intervals:

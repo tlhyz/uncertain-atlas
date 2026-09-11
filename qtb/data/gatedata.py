@@ -25,17 +25,18 @@ import pandas as pd
 
 from .candles import CACHE_DIR
 
-# Leveraged Gate ETF tokens for the four underlyings.
+# Gate listings for the four underlyings.
+# SOXLG / SNXXG = tokenized SOXL / SNXX. *3L/*5L = leveraged tokens (can go to ~0).
 ETF_FAMILIES: dict[str, tuple[str, ...]] = {
-    "soxl": ("SOXL3L_USDT", "SOXL3S_USDT"),
-    "snxx": ("SNXX3L_USDT", "SNXX3S_USDT"),
+    "soxl": ("SOXLG_USDT", "SOXL3L_USDT", "SOXL3S_USDT"),
+    "snxx": ("SNXXG_USDT", "SNXX3L_USDT", "SNXX3S_USDT"),
     "eth": ("ETH3L_USDT", "ETH3S_USDT", "ETH5L_USDT", "ETH5S_USDT"),
     "sol": ("SOL3L_USDT", "SOL3S_USDT", "SOL5L_USDT", "SOL5S_USDT"),
 }
 
 DEFAULT_ETF_LONGS: tuple[str, ...] = (
-    "SOXL3L_USDT",
-    "SNXX3L_USDT",
+    "SOXLG_USDT",
+    "SNXXG_USDT",
     "ETH3L_USDT",
     "SOL3L_USDT",
 )

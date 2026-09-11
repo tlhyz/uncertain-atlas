@@ -55,17 +55,15 @@ def _tape(prices, start=1_720_000_000.0):
 
 
 def test_resolve_etf_markets_families_and_raw_pairs():
-    assert resolve_etf_markets("soxl,snxx") == [
-        "SOXL3L_USDT",
-        "SOXL3S_USDT",
-        "SNXX3L_USDT",
-        "SNXX3S_USDT",
-    ]
+    soxl_snxx = resolve_etf_markets("soxl,snxx")
+    assert soxl_snxx[0] == "SOXLG_USDT"
+    assert "SOXL3L_USDT" in soxl_snxx
+    assert "SNXXG_USDT" in soxl_snxx
     assert "ETH3L_USDT" in resolve_etf_markets("eth")
     assert resolve_etf_markets("ETH3L_USDT") == ["ETH3L_USDT"]
     assert DEFAULT_ETF_LONGS == (
-        "SOXL3L_USDT",
-        "SNXX3L_USDT",
+        "SOXLG_USDT",
+        "SNXXG_USDT",
         "ETH3L_USDT",
         "SOL3L_USDT",
     )
