@@ -13,4 +13,6 @@
 | 规范编码 | 同一对象两种字节 | 语义本身 | 编码必须进共识 |
 | 签名随机数 / 超时 / 账户序号 | 各挡各的（L1.6） | 三词混用 | `Apply` 禁本地熵；PQ 盐另账 |
 
-禁止：把「有某品牌 ZK」写成结算完成。
+后量子名义长度：[`../post-quantum/nist-size-card.md`](../post-quantum/nist-size-card.md)。CPU 仍空。
+
+禁止：把「有某品牌 ZK」写成结算完成；把 FIPS 表抄成本机 benchmark。

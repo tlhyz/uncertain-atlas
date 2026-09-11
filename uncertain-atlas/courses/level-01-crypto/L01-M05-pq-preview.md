@@ -127,4 +127,4 @@ Grover 对哈希的平方加速，和 Shor 对椭圆曲线离散对数的打击�
 ## 精密检查
 
 **禁止假学习：** 「NIST 标准化了所以我们的链已后量子。」「签更大所以更安全。」
-**边界：** 不选算法；账本空行必须保持空。
+**边界：** 不选算法；CPU / 本机实测必须空。名义长度见 [`../../tracks/post-quantum/nist-size-card.md`](../../tracks/post-quantum/nist-size-card.md)。

@@ -32,7 +32,7 @@
 
 | 编号 | 资产 | 路径 | 状态 | 优先级 |
 |---|---|---|---|---|
-| 09 | 《后量子区块链工程手册》 | `tracks/post-quantum/` | 账本行已立；未测数字空 | 研究级 |
+| 09 | 《后量子区块链工程手册》 | `tracks/post-quantum/` | FIPS 名义长度已引用；CPU 空 | 研究级 |
 | 10 | 《不确定协议设计决策库》 | `libraries/decision-matrix/` | 对照列已扩；候选列空 | 重要 |
 | 11 | 《不确定威胁模型》 | `libraries/threat-model/` | 草稿 | 必学 |
 | 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 15 条 | 必学 |
