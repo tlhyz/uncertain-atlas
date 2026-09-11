@@ -29,5 +29,6 @@
 | Nervos CKB | [nervos/](nervos/README.md) | 第一版（思想级：占用 / 生成验证分离） |
 | NEAR Nightshade | [near/](near/README.md) | 第一版（思想级：一条链 + chunk） |
 | Babylon | [babylon/](babylon/README.md) | 仅过滤器页 |
+| QRL | [qrl/](qrl/README.md) | 仅过滤器页（XMSS + OTS index） |
 
-其余第 8 波仍在过滤器后：真实 PQ 部署。
+其余第 8 波：有状态 HBS 思想已入 `tracks/post-quantum/stateful-hbs.md`。其它「PQ 品牌链」仍先过过滤器。

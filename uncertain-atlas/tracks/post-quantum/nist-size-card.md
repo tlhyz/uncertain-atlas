@@ -68,6 +68,8 @@ SHA2 与 SHAKE 同名后缀的 pk / sig 字节相同。公钥 = `2n` 字节（PK
 
 FN-DSA / 其它草案不进本卡，等正式 FIPS 表。
 
+XMSS 名义签名字节见 [`stateful-hbs.md`](stateful-hbs.md)（RFC 8391 Table 3）。那是有状态方案，不和本卡的 SLH-DSA 混成「都是哈希签所以一样」。
+
 ---
 
 ## 精密检查

@@ -264,7 +264,7 @@ Polkadot 把「小链借用大链安全」做成系统。
 | NEAR | 一条链 + chunk（思想级档案）；Doomslug ≠ BFT 标记 |
 | Babylon | BTC UTXO 留在 Bitcoin（仅过滤器页，无 19 节） |
 | Cardano | eUTXO（L2.5 已写，不写全生态） |
-| 真实 PQ 部署实验 | 直接服务「不确定」主线 |
+| 真实 PQ 部署实验 | 有状态 XMSS 部署：QRL 仅过滤器页；思想卡 `tracks/post-quantum/stateful-hbs.md` |
 
 默认后置：
 

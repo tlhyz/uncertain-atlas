@@ -45,7 +45,7 @@
 21. L10.1 纪律。  
 22. 威胁模型 + [`../libraries/settlement-copy.md`](../libraries/settlement-copy.md) + [`../tracks/upgrades/worked-example.md`](../tracks/upgrades/worked-example.md) + [`../tracks/economic/worked-example.md`](../tracks/economic/worked-example.md)。  
 23. L10.3 最小机器清单。  
-24. L10.4 / PQ 迁移状态机 + [`../tracks/post-quantum/worked-example-migration.md`](../tracks/post-quantum/worked-example-migration.md)。不填算法。尺寸卡：[`../tracks/post-quantum/nist-size-card.md`](../tracks/post-quantum/nist-size-card.md)；投票字节：[`../tracks/post-quantum/worked-example-vote-bytes.md`](../tracks/post-quantum/worked-example-vote-bytes.md)。CPU 仍空。  
+24. L10.4 / PQ 迁移状态机 + [`../tracks/post-quantum/worked-example-migration.md`](../tracks/post-quantum/worked-example-migration.md)。不填算法。尺寸卡：[`../tracks/post-quantum/nist-size-card.md`](../tracks/post-quantum/nist-size-card.md)；投票字节：[`../tracks/post-quantum/worked-example-vote-bytes.md`](../tracks/post-quantum/worked-example-vote-bytes.md)。有状态哈希签：[`../tracks/post-quantum/stateful-hbs.md`](../tracks/post-quantum/stateful-hbs.md) + OTS 复用精读。CPU 仍空。 QRL 只读过滤器页，不抄生态。  
 25. [`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md) 对照不变量。这不是考试。
 
 若有人丢给你一条新链：用 [`../libraries/new-chain-intake.md`](../libraries/new-chain-intake.md)，不要先打开官网首页。

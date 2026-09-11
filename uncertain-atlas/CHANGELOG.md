@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 20）
+
+- 有状态哈希签名卡：RFC 8391（先更新再输出、Table 3 名义 \|Sig\|）+ SP 800-208（不适合通用、禁止导出私钥）。
+- OTS 复用精读；不变量 17；语料 C19。
+- 模式 stateful-hash-signature；反模式 ots-index-reuse。
+- QRL 仅过滤器页：节点拒重复 OTS；不写 19 节、不抄 Zond。
+- 建议：验证者投票签不要用有状态方案。CPU 仍空。
+
 ## 2026-09-12（续 19）
 
 - 博物馆：CVE-2021-39137（Geth RETURNDATA 错根 / 少数分叉；GHSA + 官方 postmortem；不附利用构造）。

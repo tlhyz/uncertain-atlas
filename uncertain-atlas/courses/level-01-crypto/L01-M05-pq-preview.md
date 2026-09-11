@@ -135,4 +135,4 @@ Grover 对哈希的平方加速，和 Shor 对椭圆曲线离散对数的打击�
 | 经济 | 更大签 ≠ 更安全；先算投票字节（不变量 16） |
 
 **禁止假学习：** 「NIST 标准化了所以我们的链已后量子。」「签更大所以更安全。」
-**边界：** 不选算法；CPU / 本机实测必须空。名义长度见 [`../../tracks/post-quantum/nist-size-card.md`](../../tracks/post-quantum/nist-size-card.md)。
+**边界：** 不选算法；CPU / 本机实测必须空。名义长度见 [`../../tracks/post-quantum/nist-size-card.md`](../../tracks/post-quantum/nist-size-card.md)。有状态 XMSS/LMS：[`../../tracks/post-quantum/stateful-hbs.md`](../../tracks/post-quantum/stateful-hbs.md)，不要和 SLH-DSA 混成一种「哈希签」。
