@@ -89,7 +89,7 @@ devp2p / discv5 等。块与 blob（EIP-4844 后）传播是新带宽账。
 ## 10. 密码学
 
 secp256k1 ECDSA、Keccak-256、树哈希；共识层 BLS 聚合投票；blobs 涉及 KZG（EIP-4844）。  
-CL 的 `DomainType`（proposer ≠ attester）与 `compute_signing_root` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不要和 EIP-712 混名。  
+CL 的 `DomainType`（proposer ≠ attester；Altair 另加 `DOMAIN_SYNC_COMMITTEE = 0x07000000`）与 `compute_signing_root` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不要和 EIP-712 混名。同步委员会轻客户端验证的是 **512 抽样**，不是 Casper 全集合：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。  
 用户账户默认仍非后量子。
 
 ---
@@ -102,6 +102,7 @@ CL 的 `DomainType`（proposer ≠ attester）与 `compute_signing_root` 见 [`.
 | 各客户端忠实同一规范 | 实现分歧停链或分叉 |
 | 椭圆曲线 | 账户可被盗签 |
 | 用户不盲信 RPC | 用户被骗 |
+| 轻客户端跟同步委员会 | 验证的是 512 抽样的信标头，不是 FFG 全集合，也不是执行层余额 |
 | 构建者市场不彻底卡特尔 | 审查与 MEV 抽取 |
 
 ---

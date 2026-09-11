@@ -120,4 +120,4 @@ Ethereum 合并后主网。PBS 之后，提议者可能不自己选交易（5.4�
 | 经济 | 罚没支撑最终性假设；不是「秒最终」口号 |
 
 **禁止假学习：** 「PoS 所以秒最终。」「出块了 = finalized。」「和 Tendermint 一样一槽一 commit。」  
-**边界：** 不写当前 slot 秒数当永恒；不证弱主观性数学。见 `tracks/finality/`。attestation 与 proposer 的 `DomainType` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不是 EIP-712。
+**边界：** 不写当前 slot 秒数当永恒；不证弱主观性数学。见 `tracks/finality/`。attestation 与 proposer 的 `DomainType` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不是 EIP-712。Altair 同步委员会轻客户端：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。

@@ -337,6 +337,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M7.5 共享安全对照 · 进阶
 - restaking 等后到项目：只收「独特思想」，不因有名而学
+- 覆盖：课文 L7.3；EigenLayer 仅过滤器 `protocols/eigenlayer/`（已质押 ETH/LST 再声明 + AVS 自定罚没）；Babylon 仅过滤器 `protocols/babylon/`（BTC UTXO 仍在比特币）；不要开 19 节
 
 ---
 
@@ -392,7 +393,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
-- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`
+- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`；Altair 抽样 `tracks/light-clients/worked-example-sync-committee.md`
 
 ### M9.7 协议测试 · 必学
 - unit / property / fuzz / differential / chaos / mutation
@@ -428,11 +429,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–21）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–22）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C23；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C24；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
@@ -455,7 +456,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | Monad / Sei | Monad：共识先定序、根延迟 `D` 块（`protocols/monad` 仅过滤器）。Sei 仍待独特思想，不写页 | L5 + L6 | 进阶 |
 | Starknet / zkSync | ZK 执行层的不同证明系统 | L7 + L8 | 研究级 |
 | Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写） | L7 | 重要 |
-| EigenLayer / Babylon | 再质押 / BTC UTXO 仍留在 Bitcoin（`protocols/babylon` 仅过滤器页） | L7 共享安全对照 | 进阶 |
+| EigenLayer / Babylon | 再质押：`protocols/eigenlayer` 仅过滤器（AVS 罚没不必客观可归属）。BTC UTXO 仍留在 Bitcoin：`protocols/babylon` 仅过滤器。都无 19 节 | L7 共享安全对照 | 进阶 |
 | Filecoin / Arweave | 存储证明、永久数据 | 仅当「不确定」要做存储 | 按需 |
 | Nervos | 状态占用 / 链下生成（`protocols/nervos` + L2.6） | L2 + L9 经济 | 进阶 |
 | ICP | 容器、子网、链密钥 | 仅当独特思想被确认 | 研究级 |

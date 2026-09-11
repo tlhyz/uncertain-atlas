@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 27）
+
+- Altair 同步委员会轻客户端精读：512 抽样的 2/3 ≠ 全验证者 2/3；`MIN_SYNC_COMMITTEE_PARTICIPANTS = 1` 是处理下限；EIP-8390 仅草案。
+- 反模式 sample-sold-as-full-set；不变量 22；语料 C24。
+- EigenLayer 仅过滤器页：restake + AVS 自定、不必客观可归属的罚没。对照 Polkadot / Babylon。无 19 节、不抄 TVL。
+- L10.3 建议清单第 17、18 条。通读第 19 步、最终性表、Ethereum 档案互指。
+
 ## 2026-09-12（续 26）
 
 - 证据精读：CometBFT `DuplicateVoteEvidence` / `LightClientAttackEvidence`。引擎发现并通知应用，不自动 slash。

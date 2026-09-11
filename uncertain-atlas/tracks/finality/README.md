@@ -8,6 +8,7 @@
 | Bitcoin | 无「最终」；最重链 | k 确认 = 不可逆 | 两边可长 | L3.1 |
 | CometBFT | 高度上的 commit | 投票中 = 已提交 | 倾向停 | L4.3 |
 | Ethereum | head / justified / finalized | 出块 = finalized | 头可摆；最终有弱主观性 | L5.2 |
+| Ethereum Altair LC | 512 抽样超多数签的信标头 | 抽样 2/3 = Casper finalized | 跟的是委员会视图，不是全集合最终 | L9.6 / 精读 |
 | Avalanche | 抽样固化 | 参数 = BFT commit | 视参数 | 档案 |
 | Algorand | 论文下快速最终（以规范为准） | 抽签 = 已结算 | 视同步假设 | 档案 |
 | Solana | 确认深度 + Tower 锁 | 槽时间 = commit | 活性事故有记录待原文 | L6.1 |

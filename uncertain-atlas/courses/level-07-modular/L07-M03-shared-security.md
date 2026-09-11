@@ -45,7 +45,7 @@
 
 缺 2 或 3：外层最终的是「一团无法检查的雾」。
 
-**事实：** Polkadot 用 backing + availability + approval 逼近 2 和 3。Rollup 用 DA 层 + 欺诈/有效性证明。Restaking 是另一条「借经济」路线，思想同类、实现不同。
+**事实：** Polkadot 用 backing + availability + approval 逼近 2 和 3。Rollup 用 DA 层 + 欺诈/有效性证明。Restaking 是另一条「借经济」路线：抵押对象是**已经**为以太坊质押的 ETH/LST，罚没条件由 AVS 定义、不必客观可归属。思想同类、对象不同。过滤器：[`../../protocols/eigenlayer/README.md`](../../protocols/eigenlayer/README.md)。
 
 ---
 
@@ -105,4 +105,4 @@ Polkadot 平行链；Ethereum rollup；对比：独立小 PoS 链自养安全。
 | 经济 | 桥里的钱 vs 能罚的钱 |
 
 **禁止假学习：** 「共享安全所以应用也安全。」
-**边界：** restaking 品牌不因有名展开。NEAR Nightshade 是一条链上的 chunk，不是本课的「小链借用中继」；见 `protocols/near/`。Babylon 只过过滤器：`protocols/babylon/`。
+**边界：** restaking 不因有名写 19 节。过滤器：[`../../protocols/eigenlayer/README.md`](../../protocols/eigenlayer/README.md)。NEAR Nightshade 是一条链上的 chunk，不是本课的「小链借用中继」；见 `protocols/near/`。Babylon 只过过滤器：`protocols/babylon/`。

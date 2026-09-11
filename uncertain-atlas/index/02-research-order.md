@@ -266,6 +266,7 @@ Polkadot 把「小链借用大链安全」做成系统。
 | Cardano | eUTXO（L2.5 已写，不写全生态） |
 | 真实 PQ 部署实验 | 有状态 XMSS 部署：QRL 仅过滤器页；思想卡 `tracks/post-quantum/stateful-hbs.md` |
 | Monad | 异步执行：共识先定序、本块无状态根（仅过滤器页；官方文档，无 19 节） |
+| EigenLayer | 已质押 ETH/LST 再声明 + AVS 自定、不必客观可归属的罚没（仅过滤器页；ELIP-002 / 产品文档，无 19 节） |
 
 默认后置：
 

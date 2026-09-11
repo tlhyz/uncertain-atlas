@@ -417,3 +417,16 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A126 | 记录 | 过期判定原文是两年龄条件「且」 | 页上按原文抄；实现改「或」则语料红 |
 
 未做：写出题、amnesia 隔离算法、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 03:10 UTC · Altair 抽样轻客户端 + EigenLayer 滤网
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A127 | 中 | L9.6 / 最终性表会把「2/3」糊成一句 | `worked-example-sync-committee.md`：512 抽样、`MIN=1` 只是处理下限、超多数按 `len(sync_committee_bits)` |
+| A128 | 中 | 钱包文案可把抽样超多数写成 Casper 最终 | 反模式 sample-sold-as-full-set；不变量 22；语料 C24；L10.3 第 17 条 |
+| A129 | 中 | M7.5 restaking 只有树名没有对象页 | `protocols/eigenlayer/` 过滤器：已质押 ETH/LST 再声明；ELIP-002 罚没不必客观可归属 |
+| A130 | 低 | EIP-8390 会被抄成「主网已删同步委员会」 | 页上标明 Draft、无分叉 epoch；禁止抄草案验证者人数 / 发行量 |
+| A131 | 低 | 初稿链到不存在的 `L7-chain-studies` / `implementation/evidence.md` | 已改为现有课路径与 `tracks/economic/worked-example-evidence.md` |
+| A132 | 记录 | EigenLayer 文献是 ELIP + 产品文档 | 不做 19 节；不抄 TVL；建议 v1 不把 restake 当默认模块 |
+
+未做：写出题、实现 runner、填 CPU、选型、Altair/EigenLayer 19 节、改交易代码。Goal 保持 active。

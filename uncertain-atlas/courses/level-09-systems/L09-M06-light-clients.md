@@ -39,9 +39,11 @@
 | DAS | 头 + 若干份额 | 纠删码、抽样诚实足够 | 单独份额≠执行正确 |
 | 递归 SNARK | 小证明 + 现根 | 证明系统 + 电路 | 自动的账户内容、DA |
 | BFT 轻客户端 | 头 + commit + 集合 | 信任期、init 头、旧集合重叠 | `Apply` / 余额；检测要第二全节点 |
+| Altair 同步委员会 | 信标头 + 512 抽样聚合签 | 当期委员会超多数、独立域 | 全验证者 2/3、执行层余额、Casper 罚没 |
 
 **事实：** 上表可以组合（例如：递归证明 + 状态证明 + 外部 DA）。组合是假设相加，不是假设相消。  
 **事实：** BFT 轻客户端不是 SPV。跳过中间块时，重叠的是**已信任的** `NextValidators`，不是新委员会自嗨的 2/3。精读：[`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。  
+**事实：** Ethereum Altair 轻客户端跟的是 **512 人样本**，不是全验证者集合。精读：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。EIP-8390 是草案，不是已激活删除。  
 **事实：** 轻客户端安全 ≠ 手机 App 安全。App 默认仍可能是 RPC。
 
 ---
@@ -72,7 +74,8 @@ Bitcoin SPV；Ethereum 轻客户端 / 同步委员会路线（细节以规范为
 - 用正确的词包装 RPC。  
 - 给路径对一个非 canonical 根。  
 - DAS 份额不够仍显示绿勾。  
-- 证明验证跳过（test-skip-as-pass）。
+- 证明验证跳过（test-skip-as-pass）。  
+- 把同步委员会抽样 2/3 写成「全网已最终确定」。
 
 ---
 
@@ -101,4 +104,4 @@ Bitcoin SPV；Ethereum 轻客户端 / 同步委员会路线（细节以规范为
 | 经济 | 默认 RPC 则「无需信任」是假句 |
 
 **禁止假学习：** 「有 Merkle 就是全节点。」「有 ZK 就是无需信任。」  
-**边界：** 不讲同步委员会的当前常数；不把某一手机钱包当规范。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)、[`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。不抄某一链的解绑秒数。
+**边界：** 同步委员会常数只引用稳定规范（512 / 256 epoch / `MIN_SYNC_COMMITTEE_PARTICIPANTS = 1`）；EIP-8390 是草案，不是已激活删除。不抄草案里的验证者人数与发行量。不把某一手机钱包当规范。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)、[`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)、[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。不抄某一链的解绑秒数。
