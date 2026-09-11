@@ -11,3 +11,4 @@
 | [invariants/](invariants/README.md) | 可测试断言（逐渐从失败博物馆提取） |
 | [threat-model/](threat-model/README.md) | 「不确定」对手是谁 |
 | [new-chain-intake.md](new-chain-intake.md) | 新链 19 问；过不了过滤器不建档 |
+| [settlement-copy.md](settlement-copy.md) | 结算文案不得比协议对象更硬 |

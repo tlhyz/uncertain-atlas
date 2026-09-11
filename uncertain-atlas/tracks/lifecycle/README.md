@@ -20,4 +20,5 @@
 **事实：** 只有 CometBFT 列把「协议最终」和「一个高度」对齐得最硬；其余都要再问一句。  
 **建议：** 「不确定」产品只选一列当结算语义，写进用户能看见的句子。
 
-对照：`tracks/finality/`。RPC 当验证：反模式 rpc-as-verification。
+精读实例：[`worked-example.md`](worked-example.md)（Bitcoin / CometBFT / Ethereum 走同一笔「1」）。  
+对照：`../finality/`。文案：[`../../libraries/settlement-copy.md`](../../libraries/settlement-copy.md)。RPC 当验证：反模式 rpc-as-verification。
