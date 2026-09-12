@@ -55,6 +55,8 @@
 
 精读：[`../../tracks/lifecycle/worked-example-signed-message-vs-control.md`](../../tracks/lifecycle/worked-example-signed-message-vs-control.md)（不变量 258）。看见签过的消息不是已经证明能控制资金。看见签过不是已经证明发过上一笔。看见资金证明清单不是已经齐，也不是已经没花。
 
+精读：[`../../tracks/lifecycle/worked-example-reserves-vs-spend.md`](../../tracks/lifecycle/worked-example-reserves-vs-spend.md)（不变量 293）。看见储备证明交易不是已经能花，也不是已经能确认。看见其余输入签过不是已经控制资金，也不是已经付过。看见 POR 栏不是已经是普通花费。
+
 精读：[`../../tracks/lifecycle/worked-example-silent-payment-vs-output.md`](../../tracks/lifecycle/worked-example-silent-payment-vs-output.md)（不变量 260）。看见静默付款地址不是已经有一笔链上输出。看见扫过不是已经收到。看见同一条码再用不是已经同一笔输出。
 
 精读：[`../../tracks/lifecycle/worked-example-dns-name-vs-instruction.md`](../../tracks/lifecycle/worked-example-dns-name-vs-instruction.md)（不变量 261）。看见可读名字不是已经该走 DNS。看见 TXT 不是已经是合法付款指示。看见复制了名字不是已经是 URI。

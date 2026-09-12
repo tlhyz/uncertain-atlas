@@ -295,3 +295,4 @@
 - [original-sold-as-payjoin](original-sold-as-payjoin.md)
 - [order-sold-as-lex](order-sold-as-lex.md)
 - [testnet3-sold-as-testnet4](testnet3-sold-as-testnet4.md)
+- [reserves-sold-as-spend](reserves-sold-as-spend.md)
