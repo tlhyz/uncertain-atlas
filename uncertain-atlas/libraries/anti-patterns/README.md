@@ -220,3 +220,4 @@
 - [churn-sold-as-rewards](churn-sold-as-rewards.md)
 - [mcopy-sold-as-identity](mcopy-sold-as-identity.md)
 - [push0-sold-as-push1](push0-sold-as-push1.md)
+- [basefee-opcode-sold-as-market](basefee-opcode-sold-as-market.md)
