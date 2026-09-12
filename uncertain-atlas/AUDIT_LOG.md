@@ -4041,6 +4041,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2002 | 高 | 看见 VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 / 看见填了 validator_address 会被写成已经带了公钥，或当成已经能验签 | 官方：validator_address is Address of the validator that signed the extension |
 | A2003 | 中 | 怎样写 ExtendVote 请求末栏 / 怎样填 misbehavior / 怎样填 proposer_address 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2004 | 记录 | 会与 363 / 359 / 364 糊成「看见填了 ExtendVote 请求末栏就已经定奖惩」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 请求末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经定奖惩 / 已经知道本头哈希 / 已经带了公钥 标成另一对象 |
+| A2005 | 高 | 看见 ExecTxResult.log 是应用日志的输出 / 看见回了日志 会被写成已经是 Query 日志，或当成已经新鲜 | 工作实例：abci++_methods ExecTxResult 官方写 log is The output of the application's logger；Deterministic = No |
+| A2006 | 高 | 看见 ExecTxResult.info 是附加信息 / 看见回了信息 会被写成已经是 CheckTx 附加信息，或当成已经是 Query 附加信息 | 官方：info is Additional information；Deterministic = No |
+| A2007 | 高 | 看见 ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略 / 看见记了日志 会被写成已经印进本头，或当成已经是共识 | 官方应用需求：Info and Log are non-deterministic debug fields；CometBFT logs them and otherwise ignores them |
+| A2008 | 中 | 怎样写 ExecTxResult 日志栏 / 怎样填日志 / 怎样填附加信息 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2009 | 记录 | 会与 384 / 391 / 316 糊成「看见填了 ExecTxResult 日志栏就已经是 Query 日志」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult 日志栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 Query 日志 / 已经是 CheckTx 附加信息 / 已经印进本头 标成另一对象 |
 
 
 

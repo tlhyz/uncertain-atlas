@@ -416,3 +416,4 @@
 - [extreqtxs-sold-as-fintxs](extreqtxs-sold-as-fintxs.md)
 - [initonce-sold-as-crash](initonce-sold-as-crash.md)
 - [extreqmis-sold-as-reward](extreqmis-sold-as-reward.md)
+- [exectxlog-sold-as-querylog](exectxlog-sold-as-querylog.md)

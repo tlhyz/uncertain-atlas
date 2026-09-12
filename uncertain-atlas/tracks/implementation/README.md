@@ -116,6 +116,7 @@
 - [`worked-example-extreqtxs-vs-fintxs.md`](worked-example-extreqtxs-vs-fintxs.md) — ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 ≠ 已经执行那些交易；ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 ≠ 已经交差 local_last_commit；ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 ≠ 已经是 Finalize 请求栏的 next_validators_hash（不变量 411）
 - [`worked-example-initonce-vs-crash.md`](worked-example-initonce-vs-crash.md) — InitChain 创世时只调一次 ≠ 已经是崩溃后再调；应用可以决定接受创世验证者集合或用创世应用信息算出另一套 ≠ 已经没有集合；Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 ≠ 已经改了集合（不变量 412）
 - [`worked-example-extreqmis-vs-reward.md`](worked-example-extreqmis-vs-reward.md) — ExtendVoteRequest.misbehavior 是拟议块里那些过错信息 ≠ 已经定奖惩；ExtendVoteRequest.proposer_address 是造这份提案的验证者地址 ≠ 已经知道本头哈希；VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 ≠ 已经带了公钥（不变量 413）
+- [`worked-example-exectxlog-vs-querylog.md`](worked-example-exectxlog-vs-querylog.md) — ExecTxResult.log 是应用日志的输出 ≠ 已经是 Query 日志；ExecTxResult.info 是附加信息 ≠ 已经是 CheckTx 附加信息；ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略 ≠ 已经印进本头（不变量 414）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

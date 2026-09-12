@@ -415,6 +415,7 @@
 | 406 | ExtendVote 请求余栏被写成已经执行那些交易 | 协议 + 文案 | 看见 ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 / ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 / ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 / ExtendVote 请求余栏当成已经执行那些交易或已经交差 local_last_commit或已经是 Finalize 请求栏的 next_validators_hash | 不变量 411；语料 C415 |
 | 407 | InitChain Usage 余量被写成已经是崩溃后再调 | 协议 + 文案 | 看见 InitChain 创世时只调一次 / 应用可以决定接受创世验证者集合或用创世应用信息算出另一套 / Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 / InitChain Usage 余量当成已经是崩溃后再调或已经没有集合或已经改了集合 | 不变量 412；语料 C416 |
 | 408 | ExtendVote 请求末栏被写成已经定奖惩 | 协议 + 文案 | 看见 ExtendVoteRequest.misbehavior 是拟议块里那些过错信息 / ExtendVoteRequest.proposer_address 是造这份提案的验证者地址 / VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 / ExtendVote 请求末栏当成已经定奖惩或已经知道本头哈希或已经带了公钥 | 不变量 413；语料 C417 |
+| 409 | ExecTxResult 日志栏被写成已经是 Query 日志 | 协议 + 文案 | 看见 ExecTxResult.log 是应用日志的输出 / ExecTxResult.info 是附加信息 / ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略 / ExecTxResult 日志栏当成已经是 Query 日志或已经是 CheckTx 附加信息或已经印进本头 | 不变量 414；语料 C418 |
 
 ## 不自动覆盖
 
