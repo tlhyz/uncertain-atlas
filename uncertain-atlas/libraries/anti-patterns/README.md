@@ -212,3 +212,4 @@
 - [window-sold-as-consensus](window-sold-as-consensus.md)
 - [clz-sold-as-zk](clz-sold-as-zk.md)
 - [bpo-sold-as-hardfork](bpo-sold-as-hardfork.md)
+- [config-sold-as-aligned](config-sold-as-aligned.md)
