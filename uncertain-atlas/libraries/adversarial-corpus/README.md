@@ -161,6 +161,7 @@
 | C148 | 144 策略≠共识 | 文案把策略拒绝写成共识非法；或把邻居不转发 / 钱包「失败」写成链已经判死刑；或把策略通过写成已经进块；或把费率高写成更正确；或把策略写成已经作用于块内交易；或把本节点 mempool 写成全网共享池；或与 44 / 25 / 89 / 143 糊成「被拒绝」一句 | 必须红 | 协议+文案 | bitcoin/bitcoin doc/policy/README.md |
 | C149 | 145 blob气≠执行气 | 文案把 blob gas 写成普通执行 gas；或把 `BLOBHASH` / versioned hash 写成已经读到 sidecar 字节；或把付了 blob fee 写成数据已经永存；或把 blob fee 失败不退写成执行已经成功；或把执行层写成负责持久化 blob；或与 23 / 9 / 144 / 101 糊成「gas / DA」一句 | 必须红 | 协议+文案 | eips.ethereum.org EIP-4844 |
 | C150 | 146 客户端≠数据包 | 文案把 ICS-02 客户端写成已经开连接；或把连接写成已经开通道；或把通道写成已经送达数据包 / 已经 ICS-20 兑付；或把 `sendPacket` 写成对岸已经 recv；或把 relayer 未提交写成高度已停；或与 77 / 78 / 79 / 9 / 113 糊成「跨链」一句 | 必须红 | 协议+文案 | github.com/cosmos/ibc ICS-02 / ICS-03 / ICS-04 |
+| C151 | 147 本头根≠本块 | 文案把本头 AppHash 写成本高度交易已经交差；或把本块 DataHash 有这笔写成效果已经进本头；或把 FinalizeBlock 刚回的根写成已经印在本头；或把 AppHash 写成区块链自己的状态；或把第一块 AppHash 写成创世交易已经 Apply；或与 33 / 38 / 56 / 136 / 35 糊成「状态根」一句 | 必须红 | 协议+文案 | cometbft spec/core/data_structures.md；ABCI++ FinalizeBlock |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

@@ -44,3 +44,4 @@
 - [name-the-relay-door](name-the-relay-door.md)
 - [name-the-blob-fee](name-the-blob-fee.md)
 - [name-the-ibc-object](name-the-ibc-object.md)
+- [name-the-header-apphash](name-the-header-apphash.md)

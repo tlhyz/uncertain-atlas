@@ -107,6 +107,8 @@ gossip 共识消息、块、交易。验证者集合已知，和 Bitcoin 的无�
 
 WAL：先记「我要投什么」，再投票，防崩溃后投出矛盾票。  
 应用自己的数据库必须与高度原子对齐。断电半写是部署/实现经典坑。  
+本头 `AppHash` 是上一块执行并提交之后的应用根，不是本高度交易已经交差。见 [`../../tracks/consensus/worked-example-apphash-vs-this-block.md`](../../tracks/consensus/worked-example-apphash-vs-this-block.md)（不变量 147）。
+
 State sync：装应用快照、不重放历史块；只有轻验 `AppHash` 可信。见 [`../../tracks/implementation/worked-example-statesync.md`](../../tracks/implementation/worked-example-statesync.md)。
 
 ---

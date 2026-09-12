@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 148）
+
+- CometBFT 本头 AppHash 工作实例（官方数据结构 + ABCI++，不另写 19 节）：本头 AppHash 不是本高度交易已经交差。本块 DataHash 有这笔不是效果已经进本头。FinalizeBlock 回的根进下一块头。出处 cometbft spec/core/data_structures.md；ABCI++ FinalizeBlock。
+- 不变量 147；语料 C151；模式 name-the-header-apphash；反模式 apphash-sold-as-this-block；L10.3 第 143 条。填 L4.4 / CometBFT 档案 / 共识表 / 停链面地图。
+- 不抄哈希宽度 / ChainID 上限 / 票槽上限。不写怎样伪造 AppHash。不编博物馆页。不另写 19 节。不与 33 / 38 / 56 / 136 / 35 糊成一句。Monad D、state sync、轻客户端跳过标成另一对象。
+
 ## 2026-09-12（续 147）
 
 - IBC 四对象工作实例（官方 IBC/TAO 规范，不另写 19 节）：轻客户端不是已经开连接。连接不是已经开通道。通道不是已经送达数据包。发出承诺不是对岸已经 recv。出处 github.com/cosmos/ibc ICS-02 / ICS-03 / ICS-04。
