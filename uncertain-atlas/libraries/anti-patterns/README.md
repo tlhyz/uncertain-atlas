@@ -386,3 +386,4 @@
 - [checktxspace-sold-as-code](checktxspace-sold-as-code.md)
 - [syncingheight-sold-as-history](syncingheight-sold-as-history.md)
 - [queryprove-sold-as-proof](queryprove-sold-as-proof.md)
+- [querycode-sold-as-consensus](querycode-sold-as-consensus.md)

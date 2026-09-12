@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 385）
+
+- CometBFT Query 回包码工作实例（官方 ABCI++ Methods Query Response，实现 / Query 回包码，不另写 19 节）：看见 Query 回包 code 是回包码不是已经过了共识。看见 Query 回包 log 是应用日志输出不是已经新鲜。看见 Query 回包 info 是附加信息不是已经是按键查。Query 回包码不是不变量 373，也不是不变量 329，也不是不变量 380。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 384；语料 C388；模式 name-the-query-code；反模式 querycode-sold-as-consensus；L10.3 第 380 条。填 L4.4 / CometBFT 档案 Query 回包码 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Query 回包码、怎样填日志、怎样填附加信息。不编博物馆页。不另写 19 节。不与 373 / 329 / 380 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。回包码、本地查询、回包键值标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 384）
 
 - CometBFT Query 证明回包工作实例（官方 ABCI++ Methods Query Request / Query Response，实现 / Query 证明回包，不另写 19 节）：看见 Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash。看见 Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明不是已经是按键查。看见 Query 回包 height 是数据来自哪一高不是已经是请求高度。Query 证明回包不是不变量 325，也不是不变量 380，也不是不变量 371。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -3891,6 +3891,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1852 | 高 | 看见 Query 回包 height 是数据来自哪一高 / 看见回了高度 会被写成已经是请求高度，或当成已经新鲜 | 官方：The block height from which data was derived |
 | A1853 | 中 | 怎样写 Query 证明 / 怎样勾 prove / 怎样编 proof_ops会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1854 | 记录 | 会与 325 / 380 / 371 糊成「看见勾了 prove 就已经对上 AppHash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 证明回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。查询证明 / 回包键值 / 请求高度标成另一对象 |
+| A1855 | 高 | 看见 Query 回包 code 是回包码 / 看见回了码 会被写成已经过了共识，或当成已经没进块 | 工作实例：abci++_methods Query Response 官方写 code is Response code |
+| A1856 | 高 | 看见 Query 回包 log 是应用日志输出 / 看见回了日志 会被写成已经新鲜，或当成已经复制到各节点 | 官方：log is The output of the application's logger |
+| A1857 | 高 | 看见 Query 回包 info 是附加信息 / 看见回了信息 会被写成已经是按键查，或当成已经对上 AppHash | 官方：info is Additional information |
+| A1858 | 中 | 怎样写 Query 回包码 / 怎样填日志 / 怎样填附加信息会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1859 | 记录 | 会与 373 / 329 / 380 糊成「看见 Query 回了码就已经过了共识」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包码 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。回包码 / 本地查询 / 回包键值标成另一对象 |
 
 
 
