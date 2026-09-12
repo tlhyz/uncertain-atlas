@@ -252,3 +252,4 @@
 - [sendheaders-sold-as-have](sendheaders-sold-as-have.md)
 - [wtxidrelay-sold-as-have](wtxidrelay-sold-as-have.md)
 - [erlay-sold-as-have](erlay-sold-as-have.md)
+- [limited-service-sold-as-archive](limited-service-sold-as-archive.md)

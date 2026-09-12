@@ -113,5 +113,5 @@ crash_at_any_point ⇒ restart ∈ {pre_H, post_H_complete}
 | 部署 | 断电、磁盘满、状态同步源 |
 | 经济 | 存档成本谁付（L2.6） |
 
-**禁止假学习：** 「fsync 慢所以可以先写一半。」「state sync 过了所以从创世验证过。」
-**边界：** 见反模式 half-written-state。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)、[`../../tracks/implementation/worked-example-statesync.md`](../../tracks/implementation/worked-example-statesync.md)（快照跳过历史重放；锚是轻验 AppHash，不是 Snapshot.hash）。轻验集合 ≠ 提议者选择：ASA-2024-009。写盘前尺寸检查不得用平台宽度整数：CVE-2025-46597（卡住内存池旋钮 ≠ 固定宽度）。
+**禁止假学习：** 「fsync 慢所以可以先写一半。」「state sync 过了所以从创世验证过。」「有限服务位 = 已经能服任意旧块。」「只保证最近窗口 = 已经剪枝。」
+**边界：** 见反模式 half-written-state。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)、[`../../tracks/implementation/worked-example-statesync.md`](../../tracks/implementation/worked-example-statesync.md)（快照跳过历史重放；锚是轻验 AppHash，不是 Snapshot.hash）。轻验集合 ≠ 提议者选择：ASA-2024-009。写盘前尺寸检查不得用平台宽度整数：CVE-2025-46597（卡住内存池旋钮 ≠ 固定宽度）。有限服务位 ≠ 已经能服任意旧块；只保证最近窗口 ≠ 已经剪枝：[`../../tracks/network/worked-example-limited-service-vs-archive.md`](../../tracks/network/worked-example-limited-service-vs-archive.md)（不变量 250）。不要抄位编号 / 窗口块数。
