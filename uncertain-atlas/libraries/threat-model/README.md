@@ -346,6 +346,7 @@
 | 337 | FinalizeBlock 确定性被写成已经可以像 Prepare 那样 | 协议 + 文案 | 看见 Finalize 算出的状态必须只依赖上一份状态和决定块 / Finalize 算出的结果必须只依赖上一份状态和决定块 / 两边状态机复制 / FinalizeBlock 确定性当成已经可以像 Prepare 那样或已经印进本头或已经是 Process 同判 | 不变量 342；语料 C346 |
 | 338 | PbtsEnableHeight 被写成已经启用 PBTS | 协议 + 文案 | 看见写成 0 / H 之前仍用 BFT Time / 启用之后不能关 / PbtsEnableHeight 当成已经启用 PBTS 或已经切到 PBTS 或已经是扩展启用高度那种切换 | 不变量 343；语料 C347 |
 | 339 | MaxBytes 开销被写成已经整块都能装交易 | 协议 + 文案 | 看见 MaxBytes 减去头集合证据才是交易上限 / 诚实验证者 MAY 出满 MaxBytes / timeout 必须按满块投递延迟算 / MaxBytes 开销与投递当成已经整块都能装交易或已经只会出默认 21 MB 或已经填了 TimeoutPropose 就装得下这次 Prepare 执行 | 不变量 344；语料 C348 |
+| 340 | Prepare 回包上限被写成已经能回超限列表 | 协议 + 文案 | 看见整池可见 / 聚合体积可以超过 max_tx_bytes / Req 2 保证回的列表不让块超字节上限 / Prepare 回包上限当成已经只能看见装得进一块的子集或已经能回超限列表或已经是引擎会帮你裁 | 不变量 345；语料 C349 |
 
 ## 不自动覆盖
 

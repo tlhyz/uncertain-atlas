@@ -347,3 +347,4 @@
 - [finalizedet-sold-as-prepare](finalizedet-sold-as-prepare.md)
 - [pbtsheight-sold-as-enabled](pbtsheight-sold-as-enabled.md)
 - [maxbytesoverhead-sold-as-full](maxbytesoverhead-sold-as-full.md)
+- [preparereturn-sold-as-trimmed](preparereturn-sold-as-trimmed.md)
