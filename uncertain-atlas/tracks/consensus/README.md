@@ -8,7 +8,7 @@ Vote extension：[`worked-example-vote-extension.md`](worked-example-vote-extens
 集合延迟：[`worked-example-validator-delay.md`](worked-example-validator-delay.md)（H 的 `validator_updates`：H+1 Next、H+2 计票、H+3 last_commit）。  
 块时间算法：[`worked-example-pbts.md`](worked-example-pbts.md)（PBTS timely 窗 ≠ BFT Time 中位数 ≠ Bitcoin MTP ≠ 调整钟）。复算中位数 ≠ 故障者不能抬高 Time：[CSA-2026-001](../failure-museum/csa-2026-001.md)。  
 Bitcoin MTP 三把尺：[`worked-example-mtp.md`](worked-example-mtp.md)（太早 / BIP113 locktime / 太新窗；太新不是 MTP）。  
-本地超时：[`worked-example-timeouts.md`](worked-example-timeouts.md)（`timeout_commit` 是 commit 之后再等，不是最终性、不是锁、不是 PBTS）。  
+本地超时：[`worked-example-timeouts.md`](worked-example-timeouts.md)（`timeout_commit` 是 commit 之后再等，不是最终性、不是锁、不是 PBTS）。默认 MaxBytes 不是第一轮活性 SLA：[ASA-2023-002](../failure-museum/asa-2023-002.md)（`timeout_propose` 必须对照块上限）。  
 应用回的等待：[`worked-example-next-block-delay.md`](worked-example-next-block-delay.md)（`next_block_delay` 非确定性；不是槽位，不是所有发布线都有）。  
 决策表：[`../../libraries/decision-matrix/consensus.md`](../../libraries/decision-matrix/consensus.md)（不确定列空）。
 

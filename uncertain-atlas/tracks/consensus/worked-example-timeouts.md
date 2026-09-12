@@ -12,6 +12,9 @@
 - [L4.2](../../courses/level-04-bft/L04-M02-rounds-and-steps.md)
 - [L4.3](../../courses/level-04-bft/L04-M03-locks.md)
 - [不变量 40](../../libraries/invariants/README.md)（块时间须点名）
+- [不变量 47](../../libraries/invariants/README.md)（本地超时不是最终性）
+- [不变量 63](../../libraries/invariants/README.md)（默认 MaxBytes 不是第一轮 SLA）
+- [ASA-2023-002](../failure-museum/asa-2023-002.md)
 
 ---
 
@@ -44,7 +47,8 @@
 | Commit | 记下 `CommitTime = now`，等到块到齐再进 NewHeight。这里等的是**块**，不是 timeout_commit |
 | NewHeight | `StartTime = CommitTime + timeoutCommit`，等到点再 Propose 下一高度，为的是收掉队 commit |
 
-规范：提案超时随轮加大（`timeoutProposeR`），为活性；提案体积有上限，轮数够了就能传完。
+规范：提案超时随轮加大（`timeoutProposeR`），为活性；提案体积有上限，轮数够了就能传完。  
+仓库默认 `BlockParams.MaxBytes` 不是「第一轮一定能传完」：官方 [ASA-2023-002](../failure-museum/asa-2023-002.md) 要求 `timeout_propose` 对照该上限来算。不要抄咨询里的示例兆字节。超限必须拒，那是另一句，不是活性 SLA。
 
 官方配置文：成功一轮里，**唯一不管怎样都等的**是 `timeout_commit`。其它超时可以因票先到而提前结束。
 
@@ -101,6 +105,7 @@
 - 文档必须分开：锁、块时间、本地超时。不要写「BFT 超时」。
 - `timeout_commit` 若保留，写明「已经 commit 之后等多收票」。想立刻开下一高度，写 `= 0`，不要发明第三种最终性。
 - 第一版超时先当空参数，测过再填。不要抄文档示例秒数。
+- `timeout_propose` 必须对照自己写的块上限。仓库默认 MaxBytes 不是第一轮 SLA（不变量 63）。
 - 不要把 create_empty_blocks 的「大约每秒一块」写成结算 SLA。
 
 ---
@@ -111,6 +116,7 @@
 - 「超时秒数是共识」
 - 「skip_timeout_commit 还在 / 已删，所以更快就是另一种最终」
 - 「PBTS = timeout_propose」
+- 「仓库默认 MaxBytes 下第一轮总能过」
 - 未标注出处的 3s / 1s / 500ms 当永恒共识
 
 ---

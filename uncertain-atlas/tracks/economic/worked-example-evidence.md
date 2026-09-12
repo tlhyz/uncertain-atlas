@@ -54,7 +54,8 @@
 （本页按原文的 **且** 抄。实现若改成「或」，那是实现分叉，语料必须红。）  
 PoS 上证据年龄应**盖住**解绑期，否则人已走，罚不到——与轻客户端 `trustingPeriod < unbondingPeriod` 是同一根钉子的另一头。默认两参数可能短于解绑，见 [证据窗](worked-example-evidence-window.md) 与 [ASA-2024-004](../failure-museum/asa-2024-004.md)。
 
-已上链的证据按哈希去重。块里证据优先于普通交易；体积用 `MaxBytes` 封顶，防已被罚的人刷证据。收块节点在 prevote/precommit **之前**验证据。
+已上链的证据按哈希去重。块里证据优先于普通交易；体积用 `MaxBytes` 封顶，防已被罚的人刷证据。收块节点在 prevote/precommit **之前**验证据。  
+这是**证据体积**上限，不是块本身的 `BlockParams.MaxBytes`。块上限被当成第一轮活性 SLA 见 [ASA-2023-002](../failure-museum/asa-2023-002.md)。
 
 上链之后，`FinalizeBlock` 把 `[]abci.Misbehavior` 交给应用。类型枚举：`DUPLICATE_VOTE` / `LIGHT_CLIENT_ATTACK`。  
 ABCI 附加字段（`TotalVotingPower`、`ValidatorPower`、时间戳等）**不影响证据本身是否成立**，但必须全网一致；错了节点会改成自己算出的值再共识。
