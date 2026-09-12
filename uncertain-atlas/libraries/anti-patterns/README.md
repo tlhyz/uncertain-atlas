@@ -228,3 +228,4 @@
 - [refund-cut-sold-as-gone](refund-cut-sold-as-gone.md)
 - [deprecate-sold-as-changed](deprecate-sold-as-changed.md)
 - [net-meter-sold-as-transient](net-meter-sold-as-transient.md)
+- [calldata-cut-sold-as-unlimited](calldata-cut-sold-as-unlimited.md)
