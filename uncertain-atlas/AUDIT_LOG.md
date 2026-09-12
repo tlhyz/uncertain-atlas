@@ -594,3 +594,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A191 | 记录 | 公告写 Merkle 根 / witness 承诺对不上 | 只当定义形状；不写造块步骤 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 00:50 UTC · 块时间必须点名算法
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A192 | 中 | 「BFT 时间」会把 PBTS 与旧中位数糊成一词 | 精读 PBTS：提议者本地钟 + timely 两不等式；不 timely = prevote nil |
+| A193 | 中 | 会和 MTP、调整钟（52912）糊 | 四列表；不变量 40；语料 C42；反模式 pbts-sold-as-mtp |
+| A194 | 中 | 会把不 timely 写成块非法或已 slash | 规范 issue 仍开放罚没谓词；本页不发明 |
+| A195 | 记录 | 规范与实现写了 PRECISION / MSGDELAY / 1 ms | 不当不确定常数；不抄现行默认毫秒；MSGDELAY 按轮加大是实现 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

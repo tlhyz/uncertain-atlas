@@ -79,6 +79,8 @@ Commit  →  ABCI FinalizeBlock / Commit
 
 **确定性最终：** commit 的 `(h, block)` 不应被诚实节点改掉。分区过久：可能停（保安全），而不是两边各 commit 各的。
 
+**块时间（必须点名）：** 家族里至少两套算法，都不是墙上现在，也不是 Bitcoin MTP。PBTS：提议者本地钟 + 相对收到 `Proposal` 的 timely 窗；不 timely → prevote `nil`。BFT Time：本块时间是上一高度 `LastCommit` 时间戳的加权中位数，可复算。规范态度是新链用 PBTS，BFT Time **可能**弃用——不是已经弃用。见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。
+
 完整锁表是 Level 4 的深课。本档案先禁止简化成「投票过 2/3」。
 
 ---
@@ -129,7 +131,7 @@ SignBytes 是 `CanonicalVote`（type / height / round / block_id / timestamp / c
 | 拜占庭投票权 < 1/3 | 可双最终或永久停，视攻击 |
 | 部分同步最终成立 | 只有安全、没有活性 |
 | 应用确定性 | 验证者状态根分裂 |
-| 时钟/超时大致可用 | 活性变差 |
+| 时钟/超时大致可用 | 活性变差；PBTS 另加 `PRECISION` / `MSGDELAY`，估小了可能卡在一高度 |
 | 验证者密钥未批量泄漏 | 经济/部署层被接管 |
 
 没有「多数算力」假设。有「验证者集合如何产生」的外层（PoS 质押等），那是应用/经济。

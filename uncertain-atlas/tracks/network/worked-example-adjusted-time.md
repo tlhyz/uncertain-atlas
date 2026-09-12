@@ -1,7 +1,7 @@
 # 实例：本地钟被对等节点拧歪，真块变成「太未来」
 
 > **事实 / 推断 / 建议** 已分开。
-> 对照：[分区](../consensus/worked-example-partition.md)、[日蚀](worked-example-eclipse.md)、[CVE-2024-52912](../failure-museum/cve-2024-52912.md)。
+> 对照：[分区](../consensus/worked-example-partition.md)、[日蚀](worked-example-eclipse.md)、[CVE-2024-52912](../failure-museum/cve-2024-52912.md)、[PBTS ≠ MTP](../consensus/worked-example-pbts.md)。
 > 主文献：[Bitcoin Core 披露](https://bitcoincore.org/en/2024/07/03/disclose-timestamp-overflow/)。
 
 ---
@@ -39,4 +39,5 @@
 
 ## 对不确定（建议）
 
-产品句「本节点拒绝该块」必须能点名是：共识规则、本节点钟、还是实现上限。缺这句，就和「链判定非法」糊了。
+产品句「本节点拒绝该块」必须能点名是：共识规则、本节点钟、还是实现上限。缺这句，就和「链判定非法」糊了。  
+调整钟也不是 PBTS timely 窗，更不是 BFT Time 中位数。四把尺见 [`../consensus/worked-example-pbts.md`](../consensus/worked-example-pbts.md)。

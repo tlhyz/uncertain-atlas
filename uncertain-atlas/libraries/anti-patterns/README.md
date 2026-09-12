@@ -44,3 +44,4 @@
 - [assert-sold-as-peer-filter](assert-sold-as-peer-filter.md)
 - [statesync-sold-as-genesis](statesync-sold-as-genesis.md)
 - [mutated-clears-others-download](mutated-clears-others-download.md)
+- [pbts-sold-as-mtp](pbts-sold-as-mtp.md)

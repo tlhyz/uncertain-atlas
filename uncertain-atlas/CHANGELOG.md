@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 43）
+
+- PBTS 精读：块时间是提议者本地钟；timely 相对本节点收到 Proposal 的窗子；不 timely → prevote nil。已在更早轮拿到 +2/3 prevote 再提议的块不再验 timely。启用后不能关。
+- 对照 BFT Time（LastCommit 加权中位数，可复算）、Bitcoin MTP、实现对等调整钟（CVE-2024-52912）。四把尺不是「墙上现在」。
+- 不变量 40；语料 C42；反模式 pbts-sold-as-mtp；L10.3 第 36 条。
+- 不抄 PRECISION / MSGDELAY 默认毫秒，不抄 BFT Time 的 1 ms 当不确定常数。规范仍开放「乱填时间能否罚」。
+
 ## 2026-09-12（续 42）
 
 - 博物馆 CVE-2024-52921：未请求的变异块可清掉其他对等节点的 compact 重建状态。Medium。

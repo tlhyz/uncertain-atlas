@@ -224,12 +224,12 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M4.2 高度、轮次、步骤 · 必学
 - propose / prevote / precommit / commit
-- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`
+- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`；块时间须点名算法 `tracks/consensus/worked-example-pbts.md`（PBTS timely ≠ BFT Time 中位数 ≠ MTP ≠ 调整钟；不变量 40）
 
 ### M4.3 锁、解锁、超时 · 必学
 - locking / unlock / round change
 - 为了 safety 牺牲某一轮 liveness
-- 覆盖：课文 L4.3；打破锁的链上对象是证据，见 `tracks/economic/worked-example-evidence.md`；Casper 两票谓词见 `tracks/economic/worked-example-casper-slashing.md`
+- 覆盖：课文 L4.3；打破锁的链上对象是证据，见 `tracks/economic/worked-example-evidence.md`；Casper 两票谓词见 `tracks/economic/worked-example-casper-slashing.md`；不 timely → prevote nil 是活性代价不是解锁，见 `tracks/consensus/worked-example-pbts.md`
 
 ### M4.4 验证者集合与投票权 · 必学
 - validator set、voting power
@@ -442,11 +442,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–32）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–40）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C41；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C42；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
