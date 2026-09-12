@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 57）
+
+- 博物馆 ASA-2024-009 / GHSA-g5xx-c4hv-9ccc（Medium）：state sync 用轻客户端算共识 `State` 时，当时不比 `ProposerPriority`。
+- 无效提议者状态 → 认错「该谁出块」；多人如此则网络停。补丁：priority 不同则同步失败。
+- 不变量 56；语料 C60；反模式 apphash-sold-as-proposer；L10.3 第 52 条。
+- 对照不变量 38（AppHash）、20（跳过重叠）、46（证据窗）。咨询未给 CVE。
+- 不写怎样改本地库；不抄版本号或 CVSS。
+
 ## 2026-09-12（续 56）
 
 - 博物馆 CVE-2024-52918（Medium）：Bitcoin-Qt 打开 BIP72 URI 按 `r` 远程取 payment request；大文件分配到崩溃。受害人须打开该 URI。

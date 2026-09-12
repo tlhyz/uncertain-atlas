@@ -413,7 +413,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.3 存储 · 必学
 - WAL、原子提交、断电、剪枝、状态同步
 - 「写到一半断电怎么办」
-- 覆盖：课文 L9.3；崩溃精读 `tracks/implementation/worked-example-crash.md`。ABCI 快照 ≠ 创世重放：`tracks/implementation/worked-example-statesync.md`（只有轻验 AppHash 可信；不变量 38）。写盘前尺寸检查固定宽度：CVE-2025-46597（不变量 51）
+- 覆盖：课文 L9.3；崩溃精读 `tracks/implementation/worked-example-crash.md`。ABCI 快照 ≠ 创世重放：`tracks/implementation/worked-example-statesync.md`（只有轻验 AppHash 可信；不变量 38）。轻验集合 ≠ 提议者选择：ASA-2024-009（不变量 56）。写盘前尺寸检查固定宽度：CVE-2025-46597（不变量 51）
 
 ### M9.4 升级 · 重要
 - 软/硬分叉、runtime upgrade、紧急升级
@@ -440,7 +440,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（二十七案；含 ASA-2024-004、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（二十八案；含 ASA-2024-004、ASA-2024-009、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -472,7 +472,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C59；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C60；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

@@ -1,6 +1,6 @@
 # 反模式：应用快照同步被写成从创世重放，或 snapshot.hash 被写成 AppHash
 
-> 真值：[state sync 精读](../../tracks/implementation/worked-example-statesync.md)、[ABCI++ OfferSnapshot](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md)、[不变式 38](../invariants/README.md#38-应用快照必须点名跳过了历史重放且锚是轻验-apphash)。
+> 真值：[state sync 精读](../../tracks/implementation/worked-example-statesync.md)、[ABCI++ OfferSnapshot](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md)、[不变式 38](../invariants/README.md#38-应用快照必须点名跳过了历史重放且锚是轻验-apphash)。亲戚：[apphash-sold-as-proposer](apphash-sold-as-proposer.md)（轻验 AppHash ≠ 提议者日程）。
 
 ## 一句话
 

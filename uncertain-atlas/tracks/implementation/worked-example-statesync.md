@@ -3,7 +3,8 @@
 > **事实 / 推断 / 建议** 已分开。
 > 对照：[assumevalid / assumeutxo](worked-example-assumevalid.md)、[弱主观](../finality/worked-example-weak-subjectivity.md)、[BFT 轻跳过](../light-clients/worked-example-bft-skip.md)、[崩溃原子](worked-example-crash.md)。
 > 主文献：[ABCI++ 基本概念 · State-sync](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_basic_concepts.md)、[方法 OfferSnapshot / Snapshot](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md)、[P2P state sync](https://github.com/cometbft/cometbft/blob/main/spec/p2p/legacy-docs/messages/state-sync.md)。
-> 本页钉 **跳过历史块重放之后，信任的是哪一个哈希**。不抄分块字节上限、最近快照条数、频道号。
+> 本页钉 **跳过历史块重放之后，信任的是哪一个哈希**。不抄分块字节上限、最近快照条数、频道号。  
+> 亲戚：轻验集合对上 ≠ 提议者选择已对齐，见 [ASA-2024-009](../failure-museum/asa-2024-009.md)（不变量 56）。
 
 ---
 
