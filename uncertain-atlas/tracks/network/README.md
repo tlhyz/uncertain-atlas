@@ -34,3 +34,4 @@ ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`
 InitPeer ≠ 已经能交互：[`worked-example-initpeer-vs-addpeer.md`](worked-example-initpeer-vs-addpeer.md)（看见 InitPeer 不是已经能跟它对说；看见已经在 Receive 不是已经过了 AddPeer；看见节点已经在跑不是已经能再登记一个反应堆；305 ≠ 67 ≠ 36）。
 Peer 句柄 ≠ 已经是那个人：[`worked-example-peer-handler-vs-node.md`](worked-example-peer-handler-vs-node.md)（看见 Peer 句柄不是已经是那个人；看见 Broadcast 回了通道不是已经送到每一家；看见 StopPeerForError 不是已经对持久邻居也断干净；306 ≠ 305 ≠ 36 ≠ 67）。
 NumPeers ≠ 已经数完：[`worked-example-numpeers-vs-all.md`](worked-example-numpeers-vs-all.md)（看见 NumPeers 不是已经数完所有邻居；看见能按名字拿到反应堆不是已经独立；看见 PeerState 不是已经验过高度；308 ≠ 306 ≠ 305 ≠ 67）。
+HasChannel ≠ 已经入队：[`worked-example-send-vs-enqueued.md`](worked-example-send-vs-enqueued.md)（看见 HasChannel 为真不是已经入队；看见 Send 回了假不是已经断开；看见 TrySend 回了假不是已经和 Send 同一把尺；309 ≠ 306 ≠ 308 ≠ 67）。

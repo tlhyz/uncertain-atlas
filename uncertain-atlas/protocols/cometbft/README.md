@@ -29,6 +29,8 @@ Peer 句柄不是已经是那个人：[`../../tracks/network/worked-example-peer
 
 NumPeers 不是已经数完所有邻居：[`../../tracks/network/worked-example-numpeers-vs-all.md`](../../tracks/network/worked-example-numpeers-vs-all.md)（不变量 308）。看见能按名字拿到反应堆不是已经独立。看见 PeerState 不是已经验过高度。
 
+HasChannel 为真不是已经入队：[`../../tracks/network/worked-example-send-vs-enqueued.md`](../../tracks/network/worked-example-send-vs-enqueued.md)（不变量 309）。看见 Send 回了假不是已经断开。看见 TrySend 回了假不是已经和 Send 同一把尺。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

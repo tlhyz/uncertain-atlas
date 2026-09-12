@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 310）
+
+- CometBFT 对等发送工作实例（官方 API for Reactors，网络 / 对等发送，不另写 19 节）：看见 HasChannel 为真不是已经入队。看见 Send 回了假不是已经断开。看见 TrySend 回了假不是已经和 Send 同一把尺。对等发送不是不变量 306，也不是不变量 308，也不是不变量 67。出处 github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md。
+- 不变量 309；语料 C313；模式 name-the-send；反模式 send-sold-as-enqueued；L10.3 第 305 条。填 L9.1 / CometBFT 档案对等发送 / 网络表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄发送超时秒数、通道号、队列容量。不写怎样入队、怎样编 protobuf、怎样实现 Send / TrySend。不编博物馆页。不另写 19 节。不与 306 / 308 / 67 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。Broadcast / NumPeers / 入站配额标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 309）
 
 - CometBFT 反应堆查询工作实例（官方 API for Reactors，网络 / 反应堆查询，不另写 19 节）：看见 NumPeers 不是已经数完所有邻居。看见能按名字拿到反应堆不是已经独立。看见 PeerState 不是已经验过高度。反应堆查询不是不变量 306，也不是不变量 305，也不是不变量 67。出处 github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md。
