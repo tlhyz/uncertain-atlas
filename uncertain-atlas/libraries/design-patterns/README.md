@@ -93,3 +93,4 @@
 - [name-the-el-exit](name-the-el-exit.md)
 - [name-the-el-deposit](name-the-el-deposit.md)
 - [name-the-history-hash](name-the-history-hash.md)
+- [name-the-consolidation](name-the-consolidation.md)

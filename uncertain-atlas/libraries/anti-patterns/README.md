@@ -198,3 +198,4 @@
 - [queued-sold-as-exited](queued-sold-as-exited.md)
 - [deposit-sold-as-validator](deposit-sold-as-validator.md)
 - [history-sold-as-blockhash](history-sold-as-blockhash.md)
+- [consolidation-sold-as-done](consolidation-sold-as-done.md)
