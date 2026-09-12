@@ -4403,6 +4403,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2088 | 中 | 怎样写 Process 回包栏 / 怎样挑 ACCEPT/REJECT / 怎样整块执行候选 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2089 | 记录 | 会与 376 / 338 / 347 糊成「看见回了 ProcessProposalResponse.status 就已经当成块非法」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经当成块非法 / 已经可以像 Prepare 那样依赖其它值 / 已经 honest proposal 必须 Accept 标成另一对象 |
 
+| A2090 | 高 | 看见 FinalizeBlockResponse.events 是给索引用的类型键值事件 / 看见回了 events 会被写成已经印进本头，或当成已经像 Code/Data 那样必须确定 | 官方表：events is Type & Key-Value events for indexing；Deterministic = No |
+| A2091 | 高 | 看见 FinalizeBlockResponse.tx_results 是执行这块各笔交易得到的结果列表 / 看见回了 tx_results 会被写成已经是 CheckTx 回包，或当成已经同一顺序就是已经印进 LastResultsHash | 官方表：tx_results is List of structures containing the data resulting from executing the transactions；Deterministic = Yes |
+| A2092 | 高 | 看见 FinalizeBlockResponse.validator_updates 是对验证者集合的改动 / 看见回了 validator_updates 会被写成已经在 H+1 换人，或当成已经是 ValidatorUpdate 用公钥认人就已经改了集合 | 官方 Usage：块 H 触发的 validator_updates 影响 H+1、H+2、H+3 |
+| A2093 | 中 | 怎样写 Finalize 回包栏 / 怎样编 events / 怎样编 ValidatorUpdate 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2094 | 记录 | 会与 357 / 316 / 35 糊成「看见回了 Finalize 回包栏就已经印进本头」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经印进本头 / 已经是 CheckTx 回包 / 已经在 H+1 换人 标成另一对象 |
+
 
 
 

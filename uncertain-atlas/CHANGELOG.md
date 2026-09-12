@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 431）
+
+- CometBFT Finalize 回包栏工作实例（官方 ABCI++ Methods FinalizeBlock Response / Usage，实现 / Finalize 回包栏，不另写 19 节）：看见 FinalizeBlockResponse.events 是给索引用的类型键值事件不是已经印进本头。看见 FinalizeBlockResponse.tx_results 是执行这块各笔交易得到的结果列表不是已经是 CheckTx 回包。看见 FinalizeBlockResponse.validator_updates 是对验证者集合的改动不是已经在 H+1 换人。Finalize 回包栏不是不变量 357，也不是不变量 316，也不是不变量 35。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 431；语料 C435；模式 name-the-fin-resp-bar；反模式 finrespbar-sold-as-header；L10.3 第 427 条。填 L4.4 / CometBFT 档案 Finalize 回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 回包栏、怎样编 events、怎样编 ValidatorUpdate。不编博物馆页。不另写 19 节。不与 357 / 316 / 35 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经印进本头、已经是 CheckTx 回包、已经在 H+1 换人标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 430）
 
 - CometBFT Process 回包栏工作实例（官方 ABCI++ Methods ProcessProposal Response / Usage，实现 / Process 回包栏，不另写 19 节）：看见 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不是已经当成块非法。看见 ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不是已经可以像 Prepare 那样依赖其它值。看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不是已经 honest proposal 必须 Accept。Process 回包栏不是不变量 376，也不是不变量 338，也不是不变量 347。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
