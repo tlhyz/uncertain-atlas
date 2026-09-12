@@ -152,3 +152,4 @@
 - [apphash-sold-as-this-block](apphash-sold-as-this-block.md)
 - [lastcommit-sold-as-this-block](lastcommit-sold-as-this-block.md)
 - [processed-sold-as-head](processed-sold-as-head.md)
+- [refinput-sold-as-spent](refinput-sold-as-spent.md)

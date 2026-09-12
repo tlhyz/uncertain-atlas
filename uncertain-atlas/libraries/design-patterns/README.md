@@ -47,3 +47,4 @@
 - [name-the-header-apphash](name-the-header-apphash.md)
 - [name-the-canonical-commit](name-the-canonical-commit.md)
 - [name-the-forkchoice-event](name-the-forkchoice-event.md)
+- [name-the-reference-input](name-the-reference-input.md)

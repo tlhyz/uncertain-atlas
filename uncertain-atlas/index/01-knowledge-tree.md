@@ -169,7 +169,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M2.4 混合与证明复杂度 · 进阶
 - 钱包体验 vs 证明大小 vs 存储
 - statelessness 的真正含义
-- 覆盖：课文 L2.5（eUTXO）+ L2.6（占用）；完整证明系统后置 L8
+- 覆盖：课文 L2.5（eUTXO）+ L2.6（占用）；引用输入 ≠ 已经花费：[`../tracks/state-models/worked-example-refinput-vs-spent.md`](../tracks/state-models/worked-example-refinput-vs-spent.md)（不变量 150；看见 datum ≠ 已经过锁；同一枚不得既花又引用）。完整证明系统后置 L8
 
 ### M2.5 《状态模型设计地图》初稿 · 重要
 - 对比表：并行、冲突、隐私、存储、可编程、后量子成本
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–149）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–150）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C153；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C154；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
@@ -497,7 +497,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 | 候选 | 可能的独特思想 | 建议插入点 | 优先级 |
 |---|---|---|---|
-| Cardano | eUTXO（L2.5 已写；不写全生态 19 节） | L2 | 进阶 |
+| Cardano | eUTXO（L2.5 已写；不写全生态 19 节）。引用输入 ≠ 已经花费：[`../tracks/state-models/worked-example-refinput-vs-spent.md`](../tracks/state-models/worked-example-refinput-vs-spent.md)（不变量 150） | L2 | 进阶 |
 | Near | Nightshade 一条链+chunk（`protocols/near` 思想级）。Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`../tracks/finality/worked-example-doomslug-vs-bft.md`](../tracks/finality/worked-example-doomslug-vs-bft.md)（不变量 135） | L7 | 进阶 |
 | Algorand | 密码抽签（`protocols/algorand` 已写）。VRF 抽中 ≠ 已经认证：[`../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134） | L4 对照 | 进阶 |
 | Kaspa | 区块 DAG（`protocols/kaspa` + L3.8）。进了某个块 ≠ 已经在 selected chain：[`../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../tracks/consensus/worked-example-dag-vs-selected-chain.md)（不变量 137） | L3 | 进阶 |

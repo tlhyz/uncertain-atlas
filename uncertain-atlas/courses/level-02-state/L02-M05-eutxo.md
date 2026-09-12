@@ -34,7 +34,8 @@ eUTXO：背面还订着一张便签（datum），取款规则看**这一整叠�
 
 - 未花费输出携带：值、锁定脚本、datum（数据）。  
 - 校验器看到：本交易的输入、输出、赎回物，而不只是单输入脚本。  
-- 成功则旧输出消失、新输出出现——仍是 UTXO 原子。
+- 成功则旧输出消失、新输出出现——仍是 UTXO 原子。  
+引用输入看一枚输出，不是已经花掉。精读：[`../../tracks/state-models/worked-example-refinput-vs-spent.md`](../../tracks/state-models/worked-example-refinput-vs-spent.md)（不变量 150）。
 
 **与 Bitcoin UTXO（事实级对照）**
 
@@ -105,10 +106,10 @@ Fuel 等「UTXO + 并行执行」是亲戚，先读本课再读思想级档案�
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 输出数据进承诺则 PQ 税显现 |
-| 协议 | 验证器看本交易 + 引用输出，不是全球可变账户 |
+| 协议 | 验证器看本交易 + 引用输出，不是全球可变账户；引用输入 ≠ 已经花费 |
 | 实现 | 验证脚本必须确定 |
 | 部署 | 数据贴在输出上 = 全节点磁盘 |
 | 经济 | 形式化过 ≠ 供给守恒（反模式 model-equals-implementation） |
 
-**禁止假学习：** 「eUTXO 解决了并发。」「形式化过所以不会通胀。」「Cardano = Bitcoin + 智能合约。」  
-**边界：** 不讲 Plutus 语法、不写质押奖励公式。
+**禁止假学习：** 「eUTXO 解决了并发。」「形式化过所以不会通胀。」「Cardano = Bitcoin + 智能合约。」「引用输入 = 已经花掉。」「脚本看见 datum = 已经过锁。」「同一枚可以既花又引用。」  
+**边界：** 不讲 Plutus 语法、不写质押奖励公式。不抄 CDDL 字段号。引用输入 ≠ 已经花费：[`../../tracks/state-models/worked-example-refinput-vs-spent.md`](../../tracks/state-models/worked-example-refinput-vs-spent.md)（不变量 150）。不另写 19 节。CIP-32 / CIP-33 另标。

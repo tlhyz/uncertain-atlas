@@ -9,7 +9,7 @@
 | 对象所有权 | 类型/对象图 | address-owned 可走快路径；party 仍排队（须单独论证） | shared 回全序 | L6.2 / [精读](worked-example-owned-vs-fastpath.md) |
 | 乐观 STM | 执行后校验 | **禁止**：必须有序列 L | 回滚风暴 | L6.3；[工作实例](worked-example-block-stm.md) |
 | UTXO | 输入不交则可 | 仍要 canonical 历史 | 热输出少见、热合约仍难 | L2.1 |
-| eUTXO | 整笔校验；共享 datum 输出仍抢 | 同 UTXO | 共享脚本 UTXO 单行道 | L2.5 |
+| eUTXO | 整笔校验；共享 datum 输出仍抢；引用 ≠ 花费 | 同 UTXO | 共享脚本 UTXO 单行道 | L2.5 / [精读](../state-models/worked-example-refinput-vs-spent.md) |
 | UTXO+声明调度 | 调度前 | 必须有序 L | 合约 UTXO 热点 | Fuel 档案 / [精读](worked-example-utxo-access-list.md) |
 | Cell + deps | 输入花费 / deps 只读 | 仍要 canonical 历史 | 热 Cell 单行道 | Nervos / L2.6 |
 | 分片账户（Nightshade） | 分片内执行时 | 跨分片靠收据，不是无序 | 热账户挤在同一分片则单行道 | `protocols/near/` |

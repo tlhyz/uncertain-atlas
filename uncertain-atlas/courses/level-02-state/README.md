@@ -14,7 +14,7 @@
 | 2.2 | [L02-M02-account.md](L02-M02-account.md) | 账户 + nonce 换来了什么；可花 ≠ 锁定已从写回排除 |
 | 2.3 | [L02-M03-object-resource.md](L02-M03-object-resource.md) | 对象/资源世界观差在哪 |
 | 2.4 | [L02-M04-design-map.md](L02-M04-design-map.md) | 《状态模型设计地图》 |
-| 2.5 | [L02-M05-eutxo.md](L02-M05-eutxo.md) | eUTXO：输出带着数据 |
+| 2.5 | [L02-M05-eutxo.md](L02-M05-eutxo.md) | eUTXO：输出带着数据；引用输入 ≠ 已经花费（不变量 150） |
 | 2.6 | [L02-M06-state-occupancy.md](L02-M06-state-occupancy.md) | 谁为全节点磁盘付钱 |
 
 对应横向专题副本：`tracks/state-models/`（本课 2.4 即第一版地图）。覆盖：L2.6 → 额外项 Nervos / M2.4 存储列。

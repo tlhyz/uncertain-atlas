@@ -98,7 +98,7 @@
 3. **顺序 ≠ 状态根**（不变量 136）：共识先定序、后揭状态。本页并行的是验证，不是「没有 L」。
 4. **批次 ≠ L**（不变量 132）：传播层。本页不是 Quorum Store。
 5. **Bitcoin UTXO**（L2.1）：冲突可见，规范没写按访问集并行验证。
-6. **eUTXO**（L2.5）：整笔校验；不是本页的只读重叠可并行。
+6. **eUTXO**（L2.5）：整笔校验；不是本页的只读重叠可并行。引用输入 ≠ 已经花费：[`../state-models/worked-example-refinput-vs-spent.md`](../state-models/worked-example-refinput-vs-spent.md)（不变量 150）。
 
 不要把 `MAX_INPUTS`、气价公式、核数、官网吞吐抄进不确定常量。不要写怎样漏列合约输入。不编博物馆页。不另写 19 节。哪条部署当 rollup 租户、Upgrade / Upload 交易类型，标成另一对象。
 

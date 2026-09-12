@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–149。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–150。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -164,6 +164,7 @@
 | C151 | 147 本头根≠本块 | 文案把本头 AppHash 写成本高度交易已经交差；或把本块 DataHash 有这笔写成效果已经进本头；或把 FinalizeBlock 刚回的根写成已经印在本头；或把 AppHash 写成区块链自己的状态；或把第一块 AppHash 写成创世交易已经 Apply；或与 33 / 38 / 56 / 136 / 35 糊成「状态根」一句 | 必须红 | 协议+文案 | cometbft spec/core/data_structures.md；ABCI++ FinalizeBlock |
 | C152 | 148 本头票≠本高 | 文案把本头 LastCommit 写成本高度已经 +2/3；或把本地 subjective commit 写成已经是链上 canonical；或把第一块空 LastCommit 写成已经没有最终；或把 LastCommitHash 写成本块投票已经进本头；或与 65 / 147 / 47 / 4 / 40 糊成「有 Commit」一句 | 必须红 | 协议+文案 | cometbft spec/consensus/consensus.md；spec/core/data_structures.md |
 | C153 | 149 处理≠改头 | 文案把执行层刚跑完一块 / Engine API `VALID` 写成已经改规范头；或把没有 `POS_FORKCHOICE_UPDATED` 写成已经改 fork choice；或把事件里的 head 写成已经 finalized；或把当前头上刚处理的下一块写成已经乐观成头；或与 96 / 127 / 141 / 147 / 3 糊成「VALID / 到了」一句 | 必须红 | 协议+文案 | eips.ethereum.org EIP-3675 |
+| C154 | 150 引用≠花费 | 文案把引用输入写成已经花费；或把脚本看见 datum / 值写成已经检查花费条件；或把同一枚输出写成可以既花又引用；或把引用写成已经解决共享 UTXO 并发；或与 143 / 128 / 15 / 144 糊成「看过 / 用到了」一句 | 必须红 | 协议+文案 | cips.cardano.org CIP-0031；Conway formal ledger txins ∩ refInputs ≡ ∅ |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

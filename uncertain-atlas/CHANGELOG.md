@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 151）
+
+- CIP-31 工作实例（官方 Active CIP + Conway 正式账本，不另写 19 节）：引用输入不是已经花费。看见 datum / 值不是已经检查花费条件。同一输出不得既花又引用。出处 cips.cardano.org CIP-0031；intersectmbo formal-ledger Conway UTXO `txins ∩ refInputs ≡ ∅`。
+- 不变量 150；语料 C154；模式 name-the-reference-input；反模式 refinput-sold-as-spent；L10.3 第 146 条。填 L2.5 / 状态表 / 并行表 / 停链面地图。
+- 不抄 CDDL 字段号 / min UTXO / 硬分叉名。不写怎样构造引用–花费竞态。不编博物馆页。不另写 19 节。不与 143 / 128 / 15 / 144 糊成一句。CIP-32 / CIP-33 / check-input / Hydra 冲突标成另一对象。
+
 ## 2026-09-12（续 150）
 
 - EIP-3675 工作实例（官方 PoS 升级 EIP，不另写 19 节）：处理完一块不是已经改规范头。没有 `POS_FORKCHOICE_UPDATED` 不是已经改 fork choice。事件里的 head 不是已经 finalized。禁止对头做乐观更新。出处 eips.ethereum.org EIP-3675。
