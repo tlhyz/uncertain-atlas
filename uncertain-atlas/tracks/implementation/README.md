@@ -50,6 +50,7 @@
 - [`worked-example-delegation-vs-xpub.md`](worked-example-delegation-vs-xpub.md) — 共享了扩展公钥 ≠ 已经是链码委托；委托方那把非扩展钥 ≠ 已经能推出整棵钱包；这一输入的微调 ≠ 已经是盲签（不变量 289）
 - [`../lifecycle/worked-example-payjoin-vs-original.md`](../lifecycle/worked-example-payjoin-vs-original.md) — 带 pj= 的付款 URI ≠ 已经是 payjoin 付款；原始包 ≠ 已经是提案；收款方加了输入 ≠ 已经另开一笔（不变量 290）
 - [`worked-example-order-vs-lex.md`](worked-example-order-vs-lex.md) — 自家习惯的输入输出顺序 ≠ 已经是字典序标准；按字典序排了 ≠ 已经是共识 / ≠ 已经私人（不变量 291）
+- [`worked-example-testnet4-vs-testnet3.md`](worked-example-testnet4-vs-testnet3.md) — Testnet 4 ≠ 已经是 Testnet 3；20 分钟例外 ≠ 已经没有块风暴；会 Testnet 3 ≠ 已经能安全跟（不变量 292）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）

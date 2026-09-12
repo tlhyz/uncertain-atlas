@@ -73,6 +73,8 @@
 
 精读：[`../../tracks/implementation/worked-example-signet-vs-testnet.md`](../../tracks/implementation/worked-example-signet-vs-testnet.md)（不变量 265）。看见 signet 不是已经是 testnet。看见 signet 不是已经是 regtest。看见头上有合法工作量不是已经签过。
 
+精读：[`../../tracks/implementation/worked-example-testnet4-vs-testnet3.md`](../../tracks/implementation/worked-example-testnet4-vs-testnet3.md)（不变量 292）。看见 Testnet 4 不是已经是 Testnet 3。看见 20 分钟例外不是已经没有块风暴。看见会 Testnet 3 不是已经能安全跟 Testnet 4。
+
 精读：[`../../tracks/implementation/worked-example-purpose-vs-compatible.md`](../../tracks/implementation/worked-example-purpose-vs-compatible.md)（不变量 266）。看见 BIP32 compatible 不是已经能互操作。看见自称 BIPxx compatible 不是已经是那份结构。看见同一套扩展钥前缀不是已经是比特币专用。
 
 精读：[`../../tracks/implementation/worked-example-account-vs-discovered.md`](../../tracks/implementation/worked-example-account-vs-discovered.md)（不变量 267）。看见同一份种子不是已经是同一条币。看见下一个账户号不是已经有过往。看见余额为零不是已经发现完。
