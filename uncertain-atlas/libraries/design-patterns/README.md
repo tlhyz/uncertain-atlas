@@ -148,3 +148,4 @@
 - [name-the-wtxidrelay](name-the-wtxidrelay.md)
 - [name-the-erlay](name-the-erlay.md)
 - [name-the-limited-service](name-the-limited-service.md)
+- [name-the-witness-wire](name-the-witness-wire.md)

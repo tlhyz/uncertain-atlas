@@ -25,3 +25,4 @@ ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`
 按 wtxid 通告 ≠ 已经有交易：[`worked-example-wtxidrelay-vs-have.md`](worked-example-wtxidrelay-vs-have.md)（看见按 wtxid 通告不是已经有那笔交易；发了 wtxidrelay 不是已经改口；仍用旧类型要父交易不是旧库存已经退役；339 ≠ 152 ≠ 130 ≠ 133）。
 对账素描 ≠ 已经有交易：[`worked-example-erlay-vs-have.md`](worked-example-erlay-vs-have.md)（看见对账素描不是已经有那些交易；发了 sendtxrcncl 不是已经在对账；对账失败退回洪水不是库存通告已经退役；330 ≠ 339 ≠ 133 ≠ 36）。
 有限服务位 ≠ 已经是归档：[`worked-example-limited-service-vs-archive.md`](worked-example-limited-service-vs-archive.md)（看见有限服务位不是已经能服任意旧块；只保证最近窗口不是已经剪枝；服了最近一块不是已经暴露剪点；159 ≠ 207 ≠ 243 ≠ 25）。
+带见证的线上序列化 ≠ 已经有见证：[`worked-example-witness-wire-vs-have.md`](worked-example-witness-wire-vs-have.md)（看见带见证的线上序列化不是已经有见证；能提供见证不是已经在传；库存通告仍用旧类型不是线上已经没有见证；144 ≠ 141 ≠ 339 ≠ 130）。
