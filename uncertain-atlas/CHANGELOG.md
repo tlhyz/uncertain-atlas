@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 341）
+
+- CometBFT ProcessProposal 确定性工作实例（官方 Requirements for the Application Formal Requirements 4–5 [`ProcessProposal`, determinism]，实现 / ProcessProposal 确定性，不另写 19 节）：看见 Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值。看见两边对任意块同一裁决不是已经只对诚实提案同一裁决。看见 Process 非确定 bug 没有现成解法不是已经丢了安全性。ProcessProposal 确定性不是不变量 338，也不是不变量 33，也不是不变量 327。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 340；语料 C344；模式 name-the-process-det；反模式 processdet-sold-as-prepare；L10.3 第 336 条。填 L4.4 / CometBFT 档案 ProcessProposal 确定性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ProcessProposal、怎样测确定性、怎样写测试向量。不编博物馆页。不另写 19 节。不与 338 / 33 / 327 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。Prepare 可以不确定 / 四门 / 提议超时标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 340）
 
 - CometBFT CheckTx 弱过滤器工作实例（官方 Requirements for the Application Mempool Connection / CheckTx，实现 / CheckTx 弱过滤器，不另写 19 节）：看见不该验排序相关有效性不是已经该在 CheckTx 里验。看见拜占庭能提案一满块无效交易不是已经被池子挡住。看见 ProcessProposal 对付这种行为不是已经是 CheckTx。CheckTx 弱过滤器不是不变量 312，也不是不变量 33，也不是不变量 313。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

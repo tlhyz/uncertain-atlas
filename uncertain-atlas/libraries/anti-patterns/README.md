@@ -342,3 +342,4 @@
 - [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md)
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md)
 - [checktxweak-sold-as-consensus](checktxweak-sold-as-consensus.md)
+- [processdet-sold-as-prepare](processdet-sold-as-prepare.md)

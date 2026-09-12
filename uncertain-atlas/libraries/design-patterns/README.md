@@ -237,3 +237,4 @@
 - [name-the-maxbytes-cap](name-the-maxbytes-cap.md)
 - [name-the-prepare-nondet](name-the-prepare-nondet.md)
 - [name-the-checktx-weak](name-the-checktx-weak.md)
+- [name-the-process-det](name-the-process-det.md)

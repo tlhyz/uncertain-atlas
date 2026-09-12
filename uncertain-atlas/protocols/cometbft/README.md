@@ -91,6 +91,8 @@ Prepare 没有确定性要求不是已经必须确定：[`../../tracks/implement
 
 不该验排序相关有效性不是已经该在 CheckTx 里验：[`../../tracks/implementation/worked-example-checktx-weak-vs-process.md`](../../tracks/implementation/worked-example-checktx-weak-vs-process.md)（不变量 339）。看见拜占庭能提案一满块无效交易不是已经被池子挡住。看见 ProcessProposal 对付这种行为不是已经是 CheckTx。
 
+Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值：[`../../tracks/implementation/worked-example-process-det-vs-prepare.md`](../../tracks/implementation/worked-example-process-det-vs-prepare.md)（不变量 340）。看见两边对任意块同一裁决不是已经只对诚实提案同一裁决。看见 Process 非确定 bug 没有现成解法不是已经丢了安全性。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

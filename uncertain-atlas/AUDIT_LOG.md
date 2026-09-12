@@ -3671,6 +3671,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1632 | 高 | 看见从 ABCI 1.0 起有 ProcessProposal 对付这种行为 / 看见规范点名 ProcessProposal 会被写成已经是 CheckTx，或当成已经是 Finalize | 官方：对付这种行为的机制是 ProcessProposal |
 | A1633 | 中 | 怎样写 CheckTx / 怎样挑哪些检查留给 Process / 怎样写 ProcessProposal 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1634 | 记录 | 会与 312 / 33 / 313 糊成「看见过了 CheckTx 就已经验完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 弱过滤器 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题 / mempool。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。两份状态 / 四门 / 重放保护标成另一对象 |
+| A1635 | 高 | 看见 ProcessProposal 必须只依赖本次请求和 s_{h-1} / 看见必须确定 会被写成已经可以像 Prepare 那样依赖其它值，或当成已经和 Prepare / ExtendVote 同一把尺 | 官方：Process 是确定函数，只依赖这块和上一份已提交状态 |
+| A1636 | 高 | 看见两边对任意块同一裁决 / 看见提议者是拜占庭 会被写成已经只对诚实提案同一裁决，或当成已经是诚实 Prepare 必须被诚实 Process Accept | 官方：即使提议者是拜占庭，正确进程也必须同判 |
+| A1637 | 高 | 看见 Process 里有非确定 bug / 看见没有现成解法 会被写成已经丢了安全性，或当成已经有协议层补丁 | 官方：活性不能保证；目前没有清楚的解法 |
+| A1638 | 中 | 怎样写 ProcessProposal / 怎样测确定性 / 怎样写测试向量会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1639 | 记录 | 会与 338 / 33 / 327 糊成「看见必须确定就已经可以像 Prepare 那样」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposal 确定性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Prepare 可以不确定 / 四门 / 提议超时标成另一对象 |
+
 
 
 

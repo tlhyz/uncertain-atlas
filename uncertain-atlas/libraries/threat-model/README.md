@@ -341,6 +341,7 @@
 | 332 | BlockParams.MaxBytes 被写成已经没有上限 | 协议 + 文案 | 看见 -1 就按 100 MB 验 / 应用自己卡体积 / 必须 -1 或不超过 100 MB / BlockParams.MaxBytes 当成已经没有上限或已经引擎不管了或已经是默认 21 MB | 不变量 337；语料 C341 |
 | 333 | Prepare / ExtendVote 确定性被写成已经必须确定 | 协议 + 文案 | 看见 Prepare 没有确定性要求 / 两边 raw 一样 / ExtendVote 没有确定性要求 / Prepare / ExtendVote 确定性当成已经必须确定或已经是同一份提案或已经是同一份扩展 | 不变量 338；语料 C342 |
 | 334 | CheckTx 弱过滤器被写成已经验完 | 协议 + 文案 | 看见不该验排序相关有效性 / 拜占庭能提案一满块无效交易 / ProcessProposal 对付这种行为 / CheckTx 弱过滤器当成已经该在 CheckTx 里验或已经被池子挡住或已经是 CheckTx | 不变量 339；语料 C343 |
+| 335 | ProcessProposal 确定性被写成已经可以像 Prepare 那样 | 协议 + 文案 | 看见 Process 必须只依赖请求和上一份状态 / 两边对任意块同一裁决 / Process 非确定 bug 没有现成解法 / ProcessProposal 确定性当成已经可以像 Prepare 那样或已经只对诚实提案或已经丢了安全性 | 不变量 340；语料 C344 |
 
 ## 不自动覆盖
 
