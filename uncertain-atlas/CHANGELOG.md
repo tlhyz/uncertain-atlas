@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 366）
+
+- CometBFT VoteInfo 工作实例（官方 ABCI++ Methods Data Types VoteInfo / CommitInfo，实现 / VoteInfo，不另写 19 节）：看见 VoteInfo 能按到场定奖惩不是已经罚没。看见从拟议块或已决块抽出不是已经带了公钥。看见按投票权降序排不是已经进了块。VoteInfo 不是不变量 363，也不是不变量 364，也不是不变量 300。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 365；语料 C369；模式 name-the-voteinfo；反模式 voteinfo-sold-as-rewarded；L10.3 第 361 条。填 L4.4 / CometBFT 档案 VoteInfo / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编 VoteInfo、怎样排 votes、怎样从 store 再装。不编博物馆页。不另写 19 节。不与 363 / 364 / 300 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。回包义务、Validator 类型、本地 State 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 365）
 
 - CometBFT Validator 类型工作实例（官方 ABCI++ Methods Data Types Validator / ValidatorUpdate，实现 / Validator 类型，不另写 19 节）：看见 Validator 用 address 认人不是已经带了公钥。看见不带 PubKey 是为了不在 ABCI 上传大后量子公钥不是已经选型。看见 ValidatorUpdate 用公钥认人不是已经改了集合。Validator 类型不是不变量 35，也不是不变量 318，也不是不变量 363。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

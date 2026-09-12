@@ -3796,6 +3796,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1757 | 高 | 看见 ValidatorUpdate 用 pub_key_type 和 pub_key_bytes 认人 / 看见更新集合 会被写成已经是 VoteInfo 里那份 Validator，或当成已经改了集合 | 官方：ValidatorUpdate identified by PubKeyType and PubKeyBytes，用来告诉 CometBFT 更新集合 |
 | A1758 | 中 | 怎样编 Validator / 怎样编 ValidatorUpdate / 怎样在 ABCI 上传钥会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1759 | 记录 | 会与 35 / 318 / 363 糊成「看见 VoteInfo 里有验证者就已经带了公钥」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Validator 类型 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。集合延迟 / 空名单 / 回包义务标成另一对象 |
+| A1760 | 高 | 看见 VoteInfo 标明上一块有没有签、能按到场定奖惩 / 看见有 block_id_flag 会被写成已经罚没，或当成已经交差 | 工作实例：abci++_methods Data Types VoteInfo 官方写 Indicates whether a validator signed the last block, allowing for rewards based on validator availability |
+| A1761 | 高 | 看见这份信息通常从拟议块或已决块抽出 / 看见块里有票 会被写成已经带了公钥，或当成已经是 ValidatorUpdate | 官方：This information is typically extracted from a proposed or decided block |
+| A1762 | 高 | 看见 votes 按投票权降序排、落盘后再从 store 装回 / 看见顺序在 会被写成已经进了块，或当成已经交差 | 官方：VoteInfo in votes ordered by voting power descending；集合写入 store 时顺序也落盘；造 CommitInfo 时从 store 再装 |
+| A1763 | 中 | 怎样编 VoteInfo / 怎样排 votes / 怎样从 store 再装会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1764 | 记录 | 会与 363 / 364 / 300 糊成「看见 CommitInfo 里有票就已经罚没」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VoteInfo / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。回包义务 / Validator 类型 / 本地 State 标成另一对象 |
 
 
 

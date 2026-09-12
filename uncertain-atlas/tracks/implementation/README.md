@@ -67,6 +67,7 @@
 - [`worked-example-finalize-when-vs-decided.md`](worked-example-finalize-when-vs-decided.md) — +2/3 precommit 同一 id(v) 才决定再调 Finalize ≠ 已经会调 Finalize；先把 v 落成这一高的决定再调 Finalize ≠ 已经交差；应用回了 AppHash 和各笔输出 ≠ 已经印进本头（不变量 362）
 - [`worked-example-finalize-equiv-vs-gates.md`](worked-example-finalize-equiv-vs-gates.md) — Finalize 等价于 ABCI 1.0 那三步 ≠ 已经是四门已经结算；可以用 decided_last_commit 定奖惩 ≠ 已经罚没；必须回四列 ≠ 已经改了集合（不变量 363）
 - [`worked-example-validator-vs-update.md`](worked-example-validator-vs-update.md) — Validator 用 address 认人 ≠ 已经带了公钥；不带 PubKey ≠ 已经选型；ValidatorUpdate 用公钥认人 ≠ 已经改了集合（不变量 364）
+- [`worked-example-voteinfo-vs-reward.md`](worked-example-voteinfo-vs-reward.md) — VoteInfo 能按到场定奖惩 ≠ 已经罚没；从拟议块或已决块抽出 ≠ 已经带了公钥；按投票权降序排 ≠ 已经进了块（不变量 365）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

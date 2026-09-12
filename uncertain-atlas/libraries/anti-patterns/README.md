@@ -367,3 +367,4 @@
 - [finalizewhen-sold-as-decided](finalizewhen-sold-as-decided.md)
 - [finalizeequiv-sold-as-gates](finalizeequiv-sold-as-gates.md)
 - [validator-sold-as-update](validator-sold-as-update.md)
+- [voteinfo-sold-as-rewarded](voteinfo-sold-as-rewarded.md)

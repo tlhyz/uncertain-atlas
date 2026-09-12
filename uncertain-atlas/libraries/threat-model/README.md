@@ -366,6 +366,7 @@
 | 357 | Finalize 何时调用被写成已经会调 Finalize | 协议 + 文案 | 看见 +2/3 precommit 同一 id(v) 才决定再调 Finalize / 先把 v 落成这一高的决定再调 Finalize / 应用回了 AppHash 和各笔输出 / Finalize 何时调用当成已经会调 Finalize 或已经交差或已经印进本头 | 不变量 362；语料 C366 |
 | 358 | Finalize 回包义务被写成已经是四门已经结算 | 协议 + 文案 | 看见 Finalize 等价于 ABCI 1.0 那三步 / 可以用 decided_last_commit 定奖惩 / 必须回四列 / Finalize 回包义务当成已经是四门已经结算或已经罚没或已经改了集合 | 不变量 363；语料 C367 |
 | 359 | Validator 类型被写成已经带了公钥 | 协议 + 文案 | 看见 Validator 用 address 认人 / 不带 PubKey / ValidatorUpdate 用公钥认人 / Validator 类型当成已经带了公钥或已经选型或已经改了集合 | 不变量 364；语料 C368 |
+| 360 | VoteInfo 被写成已经罚没 | 协议 + 文案 | 看见 VoteInfo 能按到场定奖惩 / 从拟议块或已决块抽出 / 按投票权降序排 / VoteInfo 当成已经罚没或已经带了公钥或已经进了块 | 不变量 365；语料 C369 |
 
 ## 不自动覆盖
 
