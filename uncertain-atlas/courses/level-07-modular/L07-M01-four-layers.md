@@ -40,7 +40,8 @@
 | 共识 | 头的全序/最终 | 体一定能下载 |
 | DA | 体可被诚实节点重建 | 执行正确 |
 
-**事实：** Bitcoin/Ethereum 主网把多件焊在一起（Ethereum 正把 DA 用 blobs 部分外溢）。Celestia 主打共识+DA。Rollup 主打执行，结算常回 Ethereum。
+**事实：** Bitcoin/Ethereum 主网把多件焊在一起（Ethereum 正把 DA 用 blobs 部分外溢）。Celestia 主打共识+DA。Rollup 主打执行，结算常回 Ethereum。  
+**事实：** EIP-4844 把执行气和 blob 气拆成两本账：blob 字节 EVM 不能访问，承诺能；执行层不负责持久化 blob。[精读](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。这是四层里「执行费 ≠ DA 费」的官方钉，不是已经拆成四条独立链。
 
 ---
 
@@ -95,5 +96,5 @@ Celestia、Ethereum+rollup、Polkadot（执行在平行，安全在中继）。
 | 部署 | 一层外包则假设写进用户能看见的句子 |
 | 经济 | 模块化税：桥、延迟、运营分割 |
 
-**禁止假学习：** 「模块化所以更先进。」「拆开了所以更安全。」  
-**边界：** 不把某一 rollup 品牌当四层定义。
+**禁止假学习：** 「模块化所以更先进。」「拆开了所以更安全。」「都叫 gas 所以执行和 DA 是同一本账。」  
+**边界：** 不把某一 rollup 品牌当四层定义。执行费 ≠ DA 费：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。不抄 EIP 参数表。

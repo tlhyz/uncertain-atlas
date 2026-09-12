@@ -1,7 +1,7 @@
 # 工作实例：KZG blob ≠ 纠删 DAS ≠ 永存档案
 
 > **事实 / 推断 / 建议** 已分开。
-> 对照：[L5.4](../../courses/level-05-ethereum/L05-M04-state-blobs-mev.md)、[L7.2](../../courses/level-07-modular/L07-M02-data-availability.md)、[Celestia 档案](../../protocols/celestia/report.md)、[阿比放货](worked-example.md)、[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)、[EIP-7594](https://eips.ethereum.org/EIPS/eip-7594)、[Fulu `das-core.md`](https://github.com/ethereum/consensus-specs/blob/master/specs/fulu/das-core.md)。
+> 对照：[L5.4](../../courses/level-05-ethereum/L05-M04-state-blobs-mev.md)、[L7.2](../../courses/level-07-modular/L07-M02-data-availability.md)、[Celestia 档案](../../protocols/celestia/report.md)、[阿比放货](worked-example.md)、[blob 费 ≠ 执行气](worked-example-blob-fee-vs-gas.md)、[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)、[EIP-7594](https://eips.ethereum.org/EIPS/eip-7594)、[Fulu `das-core.md`](https://github.com/ethereum/consensus-specs/blob/master/specs/fulu/das-core.md)。
 > 三层对象叠在「以太坊有 DA」四个字下面。分母不同。
 
 ---

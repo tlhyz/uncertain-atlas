@@ -133,7 +133,7 @@ CL 的 `DomainType`（proposer ≠ attester；Altair 另加 `DOMAIN_SYNC_COMMITT
 | 通用计算 | 规范与攻击面爆炸、gas 计量、状态增长 |
 | 多客户端 | 必须极硬的规范，否则分裂 |
 | PoS 最终性 | 弱主观性、质押政治、惩罚误伤 |
-| blobs / L2 扩容 | DA 与结算语义更绕。4844 sidecar ≠ PeerDAS 列抽样 ≠ Celestia DAS；服务窗 4096 epoch。见 [`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md) |
+| blobs / L2 扩容 | DA 与结算语义更绕。4844 sidecar ≠ PeerDAS 列抽样 ≠ Celestia DAS；服务窗 4096 epoch。见 [`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)。blob gas ≠ 普通执行 gas：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145） |
 
 ---
 

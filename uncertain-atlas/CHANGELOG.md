@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 146）
+
+- EIP-4844 工作实例（Final EIP，不另写 19 节）：blob gas 不是普通执行 gas。EVM 能读 versioned hash 不是已经读到 blob 字节。付了 blob fee 不是数据已经永存。执行层不负责持久化 blob。出处 eips.ethereum.org EIP-4844。
+- 不变量 145；语料 C149；模式 name-the-blob-fee；反模式 blob-fee-sold-as-gas；L10.3 第 141 条。填 L5.1 / L5.4 / L7.1 / L7.2 / 轻节点表 / 停链面地图。给 M7.1「执行费 ≠ DA 费」一句官方钉。
+- 不抄每块上限 / 目标 / `GAS_PER_BLOB` / 兆字节 / 官网 rollup 倍数。不写怎样扣 sidecar。不编博物馆页。不另写 19 节。不与 23 / 9 / 144 / 101 糊成一句。点评估预编译与 PeerDAS 标成另一对象。
+
 ## 2026-09-12（续 145）
 
 - Bitcoin 策略工作实例（官方节点文档，不另写 19 节）：策略拒绝不是共识非法。策略通过不是已经进块。费率高不是更正确。策略不作用于块内交易。出处 bitcoin/bitcoin `doc/policy/README.md`；terminology 页只钉 base fee。

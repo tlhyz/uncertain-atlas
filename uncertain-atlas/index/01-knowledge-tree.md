@@ -278,7 +278,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.1 账户、nonce、EVM、gas · 必学
 - 状态转移、收据、日志
-- 覆盖：课文 L5.1。块 gas 上限 ≠ 墙钟已有界：[`../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。OOG 结束 ≠ 空账户删除已回滚：[`../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md`](../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md)（不变量 103）。预编译中途出错 ≠ SDK 已写入已经撤回：[`../tracks/failure-museum/isa-2025-004.md`](../tracks/failure-museum/isa-2025-004.md)（不变量 117）。内层改过 ≠ 外层已经看见：[`../tracks/failure-museum/asa-2026-002.md`](../tracks/failure-museum/asa-2026-002.md)（不变量 118）。正确兑现委托语义 ≠ 预编译信任已经改过：[`../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)（不变量 119）
+- 覆盖：课文 L5.1。blob gas ≠ 普通执行 gas：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。块 gas 上限 ≠ 墙钟已有界：[`../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。OOG 结束 ≠ 空账户删除已回滚：[`../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md`](../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md)（不变量 103）。预编译中途出错 ≠ SDK 已写入已经撤回：[`../tracks/failure-museum/isa-2025-004.md`](../tracks/failure-museum/isa-2025-004.md)（不变量 117）。内层改过 ≠ 外层已经看见：[`../tracks/failure-museum/asa-2026-002.md`](../tracks/failure-museum/asa-2026-002.md)（不变量 118）。正确兑现委托语义 ≠ 预编译信任已经改过：[`../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)（不变量 119）
 
 ### M5.2 状态树与状态膨胀 · 重要
 - trie、存档节点、无状态方向
@@ -295,7 +295,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.5 EIP、交易类型、blobs、rollup 入口 · 重要
 - 协议如何演化
-- 覆盖：课文 L5.4；blob sidecar / PeerDAS / Celestia 三维对照 `tracks/light-clients/worked-example-blob-vs-das.md`（不变量 23）
+- 覆盖：课文 L5.4；blob sidecar / PeerDAS / Celestia 三维对照 `tracks/light-clients/worked-example-blob-vs-das.md`（不变量 23）。blob gas ≠ 普通执行 gas：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）
 
 ### M5.6 MEV 与 PBS · 进阶
 - mempool 不再是简单队列
@@ -352,7 +352,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M7.1 模块化四件套 · 必学
 - execution / settlement / consensus / DA
-- 覆盖：课文 L7.1
+- 覆盖：课文 L7.1。执行费 ≠ DA 费；blob gas ≠ 普通执行 gas；EVM 能读承诺 ≠ 已经读到袋里的字节：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）
 
 ### M7.2 Celestia · 必学
 - DAS、纠删码、NMT
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–144）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–145）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C148；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C149；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

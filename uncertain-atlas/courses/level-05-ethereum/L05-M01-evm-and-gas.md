@@ -59,7 +59,7 @@ gas 是体力券，不是「越贵越正确」。
 
 | 是 | 不是 |
 |---|---|
-| 对 CPU / 内存 / 存储访问的计量 | 手续费市场的全部（小费、blob 费另算） |
+| 对 CPU / 内存 / 存储访问的计量 | 手续费市场的全部（小费、blob 费另算）。blob gas ≠ 普通执行 gas：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145） |
 | 防无限循环变成网络武器 | 「付得起 = 交易正确」 |
 | 让恶意程序有上界 | 防合约逻辑偷钱 |
 
@@ -133,5 +133,5 @@ Ethereum 执行层。档案：`protocols/ethereum/`。
 | 部署 | 本地时间不得进共识 |
 | 经济 | gas 不是费用市场全部 |
 
-**禁止假学习：** 「执行失败 = 链上没发生。」「gas 贵 = 更安全。」  
-**边界：** 不讲 Solidity；不把某一硬分叉的 gas 常数当永恒。块 gas 上限 ≠ 墙钟已有界：[`../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。OOG 结束 ≠ 空账户删除已回滚：[`../../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md`](../../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md)（不变量 103）。预编译中途出错 ≠ SDK 已写入已经撤回：[`../../tracks/failure-museum/isa-2025-004.md`](../../tracks/failure-museum/isa-2025-004.md)（不变量 117）。内层改过 ≠ 外层已经看见：[`../../tracks/failure-museum/asa-2026-002.md`](../../tracks/failure-museum/asa-2026-002.md)（不变量 118）。正确兑现委托语义 ≠ 预编译信任已经改过：[`../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)（不变量 119）。不要写怎样冒充。
+**禁止假学习：** 「执行失败 = 链上没发生。」「gas 贵 = 更安全。」「都叫 gas = 同一本账。」  
+**边界：** 不讲 Solidity；不把某一硬分叉的 gas 常数当永恒。blob gas ≠ 普通执行 gas：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。块 gas 上限 ≠ 墙钟已有界：[`../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。OOG 结束 ≠ 空账户删除已回滚：[`../../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md`](../../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md)（不变量 103）。预编译中途出错 ≠ SDK 已写入已经撤回：[`../../tracks/failure-museum/isa-2025-004.md`](../../tracks/failure-museum/isa-2025-004.md)（不变量 117）。内层改过 ≠ 外层已经看见：[`../../tracks/failure-museum/asa-2026-002.md`](../../tracks/failure-museum/asa-2026-002.md)（不变量 118）。正确兑现委托语义 ≠ 预编译信任已经改过：[`../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)（不变量 119）。不要写怎样冒充。

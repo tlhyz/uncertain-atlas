@@ -42,3 +42,4 @@
 - [name-the-da-certificate](name-the-da-certificate.md)
 - [name-the-access-list](name-the-access-list.md)
 - [name-the-relay-door](name-the-relay-door.md)
+- [name-the-blob-fee](name-the-blob-fee.md)
