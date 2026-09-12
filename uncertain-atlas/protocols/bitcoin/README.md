@@ -53,6 +53,8 @@
 
 精读：[`../../tracks/lifecycle/worked-example-uri-vs-authorized.md`](../../tracks/lifecycle/worked-example-uri-vs-authorized.md)（不变量 255）。看见付款 URI 不是已经授权，也不是已经付了。看见路径没有链上地址不是已经没有付款指示。看见不认识的必选参数不是已经能付。看见打开了回执不是已经确认。
 
+精读：[`../../tracks/lifecycle/worked-example-request-vs-ack.md`](../../tracks/lifecycle/worked-example-request-vs-ack.md)（不变量 295）。看见付款请求不是已经授权。看见付款报文不是已经是回执。看见回执不是已经最终。
+
 精读：[`../../tracks/lifecycle/worked-example-signed-message-vs-control.md`](../../tracks/lifecycle/worked-example-signed-message-vs-control.md)（不变量 258）。看见签过的消息不是已经证明能控制资金。看见签过不是已经证明发过上一笔。看见资金证明清单不是已经齐，也不是已经没花。
 
 精读：[`../../tracks/lifecycle/worked-example-legacy-sign-vs-322.md`](../../tracks/lifecycle/worked-example-legacy-sign-vs-322.md)（不变量 294）。看见本页这种签消息不是已经是 322。看见头字节标了种类不是已经有地址。看见旧 P2PKH 习惯不是已经互操作。
