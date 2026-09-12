@@ -265,3 +265,4 @@
 - [name-the-voteinfo](name-the-voteinfo.md)
 - [name-the-retain-height](name-the-retain-height.md)
 - [name-the-lane-priorities](name-the-lane-priorities.md)
+- [name-the-snapshot-identity](name-the-snapshot-identity.md)

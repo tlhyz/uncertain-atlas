@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 369）
+
+- CometBFT Snapshot 类型工作实例（官方 ABCI++ Methods Data Types Snapshot，实现 / Snapshot 类型，不另写 19 节）：看见快照全字段（含 Metadata）对上不是已经装完。看见引擎不解释 format / hash 不是已经轻验 AppHash。看见空快照也至少 1 块不是已经齐。Snapshot 类型不是不变量 321，也不是不变量 322，也不是不变量 38。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 368；语料 C372；模式 name-the-snapshot-identity；反模式 snapshot-sold-as-identical；L10.3 第 364 条。填 L4.4 / CometBFT 档案 Snapshot 类型 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编 Snapshot、怎样切块、怎样比较哈希。不编博物馆页。不另写 19 节。不与 321 / 322 / 38 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。装回、发现、从创世重放标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 368）
 
 - CometBFT Info 车道工作实例（官方 ABCI++ Methods Info Usage，实现 / Info 车道，不另写 19 节）：看见没定义 lane_priorities 不是已经排了优先。看见空表对空默认不是已经选型。看见优先级 0 留给不设道不是已经进了块。Info 车道不是不变量 317，也不是不变量 312，也不是不变量 301。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

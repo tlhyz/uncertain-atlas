@@ -3811,6 +3811,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1772 | 高 | 看见最低优先级是 1、0 留给应用不设道（ResponseCheckTx 里空 lane_id） / 看见写了 0 会被写成已经进了块，或当成已经从池里删掉 | 官方：最低优先级是 1；0 留给应用不设道 |
 | A1773 | 中 | 怎样填 lane_priorities / 怎样选 default_lane / 怎样写 lane_id 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1774 | 记录 | 会与 317 / 312 / 301 糊成「看见 Info 回了车道就已经排了优先」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 车道 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。CheckTx 优先 / CheckTxState / 内存池交接标成另一对象 |
+| A1775 | 高 | 看见快照全字段（含 Metadata）对上才算同一份、同一份才能从各节点拉 chunk / 看见对上了 会被写成已经装完，或当成已经交差 | 工作实例：abci++_methods Data Types Snapshot 官方写 identical across nodes only if all fields are equal including Metadata |
+| A1776 | 高 | 看见 format 是应用自己的版本、引擎不解释 format / hash、只比较 hash / 看见有哈希 会被写成已经轻验 AppHash，或当成已经从创世重放 | 官方：CometBFT does not interpret format or hash, it only compares them |
+| A1777 | 高 | 看见空快照也至少 1 块、网上一份快照报文最多 4 MB / 看见有块数 会被写成已经齐，或当成已经是共识常数 | 官方：chunks must be at least 1 even if empty；snapshot message at most 4 MB |
+| A1778 | 中 | 怎样编 Snapshot / 怎样切块 / 怎样比较哈希会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1779 | 记录 | 会与 321 / 322 / 38 糊成「看见快照对上就已经装完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Snapshot 类型 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。装回 / 发现 / 从创世重放标成另一对象 |
 
 
 
