@@ -30,3 +30,4 @@ ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`
 停交易转发 ≠ 已经终身只传块：[`worked-example-disabletx-vs-lifetime.md`](worked-example-disabletx-vs-lifetime.md)（看见版本里关掉转发不是已经终身只传块；发了停交易转发不是已经没有紧凑块；建议关掉地址不是已经禁止；338 ≠ 133 ≠ 35 ≠ 152）。
 协议版本够了 ≠ 已经支持某项功能：[`worked-example-feature-vs-enabled.md`](worked-example-feature-vs-enabled.md)（看见通告了 feature 不是已经启用；verack 之后才来的 feature 不是已经是本页协商；434 ≠ 339 ≠ 155 ≠ 338）。
 看见 pong ≠ 已经还活着：[`worked-example-pong-vs-live.md`](worked-example-pong-vs-live.md)（协议版本够了不是已经会回 pong；回显 nonce 不是已经对上那一次；31 ≠ 434 ≠ 868）。
+协议版本 ≠ 已经是客户端版本：[`worked-example-ua-vs-protocol.md`](worked-example-ua-vs-protocol.md)（user agent 不是已经可以按实现改行为；同一协议版本不是已经是同一套实现；14 ≠ 434 ≠ 31）。

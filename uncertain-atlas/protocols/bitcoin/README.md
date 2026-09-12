@@ -49,6 +49,8 @@
 
 精读：[`../../tracks/network/worked-example-pong-vs-live.md`](../../tracks/network/worked-example-pong-vs-live.md)（不变量 262）。看见协议版本够了不是已经会带 nonce 的 ping。看见 pong 不是已经对上那一次 ping。看见回了 pong 不是已经还活着。
 
+精读：[`../../tracks/network/worked-example-ua-vs-protocol.md`](../../tracks/network/worked-example-ua-vs-protocol.md)（不变量 263）。看见协议版本不是已经是客户端版本。看见 user agent 不是已经可以按实现改行为。看见同一协议版本不是已经是同一套实现。
+
 精读：[`../../tracks/lifecycle/worked-example-uri-vs-authorized.md`](../../tracks/lifecycle/worked-example-uri-vs-authorized.md)（不变量 255）。看见付款 URI 不是已经授权，也不是已经付了。看见路径没有链上地址不是已经没有付款指示。看见不认识的必选参数不是已经能付。看见打开了回执不是已经确认。
 
 精读：[`../../tracks/lifecycle/worked-example-signed-message-vs-control.md`](../../tracks/lifecycle/worked-example-signed-message-vs-control.md)（不变量 258）。看见签过的消息不是已经证明能控制资金。看见签过不是已经证明发过上一笔。看见资金证明清单不是已经齐，也不是已经没花。
