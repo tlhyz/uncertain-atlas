@@ -50,8 +50,8 @@ Bitcoin 的问题陈述（事实，白皮书 2008）：点对点电子现金，�
 1. 钱包选币（哪些 UTXO）、构造输出（收款+找零）、算费、签名。  
 2. 广播到若干对等节点。  
 3. 节点按本地策略决定是否进 mempool（脚本、费、标准性）。标准性 ≠ 共识合法性。策略不作用于块内交易：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。  
-4. 矿工从 mempool 选交易，算 Merkle 根，找 nonce 使头哈希低于目标。  
-5. 新块传播。节点验证：PoW、时间戳窗口、交易列表、脚本、无双花。  
+4. 矿工从 mempool 选交易，算 Merkle 根，找 nonce 使头哈希低于目标。头上的 Merkle 用各笔 txid；新规则另要 coinbase 承诺 wtxid 根：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。  
+5. 新块传播。节点验证：PoW、时间戳窗口、交易列表、脚本、无双花。旧节点看见 txid 不是已经验过见证。  
 6. `ConnectBlock`：花输入、造输出，写 UTXO。  
 7. 若随后出现更重的链，可能 disconnect 再 connect（reorg）。  
 8. 收款方若只看 1 个确认，仍可能被重组；交易所常用更多确认，这是经济习惯，不是协议 commit。
@@ -117,7 +117,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 
 | 零件 | 用途 |
 |---|---|
-| SHA-256 / HASH256 | 块头、txid、Merkle |
+| SHA-256 / HASH256 | 块头、txid、Merkle。txid ≠ wtxid：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152） |
 | RIPEMD-160 | 地址派生（P2PKH 等） |
 | ECDSA secp256k1 | 旧式花费 |
 | Schnorr (BIP-340) | Taproot。tagged hash 公式见 `tracks/crypto/worked-example-tagged-hash.md`；标签不是 FIPS `ctx` |
@@ -179,7 +179,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | CVE-2010-5139 | 实现 | 输出求和溢出。见 `tracks/failure-museum/cve-2010-5139.md` |
 | CVE-2012-2459 | 协议+实现 | Merkle 奇数复制 ⇒ 同根不同列表。见 `tracks/failure-museum/cve-2012-2459.md` |
 | 2013 分叉 | 实现+部署 | BIP 50（BDB 锁上限）。见 `tracks/failure-museum/bip-0050-2013-fork.md` |
-| transaction malleability | 协议/实现 | 促使 SegWit；结构课 L3.7 |
+| transaction malleability | 协议/实现 | 促使 SegWit；结构课 L3.7。txid ≠ wtxid，不是已经修完所有身份：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152） |
 | CVE-2024-52912 | 实现+部署 | 调整钟绕过上限，拒收规范新块。见 `tracks/failure-museum/cve-2024-52912.md` |
 | CVE-2024-52913 | 实现+网络 | 有界索取表让节点看不见未确认交易。见 `tracks/failure-museum/cve-2024-52913.md` |
 | CVE-2019-25220 | 实现+部署 | 低难度头填爆内存索引；0.14 后检查点几乎只剩反垃圾。见 `tracks/failure-museum/cve-2019-25220.md`。不抄攻击成本 BTC |

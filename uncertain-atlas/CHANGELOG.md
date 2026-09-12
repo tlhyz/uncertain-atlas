@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 153）
+
+- BIP-141 工作实例（官方 SegWit 共识 BIP，不另写 19 节）：txid 不是 wtxid。改见证不是已经改交易身份。头上的 txid Merkle 不是已经承诺 wtxid。旧节点看见 txid 不是已经验过见证。出处 github.com/bitcoin/bips BIP-141。
+- 不变量 152；语料 C156；模式 name-the-txid；反模式 txid-sold-as-wtxid；L10.3 第 148 条。填 L3.7 / L1.1 / Bitcoin 档案 / 实现表 / 停链面地图。
+- 不抄承诺魔数 / 重量公式 / 版本 0 程序长度。不写怎样改见证编码。不编博物馆页。不另写 19 节。不与 144 / 12 / 3 / 25 / 145 糊成一句。BIP-341 钥匙路径、BIP-143 签名摘要、重量当费率标成另一对象。
+
 ## 2026-09-12（续 152）
 
 - Move 四能力工作实例（官方 Move Book，不另写 19 节）：`store` 不是已经是顶层资源。`key` 不是模块外谁都能 `move_to`。结构体写了 `has copy` 不是这个实例能复制。出处 move-language.github.io/move/abilities.html。

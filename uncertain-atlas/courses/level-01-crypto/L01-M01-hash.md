@@ -83,7 +83,7 @@
 
 1. `hash256` / `keccak256` / `sha256` 的封装
 2. 区块头哪些字段进入哈希（少一个字段就会分裂）
-3. 交易 ID 怎么算（隔离见证后，Bitcoin 的 txid 与 wtxid 不是一回事）
+3. 交易 ID 怎么算（隔离见证后，Bitcoin 的 txid 与 wtxid 不是一回事）。精读：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）
 
 Bitcoin Core 可从 `hash.h` / 区块头序列化看起。本课不要求打开。
 
@@ -126,5 +126,5 @@ Bitcoin Core 可从 `hash.h` / 区块头序列化看起。本课不要求打开�
 | 部署 | 坏磁盘只丢数据，不提供碰撞 |
 | 经济 | 撞哈希的收益 vs 代价；更长 ≠ 已后量子 |
 
-**禁止假学习：** 「哈希就是加密。」「更长的哈希一定后量子安全。」
-**边界：** 不选具体哈希品牌当「不确定已定」。BIP-340 把标签焊进 SHA256 的公式见 [`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)，本课不抄曲线。
+**禁止假学习：** 「哈希就是加密。」「更长的哈希一定后量子安全。」「交易哈希 = 已经含签名。」
+**边界：** 不选具体哈希品牌当「不确定已定」。BIP-340 把标签焊进 SHA256 的公式见 [`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)，本课不抄曲线。txid ≠ wtxid 见 [`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。

@@ -111,7 +111,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M1.1 哈希 · 必学
 - 抗碰撞、抗原像、承诺、内容寻址
 - 哈希撞了会发生什么
-- 覆盖：课文 L1.1；BIP-340 tagged hash 公式在 `tracks/crypto/worked-example-tagged-hash.md`
+- 覆盖：课文 L1.1；BIP-340 tagged hash 公式在 `tracks/crypto/worked-example-tagged-hash.md`。txid ≠ wtxid：[`../tracks/implementation/worked-example-txid-vs-wtxid.md`](../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）
 
 ### M1.2 数字签名 · 必学
 - 签名、验签、公钥绑定
@@ -202,7 +202,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.4 Script / SegWit / Taproot / Schnorr · 进阶
 - 保守升级如何避免把旧节点踢出共识
-- 覆盖：课文 L3.3 方向 + L3.7 见证结构；Taproot 语言细节仍后置
+- 覆盖：课文 L3.3 方向 + L3.7 见证结构。txid ≠ wtxid；改见证 ≠ 已经改交易身份；头上的 txid Merkle ≠ 已经承诺 wtxid：[`../tracks/implementation/worked-example-txid-vs-wtxid.md`](../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。Taproot 语言细节仍后置
 
 ### M3.5 全节点、剪枝、SPV · 必学
 - 验证 vs 查看
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–151）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–152）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C155；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C156；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

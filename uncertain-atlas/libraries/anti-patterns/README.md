@@ -154,3 +154,4 @@
 - [processed-sold-as-head](processed-sold-as-head.md)
 - [refinput-sold-as-spent](refinput-sold-as-spent.md)
 - [store-sold-as-key](store-sold-as-key.md)
+- [txid-sold-as-wtxid](txid-sold-as-wtxid.md)

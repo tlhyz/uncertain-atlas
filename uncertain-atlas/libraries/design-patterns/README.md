@@ -49,3 +49,4 @@
 - [name-the-forkchoice-event](name-the-forkchoice-event.md)
 - [name-the-reference-input](name-the-reference-input.md)
 - [name-the-move-ability](name-the-move-ability.md)
+- [name-the-txid](name-the-txid.md)
