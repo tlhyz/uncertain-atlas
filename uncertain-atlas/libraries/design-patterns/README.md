@@ -90,3 +90,4 @@
 - [name-the-delegation](name-the-delegation.md)
 - [name-the-miniscript](name-the-miniscript.md)
 - [name-the-request-bus](name-the-request-bus.md)
+- [name-the-el-exit](name-the-el-exit.md)

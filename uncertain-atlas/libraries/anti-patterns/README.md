@@ -195,3 +195,4 @@
 - [auth-sold-as-delegated](auth-sold-as-delegated.md)
 - [miniscript-sold-as-script](miniscript-sold-as-script.md)
 - [request-sold-as-action](request-sold-as-action.md)
+- [queued-sold-as-exited](queued-sold-as-exited.md)
