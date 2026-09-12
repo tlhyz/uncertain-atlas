@@ -196,6 +196,9 @@ invariant：Check 通过不是已进提案；Prepare 可改列表；Process REJE
 **`ExtendVote` / `VerifyVoteExtension`**  
 invariant：扩展是另一份签；Verify REJECT 丢整张 precommit，不是块非法；`s_h` 不读本高度扩展（不变量 34）。
 
+**`validator_updates` 生效高度**  
+invariant：H 返回的更新，H+1 改 `NextValidatorsHash`，H+2 才按新集合计票，H+3 `*_last_commit` 带新集合（不变量 35）。见 [`../../tracks/consensus/worked-example-validator-delay.md`](../../tracks/consensus/worked-example-validator-delay.md)。
+
 ---
 
 ## 18. 如何测试
@@ -210,7 +213,7 @@ invariant：扩展是另一份签；Verify REJECT 丢整张 precommit，不是�
 | 档 | 内容 |
 |---|---|
 | 强烈建议研究 | 锁、+2/3 相交、WAL、ABCI 分离、确定最终的用户语义 |
-| 可以参考 | mempool CheckTx 与共识分离、Prepare 改列表但 Process 默认 Accept、验证者集合轮换高度 |
+| 可以参考 | mempool CheckTx 与共识分离、Prepare 改列表但 Process 默认 Accept、集合更新的 H+1/H+2/H+3 |
 | 暂时不需要 | IBC 全协议、CosmWasm |
 | 不建议采用 | 「我们 BFT，所以投个 2/3 就行」；把升级管理员做成可改历史的后门 |
 

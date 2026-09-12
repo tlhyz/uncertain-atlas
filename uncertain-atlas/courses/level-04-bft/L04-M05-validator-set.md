@@ -34,9 +34,12 @@ ABCI 应用可以在某高度改验证者集合。两套权重若同时「合法
 高度 h 的提议、prevote、precommit，只对 `V(h)` 计权。  
 `V(h)` 如何从 `V(h-1)` 与应用回调算出，是协议对象，必须唯一。
 
-**生效延迟（事实：Tendermint/CometBFT 家族有 EndBlock 更新、常有延迟，精确规则以现行规范为准）**
+**生效延迟（事实：CometBFT ABCI++）**
 
-常见设计：高度 h 的应用决定「以后」的集合，不立刻改**正在投 h** 的人。  
+高度 H 的 `FinalizeBlock` 返回 `validator_updates`：H+1 更新 `NextValidatorsHash`，**H+2** 新集合开始投票（`ValidatorsHash`），H+3 的 `*_last_commit` 才带新集合。应用要求原文：处理 H 之后返回的更新只在块 H+2 生效。  
+`consensus_param_updates` 是另一条：H 的更新用于 H+1。  
+精读：[`../../tracks/consensus/worked-example-validator-delay.md`](../../tracks/consensus/worked-example-validator-delay.md)。
+
 目的：投票过程中集合不动，相交证明有固定 n、f。
 
 **未对齐的两种视图（实现/协议事故）**
@@ -105,5 +108,5 @@ Polkadot 的 session / era 也是「何时换人」（档案）。
 | 部署 | 节点是否加载了含新表的状态 |
 | 经济 | 质押进出、惩罚窗口 |
 
-**禁止假学习：** 「验证者名单在网站上。」「2/3 永远是人数的三分之二。」  
-**边界：** 不抄某一版本 Cosmos 的精确延迟数字当永恒事实；以规范为准。轻客户端的 `trustingPeriod < unbondingPeriod` 与跳过重叠见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。Ethereum 弱主观性是亲戚、不是同一对象：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。
+**禁止假学习：** 「验证者名单在网站上。」「2/3 永远是人数的三分之二。」「Finalize 改了验证者，下一高度就按新名单投。」  
+**边界：** 不抄 Cosmos 解绑天数。轻客户端的 `trustingPeriod < unbondingPeriod` 与跳过重叠见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。Ethereum 弱主观性是亲戚、不是同一对象：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。

@@ -5,6 +5,7 @@
 谁写交易顺序：[`../mempool/worked-example-who-orders.md`](../mempool/worked-example-who-orders.md)（Builder API ≠ `process_block`）。  
 ABCI 四门：[`worked-example-prepare-process.md`](worked-example-prepare-process.md)（CheckTx ≠ Prepare ≠ Process ≠ Finalize）。  
 Vote extension：[`worked-example-vote-extension.md`](worked-example-vote-extension.md)（拒扩展丢票，不改块规则；`s_h` 不读本高度 *e*）。  
+集合延迟：[`worked-example-validator-delay.md`](worked-example-validator-delay.md)（H 的 `validator_updates`：H+1 Next、H+2 计票、H+3 last_commit）。  
 决策表：[`../../libraries/decision-matrix/consensus.md`](../../libraries/decision-matrix/consensus.md)（不确定列空）。
 
 | 家族 | 最终性 | 分区时 | 领导 | 主要假设 | 档案/课 |

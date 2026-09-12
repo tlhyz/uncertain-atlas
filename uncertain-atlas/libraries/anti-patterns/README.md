@@ -39,3 +39,5 @@
 - [orphan-scan-sold-as-liveness](orphan-scan-sold-as-liveness.md)
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md)
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md)
+- [validator-update-sold-as-immediate](validator-update-sold-as-immediate.md)
+- [announce-sold-as-received](announce-sold-as-received.md)

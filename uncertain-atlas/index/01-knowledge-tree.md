@@ -234,6 +234,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.4 验证者集合与投票权 · 必学
 - validator set、voting power
 - 集合变更何时生效
+- 覆盖：课文 L4.5；生效延迟 `tracks/consensus/worked-example-validator-delay.md`（H 的更新：H+1 Next、H+2 计票、H+3 last_commit；不变量 35）
 
 ### M4.5 ABCI：应用与共识分离 · 必学
 - 为什么这对「不确定」极有价值
@@ -382,7 +383,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.1 P2P · 必学
 - 发现、gossip、eclipse、Sybil、分区、NAT
 - 很多链的瓶颈在网络不在执行
-- 覆盖：课文 L9.1；日蚀精读；调整钟 CVE-2024-52912；索取独占 CVE-2024-52913。加密内存池尚无冻结规范级独特对象，不写页
+- 覆盖：课文 L9.1；日蚀精读；调整钟 CVE-2024-52912；索取独占 CVE-2024-52913。新块宣布 ≠ 已收到：CVE-2024-52922。加密内存池尚无冻结规范级独特对象，不写页
 
 ### M9.2 Mempool · 必学
 - 准入、替换、驱逐、垃圾、抢跑、加密内存池
@@ -414,7 +415,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（十案；含 CVE-2024-52914 孤儿扫描）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（十一案；含 CVE-2024-52922 块宣布卡住）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -444,7 +445,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C36；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C38；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

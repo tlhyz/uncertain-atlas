@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 39）
+
+- 集合生效延迟：H 的 `validator_updates` 在 H+2 才计票；H+1 只更新 `NextValidatorsHash`；H+3 才带进 last_commit。参数更新是另一条（H→H+1）。
+- 博物馆 CVE-2024-52922：宣布新块后单一对等节点可卡住传播。宣布 ≠ 已收到；对象是块，不是未确认交易。
+- 不变量 35–36；语料 C37–C38；反模式 validator-update-sold-as-immediate / announce-sold-as-received；L10.3 第 31–32 条。
+- 不抄解绑天、等待秒数、并行路数当共识。
+
 ## 2026-09-12（续 38）
 
 - Vote extension 精读：非空 precommit 才扩展；`CanonicalVoteExtension` 是另一份签；Verify REJECT 丢掉整张票，不是块非法。

@@ -551,3 +551,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A176 | 记录 | 规范有 VoteExtensionsEnableHeight、两类扩展 | 不抄启用高度；`non_rp` 无包装须自防重放 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 00:25 UTC · H 的更新 ≠ H+1 计票；宣布 ≠ 收到
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A177 | 中 | L4.5 / 树 M4.4 只写「常有延迟」 | `worked-example-validator-delay.md`：H+1 Next、H+2 计票、H+3 last_commit |
+| A178 | 中 | 参数更新会和集合更新糊成一拍 | 钉 `consensus_param_updates` 是 H→H+1；不变量 35；语料 C37 |
+| A179 | 中 | 52913「看不见交易」会和「看不见新块」糊 | 博物馆 CVE-2024-52922；不变量 36；对象是块下载 |
+| A180 | 记录 | 公告有等待上限、并行 3 路、出站约束 | 不当共识常数；不写卡住构造；不抄解绑天 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

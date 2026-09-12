@@ -22,14 +22,14 @@
 ## 第三通：两种最终
 
 9. L3.1 + Bitcoin 档案第 6、11、14 节。IBD 加速：[`../tracks/implementation/worked-example-assumevalid.md`](../tracks/implementation/worked-example-assumevalid.md)（跳过签名 ≠ 锁死历史）。头先够功：[`../tracks/implementation/worked-example-header-work.md`](../tracks/implementation/worked-example-header-work.md)（检查点第三份工作是反垃圾）。  
-10. L4.1–L4.5 + CometBFT 档案。投票 SignBytes：[`../tracks/consensus/worked-example-vote-signbytes.md`](../tracks/consensus/worked-example-vote-signbytes.md)（prevote 的印不能验成 precommit）。ABCI 四门：[`../tracks/consensus/worked-example-prepare-process.md`](../tracks/consensus/worked-example-prepare-process.md)（CheckTx ≠ Prepare ≠ Process ≠ Finalize）。Vote extension：[`../tracks/consensus/worked-example-vote-extension.md`](../tracks/consensus/worked-example-vote-extension.md)（拒扩展丢掉的是票，不是块）。  
+10. L4.1–L4.5 + CometBFT 档案。投票 SignBytes：[`../tracks/consensus/worked-example-vote-signbytes.md`](../tracks/consensus/worked-example-vote-signbytes.md)（prevote 的印不能验成 precommit）。ABCI 四门：[`../tracks/consensus/worked-example-prepare-process.md`](../tracks/consensus/worked-example-prepare-process.md)（CheckTx ≠ Prepare ≠ Process ≠ Finalize）。Vote extension：[`../tracks/consensus/worked-example-vote-extension.md`](../tracks/consensus/worked-example-vote-extension.md)（拒扩展丢掉的是票，不是块）。集合延迟：[`../tracks/consensus/worked-example-validator-delay.md`](../tracks/consensus/worked-example-validator-delay.md)（H 的更新不是 H+1 立刻计票）。  
 11. [`../tracks/finality/README.md`](../tracks/finality/README.md) 只看 Bitcoin 与 CometBFT 两行，再读 [`../tracks/consensus/worked-example-partition.md`](../tracks/consensus/worked-example-partition.md)。先不要横扫全表。读 L5.2 时补 [`../tracks/finality/worked-example-weak-subjectivity.md`](../tracks/finality/worked-example-weak-subjectivity.md)（finalized ≠ 从创世同步同样安全）。
 
 ## 第四通：实现会骗人
 
 12. L5.3 多客户端同根。  
 13. [`../tracks/implementation/`](../tracks/implementation/README.md) 编码实例 + 崩溃实例。  
-14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50、CVE-2021-39137、CVE-2024-52912、CVE-2024-52913、CVE-2019-25220（含 52916）、CVE-2024-52914；先用 [`../tracks/failure-museum/worked-example-five-layers.md`](../tracks/failure-museum/worked-example-five-layers.md) 把 17144 拆进五层。隐私通再读 CVE-2019-7167。调整钟 ≠ 日蚀：[`../tracks/network/worked-example-adjusted-time.md`](../tracks/network/worked-example-adjusted-time.md)。  
+14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50、CVE-2021-39137、CVE-2024-52912、CVE-2024-52913、CVE-2019-25220（含 52916）、CVE-2024-52914、CVE-2024-52922；先用 [`../tracks/failure-museum/worked-example-five-layers.md`](../tracks/failure-museum/worked-example-five-layers.md) 把 17144 拆进五层。隐私通再读 CVE-2019-7167。调整钟 ≠ 日蚀：[`../tracks/network/worked-example-adjusted-time.md`](../tracks/network/worked-example-adjusted-time.md)。宣布 ≠ 收到：CVE-2024-52922。  
 15. L9.3 / L9.7 + [`../tracks/testing/worked-example.md`](../tracks/testing/worked-example.md)。问：绿测试守哪一层。形式化缝：[`../tracks/formal-methods/worked-example.md`](../tracks/formal-methods/worked-example.md)。
 
 ## 第五通：别人用什么换
