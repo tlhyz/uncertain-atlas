@@ -58,3 +58,4 @@
 - [name-the-fee-leg](name-the-fee-leg.md)
 - [name-the-storage-lifetime](name-the-storage-lifetime.md)
 - [name-the-suicide-tx](name-the-suicide-tx.md)
+- [name-the-signed-chain](name-the-signed-chain.md)

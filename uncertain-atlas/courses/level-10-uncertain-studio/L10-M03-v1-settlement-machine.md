@@ -185,6 +185,7 @@
 154. 若做费用市场 / 对照 EIP-1559：必须点名问的是基础费、小费，还是弹性上限（不变量 158）。基础费不是已经给了出块者。弹性块大小不是整套费用市场已经齐。烧掉不是 MEV 已经解决。`GASPRICE` 不是出块者实收。第一版可以不抄烧掉基础费的市场。不要抄倍数。不要另写 19 节。精读：[`../../tracks/mempool/worked-example-basefee-vs-tip.md`](../../tracks/mempool/worked-example-basefee-vs-tip.md)。这和 blob 费≠执行气（不变量 145）、Bitcoin base fee（不变量 144）、gas≠墙钟（不变量 101）、谁写列表（不变量 27）不是同一句。
 155. 若做交易级草稿 / 对照瞬时存储：必须点名问的是瞬时店、持久店，还是 memory（不变量 159）。`TSTORE` 不是已经进账户。本笔结束丢掉不是本笔里从未存在。同合约各帧共用一份不是 memory。帧回滚不是已经落盘。第一版可以不上瞬时存储指令。不要抄气价。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-transient-vs-storage.md`](../../tracks/state-models/worked-example-transient-vs-storage.md)。这和 OOG 回滚（不变量 103）、内层可见性（不变量 118）、委托信任（不变量 119）、脚本无持久存储（不变量 143）、Move `store`（不变量 151）不是同一句。
 156. 若做账户删除 / 对照 SELFDESTRUCT：必须点名问的是同笔拆户、以后只转余额，还是账户已经没了（不变量 160）。后来的 `SELFDESTRUCT` 不是账户已经删掉。只转走余额不是代码和存储已经清。同笔创建再销毁不是以后任意一笔还能拆户。自己当收款人不是已经烧掉。第一版可以不上自毁指令。不要抄气价。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-selfdestruct-vs-delete.md`](../../tracks/state-models/worked-example-selfdestruct-vs-delete.md)。这和 OOG 回滚（不变量 103）、瞬时店（不变量 159）、供给守恒（不变量 2）、委托信任（不变量 119）、Move `store`（不变量 151）不是同一句。
+157. 若签用户交易 / 对照 EIP-155：必须点名问的是九字段签名哈希、旧六字段签，还是钱包 JSON（不变量 161）。JSON 里的 chainId 不是已经编进签名哈希。旧六字段签不是已经防跨链重放。EIP-155 不是 EIP-1559。用户交易的链绑定不是投票域。第一版：签名预像必须含链绑定。不要抄链号表。不要另写 19 节。精读：[`../../tracks/crypto/worked-example-chainid-vs-signed.md`](../../tracks/crypto/worked-example-chainid-vs-signed.md)。这和投票域（不变量 6）、FIPS ctx（不变量 18）、1559 费用市场（不变量 158）不是同一句。
 
 **以后再发明**
 
@@ -304,7 +305,8 @@
 - 把合并后的 `difficulty` 写成工作量，或把 `PREVRANDAO` 写成本块刚掷的公平骰子，或把信标 RANDAO 写成应用级无偏随机。  
 - 把基础费写成已经给了出块者，或把弹性块大小写成整套费用市场已经齐，或把烧掉写成 MEV 已经解决。  
 - 把 `TSTORE` 写成已经进账户，或把交易结束丢掉写成本笔里从未存在，或把同合约共用一份瞬时店写成 memory。  
-- 把后来的 `SELFDESTRUCT` 写成账户已经删掉，或把只转走余额写成代码已经清，或把同笔还能拆写成以后任意一笔还能拆。
+- 把后来的 `SELFDESTRUCT` 写成账户已经删掉，或把只转走余额写成代码已经清，或把同笔还能拆写成以后任意一笔还能拆。  
+- 把 JSON 里的 chainId 写成已经编进签名哈希，或把旧六字段签写成已经防跨链重放，或把 EIP-155 写成 EIP-1559。
 
 ---
 
@@ -355,7 +357,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百五十六条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百五十七条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

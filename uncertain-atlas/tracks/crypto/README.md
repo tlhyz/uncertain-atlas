@@ -5,7 +5,7 @@
 三层编码对照：[`worked-example-tagged-hash.md`](worked-example-tagged-hash.md)（BIP-340 / EIP-712 / FIPS `ctx`）。  
 BFT 步类型：[`../consensus/worked-example-vote-signbytes.md`](../consensus/worked-example-vote-signbytes.md)。  
 FIPS 算法包装：[`../post-quantum/fips-context.md`](../post-quantum/fips-context.md)（空 `ctx` ≠ 已分角色）。  
-合并后的 DIFFICULTY ≠ 工作量：[`worked-example-prevrandao-vs-difficulty.md`](worked-example-prevrandao-vs-difficulty.md)（不变量 157）。
+合并后的 DIFFICULTY ≠ 工作量：[`worked-example-prevrandao-vs-difficulty.md`](worked-example-prevrandao-vs-difficulty.md)（不变量 157）。JSON 里的 chainId ≠ 已经编进签名哈希：[`worked-example-chainid-vs-signed.md`](worked-example-chainid-vs-signed.md)（不变量 161）。
 
 | 组件 | 挡住 | 挡不住 | 后量子税 |
 |---|---|---|---|

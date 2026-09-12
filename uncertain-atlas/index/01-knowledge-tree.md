@@ -117,7 +117,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 签名、验签、公钥绑定
 - 签名算法被攻破 = 授权体系被攻破
 - domain separation：同一把钥匙签错域
-- 覆盖：课文 L1.2；消息前缀精读 `tracks/crypto/worked-example-domain.md`；FIPS 第二层 `tracks/post-quantum/fips-context.md`（不变量 18 / 语料 C20）。子群过了 ≠ 点已经在曲线上：[`../tracks/failure-museum/cve-2025-30147.md`](../tracks/failure-museum/cve-2025-30147.md)（不变量 116）
+- 覆盖：课文 L1.2；消息前缀精读 `tracks/crypto/worked-example-domain.md`；FIPS 第二层 `tracks/post-quantum/fips-context.md`（不变量 18 / 语料 C20）。子群过了 ≠ 点已经在曲线上：[`../tracks/failure-museum/cve-2025-30147.md`](../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。JSON 里的 chainId ≠ 已经编进签名哈希；旧六字段签 ≠ 已经防跨链重放：[`../tracks/crypto/worked-example-chainid-vs-signed.md`](../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）
 
 ### M1.3 Merkle 树 · 必学
 - 包含证明、排除（先直觉）
@@ -158,7 +158,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 余额、nonce、storage
 - 重放保护为什么常靠 nonce
 - 热点账户
-- 覆盖：课文 L2.2。空地址 ≠ 还没有账户类型：Barberry（不变量 83）。StateDB 可花 ≠ 归属锁定已经从同一笔写回排除：[`../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md`](../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md)（不变量 115）。预编译中途出错 ≠ SDK 已写入已经撤回：[`../tracks/failure-museum/isa-2025-004.md`](../tracks/failure-museum/isa-2025-004.md)（不变量 117）。内层改过 ≠ 外层已经看见：[`../tracks/failure-museum/asa-2026-002.md`](../tracks/failure-museum/asa-2026-002.md)（不变量 118）。瞬时存储 ≠ 账户持久存储；本笔结束丢掉 ≠ 本笔里从未存在：[`../tracks/state-models/worked-example-transient-vs-storage.md`](../tracks/state-models/worked-example-transient-vs-storage.md)（不变量 159）。后来的 SELFDESTRUCT ≠ 账户已经删掉：[`../tracks/state-models/worked-example-selfdestruct-vs-delete.md`](../tracks/state-models/worked-example-selfdestruct-vs-delete.md)（不变量 160）
+- 覆盖：课文 L2.2。空地址 ≠ 还没有账户类型：Barberry（不变量 83）。StateDB 可花 ≠ 归属锁定已经从同一笔写回排除：[`../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md`](../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md)（不变量 115）。预编译中途出错 ≠ SDK 已写入已经撤回：[`../tracks/failure-museum/isa-2025-004.md`](../tracks/failure-museum/isa-2025-004.md)（不变量 117）。内层改过 ≠ 外层已经看见：[`../tracks/failure-museum/asa-2026-002.md`](../tracks/failure-museum/asa-2026-002.md)（不变量 118）。瞬时存储 ≠ 账户持久存储；本笔结束丢掉 ≠ 本笔里从未存在：[`../tracks/state-models/worked-example-transient-vs-storage.md`](../tracks/state-models/worked-example-transient-vs-storage.md)（不变量 159）。后来的 SELFDESTRUCT ≠ 账户已经删掉：[`../tracks/state-models/worked-example-selfdestruct-vs-delete.md`](../tracks/state-models/worked-example-selfdestruct-vs-delete.md)（不变量 160）。JSON 里的 chainId ≠ 已经编进签名哈希：[`../tracks/crypto/worked-example-chainid-vs-signed.md`](../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）
 
 ### M2.3 Object / Resource · 重要
 - 所有权、版本、能力
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–160）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–161）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C164；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C165；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

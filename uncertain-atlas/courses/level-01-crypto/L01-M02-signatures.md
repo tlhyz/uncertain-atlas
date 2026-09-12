@@ -92,7 +92,7 @@ m = "chain=Uncertain | type=user-tx | from=A | to=B | amount=4 | nonce=7"
 ## F. 真实项目
 
 - **Bitcoin（事实）**：早期 ECDSA 有 transaction malleability（同一语义可对应不同 txid）。SegWit 把签名移出 txid 计算。Schnorr 在 BIP-340。
-- **Ethereum（事实）**：EIP-155 把 `chainId` 编进签名，减少跨链重放。
+- **Ethereum（事实）**：EIP-155 把 `chainId` 编进签名，减少跨链重放。JSON 里写了 chainId 不是已经编进哈希；旧六字段签仍合法，不是已经防跨链。精读：[`../../tracks/crypto/worked-example-chainid-vs-signed.md`](../../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）。
 - **Cosmos / CometBFT（事实）**：验证者投票是另一类被签消息，必须和用户交易分域。
 - **「不确定」（建议）**：用户交易签名和验证者投票从第一天就分开域。后量子换算法时，换的是 `Sign/Verify` 插件，不是整本账。若走 FIPS 204/205 外部 API，角色还要进 `ctx`（不变量 18）；空默认不算完成。见 [`../../tracks/post-quantum/fips-context.md`](../../tracks/post-quantum/fips-context.md)。
 
@@ -153,5 +153,5 @@ Bitcoin Core：`src/pubkey.cpp` / secp256k1 库。go-ethereum：`crypto` 包。�
 | 部署 | 侧信道 / 坏 RNG 可漏钥 |
 | 经济 | 验签过了不是经济安全；盗钥是保管失败 |
 
-**禁止假学习：** 「签名证明你是谁。」「验签过了所以经济安全。」「Taproot 一个签名 = 脚本树已经公开。」
-**边界：** 体积数字进账本，本课不填未测值。`ctx` 编码与 hedged 签见 PQ 轨，不在本课抄库文档当 FIPS。子群过了 ≠ 点已经在曲线上：[`../../tracks/failure-museum/cve-2025-30147.md`](../../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。不要写怎样造点。钥匙路径 ≠ 已经揭开脚本树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。
+**禁止假学习：** 「签名证明你是谁。」「验签过了所以经济安全。」「Taproot 一个签名 = 脚本树已经公开。」「看见 chainId = 已经签进哈希。」「155 = 1559。」
+**边界：** 体积数字进账本，本课不填未测值。`ctx` 编码与 hedged 签见 PQ 轨，不在本课抄库文档当 FIPS。子群过了 ≠ 点已经在曲线上：[`../../tracks/failure-museum/cve-2025-30147.md`](../../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。不要写怎样造点。钥匙路径 ≠ 已经揭开脚本树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。JSON 里的 chainId ≠ 已经编进签名哈希：[`../../tracks/crypto/worked-example-chainid-vs-signed.md`](../../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）。不抄链号表。不写怎样重放。

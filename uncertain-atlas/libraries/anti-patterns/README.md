@@ -163,3 +163,4 @@
 - [basefee-sold-as-tip](basefee-sold-as-tip.md)
 - [transient-sold-as-storage](transient-sold-as-storage.md)
 - [selfdestruct-sold-as-deleted](selfdestruct-sold-as-deleted.md)
+- [chainid-sold-as-signed](chainid-sold-as-signed.md)
