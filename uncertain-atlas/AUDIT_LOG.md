@@ -3971,6 +3971,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1932 | 高 | 看见 Echo 用来测实现 / 看见能测 会被写成已经刷完，或当成已经送到 | 官方：Echo Usage is Echo a string to test an ABCI client/server implementation |
 | A1933 | 中 | 怎样写 Commit 空请求 / 怎样填 Echo 回包 / 怎样测实现 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1934 | 记录 | 会与 335 / 394 / 374 糊成「看见叫了 Commit 就已经落盘」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit 空请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。落盘 / 入参字段 / 刷完 标成另一对象 |
+| A1935 | 高 | 看见 OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 / 看见回了 REJECT_FORMAT 会被写成已经是拒掉这份，或当成已经齐 | 工作实例：abci++_methods OfferSnapshot Result 官方写 REJECT_FORMAT is Reject all snapshots with this format, try others |
+| A1936 | 高 | 看见 OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 / 看见回了 REJECT_SENDER 会被写成已经拒了人，或当成已经能接着装 | 官方：REJECT_SENDER is Reject all snapshots from all senders of this snapshot, try others |
+| A1937 | 高 | 看见 OfferSnapshot Result ABORT 是中止装回、不再试别份 / 看见回了 ABORT 会被写成已经换一份，或当成已经装完 | 官方：ABORT is Abort snapshot restoration, and don't try any other snapshots |
+| A1938 | 中 | 怎样写 OfferSnapshot 结果枚举 / 怎样挑 REJECT_FORMAT / 怎样挑 REJECT_SENDER 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1939 | 记录 | 会与 398 / 378 / 321 糊成「看见回了 OfferSnapshot 结果枚举就已经是拒掉这份」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot 结果枚举 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拒掉这份 / 拒人 / 换一份 标成另一对象 |
 
 
 

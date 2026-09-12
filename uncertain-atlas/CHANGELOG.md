@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 401）
+
+- CometBFT OfferSnapshot 结果枚举工作实例（官方 ABCI++ Methods OfferSnapshot Result，实现 / OfferSnapshot 结果枚举，不另写 19 节）：看见 OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份不是已经是拒掉这份。看见 OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份不是已经拒了人。看见 OfferSnapshot Result ABORT 是中止装回、不再试别份不是已经换一份。OfferSnapshot 结果枚举不是不变量 398，也不是不变量 378，也不是不变量 321。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 400；语料 C404；模式 name-the-offer-fmt；反模式 offerfmt-sold-as-rejectsnap；L10.3 第 396 条。填 L4.4 / CometBFT 档案 OfferSnapshot 结果枚举 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 OfferSnapshot 结果枚举、怎样挑 REJECT_FORMAT、怎样挑 REJECT_SENDER。不编博物馆页。不另写 19 节。不与 398 / 378 / 321 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。拒掉这份、拒人、换一份标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 400）
 
 - CometBFT Commit 空请求工作实例（官方 ABCI++ Methods Commit Request / Echo Response / Echo Usage，实现 / Commit 空请求，不另写 19 节）：看见 Commit 不带参数不是已经落盘。看见 Echo 回包 Message 是入参那串不是已经是入参字段。看见 Echo 用来测实现不是已经刷完。Commit 空请求不是不变量 335，也不是不变量 394，也不是不变量 374。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

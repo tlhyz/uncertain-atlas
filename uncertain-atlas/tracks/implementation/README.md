@@ -102,6 +102,7 @@
 - [`worked-example-applychunk-vs-loadchunk.md`](worked-example-applychunk-vs-loadchunk.md) — ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容 ≠ 已经在拉块；ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID ≠ 已经拒了人；ApplySnapshotChunk 回包 result 是装这块的结果 ≠ 已经是 Offer 的结果（不变量 397）
 - [`worked-example-applyretry-vs-refetch.md`](worked-example-applyretry-vs-refetch.md) — ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders ≠ 已经再拉；ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块 ≠ 已经换一份；ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份 ≠ 已经是装这块的结果（不变量 398）
 - [`worked-example-commitnoparam-vs-persist.md`](worked-example-commitnoparam-vs-persist.md) — Commit 不带参数 ≠ 已经落盘；Echo 回包 Message 是入参那串 ≠ 已经是入参字段；Echo 用来测实现 ≠ 已经刷完（不变量 399）
+- [`worked-example-offerfmt-vs-rejectsnap.md`](worked-example-offerfmt-vs-rejectsnap.md) — OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 ≠ 已经是拒掉这份；OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 ≠ 已经拒了人；OfferSnapshot Result ABORT 是中止装回、不再试别份 ≠ 已经换一份（不变量 400）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
