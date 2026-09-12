@@ -183,6 +183,7 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 已收前身：[Alderfly](../../tracks/failure-museum/alderfly.md) — 验过头不是已经能交证据；朝前 lunatic。  
 已收前身：[CVE-2020-5303 / Lavender](../../tracks/failure-museum/cve-2020-5303.md) — 握手请求不是已接受的邻居。  
 已收应用侧：[ASA-2024-006](../../tracks/failure-museum/asa-2024-006.md) — Cosmos SDK 默认助手从提议者注入的扩展推断投票权；不是引擎保证。  
+已收应用侧：[ASA-2024-002](../../tracks/failure-museum/asa-2024-002.md) — 默认 Prepare 配默认 nonce 池可能提出非法块；单笔 CheckTx 绿 ≠ 整包可提案。  
 **待补：** 其它案必须链到官方 postmortem 或安全公告。  
 方向：halt（活性）、应用非确定性导致的分裂。
 

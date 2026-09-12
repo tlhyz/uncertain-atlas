@@ -73,3 +73,4 @@
 - [verified-sold-as-evidence](verified-sold-as-evidence.md)
 - [inbound-cap-sold-as-handshake](inbound-cap-sold-as-handshake.md)
 - [extension-sold-as-voting-power](extension-sold-as-voting-power.md)
+- [nonce-gap-sold-as-proposal](nonce-gap-sold-as-proposal.md)

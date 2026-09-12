@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 70）
+
+- 博物馆 ASA-2024-002 / GHSA-2557-x9mg-76w8（Medium）：默认 `PrepareProposalHandler` 配默认 `SenderNonceMempool`，单一发送者在某些条件下放入多笔序号不连续的交易，可能提出非法块，出块减少。
+- 官方定性 DoS。咨询未给 CVE。
+- 不变量 69；语料 C73；反模式 nonce-gap-sold-as-proposal；L10.3 第 65 条。
+- 对照不变量 33 / 63 / 68。不写怎样排不连续序号。不抄版本号。
+
 ## 2026-09-12（续 69）
 
 - 博物馆 ASA-2024-006 / GHSA-95rx-m9m5-m94v（High）：默认 `ValidateVoteExtensions` 按提议者注入的扩展推断总投票权。

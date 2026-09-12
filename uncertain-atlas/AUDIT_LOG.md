@@ -885,3 +885,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A300 | 记录 | High；Elevation of Privilege；咨询未给 CVE；CVSS 7.1 | 不编 CVE；不抄分数；不写怎样改注入字段 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 01:20 UTC · 单笔 CheckTx 绿不是整包可提案
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A301 | 中 | 每笔 CheckTx 绿会被写成 Prepare 输出必被 Process 收下 | 博物馆 ASA-2024-002：默认两件套在序号不连续时可能提出非法块 |
+| A302 | 中 | 会和四门定义 / 默认 MaxBytes / 注入扩展权重糊 | 对照表；不变量 69；语料 C73 |
+| A303 | 中 | 默认 handler + 默认 nonce 池会被写成规范保证 | 记下：SDK 默认配对不是 ABCI 规范 |
+| A304 | 记录 | Medium / DoS；咨询写「某些条件」；未给 CVE | 不发明条件步骤；不写怎样排序号；不编 CVE |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
