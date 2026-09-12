@@ -390,6 +390,7 @@
 | 381 | ConsensusParams 余栏被写成已经是证据 MaxBytes | 协议 + 文案 | 看见 ConsensusParams.evidence 限制拜占庭证据是否合法 / ConsensusParams.abci 是 ABCI 相关参数 / ConsensusParams.synchrony 定提案时间戳合法界 / ConsensusParams 余栏当成已经是证据 MaxBytes或已经 Prepare 带了扩展或已经是 PBTS | 不变量 386；语料 C390 |
 | 382 | InitChain 请求被写成已经过了 genesis_time | 协议 + 文案 | 看见 InitChain 请求 time 是创世时间 / InitChain 请求 chain_id 是链的 ID / InitChain 请求 initial_height 是起步块高度 / InitChain 请求当成已经过了 genesis_time或已经有了 ChainID或已经能跳步 | 不变量 387；语料 C391 |
 | 383 | InitChain 请求余栏被写成已经没有参数 | 协议 + 文案 | 看见 InitChain 请求 consensus_params 是起步共识参数 / InitChain 请求 validators 是起步验证者名单 / InitChain 请求 app_state_bytes 是序列化起步应用状态 / InitChain 请求余栏当成已经没有参数或已经没有集合或已经验过应用状态 | 不变量 388；语料 C392 |
+| 384 | Info 回包余栏被写成已经是握手对齐 | 协议 + 文案 | 看见 Info 回包 data 是任意信息 / Info 回包 version 是应用软件语义版本 / Query 回包 codespace 是码的命名空间 / Info 回包余栏当成已经是握手对齐或已经是 app_version或已经是 CheckTx 码空间 | 不变量 389；语料 C393 |
 
 ## 不自动覆盖
 

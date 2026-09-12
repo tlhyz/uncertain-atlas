@@ -286,3 +286,4 @@
 - [name-the-params-evidence](name-the-params-evidence.md)
 - [name-the-init-time](name-the-init-time.md)
 - [name-the-init-params](name-the-init-params.md)
+- [name-the-info-data](name-the-info-data.md)

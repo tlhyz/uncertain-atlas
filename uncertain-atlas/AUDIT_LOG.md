@@ -3916,6 +3916,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1877 | 高 | 看见 InitChain 请求 app_state_bytes 是序列化起步应用状态 / 看见填了 JSON 字节会被写成已经验过应用状态，或当成已经懂余额 | 官方：app_state_bytes is Serialized initial application state. JSON bytes |
 | A1878 | 中 | 怎样写 InitChain 请求余栏 / 怎样选起步参数 / 怎样排起步名单会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1879 | 记录 | 会与 319 / 318 / 303 糊成「看见填了 InitChain 请求余栏就已经没有参数」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。空参数 / 空名单 / 验过应用状态标成另一对象 |
+| A1880 | 高 | 看见 Info 回包 data 是任意信息 / 看见回了 data 会被写成已经是握手对齐，或当成已经是快照重放 | 工作实例：abci++_methods Info Response 官方写 data is Some arbitrary information |
+| A1881 | 高 | 看见 Info 回包 version 是应用软件语义版本 / 看见回了应用版本会被写成已经是 app_version，或当成已经印进本头 AppHash | 官方：version is The application software semantic version |
+| A1882 | 高 | 看见 Query 回包 codespace 是码的命名空间 / 看见写了空间会被写成已经是 CheckTx 码空间，或当成已经是回包码 | 官方：codespace is Namespace for the code |
+| A1883 | 中 | 怎样写 Info 回包余栏 / 怎样填任意信息 / 怎样填应用版本会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1884 | 记录 | 会与 370 / 379 / 381 糊成「看见回了 Info 余栏就已经是握手对齐」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 回包余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。握手对齐 / 请求版本 / CheckTx 码空间标成另一对象 |
 
 
 

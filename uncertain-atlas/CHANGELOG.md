@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 390）
+
+- CometBFT Info 回包余栏工作实例（官方 ABCI++ Methods Info Response / Query Response，实现 / Info 回包余栏，不另写 19 节）：看见 Info 回包 data 是任意信息不是已经是握手对齐。看见 Info 回包 version 是应用软件语义版本不是已经是 app_version。看见 Query 回包 codespace 是码的命名空间不是已经是 CheckTx 码空间。Info 回包余栏不是不变量 370，也不是不变量 379，也不是不变量 381。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 389；语料 C393；模式 name-the-info-data；反模式 infodata-sold-as-appversion；L10.3 第 385 条。填 L4.4 / CometBFT 档案 Info 回包余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Info 回包余栏、怎样填任意信息、怎样填应用版本。不编博物馆页。不另写 19 节。不与 370 / 379 / 381 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。握手对齐、请求版本、CheckTx 码空间标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 389）
 
 - CometBFT InitChain 请求余栏工作实例（官方 ABCI++ Methods InitChain Request，实现 / InitChain 请求余栏，不另写 19 节）：看见 InitChain 请求 consensus_params 是起步共识参数不是已经没有参数。看见 InitChain 请求 validators 是起步验证者名单不是已经没有集合。看见 InitChain 请求 app_state_bytes 是序列化起步应用状态不是已经验过应用状态。InitChain 请求余栏不是不变量 319，也不是不变量 318，也不是不变量 303。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
