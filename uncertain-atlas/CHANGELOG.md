@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 367）
+
+- CometBFT Commit 保留高度工作实例（官方 ABCI++ Methods Commit Usage，实现 / Commit 保留高度，不另写 19 节）：看见 retain_height 默认 0 不是已经在剪。看见低于这个高度的块可以被删不是已经没有历史。看见全网都删了会永久丢不是已经能从创世再装。Commit 保留高度不是不变量 320，也不是不变量 323，也不是不变量 38。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 366；语料 C370；模式 name-the-retain-height；反模式 retain-sold-as-kept；L10.3 第 362 条。填 L4.4 / CometBFT 档案 Commit 保留高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样填 retain_height、怎样删块、怎样开 state sync。不编博物馆页。不另写 19 节。不与 320 / 323 / 38 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。崩溃三步、快照截断、从创世重放标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 366）
 
 - CometBFT VoteInfo 工作实例（官方 ABCI++ Methods Data Types VoteInfo / CommitInfo，实现 / VoteInfo，不另写 19 节）：看见 VoteInfo 能按到场定奖惩不是已经罚没。看见从拟议块或已决块抽出不是已经带了公钥。看见按投票权降序排不是已经进了块。VoteInfo 不是不变量 363，也不是不变量 364，也不是不变量 300。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

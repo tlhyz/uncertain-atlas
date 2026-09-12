@@ -3801,6 +3801,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1762 | 高 | 看见 votes 按投票权降序排、落盘后再从 store 装回 / 看见顺序在 会被写成已经进了块，或当成已经交差 | 官方：VoteInfo in votes ordered by voting power descending；集合写入 store 时顺序也落盘；造 CommitInfo 时从 store 再装 |
 | A1763 | 中 | 怎样编 VoteInfo / 怎样排 votes / 怎样从 store 再装会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1764 | 记录 | 会与 363 / 364 / 300 糊成「看见 CommitInfo 里有票就已经罚没」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VoteInfo / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。回包义务 / Validator 类型 / 本地 State 标成另一对象 |
+| A1765 | 高 | 看见 retain_height 默认 0、表示全留 / 看见没填 会被写成已经在剪，或当成已经交差 | 工作实例：abci++_methods Commit Usage 官方写 retain_height defaults to 0 (retain all) |
+| A1766 | 高 | 看见低于这个高度的块可以被删 / 看见回了高度 会被写成已经是这个节点快照截断，或当成已经没有历史 | 官方：Blocks below this height may be removed |
+| A1767 | 高 | 看见全网都删了会永久丢、除非开了 state sync / 看见能剪 会被写成已经能从创世再装，或当成已经能给轻客户端验 | 官方：If all nodes remove historical blocks then this data is permanently lost, unless state sync；审计、回放、轻客户端也可能还要用 |
+| A1768 | 中 | 怎样填 retain_height / 怎样删块 / 怎样开 state sync 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1769 | 记录 | 会与 320 / 323 / 38 糊成「看见 Commit 回了高度就已经在剪」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit 保留高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。崩溃三步 / 快照截断 / 从创世重放标成另一对象 |
 
 
 

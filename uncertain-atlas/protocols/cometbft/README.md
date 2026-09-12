@@ -143,6 +143,8 @@ Validator 用 address 认人不是已经带了公钥：[`../../tracks/implementa
 
 VoteInfo 能按到场定奖惩不是已经罚没：[`../../tracks/implementation/worked-example-voteinfo-vs-reward.md`](../../tracks/implementation/worked-example-voteinfo-vs-reward.md)（不变量 365）。看见从拟议块或已决块抽出不是已经带了公钥。看见按投票权降序排不是已经进了块。
 
+retain_height 默认 0 不是已经在剪：[`../../tracks/implementation/worked-example-retain-vs-kept.md`](../../tracks/implementation/worked-example-retain-vs-kept.md)（不变量 366）。看见低于这个高度的块可以被删不是已经没有历史。看见全网都删了会永久丢不是已经能从创世再装。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
