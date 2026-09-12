@@ -189,7 +189,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.1 Nakamoto Consensus · 必学
 - PoW、最重链、概率最终性、reorg
-- 覆盖：课文 L3.1；块时间三把尺 `tracks/consensus/worked-example-mtp.md`（太早 / BIP113 locktime / 太新；不变量 41）。进了块的 coinbase ≠ 已经能花：[`../tracks/economic/worked-example-coinbase-vs-mature.md`](../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。coinbase 第一项写了高度 ≠ 头上已经有高度字段：[`../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住：[`../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV ≠ 绝对锁 / ≠ 部署名：[`../tracks/state-models/worked-example-csv-vs-cltv.md`](../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）
+- 覆盖：课文 L3.1；块时间三把尺 `tracks/consensus/worked-example-mtp.md`（太早 / BIP113 locktime / 太新；不变量 41）。进了块的 coinbase ≠ 已经能花：[`../tracks/economic/worked-example-coinbase-vs-mature.md`](../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。coinbase 第一项写了高度 ≠ 头上已经有高度字段：[`../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住：[`../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV ≠ 绝对锁 / ≠ 部署名：[`../tracks/state-models/worked-example-csv-vs-cltv.md`](../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。看见难度把叔块算进去 ≠ 已经按个数调；看见头上叔块哈希不是空 ≠ 已经数清个数：[`../tracks/consensus/worked-example-uncle-diff-vs-header.md`](../tracks/consensus/worked-example-uncle-diff-vs-header.md)（不变量 238）
 
 ### M3.2 网络与传播 · 必学
 - mempool、compact block、eclipse、带宽
@@ -481,7 +481,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C241；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C242；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
