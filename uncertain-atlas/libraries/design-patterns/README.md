@@ -226,3 +226,4 @@
 - [name-the-peer-filter](name-the-peer-filter.md)
 - [name-the-prepare-timeout](name-the-prepare-timeout.md)
 - [name-the-checktx-stable](name-the-checktx-stable.md)
+- [name-the-query-local](name-the-query-local.md)

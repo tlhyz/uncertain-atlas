@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 330）
+
+- CometBFT Query 工作实例（官方 Requirements for the Application Query，实现 / Query，不另写 19 节）：看见 Query 回了不是已经复制到各节点。看见查到了不是已经新鲜。看见实现了 Query 不是已经是正常运转必须有。Query 不是不变量 314，也不是不变量 325，也不是不变量 326。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 329；语料 C333；模式 name-the-query-local；反模式 query-sold-as-replicated；L10.3 第 325 条。填 L4.4 / CometBFT 档案 Query / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样写 Query 处理、怎样配 RPC、怎样做默克尔证明。不编博物馆页。不另写 19 节。不与 314 / 325 / 326 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。QueryState / 查询证明 / 邻居过滤标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 329）
 
 - CometBFT CheckTx 最终不再振荡工作实例（官方 Requirements for the Application Formal Requirement 13 [`CheckTx`, eventual non-oscillation]，实现 / CheckTx 最终不再振荡，不另写 19 节）：看见同一高度回了不同码不是已经有了 CheckTxCode。看见还在振荡不是已经过了 h_stable。看见本地不再振荡不是已经各节点同一份 b。CheckTx 最终不再振荡不是不变量 312，也不是不变量 301，也不是不变量 313，也不是不变量 33。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

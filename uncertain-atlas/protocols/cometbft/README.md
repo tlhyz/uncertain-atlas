@@ -69,6 +69,8 @@ ListSnapshots 回了不是已经有了全部快照：[`../../tracks/implementati
 
 同一高度回了不同码不是已经有了 CheckTxCode：[`../../tracks/implementation/worked-example-checktx-oscillate-vs-stable.md`](../../tracks/implementation/worked-example-checktx-oscillate-vs-stable.md)（不变量 328）。看见还在振荡不是已经过了 h_stable。看见本地不再振荡不是已经各节点同一份 b。
 
+Query 回了不是已经复制到各节点：[`../../tracks/implementation/worked-example-query-vs-replicated.md`](../../tracks/implementation/worked-example-query-vs-replicated.md)（不变量 329）。看见查到了不是已经新鲜。看见实现了 Query 不是已经是正常运转必须有。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

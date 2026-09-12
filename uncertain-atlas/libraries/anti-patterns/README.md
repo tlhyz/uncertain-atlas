@@ -331,3 +331,4 @@
 - [peerfilter-sold-as-connected](peerfilter-sold-as-connected.md)
 - [preparetimeout-sold-as-liveness](preparetimeout-sold-as-liveness.md)
 - [checktxcode-sold-as-stable](checktxcode-sold-as-stable.md)
+- [query-sold-as-replicated](query-sold-as-replicated.md)
