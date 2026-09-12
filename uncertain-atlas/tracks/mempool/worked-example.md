@@ -47,4 +47,4 @@ PQ 验签配额先于「更大的池」
 ## 精密检查
 
 **禁止假学习：** 「进了 mempool 就是上链。」「标准性 = 共识非法。」  
-**边界：** 不写某池的当前默认费率。谁写顺序、盲头 vs 本地选交易：[`worked-example-who-orders.md`](worked-example-who-orders.md)。本节点索取失败 ≠ 共识非法：[`../failure-museum/cve-2024-52913.md`](../failure-museum/cve-2024-52913.md)。
+**边界：** 不写某池的当前默认费率。谁写顺序、盲头 vs 本地选交易：[`worked-example-who-orders.md`](worked-example-who-orders.md)。本节点索取失败 ≠ 共识非法：[`../failure-museum/cve-2024-52913.md`](../failure-museum/cve-2024-52913.md)。父交易进池后扫孤儿必须可中断：[`worked-example-orphan-resolution.md`](worked-example-orphan-resolution.md)。

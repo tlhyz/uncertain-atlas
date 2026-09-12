@@ -385,7 +385,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.2 Mempool · 必学
 - 准入、替换、驱逐、垃圾、抢跑、加密内存池
-- 覆盖：课文 L9.2；筐精读；谁排序 `tracks/mempool/worked-example-who-orders.md`。看不见 ≠ 非法：CVE-2024-52913。加密内存池：无规范级对象，先不过滤器
+- 覆盖：课文 L9.2；筐精读；谁排序 `tracks/mempool/worked-example-who-orders.md`。看不见 ≠ 非法：CVE-2024-52913。孤儿扫描必须可中断：CVE-2024-52914。加密内存池：无规范级对象，先不过滤器
 
 ### M9.3 存储 · 必学
 - WAL、原子提交、断电、剪枝、状态同步
@@ -413,7 +413,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（九案；含 CVE-2019-25220 / 52916 头垃圾）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（十案；含 CVE-2024-52914 孤儿扫描）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -439,11 +439,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–31）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–32）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C33；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C34；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

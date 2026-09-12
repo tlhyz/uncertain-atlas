@@ -36,3 +36,4 @@
 - [adjusted-clock-sold-as-consensus](adjusted-clock-sold-as-consensus.md)
 - [unseen-mempool-sold-as-invalid](unseen-mempool-sold-as-invalid.md)
 - [cheap-header-sold-as-free](cheap-header-sold-as-free.md)
+- [orphan-scan-sold-as-liveness](orphan-scan-sold-as-liveness.md)
