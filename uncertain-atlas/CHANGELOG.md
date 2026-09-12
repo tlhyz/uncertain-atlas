@@ -2,6 +2,20 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 75）
+
+- 博物馆 ISA-2025-005 / GHSA-p22h-3m2v-cmgh（High）：向 Validator Rewards pool 恶意存款可导致整数溢出并停链。
+- 恶意验证者可与 `x/distribution` 交互引入该状态。无已知绕过。咨询未给 CVE。
+- 不变量 74；语料 C78；反模式 pool-overflow-sold-as-amount-only；L10.3 第 70 条。
+- 对照不变量 7 / 51 / 71 / 73。不写怎样存款。不抄版本号。
+
+## 2026-09-12（续 74）
+
+- 博物馆 x/crisis / GHSA-qfc5-6r3j-jj22（Low）：`MsgVerifyInvariant` 本应 panic 停链，但交易内 panic 被恢复，节点继续出块。
+- EndBlock 周期检查才会停开了 `--inv-check-period` 的节点。官方不修，模块将弃用；需要真停则链下协调。
+- 不变量 73；语料 C77；反模式 halt-msg-sold-as-halt；L10.3 第 69 条。
+- 对照不变量 71。不抄检查周期。不写怎样触发不变量失败。
+
 ## 2026-09-12（续 73）
 
 - 博物馆 ASA-2024-005 / GHSA-86h5-xcpx-cfqc（Low）：参与拜占庭行为的委托，在验证者尚未被罚没时，可能通过再委托躲开待执行惩罚。

@@ -77,3 +77,5 @@
 - [maxtxbytes-sold-as-nested-bound](maxtxbytes-sold-as-nested-bound.md)
 - [endblocker-error-sold-as-skippable](endblocker-error-sold-as-skippable.md)
 - [redelegate-sold-as-wash](redelegate-sold-as-wash.md)
+- [halt-msg-sold-as-halt](halt-msg-sold-as-halt.md)
+- [pool-overflow-sold-as-amount-only](pool-overflow-sold-as-amount-only.md)

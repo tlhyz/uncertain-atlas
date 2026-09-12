@@ -138,6 +138,8 @@ Monad「先定序、后交差根」是另一根钉子（定序 ≠ 状态最终�
 - 按发送者序号装箱时，Prepare 必须交出诚实 Process 会收的前缀。单笔 CheckTx 绿 ≠ 整包可提案，见 [ASA-2024-002](../failure-museum/asa-2024-002.md)。
 - `max_tx_bytes` 是外层/本次提案返回的字节上限，不是嵌套 Any / 内部消息 / UnpackAny 已有界。见 [ASA-2024-0012 / 0013](../failure-museum/asa-2024-0012.md)。
 - 挂在 EndBlocker / Finalize 路径上的可选模块，出错按停链审。能与该模块交互的用户就是活性对手。见 [ISA-2025-002](../failure-museum/isa-2025-002.md)。
+- 「发停链交易」不是已经停。交易内 panic 可被恢复；EndBlock 检查才会停节点。见 [x/crisis](../failure-museum/x-crisis-no-halt.md)。
+- 奖励池入金溢出必须拒，不得变成停链。见 [ISA-2025-005](../failure-museum/isa-2025-005.md)。
 - Vote extension 默认可以不启用；启用则必须守 Req 10，见专页。
 - 后量子：Prepare 若做聚合或批量验签，先写配额；数字仍空。
 
@@ -152,4 +154,6 @@ Monad「先定序、后交差根」是另一根钉子（定序 ≠ 状态最终�
 - 「验收时跑过的状态就是已提交状态」
 - 「提议者 Process 一定看到自己刚 Prepare 的那份」
 - 「可选模块 EndBlocker 出错只是局部失败」
+- 「MsgVerifyInvariant 发出去所以链已经停」
+- 「奖励池溢出只是金额错」
 - 未标注版本的默认 `max_tx_bytes`、`TimeoutPropose` 秒数、SDK 版本
