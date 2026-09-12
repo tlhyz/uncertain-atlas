@@ -128,3 +128,4 @@
 - [name-the-bn128-cut](name-the-bn128-cut.md)
 - [name-the-selfbalance](name-the-selfbalance.md)
 - [name-the-blake2f](name-the-blake2f.md)
+- [name-the-shift](name-the-shift.md)
