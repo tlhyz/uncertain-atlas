@@ -9,8 +9,8 @@
 |---|---|---|---|---|---|
 | 签名 | 花指定 UTXO | 应用定义的 tx | nonce+gas 域 | L2 域（须与 L1 分开） | 证明 + 花费权 |
 | RPC | 可骗 | 可骗 | 可骗 | 常是排序者 RPC | 可骗；还可拿走查看钥 |
-| 池 | 本地政策 / 标准性 | CheckTx ≠ Deliver | 本地池或构建者 | 排序者队列 | 证明大，DoS 面大 |
-| 排序 | 矿工选入最重链 | proposer + QC | EL 载荷可能由外部 builder 写；提议者可只签盲头。见 [`../mempool/worked-example-who-orders.md`](../mempool/worked-example-who-orders.md) | 排序者；L1 事后锚 | 矿工选入最重链 |
+| 池 | 本地政策 / 标准性 | CheckTx ≠ Prepare ≠ Finalize | 本地池或构建者 | 排序者队列 | 证明大，DoS 面大 |
+| 排序 | 矿工选入最重链 | 引擎 raw 列表 + 应用 Prepare；Process 不能改。见 [`../consensus/worked-example-prepare-process.md`](../consensus/worked-example-prepare-process.md) | EL 载荷可能由外部 builder 写；提议者可只签盲头。见 [`../mempool/worked-example-who-orders.md`](../mempool/worked-example-who-orders.md) | 排序者；L1 事后锚 | 矿工选入最重链 |
 | 执行 | 脚本 + UTXO 花费 | Apply / ABCI | EVM；失败也可含 | L2 先跑 | 验 π、登记 N 与 C' |
 | 用户常说的确认 | k 个块 | commit 高度 | head 事件 | L2 出块 | 进块 |
 | 更硬的「到了」 | 经济确认政策 | 该高度 commit | finalized | L1 最终 + 窗口 + DA | 同 Bitcoin + nullifier 已上链 |

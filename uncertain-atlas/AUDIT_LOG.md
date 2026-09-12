@@ -529,3 +529,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A168 | 记录 | 公告写缓存限 100、可卡数小时 | 100 不当共识常数；不写昂贵无效孤儿构造 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 00:10 UTC · CheckTx ≠ Prepare ≠ Process ≠ Finalize
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A169 | 中 | L4.4 / 档案把 ABCI 收成 CheckTx vs Finalize 两门 | `worked-example-prepare-process.md`：四门；Prepare 可改且可不确定 |
+| A170 | 中 | Process REJECT 会被写成免费的额外共识 | 规范：SHOULD Accept；Reject ⇒ prevote nil；Req 3 诚实提案必须过 |
+| A171 | 中 | 谁排序表把 CometBFT 写成「矿工 / proposer」 | 拆出 ABCI++ 列；Prepare ≠ PBS |
+| A172 | 记录 | 规范有 MaxBytes=-1 / 100 MB、TimeoutPropose 自适配 | 不抄默认字节与秒数；vote extension 只点名 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

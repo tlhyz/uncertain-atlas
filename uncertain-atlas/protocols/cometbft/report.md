@@ -29,7 +29,9 @@ Tendermint 要：确定最终、应用可插拔、崩溃可恢复。
         ↓
 mempool（应用 CheckTx + 引擎）
         ↓
-proposer 组块  →  Consensus Reactor（round/step）
+proposer 组 raw 块 → PrepareProposal（应用可改序/增/删）
+        ↓
+ProcessProposal（验收，不能改；REJECT ⇒ prevote nil）
         ↓
 +2/3 prevote / precommit
         ↓
@@ -45,13 +47,14 @@ Commit  →  ABCI FinalizeBlock / Commit
 ## 4. 一笔交易完整生命周期
 
 1. 用户对**应用**的交易字节签名（不是对 CometBFT 投票消息）。  
-2. 经 RPC 进某节点 mempool；`CheckTx` 是应用说「现在看起来行」，仍可能在 Finalize 时失败。  
-3. 本轮 proposer 把交易放进 proposal。  
-4. 验证者对 proposal 的块哈希 prevote / precommit。  
-5. +2/3 precommit 后 commit。  
-6. 应用按确定顺序执行。  
-7. 状态哈希进下一轮。  
-8. 该高度不应再换块。用户仍可能连到撒谎的 RPC——那是部署/用户层。
+2. 经 RPC 进某节点 mempool；`CheckTx` 是应用说「现在看起来行」，仍可能被 Prepare 拿掉，或在 Finalize 时失败。  
+3. 本轮 proposer 从池取 raw 列表；`PrepareProposal` 可改序/增/删（有 `validValue` 则跳过）。见 [`../../tracks/consensus/worked-example-prepare-process.md`](../../tracks/consensus/worked-example-prepare-process.md)。  
+4. 验证者 `ProcessProposal` 验收（不能改）。REJECT 走 prevote `nil`。  
+5. 对 proposal 的块哈希 prevote / precommit。  
+6. +2/3 precommit 后 commit。  
+7. 应用按确定顺序执行（`FinalizeBlock` + `Commit`）。  
+8. 状态哈希进下一轮。  
+9. 该高度不应再换块。用户仍可能连到撒谎的 RPC——那是部署/用户层。
 
 ---
 
@@ -82,10 +85,11 @@ Commit  →  ABCI FinalizeBlock / Commit
 
 ## 7. 执行
 
-在应用进程。ABCI 方法随版本命名（`CheckTx`、`FinalizeBlock`、`Commit` 等）。
+在应用进程。ABCI 2.0 方法：`CheckTx`、`PrepareProposal`、`ProcessProposal`、`FinalizeBlock`、`Commit`（另有 vote extension，本档案不展开）。
 
-引擎保证：同一高度同一交易列表，按序交给应用。  
-应用必须确定：相同输入 → 相同状态哈希，否则下一轮共识对不上（实现保证）。
+引擎保证：同一高度同一**已决定**交易列表，按序交给 `FinalizeBlock`。  
+Prepare 可以不确定；Process 与 Finalize 必须确定。立即执行只能写候选状态。  
+应用必须：相同已决定输入 → 相同状态哈希，否则下一轮共识对不上（实现保证）。
 
 ---
 
@@ -186,8 +190,8 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 输出：新票或进入 commit。  
 invariant：不在同一高度对两个冲突值做出违反锁的承诺。
 
-**`CheckTx` vs `FinalizeBlock`**  
-invariant：Check 通过不是最终有效；Finalize 才进状态。
+**`CheckTx` vs `PrepareProposal` vs `ProcessProposal` vs `FinalizeBlock`**  
+invariant：Check 通过不是已进提案；Prepare 可改列表；Process REJECT 是 prevote nil 不是免费过滤；Finalize + Commit 才进提交状态（不变量 33）。
 
 ---
 
@@ -203,7 +207,7 @@ invariant：Check 通过不是最终有效；Finalize 才进状态。
 | 档 | 内容 |
 |---|---|
 | 强烈建议研究 | 锁、+2/3 相交、WAL、ABCI 分离、确定最终的用户语义 |
-| 可以参考 | mempool CheckTx 与共识分离、验证者集合轮换高度 |
+| 可以参考 | mempool CheckTx 与共识分离、Prepare 改列表但 Process 默认 Accept、验证者集合轮换高度 |
 | 暂时不需要 | IBC 全协议、CosmWasm |
 | 不建议采用 | 「我们 BFT，所以投个 2/3 就行」；把升级管理员做成可改历史的后门 |
 

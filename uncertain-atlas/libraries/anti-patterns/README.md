@@ -37,3 +37,4 @@
 - [unseen-mempool-sold-as-invalid](unseen-mempool-sold-as-invalid.md)
 - [cheap-header-sold-as-free](cheap-header-sold-as-free.md)
 - [orphan-scan-sold-as-liveness](orphan-scan-sold-as-liveness.md)
+- [checktx-sold-as-prepared](checktx-sold-as-prepared.md)

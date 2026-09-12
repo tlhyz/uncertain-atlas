@@ -1,7 +1,7 @@
 # 工作实例：签了头，不等于自己排了序
 
 > **事实 / 推断 / 建议** 已分开。
-> 对照：[内存池筐](worked-example.md)、[投票 SignBytes](../consensus/worked-example-vote-signbytes.md)、[Casper 罚没](../economic/worked-example-casper-slashing.md)、[Monad 先定序](../../protocols/monad/README.md)。
+> 对照：[内存池筐](worked-example.md)、[ABCI 四门](../consensus/worked-example-prepare-process.md)、[投票 SignBytes](../consensus/worked-example-vote-signbytes.md)、[Casper 罚没](../economic/worked-example-casper-slashing.md)、[Monad 先定序](../../protocols/monad/README.md)。
 > 主文献：[ethereum/builder-specs README](https://github.com/ethereum/builder-specs/blob/main/README.md)、[Bellatrix `builder.md`](https://github.com/ethereum/builder-specs/blob/main/specs/bellatrix/builder.md)。
 > 本页钉 **谁出有序列表** 与 **谁签共识对象**。Builder API **不是** beacon 状态转换。不抄 MEV 金额、不抄经由中继的块占比。
 
@@ -76,13 +76,15 @@ README 把「协议内拆 proposer / builder」叫 PBS，并写明当时要改�
 
 ## 4. 对照表
 
-| | 本地出块 | Builder API（域外） | 协议内 PBS（规范若将来写） | Bitcoin / 默认 CometBFT |
-|--|----------|---------------------|---------------------------|-------------------------|
-| 谁写交易列表 | 本 slot 提议者 | 外部 builder | 规范定义的 builder 角色 | 矿工 / proposer |
-| 提议者签什么 | 完整载荷的信标块 | 先签盲头 | 以将来规范为准 | 整块 |
-| 列表何时可见 | 签之前 | 签之后揭示 | 以将来规范为准 | 签之前 |
-| 揭示失败 | 无此步 | 信任/活性；可能空 slot | 应有协议对象 | — |
-| 文献 | consensus-specs | builder-specs | 当时不存在于合并时的信标规范 | 各自共识规范 |
+| | 本地出块 | Builder API（域外） | 协议内 PBS（规范若将来写） | Bitcoin | CometBFT ABCI++ |
+|--|----------|---------------------|---------------------------|---------|-----------------|
+| 谁写交易列表 | 本 slot 提议者 | 外部 builder | 规范定义的 builder 角色 | 矿工 | 引擎给 raw 池列表，**本验证者应用** `PrepareProposal` 可改序/增/删 |
+| 提议者签什么 | 完整载荷的信标块 | 先签盲头 | 以将来规范为准 | 整块 | 改完后的完整 `txs` |
+| 列表何时可见 | 签之前 | 签之后揭示 | 以将来规范为准 | 签之前 | 提案带完整列表；`ProcessProposal` 能看、不能改 |
+| 揭示失败 | 无此步 | 信任/活性；可能空 slot | 应有协议对象 | — | 无域外揭示；Process REJECT = prevote nil |
+| 文献 | consensus-specs | builder-specs | 当时不存在于合并时的信标规范 | Bitcoin 共识 | ABCI++ 方法 / 应用要求 |
+
+**事实：** Prepare 不是 PBS。应用回调 ≠ 域外 builder 市场。见 [四门精读](../consensus/worked-example-prepare-process.md)。
 
 Monad 的「先最终顺序、后出状态根」是**另一根钉子**（定序 ≠ 交差根），见过滤器页。不要和「谁写顺序」糊成一词。
 

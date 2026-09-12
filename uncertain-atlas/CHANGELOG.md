@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 37）
+
+- ABCI++ 四门精读：CheckTx（池）≠ PrepareProposal（可改列表，可不确定）≠ ProcessProposal（不可改，必须确定，REJECT = prevote nil）≠ FinalizeBlock+Commit。
+- 对照 Builder API：Prepare 是本验证者应用回调，不是域外 PBS。
+- 不变量 33；语料 C35；反模式 checktx-sold-as-prepared；L10.3 第 29 条。
+- 不展开 vote extension 全文。不抄默认 max_tx_bytes、propose 超时、SDK 版本。
+
 ## 2026-09-12（续 36）
 
 - 博物馆 CVE-2024-52914：进池后二次扫描孤儿，可卡住数小时。修复是匹配一次就让出。

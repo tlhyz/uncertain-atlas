@@ -6,5 +6,5 @@
 **优点：** 可换应用、可测、边界清晰。  
 **缺点：** 应用不确定就全裂；两套存储要对齐高度。  
 **项目：** CometBFT ABCI。  
-**常见 bug：** CheckTx 当最终执行。  
+**常见 bug：** CheckTx 当最终执行；Process REJECT 当免费过滤器；Prepare 立即执行写进提交状态。精读：[四门](../../tracks/consensus/worked-example-prepare-process.md)。  
 **不确定：** 强烈建议。

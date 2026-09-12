@@ -32,7 +32,7 @@
 
 ## D. 正式定义
 
-**ABCI（事实，Cosmos/CometBFT）：** 引擎与应用的字节契约。`CheckTx` 是预检，不是最终。`FinalizeBlock` / `Commit`（名称随版本）才把高度钉进应用状态。
+**ABCI（事实，Cosmos/CometBFT）：** 引擎与应用的字节契约。旧接口只在决定时碰应用。ABCI 2.0 在提案创建（`PrepareProposal`）、提案验收（`ProcessProposal`）、precommit 扩展（`ExtendVote` / `VerifyVoteExtension`）再插三处。`CheckTx` 是池预检，不是最终。`FinalizeBlock` / `Commit` 才把高度钉进应用状态。四门精读：[`../../tracks/consensus/worked-example-prepare-process.md`](../../tracks/consensus/worked-example-prepare-process.md)。
 
 应用必须：
 
@@ -43,7 +43,7 @@
 **WAL：** 先记录将发出的共识消息与内部状态，再对外投票。  
 invariant：重启不得发出与已持久化意图矛盾的票。
 
-CheckTx 通过 + 未 Finalize：链上状态未变。用户文案不得写成最终。
+CheckTx 通过 + 未 Finalize：链上状态未变。Prepare 还可以把这笔从本块名单拿掉（池里未必删）。用户文案不得写成最终。
 
 ---
 
@@ -75,7 +75,8 @@ Ethereum 的 EL/CL 拆分是亲戚：执行与共识分开，但边界不同，�
 
 1. 让应用使用时间/map 遍历 → 哈希分裂。  
 2. 杀进程专打「票已发出、WAL 未 fsync」。  
-3. 用 CheckTx 与 Finalize 的差异做用户欺诈。
+3. 用 CheckTx 与 Finalize 的差异做用户欺诈。  
+4. 诱使应用把 Process REJECT 当免费过滤器，拖垮活性。
 
 ---
 
@@ -100,9 +101,9 @@ WAL：安全。代价：磁盘延迟；实现复杂。
 |---|---|
 | 密码学 | 应用验用户签，引擎验投票签；两插件可换 |
 | 协议 | ABCI：共识不知余额，应用不知票 |
-| 实现 | CheckTx ≠ Deliver；WAL 先写后投 |
+| 实现 | CheckTx ≠ Prepare ≠ Process ≠ Finalize；WAL 先写后投 |
 | 部署 | 崩溃必须回到原子高度 |
 | 经济 | 应用可收费；共识不该按余额改票权，除非经 V(h) |
 
-**禁止假学习：** 「CheckTx 等于已执行。」「应用和共识哪个先写磁盘无所谓。」
-**边界：** 存储通论在 L9.3。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)。
+**禁止假学习：** 「CheckTx 等于已执行。」「Process 拒绝无效交易没有活性代价。」「应用和共识哪个先写磁盘无所谓。」
+**边界：** 存储通论在 L9.3。Vote extension 全文未开。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)、[`../../tracks/consensus/worked-example-prepare-process.md`](../../tracks/consensus/worked-example-prepare-process.md)。

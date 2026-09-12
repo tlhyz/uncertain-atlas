@@ -11,6 +11,6 @@
 | 4.1 | [L04-M01-quorum-intersection.md](L04-M01-quorum-intersection.md) | M4.1 | 2/3 从哪来 |
 | 4.2 | [L04-M02-rounds-and-steps.md](L04-M02-rounds-and-steps.md) | M4.2 | 高度、轮、步 |
 | 4.3 | [L04-M03-locks.md](L04-M03-locks.md) | M4.3 | 锁、解锁、超时 |
-| 4.4 | [L04-M04-abci-and-wal.md](L04-M04-abci-and-wal.md) | M4.5 / M4.6 / M4.8 入口 | 应用分离与崩溃不投矛盾票 |
+| 4.4 | [L04-M04-abci-and-wal.md](L04-M04-abci-and-wal.md) | M4.5 / M4.6 / M4.8 入口 | 应用分离、四门、崩溃不投矛盾票 |
 | 4.5 | [L04-M05-validator-set.md](L04-M05-validator-set.md) | M4.4 | 集合何时算数 |
 | 4.6 | [L04-M06-hotstuff-casper-contrast.md](L04-M06-hotstuff-casper-contrast.md) | M4.7 | QC / FFG 对照，不深挖变体 |
