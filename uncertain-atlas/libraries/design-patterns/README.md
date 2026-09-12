@@ -177,3 +177,4 @@
 - [name-the-wpkh](name-the-wpkh.md)
 - [name-the-multia](name-the-multia.md)
 - [name-the-tap-psbt](name-the-tap-psbt.md)
+- [name-the-wallet-policy](name-the-wallet-policy.md)
