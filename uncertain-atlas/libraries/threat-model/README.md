@@ -328,6 +328,7 @@
 | 319 | Taking Snapshots 被写成已经交差之后拍 | 协议 + 文案 | 看见拍了这个高度 / 没停链 / 只留最近两份 / Taking Snapshots 当成已经交差之后拍的或已经一致或已经有了全部历史快照 | 不变量 324；语料 C328 |
 | 320 | Query Proofs 被写成已经对上 AppHash | 协议 + 文案 | 看见头上有 AppHash / Query 回了 Proof / 一层 ProofOp 的根 / Query Proofs 当成已经是交易默克尔或已经对上 AppHash 或已经对上最终 AppHash | 不变量 325；语料 C329 |
 | 321 | Peer Filtering 被写成已经收下 | 协议 + 文案 | 看见发了 addr 过滤查询 / id 过滤查询绿了 / 有 /store 路径 / Peer Filtering 当成已经收下这个人或已经过了 addr 或已经是引擎在用 | 不变量 326；语料 C330 |
+| 322 | Prepare 及时性被写成已经离开关键路径 | 协议 + 文案 | 看见立刻整块执行 / 填了 TimeoutPropose / 又开一轮 / Prepare 及时性当成已经离开关键路径或已经装得下或已经丢了活性 | 不变量 327；语料 C331 |
 
 ## 不自动覆盖
 

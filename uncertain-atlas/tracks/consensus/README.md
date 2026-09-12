@@ -16,7 +16,7 @@ Vote extension：[`worked-example-vote-extension.md`](worked-example-vote-extens
 Bitcoin MTP 三把尺：[`worked-example-mtp.md`](worked-example-mtp.md)（太早 / BIP113 locktime / 太新窗；太新不是 MTP）。  
 含叔块的难度 ≠ 已经按个数调：[`worked-example-uncle-diff-vs-header.md`](worked-example-uncle-diff-vs-header.md)（不变量 238）。头上叔块哈希不是空不是已经数清。可预期发行不是已经没有炸弹。  
 同一交易标识 ≠ 已经唯一：[`worked-example-duplicate-txid-vs-unique.md`](worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见许多确认不是已经不怕被覆盖。已经花光后再出现不是已经非法。  
-本地超时：[`worked-example-timeouts.md`](worked-example-timeouts.md)（`timeout_commit` 是 commit 之后再等，不是最终性、不是锁、不是 PBTS）。默认 MaxBytes 不是第一轮活性 SLA：[ASA-2023-002](../failure-museum/asa-2023-002.md)（`timeout_propose` 必须对照块上限）。+2/3 不是其余槽位已签：[CVE-2020-15091](../failure-museum/cve-2020-15091.md)。  
+本地超时：[`worked-example-timeouts.md`](worked-example-timeouts.md)（`timeout_commit` 是 commit 之后再等，不是最终性、不是锁、不是 PBTS）。默认 MaxBytes 不是第一轮活性 SLA：[ASA-2023-002](../failure-museum/asa-2023-002.md)（`timeout_propose` 必须对照块上限）。+2/3 不是其余槽位已签：[CVE-2020-15091](../failure-museum/cve-2020-15091.md)。立刻整块执行 ≠ 已经离开关键路径：[`../implementation/worked-example-prepare-timeout-vs-liveness.md`](../implementation/worked-example-prepare-timeout-vs-liveness.md)（不变量 327）。看见填了 TimeoutPropose 不是已经装得下。看见又开一轮不是已经丢了活性。  
 应用回的等待：[`worked-example-next-block-delay.md`](worked-example-next-block-delay.md)（`next_block_delay` 非确定性；不是槽位，不是所有发布线都有）。  
 决策表：[`../../libraries/decision-matrix/consensus.md`](../../libraries/decision-matrix/consensus.md)（不确定列空）。  
 Quorum Store 批次传播 ≠ 已经写出 L：[`worked-example-quorum-store-vs-order.md`](worked-example-quorum-store-vs-order.md)（不变量 132）。已认证批次不是已经排序。进了提议块不是已经落盘。  

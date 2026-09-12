@@ -3606,6 +3606,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1567 | 高 | 看见有 /store / /app 路径 / 看见 Query 能带路径 会被写成已经是引擎在用，或当成已经是过滤 | 官方 Paths：眼下 CometBFT 只用 /p2p 过滤邻居 |
 | A1568 | 中 | 怎样写过滤逻辑 / 怎样配 Cosmos-SDK Query / 怎样拼 IP:端口会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1569 | 记录 | 会与 50 / 305 / 314 糊成「看见连上了就已经收下」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Peer Filtering / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。自动封禁 / InitPeer 时序 / QueryState 标成另一对象 |
+| A1570 | 高 | 看见 Prepare 里立刻整块执行 / 看见执行回了 会被写成已经离开提议超时的关键路径，或当成已经不挡 q 的提议钟 | 官方：Prepare 时整块执行站在关键路径上 |
+| A1571 | 高 | 看见填了 TimeoutPropose / 看见同步期 会被写成已经装得下这次 Prepare 执行，或当成 q 的提议钟已经不会响 | 官方：同步期里 q 的 TimeoutPropose 必须装得下，否则 q prevote nil |
+| A1572 | 高 | 看见又开一轮 / 看见 TimeoutPropose 只是初值 会被写成已经丢了活性，或当成超时已经不再涨 | 官方：违反 Req 1 可能再开一轮，不会丢掉活性；初值会涨 |
+| A1573 | 中 | 怎样设 TimeoutPropose / 默认秒数 / 怎样写立刻执行会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1574 | 记录 | 会与 33 / 47 / 311 / 52 糊成「看见立刻执行了就已经离开关键路径」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 及时性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / 本地超时 / 候选 / 应用 delay 标成另一对象 |
 
 
 

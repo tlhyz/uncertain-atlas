@@ -341,6 +341,7 @@
 | C328 | 324 拍了这个高度≠已经交差之后拍的 | 文案把标了这个高度 / 拍了快照写成已经在交差之后拍的或已经没有更高高度的数据；或把在后台拍 / 没停链写成已经隔离在单一高度或已经各节点字节相同；或把只留最近两份 / Hash 对上了写成已经有了全部历史快照或已经是同一份；或把 Taking Snapshots 写成不变量 38 / 321 / 322 / 323 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C329 | 325 头上有AppHash≠已经是交易默克尔 | 文案把头上有 AppHash / 和 ValidatorsHash、DataHash 并列写成已经是交易默克尔或已经是验证者集合；或把 Query 回了 Proof / QueryResponse.Proof 写成已经对上 AppHash 或已经是一层树；或把一层 ProofOp 的根 / 对上了写成已经是下一层要验的值或已经对上最终 AppHash；或把 Query Proofs 写成不变量 147 / 314 / 38 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C330 | 326 发了addr过滤查询≠已经收下这个人 | 文案把发了 /p2p/filter/addr / TCP 已经连上写成已经收下这个人或已经过了 id 那一道；或把发了 /p2p/filter/id / 公钥地址对上写成已经过了 addr 或已经能交互；或把有 /store / /app 路径 / Query 能带路径写成已经是引擎在用或已经是过滤；或把 Peer Filtering 写成不变量 50 / 305 / 314 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C331 | 327 立刻整块执行≠已经离开关键路径 | 文案把 Prepare 里立刻整块执行 / 执行回了写成已经离开提议超时的关键路径或已经不挡 q 的提议钟；或把填了 TimeoutPropose / 同步期写成已经装得下这次 Prepare 执行或 q 的提议钟已经不会响；或把又开一轮 / TimeoutPropose 只是初值写成已经丢了活性或超时已经不再涨；或把 Prepare 及时性写成不变量 33 / 47 / 311 / 52 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

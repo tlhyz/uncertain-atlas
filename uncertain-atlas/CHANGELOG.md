@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 328）
+
+- CometBFT PrepareProposal 及时性工作实例（官方 Requirements for the Application Formal Requirement 1 [`PrepareProposal`, timeliness]，实现 / PrepareProposal 及时性，不另写 19 节）：看见立刻整块执行不是已经离开关键路径。看见填了 TimeoutPropose 不是已经装得下。看见又开一轮不是已经丢了活性。Prepare 及时性不是不变量 33，也不是不变量 47，也不是不变量 311，也不是不变量 52。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 327；语料 C331；模式 name-the-prepare-timeout；反模式 preparetimeout-sold-as-liveness；L10.3 第 323 条。填 L4.4 / CometBFT 档案 Prepare 及时性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样设 TimeoutPropose、默认秒数、怎样写立刻执行。不编博物馆页。不另写 19 节。不与 33 / 47 / 311 / 52 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。四门 / 本地超时 / 候选 / 应用 delay 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 327）
 
 - CometBFT Peer Filtering 工作实例（官方 Requirements for the Application Peer Filtering / Paths，实现 / Peer Filtering，不另写 19 节）：看见发了 addr 过滤查询不是已经收下这个人。看见 id 过滤查询绿了不是已经过了 addr。看见有 /store 路径不是已经是引擎在用。Peer Filtering 不是不变量 50，也不是不变量 305，也不是不变量 314。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

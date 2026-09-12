@@ -224,3 +224,4 @@
 - [name-the-snapshot-take](name-the-snapshot-take.md)
 - [name-the-query-proof](name-the-query-proof.md)
 - [name-the-peer-filter](name-the-peer-filter.md)
+- [name-the-prepare-timeout](name-the-prepare-timeout.md)
