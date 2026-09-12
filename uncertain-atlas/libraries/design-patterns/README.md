@@ -193,3 +193,4 @@
 - [name-the-reserves](name-the-reserves.md)
 - [name-the-legacy-sign](name-the-legacy-sign.md)
 - [name-the-payment-request](name-the-payment-request.md)
+- [name-the-encrypted-key](name-the-encrypted-key.md)

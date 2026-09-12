@@ -298,3 +298,4 @@
 - [reserves-sold-as-spend](reserves-sold-as-spend.md)
 - [legacy-sign-sold-as-322](legacy-sign-sold-as-322.md)
 - [ack-sold-as-final](ack-sold-as-final.md)
+- [encrypted-sold-as-key](encrypted-sold-as-key.md)
