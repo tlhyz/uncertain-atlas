@@ -42,6 +42,15 @@ pip install -r requirements.txt
 # 或: pip install -e .
 ```
 
+公平 A/B（3L ETF 现货网格 vs 底层永续网格）：
+
+```bash
+python -m qtb.cli ab -c configs/ab_etf_vs_perp.yaml
+# 或: python -m qtb.ab.run -c configs/ab_etf_vs_perp.yaml
+```
+
+只使用 Gate 真实 ETF / 永续 / funding 重叠窗口。禁止用底层逐笔伪造 ETF 逐笔。结论只看 Base / Conservative 成交模型。产物在 `outputs/ab_etf_vs_perp/`。
+
 入口：
 
 ```bash
