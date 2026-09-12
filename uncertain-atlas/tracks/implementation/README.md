@@ -31,6 +31,7 @@
 - [`worked-example-descriptor-vs-keys.md`](worked-example-descriptor-vs-keys.md) — 看见私钥或助记词备份 ≠ 已经知道该看哪种输出脚本；看见描述符 ≠ 已经是地址；380 ≠ 39 ≠ 32 ≠ 173（不变量 184）
 - [`worked-example-initcode-vs-runtime.md`](worked-example-initcode-vs-runtime.md) — initcode 超界 ≠ 已经是部署代码超界；按字分析费 ≠ 已经跑完构造；3860 ≠ 170 ≠ 1014 ≠ 2681（不变量 176）
 - [`worked-example-calldata-floor-vs-execution.md`](worked-example-calldata-floor-vs-execution.md) — 看见 calldata 地板 ≠ 已经改了执行气；数据为主更贵 ≠ 已经让普通转账更贵；预留地板气限 ≠ 已经烧到地板；7623 ≠ 4844 ≠ 1559 ≠ 2028（不变量 197）
+- [`worked-example-rlp-cap-vs-gas.md`](worked-example-rlp-cap-vs-gas.md) — 看见 RLP 编码硬帽 ≠ 已经改了气限；共识层流言不传 ≠ 已经让执行层非法；给信标块留边 ≠ 已经并成一份编码；7934 ≠ 7623 ≠ 1559 ≠ 96（不变量 202）
 - [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
 - [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）

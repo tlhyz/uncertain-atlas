@@ -204,3 +204,4 @@
 - [pairing-sold-as-verify](pairing-sold-as-verify.md)
 - [schedule-sold-as-peerdas](schedule-sold-as-peerdas.md)
 - [reserve-sold-as-merged](reserve-sold-as-merged.md)
+- [cap-sold-as-gas](cap-sold-as-gas.md)
