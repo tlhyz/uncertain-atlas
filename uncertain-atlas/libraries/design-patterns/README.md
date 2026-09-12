@@ -111,3 +111,4 @@
 - [name-the-default-gas](name-the-default-gas.md)
 - [name-the-block-list](name-the-block-list.md)
 - [name-the-exit-domain](name-the-exit-domain.md)
+- [name-the-inclusion-window](name-the-inclusion-window.md)

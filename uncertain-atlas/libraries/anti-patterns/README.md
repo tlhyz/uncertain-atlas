@@ -216,3 +216,4 @@
 - [default-sold-as-cap](default-sold-as-cap.md)
 - [list-sold-as-parallel](list-sold-as-parallel.md)
 - [exit-sold-as-forever](exit-sold-as-forever.md)
+- [window-sold-as-confirm](window-sold-as-confirm.md)
