@@ -180,7 +180,7 @@ def run_sl_directional(
             return df
         w = df.sort_values("timestamp").copy()
         w["timestamp"] = pd.to_datetime(w["timestamp"], utc=True)
-        w = w.set_index("timestamp")[["price"]].resample("1min").last().dropna().reset_index()
+        w = w.set_index("timestamp")[["price"]].resample("5min").last().dropna().reset_index()
         return w
 
     soxl = _1m(soxl_anchor)

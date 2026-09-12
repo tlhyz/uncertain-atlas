@@ -254,9 +254,9 @@ def robustness_on(market: str, start: date, end: date) -> dict[str, Any]:
 def sl_matrix() -> list[dict[str, Any]]:
     from datetime import date as D
 
-    soxl = load_strategy_tape("SOXLG_USDT", D(2026, 7, 1), D(2026, 8, 31))
+    soxl = to_1s_tape(load_strategy_tape("SOXLG_USDT", D(2026, 7, 1), D(2026, 8, 31)))
     tapes = {
-        m: load_strategy_tape(m, D(2026, 6, 25), D(2026, 8, 31))
+        m: to_1s_tape(load_strategy_tape(m, D(2026, 6, 25), D(2026, 8, 31)))
         for m in (
             "SOXL3S_USDT",
             "SNXX3S_USDT",
@@ -270,13 +270,17 @@ def sl_matrix() -> list[dict[str, Any]]:
         )
     }
     rows = []
-    for plan in ("A", "B", "C"):
-        for red in ("remaining", "initial"):
-            for ov in (True, False):
-                rec = run_sl_directional(soxl, tapes, plan=plan, s_initial=2000.0, reduce_mode=red, overlap=ov, rebate=0.0)
-                rec["combo"] = f"plan{plan}_{red}_ov{int(ov)}"
-                rec["confidence"] = "REAL_GATE_ETF_WINDOW" if rec.get("status") == "ok" else "UNDERLYING_ONLY_CANDIDATE"
-                rows.append(rec)
+    for plan, red, ov in (
+        ("A", "remaining", True),
+        ("A", "remaining", False),
+        ("A", "initial", True),
+        ("B", "remaining", True),
+        ("C", "remaining", True),
+    ):
+        rec = run_sl_directional(soxl, tapes, plan=plan, s_initial=2000.0, reduce_mode=red, overlap=ov, rebate=0.0)
+        rec["combo"] = f"plan{plan}_{red}_ov{int(ov)}"
+        rec["confidence"] = "REAL_GATE_ETF_WINDOW" if rec.get("status") == "ok" else "UNDERLYING_ONLY_CANDIDATE"
+        rows.append(rec)
     l_only = run_directional_hold(tapes.get("SOXL3L_USDT"), capital=2000.0, rebate=0.0)
     rows.append({"combo": "L_only_SOXL3L_2000", "confidence": "REAL_GATE_ETF_WINDOW", **l_only})
     return rows
