@@ -36,6 +36,7 @@
 - [`worked-example-tr-vs-tree.md`](worked-example-tr-vs-tree.md) — tr 没有树 ≠ 已经有脚本路径；树表达式 ≠ 已经是旧脚本套法；压缩钥 ≠ 已经是 x-only（不变量 275）
 - [`worked-example-pk-vs-toplevel.md`](worked-example-pk-vs-toplevel.md) — pk ≠ 已经和 pkh / sh 同一套放置；sh 产出 ≠ 已经有赎回脚本；熟悉的标准脚本 ≠ 已经能互操作（不变量 276）
 - [`worked-example-wpkh-vs-compressed.md`](worked-example-wpkh-vs-compressed.md) — wpkh / wsh ≠ 已经只能顶层；未压缩钥 ≠ 已经允许；wsh 产出 ≠ 已经有见证脚本（不变量 277）
+- [`worked-example-multia-vs-tr.md`](worked-example-multia-vs-tr.md) — multi_a ≠ 已经是 383 那种 multi；门限 ≠ 已经同一套编码；sortedmulti_a ≠ 已经是 383 那种排序（不变量 278）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）

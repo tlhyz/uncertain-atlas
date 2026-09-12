@@ -93,6 +93,8 @@
 
 精读：[`../../tracks/implementation/worked-example-wpkh-vs-compressed.md`](../../tracks/implementation/worked-example-wpkh-vs-compressed.md)（不变量 277）。看见 wpkh / wsh 不是已经只能顶层。看见未压缩钥不是已经允许。看见 wsh 产出不是已经有见证脚本。
 
+精读：[`../../tracks/implementation/worked-example-multia-vs-tr.md`](../../tracks/implementation/worked-example-multia-vs-tr.md)（不变量 278）。看见 multi_a 不是已经是 383 那种 multi。看见门限不是已经同一套编码。看见 sortedmulti_a 不是已经是 383 那种排序。
+
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
 精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。
