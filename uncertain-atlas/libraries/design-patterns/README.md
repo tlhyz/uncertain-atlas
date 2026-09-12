@@ -234,3 +234,4 @@
 - [name-the-snapshot-conn](name-the-snapshot-conn.md)
 - [name-the-finalize-persist](name-the-finalize-persist.md)
 - [name-the-synchrony-params](name-the-synchrony-params.md)
+- [name-the-maxbytes-cap](name-the-maxbytes-cap.md)

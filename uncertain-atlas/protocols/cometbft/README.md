@@ -85,6 +85,8 @@ Finalize 改了状态不是已经落盘：[`../../tracks/implementation/worked-e
 
 填了 Precision 不是已经是 MessageDelay：[`../../tracks/implementation/worked-example-precision-vs-msgdelay.md`](../../tracks/implementation/worked-example-precision-vs-msgdelay.md)（不变量 336）。看见填了两个不是已经启用 PBTS。看见用于 PBTS 不是已经是永恒常数。
 
+-1 就按 100 MB 验不是已经没有上限：[`../../tracks/implementation/worked-example-maxbytes-cap-vs-unlimited.md`](../../tracks/implementation/worked-example-maxbytes-cap-vs-unlimited.md)（不变量 337）。看见应用自己卡体积不是已经引擎不管了。看见必须 -1 或不超过 100 MB 不是已经是默认 21 MB。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

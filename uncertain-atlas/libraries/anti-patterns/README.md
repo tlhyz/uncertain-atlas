@@ -339,3 +339,4 @@
 - [snapshotconn-sold-as-required](snapshotconn-sold-as-required.md)
 - [finalizepersist-sold-as-committed](finalizepersist-sold-as-committed.md)
 - [precision-sold-as-msgdelay](precision-sold-as-msgdelay.md)
+- [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md)

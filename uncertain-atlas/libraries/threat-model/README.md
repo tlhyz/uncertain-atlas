@@ -338,6 +338,7 @@
 | 329 | Snapshot Connection 被写成已经必须实现快照 | 协议 + 文案 | 看见四门里有 Snapshot Connection / 给人快照或给自己装回 / 应用选择不实现 / Snapshot Connection 当成已经必须实现快照或已经必须两头都做或已经没有 state sync 这条对象 | 不变量 334；语料 C338 |
 | 330 | FinalizeBlock 落盘禁令被写成已经交差 | 协议 + 文案 | 看见 Finalize 改了状态 / 必须在 Commit 落盘 / 记住上次成功 Commit 高度 / FinalizeBlock 落盘禁令当成已经落盘或已经在 Finalize 落了或已经能跳步 | 不变量 335；语料 C339 |
 | 331 | SynchronyParams 被写成已经启用 PBTS | 协议 + 文案 | 看见填了 Precision / 填了两个 / 用于 PBTS / SynchronyParams 当成已经是 MessageDelay 或已经启用 PBTS 或已经是永恒常数 | 不变量 336；语料 C340 |
+| 332 | BlockParams.MaxBytes 被写成已经没有上限 | 协议 + 文案 | 看见 -1 就按 100 MB 验 / 应用自己卡体积 / 必须 -1 或不超过 100 MB / BlockParams.MaxBytes 当成已经没有上限或已经引擎不管了或已经是默认 21 MB | 不变量 337；语料 C341 |
 
 ## 不自动覆盖
 
