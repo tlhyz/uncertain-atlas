@@ -109,7 +109,7 @@ def run_grid_on_tape(
         slip_mult=slip_mult,
         mgmt_mult=mgmt_mult,
     )
-    use = to_1s_tape(tape) if tape is not None and len(tape) > 80_000 else tape
+    use = to_1s_tape(tape) if tape is not None and not tape.empty else tape
     res = engine.run(use if use is not None else tape)
     met = res.metrics()
     met["window_id"] = window_id
@@ -470,19 +470,27 @@ def run_research(*, out_dir: str | Path = "outputs/research_sl_phase", skip_down
     (outp / "etf_windows.json").write_text(json.dumps({"scanned": scanned, "remap": remapped}, indent=2, default=str), encoding="utf-8")
 
     targets = _pick_grid_windows(scanned, remapped)
+    print(f"[research-sl] grid targets={len(targets)} scanned={len(scanned)} remap={len(remapped)}", flush=True)
     grid_results: list[dict[str, Any]] = []
-    for tw in targets:
+    for ti, tw in enumerate(targets):
         m = tw.get("market")
         if not m or m == "AAOI3L_USDT":
             continue
         try:
-            start = pd.Timestamp(tw["start"]).to_pydatetime()
-            end = pd.Timestamp(tw["end"]).to_pydatetime()
+            start = pd.Timestamp(tw["start"])
+            end = pd.Timestamp(tw["end"])
+            # Clip multi-month candidates to ≤30d around ETF trough (not underlying bottom).
+            if (end - start) > pd.Timedelta(days=32):
+                bot = pd.Timestamp(tw["bottom"]) if tw.get("bottom") else start + (end - start) / 2
+                start = max(start, bot - pd.Timedelta(days=10))
+                end = min(end, bot + pd.Timedelta(days=20))
         except Exception:
             continue
-        tape = _slice_tape(m, start, end)
+        tape = _slice_tape(m, start.to_pydatetime(), end.to_pydatetime())
         if tape.empty:
+            print(f"[research-sl] skip empty {m} {tw.get('id')}", flush=True)
             continue
+        print(f"[research-sl] {ti+1}/{len(targets)} {m} n={len(tape)} {tw.get('id')}", flush=True)
         conf = tw.get("confidence") or "REAL_GATE_ETF_WINDOW"
         wid = tw.get("id") or ""
         for fill in ("base", "conservative"):

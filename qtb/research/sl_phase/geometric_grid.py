@@ -319,43 +319,47 @@ class GeometricSpotGrid:
         ts = pd.to_datetime(tape["timestamp"], utc=True)
         px = tape["price"].to_numpy(dtype=float)
         amt = tape["amount"].to_numpy(dtype=float) if "amount" in tape.columns else np.ones(len(px))
+        ts_ns = ts.astype("int64").to_numpy()
+        day_id = ((ts_ns + 8 * 3600 * 10**9) // (86400 * 10**9)).astype(np.int64)
         last = float(px[0])
         self._hang(last, last)
         self._open_inventory(last)
         self._anchor_ts = ts.iloc[0]
-        daily: dict[pd.Timestamp, float] = {}
-        last_mgmt_day = (ts.iloc[0] + pd.Timedelta(hours=8)).floor("D")
+        anchor_ns = int(ts_ns[0])
+        daily: dict[int, float] = {}
+        last_mgmt_day = int(day_id[0])
         rng = np.random.default_rng(1)
         ema = last
-        for k in range(len(px)):
+        reanchor_ns = 14 * 86400 * 10**9 if self.reanchor == "14_day" else 7 * 86400 * 10**9
+        do_cal = self.reanchor in {"7_day", "14_day"}
+        do_vol = self.reanchor == "volatility_triggered"
+        n = len(px)
+        for k in range(n):
             p = float(px[k])
-            t = ts.iloc[k]
-            day = (t + pd.Timedelta(hours=8)).floor("D")
+            tns = int(ts_ns[k])
+            day = int(day_id[k])
             if day != last_mgmt_day:
                 fee = self.ledger.charge_mgmt(self.base * p)
                 self.cash -= fee
                 last_mgmt_day = day
-            # reanchor checks
-            if self.reanchor in {"7_day", "14_day"} and self._anchor_ts is not None:
-                need = 14 if self.reanchor == "14_day" else 7
-                if (t - self._anchor_ts) >= pd.Timedelta(days=need):
-                    self._close_grid(p)
-                    self._hang(p, p)
-                    self._open_inventory(p)
-                    self._anchor_ts = t
-                    self.reanchors += 1
-                    self.paused_buys = False
-            elif self.reanchor == "volatility_triggered" and self.center > 0:
+            if do_cal and tns - anchor_ns >= reanchor_ns:
+                self._close_grid(p)
+                self._hang(p, p)
+                self._open_inventory(p)
+                anchor_ns = tns
+                self.reanchors += 1
+                self.paused_buys = False
+            elif do_vol and self.center > 0:
                 dist = abs(p / self.center - 1.0)
                 broke_up = p > self.levels[-1]
                 broke_dn = p < self.levels[0]
                 ema = 0.94 * ema + 0.06 * p
-                if broke_up or dist >= 0.20:
+                if broke_up or dist >= 0.25:
                     if self.allow_reanchor_up and ema >= self.center:
                         self._close_grid(p)
                         self._hang(p, p)
                         self._open_inventory(p)
-                        self._anchor_ts = t
+                        anchor_ns = tns
                         self.reanchors += 1
                         self.paused_buys = False
                     elif broke_up:
@@ -365,7 +369,6 @@ class GeometricSpotGrid:
                     self.rest_buy.clear()
             tick = infer_tick(p)
             remaining = float(amt[k])
-            # sequential: sells low→high if print above, buys high→low if print below
             if remaining > 0 and self.rest_sell:
                 for i in sorted(self.rest_sell):
                     lv = float(self.levels[i])
@@ -379,7 +382,6 @@ class GeometricSpotGrid:
                     if got <= 0:
                         break
                     if got + 1e-15 < want:
-                        # partial: shrink lot, consume print, stay resting
                         frac = got / want
                         part = _Lot(got, lot.cost, lot.buy_fee * frac)
                         lot.qty -= got
@@ -410,17 +412,22 @@ class GeometricSpotGrid:
                         break
                     fpx = fill_price("buy", lv, tick, self.policy)
                     fee = self.ledger.charge(got * fpx, maker=True)
-                    # temporarily set qty via cash check inside
                     self._buy_fill_qty(i, fpx, fee, got)
                     remaining -= got
                     if remaining <= 0:
                         break
-            daily[day] = self._equity(p)
+            if k == n - 1 or int(day_id[k + 1]) != day:
+                daily[day] = self._equity(p)
         last_px = float(px[-1])
         inv_cost = sum(l.qty * l.cost for l in self.lots)
         unreal = self.base * last_px - inv_cost
         eq = self._equity(last_px)
-        ser = pd.Series(daily)
+        ser = pd.Series(
+            daily,
+            index=pd.to_datetime(np.array(list(daily.keys()), dtype="int64") * 86400, unit="s", utc=True)
+            if daily
+            else None,
+        )
         return GridResult(
             self.symbol,
             self.policy.model,
