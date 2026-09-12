@@ -115,6 +115,8 @@ Prepare 不得改已提交状态不是已经立刻执行就已经交差：[`../.
 
 Process 也会在提议者那边叫不是已经不用再 Process：[`../../tracks/implementation/worked-example-process-also-vs-prepare.md`](../../tracks/implementation/worked-example-process-also-vs-prepare.md)（不变量 351）。看见通常紧跟 Prepare、列表对得上不是已经保证是这一次。看见失败时可能对上更早一次或根本不调不是已经每轮都会叫。
 
++2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过：[`../../tracks/implementation/worked-example-late-extension-vs-verified.md`](../../tracks/implementation/worked-example-late-extension-vs-verified.md)（不变量 352）。看见建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify。看见下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

@@ -3731,6 +3731,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1692 | 高 | 看见失败时可能对上更早一次 Prepare / 看见根本不调 Process 会被写成已经是这一次 Prepare，或当成已经每轮都会叫 Process | 官方：失败时可能对上更早一次，或根本不调 Process |
 | A1693 | 中 | 怎样写 ProcessProposal / 怎样缓存候选 / 怎样测失败路径会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1694 | 记录 | 会与 33 / 347 / 311 糊成「看见自己刚 Prepare 过就已经不用再 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案提议者 Process / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / Req 3 必须 Accept / 候选状态标成另一对象 |
+| A1695 | 高 | 看见 +2/3 之后才进来的扩展写进了 commit info / 看见 last_commit 里有扩展 会被写成已经 Verify 过，或当成已经 Accept | 工作实例：abci++_methods PrepareProposal When 官方写 +2/3 之后才加进来的扩展没有被 Verify |
+| A1696 | 高 | 看见建议按 Verify 同款逻辑再看一遍 / 看见 Prepare 要用这些扩展改提案 会被写成已经是引擎会再 Verify，或当成已经是 Req 6 必须 Accept | 官方：应用 MAY 用这些扩展改提案，建议按 Verify 同款逻辑再看一遍 |
+| A1697 | 高 | 看见下一高度 round 0 收到上一高度 Precommit / 看见写进 ExtendedCommitInfo 会被写成已经又叫了 Verify，或当成已经必须再 Verify | 官方：MAY 写进 ExtendedCommitInfo 而不再叫 VerifyVoteExtension |
+| A1698 | 中 | 怎样再验迟到扩展 / 怎样写 Prepare / 怎样攒 ExtendedCommitInfo 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1699 | 记录 | 会与 34 / 348 / 330 糊成「看见 last_commit 里有扩展就已经 Verify 过」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案迟到扩展 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拒收整张预提交 / Req 6 必须 Accept / 到了 H 才 Prepare 带扩展标成另一对象 |
 
 
 

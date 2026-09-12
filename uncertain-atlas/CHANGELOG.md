@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 353）
+
+- CometBFT 迟到扩展工作实例（官方 ABCI++ Methods PrepareProposal When / VerifyVoteExtension When，实现 / +2/3 之后才进来的扩展，不另写 19 节）：看见 +2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过。看见建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify。看见下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify。迟到扩展不是不变量 34，也不是不变量 348，也不是不变量 330。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 352；语料 C356；模式 name-the-late-extension；反模式 lateext-sold-as-verified；L10.3 第 348 条。填 L4.4 / CometBFT 档案迟到扩展 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样再验迟到扩展、怎样写 Prepare、怎样攒 ExtendedCommitInfo。不编博物馆页。不另写 19 节。不与 34 / 348 / 330 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。拒收整张预提交、Req 6 必须 Accept、到了 H 才 Prepare 带扩展标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 352）
 
 - CometBFT 提议者 Process 工作实例（官方 ABCI++ Methods ProcessProposal Usage，实现 / Process 也会在提议者那边叫，不另写 19 节）：看见 Process 也会在提议者那边叫不是已经不用再 Process。看见通常紧跟 Prepare、列表对得上不是已经保证是这一次。看见失败时可能对上更早一次或根本不调不是已经每轮都会叫。提议者 Process 不是不变量 33，也不是不变量 347，也不是不变量 311。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
