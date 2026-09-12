@@ -221,3 +221,4 @@
 - [mcopy-sold-as-identity](mcopy-sold-as-identity.md)
 - [push0-sold-as-push1](push0-sold-as-push1.md)
 - [basefee-opcode-sold-as-market](basefee-opcode-sold-as-market.md)
+- [blobbasefee-sold-as-basefee](blobbasefee-sold-as-basefee.md)
