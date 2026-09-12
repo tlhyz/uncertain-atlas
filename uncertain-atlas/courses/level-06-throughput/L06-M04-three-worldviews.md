@@ -57,7 +57,7 @@
 
 ## F. 真实项目
 
-Solana、Sui、Aptos。Avalanche 对照的是共识抽样，不是这三种执行世界观——不要塞进本表硬比。
+Solana、Sui、Aptos。Avalanche 对照的是共识抽样，不是这三种执行世界观——不要塞进本表硬比。C-Chain 事故是 EVM 事故：正确兑现委托语义 ≠ 预编译信任已经改过，见 [`../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)（不变量 119）。
 
 ---
 

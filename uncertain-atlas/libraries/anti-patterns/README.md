@@ -123,3 +123,4 @@
 - [subgroup-sold-as-on-curve](subgroup-sold-as-on-curve.md)
 - [precompile-oog-sold-as-reverted](precompile-oog-sold-as-reverted.md)
 - [nested-ics20-sold-as-outer-state](nested-ics20-sold-as-outer-state.md)
+- [delegatecall-sold-as-precompile-trust](delegatecall-sold-as-precompile-trust.md)

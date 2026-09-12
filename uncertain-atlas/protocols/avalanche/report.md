@@ -168,8 +168,12 @@ C-Chain 状态膨胀与 Ethereum 同类。
 
 ## 15. 历史事故
 
-已知公开方向：C-Chain 曾出现过停机/回归类事件。  
-**本版不下七问细节。** 补档条件：官方 postmortem 或安全公告原文。禁止转述群聊。
+| 事件 | 层 | 备注 |
+|---|---|---|
+| 2025 delegatecall / 有状态预编译 | 协议+实现 | 正确兑现 EVM 委托语义 ≠ 预编译信任模型已经跟着改过；库换了正确语义 ≠ 旧假设已经更新。见 `tracks/failure-museum/avalanche-2025-delegatecall-precompile.md` |
+
+这是 C-Chain / 子网 EVM 执行事故，不是 Snow 抽样共识事故。  
+Native Asset Call（2022）另有故事；本环境未见独立 GHSA / 第一方七问页，本版不编。禁止转述群聊。不写怎样冒充。不抄版本 / 地址。
 
 ---
 
