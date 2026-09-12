@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 375）
+
+- CometBFT Flush 工作实例（官方 ABCI++ Methods Flush Usage，实现 / Flush，不另写 19 节）：看见 Flush 要把客户端排队的消息冲到服务端不是已经送到。看见定期 Flush 是为了让异步请求真发出去不是已经是四门。看见立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走。Flush 不是不变量 309，也不是不变量 307，也不是不变量 310。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 374；语料 C378；模式 name-the-flush；反模式 flush-sold-as-sent；L10.3 第 370 条。填 L4.4 / CometBFT 档案 Flush / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Flush、怎样排队、怎样做成同步请求。不编博物馆页。不另写 19 节。不与 309 / 307 / 310 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。对等发送、四门连接、Commit 锁标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 374）
 
 - CometBFT CheckTx 可选工作实例（官方 ABCI++ Methods CheckTx Usage，实现 / CheckTx 可选，不另写 19 节）：看见 CheckTx 技术上可选、不参与处理块不是已经是四门已经结算。看见 Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块。看见引擎对回包码不再赋予别的含义不是已经被引擎用了 Data。CheckTx 可选不是不变量 33，也不是不变量 316，也不是不变量 317。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

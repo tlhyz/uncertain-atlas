@@ -3841,6 +3841,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1802 | 高 | 看见引擎对回包码不再赋予别的含义 / 看见有码 会被写成已经被引擎用了 Data，或当成已经是共识顺序 | 官方：CometBFT attributes no other value to the response code |
 | A1803 | 中 | 怎样写 CheckTx / 怎样挑回包码 / 怎样广播会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1804 | 记录 | 会与 33 / 316 / 317 糊成「看见能回 CheckTx 就已经是四门已经结算」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 可选 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / Finalize 回执 / CheckTx 回包标成另一对象 |
+| A1805 | 高 | 看见 Flush 要把客户端排队的消息冲到服务端 / 看见叫了 Flush 会被写成已经送到，或当成已经入队 | 工作实例：abci++_methods Flush Usage 官方写 Signals that messages queued on the client should be flushed to the server |
+| A1806 | 高 | 看见定期 Flush 是为了让异步请求真发出去 / 看见定期在冲 会被写成已经是四门，或当成已经交差 | 官方：It is called periodically by the client implementation to ensure asynchronous requests are actually sent |
+| A1807 | 高 | 看见立刻 Flush 是为了做成同步请求、回包回来才算这次同步 / 看见立刻叫了 会被写成已经能往下走，或当成已经 Commit | 官方：called immediately to make a synchronous request, which returns when the Flush response comes back |
+| A1808 | 中 | 怎样写 Flush / 怎样排队 / 怎样做成同步请求会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1809 | 记录 | 会与 309 / 307 / 310 糊成「看见叫了 Flush 就已经送到」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Flush / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。对等发送 / 四门连接 / Commit 锁标成另一对象 |
 
 
 
