@@ -3941,6 +3941,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1902 | 高 | 看见 ExecTxResult.codespace 是码的命名空间 / 看见写了空间会被写成已经是 CheckTx 码空间，或当成已经是回包码 | 官方：codespace is Namespace for the code |
 | A1903 | 中 | 怎样写 ExecTxResult 气 / 怎样填要的气 / 怎样填用掉的气会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1904 | 记录 | 会与 315 / 316 / 381 糊成「看见填了 ExecTxResult 气就已经是 CheckTx 的 GasWanted」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult 气 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。CheckTx 的 GasWanted / 已经算进共识 / CheckTx 码空间标成另一对象 |
+| A1905 | 高 | 看见 ExtendedCommitInfo.round 是提交轮 / 看见填了 round 会被写成已经是 CommitInfo.round，或当成已经按投票权排过 | 工作实例：abci++_methods ExtendedCommitInfo 官方写 round is Commit round. Reflects the round at which the block proposer decided in the previous height |
+| A1906 | 高 | 看见 Finalize 请求 next_validators_hash 是下一验证者集合默克尔根 / 看见填了 next_validators_hash 会被写成已经是同一套字段，或当成已经换了人 | 官方：next_validators_hash is Merkle root of the next validator set |
+| A1907 | 高 | 看见 Echo 请求 Message 是要回显的字符串 / 看见填了 Message 会被写成已经是 Flush，或当成已经送到 | 官方：Message is A string to echo back |
+| A1908 | 中 | 怎样写 ExtendedCommitInfo 轮 / 怎样填提交轮 / 怎样填下一集合根会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1909 | 记录 | 会与 392 / 359 / 374 糊成「看见填了 ExtendedCommitInfo 轮就已经是 CommitInfo.round」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedCommitInfo 轮 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。CommitInfo.round / 同一套字段 / Flush 标成另一对象 |
 
 
 

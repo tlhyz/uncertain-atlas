@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 395）
+
+- CometBFT ExtendedCommitInfo 轮工作实例（官方 ABCI++ Methods ExtendedCommitInfo / FinalizeBlock Request / Echo Request，实现 / ExtendedCommitInfo 轮，不另写 19 节）：看见 ExtendedCommitInfo.round 是提交轮不是已经是 CommitInfo.round。看见 Finalize 请求 next_validators_hash 是下一验证者集合默克尔根不是已经是同一套字段。看见 Echo 请求 Message 是要回显的字符串不是已经是 Flush。ExtendedCommitInfo 轮不是不变量 392，也不是不变量 359，也不是不变量 374。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 394；语料 C398；模式 name-the-ext-commit-round；反模式 extcommitround-sold-as-commitinfo；L10.3 第 390 条。填 L4.4 / CometBFT 档案 ExtendedCommitInfo 轮 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendedCommitInfo 轮、怎样填提交轮、怎样填下一集合根。不编博物馆页。不另写 19 节。不与 392 / 359 / 374 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。CommitInfo.round、同一套字段、Flush 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 394）
 
 - CometBFT ExecTxResult 气工作实例（官方 ABCI++ Methods ExecTxResult，实现 / ExecTxResult 气，不另写 19 节）：看见 ExecTxResult.gas_wanted 是这笔要的气不是已经是 CheckTx 的 GasWanted。看见 ExecTxResult.gas_used 是这笔用掉的气不是已经算进共识。看见 ExecTxResult.codespace 是码的命名空间不是已经是 CheckTx 码空间。ExecTxResult 气不是不变量 315，也不是不变量 316，也不是不变量 381。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
