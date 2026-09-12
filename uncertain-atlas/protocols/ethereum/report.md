@@ -37,7 +37,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 
 ## 4. 一笔交易完整生命周期
 
-1. 签名（含 nonce、gas、chain id、数据）。钱包 JSON 里的 chainId 不是已经编进签名哈希；旧六字段签不是已经防跨链重放；EIP-155 不是 EIP-1559。精读：[`../../tracks/crypto/worked-example-chainid-vs-signed.md`](../../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）。钱包 typed data 是 EIP-712，**不是**共识投票域；对照 `tracks/crypto/worked-example-tagged-hash.md`。  
+1. 签名（含 nonce、gas、chain id、数据）。钱包 JSON 里的 chainId 不是已经编进签名哈希；旧六字段签不是已经防跨链重放；EIP-155 不是 EIP-1559。精读：[`../../tracks/crypto/worked-example-chainid-vs-signed.md`](../../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）。类型字节不是已经解开内层；旧式列表不是已经是信封；2718 不是 1559。精读：[`../../tracks/implementation/worked-example-typed-vs-legacy.md`](../../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。钱包 typed data 是 EIP-712，**不是**共识投票域；对照 `tracks/crypto/worked-example-tagged-hash.md`。  
 2. RPC 广播。  
 3. 进若干 mempool；可被替换（同 nonce 更高费）。  
 4. 某 proposer 签入执行块；列表可能由外部 builder 写（域外 Builder API：先签盲头再揭示）。见 [`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。不是协议内 PBS。  

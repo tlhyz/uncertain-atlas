@@ -50,6 +50,7 @@
 
 **事实：** Bitcoin 有 script 和 DER 签名的历史包袱；后来用更严的标准（如严格 DER、SegWit 后的新序列化）收口。  
 **事实：** 多客户端链（Ethereum）必须把编码写到「两个实现算同一个根」。可执行规范存在的原因之一就是这个。
+类型字节不是已经解开内层。旧式列表不是已经是信封。2718 不是 1559。精读：[`../../tracks/implementation/worked-example-typed-vs-legacy.md`](../../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。
 
 mempool 策略可以比共识更严。  
 但「我本地解析失败」不能自动等于「全网共识非法」，除非规范就是这么写。这是反模式库会收的一条。
@@ -121,5 +122,5 @@ mempool 策略可以比共识更严。
 | 部署 | 解析器被灌爆是 DoS，不是「JSON 更方便」 |
 | 经济 | 裂链后跟错根放货 |
 
-**禁止假学习：** 「JSON 也能当共识编码。」
-**边界：** 具体编解码以各链规范为准。见反模式 noncanonical-accepted。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。外层交易上限不是内层解码已有界：[`../../tracks/failure-museum/asa-2024-0012.md`](../../tracks/failure-museum/asa-2024-0012.md)。Int/Dec 位宽对不齐不是已对齐：[`../../tracks/failure-museum/asa-2024-010.md`](../../tracks/failure-museum/asa-2024-010.md)。跨链 ack JSON 不是已经确定：[`../../tracks/failure-museum/isa-2025-001.md`](../../tracks/failure-museum/isa-2025-001.md)。
+**禁止假学习：** 「JSON 也能当共识编码。」「带了类型号 = 已经解开内层。」「旧式列表 = 已经是信封。」「2718 = 1559。」
+**边界：** 具体编解码以各链规范为准。见反模式 noncanonical-accepted。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。类型信封 ≠ 已经解开内层：[`../../tracks/implementation/worked-example-typed-vs-legacy.md`](../../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。外层交易上限不是内层解码已有界：[`../../tracks/failure-museum/asa-2024-0012.md`](../../tracks/failure-museum/asa-2024-0012.md)。Int/Dec 位宽对不齐不是已对齐：[`../../tracks/failure-museum/asa-2024-010.md`](../../tracks/failure-museum/asa-2024-010.md)。跨链 ack JSON 不是已经确定：[`../../tracks/failure-museum/isa-2025-001.md`](../../tracks/failure-museum/isa-2025-001.md)。不抄类型取值范围。不写怎样跨类型复用签名。

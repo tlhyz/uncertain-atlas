@@ -191,6 +191,7 @@
 160. 若做绝对时间锁 / 对照 BIP-65：必须点名问的是交易 nLockTime、输出脚本里的 CLTV，还是钟（不变量 164）。脚本里的 CLTV 不是交易 nLockTime 已经把输出锁到那时。nLockTime 能证明将来能花不是已经证明现在不能花。CLTV 比的是花费交易的 nLockTime 不是墙上现在。输入已经 final 不是 CLTV 已经在生效。第一版若做绝对时间锁，必须写在输出脚本上。不要抄阈值。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)。这和 MTP 三把尺（不变量 41）、coinbase 成熟（不变量 163）、策略拒绝（不变量 144）、钥匙路径（不变量 153）不是同一句。
 161. 若做相对时间锁 / 对照 BIP-68 / BIP-112：必须点名问的是部署名、nSequence，还是脚本 CSV（不变量 165）。脚本里的 CSV 不是 nSequence 已经把输出相对锁住。相对锁不是绝对锁。CSV 软分叉部署不是已经在讲 CHECKSEQUENCEVERIFY 操作码。nSequence 有数不是已经是相对锁。第一版若做相对时间锁，必须写清锁的是被花输出的年龄。不要抄位旗。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)。这和 CLTV（不变量 164）、MTP 三把尺（不变量 41）、coinbase 成熟（不变量 163）、策略拒绝（不变量 144）不是同一句。
 162. 若做未确认替换示意 / 对照 BIP-125：必须点名问的是示意、本节点是否收替换，还是块内合法（不变量 166）。选择加入替换信号不是已经换掉。nSequence 用来示意可替换不是已经是相对锁。子孙继承信号不是自己已经明示加入。钱包看见未确认不是已经当付款。第一版必须把三套文案分开。不要抄条数。不要另写 19 节。精读：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)。这和策略大类（不变量 144）、相对锁（不变量 165）、CLTV 终值（不变量 164）不是同一句。
+163. 若做多种交易编码 / 对照 EIP-2718：必须点名问的是类型字节、不透明载荷，还是旧式列表（不变量 167）。类型字节不是已经解开内层。旧式列表不是已经是信封。看见收据不是类型已经对上。EIP-2718 不是 EIP-1559，也不是 EIP-155。信封在不是已经把类型签进哈希。第一版必须把三套文案分开。不要抄取值范围。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-typed-vs-legacy.md`](../../tracks/implementation/worked-example-typed-vs-legacy.md)。这和链绑定（不变量 161）、1559 费用市场（不变量 158）、处理完一块（不变量 149）不是同一句。
 
 **以后再发明**
 
@@ -317,6 +318,7 @@
 - 把脚本里的 CLTV 写成交易 nLockTime 已经把输出锁住，或把能证明将来能花写成已经证明现在不能花，或把输入 final 写成时间锁已经生效。
 - 把脚本里的 CSV 写成 nSequence 已经相对锁住，或把相对锁写成 CLTV，或把「CSV 之后」写成已经在讲操作码。
 - 把选择加入替换信号写成已经换掉，或把 nSequence 示意写成相对锁，或把未确认入账写成已经当付款。
+- 把类型字节写成已经解开内层，或把旧式列表写成已经是信封，或把 2718 写成 1559 / 155。
 
 ---
 
@@ -367,7 +369,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百六十二条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百六十三条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
