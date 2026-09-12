@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 323）
+
+- CometBFT Snapshot Discovery 工作实例（官方 Requirements for the Application Snapshot Discovery，实现 / Snapshot Discovery，不另写 19 节）：看见 ListSnapshots 回了不是已经有了全部快照。看见挑了最高不是已经收下。看见 Offer 被拒不是已经停。Snapshot Discovery 不是不变量 321，也不是不变量 38，也不是不变量 314。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 322；语料 C326；模式 name-the-snapshot-discover；反模式 snapshotdiscover-sold-as-listed；L10.3 第 318 条。填 L4.4 / CometBFT 档案 Snapshot Discovery / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样实现 ListSnapshots、怎样挑、把 10 当产品常数。不编博物馆页。不另写 19 节。不与 321 / 38 / 314 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。装回 / 轻验 AppHash / 启动对齐标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 322）
 
 - CometBFT Snapshot Restoration 工作实例（官方 Requirements for the Application Snapshot Restoration，实现 / Snapshot Restoration，不另写 19 节）：看见 OfferSnapshot 收下不是已经装完。看见一块 chunk 收下不是已经齐。看见拉失败换一份不是已经能接着装。Snapshot Restoration 不是不变量 38，也不是不变量 314，也不是不变量 320。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
