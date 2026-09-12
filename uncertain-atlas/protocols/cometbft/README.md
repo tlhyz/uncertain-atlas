@@ -105,6 +105,8 @@ MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交�
 
 必须协调升级不是已经只改 VoteExtensionsEnableHeight：[`../../tracks/implementation/worked-example-abci20-upgrade-vs-height.md`](../../tracks/implementation/worked-example-abci20-upgrade-vs-height.md)（不变量 346）。看见 h_e 必须高于当前不是已经能写成当前高度。看见引擎按当前高度决定存什么要什么不是已经按创世配好了。
 
+正确提议者的准备提案必须被正确接收者 Accept 不是已经是任意块都会 Accept：[`../../tracks/implementation/worked-example-req3-coherence-vs-accept.md`](../../tracks/implementation/worked-example-req3-coherence-vs-accept.md)（不变量 347）。看见 Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭不是已经只是活性问题。看见 Req 3 是大量测试和自动验证的目标不是已经测过。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

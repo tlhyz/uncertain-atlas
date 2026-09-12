@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 348）
+
+- CometBFT Prepare–Process 一致性工作实例（官方 Requirements for the Application Formal Requirement 3 [`PrepareProposal`, `ProcessProposal`, coherence]，实现 / Prepare–Process 一致性，不另写 19 节）：看见正确提议者的准备提案必须被正确接收者 Accept 不是已经是任意块都会 Accept。看见 Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭不是已经只是活性问题。看见 Req 3 是大量测试和自动验证的目标不是已经测过。Prepare–Process 一致性不是不变量 33，也不是不变量 340，也不是不变量 338。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 347；语料 C351；模式 name-the-req3-coherence；反模式 req3coherence-sold-as-accept；L10.3 第 343 条。填 L4.4 / CometBFT 档案 Prepare–Process 一致性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Prepare / Process、怎样测、怎样写测试向量。不编博物馆页。不另写 19 节。不与 33 / 340 / 338 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。四门、Process 确定性、Prepare 可以不确定标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 347）
 
 - CometBFT ABCI 2.0 协调升级工作实例（官方 Requirements for the Application Application configuration required to switch to ABCI 2.0，实现 / ABCI 2.0 协调升级，不另写 19 节）：看见必须协调升级不是已经只改 VoteExtensionsEnableHeight。看见 h_e 必须高于当前不是已经能写成当前高度。看见引擎按当前高度决定存什么要什么不是已经按创世配好了。ABCI 2.0 协调升级不是不变量 330，也不是不变量 58，也不是不变量 343。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
