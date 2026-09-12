@@ -112,6 +112,8 @@ CVE / 官方安全披露 / 规范补丁 / 核心开发公告 > 审计 > 事后�
 - Solana 2022-06-01：失败的 durable nonce 不是已经不能再播；当普通交易处理再重提不是已消费；一边收一边拒不是 Tower / PoH 已经一致。  
 - Solana 2022-09-30：已确认的重复槽赢家不是下一领导者会往上建的父块；票还在、根不前进不是 Tower / PoH 已经一致。  
 - Solana 2023-02-25：恢复 shred 不是已经按父槽滤掉；vote-only / 落到 Block Repair 不是已经停链，也不是已最终经济交易被回滚。  
+- Solana 2024-02-06：哨兵有效槽 0 不是卸载后再编译已经可见；关掉旧加载器部署不是缓存已修。  
+- Solana 2022-04-30：入站洪水不是已经停链；票不够落地、废弃分叉清不掉才把节点打死。  
 - 停链面：[`../../tracks/failure-museum/worked-example-halt-surfaces.md`](../../tracks/failure-museum/worked-example-halt-surfaces.md)——「停链」不是一种事故。  
 - CVE-2024-52922：宣布新块后单一对等节点卡住传播。  
 - CVE-2024-35202：部分块重建失败后第二次 `blocktxn` 断言崩。  

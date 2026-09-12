@@ -65,7 +65,7 @@ T3 也写 X。与 T1 必须串行。
 ## F. 真实项目
 
 Solana / Agave。档案第 14 节有五笔账表。  
-停机/降级根因（官方原文）：[`../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)——失败的 durable nonce 不是已经不能再播；[`../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)——已确认的重复槽赢家不是下一父块；[`../../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md`](../../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md)——恢复 shred 不是已按父槽滤掉，vote-only 不是已经停链。本课不写其它未核验停机。
+停机/降级根因（官方原文）：[`../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)——失败的 durable nonce 不是已经不能再播；[`../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)——已确认的重复槽赢家不是下一父块；[`../../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md`](../../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md)——恢复 shred 不是已按父槽滤掉；[`../../tracks/failure-museum/solana-2024-02-06-legacy-loader-loop.md`](../../tracks/failure-museum/solana-2024-02-06-legacy-loader-loop.md)——哨兵有效槽 0 不是已可见；[`../../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md`](../../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md)——入站洪水不是已经停链。本课不写其它未核验停机。
 
 ---
 
@@ -110,4 +110,4 @@ Solana / Agave。档案第 14 节有五笔账表。
 | 经济 | 本地费市场与停机成本。不写官网 TPS |
 
 **禁止假学习：** 「因为硬件好所以并行。」「PoH 单独就是 BFT。」
-**边界：** 五笔账见档案第 14 节。停机/降级根因见博物馆 2022-06-01、2022-09-30、2023-02-25；其它停机仍等原文。
+**边界：** 五笔账见档案第 14 节。停机/降级根因见博物馆 2022-04-30、2022-06-01、2022-09-30、2023-02-25、2024-02-06；其它停机仍等原文。

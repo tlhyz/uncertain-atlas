@@ -1,7 +1,7 @@
 # 实例：「停链」不是一种事故
 
 目的 A + B。不是新馆藏，不新增未核验事故。  
-先修：L0.8、L9.9、不变量 71 / 73 / 74 / 75 / 77 / 82 / 85 / 86 / 87。
+先修：L0.8、L9.9、不变量 71 / 73 / 74 / 75 / 77 / 82 / 85 / 86 / 87 / 88 / 89。
 
 产品句里的「我们会停链」如果只写三个字，下一辆车学不到。  
 馆藏里至少有七种停，外加两种「看起来像停、其实不是」。必须点名是哪一种。
@@ -19,6 +19,8 @@
 | 诚实节点两个世界 | 反序列化或入口校验不确定，对不上就停 | 能开 IBC 通道的人；或能发 Grant 的人 | [ISA-2025-001](isa-2025-001.md)、[Jackfruit](jackfruit.md) | 77、82 |
 | 失败 durable nonce 当普通交易再重提 | 一边拒块、一边收块；超过 33% 接受、不够 66% 对齐 | 能发 durable nonce 的用户（本页不写怎样） | [2022-06-01](solana-2022-06-01-durable-nonce.md) | 85 |
 | 已确认的重复槽赢家不能当父块 | 正确版本已确认，出块者无法往上建；票还在、根不前进，随后停 | 同一身份两台同时出块（热备双活）；边角在实现里 | [2022-09-30](solana-2022-09-30-duplicate-fork.md) | 86 |
+| 回放无限再编译 | 旧加载器 JIT 主循环看不见刚编译的条目，无人投票 | 能部署旧加载器程序并让该交易进块的人（本页不写怎样） | [2024-02-06](solana-2024-02-06-legacy-loader-loop.md) | 88 |
+| 票不够、分叉清不掉、OOM | 废弃分叉占满内存，重启后仍超能力 | 固定地板价热点上的经济灌包 | [2022-04-30](solana-2022-04-30-fork-cleanup-oom.md) | 89 |
 | 治理参数吃不了 | 启用高度提案让进程 panic | 能推治理参数的人 | [ASA-2024-001](asa-2024-001.md) | 58 |
 | 解码 / 类型 panic | 深嵌套栈溢出，或 Dec 进 Int | 能送嵌套消息的人；或金额路径 | [ASA-2024-0012](asa-2024-0012.md)、[ASA-2024-010](asa-2024-010.md) | 70、76 |
 | 先流言后处理 | 非法结构传出去，网络停 | 能发畸形 P2P 对象的人 | [ASA-2025-003](asa-2025-003.md) | 60 |
@@ -36,6 +38,7 @@
 |---|---|---|---|
 | 出块变少 | 不是高度已经停 | [ASA-2024-002](asa-2024-002.md) 非法提案 | 69 |
 | 最终确认变慢 / 只打包投票 | 不是高度已经停，也不是已最终经济交易被回滚 | [2023-02-25](solana-2023-02-25-turbine-recovery.md) vote-only | 87 |
+| 入站数字很大 / 官网 TPS | 不是已经停链 | [2022-04-30](solana-2022-04-30-fork-cleanup-oom.md) 洪水 | 89 |
 | 本节点崩溃 / OOM | 不是共识已拒绝合法块 | [Lavender](cve-2020-5303.md)、Bitcoin 各崩溃案 | 67 等 |
 | `timeout_commit` 在等 | 不是最终性，也不是锁 | 超时精读 | 47 |
 | 资金被锁、链还在出块 | 不是停链 | [Barberry](barberry.md) 只进不出 | 83 |
@@ -62,6 +65,6 @@
 
 ## 回归测试形状
 
-文案把「停链」写成一种事故必须红。把停链交易写成已停必须红。把 EndBlocker 出错写成可跳过必须红。把 +⅓ 打补丁写成不会停必须红。把 Barberry 锁钱写成高度停必须红。把失败 durable nonce 写成已消费 / Tower 已一致必须红。把「正确版本已确认」写成下一领导者必会往上建必须红。把 vote-only / 落到 Block Repair 写成高度已停必须红。
+文案把「停链」写成一种事故必须红。把停链交易写成已停必须红。把 EndBlocker 出错写成可跳过必须红。把 +⅓ 打补丁写成不会停必须红。把 Barberry 锁钱写成高度停必须红。把失败 durable nonce 写成已消费 / Tower 已一致必须红。把「正确版本已确认」写成下一领导者必会往上建必须红。把 vote-only / 落到 Block Repair 写成高度已停必须红。把入站洪水写成已经停链必须红。把哨兵有效槽 0 写成已可见必须红。
 
-对照：不变量 84、85、86、87；语料 C88–C91；反模式 [halt-sold-as-one-kind](../../libraries/anti-patterns/halt-sold-as-one-kind.md)、[durable-nonce-sold-as-consumed](../../libraries/anti-patterns/durable-nonce-sold-as-consumed.md)、[confirmed-dup-sold-as-parent](../../libraries/anti-patterns/confirmed-dup-sold-as-parent.md)、[recovery-shred-sold-as-filtered](../../libraries/anti-patterns/recovery-shred-sold-as-filtered.md)。
+对照：不变量 84–89；语料 C88–C93；反模式 [halt-sold-as-one-kind](../../libraries/anti-patterns/halt-sold-as-one-kind.md)、[durable-nonce-sold-as-consumed](../../libraries/anti-patterns/durable-nonce-sold-as-consumed.md)、[confirmed-dup-sold-as-parent](../../libraries/anti-patterns/confirmed-dup-sold-as-parent.md)、[recovery-shred-sold-as-filtered](../../libraries/anti-patterns/recovery-shred-sold-as-filtered.md)、[sentinel-slot-sold-as-visible](../../libraries/anti-patterns/sentinel-slot-sold-as-visible.md)、[flood-sold-as-halt](../../libraries/anti-patterns/flood-sold-as-halt.md)。
