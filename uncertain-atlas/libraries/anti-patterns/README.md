@@ -206,3 +206,4 @@
 - [reserve-sold-as-merged](reserve-sold-as-merged.md)
 - [cap-sold-as-gas](cap-sold-as-gas.md)
 - [txcap-sold-as-blockgas](txcap-sold-as-blockgas.md)
+- [p256-sold-as-k1](p256-sold-as-k1.md)
