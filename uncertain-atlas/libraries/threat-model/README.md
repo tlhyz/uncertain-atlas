@@ -332,6 +332,7 @@
 | 323 | CheckTx 最终不再振荡被写成已经稳定 | 协议 + 文案 | 看见同一高度回了不同码 / 还在振荡 / 本地不再振荡 / CheckTx 最终不再振荡当成已经有了 CheckTxCode 或已经过了 h_stable 或已经各节点同一份 b | 不变量 328；语料 C332 |
 | 324 | Query 被写成已经复制到各节点 | 协议 + 文案 | 看见 Query 回了 / 查到了 / 实现了 Query / Query 当成已经复制到各节点或已经新鲜或已经是正常运转必须有 | 不变量 329；语料 C333 |
 | 325 | VoteExtensionsEnableHeight 被写成已经 Prepare 带了扩展 | 协议 + 文案 | 看见到了 H / H+1 带了扩展 / h < H 带了扩展 / VoteExtensionsEnableHeight 当成已经 Prepare 带了扩展或已经是本高度刚签的或已经合法 | 不变量 330；语料 C334 |
+| 326 | EvidenceParams.MaxBytes 被写成已经是块 MaxBytes | 协议 + 文案 | 看见填了证据 MaxBytes / > 0 / 证据 MaxBytes / EvidenceParams.MaxBytes 当成已经落在块上限下面或已经盖住解绑或已经是块 MaxBytes | 不变量 331；语料 C335 |
 
 ## 不自动覆盖
 
