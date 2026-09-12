@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 314）
+
+- CometBFT Replay Protection 工作实例（官方 Requirements for the Application，实现 / 重放保护，不另写 19 节）：看见内存池会挡重复不是已经保证不重放。看见过了 CheckTx 不是已经有应用级保护。看见通常不受欢迎不是已经没有幂等例外。Replay Protection 不是不变量 312，也不是不变量 301，也不是不变量 161。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 313；语料 C317；模式 name-the-replay-protection；反模式 indexer-sold-as-replay；L10.3 第 309 条。填 L4.4 / CometBFT 档案 Replay Protection / 实现表 / 内存池表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样实现重放保护、怎样做索引器、nonce 公式。不编博物馆页。不另写 19 节。不与 312 / 301 / 161 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。CheckTxState / 内存池交接 / 链绑定标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 313）
 
 - CometBFT CheckTxState 工作实例（官方 Requirements for the Application，实现 / CheckTxState，不另写 19 节）：看见 CheckTx 过了不是已经按 ExecuteTxState 验过。看见两份状态同时在改不是已经同一份。看见 Type 是 RECHECK 不是已经是一笔新交易。CheckTxState 不是不变量 33，也不是不变量 301，也不是不变量 310，也不是不变量 311。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

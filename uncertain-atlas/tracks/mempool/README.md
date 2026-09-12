@@ -6,5 +6,6 @@ ABCI 四门（CheckTx ≠ Prepare）：[`../consensus/worked-example-prepare-pro
 先装证据 ≠ 已经装满交易；两条收交易上限 ≠ 已经同一条：[`../consensus/worked-example-evidence-vs-reap.md`](../consensus/worked-example-evidence-vs-reap.md)（不变量 299）。  
 提案收了 ≠ 已经从池里删掉；本块已 commit ≠ 已经不用再验剩下的：[`worked-example-proposed-vs-removed.md`](worked-example-proposed-vs-removed.md)（不变量 301）。  
 CheckTx 过了 ≠ 已经按 ExecuteTxState 验过；两份同时在改 ≠ 已经同一份；RECHECK ≠ 已经是新交易：[`../implementation/worked-example-checktxstate-vs-execute.md`](../implementation/worked-example-checktxstate-vs-execute.md)（不变量 312）。  
+内存池去重 ≠ 已经保证不重放；过了 CheckTx ≠ 已经有应用级保护；通常不受欢迎 ≠ 已经没有幂等例外：[`../implementation/worked-example-mempool-indexer-vs-replay.md`](../implementation/worked-example-mempool-indexer-vs-replay.md)（不变量 313）。  
 单笔 CheckTx 绿 ≠ 整包可提案：[ASA-2024-002](../failure-museum/asa-2024-002.md)。  
 外层交易上限 ≠ 内层解码已有界：[ASA-2024-0012 / 0013](../failure-museum/asa-2024-0012.md)。

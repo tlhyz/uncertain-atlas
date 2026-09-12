@@ -315,3 +315,4 @@
 - [commitlock-sold-as-rpc](commitlock-sold-as-rpc.md)
 - [candidate-sold-as-execute](candidate-sold-as-execute.md)
 - [checktxstate-sold-as-execute](checktxstate-sold-as-execute.md)
+- [indexer-sold-as-replay](indexer-sold-as-replay.md)

@@ -15,6 +15,7 @@
 - [`worked-example-commit-lock-vs-rpc.md`](worked-example-commit-lock-vs-rpc.md) — 默认锁 ≠ 已经 RPC 安全；Commit 前上锁 ≠ 已经解锁；Commit 里等广播 ≠ 已经能往下走（不变量 310）
 - [`worked-example-candidate-vs-execute.md`](worked-example-candidate-vs-execute.md) — Prepare 没有头哈希 ≠ 已经知道本头；候选 ≠ 已经是 ExecuteTxState；丢掉 ≠ 已经永远不用再执行（不变量 311）
 - [`worked-example-checktxstate-vs-execute.md`](worked-example-checktxstate-vs-execute.md) — CheckTx 过了 ≠ 已经按 ExecuteTxState 验过；两份同时在改 ≠ 已经同一份；RECHECK ≠ 已经是新交易（不变量 312）
+- [`worked-example-mempool-indexer-vs-replay.md`](worked-example-mempool-indexer-vs-replay.md) — 内存池去重 ≠ 已经保证不重放；过了 CheckTx ≠ 已经有应用级保护；通常不受欢迎 ≠ 已经没有幂等例外（不变量 313）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
