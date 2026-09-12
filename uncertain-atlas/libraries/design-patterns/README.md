@@ -315,3 +315,4 @@
 - [name-the-verify-height](name-the-verify-height.md)
 - [name-the-propose-timeout](name-the-propose-timeout.md)
 - [name-the-ht-match](name-the-ht-match.md)
+- [name-the-ext-resp](name-the-ext-resp.md)

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 419）
+
+- CometBFT 扩展回包栏工作实例（官方 ABCI++ Methods ExtendVote Response / VerifyVoteExtension Request，实现 / 扩展回包栏，不另写 19 节）：看见 ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定不是已经会包进 CanonicalVoteExtension。看见 ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定不是已经按原样签。看见 VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长不是已经是 vote_extension 表。扩展回包栏不是不变量 358，也不是不变量 415，也不是不变量 338。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 418；语料 C422；模式 name-the-ext-resp；反模式 extresp-sold-as-wrap；L10.3 第 414 条。填 L4.4 / CometBFT 档案扩展回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写扩展回包栏、怎样填 vote_extension、怎样填 non_rp_extension。不编博物馆页。不另写 19 节。不与 358 / 415 / 338 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经会包进 CanonicalVoteExtension、已经按原样签、已经是 vote_extension 表标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 418）
 
 - CometBFT 头字段对上余量工作实例（官方 ABCI++ Methods ProcessProposal When / ProcessProposal Usage / FinalizeBlock Usage，实现 / 头字段对上余量，不另写 19 节）：看见自己是提议者会先走完 Prepare 那五步不是已经不用再 Process。看见 Process 的 height / time 对上拟议块头不是已经验过块头。看见 Finalize 的 height / time 对上拟议块头不是已经是刚决定那块的字段。头字段对上余量不是不变量 351，也不是不变量 416，也不是不变量 407。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

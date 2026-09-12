@@ -4061,6 +4061,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2022 | 高 | 看见 Finalize 的 height / time 对上拟议块头 / 看见对上了 会被写成已经是刚决定那块的字段，或当成已经知道本头哈希 | 官方 Finalize Usage：The height and time values match the values from the header of the proposed block |
 | A2023 | 中 | 怎样写头字段对上余量 / 怎样对 height / 怎样对 time 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2024 | 记录 | 会与 351 / 416 / 407 糊成「看见填了头字段就已经不用再 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案头字段对上余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经不用再 Process / 已经验过块头 / 已经是刚决定那块的字段 标成另一对象 |
+| A2025 | 高 | 看见 ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 / 看见回了扩展 会被写成已经会包进 CanonicalVoteExtension，或当成已经没有确定性要求 | 官方表：vote_extension is Information signed by CometBFT. Can have 0 length. Deterministic = No |
+| A2026 | 高 | 看见 ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 / 看见回了第二份 会被写成已经按原样签，或当成已经有重放保护 | 官方表：non_rp_extension is Information signed by CometBFT. Can have 0 length. Deterministic = No |
+| A2027 | 高 | 看见 VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 / 看见能空 会被写成已经是 vote_extension 表，或当成已经跳过 Verify | 官方表：non_rp_vote_extension is Application-specific information signed by CometBFT. Can have 0 length |
+| A2028 | 中 | 怎样写扩展回包栏 / 怎样填 vote_extension / 怎样填 non_rp_extension 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2029 | 记录 | 会与 358 / 415 / 338 糊成「看见填了扩展回包栏就已经会包进 CanonicalVoteExtension」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案扩展回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经会包进 CanonicalVoteExtension / 已经按原样签 / 已经是 vote_extension 表 标成另一对象 |
 
 
 
