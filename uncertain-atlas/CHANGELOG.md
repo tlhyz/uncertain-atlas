@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 345）
+
+- CometBFT MaxBytes 开销与投递工作实例（官方 Requirements for the Application List of Parameters / BlockParams.MaxBytes，实现 / BlockParams.MaxBytes 开销与投递，不另写 19 节）：看见 MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易。看见诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB。看见 timeout 必须按满块投递延迟算不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行。MaxBytes 开销与投递不是不变量 337，也不是不变量 331，也不是不变量 327。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 344；语料 C348；模式 name-the-maxbytes-overhead；反模式 maxbytesoverhead-sold-as-full；L10.3 第 340 条。填 L4.4 / CometBFT 档案 MaxBytes 开销与投递 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样算头 / 集合 / 证据开销、默认秒数、怎样设 MaxBytes。不编博物馆页。不另写 19 节。不与 337 / 331 / 327 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。引擎帽、证据体积、Prepare 执行超时标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 344）
 
 - CometBFT PbtsEnableHeight 工作实例（官方 Requirements for the Application List of Parameters / FeatureParams.PbtsEnableHeight，实现 / PbtsEnableHeight，不另写 19 节）：看见写成 0 不是已经启用 PBTS 不是已经填了 Precision 就是 PBTS。看见 H 之前仍用 BFT Time 不是已经切到 PBTS。看见启用之后不能关不是已经是扩展启用高度那种切换。PbtsEnableHeight 不是不变量 336，也不是不变量 330，也不是不变量 40。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

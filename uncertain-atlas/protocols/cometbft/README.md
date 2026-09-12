@@ -99,6 +99,8 @@ Finalize 算出的状态必须只依赖上一份状态和决定块不是已经�
 
 写成 0 不是已经启用 PBTS 不是已经填了 Precision 就是 PBTS：[`../../tracks/implementation/worked-example-pbts-height-vs-params.md`](../../tracks/implementation/worked-example-pbts-height-vs-params.md)（不变量 343）。看见 H 之前仍用 BFT Time 不是已经切到 PBTS。看见启用之后不能关不是已经是扩展启用高度那种切换。
 
+MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易：[`../../tracks/implementation/worked-example-maxbytes-overhead-vs-full.md`](../../tracks/implementation/worked-example-maxbytes-overhead-vs-full.md)（不变量 344）。看见诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB。看见 timeout 必须按满块投递延迟算不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

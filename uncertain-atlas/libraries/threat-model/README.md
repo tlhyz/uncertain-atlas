@@ -345,6 +345,7 @@
 | 336 | VerifyVoteExtension 确定性被写成已经可以像 ExtendVote 那样 | 协议 + 文案 | 看见 Verify 必须只依赖扩展、这块和上一份状态 / 两边对任意扩展同一裁决 / Verify 非确定会伤活性 / VerifyVoteExtension 确定性当成已经可以像 ExtendVote 那样或已经只对诚实扩展或已经丢了安全性 | 不变量 341；语料 C345 |
 | 337 | FinalizeBlock 确定性被写成已经可以像 Prepare 那样 | 协议 + 文案 | 看见 Finalize 算出的状态必须只依赖上一份状态和决定块 / Finalize 算出的结果必须只依赖上一份状态和决定块 / 两边状态机复制 / FinalizeBlock 确定性当成已经可以像 Prepare 那样或已经印进本头或已经是 Process 同判 | 不变量 342；语料 C346 |
 | 338 | PbtsEnableHeight 被写成已经启用 PBTS | 协议 + 文案 | 看见写成 0 / H 之前仍用 BFT Time / 启用之后不能关 / PbtsEnableHeight 当成已经启用 PBTS 或已经切到 PBTS 或已经是扩展启用高度那种切换 | 不变量 343；语料 C347 |
+| 339 | MaxBytes 开销被写成已经整块都能装交易 | 协议 + 文案 | 看见 MaxBytes 减去头集合证据才是交易上限 / 诚实验证者 MAY 出满 MaxBytes / timeout 必须按满块投递延迟算 / MaxBytes 开销与投递当成已经整块都能装交易或已经只会出默认 21 MB 或已经填了 TimeoutPropose 就装得下这次 Prepare 执行 | 不变量 344；语料 C348 |
 
 ## 不自动覆盖
 
