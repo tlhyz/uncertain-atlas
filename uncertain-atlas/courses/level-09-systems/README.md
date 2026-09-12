@@ -6,7 +6,7 @@
 | 课 | 文件 | 覆盖 | 核心问题 |
 |---|---|---|---|
 | 9.1 | [L09-M01-p2p.md](L09-M01-p2p.md) | M9.1 | 瓶颈常在网上 |
-| 9.2 | [L09-M02-mempool.md](L09-M02-mempool.md) | M9.2 | 未确认池是谁的队列 |
+| 9.2 | [L09-M02-mempool.md](L09-M02-mempool.md) | M9.2 | 未确认池是谁的队列；跳过库存通告 ≠ 已经拒进池（不变量 245） |
 | 9.3 | [L09-M03-storage.md](L09-M03-storage.md) | M9.3 | 写到一半断电 |
 | 9.4 | [L09-M04-upgrades.md](L09-M04-upgrades.md) | M9.4 | 谁能改图纸 |
 | 9.5 | [L09-M05-economic-security.md](L09-M05-economic-security.md) | M9.5 | 经济 ≠ 密码学 |

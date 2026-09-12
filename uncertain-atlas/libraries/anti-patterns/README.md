@@ -247,3 +247,4 @@
 - [v2-sold-as-private](v2-sold-as-private.md)
 - [cfilter-sold-as-have](cfilter-sold-as-have.md)
 - [basic-filter-sold-as-relevant](basic-filter-sold-as-relevant.md)
+- [feefilter-sold-as-rejected](feefilter-sold-as-rejected.md)
