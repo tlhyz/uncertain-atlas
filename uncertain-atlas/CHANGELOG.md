@@ -2,6 +2,15 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 65）
+
+- 博物馆 CVE-2021-21271 / Mulberry / GHSA-p658-8693-mhvg（High）：consensus reactor 在当前块仍飞行时用这块的 last commit 给 `DuplicateVoteEvidence` 打 `Timestamp`。
+- 同一双签、两份身份；只有一份进块，其余诚实者继续提案非法证据、可能被断开。官方原文：双签变成 DoS 向量。
+- 修法是把两张票交给 `EvidencePool` 再拼。无绕过。
+- 不变量 64；语料 C68；反模式 inflight-sold-as-evidence-id；L10.3 第 60 条。
+- 对照不变量 21（形状≠slash）、46（默认窗）、61（块 Time 两条路径）、sidecar 可改写。
+- 不写怎样让 last commit 对不上。不抄版本号当常量。
+
 ## 2026-09-12（续 64）
 
 - 博物馆 ASA-2023-002 / GHSA-hq58-p9mv-338c（Low）：仓库默认 `BlockParams.MaxBytes` 对常见用例偏大，顶满时增加带宽与延迟，可能减少第一轮参与、再开一轮。

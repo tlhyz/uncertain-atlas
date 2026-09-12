@@ -242,7 +242,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.3 锁、解锁、超时 · 必学
 - locking / unlock / round change
 - 为了 safety 牺牲某一轮 liveness
-- 覆盖：课文 L4.3；打破锁的链上对象是证据，见 `tracks/economic/worked-example-evidence.md`；Casper 两票谓词见 `tracks/economic/worked-example-casper-slashing.md`；不 timely → prevote nil 是活性代价不是解锁，见 `tracks/consensus/worked-example-pbts.md`。超时不是锁：`tracks/consensus/worked-example-timeouts.md`（不变量 47）
+- 覆盖：课文 L4.3；打破锁的链上对象是证据，见 `tracks/economic/worked-example-evidence.md`；Casper 两票谓词见 `tracks/economic/worked-example-casper-slashing.md`；不 timely → prevote nil 是活性代价不是解锁，见 `tracks/consensus/worked-example-pbts.md`。超时不是锁：`tracks/consensus/worked-example-timeouts.md`（不变量 47）。飞行中的 last commit 不是证据身份：CVE-2021-21271 / Mulberry（不变量 64）
 
 ### M4.4 验证者集合与投票权 · 必学
 - validator set、voting power
@@ -423,7 +423,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.5 经济安全 · 重要
 - 发行、质押、罚没、MEV、审查、卡特尔
 - 密码学安全 ≠ 经济安全
-- 覆盖：课文 L9.5；桥资本精读；证据 ≠ slash `tracks/economic/worked-example-evidence.md`；默认窗 ≠ 解绑 `tracks/economic/worked-example-evidence-window.md`（ASA-2024-004）；Casper double / surround `tracks/economic/worked-example-casper-slashing.md`
+- 覆盖：课文 L9.5；桥资本精读；证据 ≠ slash `tracks/economic/worked-example-evidence.md`；默认窗 ≠ 解绑 `tracks/economic/worked-example-evidence-window.md`（ASA-2024-004）；飞行中 last commit ≠ 证据身份 `tracks/failure-museum/cve-2021-21271.md`（Mulberry；不变量 64）；Casper double / surround `tracks/economic/worked-example-casper-slashing.md`
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
@@ -440,7 +440,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（三十五案；含 CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（三十六案；含 CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -468,11 +468,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–63）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–64）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C67；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C68；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

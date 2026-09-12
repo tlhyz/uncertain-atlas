@@ -178,6 +178,7 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 已收：[CSA-2026-001](../../tracks/failure-museum/csa-2026-001.md) — Tachyon：验 commit 与推导 Time 路径不一致。Critical。  
 已收：[ASA-2025-001](../../tracks/failure-museum/asa-2025-001.md) — blocksync 目标高度必须可归因且可回退。  
 已收：[ASA-2023-002](../../tracks/failure-museum/asa-2023-002.md) — 仓库默认 MaxBytes 不是第一轮活性 SLA。  
+已收前身：[CVE-2021-21271 / Mulberry](../../tracks/failure-museum/cve-2021-21271.md) — 飞行中的 last commit 不是证据身份。  
 **待补：** 其它案必须链到官方 postmortem 或安全公告。  
 方向：halt（活性）、应用非确定性导致的分裂。
 

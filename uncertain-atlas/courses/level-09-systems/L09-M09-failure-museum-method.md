@@ -89,6 +89,7 @@ CVE / 官方安全披露 / 规范补丁 / 核心开发公告 > 审计 > 事后�
 - CSA-2026-001 Tachyon：验 commit 与推导 Time 路径不一致；复算中位数 ≠ 故障者不能抬高时间。Critical。  
 - ASA-2025-001：blocksync 目标高度必须可归因且可回退；邻居 latest ≠ 全网尖。后来改口 Informational。  
 - ASA-2023-002：仓库默认 MaxBytes 不是第一轮活性 SLA；`timeout_propose` 必须对照块上限。  
+- CVE-2021-21271 / Mulberry：飞行中的 last commit 不是证据身份；双签变成 DoS 向量。  
 - CVE-2024-52922：宣布新块后单一对等节点卡住传播。  
 - CVE-2024-35202：部分块重建失败后第二次 `blocktxn` 断言崩。  
 - CVE-2024-52921：未请求变异块清掉其他对等节点的下载状态。  

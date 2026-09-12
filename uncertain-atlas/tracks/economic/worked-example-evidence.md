@@ -58,7 +58,8 @@ PoS 上证据年龄应**盖住**解绑期，否则人已走，罚不到——与
 这是**证据体积**上限，不是块本身的 `BlockParams.MaxBytes`。块上限被当成第一轮活性 SLA 见 [ASA-2023-002](../failure-museum/asa-2023-002.md)。
 
 上链之后，`FinalizeBlock` 把 `[]abci.Misbehavior` 交给应用。类型枚举：`DUPLICATE_VOTE` / `LIGHT_CLIENT_ATTACK`。  
-ABCI 附加字段（`TotalVotingPower`、`ValidatorPower`、时间戳等）**不影响证据本身是否成立**，但必须全网一致；错了节点会改成自己算出的值再共识。
+ABCI 附加字段（`TotalVotingPower`、`ValidatorPower`、时间戳等）**不影响证据本身是否成立**，但必须全网一致；错了节点会改成自己算出的值再共识。  
+这是 sidecar 可改写。另一句：[Mulberry / CVE-2021-21271](../failure-museum/cve-2021-21271.md) 里，飞行中用本机 last commit 给证据打的 `Timestamp` 当时是**身份**——对不上，整份非法，双签变成 DoS。不要把「sidecar 可改」写成「飞行中乱填也没关系」。
 
 ---
 
@@ -86,5 +87,5 @@ ABCI 附加字段（`TotalVotingPower`、`ValidatorPower`、时间戳等）**不
 
 ## 精密检查
 
-**禁止假学习：** 「证据进块所以已经 slash。」「BFT 自动经济安全。」「轻客户端被骗等于全网双最终。」  
-**边界：** 不写 IsolateAmnesiaAttacker 伪代码；不抄 10 秒流言间隔当永恒；不编无原文的 Cosmos 罚没事故。Casper 的 double / surround / 协议内 `slash_validator` 不在本页展开。
+**禁止假学习：** 「证据进块所以已经 slash。」「BFT 自动经济安全。」「轻客户端被骗等于全网双最终。」「看见双签立刻用本机当前块打时间戳所以身份已齐。」  
+**边界：** 不写 IsolateAmnesiaAttacker 伪代码；不抄 10 秒流言间隔当永恒；不编无原文的 Cosmos 罚没事故。Casper 的 double / surround / 协议内 `slash_validator` 不在本页展开。飞行中 last commit ≠ 证据身份见 [CVE-2021-21271](../failure-museum/cve-2021-21271.md)。
