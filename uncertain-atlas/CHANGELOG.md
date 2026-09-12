@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 58）
+
+- 博物馆 ASA-2024-011 / GHSA-p7mv-53f2-4cwj（High）：启用扩展时，Precommit 非空的扩展处理插在普通 Vote 验证之前，不复查 `ValidatorIndex`，接收节点 panic。
+- 官方：须发送端恶意代码；上游发不出不存在的下标；默认关扩展则不受影响。绕过是 p2p ban，不是谓词。
+- 不变量 57；语料 C61；反模式 extension-path-sold-as-checked；L10.3 第 53 条。
+- 对照不变量 34（拒扩展丢票）、37（断言）、43（提前 return）。咨询未给 CVE。
+- 不写下标怎么造；不抄版本号或 CWE。
+
 ## 2026-09-12（续 57）
 
 - 博物馆 ASA-2024-009 / GHSA-g5xx-c4hv-9ccc（Medium）：state sync 用轻客户端算共识 `State` 时，当时不比 `ProposerPriority`。

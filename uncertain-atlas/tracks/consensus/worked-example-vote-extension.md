@@ -3,7 +3,8 @@
 > **事实 / 推断 / 建议** 已分开。
 > 对照：[四门](worked-example-prepare-process.md)、[SignBytes](worked-example-vote-signbytes.md)、[证据](../economic/worked-example-evidence.md)。
 > 主文献：[ABCI++ 基本概念](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_basic_concepts.md)、[应用要求](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md)、[方法](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md)、[数据结构 `CanonicalVoteExtension`](https://github.com/cometbft/cometbft/blob/main/spec/core/data_structures.md)。
-> 本页钉 **precommit 上的应用字节**。不抄 `VoteExtensionsEnableHeight`、默认开关、某 SDK 预言机产品。
+> 本页钉 **precommit 上的应用字节**。不抄 `VoteExtensionsEnableHeight`、默认开关、某 SDK 预言机产品。  
+> 亲戚：扩展快路径跳过普通票字段检查 → 接收节点 panic，见 [ASA-2024-011](../failure-museum/asa-2024-011.md)（不变量 57）。
 
 ---
 

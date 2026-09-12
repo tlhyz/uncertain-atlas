@@ -61,3 +61,4 @@
 - [proxy-sold-as-peer](proxy-sold-as-peer.md)
 - [uri-fetch-sold-as-verify](uri-fetch-sold-as-verify.md)
 - [apphash-sold-as-proposer](apphash-sold-as-proposer.md)
+- [extension-path-sold-as-checked](extension-path-sold-as-checked.md)

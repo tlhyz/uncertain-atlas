@@ -171,6 +171,7 @@ SignBytes 是 `CanonicalVote`（type / height / round / block_id / timestamp / c
 Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一版不拿传闻填满。  
 已收官方咨询：[ASA-2024-004](../../tracks/failure-museum/asa-2024-004.md) — 默认证据窗可能短于解绑，无代码补丁。  
 已收：[ASA-2024-009](../../tracks/failure-museum/asa-2024-009.md) — 轻验集合对上 ≠ 提议者选择已对齐。  
+已收：[ASA-2024-011](../../tracks/failure-museum/asa-2024-011.md) — 扩展快路径跳过普通票的发送者下标检查。  
 **待补：** 其它案必须链到官方 postmortem 或安全公告。  
 方向：halt（活性）、应用非确定性导致的分裂。
 

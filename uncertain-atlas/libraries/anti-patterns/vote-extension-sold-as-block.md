@@ -1,7 +1,7 @@
 # 反模式：投票扩展被写成块规则，或本高度 Finalize 的输入
 
 > **事实 / 推断 / 建议** 已分开。
-> 真值：[扩展精读](../../tracks/consensus/worked-example-vote-extension.md)、[ABCI++ 应用要求 Req 6–10](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md)、[不变式 34](../invariants/README.md#34-扩展验收失败丢掉整张-precommit且本高度状态不得依赖本高度收到的扩展)。
+> 真值：[扩展精读](../../tracks/consensus/worked-example-vote-extension.md)、[ABCI++ 应用要求 Req 6–10](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md)、[不变式 34](../invariants/README.md#34-扩展验收失败丢掉整张-precommit且本高度状态不得依赖本高度收到的扩展)。亲戚：[extension-path-sold-as-checked](extension-path-sold-as-checked.md)（快路径跳过下标检查）。
 
 ---
 
