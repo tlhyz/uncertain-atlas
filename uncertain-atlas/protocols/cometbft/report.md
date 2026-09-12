@@ -79,7 +79,7 @@ Commit  →  ABCI FinalizeBlock / Commit
 
 **确定性最终：** commit 的 `(h, block)` 不应被诚实节点改掉。分区过久：可能停（保安全），而不是两边各 commit 各的。
 
-**块时间（必须点名）：** 家族里至少两套算法，都不是墙上现在，也不是 Bitcoin MTP。PBTS：提议者本地钟 + 相对收到 `Proposal` 的 timely 窗；不 timely → prevote `nil`。BFT Time：本块时间是上一高度 `LastCommit` 时间戳的加权中位数，可复算。规范态度是新链用 PBTS，BFT Time **可能**弃用——不是已经弃用。见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。
+**块时间（必须点名）：** 家族里至少两套算法，都不是墙上现在，也不是 Bitcoin MTP。PBTS：提议者本地钟 + 相对收到 `Proposal` 的 timely 窗；不 timely → prevote `nil`。BFT Time：本块时间是上一高度 `LastCommit` 时间戳的加权中位数，可复算。规范态度是新链用 PBTS，BFT Time **可能**弃用——不是已经弃用。能复算 ≠ 故障者不能抬高 Time（[CSA-2026-001](../../tracks/failure-museum/csa-2026-001.md)）。见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。
 
 完整锁表是 Level 4 的深课。本档案先禁止简化成「投票过 2/3」。
 
@@ -175,6 +175,8 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 已收：[ASA-2024-001](../../tracks/failure-museum/asa-2024-001.md) — 治理改扩展启用高度，验证写错则 panic 停链。  
 已收：[ASA-2025-002](../../tracks/failure-museum/asa-2025-002.md) — 分片外层下标必须等于证明下标。  
 已收：[ASA-2025-003](../../tracks/failure-museum/asa-2025-003.md) — 位图结构必须先验再传，否则最坏停网。  
+已收：[CSA-2026-001](../../tracks/failure-museum/csa-2026-001.md) — Tachyon：验 commit 与推导 Time 路径不一致。Critical。  
+已收：[ASA-2025-001](../../tracks/failure-museum/asa-2025-001.md) — blocksync 目标高度必须可归因且可回退。  
 **待补：** 其它案必须链到官方 postmortem 或安全公告。  
 方向：halt（活性）、应用非确定性导致的分裂。
 

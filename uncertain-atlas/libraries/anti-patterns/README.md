@@ -65,3 +65,5 @@
 - [enable-height-sold-as-safe](enable-height-sold-as-safe.md)
 - [part-index-sold-as-proof-index](part-index-sold-as-proof-index.md)
 - [bitarray-sold-as-gossip-ok](bitarray-sold-as-gossip-ok.md)
+- [recompute-sold-as-bft-time](recompute-sold-as-bft-time.md)
+- [peer-latest-sold-as-tip](peer-latest-sold-as-tip.md)

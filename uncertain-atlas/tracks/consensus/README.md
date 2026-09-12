@@ -6,7 +6,7 @@
 ABCI 四门：[`worked-example-prepare-process.md`](worked-example-prepare-process.md)（CheckTx ≠ Prepare ≠ Process ≠ Finalize）。  
 Vote extension：[`worked-example-vote-extension.md`](worked-example-vote-extension.md)（拒扩展丢票，不改块规则；`s_h` 不读本高度 *e*）。扩展快路径不得跳过旧票字段：[ASA-2024-011](../failure-museum/asa-2024-011.md)。治理改启用高度必须先过转移谓词：[ASA-2024-001](../failure-museum/asa-2024-001.md)。  
 集合延迟：[`worked-example-validator-delay.md`](worked-example-validator-delay.md)（H 的 `validator_updates`：H+1 Next、H+2 计票、H+3 last_commit）。  
-块时间算法：[`worked-example-pbts.md`](worked-example-pbts.md)（PBTS timely 窗 ≠ BFT Time 中位数 ≠ Bitcoin MTP ≠ 调整钟）。  
+块时间算法：[`worked-example-pbts.md`](worked-example-pbts.md)（PBTS timely 窗 ≠ BFT Time 中位数 ≠ Bitcoin MTP ≠ 调整钟）。复算中位数 ≠ 故障者不能抬高 Time：[CSA-2026-001](../failure-museum/csa-2026-001.md)。  
 Bitcoin MTP 三把尺：[`worked-example-mtp.md`](worked-example-mtp.md)（太早 / BIP113 locktime / 太新窗；太新不是 MTP）。  
 本地超时：[`worked-example-timeouts.md`](worked-example-timeouts.md)（`timeout_commit` 是 commit 之后再等，不是最终性、不是锁、不是 PBTS）。  
 应用回的等待：[`worked-example-next-block-delay.md`](worked-example-next-block-delay.md)（`next_block_delay` 非确定性；不是槽位，不是所有发布线都有）。  

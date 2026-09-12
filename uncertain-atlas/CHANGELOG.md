@@ -2,6 +2,20 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 63）
+
+- 博物馆 ASA-2025-001 / GHSA-22qq-3xwm-r5x4：同一对等节点先报更高 `latest` 再报更低，同步者无限追那个高值；断开也不重算。
+- 最初 Medium，2026-03-06 官方改口 Informational；页现 Low。须恶意代码。p2p ban 是部署止血。
+- 不变量 62；语料 C66；反模式 peer-latest-sold-as-tip；L10.3 第 58 条。
+- 亲戚 ASA-2024-008 不另立谓词。不抄示例高度。不编 CVE。
+
+## 2026-09-12（续 62）
+
+- 博物馆 CSA-2026-001 Tachyon / GHSA-c32p-wcqj-j677（Critical）：BFT Time 实现里验 commit 签名与推导 Time 不一致。
+- 打破咨询原文：故障进程不能任意抬高 Time。无绕过。对照规范 bft-time.md 的 BFT 属性。
+- 不变量 61；语料 C65；反模式 recompute-sold-as-bft-time；L10.3 第 57 条。
+- 不发明两条路径差在哪一字段；不写怎样抬高；不编 CVE。
+
 ## 2026-09-12（续 61）
 
 - 博物馆 ASA-2025-003 / GHSA-hrhf-2vcr-ghch（High）：`BitArray` 的 `Bits` 与 `Elems` 数量对不上时，以前验证不够。

@@ -3,7 +3,8 @@
 > **事实 / 推断 / 建议** 已分开。
 > 对照：[调整钟](../network/worked-example-adjusted-time.md)、[四门](worked-example-prepare-process.md)、[CVE-2024-52912](../failure-museum/cve-2024-52912.md)。
 > 主文献：[PBTS](https://github.com/cometbft/cometbft/blob/main/spec/consensus/proposer-based-timestamp/README.md)、[BFT Time](https://github.com/cometbft/cometbft/blob/main/spec/consensus/bft-time.md)、[ABCI FeatureParams.PbtsEnableHeight](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md)。
-> 本页钉 **块时间是哪一套算法**。不抄 PRECISION / MSGDELAY 默认毫秒、不抄 BFT Time 的 1 ms 增量当不确定常数。
+> 本页钉 **块时间是哪一套算法**。不抄 PRECISION / MSGDELAY 默认毫秒、不抄 BFT Time 的 1 ms 增量当不确定常数。  
+> 亲戚：能复算中位数 ≠ 故障者不能抬高 Time，见 [CSA-2026-001 Tachyon](../failure-museum/csa-2026-001.md)（不变量 61）。
 
 ---
 
