@@ -15,5 +15,5 @@
 | 排序权 | 矿工写列表并出块 | 本高度 proposer 写整块 | 视实现 | 本 slot 提议者可只签盲头，列表由域外 builder 写 | |
 
 分区时停还是两边长：见 [`../../tracks/consensus/worked-example-partition.md`](../../tracks/consensus/worked-example-partition.md)。  
-块时间不是第四种最终性：CometBFT 须点名 PBTS 或 BFT Time，见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。本地超时也不是最终性：`timeout_commit` 是 commit 之后再等，见 [`../../tracks/consensus/worked-example-timeouts.md`](../../tracks/consensus/worked-example-timeouts.md)。不确定列仍空。  
+块时间不是第四种最终性：CometBFT 须点名 PBTS 或 BFT Time，见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。本地超时也不是最终性：`timeout_commit` 是 commit 之后再等，见 [`../../tracks/consensus/worked-example-timeouts.md`](../../tracks/consensus/worked-example-timeouts.md)。应用回的 `next_block_delay` 仍不是槽位，见 [`../../tracks/consensus/worked-example-next-block-delay.md`](../../tracks/consensus/worked-example-next-block-delay.md)。不确定列仍空。  
 「不确定」若承诺「到了就是到了」，表会偏向 BFT 一类。这仍是建议方向，不是决定。

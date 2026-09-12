@@ -11,7 +11,7 @@
 |---|---|---|---|---|
 | 01 | 《区块链基础课程》 | `courses/` | L0–L10 正文已写；L8.4 数学后置 | 必学 |
 | 02 | 《全球公链架构图谱》 | `protocols/` 19 节 + `tracks/` 横表 | 主线 + 第 8 波择优（含 Nervos 思想级） | 必学 |
-| 03 | 《共识协议图谱》 | `tracks/consensus/` + `tracks/finality/` | 对照表 + ABCI 四门 + 扩展 + 集合延迟 + PBTS + Bitcoin MTP 三把尺 + 本地超时 ≠ 最终性 | 必学 |
+| 03 | 《共识协议图谱》 | `tracks/consensus/` + `tracks/finality/` | 对照表 + ABCI 四门 + 扩展 + 集合延迟 + PBTS + Bitcoin MTP 三把尺 + 本地超时 ≠ 最终性 + 应用 delay ≠ 槽位 | 必学 |
 | 04 | 《状态模型图谱》 | `tracks/state-models/` + `tracks/parallelism/` | 进行中 | 必学 |
 | 05 | 《区块链密码学地图》 | `tracks/crypto/` | 对照表 + 域分离三层编码精读 | 必学 |
 | 05b | 《实现保证精读》 | `tracks/implementation/` | 编码 + 崩溃 + assumevalid + 头工作量 + state sync + 平台宽度尺寸检查 | 必学 |
@@ -24,7 +24,7 @@
 |---|---|---|---|---|
 | 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 二十四案 + 17144 五层精读 | 必学 |
 | 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 15 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 54 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 55 条 | 重要 |
 
 ---
 
@@ -35,8 +35,8 @@
 | 09 | 《后量子区块链工程手册》 | `tracks/post-quantum/` | FIPS 名义长度 + 外部 ctx + 有状态 HBS 卡；CPU 空 | 研究级 |
 | 10 | 《不确定协议设计决策库》 | `libraries/decision-matrix/` | 对照列已扩；候选列空 | 重要 |
 | 11 | 《不确定威胁模型》 | `libraries/threat-model/` | 草稿 | 必学 |
-| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 51 条 | 必学 |
-| 13 | 《不确定 Adversarial Test Corpus》 | `libraries/adversarial-corpus/` | 目录 C01–C55；runner 未建 | 重要 |
+| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 52 条 | 必学 |
+| 13 | 《不确定 Adversarial Test Corpus》 | `libraries/adversarial-corpus/` | 目录 C01–C56；runner 未建 | 重要 |
 | 14 | 《不确定长期技术路线图》 | `courses/level-10-uncertain-studio/` | 建议清单，非选型 | 重要 |
 
 ---

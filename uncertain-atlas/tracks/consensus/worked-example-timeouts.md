@@ -117,4 +117,4 @@
 
 ## 8. 边界
 
-本页不写较新线上把 post-commit 等待挪进 `FinalizeBlockResponse`（如 `next_block_delay`）的那条演化；那是「谁决定再等多久」，不是「再等是不是最终性」。不抄文档秒数。不把 `create_empty_blocks` 写成结算 SLA。
+较新线上「谁填这段等待」见 [`worked-example-next-block-delay.md`](worked-example-next-block-delay.md)。不抄文档秒数。不把 `create_empty_blocks` 写成结算 SLA。

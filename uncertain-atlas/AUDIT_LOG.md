@@ -707,3 +707,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A234 | 记录 | 后续 issue 讨论 GetSerializeSize 返回 size_t | 不写进正文当已披露事实；只钉公告「32-bit 上检查会溢出」 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 03:15 UTC · 应用回的等待不是槽位
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A235 | 中 | next_block_delay 会被写成全网槽位或第三条最终性 | 精读：Commit 已发生；规范标 Deterministic = No |
+| A236 | 中 | 会把 main 规范写成所有 CometBFT 已换人填等待 | 点名发布线；v0.38 / 部分 v1.0 可能仍只有 timeout_commit |
+| A237 | 中 | 会做成 ConsensusParams 或写进 app_hash | ADR-115 丢掉全局参数方案；规范表 delay=No、app_hash=Yes |
+| A238 | 记录 | 规范写「回常量 1s 保持旧行为」、ADR 写 6s / 12s 用例 | 不当不确定常数；ADR 应用链名字不当那些链的规范保证 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

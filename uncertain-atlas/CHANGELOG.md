@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 53）
+
+- `next_block_delay` 精读：现行 `main` FinalizeBlock 回包字段 6，规范标 Deterministic = No。语义仍是 Commit 之后再等，以前是本地 `timeout_commit`。
+- ADR-115 Accepted：恒定出块间隔做不到；不要做成 ConsensusParams。不是所有发布线都有该字段。
+- 不变量 52；语料 C56；反模式 app-delay-sold-as-slot；L10.3 第 48 条。
+- 不抄规范 1s / ADR 示例秒数。不把 ADR 里的应用链名字写成那些链的规范保证。
+
 ## 2026-09-12（续 52）
 
 - 博物馆 CVE-2025-46597：32-bit 写盘前尺寸检查对超大块溢出。Low。不能走 BLOCK；理论上 compact + 非默认超大内存池。

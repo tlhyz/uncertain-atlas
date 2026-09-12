@@ -237,7 +237,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M4.2 高度、轮次、步骤 · 必学
 - propose / prevote / precommit / commit
-- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`；块时间须点名算法 `tracks/consensus/worked-example-pbts.md`（PBTS timely ≠ BFT Time 中位数 ≠ MTP ≠ 调整钟；不变量 40）。本地超时 ≠ 最终性：`tracks/consensus/worked-example-timeouts.md`（`timeout_commit` 是 commit 之后再等；不变量 47）
+- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`；块时间须点名算法 `tracks/consensus/worked-example-pbts.md`（PBTS timely ≠ BFT Time 中位数 ≠ MTP ≠ 调整钟；不变量 40）。本地超时 ≠ 最终性：`tracks/consensus/worked-example-timeouts.md`（不变量 47）。应用回的等待 ≠ 槽位：`tracks/consensus/worked-example-next-block-delay.md`（不变量 52）
 
 ### M4.3 锁、解锁、超时 · 必学
 - locking / unlock / round change
@@ -252,7 +252,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.5 ABCI：应用与共识分离 · 必学
 - 为什么这对「不确定」极有价值
 - 共识不知道余额，应用不知道投票
-- 覆盖：课文 L4.4；四门精读 `tracks/consensus/worked-example-prepare-process.md`（CheckTx ≠ Prepare ≠ Process ≠ Finalize；不变量 33）；扩展精读 `tracks/consensus/worked-example-vote-extension.md`（Verify 拒扩展 ≠ 块非法；不变量 34）
+- 覆盖：课文 L4.4；四门精读 `tracks/consensus/worked-example-prepare-process.md`（CheckTx ≠ Prepare ≠ Process ≠ Finalize；不变量 33）；扩展精读 `tracks/consensus/worked-example-vote-extension.md`（Verify 拒扩展 ≠ 块非法；不变量 34）。应用回的 post-commit 等待：`tracks/consensus/worked-example-next-block-delay.md`（非确定性；不变量 52）
 
 ### M4.6 崩溃恢复 · 重要
 - WAL、超时、重启后如何不投矛盾票
@@ -468,11 +468,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–51）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–52）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C55；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C56；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

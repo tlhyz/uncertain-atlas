@@ -75,7 +75,7 @@ Commit  →  ABCI FinalizeBlock / Commit
 
 **锁：** 一旦在某轮对值 v 发出可被当作依据的 precommit/锁定，不能随便再给 v' 投票，除非规则允许的解锁（例如看到更高轮的新合法证明）。没有锁，「过 2/3」会回到 L0.6 的左右说谎。
 
-**超时：** 部分同步下用**本地**超时换轮，保活性。超时太短会空转，太长会卡。这些数字不是共识参数，也不是最终性。`timeout_commit` 是已经 Commit 之后、开新高度之前再收迟到 precommit。`skip_timeout_commit=true` 的官方语义是「像 TimeoutCommit=0」——某条发布线还列不列该键，不改变「零等待仍是 commit 之后」这句话。见 [`../../tracks/consensus/worked-example-timeouts.md`](../../tracks/consensus/worked-example-timeouts.md)。不要抄文档示例秒数或「大约每秒一个空块」当结算 SLA。
+**超时：** 部分同步下用**本地**超时换轮，保活性。超时太短会空转，太长会卡。这些数字不是共识参数，也不是最终性。`timeout_commit` 是已经 Commit 之后、开新高度之前再收迟到 precommit。`skip_timeout_commit=true` 的官方语义是「像 TimeoutCommit=0」——某条发布线还列不列该键，不改变「零等待仍是 commit 之后」这句话。见 [`../../tracks/consensus/worked-example-timeouts.md`](../../tracks/consensus/worked-example-timeouts.md)。较新的 `main` 规范把这段等待交给应用回 `next_block_delay`（非确定性，不是槽位，不是所有发布线都有）。见 [`../../tracks/consensus/worked-example-next-block-delay.md`](../../tracks/consensus/worked-example-next-block-delay.md)。不要抄文档示例秒数或「大约每秒一个空块」当结算 SLA。
 
 **确定性最终：** commit 的 `(h, block)` 不应被诚实节点改掉。分区过久：可能停（保安全），而不是两边各 commit 各的。
 
