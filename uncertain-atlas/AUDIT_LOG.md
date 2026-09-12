@@ -3766,6 +3766,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1727 | 高 | 看见应用要签原样数据可以用 non_rp / 看见有第二份字段 会被写成已经和 vote_extension 同一份，或当成已经是空扩展仍验签 | 官方：应用若要把原样扩展数据签出去、不要包装，才用第二份字段；non_rp_vote_extension 可选，也可以空 |
 | A1728 | 中 | 怎样编两份扩展 / 怎样自防重放 / 怎样选空会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1729 | 记录 | 会与 34 / 350 / 353 糊成「看见有扩展就已经按原样签」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 两份扩展两份签 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。CanonicalVote / 一轮一份扩展 / 空扩展仍会调 Verify 标成另一对象 |
+| A1730 | 高 | 看见 txs / misbehavior / height / time / next_validators_hash / proposer_address 和 Process / Finalize 同一套 / 看见字段名对得上 会被写成已经跑过 Process，或当成已经 Finalize | 工作实例：abci++_methods PrepareProposal Usage 官方写这几列和 ProcessProposalRequest、FinalizeBlockRequest 是同一套 |
+| A1731 | 高 | 看见 local_last_commit 是上一高度的预提交带扩展 / 看见有上一高的票 会被写成已经是本高度刚签的扩展，或当成已经到了 H 就已经 Prepare 带了扩展 | 官方：local_last_commit 是上一高度的预提交，包括促成上一块决定的那些，以及对应的投票扩展 |
+| A1732 | 高 | 看见 height / time / proposer_address 对上拟议头 / 看见对得上 会被写成已经知道本头哈希，或当成已经是候选已经是 ExecuteTxState | 官方：这三列对上拟议块头里的值 |
+| A1733 | 中 | 怎样填 Prepare 请求字段 / 怎样读 local_last_commit / 怎样对头会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1734 | 记录 | 会与 351 / 330 / 311 糊成「看见字段名对得上就已经跑过 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 请求字段 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。提议者那边也会叫 Process / 扩展启用高度 / 候选状态标成另一对象 |
 
 
 

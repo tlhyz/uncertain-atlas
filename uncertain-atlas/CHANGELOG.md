@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 360）
+
+- CometBFT Prepare 请求字段工作实例（官方 ABCI++ Methods PrepareProposal Usage，实现 / Prepare 请求字段，不另写 19 节）：看见 Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process。看见 local_last_commit 是上一高度的预提交带扩展不是已经是本高度刚签的扩展。看见 height / time / proposer_address 对上拟议头不是已经知道本头哈希。Prepare 请求字段不是不变量 351，也不是不变量 330，也不是不变量 311。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 359；语料 C363；模式 name-the-prepare-fields；反模式 preparefields-sold-as-same；L10.3 第 355 条。填 L4.4 / CometBFT 档案 Prepare 请求字段 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样填 Prepare 请求字段、怎样读 local_last_commit、怎样对头。不编博物馆页。不另写 19 节。不与 351 / 330 / 311 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。提议者那边也会叫 Process、扩展启用高度、候选状态标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 359）
 
 - CometBFT 两份扩展两份签工作实例（官方 ABCI++ Methods ExtendVote / VerifyVoteExtension Usage，实现 / 两份扩展两份签，不另写 19 节）：看见 vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签。看见 non_rp_extension 按原样签不是已经有重放保护。看见应用要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份。两份扩展两份签不是不变量 34，也不是不变量 350，也不是不变量 353。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

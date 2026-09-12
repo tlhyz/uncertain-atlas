@@ -361,3 +361,4 @@
 - [validvalue-sold-as-prepared](validvalue-sold-as-prepared.md)
 - [preparevalid-sold-as-checked](preparevalid-sold-as-checked.md)
 - [nonrp-sold-as-protected](nonrp-sold-as-protected.md)
+- [preparefields-sold-as-same](preparefields-sold-as-same.md)

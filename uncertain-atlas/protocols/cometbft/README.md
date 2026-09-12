@@ -129,6 +129,8 @@ validValue 非 nil 不是已经还会调 Prepare：[`../../tracks/implementation
 
 vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签：[`../../tracks/implementation/worked-example-nonrp-vs-wrapped.md`](../../tracks/implementation/worked-example-nonrp-vs-wrapped.md)（不变量 358）。看见 non_rp_extension 按原样签不是已经有重放保护。看见应用要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份。
 
+Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process：[`../../tracks/implementation/worked-example-prepare-fields-vs-same.md`](../../tracks/implementation/worked-example-prepare-fields-vs-same.md)（不变量 359）。看见 local_last_commit 是上一高度的预提交带扩展不是已经是本高度刚签的扩展。看见 height / time / proposer_address 对上拟议头不是已经知道本头哈希。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
