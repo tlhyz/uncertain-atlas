@@ -174,7 +174,18 @@ def run_sl_directional(
     if soxl_anchor is None or soxl_anchor.empty:
         return {"status": "DATA_MISSING", "reason": "no Gate underlying ticks for SOXL (SOXLG)", "final_equity": equity0}
     levels = S_TO_L_PLANS[plan]
-    soxl = soxl_anchor.sort_values("timestamp")
+
+    def _1m(df: pd.DataFrame) -> pd.DataFrame:
+        if df is None or df.empty:
+            return df
+        w = df.sort_values("timestamp").copy()
+        w["timestamp"] = pd.to_datetime(w["timestamp"], utc=True)
+        w = w.set_index("timestamp")[["price"]].resample("1min").last().dropna().reset_index()
+        return w
+
+    soxl = _1m(soxl_anchor)
+    if soxl is None or soxl.empty:
+        return {"status": "DATA_MISSING", "reason": "empty 1min SOXLG from ticks", "final_equity": equity0}
     anchor_px = float(soxl["price"].iloc[0])
     soxl_s = tapes.get("SOXL3S_USDT")
     snxx_s = tapes.get("SNXX3S_USDT")
@@ -201,7 +212,7 @@ def run_sl_directional(
         if df is not None and not df.empty:
             last_mark[m] = float(df["price"].iloc[0])
     # walk SOXL prints for stage; mark other tapes at last known <= t (no lookahead)
-    others = {m: df.sort_values("timestamp") for m, df in tapes.items() if df is not None and not df.empty}
+    others = {m: _1m(df) for m, df in tapes.items() if df is not None and not df.empty}
     idxs = {m: 0 for m in others}
 
     def _advance(t):

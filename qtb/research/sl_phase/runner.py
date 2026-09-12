@@ -536,7 +536,9 @@ def run_research(*, out_dir: str | Path = "outputs/research_sl_phase", skip_down
         stresses[m] = robustness_on(m, t0, t1)
     (outp / "robustness.json").write_text(json.dumps(stresses, indent=2, default=str), encoding="utf-8")
 
+    print("[research-sl] sl_matrix", flush=True)
     sl_rows = sl_matrix()
+    print("[research-sl] sl_matrix done", flush=True)
     (outp / "sl_directional.json").write_text(json.dumps(sl_rows, indent=2, default=str), encoding="utf-8")
 
     wf = walk_forward(grid_results)
