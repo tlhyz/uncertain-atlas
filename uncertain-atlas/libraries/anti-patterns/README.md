@@ -53,3 +53,4 @@
 - [evidence-default-sold-as-unbonding](evidence-default-sold-as-unbonding.md)
 - [timeout-commit-sold-as-finality](timeout-commit-sold-as-finality.md)
 - [max-msg-sold-as-recv-quota](max-msg-sold-as-recv-quota.md)
+- [rate-limit-sold-as-width](rate-limit-sold-as-width.md)
