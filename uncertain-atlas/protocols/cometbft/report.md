@@ -169,8 +169,9 @@ SignBytes 是 `CanonicalVote`（type / height / round / block_id / timestamp / c
 ## 15. 历史事故
 
 Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一版不拿传闻填满。  
-**待补：** 每案必须链到官方 postmortem 或安全公告。  
-方向：halt（活性）、证据处理、应用非确定性导致的分裂。
+已收官方咨询：[ASA-2024-004](../../tracks/failure-museum/asa-2024-004.md) — 默认证据窗可能短于解绑，无代码补丁。  
+**待补：** 其它案必须链到官方 postmortem 或安全公告。  
+方向：halt（活性）、应用非确定性导致的分裂。
 
 ---
 
@@ -180,7 +181,7 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 2. **WAL / replay** — 崩溃恢复。  
 3. **ABCI 适配** — 引擎与应用的字节契约。  
 4. **light client** — 跳过中间头时重叠的是 trusted `NextValidators`，不是新集合自嗨。见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。  
-5. **evidence** — `DuplicateVoteEvidence` / `LightClientAttackEvidence`；引擎通知应用，不自动 slash。见 [`../../tracks/economic/worked-example-evidence.md`](../../tracks/economic/worked-example-evidence.md)。  
+5. **evidence** — `DuplicateVoteEvidence` / `LightClientAttackEvidence`；引擎通知应用，不自动 slash。过期是高度且时间；默认窗可能短于解绑。见 [`../../tracks/economic/worked-example-evidence.md`](../../tracks/economic/worked-example-evidence.md)、[`../../tracks/economic/worked-example-evidence-window.md`](../../tracks/economic/worked-example-evidence-window.md)。  
 6. **state sync** — `OfferSnapshot` 只有轻验 AppHash 可信；收尾对 Info。见 [`../../tracks/implementation/worked-example-statesync.md`](../../tracks/implementation/worked-example-statesync.md)。
 
 仓库：CometBFT 上游。打开时核路径。

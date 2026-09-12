@@ -52,7 +52,7 @@
 `CurrentHeight - MaxAgeNumBlocks > EvidenceHeight` **且** `CurrentTime - MaxAgeDuration > EvidenceTime` → 过期忽略。
 
 （本页按原文的 **且** 抄。实现若改成「或」，那是实现分叉，语料必须红。）  
-PoS 上证据年龄应短于解绑期，否则人已走，罚不到——与轻客户端 `trustingPeriod < unbondingPeriod` 是同一经济钉子。
+PoS 上证据年龄应**盖住**解绑期，否则人已走，罚不到——与轻客户端 `trustingPeriod < unbondingPeriod` 是同一根钉子的另一头。默认两参数可能短于解绑，见 [证据窗](worked-example-evidence-window.md) 与 [ASA-2024-004](../failure-museum/asa-2024-004.md)。
 
 已上链的证据按哈希去重。块里证据优先于普通交易；体积用 `MaxBytes` 封顶，防已被罚的人刷证据。收块节点在 prevote/precommit **之前**验证据。
 
