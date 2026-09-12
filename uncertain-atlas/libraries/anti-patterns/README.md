@@ -227,3 +227,4 @@
 - [create2-sold-as-created](create2-sold-as-created.md)
 - [refund-cut-sold-as-gone](refund-cut-sold-as-gone.md)
 - [deprecate-sold-as-changed](deprecate-sold-as-changed.md)
+- [net-meter-sold-as-transient](net-meter-sold-as-transient.md)
