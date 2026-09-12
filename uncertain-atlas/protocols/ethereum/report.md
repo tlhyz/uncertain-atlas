@@ -41,8 +41,8 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 2. RPC 广播。  
 3. 进若干 mempool；可被替换（同 nonce 更高费）。  
 4. 某 proposer 签入执行块；列表可能由外部 builder 写（域外 Builder API：先签盲头再揭示）。见 [`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。不是协议内 PBS。  
-5. 执行：扣费、跑 EVM、写存储、出收据与日志。失败交易仍可能消耗 gas、推进 nonce（事实：视失败类型）。  
-6. 共识层把该执行结果纳入头。  
+5. 执行：扣费、跑 EVM、写存储、出收据与日志。失败交易仍可能消耗 gas、推进 nonce（事实：视失败类型）。用户交易跑完之后，载荷里的提款操作才无条件加余额：不是用户交易，没有 gas，不得失败。精读：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。  
+6. 共识层把该执行结果纳入头。信标链出队不是执行账户已经加钱。  
 7. 头可被 fork choice 摆动；justified / finalized 是更强的等级。justified 不是已经不可逆。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）。执行层刚处理完一块不是已经改规范头；没有 `POS_FORKCHOICE_UPDATED` 不得改 fork choice。精读：[`../../tracks/finality/worked-example-processed-vs-forkchoice.md`](../../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149）。  
 8. 钱包若只显示 head，或 RPC 只用 `latest` / `safe`，语义偏乐观。官方没有把 `safe` 写成 justified。
 
@@ -70,7 +70,8 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 
 EVM 字节码、gas、退款、预编译。  
 确定性要求：禁止用节点本地时间/随机数当共识输入。  
-gas 是资源计量，防无限循环变成网络武器。它不是「手续费市场的全部」。
+gas 是资源计量，防无限循环变成网络武器。它不是「手续费市场的全部」。  
+信标提款是系统操作，不是用户交易，没有 gas：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。
 
 ---
 

@@ -178,6 +178,7 @@
 147. 若上 Move / 对照资源能力：必须点名问的是 `copy`、`drop`、`store` 还是 `key`（不变量 151）。`store` 不是已经是顶层资源。`key` 不是模块外谁都能 `move_to`。结构体写了 `has copy` 不是这个实例能复制。字段是整数不是外层资源能复制。第一版可以不上 Move。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-ability-vs-resource.md`](../../tracks/state-models/worked-example-ability-vs-resource.md)。这和所有权快路径（不变量 128）、STM（不变量 122）、占用（不变量 15）、谓词≠脚本（不变量 143）、引用≠花费（不变量 150）不是同一句。
 148. 若把大签放进旧节点不理解的附件 / 对照 SegWit：必须点名问的是 txid、wtxid，还是头上的 txid Merkle（不变量 152）。txid 不是 wtxid。改见证不是已经改交易身份。头上的 txid Merkle 不是已经承诺 wtxid。旧节点看见 txid 不是已经验过见证。第一版必须写清哪一个 ID 承诺了附件。不要抄重量公式。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)。这和策略≠共识（不变量 144）、同根不同列表（不变量 12）、多客户端同根（不变量 3）、跳脚本（不变量 25）、blob 承诺≠字节（不变量 145）不是同一句。
 149. 若做「一个输出、多条条件」/ 对照 Taproot：必须点名问的是钥匙路径、脚本路径，还是链上那个输出（不变量 153）。钥匙路径不是已经揭开有没有脚本树。脚本路径不是已经揭开全部脚本。看见 Taproot 输出不是已经分辨付款给钥还是付款给脚本。第一版可以不上 Taproot / MAST。不要抄控制块长度或叶子版本。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)。这和 txid≠wtxid（不变量 152）、策略≠共识（不变量 144）、同根不同列表（不变量 12）、跳脚本（不变量 25）、BTC 锁≠commit（不变量 139）不是同一句。
+150. 若让共识往执行推余额 / 对照信标提款：必须点名问的是系统操作、用户交易，还是共识层出队（不变量 154）。提款操作不是用户交易。信标链出队不是执行账户已经加钱。无 gas / 不得失败不是已经跑过 EVM。第一版可以保持一条路径、不发明 CL 推送操作。不要抄每块条数。不要另写 19 节。精读：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)。这和处理≠改头（不变量 149）、提交≠兑付（不变量 9）、blob 费≠执行气（不变量 145）、L2 finalized≠桥兑付（不变量 141）、顺序≠状态（不变量 136）不是同一句。
 
 **以后再发明**
 
@@ -291,6 +292,7 @@
 - 把 `store` 写成已经是顶层资源，或把结构体写了 `has copy` 写成这个实例能复制，或把整数字段写成外层资源能复制。
 - 把 txid 写成已经含见证，或把改见证写成已经改交易身份，或把头上的 txid Merkle 写成已经承诺 wtxid。
 - 把钥匙路径写成已经揭开有没有脚本树，或把脚本路径写成已经揭开全部脚本，或把看见 Taproot 输出写成已经分辨付款给钥还是付款给脚本。
+- 把提款操作写成用户交易，或把信标链出队写成执行账户已经加钱，或把无 gas / 不得失败写成已经跑过 EVM。
 
 ---
 
@@ -341,7 +343,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百四十九条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百五十条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
