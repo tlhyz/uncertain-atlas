@@ -3951,6 +3951,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1912 | 高 | 看见 ListSnapshots 用来在 state sync 时发现邻居上有哪些快照 / 看见用来发现 会被写成已经在拉块，或当成已经齐 | 官方：Used during state sync to discover available snapshots on peers |
 | A1913 | 中 | 怎样写 ListSnapshots 空请求 / 怎样填空请求 / 怎样填本地清单会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1914 | 记录 | 会与 322 / 368 / 375 糊成「看见填了 ListSnapshots 空请求就已经齐」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ListSnapshots 空请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。问了邻居就已经齐 / 全字段对上就已经装完 / 拉块 标成另一对象 |
+| A1915 | 高 | 看见 OfferSnapshot 请求 snapshot 是拿来装回的那份快照 / 看见填了 snapshot 会被写成已经是本地清单，或当成已经是同一份 | 工作实例：abci++_methods OfferSnapshot 官方写 snapshot is The snapshot offered for restoration |
+| A1916 | 高 | 看见 OfferSnapshot 回包 result 是这次 Offer 的结果 / 看见回了 result 会被写成已经装完，或当成已经收下 | 官方：result is The result of the snapshot offer |
+| A1917 | 高 | 看见 OfferSnapshot 在用 state sync 引导节点时叫 / 看见在引导时叫了 会被写成已经必须实现快照连接，或当成已经切进共识 | 官方：OfferSnapshot is called when bootstrapping a node using state sync |
+| A1918 | 中 | 怎样写 OfferSnapshot 请求 / 怎样填 snapshot / 怎样填 result 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1919 | 记录 | 会与 395 / 321 / 334 糊成「看见填了 OfferSnapshot 请求就已经是本地清单」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot 请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。本地清单 / Offer 收下就已经装完 / 门在就必须实现 标成另一对象 |
 
 
 

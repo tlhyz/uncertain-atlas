@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 397）
+
+- CometBFT OfferSnapshot 请求工作实例（官方 ABCI++ Methods OfferSnapshot，实现 / OfferSnapshot 请求，不另写 19 节）：看见 OfferSnapshot 请求 snapshot 是拿来装回的那份快照不是已经是本地清单。看见 OfferSnapshot 回包 result 是这次 Offer 的结果不是已经装完。看见 OfferSnapshot 在用 state sync 引导节点时叫不是已经必须实现快照连接。OfferSnapshot 请求不是不变量 395，也不是不变量 321，也不是不变量 334。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 396；语料 C400；模式 name-the-offer-snapshot；反模式 offersnap-sold-as-listed；L10.3 第 392 条。填 L4.4 / CometBFT 档案 OfferSnapshot 请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 OfferSnapshot 请求、怎样填 snapshot、怎样填 result。不编博物馆页。不另写 19 节。不与 395 / 321 / 334 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。本地清单、Offer 收下就已经装完、门在就必须实现标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 396）
 
 - CometBFT ListSnapshots 空请求工作实例（官方 ABCI++ Methods ListSnapshots，实现 / ListSnapshots 空请求，不另写 19 节）：看见 ListSnapshots 请求是空请求、向应用要一份快照清单不是已经齐。看见 ListSnapshots 回包 snapshots 是本地状态快照清单不是已经是同一份。看见 ListSnapshots 用来在 state sync 时发现邻居上有哪些快照不是已经在拉块。ListSnapshots 空请求不是不变量 322，也不是不变量 368，也不是不变量 375。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

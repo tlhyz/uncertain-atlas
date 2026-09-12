@@ -398,3 +398,4 @@
 - [exectxgas-sold-as-checktx](exectxgas-sold-as-checktx.md)
 - [extcommitround-sold-as-commitinfo](extcommitround-sold-as-commitinfo.md)
 - [listsnapempty-sold-as-discovery](listsnapempty-sold-as-discovery.md)
+- [offersnap-sold-as-listed](offersnap-sold-as-listed.md)
