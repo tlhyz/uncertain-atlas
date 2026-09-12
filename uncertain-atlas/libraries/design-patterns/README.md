@@ -155,3 +155,4 @@
 - [name-the-payment-uri](name-the-payment-uri.md)
 - [name-the-disabletx](name-the-disabletx.md)
 - [name-the-duplicate-txid](name-the-duplicate-txid.md)
+- [name-the-signed-message](name-the-signed-message.md)
