@@ -89,8 +89,9 @@
 3. **OP `unsafe` ≠ 已推导**（不变量 141）：L2 推导档。本页不是 rollup。
 4. **本头 AppHash ≠ 本块已交差**（不变量 147）：CometBFT 头字段滞后。本页是以太坊 fork choice 事件。
 5. **多客户端同根**（不变量 3）：两家跑完同一列表根要一样。本页不是「VALID 已经同根」。
+6. **请求承诺 ≠ 已处理**（不变量 192）：头上的请求总线。本页是哪一次调用才改头。承诺不是已经改头，也不是共识层已经处理请求。
 
-不要抄过渡总难度。不要写怎样发假 forkchoice 或扣 payload。不编博物馆页。不另写 19 节。Engine API 的 `ACCEPTED` / `SYNCING` 细表、Builder 出块标成另一对象。
+不要抄过渡总难度。不要写怎样发假 forkchoice 或扣 payload。不编博物馆页。不另写 19 节。Engine API 的 `ACCEPTED` / `SYNCING` 细表、Builder 出块标成另一对象。EIP-7685 请求总线见不变量 192。
 
 ---
 

@@ -89,3 +89,4 @@
 - [name-the-tapscript-leaf](name-the-tapscript-leaf.md)
 - [name-the-delegation](name-the-delegation.md)
 - [name-the-miniscript](name-the-miniscript.md)
+- [name-the-request-bus](name-the-request-bus.md)

@@ -286,7 +286,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.3 执行层 / 共识层 · 必学
 - validator、attestation、finality、fork choice
-- 覆盖：课文 L5.2；CL `DomainType` 见投票 SignBytes 精读；弱主观性 `tracks/finality/worked-example-weak-subjectivity.md`。head ≠ justified ≠ finalized：[`../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127；`safe` 不是官方已经写成 justified）。终局推迟 ≠ 停链，leak ≠ slash：[`../tracks/finality/worked-example-inactivity-leak.md`](../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。处理完一块 ≠ 已经改规范头：[`../tracks/finality/worked-example-processed-vs-forkchoice.md`](../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149；Engine API `VALID` 不是已经改头，也不是已经 finalized）。提款操作 ≠ 用户交易；信标链出队 ≠ 执行账户已经加钱：[`../tracks/economic/worked-example-withdrawal-vs-tx.md`](../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。头里的父信标根 ≠ 当前信标头；合约读到的根 ≠ 已经 finalized：[`../tracks/light-clients/worked-example-parent-root-vs-head.md`](../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。合并后的 DIFFICULTY ≠ 工作量；PREVRANDAO ≠ 应用级无偏随机：[`../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）
+- 覆盖：课文 L5.2；CL `DomainType` 见投票 SignBytes 精读；弱主观性 `tracks/finality/worked-example-weak-subjectivity.md`。head ≠ justified ≠ finalized：[`../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127；`safe` 不是官方已经写成 justified）。终局推迟 ≠ 停链，leak ≠ slash：[`../tracks/finality/worked-example-inactivity-leak.md`](../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。处理完一块 ≠ 已经改规范头：[`../tracks/finality/worked-example-processed-vs-forkchoice.md`](../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149；Engine API `VALID` 不是已经改头，也不是已经 finalized）。提款操作 ≠ 用户交易；信标链出队 ≠ 执行账户已经加钱：[`../tracks/economic/worked-example-withdrawal-vs-tx.md`](../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。头里的父信标根 ≠ 当前信标头；合约读到的根 ≠ 已经 finalized：[`../tracks/light-clients/worked-example-parent-root-vs-head.md`](../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。合并后的 DIFFICULTY ≠ 工作量；PREVRANDAO ≠ 应用级无偏随机：[`../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。看见头里的请求承诺 ≠ 已经由共识层处理完；请求 ≠ 已经有权单独促成动作：[`../tracks/finality/worked-example-request-vs-action.md`](../tracks/finality/worked-example-request-vs-action.md)（不变量 192）
 
 ### M5.4 多客户端与可执行规范 · 必学
 - 为什么故意允许多个实现
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–191）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–192）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C195；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C196；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

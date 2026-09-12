@@ -194,3 +194,4 @@
 - [scriptpath-sold-as-tapscript](scriptpath-sold-as-tapscript.md)
 - [auth-sold-as-delegated](auth-sold-as-delegated.md)
 - [miniscript-sold-as-script](miniscript-sold-as-script.md)
+- [request-sold-as-action](request-sold-as-action.md)
