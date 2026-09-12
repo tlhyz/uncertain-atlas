@@ -17,6 +17,6 @@
 | 1.3 | [L01-M03-merkle.md](L01-M03-merkle.md) | M1.3 | 为什么轻节点能少下数据 |
 | 1.4 | [L01-M04-canonical-encoding.md](L01-M04-canonical-encoding.md) | M1.4 | 同一对象两种写法如何分裂共识；类型字节 ≠ 已经解开内层（不变量 167）；ECDSA 验得过 ≠ 已经是严格 DER（不变量 172）；看见 Bech32 地址串 ≠ 链上已经有这笔输出（不变量 174）；看见部分签名包 ≠ 已经能广播（不变量 179）；后继校验过了 ≠ 已经是旧校验那套地址（不变量 181）；看见扩展公钥 ≠ 已经能花（不变量 182）；看见助记词 ≠ 已经是二进制种子（不变量 183）；看见私钥或助记词备份 ≠ 已经知道该看哪种输出脚本（不变量 184）；看见后继版本工作包 ≠ 已经是旧版那份固定未签交易（不变量 186） |
 | 1.5 | [L01-M05-pq-preview.md](L01-M05-pq-preview.md) | M1.6 | 后量子先改哪些工程账 |
-| 1.6 | [L01-M06-randomness-and-determinism.md](L01-M06-randomness-and-determinism.md) | M1.5 | 三种 nonce 与 `Apply` 禁骰；PREVRANDAO ≠ 工作量 / 无偏骰子（不变量 157）；用户自造句子 ≠ 已经是本页那种助记词（不变量 183） |
+| 1.6 | [L01-M06-randomness-and-determinism.md](L01-M06-randomness-and-determinism.md) | M1.5 | 三种 nonce 与 `Apply` 禁骰；PREVRANDAO ≠ 工作量 / 无偏骰子（不变量 157）；看见 RANDAO 种子已知 ≠ 已经锁死出块日程（不变量 205）；用户自造句子 ≠ 已经是本页那种助记词（不变量 183） |
 
 试题后置，见 `exams/`。
