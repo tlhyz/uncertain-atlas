@@ -304,3 +304,4 @@
 - [name-the-fin-apphash](name-the-fin-apphash.md)
 - [name-the-checktx-guard](name-the-checktx-guard.md)
 - [name-the-snap-height](name-the-snap-height.md)
+- [name-the-fin-fields](name-the-fin-fields.md)

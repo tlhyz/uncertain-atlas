@@ -109,6 +109,7 @@
 - [`worked-example-finapphash-vs-header.md`](worked-example-finapphash-vs-header.md) — Finalize 回包 app_hash 可以空或硬编码、但必须确定 ≠ 已经印进本头；以后 Query 可以拿这份根当锚回证明 ≠ 已经对上 AppHash；tx_results[i].Code == 0 只表示第 i 笔完全合法 ≠ 已经没进块（不变量 404）
 - [`worked-example-checktxguard-vs-optional.md`](worked-example-checktxguard-vs-optional.md) — CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池 ≠ 已经是技术上可选；这笔可以来自外部用户、也可以来自另一节点 ≠ 已经保证不重放；默克尔证明带自描述 type、好支持多种默克尔树和编码 ≠ 已经是 ProofOp 类型（不变量 405）
 - [`worked-example-snapheight-vs-queryh.md`](worked-example-snapheight-vs-queryh.md) — Snapshot.height 是拍快照的高度（Commit 之后） ≠ 已经是 Query 高度；Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据 ≠ 已经全字段对上；Query 可以可选回默克尔证明 ≠ 已经对上 AppHash（不变量 406）
+- [`worked-example-finfields-vs-equiv.md`](worked-example-finfields-vs-equiv.md) — Finalize 含刚决定那块的字段 ≠ 已经是四门已经结算；Finalize 实现必须确定、因为它在状态机复制里推进应用状态 ≠ 已经可以像 Prepare 那样；Info 用来回应用状态信息 ≠ 已经是握手对齐（不变量 407）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

@@ -4006,6 +4006,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1967 | 高 | 看见 Query 可以可选回默克尔证明 / 看见能回证明 会被写成已经对上 AppHash，或当成已经勾了 prove | 官方：Query Usage Optionally return Merkle proof |
 | A1968 | 中 | 怎样写 Snapshot 高度余量 / 怎样填 metadata / 怎样回证明 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1969 | 记录 | 会与 371 / 368 / 383 糊成「看见填了 Snapshot 高度余量就已经是 Query 高度」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Snapshot 高度余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Query 高度 / 全字段对上 / 勾了 prove 标成另一对象 |
+| A1970 | 高 | 看见 Finalize 含刚决定那块的字段 / 看见填了字段 会被写成已经是四门已经结算，或当成已经跑过 Process | 工作实例：abci++_methods FinalizeBlock Usage 官方写 Contains the fields of the newly decided block |
+| A1971 | 高 | 看见 Finalize 实现必须确定、因为它在状态机复制里推进应用状态 / 看见必须确定 会被写成已经可以像 Prepare 那样，或当成已经印进本头 | 官方：The implementation of FinalizeBlock MUST be deterministic, since it is making the Application's state evolve in the context of state machine replication |
+| A1972 | 高 | 看见 Info 用来回应用状态信息 / 看见能回 会被写成已经是握手对齐，或当成已经是快照重放 | 官方：Info Usage Return information about the application state |
+| A1973 | 中 | 怎样写 Finalize 字段余量 / 怎样写确定性 / 怎样回 Info 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1974 | 记录 | 会与 363 / 342 / 370 糊成「看见填了 Finalize 字段余量就已经是四门已经结算」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 字段余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门已经结算 / 可以像 Prepare 那样 / 握手对齐 标成另一对象 |
 
 
 

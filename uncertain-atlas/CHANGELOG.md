@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 408）
+
+- CometBFT Finalize 字段余量工作实例（官方 ABCI++ Methods FinalizeBlock Usage / Info Usage，实现 / Finalize 字段余量，不另写 19 节）：看见 Finalize 含刚决定那块的字段不是已经是四门已经结算。看见 Finalize 实现必须确定、因为它在状态机复制里推进应用状态不是已经可以像 Prepare 那样。看见 Info 用来回应用状态信息不是已经是握手对齐。Finalize 字段余量不是不变量 363，也不是不变量 342，也不是不变量 370。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 407；语料 C411；模式 name-the-fin-fields；反模式 finfields-sold-as-equiv；L10.3 第 403 条。填 L4.4 / CometBFT 档案 Finalize 字段余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 字段余量、怎样写确定性、怎样回 Info。不编博物馆页。不另写 19 节。不与 363 / 342 / 370 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。四门已经结算、可以像 Prepare 那样、握手对齐标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 407）
 
 - CometBFT Snapshot 高度余量工作实例（官方 ABCI++ Methods Data Types Snapshot / Query Usage，实现 / Snapshot 高度余量，不另写 19 节）：看见 Snapshot.height 是拍快照的高度（Commit 之后）不是已经是 Query 高度。看见 Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据不是已经全字段对上。看见 Query 可以可选回默克尔证明不是已经对上 AppHash。Snapshot 高度余量不是不变量 371，也不是不变量 368，也不是不变量 383。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
