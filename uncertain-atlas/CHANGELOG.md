@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 342）
+
+- CometBFT VerifyVoteExtension 确定性工作实例（官方 Requirements for the Application Formal Requirements 7–8 [`VerifyVoteExtension`, determinism]，实现 / VerifyVoteExtension 确定性，不另写 19 节）：看见 Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 ExtendVote 那样依赖其它值。看见两边对任意扩展同一裁决不是已经只对诚实扩展同一裁决。看见 Verify 非确定会伤活性不是已经丢了安全性。VerifyVoteExtension 确定性不是不变量 338，也不是不变量 34，也不是不变量 340。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 341；语料 C345；模式 name-the-verify-det；反模式 verifydet-sold-as-extend；L10.3 第 337 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension 确定性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 VerifyVoteExtension、怎样测确定性、怎样写测试向量。不编博物馆页。不另写 19 节。不与 338 / 34 / 340 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。ExtendVote 可以不确定 / 验签拒收 / Process 确定性标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 341）
 
 - CometBFT ProcessProposal 确定性工作实例（官方 Requirements for the Application Formal Requirements 4–5 [`ProcessProposal`, determinism]，实现 / ProcessProposal 确定性，不另写 19 节）：看见 Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值。看见两边对任意块同一裁决不是已经只对诚实提案同一裁决。看见 Process 非确定 bug 没有现成解法不是已经丢了安全性。ProcessProposal 确定性不是不变量 338，也不是不变量 33，也不是不变量 327。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

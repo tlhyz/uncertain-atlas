@@ -343,3 +343,4 @@
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md)
 - [checktxweak-sold-as-consensus](checktxweak-sold-as-consensus.md)
 - [processdet-sold-as-prepare](processdet-sold-as-prepare.md)
+- [verifydet-sold-as-extend](verifydet-sold-as-extend.md)

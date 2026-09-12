@@ -93,6 +93,8 @@ Prepare 没有确定性要求不是已经必须确定：[`../../tracks/implement
 
 Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值：[`../../tracks/implementation/worked-example-process-det-vs-prepare.md`](../../tracks/implementation/worked-example-process-det-vs-prepare.md)（不变量 340）。看见两边对任意块同一裁决不是已经只对诚实提案同一裁决。看见 Process 非确定 bug 没有现成解法不是已经丢了安全性。
 
+Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 ExtendVote 那样依赖其它值：[`../../tracks/implementation/worked-example-verify-det-vs-extend.md`](../../tracks/implementation/worked-example-verify-det-vs-extend.md)（不变量 341）。看见两边对任意扩展同一裁决不是已经只对诚实扩展同一裁决。看见 Verify 非确定会伤活性不是已经丢了安全性。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

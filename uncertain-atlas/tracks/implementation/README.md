@@ -43,6 +43,7 @@
 - [`worked-example-prepare-nondet-vs-process.md`](worked-example-prepare-nondet-vs-process.md) — Prepare 没有确定性要求 ≠ 已经必须确定；两边 raw 一样 ≠ 已经是同一份提案；ExtendVote 没有确定性要求 ≠ 已经是同一份扩展（不变量 338）
 - [`worked-example-checktx-weak-vs-process.md`](worked-example-checktx-weak-vs-process.md) — 不该验排序相关有效性 ≠ 已经该在 CheckTx 里验；拜占庭能提案一满块无效交易 ≠ 已经被池子挡住；ProcessProposal 对付这种行为 ≠ 已经是 CheckTx（不变量 339）
 - [`worked-example-process-det-vs-prepare.md`](worked-example-process-det-vs-prepare.md) — Process 必须只依赖请求和上一份状态 ≠ 已经可以像 Prepare 那样依赖其它值；两边对任意块同一裁决 ≠ 已经只对诚实提案同一裁决；Process 非确定 bug 没有现成解法 ≠ 已经丢了安全性（不变量 340）
+- [`worked-example-verify-det-vs-extend.md`](worked-example-verify-det-vs-extend.md) — Verify 必须只依赖扩展、这块和上一份状态 ≠ 已经可以像 ExtendVote 那样依赖其它值；两边对任意扩展同一裁决 ≠ 已经只对诚实扩展同一裁决；Verify 非确定会伤活性 ≠ 已经丢了安全性（不变量 341）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
