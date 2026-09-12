@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 333）
+
+- CometBFT Snapshot Verification 工作实例（官方 Requirements for the Application Snapshot Verification，实现 / Snapshot Verification，不另写 19 节）：看见装完又对上 LastBlockAppHash 不是已经在装回当中验过。看见增量验了 chunk 不是已经是唯一可信的 AppHash。看见封禁邻居不是已经没有快照 DoS。Snapshot Verification 不是不变量 321，也不是不变量 323，也不是不变量 38，也不是不变量 326。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 332；语料 C336；模式 name-the-snapshot-verify；反模式 snapshotverify-sold-as-early；L10.3 第 328 条。填 L4.4 / CometBFT 档案 Snapshot Verification / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样做增量默克尔证明、怎样配 checksum、怎样写受信邻居名单。不编博物馆页。不另写 19 节。不与 321 / 323 / 38 / 326 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。装回 / 切进共识 / 轻验 AppHash / 邻居过滤标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 332）
 
 - CometBFT EvidenceParams.MaxBytes 工作实例（官方 Requirements for the Application List of Parameters / EvidenceParams.MaxBytes，实现 / EvidenceParams.MaxBytes，不另写 19 节）：看见填了证据 MaxBytes 不是已经落在块上限下面。看见 > 0 不是已经盖住解绑。看见证据 MaxBytes 不是已经是块 MaxBytes。EvidenceParams.MaxBytes 不是不变量 299，也不是不变量 46，也不是不变量 63。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

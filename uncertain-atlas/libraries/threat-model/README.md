@@ -333,6 +333,7 @@
 | 324 | Query 被写成已经复制到各节点 | 协议 + 文案 | 看见 Query 回了 / 查到了 / 实现了 Query / Query 当成已经复制到各节点或已经新鲜或已经是正常运转必须有 | 不变量 329；语料 C333 |
 | 325 | VoteExtensionsEnableHeight 被写成已经 Prepare 带了扩展 | 协议 + 文案 | 看见到了 H / H+1 带了扩展 / h < H 带了扩展 / VoteExtensionsEnableHeight 当成已经 Prepare 带了扩展或已经是本高度刚签的或已经合法 | 不变量 330；语料 C334 |
 | 326 | EvidenceParams.MaxBytes 被写成已经是块 MaxBytes | 协议 + 文案 | 看见填了证据 MaxBytes / > 0 / 证据 MaxBytes / EvidenceParams.MaxBytes 当成已经落在块上限下面或已经盖住解绑或已经是块 MaxBytes | 不变量 331；语料 C335 |
+| 327 | Snapshot Verification 被写成已经在装回当中验过 | 协议 + 文案 | 看见装完又对上 LastBlockAppHash / 增量验了 chunk / 封禁邻居 / Snapshot Verification 当成已经在装回当中验过或已经是唯一可信的 AppHash 或已经没有快照 DoS | 不变量 332；语料 C336 |
 
 ## 不自动覆盖
 

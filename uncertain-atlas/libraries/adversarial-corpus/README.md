@@ -346,6 +346,7 @@
 | C333 | 329 Query回了≠已经复制到各节点 | 文案把 Query 回了 / RPC 能查写成已经复制到各节点或已经过了共识；或把查到了 / 本地有这份写成已经新鲜或已经是当前尖；或把实现了 Query / 规范写了 Query 写成已经是正常运转必须有或已经是过滤或证明；或把 Query 写成不变量 314 / 325 / 326 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C334 | 330 到了H≠已经Prepare带了扩展 | 文案把到了 H / 已经叫了 ExtendVote 写成已经 Prepare 带了扩展；或把 H+1 的 PrepareProposal 带了扩展写成已经是本高度刚签的扩展；或把 h < H 的预提交带了扩展写成已经合法或已经启用；或把 VoteExtensionsEnableHeight 写成不变量 34 / 58 / 35 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C335 | 331 填了证据MaxBytes≠已经落在块上限下面 | 文案把填了 EvidenceParams.MaxBytes / 一块里证据有上限写成已经落在块 MaxBytes 下面或已经扣掉开销；或把 MaxBytes > 0 / 合法写成已经盖住解绑或已经够罚；或把证据 MaxBytes 写成已经是块 MaxBytes 或已经是 -1 无上限或已经是活性 SLA；或把 EvidenceParams.MaxBytes 写成不变量 299 / 46 / 63 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C336 | 332 装完又对上LastBlockAppHash≠已经在装回当中验过 | 文案把装完又叫了 Info / LastBlockAppHash 对上轻客户端那份写成已经在装回当中增量验过或已经进了网；或把增量验了 chunk / checksum / 绑了默克尔写成已经是唯一可信的 AppHash 或已经不能被伪造元数据；或把让引擎封禁邻居 / 配了受信邻居名单写成已经没有快照 DoS 或已经收下这个人；或把 Snapshot Verification 写成不变量 321 / 323 / 38 / 326 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

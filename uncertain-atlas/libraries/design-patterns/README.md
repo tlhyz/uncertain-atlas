@@ -229,3 +229,4 @@
 - [name-the-query-local](name-the-query-local.md)
 - [name-the-ve-height](name-the-ve-height.md)
 - [name-the-evidence-maxbytes](name-the-evidence-maxbytes.md)
+- [name-the-snapshot-verify](name-the-snapshot-verify.md)
