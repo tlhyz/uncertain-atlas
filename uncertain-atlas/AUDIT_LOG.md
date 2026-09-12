@@ -3489,6 +3489,16 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1502 | 高 | 看见多数交易再发一次通常不受欢迎 会被写成已经没有幂等例外，或当成已经能把所有交易当必须唯一 | 官方：除了一般很小的那一类幂等交易 |
 | A1503 | 中 | 怎样实现重放保护 / 怎样做索引器 / nonce 公式会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1504 | 记录 | 会与 312 / 301 / 161 糊成「看见池子挡过就已经保证不重放」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Replay Protection / 实现表 / 内存池表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。CheckTxState / 内存池交接 / 链绑定标成另一对象 |
+### 2026-09-12 · 看见 QueryState 不是已经是 ExecuteTxState
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A1505 | 高 | 看见 Query 连接 / 看见在答用户查询 会被写成已经是 ExecuteTxState，或当成已经能改工作状态 | 工作实例：app requirements 官方写 QueryState 是 ExecuteTxState 在上次 Commit 之后的只读副本 |
+| A1506 | 高 | 看见 QueryState / 看见上次 Commit 会被写成已经跟上正在跑的块，或当成已经是 CheckTxState | 官方：这份副本是整块处理完、已经提交到盘之后的那一份 |
+| A1507 | 高 | 看见启动时对齐 / 看见 state sync 之后对齐 会被写成已经是快照重放，或当成已经从创世重放 | 官方：这条连接用来答用户查询，也用来在启动或 state sync 之后对齐，不是 Snapshot 连接 |
+| A1508 | 中 | 怎样实现 QueryState / 怎样做 state sync / 怎样写查询字段会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1509 | 记录 | 会与 312 / 310 / 38 糊成「看见能查就已经是工作状态」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 QueryState / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。CheckTxState / Commit 锁 / 快照重放标成另一对象 |
+
 
 
 

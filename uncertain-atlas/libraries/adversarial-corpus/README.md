@@ -328,6 +328,7 @@
 | C315 | 311 候选≠已经是ExecuteTxState | 文案把 PrepareProposal 披露了提案 / 两门给的字段差不多写成已经知道本头哈希；或把立刻执行出一份候选 / 内存里有状态写成已经是 ExecuteTxState 或已经能预测本高度 Finalize 会交哪一块；或把候选很多 / 还没 Finalize 写成已经能无界攒着或丢掉就永远不用再执行；或把候选状态写成不变量 33 / 310 / 5 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C316 | 312 CheckTxState≠已经是ExecuteTxState | 文案把 CheckTx 过了 / 进了池并开始流言写成已经按 ExecuteTxState 验过或已经按将要执行的那份状态验过；或把 CheckTxState 和 ExecuteTxState 同时在改写成已经同一份状态；或把 Commit 之后又跑了 CheckTx / Type 是 RECHECK 写成已经是一笔新交易或已经解锁；或把 CheckTxState 写成不变量 33 / 301 / 310 / 311 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C317 | 313 索引器去重≠已经保证不重放 | 文案把旧交易又被送来 / 内存池有去重机制写成已经保证不会重复；或把过了 CheckTx / 索引器滤过写成已经有应用自己写的、带强保证的重放保护；或把多数交易再发通常不受欢迎写成已经没有幂等例外或已经能把所有交易当必须唯一；或把 Replay Protection 写成不变量 312 / 301 / 161 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C318 | 314 QueryState≠已经是ExecuteTxState | 文案把 Query 连接 / 在答用户查询写成已经是 ExecuteTxState 或已经能改工作状态；或把 QueryState / 上次 Commit 写成已经跟上正在跑的块或已经是 CheckTxState；或把启动对齐 / state sync 之后对齐写成已经是快照重放或已经从创世重放；或把 QueryState 写成不变量 312 / 310 / 38 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

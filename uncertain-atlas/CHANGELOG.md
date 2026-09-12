@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 315）
+
+- CometBFT QueryState 工作实例（官方 Requirements for the Application，实现 / QueryState，不另写 19 节）：看见 Query 连接不是已经是 ExecuteTxState。看见上次 Commit 不是已经跟上正在跑的块。看见启动对齐不是已经是快照重放。QueryState 不是不变量 312，也不是不变量 310，也不是不变量 38。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 314；语料 C318；模式 name-the-querystate；反模式 querystate-sold-as-execute；L10.3 第 310 条。填 L4.4 / CometBFT 档案 QueryState / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样实现 QueryState、怎样做 state sync、怎样写查询字段。不编博物馆页。不另写 19 节。不与 312 / 310 / 38 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。CheckTxState / Commit 锁 / 快照重放标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 314）
 
 - CometBFT Replay Protection 工作实例（官方 Requirements for the Application，实现 / 重放保护，不另写 19 节）：看见内存池会挡重复不是已经保证不重放。看见过了 CheckTx 不是已经有应用级保护。看见通常不受欢迎不是已经没有幂等例外。Replay Protection 不是不变量 312，也不是不变量 301，也不是不变量 161。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

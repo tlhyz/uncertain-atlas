@@ -39,6 +39,8 @@ CheckTx 过了不是已经按 ExecuteTxState 验过：[`../../tracks/implementat
 
 内存池会挡重复不是已经保证不重放：[`../../tracks/implementation/worked-example-mempool-indexer-vs-replay.md`](../../tracks/implementation/worked-example-mempool-indexer-vs-replay.md)（不变量 313）。看见过了 CheckTx 不是已经有应用级保护。看见通常不受欢迎不是已经没有幂等例外。
 
+QueryState 不是已经是 ExecuteTxState：[`../../tracks/implementation/worked-example-querystate-vs-execute.md`](../../tracks/implementation/worked-example-querystate-vs-execute.md)（不变量 314）。看见上次 Commit 不是已经跟上正在跑的块。看见启动对齐不是已经是快照重放。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
