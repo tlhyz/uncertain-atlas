@@ -182,6 +182,7 @@
 151. 若做同质跨链 / 对照 ICS-20：必须点名问的是托管、铸券、烧掉还是解锁（不变量 155）。源链托管不是对岸已经铸券。对岸券不是源链已解锁的原币。带端口/通道前缀的 denom 不是原来的 denom。超时退款不是对岸已经有可花余额。send 包发出不是对岸已经 recv 并铸券。A→B→D 不是已经能走 D→C→A 赎回。第一版可以不装 IBC / ICS-20。不要抄通道版本或实现仓库版本。不要另写 19 节。精读：[`../../tracks/economic/worked-example-escrow-vs-voucher.md`](../../tracks/economic/worked-example-escrow-vs-voucher.md)。这和客户端≠数据包（不变量 146）、ack 确定性（不变量 77）、超时挂钩（不变量 78）、ICS-23（不变量 79）、提交≠兑付（不变量 9）、提款≠交易（不变量 154）、XCM（不变量 113）不是同一句。
 152. 若把共识根暴露进执行 VM / 对照信标根进 EVM：必须点名问的是父信标根、当前头，还是 finalized（不变量 156）。头里的父根不是当前信标头。合约里读到的根不是已经 finalized。环缓冲过期不是根已经永久可查。`BLOCKHASH` 不是已经改成信标根。第一版可以不把共识根暴露进执行 VM。不要抄环长或分叉时间戳。不要另写 19 节。精读：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md)。这和提款≠交易（不变量 154）、处理≠改头（不变量 149）、head≠justified≠finalized（不变量 127）、弱主观检查点（不变量 24）、blob 承诺≠字节（不变量 145）不是同一句。
 153. 若把共识随机暴露进执行 VM / 对照 PREVRANDAO：必须点名问的是工作量、上一块 mix，还是应用公平（不变量 157）。合并后的 `difficulty` 不是工作量。`PREVRANDAO` 不是本块刚掷的骰子。信标 RANDAO 不是应用级无偏随机。历史 mix 不是不可预测。第一版可以不把共识随机暴露进执行 VM。不要抄阈值或前瞻 epoch。不要另写 19 节。精读：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)。这和父根≠头（不变量 156）、处理≠改头（不变量 149）、确定性（不变量 3）、DKG（不变量 93）、VRF 抽签（不变量 134）不是同一句。
+154. 若做费用市场 / 对照 EIP-1559：必须点名问的是基础费、小费，还是弹性上限（不变量 158）。基础费不是已经给了出块者。弹性块大小不是整套费用市场已经齐。烧掉不是 MEV 已经解决。`GASPRICE` 不是出块者实收。第一版可以不抄烧掉基础费的市场。不要抄倍数。不要另写 19 节。精读：[`../../tracks/mempool/worked-example-basefee-vs-tip.md`](../../tracks/mempool/worked-example-basefee-vs-tip.md)。这和 blob 费≠执行气（不变量 145）、Bitcoin base fee（不变量 144）、gas≠墙钟（不变量 101）、谁写列表（不变量 27）不是同一句。
 
 **以后再发明**
 
@@ -298,7 +299,8 @@
 - 把提款操作写成用户交易，或把信标链出队写成执行账户已经加钱，或把无 gas / 不得失败写成已经跑过 EVM。  
 - 把源链托管写成对岸已经铸出原币，或把对岸券写成源链已经解锁，或把带通道前缀的 denom 写成原来的名字。  
 - 把头里的父信标根写成当前信标头，或把合约里读到的根写成已经 finalized，或把环缓冲写成永存。  
-- 把合并后的 `difficulty` 写成工作量，或把 `PREVRANDAO` 写成本块刚掷的公平骰子，或把信标 RANDAO 写成应用级无偏随机。
+- 把合并后的 `difficulty` 写成工作量，或把 `PREVRANDAO` 写成本块刚掷的公平骰子，或把信标 RANDAO 写成应用级无偏随机。  
+- 把基础费写成已经给了出块者，或把弹性块大小写成整套费用市场已经齐，或把烧掉写成 MEV 已经解决。
 
 ---
 
@@ -349,7 +351,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百五十三条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百五十四条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

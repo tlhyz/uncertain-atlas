@@ -71,7 +71,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 EVM 字节码、gas、退款、预编译。  
 确定性要求：禁止用节点本地时间/随机数当共识输入。  
 gas 是资源计量，防无限循环变成网络武器。它不是「手续费市场的全部」。  
-信标提款是系统操作，不是用户交易，没有 gas：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。执行头里的父信标根不是当前信标头，也不是已经 finalized：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。合并后旧 `DIFFICULTY` 指令返回上一块 RANDAO mix，不是工作量，也不是应用级无偏随机：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。
+信标提款是系统操作，不是用户交易，没有 gas：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。执行头里的父信标根不是当前信标头，也不是已经 finalized：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。合并后旧 `DIFFICULTY` 指令返回上一块 RANDAO mix，不是工作量，也不是应用级无偏随机：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。EIP-1559 基础费是烧掉的网络费，不是已经给了出块者；弹性块大小不是整套费用市场已经齐；烧掉不是 MEV 已经解决：[`../../tracks/mempool/worked-example-basefee-vs-tip.md`](../../tracks/mempool/worked-example-basefee-vs-tip.md)（不变量 158）。
 
 ---
 
@@ -121,7 +121,7 @@ CL 的 `DomainType`（proposer ≠ attester；Altair 另加 `DOMAIN_SYNC_COMMITT
 
 1. 状态膨胀与无状态未完成。  
 2. 账户热点，默认并行弱。  
-3. MEV / 域外 Builder API 让「交易生命周期」不再是简单队列；签头 ≠ 本地排序。见 [`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。  
+3. MEV / 域外 Builder API 让「交易生命周期」不再是简单队列；签头 ≠ 本地排序。见 [`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。烧掉基础费降低与 MEV 相关的风险，不是 MEV 已经解决：[`../../tracks/mempool/worked-example-basefee-vs-tip.md`](../../tracks/mempool/worked-example-basefee-vs-tip.md)（不变量 158）。  
 4. 协议极度复杂，升级协调成本高。  
 5. 用户层把浏览器当验证。
 

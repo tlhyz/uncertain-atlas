@@ -278,7 +278,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.1 账户、nonce、EVM、gas · 必学
 - 状态转移、收据、日志
-- 覆盖：课文 L5.1。blob gas ≠ 普通执行 gas：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。块 gas 上限 ≠ 墙钟已有界：[`../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。OOG 结束 ≠ 空账户删除已回滚：[`../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md`](../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md)（不变量 103）。预编译中途出错 ≠ SDK 已写入已经撤回：[`../tracks/failure-museum/isa-2025-004.md`](../tracks/failure-museum/isa-2025-004.md)（不变量 117）。内层改过 ≠ 外层已经看见：[`../tracks/failure-museum/asa-2026-002.md`](../tracks/failure-museum/asa-2026-002.md)（不变量 118）。正确兑现委托语义 ≠ 预编译信任已经改过：[`../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)（不变量 119）
+- 覆盖：课文 L5.1。blob gas ≠ 普通执行 gas：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。基础费 ≠ 小费；烧掉 ≠ 已经给了出块者；弹性块大小 ≠ 整套费用市场已经齐：[`../tracks/mempool/worked-example-basefee-vs-tip.md`](../tracks/mempool/worked-example-basefee-vs-tip.md)（不变量 158）。块 gas 上限 ≠ 墙钟已有界：[`../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。OOG 结束 ≠ 空账户删除已回滚：[`../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md`](../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md)（不变量 103）。预编译中途出错 ≠ SDK 已写入已经撤回：[`../tracks/failure-museum/isa-2025-004.md`](../tracks/failure-museum/isa-2025-004.md)（不变量 117）。内层改过 ≠ 外层已经看见：[`../tracks/failure-museum/asa-2026-002.md`](../tracks/failure-museum/asa-2026-002.md)（不变量 118）。正确兑现委托语义 ≠ 预编译信任已经改过：[`../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)（不变量 119）
 
 ### M5.2 状态树与状态膨胀 · 重要
 - trie、存档节点、无状态方向
@@ -299,7 +299,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.6 MEV 与 PBS · 进阶
 - mempool 不再是简单队列
-- 覆盖：课文 L5.4；谁写列表 vs 谁签头 `tracks/mempool/worked-example-who-orders.md`（Builder API ≠ consensus-specs；不变量 27）
+- 覆盖：课文 L5.4；谁写列表 vs 谁签头 `tracks/mempool/worked-example-who-orders.md`（Builder API ≠ consensus-specs；不变量 27）。烧掉基础费 ≠ MEV 已经解决：[`../tracks/mempool/worked-example-basefee-vs-tip.md`](../tracks/mempool/worked-example-basefee-vs-tip.md)（不变量 158）
 
 ### M5.7 事故：共识分裂、客户端差异、状态问题 · 重要
 - 覆盖：L9.9 方法 + 博物馆 CVE-2021-39137 + Sepolia 2024-03 Engine API 尺寸（不变量 96）+ 2021-05 状态问题 / gas≠墙钟（不变量 101）+ 2016-11 OOG≠空账户删除已回滚（不变量 103）+ CVE-2025-30147 子群≠在曲线上（不变量 116）
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–157）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–158）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C161；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C162；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

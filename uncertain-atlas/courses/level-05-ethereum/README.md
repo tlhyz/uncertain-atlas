@@ -10,9 +10,9 @@
 
 | 课 | 文件 | 核心问题 |
 |---|---|---|
-| 5.1 | [L05-M01-evm-and-gas.md](L05-M01-evm-and-gas.md) | 任意程序如何仍是确定性状态机；blob gas ≠ 普通执行 gas（不变量 145） |
+| 5.1 | [L05-M01-evm-and-gas.md](L05-M01-evm-and-gas.md) | 任意程序如何仍是确定性状态机；blob gas ≠ 普通执行 gas（不变量 145）；基础费 ≠ 小费 / 烧掉 ≠ 已经给了出块者（不变量 158） |
 | 5.2 | [L05-M02-el-cl-finality.md](L05-M02-el-cl-finality.md) | 执行层和共识层各保证什么；head ≠ justified ≠ finalized；处理完一块 ≠ 已经改规范头；提款操作 ≠ 用户交易；父信标根 ≠ 当前头；PREVRANDAO ≠ 工作量 / 无偏骰子；终局推迟 ≠ 停链 / leak ≠ slash |
 | 5.3 | [L05-M03-multi-client.md](L05-M03-multi-client.md) | 多实现为什么是药也是刀 |
-| 5.4 | [L05-M04-state-blobs-mev.md](L05-M04-state-blobs-mev.md) | 状态胀了、blob、mempool 不再是队列 |
+| 5.4 | [L05-M04-state-blobs-mev.md](L05-M04-state-blobs-mev.md) | 状态胀了、blob、mempool 不再是队列；烧掉基础费 ≠ MEV 已经解决（不变量 158） |
 
 覆盖声明：L5.1→M5.1；L5.2→M5.3；L5.3→M5.4；L5.4→M5.2/M5.5/M5.6；M5.7→L9.9 方法 + 博物馆 CVE-2021-39137（官方 GHSA / postmortem）+ Sepolia 2024-03 Engine API 尺寸（不变量 96）+ 2021-05 状态问题 / gas≠墙钟（不变量 101）+ 2016-11 OOG≠空账户删除已回滚（不变量 103）+ CVE-2025-30147 子群≠在曲线上（不变量 116）+ Avalanche 2025 正确语义≠预编译信任（不变量 119；C-Chain 是 EVM 事故，不是 Snow 抽样）。

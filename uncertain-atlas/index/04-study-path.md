@@ -11,7 +11,7 @@
 2. L0.7 画自己的门。  
 3. [`../tracks/lifecycle/README.md`](../tracks/lifecycle/README.md) 五列表。  
 4. [`../tracks/lifecycle/worked-example.md`](../tracks/lifecycle/worked-example.md) 跟完阿安付 1。  
-5. 停。若还不能指出「钱包绿勾」在每一列指哪一层，不要进 L6。日蚀 / 内存池：[`../tracks/network/worked-example-eclipse.md`](../tracks/network/worked-example-eclipse.md)、[`../tracks/mempool/worked-example.md`](../tracks/mempool/worked-example.md)。读 L5.4 时补 [`../tracks/mempool/worked-example-who-orders.md`](../tracks/mempool/worked-example-who-orders.md)（签了头 ≠ 自己排了序）与 [`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（blob gas ≠ 普通执行 gas；`BLOBHASH` ≠ 已经读到袋里的字节；不变量 145）。
+5. 停。若还不能指出「钱包绿勾」在每一列指哪一层，不要进 L6。日蚀 / 内存池：[`../tracks/network/worked-example-eclipse.md`](../tracks/network/worked-example-eclipse.md)、[`../tracks/mempool/worked-example.md`](../tracks/mempool/worked-example.md)。读 L5.1 时补 [`../tracks/mempool/worked-example-basefee-vs-tip.md`](../tracks/mempool/worked-example-basefee-vs-tip.md)（基础费 ≠ 小费；烧掉 ≠ 已经给了出块者；弹性块大小 ≠ 整套费用市场已经齐；烧掉 ≠ MEV 已经解决；不变量 158）。读 L5.4 时补 [`../tracks/mempool/worked-example-who-orders.md`](../tracks/mempool/worked-example-who-orders.md)（签了头 ≠ 自己排了序）与 [`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（blob gas ≠ 普通执行 gas；`BLOBHASH` ≠ 已经读到袋里的字节；不变量 145）。
 
 ## 第二通：工具
 
