@@ -200,6 +200,7 @@
 169. 若块头不带高度 / 对照 BIP-34：必须点名问的是头、coinbase 第一项，还是奖励年龄（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。交易 version 更大当非标准不是共识已经禁止。写了高度不是 coinbase 已经能花。BIP-34 不是 BIP-9，也不是 BIP-66 那条新规则。第一版若头不带高度，必须写清高度承诺在哪。不要抄票数。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)。这和进块已能花（不变量 163）、版本位四态（不变量 171）、DER 编码（不变量 172）不是同一句。
 170. 若提供收款地址 / 对照 BIP-173：必须点名问的是地址串、校验灯，还是链上输出（不变量 174）。看见 Bech32 地址串不是链上已经有这笔输出。校验过不是见证程序已经在链上。编出版本和程序不是已经付过款。纠错改成合法串不是已经是用户要的那串。BIP-173 不是 BIP-350，也不是 BIP-141，也不是 BIP-13。第一版必须写清地址是编码，不是账本对象。不要抄字符表。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-address-vs-utxo.md`](../../tracks/implementation/worked-example-address-vs-utxo.md)。这和 txid≠wtxid（不变量 152）、钥匙路径（不变量 153）、P2SH 哈希（不变量 170）不是同一句。
 171. 若用账户序号 / 对照 EIP-2681：必须点名问的是当前序号、上限灯，还是下一笔还能不能发（不变量 175）。nonce 顶到规范上限不是已经还能加一。交易 nonce 达到或超过上限不是已经合法。CREATE / CREATE2 碰到上限不是已经创建。客户端已经用窄整数存 nonce 不是共识已经写了这道上限。EIP-2681 不是 EIP-155。第一版必须写死上限，并分开交易非法和创建失败。不要抄上限取值。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-max-nonce-vs-next.md`](../../tracks/state-models/worked-example-max-nonce-vs-next.md)。这和跨链绑定（不变量 161）、发送者有代码（不变量 162）、信封（不变量 167）不是同一句。
+172. 若允许链上创建 / 对照 EIP-3860：必须点名问的是 initcode、运行时代码，还是已经占址（不变量 176）。initcode 超界不是已经是部署代码超界。创建交易超界不是已经是 CREATE 指令失败。按字收跳转分析费不是已经跑完 initcode。CREATE2 算地址的哈希费不是已经是本页这道计量。EIP-3860 不是 EIP-170，也不是 EIP-1014，也不是 EIP-2681。第一版必须分开 initcode 界和部署代码界。不要抄字节数。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-initcode-vs-runtime.md`](../../tracks/implementation/worked-example-initcode-vs-runtime.md)。这和序号上限（不变量 175）、进集合（不变量 169）、后来自毁（不变量 160）不是同一句。
 
 **以后再发明**
 
@@ -335,6 +336,7 @@
 - 把看见块头写成高度已经在头上，或把加大 version 写成已经是 9，或把写了高度写成已经能花。
 - 把看见 Bech32 地址写成链上已经有这笔输出，或把校验过写成程序已经上链，或把 173 写成 141 / 350 / 13。
 - 把 nonce 顶到上限写成已经还能加一，或把客户端窄整数写成共识已经写了上限，或把 2681 写成 155。
+- 把 initcode 超界写成已经是部署代码超界，或把按字分析费写成已经创建，或把 3860 写成 170 / 1014。
 
 ---
 
@@ -385,7 +387,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百七十一条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百七十二条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
