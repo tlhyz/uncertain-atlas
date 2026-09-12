@@ -274,3 +274,4 @@
 - [name-the-flush](name-the-flush.md)
 - [name-the-load-chunk](name-the-load-chunk.md)
 - [name-the-proposal-status](name-the-proposal-status.md)
+- [name-the-query-path](name-the-query-path.md)

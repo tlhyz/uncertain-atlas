@@ -391,6 +391,7 @@
 | C378 | 374 Flush要把客户端排队的消息冲到服务端≠已经送到 | 文案把 Flush 要把客户端排队的消息冲到服务端 / 叫了 Flush 写成已经送到或已经入队；或把定期 Flush 是为了让异步请求真发出去 / 定期在冲写成已经是四门或已经交差；或把立刻 Flush 是为了做成同步请求、回包回来才算这次同步 / 立刻叫了写成已经能往下走或已经 Commit；或把 Flush 写成不变量 309 / 307 / 310 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C379 | 375 LoadSnapshotChunk用来从邻居拉快照块≠已经齐 | 文案把 LoadSnapshotChunk 用来从邻居拉快照块 / 在拉写成已经齐或已经有了全部快照；或把请求用 height / format / chunk（从 0 起）认这块 / 填了三列写成已经是同一份或已经装完；或把回包块含元数据不能超过 16 MB / 有上限写成已经是快照报文 4 MB 或已经装完；或把 LoadSnapshotChunk 写成不变量 322 / 368 / 321 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C380 | 376 UNKNOWN一律是错、引擎当应用坏了会崩≠已经是四门已经结算 | 文案把 UNKNOWN 一律是错、引擎当应用坏了会崩 / 回了 UNKNOWN 写成已经是四门已经结算或已经交差；或把 ACCEPT 表示应用认为提案合法、共识会发 Prevote / 回了 ACCEPT 写成已经交差或已经必须 Accept；或把 REJECT 表示应用认为提案非法、共识会发 Prevote nil / 回了 REJECT 写成已经能稍后改裁决或已经没进块；或把 ProposalStatus 写成不变量 33 / 347 / 354 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C381 | 377 data按URI查询分量解释、可以和path一起或代替path用≠已经是Query高度 | 文案把 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 / 填了 data 写成已经是 Query 高度或已经新鲜；或把 path 按 URI 路径解释、/store 必须按键查 / 写了 /store 写成已经是引擎在用或已经是过滤；或把规范建议允许 /accounts / /votes 这类查询 / 写了类型路径写成已经是正常运转必须有或已经复制到各节点；或把 Query 路径写成不变量 371 / 326 / 329 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

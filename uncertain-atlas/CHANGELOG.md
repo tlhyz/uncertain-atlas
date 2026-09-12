@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 378）
+
+- CometBFT Query 路径工作实例（官方 ABCI++ Methods Query Request，实现 / Query 路径，不另写 19 节）：看见 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度。看见 path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用。看见规范建议允许 /accounts / /votes 这类查询不是已经是正常运转必须有。Query 路径不是不变量 371，也不是不变量 326，也不是不变量 329。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 377；语料 C381；模式 name-the-query-path；反模式 querypath-sold-as-store；L10.3 第 373 条。填 L4.4 / CometBFT 档案 Query 路径 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Query 请求、怎样填 data / path、怎样做按键查询。不编博物馆页。不另写 19 节。不与 371 / 326 / 329 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。Query 高度、邻居过滤、本地查询标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 377）
 
 - CometBFT ProposalStatus 工作实例（官方 ABCI++ Methods Data Types ProposalStatus，实现 / ProposalStatus，不另写 19 节）：看见 UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算。看见 ACCEPT 表示应用认为提案合法、共识会发 Prevote 不是已经交差。看见 REJECT 表示应用认为提案非法、共识会发 Prevote nil 不是已经能稍后改裁决。ProposalStatus 不是不变量 33，也不是不变量 347，也不是不变量 354。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

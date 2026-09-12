@@ -3856,6 +3856,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1817 | 高 | 看见 REJECT 表示应用认为提案非法、共识会发 Prevote nil / 看见回了 REJECT 会被写成已经能稍后改裁决，或当成已经没进块 | 官方：REJECT signals that the application finds the proposal invalid. The consensus algorithm rejects the proposal and will issue a Prevote for nil instead |
 | A1818 | 中 | 怎样写 ProposalStatus / 怎样挑枚举 / 怎样发 Prevote 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1819 | 记录 | 会与 33 / 347 / 354 糊成「看见回了 ProposalStatus 就已经是四门已经结算」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProposalStatus / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / 必须 Accept / 同步裁决标成另一对象 |
+| A1820 | 高 | 看见 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 / 看见填了 data 会被写成已经是 Query 高度，或当成已经新鲜 | 工作实例：abci++_methods Query Request 官方写 data analogously to a URI query component. Can be used with or in lieu of path |
+| A1821 | 高 | 看见 path 按 URI 路径解释、/store 必须按键查 / 看见写了 /store 会被写成已经是引擎在用，或当成已经是过滤 | 官方：Applications MUST interpret /store or any path starting with /store/ as a query by key on the underlying store |
+| A1822 | 高 | 看见规范建议允许 /accounts / /votes 这类查询 / 看见写了类型路径 会被写成已经是正常运转必须有，或当成已经复制到各节点 | 官方：Applications SHOULD allow queries over specific types like /accounts/... or /votes/... |
+| A1823 | 中 | 怎样写 Query 请求 / 怎样填 data / path / 怎样做按键查询会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1824 | 记录 | 会与 371 / 326 / 329 糊成「看见能带 data / path 就已经是 Query 高度」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 路径 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Query 高度 / 邻居过滤 / 本地查询标成另一对象 |
 
 
 
