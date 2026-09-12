@@ -318,6 +318,7 @@
 | 309 | QueryState 被写成已经是 ExecuteTxState | 协议 + 文案 | 看见 Query 连接 / 上次 Commit / 启动对齐 / QueryState 当成已经是工作状态或已经跟上正在跑的块或已经是快照重放 | 不变量 314；语料 C318 |
 | 310 | MaxGas 被写成已经在执行 | 协议 + 文案 | 看见 MaxGas / GasUsed / 已提交块 / 气 当成已经在执行或已经算进共识或已经按气验过 | 不变量 315；语料 C319 |
 | 311 | ExecTxResult 被写成已经交差 | 协议 + 文案 | 看见结果列表 / Code 非零 / Code Data / Events 当成已经同一顺序或已经没进块或已经印进本头 | 不变量 316；语料 C320 |
+| 312 | CheckTx 的 Data 被写成已经被引擎用了 | 协议 + 文案 | 看见 CheckTx 的 Data / 各节点 Data 不一样 / Priority / CheckTxResponse 当成已经被引擎用了或已经分叉或已经是共识顺序 | 不变量 317；语料 C321 |
 
 ## 不自动覆盖
 

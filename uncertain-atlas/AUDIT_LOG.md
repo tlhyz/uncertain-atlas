@@ -3516,6 +3516,16 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1517 | 高 | 看见 Code / Data / 看见 Events 会被写成已经印进本头 LastResultsHash，或当成已经是共识字段 | 官方：Code 和 Data 哈希进下一高度；Events 只供查询；Info / Log 忽略 |
 | A1518 | 中 | 怎样编回执 / 怎样建索引 / 怎样算 LastResultsHash 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1519 | 记录 | 会与 33 / 315 / 147 糊成「看见 Finalize 回了就已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。四门 / 气 / 本头 AppHash 标成另一对象 |
+### 2026-09-12 · 看见 CheckTx 的 Data 不是已经被引擎用了
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A1520 | 高 | 看见 CheckTxResponse.Data / 看见回了结果字节 会被写成已经被 CometBFT 用了，或当成已经是 ExecTxResult.Data | 工作实例：app requirements 官方写 CometBFT 忽略 CheckTxResponse 里的 Data |
+| A1521 | 高 | 看见 Data 不确定 / 看见各节点 Data 不一样 会被写成已经分叉，或当成已经和 Finalize 同一把尺子 | 官方：不必确定；各节点 CheckTxState 可以不一样 |
+| A1522 | 高 | 看见 Priority / 看见排进提案优先 会被写成已经是共识顺序，或当成已经进了块 | 官方：Priority 只是内存池里显式优先，好进一块提案 |
+| A1523 | 中 | 怎样实现 Priority / 怎样给内存池排序 / 怎样编 Data 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1524 | 记录 | 会与 316 / 312 / 301 糊成「看见 CheckTx 回了就已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTxResponse / 实现表 / 内存池表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。ExecTxResult / CheckTxState / 内存池交接标成另一对象 |
+
 
 
 

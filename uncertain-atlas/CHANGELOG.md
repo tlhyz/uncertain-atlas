@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 318）
+
+- CometBFT CheckTxResponse 工作实例（官方 Requirements for the Application，实现 / CheckTxResponse，不另写 19 节）：看见 CheckTx 的 Data 不是已经被引擎用了。看见各节点 Data 不一样不是已经分叉。看见 Priority 不是已经是共识顺序。CheckTxResponse 不是不变量 316，也不是不变量 312，也不是不变量 301。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 317；语料 C321；模式 name-the-checktxresponse；反模式 checktxresponse-sold-as-exec；L10.3 第 313 条。填 L4.4 / CometBFT 档案 CheckTxResponse / 实现表 / 内存池表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样实现 Priority、怎样给内存池排序、怎样编 Data。不编博物馆页。不另写 19 节。不与 316 / 312 / 301 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。ExecTxResult / CheckTxState / 内存池交接标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 317）
 
 - CometBFT ExecTxResult 工作实例（官方 Requirements for the Application，实现 / ExecTxResult，不另写 19 节）：看见结果列表不是已经同一顺序。看见 Code 非零不是已经没进块。看见 Code / Data 不是已经印进本头。ExecTxResult 不是不变量 33，也不是不变量 315，也不是不变量 147。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
