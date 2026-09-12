@@ -26,6 +26,7 @@
 - [`worked-example-snapshot-restore-vs-offer.md`](worked-example-snapshot-restore-vs-offer.md) — Offer 收下 ≠ 已经装完；一块 chunk 收下 ≠ 已经齐；拉失败换一份 ≠ 已经能接着装（不变量 321）
 - [`worked-example-snapshot-discover-vs-offer.md`](worked-example-snapshot-discover-vs-offer.md) — ListSnapshots 回了 ≠ 已经有了全部快照；挑了最高 ≠ 已经收下；Offer 被拒 ≠ 已经停（不变量 322）
 - [`worked-example-snapshot-switch-vs-history.md`](worked-example-snapshot-switch-vs-history.md) — 装完 ≠ 已经有了 ChainID；AppHash 对上 ≠ 已经版本也对上；切进共识 ≠ 已经有完整历史（不变量 323）
+- [`worked-example-snapshot-take-vs-commit.md`](worked-example-snapshot-take-vs-commit.md) — 拍了这个高度 ≠ 已经交差之后拍的；没停链 ≠ 已经一致；只留最近两份 ≠ 已经有了全部历史快照（不变量 324）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

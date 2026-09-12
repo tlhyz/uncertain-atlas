@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 325）
+
+- CometBFT Taking Snapshots 工作实例（官方 Requirements for the Application Taking Snapshots，实现 / Taking Snapshots，不另写 19 节）：看见拍了这个高度不是已经交差之后拍的。看见没停链不是已经一致。看见只留最近两份不是已经有了全部历史快照。Taking Snapshots 不是不变量 38，也不是不变量 321，也不是不变量 322，也不是不变量 323。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 324；语料 C328；模式 name-the-snapshot-take；反模式 snapshottake-sold-as-committed；L10.3 第 320 条。填 L4.4 / CometBFT 档案 Taking Snapshots / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样用 RocksDB / MVCC 拍、怎样切块、把最近两份或 10 MB 当产品常数。不编博物馆页。不另写 19 节。不与 38 / 321 / 322 / 323 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。轻验 AppHash / 装回 / 发现 / 切进共识标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 324）
 
 - CometBFT Transition to Consensus 工作实例（官方 Requirements for the Application Transition to Consensus，实现 / Transition to Consensus，不另写 19 节）：看见快照装完不是已经有了 ChainID。看见 Info 的 AppHash 对上不是已经版本也对上。看见切进共识不是已经有从创世的完整历史。Transition to Consensus 不是不变量 38，也不是不变量 321，也不是不变量 322，也不是不变量 147。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

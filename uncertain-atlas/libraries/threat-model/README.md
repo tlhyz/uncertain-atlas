@@ -325,6 +325,7 @@
 | 316 | Snapshot Restoration 被写成已经装完 | 协议 + 文案 | 看见 OfferSnapshot 收下 / 一块 chunk 收下 / 拉失败换一份 / Snapshot Restoration 当成已经装完或已经齐或已经能接着装 | 不变量 321；语料 C325 |
 | 317 | Snapshot Discovery 被写成已经齐 | 协议 + 文案 | 看见 ListSnapshots 回了 / 挑了最高 / Offer 被拒 / Snapshot Discovery 当成已经有了全部快照或已经收下或已经停 | 不变量 322；语料 C326 |
 | 318 | Transition to Consensus 被写成已经是全节点 | 协议 + 文案 | 看见快照装完 / Info 的 AppHash 对上 / 切进共识 / Transition to Consensus 当成已经有了 ChainID 或已经版本也对上或已经有完整历史 | 不变量 323；语料 C327 |
+| 319 | Taking Snapshots 被写成已经交差之后拍 | 协议 + 文案 | 看见拍了这个高度 / 没停链 / 只留最近两份 / Taking Snapshots 当成已经交差之后拍的或已经一致或已经有了全部历史快照 | 不变量 324；语料 C328 |
 
 ## 不自动覆盖
 
