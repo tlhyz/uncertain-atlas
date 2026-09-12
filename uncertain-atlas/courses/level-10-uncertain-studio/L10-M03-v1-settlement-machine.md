@@ -146,7 +146,8 @@
 115. 若有状态预编译允许 `DELEGATECALL` / `CALLCODE`：必须写清授权看的是 EVM 语义调用者还是原始调用者，或入口直接拒绝委托（不变量 119）。正确兑现委托语义不是预编译信任模型已经跟着改过。库换了正确语义不是旧假设已经更新。热修 / 硬升级不是谓词本来就齐。第一版可以不做有状态预编译 / 委托调用进特权入口。不要写怎样冒充。馆藏：[`../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)。这和预编译半写入（113）、嵌套外层看不见（114）、授权代发（不变量 81）不是同一句。  
 116. 若提供钱包格式迁移：失败清理必须只覆盖这次失败的对象（不变量 120）。迁移失败不是目录里其它钱包已经安全。现有用户不受影响不是迁移路径已经安全。下架二进制不是已安装副本已经修。第一版可以不提供迁移器。不要写怎样踩失败。馆藏：[`../../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md`](../../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md)。这和加载泄 TXID（不变量 111）、付款 URI（不变量 55）、隐私广播（不变量 112）不是同一句。  
 117. 若用对等节点送来的时限做 `Instant + Duration`：存进去与以后加余量必须同一套检查加法（不变量 121）。插入路径做了检查加法不是心跳加上余量已经安全。解析当时没崩不是心跳不会崩。成了协议对等节点不是已经认证。第一版可以不抄该 Gossipsub。不要写怎样拼控制消息。馆藏：[`../../tracks/failure-museum/cve-2026-34219.md`](../../tracks/failure-museum/cve-2026-34219.md)。这和拼块断言（不变量 37）、验签崩溃（不变量 43）、估值 0（不变量 90）不是同一句。  
-118. 若做乐观并行执行：必须先有共识序列 L，提交写集必须等于单线程按 L 的结果（不变量 122）。STM 跑完不是已经最终。未事先声明写集不是已经不需要 L。不要求 opacity 不是中间态可以给人看。第一版可以不上 STM。不要抄加速比。精读：[`../../tracks/parallelism/worked-example-block-stm.md`](../../tracks/parallelism/worked-example-block-stm.md)。这和确定性口号（1）、池预检（不变量 33）、头即结算不是同一句。
+118. 若做乐观并行执行：必须先有共识序列 L，提交写集必须等于单线程按 L 的结果（不变量 122）。STM 跑完不是已经最终。未事先声明写集不是已经不需要 L。不要求 opacity 不是中间态可以给人看。第一版可以不上 STM。不要抄加速比。精读：[`../../tracks/parallelism/worked-example-block-stm.md`](../../tracks/parallelism/worked-example-block-stm.md)。这和确定性口号（1）、池预检（不变量 33）、头即结算不是同一句。  
+119. 若做递归 / 简短验证：必须点名证明覆盖哪一本账（不变量 123）。区块链 SNARK 验绿不是最新 staged 已经被证明。进块 Apply 不是已经进入 SNARKed ledger。Pickles 不是 Kimchi。验 π 不是已经有账户与路径。第一版可以不上递归 L1。不要抄 22kB。精读：[`../../tracks/light-clients/worked-example-snarked-vs-staged.md`](../../tracks/light-clients/worked-example-snarked-vs-staged.md)。这和验证明≠供给（不变量 13）、两层 accepted（不变量 28）、短时 DA（不变量 23）、快照≠创世（不变量 38）不是同一句。
 
 **以后再发明**
 
@@ -228,7 +229,8 @@
 - 把正确兑现的 `DELEGATECALL` 语义写成预编译信任模型已经跟着改过，或把库换了正确语义写成旧假设已经更新。  
 - 把迁移失败写成目录里其它钱包已经安全，或把现有用户不受影响写成迁移路径已经安全。  
 - 把插入路径的检查加法写成心跳加余量已经安全，或把解析当时没崩写成心跳不会崩。  
-- 把 STM 跑完写成已经最终，或把未事先声明写集写成已经不需要 L。
+- 把 STM 跑完写成已经最终，或把未事先声明写集写成已经不需要 L。  
+- 把区块链 SNARK 验绿写成最新 staged 已经被证明，或把 Pickles 写成 Kimchi，或把 22kB 写成账户库。
 
 ---
 
@@ -279,7 +281,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百一十八条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百一十九条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

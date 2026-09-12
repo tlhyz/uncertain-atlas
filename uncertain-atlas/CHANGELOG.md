@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 124）
+
+- Mina 工作实例：区块链 SNARK 验绿不是最新 staged 已经被证明。进块 Apply 不是已经进入 SNARKed ledger。Pickles 不是 Kimchi。验 π 不是已经有账户与路径。出处官方 Glossary / What's in a Block / Scan State + Foundation 22kB 技术文 + o1Labs Kimchi + zkApps FAQ。
+- 不变量 123；语料 C127；模式 name-the-proved-ledger；反模式 snarked-sold-as-staged；L10.3 第 119 条。填 L8.3 / L9.6 / Mina 档案 §5 §7 §10 §16 §17。
+- 不抄 22kB / 实测字节 / `k` / 槽常数 / Kimchi 博客加速句。Mina §15 仍无官方主网七问，不编事故。
+
 ## 2026-09-12（续 123）
 
 - Block-STM 工作实例：提交结果必须等于既定共识序 L 的串行执行。STM 跑完不是已经最终。未事先声明写集不是已经不需要 L。不要求 opacity 不是中间态可以给人看。出处 Aptos Execution 页 + arXiv:2203.06871。

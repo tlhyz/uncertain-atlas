@@ -395,7 +395,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M8.3 Mina · 研究级
 - 递归证明、简洁链
 - 「从创世到现在合法」如何被一个小证明表达
-- 覆盖：课文 L8.3。小证明 ≠ 数据还在；「22kB」是证明尺寸不是整条链
+- 覆盖：课文 L8.3。小证明 ≠ 数据还在；「22kB」是证明尺寸不是整条链。区块链 SNARK 验绿 ≠ 最新 staged 已被证明；Pickles ≠ Kimchi：[`../tracks/light-clients/worked-example-snarked-vs-staged.md`](../tracks/light-clients/worked-example-snarked-vs-staged.md)（不变量 123）
 
 ### M8.4 ZK 课程轨道 · 研究级
 - 电路、witness、多项式、PCS
@@ -436,7 +436,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
-- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`；Altair 抽样 `tracks/light-clients/worked-example-sync-committee.md`。验过头 ≠ 能交证据：Alderfly（不变量 66；朝前 lunatic 不得只等同高再出一块）
+- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`；Altair 抽样 `tracks/light-clients/worked-example-sync-committee.md`；Mina SNARKed ≠ staged `tracks/light-clients/worked-example-snarked-vs-staged.md`（不变量 123）。验过头 ≠ 能交证据：Alderfly（不变量 66；朝前 lunatic 不得只等同高再出一块）
 
 ### M9.7 协议测试 · 必学
 - unit / property / fuzz / differential / chaos / mutation
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–122）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–123）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C126；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C127；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

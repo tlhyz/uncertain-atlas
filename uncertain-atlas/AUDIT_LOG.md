@@ -1505,3 +1505,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A549 | 记录 | Aptos §15 仍无官方主网七问 | 本批不编事故。只收 Execution 页 + 论文句 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 · 区块链 SNARK 验绿不是最新 staged 已被证明
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A550 | 高 | 递归证明验绿会被写成最新余额已经在证明里 | 工作实例：官方三种账本；区块链 SNARK 点名 SNARKed；staged 不被该证明保证 |
+| A551 | 高 | Pickles 会被写成 Kimchi | 官方：Pickles 是递归层；Kimchi 是证明系统；可以只用 Kimchi |
+| A552 | 中 | 「protocol state proof 证明整条历史」会被写成 staged 已覆盖 | 同一页同时写 staged 是尚未 SNARK 的待定账户库 |
+| A553 | 中 | 22kB / 实测字节 / `k` 会被当成不确定常量 | 不抄。营销句不是账户库 |
+| A554 | 记录 | Mina §15 仍无官方主网七问 | 本批不编事故。只收官方文档句 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

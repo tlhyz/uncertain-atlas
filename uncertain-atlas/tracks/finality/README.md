@@ -21,7 +21,7 @@
 | Polkadot | 中继 GRANDPA 最终（平行块先可用） | collator RPC = 共享安全最终 | 须读中继 | L7.3 / 档案 |
 | Kaspa | DAG 上蓝序变深 | 进了一个块 = 最终 | 视图/传播分裂 | L3.8 |
 | Zcash / Monero | 最重链家族 | 屏蔽/环 = 另一种最终 | 两边可长 | L8 |
-| Mina | 最重链 + 递归证明 | 22kB = 已结算状态 | 两边可长；DA 仍在 | L8.3 |
+| Mina | 最重链 + 递归证明（点名 SNARKed） | 22kB = 已结算状态；验 π = 最新 staged | 两边可长；DA 仍在；staged 另算 | L8.3 / 精读 |
 | Nervos | Nakamoto 变体（Consensus RFC） | 占用不等式 = 最终 | 两边可长 | L2.6 / 档案 |
 | Fuel | 取决于排序从哪来 | 并行执行完 = 最终 | 视部署 | 档案 |
 | NEAR | `last_final_block`（BFT 谓词）≠ `last_ds_final_block` | 出块 / Doomslug = commit | 视 approvals 与缺 chunk | 思想级档案 |

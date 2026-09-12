@@ -4,7 +4,7 @@ track: course
 level: 8
 title: 简短历史与数据可用性仍在
 status: first-edition
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-12
 depends_on: [L08-M01, L07-M02, L01-M03]
 feeds_uncertain: [succinct-verification, da-still-required]
 ---
@@ -43,6 +43,8 @@ Merkle / 承诺（L1.3）；DA（L7.2）；Mina 档案。
 - 不是「没有历史」。
 - 不是「没有 DA」。新交易见证必须在证明生成时可用；用户余额见证必须能被请求。
 - 不是「状态也是 22kB」。Mina 营销句常把**证明大小**说成「整条链」。**事实**：那是证明对象的大小量级，不是账户数据库。
+- 不是「验 π = 最新余额」。Mina 官方把账本分成 SNARKed / staged / staking 三本。区块链 SNARK 点名的是 SNARKed；staged 已 Apply，**不被该证明保证**。精读：[`../../tracks/light-clients/worked-example-snarked-vs-staged.md`](../../tracks/light-clients/worked-example-snarked-vs-staged.md)（不变量 123）。
+- 不是「Pickles = Kimchi」。Pickles 是递归层；Kimchi 是它用来出证明的系统。可以只用 Kimchi。
 
 ## E. 最小案例
 
@@ -50,7 +52,7 @@ Merkle / 承诺（L1.3）；DA（L7.2）；Mina 档案。
 
 1. 比特币：下载并验证全部区块（或假定旧快照 + 之后全部）。
 2. 以太坊：执行状态转换或依赖他人快照（快照是信任/社会约定，不是协议证明）。
-3. Mina：验证递归证明；另需机制取得当前账户见证。
+3. Mina：验证递归证明；另需机制取得当前账户见证。验的是 SNARKed 尖，不是刚进块的 staged。账号还要路径。
 
 ## F. 真实项目
 
@@ -84,7 +86,7 @@ Mina（档案）。以太坊上的 ZK rollup 证明也是「执行简短化」�
 
 ## 精密检查
 
-见反模式 proof-size-equals-chain。
+见反模式 [proof-size-equals-chain](../../libraries/anti-patterns/proof-size-equals-chain.md)、[snarked-sold-as-staged](../../libraries/anti-patterns/snarked-sold-as-staged.md)。工作实例：[`../../tracks/light-clients/worked-example-snarked-vs-staged.md`](../../tracks/light-clients/worked-example-snarked-vs-staged.md)。
 
 | 层 | 本课钉在哪 |
 |---|---|
@@ -94,5 +96,5 @@ Mina（档案）。以太坊上的 ZK rollup 证明也是「执行简短化」�
 | 部署 | 证明者中心化、参数仪式 |
 | 经济 | 递归贵；22kB 是证明尺寸，不是账本盘 |
 
-**禁止假学习：** 「整条链只有 22kB。」「有证明所以不需要 DA。」  
-**边界：** 不讲 Pickles 电路。
+**禁止假学习：** 「整条链只有 22kB。」「有证明所以不需要 DA。」「验了 π 就是最新余额。」「Pickles 就是 Kimchi。」  
+**边界：** 不讲 Pickles 电路。不抄 22kB / 实测字节 / `k`。档案 §15 仍不编事故。

@@ -78,7 +78,7 @@ zk 支付：副本跑 `V`，不重跑 `w`。
 
 ## F. 真实项目
 
-Zcash Orchard / Halo 2（档案）。Mina 递归：电路还断言「上一枚章合法」。  
+Zcash Orchard / Halo 2（档案）。Mina 递归：电路还断言「上一枚章合法」。递归层是 Pickles，证明系统是 Kimchi，不是同一个对象（L8.3 / 不变量 123）。  
 Ethereum 上的 zk 有效性证明：同一六个词，结算缝不同（L7.4）。
 
 ---

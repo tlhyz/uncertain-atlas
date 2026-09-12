@@ -20,3 +20,4 @@
 - [single-chain-chunks](single-chain-chunks.md)
 - [stateful-hash-signature](stateful-hash-signature.md)
 - [optimistic-serial-equiv](optimistic-serial-equiv.md)
+- [name-the-proved-ledger](name-the-proved-ledger.md)

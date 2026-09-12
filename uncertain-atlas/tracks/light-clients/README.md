@@ -1,7 +1,7 @@
 # 横向地图：轻节点假设
 
 详见 L9.6。本表只防串词。  
-精读：[`worked-example.md`](worked-example.md)（阿比只看头就放货）；[`worked-example-bft-skip.md`](worked-example-bft-skip.md)（跳过中间块要重叠旧集合）；[`worked-example-sync-committee.md`](worked-example-sync-committee.md)（512 的 2/3 ≠ 全集的 2/3）；[`worked-example-blob-vs-das.md`](worked-example-blob-vs-das.md)（KZG blob ≠ PeerDAS 列抽样 ≠ Celestia 二维 DAS）。验过头 ≠ 能交证据：[Alderfly](../failure-museum/alderfly.md)（朝前 lunatic 不得只等同高再出一块）。
+精读：[`worked-example.md`](worked-example.md)（阿比只看头就放货）；[`worked-example-bft-skip.md`](worked-example-bft-skip.md)（跳过中间块要重叠旧集合）；[`worked-example-sync-committee.md`](worked-example-sync-committee.md)（512 的 2/3 ≠ 全集的 2/3）；[`worked-example-blob-vs-das.md`](worked-example-blob-vs-das.md)（KZG blob ≠ PeerDAS 列抽样 ≠ Celestia 二维 DAS）；[`worked-example-snarked-vs-staged.md`](worked-example-snarked-vs-staged.md)（区块链 SNARK 验绿 ≠ 最新 staged 已被证明；Pickles ≠ Kimchi）。验过头 ≠ 能交证据：[Alderfly](../failure-museum/alderfly.md)（朝前 lunatic 不得只等同高再出一块）。
 
 | 名称 | 少下 | 多信 | 常见假冒 |
 |---|---|---|---|
@@ -10,7 +10,7 @@
 | SPV | 体 | 多数工作量 | 「所以验证了脚本」 |
 | 状态证明 | 全状态 | 根的来源 | 根来自 RPC |
 | DAS | 全体 | 编码+抽样 | 「抽到了所以执行对」 |
-| 递归证明 | 历史重放 | 电路+证明系统 | 「22kB = 全状态」 |
+| 递归证明 | 历史重放 | 电路+证明系统 | 「22kB = 全状态」；验 π = 最新 staged |
 | RPC App | 一切 | 服务商 | 「ZK 轻客户端」 |
 | Nervos 概述中的 light | 非自己的 Cell | 所订全节点 | 「所以是 SPV」 |
 | NEAR 分片 RPC | 非本分片状态 | 该 RPC 是否真跟踪并重建了 chunk | 「有块头所以执行过」 |
