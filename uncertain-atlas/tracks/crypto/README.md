@@ -5,7 +5,7 @@
 三层编码对照：[`worked-example-tagged-hash.md`](worked-example-tagged-hash.md)（BIP-340 / EIP-712 / FIPS `ctx`）。  
 BFT 步类型：[`../consensus/worked-example-vote-signbytes.md`](../consensus/worked-example-vote-signbytes.md)。  
 FIPS 算法包装：[`../post-quantum/fips-context.md`](../post-quantum/fips-context.md)（空 `ctx` ≠ 已分角色）。  
-合并后的 DIFFICULTY ≠ 工作量：[`worked-example-prevrandao-vs-difficulty.md`](worked-example-prevrandao-vs-difficulty.md)（不变量 157）。JSON 里的 chainId ≠ 已经编进签名哈希：[`worked-example-chainid-vs-signed.md`](worked-example-chainid-vs-signed.md)（不变量 161）。看见 BLS12-381 预编译 ≠ 已经在验 BLS 签：[`worked-example-bls-precompile-vs-verify.md`](worked-example-bls-precompile-vs-verify.md)（不变量 199）。看见 P256 验签预编译 ≠ 已经在验 k1：[`worked-example-p256-vs-k1.md`](worked-example-p256-vs-k1.md)（不变量 204）。看见签过的自愿退出 ≠ 已经永远有效：[`../consensus/worked-example-exit-domain-vs-fork.md`](../consensus/worked-example-exit-domain-vs-fork.md)（不变量 213）。
+合并后的 DIFFICULTY ≠ 工作量：[`worked-example-prevrandao-vs-difficulty.md`](worked-example-prevrandao-vs-difficulty.md)（不变量 157）。JSON 里的 chainId ≠ 已经编进签名哈希：[`worked-example-chainid-vs-signed.md`](worked-example-chainid-vs-signed.md)（不变量 161）。看见 BLS12-381 预编译 ≠ 已经在验 BLS 签：[`worked-example-bls-precompile-vs-verify.md`](worked-example-bls-precompile-vs-verify.md)（不变量 199）。看见 P256 验签预编译 ≠ 已经在验 k1：[`worked-example-p256-vs-k1.md`](worked-example-p256-vs-k1.md)（不变量 204）。看见签过的自愿退出 ≠ 已经永远有效：[`../consensus/worked-example-exit-domain-vs-fork.md`](../consensus/worked-example-exit-domain-vs-fork.md)（不变量 213）。看见链号指令 ≠ 已经是签进哈希的链号：[`../implementation/worked-example-chainid-opcode-vs-signed.md`](../implementation/worked-example-chainid-opcode-vs-signed.md)（不变量 220）。
 
 | 组件 | 挡住 | 挡不住 | 后量子税 |
 |---|---|---|---|
