@@ -253,7 +253,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.5 ABCI：应用与共识分离 · 必学
 - 为什么这对「不确定」极有价值
 - 共识不知道余额，应用不知道投票
-- 覆盖：课文 L4.4；四门精读 `tracks/consensus/worked-example-prepare-process.md`（CheckTx ≠ Prepare ≠ Process ≠ Finalize；不变量 33）；扩展精读 `tracks/consensus/worked-example-vote-extension.md`（Verify 拒扩展 ≠ 块非法；不变量 34）。本头 AppHash ≠ 本高度交易已经交差；本块 DataHash 有这笔 ≠ 效果已经进本头：[`../tracks/consensus/worked-example-apphash-vs-this-block.md`](../tracks/consensus/worked-example-apphash-vs-this-block.md)（不变量 147）。扩展快路径不得跳过旧票字段：ASA-2024-011（不变量 57）。治理改启用高度必须先过转移谓词：ASA-2024-001（不变量 58）。提议者注入的扩展不是投票权：ASA-2024-006（不变量 68）。单笔 CheckTx 绿不是整包可提案：ASA-2024-002（不变量 69）。应用回的 post-commit 等待：`tracks/consensus/worked-example-next-block-delay.md`（非确定性；不变量 52）
+- 覆盖：课文 L4.4；四门精读 `tracks/consensus/worked-example-prepare-process.md`（CheckTx ≠ Prepare ≠ Process ≠ Finalize；不变量 33）；扩展精读 `tracks/consensus/worked-example-vote-extension.md`（Verify 拒扩展 ≠ 块非法；不变量 34）。本头 AppHash ≠ 本高度交易已经交差；本块 DataHash 有这笔 ≠ 效果已经进本头：[`../tracks/consensus/worked-example-apphash-vs-this-block.md`](../tracks/consensus/worked-example-apphash-vs-this-block.md)（不变量 147）。扩展快路径不得跳过旧票字段：ASA-2024-011（不变量 57）。治理改启用高度必须先过转移谓词：ASA-2024-001（不变量 58）。提议者注入的扩展不是投票权：ASA-2024-006（不变量 68）。单笔 CheckTx 绿不是整包可提案：ASA-2024-002（不变量 69）。应用回的 post-commit 等待：`tracks/consensus/worked-example-next-block-delay.md`（非确定性；不变量 52）。先装证据 ≠ 已经装满交易；两条收交易上限 ≠ 已经同一条；MaxBytes 写成 -1 ≠ 已经没有上限：[`../tracks/consensus/worked-example-evidence-vs-reap.md`](../tracks/consensus/worked-example-evidence-vs-reap.md)（不变量 299）
 
 ### M4.6 崩溃恢复 · 重要
 - WAL、超时、重启后如何不投矛盾票
@@ -418,7 +418,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.2 Mempool · 必学
 - 准入、替换、驱逐、垃圾、抢跑、加密内存池
-- 覆盖：课文 L9.2；筐精读；谁排序 `tracks/mempool/worked-example-who-orders.md`。ABCI 四门：`tracks/consensus/worked-example-prepare-process.md`。看不见 ≠ 非法：CVE-2024-52913。孤儿扫描必须可中断：CVE-2024-52914。拒了但不踢人仍能烧 CPU：CVE-2025-46598。单笔 CheckTx 绿 ≠ 整包可提案：ASA-2024-002。跳过库存通告 ≠ 已经拒进池；发了费率过滤器 ≠ 对等节点已经照做：[`../tracks/mempool/worked-example-feefilter-vs-rejected.md`](../tracks/mempool/worked-example-feefilter-vs-rejected.md)（不变量 245）。对账素描 ≠ 已经有那些交易：[`../tracks/network/worked-example-erlay-vs-have.md`](../tracks/network/worked-example-erlay-vs-have.md)（不变量 249）。内存池查询回了一串库存 ≠ 已经有那些交易：[`../tracks/mempool/worked-example-mempool-dump-vs-have.md`](../tracks/mempool/worked-example-mempool-dump-vs-have.md)（不变量 253）。拒收消息 ≠ 已经共识非法：[`../tracks/network/worked-example-reject-vs-consensus.md`](../tracks/network/worked-example-reject-vs-consensus.md)（不变量 254）。加密内存池：无规范级对象，先不过滤器
+- 覆盖：课文 L9.2；筐精读；谁排序 `tracks/mempool/worked-example-who-orders.md`。ABCI 四门：`tracks/consensus/worked-example-prepare-process.md`。看不见 ≠ 非法：CVE-2024-52913。孤儿扫描必须可中断：CVE-2024-52914。拒了但不踢人仍能烧 CPU：CVE-2025-46598。单笔 CheckTx 绿 ≠ 整包可提案：ASA-2024-002。跳过库存通告 ≠ 已经拒进池；发了费率过滤器 ≠ 对等节点已经照做：[`../tracks/mempool/worked-example-feefilter-vs-rejected.md`](../tracks/mempool/worked-example-feefilter-vs-rejected.md)（不变量 245）。对账素描 ≠ 已经有那些交易：[`../tracks/network/worked-example-erlay-vs-have.md`](../tracks/network/worked-example-erlay-vs-have.md)（不变量 249）。内存池查询回了一串库存 ≠ 已经有那些交易：[`../tracks/mempool/worked-example-mempool-dump-vs-have.md`](../tracks/mempool/worked-example-mempool-dump-vs-have.md)（不变量 253）。拒收消息 ≠ 已经共识非法：[`../tracks/network/worked-example-reject-vs-consensus.md`](../tracks/network/worked-example-reject-vs-consensus.md)（不变量 254）。先装证据 ≠ 已经装满交易；两条收交易上限 ≠ 已经同一条：[`../tracks/consensus/worked-example-evidence-vs-reap.md`](../tracks/consensus/worked-example-evidence-vs-reap.md)（不变量 299）。加密内存池：无规范级对象，先不过滤器
 
 ### M9.3 存储 · 必学
 - WAL、原子提交、断电、剪枝、状态同步

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 300）
+
+- CometBFT 造提案工作实例（官方 Creating a proposal，共识协议，不另写 19 节）：看见先装证据不是已经装满交易。看见两条收交易上限不是已经同一条。看见 MaxBytes 写成 -1 不是已经没有上限。造提案不是不变量 33，也不是不变量 63，也不是不变量 46。出处 github.com/cometbft/cometbft spec/consensus/creating-proposal.md。
+- 不变量 299；语料 C303；模式 name-the-reap；反模式 evidence-sold-as-full-block；L10.3 第 295 条。填 L4.4 / L9.2 / CometBFT 档案第 4 步 / 共识表 / 内存池表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄扣减公式、整块体积取值、protobuf 开销数字。不写怎样从池里收割、怎样算上次 commit 体积、怎样拼证据列表。不编博物馆页。不另写 19 节。不与 33 / 63 / 46 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。四门 / 默认 MaxBytes / 证据窗标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 299）
 
 - CometBFT WAL 工作实例（官方共识模块预写日志，实现 / 软件，不另写 19 节）：看见写下每条消息不是已经 fsync。看见回放时又要签不是已经双签。看见 LastSignBytes 对上不是已经换了高度。WAL 不是不变量 4，也不是不变量 5，也不是不变量 33。出处 github.com/cometbft/cometbft spec/consensus/wal.md。

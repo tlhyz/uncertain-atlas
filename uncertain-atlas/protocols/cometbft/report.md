@@ -48,7 +48,7 @@ Commit  →  ABCI FinalizeBlock / Commit
 
 1. 用户对**应用**的交易字节签名（不是对 CometBFT 投票消息）。  
 2. 经 RPC 进某节点 mempool；`CheckTx` 是应用说「现在看起来行」，仍可能被 Prepare 拿掉，或在 Finalize 时失败。  
-3. 本轮 proposer 从池取 raw 列表；`PrepareProposal` 可改序/增/删（有 `validValue` 则跳过）。见 [`../../tracks/consensus/worked-example-prepare-process.md`](../../tracks/consensus/worked-example-prepare-process.md)。  
+3. 本轮 proposer 从池取 raw 列表；`PrepareProposal` 可改序/增/删（有 `validValue` 则跳过）。见 [`../../tracks/consensus/worked-example-prepare-process.md`](../../tracks/consensus/worked-example-prepare-process.md)。未处理的证据优先于内存池交易；两条收交易上限不是已经同一条：见 [`../../tracks/consensus/worked-example-evidence-vs-reap.md`](../../tracks/consensus/worked-example-evidence-vs-reap.md)（不变量 299）。  
 4. 验证者 `ProcessProposal` 验收（不能改）。REJECT 走 prevote `nil`。  
 5. 对 proposal 的块哈希 prevote / precommit。  
 6. +2/3 precommit 后 commit。  

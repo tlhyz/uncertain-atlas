@@ -196,3 +196,4 @@
 - [name-the-encrypted-key](name-the-encrypted-key.md)
 - [name-the-p2sh-address](name-the-p2sh-address.md)
 - [name-the-wal](name-the-wal.md)
+- [name-the-reap](name-the-reap.md)
