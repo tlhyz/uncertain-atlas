@@ -7,5 +7,6 @@
 地址表递增 ID：[`../failure-museum/cve-2024-52919.md`](../failure-museum/cve-2024-52919.md)（限速 ≠ 宽度）。  
 无界封禁表：[`../failure-museum/cve-2020-14198.md`](../failure-museum/cve-2020-14198.md)（自动 ban ≠ 有界）。  
 局域网打洞辅助 ≠ P2P：[`../failure-museum/cve-2015-20111.md`](../failure-museum/cve-2015-20111.md)（默认关 UPnP 是结构风险决策）。  
+出站代理 ≠ 对等节点：[`../failure-museum/cve-2017-18350.md`](../failure-museum/cve-2017-18350.md)（须先配置；明文网上的任意代理本身就可被截获）。  
 宣布新块 ≠ 已收到：[`../failure-museum/cve-2024-52922.md`](../failure-museum/cve-2024-52922.md)。  
 拼块 ≠ 共识验块：[`worked-example-compact-block.md`](worked-example-compact-block.md)（52922 / 35202 / 52921）。

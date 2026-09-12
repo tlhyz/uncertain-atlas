@@ -58,3 +58,4 @@
 - [mempool-cap-sold-as-width](mempool-cap-sold-as-width.md)
 - [app-delay-sold-as-slot](app-delay-sold-as-slot.md)
 - [upnp-sold-as-must](upnp-sold-as-must.md)
+- [proxy-sold-as-peer](proxy-sold-as-peer.md)
