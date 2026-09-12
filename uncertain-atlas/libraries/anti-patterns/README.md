@@ -146,3 +146,4 @@
 - [unsafe-sold-as-derived](unsafe-sold-as-derived.md)
 - [dacert-sold-as-posted](dacert-sold-as-posted.md)
 - [predicate-sold-as-script](predicate-sold-as-script.md)
+- [policy-sold-as-consensus](policy-sold-as-consensus.md)

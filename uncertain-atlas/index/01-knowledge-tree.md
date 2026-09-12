@@ -198,7 +198,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.3 费用市场 · 重要
 - 有限区块空间如何定价
 - 不是「手续费越高越高级」
-- 覆盖：课文 L3.2
+- 覆盖：课文 L3.2。策略拒绝 ≠ 共识非法；费率高 ≠ 更正确；策略不作用于块内交易：[`../tracks/mempool/worked-example-policy-vs-consensus.md`](../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）
 
 ### M3.4 Script / SegWit / Taproot / Schnorr · 进阶
 - 保守升级如何避免把旧节点踢出共识
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–143）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–144）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C147；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C148；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

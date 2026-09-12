@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 145）
+
+- Bitcoin 策略工作实例（官方节点文档，不另写 19 节）：策略拒绝不是共识非法。策略通过不是已经进块。费率高不是更正确。策略不作用于块内交易。出处 bitcoin/bitcoin `doc/policy/README.md`；terminology 页只钉 base fee。
+- 不变量 144；语料 C148；模式 name-the-relay-door；反模式 policy-sold-as-consensus；L10.3 第 140 条。填 L3.2 / L9.2 / Bitcoin 档案 / 内存池表 / 停链面地图。
+- 不抄默认费率 / 灰尘 / 祖先条数 / 簇上限。不写怎样把非标准塞进块或怎样 RBF 钉死。不编博物馆页。不另写 19 节。不与 44 / 25 / 89 / 143 糊成一句。RBF 细则 / package / cluster 线性化标成另一对象。
+
 ## 2026-09-12（续 144）
 
 - Fuel 工作实例（规范 + 官方书，思想级档案已有，不另写 19 节）：谓词通过不是脚本已经跑完。只读访问集重叠不是写冲突。写集相交不是可以并行。并行验证不是已经不需要顺序副作用。出处 docs.fuel.network Transaction Validity；官方书只钉合约输入 ≠ Bitcoin 脚本无存储。

@@ -35,7 +35,7 @@ standardness / mempool 策略是保安：最小费、脚本模板、数据包大
 **policy：** 本地转发与 mempool 准入。各节点可不同。  
 **consensus rule：** 全节点验证块时必须一致，否则分裂。
 
-**事实：** 一笔非标准但共识合法的交易，仍可能被矿工直接打进块。轻钱包等不到转发，不代表永远无效。
+**事实：** 一笔非标准但共识合法的交易，仍可能被矿工直接打进块。轻钱包等不到转发，不代表永远无效。Bitcoin Core 官方：Policy 是共识之外、对未确认交易进 mempool 之前的本地可配置规则；**不作用于块内交易**。[精读](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。
 
 ---
 
@@ -93,5 +93,5 @@ Ethereum 的 mempool 替换更日常，但「策略 ≠ 共识」同一条。
 | 部署 | 每个节点一份本地 mempool |
 | 经济 | 费率买的是空间，不是正确性 |
 
-**禁止假学习：** 「标准性 = 共识规则。」「费率高所以交易更正确。」
-**边界：** mempool 政策通论在 L9.2。
+**禁止假学习：** 「标准性 = 共识规则。」「费率高所以交易更正确。」「邻居不转发 = 链拒绝。」「进了 mempool = 已经进块。」
+**边界：** mempool 政策通论在 L9.2。策略 ≠ 共识精读：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。不抄默认费率。不写怎样绕策略。

@@ -168,6 +168,7 @@
 137. 若当乐观租户或对照同名 RPC 三档：必须点名问的是 `unsafe` / `latest`、能从当前 canonical L1 推导的 `safe`，还是能从 L1 已 finalized 部分推导的 `finalized`（不变量 141）。排序者出块不是已经从 L1 推导。OP `safe` 不是已经 `finalized`，也不是 Gasper justified。L2 `finalized` 不是桥已经兑付。Standard Bridge 等待不是 L2 交易还没 finalized。第一版不要当别人的乐观租户。不要抄秒数或桥等待天数。不要另写 19 节。精读：[`../../tracks/finality/worked-example-unsafe-vs-derived.md`](../../tracks/finality/worked-example-unsafe-vs-derived.md)。这和提交≠兑付（不变量 9）、Gasper 三等（不变量 127）、Starknet 四档（不变量 138）、PoH 三档（不变量 133）不是同一句。
 138. 若对照委员会 DA：必须点名问的是父链全文、DACert，还是凑不齐签后的回退贴文（不变量 142）。DACert 不是全文已经贴上父链。AnyTrust 不是已经 Rollup DA。Inbox 收下证书不是子链已经读到数据。证书过期窗不是已经永存。第一版不要靠外部 DA 委员会。不要抄人数或过期天数。不要另写 19 节。精读：[`../../tracks/light-clients/worked-example-dacert-vs-posted.md`](../../tracks/light-clients/worked-example-dacert-vs-posted.md)。这和提交≠兑付（不变量 9）、短时 blob（不变量 23）、NMT/DAS（不变量 124）、OP 推导头（不变量 141）不是同一句。
 139. 若对照 UTXO 访问集 / 声明调度：必须点名问的是谓词、脚本、只读重叠、写集相交还是顺序副作用（不变量 143）。谓词通过不是脚本已经跑完。只读重叠不是写冲突。写集相交不是可以并行。并行验证不是已经不需要顺序 L。`scriptLength == 0` 不是已经没有合约。第一版不要把短槽 + 声明调度当默认。不要抄上限或官网 TPS。不要另写 19 节。精读：[`../../tracks/parallelism/worked-example-utxo-access-list.md`](../../tracks/parallelism/worked-example-utxo-access-list.md)。这和 STM 跑完≠最终（不变量 122）、所有权快路径（不变量 128）、顺序≠状态（不变量 136）、认证批次（不变量 132）不是同一句。
+140. 若提供未确认转发 / 费用市场：必须点名问的是策略、共识、费率还是本节点筐（不变量 144）。策略拒绝不是共识非法。策略通过不是已经进块。费率高不是更正确。策略不作用于块内交易。第一版必须把本地错 / 池拒绝 / 共识非法三套文案分开。不要抄默认费率。不要另写 19 节。精读：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)。这和入池拒绝代价（不变量 44）、IBD 跳脚本（不变量 25）、洪水≠停（不变量 89）、谓词≠脚本（不变量 143）不是同一句。
 
 **以后再发明**
 
@@ -271,6 +272,7 @@
 - 把 OP `unsafe` / RPC `latest` 写成已经从 L1 推导，或把 OP `safe` 写成已经 `finalized` / 已经 Gasper justified，或把桥等待写成 L2 交易还没 finalized。
 - 把 AnyTrust DACert 写成全文已经贴上父链，或把 AnyTrust 写成已经 Rollup DA / 已经 DAS，或把凑不齐签回退写成已经只走委员会。
 - 把谓词通过写成脚本已经跑完，或把只读访问集重叠写成必须串行，或把写集相交写成可以并行，或把并行验证写成已经不需要顺序 L。
+- 把策略拒绝写成共识非法，或把费率高写成更正确，或把策略写成已经作用于块内交易。
 
 ---
 
@@ -321,7 +323,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百三十九条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百四十条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
