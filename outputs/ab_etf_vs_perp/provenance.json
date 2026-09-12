@@ -1,0 +1,623 @@
+{
+  "generated_at": "2026-09-12T22:11:17.406785+00:00",
+  "rule": "real_gate_only_no_synthetic_ticks",
+  "gate_max_bars": 10000,
+  "windows": [
+    {
+      "pair": "BTC",
+      "etf": "BTC3L_USDT",
+      "perp": "BTC_USDT",
+      "underlying_spot": "BTC_USDT",
+      "interval": "1h",
+      "ab_start": "2025-09-02 22:00:00+00:00",
+      "ab_end": "2026-09-12 21:00:00+00:00",
+      "bars": 9000,
+      "etf_meta": {
+        "symbol": "BTC3L_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_BTC3L_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 9000,
+        "cache_path": "/workspace/cache/spot_BTC3L_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "perp_meta": {
+        "symbol": "BTC_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_BTC_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 8998,
+        "cache_path": "/workspace/cache/futures_BTC_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "spot_meta": {
+        "symbol": "BTC_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_BTC_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 9000,
+        "cache_path": "/workspace/cache/spot_BTC_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "funding_source": "cache+funding",
+      "funding_rows": 1079,
+      "snapshot": {
+        "symbol": "BTC3L_USDT",
+        "last": 1.653,
+        "etf_net_value": 1.65501786,
+        "etf_pre_net_value": 1.65714871,
+        "etf_pre_timestamp": 1789056000,
+        "etf_leverage": 3.0045780254096215,
+        "premium_discount": -0.0012192375978348213,
+        "bid": 1.6524,
+        "ask": 1.653,
+        "spread": 0.00036297640653353534,
+        "quote_volume_24h": 963137.894298,
+        "nav_available": true,
+        "nav_history": false,
+        "source": "gate_spot_tickers",
+        "funding_truncated_180d": false,
+        "funding_start": "2025-09-18 08:00:00+00:00",
+        "funding_end": "2026-09-12 16:00:02+00:00"
+      }
+    },
+    {
+      "pair": "ETH",
+      "etf": "ETH3L_USDT",
+      "perp": "ETH_USDT",
+      "underlying_spot": "ETH_USDT",
+      "interval": "1h",
+      "ab_start": "2025-09-02 22:00:00+00:00",
+      "ab_end": "2026-09-12 21:00:00+00:00",
+      "bars": 9000,
+      "etf_meta": {
+        "symbol": "ETH3L_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_ETH3L_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 9000,
+        "cache_path": "/workspace/cache/spot_ETH3L_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "perp_meta": {
+        "symbol": "ETH_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_ETH_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 8998,
+        "cache_path": "/workspace/cache/futures_ETH_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "spot_meta": {
+        "symbol": "ETH_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_ETH_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 9000,
+        "cache_path": "/workspace/cache/spot_ETH_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "funding_source": "cache+funding",
+      "funding_rows": 1080,
+      "snapshot": {
+        "symbol": "ETH3L_USDT",
+        "last": 0.15152,
+        "etf_net_value": 0.15184977,
+        "etf_pre_net_value": 0.15876456,
+        "etf_pre_timestamp": 1789142400,
+        "etf_leverage": 3.0920750740581586,
+        "premium_discount": -0.0021716858708445974,
+        "bid": 0.15172,
+        "ask": 0.15198,
+        "spread": 0.0017159450897571954,
+        "quote_volume_24h": 811300.8778969,
+        "nav_available": true,
+        "nav_history": false,
+        "source": "gate_spot_tickers",
+        "funding_truncated_180d": false,
+        "funding_start": "2025-09-18 00:00:00+00:00",
+        "funding_end": "2026-09-12 16:00:04+00:00"
+      }
+    },
+    {
+      "pair": "SOL",
+      "etf": "SOL3L_USDT",
+      "perp": "SOL_USDT",
+      "underlying_spot": "SOL_USDT",
+      "interval": "1h",
+      "ab_start": "2025-09-02 22:00:00+00:00",
+      "ab_end": "2026-09-12 21:00:00+00:00",
+      "bars": 9000,
+      "etf_meta": {
+        "symbol": "SOL3L_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_SOL3L_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 9000,
+        "cache_path": "/workspace/cache/spot_SOL3L_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "perp_meta": {
+        "symbol": "SOL_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_SOL_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 8998,
+        "cache_path": "/workspace/cache/futures_SOL_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "spot_meta": {
+        "symbol": "SOL_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_SOL_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 9000,
+        "cache_path": "/workspace/cache/spot_SOL_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "funding_source": "cache:futures_SOL_USDT_8h_funding.csv|gate_futures_usdt_funding_rate",
+      "funding_rows": 1079,
+      "snapshot": {
+        "symbol": "SOL3L_USDT",
+        "last": 0.18788,
+        "etf_net_value": 0.18819389,
+        "etf_pre_net_value": 0.18899614,
+        "etf_pre_timestamp": 1789142400,
+        "etf_leverage": 3.0071495699269635,
+        "premium_discount": -0.0016679074968906082,
+        "bid": 0.18796,
+        "ask": 0.18801,
+        "spread": 0.0002661273153077616,
+        "quote_volume_24h": 1507118.480294,
+        "nav_available": true,
+        "nav_history": false,
+        "source": "gate_spot_tickers",
+        "funding_truncated_180d": false,
+        "funding_start": "2025-09-18 08:00:00+00:00",
+        "funding_end": "2026-09-12 16:00:03+00:00"
+      }
+    },
+    {
+      "pair": "PENGU",
+      "etf": "PENGU3L_USDT",
+      "perp": "PENGU_USDT",
+      "underlying_spot": "PENGU_USDT",
+      "interval": "1h",
+      "ab_start": "2025-09-02 22:00:00+00:00",
+      "ab_end": "2026-09-12 21:00:00+00:00",
+      "bars": 9000,
+      "etf_meta": {
+        "symbol": "PENGU3L_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_PENGU3L_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 8995,
+        "cache_path": "/workspace/cache/spot_PENGU3L_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "perp_meta": {
+        "symbol": "PENGU_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_PENGU_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 8998,
+        "cache_path": "/workspace/cache/futures_PENGU_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "spot_meta": {
+        "symbol": "PENGU_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_PENGU_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 9000,
+        "cache_path": "/workspace/cache/spot_PENGU_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "funding_source": "cache:futures_PENGU_USDT_8h_funding.csv|gate_futures_usdt_funding_rate",
+      "funding_rows": 2159,
+      "snapshot": {
+        "symbol": "PENGU3L_USDT",
+        "last": 0.05198,
+        "etf_net_value": 0.05234456,
+        "etf_pre_net_value": 0.05587703,
+        "etf_pre_timestamp": 1789142400,
+        "etf_leverage": 3.136892105682555,
+        "premium_discount": -0.00696462058330416,
+        "bid": 0.05215,
+        "ask": 0.05228,
+        "spread": 0.002500961908426283,
+        "quote_volume_24h": 4595.782727,
+        "nav_available": true,
+        "nav_history": false,
+        "source": "gate_spot_tickers",
+        "funding_truncated_180d": false,
+        "funding_start": "2025-09-18 00:00:00+00:00",
+        "funding_end": "2026-09-12 20:00:01+00:00"
+      }
+    },
+    {
+      "pair": "PUMP",
+      "etf": "PUMP3L_USDT",
+      "perp": "PUMP_USDT",
+      "underlying_spot": "PUMP_USDT",
+      "interval": "1h",
+      "ab_start": "2025-09-02 22:00:00+00:00",
+      "ab_end": "2026-09-12 21:00:00+00:00",
+      "bars": 9000,
+      "etf_meta": {
+        "symbol": "PUMP3L_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_PUMP3L_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 8998,
+        "cache_path": "/workspace/cache/spot_PUMP3L_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "perp_meta": {
+        "symbol": "PUMP_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_PUMP_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 8998,
+        "cache_path": "/workspace/cache/futures_PUMP_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "spot_meta": {
+        "symbol": "PUMP_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_PUMP_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2025-09-02 22:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 9000,
+        "nonzero_quote_bars": 9000,
+        "cache_path": "/workspace/cache/spot_PUMP_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "funding_source": "cache:futures_PUMP_USDT_8h_funding.csv|gate_futures_usdt_funding_rate",
+      "funding_rows": 2157,
+      "snapshot": {
+        "symbol": "PUMP3L_USDT",
+        "last": 0.56578,
+        "etf_net_value": 0.5699011,
+        "etf_pre_net_value": 0.51273608,
+        "etf_pre_timestamp": 1789142400,
+        "etf_leverage": 2.8043838507806926,
+        "premium_discount": -0.007231254686120292,
+        "bid": 0.56799,
+        "ask": 0.56894,
+        "spread": 0.0016790978825692079,
+        "quote_volume_24h": 230669.5782235,
+        "nav_available": true,
+        "nav_history": false,
+        "source": "gate_spot_tickers",
+        "funding_truncated_180d": false,
+        "funding_start": "2025-09-18 08:00:00+00:00",
+        "funding_end": "2026-09-12 20:00:01+00:00"
+      }
+    },
+    {
+      "pair": "SOXL",
+      "etf": "SOXL3L_USDT",
+      "perp": "SOXL_USDT",
+      "underlying_spot": "SOXL_USDT",
+      "interval": "1h",
+      "ab_start": "2026-06-25 09:00:00+00:00",
+      "ab_end": "2026-09-12 21:00:00+00:00",
+      "bars": 1909,
+      "etf_meta": {
+        "symbol": "SOXL3L_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_SOXL3L_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2026-06-25 09:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 1909,
+        "nonzero_quote_bars": 1909,
+        "cache_path": "/workspace/cache/spot_SOXL3L_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "perp_meta": {
+        "symbol": "SOXL_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_SOXL_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2026-06-25 09:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 1909,
+        "nonzero_quote_bars": 1909,
+        "cache_path": "/workspace/cache/futures_SOXL_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "spot_meta": {
+        "symbol": "SOXL_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_SOXL_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2026-06-25 09:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 1909,
+        "nonzero_quote_bars": 1909,
+        "cache_path": "/workspace/cache/futures_SOXL_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "funding_source": "cache:futures_SOXL_USDT_8h_funding.csv|gate_futures_usdt_funding_rate",
+      "funding_rows": 364,
+      "snapshot": {
+        "symbol": "SOXL3L_USDT",
+        "last": 0.01794,
+        "etf_net_value": 0.01797296,
+        "etf_pre_net_value": 0.01900173,
+        "etf_pre_timestamp": 1789142400,
+        "etf_leverage": 3.11710940722494,
+        "premium_discount": -0.0018338659853468497,
+        "bid": 0.01793,
+        "ask": 0.01797,
+        "spread": 0.002229654403567356,
+        "quote_volume_24h": 608088.0246334,
+        "nav_available": true,
+        "nav_history": false,
+        "source": "gate_spot_tickers",
+        "funding_truncated_180d": false,
+        "funding_start": "2026-05-14 16:00:02+00:00",
+        "funding_end": "2026-09-12 16:00:05+00:00"
+      }
+    },
+    {
+      "pair": "SNXX",
+      "etf": "SNXX3L_USDT",
+      "perp": "SNXX_USDT",
+      "underlying_spot": "SNXX_USDT",
+      "interval": "1h",
+      "ab_start": "2026-07-29 07:00:00+00:00",
+      "ab_end": "2026-09-12 21:00:00+00:00",
+      "bars": 1095,
+      "etf_meta": {
+        "symbol": "SNXX3L_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache:spot_SNXX3L_USDT_1h_ab_candles.csv|gate_public_spot_candlesticks",
+        "start": "2026-07-29 07:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 1095,
+        "nonzero_quote_bars": 1095,
+        "cache_path": "/workspace/cache/spot_SNXX3L_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "perp_meta": {
+        "symbol": "SNXX_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_SNXX_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2026-07-29 07:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 1095,
+        "nonzero_quote_bars": 1094,
+        "cache_path": "/workspace/cache/futures_SNXX_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "spot_meta": {
+        "symbol": "SNXX_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_SNXX_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2026-07-29 07:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 1095,
+        "nonzero_quote_bars": 1094,
+        "cache_path": "/workspace/cache/futures_SNXX_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "funding_source": "gate_futures_usdt_funding_rate",
+      "funding_rows": 182,
+      "snapshot": {
+        "symbol": "SNXX3L_USDT",
+        "last": 1.1417,
+        "etf_net_value": 1.14223885,
+        "etf_pre_net_value": 1.1800967,
+        "etf_pre_timestamp": 1789228800,
+        "etf_leverage": 3.066287108580723,
+        "premium_discount": -0.0004717489691408172,
+        "bid": 1.1429,
+        "ask": 1.1435,
+        "spread": 0.0005255321012524603,
+        "quote_volume_24h": 219495.428482,
+        "nav_available": true,
+        "nav_history": false,
+        "source": "gate_spot_tickers",
+        "funding_truncated_180d": false,
+        "funding_start": "2026-07-14 08:00:00+00:00",
+        "funding_end": "2026-09-12 16:00:01+00:00"
+      }
+    },
+    {
+      "pair": "AAOI",
+      "etf": "AAOI3L_USDT",
+      "perp": "AAOI_USDT",
+      "underlying_spot": "AAOI_USDT",
+      "interval": "1h",
+      "ab_start": "2026-09-09 08:00:00+00:00",
+      "ab_end": "2026-09-12 21:00:00+00:00",
+      "bars": 86,
+      "etf_meta": {
+        "symbol": "AAOI3L_USDT",
+        "market": "spot",
+        "interval": "1h",
+        "source": "cache+gate:AAOI3L_USDT",
+        "start": "2026-09-09 08:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 86,
+        "nonzero_quote_bars": 85,
+        "cache_path": "/workspace/cache/spot_AAOI3L_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "perp_meta": {
+        "symbol": "AAOI_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_AAOI_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2026-09-09 08:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 86,
+        "nonzero_quote_bars": 86,
+        "cache_path": "/workspace/cache/futures_AAOI_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "spot_meta": {
+        "symbol": "AAOI_USDT",
+        "market": "futures",
+        "interval": "1h",
+        "source": "cache:futures_AAOI_USDT_1h_ab_candles.csv|gate_futures_usdt_candlesticks",
+        "start": "2026-09-09 08:00:00+00:00",
+        "end": "2026-09-12 21:00:00+00:00",
+        "bars": 86,
+        "nonzero_quote_bars": 86,
+        "cache_path": "/workspace/cache/futures_AAOI_USDT_1h_ab_candles.csv",
+        "api_calls": 0,
+        "notes": [
+          "real_gate_only"
+        ]
+      },
+      "funding_source": "gate_futures_usdt_funding_rate",
+      "funding_rows": 321,
+      "snapshot": {
+        "symbol": "AAOI3L_USDT",
+        "last": 0.79492,
+        "etf_net_value": 0.79371092,
+        "etf_pre_net_value": 0.81058691,
+        "etf_pre_timestamp": 1789228800,
+        "etf_leverage": 3.041335144575975,
+        "premium_discount": 0.0015233253940867275,
+        "bid": 0.79393,
+        "ask": 0.79456,
+        "spread": 0.0007925325818950579,
+        "quote_volume_24h": 71282.2031028,
+        "nav_available": true,
+        "nav_history": false,
+        "source": "gate_spot_tickers",
+        "funding_truncated_180d": false,
+        "funding_start": "2026-06-01 08:00:03+00:00",
+        "funding_end": "2026-09-12 16:00:06+00:00"
+      }
+    }
+  ],
+  "extra": {
+    "gate_max_bars": 10000,
+    "primary_interval": "1h",
+    "fine_interval": "5m",
+    "tick_history": "insufficient_for_requested_windows",
+    "nav_history": false,
+    "synthetic_ticks": false
+  }
+}

@@ -166,6 +166,7 @@ def build_report(payload: dict[str, Any]) -> str:
         "- Historical **ticks / 1s** exist for hours, not for 3–180d. Conclusions use Base + Conservative bar fills.",
         "- Historical ETF **NAV series is not published**. Snapshot NAV/premium is recorded; path-drag uses price vs theoretical 3x underlying.",
         "- Perpetual mark/liquidation uses last-price OHLC plus contract `maintenance_rate`. Research-grade, not an exchange replica.",
+        "- Gate public funding history pages back ~180 days / ~1000 prints. Earlier overlap bars have funding=0 (not a synthetic average).",
         "",
         "## Verdict by asset (no 'it depends' cop-out)",
         "",
@@ -288,17 +289,17 @@ def build_report(payload: dict[str, Any]) -> str:
     etf_pref = sum(1 for b in pairs if (b.get("decision") or {}).get("primary") == "ETF")
     perp_pref = sum(1 for b in pairs if str((b.get("decision") or {}).get("primary", "")).startswith("PERP"))
     hyb_pref = sum(1 for b in pairs if (b.get("decision") or {}).get("primary") == "HYBRID")
-    unattended = "ETF" if etf_pref >= max(perp_pref, hyb_pref) else ("HYBRID" if hyb_pref >= perp_pref else "PERP")
-    # override: if any high-freq liq, perp is worse for unattended
-    liq_pairs = [b["pair"] for b in pairs if (b.get("decision") or {}).get("perp_3x", {}).get("liquidated")]
-    # access via decide payload
     liq_pairs = []
     for b in pairs:
         p = (b.get("decision") or {}).get("perp_3x") or {}
         if p.get("liquidated"):
             liq_pairs.append(b["pair"])
-    if liq_pairs:
+    if perp_pref > etf_pref and perp_pref >= hyb_pref:
+        unattended = "PERP at 1.5x–2x (do not unattended-run 3x where it liquidated)"
+    elif etf_pref > perp_pref:
         unattended = "ETF"
+    else:
+        unattended = "HYBRID"
     lines.append(
         f"**Q13 long-run unattended:**  {unattended}. "
         f"Per-asset primaries ETF={etf_pref} PERP={perp_pref} HYBRID={hyb_pref}. "
