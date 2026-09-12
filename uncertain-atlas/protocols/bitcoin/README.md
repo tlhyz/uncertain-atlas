@@ -37,6 +37,8 @@
 
 精读：[`../../tracks/network/worked-example-witness-wire-vs-have.md`](../../tracks/network/worked-example-witness-wire-vs-have.md)（不变量 251）。看见带见证的线上序列化不是已经有见证。看见能提供见证不是已经在传。看见库存通告仍用旧类型不是线上已经没有见证。
 
+精读：[`../../tracks/light-clients/worked-example-bloom-bit-vs-retired.md`](../../tracks/light-clients/worked-example-bloom-bit-vs-retired.md)（不变量 252）。看见没开布隆服务位不是已经退役。看见开了这一位不是已经私人。看见协议版本够了不是已经在遵守。看见因过滤器命令被断开不是已经共识非法。
+
 精读：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。付给脚本哈希不是已经揭开赎回脚本。旧节点 HASH160 EQUAL 通过不是新节点已经再跑赎回。哈希对上不是内层已经验过。
 
 精读：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。版本位被置上不是已经锁定。锁定不是已经激活。超时未锁定不是已经可以当激活。

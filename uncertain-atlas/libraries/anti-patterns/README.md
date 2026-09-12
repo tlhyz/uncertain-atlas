@@ -254,3 +254,4 @@
 - [erlay-sold-as-have](erlay-sold-as-have.md)
 - [limited-service-sold-as-archive](limited-service-sold-as-archive.md)
 - [witness-wire-sold-as-have](witness-wire-sold-as-have.md)
+- [bloom-bit-sold-as-retired](bloom-bit-sold-as-retired.md)
