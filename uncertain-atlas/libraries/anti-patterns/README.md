@@ -75,3 +75,4 @@
 - [extension-sold-as-voting-power](extension-sold-as-voting-power.md)
 - [nonce-gap-sold-as-proposal](nonce-gap-sold-as-proposal.md)
 - [maxtxbytes-sold-as-nested-bound](maxtxbytes-sold-as-nested-bound.md)
+- [endblocker-error-sold-as-skippable](endblocker-error-sold-as-skippable.md)
