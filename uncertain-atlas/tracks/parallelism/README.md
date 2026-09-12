@@ -19,4 +19,4 @@
 Block-STM 精读：[`worked-example-block-stm.md`](worked-example-block-stm.md)（不变量 122）。提交 ≡ 串行 L。STM 跑完不是已经最终。不抄加速比。  
 Quorum Store 精读：[`../consensus/worked-example-quorum-store-vs-order.md`](../consensus/worked-example-quorum-store-vs-order.md)（不变量 132）。批次传播不是已经写出 L。已认证批次不是已经排序。  
 所有权路径精读：[`worked-example-owned-vs-fastpath.md`](worked-example-owned-vs-fastpath.md)（不变量 128）。owned 不是已经快路径。引用 shared 不是已经授权。进共识块不是已被接受。不抄测试 TPS。  
-Fuel 访问集精读：[`worked-example-utxo-access-list.md`](worked-example-utxo-access-list.md)（不变量 143）。谓词通过不是脚本已经跑完。只读重叠不是写冲突。写集相交不是可以并行。并行验证不是已经不需要顺序 L。不抄上限或官网 TPS。
+Fuel 访问集精读：[`worked-example-utxo-access-list.md`](worked-example-utxo-access-list.md)（不变量 143）。谓词通过不是脚本已经跑完。只读重叠不是写冲突。写集相交不是可以并行。并行验证不是已经不需要顺序 L。不抄上限或官网 TPS。块级访问名单不是已经并行跑完：[`../implementation/worked-example-block-list-vs-parallel.md`](../implementation/worked-example-block-list-vs-parallel.md)（不变量 212）。

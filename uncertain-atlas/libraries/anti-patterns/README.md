@@ -214,3 +214,4 @@
 - [bpo-sold-as-hardfork](bpo-sold-as-hardfork.md)
 - [config-sold-as-aligned](config-sold-as-aligned.md)
 - [default-sold-as-cap](default-sold-as-cap.md)
+- [list-sold-as-parallel](list-sold-as-parallel.md)

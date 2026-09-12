@@ -109,3 +109,4 @@
 - [name-the-bpo](name-the-bpo.md)
 - [name-the-fork-config](name-the-fork-config.md)
 - [name-the-default-gas](name-the-default-gas.md)
+- [name-the-block-list](name-the-block-list.md)
