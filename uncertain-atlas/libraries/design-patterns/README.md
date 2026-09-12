@@ -203,3 +203,4 @@
 - [name-the-genesis](name-the-genesis.md)
 - [name-the-unchecked-stamp](name-the-unchecked-stamp.md)
 - [name-the-init-peer](name-the-init-peer.md)
+- [name-the-peer-handler](name-the-peer-handler.md)

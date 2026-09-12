@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 307）
+
+- CometBFT 对等句柄工作实例（官方 API for Reactors，网络 / 对等句柄，不另写 19 节）：看见 Peer 句柄不是已经是那个人。看见 Broadcast 回了通道不是已经送到每一家。看见 StopPeerForError 不是已经对持久邻居也断干净。对等句柄不是不变量 305，也不是不变量 36，也不是不变量 67。出处 github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md。
+- 不变量 306；语料 C310；模式 name-the-peer-handler；反模式 handler-sold-as-node；L10.3 第 302 条。填 L9.1 / CometBFT 档案对等句柄 / 网络表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄好邻居票数、块片段数、发送超时秒数、通道号。不写怎样广播、怎样编 protobuf、怎样认好邻居、怎样配持久名单。不编博物馆页。不另写 19 节。不与 305 / 36 / 67 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。InitPeer 时序 / 宣布已经收到 / 入站配额标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 306）
 
 - CometBFT 反应堆时序工作实例（官方 Reactor API，网络 / 反应堆时序，不另写 19 节）：看见 InitPeer 不是已经能跟它对说。看见已经在 Receive 不是已经过了 AddPeer。看见节点已经在跑不是已经能再登记一个反应堆。反应堆时序不是不变量 67，也不是不变量 36。出处 github.com/cometbft/cometbft spec/p2p/reactor-api/reactor.md。
