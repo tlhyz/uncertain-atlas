@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 381）
+
+- CometBFT Query 回包工作实例（官方 ABCI++ Methods Query Response，实现 / Query 回包，不另写 19 节）：看见 Query 回包 index 是树里这个键的下标不是已经是按键查。看见 Query 回包 key 是对上的那份数据的键不是已经是 Query 高度。看见 Query 回包 value 是对上的那份数据的值不是已经对上 AppHash。Query 回包不是不变量 377，也不是不变量 371，也不是不变量 325。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 380；语料 C384；模式 name-the-query-index；反模式 queryindex-sold-as-store；L10.3 第 376 条。填 L4.4 / CometBFT 档案 Query 回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Query 回包、怎样填下标、怎样对键值。不编博物馆页。不另写 19 节。不与 377 / 371 / 325 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。按键查、查询高度、证明对上标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 380）
 
 - CometBFT Info 请求版本工作实例（官方 ABCI++ Methods Info Request，实现 / Info 请求版本，不另写 19 节）：看见 Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version。看见 block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上。看见 abci_version 是 ABCI 语义版本、按 X.X.x 显示不是已经是握手对齐。Info 请求版本不是不变量 370，也不是不变量 323，也不是不变量 367。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

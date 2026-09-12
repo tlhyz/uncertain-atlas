@@ -277,3 +277,4 @@
 - [name-the-query-path](name-the-query-path.md)
 - [name-the-refetch](name-the-refetch.md)
 - [name-the-info-version](name-the-info-version.md)
+- [name-the-query-index](name-the-query-index.md)

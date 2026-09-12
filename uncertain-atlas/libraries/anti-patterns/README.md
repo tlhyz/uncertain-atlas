@@ -382,3 +382,4 @@
 - [querypath-sold-as-store](querypath-sold-as-store.md)
 - [refetch-sold-as-restored](refetch-sold-as-restored.md)
 - [infover-sold-as-appversion](infover-sold-as-appversion.md)
+- [queryindex-sold-as-store](queryindex-sold-as-store.md)

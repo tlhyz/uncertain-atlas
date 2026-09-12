@@ -3871,6 +3871,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1832 | 高 | 看见 abci_version 是 ABCI 语义版本、按 X.X.x 显示 / 看见写了语义版本 会被写成已经是握手对齐，或当成已经排了优先 | 官方：abci_version is the semantic version of CometBFT ABCI；语义版本显示成 X.X.x |
 | A1833 | 中 | 怎样写 Info 请求 / 怎样对版本 / 怎样显示 X.X.x 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1834 | 记录 | 会与 370 / 323 / 367 糊成「看见 Info 请求带了版本就已经是 app_version」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 请求版本 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。握手 / 快照切共识 / 车道标成另一对象 |
+| A1835 | 高 | 看见 Query 回包 index 是树里这个键的下标 / 看见有下标 会被写成已经是按键查，或当成已经对上 AppHash | 工作实例：abci++_methods Query Response 官方写 index is The index of the key in the tree |
+| A1836 | 高 | 看见 Query 回包 key 是对上的那份数据的键 / 看见回了键 会被写成已经是 Query 高度，或当成已经新鲜 | 官方：key is The key of the matching data |
+| A1837 | 高 | 看见 Query 回包 value 是对上的那份数据的值 / 看见回了值 会被写成已经对上 AppHash，或当成已经复制到各节点 | 官方：value is The value of the matching data |
+| A1838 | 中 | 怎样写 Query 回包 / 怎样填下标 / 怎样对键值会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1839 | 记录 | 会与 377 / 371 / 325 糊成「看见 Query 回了键值就已经是按键查」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。按键查 / 查询高度 / 证明对上标成另一对象 |
 
 
 

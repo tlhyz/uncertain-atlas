@@ -381,6 +381,7 @@
 | 372 | Query 路径被写成已经是 Query 高度 | 协议 + 文案 | 看见 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 / path 按 URI 路径解释、/store 必须按键查 / 规范建议允许 /accounts / /votes 这类查询 / Query 路径当成已经是 Query 高度或已经是引擎在用或已经是正常运转必须有 | 不变量 377；语料 C381 |
 | 373 | ApplySnapshotChunk 再拉被写成已经封了 | 协议 + 文案 | 看见应用可以再拉块或封邻居、引擎不自己做 / refetch_chunks 不论 result 都再拉再装 / reject_senders 不论 Result 都拒这些人 / ApplySnapshotChunk 再拉当成已经封了或已经齐或已经能接着装 | 不变量 378；语料 C382 |
 | 374 | Info 请求版本被写成已经是 app_version | 协议 + 文案 | 看见 Info 请求 version 是 CometBFT 软件语义版本 / block_version / p2p_version 是引擎块版本和 P2P 版本 / abci_version 是 ABCI 语义版本、按 X.X.x 显示 / Info 请求版本当成已经是 app_version 或已经版本也对上或已经是握手对齐 | 不变量 379；语料 C383 |
+| 375 | Query 回包被写成已经是按键查 | 协议 + 文案 | 看见 Query 回包 index 是树里这个键的下标 / Query 回包 key 是对上的那份数据的键 / Query 回包 value 是对上的那份数据的值 / Query 回包当成已经是按键查或已经是 Query 高度或已经对上 AppHash | 不变量 380；语料 C384 |
 
 ## 不自动覆盖
 
