@@ -181,3 +181,4 @@
 - [initcode-sold-as-runtime](initcode-sold-as-runtime.md)
 - [revert-sold-as-invalid](revert-sold-as-invalid.md)
 - [static-sold-as-view](static-sold-as-view.md)
+- [psbt-sold-as-broadcast](psbt-sold-as-broadcast.md)

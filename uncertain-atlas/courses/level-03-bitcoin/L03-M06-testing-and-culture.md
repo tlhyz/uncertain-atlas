@@ -103,4 +103,4 @@ Bitcoin Core 的 fuzz 与回归；软分叉评审。
 | 经济 | 「从未出事」不是证明；通胀事故曾经发生（CVE-2010-5139） |
 
 **禁止假学习：** 「Bitcoin 从未出过通胀事故。」「因为去中心所以不会有实现洞。」  
-**边界：** 不写闪电网络；不把 Core 开发过程神化。迁移失败 ≠ 目录里其它钱包已经安全：[`../../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md`](../../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md)（不变量 120）。privatebroadcast 开关 ≠ IP 已经不暴露：[`../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md`](../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md)（不变量 112）。不要写怎样踩迁移失败。
+**边界：** 不写闪电网络；不把 Core 开发过程神化。迁移失败 ≠ 目录里其它钱包已经安全：[`../../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md`](../../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md)（不变量 120）。privatebroadcast 开关 ≠ IP 已经不暴露：[`../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md`](../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md)（不变量 112）。看见部分签名包 ≠ 已经是网上能广播的完整交易：[`../../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）。不要写怎样踩迁移失败。不要写怎样拼未签包去冒充已签。
