@@ -3806,6 +3806,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1767 | 高 | 看见全网都删了会永久丢、除非开了 state sync / 看见能剪 会被写成已经能从创世再装，或当成已经能给轻客户端验 | 官方：If all nodes remove historical blocks then this data is permanently lost, unless state sync；审计、回放、轻客户端也可能还要用 |
 | A1768 | 中 | 怎样填 retain_height / 怎样删块 / 怎样开 state sync 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1769 | 记录 | 会与 320 / 323 / 38 糊成「看见 Commit 回了高度就已经在剪」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit 保留高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。崩溃三步 / 快照截断 / 从创世重放标成另一对象 |
+| A1770 | 高 | 看见应用可以不定义 lane_priorities、这时引擎把交易都放进一条道 / 看见没填表 会被写成已经排了优先，或当成已经交差 | 工作实例：abci++_methods Info Usage 官方写应用不必定义 lane_priorities，这时 CometBFT 把所有交易分到一条道 |
+| A1771 | 高 | 看见 lane_priorities 空当且仅当 default_lane 空、默认道必须是表里的一个标识 / 看见对上了 会被写成已经选型，或当成已经交差 | 官方：lane_priorities is empty if and only if default_lane is empty；default_lane 必须是表里的一个标识 |
+| A1772 | 高 | 看见最低优先级是 1、0 留给应用不设道（ResponseCheckTx 里空 lane_id） / 看见写了 0 会被写成已经进了块，或当成已经从池里删掉 | 官方：最低优先级是 1；0 留给应用不设道 |
+| A1773 | 中 | 怎样填 lane_priorities / 怎样选 default_lane / 怎样写 lane_id 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1774 | 记录 | 会与 317 / 312 / 301 糊成「看见 Info 回了车道就已经排了优先」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 车道 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。CheckTx 优先 / CheckTxState / 内存池交接标成另一对象 |
 
 
 

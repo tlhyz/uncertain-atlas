@@ -69,6 +69,7 @@
 - [`worked-example-validator-vs-update.md`](worked-example-validator-vs-update.md) — Validator 用 address 认人 ≠ 已经带了公钥；不带 PubKey ≠ 已经选型；ValidatorUpdate 用公钥认人 ≠ 已经改了集合（不变量 364）
 - [`worked-example-voteinfo-vs-reward.md`](worked-example-voteinfo-vs-reward.md) — VoteInfo 能按到场定奖惩 ≠ 已经罚没；从拟议块或已决块抽出 ≠ 已经带了公钥；按投票权降序排 ≠ 已经进了块（不变量 365）
 - [`worked-example-retain-vs-kept.md`](worked-example-retain-vs-kept.md) — retain_height 默认 0 ≠ 已经在剪；低于这个高度的块可以被删 ≠ 已经没有历史；全网都删了会永久丢 ≠ 已经能从创世再装（不变量 366）
+- [`worked-example-lane-vs-priority.md`](worked-example-lane-vs-priority.md) — 没定义 lane_priorities ≠ 已经排了优先；空表对空默认 ≠ 已经选型；优先级 0 留给不设道 ≠ 已经进了块（不变量 367）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

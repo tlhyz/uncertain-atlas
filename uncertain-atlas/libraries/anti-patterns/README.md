@@ -369,3 +369,4 @@
 - [validator-sold-as-update](validator-sold-as-update.md)
 - [voteinfo-sold-as-rewarded](voteinfo-sold-as-rewarded.md)
 - [retain-sold-as-kept](retain-sold-as-kept.md)
+- [lane-sold-as-priority](lane-sold-as-priority.md)

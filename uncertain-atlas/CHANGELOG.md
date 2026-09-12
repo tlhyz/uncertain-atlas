@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 368）
+
+- CometBFT Info 车道工作实例（官方 ABCI++ Methods Info Usage，实现 / Info 车道，不另写 19 节）：看见没定义 lane_priorities 不是已经排了优先。看见空表对空默认不是已经选型。看见优先级 0 留给不设道不是已经进了块。Info 车道不是不变量 317，也不是不变量 312，也不是不变量 301。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 367；语料 C371；模式 name-the-lane-priorities；反模式 lane-sold-as-priority；L10.3 第 363 条。填 L4.4 / CometBFT 档案 Info 车道 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样填 lane_priorities、怎样选 default_lane、怎样写 lane_id。不编博物馆页。不另写 19 节。不与 317 / 312 / 301 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。CheckTx 优先、CheckTxState、内存池交接标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 367）
 
 - CometBFT Commit 保留高度工作实例（官方 ABCI++ Methods Commit Usage，实现 / Commit 保留高度，不另写 19 节）：看见 retain_height 默认 0 不是已经在剪。看见低于这个高度的块可以被删不是已经没有历史。看见全网都删了会永久丢不是已经能从创世再装。Commit 保留高度不是不变量 320，也不是不变量 323，也不是不变量 38。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

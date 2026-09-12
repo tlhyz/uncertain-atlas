@@ -381,6 +381,7 @@
 | C368 | 364 Validator用address认人≠已经带了公钥 | 文案把 Validator 用 address 认人 / 只有 address 和 power 写成已经带了公钥或已经能验签；或把不带 PubKey 是为了不在 ABCI 上传大后量子公钥 / 省了字段写成已经选型或已经没有后量子钥；或把 ValidatorUpdate 用 pub_key_type 和 pub_key_bytes 认人 / 更新集合写成已经是 VoteInfo 里那份 Validator 或已经改了集合；或把 Validator 类型写成不变量 35 / 318 / 363 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C369 | 365 VoteInfo能按到场定奖惩≠已经罚没 | 文案把 VoteInfo 标明上一块有没有签、能按到场定奖惩 / 有 block_id_flag 写成已经罚没或已经交差；或把这份信息通常从拟议块或已决块抽出 / 块里有票写成已经带了公钥或已经是 ValidatorUpdate；或把 votes 按投票权降序排、落盘后再从 store 装回 / 顺序在写成已经进了块或已经交差；或把 VoteInfo 写成不变量 363 / 364 / 300 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C370 | 366 retain_height默认0≠已经在剪 | 文案把 retain_height 默认 0、表示全留 / 没填写成已经在剪或已经交差；或把低于这个高度的块可以被删 / 回了高度写成已经是这个节点快照截断或已经没有历史；或把全网都删了会永久丢、除非开了 state sync / 能剪写成已经能从创世再装或已经能给轻客户端验；或把 Commit 保留高度写成不变量 320 / 323 / 38 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C371 | 367 没定义lane_priorities≠已经排了优先 | 文案把应用可以不定义 lane_priorities、这时引擎把交易都放进一条道 / 没填表写成已经排了优先或已经交差；或把 lane_priorities 空当且仅当 default_lane 空、默认道必须是表里的一个标识 / 对上了写成已经选型或已经交差；或把最低优先级是 1、0 留给应用不设道（ResponseCheckTx 里空 lane_id） / 写了 0 写成已经进了块或已经从池里删掉；或把 Info 车道写成不变量 317 / 312 / 301 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

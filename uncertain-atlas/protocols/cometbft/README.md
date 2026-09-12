@@ -145,6 +145,8 @@ VoteInfo 能按到场定奖惩不是已经罚没：[`../../tracks/implementation
 
 retain_height 默认 0 不是已经在剪：[`../../tracks/implementation/worked-example-retain-vs-kept.md`](../../tracks/implementation/worked-example-retain-vs-kept.md)（不变量 366）。看见低于这个高度的块可以被删不是已经没有历史。看见全网都删了会永久丢不是已经能从创世再装。
 
+没定义 lane_priorities 不是已经排了优先：[`../../tracks/implementation/worked-example-lane-vs-priority.md`](../../tracks/implementation/worked-example-lane-vs-priority.md)（不变量 367）。看见空表对空默认不是已经选型。看见优先级 0 留给不设道不是已经进了块。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
