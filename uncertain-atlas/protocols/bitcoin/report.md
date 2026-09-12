@@ -240,6 +240,8 @@ Bitcoin Core 传统：大量 functional / unit；fuzz（script、P2P、地址）
 
 「不确定」应偷的测试思想：供给/双花这类 invariant 必须有直接断言，不能只靠「常见交易能过」。
 
+看见 signet 不是已经是 testnet；看见 signet 不是已经是 regtest；看见头上有合法工作量不是已经签过：[`../../tracks/implementation/worked-example-signet-vs-testnet.md`](../../tracks/implementation/worked-example-signet-vs-testnet.md)（不变量 265）。testnet 出了名不可靠不是已经是本页。regtest 造块没有代价不是已经是本页。只加网络参数就能连 / 头上有合法工作量不是已经签过，也不是已经全验证。
+
 ---
 
 ## 19. 「不确定」适用性

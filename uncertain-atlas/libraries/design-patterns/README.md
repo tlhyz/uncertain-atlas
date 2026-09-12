@@ -162,3 +162,4 @@
 - [name-the-pong](name-the-pong.md)
 - [name-the-user-agent](name-the-user-agent.md)
 - [name-the-dummy](name-the-dummy.md)
+- [name-the-signet](name-the-signet.md)
