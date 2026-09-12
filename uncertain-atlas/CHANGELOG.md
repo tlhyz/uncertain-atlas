@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 380）
+
+- CometBFT Info 请求版本工作实例（官方 ABCI++ Methods Info Request，实现 / Info 请求版本，不另写 19 节）：看见 Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version。看见 block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上。看见 abci_version 是 ABCI 语义版本、按 X.X.x 显示不是已经是握手对齐。Info 请求版本不是不变量 370，也不是不变量 323，也不是不变量 367。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 379；语料 C383；模式 name-the-info-version；反模式 infover-sold-as-appversion；L10.3 第 375 条。填 L4.4 / CometBFT 档案 Info 请求版本 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Info 请求、怎样对版本、怎样显示 X.X.x。不编博物馆页。不另写 19 节。不与 370 / 323 / 367 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。握手、快照切共识、车道标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 379）
 
 - CometBFT ApplySnapshotChunk 再拉工作实例（官方 ABCI++ Methods ApplySnapshotChunk Usage，实现 / ApplySnapshotChunk 再拉，不另写 19 节）：看见应用可以再拉块或封邻居、引擎不自己做不是已经封了。看见 refetch_chunks 不论 result 都再拉再装、按顺序不是已经齐。看见 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名不是已经能接着装。ApplySnapshotChunk 再拉不是不变量 321，也不是不变量 332，也不是不变量 375。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

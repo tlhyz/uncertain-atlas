@@ -393,6 +393,7 @@
 | C380 | 376 UNKNOWN一律是错、引擎当应用坏了会崩≠已经是四门已经结算 | 文案把 UNKNOWN 一律是错、引擎当应用坏了会崩 / 回了 UNKNOWN 写成已经是四门已经结算或已经交差；或把 ACCEPT 表示应用认为提案合法、共识会发 Prevote / 回了 ACCEPT 写成已经交差或已经必须 Accept；或把 REJECT 表示应用认为提案非法、共识会发 Prevote nil / 回了 REJECT 写成已经能稍后改裁决或已经没进块；或把 ProposalStatus 写成不变量 33 / 347 / 354 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C381 | 377 data按URI查询分量解释、可以和path一起或代替path用≠已经是Query高度 | 文案把 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 / 填了 data 写成已经是 Query 高度或已经新鲜；或把 path 按 URI 路径解释、/store 必须按键查 / 写了 /store 写成已经是引擎在用或已经是过滤；或把规范建议允许 /accounts / /votes 这类查询 / 写了类型路径写成已经是正常运转必须有或已经复制到各节点；或把 Query 路径写成不变量 371 / 326 / 329 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C382 | 378 应用可以再拉块或封邻居、引擎不自己做≠已经封了 | 文案把应用可以再拉块或封邻居、引擎不自己做 / 能再拉写成已经封了或已经齐；或把 refetch_chunks 不论 result 都再拉再装、按顺序 / 列了块号写成已经齐或已经交差；或把 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名 / 拒了人写成已经能接着装或已经停；或把 ApplySnapshotChunk 再拉写成不变量 321 / 332 / 375 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C383 | 379 Info请求version是CometBFT软件语义版本≠已经是app_version | 文案把 Info 请求 version 是 CometBFT 软件语义版本 / 填了 version 写成已经是 app_version 或已经印进本头 AppHash；或把 block_version / p2p_version 是引擎块版本和 P2P 版本 / 填了两列写成已经版本也对上或已经有完整历史；或把 abci_version 是 ABCI 语义版本、按 X.X.x 显示 / 写了语义版本写成已经是握手对齐或已经排了优先；或把 Info 请求版本写成不变量 370 / 323 / 367 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

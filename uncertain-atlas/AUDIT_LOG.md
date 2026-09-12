@@ -3866,6 +3866,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1827 | 高 | 看见 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名 / 看见拒了人 会被写成已经能接着装，或当成已经停 | 官方：Reject the given P2P senders, regardless of Result. Any chunks already applied will not be refetched unless explicitly requested |
 | A1828 | 中 | 怎样写 ApplySnapshotChunk / 怎样再拉 / 怎样封邻居会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1829 | 记录 | 会与 321 / 332 / 375 糊成「看见回了再拉就已经封了」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk 再拉 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。装回 / 增量验 / 拉块标成另一对象 |
+| A1830 | 高 | 看见 Info 请求 version 是 CometBFT 软件语义版本 / 看见填了 version 会被写成已经是 app_version，或当成已经印进本头 AppHash | 工作实例：abci++_methods Info Request 官方写 version is the semantic version of the CometBFT software |
+| A1831 | 高 | 看见 block_version / p2p_version 是引擎块版本和 P2P 版本 / 看见填了两列 会被写成已经版本也对上，或当成已经有完整历史 | 官方：block_version is the version of CometBFT Blocks；p2p_version is the version of CometBFT P2P |
+| A1832 | 高 | 看见 abci_version 是 ABCI 语义版本、按 X.X.x 显示 / 看见写了语义版本 会被写成已经是握手对齐，或当成已经排了优先 | 官方：abci_version is the semantic version of CometBFT ABCI；语义版本显示成 X.X.x |
+| A1833 | 中 | 怎样写 Info 请求 / 怎样对版本 / 怎样显示 X.X.x 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1834 | 记录 | 会与 370 / 323 / 367 糊成「看见 Info 请求带了版本就已经是 app_version」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 请求版本 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。握手 / 快照切共识 / 车道标成另一对象 |
 
 
 

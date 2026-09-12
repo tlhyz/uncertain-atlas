@@ -276,3 +276,4 @@
 - [name-the-proposal-status](name-the-proposal-status.md)
 - [name-the-query-path](name-the-query-path.md)
 - [name-the-refetch](name-the-refetch.md)
+- [name-the-info-version](name-the-info-version.md)

@@ -381,3 +381,4 @@
 - [proposalstatus-sold-as-prevote](proposalstatus-sold-as-prevote.md)
 - [querypath-sold-as-store](querypath-sold-as-store.md)
 - [refetch-sold-as-restored](refetch-sold-as-restored.md)
+- [infover-sold-as-appversion](infover-sold-as-appversion.md)
