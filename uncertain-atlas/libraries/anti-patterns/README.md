@@ -424,3 +424,4 @@
 - [procreq-sold-as-extreq](procreq-sold-as-extreq.md)
 - [procreqrest-sold-as-extreq](procreqrest-sold-as-extreq.md)
 - [extvitable-sold-as-usage](extvitable-sold-as-usage.md)
+- [finreq-sold-as-procreq](finreq-sold-as-procreq.md)

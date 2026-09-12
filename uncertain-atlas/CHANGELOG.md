@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 423）
+
+- CometBFT Finalize 请求栏工作实例（官方 ABCI++ Methods FinalizeBlock Request，实现 / Finalize 请求栏，不另写 19 节）：看见 FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息不是已经交差 local_last_commit。看见 FinalizeBlockRequest.height 是已决块的高度不是已经对上了拟议块头。看见 FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表不是已经执行那些交易。Finalize 请求栏不是不变量 420，也不是不变量 419，也不是不变量 408。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 422；语料 C426；模式 name-the-fin-req；反模式 finreq-sold-as-procreq；L10.3 第 418 条。填 L4.4 / CometBFT 档案 Finalize 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 请求栏、怎样填 decided_last_commit、怎样填 txs。不编博物馆页。不另写 19 节。不与 420 / 419 / 408 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经交差 local_last_commit、已经对上了拟议块头、已经执行那些交易标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 422）
 
 - CometBFT ExtendedVoteInfo 表栏工作实例（官方 ABCI++ Methods Data Types ExtendedVoteInfo，实现 / ExtendedVoteInfo 表栏，不另写 19 节）：看见 ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展不是已经从本进程抽出。看见 ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展不是已经按原样签。看见 ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签不是已经把验过的签交给应用。ExtendedVoteInfo 表栏不是不变量 369，也不是不变量 418，也不是不变量 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -4081,6 +4081,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2042 | 高 | 看见 ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签 / 看见填了 extension_signature 会被写成已经把验过的签交给应用，或当成已经有重放保护 | 官方表：extension_signature is Signature of the vote extension produced by the sending validator and verified by CometBFT |
 | A2043 | 中 | 怎样写 ExtendedVoteInfo 表栏 / 怎样填 vote_extension / 怎样填 extension_signature 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2044 | 记录 | 会与 369 / 418 / 358 糊成「看见填了 ExtendedVoteInfo 表栏就已经从本进程抽出」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo 表栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经从本进程抽出 / 已经按原样签 / 已经把验过的签交给应用 标成另一对象 |
+| A2045 | 高 | 看见 FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息 / 看见填了 decided_last_commit 会被写成已经交差 local_last_commit，或当成已经是 ProcessProposalRequest.proposed_last_commit | 官方表：decided_last_commit is Info about the last commit, obtained from the block that was just decided |
+| A2046 | 高 | 看见 FinalizeBlockRequest.height 是已决块的高度 / 看见填了 height 会被写成已经对上了拟议块头，或当成已经是 ProcessProposalRequest.height | 官方表：height is The height of the finalized block |
+| A2047 | 高 | 看见 FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表 / 看见填了 txs 会被写成已经执行那些交易，或当成已经是 ProcessProposalRequest.txs | 官方表：txs is List of transactions committed as part of the block |
+| A2048 | 中 | 怎样写 Finalize 请求栏 / 怎样填 decided_last_commit / 怎样填 txs 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2049 | 记录 | 会与 420 / 419 / 408 糊成「看见填了 Finalize 请求栏就已经交差 local_last_commit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 local_last_commit / 已经对上了拟议块头 / 已经执行那些交易 标成另一对象 |
 
 
 
