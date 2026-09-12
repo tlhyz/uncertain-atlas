@@ -218,3 +218,4 @@
 - [exit-sold-as-forever](exit-sold-as-forever.md)
 - [window-sold-as-confirm](window-sold-as-confirm.md)
 - [churn-sold-as-rewards](churn-sold-as-rewards.md)
+- [mcopy-sold-as-identity](mcopy-sold-as-identity.md)
