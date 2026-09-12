@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 303）
+
+- CometBFT 提议者选择工作实例（官方 Proposer Selection Procedure，共识协议，不另写 19 节）：看见同一高度换轮不是已经换了集合。看见新验证者加进来不是已经能跳到队头。看见优先级差被缩放不是已经按人头轮。提议者选择不是不变量 35，也不是不变量 56，也不是不变量 129。出处 github.com/cometbft/cometbft spec/consensus/proposer-selection.md。
+- 不变量 302；语料 C306；模式 name-the-same-set；反模式 rejoin-sold-as-head；L10.3 第 298 条。填 L4.5 / L4.2 / CometBFT 档案第 6 步 / 共识表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄惩罚系数、缩放倍数、溢出处理。不写怎样算优先级、怎样居中、怎样缩放。不编博物馆页。不另写 19 节。不与 35 / 56 / 129 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。生效延迟 / 提议者字段 / NPoS 等权标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 302）
 
 - CometBFT 内存池交接工作实例（官方 Mempool，共识协议，不另写 19 节）：看见提案收了交易不是已经从池里删掉。看见本块已 commit 不是已经不用再验剩下的。看见 CheckTx 过了不是已经永远有效。内存池交接不是不变量 33，也不是不变量 69，也不是不变量 299，也不是不变量 144。出处 github.com/cometbft/cometbft spec/mempool/mempool.md。

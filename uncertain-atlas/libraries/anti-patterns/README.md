@@ -304,3 +304,4 @@
 - [evidence-sold-as-full-block](evidence-sold-as-full-block.md)
 - [state-sold-as-block](state-sold-as-block.md)
 - [proposed-sold-as-removed](proposed-sold-as-removed.md)
+- [rejoin-sold-as-head](rejoin-sold-as-head.md)

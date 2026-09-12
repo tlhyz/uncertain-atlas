@@ -238,7 +238,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M4.2 高度、轮次、步骤 · 必学
 - propose / prevote / precommit / commit
-- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`；块时间须点名算法 `tracks/consensus/worked-example-pbts.md`（PBTS timely ≠ BFT Time 中位数 ≠ MTP ≠ 调整钟；不变量 40）。复算中位数 ≠ 故障者不能抬高 Time：CSA-2026-001（不变量 61）。本地超时 ≠ 最终性：`tracks/consensus/worked-example-timeouts.md`（不变量 47）。应用回的等待 ≠ 槽位：`tracks/consensus/worked-example-next-block-delay.md`（不变量 52）。默认 MaxBytes ≠ 第一轮活性 SLA：ASA-2023-002（不变量 63；`timeout_propose` 必须对照块上限）。+2/3 ≠ 其余槽位已签：CVE-2020-15091 / Syringa（不变量 65）。本头 LastCommit ≠ 本高度已经 +2/3；本地 subjective ≠ 链上 canonical：[`../tracks/consensus/worked-example-lastcommit-vs-this-block.md`](../tracks/consensus/worked-example-lastcommit-vs-this-block.md)（不变量 148）。本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State：[`../tracks/implementation/worked-example-state-vs-gossip.md`](../tracks/implementation/worked-example-state-vs-gossip.md)（不变量 300）
+- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`；块时间须点名算法 `tracks/consensus/worked-example-pbts.md`（PBTS timely ≠ BFT Time 中位数 ≠ MTP ≠ 调整钟；不变量 40）。复算中位数 ≠ 故障者不能抬高 Time：CSA-2026-001（不变量 61）。本地超时 ≠ 最终性：`tracks/consensus/worked-example-timeouts.md`（不变量 47）。应用回的等待 ≠ 槽位：`tracks/consensus/worked-example-next-block-delay.md`（不变量 52）。默认 MaxBytes ≠ 第一轮活性 SLA：ASA-2023-002（不变量 63；`timeout_propose` 必须对照块上限）。+2/3 ≠ 其余槽位已签：CVE-2020-15091 / Syringa（不变量 65）。本头 LastCommit ≠ 本高度已经 +2/3；本地 subjective ≠ 链上 canonical：[`../tracks/consensus/worked-example-lastcommit-vs-this-block.md`](../tracks/consensus/worked-example-lastcommit-vs-this-block.md)（不变量 148）。本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State：[`../tracks/implementation/worked-example-state-vs-gossip.md`](../tracks/implementation/worked-example-state-vs-gossip.md)（不变量 300）。同一高度换轮 ≠ 已经换了集合；新加入 ≠ 已经能跳到队头：[`../tracks/consensus/worked-example-round-vs-set.md`](../tracks/consensus/worked-example-round-vs-set.md)（不变量 302）
 
 ### M4.3 锁、解锁、超时 · 必学
 - locking / unlock / round change
@@ -248,7 +248,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.4 验证者集合与投票权 · 必学
 - validator set、voting power
 - 集合变更何时生效
-- 覆盖：课文 L4.5；生效延迟 `tracks/consensus/worked-example-validator-delay.md`（H 的更新：H+1 Next、H+2 计票、H+3 last_commit；不变量 35）。NPoS 当选 ≠ 共识已经按质押加权：[`../tracks/consensus/worked-example-npos-equal-weight.md`](../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129；⅔ 验证者 ≠ ⅔ 质押）
+- 覆盖：课文 L4.5；生效延迟 `tracks/consensus/worked-example-validator-delay.md`（H 的更新：H+1 Next、H+2 计票、H+3 last_commit；不变量 35）。同一高度换轮 ≠ 已经换了集合；新加入 ≠ 已经能跳到队头：[`../tracks/consensus/worked-example-round-vs-set.md`](../tracks/consensus/worked-example-round-vs-set.md)（不变量 302）。NPoS 当选 ≠ 共识已经按质押加权：[`../tracks/consensus/worked-example-npos-equal-weight.md`](../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129；⅔ 验证者 ≠ ⅔ 质押）
 
 ### M4.5 ABCI：应用与共识分离 · 必学
 - 为什么这对「不确定」极有价值

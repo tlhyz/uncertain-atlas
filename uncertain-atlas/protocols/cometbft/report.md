@@ -229,7 +229,7 @@ invariant：Check 通过不是已进提案；Prepare 可改列表；Process REJE
 invariant：扩展是另一份签；Verify REJECT 丢整张 precommit，不是块非法；`s_h` 不读本高度扩展（不变量 34）。
 
 **`validator_updates` 生效高度**  
-invariant：H 返回的更新，H+1 改 `NextValidatorsHash`，H+2 才按新集合计票，H+3 `*_last_commit` 带新集合（不变量 35）。见 [`../../tracks/consensus/worked-example-validator-delay.md`](../../tracks/consensus/worked-example-validator-delay.md)。
+invariant：H 返回的更新，H+1 改 `NextValidatorsHash`，H+2 才按新集合计票，H+3 `*_last_commit` 带新集合（不变量 35）。见 [`../../tracks/consensus/worked-example-validator-delay.md`](../../tracks/consensus/worked-example-validator-delay.md)。同一高度各轮用同一套，不是已经换成应用刚回的那套；新加入不是已经能跳到队头：见 [`../../tracks/consensus/worked-example-round-vs-set.md`](../../tracks/consensus/worked-example-round-vs-set.md)（不变量 302）。
 
 ---
 
