@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 420）
+
+- CometBFT Process 请求栏工作实例（官方 ABCI++ Methods ProcessProposal Request，实现 / Process 请求栏，不另写 19 节）：看见 ProcessProposalRequest.txs 是拟议块的交易列表不是已经执行那些交易。看见 ProcessProposalRequest.hash 是拟议块的哈希不是已经跑过 Process。看见 ProcessProposalRequest.height 是拟议块的高度不是已经对上了拟议块头。Process 请求栏不是不变量 411，也不是不变量 410，也不是不变量 417。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 419；语料 C423；模式 name-the-proc-req；反模式 procreq-sold-as-extreq；L10.3 第 415 条。填 L4.4 / CometBFT 档案 Process 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Process 请求栏、怎样填 txs、怎样填 hash。不编博物馆页。不另写 19 节。不与 411 / 410 / 417 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经执行那些交易、已经跑过 Process、已经对上了拟议块头标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 419）
 
 - CometBFT 扩展回包栏工作实例（官方 ABCI++ Methods ExtendVote Response / VerifyVoteExtension Request，实现 / 扩展回包栏，不另写 19 节）：看见 ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定不是已经会包进 CanonicalVoteExtension。看见 ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定不是已经按原样签。看见 VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长不是已经是 vote_extension 表。扩展回包栏不是不变量 358，也不是不变量 415，也不是不变量 338。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

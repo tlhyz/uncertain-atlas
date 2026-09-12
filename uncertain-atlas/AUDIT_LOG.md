@@ -4066,6 +4066,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2027 | 高 | 看见 VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 / 看见能空 会被写成已经是 vote_extension 表，或当成已经跳过 Verify | 官方表：non_rp_vote_extension is Application-specific information signed by CometBFT. Can have 0 length |
 | A2028 | 中 | 怎样写扩展回包栏 / 怎样填 vote_extension / 怎样填 non_rp_extension 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2029 | 记录 | 会与 358 / 415 / 338 糊成「看见填了扩展回包栏就已经会包进 CanonicalVoteExtension」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案扩展回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经会包进 CanonicalVoteExtension / 已经按原样签 / 已经是 vote_extension 表 标成另一对象 |
+| A2030 | 高 | 看见 ProcessProposalRequest.txs 是拟议块的交易列表 / 看见填了 txs 会被写成已经执行那些交易，或当成已经是 ExtendVoteRequest.txs | 官方表：txs is List of transactions of the proposed block |
+| A2031 | 高 | 看见 ProcessProposalRequest.hash 是拟议块的哈希 / 看见填了 hash 会被写成已经跑过 Process，或当成已经是 ExtendVoteRequest.hash | 官方表：hash is The hash of the proposed block |
+| A2032 | 高 | 看见 ProcessProposalRequest.height 是拟议块的高度 / 看见填了 height 会被写成已经对上了拟议块头，或当成已经是 ExtendVoteRequest.height | 官方表：height is The height of the proposed block |
+| A2033 | 中 | 怎样写 Process 请求栏 / 怎样填 txs / 怎样填 hash 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2034 | 记录 | 会与 411 / 410 / 417 糊成「看见填了 Process 请求栏就已经执行那些交易」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经执行那些交易 / 已经跑过 Process / 已经对上了拟议块头 标成另一对象 |
 
 
 

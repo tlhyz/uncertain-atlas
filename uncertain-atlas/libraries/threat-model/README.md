@@ -420,6 +420,7 @@
 | 411 | Process 何时调用余量被写成已经填了 TimeoutPropose | 协议 + 文案 | 看见进了这一轮会先设 ProposeTimeout / 收到带上头的提案会先验块头 / 收齐块片才按验证者算法看该不该 prevote 这块或 nil / Process 何时调用余量当成已经填了 TimeoutPropose 或已经跑过 Process 或已经会调 Process | 不变量 416；语料 C420 |
 | 412 | 头字段对上余量被写成已经不用再 Process | 协议 + 文案 | 看见自己是提议者会先走完 Prepare 那五步 / Process 的 height / time 对上拟议块头 / Finalize 的 height / time 对上拟议块头 / 头字段对上余量当成已经不用再 Process 或已经验过块头或已经是刚决定那块的字段 | 不变量 417；语料 C421 |
 | 413 | 扩展回包栏被写成已经会包进 CanonicalVoteExtension | 协议 + 文案 | 看见 ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 / ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 / VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 / 扩展回包栏当成已经会包进 CanonicalVoteExtension 或已经按原样签或已经是 vote_extension 表 | 不变量 418；语料 C422 |
+| 414 | Process 请求栏被写成已经执行那些交易 | 协议 + 文案 | 看见 ProcessProposalRequest.txs 是拟议块的交易列表 / ProcessProposalRequest.hash 是拟议块的哈希 / ProcessProposalRequest.height 是拟议块的高度 / Process 请求栏当成已经执行那些交易或已经跑过 Process 或已经对上了拟议块头 | 不变量 419；语料 C423 |
 
 ## 不自动覆盖
 

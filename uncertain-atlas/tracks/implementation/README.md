@@ -121,6 +121,7 @@
 - [`worked-example-proposetimeout-vs-process.md`](worked-example-proposetimeout-vs-process.md) — 进了这一轮会先设 ProposeTimeout ≠ 已经填了 TimeoutPropose；收到带上头的提案会先验块头 ≠ 已经跑过 Process；收齐块片才按验证者算法看该不该 prevote 这块或 nil ≠ 已经会调 Process（不变量 416）
 - [`worked-example-htmatch-vs-header.md`](worked-example-htmatch-vs-header.md) — 自己是提议者会先走完 Prepare 那五步 ≠ 已经不用再 Process；Process 的 height / time 对上拟议块头 ≠ 已经验过块头；Finalize 的 height / time 对上拟议块头 ≠ 已经是刚决定那块的字段（不变量 417）
 - [`worked-example-extresp-vs-wrap.md`](worked-example-extresp-vs-wrap.md) — ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 ≠ 已经会包进 CanonicalVoteExtension；ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 ≠ 已经按原样签；VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 ≠ 已经是 vote_extension 表（不变量 418）
+- [`worked-example-procreq-vs-extreq.md`](worked-example-procreq-vs-extreq.md) — ProcessProposalRequest.txs 是拟议块的交易列表 ≠ 已经执行那些交易；ProcessProposalRequest.hash 是拟议块的哈希 ≠ 已经跑过 Process；ProcessProposalRequest.height 是拟议块的高度 ≠ 已经对上了拟议块头（不变量 419）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
