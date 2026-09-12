@@ -3756,6 +3756,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1717 | 高 | 看见没调 Prepare / 看见不会再从池子按优先级收交易 会被写成已经又装了一份 raw 提案，或当成已经从提案拿掉 tx | 官方：只有走 Prepare 那条路时才从内存池按优先级收未决交易并造头 |
 | A1718 | 中 | 怎样设 validValue / 怎样从池子收交易 / 怎样造头会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1719 | 记录 | 会与 311 / 338 / 355 糊成「看见本轮直接用它就已经还会调 Prepare」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 validValue 跳过 Prepare / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。候选状态 / Prepare 确定性 / 从提案拿掉标成另一对象 |
+| A1720 | 高 | 看见引擎没有再验重复交易 / 看见回了提案 会被写成已经验过重复，或当成已经有应用级重放保护 | 工作实例：abci++_methods PrepareProposal Usage 官方写 CometBFT 不再做额外有效性检查，例如查有没有重复交易 |
+| A1721 | 高 | 看见 Prepare 回包验不过 / 看见引擎当应用坏了并崩溃 会被写成已经是 Process REJECT，或当成已经是正确提议者的准备提案必须被正确接收者 Accept | 官方：若验不过 PrepareProposalResponse，就把应用当成故障并崩溃 |
+| A1722 | 高 | 看见 Prepare 里产出了块事件或交易事件 / 看见先跑了 会被写成已经交给引擎，或当成已经印进 LastResultsHash | 官方：必须把这些事件留到块决定之后，再经 FinalizeBlockResponse 交给 CometBFT |
+| A1723 | 中 | 怎样再验 Prepare 回包 / 怎样查重复 / 怎样攒事件会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1724 | 记录 | 会与 313 / 347 / 316 糊成「看见回了提案就已经验过重复」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 回包校验 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。内存池去重 / Req 3 必须 Accept / 回执印进本头标成另一对象 |
 
 
 

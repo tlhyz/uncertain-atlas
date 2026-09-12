@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 358）
+
+- CometBFT Prepare 回包校验工作实例（官方 ABCI++ Methods PrepareProposal Usage，实现 / Prepare 回包校验，不另写 19 节）：看见引擎没有再验重复交易不是已经验过重复。看见 Prepare 回包验不过引擎崩溃不是已经是 Process REJECT。看见 Prepare 里产出了事件不是已经交给引擎。Prepare 回包校验不是不变量 313，也不是不变量 347，也不是不变量 316。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 357；语料 C361；模式 name-the-prepare-valid；反模式 preparevalid-sold-as-checked；L10.3 第 353 条。填 L4.4 / CometBFT 档案 Prepare 回包校验 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样再验 Prepare 回包、怎样查重复、怎样攒事件。不编博物馆页。不另写 19 节。不与 313 / 347 / 316 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。内存池去重、Req 3 必须 Accept、回执印进本头标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 357）
 
 - CometBFT validValue 跳过 Prepare 工作实例（官方 ABCI++ Methods PrepareProposal When，实现 / validValue 跳过 Prepare，不另写 19 节）：看见 validValue 非 nil 不是已经还会调 Prepare。看见自己是提议者不是已经每轮都会调 Prepare。看见没调 Prepare 不是已经又装了一份 raw 提案。validValue 跳过 Prepare 不是不变量 311，也不是不变量 338，也不是不变量 355。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

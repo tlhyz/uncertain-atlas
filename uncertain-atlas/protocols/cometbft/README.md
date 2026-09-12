@@ -125,6 +125,8 @@ Process 调用是同步的不是已经能在返回之后再改裁决：[`../../t
 
 validValue 非 nil 不是已经还会调 Prepare：[`../../tracks/implementation/worked-example-validvalue-vs-prepare.md`](../../tracks/implementation/worked-example-validvalue-vs-prepare.md)（不变量 356）。看见自己是提议者不是已经每轮都会调 Prepare。看见没调 Prepare 不是已经又装了一份 raw 提案。
 
+引擎没有再验重复交易不是已经验过重复：[`../../tracks/implementation/worked-example-prepare-valid-vs-checked.md`](../../tracks/implementation/worked-example-prepare-valid-vs-checked.md)（不变量 357）。看见 Prepare 回包验不过引擎崩溃不是已经是 Process REJECT。看见 Prepare 里产出了事件不是已经交给引擎。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
