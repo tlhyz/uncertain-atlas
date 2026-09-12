@@ -3926,6 +3926,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1887 | 高 | 看见 CheckTx 回包 log 是应用日志输出 / 看见回了日志会被写成已经是 Query 日志，或当成已经被引擎用了 Data | 官方：log is The output of the application's logger |
 | A1888 | 中 | 怎样写 ProofOp 键 / 怎样填 key / 怎样编 data会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1889 | 记录 | 会与 325 / 380 / 384 糊成「看见填了 ProofOp 键就已经是 Query 回包键」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProofOp 键 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。查询证明 / 回包键值 / Query 日志标成另一对象 |
+| A1890 | 高 | 看见 CheckTx 请求 tx 是请求交易字节 / 看见填了 tx 会被写成已经是 Recheck，或当成已经是四门已经结算 | 工作实例：abci++_methods CheckTx Request 官方写 tx is The request transaction bytes |
+| A1891 | 高 | 看见 CheckTx 对照当前状态验、不应用这笔描述的状态改动 / 看见验了会被写成已经按 ExecuteTxState 验过，或当成已经参与处理块 | 官方：CheckTx validates the transaction against the current state of the application, for example, checking signatures and account balances, but does not apply any of the state changes described in the transaction |
+| A1892 | 高 | 看见 CheckTx 回包 info 是附加信息 / 看见回了信息会被写成已经是 Query 附加信息，或当成已经是 CheckTx 日志 | 官方：info is Additional information |
+| A1893 | 中 | 怎样写 CheckTx 请求余栏 / 怎样填 tx / 怎样填附加信息会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1894 | 记录 | 会与 312 / 373 / 384 糊成「看见填了 CheckTx 请求余栏就已经是 Recheck」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Recheck / 四门 / Query 附加信息标成另一对象 |
 
 
 

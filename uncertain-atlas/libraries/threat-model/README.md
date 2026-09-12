@@ -392,6 +392,7 @@
 | 383 | InitChain 请求余栏被写成已经没有参数 | 协议 + 文案 | 看见 InitChain 请求 consensus_params 是起步共识参数 / InitChain 请求 validators 是起步验证者名单 / InitChain 请求 app_state_bytes 是序列化起步应用状态 / InitChain 请求余栏当成已经没有参数或已经没有集合或已经验过应用状态 | 不变量 388；语料 C392 |
 | 384 | Info 回包余栏被写成已经是握手对齐 | 协议 + 文案 | 看见 Info 回包 data 是任意信息 / Info 回包 version 是应用软件语义版本 / Query 回包 codespace 是码的命名空间 / Info 回包余栏当成已经是握手对齐或已经是 app_version或已经是 CheckTx 码空间 | 不变量 389；语料 C393 |
 | 385 | ProofOp 键被写成已经是 Query 回包键 | 协议 + 文案 | 看见 ProofOp.key 是这棵默克尔树里这把键 / ProofOp.data 是这把键的编码证明 / CheckTx 回包 log 是应用日志输出 / ProofOp 键当成已经是 Query 回包键或已经是 proof_ops或已经是 Query 日志 | 不变量 390；语料 C394 |
+| 386 | CheckTx 请求余栏被写成已经是 Recheck | 协议 + 文案 | 看见 CheckTx 请求 tx 是请求交易字节 / CheckTx 对照当前状态验、不应用这笔描述的状态改动 / CheckTx 回包 info 是附加信息 / CheckTx 请求余栏当成已经是 Recheck或已经按 ExecuteTxState 验过或已经是 Query 附加信息 | 不变量 391；语料 C395 |
 
 ## 不自动覆盖
 

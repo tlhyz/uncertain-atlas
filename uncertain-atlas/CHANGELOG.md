@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 392）
+
+- CometBFT CheckTx 请求余栏工作实例（官方 ABCI++ Methods CheckTx Request / CheckTx Usage / CheckTx Response，实现 / CheckTx 请求余栏，不另写 19 节）：看见 CheckTx 请求 tx 是请求交易字节不是已经是 Recheck。看见 CheckTx 对照当前状态验、不应用这笔描述的状态改动不是已经按 ExecuteTxState 验过。看见 CheckTx 回包 info 是附加信息不是已经是 Query 附加信息。CheckTx 请求余栏不是不变量 312，也不是不变量 373，也不是不变量 384。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 391；语料 C395；模式 name-the-checktx-tx；反模式 checktxtx-sold-as-recheck；L10.3 第 387 条。填 L4.4 / CometBFT 档案 CheckTx 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 CheckTx 请求余栏、怎样填 tx、怎样填附加信息。不编博物馆页。不另写 19 节。不与 312 / 373 / 384 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。Recheck、四门、Query 附加信息标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 391）
 
 - CometBFT ProofOp 键工作实例（官方 ABCI++ Methods ProofOp / CheckTx Response，实现 / ProofOp 键，不另写 19 节）：看见 ProofOp.key 是这棵默克尔树里这把键不是已经是 Query 回包键。看见 ProofOp.data 是这把键的编码证明不是已经是 proof_ops。看见 CheckTx 回包 log 是应用日志输出不是已经是 Query 日志。ProofOp 键不是不变量 325，也不是不变量 380，也不是不变量 384。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
