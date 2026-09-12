@@ -100,3 +100,5 @@
 - [dkg-disabled-sold-as-persisted](dkg-disabled-sold-as-persisted.md)
 - [slot-sold-as-block-id](slot-sold-as-block-id.md)
 - [fiat-shamir-sold-as-bound](fiat-shamir-sold-as-bound.md)
+- [pertx-sold-as-block-rpc](pertx-sold-as-block-rpc.md)
+- [tx-depth-sold-as-api-depth](tx-depth-sold-as-api-depth.md)

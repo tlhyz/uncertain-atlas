@@ -15,4 +15,4 @@
 | 5.3 | [L05-M03-multi-client.md](L05-M03-multi-client.md) | 多实现为什么是药也是刀 |
 | 5.4 | [L05-M04-state-blobs-mev.md](L05-M04-state-blobs-mev.md) | 状态胀了、blob、mempool 不再是队列 |
 
-覆盖声明：L5.1→M5.1；L5.2→M5.3；L5.3→M5.4；L5.4→M5.2/M5.5/M5.6；M5.7→L9.9 方法 + 博物馆 CVE-2021-39137（官方 GHSA / postmortem）。
+覆盖声明：L5.1→M5.1；L5.2→M5.3；L5.3→M5.4；L5.4→M5.2/M5.5/M5.6；M5.7→L9.9 方法 + 博物馆 CVE-2021-39137（官方 GHSA / postmortem）+ Sepolia 2024-03 Engine API 尺寸（不变量 96）。

@@ -70,6 +70,8 @@
 - [sui-2026-05-dkg-verdict-disk](sui-2026-05-dkg-verdict-disk.md)（协议+实现+部署：DKG 按设计关掉不是重启后还记得；失败裁决未落盘不是随机性已经关闭）
 - [solana-2020-12-04-slot-as-block-id](solana-2020-12-04-slot-as-block-id.md)（协议+实现：槽号当块身份不是同槽两块已经能互修；乐观确认不是已经 rooted）
 - [solana-2025-05-02-elgamal-fiat-shamir](solana-2025-05-02-elgamal-fiat-shamir.md)（密码+协议+实现：验绿不是 Fiat-Shamir transcript 已经绑完）
+- [ethereum-2024-03-sepolia-engine-rpc](ethereum-2024-03-sepolia-engine-rpc.md)（实现+协议+部署：单笔低于入池上限不是拼块已被所有客户端接受）
+- [polkadot-2025-05-runtime-api-decode-depth](polkadot-2025-05-runtime-api-decode-depth.md)（协议+实现：交易解码深度有界不是 runtime API 再解整块已安全）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
 

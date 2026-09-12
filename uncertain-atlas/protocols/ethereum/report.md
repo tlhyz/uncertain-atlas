@@ -140,6 +140,7 @@ CL 的 `DomainType`（proposer ≠ attester；Altair 另加 `DOMAIN_SYNC_COMMITT
 | 事件 | 层 | 备注 |
 |---|---|---|
 | CVE-2021-39137 | 实现 | Geth RETURNDATA 别名导致错根、主网少数分叉。见 `tracks/failure-museum/cve-2021-39137.md`；官方 GHSA + geth postmortem |
+| Sepolia 2024-03 | 实现+协议+部署 | Engine API 沿用各家 HTTP RPC 尺寸；单笔低于入池上限 ≠ 拼块已被所有客户端接受。见 `tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md` |
 
 其它方向（须回官方 postmortem 再填七问）：共识客户端最终性/头问题、应用层合约与桥。不拿社交媒体列表充数。
 
