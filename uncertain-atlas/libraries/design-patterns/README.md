@@ -191,3 +191,4 @@
 - [name-the-lex-order](name-the-lex-order.md)
 - [name-the-testnet4](name-the-testnet4.md)
 - [name-the-reserves](name-the-reserves.md)
+- [name-the-legacy-sign](name-the-legacy-sign.md)

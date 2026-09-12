@@ -55,6 +55,8 @@
 
 精读：[`../../tracks/lifecycle/worked-example-signed-message-vs-control.md`](../../tracks/lifecycle/worked-example-signed-message-vs-control.md)（不变量 258）。看见签过的消息不是已经证明能控制资金。看见签过不是已经证明发过上一笔。看见资金证明清单不是已经齐，也不是已经没花。
 
+精读：[`../../tracks/lifecycle/worked-example-legacy-sign-vs-322.md`](../../tracks/lifecycle/worked-example-legacy-sign-vs-322.md)（不变量 294）。看见本页这种签消息不是已经是 322。看见头字节标了种类不是已经有地址。看见旧 P2PKH 习惯不是已经互操作。
+
 精读：[`../../tracks/lifecycle/worked-example-reserves-vs-spend.md`](../../tracks/lifecycle/worked-example-reserves-vs-spend.md)（不变量 293）。看见储备证明交易不是已经能花，也不是已经能确认。看见其余输入签过不是已经控制资金，也不是已经付过。看见 POR 栏不是已经是普通花费。
 
 精读：[`../../tracks/lifecycle/worked-example-silent-payment-vs-output.md`](../../tracks/lifecycle/worked-example-silent-payment-vs-output.md)（不变量 260）。看见静默付款地址不是已经有一笔链上输出。看见扫过不是已经收到。看见同一条码再用不是已经同一笔输出。
