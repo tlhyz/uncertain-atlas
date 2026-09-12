@@ -116,4 +116,4 @@ Ethereum L1 + 各类 rollup。具体 rollup 19 节只在通过独特思想过滤
 | 经济 | MEV / PBS：排序权被卖；mempool 不是公平队列 |
 
 **禁止假学习：** 「有 blob 所以和 Celestia 一种 DA。」「L2 出块 = L1 最终。」「PBS 解决了 MEV。」  
-**边界：** 不写 Verkle 已完成；不写构建者名单；不抄 MEV 金额与中继占比。不把 Deneb 的 6 个 blob 或后来的上限当永恒。精读：[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)、[`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。KZG 不是后量子。Builder API 不是 consensus-specs。
+**边界：** 不写 Verkle 已完成；不写构建者名单；不抄 MEV 金额与中继占比。不把 Deneb 的 6 个 blob 或后来的上限当永恒。精读：[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)、[`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。KZG 不是后量子。Builder API 不是 consensus-specs。状态访问的常数 gas ≠ 磁盘已是 O(1)：[`../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。

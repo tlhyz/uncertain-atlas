@@ -121,6 +121,7 @@ CVE / 官方安全披露 / 规范补丁 / 核心开发公告 > 审计 > 事后�
 - Solana 2020-12-04：槽号当块身份不是同槽两块已经能互修；乐观确认不是已经 rooted。  
 - Solana 2025-05-02：验绿不是 Fiat-Shamir transcript 已经绑完；Token 程序未改不是证明程序已经可靠。  
 - Sepolia 2024-03：单笔低于入池上限不是拼块已被所有客户端接受；各家 RPC 收到同一低值不是许多小交易不能顶满。  
+- Ethereum 2021-05：块 gas 上限不是墙钟已经有界；状态访问的常数 gas 不是磁盘已经是 O(1)。官方威胁披露，不是主网已停。  
 - Polkadot-SDK 2025-05：交易解码深度有界不是 runtime API 再解整块已安全；出块收下不是导入 check_inherents 已能解。  
 - Kusama 2025-08-24：组下标不是票向量下标；create_inherent 回 None 不是客户端已经报错。  
 - Kusama 2024-02-15：只被 Disabled 发起不是应标 Active；Active 不是已经 Confirmed；GRANDPA 跳过不是最终性还在走。  

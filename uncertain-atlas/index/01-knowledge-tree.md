@@ -278,11 +278,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.1 账户、nonce、EVM、gas · 必学
 - 状态转移、收据、日志
-- 覆盖：课文 L5.1
+- 覆盖：课文 L5.1。块 gas 上限 ≠ 墙钟已有界：[`../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）
 
 ### M5.2 状态树与状态膨胀 · 重要
 - trie、存档节点、无状态方向
-- 覆盖：课文 L5.4
+- 覆盖：课文 L5.4。状态访问的常数 gas ≠ 磁盘已是 O(1)：[`../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）
 
 ### M5.3 执行层 / 共识层 · 必学
 - validator、attestation、finality、fork choice
@@ -302,7 +302,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 覆盖：课文 L5.4；谁写列表 vs 谁签头 `tracks/mempool/worked-example-who-orders.md`（Builder API ≠ consensus-specs；不变量 27）
 
 ### M5.7 事故：共识分裂、客户端差异、状态问题 · 重要
-- 覆盖：L9.9 方法 + 博物馆 CVE-2021-39137 + Sepolia 2024-03 Engine API 尺寸（不变量 96）
+- 覆盖：L9.9 方法 + 博物馆 CVE-2021-39137 + Sepolia 2024-03 Engine API 尺寸（不变量 96）+ 2021-05 状态问题 / gas≠墙钟（不变量 101）
 
 ---
 
@@ -449,7 +449,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（七十一案；含 Kusama 2025-05 链下禁用≠已确认不参与、Kusama 2025-08 组下标≠票下标、Kusama 2024-02 Active≠Confirmed、Sepolia 2024-03 Engine API 尺寸、Polkadot-SDK 2025-05 交易深度套错对象、Solana 2025-05 Fiat-Shamir 漏哈希、Solana 2020-12 槽号当块身份、Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（七十二案；含 Ethereum 2021-05 gas≠墙钟、Kusama 2025-05 链下禁用≠已确认不参与、Kusama 2025-08 组下标≠票下标、Kusama 2024-02 Active≠Confirmed、Sepolia 2024-03 Engine API 尺寸、Polkadot-SDK 2025-05 交易深度套错对象、Solana 2025-05 Fiat-Shamir 漏哈希、Solana 2020-12 槽号当块身份、Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–100）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–101）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C104；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C105；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

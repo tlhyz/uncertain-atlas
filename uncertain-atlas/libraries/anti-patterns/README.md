@@ -105,3 +105,4 @@
 - [group-index-sold-as-vote-index](group-index-sold-as-vote-index.md)
 - [active-dispute-sold-as-confirmed](active-dispute-sold-as-confirmed.md)
 - [offchain-disable-sold-as-confirmed-ignore](offchain-disable-sold-as-confirmed-ignore.md)
+- [gas-sold-as-wallclock](gas-sold-as-wallclock.md)

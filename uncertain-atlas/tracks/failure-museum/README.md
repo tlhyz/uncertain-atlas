@@ -75,6 +75,7 @@
 - [kusama-2025-08-24-group-index-votes](kusama-2025-08-24-group-index-votes.md)（协议+实现+部署：组下标不是票向量下标；create_inherent 回 None 不是客户端已经报错）
 - [kusama-2024-02-15-disabled-active-dispute](kusama-2024-02-15-disabled-active-dispute.md)（协议+实现：Active 争议不是已经 Confirmed；GRANDPA 跳过不是最终性还在走）
 - [kusama-2025-05-09-offchain-disable](kusama-2025-05-09-offchain-disable.md)（协议+实现+部署：链下内存禁用不是已确认争议已经不参与；训练轮触发不是最终性还在走）
+- [ethereum-2021-05-state-gas-not-time](ethereum-2021-05-state-gas-not-time.md)（协议+实现+部署：块 gas 上限不是墙钟已经有界；状态访问的常数 gas 不是磁盘已经是 O(1)）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
 
