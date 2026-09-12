@@ -148,3 +148,4 @@
 - [predicate-sold-as-script](predicate-sold-as-script.md)
 - [policy-sold-as-consensus](policy-sold-as-consensus.md)
 - [blob-fee-sold-as-gas](blob-fee-sold-as-gas.md)
+- [client-sold-as-packet](client-sold-as-packet.md)

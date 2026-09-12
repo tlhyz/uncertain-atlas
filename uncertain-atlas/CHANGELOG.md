@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 147）
+
+- IBC 四对象工作实例（官方 IBC/TAO 规范，不另写 19 节）：轻客户端不是已经开连接。连接不是已经开通道。通道不是已经送达数据包。发出承诺不是对岸已经 recv。出处 github.com/cosmos/ibc ICS-02 / ICS-03 / ICS-04。
+- 不变量 146；语料 C150；模式 name-the-ibc-object；反模式 client-sold-as-packet；L10.3 第 142 条。填 L7.3 / CometBFT 档案 / 经济表 / 停链面地图。
+- 不抄握手步数 / 超时高度 / ibc-go 版本。不写怎样构造包或嵌套 ICS-20。不编博物馆页。不另写 19 节。不与 77 / 78 / 79 / 9 / 113 糊成一句。ICS-20 应用、通道升级、WASM 客户端标成另一对象。
+
 ## 2026-09-12（续 146）
 
 - EIP-4844 工作实例（Final EIP，不另写 19 节）：blob gas 不是普通执行 gas。EVM 能读 versioned hash 不是已经读到 blob 字节。付了 blob fee 不是数据已经永存。执行层不负责持久化 blob。出处 eips.ethereum.org EIP-4844。

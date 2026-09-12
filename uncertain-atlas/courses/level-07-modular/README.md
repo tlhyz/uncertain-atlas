@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 7.1 | [L07-M01-four-layers.md](L07-M01-four-layers.md) | M7.1 | 四层为什么要拆；执行费 ≠ DA 费（不变量 145） |
 | 7.2 | [L07-M02-data-availability.md](L07-M02-data-availability.md) | M7.2 | 有头为什么还不够；NMT 齐 ≠ 方阵可用 |
-| 7.3 | [L07-M03-shared-security.md](L07-M03-shared-security.md) | M7.4 / M7.5 入口 | 借安全借到什么；backed ≠ 可用；BABE ≠ GRANDPA |
+| 7.3 | [L07-M03-shared-security.md](L07-M03-shared-security.md) | M7.4 / M7.5 入口 | 借安全借到什么；backed ≠ 可用；BABE ≠ GRANDPA；IBC 客户端 ≠ 数据包（不变量 146） |
 | 7.4 | [L07-M04-rollup-tenant.md](L07-M04-rollup-tenant.md) | M7.3 | 乐观/ZK 租户与提款三条件 |
 
 M7.5 restaking 等：只收独特思想，不因有名展开。  

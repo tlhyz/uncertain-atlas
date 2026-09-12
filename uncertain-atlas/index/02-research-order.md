@@ -92,7 +92,7 @@ Propose → Prevote → Precommit → Commit
 
 ### 现在不深入的
 
-IBC 全协议、CosmWasm 生态、每个 Cosmos 应用链。先把引擎看懂。
+IBC 全协议、CosmWasm 生态、每个 Cosmos 应用链。先把引擎看懂。若对照 IBC，只读四层对象精读：[`../tracks/economic/worked-example-ibc-client-vs-packet.md`](../tracks/economic/worked-example-ibc-client-vs-packet.md)（客户端 ≠ 连接 ≠ 通道 ≠ 数据包已送达；不变量 146）。不另写 19 节。
 
 ---
 

@@ -242,7 +242,7 @@ invariant：H 返回的更新，H+1 改 `NextValidatorsHash`，H+2 才按新集�
 |---|---|
 | 强烈建议研究 | 锁、+2/3 相交、WAL、ABCI 分离、确定最终的用户语义 |
 | 可以参考 | mempool CheckTx 与共识分离、Prepare 改列表但 Process 默认 Accept、集合更新的 H+1/H+2/H+3 |
-| 暂时不需要 | IBC 全协议、CosmWasm |
+| 暂时不需要 | IBC 全协议、CosmWasm。若对照四层对象：[`../../tracks/economic/worked-example-ibc-client-vs-packet.md`](../../tracks/economic/worked-example-ibc-client-vs-packet.md)（不变量 146） |
 | 不建议采用 | 「我们 BFT，所以投个 2/3 就行」；把升级管理员做成可改历史的后门 |
 
 **建议：** 这是「不确定」默认该吃透的引擎家族。还没吃透前不要换更新的 BFT 品牌名。
