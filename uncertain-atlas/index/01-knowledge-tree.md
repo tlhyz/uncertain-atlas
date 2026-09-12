@@ -392,7 +392,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.3 存储 · 必学
 - WAL、原子提交、断电、剪枝、状态同步
 - 「写到一半断电怎么办」
-- 覆盖：课文 L9.3；崩溃精读 `tracks/implementation/worked-example-crash.md`。状态同步快照 ≠ 从创世复算，见 assumevalid / 弱主观；ABCI snapshot 方法尚未另开专页
+- 覆盖：课文 L9.3；崩溃精读 `tracks/implementation/worked-example-crash.md`。ABCI 快照 ≠ 创世重放：`tracks/implementation/worked-example-statesync.md`（只有轻验 AppHash 可信；不变量 38）
 
 ### M9.4 升级 · 重要
 - 软/硬分叉、runtime upgrade、紧急升级
@@ -446,7 +446,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C39；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C40；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

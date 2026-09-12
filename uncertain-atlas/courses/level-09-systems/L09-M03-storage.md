@@ -113,5 +113,5 @@ crash_at_any_point ⇒ restart ∈ {pre_H, post_H_complete}
 | 部署 | 断电、磁盘满、状态同步源 |
 | 经济 | 存档成本谁付（L2.6） |
 
-**禁止假学习：** 「fsync 慢所以可以先写一半。」
-**边界：** 见反模式 half-written-state。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)。
+**禁止假学习：** 「fsync 慢所以可以先写一半。」「state sync 过了所以从创世验证过。」
+**边界：** 见反模式 half-written-state。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)、[`../../tracks/implementation/worked-example-statesync.md`](../../tracks/implementation/worked-example-statesync.md)（快照跳过历史重放；锚是轻验 AppHash，不是 Snapshot.hash）。

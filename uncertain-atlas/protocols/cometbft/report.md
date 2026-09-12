@@ -104,7 +104,8 @@ gossip 共识消息、块、交易。验证者集合已知，和 Bitcoin 的无�
 ## 9. 存储
 
 WAL：先记「我要投什么」，再投票，防崩溃后投出矛盾票。  
-应用自己的数据库必须与高度原子对齐。断电半写是部署/实现经典坑。
+应用自己的数据库必须与高度原子对齐。断电半写是部署/实现经典坑。  
+State sync：装应用快照、不重放历史块；只有轻验 `AppHash` 可信。见 [`../../tracks/implementation/worked-example-statesync.md`](../../tracks/implementation/worked-example-statesync.md)。
 
 ---
 
@@ -177,7 +178,8 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 2. **WAL / replay** — 崩溃恢复。  
 3. **ABCI 适配** — 引擎与应用的字节契约。  
 4. **light client** — 跳过中间头时重叠的是 trusted `NextValidators`，不是新集合自嗨。见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。  
-5. **evidence** — `DuplicateVoteEvidence` / `LightClientAttackEvidence`；引擎通知应用，不自动 slash。见 [`../../tracks/economic/worked-example-evidence.md`](../../tracks/economic/worked-example-evidence.md)。
+5. **evidence** — `DuplicateVoteEvidence` / `LightClientAttackEvidence`；引擎通知应用，不自动 slash。见 [`../../tracks/economic/worked-example-evidence.md`](../../tracks/economic/worked-example-evidence.md)。  
+6. **state sync** — `OfferSnapshot` 只有轻验 AppHash 可信；收尾对 Info。见 [`../../tracks/implementation/worked-example-statesync.md`](../../tracks/implementation/worked-example-statesync.md)。
 
 仓库：CometBFT 上游。打开时核路径。
 

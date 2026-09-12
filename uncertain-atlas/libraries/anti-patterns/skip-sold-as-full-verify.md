@@ -17,6 +17,7 @@
 - 把 assumevalid 默认哈希说成共识指定的唯一历史
 - assumeutxo 装上快照后、背景链未到基块，就显示「已完全验证」
 - 把旧 checkpoint、assumevalid、WS 检查点写成一个开关
+- 把 ABCI state sync 写成从创世重放，或把 Snapshot.hash 当成轻验 AppHash（见 [statesync](../../tracks/implementation/worked-example-statesync.md)）
 
 ---
 

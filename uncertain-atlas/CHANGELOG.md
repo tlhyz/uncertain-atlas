@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 41）
+
+- ABCI state sync 精读：装应用快照、不重放历史块。OfferSnapshot 只有轻验 AppHash 可信；Snapshot.hash / metadata 可伪造。
+- 对照 assumeutxo（背景全验）、assumevalid、弱主观、BFT 轻跳过。
+- 不变量 38；语料 C40；反模式 statesync-sold-as-genesis；L10.3 第 34 条。
+- 不抄分块上限、最近快照条数。
+
 ## 2026-09-12（续 40）
 
 - 博物馆 CVE-2024-35202：部分块重建失败后实例未清，第二次 `blocktxn` 断言崩节点。High。碰撞不得罚对等节点。

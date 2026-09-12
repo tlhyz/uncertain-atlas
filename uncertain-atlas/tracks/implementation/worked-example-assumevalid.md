@@ -90,6 +90,8 @@
 | 关掉的办法 | （历史机制） | `-assumevalid=0` | 不 `loadtxoutset` | 从创世跟、或拒绝过期检查点 |
 | 挡低难度头垃圾 | **曾是**检查点第三份工作（0.3.2 起；0.14 后几乎只剩这一份） | 否 | 否 | 否 |
 
+CometBFT **state sync** 是第五列：跳过历史块重放，锚是轻验 `AppHash`，规范不要求背景再重放。见 [statesync](worked-example-statesync.md)。不要和 assumeutxo 糊成一词。
+
 ---
 
 ## 5. 攻击者
