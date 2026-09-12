@@ -89,6 +89,8 @@ Finalize 改了状态不是已经落盘：[`../../tracks/implementation/worked-e
 
 Prepare 没有确定性要求不是已经必须确定：[`../../tracks/implementation/worked-example-prepare-nondet-vs-process.md`](../../tracks/implementation/worked-example-prepare-nondet-vs-process.md)（不变量 338）。看见两边 raw 一样不是已经是同一份提案。看见 ExtendVote 没有确定性要求不是已经是同一份扩展。
 
+不该验排序相关有效性不是已经该在 CheckTx 里验：[`../../tracks/implementation/worked-example-checktx-weak-vs-process.md`](../../tracks/implementation/worked-example-checktx-weak-vs-process.md)（不变量 339）。看见拜占庭能提案一满块无效交易不是已经被池子挡住。看见 ProcessProposal 对付这种行为不是已经是 CheckTx。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

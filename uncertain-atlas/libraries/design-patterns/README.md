@@ -236,3 +236,4 @@
 - [name-the-synchrony-params](name-the-synchrony-params.md)
 - [name-the-maxbytes-cap](name-the-maxbytes-cap.md)
 - [name-the-prepare-nondet](name-the-prepare-nondet.md)
+- [name-the-checktx-weak](name-the-checktx-weak.md)

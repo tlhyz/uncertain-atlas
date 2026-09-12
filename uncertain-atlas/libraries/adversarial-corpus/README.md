@@ -353,6 +353,7 @@
 | C340 | 336 填了Precision≠已经是MessageDelay | 文案把填了 SynchronyParams.Precision / 提议者钟偏有界写成已经是 MessageDelay 或已经 timely；或把填了两个 / 这两个参数用于 PBTS 写成已经启用 PBTS 或已经不能关；或把用于 PBTS / 能出合法提案写成已经是永恒常数或已经是 BFT Time 中位数；或把 SynchronyParams 写成不变量 40 / 330 / 327 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C341 | 337 -1就按100MB验≠已经没有上限 | 文案把 MaxBytes 写成 -1 / 引擎按 100 MB 验写成已经没有上限或应用已经可以随便回；或把应用自己卡体积 / MAY 写成 -1 写成已经引擎不管了或已经只有应用这一把尺；或把必须 -1 或 0 < MaxBytes <= 100 MB / 默认能接到 21 MB 写成已经是默认 21 MB 或已经评估过带宽；或把 BlockParams.MaxBytes 写成不变量 299 / 63 / 331 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C342 | 338 Prepare没有确定性要求≠已经必须确定 | 文案把 PrepareProposal 没有确定性要求 / 可以依赖其它值或操作写成已经必须确定或已经和 Process / Finalize 同一把尺；或把两边 raw 提案一样 / v_p = v_q 写成已经是同一份 prepared 提案或已经必须同一份；或把 ExtendVote 没有确定性要求 / 同一块写成已经是同一份扩展或已经必须同一份；或把 Prepare / ExtendVote 确定性写成不变量 33 / 327 / 34 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C343 | 339 不该验排序相关有效性≠已经该在CheckTx里验 | 文案把 CheckTx 不该验所有有效性 / 有效性依赖排序写成已经该在 CheckTx 里验排序或已经按将要执行的那份验过；或把拜占庭可以不在乎 CheckTx / 能提案一满块无效交易写成已经被池子挡住或已经进不了共识；或把从 ABCI 1.0 起有 ProcessProposal 对付这种行为 / 规范点名 ProcessProposal 写成已经是 CheckTx 或已经是 Finalize；或把 CheckTx 弱过滤器写成不变量 312 / 33 / 313 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

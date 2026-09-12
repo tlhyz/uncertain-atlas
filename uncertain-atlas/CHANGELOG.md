@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 340）
+
+- CometBFT CheckTx 弱过滤器工作实例（官方 Requirements for the Application Mempool Connection / CheckTx，实现 / CheckTx 弱过滤器，不另写 19 节）：看见不该验排序相关有效性不是已经该在 CheckTx 里验。看见拜占庭能提案一满块无效交易不是已经被池子挡住。看见 ProcessProposal 对付这种行为不是已经是 CheckTx。CheckTx 弱过滤器不是不变量 312，也不是不变量 33，也不是不变量 313。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 339；语料 C343；模式 name-the-checktx-weak；反模式 checktxweak-sold-as-consensus；L10.3 第 335 条。填 L4.4 / CometBFT 档案 CheckTx 弱过滤器 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题 / mempool。
+- 不抄怎样写 CheckTx、怎样挑哪些检查留给 Process、怎样写 ProcessProposal。不编博物馆页。不另写 19 节。不与 312 / 33 / 313 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5。两份状态 / 四门 / 重放保护标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 339）
 
 - CometBFT Prepare / ExtendVote 确定性工作实例（官方 Requirements for the Application Formal Requirements，Req 11–12 之后，实现 / PrepareProposal 与 ExtendVote 的确定性，不另写 19 节）：看见 Prepare 没有确定性要求不是已经必须确定。看见两边 raw 一样不是已经是同一份提案。看见 ExtendVote 没有确定性要求不是已经是同一份扩展。Prepare / ExtendVote 确定性不是不变量 33，也不是不变量 327，也不是不变量 34。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

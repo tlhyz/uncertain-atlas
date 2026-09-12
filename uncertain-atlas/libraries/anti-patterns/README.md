@@ -341,3 +341,4 @@
 - [precision-sold-as-msgdelay](precision-sold-as-msgdelay.md)
 - [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md)
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md)
+- [checktxweak-sold-as-consensus](checktxweak-sold-as-consensus.md)
