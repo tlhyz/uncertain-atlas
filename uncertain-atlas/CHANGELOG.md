@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 82–83）
+
+- 博物馆 Elderflower：Authz 管道漏掉一次 `ValidateBasic()`，可能造出无效状态转移，或可通胀或盗窃。官方 critical。补丁打在 Dragonberry 公开包里。
+- 不变量 81；语料 C85；反模式 authz-sold-as-validated；L10.3 第 77 条。
+- 博物馆 Jackfruit / CVE-2021-41135 / GHSA-2p6r-37p9-89p2（High）：`Grant.ValidateBasic()` 读节点本地钟，临近过期可停链。资金安全。修法是删掉这次检查。
+- 不变量 82；语料 C86；反模式 local-clock-sold-as-validatebasic；L10.3 第 78 条。
+- 两句都对照：漏检查 ≠ 检查读钟。不写怎样绕过，不写过期如何间隔。不抄 authz。第一版可以不装授权代发。
+
 ## 2026-09-12（续 81）
 
 - 博物馆 ASA-2023-001 / GHSA-23px-mw2p-46qm（正文 Medium，徽章 Moderate）：Cosmovisor < v1.0.0 可 DoS；打开 `DAEMON_ALLOW_DOWNLOAD_BINARIES`（非默认）可走宿主机 RCE。

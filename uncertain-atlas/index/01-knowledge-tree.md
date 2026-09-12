@@ -132,7 +132,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M1.5 随机数与确定性 · 重要
 - 签名随机数泄漏
 - 共识里的超时不是「随便 sleep」
-- 课程：[`../courses/level-01-crypto/L01-M06-randomness-and-determinism.md`](../courses/level-01-crypto/L01-M06-randomness-and-determinism.md)（课号 L1.6，避免与已占用的 L1.5 后量子预告撞号）
+- 课程：[`../courses/level-01-crypto/L01-M06-randomness-and-determinism.md`](../courses/level-01-crypto/L01-M06-randomness-and-determinism.md)（课号 L1.6，避免与已占用的 L1.5 后量子预告撞号）。ValidateBasic 读本地钟 ≠ 已确定：Jackfruit / CVE-2021-41135（不变量 82）
 
 ### M1.6 后量子预告 · 进阶
 - 经典椭圆曲线怕什么
@@ -440,7 +440,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（五十二案；含 ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（五十四案；含 Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -468,11 +468,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–80）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–82）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C84；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C86；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

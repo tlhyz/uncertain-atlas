@@ -54,8 +54,10 @@
 - [asa-2024-010](asa-2024-010.md)（实现+协议：Int/Dec 位宽对不齐不是已对齐的数）
 - [isa-2025-001](isa-2025-001.md)（协议+实现：跨链确认的 JSON 反序列化不是已经确定；含 ASA-2025-004）
 - [asa-2024-007](asa-2024-007.md)（协议+实现+经济：超时回调里再跑超时不是 ICS-20 已经原子）
-- [dragonberry](dragonberry.md)（密码+协议+经济：ICS-23 验通过不是叶子已在原树；伪造超时不是 ICS-20 已结算；亲戚 Elderflower 不另立）
+- [dragonberry](dragonberry.md)（密码+协议+经济：ICS-23 验通过不是叶子已在原树；伪造超时不是 ICS-20 已结算）
 - [asa-2023-001](asa-2023-001.md)（部署+实现：升级高度上的进程管理器不是可信的下载通道）
+- [elderflower](elderflower.md)（协议+实现+经济：授权代发漏掉 ValidateBasic 不是内层已认证）
+- [jackfruit](jackfruit.md)（协议+实现：ValidateBasic 读本地钟不是已经确定；CVE-2021-41135）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
 

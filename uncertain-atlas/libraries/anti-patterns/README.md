@@ -85,3 +85,5 @@
 - [timeout-hook-sold-as-atomic](timeout-hook-sold-as-atomic.md)
 - [ics23-sold-as-sound](ics23-sold-as-sound.md)
 - [download-sold-as-upgrade](download-sold-as-upgrade.md)
+- [authz-sold-as-validated](authz-sold-as-validated.md)
+- [local-clock-sold-as-validatebasic](local-clock-sold-as-validatebasic.md)

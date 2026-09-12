@@ -1017,3 +1017,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A348 | 记录 | 正文 Medium、徽章 Moderate；无 CVE；DoS 机制咨询未写细 | 不发明 DoS 细节；不写怎样触发下载；不抄 Cosmovisor |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 03:45 UTC · 授权代发漏检查不是已认证；ValidateBasic 读钟不是已确定
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A349 | 高 | 授权代发会被写成内层已过 ValidateBasic | 博物馆 Elderflower：管道漏掉一次调用，或可通胀盗窃 |
+| A350 | 高 | ValidateBasic 读本地钟会被写成已确定 | 博物馆 Jackfruit：临近过期诚实节点各执一词停链 |
+| A351 | 中 | 两句会糊成「authz 有问题」一词 | 对照表；不变量 81 / 82；语料 C85 / C86 |
+| A352 | 记录 | Elderflower critical、无 CVE、补丁在 Dragonberry 包；Jackfruit High、CVE-2021-41135、页眉 Patched=None | 两处都记；资金安全 ≠ 链不会停；不写利用参数 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

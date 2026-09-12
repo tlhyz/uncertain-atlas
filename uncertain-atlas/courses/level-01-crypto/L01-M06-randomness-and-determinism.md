@@ -170,5 +170,5 @@ BFT 的 `timeoutPropose` / `timeoutPrevote` 一类**本地**等待决定：**还
 | 经济 | 解钥之后的盗币；裂根之后的「跟错根放货」 |
 
 **禁止假学习：** 「有 nonce 所以安全。」「超时就是 sleep。」「确定性签名所以没有侧信道。」「链上随机 = 节点 `rand()`。」  
-**边界：** 不讲 VRF 数学（见模式 vrf-sortition）；不选信标方案；不填未测超时毫秒；账户空洞细节在 L2.2。  
+**边界：** 不讲 VRF 数学（见模式 vrf-sortition）；不选信标方案；不填未测超时毫秒；账户空洞细节在 L2.2。ValidateBasic 读本地钟 ≠ 已确定：博物馆 [Jackfruit](../../tracks/failure-museum/jackfruit.md)。授权代发漏检查是另一句：[Elderflower](../../tracks/failure-museum/elderflower.md)。  
 **事实 / 推断 / 建议** 已分标。ECDSA 具体历史事故的七问，只收有 CVE / 官方披露的条目，不在本课点名未核新闻。
