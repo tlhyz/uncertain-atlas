@@ -291,7 +291,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M5.4 多客户端与可执行规范 · 必学
 - 为什么故意允许多个实现
 - 差异性测试如何抓住「实现保证」漏洞
-- 覆盖：课文 L5.3。单笔低于入池上限 ≠ 拼块已被所有客户端接受：[`../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md`](../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md)（不变量 96）。子群过了 ≠ 点已经在曲线上：[`../tracks/failure-museum/cve-2025-30147.md`](../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。Engine API `VALID` ≠ 已经改规范头：[`../tracks/finality/worked-example-processed-vs-forkchoice.md`](../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149；通道尺寸是 96，哪一次调用才改头是 149）。看见 RLP 编码硬帽 ≠ 已经改了气限，也不是已经是通道尺寸：[`../tracks/implementation/worked-example-rlp-cap-vs-gas.md`](../tracks/implementation/worked-example-rlp-cap-vs-gas.md)（不变量 202）。看见单笔气帽 ≠ 已经改了块气限，也不是已经是通道尺寸：[`../tracks/implementation/worked-example-tx-gas-cap-vs-block.md`](../tracks/implementation/worked-example-tx-gas-cap-vs-block.md)（不变量 203）
+- 覆盖：课文 L5.3。单笔低于入池上限 ≠ 拼块已被所有客户端接受：[`../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md`](../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md)（不变量 96）。子群过了 ≠ 点已经在曲线上：[`../tracks/failure-museum/cve-2025-30147.md`](../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。Engine API `VALID` ≠ 已经改规范头：[`../tracks/finality/worked-example-processed-vs-forkchoice.md`](../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149；通道尺寸是 96，哪一次调用才改头是 149）。看见 RLP 编码硬帽 ≠ 已经改了气限，也不是已经是通道尺寸：[`../tracks/implementation/worked-example-rlp-cap-vs-gas.md`](../tracks/implementation/worked-example-rlp-cap-vs-gas.md)（不变量 202）。看见单笔气帽 ≠ 已经改了块气限，也不是已经是通道尺寸：[`../tracks/implementation/worked-example-tx-gas-cap-vs-block.md`](../tracks/implementation/worked-example-tx-gas-cap-vs-block.md)（不变量 203）。看见对等节点宣布历史窗 ≠ 已经改了共识历史，也不是已经是 blob 服务窗或 assumevalid：[`../tracks/network/worked-example-history-window-vs-consensus.md`](../tracks/network/worked-example-history-window-vs-consensus.md)（不变量 207）
 
 ### M5.5 EIP、交易类型、blobs、rollup 入口 · 重要
 - 协议如何演化
@@ -302,7 +302,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 覆盖：课文 L5.4；谁写列表 vs 谁签头 `tracks/mempool/worked-example-who-orders.md`（Builder API ≠ consensus-specs；不变量 27）。烧掉基础费 ≠ MEV 已经解决：[`../tracks/mempool/worked-example-basefee-vs-tip.md`](../tracks/mempool/worked-example-basefee-vs-tip.md)（不变量 158）
 
 ### M5.7 事故：共识分裂、客户端差异、状态问题 · 重要
-- 覆盖：L9.9 方法 + 博物馆 CVE-2021-39137 + Sepolia 2024-03 Engine API 尺寸（不变量 96）+ RLP 编码硬帽≠气限 / ≠通道尺寸（不变量 202）+ 单笔气帽≠块气限（不变量 203）+ 2021-05 状态问题 / gas≠墙钟（不变量 101）+ 2016-11 OOG≠空账户删除已回滚（不变量 103）+ CVE-2025-30147 子群≠在曲线上（不变量 116）
+- 覆盖：L9.9 方法 + 博物馆 CVE-2021-39137 + Sepolia 2024-03 Engine API 尺寸（不变量 96）+ RLP 编码硬帽≠气限 / ≠通道尺寸（不变量 202）+ 单笔气帽≠块气限（不变量 203）+ 对等历史窗≠已改共识（不变量 207）+ 2021-05 状态问题 / gas≠墙钟（不变量 101）+ 2016-11 OOG≠空账户删除已回滚（不变量 103）+ CVE-2025-30147 子群≠在曲线上（不变量 116）
 
 ---
 
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–206）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–207）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C210；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C211；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

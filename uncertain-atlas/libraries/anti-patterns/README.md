@@ -209,3 +209,4 @@
 - [p256-sold-as-k1](p256-sold-as-k1.md)
 - [randao-sold-as-schedule](randao-sold-as-schedule.md)
 - [modexp-sold-as-reprice](modexp-sold-as-reprice.md)
+- [window-sold-as-consensus](window-sold-as-consensus.md)
