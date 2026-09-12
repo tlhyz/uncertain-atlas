@@ -223,3 +223,4 @@
 - [basefee-opcode-sold-as-market](basefee-opcode-sold-as-market.md)
 - [blobbasefee-sold-as-basefee](blobbasefee-sold-as-basefee.md)
 - [chainid-opcode-sold-as-signed](chainid-opcode-sold-as-signed.md)
+- [extcodehash-sold-as-copy](extcodehash-sold-as-copy.md)
