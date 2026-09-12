@@ -334,6 +334,7 @@
 | C321 | 317 CheckTx的Data≠已经被引擎用了 | 文案把 CheckTxResponse.Data / 回了结果字节写成已经被 CometBFT 用了或已经是 ExecTxResult.Data；或把 Data 不确定 / 各节点 Data 不一样写成已经分叉或已经和 Finalize 同一把尺子；或把 Priority / 排进提案优先写成已经是共识顺序或已经进了块；或把 CheckTxResponse 写成不变量 316 / 312 / 301 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C322 | 318 InitChain空名单≠已经没有集合 | 文案把 InitChain 回了空名单 / 没回验证者写成已经没有集合或已经用了应用自己的空集；或把一次更新里同一把公钥出现两次 / 重复写成已经按后一条改权或已经能恢复；或把 power 写成 0 / 名单里没有这个人写成已经删掉或已经能对不在集合里的人写 0；或把 ValidatorUpdate 写成不变量 35 / 303 / 302 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C323 | 319 InitChain空参数≠已经没有参数 | 文案把 InitChain 回了空 ConsensusParams / 没回参数写成已经没有参数或已经用了应用自己的空参数；或把 FinalizeBlock 回了空 / 没回 ConsensusParams 写成已经清掉或已经改了；或把只改了一个字段 / Block 只填了 MaxBytes 写成已经只改这一项或已经保持其余不变；或把 ConsensusParams 写成不变量 35 / 315 / 299 / 318 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C324 | 320 应用高度比引擎高≠已经允许 | 文案把应用高度比引擎高 / 应用先落了盘写成已经允许或已经能单独恢复；或把块已经进 blockstore / Finalize 结果已经落盘写成已经交差或已经 Commit；或把启动 Info / 对上了写成已经是任意高度或已经能跳步；或把 Crash Recovery 写成不变量 5 / 298 / 314 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

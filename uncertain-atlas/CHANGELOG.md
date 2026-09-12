@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 321）
+
+- CometBFT Crash Recovery 工作实例（官方 Requirements for the Application Crash Recovery，实现 / Crash Recovery，不另写 19 节）：看见应用高度比引擎高不是已经允许。看见块进了 blockstore 不是已经 Commit。看见启动 Info 对上不是已经能跳步。Crash Recovery 不是不变量 5，也不是不变量 298，也不是不变量 314。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 320；语料 C324；模式 name-the-crash-steps；反模式 crashsteps-sold-as-committed；L10.3 第 316 条。填 L4.4 / CometBFT 档案 Crash Recovery / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样落盘、怎样写 Commit、怎样做 WAL 旋转。不编博物馆页。不另写 19 节。不与 5 / 298 / 314 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。半写原子 / WAL / 启动对齐标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 320）
 
 - CometBFT ConsensusParams 工作实例（官方 Requirements for the Application Updating Consensus Parameters，实现 / ConsensusParams，不另写 19 节）：看见 InitChain 回了空 ConsensusParams 不是已经没有参数。看见 Finalize 没回不是已经清掉。看见只改一个字段不是已经只改这一项。ConsensusParams 不是不变量 35，也不是不变量 315，也不是不变量 299，也不是不变量 318。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

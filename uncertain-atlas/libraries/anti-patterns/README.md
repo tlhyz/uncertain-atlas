@@ -322,3 +322,4 @@
 - [checktxresponse-sold-as-exec](checktxresponse-sold-as-exec.md)
 - [validatorupdate-sold-as-set](validatorupdate-sold-as-set.md)
 - [consensusparams-sold-as-updated](consensusparams-sold-as-updated.md)
+- [crashsteps-sold-as-committed](crashsteps-sold-as-committed.md)

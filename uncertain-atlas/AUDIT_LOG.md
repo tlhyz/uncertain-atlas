@@ -3543,6 +3543,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1532 | 高 | 看见只改了其中一个字段 / 看见 Block 只填了 MaxBytes 会被写成已经只改这一项，或当成已经保持其余不变 | 官方：每一个不空字段整份套上；其余 Block 字段会被更新成默认 |
 | A1533 | 中 | 怎样编 ConsensusParams / 怎样选 MaxBytes MaxGas / 公钥类型表会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节。不把仓库默认当不确定默认 |
 | A1534 | 记录 | 会与 35 / 315 / 299 / 318 糊成「看见回了 ConsensusParams 就已经改完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。生效延迟 / 气上限 / MaxBytes -1 / 空验证者名单标成另一对象 |
+### 2026-09-12 · 看见块进了 store 不是已经 Commit
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A1535 | 高 | 看见应用高度比引擎高 / 看见应用先落了盘 会被写成已经允许，或当成已经能单独恢复 | 工作实例：app requirements Crash Recovery 官方写两边被指望一起崩；不该出现应用持久化高度高于引擎 |
+| A1536 | 高 | 看见块已经进 blockstore / 看见 Finalize 结果已经落盘 会被写成已经交差，或当成已经 Commit | 官方：一个高度算持久化要走三步，最后一步才是应用的 Commit |
+| A1537 | 高 | 看见启动 Info / 看见对上了 会被写成已经是任意高度，或当成已经能跳步 | 官方：Info 必须对上上次成功 Commit；只存了块要重放；乱序 panic；第一块 Commit 前崩了会再叫 InitChain |
+| A1538 | 中 | 怎样落盘 / 怎样写 Commit / 怎样做 WAL 旋转会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1539 | 记录 | 会与 5 / 298 / 314 糊成「看见块已经进 store 就已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Crash Recovery / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。半写原子 / WAL / 启动对齐标成另一对象 |
 
 
 
