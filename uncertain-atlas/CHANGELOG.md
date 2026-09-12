@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 80）
+
+- 博物馆 Dragonberry：ICS-23 描述语言缺 soundness，伪造缺席证明可让同一笔 ICS-20 既成功又失败，托管可被迭代抽空。官方标 critical。
+- 升 SDK 还必须加 ics23 replace；最初公开的 replace 写错过。+⅓ 打补丁后利用变成可见停链，不是谓词已齐；100% 才算修完。无 CVE。
+- 不变量 79；语料 C83；反模式 ics23-sold-as-sound；L10.3 第 75 条。
+- 对照不变量 12 / 13 / 66 / 77 / 78。亲戚 Elderflower（Authz 漏 ValidateBasic）不另立。不写怎样伪造证明。不抄 ⅓。第一版可以不装 IBC。
+
 ## 2026-09-12（续 79）
 
 - 博物馆 ASA-2024-007 / GHSA-j496-crgh-34mx（Critical）：ibc-hooks 的 `OnTimeout` 可能在包承诺删除前再执行同一 `MsgTimeout`，ICS-20 超时逻辑可能递归，托管可能丢资金或意外铸币。

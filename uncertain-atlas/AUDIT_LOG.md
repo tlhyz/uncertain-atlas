@@ -995,3 +995,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A340 | 记录 | Critical；无 CVE；CWE-696；须同时开 IBC + CosmWasm + hooks 包 ICS-20 | 不写怎样重入；不抄 CosmWasm；不写 soft-patch 内容 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 03:10 UTC · ICS-23 验通过不是叶子已在原树
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A341 | 高 | ICS-23 Verify 绿会被写成叶子已在原树、包真的没收到 | 博物馆 Dragonberry：伪造缺席可让同一笔 ICS-20 既成功又失败 |
+| A342 | 中 | 会和挂钩重入 / ack JSON / 验证明≠供给 / Merkle 同根糊 | 对照表；不变量 79；语料 C83 |
+| A343 | 中 | 只升 SDK、或 +⅓ 打补丁，会被写成 soundness 已齐 | 官方：必须另写 ics23 replace；+⅓ 只让利用变成可见停链；100% 才算修完 |
+| A344 | 记录 | 官方 critical；无 CVE；出处是论坛公告+复盘，不是 ibc-go GHSA 第四条 | 不写怎样伪造；不抄 ⅓；Elderflower 不另立；不把下游 cheqd GHSA 当规范 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
