@@ -191,6 +191,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | CVE-2015-20111 | 实现+部署 | UPnP 局域网打洞辅助；0.11.1 默认关以防库洞变结构风险。亲戚 CVE-2024-52917。见 `tracks/failure-museum/cve-2015-20111.md` |
 | CVE-2017-18350 | 实现+部署 | 出站 SOCKS 代理不是 P2P 对等节点；须先配置才脆弱。见 `tracks/failure-museum/cve-2017-18350.md` |
 | CVE-2024-52918 | 实现+部署 | 支付 URI 远程取单不是共识验证；修法是删 BIP70。见 `tracks/failure-museum/cve-2024-52918.md` |
+| 2026-06 privatebroadcast | 实现+部署+网络 | 开关 ≠ IP 已经不暴露；v2 失败后的 v1 重连 ≠ 仍走代理。见 `tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md` |
 
 七问只写有 CVE / 官方披露 / BIP 原文的条目。禁止用传闻填充。
 

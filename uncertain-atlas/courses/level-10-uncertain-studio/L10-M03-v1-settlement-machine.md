@@ -133,7 +133,10 @@
 102. 若头承诺两个根（交易列表 / 授权数据）：体可变拒绝不得先于对应承诺、把诚实头写入永久非法表（不变量 106）。Merkle 根对上不是授权数据已承诺。诚实头被拉黑不是块已经非法。第一版可以不做第二承诺根。不要抄版本 / 触发路径。馆藏：[`../../tracks/failure-museum/zcash-2026-nu5-body-poison.md`](../../tracks/failure-museum/zcash-2026-nu5-body-poison.md)。这和同根不同列表（不变量 12）、变异清别人下载（不变量 39）、Engine API 尺寸（92）、跟踪复位（100）不是同一句。  
 103. 若规范允许某曲线点编码进验证明：公开输入转换必须覆盖或入口显式拒，不得恐慌（不变量 107）。规范允许身份 `rk` 不是验证明已经能吃。电路支持零点不是转换已经写对。排除零点是收紧，不是陈述本来就禁止。第一版可以不做屏蔽授权随机化点。不要抄版本 / 曲线方程。馆藏：[`../../tracks/failure-museum/zcash-2026-identity-rk-panic.md`](../../tracks/failure-museum/zcash-2026-identity-rk-panic.md)。这和电路≠陈述（98）、`ephemeralKey`（104）、估值 0（86）不是同一句。  
 104. 若规范要求字段是合法非零点：两实现必须同拒无效编码（不变量 108）。一家收下不是规范已经允许。先拒零点不是全部无效编码已挡。与 `rk` 同曲线不是同一对象。第一版可以不做一次性密钥点栏。不要抄版本号。馆藏：[`../../tracks/failure-museum/zcash-2026-ephemeralkey-split.md`](../../tracks/failure-museum/zcash-2026-ephemeralkey-split.md)。这和身份 `rk`（103）、归一化（101）、电路≠陈述（98）不是同一句。  
-105. 若供给与池是两本账：对不上必须拒并停在上一高度，不得中止成崩溃循环（不变量 109）。coinbase 正屏蔽余额不是供给已经对齐。`ConnectBlock` 对不上不是重启能起来。活性崩溃不是合法集已改。第一版可以不做 coinbase 进屏蔽池。不要抄版本 / 规范金额上限。馆藏：[`../../tracks/failure-museum/zcash-2026-coinbase-balance-crash.md`](../../tracks/failure-museum/zcash-2026-coinbase-balance-crash.md)。这和原子高度（不变量 5）、奖励池溢出（70）、跟踪复位（100）不是同一句。
+105. 若供给与池是两本账：对不上必须拒并停在上一高度，不得中止成崩溃循环（不变量 109）。coinbase 正屏蔽余额不是供给已经对齐。`ConnectBlock` 对不上不是重启能起来。活性崩溃不是合法集已改。第一版可以不做 coinbase 进屏蔽池。不要抄版本 / 规范金额上限。馆藏：[`../../tracks/failure-museum/zcash-2026-coinbase-balance-crash.md`](../../tracks/failure-museum/zcash-2026-coinbase-balance-crash.md)。这和原子高度（不变量 5）、奖励池溢出（70）、跟踪复位（100）不是同一句。  
+106. 若做链上选举 / 许可冷冻 / 质量地板：改可达分的治理必须同时带地板（不变量 110）。改冻结门槛不是选举地板已经配对。出块还在不是纪元已经转。诚实解被 ScoreTooLow 罚不是提交者作恶。第一版可以不做这三件套。不要抄金额 / 公投号。馆藏：[`../../tracks/failure-museum/polkadot-2026-06-election-score-floor.md`](../../tracks/failure-museum/polkadot-2026-06-election-score-floor.md)。这和集合延迟（不变量 35）、治理 panic（54）、EndBlocker 停链（67）、争议禁用（95/96）不是同一句。  
+107. 若钱包可连远程节点：交出站历史的 RPC 必须先看 trusted（不变量 111）。从文件加载不是出站 TXID 已经不泄漏。trusted 标记不是这条 RPC 已经检查。环库回填还在不是只给旧钱包跑一次。第一版可以不连远程守护进程。不要转复现步骤。馆藏：[`../../tracks/failure-museum/monero-2025-08-find-and-save-rings.md`](../../tracks/failure-museum/monero-2025-08-find-and-save-rings.md)。这和付款 URI（51）、代理（50）、隐私广播（108）不是同一句。  
+108. 若提供隐私广播 / 单笔另开连接：每一次降级重连必须仍走同一代理谓词（不变量 112）。开关不是 IP 已经不暴露。v2 失败后的 v1 重连不是仍走代理。第一次走 Tor 不是降级已覆盖。第一版可以不提供该开关。不要抄版本 / 端口。馆藏：[`../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md`](../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md)。这和代理当对等（50）、付款 URI（51）、钱包泄 TXID（107）不是同一句。
 
 **以后再发明**
 
@@ -202,7 +205,10 @@
 - 把体可变拒绝先于授权承诺写成头已经绑死，或把诚实头写进永久非法表写成块已经非法。  
 - 把规范允许身份 `rk` 写成验证明已经能吃，或把公开输入转换恐慌写成电路不支持零点。  
 - 把一家收下无效 `ephemeralKey` 写成规范已经允许，或把与 `rk` 同曲线写成同一对象。  
-- 把 coinbase 正屏蔽余额写成供给已经对齐，或把 `ConnectBlock` 对不上写成重启能起来。
+- 把 coinbase 正屏蔽余额写成供给已经对齐，或把 `ConnectBlock` 对不上写成重启能起来。  
+- 把改冻结门槛写成选举地板已经配对，或把出块还在写成纪元已经转。  
+- 把从文件加载钱包写成出站 TXID 已经不泄漏，或把 trusted 标记写成这条 RPC 已经检查。  
+- 把 privatebroadcast 开关写成 IP 已经不暴露，或把 v2 失败后的 v1 重连写成仍走代理。
 
 ---
 
@@ -253,7 +259,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百零五条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百零八条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

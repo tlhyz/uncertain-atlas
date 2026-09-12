@@ -125,6 +125,9 @@ CVE / 官方安全披露 / 规范补丁 / 核心开发公告 > 审计 > 事后�
 - Zcash ZIP 257：电路实现不是已经写明的陈述；旧验证钥过验不是新电路已经安全。  
 - Ethereum 2016-11-24：交易以 out-of-gas 结束不是空账户删除已经回滚。  
 - Zcash ZIP 256：重复块头静默复位跟踪不是闸门还在转；反序列化归一化成零不是编码必须为零；体可变拒绝先于授权承诺不是头已经绑死；规范允许身份 rk 不是验证明已经能吃；一家收下无效 ephemeralKey 不是规范已经允许；coinbase 正屏蔽余额不是重启能起来。  
+- Polkadot 2026-06-30：改冻结门槛不是选举地板已经配对；出块还在不是纪元已经转。  
+- Monero 2025-08-26：从文件加载钱包不是出站 TXID 已经不泄漏；trusted 标记不是这条 RPC 已经检查。  
+- Bitcoin 2026-06-06：privatebroadcast 开关不是 IP 已经不暴露；v2 失败后的 v1 重连不是仍走代理。  
 - Polkadot-SDK 2025-05：交易解码深度有界不是 runtime API 再解整块已安全；出块收下不是导入 check_inherents 已能解。  
 - Kusama 2025-08-24：组下标不是票向量下标；create_inherent 回 None 不是客户端已经报错。  
 - Kusama 2024-02-15：只被 Disabled 发起不是应标 Active；Active 不是已经 Confirmed；GRANDPA 跳过不是最终性还在走。  

@@ -84,8 +84,11 @@
 - [zcash-2026-identity-rk-panic](zcash-2026-identity-rk-panic.md)（密码+协议+实现：规范允许身份 rk 不是验证明已经能吃）
 - [zcash-2026-ephemeralkey-split](zcash-2026-ephemeralkey-split.md)（协议+实现：一家收下无效 ephemeralKey 不是规范已经允许）
 - [zcash-2026-coinbase-balance-crash](zcash-2026-coinbase-balance-crash.md)（实现+协议：coinbase 正屏蔽余额不是重启能起来）
+- [polkadot-2026-06-election-score-floor](polkadot-2026-06-election-score-floor.md)（协议+治理+经济：改冻结门槛不是选举地板已经配对；出块还在不是纪元已经转）
+- [monero-2025-08-find-and-save-rings](monero-2025-08-find-and-save-rings.md)（实现+部署：从文件加载钱包不是出站 TXID 已经不泄漏）
+- [bitcoin-2026-06-privatebroadcast-v1-retry](bitcoin-2026-06-privatebroadcast-v1-retry.md)（实现+部署+网络：privatebroadcast 开关不是 IP 已经不暴露）
 
-待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余行（Sprout 验证明、超范围池增量写盘、P2SH sigop、输入顺序）有独立谓词且不与 13 / 43 / 42 / 107–109 / 52911 重复才另档。
+待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余薄行、Pectra 测试网配置、XCM origin leak 等：有独立官方句且不与已归档条重复才另档。Pectra RCA 仍在项目文件夹，本环境未取到独立复盘页，不写。
 
 写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)  
 五层对照精读：[`worked-example-five-layers.md`](worked-example-five-layers.md)（同一通胀案，五层各说什么）。  

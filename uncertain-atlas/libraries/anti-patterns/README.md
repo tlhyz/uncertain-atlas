@@ -114,3 +114,6 @@
 - [identity-rk-sold-as-handled](identity-rk-sold-as-handled.md)
 - [ephemeralkey-sold-as-valid](ephemeralkey-sold-as-valid.md)
 - [coinbase-balance-sold-as-restart-safe](coinbase-balance-sold-as-restart-safe.md)
+- [chill-sold-as-score-paired](chill-sold-as-score-paired.md)
+- [wallet-load-sold-as-no-txid](wallet-load-sold-as-no-txid.md)
+- [privatebroadcast-sold-as-hidden](privatebroadcast-sold-as-hidden.md)
