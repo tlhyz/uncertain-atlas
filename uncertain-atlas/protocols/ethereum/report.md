@@ -79,7 +79,7 @@ gas 是资源计量，防无限循环变成网络武器。它不是「手续费�
 
 ## 8. 网络
 
-devp2p / discv5 等。块与 blob（EIP-4844 后）传播是新带宽账。看见忽略 hello / ping 版本或多余字段不是已经谈成新线协议；看见跟 Homestead 一起上不是已经改了共识；看见仍收旧握手不是已经退役旧格式：[`../../tracks/network/worked-example-eip8-vs-already-new.md`](../../tracks/network/worked-example-eip8-vs-already-new.md)（不变量 235）。看见分叉标识对上不是已经同一条链；看见通告了下一分叉不是已经兼容：[`../../tracks/network/worked-example-forkid-vs-same-chain.md`](../../tracks/network/worked-example-forkid-vs-same-chain.md)（不变量 239）。看见签过的节点记录不是已经是最新一份；看见能多写键不是已经换了身份方案：[`../../tracks/network/worked-example-enr-vs-newest.md`](../../tracks/network/worked-example-enr-vs-newest.md)（不变量 240）。  
+devp2p / discv5 等。块与 blob（EIP-4844 后）传播是新带宽账。看见忽略 hello / ping 版本或多余字段不是已经谈成新线协议；看见跟 Homestead 一起上不是已经改了共识；看见仍收旧握手不是已经退役旧格式：[`../../tracks/network/worked-example-eip8-vs-already-new.md`](../../tracks/network/worked-example-eip8-vs-already-new.md)（不变量 235）。看见分叉标识对上不是已经同一条链；看见通告了下一分叉不是已经兼容：[`../../tracks/network/worked-example-forkid-vs-same-chain.md`](../../tracks/network/worked-example-forkid-vs-same-chain.md)（不变量 239）。看见签过的节点记录不是已经是最新一份；看见能多写键不是已经换了身份方案：[`../../tracks/network/worked-example-enr-vs-newest.md`](../../tracks/network/worked-example-enr-vs-newest.md)（不变量 240）。看见 ping 里的记录序号不是已经有当前记录；看见能发请求不是已经解析；看见 FindNode 找到人不是已经有记录：[`../../tracks/network/worked-example-enr-request-vs-have.md`](../../tracks/network/worked-example-enr-request-vs-have.md)（不变量 241）。  
 审查可发生在构建者/中继，不只在「验证者人数」。
 
 ---

@@ -243,3 +243,4 @@
 - [uncle-diff-sold-as-exact](uncle-diff-sold-as-exact.md)
 - [forkid-sold-as-same-chain](forkid-sold-as-same-chain.md)
 - [enr-sold-as-newest](enr-sold-as-newest.md)
+- [enr-seq-sold-as-have](enr-seq-sold-as-have.md)

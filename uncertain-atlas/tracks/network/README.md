@@ -18,3 +18,4 @@ blocksync 目标必须可归因：[`../failure-museum/asa-2025-001.md`](../failu
 忽略版本 ≠ 已经在说新协议：[`worked-example-eip8-vs-already-new.md`](worked-example-eip8-vs-already-new.md)（看见能吞多余字段不是已经谈成新线协议；跟 Homestead 一起上不是已经改共识；仍收旧握手不是已经退役旧格式；8 ≠ 2 ≠ 7642）。
 分叉标识 ≠ 已经同一条链：[`worked-example-forkid-vs-same-chain.md`](worked-example-forkid-vs-same-chain.md)（看见分叉标识对上不是已经同一条链；通告了下一分叉不是已经兼容；2124 ≠ 8 ≠ 7642 ≠ 7910）。
 签过的节点记录 ≠ 已经最新：[`worked-example-enr-vs-newest.md`](worked-example-enr-vs-newest.md)（看见签过的记录不是已经是最新一份；能多写键不是已经换了身份方案；778 ≠ 2124 ≠ 8 ≠ 7642）。
+ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`](worked-example-enr-request-vs-have.md)（看见 ping 里的记录序号不是已经有当前记录；能发请求不是已经解析；FindNode 找到人不是已经有记录；868 ≠ 778 ≠ 2124 ≠ 8）。
