@@ -4112,6 +4112,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2073 | 中 | 怎样写 Process 请求末栏 / 怎样填 next_validators_hash / 怎样填 proposer_address 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2074 | 记录 | 会与 426 / 413 / 423 糊成「看见填了 Process 请求末栏就已经是 Prepare 请求末栏的 next_validators_hash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 请求末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 Prepare 请求末栏的 next_validators_hash / 已经正在造这份提案 / 已经是初步交易列表 标成另一对象 |
 
+| A2075 | 高 | 看见 FinalizeBlockRequest.hash 是已决块的哈希 / 看见填了 hash 会被写成已经是 ProcessProposalRequest.hash，或当成已经跑过 Process | 官方表：hash is The block's hash |
+| A2076 | 高 | 看见 FinalizeBlockRequest.misbehavior 是过错验证者信息列表 / 看见填了 misbehavior 会被写成已经定奖惩，或当成已经是 ProcessProposalRequest.misbehavior | 官方表：misbehavior is List of information about validators that misbehaved |
+| A2077 | 高 | 看见 FinalizeBlockRequest.next_validators_hash 是下一验证者集合默克尔根 / 看见填了 next_validators_hash 会被写成已经是 Process 请求末栏的 next_validators_hash，或当成已经是 Prepare 请求末栏的 next_validators_hash | 官方表：next_validators_hash is Merkle root of the next validator set |
+| A2078 | 中 | 怎样写 Finalize 请求余栏 / 怎样填 hash / 怎样填 misbehavior 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2079 | 记录 | 会与 419 / 420 / 427 糊成「看见填了 Finalize 请求余栏就已经是 ProcessProposalRequest.hash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 ProcessProposalRequest.hash / 已经定奖惩 / 已经是 Process 请求末栏的 next_validators_hash 标成另一对象 |
+
 
 
 

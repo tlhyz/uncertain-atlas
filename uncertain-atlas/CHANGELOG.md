@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 429）
+
+- CometBFT Finalize 请求余栏工作实例（官方 ABCI++ Methods FinalizeBlock Request，实现 / Finalize 请求余栏，不另写 19 节）：看见 FinalizeBlockRequest.hash 是已决块的哈希不是已经是 ProcessProposalRequest.hash。看见 FinalizeBlockRequest.misbehavior 是过错验证者信息列表不是已经定奖惩。看见 FinalizeBlockRequest.next_validators_hash 是下一验证者集合默克尔根不是已经是 Process 请求末栏的 next_validators_hash。Finalize 请求余栏不是不变量 419，也不是不变量 420，也不是不变量 427。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 428；语料 C432；模式 name-the-fin-req-rest；反模式 finreqrest-sold-as-procreq；L10.3 第 424 条。填 L4.4 / CometBFT 档案 Finalize 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 请求余栏、怎样填 hash、怎样填 misbehavior。不编博物馆页。不另写 19 节。不与 419 / 420 / 427 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是 ProcessProposalRequest.hash、已经定奖惩、已经是 Process 请求末栏的 next_validators_hash 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 428）
 
 - CometBFT Process 请求末栏工作实例（官方 ABCI++ Methods ProcessProposal Request / PrepareProposal Response，实现 / Process 请求末栏，不另写 19 节）：看见 ProcessProposalRequest.next_validators_hash 是下一验证者集合默克尔根不是已经是 Prepare 请求末栏的 next_validators_hash。看见 ProcessProposalRequest.proposer_address 是造了这份提案的验证者地址不是已经正在造这份提案。看见 PrepareProposalResponse.txs 是可能改过的、挑进拟议块的交易列表不是已经是初步交易列表。Process 请求末栏不是不变量 426，也不是不变量 413，也不是不变量 423。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
