@@ -285,3 +285,4 @@
 - [policy-sold-as-descriptor](policy-sold-as-descriptor.md)
 - [combo-sold-as-one-script](combo-sold-as-one-script.md)
 - [raw-sold-as-named](raw-sold-as-named.md)
+- [musig-xpub-sold-as-xpub](musig-xpub-sold-as-xpub.md)
