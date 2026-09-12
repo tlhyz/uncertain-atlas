@@ -98,3 +98,5 @@
 - [quarantine-sold-as-fork](quarantine-sold-as-fork.md)
 - [cancel-sold-as-no-debit](cancel-sold-as-no-debit.md)
 - [dkg-disabled-sold-as-persisted](dkg-disabled-sold-as-persisted.md)
+- [slot-sold-as-block-id](slot-sold-as-block-id.md)
+- [fiat-shamir-sold-as-bound](fiat-shamir-sold-as-bound.md)

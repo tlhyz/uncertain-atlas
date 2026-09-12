@@ -1,7 +1,7 @@
 # 实例：「停链」不是一种事故
 
 目的 A + B。不是新馆藏，不新增未核验事故。  
-先修：L0.8、L9.9、不变量 71 / 73 / 74 / 75 / 77 / 82 / 85 / 86 / 87 / 88 / 89 / 90 / 91 / 92 / 93。
+先修：L0.8、L9.9、不变量 71 / 73 / 74 / 75 / 77 / 82 / 85 / 86 / 87 / 88 / 89 / 90 / 91 / 92 / 93 / 94。
 
 产品句里的「我们会停链」如果只写三个字，下一辆车学不到。  
 馆藏里至少有七种停，外加两种「看起来像停、其实不是」。必须点名是哪一种。
@@ -25,6 +25,7 @@
 | 检查点隔离拒证 | 提交分叉后无法认证，停以求安全；无用户可见分叉 | 共识提交优化路径在特定 GC 下分叉 | [Sui 2026-01-14](sui-2026-01-14-commit-divergence.md) | 91 |
 | 取消后仍砸气费、结算下溢 | 混合气费在取消路径砸币，负增量加到零余额，进程崩 | 两笔同时抢同一地址余额；另一种取消理由可盖住余额不足 | [Sui 2026-05 Part 1–2](sui-2026-05-gas-smash-cancel.md) | 92 |
 | DKG 失败未落盘、换纪元排不空 | 按设计关掉随机性，重启后忘了，队列排不空，纪元关不了 | 为打另一补丁而重启；失败裁决只在内存 | [Sui 2026-05 Part 3](sui-2026-05-dkg-verdict-disk.md) | 93 |
+| 同槽两块按槽号当同一对象 | 少数分区互修不了，新块确认停；乐观段可被丢掉 | 同槽两份不同块 + intake/repair 用槽号当身份 | [Solana 2020-12-04](solana-2020-12-04-slot-as-block-id.md) | 94 |
 | 治理参数吃不了 | 启用高度提案让进程 panic | 能推治理参数的人 | [ASA-2024-001](asa-2024-001.md) | 58 |
 | 解码 / 类型 panic | 深嵌套栈溢出，或 Dec 进 Int | 能送嵌套消息的人；或金额路径 | [ASA-2024-0012](asa-2024-0012.md)、[ASA-2024-010](asa-2024-010.md) | 70、76 |
 | 先流言后处理 | 非法结构传出去，网络停 | 能发畸形 P2P 对象的人 | [ASA-2025-003](asa-2025-003.md) | 60 |
@@ -70,6 +71,6 @@
 
 ## 回归测试形状
 
-文案把「停链」写成一种事故必须红。把停链交易写成已停必须红。把 EndBlocker 出错写成可跳过必须红。把 +⅓ 打补丁写成不会停必须红。把 Barberry 锁钱写成高度停必须红。把失败 durable nonce 写成已消费 / Tower 已一致必须红。把「正确版本已确认」写成下一领导者必会往上建必须红。把 vote-only / 落到 Block Repair 写成高度已停必须红。把入站洪水写成已经停链必须红。把哨兵有效槽 0 写成已可见必须红。把估值为 0 写成已安全必须红。把隔离拒证写成已经分叉必须红。把因余额不足取消写成已经不再扣款必须红。把 DKG 按设计关掉写成重启后仍关必须红。
+文案把「停链」写成一种事故必须红。把停链交易写成已停必须红。把 EndBlocker 出错写成可跳过必须红。把 +⅓ 打补丁写成不会停必须红。把 Barberry 锁钱写成高度停必须红。把失败 durable nonce 写成已消费 / Tower 已一致必须红。把「正确版本已确认」写成下一领导者必会往上建必须红。把 vote-only / 落到 Block Repair 写成高度已停必须红。把入站洪水写成已经停链必须红。把哨兵有效槽 0 写成已可见必须红。把估值为 0 写成已安全必须红。把隔离拒证写成已经分叉必须红。把因余额不足取消写成已经不再扣款必须红。把 DKG 按设计关掉写成重启后仍关必须红。把槽号写成块身份 / 乐观确认写成已 rooted 必须红。
 
-对照：不变量 84–93；语料 C88–C97；反模式 [halt-sold-as-one-kind](../../libraries/anti-patterns/halt-sold-as-one-kind.md)、[durable-nonce-sold-as-consumed](../../libraries/anti-patterns/durable-nonce-sold-as-consumed.md)、[confirmed-dup-sold-as-parent](../../libraries/anti-patterns/confirmed-dup-sold-as-parent.md)、[recovery-shred-sold-as-filtered](../../libraries/anti-patterns/recovery-shred-sold-as-filtered.md)、[sentinel-slot-sold-as-visible](../../libraries/anti-patterns/sentinel-slot-sold-as-visible.md)、[flood-sold-as-halt](../../libraries/anti-patterns/flood-sold-as-halt.md)、[zero-cost-sold-as-safe](../../libraries/anti-patterns/zero-cost-sold-as-safe.md)、[quarantine-sold-as-fork](../../libraries/anti-patterns/quarantine-sold-as-fork.md)、[cancel-sold-as-no-debit](../../libraries/anti-patterns/cancel-sold-as-no-debit.md)、[dkg-disabled-sold-as-persisted](../../libraries/anti-patterns/dkg-disabled-sold-as-persisted.md)。
+对照：不变量 84–95；语料 C88–C99；反模式 [halt-sold-as-one-kind](../../libraries/anti-patterns/halt-sold-as-one-kind.md)、[durable-nonce-sold-as-consumed](../../libraries/anti-patterns/durable-nonce-sold-as-consumed.md)、[confirmed-dup-sold-as-parent](../../libraries/anti-patterns/confirmed-dup-sold-as-parent.md)、[recovery-shred-sold-as-filtered](../../libraries/anti-patterns/recovery-shred-sold-as-filtered.md)、[sentinel-slot-sold-as-visible](../../libraries/anti-patterns/sentinel-slot-sold-as-visible.md)、[flood-sold-as-halt](../../libraries/anti-patterns/flood-sold-as-halt.md)、[zero-cost-sold-as-safe](../../libraries/anti-patterns/zero-cost-sold-as-safe.md)、[quarantine-sold-as-fork](../../libraries/anti-patterns/quarantine-sold-as-fork.md)、[cancel-sold-as-no-debit](../../libraries/anti-patterns/cancel-sold-as-no-debit.md)、[dkg-disabled-sold-as-persisted](../../libraries/anti-patterns/dkg-disabled-sold-as-persisted.md)、[slot-sold-as-block-id](../../libraries/anti-patterns/slot-sold-as-block-id.md)、[fiat-shamir-sold-as-bound](../../libraries/anti-patterns/fiat-shamir-sold-as-bound.md)。

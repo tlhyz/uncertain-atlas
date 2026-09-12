@@ -13,4 +13,4 @@
 | 8.3 | [L08-M03-succinct-history.md](L08-M03-succinct-history.md) | 小证明如何谈论整条历史 |
 | 8.4 | [L08-M04-circuit-as-machine.md](L08-M04-circuit-as-machine.md) | 电路/证人/可靠性（多项式后置） |
 
-覆盖声明：L8.1→M8.1（博物馆 CVE-2019-7167：验证明 ≠ 供给）；L8.2→M8.2；L8.3→M8.3（小证明 ≠ 数据还在）；L8.4→M8.4 架构层。
+覆盖声明：L8.1→M8.1（博物馆 CVE-2019-7167：验证明 ≠ 供给；Solana 2025-05：验绿 ≠ Fiat-Shamir 已绑完）；L8.2→M8.2；L8.3→M8.3（小证明 ≠ 数据还在）；L8.4→M8.4 架构层。
