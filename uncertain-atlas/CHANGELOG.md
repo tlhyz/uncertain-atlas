@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 365）
+
+- CometBFT Validator 类型工作实例（官方 ABCI++ Methods Data Types Validator / ValidatorUpdate，实现 / Validator 类型，不另写 19 节）：看见 Validator 用 address 认人不是已经带了公钥。看见不带 PubKey 是为了不在 ABCI 上传大后量子公钥不是已经选型。看见 ValidatorUpdate 用公钥认人不是已经改了集合。Validator 类型不是不变量 35，也不是不变量 318，也不是不变量 363。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 364；语料 C368；模式 name-the-validator-type；反模式 validator-sold-as-update；L10.3 第 360 条。填 L4.4 / CometBFT 档案 Validator 类型 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编 Validator、怎样编 ValidatorUpdate、怎样在 ABCI 上传钥。不编博物馆页。不另写 19 节。不与 35 / 318 / 363 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。集合延迟、空名单、回包义务标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 364）
 
 - CometBFT Finalize 回包义务工作实例（官方 ABCI++ Methods FinalizeBlock Usage，实现 / Finalize 回包义务，不另写 19 节）：看见 Finalize 等价于 ABCI 1.0 那三步不是已经是四门已经结算。看见可以用 decided_last_commit 和 misbehavior 定奖惩不是已经罚没。看见必须回四列不是已经改了集合。Finalize 回包义务不是不变量 33，也不是不变量 21，也不是不变量 318。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

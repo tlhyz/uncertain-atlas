@@ -366,3 +366,4 @@
 - [extendwhen-sold-as-locked](extendwhen-sold-as-locked.md)
 - [finalizewhen-sold-as-decided](finalizewhen-sold-as-decided.md)
 - [finalizeequiv-sold-as-gates](finalizeequiv-sold-as-gates.md)
+- [validator-sold-as-update](validator-sold-as-update.md)

@@ -139,6 +139,8 @@ Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process：[`../
 
 Finalize 等价于 ABCI 1.0 那三步不是已经是四门已经结算：[`../../tracks/implementation/worked-example-finalize-equiv-vs-gates.md`](../../tracks/implementation/worked-example-finalize-equiv-vs-gates.md)（不变量 363）。看见可以用 decided_last_commit 和 misbehavior 定奖惩不是已经罚没。看见必须回四列不是已经改了集合。
 
+Validator 用 address 认人不是已经带了公钥：[`../../tracks/implementation/worked-example-validator-vs-update.md`](../../tracks/implementation/worked-example-validator-vs-update.md)（不变量 364）。看见不带 PubKey 不是已经选型。看见 ValidatorUpdate 用公钥认人不是已经改了集合。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

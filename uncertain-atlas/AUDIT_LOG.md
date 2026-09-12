@@ -3791,6 +3791,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1752 | 高 | 看见必须回 app_hash / tx_results / validator_updates / consensus_param_updates / 看见回了四列 会被写成已经改了集合，或当成已经交差 | 官方：执行完这块必须给这四列提供值 |
 | A1753 | 中 | 怎样写 Finalize 回包 / 怎样算奖惩 / 怎样填四列会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1754 | 记录 | 会与 33 / 21 / 318 糊成「看见收成一门就已经是四门已经结算」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包义务 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / 证据上链 / 集合更新标成另一对象 |
+| A1755 | 高 | 看见 Validator 用 address 认人 / 看见只有 address 和 power 会被写成已经带了公钥，或当成已经能验签 | 工作实例：abci++_methods Data Types Validator 官方写 Validator identified by address，字段只有 address 和 power |
+| A1756 | 高 | 看见不带 PubKey 是为了不在 ABCI 上传大后量子公钥 / 看见省了字段 会被写成已经选型，或当成已经没有后量子钥 | 官方：Does not include PubKey to avoid sending potentially large quantum pubkeys over the ABCI |
+| A1757 | 高 | 看见 ValidatorUpdate 用 pub_key_type 和 pub_key_bytes 认人 / 看见更新集合 会被写成已经是 VoteInfo 里那份 Validator，或当成已经改了集合 | 官方：ValidatorUpdate identified by PubKeyType and PubKeyBytes，用来告诉 CometBFT 更新集合 |
+| A1758 | 中 | 怎样编 Validator / 怎样编 ValidatorUpdate / 怎样在 ABCI 上传钥会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1759 | 记录 | 会与 35 / 318 / 363 糊成「看见 VoteInfo 里有验证者就已经带了公钥」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Validator 类型 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。集合延迟 / 空名单 / 回包义务标成另一对象 |
 
 
 
