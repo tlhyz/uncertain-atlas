@@ -145,6 +145,8 @@
 
 精读：[`../../tracks/implementation/worked-example-encrypted-key-vs-usable.md`](../../tracks/implementation/worked-example-encrypted-key-vs-usable.md)（不变量 296）。看见加密私钥记录不是已经能用。看见厂家代生成不是已经能兑。看见地址哈希片段不是已经是地址。
 
+精读：[`../../tracks/implementation/worked-example-p2sh-address-vs-redeem.md`](../../tracks/implementation/worked-example-p2sh-address-vs-redeem.md)（不变量 297）。看见本页这种地址不是已经是赎回脚本。看见旧软件报无效不是已经付过。看见只有地址不是已经知道付给谁。
+
 精读：[`../../tracks/implementation/worked-example-descriptor-vs-keys.md`](../../tracks/implementation/worked-example-descriptor-vs-keys.md)（不变量 184）。看见私钥或助记词备份不是已经知道该看哪种输出脚本。看见描述符不是已经是地址。描述符里的扩展钥不是已经能长出脚本。描述符校验过了不是已经是合法脚本集合。BIP-380 不是 BIP-39，也不是 BIP-32，也不是 BIP-173。
 
 精读：[`../../tracks/implementation/worked-example-psbtv2-vs-v0.md`](../../tracks/implementation/worked-example-psbtv2-vs-v0.md)（不变量 186）。看见后继版本工作包不是已经是旧版那份固定未签交易。能再加输入输出不是已经凑齐，也不是已经能广播。包版本号不是已经是交易版本号。能按旧格式拆开不是已经兼容。BIP-370 不是 BIP-174，也不是 BIP-173，也不是 BIP-125。

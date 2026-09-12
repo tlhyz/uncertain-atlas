@@ -53,6 +53,7 @@
 - [`worked-example-testnet4-vs-testnet3.md`](worked-example-testnet4-vs-testnet3.md) — Testnet 4 ≠ 已经是 Testnet 3；20 分钟例外 ≠ 已经没有块风暴；会 Testnet 3 ≠ 已经能安全跟（不变量 292）
 - [`../lifecycle/worked-example-reserves-vs-spend.md`](../lifecycle/worked-example-reserves-vs-spend.md) — 储备证明交易 ≠ 已经能花；其余输入签过 ≠ 已经控制资金；POR 栏 ≠ 已经是普通花费（不变量 293）
 - [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）
+- [`worked-example-p2sh-address-vs-redeem.md`](worked-example-p2sh-address-vs-redeem.md) — 本页这种地址 ≠ 已经是赎回脚本；旧软件报无效 ≠ 已经付过；只有地址 ≠ 已经知道付给谁（不变量 297）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）
