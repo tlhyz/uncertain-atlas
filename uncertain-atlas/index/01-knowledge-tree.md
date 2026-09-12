@@ -202,7 +202,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.4 Script / SegWit / Taproot / Schnorr · 进阶
 - 保守升级如何避免把旧节点踢出共识
-- 覆盖：课文 L3.3 方向 + L3.7 见证结构。txid ≠ wtxid：[`../tracks/implementation/worked-example-txid-vs-wtxid.md`](../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本：[`../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。付给脚本哈希 ≠ 已经揭开赎回脚本：[`../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。Tapscript 操作码仍后置
+- 覆盖：课文 L3.3 方向 + L3.7 见证结构。txid ≠ wtxid：[`../tracks/implementation/worked-example-txid-vs-wtxid.md`](../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本：[`../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。付给脚本哈希 ≠ 已经揭开赎回脚本：[`../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活：[`../tracks/implementation/worked-example-versionbit-vs-active.md`](../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。Tapscript 操作码仍后置
 
 ### M3.5 全节点、剪枝、SPV · 必学
 - 验证 vs 查看
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–170）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–171）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C174；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C175；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

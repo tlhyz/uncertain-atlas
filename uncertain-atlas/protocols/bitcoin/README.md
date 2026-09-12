@@ -21,6 +21,8 @@
 
 精读：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。付给脚本哈希不是已经揭开赎回脚本。旧节点 HASH160 EQUAL 通过不是新节点已经再跑赎回。哈希对上不是内层已经验过。
 
+精读：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。版本位被置上不是已经锁定。锁定不是已经激活。超时未锁定不是已经可以当激活。
+
 一句话（禁止营销）：
 
 > 用 UTXO + 工作量证明最重链，在无许可网络上对花费授权做概率最终的全网排序。

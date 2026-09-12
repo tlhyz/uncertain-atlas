@@ -144,7 +144,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 ## 12. 最大结构性优势
 
 **可独立复验的小规则集 + 慢变更。**  
-任何人可跑全节点重放。协议进化偏软分叉、偏兼容旧验证者。这与「十年还在」强相关。
+任何人可跑全节点重放。协议进化偏软分叉、偏兼容旧验证者。这与「十年还在」强相关。版本位被置上不是已经锁定；锁定不是已经激活：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。
 
 这是结构，不是市值。
 
