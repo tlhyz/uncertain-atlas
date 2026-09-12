@@ -176,3 +176,4 @@
 - [bit-sold-as-active](bit-sold-as-active.md)
 - [valid-sold-as-der](valid-sold-as-der.md)
 - [header-sold-as-height](header-sold-as-height.md)
+- [address-sold-as-utxo](address-sold-as-utxo.md)

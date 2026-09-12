@@ -198,6 +198,7 @@
 167. 若做软分叉示意 / 对照 BIP-9：必须点名问的是示意、锁定、激活，还是失败（不变量 171）。版本位被置上不是已经锁定。锁定不是已经激活。超时未锁定不是已经可以当激活。本块自己的版本位不是已经决定本块状态。BIP-9 不是 BIP-34 比整数版本，也不是被部署的那条新规则。第一版可以不抄版本位并行激活。不要抄阈值。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)。这和 CSV 部署名（不变量 165）、MTP 三把尺（不变量 41）、策略大类（不变量 144）不是同一句。
 168. 若做签名编码 / 对照 BIP-66：必须点名问的是数学验过、编码合法，还是共识收下（不变量 172）。ECDSA 数学上验得过不是已经是严格 DER。库接受某种变形不是共识已经接受。转发策略已经要 DER 不是共识已经要。编码检查立刻失败不是验签失败还按旧语义继续。BIP-66 不是 BIP-62，也不是 BIP-146，也不是 BIP-34。第一版必须把签名编码写成共识谓词。不要抄长度。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md)。这和两实现同根（不变量 3）、策略大类（不变量 144）、txid≠wtxid（不变量 152）不是同一句。
 169. 若块头不带高度 / 对照 BIP-34：必须点名问的是头、coinbase 第一项，还是奖励年龄（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。交易 version 更大当非标准不是共识已经禁止。写了高度不是 coinbase 已经能花。BIP-34 不是 BIP-9，也不是 BIP-66 那条新规则。第一版若头不带高度，必须写清高度承诺在哪。不要抄票数。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)。这和进块已能花（不变量 163）、版本位四态（不变量 171）、DER 编码（不变量 172）不是同一句。
+170. 若提供收款地址 / 对照 BIP-173：必须点名问的是地址串、校验灯，还是链上输出（不变量 174）。看见 Bech32 地址串不是链上已经有这笔输出。校验过不是见证程序已经在链上。编出版本和程序不是已经付过款。纠错改成合法串不是已经是用户要的那串。BIP-173 不是 BIP-350，也不是 BIP-141，也不是 BIP-13。第一版必须写清地址是编码，不是账本对象。不要抄字符表。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-address-vs-utxo.md`](../../tracks/implementation/worked-example-address-vs-utxo.md)。这和 txid≠wtxid（不变量 152）、钥匙路径（不变量 153）、P2SH 哈希（不变量 170）不是同一句。
 
 **以后再发明**
 
@@ -331,6 +332,7 @@
 - 把版本位被置上写成已经锁定，或把 LOCKED_IN 写成已经强制新规则，或把 9 写成 34 / 被部署的那条规则。
 - 把 ECDSA 验得过写成已经是严格 DER，或把库收下写成共识已经接受，或把 66 写成 62 / 146 / 34。
 - 把看见块头写成高度已经在头上，或把加大 version 写成已经是 9，或把写了高度写成已经能花。
+- 把看见 Bech32 地址写成链上已经有这笔输出，或把校验过写成程序已经上链，或把 173 写成 141 / 350 / 13。
 
 ---
 
@@ -381,7 +383,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百六十九条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百七十条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

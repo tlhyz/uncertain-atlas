@@ -12,7 +12,7 @@
 | 3.4 | [L03-M04-network-and-eclipse.md](L03-M04-network-and-eclipse.md) | M3.2 | 传播与日蚀；privatebroadcast ≠ IP 已藏 |
 | 3.5 | [L03-M05-full-node-and-spv.md](L03-M05-full-node-and-spv.md) | M3.5 | 全节点 / 剪枝 / SPV；修剪合取 ≠ 修剪非法 |
 | 3.6 | [L03-M06-testing-and-culture.md](L03-M06-testing-and-culture.md) | M3.6 / M3.7 方法 | 事故如何回流成规则；迁移失败 ≠ 邻居已安全 |
-| 3.7 | [L03-M07-segwit-soft-fork.md](L03-M07-segwit-soft-fork.md) | M3.4 结构 | 见证如何软分叉进旧验证；txid ≠ wtxid（不变量 152）；钥匙路径 ≠ 揭树（不变量 153）；付给脚本哈希 ≠ 已经揭开赎回脚本（不变量 170） |
+| 3.7 | [L03-M07-segwit-soft-fork.md](L03-M07-segwit-soft-fork.md) | M3.4 结构 | 见证如何软分叉进旧验证；txid ≠ wtxid（不变量 152）；钥匙路径 ≠ 揭树（不变量 153）；付给脚本哈希 ≠ 已经揭开赎回脚本（不变量 170）；看见 Bech32 地址串 ≠ 链上已经有这笔输出（不变量 174） |
 | 3.8 | [L03-M08-block-dag.md](L03-M08-block-dag.md) | Kaspa 对照 | 孤块为何出现、DAG 如何仍要全序 |
 
 Tapscript / Miniscript 操作码仍后置。钥匙路径 ≠ 揭树见不变量 153。付给脚本哈希 ≠ 已经揭开赎回脚本见不变量 170。2013 分叉七问见博物馆 BIP 50。

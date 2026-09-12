@@ -127,7 +127,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M1.4 编码与规范化 · 重要
 - canonical encoding
 - 非规范编码如何变成共识分裂
-- 覆盖：课文 L1.4；实现编码精读 `tracks/implementation/`。类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封：[`../tracks/implementation/worked-example-typed-vs-legacy.md`](../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。ECDSA 验得过 ≠ 已经是严格 DER：[`../tracks/implementation/worked-example-valid-vs-der.md`](../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）
+- 覆盖：课文 L1.4；实现编码精读 `tracks/implementation/`。类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封：[`../tracks/implementation/worked-example-typed-vs-legacy.md`](../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。ECDSA 验得过 ≠ 已经是严格 DER：[`../tracks/implementation/worked-example-valid-vs-der.md`](../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）。看见 Bech32 地址串 ≠ 链上已经有这笔输出：[`../tracks/implementation/worked-example-address-vs-utxo.md`](../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）
 
 ### M1.5 随机数与确定性 · 重要
 - 签名随机数泄漏
@@ -152,7 +152,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 未花费输出、花费、找零
 - 天然并行的来源
 - 可编程性代价
-- 覆盖：课文 L2.1。谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突；并行验证 ≠ 已经不需要顺序 L：[`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。进了块的 coinbase ≠ 已经能花：[`../tracks/economic/worked-example-coinbase-vs-mature.md`](../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住：[`../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV ≠ 绝对锁 / ≠ 部署名：[`../tracks/state-models/worked-example-csv-vs-cltv.md`](../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。付给脚本哈希 ≠ 已经揭开赎回脚本：[`../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）
+- 覆盖：课文 L2.1。谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突；并行验证 ≠ 已经不需要顺序 L：[`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。进了块的 coinbase ≠ 已经能花：[`../tracks/economic/worked-example-coinbase-vs-mature.md`](../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住：[`../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV ≠ 绝对锁 / ≠ 部署名：[`../tracks/state-models/worked-example-csv-vs-cltv.md`](../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。付给脚本哈希 ≠ 已经揭开赎回脚本：[`../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。看见 Bech32 地址串 ≠ 链上已经有这笔输出：[`../tracks/implementation/worked-example-address-vs-utxo.md`](../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）
 
 ### M2.2 Account · 必学
 - 余额、nonce、storage
@@ -202,7 +202,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.4 Script / SegWit / Taproot / Schnorr · 进阶
 - 保守升级如何避免把旧节点踢出共识
-- 覆盖：课文 L3.3 方向 + L3.7 见证结构。txid ≠ wtxid：[`../tracks/implementation/worked-example-txid-vs-wtxid.md`](../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本：[`../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。付给脚本哈希 ≠ 已经揭开赎回脚本：[`../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活：[`../tracks/implementation/worked-example-versionbit-vs-active.md`](../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。Tapscript 操作码仍后置
+- 覆盖：课文 L3.3 方向 + L3.7 见证结构。txid ≠ wtxid：[`../tracks/implementation/worked-example-txid-vs-wtxid.md`](../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本：[`../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。付给脚本哈希 ≠ 已经揭开赎回脚本：[`../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。看见 Bech32 地址串 ≠ 链上已经有这笔输出：[`../tracks/implementation/worked-example-address-vs-utxo.md`](../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活：[`../tracks/implementation/worked-example-versionbit-vs-active.md`](../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。Tapscript 操作码仍后置
 
 ### M3.5 全节点、剪枝、SPV · 必学
 - 验证 vs 查看
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–173）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–174）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C177；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C178；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

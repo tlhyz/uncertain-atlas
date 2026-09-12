@@ -62,7 +62,7 @@ Bitcoin 的问题陈述（事实，白皮书 2008）：点对点电子现金，�
 
 UTXO 集。见课程 L2.1。
 
-脚本给出花费条件。P2PKH / P2WPKH / P2TR 是包装，不是另一种状态模型。脚本里的 CLTV 不是交易 nLockTime 已经把输出锁住：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV 不是绝对锁，也不是「CSV 部署」四个字：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。付给脚本哈希不是已经揭开赎回脚本；旧节点 HASH160 EQUAL 通过不是新节点已经再跑赎回：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。
+脚本给出花费条件。P2PKH / P2WPKH / P2TR 是包装，不是另一种状态模型。看见 Bech32 地址串不是链上已经有这笔输出；校验过不是见证程序已经在链上：[`../../tracks/implementation/worked-example-address-vs-utxo.md`](../../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。脚本里的 CLTV 不是交易 nLockTime 已经把输出锁住：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV 不是绝对锁，也不是「CSV 部署」四个字：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。付给脚本哈希不是已经揭开赎回脚本；旧节点 HASH160 EQUAL 通过不是新节点已经再跑赎回：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。
 
 ---
 
