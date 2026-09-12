@@ -258,7 +258,7 @@ Polkadot 把「小链借用大链安全」做成系统。
 | 值得排队 | 原因 |
 |---|---|
 | Arbitrum / Optimism | 乐观滚动是模块化执行的另一半 |
-| Algorand | 密码抽签（19 节已写，对照不是默认骨架） |
+| Algorand | 密码抽签（19 节已写，对照不是默认骨架）。VRF 抽中 ≠ 已经认证：[`../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134） |
 | Kaspa | 区块 DAG（档案+L3.8 已写） |
 | Fuel | UTXO+调度（思想级档案已写） |
 | Nervos | 容量绑定存储 + 生成/验证分离（思想级档案 + L2.6） |

@@ -7,7 +7,7 @@
 
 ## 1. 一句话定义
 
-权益（或权）进入抽签种子。每轮，参与者用秘密钥跑 **VRF**，自己知道是否入选提议/投票委员会，并出示 VRF 证明让别人验证「我确实被抽中」。随后在该小集合上做拜占庭协议变体。
+权益（或权）进入抽签种子。每轮，参与者用秘密钥跑 **VRF**，自己知道是否入选提议/投票委员会，并出示 VRF 证明让别人验证「我确实被抽中」。随后在该小集合上做拜占庭协议变体。抽中不是已经认证；最低 VRF 提案不是已经 soft vote；soft vote 不是已经 certify。精读：[`../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134）。
 
 ---
 
@@ -61,7 +61,8 @@ Algorand 想：领袖与委员会**不可被提前长期瞄准**（抽签输出�
 **密码抽签（事实：论文核心）：** VRF 输出均匀且可验证；未抽中者不能伪造「我在委员会」。  
 **与 Avalanche：** 那里是对邻居反复问，不是「出示我被抽中的证明」。  
 **与 CometBFT：** 那里 `V(h)` 事先全知道，每轮全员计权；这里委员会是随机子集。  
-相交论证要改写成「以高概率，委员会里诚实足够」——参数与权益诚实假设绑在一起。
+相交论证要改写成「以高概率，委员会里诚实足够」——参数与权益诚实假设绑在一起。  
+官方现行页把步骤写成 propose / soft vote / certify，每步另抽委员会。抽中不是已经认证。精读：[`../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134）。不抄委员会大小 / 超时 / 官网快慢句。
 
 ---
 

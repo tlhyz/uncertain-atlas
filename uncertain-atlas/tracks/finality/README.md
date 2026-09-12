@@ -7,6 +7,7 @@
 终局推迟 ≠ 停链，leak ≠ slash：[`worked-example-inactivity-leak.md`](worked-example-inactivity-leak.md)（不变量 130）。  
 抽样 α 多数 ≠ 可转发 QC：[`../consensus/worked-example-snow-sample-vs-qc.md`](../consensus/worked-example-snow-sample-vs-qc.md)（不变量 131）。  
 PoH 槽钟 ≠ Tower 票：[`../consensus/worked-example-poh-vs-tower.md`](../consensus/worked-example-poh-vs-tower.md)（不变量 133）。`processed` ≠ `confirmed` ≠ `finalized`。  
+VRF 抽中 ≠ 已经认证：[`../consensus/worked-example-vrf-sortition-vs-certified.md`](../consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134）。  
 平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。  
 中继出块 ≠ 中继最终：[`../consensus/worked-example-babe-vs-grandpa.md`](../consensus/worked-example-babe-vs-grandpa.md)（BABE ≠ GRANDPA；不变量 126）。
 
@@ -19,7 +20,7 @@ PoH 槽钟 ≠ Tower 票：[`../consensus/worked-example-poh-vs-tower.md`](../co
 | Ethereum WS 同步 | 未过期的 `Checkpoint` + 路径命中 | finalized = 从创世一样安全 | 过期检查点；旧钥匙已解绑 | 精读 |
 | Ethereum Altair LC | 512 抽样超多数签的信标头 | 抽样 2/3 = Casper finalized | 跟的是委员会视图，不是全集合最终 | L9.6 / 精读 |
 | Avalanche | 样本 α + 本节点连续 β | 抽样过了 = 可转发 QC；Preference = LastAccepted；出块窗 = 已决定 | 视参数；窗内没人出可能停产，那也不是已接受 | L4.6 / 精读 |
-| Algorand | 论文下快速最终（以规范为准） | 抽签 = 已结算 | 视同步假设 | 档案 |
+| Algorand | propose / soft vote / certify | 抽签 = 已结算；最低 VRF = 已认证 | 视同步假设；认证超时进 recovery | L4 对照 / 精读 |
 | Solana | PoH 槽钟 + 账本票 / lockout | 槽时间 = commit；`confirmed` = `finalized`；PoH = 单独 BFT | 头可摆；`processed` 官方写仍可切叉 | L6.1 / 精读 |
 | Sui | owned 快路径 vs shared 共识 | 所有交易同一「到了」 | 视路径 | L6.2 |
 | Aptos | 共识给出的序 L 上的 commit | STM 跑完 = 最终 | 同 BFT 家族 | L6.3 |

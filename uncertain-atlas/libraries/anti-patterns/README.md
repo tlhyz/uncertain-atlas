@@ -138,3 +138,4 @@
 - [snow-sold-as-qc](snow-sold-as-qc.md)
 - [batch-sold-as-ordered](batch-sold-as-ordered.md)
 - [poh-sold-as-tower](poh-sold-as-tower.md)
+- [sortition-sold-as-certified](sortition-sold-as-certified.md)

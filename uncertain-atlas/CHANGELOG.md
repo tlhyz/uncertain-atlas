@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 135）
+
+- Algorand 工作实例：VRF 抽中不是已经认证。最低 VRF 提案不是已经 soft vote。Soft vote 不是已经 certify / 已经落账。参与钥不是花费钥。按 Algo 抽签不是一人一票，也不是 Avalanche 问邻居。出处 dev.algorand.co Consensus Overview。
+- 不变量 134；语料 C138；模式 name-the-sortition-step；反模式 sortition-sold-as-certified；L10.3 第 130 条。填 L4.6 / Algorand 档案 §1 §6 / 共识表 / 最终性表 / 停链面地图。
+- 不抄委员会 Algo 数 / 法定比例 / 超时 / 官网快慢句。不写怎样磨最低哈希。不编博物馆页。不与 22 / 126 / 129 / 131 / 133 / 93 糊成一句。NPoS 等权句不改写。State proof 与随机信标标成另一对象。
+
 ## 2026-09-12（续 134）
 
 - Solana 工作实例：PoH / 槽钟不是已经投票。`processed` 不是已经 confirmed。`confirmed` 不是已经 finalized / 已经 root。超多数账本票不是已经最大 lockout。出处 solana.com/docs 术语 + RPC commitment。

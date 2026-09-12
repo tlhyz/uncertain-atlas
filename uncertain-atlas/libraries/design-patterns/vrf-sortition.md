@@ -7,4 +7,4 @@
 **缺点：** 露面即 DoS；种子质量；概率委员会；新密码假设。  
 **项目：** Algorand。不要和 Avalanche 抽样混名。  
 **常见 bug：** 不计 proof 就计权；把「纯 PoS」当抽签证明。  
-**不确定：** 可以进「流量太大」的候选；第一版不必上。
+**不确定：** 可以进「流量太大」的候选；第一版不必上。抽中不是已经认证：见 [工作实例](../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)。
