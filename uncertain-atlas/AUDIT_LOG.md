@@ -3851,6 +3851,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1812 | 高 | 看见回包块含元数据不能超过 16 MB / 看见有上限 会被写成已经是快照报文 4 MB，或当成已经装完 | 官方：Chunk messages cannot be larger than 16 MB including metadata, so 10 MB is a good starting point |
 | A1813 | 中 | 怎样写 LoadSnapshotChunk / 怎样切块 / 怎样挑 10 MB 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1814 | 记录 | 会与 322 / 368 / 321 糊成「看见叫了 LoadSnapshotChunk 就已经齐」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 LoadSnapshotChunk / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。发现清单 / 同一份快照 / 装回标成另一对象 |
+| A1815 | 高 | 看见 UNKNOWN 一律是错、引擎当应用坏了会崩 / 看见回了 UNKNOWN 会被写成已经是四门已经结算，或当成已经交差 | 工作实例：abci++_methods Data Types ProposalStatus 官方写 Returning this from the application is always an error. CometBFT will assume the application is faulty and crash |
+| A1816 | 高 | 看见 ACCEPT 表示应用认为提案合法、共识会发 Prevote / 看见回了 ACCEPT 会被写成已经交差，或当成已经必须 Accept | 官方：ACCEPT signals that the application finds the proposal valid. The consensus algorithm accepts the proposal and will issue a Prevote message for it |
+| A1817 | 高 | 看见 REJECT 表示应用认为提案非法、共识会发 Prevote nil / 看见回了 REJECT 会被写成已经能稍后改裁决，或当成已经没进块 | 官方：REJECT signals that the application finds the proposal invalid. The consensus algorithm rejects the proposal and will issue a Prevote for nil instead |
+| A1818 | 中 | 怎样写 ProposalStatus / 怎样挑枚举 / 怎样发 Prevote 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1819 | 记录 | 会与 33 / 347 / 354 糊成「看见回了 ProposalStatus 就已经是四门已经结算」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProposalStatus / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / 必须 Accept / 同步裁决标成另一对象 |
 
 
 

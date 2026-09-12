@@ -378,3 +378,4 @@
 - [checktxopt-sold-as-block](checktxopt-sold-as-block.md)
 - [flush-sold-as-sent](flush-sold-as-sent.md)
 - [loadchunk-sold-as-retrieved](loadchunk-sold-as-retrieved.md)
+- [proposalstatus-sold-as-prevote](proposalstatus-sold-as-prevote.md)

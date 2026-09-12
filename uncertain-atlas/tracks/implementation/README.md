@@ -78,6 +78,7 @@
 - [`worked-example-checktxopt-vs-block.md`](worked-example-checktxopt-vs-block.md) — CheckTx 技术上可选、不参与处理块 ≠ 已经是四门已经结算；Code ≠ 0 会被拒、不会广播也不会进提案 ≠ 已经没进块；引擎对回包码不再赋予别的含义 ≠ 已经被引擎用了 Data（不变量 373）
 - [`worked-example-flush-vs-sent.md`](worked-example-flush-vs-sent.md) — Flush 要把客户端排队的消息冲到服务端 ≠ 已经送到；定期 Flush 是为了让异步请求真发出去 ≠ 已经是四门；立刻 Flush 是为了做成同步请求、回包回来才算这次同步 ≠ 已经能往下走（不变量 374）
 - [`worked-example-loadchunk-vs-retrieved.md`](worked-example-loadchunk-vs-retrieved.md) — LoadSnapshotChunk 用来从邻居拉快照块 ≠ 已经齐；请求用 height / format / chunk（从 0 起）认这块 ≠ 已经是同一份；回包块含元数据不能超过 16 MB ≠ 已经是快照报文 4 MB（不变量 375）
+- [`worked-example-proposalstatus-vs-prevote.md`](worked-example-proposalstatus-vs-prevote.md) — UNKNOWN 一律是错、引擎当应用坏了会崩 ≠ 已经是四门已经结算；ACCEPT 表示应用认为提案合法、共识会发 Prevote ≠ 已经交差；REJECT 表示应用认为提案非法、共识会发 Prevote nil ≠ 已经能稍后改裁决（不变量 376）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

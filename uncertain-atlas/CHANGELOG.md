@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 377）
+
+- CometBFT ProposalStatus 工作实例（官方 ABCI++ Methods Data Types ProposalStatus，实现 / ProposalStatus，不另写 19 节）：看见 UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算。看见 ACCEPT 表示应用认为提案合法、共识会发 Prevote 不是已经交差。看见 REJECT 表示应用认为提案非法、共识会发 Prevote nil 不是已经能稍后改裁决。ProposalStatus 不是不变量 33，也不是不变量 347，也不是不变量 354。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 376；语料 C380；模式 name-the-proposal-status；反模式 proposalstatus-sold-as-prevote；L10.3 第 372 条。填 L4.4 / CometBFT 档案 ProposalStatus / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ProposalStatus、怎样挑枚举、怎样发 Prevote。不编博物馆页。不另写 19 节。不与 33 / 347 / 354 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。四门、必须 Accept、同步裁决标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 376）
 
 - CometBFT LoadSnapshotChunk 工作实例（官方 ABCI++ Methods LoadSnapshotChunk Usage，实现 / LoadSnapshotChunk，不另写 19 节）：看见 LoadSnapshotChunk 用来从邻居拉快照块不是已经齐。看见请求用 height / format / chunk（从 0 起）认这块不是已经是同一份。看见回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB。LoadSnapshotChunk 不是不变量 322，也不是不变量 368，也不是不变量 321。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -273,3 +273,4 @@
 - [name-the-checktx-optional](name-the-checktx-optional.md)
 - [name-the-flush](name-the-flush.md)
 - [name-the-load-chunk](name-the-load-chunk.md)
+- [name-the-proposal-status](name-the-proposal-status.md)
