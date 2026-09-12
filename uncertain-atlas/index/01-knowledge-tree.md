@@ -257,7 +257,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M4.6 崩溃恢复 · 重要
 - WAL、超时、重启后如何不投矛盾票
-- 覆盖：课文 L4.4；崩溃精读 `tracks/implementation/worked-example-crash.md`
+- 覆盖：课文 L4.4；崩溃精读 `tracks/implementation/worked-example-crash.md`。写下每条消息 ≠ 已经 fsync；回放时又要签 ≠ 已经双签；LastSignBytes 对上 ≠ 已经换了高度：[`../tracks/implementation/worked-example-wal-vs-signed.md`](../tracks/implementation/worked-example-wal-vs-signed.md)（不变量 298）
 
 ### M4.7 HotStuff / Casper 对照预习 · 进阶
 - QC、view change
@@ -423,7 +423,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.3 存储 · 必学
 - WAL、原子提交、断电、剪枝、状态同步
 - 「写到一半断电怎么办」
-- 覆盖：课文 L9.3；崩溃精读 `tracks/implementation/worked-example-crash.md`。ABCI 快照 ≠ 创世重放：`tracks/implementation/worked-example-statesync.md`（只有轻验 AppHash 可信；不变量 38）。轻验集合 ≠ 提议者选择：ASA-2024-009（不变量 56）。写盘前尺寸检查固定宽度：CVE-2025-46597（不变量 51）。有限服务位 ≠ 已经能服任意旧块：[`../tracks/network/worked-example-limited-service-vs-archive.md`](../tracks/network/worked-example-limited-service-vs-archive.md)（不变量 250）
+- 覆盖：课文 L9.3；崩溃精读 `tracks/implementation/worked-example-crash.md`。写下每条消息 ≠ 已经 fsync；回放时又要签 ≠ 已经双签：[`../tracks/implementation/worked-example-wal-vs-signed.md`](../tracks/implementation/worked-example-wal-vs-signed.md)（不变量 298）。ABCI 快照 ≠ 创世重放：`tracks/implementation/worked-example-statesync.md`（只有轻验 AppHash 可信；不变量 38）。轻验集合 ≠ 提议者选择：ASA-2024-009（不变量 56）。写盘前尺寸检查固定宽度：CVE-2025-46597（不变量 51）。有限服务位 ≠ 已经能服任意旧块：[`../tracks/network/worked-example-limited-service-vs-archive.md`](../tracks/network/worked-example-limited-service-vs-archive.md)（不变量 250）
 
 ### M9.4 升级 · 重要
 - 软/硬分叉、runtime upgrade、紧急升级

@@ -300,3 +300,4 @@
 - [ack-sold-as-final](ack-sold-as-final.md)
 - [encrypted-sold-as-key](encrypted-sold-as-key.md)
 - [p2sh-address-sold-as-16](p2sh-address-sold-as-16.md)
+- [wal-sold-as-signed](wal-sold-as-signed.md)

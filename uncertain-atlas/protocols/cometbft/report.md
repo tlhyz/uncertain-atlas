@@ -105,7 +105,7 @@ gossip 共识消息、块、交易。验证者集合已知，和 Bitcoin 的无�
 
 ## 9. 存储
 
-WAL：先记「我要投什么」，再投票，防崩溃后投出矛盾票。  
+WAL：先记「我要投什么」，再投票，防崩溃后投出矛盾票。写下每条消息不是已经 fsync；回放时又要签不是已经双签：见 [`../../tracks/implementation/worked-example-wal-vs-signed.md`](../../tracks/implementation/worked-example-wal-vs-signed.md)（不变量 298）。  
 应用自己的数据库必须与高度原子对齐。断电半写是部署/实现经典坑。  
 本头 `AppHash` 是上一块执行并提交之后的应用根，不是本高度交易已经交差。见 [`../../tracks/consensus/worked-example-apphash-vs-this-block.md`](../../tracks/consensus/worked-example-apphash-vs-this-block.md)（不变量 147）。
 
@@ -203,7 +203,7 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 ## 16. 源码入口（预告）
 
 1. **consensus state machine** — round/step、锁。为什么：这是协议心脏。  
-2. **WAL / replay** — 崩溃恢复。  
+2. **WAL / replay** — 崩溃恢复。写下 ≠ 已经 fsync；回放时再签 ≠ 已经双签：见 [`../../tracks/implementation/worked-example-wal-vs-signed.md`](../../tracks/implementation/worked-example-wal-vs-signed.md)（不变量 298）。  
 3. **ABCI 适配** — 引擎与应用的字节契约。  
 4. **light client** — 跳过中间头时重叠的是 trusted `NextValidators`，不是新集合自嗨。见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。  
 5. **evidence** — `DuplicateVoteEvidence` / `LightClientAttackEvidence`；引擎通知应用，不自动 slash。过期是高度且时间；默认窗可能短于解绑。见 [`../../tracks/economic/worked-example-evidence.md`](../../tracks/economic/worked-example-evidence.md)、[`../../tracks/economic/worked-example-evidence-window.md`](../../tracks/economic/worked-example-evidence-window.md)。  

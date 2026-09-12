@@ -195,3 +195,4 @@
 - [name-the-payment-request](name-the-payment-request.md)
 - [name-the-encrypted-key](name-the-encrypted-key.md)
 - [name-the-p2sh-address](name-the-p2sh-address.md)
+- [name-the-wal](name-the-wal.md)
