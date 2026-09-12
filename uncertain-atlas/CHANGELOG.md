@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 69）
+
+- 博物馆 ASA-2024-006 / GHSA-95rx-m9m5-m94v（High）：默认 `ValidateVoteExtensions` 按提议者注入的扩展推断总投票权。
+- 不诚实提议者可能改掉注入物里每人的权重，状态按假权重量写。修法是对照状态机核对。
+- 不变量 68；语料 C72；反模式 extension-sold-as-voting-power；L10.3 第 64 条。
+- 对照不变量 34 / 57 / 58 / 65。咨询未给 CVE。不写怎样改注入字段。不抄 CVSS。
+
 ## 2026-09-12（续 68）
 
 - 博物馆 CVE-2020-5303 / Lavender / GHSA-v24h-pjjv-mcp6（High）：不限制 P2P 连接请求，每条分配内存，临时尖峰可 OOM。
