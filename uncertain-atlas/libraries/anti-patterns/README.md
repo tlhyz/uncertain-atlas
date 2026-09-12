@@ -284,3 +284,4 @@
 - [tap-psbt-sold-as-old](tap-psbt-sold-as-old.md)
 - [policy-sold-as-descriptor](policy-sold-as-descriptor.md)
 - [combo-sold-as-one-script](combo-sold-as-one-script.md)
+- [raw-sold-as-named](raw-sold-as-named.md)
