@@ -180,3 +180,4 @@
 - [max-sold-as-next-nonce](max-sold-as-next-nonce.md)
 - [initcode-sold-as-runtime](initcode-sold-as-runtime.md)
 - [revert-sold-as-invalid](revert-sold-as-invalid.md)
+- [static-sold-as-view](static-sold-as-view.md)

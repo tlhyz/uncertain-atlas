@@ -22,6 +22,7 @@
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-initcode-vs-runtime.md`](worked-example-initcode-vs-runtime.md) — initcode 超界 ≠ 已经是部署代码超界；按字分析费 ≠ 已经跑完构造；3860 ≠ 170 ≠ 1014 ≠ 2681（不变量 176）
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）
+- [`worked-example-static-vs-view.md`](worked-example-static-vs-view.md) — 静态帧 ≠ 已经是高级语言只读；没转账 ≠ 已经静态；214 ≠ 140（不变量 178）
 
 平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
 外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  
