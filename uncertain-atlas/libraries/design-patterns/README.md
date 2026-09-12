@@ -133,3 +133,4 @@
 - [name-the-delegatecall](name-the-delegatecall.md)
 - [name-the-homestead](name-the-homestead.md)
 - [name-the-forward-compat](name-the-forward-compat.md)
+- [name-the-receipt-status](name-the-receipt-status.md)
