@@ -94,6 +94,7 @@
 - [`worked-example-infodata-vs-appversion.md`](worked-example-infodata-vs-appversion.md) — Info 回包 data 是任意信息 ≠ 已经是握手对齐；Info 回包 version 是应用软件语义版本 ≠ 已经是 app_version；Query 回包 codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 389）
 - [`worked-example-proofop-vs-key.md`](worked-example-proofop-vs-key.md) — ProofOp.key 是这棵默克尔树里这把键 ≠ 已经是 Query 回包键；ProofOp.data 是这把键的编码证明 ≠ 已经是 proof_ops；CheckTx 回包 log 是应用日志输出 ≠ 已经是 Query 日志（不变量 390）
 - [`worked-example-checktxtx-vs-recheck.md`](worked-example-checktxtx-vs-recheck.md) — CheckTx 请求 tx 是请求交易字节 ≠ 已经是 Recheck；CheckTx 对照当前状态验、不应用这笔描述的状态改动 ≠ 已经按 ExecuteTxState 验过；CheckTx 回包 info 是附加信息 ≠ 已经是 Query 附加信息（不变量 391）
+- [`worked-example-initapphash-vs-header.md`](worked-example-initapphash-vs-header.md) — InitChain 回包 app_hash 是起步应用哈希 ≠ 已经是本头 AppHash；Finalize 请求 hash 是这块的哈希 ≠ 已经知道本头哈希；CommitInfo.round 是提交轮 ≠ 已经按投票权排过（不变量 392）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

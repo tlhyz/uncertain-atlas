@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 393）
+
+- CometBFT InitChain 回包余栏工作实例（官方 ABCI++ Methods InitChain Response / FinalizeBlock Request / CommitInfo，实现 / InitChain 回包余栏，不另写 19 节）：看见 InitChain 回包 app_hash 是起步应用哈希不是已经是本头 AppHash。看见 Finalize 请求 hash 是这块的哈希不是已经知道本头哈希。看见 CommitInfo.round 是提交轮不是已经按投票权排过。InitChain 回包余栏不是不变量 147，也不是不变量 311，也不是不变量 365。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 392；语料 C396；模式 name-the-init-apphash；反模式 initapphash-sold-as-header；L10.3 第 388 条。填 L4.4 / CometBFT 档案 InitChain 回包余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 InitChain 回包余栏、怎样填起步哈希、怎样填提交轮。不编博物馆页。不另写 19 节。不与 147 / 311 / 365 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。本头 AppHash、已经知道本头哈希、票序标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 392）
 
 - CometBFT CheckTx 请求余栏工作实例（官方 ABCI++ Methods CheckTx Request / CheckTx Usage / CheckTx Response，实现 / CheckTx 请求余栏，不另写 19 节）：看见 CheckTx 请求 tx 是请求交易字节不是已经是 Recheck。看见 CheckTx 对照当前状态验、不应用这笔描述的状态改动不是已经按 ExecuteTxState 验过。看见 CheckTx 回包 info 是附加信息不是已经是 Query 附加信息。CheckTx 请求余栏不是不变量 312，也不是不变量 373，也不是不变量 384。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -3931,6 +3931,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1892 | 高 | 看见 CheckTx 回包 info 是附加信息 / 看见回了信息会被写成已经是 Query 附加信息，或当成已经是 CheckTx 日志 | 官方：info is Additional information |
 | A1893 | 中 | 怎样写 CheckTx 请求余栏 / 怎样填 tx / 怎样填附加信息会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1894 | 记录 | 会与 312 / 373 / 384 糊成「看见填了 CheckTx 请求余栏就已经是 Recheck」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Recheck / 四门 / Query 附加信息标成另一对象 |
+| A1895 | 高 | 看见 InitChain 回包 app_hash 是起步应用哈希 / 看见回了起步哈希会被写成已经是本头 AppHash，或当成已经没有集合 | 工作实例：abci++_methods InitChain Response 官方写 app_hash is Initial application hash |
+| A1896 | 高 | 看见 Finalize 请求 hash 是这块的哈希 / 看见填了 hash 会被写成已经知道本头哈希，或当成已经跑过 Process | 官方：hash is The block's hash |
+| A1897 | 高 | 看见 CommitInfo.round 是提交轮 / 看见填了 round 会被写成已经按投票权排过，或当成已经罚没 | 官方：round is Commit round. Reflects the round at which the block proposer decided in the previous height |
+| A1898 | 中 | 怎样写 InitChain 回包余栏 / 怎样填起步哈希 / 怎样填提交轮会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1899 | 记录 | 会与 147 / 311 / 365 糊成「看见填了 InitChain 回包余栏就已经是本头 AppHash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 回包余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。本头 AppHash / 已经知道本头哈希 / 票序标成另一对象 |
 
 
 

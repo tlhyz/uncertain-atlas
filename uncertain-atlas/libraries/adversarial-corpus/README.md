@@ -406,6 +406,7 @@
 | C393 | 389 Info回包data是任意信息≠已经是握手对齐 | 文案把 Info 回包 data 是任意信息 / 回了 data 写成已经是握手对齐或已经是快照重放；或把 Info 回包 version 是应用软件语义版本 / 回了应用版本写成已经是 app_version 或已经印进本头 AppHash；或把 Query 回包 codespace 是码的命名空间 / 写了空间写成已经是 CheckTx 码空间或已经是回包码；或把 Info 回包余栏写成不变量 370 / 379 / 381 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C394 | 390 ProofOp.key是这棵默克尔树里这把键≠已经是Query回包键 | 文案把 ProofOp.key 是这棵默克尔树里这把键 / 填了 key 写成已经是 Query 回包键或已经是 ProofOp 类型；或把 ProofOp.data 是这把键的编码证明 / 填了 data 写成已经是 proof_ops 或已经对上最终 AppHash；或把 CheckTx 回包 log 是应用日志输出 / 回了日志写成已经是 Query 日志或已经被引擎用了 Data；或把 ProofOp 键写成不变量 325 / 380 / 384 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C395 | 391 CheckTx请求tx是请求交易字节≠已经是Recheck | 文案把 CheckTx 请求 tx 是请求交易字节 / 填了 tx 写成已经是 Recheck 或已经是四门已经结算；或把 CheckTx 对照当前状态验、不应用这笔描述的状态改动 / 验了写成已经按 ExecuteTxState 验过或已经参与处理块；或把 CheckTx 回包 info 是附加信息 / 回了信息写成已经是 Query 附加信息或已经是 CheckTx 日志；或把 CheckTx 请求余栏写成不变量 312 / 373 / 384 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C396 | 392 InitChain回包app_hash是起步应用哈希≠已经是本头AppHash | 文案把 InitChain 回包 app_hash 是起步应用哈希 / 回了起步哈希写成已经是本头 AppHash 或已经没有集合；或把 Finalize 请求 hash 是这块的哈希 / 填了 hash 写成已经知道本头哈希或已经跑过 Process；或把 CommitInfo.round 是提交轮 / 填了 round 写成已经按投票权排过或已经罚没；或把 InitChain 回包余栏写成不变量 147 / 311 / 365 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。
