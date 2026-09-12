@@ -152,7 +152,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 未花费输出、花费、找零
 - 天然并行的来源
 - 可编程性代价
-- 覆盖：课文 L2.1。谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突；并行验证 ≠ 已经不需要顺序 L：[`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）
+- 覆盖：课文 L2.1。谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突；并行验证 ≠ 已经不需要顺序 L：[`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。进了块的 coinbase ≠ 已经能花：[`../tracks/economic/worked-example-coinbase-vs-mature.md`](../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）
 
 ### M2.2 Account · 必学
 - 余额、nonce、storage
@@ -189,7 +189,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.1 Nakamoto Consensus · 必学
 - PoW、最重链、概率最终性、reorg
-- 覆盖：课文 L3.1；块时间三把尺 `tracks/consensus/worked-example-mtp.md`（太早 / BIP113 locktime / 太新；不变量 41）
+- 覆盖：课文 L3.1；块时间三把尺 `tracks/consensus/worked-example-mtp.md`（太早 / BIP113 locktime / 太新；不变量 41）。进了块的 coinbase ≠ 已经能花：[`../tracks/economic/worked-example-coinbase-vs-mature.md`](../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）
 
 ### M3.2 网络与传播 · 必学
 - mempool、compact block、eclipse、带宽
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–162）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–163）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C166；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C167；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

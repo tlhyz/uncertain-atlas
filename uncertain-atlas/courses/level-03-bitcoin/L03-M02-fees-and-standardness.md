@@ -93,5 +93,5 @@ Ethereum 的 mempool 替换更日常，但「策略 ≠ 共识」同一条。
 | 部署 | 每个节点一份本地 mempool |
 | 经济 | 费率买的是空间，不是正确性 |
 
-**禁止假学习：** 「标准性 = 共识规则。」「费率高所以交易更正确。」「邻居不转发 = 链拒绝。」「进了 mempool = 已经进块。」
-**边界：** mempool 政策通论在 L9.2。策略 ≠ 共识精读：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。不抄默认费率。不写怎样绕策略。
+**禁止假学习：** 「标准性 = 共识规则。」「费率高所以交易更正确。」「邻居不转发 = 链拒绝。」「进了 mempool = 已经进块。」「进了块的手续费 = 矿工已经能花。」
+**边界：** mempool 政策通论在 L9.2。策略 ≠ 共识精读：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。进了块的 coinbase ≠ 已经能花：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。不抄默认费率。不写怎样绕策略。

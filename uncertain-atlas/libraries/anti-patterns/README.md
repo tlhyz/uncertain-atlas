@@ -165,3 +165,4 @@
 - [selfdestruct-sold-as-deleted](selfdestruct-sold-as-deleted.md)
 - [chainid-sold-as-signed](chainid-sold-as-signed.md)
 - [code-sender-sold-as-eoa](code-sender-sold-as-eoa.md)
+- [coinbase-sold-as-spendable](coinbase-sold-as-spendable.md)
