@@ -28,3 +28,4 @@ ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`
 带见证的线上序列化 ≠ 已经有见证：[`worked-example-witness-wire-vs-have.md`](worked-example-witness-wire-vs-have.md)（看见带见证的线上序列化不是已经有见证；能提供见证不是已经在传；库存通告仍用旧类型不是线上已经没有见证；144 ≠ 141 ≠ 339 ≠ 130）。
 拒收消息 ≠ 已经共识非法：[`worked-example-reject-vs-consensus.md`](worked-example-reject-vs-consensus.md)（看见拒收消息不是已经共识非法；调试理由不是已经该给用户看；没拒收不是已经是当前最好链；61 ≠ 144 ≠ 133 ≠ 35）。
 停交易转发 ≠ 已经终身只传块：[`worked-example-disabletx-vs-lifetime.md`](worked-example-disabletx-vs-lifetime.md)（看见版本里关掉转发不是已经终身只传块；发了停交易转发不是已经没有紧凑块；建议关掉地址不是已经禁止；338 ≠ 133 ≠ 35 ≠ 152）。
+协议版本够了 ≠ 已经支持某项功能：[`worked-example-feature-vs-enabled.md`](worked-example-feature-vs-enabled.md)（看见通告了 feature 不是已经启用；verack 之后才来的 feature 不是已经是本页协商；434 ≠ 339 ≠ 155 ≠ 338）。
