@@ -90,7 +90,7 @@ Solana、Sui、Aptos。Avalanche 对照的是共识抽样，不是这三种执�
 2. 程序员能不能/该不该声明锁？
 3. 有没有确定的 L？STM 是否值得第一版就上？
 4. 验证者机器门槛会不会把集合收成几家机房？  
-5. 共识票的是序，还是序+本块状态根？（Monad 官方文档的异步执行；仅过滤器页，不抄执行预算表）
+5. 共识票的是序，还是序+本块状态根？（Monad 官方文档的异步执行；仅过滤器页，不抄执行预算表）。顺序已定 ≠ 本块根已交差：[`../../tracks/consensus/worked-example-order-vs-state.md`](../../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）
 
 **建议：** 第一版用「小规则 + 可重放 + 明确最终性」。三种世界观当储备，不当默认发动机。先定序再 Apply 是第四个问题，不是第四个默认发动机。
 
@@ -109,4 +109,4 @@ Solana、Sui、Aptos。Avalanche 对照的是共识抽样，不是这三种执�
 | 经济 | 并行 ≠ 更安全；不确定列空 |
 
 **禁止假学习：** 「新一代都并行所以更安全。」「STM 所以不需要共识。」「Sui 所有交易都绕过共识。」「owned 就是快路径。」  
-**边界：** 不写官网 TPS。Solana 停机/降级见博物馆 2020-12-04、2022-04-30、2022-06-01、2022-09-30、2023-02-25、2024-02-06；机密证明见 2025-05-02。Sui 见 2024-11-21、2026-01-14、2026-05 气费砸币、2026-05 DKG 未落盘。Block-STM 提交 ≡ 串行 L：[`../../tracks/parallelism/worked-example-block-stm.md`](../../tracks/parallelism/worked-example-block-stm.md)（不变量 122）。其它停机仍等原文。Monad 只读 [`../../protocols/monad/README.md`](../../protocols/monad/README.md)，不写 19 节。
+**边界：** 不写官网 TPS。Solana 停机/降级见博物馆 2020-12-04、2022-04-30、2022-06-01、2022-09-30、2023-02-25、2024-02-06；机密证明见 2025-05-02。Sui 见 2024-11-21、2026-01-14、2026-05 气费砸币、2026-05 DKG 未落盘。Block-STM 提交 ≡ 串行 L：[`../../tracks/parallelism/worked-example-block-stm.md`](../../tracks/parallelism/worked-example-block-stm.md)（不变量 122）。其它停机仍等原文。Monad 只读 [`../../protocols/monad/README.md`](../../protocols/monad/README.md)，不写 19 节。顺序 ≠ 状态：[`../../tracks/consensus/worked-example-order-vs-state.md`](../../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）。

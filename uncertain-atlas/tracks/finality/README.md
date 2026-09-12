@@ -9,6 +9,7 @@
 PoH 槽钟 ≠ Tower 票：[`../consensus/worked-example-poh-vs-tower.md`](../consensus/worked-example-poh-vs-tower.md)（不变量 133）。`processed` ≠ `confirmed` ≠ `finalized`。  
 VRF 抽中 ≠ 已经认证：[`../consensus/worked-example-vrf-sortition-vs-certified.md`](../consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134）。  
 Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`worked-example-doomslug-vs-bft.md`](worked-example-doomslug-vs-bft.md)（不变量 135）。`last_ds_final_block` ≠ `last_final_block`。  
+官方顺序已定 ≠ 本块状态根已经交差：[`../consensus/worked-example-order-vs-state.md`](../consensus/worked-example-order-vs-state.md)（不变量 136）。  
 平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。  
 中继出块 ≠ 中继最终：[`../consensus/worked-example-babe-vs-grandpa.md`](../consensus/worked-example-babe-vs-grandpa.md)（BABE ≠ GRANDPA；不变量 126）。
 
@@ -34,6 +35,6 @@ Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`worked-example-doomslug-vs-
 | Nervos | Nakamoto 变体（Consensus RFC） | 占用不等式 = 最终 | 两边可长 | L2.6 / 档案 |
 | Fuel | 取决于排序从哪来 | 并行执行完 = 最终 | 视部署 | 档案 |
 | NEAR | `last_final_block`（BFT 谓词）≠ `last_ds_final_block` | 出块 / Doomslug / `near-final` = commit 或已经 `final` | 视 approvals 与缺 chunk | 思想级档案 + 精读 |
-| Monad（文档） | 共识最终的是**顺序**；状态根延迟 `D` 块 | 顺序最终 = 余额已到 | 视其 BFT；执行滞后是另一轴 | 仅过滤器页 |
+| Monad（文档） | 共识最终的是**顺序**；状态根延迟 `D` 块 | 顺序最终 = 余额已到 | 视其 BFT；执行滞后是另一轴 | 过滤器 + 精读 |
 
 「不确定」列空。若产品要说「到了」，先在 L10.1 选一行协议对象。

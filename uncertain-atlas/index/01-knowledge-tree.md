@@ -333,12 +333,12 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 预先声明依赖（Solana）
 - 所有权依赖（Sui）
 - 乐观执行再检测（Aptos）
-- 覆盖：课文 L6.4。Sui 停机对照见 M6.2 四案（估值 0、隔离拒证、取消后仍砸气费、DKG 未落盘）
+- 覆盖：课文 L6.4。Sui 停机对照见 M6.2 四案（估值 0、隔离拒证、取消后仍砸气费、DKG 未落盘）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）
 
 ### M6.5 对「不确定」 · 重要
 - 结算链是否需要这种吞吐
 - 不建议第一版照搬的部分
-- 覆盖：课文 L6.4 的 J 节（矩阵列仍空；三种世界观当储备，不当默认发动机）
+- 覆盖：课文 L6.4 的 J 节（矩阵列仍空；三种世界观当储备，不当默认发动机）。先定序再 Apply 是问题不是默认发动机：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）
 
 ---
 
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–135）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–136）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C139；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C140；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
@@ -502,7 +502,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | Algorand | 密码抽签（`protocols/algorand` 已写）。VRF 抽中 ≠ 已经认证：[`../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134） | L4 对照 | 进阶 |
 | Kaspa | 区块 DAG（`protocols/kaspa` + L3.8） | L3 | 进阶 |
 | Fuel | UTXO + 声明调度（思想级档案） | L2 + L6 | 进阶 |
-| Monad / Sei | Monad：共识先定序、根延迟 `D` 块（`protocols/monad` 仅过滤器）。Sei 仍待独特思想，不写页 | L5 + L6 | 进阶 |
+| Monad / Sei | Monad：共识先定序、根延迟 `D` 块（`protocols/monad` 仅过滤器）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）。Sei 仍待独特思想，不写页 | L5 + L6 | 进阶 |
 | Starknet / zkSync | 有效性租户：点名程序哈希 + 两层 accepted（`protocols/starknet` 仅过滤器）。zkSync 仍无独立对象，不写页 | L7 + L8 | 研究级 |
 | Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写） | L7 | 重要 |
 | EigenLayer / Babylon | 再质押：`protocols/eigenlayer` 仅过滤器（AVS 罚没不必客观可归属）。BTC UTXO 仍留在 Bitcoin：`protocols/babylon` 仅过滤器。都无 19 节 | L7 共享安全对照 | 进阶 |

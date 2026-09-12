@@ -33,3 +33,4 @@
 - [name-the-clock-and-the-vote](name-the-clock-and-the-vote.md)
 - [name-the-sortition-step](name-the-sortition-step.md)
 - [name-the-finality-marker](name-the-finality-marker.md)
+- [name-the-order-vs-state](name-the-order-vs-state.md)

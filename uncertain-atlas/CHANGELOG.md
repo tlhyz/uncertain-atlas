@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 137）
+
+- Monad 工作实例（仅官方文档，不写 19 节）：官方顺序已定不是本块状态根已经交差。投票时可以还没执行。延迟 D 块根不是轻客户端能证高度 N。投机 `eth_call` 不是协议最终。出处 docs.monad.xyz Asynchronous Execution。
+- 不变量 136；语料 C140；模式 name-the-order-vs-state；反模式 order-sold-as-state（补指针）；L10.3 第 132 条。填 L6.4 / Monad 过滤器 / 共识表 / 最终性表 / 停链面地图。
+- 不抄 `D` 现行数字 / 秒数 / 执行预算对照 / 官网吞吐。不写怎样塞付不起气费的交易。不编博物馆页。不写 19 节。不与 122 / 132 / 27 糊成一句。Reserve Balance 与 block states 标成另一对象。
+
 ## 2026-09-12（续 136）
 
 - NEAR 工作实例：`last_ds_final_block` 不是已经 `last_final_block`。Doomslug / `near-final` 不是已经 Nomicon 两高度谓词 / `final`。`optimistic` 不是已经不可逆。出新头不是已经 commit。出处 Nomicon Consensus + nearcore DataStructures + Indexer Finality。

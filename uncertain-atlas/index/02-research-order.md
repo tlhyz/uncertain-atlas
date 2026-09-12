@@ -266,7 +266,7 @@ Polkadot 把「小链借用大链安全」做成系统。
 | Babylon | BTC UTXO 留在 Bitcoin（仅过滤器页，无 19 节） |
 | Cardano | eUTXO（L2.5 已写，不写全生态） |
 | 真实 PQ 部署实验 | 有状态 XMSS 部署：QRL 仅过滤器页；思想卡 `tracks/post-quantum/stateful-hbs.md` |
-| Monad | 异步执行：共识先定序、本块无状态根（仅过滤器页；官方文档，无 19 节） |
+| Monad | 异步执行：共识先定序、本块无状态根（仅过滤器页；官方文档，无 19 节）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136） |
 | EigenLayer | 已质押 ETH/LST 再声明 + AVS 自定、不必客观可归属的罚没（仅过滤器页；ELIP-002 / 产品文档，无 19 节） |
 
 默认后置：

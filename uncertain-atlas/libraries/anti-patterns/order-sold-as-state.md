@@ -1,5 +1,7 @@
 # 反模式：顺序最终卖成状态最终
 
+> 真值：[顺序 ≠ 状态 工作实例](../../tracks/consensus/worked-example-order-vs-state.md)、[不变式 136](../invariants/README.md)。亲戚：[stm-done-sold-as-final](stm-done-sold-as-final.md)、[two-finality-sold-as-one](two-finality-sold-as-one.md)、[rpc-as-verification](rpc-as-verification.md)。
+
 共识已经同意「这些交易按这个顺序进历史」，产品却告诉用户「你的余额已经和全网一样」。
 
 两句话不是同一个协议对象：
@@ -10,5 +12,4 @@
 中间可以隔着 `D` 块的执行滞后、本地尚未跑完、或 RPC 在投机执行未最终的提案。  
 官方文档把这种拆分写成产品的（Monad 异步执行，仅过滤器页）：顺序定了，执行只是揭开。揭开之前就说「到了」，是文案层的假最终。
 
-亲戚：[`two-finality-sold-as-one.md`](two-finality-sold-as-one.md)（头上两个最终字段）；[`rpc-as-verification.md`](rpc-as-verification.md)。  
-「不确定」：若共识不带本块状态根，钱包必须写清用户看到的是序还是根。
+「不确定」：若共识不带本块状态根，钱包必须写清用户看到的是序还是根。第一版可以保持投票前先跑完。
