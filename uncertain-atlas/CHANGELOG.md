@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 304）
+
+- CometBFT 创世工作实例（官方 Genesis，实现 / 创世对象，不另写 19 节）：看见创世 app_state 不是已经验过应用状态。看见节点起来不是已经过了 genesis_time。看见创世 validators 空不是已经没有集合。创世不是不变量 38，也不是不变量 147，也不是不变量 300。出处 github.com/cometbft/cometbft spec/core/genesis.md。
+- 不变量 303；语料 C307；模式 name-the-genesis；反模式 appstate-sold-as-validated；L10.3 第 299 条。填 L4.4 / L9.3 / CometBFT 档案第 5 步 / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄 time_iota_ms、曲线名单、字段表。不写怎样填创世字段、怎样调 InitChain、怎样从指定高度重启。不编博物馆页。不另写 19 节。不与 38 / 147 / 300 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。快照重放 / 本头 AppHash / 本地 State 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 303）
 
 - CometBFT 提议者选择工作实例（官方 Proposer Selection Procedure，共识协议，不另写 19 节）：看见同一高度换轮不是已经换了集合。看见新验证者加进来不是已经能跳到队头。看见优先级差被缩放不是已经按人头轮。提议者选择不是不变量 35，也不是不变量 56，也不是不变量 129。出处 github.com/cometbft/cometbft spec/consensus/proposer-selection.md。
