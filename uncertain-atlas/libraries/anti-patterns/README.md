@@ -328,3 +328,4 @@
 - [snapshotswitch-sold-as-full-history](snapshotswitch-sold-as-full-history.md)
 - [snapshottake-sold-as-committed](snapshottake-sold-as-committed.md)
 - [queryproof-sold-as-apphash](queryproof-sold-as-apphash.md)
+- [peerfilter-sold-as-connected](peerfilter-sold-as-connected.md)

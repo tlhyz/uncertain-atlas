@@ -3597,6 +3597,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1562 | 高 | 看见一层 ProofOp 的根 / 看见对上了 会被写成已经是下一层要验的值，或当成已经对上最终 AppHash | 官方：这一条的根是下一条的值，最后一条才对 AppHash |
 | A1563 | 中 | 怎样编 ProofOp / 怎样种多层树 / 怎样从 Finalize 写出下一头会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1564 | 记录 | 会与 147 / 314 / 38 糊成「看见头上有 AppHash 就已经能验应用」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query Proofs / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。本头时序 / QueryState / 轻验快照标成另一对象 |
+### 2026-09-12 · 看见发了 addr 过滤查询不是已经收下这个人
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A1565 | 高 | 看见发了 /p2p/filter/addr / 看见 TCP 已经连上 会被写成已经收下这个人，或当成已经过了 id 那一道 | 工作实例：app requirements Peer Filtering 官方写连上时发两道没有额外数据的 Query |
+| A1566 | 高 | 看见发了 /p2p/filter/id / 看见公钥地址对上 会被写成已经过了 addr 那一道，或当成已经能交互 | 官方：任意一道回非零码就拒连 |
+| A1567 | 高 | 看见有 /store / /app 路径 / 看见 Query 能带路径 会被写成已经是引擎在用，或当成已经是过滤 | 官方 Paths：眼下 CometBFT 只用 /p2p 过滤邻居 |
+| A1568 | 中 | 怎样写过滤逻辑 / 怎样配 Cosmos-SDK Query / 怎样拼 IP:端口会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1569 | 记录 | 会与 50 / 305 / 314 糊成「看见连上了就已经收下」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Peer Filtering / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。自动封禁 / InitPeer 时序 / QueryState 标成另一对象 |
 
 
 

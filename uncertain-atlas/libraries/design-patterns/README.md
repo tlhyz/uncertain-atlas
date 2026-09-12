@@ -223,3 +223,4 @@
 - [name-the-snapshot-switch](name-the-snapshot-switch.md)
 - [name-the-snapshot-take](name-the-snapshot-take.md)
 - [name-the-query-proof](name-the-query-proof.md)
+- [name-the-peer-filter](name-the-peer-filter.md)

@@ -63,6 +63,8 @@ ListSnapshots 回了不是已经有了全部快照：[`../../tracks/implementati
 
 头上有 AppHash 不是已经是交易默克尔：[`../../tracks/implementation/worked-example-query-proof-vs-apphash.md`](../../tracks/implementation/worked-example-query-proof-vs-apphash.md)（不变量 325）。看见 Query 回了 Proof 不是已经对上 AppHash。看见一层 ProofOp 的根不是已经对上最终 AppHash。
 
+发了 addr 过滤查询不是已经收下这个人：[`../../tracks/implementation/worked-example-peerfilter-vs-query.md`](../../tracks/implementation/worked-example-peerfilter-vs-query.md)（不变量 326）。看见 id 过滤查询绿了不是已经过了 addr。看见有 /store 路径不是已经是引擎在用。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

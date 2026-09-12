@@ -340,6 +340,7 @@
 | C327 | 323 装完≠已经有了ChainID | 文案把快照已经装完 / 状态机已经恢复写成已经有了 ChainID 参数集合和头或已经能出块；或把 Info 的 AppHash 对上 / 对上下一高度写成已经是版本也对上或已经是本头 AppHash；或把切进共识 / 能出块写成已经有从创世的完整历史或已经没有截断；或把 Transition to Consensus 写成不变量 38 / 321 / 322 / 147 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C328 | 324 拍了这个高度≠已经交差之后拍的 | 文案把标了这个高度 / 拍了快照写成已经在交差之后拍的或已经没有更高高度的数据；或把在后台拍 / 没停链写成已经隔离在单一高度或已经各节点字节相同；或把只留最近两份 / Hash 对上了写成已经有了全部历史快照或已经是同一份；或把 Taking Snapshots 写成不变量 38 / 321 / 322 / 323 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C329 | 325 头上有AppHash≠已经是交易默克尔 | 文案把头上有 AppHash / 和 ValidatorsHash、DataHash 并列写成已经是交易默克尔或已经是验证者集合；或把 Query 回了 Proof / QueryResponse.Proof 写成已经对上 AppHash 或已经是一层树；或把一层 ProofOp 的根 / 对上了写成已经是下一层要验的值或已经对上最终 AppHash；或把 Query Proofs 写成不变量 147 / 314 / 38 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C330 | 326 发了addr过滤查询≠已经收下这个人 | 文案把发了 /p2p/filter/addr / TCP 已经连上写成已经收下这个人或已经过了 id 那一道；或把发了 /p2p/filter/id / 公钥地址对上写成已经过了 addr 或已经能交互；或把有 /store / /app 路径 / Query 能带路径写成已经是引擎在用或已经是过滤；或把 Peer Filtering 写成不变量 50 / 305 / 314 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

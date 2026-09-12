@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 327）
+
+- CometBFT Peer Filtering 工作实例（官方 Requirements for the Application Peer Filtering / Paths，实现 / Peer Filtering，不另写 19 节）：看见发了 addr 过滤查询不是已经收下这个人。看见 id 过滤查询绿了不是已经过了 addr。看见有 /store 路径不是已经是引擎在用。Peer Filtering 不是不变量 50，也不是不变量 305，也不是不变量 314。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 326；语料 C330；模式 name-the-peer-filter；反模式 peerfilter-sold-as-connected；L10.3 第 322 条。填 L4.4 / CometBFT 档案 Peer Filtering / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样写过滤逻辑、怎样配 Cosmos-SDK Query、怎样拼 IP:端口。不编博物馆页。不另写 19 节。不与 50 / 305 / 314 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。自动封禁 / InitPeer 时序 / QueryState 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 326）
 
 - CometBFT Query Proofs 工作实例（官方 Requirements for the Application Query Proofs，实现 / Query Proofs，不另写 19 节）：看见头上有 AppHash 不是已经是交易默克尔。看见 Query 回了 Proof 不是已经对上 AppHash。看见一层 ProofOp 的根不是已经对上最终 AppHash。Query Proofs 不是不变量 147，也不是不变量 314，也不是不变量 38。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
