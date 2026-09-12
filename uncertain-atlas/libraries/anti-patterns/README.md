@@ -41,3 +41,4 @@
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md)
 - [validator-update-sold-as-immediate](validator-update-sold-as-immediate.md)
 - [announce-sold-as-received](announce-sold-as-received.md)
+- [assert-sold-as-peer-filter](assert-sold-as-peer-filter.md)

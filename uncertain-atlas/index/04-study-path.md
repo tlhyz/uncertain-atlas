@@ -29,7 +29,7 @@
 
 12. L5.3 多客户端同根。  
 13. [`../tracks/implementation/`](../tracks/implementation/README.md) 编码实例 + 崩溃实例。  
-14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50、CVE-2021-39137、CVE-2024-52912、CVE-2024-52913、CVE-2019-25220（含 52916）、CVE-2024-52914、CVE-2024-52922；先用 [`../tracks/failure-museum/worked-example-five-layers.md`](../tracks/failure-museum/worked-example-five-layers.md) 把 17144 拆进五层。隐私通再读 CVE-2019-7167。调整钟 ≠ 日蚀：[`../tracks/network/worked-example-adjusted-time.md`](../tracks/network/worked-example-adjusted-time.md)。宣布 ≠ 收到：CVE-2024-52922。  
+14. 博物馆：CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、BIP 50、CVE-2021-39137、CVE-2024-52912、CVE-2024-52913、CVE-2019-25220（含 52916）、CVE-2024-52914、CVE-2024-52922、CVE-2024-35202；先用 [`../tracks/failure-museum/worked-example-five-layers.md`](../tracks/failure-museum/worked-example-five-layers.md) 把 17144 拆进五层。隐私通再读 CVE-2019-7167。调整钟 ≠ 日蚀：[`../tracks/network/worked-example-adjusted-time.md`](../tracks/network/worked-example-adjusted-time.md)。宣布 ≠ 收到：CVE-2024-52922。拼块 ≠ 共识验块：[`../tracks/network/worked-example-compact-block.md`](../tracks/network/worked-example-compact-block.md)。  
 15. L9.3 / L9.7 + [`../tracks/testing/worked-example.md`](../tracks/testing/worked-example.md)。问：绿测试守哪一层。形式化缝：[`../tracks/formal-methods/worked-example.md`](../tracks/formal-methods/worked-example.md)。
 
 ## 第五通：别人用什么换
