@@ -35,6 +35,8 @@
 
 精读：[`../../tracks/implementation/worked-example-xpub-vs-spendable.md`](../../tracks/implementation/worked-example-xpub-vs-spendable.md)（不变量 182）。看见扩展公钥不是已经能花。去势后的扩展公钥不是已经是普通公钥。硬化子密钥不是已经能从公钥推出。链节点标识对得上不是已经该当成收款地址。BIP-32 不是 BIP-173，也不是 BIP-174，也不是 BIP-350。
 
+精读：[`../../tracks/implementation/worked-example-mnemonic-vs-seed.md`](../../tracks/implementation/worked-example-mnemonic-vs-seed.md)（不变量 183）。看见助记词不是已经是二进制种子。用户自造句子不是已经是本页那种助记词。口令不同不是已经非法。助记词校验过了不是已经能改对。BIP-39 不是 BIP-32，也不是 BIP-173，也不是 BIP-380。
+
 一句话（禁止营销）：
 
 > 用 UTXO + 工作量证明最重链，在无许可网络上对花费授权做概率最终的全网排序。

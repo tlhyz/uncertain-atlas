@@ -169,6 +169,6 @@ BFT 的 `timeoutPropose` / `timeoutPrevote` 一类**本地**等待决定：**还
 | 部署 | 坏主机 RNG、NTP、容器时间冻结 |
 | 经济 | 解钥之后的盗币；裂根之后的「跟错根放货」 |
 
-**禁止假学习：** 「有 nonce 所以安全。」「超时就是 sleep。」「确定性签名所以没有侧信道。」「链上随机 = 节点 `rand()`。」「DIFFICULTY 还是工作量。」「PREVRANDAO = 公平骰子。」  
-**边界：** 不讲 VRF 数学（见模式 vrf-sortition）；不选信标方案；不填未测超时毫秒；账户空洞细节在 L2.2。ValidateBasic 读本地钟 ≠ 已确定：博物馆 [Jackfruit](../../tracks/failure-museum/jackfruit.md)。授权代发漏检查是另一句：[Elderflower](../../tracks/failure-museum/elderflower.md)。合并后的 DIFFICULTY ≠ 工作量：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。不抄阈值或前瞻。不写怎样扣块。  
+**禁止假学习：** 「有 nonce 所以安全。」「超时就是 sleep。」「确定性签名所以没有侧信道。」「链上随机 = 节点 `rand()`。」「DIFFICULTY 还是工作量。」「PREVRANDAO = 公平骰子。」「自己编一句 = 已经是官方助记词。」「看见词 = 已经是种子。」  
+**边界：** 不讲 VRF 数学（见模式 vrf-sortition）；不选信标方案；不填未测超时毫秒；账户空洞细节在 L2.2。ValidateBasic 读本地钟 ≠ 已确定：博物馆 [Jackfruit](../../tracks/failure-museum/jackfruit.md)。授权代发漏检查是另一句：[Elderflower](../../tracks/failure-museum/elderflower.md)。合并后的 DIFFICULTY ≠ 工作量：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。用户自造句子 ≠ 已经是本页那种助记词：[`../../tracks/implementation/worked-example-mnemonic-vs-seed.md`](../../tracks/implementation/worked-example-mnemonic-vs-seed.md)（不变量 183）。不抄阈值或前瞻。不写怎样扣块。不写怎样造脑钱包。  
 **事实 / 推断 / 建议** 已分标。ECDSA 具体历史事故的七问，只收有 CVE / 官方披露的条目，不在本课点名未核新闻。
