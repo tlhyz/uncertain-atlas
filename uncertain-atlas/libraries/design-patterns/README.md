@@ -83,3 +83,4 @@
 - [name-the-mnemonic-seed](name-the-mnemonic-seed.md)
 - [name-the-descriptor](name-the-descriptor.md)
 - [name-the-deployed-bound](name-the-deployed-bound.md)
+- [name-the-psbt-version](name-the-psbt-version.md)

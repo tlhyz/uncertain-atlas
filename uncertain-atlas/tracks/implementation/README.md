@@ -29,6 +29,7 @@
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）
 - [`worked-example-static-vs-view.md`](worked-example-static-vs-view.md) — 静态帧 ≠ 已经是高级语言只读；没转账 ≠ 已经静态；214 ≠ 140（不变量 178）
 - [`worked-example-psbt-vs-broadcast.md`](worked-example-psbt-vs-broadcast.md) — 看见部分签名包 ≠ 已经能广播；有几张签 ≠ 已经凑齐；174 ≠ 173 ≠ 125（不变量 179）
+- [`worked-example-psbtv2-vs-v0.md`](worked-example-psbtv2-vs-v0.md) — 看见后继版本工作包 ≠ 已经是旧版那份固定未签交易；能再加输入输出 ≠ 已经能广播；370 ≠ 174 ≠ 173 ≠ 125（不变量 186）
 
 平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
 外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  
