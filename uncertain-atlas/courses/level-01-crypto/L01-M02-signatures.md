@@ -154,4 +154,4 @@ Bitcoin Core：`src/pubkey.cpp` / secp256k1 库。go-ethereum：`crypto` 包。�
 | 经济 | 验签过了不是经济安全；盗钥是保管失败 |
 
 **禁止假学习：** 「签名证明你是谁。」「验签过了所以经济安全。」
-**边界：** 体积数字进账本，本课不填未测值。`ctx` 编码与 hedged 签见 PQ 轨，不在本课抄库文档当 FIPS。
+**边界：** 体积数字进账本，本课不填未测值。`ctx` 编码与 hedged 签见 PQ 轨，不在本课抄库文档当 FIPS。子群过了 ≠ 点已经在曲线上：[`../../tracks/failure-museum/cve-2025-30147.md`](../../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。不要写怎样造点。

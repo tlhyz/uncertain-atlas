@@ -120,3 +120,6 @@
 - [preserve-origin-sold-as-bound](preserve-origin-sold-as-bound.md)
 - [deprecated-api-sold-as-compat](deprecated-api-sold-as-compat.md)
 - [statedb-spendable-sold-as-bank](statedb-spendable-sold-as-bank.md)
+- [subgroup-sold-as-on-curve](subgroup-sold-as-on-curve.md)
+- [precompile-oog-sold-as-reverted](precompile-oog-sold-as-reverted.md)
+- [nested-ics20-sold-as-outer-state](nested-ics20-sold-as-outer-state.md)

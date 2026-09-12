@@ -90,6 +90,9 @@
 - [polkadot-2026-03-xcm-preserve-origin](polkadot-2026-03-xcm-preserve-origin.md)（协议+实现：preserve_origin 为真不是出站已经带了改 origin 的指令；静默跳过不是 BadOrigin）
 - [polkadot-2026-03-deprecated-runtime-api-scale](polkadot-2026-03-deprecated-runtime-api-scale.md)（协议+实现+部署：废弃 runtime API 还在不是返回编码已经兼容；出块者还能写块不是中继已经收到）
 - [cosmos-evm-2026-08-statedb-vesting](cosmos-evm-2026-08-statedb-vesting.md)（协议+实现+经济：StateDB 可花不是归属锁定已经从同一笔写回排除；回绕后的数不是银行账已经对齐）
+- [cve-2025-30147](cve-2025-30147.md)（密码+实现：子群成员检查通过不是点已经在曲线上；原生预编译加速不是两家客户端已经同根）
+- [isa-2025-004](isa-2025-004.md)（协议+实现：预编译中途出错不是 SDK 已写入已经撤回；领奖转出不是可领已经清零）
+- [asa-2026-002](asa-2026-002.md)（协议+实现+经济：内层预编译改过账不是外层已经看见；同一笔里余额还在不是不能再花一次）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余薄行、Pectra 测试网配置、其它 XCM 回归：有独立官方句且不与已归档条重复才另档。Pectra RCA 仍在项目文件夹，本环境未取到独立复盘页，不写。
 

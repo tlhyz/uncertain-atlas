@@ -143,6 +143,7 @@ CL 的 `DomainType`（proposer ≠ attester；Altair 另加 `DOMAIN_SYNC_COMMITT
 | Sepolia 2024-03 | 实现+协议+部署 | Engine API 沿用各家 HTTP RPC 尺寸；单笔低于入池上限 ≠ 拼块已被所有客户端接受。见 `tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md` |
 | 2021-05 状态问题 | 协议+实现+部署 | 官方威胁披露（非已停机）：块 gas 上限 ≠ 墙钟已有界；状态访问常数 gas ≠ 磁盘已是 O(1)。见 `tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md` |
 | 2016-11-24 OOG 空账户 | 实现+协议 | journaling 在 OOG 时没撤回空账户删除，网络分叉。见 `tracks/failure-museum/ethereum-2016-11-oog-empty-account.md` |
+| CVE-2025-30147 | 密码+实现 | Besu 子群检查不是点已经在曲线上；原生加速不是两家已经同根。见 `tracks/failure-museum/cve-2025-30147.md` |
 
 其它方向（须回官方 postmortem 再填七问）：共识客户端最终性/头问题、应用层合约与桥。不拿社交媒体列表充数。
 
