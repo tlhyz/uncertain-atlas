@@ -68,7 +68,7 @@
 | Account + 声明锁 | Solana |
 | Object | Sui |
 | Resource + 乐观并行 | Aptos |
-| eUTXO | Cardano（L2.5）；Fuel 为 UTXO+调度（档案） |
+| eUTXO | Cardano（L2.5）；Fuel 为 UTXO+调度（档案）。谓词 ≠ 脚本、只读重叠 ≠ 写冲突见不变量 143 |
 
 ---
 

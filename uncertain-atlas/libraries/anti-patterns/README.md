@@ -145,3 +145,4 @@
 - [avs-slash-sold-as-casper](avs-slash-sold-as-casper.md)
 - [unsafe-sold-as-derived](unsafe-sold-as-derived.md)
 - [dacert-sold-as-posted](dacert-sold-as-posted.md)
+- [predicate-sold-as-script](predicate-sold-as-script.md)

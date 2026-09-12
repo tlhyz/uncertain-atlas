@@ -67,7 +67,7 @@ T1、T2 都想改这枚。不能并行成功：后执行的会发现输出已被
 ## F. 真实项目
 
 Cardano ledger。本课不写 19 节生态（质押、治理）——独特思想在 eUTXO，不在币名。  
-Fuel 等「UTXO + 并行执行」是亲戚，先读本课再决定要不要单独档案。
+Fuel 等「UTXO + 并行执行」是亲戚，先读本课再读思想级档案与 [访问集精读](../../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。谓词通过不是脚本已经跑完。只读重叠不是写冲突。
 
 ---
 

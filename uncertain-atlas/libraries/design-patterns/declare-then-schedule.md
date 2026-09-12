@@ -5,6 +5,6 @@
 **适用：** 账户/对象可枚举、程序员能列全依赖。  
 **优点：** 冲突结构可见；低争用时能吃多核。  
 **缺点：** 漏列即失败；热点仍串行；开发者税。  
-**项目：** Solana 账户锁。  
-**常见 bug：** 把硬件当成并行原因；用全网 TPS 掩盖热账户。  
+**项目：** Solana 账户锁。Fuel 访问集是亲戚，主键是 UTXO ID / `contractID`，不是账户锁；只读重叠被规范单独放开。见 [`name-the-access-list.md`](name-the-access-list.md) 与 [工作实例](../../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。  
+**常见 bug：** 把硬件当成并行原因；用全网 TPS 掩盖热账户；把谓词通过写成脚本已经跑完；把 Fuel 访问集写成账户锁。  
 **不确定：** 可以参考这句话；第一版账户少时不必上整套短槽网络。

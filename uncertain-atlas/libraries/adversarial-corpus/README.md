@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–142。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–143。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -157,6 +157,7 @@
 | C144 | 140 AVS罚≠Casper | 文案把 AVS 按任何理由罚写成 Casper / CometBFT 协议罚没；或把 restake 写成已经变成另一个信标最终；或把协议写成已经提供否决；或把 Unique Stake 写成已被所有 AVS 同时可罚；或与 21 / 26 / 125 / 139 糊成「共享安全」一句 | 必须红 | 协议+文案 | ELIP-002 / docs.eigencloud.xyz slashing-concept |
 | C145 | 141 unsafe≠已推导 | 文案把 OP `unsafe` / RPC `latest` 写成已经从 L1 推导；或把 OP `safe` 写成已经 `finalized` / 已经 Gasper justified / 已经等于以太坊 RPC `safe`；或把 Standard Bridge 等待写成 L2 交易还没 finalized；或把 Fault Proof 挑战写成已经重组 L2 链；或与 9 / 127 / 138 糊成「三等确认」一句 | 必须红 | 协议+文案 | specs.optimism.io derivation / glossary / exec-engine；docs.optimism.io transaction-finality |
 | C146 | 142 DACert≠已贴文 | 文案把 AnyTrust DACert 写成批次全文已经在父链；或把 AnyTrust 写成已经 Rollup DA / 已经 Celestia DAS；或把 Inbox 收下证书写成子链已经读到数据；或把证书过期窗写成已经永存；或把凑不齐签回退写成已经只走委员会；或与 9 / 23 / 124 / 141 糊成「模块化 DA」一句 | 必须红 | 协议+文案 | docs.arbitrum.io anytrust-protocol |
+| C147 | 143 谓词≠脚本 | 文案把谓词通过写成脚本已经跑完；或把只读访问集重叠写成必须串行 / 已经写冲突；或把写集相交写成可以并行；或把并行验证写成已经不需要顺序副作用 L；或把 `scriptLength == 0` 写成已经没有合约；或把 Fuel 访问集写成 Solana 账户锁 / STM / 所有权快路径；或与 122 / 128 / 136 / 132 糊成「都是并行」一句 | 必须红 | 协议+文案 | docs.fuel.network specs/protocol/tx-validity |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

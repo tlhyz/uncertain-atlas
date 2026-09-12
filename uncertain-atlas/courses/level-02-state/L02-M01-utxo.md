@@ -42,7 +42,7 @@ UTXO 把「钱」看成一张张还没被撕掉的支票，而不是账户里的
 花费条件写在输出脚本 / 锁定条件上。授权是「满足这张支票的解锁」，不是「我是阿安」。
 
 **事实：** Bitcoin 状态机可以这样理解。完整脚本与隔离见证细节在 `protocols/bitcoin/`。  
-**事实：** 两笔交易若输入集合不相交，其有效性在 UTXO 集上互不依赖（费用、块上限仍是块级约束）。
+**事实：** 两笔交易若输入集合不相交，其有效性在 UTXO 集上互不依赖（费用、块上限仍是块级约束）。Bitcoin 规范没有把这句话写成按访问集并行验证。Fuel 访问集：谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突：[`../../tracks/parallelism/worked-example-utxo-access-list.md`](../../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。
 
 ---
 
@@ -67,7 +67,7 @@ T3 也花 U1：与 T1 冲突，块内只能活一个。
 
 - **Bitcoin（事实）**：经典 UTXO。  
 - **Cardano（事实）**：eUTXO，输出带数据，校验更强，另一套编程模型。  
-- **Fuel 等（进阶）**：在 UTXO 上做并行执行的实验。未学完前不当结论。
+- **Fuel 等（进阶）**：在 UTXO 上做声明访问集再并行的实验。谓词通过不是脚本已经跑完。只读重叠不是写冲突。思想级档案 + [精读](../../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。未学完前不当结论。
 
 ---
 
@@ -113,5 +113,5 @@ Bitcoin Core：UTXO 集（Chainstate / `CCoinsView` 一类）+ `ConnectBlock` �
 | 部署 | UTXO 集磁盘；剪枝后仍须能验新块 |
 | 经济 | 粉尘 / 占用谁付钱（L2.6） |
 
-**禁止假学习：** 「UTXO 不能编程。」「UTXO 自动隐私。」
-**边界：** 脚本细节在 L3.7 只触及软分叉结构，不教语言。
+**禁止假学习：** 「UTXO 不能编程。」「UTXO 自动隐私。」「UTXO 并行 = 已经不需要顺序 / 已经和账户锁同一句。」
+**边界：** 脚本细节在 L3.7 只触及软分叉结构，不教语言。Fuel 访问集主键与谓词/脚本拆分见 [`../../tracks/parallelism/worked-example-utxo-access-list.md`](../../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。不抄上限或官网 TPS。

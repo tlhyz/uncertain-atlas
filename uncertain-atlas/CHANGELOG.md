@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 144）
+
+- Fuel 工作实例（规范 + 官方书，思想级档案已有，不另写 19 节）：谓词通过不是脚本已经跑完。只读访问集重叠不是写冲突。写集相交不是可以并行。并行验证不是已经不需要顺序副作用。出处 docs.fuel.network Transaction Validity；官方书只钉合约输入 ≠ Bitcoin 脚本无存储。
+- 不变量 143；语料 C147；模式 name-the-access-list；反模式 predicate-sold-as-script；L10.3 第 139 条。填 L2.1 / L6.4 / Fuel 档案 / 并行表 / 停链面地图。
+- 不抄 `MAX_INPUTS` / 气价 / 核数 / 官网 TPS。不写怎样漏列合约输入。不编博物馆页。不另写 19 节。不与 122 / 128 / 136 / 132 糊成一句。Upgrade / Upload 与部署是否租户标成另一对象。
+
 ## 2026-09-12（续 143）
 
 - AnyTrust 工作实例（仅官方文档，不另写 19 节）：DACert 不是全文已经贴上父链。AnyTrust 不是已经 Rollup DA。凑不齐签名回退贴全文不是已经只走委员会。证书过期窗不是已经永存。出处 docs.arbitrum.io AnyTrust Protocol。

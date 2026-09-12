@@ -152,7 +152,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 未花费输出、花费、找零
 - 天然并行的来源
 - 可编程性代价
-- 覆盖：课文 L2.1
+- 覆盖：课文 L2.1。谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突；并行验证 ≠ 已经不需要顺序 L：[`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）
 
 ### M2.2 Account · 必学
 - 余额、nonce、storage
@@ -333,12 +333,12 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 预先声明依赖（Solana）
 - 所有权依赖（Sui）
 - 乐观执行再检测（Aptos）
-- 覆盖：课文 L6.4。Sui 停机对照见 M6.2 四案（估值 0、隔离拒证、取消后仍砸气费、DKG 未落盘）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）
+- 覆盖：课文 L6.4。Sui 停机对照见 M6.2 四案（估值 0、隔离拒证、取消后仍砸气费、DKG 未落盘）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）。谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突：[`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）
 
 ### M6.5 对「不确定」 · 重要
 - 结算链是否需要这种吞吐
 - 不建议第一版照搬的部分
-- 覆盖：课文 L6.4 的 J 节（矩阵列仍空；三种世界观当储备，不当默认发动机）。先定序再 Apply 是问题不是默认发动机：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）
+- 覆盖：课文 L6.4 的 J 节（矩阵列仍空；三种世界观当储备，不当默认发动机）。先定序再 Apply 是问题不是默认发动机：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）。短槽 + 声明调度也不是默认发动机：[`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）
 
 ---
 
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–142）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–143）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C146；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C147；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
@@ -501,7 +501,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | Near | Nightshade 一条链+chunk（`protocols/near` 思想级）。Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`../tracks/finality/worked-example-doomslug-vs-bft.md`](../tracks/finality/worked-example-doomslug-vs-bft.md)（不变量 135） | L7 | 进阶 |
 | Algorand | 密码抽签（`protocols/algorand` 已写）。VRF 抽中 ≠ 已经认证：[`../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134） | L4 对照 | 进阶 |
 | Kaspa | 区块 DAG（`protocols/kaspa` + L3.8）。进了某个块 ≠ 已经在 selected chain：[`../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../tracks/consensus/worked-example-dag-vs-selected-chain.md)（不变量 137） | L3 | 进阶 |
-| Fuel | UTXO + 声明调度（思想级档案） | L2 + L6 | 进阶 |
+| Fuel | UTXO + 声明调度（思想级档案）。谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突；并行验证 ≠ 已经不需要顺序 L：[`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143） | L2 + L6 | 进阶 |
 | Monad / Sei | Monad：共识先定序、根延迟 `D` 块（`protocols/monad` 仅过滤器）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）。Sei 仍待独特思想，不写页 | L5 + L6 | 进阶 |
 | Starknet / zkSync | 有效性租户：点名程序哈希 + 两层 accepted（`protocols/starknet` 仅过滤器）。`CANDIDATE` / `PRE_CONFIRMED` ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`：[`../tracks/finality/worked-example-l2-status-vs-l1.md`](../tracks/finality/worked-example-l2-status-vs-l1.md)（不变量 138）。zkSync 仍无独立对象，不写页 | L7 + L8 | 研究级 |
 | Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写）。`unsafe` ≠ 已从 L1 推导；OP `safe` ≠ Gasper justified：[`../tracks/finality/worked-example-unsafe-vs-derived.md`](../tracks/finality/worked-example-unsafe-vs-derived.md)（不变量 141）。DACert ≠ 全文已贴父链：[`../tracks/light-clients/worked-example-dacert-vs-posted.md`](../tracks/light-clients/worked-example-dacert-vs-posted.md)（不变量 142） | L7 | 重要 |
