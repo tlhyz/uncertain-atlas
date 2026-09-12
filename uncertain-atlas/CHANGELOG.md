@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 421）
+
+- CometBFT Process 请求余栏工作实例（官方 ABCI++ Methods ProcessProposal Request，实现 / Process 请求余栏，不另写 19 节）：看见 ProcessProposalRequest.proposed_last_commit 是从拟议块里的信息拿到的上一份提交信息不是已经交差 local_last_commit。看见 ProcessProposalRequest.time 是拟议块的时间戳不是已经验过票上时间。看见 ProcessProposalRequest.misbehavior 是过错验证者信息列表不是已经定奖惩。Process 请求余栏不是不变量 411，也不是不变量 410，也不是不变量 413。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 420；语料 C424；模式 name-the-proc-req-rest；反模式 procreqrest-sold-as-extreq；L10.3 第 416 条。填 L4.4 / CometBFT 档案 Process 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Process 请求余栏、怎样填 proposed_last_commit、怎样填 time。不编博物馆页。不另写 19 节。不与 411 / 410 / 413 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经交差 local_last_commit、已经验过票上时间、已经定奖惩标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 420）
 
 - CometBFT Process 请求栏工作实例（官方 ABCI++ Methods ProcessProposal Request，实现 / Process 请求栏，不另写 19 节）：看见 ProcessProposalRequest.txs 是拟议块的交易列表不是已经执行那些交易。看见 ProcessProposalRequest.hash 是拟议块的哈希不是已经跑过 Process。看见 ProcessProposalRequest.height 是拟议块的高度不是已经对上了拟议块头。Process 请求栏不是不变量 411，也不是不变量 410，也不是不变量 417。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
