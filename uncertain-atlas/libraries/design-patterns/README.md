@@ -85,3 +85,4 @@
 - [name-the-deployed-bound](name-the-deployed-bound.md)
 - [name-the-psbt-version](name-the-psbt-version.md)
 - [name-the-coinbase-heat](name-the-coinbase-heat.md)
+- [name-the-reserved-prefix](name-the-reserved-prefix.md)
