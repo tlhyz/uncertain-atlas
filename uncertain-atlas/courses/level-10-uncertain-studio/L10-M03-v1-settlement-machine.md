@@ -189,6 +189,7 @@
 158. 若区分发送者种类 / 对照 EIP-3607：必须点名问的是发送者有没有代码（不变量 162）。发送者已有代码不是已经能当 EOA 发交易。从该地址发出的交易不是已经合法。块里收了它不是块已经合法。RPC 模拟放行不是共识已经放行。后来自毁不是已经变成可发送的 EOA。第一版必须拒发送者已有代码的交易。不要抄碰撞工作量。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-code-sender-vs-eoa.md`](../../tracks/state-models/worked-example-code-sender-vs-eoa.md)。这和后来自毁（不变量 160）、签名链绑定（不变量 161）、空账户回滚（不变量 103）、策略拒绝（不变量 144）不是同一句。
 159. 若有出块奖励 / 对照 Bitcoin coinbase：必须点名问的是进了块，还是已经能当输入（不变量 163）。进了块的 coinbase 不是已经能花。钱包看见奖励不是已经成熟。普通确认深度不是 coinbase 成熟窗。成熟规则不是本地策略。第一版若有出块奖励，必须另写成熟窗。不要抄块数。不要另写 19 节。精读：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)。这和策略拒绝（不变量 144）、locktime / MTP（不变量 41）、Zcash 正余额（不变量 109）、Kaspa 非 chain block 奖励（不变量 137）不是同一句。
 160. 若做绝对时间锁 / 对照 BIP-65：必须点名问的是交易 nLockTime、输出脚本里的 CLTV，还是钟（不变量 164）。脚本里的 CLTV 不是交易 nLockTime 已经把输出锁到那时。nLockTime 能证明将来能花不是已经证明现在不能花。CLTV 比的是花费交易的 nLockTime 不是墙上现在。输入已经 final 不是 CLTV 已经在生效。第一版若做绝对时间锁，必须写在输出脚本上。不要抄阈值。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)。这和 MTP 三把尺（不变量 41）、coinbase 成熟（不变量 163）、策略拒绝（不变量 144）、钥匙路径（不变量 153）不是同一句。
+161. 若做相对时间锁 / 对照 BIP-68 / BIP-112：必须点名问的是部署名、nSequence，还是脚本 CSV（不变量 165）。脚本里的 CSV 不是 nSequence 已经把输出相对锁住。相对锁不是绝对锁。CSV 软分叉部署不是已经在讲 CHECKSEQUENCEVERIFY 操作码。nSequence 有数不是已经是相对锁。第一版若做相对时间锁，必须写清锁的是被花输出的年龄。不要抄位旗。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)。这和 CLTV（不变量 164）、MTP 三把尺（不变量 41）、coinbase 成熟（不变量 163）、策略拒绝（不变量 144）不是同一句。
 
 **以后再发明**
 
@@ -313,6 +314,7 @@
 - 把发送者已有代码写成已经能当 EOA 发交易，或把 RPC 模拟放行写成共识已经放行，或把后来自毁写成已经变成可发送的 EOA。
 - 把进了块的 coinbase 写成已经能花，或把钱包看见奖励写成已经成熟，或把普通确认深度写成已经过成熟窗。
 - 把脚本里的 CLTV 写成交易 nLockTime 已经把输出锁住，或把能证明将来能花写成已经证明现在不能花，或把输入 final 写成时间锁已经生效。
+- 把脚本里的 CSV 写成 nSequence 已经相对锁住，或把相对锁写成 CLTV，或把「CSV 之后」写成已经在讲操作码。
 
 ---
 
@@ -363,7 +365,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百六十条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百六十一条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

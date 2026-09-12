@@ -15,6 +15,8 @@
 
 精读：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CLTV 不是交易 nLockTime 已经把输出锁住。nLockTime 能证明将来能花不是已经证明现在不能花。
 
+精读：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。脚本里的 CSV 不是 nSequence 已经相对锁住。相对锁不是绝对锁。「CSV 之后」不是已经在讲操作码。
+
 一句话（禁止营销）：
 
 > 用 UTXO + 工作量证明最重链，在无许可网络上对花费授权做概率最终的全网排序。

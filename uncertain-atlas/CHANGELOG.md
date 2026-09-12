@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 166）
+
+- BIP-68 / BIP-112 工作实例（官方相对锁 BIP，不另写 19 节）：脚本里的 CSV 不是 nSequence 已经把输出相对锁住。相对锁不是绝对锁。CSV 软分叉部署不是已经在讲 CHECKSEQUENCEVERIFY 操作码。nSequence 有数不是已经是相对锁。出处 github.com/bitcoin/bips BIP-68 / BIP-112。
+- 不变量 165；语料 C169；模式 name-the-relative-lock；反模式 csv-sold-as-absolute；L10.3 第 161 条。填 L2.1 / L3.1 / Bitcoin 档案 / 状态模型表 / MTP 对照 / 停链面地图。
+- 不抄位旗 / 粒度 / 激活时间戳 / 例脚本。不写怎样关掉相对锁绕过或怎样拼闪电 / HTLC。不编博物馆页。不另写 19 节。不与 164 / 41 / 163 / 144 糊成一句。Tapscript / 通道细则标成另一对象。
+
 ## 2026-09-12（续 165）
 
 - BIP-65 工作实例（官方绝对时间锁 BIP，不另写 19 节）：脚本里的 CLTV 不是交易 nLockTime 已经把输出锁到那时。nLockTime 能证明将来能花不是已经证明现在不能花。CLTV 比的是花费交易的 nLockTime 不是墙上现在。输入已经 final 不是 CLTV 已经在生效。出处 github.com/bitcoin/bips BIP-65。

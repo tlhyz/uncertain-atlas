@@ -129,3 +129,4 @@ BIP 113 动机（BIP 原文）：块时间戳没有严格单调；若 locktime �
 - 「MTP = PBTS = BFT Time」
 - 未标注出处的 11 块 / 两小时当永恒共识
 - 「填了 nLockTime = 输出已经锁住」（那是 BIP-65，见 [`../state-models/worked-example-cltv-vs-nlocktime.md`](../state-models/worked-example-cltv-vs-nlocktime.md)，不变量 164）
+- 「CSV 之后 = 已经在讲 CHECKSEQUENCEVERIFY」（部署名不是操作码，见 [`../state-models/worked-example-csv-vs-cltv.md`](../state-models/worked-example-csv-vs-cltv.md)，不变量 165）

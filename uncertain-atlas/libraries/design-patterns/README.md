@@ -62,3 +62,4 @@
 - [name-the-sender-kind](name-the-sender-kind.md)
 - [name-the-coinbase-age](name-the-coinbase-age.md)
 - [name-the-lock-kind](name-the-lock-kind.md)
+- [name-the-relative-lock](name-the-relative-lock.md)

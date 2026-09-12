@@ -10,7 +10,7 @@
 
 | 课 | 文件 | 核心问题 |
 |---|---|---|
-| 2.1 | [L02-M01-utxo.md](L02-M01-utxo.md) | UTXO 为什么天然能并行；进了块的 coinbase ≠ 已经能花（不变量 163）；脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住（不变量 164） |
+| 2.1 | [L02-M01-utxo.md](L02-M01-utxo.md) | UTXO 为什么天然能并行；进了块的 coinbase ≠ 已经能花（不变量 163）；脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住（不变量 164）；脚本里的 CSV ≠ 绝对锁 / ≠ 部署名（不变量 165） |
 | 2.2 | [L02-M02-account.md](L02-M02-account.md) | 账户 + nonce 换来了什么；可花 ≠ 锁定已从写回排除；瞬时存储 ≠ 账户持久存储（不变量 159）；后来的 SELFDESTRUCT ≠ 账户已经删掉（不变量 160）；发送者已有代码 ≠ 已经能当 EOA 发交易（不变量 162） |
 | 2.3 | [L02-M03-object-resource.md](L02-M03-object-resource.md) | 对象/资源世界观差在哪；`store` ≠ 已经是顶层资源（不变量 151） |
 | 2.4 | [L02-M04-design-map.md](L02-M04-design-map.md) | 《状态模型设计地图》 |
