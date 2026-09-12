@@ -136,6 +136,7 @@ Monad「先定序、后交差根」是另一根钉子（定序 ≠ 状态最终�
 - 立即执行可以要，但必须有候选状态机；崩溃后只承认 `Commit` 过的高度。
 - 不要抄域外 Builder API 来「优化」Prepare；也不要把 Prepare 广告成 PBS。
 - 按发送者序号装箱时，Prepare 必须交出诚实 Process 会收的前缀。单笔 CheckTx 绿 ≠ 整包可提案，见 [ASA-2024-002](../failure-museum/asa-2024-002.md)。
+- `max_tx_bytes` 是外层/本次提案返回的字节上限，不是嵌套 Any / 内部消息 / UnpackAny 已有界。见 [ASA-2024-0012 / 0013](../failure-museum/asa-2024-0012.md)。
 - Vote extension 默认可以不启用；启用则必须守 Req 10，见专页。
 - 后量子：Prepare 若做聚合或批量验签，先写配额；数字仍空。
 

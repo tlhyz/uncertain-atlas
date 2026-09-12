@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 71）
+
+- 博物馆 ASA-2024-0012 / ASA-2024-0013 / GHSA-8wcc-m6j2-qxvm（High）：深嵌套包解码可能栈溢出停网；嵌套消息在 `UnpackAny` 上可指数消耗 CPU/内存。
+- `max_tx_bytes` 限制外层交易，不应用于 wasm 合约或恶意验证者块放出的内部消息。
+- 不变量 70；语料 C74；反模式 maxtxbytes-sold-as-nested-bound；L10.3 第 66 条。
+- 对照不变量 33 / 48 / 51 / 60 / 63。咨询未给 CVE。不写怎样嵌套。不抄递归深度。
+
 ## 2026-09-12（续 70）
 
 - 博物馆 ASA-2024-002 / GHSA-2557-x9mg-76w8（Medium）：默认 `PrepareProposalHandler` 配默认 `SenderNonceMempool`，单一发送者在某些条件下放入多笔序号不连续的交易，可能提出非法块，出块减少。
