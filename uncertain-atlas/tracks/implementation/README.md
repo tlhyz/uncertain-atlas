@@ -100,6 +100,7 @@
 - [`worked-example-listsnapempty-vs-discovery.md`](worked-example-listsnapempty-vs-discovery.md) — ListSnapshots 请求是空请求、向应用要一份快照清单 ≠ 已经齐；ListSnapshots 回包 snapshots 是本地状态快照清单 ≠ 已经是同一份；ListSnapshots 用来在 state sync 时发现邻居上有哪些快照 ≠ 已经在拉块（不变量 395）
 - [`worked-example-offersnap-vs-listed.md`](worked-example-offersnap-vs-listed.md) — OfferSnapshot 请求 snapshot 是拿来装回的那份快照 ≠ 已经是本地清单；OfferSnapshot 回包 result 是这次 Offer 的结果 ≠ 已经装完；OfferSnapshot 在用 state sync 引导节点时叫 ≠ 已经必须实现快照连接（不变量 396）
 - [`worked-example-applychunk-vs-loadchunk.md`](worked-example-applychunk-vs-loadchunk.md) — ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容 ≠ 已经在拉块；ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID ≠ 已经拒了人；ApplySnapshotChunk 回包 result 是装这块的结果 ≠ 已经是 Offer 的结果（不变量 397）
+- [`worked-example-applyretry-vs-refetch.md`](worked-example-applyretry-vs-refetch.md) — ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders ≠ 已经再拉；ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块 ≠ 已经换一份；ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份 ≠ 已经是装这块的结果（不变量 398）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

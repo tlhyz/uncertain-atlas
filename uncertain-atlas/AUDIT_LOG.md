@@ -3961,6 +3961,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1922 | 高 | 看见 ApplySnapshotChunk 回包 result 是装这块的结果 / 看见回了 result 会被写成已经是 Offer 的结果，或当成已经装完 | 官方：result is The result of applying this chunk |
 | A1923 | 中 | 怎样写 ApplySnapshotChunk 请求 / 怎样填 chunk / 怎样填 sender 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1924 | 记录 | 会与 375 / 378 / 396 糊成「看见填了 ApplySnapshotChunk 请求就已经在拉块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk 请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拉块 / 拒人 / Offer 结果 标成另一对象 |
+| A1925 | 高 | 看见 ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders / 看见回了 RETRY 会被写成已经再拉，或当成已经齐 | 工作实例：abci++_methods ApplySnapshotChunk Result 官方写 RETRY is Reapply this chunk, combine with RefetchChunks and RejectSenders as appropriate |
+| A1926 | 高 | 看见 ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块 / 看见回了 RETRY_SNAPSHOT 会被写成已经换一份，或当成已经装完 | 官方：RETRY_SNAPSHOT is Restart this snapshot from OfferSnapshot, reusing chunks unless instructed otherwise |
+| A1927 | 高 | 看见 ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份 / 看见回了 REJECT_SNAPSHOT 会被写成已经是装这块的结果，或当成已经拒了人 | 官方：REJECT_SNAPSHOT is Reject this snapshot, try a different one |
+| A1928 | 中 | 怎样写 ApplySnapshotChunk 结果枚举 / 怎样挑 RETRY / 怎样挑 RETRY_SNAPSHOT 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1929 | 记录 | 会与 378 / 321 / 397 糊成「看见回了 ApplySnapshotChunk 结果枚举就已经再拉」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk 结果枚举 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。再拉 / 换一份 / 装这块的结果 标成另一对象 |
 
 
 

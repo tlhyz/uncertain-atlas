@@ -400,3 +400,4 @@
 - [listsnapempty-sold-as-discovery](listsnapempty-sold-as-discovery.md)
 - [offersnap-sold-as-listed](offersnap-sold-as-listed.md)
 - [applychunk-sold-as-loadchunk](applychunk-sold-as-loadchunk.md)
+- [applyretry-sold-as-refetch](applyretry-sold-as-refetch.md)

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 399）
+
+- CometBFT ApplySnapshotChunk 结果枚举工作实例（官方 ABCI++ Methods ApplySnapshotChunk Result，实现 / ApplySnapshotChunk 结果枚举，不另写 19 节）：看见 ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders 不是已经再拉。看见 ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块不是已经换一份。看见 ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份不是已经是装这块的结果。ApplySnapshotChunk 结果枚举不是不变量 378，也不是不变量 321，也不是不变量 397。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 398；语料 C402；模式 name-the-apply-retry；反模式 applyretry-sold-as-refetch；L10.3 第 394 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk 结果枚举 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ApplySnapshotChunk 结果枚举、怎样挑 RETRY、怎样挑 RETRY_SNAPSHOT。不编博物馆页。不另写 19 节。不与 378 / 321 / 397 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。再拉、换一份、装这块的结果标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 398）
 
 - CometBFT ApplySnapshotChunk 请求工作实例（官方 ABCI++ Methods ApplySnapshotChunk，实现 / ApplySnapshotChunk 请求，不另写 19 节）：看见 ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容不是已经在拉块。看见 ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID 不是已经拒了人。看见 ApplySnapshotChunk 回包 result 是装这块的结果不是已经是 Offer 的结果。ApplySnapshotChunk 请求不是不变量 375，也不是不变量 378，也不是不变量 396。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
