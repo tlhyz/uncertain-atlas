@@ -169,7 +169,7 @@ Avalanche 的独特思想是：
 
 | 链 | 并行思想 | 先学它为了什么 |
 |---|---|---|
-| Solana | 交易预先列出要锁的账户 | 理解声明式冲突 |
+| Solana | 交易预先列出要锁的账户；PoH 是钟，Tower 才是票 | 理解声明式冲突；`processed` ≠ `confirmed` ≠ `finalized`。精读：[`../tracks/consensus/worked-example-poh-vs-tower.md`](../tracks/consensus/worked-example-poh-vs-tower.md) |
 | Sui | 对象所有权决定要不要进共识 | 理解「有些交易可以绕过全网排序」 |
 | Aptos | 先乐观并行，冲突再回滚；Quorum Store 先传播再排序 | 理解「未完全定序也能执行」；已认证批次 ≠ L。精读：[`../tracks/consensus/worked-example-quorum-store-vs-order.md`](../tracks/consensus/worked-example-quorum-store-vs-order.md) |
 

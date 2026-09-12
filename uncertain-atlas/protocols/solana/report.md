@@ -7,7 +7,7 @@
 
 ## 1. 一句话定义
 
-账户是可并行调度的锁对象：交易自报读写集，调度器不重叠则并行执行；PoH 提供可验证的事件顺序；Tower BFT 在此顺序上做投票；Turbine 把块撕成碎片传播。
+账户是可并行调度的锁对象：交易自报读写集，调度器不重叠则并行执行；PoH 提供可验证的事件顺序；Tower BFT 在此顺序上做投票；Turbine 把块撕成碎片传播。PoH 槽钟不是已经投票；`processed` 不是已经 `finalized`。精读：[`../../tracks/consensus/worked-example-poh-vs-tower.md`](../../tracks/consensus/worked-example-poh-vs-tower.md)（不变量 133）。
 
 ---
 
@@ -65,7 +65,8 @@ Solana 想把冲突**提前声明**，让执行器像数据库调度器一样干
 
 ## 6. 共识
 
-**PoH（事实）：** 可验证延迟函数式的哈希链，给事件一个顺序与时间证明。它**不是**单独的 BFT。没有 PoH，仍需要投票决定跟谁。
+**PoH（事实）：** 可验证延迟函数式的哈希链，给事件一个顺序与时间证明。它**不是**单独的 BFT。没有 PoH，仍需要投票决定跟谁。  
+**Tower / RPC：** `processed` 不是已经 `confirmed`；`confirmed` 不是已经 `finalized` / root。超多数票不是已经最大 lockout。精读：[`../../tracks/consensus/worked-example-poh-vs-tower.md`](../../tracks/consensus/worked-example-poh-vs-tower.md)（不变量 133）。不抄槽秒数 / 官网 TPS。Alpenglow 替换计划不是本页现行对象。
 
 **Tower BFT：** 在 PoH 顺序上投票、锁深度。细节以当前共识实现为准。
 

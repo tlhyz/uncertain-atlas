@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 134）
+
+- Solana 工作实例：PoH / 槽钟不是已经投票。`processed` 不是已经 confirmed。`confirmed` 不是已经 finalized / 已经 root。超多数账本票不是已经最大 lockout。出处 solana.com/docs 术语 + RPC commitment。
+- 不变量 133；语料 C137；模式 name-the-clock-and-the-vote；反模式 poh-sold-as-tower；L10.3 第 129 条。填 L6.1 / Solana 档案 §6 / 共识表 / 最终性表 / 停链面地图。
+- 不抄槽秒数 / 锁深度公式 / 官网 TPS / Alpenglow 目标毫秒。不写怎样改投。不编博物馆页。不与 94 / 126 / 127 / 85 / 86 糊成一句。Alpenglow 替换计划不是本页现行对象。
+
 ## 2026-09-12（续 133）
 
 - Aptos 工作实例：Quorum Store 按批次传播不是已经写出共识序 L。已认证批次不是已经排序，也不是已经 commit。去掉领袖数据瓶颈不是已经没有领袖。进了提议块不是已经落盘。出处 aptos.dev Glossary / White Paper 摘要 / Deep Dive。

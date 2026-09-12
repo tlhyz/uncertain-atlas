@@ -11,7 +11,8 @@ Bitcoin MTP 三把尺：[`worked-example-mtp.md`](worked-example-mtp.md)（太�
 本地超时：[`worked-example-timeouts.md`](worked-example-timeouts.md)（`timeout_commit` 是 commit 之后再等，不是最终性、不是锁、不是 PBTS）。默认 MaxBytes 不是第一轮活性 SLA：[ASA-2023-002](../failure-museum/asa-2023-002.md)（`timeout_propose` 必须对照块上限）。+2/3 不是其余槽位已签：[CVE-2020-15091](../failure-museum/cve-2020-15091.md)。  
 应用回的等待：[`worked-example-next-block-delay.md`](worked-example-next-block-delay.md)（`next_block_delay` 非确定性；不是槽位，不是所有发布线都有）。  
 决策表：[`../../libraries/decision-matrix/consensus.md`](../../libraries/decision-matrix/consensus.md)（不确定列空）。  
-Quorum Store 批次传播 ≠ 已经写出 L：[`worked-example-quorum-store-vs-order.md`](worked-example-quorum-store-vs-order.md)（不变量 132）。已认证批次不是已经排序。进了提议块不是已经落盘。
+Quorum Store 批次传播 ≠ 已经写出 L：[`worked-example-quorum-store-vs-order.md`](worked-example-quorum-store-vs-order.md)（不变量 132）。已认证批次不是已经排序。进了提议块不是已经落盘。  
+PoH 槽钟 ≠ 账本票：[`worked-example-poh-vs-tower.md`](worked-example-poh-vs-tower.md)（不变量 133）。`processed` ≠ `confirmed` ≠ `finalized`。超多数票不是已经 root。
 
 | 家族 | 最终性 | 分区时 | 领导 | 主要假设 | 档案/课 |
 |---|---|---|---|---|---|

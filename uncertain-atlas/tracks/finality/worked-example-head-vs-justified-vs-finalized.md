@@ -129,4 +129,4 @@ PoS ≠ 每个槽都 commit
 ## 精密检查
 
 **禁止假学习：** 「PoS 所以秒最终。」「出块了就是 finalized。」「justified 就是不可逆。」「`safe` 就是 justified。」「`safe` 就是 finalized。」「和 Tendermint 一样一槽一 commit。」「这和 BABE / GRANDPA 是同一句三等。」  
-**边界：** 不证 Gasper 论文、不填现行 epoch 秒数、不抄罚金与美元。弱主观性见专页。slash 谓词见 Casper 精读。同步委员会见轻客户端专页。不写怎样重组 justified。
+**边界：** 不证 Gasper 论文、不填现行 epoch 秒数、不抄罚金与美元。弱主观性见专页。slash 谓词见 Casper 精读。同步委员会见轻客户端专页。不写怎样重组 justified。Solana RPC 三档是另一句：[`../consensus/worked-example-poh-vs-tower.md`](../consensus/worked-example-poh-vs-tower.md)（不变量 133）。

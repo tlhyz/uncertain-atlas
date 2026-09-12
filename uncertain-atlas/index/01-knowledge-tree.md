@@ -316,7 +316,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 账户列表、锁定、Sealevel
 - PoH、Tower BFT、Gulf Stream、Turbine
 - 本地费用市场、状态争用、硬件门槛
-- 覆盖：课文 L6.1。PoH ≠ 单独的 BFT。停机/降级根因：[`../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)（失败的 durable nonce ≠ 已不能再播；不变量 85）；[`../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)（已确认的重复槽赢家 ≠ 可当父块；不变量 86）；[`../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md`](../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md)（恢复 shred ≠ 已按父槽滤掉；vote-only ≠ 已停链；不变量 87）；[`../tracks/failure-museum/solana-2024-02-06-legacy-loader-loop.md`](../tracks/failure-museum/solana-2024-02-06-legacy-loader-loop.md)（哨兵有效槽 0 ≠ 已可见；不变量 88）；[`../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md`](../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md)（入站洪水 ≠ 已停链；票不够、分叉不回收才 OOM；不变量 89）；[`../tracks/failure-museum/solana-2020-12-04-slot-as-block-id.md`](../tracks/failure-museum/solana-2020-12-04-slot-as-block-id.md)（槽号 ≠ 块身份；乐观确认 ≠ 已 rooted；不变量 94）；[`../tracks/failure-museum/solana-2025-05-02-elgamal-fiat-shamir.md`](../tracks/failure-museum/solana-2025-05-02-elgamal-fiat-shamir.md)（验绿 ≠ Fiat-Shamir 已绑完；不变量 95）
+- 覆盖：课文 L6.1。PoH ≠ 单独的 BFT；`processed` ≠ `confirmed` ≠ `finalized`：[`../tracks/consensus/worked-example-poh-vs-tower.md`](../tracks/consensus/worked-example-poh-vs-tower.md)（不变量 133）。停机/降级根因：[`../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)（失败的 durable nonce ≠ 已不能再播；不变量 85）；[`../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)（已确认的重复槽赢家 ≠ 可当父块；不变量 86）；[`../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md`](../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md)（恢复 shred ≠ 已按父槽滤掉；vote-only ≠ 已停链；不变量 87）；[`../tracks/failure-museum/solana-2024-02-06-legacy-loader-loop.md`](../tracks/failure-museum/solana-2024-02-06-legacy-loader-loop.md)（哨兵有效槽 0 ≠ 已可见；不变量 88）；[`../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md`](../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md)（入站洪水 ≠ 已停链；票不够、分叉不回收才 OOM；不变量 89）；[`../tracks/failure-museum/solana-2020-12-04-slot-as-block-id.md`](../tracks/failure-museum/solana-2020-12-04-slot-as-block-id.md)（槽号 ≠ 块身份；乐观确认 ≠ 已 rooted；不变量 94）；[`../tracks/failure-museum/solana-2025-05-02-elgamal-fiat-shamir.md`](../tracks/failure-museum/solana-2025-05-02-elgamal-fiat-shamir.md)（验绿 ≠ Fiat-Shamir 已绑完；不变量 95）
 
 ### M6.2 Sui · 重要
 - object ownership、owned vs shared
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–132）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–133）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C136；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C137；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

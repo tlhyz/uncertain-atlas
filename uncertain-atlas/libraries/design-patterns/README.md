@@ -30,3 +30,4 @@
 - [name-the-finality-recovery](name-the-finality-recovery.md)
 - [name-the-sample-decision](name-the-sample-decision.md)
 - [name-the-dissemination-stage](name-the-dissemination-stage.md)
+- [name-the-clock-and-the-vote](name-the-clock-and-the-vote.md)
