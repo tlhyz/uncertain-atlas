@@ -157,6 +157,9 @@ Pedersen/类似承诺、Merkle、zk-SNARK / Halo 2、花费与查看密钥分离
 | ZIP 256 / 跟踪复位 | 协议+实现 | 重复块头静默复位跟踪 ≠ 闸门还在转。见 `tracks/failure-museum/zcash-2026-zip209-header-reset.md` |
 | ZIP 256 / 归一化 | 协议+实现 | 反序列化归一化成零 ≠ 编码必须为零。见 `tracks/failure-museum/zcash-2026-valuebalance-normalized.md` |
 | ZIP 256 / 体毒 | 协议+实现 | 体可变拒绝先于授权承诺 ≠ 头已经绑死。见 `tracks/failure-museum/zcash-2026-nu5-body-poison.md` |
+| ZIP 256 / 身份 rk | 密码+协议+实现 | 规范允许身份 rk ≠ 验证明已经能吃。见 `tracks/failure-museum/zcash-2026-identity-rk-panic.md` |
+| ZIP 256 / ephemeralKey | 协议+实现 | 一家收下无效 ephemeralKey ≠ 规范已经允许。见 `tracks/failure-museum/zcash-2026-ephemeralkey-split.md` |
+| ZIP 256 / coinbase 崩 | 实现+协议 | coinbase 正屏蔽余额 ≠ 重启能起来。见 `tracks/failure-museum/zcash-2026-coinbase-balance-crash.md` |
 
 trusted setup 的社会风险仍只作方向，不编未核仪式事故。其它池的后续披露：有独立 CVE / 官方文再另档。
 

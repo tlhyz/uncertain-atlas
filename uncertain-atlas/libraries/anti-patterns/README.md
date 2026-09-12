@@ -111,3 +111,6 @@
 - [dup-header-sold-as-turnstile](dup-header-sold-as-turnstile.md)
 - [normalize-sold-as-encoded](normalize-sold-as-encoded.md)
 - [body-reject-sold-as-header-bound](body-reject-sold-as-header-bound.md)
+- [identity-rk-sold-as-handled](identity-rk-sold-as-handled.md)
+- [ephemeralkey-sold-as-valid](ephemeralkey-sold-as-valid.md)
+- [coinbase-balance-sold-as-restart-safe](coinbase-balance-sold-as-restart-safe.md)

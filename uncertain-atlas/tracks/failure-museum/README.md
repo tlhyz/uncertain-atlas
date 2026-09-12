@@ -81,8 +81,11 @@
 - [zcash-2026-zip209-header-reset](zcash-2026-zip209-header-reset.md)（协议+实现：重复块头静默复位跟踪不是闸门还在转）
 - [zcash-2026-valuebalance-normalized](zcash-2026-valuebalance-normalized.md)（协议+实现：反序列化归一化成零不是编码必须为零）
 - [zcash-2026-nu5-body-poison](zcash-2026-nu5-body-poison.md)（协议+实现：体可变拒绝先于授权承诺不是头已经绑死）
+- [zcash-2026-identity-rk-panic](zcash-2026-identity-rk-panic.md)（密码+协议+实现：规范允许身份 rk 不是验证明已经能吃）
+- [zcash-2026-ephemeralkey-split](zcash-2026-ephemeralkey-split.md)（协议+实现：一家收下无效 ephemeralKey 不是规范已经允许）
+- [zcash-2026-coinbase-balance-crash](zcash-2026-coinbase-balance-crash.md)（实现+协议：coinbase 正屏蔽余额不是重启能起来）
 
-待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余独立谓词（身份 `rk` 恐慌、`ephemeralKey` 分裂、coinbase 屏蔽余额崩溃循环）有官方句且不与 13 / 102 / 104–106 / 52911 重复才另档。
+待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余行（Sprout 验证明、超范围池增量写盘、P2SH sigop、输入顺序）有独立谓词且不与 13 / 43 / 42 / 107–109 / 52911 重复才另档。
 
 写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)  
 五层对照精读：[`worked-example-five-layers.md`](worked-example-five-layers.md)（同一通胀案，五层各说什么）。  
