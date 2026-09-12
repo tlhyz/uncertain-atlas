@@ -740,3 +740,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A246 | 记录 | 公告未标 High/Medium/Low；隐蔽修进「Improve and document SOCKS code」 | 不补严重度；不把栈覆写写成已发生主网 RCE |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 01:10 UTC · 付款 URI 不是验证
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A247 | 中 | 「打开付款链接」会被写成全节点已验证 | 博物馆 CVE-2024-52918：BIP72 `r` 是钱包 HTTP 取单，不是 Apply |
+| A248 | 中 | 会和 P2P 接收分配 / SOCKS 跳 / RPC 绿勾糊 | 对照表；不变量 55；语料 C59；亲戚 rpc-as-verification |
+| A249 | 中 | 删 BIP70 会被写成共识倒退 | 官方修法就是整段去掉该辅助协议 |
+| A250 | 记录 | 公告写受害人须打开 URI；后台几乎无 GUI 输出 | 不写 URI 怎么拼、不复现 PoC |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

@@ -59,3 +59,4 @@
 - [app-delay-sold-as-slot](app-delay-sold-as-slot.md)
 - [upnp-sold-as-must](upnp-sold-as-must.md)
 - [proxy-sold-as-peer](proxy-sold-as-peer.md)
+- [uri-fetch-sold-as-verify](uri-fetch-sold-as-verify.md)

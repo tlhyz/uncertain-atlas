@@ -162,8 +162,8 @@ Level 0 只要求你能按这个清单提问。
 | 部署 | 你连的节点、日蚀、分区决定你看见哪条门 |
 | 经济 | 费用与审查决定过门快慢，不把入池变成最终 |
 
-**禁止假学习：** 「钱包绿勾指协议最终。」「进 mempool 就是上链。」
-**边界：** 各链细节在档案第 4 节。五列对照见 [`../../tracks/lifecycle/`](../../tracks/lifecycle/README.md)。
+**禁止假学习：** 「钱包绿勾指协议最终。」「进 mempool 就是上链。」「打开付款链接就是已验证。」  
+**边界：** 各链细节在档案第 4 节。五列对照见 [`../../tracks/lifecycle/`](../../tracks/lifecycle/README.md)。付款 URI 远程取单 ≠ 验证：[`../../tracks/failure-museum/cve-2024-52918.md`](../../tracks/failure-museum/cve-2024-52918.md)。
 
 ---
 
