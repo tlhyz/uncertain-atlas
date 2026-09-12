@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 312）
+
+- CometBFT 候选状态工作实例（官方 Requirements for the Application，实现 / 候选状态，不另写 19 节）：看见 Prepare 里没有头哈希不是已经知道本头。看见立刻执行出候选不是已经是 ExecuteTxState。看见丢掉候选不是已经永远不用再执行。候选状态不是不变量 33，也不是不变量 310，也不是不变量 5。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 311；语料 C315；模式 name-the-candidate；反模式 candidate-sold-as-execute；L10.3 第 307 条。填 L4.4 / CometBFT 档案候选状态 / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄字段表、内存上限取值。不写怎样实现候选缓存、怎样算头哈希、怎样再执行。不编博物馆页。不另写 19 节。不与 33 / 310 / 5 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。四门 / Commit 锁 / 半写原子标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 311）
 
 - CometBFT Commit 锁工作实例（官方 Requirements for the Application，实现 / ABCI 连接状态，不另写 19 节）：看见默认 Go 有全局锁不是已经能把状态直接给 RPC。看见 Commit 前锁了内存池不是已经解锁。看见 Commit 里等 broadcast_tx 不是已经能往下走。Commit 锁不是不变量 307，也不是不变量 5，也不是不变量 301。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

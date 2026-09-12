@@ -33,6 +33,8 @@ HasChannel 为真不是已经入队：[`../../tracks/network/worked-example-send
 
 默认 Go 有全局锁不是已经能把状态直接给 RPC：[`../../tracks/implementation/worked-example-commit-lock-vs-rpc.md`](../../tracks/implementation/worked-example-commit-lock-vs-rpc.md)（不变量 310）。看见 Commit 前锁了内存池不是已经解锁。看见 Commit 里等 broadcast_tx 不是已经能往下走。
 
+立刻执行出候选不是已经是 ExecuteTxState：[`../../tracks/implementation/worked-example-candidate-vs-execute.md`](../../tracks/implementation/worked-example-candidate-vs-execute.md)（不变量 311）。看见 Prepare 里没有头哈希不是已经知道本头。看见丢掉候选不是已经永远不用再执行。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

@@ -13,6 +13,7 @@
 - [`worked-example-genesis-vs-app.md`](worked-example-genesis-vs-app.md) — 创世 app_state ≠ 已经验过应用状态；进程起来 ≠ 已经过了 genesis_time；空 validators ≠ 已经没有集合（不变量 303）
 - [`worked-example-abci-conn-vs-gates.md`](worked-example-abci-conn-vs-gates.md) — 同进程 ≠ 已经有套接字隔离；gRPC 最容易 ≠ 已经高性能；一条连接 ≠ 已经够用，也不是已经是四门（不变量 307）
 - [`worked-example-commit-lock-vs-rpc.md`](worked-example-commit-lock-vs-rpc.md) — 默认锁 ≠ 已经 RPC 安全；Commit 前上锁 ≠ 已经解锁；Commit 里等广播 ≠ 已经能往下走（不变量 310）
+- [`worked-example-candidate-vs-execute.md`](worked-example-candidate-vs-execute.md) — Prepare 没有头哈希 ≠ 已经知道本头；候选 ≠ 已经是 ExecuteTxState；丢掉 ≠ 已经永远不用再执行（不变量 311）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

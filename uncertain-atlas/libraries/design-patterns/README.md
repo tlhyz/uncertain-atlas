@@ -208,3 +208,4 @@
 - [name-the-numpeers](name-the-numpeers.md)
 - [name-the-send](name-the-send.md)
 - [name-the-commit-lock](name-the-commit-lock.md)
+- [name-the-candidate](name-the-candidate.md)
