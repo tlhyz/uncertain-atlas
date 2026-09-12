@@ -67,3 +67,4 @@
 - [name-the-tx-envelope](name-the-tx-envelope.md)
 - [name-the-planned-access](name-the-planned-access.md)
 - [name-the-access-heat](name-the-access-heat.md)
+- [name-the-redeem-reveal](name-the-redeem-reveal.md)

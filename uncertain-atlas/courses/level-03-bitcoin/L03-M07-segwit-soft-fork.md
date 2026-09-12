@@ -113,5 +113,5 @@ Taproot 是后续软分叉，本课不展开。
 | 部署 | 谁升级谁做完整验证 |
 | 经济 | 矿工/节点激励是否执行新规则 |
 
-**禁止假学习：** 「SegWit 是硬分叉扩容。」「旧节点和以前一样安全。」「见证折扣 = 官方 TPS。」「交易哈希 = 已经含签名。」「块头 Merkle 绿 = 见证已进头。」「txid = wtxid。」  
-**边界：** 不讲 Tapscript 操作码、不讲闪电路由、不背激活日期表。不抄承诺魔数 / 重量公式 / 版本 0 程序长度。`txid` ≠ `wtxid` 见 **C156** / 不变量 **152**。政策门 ≠ 共识门见 **C148**。钥匙路径 ≠ 揭树见 **C157** / 不变量 **153**：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)。Taproot 路径用 BIP-340；tagged hash 公式在 [`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)，本课不展开曲线。
+**禁止假学习：** 「SegWit 是硬分叉扩容。」「旧节点和以前一样安全。」「见证折扣 = 官方 TPS。」「交易哈希 = 已经含签名。」「块头 Merkle 绿 = 见证已进头。」「txid = wtxid。」「付给哈希 = 赎回已经揭开。」「旧节点 EQUAL 通过 = 新节点已经再跑。」「16 = Taproot。」  
+**边界：** 不讲 Tapscript 操作码、不讲闪电路由、不背激活日期表。不抄承诺魔数 / 重量公式 / 版本 0 程序长度。`txid` ≠ `wtxid` 见 **C156** / 不变量 **152**。政策门 ≠ 共识门见 **C148**。钥匙路径 ≠ 揭树见 **C157** / 不变量 **153**：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)。付给脚本哈希 ≠ 已经揭开赎回脚本见 **C174** / 不变量 **170**：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)。Taproot 路径用 BIP-340；tagged hash 公式在 [`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)，本课不展开曲线。不抄激活票数。不写怎样构造旧合法新非法的赎回。

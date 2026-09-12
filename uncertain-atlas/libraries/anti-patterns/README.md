@@ -172,3 +172,4 @@
 - [type-sold-as-payload](type-sold-as-payload.md)
 - [listed-sold-as-accessed](listed-sold-as-accessed.md)
 - [first-access-sold-as-warm](first-access-sold-as-warm.md)
+- [hash-sold-as-redeem](hash-sold-as-redeem.md)
