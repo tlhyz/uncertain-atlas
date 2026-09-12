@@ -242,3 +242,4 @@
 - [call-63rds-sold-as-oog](call-63rds-sold-as-oog.md)
 - [uncle-diff-sold-as-exact](uncle-diff-sold-as-exact.md)
 - [forkid-sold-as-same-chain](forkid-sold-as-same-chain.md)
+- [enr-sold-as-newest](enr-sold-as-newest.md)
