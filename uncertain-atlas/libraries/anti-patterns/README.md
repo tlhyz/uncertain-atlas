@@ -54,3 +54,4 @@
 - [timeout-commit-sold-as-finality](timeout-commit-sold-as-finality.md)
 - [max-msg-sold-as-recv-quota](max-msg-sold-as-recv-quota.md)
 - [rate-limit-sold-as-width](rate-limit-sold-as-width.md)
+- [autoban-sold-as-bound](autoban-sold-as-bound.md)
