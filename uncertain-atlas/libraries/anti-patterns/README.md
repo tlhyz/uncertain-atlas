@@ -230,3 +230,4 @@
 - [net-meter-sold-as-transient](net-meter-sold-as-transient.md)
 - [calldata-cut-sold-as-unlimited](calldata-cut-sold-as-unlimited.md)
 - [modexp-price-sold-as-bound](modexp-price-sold-as-bound.md)
+- [bn128-cut-sold-as-verify](bn128-cut-sold-as-verify.md)

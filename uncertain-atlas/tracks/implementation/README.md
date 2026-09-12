@@ -50,6 +50,7 @@
 - [`worked-example-net-meter-vs-transient.md`](worked-example-net-meter-vs-transient.md) — 看见净计量 ≠ 已经是瞬时存储；看见原来值 / 当前值 / 新值 ≠ 已经只有当前值；看见津贴帧禁写 ≠ 已经能改槽；2200 ≠ 1153 ≠ 159 ≠ 3529 ≠ 223（不变量 225）
 - [`worked-example-calldata-cut-vs-unlimited.md`](worked-example-calldata-cut-vs-unlimited.md) — 看见非零 calldata 降价 ≠ 已经给零字节也降价；看见降价 ≠ 已经没有块大小上限；看见降价 ≠ 已经不伤延迟 / 安全；2028 ≠ 7623 ≠ 197 ≠ 4844 ≠ 145（不变量 226）
 - [`worked-example-modexp-price-vs-bound.md`](worked-example-modexp-price-vs-bound.md) — 看见模幂重计价 ≠ 已经是 198 那道复杂度公式；看见更便宜 ≠ 已经改了接口或算法；看见最低气价 ≠ 已经能对小输入无限便宜；2565 ≠ 7823 ≠ 206 ≠ 198 原文（不变量 227）
+- [`worked-example-bn128-cut-vs-verify.md`](worked-example-bn128-cut-vs-verify.md) — 看见 bn128 加 / 乘 / 配对降价 ≠ 已经换了算法；看见更便宜 ≠ 已经在验签；看见本页 ≠ 已经是通用曲线算术；1108 ≠ 2537 ≠ 199 ≠ 196/197 原文（不变量 228）
 - [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
 - [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）

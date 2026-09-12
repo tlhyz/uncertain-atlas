@@ -125,3 +125,4 @@
 - [name-the-net-meter](name-the-net-meter.md)
 - [name-the-calldata-cut](name-the-calldata-cut.md)
 - [name-the-modexp-price](name-the-modexp-price.md)
+- [name-the-bn128-cut](name-the-bn128-cut.md)
