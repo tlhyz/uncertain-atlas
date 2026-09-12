@@ -6,7 +6,7 @@
 
 | 课 | 文件 | 覆盖 | 核心问题 |
 |---|---|---|---|
-| 7.1 | [L07-M01-four-layers.md](L07-M01-four-layers.md) | M7.1 | 四层为什么要拆；执行费 ≠ DA 费（不变量 145）；抬高 blob 日程 ≠ 已经改了两套气 / 已经是 PeerDAS（不变量 200）；blob 底价 ≠ 已经并成一套气（不变量 201） |
+| 7.1 | [L07-M01-four-layers.md](L07-M01-four-layers.md) | M7.1 | 四层为什么要拆；执行费 ≠ DA 费（不变量 145）；抬高 blob 日程 ≠ 已经改了两套气 / 已经是 PeerDAS（不变量 200）；blob 底价 ≠ 已经并成一套气（不变量 201）；看见只改 blob 参数的专用分叉 ≠ 已经改了执行规则（不变量 209） |
 | 7.2 | [L07-M02-data-availability.md](L07-M02-data-availability.md) | M7.2 | 有头为什么还不够；NMT 齐 ≠ 方阵可用 |
 | 7.3 | [L07-M03-shared-security.md](L07-M03-shared-security.md) | M7.4 / M7.5 入口 | 借安全借到什么；backed ≠ 可用；BABE ≠ GRANDPA；IBC 客户端 ≠ 数据包（不变量 146）；托管 ≠ 对岸原币（不变量 155） |
 | 7.4 | [L07-M04-rollup-tenant.md](L07-M04-rollup-tenant.md) | M7.3 | 乐观/ZK 租户与提款三条件 |

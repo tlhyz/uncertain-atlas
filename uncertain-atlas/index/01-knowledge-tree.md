@@ -295,7 +295,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.5 EIP、交易类型、blobs、rollup 入口 · 重要
 - 协议如何演化
-- 覆盖：课文 L5.4；blob sidecar / PeerDAS / Celestia 三维对照 `tracks/light-clients/worked-example-blob-vs-das.md`（不变量 23）。blob gas ≠ 普通执行 gas：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。看见抬高 blob 目标/上限 ≠ 已经改了两套气的拆分，也不是已经 PeerDAS：[`../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)（不变量 200）。看见 blob 底价 ≠ 已经并成一套气，也不是已经改了日程：[`../tracks/light-clients/worked-example-blob-reserve-vs-execution.md`](../tracks/light-clients/worked-example-blob-reserve-vs-execution.md)（不变量 201）
+- 覆盖：课文 L5.4；blob sidecar / PeerDAS / Celestia 三维对照 `tracks/light-clients/worked-example-blob-vs-das.md`（不变量 23）。blob gas ≠ 普通执行 gas：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。看见抬高 blob 目标/上限 ≠ 已经改了两套气的拆分，也不是已经 PeerDAS：[`../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)（不变量 200）。看见 blob 底价 ≠ 已经并成一套气，也不是已经改了日程：[`../tracks/light-clients/worked-example-blob-reserve-vs-execution.md`](../tracks/light-clients/worked-example-blob-reserve-vs-execution.md)（不变量 201）。看见只改 blob 参数的专用分叉 ≠ 已经改了执行规则，也不是已经是常规抬日程或 PeerDAS：[`../tracks/light-clients/worked-example-bpo-vs-hardfork.md`](../tracks/light-clients/worked-example-bpo-vs-hardfork.md)（不变量 209）
 
 ### M5.6 MEV 与 PBS · 进阶
 - mempool 不再是简单队列
@@ -352,7 +352,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M7.1 模块化四件套 · 必学
 - execution / settlement / consensus / DA
-- 覆盖：课文 L7.1。执行费 ≠ DA 费；blob gas ≠ 普通执行 gas；EVM 能读承诺 ≠ 已经读到袋里的字节：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。看见抬高 blob 目标/上限 ≠ 已经改了两套气，也不是已经 PeerDAS：[`../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)（不变量 200）。看见 blob 底价 ≠ 已经并成一套气：[`../tracks/light-clients/worked-example-blob-reserve-vs-execution.md`](../tracks/light-clients/worked-example-blob-reserve-vs-execution.md)（不变量 201）
+- 覆盖：课文 L7.1。执行费 ≠ DA 费；blob gas ≠ 普通执行 gas；EVM 能读承诺 ≠ 已经读到袋里的字节：[`../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。看见抬高 blob 目标/上限 ≠ 已经改了两套气，也不是已经 PeerDAS：[`../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)（不变量 200）。看见 blob 底价 ≠ 已经并成一套气：[`../tracks/light-clients/worked-example-blob-reserve-vs-execution.md`](../tracks/light-clients/worked-example-blob-reserve-vs-execution.md)（不变量 201）。看见只改 blob 参数的专用分叉 ≠ 已经改了执行规则：[`../tracks/light-clients/worked-example-bpo-vs-hardfork.md`](../tracks/light-clients/worked-example-bpo-vs-hardfork.md)（不变量 209）
 
 ### M7.2 Celestia · 必学
 - DAS、纠删码、NMT
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–208）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–209）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C212；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C213；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
