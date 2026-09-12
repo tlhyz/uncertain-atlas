@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 42）
+
+- 博物馆 CVE-2024-52921：未请求的变异块可清掉其他对等节点的 compact 重建状态。Medium。
+- 对照 2012-2459（同根共识）、52922（卡住）、35202（断言崩）。下载状态必须按 (对等节点, 对象) 隔离。
+- 不变量 39；语料 C41；反模式 mutated-clears-others-download；L10.3 第 35 条。
+- 不写变异构造。
+
 ## 2026-09-12（续 41）
 
 - ABCI state sync 精读：装应用快照、不重放历史块。OfferSnapshot 只有轻验 AppHash 可信；Snapshot.hash / metadata 可伪造。
