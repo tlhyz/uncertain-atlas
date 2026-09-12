@@ -20,7 +20,10 @@ from qtb.ab.engine import (
 )
 from qtb.ab.fills import FillConfig, PendingFill, infer_tick, resolve_bar_fills
 from qtb.ab.grids import GridSpec, grid_quote_size, native_spec, rolling_atr
+
+from .tick_fills import resolve_tick_fills
 from qtb.costs.model import funding_pnl
+from qtb.data.binance_futures import slice_trades_for_bar
 
 from .crypto_fsm import CryptoBookFSM
 from .data import DualDataset
@@ -162,6 +165,7 @@ def _process_grid_fills(
     fee: FeeSpec,
     fill: FillConfig,
     reanchor: bool,
+    bar_trades: pd.DataFrame | None = None,
 ) -> None:
     st = leg.state
     if st.liquidated or leg.mode != "grid" or leg.target_notional <= 0:
@@ -202,6 +206,18 @@ def _process_grid_fills(
             if si >= 0:
                 pending.append(PendingFill("buy", float(spec.levels[si]), si, qty=lot_qty, reduce_only=True, reason="grid_tp"))
 
+    if bar_trades is not None and not bar_trades.empty:
+        tick = infer_tick(float(c), fill.tick_size)
+        fill_t = FillConfig(fill.mode, fill.participation, fill.extra_ticks, fill.extra_slip_bps, tick)
+        fills = resolve_tick_fills(pending, bar_trades, fill_t)
+        for tf in fills:
+            px = tf.price
+            if tf.side == "buy" and leg.direction == "long":
+                _rebalance_leg(leg, i, px, abs(st.qty) * px + tf.notional, fee, fill)
+            elif tf.side == "sell" and leg.direction == "long":
+                _rebalance_leg(leg, i, px, max(abs(st.qty) * px - tf.notional, 0), fee, fill)
+        return
+
     fills = resolve_bar_fills(pending, o, h, l, c, quote_volume=qv, cfg=fill)
     for pf in fills:
         px = pf.price
@@ -219,6 +235,8 @@ def run_dual_portfolio(
     name: str = "dual",
     fill_mode: str = "base",
     benchmark: str | None = None,
+    crypto_tick_fills: bool = True,
+    tech_disabled: bool = False,
 ) -> PortfolioResult:
     """Run dual-engine strategy or named benchmark on aligned dataset."""
     soxl = data.tech["SOXL"].bars
@@ -338,6 +356,10 @@ def run_dual_portfolio(
                 if ce:
                     leg.target_notional = (ce.long_grid_frac + ce.long_dir_frac) * crypto_caps
 
+            if tech_disabled:
+                for leg in legs[:4]:
+                    leg.target_notional = 0.0
+
             regime_log.append({
                 "ts": str(ts[i]),
                 "dd": float(dd_series[i]),
@@ -375,6 +397,37 @@ def run_dual_portfolio(
 
             for leg in legs[4:]:
                 cpx = float(data.crypto[leg.symbol].bars["close"].iloc[i])
+                bar_ts = pd.Timestamp(data.crypto[leg.symbol].bars["timestamp"].iloc[i])
+                bar_trades = None
+                md = data.crypto.get(leg.symbol)
+                if crypto_tick_fills and md:
+                    if md.trades is not None and not md.trades.empty:
+                        bar_trades = slice_trades_for_bar(md.trades, bar_ts, data.interval)
+                    elif getattr(md, "trades_lazy", False):
+                        from qtb.data.binance_futures import fetch_agg_trades_day
+
+                        day_df = fetch_agg_trades_day(md.perp, bar_ts.date(), cache_only=True)
+                        bar_trades = slice_trades_for_bar(day_df, bar_ts, data.interval)
+                if leg.mode == "grid" and leg.target_notional > 0:
+                    atr_c = float(
+                        rolling_atr(
+                            data.crypto[leg.symbol].bars["high"].to_numpy(float),
+                            data.crypto[leg.symbol].bars["low"].to_numpy(float),
+                            data.crypto[leg.symbol].bars["close"].to_numpy(float),
+                            24,
+                        )[i]
+                    )
+                    qv_c = float(data.crypto[leg.symbol].bars["quote_volume"].iloc[i]) if "quote_volume" in data.crypto[leg.symbol].bars.columns else 0.0
+                    _process_grid_fills(
+                        leg, i,
+                        float(data.crypto[leg.symbol].bars["open"].iloc[i]),
+                        float(data.crypto[leg.symbol].bars["high"].iloc[i]),
+                        float(data.crypto[leg.symbol].bars["low"].iloc[i]),
+                        cpx, qv_c, atr_c,
+                        params.crypto.grid_atr_step, params.crypto.grid_atr_range,
+                        fee, fill, reanchor=True,
+                        bar_trades=bar_trades,
+                    )
                 _rebalance_leg(leg, i, cpx, leg.target_notional, fee, fill)
 
         # Liquidation check (isolated, simplified)

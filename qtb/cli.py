@@ -80,6 +80,11 @@ def build_parser() -> argparse.ArgumentParser:
     dual.add_argument("-c", "--config", default="configs/dual_engine_perp.yaml")
     dual.add_argument("--cache-only", action="store_true")
     dual.add_argument("--output-dir", default="")
+    dual.add_argument(
+        "--download-trades",
+        action="store_true",
+        help="Download Binance aggTrades for CRYPTO_C1 window (2024-09~11)",
+    )
     return p
 
 
@@ -213,6 +218,9 @@ def cmd_dual(args: argparse.Namespace) -> int:
         cfg["cache_only"] = True
     if args.output_dir:
         cfg["output_dir"] = args.output_dir
+    if getattr(args, "download_trades", False):
+        cfg["download_binance_trades"] = True
+        cfg["run_binance_c1"] = True
     run_job(cfg)
     return 0
 

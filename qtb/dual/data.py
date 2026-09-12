@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import io
+import zipfile
 import time
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -55,6 +57,9 @@ class MarketData:
     funding: pd.DataFrame
     meta: SeriesMeta
     contract: Any = None
+    trades: pd.DataFrame | None = None
+    data_source: Literal["gate", "binance"] = "gate"
+    trades_lazy: bool = False  # load daily aggTrades from disk per bar
 
 
 @dataclass
@@ -82,11 +87,27 @@ def fetch_binance_futures_klines(
 ) -> pd.DataFrame:
     """Download Binance USDT-M futures klines for template matching (not execution)."""
     path = _binance_cache_path(symbol, interval)
+    step_ms = _INTERVAL_SEC.get(interval, 3600) * 1000
     cached = load_cache(path)
     if cached is not None and not cached.empty:
-        if cache_only:
+        if start_ms or end_ms:
+            t0 = pd.Timestamp(start_ms, unit="ms", tz="UTC") if start_ms else cached["timestamp"].iloc[0]
+            t1 = pd.Timestamp(end_ms, unit="ms", tz="UTC") if end_ms else cached["timestamp"].iloc[-1]
+            sub = cached[(cached["timestamp"] >= t0) & (cached["timestamp"] <= t1)].copy()
+            if len(sub) >= 24:
+                sub.attrs = cached.attrs.copy()
+                if cache_only:
+                    return sub
+        elif cache_only:
             cached.attrs["source"] = "binance_futures_cached"
             return cached
+        elif not cache_only and len(cached) >= 100:
+            # use cache tail incremental only when no explicit range
+            last = int(cached["timestamp"].iloc[-1].timestamp() * 1000)
+            if end_ms is None or last >= (end_ms or last) - step_ms * 2:
+                if start_ms is None:
+                    cached.attrs["source"] = "binance_futures_cached"
+                    return cached
 
     if httpx is None:
         if cached is not None:
@@ -98,7 +119,6 @@ def fetch_binance_futures_klines(
     rows: list[list] = []
     cur = start_ms or int(pd.Timestamp("2020-01-01", tz="UTC").timestamp() * 1000)
     end = end_ms or int(time.time() * 1000)
-    step_ms = _INTERVAL_SEC.get(interval, 3600) * 1000
 
     with httpx.Client(timeout=30.0) as client:
         while cur < end:
@@ -275,3 +295,173 @@ def write_provenance(data: DualDataset, out_dir: Path) -> None:
         json.dumps(data.provenance, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
+
+
+def load_binance_crypto_dataset(
+    start: str,
+    end: str,
+    interval: str = "1h",
+    *,
+    cache_only: bool = False,
+    download_trades: bool = True,
+    symbols: tuple[str, ...] = CRYPTO_CORE,
+) -> DualDataset:
+    """
+    Crypto book on Binance USDT-M: real 1h klines + aggTrades + funding.
+    Tech book is empty placeholders (cash) — for CRYPTO_C1 decoupling tests.
+    """
+    from datetime import timedelta
+
+    from qtb.data.binance_futures import fetch_agg_trades_day, fetch_binance_klines_range, normalize_symbol
+
+    crypto: dict[str, MarketData] = {}
+    frames: list[pd.DataFrame] = []
+    agg_rows: dict[str, int] = {}
+
+    t0 = pd.Timestamp(start, tz="UTC").date()
+    t1 = pd.Timestamp(end, tz="UTC").date()
+
+    for sym in symbols:
+        bn = normalize_symbol(sym)
+        bars = fetch_binance_klines_range(bn, interval, start, end, cache_only=cache_only)
+        if bars.empty:
+            raise RuntimeError(f"Binance klines empty for {bn} {start} -> {end}")
+
+        n_rows = 0
+        if download_trades:
+            d = t0
+            while d <= t1:
+                day_df = fetch_agg_trades_day(bn, d, cache_only=cache_only)
+                n_rows += len(day_df)
+                d += timedelta(days=1)
+        agg_rows[sym] = n_rows
+
+        funding = _fetch_binance_funding(bn, start, end, cache_only=cache_only)
+        bars = _attach_binance_funding(bars, funding)
+        meta = SeriesMeta(
+            symbol=bn,
+            market="binance_futures",
+            interval=interval,
+            source="binance_vision_klines+aggTrades",
+            start=str(bars["timestamp"].iloc[0]),
+            end=str(bars["timestamp"].iloc[-1]),
+            bars=len(bars),
+            nonzero_quote_bars=int((bars["quote_volume"].fillna(0) > 0).sum()),
+            cache_path="",
+            notes=[f"aggTrades_cached_rows={n_rows}", "trades_lazy=true"],
+        )
+        crypto[sym] = MarketData(
+            sym, bn, interval, bars, funding, meta,
+            trades=None, data_source="binance", trades_lazy=bool(download_trades),
+        )
+        frames.append(bars)
+
+    aligned = align_on_timestamp(*frames)
+    for j, sym in enumerate(symbols):
+        md = crypto[sym]
+        crypto[sym] = MarketData(
+            sym, md.perp, interval, aligned[j], md.funding, md.meta, md.contract,
+            None, "binance", md.trades_lazy,
+        )
+
+    # Minimal SOXL/SNXX placeholders so portfolio can run tech=cash
+    empty = aligned[0].copy()
+    empty["close"] = 1.0
+    empty["open"] = 1.0
+    empty["high"] = 1.0
+    empty["low"] = 1.0
+    empty["funding_rate"] = 0.0
+    meta_e = SeriesMeta("SOXL", "cash_placeholder", interval, "placeholder", str(empty["timestamp"].iloc[0]), str(empty["timestamp"].iloc[-1]), len(empty), 0, "")
+    tech = {
+        "SOXL": MarketData("SOXL", "SOXL_USDT", interval, empty, pd.DataFrame(), meta_e, data_source="gate"),
+        "SNXX": MarketData("SNXX", "SNXX_USDT", interval, empty.copy(), pd.DataFrame(), meta_e, data_source="gate"),
+    }
+
+    idx = pd.DatetimeIndex(aligned[0]["timestamp"])
+    prov = {
+        "source": "binance_futures",
+        "interval": interval,
+        "crypto_symbols": list(symbols),
+        "overlap_start": str(idx[0]),
+        "overlap_end": str(idx[-1]),
+        "bars": len(idx),
+        "aggTrades_cached_rows": agg_rows,
+    }
+    return DualDataset(
+        interval=interval,
+        tech=tech,
+        crypto=crypto,
+        aligned_index=idx,
+        seed_coverage=[],
+        overlap_start=idx[0],
+        overlap_end=idx[-1],
+        provenance=prov,
+    )
+
+
+def _fetch_binance_funding(symbol: str, start: str, end: str, cache_only: bool = False) -> pd.DataFrame:
+    from qtb.data.binance_futures import normalize_symbol
+
+    sym = normalize_symbol(symbol)
+    path = CACHE_DIR / f"binance_futures_{sym}_funding.csv"
+    cached = load_cache(path)
+    if cached is not None and not cached.empty and not cache_only:
+        return cached
+    if cache_only:
+        return cached if cached is not None else pd.DataFrame(columns=["timestamp", "funding_rate"])
+
+    if httpx is None:
+        return pd.DataFrame(columns=["timestamp", "funding_rate"])
+
+    t0 = pd.Timestamp(start, tz="UTC")
+    t1 = pd.Timestamp(end, tz="UTC")
+    months = pd.period_range(t0.to_period("M"), t1.to_period("M"), freq="M")
+    rows: list[dict] = []
+    with httpx.Client(timeout=60.0, follow_redirects=True) as client:
+        for per in months:
+            url = (
+                f"https://data.binance.vision/data/futures/um/monthly/fundingRate/"
+                f"{sym}/{sym}-fundingRate-{per.strftime('%Y-%m')}.zip"
+            )
+            r = client.get(url)
+            if r.status_code == 404:
+                continue
+            if r.status_code in (451, 403):
+                break
+            r.raise_for_status()
+            zf = zipfile.ZipFile(io.BytesIO(r.content))
+            text = zf.read(zf.namelist()[0]).decode("utf-8")
+            part = pd.read_csv(io.StringIO(text))
+            rows.extend(part.to_dict("records"))
+
+    if not rows:
+        return pd.DataFrame(columns=["timestamp", "funding_rate"])
+
+    df = pd.DataFrame(rows)
+    ts_col = "calc_time" if "calc_time" in df.columns else "fundingTime"
+    rate_col = "last_funding_rate" if "last_funding_rate" in df.columns else "fundingRate"
+    out = pd.DataFrame(
+        {
+            "timestamp": pd.to_datetime(df[ts_col], unit="ms", utc=True, errors="coerce"),
+            "funding_rate": pd.to_numeric(df[rate_col], errors="coerce"),
+        }
+    ).dropna(subset=["timestamp"]).drop_duplicates("timestamp").sort_values("timestamp")
+    out["timestamp"] = out["timestamp"].astype("datetime64[ns, UTC]")
+    save_cache(out, path)
+    return out
+
+
+def _attach_binance_funding(bars: pd.DataFrame, funding: pd.DataFrame) -> pd.DataFrame:
+    if funding.empty:
+        out = bars.copy()
+        out["funding_rate"] = 0.0
+        return out
+    m = pd.merge_asof(
+        bars.sort_values("timestamp").assign(timestamp=lambda x: x["timestamp"].astype("datetime64[ns, UTC]")),
+        funding.sort_values("timestamp").assign(timestamp=lambda x: x["timestamp"].astype("datetime64[ns, UTC]")),
+        on="timestamp",
+        direction="backward",
+    )
+    m["funding_rate"] = m["funding_rate"].fillna(0.0)
+    return m.reset_index(drop=True)
+

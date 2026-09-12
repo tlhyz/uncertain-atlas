@@ -225,6 +225,27 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
                 f"{w.get('composite', 0):.4f} | {w.get('score_pearson', 0):.4f} |"
             )
 
+    c1 = payload.get("binance_crypto_c1") or {}
+    if c1 and "error" not in c1:
+        lines.extend([
+            "",
+            "## CRYPTO_C1 — Binance aggTrades (2024-09 → 2024-11)",
+            "",
+            f"- aggTrades rows: {c1.get('aggTrades')}",
+            f"- Independent return: **{c1.get('independent', {}).get('total_return', 0):.2%}**",
+            f"- Unified return: **{c1.get('unified', {}).get('total_return', 0):.2%}**",
+            f"- Δreturn (independent − unified): **{c1.get('delta_return', 0):+.4f}**",
+            "",
+        ])
+    elif c1.get("error"):
+        lines.extend([
+            "",
+            "## CRYPTO_C1 — Binance aggTrades",
+            "",
+            f"Not run: `{c1.get('error')}` — use `--download-trades` to fetch aggTrades first.",
+            "",
+        ])
+
     b4 = next((b for b in bm if b.get("benchmark") == "B4_directional_long_only"), None)
     lines.extend([
         "",

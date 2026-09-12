@@ -10,10 +10,12 @@ import numpy as np
 from .crypto_fsm import CryptoParams
 from .data import DualDataset, slice_window
 from .metrics import regime_cross_stats, summarize_portfolio
-from .portfolio import PortfolioResult, run_dual_portfolio
+from .portfolio import run_dual_portfolio
 from .tech_fsm import TechParams
 from .universe import (
     BENCHMARKS,
+    CRYPTO_BOOK,
+    GLOBAL_RESERVE,
     DualParams,
     STRESS_LEVERAGE,
     TECH_BOOK,
@@ -152,6 +154,42 @@ def rank_short_structures(data: DualDataset, fill_mode: str = "base") -> list[di
         rows.append(m)
     rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
     return rows
+
+
+def run_binance_crypto_c1(
+    *,
+    start: str = "2024-09-01",
+    end: str = "2024-11-30",
+    cache_only: bool = False,
+    fill_mode: str = "base",
+) -> dict[str, Any]:
+    """CRYPTO_C1: BTC independent long on Binance aggTrades + klines."""
+    from .data import load_binance_crypto_dataset
+
+    data = load_binance_crypto_dataset(start, end, download_trades=True, cache_only=cache_only)
+    dp = DualParams(unified_signal=False)
+    r_ind = run_dual_portfolio(
+        data, dp, name="C1_independent_ticks", fill_mode=fill_mode,
+        crypto_tick_fills=True, tech_disabled=True,
+    )
+    r_uni = run_dual_portfolio(
+        data, DualParams(unified_signal=True), name="C1_unified_ticks", fill_mode=fill_mode,
+        crypto_tick_fills=True, tech_disabled=False,
+    )
+    # Tech disabled vs unified with synthetic tech drawdown when unified
+    m_ind = summarize_portfolio(r_ind, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
+    m_uni = summarize_portfolio(r_uni, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
+    return {
+        "window": "CRYPTO_C1",
+        "start": start,
+        "end": end,
+        "data_source": "binance_futures_aggTrades",
+        "aggTrades_cached_rows": data.provenance.get("aggTrades_cached_rows"),
+        "independent": m_ind,
+        "unified": m_uni,
+        "delta_return": m_ind.get("total_return", 0) - m_uni.get("total_return", 0),
+        "regime_stats": regime_cross_stats(r_ind.crypto_equity, r_ind.tech_equity, r_ind.timestamps),
+    }
 
 
 def rank_leverage(data: DualDataset, fill_mode: str = "base") -> list[dict[str, Any]]:

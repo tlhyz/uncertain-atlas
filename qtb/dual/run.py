@@ -12,6 +12,7 @@ from .data import load_dual_dataset, write_provenance
 from .experiments import (
     compare_independent_vs_unified,
     run_benchmarks,
+    run_binance_crypto_c1,
     run_fill_modes,
     run_parameter_sweep,
     run_plans,
@@ -37,6 +38,10 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "run_similar_search": True,
         "run_stress": True,
         "fill_mode": "base",
+        "run_binance_c1": True,
+        "binance_c1_start": "2024-09-01",
+        "binance_c1_end": "2024-11-30",
+        "download_binance_trades": False,
     }
     if path:
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
@@ -102,6 +107,33 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         except Exception as exc:  # noqa: BLE001
             payload["similar_windows"] = [{"error": str(exc)}]
 
+    if cfg.get("download_binance_trades"):
+        from qtb.data.binance_futures import download_symbols_range
+
+        print("[run] downloading Binance aggTrades...")
+        syms = cfg.get("binance_symbols") or ["BTC", "ETH", "SOL"]
+        payload["binance_download"] = {
+            k: len(v) for k, v in download_symbols_range(
+                syms,
+                str(cfg.get("binance_c1_start") or "2024-09-01"),
+                str(cfg.get("binance_c1_end") or "2024-11-30"),
+                cache_only=cache_only,
+            ).items()
+        }
+
+    if cfg.get("run_binance_c1", True):
+        print("[run] CRYPTO_C1 on Binance aggTrades (2024-09 -> 2024-11)...")
+        try:
+            payload["binance_crypto_c1"] = run_binance_crypto_c1(
+                start=str(cfg.get("binance_c1_start") or "2024-09-01"),
+                end=str(cfg.get("binance_c1_end") or "2024-11-30"),
+                cache_only=cache_only,
+                fill_mode=str(cfg.get("fill_mode") or "base"),
+            )
+        except Exception as exc:  # noqa: BLE001
+            payload["binance_crypto_c1"] = {"error": str(exc)}
+            print(f"[warn] binance C1 failed: {exc}")
+
     report_path = write_outputs(payload, out_dir)
     print(f"\n[done] report -> {report_path}")
     return payload
@@ -114,12 +146,20 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("-c", "--config", default="configs/dual_engine_perp.yaml")
     p.add_argument("--cache-only", action="store_true")
     p.add_argument("--output-dir", default="")
+    p.add_argument(
+        "--download-trades",
+        action="store_true",
+        help="Download Binance USDT-M aggTrades for binance_c1 window then run C1 backtest",
+    )
     args = p.parse_args(argv)
     cfg = load_dual_config(args.config)
     if args.cache_only:
         cfg["cache_only"] = True
     if args.output_dir:
         cfg["output_dir"] = args.output_dir
+    if args.download_trades:
+        cfg["download_binance_trades"] = True
+        cfg["run_binance_c1"] = True
     run_job(cfg)
     return 0
 

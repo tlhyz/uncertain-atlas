@@ -12,6 +12,12 @@ run_similar_search: true
 run_stress: true
 fill_mode: base
 
+# Binance USDT-M aggTrades (crypto tick backtest)
+run_binance_c1: true
+binance_c1_start: "2024-09-01"
+binance_c1_end: "2024-11-30"
+download_binance_trades: false
+
 # Capital pools (USDT)
 tech_book: 6500
 crypto_book: 2500
