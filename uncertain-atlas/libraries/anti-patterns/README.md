@@ -51,3 +51,5 @@
 - [reject-without-ban-sold-as-free](reject-without-ban-sold-as-free.md)
 - [inv-sold-as-free](inv-sold-as-free.md)
 - [evidence-default-sold-as-unbonding](evidence-default-sold-as-unbonding.md)
+- [timeout-commit-sold-as-finality](timeout-commit-sold-as-finality.md)
+- [max-msg-sold-as-recv-quota](max-msg-sold-as-recv-quota.md)

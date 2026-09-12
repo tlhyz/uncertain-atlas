@@ -53,9 +53,9 @@ ECDSA 签名大致依赖一个每次签字都应新鲜、保密、均匀的标�
 
 ### D.3 共识超时
 
-BFT 的 `timeoutPropose` / `timeoutPrevote` 一类参数决定：**还没凑齐票时，何时放弃本轮。**  
+BFT 的 `timeoutPropose` / `timeoutPrevote` 一类**本地**等待决定：**还没凑齐票时，何时放弃本轮。**  
 **事实（结构）：** 锁保护安全；超时推动活性。超时再乱，只要锁和 WAL 还在，不应投出与旧 lock 矛盾的票（L4.3、L4.4）。  
-**事实（结构）：** 超时不是「协议允许各节点自己发明一个随机睡眠」。规范要写清从哪一刻开始计、计多久、超时后进入哪一步。
+**事实（结构）：** 超时不是「协议允许各节点自己发明一个随机睡眠」。规范要写清从哪一刻开始计、超时后进入哪一步；**等几毫秒**是本地配置，不是共识常数。见 [`../../tracks/consensus/worked-example-timeouts.md`](../../tracks/consensus/worked-example-timeouts.md)。
 
 ### D.4 `Apply` 的确定性禁令
 
@@ -151,7 +151,7 @@ BFT 的 `timeoutPropose` / `timeoutPrevote` 一类参数决定：**还没凑齐�
 1. 词典先分开：`sig_nonce` / `account_nonce` / `timeout` / `block_seed`。  
 2. `Apply` 零本地熵；要随机就进块并被投票覆盖。  
 3. 签名实现禁止自写 CSPRNG；换算法时连同确定性/盐的规范化一起换。  
-4. 超时数字以后测，现在只要求「写在协议里，不要写在运维口口相传」。
+4. 超时**何时触发、超时后进哪一步**写在规范；等几毫秒测过再填，不要抄文档示例秒数，也不要写成第三条最终性。
 
 精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)（字节）、[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)（崩溃后乱投）。
 

@@ -94,7 +94,7 @@ UTXO 集。见课程 L2.1。
 
 ## 8. 网络
 
-无许可 P2P。地址管理、偷听、compact block（BIP152）减传播带宽。
+无许可 P2P。地址管理、偷听、compact block（BIP152）减传播带宽。最大序列化消息长度 ≠ 读完载荷前的接收分配上限（CVE-2015-3641）。
 
 攻击面：eclipse（围住一个节点只给他看假图）、延迟块、向轻节点撒谎。
 
@@ -184,6 +184,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | CVE-2024-52913 | 实现+网络 | 有界索取表让节点看不见未确认交易。见 `tracks/failure-museum/cve-2024-52913.md` |
 | CVE-2019-25220 | 实现+部署 | 低难度头填爆内存索引；0.14 后检查点几乎只剩反垃圾。见 `tracks/failure-museum/cve-2019-25220.md`。不抄攻击成本 BTC |
 | CVE-2024-52914 | 实现 | 孤儿解析二次扫描可卡住数小时。见 `tracks/failure-museum/cve-2024-52914.md` |
+| CVE-2015-3641 | 实现+网络 | 最大序列化长度被当成接收分配上限。见 `tracks/failure-museum/cve-2015-3641.md` |
 
 七问只写有 CVE / 官方披露 / BIP 原文的条目。禁止用传闻填充。
 

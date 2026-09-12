@@ -662,3 +662,16 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A217 | 中 | 过期会被写成「或」 | 规范与 ABCI++ 都写合取；改成或是实现分叉 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 02:25 UTC · 本地超时不是最终性；最大消息不是接收 RAM
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A218 | 中 | 「timeout_commit」会被写成第三条最终性或 PBTS | 精读：Commit 先于 NewHeight 等待；成功一轮必须等的只有 timeout_commit，且它是 commit 之后 |
+| A219 | 中 | 会把 skip_timeout_commit 写成「开关没了 / 还在」两套共识 | 官方语义 = 像 TimeoutCommit=0；#2892 在较新的线删键；现行 main 仍可能有该字段（Deprecated） |
+| A220 | 中 | L4.2 / L1.6 把超时数字写成协议参数或「写在协议里」 | 已修：规范写触发点与下一步；毫秒是本地配置 |
+| A221 | 中 | 「最大消息 N 字节」会被写成接收已有界 | 博物馆 CVE-2015-3641；不变量 48；语料 C52；对照发送缓冲 / 日志盘 / 头索引 |
+| A222 | 记录 | 文档写 3s / 1s / 0s、「大约每秒一块」、32/2/4 MiB | 不当不确定常数；不抄 Alice/Bob 玩具当主网事实 |
+| A223 | 记录 | 较新线把 post-commit 等待挪进 FinalizeBlockResponse | 本批不写 `next_block_delay`；那是「谁决定再等多久」，另页 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

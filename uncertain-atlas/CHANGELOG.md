@@ -2,6 +2,16 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 49）
+
+- 超时精读：规范里超时是本地等待。成功一轮里「必须等」的只有 `timeout_commit`，且它是 **Commit 之后**再收迟到 precommit。Commit 步等的是块到齐，不是 timeout_commit。
+- `skip_timeout_commit=true` 官方语义 = 像 TimeoutCommit=0。PR #2892 在较新的线上删该键；现行 `main` 的 `config.go` 仍可能保留（Deprecated）。不把「键还在 / 已删」写成另一套共识。
+- 博物馆 CVE-2015-3641：最大序列化长度被当成接收分配上限。Medium。修法是读完载荷前收紧。后来 BIP144 调大该上限 ≠ 洞又开了。
+- 对照 52915（发送缓冲）、54605（日志盘）、25220（头索引）。
+- 不变量 47–48；语料 C51–C52；反模式 timeout-commit-sold-as-finality / max-msg-sold-as-recv-quota；L10.3 第 43–44 条。
+- 已修：L4.2 曾把「超时数字」写成协议参数。
+- 不抄文档秒数、Alice/Bob 玩具、「大约每秒一个空块」、32/2/4 MiB。
+
 ## 2026-09-12（续 48）
 
 - 证据窗精读：过期是高度**且**时间。`> 0` 不是盖住解绑。

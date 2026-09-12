@@ -95,8 +95,8 @@ HotStuff 把证书（QC）串起来，换轮更省，思想仍是「先形成可
 | 密码学 | 每步消息仍要签 |
 | 协议 | height / round / step；commit 才是结算对象 |
 | 实现 | 步骤机必须确定；省略步骤会投出矛盾票 |
-| 部署 | 超时触发依赖时钟，但超时数字是协议参数 |
+| 部署 | 超时触发依赖本地钟；超时数字是本地配置，不是共识参数 |
 | 经济 | 空轮有机会成本，不能用省略步骤省 |
 
 **禁止假学习：** 「投票过 2/3 就可以省略步骤。」
-**边界：** 超时与解锁谓词以规范为准，不在本课写死伪代码。Prevote / precommit 的被签字节见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；两步不是同一哈希再签一次。块头时间不是「全网同意的现在」：PBTS timely 窗 ≠ BFT Time 中位数，见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。
+**边界：** 超时与解锁谓词以规范为准，不在本课写死伪代码。Prevote / precommit 的被签字节见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；两步不是同一哈希再签一次。块头时间不是「全网同意的现在」：PBTS timely 窗 ≠ BFT Time 中位数，见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。本地超时不是最终性：`timeout_commit` 是已经 commit 之后再等，见 [`../../tracks/consensus/worked-example-timeouts.md`](../../tracks/consensus/worked-example-timeouts.md)。
