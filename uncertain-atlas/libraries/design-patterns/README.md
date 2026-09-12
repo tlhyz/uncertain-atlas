@@ -292,3 +292,4 @@
 - [name-the-init-apphash](name-the-init-apphash.md)
 - [name-the-exectx-gas](name-the-exectx-gas.md)
 - [name-the-ext-commit-round](name-the-ext-commit-round.md)
+- [name-the-listsnap-empty](name-the-listsnap-empty.md)

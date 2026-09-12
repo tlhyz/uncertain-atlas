@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 396）
+
+- CometBFT ListSnapshots 空请求工作实例（官方 ABCI++ Methods ListSnapshots，实现 / ListSnapshots 空请求，不另写 19 节）：看见 ListSnapshots 请求是空请求、向应用要一份快照清单不是已经齐。看见 ListSnapshots 回包 snapshots 是本地状态快照清单不是已经是同一份。看见 ListSnapshots 用来在 state sync 时发现邻居上有哪些快照不是已经在拉块。ListSnapshots 空请求不是不变量 322，也不是不变量 368，也不是不变量 375。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 395；语料 C399；模式 name-the-listsnap-empty；反模式 listsnapempty-sold-as-discovery；L10.3 第 391 条。填 L4.4 / CometBFT 档案 ListSnapshots 空请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ListSnapshots 空请求、怎样填空请求、怎样填本地清单。不编博物馆页。不另写 19 节。不与 322 / 368 / 375 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。问了邻居就已经齐、全字段对上就已经装完、拉块标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 395）
 
 - CometBFT ExtendedCommitInfo 轮工作实例（官方 ABCI++ Methods ExtendedCommitInfo / FinalizeBlock Request / Echo Request，实现 / ExtendedCommitInfo 轮，不另写 19 节）：看见 ExtendedCommitInfo.round 是提交轮不是已经是 CommitInfo.round。看见 Finalize 请求 next_validators_hash 是下一验证者集合默克尔根不是已经是同一套字段。看见 Echo 请求 Message 是要回显的字符串不是已经是 Flush。ExtendedCommitInfo 轮不是不变量 392，也不是不变量 359，也不是不变量 374。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -397,3 +397,4 @@
 - [initapphash-sold-as-header](initapphash-sold-as-header.md)
 - [exectxgas-sold-as-checktx](exectxgas-sold-as-checktx.md)
 - [extcommitround-sold-as-commitinfo](extcommitround-sold-as-commitinfo.md)
+- [listsnapempty-sold-as-discovery](listsnapempty-sold-as-discovery.md)

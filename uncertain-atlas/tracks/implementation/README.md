@@ -97,6 +97,7 @@
 - [`worked-example-initapphash-vs-header.md`](worked-example-initapphash-vs-header.md) — InitChain 回包 app_hash 是起步应用哈希 ≠ 已经是本头 AppHash；Finalize 请求 hash 是这块的哈希 ≠ 已经知道本头哈希；CommitInfo.round 是提交轮 ≠ 已经按投票权排过（不变量 392）
 - [`worked-example-exectxgas-vs-checktx.md`](worked-example-exectxgas-vs-checktx.md) — ExecTxResult.gas_wanted 是这笔要的气 ≠ 已经是 CheckTx 的 GasWanted；ExecTxResult.gas_used 是这笔用掉的气 ≠ 已经算进共识；ExecTxResult.codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 393）
 - [`worked-example-extcommitround-vs-commitinfo.md`](worked-example-extcommitround-vs-commitinfo.md) — ExtendedCommitInfo.round 是提交轮 ≠ 已经是 CommitInfo.round；Finalize 请求 next_validators_hash 是下一验证者集合默克尔根 ≠ 已经是同一套字段；Echo 请求 Message 是要回显的字符串 ≠ 已经是 Flush（不变量 394）
+- [`worked-example-listsnapempty-vs-discovery.md`](worked-example-listsnapempty-vs-discovery.md) — ListSnapshots 请求是空请求、向应用要一份快照清单 ≠ 已经齐；ListSnapshots 回包 snapshots 是本地状态快照清单 ≠ 已经是同一份；ListSnapshots 用来在 state sync 时发现邻居上有哪些快照 ≠ 已经在拉块（不变量 395）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
