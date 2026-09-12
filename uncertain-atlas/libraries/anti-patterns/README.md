@@ -205,3 +205,4 @@
 - [schedule-sold-as-peerdas](schedule-sold-as-peerdas.md)
 - [reserve-sold-as-merged](reserve-sold-as-merged.md)
 - [cap-sold-as-gas](cap-sold-as-gas.md)
+- [txcap-sold-as-blockgas](txcap-sold-as-blockgas.md)

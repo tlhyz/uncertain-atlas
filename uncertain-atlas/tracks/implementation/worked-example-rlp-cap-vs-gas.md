@@ -96,7 +96,7 @@
 4. **基础费 ≠ 小费**（不变量 158）：1559 拆分和弹性气上限。本页不是气市场。
 5. **blob 气 ≠ 执行气**（不变量 145）：两套气。本页不是 blob 袋的体积，是执行块 RLP。
 
-不要抄编码上限字节 / 信标边字节 / 十进制字面量。不要写怎样刚好塞进帽下。不编博物馆页。不另写 19 节。EIP-7623 calldata 地板、EIP-1559 弹性气上限、不变量 96 通道尺寸、不变量 101 气≠墙钟是另一对象。地板精读：[`worked-example-calldata-floor-vs-execution.md`](worked-example-calldata-floor-vs-execution.md)（不变量 197）。通道尺寸馆藏：[`../failure-museum/ethereum-2024-03-sepolia-engine-rpc.md`](../failure-museum/ethereum-2024-03-sepolia-engine-rpc.md)（不变量 96）。
+不要抄编码上限字节 / 信标边字节 / 十进制字面量。不要写怎样刚好塞进帽下。不编博物馆页。不另写 19 节。EIP-7623 calldata 地板、EIP-1559 弹性气上限、不变量 96 通道尺寸、不变量 101 气≠墙钟是另一对象。单笔气帽不是已经改了块气限，也不是已经是本页这道编码帽（不变量 203）。地板精读：[`worked-example-calldata-floor-vs-execution.md`](worked-example-calldata-floor-vs-execution.md)（不变量 197）。通道尺寸馆藏：[`../failure-museum/ethereum-2024-03-sepolia-engine-rpc.md`](../failure-museum/ethereum-2024-03-sepolia-engine-rpc.md)（不变量 96）。
 
 ---
 
