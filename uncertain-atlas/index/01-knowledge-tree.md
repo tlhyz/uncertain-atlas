@@ -197,7 +197,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.5 全节点、剪枝、SPV · 必学
 - 验证 vs 查看
 - 轻客户端的安全假设
-- 覆盖：课文 L3.5；assumevalid / assumeutxo ≠ 旧 checkpoint ≠ WS `tracks/implementation/worked-example-assumevalid.md`
+- 覆盖：课文 L3.5；assumevalid / assumeutxo ≠ 旧 checkpoint ≠ WS `tracks/implementation/worked-example-assumevalid.md`；头先够功 `tracks/implementation/worked-example-header-work.md`（CVE-2019-25220）
 
 ### M3.6 工程哲学与测试 · 重要
 - fuzzing、软分叉、Bitcoin Core 的保守主义
@@ -413,7 +413,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（八案；含 CVE-2024-52912 / 52913）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（九案；含 CVE-2019-25220 / 52916 头垃圾）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -439,11 +439,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–30）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–31）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C32；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C33；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

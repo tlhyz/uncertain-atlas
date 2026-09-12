@@ -180,6 +180,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | transaction malleability | 协议/实现 | 促使 SegWit；结构课 L3.7 |
 | CVE-2024-52912 | 实现+部署 | 调整钟绕过上限，拒收规范新块。见 `tracks/failure-museum/cve-2024-52912.md` |
 | CVE-2024-52913 | 实现+网络 | 有界索取表让节点看不见未确认交易。见 `tracks/failure-museum/cve-2024-52913.md` |
+| CVE-2019-25220 | 实现+部署 | 低难度头填爆内存索引；0.14 后检查点几乎只剩反垃圾。见 `tracks/failure-museum/cve-2019-25220.md`。不抄攻击成本 BTC |
 
 七问只写有 CVE / 官方披露 / BIP 原文的条目。禁止用传闻填充。
 
