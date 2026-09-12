@@ -274,3 +274,4 @@
 - [script-type-sold-as-account](script-type-sold-as-account.md)
 - [sorted-sold-as-one-address](sorted-sold-as-one-address.md)
 - [cosigner-sold-as-discovered](cosigner-sold-as-discovered.md)
+- [derived-sold-as-output-key](derived-sold-as-output-key.md)

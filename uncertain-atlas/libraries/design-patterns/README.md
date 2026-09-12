@@ -169,3 +169,4 @@
 - [name-the-script-type](name-the-script-type.md)
 - [name-the-sorted-keys](name-the-sorted-keys.md)
 - [name-the-cosigner](name-the-cosigner.md)
+- [name-the-internal-key](name-the-internal-key.md)

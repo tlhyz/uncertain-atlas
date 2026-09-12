@@ -81,6 +81,8 @@
 
 精读：[`../../tracks/implementation/worked-example-cosigner-vs-discovered.md`](../../tracks/implementation/worked-example-cosigner-vs-discovered.md)（不变量 271）。看见共享主公钥不是已经是本页。看见能独立长地址不是已经能独立签。看见前面分支没有交易不是已经发现完。
 
+精读：[`../../tracks/implementation/worked-example-derived-vs-output-key.md`](../../tracks/implementation/worked-example-derived-vs-output-key.md)（不变量 272）。看见派生钥不是已经是输出钥。看见不需要脚本路径不是已经不承诺。看见种子备份不是已经能找回单钥 P2TR。
+
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
 精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。
