@@ -17,4 +17,5 @@
 五笔账（任何高吞吐声称都要拆）：状态 / 执行 / 网络 / 协议 / 硬件。占用压的是存储账，不是并行账。
 
 Block-STM 精读：[`worked-example-block-stm.md`](worked-example-block-stm.md)（不变量 122）。提交 ≡ 串行 L。STM 跑完不是已经最终。不抄加速比。  
+Quorum Store 精读：[`../consensus/worked-example-quorum-store-vs-order.md`](../consensus/worked-example-quorum-store-vs-order.md)（不变量 132）。批次传播不是已经写出 L。已认证批次不是已经排序。  
 所有权路径精读：[`worked-example-owned-vs-fastpath.md`](worked-example-owned-vs-fastpath.md)（不变量 128）。owned 不是已经快路径。引用 shared 不是已经授权。进共识块不是已被接受。不抄测试 TPS。

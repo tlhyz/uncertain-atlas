@@ -171,7 +171,7 @@ Avalanche 的独特思想是：
 |---|---|---|
 | Solana | 交易预先列出要锁的账户 | 理解声明式冲突 |
 | Sui | 对象所有权决定要不要进共识 | 理解「有些交易可以绕过全网排序」 |
-| Aptos | 先乐观并行，冲突再回滚 | 理解「未完全定序也能执行」 |
+| Aptos | 先乐观并行，冲突再回滚；Quorum Store 先传播再排序 | 理解「未完全定序也能执行」；已认证批次 ≠ L。精读：[`../tracks/consensus/worked-example-quorum-store-vs-order.md`](../tracks/consensus/worked-example-quorum-store-vs-order.md) |
 
 顺序：Solana（最工程化的账户锁定）→ Sui（世界观变化最大）→ Aptos（乐观并行最需要形式直觉）。
 

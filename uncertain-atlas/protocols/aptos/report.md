@@ -7,7 +7,8 @@
 
 ## 1. 一句话定义
 
-Move 资源账户 + Block-STM：假设一个序列，多线程投机执行，比较读写集，冲突则再跑，直到与该序列的串行语义一致。
+Move 资源账户 + Block-STM：假设一个序列，多线程投机执行，比较读写集，冲突则再跑，直到与该序列的串行语义一致。  
+官方另把 Quorum Store 写成按批次传播、共识排已认证批次：传播不是已经写出 L。精读：[`../../tracks/consensus/worked-example-quorum-store-vs-order.md`](../../tracks/consensus/worked-example-quorum-store-vs-order.md)（不变量 132）。
 
 ---
 
@@ -25,6 +26,8 @@ Aptos：让程序员仍写「普通」Move，由运行时发现冲突。
 
 ```text
 钱包 --tx--> mempool
+               ↓
+         Quorum Store：按批次传播（已认证批次 ≠ 已经排序）
                ↓
          共识给出块内交易序列 L
                ↓
@@ -65,7 +68,8 @@ Move 资源在账户下。可编程性像账户+模块。
 
 BFT 家族给出块与顺序。STM **不替代** 最终性。  
 **事实：** 没有确定的 L，STM 的「正确」没有定义。  
-与 CometBFT 比：应用层更重，引擎思想同类（先定序）。
+与 CometBFT 比：应用层更重，引擎思想同类（先定序）。  
+官方词汇表另把 **Quorum Store** 写成在验证者集合里按批次传播；共识排的是**已认证批次**。传播不是已经写出 L。进了提议块不是已经落盘。精读：[`../../tracks/consensus/worked-example-quorum-store-vs-order.md`](../../tracks/consensus/worked-example-quorum-store-vs-order.md)（不变量 132）。不抄吞吐，不抄博客组批步骤。
 
 ---
 

@@ -136,3 +136,4 @@
 - [stake-sold-as-validator-quorum](stake-sold-as-validator-quorum.md)
 - [leak-sold-as-slash](leak-sold-as-slash.md)
 - [snow-sold-as-qc](snow-sold-as-qc.md)
+- [batch-sold-as-ordered](batch-sold-as-ordered.md)

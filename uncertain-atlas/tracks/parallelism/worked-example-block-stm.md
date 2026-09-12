@@ -123,4 +123,4 @@ STM 线程 idle ≠ 该块已最终
 ## 精密检查
 
 **禁止假学习：** 「STM 代替共识。」「并行结果可以重排。」「STM 跑完就是最终。」「不声明写集所以没有顺序。」「不要求 opacity 所以中间态可以给人看。」  
-**边界：** 不讲 Move 语法；不把 Polygon / Sei / Starknet 的移植当 Aptos 规范；Aptos 档案 §15 仍无官方主网七问，本页不编事故。
+**边界：** 不讲 Move 语法；不把 Polygon / Sei / Starknet 的移植当 Aptos 规范；Aptos 档案 §15 仍无官方主网七问，本页不编事故。Quorum Store 批次 ≠ L 见 [`../consensus/worked-example-quorum-store-vs-order.md`](../consensus/worked-example-quorum-store-vs-order.md)（不变量 132）。

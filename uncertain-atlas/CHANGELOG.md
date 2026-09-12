@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 133）
+
+- Aptos 工作实例：Quorum Store 按批次传播不是已经写出共识序 L。已认证批次不是已经排序，也不是已经 commit。去掉领袖数据瓶颈不是已经没有领袖。进了提议块不是已经落盘。出处 aptos.dev Glossary / White Paper 摘要 / Deep Dive。
+- 不变量 132；语料 C136；模式 name-the-dissemination-stage；反模式 batch-sold-as-ordered；L10.3 第 128 条。填 L6.3 / Aptos 档案 §3 §6 / 共识表 / 并行表 / 内存池表 / 停链面地图。
+- 不抄吞吐 / 纪元小时 / 气价 / 博客组批步骤。不写怎样扣批次。不编博物馆页。不与 27 / 122 / 128 / 131 糊成一句。加密内存池标成另一对象。
+
 ## 2026-09-12（续 132）
 
 - Avalanche 工作实例：抽样 α 多数不是全集 +2/3 证书。连续 β 轮不是一张可转发 QC。Preference 不是已经接受。出块窗不是已经决定。「也是 BFT」不是已经和 CometBFT 同一把尺子。出处 docs.avax.network Consensus / Snowman。
