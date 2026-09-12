@@ -72,7 +72,7 @@ mempool 策略可以比共识更严。
 
 ## F. 真实项目
 
-- **Bitcoin（事实）**：BIP66 严格 DER；SegWit 把见证数据和 txid 计算分开。  
+- **Bitcoin（事实）**：BIP-66 严格 DER。ECDSA 验得过不是已经是严格 DER。库接受某种变形不是共识已经接受。精读：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）。SegWit 把见证数据和 txid 计算分开。  
 - **Ethereum（事实）**：RLP 必须规范；非规范 RLP 应拒绝。Yellow Paper / 客户端实现对此敏感。  
 - **「不确定」（建议）**：选一种现成编码（例如规范的 protobuf / 明确的 length-prefix），写测试：随机加前导零、换字段序、复制签名，必须稳定拒绝。
 
@@ -122,5 +122,5 @@ mempool 策略可以比共识更严。
 | 部署 | 解析器被灌爆是 DoS，不是「JSON 更方便」 |
 | 经济 | 裂链后跟错根放货 |
 
-**禁止假学习：** 「JSON 也能当共识编码。」「带了类型号 = 已经解开内层。」「旧式列表 = 已经是信封。」「2718 = 1559。」
-**边界：** 具体编解码以各链规范为准。见反模式 noncanonical-accepted。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。类型信封 ≠ 已经解开内层：[`../../tracks/implementation/worked-example-typed-vs-legacy.md`](../../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。外层交易上限不是内层解码已有界：[`../../tracks/failure-museum/asa-2024-0012.md`](../../tracks/failure-museum/asa-2024-0012.md)。Int/Dec 位宽对不齐不是已对齐：[`../../tracks/failure-museum/asa-2024-010.md`](../../tracks/failure-museum/asa-2024-010.md)。跨链 ack JSON 不是已经确定：[`../../tracks/failure-museum/isa-2025-001.md`](../../tracks/failure-museum/isa-2025-001.md)。不抄类型取值范围。不写怎样跨类型复用签名。
+**禁止假学习：** 「JSON 也能当共识编码。」「带了类型号 = 已经解开内层。」「旧式列表 = 已经是信封。」「2718 = 1559。」「库验过 = 共识已收。」「策略已经要 DER = 共识已经要。」「66 = 62。」
+**边界：** 具体编解码以各链规范为准。见反模式 noncanonical-accepted。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。类型信封 ≠ 已经解开内层：[`../../tracks/implementation/worked-example-typed-vs-legacy.md`](../../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。ECDSA 验得过 ≠ 已经是严格 DER：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）。外层交易上限不是内层解码已有界：[`../../tracks/failure-museum/asa-2024-0012.md`](../../tracks/failure-museum/asa-2024-0012.md)。Int/Dec 位宽对不齐不是已对齐：[`../../tracks/failure-museum/asa-2024-010.md`](../../tracks/failure-museum/asa-2024-010.md)。跨链 ack JSON 不是已经确定：[`../../tracks/failure-museum/isa-2025-001.md`](../../tracks/failure-museum/isa-2025-001.md)。不抄类型取值范围。不写怎样跨类型复用签名。不抄 DER 长度。不写怎样改编码。

@@ -119,7 +119,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 |---|---|
 | SHA-256 / HASH256 | 块头、txid、Merkle。txid ≠ wtxid：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152） |
 | RIPEMD-160 | 地址派生（P2PKH 等） |
-| ECDSA secp256k1 | 旧式花费 |
+| ECDSA secp256k1 | 旧式花费。数学验过不是已经是严格 DER：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172） |
 | Schnorr (BIP-340) | Taproot。tagged hash 公式见 `tracks/crypto/worked-example-tagged-hash.md`；标签不是 FIPS `ctx`。钥匙路径 ≠ 揭树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153） |
 | Merkle 树 | 交易承诺、SPV |
 

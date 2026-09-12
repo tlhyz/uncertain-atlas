@@ -69,3 +69,4 @@
 - [name-the-access-heat](name-the-access-heat.md)
 - [name-the-redeem-reveal](name-the-redeem-reveal.md)
 - [name-the-fork-state](name-the-fork-state.md)
+- [name-the-sig-encoding](name-the-sig-encoding.md)

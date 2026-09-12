@@ -174,3 +174,4 @@
 - [first-access-sold-as-warm](first-access-sold-as-warm.md)
 - [hash-sold-as-redeem](hash-sold-as-redeem.md)
 - [bit-sold-as-active](bit-sold-as-active.md)
+- [valid-sold-as-der](valid-sold-as-der.md)

@@ -153,5 +153,5 @@ Bitcoin Core：`src/pubkey.cpp` / secp256k1 库。go-ethereum：`crypto` 包。�
 | 部署 | 侧信道 / 坏 RNG 可漏钥 |
 | 经济 | 验签过了不是经济安全；盗钥是保管失败 |
 
-**禁止假学习：** 「签名证明你是谁。」「验签过了所以经济安全。」「Taproot 一个签名 = 脚本树已经公开。」「看见 chainId = 已经签进哈希。」「155 = 1559。」
-**边界：** 体积数字进账本，本课不填未测值。`ctx` 编码与 hedged 签见 PQ 轨，不在本课抄库文档当 FIPS。子群过了 ≠ 点已经在曲线上：[`../../tracks/failure-museum/cve-2025-30147.md`](../../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。不要写怎样造点。钥匙路径 ≠ 已经揭开脚本树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。JSON 里的 chainId ≠ 已经编进签名哈希：[`../../tracks/crypto/worked-example-chainid-vs-signed.md`](../../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）。不抄链号表。不写怎样重放。
+**禁止假学习：** 「签名证明你是谁。」「验签过了所以经济安全。」「Taproot 一个签名 = 脚本树已经公开。」「看见 chainId = 已经签进哈希。」「155 = 1559。」「库验过 = 共识已收。」「66 = 62。」
+**边界：** 体积数字进账本，本课不填未测值。`ctx` 编码与 hedged 签见 PQ 轨，不在本课抄库文档当 FIPS。子群过了 ≠ 点已经在曲线上：[`../../tracks/failure-museum/cve-2025-30147.md`](../../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。不要写怎样造点。钥匙路径 ≠ 已经揭开脚本树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。JSON 里的 chainId ≠ 已经编进签名哈希：[`../../tracks/crypto/worked-example-chainid-vs-signed.md`](../../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）。ECDSA 验得过 ≠ 已经是严格 DER：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）。不抄链号表。不写怎样重放。不抄 DER 长度。不写怎样改编码。

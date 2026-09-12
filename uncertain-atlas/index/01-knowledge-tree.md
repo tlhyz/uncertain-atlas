@@ -117,7 +117,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 签名、验签、公钥绑定
 - 签名算法被攻破 = 授权体系被攻破
 - domain separation：同一把钥匙签错域
-- 覆盖：课文 L1.2；消息前缀精读 `tracks/crypto/worked-example-domain.md`；FIPS 第二层 `tracks/post-quantum/fips-context.md`（不变量 18 / 语料 C20）。子群过了 ≠ 点已经在曲线上：[`../tracks/failure-museum/cve-2025-30147.md`](../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。JSON 里的 chainId ≠ 已经编进签名哈希；旧六字段签 ≠ 已经防跨链重放：[`../tracks/crypto/worked-example-chainid-vs-signed.md`](../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）
+- 覆盖：课文 L1.2；消息前缀精读 `tracks/crypto/worked-example-domain.md`；FIPS 第二层 `tracks/post-quantum/fips-context.md`（不变量 18 / 语料 C20）。子群过了 ≠ 点已经在曲线上：[`../tracks/failure-museum/cve-2025-30147.md`](../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。JSON 里的 chainId ≠ 已经编进签名哈希；旧六字段签 ≠ 已经防跨链重放：[`../tracks/crypto/worked-example-chainid-vs-signed.md`](../tracks/crypto/worked-example-chainid-vs-signed.md)（不变量 161）。ECDSA 验得过 ≠ 已经是严格 DER：[`../tracks/implementation/worked-example-valid-vs-der.md`](../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）
 
 ### M1.3 Merkle 树 · 必学
 - 包含证明、排除（先直觉）
@@ -127,7 +127,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M1.4 编码与规范化 · 重要
 - canonical encoding
 - 非规范编码如何变成共识分裂
-- 覆盖：课文 L1.4；实现编码精读 `tracks/implementation/`。类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封：[`../tracks/implementation/worked-example-typed-vs-legacy.md`](../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）
+- 覆盖：课文 L1.4；实现编码精读 `tracks/implementation/`。类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封：[`../tracks/implementation/worked-example-typed-vs-legacy.md`](../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。ECDSA 验得过 ≠ 已经是严格 DER：[`../tracks/implementation/worked-example-valid-vs-der.md`](../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）
 
 ### M1.5 随机数与确定性 · 重要
 - 签名随机数泄漏
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–171）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–172）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C175；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C176；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
