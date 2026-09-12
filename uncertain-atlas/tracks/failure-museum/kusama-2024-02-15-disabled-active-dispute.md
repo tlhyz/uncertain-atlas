@@ -45,6 +45,7 @@ GRANDPA 跳过含 Active 的叉，假定 Active 已经是真威胁。从未 Conf
 | 不变量 87 | vote-only ≠ 已停 |
 | 不变量 97 / 2025-05 | 解码深度套错对象 |
 | 不变量 98 / 2025-08 | 组下标 ≠ 票向量下标；本页是最终性 |
+| 不变量 100 / 2025-05-09 | 链下内存禁用 ≠ 已确认不参与；本页是从未 Confirmed 的 Active |
 | 本页 | **只被 Disabled 发起 ≠ 应标 Active；Active ≠ 已 Confirmed；GRANDPA 跳过含 Active 的叉 ≠ 最终性还在走；年龄安全网 ≠ 谓词已齐；测试断言了行为 ≠ 最终性已绿** |
 
 ## 3. 被破坏的 invariant
