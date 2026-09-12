@@ -316,6 +316,7 @@
 | 307 | CheckTxState 被写成已经是 ExecuteTxState | 协议 + 文案 | 看见 CheckTx 过了 / 两份同时在改 / RECHECK / CheckTxState 当成已经按工作状态验过或已经同一份或已经是新交易 | 不变量 312；语料 C316 |
 | 308 | 内存池去重被写成已经保证不重放 | 协议 + 文案 | 看见索引器挡重复 / 过了 CheckTx / 通常不受欢迎 / Replay Protection 当成已经保证或不需要应用谓词或已经没有幂等例外 | 不变量 313；语料 C317 |
 | 309 | QueryState 被写成已经是 ExecuteTxState | 协议 + 文案 | 看见 Query 连接 / 上次 Commit / 启动对齐 / QueryState 当成已经是工作状态或已经跟上正在跑的块或已经是快照重放 | 不变量 314；语料 C318 |
+| 310 | MaxGas 被写成已经在执行 | 协议 + 文案 | 看见 MaxGas / GasUsed / 已提交块 / 气 当成已经在执行或已经算进共识或已经按气验过 | 不变量 315；语料 C319 |
 
 ## 不自动覆盖
 

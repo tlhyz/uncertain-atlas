@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 316）
+
+- CometBFT 气工作实例（官方 Requirements for the Application，实现 / 气，不另写 19 节）：看见 MaxGas 不是已经在执行。看见 GasUsed 不是已经算进共识。看见已提交块不是已经按气验过。气不是不变量 299，也不是不变量 63，也不是不变量 33。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 315；语料 C319；模式 name-the-maxgas；反模式 maxgas-sold-as-enforced；L10.3 第 311 条。填 L4.4 / CometBFT 档案气 / 实现表 / 内存池表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样计量气、怎样在 Prepare 里卡上限、以太坊费用市场。不编博物馆页。不另写 19 节。不与 299 / 63 / 33 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。MaxBytes / 默认体积 / 四门标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 315）
 
 - CometBFT QueryState 工作实例（官方 Requirements for the Application，实现 / QueryState，不另写 19 节）：看见 Query 连接不是已经是 ExecuteTxState。看见上次 Commit 不是已经跟上正在跑的块。看见启动对齐不是已经是快照重放。QueryState 不是不变量 312，也不是不变量 310，也不是不变量 38。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

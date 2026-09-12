@@ -212,3 +212,4 @@
 - [name-the-checktxstate](name-the-checktxstate.md)
 - [name-the-replay-protection](name-the-replay-protection.md)
 - [name-the-querystate](name-the-querystate.md)
+- [name-the-maxgas](name-the-maxgas.md)
