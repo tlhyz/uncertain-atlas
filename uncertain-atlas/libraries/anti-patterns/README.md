@@ -287,3 +287,4 @@
 - [raw-sold-as-named](raw-sold-as-named.md)
 - [musig-xpub-sold-as-xpub](musig-xpub-sold-as-xpub.md)
 - [musig-psbt-sold-as-tap](musig-psbt-sold-as-tap.md)
+- [script-in-path-sold-as-needed](script-in-path-sold-as-needed.md)

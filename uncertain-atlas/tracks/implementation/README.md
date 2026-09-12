@@ -43,6 +43,7 @@
 - [`worked-example-raw-vs-named.md`](worked-example-raw-vs-named.md) — raw ≠ 已经能套进具名表达式；addr ≠ 已经是那份输出脚本；一份包装 ≠ 已经是 combo（不变量 282）
 - [`worked-example-musig-xpub-vs-aggregate.md`](worked-example-musig-xpub-vs-aggregate.md) — 聚合钥 ≠ 已经是扩展公钥；合成扩展公钥 ≠ 已经能硬化派生；派生出的子钥 ≠ 已经能不带微调去签（不变量 283）
 - [`worked-example-musig-psbt-vs-tap.md`](worked-example-musig-psbt-vs-tap.md) — 旧 PSBT 栏 ≠ 已经能装 MuSig2；聚合钥栏 ≠ 已经是输出钥；参与者钥 ≠ 已经能出部分签（不变量 284）
+- [`worked-example-multisig-path-vs-script.md`](worked-example-multisig-path-vs-script.md) — 脚本各走各的路径 ≠ 已经是多签该有的树；路径里的脚本类型 ≠ 已经必要；主种子 ≠ 已经够找回（不变量 285）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）

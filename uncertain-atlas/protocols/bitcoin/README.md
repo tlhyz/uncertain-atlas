@@ -107,6 +107,8 @@
 
 精读：[`../../tracks/implementation/worked-example-musig-psbt-vs-tap.md`](../../tracks/implementation/worked-example-musig-psbt-vs-tap.md)（不变量 284）。看见旧 PSBT 栏不是已经能装 MuSig2。看见聚合钥栏不是已经是输出钥。看见参与者钥不是已经能出部分签。
 
+精读：[`../../tracks/implementation/worked-example-multisig-path-vs-script.md`](../../tracks/implementation/worked-example-multisig-path-vs-script.md)（不变量 285）。看见脚本各走各的路径不是已经是多签该有的树。看见路径里的脚本类型不是已经必要。看见主种子不是已经够找回。
+
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
 精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。

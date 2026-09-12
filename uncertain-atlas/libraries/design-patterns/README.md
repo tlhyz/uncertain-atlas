@@ -182,3 +182,4 @@
 - [name-the-raw-addr](name-the-raw-addr.md)
 - [name-the-synthetic-xpub](name-the-synthetic-xpub.md)
 - [name-the-musig-psbt](name-the-musig-psbt.md)
+- [name-the-multisig-path](name-the-multisig-path.md)
