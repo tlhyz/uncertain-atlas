@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 66）
+
+- 博物馆 CVE-2020-15091 / Syringa / GHSA-6jqj-f58p-mrw3（Moderate）：提议者可把错误块的签放进 Commit；复用 chainID 时诚实者也会误收，全网提案非法、可停。
+- 执行块若凑齐 +2/3 就停验，其余槽位可填任意数据并声称「他们也签了」。应用信任引擎验 LastCommit，按 LastCommitInfo 发奖会看见假证人。
+- 修法：创建 Commit 前确认所有签属于那块；执行时验完全部签。咨询脚注：轻客户端不验 nil 票，2/3+ 就退出。
+- 不变量 65；语料 C69；反模式 quorum-sold-as-all-signed；L10.3 第 61 条。
+- 对照锁（4）、证据身份（64）、块 Time 两条路径（61）。不写怎样塞错块签。不抄 Gaia 奖金。
+
 ## 2026-09-12（续 65）
 
 - 博物馆 CVE-2021-21271 / Mulberry / GHSA-p658-8693-mhvg（High）：consensus reactor 在当前块仍飞行时用这块的 last commit 给 `DuplicateVoteEvidence` 打 `Timestamp`。
