@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 370）
+
+- CometBFT ExtendedVoteInfo 工作实例（官方 ABCI++ Methods Data Types ExtendedVoteInfo，实现 / ExtendedVoteInfo，不另写 19 节）：看见 ExtendedVoteInfo 从本进程抽出不是已经从块里抽出。看见把验过的签交给应用不是已经按原样签。看见扩展关掉则字段全空不是已经到了启用高度。ExtendedVoteInfo 不是不变量 365，也不是不变量 358，也不是不变量 330。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 369；语料 C373；模式 name-the-extended-voteinfo；反模式 extvoteinfo-sold-as-local；L10.3 第 365 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编 ExtendedVoteInfo、怎样验签、怎样开关扩展。不编博物馆页。不另写 19 节。不与 365 / 358 / 330 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。VoteInfo 抽出、两份扩展两份签、启用高度标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 369）
 
 - CometBFT Snapshot 类型工作实例（官方 ABCI++ Methods Data Types Snapshot，实现 / Snapshot 类型，不另写 19 节）：看见快照全字段（含 Metadata）对上不是已经装完。看见引擎不解释 format / hash 不是已经轻验 AppHash。看见空快照也至少 1 块不是已经齐。Snapshot 类型不是不变量 321，也不是不变量 322，也不是不变量 38。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

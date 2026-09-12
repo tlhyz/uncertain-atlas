@@ -3816,6 +3816,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1777 | 高 | 看见空快照也至少 1 块、网上一份快照报文最多 4 MB / 看见有块数 会被写成已经齐，或当成已经是共识常数 | 官方：chunks must be at least 1 even if empty；snapshot message at most 4 MB |
 | A1778 | 中 | 怎样编 Snapshot / 怎样切块 / 怎样比较哈希会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1779 | 记录 | 会与 321 / 322 / 38 糊成「看见快照对上就已经装完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Snapshot 类型 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。装回 / 发现 / 从创世重放标成另一对象 |
+| A1780 | 高 | 看见 ExtendedVoteInfo 从本进程的 CometBFT 数据结构抽出 / 看见 Prepare 里有这份 会被写成已经从拟议块或已决块抽出，或当成已经带了公钥 | 工作实例：abci++_methods Data Types ExtendedVoteInfo 官方写 this information is extracted from CometBFT data structures in the local process |
+| A1781 | 高 | 看见 extension_signature 已由引擎验过、交给应用再处理；扩展启用时两份签都在；没给 non_rp 就签空切片 / 看见有签 会被写成已经按原样签，或当成已经有重放保护 | 官方：expose the signature to the application；两份签在扩展启用时都在；没给 non_rp 就签空切片 |
+| A1782 | 高 | 看见扩展关掉则 vote_extension / non_rp_vote_extension 和对应的签都空 / 看见空着 会被写成已经到了启用高度，或当成已经交差 | 官方：If vote extensions are disabled these fields and signatures will be empty |
+| A1783 | 中 | 怎样编 ExtendedVoteInfo / 怎样验签 / 怎样开关扩展会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1784 | 记录 | 会与 365 / 358 / 330 糊成「看见 Prepare 里有扩展就已经从块里抽出」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。VoteInfo 抽出 / 两份扩展两份签 / 启用高度标成另一对象 |
 
 
 

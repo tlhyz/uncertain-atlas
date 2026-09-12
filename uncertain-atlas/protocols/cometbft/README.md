@@ -149,6 +149,8 @@ retain_height 默认 0 不是已经在剪：[`../../tracks/implementation/worked
 
 快照全字段（含 Metadata）对上不是已经装完：[`../../tracks/implementation/worked-example-snapshot-vs-identical.md`](../../tracks/implementation/worked-example-snapshot-vs-identical.md)（不变量 368）。看见引擎不解释 format / hash 不是已经轻验 AppHash。看见空快照也至少 1 块不是已经齐。
 
+ExtendedVoteInfo 从本进程抽出不是已经从块里抽出：[`../../tracks/implementation/worked-example-extvoteinfo-vs-local.md`](../../tracks/implementation/worked-example-extvoteinfo-vs-local.md)（不变量 369）。看见把验过的签交给应用不是已经按原样签。看见扩展关掉则字段全空不是已经到了启用高度。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
