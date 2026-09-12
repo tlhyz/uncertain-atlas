@@ -170,3 +170,4 @@
 - [csv-sold-as-absolute](csv-sold-as-absolute.md)
 - [rbf-sold-as-replaced](rbf-sold-as-replaced.md)
 - [type-sold-as-payload](type-sold-as-payload.md)
+- [listed-sold-as-accessed](listed-sold-as-accessed.md)

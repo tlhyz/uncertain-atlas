@@ -14,6 +14,7 @@
 - [`worked-example-txid-vs-wtxid.md`](worked-example-txid-vs-wtxid.md) — txid ≠ wtxid；改见证 ≠ 已经改交易身份；头上的 txid Merkle ≠ 已经承诺 wtxid（不变量 152）
 - [`worked-example-keypath-vs-scriptpath.md`](worked-example-keypath-vs-scriptpath.md) — 钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本（不变量 153）
 - [`worked-example-typed-vs-legacy.md`](worked-example-typed-vs-legacy.md) — 类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封；2718 ≠ 1559 ≠ 155（不变量 167）
+- [`worked-example-listed-vs-accessed.md`](worked-example-listed-vs-accessed.md) — 列出地址或槽 ≠ 已经访问过；列表外 ≠ 已经不能碰；2930 ≠ 2718 ≠ 1559（不变量 168）
 
 平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
 外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  

@@ -65,3 +65,4 @@
 - [name-the-relative-lock](name-the-relative-lock.md)
 - [name-the-replace-signal](name-the-replace-signal.md)
 - [name-the-tx-envelope](name-the-tx-envelope.md)
+- [name-the-planned-access](name-the-planned-access.md)
