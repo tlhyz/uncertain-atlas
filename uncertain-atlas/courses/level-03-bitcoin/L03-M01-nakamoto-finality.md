@@ -98,4 +98,4 @@ Bitcoin 主网、大量侧链与交易所政策。
 | 经济 | k 确认只对未日蚀且看见主网算力的人有意义 |
 
 **禁止假学习：** 「6 确认是协议最终。」「最长链永远等于最重链。」
-**边界：** 日蚀在 L3.4。见 tracks/finality。
+**边界：** 日蚀在 L3.4。见 tracks/finality。头上的时间不是「全网现在」：太早看父 MTP，locktime（BIP113 后）也看父 MTP，太新看本节点钟，见 [`../../tracks/consensus/worked-example-mtp.md`](../../tracks/consensus/worked-example-mtp.md)。

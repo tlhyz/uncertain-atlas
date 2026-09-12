@@ -40,4 +40,5 @@
 ## 对不确定（建议）
 
 产品句「本节点拒绝该块」必须能点名是：共识规则、本节点钟、还是实现上限。缺这句，就和「链判定非法」糊了。  
-调整钟也不是 PBTS timely 窗，更不是 BFT Time 中位数。四把尺见 [`../consensus/worked-example-pbts.md`](../consensus/worked-example-pbts.md)。
+调整钟也不是 PBTS timely 窗，更不是 BFT Time 中位数。四把尺见 [`../consensus/worked-example-pbts.md`](../consensus/worked-example-pbts.md)。  
+MTP 在 Bitcoin 里还要再拆三把：太早、BIP113 locktime、太新，见 [`../consensus/worked-example-mtp.md`](../consensus/worked-example-mtp.md)。调整钟打的是太新那条实现路径，不是 MTP 公式。

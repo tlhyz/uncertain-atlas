@@ -78,6 +78,8 @@ UTXO 集。见课程 L2.1。
 
 没有 Tendermint 式的锁和 +2/3 commit。
 
+**块时间（必须拆开）：** 头不能 `<=` 父块 `GetMedianTimePast`（`time-too-old`）。CSV 之后交易 locktime 也看父 MTP，不看本块 `nTime`（BIP 113）。太新看本节点钟 + 命名宽限（`time-too-new`），不是 MTP。三把尺见 [`../../tracks/consensus/worked-example-mtp.md`](../../tracks/consensus/worked-example-mtp.md)。不要和 PBTS / BFT Time 糊。
+
 ---
 
 ## 7. 执行

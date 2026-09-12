@@ -1,6 +1,6 @@
 # 反模式：提议者时间被写成 MTP、中位数或墙上现在
 
-> 真值：[PBTS 精读](../../tracks/consensus/worked-example-pbts.md)、[PBTS README](https://github.com/cometbft/cometbft/blob/main/spec/consensus/proposer-based-timestamp/README.md)、[不变式 40](../invariants/README.md#40-块时间必须点名算法)。
+> 真值：[PBTS 精读](../../tracks/consensus/worked-example-pbts.md)、[MTP 三把尺](../../tracks/consensus/worked-example-mtp.md)、[PBTS README](https://github.com/cometbft/cometbft/blob/main/spec/consensus/proposer-based-timestamp/README.md)、[不变式 40](../invariants/README.md#40-块时间必须点名算法)。
 
 ## 一句话
 

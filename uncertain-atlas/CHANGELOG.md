@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 44）
+
+- Bitcoin MTP 精读：太早看父块 GetMedianTimePast（time-too-old / INVALID_HEADER）。BIP 113 之后 locktime 也看父 MTP，不看本块 nTime。太新看本节点钟 + 命名宽限（time-too-new / TIME_FUTURE）。
+- 三把尺都不是 PBTS / BFT Time / 调整钟公式。调整钟打的是太新那条实现路径。
+- 不变量 41；语料 C43；反模式 mtp-sold-as-one-clock；L10.3 第 37 条。树 M3.1 补覆盖指针。
+- 不抄 nMedianTimeSpan / MAX_FUTURE_BLOCK_TIME 当不确定常数。
+
 ## 2026-09-12（续 43）
 
 - PBTS 精读：块时间是提议者本地钟；timely 相对本节点收到 Proposal 的窗子；不 timely → prevote nil。已在更早轮拿到 +2/3 prevote 再提议的块不再验 timely。启用后不能关。

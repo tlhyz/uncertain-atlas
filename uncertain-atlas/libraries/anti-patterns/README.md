@@ -45,3 +45,4 @@
 - [statesync-sold-as-genesis](statesync-sold-as-genesis.md)
 - [mutated-clears-others-download](mutated-clears-others-download.md)
 - [pbts-sold-as-mtp](pbts-sold-as-mtp.md)
+- [mtp-sold-as-one-clock](mtp-sold-as-one-clock.md)

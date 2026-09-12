@@ -605,3 +605,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A195 | 记录 | 规范与实现写了 PRECISION / MSGDELAY / 1 ms | 不当不确定常数；不抄现行默认毫秒；MSGDELAY 按轮加大是实现 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 01:10 UTC · MTP 不是一把钟
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A196 | 中 | 「MTP」会把太早、locktime、太新糊成一词 | 精读：父 GetMedianTimePast 管头太早；BIP113 后 locktime 也看父 MTP；太新是另一拒绝码 |
+| A197 | 中 | 会把 locktime 写成创世就看 MTP | 点名 CSV 部署之后才 Enforce BIP113；激活前用本块 nTime |
+| A198 | 中 | 会把 time-too-new 写成共识头非法 | validation.h：TIME_FUTURE 注释承认本节点钟可能坏；INVALID_HEADER 才是太早或坏 PoW |
+| A199 | 记录 | chain.h 写了 nMedianTimeSpan 与 MAX_FUTURE_BLOCK_TIME | 只当 Bitcoin 命名常数；不抄进不确定默认；现行太新注释是 current time，历史上掺过调整钟 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

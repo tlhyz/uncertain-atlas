@@ -182,10 +182,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.1 Nakamoto Consensus · 必学
 - PoW、最重链、概率最终性、reorg
+- 覆盖：课文 L3.1；块时间三把尺 `tracks/consensus/worked-example-mtp.md`（太早 / BIP113 locktime / 太新；不变量 41）
 
 ### M3.2 网络与传播 · 必学
 - mempool、compact block、eclipse、带宽
-- 覆盖：课文 L3.4；日蚀 `tracks/network/worked-example-eclipse.md`；调整钟 ≠ MTP `tracks/network/worked-example-adjusted-time.md`（CVE-2024-52912）
+- 覆盖：课文 L3.4；日蚀 `tracks/network/worked-example-eclipse.md`；调整钟 ≠ MTP `tracks/network/worked-example-adjusted-time.md`（CVE-2024-52912）；MTP 自己还要拆三把尺 `tracks/consensus/worked-example-mtp.md`
 
 ### M3.3 费用市场 · 重要
 - 有限区块空间如何定价
@@ -442,11 +443,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–40）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–41）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C42；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C43；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
