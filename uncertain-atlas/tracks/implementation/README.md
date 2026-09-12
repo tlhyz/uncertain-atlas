@@ -32,6 +32,7 @@
 - [`worked-example-sorted-vs-one-address.md`](worked-example-sorted-vs-one-address.md) — 同一套钥 ≠ 已经是同一条 P2SH 地址；只共享门限和主公钥 ≠ 已经够了；未压缩钥 ≠ 已经是本页（不变量 270）
 - [`worked-example-cosigner-vs-discovered.md`](worked-example-cosigner-vs-discovered.md) — 共享主公钥 ≠ 已经是本页；能独立长地址 ≠ 已经能独立签；前面分支没有交易 ≠ 已经发现完（不变量 271）
 - [`worked-example-derived-vs-output-key.md`](worked-example-derived-vs-output-key.md) — 派生钥 ≠ 已经是输出钥；不需要脚本路径 ≠ 已经不承诺；种子备份 ≠ 已经能找回单钥 P2TR（不变量 272）
+- [`worked-example-multi-vs-sortedmulti.md`](worked-example-multi-vs-sortedmulti.md) — multi ≠ 已经按字典序排；门限和钥数 ≠ 已经同一套上限；多把扩展钥 ≠ 已经各自编号（不变量 274）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）

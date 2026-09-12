@@ -171,3 +171,4 @@
 - [name-the-cosigner](name-the-cosigner.md)
 - [name-the-internal-key](name-the-internal-key.md)
 - [name-the-payment-code](name-the-payment-code.md)
+- [name-the-sortedmulti](name-the-sortedmulti.md)
