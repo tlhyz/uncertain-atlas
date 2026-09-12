@@ -142,4 +142,4 @@ Ethereum 用可执行规范、测试向量、hive 类套件、客户端交叉跑
 | 经济 | 客户端多样性成本 vs 单实现垄断 |
 
 **禁止假学习：** 「开源了所以实现正确。」「测试绿了所以两客户端不会分叉。」「客户端多所以一定去中心。」  
-**边界：** 不写市场份额。已归档实现案：CVE-2021-39137。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。
+**边界：** 不写市场份额。已归档实现案：CVE-2021-39137。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。跨链 ack JSON 不是已经确定：[`../../tracks/failure-museum/isa-2025-001.md`](../../tracks/failure-museum/isa-2025-001.md)。

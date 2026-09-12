@@ -81,3 +81,4 @@
 - [pool-overflow-sold-as-amount-only](pool-overflow-sold-as-amount-only.md)
 - [blocked-sold-as-initialized](blocked-sold-as-initialized.md)
 - [intdec-sold-as-aligned](intdec-sold-as-aligned.md)
+- [ack-json-sold-as-deterministic](ack-json-sold-as-deterministic.md)

@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 78）
+
+- 博物馆 ISA-2025-001 / GHSA-4wf3-5qj9-368v 与 ASA-2025-004 / GHSA-jg6f-48ff-5xrw：IBC acknowledgement JSON 反序列化非确定可停链。
+- 能开 IBC 通道的用户可引入。后一页把保护扩到 transfer 之外的所有应用。绕过是许可制开通道。
+- 不变量 77；语料 C81；反模式 ack-json-sold-as-deterministic；L10.3 第 73 条。
+- 对照不变量 3 / 70 / 71。不写怎样构造 ack。不抄中间件。第一版可以不装 IBC。
+
 ## 2026-09-12（续 77）
 
 - 博物馆 ASA-2024-010 / GHSA-7225-m954-23v7（High）：`sdk.Int` 与 `sdk.Dec` 位宽不对齐，Dec 进 Int 可能 panic。

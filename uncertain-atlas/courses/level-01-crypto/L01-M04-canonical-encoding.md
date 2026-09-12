@@ -122,4 +122,4 @@ mempool 策略可以比共识更严。
 | 经济 | 裂链后跟错根放货 |
 
 **禁止假学习：** 「JSON 也能当共识编码。」
-**边界：** 具体编解码以各链规范为准。见反模式 noncanonical-accepted。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。外层交易上限不是内层解码已有界：[`../../tracks/failure-museum/asa-2024-0012.md`](../../tracks/failure-museum/asa-2024-0012.md)。Int/Dec 位宽对不齐不是已对齐：[`../../tracks/failure-museum/asa-2024-010.md`](../../tracks/failure-museum/asa-2024-010.md)。
+**边界：** 具体编解码以各链规范为准。见反模式 noncanonical-accepted。精读：[`../../tracks/implementation/worked-example-encoding.md`](../../tracks/implementation/worked-example-encoding.md)。外层交易上限不是内层解码已有界：[`../../tracks/failure-museum/asa-2024-0012.md`](../../tracks/failure-museum/asa-2024-0012.md)。Int/Dec 位宽对不齐不是已对齐：[`../../tracks/failure-museum/asa-2024-010.md`](../../tracks/failure-museum/asa-2024-010.md)。跨链 ack JSON 不是已经确定：[`../../tracks/failure-museum/isa-2025-001.md`](../../tracks/failure-museum/isa-2025-001.md)。
