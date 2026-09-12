@@ -37,11 +37,14 @@
 
 | 名 | 规范句形状 |
 |---|---|
-| lunatic | 签了**无效**块（乱造集合等） |
+| lunatic | 签了**无效**块（乱造集合等） |  
+| 朝前 lunatic（Alderfly） | 对**尚未出现的高度**签任意状态；同高冲突块可能来不及形成。验过头 ≠ 能交证据。见 [Alderfly](../failure-museum/alderfly.md) |
 | equivocation | 同一轮对两个**有效**块双签 |
 | amnesia | 不同轮签了冲突块，且没有足以解锁的法定人数理由 |
 
 问责文还写：固定集合下，能破坏 agreement 的非 lunatic 情形，TLA+ / Ivy 分析只剩下 equivocation 与 amnesia。形式化过 ≠ 实现已对。
+
+朝前的 lunatic（官方 Alderfly）：对**尚未出现的高度**签任意状态。常见证据只等同高再出一块冲突块，可能来不及形成。验过头 ≠ 已经能交证据。见 [Alderfly](../failure-museum/alderfly.md)。这不是第四种分类，是 lunatic 的朝前形态。
 
 ---
 

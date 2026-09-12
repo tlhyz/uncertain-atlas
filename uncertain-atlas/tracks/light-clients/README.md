@@ -1,7 +1,7 @@
 # 横向地图：轻节点假设
 
 详见 L9.6。本表只防串词。  
-精读：[`worked-example.md`](worked-example.md)（阿比只看头就放货）；[`worked-example-bft-skip.md`](worked-example-bft-skip.md)（跳过中间块要重叠旧集合）；[`worked-example-sync-committee.md`](worked-example-sync-committee.md)（512 的 2/3 ≠ 全集的 2/3）；[`worked-example-blob-vs-das.md`](worked-example-blob-vs-das.md)（KZG blob ≠ PeerDAS 列抽样 ≠ Celestia 二维 DAS）。
+精读：[`worked-example.md`](worked-example.md)（阿比只看头就放货）；[`worked-example-bft-skip.md`](worked-example-bft-skip.md)（跳过中间块要重叠旧集合）；[`worked-example-sync-committee.md`](worked-example-sync-committee.md)（512 的 2/3 ≠ 全集的 2/3）；[`worked-example-blob-vs-das.md`](worked-example-blob-vs-das.md)（KZG blob ≠ PeerDAS 列抽样 ≠ Celestia 二维 DAS）。验过头 ≠ 能交证据：[Alderfly](../failure-museum/alderfly.md)（朝前 lunatic 不得只等同高再出一块）。
 
 | 名称 | 少下 | 多信 | 常见假冒 |
 |---|---|---|---|

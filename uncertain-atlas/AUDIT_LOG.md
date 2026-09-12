@@ -852,3 +852,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A288 | 记录 | Moderate；无绕过；轻客户端脚注：不验 nil、2/3+ 就退出；举例 Gaia 奖金 | 不把全节点补丁写成轻客户端已验完；不抄奖金；不写怎样塞错块签 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 01:20 UTC · 验过头不是已经能交证据
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A289 | 高 | ValidAndVerified 会被写成已经能提交 LightClientAttackEvidence | 博物馆 Alderfly：朝前 lunatic 可能来不及出同高冲突块 |
+| A290 | 中 | 「在安全模型外」会被写成不必检测 | 官方仍写必须能检测并惩罚，才能给正确行为激励 |
+| A291 | 中 | 会和重叠旧集合 / 上链≠slash / 证据身份 / 三种分类糊 | 对照表；不变量 66；语料 C70。朝前是 lunatic 形态，不是第四类 |
+| A292 | 记录 | Moderate；无 CVE；根因在规范；FetchBlock 加时间；IBC 可能丢资金 | 不编 CVE；不发明 spec 页正文；不写怎样签朝前高度；不抄 ⅓ |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 67）
+
+- 博物馆 Alderfly / GHSA-f3w5-v9xx-rp8p（Moderate）：官方 forward lunatic / FLA。⅓+ 拜占庭为尚未出现的高度签任意应用状态。
+- 常见证据只在同高冲突块时形成；目标朝前可能来不及出冲突块。补丁前轻客户端可从 primary 收下坏头，secondary 全对也形不成证据。
+- 成功 FLA 可能导致 IBC 丢资金；咨询写只在安全模型外才能成功，仍须检测惩罚。`FetchBlock` 加时间让停链后仍能上报。
+- 不变量 66；语料 C70；反模式 verified-sold-as-evidence；L10.3 第 62 条。
+- 对照不变量 20 / 21 / 64。不编 CVE。不写怎样签朝前高度。不抄 ⅓ 当门槛。
+
 ## 2026-09-12（续 66）
 
 - 博物馆 CVE-2020-15091 / Syringa / GHSA-6jqj-f58p-mrw3（Moderate）：提议者可把错误块的签放进 Commit；复用 chainID 时诚实者也会误收，全网提案非法、可停。
