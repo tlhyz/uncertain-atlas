@@ -58,6 +58,7 @@
 - [asa-2023-001](asa-2023-001.md)（部署+实现：升级高度上的进程管理器不是可信的下载通道）
 - [elderflower](elderflower.md)（协议+实现+经济：授权代发漏掉 ValidateBasic 不是内层已认证）
 - [jackfruit](jackfruit.md)（协议+实现：ValidateBasic 读本地钟不是已经确定；CVE-2021-41135）
+- [barberry](barberry.md)（协议+实现+经济：别人把空地址初始化成只进不出不是还没开户所以安全）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
 

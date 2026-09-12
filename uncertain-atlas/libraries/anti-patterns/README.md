@@ -87,3 +87,4 @@
 - [download-sold-as-upgrade](download-sold-as-upgrade.md)
 - [authz-sold-as-validated](authz-sold-as-validated.md)
 - [local-clock-sold-as-validatebasic](local-clock-sold-as-validatebasic.md)
+- [empty-addr-sold-as-untyped](empty-addr-sold-as-untyped.md)
