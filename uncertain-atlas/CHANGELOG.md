@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 150）
+
+- EIP-3675 工作实例（官方 PoS 升级 EIP，不另写 19 节）：处理完一块不是已经改规范头。没有 `POS_FORKCHOICE_UPDATED` 不是已经改 fork choice。事件里的 head 不是已经 finalized。禁止对头做乐观更新。出处 eips.ethereum.org EIP-3675。
+- 不变量 149；语料 C153；模式 name-the-forkchoice-event；反模式 processed-sold-as-head；L10.3 第 145 条。填 L5.2 / Ethereum 档案 / 最终性表 / 停链面地图。
+- 不抄过渡总难度。不写怎样发假 forkchoice 或扣 payload。不编博物馆页。不另写 19 节。不与 96 / 127 / 141 / 147 / 3 糊成一句。Engine API `ACCEPTED` / `SYNCING` 细表、Builder payload ID 标成另一对象。
+
 ## 2026-09-12（续 149）
 
 - CometBFT LastCommit 工作实例（官方共识算法 + 数据结构，不另写 19 节）：本头 LastCommit 不是本高度已经 +2/3。本地 subjective commit 不是已经 canonical。第一块空 LastCommit 不是已经没有最终。出处 cometbft spec/consensus/consensus.md；spec/core/data_structures.md。

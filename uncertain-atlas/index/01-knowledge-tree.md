@@ -286,12 +286,12 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.3 执行层 / 共识层 · 必学
 - validator、attestation、finality、fork choice
-- 覆盖：课文 L5.2；CL `DomainType` 见投票 SignBytes 精读；弱主观性 `tracks/finality/worked-example-weak-subjectivity.md`。head ≠ justified ≠ finalized：[`../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127；`safe` 不是官方已经写成 justified）。终局推迟 ≠ 停链，leak ≠ slash：[`../tracks/finality/worked-example-inactivity-leak.md`](../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）
+- 覆盖：课文 L5.2；CL `DomainType` 见投票 SignBytes 精读；弱主观性 `tracks/finality/worked-example-weak-subjectivity.md`。head ≠ justified ≠ finalized：[`../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127；`safe` 不是官方已经写成 justified）。终局推迟 ≠ 停链，leak ≠ slash：[`../tracks/finality/worked-example-inactivity-leak.md`](../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。处理完一块 ≠ 已经改规范头：[`../tracks/finality/worked-example-processed-vs-forkchoice.md`](../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149；Engine API `VALID` 不是已经改头，也不是已经 finalized）
 
 ### M5.4 多客户端与可执行规范 · 必学
 - 为什么故意允许多个实现
 - 差异性测试如何抓住「实现保证」漏洞
-- 覆盖：课文 L5.3。单笔低于入池上限 ≠ 拼块已被所有客户端接受：[`../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md`](../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md)（不变量 96）。子群过了 ≠ 点已经在曲线上：[`../tracks/failure-museum/cve-2025-30147.md`](../tracks/failure-museum/cve-2025-30147.md)（不变量 116）
+- 覆盖：课文 L5.3。单笔低于入池上限 ≠ 拼块已被所有客户端接受：[`../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md`](../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md)（不变量 96）。子群过了 ≠ 点已经在曲线上：[`../tracks/failure-museum/cve-2025-30147.md`](../tracks/failure-museum/cve-2025-30147.md)（不变量 116）。Engine API `VALID` ≠ 已经改规范头：[`../tracks/finality/worked-example-processed-vs-forkchoice.md`](../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149；通道尺寸是 96，哪一次调用才改头是 149）
 
 ### M5.5 EIP、交易类型、blobs、rollup 入口 · 重要
 - 协议如何演化
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–148）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–149）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C152；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C153；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

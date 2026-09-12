@@ -37,7 +37,7 @@ CometBFT：一个高度一张 commit，语义硬。Bitcoin：确认数是概率�
 
 输入：父状态、交易列表、块环境（号、时间戳等规范字段）。  
 输出：新状态根、收据根、日志。  
-它**不**单独决定这条链跟谁。
+它**不**单独决定这条链跟谁。处理完一块不是已经改规范头。精读：[`../../tracks/finality/worked-example-processed-vs-forkchoice.md`](../../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149）。
 
 **共识层（CL）**
 
@@ -115,10 +115,10 @@ Ethereum 合并后主网。PBS 之后，提议者可能不自己选交易（5.4�
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 验证者签 attestation；弱主观性是同步假设，不是签算法 |
-| 协议 | head ≠ justified ≠ finalized |
+| 协议 | head ≠ justified ≠ finalized；处理完一块 ≠ 已经改规范头 |
 | 实现 | EL 根必须被 CL 承诺；两层客户端对齐 |
 | 部署 | 出块间隔是参数，不是永恒 |
 | 经济 | 罚没支撑最终性假设；不是「秒最终」口号 |
 
-**禁止假学习：** 「PoS 所以秒最终。」「出块了 = finalized。」「justified 就是不可逆。」「`safe` 就是 finalized。」「和 Tendermint 一样一槽一 commit。」「好久没最终就是停链。」「不投票就是已经 slash。」  
-**边界：** 不写当前 slot 秒数当永恒；不证弱主观性数学、不填现行 WS 周期。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）；[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。终局推迟 ≠ 停链，leak ≠ slash：[`../../tracks/finality/worked-example-inactivity-leak.md`](../../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。attestation 与 proposer 的 `DomainType` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不是 EIP-712。Altair 同步委员会轻客户端：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。可罚关系与谁执行 slash：[`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。不抄罚金数字、epoch 个数、美元。
+**禁止假学习：** 「PoS 所以秒最终。」「出块了 = finalized。」「justified 就是不可逆。」「`safe` 就是 finalized。」「和 Tendermint 一样一槽一 commit。」「好久没最终就是停链。」「不投票就是已经 slash。」「执行层刚跑完 / Engine API `VALID` = 已经改规范头。」「事件里的 head = 已经 finalized。」  
+**边界：** 不写当前 slot 秒数当永恒；不证弱主观性数学、不填现行 WS 周期。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）；[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。终局推迟 ≠ 停链，leak ≠ slash：[`../../tracks/finality/worked-example-inactivity-leak.md`](../../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。处理完一块 ≠ 已经改规范头：[`../../tracks/finality/worked-example-processed-vs-forkchoice.md`](../../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149）。attestation 与 proposer 的 `DomainType` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不是 EIP-712。Altair 同步委员会轻客户端：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。可罚关系与谁执行 slash：[`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。不抄罚金数字、epoch 个数、美元。不抄过渡总难度。不写怎样发假 forkchoice。

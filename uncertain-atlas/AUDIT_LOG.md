@@ -1817,3 +1817,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A679 | 记录 | 会与 65 / 147 / 47 / 4 / 40 糊成「有 Commit」 | 对照写清。不编博物馆页。JSet / full commit 备选算法标成另一对象 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 · 处理完一块不是已经改规范头
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A680 | 高 | 执行层刚跑完一块 / Engine API `VALID` 会被写成已经改规范头 | 工作实例：EIP-3675 写明必须伴随 POS_FORKCHOICE_UPDATED；禁止乐观改头 |
+| A681 | 高 | 没有该事件会被写成已经改 fork choice | 官方测试清单：没收到该事件，不得更新任何 fork-choice 状态 |
+| A682 | 高 | 事件里的 head 会被写成已经 finalized | 官方：同一事件分开点名规范头和最近 finalized；第一份 finalized 前用全零占位 |
+| A683 | 中 | 过渡总难度会被抄进不确定 | 不抄。不写怎样发假 forkchoice 或扣 payload。不另写 19 节 |
+| A684 | 记录 | 会与 96 / 127 / 141 / 147 / 3 糊成「VALID / 到了」 | 对照写清。不编博物馆页。ACCEPTED / SYNCING 细表、Builder payload ID 标成另一对象 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

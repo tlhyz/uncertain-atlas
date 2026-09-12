@@ -151,3 +151,4 @@
 - [client-sold-as-packet](client-sold-as-packet.md)
 - [apphash-sold-as-this-block](apphash-sold-as-this-block.md)
 - [lastcommit-sold-as-this-block](lastcommit-sold-as-this-block.md)
+- [processed-sold-as-head](processed-sold-as-head.md)

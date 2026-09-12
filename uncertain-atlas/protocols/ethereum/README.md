@@ -3,7 +3,7 @@
 优先级：重要  
 完整报告：[`report.md`](report.md)
 
-精读：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。blob gas 不是普通执行 gas。EVM 能读承诺不是已经读到袋里的字节。
+精读：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。blob gas 不是普通执行 gas。EVM 能读承诺不是已经读到袋里的字节。处理完一块不是已经改规范头：[`../../tracks/finality/worked-example-processed-vs-forkchoice.md`](../../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149）。
 
 一句话：
 
