@@ -97,6 +97,7 @@
 4. **谁写列表**（不变量 27）：排序权。本页是费进谁口袋。
 5. **费率高 ≠ 更正确**（不变量 144 的亲戚）：小费高不是交易更合法。
 6. **出块者开跑已热 ≠ 已经付给**（不变量 187）：集合里有没有出块者。本页是钱给谁。
+7. **calldata 地板 ≠ 已改执行气**（不变量 197）：数据为主的下限气。本页是执行气上的 tip / basefee；气限自 1559 以来未再抬是 7623 的动机，不是本页已经改了 calldata。
 
 不要抄弹性倍数 / 调价分母 / 初始基础费 / 固有 gas 表。不要写怎样抬基础费、怎样排空块、怎样抢排序。不编博物馆页。不另写 19 节。blob 市场、EIP-2718 类型信封、EIP-2930 访问列表、旧 `gas_price` 归一细则标成另一对象。信封精读：[`../implementation/worked-example-typed-vs-legacy.md`](../implementation/worked-example-typed-vs-legacy.md)（不变量 167）。出块者开跑预填精读：[`../implementation/worked-example-coinbase-vs-prefill.md`](../implementation/worked-example-coinbase-vs-prefill.md)（不变量 187）。
 
