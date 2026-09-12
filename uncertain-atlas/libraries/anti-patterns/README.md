@@ -272,3 +272,4 @@
 - [account-sold-as-discovered](account-sold-as-discovered.md)
 - [nested-sold-as-same-account](nested-sold-as-same-account.md)
 - [script-type-sold-as-account](script-type-sold-as-account.md)
+- [sorted-sold-as-one-address](sorted-sold-as-one-address.md)
