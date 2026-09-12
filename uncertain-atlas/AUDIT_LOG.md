@@ -4101,6 +4101,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2062 | 高 | 看见 ExtendedVoteInfo.non_rp_extension_signature 是发送验证者造、CometBFT 验过的非重放保护扩展签 / 看见填了 non_rp_extension_signature 会被写成已经把验过的签交给应用，或当成已经是 extension_signature | 官方表：non_rp_extension_signature is Signature of the non replay-protected vote extension produced by the sending validator and verified by CometBFT |
 | A2063 | 中 | 怎样写 ExtendedVoteInfo 表余栏 / 怎样填 validator / 怎样填 block_id_flag 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2064 | 记录 | 会与 369 / 421 / 365 糊成「看见填了 ExtendedVoteInfo 表余栏就已经带了公钥」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo 表余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经带了公钥 / 已经罚没 / 已经把验过的签交给应用 标成另一对象 |
+| A2065 | 高 | 看见 PrepareProposalRequest.next_validators_hash 是下一验证者集合默克尔根 / 看见填了 next_validators_hash 会被写成已经是 Finalize 请求栏的 next_validators_hash，或当成已经换了人 | 官方表：next_validators_hash is Merkle root of the next validator set |
+| A2066 | 高 | 看见 PrepareProposalRequest.proposer_address 是正在造这份提案的验证者地址 / 看见填了 proposer_address 会被写成已经造了这份提案，或当成已经知道本头哈希 | 官方表：proposer_address is Address of the validator that is creating the proposal |
+| A2067 | 高 | 看见 FinalizeBlockRequest.time 是已决块的时间戳 / 看见填了 time 会被写成已经对上了拟议块头，或当成已经是 PrepareProposalRequest.time | 官方表：time is Timestamp of the finalized block |
+| A2068 | 中 | 怎样写 Prepare 请求末栏 / 怎样填 next_validators_hash / 怎样填 proposer_address 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2069 | 记录 | 会与 394 / 413 / 424 糊成「看见填了 Prepare 请求末栏就已经是 Finalize 请求栏的 next_validators_hash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 请求末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 Finalize 请求栏的 next_validators_hash / 已经造了这份提案 / 已经对上了拟议块头 标成另一对象 |
 
 
 

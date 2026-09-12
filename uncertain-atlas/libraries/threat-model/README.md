@@ -427,6 +427,7 @@
 | 418 | Prepare 请求栏被写成已经能回超限列表 | 协议 + 文案 | 看见 PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节 / PrepareProposalRequest.txs 是挑进拟议块的初步交易列表 / PrepareProposalRequest.height 是将要提议的那块的高度 / Prepare 请求栏当成已经能回超限列表或已经跑过 Process或已经对上了拟议块头 | 不变量 423；语料 C427 |
 | 419 | Prepare 请求余栏被写成已经交差 proposed_last_commit | 协议 + 文案 | 看见 PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息 / PrepareProposalRequest.time 是将要提议那块的时间戳 / PrepareProposalRequest.misbehavior 是过错验证者信息列表 / Prepare 请求余栏当成已经交差 proposed_last_commit或已经对上了拟议块头或已经定奖惩 | 不变量 424；语料 C428 |
 | 420 | ExtendedVoteInfo 表余栏被写成已经带了公钥 | 协议 + 文案 | 看见 ExtendedVoteInfo.validator 是发了这张票的验证者 / ExtendedVoteInfo.block_id_flag 标明投了上一块、nil、还是没收到票 / ExtendedVoteInfo.non_rp_extension_signature 是发送验证者造、CometBFT 验过的非重放保护扩展签 / ExtendedVoteInfo 表余栏当成已经带了公钥或已经罚没或已经把验过的签交给应用 | 不变量 425；语料 C429 |
+| 421 | Prepare 请求末栏被写成已经是 Finalize 请求栏的 next_validators_hash | 协议 + 文案 | 看见 PrepareProposalRequest.next_validators_hash 是下一验证者集合默克尔根 / PrepareProposalRequest.proposer_address 是正在造这份提案的验证者地址 / FinalizeBlockRequest.time 是已决块的时间戳 / Prepare 请求末栏当成已经是 Finalize 请求栏的 next_validators_hash或已经造了这份提案或已经对上了拟议块头 | 不变量 426；语料 C430 |
 
 ## 不自动覆盖
 

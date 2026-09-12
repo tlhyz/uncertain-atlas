@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 427）
+
+- CometBFT Prepare 请求末栏工作实例（官方 ABCI++ Methods PrepareProposal Request / FinalizeBlock Request，实现 / Prepare 请求末栏，不另写 19 节）：看见 PrepareProposalRequest.next_validators_hash 是下一验证者集合默克尔根不是已经是 Finalize 请求栏的 next_validators_hash。看见 PrepareProposalRequest.proposer_address 是正在造这份提案的验证者地址不是已经造了这份提案。看见 FinalizeBlockRequest.time 是已决块的时间戳不是已经对上了拟议块头。Prepare 请求末栏不是不变量 394，也不是不变量 413，也不是不变量 424。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 426；语料 C430；模式 name-the-prep-req-end；反模式 prepreqend-sold-as-finreq；L10.3 第 422 条。填 L4.4 / CometBFT 档案 Prepare 请求末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Prepare 请求末栏、怎样填 next_validators_hash、怎样填 proposer_address。不编博物馆页。不另写 19 节。不与 394 / 413 / 424 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是 Finalize 请求栏的 next_validators_hash、已经造了这份提案、已经对上了拟议块头标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 426）
 
 - CometBFT ExtendedVoteInfo 表余栏工作实例（官方 ABCI++ Methods Data Types ExtendedVoteInfo，实现 / ExtendedVoteInfo 表余栏，不另写 19 节）：看见 ExtendedVoteInfo.validator 是发了这张票的验证者不是已经带了公钥。看见 ExtendedVoteInfo.block_id_flag 标明投了上一块、nil、还是没收到票不是已经罚没。看见 ExtendedVoteInfo.non_rp_extension_signature 是发送验证者造、CometBFT 验过的非重放保护扩展签不是已经把验过的签交给应用。ExtendedVoteInfo 表余栏不是不变量 369，也不是不变量 421，也不是不变量 365。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
