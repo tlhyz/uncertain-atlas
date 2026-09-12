@@ -387,6 +387,7 @@
 | 378 | Query 证明回包被写成已经对上 AppHash | 协议 + 文案 | 看见 Query 请求 prove 是能回就回默克尔证明 / Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 / Query 回包 height 是数据来自哪一高 / Query 证明回包当成已经对上 AppHash或已经是按键查或已经是请求高度 | 不变量 383；语料 C387 |
 | 379 | Query 回包码被写成已经过了共识 | 协议 + 文案 | 看见 Query 回包 code 是回包码 / Query 回包 log 是应用日志输出 / Query 回包 info 是附加信息 / Query 回包码当成已经过了共识或已经新鲜或已经是按键查 | 不变量 384；语料 C388 |
 | 380 | ConsensusParams 字段被写成已经是 MaxBytes 上限 | 协议 + 文案 | 看见 ConsensusParams.block 限制块大小和块间隔 / ConsensusParams.validator 限制验证者公钥类型 / ConsensusParams.version 是 ABCI 应用版本 / ConsensusParams 字段当成已经是 MaxBytes 上限或已经带了公钥或已经是 app_version 进了头 | 不变量 385；语料 C389 |
+| 381 | ConsensusParams 余栏被写成已经是证据 MaxBytes | 协议 + 文案 | 看见 ConsensusParams.evidence 限制拜占庭证据是否合法 / ConsensusParams.abci 是 ABCI 相关参数 / ConsensusParams.synchrony 定提案时间戳合法界 / ConsensusParams 余栏当成已经是证据 MaxBytes或已经 Prepare 带了扩展或已经是 PBTS | 不变量 386；语料 C390 |
 
 ## 不自动覆盖
 

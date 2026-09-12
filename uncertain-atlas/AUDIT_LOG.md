@@ -3901,6 +3901,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1862 | 高 | 看见 ConsensusParams.version 是 ABCI 应用版本 / 看见填了 version 会被写成已经是 app_version 进了头，或当成已经印进本头 AppHash | 官方：version is The ABCI application version |
 | A1863 | 中 | 怎样写 ConsensusParams / 怎样选 MaxBytes / 怎样限钥型会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1864 | 记录 | 会与 337 / 364 / 370 糊成「看见填了 ConsensusParams 就已经是 MaxBytes 上限」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams 字段 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。MaxBytes 上限 / 公钥 / app_version 进头标成另一对象 |
+| A1865 | 高 | 看见 ConsensusParams.evidence 限制拜占庭证据是否合法 / 看见填了 evidence 会被写成已经是证据 MaxBytes，或当成已经盖住解绑 | 工作实例：abci++_methods ConsensusParams 官方写 evidence is Parameters limiting the validity of evidence of byzantine behaviour |
+| A1866 | 高 | 看见 ConsensusParams.abci 是 ABCI 相关参数 / 看见填了 abci 会被写成已经 Prepare 带了扩展，或当成已经切到 ABCI 2.0 | 官方：abci is ABCI-related parameters |
+| A1867 | 高 | 看见 ConsensusParams.synchrony 定提案时间戳合法界 / 看见填了 synchrony 会被写成已经是 PBTS，或当成已经是 Precision 就已经是 MessageDelay | 官方：synchrony is Parameters determining the validity bounds of a proposal timestamp |
+| A1868 | 中 | 怎样写余下三栏 / 怎样设证据上限 / 怎样设 Precision会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1869 | 记录 | 会与 331 / 330 / 336 糊成「看见填了余下三栏就已经是证据 MaxBytes」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams 余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。证据上限 / 扩展启用 / PBTS 标成另一对象 |
 
 
 
