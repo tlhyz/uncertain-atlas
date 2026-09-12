@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 407）
+
+- CometBFT Snapshot 高度余量工作实例（官方 ABCI++ Methods Data Types Snapshot / Query Usage，实现 / Snapshot 高度余量，不另写 19 节）：看见 Snapshot.height 是拍快照的高度（Commit 之后）不是已经是 Query 高度。看见 Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据不是已经全字段对上。看见 Query 可以可选回默克尔证明不是已经对上 AppHash。Snapshot 高度余量不是不变量 371，也不是不变量 368，也不是不变量 383。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 406；语料 C410；模式 name-the-snap-height；反模式 snapheight-sold-as-queryh；L10.3 第 402 条。填 L4.4 / CometBFT 档案 Snapshot 高度余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Snapshot 高度余量、怎样填 metadata、怎样回证明。不编博物馆页。不另写 19 节。不与 371 / 368 / 383 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。Query 高度、全字段对上、勾了 prove 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 406）
 
 - CometBFT CheckTx 守卫余量工作实例（官方 ABCI++ Methods CheckTx Usage / Query Usage，实现 / CheckTx 守卫余量，不另写 19 节）：看见 CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池不是已经是技术上可选。看见这笔可以来自外部用户、也可以来自另一节点不是已经保证不重放。看见默克尔证明带自描述 type、好支持多种默克尔树和编码不是已经是 ProofOp 类型。CheckTx 守卫余量不是不变量 373，也不是不变量 313，也不是不变量 325。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

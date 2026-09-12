@@ -408,3 +408,4 @@
 - [finalizeafter-sold-as-commit](finalizeafter-sold-as-commit.md)
 - [finapphash-sold-as-header](finapphash-sold-as-header.md)
 - [checktxguard-sold-as-optional](checktxguard-sold-as-optional.md)
+- [snapheight-sold-as-queryh](snapheight-sold-as-queryh.md)

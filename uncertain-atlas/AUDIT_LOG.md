@@ -4001,6 +4001,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1962 | 高 | 看见默克尔证明带自描述 type、好支持多种默克尔树和编码 / 看见写了 type 会被写成已经是 ProofOp 类型，或当成已经对上 AppHash | 官方：Merkle proof includes self-describing type field to support many types of Merkle trees and encoding formats |
 | A1963 | 中 | 怎样写 CheckTx 守卫余量 / 怎样挑邻居 / 怎样编 type 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1964 | 记录 | 会与 373 / 313 / 325 糊成「看见回了 CheckTx 守卫余量就已经是技术上可选」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 守卫余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。技术上可选 / 去重 / 按键查 标成另一对象 |
+| A1965 | 高 | 看见 Snapshot.height 是拍快照的高度（Commit 之后） / 看见填了 height 会被写成已经是 Query 高度，或当成已经装完 | 工作实例：abci++_methods Data Types Snapshot 官方写 height is The height at which the snapshot was taken (after commit) |
+| A1966 | 高 | 看见 Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据 / 看见填了 metadata 会被写成已经全字段对上，或当成已经增量验过 | 官方：metadata is Arbitrary application metadata, e.g. chunk hashes or other verification data |
+| A1967 | 高 | 看见 Query 可以可选回默克尔证明 / 看见能回证明 会被写成已经对上 AppHash，或当成已经勾了 prove | 官方：Query Usage Optionally return Merkle proof |
+| A1968 | 中 | 怎样写 Snapshot 高度余量 / 怎样填 metadata / 怎样回证明 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1969 | 记录 | 会与 371 / 368 / 383 糊成「看见填了 Snapshot 高度余量就已经是 Query 高度」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Snapshot 高度余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Query 高度 / 全字段对上 / 勾了 prove 标成另一对象 |
 
 
 
