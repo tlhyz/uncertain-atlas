@@ -405,7 +405,12 @@ def load_pair_data(
         spot_meta=_meta_from_df(spot_a),
         funding_source=str(funding.attrs.get("source") or "gate_futures_usdt_funding_rate"),
         funding_rows=int(len(funding)),
-        snapshot=snap,
+        snapshot={
+            **snap,
+            "funding_truncated_180d": bool(funding.attrs.get("funding_truncated_180d")),
+            "funding_start": str(funding["timestamp"].iloc[0]) if len(funding) else None,
+            "funding_end": str(funding["timestamp"].iloc[-1]) if len(funding) else None,
+        },
     )
     return PairData(
         pair=pair,
