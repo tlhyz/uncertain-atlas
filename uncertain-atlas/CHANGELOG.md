@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 355）
+
+- CometBFT Process 何时调用工作实例（官方 ABCI++ Methods ProcessProposal When，实现 / Process 何时调用，不另写 19 节）：看见 Process 调用是同步的不是已经能在返回之后再改裁决。看见只做基本检查再异步 Process 不是已经还能再 Reject。看见非验证者可以立刻回 ACCEPT 不是已经验过这块。Process 何时调用不是不变量 327，也不是不变量 33，也不是不变量 351。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 354；语料 C358；模式 name-the-process-when；反模式 processwhen-sold-as-later；L10.3 第 350 条。填 L4.4 / CometBFT 档案 Process 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Process 何时调用、怎样写异步路径、怎样选非验证者立刻 ACCEPT。不编博物馆页。不另写 19 节。不与 327 / 33 / 351 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。立刻整块执行离开关键路径、四门、提议者 Process 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 354）
 
 - CometBFT Verify 何时调用工作实例（官方 ABCI++ Methods VerifyVoteExtension Usage，实现 / Verify 何时调用，不另写 19 节）：看见空扩展仍会调 Verify 不是已经跳过 Verify。看见不对本进程自己发出的 Precommit 调用不是已经自己验过。看见请求里的 hash 不是已经对该块跑过 Process。Verify 何时调用不是不变量 34，也不是不变量 348，也不是不变量 351。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -3741,6 +3741,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1702 | 高 | 看见请求里的 hash / 看见指向某块 会被写成已经对该块跑过 ProcessProposal，或当成已经是提议者那边也会叫 Process | 官方：hash 不保证这块已经通过 ProcessProposal 暴露给应用 |
 | A1703 | 中 | 怎样写 Verify 何时调用 / 怎样写空扩展 / 怎样缓存 Process 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1704 | 记录 | 会与 34 / 348 / 351 糊成「看见空扩展就已经跳过 Verify」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拒收整张预提交 / Req 6 必须 Accept / 提议者 Process 标成另一对象 |
+| A1705 | 高 | 看见 Process 调用是同步的 / 看见引擎在等回包 会被写成已经能在返回之后再改裁决，或当成已经离开关键路径 | 工作实例：abci++_methods ProcessProposal When 官方写 Process 调用是同步的 |
+| A1706 | 高 | 看见只做基本检查再异步 Process / 看见已经回了 ACCEPT 会被写成已经还能再 Reject，或当成已经还能强迫 prevote/precommit nil | 官方：异步处理后不能再 Reject，也不能再强迫 prevote/precommit nil |
+| A1707 | 高 | 看见非验证者可以立刻回 ACCEPT / 看见不是验证者 会被写成已经验过这块，或当成已经是验证者也可以立刻交差 | 官方：非验证者且应用不想让非验证者处理 ProcessProposal 时可以立刻回 ACCEPT |
+| A1708 | 中 | 怎样写 Process 何时调用 / 怎样写异步路径 / 怎样选非验证者立刻 ACCEPT 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1709 | 记录 | 会与 327 / 33 / 351 糊成「看见已经回了就已经能稍后改裁决」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。立刻整块执行离开关键路径 / 四门 / 提议者 Process 标成另一对象 |
 
 
 

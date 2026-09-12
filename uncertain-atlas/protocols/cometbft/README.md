@@ -119,6 +119,8 @@ Process 也会在提议者那边叫不是已经不用再 Process：[`../../track
 
 空扩展仍会调 Verify 不是已经跳过 Verify：[`../../tracks/implementation/worked-example-verify-when-vs-empty.md`](../../tracks/implementation/worked-example-verify-when-vs-empty.md)（不变量 353）。看见不对本进程自己发出的 Precommit 调用不是已经自己验过。看见请求里的 hash 不是已经对该块跑过 Process。
 
+Process 调用是同步的不是已经能在返回之后再改裁决：[`../../tracks/implementation/worked-example-process-when-vs-later.md`](../../tracks/implementation/worked-example-process-when-vs-later.md)（不变量 354）。看见只做基本检查再异步 Process 不是已经还能再 Reject。看见非验证者可以立刻回 ACCEPT 不是已经验过这块。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

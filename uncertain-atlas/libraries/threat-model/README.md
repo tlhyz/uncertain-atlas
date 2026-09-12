@@ -355,6 +355,7 @@
 | 346 | 提议者 Process 被写成已经不用再 Process | 协议 + 文案 | 看见 Process 也会在提议者那边叫 / 通常紧跟 Prepare、列表对得上 / 失败时可能对上更早一次或根本不调 / 提议者 Process 当成已经不用再 Process 或已经保证是这一次或已经每轮都会叫 | 不变量 351；语料 C355 |
 | 347 | 迟到扩展被写成已经 Verify 过 | 协议 + 文案 | 看见 +2/3 之后才进来的扩展写进了 commit info / 建议按 Verify 同款逻辑再看一遍 / 下一高度 round 0 写进 ExtendedCommitInfo / 迟到扩展当成已经 Verify 过或已经是引擎会再 Verify 或已经又叫了 Verify | 不变量 352；语料 C356 |
 | 348 | Verify 何时调用被写成已经跳过 Verify | 协议 + 文案 | 看见空扩展仍会调 Verify / 不对本进程自己发出的 Precommit 调用 / 请求里的 hash / Verify 何时调用当成已经跳过 Verify 或已经自己验过或已经对该块跑过 Process | 不变量 353；语料 C357 |
+| 349 | Process 何时调用被写成已经能稍后改裁决 | 协议 + 文案 | 看见 Process 调用是同步的 / 只做基本检查再异步 Process / 非验证者可以立刻回 ACCEPT / Process 何时调用当成已经能在返回之后再改裁决或已经还能再 Reject 或已经验过这块 | 不变量 354；语料 C358 |
 
 ## 不自动覆盖
 
