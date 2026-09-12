@@ -129,3 +129,4 @@
 - [stm-done-sold-as-final](stm-done-sold-as-final.md)
 - [snarked-sold-as-staged](snarked-sold-as-staged.md)
 - [nmt-sold-as-square-available](nmt-sold-as-square-available.md)
+- [backed-sold-as-available](backed-sold-as-available.md)

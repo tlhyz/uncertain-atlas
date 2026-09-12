@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 126）
+
+- Polkadot 工作实例：backed 不是已经可用；可用不是已经有效；included 不是已经批准；批准不是已经 GRANDPA 最终。中继头有回执不是 PoV 在链上。出处 Wiki ELVES / async backing + Inclusion / Bitfield Signing。
+- 不变量 125；语料 C129；模式 name-the-parachain-stage；反模式 backed-sold-as-available；L10.3 第 121 条。填 L7.3 / Polkadot 档案 §4 §8 §9 §16。
+- 不抄秒数 / 倍数 / PoV 尺寸 / 门槛数字。不写怎样让候选缺席。不与 99 / 114 / 124 糊成一句。AncestryProof / People 弹性扩容仍不写。
+
 ## 2026-09-12（续 125）
 
 - Celestia 工作实例：NMT 证明命名空间齐了不是扩展方阵已经可用。DAS 抽样过关不是已经拿到自己的 blob，也不是编码已经诚实。新块 DA 不是历史已经有人存。出处官方 DA 层 + DA FAQ。

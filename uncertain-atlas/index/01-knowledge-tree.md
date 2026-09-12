@@ -368,7 +368,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - Relay / Parachain、collator / validator
 - backing、availability、approval
 - 小链如何借用安全，以及新的攻击面
-- 覆盖：课文 L7.3 入口；档案 `protocols/polkadot/`。交易解码深度有界 ≠ runtime API 再解整块已安全：[`../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)（不变量 97）。组下标 ≠ 票向量下标：[`../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md`](../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md)（不变量 98）。Active ≠ Confirmed：[`../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md`](../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md)（不变量 99）。链下内存禁用 ≠ 已确认争议已经不参与：[`../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md`](../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md)（不变量 100）。改冻结门槛 ≠ 选举地板已经配对：[`../tracks/failure-museum/polkadot-2026-06-election-score-floor.md`](../tracks/failure-museum/polkadot-2026-06-election-score-floor.md)（不变量 110）。preserve_origin 为真 ≠ 出站已经带了改 origin 的指令：[`../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md`](../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md)（不变量 113）。废弃 runtime API 还在 ≠ 返回编码已经兼容：[`../tracks/failure-museum/polkadot-2026-03-deprecated-runtime-api-scale.md`](../tracks/failure-museum/polkadot-2026-03-deprecated-runtime-api-scale.md)（不变量 114）
+- 覆盖：课文 L7.3 入口；档案 `protocols/polkadot/`。backed ≠ 已可用 ≠ 已批准 ≠ GRANDPA：[`../tracks/finality/worked-example-backed-vs-available.md`](../tracks/finality/worked-example-backed-vs-available.md)（不变量 125）。交易解码深度有界 ≠ runtime API 再解整块已安全：[`../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)（不变量 97）。组下标 ≠ 票向量下标：[`../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md`](../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md)（不变量 98）。Active ≠ Confirmed：[`../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md`](../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md)（不变量 99）。链下内存禁用 ≠ 已确认争议已经不参与：[`../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md`](../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md)（不变量 100）。改冻结门槛 ≠ 选举地板已经配对：[`../tracks/failure-museum/polkadot-2026-06-election-score-floor.md`](../tracks/failure-museum/polkadot-2026-06-election-score-floor.md)（不变量 110）。preserve_origin 为真 ≠ 出站已经带了改 origin 的指令：[`../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md`](../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md)（不变量 113）。废弃 runtime API 还在 ≠ 返回编码已经兼容：[`../tracks/failure-museum/polkadot-2026-03-deprecated-runtime-api-scale.md`](../tracks/failure-museum/polkadot-2026-03-deprecated-runtime-api-scale.md)（不变量 114）
 
 ### M7.5 共享安全对照 · 进阶
 - restaking 等后到项目：只收「独特思想」，不因有名而学
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–124）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–125）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C128；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C129；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

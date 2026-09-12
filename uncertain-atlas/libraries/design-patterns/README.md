@@ -22,3 +22,4 @@
 - [optimistic-serial-equiv](optimistic-serial-equiv.md)
 - [name-the-proved-ledger](name-the-proved-ledger.md)
 - [name-the-da-question](name-the-da-question.md)
+- [name-the-parachain-stage](name-the-parachain-stage.md)
