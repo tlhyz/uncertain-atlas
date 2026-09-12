@@ -212,6 +212,21 @@ def test_pagination_keeps_partial_on_too_long_ago(monkeypatch):
     assert calls["n"] >= 2
 
 
+def test_attach_funding_mixed_datetime_units():
+    from qtb.ab.data import attach_funding
+
+    bars = _bars([100, 101, 102, 103])
+    bars["timestamp"] = pd.to_datetime(bars["timestamp"], utc=True).dt.as_unit("us")
+    fund = pd.DataFrame(
+        {
+            "timestamp": pd.to_datetime(["2026-01-01 08:00:03"], utc=True).as_unit("s"),
+            "funding_rate": [0.0001],
+        }
+    )
+    out = attach_funding(bars, fund)
+    assert "funding_rate" in out.columns
+
+
 def test_cash_benchmark_flat():
     r = run_cash(_bars([10, 11, 9, 12]), 1000.0)
     m = summarize(r, 1000.0)

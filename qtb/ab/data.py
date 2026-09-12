@@ -430,8 +430,10 @@ def attach_funding(perp: pd.DataFrame, funding: pd.DataFrame) -> pd.DataFrame:
     """Align real funding prints onto bars. Rate is 0 except near a settlement."""
     out = perp.copy()
     f = funding[["timestamp", "funding_rate"]].copy()
-    f["timestamp"] = pd.to_datetime(f["timestamp"], utc=True)
-    out["timestamp"] = pd.to_datetime(out["timestamp"], utc=True)
+    f["timestamp"] = pd.to_datetime(f["timestamp"], utc=True).dt.as_unit("ns")
+    out["timestamp"] = pd.to_datetime(out["timestamp"], utc=True).dt.as_unit("ns")
+    if "funding_rate" in out.columns:
+        out = out.drop(columns=["funding_rate"])
     out = out.sort_values("timestamp")
     f = f.sort_values("timestamp")
     merged = pd.merge_asof(out, f, on="timestamp", direction="backward", tolerance=pd.Timedelta("50min"))
