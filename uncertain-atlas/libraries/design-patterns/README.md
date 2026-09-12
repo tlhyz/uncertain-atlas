@@ -127,3 +127,4 @@
 - [name-the-modexp-price](name-the-modexp-price.md)
 - [name-the-bn128-cut](name-the-bn128-cut.md)
 - [name-the-selfbalance](name-the-selfbalance.md)
+- [name-the-blake2f](name-the-blake2f.md)

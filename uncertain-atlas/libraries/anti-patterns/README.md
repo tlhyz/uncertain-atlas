@@ -232,3 +232,4 @@
 - [modexp-price-sold-as-bound](modexp-price-sold-as-bound.md)
 - [bn128-cut-sold-as-verify](bn128-cut-sold-as-verify.md)
 - [selfbalance-sold-as-balance](selfbalance-sold-as-balance.md)
+- [blake2f-sold-as-hash](blake2f-sold-as-hash.md)
