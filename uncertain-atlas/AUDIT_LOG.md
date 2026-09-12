@@ -3976,6 +3976,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1937 | 高 | 看见 OfferSnapshot Result ABORT 是中止装回、不再试别份 / 看见回了 ABORT 会被写成已经换一份，或当成已经装完 | 官方：ABORT is Abort snapshot restoration, and don't try any other snapshots |
 | A1938 | 中 | 怎样写 OfferSnapshot 结果枚举 / 怎样挑 REJECT_FORMAT / 怎样挑 REJECT_SENDER 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1939 | 记录 | 会与 398 / 378 / 321 糊成「看见回了 OfferSnapshot 结果枚举就已经是拒掉这份」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot 结果枚举 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拒掉这份 / 拒人 / 换一份 标成另一对象 |
+| A1940 | 高 | 看见 Offer 收下之后才去拉块并装 / 看见收下了 会被写成已经装完，或当成已经齐 | 工作实例：abci++_methods OfferSnapshot Usage 官方写 Upon accepting, CometBFT will retrieve and apply snapshot chunks via ApplySnapshotChunk |
+| A1941 | 高 | 看见在装这块的回包里拒掉这份、还要再收 Offer / 看见在装这块时拒了 会被写成已经中止，或当成已经是拒掉这份 | 官方：The application may also choose to reject a snapshot in the chunk response, in which case it should be prepared to accept further OfferSnapshot calls |
+| A1942 | 高 | 看见 ApplySnapshotChunk Result ACCEPT 是这块收下了 / 看见回了 ACCEPT 会被写成已经齐，或当成已经是装这块的结果 | 官方：ACCEPT is The chunk was accepted |
+| A1943 | 中 | 怎样写 Offer 收下之后 / 怎样在装这块时拒 / 怎样挑 ACCEPT 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1944 | 记录 | 会与 321 / 400 / 397 糊成「看见收下了就已经装完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Offer 收下之后 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。装完 / 中止 / 齐 标成另一对象 |
 
 
 

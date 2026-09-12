@@ -402,6 +402,7 @@
 | 393 | ApplySnapshotChunk 结果枚举被写成已经再拉 | 协议 + 文案 | 看见 ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders / ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块 / ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份 / ApplySnapshotChunk 结果枚举当成已经再拉或已经换一份或已经是装这块的结果 | 不变量 398；语料 C402 |
 | 394 | Commit 空请求被写成已经落盘 | 协议 + 文案 | 看见 Commit 不带参数 / Echo 回包 Message 是入参那串 / Echo 用来测实现 / Commit 空请求当成已经落盘或已经是入参字段或已经刷完 | 不变量 399；语料 C403 |
 | 395 | OfferSnapshot 结果枚举被写成已经是拒掉这份 | 协议 + 文案 | 看见 OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 / OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 / OfferSnapshot Result ABORT 是中止装回、不再试别份 / OfferSnapshot 结果枚举当成已经是拒掉这份或已经拒了人或已经换一份 | 不变量 400；语料 C404 |
+| 396 | Offer 收下之后被写成已经装完 | 协议 + 文案 | 看见 Offer 收下之后才去拉块并装 / 在装这块的回包里拒掉这份、还要再收 Offer / ApplySnapshotChunk Result ACCEPT 是这块收下了 / Offer 收下之后当成已经装完或已经中止或已经齐 | 不变量 401；语料 C405 |
 
 ## 不自动覆盖
 

@@ -298,3 +298,4 @@
 - [name-the-apply-retry](name-the-apply-retry.md)
 - [name-the-commit-noparam](name-the-commit-noparam.md)
 - [name-the-offer-fmt](name-the-offer-fmt.md)
+- [name-the-offer-accept](name-the-offer-accept.md)
