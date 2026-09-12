@@ -109,6 +109,7 @@ CVE / 官方安全披露 / 规范补丁 / 核心开发公告 > 审计 > 事后�
 - Elderflower：授权代发漏掉 ValidateBasic 不是内层已认证。  
 - Jackfruit：ValidateBasic 读本地钟不是已经确定。  
 - Barberry：空地址不是还没有账户类型；锁钱不是停链。  
+- Solana 2022-06-01：失败的 durable nonce 不是已经不能再播；当普通交易处理再重提不是已消费；一边收一边拒不是 Tower / PoH 已经一致。  
 - 停链面：[`../../tracks/failure-museum/worked-example-halt-surfaces.md`](../../tracks/failure-museum/worked-example-halt-surfaces.md)——「停链」不是一种事故。  
 - CVE-2024-52922：宣布新块后单一对等节点卡住传播。  
 - CVE-2024-35202：部分块重建失败后第二次 `blocktxn` 断言崩。  

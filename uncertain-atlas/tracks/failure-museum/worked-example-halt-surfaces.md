@@ -1,7 +1,7 @@
 # 实例：「停链」不是一种事故
 
 目的 A + B。不是新馆藏，不新增未核验事故。  
-先修：L0.8、L9.9、不变量 71 / 73 / 74 / 75 / 77 / 82。
+先修：L0.8、L9.9、不变量 71 / 73 / 74 / 75 / 77 / 82 / 85。
 
 产品句里的「我们会停链」如果只写三个字，下一辆车学不到。  
 馆藏里至少有七种停，外加两种「看起来像停、其实不是」。必须点名是哪一种。
@@ -17,6 +17,7 @@
 | 溢出本该拒，却停了 | 入金溢出变成高度停 | 能向奖励池存款的验证者 | [ISA-2025-005](isa-2025-005.md) | 74 |
 | Begin/EndBlock 碰到空户口 | `GetModuleAccount` 叫到未初始化被挡账户 | 能挂归属 / authz / feegrant 的人 | [ASA-2024-003](asa-2024-003.md) | 75 |
 | 诚实节点两个世界 | 反序列化或入口校验不确定，对不上就停 | 能开 IBC 通道的人；或能发 Grant 的人 | [ISA-2025-001](isa-2025-001.md)、[Jackfruit](jackfruit.md) | 77、82 |
+| 失败 durable nonce 当普通交易再重提 | 一边拒块、一边收块；超过 33% 接受、不够 66% 对齐 | 能发 durable nonce 的用户（本页不写怎样） | [2022-06-01](solana-2022-06-01-durable-nonce.md) | 85 |
 | 治理参数吃不了 | 启用高度提案让进程 panic | 能推治理参数的人 | [ASA-2024-001](asa-2024-001.md) | 58 |
 | 解码 / 类型 panic | 深嵌套栈溢出，或 Dec 进 Int | 能送嵌套消息的人；或金额路径 | [ASA-2024-0012](asa-2024-0012.md)、[ASA-2024-010](asa-2024-010.md) | 70、76 |
 | 先流言后处理 | 非法结构传出去，网络停 | 能发畸形 P2P 对象的人 | [ASA-2025-003](asa-2025-003.md) | 60 |
@@ -59,6 +60,6 @@
 
 ## 回归测试形状
 
-文案把「停链」写成一种事故必须红。把停链交易写成已停必须红。把 EndBlocker 出错写成可跳过必须红。把 +⅓ 打补丁写成不会停必须红。把 Barberry 锁钱写成高度停必须红。
+文案把「停链」写成一种事故必须红。把停链交易写成已停必须红。把 EndBlocker 出错写成可跳过必须红。把 +⅓ 打补丁写成不会停必须红。把 Barberry 锁钱写成高度停必须红。把失败 durable nonce 写成已消费 / Tower 已一致必须红。
 
-对照：不变量 84；语料 C88；反模式 [halt-sold-as-one-kind](../../libraries/anti-patterns/halt-sold-as-one-kind.md)。
+对照：不变量 84、85；语料 C88、C89；反模式 [halt-sold-as-one-kind](../../libraries/anti-patterns/halt-sold-as-one-kind.md)、[durable-nonce-sold-as-consumed](../../libraries/anti-patterns/durable-nonce-sold-as-consumed.md)。

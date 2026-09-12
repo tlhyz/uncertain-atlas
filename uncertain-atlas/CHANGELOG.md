@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 86）
+
+- 博物馆 Solana 2022-06-01 官方停机：失败的 durable nonce 可被处理两次。运行时把它当普通 recent-blockhash 交易，nonce 未推进；用户重提后一边收一边拒。超过 33% 接受，不够 66% 对齐。
+- 约 16:30 UTC 停出块，重启后 durable nonce 暂时关闭，约 21:00 UTC 恢复。与 1.10 / 1.11 无关。v1.9.28 / v1.10.23 关闭该功能。无 CVE。
+- 不变量 85；语料 C89；反模式 durable-nonce-sold-as-consumed；L10.3 第 81 条。停链面地图加一行。
+- 知识树补 M6.1–M6.5 覆盖指针。L6.1 / L6.4 / Solana 档案第 15 节互指本页。
+- 对照不变量 3 / 4 / 69 / 77 / 82。不写怎样走双路径。不抄 33/66。第一版可以不提供不过期 nonce。
+
 ## 2026-09-12（续 85）
 
 - 停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`。不新增事故，只把已归档的停拆开。

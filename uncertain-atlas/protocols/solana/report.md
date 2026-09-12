@@ -156,8 +156,7 @@ Ed25519 用户/验证者签名（常见）、PoH 哈希链、投票签名。
 
 ## 15. 历史事故
 
-主网有过多次停机或严重降级。  
-**本版不写七问。** 补档必须官方 status / postmortem。方向：客户端 bug、运行时、共识卡死、流量过载——待出处。
+主网有过多次停机或严重降级。已归档官方七问：[`../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)（失败的 durable nonce ≠ 已不能再播）。其它停机仍须官方 status / postmortem，不编根因。
 
 ---
 

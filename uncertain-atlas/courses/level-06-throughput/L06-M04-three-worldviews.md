@@ -109,4 +109,4 @@ Solana、Sui、Aptos。Avalanche 对照的是共识抽样，不是这三种执�
 | 经济 | 并行 ≠ 更安全；不确定列空 |
 
 **禁止假学习：** 「新一代都并行所以更安全。」「STM 所以不需要共识。」「Sui 所有交易都绕过共识。」  
-**边界：** 不写官网 TPS；停机根因等原文。Monad 只读 [`../../protocols/monad/README.md`](../../protocols/monad/README.md)，不写 19 节。
+**边界：** 不写官网 TPS。Solana 停机根因见博物馆 2022-06-01；其它停机仍等原文。Monad 只读 [`../../protocols/monad/README.md`](../../protocols/monad/README.md)，不写 19 节。

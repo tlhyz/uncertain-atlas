@@ -65,7 +65,7 @@ T3 也写 X。与 T1 必须串行。
 ## F. 真实项目
 
 Solana / Agave。档案第 14 节有五笔账表。  
-停机与降级：有公开记录，七问等官方 postmortem，本课不编根因。
+停机根因（官方原文）：[`../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)——失败的 durable nonce 不是已经不能再播；一边收一边拒不是 Tower / PoH 已经一致。本课不写其它未核验停机。
 
 ---
 
@@ -110,4 +110,4 @@ Solana / Agave。档案第 14 节有五笔账表。
 | 经济 | 本地费市场与停机成本。不写官网 TPS |
 
 **禁止假学习：** 「因为硬件好所以并行。」「PoH 单独就是 BFT。」
-**边界：** 五笔账见档案第 14 节。停机根因等原文。
+**边界：** 五笔账见档案第 14 节。停机根因见博物馆 2022-06-01；其它停机仍等原文。
