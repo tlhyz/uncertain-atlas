@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 308）
+
+- CometBFT ABCI 传输工作实例（官方 Client and Server，实现 / ABCI 传输，不另写 19 节）：看见同进程不是已经有套接字隔离。看见 gRPC 最容易不是已经高性能。看见一条连接不是已经够用，也不是已经是四门。ABCI 传输不是不变量 33，也不是不变量 5，也不是不变量 52。出处 github.com/cometbft/cometbft spec/abci/abci++_client_server.md。
+- 不变量 307；语料 C311；模式 name-the-abci-conn；反模式 conn-sold-as-gates；L10.3 第 303 条。填 L4.4 / CometBFT 档案 ABCI 传输 / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄 protobuf 字段表、varint、套接字长度前缀做法。不写怎样实现 ABCI 服务器、怎样配 gRPC、怎样用 ABCI-CLI、怎样写四门。不编博物馆页。不另写 19 节。不与 33 / 5 / 52 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。四门方法 / 半写原子 / post-commit 槽位标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 307）
 
 - CometBFT 对等句柄工作实例（官方 API for Reactors，网络 / 对等句柄，不另写 19 节）：看见 Peer 句柄不是已经是那个人。看见 Broadcast 回了通道不是已经送到每一家。看见 StopPeerForError 不是已经对持久邻居也断干净。对等句柄不是不变量 305，也不是不变量 36，也不是不变量 67。出处 github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md。

@@ -321,6 +321,7 @@
 | C308 | 304 票上 Timestamp≠已经验过 | 文案把票或提案带了 Timestamp / 字段在写成已经验过这个时间或已经强制单调；或把冲突提案 / 双签证据机制写成已经有提案证据或以后也许有就已经有；或把非法票被断开 / 没过基本校验写成已经罚了签的人或已经上链或已经是双签；或把签字校验写成不变量 40 / 21 / 19 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/consensus/signing.md |
 | C309 | 305 InitPeer≠已经能交互 | 文案把 InitPeer / 对等节点对象已经交给反应堆写成已经能跟它对说或已经能发或已经 AddPeer；或把已经在 Receive / 消息已经进来写成已经过了 AddPeer 或已经可以按已加入去发；或把节点已经在跑 / 反应堆已经登记过名字写成已经能再登记一个或已经能热加；或把反应堆时序写成不变量 67 / 36 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/p2p/reactor-api/reactor.md |
 | C310 | 306 Peer句柄≠已经是那个人 | 文案把 Peer 句柄 / 又一次 InitPeer 写成已经是同一个人或已经是上一次那份；或把 Broadcast 回了通道 / 通道里有 bool 写成已经送到每一家或已经知道是谁；或把 StopPeerForError / 反应堆要踢人写成已经对持久邻居也断干净或已经不会再来；或把对等句柄写成不变量 305 / 36 / 67 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md |
+| C311 | 307 一条连接≠已经是四门 | 文案把同进程 / 编进同一个二进制写成已经有套接字隔离或已经换了信任对象；或把语言里有 gRPC / 最容易的做法写成已经是高性能路径或已经没有开销；或把一条 ABCI 连接 / 已经能回话写成已经够用或已经是四门；或把 ABCI 传输写成不变量 33 / 5 / 52 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_client_server.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

@@ -225,7 +225,7 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 invariant：不在同一高度对两个冲突值做出违反锁的承诺。
 
 **`CheckTx` vs `PrepareProposal` vs `ProcessProposal` vs `FinalizeBlock`**  
-invariant：Check 通过不是已进提案；Prepare 可改列表；Process REJECT 是 prevote nil 不是免费过滤；Finalize + Commit 才进提交状态（不变量 33）。
+invariant：Check 通过不是已进提案；Prepare 可改列表；Process REJECT 是 prevote nil 不是免费过滤；Finalize + Commit 才进提交状态（不变量 33）。同进程不是已经有套接字隔离；一条连接不是已经是四门：见 [`../../tracks/implementation/worked-example-abci-conn-vs-gates.md`](../../tracks/implementation/worked-example-abci-conn-vs-gates.md)（不变量 307）。
 
 **`ExtendVote` / `VerifyVoteExtension`**  
 invariant：扩展是另一份签；Verify REJECT 丢整张 precommit，不是块非法；`s_h` 不读本高度扩展（不变量 34）。

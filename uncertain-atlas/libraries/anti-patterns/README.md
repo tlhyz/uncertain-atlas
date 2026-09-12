@@ -309,3 +309,4 @@
 - [timestamp-sold-as-checked](timestamp-sold-as-checked.md)
 - [initpeer-sold-as-added](initpeer-sold-as-added.md)
 - [handler-sold-as-node](handler-sold-as-node.md)
+- [conn-sold-as-gates](conn-sold-as-gates.md)

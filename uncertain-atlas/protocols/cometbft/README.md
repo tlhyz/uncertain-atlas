@@ -25,6 +25,8 @@ InitPeer 不是已经能跟它对说：[`../../tracks/network/worked-example-ini
 
 Peer 句柄不是已经是那个人：[`../../tracks/network/worked-example-peer-handler-vs-node.md`](../../tracks/network/worked-example-peer-handler-vs-node.md)（不变量 306）。看见 Broadcast 回了通道不是已经送到每一家。看见 StopPeerForError 不是已经对持久邻居也断干净。
 
+同进程不是已经有套接字隔离：[`../../tracks/implementation/worked-example-abci-conn-vs-gates.md`](../../tracks/implementation/worked-example-abci-conn-vs-gates.md)（不变量 307）。看见 gRPC 最容易不是已经高性能。看见一条连接不是已经够用，也不是已经是四门。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
