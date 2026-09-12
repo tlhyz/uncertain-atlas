@@ -47,7 +47,7 @@ Bitcoin 的问题陈述（事实，白皮书 2008）：点对点电子现金，�
 
 ## 4. 一笔交易完整生命周期
 
-1. 钱包选币（哪些 UTXO）、构造输出（收款+找零）、算费、签名。看见部分签名包不是已经是网上能广播的完整交易；里面有几张签不是这一输入已经凑齐：[`../../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）。  
+1. 钱包选币（哪些 UTXO）、构造输出（收款+找零）、算费、签名。看见部分签名包不是已经是网上能广播的完整交易；里面有几张签不是这一输入已经凑齐：[`../../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）。看见扩展公钥不是已经能花；能推子钥不是已经是地址：[`../../tracks/implementation/worked-example-xpub-vs-spendable.md`](../../tracks/implementation/worked-example-xpub-vs-spendable.md)（不变量 182）。  
 2. 广播到若干对等节点。  
 3. 节点按本地策略决定是否进 mempool（脚本、费、标准性）。标准性 ≠ 共识合法性。策略不作用于块内交易：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。选择加入替换信号不是已经换掉；nSequence 示意不是已经是相对锁；钱包看见未确认不是已经当付款：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。  
 4. 矿工从 mempool 选交易，算 Merkle 根，找 nonce 使头哈希低于目标。头上的 Merkle 用各笔 txid；新规则另要 coinbase 承诺 wtxid 根：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。  

@@ -127,7 +127,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M1.4 编码与规范化 · 重要
 - canonical encoding
 - 非规范编码如何变成共识分裂
-- 覆盖：课文 L1.4；实现编码精读 `tracks/implementation/`。类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封：[`../tracks/implementation/worked-example-typed-vs-legacy.md`](../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。ECDSA 验得过 ≠ 已经是严格 DER：[`../tracks/implementation/worked-example-valid-vs-der.md`](../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）。看见 Bech32 地址串 ≠ 链上已经有这笔输出：[`../tracks/implementation/worked-example-address-vs-utxo.md`](../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。看见部分签名包 ≠ 已经是网上能广播的完整交易：[`../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）。后继校验过了 ≠ 已经是旧校验那套地址：[`../tracks/implementation/worked-example-bech32m-vs-bech32.md`](../tracks/implementation/worked-example-bech32m-vs-bech32.md)（不变量 181）
+- 覆盖：课文 L1.4；实现编码精读 `tracks/implementation/`。类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封：[`../tracks/implementation/worked-example-typed-vs-legacy.md`](../tracks/implementation/worked-example-typed-vs-legacy.md)（不变量 167）。ECDSA 验得过 ≠ 已经是严格 DER：[`../tracks/implementation/worked-example-valid-vs-der.md`](../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）。看见 Bech32 地址串 ≠ 链上已经有这笔输出：[`../tracks/implementation/worked-example-address-vs-utxo.md`](../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。看见部分签名包 ≠ 已经是网上能广播的完整交易：[`../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）。后继校验过了 ≠ 已经是旧校验那套地址：[`../tracks/implementation/worked-example-bech32m-vs-bech32.md`](../tracks/implementation/worked-example-bech32m-vs-bech32.md)（不变量 181）。看见扩展公钥 ≠ 已经能花：[`../tracks/implementation/worked-example-xpub-vs-spendable.md`](../tracks/implementation/worked-example-xpub-vs-spendable.md)（不变量 182）
 
 ### M1.5 随机数与确定性 · 重要
 - 签名随机数泄漏
@@ -212,7 +212,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.6 工程哲学与测试 · 重要
 - fuzzing、软分叉、Bitcoin Core 的保守主义
 - 源码入口课
-- 覆盖：课文 L3.6。迁移失败 ≠ 目录里其它钱包已经安全：[`../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md`](../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md)（不变量 120）。看见部分签名包 ≠ 已经是网上能广播的完整交易：[`../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）
+- 覆盖：课文 L3.6。迁移失败 ≠ 目录里其它钱包已经安全：[`../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md`](../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md)（不变量 120）。看见部分签名包 ≠ 已经是网上能广播的完整交易：[`../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）。看见扩展公钥 ≠ 已经能花：[`../tracks/implementation/worked-example-xpub-vs-spendable.md`](../tracks/implementation/worked-example-xpub-vs-spendable.md)（不变量 182）
 
 ### M3.7 事故与「看起来没崩」的原因 · 重要
 - 通胀漏洞、分叉事件
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–181）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–182）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C185；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C186；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

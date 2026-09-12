@@ -184,3 +184,4 @@
 - [psbt-sold-as-broadcast](psbt-sold-as-broadcast.md)
 - [empty-sold-as-gone](empty-sold-as-gone.md)
 - [bech32m-sold-as-bech32](bech32m-sold-as-bech32.md)
+- [xpub-sold-as-spendable](xpub-sold-as-spendable.md)

@@ -33,6 +33,8 @@
 
 精读：[`../../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）。看见部分签名包不是已经是网上能广播的完整交易。里面有几张签不是这一输入已经凑齐。抽出完整交易不是已经广播。BIP-174 不是 BIP-173，也不是 BIP-125。
 
+精读：[`../../tracks/implementation/worked-example-xpub-vs-spendable.md`](../../tracks/implementation/worked-example-xpub-vs-spendable.md)（不变量 182）。看见扩展公钥不是已经能花。去势后的扩展公钥不是已经是普通公钥。硬化子密钥不是已经能从公钥推出。链节点标识对得上不是已经该当成收款地址。BIP-32 不是 BIP-173，也不是 BIP-174，也不是 BIP-350。
+
 一句话（禁止营销）：
 
 > 用 UTXO + 工作量证明最重链，在无许可网络上对花费授权做概率最终的全网排序。

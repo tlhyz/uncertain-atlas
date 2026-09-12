@@ -79,3 +79,4 @@
 - [name-the-psbt-role](name-the-psbt-role.md)
 - [name-the-empty-account](name-the-empty-account.md)
 - [name-the-checksum-version](name-the-checksum-version.md)
+- [name-the-extended-key](name-the-extended-key.md)
