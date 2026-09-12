@@ -318,3 +318,4 @@
 - [name-the-ext-resp](name-the-ext-resp.md)
 - [name-the-proc-req](name-the-proc-req.md)
 - [name-the-proc-req-rest](name-the-proc-req-rest.md)
+- [name-the-ext-vi-table](name-the-ext-vi-table.md)

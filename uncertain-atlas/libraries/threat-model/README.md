@@ -422,6 +422,7 @@
 | 413 | 扩展回包栏被写成已经会包进 CanonicalVoteExtension | 协议 + 文案 | 看见 ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 / ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 / VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 / 扩展回包栏当成已经会包进 CanonicalVoteExtension 或已经按原样签或已经是 vote_extension 表 | 不变量 418；语料 C422 |
 | 414 | Process 请求栏被写成已经执行那些交易 | 协议 + 文案 | 看见 ProcessProposalRequest.txs 是拟议块的交易列表 / ProcessProposalRequest.hash 是拟议块的哈希 / ProcessProposalRequest.height 是拟议块的高度 / Process 请求栏当成已经执行那些交易或已经跑过 Process 或已经对上了拟议块头 | 不变量 419；语料 C423 |
 | 415 | Process 请求余栏被写成已经交差 local_last_commit | 协议 + 文案 | 看见 ProcessProposalRequest.proposed_last_commit 是从拟议块里的信息拿到的上一份提交信息 / ProcessProposalRequest.time 是拟议块的时间戳 / ProcessProposalRequest.misbehavior 是过错验证者信息列表 / Process 请求余栏当成已经交差 local_last_commit或已经验过票上时间或已经定奖惩 | 不变量 420；语料 C424 |
+| 416 | ExtendedVoteInfo 表栏被写成已经从本进程抽出 | 协议 + 文案 | 看见 ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展 / ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展 / ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签 / ExtendedVoteInfo 表栏当成已经从本进程抽出或已经按原样签或已经把验过的签交给应用 | 不变量 421；语料 C425 |
 
 ## 不自动覆盖
 

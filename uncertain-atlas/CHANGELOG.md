@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 422）
+
+- CometBFT ExtendedVoteInfo 表栏工作实例（官方 ABCI++ Methods Data Types ExtendedVoteInfo，实现 / ExtendedVoteInfo 表栏，不另写 19 节）：看见 ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展不是已经从本进程抽出。看见 ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展不是已经按原样签。看见 ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签不是已经把验过的签交给应用。ExtendedVoteInfo 表栏不是不变量 369，也不是不变量 418，也不是不变量 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 421；语料 C425；模式 name-the-ext-vi-table；反模式 extvitable-sold-as-usage；L10.3 第 417 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo 表栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendedVoteInfo 表栏、怎样填 vote_extension、怎样填 extension_signature。不编博物馆页。不另写 19 节。不与 369 / 418 / 358 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经从本进程抽出、已经按原样签、已经把验过的签交给应用标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 421）
 
 - CometBFT Process 请求余栏工作实例（官方 ABCI++ Methods ProcessProposal Request，实现 / Process 请求余栏，不另写 19 节）：看见 ProcessProposalRequest.proposed_last_commit 是从拟议块里的信息拿到的上一份提交信息不是已经交差 local_last_commit。看见 ProcessProposalRequest.time 是拟议块的时间戳不是已经验过票上时间。看见 ProcessProposalRequest.misbehavior 是过错验证者信息列表不是已经定奖惩。Process 请求余栏不是不变量 411，也不是不变量 410，也不是不变量 413。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

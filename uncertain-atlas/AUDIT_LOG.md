@@ -4076,6 +4076,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2037 | 高 | 看见 ProcessProposalRequest.misbehavior 是过错验证者信息列表 / 看见填了 misbehavior 会被写成已经定奖惩，或当成已经是 ExtendVoteRequest.misbehavior | 官方表：misbehavior is List of information about validators that misbehaved |
 | A2038 | 中 | 怎样写 Process 请求余栏 / 怎样填 proposed_last_commit / 怎样填 time 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2039 | 记录 | 会与 411 / 410 / 413 糊成「看见填了 Process 请求余栏就已经交差 local_last_commit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 local_last_commit / 已经验过票上时间 / 已经定奖惩 标成另一对象 |
+| A2040 | 高 | 看见 ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展 / 看见填了 vote_extension 会被写成已经从本进程抽出，或当成已经是 ExtendVoteResponse.vote_extension | 官方表：vote_extension is Non-deterministic extension provided by the sending validator's Application |
+| A2041 | 高 | 看见 ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展 / 看见填了 non_rp_vote_extension 会被写成已经按原样签，或当成已经是 ExtendVoteResponse.non_rp_extension | 官方表：non_rp_vote_extension is Non replay-protected extension provided by the sending validator's Application |
+| A2042 | 高 | 看见 ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签 / 看见填了 extension_signature 会被写成已经把验过的签交给应用，或当成已经有重放保护 | 官方表：extension_signature is Signature of the vote extension produced by the sending validator and verified by CometBFT |
+| A2043 | 中 | 怎样写 ExtendedVoteInfo 表栏 / 怎样填 vote_extension / 怎样填 extension_signature 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2044 | 记录 | 会与 369 / 418 / 358 糊成「看见填了 ExtendedVoteInfo 表栏就已经从本进程抽出」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo 表栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经从本进程抽出 / 已经按原样签 / 已经把验过的签交给应用 标成另一对象 |
 
 
 
