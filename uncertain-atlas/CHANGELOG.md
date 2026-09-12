@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 128）
+
+- Ethereum 工作实例：出块 / head 不是已经 justified；justified 不是已经 finalized。JSON-RPC `latest` / `safe` / `finalized` 不是同一标签；官方没有把 `safe` 写成 justified。一张 attestation 同时带头票与 FFG source/target。出处 ethereum.org Gasper / PoS / Attestations / JSON-RPC。
+- 不变量 127；语料 C131；模式 name-the-confirmation-grade；反模式 justified-sold-as-finalized；L10.3 第 123 条。填 L5.2 / L4.6 / Ethereum 档案 §4 §6 / 最终性表 / 停链面地图。
+- 不抄槽秒数 / epoch 长度 / 押金 / 美元。不写怎样让 justified 回滚。不编博物馆页。不与 22 / 24 / 26 / 126 糊成一句。
+
 ## 2026-09-12（续 127）
 
 - Polkadot 工作实例：BABE 出块不是已经 GRANDPA 最终。最终对链、一次敲定祖先。最终头之后比主块，不比长度。BEEFY 绿不是已经解释了 GRANDPA。出处 Wiki Consensus / Cosmos 对照 / Glossary。

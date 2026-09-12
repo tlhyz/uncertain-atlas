@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–126。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–127。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -141,6 +141,7 @@
 | C128 | 124 NMT齐≠方阵可用 | 文案把 NMT 命名空间齐了写成扩展方阵已经可用；或把 DAS 抽样过关写成已经拿到自己的 blob；或把抽样绿写成编码已经诚实；或把新块 DA 写成历史已经有人存；或与 23 糊成「Celestia 有 DA」一句 | 必须红 | 协议+密码+文案 | docs.celestia.org data-availability / DA FAQ |
 | C129 | 125 backed≠已可用 | 文案把 backed 写成已经可用 / 已经有效 / 已经最终；或把中继头有回执写成 PoV 在链上；或把 included 写成已经批准；或把 collator RPC 写成共享安全；或与 9 / 99 / 114 / 124 糊成「可用」一句 | 必须红 | 协议+文案 | wiki.polkadot.network learn-parachains-protocol / learn-async-backing |
 | C130 | 126 出块≠已最终 | 文案把 BABE 出块写成已经 GRANDPA；或把最长链写成 hybrid 最终头之后的尺子；或把 BEEFY 绿写成已经解释了 GRANDPA；或把同路径每高 commit / Gasper 三词 / 平行链 backed 糊成「混合共识」一句 | 必须红 | 协议+文案 | wiki.polkadot.network learn-consensus / learn-comparisons-cosmos / glossary |
+| C131 | 127 头≠正当≠最终 | 文案把出块 / head / latest 写成已经 justified 或 finalized；或把 justified 写成已经不可逆；或把 RPC `safe` 写成官方已经等于 justified / finalized；或把一张 attestation 的头票写成已经投了最终；或与 22 / 24 / 26 / 126 糊成「PoS 最终」一句 | 必须红 | 协议+文案 | ethereum.org Gasper / PoS / attestations / JSON-RPC |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

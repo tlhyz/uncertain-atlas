@@ -54,7 +54,8 @@ CometBFT：一个高度一张 commit，语义硬。Bitcoin：确认数是概率�
 
 **事实：** 不是每个 slot 都像 Tendermint 那样「本高度已 commit」。头可以摆。  
 **事实：** 最终性仍依赖质押与惩罚的经济/协议假设；另有弱主观性：长期离线节点需一个近期可信状态才能安全跟上（PoS 长程议题，数学后置）。  
-**建议：** 结算产品若要对标「不确定」的最终语义，应钉 finalized（或自己的 BFT commit），不要钉 head。
+**建议：** 结算产品若要对标「不确定」的最终语义，应钉 finalized（或自己的 BFT commit），不要钉 head。  
+精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）。justified 不是已经不可逆。JSON-RPC `latest` / `safe` / `finalized` 不是同一标签；官方没有把 `safe` 写成 justified。
 
 ---
 
@@ -119,5 +120,5 @@ Ethereum 合并后主网。PBS 之后，提议者可能不自己选交易（5.4�
 | 部署 | 出块间隔是参数，不是永恒 |
 | 经济 | 罚没支撑最终性假设；不是「秒最终」口号 |
 
-**禁止假学习：** 「PoS 所以秒最终。」「出块了 = finalized。」「和 Tendermint 一样一槽一 commit。」  
-**边界：** 不写当前 slot 秒数当永恒；不证弱主观性数学、不填现行 WS 周期。精读：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。attestation 与 proposer 的 `DomainType` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不是 EIP-712。Altair 同步委员会轻客户端：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。可罚关系与谁执行 slash：[`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。不抄罚金数字。
+**禁止假学习：** 「PoS 所以秒最终。」「出块了 = finalized。」「justified 就是不可逆。」「`safe` 就是 finalized。」「和 Tendermint 一样一槽一 commit。」  
+**边界：** 不写当前 slot 秒数当永恒；不证弱主观性数学、不填现行 WS 周期。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）；[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。attestation 与 proposer 的 `DomainType` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不是 EIP-712。Altair 同步委员会轻客户端：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。可罚关系与谁执行 slash：[`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。不抄罚金数字。

@@ -131,3 +131,4 @@
 - [nmt-sold-as-square-available](nmt-sold-as-square-available.md)
 - [backed-sold-as-available](backed-sold-as-available.md)
 - [babe-sold-as-grandpa](babe-sold-as-grandpa.md)
+- [justified-sold-as-finalized](justified-sold-as-finalized.md)

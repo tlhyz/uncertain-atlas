@@ -43,8 +43,8 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 4. 某 proposer 签入执行块；列表可能由外部 builder 写（域外 Builder API：先签盲头再揭示）。见 [`../../tracks/mempool/worked-example-who-orders.md`](../../tracks/mempool/worked-example-who-orders.md)。不是协议内 PBS。  
 5. 执行：扣费、跑 EVM、写存储、出收据与日志。失败交易仍可能消耗 gas、推进 nonce（事实：视失败类型）。  
 6. 共识层把该执行结果纳入头。  
-7. 头可被 fork choice 摆动；justified / finalized 是更强的等级。  
-8. 钱包若只显示 head，语义偏乐观。
+7. 头可被 fork choice 摆动；justified / finalized 是更强的等级。justified 不是已经不可逆。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）。  
+8. 钱包若只显示 head，或 RPC 只用 `latest` / `safe`，语义偏乐观。官方没有把 `safe` 写成 justified。
 
 ---
 
@@ -57,6 +57,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 ## 6. 共识
 
 合并后：Gasper 家族（LMD-GHOST fork choice + Casper FFG 最终性）。  
+头、justified、finalized 是三等。升级只发生在 epoch 边界检查点。一张 attestation 同时带头票与 FFG source/target。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）。  
 验证者质押、attestation、slashing。可罚关系是 phase0 `is_slashable_attestation_data` 的 **double**（同 target epoch、不同 data）与 **surround**（`attestation_1` 包住 `attestation_2`，顺序不对称），加上同 slot 双头的 proposer slashing；信标状态执行 `slash_validator`，不是 ABCI 应用裁量。精读：[`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。不抄现行罚金与验证者人数。  
 最终性是协议对象，但仍有弱主观性、长程攻击等 PoS 议题。精读：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)（检查点新鲜度；分发节规范未写完）。
 

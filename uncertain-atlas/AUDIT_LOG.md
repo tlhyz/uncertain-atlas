@@ -1553,3 +1553,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A569 | 记录 | BEEFY / AncestryProof 会被展开成新事故 | 只写 BEEFY 是已最终块上的桥 gadget。不写论坛利用路径。不编博物馆页 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 · 出块不是已经 justified，更不是已经 finalized
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A570 | 高 | 钱包绿 / `latest` / 出块会被写成已经不可逆 | 工作实例：官方两步升级；头由 LMD-GHOST 选，可摆 |
+| A571 | 高 | justified 会被写成已经 finalized | 官方：justified 在某些条件下仍可回滚；finalized 要再过一档检查点 + supermajority link |
+| A572 | 中 | RPC `safe` 会被写成 justified 或 finalized | 官方块参数只写 safe head；没有把它写成 justified |
+| A573 | 中 | 槽秒数 / epoch / 押金 / 美元会被抄进不确定 | 不抄。只点名三分之二总质押与检查点，不填产品数字 |
+| A574 | 记录 | 会与 22 / 24 / 26 / 126 糊成「PoS 最终」 | 对照写清。不编博物馆页。不写怎样重组 justified |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

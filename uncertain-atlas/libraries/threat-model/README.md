@@ -128,6 +128,7 @@
 | 119 | NMT 齐了被写成整块已经可用 | 协议 + 密码 + 文案 | 命名空间完备性当成 DAS；抽样当成已有 blob / 编码已对 / 历史已存 | 不变量 124；语料 C128 |
 | 120 | backed 被写成已经可用或已经最终 | 协议 + 文案 | 回执 / collator RPC 当成可用、审批或 GRANDPA | 不变量 125；语料 C129 |
 | 121 | BABE 出块被写成已经 GRANDPA 最终 | 协议 + 文案 | 新头 / explorer 绿 / 混合共识当成不可逆；最长链当成 hybrid 尺子 | 不变量 126；语料 C130 |
+| 122 | justified 或 head 被写成已经 finalized | 协议 + 文案 | 出块 / latest / safe / justified 当成不可逆 | 不变量 127；语料 C131 |
 
 ## 不自动覆盖
 
