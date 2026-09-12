@@ -3881,6 +3881,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1842 | 高 | 看见 CheckTx 的 lane_id 必须在 Info 回包车道范围内 / 看见填了道 会被写成已经不设道，或当成已经排了优先 | 官方：The value of lane_id has to be in the range of lanes defined by the application in ResponseInfo |
 | A1843 | 中 | 怎样写 CheckTx 回包 / 怎样填码空间 / 怎样选道会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1844 | 记录 | 会与 373 / 316 / 367 糊成「看见 CheckTx 回了码空间就已经是回包码」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。回包码 / Finalize 回执 / 车道标成另一对象 |
+| A1845 | 高 | 看见 syncing_to_height 同步或重放时是目标高、否则等于本高 / 看见填了目标 会被写成已经有完整历史，或当成已经是快照重放 | 工作实例：abci++_methods FinalizeBlock 官方写 If the node is syncing/replaying blocks then syncing_to_height == target height. If not, syncing_to_height == height |
+| A1846 | 高 | 看见 validator_updates 空则引擎保持当前集合 / 看见空着 会被写成已经没有集合，或当成已经改了集合 | 官方：The values for validator_updates or consensus_param_updates may be empty. In this case, CometBFT will keep the current values |
+| A1847 | 高 | 看见 Finalize 回包 events 标成非确定 / 看见回了事件 会被写成已经必须确定，或当成已经交差 | 官方：FinalizeBlockResponse.events Deterministic = No |
+| A1848 | 中 | 怎样写 Finalize 请求 / 怎样空着更新 / 怎样编事件会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1849 | 记录 | 会与 323 / 318 / 342 糊成「看见填了同步高度就已经有完整历史」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 同步高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。完整历史 / 空名单 / 必须确定标成另一对象 |
 
 
 

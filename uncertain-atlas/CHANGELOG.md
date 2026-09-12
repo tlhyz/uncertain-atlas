@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 383）
+
+- CometBFT Finalize 同步高度工作实例（官方 ABCI++ Methods FinalizeBlock，实现 / Finalize 同步高度，不另写 19 节）：看见 syncing_to_height 同步或重放时是目标高、否则等于本高不是已经有完整历史。看见 validator_updates 空则引擎保持当前集合不是已经没有集合。看见 Finalize 回包 events 标成非确定不是已经必须确定。Finalize 同步高度不是不变量 323，也不是不变量 318，也不是不变量 342。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 382；语料 C386；模式 name-the-syncing-height；反模式 syncingheight-sold-as-history；L10.3 第 378 条。填 L4.4 / CometBFT 档案 Finalize 同步高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 请求、怎样空着更新、怎样编事件。不编博物馆页。不另写 19 节。不与 323 / 318 / 342 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。完整历史、空名单、必须确定标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 382）
 
 - CometBFT CheckTx 回包工作实例（官方 ABCI++ Methods CheckTx Response，实现 / CheckTx 回包，不另写 19 节）：看见 CheckTx 回包 codespace 是码的命名空间不是已经是回包码。看见 CheckTx 回包 events 是给索引用的类型键值不是已经交差。看见 CheckTx 的 lane_id 必须在 Info 回包车道范围内不是已经不设道。CheckTx 回包不是不变量 373，也不是不变量 316，也不是不变量 367。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

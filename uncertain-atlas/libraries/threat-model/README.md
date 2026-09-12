@@ -383,6 +383,7 @@
 | 374 | Info 请求版本被写成已经是 app_version | 协议 + 文案 | 看见 Info 请求 version 是 CometBFT 软件语义版本 / block_version / p2p_version 是引擎块版本和 P2P 版本 / abci_version 是 ABCI 语义版本、按 X.X.x 显示 / Info 请求版本当成已经是 app_version 或已经版本也对上或已经是握手对齐 | 不变量 379；语料 C383 |
 | 375 | Query 回包被写成已经是按键查 | 协议 + 文案 | 看见 Query 回包 index 是树里这个键的下标 / Query 回包 key 是对上的那份数据的键 / Query 回包 value 是对上的那份数据的值 / Query 回包当成已经是按键查或已经是 Query 高度或已经对上 AppHash | 不变量 380；语料 C384 |
 | 376 | CheckTx 回包被写成已经是回包码 | 协议 + 文案 | 看见 CheckTx 回包 codespace 是码的命名空间 / CheckTx 回包 events 是给索引用的类型键值 / CheckTx 的 lane_id 必须在 Info 回包车道范围内 / CheckTx 回包当成已经是回包码或已经交差或已经不设道 | 不变量 381；语料 C385 |
+| 377 | Finalize 同步高度被写成已经有完整历史 | 协议 + 文案 | 看见 syncing_to_height 同步或重放时是目标高、否则等于本高 / validator_updates 空则引擎保持当前集合 / Finalize 回包 events 标成非确定 / Finalize 同步高度当成已经有完整历史或已经没有集合或已经必须确定 | 不变量 382；语料 C386 |
 
 ## 不自动覆盖
 

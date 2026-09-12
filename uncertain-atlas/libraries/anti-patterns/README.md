@@ -384,3 +384,4 @@
 - [infover-sold-as-appversion](infover-sold-as-appversion.md)
 - [queryindex-sold-as-store](queryindex-sold-as-store.md)
 - [checktxspace-sold-as-code](checktxspace-sold-as-code.md)
+- [syncingheight-sold-as-history](syncingheight-sold-as-history.md)

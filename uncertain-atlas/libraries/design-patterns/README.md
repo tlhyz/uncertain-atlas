@@ -279,3 +279,4 @@
 - [name-the-info-version](name-the-info-version.md)
 - [name-the-query-index](name-the-query-index.md)
 - [name-the-checktx-space](name-the-checktx-space.md)
+- [name-the-syncing-height](name-the-syncing-height.md)
