@@ -3996,6 +3996,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1957 | 高 | 看见 tx_results[i].Code == 0 只表示第 i 笔完全合法 / 看见回了 0 会被写成已经没进块，或当成已经印进本头 | 官方：tx_results[i].Code == 0 only if the i-th transaction is fully valid |
 | A1958 | 中 | 怎样写 Finalize 回包余量 / 怎样挑空根 / 怎样回证明 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1959 | 记录 | 会与 147 / 325 / 316 糊成「看见回了 Finalize 回包余量就已经印进本头」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。印进本头 / 对上 AppHash / 没进块 标成另一对象 |
+| A1960 | 高 | 看见 CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池 / 看见先跑了 会被写成已经是技术上可选，或当成已经是四门已经结算 | 工作实例：abci++_methods CheckTx Usage 官方写 Guardian of the mempool: every node runs CheckTx before letting a transaction into its local mempool |
+| A1961 | 高 | 看见这笔可以来自外部用户、也可以来自另一节点 / 看见送来了 会被写成已经保证不重放，或当成已经从池里删掉 | 官方：The transaction may come from an external user or another node |
+| A1962 | 高 | 看见默克尔证明带自描述 type、好支持多种默克尔树和编码 / 看见写了 type 会被写成已经是 ProofOp 类型，或当成已经对上 AppHash | 官方：Merkle proof includes self-describing type field to support many types of Merkle trees and encoding formats |
+| A1963 | 中 | 怎样写 CheckTx 守卫余量 / 怎样挑邻居 / 怎样编 type 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1964 | 记录 | 会与 373 / 313 / 325 糊成「看见回了 CheckTx 守卫余量就已经是技术上可选」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 守卫余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。技术上可选 / 去重 / 按键查 标成另一对象 |
 
 
 

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 406）
+
+- CometBFT CheckTx 守卫余量工作实例（官方 ABCI++ Methods CheckTx Usage / Query Usage，实现 / CheckTx 守卫余量，不另写 19 节）：看见 CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池不是已经是技术上可选。看见这笔可以来自外部用户、也可以来自另一节点不是已经保证不重放。看见默克尔证明带自描述 type、好支持多种默克尔树和编码不是已经是 ProofOp 类型。CheckTx 守卫余量不是不变量 373，也不是不变量 313，也不是不变量 325。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 405；语料 C409；模式 name-the-checktx-guard；反模式 checktxguard-sold-as-optional；L10.3 第 401 条。填 L4.4 / CometBFT 档案 CheckTx 守卫余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 CheckTx 守卫余量、怎样挑邻居、怎样编 type。不编博物馆页。不另写 19 节。不与 373 / 313 / 325 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。技术上可选、去重、按键查标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 405）
 
 - CometBFT Finalize 回包余量工作实例（官方 ABCI++ Methods FinalizeBlock Usage，实现 / Finalize 回包余量，不另写 19 节）：看见 Finalize 回包 app_hash 可以空或硬编码、但必须确定不是已经印进本头。看见以后 Query 可以拿这份根当锚回证明不是已经对上 AppHash。看见 tx_results[i].Code == 0 只表示第 i 笔完全合法不是已经没进块。Finalize 回包余量不是不变量 147，也不是不变量 325，也不是不变量 316。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

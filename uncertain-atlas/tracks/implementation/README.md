@@ -107,6 +107,7 @@
 - [`worked-example-offerunk-vs-crash.md`](worked-example-offerunk-vs-crash.md) — OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 ≠ 已经崩；OfferSnapshot Result ACCEPT 是收下这份、开始装块 ≠ 已经装完；OfferSnapshot Result REJECT 是拒掉这份、换一份 ≠ 已经是拒掉这种 format（不变量 402）
 - [`worked-example-finalizeafter-vs-commit.md`](worked-example-finalizeafter-vs-commit.md) — Finalize 之后引擎才落盘各笔输出 / AppHash / ResultsHash ≠ 已经交差；落完再锁内存池、新交易不进 CheckTx ≠ 已经是 Commit 锁；可选再验池里剩下的、再解锁、再开下一高 round 0 ≠ 已经是 Recheck（不变量 403）
 - [`worked-example-finapphash-vs-header.md`](worked-example-finapphash-vs-header.md) — Finalize 回包 app_hash 可以空或硬编码、但必须确定 ≠ 已经印进本头；以后 Query 可以拿这份根当锚回证明 ≠ 已经对上 AppHash；tx_results[i].Code == 0 只表示第 i 笔完全合法 ≠ 已经没进块（不变量 404）
+- [`worked-example-checktxguard-vs-optional.md`](worked-example-checktxguard-vs-optional.md) — CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池 ≠ 已经是技术上可选；这笔可以来自外部用户、也可以来自另一节点 ≠ 已经保证不重放；默克尔证明带自描述 type、好支持多种默克尔树和编码 ≠ 已经是 ProofOp 类型（不变量 405）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

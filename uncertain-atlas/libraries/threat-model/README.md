@@ -406,6 +406,7 @@
 | 397 | OfferSnapshot 结果枚举余量被写成已经崩 | 协议 + 文案 | 看见 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 / OfferSnapshot Result ACCEPT 是收下这份、开始装块 / OfferSnapshot Result REJECT 是拒掉这份、换一份 / OfferSnapshot 结果枚举余量当成已经崩或已经装完或已经是拒掉这种 format | 不变量 402；语料 C406 |
 | 398 | Finalize 之后被写成已经交差 | 协议 + 文案 | 看见 Finalize 之后引擎才落盘各笔输出 / AppHash / ResultsHash / 落完再锁内存池、新交易不进 CheckTx / 可选再验池里剩下的、再解锁、再开下一高 round 0 / Finalize 之后当成已经交差或已经是 Commit 锁或已经是 Recheck | 不变量 403；语料 C407 |
 | 399 | Finalize 回包余量被写成已经印进本头 | 协议 + 文案 | 看见 Finalize 回包 app_hash 可以空或硬编码、但必须确定 / 以后 Query 可以拿这份根当锚回证明 / tx_results[i].Code == 0 只表示第 i 笔完全合法 / Finalize 回包余量当成已经印进本头或已经对上 AppHash 或已经没进块 | 不变量 404；语料 C408 |
+| 400 | CheckTx 守卫余量被写成已经是技术上可选 | 协议 + 文案 | 看见 CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池 / 这笔可以来自外部用户、也可以来自另一节点 / 默克尔证明带自描述 type、好支持多种默克尔树和编码 / CheckTx 守卫余量当成已经是技术上可选或已经保证不重放或已经是 ProofOp 类型 | 不变量 405；语料 C409 |
 
 ## 不自动覆盖
 

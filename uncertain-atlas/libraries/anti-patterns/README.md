@@ -407,3 +407,4 @@
 - [offerunk-sold-as-crash](offerunk-sold-as-crash.md)
 - [finalizeafter-sold-as-commit](finalizeafter-sold-as-commit.md)
 - [finapphash-sold-as-header](finapphash-sold-as-header.md)
+- [checktxguard-sold-as-optional](checktxguard-sold-as-optional.md)
