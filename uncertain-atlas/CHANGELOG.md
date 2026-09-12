@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 158）
+
+- EIP-4399 工作实例（官方 PREVRANDAO EIP，不另写 19 节）：合并后的 difficulty 不是工作量。PREVRANDAO 不是本块刚掷的骰子。信标 RANDAO 不是应用级无偏随机。出处 eips.ethereum.org EIP-4399。
+- 不变量 157；语料 C161；模式 name-the-randao；反模式 prevrandao-sold-as-fair；L10.3 第 153 条。填 L1.6 / L5.2 / Ethereum 档案 / 密码学表 / 停链面地图。
+- 不抄过渡阈值 / 字段下标 / 前瞻 epoch。不写怎样扣块或审查掷骰。不编博物馆页。不另写 19 节。不与 156 / 149 / 3 / 93 / 134 糊成一句。RANDAO 揭示公式、应用 commit-reveal、BLOCKHASH 当随机源、EIP-2935 标成另一对象。
+
 ## 2026-09-12（续 157）
 
 - EIP-4788 工作实例（官方信标根进 EVM EIP，不另写 19 节）：头里的父信标根不是当前信标头。合约里读到的根不是已经 finalized。环缓冲过期不是根已经永久可查。出处 eips.ethereum.org EIP-4788。

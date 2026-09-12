@@ -54,3 +54,4 @@
 - [name-the-system-op](name-the-system-op.md)
 - [name-the-token-hop](name-the-token-hop.md)
 - [name-the-parent-root](name-the-parent-root.md)
+- [name-the-randao](name-the-randao.md)

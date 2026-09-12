@@ -17,6 +17,6 @@
 | 1.3 | [L01-M03-merkle.md](L01-M03-merkle.md) | M1.3 | 为什么轻节点能少下数据 |
 | 1.4 | [L01-M04-canonical-encoding.md](L01-M04-canonical-encoding.md) | M1.4 | 同一对象两种写法如何分裂共识 |
 | 1.5 | [L01-M05-pq-preview.md](L01-M05-pq-preview.md) | M1.6 | 后量子先改哪些工程账 |
-| 1.6 | [L01-M06-randomness-and-determinism.md](L01-M06-randomness-and-determinism.md) | M1.5 | 三种 nonce 与 `Apply` 禁骰 |
+| 1.6 | [L01-M06-randomness-and-determinism.md](L01-M06-randomness-and-determinism.md) | M1.5 | 三种 nonce 与 `Apply` 禁骰；PREVRANDAO ≠ 工作量 / 无偏骰子（不变量 157） |
 
 试题后置，见 `exams/`。

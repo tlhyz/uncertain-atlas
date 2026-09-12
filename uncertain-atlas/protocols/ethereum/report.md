@@ -71,7 +71,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 EVM 字节码、gas、退款、预编译。  
 确定性要求：禁止用节点本地时间/随机数当共识输入。  
 gas 是资源计量，防无限循环变成网络武器。它不是「手续费市场的全部」。  
-信标提款是系统操作，不是用户交易，没有 gas：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。执行头里的父信标根不是当前信标头，也不是已经 finalized：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。
+信标提款是系统操作，不是用户交易，没有 gas：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。执行头里的父信标根不是当前信标头，也不是已经 finalized：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。合并后旧 `DIFFICULTY` 指令返回上一块 RANDAO mix，不是工作量，也不是应用级无偏随机：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。
 
 ---
 

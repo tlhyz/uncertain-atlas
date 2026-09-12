@@ -105,7 +105,7 @@ BFT 的 `timeoutPropose` / `timeoutPrevote` 一类**本地**等待决定：**还
 - **Bitcoin / Ethereum（事实）：** 外部账户路径长期是 secp256k1 ECDSA；实现必须处理 `k`。Bitcoin 后来大量路径转向 BIP-340 Schnorr；Ethereum EOA 默认仍是 ECDSA。  
 - **RFC 6979（事实）：** 用确定性 `k` 降低「主机 RNG」事故面。  
 - **CometBFT（事实）：** 超时是状态机参数，和 prevote/precommit 锁分开；崩溃恢复靠 WAL，不是靠再睡一次。见 L4.2–L4.4。  
-- **Ethereum 执行（事实）：** 共识输入不得含节点本地时间与本地随机；需要随机性时走信标等**已被承诺**的值。失败交易的 nonce/费语义必须两客户端一致（L5.1、L5.3）。  
+- **Ethereum 执行（事实）：** 共识输入不得含节点本地时间与本地随机；需要随机性时走信标等**已被承诺**的值。失败交易的 nonce/费语义必须两客户端一致（L5.1、L5.3）。合并后旧 `DIFFICULTY` 指令返回的是上一块 RANDAO mix，不是工作量，也不是应用级无偏随机：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。  
 - **「不确定」（建议）：** 第一天就把三个词写进词典，禁止混用；`Apply` 的确定性用差分测试看守；签名路径禁止自写 RNG。
 
 ---
@@ -169,6 +169,6 @@ BFT 的 `timeoutPropose` / `timeoutPrevote` 一类**本地**等待决定：**还
 | 部署 | 坏主机 RNG、NTP、容器时间冻结 |
 | 经济 | 解钥之后的盗币；裂根之后的「跟错根放货」 |
 
-**禁止假学习：** 「有 nonce 所以安全。」「超时就是 sleep。」「确定性签名所以没有侧信道。」「链上随机 = 节点 `rand()`。」  
-**边界：** 不讲 VRF 数学（见模式 vrf-sortition）；不选信标方案；不填未测超时毫秒；账户空洞细节在 L2.2。ValidateBasic 读本地钟 ≠ 已确定：博物馆 [Jackfruit](../../tracks/failure-museum/jackfruit.md)。授权代发漏检查是另一句：[Elderflower](../../tracks/failure-museum/elderflower.md)。  
+**禁止假学习：** 「有 nonce 所以安全。」「超时就是 sleep。」「确定性签名所以没有侧信道。」「链上随机 = 节点 `rand()`。」「DIFFICULTY 还是工作量。」「PREVRANDAO = 公平骰子。」  
+**边界：** 不讲 VRF 数学（见模式 vrf-sortition）；不选信标方案；不填未测超时毫秒；账户空洞细节在 L2.2。ValidateBasic 读本地钟 ≠ 已确定：博物馆 [Jackfruit](../../tracks/failure-museum/jackfruit.md)。授权代发漏检查是另一句：[Elderflower](../../tracks/failure-museum/elderflower.md)。合并后的 DIFFICULTY ≠ 工作量：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。不抄阈值或前瞻。不写怎样扣块。  
 **事实 / 推断 / 建议** 已分标。ECDSA 具体历史事故的七问，只收有 CVE / 官方披露的条目，不在本课点名未核新闻。
