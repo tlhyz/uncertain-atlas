@@ -3896,6 +3896,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1857 | 高 | 看见 Query 回包 info 是附加信息 / 看见回了信息 会被写成已经是按键查，或当成已经对上 AppHash | 官方：info is Additional information |
 | A1858 | 中 | 怎样写 Query 回包码 / 怎样填日志 / 怎样填附加信息会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1859 | 记录 | 会与 373 / 329 / 380 糊成「看见 Query 回了码就已经过了共识」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包码 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。回包码 / 本地查询 / 回包键值标成另一对象 |
+| A1860 | 高 | 看见 ConsensusParams.block 限制块大小和块间隔 / 看见填了 block 会被写成已经是 MaxBytes 上限，或当成已经是 next_block_delay | 工作实例：abci++_methods ConsensusParams 官方写 block is Parameters limiting the size of a block and time between consecutive blocks |
+| A1861 | 高 | 看见 ConsensusParams.validator 限制验证者公钥类型 / 看见填了 validator 会被写成已经带了公钥，或当成已经选型 | 官方：validator is Parameters limiting the types of public keys validators can use |
+| A1862 | 高 | 看见 ConsensusParams.version 是 ABCI 应用版本 / 看见填了 version 会被写成已经是 app_version 进了头，或当成已经印进本头 AppHash | 官方：version is The ABCI application version |
+| A1863 | 中 | 怎样写 ConsensusParams / 怎样选 MaxBytes / 怎样限钥型会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1864 | 记录 | 会与 337 / 364 / 370 糊成「看见填了 ConsensusParams 就已经是 MaxBytes 上限」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams 字段 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。MaxBytes 上限 / 公钥 / app_version 进头标成另一对象 |
 
 
 

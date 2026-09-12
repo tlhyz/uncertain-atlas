@@ -282,3 +282,4 @@
 - [name-the-syncing-height](name-the-syncing-height.md)
 - [name-the-query-prove](name-the-query-prove.md)
 - [name-the-query-code](name-the-query-code.md)
+- [name-the-params-block](name-the-params-block.md)

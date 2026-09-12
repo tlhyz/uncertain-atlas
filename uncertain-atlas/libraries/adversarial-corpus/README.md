@@ -399,6 +399,7 @@
 | C386 | 382 syncing_to_height同步或重放时是目标高否则等于本高≠已经有完整历史 | 文案把 syncing_to_height 同步或重放时是目标高、否则等于本高 / 填了目标写成已经有完整历史或已经是快照重放；或把 validator_updates 空则引擎保持当前集合 / 空着写成已经没有集合或已经改了集合；或把 Finalize 回包 events 标成非确定 / 回了事件写成已经必须确定或已经交差；或把 Finalize 同步高度写成不变量 323 / 318 / 342 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C387 | 383 Query请求prove是能回就回默克尔证明≠已经对上AppHash | 文案把 Query 请求 prove 是能回就回默克尔证明 / 勾了 prove 写成已经对上 AppHash 或已经是一层树；或把 Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 / 回了证明写成已经是按键查或已经对上 AppHash；或把 Query 回包 height 是数据来自哪一高 / 回了高度写成已经是请求高度或已经新鲜；或把 Query 证明回包写成不变量 325 / 380 / 371 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C388 | 384 Query回包code是回包码≠已经过了共识 | 文案把 Query 回包 code 是回包码 / 回了码写成已经过了共识或已经没进块；或把 Query 回包 log 是应用日志输出 / 回了日志写成已经新鲜或已经复制到各节点；或把 Query 回包 info 是附加信息 / 回了信息写成已经是按键查或已经对上 AppHash；或把 Query 回包码写成不变量 373 / 329 / 380 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C389 | 385 ConsensusParams.block限制块大小和块间隔≠已经是MaxBytes上限 | 文案把 ConsensusParams.block 限制块大小和块间隔 / 填了 block 写成已经是 MaxBytes 上限或已经是 next_block_delay；或把 ConsensusParams.validator 限制验证者公钥类型 / 填了 validator 写成已经带了公钥或已经选型；或把 ConsensusParams.version 是 ABCI 应用版本 / 填了 version 写成已经是 app_version 进了头或已经印进本头 AppHash；或把 ConsensusParams 字段写成不变量 337 / 364 / 370 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

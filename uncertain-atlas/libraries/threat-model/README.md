@@ -386,6 +386,7 @@
 | 377 | Finalize 同步高度被写成已经有完整历史 | 协议 + 文案 | 看见 syncing_to_height 同步或重放时是目标高、否则等于本高 / validator_updates 空则引擎保持当前集合 / Finalize 回包 events 标成非确定 / Finalize 同步高度当成已经有完整历史或已经没有集合或已经必须确定 | 不变量 382；语料 C386 |
 | 378 | Query 证明回包被写成已经对上 AppHash | 协议 + 文案 | 看见 Query 请求 prove 是能回就回默克尔证明 / Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 / Query 回包 height 是数据来自哪一高 / Query 证明回包当成已经对上 AppHash或已经是按键查或已经是请求高度 | 不变量 383；语料 C387 |
 | 379 | Query 回包码被写成已经过了共识 | 协议 + 文案 | 看见 Query 回包 code 是回包码 / Query 回包 log 是应用日志输出 / Query 回包 info 是附加信息 / Query 回包码当成已经过了共识或已经新鲜或已经是按键查 | 不变量 384；语料 C388 |
+| 380 | ConsensusParams 字段被写成已经是 MaxBytes 上限 | 协议 + 文案 | 看见 ConsensusParams.block 限制块大小和块间隔 / ConsensusParams.validator 限制验证者公钥类型 / ConsensusParams.version 是 ABCI 应用版本 / ConsensusParams 字段当成已经是 MaxBytes 上限或已经带了公钥或已经是 app_version 进了头 | 不变量 385；语料 C389 |
 
 ## 不自动覆盖
 

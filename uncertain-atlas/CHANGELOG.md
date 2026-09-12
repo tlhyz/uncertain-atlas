@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 386）
+
+- CometBFT ConsensusParams 字段工作实例（官方 ABCI++ Methods ConsensusParams，实现 / ConsensusParams 字段，不另写 19 节）：看见 ConsensusParams.block 限制块大小和块间隔不是已经是 MaxBytes 上限。看见 ConsensusParams.validator 限制验证者公钥类型不是已经带了公钥。看见 ConsensusParams.version 是 ABCI 应用版本不是已经是 app_version 进了头。ConsensusParams 字段不是不变量 337，也不是不变量 364，也不是不变量 370。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 385；语料 C389；模式 name-the-params-block；反模式 paramsblock-sold-as-maxbytes；L10.3 第 381 条。填 L4.4 / CometBFT 档案 ConsensusParams 字段 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ConsensusParams、怎样选 MaxBytes、怎样限钥型。不编博物馆页。不另写 19 节。不与 337 / 364 / 370 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。MaxBytes 上限、公钥、app_version 进头标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 385）
 
 - CometBFT Query 回包码工作实例（官方 ABCI++ Methods Query Response，实现 / Query 回包码，不另写 19 节）：看见 Query 回包 code 是回包码不是已经过了共识。看见 Query 回包 log 是应用日志输出不是已经新鲜。看见 Query 回包 info 是附加信息不是已经是按键查。Query 回包码不是不变量 373，也不是不变量 329，也不是不变量 380。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
