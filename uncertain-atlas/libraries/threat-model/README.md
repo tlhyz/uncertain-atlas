@@ -403,6 +403,7 @@
 | 394 | Commit 空请求被写成已经落盘 | 协议 + 文案 | 看见 Commit 不带参数 / Echo 回包 Message 是入参那串 / Echo 用来测实现 / Commit 空请求当成已经落盘或已经是入参字段或已经刷完 | 不变量 399；语料 C403 |
 | 395 | OfferSnapshot 结果枚举被写成已经是拒掉这份 | 协议 + 文案 | 看见 OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 / OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 / OfferSnapshot Result ABORT 是中止装回、不再试别份 / OfferSnapshot 结果枚举当成已经是拒掉这份或已经拒了人或已经换一份 | 不变量 400；语料 C404 |
 | 396 | Offer 收下之后被写成已经装完 | 协议 + 文案 | 看见 Offer 收下之后才去拉块并装 / 在装这块的回包里拒掉这份、还要再收 Offer / ApplySnapshotChunk Result ACCEPT 是这块收下了 / Offer 收下之后当成已经装完或已经中止或已经齐 | 不变量 401；语料 C405 |
+| 397 | OfferSnapshot 结果枚举余量被写成已经崩 | 协议 + 文案 | 看见 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 / OfferSnapshot Result ACCEPT 是收下这份、开始装块 / OfferSnapshot Result REJECT 是拒掉这份、换一份 / OfferSnapshot 结果枚举余量当成已经崩或已经装完或已经是拒掉这种 format | 不变量 402；语料 C406 |
 
 ## 不自动覆盖
 

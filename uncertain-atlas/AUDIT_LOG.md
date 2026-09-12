@@ -3981,6 +3981,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1942 | 高 | 看见 ApplySnapshotChunk Result ACCEPT 是这块收下了 / 看见回了 ACCEPT 会被写成已经齐，或当成已经是装这块的结果 | 官方：ACCEPT is The chunk was accepted |
 | A1943 | 中 | 怎样写 Offer 收下之后 / 怎样在装这块时拒 / 怎样挑 ACCEPT 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1944 | 记录 | 会与 321 / 400 / 397 糊成「看见收下了就已经装完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Offer 收下之后 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。装完 / 中止 / 齐 标成另一对象 |
+| A1945 | 高 | 看见 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 / 看见回了 UNKNOWN 会被写成已经崩，或当成已经是中止装回、不再试别份 | 工作实例：abci++_methods OfferSnapshot Result 官方写 UNKNOWN is Unknown result, abort all snapshot restoration |
+| A1946 | 高 | 看见 OfferSnapshot Result ACCEPT 是收下这份、开始装块 / 看见回了 ACCEPT 会被写成已经装完，或当成已经齐 | 官方：ACCEPT is Snapshot is accepted, start applying chunks |
+| A1947 | 高 | 看见 OfferSnapshot Result REJECT 是拒掉这份、换一份 / 看见回了 REJECT 会被写成已经是拒掉这种 format，或当成已经是拒掉这份 | 官方：REJECT is Reject this specific snapshot, try others |
+| A1948 | 中 | 怎样写 OfferSnapshot 结果枚举余量 / 怎样挑 UNKNOWN / 怎样挑 ACCEPT 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1949 | 记录 | 会与 376 / 401 / 400 糊成「看见回了 OfferSnapshot 结果枚举余量就已经崩」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot 结果枚举余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。崩 / 装完 / 拒掉这种 format 标成另一对象 |
 
 
 

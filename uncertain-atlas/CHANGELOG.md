@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 403）
+
+- CometBFT OfferSnapshot 结果枚举余量工作实例（官方 ABCI++ Methods OfferSnapshot Result，实现 / OfferSnapshot 结果枚举余量，不另写 19 节）：看见 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回不是已经崩。看见 OfferSnapshot Result ACCEPT 是收下这份、开始装块不是已经装完。看见 OfferSnapshot Result REJECT 是拒掉这份、换一份不是已经是拒掉这种 format。OfferSnapshot 结果枚举余量不是不变量 376，也不是不变量 401，也不是不变量 400。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 402；语料 C406；模式 name-the-offer-unk；反模式 offerunk-sold-as-crash；L10.3 第 398 条。填 L4.4 / CometBFT 档案 OfferSnapshot 结果枚举余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 OfferSnapshot 结果枚举余量、怎样挑 UNKNOWN、怎样挑 ACCEPT。不编博物馆页。不另写 19 节。不与 376 / 401 / 400 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。崩、装完、拒掉这种 format 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 402）
 
 - CometBFT Offer 收下之后工作实例（官方 ABCI++ Methods OfferSnapshot Usage / ApplySnapshotChunk Result，实现 / Offer 收下之后，不另写 19 节）：看见 Offer 收下之后才去拉块并装不是已经装完。看见在装这块的回包里拒掉这份、还要再收 Offer 不是已经中止。看见 ApplySnapshotChunk Result ACCEPT 是这块收下了不是已经齐。Offer 收下之后不是不变量 321，也不是不变量 400，也不是不变量 397。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -404,3 +404,4 @@
 - [commitnoparam-sold-as-persist](commitnoparam-sold-as-persist.md)
 - [offerfmt-sold-as-rejectsnap](offerfmt-sold-as-rejectsnap.md)
 - [offeraccept-sold-as-restored](offeraccept-sold-as-restored.md)
+- [offerunk-sold-as-crash](offerunk-sold-as-crash.md)

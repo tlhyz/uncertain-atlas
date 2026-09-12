@@ -416,6 +416,7 @@
 | C403 | 399 Commit不带参数≠已经落盘 | 文案把 Commit 不带参数 / 能叫 写成已经落盘或已经交差；或把 Echo 回包 Message 是入参那串 / 回了 Message 写成已经是入参字段或已经回显；或把 Echo 用来测实现 / 能测 写成已经刷完或已经送到；或把 Commit 空请求写成不变量 335 / 394 / 374 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C404 | 400 OfferSnapshot Result REJECT_FORMAT是拒掉这种format、换一份≠已经是拒掉这份 | 文案把 OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 / 回了 REJECT_FORMAT 写成已经是拒掉这份或已经齐；或把 OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 / 回了 REJECT_SENDER 写成已经拒了人或已经能接着装；或把 OfferSnapshot Result ABORT 是中止装回、不再试别份 / 回了 ABORT 写成已经换一份或已经装完；或把 OfferSnapshot 结果枚举写成不变量 398 / 378 / 321 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C405 | 401 Offer收下之后才去拉块并装≠已经装完 | 文案把 Offer 收下之后才去拉块并装 / 收下了 写成已经装完或已经齐；或把在装这块的回包里拒掉这份、还要再收 Offer / 在装这块时拒了 写成已经中止或已经是拒掉这份；或把 ApplySnapshotChunk Result ACCEPT 是这块收下了 / 回了 ACCEPT 写成已经齐或已经是装这块的结果；或把 Offer 收下之后写成不变量 321 / 400 / 397 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C406 | 402 OfferSnapshot Result UNKNOWN是结果不明、中止全部装回≠已经崩 | 文案把 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 / 回了 UNKNOWN 写成已经崩或已经是中止装回、不再试别份；或把 OfferSnapshot Result ACCEPT 是收下这份、开始装块 / 回了 ACCEPT 写成已经装完或已经齐；或把 OfferSnapshot Result REJECT 是拒掉这份、换一份 / 回了 REJECT 写成已经是拒掉这种 format 或已经是拒掉这份；或把 OfferSnapshot 结果枚举余量写成不变量 376 / 401 / 400 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。
