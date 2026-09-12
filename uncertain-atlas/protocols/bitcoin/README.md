@@ -29,6 +29,8 @@
 
 精读：[`../../tracks/implementation/worked-example-address-vs-utxo.md`](../../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。看见 Bech32 地址串不是链上已经有这笔输出。校验过不是见证程序已经在链上。编出版本和程序不是已经付过款。BIP-173 不是 BIP-350，也不是 BIP-141，也不是 BIP-13。
 
+精读：[`../../tracks/implementation/worked-example-bech32m-vs-bech32.md`](../../tracks/implementation/worked-example-bech32m-vs-bech32.md)（不变量 181）。后继校验过了不是已经是旧校验那套地址。版本 0 过了后继校验不是已经合法。更高版本过了旧校验不是已经合法。看见后继地址串不是已经有 UTXO。BIP-350 不是 BIP-173，也不是 BIP-141。
+
 精读：[`../../tracks/implementation/worked-example-psbt-vs-broadcast.md`](../../tracks/implementation/worked-example-psbt-vs-broadcast.md)（不变量 179）。看见部分签名包不是已经是网上能广播的完整交易。里面有几张签不是这一输入已经凑齐。抽出完整交易不是已经广播。BIP-174 不是 BIP-173，也不是 BIP-125。
 
 一句话（禁止营销）：

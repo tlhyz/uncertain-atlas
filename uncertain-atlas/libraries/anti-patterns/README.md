@@ -183,3 +183,4 @@
 - [static-sold-as-view](static-sold-as-view.md)
 - [psbt-sold-as-broadcast](psbt-sold-as-broadcast.md)
 - [empty-sold-as-gone](empty-sold-as-gone.md)
+- [bech32m-sold-as-bech32](bech32m-sold-as-bech32.md)
