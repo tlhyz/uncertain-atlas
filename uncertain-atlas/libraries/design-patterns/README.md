@@ -166,3 +166,4 @@
 - [name-the-purpose](name-the-purpose.md)
 - [name-the-account](name-the-account.md)
 - [name-the-nested-account](name-the-nested-account.md)
+- [name-the-script-type](name-the-script-type.md)
