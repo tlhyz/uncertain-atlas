@@ -102,7 +102,7 @@
 4. **回滚 ≠ 烧光**（不变量 177）：带回剩余气的回滚。本页失败返回空，气和成功一样。
 5. **JSON chainId ≠ 已经编进哈希**（不变量 161）：k1 用户交易的链绑定。本页不改默认签。
 
-不要抄预编译地址 / 气价 / 域模数 / 曲线系数 / 生成元 / 阶 / 输入宽度 / 成功字面量。不要写怎样造可延展签、跳过无穷远检查，或用全零点当公钥。不编博物馆页。不另写 19 节。不转测试向量。EIP-2537 曲线算术、`ECRECOVER` 恢复、RIP-7212 原文、不变量 116 那次洞、BIP-66 DER 是另一对象。算术精读：[`worked-example-bls-precompile-vs-verify.md`](worked-example-bls-precompile-vs-verify.md)（不变量 199）。
+不要抄预编译地址 / 气价 / 域模数 / 曲线系数 / 生成元 / 阶 / 输入宽度 / 成功字面量。不要写怎样造可延展签、跳过无穷远检查，或用全零点当公钥。不编博物馆页。不另写 19 节。不转测试向量。EIP-2537 曲线算术、`ECRECOVER` 恢复、RIP-7212 原文、不变量 116 那次洞、BIP-66 DER 是另一对象。模幂输入帽（超帽烧光剩余气）不是已经是本页（206）。算术精读：[`worked-example-bls-precompile-vs-verify.md`](worked-example-bls-precompile-vs-verify.md)（不变量 199）。
 
 ---
 
