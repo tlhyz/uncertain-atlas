@@ -245,3 +245,4 @@
 - [name-the-prepare-return](name-the-prepare-return.md)
 - [name-the-abci20-upgrade](name-the-abci20-upgrade.md)
 - [name-the-req3-coherence](name-the-req3-coherence.md)
+- [name-the-req6-coherence](name-the-req6-coherence.md)

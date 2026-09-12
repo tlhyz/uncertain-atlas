@@ -350,3 +350,4 @@
 - [preparereturn-sold-as-trimmed](preparereturn-sold-as-trimmed.md)
 - [abci20upgrade-sold-as-height](abci20upgrade-sold-as-height.md)
 - [req3coherence-sold-as-accept](req3coherence-sold-as-accept.md)
+- [req6coherence-sold-as-accept](req6coherence-sold-as-accept.md)

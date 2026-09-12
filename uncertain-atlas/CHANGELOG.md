@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 349）
+
+- CometBFT Extend–Verify 一致性工作实例（官方 Requirements for the Application Formal Requirement 6 [`ExtendVote`, `VerifyVoteExtension`, coherence]，实现 / Extend–Verify 一致性，不另写 19 节）：看见正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept。看见 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题。看见会面对和 Req 5 同一类活性问题不是已经丢了安全性。Extend–Verify 一致性不是不变量 34，也不是不变量 341，也不是不变量 347。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 348；语料 C352；模式 name-the-req6-coherence；反模式 req6coherence-sold-as-accept；L10.3 第 344 条。填 L4.4 / CometBFT 档案 Extend–Verify 一致性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Extend / Verify、怎样测、怎样写空扩展。不编博物馆页。不另写 19 节。不与 34 / 341 / 347 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。拒收整张预提交、Verify 确定性、提案一致性标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 348）
 
 - CometBFT Prepare–Process 一致性工作实例（官方 Requirements for the Application Formal Requirement 3 [`PrepareProposal`, `ProcessProposal`, coherence]，实现 / Prepare–Process 一致性，不另写 19 节）：看见正确提议者的准备提案必须被正确接收者 Accept 不是已经是任意块都会 Accept。看见 Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭不是已经只是活性问题。看见 Req 3 是大量测试和自动验证的目标不是已经测过。Prepare–Process 一致性不是不变量 33，也不是不变量 340，也不是不变量 338。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

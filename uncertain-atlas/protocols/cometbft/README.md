@@ -107,6 +107,8 @@ MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交�
 
 正确提议者的准备提案必须被正确接收者 Accept 不是已经是任意块都会 Accept：[`../../tracks/implementation/worked-example-req3-coherence-vs-accept.md`](../../tracks/implementation/worked-example-req3-coherence-vs-accept.md)（不变量 347）。看见 Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭不是已经只是活性问题。看见 Req 3 是大量测试和自动验证的目标不是已经测过。
 
+正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept：[`../../tracks/implementation/worked-example-req6-coherence-vs-accept.md`](../../tracks/implementation/worked-example-req6-coherence-vs-accept.md)（不变量 348）。看见 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题。看见会面对和 Req 5 同一类活性问题不是已经丢了安全性。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
