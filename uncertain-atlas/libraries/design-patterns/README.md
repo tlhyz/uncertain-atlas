@@ -86,3 +86,4 @@
 - [name-the-psbt-version](name-the-psbt-version.md)
 - [name-the-coinbase-heat](name-the-coinbase-heat.md)
 - [name-the-reserved-prefix](name-the-reserved-prefix.md)
+- [name-the-tapscript-leaf](name-the-tapscript-leaf.md)

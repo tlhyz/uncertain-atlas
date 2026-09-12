@@ -86,7 +86,7 @@ UTXO 集。见课程 L2.1。
 
 不是虚拟机里的 gas 循环。执行 = 脚本解释 + UTXO 规则。
 
-脚本故意非图灵完备（无一般循环），降低「无限跑」的共识风险。Taproot / Tapscript 增加了表达，仍不是 EVM。钥匙路径不是已经揭开有没有脚本树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。
+脚本故意非图灵完备（无一般循环），降低「无限跑」的共识风险。Taproot / Tapscript 增加了表达，仍不是 EVM。钥匙路径不是已经揭开有没有脚本树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。走脚本路径不是已经是 tapscript 语义：[`../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md)（不变量 189）。
 
 失败的脚本使该交易无效，不能进合法块（共识）。mempool 还会用更严的 standardness 拒绝「共识合法但不受欢迎」的交易。
 
@@ -120,7 +120,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | SHA-256 / HASH256 | 块头、txid、Merkle。txid ≠ wtxid：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152） |
 | RIPEMD-160 | 地址派生（P2PKH 等） |
 | ECDSA secp256k1 | 旧式花费。数学验过不是已经是严格 DER：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172） |
-| Schnorr (BIP-340) | Taproot。tagged hash 公式见 `tracks/crypto/worked-example-tagged-hash.md`；标签不是 FIPS `ctx`。钥匙路径 ≠ 揭树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153） |
+| Schnorr (BIP-340) | Taproot。tagged hash 公式见 `tracks/crypto/worked-example-tagged-hash.md`；标签不是 FIPS `ctx`。钥匙路径 ≠ 揭树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。走脚本路径 ≠ 已经是 tapscript 语义：[`../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md)（不变量 189） |
 | Merkle 树 | 交易承诺、SPV |
 
 没有 BLS，没有默认 zk。

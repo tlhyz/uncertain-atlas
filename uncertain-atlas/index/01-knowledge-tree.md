@@ -202,7 +202,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.4 Script / SegWit / Taproot / Schnorr · 进阶
 - 保守升级如何避免把旧节点踢出共识
-- 覆盖：课文 L3.3 方向 + L3.7 见证结构。txid ≠ wtxid：[`../tracks/implementation/worked-example-txid-vs-wtxid.md`](../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本：[`../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。付给脚本哈希 ≠ 已经揭开赎回脚本：[`../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。看见 Bech32 地址串 ≠ 链上已经有这笔输出：[`../tracks/implementation/worked-example-address-vs-utxo.md`](../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。后继校验过了 ≠ 已经是旧校验那套地址：[`../tracks/implementation/worked-example-bech32m-vs-bech32.md`](../tracks/implementation/worked-example-bech32m-vs-bech32.md)（不变量 181）。版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活：[`../tracks/implementation/worked-example-versionbit-vs-active.md`](../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。Tapscript 操作码仍后置
+- 覆盖：课文 L3.3 方向 + L3.7 见证结构。txid ≠ wtxid：[`../tracks/implementation/worked-example-txid-vs-wtxid.md`](../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本：[`../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。付给脚本哈希 ≠ 已经揭开赎回脚本：[`../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。看见 Bech32 地址串 ≠ 链上已经有这笔输出：[`../tracks/implementation/worked-example-address-vs-utxo.md`](../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。后继校验过了 ≠ 已经是旧校验那套地址：[`../tracks/implementation/worked-example-bech32m-vs-bech32.md`](../tracks/implementation/worked-example-bech32m-vs-bech32.md)（不变量 181）。版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活：[`../tracks/implementation/worked-example-versionbit-vs-active.md`](../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。走脚本路径 ≠ 已经是本页这种脚本语义；遇见成功操作码 ≠ 已经执行完：[`../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../tracks/implementation/worked-example-tapscript-vs-scriptpath.md)（不变量 189）。Miniscript 仍后置。
 
 ### M3.5 全节点、剪枝、SPV · 必学
 - 验证 vs 查看
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–188）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–189）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C192；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C193；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

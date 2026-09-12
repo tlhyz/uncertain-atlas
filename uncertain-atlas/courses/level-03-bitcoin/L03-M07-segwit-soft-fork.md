@@ -65,7 +65,7 @@ SegWit 后：改 witness 不改 txid，子支付仍指同一对象（在新规�
 ## F. 真实项目
 
 Bitcoin SegWit 激活史（版本位/矿工信号，细节后置）。  
-Taproot 是后续软分叉，本课不展开。  
+Taproot 是后续软分叉，本课不展开脚本语言。走脚本路径不是已经是 tapscript 语义：[`../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md)（不变量 189）。  
 对照：Ethereum 硬分叉改操作码更常把旧客户端直接踢走。
 
 ---
@@ -113,5 +113,5 @@ Taproot 是后续软分叉，本课不展开。
 | 部署 | 谁升级谁做完整验证 |
 | 经济 | 矿工/节点激励是否执行新规则 |
 
-**禁止假学习：** 「SegWit 是硬分叉扩容。」「旧节点和以前一样安全。」「见证折扣 = 官方 TPS。」「交易哈希 = 已经含签名。」「块头 Merkle 绿 = 见证已进头。」「txid = wtxid。」「付给哈希 = 赎回已经揭开。」「旧节点 EQUAL 通过 = 新节点已经再跑。」「16 = Taproot。」「看见地址 = 已经有 UTXO。」「校验过 = 程序已经上链。」「173 = 141。」「173 = 350。」「后继校验过了 = 已经是 173。」「更高版本过了旧校验 = 已经合法。」「350 = 141。」  
-**边界：** 不讲 Tapscript 操作码、不讲闪电路由、不背激活日期表。不抄承诺魔数 / 重量公式 / 版本 0 程序长度。`txid` ≠ `wtxid` 见 **C156** / 不变量 **152**。政策门 ≠ 共识门见 **C148**。钥匙路径 ≠ 揭树见 **C157** / 不变量 **153**：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)。付给脚本哈希 ≠ 已经揭开赎回脚本见 **C174** / 不变量 **170**：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)。看见 Bech32 地址串 ≠ 链上已经有这笔输出见 **C178** / 不变量 **174**：[`../../tracks/implementation/worked-example-address-vs-utxo.md`](../../tracks/implementation/worked-example-address-vs-utxo.md)。后继校验过了 ≠ 已经是旧校验那套地址见 **C185** / 不变量 **181**：[`../../tracks/implementation/worked-example-bech32m-vs-bech32.md`](../../tracks/implementation/worked-example-bech32m-vs-bech32.md)。Taproot 路径用 BIP-340；tagged hash 公式在 [`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)，本课不展开曲线。不抄激活票数。不抄字符表 / 例地址。不写怎样构造旧合法新非法的赎回。不写怎样增删字符撞合法地址。
+**禁止假学习：** 「SegWit 是硬分叉扩容。」「旧节点和以前一样安全。」「见证折扣 = 官方 TPS。」「交易哈希 = 已经含签名。」「块头 Merkle 绿 = 见证已进头。」「txid = wtxid。」「付给哈希 = 赎回已经揭开。」「旧节点 EQUAL 通过 = 新节点已经再跑。」「16 = Taproot。」「看见地址 = 已经有 UTXO。」「校验过 = 程序已经上链。」「173 = 141。」「173 = 350。」「后继校验过了 = 已经是 173。」「更高版本过了旧校验 = 已经合法。」「350 = 141。」「走了脚本路径 = 已经是 342。」「成功操作码 = 已经执行完。」「342 = 341。」  
+**边界：** 不抄 Tapscript 操作码号、不讲闪电路由、不背激活日期表。走脚本路径 ≠ 已经是 tapscript 语义见 **C193** / 不变量 **189**：[`../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md)。不抄承诺魔数 / 重量公式 / 版本 0 程序长度。`txid` ≠ `wtxid` 见 **C156** / 不变量 **152**。政策门 ≠ 共识门见 **C148**。钥匙路径 ≠ 揭树见 **C157** / 不变量 **153**：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)。付给脚本哈希 ≠ 已经揭开赎回脚本见 **C174** / 不变量 **170**：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)。看见 Bech32 地址串 ≠ 链上已经有这笔输出见 **C178** / 不变量 **174**：[`../../tracks/implementation/worked-example-address-vs-utxo.md`](../../tracks/implementation/worked-example-address-vs-utxo.md)。后继校验过了 ≠ 已经是旧校验那套地址见 **C185** / 不变量 **181**：[`../../tracks/implementation/worked-example-bech32m-vs-bech32.md`](../../tracks/implementation/worked-example-bech32m-vs-bech32.md)。Taproot 路径用 BIP-340；tagged hash 公式在 [`../../tracks/crypto/worked-example-tagged-hash.md`](../../tracks/crypto/worked-example-tagged-hash.md)，本课不展开曲线。不抄激活票数。不抄字符表 / 例地址。不写怎样构造旧合法新非法的赎回。不写怎样增删字符撞合法地址。

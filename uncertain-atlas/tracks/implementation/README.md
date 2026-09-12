@@ -13,6 +13,7 @@
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
 - [`worked-example-txid-vs-wtxid.md`](worked-example-txid-vs-wtxid.md) — txid ≠ wtxid；改见证 ≠ 已经改交易身份；头上的 txid Merkle ≠ 已经承诺 wtxid（不变量 152）
 - [`worked-example-keypath-vs-scriptpath.md`](worked-example-keypath-vs-scriptpath.md) — 钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本（不变量 153）
+- [`worked-example-tapscript-vs-scriptpath.md`](worked-example-tapscript-vs-scriptpath.md) — 走脚本路径 ≠ 已经是 tapscript 语义；遇见成功操作码 ≠ 已经执行完；342 ≠ 341 ≠ 141 ≠ 16（不变量 189）
 - [`worked-example-typed-vs-legacy.md`](worked-example-typed-vs-legacy.md) — 类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封；2718 ≠ 1559 ≠ 155（不变量 167）
 - [`worked-example-listed-vs-accessed.md`](worked-example-listed-vs-accessed.md) — 列出地址或槽 ≠ 已经访问过；列表外 ≠ 已经不能碰；2930 ≠ 2718 ≠ 1559（不变量 168）
 - [`worked-example-cold-vs-warm.md`](worked-example-cold-vs-warm.md) — 本笔第一次碰 ≠ 已经热；本笔再碰 ≠ 又是冷访问；2929 ≠ 2930 ≠ 墙钟（不变量 169）
