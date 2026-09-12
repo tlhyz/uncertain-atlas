@@ -250,3 +250,4 @@
 - [name-the-extend-once](name-the-extend-once.md)
 - [name-the-process-also](name-the-process-also.md)
 - [name-the-late-extension](name-the-late-extension.md)
+- [name-the-verify-when](name-the-verify-when.md)

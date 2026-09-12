@@ -117,6 +117,8 @@ Process 也会在提议者那边叫不是已经不用再 Process：[`../../track
 
 +2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过：[`../../tracks/implementation/worked-example-late-extension-vs-verified.md`](../../tracks/implementation/worked-example-late-extension-vs-verified.md)（不变量 352）。看见建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify。看见下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify。
 
+空扩展仍会调 Verify 不是已经跳过 Verify：[`../../tracks/implementation/worked-example-verify-when-vs-empty.md`](../../tracks/implementation/worked-example-verify-when-vs-empty.md)（不变量 353）。看见不对本进程自己发出的 Precommit 调用不是已经自己验过。看见请求里的 hash 不是已经对该块跑过 Process。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

@@ -354,6 +354,7 @@
 | 345 | 一轮一份扩展被写成已经能再签一张 | 协议 + 文案 | 看见一轮最多一张 Precommit / ExtendVote 只在即将广播非 nil Precommit 时才叫 / 一轮只能交出一份扩展 / 一轮一份扩展当成已经能再签一张或已经签了 nil 票或已经是每一高度一份 | 不变量 350；语料 C354 |
 | 346 | 提议者 Process 被写成已经不用再 Process | 协议 + 文案 | 看见 Process 也会在提议者那边叫 / 通常紧跟 Prepare、列表对得上 / 失败时可能对上更早一次或根本不调 / 提议者 Process 当成已经不用再 Process 或已经保证是这一次或已经每轮都会叫 | 不变量 351；语料 C355 |
 | 347 | 迟到扩展被写成已经 Verify 过 | 协议 + 文案 | 看见 +2/3 之后才进来的扩展写进了 commit info / 建议按 Verify 同款逻辑再看一遍 / 下一高度 round 0 写进 ExtendedCommitInfo / 迟到扩展当成已经 Verify 过或已经是引擎会再 Verify 或已经又叫了 Verify | 不变量 352；语料 C356 |
+| 348 | Verify 何时调用被写成已经跳过 Verify | 协议 + 文案 | 看见空扩展仍会调 Verify / 不对本进程自己发出的 Precommit 调用 / 请求里的 hash / Verify 何时调用当成已经跳过 Verify 或已经自己验过或已经对该块跑过 Process | 不变量 353；语料 C357 |
 
 ## 不自动覆盖
 

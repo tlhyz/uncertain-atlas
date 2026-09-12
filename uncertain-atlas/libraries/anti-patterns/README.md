@@ -355,3 +355,4 @@
 - [extendonce-sold-as-height](extendonce-sold-as-height.md)
 - [processalso-sold-as-matched](processalso-sold-as-matched.md)
 - [lateext-sold-as-verified](lateext-sold-as-verified.md)
+- [verifywhen-sold-as-skipped](verifywhen-sold-as-skipped.md)

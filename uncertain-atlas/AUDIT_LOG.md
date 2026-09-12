@@ -3736,6 +3736,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1697 | 高 | 看见下一高度 round 0 收到上一高度 Precommit / 看见写进 ExtendedCommitInfo 会被写成已经又叫了 Verify，或当成已经必须再 Verify | 官方：MAY 写进 ExtendedCommitInfo 而不再叫 VerifyVoteExtension |
 | A1698 | 中 | 怎样再验迟到扩展 / 怎样写 Prepare / 怎样攒 ExtendedCommitInfo 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1699 | 记录 | 会与 34 / 348 / 330 糊成「看见 last_commit 里有扩展就已经 Verify 过」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案迟到扩展 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拒收整张预提交 / Req 6 必须 Accept / 到了 H 才 Prepare 带扩展标成另一对象 |
+| A1700 | 高 | 看见空扩展（0 长度）引擎仍会调 VerifyVoteExtension / 看见发送方选择不扩 会被写成已经跳过 Verify，或当成已经是空扩展仍验签 | 工作实例：abci++_methods VerifyVoteExtension Usage 官方写即使是 0 长度扩展也会调 VerifyVoteExtension |
+| A1701 | 高 | 看见 VerifyVoteExtension 不对本进程自己发出的 Precommit 调用 / 看见是本地票 会被写成已经自己验过，或当成已经 Accept | 官方：VerifyVoteExtension 不对本进程自己发出的 Precommit 调用 |
+| A1702 | 高 | 看见请求里的 hash / 看见指向某块 会被写成已经对该块跑过 ProcessProposal，或当成已经是提议者那边也会叫 Process | 官方：hash 不保证这块已经通过 ProcessProposal 暴露给应用 |
+| A1703 | 中 | 怎样写 Verify 何时调用 / 怎样写空扩展 / 怎样缓存 Process 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1704 | 记录 | 会与 34 / 348 / 351 糊成「看见空扩展就已经跳过 Verify」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拒收整张预提交 / Req 6 必须 Accept / 提议者 Process 标成另一对象 |
 
 
 
