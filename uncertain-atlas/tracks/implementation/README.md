@@ -45,6 +45,7 @@
 - [`worked-example-process-det-vs-prepare.md`](worked-example-process-det-vs-prepare.md) — Process 必须只依赖请求和上一份状态 ≠ 已经可以像 Prepare 那样依赖其它值；两边对任意块同一裁决 ≠ 已经只对诚实提案同一裁决；Process 非确定 bug 没有现成解法 ≠ 已经丢了安全性（不变量 340）
 - [`worked-example-verify-det-vs-extend.md`](worked-example-verify-det-vs-extend.md) — Verify 必须只依赖扩展、这块和上一份状态 ≠ 已经可以像 ExtendVote 那样依赖其它值；两边对任意扩展同一裁决 ≠ 已经只对诚实扩展同一裁决；Verify 非确定会伤活性 ≠ 已经丢了安全性（不变量 341）
 - [`worked-example-finalize-det-vs-prepare.md`](worked-example-finalize-det-vs-prepare.md) — Finalize 算出的状态必须只依赖上一份状态和决定块 ≠ 已经可以像 Prepare 那样依赖其它值；Finalize 算出的结果必须只依赖上一份状态和决定块 ≠ 已经是 Code/Data 印进本头；两边状态机复制 ≠ 已经是 Process 对任意块同一裁决（不变量 342）
+- [`worked-example-pbts-height-vs-params.md`](worked-example-pbts-height-vs-params.md) — 写成 0 不是已经启用 PBTS ≠ 已经填了 Precision 就是 PBTS；H 之前仍用 BFT Time ≠ 已经切到 PBTS；启用之后不能关 ≠ 已经是扩展启用高度那种切换（不变量 343）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 344）
+
+- CometBFT PbtsEnableHeight 工作实例（官方 Requirements for the Application List of Parameters / FeatureParams.PbtsEnableHeight，实现 / PbtsEnableHeight，不另写 19 节）：看见写成 0 不是已经启用 PBTS 不是已经填了 Precision 就是 PBTS。看见 H 之前仍用 BFT Time 不是已经切到 PBTS。看见启用之后不能关不是已经是扩展启用高度那种切换。PbtsEnableHeight 不是不变量 336，也不是不变量 330，也不是不变量 40。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 343；语料 C347；模式 name-the-pbts-height；反模式 pbtsheight-sold-as-enabled；L10.3 第 339 条。填 L4.4 / CometBFT 档案 PbtsEnableHeight / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样设 PbtsEnableHeight、默认取值、怎样选启用高度。不编博物馆页。不另写 19 节。不与 336 / 330 / 40 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。同步参数、扩展启用高度、块时间点名标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 343）
 
 - CometBFT FinalizeBlock 确定性工作实例（官方 Requirements for the Application Formal Requirements 11–12 [`FinalizeBlock`, determinism]，实现 / FinalizeBlock 确定性，不另写 19 节）：看见 Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值。看见 Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头。看见两边状态机复制不是已经是 Process 对任意块同一裁决。FinalizeBlock 确定性不是不变量 338，也不是不变量 316，也不是不变量 340。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

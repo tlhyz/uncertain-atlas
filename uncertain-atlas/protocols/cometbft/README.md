@@ -97,6 +97,8 @@ Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 Ext
 
 Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值：[`../../tracks/implementation/worked-example-finalize-det-vs-prepare.md`](../../tracks/implementation/worked-example-finalize-det-vs-prepare.md)（不变量 342）。看见 Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头。看见两边状态机复制不是已经是 Process 对任意块同一裁决。
 
+写成 0 不是已经启用 PBTS 不是已经填了 Precision 就是 PBTS：[`../../tracks/implementation/worked-example-pbts-height-vs-params.md`](../../tracks/implementation/worked-example-pbts-height-vs-params.md)（不变量 343）。看见 H 之前仍用 BFT Time 不是已经切到 PBTS。看见启用之后不能关不是已经是扩展启用高度那种切换。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

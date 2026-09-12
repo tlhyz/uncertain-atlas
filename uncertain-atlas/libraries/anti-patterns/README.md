@@ -345,3 +345,4 @@
 - [processdet-sold-as-prepare](processdet-sold-as-prepare.md)
 - [verifydet-sold-as-extend](verifydet-sold-as-extend.md)
 - [finalizedet-sold-as-prepare](finalizedet-sold-as-prepare.md)
+- [pbtsheight-sold-as-enabled](pbtsheight-sold-as-enabled.md)

@@ -344,6 +344,7 @@
 | 335 | ProcessProposal 确定性被写成已经可以像 Prepare 那样 | 协议 + 文案 | 看见 Process 必须只依赖请求和上一份状态 / 两边对任意块同一裁决 / Process 非确定 bug 没有现成解法 / ProcessProposal 确定性当成已经可以像 Prepare 那样或已经只对诚实提案或已经丢了安全性 | 不变量 340；语料 C344 |
 | 336 | VerifyVoteExtension 确定性被写成已经可以像 ExtendVote 那样 | 协议 + 文案 | 看见 Verify 必须只依赖扩展、这块和上一份状态 / 两边对任意扩展同一裁决 / Verify 非确定会伤活性 / VerifyVoteExtension 确定性当成已经可以像 ExtendVote 那样或已经只对诚实扩展或已经丢了安全性 | 不变量 341；语料 C345 |
 | 337 | FinalizeBlock 确定性被写成已经可以像 Prepare 那样 | 协议 + 文案 | 看见 Finalize 算出的状态必须只依赖上一份状态和决定块 / Finalize 算出的结果必须只依赖上一份状态和决定块 / 两边状态机复制 / FinalizeBlock 确定性当成已经可以像 Prepare 那样或已经印进本头或已经是 Process 同判 | 不变量 342；语料 C346 |
+| 338 | PbtsEnableHeight 被写成已经启用 PBTS | 协议 + 文案 | 看见写成 0 / H 之前仍用 BFT Time / 启用之后不能关 / PbtsEnableHeight 当成已经启用 PBTS 或已经切到 PBTS 或已经是扩展启用高度那种切换 | 不变量 343；语料 C347 |
 
 ## 不自动覆盖
 
