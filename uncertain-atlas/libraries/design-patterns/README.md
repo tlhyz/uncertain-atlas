@@ -181,3 +181,4 @@
 - [name-the-combo](name-the-combo.md)
 - [name-the-raw-addr](name-the-raw-addr.md)
 - [name-the-synthetic-xpub](name-the-synthetic-xpub.md)
+- [name-the-musig-psbt](name-the-musig-psbt.md)
