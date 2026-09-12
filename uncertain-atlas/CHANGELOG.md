@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 331）
+
+- CometBFT VoteExtensionsEnableHeight 工作实例（官方 Requirements for the Application List of Parameters / Application configuration required to switch to ABCI 2.0，实现 / VoteExtensionsEnableHeight，不另写 19 节）：看见到了 H 不是已经 Prepare 带了扩展。看见 H+1 带了扩展不是已经是本高度刚签的。看见 h < H 带了扩展不是已经合法。VoteExtensionsEnableHeight 不是不变量 34，也不是不变量 58，也不是不变量 35。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 330；语料 C334；模式 name-the-ve-height；反模式 veheight-sold-as-prepared；L10.3 第 326 条。填 L4.4 / CometBFT 档案 VoteExtensionsEnableHeight / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样设 VoteExtensionsEnableHeight、默认 0、怎样写空扩展。不编博物馆页。不另写 19 节。不与 34 / 58 / 35 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。验签 / 治理 panic / 验证人集合标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 330）
 
 - CometBFT Query 工作实例（官方 Requirements for the Application Query，实现 / Query，不另写 19 节）：看见 Query 回了不是已经复制到各节点。看见查到了不是已经新鲜。看见实现了 Query 不是已经是正常运转必须有。Query 不是不变量 314，也不是不变量 325，也不是不变量 326。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

@@ -344,6 +344,7 @@
 | C331 | 327 立刻整块执行≠已经离开关键路径 | 文案把 Prepare 里立刻整块执行 / 执行回了写成已经离开提议超时的关键路径或已经不挡 q 的提议钟；或把填了 TimeoutPropose / 同步期写成已经装得下这次 Prepare 执行或 q 的提议钟已经不会响；或把又开一轮 / TimeoutPropose 只是初值写成已经丢了活性或超时已经不再涨；或把 Prepare 及时性写成不变量 33 / 47 / 311 / 52 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C332 | 328 同一高度回了不同码≠已经有了CheckTxCode | 文案把同一高度 CheckTx 回了不同码 / CheckTxCodes 是集合写成已经有了 CheckTxCode 或已经能说 OK；或把还在振荡 / 还在池里写成已经过了 h_stable 或已经离池；或把本地 h_p,stable / 本节点不再振荡写成已经是全局同一高度或已经各节点同一份 b；或把 CheckTx 最终不再振荡写成不变量 312 / 301 / 313 / 33 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C333 | 329 Query回了≠已经复制到各节点 | 文案把 Query 回了 / RPC 能查写成已经复制到各节点或已经过了共识；或把查到了 / 本地有这份写成已经新鲜或已经是当前尖；或把实现了 Query / 规范写了 Query 写成已经是正常运转必须有或已经是过滤或证明；或把 Query 写成不变量 314 / 325 / 326 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C334 | 330 到了H≠已经Prepare带了扩展 | 文案把到了 H / 已经叫了 ExtendVote 写成已经 Prepare 带了扩展；或把 H+1 的 PrepareProposal 带了扩展写成已经是本高度刚签的扩展；或把 h < H 的预提交带了扩展写成已经合法或已经启用；或把 VoteExtensionsEnableHeight 写成不变量 34 / 58 / 35 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

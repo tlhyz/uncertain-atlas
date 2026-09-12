@@ -3621,6 +3621,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1582 | 高 | 看见实现了 Query / 看见规范写了 Query 会被写成已经是正常运转必须有，或当成已经是过滤或证明 | 官方：正常运转技术上不要求实现 Query |
 | A1583 | 中 | 怎样写 Query 处理 / 怎样配 RPC / 怎样做默克尔证明会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1584 | 记录 | 会与 314 / 325 / 326 糊成「看见查到了就已经共识」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。QueryState / 查询证明 / 邻居过滤标成另一对象 |
+| A1585 | 高 | 看见到了 H / 看见已经叫了 ExtendVote 会被写成已经 Prepare 带了扩展 | 官方：到了 H，Prepare 还不会带投票扩展，但会调 ExtendVote 和 VerifyVoteExtension |
+| A1586 | 高 | 看见 H+1 的 PrepareProposal 带了扩展 会被写成已经是本高度刚签的扩展 | 官方：H+1 的 Prepare 带的是高度 H 的扩展 |
+| A1587 | 高 | 看见 h < H 的预提交带了扩展 会被写成已经合法，或当成已经启用 | 官方：h < H 带扩展的预提交被当成畸形拒收；H 之后不能关 |
+| A1588 | 中 | 怎样设 VoteExtensionsEnableHeight / 默认 0 / 怎样写空扩展会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1589 | 记录 | 会与 34 / 58 / 35 糊成「看见到了 H 就已经切到 ABCI 2.0」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VoteExtensionsEnableHeight / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。验签 / 治理 panic / 验证人集合标成另一对象 |
 
 
 

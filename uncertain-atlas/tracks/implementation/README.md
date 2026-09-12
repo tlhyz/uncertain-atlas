@@ -32,6 +32,7 @@
 - [`worked-example-prepare-timeout-vs-liveness.md`](worked-example-prepare-timeout-vs-liveness.md) — 立刻整块执行 ≠ 已经离开提议超时的关键路径；填了 TimeoutPropose ≠ 已经装得下；又开一轮 ≠ 已经丢了活性（不变量 327）
 - [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
 - [`worked-example-query-vs-replicated.md`](worked-example-query-vs-replicated.md) — Query 回了 ≠ 已经复制到各节点；查到了 ≠ 已经新鲜；实现了 Query ≠ 已经是正常运转必须有（不变量 329）
+- [`worked-example-ve-height-vs-prepare.md`](worked-example-ve-height-vs-prepare.md) — 到了 H ≠ 已经 Prepare 带了扩展；H+1 带了扩展 ≠ 已经是本高度刚签的；h < H 带了扩展 ≠ 已经合法（不变量 330）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
