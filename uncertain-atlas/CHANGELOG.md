@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 132）
+
+- Avalanche 工作实例：抽样 α 多数不是全集 +2/3 证书。连续 β 轮不是一张可转发 QC。Preference 不是已经接受。出块窗不是已经决定。「也是 BFT」不是已经和 CometBFT 同一把尺子。出处 docs.avax.network Consensus / Snowman。
+- 不变量 131；语料 C135；模式 name-the-sample-decision；反模式 snow-sold-as-qc；L10.3 第 127 条。填 L4.6 / Avalanche 档案 §1 §6 / 共识表 / 最终性表 / 停链面地图。
+- 不抄样本个数 / αβ 默认 / 窗秒数 / 亚秒 / 吞吐。两份官方页默认 α 不一致，两边都不抄。不写怎样日蚀样本。不编博物馆页。不与 22 / 119 / 127 / 129 糊成一句。思想层无领袖与产品出块窗两句都留。
+
 ## 2026-09-12（续 131）
 
 - Ethereum 工作实例：终局推迟不是高度已经停。Inactivity leak 不是 slash。没 attestation 不是已经可罚。两边都 leak 到 finalized 不是协议已经选出唯一规范链。出处 ethereum.org Rewards / Attack-and-defense / Gasper / PoS。

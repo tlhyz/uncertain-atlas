@@ -100,7 +100,8 @@ FFG + fork choice：用户有三种「到了」，产品必须选一种结算。
 **建议：** 第一版先钉一种：CometBFT 式每高度 commit，或明确的检查点最终。  
 不要第一版同时卖 QC 流水线 + FFG + 抽样。对照表留给以后改引擎。  
 出块装置与最终装置拆开是另一行：Polkadot 官方把 BABE 与 GRANDPA 写成并行独立服务，最终对链、一次敲定祖先。精读：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)（不变量 126）。不要把「混合共识」写成已经每高度 commit，也不要写成已经 Gasper 三词。  
-Gasper 自己的三等是另一页：head ≠ justified ≠ finalized。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）。
+Gasper 自己的三等是另一页：head ≠ justified ≠ finalized。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）。  
+抽样固化是第三列：α 多数不是全集证书，连续 β 不是 QC。精读：[`../../tracks/consensus/worked-example-snow-sample-vs-qc.md`](../../tracks/consensus/worked-example-snow-sample-vs-qc.md)（不变量 131）。
 
 ---
 
@@ -114,5 +115,5 @@ Gasper 自己的三等是另一页：head ≠ justified ≠ finalized。精读�
 | 部署 | 未测时延不得当事实 |
 | 经济 | 「更新所以更安全」是广告 |
 
-**禁止假学习：** 「都是 BFT 所以最终性一样。」「HotStuff 更新所以更安全。」  
-**边界：** 不证论文、不列所有变体、不写未测的消息时延。不抄现行罚金。slash 谓词精读见 [`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。BABE ≠ GRANDPA 不在本课展开：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)。超多数单位（验证者 vs 质押）见 [`../../tracks/consensus/worked-example-npos-equal-weight.md`](../../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129）。
+**禁止假学习：** 「都是 BFT 所以最终性一样。」「HotStuff 更新所以更安全。」「Avalanche 也是 BFT 所以有 QC。」  
+**边界：** 不证论文、不列所有变体、不写未测的消息时延。不抄现行罚金。slash 谓词精读见 [`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。BABE ≠ GRANDPA 不在本课展开：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)。超多数单位（验证者 vs 质押）见 [`../../tracks/consensus/worked-example-npos-equal-weight.md`](../../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129）。抽样 α ≠ QC：[`../../tracks/consensus/worked-example-snow-sample-vs-qc.md`](../../tracks/consensus/worked-example-snow-sample-vs-qc.md)（不变量 131）。

@@ -144,6 +144,7 @@ Avalanche 的独特思想是：
 - 为什么每轮只问少量验证者，巨大网络仍可能趋向一致？
 - 概率共识与 BFT 确定最终性，用户体验和安全假设差在哪？
 - 和 Bitcoin / Tendermint 比，它拿什么换来了什么？
+- 抽样 α 多数为什么不是全集 +2/3 证书？连续 β 为什么不是可转发 QC？精读：[`../tracks/consensus/worked-example-snow-sample-vs-qc.md`](../tracks/consensus/worked-example-snow-sample-vs-qc.md)（不变量 131）
 
 ### 定位
 

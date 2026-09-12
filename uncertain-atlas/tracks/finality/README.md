@@ -5,6 +5,7 @@
 弱主观性：[`worked-example-weak-subjectivity.md`](worked-example-weak-subjectivity.md)（finalized ≠ 从创世同步同样安全）。  
 三等确认：[`worked-example-head-vs-justified-vs-finalized.md`](worked-example-head-vs-justified-vs-finalized.md)（head ≠ justified ≠ finalized；`safe` ≠ 官方已经写成 justified）。  
 终局推迟 ≠ 停链，leak ≠ slash：[`worked-example-inactivity-leak.md`](worked-example-inactivity-leak.md)（不变量 130）。  
+抽样 α 多数 ≠ 可转发 QC：[`../consensus/worked-example-snow-sample-vs-qc.md`](../consensus/worked-example-snow-sample-vs-qc.md)（不变量 131）。  
 平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。  
 中继出块 ≠ 中继最终：[`../consensus/worked-example-babe-vs-grandpa.md`](../consensus/worked-example-babe-vs-grandpa.md)（BABE ≠ GRANDPA；不变量 126）。
 
@@ -16,7 +17,7 @@
 | Ethereum leak | inactivity leak（抽不跟多数走的质押） | 终局推迟 = 停链；leak = slash；两边都最终 = 已唯一 | 头仍可走；leak 官方写未 slash；两边最终要社会恢复 | L5.2 / 精读 |
 | Ethereum WS 同步 | 未过期的 `Checkpoint` + 路径命中 | finalized = 从创世一样安全 | 过期检查点；旧钥匙已解绑 | 精读 |
 | Ethereum Altair LC | 512 抽样超多数签的信标头 | 抽样 2/3 = Casper finalized | 跟的是委员会视图，不是全集合最终 | L9.6 / 精读 |
-| Avalanche | 抽样固化 | 参数 = BFT commit | 视参数 | 档案 |
+| Avalanche | 样本 α + 本节点连续 β | 抽样过了 = 可转发 QC；Preference = LastAccepted；出块窗 = 已决定 | 视参数；窗内没人出可能停产，那也不是已接受 | L4.6 / 精读 |
 | Algorand | 论文下快速最终（以规范为准） | 抽签 = 已结算 | 视同步假设 | 档案 |
 | Solana | 确认深度 + Tower 锁 | 槽时间 = commit | 活性事故有记录待原文 | L6.1 |
 | Sui | owned 快路径 vs shared 共识 | 所有交易同一「到了」 | 视路径 | L6.2 |

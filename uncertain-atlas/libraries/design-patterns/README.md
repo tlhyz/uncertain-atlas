@@ -28,3 +28,4 @@
 - [name-the-ownership-path](name-the-ownership-path.md)
 - [name-the-quorum-unit](name-the-quorum-unit.md)
 - [name-the-finality-recovery](name-the-finality-recovery.md)
+- [name-the-sample-decision](name-the-sample-decision.md)

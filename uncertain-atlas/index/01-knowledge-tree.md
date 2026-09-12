@@ -261,7 +261,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.7 HotStuff / Casper 对照预习 · 进阶
 - QC、view change
 - 先建立对照表，不深挖所有变体
-- 覆盖：课文 L4.6；Casper 两票谓词 `tracks/economic/worked-example-casper-slashing.md`。BABE 出块 ≠ GRANDPA 最终：[`../tracks/consensus/worked-example-babe-vs-grandpa.md`](../tracks/consensus/worked-example-babe-vs-grandpa.md)（不变量 126；对照每高度 commit，不要混进本课变体表）
+- 覆盖：课文 L4.6；Casper 两票谓词 `tracks/economic/worked-example-casper-slashing.md`。BABE 出块 ≠ GRANDPA 最终：[`../tracks/consensus/worked-example-babe-vs-grandpa.md`](../tracks/consensus/worked-example-babe-vs-grandpa.md)（不变量 126；对照每高度 commit，不要混进本课变体表）。抽样 α 多数 ≠ 全集 +2/3 证书：[`../tracks/consensus/worked-example-snow-sample-vs-qc.md`](../tracks/consensus/worked-example-snow-sample-vs-qc.md)（不变量 131；「也是 BFT」不是已经有 QC）
 
 ### M4.8 源码与测试 · 重要
 - CometBFT 状态机入口
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–130）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–131）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C134；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C135；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
