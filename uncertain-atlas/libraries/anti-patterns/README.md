@@ -175,3 +175,4 @@
 - [hash-sold-as-redeem](hash-sold-as-redeem.md)
 - [bit-sold-as-active](bit-sold-as-active.md)
 - [valid-sold-as-der](valid-sold-as-der.md)
+- [header-sold-as-height](header-sold-as-height.md)

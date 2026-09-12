@@ -39,6 +39,7 @@
 **事实：** 协议不定义「最终」。最终是用户与交易所的政策。  
 **事实：** 若多数算力合作改写，浅确认可被双花。白皮书第 11 节用概率谈攻击者赶上。  
 进了块的 coinbase 不是已经能花。普通确认深度不是奖励成熟窗。精读：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。
+coinbase 第一项写了高度不是头上已经有高度字段。精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。
 脚本里的 CLTV 不是交易 nLockTime 已经把输出锁住。精读：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。
 脚本里的 CSV 不是绝对锁，也不是「CSV 部署」四个字。精读：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。
 
@@ -100,5 +101,5 @@ Bitcoin 主网、大量侧链与交易所政策。
 | 部署 | 你看见的最重链 ⊆ 你连到的图 |
 | 经济 | k 确认只对未日蚀且看见主网算力的人有意义 |
 
-**禁止假学习：** 「6 确认是协议最终。」「最长链永远等于最重链。」「进了块的 coinbase = 已经能花。」「填了 nLockTime = 输出已经锁住。」「CSV = CLTV。」「CSV 之后 = 已经在讲操作码。」
-**边界：** 日蚀在 L3.4。见 tracks/finality。头上的时间不是「全网现在」：太早看父 MTP，locktime（BIP113 后）也看父 MTP，太新看本节点钟，见 [`../../tracks/consensus/worked-example-mtp.md`](../../tracks/consensus/worked-example-mtp.md)。进了块的 coinbase ≠ 已经能花：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV ≠ 绝对锁 / ≠ 部署名：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。
+**禁止假学习：** 「6 确认是协议最终。」「最长链永远等于最重链。」「进了块的 coinbase = 已经能花。」「看见头 = 高度已在头上。」「34 = 9。」「填了 nLockTime = 输出已经锁住。」「CSV = CLTV。」「CSV 之后 = 已经在讲操作码。」
+**边界：** 日蚀在 L3.4。见 tracks/finality。头上的时间不是「全网现在」：太早看父 MTP，locktime（BIP113 后）也看父 MTP，太新看本节点钟，见 [`../../tracks/consensus/worked-example-mtp.md`](../../tracks/consensus/worked-example-mtp.md)。进了块的 coinbase ≠ 已经能花：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。coinbase 第一项写了高度 ≠ 头上已经有高度字段：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV ≠ 绝对锁 / ≠ 部署名：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。

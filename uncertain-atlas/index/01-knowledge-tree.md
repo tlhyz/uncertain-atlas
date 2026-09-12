@@ -189,7 +189,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.1 Nakamoto Consensus · 必学
 - PoW、最重链、概率最终性、reorg
-- 覆盖：课文 L3.1；块时间三把尺 `tracks/consensus/worked-example-mtp.md`（太早 / BIP113 locktime / 太新；不变量 41）。进了块的 coinbase ≠ 已经能花：[`../tracks/economic/worked-example-coinbase-vs-mature.md`](../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住：[`../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV ≠ 绝对锁 / ≠ 部署名：[`../tracks/state-models/worked-example-csv-vs-cltv.md`](../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）
+- 覆盖：课文 L3.1；块时间三把尺 `tracks/consensus/worked-example-mtp.md`（太早 / BIP113 locktime / 太新；不变量 41）。进了块的 coinbase ≠ 已经能花：[`../tracks/economic/worked-example-coinbase-vs-mature.md`](../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。coinbase 第一项写了高度 ≠ 头上已经有高度字段：[`../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住：[`../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。脚本里的 CSV ≠ 绝对锁 / ≠ 部署名：[`../tracks/state-models/worked-example-csv-vs-cltv.md`](../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）
 
 ### M3.2 网络与传播 · 必学
 - mempool、compact block、eclipse、带宽
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–172）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–173）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C176；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C177；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
