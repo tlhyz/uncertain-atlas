@@ -66,6 +66,8 @@
 - [solana-2022-04-30-fork-cleanup-oom](solana-2022-04-30-fork-cleanup-oom.md)（实现+协议+经济+部署：入站洪水不是已经停链；票不够落地、分叉清不掉才 OOM）
 - [sui-2024-11-21-zero-cost-assert](sui-2024-11-21-zero-cost-assert.md)（实现+协议：估值为 0 不是已经安全；拥塞控制 assert 不是局部跳过）
 - [sui-2026-01-14-commit-divergence](sui-2026-01-14-commit-divergence.md)（协议+实现：检查点隔离拒证不是已经分叉）
+- [sui-2026-05-gas-smash-cancel](sui-2026-05-gas-smash-cancel.md)（协议+实现：因余额不足取消不是已经不再扣款；只认一种取消理由不是下溢已消失）
+- [sui-2026-05-dkg-verdict-disk](sui-2026-05-dkg-verdict-disk.md)（协议+实现+部署：DKG 按设计关掉不是重启后还记得；失败裁决未落盘不是随机性已经关闭）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
 

@@ -321,7 +321,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M6.2 Sui · 重要
 - object ownership、owned vs shared
 - 依赖图、fast path / 共识旁路思想
-- 覆盖：课文 L6.2。owned 可旁路全局序；shared 不能。禁止「所有交易都绕过共识」。共享对象拥塞控制估值 0 ≠ 已安全：[`../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md`](../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md)（不变量 90）。检查点隔离拒证 ≠ 已分叉：[`../tracks/failure-museum/sui-2026-01-14-commit-divergence.md`](../tracks/failure-museum/sui-2026-01-14-commit-divergence.md)（不变量 91）
+- 覆盖：课文 L6.2。owned 可旁路全局序；shared 不能。禁止「所有交易都绕过共识」。共享对象拥塞控制估值 0 ≠ 已安全：[`../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md`](../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md)（不变量 90）。检查点隔离拒证 ≠ 已分叉：[`../tracks/failure-museum/sui-2026-01-14-commit-divergence.md`](../tracks/failure-museum/sui-2026-01-14-commit-divergence.md)（不变量 91）。因余额不足取消 ≠ 已不扣款：[`../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md`](../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md)（不变量 92）。DKG 按设计关掉 ≠ 已落盘：[`../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md`](../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md)（不变量 93）
 
 ### M6.3 Aptos · 重要
 - Move resource
@@ -333,7 +333,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 预先声明依赖（Solana）
 - 所有权依赖（Sui）
 - 乐观执行再检测（Aptos）
-- 覆盖：课文 L6.4
+- 覆盖：课文 L6.4。Sui 停机对照见 M6.2 四案（估值 0、隔离拒证、取消后仍砸气费、DKG 未落盘）
 
 ### M6.5 对「不确定」 · 重要
 - 结算链是否需要这种吞吐
@@ -449,7 +449,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（六十二案；含 Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（六十四案；含 Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–91）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–93）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C95；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C97；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

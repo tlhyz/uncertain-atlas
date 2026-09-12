@@ -96,3 +96,5 @@
 - [flood-sold-as-halt](flood-sold-as-halt.md)
 - [zero-cost-sold-as-safe](zero-cost-sold-as-safe.md)
 - [quarantine-sold-as-fork](quarantine-sold-as-fork.md)
+- [cancel-sold-as-no-debit](cancel-sold-as-no-debit.md)
+- [dkg-disabled-sold-as-persisted](dkg-disabled-sold-as-persisted.md)

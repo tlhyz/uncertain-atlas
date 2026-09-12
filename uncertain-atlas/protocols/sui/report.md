@@ -138,7 +138,7 @@ Move VM。资源不能随便 copy/drop。
 
 ## 15. 历史事故
 
-已归档官方七问：[`../../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md`](../../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md)（估值为 0 ≠ 已安全）；[`../../tracks/failure-museum/sui-2026-01-14-commit-divergence.md`](../../tracks/failure-museum/sui-2026-01-14-commit-divergence.md)（隔离拒证 ≠ 已分叉）。其它停机仍须官方 postmortem，不编根因。
+已归档官方七问：[`../../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md`](../../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md)（估值为 0 ≠ 已安全）；[`../../tracks/failure-museum/sui-2026-01-14-commit-divergence.md`](../../tracks/failure-museum/sui-2026-01-14-commit-divergence.md)（隔离拒证 ≠ 已分叉）；[`../../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md`](../../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md)（取消 ≠ 已不扣款）；[`../../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md`](../../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md)（DKG 关掉 ≠ 已落盘）。其它停机仍须官方 postmortem，不编根因。
 
 ---
 
