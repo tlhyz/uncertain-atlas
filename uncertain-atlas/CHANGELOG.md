@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 411）
+
+- CometBFT ExtendVote 请求栏工作实例（官方 ABCI++ Methods ExtendVote Request，实现 / ExtendVote 请求栏，不另写 19 节）：看见 ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希不是已经跑过 Process。看见 ExtendVoteRequest.height 是拟议块高度（用来对一下）不是已经对上了拟议块。看见 ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳不是已经验过票上时间。ExtendVote 请求栏不是不变量 353，也不是不变量 409，也不是不变量 304。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 410；语料 C414；模式 name-the-ext-req-hash；反模式 extreqhash-sold-as-process；L10.3 第 406 条。填 L4.4 / CometBFT 档案 ExtendVote 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendVote 请求栏、怎样填 hash、怎样对高度。不编博物馆页。不另写 19 节。不与 353 / 409 / 304 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经跑过 Process、已经对上了拟议块、已经验过票上时间标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 410）
 
 - CometBFT ExtendVote 请求对应工作实例（官方 ABCI++ Methods ExtendVote Usage / VerifyVoteExtension When，实现 / ExtendVote 请求对应，不另写 19 节）：看见 ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块不是已经会调 ExtendVote。看见 Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify 不是已经跳过 Verify。看见 Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo 不是已经 Verify 过迟到扩展。ExtendVote 请求对应不是不变量 350，也不是不变量 353，也不是不变量 352。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

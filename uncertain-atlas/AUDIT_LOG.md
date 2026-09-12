@@ -4021,6 +4021,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1982 | 高 | 看见 Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo / 看见收下了 会被写成已经 Verify 过迟到扩展，或当成已经交差 | 官方：If ACCEPT, p will keep the received vote, together with its corresponding vote extension in its internal data structures. It will be used to populate the ExtendedCommitInfo structure in calls to PrepareProposal, in rounds of height h+1 where p is the proposer |
 | A1983 | 中 | 怎样写 ExtendVote 请求对应 / 怎样验伴随签名 / 怎样攒下一高 Prepare 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1984 | 记录 | 会与 350 / 353 / 352 糊成「看见填了 ExtendVote 请求对应就已经会调 ExtendVote」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 请求对应 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经会调 / 已经跳过 Verify / 已经 Verify 过迟到扩展 标成另一对象 |
+| A1985 | 高 | 看见 ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希 / 看见填了 hash 会被写成已经跑过 Process，或当成已经交差 | 工作实例：abci++_methods ExtendVote Request 官方写 hash is The header hash of the proposed block that the vote extension is to refer to |
+| A1986 | 高 | 看见 ExtendVoteRequest.height 是拟议块高度（用来对一下） / 看见填了 height 会被写成已经对上了拟议块，或当成已经会调 ExtendVote | 官方：height is Height of the proposed block (for sanity check) |
+| A1987 | 高 | 看见 ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳 / 看见填了 time 会被写成已经验过票上时间，或当成已经交差 | 官方：time is Timestamp of the proposed block (that the extension is to refer to) |
+| A1988 | 中 | 怎样写 ExtendVote 请求栏 / 怎样填 hash / 怎样对高度 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1989 | 记录 | 会与 353 / 409 / 304 糊成「看见填了 ExtendVote 请求栏就已经跑过 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经跑过 Process / 已经对上了拟议块 / 已经验过票上时间 标成另一对象 |
 
 
 
