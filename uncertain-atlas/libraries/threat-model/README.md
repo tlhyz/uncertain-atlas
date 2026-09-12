@@ -400,6 +400,7 @@
 | 391 | OfferSnapshot 请求被写成已经是本地清单 | 协议 + 文案 | 看见 OfferSnapshot 请求 snapshot 是拿来装回的那份快照 / OfferSnapshot 回包 result 是这次 Offer 的结果 / OfferSnapshot 在用 state sync 引导节点时叫 / OfferSnapshot 请求当成已经是本地清单或已经装完或已经必须实现快照连接 | 不变量 396；语料 C400 |
 | 392 | ApplySnapshotChunk 请求被写成已经在拉块 | 协议 + 文案 | 看见 ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容 / ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID / ApplySnapshotChunk 回包 result 是装这块的结果 / ApplySnapshotChunk 请求当成已经在拉块或已经拒了人或已经是 Offer 的结果 | 不变量 397；语料 C401 |
 | 393 | ApplySnapshotChunk 结果枚举被写成已经再拉 | 协议 + 文案 | 看见 ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders / ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块 / ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份 / ApplySnapshotChunk 结果枚举当成已经再拉或已经换一份或已经是装这块的结果 | 不变量 398；语料 C402 |
+| 394 | Commit 空请求被写成已经落盘 | 协议 + 文案 | 看见 Commit 不带参数 / Echo 回包 Message 是入参那串 / Echo 用来测实现 / Commit 空请求当成已经落盘或已经是入参字段或已经刷完 | 不变量 399；语料 C403 |
 
 ## 不自动覆盖
 

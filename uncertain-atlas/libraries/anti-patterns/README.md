@@ -401,3 +401,4 @@
 - [offersnap-sold-as-listed](offersnap-sold-as-listed.md)
 - [applychunk-sold-as-loadchunk](applychunk-sold-as-loadchunk.md)
 - [applyretry-sold-as-refetch](applyretry-sold-as-refetch.md)
+- [commitnoparam-sold-as-persist](commitnoparam-sold-as-persist.md)
