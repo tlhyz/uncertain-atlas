@@ -150,3 +150,4 @@
 - [name-the-limited-service](name-the-limited-service.md)
 - [name-the-witness-wire](name-the-witness-wire.md)
 - [name-the-bloom-bit](name-the-bloom-bit.md)
+- [name-the-mempool-dump](name-the-mempool-dump.md)

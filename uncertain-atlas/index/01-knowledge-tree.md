@@ -198,7 +198,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.3 费用市场 · 重要
 - 有限区块空间如何定价
 - 不是「手续费越高越高级」
-- 覆盖：课文 L3.2。策略拒绝 ≠ 共识非法；费率高 ≠ 更正确；策略不作用于块内交易：[`../tracks/mempool/worked-example-policy-vs-consensus.md`](../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。选择加入替换信号 ≠ 已经换掉：[`../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。跳过库存通告 ≠ 已经拒进池；发了费率过滤器 ≠ 对等节点已经照做；布隆过了 ≠ 已经过了费率门：[`../tracks/mempool/worked-example-feefilter-vs-rejected.md`](../tracks/mempool/worked-example-feefilter-vs-rejected.md)（不变量 245）
+- 覆盖：课文 L3.2。策略拒绝 ≠ 共识非法；费率高 ≠ 更正确；策略不作用于块内交易：[`../tracks/mempool/worked-example-policy-vs-consensus.md`](../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。选择加入替换信号 ≠ 已经换掉：[`../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。跳过库存通告 ≠ 已经拒进池；发了费率过滤器 ≠ 对等节点已经照做；布隆过了 ≠ 已经过了费率门：[`../tracks/mempool/worked-example-feefilter-vs-rejected.md`](../tracks/mempool/worked-example-feefilter-vs-rejected.md)（不变量 245）。内存池查询回了一串库存 ≠ 已经有那些交易：[`../tracks/mempool/worked-example-mempool-dump-vs-have.md`](../tracks/mempool/worked-example-mempool-dump-vs-have.md)（不变量 253）
 
 ### M3.4 Script / SegWit / Taproot / Schnorr · 进阶
 - 保守升级如何避免把旧节点踢出共识
@@ -417,7 +417,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.2 Mempool · 必学
 - 准入、替换、驱逐、垃圾、抢跑、加密内存池
-- 覆盖：课文 L9.2；筐精读；谁排序 `tracks/mempool/worked-example-who-orders.md`。ABCI 四门：`tracks/consensus/worked-example-prepare-process.md`。看不见 ≠ 非法：CVE-2024-52913。孤儿扫描必须可中断：CVE-2024-52914。拒了但不踢人仍能烧 CPU：CVE-2025-46598。单笔 CheckTx 绿 ≠ 整包可提案：ASA-2024-002。跳过库存通告 ≠ 已经拒进池；发了费率过滤器 ≠ 对等节点已经照做：[`../tracks/mempool/worked-example-feefilter-vs-rejected.md`](../tracks/mempool/worked-example-feefilter-vs-rejected.md)（不变量 245）。对账素描 ≠ 已经有那些交易：[`../tracks/network/worked-example-erlay-vs-have.md`](../tracks/network/worked-example-erlay-vs-have.md)（不变量 249）。加密内存池：无规范级对象，先不过滤器
+- 覆盖：课文 L9.2；筐精读；谁排序 `tracks/mempool/worked-example-who-orders.md`。ABCI 四门：`tracks/consensus/worked-example-prepare-process.md`。看不见 ≠ 非法：CVE-2024-52913。孤儿扫描必须可中断：CVE-2024-52914。拒了但不踢人仍能烧 CPU：CVE-2025-46598。单笔 CheckTx 绿 ≠ 整包可提案：ASA-2024-002。跳过库存通告 ≠ 已经拒进池；发了费率过滤器 ≠ 对等节点已经照做：[`../tracks/mempool/worked-example-feefilter-vs-rejected.md`](../tracks/mempool/worked-example-feefilter-vs-rejected.md)（不变量 245）。对账素描 ≠ 已经有那些交易：[`../tracks/network/worked-example-erlay-vs-have.md`](../tracks/network/worked-example-erlay-vs-have.md)（不变量 249）。内存池查询回了一串库存 ≠ 已经有那些交易：[`../tracks/mempool/worked-example-mempool-dump-vs-have.md`](../tracks/mempool/worked-example-mempool-dump-vs-have.md)（不变量 253）。加密内存池：无规范级对象，先不过滤器
 
 ### M9.3 存储 · 必学
 - WAL、原子提交、断电、剪枝、状态同步
