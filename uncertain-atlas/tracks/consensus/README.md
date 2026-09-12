@@ -12,7 +12,7 @@ Vote extension：[`worked-example-vote-extension.md`](worked-example-vote-extens
 集合延迟：[`worked-example-validator-delay.md`](worked-example-validator-delay.md)（H 的 `validator_updates`：H+1 Next、H+2 计票、H+3 last_commit）。本高回了 ConsensusParams ≠ 已经在本高生效：[`../implementation/worked-example-params-delay-vs-set.md`](../implementation/worked-example-params-delay-vs-set.md)（不变量 333）。看见 H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票。看见参数更新写了 H+1 不是已经是扩展启用高度那种切换。    
 同一高度换轮 ≠ 已经换了集合；新加入 ≠ 已经能跳到队头：[`worked-example-round-vs-set.md`](worked-example-round-vs-set.md)（不变量 302）。  
 票上 Timestamp ≠ 已经验过；冲突提案 ≠ 已经有证据：[`worked-example-vote-ts-vs-checked.md`](worked-example-vote-ts-vs-checked.md)（不变量 304）。
-块时间算法：[`worked-example-pbts.md`](worked-example-pbts.md)（PBTS timely 窗 ≠ BFT Time 中位数 ≠ Bitcoin MTP ≠ 调整钟）。复算中位数 ≠ 故障者不能抬高 Time：[CSA-2026-001](../failure-museum/csa-2026-001.md)。  
+块时间算法：[`worked-example-pbts.md`](worked-example-pbts.md)（PBTS timely 窗 ≠ BFT Time 中位数 ≠ Bitcoin MTP ≠ 调整钟）。复算中位数 ≠ 故障者不能抬高 Time：[CSA-2026-001](../failure-museum/csa-2026-001.md)。填了 Precision ≠ 已经是 MessageDelay：[`../implementation/worked-example-precision-vs-msgdelay.md`](../implementation/worked-example-precision-vs-msgdelay.md)（不变量 336）。看见填了两个不是已经启用 PBTS。看见用于 PBTS 不是已经是永恒常数。  
 Bitcoin MTP 三把尺：[`worked-example-mtp.md`](worked-example-mtp.md)（太早 / BIP113 locktime / 太新窗；太新不是 MTP）。  
 含叔块的难度 ≠ 已经按个数调：[`worked-example-uncle-diff-vs-header.md`](worked-example-uncle-diff-vs-header.md)（不变量 238）。头上叔块哈希不是空不是已经数清。可预期发行不是已经没有炸弹。  
 同一交易标识 ≠ 已经唯一：[`worked-example-duplicate-txid-vs-unique.md`](worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见许多确认不是已经不怕被覆盖。已经花光后再出现不是已经非法。  

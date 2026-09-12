@@ -83,6 +83,8 @@ Query 回了不是已经复制到各节点：[`../../tracks/implementation/worke
 
 Finalize 改了状态不是已经落盘：[`../../tracks/implementation/worked-example-finalize-persist-vs-commit.md`](../../tracks/implementation/worked-example-finalize-persist-vs-commit.md)（不变量 335）。看见必须在 Commit 落盘不是已经在 Finalize 落了。看见记住上次成功 Commit 高度不是已经能跳步。
 
+填了 Precision 不是已经是 MessageDelay：[`../../tracks/implementation/worked-example-precision-vs-msgdelay.md`](../../tracks/implementation/worked-example-precision-vs-msgdelay.md)（不变量 336）。看见填了两个不是已经启用 PBTS。看见用于 PBTS 不是已经是永恒常数。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

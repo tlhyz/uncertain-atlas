@@ -338,3 +338,4 @@
 - [paramsdelay-sold-as-validatordelay](paramsdelay-sold-as-validatordelay.md)
 - [snapshotconn-sold-as-required](snapshotconn-sold-as-required.md)
 - [finalizepersist-sold-as-committed](finalizepersist-sold-as-committed.md)
+- [precision-sold-as-msgdelay](precision-sold-as-msgdelay.md)

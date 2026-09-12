@@ -38,6 +38,7 @@
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
 - [`worked-example-finalize-persist-vs-commit.md`](worked-example-finalize-persist-vs-commit.md) — Finalize 改了状态 ≠ 已经落盘；必须在 Commit 落盘 ≠ 已经在 Finalize 落了；记住上次成功 Commit 高度 ≠ 已经能跳步（不变量 335）
+- [`worked-example-precision-vs-msgdelay.md`](worked-example-precision-vs-msgdelay.md) — 填了 Precision ≠ 已经是 MessageDelay；填了两个 ≠ 已经启用 PBTS；用于 PBTS ≠ 已经是永恒常数（不变量 336）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

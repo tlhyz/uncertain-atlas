@@ -3651,6 +3651,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1612 | 高 | 看见记住上次成功 Commit 的高度 / 看见能告诉引擎从哪接 会被写成已经能单独比引擎高，或当成已经能跳步 | 官方：记住高度是为了告诉引擎从哪接，不是已经允许领先或已经跳过重放 |
 | A1613 | 中 | 怎样落盘 / 怎样写 Commit / 怎样做 WAL 旋转会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1614 | 记录 | 会与 320 / 310 / 5 糊成「看见 Finalize 改了就已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。崩溃恢复三步 / 默认锁 / 半写标成另一对象 |
+| A1615 | 高 | 看见填了 SynchronyParams.Precision / 看见提议者钟偏有界 会被写成已经是 MessageDelay，或当成已经 timely | 官方：Precision 是钟偏；MessageDelay 是提案消息还能走多久 |
+| A1616 | 高 | 看见填了两个 / 看见这两个参数用于 PBTS 会被写成已经启用 PBTS，或当成已经不能关 | 官方：两把尺由 PBTS 使用；填了不是已经到了 PbtsEnableHeight |
+| A1617 | 高 | 看见用于 PBTS / 看见能出合法提案 会被写成已经是永恒常数，或当成已经是 BFT Time 中位数 | 官方：不是未标注版本的永恒共识常数，也不是中位数 |
+| A1618 | 中 | 怎样设 PRECISION / MSGDELAY / 默认毫秒 / 怎样选 PbtsEnableHeight 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1619 | 记录 | 会与 40 / 330 / 327 糊成「看见填了同步参数就已经是 PBTS」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 SynchronyParams / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。块时间算法 / 扩展启用高度 / 提议超时标成另一对象 |
 
 
 

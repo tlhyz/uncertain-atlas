@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 337）
+
+- CometBFT SynchronyParams 工作实例（官方 Requirements for the Application List of Parameters / SynchronyParams.Precision / SynchronyParams.MessageDelay，实现 / SynchronyParams，不另写 19 节）：看见填了 Precision 不是已经是 MessageDelay。看见填了两个不是已经启用 PBTS。看见用于 PBTS 不是已经是永恒常数。SynchronyParams 不是不变量 40，也不是不变量 330，也不是不变量 327。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 336；语料 C340；模式 name-the-synchrony-params；反模式 precision-sold-as-msgdelay；L10.3 第 332 条。填 L4.4 / CometBFT 档案 SynchronyParams / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样设 PRECISION / MSGDELAY、默认毫秒、怎样选 PbtsEnableHeight。不编博物馆页。不另写 19 节。不与 40 / 330 / 327 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。块时间算法 / 扩展启用高度 / 提议超时标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 336）
 
 - CometBFT FinalizeBlock 落盘禁令工作实例（官方 Requirements for the Application FinalizeBlock / Commit，实现 / FinalizeBlock 落盘禁令，不另写 19 节）：看见 Finalize 改了状态不是已经落盘。看见必须在 Commit 落盘不是已经在 Finalize 落了。看见记住上次成功 Commit 高度不是已经能跳步。FinalizeBlock 落盘禁令不是不变量 320，也不是不变量 310，也不是不变量 5。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

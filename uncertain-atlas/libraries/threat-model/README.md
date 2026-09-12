@@ -337,6 +337,7 @@
 | 328 | ConsensusParams H→H+1 被写成已经在本高生效 | 协议 + 文案 | 看见本高 Finalize 回了 ConsensusParams / H+1 立刻用了新参数 / 参数更新写了 H+1 / ConsensusParams H→H+1 当成已经在本高生效或已经是验证人集合那种 H+2 才计票或已经是扩展启用高度那种切换 | 不变量 333；语料 C337 |
 | 329 | Snapshot Connection 被写成已经必须实现快照 | 协议 + 文案 | 看见四门里有 Snapshot Connection / 给人快照或给自己装回 / 应用选择不实现 / Snapshot Connection 当成已经必须实现快照或已经必须两头都做或已经没有 state sync 这条对象 | 不变量 334；语料 C338 |
 | 330 | FinalizeBlock 落盘禁令被写成已经交差 | 协议 + 文案 | 看见 Finalize 改了状态 / 必须在 Commit 落盘 / 记住上次成功 Commit 高度 / FinalizeBlock 落盘禁令当成已经落盘或已经在 Finalize 落了或已经能跳步 | 不变量 335；语料 C339 |
+| 331 | SynchronyParams 被写成已经启用 PBTS | 协议 + 文案 | 看见填了 Precision / 填了两个 / 用于 PBTS / SynchronyParams 当成已经是 MessageDelay 或已经启用 PBTS 或已经是永恒常数 | 不变量 336；语料 C340 |
 
 ## 不自动覆盖
 

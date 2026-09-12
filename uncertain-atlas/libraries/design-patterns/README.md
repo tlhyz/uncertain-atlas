@@ -233,3 +233,4 @@
 - [name-the-params-delay](name-the-params-delay.md)
 - [name-the-snapshot-conn](name-the-snapshot-conn.md)
 - [name-the-finalize-persist](name-the-finalize-persist.md)
+- [name-the-synchrony-params](name-the-synchrony-params.md)
