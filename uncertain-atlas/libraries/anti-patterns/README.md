@@ -132,3 +132,4 @@
 - [backed-sold-as-available](backed-sold-as-available.md)
 - [babe-sold-as-grandpa](babe-sold-as-grandpa.md)
 - [justified-sold-as-finalized](justified-sold-as-finalized.md)
+- [owned-sold-as-fastpath](owned-sold-as-fastpath.md)

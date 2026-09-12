@@ -6,7 +6,7 @@
 |---|---|---|---|---|
 | 默认账户/EVM | 执行时 | 不能安全并行 | 热合约单行道 | L2.2 L5.1 |
 | 声明锁 | 调度前 | 不调度漏列交易 | 本地费/本地队 | L6.1 |
-| 对象所有权 | 类型/对象图 | owned 可旁路（须单独论证） | shared 回全序 | L6.2 |
+| 对象所有权 | 类型/对象图 | address-owned 可走快路径；party 仍排队（须单独论证） | shared 回全序 | L6.2 / [精读](worked-example-owned-vs-fastpath.md) |
 | 乐观 STM | 执行后校验 | **禁止**：必须有序列 L | 回滚风暴 | L6.3；[工作实例](worked-example-block-stm.md) |
 | UTXO | 输入不交则可 | 仍要 canonical 历史 | 热输出少见、热合约仍难 | L2.1 |
 | eUTXO | 整笔校验；共享 datum 输出仍抢 | 同 UTXO | 共享脚本 UTXO 单行道 | L2.5 |
@@ -16,4 +16,5 @@
 
 五笔账（任何高吞吐声称都要拆）：状态 / 执行 / 网络 / 协议 / 硬件。占用压的是存储账，不是并行账。
 
-Block-STM 精读：[`worked-example-block-stm.md`](worked-example-block-stm.md)（不变量 122）。提交 ≡ 串行 L。STM 跑完不是已经最终。不抄加速比。
+Block-STM 精读：[`worked-example-block-stm.md`](worked-example-block-stm.md)（不变量 122）。提交 ≡ 串行 L。STM 跑完不是已经最终。不抄加速比。  
+所有权路径精读：[`worked-example-owned-vs-fastpath.md`](worked-example-owned-vs-fastpath.md)（不变量 128）。owned 不是已经快路径。引用 shared 不是已经授权。进共识块不是已被接受。不抄测试 TPS。

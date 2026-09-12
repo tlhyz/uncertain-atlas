@@ -7,7 +7,7 @@
 
 ## 1. 一句话定义
 
-对象有 ID、版本、所有者。owned 对象上的交易依赖图简单，可以不跟所有共享对象交易挤同一条全序；shared 对象重新引入争用与共识。
+对象有 ID、版本、所有者。所有权同时决定谁能用和版本走快路径还是共识。Address-owned 可走快路径；party 仍是单地址所有，版本走共识。shared 重新引入争用与共识，引用不是已经授权。精读：[`../../tracks/parallelism/worked-example-owned-vs-fastpath.md`](../../tracks/parallelism/worked-example-owned-vs-fastpath.md)（不变量 128）。
 
 ---
 
@@ -43,8 +43,8 @@ Sui 想：如果两笔交易动的是不同的私有对象，何必全球排队�
 1. 交易列出要读/写的对象及其版本。  
 2. 签名。所有者必须覆盖 owned 对象的转移。  
 3. 节点检查版本是否仍是最新。过期则拒。  
-4. 若无 shared：可走快路径确认（产品语义以当前规范为准）。  
-5. 若有 shared：进入共识，与其他写同一对象的交易全序。  
+4. 若是 address-owned 且官方表走快路径：仍须读现行提交路径。Party 对象即使单地址所有也走共识。  
+5. 若有 shared 或其它共识对象：进入排序。引用 shared 不是已经授权。进了某验证者的共识块不是这笔已被接受。  
 6. Move 执行。成功则对象版本递增，所有权可能变更。  
 7. 失败：版本已变或执行 abort，状态回到执行前对象版本。
 
@@ -60,9 +60,11 @@ Sui 想：如果两笔交易动的是不同的私有对象，何必全球排队�
 
 ## 6. 共识
 
-共享对象路径需要全序。Sui 使用过基于 DAG 的 mempool + BFT 排序（Narwhal / Bullshark 一族）。  
+共享对象路径需要全序。历史上走 Narwhal / Bullshark 一族；现行官方页写 Mysticeti + Transaction Driver。客户端不自己拼证书。  
+**事实：** 带着这笔的块被提交，单独不够让这笔生效，还要接受票。certified effects 与 certified checkpoint 是两种最终证明。  
 **事实：** 这是「数据可用与排序拆开」的工程路线之一。  
-**推断：** 快路径的安全论证必须单独读，不能用「我们有 BFT」一句话罩住所有交易。
+**推断：** 快路径的安全论证必须单独读，不能用「我们有 BFT」一句话罩住所有交易。  
+精读：[`../../tracks/parallelism/worked-example-owned-vs-fastpath.md`](../../tracks/parallelism/worked-example-owned-vs-fastpath.md)（不变量 128）。不抄测试 TPS。
 
 与 Solana 比：Solana 每笔都进 leader 槽的全序味道更重；Sui 试图让无争用交易少排队。
 

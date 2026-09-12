@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 129）
+
+- Sui 工作实例：单地址所有不是已经走快路径。引用 shared 不是已经授权。进了共识块不是这笔已被接受。现行客户端不自己拼证书。出处官方 Object Ownership + Consensus（Transaction Driver）。
+- 不变量 128；语料 C132；模式 name-the-ownership-path；反模式 owned-sold-as-fastpath；L10.3 第 124 条。填 L6.2 / L6.4 / Sui 档案 §1 §4 §6 / 并行表 / 停链面地图。
+- 不抄 epoch 小时 / 测试 TPS / 轮数。不写怎样未授权改 shared。不编博物馆页。不与 90 / 91 / 122 / 127 糊成一句。
+
 ## 2026-09-12（续 128）
 
 - Ethereum 工作实例：出块 / head 不是已经 justified；justified 不是已经 finalized。JSON-RPC `latest` / `safe` / `finalized` 不是同一标签；官方没有把 `safe` 写成 justified。一张 attestation 同时带头票与 FFG source/target。出处 ethereum.org Gasper / PoS / Attestations / JSON-RPC。

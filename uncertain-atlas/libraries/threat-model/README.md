@@ -129,6 +129,7 @@
 | 120 | backed 被写成已经可用或已经最终 | 协议 + 文案 | 回执 / collator RPC 当成可用、审批或 GRANDPA | 不变量 125；语料 C129 |
 | 121 | BABE 出块被写成已经 GRANDPA 最终 | 协议 + 文案 | 新头 / explorer 绿 / 混合共识当成不可逆；最长链当成 hybrid 尺子 | 不变量 126；语料 C130 |
 | 122 | justified 或 head 被写成已经 finalized | 协议 + 文案 | 出块 / latest / safe / justified 当成不可逆 | 不变量 127；语料 C131 |
+| 123 | 单地址所有被写成已经走快路径 | 协议 + 文案 | owned / 进块 / 引用 shared 当成已绕过共识、已生效或已授权 | 不变量 128；语料 C132 |
 
 ## 不自动覆盖
 

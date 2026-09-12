@@ -321,7 +321,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M6.2 Sui · 重要
 - object ownership、owned vs shared
 - 依赖图、fast path / 共识旁路思想
-- 覆盖：课文 L6.2。owned 可旁路全局序；shared 不能。禁止「所有交易都绕过共识」。共享对象拥塞控制估值 0 ≠ 已安全：[`../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md`](../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md)（不变量 90）。检查点隔离拒证 ≠ 已分叉：[`../tracks/failure-museum/sui-2026-01-14-commit-divergence.md`](../tracks/failure-museum/sui-2026-01-14-commit-divergence.md)（不变量 91）。因余额不足取消 ≠ 已不扣款：[`../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md`](../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md)（不变量 92）。DKG 按设计关掉 ≠ 已落盘：[`../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md`](../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md)（不变量 93）
+- 覆盖：课文 L6.2。owned ≠ 已经走快路径；引用 shared ≠ 已经授权；进共识块 ≠ 已被接受：[`../tracks/parallelism/worked-example-owned-vs-fastpath.md`](../tracks/parallelism/worked-example-owned-vs-fastpath.md)（不变量 128）。禁止「所有交易都绕过共识」。共享对象拥塞控制估值 0 ≠ 已安全：[`../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md`](../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md)（不变量 90）。检查点隔离拒证 ≠ 已分叉：[`../tracks/failure-museum/sui-2026-01-14-commit-divergence.md`](../tracks/failure-museum/sui-2026-01-14-commit-divergence.md)（不变量 91）。因余额不足取消 ≠ 已不扣款：[`../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md`](../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md)（不变量 92）。DKG 按设计关掉 ≠ 已落盘：[`../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md`](../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md)（不变量 93）
 
 ### M6.3 Aptos · 重要
 - Move resource
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–127）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–128）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C131；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C132；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

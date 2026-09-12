@@ -13,6 +13,6 @@
 | 课 | 文件 | 核心问题 |
 |---|---|---|
 | 6.1 | [L06-M01-solana-declare.md](L06-M01-solana-declare.md) | 为何先报读写集才能并行 |
-| 6.2 | [L06-M02-sui-ownership.md](L06-M02-sui-ownership.md) | 所有权如何决定要不要全球排队 |
+| 6.2 | [L06-M02-sui-ownership.md](L06-M02-sui-ownership.md) | 所有权如何决定要不要全球排队；owned ≠ 快路径 |
 | 6.3 | [L06-M03-aptos-stm.md](L06-M03-aptos-stm.md) | 未排死时为何敢并行 |
 | 6.4 | [L06-M04-three-worldviews.md](L06-M04-three-worldviews.md) | 三张地图怎么叠，不确定偷哪张 |

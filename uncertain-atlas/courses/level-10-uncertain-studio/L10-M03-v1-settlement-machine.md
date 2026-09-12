@@ -151,7 +151,8 @@
 120. 若做抽样 / 命名空间 DA：必须点名问的是整块可用、命名空间齐了、编码诚实，还是历史检索（不变量 124）。NMT 齐了不是扩展方阵已经可用。DAS 抽样过关不是已经拿到自己的 blob，也不是编码已经诚实。新块 DA 不是历史已经有人存。第一版可以不当别人的 DA 房东。不要抄方阵边长 / FAQ 百分比。精读：[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md)。这和 KZG≠纠删 DAS（不变量 23）、头即结算、提交≠兑付（不变量 9）不是同一句。  
 121. 若做平行链 / 共享安全：用户可见的「到了」必须点名停在哪一行（不变量 125）。Backed 不是已经可用。可用不是已经有效。Included 不是已经批准。批准不是已经 GRANDPA 最终。中继头有回执不是 PoV 在链上。第一版可以不做平行链。不要抄秒数 / 门槛数字。精读：[`../../tracks/finality/worked-example-backed-vs-available.md`](../../tracks/finality/worked-example-backed-vs-available.md)。这和提交≠兑付（不变量 9）、Active≠Confirmed（不变量 99）、废弃 API（不变量 114）、NMT≠DAS（不变量 124）不是同一句。  
 122. 若拆出块与最终两套装置：用户可见的「到了」必须点名是出块还是最终（不变量 126）。BABE 出块不是已经 GRANDPA。最长链不是 hybrid 最终头之后的尺子。BEEFY 绿不是已经解释了 GRANDPA。第一版可以保持 CometBFT 式同路径出块+终局。不要抄槽秒数 / 百万块 / 超多数数字。精读：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)。这和每高度 commit（L4.6）、Gasper 三词（L5.2）、平行链管道（不变量 125）、出块还在≠纪元已转（不变量 110）、中继最终≠平行已出（不变量 114）不是同一句。  
-123. 若头可摆 + 检查点最终：用户可见的「到了」必须点名是 head / justified / finalized 中的哪一等（不变量 127）。出块不是已经 justified。justified 不是已经 finalized。JSON-RPC `latest` / `safe` / `finalized` 不是同一标签。一张 attestation 的头票不是已经投了最终。第一版可以不卖三等确认。不要抄槽秒数 / epoch 长度 / 美元。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)。这和 BABE≠GRANDPA（不变量 126）、弱主观性（不变量 24）、抽样委员会（不变量 22）、两票谓词（不变量 26）不是同一句。
+123. 若头可摆 + 检查点最终：用户可见的「到了」必须点名是 head / justified / finalized 中的哪一等（不变量 127）。出块不是已经 justified。justified 不是已经 finalized。JSON-RPC `latest` / `safe` / `finalized` 不是同一标签。一张 attestation 的头票不是已经投了最终。第一版可以不卖三等确认。不要抄槽秒数 / epoch 长度 / 美元。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)。这和 BABE≠GRANDPA（不变量 126）、弱主观性（不变量 24）、抽样委员会（不变量 22）、两票谓词（不变量 26）不是同一句。  
+124. 若做对象所有权 / 快路径：必须点名版本走快路径还是共识（不变量 128）。单地址所有不是已经走快路径。引用 shared 不是已经授权。进了共识块不是这笔已被接受。第一版可以不卖快路径 / party / shared 三套「到了」。不要抄测试 TPS。精读：[`../../tracks/parallelism/worked-example-owned-vs-fastpath.md`](../../tracks/parallelism/worked-example-owned-vs-fastpath.md)。这和 STM 跑完≠最终（不变量 122）、估值 0（不变量 90）、隔离拒证（不变量 91）、Gasper 三等（不变量 127）不是同一句。
 
 **以后再发明**
 
@@ -238,7 +239,8 @@
 - 把 NMT 命名空间齐了写成扩展方阵已经可用，或把 DAS 抽样过关写成已经拿到自己的 blob / 编码已经诚实 / 历史已经有人存。  
 - 把 backed 写成已经可用 / 已经有效 / 已经最终，或把中继头有回执写成 PoV 在链上。  
 - 把 BABE 出块写成已经 GRANDPA 最终，或把最长链写成 hybrid 的分叉选择，或把 BEEFY 绿写成已经解释了 GRANDPA。  
-- 把出块 / justified / RPC `safe` 写成已经 finalized，或把 `safe` 写成官方已经等于 justified。
+- 把出块 / justified / RPC `safe` 写成已经 finalized，或把 `safe` 写成官方已经等于 justified。  
+- 把单地址所有写成已经走快路径，或把引用 shared 写成已经授权，或把进共识块写成这笔已被接受。
 
 ---
 
@@ -289,7 +291,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百二十三条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百二十四条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
