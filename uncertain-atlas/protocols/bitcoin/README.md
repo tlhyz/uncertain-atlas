@@ -59,6 +59,8 @@
 
 精读：[`../../tracks/lifecycle/worked-example-dns-name-vs-instruction.md`](../../tracks/lifecycle/worked-example-dns-name-vs-instruction.md)（不变量 261）。看见可读名字不是已经该走 DNS。看见 TXT 不是已经是合法付款指示。看见复制了名字不是已经是 URI。
 
+精读：[`../../tracks/lifecycle/worked-example-payjoin-vs-original.md`](../../tracks/lifecycle/worked-example-payjoin-vs-original.md)（不变量 290）。看见带 pj= 的付款 URI 不是已经是 payjoin 付款。看见原始包不是已经是提案。看见收款方加了输入不是已经另开一笔。
+
 精读：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。付给脚本哈希不是已经揭开赎回脚本。旧节点 HASH160 EQUAL 通过不是新节点已经再跑赎回。哈希对上不是内层已经验过。
 
 精读：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。版本位被置上不是已经锁定。锁定不是已经激活。超时未锁定不是已经可以当激活。

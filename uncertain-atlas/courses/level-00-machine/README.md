@@ -26,7 +26,7 @@
 | 0.4 | [L00-M04-transaction.md](L00-M04-transaction.md) | 交易究竟是什么对象？ |
 | 0.5 | [L00-M05-block-and-order.md](L00-M05-block-and-order.md) | 为什么要把交易装进区块？ |
 | 0.6 | [L00-M06-agreement-problem.md](L00-M06-agreement-problem.md) | 为什么「投个票过半数」不够？ |
-| 0.7 | [L00-M07-one-payment-lifecycle.md](L00-M07-one-payment-lifecycle.md) | 一笔转账从点击到确认经过哪些门？看见付款 URI ≠ 已经授权（不变量 255）；看见签过的消息 ≠ 已经控制资金（不变量 258）；看见静默付款地址 ≠ 已经有输出（不变量 260）；看见付款码 ≠ 已经是存款地址 / 通知输出 ≠ 已经能花（不变量 273）；看见可读名字 ≠ 已经该走 DNS（不变量 261） |
+| 0.7 | [L00-M07-one-payment-lifecycle.md](L00-M07-one-payment-lifecycle.md) | 一笔转账从点击到确认经过哪些门？看见付款 URI ≠ 已经授权（不变量 255）；看见签过的消息 ≠ 已经控制资金（不变量 258）；看见静默付款地址 ≠ 已经有输出（不变量 260）；看见付款码 ≠ 已经是存款地址 / 通知输出 ≠ 已经能花（不变量 273）；看见可读名字 ≠ 已经该走 DNS（不变量 261）；带 pj= 的付款 URI ≠ 已经是 payjoin 付款 / 原始包 ≠ 已经是提案 / 收款方加了输入 ≠ 已经另开一笔（不变量 290） |
 | 0.8 | [L00-M08-five-kinds-of-guarantees.md](L00-M08-five-kinds-of-guarantees.md) | 五种保证如何分开？ |
 | 0.9 | [L00-M09-fake-learning.md](L00-M09-fake-learning.md) | 哪些常见说法其实在害你？ |
 | 0.10 | [L00-M10-uncertain-lens.md](L00-M10-uncertain-lens.md) | 「不确定」该问什么、还不该决定什么？ |
