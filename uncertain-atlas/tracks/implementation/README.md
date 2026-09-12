@@ -55,6 +55,7 @@
 - [`worked-example-blake2f-vs-hash.md`](worked-example-blake2f-vs-hash.md) — 看见 BLAKE2 压缩函数 F ≠ 已经是 BLAKE2b 哈希；看见本页 ≠ 已经能验 Equihash / 已经是中继 / 已经有隐私；152 ≠ keccak / SHA3（不变量 230）
 - [`worked-example-shift-vs-arithmetic.md`](worked-example-shift-vs-arithmetic.md) — 看见原生移位指令 ≠ 已经用算术拼过移位；看见算术右移 ≠ 已经是有符号除；看见更便宜 ≠ 已经是位域打包产品；145 ≠ 已经改了旧字节码（不变量 231）
 - [`worked-example-returndata-vs-memory.md`](worked-example-returndata-vs-memory.md) — 看见返回数据缓冲 ≠ 已经是内存；看见本页 ≠ 已经是 calldata / 已经用两次调用先问长度；看见失败数据能再取 ≠ 已经是 140；下一次类调用 ≠ 缓冲还在（不变量 232）
+- [`worked-example-delegatecall-vs-callcode.md`](worked-example-delegatecall-vs-callcode.md) — 看见委托调用 ≠ 已经是 CALLCODE；看见父作用域发送者传到子作用域 ≠ 已经是普通 CALL；看见可变代码源 ≠ 已经是 7702；能塞进调用数据 ≠ 已经是本页（不变量 233）
 - [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
 - [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）
