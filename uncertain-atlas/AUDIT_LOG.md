@@ -3588,6 +3588,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1557 | 高 | 看见只留最近两份 / 看见 Hash 对上了 会被写成已经有了全部历史快照，或当成已经是同一份 | 官方：一般只留最近两份；同一份要五个字段都相同 |
 | A1558 | 中 | 怎样用 RocksDB / MVCC 拍 / 怎样切块 / 把最近两份或 10 MB 当产品常数会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节。不把最近两份当不确定默认 |
 | A1559 | 记录 | 会与 38 / 321 / 322 / 323 糊成「看见拍了就已经交差之后拍」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Taking Snapshots / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。轻验 AppHash / 装回 / 发现 / 切进共识标成另一对象 |
+### 2026-09-12 · 看见头上有 AppHash 不是已经是交易默克尔
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A1560 | 高 | 看见头上有 AppHash / 看见和 ValidatorsHash、DataHash 并列 会被写成已经是交易默克尔，或当成已经是验证者集合 | 工作实例：app requirements Query Proofs 官方写 AppHash 是应用自己的锚 |
+| A1561 | 高 | 看见 Query 回了 Proof / 看见 QueryResponse.Proof 会被写成已经对上 AppHash，或当成已经是一层树 | 官方：Proof 是一串 ProofOp，每一条只覆盖一棵树的一把键 |
+| A1562 | 高 | 看见一层 ProofOp 的根 / 看见对上了 会被写成已经是下一层要验的值，或当成已经对上最终 AppHash | 官方：这一条的根是下一条的值，最后一条才对 AppHash |
+| A1563 | 中 | 怎样编 ProofOp / 怎样种多层树 / 怎样从 Finalize 写出下一头会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1564 | 记录 | 会与 147 / 314 / 38 糊成「看见头上有 AppHash 就已经能验应用」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query Proofs / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。本头时序 / QueryState / 轻验快照标成另一对象 |
 
 
 

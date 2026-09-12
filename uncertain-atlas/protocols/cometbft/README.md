@@ -61,6 +61,8 @@ ListSnapshots 回了不是已经有了全部快照：[`../../tracks/implementati
 
 拍了这个高度不是已经交差之后拍的：[`../../tracks/implementation/worked-example-snapshot-take-vs-commit.md`](../../tracks/implementation/worked-example-snapshot-take-vs-commit.md)（不变量 324）。看见没停链不是已经一致。看见只留最近两份不是已经有了全部历史快照。
 
+头上有 AppHash 不是已经是交易默克尔：[`../../tracks/implementation/worked-example-query-proof-vs-apphash.md`](../../tracks/implementation/worked-example-query-proof-vs-apphash.md)（不变量 325）。看见 Query 回了 Proof 不是已经对上 AppHash。看见一层 ProofOp 的根不是已经对上最终 AppHash。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

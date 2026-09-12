@@ -327,3 +327,4 @@
 - [snapshotdiscover-sold-as-listed](snapshotdiscover-sold-as-listed.md)
 - [snapshotswitch-sold-as-full-history](snapshotswitch-sold-as-full-history.md)
 - [snapshottake-sold-as-committed](snapshottake-sold-as-committed.md)
+- [queryproof-sold-as-apphash](queryproof-sold-as-apphash.md)

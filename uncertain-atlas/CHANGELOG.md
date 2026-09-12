@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 326）
+
+- CometBFT Query Proofs 工作实例（官方 Requirements for the Application Query Proofs，实现 / Query Proofs，不另写 19 节）：看见头上有 AppHash 不是已经是交易默克尔。看见 Query 回了 Proof 不是已经对上 AppHash。看见一层 ProofOp 的根不是已经对上最终 AppHash。Query Proofs 不是不变量 147，也不是不变量 314，也不是不变量 38。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 325；语料 C329；模式 name-the-query-proof；反模式 queryproof-sold-as-apphash；L10.3 第 321 条。填 L4.4 / CometBFT 档案 Query Proofs / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样编 ProofOp、怎样种多层树、怎样从 Finalize 写出下一头。不编博物馆页。不另写 19 节。不与 147 / 314 / 38 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。本头时序 / QueryState / 轻验快照标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 325）
 
 - CometBFT Taking Snapshots 工作实例（官方 Requirements for the Application Taking Snapshots，实现 / Taking Snapshots，不另写 19 节）：看见拍了这个高度不是已经交差之后拍的。看见没停链不是已经一致。看见只留最近两份不是已经有了全部历史快照。Taking Snapshots 不是不变量 38，也不是不变量 321，也不是不变量 322，也不是不变量 323。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
