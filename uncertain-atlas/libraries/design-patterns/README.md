@@ -48,3 +48,4 @@
 - [name-the-canonical-commit](name-the-canonical-commit.md)
 - [name-the-forkchoice-event](name-the-forkchoice-event.md)
 - [name-the-reference-input](name-the-reference-input.md)
+- [name-the-move-ability](name-the-move-ability.md)

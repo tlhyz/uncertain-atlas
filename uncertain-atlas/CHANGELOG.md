@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 152）
+
+- Move 四能力工作实例（官方 Move Book，不另写 19 节）：`store` 不是已经是顶层资源。`key` 不是模块外谁都能 `move_to`。结构体写了 `has copy` 不是这个实例能复制。出处 move-language.github.io/move/abilities.html。
+- 不变量 151；语料 C155；模式 name-the-move-ability；反模式 store-sold-as-key；L10.3 第 147 条。填 L2.3 / Aptos 档案 / 状态表 / 停链面地图。
+- 不抄官方例句当产品模块。不写怎样做出可复制的钱。不编博物馆页。不另写 19 节。不与 128 / 122 / 15 / 143 / 150 糊成一句。Sui UID / 包裹对象、Aptos Object 标成另一对象。
+
 ## 2026-09-12（续 151）
 
 - CIP-31 工作实例（官方 Active CIP + Conway 正式账本，不另写 19 节）：引用输入不是已经花费。看见 datum / 值不是已经检查花费条件。同一输出不得既花又引用。出处 cips.cardano.org CIP-0031；intersectmbo formal-ledger Conway UTXO `txins ∩ refInputs ≡ ∅`。

@@ -16,7 +16,7 @@
 ## 第二通：工具
 
 6. L1 哈希 / 签名 / Merkle / 编码 / 随机数与确定性（L1.6）。域分离三层编码：[`../tracks/crypto/worked-example-tagged-hash.md`](../tracks/crypto/worked-example-tagged-hash.md)（BIP-340 ≠ EIP-712 ≠ FIPS `ctx`）。  
-7. L2.1–L2.4 状态；L2.5 只在你关心「输出带数据」时读；L2.6 在你关心「谁为磁盘付钱」时读。读 L2.5 时补 [`../tracks/state-models/worked-example-refinput-vs-spent.md`](../tracks/state-models/worked-example-refinput-vs-spent.md)（引用输入 ≠ 已经花费；看见 datum ≠ 已经过锁；同一枚不得既花又引用；不变量 150）。读 L2.1 时若对照 Fuel，补 [`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突；并行验证 ≠ 已经不需要顺序 L；不变量 143）。  
+7. L2.1–L2.4 状态；L2.5 只在你关心「输出带数据」时读；L2.6 在你关心「谁为磁盘付钱」时读。读 L2.3 时补 [`../tracks/state-models/worked-example-ability-vs-resource.md`](../tracks/state-models/worked-example-ability-vs-resource.md)（`store` ≠ 已经是顶层资源；声明了 `has copy` ≠ 这个实例能复制；不变量 151）。读 L2.5 时补 [`../tracks/state-models/worked-example-refinput-vs-spent.md`](../tracks/state-models/worked-example-refinput-vs-spent.md)（引用输入 ≠ 已经花费；看见 datum ≠ 已经过锁；同一枚不得既花又引用；不变量 150）。读 L2.1 时若对照 Fuel，补 [`../tracks/parallelism/worked-example-utxo-access-list.md`](../tracks/parallelism/worked-example-utxo-access-list.md)（谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突；并行验证 ≠ 已经不需要顺序 L；不变量 143）。  
 8. 打开决策矩阵状态表，确认最后一列是空的。
 
 ## 第三通：两种最终

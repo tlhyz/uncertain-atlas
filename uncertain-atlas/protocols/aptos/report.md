@@ -58,7 +58,7 @@ Aptos：让程序员仍写「普通」Move，由运行时发现冲突。
 
 ## 5. 状态模型
 
-Move 资源在账户下。可编程性像账户+模块。  
+Move 资源在账户下。可编程性像账户+模块。`store` 不是已经是顶层资源。结构体写了 `has copy` 不是这个实例能复制。精读：[`../../tracks/state-models/worked-example-ability-vs-resource.md`](../../tracks/state-models/worked-example-ability-vs-resource.md)（不变量 151）。  
 并行不靠用户声明锁，靠执行期读写集。  
 热点资源仍会反复冲突 → 回滚风暴。
 

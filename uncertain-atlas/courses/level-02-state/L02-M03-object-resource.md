@@ -41,7 +41,8 @@ Move 的 resource 还多一句：资源不能被复制或扔掉（除非模块�
 **owned object：** 单一所有者。许多系统设计成：所有者签名即可，不必和所有共享对象交易一起全序。  
 **shared object：** 多交易可争用，必须进入共识排序（或等价的全局协议）。
 
-**resource（Move）：** 线性类型味道。不能随意 copy/drop。模块定义资源的产生与销毁。
+**resource（Move）：** 线性类型味道。不能随意 copy/drop。模块定义资源的产生与销毁。  
+`store` 不是已经是顶层资源。结构体写了 `has copy` 不是这个实例能复制。精读：[`../../tracks/state-models/worked-example-ability-vs-resource.md`](../../tracks/state-models/worked-example-ability-vs-resource.md)（不变量 151）。
 
 **事实：** Sui 以对象为中心；Aptos 以账户+Move 资源为主，并行靠 Block-STM 乐观执行，不是同一条路。  
 **推断：** 「对象模型更容易并行」只对 owned 路径结构性地成立；shared 一多，故事退回账户热点。
@@ -112,10 +113,10 @@ T3 与任何其他改 plaza 的交易冲突。
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 能力 / 所有权不替代验签 |
-| 协议 | owned 可局部序；shared 回到全局序 |
+| 协议 | owned 可局部序；shared 回到全局序；`store` ≠ 已经是顶层资源 |
 | 实现 | 版本号 / 锁必须两客户端相同 |
 | 部署 | 共享对象争用先打执行器 |
 | 经济 | AMM 式共享盘会把并行广告打回原形 |
 
-**禁止假学习：** 「对象模型所以所有交易绕过共识。」
-**边界：** owned/shared 深挖在 L6.2。
+**禁止假学习：** 「对象模型所以所有交易绕过共识。」「`store` = 已经上架。」「写了 `has copy` = 每种实例都能复制。」「字段是整数 = 钱能复制。」
+**边界：** owned/shared 深挖在 L6.2。Move 四能力精读：[`../../tracks/state-models/worked-example-ability-vs-resource.md`](../../tracks/state-models/worked-example-ability-vs-resource.md)（不变量 151）。不另写 19 节。Sui `UID` / Aptos Object 另标。
