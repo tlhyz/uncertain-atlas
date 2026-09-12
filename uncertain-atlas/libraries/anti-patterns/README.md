@@ -374,3 +374,4 @@
 - [extvoteinfo-sold-as-local](extvoteinfo-sold-as-local.md)
 - [info-sold-as-handshake](info-sold-as-handshake.md)
 - [queryheight-sold-as-committed](queryheight-sold-as-committed.md)
+- [misbehavior-sold-as-enum](misbehavior-sold-as-enum.md)

@@ -269,3 +269,4 @@
 - [name-the-extended-voteinfo](name-the-extended-voteinfo.md)
 - [name-the-info-handshake](name-the-info-handshake.md)
 - [name-the-query-height](name-the-query-height.md)
+- [name-the-misbehavior](name-the-misbehavior.md)

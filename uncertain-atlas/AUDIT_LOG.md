@@ -3831,6 +3831,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1792 | 高 | 看见这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 / 看见填了高度 会被写成已经印进本头 AppHash，或当成已经对上 Proof | 官方：this is the height of the block containing the application's Merkle root hash, which represents the state as it was after committing the block at Height-1 |
 | A1793 | 中 | 怎样写 Query 请求 / 怎样填 height / 怎样对 Merkle 根会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1794 | 记录 | 会与 329 / 147 / 325 糊成「看见能查就已经是 QueryState」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Query 本地查询 / 本头 AppHash / 查询证明标成另一对象 |
+| A1795 | 高 | 看见 Misbehavior.type 只是过错枚举 / 看见有类型 会被写成已经罚没，或当成已经定了奖惩 | 工作实例：abci++_methods Data Types Misbehavior 官方写 Type of the misbehavior. An enum of possible misbehaviors |
+| A1796 | 高 | 看见 height 是过错发生的高度、time 是那一高已提交块的时间 / 看见有时间 会被写成已经验过这个时间，或当成已经交差 | 官方：Height when the offense occurred；Timestamp of the block that was committed at height height |
+| A1797 | 高 | 看见 total_voting_power 是那一高验证者集合的总权 / 看见有总权 会被写成已经按到场定奖惩，或当成已经改了集合 | 官方：Total voting power of the validator set at height height |
+| A1798 | 中 | 怎样编 Misbehavior / 怎样填枚举 / 怎样算总权会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1799 | 记录 | 会与 21 / 304 / 365 糊成「看见有 Misbehavior 就已经罚没」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Misbehavior 类型 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。证据上链 / 票上时间 / VoteInfo 到场标成另一对象 |
 
 
 
