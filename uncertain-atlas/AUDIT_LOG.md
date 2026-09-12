@@ -4106,6 +4106,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2067 | 高 | 看见 FinalizeBlockRequest.time 是已决块的时间戳 / 看见填了 time 会被写成已经对上了拟议块头，或当成已经是 PrepareProposalRequest.time | 官方表：time is Timestamp of the finalized block |
 | A2068 | 中 | 怎样写 Prepare 请求末栏 / 怎样填 next_validators_hash / 怎样填 proposer_address 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2069 | 记录 | 会与 394 / 413 / 424 糊成「看见填了 Prepare 请求末栏就已经是 Finalize 请求栏的 next_validators_hash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 请求末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 Finalize 请求栏的 next_validators_hash / 已经造了这份提案 / 已经对上了拟议块头 标成另一对象 |
+| A2070 | 高 | 看见 ProcessProposalRequest.next_validators_hash 是下一验证者集合默克尔根 / 看见填了 next_validators_hash 会被写成已经是 Prepare 请求末栏的 next_validators_hash，或当成已经是 Finalize 请求栏的 next_validators_hash | 官方表：next_validators_hash is Merkle root of the next validator set |
+| A2071 | 高 | 看见 ProcessProposalRequest.proposer_address 是造了这份提案的验证者地址 / 看见填了 proposer_address 会被写成已经正在造这份提案，或当成已经知道本头哈希 | 官方表：proposer_address is Address of the validator that created the proposal |
+| A2072 | 高 | 看见 PrepareProposalResponse.txs 是可能改过的、挑进拟议块的交易列表 / 看见回了 txs 会被写成已经是初步交易列表，或当成已经保证是这一次 | 官方表：txs is Possibly modified list of transactions that have been picked as part of the proposed block |
+| A2073 | 中 | 怎样写 Process 请求末栏 / 怎样填 next_validators_hash / 怎样填 proposer_address 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2074 | 记录 | 会与 426 / 413 / 423 糊成「看见填了 Process 请求末栏就已经是 Prepare 请求末栏的 next_validators_hash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 请求末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 Prepare 请求末栏的 next_validators_hash / 已经正在造这份提案 / 已经是初步交易列表 标成另一对象 |
 
 
 
