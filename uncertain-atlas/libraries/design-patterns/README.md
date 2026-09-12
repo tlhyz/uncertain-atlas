@@ -112,3 +112,4 @@
 - [name-the-block-list](name-the-block-list.md)
 - [name-the-exit-domain](name-the-exit-domain.md)
 - [name-the-inclusion-window](name-the-inclusion-window.md)
+- [name-the-activation-churn](name-the-activation-churn.md)
