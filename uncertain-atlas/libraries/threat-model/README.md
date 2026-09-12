@@ -371,6 +371,7 @@
 | 362 | Info 车道被写成已经排了优先 | 协议 + 文案 | 看见没定义 lane_priorities / 空表对空默认 / 优先级 0 留给不设道 / Info 车道当成已经排了优先或已经选型或已经进了块 | 不变量 367；语料 C371 |
 | 363 | Snapshot 类型被写成已经装完 | 协议 + 文案 | 看见快照全字段（含 Metadata）对上 / 引擎不解释 format / hash / 空快照也至少 1 块 / Snapshot 类型当成已经装完或已经轻验 AppHash 或已经齐 | 不变量 368；语料 C372 |
 | 364 | ExtendedVoteInfo 被写成已经从块里抽出 | 协议 + 文案 | 看见 ExtendedVoteInfo 从本进程抽出 / 把验过的签交给应用 / 扩展关掉则字段全空 / ExtendedVoteInfo 当成已经从块里抽出或已经按原样签或已经到了启用高度 | 不变量 369；语料 C373 |
+| 365 | Info 握手被写成已经是快照重放 | 协议 + 文案 | 看见 Info 用来握手对齐 / app_version 进每块头 / last_block_app_hash / last_block_height 要在 Commit 里落盘 / Info 握手当成已经是快照重放或已经印进本头 AppHash 或已经交差 | 不变量 370；语料 C374 |
 
 ## 不自动覆盖
 

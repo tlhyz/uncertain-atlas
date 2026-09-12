@@ -372,3 +372,4 @@
 - [lane-sold-as-priority](lane-sold-as-priority.md)
 - [snapshot-sold-as-identical](snapshot-sold-as-identical.md)
 - [extvoteinfo-sold-as-local](extvoteinfo-sold-as-local.md)
+- [info-sold-as-handshake](info-sold-as-handshake.md)

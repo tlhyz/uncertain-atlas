@@ -151,6 +151,8 @@ retain_height 默认 0 不是已经在剪：[`../../tracks/implementation/worked
 
 ExtendedVoteInfo 从本进程抽出不是已经从块里抽出：[`../../tracks/implementation/worked-example-extvoteinfo-vs-local.md`](../../tracks/implementation/worked-example-extvoteinfo-vs-local.md)（不变量 369）。看见把验过的签交给应用不是已经按原样签。看见扩展关掉则字段全空不是已经到了启用高度。
 
+Info 用来握手对齐不是已经是快照重放：[`../../tracks/implementation/worked-example-info-vs-handshake.md`](../../tracks/implementation/worked-example-info-vs-handshake.md)（不变量 370）。看见 app_version 进每块头不是已经印进本头 AppHash。看见 last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

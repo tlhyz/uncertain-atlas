@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 371）
+
+- CometBFT Info 握手工作实例（官方 ABCI++ Methods Info Usage，实现 / Info 握手，不另写 19 节）：看见 Info 用来握手对齐不是已经是快照重放。看见 app_version 进每块头不是已经印进本头 AppHash。看见 last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差。Info 握手不是不变量 314，也不是不变量 147，也不是不变量 320。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 370；语料 C374；模式 name-the-info-handshake；反模式 info-sold-as-handshake；L10.3 第 366 条。填 L4.4 / CometBFT 档案 Info 握手 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Info 回包、怎样对版本、怎样落盘。不编博物馆页。不另写 19 节。不与 314 / 147 / 320 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。QueryState、本头 AppHash、崩溃三步标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 370）
 
 - CometBFT ExtendedVoteInfo 工作实例（官方 ABCI++ Methods Data Types ExtendedVoteInfo，实现 / ExtendedVoteInfo，不另写 19 节）：看见 ExtendedVoteInfo 从本进程抽出不是已经从块里抽出。看见把验过的签交给应用不是已经按原样签。看见扩展关掉则字段全空不是已经到了启用高度。ExtendedVoteInfo 不是不变量 365，也不是不变量 358，也不是不变量 330。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

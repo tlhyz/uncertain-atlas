@@ -3821,6 +3821,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1782 | 高 | 看见扩展关掉则 vote_extension / non_rp_vote_extension 和对应的签都空 / 看见空着 会被写成已经到了启用高度，或当成已经交差 | 官方：If vote extensions are disabled these fields and signatures will be empty |
 | A1783 | 中 | 怎样编 ExtendedVoteInfo / 怎样验签 / 怎样开关扩展会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1784 | 记录 | 会与 365 / 358 / 330 糊成「看见 Prepare 里有扩展就已经从块里抽出」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。VoteInfo 抽出 / 两份扩展两份签 / 启用高度标成另一对象 |
+| A1785 | 高 | 看见 Info 用来在启动或恢复时让引擎和应用握手对齐 / 看见能回 会被写成已经是快照重放，或当成已经是 QueryState | 工作实例：abci++_methods Info Usage 官方写 used to sync CometBFT with the application during a handshake on startup or recovery |
+| A1786 | 高 | 看见回的 app_version 会写进每一块的头 / 看见有版本 会被写成已经印进本头 AppHash，或当成已经交差 | 官方：The returned app_version will be included in the Header of every block |
+| A1787 | 高 | 看见引擎指望 last_block_app_hash 和 last_block_height 在 Commit 里更新并落盘 / 看见回了这两列 会被写成已经交差，或当成已经在剪 | 官方：CometBFT expects last_block_app_hash and last_block_height to be updated and persisted during Commit |
+| A1788 | 中 | 怎样写 Info 回包 / 怎样对版本 / 怎样落盘会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1789 | 记录 | 会与 314 / 147 / 320 糊成「看见能回 Info 就已经是快照重放」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 握手 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。QueryState / 本头 AppHash / 崩溃三步标成另一对象 |
 
 
 

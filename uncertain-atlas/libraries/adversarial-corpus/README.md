@@ -384,6 +384,7 @@
 | C371 | 367 没定义lane_priorities≠已经排了优先 | 文案把应用可以不定义 lane_priorities、这时引擎把交易都放进一条道 / 没填表写成已经排了优先或已经交差；或把 lane_priorities 空当且仅当 default_lane 空、默认道必须是表里的一个标识 / 对上了写成已经选型或已经交差；或把最低优先级是 1、0 留给应用不设道（ResponseCheckTx 里空 lane_id） / 写了 0 写成已经进了块或已经从池里删掉；或把 Info 车道写成不变量 317 / 312 / 301 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C372 | 368 快照全字段含Metadata对上≠已经装完 | 文案把快照全字段（含 Metadata）对上才算同一份、同一份才能从各节点拉 chunk / 对上了写成已经装完或已经交差；或把 format 是应用自己的版本、引擎不解释 format / hash、只比较 hash / 有哈希写成已经轻验 AppHash 或已经从创世重放；或把空快照也至少 1 块、网上一份快照报文最多 4 MB / 有块数写成已经齐或已经是共识常数；或把 Snapshot 类型写成不变量 321 / 322 / 38 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C373 | 369 ExtendedVoteInfo从本进程抽出≠已经从块里抽出 | 文案把 ExtendedVoteInfo 从本进程的 CometBFT 数据结构抽出 / Prepare 里有这份写成已经从拟议块或已决块抽出或已经带了公钥；或把 extension_signature 已由引擎验过、交给应用再处理；扩展启用时两份签都在；没给 non_rp 就签空切片 / 有签写成已经按原样签或已经有重放保护；或把扩展关掉则 vote_extension / non_rp_vote_extension 和对应的签都空 / 空着写成已经到了启用高度或已经交差；或把 ExtendedVoteInfo 写成不变量 365 / 358 / 330 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C374 | 370 Info用来握手对齐≠已经是快照重放 | 文案把 Info 用来在启动或恢复时让引擎和应用握手对齐 / 能回写成已经是快照重放或已经是 QueryState；或把回的 app_version 会写进每一块的头 / 有版本写成已经印进本头 AppHash 或已经交差；或把引擎指望 last_block_app_hash 和 last_block_height 在 Commit 里更新并落盘 / 回了这两列写成已经交差或已经在剪；或把 Info 握手写成不变量 314 / 147 / 320 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。
