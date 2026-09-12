@@ -67,6 +67,8 @@ ListSnapshots 回了不是已经有了全部快照：[`../../tracks/implementati
 
 立刻整块执行不是已经离开关键路径：[`../../tracks/implementation/worked-example-prepare-timeout-vs-liveness.md`](../../tracks/implementation/worked-example-prepare-timeout-vs-liveness.md)（不变量 327）。看见填了 TimeoutPropose 不是已经装得下。看见又开一轮不是已经丢了活性。
 
+同一高度回了不同码不是已经有了 CheckTxCode：[`../../tracks/implementation/worked-example-checktx-oscillate-vs-stable.md`](../../tracks/implementation/worked-example-checktx-oscillate-vs-stable.md)（不变量 328）。看见还在振荡不是已经过了 h_stable。看见本地不再振荡不是已经各节点同一份 b。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

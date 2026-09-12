@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 329）
+
+- CometBFT CheckTx 最终不再振荡工作实例（官方 Requirements for the Application Formal Requirement 13 [`CheckTx`, eventual non-oscillation]，实现 / CheckTx 最终不再振荡，不另写 19 节）：看见同一高度回了不同码不是已经有了 CheckTxCode。看见还在振荡不是已经过了 h_stable。看见本地不再振荡不是已经各节点同一份 b。CheckTx 最终不再振荡不是不变量 312，也不是不变量 301，也不是不变量 313，也不是不变量 33。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 328；语料 C332；模式 name-the-checktx-stable；反模式 checktxcode-sold-as-stable；L10.3 第 324 条。填 L4.4 / CometBFT 档案 CheckTx 最终不再振荡 / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样实现 CheckTx、怎样挑稳定高度、怎样写布尔。不编博物馆页。不另写 19 节。不与 312 / 301 / 313 / 33 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。CheckTxState / 池交接 / 重放保护 / 四门标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 328）
 
 - CometBFT PrepareProposal 及时性工作实例（官方 Requirements for the Application Formal Requirement 1 [`PrepareProposal`, timeliness]，实现 / PrepareProposal 及时性，不另写 19 节）：看见立刻整块执行不是已经离开关键路径。看见填了 TimeoutPropose 不是已经装得下。看见又开一轮不是已经丢了活性。Prepare 及时性不是不变量 33，也不是不变量 47，也不是不变量 311，也不是不变量 52。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

@@ -330,3 +330,4 @@
 - [queryproof-sold-as-apphash](queryproof-sold-as-apphash.md)
 - [peerfilter-sold-as-connected](peerfilter-sold-as-connected.md)
 - [preparetimeout-sold-as-liveness](preparetimeout-sold-as-liveness.md)
+- [checktxcode-sold-as-stable](checktxcode-sold-as-stable.md)
