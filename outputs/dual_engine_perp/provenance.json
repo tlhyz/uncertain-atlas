@@ -1,0 +1,146 @@
+{
+  "interval": "1h",
+  "tech_symbols": [
+    "SOXL",
+    "SNXX"
+  ],
+  "crypto_symbols": [
+    "BTC",
+    "ETH",
+    "SOL"
+  ],
+  "overlap_start": "2026-07-14 06:00:00+00:00",
+  "overlap_end": "2026-09-12 23:00:00+00:00",
+  "bars": 1458,
+  "seed_windows": [
+    {
+      "window": {
+        "id": "TECH_T1",
+        "symbol": "SOXL",
+        "start": "2024-07-10",
+        "end": "2024-09-30",
+        "pattern": "high_crash_v_chop",
+        "priority": 2,
+        "structural_only": false
+      },
+      "executable": false,
+      "status": "STRUCTURAL_SEED_ONLY",
+      "gate_bars": 0,
+      "gate_start": null,
+      "gate_end": null,
+      "notes": [
+        "no Gate bars in seed range"
+      ]
+    },
+    {
+      "window": {
+        "id": "TECH_T2",
+        "symbol": "SOXL",
+        "start": "2025-02-01",
+        "end": "2025-06-30",
+        "pattern": "sustained_drop_panic_recovery",
+        "priority": 1,
+        "structural_only": false
+      },
+      "executable": false,
+      "status": "STRUCTURAL_SEED_ONLY",
+      "gate_bars": 0,
+      "gate_start": null,
+      "gate_end": null,
+      "notes": [
+        "no Gate bars in seed range"
+      ]
+    },
+    {
+      "window": {
+        "id": "TECH_T3",
+        "symbol": "SOXL",
+        "start": "2026-06-22",
+        "end": "2026-08-31",
+        "pattern": "extreme_drop_bounce",
+        "priority": 3,
+        "structural_only": false
+      },
+      "executable": true,
+      "status": "EXECUTABLE",
+      "gate_bars": 1170,
+      "gate_start": "2026-07-14 06:00:00+00:00",
+      "gate_end": "2026-08-31 23:00:00+00:00",
+      "notes": []
+    },
+    {
+      "window": {
+        "id": "TECH_T4",
+        "symbol": "SNXX",
+        "start": "2026-07-01",
+        "end": "2026-08-31",
+        "pattern": "high_beta_crash_bounce",
+        "priority": 3,
+        "structural_only": false
+      },
+      "executable": true,
+      "status": "EXECUTABLE",
+      "gate_bars": 1170,
+      "gate_start": "2026-07-14 06:00:00+00:00",
+      "gate_end": "2026-08-31 23:00:00+00:00",
+      "notes": []
+    },
+    {
+      "window": {
+        "id": "FAIL_F1",
+        "symbol": "SOXL",
+        "start": "2025-09-01",
+        "end": "2025-10-31",
+        "pattern": "direct_up_short_pain",
+        "priority": 4,
+        "structural_only": false
+      },
+      "executable": false,
+      "status": "STRUCTURAL_SEED_ONLY",
+      "gate_bars": 0,
+      "gate_start": null,
+      "gate_end": null,
+      "notes": [
+        "no Gate bars in seed range"
+      ]
+    },
+    {
+      "window": {
+        "id": "FAIL_F2",
+        "symbol": "SOXL",
+        "start": "2024-09-01",
+        "end": "2024-11-30",
+        "pattern": "drop_no_bounce_inventory",
+        "priority": 4,
+        "structural_only": false
+      },
+      "executable": false,
+      "status": "STRUCTURAL_SEED_ONLY",
+      "gate_bars": 0,
+      "gate_start": null,
+      "gate_end": null,
+      "notes": [
+        "no Gate bars in seed range"
+      ]
+    },
+    {
+      "window": {
+        "id": "CRYPTO_C1",
+        "symbol": "BTC",
+        "start": "2024-09-01",
+        "end": "2024-11-30",
+        "pattern": "btc_up_tech_weak",
+        "priority": 2,
+        "structural_only": false
+      },
+      "executable": false,
+      "status": "STRUCTURAL_SEED_ONLY",
+      "gate_bars": 0,
+      "gate_start": null,
+      "gate_end": null,
+      "notes": [
+        "no Gate bars in seed range"
+      ]
+    }
+  ]
+}

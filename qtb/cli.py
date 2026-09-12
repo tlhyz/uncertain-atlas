@@ -75,6 +75,11 @@ def build_parser() -> argparse.ArgumentParser:
     ab.add_argument("--output-dir", default="")
     ab.add_argument("--skip-fine", action="store_true")
     ab.add_argument("--skip-mc", action="store_true")
+
+    dual = sub.add_parser("dual", help="Dual-engine Tech/Crypto state-switching perpetual backtest")
+    dual.add_argument("-c", "--config", default="configs/dual_engine_perp.yaml")
+    dual.add_argument("--cache-only", action="store_true")
+    dual.add_argument("--output-dir", default="")
     return p
 
 
@@ -200,6 +205,18 @@ def cmd_ab(args: argparse.Namespace) -> int:
     return ab_main(argv)
 
 
+def cmd_dual(args: argparse.Namespace) -> int:
+    from qtb.dual.run import load_dual_config, run_job
+
+    cfg = load_dual_config(args.config)
+    if args.cache_only:
+        cfg["cache_only"] = True
+    if args.output_dir:
+        cfg["output_dir"] = args.output_dir
+    run_job(cfg)
+    return 0
+
+
 def cmd_live(args: argparse.Namespace) -> int:
     cfg = _cfg(args)
     broker = LiveBroker(config=cfg)
@@ -233,6 +250,7 @@ def main(argv: list[str] | None = None) -> int:
         "screen": cmd_screen,
         "batch-screen": cmd_screen,
         "ab": cmd_ab,
+        "dual": cmd_dual,
     }
     return handlers[args.cmd](args)
 
