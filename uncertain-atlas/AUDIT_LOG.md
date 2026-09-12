@@ -320,6 +320,8 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+
+
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
 
 ### 2026-09-12 00:40 UTC · 精密：每课五层表
@@ -4394,6 +4396,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2082 | 高 | 看见 FinalizeBlockRequest.syncing_to_height 同步或重放时是目标高、否则等于本高 / 看见填了 syncing_to_height 会被写成已经有完整历史，或当成已经是快照重放 | 官方 Usage：syncing_to_height == target height when syncing/replaying |
 | A2083 | 中 | 怎样写 Finalize 请求末栏 / 怎样填 proposer_address / 怎样填 syncing_to_height 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2084 | 记录 | 会与 427 / 426 / 382 糊成「看见填了 Finalize 请求末栏就已经正在造这份提案」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 请求末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经正在造这份提案 / 已经对上了拟议块头 / 已经有完整历史 标成另一对象 |
+
+| A2085 | 高 | 看见 ProcessProposalResponse.status 是应用认为这份提案合法还是非法 / 看见回了 REJECT 会被写成已经当成块非法，或当成已经不能整块执行候选 | 官方 Usage：If ProcessProposalResponse.status is REJECT, consensus assumes the proposal received is not valid |
+| A2086 | 高 | 看见 ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态 / 看见回了 status 会被写成已经可以像 Prepare 那样依赖其它值，或当成已经和对任意块同一裁决一回事 | 官方 Usage：ProcessProposalResponse.status MUST exclusively depend on ProcessProposalRequest and last committed Application state |
+| A2087 | 高 | 看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价 / 看见写了默认 Accept 会被写成已经 honest proposal 必须 Accept，或当成已经是 Req 3 已经测过 | 官方 Usage：application implementers SHOULD always set ProcessProposalResponse.status to ACCEPT unless they really know liveness implications |
+| A2088 | 中 | 怎样写 Process 回包栏 / 怎样挑 ACCEPT/REJECT / 怎样整块执行候选 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2089 | 记录 | 会与 376 / 338 / 347 糊成「看见回了 ProcessProposalResponse.status 就已经当成块非法」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经当成块非法 / 已经可以像 Prepare 那样依赖其它值 / 已经 honest proposal 必须 Accept 标成另一对象 |
 
 
 
