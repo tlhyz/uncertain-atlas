@@ -302,3 +302,4 @@
 - [p2sh-address-sold-as-16](p2sh-address-sold-as-16.md)
 - [wal-sold-as-signed](wal-sold-as-signed.md)
 - [evidence-sold-as-full-block](evidence-sold-as-full-block.md)
+- [state-sold-as-block](state-sold-as-block.md)

@@ -238,7 +238,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M4.2 高度、轮次、步骤 · 必学
 - propose / prevote / precommit / commit
-- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`；块时间须点名算法 `tracks/consensus/worked-example-pbts.md`（PBTS timely ≠ BFT Time 中位数 ≠ MTP ≠ 调整钟；不变量 40）。复算中位数 ≠ 故障者不能抬高 Time：CSA-2026-001（不变量 61）。本地超时 ≠ 最终性：`tracks/consensus/worked-example-timeouts.md`（不变量 47）。应用回的等待 ≠ 槽位：`tracks/consensus/worked-example-next-block-delay.md`（不变量 52）。默认 MaxBytes ≠ 第一轮活性 SLA：ASA-2023-002（不变量 63；`timeout_propose` 必须对照块上限）。+2/3 ≠ 其余槽位已签：CVE-2020-15091 / Syringa（不变量 65）。本头 LastCommit ≠ 本高度已经 +2/3；本地 subjective ≠ 链上 canonical：[`../tracks/consensus/worked-example-lastcommit-vs-this-block.md`](../tracks/consensus/worked-example-lastcommit-vs-this-block.md)（不变量 148）
+- 覆盖：课文 L4.2；被签字节 `tracks/consensus/worked-example-vote-signbytes.md`；块时间须点名算法 `tracks/consensus/worked-example-pbts.md`（PBTS timely ≠ BFT Time 中位数 ≠ MTP ≠ 调整钟；不变量 40）。复算中位数 ≠ 故障者不能抬高 Time：CSA-2026-001（不变量 61）。本地超时 ≠ 最终性：`tracks/consensus/worked-example-timeouts.md`（不变量 47）。应用回的等待 ≠ 槽位：`tracks/consensus/worked-example-next-block-delay.md`（不变量 52）。默认 MaxBytes ≠ 第一轮活性 SLA：ASA-2023-002（不变量 63；`timeout_propose` 必须对照块上限）。+2/3 ≠ 其余槽位已签：CVE-2020-15091 / Syringa（不变量 65）。本头 LastCommit ≠ 本高度已经 +2/3；本地 subjective ≠ 链上 canonical：[`../tracks/consensus/worked-example-lastcommit-vs-this-block.md`](../tracks/consensus/worked-example-lastcommit-vs-this-block.md)（不变量 148）。本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State：[`../tracks/implementation/worked-example-state-vs-gossip.md`](../tracks/implementation/worked-example-state-vs-gossip.md)（不变量 300）
 
 ### M4.3 锁、解锁、超时 · 必学
 - locking / unlock / round change
@@ -423,7 +423,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.3 存储 · 必学
 - WAL、原子提交、断电、剪枝、状态同步
 - 「写到一半断电怎么办」
-- 覆盖：课文 L9.3；崩溃精读 `tracks/implementation/worked-example-crash.md`。写下每条消息 ≠ 已经 fsync；回放时又要签 ≠ 已经双签：[`../tracks/implementation/worked-example-wal-vs-signed.md`](../tracks/implementation/worked-example-wal-vs-signed.md)（不变量 298）。ABCI 快照 ≠ 创世重放：`tracks/implementation/worked-example-statesync.md`（只有轻验 AppHash 可信；不变量 38）。轻验集合 ≠ 提议者选择：ASA-2024-009（不变量 56）。写盘前尺寸检查固定宽度：CVE-2025-46597（不变量 51）。有限服务位 ≠ 已经能服任意旧块：[`../tracks/network/worked-example-limited-service-vs-archive.md`](../tracks/network/worked-example-limited-service-vs-archive.md)（不变量 250）
+- 覆盖：课文 L9.3；崩溃精读 `tracks/implementation/worked-example-crash.md`。写下每条消息 ≠ 已经 fsync；回放时又要签 ≠ 已经双签：[`../tracks/implementation/worked-example-wal-vs-signed.md`](../tracks/implementation/worked-example-wal-vs-signed.md)（不变量 298）。本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State：[`../tracks/implementation/worked-example-state-vs-gossip.md`](../tracks/implementation/worked-example-state-vs-gossip.md)（不变量 300）。ABCI 快照 ≠ 创世重放：`tracks/implementation/worked-example-statesync.md`（只有轻验 AppHash 可信；不变量 38）。轻验集合 ≠ 提议者选择：ASA-2024-009（不变量 56）。写盘前尺寸检查固定宽度：CVE-2025-46597（不变量 51）。有限服务位 ≠ 已经能服任意旧块：[`../tracks/network/worked-example-limited-service-vs-archive.md`](../tracks/network/worked-example-limited-service-vs-archive.md)（不变量 250）
 
 ### M9.4 升级 · 重要
 - 软/硬分叉、runtime upgrade、紧急升级

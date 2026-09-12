@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 301）
+
+- CometBFT State 工作实例（官方 Data Structures / State，实现 / 规范对象，不另写 19 节）：看见 State 对象不是已经进了块。看见头上的根不是已经有了 State。看见能读本地 State 不是已经进了规范。State 不是不变量 147，也不是不变量 38，也不是不变量 56，也不是不变量 148。出处 github.com/cometbft/cometbft spec/core/state.md。
+- 不变量 300；语料 C304；模式 name-the-state；反模式 state-sold-as-block；L10.3 第 296 条。填 L4.2 / L4.4 / L9.3 / CometBFT 档案第 5 步 / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄验证者人数上限、字段表、创世高度取值。不写怎样拼 State 字段、怎样算头上的根、怎样从查询接口还原对象。不编博物馆页。不另写 19 节。不与 147 / 38 / 56 / 148 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。本头 AppHash / 快照 / 提议者选择 / 本头 LastCommit 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 300）
 
 - CometBFT 造提案工作实例（官方 Creating a proposal，共识协议，不另写 19 节）：看见先装证据不是已经装满交易。看见两条收交易上限不是已经同一条。看见 MaxBytes 写成 -1 不是已经没有上限。造提案不是不变量 33，也不是不变量 63，也不是不变量 46。出处 github.com/cometbft/cometbft spec/consensus/creating-proposal.md。

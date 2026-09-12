@@ -65,6 +65,8 @@ Commit  →  ABCI FinalizeBlock / Commit
 
 这是最值钱的分离：**共识不拥有「钱怎么记」的解释权。**
 
+本地 `State` 对象不是已经进了块，也不是已经流言：见 [`../../tracks/implementation/worked-example-state-vs-gossip.md`](../../tracks/implementation/worked-example-state-vs-gossip.md)（不变量 300）。头上的根不是已经有了 State 对象本身。能读本地 State 不是已经进了规范。
+
 ---
 
 ## 6. 共识
