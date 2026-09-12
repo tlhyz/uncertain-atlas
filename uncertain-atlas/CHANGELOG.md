@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 389）
+
+- CometBFT InitChain 请求余栏工作实例（官方 ABCI++ Methods InitChain Request，实现 / InitChain 请求余栏，不另写 19 节）：看见 InitChain 请求 consensus_params 是起步共识参数不是已经没有参数。看见 InitChain 请求 validators 是起步验证者名单不是已经没有集合。看见 InitChain 请求 app_state_bytes 是序列化起步应用状态不是已经验过应用状态。InitChain 请求余栏不是不变量 319，也不是不变量 318，也不是不变量 303。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 388；语料 C392；模式 name-the-init-params；反模式 initparams-sold-as-empty；L10.3 第 384 条。填 L4.4 / CometBFT 档案 InitChain 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 InitChain 请求余栏、怎样选起步参数、怎样排起步名单。不编博物馆页。不另写 19 节。不与 319 / 318 / 303 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。空参数、空名单、验过应用状态标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 388）
 
 - CometBFT InitChain 请求工作实例（官方 ABCI++ Methods InitChain Request，实现 / InitChain 请求，不另写 19 节）：看见 InitChain 请求 time 是创世时间不是已经过了 genesis_time。看见 InitChain 请求 chain_id 是链的 ID 不是已经有了 ChainID。看见 InitChain 请求 initial_height 是起步块高度不是已经能跳步。InitChain 请求不是不变量 303，也不是不变量 323，也不是不变量 320。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -3911,6 +3911,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1872 | 高 | 看见 InitChain 请求 initial_height 是起步块高度 / 看见填了起步高会被写成已经能跳步，或当成已经过了崩溃三步 | 官方：initial_height is Height of the initial block (typically 1) |
 | A1873 | 中 | 怎样写 InitChain 请求 / 怎样填时间 / 怎样选起步高会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1874 | 记录 | 会与 303 / 323 / 320 糊成「看见叫了 InitChain 就已经过了 genesis_time」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。genesis_time / ChainID / 能跳步标成另一对象 |
+| A1875 | 高 | 看见 InitChain 请求 consensus_params 是起步共识参数 / 看见填了起步参数会被写成已经没有参数，或当成已经用了回包空参数 | 工作实例：abci++_methods InitChain Request 官方写 consensus_params is Initial consensus-critical parameters |
+| A1876 | 高 | 看见 InitChain 请求 validators 是起步验证者名单 / 看见填了起步名单会被写成已经没有集合，或当成已经用了回包空名单 | 官方：validators is Initial genesis validators, sorted by voting power |
+| A1877 | 高 | 看见 InitChain 请求 app_state_bytes 是序列化起步应用状态 / 看见填了 JSON 字节会被写成已经验过应用状态，或当成已经懂余额 | 官方：app_state_bytes is Serialized initial application state. JSON bytes |
+| A1878 | 中 | 怎样写 InitChain 请求余栏 / 怎样选起步参数 / 怎样排起步名单会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1879 | 记录 | 会与 319 / 318 / 303 糊成「看见填了 InitChain 请求余栏就已经没有参数」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。空参数 / 空名单 / 验过应用状态标成另一对象 |
 
 
 

@@ -90,6 +90,7 @@
 - [`worked-example-paramsblock-vs-maxbytes.md`](worked-example-paramsblock-vs-maxbytes.md) — ConsensusParams.block 限制块大小和块间隔 ≠ 已经是 MaxBytes 上限；ConsensusParams.validator 限制验证者公钥类型 ≠ 已经带了公钥；ConsensusParams.version 是 ABCI 应用版本 ≠ 已经是 app_version 进了头（不变量 385）
 - [`worked-example-paramsevidence-vs-maxbytes.md`](worked-example-paramsevidence-vs-maxbytes.md) — ConsensusParams.evidence 限制拜占庭证据是否合法 ≠ 已经是证据 MaxBytes；ConsensusParams.abci 是 ABCI 相关参数 ≠ 已经 Prepare 带了扩展；ConsensusParams.synchrony 定提案时间戳合法界 ≠ 已经是 PBTS（不变量 386）
 - [`worked-example-inittime-vs-genesis.md`](worked-example-inittime-vs-genesis.md) — InitChain 请求 time 是创世时间 ≠ 已经过了 genesis_time；InitChain 请求 chain_id 是链的 ID ≠ 已经有了 ChainID；InitChain 请求 initial_height 是起步块高度 ≠ 已经能跳步（不变量 387）
+- [`worked-example-initparams-vs-empty.md`](worked-example-initparams-vs-empty.md) — InitChain 请求 consensus_params 是起步共识参数 ≠ 已经没有参数；InitChain 请求 validators 是起步验证者名单 ≠ 已经没有集合；InitChain 请求 app_state_bytes 是序列化起步应用状态 ≠ 已经验过应用状态（不变量 388）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

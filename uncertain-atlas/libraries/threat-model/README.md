@@ -389,6 +389,7 @@
 | 380 | ConsensusParams 字段被写成已经是 MaxBytes 上限 | 协议 + 文案 | 看见 ConsensusParams.block 限制块大小和块间隔 / ConsensusParams.validator 限制验证者公钥类型 / ConsensusParams.version 是 ABCI 应用版本 / ConsensusParams 字段当成已经是 MaxBytes 上限或已经带了公钥或已经是 app_version 进了头 | 不变量 385；语料 C389 |
 | 381 | ConsensusParams 余栏被写成已经是证据 MaxBytes | 协议 + 文案 | 看见 ConsensusParams.evidence 限制拜占庭证据是否合法 / ConsensusParams.abci 是 ABCI 相关参数 / ConsensusParams.synchrony 定提案时间戳合法界 / ConsensusParams 余栏当成已经是证据 MaxBytes或已经 Prepare 带了扩展或已经是 PBTS | 不变量 386；语料 C390 |
 | 382 | InitChain 请求被写成已经过了 genesis_time | 协议 + 文案 | 看见 InitChain 请求 time 是创世时间 / InitChain 请求 chain_id 是链的 ID / InitChain 请求 initial_height 是起步块高度 / InitChain 请求当成已经过了 genesis_time或已经有了 ChainID或已经能跳步 | 不变量 387；语料 C391 |
+| 383 | InitChain 请求余栏被写成已经没有参数 | 协议 + 文案 | 看见 InitChain 请求 consensus_params 是起步共识参数 / InitChain 请求 validators 是起步验证者名单 / InitChain 请求 app_state_bytes 是序列化起步应用状态 / InitChain 请求余栏当成已经没有参数或已经没有集合或已经验过应用状态 | 不变量 388；语料 C392 |
 
 ## 不自动覆盖
 
