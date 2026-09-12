@@ -156,7 +156,7 @@ Ed25519 用户/验证者签名（常见）、PoH 哈希链、投票签名。
 
 ## 15. 历史事故
 
-主网有过多次停机或严重降级。已归档官方七问：[`../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)（失败的 durable nonce ≠ 已不能再播）；[`../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)（已确认的重复槽赢家 ≠ 可当父块）。其它停机仍须官方 status / postmortem，不编根因。
+主网有过多次停机或严重降级。已归档官方七问：[`../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)（失败的 durable nonce ≠ 已不能再播）；[`../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)（已确认的重复槽赢家 ≠ 可当父块）；[`../../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md`](../../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md)（恢复 shred ≠ 已按父槽滤掉；vote-only ≠ 已停链）。其它停机仍须官方 status / postmortem，不编根因。
 
 ---
 

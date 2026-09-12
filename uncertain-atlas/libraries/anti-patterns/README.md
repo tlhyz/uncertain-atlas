@@ -91,3 +91,4 @@
 - [halt-sold-as-one-kind](halt-sold-as-one-kind.md)
 - [durable-nonce-sold-as-consumed](durable-nonce-sold-as-consumed.md)
 - [confirmed-dup-sold-as-parent](confirmed-dup-sold-as-parent.md)
+- [recovery-shred-sold-as-filtered](recovery-shred-sold-as-filtered.md)

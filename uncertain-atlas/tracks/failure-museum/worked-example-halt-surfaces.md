@@ -1,7 +1,7 @@
 # 实例：「停链」不是一种事故
 
 目的 A + B。不是新馆藏，不新增未核验事故。  
-先修：L0.8、L9.9、不变量 71 / 73 / 74 / 75 / 77 / 82 / 85 / 86。
+先修：L0.8、L9.9、不变量 71 / 73 / 74 / 75 / 77 / 82 / 85 / 86 / 87。
 
 产品句里的「我们会停链」如果只写三个字，下一辆车学不到。  
 馆藏里至少有七种停，外加两种「看起来像停、其实不是」。必须点名是哪一种。
@@ -35,6 +35,7 @@
 | 现象 | 不是 | 馆藏 | 不变量 |
 |---|---|---|---|
 | 出块变少 | 不是高度已经停 | [ASA-2024-002](asa-2024-002.md) 非法提案 | 69 |
+| 最终确认变慢 / 只打包投票 | 不是高度已经停，也不是已最终经济交易被回滚 | [2023-02-25](solana-2023-02-25-turbine-recovery.md) vote-only | 87 |
 | 本节点崩溃 / OOM | 不是共识已拒绝合法块 | [Lavender](cve-2020-5303.md)、Bitcoin 各崩溃案 | 67 等 |
 | `timeout_commit` 在等 | 不是最终性，也不是锁 | 超时精读 | 47 |
 | 资金被锁、链还在出块 | 不是停链 | [Barberry](barberry.md) 只进不出 | 83 |
@@ -61,6 +62,6 @@
 
 ## 回归测试形状
 
-文案把「停链」写成一种事故必须红。把停链交易写成已停必须红。把 EndBlocker 出错写成可跳过必须红。把 +⅓ 打补丁写成不会停必须红。把 Barberry 锁钱写成高度停必须红。把失败 durable nonce 写成已消费 / Tower 已一致必须红。把「正确版本已确认」写成下一领导者必会往上建必须红。
+文案把「停链」写成一种事故必须红。把停链交易写成已停必须红。把 EndBlocker 出错写成可跳过必须红。把 +⅓ 打补丁写成不会停必须红。把 Barberry 锁钱写成高度停必须红。把失败 durable nonce 写成已消费 / Tower 已一致必须红。把「正确版本已确认」写成下一领导者必会往上建必须红。把 vote-only / 落到 Block Repair 写成高度已停必须红。
 
-对照：不变量 84、85、86；语料 C88、C89、C90；反模式 [halt-sold-as-one-kind](../../libraries/anti-patterns/halt-sold-as-one-kind.md)、[durable-nonce-sold-as-consumed](../../libraries/anti-patterns/durable-nonce-sold-as-consumed.md)、[confirmed-dup-sold-as-parent](../../libraries/anti-patterns/confirmed-dup-sold-as-parent.md)。
+对照：不变量 84、85、86、87；语料 C88–C91；反模式 [halt-sold-as-one-kind](../../libraries/anti-patterns/halt-sold-as-one-kind.md)、[durable-nonce-sold-as-consumed](../../libraries/anti-patterns/durable-nonce-sold-as-consumed.md)、[confirmed-dup-sold-as-parent](../../libraries/anti-patterns/confirmed-dup-sold-as-parent.md)、[recovery-shred-sold-as-filtered](../../libraries/anti-patterns/recovery-shred-sold-as-filtered.md)。
