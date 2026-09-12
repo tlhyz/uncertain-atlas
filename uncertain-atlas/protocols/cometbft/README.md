@@ -43,6 +43,8 @@ QueryState 不是已经是 ExecuteTxState：[`../../tracks/implementation/worked
 
 MaxGas 不是已经在执行：[`../../tracks/implementation/worked-example-maxgas-vs-enforced.md`](../../tracks/implementation/worked-example-maxgas-vs-enforced.md)（不变量 315）。看见 GasUsed 不是已经算进共识。看见已提交块不是已经按气验过。
 
+结果列表不是已经同一顺序：[`../../tracks/implementation/worked-example-exectxresult-vs-consensus.md`](../../tracks/implementation/worked-example-exectxresult-vs-consensus.md)（不变量 316）。看见 Code 非零不是已经没进块。看见 Code / Data 不是已经印进本头。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

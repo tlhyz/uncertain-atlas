@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 317）
+
+- CometBFT ExecTxResult 工作实例（官方 Requirements for the Application，实现 / ExecTxResult，不另写 19 节）：看见结果列表不是已经同一顺序。看见 Code 非零不是已经没进块。看见 Code / Data 不是已经印进本头。ExecTxResult 不是不变量 33，也不是不变量 315，也不是不变量 147。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 316；语料 C320；模式 name-the-exectxresult；反模式 exectxresult-sold-as-consensus；L10.3 第 312 条。填 L4.4 / CometBFT 档案 ExecTxResult / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样编回执、怎样建索引、怎样算 LastResultsHash。不编博物馆页。不另写 19 节。不与 33 / 315 / 147 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。四门 / 气 / 本头 AppHash 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 316）
 
 - CometBFT 气工作实例（官方 Requirements for the Application，实现 / 气，不另写 19 节）：看见 MaxGas 不是已经在执行。看见 GasUsed 不是已经算进共识。看见已提交块不是已经按气验过。气不是不变量 299，也不是不变量 63，也不是不变量 33。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
