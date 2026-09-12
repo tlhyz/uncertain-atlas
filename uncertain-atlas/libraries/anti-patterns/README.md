@@ -256,3 +256,4 @@
 - [witness-wire-sold-as-have](witness-wire-sold-as-have.md)
 - [bloom-bit-sold-as-retired](bloom-bit-sold-as-retired.md)
 - [mempool-dump-sold-as-have](mempool-dump-sold-as-have.md)
+- [reject-sold-as-consensus](reject-sold-as-consensus.md)
