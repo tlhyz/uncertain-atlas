@@ -3,7 +3,8 @@
 学完各波后必须回这里改表。空单元格表示未写或不适用，禁止用营销句填。  
 分区精读：[`../consensus/worked-example-partition.md`](../consensus/worked-example-partition.md)。  
 弱主观性：[`worked-example-weak-subjectivity.md`](worked-example-weak-subjectivity.md)（finalized ≠ 从创世同步同样安全）。  
-平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。
+平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。  
+中继出块 ≠ 中继最终：[`../consensus/worked-example-babe-vs-grandpa.md`](../consensus/worked-example-babe-vs-grandpa.md)（BABE ≠ GRANDPA；不变量 126）。
 
 | 系统 | 协议对象 | 用户常误认 | 分区时 | 档案/课 |
 |---|---|---|---|---|
@@ -19,7 +20,7 @@
 | Aptos | 共识给出的序 L 上的 commit | STM 跑完 = 最终 | 同 BFT 家族 | L6.3 |
 | 乐观 rollup | L1 最终 + 窗口 + 根 | L2 UI = 兑付 | 排序者活性 | L7.4 |
 | Celestia | 头 commit + DA 应可用 | 头最终 = 执行最终；NMT 齐 = 方阵已可用 | 同 CometBFT 倾向 | L7.2 / 精读 |
-| Polkadot | 中继 GRANDPA 最终（平行块先可用） | collator RPC / backed = 共享安全最终 | 须读中继 | L7.3 / 精读 |
+| Polkadot | 中继 GRANDPA 最终（平行块先可用；BABE 出块另算） | collator RPC / backed / BABE 新头 = 共享安全最终 | 须读中继；出块服务可仍在、终局另走 | L7.3 / 两篇精读 |
 | Kaspa | DAG 上蓝序变深 | 进了一个块 = 最终 | 视图/传播分裂 | L3.8 |
 | Zcash / Monero | 最重链家族 | 屏蔽/环 = 另一种最终 | 两边可长 | L8 |
 | Mina | 最重链 + 递归证明（点名 SNARKed） | 22kB = 已结算状态；验 π = 最新 staged | 两边可长；DA 仍在；staged 另算 | L8.3 / 精读 |

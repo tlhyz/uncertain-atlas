@@ -62,8 +62,9 @@ XCM：跨共识消息，不是「同一 EVM 里转账」。
 
 ## 6. 共识
 
-中继：出块（BABE 一类）+ 最终（GRANDPA 一类）。  
-GRANDPA 可一次最终多块，与 Tendermint「每高一 commit」不同，不要混。  
+中继：出块（BABE）与最终（GRANDPA）是两条并行独立服务。  
+GRANDPA 对链投票，祖先一次最终；最终头之后比主块，不比长度。与 Tendermint「每高一 commit」不同，不要混。  
+精读：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)（不变量 126）。  
 平行候选有独立的可用性/审批子协议，挂在中继最终性之下。
 
 ---

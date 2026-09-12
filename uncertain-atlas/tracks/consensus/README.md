@@ -27,6 +27,6 @@ Bitcoin MTP 三把尺：[`worked-example-mtp.md`](worked-example-mtp.md)（太�
 Avalanche：思想 vs 产品层已有 leader，须分开。  
 Algorand 抽签 ≠ Avalanche 抽样。  
 Celestia 排序属 CometBFT 家族，最终的是 DA 承诺不是 rollup 余额。  
-Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
+Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。出块 ≠ 最终：[`worked-example-babe-vs-grandpa.md`](worked-example-babe-vs-grandpa.md)（不变量 126）。
 
 安全 / 活性 / 同步模型见 L0.6。锁见 CometBFT 档案与模式 locking-in-bft。

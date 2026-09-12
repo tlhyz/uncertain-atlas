@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 127）
+
+- Polkadot 工作实例：BABE 出块不是已经 GRANDPA 最终。最终对链、一次敲定祖先。最终头之后比主块，不比长度。BEEFY 绿不是已经解释了 GRANDPA。出处 Wiki Consensus / Cosmos 对照 / Glossary。
+- 不变量 126；语料 C130；模式 split-production-from-finality；反模式 babe-sold-as-grandpa；L10.3 第 122 条。填 L4.6 / L7.3 / Polkadot 档案 §6 / 共识表 / 最终性表 / 停链面地图。
+- 不抄槽秒数 / 百万块 / ⅕ / 超多数数字。不写怎样双签。不编博物馆页。不展开 AncestryProof。不与 99 / 110 / 114 / 125 / Gasper 三词糊成一句。
+
 ## 2026-09-12（续 126）
 
 - Polkadot 工作实例：backed 不是已经可用；可用不是已经有效；included 不是已经批准；批准不是已经 GRANDPA 最终。中继头有回执不是 PoV 在链上。出处 Wiki ELVES / async backing + Inclusion / Bitfield Signing。

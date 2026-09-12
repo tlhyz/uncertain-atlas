@@ -23,3 +23,4 @@
 - [name-the-proved-ledger](name-the-proved-ledger.md)
 - [name-the-da-question](name-the-da-question.md)
 - [name-the-parachain-stage](name-the-parachain-stage.md)
+- [split-production-from-finality](split-production-from-finality.md)
