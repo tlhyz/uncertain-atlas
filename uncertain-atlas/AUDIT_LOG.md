@@ -3534,6 +3534,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1527 | 高 | 看见 power 写成 0 / 看见名单里没有这个人 会被写成已经删掉，或当成已经能对不在集合里的人写 0 | 官方：写成 0 时此人必须已在集合里才会被删；总权不得超过 MaxTotalVotingPower |
 | A1528 | 中 | 怎样编 ValidatorUpdate / 怎样算总权 / 公钥类型表会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节。不把 MaxTotalVotingPower 当不确定默认 |
 | A1529 | 记录 | 会与 35 / 303 / 302 糊成「看见 InitChain 回了名单就已经定了」 | 对照写清。不编博物馆页。写进 L4.4 / L4.5 / CometBFT 档案 ValidatorUpdate / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。生效延迟 / 创世空名单 / 换轮标成另一对象 |
+### 2026-09-12 · 看见 InitChain 空参数不是已经没有参数
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A1530 | 高 | 看见 InitChain 回了空 ConsensusParams / 看见没回参数 会被写成已经没有参数，或当成已经用了应用自己的空参数 | 工作实例：app requirements Updating Consensus Parameters 官方写空则用创世文件里的参数；不空才用回包这份 |
+| A1531 | 高 | 看见 FinalizeBlock 回了空 / 看见没回 ConsensusParams 会被写成已经清掉，或当成已经改了 | 官方：nil 则什么也不做；不空才用回包这份 |
+| A1532 | 高 | 看见只改了其中一个字段 / 看见 Block 只填了 MaxBytes 会被写成已经只改这一项，或当成已经保持其余不变 | 官方：每一个不空字段整份套上；其余 Block 字段会被更新成默认 |
+| A1533 | 中 | 怎样编 ConsensusParams / 怎样选 MaxBytes MaxGas / 公钥类型表会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节。不把仓库默认当不确定默认 |
+| A1534 | 记录 | 会与 35 / 315 / 299 / 318 糊成「看见回了 ConsensusParams 就已经改完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。生效延迟 / 气上限 / MaxBytes -1 / 空验证者名单标成另一对象 |
 
 
 

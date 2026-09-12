@@ -333,6 +333,7 @@
 | C320 | 316 结果列表≠已经同一顺序 | 文案把结果列表 / FinalizeBlockResponse 写成已经和送来的交易同一顺序；或把 Code ≠ 0 / 标成无效写成已经没进块或已经建了索引；或把 Code / Data / Events 写成已经印进本头 LastResultsHash 或已经是共识字段；或把 ExecTxResult 写成不变量 33 / 315 / 147 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C321 | 317 CheckTx的Data≠已经被引擎用了 | 文案把 CheckTxResponse.Data / 回了结果字节写成已经被 CometBFT 用了或已经是 ExecTxResult.Data；或把 Data 不确定 / 各节点 Data 不一样写成已经分叉或已经和 Finalize 同一把尺子；或把 Priority / 排进提案优先写成已经是共识顺序或已经进了块；或把 CheckTxResponse 写成不变量 316 / 312 / 301 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C322 | 318 InitChain空名单≠已经没有集合 | 文案把 InitChain 回了空名单 / 没回验证者写成已经没有集合或已经用了应用自己的空集；或把一次更新里同一把公钥出现两次 / 重复写成已经按后一条改权或已经能恢复；或把 power 写成 0 / 名单里没有这个人写成已经删掉或已经能对不在集合里的人写 0；或把 ValidatorUpdate 写成不变量 35 / 303 / 302 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C323 | 319 InitChain空参数≠已经没有参数 | 文案把 InitChain 回了空 ConsensusParams / 没回参数写成已经没有参数或已经用了应用自己的空参数；或把 FinalizeBlock 回了空 / 没回 ConsensusParams 写成已经清掉或已经改了；或把只改了一个字段 / Block 只填了 MaxBytes 写成已经只改这一项或已经保持其余不变；或把 ConsensusParams 写成不变量 35 / 315 / 299 / 318 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

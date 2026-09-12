@@ -21,6 +21,7 @@
 - [`worked-example-exectxresult-vs-consensus.md`](worked-example-exectxresult-vs-consensus.md) — 结果列表 ≠ 已经同一顺序；Code 非零 ≠ 已经没进块；Code / Data ≠ 已经印进本头（不变量 316）
 - [`worked-example-checktxresponse-vs-exec.md`](worked-example-checktxresponse-vs-exec.md) — CheckTx 的 Data ≠ 已经被引擎用了；各节点 Data 不一样 ≠ 已经分叉；Priority ≠ 已经是共识顺序（不变量 317）
 - [`worked-example-validatorupdate-vs-set.md`](worked-example-validatorupdate-vs-set.md) — InitChain 空名单 ≠ 已经没有集合；同一批重复公钥 ≠ 已经能恢复；power 0 ≠ 已经删掉不在集合里的人（不变量 318）
+- [`worked-example-consensusparams-vs-update.md`](worked-example-consensusparams-vs-update.md) — InitChain 空参数 ≠ 已经没有参数；Finalize 没回 ≠ 已经清掉；只改一个字段 ≠ 已经只改这一项（不变量 319）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

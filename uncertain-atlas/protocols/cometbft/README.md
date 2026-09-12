@@ -49,6 +49,8 @@ CheckTx 的 Data 不是已经被引擎用了：[`../../tracks/implementation/wor
 
 InitChain 空名单不是已经没有集合：[`../../tracks/implementation/worked-example-validatorupdate-vs-set.md`](../../tracks/implementation/worked-example-validatorupdate-vs-set.md)（不变量 318）。看见同一批重复公钥不是已经能恢复。看见 power 写成 0 不是已经删掉不在集合里的人。
 
+InitChain 空参数不是已经没有参数：[`../../tracks/implementation/worked-example-consensusparams-vs-update.md`](../../tracks/implementation/worked-example-consensusparams-vs-update.md)（不变量 319）。看见 Finalize 没回不是已经清掉。看见只改一个字段不是已经只改这一项。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

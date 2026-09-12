@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 320）
+
+- CometBFT ConsensusParams 工作实例（官方 Requirements for the Application Updating Consensus Parameters，实现 / ConsensusParams，不另写 19 节）：看见 InitChain 回了空 ConsensusParams 不是已经没有参数。看见 Finalize 没回不是已经清掉。看见只改一个字段不是已经只改这一项。ConsensusParams 不是不变量 35，也不是不变量 315，也不是不变量 299，也不是不变量 318。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 319；语料 C323；模式 name-the-consensusparams；反模式 consensusparams-sold-as-updated；L10.3 第 315 条。填 L4.4 / CometBFT 档案 ConsensusParams / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样编 ConsensusParams、怎样选 MaxBytes / MaxGas、公钥类型表。不把仓库默认当不确定默认。不编博物馆页。不另写 19 节。不与 35 / 315 / 299 / 318 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。生效延迟 / 气上限 / MaxBytes -1 / 空验证者名单标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 319）
 
 - CometBFT ValidatorUpdate 工作实例（官方 Requirements for the Application Updating the Validator Set，实现 / ValidatorUpdate，不另写 19 节）：看见 InitChain 回了空名单不是已经没有集合。看见同一批重复公钥不是已经能恢复。看见 power 写成 0 不是已经删掉不在集合里的人。ValidatorUpdate 不是不变量 35，也不是不变量 303，也不是不变量 302。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
