@@ -414,3 +414,4 @@
 - [extreq-sold-as-precommit](extreq-sold-as-precommit.md)
 - [extreqhash-sold-as-process](extreqhash-sold-as-process.md)
 - [extreqtxs-sold-as-fintxs](extreqtxs-sold-as-fintxs.md)
+- [initonce-sold-as-crash](initonce-sold-as-crash.md)

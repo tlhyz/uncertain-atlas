@@ -4031,6 +4031,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1992 | 高 | 看见 ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 / 看见填了 next_validators_hash 会被写成已经是 Finalize 请求栏的 next_validators_hash，或当成已经换了人 | 官方：next_validators_hash is Hash of the next validator set |
 | A1993 | 中 | 怎样写 ExtendVote 请求余栏 / 怎样填 txs / 怎样填 proposed_last_commit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1994 | 记录 | 会与 408 / 359 / 394 糊成「看见填了 ExtendVote 请求余栏就已经执行那些交易」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经执行那些交易 / 已经交差 local_last_commit / 已经是 Finalize 请求栏的 next_validators_hash 标成另一对象 |
+| A1995 | 高 | 看见 InitChain 创世时只调一次 / 看见调了一次 会被写成已经是崩溃后再调，或当成已经交差 | 工作实例：abci++_methods InitChain Usage 官方写 Called once upon genesis |
+| A1996 | 高 | 看见应用可以决定接受创世验证者集合或用创世应用信息算出另一套 / 看见能决定 会被写成已经没有集合，或当成已经改了集合 | 官方：The application can decide to accept the initial validator set or use a different one, potentially computed based on the initial application state |
+| A1997 | 高 | 看见 Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 / 看见两边都是 ValidatorUpdate 会被写成已经改了集合，或当成已经带了公钥 | 官方：Both the Request and Response include a type Validators, which is a list of ValidatorUpdate types. Technically, this is updating the validator set from the empty set |
+| A1998 | 中 | 怎样写 InitChain Usage 余量 / 怎样决定接受创世集合 / 怎样从空集合更新 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1999 | 记录 | 会与 320 / 318 / 364 糊成「看见填了 InitChain Usage 余量就已经是崩溃后再调」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain Usage 余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是崩溃后再调 / 已经没有集合 / 已经改了集合 标成另一对象 |
 
 
 

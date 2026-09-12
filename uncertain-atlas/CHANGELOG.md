@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 413）
+
+- CometBFT InitChain Usage 余量工作实例（官方 ABCI++ Methods InitChain Usage，实现 / InitChain Usage 余量，不另写 19 节）：看见 InitChain 创世时只调一次不是已经是崩溃后再调。看见应用可以决定接受创世验证者集合或用创世应用信息算出另一套不是已经没有集合。看见 Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新不是已经改了集合。InitChain Usage 余量不是不变量 320，也不是不变量 318，也不是不变量 364。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 412；语料 C416；模式 name-the-init-once；反模式 initonce-sold-as-crash；L10.3 第 408 条。填 L4.4 / CometBFT 档案 InitChain Usage 余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 InitChain Usage 余量、怎样决定接受创世集合、怎样从空集合更新。不编博物馆页。不另写 19 节。不与 320 / 318 / 364 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是崩溃后再调、已经没有集合、已经改了集合标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 412）
 
 - CometBFT ExtendVote 请求余栏工作实例（官方 ABCI++ Methods ExtendVote Request，实现 / ExtendVote 请求余栏，不另写 19 节）：看见 ExtendVoteRequest.txs 是扩展要指的那份块的交易列表不是已经执行那些交易。看见 ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息不是已经交差 local_last_commit。看见 ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希不是已经是 Finalize 请求栏的 next_validators_hash。ExtendVote 请求余栏不是不变量 408，也不是不变量 359，也不是不变量 394。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

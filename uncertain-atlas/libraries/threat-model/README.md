@@ -413,6 +413,7 @@
 | 404 | ExtendVote 请求对应被写成已经会调 ExtendVote | 协议 + 文案 | 看见 ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块 / Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify / Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo / ExtendVote 请求对应当成已经会调 ExtendVote或已经跳过 Verify 或已经 Verify 过迟到扩展 | 不变量 409；语料 C413 |
 | 405 | ExtendVote 请求栏被写成已经跑过 Process | 协议 + 文案 | 看见 ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希 / ExtendVoteRequest.height 是拟议块高度（用来对一下） / ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳 / ExtendVote 请求栏当成已经跑过 Process或已经对上了拟议块或已经验过票上时间 | 不变量 410；语料 C414 |
 | 406 | ExtendVote 请求余栏被写成已经执行那些交易 | 协议 + 文案 | 看见 ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 / ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 / ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 / ExtendVote 请求余栏当成已经执行那些交易或已经交差 local_last_commit或已经是 Finalize 请求栏的 next_validators_hash | 不变量 411；语料 C415 |
+| 407 | InitChain Usage 余量被写成已经是崩溃后再调 | 协议 + 文案 | 看见 InitChain 创世时只调一次 / 应用可以决定接受创世验证者集合或用创世应用信息算出另一套 / Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 / InitChain Usage 余量当成已经是崩溃后再调或已经没有集合或已经改了集合 | 不变量 412；语料 C416 |
 
 ## 不自动覆盖
 
