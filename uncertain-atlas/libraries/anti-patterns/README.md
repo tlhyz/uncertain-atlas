@@ -363,3 +363,4 @@
 - [nonrp-sold-as-protected](nonrp-sold-as-protected.md)
 - [preparefields-sold-as-same](preparefields-sold-as-same.md)
 - [finalize-sold-as-processed](finalize-sold-as-processed.md)
+- [extendwhen-sold-as-locked](extendwhen-sold-as-locked.md)

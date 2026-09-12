@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 362）
+
+- CometBFT ExtendVote 何时调用工作实例（官方 ABCI++ Methods ExtendVote When，实现 / ExtendVote 何时调用，不另写 19 节）：看见 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote。看见 ExtendVote 调用是同步的不是已经能在返回之后再改扩展。看见回包字节不被共识算法解释不是已经是同一份扩展。ExtendVote 何时调用不是不变量 350，也不是不变量 354，也不是不变量 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 361；语料 C365；模式 name-the-extend-when；反模式 extendwhen-sold-as-locked；L10.3 第 357 条。填 L4.4 / CometBFT 档案 ExtendVote 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendVote 何时调用、怎样锁住、怎样选空。不编博物馆页。不另写 19 节。不与 350 / 354 / 358 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。一轮一份扩展、Process 同步、两份扩展两份签标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 361）
 
 - CometBFT Finalize 时的 Process 保证工作实例（官方 ABCI++ Methods FinalizeBlock Usage，实现 / Finalize 时的 Process 保证，不另写 19 节）：看见至少一名非拜占庭验证者跑过 Process 不是已经每个验证者都跑过 Process。看见 Finalize 请求把字段再填一遍不是已经不用再给。看见可以套用先前候选不是已经是 ExecuteTxState。Finalize 时的 Process 保证不是不变量 351，也不是不变量 359，也不是不变量 311。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

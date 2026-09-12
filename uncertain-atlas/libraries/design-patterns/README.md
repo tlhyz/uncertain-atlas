@@ -258,3 +258,4 @@
 - [name-the-non-rp-extension](name-the-non-rp-extension.md)
 - [name-the-prepare-fields](name-the-prepare-fields.md)
 - [name-the-finalize-processed](name-the-finalize-processed.md)
+- [name-the-extend-when](name-the-extend-when.md)

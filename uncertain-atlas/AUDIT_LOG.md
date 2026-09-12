@@ -3776,6 +3776,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1737 | 高 | 看见可以套用先前 Prepare / Process 的候选 / 看见同一块先跑过 会被写成已经是 ExecuteTxState，或当成已经交差 | 官方：应用按列表确定执行，也可以套用先前对同一块跑出的候选 |
 | A1738 | 中 | 怎样写 Finalize / 怎样缓存候选 / 怎样再填字段会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1739 | 记录 | 会与 351 / 359 / 311 糊成「看见要 Finalize 了就已经每个验证者都跑过 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 时的 Process 保证 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。提议者那边也会叫 Process / 同一套字段 / 候选状态标成另一对象 |
+| A1740 | 高 | 看见收到提案和全部块片、并且 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote / 看见到了 prevote 步 会被写成已经会调 ExtendVote，或当成已经是一轮只能交出一份扩展 | 工作实例：abci++_methods ExtendVote When 官方写收到提案和全部块片并且 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote |
+| A1741 | 高 | 看见 ExtendVote 调用是同步的 / 看见引擎在等回包 会被写成已经能在返回之后再改扩展，或当成已经离开关键路径 | 官方：CometBFT 调 ExtendVote 是同步的 |
+| A1742 | 高 | 看见应用回了一串字节、共识算法不解释 / 看见回了 extension 会被写成已经是同一份扩展，或当成已经包进 CanonicalVoteExtension | 官方：应用回一份字节数组，共识算法不解释 |
+| A1743 | 中 | 怎样写 ExtendVote 何时调用 / 怎样锁住 / 怎样选空会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1744 | 记录 | 会与 350 / 354 / 358 糊成「看见到了 prevote 步就已经会调 ExtendVote」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。一轮一份扩展 / Process 同步 / 两份扩展两份签标成另一对象 |
 
 
 

@@ -133,6 +133,8 @@ Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process：[`../
 
 至少一名非拜占庭验证者跑过 Process 不是已经每个验证者都跑过 Process：[`../../tracks/implementation/worked-example-finalize-vs-processed.md`](../../tracks/implementation/worked-example-finalize-vs-processed.md)（不变量 360）。看见 Finalize 请求把字段再填一遍不是已经不用再给。看见可以套用先前候选不是已经是 ExecuteTxState。
 
++2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote：[`../../tracks/implementation/worked-example-extend-when-vs-locked.md`](../../tracks/implementation/worked-example-extend-when-vs-locked.md)（不变量 361）。看见 ExtendVote 调用是同步的不是已经能在返回之后再改扩展。看见回包字节不被共识算法解释不是已经是同一份扩展。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
