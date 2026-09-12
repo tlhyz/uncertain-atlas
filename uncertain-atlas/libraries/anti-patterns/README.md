@@ -224,3 +224,4 @@
 - [blobbasefee-sold-as-basefee](blobbasefee-sold-as-basefee.md)
 - [chainid-opcode-sold-as-signed](chainid-opcode-sold-as-signed.md)
 - [extcodehash-sold-as-copy](extcodehash-sold-as-copy.md)
+- [create2-sold-as-created](create2-sold-as-created.md)
