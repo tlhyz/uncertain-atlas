@@ -411,3 +411,4 @@
 - [snapheight-sold-as-queryh](snapheight-sold-as-queryh.md)
 - [finfields-sold-as-equiv](finfields-sold-as-equiv.md)
 - [fintxs-sold-as-control](fintxs-sold-as-control.md)
+- [extreq-sold-as-precommit](extreq-sold-as-precommit.md)

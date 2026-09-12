@@ -410,6 +410,7 @@
 | 401 | Snapshot 高度余量被写成已经是 Query 高度 | 协议 + 文案 | 看见 Snapshot.height 是拍快照的高度（Commit 之后） / Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据 / Query 可以可选回默克尔证明 / Snapshot 高度余量当成已经是 Query 高度或已经全字段对上或已经对上 AppHash | 不变量 406；语料 C410 |
 | 402 | Finalize 字段余量被写成已经是四门已经结算 | 协议 + 文案 | 看见 Finalize 含刚决定那块的字段 / Finalize 实现必须确定、因为它在状态机复制里推进应用状态 / Info 用来回应用状态信息 / Finalize 字段余量当成已经是四门已经结算或已经可以像 Prepare 那样或已经是握手对齐 | 不变量 407；语料 C411 |
 | 403 | Finalize 执行余量被写成已经交差 | 协议 + 文案 | 看见 Finalize 按应用自己的规则确定地执行 txs、再交还控制权 / Process 含提案块上执行所需的全部信息 / Process 可以像在处理 Finalize 那样整块执行 / Finalize 执行余量当成已经交差或已经是刚决定那块的字段或已经是 ExecuteTxState | 不变量 408；语料 C412 |
+| 404 | ExtendVote 请求对应被写成已经会调 ExtendVote | 协议 + 文案 | 看见 ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块 / Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify / Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo / ExtendVote 请求对应当成已经会调 ExtendVote或已经跳过 Verify 或已经 Verify 过迟到扩展 | 不变量 409；语料 C413 |
 
 ## 不自动覆盖
 

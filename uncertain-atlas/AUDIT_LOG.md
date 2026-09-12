@@ -4016,6 +4016,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1977 | 高 | 看见 Process 可以像在处理 Finalize 那样整块执行 / 看见整块跑了 会被写成已经是 ExecuteTxState，或当成已经交差 | 官方：The Application may fully execute the block as though it was handling FinalizeBlock |
 | A1978 | 中 | 怎样写 Finalize 执行余量 / 怎样写确定性 / 怎样整块执行 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1979 | 记录 | 会与 407 / 359 / 311 糊成「看见填了 Finalize 执行余量就已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 执行余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。交差 / 刚决定那块的字段 / ExecuteTxState 标成另一对象 |
+| A1980 | 高 | 看见 ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块 / 看见填了请求 会被写成已经会调 ExtendVote，或当成已经签了 nil 票 | 工作实例：abci++_methods ExtendVote Usage 官方写 The contents of ExtendVoteRequest correspond to the proposed block on which the consensus algorithm will send the Precommit message |
+| A1981 | 高 | 看见 Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify / 看见空扩展 会被写成已经跳过 Verify，或当成已经自己验过 | 官方：If the Precommit message does not contain a vote extension with a valid signature, p discards the Precommit message as invalid. A 0-length vote extension is valid as long as its accompanying signature is also valid |
+| A1982 | 高 | 看见 Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo / 看见收下了 会被写成已经 Verify 过迟到扩展，或当成已经交差 | 官方：If ACCEPT, p will keep the received vote, together with its corresponding vote extension in its internal data structures. It will be used to populate the ExtendedCommitInfo structure in calls to PrepareProposal, in rounds of height h+1 where p is the proposer |
+| A1983 | 中 | 怎样写 ExtendVote 请求对应 / 怎样验伴随签名 / 怎样攒下一高 Prepare 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1984 | 记录 | 会与 350 / 353 / 352 糊成「看见填了 ExtendVote 请求对应就已经会调 ExtendVote」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 请求对应 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经会调 / 已经跳过 Verify / 已经 Verify 过迟到扩展 标成另一对象 |
 
 
 

@@ -111,6 +111,7 @@
 - [`worked-example-snapheight-vs-queryh.md`](worked-example-snapheight-vs-queryh.md) — Snapshot.height 是拍快照的高度（Commit 之后） ≠ 已经是 Query 高度；Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据 ≠ 已经全字段对上；Query 可以可选回默克尔证明 ≠ 已经对上 AppHash（不变量 406）
 - [`worked-example-finfields-vs-equiv.md`](worked-example-finfields-vs-equiv.md) — Finalize 含刚决定那块的字段 ≠ 已经是四门已经结算；Finalize 实现必须确定、因为它在状态机复制里推进应用状态 ≠ 已经可以像 Prepare 那样；Info 用来回应用状态信息 ≠ 已经是握手对齐（不变量 407）
 - [`worked-example-fintxs-vs-control.md`](worked-example-fintxs-vs-control.md) — Finalize 按应用自己的规则确定地执行 txs、再交还控制权 ≠ 已经交差；Process 含提案块上执行所需的全部信息 ≠ 已经是刚决定那块的字段；Process 可以像在处理 Finalize 那样整块执行 ≠ 已经是 ExecuteTxState（不变量 408）
+- [`worked-example-extreq-vs-precommit.md`](worked-example-extreq-vs-precommit.md) — ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块 ≠ 已经会调 ExtendVote；Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify ≠ 已经跳过 Verify；Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo ≠ 已经 Verify 过迟到扩展（不变量 409）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
