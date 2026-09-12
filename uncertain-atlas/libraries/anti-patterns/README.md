@@ -196,3 +196,4 @@
 - [miniscript-sold-as-script](miniscript-sold-as-script.md)
 - [request-sold-as-action](request-sold-as-action.md)
 - [queued-sold-as-exited](queued-sold-as-exited.md)
+- [deposit-sold-as-validator](deposit-sold-as-validator.md)
