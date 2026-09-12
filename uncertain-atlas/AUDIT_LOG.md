@@ -3681,6 +3681,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1642 | 高 | 看见 Verify 里有非确定 bug / 看见活性会被伤 会被写成已经丢了安全性，或当成已经有协议层补丁 | 官方：活性会被伤；两边都要小心；SHOULD Accept |
 | A1643 | 中 | 怎样写 VerifyVoteExtension / 怎样测确定性 / 怎样写测试向量会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1644 | 记录 | 会与 338 / 34 / 340 糊成「看见必须确定就已经可以像 ExtendVote 那样」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtension 确定性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。ExtendVote 可以不确定 / 验签拒收 / Process 确定性标成另一对象 |
+| A1645 | 高 | 看见 FinalizeBlock 算出的状态必须只依赖上一份状态和决定块 / 看见必须确定 会被写成已经可以像 Prepare 那样依赖其它值，或当成已经和 Prepare / ExtendVote 同一把尺 | 官方：Finalize 造出 s_h，只依赖上一份已提交状态和决定块 |
+| A1646 | 高 | 看见 Finalize 算出的结果必须只依赖上一份状态和决定块 / 看见 T_h 必须确定 会被写成已经是 Code/Data 印进本头，或当成已经是列表同一顺序 | 官方：同一次还造出 T_h，也只依赖这两份 |
+| A1647 | 高 | 看见两边状态机复制 / 看见应用状态一起演化 会被写成已经是 Process 对任意块同一裁决，或当成已经有协议层补丁 | 官方：Req 11 和 12 再加上 Agreement，才保证状态机复制 |
+| A1648 | 中 | 怎样写 FinalizeBlock / 怎样测确定性 / 怎样写测试向量会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1649 | 记录 | 会与 338 / 316 / 340 糊成「看见必须确定就已经可以像 Prepare 那样」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock 确定性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Prepare 可以不确定 / 回执字段 / Process 确定性标成另一对象 |
 
 
 

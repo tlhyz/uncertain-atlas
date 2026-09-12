@@ -239,3 +239,4 @@
 - [name-the-checktx-weak](name-the-checktx-weak.md)
 - [name-the-process-det](name-the-process-det.md)
 - [name-the-verify-det](name-the-verify-det.md)
+- [name-the-finalize-det](name-the-finalize-det.md)
