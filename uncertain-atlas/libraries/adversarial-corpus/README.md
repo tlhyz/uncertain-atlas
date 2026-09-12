@@ -324,6 +324,7 @@
 | C311 | 307 一条连接≠已经是四门 | 文案把同进程 / 编进同一个二进制写成已经有套接字隔离或已经换了信任对象；或把语言里有 gRPC / 最容易的做法写成已经是高性能路径或已经没有开销；或把一条 ABCI 连接 / 已经能回话写成已经够用或已经是四门；或把 ABCI 传输写成不变量 33 / 5 / 52 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_client_server.md |
 | C312 | 308 NumPeers≠已经数完 | 文案把 NumPeers / outbound+inbound 写成已经数完所有邻居或已经把正在拨的人算进已连接；或把能按名字拿到另一个反应堆 / Block Sync 能切到 Consensus 写成已经独立或已经推荐；或把 Peer 上有 KV / Consensus 写了 PeerState 写成 Evidence / Mempool 已经有了已验证的最后高度；或把反应堆查询写成不变量 305 / 306 / 67 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md |
 | C313 | 309 HasChannel≠已经入队 | 文案把 HasChannel 为真 / 对端宣布了通道写成已经入队或已经送到；或把 Send 回了假 / 阻塞过写成已经断开或已经知道是哪一种理由或已经送到；或把 TrySend 回了假 / 立刻失败写成已经停掉这个人或已经和 Send 同一把尺；或把对等发送写成不变量 306 / 308 / 67 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md |
+| C314 | 310 默认锁≠已经RPC安全 | 文案把四条连接原则上并发 / 默认 Go 有全局锁写成已经能把状态直接给 RPC 或已经没有并发；或把 Commit 前锁了内存池 / 能一起更新四份状态写成已经解锁或已经和 Commit 同步做完；或把 Commit 里调了 broadcast_tx 并等回执写成已经能往下走或已经交差；或把 Commit 锁写成不变量 307 / 5 / 301 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

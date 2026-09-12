@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 311）
+
+- CometBFT Commit 锁工作实例（官方 Requirements for the Application，实现 / ABCI 连接状态，不另写 19 节）：看见默认 Go 有全局锁不是已经能把状态直接给 RPC。看见 Commit 前锁了内存池不是已经解锁。看见 Commit 里等 broadcast_tx 不是已经能往下走。Commit 锁不是不变量 307，也不是不变量 5，也不是不变量 301。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 310；语料 C314；模式 name-the-commit-lock；反模式 commitlock-sold-as-rpc；L10.3 第 306 条。填 L4.4 / CometBFT 档案 Commit 锁 / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄源码行号。不写怎样实现全局锁、怎样调广播、怎样冲内存池。不编博物馆页。不另写 19 节。不与 307 / 5 / 301 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。四条连接 / 半写原子 / 内存池交接标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 310）
 
 - CometBFT 对等发送工作实例（官方 API for Reactors，网络 / 对等发送，不另写 19 节）：看见 HasChannel 为真不是已经入队。看见 Send 回了假不是已经断开。看见 TrySend 回了假不是已经和 Send 同一把尺。对等发送不是不变量 306，也不是不变量 308，也不是不变量 67。出处 github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md。
