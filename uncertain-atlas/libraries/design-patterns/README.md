@@ -294,3 +294,4 @@
 - [name-the-ext-commit-round](name-the-ext-commit-round.md)
 - [name-the-listsnap-empty](name-the-listsnap-empty.md)
 - [name-the-offer-snapshot](name-the-offer-snapshot.md)
+- [name-the-apply-chunk](name-the-apply-chunk.md)

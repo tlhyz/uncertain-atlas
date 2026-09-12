@@ -398,6 +398,7 @@
 | 389 | ExtendedCommitInfo 轮被写成已经是 CommitInfo.round | 协议 + 文案 | 看见 ExtendedCommitInfo.round 是提交轮 / Finalize 请求 next_validators_hash 是下一验证者集合默克尔根 / Echo 请求 Message 是要回显的字符串 / ExtendedCommitInfo 轮当成已经是 CommitInfo.round或已经是同一套字段或已经是 Flush | 不变量 394；语料 C398 |
 | 390 | ListSnapshots 空请求被写成已经齐 | 协议 + 文案 | 看见 ListSnapshots 请求是空请求、向应用要一份快照清单 / ListSnapshots 回包 snapshots 是本地状态快照清单 / ListSnapshots 用来在 state sync 时发现邻居上有哪些快照 / ListSnapshots 空请求当成已经齐或已经是同一份或已经在拉块 | 不变量 395；语料 C399 |
 | 391 | OfferSnapshot 请求被写成已经是本地清单 | 协议 + 文案 | 看见 OfferSnapshot 请求 snapshot 是拿来装回的那份快照 / OfferSnapshot 回包 result 是这次 Offer 的结果 / OfferSnapshot 在用 state sync 引导节点时叫 / OfferSnapshot 请求当成已经是本地清单或已经装完或已经必须实现快照连接 | 不变量 396；语料 C400 |
+| 392 | ApplySnapshotChunk 请求被写成已经在拉块 | 协议 + 文案 | 看见 ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容 / ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID / ApplySnapshotChunk 回包 result 是装这块的结果 / ApplySnapshotChunk 请求当成已经在拉块或已经拒了人或已经是 Offer 的结果 | 不变量 397；语料 C401 |
 
 ## 不自动覆盖
 

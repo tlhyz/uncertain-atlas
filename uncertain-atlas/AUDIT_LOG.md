@@ -3956,6 +3956,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1917 | 高 | 看见 OfferSnapshot 在用 state sync 引导节点时叫 / 看见在引导时叫了 会被写成已经必须实现快照连接，或当成已经切进共识 | 官方：OfferSnapshot is called when bootstrapping a node using state sync |
 | A1918 | 中 | 怎样写 OfferSnapshot 请求 / 怎样填 snapshot / 怎样填 result 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1919 | 记录 | 会与 395 / 321 / 334 糊成「看见填了 OfferSnapshot 请求就已经是本地清单」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot 请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。本地清单 / Offer 收下就已经装完 / 门在就必须实现 标成另一对象 |
+| A1920 | 高 | 看见 ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容 / 看见填了 chunk 会被写成已经在拉块，或当成已经齐 | 工作实例：abci++_methods ApplySnapshotChunk 官方写 chunk is The binary chunk contents, as returned by LoadSnapshotChunk |
+| A1921 | 高 | 看见 ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID / 看见填了 sender 会被写成已经拒了人，或当成已经封了 | 官方：sender is The P2P ID of the node who sent this chunk |
+| A1922 | 高 | 看见 ApplySnapshotChunk 回包 result 是装这块的结果 / 看见回了 result 会被写成已经是 Offer 的结果，或当成已经装完 | 官方：result is The result of applying this chunk |
+| A1923 | 中 | 怎样写 ApplySnapshotChunk 请求 / 怎样填 chunk / 怎样填 sender 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1924 | 记录 | 会与 375 / 378 / 396 糊成「看见填了 ApplySnapshotChunk 请求就已经在拉块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk 请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拉块 / 拒人 / Offer 结果 标成另一对象 |
 
 
 
