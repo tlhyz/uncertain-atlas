@@ -39,6 +39,7 @@
 - [`worked-example-multia-vs-tr.md`](worked-example-multia-vs-tr.md) — multi_a ≠ 已经是 383 那种 multi；门限 ≠ 已经同一套编码；sortedmulti_a ≠ 已经是 383 那种排序（不变量 278）
 - [`worked-example-tap-psbt-vs-old.md`](worked-example-tap-psbt-vs-old.md) — 旧 PSBT 栏 ≠ 已经能装 Taproot；输出脚本里的钥 ≠ 已经是内部钥；Taproot 输入 ≠ 已经必须带整笔前交易（不变量 279）
 - [`worked-example-policy-vs-descriptor.md`](worked-example-policy-vs-descriptor.md) — 钱包策略 ≠ 已经是一条描述符；钥占位 ≠ 已经是那把精确公钥；登记过 ≠ 已经批准这笔花（不变量 280）
+- [`worked-example-combo-vs-one-script.md`](worked-example-combo-vs-one-script.md) — combo ≠ 已经只能产出一种脚本；未压缩钥 ≠ 已经带齐见证对；一份 combo ≠ 已经是一份钱包策略（不变量 281）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）

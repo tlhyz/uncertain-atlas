@@ -99,6 +99,8 @@
 
 精读：[`../../tracks/implementation/worked-example-policy-vs-descriptor.md`](../../tracks/implementation/worked-example-policy-vs-descriptor.md)（不变量 280）。看见钱包策略不是已经是一条描述符。看见钥占位不是已经是那把精确公钥。看见登记过不是已经批准这笔花。
 
+精读：[`../../tracks/implementation/worked-example-combo-vs-one-script.md`](../../tracks/implementation/worked-example-combo-vs-one-script.md)（不变量 281）。看见 combo 不是已经只能产出一种脚本。看见未压缩钥不是已经带齐见证对。看见一份 combo 不是已经是一份钱包策略。
+
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
 精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。
