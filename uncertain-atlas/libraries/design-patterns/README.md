@@ -92,3 +92,4 @@
 - [name-the-request-bus](name-the-request-bus.md)
 - [name-the-el-exit](name-the-el-exit.md)
 - [name-the-el-deposit](name-the-el-deposit.md)
+- [name-the-history-hash](name-the-history-hash.md)
