@@ -109,7 +109,8 @@
 78. 若状态机或入门校验要判断过期：只读块头时间（不变量 82）。ValidateBasic 读节点本地钟不是已确定。资金安全不是链不会停。不要把「额外防守」写成可以读墙钟。这和一般确定性（1）、PBTS（不变量 40）、漏掉 ValidateBasic（77）不是同一句。  
 79. 若提供定期归属 / 他人可初始化的账户子类型：账户类型必须由权利人或创世初始化（不变量 83）。空地址不是还没有类型。入金不是还能取出。33% 打补丁不是全网已齐。第一版可以不装归属账户。不要抄 33/66。不要抄 vesting。这和被挡模块账户（71）、授权代发（77）不是同一句。  
 80. 若产品句写「停链」：必须从停链面地图点名路径（不变量 84）。交易内 panic 可被恢复；EndBlocker 出错会停；非确定会停；版本差会停；锁钱不是停。不要把 ⅓ / 33 / 66 抄进不确定法定人数。地图：[`../../tracks/failure-museum/worked-example-halt-surfaces.md`](../../tracks/failure-museum/worked-example-halt-surfaces.md)。这和停链交易（69）、可选模块 EndBlocker（67）不是同一句——那两句是表里的两行，不是本条。  
-81. 若提供不过期 / durable nonce：失败路径必须与成功路径一样推进或作废同一链上对象（不变量 85）。当普通 recent-blockhash 处理、nonce 未推进，不是已消费。进块付费不是票根已撕。近期缓存不是全网同一对象。一边收一边拒、超过 33% 不够 66% 是停链，不是 Tower / PoH 已经一致。第一版可以不提供不过期 nonce。不要写怎样走双路径。不要抄 33/66。馆藏：[`../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)。这和一般确定性（1）、ack JSON（73）、ValidateBasic 读钟（78）、非法提案（69）不是同一句。
+81. 若提供不过期 / durable nonce：失败路径必须与成功路径一样推进或作废同一链上对象（不变量 85）。当普通 recent-blockhash 处理、nonce 未推进，不是已消费。进块付费不是票根已撕。近期缓存不是全网同一对象。一边收一边拒、超过 33% 不够 66% 是停链，不是 Tower / PoH 已经一致。第一版可以不提供不过期 nonce。不要写怎样走双路径。不要抄 33/66。馆藏：[`../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)。这和一般确定性（1）、ack JSON（73）、ValidateBasic 读钟（78）、非法提案（69）不是同一句。  
+82. 若同槽可能出现两份不同块：必须写出谁赢、赢了之后下一领导者必须能把它当父块（不变量 86）。确认 ≠ 可建。投票还在、根不前进，不是 Tower / PoH 已经一致。同一身份两台同时出块不是高可用。关掉故障提议者不是边角已消失。不要抄 80/90。馆藏：[`../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)。这和 durable nonce 双路径（81）、非法提案（65）、宣布≠收到（32）不是同一句。锁规则见不变量 4。
 
 **以后再发明**
 
@@ -211,7 +212,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 八十一条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 八十二条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

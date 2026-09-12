@@ -316,7 +316,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 账户列表、锁定、Sealevel
 - PoH、Tower BFT、Gulf Stream、Turbine
 - 本地费用市场、状态争用、硬件门槛
-- 覆盖：课文 L6.1。PoH ≠ 单独的 BFT。停机根因：[`../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)（失败的 durable nonce ≠ 已不能再播；不变量 85）
+- 覆盖：课文 L6.1。PoH ≠ 单独的 BFT。停机根因：[`../tracks/failure-museum/solana-2022-06-01-durable-nonce.md`](../tracks/failure-museum/solana-2022-06-01-durable-nonce.md)（失败的 durable nonce ≠ 已不能再播；不变量 85）；[`../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)（已确认的重复槽赢家 ≠ 可当父块；不变量 86）
 
 ### M6.2 Sui · 重要
 - object ownership、owned vs shared
@@ -445,7 +445,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（五十六案；含 Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（五十七案；含 Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -473,11 +473,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–85）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–86）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C89；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C90；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

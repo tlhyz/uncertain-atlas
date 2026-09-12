@@ -60,6 +60,7 @@
 - [jackfruit](jackfruit.md)（协议+实现：ValidateBasic 读本地钟不是已经确定；CVE-2021-41135）
 - [barberry](barberry.md)（协议+实现+经济：别人把空地址初始化成只进不出不是还没开户所以安全）
 - [solana-2022-06-01-durable-nonce](solana-2022-06-01-durable-nonce.md)（协议+实现：失败的 durable nonce 不是已经不能再播；当普通交易处理再重提不是已消费）
+- [solana-2022-09-30-duplicate-fork](solana-2022-09-30-duplicate-fork.md)（协议+实现+部署：已确认的重复槽赢家不是下一领导者会往上建的父块）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
 
