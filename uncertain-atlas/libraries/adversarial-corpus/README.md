@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–134。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–135。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -149,6 +149,7 @@
 | C136 | 132 批次≠已排序 | 文案把 Quorum Store 传开写成已经写出 L；或把已认证批次写成已经排序 / 已经 commit；或把去掉领袖瓶颈写成已经没有领袖；或把进了提议块写成已经落盘；或把名字里的 quorum 写成已经有 QC；或与 27 / 122 / 128 / 131 糊成「已经进共识」一句 | 必须红 | 协议+文案 | aptos.dev glossary / white-paper / blockchain-deep-dive |
 | C137 | 133 PoH≠Tower | 文案把 PoH / 槽钟写成已经投票或已经 BFT；或把 `processed` 写成已经不可逆；或把 `confirmed` 写成已经 `finalized` / 已经 root；或把超多数票写成已经最大 lockout；或把 Alpenglow 计划写成现行已经切完；或与 94 / 126 / 127 糊成「PoS 最终」一句 | 必须红 | 协议+文案 | solana.com/docs terminology / rpc getslot |
 | C138 | 134 抽中≠已认证 | 文案把 VRF 抽中写成已经认证；或把最低 VRF 提案写成已经 soft vote / 已经最终；或把 soft vote 写成已经 certify / 已经落账；或把抽签写成 Avalanche 问邻居；或把拆账户写成更占便宜；或把参与钥写成花费钥；或与 22 / 126 / 129 / 131 糊成「随机委员会」一句 | 必须红 | 协议+文案 | dev.algorand.co concepts/protocol/overview |
+| C139 | 135 Doomslug≠BFT | 文案把 `last_ds_final_block` 写成已经 `last_final_block`；或把 `near-final` / Doomslug 写成已经 `final` / 已经 Nomicon 两高度谓词；或把 `optimistic` 写成已经不可逆；或把出新头写成已经 commit；或与 126 / 127 / 133 糊成「两种最终」一句 | 必须红 | 协议+文案 | nomicon.io ChainSpec/Consensus / nearcore DataStructures/Block / docs.near.org indexer Finality |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

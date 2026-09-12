@@ -1649,3 +1649,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A609 | 记录 | 会与 22 / 126 / 129 / 131 / 133 / 93 糊成「随机委员会」 | 对照写清。NPoS 等权句不改写。State proof 与随机信标标成另一对象。不编博物馆页。不写怎样磨最低哈希 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 · Doomslug / near-final 不是已经 BFT 最终
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A610 | 高 | `last_ds_final_block` / Doomslug 会被写成已经 `last_final_block` | 工作实例：数据结构注释把两枚哈希分成 full BFT 与 doomslug finality |
+| A611 | 高 | `near-final` 会被写成已经 `final` 或已经 Nomicon 两高度谓词 | 官方 Indexer：near-final 是 DoomSlug；final 是最终且不可逆。Nomicon 谓词是连续两块 |
+| A612 | 中 | 出新头 / `optimistic` 会被写成已经不可逆或已经 commit | Nomicon head 是最高合法块。Indexer：optimistic 仍可能被跳过 |
+| A613 | 中 | 超时常数 / epoch 长度 / 秒数会被抄进不确定 | 不抄。`wait_until` 标成另一对象 |
+| A614 | 记录 | 会与 126 / 127 / 133 / 134 / 125 糊成「两种最终」 | 对照写清。活性指向论文 ≠ 论文步骤已成现行规范。不编博物馆页。不写怎样出冲突票 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

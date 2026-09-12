@@ -136,6 +136,7 @@
 | 127 | 已认证批次被写成已经写出 L 或已经 commit | 协议 + 文案 | Quorum Store 传播 / 名字里的 quorum / 进了提议块当成已排序或已落盘 | 不变量 132；语料 C136 |
 | 128 | PoH 槽钟被写成已经投票或已经 root | 协议 + 文案 | 槽号 / processed / confirmed 当成 BFT 或最大 lockout | 不变量 133；语料 C137 |
 | 129 | VRF 抽中被写成已经认证 | 协议 + 文案 | 最低哈希 / soft vote / 「密码抽签」当成已经落账或问邻居 | 不变量 134；语料 C138 |
+| 130 | Doomslug / `near-final` 被写成已经 BFT 最终 | 协议 + 文案 | 较快头哈希 / 出新头 / 「秒最终」当成 Nomicon 谓词或 CometBFT commit | 不变量 135；语料 C139 |
 
 ## 不自动覆盖
 

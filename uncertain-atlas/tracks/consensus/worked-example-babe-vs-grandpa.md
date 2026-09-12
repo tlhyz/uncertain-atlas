@@ -103,7 +103,7 @@
 
 1. **每高度 commit**（CometBFT / 不变量 40 的亲戚、L4.6）：出一块终一块，同一条路径。本页是拆成两条服务。
 2. **head / justified / finalized**（L5.2）：Gasper 三词。Wiki 自己写 GRANDPA 与 Casper FFG 的差别：同轮可投不同高度；最终块才回写出块的分叉选择。
-3. **两种最终性卖成一种**（NEAR Doomslug ≠ BFT）：头上两枚最终标记。本页是出块装置 vs 最终装置。
+3. **两种最终性卖成一种**（不变量 135）：头上两枚最终哈希。本页是出块装置 vs 最终装置。精读：[`../finality/worked-example-doomslug-vs-bft.md`](../finality/worked-example-doomslug-vs-bft.md)。
 4. **backed ≠ 可用 ≠ 批准 ≠ GRANDPA**（不变量 125）：平行链纳入管道。本页是中继自己的出块与终局。批准之后才拿去 GRANDPA，是管道接到本页的那一盏灯，不是本页把管道重讲一遍。
 5. **出块还在 ≠ 纪元已转**（不变量 110）、**中继最终 ≠ 平行链已出**（不变量 114）、**Active ≠ Confirmed 时 GRANDPA 可跳**（不变量 99）：事故或治理。本页是正常协议对象。
 

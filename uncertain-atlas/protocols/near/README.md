@@ -7,4 +7,4 @@
 
 一句话：
 
-> 全网一个块哈希；块里挂各分片的 chunk（0 或 1 个）。执行只对你拿到的、且你跟踪的那些 chunk。头上的 Doomslug 标记 ≠ 头上的 BFT 最终标记。
+> 全网一个块哈希；块里挂各分片的 chunk（0 或 1 个）。执行只对你拿到的、且你跟踪的那些 chunk。头上的 Doomslug 标记 ≠ 头上的 BFT 最终标记。精读：[`../../tracks/finality/worked-example-doomslug-vs-bft.md`](../../tracks/finality/worked-example-doomslug-vs-bft.md)（不变量 135）。

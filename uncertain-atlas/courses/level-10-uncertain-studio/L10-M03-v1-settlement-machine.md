@@ -159,6 +159,7 @@
 128. 若拆传播与排序：必须点名停在批次传播、已认证、已排序、已执行还是已落盘（不变量 132）。已认证批次不是已经写出 L。传播齐了不是已经 commit。去掉领袖数据瓶颈不是已经没有领袖。进了提议块不是已经落盘。第一版可以不拆传播层。不要抄吞吐。不要写怎样扣批次。精读：[`../../tracks/consensus/worked-example-quorum-store-vs-order.md`](../../tracks/consensus/worked-example-quorum-store-vs-order.md)。这和 STM 跑完≠最终（不变量 122）、谁写顺序（不变量 27）、进块≠接受（不变量 128）、抽样 α≠QC（不变量 131）不是同一句。
 129. 若用可验时序钟再投票：必须点名问的是钟还是票（不变量 133）。PoH / 槽钟不是已经投票。`processed` 不是已经 confirmed。`confirmed` 不是已经 finalized / 已经 root。超多数票不是已经最大 lockout。第一版不要同时卖三套「到了」。不要抄槽秒数或官网 TPS。不要把 Alpenglow 计划写成已经切完。精读：[`../../tracks/consensus/worked-example-poh-vs-tower.md`](../../tracks/consensus/worked-example-poh-vs-tower.md)。这和 Gasper 三等（不变量 127）、BABE≠GRANDPA（不变量 126）、槽号≠块身份（不变量 94）、停机里的 Tower/PoH 已一致（不变量 85 / 86）不是同一句。
 130. 若用 VRF 私下抽委员会：必须点名停在抽中、最低哈希、soft vote 还是 certify（不变量 134）。抽中不是已经认证。最低 VRF 提案不是已经 soft vote。Soft vote 不是已经落账。参与钥不是花费钥。按 Algo 抽签不是一人一票，也不是问邻居。第一版可以不上 VRF 委员会。不要抄超时或官网快慢句。精读：[`../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)。这和 Snow 抽样（不变量 131）、Altair 委员会（不变量 22）、NPoS 等权（不变量 129）、BABE 抽槽（不变量 126）不是同一句。
+131. 若头上同时印较快确认和 BFT 最终：必须点名问的是哪一枚哈希、哪一条谓词、哪一档 RPC（不变量 135）。`last_ds_final_block` 不是已经 `last_final_block`。`near-final` / Doomslug 不是已经 `final` / 已经 Nomicon 两高度谓词。`optimistic` 不是已经不可逆。出新头不是已经 commit。第一版不要同时卖两枚头哈希。不要抄超时或秒数。精读：[`../../tracks/finality/worked-example-doomslug-vs-bft.md`](../../tracks/finality/worked-example-doomslug-vs-bft.md)。这和 BABE≠GRANDPA（不变量 126）、Gasper 三等（不变量 127）、PoH 三档（不变量 133）不是同一句。
 
 **以后再发明**
 
@@ -253,6 +254,7 @@
 - 把 Quorum Store 传开写成已经写出 L，或把已认证批次写成已经排序 / 已经 commit，或把去掉领袖瓶颈写成已经没有领袖，或把进了提议块写成已经落盘。
 - 把 PoH / 槽钟写成已经投票或已经 BFT，或把 `processed` 写成已经不可逆，或把 `confirmed` 写成已经 `finalized` / 已经 root，或把 Alpenglow 计划写成现行已经切完。
 - 把 VRF 抽中写成已经认证，或把最低 VRF 提案 / soft vote 写成已经落账，或把抽签写成问邻居，或把参与钥写成花费钥。
+- 把 `last_ds_final_block` / `near-final` / Doomslug 写成已经 BFT 最终或已经 `final`，或把出新头写成已经 commit。
 
 ---
 
@@ -303,7 +305,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百三十条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百三十一条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

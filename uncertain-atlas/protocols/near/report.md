@@ -73,7 +73,8 @@ Nomicon Consensus（事实，页上的定义）：
 - 诚实生产者不得签冲突的 endorsement / 冲突的 skip+endorsement；否则两个互不祖先的最终块会迫使 >1/3 作恶（同页定理）。
 
 头上另有 `last_ds_final_block`（Doomslug 最终，数据结构注释）。活性证明 Nomicon 指向 Doomslug 论文与 Nightshade。  
-**禁止：** 把 Doomslug 标记写成 CometBFT 每高度 commit。见反模式 two-finality-sold-as-one。
+`last_ds_final_block` 不是已经 `last_final_block`。`near-final` 不是已经 `final`。精读：[`../../tracks/finality/worked-example-doomslug-vs-bft.md`](../../tracks/finality/worked-example-doomslug-vs-bft.md)（不变量 135）。  
+**禁止：** 把 Doomslug 标记写成 CometBFT 每高度 commit。见反模式 two-finality-sold-as-one。不抄超时 / 秒数。不写怎样出冲突票。
 
 与 Polkadot：那里最终的是中继 GRANDPA 下的平行候选，不是「同一块内的 chunk 列表」。  
 与 Celestia：那里块承诺的是 DA 数据，不是各分片账户执行。

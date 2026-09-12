@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 136）
+
+- NEAR 工作实例：`last_ds_final_block` 不是已经 `last_final_block`。Doomslug / `near-final` 不是已经 Nomicon 两高度谓词 / `final`。`optimistic` 不是已经不可逆。出新头不是已经 commit。出处 Nomicon Consensus + nearcore DataStructures + Indexer Finality。
+- 不变量 135；语料 C139；模式 name-the-finality-marker；反模式 two-finality-sold-as-one（补指针）；L10.3 第 131 条。填 L7.3 / NEAR 档案 §6 / 共识表 / 最终性表 / 停链面地图。
+- 不抄超时常数 / epoch 长度 / 秒数。不写怎样出冲突 endorsement / skip。不编博物馆页。不与 126 / 127 / 133 / 134 / 125 糊成一句。`wait_until` 标成另一对象。
+
 ## 2026-09-12（续 135）
 
 - Algorand 工作实例：VRF 抽中不是已经认证。最低 VRF 提案不是已经 soft vote。Soft vote 不是已经 certify / 已经落账。参与钥不是花费钥。按 Algo 抽签不是一人一票，也不是 Avalanche 问邻居。出处 dev.algorand.co Consensus Overview。
