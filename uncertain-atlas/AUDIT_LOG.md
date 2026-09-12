@@ -3836,6 +3836,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1797 | 高 | 看见 total_voting_power 是那一高验证者集合的总权 / 看见有总权 会被写成已经按到场定奖惩，或当成已经改了集合 | 官方：Total voting power of the validator set at height height |
 | A1798 | 中 | 怎样编 Misbehavior / 怎样填枚举 / 怎样算总权会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1799 | 记录 | 会与 21 / 304 / 365 糊成「看见有 Misbehavior 就已经罚没」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Misbehavior 类型 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。证据上链 / 票上时间 / VoteInfo 到场标成另一对象 |
+| A1800 | 高 | 看见 CheckTx 技术上可选、不参与处理块 / 看见能回 会被写成已经是四门已经结算，或当成已经交差 | 工作实例：abci++_methods CheckTx Usage 官方写 Technically optional - not involved in processing blocks |
+| A1801 | 高 | 看见 Code ≠ 0 会被拒、不会广播也不会进提案 / 看见拒了 会被写成已经没进块，或当成已经被池子挡住拜占庭 | 官方：Transactions where CheckTxResponse.Code != 0 will be rejected - they will not be broadcast to other nodes or included in a proposal block |
+| A1802 | 高 | 看见引擎对回包码不再赋予别的含义 / 看见有码 会被写成已经被引擎用了 Data，或当成已经是共识顺序 | 官方：CometBFT attributes no other value to the response code |
+| A1803 | 中 | 怎样写 CheckTx / 怎样挑回包码 / 怎样广播会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1804 | 记录 | 会与 33 / 316 / 317 糊成「看见能回 CheckTx 就已经是四门已经结算」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 可选 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / Finalize 回执 / CheckTx 回包标成另一对象 |
 
 
 

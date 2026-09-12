@@ -374,6 +374,7 @@
 | 365 | Info 握手被写成已经是快照重放 | 协议 + 文案 | 看见 Info 用来握手对齐 / app_version 进每块头 / last_block_app_hash / last_block_height 要在 Commit 里落盘 / Info 握手当成已经是快照重放或已经印进本头 AppHash 或已经交差 | 不变量 370；语料 C374 |
 | 366 | Query 高度被写成已经是 QueryState | 协议 + 文案 | 看见 Query 可以对当前或过去高度查 / height 默认 0 回最新已提交 / 这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 / Query 高度当成已经是 QueryState 或已经新鲜或已经印进本头 AppHash | 不变量 371；语料 C375 |
 | 367 | Misbehavior 类型被写成已经罚没 | 协议 + 文案 | 看见 Misbehavior.type 只是过错枚举 / height 是过错发生的高度、time 是那一高已提交块的时间 / total_voting_power 是那一高验证者集合的总权 / Misbehavior 类型当成已经罚没或已经验过这个时间或已经按到场定奖惩 | 不变量 372；语料 C376 |
+| 368 | CheckTx 可选被写成已经是四门已经结算 | 协议 + 文案 | 看见 CheckTx 技术上可选、不参与处理块 / Code ≠ 0 会被拒、不会广播也不会进提案 / 引擎对回包码不再赋予别的含义 / CheckTx 可选当成已经是四门已经结算或已经没进块或已经被引擎用了 Data | 不变量 373；语料 C377 |
 
 ## 不自动覆盖
 

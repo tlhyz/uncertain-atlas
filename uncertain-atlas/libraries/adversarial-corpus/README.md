@@ -387,6 +387,7 @@
 | C374 | 370 Info用来握手对齐≠已经是快照重放 | 文案把 Info 用来在启动或恢复时让引擎和应用握手对齐 / 能回写成已经是快照重放或已经是 QueryState；或把回的 app_version 会写进每一块的头 / 有版本写成已经印进本头 AppHash 或已经交差；或把引擎指望 last_block_app_hash 和 last_block_height 在 Commit 里更新并落盘 / 回了这两列写成已经交差或已经在剪；或把 Info 握手写成不变量 314 / 147 / 320 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C375 | 371 Query可以对当前或过去高度查≠已经是QueryState | 文案把 Query 可以对当前或过去高度查 / 能查写成已经是 QueryState 或已经复制到各节点；或把 height 默认 0 回最新已提交 / 没填高度写成已经新鲜或已经是握手对齐；或把这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 / 填了高度写成已经印进本头 AppHash 或已经对上 Proof；或把 Query 高度写成不变量 329 / 147 / 325 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C376 | 372 Misbehavior.type只是过错枚举≠已经罚没 | 文案把 Misbehavior.type 只是过错枚举 / 有类型写成已经罚没或已经定了奖惩；或把 height 是过错发生的高度、time 是那一高已提交块的时间 / 有时间写成已经验过这个时间或已经交差；或把 total_voting_power 是那一高验证者集合的总权 / 有总权写成已经按到场定奖惩或已经改了集合；或把 Misbehavior 类型写成不变量 21 / 304 / 365 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C377 | 373 CheckTx技术上可选不参与处理块≠已经是四门已经结算 | 文案把 CheckTx 技术上可选、不参与处理块 / 能回写成已经是四门已经结算或已经交差；或把 Code ≠ 0 会被拒、不会广播也不会进提案 / 拒了写成已经没进块或已经被池子挡住拜占庭；或把引擎对回包码不再赋予别的含义 / 有码写成已经被引擎用了 Data 或已经是共识顺序；或把 CheckTx 可选写成不变量 33 / 316 / 317 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

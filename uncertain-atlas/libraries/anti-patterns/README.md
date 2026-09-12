@@ -375,3 +375,4 @@
 - [info-sold-as-handshake](info-sold-as-handshake.md)
 - [queryheight-sold-as-committed](queryheight-sold-as-committed.md)
 - [misbehavior-sold-as-enum](misbehavior-sold-as-enum.md)
+- [checktxopt-sold-as-block](checktxopt-sold-as-block.md)
