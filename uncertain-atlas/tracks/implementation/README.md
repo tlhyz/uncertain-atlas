@@ -80,6 +80,7 @@
 - [`worked-example-loadchunk-vs-retrieved.md`](worked-example-loadchunk-vs-retrieved.md) — LoadSnapshotChunk 用来从邻居拉快照块 ≠ 已经齐；请求用 height / format / chunk（从 0 起）认这块 ≠ 已经是同一份；回包块含元数据不能超过 16 MB ≠ 已经是快照报文 4 MB（不变量 375）
 - [`worked-example-proposalstatus-vs-prevote.md`](worked-example-proposalstatus-vs-prevote.md) — UNKNOWN 一律是错、引擎当应用坏了会崩 ≠ 已经是四门已经结算；ACCEPT 表示应用认为提案合法、共识会发 Prevote ≠ 已经交差；REJECT 表示应用认为提案非法、共识会发 Prevote nil ≠ 已经能稍后改裁决（不变量 376）
 - [`worked-example-querypath-vs-store.md`](worked-example-querypath-vs-store.md) — data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 ≠ 已经是 Query 高度；path 按 URI 路径解释、/store 必须按键查 ≠ 已经是引擎在用；规范建议允许 /accounts / /votes 这类查询 ≠ 已经是正常运转必须有（不变量 377）
+- [`worked-example-refetch-vs-restored.md`](worked-example-refetch-vs-restored.md) — 应用可以再拉块或封邻居、引擎不自己做 ≠ 已经封了；refetch_chunks 不论 result 都再拉再装 ≠ 已经齐；reject_senders 不论 Result 都拒这些人 ≠ 已经能接着装（不变量 378）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

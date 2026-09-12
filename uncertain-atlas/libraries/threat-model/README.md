@@ -379,6 +379,7 @@
 | 370 | LoadSnapshotChunk 被写成已经齐 | 协议 + 文案 | 看见 LoadSnapshotChunk 用来从邻居拉快照块 / 请求用 height / format / chunk（从 0 起）认这块 / 回包块含元数据不能超过 16 MB / LoadSnapshotChunk 当成已经齐或已经是同一份或已经是快照报文 4 MB | 不变量 375；语料 C379 |
 | 371 | ProposalStatus 被写成已经是四门已经结算 | 协议 + 文案 | 看见 UNKNOWN 一律是错、引擎当应用坏了会崩 / ACCEPT 表示应用认为提案合法、共识会发 Prevote / REJECT 表示应用认为提案非法、共识会发 Prevote nil / ProposalStatus 当成已经是四门已经结算或已经交差或已经能稍后改裁决 | 不变量 376；语料 C380 |
 | 372 | Query 路径被写成已经是 Query 高度 | 协议 + 文案 | 看见 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 / path 按 URI 路径解释、/store 必须按键查 / 规范建议允许 /accounts / /votes 这类查询 / Query 路径当成已经是 Query 高度或已经是引擎在用或已经是正常运转必须有 | 不变量 377；语料 C381 |
+| 373 | ApplySnapshotChunk 再拉被写成已经封了 | 协议 + 文案 | 看见应用可以再拉块或封邻居、引擎不自己做 / refetch_chunks 不论 result 都再拉再装 / reject_senders 不论 Result 都拒这些人 / ApplySnapshotChunk 再拉当成已经封了或已经齐或已经能接着装 | 不变量 378；语料 C382 |
 
 ## 不自动覆盖
 

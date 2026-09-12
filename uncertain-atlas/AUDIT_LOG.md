@@ -3861,6 +3861,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1822 | 高 | 看见规范建议允许 /accounts / /votes 这类查询 / 看见写了类型路径 会被写成已经是正常运转必须有，或当成已经复制到各节点 | 官方：Applications SHOULD allow queries over specific types like /accounts/... or /votes/... |
 | A1823 | 中 | 怎样写 Query 请求 / 怎样填 data / path / 怎样做按键查询会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1824 | 记录 | 会与 371 / 326 / 329 糊成「看见能带 data / path 就已经是 Query 高度」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 路径 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Query 高度 / 邻居过滤 / 本地查询标成另一对象 |
+| A1825 | 高 | 看见应用可以再拉块或封邻居、引擎不自己做 / 看见能再拉 会被写成已经封了，或当成已经齐 | 工作实例：abci++_methods ApplySnapshotChunk Usage 官方写 The application can choose to refetch chunks and/or ban P2P peers as appropriate. CometBFT will not do this unless instructed by the application |
+| A1826 | 高 | 看见 refetch_chunks 不论 result 都再拉再装、按顺序 / 看见列了块号 会被写成已经齐，或当成已经交差 | 官方：Refetch and reapply the given chunks, regardless of result. Only the listed chunks will be refetched, and reapplied in sequential order |
+| A1827 | 高 | 看见 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名 / 看见拒了人 会被写成已经能接着装，或当成已经停 | 官方：Reject the given P2P senders, regardless of Result. Any chunks already applied will not be refetched unless explicitly requested |
+| A1828 | 中 | 怎样写 ApplySnapshotChunk / 怎样再拉 / 怎样封邻居会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1829 | 记录 | 会与 321 / 332 / 375 糊成「看见回了再拉就已经封了」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk 再拉 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。装回 / 增量验 / 拉块标成另一对象 |
 
 
 

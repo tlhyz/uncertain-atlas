@@ -380,3 +380,4 @@
 - [loadchunk-sold-as-retrieved](loadchunk-sold-as-retrieved.md)
 - [proposalstatus-sold-as-prevote](proposalstatus-sold-as-prevote.md)
 - [querypath-sold-as-store](querypath-sold-as-store.md)
+- [refetch-sold-as-restored](refetch-sold-as-restored.md)

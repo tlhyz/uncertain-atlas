@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 379）
+
+- CometBFT ApplySnapshotChunk 再拉工作实例（官方 ABCI++ Methods ApplySnapshotChunk Usage，实现 / ApplySnapshotChunk 再拉，不另写 19 节）：看见应用可以再拉块或封邻居、引擎不自己做不是已经封了。看见 refetch_chunks 不论 result 都再拉再装、按顺序不是已经齐。看见 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名不是已经能接着装。ApplySnapshotChunk 再拉不是不变量 321，也不是不变量 332，也不是不变量 375。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 378；语料 C382；模式 name-the-refetch；反模式 refetch-sold-as-restored；L10.3 第 374 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk 再拉 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ApplySnapshotChunk、怎样再拉、怎样封邻居。不编博物馆页。不另写 19 节。不与 321 / 332 / 375 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。装回、增量验、拉块标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 378）
 
 - CometBFT Query 路径工作实例（官方 ABCI++ Methods Query Request，实现 / Query 路径，不另写 19 节）：看见 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度。看见 path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用。看见规范建议允许 /accounts / /votes 这类查询不是已经是正常运转必须有。Query 路径不是不变量 371，也不是不变量 326，也不是不变量 329。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
