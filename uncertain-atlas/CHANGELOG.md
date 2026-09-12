@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 416）
+
+- CometBFT Verify 请求余栏工作实例（官方 ABCI++ Methods VerifyVoteExtension Request，实现 / Verify 请求余栏，不另写 19 节）：看见 VerifyVoteExtensionRequest.height 是块高度（用来对一下）不是已经是拟议块高度。看见 VerifyVoteExtensionRequest.hash 是扩展要指的那份拟议块哈希不是已经不保证跑过 Process。看见 VerifyVoteExtensionRequest.vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长不是已经跳过 Verify。Verify 请求余栏不是不变量 410，也不是不变量 353，也不是不变量 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 415；语料 C419；模式 name-the-verify-height；反模式 verifyheight-sold-as-extheight；L10.3 第 411 条。填 L4.4 / CometBFT 档案 Verify 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Verify 请求余栏、怎样对高度、怎样填 hash。不编博物馆页。不另写 19 节。不与 410 / 353 / 358 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是拟议块高度、已经不保证跑过 Process、已经跳过 Verify 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 415）
 
 - CometBFT ExecTxResult 日志栏工作实例（官方 ABCI++ Methods ExecTxResult，实现 / ExecTxResult 日志栏，不另写 19 节）：看见 ExecTxResult.log 是应用日志的输出不是已经是 Query 日志。看见 ExecTxResult.info 是附加信息不是已经是 CheckTx 附加信息。看见 ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略不是已经印进本头。ExecTxResult 日志栏不是不变量 384，也不是不变量 391，也不是不变量 316。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

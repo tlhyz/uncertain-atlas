@@ -4046,6 +4046,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2007 | 高 | 看见 ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略 / 看见记了日志 会被写成已经印进本头，或当成已经是共识 | 官方应用需求：Info and Log are non-deterministic debug fields；CometBFT logs them and otherwise ignores them |
 | A2008 | 中 | 怎样写 ExecTxResult 日志栏 / 怎样填日志 / 怎样填附加信息 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2009 | 记录 | 会与 384 / 391 / 316 糊成「看见填了 ExecTxResult 日志栏就已经是 Query 日志」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult 日志栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 Query 日志 / 已经是 CheckTx 附加信息 / 已经印进本头 标成另一对象 |
+| A2010 | 高 | 看见 VerifyVoteExtensionRequest.height 是块高度（用来对一下） / 看见填了 height 会被写成已经是拟议块高度，或当成已经对上了拟议块 | 工作实例：abci++_methods VerifyVoteExtension Request 官方写 height is Height of the block (for sanity check) |
+| A2011 | 高 | 看见 VerifyVoteExtensionRequest.hash 是扩展要指的那份拟议块哈希 / 看见填了 hash 会被写成已经不保证跑过 Process，或当成已经是 ExtendVoteRequest.hash | 官方表：hash is The hash of the proposed block that the vote extension refers to |
+| A2012 | 高 | 看见 VerifyVoteExtensionRequest.vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 / 看见能空 会被写成已经跳过 Verify，或当成已经按原样签 | 官方表：vote_extension is Application-specific information signed by CometBFT. Can have 0 length |
+| A2013 | 中 | 怎样写 Verify 请求余栏 / 怎样对高度 / 怎样填 hash 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2014 | 记录 | 会与 410 / 353 / 358 糊成「看见填了 Verify 请求余栏就已经是拟议块高度」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是拟议块高度 / 已经不保证跑过 Process / 已经跳过 Verify 标成另一对象 |
 
 
 

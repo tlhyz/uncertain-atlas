@@ -312,3 +312,4 @@
 - [name-the-init-once](name-the-init-once.md)
 - [name-the-ext-req-mis](name-the-ext-req-mis.md)
 - [name-the-exectx-log](name-the-exectx-log.md)
+- [name-the-verify-height](name-the-verify-height.md)
