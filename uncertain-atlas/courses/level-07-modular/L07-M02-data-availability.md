@@ -43,7 +43,10 @@ Merkle 路径证明「T 被头承诺过」。
 
 DAS：随机查询编码份额。安全是概率的，依赖参数与诚实应答节点。
 
+**NMT 完备性（另一问）：** 证明「这一命名空间的份额都给了」，不是证明扩展方阵已经可用。官方把 DAS 与 NMT 写成两件套。精读：[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md)（不变量 124）。
+
 **事实：** 这是轻客户端安全的第三根柱子（另两根：共识证明、状态/包含证明）。
+**事实：** 抽样过关不是编码已经诚实（还要错误扩展欺诈证明 + 诚实桥节点），也不是历史已经有人存。
 
 ---
 
@@ -105,5 +108,5 @@ Celestia DAS；Ethereum blobs（另一条承诺路线）；Bitcoin 全节点默�
 | 部署 | 轻节点必须真抽样，不能只问 RPC |
 | 经济 | 扣留数据的收益 vs 抽样抓住的概率（不填未核百分比） |
 
-**禁止假学习：** 「有头就是有数据。」「抽到份额所以执行正确。」「有 KZG 所以和 Celestia 一种 DAS。」
-**边界：** Celestia 纠删码 ≠ Ethereum KZG sidecar ≠ Fulu PeerDAS 列抽样。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)、[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)。不把某一分叉的每块 blob 个数当永恒。
+**禁止假学习：** 「有头就是有数据。」「抽到份额所以执行正确。」「有 KZG 所以和 Celestia 一种 DAS。」「验了 NMT 就是整块可用。」「抽样绿就是编码对 / 历史还在。」
+**边界：** Celestia 纠删码 ≠ Ethereum KZG sidecar ≠ Fulu PeerDAS 列抽样。NMT 完备性 ≠ DAS。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)、[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)、[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md)。不把某一分叉的每块 blob 个数当永恒。不抄方阵边长 / FAQ 百分比。档案 §15 仍不编事故。

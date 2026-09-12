@@ -48,4 +48,4 @@ EIP-4844 的动机就是给 rollup 送数据。Fulu 又把 `is_data_available()`
 
 ## 对不确定的意义（建议）
 
-产品句必须带：**承诺 / 抽样 / 存留窗** 三个词里你用了哪几个。缺窗还写「永久 DA」，这条就红。
+产品句必须带：**承诺 / 抽样 / 存留窗** 三个词里你用了哪几个。缺窗还写「永久 DA」，这条就红。Celestia 内部还要把 NMT 完备性从 DAS 里拆开，见 [nmt-sold-as-square-available](nmt-sold-as-square-available.md)。

@@ -17,7 +17,7 @@
 | Sui | owned 快路径 vs shared 共识 | 所有交易同一「到了」 | 视路径 | L6.2 |
 | Aptos | 共识给出的序 L 上的 commit | STM 跑完 = 最终 | 同 BFT 家族 | L6.3 |
 | 乐观 rollup | L1 最终 + 窗口 + 根 | L2 UI = 兑付 | 排序者活性 | L7.4 |
-| Celestia | 头 commit + DA 应可用 | 头最终 = 执行最终 | 同 CometBFT 倾向 | L7.2 |
+| Celestia | 头 commit + DA 应可用 | 头最终 = 执行最终；NMT 齐 = 方阵已可用 | 同 CometBFT 倾向 | L7.2 / 精读 |
 | Polkadot | 中继 GRANDPA 最终（平行块先可用） | collator RPC = 共享安全最终 | 须读中继 | L7.3 / 档案 |
 | Kaspa | DAG 上蓝序变深 | 进了一个块 = 最终 | 视图/传播分裂 | L3.8 |
 | Zcash / Monero | 最重链家族 | 屏蔽/环 = 另一种最终 | 两边可长 | L8 |

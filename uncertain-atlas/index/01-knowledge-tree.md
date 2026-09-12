@@ -358,7 +358,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - DAS、纠删码、NMT
 - 数据扣留攻击
 - 「有区块头 ≠ 有验证状态所需的数据」
-- 覆盖：课文 L7.2；与 4844 / PeerDAS 分列 `tracks/light-clients/worked-example-blob-vs-das.md`
+- 覆盖：课文 L7.2；与 4844 / PeerDAS 分列 `tracks/light-clients/worked-example-blob-vs-das.md`。NMT 命名空间齐了 ≠ 扩展方阵已经可用：[`../tracks/light-clients/worked-example-nmt-vs-das.md`](../tracks/light-clients/worked-example-nmt-vs-das.md)（不变量 124）
 
 ### M7.3 Rollup 作为执行租户 · 重要
 - 乐观 vs ZK（先架构，后数学）
@@ -436,7 +436,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
-- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`；Altair 抽样 `tracks/light-clients/worked-example-sync-committee.md`；Mina SNARKed ≠ staged `tracks/light-clients/worked-example-snarked-vs-staged.md`（不变量 123）。验过头 ≠ 能交证据：Alderfly（不变量 66；朝前 lunatic 不得只等同高再出一块）
+- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`；Altair 抽样 `tracks/light-clients/worked-example-sync-committee.md`；Mina SNARKed ≠ staged `tracks/light-clients/worked-example-snarked-vs-staged.md`（不变量 123）；Celestia NMT 齐 ≠ 方阵可用 `tracks/light-clients/worked-example-nmt-vs-das.md`（不变量 124）。验过头 ≠ 能交证据：Alderfly（不变量 66；朝前 lunatic 不得只等同高再出一块）
 
 ### M9.7 协议测试 · 必学
 - unit / property / fuzz / differential / chaos / mutation
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–123）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–124）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C127；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C128；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 125）
+
+- Celestia 工作实例：NMT 证明命名空间齐了不是扩展方阵已经可用。DAS 抽样过关不是已经拿到自己的 blob，也不是编码已经诚实。新块 DA 不是历史已经有人存。出处官方 DA 层 + DA FAQ。
+- 不变量 124；语料 C128；模式 name-the-da-question；反模式 nmt-sold-as-square-available；L10.3 第 120 条。填 L7.2 / L9.6 / Celestia 档案 §5 §8 §9 §11 §16。
+- 不抄方阵边长 / 中间根个数 / 示例份额 / FAQ 百分比。Celestia §15 仍无官方主网七问，不编事故。不把 Matcha / mocha 当事故页。
+
 ## 2026-09-12（续 124）
 
 - Mina 工作实例：区块链 SNARK 验绿不是最新 staged 已经被证明。进块 Apply 不是已经进入 SNARKed ledger。Pickles 不是 Kimchi。验 π 不是已经有账户与路径。出处官方 Glossary / What's in a Block / Scan State + Foundation 22kB 技术文 + o1Labs Kimchi + zkApps FAQ。

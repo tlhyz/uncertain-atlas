@@ -77,7 +77,7 @@ EIP-4844 自己写：sidecar 设计是为了以后把 `is_data_available()` **�
 |------|------|--------|
 | 主业 | 共识 + 数据可用；执行在别人那里 | 「和以太坊 blob 同一种 DA」 |
 | 抽样 | 轻节点随机抽 **纠删份额**；安全是参数化概率 | KZG 点评估预编译 |
-| 树 | NMT / 命名空间 | `blob_kzg_commitments` |
+| 树 | NMT / 命名空间（完备性 ≠ DAS，见 [nmt-vs-das](worked-example-nmt-vs-das.md)） | `blob_kzg_commitments` |
 
 ---
 
