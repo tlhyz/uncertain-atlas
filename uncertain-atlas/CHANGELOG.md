@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 372）
+
+- CometBFT Query 高度工作实例（官方 ABCI++ Methods Query Request，实现 / Query 高度，不另写 19 节）：看见 Query 可以对当前或过去高度查不是已经是 QueryState。看见 height 默认 0 回最新已提交不是已经新鲜。看见这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态不是已经印进本头 AppHash。Query 高度不是不变量 329，也不是不变量 147，也不是不变量 325。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 371；语料 C375；模式 name-the-query-height；反模式 queryheight-sold-as-committed；L10.3 第 367 条。填 L4.4 / CometBFT 档案 Query 高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Query 请求、怎样填 height、怎样对 Merkle 根。不编博物馆页。不另写 19 节。不与 329 / 147 / 325 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。Query 本地查询、本头 AppHash、查询证明标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 371）
 
 - CometBFT Info 握手工作实例（官方 ABCI++ Methods Info Usage，实现 / Info 握手，不另写 19 节）：看见 Info 用来握手对齐不是已经是快照重放。看见 app_version 进每块头不是已经印进本头 AppHash。看见 last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差。Info 握手不是不变量 314，也不是不变量 147，也不是不变量 320。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

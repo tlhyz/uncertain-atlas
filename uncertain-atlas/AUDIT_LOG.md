@@ -3826,6 +3826,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1787 | 高 | 看见引擎指望 last_block_app_hash 和 last_block_height 在 Commit 里更新并落盘 / 看见回了这两列 会被写成已经交差，或当成已经在剪 | 官方：CometBFT expects last_block_app_hash and last_block_height to be updated and persisted during Commit |
 | A1788 | 中 | 怎样写 Info 回包 / 怎样对版本 / 怎样落盘会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1789 | 记录 | 会与 314 / 147 / 320 糊成「看见能回 Info 就已经是快照重放」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 握手 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。QueryState / 本头 AppHash / 崩溃三步标成另一对象 |
+| A1790 | 高 | 看见 Query 可以对当前或过去高度查 / 看见能查 会被写成已经是 QueryState，或当成已经复制到各节点 | 工作实例：abci++_methods Query Request 官方写 Query for data from the application at current or past height |
+| A1791 | 高 | 看见 height 默认 0 回最新已提交 / 看见没填高度 会被写成已经新鲜，或当成已经是握手对齐 | 官方：default=0 returns data for the latest committed block |
+| A1792 | 高 | 看见这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 / 看见填了高度 会被写成已经印进本头 AppHash，或当成已经对上 Proof | 官方：this is the height of the block containing the application's Merkle root hash, which represents the state as it was after committing the block at Height-1 |
+| A1793 | 中 | 怎样写 Query 请求 / 怎样填 height / 怎样对 Merkle 根会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1794 | 记录 | 会与 329 / 147 / 325 糊成「看见能查就已经是 QueryState」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Query 本地查询 / 本头 AppHash / 查询证明标成另一对象 |
 
 
 

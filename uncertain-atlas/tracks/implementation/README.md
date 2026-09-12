@@ -73,6 +73,7 @@
 - [`worked-example-snapshot-vs-identical.md`](worked-example-snapshot-vs-identical.md) — 快照全字段（含 Metadata）对上 ≠ 已经装完；引擎不解释 format / hash ≠ 已经轻验 AppHash；空快照也至少 1 块 ≠ 已经齐（不变量 368）
 - [`worked-example-extvoteinfo-vs-local.md`](worked-example-extvoteinfo-vs-local.md) — ExtendedVoteInfo 从本进程抽出 ≠ 已经从块里抽出；把验过的签交给应用 ≠ 已经按原样签；扩展关掉则字段全空 ≠ 已经到了启用高度（不变量 369）
 - [`worked-example-info-vs-handshake.md`](worked-example-info-vs-handshake.md) — Info 用来握手对齐 ≠ 已经是快照重放；app_version 进每块头 ≠ 已经印进本头 AppHash；last_block_app_hash / last_block_height 要在 Commit 里落盘 ≠ 已经交差（不变量 370）
+- [`worked-example-queryheight-vs-committed.md`](worked-example-queryheight-vs-committed.md) — Query 可以对当前或过去高度查 ≠ 已经是 QueryState；height 默认 0 回最新已提交 ≠ 已经新鲜；这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 ≠ 已经印进本头 AppHash（不变量 371）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
