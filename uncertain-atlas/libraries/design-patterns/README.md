@@ -81,3 +81,4 @@
 - [name-the-checksum-version](name-the-checksum-version.md)
 - [name-the-extended-key](name-the-extended-key.md)
 - [name-the-mnemonic-seed](name-the-mnemonic-seed.md)
+- [name-the-descriptor](name-the-descriptor.md)

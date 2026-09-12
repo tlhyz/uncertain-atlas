@@ -37,6 +37,8 @@
 
 精读：[`../../tracks/implementation/worked-example-mnemonic-vs-seed.md`](../../tracks/implementation/worked-example-mnemonic-vs-seed.md)（不变量 183）。看见助记词不是已经是二进制种子。用户自造句子不是已经是本页那种助记词。口令不同不是已经非法。助记词校验过了不是已经能改对。BIP-39 不是 BIP-32，也不是 BIP-173，也不是 BIP-380。
 
+精读：[`../../tracks/implementation/worked-example-descriptor-vs-keys.md`](../../tracks/implementation/worked-example-descriptor-vs-keys.md)（不变量 184）。看见私钥或助记词备份不是已经知道该看哪种输出脚本。看见描述符不是已经是地址。描述符里的扩展钥不是已经能长出脚本。描述符校验过了不是已经是合法脚本集合。BIP-380 不是 BIP-39，也不是 BIP-32，也不是 BIP-173。
+
 一句话（禁止营销）：
 
 > 用 UTXO + 工作量证明最重链，在无许可网络上对花费授权做概率最终的全网排序。
