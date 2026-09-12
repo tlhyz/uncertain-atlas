@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 313）
+
+- CometBFT CheckTxState 工作实例（官方 Requirements for the Application，实现 / CheckTxState，不另写 19 节）：看见 CheckTx 过了不是已经按 ExecuteTxState 验过。看见两份状态同时在改不是已经同一份。看见 Type 是 RECHECK 不是已经是一笔新交易。CheckTxState 不是不变量 33，也不是不变量 301，也不是不变量 310，也不是不变量 311。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 312；语料 C316；模式 name-the-checktxstate；反模式 checktxstate-sold-as-execute；L10.3 第 308 条。填 L4.4 / CometBFT 档案 CheckTxState / 实现表 / 内存池表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样实现 CheckTxState、怎样再验、索引器去重。不编博物馆页。不另写 19 节。不与 33 / 301 / 310 / 311 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1。四门 / 内存池交接 / Commit 锁 / 候选状态标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 312）
 
 - CometBFT 候选状态工作实例（官方 Requirements for the Application，实现 / 候选状态，不另写 19 节）：看见 Prepare 里没有头哈希不是已经知道本头。看见立刻执行出候选不是已经是 ExecuteTxState。看见丢掉候选不是已经永远不用再执行。候选状态不是不变量 33，也不是不变量 310，也不是不变量 5。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

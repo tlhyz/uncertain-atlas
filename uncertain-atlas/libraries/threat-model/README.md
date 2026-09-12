@@ -313,6 +313,7 @@
 | 304 | HasChannel 被写成已经入队 | 协议 + 文案 | 看见 HasChannel / Send 回假 / TrySend 回假 / 对等发送 当成已经入队或已经断开或已经和 Send 同一把尺 | 不变量 309；语料 C313 |
 | 305 | 默认锁被写成已经 RPC 安全 | 协议 + 文案 | 看见默认 Go 全局锁 / Commit 前锁内存池 / Commit 里等广播 / Commit 锁 当成已经能给 RPC 读或已经解锁或已经能往下走 | 不变量 310；语料 C314 |
 | 306 | 候选被写成已经是 ExecuteTxState | 协议 + 文案 | 看见 Prepare 没有头哈希 / 立刻执行出候选 / 丢掉候选 / 候选状态 当成已经知道本头或已经是工作状态或已经永远不用再执行 | 不变量 311；语料 C315 |
+| 307 | CheckTxState 被写成已经是 ExecuteTxState | 协议 + 文案 | 看见 CheckTx 过了 / 两份同时在改 / RECHECK / CheckTxState 当成已经按工作状态验过或已经同一份或已经是新交易 | 不变量 312；语料 C316 |
 
 ## 不自动覆盖
 
