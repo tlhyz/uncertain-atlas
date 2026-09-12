@@ -162,8 +162,8 @@ Level 0 只要求你能按这个清单提问。
 | 部署 | 你连的节点、日蚀、分区决定你看见哪条门 |
 | 经济 | 费用与审查决定过门快慢，不把入池变成最终 |
 
-**禁止假学习：** 「钱包绿勾指协议最终。」「进 mempool 就是上链。」「打开付款链接就是已验证。」「看见付款 URI 就是已经授权 / 已经付过。」「看见签过的消息就是已经能花 / 已经付过。」「看见资金证明清单就是已经齐 / 已经没花。」  
-**边界：** 各链细节在档案第 4 节。五列对照见 [`../../tracks/lifecycle/`](../../tracks/lifecycle/README.md)。付款 URI 远程取单 ≠ 验证：[`../../tracks/failure-museum/cve-2024-52918.md`](../../tracks/failure-museum/cve-2024-52918.md)。付款 URI 方案本身被写成已经授权是本页（不变量 255 / BIP-321），不是 55。看见签过的消息 ≠ 已经证明能控制资金；看见签过 ≠ 已经证明发过上一笔；看见资金证明清单 ≠ 已经齐 / ≠ 已经没花：[`../../tracks/lifecycle/worked-example-signed-message-vs-control.md`](../../tracks/lifecycle/worked-example-signed-message-vs-control.md)（不变量 258）。不要抄编码前缀或虚拟交易字段。不要写怎样拼能过验证器的签消息。
+**禁止假学习：** 「钱包绿勾指协议最终。」「进 mempool 就是上链。」「打开付款链接就是已验证。」「看见付款 URI 就是已经授权 / 已经付过。」「看见签过的消息就是已经能花 / 已经付过。」「看见资金证明清单就是已经齐 / 已经没花。」「看见静默付款地址就是已经有输出 / 已经付过。」「看见扫过就是已经收到。」  
+**边界：** 各链细节在档案第 4 节。五列对照见 [`../../tracks/lifecycle/`](../../tracks/lifecycle/README.md)。付款 URI 远程取单 ≠ 验证：[`../../tracks/failure-museum/cve-2024-52918.md`](../../tracks/failure-museum/cve-2024-52918.md)。付款 URI 方案本身被写成已经授权是本页（不变量 255 / BIP-321），不是 55。看见签过的消息 ≠ 已经证明能控制资金；看见签过 ≠ 已经证明发过上一笔；看见资金证明清单 ≠ 已经齐 / ≠ 已经没花：[`../../tracks/lifecycle/worked-example-signed-message-vs-control.md`](../../tracks/lifecycle/worked-example-signed-message-vs-control.md)（不变量 258）。不要抄编码前缀或虚拟交易字段。不要写怎样拼能过验证器的签消息。看见静默付款地址 ≠ 已经有一笔链上输出；看见扫过 ≠ 已经收到；看见同一条码再用 ≠ 已经同一笔输出：[`../../tracks/lifecycle/worked-example-silent-payment-vs-output.md`](../../tracks/lifecycle/worked-example-silent-payment-vs-output.md)（不变量 260）。不要抄派生公式或例地址。不要写怎样扫链或派生输出。
 
 ---
 
