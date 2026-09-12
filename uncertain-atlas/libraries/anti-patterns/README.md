@@ -108,3 +108,6 @@
 - [gas-sold-as-wallclock](gas-sold-as-wallclock.md)
 - [circuit-impl-sold-as-statement](circuit-impl-sold-as-statement.md)
 - [oog-sold-as-reverted](oog-sold-as-reverted.md)
+- [dup-header-sold-as-turnstile](dup-header-sold-as-turnstile.md)
+- [normalize-sold-as-encoded](normalize-sold-as-encoded.md)
+- [body-reject-sold-as-header-bound](body-reject-sold-as-header-bound.md)

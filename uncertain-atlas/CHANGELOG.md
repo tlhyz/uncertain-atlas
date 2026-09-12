@@ -2,6 +2,16 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 105–107）
+
+- 博物馆 Zcash ZIP 256：重复块头可静默复位链价值池跟踪，ZIP 209 闸门名义上仍在、实现字段被清掉。初始化必须在去重之后；启动从块数据重算检查点之后的增量。跟踪复位不是闸门还在转。
+- 不变量 104；语料 C108；反模式 dup-header-sold-as-turnstile；L10.3 第 100 条。
+- 博物馆 Zcash ZIP 256：v4 无 Spend/Output 时，`valueBalanceSapling` 编码非零被反序列化改写成 0，共识「必须为 0」的检查从不开火。Zebra 按规范拒编码。归一化成零不是编码必须为零。
+- 不变量 105；语料 C109；反模式 normalize-sold-as-encoded；L10.3 第 101 条。
+- 博物馆 Zcash ZIP 256：NU5 起授权数据由 `hashBlockCommitments` 承诺，不由 Merkle 根。体可变拒绝若先开火，可把诚实头永久标非法。体拒绝不是头已经绑死。
+- 不变量 106；语料 C110；反模式 body-reject-sold-as-header-bound；L10.3 第 102 条。
+- 对照不变量 2 / 3 / 12 / 13 / 39 / 74 / 96 / 102。不写怎样送重复头、怎样拼非零余额栏、怎样改体。不抄版本 / 高度 / 规范金额上限。ZIP 256 其余独立谓词（身份 `rk`、`ephemeralKey`、coinbase 崩溃循环）有官方句且不与已归档条重复才另档。CVE-2024-52911 已在 Bitcoin 馆，不克隆。
+
 ## 2026-09-12（续 103–104）
 
 - 博物馆 Zcash ZIP 257：Orchard Action 电路实现缺拷贝约束，陈述按规范是对的。先软分叉关 Orchard，再 NU6.2 换验证钥。旧钥过验不是新电路已安全。

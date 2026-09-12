@@ -78,8 +78,11 @@
 - [ethereum-2021-05-state-gas-not-time](ethereum-2021-05-state-gas-not-time.md)（协议+实现+部署：块 gas 上限不是墙钟已经有界；状态访问的常数 gas 不是磁盘已经是 O(1)）
 - [zcash-2026-orchard-circuit-not-statement](zcash-2026-orchard-circuit-not-statement.md)（密码+协议+实现：电路实现不是已经写明的陈述；旧验证钥过验不是新电路已经安全）
 - [ethereum-2016-11-oog-empty-account](ethereum-2016-11-oog-empty-account.md)（实现+协议：交易以 out-of-gas 结束不是空账户删除已经回滚）
+- [zcash-2026-zip209-header-reset](zcash-2026-zip209-header-reset.md)（协议+实现：重复块头静默复位跟踪不是闸门还在转）
+- [zcash-2026-valuebalance-normalized](zcash-2026-valuebalance-normalized.md)（协议+实现：反序列化归一化成零不是编码必须为零）
+- [zcash-2026-nu5-body-poison](zcash-2026-nu5-body-poison.md)（协议+实现：体可变拒绝先于授权承诺不是头已经绑死）
 
-待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
+待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余独立谓词（身份 `rk` 恐慌、`ephemeralKey` 分裂、coinbase 屏蔽余额崩溃循环）有官方句且不与 13 / 102 / 104–106 / 52911 重复才另档。
 
 写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)  
 五层对照精读：[`worked-example-five-layers.md`](worked-example-five-layers.md)（同一通胀案，五层各说什么）。  
