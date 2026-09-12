@@ -426,6 +426,7 @@
 | 417 | Finalize 请求栏被写成已经交差 local_last_commit | 协议 + 文案 | 看见 FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息 / FinalizeBlockRequest.height 是已决块的高度 / FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表 / Finalize 请求栏当成已经交差 local_last_commit或已经对上了拟议块头或已经执行那些交易 | 不变量 422；语料 C426 |
 | 418 | Prepare 请求栏被写成已经能回超限列表 | 协议 + 文案 | 看见 PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节 / PrepareProposalRequest.txs 是挑进拟议块的初步交易列表 / PrepareProposalRequest.height 是将要提议的那块的高度 / Prepare 请求栏当成已经能回超限列表或已经跑过 Process或已经对上了拟议块头 | 不变量 423；语料 C427 |
 | 419 | Prepare 请求余栏被写成已经交差 proposed_last_commit | 协议 + 文案 | 看见 PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息 / PrepareProposalRequest.time 是将要提议那块的时间戳 / PrepareProposalRequest.misbehavior 是过错验证者信息列表 / Prepare 请求余栏当成已经交差 proposed_last_commit或已经对上了拟议块头或已经定奖惩 | 不变量 424；语料 C428 |
+| 420 | ExtendedVoteInfo 表余栏被写成已经带了公钥 | 协议 + 文案 | 看见 ExtendedVoteInfo.validator 是发了这张票的验证者 / ExtendedVoteInfo.block_id_flag 标明投了上一块、nil、还是没收到票 / ExtendedVoteInfo.non_rp_extension_signature 是发送验证者造、CometBFT 验过的非重放保护扩展签 / ExtendedVoteInfo 表余栏当成已经带了公钥或已经罚没或已经把验过的签交给应用 | 不变量 425；语料 C429 |
 
 ## 不自动覆盖
 

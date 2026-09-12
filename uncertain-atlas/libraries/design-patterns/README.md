@@ -322,3 +322,4 @@
 - [name-the-fin-req](name-the-fin-req.md)
 - [name-the-prep-req](name-the-prep-req.md)
 - [name-the-prep-req-rest](name-the-prep-req-rest.md)
+- [name-the-ext-vi-rest](name-the-ext-vi-rest.md)

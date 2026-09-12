@@ -427,3 +427,4 @@
 - [finreq-sold-as-procreq](finreq-sold-as-procreq.md)
 - [prepreq-sold-as-return](prepreq-sold-as-return.md)
 - [prepreqrest-sold-as-procreq](prepreqrest-sold-as-procreq.md)
+- [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)

@@ -4096,6 +4096,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2057 | 高 | 看见 PrepareProposalRequest.misbehavior 是过错验证者信息列表 / 看见填了 misbehavior 会被写成已经定奖惩，或当成已经是 ProcessProposalRequest.misbehavior | 官方表：misbehavior is List of information about validators that misbehaved |
 | A2058 | 中 | 怎样写 Prepare 请求余栏 / 怎样填 local_last_commit / 怎样填 time 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2059 | 记录 | 会与 359 / 420 / 413 糊成「看见填了 Prepare 请求余栏就已经交差 proposed_last_commit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 proposed_last_commit / 已经对上了拟议块头 / 已经定奖惩 标成另一对象 |
+| A2060 | 高 | 看见 ExtendedVoteInfo.validator 是发了这张票的验证者 / 看见填了 validator 会被写成已经带了公钥，或当成已经从本进程抽出 | 官方表：validator is The validator that sent the vote |
+| A2061 | 高 | 看见 ExtendedVoteInfo.block_id_flag 标明投了上一块、nil、还是没收到票 / 看见填了 block_id_flag 会被写成已经罚没，或当成已经是 VoteInfo 的 block_id_flag | 官方表：block_id_flag is Indicates whether the validator voted the last block, nil, or its vote was not received |
+| A2062 | 高 | 看见 ExtendedVoteInfo.non_rp_extension_signature 是发送验证者造、CometBFT 验过的非重放保护扩展签 / 看见填了 non_rp_extension_signature 会被写成已经把验过的签交给应用，或当成已经是 extension_signature | 官方表：non_rp_extension_signature is Signature of the non replay-protected vote extension produced by the sending validator and verified by CometBFT |
+| A2063 | 中 | 怎样写 ExtendedVoteInfo 表余栏 / 怎样填 validator / 怎样填 block_id_flag 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2064 | 记录 | 会与 369 / 421 / 365 糊成「看见填了 ExtendedVoteInfo 表余栏就已经带了公钥」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo 表余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经带了公钥 / 已经罚没 / 已经把验过的签交给应用 标成另一对象 |
 
 
 
