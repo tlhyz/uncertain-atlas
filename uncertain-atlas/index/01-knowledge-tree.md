@@ -368,7 +368,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - Relay / Parachain、collator / validator
 - backing、availability、approval
 - 小链如何借用安全，以及新的攻击面
-- 覆盖：课文 L7.3 入口；档案 `protocols/polkadot/`。交易解码深度有界 ≠ runtime API 再解整块已安全：[`../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)（不变量 97）
+- 覆盖：课文 L7.3 入口；档案 `protocols/polkadot/`。交易解码深度有界 ≠ runtime API 再解整块已安全：[`../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)（不变量 97）。组下标 ≠ 票向量下标：[`../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md`](../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md)（不变量 98）。Active ≠ Confirmed：[`../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md`](../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md)（不变量 99）
 
 ### M7.5 共享安全对照 · 进阶
 - restaking 等后到项目：只收「独特思想」，不因有名而学
@@ -449,7 +449,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（六十八案；含 Sepolia 2024-03 Engine API 尺寸、Polkadot-SDK 2025-05 交易深度套错对象、Solana 2025-05 Fiat-Shamir 漏哈希、Solana 2020-12 槽号当块身份、Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（七十案；含 Kusama 2025-08 组下标≠票下标、Kusama 2024-02 Active≠Confirmed、Sepolia 2024-03 Engine API 尺寸、Polkadot-SDK 2025-05 交易深度套错对象、Solana 2025-05 Fiat-Shamir 漏哈希、Solana 2020-12 槽号当块身份、Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–97）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–99）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C101；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C103；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

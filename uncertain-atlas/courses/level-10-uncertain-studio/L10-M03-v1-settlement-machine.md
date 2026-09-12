@@ -121,7 +121,9 @@
 90. 若块 / 银行 / repair 用高度或槽号当主键：必须改成内容哈希当身份（不变量 94）。同槽两份不同块必须能像不同槽的分叉一样互修。Turbine / 传播按「已传过」去重必须点名按哪个身份。乐观确认不是已经 rooted，也不是重启必保留。不要抄官网吞吐。馆藏：[`../../tracks/failure-museum/solana-2020-12-04-slot-as-block-id.md`](../../tracks/failure-museum/solana-2020-12-04-slot-as-block-id.md)。这和确认了不能当父块（82）、恢复 shred（83）、同根不同列表（不变量 12）不是同一句。  
 91. 若提供机密余额 / 链上非交互证明：Fiat-Shamir transcript 必须纳入验证时当已绑定的全部代数分量（不变量 95）。验绿不是不可铸 / 不可偷。应用层未改不是证明程序已齐。先前审计与未见利用不是 transcript 已绑完。第一版可以不提供机密余额。不要写怎样伪造。馆藏：[`../../tracks/failure-museum/solana-2025-05-02-elgamal-fiat-shamir.md`](../../tracks/failure-museum/solana-2025-05-02-elgamal-fiat-shamir.md)。这和 Sprout 构造可靠性（不变量 13）、ICS-23 验绿（75）、有效性点名程序哈希（不变量 28）不是同一句。  
 92. 若执行与共识分开、用 RPC / Engine API 出块：出块通道尺寸必须与入池单笔上限、块计量上限分开写，且各实现同拒或同收（不变量 96）。单笔低于入池上限不是拼块已被所有客户端接受。把各家收到同一低值不是许多小交易不能顶满。多数拒、少数收按分叉审。不要抄 413。馆藏：[`../../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md`](../../tracks/failure-museum/ethereum-2024-03-sepolia-engine-rpc.md)。这和执行别名错根（不变量 3）、接收分配（44）、默认 MaxBytes（59）不是同一句。  
-93. 若有交易解码深度 / 嵌套 batch：深度计数器只走交易对象，不得套在 runtime API 整块参数上（不变量 97）。出块收下不是导入 check_inherents 已能解。导入失败不是邻居已经作恶。拉黑一个哈希不是同类不会再来。第一版可以不做嵌套 batch。不要抄深度数字。馆藏：[`../../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)。这和外层字节不是内层已有界（66）、自动封禁无界表（46）、Engine API 尺寸（92）不是同一句。
+93. 若有交易解码深度 / 嵌套 batch：深度计数器只走交易对象，不得套在 runtime API 整块参数上（不变量 97）。出块收下不是导入 check_inherents 已能解。导入失败不是邻居已经作恶。拉黑一个哈希不是同类不会再来。第一版可以不做嵌套 batch。不要抄深度数字。馆藏：[`../../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)。这和外层字节不是内层已有界（66）、自动封禁无界表（46）、Engine API 尺寸（92）不是同一句。  
+94. 若出块要按组剔除已禁用者的票：组下标不是票向量下标（不变量 98）。票可以比组少。create_inherent 回 None 不是客户端已报错。生产关日志不是错误已可见。第一版可以不做平行链 backing 过滤。馆藏：[`../../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md`](../../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md)。这和分片下标（56）、解码深度（93）、Active≠Confirmed（95）不是同一句。  
+95. 若做争议状态机 / 禁用验证者：导入、Active、Confirmed 必须分开（不变量 99）。只被 Disabled 发起不得标 Active。GRANDPA 跳过含 Active 的叉不是最终性还在走。测试必须另断言最终性。第一版可以不做争议禁用。不要抄 ⅓。馆藏：[`../../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md`](../../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md)。这和形状≠slash（不变量 21）、组下标（94）、票还在根不前进（82）不是同一句。
 
 **以后再发明**
 
@@ -178,7 +180,9 @@
 - 把槽号 / 高度写成块身份，或把乐观确认写成已经 rooted。  
 - 把证明程序验绿写成不可铸 / 不可偷，或把应用层未改写成证明层已齐。  
 - 把单笔低于入池上限写成拼块已被所有客户端接受，或把各家 RPC 收到同一低值写成许多小交易不能顶满。  
-- 把交易解码深度有界写成 runtime API 再解整块已安全，或把导入失败写成邻居已经作恶。
+- 把交易解码深度有界写成 runtime API 再解整块已安全，或把导入失败写成邻居已经作恶。  
+- 把组下标写成票向量下标，或把 create_inherent 回 None 写成客户端已报错。  
+- 把 Active 争议写成已经 Confirmed，或把禁用测试绿写成最终性已绿。
 
 ---
 
@@ -229,7 +233,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 九十三条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 九十五条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

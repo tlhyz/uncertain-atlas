@@ -141,7 +141,7 @@ PoV 可能很大：可用性协议把数据分散。
 
 ## 15. 历史事故
 
-已归档官方七问：[`../../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)（交易解码深度有界 ≠ runtime API 再解整块已安全）。其它（可用性、runtime 升级、XCM）仍须官方出处，不编根因。
+已归档官方七问：[`../../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)（交易解码深度有界 ≠ runtime API 再解整块已安全）；[`../../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md`](../../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md)（组下标 ≠ 票向量下标）；[`../../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md`](../../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md)（Active ≠ Confirmed）。其它（可用性、runtime 升级、XCM、2025-05-09 争议风暴）仍须官方出处且谓词独立，不编根因。
 
 ---
 

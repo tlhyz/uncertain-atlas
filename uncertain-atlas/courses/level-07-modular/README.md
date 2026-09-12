@@ -12,4 +12,4 @@
 | 7.4 | [L07-M04-rollup-tenant.md](L07-M04-rollup-tenant.md) | M7.3 | 乐观/ZK 租户与提款三条件 |
 
 M7.5 restaking 等：只收独特思想，不因有名展开。  
-Polkadot 事故：博物馆 2025-05 交易深度套错对象（不变量 97）。
+Polkadot / Kusama 事故：博物馆 2025-05 交易深度套错对象（不变量 97）；2025-08 组下标≠票下标（不变量 98）；2024-02 Active≠Confirmed（不变量 99）。
