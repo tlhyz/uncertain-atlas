@@ -154,3 +154,4 @@
 - [name-the-reject](name-the-reject.md)
 - [name-the-payment-uri](name-the-payment-uri.md)
 - [name-the-disabletx](name-the-disabletx.md)
+- [name-the-duplicate-txid](name-the-duplicate-txid.md)

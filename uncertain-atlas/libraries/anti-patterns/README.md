@@ -259,3 +259,4 @@
 - [reject-sold-as-consensus](reject-sold-as-consensus.md)
 - [uri-sold-as-authorized](uri-sold-as-authorized.md)
 - [disabletx-sold-as-lifetime](disabletx-sold-as-lifetime.md)
+- [duplicate-txid-sold-as-unique](duplicate-txid-sold-as-unique.md)

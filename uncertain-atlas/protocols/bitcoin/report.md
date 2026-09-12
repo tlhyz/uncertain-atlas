@@ -52,9 +52,9 @@ Bitcoin 的问题陈述（事实，白皮书 2008）：点对点电子现金，�
 3. 节点按本地策略决定是否进 mempool（脚本、费、标准性）。标准性 ≠ 共识合法性。策略不作用于块内交易：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。选择加入替换信号不是已经换掉；nSequence 示意不是已经是相对锁；钱包看见未确认不是已经当付款：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。看见跳过库存通告不是已经拒进池；看见发了费率过滤器不是对等节点已经照做；看见布隆过了不是已经过了费率门：[`../../tracks/mempool/worked-example-feefilter-vs-rejected.md`](../../tracks/mempool/worked-example-feefilter-vs-rejected.md)（不变量 245）。看见内存池查询回了一串库存不是已经有那些交易；看见只肯给最近转发过的不是已经支持整池查询；看见协议版本够了不是已经在答：[`../../tracks/mempool/worked-example-mempool-dump-vs-have.md`](../../tracks/mempool/worked-example-mempool-dump-vs-have.md)（不变量 253）。看见拒收消息不是已经共识非法；看见调试理由不是已经该给用户看；看见没拒收不是已经是当前最好链：[`../../tracks/network/worked-example-reject-vs-consensus.md`](../../tracks/network/worked-example-reject-vs-consensus.md)（不变量 254）。  
 4. 矿工从 mempool 选交易，算 Merkle 根，找 nonce 使头哈希低于目标。头上的 Merkle 用各笔 txid；新规则另要 coinbase 承诺 wtxid 根：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。  
 5. 新块传播。节点验证：PoW、时间戳窗口、交易列表、脚本、无双花。旧节点看见 txid 不是已经验过见证。  
-6. `ConnectBlock`：花输入、造输出，写 UTXO。coinbase 输出进了 UTXO 集，仍不能马上当输入：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。coinbase 第一项写了高度不是头上已经有高度字段：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。  
+6. `ConnectBlock`：花输入、造输出，写 UTXO。coinbase 输出进了 UTXO 集，仍不能马上当输入：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。coinbase 第一项写了高度不是头上已经有高度字段：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。同一交易标识不是已经唯一，也不是已经同一组可花输出：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。  
 7. 若随后出现更重的链，可能 disconnect 再 connect（reorg）。  
-8. 收款方若只看 1 个确认，仍可能被重组；交易所常用更多确认，这是经济习惯，不是协议 commit。普通确认深度也不是 coinbase 成熟窗。
+8. 收款方若只看 1 个确认，仍可能被重组；交易所常用更多确认，这是经济习惯，不是协议 commit。普通确认深度也不是 coinbase 成熟窗。许多确认也不是已经不怕同一标识被覆盖（不变量 257）。
 
 ---
 
@@ -72,7 +72,7 @@ UTXO 集。见课程 L2.1。
 
 **PoW：** 找头哈希满足难度。假设：多数算力不合作改历史。
 
-**最终性：** 概率。确认数越多，改写期望成本越高，不是「第 N 块后数学禁止」。
+**最终性：** 概率。确认数越多，改写期望成本越高，不是「第 N 块后数学禁止」。许多确认也不是已经不怕同一标识被覆盖：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。
 
 **分叉：** 同一高度两个合法块常见于传播延迟。短分叉靠后续工作消解。
 

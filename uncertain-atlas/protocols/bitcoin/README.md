@@ -55,6 +55,8 @@
 
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
+精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。
+
 精读：[`../../tracks/implementation/worked-example-address-vs-utxo.md`](../../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。看见 Bech32 地址串不是链上已经有这笔输出。校验过不是见证程序已经在链上。编出版本和程序不是已经付过款。BIP-173 不是 BIP-350，也不是 BIP-141，也不是 BIP-13。
 
 精读：[`../../tracks/implementation/worked-example-bech32m-vs-bech32.md`](../../tracks/implementation/worked-example-bech32m-vs-bech32.md)（不变量 181）。后继校验过了不是已经是旧校验那套地址。版本 0 过了后继校验不是已经合法。更高版本过了旧校验不是已经合法。看见后继地址串不是已经有 UTXO。BIP-350 不是 BIP-173，也不是 BIP-141。
