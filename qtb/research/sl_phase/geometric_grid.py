@@ -421,6 +421,8 @@ class GeometricSpotGrid:
         last_px = float(px[-1])
         inv_cost = sum(l.qty * l.cost for l in self.lots)
         unreal = self.base * last_px - inv_cost
+        # Rebate is cash income, never netted into the fee rate.
+        self.cash += self.ledger.rebate_income
         eq = self._equity(last_px)
         ser = pd.Series(
             daily,
