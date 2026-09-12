@@ -3726,6 +3726,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1687 | 高 | 看见正确进程在一轮 r、高度 h 只能交出一份扩展 / 看见交了一份 会被写成已经是每一高度一份，或当成已经是正确进程交出的扩展必须被正确接收者 Verify Accept | 官方：因此正确进程在这一轮这一高只能交出一份扩展 |
 | A1688 | 中 | 怎样写 ExtendVote / 怎样选空扩展 / 怎样测一轮一份会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1689 | 记录 | 会与 34 / 338 / 348 糊成「看见到了 Precommit 就已经能再签一张」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案一轮一份扩展 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。拒收整张预提交 / 同一块同一份扩展 / Req 6 必须 Accept 标成另一对象 |
+| A1690 | 高 | 看见 ProcessProposal 也会在这一轮的提议者那边叫 / 看见自己刚 Prepare 过 会被写成已经不用再 Process，或当成已经交差 | 工作实例：abci++_methods ProcessProposal Usage 官方写 Process 也会在这一轮的提议者那边叫 |
+| A1691 | 高 | 看见通常紧跟 Prepare、列表对得上 / 看见 txs 一样 会被写成已经保证是这一次 Prepare 的回包，或当成已经必须对上 | 官方：通常紧跟 Prepare 且 txs 相等，但失败时不保证 |
+| A1692 | 高 | 看见失败时可能对上更早一次 Prepare / 看见根本不调 Process 会被写成已经是这一次 Prepare，或当成已经每轮都会叫 Process | 官方：失败时可能对上更早一次，或根本不调 Process |
+| A1693 | 中 | 怎样写 ProcessProposal / 怎样缓存候选 / 怎样测失败路径会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1694 | 记录 | 会与 33 / 347 / 311 糊成「看见自己刚 Prepare 过就已经不用再 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案提议者 Process / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / Req 3 必须 Accept / 候选状态标成另一对象 |
 
 
 

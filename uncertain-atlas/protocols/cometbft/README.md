@@ -113,6 +113,8 @@ Prepare 不得改已提交状态不是已经立刻执行就已经交差：[`../.
 
 一轮最多一张 Precommit 不是已经能再签一张：[`../../tracks/implementation/worked-example-extend-once-vs-round.md`](../../tracks/implementation/worked-example-extend-once-vs-round.md)（不变量 350）。看见 ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票。看见一轮只能交出一份扩展不是已经是每一高度一份。
 
+Process 也会在提议者那边叫不是已经不用再 Process：[`../../tracks/implementation/worked-example-process-also-vs-prepare.md`](../../tracks/implementation/worked-example-process-also-vs-prepare.md)（不变量 351）。看见通常紧跟 Prepare、列表对得上不是已经保证是这一次。看见失败时可能对上更早一次或根本不调不是已经每轮都会叫。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

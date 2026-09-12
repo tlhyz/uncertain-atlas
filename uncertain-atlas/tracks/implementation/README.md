@@ -53,6 +53,7 @@
 - [`worked-example-req6-coherence-vs-accept.md`](worked-example-req6-coherence-vs-accept.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept ≠ 已经是任意扩展都会 Accept；Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 ≠ 已经只是活性问题；会面对和 Req 5 同一类活性问题 ≠ 已经丢了安全性（不变量 348）
 - [`worked-example-req9-noside-vs-commit.md`](worked-example-req9-noside-vs-commit.md) — Prepare 不得改已提交状态 ≠ 已经立刻执行就已经交差；Process 不得改已提交状态 ≠ 已经 Accept 就已经改了；Extend 和 Verify 不得改已提交状态 ≠ 已经签了扩展就已经进状态（不变量 349）
 - [`worked-example-extend-once-vs-round.md`](worked-example-extend-once-vs-round.md) — 一轮最多一张 Precommit ≠ 已经能再签一张；ExtendVote 只在即将广播非 nil Precommit 时才叫 ≠ 已经签了 nil 票；一轮只能交出一份扩展 ≠ 已经是每一高度一份（不变量 350）
+- [`worked-example-process-also-vs-prepare.md`](worked-example-process-also-vs-prepare.md) — Process 也会在提议者那边叫 ≠ 已经不用再 Process；通常紧跟 Prepare、列表对得上 ≠ 已经保证是这一次；失败时可能对上更早一次或根本不调 ≠ 已经每轮都会叫（不变量 351）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

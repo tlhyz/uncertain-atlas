@@ -248,3 +248,4 @@
 - [name-the-req6-coherence](name-the-req6-coherence.md)
 - [name-the-req9-noside](name-the-req9-noside.md)
 - [name-the-extend-once](name-the-extend-once.md)
+- [name-the-process-also](name-the-process-also.md)
