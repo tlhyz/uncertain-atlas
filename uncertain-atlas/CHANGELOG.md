@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 404）
+
+- CometBFT Finalize 之后工作实例（官方 ABCI++ Methods FinalizeBlock When，实现 / Finalize 之后，不另写 19 节）：看见 Finalize 之后引擎才落盘各笔输出 / AppHash / ResultsHash 不是已经交差。看见落完再锁内存池、新交易不进 CheckTx 不是已经是 Commit 锁。看见可选再验池里剩下的、再解锁、再开下一高 round 0 不是已经是 Recheck。Finalize 之后不是不变量 362，也不是不变量 310，也不是不变量 312。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 403；语料 C407；模式 name-the-finalize-after；反模式 finalizeafter-sold-as-commit；L10.3 第 399 条。填 L4.4 / CometBFT 档案 Finalize 之后 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 之后、怎样落盘这三份、怎样再验。不编博物馆页。不另写 19 节。不与 362 / 310 / 312 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。交差、Commit 锁、Recheck 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 403）
 
 - CometBFT OfferSnapshot 结果枚举余量工作实例（官方 ABCI++ Methods OfferSnapshot Result，实现 / OfferSnapshot 结果枚举余量，不另写 19 节）：看见 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回不是已经崩。看见 OfferSnapshot Result ACCEPT 是收下这份、开始装块不是已经装完。看见 OfferSnapshot Result REJECT 是拒掉这份、换一份不是已经是拒掉这种 format。OfferSnapshot 结果枚举余量不是不变量 376，也不是不变量 401，也不是不变量 400。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

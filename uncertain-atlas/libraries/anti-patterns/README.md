@@ -405,3 +405,4 @@
 - [offerfmt-sold-as-rejectsnap](offerfmt-sold-as-rejectsnap.md)
 - [offeraccept-sold-as-restored](offeraccept-sold-as-restored.md)
 - [offerunk-sold-as-crash](offerunk-sold-as-crash.md)
+- [finalizeafter-sold-as-commit](finalizeafter-sold-as-commit.md)

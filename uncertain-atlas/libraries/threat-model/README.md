@@ -404,6 +404,7 @@
 | 395 | OfferSnapshot 结果枚举被写成已经是拒掉这份 | 协议 + 文案 | 看见 OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 / OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 / OfferSnapshot Result ABORT 是中止装回、不再试别份 / OfferSnapshot 结果枚举当成已经是拒掉这份或已经拒了人或已经换一份 | 不变量 400；语料 C404 |
 | 396 | Offer 收下之后被写成已经装完 | 协议 + 文案 | 看见 Offer 收下之后才去拉块并装 / 在装这块的回包里拒掉这份、还要再收 Offer / ApplySnapshotChunk Result ACCEPT 是这块收下了 / Offer 收下之后当成已经装完或已经中止或已经齐 | 不变量 401；语料 C405 |
 | 397 | OfferSnapshot 结果枚举余量被写成已经崩 | 协议 + 文案 | 看见 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 / OfferSnapshot Result ACCEPT 是收下这份、开始装块 / OfferSnapshot Result REJECT 是拒掉这份、换一份 / OfferSnapshot 结果枚举余量当成已经崩或已经装完或已经是拒掉这种 format | 不变量 402；语料 C406 |
+| 398 | Finalize 之后被写成已经交差 | 协议 + 文案 | 看见 Finalize 之后引擎才落盘各笔输出 / AppHash / ResultsHash / 落完再锁内存池、新交易不进 CheckTx / 可选再验池里剩下的、再解锁、再开下一高 round 0 / Finalize 之后当成已经交差或已经是 Commit 锁或已经是 Recheck | 不变量 403；语料 C407 |
 
 ## 不自动覆盖
 

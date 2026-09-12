@@ -105,6 +105,7 @@
 - [`worked-example-offerfmt-vs-rejectsnap.md`](worked-example-offerfmt-vs-rejectsnap.md) — OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 ≠ 已经是拒掉这份；OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 ≠ 已经拒了人；OfferSnapshot Result ABORT 是中止装回、不再试别份 ≠ 已经换一份（不变量 400）
 - [`worked-example-offeraccept-vs-restored.md`](worked-example-offeraccept-vs-restored.md) — Offer 收下之后才去拉块并装 ≠ 已经装完；在装这块的回包里拒掉这份、还要再收 Offer ≠ 已经中止；ApplySnapshotChunk Result ACCEPT 是这块收下了 ≠ 已经齐（不变量 401）
 - [`worked-example-offerunk-vs-crash.md`](worked-example-offerunk-vs-crash.md) — OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 ≠ 已经崩；OfferSnapshot Result ACCEPT 是收下这份、开始装块 ≠ 已经装完；OfferSnapshot Result REJECT 是拒掉这份、换一份 ≠ 已经是拒掉这种 format（不变量 402）
+- [`worked-example-finalizeafter-vs-commit.md`](worked-example-finalizeafter-vs-commit.md) — Finalize 之后引擎才落盘各笔输出 / AppHash / ResultsHash ≠ 已经交差；落完再锁内存池、新交易不进 CheckTx ≠ 已经是 Commit 锁；可选再验池里剩下的、再解锁、再开下一高 round 0 ≠ 已经是 Recheck（不变量 403）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
