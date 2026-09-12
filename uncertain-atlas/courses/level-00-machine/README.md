@@ -26,7 +26,7 @@
 | 0.4 | [L00-M04-transaction.md](L00-M04-transaction.md) | 交易究竟是什么对象？ |
 | 0.5 | [L00-M05-block-and-order.md](L00-M05-block-and-order.md) | 为什么要把交易装进区块？ |
 | 0.6 | [L00-M06-agreement-problem.md](L00-M06-agreement-problem.md) | 为什么「投个票过半数」不够？ |
-| 0.7 | [L00-M07-one-payment-lifecycle.md](L00-M07-one-payment-lifecycle.md) | 一笔转账从点击到确认经过哪些门？ |
+| 0.7 | [L00-M07-one-payment-lifecycle.md](L00-M07-one-payment-lifecycle.md) | 一笔转账从点击到确认经过哪些门？看见付款 URI ≠ 已经授权（不变量 255） |
 | 0.8 | [L00-M08-five-kinds-of-guarantees.md](L00-M08-five-kinds-of-guarantees.md) | 五种保证如何分开？ |
 | 0.9 | [L00-M09-fake-learning.md](L00-M09-fake-learning.md) | 哪些常见说法其实在害你？ |
 | 0.10 | [L00-M10-uncertain-lens.md](L00-M10-uncertain-lens.md) | 「不确定」该问什么、还不该决定什么？ |

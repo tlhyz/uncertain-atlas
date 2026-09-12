@@ -21,4 +21,4 @@
 **建议：** 「不确定」产品只选一列当结算语义，写进用户能看见的句子。
 
 精读实例：[`worked-example.md`](worked-example.md)（Bitcoin / CometBFT / Ethereum 走同一笔「1」）。  
-对照：`../finality/`。有效性租户四档：[`../finality/worked-example-l2-status-vs-l1.md`](../finality/worked-example-l2-status-vs-l1.md)（`PRE_CONFIRMED` ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`）。文案：[`../../libraries/settlement-copy.md`](../../libraries/settlement-copy.md)。RPC 当验证：反模式 rpc-as-verification。付款 URI 远程取单 ≠ 验证：[`../failure-museum/cve-2024-52918.md`](../failure-museum/cve-2024-52918.md)。
+对照：`../finality/`。有效性租户四档：[`../finality/worked-example-l2-status-vs-l1.md`](../finality/worked-example-l2-status-vs-l1.md)（`PRE_CONFIRMED` ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`）。文案：[`../../libraries/settlement-copy.md`](../../libraries/settlement-copy.md)。RPC 当验证：反模式 rpc-as-verification。付款 URI 远程取单 ≠ 验证：[`../failure-museum/cve-2024-52918.md`](../failure-museum/cve-2024-52918.md)。付款 URI 方案本身 ≠ 已经授权：[`worked-example-uri-vs-authorized.md`](worked-example-uri-vs-authorized.md)（不变量 255；不是 55）。

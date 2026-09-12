@@ -152,3 +152,4 @@
 - [name-the-bloom-bit](name-the-bloom-bit.md)
 - [name-the-mempool-dump](name-the-mempool-dump.md)
 - [name-the-reject](name-the-reject.md)
+- [name-the-payment-uri](name-the-payment-uri.md)

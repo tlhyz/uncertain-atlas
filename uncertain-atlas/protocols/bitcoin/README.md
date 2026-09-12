@@ -43,6 +43,8 @@
 
 精读：[`../../tracks/network/worked-example-reject-vs-consensus.md`](../../tracks/network/worked-example-reject-vs-consensus.md)（不变量 254）。看见拒收消息不是已经共识非法。看见调试理由不是已经该给用户看。看见没拒收不是已经是当前最好链。
 
+精读：[`../../tracks/lifecycle/worked-example-uri-vs-authorized.md`](../../tracks/lifecycle/worked-example-uri-vs-authorized.md)（不变量 255）。看见付款 URI 不是已经授权，也不是已经付了。看见路径没有链上地址不是已经没有付款指示。看见不认识的必选参数不是已经能付。看见打开了回执不是已经确认。
+
 精读：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。付给脚本哈希不是已经揭开赎回脚本。旧节点 HASH160 EQUAL 通过不是新节点已经再跑赎回。哈希对上不是内层已经验过。
 
 精读：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。版本位被置上不是已经锁定。锁定不是已经激活。超时未锁定不是已经可以当激活。
