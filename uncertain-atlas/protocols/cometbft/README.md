@@ -127,6 +127,8 @@ validValue 非 nil 不是已经还会调 Prepare：[`../../tracks/implementation
 
 引擎没有再验重复交易不是已经验过重复：[`../../tracks/implementation/worked-example-prepare-valid-vs-checked.md`](../../tracks/implementation/worked-example-prepare-valid-vs-checked.md)（不变量 357）。看见 Prepare 回包验不过引擎崩溃不是已经是 Process REJECT。看见 Prepare 里产出了事件不是已经交给引擎。
 
+vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签：[`../../tracks/implementation/worked-example-nonrp-vs-wrapped.md`](../../tracks/implementation/worked-example-nonrp-vs-wrapped.md)（不变量 358）。看见 non_rp_extension 按原样签不是已经有重放保护。看见应用要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

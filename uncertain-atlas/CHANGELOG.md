@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 359）
+
+- CometBFT 两份扩展两份签工作实例（官方 ABCI++ Methods ExtendVote / VerifyVoteExtension Usage，实现 / 两份扩展两份签，不另写 19 节）：看见 vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签。看见 non_rp_extension 按原样签不是已经有重放保护。看见应用要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份。两份扩展两份签不是不变量 34，也不是不变量 350，也不是不变量 353。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 358；语料 C362；模式 name-the-non-rp-extension；反模式 nonrp-sold-as-protected；L10.3 第 354 条。填 L4.4 / CometBFT 档案 两份扩展两份签 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编两份扩展、怎样自防重放、怎样选空。不编博物馆页。不另写 19 节。不与 34 / 350 / 353 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。CanonicalVote、一轮一份扩展、空扩展仍会调 Verify 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 358）
 
 - CometBFT Prepare 回包校验工作实例（官方 ABCI++ Methods PrepareProposal Usage，实现 / Prepare 回包校验，不另写 19 节）：看见引擎没有再验重复交易不是已经验过重复。看见 Prepare 回包验不过引擎崩溃不是已经是 Process REJECT。看见 Prepare 里产出了事件不是已经交给引擎。Prepare 回包校验不是不变量 313，也不是不变量 347，也不是不变量 316。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

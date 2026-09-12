@@ -60,6 +60,7 @@
 - [`worked-example-prepare-drop-vs-mempool.md`](worked-example-prepare-drop-vs-mempool.md) — 从提案拿掉 tx ≠ 已经从内存池删掉；往提案加了一笔新的 ≠ 已经进了内存池；把 t1 改成 t2 ≠ 已经还能按 t1 查到（不变量 355）
 - [`worked-example-validvalue-vs-prepare.md`](worked-example-validvalue-vs-prepare.md) — validValue 非 nil ≠ 已经还会调 Prepare；自己是提议者 ≠ 已经每轮都会调 Prepare；没调 Prepare ≠ 已经又装了一份 raw 提案（不变量 356）
 - [`worked-example-prepare-valid-vs-checked.md`](worked-example-prepare-valid-vs-checked.md) — 引擎没有再验重复交易 ≠ 已经验过重复；Prepare 回包验不过引擎崩溃 ≠ 已经是 Process REJECT；Prepare 里产出了事件 ≠ 已经交给引擎（不变量 357）
+- [`worked-example-nonrp-vs-wrapped.md`](worked-example-nonrp-vs-wrapped.md) — vote_extension 会包进 CanonicalVoteExtension ≠ 已经按原样签；non_rp_extension 按原样签 ≠ 已经有重放保护；要签原样数据可以用 non_rp ≠ 已经和 vote_extension 同一份（不变量 358）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

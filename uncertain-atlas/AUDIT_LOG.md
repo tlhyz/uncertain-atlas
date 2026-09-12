@@ -3761,6 +3761,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1722 | 高 | 看见 Prepare 里产出了块事件或交易事件 / 看见先跑了 会被写成已经交给引擎，或当成已经印进 LastResultsHash | 官方：必须把这些事件留到块决定之后，再经 FinalizeBlockResponse 交给 CometBFT |
 | A1723 | 中 | 怎样再验 Prepare 回包 / 怎样查重复 / 怎样攒事件会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1724 | 记录 | 会与 313 / 347 / 316 糊成「看见回了提案就已经验过重复」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 回包校验 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。内存池去重 / Req 3 必须 Accept / 回执印进本头标成另一对象 |
+| A1725 | 高 | 看见 vote_extension 会包进 CanonicalVoteExtension / 看见绑了 Height Round ChainID 会被写成已经按原样签，或当成已经是 CanonicalVote | 工作实例：abci++_methods ExtendVote Usage 官方写 vote_extension 会进 CanonicalVoteExtension，再填 Height、Round、ChainID 后签名 |
+| A1726 | 高 | 看见 non_rp_extension 按应用给的字节原样签 / 看见没有包装 会被写成已经有重放保护，或当成已经必须填 | 官方：non_rp_extension 按原样签，不再套一层重放保护，和 vote_extension 不同 |
+| A1727 | 高 | 看见应用要签原样数据可以用 non_rp / 看见有第二份字段 会被写成已经和 vote_extension 同一份，或当成已经是空扩展仍验签 | 官方：应用若要把原样扩展数据签出去、不要包装，才用第二份字段；non_rp_vote_extension 可选，也可以空 |
+| A1728 | 中 | 怎样编两份扩展 / 怎样自防重放 / 怎样选空会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1729 | 记录 | 会与 34 / 350 / 353 糊成「看见有扩展就已经按原样签」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 两份扩展两份签 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。CanonicalVote / 一轮一份扩展 / 空扩展仍会调 Verify 标成另一对象 |
 
 
 

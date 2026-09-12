@@ -359,6 +359,7 @@
 | 350 | Prepare 改列表被写成已经从内存池删掉 | 协议 + 文案 | 看见从提案拿掉 tx / 往提案加了一笔新的 / 把 t1 改成 t2 / Prepare 改列表当成已经从内存池删掉或已经进了内存池或已经还能按 t1 查到 | 不变量 355；语料 C359 |
 | 351 | validValue 跳过 Prepare 被写成已经还会调 Prepare | 协议 + 文案 | 看见 validValue 非 nil / 自己是提议者 / 没调 Prepare / validValue 跳过 Prepare 当成已经还会调 Prepare 或已经每轮都会调 Prepare 或已经又装了一份 raw 提案 | 不变量 356；语料 C360 |
 | 352 | Prepare 回包校验被写成已经验过重复 | 协议 + 文案 | 看见引擎没有再验重复交易 / Prepare 回包验不过引擎崩溃 / Prepare 里产出了事件 / Prepare 回包校验当成已经验过重复或已经是 Process REJECT 或已经交给引擎 | 不变量 357；语料 C361 |
+| 353 | 两份扩展两份签被写成已经按原样签 | 协议 + 文案 | 看见 vote_extension 会包进 CanonicalVoteExtension / non_rp_extension 按原样签 / 要签原样数据可以用 non_rp / 两份扩展两份签当成已经按原样签或已经有重放保护或已经和 vote_extension 同一份 | 不变量 358；语料 C362 |
 
 ## 不自动覆盖
 

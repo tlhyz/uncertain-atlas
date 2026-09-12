@@ -360,3 +360,4 @@
 - [preparedrop-sold-as-evicted](preparedrop-sold-as-evicted.md)
 - [validvalue-sold-as-prepared](validvalue-sold-as-prepared.md)
 - [preparevalid-sold-as-checked](preparevalid-sold-as-checked.md)
+- [nonrp-sold-as-protected](nonrp-sold-as-protected.md)
