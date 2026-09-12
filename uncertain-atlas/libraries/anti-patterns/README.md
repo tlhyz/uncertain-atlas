@@ -76,3 +76,4 @@
 - [nonce-gap-sold-as-proposal](nonce-gap-sold-as-proposal.md)
 - [maxtxbytes-sold-as-nested-bound](maxtxbytes-sold-as-nested-bound.md)
 - [endblocker-error-sold-as-skippable](endblocker-error-sold-as-skippable.md)
+- [redelegate-sold-as-wash](redelegate-sold-as-wash.md)
