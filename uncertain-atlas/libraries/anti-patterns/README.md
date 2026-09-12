@@ -395,3 +395,4 @@
 - [proofop-sold-as-key](proofop-sold-as-key.md)
 - [checktxtx-sold-as-recheck](checktxtx-sold-as-recheck.md)
 - [initapphash-sold-as-header](initapphash-sold-as-header.md)
+- [exectxgas-sold-as-checktx](exectxgas-sold-as-checktx.md)

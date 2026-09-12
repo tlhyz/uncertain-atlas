@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 394）
+
+- CometBFT ExecTxResult 气工作实例（官方 ABCI++ Methods ExecTxResult，实现 / ExecTxResult 气，不另写 19 节）：看见 ExecTxResult.gas_wanted 是这笔要的气不是已经是 CheckTx 的 GasWanted。看见 ExecTxResult.gas_used 是这笔用掉的气不是已经算进共识。看见 ExecTxResult.codespace 是码的命名空间不是已经是 CheckTx 码空间。ExecTxResult 气不是不变量 315，也不是不变量 316，也不是不变量 381。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 393；语料 C397；模式 name-the-exectx-gas；反模式 exectxgas-sold-as-checktx；L10.3 第 389 条。填 L4.4 / CometBFT 档案 ExecTxResult 气 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExecTxResult 气、怎样填要的气、怎样填用掉的气。不编博物馆页。不另写 19 节。不与 315 / 316 / 381 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。CheckTx 的 GasWanted、已经算进共识、CheckTx 码空间标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 393）
 
 - CometBFT InitChain 回包余栏工作实例（官方 ABCI++ Methods InitChain Response / FinalizeBlock Request / CommitInfo，实现 / InitChain 回包余栏，不另写 19 节）：看见 InitChain 回包 app_hash 是起步应用哈希不是已经是本头 AppHash。看见 Finalize 请求 hash 是这块的哈希不是已经知道本头哈希。看见 CommitInfo.round 是提交轮不是已经按投票权排过。InitChain 回包余栏不是不变量 147，也不是不变量 311，也不是不变量 365。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
