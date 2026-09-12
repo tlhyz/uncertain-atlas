@@ -32,6 +32,10 @@ ETF_FAMILIES: dict[str, tuple[str, ...]] = {
     "snxx": ("SNXX3L_USDT", "SNXX3S_USDT", "SNXXG_USDT"),
     "eth": ("ETH3L_USDT", "ETH3S_USDT", "ETH5L_USDT", "ETH5S_USDT"),
     "sol": ("SOL3L_USDT", "SOL3S_USDT", "SOL5L_USDT", "SOL5S_USDT"),
+    "btc": ("BTC3L_USDT", "BTC3S_USDT"),
+    "pengu": ("PENGU3L_USDT", "PENGU3S_USDT"),
+    "pump": ("PUMP3L_USDT", "PUMP3S_USDT"),
+    "aaoi": ("AAOI3L_USDT", "AAOI3S_USDT"),
 }
 
 DEFAULT_ETF_3X: tuple[str, ...] = (

@@ -108,6 +108,13 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Sweep drop-then-rise official-tape segments instead of full/late",
     )
+
+    res = sub.add_parser(
+        "research-sl",
+        help="Adversarial S→L + 3L ETF grid research (official deals; candidate windows remapped)",
+    )
+    res.add_argument("--output-dir", default="outputs/research_sl_phase")
+    res.add_argument("--skip-download", action="store_true")
     return p
 
 
@@ -278,6 +285,28 @@ def cmd_live(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_research_sl(args: argparse.Namespace) -> int:
+    from qtb.research.sl_phase.runner import run_research
+
+    payload = run_research(out_dir=args.output_dir, skip_download=bool(args.skip_download))
+    print(
+        json.dumps(
+            {
+                "verdict": payload.get("verdict"),
+                "n_grid": len(payload.get("grid_results") or []),
+                "n_windows_scanned": len((payload.get("etf_windows") or {}).get("scanned") or []),
+                "n_remap": len(payload.get("candidate_remap") or []),
+                "walk_forward": payload.get("walk_forward"),
+                "report": str(Path(args.output_dir) / "REPORT.md"),
+            },
+            indent=2,
+            ensure_ascii=False,
+            default=str,
+        )
+    )
+    return 0
+
+
 def cmd_sweep_etf(args: argparse.Namespace) -> int:
     from qtb.data.gatedata import resolve_etf_markets
     from qtb.optimize.etf_sweep import run_etf_sweep
@@ -343,6 +372,7 @@ def main(argv: list[str] | None = None) -> int:
         "batch-screen": cmd_screen,
         "fetch-etf": cmd_fetch_etf,
         "sweep-etf": cmd_sweep_etf,
+        "research-sl": cmd_research_sl,
     }
     return handlers[args.cmd](args)
 
