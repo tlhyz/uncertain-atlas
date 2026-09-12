@@ -87,6 +87,8 @@ Finalize 改了状态不是已经落盘：[`../../tracks/implementation/worked-e
 
 -1 就按 100 MB 验不是已经没有上限：[`../../tracks/implementation/worked-example-maxbytes-cap-vs-unlimited.md`](../../tracks/implementation/worked-example-maxbytes-cap-vs-unlimited.md)（不变量 337）。看见应用自己卡体积不是已经引擎不管了。看见必须 -1 或不超过 100 MB 不是已经是默认 21 MB。
 
+Prepare 没有确定性要求不是已经必须确定：[`../../tracks/implementation/worked-example-prepare-nondet-vs-process.md`](../../tracks/implementation/worked-example-prepare-nondet-vs-process.md)（不变量 338）。看见两边 raw 一样不是已经是同一份提案。看见 ExtendVote 没有确定性要求不是已经是同一份扩展。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

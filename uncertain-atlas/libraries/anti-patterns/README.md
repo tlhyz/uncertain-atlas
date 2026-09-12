@@ -340,3 +340,4 @@
 - [finalizepersist-sold-as-committed](finalizepersist-sold-as-committed.md)
 - [precision-sold-as-msgdelay](precision-sold-as-msgdelay.md)
 - [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md)
+- [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md)

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 339）
+
+- CometBFT Prepare / ExtendVote 确定性工作实例（官方 Requirements for the Application Formal Requirements，Req 11–12 之后，实现 / PrepareProposal 与 ExtendVote 的确定性，不另写 19 节）：看见 Prepare 没有确定性要求不是已经必须确定。看见两边 raw 一样不是已经是同一份提案。看见 ExtendVote 没有确定性要求不是已经是同一份扩展。Prepare / ExtendVote 确定性不是不变量 33，也不是不变量 327，也不是不变量 34。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 338；语料 C342；模式 name-the-prepare-nondet；反模式 preparenondet-sold-as-deterministic；L10.3 第 334 条。填 L4.4 / CometBFT 档案 Prepare / ExtendVote 确定性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 PrepareProposal、怎样写 ExtendVote、怎样挑其它值或操作。不编博物馆页。不另写 19 节。不与 33 / 327 / 34 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。四门 / 提议超时 / 验签扩展标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 338）
 
 - CometBFT BlockParams.MaxBytes 工作实例（官方 Requirements for the Application List of Parameters / BlockParams.MaxBytes，实现 / BlockParams.MaxBytes，不另写 19 节）：看见 -1 就按 100 MB 验不是已经没有上限。看见应用自己卡体积不是已经引擎不管了。看见必须 -1 或不超过 100 MB 不是已经是默认 21 MB。BlockParams.MaxBytes 不是不变量 299，也不是不变量 63，也不是不变量 331。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
