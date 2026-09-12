@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 424）
+
+- CometBFT Prepare 请求栏工作实例（官方 ABCI++ Methods PrepareProposal Request，实现 / Prepare 请求栏，不另写 19 节）：看见 PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节不是已经能回超限列表。看见 PrepareProposalRequest.txs 是挑进拟议块的初步交易列表不是已经跑过 Process。看见 PrepareProposalRequest.height 是将要提议的那块的高度不是已经对上了拟议块头。Prepare 请求栏不是不变量 345，也不是不变量 359，也不是不变量 419。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 423；语料 C427；模式 name-the-prep-req；反模式 prepreq-sold-as-return；L10.3 第 419 条。填 L4.4 / CometBFT 档案 Prepare 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Prepare 请求栏、怎样填 max_tx_bytes、怎样填 txs。不编博物馆页。不另写 19 节。不与 345 / 359 / 419 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经能回超限列表、已经跑过 Process、已经对上了拟议块头标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 423）
 
 - CometBFT Finalize 请求栏工作实例（官方 ABCI++ Methods FinalizeBlock Request，实现 / Finalize 请求栏，不另写 19 节）：看见 FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息不是已经交差 local_last_commit。看见 FinalizeBlockRequest.height 是已决块的高度不是已经对上了拟议块头。看见 FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表不是已经执行那些交易。Finalize 请求栏不是不变量 420，也不是不变量 419，也不是不变量 408。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

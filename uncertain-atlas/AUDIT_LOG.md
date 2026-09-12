@@ -4086,6 +4086,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2047 | 高 | 看见 FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表 / 看见填了 txs 会被写成已经执行那些交易，或当成已经是 ProcessProposalRequest.txs | 官方表：txs is List of transactions committed as part of the block |
 | A2048 | 中 | 怎样写 Finalize 请求栏 / 怎样填 decided_last_commit / 怎样填 txs 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2049 | 记录 | 会与 420 / 419 / 408 糊成「看见填了 Finalize 请求栏就已经交差 local_last_commit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 local_last_commit / 已经对上了拟议块头 / 已经执行那些交易 标成另一对象 |
+| A2050 | 高 | 看见 PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节 / 看见填了 max_tx_bytes 会被写成已经能回超限列表，或当成已经是引擎会帮你裁 | 官方表：max_tx_bytes is Currently configured maximum size in bytes taken by the modified transactions |
+| A2051 | 高 | 看见 PrepareProposalRequest.txs 是挑进拟议块的初步交易列表 / 看见填了 txs 会被写成已经跑过 Process，或当成已经是 ProcessProposalRequest.txs | 官方表：txs is Preliminary list of transactions that have been picked as part of the block to propose |
+| A2052 | 高 | 看见 PrepareProposalRequest.height 是将要提议的那块的高度 / 看见填了 height 会被写成已经对上了拟议块头，或当成已经是 ProcessProposalRequest.height | 官方表：height is The height of the block that will be proposed |
+| A2053 | 中 | 怎样写 Prepare 请求栏 / 怎样填 max_tx_bytes / 怎样填 txs 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2054 | 记录 | 会与 345 / 359 / 419 糊成「看见填了 Prepare 请求栏就已经能回超限列表」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经能回超限列表 / 已经跑过 Process / 已经对上了拟议块头 标成另一对象 |
 
 
 
