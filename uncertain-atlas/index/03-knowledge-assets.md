@@ -14,7 +14,7 @@
 | 03 | 《共识协议图谱》 | `tracks/consensus/` + `tracks/finality/` | 对照表 + ABCI 四门 + 扩展 + 集合延迟 + PBTS + Bitcoin MTP 三把尺 + 本地超时 ≠ 最终性 + 应用 delay ≠ 槽位 + 默认 MaxBytes ≠ 第一轮 SLA + backed ≠ 可用 + BABE ≠ GRANDPA + head ≠ justified ≠ finalized + NPoS 等权 ≠ 按质押凑 ⅔ + leak ≠ slash + 抽样 α ≠ QC + 已认证批次 ≠ L + PoH ≠ Tower + VRF 抽中 ≠ 已认证 + Doomslug ≠ BFT 谓词 + 顺序 ≠ 状态根 + DAG ≠ selected chain + L2 档 ≠ L1 + unsafe ≠ 已推导 + 本头 AppHash ≠ 本块已交差 + 本头 LastCommit ≠ 本高已 +2/3 + 处理完一块 ≠ 已经改规范头 | 必学 |
 | 04 | 《状态模型图谱》 | `tracks/state-models/` + `tracks/parallelism/` | 进行中；Block-STM 工作实例（不变量 122）；owned ≠ 快路径（不变量 128）；Quorum Store ≠ 排序（不变量 132）；顺序 ≠ 状态根（不变量 136）；谓词 ≠ 脚本 / 只读重叠 ≠ 写冲突（不变量 143）；引用输入 ≠ 已经花费（不变量 150）；`store` ≠ 顶层资源（不变量 151） | 必学 |
 | 05 | 《区块链密码学地图》 | `tracks/crypto/` | 对照表 + 域分离三层编码精读；txid ≠ wtxid（不变量 152） | 必学 |
-| 05b | 《实现保证精读》 | `tracks/implementation/` | 编码 + 崩溃 + assumevalid + 头工作量 + state sync + 平台宽度尺寸检查；txid ≠ wtxid（不变量 152） | 必学 |
+| 05b | 《实现保证精读》 | `tracks/implementation/` | 编码 + 崩溃 + assumevalid + 头工作量 + state sync + 平台宽度尺寸检查；txid ≠ wtxid（不变量 152）；钥匙路径 ≠ 揭树（不变量 153） | 必学 |
 
 ---
 
@@ -23,8 +23,8 @@
 | 编号 | 资产 | 路径 | 状态 | 优先级 |
 |---|---|---|---|---|
 | 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 九十二案 + 17144 五层精读 + 停链面地图 | 必学 |
-| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 46 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 153 条 | 重要 |
+| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 47 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 154 条 | 重要 |
 
 ---
 
@@ -35,8 +35,8 @@
 | 09 | 《后量子区块链工程手册》 | `tracks/post-quantum/` | FIPS 名义长度 + 外部 ctx + 有状态 HBS 卡；CPU 空 | 研究级 |
 | 10 | 《不确定协议设计决策库》 | `libraries/decision-matrix/` | 对照列已扩；候选列空 | 重要 |
 | 11 | 《不确定威胁模型》 | `libraries/threat-model/` | 草稿 | 必学 |
-| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 152 条 | 必学 |
-| 13 | 《不确定 Adversarial Test Corpus》 | `libraries/adversarial-corpus/` | 目录 C01–C156；runner 未建 | 重要 |
+| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 153 条 | 必学 |
+| 13 | 《不确定 Adversarial Test Corpus》 | `libraries/adversarial-corpus/` | 目录 C01–C157；runner 未建 | 重要 |
 | 14 | 《不确定长期技术路线图》 | `courses/level-10-uncertain-studio/` | 建议清单，非选型 | 重要 |
 
 ---
@@ -58,7 +58,7 @@
 
 | 链 / 品类 | 波次 | 优先级 | 档案状态 |
 |---|---|---|---|
-| Bitcoin | 1 | 必学 | 第一版；策略 ≠ 共识（不变量 144）；txid ≠ wtxid（不变量 152） |
+| Bitcoin | 1 | 必学 | 第一版；策略 ≠ 共识（不变量 144）；txid ≠ wtxid（不变量 152）；钥匙路径 ≠ 揭树（不变量 153） |
 | Cosmos / CometBFT | 2 | 必学 | 第一版；IBC 客户端 ≠ 数据包（不变量 146）；本头 AppHash ≠ 本块已交差（不变量 147）；本头 LastCommit ≠ 本高已 +2/3（不变量 148） |
 | Ethereum | 3 | 重要 | 第一版；blob gas ≠ 执行气（不变量 145）；处理完一块 ≠ 已经改规范头（不变量 149） |
 | Avalanche | 4 | 重要（对照） | 第一版 |

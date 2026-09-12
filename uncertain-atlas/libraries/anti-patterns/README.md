@@ -155,3 +155,4 @@
 - [refinput-sold-as-spent](refinput-sold-as-spent.md)
 - [store-sold-as-key](store-sold-as-key.md)
 - [txid-sold-as-wtxid](txid-sold-as-wtxid.md)
+- [keypath-sold-as-tree](keypath-sold-as-tree.md)

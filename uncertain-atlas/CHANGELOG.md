@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 154）
+
+- BIP-341 工作实例（官方 Taproot 共识 BIP，不另写 19 节）：钥匙路径不是已经揭开有没有脚本树。脚本路径不是已经揭开全部脚本。看见 Taproot 输出不是已经分辨付款给钥还是付款给脚本。出处 github.com/bitcoin/bips BIP-341。
+- 不变量 153；语料 C157；模式 name-the-spend-path；反模式 keypath-sold-as-tree；L10.3 第 149 条。填 L3.7 / L3.3 / L1.2 / Bitcoin 档案 / 实现表 / 停链面地图。
+- 不抄控制块长度 / 叶子版本 / annex 字节 / NUMS 点。不写怎样藏一条脚本路径。不编博物馆页。不另写 19 节。不与 152 / 144 / 12 / 25 / 139 糊成一句。BIP-342 Tapscript 操作码、annex 产品语义标成另一对象。
+
 ## 2026-09-12（续 153）
 
 - BIP-141 工作实例（官方 SegWit 共识 BIP，不另写 19 节）：txid 不是 wtxid。改见证不是已经改交易身份。头上的 txid Merkle 不是已经承诺 wtxid。旧节点看见 txid 不是已经验过见证。出处 github.com/bitcoin/bips BIP-141。

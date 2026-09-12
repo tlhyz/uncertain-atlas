@@ -50,3 +50,4 @@
 - [name-the-reference-input](name-the-reference-input.md)
 - [name-the-move-ability](name-the-move-ability.md)
 - [name-the-txid](name-the-txid.md)
+- [name-the-spend-path](name-the-spend-path.md)

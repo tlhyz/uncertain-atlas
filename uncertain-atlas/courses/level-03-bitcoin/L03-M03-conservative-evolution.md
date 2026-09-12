@@ -94,4 +94,4 @@ Bitcoin 的 BIP 过程、长时间讨论、激活机制（细节各次不同）�
 | 经济 | 变更慢是为了全节点跟得上，不是没有升级 |
 
 **禁止假学习：** 「慢 = 没有升级。」「软分叉不改变任何人的安全假设。」
-**边界：** SegWit 结构案例在 L3.7。
+**边界：** SegWit 结构案例在 L3.7。txid ≠ wtxid 见 [`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。钥匙路径 ≠ 已经揭开脚本树见 [`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。Tapscript 操作码仍后置。

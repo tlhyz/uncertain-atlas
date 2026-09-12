@@ -177,6 +177,7 @@
 146. 若做 eUTXO / 对照引用输入：必须点名问的是花费、引用，还是花费条件（不变量 150）。引用输入不是已经花费。看见 datum / 值不是已经检查花费条件。同一枚不得既花又引用。被引用输出通过后仍在 UTXO。第一版可以不做 eUTXO / 引用输入。不要抄字段号。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-refinput-vs-spent.md`](../../tracks/state-models/worked-example-refinput-vs-spent.md)。这和谓词≠脚本（不变量 143）、所有权快路径（不变量 128）、占用（不变量 15）、策略≠共识（不变量 144）不是同一句。
 147. 若上 Move / 对照资源能力：必须点名问的是 `copy`、`drop`、`store` 还是 `key`（不变量 151）。`store` 不是已经是顶层资源。`key` 不是模块外谁都能 `move_to`。结构体写了 `has copy` 不是这个实例能复制。字段是整数不是外层资源能复制。第一版可以不上 Move。不要另写 19 节。精读：[`../../tracks/state-models/worked-example-ability-vs-resource.md`](../../tracks/state-models/worked-example-ability-vs-resource.md)。这和所有权快路径（不变量 128）、STM（不变量 122）、占用（不变量 15）、谓词≠脚本（不变量 143）、引用≠花费（不变量 150）不是同一句。
 148. 若把大签放进旧节点不理解的附件 / 对照 SegWit：必须点名问的是 txid、wtxid，还是头上的 txid Merkle（不变量 152）。txid 不是 wtxid。改见证不是已经改交易身份。头上的 txid Merkle 不是已经承诺 wtxid。旧节点看见 txid 不是已经验过见证。第一版必须写清哪一个 ID 承诺了附件。不要抄重量公式。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)。这和策略≠共识（不变量 144）、同根不同列表（不变量 12）、多客户端同根（不变量 3）、跳脚本（不变量 25）、blob 承诺≠字节（不变量 145）不是同一句。
+149. 若做「一个输出、多条条件」/ 对照 Taproot：必须点名问的是钥匙路径、脚本路径，还是链上那个输出（不变量 153）。钥匙路径不是已经揭开有没有脚本树。脚本路径不是已经揭开全部脚本。看见 Taproot 输出不是已经分辨付款给钥还是付款给脚本。第一版可以不上 Taproot / MAST。不要抄控制块长度或叶子版本。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)。这和 txid≠wtxid（不变量 152）、策略≠共识（不变量 144）、同根不同列表（不变量 12）、跳脚本（不变量 25）、BTC 锁≠commit（不变量 139）不是同一句。
 
 **以后再发明**
 
@@ -289,6 +290,7 @@
 - 把引用输入写成已经花费，或把脚本看见 datum / 值写成已经检查花费条件，或把同一枚输出写成可以既花又引用。
 - 把 `store` 写成已经是顶层资源，或把结构体写了 `has copy` 写成这个实例能复制，或把整数字段写成外层资源能复制。
 - 把 txid 写成已经含见证，或把改见证写成已经改交易身份，或把头上的 txid Merkle 写成已经承诺 wtxid。
+- 把钥匙路径写成已经揭开有没有脚本树，或把脚本路径写成已经揭开全部脚本，或把看见 Taproot 输出写成已经分辨付款给钥还是付款给脚本。
 
 ---
 
@@ -339,7 +341,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百四十八条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百四十九条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
