@@ -142,3 +142,4 @@
 - [dag-block-sold-as-selected](dag-block-sold-as-selected.md)
 - [preconfirmed-sold-as-accepted](preconfirmed-sold-as-accepted.md)
 - [btc-lock-sold-as-commit](btc-lock-sold-as-commit.md)
+- [avs-slash-sold-as-casper](avs-slash-sold-as-casper.md)

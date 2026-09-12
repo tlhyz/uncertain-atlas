@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 141）
+
+- EigenLayer 工作实例（仅 ELIP-002 + 官方概念页，不写 19 节）：AVS 罚没不是已经 Casper。任何理由不是必须链上可证。restake 不是已经变成另一个信标最终。协议不提供否决。Unique Stake 不是已经被所有 AVS 同时可罚。
+- 不变量 140；语料 C144；模式 name-the-slash-reason；反模式 avs-slash-sold-as-casper；L10.3 第 136 条。填 L7.3 / EigenLayer 过滤器 / 经济表 / 停链面地图。
+- 不抄 TVL / AVS 个数 / 延迟数字。不写怎样调用罚没。不编博物馆页。不写 19 节。不与 21 / 26 / 125 / 139 糊成一句。后到 ELIP 标成另一对象。
+
 ## 2026-09-12（续 140）
 
 - Babylon 工作实例（仅官方模块，不写 19 节）：UTXO 仍在 Bitcoin 不是已经 wrap。k-deep 包含证明不是已经 commit。普通解绑是意图，不要求 k-deep。浅重组拿掉解绑交易不是已经恢复票权。出处 babylonlabs-io/babylon x/btcstaking + staking-script。

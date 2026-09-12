@@ -37,3 +37,4 @@
 - [name-the-selected-chain](name-the-selected-chain.md)
 - [name-the-l2-status](name-the-l2-status.md)
 - [name-the-btc-lock](name-the-btc-lock.md)
+- [name-the-slash-reason](name-the-slash-reason.md)

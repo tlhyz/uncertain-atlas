@@ -164,6 +164,7 @@
 133. 若留下并行块再线性化：必须点名问的是 DAG 成员、mergeset、蓝还是 selected chain（不变量 137）。进了某个块不是已经在 selected chain。并行块留下不是已经 orphan。蓝不是 QC。GHOSTDAG 不是 Avalanche 抽样。第一版不必上高块率 DAG。不要抄 BPS。精读：[`../../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../../tracks/consensus/worked-example-dag-vs-selected-chain.md)。这和最重链孤块（L3.1）、Snow 抽样（不变量 131）、先定序再揭开（不变量 136）不是同一句。
 134. 若当有效性租户或对照 ZK 绿勾：必须点名问的是 `CANDIDATE`、`PRE_CONFIRMED`、`ACCEPTED_ON_L2` 还是 `ACCEPTED_ON_L1`（不变量 138）。排序者回执不是已经共识最终。L2 accepted 不是已经 L1。验证明必须写出当前登记的 program hash（不变量 28）。有证明不是不需要状态差。第一版不要当别人的有效性租户。不要抄 TTL 或现行 hash。不要写 19 节。精读：[`../../tracks/finality/worked-example-l2-status-vs-l1.md`](../../tracks/finality/worked-example-l2-status-vs-l1.md)。这和两层 accepted 短句（不变量 28）、Gasper 三等（不变量 127）、PoH 三档（不变量 133）、Doomslug≠BFT（不变量 135）不是同一句。
 135. 若用外链 BTC 当质押：必须点名问的是 Bitcoin 锁、k-deep 票权、解绑意图还是租户 commit（不变量 139）。UTXO 仍在 Bitcoin 不是已经 wrap。k-deep 包含证明不是已经 CometBFT commit。解绑意图不是已经 k-deep。浅重组不是已经恢复票权。契约连署不是没有第三人。第一版不要靠外链 BTC 当质押。不要抄 `k`。不要写 19 节。精读：[`../../tracks/economic/worked-example-btc-lock-vs-commit.md`](../../tracks/economic/worked-example-btc-lock-vs-commit.md)。这和 k 确认（L3.1）、证据≠slash（不变量 21）、中继质押（不变量 125）、EigenLayer restake 不是同一句。
+136. 若把已有质押再声明给另一套服务：必须点名问的是 restake 声明、Unique Stake、AVS 自定罚还是 Casper / 证据形状（不变量 140）。AVS 罚没不是已经协议罚没。任何理由不是必须链上可证。restake 不是已经变成另一个信标最终。协议不提供否决。第一版不要把任意 AVS 再声明当默认模块。不要抄 TVL。不要写 19 节。精读：[`../../tracks/economic/worked-example-avs-slash-vs-casper.md`](../../tracks/economic/worked-example-avs-slash-vs-casper.md)。这和证据≠slash（不变量 21）、Casper 两票（不变量 26）、中继质押（不变量 125）、BTC 锁（不变量 139）不是同一句。
 
 **以后再发明**
 
@@ -263,6 +264,7 @@
 - 把进了 DAG 块写成已经在 selected chain 或已经最终，或把并行块写成已经 orphan，或把蓝写成 QC，或把 GHOSTDAG 写成 Avalanche。
 - 把 `CANDIDATE` / `PRE_CONFIRMED` 写成已经 `ACCEPTED_ON_L2`，或把 `ACCEPTED_ON_L2` 写成已经 `ACCEPTED_ON_L1` / 可提款，或把验证明写成与当前 program hash 无关的物理定律。
 - 把仍在 Bitcoin 的 UTXO 写成已经 wrap，或把 k-deep 包含证明写成已经租户 commit，或把解绑意图写成已经 k-deep / 浅重组能恢复票权。
+- 把 AVS 按任何理由罚写成 Casper / 协议罚没，或把 restake 写成已经变成另一个信标最终，或把协议写成已经提供否决。
 
 ---
 
@@ -313,7 +315,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百三十五条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百三十六条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

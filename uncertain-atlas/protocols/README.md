@@ -31,7 +31,7 @@
 | Babylon | [babylon/](babylon/README.md) | 仅过滤器页（UTXO 仍在 Bitcoin；k-deep ≠ commit） |
 | QRL | [qrl/](qrl/README.md) | 仅过滤器页（XMSS + OTS index） |
 | Monad | [monad/](monad/README.md) | 仅过滤器页（共识先定序，再 Apply） |
-| EigenLayer | [eigenlayer/](eigenlayer/README.md) | 仅过滤器页（restake + AVS 自定罚没） |
+| EigenLayer | [eigenlayer/](eigenlayer/README.md) | 仅过滤器页（AVS 罚没 ≠ Casper） |
 | Starknet | [starknet/](starknet/README.md) | 仅过滤器页（SNOS 程序哈希 + 四档最终性） |
 
 其余第 8 波：有状态 HBS 思想已入 `tracks/post-quantum/stateful-hbs.md`。其它「PQ 品牌链」仍先过过滤器。

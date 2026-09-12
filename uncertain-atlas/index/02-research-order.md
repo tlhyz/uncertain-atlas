@@ -268,7 +268,7 @@ Polkadot 把「小链借用大链安全」做成系统。
 | 真实 PQ 部署实验 | 有状态 XMSS 部署：QRL 仅过滤器页；思想卡 `tracks/post-quantum/stateful-hbs.md` |
 | Monad | 异步执行：共识先定序、本块无状态根（仅过滤器页；官方文档，无 19 节）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136） |
 | Starknet | 有效性租户（仅过滤器页；官方文档，无 19 节）。`CANDIDATE` / `PRE_CONFIRMED` ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`：[`../tracks/finality/worked-example-l2-status-vs-l1.md`](../tracks/finality/worked-example-l2-status-vs-l1.md)（不变量 138） |
-| EigenLayer | 已质押 ETH/LST 再声明 + AVS 自定、不必客观可归属的罚没（仅过滤器页；ELIP-002 / 产品文档，无 19 节） |
+| EigenLayer | 已质押 ETH/LST 再声明 + AVS 自定、不必客观可归属的罚没（仅过滤器页；ELIP-002 / 产品文档，无 19 节）。AVS 罚没 ≠ Casper：[`../tracks/economic/worked-example-avs-slash-vs-casper.md`](../tracks/economic/worked-example-avs-slash-vs-casper.md)（不变量 140） |
 
 默认后置：
 

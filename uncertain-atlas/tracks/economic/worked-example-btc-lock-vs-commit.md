@@ -106,7 +106,7 @@ UTXO 仍在 Bitcoin、k-deep 才有票权、看见解绑意图、租户已经 co
 2. **证据 ≠ slash**（不变量 21）：ABCI 证据上链。本页是 Bitcoin 脚本路径 + 模块意图。
 3. **Casper 两票谓词**（不变量 26）：surround / double。本页罚没路径要契约连署，不是信标谓词。
 4. **平行链共享安全**（不变量 125）：押的是中继自己的质押。本页押的是 Bitcoin UTXO。
-5. **EigenLayer restake**（滤网）：已为以太坊质押的 ETH/LST，AVS 自定罚没。本页不是那份抵押。
+5. **EigenLayer restake**（不变量 140）：已为以太坊质押的 ETH/LST，AVS 自定罚没、不必链上可证。本页不是那份抵押。精读：[`worked-example-avs-slash-vs-casper.md`](worked-example-avs-slash-vs-casper.md)。
 6. **leak ≠ slash**（不变量 130）：终局推迟。本页没有 inactivity leak。
 
 不要把 `k`、委员会人数、罚没比例、聪数、官网收益抄进不确定常量。不要写怎样提取 EOTS、拼罚没见证或制造 BTC 重组。不编博物馆页。不写 19 节。产品页「无需第三人 / trustless」与模块里的契约委员会两句都留：营销句不是事实。大重组恢复与 stake-expansion 标成另一对象。

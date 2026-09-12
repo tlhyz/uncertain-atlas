@@ -61,6 +61,10 @@ EigenLayer 是目前公开文献里把这句说得最清楚的产品名。它 **
 
 ---
 
+## 精读
+
+[`../../tracks/economic/worked-example-avs-slash-vs-casper.md`](../../tracks/economic/worked-example-avs-slash-vs-casper.md)（不变量 140）。AVS 罚没不是已经 Casper。协议不提供否决。Unique Stake 不是已经被所有 AVS 同时可罚。
+
 ## 禁句
 
 - 「EigenLayer = 以太坊共享安全」（和 Polkadot / Babylon 糊在一起）

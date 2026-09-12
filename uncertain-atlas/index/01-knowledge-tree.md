@@ -372,7 +372,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M7.5 共享安全对照 · 进阶
 - restaking 等后到项目：只收「独特思想」，不因有名而学
-- 覆盖：课文 L7.3；EigenLayer 仅过滤器 `protocols/eigenlayer/`（已质押 ETH/LST 再声明 + AVS 自定罚没）；Babylon 仅过滤器 `protocols/babylon/`（BTC UTXO 仍在比特币）。k-deep 包含证明 ≠ 已经 commit；解绑意图 ≠ 已经 k-deep：[`../tracks/economic/worked-example-btc-lock-vs-commit.md`](../tracks/economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。不要开 19 节
+- 覆盖：课文 L7.3；EigenLayer 仅过滤器 `protocols/eigenlayer/`（已质押 ETH/LST 再声明 + AVS 自定罚没）。AVS 罚没 ≠ Casper：[`../tracks/economic/worked-example-avs-slash-vs-casper.md`](../tracks/economic/worked-example-avs-slash-vs-casper.md)（不变量 140）。Babylon 仅过滤器 `protocols/babylon/`（BTC UTXO 仍在比特币）。k-deep 包含证明 ≠ 已经 commit；解绑意图 ≠ 已经 k-deep：[`../tracks/economic/worked-example-btc-lock-vs-commit.md`](../tracks/economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。不要开 19 节
 
 ---
 
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–139）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–140）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C143；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C144；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
@@ -505,7 +505,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | Monad / Sei | Monad：共识先定序、根延迟 `D` 块（`protocols/monad` 仅过滤器）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）。Sei 仍待独特思想，不写页 | L5 + L6 | 进阶 |
 | Starknet / zkSync | 有效性租户：点名程序哈希 + 两层 accepted（`protocols/starknet` 仅过滤器）。`CANDIDATE` / `PRE_CONFIRMED` ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`：[`../tracks/finality/worked-example-l2-status-vs-l1.md`](../tracks/finality/worked-example-l2-status-vs-l1.md)（不变量 138）。zkSync 仍无独立对象，不写页 | L7 + L8 | 研究级 |
 | Arbitrum / Optimism | 乐观滚动（`protocols/optimistic-rollup` 已写） | L7 | 重要 |
-| EigenLayer / Babylon | 再质押：`protocols/eigenlayer` 仅过滤器（AVS 罚没不必客观可归属）。BTC UTXO 仍留在 Bitcoin：`protocols/babylon` 仅过滤器。k-deep ≠ commit；解绑意图 ≠ k-deep：[`../tracks/economic/worked-example-btc-lock-vs-commit.md`](../tracks/economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。都无 19 节 | L7 共享安全对照 | 进阶 |
+| EigenLayer / Babylon | 再质押：`protocols/eigenlayer` 仅过滤器。AVS 罚没 ≠ Casper：[`../tracks/economic/worked-example-avs-slash-vs-casper.md`](../tracks/economic/worked-example-avs-slash-vs-casper.md)（不变量 140）。BTC UTXO 仍留在 Bitcoin：`protocols/babylon` 仅过滤器。k-deep ≠ commit：[`../tracks/economic/worked-example-btc-lock-vs-commit.md`](../tracks/economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。都无 19 节 | L7 共享安全对照 | 进阶 |
 | Filecoin / Arweave | 存储证明、永久数据 | 仅当「不确定」要做存储 | 按需 |
 | Nervos | 状态占用 / 链下生成（`protocols/nervos` + L2.6） | L2 + L9 经济 | 进阶 |
 | ICP | 容器、子网、链密钥 | 仅当独特思想被确认 | 研究级 |
