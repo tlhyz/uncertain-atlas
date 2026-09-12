@@ -4056,6 +4056,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2017 | 高 | 看见收齐块片才按验证者算法看该不该 prevote 这块或 nil / 看见在看 会被写成已经会调 Process，或当成已经还能再 Reject | 官方：Upon reception of Proposal message, along with all the block parts ... check whether it should prevote for the proposed block, or nil |
 | A2018 | 中 | 怎样写 Process 何时调用余量 / 怎样设 ProposeTimeout / 怎样验块头 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2019 | 记录 | 会与 327 / 354 / 359 糊成「看见到了 Process 何时调用就已经填了 TimeoutPropose」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 何时调用余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经填了 TimeoutPropose / 已经跑过 Process / 已经会调 Process 标成另一对象 |
+| A2020 | 高 | 看见自己是提议者会先走完 Prepare 那五步 / 看见走完了 会被写成已经不用再 Process，或当成已经保证是这一次 | 工作实例：abci++_methods ProcessProposal When 官方写 If p is the proposer, p executes steps 1-5 in PrepareProposal |
+| A2021 | 高 | 看见 Process 的 height / time 对上拟议块头 / 看见对上了 会被写成已经验过块头，或当成已经跑过 Process | 官方 Process Usage：The height and time values match the values from the header of the proposed block |
+| A2022 | 高 | 看见 Finalize 的 height / time 对上拟议块头 / 看见对上了 会被写成已经是刚决定那块的字段，或当成已经知道本头哈希 | 官方 Finalize Usage：The height and time values match the values from the header of the proposed block |
+| A2023 | 中 | 怎样写头字段对上余量 / 怎样对 height / 怎样对 time 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2024 | 记录 | 会与 351 / 416 / 407 糊成「看见填了头字段就已经不用再 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案头字段对上余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经不用再 Process / 已经验过块头 / 已经是刚决定那块的字段 标成另一对象 |
 
 
 

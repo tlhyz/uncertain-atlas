@@ -419,3 +419,4 @@
 - [exectxlog-sold-as-querylog](exectxlog-sold-as-querylog.md)
 - [verifyheight-sold-as-extheight](verifyheight-sold-as-extheight.md)
 - [proposetimeout-sold-as-process](proposetimeout-sold-as-process.md)
+- [htmatch-sold-as-header](htmatch-sold-as-header.md)

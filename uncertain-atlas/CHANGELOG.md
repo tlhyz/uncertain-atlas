@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 418）
+
+- CometBFT 头字段对上余量工作实例（官方 ABCI++ Methods ProcessProposal When / ProcessProposal Usage / FinalizeBlock Usage，实现 / 头字段对上余量，不另写 19 节）：看见自己是提议者会先走完 Prepare 那五步不是已经不用再 Process。看见 Process 的 height / time 对上拟议块头不是已经验过块头。看见 Finalize 的 height / time 对上拟议块头不是已经是刚决定那块的字段。头字段对上余量不是不变量 351，也不是不变量 416，也不是不变量 407。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 417；语料 C421；模式 name-the-ht-match；反模式 htmatch-sold-as-header；L10.3 第 413 条。填 L4.4 / CometBFT 档案头字段对上余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写头字段对上余量、怎样对 height、怎样对 time。不编博物馆页。不另写 19 节。不与 351 / 416 / 407 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经不用再 Process、已经验过块头、已经是刚决定那块的字段标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 417）
 
 - CometBFT Process 何时调用余量工作实例（官方 ABCI++ Methods ProcessProposal When，实现 / Process 何时调用余量，不另写 19 节）：看见进了这一轮会先设 ProposeTimeout 不是已经填了 TimeoutPropose。看见收到带上头的提案会先验块头不是已经跑过 Process。看见收齐块片才按验证者算法看该不该 prevote 这块或 nil 不是已经会调 Process。Process 何时调用余量不是不变量 327，也不是不变量 354，也不是不变量 359。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

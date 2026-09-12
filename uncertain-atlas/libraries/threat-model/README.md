@@ -418,6 +418,7 @@
 | 409 | ExecTxResult 日志栏被写成已经是 Query 日志 | 协议 + 文案 | 看见 ExecTxResult.log 是应用日志的输出 / ExecTxResult.info 是附加信息 / ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略 / ExecTxResult 日志栏当成已经是 Query 日志或已经是 CheckTx 附加信息或已经印进本头 | 不变量 414；语料 C418 |
 | 410 | Verify 请求余栏被写成已经是拟议块高度 | 协议 + 文案 | 看见 VerifyVoteExtensionRequest.height 是块高度（用来对一下） / VerifyVoteExtensionRequest.hash 是扩展要指的那份拟议块哈希 / VerifyVoteExtensionRequest.vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 / Verify 请求余栏当成已经是拟议块高度或已经不保证跑过 Process 或已经跳过 Verify | 不变量 415；语料 C419 |
 | 411 | Process 何时调用余量被写成已经填了 TimeoutPropose | 协议 + 文案 | 看见进了这一轮会先设 ProposeTimeout / 收到带上头的提案会先验块头 / 收齐块片才按验证者算法看该不该 prevote 这块或 nil / Process 何时调用余量当成已经填了 TimeoutPropose 或已经跑过 Process 或已经会调 Process | 不变量 416；语料 C420 |
+| 412 | 头字段对上余量被写成已经不用再 Process | 协议 + 文案 | 看见自己是提议者会先走完 Prepare 那五步 / Process 的 height / time 对上拟议块头 / Finalize 的 height / time 对上拟议块头 / 头字段对上余量当成已经不用再 Process 或已经验过块头或已经是刚决定那块的字段 | 不变量 417；语料 C421 |
 
 ## 不自动覆盖
 
