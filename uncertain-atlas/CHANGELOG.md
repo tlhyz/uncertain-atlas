@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 382）
+
+- CometBFT CheckTx 回包工作实例（官方 ABCI++ Methods CheckTx Response，实现 / CheckTx 回包，不另写 19 节）：看见 CheckTx 回包 codespace 是码的命名空间不是已经是回包码。看见 CheckTx 回包 events 是给索引用的类型键值不是已经交差。看见 CheckTx 的 lane_id 必须在 Info 回包车道范围内不是已经不设道。CheckTx 回包不是不变量 373，也不是不变量 316，也不是不变量 367。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 381；语料 C385；模式 name-the-checktx-space；反模式 checktxspace-sold-as-code；L10.3 第 377 条。填 L4.4 / CometBFT 档案 CheckTx 回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 CheckTx 回包、怎样填码空间、怎样选道。不编博物馆页。不另写 19 节。不与 373 / 316 / 367 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。回包码、Finalize 回执、车道标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 381）
 
 - CometBFT Query 回包工作实例（官方 ABCI++ Methods Query Response，实现 / Query 回包，不另写 19 节）：看见 Query 回包 index 是树里这个键的下标不是已经是按键查。看见 Query 回包 key 是对上的那份数据的键不是已经是 Query 高度。看见 Query 回包 value 是对上的那份数据的值不是已经对上 AppHash。Query 回包不是不变量 377，也不是不变量 371，也不是不变量 325。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

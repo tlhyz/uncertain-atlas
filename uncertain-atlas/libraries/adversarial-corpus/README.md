@@ -395,6 +395,7 @@
 | C382 | 378 应用可以再拉块或封邻居、引擎不自己做≠已经封了 | 文案把应用可以再拉块或封邻居、引擎不自己做 / 能再拉写成已经封了或已经齐；或把 refetch_chunks 不论 result 都再拉再装、按顺序 / 列了块号写成已经齐或已经交差；或把 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名 / 拒了人写成已经能接着装或已经停；或把 ApplySnapshotChunk 再拉写成不变量 321 / 332 / 375 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C383 | 379 Info请求version是CometBFT软件语义版本≠已经是app_version | 文案把 Info 请求 version 是 CometBFT 软件语义版本 / 填了 version 写成已经是 app_version 或已经印进本头 AppHash；或把 block_version / p2p_version 是引擎块版本和 P2P 版本 / 填了两列写成已经版本也对上或已经有完整历史；或把 abci_version 是 ABCI 语义版本、按 X.X.x 显示 / 写了语义版本写成已经是握手对齐或已经排了优先；或把 Info 请求版本写成不变量 370 / 323 / 367 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C384 | 380 Query回包index是树里这个键的下标≠已经是按键查 | 文案把 Query 回包 index 是树里这个键的下标 / 有下标写成已经是按键查或已经对上 AppHash；或把 Query 回包 key 是对上的那份数据的键 / 回了键写成已经是 Query 高度或已经新鲜；或把 Query 回包 value 是对上的那份数据的值 / 回了值写成已经对上 AppHash 或已经复制到各节点；或把 Query 回包写成不变量 377 / 371 / 325 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C385 | 381 CheckTx回包codespace是码的命名空间≠已经是回包码 | 文案把 CheckTx 回包 codespace 是码的命名空间 / 写了空间写成已经是回包码或已经没进块；或把 CheckTx 回包 events 是给索引用的类型键值 / 回了事件写成已经交差或已经没进块；或把 CheckTx 的 lane_id 必须在 Info 回包车道范围内 / 填了道写成已经不设道或已经排了优先；或把 CheckTx 回包写成不变量 373 / 316 / 367 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

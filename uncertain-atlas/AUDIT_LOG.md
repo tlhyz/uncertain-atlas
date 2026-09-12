@@ -3876,6 +3876,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1837 | 高 | 看见 Query 回包 value 是对上的那份数据的值 / 看见回了值 会被写成已经对上 AppHash，或当成已经复制到各节点 | 官方：value is The value of the matching data |
 | A1838 | 中 | 怎样写 Query 回包 / 怎样填下标 / 怎样对键值会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1839 | 记录 | 会与 377 / 371 / 325 糊成「看见 Query 回了键值就已经是按键查」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。按键查 / 查询高度 / 证明对上标成另一对象 |
+| A1840 | 高 | 看见 CheckTx 回包 codespace 是码的命名空间 / 看见写了空间 会被写成已经是回包码，或当成已经没进块 | 工作实例：abci++_methods CheckTx Response 官方写 codespace is Namespace for the code |
+| A1841 | 高 | 看见 CheckTx 回包 events 是给索引用的类型键值 / 看见回了事件 会被写成已经交差，或当成已经没进块 | 官方：events are Type & Key-Value events for indexing transactions (e.g. by account) |
+| A1842 | 高 | 看见 CheckTx 的 lane_id 必须在 Info 回包车道范围内 / 看见填了道 会被写成已经不设道，或当成已经排了优先 | 官方：The value of lane_id has to be in the range of lanes defined by the application in ResponseInfo |
+| A1843 | 中 | 怎样写 CheckTx 回包 / 怎样填码空间 / 怎样选道会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1844 | 记录 | 会与 373 / 316 / 367 糊成「看见 CheckTx 回了码空间就已经是回包码」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。回包码 / Finalize 回执 / 车道标成另一对象 |
 
 
 
