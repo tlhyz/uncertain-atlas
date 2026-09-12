@@ -120,3 +120,4 @@
 - [name-the-chainid](name-the-chainid.md)
 - [name-the-extcodehash](name-the-extcodehash.md)
 - [name-the-create2](name-the-create2.md)
+- [name-the-refund-cut](name-the-refund-cut.md)
