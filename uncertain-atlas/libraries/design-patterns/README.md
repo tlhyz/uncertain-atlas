@@ -305,3 +305,4 @@
 - [name-the-checktx-guard](name-the-checktx-guard.md)
 - [name-the-snap-height](name-the-snap-height.md)
 - [name-the-fin-fields](name-the-fin-fields.md)
+- [name-the-fin-txs](name-the-fin-txs.md)

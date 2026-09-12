@@ -422,6 +422,7 @@
 | C409 | 405 CheckTx是内存池的守卫、每条节点先跑CheckTx才让交易进本地池≠已经是技术上可选 | 文案把 CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池 / 先跑了 写成已经是技术上可选或已经是四门已经结算；或把这笔可以来自外部用户、也可以来自另一节点 / 送来了 写成已经保证不重放或已经从池里删掉；或把默克尔证明带自描述 type、好支持多种默克尔树和编码 / 写了 type 写成已经是 ProofOp 类型或已经对上 AppHash；或把 CheckTx 守卫余量写成不变量 373 / 313 / 325 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C410 | 406 Snapshot.height是拍快照的高度（Commit之后）≠已经是Query高度 | 文案把 Snapshot.height 是拍快照的高度（Commit 之后） / 填了 height 写成已经是 Query 高度或已经装完；或把 Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据 / 填了 metadata 写成已经全字段对上或已经增量验过；或把 Query 可以可选回默克尔证明 / 能回证明 写成已经对上 AppHash 或已经勾了 prove；或把 Snapshot 高度余量写成不变量 371 / 368 / 383 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C411 | 407 Finalize含刚决定那块的字段≠已经是四门已经结算 | 文案把 Finalize 含刚决定那块的字段 / 填了字段 写成已经是四门已经结算或已经跑过 Process；或把 Finalize 实现必须确定、因为它在状态机复制里推进应用状态 / 必须确定 写成已经可以像 Prepare 那样或已经印进本头；或把 Info 用来回应用状态信息 / 能回 写成已经是握手对齐或已经是快照重放；或把 Finalize 字段余量写成不变量 363 / 342 / 370 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C412 | 408 Finalize按应用自己的规则确定地执行txs、再交还控制权≠已经交差 | 文案把 Finalize 按应用自己的规则确定地执行 txs、再交还控制权 / 先跑了 写成已经交差或已经可以像 Prepare 那样；或把 Process 含提案块上执行所需的全部信息 / 填了信息 写成已经是刚决定那块的字段或已经跑过 Process；或把 Process 可以像在处理 Finalize 那样整块执行 / 整块跑了 写成已经是 ExecuteTxState 或已经交差；或把 Finalize 执行余量写成不变量 407 / 359 / 311 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

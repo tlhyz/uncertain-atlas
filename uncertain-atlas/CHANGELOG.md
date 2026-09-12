@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 409）
+
+- CometBFT Finalize 执行余量工作实例（官方 ABCI++ Methods FinalizeBlock Usage / ProcessProposal Usage，实现 / Finalize 执行余量，不另写 19 节）：看见 Finalize 按应用自己的规则确定地执行 txs、再交还控制权不是已经交差。看见 Process 含提案块上执行所需的全部信息不是已经是刚决定那块的字段。看见 Process 可以像在处理 Finalize 那样整块执行不是已经是 ExecuteTxState。Finalize 执行余量不是不变量 407，也不是不变量 359，也不是不变量 311。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 408；语料 C412；模式 name-the-fin-txs；反模式 fintxs-sold-as-control；L10.3 第 404 条。填 L4.4 / CometBFT 档案 Finalize 执行余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 执行余量、怎样写确定性、怎样整块执行。不编博物馆页。不另写 19 节。不与 407 / 359 / 311 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。交差、刚决定那块的字段、ExecuteTxState 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 408）
 
 - CometBFT Finalize 字段余量工作实例（官方 ABCI++ Methods FinalizeBlock Usage / Info Usage，实现 / Finalize 字段余量，不另写 19 节）：看见 Finalize 含刚决定那块的字段不是已经是四门已经结算。看见 Finalize 实现必须确定、因为它在状态机复制里推进应用状态不是已经可以像 Prepare 那样。看见 Info 用来回应用状态信息不是已经是握手对齐。Finalize 字段余量不是不变量 363，也不是不变量 342，也不是不变量 370。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -410,3 +410,4 @@
 - [checktxguard-sold-as-optional](checktxguard-sold-as-optional.md)
 - [snapheight-sold-as-queryh](snapheight-sold-as-queryh.md)
 - [finfields-sold-as-equiv](finfields-sold-as-equiv.md)
+- [fintxs-sold-as-control](fintxs-sold-as-control.md)

@@ -4011,6 +4011,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1972 | 高 | 看见 Info 用来回应用状态信息 / 看见能回 会被写成已经是握手对齐，或当成已经是快照重放 | 官方：Info Usage Return information about the application state |
 | A1973 | 中 | 怎样写 Finalize 字段余量 / 怎样写确定性 / 怎样回 Info 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1974 | 记录 | 会与 363 / 342 / 370 糊成「看见填了 Finalize 字段余量就已经是四门已经结算」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 字段余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门已经结算 / 可以像 Prepare 那样 / 握手对齐 标成另一对象 |
+| A1975 | 高 | 看见 Finalize 按应用自己的规则确定地执行 txs、再交还控制权 / 看见先跑了 会被写成已经交差，或当成已经可以像 Prepare 那样 | 工作实例：abci++_methods FinalizeBlock Usage 官方写 The Application executes the transactions in FinalizeBlockRequest.txs deterministically, according to the rules set up by the Application, before returning control to CometBFT |
+| A1976 | 高 | 看见 Process 含提案块上执行所需的全部信息 / 看见填了信息 会被写成已经是刚决定那块的字段，或当成已经跑过 Process | 官方：ProcessProposal Contains all information on the proposed block needed to fully execute it |
+| A1977 | 高 | 看见 Process 可以像在处理 Finalize 那样整块执行 / 看见整块跑了 会被写成已经是 ExecuteTxState，或当成已经交差 | 官方：The Application may fully execute the block as though it was handling FinalizeBlock |
+| A1978 | 中 | 怎样写 Finalize 执行余量 / 怎样写确定性 / 怎样整块执行 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1979 | 记录 | 会与 407 / 359 / 311 糊成「看见填了 Finalize 执行余量就已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 执行余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。交差 / 刚决定那块的字段 / ExecuteTxState 标成另一对象 |
 
 
 
