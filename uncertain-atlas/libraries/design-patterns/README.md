@@ -52,3 +52,4 @@
 - [name-the-txid](name-the-txid.md)
 - [name-the-spend-path](name-the-spend-path.md)
 - [name-the-system-op](name-the-system-op.md)
+- [name-the-token-hop](name-the-token-hop.md)

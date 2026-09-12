@@ -157,3 +157,4 @@
 - [txid-sold-as-wtxid](txid-sold-as-wtxid.md)
 - [keypath-sold-as-tree](keypath-sold-as-tree.md)
 - [withdrawal-sold-as-tx](withdrawal-sold-as-tx.md)
+- [escrow-sold-as-voucher](escrow-sold-as-voucher.md)

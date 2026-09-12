@@ -372,7 +372,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M7.5 共享安全对照 · 进阶
 - restaking 等后到项目：只收「独特思想」，不因有名而学
-- 覆盖：课文 L7.3；EigenLayer 仅过滤器 `protocols/eigenlayer/`（已质押 ETH/LST 再声明 + AVS 自定罚没）。AVS 罚没 ≠ Casper：[`../tracks/economic/worked-example-avs-slash-vs-casper.md`](../tracks/economic/worked-example-avs-slash-vs-casper.md)（不变量 140）。Babylon 仅过滤器 `protocols/babylon/`（BTC UTXO 仍在比特币）。k-deep 包含证明 ≠ 已经 commit；解绑意图 ≠ 已经 k-deep：[`../tracks/economic/worked-example-btc-lock-vs-commit.md`](../tracks/economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。IBC 客户端 ≠ 连接 ≠ 通道 ≠ 数据包已送达：[`../tracks/economic/worked-example-ibc-client-vs-packet.md`](../tracks/economic/worked-example-ibc-client-vs-packet.md)（不变量 146）。不要开 19 节
+- 覆盖：课文 L7.3；EigenLayer 仅过滤器 `protocols/eigenlayer/`（已质押 ETH/LST 再声明 + AVS 自定罚没）。AVS 罚没 ≠ Casper：[`../tracks/economic/worked-example-avs-slash-vs-casper.md`](../tracks/economic/worked-example-avs-slash-vs-casper.md)（不变量 140）。Babylon 仅过滤器 `protocols/babylon/`（BTC UTXO 仍在比特币）。k-deep 包含证明 ≠ 已经 commit；解绑意图 ≠ 已经 k-deep：[`../tracks/economic/worked-example-btc-lock-vs-commit.md`](../tracks/economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。IBC 客户端 ≠ 连接 ≠ 通道 ≠ 数据包已送达：[`../tracks/economic/worked-example-ibc-client-vs-packet.md`](../tracks/economic/worked-example-ibc-client-vs-packet.md)（不变量 146）。源链托管 ≠ 对岸已经铸出原币；对岸券 ≠ 源链已解锁的原币：[`../tracks/economic/worked-example-escrow-vs-voucher.md`](../tracks/economic/worked-example-escrow-vs-voucher.md)（不变量 155）。不要开 19 节
 
 ---
 
@@ -432,7 +432,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.5 经济安全 · 重要
 - 发行、质押、罚没、MEV、审查、卡特尔
 - 密码学安全 ≠ 经济安全
-- 覆盖：课文 L9.5；桥资本精读；证据 ≠ slash `tracks/economic/worked-example-evidence.md`；默认窗 ≠ 解绑 `tracks/economic/worked-example-evidence-window.md`（ASA-2024-004）；飞行中 last commit ≠ 证据身份 `tracks/failure-museum/cve-2021-21271.md`（Mulberry；不变量 64）；Casper double / surround `tracks/economic/worked-example-casper-slashing.md`。Inactivity leak ≠ slash：[`../tracks/finality/worked-example-inactivity-leak.md`](../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。提款操作 ≠ 用户交易：[`../tracks/economic/worked-example-withdrawal-vs-tx.md`](../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）
+- 覆盖：课文 L9.5；桥资本精读；证据 ≠ slash `tracks/economic/worked-example-evidence.md`；默认窗 ≠ 解绑 `tracks/economic/worked-example-evidence-window.md`（ASA-2024-004）；飞行中 last commit ≠ 证据身份 `tracks/failure-museum/cve-2021-21271.md`（Mulberry；不变量 64）；Casper double / surround `tracks/economic/worked-example-casper-slashing.md`。Inactivity leak ≠ slash：[`../tracks/finality/worked-example-inactivity-leak.md`](../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。提款操作 ≠ 用户交易：[`../tracks/economic/worked-example-withdrawal-vs-tx.md`](../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。源链托管 ≠ 对岸已经铸出原币：[`../tracks/economic/worked-example-escrow-vs-voucher.md`](../tracks/economic/worked-example-escrow-vs-voucher.md)（不变量 155）
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–154）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–155）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C158；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C159；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

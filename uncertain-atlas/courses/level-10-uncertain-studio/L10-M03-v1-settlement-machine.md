@@ -170,7 +170,7 @@
 139. 若对照 UTXO 访问集 / 声明调度：必须点名问的是谓词、脚本、只读重叠、写集相交还是顺序副作用（不变量 143）。谓词通过不是脚本已经跑完。只读重叠不是写冲突。写集相交不是可以并行。并行验证不是已经不需要顺序 L。`scriptLength == 0` 不是已经没有合约。第一版不要把短槽 + 声明调度当默认。不要抄上限或官网 TPS。不要另写 19 节。精读：[`../../tracks/parallelism/worked-example-utxo-access-list.md`](../../tracks/parallelism/worked-example-utxo-access-list.md)。这和 STM 跑完≠最终（不变量 122）、所有权快路径（不变量 128）、顺序≠状态（不变量 136）、认证批次（不变量 132）不是同一句。
 140. 若提供未确认转发 / 费用市场：必须点名问的是策略、共识、费率还是本节点筐（不变量 144）。策略拒绝不是共识非法。策略通过不是已经进块。费率高不是更正确。策略不作用于块内交易。第一版必须把本地错 / 池拒绝 / 共识非法三套文案分开。不要抄默认费率。不要另写 19 节。精读：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)。这和入池拒绝代价（不变量 44）、IBD 跳脚本（不变量 25）、洪水≠停（不变量 89）、谓词≠脚本（不变量 143）不是同一句。
 141. 若挂短时大数据袋 / 对照 4844：必须点名问的是普通 gas、blob gas、versioned hash 还是 sidecar 字节（不变量 145）。blob gas 不是普通执行 gas。EVM 能读承诺不是已经读到袋里的字节。付了 blob fee 不是数据已经永存。执行层不负责持久化 blob。第一版不要把短时 blob 当默认 DA。不要抄上限或官网倍数。不要另写 19 节。精读：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)。这和短时承诺≠永存（不变量 23）、策略≠共识（不变量 144）、提交≠兑付（不变量 9）、gas≠墙钟（不变量 101）不是同一句。
-142. 若装 IBC / 对照跨链四层：必须点名问的是客户端、连接、通道还是数据包（不变量 146）。轻客户端不是已经开连接。连接不是已经开通道。通道不是已经送达数据包。发出承诺不是对岸已经 recv。第一版可以不装 IBC。不要把握手超时抄进不确定。不要另写 19 节。精读：[`../../tracks/economic/worked-example-ibc-client-vs-packet.md`](../../tracks/economic/worked-example-ibc-client-vs-packet.md)。这和 ack 确定性（不变量 77）、超时挂钩（不变量 78）、ICS-23 soundness（不变量 79）、提交≠兑付（不变量 9）、XCM（不变量 113）不是同一句。
+142. 若装 IBC / 对照跨链四层：必须点名问的是客户端、连接、通道还是数据包（不变量 146）。轻客户端不是已经开连接。连接不是已经开通道。通道不是已经送达数据包。发出承诺不是对岸已经 recv。第一版可以不装 IBC。不要把握手超时抄进不确定。不要另写 19 节。精读：[`../../tracks/economic/worked-example-ibc-client-vs-packet.md`](../../tracks/economic/worked-example-ibc-client-vs-packet.md)。这和 ack 确定性（不变量 77）、超时挂钩（不变量 78）、ICS-23 soundness（不变量 79）、提交≠兑付（不变量 9）、XCM（不变量 113）不是同一句。ICS-20 代币机见第 151 条。
 143. 若抄 CometBFT 头 / 对照本头状态根：必须点名问的是本头 AppHash、本块 DataHash，还是本高度 FinalizeBlock 刚回的根（不变量 147）。本头 AppHash 不是本高度交易已经交差。本块 DataHash 有这笔不是效果已经进本头。本高度 Finalize 回的根不是已经印在本头。第一版若抄这套头，必须写清滞后一块。不要抄哈希宽度。不要另写 19 节。精读：[`../../tracks/consensus/worked-example-apphash-vs-this-block.md`](../../tracks/consensus/worked-example-apphash-vs-this-block.md)。这和四门（不变量 33）、快照锚（不变量 38）、轻验≠日程（不变量 56）、顺序≠状态（不变量 136）、集合延迟（不变量 35）不是同一句。
 144. 若抄 CometBFT 头 / 对照块上的 Commit：必须点名问的是本头 LastCommit、本地 subjective commit，还是本高度要等下一块才印的那份（不变量 148）。本头 LastCommit 不是本高度已经 +2/3。本地那份不是已经 canonical。第一块空 LastCommit 不是已经没有最终。第一版若抄这套头，必须写清本块票是上一高度。不要抄票槽上限或超时秒数。不要另写 19 节。精读：[`../../tracks/consensus/worked-example-lastcommit-vs-this-block.md`](../../tracks/consensus/worked-example-lastcommit-vs-this-block.md)。这和其余槽位已签（不变量 65）、本头 AppHash（不变量 147）、timeout_commit（不变量 47）、锁（不变量 4）、BFT Time（不变量 40）不是同一句。
 145. 若拆 EL/CL / 对照 Engine API：必须点名问的是处理一块、`POS_FORKCHOICE_UPDATED` 点名的头，还是同一事件里的 finalized（不变量 149）。处理完一块不是已经改规范头。没有该事件不是已经改 fork choice。事件里的 head 不是已经 finalized。禁止对头做乐观更新。第一版可以保持投票前先跑完、提交和头同一条路径。不要抄过渡总难度。不要另写 19 节。精读：[`../../tracks/finality/worked-example-processed-vs-forkchoice.md`](../../tracks/finality/worked-example-processed-vs-forkchoice.md)。这和通道尺寸（不变量 96）、Gasper 三等（不变量 127）、OP unsafe≠推导（不变量 141）、本头 AppHash（不变量 147）、多客户端同根（不变量 3）不是同一句。
@@ -179,6 +179,7 @@
 148. 若把大签放进旧节点不理解的附件 / 对照 SegWit：必须点名问的是 txid、wtxid，还是头上的 txid Merkle（不变量 152）。txid 不是 wtxid。改见证不是已经改交易身份。头上的 txid Merkle 不是已经承诺 wtxid。旧节点看见 txid 不是已经验过见证。第一版必须写清哪一个 ID 承诺了附件。不要抄重量公式。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)。这和策略≠共识（不变量 144）、同根不同列表（不变量 12）、多客户端同根（不变量 3）、跳脚本（不变量 25）、blob 承诺≠字节（不变量 145）不是同一句。
 149. 若做「一个输出、多条条件」/ 对照 Taproot：必须点名问的是钥匙路径、脚本路径，还是链上那个输出（不变量 153）。钥匙路径不是已经揭开有没有脚本树。脚本路径不是已经揭开全部脚本。看见 Taproot 输出不是已经分辨付款给钥还是付款给脚本。第一版可以不上 Taproot / MAST。不要抄控制块长度或叶子版本。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)。这和 txid≠wtxid（不变量 152）、策略≠共识（不变量 144）、同根不同列表（不变量 12）、跳脚本（不变量 25）、BTC 锁≠commit（不变量 139）不是同一句。
 150. 若让共识往执行推余额 / 对照信标提款：必须点名问的是系统操作、用户交易，还是共识层出队（不变量 154）。提款操作不是用户交易。信标链出队不是执行账户已经加钱。无 gas / 不得失败不是已经跑过 EVM。第一版可以保持一条路径、不发明 CL 推送操作。不要抄每块条数。不要另写 19 节。精读：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)。这和处理≠改头（不变量 149）、提交≠兑付（不变量 9）、blob 费≠执行气（不变量 145）、L2 finalized≠桥兑付（不变量 141）、顺序≠状态（不变量 136）不是同一句。
+151. 若做同质跨链 / 对照 ICS-20：必须点名问的是托管、铸券、烧掉还是解锁（不变量 155）。源链托管不是对岸已经铸券。对岸券不是源链已解锁的原币。带端口/通道前缀的 denom 不是原来的 denom。超时退款不是对岸已经有可花余额。send 包发出不是对岸已经 recv 并铸券。A→B→D 不是已经能走 D→C→A 赎回。第一版可以不装 IBC / ICS-20。不要抄通道版本或实现仓库版本。不要另写 19 节。精读：[`../../tracks/economic/worked-example-escrow-vs-voucher.md`](../../tracks/economic/worked-example-escrow-vs-voucher.md)。这和客户端≠数据包（不变量 146）、ack 确定性（不变量 77）、超时挂钩（不变量 78）、ICS-23（不变量 79）、提交≠兑付（不变量 9）、提款≠交易（不变量 154）、XCM（不变量 113）不是同一句。
 
 **以后再发明**
 
@@ -292,7 +293,8 @@
 - 把 `store` 写成已经是顶层资源，或把结构体写了 `has copy` 写成这个实例能复制，或把整数字段写成外层资源能复制。
 - 把 txid 写成已经含见证，或把改见证写成已经改交易身份，或把头上的 txid Merkle 写成已经承诺 wtxid。
 - 把钥匙路径写成已经揭开有没有脚本树，或把脚本路径写成已经揭开全部脚本，或把看见 Taproot 输出写成已经分辨付款给钥还是付款给脚本。
-- 把提款操作写成用户交易，或把信标链出队写成执行账户已经加钱，或把无 gas / 不得失败写成已经跑过 EVM。
+- 把提款操作写成用户交易，或把信标链出队写成执行账户已经加钱，或把无 gas / 不得失败写成已经跑过 EVM。  
+- 把源链托管写成对岸已经铸出原币，或把对岸券写成源链已经解锁，或把带通道前缀的 denom 写成原来的名字。
 
 ---
 
@@ -343,7 +345,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百五十条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百五十一条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
