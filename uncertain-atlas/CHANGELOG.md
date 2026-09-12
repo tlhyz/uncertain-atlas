@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 267）
+
+- BIP-43 工作实例（官方用途层 BIP，应用层，已部署，不另写 19 节）：看见 BIP32 compatible 不是已经能互操作。看见自称 BIPxx compatible 不是已经是那份结构。看见同一套扩展钥前缀不是已经是比特币专用。BIP-43 不是不变量 182，也不是不变量 184，也不是不变量 191。出处 github.com/bitcoin/bips BIP-43。
+- 不变量 266；语料 C270；模式 name-the-purpose；反模式 purpose-sold-as-compatible；L10.3 第 262 条。填 L1.4 / L3.6 / Bitcoin 档案第 4 步第 1 步 / 实现表 / 停链面地图 / Bitcoin 行 / 05b。
+- 不抄用途号取值、例路径、扩展钥版本魔数、SLIP 预留段。不写怎样给新方案申请用途、怎样从种子枚举账户。不编博物馆页。不另写 19 节。不与 182 / 184 / 191 糊成一句。不写进 03 共识行、Ethereum 行、L5.1、M5.4、L5.4。扩展公钥 / 描述符 / Miniscript 标成另一对象。
+
 ## 2026-09-12（续 266）
 
 - BIP-325 工作实例（官方 signet BIP，应用层，已完成，不另写 19 节）：看见 signet 不是已经是 testnet。看见 signet 不是已经是 regtest。看见头上有合法工作量不是已经签过。BIP-325 不是不变量 257，也不是不变量 25，也不是不变量 163。出处 github.com/bitcoin/bips BIP-325。

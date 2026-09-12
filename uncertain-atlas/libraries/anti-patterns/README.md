@@ -268,3 +268,4 @@
 - [ua-sold-as-behavior](ua-sold-as-behavior.md)
 - [dummy-sold-as-unused](dummy-sold-as-unused.md)
 - [signet-sold-as-testnet](signet-sold-as-testnet.md)
+- [purpose-sold-as-compatible](purpose-sold-as-compatible.md)

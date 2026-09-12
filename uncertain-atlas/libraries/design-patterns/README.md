@@ -163,3 +163,4 @@
 - [name-the-user-agent](name-the-user-agent.md)
 - [name-the-dummy](name-the-dummy.md)
 - [name-the-signet](name-the-signet.md)
+- [name-the-purpose](name-the-purpose.md)
