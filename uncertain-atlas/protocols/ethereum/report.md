@@ -50,7 +50,7 @@ Bitcoin 脚本不够做通用程序。Ethereum 要把「任意（计量过的）
 
 ## 5. 状态模型
 
-账户：EOA 与合约。nonce、余额、代码、存储。状态在 Merkle-Patricia 树（未来 Verkle 方向是研究/演进，不当成已完成事实）。见 L2.2。
+账户：EOA 与合约。nonce、余额、代码、存储。nonce 顶到规范上限不是已经还能加一；客户端已经用窄整数存 nonce 不是共识已经写了这道上限：[`../../tracks/state-models/worked-example-max-nonce-vs-next.md`](../../tracks/state-models/worked-example-max-nonce-vs-next.md)（不变量 175）。状态在 Merkle-Patricia 树（未来 Verkle 方向是研究/演进，不当成已完成事实）。见 L2.2。
 
 ---
 
