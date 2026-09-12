@@ -161,3 +161,4 @@
 - [parent-root-sold-as-head](parent-root-sold-as-head.md)
 - [prevrandao-sold-as-fair](prevrandao-sold-as-fair.md)
 - [basefee-sold-as-tip](basefee-sold-as-tip.md)
+- [transient-sold-as-storage](transient-sold-as-storage.md)

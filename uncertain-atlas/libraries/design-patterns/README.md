@@ -56,3 +56,4 @@
 - [name-the-parent-root](name-the-parent-root.md)
 - [name-the-randao](name-the-randao.md)
 - [name-the-fee-leg](name-the-fee-leg.md)
+- [name-the-storage-lifetime](name-the-storage-lifetime.md)
