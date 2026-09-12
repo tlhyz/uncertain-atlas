@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""qtb CLI: backtest | optimize | report | batch | screen."""
+"""qtb CLI: backtest | optimize | report | batch | screen | ab."""
 
 from __future__ import annotations
 
@@ -17,8 +17,8 @@ def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="qtb",
         description=(
-            "Gate USDT-M backtest / optimize / report / screen "
-            "(default mode=backtest, live is DRY_RUN stub)."
+            "Gate USDT-M backtest / optimize / report / screen / "
+            "ETF-vs-perp A/B (default mode=backtest, live is DRY_RUN stub)."
         ),
     )
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -67,6 +67,24 @@ def build_parser() -> argparse.ArgumentParser:
         help="Screen then batch-backtest top K picks (aggressive dual SL50)",
     )
     add_screen_flags(batch_screen, batch_default=True)
+
+    ab = sub.add_parser("ab", help="Fair 3L ETF spot grid vs underlying perpetual grid A/B")
+    ab.add_argument("-c", "--config", default="configs/ab_etf_vs_perp.yaml")
+    ab.add_argument("--cache-only", action="store_true")
+    ab.add_argument("--pairs", default="", help="comma list, e.g. BTC,ETH,SOL")
+    ab.add_argument("--output-dir", default="")
+    ab.add_argument("--skip-fine", action="store_true")
+    ab.add_argument("--skip-mc", action="store_true")
+
+    dual = sub.add_parser("dual", help="Dual-engine Tech/Crypto state-switching perpetual backtest")
+    dual.add_argument("-c", "--config", default="configs/dual_engine_perp.yaml")
+    dual.add_argument("--cache-only", action="store_true")
+    dual.add_argument("--output-dir", default="")
+    dual.add_argument(
+        "--download-trades",
+        action="store_true",
+        help="Download Binance aggTrades for CRYPTO_C1 window (2024-09~11)",
+    )
     return p
 
 
@@ -175,6 +193,38 @@ def cmd_screen(args: argparse.Namespace) -> int:
     return execute_screen(args)
 
 
+def cmd_ab(args: argparse.Namespace) -> int:
+    from qtb.ab.run import main as ab_main
+
+    argv = ["-c", args.config]
+    if args.cache_only:
+        argv.append("--cache-only")
+    if args.pairs:
+        argv.extend(["--pairs", args.pairs])
+    if args.output_dir:
+        argv.extend(["--output-dir", args.output_dir])
+    if args.skip_fine:
+        argv.append("--skip-fine")
+    if args.skip_mc:
+        argv.append("--skip-mc")
+    return ab_main(argv)
+
+
+def cmd_dual(args: argparse.Namespace) -> int:
+    from qtb.dual.run import load_dual_config, run_job
+
+    cfg = load_dual_config(args.config)
+    if args.cache_only:
+        cfg["cache_only"] = True
+    if args.output_dir:
+        cfg["output_dir"] = args.output_dir
+    if getattr(args, "download_trades", False):
+        cfg["download_binance_trades"] = True
+        cfg["run_binance_c1"] = True
+    run_job(cfg)
+    return 0
+
+
 def cmd_live(args: argparse.Namespace) -> int:
     cfg = _cfg(args)
     broker = LiveBroker(config=cfg)
@@ -207,6 +257,8 @@ def main(argv: list[str] | None = None) -> int:
         "live": cmd_live,
         "screen": cmd_screen,
         "batch-screen": cmd_screen,
+        "ab": cmd_ab,
+        "dual": cmd_dual,
     }
     return handlers[args.cmd](args)
 
