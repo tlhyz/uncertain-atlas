@@ -153,6 +153,7 @@ Pedersen/类似承诺、Merkle、zk-SNARK / Halo 2、花费与查看密钥分离
 | 事件 | 层 | 备注 |
 |---|---|---|
 | CVE-2019-7167 | 密码 | BCTV14 可靠性破，屏蔽池可伪造；官方称不影响隐私。Sapling（2018-10-28）后改 Sprout-on-Groth16。见 `tracks/failure-museum/cve-2019-7167.md` |
+| ZIP 257 / 2026 Orchard | 密码+协议+实现 | 电路实现 ≠ 已写明的陈述；旧 vk 过验 ≠ 新电路已安全。见 `tracks/failure-museum/zcash-2026-orchard-circuit-not-statement.md` |
 
 trusted setup 的社会风险仍只作方向，不编未核仪式事故。其它池的后续披露：有独立 CVE / 官方文再另档。
 

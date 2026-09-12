@@ -76,6 +76,8 @@
 - [kusama-2024-02-15-disabled-active-dispute](kusama-2024-02-15-disabled-active-dispute.md)（协议+实现：Active 争议不是已经 Confirmed；GRANDPA 跳过不是最终性还在走）
 - [kusama-2025-05-09-offchain-disable](kusama-2025-05-09-offchain-disable.md)（协议+实现+部署：链下内存禁用不是已确认争议已经不参与；训练轮触发不是最终性还在走）
 - [ethereum-2021-05-state-gas-not-time](ethereum-2021-05-state-gas-not-time.md)（协议+实现+部署：块 gas 上限不是墙钟已经有界；状态访问的常数 gas 不是磁盘已经是 O(1)）
+- [zcash-2026-orchard-circuit-not-statement](zcash-2026-orchard-circuit-not-statement.md)（密码+协议+实现：电路实现不是已经写明的陈述；旧验证钥过验不是新电路已经安全）
+- [ethereum-2016-11-oog-empty-account](ethereum-2016-11-oog-empty-account.md)（实现+协议：交易以 out-of-gas 结束不是空账户删除已经回滚）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
 

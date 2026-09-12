@@ -134,4 +134,4 @@ Ethereum 执行层。档案：`protocols/ethereum/`。
 | 经济 | gas 不是费用市场全部 |
 
 **禁止假学习：** 「执行失败 = 链上没发生。」「gas 贵 = 更安全。」  
-**边界：** 不讲 Solidity；不把某一硬分叉的 gas 常数当永恒。块 gas 上限 ≠ 墙钟已有界：[`../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。
+**边界：** 不讲 Solidity；不把某一硬分叉的 gas 常数当永恒。块 gas 上限 ≠ 墙钟已有界：[`../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)（不变量 101）。OOG 结束 ≠ 空账户删除已回滚：[`../../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md`](../../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md)（不变量 103）。

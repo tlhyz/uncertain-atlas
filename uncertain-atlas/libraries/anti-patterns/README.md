@@ -106,3 +106,5 @@
 - [active-dispute-sold-as-confirmed](active-dispute-sold-as-confirmed.md)
 - [offchain-disable-sold-as-confirmed-ignore](offchain-disable-sold-as-confirmed-ignore.md)
 - [gas-sold-as-wallclock](gas-sold-as-wallclock.md)
+- [circuit-impl-sold-as-statement](circuit-impl-sold-as-statement.md)
+- [oog-sold-as-reverted](oog-sold-as-reverted.md)

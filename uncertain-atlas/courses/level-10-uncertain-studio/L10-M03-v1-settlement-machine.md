@@ -125,7 +125,9 @@
 94. 若出块要按组剔除已禁用者的票：组下标不是票向量下标（不变量 98）。票可以比组少。create_inherent 回 None 不是客户端已报错。生产关日志不是错误已可见。第一版可以不做平行链 backing 过滤。馆藏：[`../../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md`](../../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md)。这和分片下标（56）、解码深度（93）、Active≠Confirmed（95）不是同一句。  
 95. 若做争议状态机 / 禁用验证者：导入、Active、Confirmed 必须分开（不变量 99）。只被 Disabled 发起不得标 Active。GRANDPA 跳过含 Active 的叉不是最终性还在走。测试必须另断言最终性。第一版可以不做争议禁用。不要抄 ⅓。馆藏：[`../../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md`](../../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md)。这和形状≠slash（不变量 21）、组下标（94）、票还在根不前进（82）不是同一句。  
 96. 若做链下 / 内存争议禁用：只挡未确认不是已确认已经不参与（不变量 100）。重启清空名单不是已经禁用。训练轮触发不是最终性还在走。预期旧节点会争议不是禁用表已经挡住。第一版可以不做争议禁用。不要抄确认门槛 / ⅓。馆藏：[`../../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md`](../../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md)。这和 Active≠Confirmed（95）、DKG 未落盘（89）、升级下载管家（不变量 80）不是同一句。  
-97. 若做资源计量 / 通用 VM：必须点名钉的是字节、步数还是墙钟（不变量 101）。块 gas 上限不是墙钟已有界。状态访问的常数 gas 不是磁盘已是 O(1)。无条件涨价不是已够。未命中罚金不是已付查找。快照默认开不是 gas 已经等于时间。第一版可以不做通用 VM。不要抄 gas / 秒数。馆藏：[`../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)。这和洪水≠停（85）、Engine API 尺寸（92）、估值 0（86）不是同一句。
+97. 若做资源计量 / 通用 VM：必须点名钉的是字节、步数还是墙钟（不变量 101）。块 gas 上限不是墙钟已有界。状态访问的常数 gas 不是磁盘已是 O(1)。无条件涨价不是已够。未命中罚金不是已付查找。快照默认开不是 gas 已经等于时间。第一版可以不做通用 VM。不要抄 gas / 秒数。馆藏：[`../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md`](../../tracks/failure-museum/ethereum-2021-05-state-gas-not-time.md)。这和洪水≠停（85）、Engine API 尺寸（92）、估值 0（86）不是同一句。  
+98. 若做电路 / 屏蔽池：陈述、电路、验证钥必须分开（不变量 102）。电路实现不是已经写明的陈述。旧钥过验不是新电路已安全。关池热修不是陈述已改。第一版可以不做屏蔽池。不要抄高度 / 证明长度。馆藏：[`../../tracks/failure-museum/zcash-2026-orchard-circuit-not-statement.md`](../../tracks/failure-museum/zcash-2026-orchard-circuit-not-statement.md)。这和 Sprout 构造（不变量 13）、FS 漏哈希（91）、程序哈希（不变量 28）不是同一句。  
+99. 若做可失败的状态机 / 自动删空账户：失败路径必须撤回本笔每一种改动（不变量 103）。OOG 结束不是空账户删除已回滚。journaling 只记成功不是失败已撤。第一版可以不自动删空账户。不要抄块号。馆藏：[`../../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md`](../../tracks/failure-museum/ethereum-2016-11-oog-empty-account.md)。这和执行别名（不变量 3）、崩溃半块（不变量 5）、gas≠墙钟（97）不是同一句。
 
 **以后再发明**
 
@@ -186,7 +188,9 @@
 - 把组下标写成票向量下标，或把 create_inherent 回 None 写成客户端已报错。  
 - 把 Active 争议写成已经 Confirmed，或把禁用测试绿写成最终性已绿。  
 - 把链下内存禁用写成已确认争议已经不参与，或把训练轮触发写成最终性还在走。  
-- 把块 gas 上限写成墙钟已有界，或把状态访问的常数 gas 写成磁盘已是 O(1)。
+- 把块 gas 上限写成墙钟已有界，或把状态访问的常数 gas 写成磁盘已是 O(1)。  
+- 把电路实现写成已经写明的陈述，或把旧验证钥过验写成新电路已安全。  
+- 把 out-of-gas 结束写成空账户删除已经回滚。
 
 ---
 
@@ -237,7 +241,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 九十七条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 九十九条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
