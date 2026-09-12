@@ -61,3 +61,4 @@
 - [name-the-signed-chain](name-the-signed-chain.md)
 - [name-the-sender-kind](name-the-sender-kind.md)
 - [name-the-coinbase-age](name-the-coinbase-age.md)
+- [name-the-lock-kind](name-the-lock-kind.md)

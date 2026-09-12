@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 165）
+
+- BIP-65 工作实例（官方绝对时间锁 BIP，不另写 19 节）：脚本里的 CLTV 不是交易 nLockTime 已经把输出锁到那时。nLockTime 能证明将来能花不是已经证明现在不能花。CLTV 比的是花费交易的 nLockTime 不是墙上现在。输入已经 final 不是 CLTV 已经在生效。出处 github.com/bitcoin/bips BIP-65。
+- 不变量 164；语料 C168；模式 name-the-lock-kind；反模式 cltv-sold-as-nlocktime；L10.3 第 160 条。填 L2.1 / L3.1 / Bitcoin 档案 / 状态模型表 / MTP 对照 / 停链面地图。
+- 不抄类型阈值 / 激活票数 / 例脚本。不写怎样用 final 输入绕过或怎样拼托管退款。不编博物馆页。不另写 19 节。不与 41 / 163 / 144 / 153 糊成一句。BIP-68 / BIP-112 CSV / BIP-113 钟 / Tapscript 标成另一对象。
+
 ## 2026-09-12（续 164）
 
 - Bitcoin coinbase 成熟工作实例（官方开发者文档，不另写 19 节）：进了块的 coinbase 不是已经能花。钱包看见奖励不是已经成熟。普通确认深度不是 coinbase 成熟窗。成熟规则不是本地策略。出处 developer.bitcoin.org Block Chain。

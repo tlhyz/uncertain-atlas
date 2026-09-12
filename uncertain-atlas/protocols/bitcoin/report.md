@@ -62,7 +62,7 @@ Bitcoin 的问题陈述（事实，白皮书 2008）：点对点电子现金，�
 
 UTXO 集。见课程 L2.1。
 
-脚本给出花费条件。P2PKH / P2WPKH / P2TR 是包装，不是另一种状态模型。
+脚本给出花费条件。P2PKH / P2WPKH / P2TR 是包装，不是另一种状态模型。脚本里的 CLTV 不是交易 nLockTime 已经把输出锁住：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。
 
 ---
 
@@ -78,7 +78,7 @@ UTXO 集。见课程 L2.1。
 
 没有 Tendermint 式的锁和 +2/3 commit。
 
-**块时间（必须拆开）：** 头不能 `<=` 父块 `GetMedianTimePast`（`time-too-old`）。CSV 之后交易 locktime 也看父 MTP，不看本块 `nTime`（BIP 113）。太新看本节点钟 + 命名宽限（`time-too-new`），不是 MTP。三把尺见 [`../../tracks/consensus/worked-example-mtp.md`](../../tracks/consensus/worked-example-mtp.md)。不要和 PBTS / BFT Time 糊。
+**块时间（必须拆开）：** 头不能 `<=` 父块 `GetMedianTimePast`（`time-too-old`）。CSV 之后交易 locktime 也看父 MTP，不看本块 `nTime`（BIP 113）。太新看本节点钟 + 命名宽限（`time-too-new`），不是 MTP。三把尺见 [`../../tracks/consensus/worked-example-mtp.md`](../../tracks/consensus/worked-example-mtp.md)。不要和 PBTS / BFT Time 糊。脚本里的 CLTV 比的是花费交易的 nLockTime，不是墙上现在，也不是 MTP 已经把输出锁住：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。
 
 ---
 

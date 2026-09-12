@@ -6,7 +6,7 @@
 
 | 课 | 文件 | 覆盖知识树 | 核心问题 |
 |---|---|---|---|
-| 3.1 | [L03-M01-nakamoto-finality.md](L03-M01-nakamoto-finality.md) | M3.1 | 概率最终为何仍能结算；进了块的 coinbase ≠ 已经能花（不变量 163） |
+| 3.1 | [L03-M01-nakamoto-finality.md](L03-M01-nakamoto-finality.md) | M3.1 | 概率最终为何仍能结算；进了块的 coinbase ≠ 已经能花（不变量 163）；脚本里的 CLTV ≠ 交易 nLockTime 已经把输出锁住（不变量 164） |
 | 3.2 | [L03-M02-fees-and-standardness.md](L03-M02-fees-and-standardness.md) | M3.3 | 费用与标准性不是共识；策略拒绝 ≠ 共识非法（不变量 144）；进了块的手续费 ≠ 矿工已经能花（不变量 163） |
 | 3.3 | [L03-M03-conservative-evolution.md](L03-M03-conservative-evolution.md) | M3.4 方向 | 慢升级本身是安全特性 |
 | 3.4 | [L03-M04-network-and-eclipse.md](L03-M04-network-and-eclipse.md) | M3.2 | 传播与日蚀；privatebroadcast ≠ IP 已藏 |

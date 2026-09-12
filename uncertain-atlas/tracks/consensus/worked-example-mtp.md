@@ -128,3 +128,4 @@ BIP 113 动机（BIP 原文）：块时间戳没有严格单调；若 locktime �
 - 「locktime 一直看本块时间」 / 「locktime 一直看 MTP」（缺激活）
 - 「MTP = PBTS = BFT Time」
 - 未标注出处的 11 块 / 两小时当永恒共识
+- 「填了 nLockTime = 输出已经锁住」（那是 BIP-65，见 [`../state-models/worked-example-cltv-vs-nlocktime.md`](../state-models/worked-example-cltv-vs-nlocktime.md)，不变量 164）
