@@ -4,6 +4,7 @@
 投票被签字节：[`worked-example-vote-signbytes.md`](worked-example-vote-signbytes.md)（Prevote ≠ Precommit；CL `DomainType`）。  
 谁写交易顺序：[`../mempool/worked-example-who-orders.md`](../mempool/worked-example-who-orders.md)（Builder API ≠ `process_block`）。  
 ABCI 四门：[`worked-example-prepare-process.md`](worked-example-prepare-process.md)（CheckTx ≠ Prepare ≠ Process ≠ Finalize）。  
+Vote extension：[`worked-example-vote-extension.md`](worked-example-vote-extension.md)（拒扩展丢票，不改块规则；`s_h` 不读本高度 *e*）。  
 决策表：[`../../libraries/decision-matrix/consensus.md`](../../libraries/decision-matrix/consensus.md)（不确定列空）。
 
 | 家族 | 最终性 | 分区时 | 领导 | 主要假设 | 档案/课 |

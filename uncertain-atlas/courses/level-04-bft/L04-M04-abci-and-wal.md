@@ -76,7 +76,7 @@ Ethereum 的 EL/CL 拆分是亲戚：执行与共识分开，但边界不同，�
 1. 让应用使用时间/map 遍历 → 哈希分裂。  
 2. 杀进程专打「票已发出、WAL 未 fsync」。  
 3. 用 CheckTx 与 Finalize 的差异做用户欺诈。  
-4. 诱使应用把 Process REJECT 当免费过滤器，拖垮活性。
+4. 诱使应用把 Process REJECT 或 Verify 扩展 REJECT 当免费过滤器，拖垮活性。
 
 ---
 
@@ -105,5 +105,5 @@ WAL：安全。代价：磁盘延迟；实现复杂。
 | 部署 | 崩溃必须回到原子高度 |
 | 经济 | 应用可收费；共识不该按余额改票权，除非经 V(h) |
 
-**禁止假学习：** 「CheckTx 等于已执行。」「Process 拒绝无效交易没有活性代价。」「应用和共识哪个先写磁盘无所谓。」
-**边界：** 存储通论在 L9.3。Vote extension 全文未开。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)、[`../../tracks/consensus/worked-example-prepare-process.md`](../../tracks/consensus/worked-example-prepare-process.md)。
+**禁止假学习：** 「CheckTx 等于已执行。」「Process / Verify 扩展拒绝没有活性代价。」「Finalize 按本高度扩展改状态。」「应用和共识哪个先写磁盘无所谓。」
+**边界：** 存储通论在 L9.3。不抄扩展启用高度。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)、[`../../tracks/consensus/worked-example-prepare-process.md`](../../tracks/consensus/worked-example-prepare-process.md)、[`../../tracks/consensus/worked-example-vote-extension.md`](../../tracks/consensus/worked-example-vote-extension.md)。

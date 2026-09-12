@@ -537,6 +537,17 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A169 | 中 | L4.4 / 档案把 ABCI 收成 CheckTx vs Finalize 两门 | `worked-example-prepare-process.md`：四门；Prepare 可改且可不确定 |
 | A170 | 中 | Process REJECT 会被写成免费的额外共识 | 规范：SHOULD Accept；Reject ⇒ prevote nil；Req 3 诚实提案必须过 |
 | A171 | 中 | 谁排序表把 CometBFT 写成「矿工 / proposer」 | 拆出 ABCI++ 列；Prepare ≠ PBS |
-| A172 | 记录 | 规范有 MaxBytes=-1 / 100 MB、TimeoutPropose 自适配 | 不抄默认字节与秒数；vote extension 只点名 |
+| A172 | 记录 | 规范有 MaxBytes=-1 / 100 MB、TimeoutPropose 自适配 | 不抄默认字节与秒数；扩展已另开专页 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。
+
+### 2026-09-12 00:20 UTC · 扩展被拒 ≠ 块非法；本高度状态不读本高度扩展
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A173 | 中 | 四门页把扩展收成一句「以后另开」 | `worked-example-vote-extension.md`：非空 precommit 才扩展 |
+| A174 | 中 | Verify 拒扩展会被写成块非法或免费过滤 | REJECT 丢整张 Precommit；SHOULD Accept；Req 6 |
+| A175 | 中 | Finalize 会被写成读本高度扩展 | Req 10；`s_h` 只依赖 `s_{h-1}` 与已决定块 |
+| A176 | 记录 | 规范有 VoteExtensionsEnableHeight、两类扩展 | 不抄启用高度；`non_rp` 无包装须自防重放 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。Goal 保持 active。

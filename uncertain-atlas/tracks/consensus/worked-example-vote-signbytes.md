@@ -105,4 +105,4 @@ Builder API 的登记/出价走 `DOMAIN_APPLICATION_BUILDER`（`compute_domain` 
 ## 精密检查
 
 **禁止假学习：** 「验证者钥签的都是共识。」「BLS 聚合了所以不用域。」「同一块哈希签两次只是确认更强。」  
-**边界：** 不写 vote extension 的另签细节；不抄当前 Ethereum 的 slot 秒数；不把 phase0 域表当成后续分叉的全集。Altair 的 `DOMAIN_SYNC_COMMITTEE` 已点名；后续文件仍可能再加类型。
+**边界：** 扩展是另一套 `CanonicalVoteExtension`，见 [`worked-example-vote-extension.md`](worked-example-vote-extension.md)。不抄当前 Ethereum 的 slot 秒数；不把 phase0 域表当成后续分叉的全集。Altair 的 `DOMAIN_SYNC_COMMITTEE` 已点名；后续文件仍可能再加类型。

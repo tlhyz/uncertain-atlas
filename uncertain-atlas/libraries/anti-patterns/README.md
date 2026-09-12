@@ -38,3 +38,4 @@
 - [cheap-header-sold-as-free](cheap-header-sold-as-free.md)
 - [orphan-scan-sold-as-liveness](orphan-scan-sold-as-liveness.md)
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md)
+- [vote-extension-sold-as-block](vote-extension-sold-as-block.md)

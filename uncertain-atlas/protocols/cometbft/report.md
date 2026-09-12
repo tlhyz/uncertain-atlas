@@ -85,7 +85,7 @@ Commit  →  ABCI FinalizeBlock / Commit
 
 ## 7. 执行
 
-在应用进程。ABCI 2.0 方法：`CheckTx`、`PrepareProposal`、`ProcessProposal`、`FinalizeBlock`、`Commit`（另有 vote extension，本档案不展开）。
+在应用进程。ABCI 2.0 方法：`CheckTx`、`PrepareProposal`、`ProcessProposal`、`ExtendVote` / `VerifyVoteExtension`、`FinalizeBlock`、`Commit`。扩展见 [`../../tracks/consensus/worked-example-vote-extension.md`](../../tracks/consensus/worked-example-vote-extension.md)。
 
 引擎保证：同一高度同一**已决定**交易列表，按序交给 `FinalizeBlock`。  
 Prepare 可以不确定；Process 与 Finalize 必须确定。立即执行只能写候选状态。  
@@ -192,6 +192,9 @@ invariant：不在同一高度对两个冲突值做出违反锁的承诺。
 
 **`CheckTx` vs `PrepareProposal` vs `ProcessProposal` vs `FinalizeBlock`**  
 invariant：Check 通过不是已进提案；Prepare 可改列表；Process REJECT 是 prevote nil 不是免费过滤；Finalize + Commit 才进提交状态（不变量 33）。
+
+**`ExtendVote` / `VerifyVoteExtension`**  
+invariant：扩展是另一份签；Verify REJECT 丢整张 precommit，不是块非法；`s_h` 不读本高度扩展（不变量 34）。
 
 ---
 

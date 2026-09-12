@@ -57,7 +57,8 @@
 26. 未确认对象的索取必须能在超时后换对等节点（不变量 30）。本节点看不见不得写成链拒绝。  
 27. 头或其它廉价证书进永久索引之前必须先过工作量或显式配额（不变量 31）。不要把旧检查点三份工作糊成一个开关。  
 28. 未确认依赖/孤儿解析必须可中断，验证代价必须有配额（不变量 32）。不要把「节点忙」写成链在重组。  
-29. 若抄 ABCI 分离：必须分开 `CheckTx`（池）、`PrepareProposal`（可改列表）、`ProcessProposal`（不可改；REJECT = prevote nil）、`FinalizeBlock`+`Commit`（才改提交状态）（不变量 33）。Process 默认 Accept。不要把 CheckTx 写成已进块，不要把 Prepare 写成 PBS。
+29. 若抄 ABCI 分离：必须分开 `CheckTx`（池）、`PrepareProposal`（可改列表）、`ProcessProposal`（不可改；REJECT = prevote nil）、`FinalizeBlock`+`Commit`（才改提交状态）（不变量 33）。Process 默认 Accept。不要把 CheckTx 写成已进块，不要把 Prepare 写成 PBS。  
+30. 若启用 vote extension：必须写出扩展是另一份签、Verify REJECT 丢掉整张 precommit、`s_h` 不得依赖本高度收到的扩展（不变量 34）。Verify 默认 Accept。第一版可以不启用。不要把扩展写成块非法或本块 Apply 输入。
 
 **以后再发明**
 
@@ -88,7 +89,8 @@
 - 把本节点看不见未确认交易写成链拒绝。  
 - 把廉价头写成可以无界入库，或把检查点当成已经解决头垃圾。  
 - 把不可中断的孤儿扫描写成节点仍活着 / 已同步。  
-- 把 CheckTx / Prepare / Process 写成已结算或 PBS，或把 Process REJECT 当成没有活性代价的过滤器。
+- 把 CheckTx / Prepare / Process 写成已结算或 PBS，或把 Process REJECT 当成没有活性代价的过滤器。  
+- 把 vote extension 验收失败写成块非法，或把本高度 Finalize 写成依赖本高度收到的扩展。
 
 ---
 
@@ -139,7 +141,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 二十九条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 三十条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

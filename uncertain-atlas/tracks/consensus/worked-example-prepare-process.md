@@ -3,7 +3,7 @@
 > **事实 / 推断 / 建议** 已分开。
 > 对照：[谁排序](../mempool/worked-example-who-orders.md)、[ABCI 课](../../courses/level-04-bft/L04-M04-abci-and-wal.md)、[CometBFT 档案](../../protocols/cometbft/report.md)、[筐](../mempool/worked-example.md)。
 > 主文献：[ABCI++ 基本概念](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_basic_concepts.md)、[应用要求](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md)、[方法](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md)。
-> 本页钉 **池预检 / 提案改写 / 提案验收 / 提交执行** 四门。不展开 vote extension 全文。不抄默认 `max_tx_bytes`、propose 超时秒数、Cosmos SDK 版本。
+> 本页钉 **池预检 / 提案改写 / 提案验收 / 提交执行** 四门。扩展另页：[vote extension](worked-example-vote-extension.md)。不抄默认 `max_tx_bytes`、propose 超时秒数、Cosmos SDK 版本。
 
 ---
 
@@ -72,7 +72,7 @@
 
 ### 3.3 Vote extension（只点名，不展开）
 
-`ExtendVote` / `VerifyVoteExtension` 挂在 **precommit** 上。扩展字节对共识算法不透明。`ExtendVote` 可以不确定；`VerifyVoteExtension` 必须确定。验失败会让**整张** precommit 被丢掉，同样伤活性；规范通则也是 SHOULD accept。它们的数据可以在下一高度的 Prepare 里被提议者看见，但仍受 Req 9：不得改当前已提交状态。完整课以后另开。
+`ExtendVote` / `VerifyVoteExtension` 挂在 **precommit** 上。扩展字节对共识算法不透明。`ExtendVote` 可以不确定；`VerifyVoteExtension` 必须确定。验失败会让**整张** precommit 被丢掉，同样伤活性；规范通则也是 SHOULD accept。它们的数据可以在下一高度的 Prepare 里被提议者看见，但仍受 Req 9：不得改当前已提交状态。`s_h` 不得依赖本高度收到的扩展（Req 10）。全文：[vote extension](worked-example-vote-extension.md)。
 
 ### 3.4 和 Builder API 不是同一根钉子
 
@@ -135,7 +135,7 @@ Monad「先定序、后交差根」是另一根钉子（定序 ≠ 状态最终�
 - 若用 Prepare 改列表：写清谁改、改完是否还可追踪原交易哈希；删 ≠ 移出池。
 - 立即执行可以要，但必须有候选状态机；崩溃后只承认 `Commit` 过的高度。
 - 不要抄域外 Builder API 来「优化」Prepare；也不要把 Prepare 广告成 PBS。
-- Vote extension 未写完之前，不要用它承载结算语义。
+- Vote extension 默认可以不启用；启用则必须守 Req 10，见专页。
 - 后量子：Prepare 若做聚合或批量验签，先写配额；数字仍空。
 
 ---

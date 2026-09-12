@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 38）
+
+- Vote extension 精读：非空 precommit 才扩展；`CanonicalVoteExtension` 是另一份签；Verify REJECT 丢掉整张票，不是块非法。
+- Req 10：`s_h` 不得依赖本高度收到的扩展；最早 *h+1* Prepare 才用。
+- 不变量 34；语料 C36；反模式 vote-extension-sold-as-block；L10.3 第 30 条。
+- 不抄启用高度、SDK 预言机产品。第一版建议可不启用。
+
 ## 2026-09-12（续 37）
 
 - ABCI++ 四门精读：CheckTx（池）≠ PrepareProposal（可改列表，可不确定）≠ ProcessProposal（不可改，必须确定，REJECT = prevote nil）≠ FinalizeBlock+Commit。
