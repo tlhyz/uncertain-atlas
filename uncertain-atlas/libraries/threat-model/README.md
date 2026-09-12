@@ -361,6 +361,7 @@
 | 352 | Prepare 回包校验被写成已经验过重复 | 协议 + 文案 | 看见引擎没有再验重复交易 / Prepare 回包验不过引擎崩溃 / Prepare 里产出了事件 / Prepare 回包校验当成已经验过重复或已经是 Process REJECT 或已经交给引擎 | 不变量 357；语料 C361 |
 | 353 | 两份扩展两份签被写成已经按原样签 | 协议 + 文案 | 看见 vote_extension 会包进 CanonicalVoteExtension / non_rp_extension 按原样签 / 要签原样数据可以用 non_rp / 两份扩展两份签当成已经按原样签或已经有重放保护或已经和 vote_extension 同一份 | 不变量 358；语料 C362 |
 | 354 | Prepare 请求字段被写成已经跑过 Process | 协议 + 文案 | 看见 Prepare 和 Process / Finalize 同一套字段 / local_last_commit 是上一高度的预提交带扩展 / height / time / proposer_address 对上拟议头 / Prepare 请求字段当成已经跑过 Process 或已经是本高度刚签的扩展或已经知道本头哈希 | 不变量 359；语料 C363 |
+| 355 | Finalize 时的 Process 保证被写成已经每个验证者都跑过 Process | 协议 + 文案 | 看见至少一名非拜占庭验证者跑过 Process / Finalize 请求把字段再填一遍 / 可以套用先前候选 / Finalize 时的 Process 保证当成已经每个验证者都跑过 Process 或已经不用再给或已经是 ExecuteTxState | 不变量 360；语料 C364 |
 
 ## 不自动覆盖
 

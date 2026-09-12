@@ -131,6 +131,8 @@ vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签：[`../
 
 Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process：[`../../tracks/implementation/worked-example-prepare-fields-vs-same.md`](../../tracks/implementation/worked-example-prepare-fields-vs-same.md)（不变量 359）。看见 local_last_commit 是上一高度的预提交带扩展不是已经是本高度刚签的扩展。看见 height / time / proposer_address 对上拟议头不是已经知道本头哈希。
 
+至少一名非拜占庭验证者跑过 Process 不是已经每个验证者都跑过 Process：[`../../tracks/implementation/worked-example-finalize-vs-processed.md`](../../tracks/implementation/worked-example-finalize-vs-processed.md)（不变量 360）。看见 Finalize 请求把字段再填一遍不是已经不用再给。看见可以套用先前候选不是已经是 ExecuteTxState。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

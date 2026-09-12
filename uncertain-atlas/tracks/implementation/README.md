@@ -62,6 +62,7 @@
 - [`worked-example-prepare-valid-vs-checked.md`](worked-example-prepare-valid-vs-checked.md) — 引擎没有再验重复交易 ≠ 已经验过重复；Prepare 回包验不过引擎崩溃 ≠ 已经是 Process REJECT；Prepare 里产出了事件 ≠ 已经交给引擎（不变量 357）
 - [`worked-example-nonrp-vs-wrapped.md`](worked-example-nonrp-vs-wrapped.md) — vote_extension 会包进 CanonicalVoteExtension ≠ 已经按原样签；non_rp_extension 按原样签 ≠ 已经有重放保护；要签原样数据可以用 non_rp ≠ 已经和 vote_extension 同一份（不变量 358）
 - [`worked-example-prepare-fields-vs-same.md`](worked-example-prepare-fields-vs-same.md) — Prepare 和 Process / Finalize 同一套字段 ≠ 已经跑过 Process；local_last_commit 是上一高度的预提交带扩展 ≠ 已经是本高度刚签的扩展；height / time / proposer_address 对上拟议头 ≠ 已经知道本头哈希（不变量 359）
+- [`worked-example-finalize-vs-processed.md`](worked-example-finalize-vs-processed.md) — 至少一名非拜占庭验证者跑过 Process ≠ 已经每个验证者都跑过 Process；Finalize 请求把字段再填一遍 ≠ 已经不用再给；可以套用先前候选 ≠ 已经是 ExecuteTxState（不变量 360）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

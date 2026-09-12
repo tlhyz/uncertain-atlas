@@ -3771,6 +3771,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1732 | 高 | 看见 height / time / proposer_address 对上拟议头 / 看见对得上 会被写成已经知道本头哈希，或当成已经是候选已经是 ExecuteTxState | 官方：这三列对上拟议块头里的值 |
 | A1733 | 中 | 怎样填 Prepare 请求字段 / 怎样读 local_last_commit / 怎样对头会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1734 | 记录 | 会与 351 / 330 / 311 糊成「看见字段名对得上就已经跑过 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 请求字段 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。提议者那边也会叫 Process / 扩展启用高度 / 候选状态标成另一对象 |
+| A1735 | 高 | 看见引擎保证至少一名非拜占庭验证者对这块跑过 Process / 看见要 Finalize 了 会被写成已经每个验证者都跑过 Process，或当成已经是提议者那边也会叫 Process | 工作实例：abci++_methods FinalizeBlock Usage 官方写调用 FinalizeBlock 时共识算法保证至少一名非拜占庭验证者对这块跑过 ProcessProposal |
+| A1736 | 高 | 看见 Finalize 请求把字段再填一遍 / 看见 Prepare / Process 已经给过 会被写成已经不用再给，或当成已经跑过 Process | 官方：目前会把 FinalizeBlockRequest 的字段填满，哪怕已经经 Prepare 或 Process 给过 |
+| A1737 | 高 | 看见可以套用先前 Prepare / Process 的候选 / 看见同一块先跑过 会被写成已经是 ExecuteTxState，或当成已经交差 | 官方：应用按列表确定执行，也可以套用先前对同一块跑出的候选 |
+| A1738 | 中 | 怎样写 Finalize / 怎样缓存候选 / 怎样再填字段会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1739 | 记录 | 会与 351 / 359 / 311 糊成「看见要 Finalize 了就已经每个验证者都跑过 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 时的 Process 保证 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。提议者那边也会叫 Process / 同一套字段 / 候选状态标成另一对象 |
 
 
 
