@@ -264,3 +264,4 @@
 - [feature-sold-as-enabled](feature-sold-as-enabled.md)
 - [silent-payment-sold-as-output](silent-payment-sold-as-output.md)
 - [dns-name-sold-as-instruction](dns-name-sold-as-instruction.md)
+- [pong-sold-as-live](pong-sold-as-live.md)

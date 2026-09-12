@@ -159,3 +159,4 @@
 - [name-the-feature-negotiation](name-the-feature-negotiation.md)
 - [name-the-silent-payment](name-the-silent-payment.md)
 - [name-the-dns-payment](name-the-dns-payment.md)
+- [name-the-pong](name-the-pong.md)
