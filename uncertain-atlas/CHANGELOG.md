@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 417）
+
+- CometBFT Process 何时调用余量工作实例（官方 ABCI++ Methods ProcessProposal When，实现 / Process 何时调用余量，不另写 19 节）：看见进了这一轮会先设 ProposeTimeout 不是已经填了 TimeoutPropose。看见收到带上头的提案会先验块头不是已经跑过 Process。看见收齐块片才按验证者算法看该不该 prevote 这块或 nil 不是已经会调 Process。Process 何时调用余量不是不变量 327，也不是不变量 354，也不是不变量 359。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 416；语料 C420；模式 name-the-propose-timeout；反模式 proposetimeout-sold-as-process；L10.3 第 412 条。填 L4.4 / CometBFT 档案 Process 何时调用余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Process 何时调用余量、怎样设 ProposeTimeout、怎样验块头。不编博物馆页。不另写 19 节。不与 327 / 354 / 359 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经填了 TimeoutPropose、已经跑过 Process、已经会调 Process 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 416）
 
 - CometBFT Verify 请求余栏工作实例（官方 ABCI++ Methods VerifyVoteExtension Request，实现 / Verify 请求余栏，不另写 19 节）：看见 VerifyVoteExtensionRequest.height 是块高度（用来对一下）不是已经是拟议块高度。看见 VerifyVoteExtensionRequest.hash 是扩展要指的那份拟议块哈希不是已经不保证跑过 Process。看见 VerifyVoteExtensionRequest.vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长不是已经跳过 Verify。Verify 请求余栏不是不变量 410，也不是不变量 353，也不是不变量 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
