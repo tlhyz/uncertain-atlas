@@ -245,3 +245,4 @@
 - [enr-sold-as-newest](enr-sold-as-newest.md)
 - [enr-seq-sold-as-have](enr-seq-sold-as-have.md)
 - [v2-sold-as-private](v2-sold-as-private.md)
+- [cfilter-sold-as-have](cfilter-sold-as-have.md)

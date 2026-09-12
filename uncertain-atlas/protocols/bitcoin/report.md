@@ -94,7 +94,7 @@ UTXO 集。见课程 L2.1。
 
 ## 8. 网络
 
-无许可 P2P。地址管理、偷听、compact block（BIP152）减传播带宽。最大序列化消息长度 ≠ 读完载荷前的接收分配上限（CVE-2015-3641）。地址表递增 ID 限速 ≠ 宽度已够（CVE-2024-52919）。自动封禁表无界 + GETADDR 二次扫描（CVE-2020-14198）。UPnP 默认关是结构风险决策（CVE-2015-20111 / CVE-2024-52917）。出站 SOCKS 代理不是 P2P 对等节点（CVE-2017-18350；须先配置；明文网上的任意代理本身就可被截获）。付款 URI 远程取单不是共识验证（CVE-2024-52918；修法是删 BIP70）。看见机会主义未认证加密不是已经私人；看见伪随机字节流不是已经认不出；看见仍收下第 1 版不是已经退役旧线：[`../../tracks/network/worked-example-v2-transport-vs-private.md`](../../tracks/network/worked-example-v2-transport-vs-private.md)（不变量 242）。
+无许可 P2P。地址管理、偷听、compact block（BIP152）减传播带宽。最大序列化消息长度 ≠ 读完载荷前的接收分配上限（CVE-2015-3641）。地址表递增 ID 限速 ≠ 宽度已够（CVE-2024-52919）。自动封禁表无界 + GETADDR 二次扫描（CVE-2020-14198）。UPnP 默认关是结构风险决策（CVE-2015-20111 / CVE-2024-52917）。出站 SOCKS 代理不是 P2P 对等节点（CVE-2017-18350；须先配置；明文网上的任意代理本身就可被截获）。付款 URI 远程取单不是共识验证（CVE-2024-52918；修法是删 BIP70）。看见机会主义未认证加密不是已经私人；看见伪随机字节流不是已经认不出；看见仍收下第 1 版不是已经退役旧线：[`../../tracks/network/worked-example-v2-transport-vs-private.md`](../../tracks/network/worked-example-v2-transport-vs-private.md)（不变量 242）。看见客户端侧过滤器对上不是已经有块；看见过滤器头链对上不是已经写进共识；看见至少一个诚实对等节点不是已经验完脚本：[`../../tracks/light-clients/worked-example-cfilter-vs-have.md`](../../tracks/light-clients/worked-example-cfilter-vs-have.md)（不变量 243）。
 
 攻击面：eclipse（围住一个节点只给他看假图）、延迟块、向轻节点撒谎。
 
