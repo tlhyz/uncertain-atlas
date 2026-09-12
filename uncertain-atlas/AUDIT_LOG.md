@@ -3846,6 +3846,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1807 | 高 | 看见立刻 Flush 是为了做成同步请求、回包回来才算这次同步 / 看见立刻叫了 会被写成已经能往下走，或当成已经 Commit | 官方：called immediately to make a synchronous request, which returns when the Flush response comes back |
 | A1808 | 中 | 怎样写 Flush / 怎样排队 / 怎样做成同步请求会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1809 | 记录 | 会与 309 / 307 / 310 糊成「看见叫了 Flush 就已经送到」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Flush / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。对等发送 / 四门连接 / Commit 锁标成另一对象 |
+| A1810 | 高 | 看见 LoadSnapshotChunk 用来从邻居拉快照块 / 看见在拉 会被写成已经齐，或当成已经有了全部快照 | 工作实例：abci++_methods LoadSnapshotChunk Usage 官方写 Used during state sync to retrieve snapshot chunks from peers |
+| A1811 | 高 | 看见请求用 height / format / chunk（从 0 起）认这块 / 看见填了三列 会被写成已经是同一份，或当成已经装完 | 官方：height of the snapshot the chunk belongs to; format application-specific; chunk index starting from 0 |
+| A1812 | 高 | 看见回包块含元数据不能超过 16 MB / 看见有上限 会被写成已经是快照报文 4 MB，或当成已经装完 | 官方：Chunk messages cannot be larger than 16 MB including metadata, so 10 MB is a good starting point |
+| A1813 | 中 | 怎样写 LoadSnapshotChunk / 怎样切块 / 怎样挑 10 MB 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1814 | 记录 | 会与 322 / 368 / 321 糊成「看见叫了 LoadSnapshotChunk 就已经齐」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 LoadSnapshotChunk / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。发现清单 / 同一份快照 / 装回标成另一对象 |
 
 
 

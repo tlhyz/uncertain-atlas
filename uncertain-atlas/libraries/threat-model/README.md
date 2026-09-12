@@ -376,6 +376,7 @@
 | 367 | Misbehavior 类型被写成已经罚没 | 协议 + 文案 | 看见 Misbehavior.type 只是过错枚举 / height 是过错发生的高度、time 是那一高已提交块的时间 / total_voting_power 是那一高验证者集合的总权 / Misbehavior 类型当成已经罚没或已经验过这个时间或已经按到场定奖惩 | 不变量 372；语料 C376 |
 | 368 | CheckTx 可选被写成已经是四门已经结算 | 协议 + 文案 | 看见 CheckTx 技术上可选、不参与处理块 / Code ≠ 0 会被拒、不会广播也不会进提案 / 引擎对回包码不再赋予别的含义 / CheckTx 可选当成已经是四门已经结算或已经没进块或已经被引擎用了 Data | 不变量 373；语料 C377 |
 | 369 | Flush 被写成已经送到 | 协议 + 文案 | 看见 Flush 要把客户端排队的消息冲到服务端 / 定期 Flush 是为了让异步请求真发出去 / 立刻 Flush 是为了做成同步请求、回包回来才算这次同步 / Flush 当成已经送到或已经是四门或已经能往下走 | 不变量 374；语料 C378 |
+| 370 | LoadSnapshotChunk 被写成已经齐 | 协议 + 文案 | 看见 LoadSnapshotChunk 用来从邻居拉快照块 / 请求用 height / format / chunk（从 0 起）认这块 / 回包块含元数据不能超过 16 MB / LoadSnapshotChunk 当成已经齐或已经是同一份或已经是快照报文 4 MB | 不变量 375；语料 C379 |
 
 ## 不自动覆盖
 

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 376）
+
+- CometBFT LoadSnapshotChunk 工作实例（官方 ABCI++ Methods LoadSnapshotChunk Usage，实现 / LoadSnapshotChunk，不另写 19 节）：看见 LoadSnapshotChunk 用来从邻居拉快照块不是已经齐。看见请求用 height / format / chunk（从 0 起）认这块不是已经是同一份。看见回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB。LoadSnapshotChunk 不是不变量 322，也不是不变量 368，也不是不变量 321。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 375；语料 C379；模式 name-the-load-chunk；反模式 loadchunk-sold-as-retrieved；L10.3 第 371 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 LoadSnapshotChunk、怎样切块、怎样挑 10 MB。不编博物馆页。不另写 19 节。不与 322 / 368 / 321 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。发现清单、同一份快照、装回标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 375）
 
 - CometBFT Flush 工作实例（官方 ABCI++ Methods Flush Usage，实现 / Flush，不另写 19 节）：看见 Flush 要把客户端排队的消息冲到服务端不是已经送到。看见定期 Flush 是为了让异步请求真发出去不是已经是四门。看见立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走。Flush 不是不变量 309，也不是不变量 307，也不是不变量 310。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

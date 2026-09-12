@@ -377,3 +377,4 @@
 - [misbehavior-sold-as-enum](misbehavior-sold-as-enum.md)
 - [checktxopt-sold-as-block](checktxopt-sold-as-block.md)
 - [flush-sold-as-sent](flush-sold-as-sent.md)
+- [loadchunk-sold-as-retrieved](loadchunk-sold-as-retrieved.md)
