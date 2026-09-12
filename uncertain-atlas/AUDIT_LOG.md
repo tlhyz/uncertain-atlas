@@ -3906,6 +3906,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1867 | 高 | 看见 ConsensusParams.synchrony 定提案时间戳合法界 / 看见填了 synchrony 会被写成已经是 PBTS，或当成已经是 Precision 就已经是 MessageDelay | 官方：synchrony is Parameters determining the validity bounds of a proposal timestamp |
 | A1868 | 中 | 怎样写余下三栏 / 怎样设证据上限 / 怎样设 Precision会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1869 | 记录 | 会与 331 / 330 / 336 糊成「看见填了余下三栏就已经是证据 MaxBytes」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams 余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。证据上限 / 扩展启用 / PBTS 标成另一对象 |
+| A1870 | 高 | 看见 InitChain 请求 time 是创世时间 / 看见填了 time 会被写成已经过了 genesis_time，或当成已经开出块 | 工作实例：abci++_methods InitChain Request 官方写 time is Genesis time |
+| A1871 | 高 | 看见 InitChain 请求 chain_id 是链的 ID / 看见填了 chain_id 会被写成已经有了 ChainID，或当成已经有完整历史 | 官方：chain_id is ID of the blockchain |
+| A1872 | 高 | 看见 InitChain 请求 initial_height 是起步块高度 / 看见填了起步高会被写成已经能跳步，或当成已经过了崩溃三步 | 官方：initial_height is Height of the initial block (typically 1) |
+| A1873 | 中 | 怎样写 InitChain 请求 / 怎样填时间 / 怎样选起步高会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1874 | 记录 | 会与 303 / 323 / 320 糊成「看见叫了 InitChain 就已经过了 genesis_time」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。genesis_time / ChainID / 能跳步标成另一对象 |
 
 
 

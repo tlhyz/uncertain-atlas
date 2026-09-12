@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 388）
+
+- CometBFT InitChain 请求工作实例（官方 ABCI++ Methods InitChain Request，实现 / InitChain 请求，不另写 19 节）：看见 InitChain 请求 time 是创世时间不是已经过了 genesis_time。看见 InitChain 请求 chain_id 是链的 ID 不是已经有了 ChainID。看见 InitChain 请求 initial_height 是起步块高度不是已经能跳步。InitChain 请求不是不变量 303，也不是不变量 323，也不是不变量 320。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 387；语料 C391；模式 name-the-init-time；反模式 inittime-sold-as-genesis；L10.3 第 383 条。填 L4.4 / CometBFT 档案 InitChain 请求 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 InitChain 请求、怎样填时间、怎样选起步高。不编博物馆页。不另写 19 节。不与 303 / 323 / 320 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。genesis_time、ChainID、能跳步标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 387）
 
 - CometBFT ConsensusParams 余栏工作实例（官方 ABCI++ Methods ConsensusParams，实现 / ConsensusParams 余栏，不另写 19 节）：看见 ConsensusParams.evidence 限制拜占庭证据是否合法不是已经是证据 MaxBytes。看见 ConsensusParams.abci 是 ABCI 相关参数不是已经 Prepare 带了扩展。看见 ConsensusParams.synchrony 定提案时间戳合法界不是已经是 PBTS。ConsensusParams 余栏不是不变量 331，也不是不变量 330，也不是不变量 336。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
