@@ -105,3 +105,4 @@
 - [name-the-proposer-lookahead](name-the-proposer-lookahead.md)
 - [name-the-modexp-bound](name-the-modexp-bound.md)
 - [name-the-history-window](name-the-history-window.md)
+- [name-the-clz](name-the-clz.md)

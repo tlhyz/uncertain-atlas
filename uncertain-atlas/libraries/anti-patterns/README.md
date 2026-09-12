@@ -210,3 +210,4 @@
 - [randao-sold-as-schedule](randao-sold-as-schedule.md)
 - [modexp-sold-as-reprice](modexp-sold-as-reprice.md)
 - [window-sold-as-consensus](window-sold-as-consensus.md)
+- [clz-sold-as-zk](clz-sold-as-zk.md)
