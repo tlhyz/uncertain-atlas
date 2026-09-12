@@ -275,3 +275,4 @@
 - [sorted-sold-as-one-address](sorted-sold-as-one-address.md)
 - [cosigner-sold-as-discovered](cosigner-sold-as-discovered.md)
 - [derived-sold-as-output-key](derived-sold-as-output-key.md)
+- [payment-code-sold-as-deposit](payment-code-sold-as-deposit.md)
