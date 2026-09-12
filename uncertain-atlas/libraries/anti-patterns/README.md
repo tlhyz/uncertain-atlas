@@ -288,3 +288,4 @@
 - [musig-xpub-sold-as-xpub](musig-xpub-sold-as-xpub.md)
 - [musig-psbt-sold-as-tap](musig-psbt-sold-as-tap.md)
 - [script-in-path-sold-as-needed](script-in-path-sold-as-needed.md)
+- [entropy-sold-as-seed](entropy-sold-as-seed.md)

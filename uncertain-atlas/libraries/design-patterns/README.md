@@ -183,3 +183,4 @@
 - [name-the-synthetic-xpub](name-the-synthetic-xpub.md)
 - [name-the-musig-psbt](name-the-musig-psbt.md)
 - [name-the-multisig-path](name-the-multisig-path.md)
+- [name-the-derived-entropy](name-the-derived-entropy.md)

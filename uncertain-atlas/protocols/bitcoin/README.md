@@ -109,6 +109,8 @@
 
 精读：[`../../tracks/implementation/worked-example-multisig-path-vs-script.md`](../../tracks/implementation/worked-example-multisig-path-vs-script.md)（不变量 285）。看见脚本各走各的路径不是已经是多签该有的树。看见路径里的脚本类型不是已经必要。看见主种子不是已经够找回。
 
+精读：[`../../tracks/implementation/worked-example-entropy-vs-seed.md`](../../tracks/implementation/worked-example-entropy-vs-seed.md)（不变量 286）。看见一份助记词不是已经能备齐所有钱包。看见扩展根钥不是已经能倒回助记词。看见派生出的熵不是已经是目标钱包的种子。
+
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
 精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。
