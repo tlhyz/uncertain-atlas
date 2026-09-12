@@ -103,6 +103,7 @@
 4. **抽中 ≠ 已认证**（不变量 134）：Algorand 三步。本页没有 VRF 委员会。
 5. **backed ≠ 可用 ≠ 批准 ≠ GRANDPA**（不变量 125）：平行链管道。本页是一条链上的 chunk + 两枚标记。
 6. **leak ≠ slash**（不变量 130）：终局推迟与罚没。Indexer「除非被 slash」只用来把 `near-final` 和 `final` 分开，不是本页已经写罚金。
+7. **L2 档 ≠ L1**（不变量 138）：租户回执 vs 房东高度。本页是同一条链两枚头哈希。精读：[`worked-example-l2-status-vs-l1.md`](worked-example-l2-status-vs-l1.md)。
 
 不要把超时常数、epoch 长度、秒数、Indexer 版本标签抄进不确定常量。不要写怎样出冲突 endorsement / skip，也不要写怎样 slash 来推翻 `near-final`。不编博物馆页。Doomslug 论文步骤不是本页现行规范。`wait_until` 不在本页展开。
 

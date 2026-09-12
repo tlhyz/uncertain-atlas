@@ -129,4 +129,4 @@ Celestia 可当 DA 房东而结算在别处——四层可以分属三条链。
 | 经济 | TVL 不是安全证明；挑战期是资金时间税 |
 
 **禁止假学习：** 「L2 所以更快所以更安全。」「有证明就不会缺数据。」「乐观 = 不安全，ZK = 安全。」  
-**边界：** 不讲某一版本 BoLD/Cannon 的逐步指令；不写 TVL。有效性租户的程序哈希与两层 accepted：[`../../protocols/starknet/README.md`](../../protocols/starknet/README.md)（仅过滤器）。
+**边界：** 不讲某一版本 BoLD/Cannon 的逐步指令；不写 TVL。有效性租户的程序哈希与四档最终性：[`../../protocols/starknet/README.md`](../../protocols/starknet/README.md)（仅过滤器）；精读 [`../../tracks/finality/worked-example-l2-status-vs-l1.md`](../../tracks/finality/worked-example-l2-status-vs-l1.md)（`CANDIDATE` / `PRE_CONFIRMED` ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`；不变量 138）。

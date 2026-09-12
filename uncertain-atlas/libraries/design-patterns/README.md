@@ -35,3 +35,4 @@
 - [name-the-finality-marker](name-the-finality-marker.md)
 - [name-the-order-vs-state](name-the-order-vs-state.md)
 - [name-the-selected-chain](name-the-selected-chain.md)
+- [name-the-l2-status](name-the-l2-status.md)

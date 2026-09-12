@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 139）
+
+- Starknet 工作实例（仅官方文档，不写 19 节）：`CANDIDATE` / `PRE_CONFIRMED` 不是已经 `ACCEPTED_ON_L2`。`ACCEPTED_ON_L2` 不是已经 `ACCEPTED_ON_L1`。验当前登记 program hash 不是物理定律。出处 docs.starknet.io Transactions / SNOS / Data availability。展开不变量 28。
+- 不变量 138；语料 C142；模式 name-the-l2-status；反模式 preconfirmed-sold-as-accepted；L10.3 第 134 条。填 L7.4 / Starknet 过滤器 / 最终性表 / 停链面地图。
+- 不抄 TTL / nonce 窗 / 现行 hash / 官网吞吐。不写怎样跳过 `__validate__`。不编博物馆页。不写 19 节。不与 28 / 127 / 133 / 135 糊成一句。`REVERTED` 与有状态压缩标成另一对象。
+
 ## 2026-09-12（续 138）
 
 - Kaspa 工作实例：进了 DAG 不是已经在 selected chain。并行块留下不是已经 orphan。蓝不是 QC。GHOSTDAG 不是 Avalanche 抽样。Accepting block 是合并它的链块。出处 wiki.kaspa.org developers-knowledge-base / kaspa。

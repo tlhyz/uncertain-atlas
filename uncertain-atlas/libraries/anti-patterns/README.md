@@ -140,3 +140,4 @@
 - [poh-sold-as-tower](poh-sold-as-tower.md)
 - [sortition-sold-as-certified](sortition-sold-as-certified.md)
 - [dag-block-sold-as-selected](dag-block-sold-as-selected.md)
+- [preconfirmed-sold-as-accepted](preconfirmed-sold-as-accepted.md)

@@ -1685,3 +1685,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A624 | 记录 | 会与 L3.1 / 131 / 136 / 交易池 DAG 糊成「DAG」 | 对照写清。不编博物馆页。不写怎样 reorg selected chain |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 · 排序者回执不是已经 ACCEPTED_ON_L2，L2 不是已经 L1
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A625 | 高 | `CANDIDATE` / `PRE_CONFIRMED` 会被写成已经 `ACCEPTED_ON_L2` | 工作实例：官方 Transactions 把未执行的哈希与排序者回执和共识最终块拆开 |
+| A626 | 高 | `ACCEPTED_ON_L2` / 「ZK」会被写成已经 `ACCEPTED_ON_L1` 或已经可提款 | 官方：L1 档是以太坊上 Starknet 高度追上。验证明仍要状态差与桥 |
+| A627 | 中 | 验 SNOS 会被写成与当前 `programHash` 无关的物理定律 | 官方：Core 登记哈希；破坏性变更必须改登记。不变量 28 仍在 |
+| A628 | 中 | TTL / nonce 窗 / 费率加价 / 现行 hash / 官网吞吐会被抄进不确定 | 不抄。不写 19 节。`REVERTED` 与有状态压缩标成另一对象 |
+| A629 | 记录 | 会与 28 / 127 / 133 / 135 / 123 糊成「ZK 最终」 | 对照写清。不编博物馆页。不写怎样跳过 `__validate__` |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

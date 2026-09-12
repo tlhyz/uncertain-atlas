@@ -1,7 +1,7 @@
 # 反模式：L2 accepted 被写成 L1 accepted，或程序哈希被写成物理定律
 
 > **事实 / 推断 / 建议** 已分开。
-> 真值：[Starknet 滤网](../../protocols/starknet/README.md)、[L7.4](../../courses/level-07-modular/L07-M04-rollup-tenant.md)、[不变式 28](../invariants/README.md#28-有效性证明必须点名被锁程序且两层accepted不得混)。
+> 真值：[Starknet 滤网](../../protocols/starknet/README.md)、[L2 档 ≠ L1 工作实例](../../tracks/finality/worked-example-l2-status-vs-l1.md)、[L7.4](../../courses/level-07-modular/L07-M04-rollup-tenant.md)、[不变式 28](../invariants/README.md)、[不变式 138](../invariants/README.md)。
 
 ---
 
