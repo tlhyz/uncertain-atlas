@@ -47,3 +47,5 @@
 - [pbts-sold-as-mtp](pbts-sold-as-mtp.md)
 - [mtp-sold-as-one-clock](mtp-sold-as-one-clock.md)
 - [reject-sold-as-no-disk](reject-sold-as-no-disk.md)
+- [early-return-sold-as-joined](early-return-sold-as-joined.md)
+- [reject-without-ban-sold-as-free](reject-without-ban-sold-as-free.md)
