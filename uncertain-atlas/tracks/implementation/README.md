@@ -25,6 +25,7 @@
 - [`worked-example-crash-steps-vs-commit.md`](worked-example-crash-steps-vs-commit.md) — 应用高度比引擎高 ≠ 已经允许；块进 store ≠ 已经 Commit；启动 Info 对上 ≠ 已经能跳步（不变量 320）
 - [`worked-example-snapshot-restore-vs-offer.md`](worked-example-snapshot-restore-vs-offer.md) — Offer 收下 ≠ 已经装完；一块 chunk 收下 ≠ 已经齐；拉失败换一份 ≠ 已经能接着装（不变量 321）
 - [`worked-example-snapshot-discover-vs-offer.md`](worked-example-snapshot-discover-vs-offer.md) — ListSnapshots 回了 ≠ 已经有了全部快照；挑了最高 ≠ 已经收下；Offer 被拒 ≠ 已经停（不变量 322）
+- [`worked-example-snapshot-switch-vs-history.md`](worked-example-snapshot-switch-vs-history.md) — 装完 ≠ 已经有了 ChainID；AppHash 对上 ≠ 已经版本也对上；切进共识 ≠ 已经有完整历史（不变量 323）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

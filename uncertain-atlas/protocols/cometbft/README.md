@@ -57,6 +57,8 @@ Offer 收下不是已经装完：[`../../tracks/implementation/worked-example-sn
 
 ListSnapshots 回了不是已经有了全部快照：[`../../tracks/implementation/worked-example-snapshot-discover-vs-offer.md`](../../tracks/implementation/worked-example-snapshot-discover-vs-offer.md)（不变量 322）。看见挑了最高不是已经收下。看见 Offer 被拒不是已经停。
 
+装完不是已经有了 ChainID：[`../../tracks/implementation/worked-example-snapshot-switch-vs-history.md`](../../tracks/implementation/worked-example-snapshot-switch-vs-history.md)（不变量 323）。看见 Info 的 AppHash 对上不是已经版本也对上。看见切进共识不是已经有从创世的完整历史。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

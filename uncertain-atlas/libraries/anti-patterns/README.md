@@ -325,3 +325,4 @@
 - [crashsteps-sold-as-committed](crashsteps-sold-as-committed.md)
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md)
 - [snapshotdiscover-sold-as-listed](snapshotdiscover-sold-as-listed.md)
+- [snapshotswitch-sold-as-full-history](snapshotswitch-sold-as-full-history.md)

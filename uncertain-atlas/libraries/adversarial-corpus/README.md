@@ -337,6 +337,7 @@
 | C324 | 320 应用高度比引擎高≠已经允许 | 文案把应用高度比引擎高 / 应用先落了盘写成已经允许或已经能单独恢复；或把块已经进 blockstore / Finalize 结果已经落盘写成已经交差或已经 Commit；或把启动 Info / 对上了写成已经是任意高度或已经能跳步；或把 Crash Recovery 写成不变量 5 / 298 / 314 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C325 | 321 Offer收下≠已经装完 | 文案把 OfferSnapshot 收下 / 选了这份快照写成已经装完或已经有了全部块；或把 ApplySnapshotChunk 收下了一块 / 回了再拉写成已经齐或已经交差；或把拉一块失败 / 换了一份快照写成已经能接着装或已经同一份；或把 Snapshot Restoration 写成不变量 38 / 314 / 320 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C326 | 322 ListSnapshots回了≠已经有了全部快照 | 文案把问了邻居 / ListSnapshots 回了写成已经有了全部快照或已经没有上限；或把挑了最高 / 按高度格式邻居数排了写成已经是应用收下的那份或已经装完；或把 Offer 被拒 / 拒了格式或邻居写成已经没有快照或已经停；或把 Snapshot Discovery 写成不变量 321 / 38 / 314 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C327 | 323 装完≠已经有了ChainID | 文案把快照已经装完 / 状态机已经恢复写成已经有了 ChainID 参数集合和头或已经能出块；或把 Info 的 AppHash 对上 / 对上下一高度写成已经是版本也对上或已经是本头 AppHash；或把切进共识 / 能出块写成已经有从创世的完整历史或已经没有截断；或把 Transition to Consensus 写成不变量 38 / 321 / 322 / 147 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

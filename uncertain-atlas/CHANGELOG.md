@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 324）
+
+- CometBFT Transition to Consensus 工作实例（官方 Requirements for the Application Transition to Consensus，实现 / Transition to Consensus，不另写 19 节）：看见快照装完不是已经有了 ChainID。看见 Info 的 AppHash 对上不是已经版本也对上。看见切进共识不是已经有从创世的完整历史。Transition to Consensus 不是不变量 38，也不是不变量 321，也不是不变量 322，也不是不变量 147。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 323；语料 C327；模式 name-the-snapshot-switch；反模式 snapshotswitch-sold-as-full-history；L10.3 第 319 条。填 L4.4 / CometBFT 档案 Transition to Consensus / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样切到共识、怎样配 RFC-100、怎样写扩展高度。不编博物馆页。不另写 19 节。不与 38 / 321 / 322 / 147 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。轻验 AppHash / 装回 / 发现 / 本头 AppHash 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 323）
 
 - CometBFT Snapshot Discovery 工作实例（官方 Requirements for the Application Snapshot Discovery，实现 / Snapshot Discovery，不另写 19 节）：看见 ListSnapshots 回了不是已经有了全部快照。看见挑了最高不是已经收下。看见 Offer 被拒不是已经停。Snapshot Discovery 不是不变量 321，也不是不变量 38，也不是不变量 314。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

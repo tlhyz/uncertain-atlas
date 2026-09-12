@@ -220,3 +220,4 @@
 - [name-the-crash-steps](name-the-crash-steps.md)
 - [name-the-snapshot-restore](name-the-snapshot-restore.md)
 - [name-the-snapshot-discover](name-the-snapshot-discover.md)
+- [name-the-snapshot-switch](name-the-snapshot-switch.md)
