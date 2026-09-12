@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 412）
+
+- CometBFT ExtendVote 请求余栏工作实例（官方 ABCI++ Methods ExtendVote Request，实现 / ExtendVote 请求余栏，不另写 19 节）：看见 ExtendVoteRequest.txs 是扩展要指的那份块的交易列表不是已经执行那些交易。看见 ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息不是已经交差 local_last_commit。看见 ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希不是已经是 Finalize 请求栏的 next_validators_hash。ExtendVote 请求余栏不是不变量 408，也不是不变量 359，也不是不变量 394。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 411；语料 C415；模式 name-the-ext-req-txs；反模式 extreqtxs-sold-as-fintxs；L10.3 第 407 条。填 L4.4 / CometBFT 档案 ExtendVote 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendVote 请求余栏、怎样填 txs、怎样填 proposed_last_commit。不编博物馆页。不另写 19 节。不与 408 / 359 / 394 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经执行那些交易、已经交差 local_last_commit、已经是 Finalize 请求栏的 next_validators_hash 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 411）
 
 - CometBFT ExtendVote 请求栏工作实例（官方 ABCI++ Methods ExtendVote Request，实现 / ExtendVote 请求栏，不另写 19 节）：看见 ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希不是已经跑过 Process。看见 ExtendVoteRequest.height 是拟议块高度（用来对一下）不是已经对上了拟议块。看见 ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳不是已经验过票上时间。ExtendVote 请求栏不是不变量 353，也不是不变量 409，也不是不变量 304。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

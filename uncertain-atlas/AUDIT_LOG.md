@@ -4026,6 +4026,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1987 | 高 | 看见 ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳 / 看见填了 time 会被写成已经验过票上时间，或当成已经交差 | 官方：time is Timestamp of the proposed block (that the extension is to refer to) |
 | A1988 | 中 | 怎样写 ExtendVote 请求栏 / 怎样填 hash / 怎样对高度 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1989 | 记录 | 会与 353 / 409 / 304 糊成「看见填了 ExtendVote 请求栏就已经跑过 Process」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经跑过 Process / 已经对上了拟议块 / 已经验过票上时间 标成另一对象 |
+| A1990 | 高 | 看见 ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 / 看见填了 txs 会被写成已经执行那些交易，或当成已经交差 | 工作实例：abci++_methods ExtendVote Request 官方写 txs is List of transactions of the block that the vote extension is to refer to |
+| A1991 | 高 | 看见 ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 / 看见填了 proposed_last_commit 会被写成已经交差 local_last_commit，或当成已经跑过 Process | 官方：proposed_last_commit is Info about the last proposed block's last commit |
+| A1992 | 高 | 看见 ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 / 看见填了 next_validators_hash 会被写成已经是 Finalize 请求栏的 next_validators_hash，或当成已经换了人 | 官方：next_validators_hash is Hash of the next validator set |
+| A1993 | 中 | 怎样写 ExtendVote 请求余栏 / 怎样填 txs / 怎样填 proposed_last_commit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1994 | 记录 | 会与 408 / 359 / 394 糊成「看见填了 ExtendVote 请求余栏就已经执行那些交易」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经执行那些交易 / 已经交差 local_last_commit / 已经是 Finalize 请求栏的 next_validators_hash 标成另一对象 |
 
 
 

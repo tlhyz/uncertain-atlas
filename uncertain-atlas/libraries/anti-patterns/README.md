@@ -413,3 +413,4 @@
 - [fintxs-sold-as-control](fintxs-sold-as-control.md)
 - [extreq-sold-as-precommit](extreq-sold-as-precommit.md)
 - [extreqhash-sold-as-process](extreqhash-sold-as-process.md)
+- [extreqtxs-sold-as-fintxs](extreqtxs-sold-as-fintxs.md)

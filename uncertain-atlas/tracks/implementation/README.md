@@ -113,6 +113,7 @@
 - [`worked-example-fintxs-vs-control.md`](worked-example-fintxs-vs-control.md) — Finalize 按应用自己的规则确定地执行 txs、再交还控制权 ≠ 已经交差；Process 含提案块上执行所需的全部信息 ≠ 已经是刚决定那块的字段；Process 可以像在处理 Finalize 那样整块执行 ≠ 已经是 ExecuteTxState（不变量 408）
 - [`worked-example-extreq-vs-precommit.md`](worked-example-extreq-vs-precommit.md) — ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块 ≠ 已经会调 ExtendVote；Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify ≠ 已经跳过 Verify；Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo ≠ 已经 Verify 过迟到扩展（不变量 409）
 - [`worked-example-extreqhash-vs-process.md`](worked-example-extreqhash-vs-process.md) — ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希 ≠ 已经跑过 Process；ExtendVoteRequest.height 是拟议块高度（用来对一下） ≠ 已经对上了拟议块；ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳 ≠ 已经验过票上时间（不变量 410）
+- [`worked-example-extreqtxs-vs-fintxs.md`](worked-example-extreqtxs-vs-fintxs.md) — ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 ≠ 已经执行那些交易；ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 ≠ 已经交差 local_last_commit；ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 ≠ 已经是 Finalize 请求栏的 next_validators_hash（不变量 411）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
