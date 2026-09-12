@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 302）
+
+- CometBFT 内存池交接工作实例（官方 Mempool，共识协议，不另写 19 节）：看见提案收了交易不是已经从池里删掉。看见本块已 commit 不是已经不用再验剩下的。看见 CheckTx 过了不是已经永远有效。内存池交接不是不变量 33，也不是不变量 69，也不是不变量 299，也不是不变量 144。出处 github.com/cometbft/cometbft spec/mempool/mempool.md。
+- 不变量 301；语料 C305；模式 name-the-kept-pool；反模式 proposed-sold-as-removed；L10.3 第 297 条。填 L4.4 / L9.2 / CometBFT 档案第 4 步 / 共识表 / 内存池表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄实现名单、加锁、flush、再验次数。不写怎样从池里收割、怎样再验、怎样按新状态重排。不编博物馆页。不另写 19 节。不与 33 / 69 / 299 / 144 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。四门 / 整包可提案 / 先装证据 / 策略拒绝标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 301）
 
 - CometBFT State 工作实例（官方 Data Structures / State，实现 / 规范对象，不另写 19 节）：看见 State 对象不是已经进了块。看见头上的根不是已经有了 State。看见能读本地 State 不是已经进了规范。State 不是不变量 147，也不是不变量 38，也不是不变量 56，也不是不变量 148。出处 github.com/cometbft/cometbft spec/core/state.md。

@@ -11,6 +11,6 @@
 | 4.1 | [L04-M01-quorum-intersection.md](L04-M01-quorum-intersection.md) | M4.1 | 2/3 从哪来 |
 | 4.2 | [L04-M02-rounds-and-steps.md](L04-M02-rounds-and-steps.md) | M4.2 | 高度、轮、步；本头 LastCommit ≠ 本高已 +2/3（不变量 148）；本地 State ≠ 已经进了块 / 头上的根 ≠ 已经有了 State（不变量 300） |
 | 4.3 | [L04-M03-locks.md](L04-M03-locks.md) | M4.3 | 锁、解锁、超时 |
-| 4.4 | [L04-M04-abci-and-wal.md](L04-M04-abci-and-wal.md) | M4.5 / M4.6 / M4.8 入口 | 应用分离、四门、崩溃不投矛盾票；本头 AppHash ≠ 本块已交差（不变量 147）；写下每条消息 ≠ 已经 fsync / 回放时又要签 ≠ 已经双签（不变量 298）；先装证据 ≠ 已经装满交易 / 两条收交易上限 ≠ 已经同一条（不变量 299）；本地 State ≠ 已经进了块 / 头上的根 ≠ 已经有了 State（不变量 300） |
+| 4.4 | [L04-M04-abci-and-wal.md](L04-M04-abci-and-wal.md) | M4.5 / M4.6 / M4.8 入口 | 应用分离、四门、崩溃不投矛盾票；本头 AppHash ≠ 本块已交差（不变量 147）；写下每条消息 ≠ 已经 fsync / 回放时又要签 ≠ 已经双签（不变量 298）；先装证据 ≠ 已经装满交易 / 两条收交易上限 ≠ 已经同一条（不变量 299）；本地 State ≠ 已经进了块 / 头上的根 ≠ 已经有了 State（不变量 300）；提案收了 ≠ 已经从池里删掉 / CheckTx 过了 ≠ 已经永远有效（不变量 301） |
 | 4.5 | [L04-M05-validator-set.md](L04-M05-validator-set.md) | M4.4 | 集合何时算数；当选后单位见 NPoS 等权精读 |
 | 4.6 | [L04-M06-hotstuff-casper-contrast.md](L04-M06-hotstuff-casper-contrast.md) | M4.7 | QC / FFG 对照，不深挖变体；BABE ≠ GRANDPA、Snow 抽样 ≠ QC 见共识精读 |

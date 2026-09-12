@@ -315,6 +315,7 @@
 | C302 | 298 写下每条消息≠已经 fsync | 文案把写下每条消息 / WAL 里有消息写成已经对本节点签过的消息做了 fsync 或已经防了双签；或把崩溃后回放上一高度 / 私钥签名器在回放时又要签写成已经双签或已经发出新的一票；或把 LastSignBytes 对上 / 回放走到 precommit 写成已经换了高度或已经是新的承诺；或把 WAL 写成不变量 4 / 5 / 33 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/consensus/wal.md |
 | C303 | 299 先装证据≠已经装满交易 | 文案把未处理的证据优先 / 先装证据写成已经装满交易或已经执行或已经过了 Process；或把提案扣掉证据后的上限 / 内存池假定没有证据的上限写成已经同一条；或把 MaxBytes 写成 -1 / 整池交给 Prepare 写成已经没有上限或应用已经可以随便回；或把造提案写成不变量 33 / 63 / 46 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/consensus/creating-proposal.md |
 | C304 | 300 本地 State≠已经进了块 | 文案把 State 对象 / 本地 State 写成已经写进块或已经流言或已经算了 State 哈希；或把头上的 Merkle 根 / 验证者根或结果根写成已经有了 State 对象本身；或把 State 的落盘或查询接口 / 能读本地 State 写成已经进了规范或已经能在网上对上；或把 State 写成不变量 147 / 38 / 56 / 148 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/core/state.md |
+| C305 | 301 提案收了≠已经从池里删掉 | 文案把共识从池里收了一串交易 / 这些交易进了提案写成已经从池里删掉或已经进块或已经过了 Process；或把块已经 commit / 本块交易从池里去掉写成已经不用再验剩下的或池已经空了；或把 CheckTx 过了 / 进了池写成已经进块或已经永远有效或已经结算；或把内存池交接写成不变量 33 / 69 / 299 / 144 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/mempool/mempool.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

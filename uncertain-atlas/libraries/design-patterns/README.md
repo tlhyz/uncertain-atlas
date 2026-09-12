@@ -198,3 +198,4 @@
 - [name-the-wal](name-the-wal.md)
 - [name-the-reap](name-the-reap.md)
 - [name-the-state](name-the-state.md)
+- [name-the-kept-pool](name-the-kept-pool.md)
