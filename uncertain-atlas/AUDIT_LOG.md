@@ -3886,6 +3886,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1847 | 高 | 看见 Finalize 回包 events 标成非确定 / 看见回了事件 会被写成已经必须确定，或当成已经交差 | 官方：FinalizeBlockResponse.events Deterministic = No |
 | A1848 | 中 | 怎样写 Finalize 请求 / 怎样空着更新 / 怎样编事件会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1849 | 记录 | 会与 323 / 318 / 342 糊成「看见填了同步高度就已经有完整历史」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 同步高度 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。完整历史 / 空名单 / 必须确定标成另一对象 |
+| A1850 | 高 | 看见 Query 请求 prove 是能回就回默克尔证明 / 看见勾了 prove 会被写成已经对上 AppHash，或当成已经是一层树 | 工作实例：abci++_methods Query Request 官方写 Return Merkle proof with response if possible |
+| A1851 | 高 | 看见 Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 / 看见回了证明 会被写成已经是按键查，或当成已经对上 AppHash | 官方：Serialized proof for the value data, if requested, to be verified against the app_hash for the given Height |
+| A1852 | 高 | 看见 Query 回包 height 是数据来自哪一高 / 看见回了高度 会被写成已经是请求高度，或当成已经新鲜 | 官方：The block height from which data was derived |
+| A1853 | 中 | 怎样写 Query 证明 / 怎样勾 prove / 怎样编 proof_ops会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1854 | 记录 | 会与 325 / 380 / 371 糊成「看见勾了 prove 就已经对上 AppHash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 证明回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。查询证明 / 回包键值 / 请求高度标成另一对象 |
 
 
 

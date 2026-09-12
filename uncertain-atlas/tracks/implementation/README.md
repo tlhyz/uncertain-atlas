@@ -85,6 +85,7 @@
 - [`worked-example-queryindex-vs-store.md`](worked-example-queryindex-vs-store.md) — Query 回包 index 是树里这个键的下标 ≠ 已经是按键查；Query 回包 key 是对上的那份数据的键 ≠ 已经是 Query 高度；Query 回包 value 是对上的那份数据的值 ≠ 已经对上 AppHash（不变量 380）
 - [`worked-example-checktxspace-vs-code.md`](worked-example-checktxspace-vs-code.md) — CheckTx 回包 codespace 是码的命名空间 ≠ 已经是回包码；CheckTx 回包 events 是给索引用的类型键值 ≠ 已经交差；CheckTx 的 lane_id 必须在 Info 回包车道范围内 ≠ 已经不设道（不变量 381）
 - [`worked-example-syncingheight-vs-history.md`](worked-example-syncingheight-vs-history.md) — syncing_to_height 同步或重放时是目标高、否则等于本高 ≠ 已经有完整历史；validator_updates 空则引擎保持当前集合 ≠ 已经没有集合；Finalize 回包 events 标成非确定 ≠ 已经必须确定（不变量 382）
+- [`worked-example-queryprove-vs-proof.md`](worked-example-queryprove-vs-proof.md) — Query 请求 prove 是能回就回默克尔证明 ≠ 已经对上 AppHash；Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 ≠ 已经是按键查；Query 回包 height 是数据来自哪一高 ≠ 已经是请求高度（不变量 383）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

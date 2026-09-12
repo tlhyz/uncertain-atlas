@@ -384,6 +384,7 @@
 | 375 | Query 回包被写成已经是按键查 | 协议 + 文案 | 看见 Query 回包 index 是树里这个键的下标 / Query 回包 key 是对上的那份数据的键 / Query 回包 value 是对上的那份数据的值 / Query 回包当成已经是按键查或已经是 Query 高度或已经对上 AppHash | 不变量 380；语料 C384 |
 | 376 | CheckTx 回包被写成已经是回包码 | 协议 + 文案 | 看见 CheckTx 回包 codespace 是码的命名空间 / CheckTx 回包 events 是给索引用的类型键值 / CheckTx 的 lane_id 必须在 Info 回包车道范围内 / CheckTx 回包当成已经是回包码或已经交差或已经不设道 | 不变量 381；语料 C385 |
 | 377 | Finalize 同步高度被写成已经有完整历史 | 协议 + 文案 | 看见 syncing_to_height 同步或重放时是目标高、否则等于本高 / validator_updates 空则引擎保持当前集合 / Finalize 回包 events 标成非确定 / Finalize 同步高度当成已经有完整历史或已经没有集合或已经必须确定 | 不变量 382；语料 C386 |
+| 378 | Query 证明回包被写成已经对上 AppHash | 协议 + 文案 | 看见 Query 请求 prove 是能回就回默克尔证明 / Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 / Query 回包 height 是数据来自哪一高 / Query 证明回包当成已经对上 AppHash或已经是按键查或已经是请求高度 | 不变量 383；语料 C387 |
 
 ## 不自动覆盖
 

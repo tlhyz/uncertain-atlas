@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 384）
+
+- CometBFT Query 证明回包工作实例（官方 ABCI++ Methods Query Request / Query Response，实现 / Query 证明回包，不另写 19 节）：看见 Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash。看见 Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明不是已经是按键查。看见 Query 回包 height 是数据来自哪一高不是已经是请求高度。Query 证明回包不是不变量 325，也不是不变量 380，也不是不变量 371。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 383；语料 C387；模式 name-the-query-prove；反模式 queryprove-sold-as-proof；L10.3 第 379 条。填 L4.4 / CometBFT 档案 Query 证明回包 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Query 证明、怎样勾 prove、怎样编 proof_ops。不编博物馆页。不另写 19 节。不与 325 / 380 / 371 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。查询证明、回包键值、请求高度标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 383）
 
 - CometBFT Finalize 同步高度工作实例（官方 ABCI++ Methods FinalizeBlock，实现 / Finalize 同步高度，不另写 19 节）：看见 syncing_to_height 同步或重放时是目标高、否则等于本高不是已经有完整历史。看见 validator_updates 空则引擎保持当前集合不是已经没有集合。看见 Finalize 回包 events 标成非确定不是已经必须确定。Finalize 同步高度不是不变量 323，也不是不变量 318，也不是不变量 342。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
