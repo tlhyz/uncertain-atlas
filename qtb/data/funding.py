@@ -27,33 +27,64 @@ def load_funding_csv(path: str | Path) -> pd.DataFrame:
 def fetch_gate_funding(
     contract: str,
     limit: int = 1000,
+    max_pages: int = 12,
 ) -> pd.DataFrame:
     """
     Public GET /futures/usdt/funding_rate (no key).
-    Gate returns recent settlements (typically 8h). Paginate by `from`/`to` if needed.
+
+    Gate returns ~90 recent 8h prints per call. Page backward with `to`.
+    The public API rejects `from` older than ~180 days — we stop there
+    rather than inventing a synthetic average rate.
     """
     pair = normalize_contract(contract)
     url = "https://api.gateio.ws/api/v4/futures/usdt/funding_rate"
-    raw = _http_get_json(url, {"contract": pair, "limit": min(int(limit), 1000)})
-    rows = []
-    for item in raw or []:
-        ts = item.get("t") or item.get("time")
-        rate = item.get("r") if item.get("r") is not None else item.get("rate")
-        if ts is None or rate is None:
-            continue
-        rows.append(
-            {
-                "timestamp": pd.to_datetime(int(ts), unit="s", utc=True),
-                "funding_rate": float(rate),
-                "contract": pair,
-            }
-        )
+    rows: list[dict] = []
+    cursor: int | None = None
+    truncated = False
+    for _ in range(max_pages):
+        params: dict = {"contract": pair, "limit": min(int(limit), 1000)}
+        if cursor is not None:
+            params["to"] = int(cursor)
+        try:
+            raw = _http_get_json(url, params)
+        except Exception as exc:  # noqa: BLE001
+            msg = str(exc).lower()
+            if "180-day" in msg or "400" in msg or "invalid_param" in msg:
+                truncated = True
+                break
+            raise
+        if not raw:
+            break
+        batch_ts: list[int] = []
+        for item in raw:
+            ts = item.get("t") or item.get("time")
+            rate = item.get("r") if item.get("r") is not None else item.get("rate")
+            if ts is None or rate is None:
+                continue
+            tsi = int(ts)
+            batch_ts.append(tsi)
+            rows.append(
+                {
+                    "timestamp": pd.to_datetime(tsi, unit="s", utc=True),
+                    "funding_rate": float(rate),
+                    "contract": pair,
+                }
+            )
+        if not batch_ts:
+            break
+        next_cursor = min(batch_ts) - 1
+        if cursor is not None and next_cursor >= cursor:
+            break
+        cursor = next_cursor
+        if len(raw) < 20:
+            break
     df = pd.DataFrame(rows)
     if not df.empty:
         df = df.drop_duplicates(subset=["timestamp"]).sort_values("timestamp").reset_index(drop=True)
     df.attrs["source"] = "gate_futures_usdt_funding_rate"
     df.attrs["symbol"] = pair
     df.attrs["market"] = "futures"
+    df.attrs["funding_truncated_180d"] = truncated
     return df
 
 
@@ -70,10 +101,10 @@ def fetch_funding_cached(
             raise RuntimeError(f"--cache-only but no funding cache at {path}")
         return cached
     if cached is not None and not cached.empty:
-        # Refresh only if last settlement is older than ~10h
+        # Refresh if stale *or* the cache is a single short page (<180 prints).
         last = cached["timestamp"].iloc[-1]
         age_h = (pd.Timestamp.now(tz="UTC") - last).total_seconds() / 3600.0
-        if age_h < 10:
+        if age_h < 10 and len(cached) >= 200:
             cached.attrs["cache_hit"] = True
             return cached
     try:

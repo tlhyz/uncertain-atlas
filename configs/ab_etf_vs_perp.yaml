@@ -1,0 +1,25 @@
+# Fair A/B: Gate 3L ETF spot grid vs underlying perpetual grid.
+# Fees are inputs — do not hard-code inside engines.
+
+initial_capital: 1000.0
+pairs: [BTC, ETH, SOL, PENGU, PUMP, SOXL, SNXX, AAOI]
+primary_interval: 1h
+fine_interval: 5m
+run_fine: true
+run_short: true
+run_windows: true
+run_walk_forward: true
+run_monte_carlo: true
+run_portfolio: true
+mc_paths: 1000
+horizons: [7, 14, 30, 60, 90]
+
+spot_maker_fee: 0.0008
+spot_taker_fee: 0.00085
+spot_rebate: 0.70
+futures_maker_fee: 0.00008
+futures_taker_fee: 0.0002
+futures_rebate: 0.75
+
+cache_only: false
+output_dir: outputs/ab_etf_vs_perp
