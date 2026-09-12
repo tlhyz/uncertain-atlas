@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 138）
+
+- Kaspa 工作实例：进了 DAG 不是已经在 selected chain。并行块留下不是已经 orphan。蓝不是 QC。GHOSTDAG 不是 Avalanche 抽样。Accepting block 是合并它的链块。出处 wiki.kaspa.org developers-knowledge-base / kaspa。
+- 不变量 137；语料 C141；模式 name-the-selected-chain；反模式 dag-block-sold-as-selected；L10.3 第 133 条。填 L3.8 / Kaspa 档案 §6 / 共识表 / 最终性表 / 停链面地图。
+- 不抄 BPS / 窗长 / k / 确认秒数。不写怎样 reorg。不编博物馆页。不与 L3.1 / 131 / 136 糊成一句。DagKnight 标成另一对象。论文 / 归档 gitbook 不是现行规范。
+
 ## 2026-09-12（续 137）
 
 - Monad 工作实例（仅官方文档，不写 19 节）：官方顺序已定不是本块状态根已经交差。投票时可以还没执行。延迟 D 块根不是轻客户端能证高度 N。投机 `eth_call` 不是协议最终。出处 docs.monad.xyz Asynchronous Execution。

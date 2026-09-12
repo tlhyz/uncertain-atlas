@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–136。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–137。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -151,6 +151,7 @@
 | C138 | 134 抽中≠已认证 | 文案把 VRF 抽中写成已经认证；或把最低 VRF 提案写成已经 soft vote / 已经最终；或把 soft vote 写成已经 certify / 已经落账；或把抽签写成 Avalanche 问邻居；或把拆账户写成更占便宜；或把参与钥写成花费钥；或与 22 / 126 / 129 / 131 糊成「随机委员会」一句 | 必须红 | 协议+文案 | dev.algorand.co concepts/protocol/overview |
 | C139 | 135 Doomslug≠BFT | 文案把 `last_ds_final_block` 写成已经 `last_final_block`；或把 `near-final` / Doomslug 写成已经 `final` / 已经 Nomicon 两高度谓词；或把 `optimistic` 写成已经不可逆；或把出新头写成已经 commit；或与 126 / 127 / 133 糊成「两种最终」一句 | 必须红 | 协议+文案 | nomicon.io ChainSpec/Consensus / nearcore DataStructures/Block / docs.near.org indexer Finality |
 | C140 | 136 顺序≠状态 | 文案把官方顺序已定写成本块状态根已经交差；或把投票写成已经执行；或把延迟 D 块根写成轻客户端能证 N；或把投机 `eth_call` 写成协议最终；或把零余额入账写成已经能自己发；或与 122 / 132 / 27 糊成「先定序」一句 | 必须红 | 协议+文案 | docs.monad.xyz asynchronous-execution |
+| C141 | 137 进DAG≠selected | 文案把进了某个块写成已经在 selected chain 或已经最终；或把并行块写成已经 orphan；或把蓝写成 QC；或把 GHOSTDAG 写成 Avalanche 抽样；或把 DagKnight 写成现行已经切完；或与 131 / 136 / L3.1 糊成「DAG」一句 | 必须红 | 协议+文案 | wiki.kaspa.org developers-knowledge-base / kaspa |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

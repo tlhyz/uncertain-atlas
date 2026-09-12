@@ -22,7 +22,7 @@ PoH 槽钟 ≠ 账本票：[`worked-example-poh-vs-tower.md`](worked-example-poh
 | Avalanche | 概率固化（样本置信，不是 QC） | 视参数；Preference ≠ LastAccepted | 思想：无传统领袖；产品另有 Snowman++ 出块窗 | 抽样与参数；α ≠ 全集证书 | 档案 + 精读 |
 | Algorand | 抽签后还要 soft vote / certify | 视同步假设；超时可进 recovery | VRF 抽签出的提议者 | VRF + online stake；理想条件页 | 档案 + 精读 |
 | HotStuff 类 | QC / 线性 view change | 视实现与超时 | 领袖 + QC | <1/3 + 部分同步 | L4.6 |
-| 块 DAG | 蓝序/全序变深 | 视图分裂 | 多块并行出 | 仍要全序规则 | L3.8 / Kaspa |
+| 块 DAG | 蓝序/全序变深 | 视图分裂 | 多块并行出 | 仍要全序规则 | L3.8 / 档案 + 精读 |
 | Nightshade 一条链 | 连续两高度盖上（Nomicon）+ 头上另有 Doomslug 标记 | 缺 chunk 仍「有块」 | 轮值出块者 + chunk 生产者 | <1/3 冲突签 + 分片件够用 | 档案 + 精读 |
 | 异步执行（Monad 文档） | 先最终**顺序**；状态根延迟 `D` 块才交差 | 文案把序当余额 | 视其 BFT | 执行滞后 + Reserve Balance | 过滤器 + 精读 |
 
@@ -30,6 +30,7 @@ Avalanche：思想 vs 产品层已有 leader，须分开。抽样 α 多数 ≠ 
 Algorand 抽签 ≠ Avalanche 抽样。VRF 抽中 ≠ 已经认证；soft vote ≠ 已经 certify：[`worked-example-vrf-sortition-vs-certified.md`](worked-example-vrf-sortition-vs-certified.md)（不变量 134）。  
 NEAR 头上两枚最终哈希不是一套装置。Doomslug / `near-final` ≠ Nomicon BFT 谓词 / `final`：[`../finality/worked-example-doomslug-vs-bft.md`](../finality/worked-example-doomslug-vs-bft.md)（不变量 135）。  
 官方顺序已定 ≠ 本块状态根已经交差：[`worked-example-order-vs-state.md`](worked-example-order-vs-state.md)（不变量 136）。投票时可以还没执行。投机 `eth_call` 不是协议最终。  
+进了 DAG ≠ 已经在 selected chain：[`worked-example-dag-vs-selected-chain.md`](worked-example-dag-vs-selected-chain.md)（不变量 137）。并行块留下不是已经 orphan。蓝不是 QC。  
 Celestia 排序属 CometBFT 家族，最终的是 DA 承诺不是 rollup 余额。  
 Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。出块 ≠ 最终：[`worked-example-babe-vs-grandpa.md`](worked-example-babe-vs-grandpa.md)（不变量 126）。NPoS 当选 ≠ 共识已经按质押加权：[`worked-example-npos-equal-weight.md`](worked-example-npos-equal-weight.md)（不变量 129）。
 

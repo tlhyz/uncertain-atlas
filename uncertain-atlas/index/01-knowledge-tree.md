@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–136）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–137）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C140；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C141；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
@@ -500,7 +500,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 | Cardano | eUTXO（L2.5 已写；不写全生态 19 节） | L2 | 进阶 |
 | Near | Nightshade 一条链+chunk（`protocols/near` 思想级）。Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`../tracks/finality/worked-example-doomslug-vs-bft.md`](../tracks/finality/worked-example-doomslug-vs-bft.md)（不变量 135） | L7 | 进阶 |
 | Algorand | 密码抽签（`protocols/algorand` 已写）。VRF 抽中 ≠ 已经认证：[`../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134） | L4 对照 | 进阶 |
-| Kaspa | 区块 DAG（`protocols/kaspa` + L3.8） | L3 | 进阶 |
+| Kaspa | 区块 DAG（`protocols/kaspa` + L3.8）。进了某个块 ≠ 已经在 selected chain：[`../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../tracks/consensus/worked-example-dag-vs-selected-chain.md)（不变量 137） | L3 | 进阶 |
 | Fuel | UTXO + 声明调度（思想级档案） | L2 + L6 | 进阶 |
 | Monad / Sei | Monad：共识先定序、根延迟 `D` 块（`protocols/monad` 仅过滤器）。顺序已定 ≠ 本块根已交差：[`../tracks/consensus/worked-example-order-vs-state.md`](../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）。Sei 仍待独特思想，不写页 | L5 + L6 | 进阶 |
 | Starknet / zkSync | 有效性租户：点名程序哈希 + 两层 accepted（`protocols/starknet` 仅过滤器）。zkSync 仍无独立对象，不写页 | L7 + L8 | 研究级 |

@@ -10,6 +10,7 @@ PoH 槽钟 ≠ Tower 票：[`../consensus/worked-example-poh-vs-tower.md`](../co
 VRF 抽中 ≠ 已经认证：[`../consensus/worked-example-vrf-sortition-vs-certified.md`](../consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134）。  
 Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`worked-example-doomslug-vs-bft.md`](worked-example-doomslug-vs-bft.md)（不变量 135）。`last_ds_final_block` ≠ `last_final_block`。  
 官方顺序已定 ≠ 本块状态根已经交差：[`../consensus/worked-example-order-vs-state.md`](../consensus/worked-example-order-vs-state.md)（不变量 136）。  
+进了 DAG ≠ 已经在 selected chain：[`../consensus/worked-example-dag-vs-selected-chain.md`](../consensus/worked-example-dag-vs-selected-chain.md)（不变量 137）。  
 平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。  
 中继出块 ≠ 中继最终：[`../consensus/worked-example-babe-vs-grandpa.md`](../consensus/worked-example-babe-vs-grandpa.md)（BABE ≠ GRANDPA；不变量 126）。
 
@@ -29,7 +30,7 @@ Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`worked-example-doomslug-vs-
 | 乐观 rollup | L1 最终 + 窗口 + 根 | L2 UI = 兑付 | 排序者活性 | L7.4 |
 | Celestia | 头 commit + DA 应可用 | 头最终 = 执行最终；NMT 齐 = 方阵已可用 | 同 CometBFT 倾向 | L7.2 / 精读 |
 | Polkadot | 中继 GRANDPA 最终（平行块先可用；BABE 出块另算） | collator RPC / backed / BABE 新头 = 共享安全最终 | 须读中继；出块服务可仍在、终局另走 | L7.3 / 两篇精读 |
-| Kaspa | DAG 上蓝序变深 | 进了一个块 = 最终 | 视图/传播分裂 | L3.8 |
+| Kaspa | DAG 上蓝序变深；selected chain 可 reorg | 进了一个块 = 已经在 selected chain / 已经最终 | 视图/传播分裂；小 reorg 常见 | L3.8 / 精读 |
 | Zcash / Monero | 最重链家族 | 屏蔽/环 = 另一种最终 | 两边可长 | L8 |
 | Mina | 最重链 + 递归证明（点名 SNARKed） | 22kB = 已结算状态；验 π = 最新 staged | 两边可长；DA 仍在；staged 另算 | L8.3 / 精读 |
 | Nervos | Nakamoto 变体（Consensus RFC） | 占用不等式 = 最终 | 两边可长 | L2.6 / 档案 |

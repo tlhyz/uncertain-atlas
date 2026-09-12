@@ -58,7 +58,7 @@ UTXO 家族（以现行规范为准）。并行出块 ≠ 并行执行冲突交�
 **GHOSTDAG 思想（论文）：** 在 DAG 上识别一个「诚实的稠密子 DAG」（蓝），给其全序；红块被排除或后置。  
 **与 Bitcoin：** 都靠工作量；Kaspa 少浪费并行块。  
 **与 Avalanche：** 不是抽样流言。  
-**事实：** 最终性仍随后续工作量/蓝集稳定而变强，不是每块一张 QC。
+**事实：** 最终性仍随后续工作量/蓝集稳定而变强，不是每块一张 QC。进了某个块不是已经在 selected chain。精读：[`../../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../../tracks/consensus/worked-example-dag-vs-selected-chain.md)（不变量 137）。不抄 BPS。不写怎样 reorg。DagKnight 不是本页现行对象。
 
 ---
 

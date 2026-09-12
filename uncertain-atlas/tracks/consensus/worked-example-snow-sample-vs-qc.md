@@ -101,6 +101,7 @@
 4. **NPoS 等权**（不变量 129）：当选后计票单位。本页是抽样权重按质押，不是 GRANDPA 等权。
 5. **正确兑现委托 ≠ 预编译信任**（不变量 119）：C-Chain EVM 事故。本页是 Snow 引擎，不是预编译。
 6. **VRF 抽签**（不变量 134）：出示证明、另走 propose / soft vote / certify。本页抽的是每轮被问的人，没有「我被抽中」那张证明。精读：[`worked-example-vrf-sortition-vs-certified.md`](worked-example-vrf-sortition-vs-certified.md)。
+7. **进了 DAG ≠ selected chain**（不变量 137）：PoW 块 DAG 上的 selected parent / blue work。本页没有工作量蓝集。精读：[`worked-example-dag-vs-selected-chain.md`](worked-example-dag-vs-selected-chain.md)。
 
 不要把官方对照表里的节点上限、亚秒、样本个数、α / β 默认值、窗秒数、安全概率式子、测试吞吐抄进不确定常量。两份官方页的 α 数字不一致，正好说明不要抄。不要写怎样日蚀抽样集或灌投票。不编博物馆页。
 

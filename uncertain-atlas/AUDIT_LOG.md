@@ -1673,3 +1673,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A619 | 记录 | 会与 122 / 132 / 27 / 133 / 135 糊成「先定序」 | 对照写清。不编博物馆页。不写怎样塞付不起气费的交易 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 · 进了 DAG 不是已经在 selected chain
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A620 | 高 | 进了某个块 / 「也是 DAG」会被写成已经在 selected chain 或已经最终 | 工作实例：Wiki 写并行块不被 orphan，共存再排序；selected chain 才决定事件顺序，并且可以 reorg |
+| A621 | 高 | 并行块会被写成已经像 Bitcoin 那样 orphan，或蓝会被写成 QC | 官方：并行块留下。蓝 = 连接得好、对安全有贡献。Accepting block 是合并它的链块 |
+| A622 | 中 | GHOSTDAG 会被写成 Avalanche 抽样，或 DagKnight 会被写成现行已经切完 | 对照写清。Snow 是问邻居。DagKnight / Crescendo 标成 KIP 对象，不是本页已经切完 |
+| A623 | 中 | BPS / DAA 窗长 / k / 确认秒数 / 官网吞吐会被抄进不确定 | 不抄。论文着色伪代码与归档 gitbook 不是本页现行规范 |
+| A624 | 记录 | 会与 L3.1 / 131 / 136 / 交易池 DAG 糊成「DAG」 | 对照写清。不编博物馆页。不写怎样 reorg selected chain |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

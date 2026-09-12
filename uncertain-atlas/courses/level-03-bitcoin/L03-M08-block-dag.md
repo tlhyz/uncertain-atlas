@@ -98,4 +98,4 @@ Kaspa 档案。Bitcoin 用孤块税换简单规则。
 | 经济 | BPS 高 ≠ 更安全；孤块税是经济账 |
 
 **禁止假学习：** 「DAG 所以无需顺序。」「BPS 高所以更安全。」「和 Avalanche 都是 DAG 所以一样。」  
-**边界：** 不讲 GHOSTDAG 着色伪代码；不写官网块率。
+**边界：** 不讲 GHOSTDAG 着色伪代码；不写官网块率。进了某个块 ≠ 已经在 selected chain：[`../../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../../tracks/consensus/worked-example-dag-vs-selected-chain.md)（不变量 137）。

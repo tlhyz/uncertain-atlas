@@ -161,6 +161,7 @@
 130. 若用 VRF 私下抽委员会：必须点名停在抽中、最低哈希、soft vote 还是 certify（不变量 134）。抽中不是已经认证。最低 VRF 提案不是已经 soft vote。Soft vote 不是已经落账。参与钥不是花费钥。按 Algo 抽签不是一人一票，也不是问邻居。第一版可以不上 VRF 委员会。不要抄超时或官网快慢句。精读：[`../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)。这和 Snow 抽样（不变量 131）、Altair 委员会（不变量 22）、NPoS 等权（不变量 129）、BABE 抽槽（不变量 126）不是同一句。
 131. 若头上同时印较快确认和 BFT 最终：必须点名问的是哪一枚哈希、哪一条谓词、哪一档 RPC（不变量 135）。`last_ds_final_block` 不是已经 `last_final_block`。`near-final` / Doomslug 不是已经 `final` / 已经 Nomicon 两高度谓词。`optimistic` 不是已经不可逆。出新头不是已经 commit。第一版不要同时卖两枚头哈希。不要抄超时或秒数。精读：[`../../tracks/finality/worked-example-doomslug-vs-bft.md`](../../tracks/finality/worked-example-doomslug-vs-bft.md)。这和 BABE≠GRANDPA（不变量 126）、Gasper 三等（不变量 127）、PoH 三档（不变量 133）不是同一句。
 132. 若共识热路径不跑 `Apply`：必须点名问的是官方顺序还是已经交差的状态（不变量 136）。顺序已定不是本块根已经交差。投票时可以还没执行。延迟 D 块根不是轻客户端能证 N。投机 `eth_call` 不是协议最终。第一版可以保持投票前先跑完。不要抄 `D` 或执行预算表。不要写 19 节。精读：[`../../tracks/consensus/worked-example-order-vs-state.md`](../../tracks/consensus/worked-example-order-vs-state.md)。这和 STM 跑完≠最终（不变量 122）、批次≠L（不变量 132）、谁写顺序（不变量 27）不是同一句。
+133. 若留下并行块再线性化：必须点名问的是 DAG 成员、mergeset、蓝还是 selected chain（不变量 137）。进了某个块不是已经在 selected chain。并行块留下不是已经 orphan。蓝不是 QC。GHOSTDAG 不是 Avalanche 抽样。第一版不必上高块率 DAG。不要抄 BPS。精读：[`../../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../../tracks/consensus/worked-example-dag-vs-selected-chain.md)。这和最重链孤块（L3.1）、Snow 抽样（不变量 131）、先定序再揭开（不变量 136）不是同一句。
 
 **以后再发明**
 
@@ -257,6 +258,7 @@
 - 把 VRF 抽中写成已经认证，或把最低 VRF 提案 / soft vote 写成已经落账，或把抽签写成问邻居，或把参与钥写成花费钥。
 - 把 `last_ds_final_block` / `near-final` / Doomslug 写成已经 BFT 最终或已经 `final`，或把出新头写成已经 commit。
 - 把官方顺序已定写成本块状态根已经交差，或把投机 `eth_call` 写成协议最终，或把延迟根写成能证高度 N。
+- 把进了 DAG 块写成已经在 selected chain 或已经最终，或把并行块写成已经 orphan，或把蓝写成 QC，或把 GHOSTDAG 写成 Avalanche。
 
 ---
 
@@ -307,7 +309,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百三十二条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百三十三条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |
