@@ -182,3 +182,4 @@
 - [revert-sold-as-invalid](revert-sold-as-invalid.md)
 - [static-sold-as-view](static-sold-as-view.md)
 - [psbt-sold-as-broadcast](psbt-sold-as-broadcast.md)
+- [empty-sold-as-gone](empty-sold-as-gone.md)

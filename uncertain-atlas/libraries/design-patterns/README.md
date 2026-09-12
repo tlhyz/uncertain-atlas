@@ -77,3 +77,4 @@
 - [name-the-revert-leftover](name-the-revert-leftover.md)
 - [name-the-static-frame](name-the-static-frame.md)
 - [name-the-psbt-role](name-the-psbt-role.md)
+- [name-the-empty-account](name-the-empty-account.md)
