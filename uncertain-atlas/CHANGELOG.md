@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 54）
+
+- 博物馆 CVE-2015-20111（Medium）：miniupnpc 溢出可泄数据；与 6031 合在一起**可能** RCE。公告：未直接泄漏私钥；演示手法不能直接搬到 Bitcoin Core。
+- 0.11.1 官方：默认关 UPnP，以免以后的库洞变成全网结构风险。CVE-2024-52917（Low）：只有打开 `-miniupnp` 才受局域网 OOM。
+- 不变量 53；语料 C57；反模式 upnp-sold-as-must；L10.3 第 49 条。
+- 不写利用步骤；不把 RCE 写成已在 Bitcoin Core 发生。
+
 ## 2026-09-12（续 53）
 
 - `next_block_delay` 精读：现行 `main` FinalizeBlock 回包字段 6，规范标 Deterministic = No。语义仍是 Commit 之后再等，以前是本地 `timeout_commit`。
