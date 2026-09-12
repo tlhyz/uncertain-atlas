@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 142）
+
+- 乐观租户工作实例（OP Stack 规范 + 官方 finality 页，不另写 19 节）：`unsafe` / RPC `latest` 不是已经从 L1 推导。OP `safe` 不是已经 `finalized`，也不是 Gasper justified。L2 `finalized` 不是桥已经兑付。出处 specs.optimism.io derivation / glossary / exec-engine；docs.optimism.io transaction-finality 只钉桥等待 ≠ 链 finalized。
+- 不变量 141；语料 C145；模式 name-the-derivation-head；反模式 unsafe-sold-as-derived；L10.3 第 137 条。填 L7.4 / 乐观档案 / 最终性表 / 停链面地图。
+- 不抄块秒 / 批次间隔 / 桥等待天数 / epoch 个数。不写怎样重组或怎样挑战。不编博物馆页。不另写 19 节。不与 9 / 127 / 138 糊成一句。Subblock / 跨链档 / Arbitrum assertion 标成另一对象。
+
 ## 2026-09-12（续 141）
 
 - EigenLayer 工作实例（仅 ELIP-002 + 官方概念页，不写 19 节）：AVS 罚没不是已经 Casper。任何理由不是必须链上可证。restake 不是已经变成另一个信标最终。协议不提供否决。Unique Stake 不是已经被所有 AVS 同时可罚。

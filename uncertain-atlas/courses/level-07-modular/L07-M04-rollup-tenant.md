@@ -59,7 +59,8 @@ L2 出块    ≠  DA 已可重建
 挑战期结束 ≠  电路/合约没有通胀洞
 ```
 
-档案：[`../../protocols/optimistic-rollup/`](../../protocols/optimistic-rollup/README.md)。
+档案：[`../../protocols/optimistic-rollup/`](../../protocols/optimistic-rollup/README.md)。  
+OP Stack 推导头：`unsafe` / `latest` ≠ 已经从 L1 推导；OP `safe` ≠ Gasper justified；L2 `finalized` ≠ 桥已兑付。精读：[`../../tracks/finality/worked-example-unsafe-vs-derived.md`](../../tracks/finality/worked-example-unsafe-vs-derived.md)（不变量 141）。
 
 ---
 
@@ -128,5 +129,5 @@ Celestia 可当 DA 房东而结算在别处——四层可以分属三条链。
 | 部署 | 排序者 / 证明者中心化是部署事实 |
 | 经济 | TVL 不是安全证明；挑战期是资金时间税 |
 
-**禁止假学习：** 「L2 所以更快所以更安全。」「有证明就不会缺数据。」「乐观 = 不安全，ZK = 安全。」  
-**边界：** 不讲某一版本 BoLD/Cannon 的逐步指令；不写 TVL。有效性租户的程序哈希与四档最终性：[`../../protocols/starknet/README.md`](../../protocols/starknet/README.md)（仅过滤器）；精读 [`../../tracks/finality/worked-example-l2-status-vs-l1.md`](../../tracks/finality/worked-example-l2-status-vs-l1.md)（`CANDIDATE` / `PRE_CONFIRMED` ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`；不变量 138）。
+**禁止假学习：** 「L2 所以更快所以更安全。」「有证明就不会缺数据。」「乐观 = 不安全，ZK = 安全。」「OP 的 `safe` = 以太坊的 `safe`。」「排序者出块 = 已经从 L1 推导。」「提款要等很久 = 交易还没 finalized。」  
+**边界：** 不讲某一版本 BoLD/Cannon 的逐步指令；不写 TVL。不抄块秒或桥等待天数。OP 推导头：[`../../tracks/finality/worked-example-unsafe-vs-derived.md`](../../tracks/finality/worked-example-unsafe-vs-derived.md)（不变量 141）。有效性租户的程序哈希与四档最终性：[`../../protocols/starknet/README.md`](../../protocols/starknet/README.md)（仅过滤器）；精读 [`../../tracks/finality/worked-example-l2-status-vs-l1.md`](../../tracks/finality/worked-example-l2-status-vs-l1.md)（`CANDIDATE` / `PRE_CONFIRMED` ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`；不变量 138）。

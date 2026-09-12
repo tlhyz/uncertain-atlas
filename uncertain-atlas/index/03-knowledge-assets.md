@@ -11,7 +11,7 @@
 |---|---|---|---|---|
 | 01 | 《区块链基础课程》 | `courses/` | L0–L10 正文已写；L8.4 数学后置 | 必学 |
 | 02 | 《全球公链架构图谱》 | `protocols/` 19 节 + `tracks/` 横表 | 主线 + 第 8 波择优（含 Nervos 思想级） | 必学 |
-| 03 | 《共识协议图谱》 | `tracks/consensus/` + `tracks/finality/` | 对照表 + ABCI 四门 + 扩展 + 集合延迟 + PBTS + Bitcoin MTP 三把尺 + 本地超时 ≠ 最终性 + 应用 delay ≠ 槽位 + 默认 MaxBytes ≠ 第一轮 SLA + backed ≠ 可用 + BABE ≠ GRANDPA + head ≠ justified ≠ finalized + NPoS 等权 ≠ 按质押凑 ⅔ + leak ≠ slash + 抽样 α ≠ QC + 已认证批次 ≠ L + PoH ≠ Tower + VRF 抽中 ≠ 已认证 + Doomslug ≠ BFT 谓词 + 顺序 ≠ 状态根 + DAG ≠ selected chain + L2 档 ≠ L1 | 必学 |
+| 03 | 《共识协议图谱》 | `tracks/consensus/` + `tracks/finality/` | 对照表 + ABCI 四门 + 扩展 + 集合延迟 + PBTS + Bitcoin MTP 三把尺 + 本地超时 ≠ 最终性 + 应用 delay ≠ 槽位 + 默认 MaxBytes ≠ 第一轮 SLA + backed ≠ 可用 + BABE ≠ GRANDPA + head ≠ justified ≠ finalized + NPoS 等权 ≠ 按质押凑 ⅔ + leak ≠ slash + 抽样 α ≠ QC + 已认证批次 ≠ L + PoH ≠ Tower + VRF 抽中 ≠ 已认证 + Doomslug ≠ BFT 谓词 + 顺序 ≠ 状态根 + DAG ≠ selected chain + L2 档 ≠ L1 + unsafe ≠ 已推导 | 必学 |
 | 04 | 《状态模型图谱》 | `tracks/state-models/` + `tracks/parallelism/` | 进行中；Block-STM 工作实例（不变量 122）；owned ≠ 快路径（不变量 128）；Quorum Store ≠ 排序（不变量 132）；顺序 ≠ 状态根（不变量 136） | 必学 |
 | 05 | 《区块链密码学地图》 | `tracks/crypto/` | 对照表 + 域分离三层编码精读 | 必学 |
 | 05b | 《实现保证精读》 | `tracks/implementation/` | 编码 + 崩溃 + assumevalid + 头工作量 + state sync + 平台宽度尺寸检查 | 必学 |
@@ -23,8 +23,8 @@
 | 编号 | 资产 | 路径 | 状态 | 优先级 |
 |---|---|---|---|---|
 | 06 | 《区块链失败博物馆》 | `tracks/failure-museum/` | 九十二案 + 17144 五层精读 + 停链面地图 | 必学 |
-| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 34 条 | 重要 |
-| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 141 条 | 重要 |
+| 07 | 《Design Pattern Library》 | `libraries/design-patterns/` | 35 条 | 重要 |
+| 08 | 《Anti-Pattern Library》 | `libraries/anti-patterns/` | 142 条 | 重要 |
 
 ---
 
@@ -35,8 +35,8 @@
 | 09 | 《后量子区块链工程手册》 | `tracks/post-quantum/` | FIPS 名义长度 + 外部 ctx + 有状态 HBS 卡；CPU 空 | 研究级 |
 | 10 | 《不确定协议设计决策库》 | `libraries/decision-matrix/` | 对照列已扩；候选列空 | 重要 |
 | 11 | 《不确定威胁模型》 | `libraries/threat-model/` | 草稿 | 必学 |
-| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 140 条 | 必学 |
-| 13 | 《不确定 Adversarial Test Corpus》 | `libraries/adversarial-corpus/` | 目录 C01–C144；runner 未建 | 重要 |
+| 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 141 条 | 必学 |
+| 13 | 《不确定 Adversarial Test Corpus》 | `libraries/adversarial-corpus/` | 目录 C01–C145；runner 未建 | 重要 |
 | 14 | 《不确定长期技术路线图》 | `courses/level-10-uncertain-studio/` | 建议清单，非选型 | 重要 |
 
 ---
@@ -65,7 +65,7 @@
 | Solana / Sui / Aptos | 5 | 重要 | 第一版 |
 | Celestia / Polkadot | 6 | 重要 | 第一版 |
 | Zcash / Monero / Mina | 7 | 进阶 | 第一版 |
-| 乐观 Rollup | 8 | 重要 | 品类第一版 |
+| 乐观 Rollup | 8 | 重要 | 品类第一版；`unsafe` ≠ 已从 L1 推导（不变量 141） |
 | Algorand | 8 | 进阶 | 抽签第一版 |
 | Kaspa | 8 | 进阶 | 块 DAG 第一版 |
 | Fuel | 8 | 进阶 | 思想级 |

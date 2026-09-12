@@ -43,8 +43,8 @@ Optimism 与 Arbitrum 都落在这张图里。差别主要在**争议协议的�
 1. 用户签 L2 交易（域必须与 L1 分开，见 domain-separation）。  
 2. 排序者收入、排序、在 L2 执行。UI 常在此显示成功。  
 3. 批次提交 L1：数据 + 根。此时 L1 头可能尚未最终。  
-4. L1 最终 ≠ 争议结束。  
-5. 提款：按该桥，可能等待窗口、证明、Merkle 包含。  
+4. L1 最终 ≠ 争议结束。OP Stack 另有三颗推导头：`unsafe` / `latest` 不是已经从 L1 推导；OP `safe` 不是 Gasper justified；L2 `finalized` 不是桥已经兑付。精读：[`../../tracks/finality/worked-example-unsafe-vs-derived.md`](../../tracks/finality/worked-example-unsafe-vs-derived.md)（不变量 141）。  
+5. 提款：按该桥，可能等待窗口、证明、Merkle 包含。官方文档写 Standard Bridge 等待不是 L2 交易还没 finalized。  
 6. 若排序者审查：用户能否强制从 L1 inbox 插入——**产品相关，必须读合约**。
 
 **事实：** 步骤 2 的成功是租户执行，不是结算完成。

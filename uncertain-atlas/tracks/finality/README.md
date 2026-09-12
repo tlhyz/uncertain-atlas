@@ -12,6 +12,7 @@ Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`worked-example-doomslug-vs-
 官方顺序已定 ≠ 本块状态根已经交差：[`../consensus/worked-example-order-vs-state.md`](../consensus/worked-example-order-vs-state.md)（不变量 136）。  
 进了 DAG ≠ 已经在 selected chain：[`../consensus/worked-example-dag-vs-selected-chain.md`](../consensus/worked-example-dag-vs-selected-chain.md)（不变量 137）。  
 排序者回执 ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`：[`worked-example-l2-status-vs-l1.md`](worked-example-l2-status-vs-l1.md)（不变量 138）。  
+`unsafe` / `latest` ≠ 已经从 L1 推导；OP `safe` ≠ Gasper justified；L2 `finalized` ≠ 桥已兑付：[`worked-example-unsafe-vs-derived.md`](worked-example-unsafe-vs-derived.md)（不变量 141）。  
 BTC 锁 ≠ 租户 commit：[`../economic/worked-example-btc-lock-vs-commit.md`](../economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。  
 平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。  
 中继出块 ≠ 中继最终：[`../consensus/worked-example-babe-vs-grandpa.md`](../consensus/worked-example-babe-vs-grandpa.md)（BABE ≠ GRANDPA；不变量 126）。
@@ -29,7 +30,7 @@ BTC 锁 ≠ 租户 commit：[`../economic/worked-example-btc-lock-vs-commit.md`]
 | Solana | PoH 槽钟 + 账本票 / lockout | 槽时间 = commit；`confirmed` = `finalized`；PoH = 单独 BFT | 头可摆；`processed` 官方写仍可切叉 | L6.1 / 精读 |
 | Sui | owned 快路径 vs shared 共识 | 所有交易同一「到了」 | 视路径 | L6.2 |
 | Aptos | 共识给出的序 L 上的 commit | STM 跑完 = 最终 | 同 BFT 家族 | L6.3 |
-| 乐观 rollup | L1 最终 + 窗口 + 根 | L2 UI = 兑付 | 排序者活性 | L7.4 |
+| 乐观 rollup | L1 最终 + 窗口 + 根；OP 另有 `unsafe` / `safe` / `finalized` 推导头 | L2 UI = 兑付；RPC `safe` = Gasper justified；桥等待 = 链还没 finalized | 排序者活性；`safe` 随 L1 视图；`finalized` 跟 L1 终局 | L7.4 / 精读 |
 | Celestia | 头 commit + DA 应可用 | 头最终 = 执行最终；NMT 齐 = 方阵已可用 | 同 CometBFT 倾向 | L7.2 / 精读 |
 | Polkadot | 中继 GRANDPA 最终（平行块先可用；BABE 出块另算） | collator RPC / backed / BABE 新头 = 共享安全最终 | 须读中继；出块服务可仍在、终局另走 | L7.3 / 两篇精读 |
 | Kaspa | DAG 上蓝序变深；selected chain 可 reorg | 进了一个块 = 已经在 selected chain / 已经最终 | 视图/传播分裂；小 reorg 常见 | L3.8 / 精读 |

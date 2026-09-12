@@ -1721,3 +1721,15 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A639 | 记录 | 会与 21 / 26 / 125 / 130 / 139 糊成「共享安全」 | 对照写清。不编博物馆页。Redistributable / Resolution Delay 标成另一对象 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 · 排序者 unsafe 不是已经从 L1 推导，OP `safe` 不是 Gasper justified
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A640 | 高 | OP / Base RPC `latest` 会被写成已经从 L1 推导 | 工作实例：规范 `unsafe` 尚未从 L1 推导，也叫 `"latest"` |
+| A641 | 高 | OP `safe` 会被写成已经 `finalized` 或已经 Gasper justified | 规范：`safe` 是当前 canonical L1 可完整推导，可因 L1 视图而不同 |
+| A642 | 高 | 桥等待会被写成 L2 交易还没 finalized | 官方文档：Standard Bridge 等待不是链 finalized；Fault Proof 不重组 L2 |
+| A643 | 中 | 秒数 / 批次间隔 / 桥等待天数 / epoch 个数会被抄进不确定 | 不抄。不写怎样重组或怎样挑战。不另写 19 节 |
+| A644 | 记录 | 会与 9 / 127 / 133 / 138 糊成「三等确认」 | 对照写清。不编博物馆页。Subblock / 跨链档 / Arbitrum assertion 标成另一对象 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
