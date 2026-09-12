@@ -250,3 +250,4 @@
 - [feefilter-sold-as-rejected](feefilter-sold-as-rejected.md)
 - [addrv2-sold-as-reachable](addrv2-sold-as-reachable.md)
 - [sendheaders-sold-as-have](sendheaders-sold-as-have.md)
+- [wtxidrelay-sold-as-have](wtxidrelay-sold-as-have.md)
