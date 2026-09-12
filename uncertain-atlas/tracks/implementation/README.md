@@ -126,6 +126,7 @@
 - [`worked-example-extvitable-vs-usage.md`](worked-example-extvitable-vs-usage.md) — ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展 ≠ 已经从本进程抽出；ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展 ≠ 已经按原样签；ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签 ≠ 已经把验过的签交给应用（不变量 421）
 - [`worked-example-finreq-vs-procreq.md`](worked-example-finreq-vs-procreq.md) — FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息 ≠ 已经交差 local_last_commit；FinalizeBlockRequest.height 是已决块的高度 ≠ 已经对上了拟议块头；FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表 ≠ 已经执行那些交易（不变量 422）
 - [`worked-example-prepreq-vs-return.md`](worked-example-prepreq-vs-return.md) — PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节 ≠ 已经能回超限列表；PrepareProposalRequest.txs 是挑进拟议块的初步交易列表 ≠ 已经跑过 Process；PrepareProposalRequest.height 是将要提议的那块的高度 ≠ 已经对上了拟议块头（不变量 423）
+- [`worked-example-prepreqrest-vs-procreq.md`](worked-example-prepreqrest-vs-procreq.md) — PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息 ≠ 已经交差 proposed_last_commit；PrepareProposalRequest.time 是将要提议那块的时间戳 ≠ 已经对上了拟议块头；PrepareProposalRequest.misbehavior 是过错验证者信息列表 ≠ 已经定奖惩（不变量 424）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

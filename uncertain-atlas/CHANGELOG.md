@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 425）
+
+- CometBFT Prepare 请求余栏工作实例（官方 ABCI++ Methods PrepareProposal Request，实现 / Prepare 请求余栏，不另写 19 节）：看见 PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息不是已经交差 proposed_last_commit。看见 PrepareProposalRequest.time 是将要提议那块的时间戳不是已经对上了拟议块头。看见 PrepareProposalRequest.misbehavior 是过错验证者信息列表不是已经定奖惩。Prepare 请求余栏不是不变量 359，也不是不变量 420，也不是不变量 413。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 424；语料 C428；模式 name-the-prep-req-rest；反模式 prepreqrest-sold-as-procreq；L10.3 第 420 条。填 L4.4 / CometBFT 档案 Prepare 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Prepare 请求余栏、怎样填 local_last_commit、怎样填 time。不编博物馆页。不另写 19 节。不与 359 / 420 / 413 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经交差 proposed_last_commit、已经对上了拟议块头、已经定奖惩标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 424）
 
 - CometBFT Prepare 请求栏工作实例（官方 ABCI++ Methods PrepareProposal Request，实现 / Prepare 请求栏，不另写 19 节）：看见 PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节不是已经能回超限列表。看见 PrepareProposalRequest.txs 是挑进拟议块的初步交易列表不是已经跑过 Process。看见 PrepareProposalRequest.height 是将要提议的那块的高度不是已经对上了拟议块头。Prepare 请求栏不是不变量 345，也不是不变量 359，也不是不变量 419。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

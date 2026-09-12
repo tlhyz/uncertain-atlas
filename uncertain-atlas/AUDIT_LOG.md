@@ -4091,6 +4091,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2052 | 高 | 看见 PrepareProposalRequest.height 是将要提议的那块的高度 / 看见填了 height 会被写成已经对上了拟议块头，或当成已经是 ProcessProposalRequest.height | 官方表：height is The height of the block that will be proposed |
 | A2053 | 中 | 怎样写 Prepare 请求栏 / 怎样填 max_tx_bytes / 怎样填 txs 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2054 | 记录 | 会与 345 / 359 / 419 糊成「看见填了 Prepare 请求栏就已经能回超限列表」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经能回超限列表 / 已经跑过 Process / 已经对上了拟议块头 标成另一对象 |
+| A2055 | 高 | 看见 PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息 / 看见填了 local_last_commit 会被写成已经交差 proposed_last_commit，或当成已经是上一高度的预提交带扩展 | 官方表：local_last_commit is Info about the last commit, obtained locally from CometBFT's data structures |
+| A2056 | 高 | 看见 PrepareProposalRequest.time 是将要提议那块的时间戳 / 看见填了 time 会被写成已经对上了拟议块头，或当成已经是 ProcessProposalRequest.time | 官方表：time is Timestamp of the block that will be proposed |
+| A2057 | 高 | 看见 PrepareProposalRequest.misbehavior 是过错验证者信息列表 / 看见填了 misbehavior 会被写成已经定奖惩，或当成已经是 ProcessProposalRequest.misbehavior | 官方表：misbehavior is List of information about validators that misbehaved |
+| A2058 | 中 | 怎样写 Prepare 请求余栏 / 怎样填 local_last_commit / 怎样填 time 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2059 | 记录 | 会与 359 / 420 / 413 糊成「看见填了 Prepare 请求余栏就已经交差 proposed_last_commit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 请求余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 proposed_last_commit / 已经对上了拟议块头 / 已经定奖惩 标成另一对象 |
 
 
 
