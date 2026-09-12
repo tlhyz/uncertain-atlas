@@ -72,7 +72,7 @@ UTXO 集。见课程 L2.1。
 
 **PoW：** 找头哈希满足难度。假设：多数算力不合作改历史。
 
-**最终性：** 概率。确认数越多，改写期望成本越高，不是「第 N 块后数学禁止」。许多确认也不是已经不怕同一标识被覆盖：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。
+**最终性：** 概率。确认数越多，改写期望成本越高，不是「第 N 块后数学禁止」。许多确认也不是已经不怕同一标识被覆盖：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见多余栈元素不是已经随便填；看见隔离见证不是已经没有这条延展；看见转发策略已经要空 dummy 不是已经是共识：[`../../tracks/implementation/worked-example-dummy-vs-empty.md`](../../tracks/implementation/worked-example-dummy-vs-empty.md)（不变量 264）。
 
 **分叉：** 同一高度两个合法块常见于传播延迟。短分叉靠后续工作消解。
 
@@ -86,7 +86,7 @@ UTXO 集。见课程 L2.1。
 
 不是虚拟机里的 gas 循环。执行 = 脚本解释 + UTXO 规则。
 
-脚本故意非图灵完备（无一般循环），降低「无限跑」的共识风险。Taproot / Tapscript 增加了表达，仍不是 EVM。钥匙路径不是已经揭开有没有脚本树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。走脚本路径不是已经是 tapscript 语义：[`../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md)（不变量 189）。看见 Miniscript 不是已经是链上脚本；共识健全不是已经是策略完备：[`../../tracks/implementation/worked-example-miniscript-vs-script.md`](../../tracks/implementation/worked-example-miniscript-vs-script.md)（不变量 191）。
+脚本故意非图灵完备（无一般循环），降低「无限跑」的共识风险。Taproot / Tapscript 增加了表达，仍不是 EVM。钥匙路径不是已经揭开有没有脚本树：[`../../tracks/implementation/worked-example-keypath-vs-scriptpath.md`](../../tracks/implementation/worked-example-keypath-vs-scriptpath.md)（不变量 153）。走脚本路径不是已经是 tapscript 语义：[`../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md)（不变量 189）。看见 Miniscript 不是已经是链上脚本；共识健全不是已经是策略完备：[`../../tracks/implementation/worked-example-miniscript-vs-script.md`](../../tracks/implementation/worked-example-miniscript-vs-script.md)（不变量 191）。看见多余栈元素不是已经随便填；看见隔离见证不是已经没有这条延展：[`../../tracks/implementation/worked-example-dummy-vs-empty.md`](../../tracks/implementation/worked-example-dummy-vs-empty.md)（不变量 264）。
 
 失败的脚本使该交易无效，不能进合法块（共识）。mempool 还会用更严的 standardness 拒绝「共识合法但不受欢迎」的交易。
 

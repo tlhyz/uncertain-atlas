@@ -65,6 +65,8 @@
 
 精读：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）。ECDSA 验得过不是已经是严格 DER。库接受某种变形不是共识已经接受。转发策略已经要 DER 不是共识已经要。
 
+精读：[`../../tracks/implementation/worked-example-dummy-vs-empty.md`](../../tracks/implementation/worked-example-dummy-vs-empty.md)（不变量 264）。看见多余栈元素不是已经随便填。看见隔离见证不是已经没有这条延展。看见转发策略已经要空 dummy 不是已经是共识。
+
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
 精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。

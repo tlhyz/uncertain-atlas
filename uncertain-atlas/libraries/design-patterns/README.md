@@ -161,3 +161,4 @@
 - [name-the-dns-payment](name-the-dns-payment.md)
 - [name-the-pong](name-the-pong.md)
 - [name-the-user-agent](name-the-user-agent.md)
+- [name-the-dummy](name-the-dummy.md)
