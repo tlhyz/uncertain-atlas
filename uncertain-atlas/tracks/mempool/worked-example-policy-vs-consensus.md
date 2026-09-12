@@ -96,7 +96,7 @@
 4. **谓词 ≠ 脚本**（不变量 143）：Fuel 生命周期。本页是 Bitcoin 策略/共识两扇门。
 5. **筐里有信 ≠ 局长盖章**（mempool 精读）：未确认 ≠ 已出块。本页再钉策略不作用于块。
 
-不要把默认费率、灰尘、祖先条数、簇上限抄进不确定常量。不要写怎样绕策略或怎样 RBF。不编博物馆页。不另写 19 节。RBF 细则、package relay、cluster 线性化标成另一对象。
+不要把默认费率、灰尘、祖先条数、簇上限抄进不确定常量。不要写怎样绕策略或怎样 RBF。不编博物馆页。不另写 19 节。RBF 细则见 [`worked-example-rbf-signal-vs-replaced.md`](worked-example-rbf-signal-vs-replaced.md)（不变量 166）。package relay、cluster 线性化标成另一对象。
 
 ---
 

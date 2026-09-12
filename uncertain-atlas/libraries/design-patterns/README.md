@@ -63,3 +63,4 @@
 - [name-the-coinbase-age](name-the-coinbase-age.md)
 - [name-the-lock-kind](name-the-lock-kind.md)
 - [name-the-relative-lock](name-the-relative-lock.md)
+- [name-the-replace-signal](name-the-replace-signal.md)

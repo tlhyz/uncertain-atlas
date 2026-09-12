@@ -49,7 +49,7 @@ Bitcoin 的问题陈述（事实，白皮书 2008）：点对点电子现金，�
 
 1. 钱包选币（哪些 UTXO）、构造输出（收款+找零）、算费、签名。  
 2. 广播到若干对等节点。  
-3. 节点按本地策略决定是否进 mempool（脚本、费、标准性）。标准性 ≠ 共识合法性。策略不作用于块内交易：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。  
+3. 节点按本地策略决定是否进 mempool（脚本、费、标准性）。标准性 ≠ 共识合法性。策略不作用于块内交易：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。选择加入替换信号不是已经换掉；nSequence 示意不是已经是相对锁；钱包看见未确认不是已经当付款：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。  
 4. 矿工从 mempool 选交易，算 Merkle 根，找 nonce 使头哈希低于目标。头上的 Merkle 用各笔 txid；新规则另要 coinbase 承诺 wtxid 根：[`../../tracks/implementation/worked-example-txid-vs-wtxid.md`](../../tracks/implementation/worked-example-txid-vs-wtxid.md)（不变量 152）。  
 5. 新块传播。节点验证：PoW、时间戳窗口、交易列表、脚本、无双花。旧节点看见 txid 不是已经验过见证。  
 6. `ConnectBlock`：花输入、造输出，写 UTXO。coinbase 输出进了 UTXO 集，仍不能马上当输入：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。  

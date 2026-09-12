@@ -168,3 +168,4 @@
 - [coinbase-sold-as-spendable](coinbase-sold-as-spendable.md)
 - [cltv-sold-as-nlocktime](cltv-sold-as-nlocktime.md)
 - [csv-sold-as-absolute](csv-sold-as-absolute.md)
+- [rbf-sold-as-replaced](rbf-sold-as-replaced.md)

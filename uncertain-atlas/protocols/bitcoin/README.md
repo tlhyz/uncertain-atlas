@@ -17,6 +17,8 @@
 
 精读：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。脚本里的 CSV 不是 nSequence 已经相对锁住。相对锁不是绝对锁。「CSV 之后」不是已经在讲操作码。
 
+精读：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。选择加入替换信号不是已经换掉。nSequence 用来示意可替换不是已经是相对锁。钱包看见未确认不是已经当付款。
+
 一句话（禁止营销）：
 
 > 用 UTXO + 工作量证明最重链，在无许可网络上对花费授权做概率最终的全网排序。

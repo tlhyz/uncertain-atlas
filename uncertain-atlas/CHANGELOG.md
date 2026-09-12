@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 167）
+
+- BIP-125 工作实例（官方选择加入替换示意 BIP，应用层，不另写 19 节）：选择加入替换信号不是已经换掉。nSequence 用来示意可替换不是已经是相对锁。子孙继承信号不是自己已经明示加入。钱包看见未确认不是已经当付款。出处 github.com/bitcoin/bips BIP-125。
+- 不变量 166；语料 C170；模式 name-the-replace-signal；反模式 rbf-sold-as-replaced；L10.3 第 162 条。填 L3.2 / Bitcoin 档案 / mempool 表 / 停链面地图。
+- 不抄终值常数 / 替换条数 / 费率例子。不写怎样构造替换、钉死或挤掉商家看见的第一笔。不编博物馆页。不另写 19 节。不与 144 / 165 / 164 糊成一句。full-RBF 默认 / package relay / cluster 线性化标成另一对象。
+
 ## 2026-09-12（续 166）
 
 - BIP-68 / BIP-112 工作实例（官方相对锁 BIP，不另写 19 节）：脚本里的 CSV 不是 nSequence 已经把输出相对锁住。相对锁不是绝对锁。CSV 软分叉部署不是已经在讲 CHECKSEQUENCEVERIFY 操作码。nSequence 有数不是已经是相对锁。出处 github.com/bitcoin/bips BIP-68 / BIP-112。

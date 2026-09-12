@@ -49,7 +49,7 @@ T 共识合法，但费低于你邻居的 minrelaytxfee。
 
 ## F. 真实项目
 
-Bitcoin Core 的 mempool / 标准脚本模板。RBF 是策略与社交的混合物。  
+Bitcoin Core 的 mempool / 标准脚本模板。RBF 是策略与社交的混合物。选择加入替换信号不是已经换掉。nSequence 示意不是已经是相对锁。精读：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。
 Ethereum 的 mempool 替换更日常，但「策略 ≠ 共识」同一条。
 
 ---
@@ -93,5 +93,5 @@ Ethereum 的 mempool 替换更日常，但「策略 ≠ 共识」同一条。
 | 部署 | 每个节点一份本地 mempool |
 | 经济 | 费率买的是空间，不是正确性 |
 
-**禁止假学习：** 「标准性 = 共识规则。」「费率高所以交易更正确。」「邻居不转发 = 链拒绝。」「进了 mempool = 已经进块。」「进了块的手续费 = 矿工已经能花。」
-**边界：** mempool 政策通论在 L9.2。策略 ≠ 共识精读：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。进了块的 coinbase ≠ 已经能花：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。不抄默认费率。不写怎样绕策略。
+**禁止假学习：** 「标准性 = 共识规则。」「费率高所以交易更正确。」「邻居不转发 = 链拒绝。」「进了 mempool = 已经进块。」「进了块的手续费 = 矿工已经能花。」「带了 RBF = 已经换掉。」「较低序列号 = 已经是相对锁。」
+**边界：** mempool 政策通论在 L9.2。策略 ≠ 共识精读：[`../../tracks/mempool/worked-example-policy-vs-consensus.md`](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。进了块的 coinbase ≠ 已经能花：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。选择加入替换信号 ≠ 已经换掉：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。不抄默认费率。不写怎样绕策略或怎样替换。
