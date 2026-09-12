@@ -46,6 +46,7 @@
 - [`worked-example-extcodehash-vs-copy.md`](worked-example-extcodehash-vs-copy.md) — 看见代码哈希指令 ≠ 已经看见代码本身；看见返回 0 ≠ 已经是没代码的账户；看见空数据哈希 ≠ 已经是账户不存在；1052 ≠ 161 ≠ 180 ≠ 162（不变量 221）
 - [`worked-example-create2-vs-created.md`](worked-example-create2-vs-created.md) — 看见盐创建指令 ≠ 已经是按发送者加序号占址；看见算出来的盐地址 ≠ 已经创建；看见碰撞变得可能 ≠ 已经覆盖；1014 ≠ 3860 ≠ 176 ≠ 684（不变量 222）
 - [`worked-example-refund-vs-gone.md`](worked-example-refund-vs-gone.md) — 看见退款削减 ≠ 已经没有退款；看见去掉自毁退款 ≠ 已经改了自毁语义；看见退款计数 ≠ 已经能在执行当中用；3529 ≠ 2200 ≠ 160 ≠ 158（不变量 223）
+- [`worked-example-deprecate-vs-changed.md`](worked-example-deprecate-vs-changed.md) — 看见弃用警告 ≠ 已经改了共识行为；看见本页 ≠ 已经改了客户端；看见「以后可能变」≠ 已经变了；6049 ≠ 6780 ≠ 160 ≠ 223（不变量 224）
 - [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
 - [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）

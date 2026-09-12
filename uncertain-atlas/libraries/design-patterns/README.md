@@ -121,3 +121,4 @@
 - [name-the-extcodehash](name-the-extcodehash.md)
 - [name-the-create2](name-the-create2.md)
 - [name-the-refund-cut](name-the-refund-cut.md)
+- [name-the-deprecation](name-the-deprecation.md)

@@ -226,3 +226,4 @@
 - [extcodehash-sold-as-copy](extcodehash-sold-as-copy.md)
 - [create2-sold-as-created](create2-sold-as-created.md)
 - [refund-cut-sold-as-gone](refund-cut-sold-as-gone.md)
+- [deprecate-sold-as-changed](deprecate-sold-as-changed.md)
