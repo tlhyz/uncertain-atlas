@@ -248,3 +248,4 @@
 - [cfilter-sold-as-have](cfilter-sold-as-have.md)
 - [basic-filter-sold-as-relevant](basic-filter-sold-as-relevant.md)
 - [feefilter-sold-as-rejected](feefilter-sold-as-rejected.md)
+- [addrv2-sold-as-reachable](addrv2-sold-as-reachable.md)

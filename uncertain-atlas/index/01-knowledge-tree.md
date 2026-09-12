@@ -193,7 +193,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M3.2 网络与传播 · 必学
 - mempool、compact block、eclipse、带宽
-- 覆盖：课文 L3.4；日蚀 `tracks/network/worked-example-eclipse.md`；调整钟 ≠ MTP `tracks/network/worked-example-adjusted-time.md`（CVE-2024-52912）；MTP 自己还要拆三把尺 `tracks/consensus/worked-example-mtp.md`。privatebroadcast 开关 ≠ IP 已经不暴露：[`../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md`](../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md)（不变量 112）。机会主义未认证加密 ≠ 已经私人；伪随机字节流 ≠ 已经认不出；仍收下第 1 版 ≠ 已经退役旧线：[`../tracks/network/worked-example-v2-transport-vs-private.md`](../tracks/network/worked-example-v2-transport-vs-private.md)（不变量 242）
+- 覆盖：课文 L3.4；日蚀 `tracks/network/worked-example-eclipse.md`；调整钟 ≠ MTP `tracks/network/worked-example-adjusted-time.md`（CVE-2024-52912）；MTP 自己还要拆三把尺 `tracks/consensus/worked-example-mtp.md`。privatebroadcast 开关 ≠ IP 已经不暴露：[`../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md`](../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md)（不变量 112）。机会主义未认证加密 ≠ 已经私人；伪随机字节流 ≠ 已经认不出；仍收下第 1 版 ≠ 已经退役旧线：[`../tracks/network/worked-example-v2-transport-vs-private.md`](../tracks/network/worked-example-v2-transport-vs-private.md)（不变量 242）。后继地址流言 ≠ 已经连得上；sendaddrv2 ≠ 已经只收后继格式；在传某种网上的地址 ≠ 已经连上那种网：[`../tracks/network/worked-example-addrv2-vs-reachable.md`](../tracks/network/worked-example-addrv2-vs-reachable.md)（不变量 246）
 
 ### M3.3 费用市场 · 重要
 - 有限区块空间如何定价
