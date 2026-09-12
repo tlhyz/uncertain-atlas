@@ -307,3 +307,4 @@
 - [rejoin-sold-as-head](rejoin-sold-as-head.md)
 - [appstate-sold-as-validated](appstate-sold-as-validated.md)
 - [timestamp-sold-as-checked](timestamp-sold-as-checked.md)
+- [initpeer-sold-as-added](initpeer-sold-as-added.md)

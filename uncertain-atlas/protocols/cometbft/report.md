@@ -187,7 +187,7 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 已收前身：[CVE-2021-21271 / Mulberry](../../tracks/failure-museum/cve-2021-21271.md) — 飞行中的 last commit 不是证据身份。  
 已收前身：[CVE-2020-15091 / Syringa](../../tracks/failure-museum/cve-2020-15091.md) — +2/3 不是其余槽位已签。  
 已收前身：[Alderfly](../../tracks/failure-museum/alderfly.md) — 验过头不是已经能交证据；朝前 lunatic。  
-已收前身：[CVE-2020-5303 / Lavender](../../tracks/failure-museum/cve-2020-5303.md) — 握手请求不是已接受的邻居。  
+已收前身：[CVE-2020-5303 / Lavender](../../tracks/failure-museum/cve-2020-5303.md) — 握手请求不是已接受的邻居。InitPeer 不是已经能跟它对说；Receive 不是已经 AddPeer：见 [`../../tracks/network/worked-example-initpeer-vs-addpeer.md`](../../tracks/network/worked-example-initpeer-vs-addpeer.md)（不变量 305）。  
 已收应用侧：[ASA-2024-006](../../tracks/failure-museum/asa-2024-006.md) — Cosmos SDK 默认助手从提议者注入的扩展推断投票权；不是引擎保证。  
 已收应用侧：[ASA-2024-002](../../tracks/failure-museum/asa-2024-002.md) — 默认 Prepare 配默认 nonce 池可能提出非法块；单笔 CheckTx 绿 ≠ 整包可提案。  
 已收应用侧：[ASA-2024-0012 / 0013](../../tracks/failure-museum/asa-2024-0012.md) — 外层 `max_tx_bytes` 不是内层解码 / 内部消息已有界。  

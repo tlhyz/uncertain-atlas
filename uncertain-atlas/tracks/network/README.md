@@ -31,3 +31,4 @@ ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`
 协议版本够了 ≠ 已经支持某项功能：[`worked-example-feature-vs-enabled.md`](worked-example-feature-vs-enabled.md)（看见通告了 feature 不是已经启用；verack 之后才来的 feature 不是已经是本页协商；434 ≠ 339 ≠ 155 ≠ 338）。
 看见 pong ≠ 已经还活着：[`worked-example-pong-vs-live.md`](worked-example-pong-vs-live.md)（协议版本够了不是已经会回 pong；回显 nonce 不是已经对上那一次；31 ≠ 434 ≠ 868）。
 协议版本 ≠ 已经是客户端版本：[`worked-example-ua-vs-protocol.md`](worked-example-ua-vs-protocol.md)（user agent 不是已经可以按实现改行为；同一协议版本不是已经是同一套实现；14 ≠ 434 ≠ 31）。
+InitPeer ≠ 已经能交互：[`worked-example-initpeer-vs-addpeer.md`](worked-example-initpeer-vs-addpeer.md)（看见 InitPeer 不是已经能跟它对说；看见已经在 Receive 不是已经过了 AddPeer；看见节点已经在跑不是已经能再登记一个反应堆；305 ≠ 67 ≠ 36）。

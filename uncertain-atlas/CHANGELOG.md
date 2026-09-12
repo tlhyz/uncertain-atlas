@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 306）
+
+- CometBFT 反应堆时序工作实例（官方 Reactor API，网络 / 反应堆时序，不另写 19 节）：看见 InitPeer 不是已经能跟它对说。看见已经在 Receive 不是已经过了 AddPeer。看见节点已经在跑不是已经能再登记一个反应堆。反应堆时序不是不变量 67，也不是不变量 36。出处 github.com/cometbft/cometbft spec/p2p/reactor-api/reactor.md。
+- 不变量 305；语料 C309；模式 name-the-init-peer；反模式 initpeer-sold-as-added；L10.3 第 301 条。填 L9.1 / CometBFT 档案反应堆时序 / 网络表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄 Quint 模型、ABNF 文法、通道号、信封字段表。不写怎样实现 Receive 并发、怎样发 Envelope、怎样编 protobuf。不编博物馆页。不另写 19 节。不与 67 / 36 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。入站配额 / 宣布已经收到 / 握手请求标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 305）
 
 - CometBFT 签字校验工作实例（官方 Validator Signing，共识协议，不另写 19 节）：看见票或提案带了 Timestamp 不是已经验过这个时间。看见冲突提案不是已经有证据。看见非法票被断开不是已经罚了签的人。签字校验不是不变量 40，也不是不变量 21，也不是不变量 19。出处 github.com/cometbft/cometbft spec/consensus/signing.md。
