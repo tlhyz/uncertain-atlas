@@ -87,6 +87,8 @@
 
 精读：[`../../tracks/implementation/worked-example-multi-vs-sortedmulti.md`](../../tracks/implementation/worked-example-multi-vs-sortedmulti.md)（不变量 274）。看见 multi 不是已经按字典序排。看见门限和钥数不是已经同一套上限。看见多把扩展钥不是已经各自编号。
 
+精读：[`../../tracks/implementation/worked-example-tr-vs-tree.md`](../../tracks/implementation/worked-example-tr-vs-tree.md)（不变量 275）。看见 tr 没有树不是已经有脚本路径。看见树表达式不是已经是旧脚本套法。看见压缩钥不是已经是 x-only。
+
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
 精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。
