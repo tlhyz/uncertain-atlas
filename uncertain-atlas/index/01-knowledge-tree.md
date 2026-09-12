@@ -158,7 +158,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 余额、nonce、storage
 - 重放保护为什么常靠 nonce
 - 热点账户
-- 覆盖：课文 L2.2。空地址 ≠ 还没有账户类型：Barberry（不变量 83）
+- 覆盖：课文 L2.2。空地址 ≠ 还没有账户类型：Barberry（不变量 83）。StateDB 可花 ≠ 归属锁定已经从同一笔写回排除：[`../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md`](../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md)（不变量 115）
 
 ### M2.3 Object / Resource · 重要
 - 所有权、版本、能力
@@ -368,7 +368,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - Relay / Parachain、collator / validator
 - backing、availability、approval
 - 小链如何借用安全，以及新的攻击面
-- 覆盖：课文 L7.3 入口；档案 `protocols/polkadot/`。交易解码深度有界 ≠ runtime API 再解整块已安全：[`../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)（不变量 97）。组下标 ≠ 票向量下标：[`../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md`](../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md)（不变量 98）。Active ≠ Confirmed：[`../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md`](../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md)（不变量 99）。链下内存禁用 ≠ 已确认争议已经不参与：[`../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md`](../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md)（不变量 100）。改冻结门槛 ≠ 选举地板已经配对：[`../tracks/failure-museum/polkadot-2026-06-election-score-floor.md`](../tracks/failure-museum/polkadot-2026-06-election-score-floor.md)（不变量 110）。preserve_origin 为真 ≠ 出站已经带了改 origin 的指令：[`../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md`](../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md)（不变量 113）
+- 覆盖：课文 L7.3 入口；档案 `protocols/polkadot/`。交易解码深度有界 ≠ runtime API 再解整块已安全：[`../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md`](../tracks/failure-museum/polkadot-2025-05-runtime-api-decode-depth.md)（不变量 97）。组下标 ≠ 票向量下标：[`../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md`](../tracks/failure-museum/kusama-2025-08-24-group-index-votes.md)（不变量 98）。Active ≠ Confirmed：[`../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md`](../tracks/failure-museum/kusama-2024-02-15-disabled-active-dispute.md)（不变量 99）。链下内存禁用 ≠ 已确认争议已经不参与：[`../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md`](../tracks/failure-museum/kusama-2025-05-09-offchain-disable.md)（不变量 100）。改冻结门槛 ≠ 选举地板已经配对：[`../tracks/failure-museum/polkadot-2026-06-election-score-floor.md`](../tracks/failure-museum/polkadot-2026-06-election-score-floor.md)（不变量 110）。preserve_origin 为真 ≠ 出站已经带了改 origin 的指令：[`../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md`](../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md)（不变量 113）。废弃 runtime API 还在 ≠ 返回编码已经兼容：[`../tracks/failure-museum/polkadot-2026-03-deprecated-runtime-api-scale.md`](../tracks/failure-museum/polkadot-2026-03-deprecated-runtime-api-scale.md)（不变量 114）
 
 ### M7.5 共享安全对照 · 进阶
 - restaking 等后到项目：只收「独特思想」，不因有名而学
@@ -449,7 +449,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（八十四案；含 Polkadot 2026-03 preserve_origin≠出站已绑、Polkadot 2026-06 选举地板≠已配对、Monero 2025-08 加载≠TXID不泄、Bitcoin 2026-06 privatebroadcast≠IP已藏、Zcash ZIP 256 身份 rk≠已能吃 / 无效 ephemeralKey≠已允许 / coinbase 正余额≠能重启 / 跟踪复位≠闸门 / 归一化≠编码 / 体拒绝≠头已绑、Zcash ZIP 257 电路≠陈述、Ethereum 2016-11 OOG≠删除已回滚、Ethereum 2021-05 gas≠墙钟、Kusama 2025-05 链下禁用≠已确认不参与、Kusama 2025-08 组下标≠票下标、Kusama 2024-02 Active≠Confirmed、Sepolia 2024-03 Engine API 尺寸、Polkadot-SDK 2025-05 交易深度套错对象、Solana 2025-05 Fiat-Shamir 漏哈希、Solana 2020-12 槽号当块身份、Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（八十六案；含 Cosmos EVM 2026-08 可花≠银行对齐、Polkadot 2026-03 废弃 API≠编码兼容、Polkadot 2026-03 preserve_origin≠出站已绑、Polkadot 2026-06 选举地板≠已配对、Monero 2025-08 加载≠TXID不泄、Bitcoin 2026-06 privatebroadcast≠IP已藏、Zcash ZIP 256 身份 rk≠已能吃 / 无效 ephemeralKey≠已允许 / coinbase 正余额≠能重启 / 跟踪复位≠闸门 / 归一化≠编码 / 体拒绝≠头已绑、Zcash ZIP 257 电路≠陈述、Ethereum 2016-11 OOG≠删除已回滚、Ethereum 2021-05 gas≠墙钟、Kusama 2025-05 链下禁用≠已确认不参与、Kusama 2025-08 组下标≠票下标、Kusama 2024-02 Active≠Confirmed、Sepolia 2024-03 Engine API 尺寸、Polkadot-SDK 2025-05 交易深度套错对象、Solana 2025-05 Fiat-Shamir 漏哈希、Solana 2020-12 槽号当块身份、Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–113）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–115）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C117；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C119；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

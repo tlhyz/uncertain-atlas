@@ -137,7 +137,9 @@
 106. 若做链上选举 / 许可冷冻 / 质量地板：改可达分的治理必须同时带地板（不变量 110）。改冻结门槛不是选举地板已经配对。出块还在不是纪元已经转。诚实解被 ScoreTooLow 罚不是提交者作恶。第一版可以不做这三件套。不要抄金额 / 公投号。馆藏：[`../../tracks/failure-museum/polkadot-2026-06-election-score-floor.md`](../../tracks/failure-museum/polkadot-2026-06-election-score-floor.md)。这和集合延迟（不变量 35）、治理 panic（54）、EndBlocker 停链（67）、争议禁用（95/96）不是同一句。  
 107. 若钱包可连远程节点：交出站历史的 RPC 必须先看 trusted（不变量 111）。从文件加载不是出站 TXID 已经不泄漏。trusted 标记不是这条 RPC 已经检查。环库回填还在不是只给旧钱包跑一次。第一版可以不连远程守护进程。不要转复现步骤。馆藏：[`../../tracks/failure-museum/monero-2025-08-find-and-save-rings.md`](../../tracks/failure-museum/monero-2025-08-find-and-save-rings.md)。这和付款 URI（51）、代理（50）、隐私广播（108）不是同一句。  
 108. 若提供隐私广播 / 单笔另开连接：每一次降级重连必须仍走同一代理谓词（不变量 112）。开关不是 IP 已经不暴露。v2 失败后的 v1 重连不是仍走代理。第一次走 Tor 不是降级已覆盖。第一版可以不提供该开关。不要抄版本 / 端口。馆藏：[`../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md`](../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md)。这和代理当对等（50）、付款 URI（51）、钱包泄 TXID（107）不是同一句。  
-109. 若做跨共识消息 / XCM：保留 origin 的旗标必须对应一条确定的出站指令（不变量 113）。当前 origin 为空必须失败关闭。`preserve_origin` 为真不是出站已经带了改 origin 的指令。静默跳过不是 BadOrigin。目的地用运输发送者不是用户 origin 已经清掉。第一版可以不做 XCM。不要写怎样拼指令。馆藏：[`../../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md`](../../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md)。这和提交≠兑付（不变量 9）、IBC 确认（73）、授权代发（77）、解码深度（93）不是同一句。
+109. 若做跨共识消息 / XCM：保留 origin 的旗标必须对应一条确定的出站指令（不变量 113）。当前 origin 为空必须失败关闭。`preserve_origin` 为真不是出站已经带了改 origin 的指令。静默跳过不是 BadOrigin。目的地用运输发送者不是用户 origin 已经清掉。第一版可以不做 XCM。不要写怎样拼指令。馆藏：[`../../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md`](../../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md)。这和提交≠兑付（不变量 9）、IBC 确认（73）、授权代发（77）、解码深度（93）不是同一句。  
+110. 若废弃仍可能被旧节点调用的 runtime API：返回编码必须与仍在外的调用方兼容，或入口失败且送块不得依赖它（不变量 114）。废弃还在不是返回编码已经兼容。整理者还能写块不是中继已经收到。支持窗不是更老节点编码已保证。第一版可以不做平行链双代 API。不要抄版本 / 个数。馆藏：[`../../tracks/failure-museum/polkadot-2026-03-deprecated-runtime-api-scale.md`](../../tracks/failure-museum/polkadot-2026-03-deprecated-runtime-api-scale.md)。这和解码深度（93）、确定性（1）、Engine API 尺寸（92）、XCM origin（109）不是同一句。  
+111. 若一层引擎只看见可花、另一层允许锁定去质押：写回必须用同一对象，委托额大于视图必须拒（不变量 115）。StateDB 可花不是锁定已经从同一笔写回排除。回绕后的数不是银行账已经对齐。主分支静默补丁不是发布线已经打上。第一版可以不做通用 EVM / 归属 / 质押预编译。不要写怎样委托锁定。馆藏：[`../../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md`](../../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md)。这和求和拒回绕（不变量 7）、奖励池溢出（70）、空地址归属（79）、被挡账户（71）不是同一句。
 
 **以后再发明**
 
@@ -210,7 +212,9 @@
 - 把改冻结门槛写成选举地板已经配对，或把出块还在写成纪元已经转。  
 - 把从文件加载钱包写成出站 TXID 已经不泄漏，或把 trusted 标记写成这条 RPC 已经检查。  
 - 把 privatebroadcast 开关写成 IP 已经不暴露，或把 v2 失败后的 v1 重连写成仍走代理。  
-- 把 `preserve_origin` 写成出站已经带了改 origin 的指令，或把静默跳过写成 BadOrigin。
+- 把 `preserve_origin` 写成出站已经带了改 origin 的指令，或把静默跳过写成 BadOrigin。  
+- 把废弃 runtime API 还在写成返回编码已经兼容，或把整理者还能写块写成中继已经收到。  
+- 把 StateDB 可花写成锁定已经从同一笔写回排除，或把回绕后的数写成银行账已经对齐。
 
 ---
 
@@ -261,7 +265,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百零九条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百一十一条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

@@ -118,3 +118,5 @@
 - [wallet-load-sold-as-no-txid](wallet-load-sold-as-no-txid.md)
 - [privatebroadcast-sold-as-hidden](privatebroadcast-sold-as-hidden.md)
 - [preserve-origin-sold-as-bound](preserve-origin-sold-as-bound.md)
+- [deprecated-api-sold-as-compat](deprecated-api-sold-as-compat.md)
+- [statedb-spendable-sold-as-bank](statedb-spendable-sold-as-bank.md)

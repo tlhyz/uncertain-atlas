@@ -110,4 +110,4 @@ geth：`StateTransition` / `ApplyTransaction`、账户 trie。预告。
 | 经济 | 热点可被费市场与审查瞄准 |
 
 **禁止假学习：** 「账户模型就是以太坊。」「nonce 能防一切重放。」
-**边界：** EVM/gas 在 L5.1。空地址 ≠ 还没有账户类型：博物馆 [Barberry](../../tracks/failure-museum/barberry.md)（不变量 83）。被挡模块账户是另一句：[ASA-2024-003](../../tracks/failure-museum/asa-2024-003.md)。
+**边界：** EVM/gas 在 L5.1。空地址 ≠ 还没有账户类型：博物馆 [Barberry](../../tracks/failure-museum/barberry.md)（不变量 83）。被挡模块账户是另一句：[ASA-2024-003](../../tracks/failure-museum/asa-2024-003.md)。StateDB 可花 ≠ 归属锁定已经从同一笔写回排除：[`../../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md`](../../tracks/failure-museum/cosmos-evm-2026-08-statedb-vesting.md)（不变量 115）。不要写怎样委托锁定。
