@@ -108,5 +108,5 @@ Celestia DAS；Ethereum blobs（另一条承诺路线）；Bitcoin 全节点默�
 | 部署 | 轻节点必须真抽样，不能只问 RPC |
 | 经济 | 扣留数据的收益 vs 抽样抓住的概率（不填未核百分比） |
 
-**禁止假学习：** 「有头就是有数据。」「抽到份额所以执行正确。」「有 KZG 所以和 Celestia 一种 DAS。」「验了 NMT 就是整块可用。」「抽样绿就是编码对 / 历史还在。」
-**边界：** Celestia 纠删码 ≠ Ethereum KZG sidecar ≠ Fulu PeerDAS 列抽样。NMT 完备性 ≠ DAS。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)、[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)、[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md)。不把某一分叉的每块 blob 个数当永恒。不抄方阵边长 / FAQ 百分比。档案 §15 仍不编事故。
+**禁止假学习：** 「有头就是有数据。」「抽到份额所以执行正确。」「有 KZG 所以和 Celestia 一种 DAS。」「验了 NMT 就是整块可用。」「抽样绿就是编码对 / 历史还在。」「DACert = 全文已经在以太坊。」「AnyTrust = Rollup DA。」
+**边界：** Celestia 纠删码 ≠ Ethereum KZG sidecar ≠ Fulu PeerDAS 列抽样。NMT 完备性 ≠ DAS。DACert ≠ 全文已贴父链：[`../../tracks/light-clients/worked-example-dacert-vs-posted.md`](../../tracks/light-clients/worked-example-dacert-vs-posted.md)（不变量 142）。精读：[`../../tracks/light-clients/worked-example.md`](../../tracks/light-clients/worked-example.md)、[`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)、[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md)。不把某一分叉的每块 blob 个数当永恒。不抄方阵边长 / FAQ 百分比 / 委员会人数。档案 §15 仍不编事故。

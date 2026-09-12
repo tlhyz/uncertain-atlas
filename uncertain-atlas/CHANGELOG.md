@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 143）
+
+- AnyTrust 工作实例（仅官方文档，不另写 19 节）：DACert 不是全文已经贴上父链。AnyTrust 不是已经 Rollup DA。凑不齐签名回退贴全文不是已经只走委员会。证书过期窗不是已经永存。出处 docs.arbitrum.io AnyTrust Protocol。
+- 不变量 142；语料 C146；模式 name-the-da-certificate；反模式 dacert-sold-as-posted；L10.3 第 138 条。填 L7.2 / L7.4 / 乐观档案 / 轻节点表 / 停链面地图。
+- 不抄委员会人数 / 诚实人数 / 过期天数 / 回退分钟。不写怎样扣数据或伪造证书。不编博物馆页。不另写 19 节。不与 9 / 23 / 124 / 141 糊成一句。产品链选型与 Owner 换 Keyset 标成另一对象。
+
 ## 2026-09-12（续 142）
 
 - 乐观租户工作实例（OP Stack 规范 + 官方 finality 页，不另写 19 节）：`unsafe` / RPC `latest` 不是已经从 L1 推导。OP `safe` 不是已经 `finalized`，也不是 Gasper justified。L2 `finalized` 不是桥已经兑付。出处 specs.optimism.io derivation / glossary / exec-engine；docs.optimism.io transaction-finality 只钉桥等待 ≠ 链 finalized。

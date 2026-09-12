@@ -257,7 +257,7 @@ Polkadot 把「小链借用大链安全」做成系统。
 
 | 值得排队 | 原因 |
 |---|---|
-| Arbitrum / Optimism | 乐观滚动是模块化执行的另一半（品类 19 节已写）。`unsafe` / `latest` ≠ 已经从 L1 推导；OP `safe` ≠ Gasper justified；L2 `finalized` ≠ 桥已兑付：[`../tracks/finality/worked-example-unsafe-vs-derived.md`](../tracks/finality/worked-example-unsafe-vs-derived.md)（不变量 141） |
+| Arbitrum / Optimism | 乐观滚动是模块化执行的另一半（品类 19 节已写）。`unsafe` / `latest` ≠ 已经从 L1 推导；OP `safe` ≠ Gasper justified；L2 `finalized` ≠ 桥已兑付：[`../tracks/finality/worked-example-unsafe-vs-derived.md`](../tracks/finality/worked-example-unsafe-vs-derived.md)（不变量 141）。DACert ≠ 全文已经贴上父链：[`../tracks/light-clients/worked-example-dacert-vs-posted.md`](../tracks/light-clients/worked-example-dacert-vs-posted.md)（不变量 142） |
 | Algorand | 密码抽签（19 节已写，对照不是默认骨架）。VRF 抽中 ≠ 已经认证：[`../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134） |
 | Kaspa | 区块 DAG（档案+L3.8 已写）。进了某个块 ≠ 已经在 selected chain：[`../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../tracks/consensus/worked-example-dag-vs-selected-chain.md)（不变量 137） |
 | Fuel | UTXO+调度（思想级档案已写） |

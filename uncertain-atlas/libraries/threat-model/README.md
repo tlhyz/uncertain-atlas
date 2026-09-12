@@ -143,6 +143,7 @@
 | 134 | Bitcoin 上的锁被写成已经 wrap 或已经租户 commit | 协议 + 文案 | 「BTC 质押」/ k-deep / 解绑签名当成 wrap、BFT 或浅重组可恢复 | 不变量 139；语料 C143 |
 | 135 | AVS 自定罚没被写成已经 Casper / 协议罚没 | 协议 + 文案 | restake / 「也被罚了」当成信标最终、两票谓词或协议否决 | 不变量 140；语料 C144 |
 | 136 | 排序者 unsafe / 同名 RPC `safe` 被写成已经从 L1 推导或已经 Gasper | 协议 + 文案 | `latest` / OP `safe` / 桥等待当成已推导、justified 或链还没 finalized | 不变量 141；语料 C145 |
+| 137 | 委员会 DACert 被写成数据已经贴上父链 | 协议 + 文案 | 「也是 Arbitrum」/ Inbox 一笔 / 证书当成 Rollup DA、DAS 或永存 | 不变量 142；语料 C146 |
 
 ## 不自动覆盖
 

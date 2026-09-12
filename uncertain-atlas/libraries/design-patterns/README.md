@@ -39,3 +39,4 @@
 - [name-the-btc-lock](name-the-btc-lock.md)
 - [name-the-slash-reason](name-the-slash-reason.md)
 - [name-the-derivation-head](name-the-derivation-head.md)
+- [name-the-da-certificate](name-the-da-certificate.md)

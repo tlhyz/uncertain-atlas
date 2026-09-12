@@ -166,6 +166,7 @@
 135. 若用外链 BTC 当质押：必须点名问的是 Bitcoin 锁、k-deep 票权、解绑意图还是租户 commit（不变量 139）。UTXO 仍在 Bitcoin 不是已经 wrap。k-deep 包含证明不是已经 CometBFT commit。解绑意图不是已经 k-deep。浅重组不是已经恢复票权。契约连署不是没有第三人。第一版不要靠外链 BTC 当质押。不要抄 `k`。不要写 19 节。精读：[`../../tracks/economic/worked-example-btc-lock-vs-commit.md`](../../tracks/economic/worked-example-btc-lock-vs-commit.md)。这和 k 确认（L3.1）、证据≠slash（不变量 21）、中继质押（不变量 125）、EigenLayer restake 不是同一句。
 136. 若把已有质押再声明给另一套服务：必须点名问的是 restake 声明、Unique Stake、AVS 自定罚还是 Casper / 证据形状（不变量 140）。AVS 罚没不是已经协议罚没。任何理由不是必须链上可证。restake 不是已经变成另一个信标最终。协议不提供否决。第一版不要把任意 AVS 再声明当默认模块。不要抄 TVL。不要写 19 节。精读：[`../../tracks/economic/worked-example-avs-slash-vs-casper.md`](../../tracks/economic/worked-example-avs-slash-vs-casper.md)。这和证据≠slash（不变量 21）、Casper 两票（不变量 26）、中继质押（不变量 125）、BTC 锁（不变量 139）不是同一句。
 137. 若当乐观租户或对照同名 RPC 三档：必须点名问的是 `unsafe` / `latest`、能从当前 canonical L1 推导的 `safe`，还是能从 L1 已 finalized 部分推导的 `finalized`（不变量 141）。排序者出块不是已经从 L1 推导。OP `safe` 不是已经 `finalized`，也不是 Gasper justified。L2 `finalized` 不是桥已经兑付。Standard Bridge 等待不是 L2 交易还没 finalized。第一版不要当别人的乐观租户。不要抄秒数或桥等待天数。不要另写 19 节。精读：[`../../tracks/finality/worked-example-unsafe-vs-derived.md`](../../tracks/finality/worked-example-unsafe-vs-derived.md)。这和提交≠兑付（不变量 9）、Gasper 三等（不变量 127）、Starknet 四档（不变量 138）、PoH 三档（不变量 133）不是同一句。
+138. 若对照委员会 DA：必须点名问的是父链全文、DACert，还是凑不齐签后的回退贴文（不变量 142）。DACert 不是全文已经贴上父链。AnyTrust 不是已经 Rollup DA。Inbox 收下证书不是子链已经读到数据。证书过期窗不是已经永存。第一版不要靠外部 DA 委员会。不要抄人数或过期天数。不要另写 19 节。精读：[`../../tracks/light-clients/worked-example-dacert-vs-posted.md`](../../tracks/light-clients/worked-example-dacert-vs-posted.md)。这和提交≠兑付（不变量 9）、短时 blob（不变量 23）、NMT/DAS（不变量 124）、OP 推导头（不变量 141）不是同一句。
 
 **以后再发明**
 
@@ -267,6 +268,7 @@
 - 把仍在 Bitcoin 的 UTXO 写成已经 wrap，或把 k-deep 包含证明写成已经租户 commit，或把解绑意图写成已经 k-deep / 浅重组能恢复票权。
 - 把 AVS 按任何理由罚写成 Casper / 协议罚没，或把 restake 写成已经变成另一个信标最终，或把协议写成已经提供否决。
 - 把 OP `unsafe` / RPC `latest` 写成已经从 L1 推导，或把 OP `safe` 写成已经 `finalized` / 已经 Gasper justified，或把桥等待写成 L2 交易还没 finalized。
+- 把 AnyTrust DACert 写成全文已经贴上父链，或把 AnyTrust 写成已经 Rollup DA / 已经 DAS，或把凑不齐签回退写成已经只走委员会。
 
 ---
 
@@ -317,7 +319,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百三十七条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百三十八条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

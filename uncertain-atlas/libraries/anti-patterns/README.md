@@ -144,3 +144,4 @@
 - [btc-lock-sold-as-commit](btc-lock-sold-as-commit.md)
 - [avs-slash-sold-as-casper](avs-slash-sold-as-casper.md)
 - [unsafe-sold-as-derived](unsafe-sold-as-derived.md)
+- [dacert-sold-as-posted](dacert-sold-as-posted.md)
