@@ -158,3 +158,4 @@
 - [keypath-sold-as-tree](keypath-sold-as-tree.md)
 - [withdrawal-sold-as-tx](withdrawal-sold-as-tx.md)
 - [escrow-sold-as-voucher](escrow-sold-as-voucher.md)
+- [parent-root-sold-as-head](parent-root-sold-as-head.md)

@@ -53,3 +53,4 @@
 - [name-the-spend-path](name-the-spend-path.md)
 - [name-the-system-op](name-the-system-op.md)
 - [name-the-token-hop](name-the-token-hop.md)
+- [name-the-parent-root](name-the-parent-root.md)

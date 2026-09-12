@@ -84,6 +84,7 @@ Ethereum 合并后主网。PBS 之后，提议者可能不自己选交易（5.4�
 2. 执行引擎 API：共识层叫执行层「请对此载荷出状态根」。
 3. 客户端把「head 事件」和「finalized 事件」分成两条流。
 4. 执行载荷里的提款列表：系统操作，不是用户交易。精读：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。
+5. 执行头里的父信标根：不是当前信标头，也不是已经 finalized。精读：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。
 
 ---
 
@@ -116,10 +117,10 @@ Ethereum 合并后主网。PBS 之后，提议者可能不自己选交易（5.4�
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 验证者签 attestation；弱主观性是同步假设，不是签算法 |
-| 协议 | head ≠ justified ≠ finalized；处理完一块 ≠ 已经改规范头；提款操作 ≠ 用户交易 |
+| 协议 | head ≠ justified ≠ finalized；处理完一块 ≠ 已经改规范头；提款操作 ≠ 用户交易；父信标根 ≠ 当前头 |
 | 实现 | EL 根必须被 CL 承诺；两层客户端对齐 |
 | 部署 | 出块间隔是参数，不是永恒 |
 | 经济 | 罚没支撑最终性假设；不是「秒最终」口号 |
 
-**禁止假学习：** 「PoS 所以秒最终。」「出块了 = finalized。」「justified 就是不可逆。」「`safe` 就是 finalized。」「和 Tendermint 一样一槽一 commit。」「好久没最终就是停链。」「不投票就是已经 slash。」「执行层刚跑完 / Engine API `VALID` = 已经改规范头。」「事件里的 head = 已经 finalized。」「信标提款 = 用户转账。」「出队 = 执行账户已到。」  
-**边界：** 不写当前 slot 秒数当永恒；不证弱主观性数学、不填现行 WS 周期。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）；[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。终局推迟 ≠ 停链，leak ≠ slash：[`../../tracks/finality/worked-example-inactivity-leak.md`](../../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。处理完一块 ≠ 已经改规范头：[`../../tracks/finality/worked-example-processed-vs-forkchoice.md`](../../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149）。提款操作 ≠ 用户交易：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。attestation 与 proposer 的 `DomainType` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不是 EIP-712。Altair 同步委员会轻客户端：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。可罚关系与谁执行 slash：[`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。不抄罚金数字、epoch 个数、美元。不抄过渡总难度。不写怎样发假 forkchoice。不抄每块提款条数。不写怎样往载荷里塞假提款。
+**禁止假学习：** 「PoS 所以秒最终。」「出块了 = finalized。」「justified 就是不可逆。」「`safe` 就是 finalized。」「和 Tendermint 一样一槽一 commit。」「好久没最终就是停链。」「不投票就是已经 slash。」「执行层刚跑完 / Engine API `VALID` = 已经改规范头。」「事件里的 head = 已经 finalized。」「信标提款 = 用户转账。」「出队 = 执行账户已到。」「EVM 能读信标 = 当前头。」「合约里的根 = 已经 finalized。」
+**边界：** 不写当前 slot 秒数当永恒；不证弱主观性数学、不填现行 WS 周期。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）；[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。终局推迟 ≠ 停链，leak ≠ slash：[`../../tracks/finality/worked-example-inactivity-leak.md`](../../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）。处理完一块 ≠ 已经改规范头：[`../../tracks/finality/worked-example-processed-vs-forkchoice.md`](../../tracks/finality/worked-example-processed-vs-forkchoice.md)（不变量 149）。提款操作 ≠ 用户交易：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。父信标根 ≠ 当前头：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。attestation 与 proposer 的 `DomainType` 见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；不是 EIP-712。Altair 同步委员会轻客户端：[`../../tracks/light-clients/worked-example-sync-committee.md`](../../tracks/light-clients/worked-example-sync-committee.md)。可罚关系与谁执行 slash：[`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。不抄罚金数字、epoch 个数、美元。不抄过渡总难度。不写怎样发假 forkchoice。不抄每块提款条数。不写怎样往载荷里塞假提款。不抄环长。不写怎样塞假父根。
