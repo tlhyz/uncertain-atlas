@@ -23,3 +23,4 @@ ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`
 后继地址 ≠ 已经连得上：[`worked-example-addrv2-vs-reachable.md`](worked-example-addrv2-vs-reachable.md)（看见后继地址流言不是已经连得上；发了 sendaddrv2 不是已经只收后继格式；在传某种网上的地址不是已经连上那种网；155 ≠ 324 ≠ 112 ≠ 868）。
 头通告偏好 ≠ 已经有块：[`worked-example-sendheaders-vs-have.md`](worked-example-sendheaders-vs-have.md)（看见发了 sendheaders 不是已经改用头通告；用头通告新尖不是已经有块；重组时先发头不是中间块已经在手里；130 ≠ 36 ≠ 155 ≠ compact）。
 按 wtxid 通告 ≠ 已经有交易：[`worked-example-wtxidrelay-vs-have.md`](worked-example-wtxidrelay-vs-have.md)（看见按 wtxid 通告不是已经有那笔交易；发了 wtxidrelay 不是已经改口；仍用旧类型要父交易不是旧库存已经退役；339 ≠ 152 ≠ 130 ≠ 133）。
+对账素描 ≠ 已经有交易：[`worked-example-erlay-vs-have.md`](worked-example-erlay-vs-have.md)（看见对账素描不是已经有那些交易；发了 sendtxrcncl 不是已经在对账；对账失败退回洪水不是库存通告已经退役；330 ≠ 339 ≠ 133 ≠ 36）。

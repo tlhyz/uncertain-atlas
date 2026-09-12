@@ -146,3 +146,4 @@
 - [name-the-addrv2](name-the-addrv2.md)
 - [name-the-sendheaders](name-the-sendheaders.md)
 - [name-the-wtxidrelay](name-the-wtxidrelay.md)
+- [name-the-erlay](name-the-erlay.md)

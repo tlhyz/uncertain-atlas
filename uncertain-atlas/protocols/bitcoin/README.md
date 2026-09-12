@@ -31,6 +31,8 @@
 
 精读：[`../../tracks/network/worked-example-wtxidrelay-vs-have.md`](../../tracks/network/worked-example-wtxidrelay-vs-have.md)（不变量 248）。看见按 wtxid 通告不是已经有那笔交易。看见发了 wtxidrelay 不是已经改口。看见仍用旧类型要父交易不是旧库存已经退役。
 
+精读：[`../../tracks/network/worked-example-erlay-vs-have.md`](../../tracks/network/worked-example-erlay-vs-have.md)（不变量 249）。看见对账素描不是已经有那些交易。看见发了 sendtxrcncl 不是已经在对账。看见对账失败退回洪水不是库存通告已经退役。
+
 精读：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。付给脚本哈希不是已经揭开赎回脚本。旧节点 HASH160 EQUAL 通过不是新节点已经再跑赎回。哈希对上不是内层已经验过。
 
 精读：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。版本位被置上不是已经锁定。锁定不是已经激活。超时未锁定不是已经可以当激活。
