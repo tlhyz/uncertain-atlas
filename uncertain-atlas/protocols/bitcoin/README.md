@@ -115,6 +115,8 @@
 
 精读：[`../../tracks/implementation/worked-example-template-vs-path.md`](../../tracks/implementation/worked-example-template-vs-path.md)（不变量 288）。看见一条派生路径不是已经是一份路径模板。看见写死了熟路径检查不是已经能互操作。看见完整模板不是已经是半截模板。
 
+精读：[`../../tracks/implementation/worked-example-delegation-vs-xpub.md`](../../tracks/implementation/worked-example-delegation-vs-xpub.md)（不变量 289）。看见共享了扩展公钥不是已经是链码委托。看见委托方那把非扩展钥不是已经能推出整棵钱包。看见这一输入的微调不是已经是盲签。
+
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
 精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。

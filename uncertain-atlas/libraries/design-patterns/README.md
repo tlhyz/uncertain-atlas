@@ -186,3 +186,4 @@
 - [name-the-derived-entropy](name-the-derived-entropy.md)
 - [name-the-secure-setup](name-the-secure-setup.md)
 - [name-the-path-template](name-the-path-template.md)
+- [name-the-chaincode-delegation](name-the-chaincode-delegation.md)
