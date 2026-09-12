@@ -62,3 +62,4 @@
 - [uri-fetch-sold-as-verify](uri-fetch-sold-as-verify.md)
 - [apphash-sold-as-proposer](apphash-sold-as-proposer.md)
 - [extension-path-sold-as-checked](extension-path-sold-as-checked.md)
+- [enable-height-sold-as-safe](enable-height-sold-as-safe.md)

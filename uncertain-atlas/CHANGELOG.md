@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 59）
+
+- 博物馆 ASA-2024-001 / GHSA-qr8r-m495-7hc4（High）：ABCI2 链上治理改 `VoteExtensionsEnableHeight`，当时验证处理不了这次提案，节点可能 panic，网络停。
+- 修法是改进该参数在治理路径上的验证。软补丁超过 66.7% 投票权只缓解本条利用。
+- 不变量 58；语料 C62；反模式 enable-height-sold-as-safe；L10.3 第 54 条。
+- 对照不变量 34（拒扩展丢票）、57（快路径下标）、35（集合延迟）。咨询未给 CVE。
+- 不写提案怎么拼；不发明具体漏检行；不抄 66.7% 当法定人数。
+
 ## 2026-09-12（续 58）
 
 - 博物馆 ASA-2024-011 / GHSA-p7mv-53f2-4cwj（High）：启用扩展时，Precommit 非空的扩展处理插在普通 Vote 验证之前，不复查 `ValidatorIndex`，接收节点 panic。
