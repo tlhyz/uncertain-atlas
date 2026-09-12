@@ -26,6 +26,7 @@
 - [`worked-example-dummy-vs-empty.md`](worked-example-dummy-vs-empty.md) — 多余栈元素 ≠ 已经随便填；隔离见证 ≠ 已经没有这条延展；策略已经要空 dummy ≠ 已经是共识（不变量 264）
 - [`worked-example-signet-vs-testnet.md`](worked-example-signet-vs-testnet.md) — signet ≠ 已经是 testnet；signet ≠ 已经是 regtest；头上有合法工作量 ≠ 已经签过（不变量 265）
 - [`worked-example-purpose-vs-compatible.md`](worked-example-purpose-vs-compatible.md) — BIP32 compatible ≠ 已经能互操作；自称 BIPxx compatible ≠ 已经是那份结构；同一套扩展钥前缀 ≠ 已经是比特币专用（不变量 266）
+- [`worked-example-account-vs-discovered.md`](worked-example-account-vs-discovered.md) — 同一份种子 ≠ 已经是同一条币；下一个账户号 ≠ 已经有过往；余额为零 ≠ 已经发现完（不变量 267）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）

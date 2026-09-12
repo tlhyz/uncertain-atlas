@@ -269,3 +269,4 @@
 - [dummy-sold-as-unused](dummy-sold-as-unused.md)
 - [signet-sold-as-testnet](signet-sold-as-testnet.md)
 - [purpose-sold-as-compatible](purpose-sold-as-compatible.md)
+- [account-sold-as-discovered](account-sold-as-discovered.md)
