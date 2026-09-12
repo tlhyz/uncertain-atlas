@@ -64,4 +64,5 @@
 
 写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)  
 五层对照精读：[`worked-example-five-layers.md`](worked-example-five-layers.md)（同一通胀案，五层各说什么）。  
+停链面地图：[`worked-example-halt-surfaces.md`](worked-example-halt-surfaces.md)（「停链」不是一种事故；只指向已归档页）。  
 回流测试目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。

@@ -104,6 +104,12 @@ CVE / 官方安全披露 / 规范补丁 / 核心开发公告 > 审计 > 事后�
 - ASA-2024-010：Int/Dec 位宽对不齐不是已对齐的数；Dec 进 Int 不得 panic。
 - ISA-2025-001 / ASA-2025-004：跨链确认的 JSON 反序列化不是已经确定；能开通道的用户可停链。
 - ASA-2024-007：超时回调里再跑超时不是 ICS-20 已经原子；承诺未删不得重入。  
+- Dragonberry：ICS-23 验绿不是叶子已在原树；+⅓ 打补丁变成可见停，不是 soundness 已齐。  
+- ASA-2023-001：升级高度上的进程管理器不是可信的下载通道。  
+- Elderflower：授权代发漏掉 ValidateBasic 不是内层已认证。  
+- Jackfruit：ValidateBasic 读本地钟不是已经确定。  
+- Barberry：空地址不是还没有账户类型；锁钱不是停链。  
+- 停链面：[`../../tracks/failure-museum/worked-example-halt-surfaces.md`](../../tracks/failure-museum/worked-example-halt-surfaces.md)——「停链」不是一种事故。  
 - CVE-2024-52922：宣布新块后单一对等节点卡住传播。  
 - CVE-2024-35202：部分块重建失败后第二次 `blocktxn` 断言崩。  
 - CVE-2024-52921：未请求变异块清掉其他对等节点的下载状态。  
@@ -156,4 +162,4 @@ Level 10 的 invariant 库只收能回流测试的句子。
 | 经济 | 「出过事故所以架构不行」是假句 |
 
 **禁止假学习：** 「出过事故所以架构不行。」「没出事故所以架构对。」  
-**边界：** 本课不新增未核验事故。回流目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。五层对照：[`../../tracks/failure-museum/worked-example-five-layers.md`](../../tracks/failure-museum/worked-example-five-layers.md)。
+**边界：** 本课不新增未核验事故。回流目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。五层对照：[`../../tracks/failure-museum/worked-example-five-layers.md`](../../tracks/failure-museum/worked-example-five-layers.md)。停链面：[`../../tracks/failure-museum/worked-example-halt-surfaces.md`](../../tracks/failure-museum/worked-example-halt-surfaces.md)。

@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 85）
+
+- 停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`。不新增事故，只把已归档的停拆开。
+- 「停链」不是一种事故。说明书停（73）≠ EndBlocker 错（71）≠ 溢出停（74）≠ 空户口（75）≠ 非确定（77/82）≠ 版本差（79/83 运维句）。锁钱不是停。
+- 不变量 84；语料 C88；反模式 halt-sold-as-one-kind；L10.3 第 80 条。
+- Huckleberry：ibc-go 官方 GHSA 404，不靠第三方 vuln DB 补写。cosmos/security ASA 表里能独立成句的均已归档。
+
 ## 2026-09-12（续 84）
 
 - 博物馆 Barberry / GHSA-j2cr-jc39-wpx5（徽章 Moderate；论坛 high-severity）：攻击者可把受害者账户初始化成恶意定期归属，允许存款不允许取款，入金被永久锁住。
