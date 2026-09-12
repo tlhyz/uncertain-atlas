@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 364）
+
+- CometBFT Finalize 回包义务工作实例（官方 ABCI++ Methods FinalizeBlock Usage，实现 / Finalize 回包义务，不另写 19 节）：看见 Finalize 等价于 ABCI 1.0 那三步不是已经是四门已经结算。看见可以用 decided_last_commit 和 misbehavior 定奖惩不是已经罚没。看见必须回四列不是已经改了集合。Finalize 回包义务不是不变量 33，也不是不变量 21，也不是不变量 318。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 363；语料 C367；模式 name-the-finalize-equiv；反模式 finalizeequiv-sold-as-gates；L10.3 第 359 条。填 L4.4 / CometBFT 档案 Finalize 回包义务 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 回包、怎样算奖惩、怎样填四列。不编博物馆页。不另写 19 节。不与 33 / 21 / 318 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。四门、证据上链、集合更新标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 363）
 
 - CometBFT Finalize 何时调用工作实例（官方 ABCI++ Methods FinalizeBlock When，实现 / Finalize 何时调用，不另写 19 节）：看见 +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize。看见先把 v 落成这一高的决定再同步调 Finalize 不是已经交差。看见应用回了 AppHash 和各笔输出不是已经印进本头。Finalize 何时调用不是不变量 361，也不是不变量 335，也不是不变量 147。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -65,6 +65,7 @@
 - [`worked-example-finalize-vs-processed.md`](worked-example-finalize-vs-processed.md) — 至少一名非拜占庭验证者跑过 Process ≠ 已经每个验证者都跑过 Process；Finalize 请求把字段再填一遍 ≠ 已经不用再给；可以套用先前候选 ≠ 已经是 ExecuteTxState（不变量 360）
 - [`worked-example-extend-when-vs-locked.md`](worked-example-extend-when-vs-locked.md) — +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote ≠ 已经会调 ExtendVote；ExtendVote 调用是同步的 ≠ 已经能在返回之后再改扩展；回包字节不被共识算法解释 ≠ 已经是同一份扩展（不变量 361）
 - [`worked-example-finalize-when-vs-decided.md`](worked-example-finalize-when-vs-decided.md) — +2/3 precommit 同一 id(v) 才决定再调 Finalize ≠ 已经会调 Finalize；先把 v 落成这一高的决定再调 Finalize ≠ 已经交差；应用回了 AppHash 和各笔输出 ≠ 已经印进本头（不变量 362）
+- [`worked-example-finalize-equiv-vs-gates.md`](worked-example-finalize-equiv-vs-gates.md) — Finalize 等价于 ABCI 1.0 那三步 ≠ 已经是四门已经结算；可以用 decided_last_commit 定奖惩 ≠ 已经罚没；必须回四列 ≠ 已经改了集合（不变量 363）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

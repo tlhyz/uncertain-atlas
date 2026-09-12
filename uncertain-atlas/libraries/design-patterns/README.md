@@ -260,3 +260,4 @@
 - [name-the-finalize-processed](name-the-finalize-processed.md)
 - [name-the-extend-when](name-the-extend-when.md)
 - [name-the-finalize-when](name-the-finalize-when.md)
+- [name-the-finalize-equiv](name-the-finalize-equiv.md)

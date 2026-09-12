@@ -137,6 +137,8 @@ Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process：[`../
 
 +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize：[`../../tracks/implementation/worked-example-finalize-when-vs-decided.md`](../../tracks/implementation/worked-example-finalize-when-vs-decided.md)（不变量 362）。看见先把 v 落成这一高的决定再同步调 Finalize 不是已经交差。看见应用回了 AppHash 和各笔输出不是已经印进本头。
 
+Finalize 等价于 ABCI 1.0 那三步不是已经是四门已经结算：[`../../tracks/implementation/worked-example-finalize-equiv-vs-gates.md`](../../tracks/implementation/worked-example-finalize-equiv-vs-gates.md)（不变量 363）。看见可以用 decided_last_commit 和 misbehavior 定奖惩不是已经罚没。看见必须回四列不是已经改了集合。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

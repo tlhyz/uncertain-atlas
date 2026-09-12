@@ -3786,6 +3786,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1747 | 高 | 看见应用回了 AppHash 和各笔输出、引擎把输出哈希进 ResultHash / 看见回了 会被写成已经印进本头，或当成已经是本头 AppHash | 官方：应用回 AppHash 和各笔输出后，引擎把这些输出哈希进 ResultHash |
 | A1748 | 中 | 怎样写 Finalize 何时调用 / 怎样落决定 / 怎样算 ResultHash 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1749 | 记录 | 会与 361 / 335 / 147 糊成「看见到了这一高就已经会调 Finalize」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。ExtendVote 何时调用 / Finalize 落盘禁令 / 本头 AppHash 标成另一对象 |
+| A1750 | 高 | 看见 Finalize 等价于 ABCI 1.0 的 BeginBlock / DeliverTx / EndBlock / 看见收成一门 会被写成已经是四门已经结算，或当成已经交差 | 工作实例：abci++_methods FinalizeBlock Usage 官方写这个方法等价于 ABCI 1.0 里 BeginBlock、DeliverTx、EndBlock 那一串调用 |
+| A1751 | 高 | 看见可以用 decided_last_commit 和 misbehavior 定奖惩 / 看见有上一份 commit 会被写成已经罚没，或当成已经是本头 LastCommit 就已经是本高 +2/3 | 官方：应用可以用这两列来定验证者的奖惩 |
+| A1752 | 高 | 看见必须回 app_hash / tx_results / validator_updates / consensus_param_updates / 看见回了四列 会被写成已经改了集合，或当成已经交差 | 官方：执行完这块必须给这四列提供值 |
+| A1753 | 中 | 怎样写 Finalize 回包 / 怎样算奖惩 / 怎样填四列会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1754 | 记录 | 会与 33 / 21 / 318 糊成「看见收成一门就已经是四门已经结算」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包义务 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。四门 / 证据上链 / 集合更新标成另一对象 |
 
 
 
