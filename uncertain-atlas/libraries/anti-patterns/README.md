@@ -79,3 +79,5 @@
 - [redelegate-sold-as-wash](redelegate-sold-as-wash.md)
 - [halt-msg-sold-as-halt](halt-msg-sold-as-halt.md)
 - [pool-overflow-sold-as-amount-only](pool-overflow-sold-as-amount-only.md)
+- [blocked-sold-as-initialized](blocked-sold-as-initialized.md)
+- [intdec-sold-as-aligned](intdec-sold-as-aligned.md)

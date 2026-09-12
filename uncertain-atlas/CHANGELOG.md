@@ -2,6 +2,20 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 77）
+
+- 博物馆 ASA-2024-010 / GHSA-7225-m954-23v7（High）：`sdk.Int` 与 `sdk.Dec` 位宽不对齐，Dec 进 Int 可能 panic。
+- 官方：1.3.0→1.4.0 可只改依赖、不必硬分叉；低于 1.3.0 升到 >=1.3.0 须先协调升级。
+- 不变量 76；语料 C80；反模式 intdec-sold-as-aligned；L10.3 第 72 条。
+- 对照不变量 7 / 51 / 74。不写位宽数字。不把 IBC-Go / tokenfactory 写成不确定已选。
+
+## 2026-09-12（续 76）
+
+- 博物馆 ASA-2024-003 / GHSA-4j93-fm92-rp4m（正文 Low，徽章 Moderate）：可在被挡地址上建定期归属账户，例如未初始化模块账户。
+- 该账户若被 Begin/EndBlock 的 `GetModuleAccount` 叫到，可能停链。附录：authz / feegrant 变体。
+- 不变量 75；语料 C79；反模式 blocked-sold-as-initialized；L10.3 第 71 条。
+- 对照不变量 71 / 73 / 74。不写怎样挂归属。不把「并不常见」写成已安全。
+
 ## 2026-09-12（续 75）
 
 - 博物馆 ISA-2025-005 / GHSA-p22h-3m2v-cmgh（High）：向 Validator Rewards pool 恶意存款可导致整数溢出并停链。

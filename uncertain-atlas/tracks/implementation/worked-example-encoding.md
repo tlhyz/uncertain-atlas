@@ -51,7 +51,8 @@ Client_A.Apply(S,B) .root = Client_B.Apply(S,B) .root
 ```
 
 后量子签名结构更肥，前导零/长度字段更多。编码测试与验签配额一起写。  
-外层交易够短 ≠ 嵌套解码已有界：见 [ASA-2024-0012 / 0013](../failure-museum/asa-2024-0012.md)。
+外层交易够短 ≠ 嵌套解码已有界：见 [ASA-2024-0012 / 0013](../failure-museum/asa-2024-0012.md)。  
+Int/Dec 能转 ≠ 位宽已齐：见 [ASA-2024-010](../failure-museum/asa-2024-010.md)。
 
 ---
 

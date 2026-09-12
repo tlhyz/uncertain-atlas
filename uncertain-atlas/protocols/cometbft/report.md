@@ -189,6 +189,8 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 已收应用侧：[ASA-2024-005](../../tracks/failure-museum/asa-2024-005.md) — 再委托不是待执行罚没的洗白。  
 已收应用侧：[x/crisis](../../tracks/failure-museum/x-crisis-no-halt.md) — 停链交易不是链已经停；官方不修。  
 已收应用侧：[ISA-2025-005](../../tracks/failure-museum/isa-2025-005.md) — 奖励池入金溢出不是只是金额算错。  
+已收应用侧：[ASA-2024-003](../../tracks/failure-museum/asa-2024-003.md) — 未初始化的被挡账户不是可归属的地址。  
+已收应用侧：[ASA-2024-010](../../tracks/failure-museum/asa-2024-010.md) — Int/Dec 位宽对不齐不是已对齐的数。  
 **待补：** 其它案必须链到官方 postmortem 或安全公告。  
 方向：halt（活性）、应用非确定性导致的分裂。
 
