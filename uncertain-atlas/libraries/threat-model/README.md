@@ -363,6 +363,7 @@
 | 354 | Prepare 请求字段被写成已经跑过 Process | 协议 + 文案 | 看见 Prepare 和 Process / Finalize 同一套字段 / local_last_commit 是上一高度的预提交带扩展 / height / time / proposer_address 对上拟议头 / Prepare 请求字段当成已经跑过 Process 或已经是本高度刚签的扩展或已经知道本头哈希 | 不变量 359；语料 C363 |
 | 355 | Finalize 时的 Process 保证被写成已经每个验证者都跑过 Process | 协议 + 文案 | 看见至少一名非拜占庭验证者跑过 Process / Finalize 请求把字段再填一遍 / 可以套用先前候选 / Finalize 时的 Process 保证当成已经每个验证者都跑过 Process 或已经不用再给或已经是 ExecuteTxState | 不变量 360；语料 C364 |
 | 356 | ExtendVote 何时调用被写成已经会调 ExtendVote | 协议 + 文案 | 看见 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote / ExtendVote 调用是同步的 / 回包字节不被共识算法解释 / ExtendVote 何时调用当成已经会调 ExtendVote 或已经能在返回之后再改扩展或已经是同一份扩展 | 不变量 361；语料 C365 |
+| 357 | Finalize 何时调用被写成已经会调 Finalize | 协议 + 文案 | 看见 +2/3 precommit 同一 id(v) 才决定再调 Finalize / 先把 v 落成这一高的决定再调 Finalize / 应用回了 AppHash 和各笔输出 / Finalize 何时调用当成已经会调 Finalize 或已经交差或已经印进本头 | 不变量 362；语料 C366 |
 
 ## 不自动覆盖
 

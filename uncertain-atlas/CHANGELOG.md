@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 363）
+
+- CometBFT Finalize 何时调用工作实例（官方 ABCI++ Methods FinalizeBlock When，实现 / Finalize 何时调用，不另写 19 节）：看见 +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize。看见先把 v 落成这一高的决定再同步调 Finalize 不是已经交差。看见应用回了 AppHash 和各笔输出不是已经印进本头。Finalize 何时调用不是不变量 361，也不是不变量 335，也不是不变量 147。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 362；语料 C366；模式 name-the-finalize-when；反模式 finalizewhen-sold-as-decided；L10.3 第 358 条。填 L4.4 / CometBFT 档案 Finalize 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 何时调用、怎样落决定、怎样算 ResultHash。不编博物馆页。不另写 19 节。不与 361 / 335 / 147 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。ExtendVote 何时调用、Finalize 落盘禁令、本头 AppHash 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 362）
 
 - CometBFT ExtendVote 何时调用工作实例（官方 ABCI++ Methods ExtendVote When，实现 / ExtendVote 何时调用，不另写 19 节）：看见 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote。看见 ExtendVote 调用是同步的不是已经能在返回之后再改扩展。看见回包字节不被共识算法解释不是已经是同一份扩展。ExtendVote 何时调用不是不变量 350，也不是不变量 354，也不是不变量 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

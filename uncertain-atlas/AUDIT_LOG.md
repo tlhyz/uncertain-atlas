@@ -3781,6 +3781,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1742 | 高 | 看见应用回了一串字节、共识算法不解释 / 看见回了 extension 会被写成已经是同一份扩展，或当成已经包进 CanonicalVoteExtension | 官方：应用回一份字节数组，共识算法不解释 |
 | A1743 | 中 | 怎样写 ExtendVote 何时调用 / 怎样锁住 / 怎样选空会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1744 | 记录 | 会与 350 / 354 / 358 糊成「看见到了 prevote 步就已经会调 ExtendVote」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。一轮一份扩展 / Process 同步 / 两份扩展两份签标成另一对象 |
+| A1745 | 高 | 看见收到提案和全部块片、并且 +2/3 precommit 同一 id(v) 才决定再调 Finalize / 看见到了这一高 会被写成已经会调 Finalize，或当成已经是 +2/3 prevote 才锁住再调 ExtendVote | 工作实例：abci++_methods FinalizeBlock When 官方写收到提案和全部块片并且 +2/3 precommit 同一 id(v) 才决定再调 FinalizeBlock |
+| A1746 | 高 | 看见先把 v 落成这一高的决定、再同步调 Finalize / 看见决定了 会被写成已经交差，或当成已经落盘应用状态 | 官方：先把 v 落成高度 h 的决定，再同步调 FinalizeBlock |
+| A1747 | 高 | 看见应用回了 AppHash 和各笔输出、引擎把输出哈希进 ResultHash / 看见回了 会被写成已经印进本头，或当成已经是本头 AppHash | 官方：应用回 AppHash 和各笔输出后，引擎把这些输出哈希进 ResultHash |
+| A1748 | 中 | 怎样写 Finalize 何时调用 / 怎样落决定 / 怎样算 ResultHash 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1749 | 记录 | 会与 361 / 335 / 147 糊成「看见到了这一高就已经会调 Finalize」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 何时调用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。ExtendVote 何时调用 / Finalize 落盘禁令 / 本头 AppHash 标成另一对象 |
 
 
 

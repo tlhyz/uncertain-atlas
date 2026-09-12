@@ -135,6 +135,8 @@ Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process：[`../
 
 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote：[`../../tracks/implementation/worked-example-extend-when-vs-locked.md`](../../tracks/implementation/worked-example-extend-when-vs-locked.md)（不变量 361）。看见 ExtendVote 调用是同步的不是已经能在返回之后再改扩展。看见回包字节不被共识算法解释不是已经是同一份扩展。
 
++2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize：[`../../tracks/implementation/worked-example-finalize-when-vs-decided.md`](../../tracks/implementation/worked-example-finalize-when-vs-decided.md)（不变量 362）。看见先把 v 落成这一高的决定再同步调 Finalize 不是已经交差。看见应用回了 AppHash 和各笔输出不是已经印进本头。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。
