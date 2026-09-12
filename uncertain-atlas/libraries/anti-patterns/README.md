@@ -187,3 +187,4 @@
 - [xpub-sold-as-spendable](xpub-sold-as-spendable.md)
 - [mnemonic-sold-as-seed](mnemonic-sold-as-seed.md)
 - [keys-sold-as-scripts](keys-sold-as-scripts.md)
+- [returned-sold-as-initcode](returned-sold-as-initcode.md)

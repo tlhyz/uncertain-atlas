@@ -82,3 +82,4 @@
 - [name-the-extended-key](name-the-extended-key.md)
 - [name-the-mnemonic-seed](name-the-mnemonic-seed.md)
 - [name-the-descriptor](name-the-descriptor.md)
+- [name-the-deployed-bound](name-the-deployed-bound.md)
