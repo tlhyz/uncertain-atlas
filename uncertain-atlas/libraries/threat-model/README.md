@@ -391,6 +391,7 @@
 | 382 | InitChain 请求被写成已经过了 genesis_time | 协议 + 文案 | 看见 InitChain 请求 time 是创世时间 / InitChain 请求 chain_id 是链的 ID / InitChain 请求 initial_height 是起步块高度 / InitChain 请求当成已经过了 genesis_time或已经有了 ChainID或已经能跳步 | 不变量 387；语料 C391 |
 | 383 | InitChain 请求余栏被写成已经没有参数 | 协议 + 文案 | 看见 InitChain 请求 consensus_params 是起步共识参数 / InitChain 请求 validators 是起步验证者名单 / InitChain 请求 app_state_bytes 是序列化起步应用状态 / InitChain 请求余栏当成已经没有参数或已经没有集合或已经验过应用状态 | 不变量 388；语料 C392 |
 | 384 | Info 回包余栏被写成已经是握手对齐 | 协议 + 文案 | 看见 Info 回包 data 是任意信息 / Info 回包 version 是应用软件语义版本 / Query 回包 codespace 是码的命名空间 / Info 回包余栏当成已经是握手对齐或已经是 app_version或已经是 CheckTx 码空间 | 不变量 389；语料 C393 |
+| 385 | ProofOp 键被写成已经是 Query 回包键 | 协议 + 文案 | 看见 ProofOp.key 是这棵默克尔树里这把键 / ProofOp.data 是这把键的编码证明 / CheckTx 回包 log 是应用日志输出 / ProofOp 键当成已经是 Query 回包键或已经是 proof_ops或已经是 Query 日志 | 不变量 390；语料 C394 |
 
 ## 不自动覆盖
 

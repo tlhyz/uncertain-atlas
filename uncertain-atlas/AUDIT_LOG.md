@@ -3921,6 +3921,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1882 | 高 | 看见 Query 回包 codespace 是码的命名空间 / 看见写了空间会被写成已经是 CheckTx 码空间，或当成已经是回包码 | 官方：codespace is Namespace for the code |
 | A1883 | 中 | 怎样写 Info 回包余栏 / 怎样填任意信息 / 怎样填应用版本会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1884 | 记录 | 会与 370 / 379 / 381 糊成「看见回了 Info 余栏就已经是握手对齐」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 回包余栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。握手对齐 / 请求版本 / CheckTx 码空间标成另一对象 |
+| A1885 | 高 | 看见 ProofOp.key 是这棵默克尔树里这把键 / 看见填了 key 会被写成已经是 Query 回包键，或当成已经是 ProofOp 类型 | 工作实例：abci++_methods ProofOp 官方写 key is Key in the Merkle tree that this proof is for |
+| A1886 | 高 | 看见 ProofOp.data 是这把键的编码证明 / 看见填了 data 会被写成已经是 proof_ops，或当成已经对上最终 AppHash | 官方：data is Encoded Merkle proof for the key |
+| A1887 | 高 | 看见 CheckTx 回包 log 是应用日志输出 / 看见回了日志会被写成已经是 Query 日志，或当成已经被引擎用了 Data | 官方：log is The output of the application's logger |
+| A1888 | 中 | 怎样写 ProofOp 键 / 怎样填 key / 怎样编 data会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1889 | 记录 | 会与 325 / 380 / 384 糊成「看见填了 ProofOp 键就已经是 Query 回包键」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProofOp 键 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。查询证明 / 回包键值 / Query 日志标成另一对象 |
 
 
 

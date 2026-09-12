@@ -404,6 +404,7 @@
 | C391 | 387 InitChain请求time是创世时间≠已经过了genesis_time | 文案把 InitChain 请求 time 是创世时间 / 填了 time 写成已经过了 genesis_time 或已经开出块；或把 InitChain 请求 chain_id 是链的 ID / 填了 chain_id 写成已经有了 ChainID 或已经有完整历史；或把 InitChain 请求 initial_height 是起步块高度 / 填了起步高写成已经能跳步或已经过了崩溃三步；或把 InitChain 请求写成不变量 303 / 323 / 320 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C392 | 388 InitChain请求consensus_params是起步共识参数≠已经没有参数 | 文案把 InitChain 请求 consensus_params 是起步共识参数 / 填了起步参数写成已经没有参数或已经用了回包空参数；或把 InitChain 请求 validators 是起步验证者名单 / 填了起步名单写成已经没有集合或已经用了回包空名单；或把 InitChain 请求 app_state_bytes 是序列化起步应用状态 / 填了 JSON 字节写成已经验过应用状态或已经懂余额；或把 InitChain 请求余栏写成不变量 319 / 318 / 303 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C393 | 389 Info回包data是任意信息≠已经是握手对齐 | 文案把 Info 回包 data 是任意信息 / 回了 data 写成已经是握手对齐或已经是快照重放；或把 Info 回包 version 是应用软件语义版本 / 回了应用版本写成已经是 app_version 或已经印进本头 AppHash；或把 Query 回包 codespace 是码的命名空间 / 写了空间写成已经是 CheckTx 码空间或已经是回包码；或把 Info 回包余栏写成不变量 370 / 379 / 381 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C394 | 390 ProofOp.key是这棵默克尔树里这把键≠已经是Query回包键 | 文案把 ProofOp.key 是这棵默克尔树里这把键 / 填了 key 写成已经是 Query 回包键或已经是 ProofOp 类型；或把 ProofOp.data 是这把键的编码证明 / 填了 data 写成已经是 proof_ops 或已经对上最终 AppHash；或把 CheckTx 回包 log 是应用日志输出 / 回了日志写成已经是 Query 日志或已经被引擎用了 Data；或把 ProofOp 键写成不变量 325 / 380 / 384 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

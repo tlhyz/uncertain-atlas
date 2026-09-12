@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 391）
+
+- CometBFT ProofOp 键工作实例（官方 ABCI++ Methods ProofOp / CheckTx Response，实现 / ProofOp 键，不另写 19 节）：看见 ProofOp.key 是这棵默克尔树里这把键不是已经是 Query 回包键。看见 ProofOp.data 是这把键的编码证明不是已经是 proof_ops。看见 CheckTx 回包 log 是应用日志输出不是已经是 Query 日志。ProofOp 键不是不变量 325，也不是不变量 380，也不是不变量 384。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 390；语料 C394；模式 name-the-proofop-key；反模式 proofop-sold-as-key；L10.3 第 386 条。填 L4.4 / CometBFT 档案 ProofOp 键 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ProofOp 键、怎样填 key、怎样编 data。不编博物馆页。不另写 19 节。不与 325 / 380 / 384 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。查询证明、回包键值、Query 日志标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 390）
 
 - CometBFT Info 回包余栏工作实例（官方 ABCI++ Methods Info Response / Query Response，实现 / Info 回包余栏，不另写 19 节）：看见 Info 回包 data 是任意信息不是已经是握手对齐。看见 Info 回包 version 是应用软件语义版本不是已经是 app_version。看见 Query 回包 codespace 是码的命名空间不是已经是 CheckTx 码空间。Info 回包余栏不是不变量 370，也不是不变量 379，也不是不变量 381。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

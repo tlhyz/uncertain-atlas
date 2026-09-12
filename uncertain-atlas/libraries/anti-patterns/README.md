@@ -392,3 +392,4 @@
 - [inittime-sold-as-genesis](inittime-sold-as-genesis.md)
 - [initparams-sold-as-empty](initparams-sold-as-empty.md)
 - [infodata-sold-as-appversion](infodata-sold-as-appversion.md)
+- [proofop-sold-as-key](proofop-sold-as-key.md)

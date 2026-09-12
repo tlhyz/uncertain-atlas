@@ -92,6 +92,7 @@
 - [`worked-example-inittime-vs-genesis.md`](worked-example-inittime-vs-genesis.md) — InitChain 请求 time 是创世时间 ≠ 已经过了 genesis_time；InitChain 请求 chain_id 是链的 ID ≠ 已经有了 ChainID；InitChain 请求 initial_height 是起步块高度 ≠ 已经能跳步（不变量 387）
 - [`worked-example-initparams-vs-empty.md`](worked-example-initparams-vs-empty.md) — InitChain 请求 consensus_params 是起步共识参数 ≠ 已经没有参数；InitChain 请求 validators 是起步验证者名单 ≠ 已经没有集合；InitChain 请求 app_state_bytes 是序列化起步应用状态 ≠ 已经验过应用状态（不变量 388）
 - [`worked-example-infodata-vs-appversion.md`](worked-example-infodata-vs-appversion.md) — Info 回包 data 是任意信息 ≠ 已经是握手对齐；Info 回包 version 是应用软件语义版本 ≠ 已经是 app_version；Query 回包 codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 389）
+- [`worked-example-proofop-vs-key.md`](worked-example-proofop-vs-key.md) — ProofOp.key 是这棵默克尔树里这把键 ≠ 已经是 Query 回包键；ProofOp.data 是这把键的编码证明 ≠ 已经是 proof_ops；CheckTx 回包 log 是应用日志输出 ≠ 已经是 Query 日志（不变量 390）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
