@@ -111,6 +111,8 @@ MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交�
 
 Prepare 不得改已提交状态不是已经立刻执行就已经交差：[`../../tracks/implementation/worked-example-req9-noside-vs-commit.md`](../../tracks/implementation/worked-example-req9-noside-vs-commit.md)（不变量 349）。看见 Process 不得改已提交状态不是已经 Accept 就已经改了。看见 Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态。
 
+一轮最多一张 Precommit 不是已经能再签一张：[`../../tracks/implementation/worked-example-extend-once-vs-round.md`](../../tracks/implementation/worked-example-extend-once-vs-round.md)（不变量 350）。看见 ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票。看见一轮只能交出一份扩展不是已经是每一高度一份。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 351）
+
+- CometBFT 一轮一份扩展工作实例（官方 Requirements for the Application Formal Requirements，Requirement 6 之前，实现 / 一轮一份扩展，不另写 19 节）：看见一轮最多一张 Precommit 不是已经能再签一张。看见 ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票。看见一轮只能交出一份扩展不是已经是每一高度一份。一轮一份扩展不是不变量 34，也不是不变量 338，也不是不变量 348。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 350；语料 C354；模式 name-the-extend-once；反模式 extendonce-sold-as-height；L10.3 第 346 条。填 L4.4 / CometBFT 档案一轮一份扩展 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendVote、怎样选空扩展、怎样测一轮一份。不编博物馆页。不另写 19 节。不与 34 / 338 / 348 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。拒收整张预提交、同一块同一份扩展、Req 6 必须 Accept 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 350）
 
 - CometBFT 四门无副作用工作实例（官方 Requirements for the Application Formal Requirement 9 [*all*, no-side-effects]，实现 / 四门无副作用，不另写 19 节）：看见 Prepare 不得改已提交状态不是已经立刻执行就已经交差。看见 Process 不得改已提交状态不是已经 Accept 就已经改了。看见 Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态。四门无副作用不是不变量 33，也不是不变量 311，也不是不变量 34。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

@@ -247,3 +247,4 @@
 - [name-the-req3-coherence](name-the-req3-coherence.md)
 - [name-the-req6-coherence](name-the-req6-coherence.md)
 - [name-the-req9-noside](name-the-req9-noside.md)
+- [name-the-extend-once](name-the-extend-once.md)
