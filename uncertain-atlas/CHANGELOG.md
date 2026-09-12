@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 309）
+
+- CometBFT 反应堆查询工作实例（官方 API for Reactors，网络 / 反应堆查询，不另写 19 节）：看见 NumPeers 不是已经数完所有邻居。看见能按名字拿到反应堆不是已经独立。看见 PeerState 不是已经验过高度。反应堆查询不是不变量 306，也不是不变量 305，也不是不变量 67。出处 github.com/cometbft/cometbft spec/p2p/reactor-api/p2p-api.md。
+- 不变量 308；语料 C312；模式 name-the-numpeers；反模式 numpeers-sold-as-all；L10.3 第 304 条。填 L9.1 / CometBFT 档案反应堆查询 / 网络表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄好邻居票数、块片段数、发送超时秒数、通道号。不写怎样实现 SwitchToConsensus、怎样配无条件名单、怎样读写 KV。不编博物馆页。不另写 19 节。不与 306 / 305 / 67 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。句柄 / InitPeer 时序 / 入站配额标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 308）
 
 - CometBFT ABCI 传输工作实例（官方 Client and Server，实现 / ABCI 传输，不另写 19 节）：看见同进程不是已经有套接字隔离。看见 gRPC 最容易不是已经高性能。看见一条连接不是已经够用，也不是已经是四门。ABCI 传输不是不变量 33，也不是不变量 5，也不是不变量 52。出处 github.com/cometbft/cometbft spec/abci/abci++_client_server.md。

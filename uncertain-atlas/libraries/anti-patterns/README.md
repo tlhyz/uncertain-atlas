@@ -310,3 +310,4 @@
 - [initpeer-sold-as-added](initpeer-sold-as-added.md)
 - [handler-sold-as-node](handler-sold-as-node.md)
 - [conn-sold-as-gates](conn-sold-as-gates.md)
+- [numpeers-sold-as-all](numpeers-sold-as-all.md)

@@ -205,3 +205,4 @@
 - [name-the-init-peer](name-the-init-peer.md)
 - [name-the-peer-handler](name-the-peer-handler.md)
 - [name-the-abci-conn](name-the-abci-conn.md)
+- [name-the-numpeers](name-the-numpeers.md)
