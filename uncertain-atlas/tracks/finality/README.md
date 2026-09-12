@@ -5,7 +5,8 @@
 弱主观性：[`worked-example-weak-subjectivity.md`](worked-example-weak-subjectivity.md)（finalized ≠ 从创世同步同样安全）。  
 三等确认：[`worked-example-head-vs-justified-vs-finalized.md`](worked-example-head-vs-justified-vs-finalized.md)（head ≠ justified ≠ finalized；`safe` ≠ 官方已经写成 justified）。  
 处理完一块 ≠ 已经改规范头：[`worked-example-processed-vs-forkchoice.md`](worked-example-processed-vs-forkchoice.md)（不变量 149；Engine API `VALID` ≠ 已经是头，也 ≠ 已经 finalized）。
-看见头里的请求承诺 ≠ 已经由共识层处理完：[`worked-example-request-vs-action.md`](worked-example-request-vs-action.md)（不变量 192；请求 ≠ 已经有权单独促成动作）。  
+看见头里的请求承诺 ≠ 已经由共识层处理完：[`worked-example-request-vs-action.md`](worked-example-request-vs-action.md)（不变量 192；请求 ≠ 已经有权单独促成动作）。
+委员会下标被挪出签名 ≠ 已经没有委员会：[`worked-example-committee-index-vs-signed.md`](worked-example-committee-index-vs-signed.md)（不变量 198；分叉后第一块可以没有证明 ≠ 已经没有 LMD 票）。  
 终局推迟 ≠ 停链，leak ≠ slash：[`worked-example-inactivity-leak.md`](worked-example-inactivity-leak.md)（不变量 130）。  
 抽样 α 多数 ≠ 可转发 QC：[`../consensus/worked-example-snow-sample-vs-qc.md`](../consensus/worked-example-snow-sample-vs-qc.md)（不变量 131）。  
 PoH 槽钟 ≠ Tower 票：[`../consensus/worked-example-poh-vs-tower.md`](../consensus/worked-example-poh-vs-tower.md)（不变量 133）。`processed` ≠ `confirmed` ≠ `finalized`。  

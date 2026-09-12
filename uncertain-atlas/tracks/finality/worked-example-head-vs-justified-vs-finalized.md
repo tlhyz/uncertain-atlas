@@ -103,6 +103,7 @@
 5. **NEAR 两枚最终标记**（不变量 135）：Doomslug / `near-final` vs Nomicon BFT 谓词 / `final`。本页是 head / justified / finalized。精读：[`worked-example-doomslug-vs-bft.md`](worked-example-doomslug-vs-bft.md)。
 6. **每高度 commit**（L4.6）：CometBFT 同路径。本页官方写：升级不在每个 slot 发生。
 7. **L2 档 ≠ L1**（不变量 138）：`PRE_CONFIRMED` / `ACCEPTED_ON_L2` / `ACCEPTED_ON_L1`。本页是 L1 Gasper 三等。精读：[`worked-example-l2-status-vs-l1.md`](worked-example-l2-status-vs-l1.md)。
+8. **委员会下标 ≠ 已签进投票**（不变量 198）：证明容器怎么签名。本页是用户看见的三等灯。精读：[`worked-example-committee-index-vs-signed.md`](worked-example-committee-index-vs-signed.md)。
 
 不要把槽秒数、epoch 长度、押金、美元、罚没日程、inactivity 连续个数、聚合人数抄进不确定常量。也不要写怎样让 justified 回滚。不编博物馆页。
 
