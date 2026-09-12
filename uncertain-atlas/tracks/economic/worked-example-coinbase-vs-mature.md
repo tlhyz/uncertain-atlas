@@ -90,8 +90,9 @@
 4. **Zcash 正余额 ≠ 能重启**（不变量 109）：屏蔽池记账。本页是 Bitcoin 花不花。
 5. **非 chain block 的 coinbase**（不变量 137）：Kaspa 稳定后无效。本页是 Bitcoin 最重链上的年龄。
 6. **高度 ≠ 已在头上**（不变量 173）：coinbase 第一项写高度。本页是能不能花。
+7. **Ethereum 出块者开跑已热 ≠ 本页成熟**（不变量 187）：那是执行热集合。本页是 Bitcoin 出块奖励年龄。
 
-不要抄成熟块数 / 补贴表 / 钱包分类字符串进不确定常量。不要写怎样花未成熟奖励，或怎样重组作废已花奖励。不编博物馆页。不另写 19 节。BIP-65 CLTV、BIP-113 locktime、钱包 `immature` / `generate` 细则、减半表是另一对象。
+不要抄成熟块数 / 补贴表 / 钱包分类字符串进不确定常量。不要写怎样花未成熟奖励，或怎样重组作废已花奖励。不编博物馆页。不另写 19 节。BIP-65 CLTV、BIP-113 locktime、钱包 `immature` / `generate` 细则、减半表是另一对象。Ethereum 出块者开跑预填精读：[`../implementation/worked-example-coinbase-vs-prefill.md`](../implementation/worked-example-coinbase-vs-prefill.md)（不变量 187）。
 
 ---
 

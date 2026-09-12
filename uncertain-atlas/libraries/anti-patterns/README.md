@@ -189,3 +189,4 @@
 - [keys-sold-as-scripts](keys-sold-as-scripts.md)
 - [returned-sold-as-initcode](returned-sold-as-initcode.md)
 - [psbtv2-sold-as-v0](psbtv2-sold-as-v0.md)
+- [coinbase-sold-as-prefilled](coinbase-sold-as-prefilled.md)
