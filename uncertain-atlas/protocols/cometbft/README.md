@@ -81,6 +81,8 @@ Query 回了不是已经复制到各节点：[`../../tracks/implementation/worke
 
 四门里有 Snapshot Connection 不是已经必须实现快照：[`../../tracks/implementation/worked-example-snapshot-conn-vs-required.md`](../../tracks/implementation/worked-example-snapshot-conn-vs-required.md)（不变量 334）。看见给人快照或给自己装回不是已经必须两头都做。看见应用选择不实现不是已经没有 state sync 这条对象。
 
+Finalize 改了状态不是已经落盘：[`../../tracks/implementation/worked-example-finalize-persist-vs-commit.md`](../../tracks/implementation/worked-example-finalize-persist-vs-commit.md)（不变量 335）。看见必须在 Commit 落盘不是已经在 Finalize 落了。看见记住上次成功 Commit 高度不是已经能跳步。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

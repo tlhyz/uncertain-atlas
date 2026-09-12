@@ -349,6 +349,7 @@
 | C336 | 332 装完又对上LastBlockAppHash≠已经在装回当中验过 | 文案把装完又叫了 Info / LastBlockAppHash 对上轻客户端那份写成已经在装回当中增量验过或已经进了网；或把增量验了 chunk / checksum / 绑了默克尔写成已经是唯一可信的 AppHash 或已经不能被伪造元数据；或把让引擎封禁邻居 / 配了受信邻居名单写成已经没有快照 DoS 或已经收下这个人；或把 Snapshot Verification 写成不变量 321 / 323 / 38 / 326 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C337 | 333 本高回了ConsensusParams≠已经在本高生效 | 文案把本高 FinalizeBlock 回了 ConsensusParams / 本高已经交差写成已经在本高生效或本高提议已经按新参数；或把 H+1 立刻用了新参数 / 参数走 H→H+1 写成已经是验证人集合那种 H+2 才计票或已经是 H+3 才带 last_commit；或把参数更新写了 H+1 / H+1 已经按新参数写成已经是扩展启用高度那种切换或已经只改填的那一项；或把 ConsensusParams H→H+1 写成不变量 35 / 319 / 330 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C338 | 334 四门里有Snapshot Connection≠已经必须实现快照 | 文案把四门里有 Snapshot Connection / 四条连接写成已经必须实现快照管理或已经拍过快照；或把用来给人快照 / 用来给自己装回写成已经必须两头都做或已经装完；或把应用选择不实现 / 快照管理可选写成已经没有 state sync 这条对象或已经从创世是唯一合法路径或已经 ListSnapshots 齐了；或把 Snapshot Connection 写成不变量 322 / 321 / 38 / 329 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C339 | 335 Finalize改了状态≠已经落盘 | 文案把 FinalizeBlock 改了状态 / 决定块已经交给应用写成已经落盘或已经交差；或把必须在 Commit 落盘 / Commit 前返回写成已经在 Finalize 落了或已经解锁；或把记住上次成功 Commit 的高度 / 能告诉引擎从哪接写成已经能单独比引擎高或已经能跳步；或把 FinalizeBlock 落盘禁令写成不变量 320 / 310 / 5 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

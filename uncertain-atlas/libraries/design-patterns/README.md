@@ -232,3 +232,4 @@
 - [name-the-snapshot-verify](name-the-snapshot-verify.md)
 - [name-the-params-delay](name-the-params-delay.md)
 - [name-the-snapshot-conn](name-the-snapshot-conn.md)
+- [name-the-finalize-persist](name-the-finalize-persist.md)

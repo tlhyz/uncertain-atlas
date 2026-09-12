@@ -3646,6 +3646,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1607 | 高 | 看见应用选择不实现 / 看见快照管理可选 会被写成已经没有 state sync 这条对象，或当成已经从创世是唯一合法路径，或当成已经 ListSnapshots 齐了 | 官方：可选不是已经删掉这条对象 |
 | A1608 | 中 | 怎样实现 ListSnapshots / OfferSnapshot / LoadSnapshotChunk / ApplySnapshotChunk / 怎样配 state sync 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1609 | 记录 | 会与 322 / 321 / 38 / 329 糊成「看见四门就已经必须做快照」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Snapshot Connection / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。发现清单 / 装回 / 轻验 AppHash / Query 可选标成另一对象 |
+| A1610 | 高 | 看见 FinalizeBlock 改了状态 / 看见决定块已经交给应用 会被写成已经落盘，或当成已经交差 | 官方：Finalize 用来转移状态，但 MUST NOT 持久化 |
+| A1611 | 高 | 看见必须在 Commit 落盘 / 看见 Commit 前返回 会被写成已经在 Finalize 落了，或当成已经解锁 | 官方：持久化 MUST 在 Commit 里做，返回之前做完 |
+| A1612 | 高 | 看见记住上次成功 Commit 的高度 / 看见能告诉引擎从哪接 会被写成已经能单独比引擎高，或当成已经能跳步 | 官方：记住高度是为了告诉引擎从哪接，不是已经允许领先或已经跳过重放 |
+| A1613 | 中 | 怎样落盘 / 怎样写 Commit / 怎样做 WAL 旋转会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1614 | 记录 | 会与 320 / 310 / 5 糊成「看见 Finalize 改了就已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。崩溃恢复三步 / 默认锁 / 半写标成另一对象 |
 
 
 
