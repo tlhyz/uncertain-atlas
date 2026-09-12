@@ -224,6 +224,7 @@
 193. 若做 calldata 计价 / 对照 EIP-7623：必须点名问的是地板、旧执行路径，还是气限预留（不变量 197）。看见 calldata 地板不是已经改了执行气。数据为主更贵不是已经让普通转账更贵。预留了地板气限不是已经烧到地板。EIP-7623 不是 EIP-4844，也不是 EIP-1559，也不是 EIP-2028。第一版必须分开 calldata 地板、blob 气、1559 拆分、3860 字成本。不要抄标准 token 成本 / 地板每 token。不要另写 19 节。精读：[`../../tracks/implementation/worked-example-calldata-floor-vs-execution.md`](../../tracks/implementation/worked-example-calldata-floor-vs-execution.md)。这和 blob 气≠执行气（不变量 145）、基础费≠小费（不变量 158）、initcode≠运行时代码（不变量 176）不是同一句。
 194. 若做可聚合证明 / 对照 EIP-7549：必须点名问的是已签名 AttestationData、外层委员会位图，还是链上证明名单（不变量 198）。委员会下标被挪出签名消息不是已经没有委员会。AttestationData.index 写成零不是已经删掉该字段。分叉后第一块可以没有证明不是已经没有 LMD 票。EIP-7549 不是已经改了执行层，也不是同步委员会抽样。第一版必须分开已签名票、外层委员会下标、链上名单。不要抄委员会上限 / 最少验票数。不要另写 19 节。精读：[`../../tracks/finality/worked-example-committee-index-vs-signed.md`](../../tracks/finality/worked-example-committee-index-vs-signed.md)。这和 head≠justified≠finalized（不变量 127）、同步委员会必须点名样本（不变量 22）、处理完一块≠改头（不变量 149）不是同一句。
 195. 若做配对预编译 / 对照 EIP-2537：必须点名问的是曲线算术、子群谓词，还是验签方案（不变量 199）。看见 BLS12-381 预编译不是已经在验 BLS 签。加法不查子群不是已经和 MSM/配对同一套谓词。全零字节约定无穷远不是已经在曲线上。EIP-2537 不是 EIP-196/197，也不是不变量 116。第一版可以不做配对预编译。若做，必须分开算术、子群、验签。不要抄预编译地址 / 气价。不要另写 19 节。精读：[`../../tracks/crypto/worked-example-bls-precompile-vs-verify.md`](../../tracks/crypto/worked-example-bls-precompile-vs-verify.md)。这和子群过了≠在曲线上（不变量 116）、KZG≠DAS（不变量 23）、验得过≠严格 DER（不变量 172）不是同一句。
+196. 若做短时 blob 日程 / 对照 EIP-7691：必须点名问的是日程、气种拆分，还是抽样方案（不变量 200）。看见抬高 blob 目标/上限不是已经改了两套气的拆分。新的目标上限比不是已经还是旧的对称调价。共识层换名不是已经是执行层激活。EIP-7691 不是 EIP-4844，也不是 PeerDAS。第一版不要把短时 blob 当默认 DA。若对照，必须分开日程、气种、抽样。不要抄目标条数 / 上限条数 / 调价分母。不要另写 19 节。精读：[`../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)。这和 blob 气≠执行气（不变量 145）、KZG≠DAS（不变量 23）、calldata 地板≠执行气（不变量 197）不是同一句。
 
 **以后再发明**
 
@@ -383,6 +384,7 @@
 - 把看见 calldata 地板写成已经改了执行气，或把数据为主更贵写成已经让普通转账更贵，或把预留地板气限写成已经烧到地板，或把 7623 写成 4844 / 1559 / 2028。
 - 把委员会下标挪出签名写成已经没有委员会，或把 AttestationData.index 写成零写成已经删掉该字段，或把分叉后第一块没有证明写成已经没有 LMD 票，或把 7549 写成已经改了执行层 / 已经是同步委员会。
 - 把看见 BLS12-381 预编译写成已经在验 BLS 签，或把加法不查子群写成 MSM/配对也不查，或把全零字节写成已经在曲线上，或把 2537 写成 196/197 / 不变量 116。
+- 把看见抬高 blob 目标/上限写成已经改了两套气的拆分，或把新的目标上限比写成已经还是旧对称，或把共识层换名写成已经是执行层激活，或把 7691 写成 4844 / PeerDAS。
 
 ---
 
@@ -433,7 +435,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百九十五条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百九十六条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

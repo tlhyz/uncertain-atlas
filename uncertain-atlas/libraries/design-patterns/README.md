@@ -97,3 +97,4 @@
 - [name-the-calldata-floor](name-the-calldata-floor.md)
 - [name-the-committee-index](name-the-committee-index.md)
 - [name-the-bls-precompile](name-the-bls-precompile.md)
+- [name-the-blob-schedule](name-the-blob-schedule.md)

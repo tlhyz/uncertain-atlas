@@ -97,4 +97,4 @@ Celestia、Ethereum+rollup、Polkadot（执行在平行，安全在中继）。
 | 经济 | 模块化税：桥、延迟、运营分割 |
 
 **禁止假学习：** 「模块化所以更先进。」「拆开了所以更安全。」「都叫 gas 所以执行和 DA 是同一本账。」  
-**边界：** 不把某一 rollup 品牌当四层定义。执行费 ≠ DA 费：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。不抄 EIP 参数表。
+**边界：** 不把某一 rollup 品牌当四层定义。执行费 ≠ DA 费：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。抬高 blob 日程 ≠ 已经改了两套气 / 已经是 PeerDAS：[`../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)（不变量 200）。不抄 EIP 参数表。

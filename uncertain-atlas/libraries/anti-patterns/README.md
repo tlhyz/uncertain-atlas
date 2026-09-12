@@ -202,3 +202,4 @@
 - [floor-sold-as-execution](floor-sold-as-execution.md)
 - [committee-sold-as-signed](committee-sold-as-signed.md)
 - [pairing-sold-as-verify](pairing-sold-as-verify.md)
+- [schedule-sold-as-peerdas](schedule-sold-as-peerdas.md)
