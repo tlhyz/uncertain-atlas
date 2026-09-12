@@ -94,3 +94,5 @@
 - [recovery-shred-sold-as-filtered](recovery-shred-sold-as-filtered.md)
 - [sentinel-slot-sold-as-visible](sentinel-slot-sold-as-visible.md)
 - [flood-sold-as-halt](flood-sold-as-halt.md)
+- [zero-cost-sold-as-safe](zero-cost-sold-as-safe.md)
+- [quarantine-sold-as-fork](quarantine-sold-as-fork.md)

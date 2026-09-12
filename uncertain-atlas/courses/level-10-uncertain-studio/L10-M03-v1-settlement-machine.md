@@ -113,7 +113,9 @@
 82. 若同槽可能出现两份不同块：必须写出谁赢、赢了之后下一领导者必须能把它当父块（不变量 86）。确认 ≠ 可建。投票还在、根不前进，不是 Tower / PoH 已经一致。同一身份两台同时出块不是高可用。关掉故障提议者不是边角已消失。不要抄 80/90。馆藏：[`../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md`](../../tracks/failure-museum/solana-2022-09-30-duplicate-fork.md)。这和 durable nonce 双路径（81）、非法提案（65）、宣布≠收到（32）不是同一句。锁规则见不变量 4。  
 83. 若块要切成数据碎片 + 恢复碎片：两类对象必须各自写过滤谓词（不变量 87）。恢复碎片缺父槽字段，不是已按父槽滤掉。坐在过滤前面的转发 / 中继是另一信任对象。vote-only / 落到后备补洞不是高度已停，也不是已最终经济交易被回滚。不要把「刚过 ⅔ 升上某版」写成根因。不要抄 400 槽或 66%。馆藏：[`../../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md`](../../tracks/failure-museum/solana-2023-02-25-turbine-recovery.md)。这和 durable nonce（81）、重复槽不能当父块（82）、宣布≠收到（32）不是同一句。  
 84. 若程序缓存用有效槽 / 哨兵世代：插入键必须与查找键是同一对象（不变量 88）。账户不保留部署槽时，不得用会被挡在「已卸载」后面的哨兵 0。再编译完成不是已可见。协作加载若让交易进块，必须测全网回放，不得只测 leader。关掉旧加载器部署是拆前提，不是缓存已修。不要抄 95% 或乐观确认槽号。馆藏：[`../../tracks/failure-museum/solana-2024-02-06-legacy-loader-loop.md`](../../tracks/failure-museum/solana-2024-02-06-legacy-loader-loop.md)。这和恢复 shred（83）、并行验签寿命（不变量 43）不是同一句。  
-85. 若产品句写「洪水 / 拥堵 / 高 TPS」：必须再点名停在票不够、分叉不回收，还是单节点 OOM（不变量 89）。入站数字不是停链谓词。重启后分叉仍超能力不是自动恢复。固定地板价 + 先到先得必须写成经济对手会灌包。不要抄官网 TPS。不要把 QUIC / 加权 QoS / 本地费写成已完成。馆藏：[`../../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md`](../../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md)。这和 vote-only（83）、握手 OOM（63）、库存配额（41）不是同一句。
+85. 若产品句写「洪水 / 拥堵 / 高 TPS」：必须再点名停在票不够、分叉不回收，还是单节点 OOM（不变量 89）。入站数字不是停链谓词。重启后分叉仍超能力不是自动恢复。固定地板价 + 先到先得必须写成经济对手会灌包。不要抄官网 TPS。不要把 QUIC / 加权 QoS / 本地费写成已完成。馆藏：[`../../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md`](../../tracks/failure-museum/solana-2022-04-30-fork-cleanup-oom.md)。这和 vote-only（83）、握手 OOM（63）、库存配额（41）不是同一句。  
+86. 若做共享对象拥塞控制 / 执行代价估算：估值失败必须拒或排队，不得 assert 崩进程（不变量 90）。估值为 0 必须当合法边角。owned 快路径绿了不是共享路径已安全。换估值模式必须重测边角。不要抄协议版本或恢复分钟数。馆藏：[`../../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md`](../../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md)。这和断言当过滤器（33）、检查点隔离（87）不是同一句。  
+87. 若执行效果要等检查点 / 提交认证才最终：未认证不得当结算（不变量 91）。隔离区拒证、进度停住，不是用户已看见分叉。RPC 读上一份已认证状态不是新交易已执行。共识提交的优化路径必须与慢路径同输出。不要抄 ⅓。馆藏：[`../../tracks/failure-museum/sui-2026-01-14-commit-divergence.md`](../../tracks/failure-museum/sui-2026-01-14-commit-divergence.md)。这和拥塞控制 assert（86）、durable nonce（81）、提交≠兑付（不变量 9）不是同一句。
 
 **以后再发明**
 
@@ -215,7 +217,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 八十五条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 八十七条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

@@ -64,6 +64,8 @@
 - [solana-2023-02-25-turbine-recovery](solana-2023-02-25-turbine-recovery.md)（协议+实现+部署：恢复 shred 不是已经按父槽滤掉；vote-only 不是已经停链）
 - [solana-2024-02-06-legacy-loader-loop](solana-2024-02-06-legacy-loader-loop.md)（实现+协议：哨兵有效槽 0 不是卸载后再编译已经可见）
 - [solana-2022-04-30-fork-cleanup-oom](solana-2022-04-30-fork-cleanup-oom.md)（实现+协议+经济+部署：入站洪水不是已经停链；票不够落地、分叉清不掉才 OOM）
+- [sui-2024-11-21-zero-cost-assert](sui-2024-11-21-zero-cost-assert.md)（实现+协议：估值为 0 不是已经安全；拥塞控制 assert 不是局部跳过）
+- [sui-2026-01-14-commit-divergence](sui-2026-01-14-commit-divergence.md)（协议+实现：检查点隔离拒证不是已经分叉）
 
 待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。
 
