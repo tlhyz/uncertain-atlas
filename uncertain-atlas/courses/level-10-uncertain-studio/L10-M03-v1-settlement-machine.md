@@ -172,6 +172,7 @@
 141. 若挂短时大数据袋 / 对照 4844：必须点名问的是普通 gas、blob gas、versioned hash 还是 sidecar 字节（不变量 145）。blob gas 不是普通执行 gas。EVM 能读承诺不是已经读到袋里的字节。付了 blob fee 不是数据已经永存。执行层不负责持久化 blob。第一版不要把短时 blob 当默认 DA。不要抄上限或官网倍数。不要另写 19 节。精读：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)。这和短时承诺≠永存（不变量 23）、策略≠共识（不变量 144）、提交≠兑付（不变量 9）、gas≠墙钟（不变量 101）不是同一句。
 142. 若装 IBC / 对照跨链四层：必须点名问的是客户端、连接、通道还是数据包（不变量 146）。轻客户端不是已经开连接。连接不是已经开通道。通道不是已经送达数据包。发出承诺不是对岸已经 recv。第一版可以不装 IBC。不要把握手超时抄进不确定。不要另写 19 节。精读：[`../../tracks/economic/worked-example-ibc-client-vs-packet.md`](../../tracks/economic/worked-example-ibc-client-vs-packet.md)。这和 ack 确定性（不变量 77）、超时挂钩（不变量 78）、ICS-23 soundness（不变量 79）、提交≠兑付（不变量 9）、XCM（不变量 113）不是同一句。
 143. 若抄 CometBFT 头 / 对照本头状态根：必须点名问的是本头 AppHash、本块 DataHash，还是本高度 FinalizeBlock 刚回的根（不变量 147）。本头 AppHash 不是本高度交易已经交差。本块 DataHash 有这笔不是效果已经进本头。本高度 Finalize 回的根不是已经印在本头。第一版若抄这套头，必须写清滞后一块。不要抄哈希宽度。不要另写 19 节。精读：[`../../tracks/consensus/worked-example-apphash-vs-this-block.md`](../../tracks/consensus/worked-example-apphash-vs-this-block.md)。这和四门（不变量 33）、快照锚（不变量 38）、轻验≠日程（不变量 56）、顺序≠状态（不变量 136）、集合延迟（不变量 35）不是同一句。
+144. 若抄 CometBFT 头 / 对照块上的 Commit：必须点名问的是本头 LastCommit、本地 subjective commit，还是本高度要等下一块才印的那份（不变量 148）。本头 LastCommit 不是本高度已经 +2/3。本地那份不是已经 canonical。第一块空 LastCommit 不是已经没有最终。第一版若抄这套头，必须写清本块票是上一高度。不要抄票槽上限或超时秒数。不要另写 19 节。精读：[`../../tracks/consensus/worked-example-lastcommit-vs-this-block.md`](../../tracks/consensus/worked-example-lastcommit-vs-this-block.md)。这和其余槽位已签（不变量 65）、本头 AppHash（不变量 147）、timeout_commit（不变量 47）、锁（不变量 4）、BFT Time（不变量 40）不是同一句。
 
 **以后再发明**
 
@@ -279,6 +280,7 @@
 - 把 blob gas 写成普通执行 gas，或把 `BLOBHASH` 写成已经读到 sidecar 字节，或把付了 blob fee 写成数据已经永存。
 - 把 IBC 轻客户端写成已经开连接，或把连接写成已经开通道，或把 `sendPacket` 写成对岸已经 recv。
 - 把本头 AppHash 写成本高度交易已经交差，或把本块 DataHash 有这笔写成效果已经进本头，或把 FinalizeBlock 刚回的根写成已经印在本头。
+- 把本头 LastCommit 写成本高度已经 +2/3，或把本地 subjective commit 写成已经是链上 canonical，或把第一块空 LastCommit 写成已经没有最终。
 
 ---
 
@@ -329,7 +331,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百四十三条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百四十四条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

@@ -150,3 +150,4 @@
 - [blob-fee-sold-as-gas](blob-fee-sold-as-gas.md)
 - [client-sold-as-packet](client-sold-as-packet.md)
 - [apphash-sold-as-this-block](apphash-sold-as-this-block.md)
+- [lastcommit-sold-as-this-block](lastcommit-sold-as-this-block.md)

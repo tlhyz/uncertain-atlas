@@ -77,7 +77,7 @@ Commit  →  ABCI FinalizeBlock / Commit
 
 **超时：** 部分同步下用**本地**超时换轮，保活性。超时太短会空转，太长会卡。这些数字不是共识参数，也不是最终性。`timeout_commit` 是已经 Commit 之后、开新高度之前再收迟到 precommit。`skip_timeout_commit=true` 的官方语义是「像 TimeoutCommit=0」——某条发布线还列不列该键，不改变「零等待仍是 commit 之后」这句话。见 [`../../tracks/consensus/worked-example-timeouts.md`](../../tracks/consensus/worked-example-timeouts.md)。较新的 `main` 规范把这段等待交给应用回 `next_block_delay`（非确定性，不是槽位，不是所有发布线都有）。见 [`../../tracks/consensus/worked-example-next-block-delay.md`](../../tracks/consensus/worked-example-next-block-delay.md)。不要抄文档示例秒数或「大约每秒一个空块」当结算 SLA。
 
-**确定性最终：** commit 的 `(h, block)` 不应被诚实节点改掉。分区过久：可能停（保安全），而不是两边各 commit 各的。
+**确定性最终：** commit 的 `(h, block)` 不应被诚实节点改掉。分区过久：可能停（保安全），而不是两边各 commit 各的。本块 `LastCommit` 是上一块的 canonical +2/3，不是本高度已经盖章；本地看见的那份不必等于链上那份。见 [`../../tracks/consensus/worked-example-lastcommit-vs-this-block.md`](../../tracks/consensus/worked-example-lastcommit-vs-this-block.md)（不变量 148）。
 
 **块时间（必须点名）：** 家族里至少两套算法，都不是墙上现在，也不是 Bitcoin MTP。PBTS：提议者本地钟 + 相对收到 `Proposal` 的 timely 窗；不 timely → prevote `nil`。BFT Time：本块时间是上一高度 `LastCommit` 时间戳的加权中位数，可复算。规范态度是新链用 PBTS，BFT Time **可能**弃用——不是已经弃用。能复算 ≠ 故障者不能抬高 Time（[CSA-2026-001](../../tracks/failure-museum/csa-2026-001.md)）。见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。
 

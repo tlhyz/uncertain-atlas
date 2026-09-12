@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 149）
+
+- CometBFT LastCommit 工作实例（官方共识算法 + 数据结构，不另写 19 节）：本头 LastCommit 不是本高度已经 +2/3。本地 subjective commit 不是已经 canonical。第一块空 LastCommit 不是已经没有最终。出处 cometbft spec/consensus/consensus.md；spec/core/data_structures.md。
+- 不变量 148；语料 C152；模式 name-the-canonical-commit；反模式 lastcommit-sold-as-this-block；L10.3 第 144 条。填 L4.2 / CometBFT 档案 / 共识表 / 停链面地图。
+- 不抄票槽上限 / 超时秒数 / 哈希宽度。不写怎样拼 LastCommit 或扣票。不编博物馆页。不另写 19 节。不与 65 / 147 / 47 / 4 / 40 糊成一句。JSet / full commit 备选算法标成另一对象。
+
 ## 2026-09-12（续 148）
 
 - CometBFT 本头 AppHash 工作实例（官方数据结构 + ABCI++，不另写 19 节）：本头 AppHash 不是本高度交易已经交差。本块 DataHash 有这笔不是效果已经进本头。FinalizeBlock 回的根进下一块头。出处 cometbft spec/core/data_structures.md；ABCI++ FinalizeBlock。
