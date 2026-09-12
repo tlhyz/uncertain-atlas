@@ -290,3 +290,4 @@
 - [script-in-path-sold-as-needed](script-in-path-sold-as-needed.md)
 - [entropy-sold-as-seed](entropy-sold-as-seed.md)
 - [psbt-sold-as-setup](psbt-sold-as-setup.md)
+- [path-sold-as-template](path-sold-as-template.md)

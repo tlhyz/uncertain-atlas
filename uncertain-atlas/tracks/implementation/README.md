@@ -46,6 +46,7 @@
 - [`worked-example-multisig-path-vs-script.md`](worked-example-multisig-path-vs-script.md) — 脚本各走各的路径 ≠ 已经是多签该有的树；路径里的脚本类型 ≠ 已经必要；主种子 ≠ 已经够找回（不变量 285）
 - [`worked-example-entropy-vs-seed.md`](worked-example-entropy-vs-seed.md) — 一份助记词 ≠ 已经能备齐所有钱包；扩展根钥 ≠ 已经能倒回助记词；派生出的熵 ≠ 已经是目标钱包的种子（不变量 286）
 - [`worked-example-setup-vs-psbt.md`](worked-example-setup-vs-psbt.md) — 部分签名包 ≠ 已经是跨厂安全多签开户；指纹对上 ≠ 已经核过 KEY；TOKEN ≠ 已经是钱包种子（不变量 287）
+- [`worked-example-template-vs-path.md`](worked-example-template-vs-path.md) — 一条派生路径 ≠ 已经是一份路径模板；写死了熟路径检查 ≠ 已经能互操作；完整模板 ≠ 已经是半截模板（不变量 288）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）
