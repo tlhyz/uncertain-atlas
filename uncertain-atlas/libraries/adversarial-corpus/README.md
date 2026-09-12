@@ -335,6 +335,7 @@
 | C322 | 318 InitChain空名单≠已经没有集合 | 文案把 InitChain 回了空名单 / 没回验证者写成已经没有集合或已经用了应用自己的空集；或把一次更新里同一把公钥出现两次 / 重复写成已经按后一条改权或已经能恢复；或把 power 写成 0 / 名单里没有这个人写成已经删掉或已经能对不在集合里的人写 0；或把 ValidatorUpdate 写成不变量 35 / 303 / 302 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C323 | 319 InitChain空参数≠已经没有参数 | 文案把 InitChain 回了空 ConsensusParams / 没回参数写成已经没有参数或已经用了应用自己的空参数；或把 FinalizeBlock 回了空 / 没回 ConsensusParams 写成已经清掉或已经改了；或把只改了一个字段 / Block 只填了 MaxBytes 写成已经只改这一项或已经保持其余不变；或把 ConsensusParams 写成不变量 35 / 315 / 299 / 318 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C324 | 320 应用高度比引擎高≠已经允许 | 文案把应用高度比引擎高 / 应用先落了盘写成已经允许或已经能单独恢复；或把块已经进 blockstore / Finalize 结果已经落盘写成已经交差或已经 Commit；或把启动 Info / 对上了写成已经是任意高度或已经能跳步；或把 Crash Recovery 写成不变量 5 / 298 / 314 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C325 | 321 Offer收下≠已经装完 | 文案把 OfferSnapshot 收下 / 选了这份快照写成已经装完或已经有了全部块；或把 ApplySnapshotChunk 收下了一块 / 回了再拉写成已经齐或已经交差；或把拉一块失败 / 换了一份快照写成已经能接着装或已经同一份；或把 Snapshot Restoration 写成不变量 38 / 314 / 320 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

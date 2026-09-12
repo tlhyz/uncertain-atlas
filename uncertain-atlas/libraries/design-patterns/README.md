@@ -218,3 +218,4 @@
 - [name-the-validatorupdate](name-the-validatorupdate.md)
 - [name-the-consensusparams](name-the-consensusparams.md)
 - [name-the-crash-steps](name-the-crash-steps.md)
+- [name-the-snapshot-restore](name-the-snapshot-restore.md)

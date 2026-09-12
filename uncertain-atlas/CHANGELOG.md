@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 322）
+
+- CometBFT Snapshot Restoration 工作实例（官方 Requirements for the Application Snapshot Restoration，实现 / Snapshot Restoration，不另写 19 节）：看见 OfferSnapshot 收下不是已经装完。看见一块 chunk 收下不是已经齐。看见拉失败换一份不是已经能接着装。Snapshot Restoration 不是不变量 38，也不是不变量 314，也不是不变量 320。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 321；语料 C325；模式 name-the-snapshot-restore；反模式 snapshotrestore-sold-as-offered；L10.3 第 317 条。填 L4.4 / CometBFT 档案 Snapshot Restoration / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样切块、怎样序列化、怎样实现 ApplySnapshotChunk。不编博物馆页。不另写 19 节。不与 38 / 314 / 320 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。轻验 AppHash / 启动对齐 / 崩溃三步标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 321）
 
 - CometBFT Crash Recovery 工作实例（官方 Requirements for the Application Crash Recovery，实现 / Crash Recovery，不另写 19 节）：看见应用高度比引擎高不是已经允许。看见块进了 blockstore 不是已经 Commit。看见启动 Info 对上不是已经能跳步。Crash Recovery 不是不变量 5，也不是不变量 298，也不是不变量 314。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

@@ -322,6 +322,7 @@
 | 313 | ValidatorUpdate 被写成已经换了集合 | 协议 + 文案 | 看见 InitChain 空名单 / 同一批重复公钥 / power 写成 0 / ValidatorUpdate 当成已经没有集合或已经能恢复或已经删掉不在集合里的人 | 不变量 318；语料 C322 |
 | 314 | ConsensusParams 被写成已经改完 | 协议 + 文案 | 看见 InitChain 空参数 / Finalize 没回 / 只改一个字段 / ConsensusParams 当成已经没有参数或已经清掉或已经只改这一项 | 不变量 319；语料 C323 |
 | 315 | Crash Recovery 被写成已经交差 | 协议 + 文案 | 看见应用高度比引擎高 / 块进了 blockstore / 启动 Info 对上 / Crash Recovery 当成已经允许或已经 Commit 或已经能跳步 | 不变量 320；语料 C324 |
+| 316 | Snapshot Restoration 被写成已经装完 | 协议 + 文案 | 看见 OfferSnapshot 收下 / 一块 chunk 收下 / 拉失败换一份 / Snapshot Restoration 当成已经装完或已经齐或已经能接着装 | 不变量 321；语料 C325 |
 
 ## 不自动覆盖
 
