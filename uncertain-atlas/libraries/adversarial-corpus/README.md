@@ -418,6 +418,7 @@
 | C405 | 401 Offer收下之后才去拉块并装≠已经装完 | 文案把 Offer 收下之后才去拉块并装 / 收下了 写成已经装完或已经齐；或把在装这块的回包里拒掉这份、还要再收 Offer / 在装这块时拒了 写成已经中止或已经是拒掉这份；或把 ApplySnapshotChunk Result ACCEPT 是这块收下了 / 回了 ACCEPT 写成已经齐或已经是装这块的结果；或把 Offer 收下之后写成不变量 321 / 400 / 397 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C406 | 402 OfferSnapshot Result UNKNOWN是结果不明、中止全部装回≠已经崩 | 文案把 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 / 回了 UNKNOWN 写成已经崩或已经是中止装回、不再试别份；或把 OfferSnapshot Result ACCEPT 是收下这份、开始装块 / 回了 ACCEPT 写成已经装完或已经齐；或把 OfferSnapshot Result REJECT 是拒掉这份、换一份 / 回了 REJECT 写成已经是拒掉这种 format 或已经是拒掉这份；或把 OfferSnapshot 结果枚举余量写成不变量 376 / 401 / 400 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C407 | 403 Finalize之后引擎才落盘各笔输出/AppHash/ResultsHash≠已经交差 | 文案把 Finalize 之后引擎才落盘各笔输出 / AppHash / ResultsHash / 回了 Finalize 写成已经交差或已经落盘应用状态；或把落完再锁内存池、新交易不进 CheckTx / 锁了 写成已经是 Commit 锁或已经交差；或把可选再验池里剩下的、再解锁、再开下一高 round 0 / 再验了 写成已经是 Recheck 或已经交差；或把 Finalize 之后写成不变量 362 / 310 / 312 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C408 | 404 Finalize回包app_hash可以空或硬编码、但必须确定≠已经印进本头 | 文案把 Finalize 回包 app_hash 可以空或硬编码、但必须确定 / 回了 app_hash 写成已经印进本头或已经交差；或把以后 Query 可以拿这份根当锚回证明 / 能回证明 写成已经对上 AppHash 或已经是按键查；或把 tx_results[i].Code == 0 只表示第 i 笔完全合法 / 回了 0 写成已经没进块或已经印进本头；或把 Finalize 回包余量写成不变量 147 / 325 / 316 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

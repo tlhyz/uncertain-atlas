@@ -3991,6 +3991,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1952 | 高 | 看见可选再验池里剩下的、再解锁、再开下一高 round 0 / 看见再验了 会被写成已经是 Recheck，或当成已经交差 | 官方：optionally, re-checks all outstanding transactions in the mempool against the newly persisted Application state |
 | A1953 | 中 | 怎样写 Finalize 之后 / 怎样落盘这三份 / 怎样再验 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1954 | 记录 | 会与 362 / 310 / 312 糊成「看见回了 Finalize 就已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 之后 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。交差 / Commit 锁 / Recheck 标成另一对象 |
+| A1955 | 高 | 看见 Finalize 回包 app_hash 可以空或硬编码、但必须确定 / 看见回了 app_hash 会被写成已经印进本头，或当成已经交差 | 工作实例：abci++_methods FinalizeBlock Usage 官方写 app_hash may also be empty or hard-coded, but MUST be deterministic |
+| A1956 | 高 | 看见以后 Query 可以拿这份根当锚回证明 / 看见能回证明 会被写成已经对上 AppHash，或当成已经是按键查 | 官方：Later calls to Query can return proofs about the application state anchored in this Merkle root hash |
+| A1957 | 高 | 看见 tx_results[i].Code == 0 只表示第 i 笔完全合法 / 看见回了 0 会被写成已经没进块，或当成已经印进本头 | 官方：tx_results[i].Code == 0 only if the i-th transaction is fully valid |
+| A1958 | 中 | 怎样写 Finalize 回包余量 / 怎样挑空根 / 怎样回证明 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1959 | 记录 | 会与 147 / 325 / 316 糊成「看见回了 Finalize 回包余量就已经印进本头」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。印进本头 / 对上 AppHash / 没进块 标成另一对象 |
 
 
 

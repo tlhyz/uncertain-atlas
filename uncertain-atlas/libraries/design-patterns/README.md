@@ -301,3 +301,4 @@
 - [name-the-offer-accept](name-the-offer-accept.md)
 - [name-the-offer-unk](name-the-offer-unk.md)
 - [name-the-finalize-after](name-the-finalize-after.md)
+- [name-the-fin-apphash](name-the-fin-apphash.md)
