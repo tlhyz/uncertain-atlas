@@ -188,3 +188,4 @@
 - [name-the-path-template](name-the-path-template.md)
 - [name-the-chaincode-delegation](name-the-chaincode-delegation.md)
 - [name-the-payjoin](name-the-payjoin.md)
+- [name-the-lex-order](name-the-lex-order.md)

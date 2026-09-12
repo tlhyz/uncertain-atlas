@@ -293,3 +293,4 @@
 - [path-sold-as-template](path-sold-as-template.md)
 - [xpub-sold-as-delegation](xpub-sold-as-delegation.md)
 - [original-sold-as-payjoin](original-sold-as-payjoin.md)
+- [order-sold-as-lex](order-sold-as-lex.md)
