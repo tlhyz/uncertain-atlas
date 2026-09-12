@@ -230,3 +230,4 @@
 - [name-the-ve-height](name-the-ve-height.md)
 - [name-the-evidence-maxbytes](name-the-evidence-maxbytes.md)
 - [name-the-snapshot-verify](name-the-snapshot-verify.md)
+- [name-the-params-delay](name-the-params-delay.md)

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 334）
+
+- CometBFT ConsensusParams H→H+1 生效工作实例（官方 Requirements for the Application Updating Consensus Parameters / FinalizeBlock, PrepareProposal/ProcessProposal，实现 / ConsensusParams 生效延迟，不另写 19 节）：看见本高 Finalize 回了 ConsensusParams 不是已经在本高生效。看见 H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票。看见参数更新写了 H+1 不是已经是扩展启用高度那种切换，也不是已经只改填的那一项。ConsensusParams H→H+1 不是不变量 35，也不是不变量 319，也不是不变量 330。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 333；语料 C337；模式 name-the-params-delay；反模式 paramsdelay-sold-as-validatordelay；L10.3 第 329 条。填 L4.4 / CometBFT 档案 Updating Consensus Parameters / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编 ConsensusParams、默认 MaxBytes / MaxGas、怎样选启用高度。不编博物馆页。不另写 19 节。不与 35 / 319 / 330 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。换人延迟 / 空没回只填一项 / 扩展启用高度标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 333）
 
 - CometBFT Snapshot Verification 工作实例（官方 Requirements for the Application Snapshot Verification，实现 / Snapshot Verification，不另写 19 节）：看见装完又对上 LastBlockAppHash 不是已经在装回当中验过。看见增量验了 chunk 不是已经是唯一可信的 AppHash。看见封禁邻居不是已经没有快照 DoS。Snapshot Verification 不是不变量 321，也不是不变量 323，也不是不变量 38，也不是不变量 326。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

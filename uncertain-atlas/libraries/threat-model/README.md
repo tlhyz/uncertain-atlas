@@ -334,6 +334,7 @@
 | 325 | VoteExtensionsEnableHeight 被写成已经 Prepare 带了扩展 | 协议 + 文案 | 看见到了 H / H+1 带了扩展 / h < H 带了扩展 / VoteExtensionsEnableHeight 当成已经 Prepare 带了扩展或已经是本高度刚签的或已经合法 | 不变量 330；语料 C334 |
 | 326 | EvidenceParams.MaxBytes 被写成已经是块 MaxBytes | 协议 + 文案 | 看见填了证据 MaxBytes / > 0 / 证据 MaxBytes / EvidenceParams.MaxBytes 当成已经落在块上限下面或已经盖住解绑或已经是块 MaxBytes | 不变量 331；语料 C335 |
 | 327 | Snapshot Verification 被写成已经在装回当中验过 | 协议 + 文案 | 看见装完又对上 LastBlockAppHash / 增量验了 chunk / 封禁邻居 / Snapshot Verification 当成已经在装回当中验过或已经是唯一可信的 AppHash 或已经没有快照 DoS | 不变量 332；语料 C336 |
+| 328 | ConsensusParams H→H+1 被写成已经在本高生效 | 协议 + 文案 | 看见本高 Finalize 回了 ConsensusParams / H+1 立刻用了新参数 / 参数更新写了 H+1 / ConsensusParams H→H+1 当成已经在本高生效或已经是验证人集合那种 H+2 才计票或已经是扩展启用高度那种切换 | 不变量 333；语料 C337 |
 
 ## 不自动覆盖
 

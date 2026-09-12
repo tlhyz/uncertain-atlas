@@ -77,6 +77,8 @@ Query 回了不是已经复制到各节点：[`../../tracks/implementation/worke
 
 装完又对上 LastBlockAppHash 不是已经在装回当中验过：[`../../tracks/implementation/worked-example-snapshot-verify-vs-early.md`](../../tracks/implementation/worked-example-snapshot-verify-vs-early.md)（不变量 332）。看见增量验了 chunk 不是已经是唯一可信的 AppHash。看见封禁邻居不是已经没有快照 DoS。
 
+本高回了 ConsensusParams 不是已经在本高生效：[`../../tracks/implementation/worked-example-params-delay-vs-set.md`](../../tracks/implementation/worked-example-params-delay-vs-set.md)（不变量 333）。看见 H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票。看见参数更新写了 H+1 不是已经是扩展启用高度那种切换，也不是已经只改填的那一项。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

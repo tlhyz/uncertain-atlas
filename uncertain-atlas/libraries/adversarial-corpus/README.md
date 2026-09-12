@@ -347,6 +347,7 @@
 | C334 | 330 到了H≠已经Prepare带了扩展 | 文案把到了 H / 已经叫了 ExtendVote 写成已经 Prepare 带了扩展；或把 H+1 的 PrepareProposal 带了扩展写成已经是本高度刚签的扩展；或把 h < H 的预提交带了扩展写成已经合法或已经启用；或把 VoteExtensionsEnableHeight 写成不变量 34 / 58 / 35 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C335 | 331 填了证据MaxBytes≠已经落在块上限下面 | 文案把填了 EvidenceParams.MaxBytes / 一块里证据有上限写成已经落在块 MaxBytes 下面或已经扣掉开销；或把 MaxBytes > 0 / 合法写成已经盖住解绑或已经够罚；或把证据 MaxBytes 写成已经是块 MaxBytes 或已经是 -1 无上限或已经是活性 SLA；或把 EvidenceParams.MaxBytes 写成不变量 299 / 46 / 63 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C336 | 332 装完又对上LastBlockAppHash≠已经在装回当中验过 | 文案把装完又叫了 Info / LastBlockAppHash 对上轻客户端那份写成已经在装回当中增量验过或已经进了网；或把增量验了 chunk / checksum / 绑了默克尔写成已经是唯一可信的 AppHash 或已经不能被伪造元数据；或把让引擎封禁邻居 / 配了受信邻居名单写成已经没有快照 DoS 或已经收下这个人；或把 Snapshot Verification 写成不变量 321 / 323 / 38 / 326 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C337 | 333 本高回了ConsensusParams≠已经在本高生效 | 文案把本高 FinalizeBlock 回了 ConsensusParams / 本高已经交差写成已经在本高生效或本高提议已经按新参数；或把 H+1 立刻用了新参数 / 参数走 H→H+1 写成已经是验证人集合那种 H+2 才计票或已经是 H+3 才带 last_commit；或把参数更新写了 H+1 / H+1 已经按新参数写成已经是扩展启用高度那种切换或已经只改填的那一项；或把 ConsensusParams H→H+1 写成不变量 35 / 319 / 330 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。
