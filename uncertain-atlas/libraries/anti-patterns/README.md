@@ -237,3 +237,4 @@
 - [returndata-sold-as-memory](returndata-sold-as-memory.md)
 - [delegatecall-sold-as-callcode](delegatecall-sold-as-callcode.md)
 - [homestead-sold-as-create](homestead-sold-as-create.md)
+- [eip8-sold-as-upgraded](eip8-sold-as-upgraded.md)

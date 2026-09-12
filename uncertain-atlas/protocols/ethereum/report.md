@@ -77,7 +77,7 @@ gas 是资源计量，防无限循环变成网络武器。它不是「手续费�
 
 ## 8. 网络
 
-devp2p / discv5 等。块与 blob（EIP-4844 后）传播是新带宽账。  
+devp2p / discv5 等。块与 blob（EIP-4844 后）传播是新带宽账。看见忽略 hello / ping 版本或多余字段不是已经谈成新线协议；看见跟 Homestead 一起上不是已经改了共识；看见仍收旧握手不是已经退役旧格式：[`../../tracks/network/worked-example-eip8-vs-already-new.md`](../../tracks/network/worked-example-eip8-vs-already-new.md)（不变量 235）。  
 审查可发生在构建者/中继，不只在「验证者人数」。
 
 ---
