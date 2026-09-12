@@ -46,3 +46,4 @@
 - [mutated-clears-others-download](mutated-clears-others-download.md)
 - [pbts-sold-as-mtp](pbts-sold-as-mtp.md)
 - [mtp-sold-as-one-clock](mtp-sold-as-one-clock.md)
+- [reject-sold-as-no-disk](reject-sold-as-no-disk.md)

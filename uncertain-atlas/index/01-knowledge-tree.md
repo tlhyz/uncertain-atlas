@@ -122,10 +122,12 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M1.3 Merkle 树 · 必学
 - 包含证明、排除（先直觉）
 - 轻节点为什么能少下数据
+- 覆盖：课文 L1.3；奇数复制同根见博物馆 CVE-2012-2459
 
 ### M1.4 编码与规范化 · 重要
 - canonical encoding
 - 非规范编码如何变成共识分裂
+- 覆盖：课文 L1.4；实现编码精读 `tracks/implementation/`
 
 ### M1.5 随机数与确定性 · 重要
 - 签名随机数泄漏
@@ -150,23 +152,28 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 未花费输出、花费、找零
 - 天然并行的来源
 - 可编程性代价
+- 覆盖：课文 L2.1
 
 ### M2.2 Account · 必学
 - 余额、nonce、storage
 - 重放保护为什么常靠 nonce
 - 热点账户
+- 覆盖：课文 L2.2
 
 ### M2.3 Object / Resource · 重要
 - 所有权、版本、能力
 - 为什么 object 模型可能更好并行
 - shared object 如何重新引入争用
+- 覆盖：课文 L2.3
 
 ### M2.4 混合与证明复杂度 · 进阶
 - 钱包体验 vs 证明大小 vs 存储
 - statelessness 的真正含义
+- 覆盖：课文 L2.5（eUTXO）+ L2.6（占用）；完整证明系统后置 L8
 
 ### M2.5 《状态模型设计地图》初稿 · 重要
 - 对比表：并行、冲突、隐私、存储、可编程、后量子成本
+- 覆盖：课文 L2.4；决策矩阵 `libraries/decision-matrix/` 状态表（不确定列空）
 
 输出资产：`04 状态模型图谱` 的第一版骨架。
 
@@ -191,9 +198,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.3 费用市场 · 重要
 - 有限区块空间如何定价
 - 不是「手续费越高越高级」
+- 覆盖：课文 L3.2
 
 ### M3.4 Script / SegWit / Taproot / Schnorr · 进阶
 - 保守升级如何避免把旧节点踢出共识
+- 覆盖：课文 L3.3 方向 + L3.7 见证结构；Taproot 语言细节仍后置
 
 ### M3.5 全节点、剪枝、SPV · 必学
 - 验证 vs 查看
@@ -203,10 +212,12 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.6 工程哲学与测试 · 重要
 - fuzzing、软分叉、Bitcoin Core 的保守主义
 - 源码入口课
+- 覆盖：课文 L3.6
 
 ### M3.7 事故与「看起来没崩」的原因 · 重要
 - 通胀漏洞、分叉事件
 - 稳定来自可验证性 + 慢变更 + 全节点文化
+- 覆盖：课文 L3.6 方法；博物馆 BIP 50 / CVE-2018-17144 / CVE-2010-5139
 
 ---
 
@@ -222,6 +233,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.1 为什么「投票过 2/3」不够 · 必学
 - 两个合法值同时过门槛
 - 法定人数相交（quorum intersection）
+- 覆盖：课文 L4.1
 
 ### M4.2 高度、轮次、步骤 · 必学
 - propose / prevote / precommit / commit
@@ -244,6 +256,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M4.6 崩溃恢复 · 重要
 - WAL、超时、重启后如何不投矛盾票
+- 覆盖：课文 L4.4；崩溃精读 `tracks/implementation/worked-example-crash.md`
 
 ### M4.7 HotStuff / Casper 对照预习 · 进阶
 - QC、view change
@@ -253,6 +266,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.8 源码与测试 · 重要
 - CometBFT 状态机入口
 - 对「不确定」：强烈建议研究的部分
+- 覆盖：课文 L4.4 入口；档案第 16–18 节
 
 ---
 
@@ -264,9 +278,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.1 账户、nonce、EVM、gas · 必学
 - 状态转移、收据、日志
+- 覆盖：课文 L5.1
 
 ### M5.2 状态树与状态膨胀 · 重要
 - trie、存档节点、无状态方向
+- 覆盖：课文 L5.4
 
 ### M5.3 执行层 / 共识层 · 必学
 - validator、attestation、finality、fork choice
@@ -275,6 +291,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M5.4 多客户端与可执行规范 · 必学
 - 为什么故意允许多个实现
 - 差异性测试如何抓住「实现保证」漏洞
+- 覆盖：课文 L5.3
 
 ### M5.5 EIP、交易类型、blobs、rollup 入口 · 重要
 - 协议如何演化
@@ -285,6 +302,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - 覆盖：课文 L5.4；谁写列表 vs 谁签头 `tracks/mempool/worked-example-who-orders.md`（Builder API ≠ consensus-specs；不变量 27）
 
 ### M5.7 事故：共识分裂、客户端差异、状态问题 · 重要
+- 覆盖：L9.9 方法 + 博物馆 CVE-2021-39137
 
 ---
 
@@ -329,6 +347,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M7.1 模块化四件套 · 必学
 - execution / settlement / consensus / DA
+- 覆盖：课文 L7.1
 
 ### M7.2 Celestia · 必学
 - DAS、纠删码、NMT
@@ -344,6 +363,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - Relay / Parachain、collator / validator
 - backing、availability、approval
 - 小链如何借用安全，以及新的攻击面
+- 覆盖：课文 L7.3 入口；档案 `protocols/polkadot/`
 
 ### M7.5 共享安全对照 · 进阶
 - restaking 等后到项目：只收「独特思想」，不因有名而学
@@ -384,7 +404,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.1 P2P · 必学
 - 发现、gossip、eclipse、Sybil、分区、NAT
 - 很多链的瓶颈在网络不在执行
-- 覆盖：课文 L9.1；日蚀精读；调整钟 CVE-2024-52912；索取独占 CVE-2024-52913。新块宣布 ≠ 已收到：CVE-2024-52922。部分重建断言崩：CVE-2024-35202。变异清别人下载：CVE-2024-52921。compact 精读 `tracks/network/worked-example-compact-block.md`。加密内存池尚无冻结规范级独特对象，不写页
+- 覆盖：课文 L9.1；日蚀精读；调整钟 CVE-2024-52912；索取独占 CVE-2024-52913。新块宣布 ≠ 已收到：CVE-2024-52922。部分重建断言崩：CVE-2024-35202。变异清别人下载：CVE-2024-52921。拒绝仍灌日志盘：CVE-2025-54605。compact 精读 `tracks/network/worked-example-compact-block.md`。加密内存池尚无冻结规范级独特对象，不写页
 
 ### M9.2 Mempool · 必学
 - 准入、替换、驱逐、垃圾、抢跑、加密内存池
@@ -398,6 +418,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.4 升级 · 重要
 - 软/硬分叉、runtime upgrade、紧急升级
 - 升级密钥如何变成中心化后门
+- 覆盖：课文 L9.4；升级精读 `tracks/upgrades/worked-example.md`
 
 ### M9.5 经济安全 · 重要
 - 发行、质押、罚没、MEV、审查、卡特尔
@@ -410,14 +431,16 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.7 协议测试 · 必学
 - unit / property / fuzz / differential / chaos / mutation
+- 覆盖：课文 L9.7；语料目录 `libraries/adversarial-corpus/`（runner 未建）
 
 ### M9.8 形式化验证入口 · 进阶
 - invariant、safety/liveness、TLA+、模型检测
 - 选一个简化 BFT 做状态模型（研究级作业）
+- 覆盖：课文 L9.8；缝精读 `tracks/formal-methods/worked-example.md`
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（十三案；含 CVE-2024-52921 变异清别人下载）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（十四案；含 CVE-2025-54605 拒绝仍灌日志盘）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -430,6 +453,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.1 设计决策矩阵 · 必学
 - 状态模型、共识、执行、最终性、升级
+- 覆盖：课文 L10.1；表在 `libraries/decision-matrix/`（不确定列空）
 
 ### M10.2 后量子工程手册 · 研究级
 - 用户签名、验证者投票、体积、CPU、传播、区块大小
@@ -440,19 +464,21 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.3 威胁模型 · 必学
 - 对手能力、分区、量子、升级密钥、实现分歧
+- 覆盖：[`../libraries/threat-model/README.md`](../libraries/threat-model/README.md)
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–41）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–42）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C43；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C44；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
 - 什么以后再发明
 - 什么永远不要发明
+- 覆盖：课文 L10.3
 
 ---
 
