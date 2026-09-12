@@ -133,3 +133,4 @@
 - [babe-sold-as-grandpa](babe-sold-as-grandpa.md)
 - [justified-sold-as-finalized](justified-sold-as-finalized.md)
 - [owned-sold-as-fastpath](owned-sold-as-fastpath.md)
+- [stake-sold-as-validator-quorum](stake-sold-as-validator-quorum.md)

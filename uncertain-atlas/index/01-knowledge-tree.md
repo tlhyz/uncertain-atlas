@@ -247,7 +247,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M4.4 验证者集合与投票权 · 必学
 - validator set、voting power
 - 集合变更何时生效
-- 覆盖：课文 L4.5；生效延迟 `tracks/consensus/worked-example-validator-delay.md`（H 的更新：H+1 Next、H+2 计票、H+3 last_commit；不变量 35）
+- 覆盖：课文 L4.5；生效延迟 `tracks/consensus/worked-example-validator-delay.md`（H 的更新：H+1 Next、H+2 计票、H+3 last_commit；不变量 35）。NPoS 当选 ≠ 共识已经按质押加权：[`../tracks/consensus/worked-example-npos-equal-weight.md`](../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129；⅔ 验证者 ≠ ⅔ 质押）
 
 ### M4.5 ABCI：应用与共识分离 · 必学
 - 为什么这对「不确定」极有价值
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–128）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–129）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C132；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C133；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

@@ -65,6 +65,8 @@ XCM：跨共识消息，不是「同一 EVM 里转账」。
 中继：出块（BABE）与最终（GRANDPA）是两条并行独立服务。  
 GRANDPA 对链投票，祖先一次最终；最终头之后比主块，不比长度。与 Tendermint「每高一 commit」不同，不要混。  
 精读：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)（不变量 126）。  
+NPoS 按质押加权选人；当选之后官方对照写共识等权：一条链过超多数，数验证者，不数质押。Cosmos 对照才是按质押凑 ⅔。BABE 抽槽官方另写按质押，不要听成 GRANDPA 也按质押。  
+精读：[`../../tracks/consensus/worked-example-npos-equal-weight.md`](../../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129）。不抄验证者上限 / 提名数。  
 平行候选有独立的可用性/审批子协议，挂在中继最终性之下。
 
 ---

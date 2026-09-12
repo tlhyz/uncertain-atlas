@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–128。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–129。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -143,6 +143,7 @@
 | C130 | 126 出块≠已最终 | 文案把 BABE 出块写成已经 GRANDPA；或把最长链写成 hybrid 最终头之后的尺子；或把 BEEFY 绿写成已经解释了 GRANDPA；或把同路径每高 commit / Gasper 三词 / 平行链 backed 糊成「混合共识」一句 | 必须红 | 协议+文案 | wiki.polkadot.network learn-consensus / learn-comparisons-cosmos / glossary |
 | C131 | 127 头≠正当≠最终 | 文案把出块 / head / latest 写成已经 justified 或 finalized；或把 justified 写成已经不可逆；或把 RPC `safe` 写成官方已经等于 justified / finalized；或把一张 attestation 的头票写成已经投了最终；或与 22 / 24 / 26 / 126 糊成「PoS 最终」一句 | 必须红 | 协议+文案 | ethereum.org Gasper / PoS / attestations / JSON-RPC |
 | C132 | 128 owned≠快路径 | 文案把单地址所有写成已经走快路径；或把引用 shared 写成已经授权；或把进共识块写成这笔已被接受；或把客户端自己拼证书写成现行必经；或把 Mysticeti 测试 TPS 写成生产；或与 90 / 91 / 122 / 127 糊成「Sui 绕过共识」一句 | 必须红 | 协议+文案 | docs.sui.io object-ownership / consensus |
+| C133 | 129 当选≠按质押计票 | 文案把 NPoS 当选写成共识已经按质押加权；或把 ⅔ 质押写成 Polkadot 官方链投票已经过；或把提名时的加权写成当选后等权；或把 BABE 按质押抽槽写成 GRANDPA 也按质押；或把提名写成治理权已经交出；或与 22 / 110 / 126 / 127 糊成「PoS ⅔」一句 | 必须红 | 协议+文案 | wiki.polkadot.network learn-comparisons-cosmos / learn-consensus / learn-staking-advanced / learn-phragmen |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

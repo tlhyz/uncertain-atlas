@@ -115,4 +115,4 @@ Gasper 自己的三等是另一页：head ≠ justified ≠ finalized。精读�
 | 经济 | 「更新所以更安全」是广告 |
 
 **禁止假学习：** 「都是 BFT 所以最终性一样。」「HotStuff 更新所以更安全。」  
-**边界：** 不证论文、不列所有变体、不写未测的消息时延。不抄现行罚金。slash 谓词精读见 [`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。BABE ≠ GRANDPA 不在本课展开：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)。
+**边界：** 不证论文、不列所有变体、不写未测的消息时延。不抄现行罚金。slash 谓词精读见 [`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。BABE ≠ GRANDPA 不在本课展开：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)。超多数单位（验证者 vs 质押）见 [`../../tracks/consensus/worked-example-npos-equal-weight.md`](../../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129）。

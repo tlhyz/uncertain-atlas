@@ -64,7 +64,7 @@ New = {A,B,E,F}。
 ## F. 真实项目
 
 CometBFT + Cosmos SDK staking；Ethereum 验证者登记与 epoch 边界（另一套，见 L5.2，不要直接套 Tendermint 延迟）。  
-Polkadot 的 session / era 也是「何时换人」（档案）。
+Polkadot 的 session / era 也是「何时换人」（档案）。当选之后共识是否按质押加权，是另一句：[`../../tracks/consensus/worked-example-npos-equal-weight.md`](../../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129）。
 
 ---
 
@@ -108,5 +108,5 @@ Polkadot 的 session / era 也是「何时换人」（档案）。
 | 部署 | 节点是否加载了含新表的状态 |
 | 经济 | 质押进出、惩罚窗口 |
 
-**禁止假学习：** 「验证者名单在网站上。」「2/3 永远是人数的三分之二。」「Finalize 改了验证者，下一高度就按新名单投。」  
-**边界：** 不抄 Cosmos 解绑天数。轻客户端的 `trustingPeriod < unbondingPeriod` 与跳过重叠见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。Ethereum 弱主观性是亲戚、不是同一对象：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。
+**禁止假学习：** 「验证者名单在网站上。」「2/3 永远是人数的三分之二。」「2/3 永远是质押的三分之二。」「Finalize 改了验证者，下一高度就按新名单投。」  
+**边界：** 不抄 Cosmos 解绑天数。轻客户端的 `trustingPeriod < unbondingPeriod` 与跳过重叠见 [`../../tracks/light-clients/worked-example-bft-skip.md`](../../tracks/light-clients/worked-example-bft-skip.md)。Ethereum 弱主观性是亲戚、不是同一对象：[`../../tracks/finality/worked-example-weak-subjectivity.md`](../../tracks/finality/worked-example-weak-subjectivity.md)。超多数的单位必须点名：NPoS 当选后官方对照写验证者等权，Cosmos 对照写按质押，见 [`../../tracks/consensus/worked-example-npos-equal-weight.md`](../../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129）。本课仍只钉集合何时算数，不重讲 Phragmén。

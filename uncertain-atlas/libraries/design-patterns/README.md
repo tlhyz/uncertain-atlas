@@ -26,3 +26,4 @@
 - [split-production-from-finality](split-production-from-finality.md)
 - [name-the-confirmation-grade](name-the-confirmation-grade.md)
 - [name-the-ownership-path](name-the-ownership-path.md)
+- [name-the-quorum-unit](name-the-quorum-unit.md)

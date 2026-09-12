@@ -153,6 +153,7 @@
 122. 若拆出块与最终两套装置：用户可见的「到了」必须点名是出块还是最终（不变量 126）。BABE 出块不是已经 GRANDPA。最长链不是 hybrid 最终头之后的尺子。BEEFY 绿不是已经解释了 GRANDPA。第一版可以保持 CometBFT 式同路径出块+终局。不要抄槽秒数 / 百万块 / 超多数数字。精读：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)。这和每高度 commit（L4.6）、Gasper 三词（L5.2）、平行链管道（不变量 125）、出块还在≠纪元已转（不变量 110）、中继最终≠平行已出（不变量 114）不是同一句。  
 123. 若头可摆 + 检查点最终：用户可见的「到了」必须点名是 head / justified / finalized 中的哪一等（不变量 127）。出块不是已经 justified。justified 不是已经 finalized。JSON-RPC `latest` / `safe` / `finalized` 不是同一标签。一张 attestation 的头票不是已经投了最终。第一版可以不卖三等确认。不要抄槽秒数 / epoch 长度 / 美元。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)。这和 BABE≠GRANDPA（不变量 126）、弱主观性（不变量 24）、抽样委员会（不变量 22）、两票谓词（不变量 26）不是同一句。  
 124. 若做对象所有权 / 快路径：必须点名版本走快路径还是共识（不变量 128）。单地址所有不是已经走快路径。引用 shared 不是已经授权。进了共识块不是这笔已被接受。第一版可以不卖快路径 / party / shared 三套「到了」。不要抄测试 TPS。精读：[`../../tracks/parallelism/worked-example-owned-vs-fastpath.md`](../../tracks/parallelism/worked-example-owned-vs-fastpath.md)。这和 STM 跑完≠最终（不变量 122）、估值 0（不变量 90）、隔离拒证（不变量 91）、Gasper 三等（不变量 127）不是同一句。
+125. 若做提名选人 / 债券质押：必须先点名超多数的单位是验证者还是质押（不变量 129）。NPoS 当选不是共识票已经按质押加权。⅔ 验证者不是 ⅔ 质押。提名时的加权不是当选后的等权。BABE 按质押抽槽不是 GRANDPA 也按质押。提名不是治理权已经交出。第一版不要发明「所有 PoS 都按人数」或「所有 PoS 都按质押」。不要抄验证者上限 / 提名数 / 示例 DOT。精读：[`../../tracks/consensus/worked-example-npos-equal-weight.md`](../../tracks/consensus/worked-example-npos-equal-weight.md)。这和出块≠最终（不变量 126）、选举地板（不变量 110）、抽样委员会（不变量 22）、Gasper ⅔ 总质押（不变量 127）不是同一句。
 
 **以后再发明**
 
@@ -241,6 +242,7 @@
 - 把 BABE 出块写成已经 GRANDPA 最终，或把最长链写成 hybrid 的分叉选择，或把 BEEFY 绿写成已经解释了 GRANDPA。  
 - 把出块 / justified / RPC `safe` 写成已经 finalized，或把 `safe` 写成官方已经等于 justified。  
 - 把单地址所有写成已经走快路径，或把引用 shared 写成已经授权，或把进共识块写成这笔已被接受。
+- 把 NPoS 当选写成共识已经按质押加权，或把 ⅔ 质押写成官方链投票已经过，或把 BABE 按质押抽槽写成 GRANDPA 也按质押，或把提名写成治理权已经交出。
 
 ---
 
@@ -291,7 +293,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百二十四条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百二十五条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

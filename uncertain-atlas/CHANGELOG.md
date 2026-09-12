@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 130）
+
+- Polkadot 工作实例：NPoS 当选不是共识票已经按质押加权。⅔ 验证者不是 ⅔ 质押。提名时的加权不是当选后的等权。BABE 按质押抽槽不是 GRANDPA 也按质押。出处 Wiki Cosmos 对照 / Consensus / Advanced Staking / Phragmén。
+- 不变量 129；语料 C133；模式 name-the-quorum-unit；反模式 stake-sold-as-validator-quorum；L10.3 第 125 条。填 L4.1 / L4.5 / L4.6 / L7.3 / Polkadot 档案 §6 / 共识表 / 经济表 / 停链面地图。
+- 不抄验证者上限 / 提名上限 / 选举条数 / 示例 DOT。不写怎样冷冻或插队。不编博物馆页。不与 22 / 110 / 126 / 127 糊成一句。BABE「按质押抽槽」官方句单独留着，不改写成等权。
+
 ## 2026-09-12（续 129）
 
 - Sui 工作实例：单地址所有不是已经走快路径。引用 shared 不是已经授权。进了共识块不是这笔已被接受。现行客户端不自己拼证书。出处官方 Object Ownership + Consensus（Transaction Driver）。
