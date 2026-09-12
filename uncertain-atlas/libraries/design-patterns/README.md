@@ -153,3 +153,4 @@
 - [name-the-mempool-dump](name-the-mempool-dump.md)
 - [name-the-reject](name-the-reject.md)
 - [name-the-payment-uri](name-the-payment-uri.md)
+- [name-the-disabletx](name-the-disabletx.md)
