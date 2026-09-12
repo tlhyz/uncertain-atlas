@@ -95,6 +95,7 @@
 3. **calldata 地板 ≠ 执行气**（不变量 197）：执行气上的 calldata 下限。本页是 blob 日程。
 4. **基础费 ≠ 小费**（不变量 158）：1559 拆分。本页是 blob 基础费对空/满的不对称，不是 tip。
 5. **气 ≠ 墙钟**（不变量 101）：本页改吞吐日程，不是把气写成秒。
+6. **blob 底价 ≠ 已并账**（不变量 201）：超额还不减目标，不是日程数字已经改了。本页是目标/上限。那一页是底价。
 
 不要抄目标条数 / 上限条数 / blob 气上限 / 调价分母 / 百分比。不要写怎样灌满 blob、怎样空块压费，或怎样给本地出块加旗标。不编博物馆页。不另写 19 节。EIP-4844 气种、PeerDAS 列抽样、EIP-7623 calldata 地板是另一对象。气种精读：[`worked-example-blob-fee-vs-gas.md`](worked-example-blob-fee-vs-gas.md)（不变量 145）。抽样精读：[`worked-example-blob-vs-das.md`](worked-example-blob-vs-das.md)（不变量 23）。
 

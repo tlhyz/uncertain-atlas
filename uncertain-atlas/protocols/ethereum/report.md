@@ -134,7 +134,7 @@ CL 的 `DomainType`（proposer ≠ attester；Altair 另加 `DOMAIN_SYNC_COMMITT
 | 通用计算 | 规范与攻击面爆炸、gas 计量、状态增长 |
 | 多客户端 | 必须极硬的规范，否则分裂 |
 | PoS 最终性 | 弱主观性、质押政治、惩罚误伤 |
-| blobs / L2 扩容 | DA 与结算语义更绕。4844 sidecar ≠ PeerDAS 列抽样 ≠ Celestia DAS；服务窗 4096 epoch。见 [`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)。blob gas ≠ 普通执行 gas：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。看见抬高 blob 目标/上限 ≠ 已经改了两套气 / 已经是 PeerDAS：[`../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)（不变量 200） |
+| blobs / L2 扩容 | DA 与结算语义更绕。4844 sidecar ≠ PeerDAS 列抽样 ≠ Celestia DAS；服务窗 4096 epoch。见 [`../../tracks/light-clients/worked-example-blob-vs-das.md`](../../tracks/light-clients/worked-example-blob-vs-das.md)。blob gas ≠ 普通执行 gas：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。看见抬高 blob 目标/上限 ≠ 已经改了两套气 / 已经是 PeerDAS：[`../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)（不变量 200）。看见 blob 底价 ≠ 已经并成一套气 / 已经改了日程：[`../../tracks/light-clients/worked-example-blob-reserve-vs-execution.md`](../../tracks/light-clients/worked-example-blob-reserve-vs-execution.md)（不变量 201） |
 
 ---
 

@@ -98,3 +98,4 @@
 - [name-the-committee-index](name-the-committee-index.md)
 - [name-the-bls-precompile](name-the-bls-precompile.md)
 - [name-the-blob-schedule](name-the-blob-schedule.md)
+- [name-the-blob-reserve](name-the-blob-reserve.md)
