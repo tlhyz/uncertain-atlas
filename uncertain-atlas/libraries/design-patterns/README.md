@@ -215,3 +215,4 @@
 - [name-the-maxgas](name-the-maxgas.md)
 - [name-the-exectxresult](name-the-exectxresult.md)
 - [name-the-checktxresponse](name-the-checktxresponse.md)
+- [name-the-validatorupdate](name-the-validatorupdate.md)

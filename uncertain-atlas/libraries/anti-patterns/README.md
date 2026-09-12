@@ -320,3 +320,4 @@
 - [maxgas-sold-as-enforced](maxgas-sold-as-enforced.md)
 - [exectxresult-sold-as-consensus](exectxresult-sold-as-consensus.md)
 - [checktxresponse-sold-as-exec](checktxresponse-sold-as-exec.md)
+- [validatorupdate-sold-as-set](validatorupdate-sold-as-set.md)

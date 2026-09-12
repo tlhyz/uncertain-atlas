@@ -47,6 +47,8 @@ MaxGas 不是已经在执行：[`../../tracks/implementation/worked-example-maxg
 
 CheckTx 的 Data 不是已经被引擎用了：[`../../tracks/implementation/worked-example-checktxresponse-vs-exec.md`](../../tracks/implementation/worked-example-checktxresponse-vs-exec.md)（不变量 317）。看见各节点 Data 不一样不是已经分叉。看见 Priority 不是已经是共识顺序。
 
+InitChain 空名单不是已经没有集合：[`../../tracks/implementation/worked-example-validatorupdate-vs-set.md`](../../tracks/implementation/worked-example-validatorupdate-vs-set.md)（不变量 318）。看见同一批重复公钥不是已经能恢复。看见 power 写成 0 不是已经删掉不在集合里的人。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

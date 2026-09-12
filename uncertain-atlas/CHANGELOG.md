@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 319）
+
+- CometBFT ValidatorUpdate 工作实例（官方 Requirements for the Application Updating the Validator Set，实现 / ValidatorUpdate，不另写 19 节）：看见 InitChain 回了空名单不是已经没有集合。看见同一批重复公钥不是已经能恢复。看见 power 写成 0 不是已经删掉不在集合里的人。ValidatorUpdate 不是不变量 35，也不是不变量 303，也不是不变量 302。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 318；语料 C322；模式 name-the-validatorupdate；反模式 validatorupdate-sold-as-set；L10.3 第 314 条。填 L4.4 / L4.5 / CometBFT 档案 ValidatorUpdate / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样编 ValidatorUpdate、怎样算总权、公钥类型表。不把 MaxTotalVotingPower 当不确定默认。不编博物馆页。不另写 19 节。不与 35 / 303 / 302 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、mempool。生效延迟 / 创世空名单 / 换轮标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 318）
 
 - CometBFT CheckTxResponse 工作实例（官方 Requirements for the Application，实现 / CheckTxResponse，不另写 19 节）：看见 CheckTx 的 Data 不是已经被引擎用了。看见各节点 Data 不一样不是已经分叉。看见 Priority 不是已经是共识顺序。CheckTxResponse 不是不变量 316，也不是不变量 312，也不是不变量 301。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
