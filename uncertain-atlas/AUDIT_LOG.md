@@ -984,3 +984,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A336 | 记录 | 004 Critical；001 正文 High、列表徽章 Critical；无 CVE；绕过是许可开通道 | 两页同句；不写怎样构造 ack；不抄中间件与主网测试链 |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 02:45 UTC · 超时挂钩不是 ICS-20 已经原子
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A337 | 高 | ibc-hooks 会被写成 ICS-20 超时已原子 | 博物馆 ASA-2024-007：OnTimeout 可在承诺删除前再执行 MsgTimeout |
+| A338 | 中 | 会和 ack 确定性 / 提交≠兑付 / 供给守恒糊 | 对照表；不变量 78；语料 C82 |
+| A339 | 中 | 许可上传会被写成重入已不可能 | 官方：许可上传仍强烈建议打补丁 |
+| A340 | 记录 | Critical；无 CVE；CWE-696；须同时开 IBC + CosmWasm + hooks 包 ICS-20 | 不写怎样重入；不抄 CosmWasm；不写 soft-patch 内容 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

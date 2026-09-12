@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 79）
+
+- 博物馆 ASA-2024-007 / GHSA-j496-crgh-34mx（Critical）：ibc-hooks 的 `OnTimeout` 可能在包承诺删除前再执行同一 `MsgTimeout`，ICS-20 超时逻辑可能递归，托管可能丢资金或意外铸币。
+- 须同时开 IBC、CosmWasm 上传、ibc-hooks 包裹 ICS-20。许可上传不是已安全。
+- 不变量 78；语料 C82；反模式 timeout-hook-sold-as-atomic；L10.3 第 74 条。
+- 对照不变量 77 / 9 / 2。不写怎样重入。不抄 CosmWasm。第一版可以不装挂钩。
+
 ## 2026-09-12（续 78）
 
 - 博物馆 ISA-2025-001 / GHSA-4wf3-5qj9-368v 与 ASA-2025-004 / GHSA-jg6f-48ff-5xrw：IBC acknowledgement JSON 反序列化非确定可停链。
