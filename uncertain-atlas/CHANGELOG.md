@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 81）
+
+- 博物馆 ASA-2023-001 / GHSA-23px-mw2p-46qm（正文 Medium，徽章 Moderate）：Cosmovisor < v1.0.0 可 DoS；打开 `DAEMON_ALLOW_DOWNLOAD_BINARIES`（非默认）可走宿主机 RCE。
+- 官方文档：该开关本意给全节点不是验证者；校验和默认不强制。分叉 SDK 在能升之前应停用 Cosmovisor。
+- 不变量 80；语料 C84；反模式 download-sold-as-upgrade；L10.3 第 76 条。
+- 对照 L9.4 / 不变量 14 / 79。不写怎样触发下载。不把管家写成共识。
+
 ## 2026-09-12（续 80）
 
 - 博物馆 Dragonberry：ICS-23 描述语言缺 soundness，伪造缺席证明可让同一笔 ICS-20 既成功又失败，托管可被迭代抽空。官方标 critical。

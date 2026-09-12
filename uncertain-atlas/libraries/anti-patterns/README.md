@@ -84,3 +84,4 @@
 - [ack-json-sold-as-deterministic](ack-json-sold-as-deterministic.md)
 - [timeout-hook-sold-as-atomic](timeout-hook-sold-as-atomic.md)
 - [ics23-sold-as-sound](ics23-sold-as-sound.md)
+- [download-sold-as-upgrade](download-sold-as-upgrade.md)

@@ -101,4 +101,4 @@ Bitcoin 软分叉文化；Ethereum 硬分叉协调 + 社会共识；Cosmos 链�
 | 经济 | 治理代币 ≠ 协议安全；见反模式 admin-god-key |
 
 **禁止假学习：** 「去中心化所以没有管理员。」「紧急钥只在紧急时用，所以安全。」  
-**边界：** 不写某 DAO 的投票术；不把 token 治理当协议安全证明。私下热补 + 依赖 replace ≠ 证明库已换：见博物馆 [Dragonberry](../../tracks/failure-museum/dragonberry.md)，不是本课的软/硬分叉分类。精读：[`../../tracks/upgrades/worked-example.md`](../../tracks/upgrades/worked-example.md)。
+**边界：** 不写某 DAO 的投票术；不把 token 治理当协议安全证明。私下热补 + 依赖 replace ≠ 证明库已换：见博物馆 [Dragonberry](../../tracks/failure-museum/dragonberry.md)。升级高度上的进程管理器 ≠ 可信下载通道：见 [ASA-2023-001](../../tracks/failure-museum/asa-2023-001.md)。两句都不是本课的软/硬分叉分类。精读：[`../../tracks/upgrades/worked-example.md`](../../tracks/upgrades/worked-example.md)。
