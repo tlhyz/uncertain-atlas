@@ -177,10 +177,17 @@ def fetch_gate_candles_capped(
     while len(rows) < max_bars and pages < max_pages:
         pages += 1
         remain = max_bars - len(rows)
-        batch = _http_get_json(
-            url,
-            {id_key: pair, "interval": interval, "to": cursor_to, "limit": min(1000, remain)},
-        )
+        try:
+            batch = _http_get_json(
+                url,
+                {id_key: pair, "interval": interval, "to": cursor_to, "limit": min(1000, remain)},
+            )
+        except Exception as exc:  # noqa: BLE001
+            msg = str(exc).lower()
+            if rows and ("400" in msg or "too long ago" in msg or "invalid_param" in msg):
+                print(f"[ab-data] stop paging {market} {pair} {interval}: {exc}")
+                break
+            raise
         if not batch:
             break
         parsed = parse(batch)
@@ -347,7 +354,17 @@ def load_pair_data(
 
     etf = fetch_series_cached(pair.etf_spot, interval, "spot", cache_only=cache_only)
     perp = fetch_series_cached(pair.perp, interval, "futures", cache_only=cache_only)
-    spot = fetch_series_cached(pair.underlying_spot, interval, "spot", cache_only=cache_only)
+    try:
+        spot = fetch_series_cached(pair.underlying_spot, interval, "spot", cache_only=cache_only)
+        spot.attrs["underlying_source"] = "gate_spot"
+    except Exception as exc:  # noqa: BLE001
+        # Equity-linked tokens (SOXL/SNXX/AAOI) may have a perp but no spot pair.
+        # Use the real perpetual last-price path — not a fabricated series.
+        print(f"[ab-data] {pair.name}: no spot underlying ({exc}); using real perp prices")
+        spot = perp.copy()
+        spot.attrs["market"] = "futures"
+        spot.attrs["underlying_source"] = "gate_perp_last_no_spot_pair"
+        spot.attrs["symbol"] = pair.perp
     funding = fetch_funding_cached(pair.perp, cache_only=cache_only)
     if funding is None or funding.empty:
         raise RuntimeError(f"{pair.perp}: real funding history unavailable — refusing synthetic substitute")

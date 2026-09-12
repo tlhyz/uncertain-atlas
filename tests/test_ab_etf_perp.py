@@ -183,6 +183,35 @@ def test_soxl_has_real_perp_comparator():
     assert PAIR_BY_NAME["AAOI"].has_perp
 
 
+def test_pagination_keeps_partial_on_too_long_ago(monkeypatch):
+    from qtb.ab import data as abdata
+
+    calls = {"n": 0}
+
+    def fake_get(url, params):
+        calls["n"] += 1
+        if calls["n"] >= 3:
+            raise RuntimeError("400 Candlestick too long ago")
+        t = int(params["to"])
+        return [
+            {
+                "t": t - i * 3600,
+                "o": "1",
+                "h": "1",
+                "l": "1",
+                "c": "1",
+                "v": 1,
+                "sum": 1,
+            }
+            for i in range(1000)
+        ]
+
+    monkeypatch.setattr(abdata, "_http_get_json", fake_get)
+    df = abdata.fetch_gate_candles_capped("BTC3L_USDT", "1h", "spot", max_bars=5000, max_pages=8)
+    assert len(df) > 0
+    assert calls["n"] >= 2
+
+
 def test_cash_benchmark_flat():
     r = run_cash(_bars([10, 11, 9, 12]), 1000.0)
     m = summarize(r, 1000.0)
