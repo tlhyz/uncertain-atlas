@@ -109,6 +109,8 @@ MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交�
 
 正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept：[`../../tracks/implementation/worked-example-req6-coherence-vs-accept.md`](../../tracks/implementation/worked-example-req6-coherence-vs-accept.md)（不变量 348）。看见 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题。看见会面对和 Req 5 同一类活性问题不是已经丢了安全性。
 
+Prepare 不得改已提交状态不是已经立刻执行就已经交差：[`../../tracks/implementation/worked-example-req9-noside-vs-commit.md`](../../tracks/implementation/worked-example-req9-noside-vs-commit.md)（不变量 349）。看见 Process 不得改已提交状态不是已经 Accept 就已经改了。看见 Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

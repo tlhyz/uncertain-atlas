@@ -350,6 +350,7 @@
 | 341 | ABCI 2.0 协调升级被写成已经只改启用高度 | 协议 + 文案 | 看见必须协调升级 / h_e 必须高于当前 / 引擎按当前高度决定存什么要什么 / ABCI 2.0 协调升级当成已经只改 VoteExtensionsEnableHeight 或已经能写成当前高度或已经按创世配好了 | 不变量 346；语料 C350 |
 | 342 | Prepare–Process 一致性被写成已经是任意块都会 Accept | 协议 + 文案 | 看见正确提议者的准备提案必须被正确接收者 Accept / Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 / Req 3 是大量测试和自动验证的目标 / Prepare–Process 一致性当成已经是任意块都会 Accept 或已经只是活性问题或已经测过 | 不变量 347；语料 C351 |
 | 343 | Extend–Verify 一致性被写成已经是任意扩展都会 Accept | 协议 + 文案 | 看见正确进程交出的扩展必须被正确接收者 Verify Accept / Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 / 会面对和 Req 5 同一类活性问题 / Extend–Verify 一致性当成已经是任意扩展都会 Accept 或已经只是活性问题或已经丢了安全性 | 不变量 348；语料 C352 |
+| 344 | 四门无副作用被写成已经立刻执行就已经交差 | 协议 + 文案 | 看见 Prepare 不得改已提交状态 / Process 不得改已提交状态 / Extend 和 Verify 不得改已提交状态 / 四门无副作用当成已经立刻执行就已经交差或已经 Accept 就已经改了或已经签了扩展就已经进状态 | 不变量 349；语料 C353 |
 
 ## 不自动覆盖
 

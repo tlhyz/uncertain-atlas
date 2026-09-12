@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 350）
+
+- CometBFT 四门无副作用工作实例（官方 Requirements for the Application Formal Requirement 9 [*all*, no-side-effects]，实现 / 四门无副作用，不另写 19 节）：看见 Prepare 不得改已提交状态不是已经立刻执行就已经交差。看见 Process 不得改已提交状态不是已经 Accept 就已经改了。看见 Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态。四门无副作用不是不变量 33，也不是不变量 311，也不是不变量 34。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 349；语料 C353；模式 name-the-req9-noside；反模式 req9noside-sold-as-commit；L10.3 第 345 条。填 L4.4 / CometBFT 档案四门无副作用 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样守这道禁令、怎样写四门、怎样测副作用。不编博物馆页。不另写 19 节。不与 33 / 311 / 34 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。四门、候选状态、扩展不进本高状态标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 349）
 
 - CometBFT Extend–Verify 一致性工作实例（官方 Requirements for the Application Formal Requirement 6 [`ExtendVote`, `VerifyVoteExtension`, coherence]，实现 / Extend–Verify 一致性，不另写 19 节）：看见正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept。看见 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题。看见会面对和 Req 5 同一类活性问题不是已经丢了安全性。Extend–Verify 一致性不是不变量 34，也不是不变量 341，也不是不变量 347。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

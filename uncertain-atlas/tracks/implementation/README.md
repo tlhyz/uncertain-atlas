@@ -51,6 +51,7 @@
 - [`worked-example-abci20-upgrade-vs-height.md`](worked-example-abci20-upgrade-vs-height.md) — 必须协调升级 ≠ 已经只改 VoteExtensionsEnableHeight；h_e 必须高于当前 ≠ 已经能写成当前高度；引擎按当前高度决定存什么要什么 ≠ 已经按创世配好了（不变量 346）
 - [`worked-example-req3-coherence-vs-accept.md`](worked-example-req3-coherence-vs-accept.md) — 正确提议者的准备提案必须被正确接收者 Accept ≠ 已经是任意块都会 Accept；Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 ≠ 已经只是活性问题；Req 3 是大量测试和自动验证的目标 ≠ 已经测过（不变量 347）
 - [`worked-example-req6-coherence-vs-accept.md`](worked-example-req6-coherence-vs-accept.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept ≠ 已经是任意扩展都会 Accept；Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 ≠ 已经只是活性问题；会面对和 Req 5 同一类活性问题 ≠ 已经丢了安全性（不变量 348）
+- [`worked-example-req9-noside-vs-commit.md`](worked-example-req9-noside-vs-commit.md) — Prepare 不得改已提交状态 ≠ 已经立刻执行就已经交差；Process 不得改已提交状态 ≠ 已经 Accept 就已经改了；Extend 和 Verify 不得改已提交状态 ≠ 已经签了扩展就已经进状态（不变量 349）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
