@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 305）
+
+- CometBFT 签字校验工作实例（官方 Validator Signing，共识协议，不另写 19 节）：看见票或提案带了 Timestamp 不是已经验过这个时间。看见冲突提案不是已经有证据。看见非法票被断开不是已经罚了签的人。签字校验不是不变量 40，也不是不变量 21，也不是不变量 19。出处 github.com/cometbft/cometbft spec/consensus/signing.md。
+- 不变量 304；语料 C308；模式 name-the-unchecked-stamp；反模式 timestamp-sold-as-checked；L10.3 第 300 条。填 L4.2 / CometBFT 档案签字段 / 共识表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄类型字节、链号长度、可恢复签编码。不写怎样记上次签过的高度轮类型。不写 amnesia 分类。不编博物馆页。不另写 19 节。不与 40 / 21 / 19 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4。块时间算法 / 双签通知 / 上次签过的状态标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 304）
 
 - CometBFT 创世工作实例（官方 Genesis，实现 / 创世对象，不另写 19 节）：看见创世 app_state 不是已经验过应用状态。看见节点起来不是已经过了 genesis_time。看见创世 validators 空不是已经没有集合。创世不是不变量 38，也不是不变量 147，也不是不变量 300。出处 github.com/cometbft/cometbft spec/core/genesis.md。

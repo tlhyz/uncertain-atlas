@@ -306,3 +306,4 @@
 - [proposed-sold-as-removed](proposed-sold-as-removed.md)
 - [rejoin-sold-as-head](rejoin-sold-as-head.md)
 - [appstate-sold-as-validated](appstate-sold-as-validated.md)
+- [timestamp-sold-as-checked](timestamp-sold-as-checked.md)

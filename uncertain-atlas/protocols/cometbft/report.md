@@ -126,7 +126,7 @@ State sync：装应用快照、不重放历史块；只有轻验 `AppHash` 可�
 | 应用层签名 | 用户交易，引擎不当作共识票 |
 
 算法可换，但消息域必须把 vote 和 tx 分开。  
-SignBytes 是 `CanonicalVote`（type / height / round / block_id / timestamp / chain_id），不是块内 Vote 的普通编码。见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)。
+SignBytes 是 `CanonicalVote`（type / height / round / block_id / timestamp / chain_id），不是块内 Vote 的普通编码。见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)。票或提案带了 Timestamp 不是已经验过这个时间；冲突提案不是已经有证据：见 [`../../tracks/consensus/worked-example-vote-ts-vs-checked.md`](../../tracks/consensus/worked-example-vote-ts-vs-checked.md)（不变量 304）。
 
 ---
 

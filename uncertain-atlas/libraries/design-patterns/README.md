@@ -201,3 +201,4 @@
 - [name-the-kept-pool](name-the-kept-pool.md)
 - [name-the-same-set](name-the-same-set.md)
 - [name-the-genesis](name-the-genesis.md)
+- [name-the-unchecked-stamp](name-the-unchecked-stamp.md)
