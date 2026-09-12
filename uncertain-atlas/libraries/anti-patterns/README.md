@@ -192,3 +192,4 @@
 - [coinbase-sold-as-prefilled](coinbase-sold-as-prefilled.md)
 - [reserved-sold-as-eof](reserved-sold-as-eof.md)
 - [scriptpath-sold-as-tapscript](scriptpath-sold-as-tapscript.md)
+- [auth-sold-as-delegated](auth-sold-as-delegated.md)
