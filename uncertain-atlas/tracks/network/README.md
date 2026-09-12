@@ -9,4 +9,6 @@
 局域网打洞辅助 ≠ P2P：[`../failure-museum/cve-2015-20111.md`](../failure-museum/cve-2015-20111.md)（默认关 UPnP 是结构风险决策）。  
 出站代理 ≠ 对等节点：[`../failure-museum/cve-2017-18350.md`](../failure-museum/cve-2017-18350.md)（须先配置；明文网上的任意代理本身就可被截获）。  
 宣布新块 ≠ 已收到：[`../failure-museum/cve-2024-52922.md`](../failure-museum/cve-2024-52922.md)。  
-拼块 ≠ 共识验块：[`worked-example-compact-block.md`](worked-example-compact-block.md)（52922 / 35202 / 52921）。
+拼块 ≠ 共识验块：[`worked-example-compact-block.md`](worked-example-compact-block.md)（52922 / 35202 / 52921）。  
+分片外层下标 ≠ 证明下标：[`../failure-museum/asa-2025-002.md`](../failure-museum/asa-2025-002.md)（验根通过不是第 i 片已对齐）。  
+结构必须先验再传：[`../failure-museum/asa-2025-003.md`](../failure-museum/asa-2025-003.md)（非法 BitArray 先流言会停网）。

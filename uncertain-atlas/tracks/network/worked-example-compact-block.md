@@ -2,7 +2,8 @@
 
 > **事实 / 推断 / 建议** 已分开。
 > 对照：[宣布 ≠ 收到](../failure-museum/cve-2024-52922.md)、[第二次 blocktxn](../failure-museum/cve-2024-35202.md)、[变异清别人下载](../failure-museum/cve-2024-52921.md)、[Merkle 唯一](../failure-museum/cve-2012-2459.md)、[筐](../mempool/worked-example.md)。
-> 本页钉 **compact / 部分块是传播对象**。短 ID 长度、并行路数不当共识。不写利用。
+> 本页钉 **compact / 部分块是传播对象**。短 ID 长度、并行路数不当共识。不写利用。  
+> 亲戚：分片外层下标必须等于证明下标，见 [ASA-2025-002](../failure-museum/asa-2025-002.md)（不变量 59）。
 
 ---
 

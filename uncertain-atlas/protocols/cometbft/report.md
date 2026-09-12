@@ -173,6 +173,8 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 已收：[ASA-2024-009](../../tracks/failure-museum/asa-2024-009.md) — 轻验集合对上 ≠ 提议者选择已对齐。  
 已收：[ASA-2024-011](../../tracks/failure-museum/asa-2024-011.md) — 扩展快路径跳过普通票的发送者下标检查。  
 已收：[ASA-2024-001](../../tracks/failure-museum/asa-2024-001.md) — 治理改扩展启用高度，验证写错则 panic 停链。  
+已收：[ASA-2025-002](../../tracks/failure-museum/asa-2025-002.md) — 分片外层下标必须等于证明下标。  
+已收：[ASA-2025-003](../../tracks/failure-museum/asa-2025-003.md) — 位图结构必须先验再传，否则最坏停网。  
 **待补：** 其它案必须链到官方 postmortem 或安全公告。  
 方向：halt（活性）、应用非确定性导致的分裂。
 

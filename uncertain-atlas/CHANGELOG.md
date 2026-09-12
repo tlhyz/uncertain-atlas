@@ -2,6 +2,22 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 61）
+
+- 博物馆 ASA-2025-003 / GHSA-hrhf-2vcr-ghch（High）：`BitArray` 的 `Bits` 与 `Elems` 数量对不上时，以前验证不够。
+- 官方最坏：先把非法状态流言给邻居，再自己处理 → 网络停，而不是只有接收者崩。
+- 不变量 60；语料 C64；反模式 bitarray-sold-as-gossip-ok；L10.3 第 56 条。
+- 对照不变量 59 / 57 / 45。咨询未给 CVE。iptables ban 是部署止血。
+- 不写怎样拼对不上的位图。
+
+## 2026-09-12（续 60）
+
+- 博物馆 ASA-2025-002 / GHSA-r3r4-g7hq-pq4f（High）：以前不验 `Part.Index == Part.Proof.Index`。用另一片的证明仍接受。
+- 官方后果：再流言无效片；标已收到并抑制正确片。修法是强制两下标相等。无绕过。
+- 不变量 59；语料 C63；反模式 part-index-sold-as-proof-index；L10.3 第 55 条。
+- 对照不变量 12 / 37 / 39 / 36。咨询未给 CVE。
+- 不写对调证明；不抄分片字节大小。
+
 ## 2026-09-12（续 59）
 
 - 博物馆 ASA-2024-001 / GHSA-qr8r-m495-7hc4（High）：ABCI2 链上治理改 `VoteExtensionsEnableHeight`，当时验证处理不了这次提案，节点可能 panic，网络停。

@@ -63,3 +63,5 @@
 - [apphash-sold-as-proposer](apphash-sold-as-proposer.md)
 - [extension-path-sold-as-checked](extension-path-sold-as-checked.md)
 - [enable-height-sold-as-safe](enable-height-sold-as-safe.md)
+- [part-index-sold-as-proof-index](part-index-sold-as-proof-index.md)
+- [bitarray-sold-as-gossip-ok](bitarray-sold-as-gossip-ok.md)
