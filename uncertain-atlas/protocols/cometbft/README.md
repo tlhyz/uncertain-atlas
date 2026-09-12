@@ -123,6 +123,8 @@ Process 调用是同步的不是已经能在返回之后再改裁决：[`../../t
 
 从提案拿掉 tx 不是已经从内存池删掉：[`../../tracks/implementation/worked-example-prepare-drop-vs-mempool.md`](../../tracks/implementation/worked-example-prepare-drop-vs-mempool.md)（不变量 355）。看见往提案加了一笔新的不是已经进了内存池。看见把 t1 改成 t2 不是已经还能按 t1 查到。
 
+validValue 非 nil 不是已经还会调 Prepare：[`../../tracks/implementation/worked-example-validvalue-vs-prepare.md`](../../tracks/implementation/worked-example-validvalue-vs-prepare.md)（不变量 356）。看见自己是提议者不是已经每轮都会调 Prepare。看见没调 Prepare 不是已经又装了一份 raw 提案。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

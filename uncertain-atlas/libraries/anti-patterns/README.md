@@ -358,3 +358,4 @@
 - [verifywhen-sold-as-skipped](verifywhen-sold-as-skipped.md)
 - [processwhen-sold-as-later](processwhen-sold-as-later.md)
 - [preparedrop-sold-as-evicted](preparedrop-sold-as-evicted.md)
+- [validvalue-sold-as-prepared](validvalue-sold-as-prepared.md)

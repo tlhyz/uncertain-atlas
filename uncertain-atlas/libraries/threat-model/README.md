@@ -357,6 +357,7 @@
 | 348 | Verify 何时调用被写成已经跳过 Verify | 协议 + 文案 | 看见空扩展仍会调 Verify / 不对本进程自己发出的 Precommit 调用 / 请求里的 hash / Verify 何时调用当成已经跳过 Verify 或已经自己验过或已经对该块跑过 Process | 不变量 353；语料 C357 |
 | 349 | Process 何时调用被写成已经能稍后改裁决 | 协议 + 文案 | 看见 Process 调用是同步的 / 只做基本检查再异步 Process / 非验证者可以立刻回 ACCEPT / Process 何时调用当成已经能在返回之后再改裁决或已经还能再 Reject 或已经验过这块 | 不变量 354；语料 C358 |
 | 350 | Prepare 改列表被写成已经从内存池删掉 | 协议 + 文案 | 看见从提案拿掉 tx / 往提案加了一笔新的 / 把 t1 改成 t2 / Prepare 改列表当成已经从内存池删掉或已经进了内存池或已经还能按 t1 查到 | 不变量 355；语料 C359 |
+| 351 | validValue 跳过 Prepare 被写成已经还会调 Prepare | 协议 + 文案 | 看见 validValue 非 nil / 自己是提议者 / 没调 Prepare / validValue 跳过 Prepare 当成已经还会调 Prepare 或已经每轮都会调 Prepare 或已经又装了一份 raw 提案 | 不变量 356；语料 C360 |
 
 ## 不自动覆盖
 

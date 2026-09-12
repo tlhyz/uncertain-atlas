@@ -3751,6 +3751,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1712 | 高 | 看见把 t1 改成 t2 / 看见 t1 没进块 会被写成已经还能按 t1 查到，或当成已经有人知道 t2 来自 t1 | 官方：拿掉再加可能丢掉可追踪性；除非应用自己记，没有组件知道派生 |
 | A1713 | 中 | 怎样改 Prepare 列表 / 怎样记派生哈希 / 怎样再检踢池会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1714 | 记录 | 会与 301 / 345 / 33 糊成「看见本块不提就已经从池里删掉」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 改列表 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。提案收了 / 整池可见 / 四门标成另一对象 |
+| A1715 | 高 | 看见 validValue 非 nil / 看见本轮直接用它 会被写成已经还会调 Prepare，或当成已经能再改列表 | 工作实例：abci++_methods PrepareProposal When 官方写 validValue 非 nil 时用它当提案，不再调 PrepareProposal |
+| A1716 | 高 | 看见只有提议者且 validValue 为 nil 才会调 Prepare / 看见自己是提议者 会被写成已经每轮都会调 Prepare，或当成已经交差 | 官方：只有提议者且 validValue 为 nil 才走 Prepare 那条路 |
+| A1717 | 高 | 看见没调 Prepare / 看见不会再从池子按优先级收交易 会被写成已经又装了一份 raw 提案，或当成已经从提案拿掉 tx | 官方：只有走 Prepare 那条路时才从内存池按优先级收未决交易并造头 |
+| A1718 | 中 | 怎样设 validValue / 怎样从池子收交易 / 怎样造头会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1719 | 记录 | 会与 311 / 338 / 355 糊成「看见本轮直接用它就已经还会调 Prepare」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 validValue 跳过 Prepare / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。候选状态 / Prepare 确定性 / 从提案拿掉标成另一对象 |
 
 
 

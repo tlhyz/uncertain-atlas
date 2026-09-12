@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 357）
+
+- CometBFT validValue 跳过 Prepare 工作实例（官方 ABCI++ Methods PrepareProposal When，实现 / validValue 跳过 Prepare，不另写 19 节）：看见 validValue 非 nil 不是已经还会调 Prepare。看见自己是提议者不是已经每轮都会调 Prepare。看见没调 Prepare 不是已经又装了一份 raw 提案。validValue 跳过 Prepare 不是不变量 311，也不是不变量 338，也不是不变量 355。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 356；语料 C360；模式 name-the-valid-value；反模式 validvalue-sold-as-prepared；L10.3 第 352 条。填 L4.4 / CometBFT 档案 validValue 跳过 Prepare / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样设 validValue、怎样从池子收交易、怎样造头。不编博物馆页。不另写 19 节。不与 311 / 338 / 355 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。候选状态、Prepare 确定性、从提案拿掉标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 356）
 
 - CometBFT Prepare 改列表工作实例（官方 ABCI++ Methods PrepareProposal Usage，实现 / Prepare 改列表，不另写 19 节）：看见从提案拿掉 tx 不是已经从内存池删掉。看见往提案加了一笔新的不是已经进了内存池。看见把 t1 改成 t2 不是已经还能按 t1 查到。Prepare 改列表不是不变量 301，也不是不变量 345，也不是不变量 33。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
