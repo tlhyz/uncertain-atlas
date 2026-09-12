@@ -49,3 +49,4 @@
 - [reject-sold-as-no-disk](reject-sold-as-no-disk.md)
 - [early-return-sold-as-joined](early-return-sold-as-joined.md)
 - [reject-without-ban-sold-as-free](reject-without-ban-sold-as-free.md)
+- [inv-sold-as-free](inv-sold-as-free.md)
