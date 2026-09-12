@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 347）
+
+- CometBFT ABCI 2.0 协调升级工作实例（官方 Requirements for the Application Application configuration required to switch to ABCI 2.0，实现 / ABCI 2.0 协调升级，不另写 19 节）：看见必须协调升级不是已经只改 VoteExtensionsEnableHeight。看见 h_e 必须高于当前不是已经能写成当前高度。看见引擎按当前高度决定存什么要什么不是已经按创世配好了。ABCI 2.0 协调升级不是不变量 330，也不是不变量 58，也不是不变量 343。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 346；语料 C350；模式 name-the-abci20-upgrade；反模式 abci20upgrade-sold-as-height；L10.3 第 342 条。填 L4.4 / CometBFT 档案 ABCI 2.0 协调升级 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样做协调升级、怎样设 h_e、默认取值。不编博物馆页。不另写 19 节。不与 330 / 58 / 343 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。H / H+1 Prepare 切换、治理 panic、PBTS 启用高度标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 346）
 
 - CometBFT Prepare 回包上限工作实例（官方 Requirements for the Application Formal Requirement 2 [`PrepareProposal`, tx-size]，实现 / PrepareProposal 回包上限，不另写 19 节）：看见整池可见不是已经只能看见装得进一块的子集。看见聚合体积可以超过 max_tx_bytes 不是已经能回超限列表。看见 Req 2 保证回的列表不让块超字节上限不是已经是引擎会帮你裁。Prepare 回包上限不是不变量 299，也不是不变量 337，也不是不变量 33。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

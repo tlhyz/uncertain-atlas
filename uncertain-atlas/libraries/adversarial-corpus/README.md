@@ -360,6 +360,7 @@
 | C347 | 343 写成0不是已经启用PBTS≠已经填了Precision就是PBTS | 文案把 PbtsEnableHeight 写成 0 / 大于 0 才是启用高度写成已经启用 PBTS 或已经填了 Precision 就是 PBTS；或把 H 之前或写成 0 仍用 BFT Time / 到了 H 才用 PBTS 写成已经切到 PBTS 或已经是 MTP；或把启用之后不能关 / 不能写成当前高度或更矮写成已经是扩展启用高度那种切换或已经能关；或把 PbtsEnableHeight 写成不变量 336 / 330 / 40 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C348 | 344 MaxBytes减去头集合证据才是交易上限≠已经整块都能装交易 | 文案把 MaxBytes 减去头 / 集合 / 证据才是交易上限 / 完整块上限写成已经整块都能装交易或已经是证据 MaxBytes；或把诚实验证者 MAY 出满 MaxBytes / 能广播到配置上限写成已经只会出默认 21 MB 或已经没有上限；或把 timeout 必须按满块投递延迟算 / 最坏投递延迟写成已经填了 TimeoutPropose 就装得下这次 Prepare 执行或已经是立刻整块执行离开关键路径；或把 MaxBytes 开销与投递写成不变量 337 / 331 / 327 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 | C349 | 345 整池可见≠已经只能看见装得进一块的子集 | 文案把整池可见 / MaxBytes 写成 -1 把池子都交来写成已经只能看见装得进一块的子集或已经没有上限；或把聚合体积可以超过 max_tx_bytes / 池子加起来比这次上限大写成已经能回超限列表或已经交差；或把 Req 2 保证回的列表不让块超字节上限 / 回包不得超过 max_tx_bytes 写成已经是引擎会帮你裁或已经是 MaxBytes 扣掉头集合证据之后的交易上限；或把 Prepare 回包上限写成不变量 299 / 337 / 33 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
+| C350 | 346 必须协调升级≠已经只改VoteExtensionsEnableHeight | 文案把必须协调升级 / 切到带扩展的 CometBFT 写成已经只改 VoteExtensionsEnableHeight 或已经是单节点能切；或把升级之后 h_u 才能写成 h_e / h_e 必须高于当前写成已经能写成当前高度或已经是到了 H 才 Prepare 带扩展那种切换；或把引擎按当前高度决定存什么要什么 / 成功运转看当前高度写成已经按创世配好了或已经是应用自己决定存什么；或把 ABCI 2.0 协调升级写成不变量 330 / 58 / 343 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。
