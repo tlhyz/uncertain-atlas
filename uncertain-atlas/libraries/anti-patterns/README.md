@@ -126,3 +126,4 @@
 - [delegatecall-sold-as-precompile-trust](delegatecall-sold-as-precompile-trust.md)
 - [migration-fail-sold-as-others-safe](migration-fail-sold-as-others-safe.md)
 - [insert-checked-sold-as-heartbeat-safe](insert-checked-sold-as-heartbeat-safe.md)
+- [stm-done-sold-as-final](stm-done-sold-as-final.md)

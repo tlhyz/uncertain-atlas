@@ -79,7 +79,8 @@ Block-STM：
 4. 结果必须等于「单线程按 L 执行」。
 
 **invariant：** 并行是性能，串行语义是安全。  
-任何「重排结果」都是 bug，不是优化。
+任何「重排结果」都是 bug，不是优化。  
+精读：[`../../tracks/parallelism/worked-example-block-stm.md`](../../tracks/parallelism/worked-example-block-stm.md)（不变量 122）。STM 跑完不是已经最终。
 
 ---
 
@@ -156,7 +157,7 @@ Block-STM：
 2. 多版本状态读。  
 3. 与共识提交的交界（何时把根钉死）。
 
-先读论文再对函数名。
+先读论文与 [`../../tracks/parallelism/worked-example-block-stm.md`](../../tracks/parallelism/worked-example-block-stm.md) 再对函数名。不抄加速比。
 
 ---
 

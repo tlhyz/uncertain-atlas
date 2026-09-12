@@ -19,3 +19,4 @@
 - [capacity-binds-storage](capacity-binds-storage.md)
 - [single-chain-chunks](single-chain-chunks.md)
 - [stateful-hash-signature](stateful-hash-signature.md)
+- [optimistic-serial-equiv](optimistic-serial-equiv.md)

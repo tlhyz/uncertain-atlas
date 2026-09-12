@@ -111,4 +111,4 @@ Aptos。档案第 3、6、7 节。
 | 经济 | 吞吐广告不能代替 L 的最终性 |
 
 **禁止假学习：** 「STM 代替共识。」「并行结果可以重排。」
-**边界：** 见反模式 stm-replaces-consensus。
+**边界：** 见反模式 [stm-replaces-consensus](../../libraries/anti-patterns/stm-replaces-consensus.md)、[stm-done-sold-as-final](../../libraries/anti-patterns/stm-done-sold-as-final.md)。工作实例：[`../../tracks/parallelism/worked-example-block-stm.md`](../../tracks/parallelism/worked-example-block-stm.md)（不变量 122）。模式：[optimistic-serial-equiv](../../libraries/design-patterns/optimistic-serial-equiv.md)。不抄论文加速比 / 官网块时间。档案 §15 仍无官方主网七问，本课不编事故。

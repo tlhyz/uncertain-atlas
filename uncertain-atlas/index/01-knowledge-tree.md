@@ -327,7 +327,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 - Move resource
 - Block-STM：未完全定序时为何敢并行
 - 冲突、回滚、确定性提交
-- 覆盖：课文 L6.3。并行结果 ≡ 已共识的串行序 L；STM ≠ 代替共识
+- 覆盖：课文 L6.3；工作实例 [`../tracks/parallelism/worked-example-block-stm.md`](../tracks/parallelism/worked-example-block-stm.md)（不变量 122）。并行结果 ≡ 已共识的串行序 L；STM 跑完 ≠ 已经最终；未声明写集 ≠ 已经不需要 L
 
 ### M6.4 对照：并行的三种世界观 · 必学
 - 预先声明依赖（Solana）
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–121）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–122）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C125；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C126；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
