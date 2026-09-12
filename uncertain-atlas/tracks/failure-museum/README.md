@@ -94,8 +94,10 @@
 - [isa-2025-004](isa-2025-004.md)（协议+实现：预编译中途出错不是 SDK 已写入已经撤回；领奖转出不是可领已经清零）
 - [asa-2026-002](asa-2026-002.md)（协议+实现+经济：内层预编译改过账不是外层已经看见；同一笔里余额还在不是不能再花一次）
 - [avalanche-2025-delegatecall-precompile](avalanche-2025-delegatecall-precompile.md)（协议+实现：正确兑现 EVM 委托语义不是预编译信任模型已经跟着改过；库换了正确语义不是旧假设已经更新）
+- [bitcoin-2026-01-wallet-migration-delete](bitcoin-2026-01-wallet-migration-delete.md)（实现+部署：迁移失败不是目录里其它钱包已经安全；现有用户不受影响不是迁移路径已经安全）
+- [cve-2026-34219](cve-2026-34219.md)（实现+网络：插入路径做了检查加法不是心跳加上余量已经安全；解析当时没崩不是心跳不会崩）
 
-待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余薄行、Pectra 测试网配置、其它 XCM 回归：有独立官方句且不与已归档条重复才另档。Pectra RCA 仍在项目文件夹，本环境未取到独立复盘页，不写。Avalanche Native Asset Call（2022）未见独立 GHSA / 第一方七问页，不写。
+待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余薄行、Pectra 测试网配置、其它 XCM 回归：有独立官方句且不与已归档条重复才另档。Pectra RCA 仍在项目文件夹，本环境未取到独立复盘页，不写。Avalanche Native Asset Call（2022）未见独立 GHSA / 第一方七问页，不写。AncestryProof 论坛帖不是官方 Parity/W3F 复盘，不写。CVE-2026-33040 只当 34219 对照，不另档。
 
 写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)  
 五层对照精读：[`worked-example-five-layers.md`](worked-example-five-layers.md)（同一通胀案，五层各说什么）。  

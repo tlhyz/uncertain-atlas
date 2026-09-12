@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 121–122）
+
+- 博物馆 Bitcoin Core 2026-01-05：`wallet.dat` 迁移失败时，钱包目录里的全部文件都可能被删掉，官方写可能丢资金。现有用户、不跑迁移的安装不受影响。迁移失败不是目录里其它钱包已经安全。现有用户不受影响不是迁移路径已经安全。
+- 不变量 120；语料 C124；反模式 migration-fail-sold-as-others-safe；L10.3 第 116 条。填 Bitcoin 档案 §15。
+- 博物馆 CVE-2026-34219：Gossipsub `PRUNE` backoff 近上限被插入路径的检查加法收下；心跳再加余量用未检查加法，溢出恐慌。崩溃在心跳，不在解析当时。不是 CVE-2026-33040。插入检查加法不是心跳加余量已经安全。
+- 不变量 121；语料 C125；反模式 insert-checked-sold-as-heartbeat-safe；L10.3 第 117 条。
+- 对照不变量 37 / 43 / 55 / 67 / 90 / 111 / 112。不写怎样踩迁移失败、怎样拼 `PRUNE`。不抄版本 / 示例数 / 间隔。AncestryProof 论坛帖不是官方 Parity/W3F 复盘，不写。People / Pectra / GHSA-8pfh / Native Asset Call 仍不写。
+
 ## 2026-09-12（续 120）
 
 - 博物馆 Avalanche 2025 delegatecall：有状态预编译长期允许 `DELEGATECALL` / `CALLCODE`，却假定 EVM 委托语义不会被兑现。`libevm` 正确兑现后，恶意合约可冒充调用者进特权入口。正确兑现委托语义不是预编译信任模型已经跟着改过。库换了正确语义不是旧假设已经更新。

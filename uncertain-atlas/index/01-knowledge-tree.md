@@ -212,7 +212,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.6 工程哲学与测试 · 重要
 - fuzzing、软分叉、Bitcoin Core 的保守主义
 - 源码入口课
-- 覆盖：课文 L3.6
+- 覆盖：课文 L3.6。迁移失败 ≠ 目录里其它钱包已经安全：[`../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md`](../tracks/failure-museum/bitcoin-2026-01-wallet-migration-delete.md)（不变量 120）
 
 ### M3.7 事故与「看起来没崩」的原因 · 重要
 - 通胀漏洞、分叉事件
@@ -413,7 +413,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.1 P2P · 必学
 - 发现、gossip、eclipse、Sybil、分区、NAT
 - 很多链的瓶颈在网络不在执行
-- 覆盖：课文 L9.1；日蚀精读；调整钟 CVE-2024-52912；索取独占 CVE-2024-52913。新块宣布 ≠ 已收到：CVE-2024-52922。部分重建断言崩：CVE-2024-35202。变异清别人下载：CVE-2024-52921。拒绝仍灌日志盘：CVE-2025-54605。非法块打崩并行验签：CVE-2024-52911。库存三方向：`tracks/network/worked-example-inventory-quotas.md`（52915 / 52920 / inv-to-send）。最大消息 ≠ 接收分配：CVE-2015-3641。地址表递增 ID 回绕：CVE-2024-52919（限速 ≠ 宽度）。无界封禁表：CVE-2020-14198（自动 ban ≠ 有界）。平台宽度尺寸检查：CVE-2025-46597。局域网打洞辅助 ≠ P2P：CVE-2015-20111 / CVE-2024-52917。出站代理 ≠ 对等节点：CVE-2017-18350。分片外层下标 ≠ 证明下标：ASA-2025-002。结构必须先验再传：ASA-2025-003。blocksync 目标必须可归因：ASA-2025-001。握手请求 ≠ 已接受邻居：CVE-2020-5303 / Lavender。compact 精读 `tracks/network/worked-example-compact-block.md`。加密内存池尚无冻结规范级独特对象，不写页
+- 覆盖：课文 L9.1；日蚀精读；调整钟 CVE-2024-52912；索取独占 CVE-2024-52913。新块宣布 ≠ 已收到：CVE-2024-52922。部分重建断言崩：CVE-2024-35202。变异清别人下载：CVE-2024-52921。拒绝仍灌日志盘：CVE-2025-54605。非法块打崩并行验签：CVE-2024-52911。库存三方向：`tracks/network/worked-example-inventory-quotas.md`（52915 / 52920 / inv-to-send）。最大消息 ≠ 接收分配：CVE-2015-3641。地址表递增 ID 回绕：CVE-2024-52919（限速 ≠ 宽度）。无界封禁表：CVE-2020-14198（自动 ban ≠ 有界）。平台宽度尺寸检查：CVE-2025-46597。局域网打洞辅助 ≠ P2P：CVE-2015-20111 / CVE-2024-52917。出站代理 ≠ 对等节点：CVE-2017-18350。分片外层下标 ≠ 证明下标：ASA-2025-002。结构必须先验再传：ASA-2025-003。blocksync 目标必须可归因：ASA-2025-001。握手请求 ≠ 已接受邻居：CVE-2020-5303 / Lavender。插入检查加法 ≠ 心跳加余量已经安全：CVE-2026-34219（不变量 121）。compact 精读 `tracks/network/worked-example-compact-block.md`。加密内存池尚无冻结规范级独特对象，不写页
 
 ### M9.2 Mempool · 必学
 - 准入、替换、驱逐、垃圾、抢跑、加密内存池
@@ -449,7 +449,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.9 Blockchain Failure Museum · 必学
 - 共识停机、通胀、签名、重放、桥、客户端分歧、治理
-- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（九十案；含 Avalanche 2025 正确语义≠预编译信任、CVE-2025-30147 子群≠在曲线上、ISA-2025-004 预编译失败≠已撤、ASA-2026-002 内层≠外层已见、Cosmos EVM 2026-08 可花≠银行对齐、Polkadot 2026-03 废弃 API≠编码兼容、Polkadot 2026-03 preserve_origin≠出站已绑、Polkadot 2026-06 选举地板≠已配对、Monero 2025-08 加载≠TXID不泄、Bitcoin 2026-06 privatebroadcast≠IP已藏、Zcash ZIP 256 身份 rk≠已能吃 / 无效 ephemeralKey≠已允许 / coinbase 正余额≠能重启 / 跟踪复位≠闸门 / 归一化≠编码 / 体拒绝≠头已绑、Zcash ZIP 257 电路≠陈述、Ethereum 2016-11 OOG≠删除已回滚、Ethereum 2021-05 gas≠墙钟、Kusama 2025-05 链下禁用≠已确认不参与、Kusama 2025-08 组下标≠票下标、Kusama 2024-02 Active≠Confirmed、Sepolia 2024-03 Engine API 尺寸、Polkadot-SDK 2025-05 交易深度套错对象、Solana 2025-05 Fiat-Shamir 漏哈希、Solana 2020-12 槽号当块身份、Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
+- 覆盖：课文 L9.9；目录 `tracks/failure-museum/`（九十二案；含 CVE-2026-34219 插入检查≠心跳已安全、Bitcoin 2026-01 迁移失败≠邻居已安全、Avalanche 2025 正确语义≠预编译信任、CVE-2025-30147 子群≠在曲线上、ISA-2025-004 预编译失败≠已撤、ASA-2026-002 内层≠外层已见、Cosmos EVM 2026-08 可花≠银行对齐、Polkadot 2026-03 废弃 API≠编码兼容、Polkadot 2026-03 preserve_origin≠出站已绑、Polkadot 2026-06 选举地板≠已配对、Monero 2025-08 加载≠TXID不泄、Bitcoin 2026-06 privatebroadcast≠IP已藏、Zcash ZIP 256 身份 rk≠已能吃 / 无效 ephemeralKey≠已允许 / coinbase 正余额≠能重启 / 跟踪复位≠闸门 / 归一化≠编码 / 体拒绝≠头已绑、Zcash ZIP 257 电路≠陈述、Ethereum 2016-11 OOG≠删除已回滚、Ethereum 2021-05 gas≠墙钟、Kusama 2025-05 链下禁用≠已确认不参与、Kusama 2025-08 组下标≠票下标、Kusama 2024-02 Active≠Confirmed、Sepolia 2024-03 Engine API 尺寸、Polkadot-SDK 2025-05 交易深度套错对象、Solana 2025-05 Fiat-Shamir 漏哈希、Solana 2020-12 槽号当块身份、Sui 2026-05 取消后仍砸气费、Sui 2026-05 DKG 失败未落盘、Sui 2026-01-14 检查点隔离、Sui 2024-11-21 估值 0 assert、Solana 2024-02-06 旧加载器死循环、Solana 2022-04-30 分叉清理 OOM、Solana 2023-02-25 Turbine 恢复 shred、Solana 2022-09-30 重复槽分叉、Solana 2022-06-01 durable nonce、Barberry、Jackfruit、Elderflower、ASA-2023-001、Dragonberry、ASA-2024-007、ISA-2025-001、ASA-2024-010、ASA-2024-003、ISA-2025-005、x/crisis 不停链、ASA-2024-005、ISA-2025-002、ASA-2024-0012、ASA-2024-002、ASA-2024-006、CVE-2020-5303、Alderfly、CVE-2020-15091、CVE-2021-21271、CSA-2026-001、ASA-2025-001、ASA-2023-002、ASA-2025-002、ASA-2025-003、ASA-2024-001、ASA-2024-004、ASA-2024-009、ASA-2024-011、CVE-2015-3641、CVE-2024-52919、CVE-2020-14198、CVE-2025-46597、CVE-2015-20111、CVE-2017-18350、CVE-2024-52918）。停链面地图：`tracks/failure-museum/worked-example-halt-surfaces.md`（不变量 84）
 - 每案 7 问（见总任务第五节）
 
 ---
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–119）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–121）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C123；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C125；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机
