@@ -187,6 +187,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 | CVE-2015-3641 | 实现+网络 | 最大序列化长度被当成接收分配上限。见 `tracks/failure-museum/cve-2015-3641.md` |
 | CVE-2024-52919 | 实现+网络 | 地址表递增 ID 回绕；v22 限速 ≠ v29 改宽度。见 `tracks/failure-museum/cve-2024-52919.md` |
 | CVE-2020-14198 | 实现+网络 | 无界封禁表 + GETADDR 二次扫描。见 `tracks/failure-museum/cve-2020-14198.md` |
+| CVE-2025-46597 | 实现 | 32-bit 写盘前尺寸检查溢出；卡住 `-maxmempool` ≠ 固定宽度。见 `tracks/failure-museum/cve-2025-46597.md` |
 
 七问只写有 CVE / 官方披露 / BIP 原文的条目。禁止用传闻填充。
 
