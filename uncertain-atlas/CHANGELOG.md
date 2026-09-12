@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 114）
+
+- 博物馆 Polkadot 2026-03-19：本地 origin 已被清掉后再发标了 `preserve_origin` 的 `InitiateTransfer`，出站既不别名也不再清；目的地用运输发送者当 origin。Asset Hub 被配成 superuser 时，已签名账户可当中继 root。修费绕过的热修把 BadOrigin 改成静默跳过。官方写未利用。preserve_origin 为真不是出站已经带了改 origin 的指令。
+- 不变量 113；语料 C117；反模式 preserve-origin-sold-as-bound；L10.3 第 109 条。
+- 对照不变量 9 / 77 / 78 / 81 / 97。不写怎样拼跨链指令。不抄平行链编号 / 版本 / 行号 / 时间线。Pectra RCA 仍未取到独立复盘页，不写。
+
 ## 2026-09-12（续 111–113）
 
 - 博物馆 Polkadot 2026-06-30：许可制冷冻潮压低可达选举分，静态 `MinimumScore` 未配对下调，所有解被 `ScoreTooLow` 拒。纪元 / 奖励 / 解绑冻结；出块与最终性继续。地板按设计暂停轮转；出错的是过程没带 `SetMinUntrustedScore`。改冻结门槛不是选举地板已经配对。出块还在不是纪元已经转。

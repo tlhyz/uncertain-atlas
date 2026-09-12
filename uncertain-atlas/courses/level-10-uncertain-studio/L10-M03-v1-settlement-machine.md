@@ -136,7 +136,8 @@
 105. 若供给与池是两本账：对不上必须拒并停在上一高度，不得中止成崩溃循环（不变量 109）。coinbase 正屏蔽余额不是供给已经对齐。`ConnectBlock` 对不上不是重启能起来。活性崩溃不是合法集已改。第一版可以不做 coinbase 进屏蔽池。不要抄版本 / 规范金额上限。馆藏：[`../../tracks/failure-museum/zcash-2026-coinbase-balance-crash.md`](../../tracks/failure-museum/zcash-2026-coinbase-balance-crash.md)。这和原子高度（不变量 5）、奖励池溢出（70）、跟踪复位（100）不是同一句。  
 106. 若做链上选举 / 许可冷冻 / 质量地板：改可达分的治理必须同时带地板（不变量 110）。改冻结门槛不是选举地板已经配对。出块还在不是纪元已经转。诚实解被 ScoreTooLow 罚不是提交者作恶。第一版可以不做这三件套。不要抄金额 / 公投号。馆藏：[`../../tracks/failure-museum/polkadot-2026-06-election-score-floor.md`](../../tracks/failure-museum/polkadot-2026-06-election-score-floor.md)。这和集合延迟（不变量 35）、治理 panic（54）、EndBlocker 停链（67）、争议禁用（95/96）不是同一句。  
 107. 若钱包可连远程节点：交出站历史的 RPC 必须先看 trusted（不变量 111）。从文件加载不是出站 TXID 已经不泄漏。trusted 标记不是这条 RPC 已经检查。环库回填还在不是只给旧钱包跑一次。第一版可以不连远程守护进程。不要转复现步骤。馆藏：[`../../tracks/failure-museum/monero-2025-08-find-and-save-rings.md`](../../tracks/failure-museum/monero-2025-08-find-and-save-rings.md)。这和付款 URI（51）、代理（50）、隐私广播（108）不是同一句。  
-108. 若提供隐私广播 / 单笔另开连接：每一次降级重连必须仍走同一代理谓词（不变量 112）。开关不是 IP 已经不暴露。v2 失败后的 v1 重连不是仍走代理。第一次走 Tor 不是降级已覆盖。第一版可以不提供该开关。不要抄版本 / 端口。馆藏：[`../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md`](../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md)。这和代理当对等（50）、付款 URI（51）、钱包泄 TXID（107）不是同一句。
+108. 若提供隐私广播 / 单笔另开连接：每一次降级重连必须仍走同一代理谓词（不变量 112）。开关不是 IP 已经不暴露。v2 失败后的 v1 重连不是仍走代理。第一次走 Tor 不是降级已覆盖。第一版可以不提供该开关。不要抄版本 / 端口。馆藏：[`../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md`](../../tracks/failure-museum/bitcoin-2026-06-privatebroadcast-v1-retry.md)。这和代理当对等（50）、付款 URI（51）、钱包泄 TXID（107）不是同一句。  
+109. 若做跨共识消息 / XCM：保留 origin 的旗标必须对应一条确定的出站指令（不变量 113）。当前 origin 为空必须失败关闭。`preserve_origin` 为真不是出站已经带了改 origin 的指令。静默跳过不是 BadOrigin。目的地用运输发送者不是用户 origin 已经清掉。第一版可以不做 XCM。不要写怎样拼指令。馆藏：[`../../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md`](../../tracks/failure-museum/polkadot-2026-03-xcm-preserve-origin.md)。这和提交≠兑付（不变量 9）、IBC 确认（73）、授权代发（77）、解码深度（93）不是同一句。
 
 **以后再发明**
 
@@ -208,7 +209,8 @@
 - 把 coinbase 正屏蔽余额写成供给已经对齐，或把 `ConnectBlock` 对不上写成重启能起来。  
 - 把改冻结门槛写成选举地板已经配对，或把出块还在写成纪元已经转。  
 - 把从文件加载钱包写成出站 TXID 已经不泄漏，或把 trusted 标记写成这条 RPC 已经检查。  
-- 把 privatebroadcast 开关写成 IP 已经不暴露，或把 v2 失败后的 v1 重连写成仍走代理。
+- 把 privatebroadcast 开关写成 IP 已经不暴露，或把 v2 失败后的 v1 重连写成仍走代理。  
+- 把 `preserve_origin` 写成出站已经带了改 origin 的指令，或把静默跳过写成 BadOrigin。
 
 ---
 
@@ -259,7 +261,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百零八条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百零九条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

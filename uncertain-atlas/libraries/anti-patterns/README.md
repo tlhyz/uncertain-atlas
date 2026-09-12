@@ -117,3 +117,4 @@
 - [chill-sold-as-score-paired](chill-sold-as-score-paired.md)
 - [wallet-load-sold-as-no-txid](wallet-load-sold-as-no-txid.md)
 - [privatebroadcast-sold-as-hidden](privatebroadcast-sold-as-hidden.md)
+- [preserve-origin-sold-as-bound](preserve-origin-sold-as-bound.md)
