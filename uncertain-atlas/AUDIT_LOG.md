@@ -4036,6 +4036,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1997 | 高 | 看见 Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 / 看见两边都是 ValidatorUpdate 会被写成已经改了集合，或当成已经带了公钥 | 官方：Both the Request and Response include a type Validators, which is a list of ValidatorUpdate types. Technically, this is updating the validator set from the empty set |
 | A1998 | 中 | 怎样写 InitChain Usage 余量 / 怎样决定接受创世集合 / 怎样从空集合更新 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1999 | 记录 | 会与 320 / 318 / 364 糊成「看见填了 InitChain Usage 余量就已经是崩溃后再调」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain Usage 余量 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是崩溃后再调 / 已经没有集合 / 已经改了集合 标成另一对象 |
+| A2000 | 高 | 看见 ExtendVoteRequest.misbehavior 是拟议块里那些过错信息 / 看见填了 misbehavior 会被写成已经定奖惩，或当成已经罚没 | 工作实例：abci++_methods ExtendVote Request 官方写 misbehavior is List of information about validators that misbehaved contained in the proposed block |
+| A2001 | 高 | 看见 ExtendVoteRequest.proposer_address 是造这份提案的验证者地址 / 看见填了 proposer_address 会被写成已经知道本头哈希，或当成已经交差 | 官方：proposer_address is Address of the validator that created the proposal |
+| A2002 | 高 | 看见 VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 / 看见填了 validator_address 会被写成已经带了公钥，或当成已经能验签 | 官方：validator_address is Address of the validator that signed the extension |
+| A2003 | 中 | 怎样写 ExtendVote 请求末栏 / 怎样填 misbehavior / 怎样填 proposer_address 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2004 | 记录 | 会与 363 / 359 / 364 糊成「看见填了 ExtendVote 请求末栏就已经定奖惩」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 请求末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经定奖惩 / 已经知道本头哈希 / 已经带了公钥 标成另一对象 |
 
 
 
