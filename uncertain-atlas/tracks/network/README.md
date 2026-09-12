@@ -12,4 +12,5 @@
 拼块 ≠ 共识验块：[`worked-example-compact-block.md`](worked-example-compact-block.md)（52922 / 35202 / 52921）。  
 分片外层下标 ≠ 证明下标：[`../failure-museum/asa-2025-002.md`](../failure-museum/asa-2025-002.md)（验根通过不是第 i 片已对齐）。  
 结构必须先验再传：[`../failure-museum/asa-2025-003.md`](../failure-museum/asa-2025-003.md)（非法 BitArray 先流言会停网）。  
-blocksync 目标必须可归因：[`../failure-museum/asa-2025-001.md`](../failure-museum/asa-2025-001.md)（邻居 latest ≠ 全网尖）。
+blocksync 目标必须可归因：[`../failure-museum/asa-2025-001.md`](../failure-museum/asa-2025-001.md)（邻居 latest ≠ 全网尖）。  
+握手请求 ≠ 已接受邻居：[`../failure-museum/cve-2020-5303.md`](../failure-museum/cve-2020-5303.md)（入站上限不是握手配额；ID 必须先认领、全路径归还）。

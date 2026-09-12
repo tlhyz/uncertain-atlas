@@ -71,3 +71,4 @@
 - [inflight-sold-as-evidence-id](inflight-sold-as-evidence-id.md)
 - [quorum-sold-as-all-signed](quorum-sold-as-all-signed.md)
 - [verified-sold-as-evidence](verified-sold-as-evidence.md)
+- [inbound-cap-sold-as-handshake](inbound-cap-sold-as-handshake.md)

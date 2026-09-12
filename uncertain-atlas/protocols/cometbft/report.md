@@ -181,6 +181,7 @@ Tendermint/Cosmos 生态有过停机、安全漏洞与应用层事故。第一�
 已收前身：[CVE-2021-21271 / Mulberry](../../tracks/failure-museum/cve-2021-21271.md) — 飞行中的 last commit 不是证据身份。  
 已收前身：[CVE-2020-15091 / Syringa](../../tracks/failure-museum/cve-2020-15091.md) — +2/3 不是其余槽位已签。  
 已收前身：[Alderfly](../../tracks/failure-museum/alderfly.md) — 验过头不是已经能交证据；朝前 lunatic。  
+已收前身：[CVE-2020-5303 / Lavender](../../tracks/failure-museum/cve-2020-5303.md) — 握手请求不是已接受的邻居。  
 **待补：** 其它案必须链到官方 postmortem 或安全公告。  
 方向：halt（活性）、应用非确定性导致的分裂。
 

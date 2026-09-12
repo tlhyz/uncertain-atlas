@@ -863,3 +863,14 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A292 | 记录 | Moderate；无 CVE；根因在规范；FetchBlock 加时间；IBC 可能丢资金 | 不编 CVE；不发明 spec 页正文；不写怎样签朝前高度；不抄 ⅓ |
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+### 2026-09-12 01:25 UTC · 握手请求不是已接受的邻居
+
+| ID | 严重度 | 问题 | 处置 |
+|---|---|---|---|
+| A293 | 高 | max inbound peers 会被写成握手请求已有界 | 博物馆 Lavender：请求本身无配额，临时尖峰可 OOM |
+| A294 | 中 | RemovePeer 先于 AddPeer 会被当成「失败即清理」 | 官方：Peer 诞生前失败则 ID 不还，map 涨到顶 panic |
+| A295 | 中 | 会和接收分配 / 封禁表 / 库存 / 地址表回绕糊 | 对照表；不变量 67；语料 C71 |
+| A296 | 记录 | High；CVE-2020-5303；当时不按 IP 限速、不限速 HTTP(S)；咨询写 XXX 字节与 65535 | 不抄字节数与上限；公开 RPC 另写配额；不写怎样打满握手 |
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 68）
+
+- 博物馆 CVE-2020-5303 / Lavender / GHSA-v24h-pjjv-mcp6（High）：不限制 P2P 连接请求，每条分配内存，临时尖峰可 OOM。
+- Mempool 在 Peer 诞生前失败时 RemovePeer 先于 AddPeer，`activeIDs` 只增不减，到顶 panic。DoS 2 独立于 DoS 1。
+- 修法：请求数限制为 max inbound + unconditional；`InitPeer` 在连接启动前认领 ID。咨询当时不按 IP 限速握手，也不限速 HTTP(S)。
+- 不变量 67；语料 C71；反模式 inbound-cap-sold-as-handshake；L10.3 第 63 条。
+- 对照不变量 48 / 50 / 45 / 49。不抄 XXX 字节或 65535。不写怎样打满握手。
+
 ## 2026-09-12（续 67）
 
 - 博物馆 Alderfly / GHSA-f3w5-v9xx-rp8p（Moderate）：官方 forward lunatic / FLA。⅓+ 拜占庭为尚未出现的高度签任意应用状态。
