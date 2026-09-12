@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 131）
+
+- Ethereum 工作实例：终局推迟不是高度已经停。Inactivity leak 不是 slash。没 attestation 不是已经可罚。两边都 leak 到 finalized 不是协议已经选出唯一规范链。出处 ethereum.org Rewards / Attack-and-defense / Gasper / PoS。
+- 不变量 130；语料 C134；模式 name-the-finality-recovery；反模式 leak-sold-as-slash；L10.3 第 126 条。填 L5.2 / Ethereum 档案 §6 / 最终性表 / 经济表 / 停链面地图。
+- 不抄 epoch 个数 / 罚没天数 / 押金 / 美元 / 百分比里程碑。不写怎样扣块或双投。Medalla 只保留官方历史句，不编博物馆页。不与 24 / 26 / 84 / 110 / 127 糊成一句。
+
 ## 2026-09-12（续 130）
 
 - Polkadot 工作实例：NPoS 当选不是共识票已经按质押加权。⅔ 验证者不是 ⅔ 质押。提名时的加权不是当选后的等权。BABE 按质押抽槽不是 GRANDPA 也按质押。出处 Wiki Cosmos 对照 / Consensus / Advanced Staking / Phragmén。

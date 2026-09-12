@@ -136,3 +136,4 @@ EigenLayer 的 AVS 罚没是第四列亲戚：产品定义、不必客观可归�
 - 「同步委员会也有 surround」
 - 把某分叉的罚金商、现网罚没总额当规范永恒值
 - 把 surround 写成对称关系（phase0 的 process 只测 1 包住 2）
+- 把 inactivity leak 写成已经 slash（终局推迟时抽质押不是这三条可罚关系；见 [`../finality/worked-example-inactivity-leak.md`](../finality/worked-example-inactivity-leak.md)）

@@ -286,7 +286,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M5.3 执行层 / 共识层 · 必学
 - validator、attestation、finality、fork choice
-- 覆盖：课文 L5.2；CL `DomainType` 见投票 SignBytes 精读；弱主观性 `tracks/finality/worked-example-weak-subjectivity.md`。head ≠ justified ≠ finalized：[`../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127；`safe` 不是官方已经写成 justified）
+- 覆盖：课文 L5.2；CL `DomainType` 见投票 SignBytes 精读；弱主观性 `tracks/finality/worked-example-weak-subjectivity.md`。head ≠ justified ≠ finalized：[`../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127；`safe` 不是官方已经写成 justified）。终局推迟 ≠ 停链，leak ≠ slash：[`../tracks/finality/worked-example-inactivity-leak.md`](../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）
 
 ### M5.4 多客户端与可执行规范 · 必学
 - 为什么故意允许多个实现
@@ -432,7 +432,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M9.5 经济安全 · 重要
 - 发行、质押、罚没、MEV、审查、卡特尔
 - 密码学安全 ≠ 经济安全
-- 覆盖：课文 L9.5；桥资本精读；证据 ≠ slash `tracks/economic/worked-example-evidence.md`；默认窗 ≠ 解绑 `tracks/economic/worked-example-evidence-window.md`（ASA-2024-004）；飞行中 last commit ≠ 证据身份 `tracks/failure-museum/cve-2021-21271.md`（Mulberry；不变量 64）；Casper double / surround `tracks/economic/worked-example-casper-slashing.md`
+- 覆盖：课文 L9.5；桥资本精读；证据 ≠ slash `tracks/economic/worked-example-evidence.md`；默认窗 ≠ 解绑 `tracks/economic/worked-example-evidence-window.md`（ASA-2024-004）；飞行中 last commit ≠ 证据身份 `tracks/failure-museum/cve-2021-21271.md`（Mulberry；不变量 64）；Casper double / surround `tracks/economic/worked-example-casper-slashing.md`。Inactivity leak ≠ slash：[`../tracks/finality/worked-example-inactivity-leak.md`](../tracks/finality/worked-example-inactivity-leak.md)（不变量 130）
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
@@ -477,11 +477,11 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M10.4 Invariant Library · 必学
 - 从失败博物馆提取、写成可测试断言
-- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–129）
+- 目录：[`../libraries/invariants/README.md`](../libraries/invariants/README.md)（1–130）
 
 ### M10.5 Adversarial Test Corpus · 重要
 - fuzz、差分、崩溃注入、拜占庭仿真
-- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C133；runner 未建）
+- 目录：[`../libraries/adversarial-corpus/README.md`](../libraries/adversarial-corpus/README.md)（C01–C134；runner 未建）
 
 ### M10.6 长期技术路线 · 重要
 - 第一版最小结算机

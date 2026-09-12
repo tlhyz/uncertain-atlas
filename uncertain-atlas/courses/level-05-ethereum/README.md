@@ -11,7 +11,7 @@
 | 课 | 文件 | 核心问题 |
 |---|---|---|
 | 5.1 | [L05-M01-evm-and-gas.md](L05-M01-evm-and-gas.md) | 任意程序如何仍是确定性状态机 |
-| 5.2 | [L05-M02-el-cl-finality.md](L05-M02-el-cl-finality.md) | 执行层和共识层各保证什么；head ≠ justified ≠ finalized |
+| 5.2 | [L05-M02-el-cl-finality.md](L05-M02-el-cl-finality.md) | 执行层和共识层各保证什么；head ≠ justified ≠ finalized；终局推迟 ≠ 停链 / leak ≠ slash |
 | 5.3 | [L05-M03-multi-client.md](L05-M03-multi-client.md) | 多实现为什么是药也是刀 |
 | 5.4 | [L05-M04-state-blobs-mev.md](L05-M04-state-blobs-mev.md) | 状态胀了、blob、mempool 不再是队列 |
 

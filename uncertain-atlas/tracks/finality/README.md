@@ -4,6 +4,7 @@
 分区精读：[`../consensus/worked-example-partition.md`](../consensus/worked-example-partition.md)。  
 弱主观性：[`worked-example-weak-subjectivity.md`](worked-example-weak-subjectivity.md)（finalized ≠ 从创世同步同样安全）。  
 三等确认：[`worked-example-head-vs-justified-vs-finalized.md`](worked-example-head-vs-justified-vs-finalized.md)（head ≠ justified ≠ finalized；`safe` ≠ 官方已经写成 justified）。  
+终局推迟 ≠ 停链，leak ≠ slash：[`worked-example-inactivity-leak.md`](worked-example-inactivity-leak.md)（不变量 130）。  
 平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。  
 中继出块 ≠ 中继最终：[`../consensus/worked-example-babe-vs-grandpa.md`](../consensus/worked-example-babe-vs-grandpa.md)（BABE ≠ GRANDPA；不变量 126）。
 
@@ -12,6 +13,7 @@
 | Bitcoin | 无「最终」；最重链 | k 确认 = 不可逆 | 两边可长 | L3.1 |
 | CometBFT | 高度上的 commit | 投票中 = 已提交 | 倾向停 | L4.3 |
 | Ethereum | head / justified / finalized | 出块 = finalized；justified = 不可逆；safe = justified | 头可摆；justified 官方写仍可回滚；最终有弱主观性 | L5.2 / 精读 |
+| Ethereum leak | inactivity leak（抽不跟多数走的质押） | 终局推迟 = 停链；leak = slash；两边都最终 = 已唯一 | 头仍可走；leak 官方写未 slash；两边最终要社会恢复 | L5.2 / 精读 |
 | Ethereum WS 同步 | 未过期的 `Checkpoint` + 路径命中 | finalized = 从创世一样安全 | 过期检查点；旧钥匙已解绑 | 精读 |
 | Ethereum Altair LC | 512 抽样超多数签的信标头 | 抽样 2/3 = Casper finalized | 跟的是委员会视图，不是全集合最终 | L9.6 / 精读 |
 | Avalanche | 抽样固化 | 参数 = BFT commit | 视参数 | 档案 |

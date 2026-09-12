@@ -29,7 +29,7 @@
 - 一张 attestation 的 `data` 里同时有三票：`beacon_block_root` 是此刻 fork-choice 的**头**；`source` 是看见的最近 **justified**；`target` 是本 epoch 第一块。奖励旗标也是 source / target / head 三面分开算。
 - JSON-RPC 块参数官方写成三个标签：`latest` = 最新提出的块；`safe` = 最新 **safe head**；`finalized` = 最新 finalized。官方**没有**把 `safe` 写成 justified。
 - 回滚 finalized 需要关键共识失败，并且毁掉至少三分之一总质押。不要把页上的美元 / 「数百万 ETH」抄进产品。
-- 链一段时间不能最终时，另有 inactivity leak：不跟多数链投票的人质押被慢慢抽走，直到多数重新够三分之二。这是活性恢复，不是高度已经停。
+- 链一段时间不能最终时，另有 inactivity leak：不跟多数链投票的人质押被慢慢抽走，直到多数重新够三分之二。这是活性恢复，不是高度已经停，也不是已经 slash。精读：[`worked-example-inactivity-leak.md`](worked-example-inactivity-leak.md)（不变量 130）。
 
 钱包绿勾、`latest`、`safe`、justified、finalized，是不同对象。
 

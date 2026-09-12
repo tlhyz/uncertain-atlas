@@ -134,3 +134,4 @@
 - [justified-sold-as-finalized](justified-sold-as-finalized.md)
 - [owned-sold-as-fastpath](owned-sold-as-fastpath.md)
 - [stake-sold-as-validator-quorum](stake-sold-as-validator-quorum.md)
+- [leak-sold-as-slash](leak-sold-as-slash.md)
