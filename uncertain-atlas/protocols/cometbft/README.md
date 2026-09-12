@@ -121,6 +121,8 @@ Process 也会在提议者那边叫不是已经不用再 Process：[`../../track
 
 Process 调用是同步的不是已经能在返回之后再改裁决：[`../../tracks/implementation/worked-example-process-when-vs-later.md`](../../tracks/implementation/worked-example-process-when-vs-later.md)（不变量 354）。看见只做基本检查再异步 Process 不是已经还能再 Reject。看见非验证者可以立刻回 ACCEPT 不是已经验过这块。
 
+从提案拿掉 tx 不是已经从内存池删掉：[`../../tracks/implementation/worked-example-prepare-drop-vs-mempool.md`](../../tracks/implementation/worked-example-prepare-drop-vs-mempool.md)（不变量 355）。看见往提案加了一笔新的不是已经进了内存池。看见把 t1 改成 t2 不是已经还能按 t1 查到。
+
 一句话：
 
 > 用部分同步下的 BFT 投票 + 锁，为每个高度选出至多一个确定最终的块，并通过 ABCI 把应用状态机和共识引擎分开。

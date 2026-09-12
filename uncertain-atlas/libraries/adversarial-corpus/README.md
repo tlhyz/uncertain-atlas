@@ -369,6 +369,7 @@
 | C356 | 352 +2/3之后才进来的扩展写进了commit info≠已经Verify过 | 文案把 +2/3 之后才进来的扩展写进了 commit info / last_commit 里有扩展写成已经 Verify 过或已经 Accept；或把建议按 VerifyVoteExtension 同款逻辑再看一遍 / Prepare 要用这些扩展改提案写成已经是引擎会再 Verify 或已经是正确进程交出的扩展必须被正确接收者 Verify Accept；或把下一高度 round 0 收到上一高度 CommitRound 的 Precommit / 写进 ExtendedCommitInfo 写成已经又叫了 Verify 或已经必须再 Verify；或把迟到扩展写成不变量 34 / 348 / 330 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C357 | 353 空扩展仍会调Verify≠已经跳过Verify | 文案把空扩展（0 长度）引擎仍会调 VerifyVoteExtension / 发送方选择不扩写成已经跳过 Verify 或已经是空扩展仍验签；或把 VerifyVoteExtension 不对本进程自己发出的 Precommit 调用 / 是本地票写成已经自己验过或已经 Accept；或把请求里的 hash / 指向某块写成已经对该块跑过 ProcessProposal 或已经是提议者那边也会叫 Process；或把 Verify 何时调用写成不变量 34 / 348 / 351 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C358 | 354 Process调用是同步的≠已经能在返回之后再改裁决 | 文案把 Process 调用是同步的 / 引擎在等回包写成已经能在返回之后再改裁决或已经离开关键路径；或把只做基本检查再异步 Process / 已经回了 ACCEPT 写成已经还能再 Reject 或已经还能强迫 prevote/precommit nil；或把非验证者可以立刻回 ACCEPT / 不是验证者写成已经验过这块或已经是验证者也可以立刻交差；或把 Process 何时调用写成不变量 327 / 33 / 351 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C359 | 355 从提案拿掉tx≠已经从内存池删掉 | 文案把从提案拿掉 tx / 本块不提写成已经从内存池删掉或已经永远不提；或把往提案加了一笔新的 / 回包里有它写成已经进了内存池或已经过了 CheckTx；或把把 t1 改成 t2 / t1 没进块写成已经还能按 t1 查到或已经有人知道 t2 来自 t1；或把 Prepare 改列表写成不变量 301 / 345 / 33 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

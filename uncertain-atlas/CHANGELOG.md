@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 356）
+
+- CometBFT Prepare 改列表工作实例（官方 ABCI++ Methods PrepareProposal Usage，实现 / Prepare 改列表，不另写 19 节）：看见从提案拿掉 tx 不是已经从内存池删掉。看见往提案加了一笔新的不是已经进了内存池。看见把 t1 改成 t2 不是已经还能按 t1 查到。Prepare 改列表不是不变量 301，也不是不变量 345，也不是不变量 33。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 355；语料 C359；模式 name-the-prepare-drop；反模式 preparedrop-sold-as-evicted；L10.3 第 351 条。填 L4.4 / CometBFT 档案 Prepare 改列表 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样改 Prepare 列表、怎样记派生哈希、怎样再检踢池。不编博物馆页。不另写 19 节。不与 301 / 345 / 33 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。提案收了、整池可见、四门标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 355）
 
 - CometBFT Process 何时调用工作实例（官方 ABCI++ Methods ProcessProposal When，实现 / Process 何时调用，不另写 19 节）：看见 Process 调用是同步的不是已经能在返回之后再改裁决。看见只做基本检查再异步 Process 不是已经还能再 Reject。看见非验证者可以立刻回 ACCEPT 不是已经验过这块。Process 何时调用不是不变量 327，也不是不变量 33，也不是不变量 351。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

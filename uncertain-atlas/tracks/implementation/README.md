@@ -57,6 +57,7 @@
 - [`worked-example-late-extension-vs-verified.md`](worked-example-late-extension-vs-verified.md) — +2/3 之后才进来的扩展写进了 commit info ≠ 已经 Verify 过；建议按 Verify 同款逻辑再看一遍 ≠ 已经是引擎会再 Verify；下一高度 round 0 写进 ExtendedCommitInfo ≠ 已经又叫了 Verify（不变量 352）
 - [`worked-example-verify-when-vs-empty.md`](worked-example-verify-when-vs-empty.md) — 空扩展仍会调 Verify ≠ 已经跳过 Verify；不对本进程自己发出的 Precommit 调用 ≠ 已经自己验过；请求里的 hash ≠ 已经对该块跑过 Process（不变量 353）
 - [`worked-example-process-when-vs-later.md`](worked-example-process-when-vs-later.md) — Process 调用是同步的 ≠ 已经能在返回之后再改裁决；只做基本检查再异步 Process ≠ 已经还能再 Reject；非验证者可以立刻回 ACCEPT ≠ 已经验过这块（不变量 354）
+- [`worked-example-prepare-drop-vs-mempool.md`](worked-example-prepare-drop-vs-mempool.md) — 从提案拿掉 tx ≠ 已经从内存池删掉；往提案加了一笔新的 ≠ 已经进了内存池；把 t1 改成 t2 ≠ 已经还能按 t1 查到（不变量 355）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
