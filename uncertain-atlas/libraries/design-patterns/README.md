@@ -158,3 +158,4 @@
 - [name-the-signed-message](name-the-signed-message.md)
 - [name-the-feature-negotiation](name-the-feature-negotiation.md)
 - [name-the-silent-payment](name-the-silent-payment.md)
+- [name-the-dns-payment](name-the-dns-payment.md)

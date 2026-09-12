@@ -263,3 +263,4 @@
 - [signed-message-sold-as-control](signed-message-sold-as-control.md)
 - [feature-sold-as-enabled](feature-sold-as-enabled.md)
 - [silent-payment-sold-as-output](silent-payment-sold-as-output.md)
+- [dns-name-sold-as-instruction](dns-name-sold-as-instruction.md)
