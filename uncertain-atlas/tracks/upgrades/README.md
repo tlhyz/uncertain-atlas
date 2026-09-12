@@ -13,4 +13,5 @@
 | Nervos | 脚本/库可换（VM 不焊死密码） | 旧 lock 不会自动变 PQ | 「crypto-agnostic」当已迁移 |
 | Zcash | 网络升级换证明系统 | 旧池规则变 | 验 π 绿了当供给证明 |
 
-「不确定」建议：算法标识可加；供给公式不可静默改。决策列空。
+「不确定」建议：算法标识可加；供给公式不可静默改。决策列空。  
+升级高度上的进程管理器 ≠ 可信下载通道：[ASA-2023-001](../failure-museum/asa-2023-001.md)。升 SDK ≠ ics23 已换：[Dragonberry](../failure-museum/dragonberry.md)。
