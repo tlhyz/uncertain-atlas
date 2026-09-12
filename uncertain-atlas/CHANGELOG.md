@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 335）
+
+- CometBFT Snapshot Connection 工作实例（官方 Requirements for the Application Snapshot Connection，实现 / Snapshot Connection，不另写 19 节）：看见四门里有 Snapshot Connection 不是已经必须实现快照。看见给人快照或给自己装回不是已经必须两头都做。看见应用选择不实现不是已经没有 state sync 这条对象。Snapshot Connection 不是不变量 322，也不是不变量 321，也不是不变量 38，也不是不变量 329。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。
+- 不变量 334；语料 C338；模式 name-the-snapshot-conn；反模式 snapshotconn-sold-as-required；L10.3 第 330 条。填 L4.4 / CometBFT 档案 Snapshot Connection / 实现表 / 停链面地图 / CometBFT 行 / 05b。
+- 不抄怎样实现 ListSnapshots / OfferSnapshot / LoadSnapshotChunk / ApplySnapshotChunk、怎样配 state sync。不编博物馆页。不另写 19 节。不与 322 / 321 / 38 / 329 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。发现清单 / 装回 / 轻验 AppHash / Query 可选标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 334）
 
 - CometBFT ConsensusParams H→H+1 生效工作实例（官方 Requirements for the Application Updating Consensus Parameters / FinalizeBlock, PrepareProposal/ProcessProposal，实现 / ConsensusParams 生效延迟，不另写 19 节）：看见本高 Finalize 回了 ConsensusParams 不是已经在本高生效。看见 H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票。看见参数更新写了 H+1 不是已经是扩展启用高度那种切换，也不是已经只改填的那一项。ConsensusParams H→H+1 不是不变量 35，也不是不变量 319，也不是不变量 330。出处 github.com/cometbft/cometbft spec/abci/abci++_app_requirements.md。

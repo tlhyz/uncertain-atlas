@@ -231,3 +231,4 @@
 - [name-the-evidence-maxbytes](name-the-evidence-maxbytes.md)
 - [name-the-snapshot-verify](name-the-snapshot-verify.md)
 - [name-the-params-delay](name-the-params-delay.md)
+- [name-the-snapshot-conn](name-the-snapshot-conn.md)

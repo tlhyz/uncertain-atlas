@@ -3641,6 +3641,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A1602 | 高 | 看见参数更新写了 H+1 / 看见 H+1 已经按新参数 会被写成已经是扩展启用高度那种切换，或当成已经只改填的那一项 | 官方：参数生效不是 VoteExtensionsEnableHeight，也不是空/没回/只填一项 |
 | A1603 | 中 | 怎样编 ConsensusParams / 默认 MaxBytes / MaxGas / 怎样选启用高度会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A1604 | 记录 | 会与 35 / 319 / 330 糊成「看见本高回了就已经在本高生效」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Updating Consensus Parameters / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。换人延迟 / 空没回只填一项 / 扩展启用高度标成另一对象 |
+| A1605 | 高 | 看见四门里有 Snapshot Connection / 看见四条连接 会被写成已经必须实现快照管理，或当成已经拍过快照 | 官方：快照管理可选；应用可以不实现 |
+| A1606 | 高 | 看见这条连接用来给人快照 / 看见这条连接用来给自己装回 会被写成已经必须两头都做，或当成已经装完 | 官方：给人快照和 / 或给自己装回 |
+| A1607 | 高 | 看见应用选择不实现 / 看见快照管理可选 会被写成已经没有 state sync 这条对象，或当成已经从创世是唯一合法路径，或当成已经 ListSnapshots 齐了 | 官方：可选不是已经删掉这条对象 |
+| A1608 | 中 | 怎样实现 ListSnapshots / OfferSnapshot / LoadSnapshotChunk / ApplySnapshotChunk / 怎样配 state sync 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A1609 | 记录 | 会与 322 / 321 / 38 / 329 糊成「看见四门就已经必须做快照」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Snapshot Connection / 实现表 / 停链面地图 / CometBFT 行 / 05b。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。发现清单 / 装回 / 轻验 AppHash / Query 可选标成另一对象 |
 
 
 
