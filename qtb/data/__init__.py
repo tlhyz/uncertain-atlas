@@ -20,6 +20,15 @@ from .candles import (
 )
 from .contracts import ContractSpec, fetch_contract_spec
 from .funding import fetch_funding_cached, load_funding_csv, synthetic_funding
+from .gatedata import (
+    DEALS_CACHE,
+    default_deals_window,
+    download_spot_deals,
+    ensure_spot_deals,
+    generate_sample_deals,
+    load_cached_deals,
+    parse_deals_csv,
+)
 
 __all__ = [
     "CACHE_DIR",
@@ -43,4 +52,11 @@ __all__ = [
     "fetch_funding_cached",
     "load_funding_csv",
     "synthetic_funding",
+    "DEALS_CACHE",
+    "default_deals_window",
+    "download_spot_deals",
+    "ensure_spot_deals",
+    "generate_sample_deals",
+    "load_cached_deals",
+    "parse_deals_csv",
 ]

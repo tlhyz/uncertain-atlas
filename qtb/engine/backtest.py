@@ -635,7 +635,22 @@ def compute_metrics(
     }
 
 
+SPOT_MOVING_NAMES = {"moving_grid", "spot_moving_grid", "etf_grid"}
+
+
 def run_backtest(cfg: dict[str, Any], df: pd.DataFrame) -> BacktestResult:
+    strat_name = str((cfg.get("strategy") or {}).get("name") or "").strip().lower()
+    frame_feed = str(df.attrs.get("feed") or "").strip().lower()
+    if strat_name in SPOT_MOVING_NAMES or frame_feed == "deals":
+        from qtb.engine.spot_grid import run_spot_moving_grid
+
+        if "price" not in df.columns:
+            raise ValueError(
+                "moving_grid is tick-accurate: pass a deals tape (feed=deals). "
+                "Do not backtest it on OHLC candles — wicks invent fills."
+            )
+        return run_spot_moving_grid(cfg, df)
+
     costs_cfg = cfg.get("costs") or {}
     fee = fee_preset(
         market=costs_cfg.get("market") or cfg.get("market") or "futures",

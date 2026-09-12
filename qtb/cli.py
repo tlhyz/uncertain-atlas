@@ -32,7 +32,11 @@ def build_parser() -> argparse.ArgumentParser:
         sp.add_argument("--prefer-sample", action="store_true")
         sp.add_argument("--output-dir", default="")
         sp.add_argument("--run-name", default="")
-        sp.add_argument("--strategy", default="", help="classic_grid|trend_grid|dual_grid|martingale|dual_martingale")
+        sp.add_argument(
+            "--strategy",
+            default="",
+            help="classic_grid|trend_grid|dual_grid|martingale|dual_martingale|moving_grid",
+        )
         sp.add_argument("--stop-loss", type=float, default=-1.0, help="Investment SL 0.5 or 0.7")
 
     bt = sub.add_parser("backtest", help="Run a single backtest and write outputs/")
@@ -67,6 +71,50 @@ def build_parser() -> argparse.ArgumentParser:
         help="Screen then batch-backtest top K picks (aggressive dual SL50)",
     )
     add_screen_flags(batch_screen, batch_default=True)
+
+    fetf = sub.add_parser(
+        "fetch-etf",
+        help="Download official Gate spot deals (tick tape) for ETF underlyings",
+    )
+    fetf.add_argument(
+        "--underlyings",
+        default="SOXL3L_USDT,SOXL3S_USDT,SNXX3L_USDT,SNXX3S_USDT",
+        help="soxl,snxx,eth,sol or raw pairs like SOXL3L_USDT",
+    )
+    fetf.add_argument("--from", dest="deals_from", default="", help="YYYY-MM (default: last 3 complete months)")
+    fetf.add_argument("--to", dest="deals_to", default="", help="YYYY-MM")
+    fetf.add_argument(
+        "--longs-only",
+        action="store_true",
+        help="SOXL3L/SOXL3S/SNXX3L/SNXX3S (3x long + short tokens)",
+    )
+    fetf.add_argument("--cache-dir", default="", help="Override cache/spot_deals")
+
+    sweep = sub.add_parser(
+        "sweep-etf",
+        help="Sweep Gate spot-grid hang params on official SOXL/SNXX 3x deals",
+    )
+    sweep.add_argument(
+        "--underlyings",
+        default="SOXL3L_USDT,SOXL3S_USDT,SNXX3L_USDT,SNXX3S_USDT",
+        help="raw pairs or soxl,snxx",
+    )
+    sweep.add_argument("--from", dest="deals_from", default="2026-06")
+    sweep.add_argument("--to", dest="deals_to", default="2026-08")
+    sweep.add_argument("--workers", type=int, default=4)
+    sweep.add_argument("--output-dir", default="outputs")
+    sweep.add_argument(
+        "--v-shape",
+        action="store_true",
+        help="Sweep drop-then-rise official-tape segments instead of full/late",
+    )
+
+    res = sub.add_parser(
+        "research-sl",
+        help="Adversarial S→L + 3L ETF grid research (official deals; candidate windows remapped)",
+    )
+    res.add_argument("--output-dir", default="outputs/research_sl_phase")
+    res.add_argument("--skip-download", action="store_true")
     return p
 
 
@@ -94,6 +142,10 @@ def _overrides(args: argparse.Namespace) -> dict[str, Any]:
         o.setdefault("risk", {})["investment_sl_pct"] = float(args.stop_loss)
     if getattr(args, "grid", ""):
         o.setdefault("optimize", {})["grid"] = args.grid
+    if getattr(args, "deals_from", ""):
+        o["deals_from"] = args.deals_from
+    if getattr(args, "deals_to", ""):
+        o["deals_to"] = args.deals_to
     return o
 
 
@@ -175,6 +227,43 @@ def cmd_screen(args: argparse.Namespace) -> int:
     return execute_screen(args)
 
 
+def cmd_fetch_etf(args: argparse.Namespace) -> int:
+    from qtb.data.gatedata import (
+        DEFAULT_ETF_3X,
+        default_deals_window,
+        download_spot_deals,
+        resolve_etf_markets,
+    )
+
+    if args.longs_only:
+        markets = list(DEFAULT_ETF_3X)
+    else:
+        markets = resolve_etf_markets(args.underlyings)
+    start = args.deals_from or ""
+    end = args.deals_to or ""
+    if not start or not end:
+        d0, d1 = default_deals_window()
+        start = start or d0
+        end = end or d1
+    root = Path(args.cache_dir) if args.cache_dir else None
+    recs = download_spot_deals(markets, start, end, root=root)
+    print(
+        json.dumps(
+            {
+                "markets": markets,
+                "from": start,
+                "to": end,
+                "ok": sum(1 for r in recs if r["status"] in {"ok", "skip"}),
+                "missing": sum(1 for r in recs if r["status"] == "missing"),
+                "records": recs,
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+    )
+    return 0
+
+
 def cmd_live(args: argparse.Namespace) -> int:
     cfg = _cfg(args)
     broker = LiveBroker(config=cfg)
@@ -196,6 +285,80 @@ def cmd_live(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_research_sl(args: argparse.Namespace) -> int:
+    from qtb.research.sl_phase.runner import run_research
+
+    payload = run_research(out_dir=args.output_dir, skip_download=bool(args.skip_download))
+    print(
+        json.dumps(
+            {
+                "verdict": payload.get("verdict"),
+                "n_grid": len(payload.get("grid_results") or []),
+                "n_windows_scanned": len((payload.get("etf_windows") or {}).get("scanned") or []),
+                "n_remap": len(payload.get("candidate_remap") or []),
+                "walk_forward": payload.get("walk_forward"),
+                "report": str(Path(args.output_dir) / "REPORT.md"),
+            },
+            indent=2,
+            ensure_ascii=False,
+            default=str,
+        )
+    )
+    return 0
+
+
+def cmd_sweep_etf(args: argparse.Namespace) -> int:
+    from qtb.data.gatedata import resolve_etf_markets
+    from qtb.optimize.etf_sweep import run_etf_sweep
+
+    if getattr(args, "v_shape", False):
+        from qtb.optimize.etf_sweep import run_v_shape_sweep
+
+        frame, high_rank, trough_rank, written = run_v_shape_sweep(
+            deals_from=args.deals_from,
+            deals_to=args.deals_to,
+            workers=int(args.workers),
+            out_dir=args.output_dir,
+        )
+        print(
+            json.dumps(
+                {
+                    "n_rows": int(len(frame)),
+                    "best_from_high": high_rank.iloc[0].to_dict() if len(high_rank) else {},
+                    "best_from_trough": trough_rank.iloc[0].to_dict() if len(trough_rank) else {},
+                    "artifacts": written,
+                },
+                indent=2,
+                ensure_ascii=False,
+                default=str,
+            )
+        )
+        return 0
+    markets = resolve_etf_markets(args.underlyings)
+    frame, ranked, written = run_etf_sweep(
+        symbols=markets,
+        deals_from=args.deals_from,
+        deals_to=args.deals_to,
+        workers=int(args.workers),
+        out_dir=args.output_dir,
+    )
+    best = ranked.iloc[0].to_dict() if len(ranked) else {}
+    print(
+        json.dumps(
+            {
+                "n_rows": int(len(frame)),
+                "n_combos": int(len(ranked)),
+                "best": best,
+                "artifacts": written,
+            },
+            indent=2,
+            ensure_ascii=False,
+            default=str,
+        )
+    )
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
@@ -207,6 +370,9 @@ def main(argv: list[str] | None = None) -> int:
         "live": cmd_live,
         "screen": cmd_screen,
         "batch-screen": cmd_screen,
+        "fetch-etf": cmd_fetch_etf,
+        "sweep-etf": cmd_sweep_etf,
+        "research-sl": cmd_research_sl,
     }
     return handlers[args.cmd](args)
 

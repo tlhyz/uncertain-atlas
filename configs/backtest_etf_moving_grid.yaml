@@ -1,0 +1,53 @@
+mode: backtest
+symbol: SOXL3L_USDT
+interval: tick
+days: 0
+market: spot
+feed: deals
+# Official monthly tape. Override with --prefer-sample for the offline sine tape.
+prefer_sample: false
+sample_path: data_sample/etf_deals_sample.csv
+deals_from: "2026-06"
+deals_to: "2026-08"
+cache_only: false
+output_dir: outputs
+run_name: etf_moving_grid_SOXL3L
+
+costs:
+  market: spot
+  vip_tier: 7
+  rebate_rate: 0.70
+  slippage_bps: 0.0
+  use_maker: true
+  quanto: 0.00000001
+  min_order_size: 1
+  min_notional: 1.0
+  apply_funding: false
+
+strategy:
+  name: moving_grid
+  quote_capital: 2000.0
+  # Gate UI: 上5% / 下5% / 20格 / 开移动区间
+  grid_count: 20
+  range_up_pct: 0.05
+  range_down_pct: 0.05
+  spacing_mode: arithmetic
+  shift_on_exit: true
+  # Gate 现货网格高级设置：突破移动（不是均线移动）
+  move_mode: breakout
+  # 现价以上挂卖需要底仓：开仓市价买入卖单档位
+  open_base_inventory: true
+  order_size_quote: 100.0
+  fill_policy: last_touch
+  equity_sample_seconds: 60
+
+risk:
+  # Native moving grid keeps running. Halt is opt-in only.
+  investment_sl_pct: null
+  per_trade_sl_pct: null
+  max_drawdown_stop_pct: null
+  force_exit_before_liq_buffer_pct: null
+  stop_if_price_breaks_range: false
+
+live:
+  dry_run: true

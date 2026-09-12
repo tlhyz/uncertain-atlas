@@ -1,0 +1,1047 @@
+{
+  "feed": "gate_spot_deals",
+  "forbidden_primary": [
+    "yahoo_daily",
+    "stooq_daily",
+    "daily_ohlc"
+  ],
+  "products": [
+    {
+      "market": "SOXL3L_USDT",
+      "listed": "2026-06-25",
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202606",
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate 3x on SOXL (already a 3x US ETF). NOT SOX 9x.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 71701,
+        "first_print_px": 1.00644,
+        "last_print_px": 0.01545,
+        "tape_return_pct": -0.984649,
+        "first_print_ts": "2026-06-25 09:03:39.672023058+00:00",
+        "last_print_ts": "2026-08-31 23:56:55.650232077+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 1.08975,
+        "tape_low": 0.01101
+      },
+      "strategy_prints": 71701,
+      "data_status": "ok"
+    },
+    {
+      "market": "SOXL3S_USDT",
+      "listed": "2026-06-25",
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202606",
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate -3x on SOXL. NOT SOX -9x.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 62331,
+        "first_print_px": 1.01083,
+        "last_print_px": 0.8326,
+        "tape_return_pct": -0.17632,
+        "first_print_ts": "2026-06-25 09:00:00.577140093+00:00",
+        "last_print_ts": "2026-08-31 23:59:44.106513977+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 4.0564,
+        "tape_low": 0.4305
+      },
+      "strategy_prints": 62331,
+      "data_status": "ok"
+    },
+    {
+      "market": "SOXLG_USDT",
+      "listed": "2026-07-01",
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate tokenized SOXL. Proxy for SOXL spot on Gate after listing. Not NYSE SOXL.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 238588,
+        "first_print_px": 188.35,
+        "last_print_px": 112.78,
+        "tape_return_pct": -0.401221,
+        "first_print_ts": "2026-07-09 08:05:25.060357094+00:00",
+        "last_print_ts": "2026-08-31 23:58:58.386766911+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 203.9,
+        "tape_low": 86.13
+      },
+      "strategy_prints": 238588,
+      "data_status": "ok"
+    },
+    {
+      "market": "SNXX3L_USDT",
+      "listed": "2026-07-29",
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate 3x on SNXX (SNXX itself is 2x SNDK). NOT SNDK 6x. SNXX 8-for-1 split was 2026-06; post-listing tape is post-split.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 37108,
+        "first_print_px": 1.00171,
+        "last_print_px": 1.0969,
+        "tape_return_pct": 0.095028,
+        "first_print_ts": "2026-07-29 07:10:59.422969103+00:00",
+        "last_print_ts": "2026-08-31 23:57:17.847073078+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 4.36341,
+        "tape_low": 0.4618
+      },
+      "strategy_prints": 37108,
+      "data_status": "ok"
+    },
+    {
+      "market": "SNXX3S_USDT",
+      "listed": "2026-07-29",
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate -3x on SNXX. NOT SNDK -6x.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 27829,
+        "first_print_px": 1.0107,
+        "last_print_px": 0.010265,
+        "tape_return_pct": -0.989844,
+        "first_print_ts": "2026-07-29 07:10:46.997111082+00:00",
+        "last_print_ts": "2026-08-31 23:52:25.593379021+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 1.40239,
+        "tape_low": 0.00536
+      },
+      "strategy_prints": 27829,
+      "data_status": "ok"
+    },
+    {
+      "market": "SNXXG_USDT",
+      "listed": "2026-07-01",
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate tokenized SNXX. SNXX listed 2026-01-26; 8-for-1 split 2026-06. Do not treat the split as a crash.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 199618,
+        "first_print_px": 18.275,
+        "last_print_px": 13.974,
+        "tape_return_pct": -0.235349,
+        "first_print_ts": "2026-07-23 06:00:36.616838932+00:00",
+        "last_print_ts": "2026-08-31 23:59:32.297837973+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 20.254,
+        "tape_low": 6.198
+      },
+      "strategy_prints": 199618,
+      "data_status": "ok"
+    },
+    {
+      "market": "AAOI3L_USDT",
+      "listed": "2026-09-09",
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [],
+      "notes": "Gate listed 2026-09-09. No official deals file published as of 2026-09. Pre-listing AAOI3L history does not exist on Gate.",
+      "feed": "gate_spot_deals",
+      "data_status": "DATA_MISSING",
+      "tape": {
+        "tape_ok": false,
+        "n_prints": 0
+      }
+    },
+    {
+      "market": "BTC3L_USDT",
+      "listed": null,
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202407",
+        "202408",
+        "202409",
+        "202410",
+        "202411",
+        "202412",
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512",
+        "202601",
+        "202602",
+        "202603",
+        "202604",
+        "202605",
+        "202606",
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate BTC 3x. Model C = official deals.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 879036,
+        "first_print_px": 6.0576,
+        "last_print_px": 1.7691,
+        "tape_return_pct": -0.707954,
+        "first_print_ts": "2024-07-01 00:55:44.067662954+00:00",
+        "last_print_ts": "2026-08-31 23:55:58.021680117+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 19.43,
+        "tape_low": 0.8
+      },
+      "strategy_prints": 879036,
+      "data_status": "ok"
+    },
+    {
+      "market": "ETH3L_USDT",
+      "listed": null,
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202407",
+        "202408",
+        "202409",
+        "202410",
+        "202411",
+        "202412",
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512",
+        "202601",
+        "202602",
+        "202603",
+        "202604",
+        "202605",
+        "202606",
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate ETH 3x. Model C = official deals.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 836117,
+        "first_print_px": 5.2555,
+        "last_print_px": 0.14679,
+        "tape_return_pct": -0.972069,
+        "first_print_ts": "2024-07-01 00:01:08.448896885+00:00",
+        "last_print_ts": "2026-08-31 23:58:12.829412937+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 5.5017,
+        "tape_low": 0.04042
+      },
+      "strategy_prints": 836117,
+      "data_status": "ok"
+    },
+    {
+      "market": "SOL3L_USDT",
+      "listed": null,
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [
+        "202407",
+        "202408",
+        "202409",
+        "202410",
+        "202411",
+        "202412",
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512",
+        "202601",
+        "202602",
+        "202603",
+        "202604",
+        "202605",
+        "202606",
+        "202607",
+        "202608"
+      ],
+      "notes": "Gate SOL 3x. Model C = official deals.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 1448457,
+        "first_print_px": 21.2374,
+        "last_print_px": 0.20424,
+        "tape_return_pct": -0.990383,
+        "first_print_ts": "2024-07-01 00:09:18.230180025+00:00",
+        "last_print_ts": "2026-08-31 23:57:38.574650049+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 49.6155,
+        "tape_low": 0.05592
+      },
+      "strategy_prints": 1448457,
+      "data_status": "ok"
+    },
+    {
+      "market": "PENGU3L_USDT",
+      "listed": "2025-07-18",
+      "strategy_from": "2025-07-18",
+      "contaminated_before": null,
+      "cached_months": [
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512",
+        "202601",
+        "202602",
+        "202603",
+        "202604",
+        "202605",
+        "202606",
+        "202607",
+        "202608"
+      ],
+      "notes": "Current PENGU3L from 2025-07-18. Official deals start 2025-07.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 480452,
+        "first_print_px": 1.00697,
+        "last_print_px": 0.0988,
+        "tape_return_pct": -0.901884,
+        "first_print_ts": "2025-07-18 11:00:28.112251043+00:00",
+        "last_print_ts": "2026-08-31 23:02:31.390877008+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 3.30192,
+        "tape_low": 0.000785
+      },
+      "strategy_prints": 480452,
+      "data_status": "ok"
+    },
+    {
+      "market": "PUMP3L_USDT",
+      "listed": "2025-07-18",
+      "strategy_from": "2025-07-18",
+      "contaminated_before": "2025-07-18",
+      "cached_months": [
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512",
+        "202601",
+        "202602",
+        "202603",
+        "202604",
+        "202605",
+        "202606",
+        "202607",
+        "202608"
+      ],
+      "notes": "Current pump.fun PUMP3L from 2025-07-18. 2025-04..2025-06 PUMP3L deals exist but belong to the old PumpBTC era \u2014 do not merge.",
+      "feed": "gate_spot_deals",
+      "tape": {
+        "tape_ok": true,
+        "tape_source": "download.gatedata.org/spot/deals",
+        "n_prints": 693394,
+        "first_print_px": 1.0125,
+        "last_print_px": 1.10856,
+        "tape_return_pct": 0.094874,
+        "first_print_ts": "2025-07-18 12:01:04.662147999+00:00",
+        "last_print_ts": "2026-08-31 23:55:44.478682041+00:00",
+        "tape_ts_monotonic": true,
+        "tape_keys_unique": true,
+        "tape_nonpositive_price": 0,
+        "tape_nonpositive_amount": 0,
+        "tape_high": 4.128,
+        "tape_low": 0.000792
+      },
+      "strategy_prints": 693394,
+      "data_status": "ok"
+    },
+    {
+      "market": "PUMPBTC_USDT",
+      "listed": "2025-06-01",
+      "strategy_from": null,
+      "contaminated_before": null,
+      "cached_months": [],
+      "notes": "Renamed old PumpBTC spot. Not pump.fun PUMP. Deals from 2025-06.",
+      "feed": "gate_spot_deals",
+      "data_status": "DATA_MISSING",
+      "tape": {
+        "tape_ok": false,
+        "n_prints": 0
+      }
+    }
+  ],
+  "windows": [
+    {
+      "window": "S1",
+      "asset": "SOXL",
+      "start": "2024-07-01",
+      "end": "2024-09-06",
+      "role": "main",
+      "notes": "No Gate SOXL3L/SOXLG deals (listed 2026-06-25). DATA_MISSING.",
+      "markets": {},
+      "data_status": "DATA_MISSING"
+    },
+    {
+      "window": "S2",
+      "asset": "SOXL",
+      "start": "2025-02-03",
+      "end": "2025-06-30",
+      "role": "main",
+      "notes": "No Gate SOXL3L/SOXLG deals. DATA_MISSING.",
+      "markets": {},
+      "data_status": "DATA_MISSING"
+    },
+    {
+      "window": "S3",
+      "asset": "SOXL",
+      "start": "2026-06-25",
+      "end": "2026-09-11",
+      "role": "main",
+      "notes": "Real SOXL3L/S ticks. SOXLG from 2026-07. Sept 2026 monthly deals not published.",
+      "markets": {
+        "SOXL3L_USDT": {
+          "n_prints": 71701,
+          "first": "2026-06-25 09:03:39.672023058+00:00",
+          "last": "2026-08-31 23:56:55.650232077+00:00",
+          "first_px": 1.00644,
+          "last_px": 0.01545,
+          "ret": -0.984649,
+          "status": "ok"
+        },
+        "SOXL3S_USDT": {
+          "n_prints": 62331,
+          "first": "2026-06-25 09:00:00.577140093+00:00",
+          "last": "2026-08-31 23:59:44.106513977+00:00",
+          "first_px": 1.01083,
+          "last_px": 0.8326,
+          "ret": -0.17632,
+          "status": "ok"
+        },
+        "SOXLG_USDT": {
+          "n_prints": 238588,
+          "first": "2026-07-09 08:05:25.060357094+00:00",
+          "last": "2026-08-31 23:58:58.386766911+00:00",
+          "first_px": 188.35,
+          "last_px": 112.78,
+          "ret": -0.401221,
+          "status": "ok"
+        },
+        "ETH3L_USDT": {
+          "n_prints": 96138,
+          "first": "2026-06-25 00:01:53.537621021+00:00",
+          "last": "2026-08-31 23:58:12.829412937+00:00",
+          "first_px": 0.05018,
+          "last_px": 0.14679,
+          "ret": 1.925269,
+          "status": "ok"
+        },
+        "SOL3L_USDT": {
+          "n_prints": 74845,
+          "first": "2026-06-25 00:02:18.818434954+00:00",
+          "last": "2026-08-31 23:57:38.574650049+00:00",
+          "first_px": 0.07271,
+          "last_px": 0.20424,
+          "ret": 1.808967,
+          "status": "ok"
+        },
+        "SNXX3L_USDT": {
+          "n_prints": 37108,
+          "first": "2026-07-29 07:10:59.422969103+00:00",
+          "last": "2026-08-31 23:57:17.847073078+00:00",
+          "first_px": 1.00171,
+          "last_px": 1.0969,
+          "ret": 0.095028,
+          "status": "ok"
+        },
+        "SNXX3S_USDT": {
+          "n_prints": 27829,
+          "first": "2026-07-29 07:10:46.997111082+00:00",
+          "last": "2026-08-31 23:52:25.593379021+00:00",
+          "first_px": 1.0107,
+          "last_px": 0.010265,
+          "ret": -0.989844,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "N1",
+      "asset": "SNXX",
+      "start": "2026-06-22",
+      "end": "2026-09-04",
+      "role": "main",
+      "notes": "Gate SNXX3L/S from 2026-07-29. Pre-listing slice has no 3x tape.",
+      "markets": {
+        "SNXX3L_USDT": {
+          "n_prints": 37108,
+          "first": "2026-07-29 07:10:59.422969103+00:00",
+          "last": "2026-08-31 23:57:17.847073078+00:00",
+          "first_px": 1.00171,
+          "last_px": 1.0969,
+          "ret": 0.095028,
+          "status": "ok"
+        },
+        "SNXX3S_USDT": {
+          "n_prints": 27829,
+          "first": "2026-07-29 07:10:46.997111082+00:00",
+          "last": "2026-08-31 23:52:25.593379021+00:00",
+          "first_px": 1.0107,
+          "last_px": 0.010265,
+          "ret": -0.989844,
+          "status": "ok"
+        },
+        "SNXXG_USDT": {
+          "n_prints": 199618,
+          "first": "2026-07-23 06:00:36.616838932+00:00",
+          "last": "2026-08-31 23:59:32.297837973+00:00",
+          "first_px": 18.275,
+          "last_px": 13.974,
+          "ret": -0.235349,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "A1",
+      "asset": "AAOI",
+      "start": "2024-02-01",
+      "end": "2024-11-30",
+      "role": "main",
+      "notes": "AAOI3L listed 2026-09-09. No official deals. DATA_MISSING.",
+      "markets": {},
+      "data_status": "DATA_MISSING"
+    },
+    {
+      "window": "A2",
+      "asset": "AAOI",
+      "start": "2026-05-13",
+      "end": "2026-08-31",
+      "role": "main",
+      "notes": "Pre-listing. No AAOI3L deals. DATA_MISSING.",
+      "markets": {},
+      "data_status": "DATA_MISSING"
+    },
+    {
+      "window": "B1",
+      "asset": "BTC",
+      "start": "2024-07-29",
+      "end": "2024-09-30",
+      "role": "main",
+      "notes": "Official BTC3L deals.",
+      "markets": {
+        "BTC3L_USDT": {
+          "n_prints": 35318,
+          "first": "2024-07-29 00:09:56.731508970+00:00",
+          "last": "2024-09-30 23:46:26.895236969+00:00",
+          "first_px": 6.9615,
+          "last_px": 4.8425,
+          "ret": -0.304388,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "B2",
+      "asset": "BTC",
+      "start": "2025-01-20",
+      "end": "2025-05-31",
+      "role": "main",
+      "notes": "Official BTC3L deals.",
+      "markets": {
+        "BTC3L_USDT": {
+          "n_prints": 48340,
+          "first": "2025-01-20 00:05:20.030294895+00:00",
+          "last": "2025-05-31 23:56:34.880989075+00:00",
+          "first_px": 11.8697,
+          "last_px": 12.2736,
+          "ret": 0.034028,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "E1",
+      "asset": "ETH",
+      "start": "2025-03-24",
+      "end": "2025-05-13",
+      "role": "main",
+      "notes": "Official ETH3L deals.",
+      "markets": {
+        "ETH3L_USDT": {
+          "n_prints": 21148,
+          "first": "2025-03-24 01:45:10.937402010+00:00",
+          "last": "2025-05-13 23:56:04.999991894+00:00",
+          "first_px": 0.6592,
+          "last_px": 1.2767,
+          "ret": 0.936742,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "L1",
+      "asset": "SOL",
+      "start": "2024-07-29",
+      "end": "2024-08-24",
+      "role": "main",
+      "notes": "Official SOL3L deals.",
+      "markets": {
+        "SOL3L_USDT": {
+          "n_prints": 46919,
+          "first": "2024-07-29 00:01:41.577271938+00:00",
+          "last": "2024-08-24 23:58:28.896061897+00:00",
+          "first_px": 33.6077,
+          "last_px": 19.9398,
+          "ret": -0.40669,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "L2",
+      "asset": "SOL",
+      "start": "2025-03-24",
+      "end": "2025-05-31",
+      "role": "main",
+      "notes": "Official SOL3L deals.",
+      "markets": {
+        "SOL3L_USDT": {
+          "n_prints": 45486,
+          "first": "2025-03-24 00:00:21.475162029+00:00",
+          "last": "2025-05-31 23:59:57.774720907+00:00",
+          "first_px": 5.64,
+          "last_px": 6.687,
+          "ret": 0.185638,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "PG1",
+      "asset": "PENGU",
+      "start": "2025-01-01",
+      "end": "2025-07-31",
+      "role": "main",
+      "notes": "PENGU3L deals from 2025-07 only. Jan\u2013mid-Jul DATA_MISSING.",
+      "markets": {
+        "PENGU3L_USDT": {
+          "n_prints": 32763,
+          "first": "2025-07-18 11:00:28.112251043+00:00",
+          "last": "2025-07-31 23:57:49.857984066+00:00",
+          "first_px": 1.00697,
+          "last_px": 1.063,
+          "ret": 0.055642,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "PG2",
+      "asset": "PENGU",
+      "start": "2026-01-01",
+      "end": "2026-08-31",
+      "role": "main",
+      "notes": "Official PENGU3L deals.",
+      "markets": {
+        "PENGU3L_USDT": {
+          "n_prints": 229398,
+          "first": "2026-01-01 00:01:01.978044987+00:00",
+          "last": "2026-08-31 23:02:31.390877008+00:00",
+          "first_px": 0.84841,
+          "last_px": 0.0988,
+          "ret": -0.883547,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "PP1",
+      "asset": "PUMP",
+      "start": "2026-02-01",
+      "end": "2026-08-31",
+      "role": "main",
+      "notes": "pump.fun PUMP3L only (strategy_from 2025-07-18).",
+      "markets": {
+        "PUMP3L_USDT": {
+          "n_prints": 207440,
+          "first": "2026-02-01 00:00:26.834635973+00:00",
+          "last": "2026-08-31 23:55:44.478682041+00:00",
+          "first_px": 1.984,
+          "last_px": 1.10856,
+          "ret": -0.44125,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "SX_FAIL",
+      "asset": "SOXL",
+      "start": "2026-04-01",
+      "end": "2026-07-31",
+      "role": "stress",
+      "notes": "Pre-listing Apr\u2013Jun 24 DATA_MISSING. Jun 25\u2013Jul 31 has ticks.",
+      "markets": {
+        "SOXL3L_USDT": {
+          "n_prints": 44648,
+          "first": "2026-06-25 09:03:39.672023058+00:00",
+          "last": "2026-07-31 23:51:32.653542042+00:00",
+          "first_px": 1.00644,
+          "last_px": 0.02373,
+          "ret": -0.976422,
+          "status": "ok"
+        },
+        "SOXL3S_USDT": {
+          "n_prints": 33497,
+          "first": "2026-06-25 09:00:00.577140093+00:00",
+          "last": "2026-07-31 23:57:00.062912941+00:00",
+          "first_px": 1.01083,
+          "last_px": 1.7242,
+          "ret": 0.705727,
+          "status": "ok"
+        },
+        "SOXLG_USDT": {
+          "n_prints": 133151,
+          "first": "2026-07-09 08:05:25.060357094+00:00",
+          "last": "2026-07-31 23:59:47.809943914+00:00",
+          "first_px": 188.35,
+          "last_px": 113.03,
+          "ret": -0.399894,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "NX_FAIL",
+      "asset": "SNXX",
+      "start": "2026-03-30",
+      "end": "2026-07-29",
+      "role": "stress",
+      "notes": "Almost entirely pre-listing. Only 2026-07-29 has 3x ticks.",
+      "markets": {
+        "SNXX3L_USDT": {
+          "n_prints": 391,
+          "first": "2026-07-29 07:10:59.422969103+00:00",
+          "last": "2026-07-29 23:57:51.830740929+00:00",
+          "first_px": 1.00171,
+          "last_px": 0.56911,
+          "ret": -0.431862,
+          "status": "ok"
+        },
+        "SNXX3S_USDT": {
+          "n_prints": 327,
+          "first": "2026-07-29 07:10:46.997111082+00:00",
+          "last": "2026-07-29 23:53:12.223292112+00:00",
+          "first_px": 1.0107,
+          "last_px": 1.11278,
+          "ret": 0.100999,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "AX_FAIL",
+      "asset": "AAOI",
+      "start": "2024-08-01",
+      "end": "2025-04-30",
+      "role": "stress",
+      "notes": "No AAOI3L deals. DATA_MISSING.",
+      "markets": {},
+      "data_status": "DATA_MISSING"
+    },
+    {
+      "window": "BX_FAIL",
+      "asset": "BTC",
+      "start": "2024-09-06",
+      "end": "2025-04-07",
+      "role": "stress",
+      "notes": "Official BTC3L deals.",
+      "markets": {
+        "BTC3L_USDT": {
+          "n_prints": 94221,
+          "first": "2024-09-06 00:02:40.460629940+00:00",
+          "last": "2025-04-07 23:40:42.575166941+00:00",
+          "first_px": 3.8895,
+          "last_px": 5.7971,
+          "ret": 0.490449,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "EX_FAIL",
+      "asset": "ETH",
+      "start": "2024-09-01",
+      "end": "2025-04-09",
+      "role": "stress",
+      "notes": "Official ETH3L deals.",
+      "markets": {
+        "ETH3L_USDT": {
+          "n_prints": 114109,
+          "first": "2024-09-01 00:42:52.534339904+00:00",
+          "last": "2025-04-09 23:22:28.144933939+00:00",
+          "first_px": 2.0824,
+          "last_px": 0.3453,
+          "ret": -0.834182,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "LX_FAIL",
+      "asset": "SOL",
+      "start": "2024-08-05",
+      "end": "2025-04-09",
+      "role": "stress",
+      "notes": "Official SOL3L deals.",
+      "markets": {
+        "SOL3L_USDT": {
+          "n_prints": 723613,
+          "first": "2024-08-05 00:00:33.475070953+00:00",
+          "last": "2025-04-09 23:46:47.479012966+00:00",
+          "first_px": 16.5079,
+          "last_px": 3.49,
+          "ret": -0.788586,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "PGX_FAIL",
+      "asset": "PENGU",
+      "start": "2025-04-01",
+      "end": "2025-12-31",
+      "role": "stress",
+      "notes": "Ticks from 2025-07-18 only.",
+      "markets": {
+        "PENGU3L_USDT": {
+          "n_prints": 251054,
+          "first": "2025-07-18 11:00:28.112251043+00:00",
+          "last": "2025-12-31 23:59:35.270565987+00:00",
+          "first_px": 1.00697,
+          "last_px": 0.84966,
+          "ret": -0.156221,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "PPX_FAIL",
+      "asset": "PUMP",
+      "start": "2025-09-14",
+      "end": "2025-12-31",
+      "role": "stress",
+      "notes": "pump.fun PUMP3L ticks.",
+      "markets": {
+        "PUMP3L_USDT": {
+          "n_prints": 273358,
+          "first": "2025-09-14 00:00:00.298552036+00:00",
+          "last": "2025-12-31 23:59:27.010943890+00:00",
+          "first_px": 1.04375,
+          "last_px": 1.1308,
+          "ret": 0.083401,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    },
+    {
+      "window": "E_V2024",
+      "asset": "ETH",
+      "start": "2024-07-29",
+      "end": "2024-09-30",
+      "role": "main",
+      "notes": "Auto-added 2024-07..09 ETH V-like window (same calendar as B1).",
+      "markets": {
+        "ETH3L_USDT": {
+          "n_prints": 23565,
+          "first": "2024-07-29 00:09:57.065968990+00:00",
+          "last": "2024-09-30 23:43:03.587559938+00:00",
+          "first_px": 4.3666,
+          "last_px": 2.0788,
+          "ret": -0.523932,
+          "status": "ok"
+        }
+      },
+      "data_status": "ok"
+    }
+  ],
+  "pump_contamination": {
+    "rule": "PUMP3L before 2025-07-18 is old PumpBTC-era; do not merge with pump.fun PUMP3L",
+    "legacy_PUMP3L_months": [
+      "202504",
+      "202505",
+      "202506"
+    ],
+    "live_PUMP3L_months": [
+      "202507",
+      "202508",
+      "202509",
+      "202510",
+      "202511",
+      "202512",
+      "202601",
+      "202602",
+      "202603",
+      "202604",
+      "202605",
+      "202606",
+      "202607",
+      "202608"
+    ],
+    "PUMPBTC_USDT_months": [],
+    "merged": false,
+    "legacy": {
+      "tape_ok": true,
+      "tape_source": "download.gatedata.org/spot/deals",
+      "n_prints": 50155,
+      "first_print_px": 0.9882,
+      "last_print_px": 0.17733,
+      "tape_return_pct": -0.820553,
+      "first_print_ts": "2025-04-29 08:53:25.183331013+00:00",
+      "last_print_ts": "2025-06-05 03:03:55.028866053+00:00",
+      "tape_ts_monotonic": true,
+      "tape_keys_unique": true,
+      "tape_nonpositive_price": 0,
+      "tape_nonpositive_amount": 0,
+      "tape_high": 1.09763,
+      "tape_low": 0.16203,
+      "first_ts": "2025-04-29 08:53:25.183331013+00:00",
+      "last_ts": "2025-06-05 03:03:55.028866053+00:00"
+    },
+    "live_from_2025_07_18": {
+      "tape_ok": true,
+      "tape_source": "download.gatedata.org/spot/deals",
+      "n_prints": 25725,
+      "first_print_px": 1.0125,
+      "last_print_px": 0.0882,
+      "tape_return_pct": -0.912889,
+      "first_print_ts": "2025-07-18 12:01:04.662147999+00:00",
+      "last_print_ts": "2025-07-31 23:59:55.304903984+00:00",
+      "tape_ts_monotonic": true,
+      "tape_keys_unique": true,
+      "tape_nonpositive_price": 0,
+      "tape_nonpositive_amount": 0,
+      "tape_high": 1.14857,
+      "tape_low": 0.08348,
+      "first_ts": "2025-07-18 12:01:04.662147999+00:00",
+      "last_ts": "2025-07-31 23:59:55.304903984+00:00"
+    },
+    "price_gap_legacy_last_to_live_first": 4.709693791236678,
+    "contiguous_same_instrument": false,
+    "reason": "Same filename PUMP3L_USDT spans PumpBTC-era months (202504-202506) and pump.fun months (202507+). Cut at 2025-07-18. Strategy loader drops pre-cut prints."
+  },
+  "soxl_leverage_warning": "SOXL3L is 3x SOXL, not 9x SOX. SNXX3L is 3x SNXX, not 6x SNDK.",
+  "aaoi_note": "AAOI3L_USDT official monthly deals: none published."
+}
