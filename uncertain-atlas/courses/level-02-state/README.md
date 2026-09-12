@@ -11,7 +11,7 @@
 | 课 | 文件 | 核心问题 |
 |---|---|---|
 | 2.1 | [L02-M01-utxo.md](L02-M01-utxo.md) | UTXO 为什么天然能并行 |
-| 2.2 | [L02-M02-account.md](L02-M02-account.md) | 账户 + nonce 换来了什么 |
+| 2.2 | [L02-M02-account.md](L02-M02-account.md) | 账户 + nonce 换来了什么；可花 ≠ 锁定已从写回排除 |
 | 2.3 | [L02-M03-object-resource.md](L02-M03-object-resource.md) | 对象/资源世界观差在哪 |
 | 2.4 | [L02-M04-design-map.md](L02-M04-design-map.md) | 《状态模型设计地图》 |
 | 2.5 | [L02-M05-eutxo.md](L02-M05-eutxo.md) | eUTXO：输出带着数据 |
