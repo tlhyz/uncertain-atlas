@@ -207,7 +207,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 ### M3.5 全节点、剪枝、SPV · 必学
 - 验证 vs 查看
 - 轻客户端的安全假设
-- 覆盖：课文 L3.5；assumevalid / assumeutxo ≠ 旧 checkpoint ≠ WS `tracks/implementation/worked-example-assumevalid.md`；头先够功 `tracks/implementation/worked-example-header-work.md`（CVE-2019-25220）。客户端侧过滤器对上 ≠ 已经有块；过滤器头链对上 ≠ 已经写进共识；至少一个诚实对等节点 ≠ 已经验完脚本：[`../tracks/light-clients/worked-example-cfilter-vs-have.md`](../tracks/light-clients/worked-example-cfilter-vs-have.md)（不变量 243）
+- 覆盖：课文 L3.5；assumevalid / assumeutxo ≠ 旧 checkpoint ≠ WS `tracks/implementation/worked-example-assumevalid.md`；头先够功 `tracks/implementation/worked-example-header-work.md`（CVE-2019-25220）。客户端侧过滤器对上 ≠ 已经有块；过滤器头链对上 ≠ 已经写进共识；至少一个诚实对等节点 ≠ 已经验完脚本：[`../tracks/light-clients/worked-example-cfilter-vs-have.md`](../tracks/light-clients/worked-example-cfilter-vs-have.md)（不变量 243）。基本过滤器对上 ≠ 已经在集合里；装了花费脚本和收款脚本 ≠ 已经有那笔交易；排除了 OP_RETURN ≠ 已经写进共识：[`../tracks/light-clients/worked-example-basic-filter-vs-relevant.md`](../tracks/light-clients/worked-example-basic-filter-vs-relevant.md)（不变量 244）
 
 ### M3.6 工程哲学与测试 · 重要
 - fuzzing、软分叉、Bitcoin Core 的保守主义
@@ -436,7 +436,7 @@ L3–L10 见 `courses/README.md`（每个必学/重要节点有课文或覆盖�
 
 ### M9.6 轻节点专题 · 重要
 - SPV、状态证明、DAS、简洁证明
-- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`；Altair 抽样 `tracks/light-clients/worked-example-sync-committee.md`；Mina SNARKed ≠ staged `tracks/light-clients/worked-example-snarked-vs-staged.md`（不变量 123）；Celestia NMT 齐 ≠ 方阵可用 `tracks/light-clients/worked-example-nmt-vs-das.md`（不变量 124）。验过头 ≠ 能交证据：Alderfly（不变量 66；朝前 lunatic 不得只等同高再出一块）。头里的父信标根 ≠ 当前信标头：[`../tracks/light-clients/worked-example-parent-root-vs-head.md`](../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。看见状态里的历史执行哈希 ≠ 已经是 BLOCKHASH：[`../tracks/light-clients/worked-example-history-hash-vs-blockhash.md`](../tracks/light-clients/worked-example-history-hash-vs-blockhash.md)（不变量 195）。客户端侧过滤器对上 ≠ 已经有块；过滤器头链对上 ≠ 已经写进共识：[`../tracks/light-clients/worked-example-cfilter-vs-have.md`](../tracks/light-clients/worked-example-cfilter-vs-have.md)（不变量 243）
+- 覆盖：课文 L9.6；阿比放货精读；BFT 跳过 `tracks/light-clients/worked-example-bft-skip.md`；Altair 抽样 `tracks/light-clients/worked-example-sync-committee.md`；Mina SNARKed ≠ staged `tracks/light-clients/worked-example-snarked-vs-staged.md`（不变量 123）；Celestia NMT 齐 ≠ 方阵可用 `tracks/light-clients/worked-example-nmt-vs-das.md`（不变量 124）。验过头 ≠ 能交证据：Alderfly（不变量 66；朝前 lunatic 不得只等同高再出一块）。头里的父信标根 ≠ 当前信标头：[`../tracks/light-clients/worked-example-parent-root-vs-head.md`](../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。看见状态里的历史执行哈希 ≠ 已经是 BLOCKHASH：[`../tracks/light-clients/worked-example-history-hash-vs-blockhash.md`](../tracks/light-clients/worked-example-history-hash-vs-blockhash.md)（不变量 195）。客户端侧过滤器对上 ≠ 已经有块；过滤器头链对上 ≠ 已经写进共识：[`../tracks/light-clients/worked-example-cfilter-vs-have.md`](../tracks/light-clients/worked-example-cfilter-vs-have.md)（不变量 243）。基本过滤器对上 ≠ 已经在集合里；排除了 OP_RETURN ≠ 已经写进共识：[`../tracks/light-clients/worked-example-basic-filter-vs-relevant.md`](../tracks/light-clients/worked-example-basic-filter-vs-relevant.md)（不变量 244）
 
 ### M9.7 协议测试 · 必学
 - unit / property / fuzz / differential / chaos / mutation
