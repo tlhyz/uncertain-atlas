@@ -12,6 +12,7 @@ Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`worked-example-doomslug-vs-
 官方顺序已定 ≠ 本块状态根已经交差：[`../consensus/worked-example-order-vs-state.md`](../consensus/worked-example-order-vs-state.md)（不变量 136）。  
 进了 DAG ≠ 已经在 selected chain：[`../consensus/worked-example-dag-vs-selected-chain.md`](../consensus/worked-example-dag-vs-selected-chain.md)（不变量 137）。  
 排序者回执 ≠ `ACCEPTED_ON_L2` ≠ `ACCEPTED_ON_L1`：[`worked-example-l2-status-vs-l1.md`](worked-example-l2-status-vs-l1.md)（不变量 138）。  
+BTC 锁 ≠ 租户 commit：[`../economic/worked-example-btc-lock-vs-commit.md`](../economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。  
 平行链阶段：[`worked-example-backed-vs-available.md`](worked-example-backed-vs-available.md)（backed ≠ 可用 ≠ 批准 ≠ GRANDPA）。  
 中继出块 ≠ 中继最终：[`../consensus/worked-example-babe-vs-grandpa.md`](../consensus/worked-example-babe-vs-grandpa.md)（BABE ≠ GRANDPA；不变量 126）。
 
@@ -39,5 +40,6 @@ Doomslug / `near-final` ≠ BFT 谓词 / `final`：[`worked-example-doomslug-vs-
 | NEAR | `last_final_block`（BFT 谓词）≠ `last_ds_final_block` | 出块 / Doomslug / `near-final` = commit 或已经 `final` | 视 approvals 与缺 chunk | 思想级档案 + 精读 |
 | Monad（文档） | 共识最终的是**顺序**；状态根延迟 `D` 块 | 顺序最终 = 余额已到 | 视其 BFT；执行滞后是另一轴 | 过滤器 + 精读 |
 | Starknet（文档） | `CANDIDATE` / `PRE_CONFIRMED` / `ACCEPTED_ON_L2` / `ACCEPTED_ON_L1` | 回执绿 = L1 已更新 / 可提款 | 视 L2 共识与 L1 高度；证明滞后是另一轴 | 过滤器 + 精读 |
+| Babylon（模块） | Bitcoin 上的 UTXO 锁 + k-deep 票权；解绑看意图 | BTC 质押 = wrap / 已经 commit / 浅重组能恢复 | Bitcoin 侧仍是 k 政策；模块解绑不要求 k-deep | 过滤器 + 精读 |
 
 「不确定」列空。若产品要说「到了」，先在 L10.1 选一行协议对象。

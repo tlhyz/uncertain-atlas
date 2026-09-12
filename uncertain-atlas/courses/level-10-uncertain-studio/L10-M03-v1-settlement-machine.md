@@ -163,6 +163,7 @@
 132. 若共识热路径不跑 `Apply`：必须点名问的是官方顺序还是已经交差的状态（不变量 136）。顺序已定不是本块根已经交差。投票时可以还没执行。延迟 D 块根不是轻客户端能证 N。投机 `eth_call` 不是协议最终。第一版可以保持投票前先跑完。不要抄 `D` 或执行预算表。不要写 19 节。精读：[`../../tracks/consensus/worked-example-order-vs-state.md`](../../tracks/consensus/worked-example-order-vs-state.md)。这和 STM 跑完≠最终（不变量 122）、批次≠L（不变量 132）、谁写顺序（不变量 27）不是同一句。
 133. 若留下并行块再线性化：必须点名问的是 DAG 成员、mergeset、蓝还是 selected chain（不变量 137）。进了某个块不是已经在 selected chain。并行块留下不是已经 orphan。蓝不是 QC。GHOSTDAG 不是 Avalanche 抽样。第一版不必上高块率 DAG。不要抄 BPS。精读：[`../../tracks/consensus/worked-example-dag-vs-selected-chain.md`](../../tracks/consensus/worked-example-dag-vs-selected-chain.md)。这和最重链孤块（L3.1）、Snow 抽样（不变量 131）、先定序再揭开（不变量 136）不是同一句。
 134. 若当有效性租户或对照 ZK 绿勾：必须点名问的是 `CANDIDATE`、`PRE_CONFIRMED`、`ACCEPTED_ON_L2` 还是 `ACCEPTED_ON_L1`（不变量 138）。排序者回执不是已经共识最终。L2 accepted 不是已经 L1。验证明必须写出当前登记的 program hash（不变量 28）。有证明不是不需要状态差。第一版不要当别人的有效性租户。不要抄 TTL 或现行 hash。不要写 19 节。精读：[`../../tracks/finality/worked-example-l2-status-vs-l1.md`](../../tracks/finality/worked-example-l2-status-vs-l1.md)。这和两层 accepted 短句（不变量 28）、Gasper 三等（不变量 127）、PoH 三档（不变量 133）、Doomslug≠BFT（不变量 135）不是同一句。
+135. 若用外链 BTC 当质押：必须点名问的是 Bitcoin 锁、k-deep 票权、解绑意图还是租户 commit（不变量 139）。UTXO 仍在 Bitcoin 不是已经 wrap。k-deep 包含证明不是已经 CometBFT commit。解绑意图不是已经 k-deep。浅重组不是已经恢复票权。契约连署不是没有第三人。第一版不要靠外链 BTC 当质押。不要抄 `k`。不要写 19 节。精读：[`../../tracks/economic/worked-example-btc-lock-vs-commit.md`](../../tracks/economic/worked-example-btc-lock-vs-commit.md)。这和 k 确认（L3.1）、证据≠slash（不变量 21）、中继质押（不变量 125）、EigenLayer restake 不是同一句。
 
 **以后再发明**
 
@@ -261,6 +262,7 @@
 - 把官方顺序已定写成本块状态根已经交差，或把投机 `eth_call` 写成协议最终，或把延迟根写成能证高度 N。
 - 把进了 DAG 块写成已经在 selected chain 或已经最终，或把并行块写成已经 orphan，或把蓝写成 QC，或把 GHOSTDAG 写成 Avalanche。
 - 把 `CANDIDATE` / `PRE_CONFIRMED` 写成已经 `ACCEPTED_ON_L2`，或把 `ACCEPTED_ON_L2` 写成已经 `ACCEPTED_ON_L1` / 可提款，或把验证明写成与当前 program hash 无关的物理定律。
+- 把仍在 Bitcoin 的 UTXO 写成已经 wrap，或把 k-deep 包含证明写成已经租户 commit，或把解绑意图写成已经 k-deep / 浅重组能恢复票权。
 
 ---
 
@@ -311,7 +313,7 @@
 | 层 | 本课钉在哪 |
 |---|---|
 | 密码学 | 清单要求敏捷 + 分域，不选 OID |
-| 协议 | 一百三十四条是建议最小机，不是已选 CometBFT + 账户 |
+| 协议 | 一百三十五条是建议最小机，不是已选 CometBFT + 账户 |
 | 实现 | 必须留下第二个实现能对上的位置 |
 | 部署 | 默认全节点验证 |
 | 经济 | 占用白名单；一次费 ≠ 永存 |

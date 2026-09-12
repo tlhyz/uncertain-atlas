@@ -28,7 +28,7 @@
 | Fuel | [fuel/](fuel/README.md) | 第一版（思想级 UTXO 调度） |
 | Nervos CKB | [nervos/](nervos/README.md) | 第一版（思想级：占用 / 生成验证分离） |
 | NEAR Nightshade | [near/](near/README.md) | 第一版（思想级：一条链 + chunk） |
-| Babylon | [babylon/](babylon/README.md) | 仅过滤器页 |
+| Babylon | [babylon/](babylon/README.md) | 仅过滤器页（UTXO 仍在 Bitcoin；k-deep ≠ commit） |
 | QRL | [qrl/](qrl/README.md) | 仅过滤器页（XMSS + OTS index） |
 | Monad | [monad/](monad/README.md) | 仅过滤器页（共识先定序，再 Apply） |
 | EigenLayer | [eigenlayer/](eigenlayer/README.md) | 仅过滤器页（restake + AVS 自定罚没） |

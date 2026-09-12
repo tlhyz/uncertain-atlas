@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–138。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–139。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -153,6 +153,7 @@
 | C140 | 136 顺序≠状态 | 文案把官方顺序已定写成本块状态根已经交差；或把投票写成已经执行；或把延迟 D 块根写成轻客户端能证 N；或把投机 `eth_call` 写成协议最终；或把零余额入账写成已经能自己发；或与 122 / 132 / 27 糊成「先定序」一句 | 必须红 | 协议+文案 | docs.monad.xyz asynchronous-execution |
 | C141 | 137 进DAG≠selected | 文案把进了某个块写成已经在 selected chain 或已经最终；或把并行块写成已经 orphan；或把蓝写成 QC；或把 GHOSTDAG 写成 Avalanche 抽样；或把 DagKnight 写成现行已经切完；或与 131 / 136 / L3.1 糊成「DAG」一句 | 必须红 | 协议+文案 | wiki.kaspa.org developers-knowledge-base / kaspa |
 | C142 | 138 L2档≠L1 | 文案把 `CANDIDATE` / `PRE_CONFIRMED` 写成已经 `ACCEPTED_ON_L2`；或把 `ACCEPTED_ON_L2` 写成已经 `ACCEPTED_ON_L1` / 可提款；或把验 SNOS 证明写成与当前 `programHash` 无关的物理定律；或把有证明写成不需要状态差；或与 28 / 127 / 133 / 135 糊成「ZK 最终」一句 | 必须红 | 协议+文案 | docs.starknet.io transactions / snos / data-availability |
+| C143 | 139 BTC锁≠commit | 文案把仍在 Bitcoin 的 UTXO 写成已经 wrap；或把 k-deep 包含证明写成已经 CometBFT commit / 租户最终；或把解绑意图写成已经 k-deep；或把浅重组写成已经恢复票权；或把契约委员会写成没有第三人；或与 21 / 26 / 125 / EigenLayer 糊成「共享安全」一句 | 必须红 | 协议+文案 | babylonlabs-io/babylon x/btcstaking / staking-script |
 
 未编号、等第二实现才强制：差分 job 对 C01–C06、C11、C18 各跑一遍。  
 未编号、等实测：验签配额（账本第 8 行）——无数字先写「超配额必拒」，配额本身空着。

@@ -35,7 +35,7 @@ EigenLayer 是目前公开文献里把这句说得最清楚的产品名。它 **
 | 产品 | 抵押对象在哪 | 谁定义「作恶」 | 共享的是什么 |
 |------|--------------|----------------|--------------|
 | Polkadot | 中继链 DOT 质押 | 中继 + 平行链协议（批准/可用性） | 中继验证者对平行链的检查职责 |
-| Babylon | **比特币 UTXO 仍在比特币账本** | 比特币脚本 / 其协议声明的罚没路径 | 比特币上的锁，不是「BTC 跑 Cosmos 共识」 |
+| Babylon | **比特币 UTXO 仍在比特币账本** | 比特币脚本 / 其协议声明的罚没路径 | 比特币上的锁，不是「BTC 跑 Cosmos 共识」。k-deep ≠ commit：[`../../tracks/economic/worked-example-btc-lock-vs-commit.md`](../../tracks/economic/worked-example-btc-lock-vs-commit.md)（不变量 139） |
 | EigenLayer | **已为以太坊质押的 ETH/LST** | **AVS**（文档：可为非客观条件） | 同一份质押被第二份罚没声明盯着 |
 
 三句都叫「共享安全」或「再质押」时，抵押对象和罚没定义人不同。

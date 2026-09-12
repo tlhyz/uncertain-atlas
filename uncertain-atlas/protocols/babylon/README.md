@@ -32,4 +32,6 @@
 | 暂时不需要 | 契约委员会参数、多租户安全市场。 |
 | 不建议 | 把「BTC 质押」写成「Bitcoin 共识保证了你的结算」。 |
 
+精读：[`../../tracks/economic/worked-example-btc-lock-vs-commit.md`](../../tracks/economic/worked-example-btc-lock-vs-commit.md)（不变量 139）。k-deep 包含证明不是已经 commit。普通解绑是意图，不要求 k-deep。产品页「无需第三人」不是模块事实。
+
 通过过滤器 ≠ 已经选型。要写 19 节时必须逐条对照 `staking-script.md` 三条路径，禁止用官网首页句填第 1 节。

@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-12（续 140）
+
+- Babylon 工作实例（仅官方模块，不写 19 节）：UTXO 仍在 Bitcoin 不是已经 wrap。k-deep 包含证明不是已经 commit。普通解绑是意图，不要求 k-deep。浅重组拿掉解绑交易不是已经恢复票权。出处 babylonlabs-io/babylon x/btcstaking + staking-script。
+- 不变量 139；语料 C143；模式 name-the-btc-lock；反模式 btc-lock-sold-as-commit；L10.3 第 135 条。填 L7.3 / Babylon 过滤器 / 经济表 / 最终性表 / 停链面地图。
+- 不抄 `k` / 委员会人数 / 罚没比例。不写怎样提取 EOTS 或重组。不编博物馆页。不写 19 节。不与 L3.1 / 21 / 125 / EigenLayer 糊成一句。大重组恢复与 stake-expansion 标成另一对象。
+
 ## 2026-09-12（续 139）
 
 - Starknet 工作实例（仅官方文档，不写 19 节）：`CANDIDATE` / `PRE_CONFIRMED` 不是已经 `ACCEPTED_ON_L2`。`ACCEPTED_ON_L2` 不是已经 `ACCEPTED_ON_L1`。验当前登记 program hash 不是物理定律。出处 docs.starknet.io Transactions / SNOS / Data availability。展开不变量 28。
