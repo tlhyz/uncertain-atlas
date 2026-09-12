@@ -201,3 +201,4 @@
 - [consolidation-sold-as-done](consolidation-sold-as-done.md)
 - [floor-sold-as-execution](floor-sold-as-execution.md)
 - [committee-sold-as-signed](committee-sold-as-signed.md)
+- [pairing-sold-as-verify](pairing-sold-as-verify.md)
