@@ -31,6 +31,6 @@
 
 ## Next
 
-- Monitor 1.25x completion (~ETA unknown; ETH ~43min/level reference)
+- ~~Monitor 1.25x completion~~ **DONE 10:30Z:** -87.47%, ~109min
+- 1.5x running (~ETA 12:19Z at ~109min/level)
 - FAIL review when all 4 levels complete
-- If restart also exceeds 2h/level → investigate BTC tick hot path
