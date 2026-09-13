@@ -42,8 +42,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P2-01 | Enable `crypto_regime.yaml` runner | **done** | qtb/dual/crypto_run.py + qtb.cli crypto; outputs/review_logs/2026-09-13_P2-01_crypto_regime_runner_PASS.md |
-| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | ~197 min (~3h17m); CRYPTO_REPORT pending — checkpoint 0600Z |
-| P2-03 | ETH leverage scan | **in_progress** | 1.25x done -87.86%; 1.5x ~69min |
+| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | ~207 min (~3h27m); CRYPTO_REPORT pending — checkpoint 0610Z |
+| P2-03 | ETH leverage scan | **in_progress** | 1.25x -87.86%; 1.5x ~79min |
 | P2-04 | SOL leverage scan | **done** | FAIL all lev -88.01%; crypto_max_dd=100% — outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md |
 | P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~49min |
 | P2-06 | Grid range ±3/5/7 ATR sweep | **in_progress** | ~29min |
