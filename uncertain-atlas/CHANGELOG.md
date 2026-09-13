@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 471）
+
+- CometBFT FinalizeBlockResponse consensus_param_updates H→H+1 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Response / Usage returned for block H apply to H+1 / Changes to gas, size, and other consensus-related parameters / Deterministic = Yes / may be empty / keep current values，实现 / FinalizeBlockResponse consensus_param_updates H→H+1 正式三事，不另写 19 节）：看见 returned for block H apply to H+1 不是已经在块 H 生效 / 已经 validator_updates H+2 才计票。看见 Changes to gas, size / Deterministic = Yes 不是已经只填一个字段就只改这一项 / 已经是 finrespend bundled。看见 may be empty / keep current values 不是已经清掉参数 / 已经 InitChain 空参数。FinalizeBlockResponse consensus_param_updates H→H+1 正式三事不是不变量 432，也不是不变量 333，也不是不变量 459。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 471；语料 C475；模式 name-the-fincparam-bar；反模式 fincparam-sold-as-heffective；L10.3 第 467 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse consensus_param_updates H→H+1 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样编 ConsensusParams、默认 MaxBytes / MaxGas。不编博物馆页。不另写 19 节。不与 432 / 333 / 459 / 35 / 319 / 458 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经在块 H 生效 / 已经只填一个字段就只改这一项 / 已经清掉参数 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 470）
 
 - CometBFT FinalizeBlock Usage determinism 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage executes txs deterministically / app_hash MUST be deterministic / implementation MUST be deterministic for state machine replication，实现 / FinalizeBlock Usage determinism 正式三事，不另写 19 节）：看见 executes txs deterministically 不是已经可以像 Prepare 那样 / 已经套用 candidate 就不需要再执行。看见 app_hash MUST be deterministic 不是已经印进本头 / 已经 next_block_delay 非确定就代表整门非确定。看见 implementation MUST be deterministic for state machine replication 不是已经是 Req 11–12 / finfields bundled。FinalizeBlock Usage determinism 正式三事不是不变量 338，也不是不变量 342，也不是不变量 469。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

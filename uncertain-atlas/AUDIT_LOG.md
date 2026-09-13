@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2290 | 高 | 看见 `FinalizeBlockResponse.consensus_param_updates` returned for block H apply to H+1 / 看见块 H 回的用于 H+1 会被写成已经在块 H 生效，或当成已经 validator_updates 那种 H+2 才计票 / H+1 换人 interchangeable | 官方 FinalizeBlock Usage：returned for block H apply to consensus params for block H+1 |
+| A2291 | 高 | 看见 Changes to gas, size, and other consensus-related parameters / Deterministic = Yes / 看见改了 gas、大小和其它共识相关参数 会被写成已经只填一个字段就只改这一项，或当成已经是 finrespend bundled 里那句 interchangeable | 官方 FinalizeBlock Response 表 Deterministic = Yes vs partial update 319 |
+| A2292 | 高 | 看见 may be empty / CometBFT will keep the current values / 看见空着则保持当前值 会被写成已经清掉参数，或当成已经 InitChain 空参数 / Finalize 没回 nil 那种 interchangeable | 官方 FinalizeBlock Usage：may be empty … keep the current values |
+| A2293 | 中 | 怎样编 ConsensusParams / 默认 MaxBytes / MaxGas / 怎样选启用高度会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2294 | 记录 | 会与 432 / 333 / 459 / 35 / 319 / 458 糊成「看见 Finalize 回了 consensus_param_updates 就已经在块 H 生效、已经只改一项、已经清掉参数」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse consensus_param_updates H→H+1 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经在块 H 生效 / 已经只填一个字段就只改这一项 / 已经清掉参数 标成另一对象 |
+
 | A2285 | 高 | 看见 Application executes txs deterministically before returning control / 看见确定执行 txs 会被写成已经可以像 Prepare 那样依赖非确定值，或当成已经套用 candidate 就不需要再在 Finalize 执行 | 官方 FinalizeBlock Usage：executes txs deterministically vs PrepareProposal MAY be non-deterministic |
 | A2286 | 高 | 看见 app_hash MUST be deterministic / not function of anything outside params and previous state / 看见 app_hash 必须确定 会被写成已经印进本头，或当成已经 next_block_delay 非确定就代表整门非确定 | 官方 FinalizeBlock Usage：app_hash MUST be deterministic vs next_block_delay non-deterministic field |
 | A2287 | 高 | 看见 implementation MUST be deterministic for state machine replication / 看见 Usage 写了必须确定 会被写成已经是 Req 11–12 那种 s_h / T_h 只依赖两份 interchangeable，或当成已经是 finfields bundled 里那句 | 官方 FinalizeBlock Usage vs abci++_app_requirements Req 11–12 vs finfields bundled 407 |
