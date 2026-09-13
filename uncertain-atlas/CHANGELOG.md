@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 472）
+
+- CometBFT FinalizeBlock When calling ProcessProposal guarantee 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage When calling FinalizeBlock / consensus algorithm guarantees / at least one non-byzantine validator has run ProcessProposal on that block，实现 / FinalizeBlock When calling ProcessProposal guarantee 正式三事，不另写 19 节）：看见 When calling FinalizeBlock / consensus guarantees 不是已经每个验证者都跑过 Process / 已经把块落成决定。看见 at least one non-byzantine 不是已经提议者 Process 过就代表全网都 Process 过。看见 has run ProcessProposal on that block 不是已经套用 candidate 就不需要 guarantee。FinalizeBlock When calling ProcessProposal guarantee 正式三事不是不变量 360，也不是不变量 466，也不是不变量 460。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 472；语料 C476；模式 name-the-finproc-bar；反模式 finproc-sold-as-allvalidators；L10.3 第 468 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 Finalize、怎样缓存 candidate。不编博物馆页。不另写 19 节。不与 360 / 351 / 466 / 460 / 452 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经每个验证者都跑过 Process / 已经提议者 Process 过就代表全网都 Process 过 / 已经套用 candidate 就不需要 guarantee 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 471）
 
 - CometBFT FinalizeBlockResponse consensus_param_updates H→H+1 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Response / Usage returned for block H apply to H+1 / Changes to gas, size, and other consensus-related parameters / Deterministic = Yes / may be empty / keep current values，实现 / FinalizeBlockResponse consensus_param_updates H→H+1 正式三事，不另写 19 节）：看见 returned for block H apply to H+1 不是已经在块 H 生效 / 已经 validator_updates H+2 才计票。看见 Changes to gas, size / Deterministic = Yes 不是已经只填一个字段就只改这一项 / 已经是 finrespend bundled。看见 may be empty / keep current values 不是已经清掉参数 / 已经 InitChain 空参数。FinalizeBlockResponse consensus_param_updates H→H+1 正式三事不是不变量 432，也不是不变量 333，也不是不变量 459。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
