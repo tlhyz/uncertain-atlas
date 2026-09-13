@@ -1,6 +1,6 @@
 # Review Log — P3-03 Short structure sweep (interim)
 
-**Date (UTC):** 2026-09-13T22:10Z  
+**Date (UTC):** 2026-09-13T22:20Z  
 **Task:** P3-03 (in_progress)  
 **Verdict:** IN_PROGRESS
 
@@ -19,7 +19,7 @@ Window: 65d Binance tick overlap (1546 bars)
 | directional | **-58.70%** | -1.88 | done |
 | grid | **-58.70%** | -1.88 | done |
 | 70_30 (default) | **-58.70%** | -1.88 | done |
-| 50_50 | — | — | running 4/4 |
+| 50_50 | — | — | running 4/4 (~12min) |
 
 ## Finding (confirmed 3/4)
 
@@ -27,7 +27,7 @@ Window: 65d Binance tick overlap (1546 bars)
 
 ## ETA
 
-~30min for 50_50 → final FAIL review → P3-04 drawdown sets.
+~20min for 50_50 → final FAIL review → P3-04 drawdown sets.
 
 ## Next
 
