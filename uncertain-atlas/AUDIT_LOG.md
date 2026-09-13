@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2190 | 高 | 看见 Prepare 执行准备提案时 MAY 产出块事件或交易事件 / 看见先跑了 会被写成已经在 PrepareProposalResponse 里交回，或当成已经 Prepare 返回时引擎就已经收到 | 官方 PrepareProposal Usage：may produce block events or transaction events; PrepareProposalResponse only txs |
+| A2191 | 高 | 看见应用 MUST 把这些事件留到块决定之后 / 看见留着 会被写成已经 Process 时就交出去，或当成已经 prevote nil / REJECT 时就可以丢掉不算 | 官方 PrepareProposal Usage：must keep those events until a block is decided |
+| A2192 | 高 | 看见然后经 FinalizeBlockResponse 交给 CometBFT / 看见 Finalize 回了 events 会被写成已经是 CheckTxResponse.events，或当成已经是 ExecTxResult.events / 已经像 Code/Data 那样印进 LastResultsHash | 官方 PrepareProposal Usage：pass them on to CometBFT via FinalizeBlockResponse |
+| A2193 | 中 | 怎样攒 Prepare 事件 / 怎样等块决定 / 怎样在 Finalize 交回会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2194 | 记录 | 会与 357 / 431 / 381 糊成「看见 Prepare 里产出了事件就已经交给引擎、已经索引、已经印进 LastResultsHash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 事件保留路径正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经在 PrepareProposalResponse 里交回 / 已经 Process 时就交出去 / 已经是 CheckTx / ExecTxResult events 标成另一对象 |
+
 | A2185 | 高 | 看见 Misbehavior.total_voting_power 是 height 那一高验证者集合的总投票权 / 看见填了 total_voting_power 会被写成已经是 VoteInfo.validator.power / Misbehavior.validator.power，或当成已经 CommitInfo.votes 里按投票权降序排过那种已经奖罚完 | 官方 Misbehavior Fields：total_voting_power is Total voting power of the validator set at height height |
 | A2186 | 高 | 看见 Misbehavior.total_voting_power 是 offense height 那一高的集合总权 / 看见填了 total_voting_power 会被写成已经按到场定奖惩，或当成已经是 VoteInfo / ExtendedVoteInfo Usage 里 allowing for rewards based on validator availability interchangeable | 官方 Misbehavior Fields：total_voting_power 和 height 配成那一高验证者集合的总权 |
 | A2187 | 高 | 看见 Misbehavior.total_voting_power / 看见有总权 会被写成已经定了奖惩，或当成已经 slashed / 已经改了集合 | 官方 Misbehavior Fields：集合总权字段和已经罚没分开 |
