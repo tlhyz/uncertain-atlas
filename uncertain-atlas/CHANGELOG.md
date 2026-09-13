@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-13（续 433）
+
+- CometBFT Verify 回包栏工作实例（官方 ABCI++ Methods VerifyVoteExtension Response / Usage，实现 / Verify 回包栏，不另写 19 节）：看见 VerifyVoteExtensionResponse.status 是应用认为这份扩展合法还是非法不是已经当成块非法。看见 VerifyVoteExtensionResponse.status 必须只依赖 VerifyVoteExtensionRequest 和上一份已提交状态不是已经可以像 ExtendVote 那样依赖其它值。看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不是已经正确进程交出的扩展必须 Accept。Verify 回包栏不是不变量 34，也不是不变量 338，也不是不变量 348。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 433；语料 C437；模式 name-the-verify-resp-status；反模式 verifyrespstatus-sold-as-verifystatus；L10.3 第 429 条。填 L4.4 / CometBFT 档案 Verify 回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Verify 回包栏、怎样挑 ACCEPT/REJECT、怎样拒整张 Precommit。不编博物馆页。不另写 19 节。不与 34 / 338 / 348 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经当成块非法、已经可以像 ExtendVote 那样依赖其它值、已经正确进程交出的扩展必须 Accept 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 432）
 
 - CometBFT Finalize 回包末栏工作实例（官方 ABCI++ Methods FinalizeBlock Response / Usage，实现 / Finalize 回包末栏，不另写 19 节）：看见 FinalizeBlockResponse.consensus_param_updates 是对 gas、大小和其它共识相关参数的改动不是已经在块 H 生效。看见 FinalizeBlockResponse.app_hash 是应用状态默克尔根不是已经写进下一块头的 AppHash。看见 FinalizeBlockResponse.next_block_delay 是这块 Commit 后再开下一高的等待不是已经是本地 timeout_commit。Finalize 回包末栏不是不变量 319，也不是不变量 404，也不是不变量 52。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

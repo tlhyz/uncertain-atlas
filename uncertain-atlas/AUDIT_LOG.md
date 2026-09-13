@@ -4415,6 +4415,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2098 | 中 | 怎样写 Finalize 回包末栏 / 怎样编 ConsensusParams / 怎样填 next_block_delay 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2099 | 记录 | 会与 319 / 404 / 52 糊成「看见回了 Finalize 回包末栏就已经在块 H 生效」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经在块 H 生效 / 已经写进下一块头 / 已经是本地 timeout_commit 标成另一对象 |
 
+| A2100 | 高 | 看见 VerifyVoteExtensionResponse.status 是应用认为这份扩展合法还是非法 / 看见回了 REJECT 会被写成已经当成块非法，或当成已经不能收这张 Precommit | 官方 Usage：If VerifyVoteExtensionResponse.status is REJECT, the consensus algorithm will reject the whole received vote |
+| A2101 | 高 | 看见 VerifyVoteExtensionResponse.status 必须只依赖 VerifyVoteExtensionRequest 和上一份已提交状态 / 看见回了 status 会被写成已经可以像 ExtendVote 那样依赖其它值，或当成已经和对任意扩展同一裁决一回事 | 官方 Usage：VerifyVoteExtensionResponse.status MUST exclusively depend on VerifyVoteExtensionRequest and last committed Application state |
+| A2102 | 高 | 看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价 / 看见写了默认 Accept 会被写成已经正确进程交出的扩展必须 Accept，或当成已经是 Req 6 已经测过 | 官方 Usage：application implementers SHOULD always set VerifyVoteExtensionResponse.status to ACCEPT unless they really know liveness implications |
+| A2103 | 中 | 怎样写 Verify 回包栏 / 怎样挑 ACCEPT/REJECT / 怎样拒整张 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2104 | 记录 | 会与 34 / 338 / 348 糊成「看见回了 VerifyVoteExtensionResponse.status 就已经当成块非法」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经当成块非法 / 已经可以像 ExtendVote 那样依赖其它值 / 已经正确进程交出的扩展必须 Accept 标成另一对象 |
+
 
 
 
