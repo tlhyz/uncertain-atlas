@@ -17,6 +17,8 @@ from .universe import (
     CRYPTO_BOOK,
     GLOBAL_RESERVE,
     DualParams,
+    GRID_ATR_RANGES,
+    GRID_ATR_STEPS,
     STRESS_LEVERAGE,
     TECH_BOOK,
     default_sweep,
@@ -67,6 +69,18 @@ def run_parameter_sweep(
             m = summarize_portfolio(r)
             m["params"] = tp.label()
             m["fill"] = mode
+            m["tech"] = {
+                "drawdown_set": tp.drawdown_set,
+                "short_init_pct": tp.short_init_pct,
+                "short_structure": tp.short_structure,
+                "leverage": tp.leverage,
+                "grid_mix": tp.grid_mix,
+                "reversal": tp.reversal,
+                "soxl_weight": tp.soxl_weight,
+                "snxx_weight": tp.snxx_weight,
+                "grid_atr_step": tp.grid_atr_step,
+                "grid_atr_range": tp.grid_atr_range,
+            }
             rows.append(m)
     rows.sort(key=lambda x: (x.get("calmar", 0), x.get("total_return", 0)), reverse=True)
     return rows
@@ -202,4 +216,39 @@ def rank_leverage(data: DualDataset, fill_mode: str = "base", tick_precise: bool
         m = summarize_portfolio(r)
         m["leverage"] = lev
         rows.append(m)
+    rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
     return rows
+
+
+def rank_grid_atr(data: DualDataset, fill_mode: str = "base", tick_precise: bool = False) -> list[dict[str, Any]]:
+    """Sweep grid ATR step × range for Q9/Q10 — measured, not template."""
+    rows: list[dict[str, Any]] = []
+    for step in GRID_ATR_STEPS:
+        for rng in GRID_ATR_RANGES:
+            tp = TechParams(grid_atr_step=step, grid_atr_range=rng)
+            r = run_dual_portfolio(
+                data, DualParams(tech=tp), name=f"atr{step}_r{rng}", fill_mode=fill_mode, tick_precise=tick_precise,
+            )
+            m = summarize_portfolio(r)
+            m["grid_atr_step"] = step
+            m["grid_atr_range"] = rng
+            rows.append(m)
+    rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
+    return rows
+
+
+def _best_by_group(rows: list[dict], group_key: str, metric: str = "calmar") -> dict[str, dict]:
+    """Return best row per group_key value (from row[group_key] or row['tech'][group_key])."""
+    out: dict[str, dict] = {}
+    for r in rows:
+        if "error" in r:
+            continue
+        val = r.get(group_key)
+        if val is None and isinstance(r.get("tech"), dict):
+            val = r["tech"].get(group_key)
+        if val is None:
+            continue
+        key = str(val)
+        if key not in out or r.get(metric, -1e9) > out[key].get(metric, -1e9):
+            out[key] = r
+    return out

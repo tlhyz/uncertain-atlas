@@ -1,4 +1,4 @@
-"""Generate DUAL_REPORT.md answering Q1–Q15."""
+"""Generate DUAL_REPORT.md answering Q1–Q15 from measured experiment payload."""
 
 from __future__ import annotations
 
@@ -14,11 +14,207 @@ def _best(rows: list[dict], key: str = "calmar") -> dict | None:
     return max(valid, key=lambda x: x.get(key, -1e9))
 
 
-def _worst(rows: list[dict], key: str = "max_dd_pct") -> dict | None:
-    valid = [r for r in rows if "error" not in r and key in r]
-    if not valid:
-        return None
-    return max(valid, key=lambda x: x.get(key, 0))
+def _best_by_group(rows: list[dict], group_key: str, metric: str = "calmar") -> dict[str, dict]:
+    out: dict[str, dict] = {}
+    for r in rows:
+        if "error" in r:
+            continue
+        val = r.get(group_key)
+        if val is None and isinstance(r.get("tech"), dict):
+            val = r["tech"].get(group_key)
+        if val is None:
+            continue
+        key = str(val)
+        if key not in out or r.get(metric, -1e9) > out[key].get(metric, -1e9):
+            out[key] = r
+    return out
+
+
+def _fmt_row(r: dict | None, metric: str = "calmar") -> str:
+    if not r:
+        return "N/A (not measured)"
+    return f"{r.get(metric, 'N/A'):.4f}" if isinstance(r.get(metric), (int, float)) else str(r.get(metric))
+
+
+def _execution_label(provenance: dict[str, Any]) -> str:
+    ex = provenance.get("execution") or ""
+    src = provenance.get("source") or "unknown"
+    if "tick" in str(ex).lower():
+        return f"**TICK BACKTEST** ({src}; {ex})"
+    return f"**BAR BACKTEST** ({src})"
+
+
+def _build_q_answers(payload: dict[str, Any]) -> list[str]:
+    bm = payload.get("benchmarks") or []
+    sweep = [r for r in (payload.get("sweep") or []) if r.get("fill") == "base"]
+    short_rank = payload.get("short_structures") or []
+    lev_rank = payload.get("leverage_rank") or []
+    grid_atr_rank = payload.get("grid_atr_rank") or []
+    seeds = payload.get("seed_windows") or []
+    ind_vs_uni = payload.get("independent_vs_unified") or {}
+    stress = payload.get("stress_3x") or {}
+
+    best_grid = next((b for b in bm if b.get("benchmark") == "B3_long_grid_only"), None)
+    best_dual_b10 = next((b for b in bm if b.get("benchmark") == "B10_independent_books"), None)
+    best_b4 = next((b for b in bm if b.get("benchmark") == "B4_directional_long_only"), None)
+
+    dd_best = _best_by_group(sweep, "drawdown_set")
+    rev_best = _best_by_group(sweep, "reversal")
+    mix_best = _best_by_group(sweep, "grid_mix")
+    weight_best = _best_by_group(sweep, "soxl_weight")
+    q1_short = _best(short_rank, "calmar")
+    q8_lev = _best(lev_rank, "calmar")
+    q9_step = _best_by_group(grid_atr_rank, "grid_atr_step")
+    q10_range = _best_by_group(grid_atr_rank, "grid_atr_range")
+    best_atr = _best(grid_atr_rank, "calmar")
+
+    lines: list[str] = []
+
+    # Q1
+    best_dd_set = max(dd_best.items(), key=lambda kv: kv[1].get("calmar", -1e9))[0] if dd_best else "B"
+    lines.append(
+        f"**Q1 Best Short exit rhythm?** "
+        f"Sweep best drawdown set **{best_dd_set}** (Calmar {_fmt_row(dd_best.get(best_dd_set))}); "
+        f"best short structure **{q1_short.get('short_structure') if q1_short else 'N/A'}** "
+        f"(Calmar {_fmt_row(q1_short)})."
+    )
+
+    # Q2
+    if rev_best:
+        best_rev = max(rev_best.items(), key=lambda kv: kv[1].get("calmar", -1e9))
+        rev_line = ", ".join(f"{k}: Calmar {v.get('calmar', 0):.2f}" for k, v in sorted(rev_best.items()))
+        lines.append(
+            f"**Q2 Left vs right timing?** Sweep reversal rules ({rev_line}). "
+            f"Best: **{best_rev[0]}** (Calmar {best_rev[1].get('calmar', 0):.2f}). "
+            f"Measured on overlap — not a universal timing claim."
+        )
+    else:
+        lines.append("**Q2 Left vs right timing?** Not measured (sweep empty).")
+
+    # Q3
+    if best_grid and best_dual_b10:
+        g_ret = best_grid.get("total_return", 0)
+        d_ret = best_dual_b10.get("total_return", 0)
+        if g_ret > d_ret:
+            lines.append(
+                f"**Q3 Does bottom grid add equity?** **FAIL** on overlap: grid-only ({g_ret:.2%}) "
+                f"beats dual ({d_ret:.2%}). Bottom grid alone does NOT salvage Short→Long."
+            )
+        else:
+            lines.append(
+                f"**Q3 Does bottom grid add equity?** Dual ({d_ret:.2%}) beats grid-only ({g_ret:.2%}) on this overlap."
+            )
+    else:
+        lines.append("**Q3 Does bottom grid add equity?** Not measured (missing benchmarks).")
+
+    # Q4
+    if mix_best:
+        best_mix = max(mix_best.items(), key=lambda kv: kv[1].get("calmar", -1e9))
+        lines.append(
+            f"**Q4 Grid→Directional conversion?** Sweep grid_mix best **{best_mix[0]}** "
+            f"(Calmar {best_mix[1].get('calmar', 0):.2f}, return {best_mix[1].get('total_return', 0):.2%})."
+        )
+    else:
+        lines.append("**Q4 Grid→Directional conversion?** Not measured in sweep.")
+
+    # Q5
+    if weight_best:
+        parts = ", ".join(
+            f"{int(float(k)*100)}/{int((1-float(k))*100)}: Calmar {v.get('calmar', 0):.2f}"
+            for k, v in sorted(weight_best.items(), key=lambda x: float(x[0]), reverse=True)
+        )
+        best_w = max(weight_best.items(), key=lambda kv: kv[1].get("calmar", -1e9))
+        lines.append(
+            f"**Q5 SOXL/SNXX weights?** Measured: {parts}. "
+            f"Best Calmar: **{float(best_w[0]):.0%}/{1-float(best_w[0]):.0%}**."
+        )
+    else:
+        lines.append("**Q5 SOXL/SNXX weights?** Not measured in sweep.")
+
+    lines.append(
+        "**Q6 SNXX earlier entry?** Not isolated in current sweep matrix — requires dedicated SNXX-lead experiment."
+    )
+
+    lines.append(
+        f"**Q7 Initial Short structure?** Ranked: "
+        + ", ".join(
+            f"{r.get('short_structure')}: Calmar {r.get('calmar', 0):.2f}"
+            for r in short_rank[:4]
+        )
+        + f". Best: **{q1_short.get('short_structure') if q1_short else 'N/A'}**."
+    )
+
+    lines.append(
+        f"**Q8 Leverage?** Ranked: "
+        + ", ".join(f"{r.get('leverage')}x: Calmar {r.get('calmar', 0):.2f}" for r in lev_rank)
+        + f". Best: **{q8_lev.get('leverage') if q8_lev else 'N/A'}x**."
+        + (f" 3x stress: return {stress.get('total_return', 0):.2%}, liq={stress.get('liquidation_count', 0)}." if stress else "")
+    )
+
+    if best_atr and q9_step:
+        step_parts = ", ".join(
+            f"{k}: Calmar {v.get('calmar', 0):.2f}" for k, v in sorted(q9_step.items(), key=lambda x: float(x[0]))
+        )
+        lines.append(
+            f"**Q9 0.40 ATR step platform?** Measured grid_atr_step sweep: {step_parts}. "
+            f"Best step **{best_atr.get('grid_atr_step')}** (Calmar {best_atr.get('calmar', 0):.2f}). "
+            f"Plateau = multiple adjacent steps within 15% Calmar of best."
+        )
+    else:
+        lines.append("**Q9 0.40 ATR step platform?** Not measured (grid_atr_rank missing).")
+
+    if q10_range:
+        rng_parts = ", ".join(
+            f"±{k}: Calmar {v.get('calmar', 0):.2f}" for k, v in sorted(q10_range.items(), key=lambda x: float(x[0]))
+        )
+        best_rng = max(q10_range.items(), key=lambda kv: kv[1].get("calmar", -1e9))
+        lines.append(
+            f"**Q10 ±ATR range?** Measured: {rng_parts}. Best: **±{best_rng[0]}** ATR."
+        )
+    else:
+        lines.append("**Q10 ±ATR range?** Not measured (grid_atr_rank missing).")
+
+    d_ret = ind_vs_uni.get("delta_return", 0)
+    d_dd = ind_vs_uni.get("delta_dd", 0)
+    lines.append(
+        f"**Q11 Tech↓ Crypto↑ diversification?** Δreturn {d_ret:+.4f}, ΔDD {d_dd:+.4f} "
+        f"(independent − unified). {'Independent helps' if d_ret > 0 or d_dd < 0 else 'No measured benefit'}."
+    )
+
+    fail_f1 = next((s for s in seeds if s.get("seed_id") == "FAIL_F1"), None)
+    if fail_f1 and fail_f1.get("status") == "STRUCTURAL_SEED_ONLY":
+        lines.append("**Q12 Direct-up short max loss?** FAIL_F1 **STRUCTURAL_SEED_ONLY** — no execution backtest on Binance/Gate overlap.")
+    elif fail_f1 and "total_return" in fail_f1:
+        lines.append(
+            f"**Q12 Direct-up short max loss?** FAIL_F1 measured return **{fail_f1.get('total_return', 0):.2%}** "
+            f"(pattern: {fail_f1.get('pattern', '?')})."
+        )
+    else:
+        lines.append("**Q12 Direct-up short max loss?** FAIL_F1 not executable on available data.")
+
+    fail_f2 = next((s for s in seeds if s.get("seed_id") == "FAIL_F2"), None)
+    if fail_f2 and fail_f2.get("status") == "STRUCTURAL_SEED_ONLY":
+        lines.append("**Q13 Long inventory trap?** FAIL_F2 **STRUCTURAL_SEED_ONLY** — not execution-tested.")
+    elif fail_f2 and "total_return" in fail_f2:
+        lines.append(
+            f"**Q13 Long inventory trap?** FAIL_F2 return **{fail_f2.get('total_return', 0):.2%}** "
+            f"({'inventory drag' if fail_f2.get('total_return', 0) < 0 else 'see data'})."
+        )
+    else:
+        lines.append("**Q13 Long inventory trap?** FAIL_F2 not executable on available data.")
+
+    lines.append(
+        f"**Q14 Opposite Tech/Crypto regimes?** "
+        f"{'Independent FSM adds value' if d_ret > 0 else 'FAIL — no return benefit'} "
+        f"(Δreturn {d_ret:+.4f}); DD {'improves' if d_dd < 0 else 'does not improve'} (ΔDD {d_dd:+.4f})."
+    )
+
+    lines.append(
+        f"**Q15 Reserve / plans?** See Three Execution Plans below; best sweep Calmar {_fmt_row(_best(sweep))} "
+        f"(params: {_best(sweep).get('params') if _best(sweep) else 'N/A'})."
+    )
+
+    return lines
 
 
 def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
@@ -29,19 +225,18 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
     )
 
     bm = payload.get("benchmarks") or []
-    sweep = payload.get("sweep") or []
     plans = payload.get("plans") or {}
     seeds = payload.get("seed_windows") or []
     ind_vs_uni = payload.get("independent_vs_unified") or {}
-    short_rank = payload.get("short_structures") or []
-    lev_rank = payload.get("leverage_rank") or []
     similar = payload.get("similar_windows") or []
     provenance = payload.get("provenance") or {}
 
-    best_dual = _best(sweep)
-    best_bm_hold = next((b for b in bm if b.get("benchmark") == "B2_buy_hold"), None)
-    best_grid = next((b for b in bm if b.get("benchmark") == "B3_long_grid_only"), None)
     best_dual_b10 = next((b for b in bm if b.get("benchmark") == "B10_independent_books"), None)
+    best_bm_hold = next((b for b in bm if b.get("benchmark") == "B2_buy_hold"), None)
+    best_b4 = next((b for b in bm if b.get("benchmark") == "B4_directional_long_only"), None)
+
+    tech_syms = provenance.get("tech_symbols") or ["SOXL", "SNXX"]
+    crypto_syms = provenance.get("crypto_symbols") or ["BTC", "ETH", "SOL"]
 
     lines: list[str] = [
         "# Dual-Engine State-Switching Perpetual Strategy Report",
@@ -50,9 +245,8 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
         "",
         f"- Overlap: **{provenance.get('overlap_start', '?')}** → **{provenance.get('overlap_end', '?')}**",
         f"- Bars: {provenance.get('bars', '?')} @ {provenance.get('interval', '1h')}",
-        f"- Execution: **aggTrades tick-precise** (every tech bar validated; no OHLC fill fallback)",
-        f"- Source: **Binance USDT-M Vision** (klines + aggTrades for SOXL/SNXX tech legs)",
-        f"- Tech: SOXL, SNXX | Crypto: BTC, ETH, SOL (independent books)",
+        f"- Execution: {_execution_label(provenance)}",
+        f"- Tech: {', '.join(tech_syms)} | Crypto: {', '.join(crypto_syms)} (independent books)",
         f"- Capital: TECH 6500 + CRYPTO 2500 + RESERVE 1000 = **10000 USDT**",
         "",
         "### Seed Window Coverage",
@@ -61,19 +255,15 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
         "|---|---|---|---|",
     ]
 
-    for sw in provenance.get("seed_windows") or []:
+    for sw in provenance.get("seed_windows") or seeds:
         w = sw.get("window") or {}
+        wid = w.get("id") or sw.get("seed_id", "?")
         lines.append(
-            f"| {w.get('id', sw.get('window', {}).get('id', '?'))} | "
-            f"{sw.get('status', '?')} | {sw.get('gate_bars', 0)} | "
+            f"| {wid} | {sw.get('status', '?')} | {sw.get('gate_bars', sw.get('bars', 0))} | "
             f"{'; '.join(sw.get('notes') or [])} |"
         )
 
-    lines.extend([
-        "",
-        "## Executive Summary",
-        "",
-    ])
+    lines.extend(["", "## Executive Summary", ""])
 
     if best_dual_b10 and best_bm_hold:
         dual_ret = best_dual_b10.get("total_return", 0)
@@ -107,96 +297,8 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
             f"{b.get('liquidation_count', 0)} |"
         )
 
-    lines.extend(["", "## Q1–Q15 Answers", ""])
-
-    q1 = _best(short_rank, "calmar")
-    lines.append(
-        f"**Q1 Best Short exit rhythm?** "
-        f"Drawdown set B with tiered S→L; best short structure: "
-        f"**{q1.get('short_structure') if q1 else '70_30'}** (Calmar {q1.get('calmar') if q1 else 'N/A'})."
-    )
-
-    lines.append(
-        "**Q2 Left vs right timing?** "
-        "Final 25–35% long deploy only after reversal R2/R4; "
-        "premature R3 bounce-only entries accumulate inventory in FAIL_F2-type windows."
-    )
-
-    grid_vs_dir = ""
-    if best_grid and best_dual_b10:
-        if best_grid.get("total_return", 0) > best_dual_b10.get("total_return", 0):
-            grid_vs_dir = (
-                f"FAIL on this overlap: grid-only ({best_grid.get('total_return', 0):.2%}) "
-                f"beats dual ({best_dual_b10.get('total_return', 0):.2%}). "
-                "Bottom grid alone does NOT salvage Short→Long."
-            )
-        else:
-            grid_vs_dir = "Dual S→Grid→Trend beats grid-only on total return."
-    lines.append(f"**Q3 Does bottom grid add equity?** {grid_vs_dir}")
-
-    lines.append(
-        "**Q4 Grid→Directional conversion?** "
-        "Dynamic mix (80/20 base → 20/80 strong trend) improves return vs G100 in uptrend legs; "
-        "reduce grid below 40% once STRONG phase confirmed."
-    )
-
-    lines.append(
-        "**Q5 SOXL/SNXX weights?** Scan favors **70/30** over 75/25 on Calmar; "
-        "65/35 adds SNXX beta but higher DD."
-    )
-
-    lines.append(
-        "**Q6 SNXX earlier entry?** Tier≥2 SNXX micro-long before SOXL full reversal; "
-        "full SNXX sizing waits R4 dual-asset confirmation."
-    )
-
-    q7 = q1
-    lines.append(
-        f"**Q7 Initial Short structure?** "
-        f"**{q7.get('short_structure') if q7 else '70_30'}** best for first-leg callback; "
-        "pure directional short wins raw return in crash but worst in FAIL_F1 direct-up."
-    )
-
-    q8 = _best(lev_rank, "calmar")
-    lines.append(
-        f"**Q8 Leverage?** **{q8.get('leverage') if q8 else 1.5}x** best Return/DD; "
-        "3x stress group shows liquidation risk — not baseline."
-    )
-
-    lines.append(
-        "**Q9 0.40 ATR step platform?** 0.40 ATR near Pareto center; "
-        "0.30 tighter for aggressive, 0.50 safer in high-vol."
-    )
-
-    lines.append(
-        "**Q10 ±ATR range?** ±5 ATR default; ±3 under-fills crash recovery, ±7 accumulates inventory in chop."
-    )
-
-    if ind_vs_uni:
-        lines.append(
-            f"**Q11 Tech↓ Crypto↑ diversification?** "
-            f"Independent book Δreturn vs unified: {ind_vs_uni.get('delta_return', 0):.4f}; "
-            f"{'reduces DD' if ind_vs_uni.get('delta_dd', 0) < 0 else 'does NOT reduce DD'}."
-        )
-
-    fail_f1 = next((s for s in seeds if s.get("seed_id") == "FAIL_F1"), None)
-    lines.append(
-        f"**Q12 Direct-up short max loss?** "
-        f"FAIL_F1 window loss ~{fail_f1.get('total_return', 'N/A') if fail_f1 else 'see seed table'} "
-        "with 20–30% initial short; cap short at 25% book."
-    )
-
-    fail_f2 = next((s for s in seeds if s.get("seed_id") == "FAIL_F2"), None)
-    lines.append(
-        f"**Q13 Long inventory trap?** "
-        f"FAIL_F2 / sideways: {'inventory drag confirmed' if fail_f2 and fail_f2.get('total_return', 0) < 0 else 'see data'}; "
-        "pause grid expansion below -35% DD without reversal."
-    )
-
-    lines.append(
-        f"**Q14 Opposite Tech/Crypto regimes?** "
-        f"{'Independent FSM adds value' if ind_vs_uni.get('delta_return', 0) > 0 else 'FAIL — no diversification value'}."
-    )
+    lines.extend(["", "## Q1–Q15 Answers (from measured payload)", ""])
+    lines.extend(_build_q_answers(payload))
 
     lines.extend(["", "## Three Execution Plans", ""])
     for pname, pdata in plans.items():
@@ -205,8 +307,8 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
         lines.extend([
             f"### {pname}",
             "",
-            f"| Fill | Return | MaxDD | Sharpe | Calmar |",
-            f"|---|---:|---:|---:|---:|",
+            "| Fill | Return | MaxDD | Sharpe | Calmar |",
+            "|---|---:|---:|---:|---:|",
             f"| Base | {base.get('total_return', 0):.2%} | {base.get('max_dd_pct', 0):.2%} | "
             f"{base.get('sharpe', 0):.2f} | {base.get('calmar', 0):.2f} |",
             f"| Conservative | {cons.get('total_return', 0):.2%} | {cons.get('max_dd_pct', 0):.2%} | "
@@ -233,10 +335,10 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
             "",
             "## CRYPTO_C1 — Binance aggTrades (2024-09 → 2024-11)",
             "",
-            f"- aggTrades rows: {c1.get('aggTrades')}",
+            f"- aggTrades rows: {c1.get('aggTrades_cached_rows')}",
             f"- Independent return: **{c1.get('independent', {}).get('total_return', 0):.2%}**",
             f"- Unified return: **{c1.get('unified', {}).get('total_return', 0):.2%}**",
-            f"- Δreturn (independent − unified): **{c1.get('delta_return', 0):+.4f}**",
+            f"- Δreturn: **{c1.get('delta_return', 0):+.4f}**",
             "",
         ])
     elif c1.get("error"):
@@ -244,39 +346,42 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
             "",
             "## CRYPTO_C1 — Binance aggTrades",
             "",
-            f"Not run: `{c1.get('error')}` — use `--download-trades` to fetch aggTrades first.",
+            f"Not run: `{c1.get('error')}`",
             "",
         ])
 
-    b4 = next((b for b in bm if b.get("benchmark") == "B4_directional_long_only"), None)
     lines.extend([
         "",
         "## Honest Verdict",
         "",
-        "Conclusions based on **Base + Conservative** fills only. "
-        "Optimistic excluded from primary claims.",
+        "Conclusions based on **Base + Conservative** fills only. Optimistic excluded.",
         "",
     ])
-    if best_dual_b10 and b4 and best_dual_b10.get("total_return", 0) < b4.get("total_return", 0):
+
+    if best_dual_b10 and best_b4 and best_dual_b10.get("total_return", 0) < best_b4.get("total_return", 0):
         lines.append(
-            f"**Primary hypothesis FAIL on available Binance overlap "
-            f"({provenance.get('overlap_start', '')[:10]} → {provenance.get('overlap_end', '')[:10]}):** "
+            f"**Primary hypothesis FAIL on overlap "
+            f"({str(provenance.get('overlap_start', ''))[:10]} → {str(provenance.get('overlap_end', ''))[:10]}):** "
             f"Short→Long dual ({best_dual_b10.get('total_return', 0):.2%}) loses to "
-            f"wait-and-directional-long ({b4.get('total_return', 0):.2%}). "
-            "Do NOT deploy initial Short in this regime; use reversal confirmation first."
+            f"directional-long ({best_b4.get('total_return', 0):.2%})."
         )
     elif best_dual_b10 and best_bm_hold and best_dual_b10.get("total_return", 0) > best_bm_hold.get("total_return", 0):
         lines.append("Short→Long dual beats buy-and-hold on this overlap.")
-    lines.append(
-        "Independent Tech/Crypto books **do** add modest value vs unified signal "
-        f"(Δreturn {ind_vs_uni.get('delta_return', 0):+.4f})."
-        if ind_vs_uni.get("delta_return", 0) > 0
-        else "Independent books do NOT beat unified signal on return."
+
+    d_ret = ind_vs_uni.get("delta_return", 0)
+    if d_ret > 0:
+        lines.append(f"Independent books beat unified on return (Δreturn {d_ret:+.4f}).")
+    else:
+        lines.append(f"Independent books do NOT beat unified on return (Δreturn {d_ret:+.4f}).")
+
+    struct_only = sum(
+        1 for sw in (provenance.get("seed_windows") or seeds)
+        if sw.get("status") == "STRUCTURAL_SEED_ONLY"
     )
-    lines.append(
-        "Most 2024–2025 seed windows are **STRUCTURAL_SEED_ONLY** on Binance SOXL/SNXX perp history; "
-        "similar-window search uses Binance SOXL path + BTC shape proxy for templates."
-    )
+    if struct_only:
+        lines.append(
+            f"{struct_only} seed window(s) are **STRUCTURAL_SEED_ONLY** — no execution claims on those periods."
+        )
 
     path = out_dir / "DUAL_REPORT.md"
     path.write_text("\n".join(lines), encoding="utf-8")

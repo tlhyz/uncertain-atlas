@@ -175,7 +175,7 @@ Phase 2 (first real research questions) may begin when **ALL** of:
 - [x] TASK-0008 DATA_QUALITY_REPORT implemented + unit test
 - [x] TASK-0009 ACCOUNTING_INVARIANTS + property tests green
 - [x] TASK-0010 test_no_future_leak.py green
-- [ ] TASK-0012 Fix dual report static Q-answers
+- [x] TASK-0012 Fix dual report static Q-answers
 - [ ] ETH/SOL aggTrades re-downloaded and manifest rows > 0
 - [ ] Dual report generator fixed — Q-answers from actual sweep data
 - [ ] 65d Binance tick run completed and logged (in progress)

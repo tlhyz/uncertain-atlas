@@ -11,4 +11,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T00:52Z | TASK-0009 done | ACCOUNTING_INVARIANTS; verify_engine_result; 97 tests pass
 2026-09-13T01:02Z | TASK-0010 done | test_no_future_leak 21 tests; P0-06 infra gates complete; 118 tests pass
 2026-09-13T01:12Z | P1-10 done | Gate BTC_USDT 720 bars; download_gate.py path fix
+2026-09-13T01:22Z | TASK-0012 done | dual report Q1-Q15 from measured payload; C-02 fixed; 122 tests
 ```

@@ -22,6 +22,7 @@ from .experiments import (
     run_stress_leverage,
     rank_leverage,
     rank_short_structures,
+    rank_grid_atr,
 )
 from .report import write_outputs
 from .window_search import search_similar_windows
@@ -150,6 +151,9 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
 
     print("[run] leverage rank...")
     payload["leverage_rank"] = rank_leverage(data, tick_precise=tick_precise)
+
+    print("[run] grid ATR rank...")
+    payload["grid_atr_rank"] = rank_grid_atr(data, tick_precise=tick_precise)
 
     payload["fill_modes"] = run_fill_modes(data, tick_precise=tick_precise)
 
