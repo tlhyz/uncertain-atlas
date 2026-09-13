@@ -45,16 +45,16 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | ~317 min (~5h17m); 6h kill threshold ~08:43Z — checkpoint 0800Z |
 | P2-03 | ETH leverage scan | **done** | FAIL all lev ~-87.5%; no sweet spot — outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL.md |
 | P2-04 | SOL leverage scan | **done** | FAIL all lev -88.01%; crypto_max_dd=100% — outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md |
-| P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~149min |
-| P2-06 | Grid range ±3/5/7 ATR sweep | **in_progress** | ~129min |
-| P2-07 | Grid→Trend mix 80/20→20/80 | **in_progress** | ~118min; 80_20 **-87.35%** done; 60_40 running |
+| P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~169min; no step done |
+| P2-06 | Grid range ±3/5/7 ATR sweep | **in_progress** | ~149min |
+| P2-07 | Grid→Trend mix 80/20→20/80 | **in_progress** | ~138min; 80_20 -87.35% done; 60_40 running |
 | P2-08 | High-vol range regime auto-label sample | **done** | C1 mostly RANGE_LOW_VOL; SOL 3 HV bars — outputs/review_logs/2026-09-13_P2-08_regime_label_sample_PASS.md |
 | P2-09 | Bull trend sell-the-winner check | **done** | CONDITIONAL PASS structural; C1 0 BULL bars — outputs/review_logs/2026-09-13_P2-09_bull_sell_winner_CONDITIONAL_PASS.md |
 | P2-10 | Answer Q-crypto-1 (leverage sweet spot) | **in_progress** | PARTIAL SOL NO sweet spot — outputs/experiments/Q_CRYPTO_1_leverage_sweet_spot.md |
 | P2-11 | Answer Q-crypto-2 (0.40 ATR plateau?) | **in_progress** | PARTIAL awaiting P2-05 — outputs/experiments/Q_CRYPTO_2_atr_step_plateau.md |
 | P2-12 | Answer Q-crypto-3 (±ATR range) | **in_progress** | PARTIAL awaiting P2-06 — outputs/experiments/Q_CRYPTO_3_atr_range.md |
 | P2-13 | PENGU/PUMP satellite cap 5% test | **done** | CONDITIONAL PASS cap OK; BAR -99%/-99%; C1 tick blocked — outputs/review_logs/2026-09-13_P2-13_satellite_cap_CONDITIONAL_PASS.md |
-| P2-14 | CRYPTO_C1 window 2024-09→11 tick run | **in_progress** | tmux p2-14-c1-tick ~49min — outputs/review_logs/2026-09-13_P2-14_c1_tick_IN_PROGRESS.md |
+| P2-14 | CRYPTO_C1 window 2024-09→11 tick run | **in_progress** | tmux p2-14-c1-tick ~69min — outputs/review_logs/2026-09-13_P2-14_c1_tick_IN_PROGRESS.md |
 
 ---
 

@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | checkpoint 0800Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0800Z.md |
 | 2026-09-13 | P2-03 ETH leverage | FAIL | outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL.md |
 | 2026-09-13 | checkpoint 0740Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0740Z.md |
 | 2026-09-13 | checkpoint 0730Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0730Z.md |
