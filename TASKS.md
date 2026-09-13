@@ -37,7 +37,7 @@
 | ID | Title | Status | Depends |
 |----|-------|--------|---------|
 | [TASK-0008](tasks/TASK-0008.md) | DATA_QUALITY_REPORT pre-experiment gate | **done** | [TASK_RESULT](tasks/TASK_RESULT/TASK-0008.md) |
-| [TASK-0009](tasks/TASK-0009.md) | ACCOUNTING_INVARIANTS + property tests | **pending** | TASK-0005 |
+| [TASK-0009](tasks/TASK-0009.md) | ACCOUNTING_INVARIANTS + property tests | **done** | [TASK_RESULT](tasks/TASK_RESULT/TASK-0009.md) |
 | [TASK-0010](tasks/TASK-0010.md) | test_no_future_leak.py | **pending** | TASK-0005 |
 | [TASK-0011](tasks/TASK-0011.md) | Fix build_manifest rows + re-download ETH/SOL | **pending** | TASK-0008 |
 | [TASK-0012](tasks/TASK-0012.md) | Fix dual report Q-answers from actual sweeps | **pending** | TASK-0005 |
