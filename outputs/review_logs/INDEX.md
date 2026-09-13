@@ -4,7 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
-| 2026-09-13 | checkpoint 0830Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0830Z.md |
+| 2026-09-13 | P2-02 BTC restart | RESTART | outputs/review_logs/2026-09-13_P2-02_btc_leverage_RESTART.md |
+| 2026-09-13 | checkpoint 0840Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0840Z.md |
 | 2026-09-13 | checkpoint 0820Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0820Z.md |
 | 2026-09-13 | checkpoint 0810Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0810Z.md |
 | 2026-09-13 | checkpoint 0800Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0800Z.md |
