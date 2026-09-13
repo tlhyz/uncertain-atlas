@@ -30,8 +30,8 @@ Does a leverage sweet spot exist in **1.25 / 1.5 / 1.75 / 2.0x** for BTC, ETH, S
 | Lev | Return | Calmar | Status |
 |-----|--------|--------|--------|
 | 1.25 | **-87.86%** | -5.86 | done |
-| 1.5 | pending | pending | ~79 min elapsed |
-| 1.75 | pending | | |
+| 1.5 | **-87.74%** | -5.79 | done |
+| 1.75 | pending | pending | running ~89min total |
 | 2.0 | pending | | |
 
 **Interim:** Same catastrophic band as SOL at 1.25x. Full scan expected to confirm no sweet spot.
