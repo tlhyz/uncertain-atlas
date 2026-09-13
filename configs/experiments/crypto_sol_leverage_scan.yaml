@@ -1,0 +1,24 @@
+# P2-04 — SOL-only leverage scan on C1 window
+experiment_id: crypto_sol_leverage_scan
+enabled: true
+
+data:
+  venue: binance
+  symbols: [SOL]
+  interval: 1h
+  start: "2024-09-01"
+  end: "2024-11-30"
+  cache_only: true
+  download_trades: false
+  tick_precise: true
+
+execution:
+  fill_modes_primary: [base, conservative]
+  decouple_from_tech: true
+
+leverage_scan: [1.25, 1.5, 1.75, 2.0]
+run_grid_scan: false
+run_c1_baseline: false
+
+output:
+  dir: outputs/experiments/crypto_sol_leverage_scan
