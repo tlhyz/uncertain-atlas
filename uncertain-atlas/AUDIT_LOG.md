@@ -4486,6 +4486,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2441 | 高 | 看见 The application can choose to refetch chunks and/or ban P2P peers as appropriate / 看见应用可以按情况再拉块和/或封 P2P 邻居 会被写成已经 refetch_chunks 不论 result 都再拉再装 interchangeable，或当成已经 reject_senders 不论 Result 都拒这些人 interchangeable / 已经 RETRY interchangeable / 已经封邻居就交差 interchangeable | 官方 ApplySnapshotChunk Usage：The application can choose to refetch chunks and/or ban P2P peers as appropriate |
+| A2442 | 高 | 看见 CometBFT will not do this unless instructed by the application / 看见引擎不会自己做，除非应用下指令 会被写成已经 refetch_chunks 列了块号 interchangeable / 已经引擎自动 refetch interchangeable，或当成已经 unable to retrieve next chunk 引擎 reject via OfferSnapshot interchangeable / 已经齐 interchangeable | 官方 ApplySnapshotChunk Usage：CometBFT will not do this unless instructed by the application |
+| A2443 | 中 | 怎样做增量验 / 怎样封邻居 / 怎样写 ApplySnapshotChunk 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2444 | 记录 | 会与 378 / 398 / 485 / 332 / 401 糊成「看见 Apply 了 chunk 回包 refetch_chunks 就已经 refetch/ban bundled interchangeable、已经引擎自动 refetch interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage refetch/ban 正式二事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 refetch/ban bundled interchangeable / 已经引擎自动 refetch interchangeable 标成另一对象 |
+
 | A2437 | 高 | 看见 Used during state sync to retrieve snapshot chunks from peers / 看见在 state sync 时从邻居拉快照块 会被写成已经 LoadSnapshotChunk height/format/chunk bundled interchangeable，或当成已经 Offer 收下之后 bundled interchangeable / 已经装完 interchangeable / 已经切进共识 interchangeable | 官方 LoadSnapshotChunk Usage：Used during state sync to retrieve snapshot chunks from peers |
 | A2438 | 高 | 看见 retrieve snapshot chunks from peers / 看见从邻居拉块 会被写成已经 ListSnapshots discover on peers interchangeable，或当成已经 ListSnapshots 空请求 bundled interchangeable / 已经本地清单 interchangeable / 已经问了邻居就齐 interchangeable | 官方 LoadSnapshotChunk Usage：retrieve snapshot chunks from peers |
 | A2439 | 高 | 看见 retrieve snapshot chunks / 看见拉块 会被写成已经 ApplySnapshotChunk chunk 是 LoadSnapshotChunk 回包 interchangeable，或当成已经 ApplySnapshotChunk Result ACCEPT interchangeable / 已经齐 interchangeable / LoadSnapshotChunk bundled 已经齐 interchangeable | 官方 LoadSnapshotChunk Usage：Used during state sync to retrieve snapshot chunks from peers |

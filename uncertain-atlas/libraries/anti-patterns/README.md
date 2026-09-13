@@ -445,6 +445,7 @@
 - [infousage-sold-as-handshakebundled](infousage-sold-as-handshakebundled.md)
 - [initchainusage-decide-sold-as-bundled](initchainusage-decide-sold-as-bundled.md)
 - [infousage-persist-sold-as-committed](infousage-persist-sold-as-committed.md)
+- [applysnapusage-refetch-sold-as-bundled](applysnapusage-refetch-sold-as-bundled.md)
 - [loadsnapusage-sold-as-bundled](loadsnapusage-sold-as-bundled.md)
 - [listsnapusage-sold-as-bundled](listsnapusage-sold-as-bundled.md)
 - [offersnapusage-bootstrap-sold-as-bundled](offersnapusage-bootstrap-sold-as-bundled.md)

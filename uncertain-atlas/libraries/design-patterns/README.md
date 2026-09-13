@@ -340,6 +340,7 @@
 - [name-the-infousage-bar](name-the-infousage-bar.md)
 - [name-the-initchainusage-decide-bar](name-the-initchainusage-decide-bar.md)
 - [name-the-infousage-persist-bar](name-the-infousage-persist-bar.md)
+- [name-the-applysnapusage-refetch-bar](name-the-applysnapusage-refetch-bar.md)
 - [name-the-loadsnapusage-bar](name-the-loadsnapusage-bar.md)
 - [name-the-listsnapusage-bar](name-the-listsnapusage-bar.md)
 - [name-the-offersnapusage-bootstrap-bar](name-the-offersnapusage-bootstrap-bar.md)

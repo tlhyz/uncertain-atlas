@@ -20,5 +20,6 @@
 
 ## 和相邻反模式
 
+- [applysnapusage-refetch-sold-as-bundled](applysnapusage-refetch-sold-as-bundled.md) 是 ApplySnapshotChunk Usage refetch/ban 正式二事，不是本页 verify/Info/unable 正式三事。
 - [refetch-sold-as-restored](refetch-sold-as-restored.md) 是 refetch 就已经齐，不是本页 unable to retrieve next chunk → OfferSnapshot。
 - [offersnaptrust-sold-as-metadata](offersnaptrust-sold-as-metadata.md) 是 Only AppHash 可信任，不是本页 verify each chunk Methods Usage。
