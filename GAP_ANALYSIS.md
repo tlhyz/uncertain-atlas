@@ -172,7 +172,7 @@ Equity formulas exist in `qtb/ab/engine.py` docstring but are **implicit**, not 
 
 Phase 2 (first real research questions) may begin when **ALL** of:
 
-- [ ] TASK-0008 DATA_QUALITY_REPORT implemented + unit test
+- [x] TASK-0008 DATA_QUALITY_REPORT implemented + unit test
 - [ ] TASK-0009 ACCOUNTING_INVARIANTS + property tests green
 - [ ] TASK-0010 test_no_future_leak.py green
 - [ ] ETH/SOL aggTrades re-downloaded and manifest rows > 0
