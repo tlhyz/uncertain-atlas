@@ -248,4 +248,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T18:50Z | checkpoint 1850Z | P3-01 ~179min wall
 2026-09-13T19:00Z | timer research-continue | pytest 131 pass; **P3-01 benchmarks DONE**
 2026-09-13T19:00Z | checkpoint 1900Z | seed_windows running
+2026-09-13T19:10Z | timer research-continue | pytest 131 pass; seed_windows still running
+2026-09-13T19:10Z | checkpoint 1910Z | benchmarks done; seed phase
 ```
