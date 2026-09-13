@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 448）
+
+- CometBFT Misbehavior.validator 栏正式三事工作实例（官方 ABCI++ Methods Data Types Misbehavior Fields，实现 / Misbehavior.validator 栏正式三事，不另写 19 节）：看见 Misbehavior.validator 是过错验证者不是已经 slashed / 已经罚没。看见 Misbehavior.validator 只是 address+power 的 Validator 结构不是已经 VoteInfo.validator 那种按到场定奖惩 / 已经 CommitInfo.votes 里那份 interchangeable。看见 Misbehavior.validator 不是已经 ValidatorUpdate 那种已经改了集合 / 已经带了公钥。Misbehavior.validator 栏正式三事不是不变量 372，也不是不变量 365，也不是不变量 364。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 448；语料 C452；模式 name-the-misbvalidator-bar；反模式 misbvalidator-sold-as-voteinfo；L10.3 第 444 条。填 L4.4 / CometBFT 档案 Misbehavior.validator 栏正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样填 Misbehavior.validator、怎样从 evidence 编过错验证者、怎样和 VoteInfo 对齐。不编博物馆页。不另写 19 节。不与 372 / 365 / 364 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经 slashed、已经是 VoteInfo.validator 按到场定奖惩、已经是 ValidatorUpdate 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 447）
 
 - CometBFT MisbehaviorType 枚举正式三事工作实例（官方 ABCI++ Methods Data Types MisbehaviorType，实现 / MisbehaviorType 枚举正式三事，不另写 19 节）：看见 MisbehaviorType UNKNOWN 只是未知过错枚举不是已经归类成 DUPLICATE_VOTE / 已经罚没。看见 MisbehaviorType DUPLICATE_VOTE 只是双签枚举不是已经 slashed / 已经是 LIGHT_CLIENT_ATTACK interchangeable。看见 MisbehaviorType LIGHT_CLIENT_ATTACK 只是轻客户端攻击枚举不是已经 DUPLICATE_VOTE / 已经罚没。MisbehaviorType 枚举正式三事不是不变量 372，也不是不变量 413，也不是不变量 21。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
