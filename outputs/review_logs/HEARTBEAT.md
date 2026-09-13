@@ -254,4 +254,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T19:20Z | checkpoint 1920Z | no new completions
 2026-09-13T19:30Z | timer research-continue | pytest 131 pass; seed_windows ~30min
 2026-09-13T19:30Z | checkpoint 1930Z | seed phase longer than expected
+2026-09-13T19:40Z | timer research-continue | pytest 131 pass; **P3-01 DONE FAIL**
+2026-09-13T19:40Z | P3-01 FAIL review | reproduces P1-11 -58.70%; C-05 reinforced
+2026-09-13T19:40Z | checkpoint 1940Z | P3-02 next
 ```
