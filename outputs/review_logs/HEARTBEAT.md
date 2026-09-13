@@ -183,4 +183,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T13:40Z | checkpoint 1340Z | P2-02 1.75x ~70min; P2-07 20_80 ~50min
 2026-09-13T13:50Z | timer research-continue | pytest 131 pass; no new completions
 2026-09-13T13:50Z | checkpoint 1350Z | P2-02 1.75x ~80min; P2-07 20_80 ~60min
+2026-09-13T14:00Z | timer research-continue | pytest 131 pass; no new completions
+2026-09-13T14:00Z | checkpoint 1400Z | P2-02 1.75x ~90min; ETA ~14:30Z
 ```
