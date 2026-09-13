@@ -24,7 +24,7 @@ At bar `i`, R5 fires when **≥2** of {R1 EMA cross, R2 swing break, R3 bounce %
 
 ```
 tests/test_no_future_leak.py::TestReversalRules — 10 passed
-Full suite — 139 passed
+Full suite — 136 passed
 ```
 
 ## Verdict

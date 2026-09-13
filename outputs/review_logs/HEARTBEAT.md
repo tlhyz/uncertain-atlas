@@ -306,4 +306,8 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T22:10Z | checkpoint 2210Z | ~30min to P3-03 done
 2026-09-13T22:20Z | timer research-continue | P3-03 50_50 ~12min; ETA ~20min
 2026-09-13T22:20Z | checkpoint 2220Z | P3-04 launch on completion
+2026-09-13T22:30Z | timer research-continue | **P3-03 DONE FAIL** all structures -58.70%
+2026-09-13T22:30Z | P3-03 review | short_structure fully inert
+2026-09-13T22:30Z | **P3-04 started** | tmux p3-04-drawdown-sets
+2026-09-13T22:30Z | checkpoint 2230Z | drawdown A/B/C ~90min ETA
 ```

@@ -65,8 +65,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 |----|------|--------|-------------|
 | P3-01 | Re-run dual on Binance ticks (tick_precise) | **done** | FAIL reproduces P1-11 dual -58.70% — outputs/review_logs/2026-09-13_P3-01_dual_tick_FAIL.md |
 | P3-02 | Short init 10/15/20% sweep | **done** | FAIL 20% best return -58.70%; 10% worst -59.24%; Q-tech-2 partial — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
-| P3-03 | Short structure dir vs grid vs 70/30 | **in_progress** | 4/4 50_50 ~12min; 3/4 all -58.70% — outputs/review_logs/2026-09-13_P3-03_short_structures_IN_PROGRESS.md |
-| P3-04 | Drawdown set A/B/C comparison | pending | config ready; queue after P3-03 |
+| P3-03 | Short structure dir vs grid vs 70/30 | **done** | FAIL all -58.70% inert; structure knob dead — outputs/review_logs/2026-09-13_P3-03_short_structures_FAIL.md |
+| P3-04 | Drawdown set A/B/C comparison | **in_progress** | tmux p3-04-drawdown-sets; config dual_binance_tick_drawdown_sets.yaml |
 | P3-05 | Reversal R1–R5 no-lookahead tests | **done** | PASS — outputs/review_logs/2026-09-13_P3-05_reversal_no_leak_PASS.md |
 | P3-06 | Right-side reserve 25/30/35% | pending | config ready; queue after P3-04 |
 | P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | pending | config ready; queue after P3-06 |
