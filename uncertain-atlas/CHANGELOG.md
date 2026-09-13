@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 477）
+
+- CometBFT FinalizeBlock must provide values as a result of executing the block 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage must provide values / as a result of executing the block / tx_results from execution，实现 / FinalizeBlock must provide values as a result of executing the block 正式三事，不另写 19 节）：看见 must provide 四列不是已经改了集合 / 已经交差。看见 as a result of executing the block 不是已经 Process / Prepare candidate 就不需要再执行。看见提供了值不是已经空更新就没有义务 / 已经 CheckTx 过了。FinalizeBlock must provide values as a result of executing the block 正式三事不是不变量 458，也不是不变量 460，也不是不变量 363。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 477；语料 C481；模式 name-the-finasresult-bar；反模式 finasresult-sold-as-candidate；L10.3 第 473 条。填 L4.4 / CometBFT 档案 FinalizeBlock must provide values as a result of executing the block 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样编回包四列、怎样在 Finalize 套用 candidate。不编博物馆页。不另写 19 节。不与 458 / 460 / 363 / 466 / 464 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经改了集合 / 已经 Process 跑过就不用再执行 / 已经空着就没有义务 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 476）
 
 - CometBFT FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage may also be empty or hard-coded / MUST be deterministic / only params + previous committed state，实现 / FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事，不另写 19 节）：看见 may be empty 不是已经没有状态根 / 已经交差。看见 may be hard-coded 不是必须真是 Merkle root / 已经写死就不算 AppHash。看见 MUST be deterministic 不是已经 next_block_delay 非确定就代表整门非确定 / 已经印进本头。FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事不是不变量 404，也不是不变量 470，也不是不变量 475。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
