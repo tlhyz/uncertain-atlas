@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 473）
+
+- CometBFT FinalizeBlock fill all fields even if Prepare/Process passed 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage Currently / will fill up all fields in FinalizeBlockRequest / even if already passed via PrepareProposalRequest or ProcessProposalRequest，实现 / FinalizeBlock fill all fields even if Prepare/Process passed 正式三事，不另写 19 节）：看见 will fill up all fields 不是已经 Prepare / Process 给过就不用再 Finalize / 已经交差。看见 even if already passed 不是已经字段名对得上就代表已经跑过 Process / 已经是刚决定那块的字段。看见 all fields / 又填一遍 不是已经 decided 和 proposed 就可以混用。FinalizeBlock fill all fields even if Prepare/Process passed 正式三事不是不变量 360，也不是不变量 461，也不是不变量 359。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 473；语料 C477；模式 name-the-finfill-bar；反模式 finfill-sold-as-norepeat；L10.3 第 469 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields even if Prepare/Process passed 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 FinalizeBlockRequest 各栏、怎样和 Process 请求栏对齐。不编博物馆页。不另写 19 节。不与 360 / 461 / 359 / 422 / 460 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经 Prepare / Process 给过就不用再 Finalize / 已经字段名对得上就代表已经跑过 Process / decided 和 proposed 字段 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 472）
 
 - CometBFT FinalizeBlock When calling ProcessProposal guarantee 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage When calling FinalizeBlock / consensus algorithm guarantees / at least one non-byzantine validator has run ProcessProposal on that block，实现 / FinalizeBlock When calling ProcessProposal guarantee 正式三事，不另写 19 节）：看见 When calling FinalizeBlock / consensus guarantees 不是已经每个验证者都跑过 Process / 已经把块落成决定。看见 at least one non-byzantine 不是已经提议者 Process 过就代表全网都 Process 过。看见 has run ProcessProposal on that block 不是已经套用 candidate 就不需要 guarantee。FinalizeBlock When calling ProcessProposal guarantee 正式三事不是不变量 360，也不是不变量 466，也不是不变量 460。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

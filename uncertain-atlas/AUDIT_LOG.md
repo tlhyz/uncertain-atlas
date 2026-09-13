@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2300 | 高 | 看见 Currently, CometBFT will fill up all fields in FinalizeBlockRequest / 看见引擎会把 Finalize 请求全部字段填齐 会被写成已经 Prepare / Process 给过就不用再 Finalize，或当成已经交差 | 官方 FinalizeBlock Usage：Currently, CometBFT will fill up all fields in FinalizeBlockRequest |
+| A2301 | 高 | 看见 even if they were already passed on via PrepareProposalRequest or ProcessProposalRequest / 看见即使 Prepare / Process 已经传过 会被写成已经字段名对得上就代表已经跑过 Process，或当成已经 Prepare 和 Process / Finalize 同一套字段就已经是刚决定那块的字段 | 官方 FinalizeBlock Usage vs Prepare 请求字段同一套 359 |
+| A2302 | 高 | 看见 all fields / 又填一遍 会被写成已经 decided_last_commit 和 proposed_last_commit 就可以混用，或当成已经 Prepare / Process 传过就意味着 decided 和 proposed 语义 interchangeable | 官方 FinalizeBlock Usage vs decided vs proposed 422 |
+| A2303 | 中 | 怎样写 FinalizeBlockRequest 各栏 / 怎样和 Process 请求栏对齐 / 怎样缓存 Prepare / Process 数据会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2304 | 记录 | 会与 360 / 461 / 359 / 422 / 460 糊成「看见 Prepare / Process 已经给过就已经不用再 Finalize、已经字段名对得上就代表已经跑过 Process、decided 和 proposed 字段 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock fill all fields even if Prepare/Process passed 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 Prepare / Process 给过就不用再 Finalize / 已经字段名对得上就代表已经跑过 Process / decided 和 proposed 字段 interchangeable 标成另一对象 |
+
 | A2295 | 高 | 看见 When calling FinalizeBlock with a block / consensus algorithm guarantees / 看见要 Finalize 了有共识保证 会被写成已经每个验证者都跑过 Process，或当成已经 Application executes block v / persist decision 那种已经把块落成这一高的决定 | 官方 FinalizeBlock Usage：When calling FinalizeBlock … guarantees at least one non-byzantine validator has run ProcessProposal |
 | A2296 | 高 | 看见 at least one non-byzantine validator / 看见至少一名非拜占庭 会被写成已经提议者那边 Process 过就代表全网都 Process 过，或当成已经本节点刚 Process 过就代表每个验证者都 Process 过 | 官方 FinalizeBlock Usage vs ProcessProposal 也会在提议者那边叫 351 |
 | A2297 | 高 | 看见 has run ProcessProposal on that block / 看见对这块跑过 Process 会被写成已经套用 candidate / previously executed 就不需要 Process 保证，或当成已经 ProcessProposal MAY 整块执行（452）那种已经交差 interchangeable | 官方 FinalizeBlock Usage vs apply candidate 460 / candidate execution 452 |

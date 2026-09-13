@@ -431,6 +431,7 @@
 - [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
+- [finfill-sold-as-norepeat](finfill-sold-as-norepeat.md)
 - [finproc-sold-as-allvalidators](finproc-sold-as-allvalidators.md)
 - [fincparam-sold-as-heffective](fincparam-sold-as-heffective.md)
 - [findet-sold-as-prepare](findet-sold-as-prepare.md)
