@@ -431,6 +431,7 @@
 - [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
+- [finexec-sold-as-decided](finexec-sold-as-decided.md)
 - [finequiv-sold-as-gates](finequiv-sold-as-gates.md)
 - [fintxcode-sold-as-absent](fintxcode-sold-as-absent.md)
 - [finreward-sold-as-slashed](finreward-sold-as-slashed.md)

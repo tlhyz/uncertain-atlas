@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2265 | 高 | 看见 `_p_`'s Application executes block _v_ / 看见应用执行块 _v_ 会被写成已经把 _v_ 落成这一高的决定，或当成已经交差 | 官方 FinalizeBlock When step 3：_p_'s Application executes block _v_ |
+| A2266 | 高 | 看见 Application executes block _v_ / 看见应用执行块 _v_ 会被写成已经每个验证者都跑过 Process，或当成已经是 ExecuteTxState | 官方 FinalizeBlock When step 3 vs Usage：at least one non-byzantine validator has run ProcessProposal |
+| A2267 | 高 | 看见 Application executes block _v_ / 看见应用执行块 _v_ 会被写成已经套用 candidate 就不需要再在 Finalize 执行，或当成已经 Process 跑过就不用在 Finalize 再执行 | 官方 FinalizeBlock When step 3 vs Usage：executes txs deterministically / apply candidate state |
+| A2268 | 中 | 怎样写 Finalize When 流程 / 怎样 persist decision / 怎样实现 candidate 缓存会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2269 | 记录 | 会与 362 / 360 / 460 / 452 糊成「看见调了 Finalize 就已经执行完、已经每个验证者都跑过 Process、已经 Process 跑过就不用在 Finalize 再执行」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When Application executes block v 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经把 v 落成这一高的决定 / 已经每个验证者都跑过 Process / 已经 Process 跑过就不执行 标成另一对象 |
+
 | A2260 | 高 | 看见 FinalizeBlock 等价于 ABCI 1.0 的 BeginBlock / DeliverTx / EndBlock / 看见收成一门 会被写成已经四门已经结算，或当成已经交差 | 官方 FinalizeBlock Usage：This method is equivalent to the call sequence BeginBlock, DeliverTx, and EndBlock in ABCI 1.0 |
 | A2261 | 高 | 看见等价于旧三步 / 看见收成一门 会被写成已经没有 Prepare/Process，或当成已经 ABCI++ 只剩 Finalize 一门 interchangeable | 官方 FinalizeBlock Usage vs ABCI++ PrepareProposal / ProcessProposal |
 | A2262 | 高 | 看见等价于旧三步 / 看见收成一门 会被写成已经是 Contains the fields of the newly decided block interchangeable，或当成已经 Process 跑过 / 已经有 candidate 就不用在 Finalize 再执行 | 官方 FinalizeBlock Usage vs Contains the fields / executes txs / apply candidate state |
