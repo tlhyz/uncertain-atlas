@@ -64,8 +64,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P3-01 | Re-run dual on Binance ticks (tick_precise) | **done** | FAIL reproduces P1-11 dual -58.70% — outputs/review_logs/2026-09-13_P3-01_dual_tick_FAIL.md |
-| P3-02 | Short init 10/15/20% sweep | **in_progress** | 10% -59.24%, 15% **-58.97%** done; 20% running — outputs/review_logs/2026-09-13_P3-02_short_init_IN_PROGRESS.md |
-| P3-03 | Short structure dir vs grid vs 70/30 | pending | |
+| P3-02 | Short init 10/15/20% sweep | **done** | FAIL 20% best return -58.70%; 10% worst -59.24%; Q-tech-2 partial — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
+| P3-03 | Short structure dir vs grid vs 70/30 | **in_progress** | tmux p3-03-short-structures; config dual_binance_tick_short_structures.yaml |
 | P3-04 | Drawdown set A/B/C comparison | pending | |
 | P3-05 | Reversal R1–R5 no-lookahead tests | pending | |
 | P3-06 | Right-side reserve 25/30/35% | pending | |
@@ -75,7 +75,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P3-10 | FAIL_F2 no-recovery window | pending | |
 | P3-11 | Similar-window search top-20 real windows | pending | |
 | P3-12 | Answer Q-tech-1 Short→Long vs Cash→Long | pending | Gate FAIL preserved |
-| P3-13 | Answer Q-tech-2 initial short % | pending | |
+| P3-13 | Answer Q-tech-2 initial short % | **done** | FAIL via P3-02; 20% best return, no sweet spot — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
 | P3-14 | Answer Q-tech-8 bottom grid value-add | pending | |
 | P3-15 | Answer Q-tech-9 grid in trend phase | pending | |
 | P3-16 | Gate OOS on top-3 Tech param sets | pending | |
@@ -128,7 +128,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | done | 131 passed 2026-09-13T09:00Z |
+| M-01 | Run `pytest -q` | done | 133 passed 2026-09-13T21:10Z |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | done | C-05 65d + C-06 crypto grid FAIL |
 | M-03 | Append `review_logs/INDEX.md` | done | daily audit 0900Z |
 | M-04 | Check PR CI status | done | PR #8 no checks reported |

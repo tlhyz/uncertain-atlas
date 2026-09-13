@@ -65,7 +65,7 @@
 |-------|---------|----------|
 | Regime switching > pure grid | Full pipeline + OOS | After GRID_VALUE_ADD |
 | GRID_VALUE_ADD > 0 for any asset | Isolated grid study | EXP-TECH-002 |
-| Crypto leverage sweet spot 1.25–2.0 | **PARTIAL FAIL** SOL/ETH; BTC P2-02 restart | P2-10 when BTC done |
+| Crypto leverage sweet spot 1.25–2.0 | **FAIL** all majors P2-02/03/04 | P2-10 Q-crypto-1 done |
 | Binance tick-precise majors PERP vs ETF | Not re-run (bar A/B only) | Medium |
 | Cross-market Tech↓ Crypto↑ capture | Real data on both books | EXP-CROSS-002 |
 | Gate OOS fill calibration | Script stub | LEVEL 9 |
@@ -86,6 +86,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-13 | C-06 upgraded HIGH; P2 complete | P2-02/05/06/07 review logs |
 | 2026-09-13 | C-06 added; C-05 65d tick FAIL | P1-11, P2-03, P2-04 review logs |
 | 2026-09-13 | UNTESTED leverage row → PARTIAL FAIL | SOL/ETH C1 tick scans complete |
 | 2026-09-13 | W-02 confidence LOW (was implicit medium) | Phase 1 red team: template Q-answers |

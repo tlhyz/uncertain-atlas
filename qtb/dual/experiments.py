@@ -161,12 +161,18 @@ def compare_independent_vs_unified(data: DualDataset, fill_mode: str = "base", t
 
 
 def rank_short_structures(data: DualDataset, fill_mode: str = "base", tick_precise: bool = False) -> list[dict[str, Any]]:
+    """Sweep short-phase structure mix (Q-tech / P3-03)."""
     rows: list[dict[str, Any]] = []
     for ss in ("directional", "grid", "70_30", "50_50"):
+        print(f"[run] short_structure {ss}...")
         tp = TechParams(short_structure=ss)  # type: ignore[arg-type]
         r = run_dual_portfolio(data, DualParams(tech=tp), name=ss, fill_mode=fill_mode, tick_precise=tick_precise)
         m = summarize_portfolio(r)
         m["short_structure"] = ss
+        print(
+            f"[run] short_structure {ss} done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"calmar={float(m.get('calmar', 0)):.2f}"
+        )
         rows.append(m)
     rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
     return rows

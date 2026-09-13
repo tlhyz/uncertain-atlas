@@ -272,4 +272,9 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T20:40Z | checkpoint 2040Z | P3-02 15% ~20min
 2026-09-13T20:50Z | timer research-continue | pytest 132 pass; **P3-02 15% DONE -58.97%**
 2026-09-13T20:50Z | checkpoint 2050Z | 20% running
+2026-09-13T21:10Z | timer research-continue | **P3-02 DONE FAIL** 20%=-58.70% 10%=-59.24%
+2026-09-13T21:10Z | P3-02 review | Q-tech-2 partial; no sweet spot
+2026-09-13T21:10Z | P3-03 prep | rank_short_structures logging + config + test
+2026-09-13T21:10Z | P3-03 started | tmux p3-03-short-structures
+2026-09-13T21:10Z | checkpoint 2110Z | 4 structures ~2h ETA
 ```

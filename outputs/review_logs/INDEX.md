@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | checkpoint 2110Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2110Z.md |
+| 2026-09-13 | P3-02 short init sweep | FAIL | outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
 | 2026-09-13 | checkpoint 2050Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2050Z.md |
 | 2026-09-13 | checkpoint 2040Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2040Z.md |
 | 2026-09-13 | checkpoint 2030Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2030Z.md |
