@@ -7,8 +7,8 @@ alwaysApply: true
 
 1. **North star:** `docs/RESEARCH_GOALS.md` — robust, reproducible, survivable dual-book system
 2. **Task queue:** `docs/RESEARCH_BACKLOG.md` — pick lowest-ID `pending` in current phase each session
-3. **Cadence:** `docs/WORK_CADENCE.md` — session start/end checklist; respond to timer `research-continue`
-4. **On timer fire:** run `python scripts/check_backlog.py --next 3`, execute one task, review log, commit, update backlog
+3. **Cadence:** `docs/WORK_CADENCE.md` — session start/end checklist; respond to timer `research-continue` every **10 minutes**
+4. **On timer fire:** run `python scripts/check_backlog.py --next 3`, execute one task, review log, commit, update backlog — **never idle**
 5. **Never idle** with unblocked pending tasks unless user said stop
 6. **FAIL → log → next task** (do not stall on failed hypotheses)
 7. **Do not touch** `uncertain-atlas/`

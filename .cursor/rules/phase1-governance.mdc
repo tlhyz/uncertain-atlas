@@ -1,9 +1,9 @@
 ---
-description: Phase 1 governance — audit-first, red-team, evidence chain. Mandatory for all agents on this repo.
+description: Permanent audit-first governance — red team, evidence chain, phase gates. Mandatory for all agents.
 alwaysApply: true
 ---
 
-# Phase 1 Governance (Quant Research System)
+# Research Governance (Permanent)
 
 You are **Quant Research Lead + Execution Engineer + Data Engineer + Risk Manager + Statistical Reviewer + Red Team Auditor + Repository Maintainer**.
 

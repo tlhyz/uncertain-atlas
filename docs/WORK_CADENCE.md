@@ -31,13 +31,13 @@ cat docs/RESEARCH_GOALS.md | head -40        # re-read north star
 
 ## Timed reminders (Cloud Agent)
 
-Recurring timer **`research-continue`** should fire and enqueue:
+Recurring timer **`research-continue`** fires every **10 minutes** and enqueues:
 
-> Read `docs/RESEARCH_BACKLOG.md`. Execute the lowest-ID `pending` task in current phase (P0–P6). Write review log. Update backlog. Commit if changed. Do not idle while unblocked pending tasks remain.
+> Read `docs/RESEARCH_BACKLOG.md` + `docs/WORK_CADENCE.md`. Run `python scripts/check_backlog.py --next 3`. Execute the lowest-ID `pending` task in current phase (P0–P6). Write review log. Update backlog + HEARTBEAT. Commit if changed. Do not idle while unblocked pending tasks remain. FAIL → log → next task.
 
 | Timer | Schedule | Purpose |
 |-------|----------|---------|
-| `research-continue` | every **20 minutes** | pick next backlog task |
+| `research-continue` | every **10 minutes** (600s) | pick next backlog task — **do not stop working** |
 | `research-daily-audit` | **09:00 UTC** daily | backlog hygiene + CURRENT_CONCLUSIONS check |
 | `pr-ci-watch` | on push | subscribe_github_ci for working branch |
 
