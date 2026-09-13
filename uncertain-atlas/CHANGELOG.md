@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 495）
+
+- CometBFT InitChain Usage 正式三事工作实例（官方 ABCI++ Methods InitChain Usage Called once upon genesis / If InitChainResponse.Validators is empty the initial set will be InitChainRequest.Validators / If InitChainResponse.Validators is not empty it will be the initial set regardless of InitChainRequest.Validators，实现 / InitChain Usage 正式三事，不另写 19 节）：看见 Called once upon genesis 不是崩溃后再调 InitChain interchangeable / InitChain Usage 余量 bundled interchangeable。看见 Response Validators empty → Request Validators 不是空名单就没有集合 interchangeable / ValidatorUpdate 已经改了集合 interchangeable。看见 Response Validators not empty → Response regardless of Request 不是应用 can decide bundled interchangeable / empty response 规则 interchangeable。InitChain Usage 正式三事不是不变量 412，也不是不变量 318 / 320 / 364。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 495；语料 C499；模式 name-the-initchainusage-bar；反模式 initchainusage-sold-as-bundled；L10.3 第 491 条。填 L4.4 / CometBFT 档案 InitChain Usage 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 InitChain、怎样决定接受创世集合、怎样从空集合更新。不编博物馆页。不另写 19 节。不与 412 / 318 / 320 / 364 / 303 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经崩溃后再调 / 空名单就没有集合 / 应用 can decide bundled interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 494）
 
 - CometBFT Info Usage 正式三事工作实例（官方 ABCI++ Methods Info Usage Return information about the application state / Used to sync during a handshake on startup or on recovery / The returned app_version will be included in the Header of every block，实现 / Info Usage 正式三事，不另写 19 节）：看见 Return information about the application state 不是 QueryState interchangeable / 已经 persisted / Info 回包 data bundled interchangeable。看见 Used to sync during handshake on startup or on recovery 不是 Info 握手 bundled（370） interchangeable / 已经快照重放 / Info 请求 version 栏 bundled interchangeable。看见 app_version included in Header of every block 不是 last_block persisted during Commit interchangeable / Info 回包 version interchangeable / 已经印进本头 AppHash。Info Usage 正式三事不是不变量 370，也不是不变量 379 / 389 / 314。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

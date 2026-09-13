@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2410 | 高 | 看见 Called once upon genesis / 看见 InitChain 创世时只调一次 会被写成已经崩溃后再调 InitChain / 已经交差，或当成已经 InitChain Usage 余量 bundled interchangeable | 官方 InitChain Usage：Called once upon genesis |
+| A2411 | 高 | 看见 If InitChainResponse.Validators is empty the initial set will be InitChainRequest.Validators / 看见 Response 空就用 Request 会被写成已经 InitChain 回了空名单就没有集合，或当成已经 ValidatorUpdate 已经改了集合 interchangeable | 官方 InitChain Usage：If `InitChainResponse.Validators` is empty, the initial validator set will be the `InitChainRequest.Validators` |
+| A2412 | 高 | 看见 If InitChainResponse.Validators is not empty it will be the initial set regardless of InitChainRequest.Validators / 看见 Response 非空就用 Response 会被写成已经 The application can decide to accept bundled interchangeable，或当成已经 empty response 规则 interchangeable | 官方 InitChain Usage：If `InitChainResponse.Validators` is not empty, it will be the initial validator set (regardless of what is in `InitChainRequest.Validators`) |
+| A2413 | 中 | 怎样写 InitChain / 怎样决定接受创世集合 / 怎样从空集合更新 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2414 | 记录 | 会与 412 / 318 / 320 / 364 / 303 糊成「看见 InitChain 了就已经崩溃后再调、已经没有集合、已经改了集合」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经崩溃后再调 / 空名单就没有集合 / 应用 can decide bundled interchangeable 标成另一对象 |
+
 | A2405 | 高 | 看见 Return information about the application state / 看见 Info 用来回报应用状态 会被写成已经 QueryState / ExecuteTxState interchangeable，或当成已经 Info 回包 data 就代表已经回报状态 / 已经 handshake 就等于已经 persisted | 官方 Info Usage：Return information about the application state |
 | A2406 | 高 | 看见 Used to sync CometBFT with the application during a handshake that happens on startup or on recovery / 看见启动或恢复时握手对齐 会被写成已经 Info 握手 bundled（370） interchangeable，或当成已经是快照重放 / Info 请求 version 栏 bundled interchangeable | 官方 Info Usage：Used to sync CometBFT with the application during a handshake that happens on startup or on recovery |
 | A2407 | 高 | 看见 The returned app_version will be included in the Header of every block / 看见回的 app_version 会写进每一块 Header 会被写成已经 last_block_app_hash / last_block_height persisted during Commit interchangeable，或当成已经 Info 回包 version interchangeable / 已经印进本头 AppHash | 官方 Info Usage：The returned `app_version` will be included in the Header of every block |
