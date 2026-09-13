@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 478）
+
+- CometBFT FinalizeBlock When persist decision / synchronous call 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock When steps 1–2 persists _v_ as decision / calls FinalizeBlock / synchronous call，实现 / FinalizeBlock When persist decision / synchronous call 正式三事，不另写 19 节）：看见 persist decision 不是已经 executes block v / 已经交差。看见 calls FinalizeBlock 不是已经 persist outputs / 已经落盘。看见 synchronous call 不是已经决定触发 interchangeable / 已经异步。FinalizeBlock When persist decision / synchronous call 正式三事不是不变量 362，也不是不变量 466，也不是不变量 467。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 478；语料 C482；模式 name-the-finpersist-bar；反模式 finpersist-sold-as-commit；L10.3 第 474 条。填 L4.4 / CometBFT 档案 FinalizeBlock When persist decision / synchronous call 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样 persist decision、怎样写同步调用。不编博物馆页。不另写 19 节。不与 362 / 466 / 467 / 403 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经 executes block v / 已经 persist outputs / 决定触发 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 477）
 
 - CometBFT FinalizeBlock must provide values as a result of executing the block 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage must provide values / as a result of executing the block / tx_results from execution，实现 / FinalizeBlock must provide values as a result of executing the block 正式三事，不另写 19 节）：看见 must provide 四列不是已经改了集合 / 已经交差。看见 as a result of executing the block 不是已经 Process / Prepare candidate 就不需要再执行。看见提供了值不是已经空更新就没有义务 / 已经 CheckTx 过了。FinalizeBlock must provide values as a result of executing the block 正式三事不是不变量 458，也不是不变量 460，也不是不变量 363。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
