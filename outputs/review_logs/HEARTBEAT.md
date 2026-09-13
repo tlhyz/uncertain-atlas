@@ -301,4 +301,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T21:50Z | checkpoint 2150Z | ~60min to P3-03 done
 2026-09-13T22:00Z | timer research-continue | P3-03 3/4 70_30 ~10min
 2026-09-13T22:00Z | checkpoint 2200Z | P3-04 ready on completion
+2026-09-13T22:10Z | timer research-continue | **70_30 DONE -58.70%**; 50_50 4/4
+2026-09-13T22:10Z | P3-03 finding | structure param **fully inert** 3/4
+2026-09-13T22:10Z | checkpoint 2210Z | ~30min to P3-03 done
 ```
