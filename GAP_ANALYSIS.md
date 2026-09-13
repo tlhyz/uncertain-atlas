@@ -43,9 +43,9 @@ The repository has a **working research prototype** (Gate A/B, dual-engine FSM, 
 | DATA-017 | Cross-venue validation | **Missing** | Binance vs Gate price check not implemented |
 | DATA-018 | Completeness score | **Missing** | — |
 
-**DATA_QUALITY_REPORT gate:** **NOT IMPLEMENTED**. Experiments can proceed without pre-flight check.
+**DATA_QUALITY_REPORT gate:** **IMPLEMENTED** (`src/data/quality_gate.py`, dual integration, 9 tests).
 
-**Unit tests per DATA task:** Only DATA-002 partially covered (`test_binance_futures.py`, `test_tick_fills.py`).
+**Unit tests per DATA task:** DATA-002 + quality gate covered; DATA-010 partial via gate checks.
 
 ---
 

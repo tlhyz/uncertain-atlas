@@ -15,7 +15,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P0-03 | README links all docs | done | refactor delivery |
 | P0-04 | Review-log policy in `.cursor/rules` | done | review-optimize-log.mdc |
 | P0-05 | Phase 1 audit deliverables | done | REPO_AUDIT, GAP_ANALYSIS, ROADMAP, TASKS, LEDGER, PHASE1_SELF_AUDIT |
-| P0-06 | Phase 1.5 infra gates (DATA_QUALITY, accounting, leak tests) | pending | TASK-0008..0012 |
+| P0-06 | Phase 1.5 infra gates (DATA_QUALITY, accounting, leak tests) | in_progress | TASK-0008 done; TASK-0009/0010 pending |
 
 ---
 

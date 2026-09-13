@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT))
 import pandas as pd
 
 from src.data.manifest import DatasetManifest, sha256_file, MANIFEST_DIR
+from src.data.quality_gate import count_csv_rows
 
 
 def _scan_cache(cache_dir: Path) -> dict[str, list[Path]]:
@@ -49,13 +50,9 @@ def main() -> int:
             )
             total_rows = 0
             file_entries = []
-            for f in files[-5:]:  # checksum sample last 5 days + count all
-                file_entries.append({"path": str(f), "sha256": sha256_file(f), "bytes": f.stat().st_size})
             for f in files:
-                try:
-                    total_rows += len(pd.read_csv(f, usecols=["ts_ms"]))
-                except Exception:
-                    pass
+                file_entries.append({"path": str(f), "sha256": sha256_file(f), "bytes": f.stat().st_size})
+                total_rows += count_csv_rows(f)
             notes = [f"day_files={len(files)}", f"rows_est={total_rows}"]
             if sym in ("SOXLUSDT", "SNXXUSDT"):
                 notes.append("tech_perp_tradfi")

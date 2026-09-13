@@ -7,6 +7,436 @@
   "source": "binance_vision_daily",
   "files": [
     {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-01.csv",
+      "sha256": "c38e1befd34d0c30870bb0f1f5eb01306b51d5c2466b40111a99255c035b4c3e",
+      "bytes": 58380166
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-02.csv",
+      "sha256": "73dba7df51d55afb62389738a9bc4768578f7392e0621d525d195e25f4ae5c9d",
+      "bytes": 83148469
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-03.csv",
+      "sha256": "e58d755ac8200ec5eb8b4f9d793ac493fbd796f04935c33e2d5894a226ce1095",
+      "bytes": 85543235
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-04.csv",
+      "sha256": "eff38dbd635d2cafaf22297b9a513bc002bb556d091d859cf3fd0b5c4133b173",
+      "bytes": 117242786
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-05.csv",
+      "sha256": "6ede2442e2f6fb54f8c07f30d2f23a3b1f15e6309dcbb0a065f3194ee7b8b254",
+      "bytes": 111287312
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-06.csv",
+      "sha256": "db8447d5880b662db2c44dc37c49ce8bf62ce9eb81aae1508eedb5ba9b698f2e",
+      "bytes": 178645250
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-07.csv",
+      "sha256": "4553f68207bcfbc48ef48463f9f750b33bf6969e555857174cf6bc57d919a957",
+      "bytes": 54394861
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-08.csv",
+      "sha256": "88d3c7b913e25b430705fc2a6f7fbc97e30fd0abe696cef234d7444c74409f43",
+      "bytes": 62884294
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-09.csv",
+      "sha256": "e3dfe7d0759c1bfe082e09cd1be154479bfb9131b624ecf6843723740b7e15db",
+      "bytes": 120203271
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-10.csv",
+      "sha256": "5179b77a48b78c477c6788d3330fd9dd39ca7ad6e5bd818682c36dd65efd15c9",
+      "bytes": 95310974
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-11.csv",
+      "sha256": "087de7e5b6832231c632d73d08819579208e07e1794dd0c5b0937525b867903c",
+      "bytes": 132705979
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-12.csv",
+      "sha256": "cdecad2c7ae2388300023fd75643dddd4a929ac9c587b46c628cace5345487d3",
+      "bytes": 104169381
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-13.csv",
+      "sha256": "83c99d40b959b31ac801347c0c917939342ae9dbcd00a8489da3c939597816f4",
+      "bytes": 97743226
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-14.csv",
+      "sha256": "f1139fe9e3d0a5e964c8d2a042ca12b15f2b80091c4c10e3aa706b98eaf5e3e9",
+      "bytes": 46071994
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-15.csv",
+      "sha256": "de254753cb8509c1bcac080d4b4448231cdb69f13f414088077604c07b36c90e",
+      "bytes": 52936791
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-16.csv",
+      "sha256": "28ca9275ab9fc62bfa206b6e0f794a3c160e53e080342a94738a52a62d4ef742",
+      "bytes": 93835327
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-17.csv",
+      "sha256": "ada1b34f727f4f6d69c39d258ee2252a10899575286c43312d53466d672e7cfe",
+      "bytes": 109623051
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-18.csv",
+      "sha256": "7b01180de5983fcfa7ce23b3d87664c873006cdf0edf22445c4ee72eb6fbb9e4",
+      "bytes": 124259215
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-19.csv",
+      "sha256": "8a142569e9fd99937c30b35cc5c720ed667ce1c41d385e9b6ca8c40ffd716f59",
+      "bytes": 106650222
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-20.csv",
+      "sha256": "9322fbb87dd6c8add2b96a48fb65c84f98b9514be0fbde228df350c066c0db04",
+      "bytes": 90442113
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-21.csv",
+      "sha256": "52c00c27fea32af3dc55c3ec828f84e209695c62ac25723c0dce674674cb7c90",
+      "bytes": 33691264
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-22.csv",
+      "sha256": "0ef46303726595e4fbc69bab028b7b86a71b64f86c2af6078d27322d3303cccc",
+      "bytes": 56754398
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-23.csv",
+      "sha256": "34c4d5b33cbe468d926409c8d6b20467a5b94f2d6a7951789519c323b657c0d3",
+      "bytes": 89390100
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-24.csv",
+      "sha256": "3969ed193175ef862d85ee7f00b12c0503c5890e20160583dfefb2cf671c5a17",
+      "bytes": 83219411
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-25.csv",
+      "sha256": "3562d4ddabeb88889ce708e650324967d79330c1fb1ae8c0da2b76dddb043d7a",
+      "bytes": 66521857
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-26.csv",
+      "sha256": "700c86aa35ddd53e4dd61dc7c49f5bc1ac9151b39f24e0a706f682cdb2014e70",
+      "bytes": 103995381
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-27.csv",
+      "sha256": "e38d49cd32868b722567c1284944392386c98720f27e77457a69031157c0f671",
+      "bytes": 84527990
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-28.csv",
+      "sha256": "63da0328e74a0214abc66c75f2cef0aee84a2ca4f4336c96f3f398b76f434abc",
+      "bytes": 39065656
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-29.csv",
+      "sha256": "7d152d1ca62b99f36b0d29cfbea56f87a1650e0cdfe379c8fd398fcfe81afdf0",
+      "bytes": 39237439
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-09-30.csv",
+      "sha256": "2dd685cf062d33ff46d7959d4f4c35d5da8251d31a19ebed39d30bcf1a0cc6c2",
+      "bytes": 104179267
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-01.csv",
+      "sha256": "6ee5906d9910e24fbb1d2ebb3f5681ee3ebb73dfd57c4a1377fb4c55f9ed2b41",
+      "bytes": 149959805
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-02.csv",
+      "sha256": "e77e3283a973eef9b4d501b9547dfa8996913459cca7d831c41f3d6e8c9ea7a9",
+      "bytes": 133560250
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-03.csv",
+      "sha256": "9bafc3db2e17d1bf61d1fb55fdf88aa52909a98e26032b0c30ad08ed3894ca84",
+      "bytes": 125131658
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-04.csv",
+      "sha256": "49435de6a022cf20eab89ee8f807dac5da6ecbe807e9a0382c518995867efd1a",
+      "bytes": 94221936
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-05.csv",
+      "sha256": "582615221ea1a401a1248b80b69732eb0ca9e71efb9944bce10fea4896d2f26d",
+      "bytes": 35066383
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-06.csv",
+      "sha256": "ab8f2d4014b6aaed402261de09808986d6ca404c1913264f930f11adc5d34bff",
+      "bytes": 43192671
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-07.csv",
+      "sha256": "ed29d5c0cc254a1be01e753b54c3b4f44feb95f25c234103ef6879f1bef6bc4c",
+      "bytes": 109551194
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-08.csv",
+      "sha256": "5f2cdcac0d736cf7a52f53b224a346c276384599617e7c891c003196642a30ee",
+      "bytes": 89707172
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-09.csv",
+      "sha256": "33ec848ed5316c796af29d279ea0fb88cbd72f13eb880d10a068b0f419c43b38",
+      "bytes": 85877947
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-10.csv",
+      "sha256": "0c83e0644e767e3ba56cec61ff67098a3129ff48e247bdfb5c756eb0c0d1c1bc",
+      "bytes": 94742997
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-11.csv",
+      "sha256": "896baf483c9bbe6d0c04b7a601af797fd0ecb31a3f7de1b773aa5d7a0e0a6750",
+      "bytes": 84162125
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-12.csv",
+      "sha256": "5b819958c3f2e24f72f003cd1935b27ecaac0d7e1a06eacc9342377592e78d5e",
+      "bytes": 44995273
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-13.csv",
+      "sha256": "ce44d801a4a03d22411f268832ceba093cfa77d9ec2e5c300b9f5781cabcdc14",
+      "bytes": 50309954
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-14.csv",
+      "sha256": "2870fa16f47363d5527f7d0578b5cee1e33f7675e9fd559897dd83359218a235",
+      "bytes": 118407297
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-15.csv",
+      "sha256": "8ff1dde5fcf4b3b82de55484994ee163995076151d68588d5cf2ef72a1434164",
+      "bytes": 152548690
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-16.csv",
+      "sha256": "dea9fd0f9c0ebac7ec45f8043534ba5641928fa5f5b4ee459e762cd81dd5d53c",
+      "bytes": 115894562
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-17.csv",
+      "sha256": "8fb12eac61b467a374e5cb330199574d71e5688dfaf05fdeb3917cdb180643d9",
+      "bytes": 94793702
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-18.csv",
+      "sha256": "e48a461d9bc501864353722c9d1148c202706600dc3e8683d142e864cd8d3761",
+      "bytes": 100016196
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-19.csv",
+      "sha256": "f73c547e593af158048bfc7bb86ca3909539a9e8d073b71ef920ac7a41b60f60",
+      "bytes": 34012189
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-20.csv",
+      "sha256": "ece552e540b1ec1023a6de495ff7ff1433c3ffdb08e521ea48892795758431fa",
+      "bytes": 45279303
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-21.csv",
+      "sha256": "3b4e1f8aaab7e6300d68d13dbbdbf8e833de0b72f7cd2151eaab9fc35b4b1b53",
+      "bytes": 100307699
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-22.csv",
+      "sha256": "b01149e6adfbd6773073367db5a9fd093d34c876b7da0f4c5c28b48ae704a2e4",
+      "bytes": 89469353
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-23.csv",
+      "sha256": "2f6ef1eda60c455b3dff4896ed06c01ffe4b23b31f3f4bb0dabadb63b3a1d83e",
+      "bytes": 95469147
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-24.csv",
+      "sha256": "5c892a7d67e475d12b2f4945759c2bea617b011df8915716eb90736964ca9dec",
+      "bytes": 86470991
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-25.csv",
+      "sha256": "b24a51c35ef7fd38fb9efc9a59d28199ed48048a5b6e7b0d352b09ec21a5a2ea",
+      "bytes": 124236572
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-26.csv",
+      "sha256": "ec2e9f2e5a748fb797911d249a6ea2e44fa064506d3994fd73ca0f8f419d4efe",
+      "bytes": 47002851
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-27.csv",
+      "sha256": "92d7f5168f28a2366edfb0b4700ffb3bfa95eb92e8ec204e63e66d68979ea26a",
+      "bytes": 40884287
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-28.csv",
+      "sha256": "b302107d673780aaedc827f02f699e24dc921a2b7a88f49ca70563a74040b435",
+      "bytes": 102290658
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-29.csv",
+      "sha256": "125378c1f87e01bebb63c23ef7168b00c6adc81f2eee9c22edfdd3740fd50093",
+      "bytes": 146026679
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-30.csv",
+      "sha256": "7c83df6e4c2f2c72fff1438b5d3266bfaf580803ce89b99c96fc80f295fa5c46",
+      "bytes": 98067741
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-10-31.csv",
+      "sha256": "db276e23189f531af87a53a5b4be3d08464399bf56e04e0ddaeb626d3b276f17",
+      "bytes": 106539892
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-01.csv",
+      "sha256": "598794dcbd063b3ac66abf00acea950aa49c6bf2a43ae0555213b518a934781a",
+      "bytes": 136291101
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-02.csv",
+      "sha256": "f3afdae8dd6721ad09689b988ff89b48b4da5d1e6c147305ada87864cfda18d8",
+      "bytes": 42166120
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-03.csv",
+      "sha256": "8851603d975688d67a26f87f51a2b1ac9160a67a2afd022d59d8d5d75a300294",
+      "bytes": 94109895
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-04.csv",
+      "sha256": "fd2c8f1af3ef6497ca07fd9b88651a0b646d932e3733a6d215edc2e7d355ed7b",
+      "bytes": 107197863
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-05.csv",
+      "sha256": "4a7f20b76c00889e2edfd9ca6d9ebf04d43d65abf913efd2436600d4b0e81883",
+      "bytes": 119321302
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-06.csv",
+      "sha256": "8c26e12edd2e68df79acdb5d78d193e0edd50e1aa96752d626c823d1ae5e2776",
+      "bytes": 309248801
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-07.csv",
+      "sha256": "375a28b031a83b78b5e6738197930f556fbe0f3caad411ed708a0a5e3c2e710b",
+      "bytes": 132492705
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-08.csv",
+      "sha256": "a619bd8ffc67522b9b8f27032d8612359bb0e6a542a655990e0e6b7a6e1e3332",
+      "bytes": 107713762
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-09.csv",
+      "sha256": "49299b092696909870707a6fd9b068862d11917f55f8d401beaa53c96407b89c",
+      "bytes": 54744038
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-10.csv",
+      "sha256": "d98c1a9e59f8ca584e281d37dad8f66f68daa67948be048ee2a8aafbafc4bb5f",
+      "bytes": 174447837
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-11.csv",
+      "sha256": "50ca71895a9c6dbb5f01df4d578a1c67a7065cfe8aee8741cfb93cc866855f06",
+      "bytes": 258022451
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-12.csv",
+      "sha256": "c8ace7f518e52a4380c279248930fb38eb8e175dd0057ed475052b01bfc0bdaa",
+      "bytes": 298845655
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-13.csv",
+      "sha256": "cab870b8863edd2eb73e881513cce0a7964d5d3360643fcc9cb5e84ab8c0983f",
+      "bytes": 280555626
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-14.csv",
+      "sha256": "ea6442bc625bc2b6f561fa0e3ac61319e20a04e40bf7a51575fe4ba659e4dced",
+      "bytes": 208162083
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-15.csv",
+      "sha256": "9baa5775e940a397354923c892daeb7d971357b0c563b7fa44d4c5191f4d8a71",
+      "bytes": 170331818
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-16.csv",
+      "sha256": "5c1db788362cc3d62872d5e5025ac60bc35456b167834682054ebc9b662292e9",
+      "bytes": 81078928
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-17.csv",
+      "sha256": "bab9b688f3647094dacc2b6ab7638e271c9801889d944bc42bddec7872054133",
+      "bytes": 97571449
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-18.csv",
+      "sha256": "00ad29eee4a2f919aad960fcd24cfbf317ad78aca5e5beb0264adfd640c7ec2a",
+      "bytes": 175418979
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-19.csv",
+      "sha256": "e5630de4e8757366f3dd49f58af6925ad659b35af01ee1ce2089632f8b23651e",
+      "bytes": 156511442
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-20.csv",
+      "sha256": "ca73a998c8677a753d66571cd689db3a49d05a03308f083188da947e8b8063a2",
+      "bytes": 158367715
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-21.csv",
+      "sha256": "199a90e41275bb2a5457c76914763131e12b53dab504169bbf89275c273986d7",
+      "bytes": 212726857
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-22.csv",
+      "sha256": "e4e82eee551a441e50d45ffdff7c3412facce26f2a7d4b78cedc0c3a927b42f3",
+      "bytes": 137046056
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-23.csv",
+      "sha256": "319ec6605d369818bb21b92f91a8e8cd6d87d20d069af304410c3431cb39741f",
+      "bytes": 63789676
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-24.csv",
+      "sha256": "18c53bb360f4e8cefb0548056e5df57673d1ec5103ec9afcc9723e435790e6cc",
+      "bytes": 91400840
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-25.csv",
+      "sha256": "602255e381c33f252ed8c83ba0f32c60776752366c3c764af994f08196f846d9",
+      "bytes": 159194559
+    },
+    {
       "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-26.csv",
       "sha256": "8e78f636c8716d16f57102c05e45ba301a5dcf65d116c242b626636dbd927f20",
       "bytes": 184135015
@@ -32,11 +462,11 @@
       "bytes": 49180451
     }
   ],
-  "rows": 1163029,
+  "rows": 130521594,
   "missing_periods": [],
   "notes": [
     "day_files=91",
-    "rows_est=1163029"
+    "rows_est=130521594"
   ],
-  "created_at": "2026-09-13T00:09:12.791151+00:00"
+  "created_at": "2026-09-13T00:44:26.231876+00:00"
 }

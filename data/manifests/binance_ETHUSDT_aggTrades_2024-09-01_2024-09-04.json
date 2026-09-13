@@ -27,11 +27,11 @@
       "bytes": 84808810
     }
   ],
-  "rows": 0,
+  "rows": 3825587,
   "missing_periods": [],
   "notes": [
     "day_files=4",
-    "rows_est=0"
+    "rows_est=3825587"
   ],
-  "created_at": "2026-09-13T00:09:13.004443+00:00"
+  "created_at": "2026-09-13T00:44:27.944958+00:00"
 }

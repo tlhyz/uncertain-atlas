@@ -27,6 +27,41 @@ from .report import write_outputs
 from .window_search import search_similar_windows
 
 
+def _load_quality_thresholds(cfg: dict[str, Any]):
+    from src.data.quality_gate import DataQualityThresholds
+
+    path = Path(str(cfg.get("data_quality_config") or "configs/data_quality.yaml"))
+    if path.exists():
+        raw = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        return DataQualityThresholds(
+            min_rows=int(raw.get("min_rows", 1)),
+            max_missing_rate=float(raw.get("max_missing_rate", 0.05)),
+            max_gap_fraction=float(raw.get("max_gap_fraction", 0.10)),
+            max_duplicate_rate=float(raw.get("max_duplicate_rate", 0.001)),
+            max_time_disorder_rate=float(raw.get("max_time_disorder_rate", 0.0)),
+            min_file_bytes=int(raw.get("min_file_bytes", 64)),
+            require_manifest_rows_match=bool(raw.get("require_manifest_rows_match", False)),
+        )
+    return DataQualityThresholds()
+
+
+def _run_data_quality_gate(cfg: dict[str, Any], out_dir: Path) -> None:
+    if cfg.get("skip_data_quality") or cfg.get("allow_skip"):
+        print("[data-quality] skipped (config)")
+        return
+    if not cfg.get("tick_precise", True):
+        print("[data-quality] skipped (bar mode — no tick manifest required)")
+        return
+    from src.data.quality_gate import gate_binance_symbols
+
+    dq_cfg = yaml.safe_load(Path(str(cfg.get("data_quality_config") or "configs/data_quality.yaml")).read_text(encoding="utf-8")) if Path(str(cfg.get("data_quality_config") or "configs/data_quality.yaml")).exists() else {}
+    symbols = list(dq_cfg.get("dual_tech_symbols") or ["SOXL", "SNXX"])
+    th = _load_quality_thresholds(cfg)
+    print(f"[data-quality] checking manifests for {symbols}...")
+    report = gate_binance_symbols(symbols, out_dir, th, required=True)
+    print(f"[data-quality] PASS — wrote {out_dir / 'DATA_QUALITY_REPORT.json'} rows={sum(m.recounted_rows for m in report.manifest_checks)}")
+
+
 def load_dual_config(path: str | None) -> dict[str, Any]:
     defaults: dict[str, Any] = {
         "interval": "1h",
@@ -48,6 +83,8 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "data_end": "",
         "download_trades": True,
         "tick_precise": True,
+        "skip_data_quality": False,
+        "data_quality_config": "configs/data_quality.yaml",
     }
     if path:
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
@@ -58,6 +95,7 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
 def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
     out_dir = Path(cfg.get("output_dir") or "outputs/dual_engine_perp")
     out_dir.mkdir(parents=True, exist_ok=True)
+    _run_data_quality_gate(cfg, out_dir)
     interval = str(cfg.get("interval") or "1h")
     cache_only = bool(cfg.get("cache_only"))
 
