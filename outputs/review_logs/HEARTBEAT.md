@@ -207,4 +207,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T15:40Z | checkpoint 1540Z | P2-02 2.0x ~106min ETA ~15:44Z (~4min)
 2026-09-13T15:50Z | timer research-continue | pytest 131 pass; no new completions
 2026-09-13T15:50Z | checkpoint 1550Z | P2-02 2.0x ~116min; P2-07 dynamic ~100min
+2026-09-13T16:00Z | timer research-continue | pytest 131 pass; **P2-02 DONE FAIL** 2.0x -87.06%
+2026-09-13T16:00Z | P2-02 FAIL review | Q-crypto-1 COMPLETE FAIL; P2-10 done
+2026-09-13T16:00Z | checkpoint 1600Z | P2-07 dynamic still running
 ```

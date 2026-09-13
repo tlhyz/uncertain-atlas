@@ -1,6 +1,6 @@
 # Q-crypto-1 — Leverage sweet spot (1.25–2.0x)
 
-**Status:** PARTIAL (2026-09-13T14:00Z)  
+**Status:** **COMPLETE FAIL** (2026-09-13T15:40Z)  
 **Window:** C1 2024-09-01 → 2024-11-30, tick-precise, crypto FSM+grid, tech disabled  
 **Fill:** Base (primary verdict)
 
@@ -12,18 +12,24 @@ Does a leverage sweet spot exist in **1.25 / 1.5 / 1.75 / 2.0x** for BTC, ETH, S
 
 ---
 
-## Answers by asset
+## Answer
 
-### SOL — COMPLETE (P2-04)
+**NO.** All three majors show catastrophic ~-87 to -88% returns across the full 1.25–2.0x band on C1 tick-precise crypto grid FSM. Calmar rankings vary slightly but no level is deployable.
 
-| Lev | Return | Calmar | Liq |
-|-----|--------|--------|-----|
-| 1.25 | -88.01% | -2.52 | 0 |
-| 1.5 | -88.01% | -2.51 | 0 |
-| 1.75 | -88.01% | -2.50 | 0 |
-| 2.0 | -88.01% | -2.49 | 0 |
+---
 
-**Verdict:** **NO sweet spot.** All levels collapse to ~12% of initial (~1199 USDT final). Calmar ranking favors higher leverage only because MaxDD differs by ~0.5% — not actionable.
+## Results by asset
+
+### BTC — COMPLETE (P2-02)
+
+| Lev | Return | Calmar | Final (USDT) | Liq |
+|-----|--------|--------|--------------|-----|
+| 1.25 | -87.47% | -16.89 | 1253 | 0 |
+| 1.5 | -87.35% | -17.18 | 1265 | 0 |
+| 1.75 | -87.32% | **-14.67** | 1268 | 0 |
+| 2.0 | **-87.06%** | -16.65 | 1294 | 0 |
+
+**Verdict:** **NO sweet spot.** Return spread 0.41pp; all ~-87%. Calmar favors 1.75x; return favors 2.0x — neither actionable.
 
 ### ETH — COMPLETE (P2-03)
 
@@ -34,43 +40,29 @@ Does a leverage sweet spot exist in **1.25 / 1.5 / 1.75 / 2.0x** for BTC, ETH, S
 | 1.75 | -87.61% | -5.74 | 0 |
 | 2.0 | -87.50% | -5.69 | 0 |
 
-**Verdict:** **NO sweet spot.** Final equity 1214–1250 USDT. Calmar nominally favors 2.0x but all ~-87.5% — not actionable.
+**Verdict:** **NO sweet spot.** Final equity 1214–1250 USDT.
 
-### BTC — IN_PROGRESS (P2-02)
+### SOL — COMPLETE (P2-04)
 
-| Lev | Return | Calmar | Status |
-|-----|--------|--------|--------|
-| 1.25 | **-87.47%** | -16.89 | done (~109min) |
-| 1.5 | **-87.35%** | -17.18 | done (~111min) |
-| 1.75 | **-87.32%** | -14.67 | done (~100min) |
-| 2.0 | — | — | running |
+| Lev | Return | Calmar | Liq |
+|-----|--------|--------|-----|
+| 1.25–2.0 | -88.01% | -2.49 to -2.52 | 0 |
 
-**Interim:** 1.25x–1.75x all ~-87% — ETH-like slight gradient, not actionable. 2.0x running; full scan ETA ~15:50Z.
+**Verdict:** **NO sweet spot.** Identical ~-88% at all levels (~1199 USDT final).
 
 ---
 
-## Interim conclusion (partial)
+## Conclusion
 
-On C1 tick-precise with current crypto grid FSM:
-
-1. **No evidence of a viable 1.25–2.0x sweet spot** for SOL or ETH on C1 tick grid FSM.
-2. **BTC 1.25x -87.47%, 1.5x -87.35%, 1.75x -87.32%** — ETH-like gradient; 2.0x pending.
-3. SOL shows near-identical ~-88% across levels (accounting floor suspected); ETH varies slightly but all catastrophic.
-4. Does **not** overturn LEDGER-002 (bar-mode PERP vs ETF A/B) — different engine, window, and config.
-
----
-
-## Remaining work
-
-- [ ] P2-02 BTC leverage scan complete
-- [x] P2-03 ETH complete (FAIL)
-- [ ] Conservative fill cross-check on best/worst row
-- [ ] Mark P2-10 **done** when BTC reported
+1. **No viable 1.25–2.0x sweet spot** for BTC, ETH, or SOL on C1 tick crypto grid FSM.
+2. Does **not** overturn LEDGER-002 (bar-mode PERP vs ETF A/B) — different engine, window, and config.
+3. Conservative fill cross-check remains open but unlikely to rescue ~-87% band.
 
 ---
 
 ## Evidence chain
 
-- SOL: `outputs/experiments/crypto_sol_leverage_scan/crypto_results.json`
+- BTC: `outputs/experiments/crypto_btc_leverage_scan/crypto_results.json`
 - ETH: `outputs/experiments/crypto_eth_leverage_scan/crypto_results.json`
-- Reviews: `outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md`, `outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL.md`
+- SOL: `outputs/experiments/crypto_sol_leverage_scan/crypto_results.json`
+- Reviews: `outputs/review_logs/2026-09-13_P2-02_btc_leverage_FAIL.md`, `P2-03`, `P2-04`
