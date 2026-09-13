@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 447）
+
+- CometBFT MisbehaviorType 枚举正式三事工作实例（官方 ABCI++ Methods Data Types MisbehaviorType，实现 / MisbehaviorType 枚举正式三事，不另写 19 节）：看见 MisbehaviorType UNKNOWN 只是未知过错枚举不是已经归类成 DUPLICATE_VOTE / 已经罚没。看见 MisbehaviorType DUPLICATE_VOTE 只是双签枚举不是已经 slashed / 已经是 LIGHT_CLIENT_ATTACK interchangeable。看见 MisbehaviorType LIGHT_CLIENT_ATTACK 只是轻客户端攻击枚举不是已经 DUPLICATE_VOTE / 已经罚没。MisbehaviorType 枚举正式三事不是不变量 372，也不是不变量 413，也不是不变量 21。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 447；语料 C451；模式 name-the-misbtype-bar；反模式 misbtype-sold-as-slashed；L10.3 第 443 条。填 L4.4 / CometBFT 档案 MisbehaviorType 枚举正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 MisbehaviorType 枚举、怎样填 type、怎样区分三种过错。不编博物馆页。不另写 19 节。不与 372 / 413 / 21 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经归类、已经 slashed、enum 三值 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 446）
 
 - CometBFT ExecTxResult events 栏正式三事工作实例（官方 ABCI++ Methods ExecTxResult Fields，实现 / ExecTxResult events 栏正式三事，不另写 19 节）：看见 ExecTxResult.events 是给交易建索引的类型键值事件不是已经印进本头 / 已经像 Code/Data 那样必须确定。看见 ExecTxResult.events 标成非确定不是已经 Code / Data 编进结构再哈希进下一高度块头那种已经交差。看见 ExecTxResult.events 在 tx_results 里逐笔出现不是已经是 FinalizeBlockResponse.events / CheckTxResponse.events。ExecTxResult events 栏正式三事不是不变量 316，也不是不变量 431，也不是不变量 381。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
