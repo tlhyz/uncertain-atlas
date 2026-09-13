@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 455）
+
+- CometBFT ProcessProposal REJECT 共识假设正式三事工作实例（官方 ABCI++ Methods ProcessProposal Usage / When，实现 / ProcessProposal REJECT 共识假设正式三事，不另写 19 节）：看见 ProcessProposalResponse.status 是 REJECT 时共识假设收到的提案不合法不是已经当成块非法 / 已经永久标成非法块。看见验证者 prevote nil 不是已经 VerifyVoteExtension REJECT 拒整张票 / 已经 Process 回包栏 bundled 三事 interchangeable。看见 REJECT 共识假设不是已经不能整块执行候选 / 已经 Process MAY 整块执行就意味着已经交差。ProcessProposal REJECT 共识假设正式三事不是不变量 430，也不是不变量 376，也不是不变量 452 / 33。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 455；语料 C459；模式 name-the-procreject-bar；反模式 procreject-sold-as-invalid；L10.3 第 451 条。填 L4.4 / CometBFT 档案 ProcessProposal REJECT 共识假设正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样挑 ACCEPT/REJECT、怎样整块执行候选。不编博物馆页。不另写 19 节。不与 430 / 376 / 452 / 33 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经当成块非法 / 已经 VerifyVoteExtension REJECT / 已经不能整块执行候选 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 454）
 
 - CometBFT ProcessProposal height/time 对上拟议块头正式三事工作实例（官方 ABCI++ Methods ProcessProposal Usage / Request，实现 / ProcessProposal height/time 对上拟议块头正式三事，不另写 19 节）：看见 Process 的 height / time 对上拟议块头不是已经验过块头 / 已经跑过 Process。看见 ProcessProposalRequest.height / time 是拟议块高度和时间戳不是已经 Usage 那种 match the values from the header / 已经验过票上时间。看见 Process height/time match header 不是已经是 FinalizeBlockRequest 刚决定那块的字段 / 已经 Finalize height/time match interchangeable。ProcessProposal height/time 对上拟议块头正式三事不是不变量 417，也不是不变量 419 / 420，也不是不变量 416。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
