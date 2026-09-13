@@ -64,4 +64,10 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T04:51Z | P2-04 in_progress | SOL leverage scan started tmux p2-04-sol-leverage
 2026-09-13T04:50Z | P1-11 running | ~188min (~3h08m); DUAL_REPORT pending
 2026-09-13T04:50Z | P2-02 running | ~127min (~2h07m); CRYPTO_REPORT pending
+2026-09-13T05:00Z | timer research-continue | pytest 126 pass; ETH 91d truncation scan 0 bad
+2026-09-13T05:00Z | P2-05 prep | crypto_btc_grid_atr_step.yaml ready; queued after P2-02
+2026-09-13T05:00Z | P1-11 running | ~198min (~3h18m); DUAL_REPORT pending
+2026-09-13T05:00Z | P2-02 running | ~137min (~2h17m); may finish next cycle
+2026-09-13T05:00Z | P2-03 running | ETH 1.25x ~9min post-fix
+2026-09-13T05:00Z | P2-04 running | SOL 1.25x ~9min
 ```
