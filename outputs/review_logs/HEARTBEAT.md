@@ -37,4 +37,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T03:12Z | P1-11 running | 90+ min; DUAL_REPORT pending
 2026-09-13T03:23Z | P2-02 running | 40+ min; ~10min/level on 2184 bars; may finish next cycle
 2026-09-13T03:23Z | P1-11 running | 101+ min; still computing benchmarks
+2026-09-13T03:35Z | P2-02 running | 51+ min leverage scan; ~12min/level observed
+2026-09-13T03:35Z | P1-11 running | 111+ min; DUAL_REPORT pending
 ```
