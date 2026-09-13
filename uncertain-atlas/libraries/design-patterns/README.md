@@ -321,6 +321,7 @@
 - [name-the-ext-vi-table](name-the-ext-vi-table.md)
 - [name-the-fin-req](name-the-fin-req.md)
 - [name-the-ci-notes-order](name-the-ci-notes-order.md)
+- [name-the-misbtvp-bar](name-the-misbtvp-bar.md)
 - [name-the-misbheighttime-bar](name-the-misbheighttime-bar.md)
 - [name-the-misbvalidator-bar](name-the-misbvalidator-bar.md)
 - [name-the-misbtype-bar](name-the-misbtype-bar.md)
