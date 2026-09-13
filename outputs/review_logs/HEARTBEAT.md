@@ -111,4 +111,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T06:50Z | jobs | P2-02 ~238min; P2-03 ~111min; P2-05/06/07 still running; next P2-14
 2026-09-13T06:52Z | P2-14 in_progress | C1 tick run started tmux p2-14-c1-tick; 2184 bars BTC/ETH/SOL; portfolio mixed-mode fix
 2026-09-13T06:52Z | jobs | P2-02 ~247min; P2-03 ~119min; P2-05/06/07 running
+2026-09-13T07:00Z | checkpoint 0700Z | ETH 1.25–1.75 done (-87.6%); 2.0x running; P2-02 ~257min; P2-14 ~10min
+2026-09-13T07:00Z | phase gate | P2 in_progress — skip P3-01 until P2 jobs complete
 ```
