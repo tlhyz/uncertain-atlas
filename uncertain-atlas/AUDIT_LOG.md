@@ -4445,6 +4445,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2123 | 中 | 怎样写 ExtendVote Usage 正式三事 / 怎样选空扩展 / 怎样写非确定逻辑 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2124 | 记录 | 会与 350 / 353 / 338 糊成「看见填了 ExtendVote Usage 就已经会调 ExtendVote」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经会调 ExtendVote / 已经不会叫 / 已经必须同一份扩展 标成另一对象 |
 
+| A2125 | 高 | 看见应用回 extension 后 CometBFT 会填进 CanonicalVoteExtension、填其它字段并签名 / 看见填进包装 会被写成已经按原样签，或当成已经广播 Precommit | 官方 When：sets ExtendVoteResponse.extension in CanonicalVoteExtension, populates other fields, signs |
+| A2126 | 高 | 看见会构造并签名 CanonicalVote / 看见有 CanonicalVote 会被写成已经验过扩展，或当成已经 Accept | 官方 When：constructs and signs the CanonicalVote structure |
+| A2127 | 高 | 看见用 CanonicalVoteExtension 和 CanonicalVote 构造 Precommit 并广播 / 看见广播了 会被写成已经写进 last_commit，或当成已经 Verify 过迟到扩展 | 官方 When：constructs the Precommit message using CanonicalVoteExtension and CanonicalVote; broadcasts |
+| A2128 | 中 | 怎样写 ExtendVote When 正式流程 / 怎样填 CanonicalVoteExtension / 怎样构造 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2129 | 记录 | 会与 358 / 361 / 34 糊成「看见 ExtendVote 回了 extension 就已经广播 Precommit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经按原样签 / 已经验过扩展 / 已经写进 last_commit 标成另一对象 |
+
 
 
 

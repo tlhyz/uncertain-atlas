@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-13（续 438）
+
+- CometBFT ExtendVote When 正式流程工作实例（官方 ABCI++ Methods ExtendVote When，实现 / ExtendVote When 正式流程，不另写 19 节）：看见应用回 extension 后 CometBFT 会填进 CanonicalVoteExtension、填其它字段并签名不是已经按原样签。看见会构造并签名 CanonicalVote 不是已经验过扩展。看见用 CanonicalVoteExtension 和 CanonicalVote 构造 Precommit 并广播不是已经写进 last_commit。ExtendVote When 正式流程不是不变量 358，也不是不变量 361，也不是不变量 34。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 438；语料 C442；模式 name-the-ext-when-formal；反模式 extwhenformal-sold-as-broadcast；L10.3 第 434 条。填 L4.4 / CometBFT 档案 ExtendVote When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendVote When 正式流程、怎样填 CanonicalVoteExtension、怎样构造 Precommit。不编博物馆页。不另写 19 节。不与 358 / 361 / 34 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经按原样签、已经验过扩展、已经写进 last_commit 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 437）
 
 - CometBFT ExtendVote Usage 正式三事工作实例（官方 ABCI++ Methods ExtendVote Usage / When，实现 / ExtendVote Usage 正式三事，不另写 19 节）：看见 ExtendVoteResponse.vote_extension 只会挂在非 nil Precommit 上、precommit nil 不会叫 ExtendVote 不是已经会调 ExtendVote。看见应用可以选 0 长扩展不是已经不会叫 ExtendVote。看见造扩展的应用逻辑可以非确定不是已经必须同一份扩展。ExtendVote Usage 正式三事不是不变量 350，也不是不变量 353，也不是不变量 338。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
