@@ -194,3 +194,13 @@ def test_rank_soxl_snxx_weights_sweep():
     assert len(rows) == 3
     assert {r["soxl_weight"] for r in rows} == {0.75, 0.70, 0.65}
     assert all("total_return" in r for r in rows)
+
+
+def test_rank_grid_mix_sweep():
+    from qtb.dual.experiments import rank_grid_mix
+
+    data = _mini_dataset(120)
+    rows = rank_grid_mix(data, mixes=("G100", "dynamic"), tick_precise=False)
+    assert len(rows) == 2
+    assert {r["grid_mix"] for r in rows} == {"G100", "dynamic"}
+    assert all("total_return" in r for r in rows)

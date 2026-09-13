@@ -289,4 +289,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T21:20Z | timer research-continue | **P3-03 directional DONE -58.70%**; grid 2/4
 2026-09-13T21:20Z | P3-07 prep | rank_soxl_snxx_weights + config + test
 2026-09-13T21:20Z | checkpoint 2120Z | pytest 138 pass
+2026-09-13T21:30Z | timer research-continue | P3-03 grid 2/4 running
+2026-09-13T21:30Z | P3-08 prep | rank_grid_mix + config + test
+2026-09-13T21:30Z | checkpoint 2130Z | pytest 139 pass
 ```

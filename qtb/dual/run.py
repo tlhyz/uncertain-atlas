@@ -20,6 +20,7 @@ from .experiments import (
     run_plans,
     run_seed_windows,
     run_stress_leverage,
+    rank_grid_mix,
     rank_leverage,
     rank_short_init,
     rank_drawdown_sets,
@@ -96,6 +97,7 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "run_drawdown_set_rank": False,
         "run_right_side_reserve_rank": False,
         "run_soxl_snxx_weight_rank": False,
+        "run_grid_mix_rank": False,
         "run_leverage_rank": True,
         "run_grid_atr_rank": True,
         "run_fill_modes": True,
@@ -193,6 +195,13 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
             soxl_weights=weights,
             fill_mode=str(cfg.get("fill_mode") or "base"),
             tick_precise=tick_precise,
+        )
+
+    if cfg.get("run_grid_mix_rank", False):
+        mixes = tuple(str(x) for x in (cfg.get("grid_mixes") or ["G100", "G75", "G50", "G25", "dynamic"]))
+        print(f"[run] grid mix rank {list(mixes)}...")
+        payload["grid_mix_rank"] = rank_grid_mix(
+            data, mixes=mixes, fill_mode=str(cfg.get("fill_mode") or "base"), tick_precise=tick_precise,
         )
 
     if cfg.get("run_leverage_rank", True):

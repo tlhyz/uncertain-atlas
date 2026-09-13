@@ -19,6 +19,7 @@ from .universe import (
     DualParams,
     GRID_ATR_RANGES,
     GRID_ATR_STEPS,
+    GRID_MIXES,
     STRESS_LEVERAGE,
     TECH_BOOK,
     default_sweep,
@@ -288,6 +289,36 @@ def rank_soxl_snxx_weights(
         m["snxx_weight"] = snw
         print(
             f"[run] soxl_snxx_weight {label} done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"calmar={float(m.get('calmar', 0)):.2f}"
+        )
+        rows.append(m)
+    rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
+    return rows
+
+
+def rank_grid_mix(
+    data: DualDataset,
+    *,
+    mixes: tuple[str, ...] = GRID_MIXES,
+    fill_mode: str = "base",
+    tick_precise: bool = False,
+) -> list[dict[str, Any]]:
+    """Sweep grid→directional mix presets (P3-08)."""
+    rows: list[dict[str, Any]] = []
+    for gm in mixes:
+        print(f"[run] grid_mix {gm}...")
+        tp = TechParams(grid_mix=gm)  # type: ignore[arg-type]
+        r = run_dual_portfolio(
+            data,
+            DualParams(tech=tp),
+            name=f"grid_mix_{gm}",
+            fill_mode=fill_mode,
+            tick_precise=tick_precise,
+        )
+        m = summarize_portfolio(r)
+        m["grid_mix"] = gm
+        print(
+            f"[run] grid_mix {gm} done return={100 * float(m.get('total_return', 0)):.2f}% "
             f"calmar={float(m.get('calmar', 0)):.2f}"
         )
         rows.append(m)

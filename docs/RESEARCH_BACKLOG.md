@@ -65,12 +65,12 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 |----|------|--------|-------------|
 | P3-01 | Re-run dual on Binance ticks (tick_precise) | **done** | FAIL reproduces P1-11 dual -58.70% — outputs/review_logs/2026-09-13_P3-01_dual_tick_FAIL.md |
 | P3-02 | Short init 10/15/20% sweep | **done** | FAIL 20% best return -58.70%; 10% worst -59.24%; Q-tech-2 partial — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
-| P3-03 | Short structure dir vs grid vs 70/30 | **in_progress** | 2/4 grid running; directional=-58.70% (≡ default); tmux p3-03-short-structures |
+| P3-03 | Short structure dir vs grid vs 70/30 | **in_progress** | 2/4 grid running; directional=-58.70%; tmux p3-03-short-structures |
 | P3-04 | Drawdown set A/B/C comparison | pending | config ready; queue after P3-03 |
-| P3-05 | Reversal R1–R5 no-lookahead tests | **done** | PASS R5 2-of-4 + causal tests — outputs/review_logs/2026-09-13_P3-05_reversal_no_leak_PASS.md |
+| P3-05 | Reversal R1–R5 no-lookahead tests | **done** | PASS — outputs/review_logs/2026-09-13_P3-05_reversal_no_leak_PASS.md |
 | P3-06 | Right-side reserve 25/30/35% | pending | config ready; queue after P3-04 |
-| P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | pending | config dual_binance_tick_soxl_snxx_weights.yaml ready; queue after P3-06 |
-| P3-08 | Grid→Trend stage mix sweep | pending | |
+| P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | pending | config ready; queue after P3-06 |
+| P3-08 | Grid→Trend stage mix sweep | pending | config dual_binance_tick_grid_mix.yaml ready; queue after P3-07 |
 | P3-09 | FAIL_F1 direct-up window | pending | |
 | P3-10 | FAIL_F2 no-recovery window | pending | |
 | P3-11 | Similar-window search top-20 real windows | pending | |
@@ -128,7 +128,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | done | 138 passed 2026-09-13T21:20Z |
+| M-01 | Run `pytest -q` | done | 139 passed 2026-09-13T21:30Z |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | done | C-05 65d + C-06 crypto grid FAIL |
 | M-03 | Append `review_logs/INDEX.md` | done | daily audit 0900Z |
 | M-04 | Check PR CI status | done | PR #8 no checks reported |
