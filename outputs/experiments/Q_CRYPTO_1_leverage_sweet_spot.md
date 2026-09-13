@@ -38,7 +38,7 @@ Does a leverage sweet spot exist in **1.25 / 1.5 / 1.75 / 2.0x** for BTC, ETH, S
 
 ### BTC — PENDING (P2-02)
 
-Scan running ~307 min (~5h); no `CRYPTO_REPORT.md` yet. Reassess at 6h.
+**Restart 08:40Z** after 5h57m stale run (zero level completions). Fresh scan on 1.25x ~40min at 0920Z (ETH ref ~43min/level). No `CRYPTO_REPORT.md` yet.
 
 ---
 

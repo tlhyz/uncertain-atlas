@@ -14,6 +14,14 @@ One line per review entry. Newest first.
 | 2026-09-13 | checkpoint 0810Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0810Z.md |
 | 2026-09-13 | checkpoint 0800Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0800Z.md |
 | 2026-09-13 | P2-03 ETH leverage | FAIL | outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL.md |
+| 2026-09-13 | checkpoint 0920Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0920Z.md |
+| 2026-09-13 | checkpoint 0910Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0910Z.md |
+| 2026-09-13 | checkpoint 0850Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0850Z.md |
+| 2026-09-13 | checkpoint 0840Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0840Z.md |
+| 2026-09-13 | checkpoint 0830Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0830Z.md |
+| 2026-09-13 | checkpoint 0820Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0820Z.md |
+| 2026-09-13 | checkpoint 0810Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0810Z.md |
+| 2026-09-13 | checkpoint 0800Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0800Z.md |
 | 2026-09-13 | checkpoint 0740Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0740Z.md |
 | 2026-09-13 | checkpoint 0730Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0730Z.md |
 | 2026-09-13 | checkpoint 0720Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0720Z.md |

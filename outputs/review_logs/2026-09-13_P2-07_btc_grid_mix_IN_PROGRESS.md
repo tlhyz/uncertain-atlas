@@ -47,6 +47,19 @@ SOL/ETH catastrophic returns — await full reports + liquidation counts before 
 
 ---
 
+## Interim results (0920Z)
+
+| Mix | Return | Calmar | Status |
+|-----|--------|--------|--------|
+| 80_20 | -87.35% | -17.18 | done |
+| 60_40 | -87.97% | -18.56 | done |
+| 50_50 | — | — | running ~35min |
+| 40_60 | — | — | pending |
+| 20_80 | — | — | pending |
+| dynamic | — | — | pending |
+
+**Pattern:** All completed mixes in ~-87% band — no mix rescues C1 crypto FSM. Expect FAIL verdict when scan completes.
+
 ## Next
 
-P2-02 CRYPTO_REPORT → mark done. P2-07 report when 6 mixes complete.
+P2-07 report when 6 mixes complete → mark **done** (likely FAIL).
