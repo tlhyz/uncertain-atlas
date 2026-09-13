@@ -426,6 +426,7 @@
 - [extvitable-sold-as-usage](extvitable-sold-as-usage.md)
 - [finreq-sold-as-procreq](finreq-sold-as-procreq.md)
 - [cinotes-sold-as-inblock](cinotes-sold-as-inblock.md)
+- [exectxevents-sold-as-header](exectxevents-sold-as-header.md)
 - [cifields-sold-as-notes](cifields-sold-as-notes.md)
 - [validatorusage-sold-as-samegate](validatorusage-sold-as-samegate.md)
 - [viusageavail-sold-as-samepath](viusageavail-sold-as-samepath.md)
