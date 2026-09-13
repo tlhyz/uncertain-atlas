@@ -326,6 +326,7 @@
 - [name-the-procfull-bar](name-the-procfull-bar.md)
 - [name-the-procht-bar](name-the-procht-bar.md)
 - [name-the-procreject-bar](name-the-procreject-bar.md)
+- [name-the-applysnapusage-bar](name-the-applysnapusage-bar.md)
 - [name-the-chktxtype-bar](name-the-chktxtype-bar.md)
 - [name-the-offersnaptrust-bar](name-the-offersnaptrust-bar.md)
 - [name-the-chktxlane-bar](name-the-chktxlane-bar.md)
