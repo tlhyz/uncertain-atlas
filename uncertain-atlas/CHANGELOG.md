@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 503）
+
+- CometBFT PrepareProposal Usage raw proposal / MUST remove 正式三事工作实例（官方 ABCI++ Methods PrepareProposal Usage preliminary txs called raw proposal / Application can modify this set / MAY configure txs exceeding max_tx_bytes / MUST remove if size > max_tx_bytes，实现 / PrepareProposal Usage raw proposal / MUST remove 正式三事，不另写 19 节）：看见 raw proposal / can modify this set 不是 Prepare 改列表 bundled（355） interchangeable / 已经只有 raw proposal interchangeable。看见 MAY configure exceeding 不是 Req 2 bundled（345） interchangeable / 已经能回超限列表 interchangeable。看见 MUST remove if > max_tx_bytes 不是引擎会帮你裁 interchangeable / 已经从内存池删掉 interchangeable。PrepareProposal Usage raw proposal / MUST remove 正式三事不是不变量 355，也不是不变量 345 / 423 / 453。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 503；语料 C507；模式 name-the-prepareusage-rawmust-bar；反模式 prepareusage-rawmust-sold-as-bundled；L10.3 第 499 条。填 L4.4 / CometBFT 档案 PrepareProposal Usage raw proposal / MUST remove 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做裁回包、怎样设 MaxBytes、怎样改 Prepare 列表。不编博物馆页。不另写 19 节。不与 355 / 345 / 423 / 453 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 Prepare 改列表 bundled interchangeable / Req 2 bundled interchangeable / 引擎会帮你裁 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 502）
 
 - CometBFT ApplySnapshotChunk Usage refetch/ban 正式二事工作实例（官方 ABCI++ Methods ApplySnapshotChunk Usage The application can choose to refetch chunks and/or ban P2P peers as appropriate / CometBFT will not do this unless instructed by the application，实现 / ApplySnapshotChunk Usage refetch/ban 正式二事，不另写 19 节）：看见 can choose refetch/ban 不是 refetch/ban bundled（378） interchangeable / 已经 RETRY interchangeable / 已经封邻居就交差。看见 will not do unless instructed 不是引擎自动 refetch interchangeable / 已经 unable retrieve 换快照 interchangeable / 已经齐。ApplySnapshotChunk Usage refetch/ban 正式二事不是不变量 378，也不是不变量 398 / 485 / 332 / 401。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
