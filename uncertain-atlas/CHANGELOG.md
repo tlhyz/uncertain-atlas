@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 474）
+
+- CometBFT FinalizeBlock Contains newly decided block fields 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage Contains the fields of the newly decided block / newly decided block vs proposed / fields of the newly decided block，实现 / FinalizeBlock Contains newly decided block fields 正式三事，不另写 19 节）：看见 Contains the fields of the newly decided block 不是已经是四门已经结算 / 已经跑过 Process。看见 newly decided block 不是 proposed block / ProcessProposal 含执行所需全部信息。看见 fields of the newly decided block 不是 height/time match header 就代表对象已经分清 / fill all fields 就代表 decided 和 proposed interchangeable。FinalizeBlock Contains newly decided block fields 正式三事不是不变量 461，也不是不变量 407，也不是不变量 473。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 474；语料 C478；模式 name-the-finnewdec-bar；反模式 finnewdec-sold-as-settled；L10.3 第 470 条。填 L4.4 / CometBFT 档案 FinalizeBlock Contains newly decided block fields 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 FinalizeBlockRequest 各栏。不编博物馆页。不另写 19 节。不与 461 / 407 / 453 / 462 / 473 / 465 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经是四门已经结算 / 已经是 Process 含全部信息 / height/time 对上就代表对象已经分清 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 473）
 
 - CometBFT FinalizeBlock fill all fields even if Prepare/Process passed 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage Currently / will fill up all fields in FinalizeBlockRequest / even if already passed via PrepareProposalRequest or ProcessProposalRequest，实现 / FinalizeBlock fill all fields even if Prepare/Process passed 正式三事，不另写 19 节）：看见 will fill up all fields 不是已经 Prepare / Process 给过就不用再 Finalize / 已经交差。看见 even if already passed 不是已经字段名对得上就代表已经跑过 Process / 已经是刚决定那块的字段。看见 all fields / 又填一遍 不是已经 decided 和 proposed 就可以混用。FinalizeBlock fill all fields even if Prepare/Process passed 正式三事不是不变量 360，也不是不变量 461，也不是不变量 359。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
