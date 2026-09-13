@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 490）
+
+- CometBFT CheckTx Usage Guardian 正式三事工作实例（官方 ABCI++ Methods CheckTx Usage Guardian of the mempool: every node runs `CheckTx` before letting a transaction into its local mempool，实现 / CheckTx Usage Guardian 正式三事，不另写 19 节）：看见 Guardian of the mempool / 内存池守卫 不是已经 Technically optional / 四门已经结算 / validate-no-apply bundled interchangeable。看见 every node runs CheckTx before letting into local mempool 不是已经流言 / Check 通过就是已进提案 / forever valid。看见 before letting into its local mempool 不是已经保证不重放 / tx source bundled / Code≠0 rejected bundled interchangeable。CheckTx Usage Guardian 正式三事不是不变量 373，也不是不变量 33，也不是不变量 488。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 490；语料 C494；模式 name-the-chktxguardusage-bar；反模式 chktxguardusage-sold-as-fourgates；L10.3 第 486 条。填 L4.4 / CometBFT 档案 CheckTx Usage Guardian 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做内存池守卫、怎样挑邻居、怎样写 CheckTx 重放谓词。不编博物馆页。不另写 19 节。不与 33 / 301 / 373 / 405 / 486 / 488 / 489 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。optional / 四门已经结算 / 已经保证不重放 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 489）
 
 - CometBFT CheckTx Usage Code≠0 rejected 正式三事工作实例（官方 ABCI++ Methods CheckTx Usage Transactions where CheckTxResponse.Code != 0 will be rejected … will not be broadcast … or included in a proposal block … CometBFT attributes no other value to the response code，实现 / CheckTx Usage Code≠0 rejected 正式三事，不另写 19 节）：看见 Code≠0 会拒 / 不会广播 不是已经流言 / CheckTx 守卫 bundled interchangeable。看见不会进提案块 不是 Check 通过就是已进提案 / forever valid / Finalize Code≠0 仍在块里。看见 CometBFT attributes no other value 不是 CheckTx Data 已被引擎用了 / optional bundled / validate-no-apply bundled interchangeable。CheckTx Usage Code≠0 rejected 正式三事不是不变量 33，也不是不变量 373，也不是不变量 486。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

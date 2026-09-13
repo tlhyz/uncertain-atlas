@@ -327,6 +327,7 @@
 - [name-the-procht-bar](name-the-procht-bar.md)
 - [name-the-procreject-bar](name-the-procreject-bar.md)
 - [name-the-applysnapusage-bar](name-the-applysnapusage-bar.md)
+- [name-the-chktxguardusage-bar](name-the-chktxguardusage-bar.md)
 - [name-the-chktxcodereject-bar](name-the-chktxcodereject-bar.md)
 - [name-the-chktxsource-bar](name-the-chktxsource-bar.md)
 - [name-the-queryusage-bar](name-the-queryusage-bar.md)

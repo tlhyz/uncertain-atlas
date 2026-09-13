@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2385 | 高 | 看见 Guardian of the mempool / 看见内存池守卫 会被写成已经 Technically optional / 可以不跑 CheckTx，或当成已经四门已经结算 / validate-no-apply bundled 第三件事 interchangeable | 官方 CheckTx Usage：Guardian of the mempool |
+| A2386 | 高 | 看见 every node runs CheckTx before letting a transaction into its local mempool / 看见每条节点先跑 CheckTx 才让进本地池 会被写成已经 RPC broadcast 别的节点也会跑 / 已经进了池就开始流言，或当成已经 Check 通过就是已进提案 / CheckTx 过了就 forever valid | 官方 CheckTx Usage：every node runs `CheckTx` before letting a transaction into its local mempool |
+| A2387 | 高 | 看见 before letting a transaction into its local mempool / 看见才让进本地池 会被写成已经 may come from external user or another node 交差 / 已经保证不重放，或当成已经 CheckTx Usage Code≠0 rejected bundled interchangeable | 官方 CheckTx Usage：… before letting a transaction into its local mempool |
+| A2388 | 中 | 怎样做内存池守卫 / 怎样挑邻居 / 怎样写 CheckTx 重放谓词 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2389 | 记录 | 会与 33 / 301 / 373 / 405 / 486 / 488 / 489 糊成「看见每条节点先跑 CheckTx 就已经是 optional、已经四门已经结算、已经保证不重放」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx Usage Guardian 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。optional / 四门已经结算 / 已经保证不重放 标成另一对象 |
+
 | A2380 | 高 | 看见 Transactions where CheckTxResponse.Code != 0 will be rejected / 看见 Code≠0 会拒 会被写成已经没进块 / 已经不会广播，或当成已经 CheckTx 守卫 bundled interchangeable / 已经 RPC broadcast 别的节点也收不到 | 官方 CheckTx Usage：Transactions where CheckTxResponse.Code != 0 will be rejected - they will not be broadcast to other nodes |
 | A2381 | 高 | 看见 will not be broadcast to other nodes / or included in a proposal block / 看见不会进提案块 会被写成已经 Check 通过就是已进提案，或当成已经 CheckTx 过了就 forever valid / 已经像 Finalize Code≠0 那样没进块 | 官方 CheckTx Usage：… will not be broadcast to other nodes or included in a proposal block |
 | A2382 | 高 | 看见 CometBFT attributes no other value to the response code / 看见引擎对回包码不再赋予别的含义 会被写成已经 CheckTx Data 被引擎用了，或当成已经是 optional bundled 第二句 / validate-no-apply bundled 第三件事 interchangeable | 官方 CheckTx Usage：CometBFT attributes no other value to the response code |
