@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 486）
+
+- CometBFT CheckTx Usage validate-no-apply 正式三事工作实例（官方 ABCI++ Methods CheckTx Usage validates against current state / does not apply state changes / Technically optional + Code≠0 rejected，实现 / CheckTx Usage validate-no-apply 正式三事，不另写 19 节）：看见 validates against current state 不是 ExecuteTxState / 将要执行的那份状态。看见 does not apply state changes 不是已经改了状态 / Finalize interchangeable。看见 Technically optional / Code≠0 拒绝 不是四门已经结算 / CheckTx 过了就永远有效。CheckTx Usage validate-no-apply 正式三事不是不变量 312，也不是不变量 391，也不是不变量 373。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 486；语料 C490；模式 name-the-chktxvalidate-bar；反模式 chktxvalidate-sold-as-applied；L10.3 第 482 条。填 L4.4 / CometBFT 档案 CheckTx Usage validate-no-apply 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做验签、怎样维护 CheckTxState。不编博物馆页。不另写 19 节。不与 312 / 391 / 373 / 408 / 301 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。ExecuteTxState 验过 / 已经改了状态 / 已经交差 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 485）
 
 - CometBFT ApplySnapshotChunk Usage verify/Info/unable 正式三事工作实例（官方 ABCI++ Methods ApplySnapshotChunk Usage verify each chunk / all chunks accepted 后 Info 核对 LastBlockAppHash/Height + AppVersion 并切 sync/consensus / unable to retrieve next chunk 时 reject via OfferSnapshot 且应用 reset accept or abort，实现 / ApplySnapshotChunk Usage verify/Info/unable 正式三事，不另写 19 节）：看见 verify each chunk 不是 Only AppHash 可信任就交差 / 332 incremental interchangeable。看见 all chunks accepted 后 Info 不是装块时就 Info 对了 / Transition interchangeable。看见 unable to retrieve next chunk 不是 refetch 就齐 / REJECT_SNAPSHOT 回包 interchangeable。ApplySnapshotChunk Usage verify/Info/unable 正式三事不是不变量 378，也不是不变量 332，也不是不变量 323。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
