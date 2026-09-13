@@ -4433,6 +4433,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2113 | 中 | 怎样写 Verify When 正式流程 / 怎样验伴随签名 / 怎样攒下一高 Prepare 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2114 | 记录 | 会与 353 / 409 / 352 糊成「看见收到 Precommit 就已经验过扩展」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经跳过 Verify / 已经验过扩展 / 已经写进 last_commit 标成另一对象 |
 
+| A2115 | 高 | 看见 VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 / 看见填了 validator_address 会被写成已经带了公钥，或当成已经是 ExtendVoteRequest.proposer_address 那种造提案的人 | 官方表：validator_address is Address of the validator that signed the vote extension |
+| A2116 | 高 | 看见 VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 / 看见能空 会被写成已经是 vote_extension，或当成已经跳过 Verify | 官方表 / Usage：non_rp_vote_extension is Application-specific information, signed by CometBFT, can be 0 length; optional |
+| A2117 | 高 | 看见 non_rp 相对 vote_extension 签名时不加额外元信息 / 看见 CometBFT 按原样签 会被写成已经有 Height / Round / ChainID 包装，或当成已经 non_rp_extension 按应用给的字节原样签那种已经有重放保护 | 官方 Usage：CometBFT signs exactly as provided; no additional metadata relative to vote_extension |
+| A2118 | 中 | 怎样写 Verify 请求栏 / 怎样填 validator_address / 怎样填 non_rp 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2119 | 记录 | 会与 364 / 415 / 413 糊成「看见填了 Verify 请求栏就已经带了公钥」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经带了公钥 / 已经是 vote_extension / 已经按原样签 标成另一对象 |
+
 
 
 

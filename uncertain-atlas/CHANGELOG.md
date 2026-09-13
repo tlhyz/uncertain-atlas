@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-13（续 436）
+
+- CometBFT Verify 请求栏工作实例（官方 ABCI++ Methods VerifyVoteExtension Request / Usage，实现 / Verify 请求栏，不另写 19 节）：看见 VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址不是已经带了公钥。看见 VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长不是已经是 vote_extension。看见 non_rp 相对 vote_extension 签名时不加额外元信息不是已经按原样签。Verify 请求栏不是不变量 364，也不是不变量 415，也不是不变量 413。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 436；语料 C440；模式 name-the-verify-req-bar；反模式 verifyreqbar-sold-as-pubkey；L10.3 第 432 条。填 L4.4 / CometBFT 档案 Verify 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Verify 请求栏、怎样填 validator_address、怎样填 non_rp。不编博物馆页。不另写 19 节。不与 364 / 415 / 413 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经带了公钥、已经是 vote_extension、已经按原样签 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 435）
 
 - CometBFT Verify When 正式流程工作实例（官方 ABCI++ Methods VerifyVoteExtension When，实现 / Verify When 正式流程，不另写 19 节）：看见 Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify 不是已经跳过 Verify。看见带有效签就会调 VerifyVoteExtension 不是已经验过扩展。看见 ACCEPT 会把票和扩展留给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo、REJECT 会把 Precommit 当非法丢掉 不是已经写进 last_commit。Verify When 正式流程不是不变量 353，也不是不变量 409，也不是不变量 352。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

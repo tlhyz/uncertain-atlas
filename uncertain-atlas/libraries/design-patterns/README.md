@@ -320,6 +320,7 @@
 - [name-the-proc-req-rest](name-the-proc-req-rest.md)
 - [name-the-ext-vi-table](name-the-ext-vi-table.md)
 - [name-the-fin-req](name-the-fin-req.md)
+- [name-the-verify-req-bar](name-the-verify-req-bar.md)
 - [name-the-verify-formal-when](name-the-verify-formal-when.md)
 - [name-the-verify-status](name-the-verify-status.md)
 - [name-the-verify-resp-status](name-the-verify-resp-status.md)
