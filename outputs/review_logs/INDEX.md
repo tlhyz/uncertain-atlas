@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P1-01/P1-11 restart | IN_PROGRESS | outputs/review_logs/2026-09-13_P1-01_P1-11_infra_restart_IN_PROGRESS.md |
 | 2026-09-13 | TASK-0012 dual_report | PASS | outputs/review_logs/2026-09-13_TASK-0012_dual_report_fix_PASS.md |
 | 2026-09-13 | P1-10 gate_download | PASS | outputs/review_logs/2026-09-13_P1-10_gate_download_smoke_PASS.md |
 | 2026-09-13 | TASK-0010 no_future_leak | PASS | outputs/review_logs/2026-09-13_TASK-0010_no_future_leak_PASS.md |

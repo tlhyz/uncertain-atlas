@@ -86,6 +86,11 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "tick_precise": True,
         "skip_data_quality": False,
         "data_quality_config": "configs/data_quality.yaml",
+        "run_independent_vs_unified": True,
+        "run_short_structures": True,
+        "run_leverage_rank": True,
+        "run_grid_atr_rank": True,
+        "run_fill_modes": True,
     }
     if path:
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
@@ -143,19 +148,24 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         print("[run] three plans...")
         payload["plans"] = run_plans(data, tick_precise=tick_precise)
 
-    print("[run] independent vs unified...")
-    payload["independent_vs_unified"] = compare_independent_vs_unified(data, tick_precise=tick_precise)
+    if cfg.get("run_independent_vs_unified", True):
+        print("[run] independent vs unified...")
+        payload["independent_vs_unified"] = compare_independent_vs_unified(data, tick_precise=tick_precise)
 
-    print("[run] short structure rank...")
-    payload["short_structures"] = rank_short_structures(data, tick_precise=tick_precise)
+    if cfg.get("run_short_structures", True):
+        print("[run] short structure rank...")
+        payload["short_structures"] = rank_short_structures(data, tick_precise=tick_precise)
 
-    print("[run] leverage rank...")
-    payload["leverage_rank"] = rank_leverage(data, tick_precise=tick_precise)
+    if cfg.get("run_leverage_rank", True):
+        print("[run] leverage rank...")
+        payload["leverage_rank"] = rank_leverage(data, tick_precise=tick_precise)
 
-    print("[run] grid ATR rank...")
-    payload["grid_atr_rank"] = rank_grid_atr(data, tick_precise=tick_precise)
+    if cfg.get("run_grid_atr_rank", True):
+        print("[run] grid ATR rank...")
+        payload["grid_atr_rank"] = rank_grid_atr(data, tick_precise=tick_precise)
 
-    payload["fill_modes"] = run_fill_modes(data, tick_precise=tick_precise)
+    if cfg.get("run_fill_modes", True):
+        payload["fill_modes"] = run_fill_modes(data, tick_precise=tick_precise)
 
     if cfg.get("run_stress", True):
         print("[run] 3x stress...")
