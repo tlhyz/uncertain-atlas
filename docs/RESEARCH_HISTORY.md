@@ -1,5 +1,8 @@
 # Research History
 
+> **Superseded by [`RESEARCH_LEDGER.md`](RESEARCH_LEDGER.md)** — primary SSOT for evidence classification.  
+> This file retained for backward compatibility and README links.
+
 Evidence classification used throughout this repo:
 
 | Label | Meaning |

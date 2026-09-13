@@ -9,7 +9,9 @@
 | Question | Document |
 |----------|----------|
 | Market thesis (Tech vs Crypto books) | [`docs/THESIS.md`](docs/THESIS.md) |
-| What already failed / proven | [`docs/RESEARCH_HISTORY.md`](docs/RESEARCH_HISTORY.md) |
+| What already failed / proven | [`docs/RESEARCH_LEDGER.md`](docs/RESEARCH_LEDGER.md) |
+| Research roadmap & tasks | [`ROADMAP.md`](ROADMAP.md) · [`TASKS.md`](TASKS.md) |
+| Gap analysis & audit | [`GAP_ANALYSIS.md`](GAP_ANALYSIS.md) · [`REPO_AUDIT.md`](REPO_AUDIT.md) |
 | Data rules (no synthetic ticks) | [`docs/DATA_POLICY.md`](docs/DATA_POLICY.md) |
 | Review / optimize / log rules | [`docs/REVIEW_AND_OPTIMIZATION.md`](docs/REVIEW_AND_OPTIMIZATION.md) |
 | **总目标 & 小目标 backlog** | [`docs/RESEARCH_GOALS.md`](docs/RESEARCH_GOALS.md) · [`docs/RESEARCH_BACKLOG.md`](docs/RESEARCH_BACKLOG.md) |
@@ -17,6 +19,8 @@
 | How to run next experiment | [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) |
 | AI / Cursor handoff | [`docs/CURSOR_HANDOFF.md`](docs/CURSOR_HANDOFF.md) |
 | Refactor status | [`REPO_REFACTOR_REPORT.md`](REPO_REFACTOR_REPORT.md) |
+| Phase 1 self-audit | [`PHASE1_SELF_AUDIT.md`](PHASE1_SELF_AUDIT.md) |
+| Next experiments (info gain) | [`NEXT_EXPERIMENTS.md`](NEXT_EXPERIMENTS.md) |
 
 ## Research timeline
 

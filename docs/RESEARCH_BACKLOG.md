@@ -14,6 +14,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P0-02 | pytest green on main after merge | pending | |
 | P0-03 | README links all docs | done | refactor delivery |
 | P0-04 | Review-log policy in `.cursor/rules` | done | review-optimize-log.mdc |
+| P0-05 | Phase 1 audit deliverables | done | REPO_AUDIT, GAP_ANALYSIS, ROADMAP, TASKS, LEDGER, PHASE1_SELF_AUDIT |
+| P0-06 | Phase 1.5 infra gates (DATA_QUALITY, accounting, leak tests) | pending | TASK-0008..0012 |
 
 ---
 
@@ -31,7 +33,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-08 | Cross-check tick OHLCV vs kline (SNXX) | done | lazy validation passed |
 | P1-09 | Document data gaps in manifest notes | done | Sep-12 empty; ETH/SOL noted |
 | P1-10 | Gate download script smoke test BTC_USDT | pending | |
-| P1-11 | Full 65d Binance tick backtest SOXL/SNXX | pending | 7d smoke FAIL logged |
+| P1-11 | Full 65d Binance tick backtest SOXL/SNXX | in_progress | started by timer 2026-09-13 |
 
 ---
 

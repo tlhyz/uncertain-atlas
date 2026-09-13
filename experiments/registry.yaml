@@ -1,0 +1,139 @@
+# Experiment Registry — gate-grid-martingale
+# All runs must be reproducible from: git commit + config + data manifest + fill mode.
+# Verdict classes: CONFIRMED | STRONG_EVIDENCE | WEAK_EVIDENCE | FAILED | UNTESTED | INVALIDATED
+
+schema_version: 1
+updated_at: "2026-09-13T00:40:00Z"
+updated_by: "phase1-audit"
+
+experiments:
+  - id: EXP-001
+    title: Gate 3L ETF Spot Grid (SL / Niulai phase)
+    date: "2026-09-11"
+    git_commit: "5e036069"
+    branch: cursor/gate-etf-deals-soxl-snxx-74a0
+    pr: "#4"
+    data_version: gate_real_etf_1h
+    config: configs/backtest_*.yaml (legacy)
+    fill_modes: [base, conservative]
+    precision: BAR BACKTEST
+    result_summary: "Grid realized profit < inventory + directional loss"
+    verdict: FAILED
+    reviewer_verdict: FAILED
+    evidence_class: CONFIRMED
+    artifacts:
+      - outputs/research_sl_phase/README.md
+      - outputs/demo_niulai_aggressive_sl50/
+    ledger_ref: LEDGER-001
+
+  - id: EXP-002
+    title: ETF vs Perpetual A/B (Gate real overlap)
+    date: "2026-09-12"
+    git_commit: "84a16918"
+    branch: cursor/etf-vs-perp-ab-cbaf
+    pr: "#6"
+    data_version: gate_public_1h_overlap
+    config: configs/ab_etf_vs_perp.yaml
+    fill_modes: [base, conservative]
+    precision: BAR BACKTEST
+    result_summary: "Majors PERP 1.5-2x wins; 3x liq on SOL/PENGU/PUMP; rebate not alpha"
+    verdict: STRONG_EVIDENCE
+    reviewer_verdict: STRONG_EVIDENCE
+    evidence_class: STRONG_EVIDENCE
+    artifacts:
+      - outputs/ab_etf_vs_perp/AB_REPORT.md
+      - outputs/ab_etf_vs_perp/ab_results.json
+    ledger_ref: LEDGER-002
+
+  - id: EXP-003
+    title: Dual-Engine Tech Short→Grid→Trend (Gate bar overlap)
+    date: "2026-09-12"
+    git_commit: "5c0cbf72"
+    branch: cursor/dual-engine-perp-cbaf
+    pr: "#7"
+    data_version: gate_perp_1h_2026-07-14_to_2026-09-12
+    config: configs/dual_engine_perp.yaml
+    fill_modes: [base, conservative]
+    precision: BAR BACKTEST
+    result_summary: "Dual -51.05% vs B&H -30.07%; Short→Long FAIL"
+    verdict: FAILED
+    reviewer_verdict: FAILED
+    evidence_class: STRONG_EVIDENCE
+    artifacts:
+      - outputs/dual_engine_perp/DUAL_REPORT.md
+      - outputs/dual_engine_perp/dual_results.json
+    ledger_ref: LEDGER-003
+
+  - id: EXP-004
+    title: Dual-Engine Binance tick-precise 7d smoke
+    date: "2026-09-13"
+    git_commit: "0dc777f8"
+    branch: cursor/unified-tech-crypto-framework-cbaf
+    pr: "#8"
+    data_version: binance_aggTrades_2026-09-05_to_2026-09-11
+    config: configs/experiments/dual_binance_tick_7d.yaml
+    fill_modes: [base]
+    precision: TICK BACKTEST
+    result_summary: "Dual -77.82% vs B&H +1.03%; Short→Long FAIL reinforced"
+    verdict: FAILED
+    reviewer_verdict: FAILED
+    evidence_class: STRONG_EVIDENCE
+    artifacts:
+      - outputs/dual_engine_perp_binance_ticks/DUAL_REPORT.md
+      - outputs/review_logs/2026-09-13_P1_tick_validation_PASS_7d_smoke_FAIL.md
+    ledger_ref: LEDGER-003-B
+
+  - id: EXP-005
+    title: Dual-Engine Binance tick-precise 65d full window
+    date: "2026-09-13"
+    git_commit: pending
+    branch: cursor/unified-tech-crypto-framework-cbaf
+    pr: "#8"
+    data_version: binance_aggTrades_2026-07-09_to_2026-09-11
+    config: configs/experiments/dual_binance_tick_65d.yaml
+    fill_modes: [base, conservative]
+    precision: TICK BACKTEST
+    result_summary: IN_PROGRESS (started pre-Phase-1; not blocking Phase 1 audit)
+    verdict: UNTESTED
+    reviewer_verdict: UNTESTED
+    evidence_class: UNTESTED
+    artifacts:
+      - outputs/dual_engine_perp_binance_ticks_65d/provenance.json
+    ledger_ref: LEDGER-003-C
+
+  - id: EXP-006
+    title: Crypto Independent Regime Book
+    date: null
+    git_commit: null
+    data_version: null
+    config: configs/experiments/crypto_regime.yaml
+    fill_modes: []
+    precision: null
+    result_summary: "Partial +2.3% Δreturn one Gate window — not replicated on Binance ticks"
+    verdict: UNTESTED
+    reviewer_verdict: UNTESTED
+    evidence_class: WEAK_EVIDENCE
+    artifacts: []
+    ledger_ref: LEDGER-004
+
+  - id: EXP-007
+    title: Cross-Market Independent vs Unified FSM
+    date: null
+    git_commit: null
+    config: configs/experiments/cross_market.yaml
+    verdict: UNTESTED
+    reviewer_verdict: UNTESTED
+    evidence_class: UNTESTED
+    artifacts: []
+    ledger_ref: LEDGER-005
+
+  - id: EXP-008
+    title: Gate OOS Fill Calibration
+    date: null
+    git_commit: null
+    config: configs/experiments/gate_calibration.yaml
+    verdict: UNTESTED
+    reviewer_verdict: UNTESTED
+    evidence_class: UNTESTED
+    artifacts: []
+    ledger_ref: LEDGER-006

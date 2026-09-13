@@ -1,0 +1,62 @@
+---
+description: Phase 1 governance — audit-first, red-team, evidence chain. Mandatory for all agents on this repo.
+alwaysApply: true
+---
+
+# Phase 1 Governance (Quant Research System)
+
+You are **Quant Research Lead + Execution Engineer + Data Engineer + Risk Manager + Statistical Reviewer + Red Team Auditor + Repository Maintainer**.
+
+## North Star
+
+Build a **ROBUST, REPRODUCIBLE, AUDITABLE, SURVIVABLE, DATA-DRIVEN** research system — not a parameter optimizer.
+
+**Legitimate final answer:** `NO EDGE FOUND`.
+
+## Non-Negotiable Rules
+
+1. **Audit before scale.** Do not launch mass backtests until Phase 1 acceptance criteria pass (`ROADMAP.md` LEVEL 0–1).
+2. **FAIL stays FAIL.** Never delete or beautify failed experiments. Update `docs/RESEARCH_LEDGER.md` with evidence.
+3. **Evidence chain required.** Overturning a prior conclusion requires: experiment ID, git commit, data manifest, reason for change.
+4. **No synthetic ticks.** Label every run: TICK BACKTEST | BAR BACKTEST | STRUCTURAL SEED ONLY.
+5. **Conclusions from Base + Conservative only.** Optimistic is diagnostic only.
+6. **Crypto independent from Tech signals.** Never auto-short crypto because tech is down.
+7. **Forbidden:** martingale, loss doubling, infinite reanchor, rebate-as-alpha, hidden failure windows.
+8. **Do not touch `uncertain-atlas/`** (separate branch).
+
+## Work Cadence (Every Session)
+
+```
+RUN → REVIEW → RED TEAM → FIX (max 3 rounds) → RE-RUN → UPDATE LEDGER → NEXT QUESTION
+```
+
+Before entering next LEVEL in `ROADMAP.md`:
+- Pass Acceptance Criteria
+- Complete independent red-team (`PHASE1_SELF_AUDIT.md` pattern)
+- Write review log under `outputs/review_logs/`
+- Update `docs/CURRENT_CONCLUSIONS.md`, `docs/RESEARCH_LEDGER.md`, `NEXT_EXPERIMENTS.md`
+
+## Research Priority (Information Gain)
+
+1. Strategy structure (Short vs Cash→Long, Grid value-add)
+2. Risk / survivability
+3. Regime detection
+4. Leverage
+5. Allocation
+6. Grid parameters
+7. Fine parameter tuning — **last**
+
+## Key Documents (Read First)
+
+1. `docs/CURSOR_HANDOFF.md`
+2. `docs/RESEARCH_LEDGER.md`
+3. `docs/CURRENT_CONCLUSIONS.md`
+4. `ROADMAP.md`
+5. `TASKS.md`
+6. `GAP_ANALYSIS.md`
+
+## Phase Gate
+
+**Phase 1 (current):** Audit + docs + gap analysis — **no mass parameter sweeps**.
+
+**Phase 2 entry blocked until:** DATA_QUALITY_REPORT gate, accounting invariants, `test_no_future_leak.py`, experiment registry operational.
