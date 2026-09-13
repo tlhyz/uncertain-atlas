@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 509）
+
+- CometBFT ExtendVote When return extension 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 3 Application returns ExtendVoteResponse.extension / not interpreted by the consensus algorithm / step 3 after synchronous call before CanonicalVoteExtension，实现 / ExtendVote When return extension 正式三事，不另写 19 节）：看见 returns ExtendVoteResponse.extension 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经填进 CanonicalVoteExtension interchangeable。看见 not interpreted by consensus 不是已经是同一份扩展 interchangeable / 已经 Verify 过 interchangeable。看见 step 3 before CanonicalVoteExtension 不是 ExtendVote 何时调用 bundled（361） interchangeable / 已经按原样签 interchangeable。ExtendVote When return extension 正式三事不是不变量 508，也不是不变量 361 / 438 / 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 509；语料 C513；模式 name-the-extwhen-return-bar；反模式 extwhen-return-sold-as-bundled；L10.3 第 505 条。填 L4.4 / CometBFT 档案 ExtendVote When return extension 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做写扩展、怎样填 CanonicalVoteExtension、怎样验扩展。不编博物馆页。不另写 19 节。不与 508 / 361 / 438 / 358 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 ExtendVote 何时调用 bundled interchangeable / ExtendVote When 正式流程 bundled interchangeable / 按原样签 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 508）
 
 - CometBFT ExtendVote When call / synchronous 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 2 calls ExtendVote with v in ExtendVoteRequest / The call is synchronous / step 2 after lock values before return extension bytes，实现 / ExtendVote When call / synchronous 正式三事，不另写 19 节）：看见 calls ExtendVote with v 不是 lock values bundled（507） interchangeable / 已经 step 1 before call interchangeable。看见 The call is synchronous 不是 ExtendVote 何时调用 bundled（361） interchangeable / 已经能在返回后再改扩展 interchangeable。看见 step 2 before return extension 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经广播 Precommit interchangeable。ExtendVote When call / synchronous 正式三事不是不变量 507，也不是不变量 361 / 438 / 409。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
