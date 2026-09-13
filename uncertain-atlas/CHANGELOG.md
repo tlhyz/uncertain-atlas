@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 446）
+
+- CometBFT ExecTxResult events 栏正式三事工作实例（官方 ABCI++ Methods ExecTxResult Fields，实现 / ExecTxResult events 栏正式三事，不另写 19 节）：看见 ExecTxResult.events 是给交易建索引的类型键值事件不是已经印进本头 / 已经像 Code/Data 那样必须确定。看见 ExecTxResult.events 标成非确定不是已经 Code / Data 编进结构再哈希进下一高度块头那种已经交差。看见 ExecTxResult.events 在 tx_results 里逐笔出现不是已经是 FinalizeBlockResponse.events / CheckTxResponse.events。ExecTxResult events 栏正式三事不是不变量 316，也不是不变量 431，也不是不变量 381。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 446；语料 C450；模式 name-the-exectx-events-bar；反模式 exectxevents-sold-as-header；L10.3 第 442 条。填 L4.4 / CometBFT 档案 ExecTxResult events 栏正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExecTxResult events 栏、怎样填 events、怎样建索引。不编博物馆页。不另写 19 节。不与 316 / 431 / 381 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经印进本头、已经像 Code/Data 那样必须确定、已经是块级或池门 events 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 445）
 
 - CometBFT CommitInfo Fields 栏正式三事工作实例（官方 ABCI++ Methods Data Types CommitInfo Fields，实现 / CommitInfo Fields 栏正式三事，不另写 19 节）：看见 CommitInfo.round 是提交轮不是已经按投票权排过 / 已经罚没。看见 CommitInfo.votes 是上一验证者集合里各人的投票信息不是已经进了块 / 已经交差。看见 Fields 栏描述 round 和 votes 不是已经是 CommitInfo Notes 那套票序话就已经是同一句。CommitInfo Fields 栏正式三事不是不变量 392，也不是不变量 444，也不是不变量 365。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
