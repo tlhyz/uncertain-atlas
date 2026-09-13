@@ -42,11 +42,11 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P2-01 | Enable `crypto_regime.yaml` runner | **done** | qtb/dual/crypto_run.py + qtb.cli crypto; outputs/review_logs/2026-09-13_P2-01_crypto_regime_runner_PASS.md |
-| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | ~157 min (~2h37m); CRYPTO_REPORT pending — checkpoint 0520Z |
-| P2-03 | ETH leverage scan | **in_progress** | 1.25x ~29min |
-| P2-04 | SOL leverage scan | **in_progress** | 1.25x/1.5x interim -88.01%; 1.75x running |
-| P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~9min grid scan running |
-| P2-06 | Grid range ±3/5/7 ATR sweep | pending | config ready: crypto_btc_grid_atr_range.yaml |
+| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | ~167 min (~2h47m); CRYPTO_REPORT pending — checkpoint 0530Z |
+| P2-03 | ETH leverage scan | **in_progress** | 1.25x ~39min (ETH tick cache larger) |
+| P2-04 | SOL leverage scan | **in_progress** | 1.25x/1.5x -88.01%; 1.75x running |
+| P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~19min grid scan |
+| P2-06 | Grid range ±3/5/7 ATR sweep | **in_progress** | started 05:30Z tmux p2-06-btc-grid-range — outputs/review_logs/2026-09-13_P2-06_btc_grid_range_IN_PROGRESS.md |
 | P2-07 | Grid→Trend mix 80/20→20/80 | pending | |
 | P2-08 | High-vol range regime auto-label sample | pending | |
 | P2-09 | Bull trend sell-the-winner check | pending | |
