@@ -22,8 +22,6 @@ Window: 65d Binance tick overlap (1546 bars), Base fill.
 
 | Level | Return | Calmar | Status |
 |-------|--------|--------|--------|
-| 10% | **-59.24%** | -1.86 | done |
-| 15% | — | — | running |
-| 20% | — | — | pending |
-
-10% worse than default 20% (-58.70%) — lower short does not help.
+| 10% | -59.24% | -1.86 | done |
+| **15%** | **-58.97%** | -1.87 | done |
+| 20% | — | — | running |
