@@ -76,4 +76,9 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T05:10Z | P1-11 running | ~208min (~3h28m); DUAL_REPORT pending
 2026-09-13T05:10Z | P2-02 running | ~147min (~2h27m); still no CRYPTO_REPORT
 2026-09-13T05:10Z | P2-03 running | ETH 1.25x ~19min
+2026-09-13T05:20Z | timer research-continue | pytest 126 pass
+2026-09-13T05:17Z | P1-11 done | FAIL dual -58.70% vs B&H -33.49% on 1546 tick bars
+2026-09-13T05:20Z | P1 phase | complete (P1-01..P1-11 all done/blocked)
+2026-09-13T05:20Z | P2-06 prep | crypto_btc_grid_atr_range.yaml ready
+2026-09-13T05:20Z | P2-02 running | ~157min; P2-04 SOL 1.75x; P2-05 grid ~9min
 ```
