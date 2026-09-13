@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | checkpoint 2350Z timer | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2350Z_timer.md |
+| 2026-09-13 | P3-06 right-side reserve | IN_PROGRESS | outputs/review_logs/2026-09-13_P3-06_right_side_reserve_IN_PROGRESS.md |
 | 2026-09-13 | checkpoint 2340Z timer | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2340Z_timer.md |
 | 2026-09-13 | P3-04 drawdown sets | FAIL | outputs/review_logs/2026-09-13_P3-04_drawdown_sets_FAIL.md |
 | 2026-09-13 | checkpoint 2330Z timer | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2330Z_timer.md |
