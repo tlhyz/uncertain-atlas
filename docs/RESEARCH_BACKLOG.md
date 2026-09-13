@@ -47,7 +47,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P2-04 | SOL leverage scan | **done** | FAIL all lev -88.01%; crypto_max_dd=100% — outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md |
 | P2-05 | Grid ATR step 0.30–0.60 sweep | **done** | FAIL all ~-87%; 0.40 worst Calmar; W-02 not supported — outputs/review_logs/2026-09-13_P2-05_btc_grid_atr_FAIL.md |
 | P2-06 | Grid range ±3/5/7 ATR sweep | **done** | FAIL all ~-87%; ±3 Calmar best but inert — outputs/review_logs/2026-09-13_P2-06_btc_grid_range_FAIL.md |
-| P2-07 | Grid→Trend mix 80/20→20/80 | **in_progress** | 5/6 done; dynamic ~100min ETA ~16:00Z — outputs/review_logs/2026-09-13_P2-07_btc_grid_mix_IN_PROGRESS.md |
+| P2-07 | Grid→Trend mix 80/20→20/80 | **done** | FAIL all ~-87 to -89%; dynamic≡80_20 — outputs/review_logs/2026-09-13_P2-07_btc_grid_mix_FAIL.md |
 | P2-08 | High-vol range regime auto-label sample | **done** | C1 mostly RANGE_LOW_VOL; SOL 3 HV bars — outputs/review_logs/2026-09-13_P2-08_regime_label_sample_PASS.md |
 | P2-09 | Bull trend sell-the-winner check | **done** | CONDITIONAL PASS structural; C1 0 BULL bars — outputs/review_logs/2026-09-13_P2-09_bull_sell_winner_CONDITIONAL_PASS.md |
 | P2-10 | Answer Q-crypto-1 (leverage sweet spot) | **done** | COMPLETE FAIL all majors ~-87%; no sweet spot — outputs/experiments/Q_CRYPTO_1_leverage_sweet_spot.md |
@@ -63,7 +63,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P3-01 | Re-run dual on Binance ticks (tick_precise) | pending | |
+| P3-01 | Re-run dual on Binance ticks (tick_precise) | **in_progress** | tmux p3-01-dual-tick — configs/experiments/dual_binance_tick_65d.yaml |
 | P3-02 | Short init 10/15/20% sweep | pending | |
 | P3-03 | Short structure dir vs grid vs 70/30 | pending | |
 | P3-04 | Drawdown set A/B/C comparison | pending | |
