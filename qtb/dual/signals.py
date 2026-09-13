@@ -119,6 +119,26 @@ def reversal_r4(
     return True
 
 
+def reversal_r5(
+    close: np.ndarray,
+    high: np.ndarray,
+    low: np.ndarray,
+    snxx_close: np.ndarray,
+    i: int,
+    bounce_pct: float = 0.15,
+) -> bool:
+    """Composite right-side: at least 2 of R1–R4 (no look-ahead — delegates to causal rules)."""
+    votes = sum(
+        [
+            reversal_r1(close, i),
+            reversal_r2(high, low, close, i),
+            reversal_r3(close, i, bounce_pct),
+            reversal_r4(close, snxx_close, i),
+        ]
+    )
+    return votes >= 2
+
+
 def check_reversal(
     rule: ReversalRule,
     i: int,
@@ -136,6 +156,8 @@ def check_reversal(
         return reversal_r3(close, i, bounce_pct)
     if rule == "R4" and snxx_close is not None:
         return reversal_r4(close, snxx_close, i)
+    if rule == "R5" and snxx_close is not None:
+        return reversal_r5(close, high, low, snxx_close, i, bounce_pct)
     return False
 
 

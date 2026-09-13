@@ -71,7 +71,7 @@ class TechFSM:
 
         # Reversal confirmation for final 25-35% deployment
         if self.tier >= 2 and not self.reversal_confirmed:
-            bounce = {"R1": 0.10, "R2": 0.15, "R3": 0.15, "R4": 0.10}.get(self.params.reversal, 0.15)
+            bounce = {"R1": 0.10, "R2": 0.15, "R3": 0.15, "R4": 0.10, "R5": 0.15}.get(self.params.reversal, 0.15)
             if self.params.reversal == "R3":
                 bounce = 0.15
             if check_reversal(

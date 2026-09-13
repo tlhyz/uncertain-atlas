@@ -280,4 +280,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T21:20Z | timer research-continue | P3-03 1/4 directional running
 2026-09-13T21:20Z | P3-04 prep | rank_drawdown_sets + config + test
 2026-09-13T21:20Z | checkpoint 2120Z | pytest 134 pass; P3-04 queued
+2026-09-13T21:00Z | timer research-continue | **P3-05 DONE PASS** R1–R5 no-leak
+2026-09-13T21:00Z | P3-05 | reversal_r5 2-of-4 + tests; pytest 139 pass
+2026-09-13T21:00Z | checkpoint 2100Z | P3-03 1/4 directional ~11min
 ```

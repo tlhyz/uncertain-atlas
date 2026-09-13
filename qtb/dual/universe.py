@@ -77,8 +77,8 @@ SHORT_STRUCTURES: tuple[ShortStructure, ...] = ("directional", "grid", "70_30", 
 GridMix = Literal["G100", "G75", "G50", "G25", "dynamic"]
 GRID_MIXES: tuple[GridMix, ...] = ("G100", "G75", "G50", "G25", "dynamic")
 
-ReversalRule = Literal["R1", "R2", "R3", "R4"]
-REVERSAL_RULES: tuple[ReversalRule, ...] = ("R1", "R2", "R3", "R4")
+ReversalRule = Literal["R1", "R2", "R3", "R4", "R5"]
+REVERSAL_RULES: tuple[ReversalRule, ...] = ("R1", "R2", "R3", "R4", "R5")
 
 ReanchorMode = Literal["off", "7d", "dynamic"]
 REANCHOR_MODES: tuple[ReanchorMode, ...] = ("off", "7d", "dynamic")

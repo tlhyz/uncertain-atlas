@@ -18,6 +18,7 @@ from qtb.dual.signals import (
     reversal_r2,
     reversal_r3,
     reversal_r4,
+    reversal_r5,
     rolling_high,
 )
 from qtb.dual.tech_fsm import TechFSM
@@ -133,7 +134,14 @@ class TestReversalRules:
         snxx, _, _ = _ohlc(400, seed=8)
         assert_no_future_leak_scalar(lambda i, a, b: reversal_r4(a, b, i), 160, soxl, snxx)
 
-    @pytest.mark.parametrize("rule", ["R1", "R2", "R3", "R4"])
+    def test_r5_causal(self, bars):
+        close, high, low = bars
+        snxx, _, _ = _ohlc(400, seed=10)
+        assert_no_future_leak_scalar(
+            lambda i, c, h, l, s: reversal_r5(c, h, l, s, i), 160, close, high, low, snxx
+        )
+
+    @pytest.mark.parametrize("rule", ["R1", "R2", "R3", "R4", "R5"])
     def test_check_reversal_causal(self, bars, rule):
         close, high, low = bars
         snxx = _ohlc(400, seed=9)[0]
