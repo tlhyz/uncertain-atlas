@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [flushusage-sold-as-echo](flushusage-sold-as-echo.md) 是 Flush Usage 正式三事就等于 Echo 测 implementation，不是本页 Flush bundled 就等于已经送到。
 - [send-sold-as-enqueued](send-sold-as-enqueued.md) 是 HasChannel 就已经入队，不是本页这种 Flush 要把客户端排队的消息冲到服务端不是已经送到。
 - [conn-sold-as-gates](conn-sold-as-gates.md) 是一条连接就已经是四门，不是本页这种定期 Flush 是为了让异步请求真发出去不是已经是四门。
 - [commitlock-sold-as-rpc](commitlock-sold-as-rpc.md) 是 Commit 里等广播就已经能往下走，不是本页这种立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走。

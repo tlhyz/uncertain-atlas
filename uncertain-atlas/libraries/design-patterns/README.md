@@ -336,6 +336,7 @@
 - [name-the-offersnaptrust-bar](name-the-offersnaptrust-bar.md)
 - [name-the-chktxlane-bar](name-the-chktxlane-bar.md)
 - [name-the-echousage-bar](name-the-echousage-bar.md)
+- [name-the-flushusage-bar](name-the-flushusage-bar.md)
 - [name-the-commitretaincaution-bar](name-the-commitretaincaution-bar.md)
 - [name-the-commitpersist-bar](name-the-commitpersist-bar.md)
 - [name-the-finmorepre-bar](name-the-finmorepre-bar.md)

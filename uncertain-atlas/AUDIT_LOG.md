@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2400 | 高 | 看见 Signals that messages queued on the client should be flushed to the server / 看见 Flush 要把客户端排队的消息冲到服务端 会被写成已经 Echo a string to test an ABCI client/server implementation / Echo 用来测实现 interchangeable，或当成已经 HasChannel 就已经入队 / 已经送到 interchangeable | 官方 Flush Usage：Signals that messages queued on the client should be flushed to the server |
+| A2401 | 高 | 看见 Called periodically to ensure async requests are actually sent / 看见定期 Flush 是为了让异步请求真发出去 会被写成已经 Echo 用来测实现 interchangeable，或当成已经一条连接就已经是四门 / 已经交差 interchangeable | 官方 Flush Usage：Called periodically to ensure async requests are actually sent |
+| A2402 | 高 | 看见 Called immediately for sync request; returns when Flush response comes back / 看见立刻 Flush 是为了做成同步请求、Flush 回包回来才算这次同步 会被写成已经 Echo 回包 Message 是入参那串 interchangeable，或当成已经 Commit 里等广播就已经能往下走 / 已经 Commit interchangeable | 官方 Flush Usage：Called immediately for sync request; returns when Flush response comes back |
+| A2403 | 中 | 怎样写 Flush / 怎样排队 / 怎样做成同步请求 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2404 | 记录 | 会与 374 / 492 / 309 / 307 / 310 / 394 糊成「看见 Flush 了就已经 Echo 测实现 interchangeable、已经送到、已经能往下走」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Flush Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 Echo 测 implementation interchangeable / 已经送到 / 已经能往下走 标成另一对象 |
+
 | A2395 | 高 | 看见 Echo a string to test an ABCI client/server implementation / 看见 Echo 用来测实现 会被写成已经 Flush 那种把排队冲到服务端 / 已经送到，或当成已经 Commit 空请求 bundled interchangeable | 官方 Echo Usage：Echo a string to test an ABCI client/server implementation |
 | A2396 | 高 | 看见 Request Message (string) A string to echo back / 看见 Echo 请求 Message 是要回显的字符串 会被写成已经 Response Message the input string interchangeable，或当成已经是 Flush（394）/ 已经填了 Message 就代表已经回显 | 官方 Echo Request：`Message (string)`: A string to echo back |
 | A2397 | 高 | 看见 Response Message (string) The input string / 看见 Echo 回包 Message 是入参那串 会被写成已经 Echo 用来测实现就已经刷完，或当成已经 Request Message 字段 interchangeable / Flush 回包回来就算同步 | 官方 Echo Response：`Message (string)`: The input string |

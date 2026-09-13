@@ -20,5 +20,6 @@
 
 ## 和相邻反模式
 
+- [flushusage-sold-as-echo](flushusage-sold-as-echo.md) 是 Flush Usage 正式三事就等于 Echo 测 implementation，不是本页 Echo 测实现专用边界。
 - [commitnoparam-sold-as-persist](commitnoparam-sold-as-persist.md) 是 Commit 空请求 bundled Echo 全段，不是本页 Echo Usage 专用三事。
 - [flush-sold-as-sent](flush-sold-as-sent.md) 是 Flush 就等于已经送到，不是本页 Echo 测实现专用边界。
