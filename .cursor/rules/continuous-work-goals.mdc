@@ -1,0 +1,16 @@
+---
+description: North star goals, backlog-driven work, timed continuation — do not stop idle
+alwaysApply: true
+---
+
+# Continuous work — goals & reminders
+
+1. **North star:** `docs/RESEARCH_GOALS.md` — robust, reproducible, survivable dual-book system
+2. **Task queue:** `docs/RESEARCH_BACKLOG.md` — pick lowest-ID `pending` in current phase each session
+3. **Cadence:** `docs/WORK_CADENCE.md` — session start/end checklist; respond to timer `research-continue`
+4. **On timer fire:** run `python scripts/check_backlog.py --next 3`, execute one task, review log, commit, update backlog
+5. **Never idle** with unblocked pending tasks unless user said stop
+6. **FAIL → log → next task** (do not stall on failed hypotheses)
+7. **Do not touch** `uncertain-atlas/`
+
+Session start: `pytest -q && python scripts/check_backlog.py --next 3`

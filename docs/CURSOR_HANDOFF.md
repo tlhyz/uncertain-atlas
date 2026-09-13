@@ -8,7 +8,10 @@
 4. `docs/DATA_POLICY.md` — no synthetic ticks
 5. `docs/CURRENT_CONCLUSIONS.md`
 6. `docs/REVIEW_AND_OPTIMIZATION.md` — **review / optimize / log rules (mandatory)**
-7. `REPO_REFACTOR_REPORT.md`
+7. `docs/RESEARCH_GOALS.md` — **总目标 (north star)**
+8. `docs/RESEARCH_BACKLOG.md` — **小目标队列 (pick pending each session)**
+9. `docs/WORK_CADENCE.md` — **定时提醒 & 会话规则**
+10. `REPO_REFACTOR_REPORT.md`
 
 ## Out of scope — DO NOT MODIFY
 
@@ -17,7 +20,7 @@
 This quantitative trading refactor **does not touch** the Uncertain blockchain knowledge base.
 
 - Lives on branch: `cursor/uncertain-architecture-atlas-11a5`
-- **Not present** on `research/unified-tech-crypto-framework`
+- **Not present** on `cursor/unified-tech-crypto-framework-cbaf`
 - **Never** merge, move, rewrite, or delete `uncertain-atlas/` as part of grid/perp work
 - If both tracks need coexistence in `main`, use **separate top-level dirs** with zero cross-imports
 
@@ -52,6 +55,8 @@ python -m qtb.cli dual -c configs/dual_engine_perp.yaml
 6. **Do not** start full parameter sweeps until user confirms after refactor report
 7. **Review → Optimize → Log (mandatory):** after every experiment or backtest-related change, write `outputs/review_logs/YYYY-MM-DD_<id>_<verdict>.md`, update `INDEX.md`, commit with code — see `docs/REVIEW_AND_OPTIMIZATION.md`
 8. **Continuous review:** compare each run to prior logs; state `vs_prior` delta and `optimization_next`; never delete FAIL logs
+9. **Never stop idle:** each session complete ≥1 backlog task (`docs/RESEARCH_BACKLOG.md`); session end checklist in `docs/WORK_CADENCE.md`
+10. **Respond to timer `research-continue`:** pick next pending task, execute, log, commit — see `docs/WORK_CADENCE.md`
 
 ## Next experiments (after user OK)
 

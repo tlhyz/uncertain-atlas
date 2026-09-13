@@ -12,6 +12,8 @@
 | What already failed / proven | [`docs/RESEARCH_HISTORY.md`](docs/RESEARCH_HISTORY.md) |
 | Data rules (no synthetic ticks) | [`docs/DATA_POLICY.md`](docs/DATA_POLICY.md) |
 | Review / optimize / log rules | [`docs/REVIEW_AND_OPTIMIZATION.md`](docs/REVIEW_AND_OPTIMIZATION.md) |
+| **总目标 & 小目标 backlog** | [`docs/RESEARCH_GOALS.md`](docs/RESEARCH_GOALS.md) · [`docs/RESEARCH_BACKLOG.md`](docs/RESEARCH_BACKLOG.md) |
+| **定时提醒 & 工作节奏** | [`docs/WORK_CADENCE.md`](docs/WORK_CADENCE.md) |
 | How to run next experiment | [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) |
 | AI / Cursor handoff | [`docs/CURSOR_HANDOFF.md`](docs/CURSOR_HANDOFF.md) |
 | Refactor status | [`REPO_REFACTOR_REPORT.md`](REPO_REFACTOR_REPORT.md) |
