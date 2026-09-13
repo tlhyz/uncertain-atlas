@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-13（续 434）
+
+- CometBFT VerifyStatus 工作实例（官方 ABCI++ Methods Data Types VerifyStatus，实现 / VerifyStatus，不另写 19 节）：看见 VerifyStatus 的 UNKNOWN 一律是错、引擎当应用坏了会崩不是已经验过扩展。看见 VerifyStatus 的 ACCEPT 表示应用认为扩展合法、共识会收下这张票不是已经当成块非法。看见 VerifyStatus 的 REJECT 表示应用认为扩展非法、共识会拒掉整张票不是已经会发 Prevote nil。VerifyStatus 不是不变量 376，也不是不变量 433，也不是不变量 34。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 434；语料 C438；模式 name-the-verify-status；反模式 verifystatus-sold-as-vote；L10.3 第 430 条。填 L4.4 / CometBFT 档案 VerifyStatus / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 VerifyStatus、怎样挑枚举、怎样拒整张 Precommit。不编博物馆页。不另写 19 节。不与 376 / 433 / 34 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经验过扩展、已经当成块非法、已经会发 Prevote nil 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 433）
 
 - CometBFT Verify 回包栏工作实例（官方 ABCI++ Methods VerifyVoteExtension Response / Usage，实现 / Verify 回包栏，不另写 19 节）：看见 VerifyVoteExtensionResponse.status 是应用认为这份扩展合法还是非法不是已经当成块非法。看见 VerifyVoteExtensionResponse.status 必须只依赖 VerifyVoteExtensionRequest 和上一份已提交状态不是已经可以像 ExtendVote 那样依赖其它值。看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不是已经正确进程交出的扩展必须 Accept。Verify 回包栏不是不变量 34，也不是不变量 338，也不是不变量 348。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

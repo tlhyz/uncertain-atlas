@@ -4421,6 +4421,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2103 | 中 | 怎样写 Verify 回包栏 / 怎样挑 ACCEPT/REJECT / 怎样拒整张 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2104 | 记录 | 会与 34 / 338 / 348 糊成「看见回了 VerifyVoteExtensionResponse.status 就已经当成块非法」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经当成块非法 / 已经可以像 ExtendVote 那样依赖其它值 / 已经正确进程交出的扩展必须 Accept 标成另一对象 |
 
+| A2105 | 高 | 看见 VerifyStatus 的 UNKNOWN 一律是错、引擎当应用坏了会崩 / 看见回了 UNKNOWN 会被写成已经验过扩展，或当成已经扩展启用 | 官方 Usage：If Status is UNKNOWN, a problem happened in the Application; CometBFT will assume the application is faulty and crash |
+| A2106 | 高 | 看见 VerifyStatus 的 ACCEPT 表示应用认为扩展合法、共识会收下这张票 / 看见回了 ACCEPT 会被写成已经当成块非法，或当成已经正确进程交出的扩展必须 Accept | 官方 Usage：If Status is ACCEPT, the consensus algorithm will accept the vote as valid |
+| A2107 | 高 | 看见 VerifyStatus 的 REJECT 表示应用认为扩展非法、共识会拒掉整张票 / 看见回了 REJECT 会被写成已经会发 Prevote nil，或当成已经当成块非法 | 官方 Usage：If Status is REJECT, the consensus algorithm will reject the vote as invalid |
+| A2108 | 中 | 怎样写 VerifyStatus / 怎样挑枚举 / 怎样拒整张 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2109 | 记录 | 会与 376 / 433 / 34 糊成「看见回了 VerifyStatus 就已经验过扩展」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyStatus / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经验过扩展 / 已经当成块非法 / 已经会发 Prevote nil 标成另一对象 |
+
 
 
 
