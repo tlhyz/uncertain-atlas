@@ -4451,6 +4451,42 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2128 | 中 | 怎样写 ExtendVote When 正式流程 / 怎样填 CanonicalVoteExtension / 怎样构造 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2129 | 记录 | 会与 358 / 361 / 34 糊成「看见 ExtendVote 回了 extension 就已经广播 Precommit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经按原样签 / 已经验过扩展 / 已经写进 last_commit 标成另一对象 |
 
+| A2130 | 高 | 看见 ExtendVoteResponse.vote_extension 是 application-generated information that will be signed / 看见应用生成的信息、将由 CometBFT 签名 会被写成已经签过，或当成已经包进 CanonicalVoteExtension | 官方 Usage：vote_extension is application-generated information that will be signed |
+| A2131 | 高 | 看见 ExtendVoteResponse.non_rp_extension 是 application-generated information that will be signed by CometBFT and attached to the Precommit message / 看见相对 vote_extension 不做重放保护 会被写成已经和 vote_extension 同一份签法，或当成已经有重放保护 | 官方 Usage：No replay-protection is applied to the data as compared to vote_extension; raw data without wrapping structure |
+| A2132 | 高 | 看见 will be signed 并 attached to the Precommit message / 看见规范写「将签名并挂到 Precommit」 会被写成已经广播 Precommit，或当成已经写进 last_commit | 官方 Usage：will be signed by CometBFT and attached to the Precommit message |
+| A2133 | 中 | 怎样写 ExtendVote Response Usage application-generated 正式三事 / 怎样选 non_rp / 怎样挂到 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2134 | 记录 | 会与 418 / 358 / 438 糊成「看见应用回了扩展就已经签过」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote Response Usage application-generated 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经签过 / 已经包装 / 已经广播 Precommit 标成另一对象 |
+
+| A2135 | 高 | 看见 vote_extension 含发送验证者的扩展、签已由 CometBFT 验过 / 看见 can be empty 会被写成已经应用验完，或当成已经必须填内容 | 官方 Usage：vote_extension contains the sending validator's vote extension, whose signature was verified by CometBFT. It can be empty |
+| A2136 | 高 | 看见 extension_signature 已由 CometBFT 验过 / 看见 expose the signature to the application for further processing or verification 会被写成已经 Verify 过，或当成已经应用 finished verifying | 官方 Usage：extension_signature which was verified by CometBFT; expose for further processing or verification |
+| A2137 | 高 | 看见扩展启用时两份签都会在 / 看见没给 non_rp_vote_extension 时 non_rp_extension_signature 签空切片 会被写成已经只有一份签，或当成已经没 non_rp 就没有第二份签 | 官方 Usage：two signatures will be present if vote extensions are enable; signature will sign an empty slice |
+| A2138 | 中 | 怎样写 ExtendedVoteInfo Usage 暴露签正式三事 / 怎样再验签 / 怎样读空切片 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2139 | 记录 | 会与 369 / 421 / 358 糊成「看见 Prepare 里有 ExtendedVoteInfo 就已经应用验完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo Usage 暴露签正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经应用验完 / 已经 Verify 过 / 已经只有一份签 标成另一对象 |
+
+| A2140 | 高 | 看见 ExtendedCommitInfo.votes 里的 ExtendedVoteInfo 按投票权降序排 / 看见顺序在 会被写成已经进了块，或当成已经交差 | 官方 Notes：ExtendedVoteInfo in votes ordered by voting power descending |
+| A2141 | 高 | 看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序 / 看见集合写入 store 时顺序也落盘 会被写成已经由应用排过，或当成已经是收到票时的顺序 | 官方 Notes：CometBFT guarantees the votes ordering through its logic to update the validator set; ordering persisted when validator set saved in the store |
+| A2142 | 高 | 看见造 ExtendedCommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 CommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the ExtendedCommitInfo, ensuring order is maintained from the persisted validator set |
+| A2143 | 中 | 怎样写 ExtendedCommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2145 | 高 | 看见 VoteInfo 与 ExtendedVoteInfo Usage 都写 allowing for rewards based on validator availability / 看见同一句 会被写成已经奖罚完，或当成已经交差 | 官方 Usage：allowing for rewards based on validator availability |
+| A2146 | 高 | 看见 VoteInfo Usage 写 typically extracted from a proposed or decided block / 看见 typically extracted 会被写成已经从本进程 CometBFT 数据结构抽出，或当成已经是 Prepare 里的 ExtendedVoteInfo | 官方 VoteInfo Usage：This information is typically extracted from a proposed or decided block |
+| A2147 | 高 | 看见 ExtendedVoteInfo Usage 写 extracted from CometBFT's data structures in the local process / 看见 extracted from local process 会被写成已经 typically extracted from proposed or decided block，或当成已经是 Process/Finalize 里的 CommitInfo 同一路 | 官方 ExtendedVoteInfo Usage：This information is extracted from CometBFT's data structures in the local process |
+| A2148 | 中 | 怎样写 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事 / 怎样读 block_id_flag / 怎样分 Prepare 和 Process 路径 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2150 | 高 | 看见 Validator 装在 CommitInfo 里用于 ProcessProposal / 看见 Process 路径 会被写成已经是 PrepareProposal 里的 ExtendedCommitInfo，或当成已经是 local_last_commit 同一份 | 官方 Usage：Used as part of VoteInfo within CommitInfo (used in ProcessProposal and FinalizeBlock) |
+| A2151 | 高 | 看见 Validator 装在 CommitInfo 里用于 FinalizeBlock / 看见 decided_last_commit 会被写成已经是 Process 里的 proposed_last_commit 同一路，或当成已经是 decided 就已经交差 | 官方 Usage：CommitInfo used in FinalizeBlock; decided_last_commit from decided block |
+| A2152 | 高 | 看见 Validator 装在 ExtendedCommitInfo 里用于 PrepareProposal / 看见 Prepare 路径 会被写成已经是 Process/Finalize 里的 CommitInfo 同一路，或当成已经可以拿 CommitInfo 代替 ExtendedCommitInfo | 官方 Usage：Used as part of ExtendedCommitInfo (used in PrepareProposal) |
+| A2153 | 中 | 怎样写 Validator Usage 四门映射正式三事 / 怎样填 proposed_last_commit / decided_last_commit / local_last_commit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2155 | 高 | 看见 CommitInfo.votes 里的 VoteInfo 按投票权降序排 / 看见顺序在 会被写成已经进了块，或当成已经交差 | 官方 Notes：VoteInfo in votes ordered by voting power descending |
+| A2156 | 高 | 看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序 / 看见集合写入 store 时顺序也落盘 会被写成已经由应用排过，或当成已经是收到票时的顺序 | 官方 Notes：CometBFT guarantees the votes ordering through its logic to update the validator set; ordering persisted when validator set saved in the store |
+| A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
+| A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2159 | 记录 | 会与 365 / 441 / 392 糊成「看见 Process / Finalize 里有 CommitInfo 就已经按投票权排好、已经进了块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CommitInfo Notes 票序正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经进了块 / 已经由应用排过 / 已经从拟议块或已决块抽出 标成另一对象 |
+
+| A2154 | 记录 | 会与 364 / 365 / 369 糊成「看见 Prepare / Process / Finalize 里都有验证者就已经同一门、同一路」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Validator Usage 四门映射正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经同一门 / 已经同一路 / 已经可以 interchangeable 标成另一对象 |
+
+| A2149 | 记录 | 会与 365 / 369 / 425 糊成「看见 block_id_flag 就已经奖罚完、Prepare 和 Process 是同一路」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经奖罚完 / 已经从本进程抽出 / 已经和 CommitInfo 同一路 标成另一对象 |
+
+| A2144 | 记录 | 会与 365 / 369 / 394 糊成「看见 Prepare 里有 ExtendedCommitInfo 就已经按投票权排好、已经进了块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedCommitInfo Notes 票序正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经进了块 / 已经由应用排过 / 已经从拟议块或已决块抽出 标成另一对象 |
+
 
 
 

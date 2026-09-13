@@ -1,6 +1,42 @@
 # 知识库修改日志
 
+## 2026-09-13（续 444）
+
+- CometBFT CommitInfo Notes 票序正式三事工作实例（官方 ABCI++ Methods Data Types CommitInfo Notes，实现 / CommitInfo Notes 票序正式三事，不另写 19 节）：看见 CommitInfo.votes 里的 VoteInfo 按投票权降序排不是已经进了块 / 已经交差。看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序、集合写入 store 时顺序也落盘不是已经由应用排过 / 已经是收到票时的顺序。看见造 CommitInfo 时从 store 再装集合不是已经从拟议块或已决块抽出 / 已经是 ExtendedCommitInfo Notes 那套话就已经是同一句。CommitInfo Notes 票序正式三事不是不变量 365，也不是不变量 441，也不是不变量 392。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 444；语料 C448；模式 name-the-ci-notes-order；反模式 cinotes-sold-as-inblock；L10.3 第 440 条。填 L4.4 / CometBFT 档案 CommitInfo Notes 票序正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 CommitInfo Notes 票序正式三事、怎样从 store 再装、怎样排 votes。不编博物馆页。不另写 19 节。不与 365 / 441 / 392 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经进了块、已经由应用排过、已经从拟议块或已决块抽出 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
+## 2026-09-13（续 443）
+
+- CometBFT Validator Usage 四门映射正式三事工作实例（官方 ABCI++ Methods Data Types Validator Usage，实现 / Validator Usage 四门映射正式三事，不另写 19 节）：看见 Validator 装在 CommitInfo 里用于 ProcessProposal 不是已经 PrepareProposal 里的 ExtendedCommitInfo / 已经是 local_last_commit 同一份。看见 Validator 装在 CommitInfo 里用于 FinalizeBlock 不是已经 Process 里的 proposed_last_commit 同一路 / 已经是 decided_last_commit 就已经交差。看见 Validator 装在 ExtendedCommitInfo 里用于 PrepareProposal 不是已经 Process/Finalize 里的 CommitInfo 同一路 / 已经可以 interchangeable。Validator Usage 四门映射正式三事不是不变量 364，也不是不变量 365，也不是不变量 369。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 443；语料 C447；模式 name-the-validatorusage-gates；反模式 validatorusage-sold-as-samegate；L10.3 第 439 条。填 L4.4 / CometBFT 档案 Validator Usage 四门映射正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Validator Usage 四门映射正式三事、怎样填 proposed_last_commit / decided_last_commit / local_last_commit。不编博物馆页。不另写 19 节。不与 364 / 365 / 369 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经同一门、已经同一路、已经可以 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
+## 2026-09-13（续 442）
+
+- CometBFT VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事工作实例（官方 ABCI++ Methods Data Types VoteInfo Usage / ExtendedVoteInfo Usage，实现 / VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事，不另写 19 节）：看见 VoteInfo 与 ExtendedVoteInfo Usage 都写 allowing for rewards based on validator availability 不是已经奖罚完 / 已经交差。看见 VoteInfo 通常从拟议块或已决块抽出不是已经从本进程抽出 / 已经是 Prepare 里的 ExtendedVoteInfo。看见 ExtendedVoteInfo 从本进程 CometBFT 数据结构抽出不是已经 typically extracted from proposed or decided block / 已经是 Process/Finalize 里的 CommitInfo 同一路。VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事不是不变量 365，也不是不变量 369，也不是不变量 425。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 442；语料 C446；模式 name-the-vi-usageavail-extract；反模式 viusageavail-sold-as-samepath；L10.3 第 438 条。填 L4.4 / CometBFT 档案 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事。不编博物馆页。不另写 19 节。不与 365 / 369 / 425 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经奖罚完、已经从本进程抽出、已经和 CommitInfo 同一路 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
+
+## 2026-09-13（续 441）
+
+- CometBFT ExtendedCommitInfo Notes 票序正式三事工作实例（官方 ABCI++ Methods Data Types ExtendedCommitInfo Notes，实现 / ExtendedCommitInfo Notes 票序正式三事，不另写 19 节）：看见 ExtendedCommitInfo.votes 里的 ExtendedVoteInfo 按投票权降序排不是已经进了块 / 已经交差。看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序、集合写入 store 时顺序也落盘不是已经由应用排过 / 已经是收到票时的顺序。看见造 ExtendedCommitInfo 时从 store 再装集合不是已经从拟议块或已决块抽出 / 已经是 CommitInfo Notes 那套话就已经是同一句。ExtendedCommitInfo Notes 票序正式三事不是不变量 365，也不是不变量 369，也不是不变量 394。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 441；语料 C445；模式 name-the-ext-ci-notes-order；反模式 extcinotes-sold-as-inblock；L10.3 第 437 条。填 L4.4 / CometBFT 档案 ExtendedCommitInfo Notes 票序正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendedCommitInfo Notes 票序正式三事、怎样从 store 再装、怎样排 votes。不编博物馆页。不另写 19 节。不与 365 / 369 / 394 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经进了块、已经由应用排过、已经从拟议块或已决块抽出 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
+## 2026-09-13（续 440）
+
+- CometBFT ExtendedVoteInfo Usage 暴露签正式三事工作实例（官方 ABCI++ Methods Data Types ExtendedVoteInfo Usage，实现 / ExtendedVoteInfo Usage 暴露签正式三事，不另写 19 节）：看见 vote_extension 的签已由 CometBFT 验过、扩展可以空不是已经应用验完 / 已经必须填内容。看见 extension_signature 已由 CometBFT 验过、暴露给应用再处理不是已经应用验完 / 已经 Verify 过。看见扩展启用时两份签都在、没给 non_rp 就签空切片不是已经只有一份签 / 已经没 non_rp 就没有第二份签。ExtendedVoteInfo Usage 暴露签正式三事不是不变量 369，也不是不变量 421，也不是不变量 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 440；语料 C444；模式 name-the-ext-vi-usage-expose；反模式 extviusage-sold-as-exposed；L10.3 第 436 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo Usage 暴露签正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendedVoteInfo Usage 暴露签正式三事、怎样再验签、怎样读空切片。不编博物馆页。不另写 19 节。不与 369 / 421 / 358 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经应用验完、已经 Verify 过、已经只有一份签 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
+## 2026-09-13（续 439）
+
+- CometBFT ExtendVote Response Usage application-generated 正式三事工作实例（官方 ABCI++ Methods ExtendVote Usage，实现 / ExtendVote Response Usage application-generated 正式三事，不另写 19 节）：看见 ExtendVoteResponse.vote_extension 是应用生成的信息、将由 CometBFT 签名不是已经签过 / 已经包进 CanonicalVoteExtension。看见 ExtendVoteResponse.non_rp_extension 是应用生成的信息、将由 CometBFT 签名并挂到 Precommit、相对 vote_extension 不做重放保护不是已经和 vote_extension 同一份签法 / 已经有重放保护。看见 will be signed 并 attached to Precommit 不是已经广播 Precommit / 已经写进 last_commit。ExtendVote Response Usage application-generated 正式三事不是不变量 418，也不是不变量 358，也不是不变量 438。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 439；语料 C443；模式 name-the-ext-appgen；反模式 extappgen-sold-as-signed；L10.3 第 435 条。填 L4.4 / CometBFT 档案 ExtendVote Response Usage application-generated 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendVote Response Usage application-generated 正式三事、怎样选 non_rp、怎样挂到 Precommit。不编博物馆页。不另写 19 节。不与 418 / 358 / 438 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经签过、已经包装、已经广播 Precommit 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
 
 ## 2026-09-13（续 438）
 
