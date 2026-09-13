@@ -16,16 +16,14 @@ tmux `p3-01-dual-tick` — log `/tmp/p3-01_dual_tick.log`
 
 Prior P1-11 run (same config) FAIL dual -58.70% vs B&H -33.49%. P3-01 formal re-run for Tech FSM phase gate.
 
-## Job status (1620Z)
+## Job status (1900Z)
 
 | Stage | Status |
 |-------|--------|
 | DATA_QUALITY | PASS |
-| benchmarks | running |
-| seed_windows | pending |
-
-ETA ~19:30Z (~218min baseline from P1-11).
+| benchmarks B1–B10 | **done** (~169min CPU) |
+| seed_windows | **running** |
 
 ## Next
 
-Await completion → FAIL review expected → mark P3-01 done
+Await seed_windows + report → FAIL review expected → mark P3-01 done
