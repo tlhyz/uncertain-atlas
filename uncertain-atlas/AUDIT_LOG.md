@@ -4481,6 +4481,13 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
 
+
+| A2245 | 高 | 看见 Finalize 的 height / time 对上拟议块头 / 看见对上了 会被写成已经验过块头，或当成已经跑过 Process | 官方 FinalizeBlock Usage：The height and time values match the values from the header of the proposed block |
+| A2246 | 高 | 看见 FinalizeBlockRequest.height 是已决块的高度 / FinalizeBlockRequest.time 是已决块的时间戳 / 看见填了 height / time 会被写成已经 Usage 那种 match header，或当成已经是 ProcessProposalRequest.height / time interchangeable | 官方 FinalizeBlock Request 表 vs Usage match 语句 |
+| A2247 | 高 | 看见 Finalize height / time match proposed block header / 看见 match header 会被写成已经是 ProcessProposal height/time match interchangeable，或当成已经知道本头哈希 | 官方 FinalizeBlock Usage vs ProcessProposal Usage |
+| A2248 | 中 | 怎样对 height / time / 怎样和 Process 请求栏对齐会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2249 | 记录 | 会与 417 / 422 / 454 / 461 糊成「看见 Finalize 填了 height/time 就已经验过块头、已经对上了、已经是 Process match interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock height/time 对上拟议块头正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经验过块头 / 已经 Usage 那种 match header / 已经是 Process match interchangeable 标成另一对象 |
+
 | A2240 | 高 | 看见 FinalizeBlock Contains the fields of the newly decided block / 看见含刚决定那块的字段 会被写成已经是四门已经结算，或当成已经跑过 Process | 官方 FinalizeBlock Usage：Contains the fields of the newly decided block |
 | A2241 | 高 | 看见 newly decided block 的字段 / 看见有刚决定那块 会被写成已经是 ProcessProposal Contains all information needed to fully execute it，或当成已经是 ProcessProposalRequest 拟议块字段 interchangeable | 官方 FinalizeBlock Usage vs ProcessProposal Usage |
 | A2242 | 高 | 看见 CometBFT 会把 FinalizeBlockRequest 全部字段填齐、即使 Prepare/Process 已经传过 / 看见又填一遍 会被写成已经 decided_last_commit 和 proposed_last_commit 就可以混用，或当成已经 Prepare/Process 同一套字段就已经是刚决定那块的字段 | 官方 FinalizeBlock Usage：Currently, CometBFT will fill up all fields in FinalizeBlockRequest, even if they were already passed on via PrepareProposalRequest or ProcessProposalRequest |

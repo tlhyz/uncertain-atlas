@@ -431,6 +431,7 @@
 - [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
+- [finht-sold-as-proposed](finht-sold-as-proposed.md)
 - [finnewfields-sold-as-settled](finnewfields-sold-as-settled.md)
 - [fincand-sold-as-commit](fincand-sold-as-commit.md)
 - [finvaldelay-sold-as-h1vote](finvaldelay-sold-as-h1vote.md)
