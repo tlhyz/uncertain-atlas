@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 467）
+
+- CometBFT FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock When steps 4–6，实现 / FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事，不另写 19 节）：看见 Application returns AppHash + tx outputs 不是已经印进本头 / 已经是本头 AppHash。看见 CometBFT hashes into ResultHash 不是已经 Code / Data 印进本头 LastResultsHash。看见 CometBFT persists tx outputs / AppHash / ResultsHash 不是已经 Commit 落盘应用状态 / 已经交差。FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事不是不变量 362，也不是不变量 403，也不是不变量 404。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 467；语料 C471；模式 name-the-finreturn-bar；反模式 finreturn-sold-as-header；L10.3 第 463 条。填 L4.4 / CometBFT 档案 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样算 AppHash、怎样算 ResultHash、怎样落盘这三份。不编博物馆页。不另写 19 节。不与 362 / 403 / 404 / 316 / 147 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经印进本头 / 已经 Code Data 印进本头 / 已经 Commit 落盘应用状态 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 466）
 
 - CometBFT FinalizeBlock When Application executes block v 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock When step 3，实现 / FinalizeBlock When Application executes block v 正式三事，不另写 19 节）：看见 executes block v 不是已经把 v 落成这一高的决定 / 已经交差。看见 executes block v 不是已经每个验证者都跑过 Process / 已经是 ExecuteTxState。看见 executes block v 不是已经套用 candidate 就不需要再在 Finalize 执行 / 已经 Process 跑过就不执行。FinalizeBlock When Application executes block v 正式三事不是不变量 362，也不是不变量 360，也不是不变量 460。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
