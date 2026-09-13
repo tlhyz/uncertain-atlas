@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | checkpoint 0730Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0730Z.md |
 | 2026-09-13 | checkpoint 0720Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0720Z.md |
 | 2026-09-13 | checkpoint 0710Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0710Z.md |
 | 2026-09-13 | checkpoint 0700Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0700Z.md |

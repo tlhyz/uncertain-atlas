@@ -115,4 +115,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T07:00Z | phase gate | P2 in_progress — skip P3-01 until P2 jobs complete
 2026-09-13T07:10Z | checkpoint 0710Z | P2-02 4h27m 99.9% CPU not stalled; ETH 2.0x running; P2-14 ~19min
 2026-09-13T07:20Z | checkpoint 0720Z | no completions; ETH 2.0x ~40min; P2-05 first grid variant ~2h+
+2026-09-13T07:30Z | checkpoint 0730Z | grid/C1 progress logging added; P2-02 4h47m; ETH 2.0x running
 ```

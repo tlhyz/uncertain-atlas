@@ -188,18 +188,28 @@ def run_binance_crypto_c1(
         skip_tick_validation=skip_tick_validation,
     )
     dp = DualParams(unified_signal=False)
+    print("[run] C1 independent crypto ticks (BTC/ETH/SOL)...")
     r_ind = run_dual_portfolio(
         data, dp, name="C1_independent_ticks", fill_mode=fill_mode,
         crypto_tick_fills=True, tech_disabled=True, tick_precise=True,
     )
+    m_ind = summarize_portfolio(r_ind, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
+    print(
+        f"[run] C1 independent done return={100 * float(m_ind.get('total_return', 0)):.2f}% "
+        f"calmar={float(m_ind.get('calmar', 0)):.2f}"
+    )
     # Tech book uses placeholder bars on C1 — bar fills for tech, tick fills for crypto.
+    print("[run] C1 unified-signal crypto ticks + tech bar fills...")
     r_uni = run_dual_portfolio(
         data, DualParams(unified_signal=True), name="C1_unified_crypto_ticks", fill_mode=fill_mode,
         crypto_tick_fills=True, tech_tick_fills=False, tech_disabled=False, tick_precise=True,
     )
     # Tech disabled vs unified with synthetic tech drawdown when unified
-    m_ind = summarize_portfolio(r_ind, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
     m_uni = summarize_portfolio(r_uni, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
+    print(
+        f"[run] C1 unified done return={100 * float(m_uni.get('total_return', 0)):.2f}% "
+        f"calmar={float(m_uni.get('calmar', 0)):.2f} delta={100 * float(m_ind.get('total_return', 0) - m_uni.get('total_return', 0)):.2f}pp"
+    )
     return {
         "window": "CRYPTO_C1",
         "start": start,

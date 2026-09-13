@@ -101,6 +101,7 @@ def _rank_crypto_grid(
         for rng in ranges:
             cp = CryptoParams(grid_atr_step=step, grid_atr_range=rng)
             dp = DualParams(crypto=cp, unified_signal=False)
+            print(f"[run] crypto grid step={step} range={rng}...")
             r = run_dual_portfolio(
                 data,
                 dp,
@@ -116,6 +117,11 @@ def _rank_crypto_grid(
             m["grid_atr_step"] = step
             m["grid_atr_range"] = rng
             rows.append(m)
+            print(
+                f"[run] crypto grid step={step} range={rng} done "
+                f"return={100 * float(m.get('total_return', 0)):.2f}% "
+                f"calmar={float(m.get('calmar', 0)):.2f}"
+            )
     rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
     return rows
 
