@@ -15,6 +15,27 @@ CRYPTO_CORE = ("BTC", "ETH", "SOL")
 CRYPTO_MEME = ("PENGU", "PUMP")
 MEME_MAX_ACCOUNT_FRAC = 0.05
 
+
+def satellite_cap_budgets(
+    total: float = TOTAL_CAPITAL,
+    max_frac: float = MEME_MAX_ACCOUNT_FRAC,
+    symbols: tuple[str, ...] = CRYPTO_MEME,
+) -> dict[str, float]:
+    """Split combined meme satellite cap evenly across symbols (USDT notional budget)."""
+    combined = total * max_frac
+    per = combined / max(len(symbols), 1)
+    return {s: per for s in symbols}
+
+
+def satellite_cap_ok(
+    budgets: dict[str, float],
+    *,
+    total: float = TOTAL_CAPITAL,
+    max_frac: float = MEME_MAX_ACCOUNT_FRAC,
+) -> bool:
+    return sum(budgets.values()) <= total * max_frac + 1e-9
+
+
 GateSymbol = str
 
 SYMBOL_PERP: dict[str, str] = {

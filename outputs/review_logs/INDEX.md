@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P2-13 satellite cap | CONDITIONAL PASS | outputs/review_logs/2026-09-13_P2-13_satellite_cap_CONDITIONAL_PASS.md |
 | 2026-09-13 | P2-12 Q-crypto-3 | PARTIAL | outputs/review_logs/2026-09-13_P2-12_Q_crypto_3_PARTIAL.md |
 | 2026-09-13 | checkpoint 0630Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0630Z.md |
 | 2026-09-13 | P2-11 Q-crypto-2 | PARTIAL | outputs/review_logs/2026-09-13_P2-11_Q_crypto_2_PARTIAL.md |
