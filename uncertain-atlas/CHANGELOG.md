@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 449）
+
+- CometBFT Misbehavior height/time 栏正式三事工作实例（官方 ABCI++ Methods Data Types Misbehavior Fields，实现 / Misbehavior height/time 栏正式三事，不另写 19 节）：看见 Misbehavior.height 是过错发生的高度不是已经 Prepare/Process 请求 height / 已经验过块头。看见 Misbehavior.time 是 height 那一高已提交块的时间戳不是已经验过票上 Timestamp / 已经是 Prepare/Process 请求 time interchangeable。看见 Misbehavior.height 和 time 一起不是已经定了奖惩 / 已经 slashed。Misbehavior height/time 栏正式三事不是不变量 372，也不是不变量 304，也不是不变量 413/420/428。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 449；语料 C453；模式 name-the-misbheighttime-bar；反模式 misbheighttime-sold-as-votetime；L10.3 第 445 条。填 L4.4 / CometBFT 档案 Misbehavior height/time 栏正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样填 Misbehavior.height/time、怎样从 evidence 编过错高度和时间、怎样和请求栏对齐。不编博物馆页。不另写 19 节。不与 372 / 304 / 413 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经 Prepare/Process 请求 height/time、已经验过票上 Timestamp、已经定了奖惩 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 448）
 
 - CometBFT Misbehavior.validator 栏正式三事工作实例（官方 ABCI++ Methods Data Types Misbehavior Fields，实现 / Misbehavior.validator 栏正式三事，不另写 19 节）：看见 Misbehavior.validator 是过错验证者不是已经 slashed / 已经罚没。看见 Misbehavior.validator 只是 address+power 的 Validator 结构不是已经 VoteInfo.validator 那种按到场定奖惩 / 已经 CommitInfo.votes 里那份 interchangeable。看见 Misbehavior.validator 不是已经 ValidatorUpdate 那种已经改了集合 / 已经带了公钥。Misbehavior.validator 栏正式三事不是不变量 372，也不是不变量 365，也不是不变量 364。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

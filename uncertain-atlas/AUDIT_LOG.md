@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2180 | 高 | 看见 Misbehavior.height 是过错发生的高度 / 看见填了 height 会被写成已经是 PrepareProposalRequest.height / ProcessProposalRequest.height，或当成已经验过块头 | 官方 Misbehavior Fields：height is Height when the offense occurred |
+| A2181 | 高 | 看见 Misbehavior.time 是 height 那一高已提交块的时间戳 / 看见填了 time 会被写成已经验过票上 Timestamp，或当成已经是 Prepare/Process 请求 time interchangeable | 官方 Misbehavior Fields：time is Timestamp of the block that was committed at height height |
+| A2182 | 高 | 看见 Misbehavior.height 和 time 一起 / 看见对上了 height 和 time 会被写成已经定了奖惩，或当成已经 slashed | 官方 Misbehavior Fields：height 和 time 配成过错时空信息 |
+| A2183 | 中 | 怎样填 Misbehavior.height/time / 怎样从 evidence 编过错高度和时间 / 怎样和请求栏对齐会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2184 | 记录 | 会与 372 / 304 / 413 糊成「看见 Misbehavior 里填了 height/time 就已经验过时间、已经对拟议头、已经定了奖惩」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Misbehavior height/time 栏正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 Prepare/Process 请求 height/time / 已经验过票上 Timestamp / 已经定了奖惩 标成另一对象 |
+
 | A2175 | 高 | 看见 Misbehavior.validator 是过错验证者 / 看见填了 validator 会被写成已经 slashed，或当成已经罚没 | 官方 Misbehavior Fields：validator is The offending validator |
 | A2176 | 高 | 看见 Misbehavior.validator 只是 address+power 的 Validator 结构 / 看见填了 validator 会被写成已经是 VoteInfo.validator 那种按到场定奖惩，或当成已经 CommitInfo.votes 里那份 interchangeable | 官方 Validator：address + power；Used as part of VoteInfo within CommitInfo |
 | A2177 | 高 | 看见 Misbehavior.validator / 看见有 address 和 power 会被写成已经是 ValidatorUpdate，或当成已经改了集合 | 官方 ValidatorUpdate：Used to tell CometBFT to update the validator set；Validator 不带 PubKey |
