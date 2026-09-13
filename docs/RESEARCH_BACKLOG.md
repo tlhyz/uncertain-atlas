@@ -23,7 +23,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P1-01 | Download BTC/ETH/SOL aggTrades (auto start date) | in_progress | BTC 91d OK; ETH 18+/87d downloading 2024-09-05→11-30; SOL queued |
+| P1-01 | Download BTC/ETH/SOL aggTrades (auto start date) | in_progress | BTC 91d OK; ETH 57+/87d (39.6M rows manifest); SOL queued after ETH |
 | P1-02 | Download SOXLUSDT aggTrades (detect earliest) | done | 65 days 2026-07-09→09-11 |
 | P1-03 | Download SNXXUSDT aggTrades (detect earliest) | done | 65 days |
 | P1-04 | Run `build_manifest.py` + sha256 all files | done | data/manifests/*.json |
@@ -33,7 +33,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-08 | Cross-check tick OHLCV vs kline (SNXX) | done | lazy validation passed |
 | P1-09 | Document data gaps in manifest notes | done | Sep-12 empty; ETH/SOL noted |
 | P1-10 | Gate download script smoke test BTC_USDT | done | 720 bars 1h; scripts/download_gate.py path fix |
-| P1-11 | Full 65d Binance tick backtest SOXL/SNXX | in_progress | restarted with skip flags; benchmarks+seed_windows only; tmux p1-11-backtest |
+| P1-11 | Full 65d Binance tick backtest SOXL/SNXX | in_progress | benchmarks running 10 B1–B10 tick-precise; ~4min elapsed at checkpoint |
 
 ---
 

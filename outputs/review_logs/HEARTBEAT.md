@@ -14,4 +14,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T01:22Z | TASK-0012 done | dual report Q1-Q15 from measured payload; C-02 fixed; 122 tests
 2026-09-13T01:42Z | P1-01 in_progress | ETH download 2024-09-05→11-30; fixed download_binance.py + data_quality.yaml
 2026-09-13T01:42Z | P1-11 in_progress | killed stale dual runs; restarted 65d with skip flags; DATA_QUALITY PASS
+2026-09-13T01:45Z | P1-01 checkpoint | ETH 57d cached, manifest 39.6M rows; SOL queued; partial build_manifest
+2026-09-13T01:45Z | P1-11 running | benchmarks B1–B10 tick-precise 65d; no report yet
 ```
