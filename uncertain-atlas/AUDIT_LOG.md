@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2195 | 高 | 看见 ProcessProposal 里 Application MAY 像处理 FinalizeBlock 那样整块执行 / 看见 immediate execution 跑过了 会被写成已经交差，或当成已经是 ExecuteTxState | 官方 ProcessProposal Usage：The Application may fully execute the block as though it was handling FinalizeBlock; MAY fully execute the block (immediate execution) |
+| A2196 | 高 | 看见 any resulting state changes must be kept as candidate state / Application should be ready to discard it in case another block is decided / 看见留着 会被写成已经改了上一份已提交状态，或当成已经 Process 回了 Accept 就已经换工作状态 | 官方 ProcessProposal Usage：However, any resulting state changes must be kept as candidate state, and the Application should be ready to discard it in case another block is decided |
+| A2197 | 高 | 看见 Application checks/processes the proposed block, which is read-only / 看见处理了 会被写成已经改了 s_{p,h-1}，或当成已经 async 了还能 Reject | 官方 ProcessProposal When：The Application checks/processes the proposed block, which is read-only; async path will not be able to reject the block |
+| A2198 | 中 | 怎样实现 candidate 缓存 / 怎样在 Finalize 套用 / 怎样限制内存会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2199 | 记录 | 会与 311 / 349 / 354 / 430 糊成「看见 Process 跑过就已经交差、已经是 ExecuteTxState、已经改了已提交状态」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposal 候选执行正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 / 已经是 ExecuteTxState / 已经改了已提交状态 标成另一对象 |
+
 | A2190 | 高 | 看见 Prepare 执行准备提案时 MAY 产出块事件或交易事件 / 看见先跑了 会被写成已经在 PrepareProposalResponse 里交回，或当成已经 Prepare 返回时引擎就已经收到 | 官方 PrepareProposal Usage：may produce block events or transaction events; PrepareProposalResponse only txs |
 | A2191 | 高 | 看见应用 MUST 把这些事件留到块决定之后 / 看见留着 会被写成已经 Process 时就交出去，或当成已经 prevote nil / REJECT 时就可以丢掉不算 | 官方 PrepareProposal Usage：must keep those events until a block is decided |
 | A2192 | 高 | 看见然后经 FinalizeBlockResponse 交给 CometBFT / 看见 Finalize 回了 events 会被写成已经是 CheckTxResponse.events，或当成已经是 ExecTxResult.events / 已经像 Code/Data 那样印进 LastResultsHash | 官方 PrepareProposal Usage：pass them on to CometBFT via FinalizeBlockResponse |

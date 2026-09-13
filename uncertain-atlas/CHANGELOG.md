@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 452）
+
+- CometBFT ProcessProposal 候选执行正式三事工作实例（官方 ABCI++ Methods ProcessProposal Usage / When，实现 / ProcessProposal 候选执行正式三事，不另写 19 节）：看见 ProcessProposal 里 Application MAY 像处理 FinalizeBlock 那样整块执行不是已经交差 / 已经是 ExecuteTxState。看见任何 resulting state changes 必须留作 candidate state、另一块被决定时要能丢掉不是已经改了已提交状态 / 已经 Process 回了 Accept 就已经换工作状态。看见 Application checks/processes the proposed block, which is read-only 不是已经改了上一份已提交状态 / 已经 async 了还能 Reject。ProcessProposal 候选执行正式三事不是不变量 311，也不是不变量 349，也不是不变量 354 / 430。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 452；语料 C456；模式 name-the-proccand-bar；反模式 proccand-sold-as-commit；L10.3 第 448 条。填 L4.4 / CometBFT 档案 ProcessProposal 候选执行正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样实现 candidate 缓存、怎样在 Finalize 套用、怎样限制内存。不编博物馆页。不另写 19 节。不与 311 / 349 / 354 / 430 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经交差 / 已经是 ExecuteTxState / 已经改了已提交状态 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 451）
 
 - CometBFT Prepare 事件保留路径正式三事工作实例（官方 ABCI++ Methods PrepareProposal Usage，实现 / Prepare 事件保留路径正式三事，不另写 19 节）：看见 Prepare 执行准备提案时 MAY 产出块事件或交易事件不是已经在 PrepareProposalResponse 里交回 / 已经 Prepare 返回时引擎就已经收到。看见应用 MUST 把这些事件留到块决定之后不是已经 Process 时就交出去 / 已经 prevote nil / REJECT 时就可以丢掉不算。看见然后经 FinalizeBlockResponse 交给 CometBFT 不是已经是 CheckTxResponse.events / ExecTxResult.events / 已经像 Code/Data 那样印进 LastResultsHash。Prepare 事件保留路径正式三事不是不变量 357，也不是不变量 431，也不是不变量 381/446。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
