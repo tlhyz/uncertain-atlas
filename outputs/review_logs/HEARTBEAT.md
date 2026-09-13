@@ -41,4 +41,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T03:35Z | P1-11 running | 111+ min; DUAL_REPORT pending
 2026-09-13T03:45Z | P2-02 running | 62+ min; ~15min/level; expect completion ~65-70min total
 2026-09-13T03:45Z | P1-11 running | 120+ min (~2h); DUAL_REPORT pending
+2026-09-13T03:53Z | P2-02 running | 70+ min; leverage scan still active (exceeded 65min est)
+2026-09-13T03:53Z | P1-11 running | 130+ min; DUAL_REPORT pending
 ```
