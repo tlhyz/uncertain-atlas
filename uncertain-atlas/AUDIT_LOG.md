@@ -4467,6 +4467,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2141 | 高 | 看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序 / 看见集合写入 store 时顺序也落盘 会被写成已经由应用排过，或当成已经是收到票时的顺序 | 官方 Notes：CometBFT guarantees the votes ordering through its logic to update the validator set; ordering persisted when validator set saved in the store |
 | A2142 | 高 | 看见造 ExtendedCommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 CommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the ExtendedCommitInfo, ensuring order is maintained from the persisted validator set |
 | A2143 | 中 | 怎样写 ExtendedCommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2145 | 高 | 看见 VoteInfo 与 ExtendedVoteInfo Usage 都写 allowing for rewards based on validator availability / 看见同一句 会被写成已经奖罚完，或当成已经交差 | 官方 Usage：allowing for rewards based on validator availability |
+| A2146 | 高 | 看见 VoteInfo Usage 写 typically extracted from a proposed or decided block / 看见 typically extracted 会被写成已经从本进程 CometBFT 数据结构抽出，或当成已经是 Prepare 里的 ExtendedVoteInfo | 官方 VoteInfo Usage：This information is typically extracted from a proposed or decided block |
+| A2147 | 高 | 看见 ExtendedVoteInfo Usage 写 extracted from CometBFT's data structures in the local process / 看见 extracted from local process 会被写成已经 typically extracted from proposed or decided block，或当成已经是 Process/Finalize 里的 CommitInfo 同一路 | 官方 ExtendedVoteInfo Usage：This information is extracted from CometBFT's data structures in the local process |
+| A2148 | 中 | 怎样写 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事 / 怎样读 block_id_flag / 怎样分 Prepare 和 Process 路径 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2149 | 记录 | 会与 365 / 369 / 425 糊成「看见 block_id_flag 就已经奖罚完、Prepare 和 Process 是同一路」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经奖罚完 / 已经从本进程抽出 / 已经和 CommitInfo 同一路 标成另一对象 |
+
 | A2144 | 记录 | 会与 365 / 369 / 394 糊成「看见 Prepare 里有 ExtendedCommitInfo 就已经按投票权排好、已经进了块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedCommitInfo Notes 票序正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经进了块 / 已经由应用排过 / 已经从拟议块或已决块抽出 标成另一对象 |
 
 

@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 442）
+
+- CometBFT VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事工作实例（官方 ABCI++ Methods Data Types VoteInfo Usage / ExtendedVoteInfo Usage，实现 / VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事，不另写 19 节）：看见 VoteInfo 与 ExtendedVoteInfo Usage 都写 allowing for rewards based on validator availability 不是已经奖罚完 / 已经交差。看见 VoteInfo 通常从拟议块或已决块抽出不是已经从本进程抽出 / 已经是 Prepare 里的 ExtendedVoteInfo。看见 ExtendedVoteInfo 从本进程 CometBFT 数据结构抽出不是已经 typically extracted from proposed or decided block / 已经是 Process/Finalize 里的 CommitInfo 同一路。VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事不是不变量 365，也不是不变量 369，也不是不变量 425。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 442；语料 C446；模式 name-the-vi-usageavail-extract；反模式 viusageavail-sold-as-samepath；L10.3 第 438 条。填 L4.4 / CometBFT 档案 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事。不编博物馆页。不另写 19 节。不与 365 / 369 / 425 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经奖罚完、已经从本进程抽出、已经和 CommitInfo 同一路 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
 ## 2026-09-13（续 441）

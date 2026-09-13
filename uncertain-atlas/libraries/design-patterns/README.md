@@ -320,6 +320,7 @@
 - [name-the-proc-req-rest](name-the-proc-req-rest.md)
 - [name-the-ext-vi-table](name-the-ext-vi-table.md)
 - [name-the-fin-req](name-the-fin-req.md)
+- [name-the-vi-usageavail-extract](name-the-vi-usageavail-extract.md)
 - [name-the-ext-ci-notes-order](name-the-ext-ci-notes-order.md)
 - [name-the-ext-vi-usage-expose](name-the-ext-vi-usage-expose.md)
 - [name-the-ext-appgen](name-the-ext-appgen.md)
