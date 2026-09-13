@@ -4409,6 +4409,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2093 | 中 | 怎样写 Finalize 回包栏 / 怎样编 events / 怎样编 ValidatorUpdate 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2094 | 记录 | 会与 357 / 316 / 35 糊成「看见回了 Finalize 回包栏就已经印进本头」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经印进本头 / 已经是 CheckTx 回包 / 已经在 H+1 换人 标成另一对象 |
 
+| A2095 | 高 | 看见 FinalizeBlockResponse.consensus_param_updates 是对 gas、大小和其它共识相关参数的改动 / 看见回了 consensus_param_updates 会被写成已经在块 H 生效，或当成已经是只填一个字段就只改这一项 | 官方 Usage：consensus_param_updates returned for block H apply to the consensus params for block H+1 |
+| A2096 | 高 | 看见 FinalizeBlockResponse.app_hash 是应用状态默克尔根 / 看见回了 app_hash 会被写成已经写进下一块头的 AppHash，或当成已经是本头 AppHash | 官方 Usage：app_hash is included as the Header.AppHash in the next block |
+| A2097 | 高 | 看见 FinalizeBlockResponse.next_block_delay 是这块 Commit 后再开下一高的等待 / 看见回了 next_block_delay 会被写成已经是本地 timeout_commit，或当成已经是 ConsensusParams.block 块间隔 | 官方 Usage：Previously timeout_commit in CometBFT config；Deterministic = No |
+| A2098 | 中 | 怎样写 Finalize 回包末栏 / 怎样编 ConsensusParams / 怎样填 next_block_delay 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2099 | 记录 | 会与 319 / 404 / 52 糊成「看见回了 Finalize 回包末栏就已经在块 H 生效」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经在块 H 生效 / 已经写进下一块头 / 已经是本地 timeout_commit 标成另一对象 |
+
 
 
 

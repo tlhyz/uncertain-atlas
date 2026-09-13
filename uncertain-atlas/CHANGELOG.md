@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-13（续 432）
+
+- CometBFT Finalize 回包末栏工作实例（官方 ABCI++ Methods FinalizeBlock Response / Usage，实现 / Finalize 回包末栏，不另写 19 节）：看见 FinalizeBlockResponse.consensus_param_updates 是对 gas、大小和其它共识相关参数的改动不是已经在块 H 生效。看见 FinalizeBlockResponse.app_hash 是应用状态默克尔根不是已经写进下一块头的 AppHash。看见 FinalizeBlockResponse.next_block_delay 是这块 Commit 后再开下一高的等待不是已经是本地 timeout_commit。Finalize 回包末栏不是不变量 319，也不是不变量 404，也不是不变量 52。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 432；语料 C436；模式 name-the-fin-resp-end；反模式 finrespend-sold-as-params；L10.3 第 428 条。填 L4.4 / CometBFT 档案 Finalize 回包末栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Finalize 回包末栏、怎样编 ConsensusParams、怎样填 next_block_delay。不编博物馆页。不另写 19 节。不与 319 / 404 / 52 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经在块 H 生效、已经写进下一块头、已经是本地 timeout_commit 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-12（续 431）
 
 - CometBFT Finalize 回包栏工作实例（官方 ABCI++ Methods FinalizeBlock Response / Usage，实现 / Finalize 回包栏，不另写 19 节）：看见 FinalizeBlockResponse.events 是给索引用的类型键值事件不是已经印进本头。看见 FinalizeBlockResponse.tx_results 是执行这块各笔交易得到的结果列表不是已经是 CheckTx 回包。看见 FinalizeBlockResponse.validator_updates 是对验证者集合的改动不是已经在 H+1 换人。Finalize 回包栏不是不变量 357，也不是不变量 316，也不是不变量 35。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
