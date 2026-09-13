@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 465）
+
+- CometBFT FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage，实现 / FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事，不另写 19 节）：看见 equiv 不是已经四门已经结算 / 已经交差。看见收成一门不是已经没有 Prepare/Process。看见等价于旧三步不是已经是 Contains the fields of the newly decided block / 已经 Process 就不需要 Finalize。FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事不是不变量 363，也不是不变量 33，也不是不变量 461。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 465；语料 C469；模式 name-the-finequiv-bar；反模式 finequiv-sold-as-gates；L10.3 第 461 条。填 L4.4 / CometBFT 档案 FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 Finalize 回包、怎样映射旧三步。不编博物馆页。不另写 19 节。不与 363 / 33 / 461 / 460 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经四门已经结算 / 已经没有 Prepare/Process / 已经 Process 就不需要 Finalize 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 464）
 
 - CometBFT FinalizeBlock tx_results Code==0 完全合法正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage + Transaction Results，实现 / FinalizeBlock tx_results Code==0 完全合法正式三事，不另写 19 节）：看见 Code == 0 only if fully valid 不是已经 CheckTx 过了 / 已经 Process Accept。看见 fully valid 不是已经 Code != 0 那种没进块。看见回了 tx_results 不是已经 Finalize 改了就已经交差 / 已经 Code Data 印进本头。FinalizeBlock tx_results Code==0 完全合法正式三事不是不变量 404，也不是不变量 316，也不是不变量 335。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
