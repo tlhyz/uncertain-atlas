@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2170 | 高 | 看见 MisbehaviorType UNKNOWN 只是未知过错枚举 / 看见填了 UNKNOWN 会被写成已经归类成 DUPLICATE_VOTE，或当成已经罚没 | 官方 MisbehaviorType：UNKNOWN is 0 |
+| A2171 | 高 | 看见 MisbehaviorType DUPLICATE_VOTE 只是双签枚举 / 看见填了 DUPLICATE_VOTE 会被写成已经 slashed，或当成已经 LIGHT_CLIENT_ATTACK interchangeable | 官方 MisbehaviorType：DUPLICATE_VOTE is 1 |
+| A2172 | 高 | 看见 MisbehaviorType LIGHT_CLIENT_ATTACK 只是轻客户端攻击枚举 / 看见填了 LIGHT_CLIENT_ATTACK 会被写成已经是 DUPLICATE_VOTE，或当成已经罚没 | 官方 MisbehaviorType：LIGHT_CLIENT_ATTACK is 2 |
+| A2173 | 中 | 怎样写 MisbehaviorType 枚举 / 怎样填 type / 怎样区分三种过错会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2174 | 记录 | 会与 372 / 413 / 21 糊成「看见 Misbehavior.type 填了枚举就已经罚没、已经归类、已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 MisbehaviorType 枚举正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经归类 / 已经 slashed / enum 三值 interchangeable 标成另一对象 |
+
 | A2165 | 高 | 看见 ExecTxResult.events 是给交易建索引的类型键值事件 / 看见回了 events 会被写成已经印进本头，或当成已经像 Code/Data 那样必须确定 | 官方 Fields：events is Type & Key-Value events for indexing transactions (e.g. by account); Deterministic = No |
 | A2166 | 高 | 看见 ExecTxResult.events 标成非确定 / 看见有 events 会被写成已经 Code / Data 编进结构再哈希进下一高度块头，或当成已经交差 | 官方 Deterministic = No; app requirements: Events 只供建索引 |
 | A2167 | 高 | 看见 ExecTxResult.events 在 tx_results 里逐笔出现 / 看见每笔有 events 会被写成已经是 FinalizeBlockResponse.events，或当成已经是 CheckTxResponse.events | 官方：ExecTxResult 在 tx_results 列表里；FinalizeBlockResponse.events 是块级 |
