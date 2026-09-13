@@ -40,7 +40,7 @@
 | [TASK-0009](tasks/TASK-0009.md) | ACCOUNTING_INVARIANTS + property tests | **done** | [TASK_RESULT](tasks/TASK_RESULT/TASK-0009.md) |
 | [TASK-0010](tasks/TASK-0010.md) | test_no_future_leak.py | **done** | [TASK_RESULT](tasks/TASK_RESULT/TASK-0010.md) |
 | [TASK-0011](tasks/TASK-0011.md) | Fix build_manifest rows + re-download ETH/SOL | **done** | merged into TASK-0008 manifest rebuild |
-| [TASK-0012](tasks/TASK-0012.md) | Fix dual report Q-answers from actual sweeps | **pending** | TASK-0005 |
+| [TASK-0012](tasks/TASK-0012.md) | Fix dual report Q-answers from actual sweeps | **done** | [TASK_RESULT](tasks/TASK_RESULT/TASK-0012.md) |
 | [TASK-0013](tasks/TASK-0013.md) | Complete 65d Binance tick run + review log | **in_progress** | P1-11 (pre-Phase-1) |
 | [TASK-0014](tasks/TASK-0014.md) | Merge PR #8 to main | **blocked** | human |
 
