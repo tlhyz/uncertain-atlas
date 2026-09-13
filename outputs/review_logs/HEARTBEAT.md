@@ -95,4 +95,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T05:44Z | P2-04 done | FAIL SOL all lev -88.01%; no sweet spot Q-crypto-1 partial
 2026-09-13T05:50Z | P2-08 done | regime label sample; C1 99%+ RANGE_LOW_VOL
 2026-09-13T05:50Z | P2-02 running | ~187min; P2-03 ETH 1.5x; P2-05/06/07 grid scans active
+2026-09-13T06:00Z | timer research-continue | pytest 128 pass
+2026-09-13T06:00Z | P2-09 done | CONDITIONAL PASS sell-the-winner structural; C1 0 BULL bars
+2026-09-13T06:00Z | P2-02 running | ~197min; no BTC CRYPTO_REPORT yet
 ```

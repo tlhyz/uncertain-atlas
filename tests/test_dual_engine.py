@@ -16,7 +16,7 @@ from qtb.dual.crypto_fsm import CryptoAssetFSM, CryptoBookFSM
 from qtb.dual.portfolio import run_dual_portfolio
 from qtb.dual.signals import compute_anchor, dd_tier, drawdown_from_anchor, grid_mix_fractions
 from qtb.dual.tech_fsm import TechFSM
-from qtb.dual.universe import DRAWDOWN_SETS, DualParams, TECH_BOOK, plan_presets
+from qtb.dual.universe import DRAWDOWN_SETS, DualParams, CryptoParams, TECH_BOOK, plan_presets
 
 
 def _bars(closes: list[float], start="2026-01-01", freq="1h") -> pd.DataFrame:
@@ -111,6 +111,19 @@ def test_crypto_fsm_independent():
     # unified should differ
     exp_u = fsm.on_bar(n - 1, bars, tech_signal_dd=-0.20, unified=True)
     assert exp["BTC"].regime != exp_u["BTC"].regime or exp["BTC"].long_dir_frac != exp_u["BTC"].long_dir_frac
+
+
+def test_bull_dynamic_sell_the_winner_mix():
+    """P2-09: BULL + dynamic mix uses strong 20/80 — directional > grid (sell-the-winner)."""
+    params = CryptoParams(grid_mix="dynamic", leverage=1.5)
+    fsm = CryptoAssetFSM("BTC", params)
+    g_strong, d_strong = grid_mix_fractions("dynamic", "strong")
+    assert (g_strong, d_strong) == (0.20, 0.80)
+    exp = fsm.exposure("BULL")
+    assert exp.regime == "BULL"
+    assert exp.long_dir_frac > exp.long_grid_frac
+    # 20/80 mix × util 0.65 × lev 1.5 → dir/grid ratio = 4.0
+    assert abs(exp.long_dir_frac / exp.long_grid_frac - 4.0) < 1e-6
 
 
 def test_dual_portfolio_runs():
