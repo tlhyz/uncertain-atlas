@@ -335,6 +335,7 @@
 - [name-the-chktxtype-bar](name-the-chktxtype-bar.md)
 - [name-the-offersnaptrust-bar](name-the-offersnaptrust-bar.md)
 - [name-the-chktxlane-bar](name-the-chktxlane-bar.md)
+- [name-the-commitretaincaution-bar](name-the-commitretaincaution-bar.md)
 - [name-the-commitpersist-bar](name-the-commitpersist-bar.md)
 - [name-the-finmorepre-bar](name-the-finmorepre-bar.md)
 - [name-the-finwhenparts-bar](name-the-finwhenparts-bar.md)

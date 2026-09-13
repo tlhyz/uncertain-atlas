@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 491）
+
+- CometBFT Commit Usage retain_height caution 正式三事工作实例（官方 ABCI++ Methods Commit Usage Use CommitResponse.retain_height with caution! / all nodes remove historical blocks permanently lost / Historical blocks may also be required for auditing replay light client verification，实现 / Commit Usage retain_height caution 正式三事，不另写 19 节）：看见 Use retain_height with caution 不是 retain_height 默认 0 就等于已经在剪 / persist signal bundled interchangeable。看见 all nodes remove historical blocks 不是已经能从创世再装 / 已经开了 state sync 就交差。看见 Historical blocks required for auditing / replay / light client 不是 persist signal bundled interchangeable。Commit Usage retain_height caution 正式三事不是不变量 366，也不是不变量 481，也不是不变量 323。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 491；语料 C495；模式 name-the-commitretaincaution-bar；反模式 commitretaincaution-sold-as-pruning；L10.3 第 487 条。填 L4.4 / CometBFT 档案 Commit Usage retain_height caution 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样填 retain_height、怎样删块、怎样开 state sync。不编博物馆页。不另写 19 节。不与 366 / 481 / 323 / 38 / 320 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经在剪 / persist signal 已经交差 / 已经能从创世再装 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 490）
 
 - CometBFT CheckTx Usage Guardian 正式三事工作实例（官方 ABCI++ Methods CheckTx Usage Guardian of the mempool: every node runs `CheckTx` before letting a transaction into its local mempool，实现 / CheckTx Usage Guardian 正式三事，不另写 19 节）：看见 Guardian of the mempool / 内存池守卫 不是已经 Technically optional / 四门已经结算 / validate-no-apply bundled interchangeable。看见 every node runs CheckTx before letting into local mempool 不是已经流言 / Check 通过就是已进提案 / forever valid。看见 before letting into its local mempool 不是已经保证不重放 / tx source bundled / Code≠0 rejected bundled interchangeable。CheckTx Usage Guardian 正式三事不是不变量 373，也不是不变量 33，也不是不变量 488。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

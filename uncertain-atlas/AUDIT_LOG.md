@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2390 | 高 | 看见 Use CommitResponse.retain_height with caution! / 看见要慎用 retain_height 会被写成已经 retain_height defaults to 0 (retain all) / 已经 blocks below this height may be removed 那种回了高度就等于已经在剪，或当成已经 Commit Usage persist signal bundled 第三件事 interchangeable | 官方 Commit Usage：Use `CommitResponse.retain_height` with caution! |
+| A2391 | 高 | 看见 If all nodes in the network remove historical blocks / permanently lost / no new nodes bootstrap unless state sync 会被写成已经能从创世再装，或当成已经 retain_height 回了非零高度就等于已经在剪 / 已经切进共识就有完整历史 | 官方 Commit Usage：If all nodes in the network remove historical blocks then this data is permanently lost, and no new nodes will be able to join the network and bootstrap, unless state sync is enabled on the chain |
+| A2392 | 高 | 看见 Historical blocks may also be required for auditing / replay of non-persisted heights / light client verification 会被写成已经 persist signal bundled interchangeable，或当成已经 retain_height 默认 0 就等于已经在剪 / caution 已经验完 | 官方 Commit Usage：Historical blocks may also be required for other purposes, e.g. auditing, replay of non-persisted heights, light client verification, and so on |
+| A2393 | 中 | 怎样填 retain_height / 怎样删块 / 怎样开 state sync 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2394 | 记录 | 会与 366 / 481 / 323 / 38 / 320 糊成「看见 caution 段落就已经在剪、已经 persist signal 交差、已经能从创世再装」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit Usage retain_height caution 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经在剪 / persist signal 已经交差 / 已经能从创世再装 标成另一对象 |
+
 | A2385 | 高 | 看见 Guardian of the mempool / 看见内存池守卫 会被写成已经 Technically optional / 可以不跑 CheckTx，或当成已经四门已经结算 / validate-no-apply bundled 第三件事 interchangeable | 官方 CheckTx Usage：Guardian of the mempool |
 | A2386 | 高 | 看见 every node runs CheckTx before letting a transaction into its local mempool / 看见每条节点先跑 CheckTx 才让进本地池 会被写成已经 RPC broadcast 别的节点也会跑 / 已经进了池就开始流言，或当成已经 Check 通过就是已进提案 / CheckTx 过了就 forever valid | 官方 CheckTx Usage：every node runs `CheckTx` before letting a transaction into its local mempool |
 | A2387 | 高 | 看见 before letting a transaction into its local mempool / 看见才让进本地池 会被写成已经 may come from external user or another node 交差 / 已经保证不重放，或当成已经 CheckTx Usage Code≠0 rejected bundled interchangeable | 官方 CheckTx Usage：… before letting a transaction into its local mempool |

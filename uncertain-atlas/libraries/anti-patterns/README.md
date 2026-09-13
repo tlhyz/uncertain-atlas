@@ -440,6 +440,7 @@
 - [chktxtype-sold-as-recheck](chktxtype-sold-as-recheck.md)
 - [offersnaptrust-sold-as-metadata](offersnaptrust-sold-as-metadata.md)
 - [chktxlane-sold-as-nolane](chktxlane-sold-as-nolane.md)
+- [commitretaincaution-sold-as-pruning](commitretaincaution-sold-as-pruning.md)
 - [commitpersist-sold-as-finalize](commitpersist-sold-as-finalize.md)
 - [finmorepre-sold-as-timeout](finmorepre-sold-as-timeout.md)
 - [finwhenparts-sold-as-partial](finwhenparts-sold-as-partial.md)
