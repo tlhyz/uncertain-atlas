@@ -4480,6 +4480,13 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+
+| A2240 | 高 | 看见 FinalizeBlock Contains the fields of the newly decided block / 看见含刚决定那块的字段 会被写成已经是四门已经结算，或当成已经跑过 Process | 官方 FinalizeBlock Usage：Contains the fields of the newly decided block |
+| A2241 | 高 | 看见 newly decided block 的字段 / 看见有刚决定那块 会被写成已经是 ProcessProposal Contains all information needed to fully execute it，或当成已经是 ProcessProposalRequest 拟议块字段 interchangeable | 官方 FinalizeBlock Usage vs ProcessProposal Usage |
+| A2242 | 高 | 看见 CometBFT 会把 FinalizeBlockRequest 全部字段填齐、即使 Prepare/Process 已经传过 / 看见又填一遍 会被写成已经 decided_last_commit 和 proposed_last_commit 就可以混用，或当成已经 Prepare/Process 同一套字段就已经是刚决定那块的字段 | 官方 FinalizeBlock Usage：Currently, CometBFT will fill up all fields in FinalizeBlockRequest, even if they were already passed on via PrepareProposalRequest or ProcessProposalRequest |
+| A2243 | 中 | 怎样写 FinalizeBlockRequest 各栏 / 怎样和 Process 请求栏对齐会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2244 | 记录 | 会与 407 / 422 / 453 / 363 糊成「看见填了 Finalize 字段就已经是四门已经结算、已经是 Process 含全部信息、decided 和 proposed 字段 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock 含刚决定那块字段正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是四门已经结算 / 已经是 Process 含全部信息 / 已经 decided 和 proposed 就可以混用 标成另一对象 |
+
 | A2235 | 高 | 看见应用确定地执行 FinalizeBlockRequest.txs 再交还控制权 / 看见先跑了 会被写成已经交差，或当成已经可以像 Prepare 那样依赖非确定值 | 官方 FinalizeBlock Usage：executes the transactions in FinalizeBlockRequest.txs deterministically before returning control to CometBFT |
 | A2236 | 高 | 看见也可以套用同一块先前经 PrepareProposal 或 ProcessProposal 跑出的 candidate state / 看见套用了 会被写成已经是 ExecuteTxState，或当成已经 Process 回了 Accept 就已经换工作状态 | 官方 FinalizeBlock Usage：Alternatively, it can apply the candidate state corresponding to the same block previously executed via PrepareProposal or ProcessProposal |
 | A2237 | 高 | 看见同一块先前经 Prepare 或 Process 执行过 / 看见有 candidate 会被写成已经不用再在 Finalize 执行，或当成已经 candidate 就不需要 Commit | 官方 FinalizeBlock Usage：previously executed via PrepareProposal or ProcessProposal vs Finalize execute / apply candidate |

@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 461）
+
+- CometBFT FinalizeBlock 含刚决定那块字段正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage，实现 / FinalizeBlock 含刚决定那块字段正式三事，不另写 19 节）：看见 Contains the fields of the newly decided block 不是已经是四门已经结算 / 已经跑过 Process。看见 newly decided block 的字段不是已经是 ProcessProposal 含执行所需全部信息 / 拟议块字段 interchangeable。看见全部字段填齐即使 Prepare/Process 已经传过不是已经 decided_last_commit 和 proposed_last_commit 就可以混用。FinalizeBlock 含刚决定那块字段正式三事不是不变量 407，也不是不变量 422，也不是不变量 453。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 461；语料 C465；模式 name-the-finnewfields-bar；反模式 finnewfields-sold-as-settled；L10.3 第 457 条。填 L4.4 / CometBFT 档案 FinalizeBlock 含刚决定那块字段正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 FinalizeBlockRequest 各栏、怎样和 Process 请求栏对齐。不编博物馆页。不另写 19 节。不与 407 / 422 / 453 / 363 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是四门已经结算 / 已经是 Process 含全部信息 / 已经 decided 和 proposed 就可以混用 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 460）
 
 - CometBFT FinalizeBlock 套用候选正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage，实现 / FinalizeBlock 套用候选正式三事，不另写 19 节）：看见确定执行 FinalizeBlockRequest.txs 不是已经交差 / 已经可以像 Prepare 那样依赖非确定值。看见套用 candidate state 不是已经是 ExecuteTxState / 已经 Process 回了 Accept 就已经换工作状态。看见同一块先前 Prepare 或 Process 执行过不是已经不用再在 Finalize 执行 / 已经 candidate 就不需要 Commit。FinalizeBlock 套用候选正式三事不是不变量 360，也不是不变量 408，也不是不变量 452。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
