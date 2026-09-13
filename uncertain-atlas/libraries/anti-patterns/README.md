@@ -431,6 +431,7 @@
 - [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
+- [finmerkle-sold-as-header](finmerkle-sold-as-header.md)
 - [finnewdec-sold-as-settled](finnewdec-sold-as-settled.md)
 - [finfill-sold-as-norepeat](finfill-sold-as-norepeat.md)
 - [finproc-sold-as-allvalidators](finproc-sold-as-allvalidators.md)

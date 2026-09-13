@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 475）
+
+- CometBFT FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage optional Merkle root / included as Header.AppHash in the next block / Later calls to Query can return proofs anchored in this Merkle root hash，实现 / FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事，不另写 19 节）：看见 optional Merkle root 不是已经是本头 AppHash / 已经印进本头。看见 included as Header.AppHash in the next block 不是已经写进下一块头 / 已经本头 AppHash 就已经是本高度交差。看见 Query proofs anchored 不是已经对上 AppHash / 已经是 ProofOp 按键查。FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事不是不变量 404，也不是不变量 432，也不是不变量 147。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 475；语料 C479；模式 name-the-finmerkle-bar；反模式 finmerkle-sold-as-header；L10.3 第 471 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样算 Merkle root、怎样写进下一块头、怎样回 Query 证明。不编博物馆页。不另写 19 节。不与 404 / 432 / 147 / 467 / 325 / 470 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经是本头 AppHash / 已经写进下一块头 / Query 已经对上 AppHash 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 474）
 
 - CometBFT FinalizeBlock Contains newly decided block fields 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage Contains the fields of the newly decided block / newly decided block vs proposed / fields of the newly decided block，实现 / FinalizeBlock Contains newly decided block fields 正式三事，不另写 19 节）：看见 Contains the fields of the newly decided block 不是已经是四门已经结算 / 已经跑过 Process。看见 newly decided block 不是 proposed block / ProcessProposal 含执行所需全部信息。看见 fields of the newly decided block 不是 height/time match header 就代表对象已经分清 / fill all fields 就代表 decided 和 proposed interchangeable。FinalizeBlock Contains newly decided block fields 正式三事不是不变量 461，也不是不变量 407，也不是不变量 473。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

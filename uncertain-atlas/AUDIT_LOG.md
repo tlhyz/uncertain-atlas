@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2310 | 高 | 看见 FinalizeBlockResponse.app_hash contains an (optional) Merkle root hash of the application state / 看见 optional Merkle root 会被写成已经是本头 AppHash，或当成已经印进本头 / 已经交差 | 官方 FinalizeBlock Usage：contains an (optional) Merkle root hash of the application state |
+| A2311 | 高 | 看见 FinalizeBlockResponse.app_hash is included as the Header.AppHash in the next block / 看见会写进下一块头 会被写成已经写进下一块头，或当成已经本头 AppHash 就已经是本高度交差 | 官方 FinalizeBlock Usage：is included as the Header.AppHash in the next block |
+| A2312 | 高 | 看见 Later calls to Query can return proofs anchored in this Merkle root hash / 看见 Query 可以拿这份根当锚 会被写成已经对上 AppHash，或当成已经是 ProofOp 那种按键查 | 官方 FinalizeBlock Usage vs Query proofs anchored vs ProofOp 325 |
+| A2313 | 中 | 怎样算 Merkle root / 怎样写进下一块头 / 怎样回 Query 证明会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2314 | 记录 | 会与 404 / 432 / 147 / 467 / 325 / 470 糊成「看见回了 app_hash 就已经是本头 AppHash、已经写进下一块头、Query 已经对上 AppHash」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是本头 AppHash / 已经写进下一块头 / Query 已经对上 AppHash 标成另一对象 |
+
 | A2305 | 高 | 看见 FinalizeBlock Contains the fields of the newly decided block / 看见含刚决定那块的字段 会被写成已经是四门已经结算，或当成已经跑过 Process / 已经交差 | 官方 FinalizeBlock Usage：Contains the fields of the newly decided block |
 | A2306 | 高 | 看见 newly decided block / 看见刚决定那块 会被写成 proposed block，或当成已经是 ProcessProposal Contains all information needed to fully execute it / ProcessProposalRequest 拟议块字段 interchangeable | 官方 FinalizeBlock Usage vs ProcessProposal 含执行所需全部信息 453 |
 | A2307 | 高 | 看见 fields of the newly decided block / 看见刚决定那块的字段 会被写成 height/time match proposed block header 就代表对象已经分清，或当成 fill up all fields even if Prepare/Process passed 就代表 newly decided 和 proposed interchangeable | 官方 FinalizeBlock Usage vs height/time match header 462 / fill all fields 473 |
