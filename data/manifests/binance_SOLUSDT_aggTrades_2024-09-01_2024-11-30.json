@@ -22,6 +22,11 @@
       "bytes": 44321766
     },
     {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-04.csv",
+      "sha256": "957620a79bd4d77db5ad3ee3f856657f059e48cd99a9c5a558a800b589f6b04c",
+      "bytes": 48027559
+    },
+    {
       "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-05.csv",
       "sha256": "7b732a780970c029dba7bc6910dc364630446573842ddfd76871d7a17d97fd88",
       "bytes": 39376458
@@ -457,11 +462,11 @@
       "bytes": 12004826
     }
   ],
-  "rows": 44222849,
+  "rows": 45143557,
   "missing_periods": [],
   "notes": [
-    "day_files=90",
-    "rows_est=44222849"
+    "day_files=91",
+    "rows_est=45143557"
   ],
-  "created_at": "2026-09-13T01:56:44.369339+00:00"
+  "created_at": "2026-09-13T02:52:47.361189+00:00"
 }

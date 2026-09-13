@@ -26,4 +26,9 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T02:32Z | P2-02 running | 8+ min BTC leverage; tick validation on 2184 bars
 2026-09-13T02:32Z | P1-11 running | 50+ min; still computing benchmarks
 2026-09-13T02:32Z | prep P2-03/04 | ETH/SOL klines cached; leverage scan configs added
+2026-09-13T02:43Z | P2-02 restart | skip_tick_validation; fixed BTC Sep-01 + SOL Sep-04 gaps; leverage scan running
+2026-09-13T02:43Z | P1-11 running | 62+ min; DUAL_REPORT pending
+2026-09-13T02:54Z | manifests | SOL 91d 45.1M rows (Sep-04 fixed); BTC/ETH 91d
+2026-09-13T02:54Z | P2-02 running | 11+ min leverage scan active
+2026-09-13T02:54Z | P1-11 running | 72+ min; DUAL_REPORT pending
 ```
