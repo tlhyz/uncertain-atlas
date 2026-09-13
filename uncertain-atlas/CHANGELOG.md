@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 470）
+
+- CometBFT FinalizeBlock Usage determinism 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage executes txs deterministically / app_hash MUST be deterministic / implementation MUST be deterministic for state machine replication，实现 / FinalizeBlock Usage determinism 正式三事，不另写 19 节）：看见 executes txs deterministically 不是已经可以像 Prepare 那样 / 已经套用 candidate 就不需要再执行。看见 app_hash MUST be deterministic 不是已经印进本头 / 已经 next_block_delay 非确定就代表整门非确定。看见 implementation MUST be deterministic for state machine replication 不是已经是 Req 11–12 / finfields bundled。FinalizeBlock Usage determinism 正式三事不是不变量 338，也不是不变量 342，也不是不变量 469。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 470；语料 C474；模式 name-the-findet-bar；反模式 findet-sold-as-prepare；L10.3 第 466 条。填 L4.4 / CometBFT 档案 FinalizeBlock Usage determinism 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 FinalizeBlock、怎样测确定性。不编博物馆页。不另写 19 节。不与 338 / 342 / 404 / 407 / 460 / 469 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经可以像 Prepare 那样 / 已经 next_block_delay 非确定就代表整门非确定 / 已经是 Req 11–12 或 finfields bundled 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 469）
 
 - CometBFT FinalizeBlockResponse next_block_delay 非确定正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Response / Usage，实现 / FinalizeBlockResponse next_block_delay 非确定正式三事，不另写 19 节）：看见 next_block_delay 非确定 / each node MAY 回不同值 不是已经 Finalize 必须确定 / 已经像 app_hash 那样必须确定。看见 depends on local wallclock / NTP 不是已经是 timeout_commit / ConsensusParams.block 块间隔。看见 Commit 后再开下一高 / set to 0 不是已经是槽位 / 已经最终 / 没有把规范 1s 抄进不确定。FinalizeBlockResponse next_block_delay 非确定正式三事不是不变量 432，也不是不变量 52，也不是不变量 342。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -431,6 +431,7 @@
 - [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
+- [findet-sold-as-prepare](findet-sold-as-prepare.md)
 - [fndelay-sold-as-slot](fndelay-sold-as-slot.md)
 - [finlock-sold-as-commit](finlock-sold-as-commit.md)
 - [finreturn-sold-as-header](finreturn-sold-as-header.md)
