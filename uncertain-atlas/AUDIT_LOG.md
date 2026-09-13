@@ -4457,6 +4457,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2133 | 中 | 怎样写 ExtendVote Response Usage application-generated 正式三事 / 怎样选 non_rp / 怎样挂到 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2134 | 记录 | 会与 418 / 358 / 438 糊成「看见应用回了扩展就已经签过」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote Response Usage application-generated 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经签过 / 已经包装 / 已经广播 Precommit 标成另一对象 |
 
+| A2135 | 高 | 看见 vote_extension 含发送验证者的扩展、签已由 CometBFT 验过 / 看见 can be empty 会被写成已经应用验完，或当成已经必须填内容 | 官方 Usage：vote_extension contains the sending validator's vote extension, whose signature was verified by CometBFT. It can be empty |
+| A2136 | 高 | 看见 extension_signature 已由 CometBFT 验过 / 看见 expose the signature to the application for further processing or verification 会被写成已经 Verify 过，或当成已经应用 finished verifying | 官方 Usage：extension_signature which was verified by CometBFT; expose for further processing or verification |
+| A2137 | 高 | 看见扩展启用时两份签都会在 / 看见没给 non_rp_vote_extension 时 non_rp_extension_signature 签空切片 会被写成已经只有一份签，或当成已经没 non_rp 就没有第二份签 | 官方 Usage：two signatures will be present if vote extensions are enable; signature will sign an empty slice |
+| A2138 | 中 | 怎样写 ExtendedVoteInfo Usage 暴露签正式三事 / 怎样再验签 / 怎样读空切片 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2139 | 记录 | 会与 369 / 421 / 358 糊成「看见 Prepare 里有 ExtendedVoteInfo 就已经应用验完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo Usage 暴露签正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经应用验完 / 已经 Verify 过 / 已经只有一份签 标成另一对象 |
+
 
 
 

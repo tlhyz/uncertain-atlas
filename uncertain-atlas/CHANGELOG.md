@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-13（续 440）
+
+- CometBFT ExtendedVoteInfo Usage 暴露签正式三事工作实例（官方 ABCI++ Methods Data Types ExtendedVoteInfo Usage，实现 / ExtendedVoteInfo Usage 暴露签正式三事，不另写 19 节）：看见 vote_extension 的签已由 CometBFT 验过、扩展可以空不是已经应用验完 / 已经必须填内容。看见 extension_signature 已由 CometBFT 验过、暴露给应用再处理不是已经应用验完 / 已经 Verify 过。看见扩展启用时两份签都在、没给 non_rp 就签空切片不是已经只有一份签 / 已经没 non_rp 就没有第二份签。ExtendedVoteInfo Usage 暴露签正式三事不是不变量 369，也不是不变量 421，也不是不变量 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 440；语料 C444；模式 name-the-ext-vi-usage-expose；反模式 extviusage-sold-as-exposed；L10.3 第 436 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo Usage 暴露签正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendedVoteInfo Usage 暴露签正式三事、怎样再验签、怎样读空切片。不编博物馆页。不另写 19 节。不与 369 / 421 / 358 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经应用验完、已经 Verify 过、已经只有一份签 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 439）
 
 - CometBFT ExtendVote Response Usage application-generated 正式三事工作实例（官方 ABCI++ Methods ExtendVote Usage，实现 / ExtendVote Response Usage application-generated 正式三事，不另写 19 节）：看见 ExtendVoteResponse.vote_extension 是应用生成的信息、将由 CometBFT 签名不是已经签过 / 已经包进 CanonicalVoteExtension。看见 ExtendVoteResponse.non_rp_extension 是应用生成的信息、将由 CometBFT 签名并挂到 Precommit、相对 vote_extension 不做重放保护不是已经和 vote_extension 同一份签法 / 已经有重放保护。看见 will be signed 并 attached to Precommit 不是已经广播 Precommit / 已经写进 last_commit。ExtendVote Response Usage application-generated 正式三事不是不变量 418，也不是不变量 358，也不是不变量 438。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
