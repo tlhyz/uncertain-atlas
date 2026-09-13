@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 506）
+
+- CometBFT PrepareProposal When return / use-as-proposal 正式三事工作实例（官方 ABCI++ Methods PrepareProposal When step 4 includes transaction list in return parameters / returns from the call；step 5 uses possibly modified block as proposal，实现 / PrepareProposal When return / use-as-proposal 正式三事，不另写 19 节）：看见 includes tx list in return 不是 raw proposal bundled（503） interchangeable / 已经能改这套就交差 interchangeable。看见 returns from call 不是 Process 紧跟 Prepare bundled（351） interchangeable / 已经不用再 Process interchangeable。看见 uses modified block as proposal 不是 validValue 跳过 Prepare（356） interchangeable / 已经 Process 八栏齐（453） interchangeable。PrepareProposal When return / use-as-proposal 正式三事不是不变量 503，也不是不变量 351 / 356 / 453 / 505。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 506；语料 C510；模式 name-the-preparewhen-return-bar；反模式 preparewhen-return-sold-as-bundled；L10.3 第 502 条。填 L4.4 / CometBFT 档案 PrepareProposal When return / use-as-proposal 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做填回包、怎样广播提案、怎样遵守 Usage MUST remove。不编博物馆页。不另写 19 节。不与 503 / 351 / 356 / 453 / 505 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 raw proposal bundled interchangeable / Process 紧跟 Prepare interchangeable / validValue 跳过 Prepare interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 505）
 
 - CometBFT PrepareProposal When collect / synchronous / manipulate 正式三事工作实例（官方 ABCI++ Methods PrepareProposal When collects outstanding txs from mempool in order of priority / creates block header / calls PrepareProposal / call is synchronous / Application can manipulate transactions / MAY fully execute candidate / MAY use vote extensions in commit info，实现 / PrepareProposal When collect / synchronous / manipulate 正式三事，不另写 19 节）：看见 collects in order of priority / creates header 不是 raw proposal bundled（503） interchangeable / 已经整池可见 interchangeable。看见 PrepareProposal call is synchronous 不是能在返回后再改裁决 interchangeable / 已经 Process 调用是同步的（354） interchangeable。看见 can manipulate transactions 不是 Prepare 改列表 bundled（355） interchangeable / 已经从内存池删掉 interchangeable / 已经候选交差 interchangeable。PrepareProposal When collect / synchronous / manipulate 正式三事不是不变量 356，也不是不变量 503 / 355 / 311 / 352。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
