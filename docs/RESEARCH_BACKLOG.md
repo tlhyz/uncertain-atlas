@@ -54,7 +54,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P2-11 | Answer Q-crypto-2 (0.40 ATR plateau?) | **in_progress** | PARTIAL awaiting P2-05 — outputs/experiments/Q_CRYPTO_2_atr_step_plateau.md |
 | P2-12 | Answer Q-crypto-3 (±ATR range) | **in_progress** | PARTIAL awaiting P2-06 — outputs/experiments/Q_CRYPTO_3_atr_range.md |
 | P2-13 | PENGU/PUMP satellite cap 5% test | **done** | CONDITIONAL PASS cap OK; BAR -99%/-99%; C1 tick blocked — outputs/review_logs/2026-09-13_P2-13_satellite_cap_CONDITIONAL_PASS.md |
-| P2-14 | CRYPTO_C1 window 2024-09→11 tick run | **in_progress** | tmux p2-14-c1-tick ~120min — outputs/review_logs/2026-09-13_P2-14_c1_tick_IN_PROGRESS.md |
+| P2-14 | CRYPTO_C1 window 2024-09→11 tick run | **in_progress** | tmux p2-14-c1-tick ~130min — outputs/review_logs/2026-09-13_P2-14_c1_tick_IN_PROGRESS.md |
+| P2-15 | BTC tick backtest perf investigation | pending | P2-02 6h on 1.25x before restart; BTC aggTrades hot path |
 
 ---
 
@@ -127,11 +128,11 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | done | 131 passed 2026-09-13T06:50Z |
-| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | pending | after each experiment |
-| M-03 | Append `review_logs/INDEX.md` | pending | after each experiment |
-| M-04 | Check PR CI status | pending | after each push |
-| M-05 | Refresh backlog — move done, add discovered tasks | pending | every session end |
+| M-01 | Run `pytest -q` | done | 131 passed 2026-09-13T09:00Z |
+| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | done | C-05 65d + C-06 crypto grid FAIL |
+| M-03 | Append `review_logs/INDEX.md` | done | daily audit 0900Z |
+| M-04 | Check PR CI status | done | PR #8 no checks reported |
+| M-05 | Refresh backlog — move done, add discovered tasks | done | P2-15 added; elapsed refresh |
 
 ---
 

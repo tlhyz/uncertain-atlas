@@ -31,9 +31,15 @@
 
 ### C-05: Tech Short→Long FSM fails vs simpler baselines
 - **Confidence:** HIGH
-- **Supporting:** LEDGER-003, Gate -51% vs B&H -30%; Binance tick 7d -78% vs B&H +1%
-- **Contradicting:** None to date; 65d run pending (may change magnitude, not direction)
+- **Supporting:** LEDGER-003, Gate -51% vs B&H -30%; Binance tick 7d -78% vs B&H +1%; **65d tick -58.70% vs B&H -33.49%** (P1-11)
+- **Contradicting:** None to date
 - **Implication:** Do not deploy initial Short without right-side confirmation
+
+### C-06: Crypto grid FSM on C1 tick shows no leverage sweet spot (SOL/ETH)
+- **Confidence:** MEDIUM (BTC scan pending P2-02 restart)
+- **Supporting:** P2-03 ETH all lev ~-87.5%; P2-04 SOL all lev ~-88.0%; tick-precise Base fill
+- **Contradicting:** LEDGER-002 bar-mode PERP>ETF — **different engine/window/config**; does not overturn A/B bar evidence
+- **Implication:** Do not deploy current crypto grid FSM on C1 parameters; investigate accounting floor (~12% equity)
 
 ---
 
@@ -59,8 +65,8 @@
 |-------|---------|----------|
 | Regime switching > pure grid | Full pipeline + OOS | After GRID_VALUE_ADD |
 | GRID_VALUE_ADD > 0 for any asset | Isolated grid study | EXP-TECH-002 |
-| Binance tick-precise majors PERP vs ETF | Not re-run | Medium |
-| Crypto leverage sweet spot 1.25–2.0 | ETH/SOL data + infra gates | EXP-CRYPTO-001 |
+| Crypto leverage sweet spot 1.25–2.0 | **PARTIAL FAIL** SOL/ETH; BTC P2-02 restart | P2-10 when BTC done |
+| Binance tick-precise majors PERP vs ETF | Not re-run (bar A/B only) | Medium |
 | Cross-market Tech↓ Crypto↑ capture | Real data on both books | EXP-CROSS-002 |
 | Gate OOS fill calibration | Script stub | LEVEL 9 |
 
@@ -80,6 +86,8 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-13 | C-06 added; C-05 65d tick FAIL | P1-11, P2-03, P2-04 review logs |
+| 2026-09-13 | UNTESTED leverage row → PARTIAL FAIL | SOL/ETH C1 tick scans complete |
 | 2026-09-13 | W-02 confidence LOW (was implicit medium) | Phase 1 red team: template Q-answers |
 | 2026-09-13 | C-05 confidence HIGH | Binance 7d tick FAIL reinforces Gate FAIL |
 | 2026-09-13 | Added evidence chain columns | Phase 1 audit requirement |
