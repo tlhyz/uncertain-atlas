@@ -127,7 +127,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | done | 122 passed 2026-09-13T01:42Z |
+| M-01 | Run `pytest -q` | done | 131 passed 2026-09-13T06:50Z |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | pending | after each experiment |
 | M-03 | Append `review_logs/INDEX.md` | pending | after each experiment |
 | M-04 | Check PR CI status | pending | after each push |
