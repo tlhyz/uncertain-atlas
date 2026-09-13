@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 444）
+
+- CometBFT CommitInfo Notes 票序正式三事工作实例（官方 ABCI++ Methods Data Types CommitInfo Notes，实现 / CommitInfo Notes 票序正式三事，不另写 19 节）：看见 CommitInfo.votes 里的 VoteInfo 按投票权降序排不是已经进了块 / 已经交差。看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序、集合写入 store 时顺序也落盘不是已经由应用排过 / 已经是收到票时的顺序。看见造 CommitInfo 时从 store 再装集合不是已经从拟议块或已决块抽出 / 已经是 ExtendedCommitInfo Notes 那套话就已经是同一句。CommitInfo Notes 票序正式三事不是不变量 365，也不是不变量 441，也不是不变量 392。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 444；语料 C448；模式 name-the-ci-notes-order；反模式 cinotes-sold-as-inblock；L10.3 第 440 条。填 L4.4 / CometBFT 档案 CommitInfo Notes 票序正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 CommitInfo Notes 票序正式三事、怎样从 store 再装、怎样排 votes。不编博物馆页。不另写 19 节。不与 365 / 441 / 392 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经进了块、已经由应用排过、已经从拟议块或已决块抽出 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 443）
 
 - CometBFT Validator Usage 四门映射正式三事工作实例（官方 ABCI++ Methods Data Types Validator Usage，实现 / Validator Usage 四门映射正式三事，不另写 19 节）：看见 Validator 装在 CommitInfo 里用于 ProcessProposal 不是已经 PrepareProposal 里的 ExtendedCommitInfo / 已经是 local_last_commit 同一份。看见 Validator 装在 CommitInfo 里用于 FinalizeBlock 不是已经 Process 里的 proposed_last_commit 同一路 / 已经是 decided_last_commit 就已经交差。看见 Validator 装在 ExtendedCommitInfo 里用于 PrepareProposal 不是已经 Process/Finalize 里的 CommitInfo 同一路 / 已经可以 interchangeable。Validator Usage 四门映射正式三事不是不变量 364，也不是不变量 365，也不是不变量 369。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

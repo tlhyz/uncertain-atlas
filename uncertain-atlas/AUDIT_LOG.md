@@ -4475,6 +4475,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2151 | 高 | 看见 Validator 装在 CommitInfo 里用于 FinalizeBlock / 看见 decided_last_commit 会被写成已经是 Process 里的 proposed_last_commit 同一路，或当成已经是 decided 就已经交差 | 官方 Usage：CommitInfo used in FinalizeBlock; decided_last_commit from decided block |
 | A2152 | 高 | 看见 Validator 装在 ExtendedCommitInfo 里用于 PrepareProposal / 看见 Prepare 路径 会被写成已经是 Process/Finalize 里的 CommitInfo 同一路，或当成已经可以拿 CommitInfo 代替 ExtendedCommitInfo | 官方 Usage：Used as part of ExtendedCommitInfo (used in PrepareProposal) |
 | A2153 | 中 | 怎样写 Validator Usage 四门映射正式三事 / 怎样填 proposed_last_commit / decided_last_commit / local_last_commit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2155 | 高 | 看见 CommitInfo.votes 里的 VoteInfo 按投票权降序排 / 看见顺序在 会被写成已经进了块，或当成已经交差 | 官方 Notes：VoteInfo in votes ordered by voting power descending |
+| A2156 | 高 | 看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序 / 看见集合写入 store 时顺序也落盘 会被写成已经由应用排过，或当成已经是收到票时的顺序 | 官方 Notes：CometBFT guarantees the votes ordering through its logic to update the validator set; ordering persisted when validator set saved in the store |
+| A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
+| A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2159 | 记录 | 会与 365 / 441 / 392 糊成「看见 Process / Finalize 里有 CommitInfo 就已经按投票权排好、已经进了块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CommitInfo Notes 票序正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经进了块 / 已经由应用排过 / 已经从拟议块或已决块抽出 标成另一对象 |
+
 | A2154 | 记录 | 会与 364 / 365 / 369 糊成「看见 Prepare / Process / Finalize 里都有验证者就已经同一门、同一路」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Validator Usage 四门映射正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经同一门 / 已经同一路 / 已经可以 interchangeable 标成另一对象 |
 
 | A2149 | 记录 | 会与 365 / 369 / 425 糊成「看见 block_id_flag 就已经奖罚完、Prepare 和 Process 是同一路」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经奖罚完 / 已经从本进程抽出 / 已经和 CommitInfo 同一路 标成另一对象 |
