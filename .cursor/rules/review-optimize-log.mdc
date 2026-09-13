@@ -1,0 +1,20 @@
+---
+description: Mandatory review, optimize, and log workflow for all research work
+alwaysApply: true
+---
+
+# Review → Optimize → Log (mandatory)
+
+When working in gate-grid-martingale:
+
+1. **Read first:** `docs/REVIEW_AND_OPTIMIZATION.md`, `docs/CURSOR_HANDOFF.md`
+2. **Never beautify FAIL** — preserve failed verdicts in logs and docs
+3. **After every experiment or backtest-related change:**
+   - Review results vs Base+Conservative fills, total equity, max DD, liquidation
+   - Write a review log under `outputs/review_logs/` using `TEMPLATE.md`
+   - Append one line to `outputs/review_logs/INDEX.md`
+4. **Optimize iteratively** from logged evidence; one major knob per iteration
+5. **Commit logs** together with code/config changes
+6. **Do not touch** `uncertain-atlas/` (separate blockchain research branch)
+
+Full policy: `docs/REVIEW_AND_OPTIMIZATION.md`

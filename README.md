@@ -11,6 +11,7 @@
 | Market thesis (Tech vs Crypto books) | [`docs/THESIS.md`](docs/THESIS.md) |
 | What already failed / proven | [`docs/RESEARCH_HISTORY.md`](docs/RESEARCH_HISTORY.md) |
 | Data rules (no synthetic ticks) | [`docs/DATA_POLICY.md`](docs/DATA_POLICY.md) |
+| Review / optimize / log rules | [`docs/REVIEW_AND_OPTIMIZATION.md`](docs/REVIEW_AND_OPTIMIZATION.md) |
 | How to run next experiment | [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) |
 | AI / Cursor handoff | [`docs/CURSOR_HANDOFF.md`](docs/CURSOR_HANDOFF.md) |
 | Refactor status | [`REPO_REFACTOR_REPORT.md`](REPO_REFACTOR_REPORT.md) |

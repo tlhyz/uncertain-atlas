@@ -22,3 +22,10 @@ def test_research_history_exists():
     text = Path("docs/RESEARCH_HISTORY.md").read_text()
     assert "FAILED" in text
     assert "ETF" in text
+
+
+def test_review_log_policy_exists():
+    assert Path("docs/REVIEW_AND_OPTIMIZATION.md").exists()
+    assert Path("outputs/review_logs/TEMPLATE.md").exists()
+    assert Path("outputs/review_logs/INDEX.md").exists()
+    assert Path(".cursor/rules/review-optimize-log.mdc").exists()

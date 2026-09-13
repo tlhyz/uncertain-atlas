@@ -7,7 +7,8 @@
 3. `docs/RESEARCH_HISTORY.md` — what failed vs untested
 4. `docs/DATA_POLICY.md` — no synthetic ticks
 5. `docs/CURRENT_CONCLUSIONS.md`
-6. `REPO_REFACTOR_REPORT.md`
+6. `docs/REVIEW_AND_OPTIMIZATION.md` — **review / optimize / log rules (mandatory)**
+7. `REPO_REFACTOR_REPORT.md`
 
 ## Out of scope — DO NOT MODIFY
 
@@ -49,6 +50,8 @@ python -m qtb.cli dual -c configs/dual_engine_perp.yaml
 4. **Primary metrics:** total equity, max DD, liq buffer — not grid gross
 5. **Conclusions:** Base + Conservative fills only
 6. **Do not** start full parameter sweeps until user confirms after refactor report
+7. **Review → Optimize → Log (mandatory):** after every experiment or backtest-related change, write `outputs/review_logs/YYYY-MM-DD_<id>_<verdict>.md`, update `INDEX.md`, commit with code — see `docs/REVIEW_AND_OPTIMIZATION.md`
+8. **Continuous review:** compare each run to prior logs; state `vs_prior` delta and `optimization_next`; never delete FAIL logs
 
 ## Next experiments (after user OK)
 

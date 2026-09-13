@@ -44,3 +44,11 @@ python -m qtb.cli dual -c configs/dual_engine_perp.yaml
 ```
 
 Reports: `outputs/ab_etf_vs_perp/`, `outputs/dual_engine_perp/`.
+
+## Review & optimization logs (mandatory)
+
+Every run must leave an audit trail. See [`docs/REVIEW_AND_OPTIMIZATION.md`](../docs/REVIEW_AND_OPTIMIZATION.md).
+
+- Template: `outputs/review_logs/TEMPLATE.md`
+- Index: `outputs/review_logs/INDEX.md`
+- **Do not delete FAIL logs** — append newer dated entries instead.
