@@ -126,4 +126,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T08:50Z | checkpoint 0850Z | P2-02 restart 10min on 1.25x; P2-14 ~2h C1 baseline
 2026-09-13T09:00Z | daily audit | pytest 131 pass; C-05/C-06 updated; P2-15 added; M-01..M-05 done
 2026-09-13T09:10Z | P2-15 done | BTC tick perf PARTIAL — I/O 8ms/bar; bottleneck portfolio grid loop
+2026-09-13T09:10Z | checkpoint 0910Z | P2-07 60_40 -87.97% done; P2-02 1.25x ~30min
 ```
