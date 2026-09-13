@@ -213,4 +213,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T16:10Z | timer research-continue | pytest 131 pass; **P2-07 DONE FAIL** dynamic -87.35%
 2026-09-13T16:10Z | P2-07 FAIL review | **P2 PHASE COMPLETE**
 2026-09-13T16:10Z | checkpoint 1610Z | P3-01 next unblocked
+2026-09-13T16:10Z | P3-01 started | tmux p3-01-dual-tick; dual 65d tick re-run
 ```
