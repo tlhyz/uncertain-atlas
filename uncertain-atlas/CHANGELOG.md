@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 492）
+
+- CometBFT Echo Usage 正式三事工作实例（官方 ABCI++ Methods Echo Request Message string to echo back / Response Message the input string / Usage Echo a string to test an ABCI client/server implementation，实现 / Echo Usage 正式三事，不另写 19 节）：看见 Echo a string to test implementation 不是已经 Flush / 已经送到 / Commit 空请求 bundled interchangeable。看见 Request Message string to echo back 不是 Response Message interchangeable / 已经是 Flush（394）。看见 Response Message the input string 不是已经测实现就已经刷完 / Flush 回包回来就算同步。Echo Usage 正式三事不是不变量 399，也不是不变量 394，也不是不变量 374。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 492；语料 C496；模式 name-the-echousage-bar；反模式 echousage-sold-as-flush；L10.3 第 488 条。填 L4.4 / CometBFT 档案 Echo Usage 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 Echo、怎样填 Message、怎样测 client/server。不编博物馆页。不另写 19 节。不与 399 / 394 / 374 / 335 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 Flush / 入参字段 interchangeable / 已经刷完 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 491）
 
 - CometBFT Commit Usage retain_height caution 正式三事工作实例（官方 ABCI++ Methods Commit Usage Use CommitResponse.retain_height with caution! / all nodes remove historical blocks permanently lost / Historical blocks may also be required for auditing replay light client verification，实现 / Commit Usage retain_height caution 正式三事，不另写 19 节）：看见 Use retain_height with caution 不是 retain_height 默认 0 就等于已经在剪 / persist signal bundled interchangeable。看见 all nodes remove historical blocks 不是已经能从创世再装 / 已经开了 state sync 就交差。看见 Historical blocks required for auditing / replay / light client 不是 persist signal bundled interchangeable。Commit Usage retain_height caution 正式三事不是不变量 366，也不是不变量 481，也不是不变量 323。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

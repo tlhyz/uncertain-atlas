@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2395 | 高 | 看见 Echo a string to test an ABCI client/server implementation / 看见 Echo 用来测实现 会被写成已经 Flush 那种把排队冲到服务端 / 已经送到，或当成已经 Commit 空请求 bundled interchangeable | 官方 Echo Usage：Echo a string to test an ABCI client/server implementation |
+| A2396 | 高 | 看见 Request Message (string) A string to echo back / 看见 Echo 请求 Message 是要回显的字符串 会被写成已经 Response Message the input string interchangeable，或当成已经是 Flush（394）/ 已经填了 Message 就代表已经回显 | 官方 Echo Request：`Message (string)`: A string to echo back |
+| A2397 | 高 | 看见 Response Message (string) The input string / 看见 Echo 回包 Message 是入参那串 会被写成已经 Echo 用来测实现就已经刷完，或当成已经 Request Message 字段 interchangeable / Flush 回包回来就算同步 | 官方 Echo Response：`Message (string)`: The input string |
+| A2398 | 中 | 怎样写 Echo / 怎样填 Message / 怎样测 client/server 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2399 | 记录 | 会与 399 / 394 / 374 / 335 糊成「看见 Echo 了就已经 Flush、已经是入参字段、已经刷完」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Echo Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 Flush / 入参字段 interchangeable / 已经刷完 标成另一对象 |
+
 | A2390 | 高 | 看见 Use CommitResponse.retain_height with caution! / 看见要慎用 retain_height 会被写成已经 retain_height defaults to 0 (retain all) / 已经 blocks below this height may be removed 那种回了高度就等于已经在剪，或当成已经 Commit Usage persist signal bundled 第三件事 interchangeable | 官方 Commit Usage：Use `CommitResponse.retain_height` with caution! |
 | A2391 | 高 | 看见 If all nodes in the network remove historical blocks / permanently lost / no new nodes bootstrap unless state sync 会被写成已经能从创世再装，或当成已经 retain_height 回了非零高度就等于已经在剪 / 已经切进共识就有完整历史 | 官方 Commit Usage：If all nodes in the network remove historical blocks then this data is permanently lost, and no new nodes will be able to join the network and bootstrap, unless state sync is enabled on the chain |
 | A2392 | 高 | 看见 Historical blocks may also be required for auditing / replay of non-persisted heights / light client verification 会被写成已经 persist signal bundled interchangeable，或当成已经 retain_height 默认 0 就等于已经在剪 / caution 已经验完 | 官方 Commit Usage：Historical blocks may also be required for other purposes, e.g. auditing, replay of non-persisted heights, light client verification, and so on |
