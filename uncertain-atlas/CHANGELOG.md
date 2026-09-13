@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 445）
+
+- CometBFT CommitInfo Fields 栏正式三事工作实例（官方 ABCI++ Methods Data Types CommitInfo Fields，实现 / CommitInfo Fields 栏正式三事，不另写 19 节）：看见 CommitInfo.round 是提交轮不是已经按投票权排过 / 已经罚没。看见 CommitInfo.votes 是上一验证者集合里各人的投票信息不是已经进了块 / 已经交差。看见 Fields 栏描述 round 和 votes 不是已经是 CommitInfo Notes 那套票序话就已经是同一句。CommitInfo Fields 栏正式三事不是不变量 392，也不是不变量 444，也不是不变量 365。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 445；语料 C449；模式 name-the-ci-fields-bar；反模式 cifields-sold-as-notes；L10.3 第 441 条。填 L4.4 / CometBFT 档案 CommitInfo Fields 栏正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 CommitInfo Fields 栏、怎样填 round、怎样读 votes。不编博物馆页。不另写 19 节。不与 392 / 444 / 365 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经按投票权排过、已经进了块、已经是 Notes 那套票序话 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 444）
 
 - CometBFT CommitInfo Notes 票序正式三事工作实例（官方 ABCI++ Methods Data Types CommitInfo Notes，实现 / CommitInfo Notes 票序正式三事，不另写 19 节）：看见 CommitInfo.votes 里的 VoteInfo 按投票权降序排不是已经进了块 / 已经交差。看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序、集合写入 store 时顺序也落盘不是已经由应用排过 / 已经是收到票时的顺序。看见造 CommitInfo 时从 store 再装集合不是已经从拟议块或已决块抽出 / 已经是 ExtendedCommitInfo Notes 那套话就已经是同一句。CommitInfo Notes 票序正式三事不是不变量 365，也不是不变量 441，也不是不变量 392。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
