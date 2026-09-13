@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 501）
+
+- CometBFT LoadSnapshotChunk Usage retrieve 正式三事工作实例（官方 ABCI++ Methods LoadSnapshotChunk Usage Used during state sync to retrieve snapshot chunks from peers，实现 / LoadSnapshotChunk Usage retrieve 正式三事，不另写 19 节）：看见 Used during state sync to retrieve 不是 LoadSnapshotChunk bundled（375） interchangeable / 已经装完 / 已经切进共识。看见 retrieve from peers 不是 ListSnapshots discover（500） interchangeable / 已经本地清单 / 已经问了邻居就齐。看见 retrieve snapshot chunks 不是 ApplySnapshotChunk chunk 栏（397） interchangeable / 已经齐 / 已经 ACCEPT。LoadSnapshotChunk Usage retrieve 正式三事不是不变量 375，也不是不变量 500 / 395 / 397 / 401。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 501；语料 C505；模式 name-the-loadsnapusage-bar；反模式 loadsnapusage-sold-as-bundled；L10.3 第 497 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk Usage retrieve 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 LoadSnapshotChunk、怎样切块。不编博物馆页。不另写 19 节。不与 375 / 500 / 395 / 397 / 401 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 LoadSnapshotChunk bundled interchangeable / 已经 discover interchangeable / 已经 Apply 了 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 500）
 
 - CometBFT ListSnapshots Usage discover / Snapshot type 正式二事工作实例（官方 ABCI++ Methods ListSnapshots Usage Used during state sync to discover available snapshots on peers / See Snapshot data type for details，实现 / ListSnapshots Usage discover / Snapshot type 正式二事，不另写 19 节）：看见 discover on peers during state sync 不是 ListSnapshots 空请求 bundled（395） interchangeable / 已经本地清单 / 已经问了邻居就齐。看见 See Snapshot data type for details 不是 Snapshot 类型 bundled（368） interchangeable / 已经 five fields 对上 / 已经装完。ListSnapshots Usage 正式二事不是不变量 395，也不是不变量 322 / 368 / 321 / 375。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -4486,6 +4486,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2437 | 高 | 看见 Used during state sync to retrieve snapshot chunks from peers / 看见在 state sync 时从邻居拉快照块 会被写成已经 LoadSnapshotChunk height/format/chunk bundled interchangeable，或当成已经 Offer 收下之后 bundled interchangeable / 已经装完 interchangeable / 已经切进共识 interchangeable | 官方 LoadSnapshotChunk Usage：Used during state sync to retrieve snapshot chunks from peers |
+| A2438 | 高 | 看见 retrieve snapshot chunks from peers / 看见从邻居拉块 会被写成已经 ListSnapshots discover on peers interchangeable，或当成已经 ListSnapshots 空请求 bundled interchangeable / 已经本地清单 interchangeable / 已经问了邻居就齐 interchangeable | 官方 LoadSnapshotChunk Usage：retrieve snapshot chunks from peers |
+| A2439 | 高 | 看见 retrieve snapshot chunks / 看见拉块 会被写成已经 ApplySnapshotChunk chunk 是 LoadSnapshotChunk 回包 interchangeable，或当成已经 ApplySnapshotChunk Result ACCEPT interchangeable / 已经齐 interchangeable / LoadSnapshotChunk bundled 已经齐 interchangeable | 官方 LoadSnapshotChunk Usage：Used during state sync to retrieve snapshot chunks from peers |
+| A2440 | 记录 | 会与 375 / 500 / 395 / 397 / 401 / 322 糊成「看见 LoadSnapshotChunk Usage 了就已经 bundled interchangeable、已经 discover interchangeable、已经 Apply 了 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 LoadSnapshotChunk Usage retrieve 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 LoadSnapshotChunk bundled interchangeable / 已经 discover interchangeable / 已经 Apply 了 interchangeable 标成另一对象 |
+
 | A2433 | 高 | 看见 Used during state sync to discover available snapshots on peers / 看见在 state sync 时用来发现邻居上有哪些快照 会被写成已经 ListSnapshots 请求是空请求、向应用要一份快照清单 interchangeable，或当成已经 ListSnapshots 回包 snapshots 是本地状态快照清单 interchangeable / 已经问了邻居就齐 interchangeable | 官方 ListSnapshots Usage：Used during state sync to discover available snapshots on peers |
 | A2434 | 高 | 看见 See Snapshot data type for details / 看见要看 Snapshot 数据类型细节 会被写成已经 Snapshot 全字段（含 Metadata）对上 interchangeable，或当成已经 ListSnapshots 回包 snapshots 是本地状态快照清单就已经是同一份 interchangeable / 已经装完 interchangeable | 官方 ListSnapshots Usage：See `Snapshot` data type for details |
 | A2435 | 中 | 怎样写 ListSnapshots / 怎样列 Snapshot 类型 / 怎样切块 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |

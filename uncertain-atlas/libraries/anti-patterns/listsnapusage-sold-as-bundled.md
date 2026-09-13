@@ -19,6 +19,6 @@
 
 ## 和相邻反模式
 
+- [loadsnapusage-sold-as-bundled](loadsnapusage-sold-as-bundled.md) 是 LoadSnapshotChunk Usage retrieve 正式三事，不是本页 See Snapshot data type for details。
 - [listsnapempty-sold-as-discovery](listsnapempty-sold-as-discovery.md) 是 ListSnapshots 空请求 bundled 三事，不是本页 Methods Usage discover 单句专用边界。
-- [snapshot-sold-as-identical](snapshot-sold-as-identical.md) 是全字段（含 Metadata）对上就已经装完，不是本页 See Snapshot data type for details。
 - [offersnapusage-bootstrap-sold-as-bundled](offersnapusage-bootstrap-sold-as-bundled.md) 是 OfferSnapshot Usage bootstrap accept/reject 正式三事，不是本页 ListSnapshots Usage 正式二事。
