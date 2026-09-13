@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P2-15 BTC tick perf | PARTIAL | outputs/review_logs/2026-09-13_P2-15_btc_tick_perf_PARTIAL.md |
 | 2026-09-13 | daily audit 0900Z | PASS | outputs/review_logs/2026-09-13_daily_audit_0900Z.md |
 | 2026-09-13 | checkpoint 0850Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0850Z.md |
 | 2026-09-13 | P2-02 BTC restart | RESTART | outputs/review_logs/2026-09-13_P2-02_btc_leverage_RESTART.md |

@@ -42,7 +42,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P2-01 | Enable `crypto_regime.yaml` runner | **done** | qtb/dual/crypto_run.py + qtb.cli crypto; outputs/review_logs/2026-09-13_P2-01_crypto_regime_runner_PASS.md |
-| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | **in_progress** | RESTART 08:40Z; 1.25x ~20min — outputs/review_logs/2026-09-13_P2-02_btc_leverage_RESTART.md |
+| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | **in_progress** | RESTART 08:40Z; 1.25x ~30min — outputs/review_logs/2026-09-13_P2-02_btc_leverage_RESTART.md |
 | P2-03 | ETH leverage scan | **done** | FAIL all lev ~-87.5%; no sweet spot — outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL.md |
 | P2-04 | SOL leverage scan | **done** | FAIL all lev -88.01%; crypto_max_dd=100% — outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md |
 | P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~230min |
@@ -55,7 +55,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P2-12 | Answer Q-crypto-3 (±ATR range) | **in_progress** | PARTIAL awaiting P2-06 — outputs/experiments/Q_CRYPTO_3_atr_range.md |
 | P2-13 | PENGU/PUMP satellite cap 5% test | **done** | CONDITIONAL PASS cap OK; BAR -99%/-99%; C1 tick blocked — outputs/review_logs/2026-09-13_P2-13_satellite_cap_CONDITIONAL_PASS.md |
 | P2-14 | CRYPTO_C1 window 2024-09→11 tick run | **in_progress** | tmux p2-14-c1-tick ~130min — outputs/review_logs/2026-09-13_P2-14_c1_tick_IN_PROGRESS.md |
-| P2-15 | BTC tick backtest perf investigation | pending | P2-02 6h on 1.25x before restart; BTC aggTrades hot path |
+| P2-15 | BTC tick backtest perf investigation | **done** | PARTIAL — I/O fast; bottleneck portfolio tick grid — outputs/review_logs/2026-09-13_P2-15_btc_tick_perf_PARTIAL.md |
 
 ---
 
