@@ -292,4 +292,8 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T21:30Z | timer research-continue | P3-03 grid 2/4 running
 2026-09-13T21:30Z | P3-08 prep | rank_grid_mix + config + test
 2026-09-13T21:30Z | checkpoint 2130Z | pytest 139 pass
+2026-09-13T21:40Z | timer research-continue | P3-03 grid 2/4 ~22min
+2026-09-13T21:40Z | P3-03 interim review | directional=-58.70% ≡ default
+2026-09-13T21:40Z | P3-09/10 note | blocked on seed date aggTrades
+2026-09-13T21:40Z | checkpoint 2140Z | pytest 139 pass
 ```

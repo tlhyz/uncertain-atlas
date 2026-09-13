@@ -65,14 +65,14 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 |----|------|--------|-------------|
 | P3-01 | Re-run dual on Binance ticks (tick_precise) | **done** | FAIL reproduces P1-11 dual -58.70% — outputs/review_logs/2026-09-13_P3-01_dual_tick_FAIL.md |
 | P3-02 | Short init 10/15/20% sweep | **done** | FAIL 20% best return -58.70%; 10% worst -59.24%; Q-tech-2 partial — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
-| P3-03 | Short structure dir vs grid vs 70/30 | **in_progress** | 2/4 grid running; directional=-58.70%; tmux p3-03-short-structures |
+| P3-03 | Short structure dir vs grid vs 70/30 | **in_progress** | 2/4 grid ~22min; directional=-58.70% — outputs/review_logs/2026-09-13_P3-03_short_structures_IN_PROGRESS.md |
 | P3-04 | Drawdown set A/B/C comparison | pending | config ready; queue after P3-03 |
 | P3-05 | Reversal R1–R5 no-lookahead tests | **done** | PASS — outputs/review_logs/2026-09-13_P3-05_reversal_no_leak_PASS.md |
 | P3-06 | Right-side reserve 25/30/35% | pending | config ready; queue after P3-04 |
 | P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | pending | config ready; queue after P3-06 |
 | P3-08 | Grid→Trend stage mix sweep | pending | config dual_binance_tick_grid_mix.yaml ready; queue after P3-07 |
-| P3-09 | FAIL_F1 direct-up window | pending | |
-| P3-10 | FAIL_F2 no-recovery window | pending | |
+| P3-09 | FAIL_F1 direct-up window | pending | blocked: needs SOXL 2025-09→10 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
+| P3-10 | FAIL_F2 no-recovery window | pending | blocked: needs SOXL 2024-09→11 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
 | P3-11 | Similar-window search top-20 real windows | pending | |
 | P3-12 | Answer Q-tech-1 Short→Long vs Cash→Long | pending | Gate FAIL preserved |
 | P3-13 | Answer Q-tech-2 initial short % | **done** | FAIL via P3-02; 20% best return, no sweet spot — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
