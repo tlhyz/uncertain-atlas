@@ -32,7 +32,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-07 | Cross-check tick OHLCV vs kline (SOXL) | done | lazy validation passed |
 | P1-08 | Cross-check tick OHLCV vs kline (SNXX) | done | lazy validation passed |
 | P1-09 | Document data gaps in manifest notes | done | Sep-12 empty; ETH/SOL noted |
-| P1-10 | Gate download script smoke test BTC_USDT | pending | |
+| P1-10 | Gate download script smoke test BTC_USDT | done | 720 bars 1h; scripts/download_gate.py path fix |
 | P1-11 | Full 65d Binance tick backtest SOXL/SNXX | in_progress | started by timer 2026-09-13 |
 
 ---
