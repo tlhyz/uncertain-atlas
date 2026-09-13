@@ -54,7 +54,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P2-11 | Answer Q-crypto-2 (0.40 ATR plateau?) | **in_progress** | PARTIAL awaiting P2-05 — outputs/experiments/Q_CRYPTO_2_atr_step_plateau.md |
 | P2-12 | Answer Q-crypto-3 (±ATR range) | **done** | FAIL no actionable range; ±3 Calmar best — outputs/experiments/Q_CRYPTO_3_atr_range.md |
 | P2-13 | PENGU/PUMP satellite cap 5% test | **done** | CONDITIONAL PASS cap OK; BAR -99%/-99%; C1 tick blocked — outputs/review_logs/2026-09-13_P2-13_satellite_cap_CONDITIONAL_PASS.md |
-| P2-14 | CRYPTO_C1 window 2024-09→11 tick run | **in_progress** | tmux p2-14-c1-tick ~250min — outputs/review_logs/2026-09-13_P2-14_c1_tick_IN_PROGRESS.md |
+| P2-14 | CRYPTO_C1 window 2024-09→11 tick run | **in_progress** | tmux p2-14-c1-tick ~270min — outputs/review_logs/2026-09-13_P2-14_c1_tick_IN_PROGRESS.md |
 | P2-15 | BTC tick backtest perf investigation | **done** | PARTIAL — I/O fast; bottleneck portfolio tick grid — outputs/review_logs/2026-09-13_P2-15_btc_tick_perf_PARTIAL.md |
 
 ---
