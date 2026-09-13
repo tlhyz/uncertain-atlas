@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 469）
+
+- CometBFT FinalizeBlockResponse next_block_delay 非确定正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Response / Usage，实现 / FinalizeBlockResponse next_block_delay 非确定正式三事，不另写 19 节）：看见 next_block_delay 非确定 / each node MAY 回不同值 不是已经 Finalize 必须确定 / 已经像 app_hash 那样必须确定。看见 depends on local wallclock / NTP 不是已经是 timeout_commit / ConsensusParams.block 块间隔。看见 Commit 后再开下一高 / set to 0 不是已经是槽位 / 已经最终 / 没有把规范 1s 抄进不确定。FinalizeBlockResponse next_block_delay 非确定正式三事不是不变量 432，也不是不变量 52，也不是不变量 342。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 469；语料 C473；模式 name-the-findelay-bar；反模式 fndelay-sold-as-slot；L10.3 第 465 条（含补交第 464 条 invariant 468）。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay 非确定正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样填 next_block_delay、怎样配 NTP、怎样从 timeout_commit 迁移。不编博物馆页。不另写 19 节。不与 432 / 52 / 342 / 385 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经 Finalize 必须确定 / 已经是 timeout_commit / 已经是槽位 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 468）
 
 - CometBFT FinalizeBlock When lock mempool Commit recheck 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock When steps 7–11，实现 / FinalizeBlock When lock mempool Commit recheck 正式三事，不另写 19 节）：看见 locks mempool / no CheckTx on new tx 不是已经是 Commit 锁 / 已经 RPC 安全默认锁。看见 calls Commit to persist application state 不是已经引擎 persist 这三份 / 已经 Finalize 改了就已经落盘。看见 optionally recheck / unlock / start h+1 round 0 不是已经是 Recheck / 已经能往下走。FinalizeBlock When lock mempool Commit recheck 正式三事不是不变量 403，也不是不变量 467，也不是不变量 310。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

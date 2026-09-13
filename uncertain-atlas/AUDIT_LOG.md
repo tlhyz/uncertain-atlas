@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2280 | 高 | 看见 `FinalizeBlockResponse.next_block_delay` 标成非确定 / each node MAY provide a different value / 看见各节点可以回不同值 会被写成已经 Finalize 必须确定，或当成已经像 `app_hash` / `tx_results` 那样 Deterministic = Yes | 官方 FinalizeBlock Response 表 Deterministic = No；Usage：non-deterministic field；each node MAY provide a different value |
+| A2281 | 高 | 看见 depends on how long processing is taking at the local node / wallclock / NTP / 看见依赖本机处理耗时 会被写成已经是本地 `timeout_commit`，或当成已经是 `ConsensusParams.block` 块间隔 | 官方 FinalizeBlock Usage vs Previously timeout_commit in CometBFT config |
+| A2282 | 高 | 看见 Commit 后再开下一高 / set to 0 立刻开下一高 / 看见 set to 0 会被写成已经是槽位，或当成已经最终，或当成已经把规范 1s 常量抄进不确定 | 官方 FinalizeBlock Usage vs post-commit wait；Set to constant 1s — 不抄进不确定 |
+| A2283 | 中 | 怎样填 next_block_delay / 怎样配 NTP / 怎样从 timeout_commit 迁移会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2284 | 记录 | 会与 432 / 52 / 342 / 385 糊成「看见回了 next_block_delay 就已经必须确定、已经是 timeout_commit、已经是槽位 / 已经最终」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay 非确定正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 Finalize 必须确定 / 已经是 timeout_commit / 已经是槽位 标成另一对象 |
+
 | A2275 | 高 | 看见 CometBFT locks the mempool / no CheckTx on new transactions / 看见锁了内存池、新交易不进 CheckTx 会被写成已经是 Commit 锁，或当成已经 RPC 安全默认锁 | 官方 FinalizeBlock When step 7：CometBFT locks the mempool — no calls to CheckTx on new transactions |
 | A2276 | 高 | 看见 CometBFT calls Commit to instruct the Application to persist its state / 看见叫 Commit 让应用落盘应用状态 会被写成已经引擎 persist tx outputs / AppHash / ResultsHash，或当成已经 Finalize 改了就已经落盘 | 官方 FinalizeBlock When step 8 vs step 6 persist / Commit |
 | A2277 | 高 | 看见 optionally recheck mempool / unlocks mempool / starts h+1 round 0 / 看见可选再验、再解锁、再开下一高 round 0 会被写成已经是 Recheck，或当成已经能往下走 / 已经交差 | 官方 FinalizeBlock When steps 9–11 vs CheckTx RECHECK |
