@@ -14,6 +14,8 @@ One line per review entry. Newest first.
 | 2026-09-13 | checkpoint 0810Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0810Z.md |
 | 2026-09-13 | checkpoint 0800Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0800Z.md |
 | 2026-09-13 | P2-03 ETH leverage | FAIL | outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL.md |
+| 2026-09-13 | P2-14 C1 tick run | FAIL | outputs/review_logs/2026-09-13_P2-14_c1_tick_FAIL.md |
+| 2026-09-13 | checkpoint 1210Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1210Z.md |
 | 2026-09-13 | checkpoint 1200Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1200Z.md |
 | 2026-09-13 | checkpoint 1150Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1150Z.md |
 | 2026-09-13 | checkpoint 1140Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1140Z.md |
