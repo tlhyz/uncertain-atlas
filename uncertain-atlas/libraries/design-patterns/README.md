@@ -340,6 +340,7 @@
 - [name-the-infousage-bar](name-the-infousage-bar.md)
 - [name-the-initchainusage-decide-bar](name-the-initchainusage-decide-bar.md)
 - [name-the-infousage-persist-bar](name-the-infousage-persist-bar.md)
+- [name-the-listsnapusage-bar](name-the-listsnapusage-bar.md)
 - [name-the-offersnapusage-bootstrap-bar](name-the-offersnapusage-bootstrap-bar.md)
 - [name-the-infousage-defaultlane-bar](name-the-infousage-defaultlane-bar.md)
 - [name-the-initchainusage-bar](name-the-initchainusage-bar.md)

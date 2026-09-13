@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [offersnapusage-bootstrap-sold-as-bundled](offersnapusage-bootstrap-sold-as-bundled.md) 是 OfferSnapshot Usage bootstrap accept/reject 正式三事，不是本页 OfferSnapshot 请求 bundled 三事专用边界。
-- [listsnapempty-sold-as-discovery](listsnapempty-sold-as-discovery.md) 是 ListSnapshots 回包 snapshots 是本地状态快照清单就已经是同一份，不是本页这种 OfferSnapshot 请求 snapshot 是拿来装回的那份快照不是已经是本地清单。
+- [listsnapempty-sold-as-discovery](listsnapempty-sold-as-discovery.md) 是 ListSnapshots 空请求 bundled 三事，不是本页 Methods Usage discover 单句专用边界。
+- [listsnapusage-sold-as-bundled](listsnapusage-sold-as-bundled.md) 是 ListSnapshots Usage discover / Snapshot type 正式二事，不是本页 ListSnapshots 空请求 bundled 三事专用边界。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下就已经装完，不是本页这种 OfferSnapshot 回包 result 是这次 Offer 的结果不是已经装完。
 - [snapshotconn-sold-as-required](snapshotconn-sold-as-required.md) 是四门里有 Snapshot Connection 就已经必须实现快照，不是本页这种 OfferSnapshot 在用 state sync 引导节点时叫不是已经必须实现快照连接。

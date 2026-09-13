@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 500）
+
+- CometBFT ListSnapshots Usage discover / Snapshot type 正式二事工作实例（官方 ABCI++ Methods ListSnapshots Usage Used during state sync to discover available snapshots on peers / See Snapshot data type for details，实现 / ListSnapshots Usage discover / Snapshot type 正式二事，不另写 19 节）：看见 discover on peers during state sync 不是 ListSnapshots 空请求 bundled（395） interchangeable / 已经本地清单 / 已经问了邻居就齐。看见 See Snapshot data type for details 不是 Snapshot 类型 bundled（368） interchangeable / 已经 five fields 对上 / 已经装完。ListSnapshots Usage 正式二事不是不变量 395，也不是不变量 322 / 368 / 321 / 375。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 500；语料 C504；模式 name-the-listsnapusage-bar；反模式 listsnapusage-sold-as-bundled；L10.3 第 496 条。填 L4.4 / CometBFT 档案 ListSnapshots Usage discover / Snapshot type 正式二事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 ListSnapshots、怎样列 Snapshot 类型。不编博物馆页。不另写 19 节。不与 395 / 322 / 368 / 321 / 375 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 ListSnapshots 空请求 bundled interchangeable / 已经 five fields 对上 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 499）
 
 - CometBFT OfferSnapshot Usage bootstrap accept/reject 正式三事工作实例（官方 ABCI++ Methods OfferSnapshot Usage called when bootstrapping a node using state sync / application may accept or reject snapshots as appropriate / Upon accepting retrieve and apply snapshot chunks via ApplySnapshotChunk / reject a snapshot in the chunk response prepared to accept further OfferSnapshot calls，实现 / OfferSnapshot Usage bootstrap accept/reject 正式三事，不另写 19 节）：看见 bootstrapping state sync / may accept or reject 不是 OfferSnapshot 请求 bundled（396） interchangeable / 已经本地清单 / 已经必须实现快照连接。看见 Upon accepting retrieve and apply chunks 不是 Offer 收下就已经装完（321） interchangeable / 已经齐。看见 reject in chunk response prepared for further Offer 不是 Offer 收下之后 bundled（401） interchangeable / 已经 ABORT / 已经 REJECT_SNAPSHOT。OfferSnapshot Usage bootstrap 不是不变量 396，也不是不变量 401 / 321 / 322 / 483。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

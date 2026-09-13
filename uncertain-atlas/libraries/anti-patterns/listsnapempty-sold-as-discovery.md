@@ -18,5 +18,6 @@
 ## 和相邻反模式
 
 - [snapshotdiscover-sold-as-listed](snapshotdiscover-sold-as-listed.md) 是问了邻居就已经齐，不是本页这种 ListSnapshots 请求是空请求、向应用要一份快照清单不是已经齐。
+- [listsnapusage-sold-as-bundled](listsnapusage-sold-as-bundled.md) 是 ListSnapshots Usage discover / Snapshot type 正式二事，不是本页 ListSnapshots 空请求 bundled 三事专用边界。
 - [snapshot-sold-as-identical](snapshot-sold-as-identical.md) 是全字段（含 Metadata）对上就已经装完，不是本页这种 ListSnapshots 回包 snapshots 是本地状态快照清单不是已经是同一份。
 - [loadchunk-sold-as-retrieved](loadchunk-sold-as-retrieved.md) 是 LoadSnapshotChunk 用来从邻居拉快照块就已经齐，不是本页这种 ListSnapshots 用来在 state sync 时发现邻居上有哪些快照不是已经在拉块。
