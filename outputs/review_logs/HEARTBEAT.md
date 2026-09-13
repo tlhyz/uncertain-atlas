@@ -87,4 +87,8 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T05:30Z | P2-03 running | ETH 1.25x ~39min
 2026-09-13T05:30Z | P2-04 running | SOL 1.75x; interim 1.25x/1.5x both -88.01%
 2026-09-13T05:30Z | P2-05 running | grid step scan ~19min
+2026-09-13T05:40Z | timer research-continue | pytest 127 pass
+2026-09-13T05:40Z | P2-07 in_progress | grid_mix runner added; YAML 80_20 quoting fix; scan restarted
+2026-09-13T05:40Z | P2-03 interim | ETH 1.25x -87.86%; P2-04 SOL 1.25x-1.75x all -88.01%
+2026-09-13T05:40Z | P2-02 running | ~177min (~2h57m)
 ```

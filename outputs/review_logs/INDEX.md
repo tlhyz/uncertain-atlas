@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P2-07 BTC grid mix | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-07_btc_grid_mix_IN_PROGRESS.md |
+| 2026-09-13 | P2-06 BTC grid range | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-06_btc_grid_range_IN_PROGRESS.md |
 | 2026-09-13 | P1-11 65d tick backtest | FAIL | outputs/review_logs/2026-09-13_P1-11_65d_tick_backtest_FAIL.md |
 | 2026-09-13 | P2-06 grid range | PREP | outputs/review_logs/2026-09-13_P2-06_grid_range_PREP_0520Z.md |
 | 2026-09-13 | P2-05 BTC grid ATR | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-05_btc_grid_atr_IN_PROGRESS.md |

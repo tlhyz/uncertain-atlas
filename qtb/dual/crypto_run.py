@@ -41,6 +41,8 @@ def load_crypto_config(path: str | None) -> dict[str, Any]:
         "output": {"dir": "outputs/experiments/crypto_regime_v1"},
         "run_leverage_scan": True,
         "run_grid_scan": True,
+        "run_grid_mix_scan": False,
+        "grid_mix_scan": ["80_20", "60_40", "50_50", "40_60", "20_80", "dynamic"],
         "run_c1_baseline": True,
         "smoke": False,
         "skip_tick_validation": False,
@@ -118,9 +120,44 @@ def _rank_crypto_grid(
     return rows
 
 
+def _rank_crypto_grid_mix(
+    data,
+    *,
+    mixes: list[str],
+    fill_mode: str = "base",
+    tick_precise: bool = True,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for mix in mixes:
+        cp = CryptoParams(grid_mix=mix)
+        dp = DualParams(crypto=cp, unified_signal=False)
+        print(f"[run] crypto grid_mix {mix}...")
+        r = run_dual_portfolio(
+            data,
+            dp,
+            name=f"crypto_mix_{mix}",
+            fill_mode=fill_mode,
+            tick_precise=tick_precise,
+            crypto_tick_fills=True,
+            tech_tick_fills=False,
+            tech_disabled=True,
+            tech_tick_only=False,
+        )
+        m = summarize_portfolio(r, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
+        m["grid_mix"] = mix
+        rows.append(m)
+        print(
+            f"[run] crypto grid_mix {mix} done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"calmar={float(m.get('calmar', 0)):.2f}"
+        )
+    rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
+    return rows
+
+
 def _write_crypto_report(payload: dict[str, Any], out_dir: Path) -> Path:
     lev = payload.get("leverage_rank") or []
     grid = payload.get("grid_rank") or []
+    mix = payload.get("grid_mix_rank") or []
     c1 = payload.get("c1_baseline") or {}
     lines = [
         "# Crypto Independent Regime Report",
@@ -148,6 +185,16 @@ def _write_crypto_report(payload: dict[str, Any], out_dir: Path) -> Path:
             lines.append(
                 f"- step={r.get('grid_atr_step')} range={r.get('grid_atr_range')} "
                 f"return={100 * float(r.get('total_return', 0)):.2f}% calmar={float(r.get('calmar', 0)):.2f}"
+            )
+    if mix:
+        lines.extend(["", "## Grid→Trend mix rank (Calmar desc)", ""])
+        lines.extend(["| Mix | Return | MaxDD | Calmar | Liq |", "|---|---:|---:|---:|---:|"])
+        for r in mix[:8]:
+            lines.append(
+                f"| {r.get('grid_mix', '?')} | {100 * float(r.get('total_return', 0)):.2f}% "
+                f"| {100 * float(r.get('max_dd_pct', 0)):.2f}% "
+                f"| {float(r.get('calmar', 0)):.2f} "
+                f"| {int(r.get('liquidation_count', 0))} |"
             )
     if c1:
         ind = c1.get("independent") or {}
@@ -181,7 +228,7 @@ def run_crypto_job(cfg: dict[str, Any]) -> dict[str, Any]:
 
     if cfg.get("smoke"):
         symbols = symbols[:1]
-        cfg = {**cfg, "leverage_scan": [1.5], "run_grid_scan": False, "run_c1_baseline": False}
+        cfg = {**cfg, "leverage_scan": [1.5], "run_grid_scan": False, "run_grid_mix_scan": False, "run_c1_baseline": False}
 
     print(f"\n======== Crypto Regime {start} → {end} ({','.join(symbols)}) ========")
     data = load_binance_crypto_dataset(
@@ -218,6 +265,13 @@ def run_crypto_job(cfg: dict[str, Any]) -> dict[str, Any]:
         print(f"[run] crypto grid scan steps={steps} ranges={ranges}...")
         payload["grid_rank"] = _rank_crypto_grid(
             data, steps=steps, ranges=ranges, fill_mode=fill_mode, tick_precise=tick_precise,
+        )
+
+    if cfg.get("run_grid_mix_scan") and not cfg.get("smoke"):
+        mixes = [str(x) for x in (cfg.get("grid_mix_scan") or ["80_20", "dynamic"])]
+        print(f"[run] crypto grid_mix scan {mixes}...")
+        payload["grid_mix_rank"] = _rank_crypto_grid_mix(
+            data, mixes=mixes, fill_mode=fill_mode, tick_precise=tick_precise,
         )
 
     if cfg.get("run_c1_baseline", True) and not cfg.get("smoke"):
