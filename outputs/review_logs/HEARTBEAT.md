@@ -133,4 +133,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T09:30Z | checkpoint 0930Z | jobs unchanged; P2-02 slightly slower than ETH ref
 2026-09-13T09:40Z | timer research-continue | pytest 131 pass; P2-02 1.25x ~50min 99.9% CPU
 2026-09-13T09:40Z | checkpoint 0940Z | no completions; P2-07 50_50 ~21min
+2026-09-13T09:50Z | timer research-continue | pytest 131 pass; P2-02 1.25x ~60min 99.9% CPU
+2026-09-13T09:50Z | checkpoint 0950Z | BTC ~40% slower than ETH ref; still no 1.25x done
 ```
