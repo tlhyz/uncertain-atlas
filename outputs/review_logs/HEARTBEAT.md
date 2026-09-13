@@ -169,4 +169,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T12:30Z | checkpoint 1230Z | Q-crypto-1 BTC interim updated; 1.75x running
 2026-09-13T12:40Z | timer research-continue | pytest 131 pass; no new completions
 2026-09-13T12:40Z | checkpoint 1240Z | P2-02 1.75x ~10min; P2-07 40_60 ~80min
+2026-09-13T12:50Z | timer research-continue | pytest 131 pass; **P2-07 40_60 DONE -88.12%**
+2026-09-13T12:50Z | checkpoint 1250Z | P2-07 20_80 running; 2 mixes remain
 ```
