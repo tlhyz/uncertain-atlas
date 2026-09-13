@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2335 | 高 | 看见 includes processing time for committed block / 看见包含应用和 CometBFT 处理已提交块的时间 会被写成已经是本地 timeout_commit，或当成已经是 wallclock 非确定（469） interchangeable | 官方 FinalizeBlock Usage next_block_delay：This includes the time the application and CometBFT take for processing the committed block |
+| A2336 | 高 | 看见 more precommits despite required 2/3+ / 看见给提议者多收 precommit 的机会 会被写成已经 has required 2/3+ 就已经决定 / 已经最终，或当成已经 When trigger 2f+1（479） interchangeable | 官方 FinalizeBlock Usage next_block_delay：gives the proposer a chance to receive some more precommits, even though it already has the required 2/3+ |
+| A2337 | 高 | 看见 after committing before next height / set to 0 when all precommits and block processed / 看见 Commit 后再开下一高 会被写成已经是槽位 / 已经最终，或当成已经把规范 Set to constant 1s 抄进不确定 | 官方 FinalizeBlock Usage next_block_delay：how long CometBFT waits after committing a block, before starting the next height |
+| A2338 | 中 | 怎样填 next_block_delay / 怎样配 NTP / 怎样抄规范 1s 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2339 | 记录 | 会与 469 / 432 / 479 / 52 糊成「已经有 2/3+ 就不需要 delay、已经是 timeout_commit、已经是槽位 / 已经 1s 常量」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 timeout_commit / 已经决定 / 槽位 / 1s 常量 标成另一对象 |
+
 | A2330 | 高 | 看见 Proposal message with block _v_ + all its block parts from _q_ / 看见提议者 _q_ 的提案 _v_ 和全部块片 会被写成已经只有 hash，或当成已经 Process 跑过 | 官方 FinalizeBlock When：Proposal message with block _v_ … along with all its block parts, from _q_ |
 | A2331 | 高 | 看见 Precommit from 2f+1 voting power precommitting same id(_v_) / 看见 2f+1 投票权对同一 id(_v_) precommit 会被写成已经 +2/3 prevote ExtendVote，或当成已经 +2/3 precommit 就可以没有 all block parts | 官方 FinalizeBlock When：Precommit messages from 2f + 1 validators' voting power … precommitting the same block id(_v_) |
 | A2332 | 高 | 看见 then decides block _v_ and finalizes consensus for height _h_ / 看见然后决定 _v_ 会被写成已经到了这一高就会调 Finalize，或当成已经 persist outputs / 已经交差 | 官方 FinalizeBlock When preamble：then _p_ decides block _v_ and finalizes consensus for height _h_ |

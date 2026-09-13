@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 480）
+
+- CometBFT FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage includes processing time / more precommits despite 2/3+ / after committing before next height，实现 / FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事，不另写 19 节）：看见 includes processing time 不是已经是 timeout_commit / wallclock 非确定 interchangeable。看见 more precommits despite 2/3+ 不是已经决定 / 已经最终。看见 after committing before next height 不是已经是槽位 / 已经 1s 常量。FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事不是不变量 469，也不是不变量 432，也不是不变量 479。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 480；语料 C484；模式 name-the-finmorepre-bar；反模式 finmorepre-sold-as-timeout；L10.3 第 476 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样填 next_block_delay、怎样抄规范 1s。不编博物馆页。不另写 19 节。不与 469 / 432 / 479 / 52 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经是 timeout_commit / 已经决定 / 槽位 / 1s 常量 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 479）
 
 - CometBFT FinalizeBlock When trigger Proposal block parts 2f+1 precommit 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock When preamble Proposal + all block parts / 2f+1 precommit same id(v) / decides block v，实现 / FinalizeBlock When trigger Proposal block parts 2f+1 precommit 正式三事，不另写 19 节）：看见 Proposal + all block parts 不是已经只有 hash / 已经 Process 跑过。看见 2f+1 precommit same id(v) 不是已经 +2/3 prevote ExtendVote。看见 decides block v 不是已经到了这一高就会调 Finalize / 已经交差。FinalizeBlock When trigger Proposal block parts 2f+1 precommit 正式三事不是不变量 362，也不是不变量 361，也不是不变量 478。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
