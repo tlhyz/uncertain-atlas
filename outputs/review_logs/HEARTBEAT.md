@@ -91,4 +91,8 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T05:40Z | P2-07 in_progress | grid_mix runner added; YAML 80_20 quoting fix; scan restarted
 2026-09-13T05:40Z | P2-03 interim | ETH 1.25x -87.86%; P2-04 SOL 1.25x-1.75x all -88.01%
 2026-09-13T05:40Z | P2-02 running | ~177min (~2h57m)
+2026-09-13T05:50Z | timer research-continue | pytest 127 pass
+2026-09-13T05:44Z | P2-04 done | FAIL SOL all lev -88.01%; no sweet spot Q-crypto-1 partial
+2026-09-13T05:50Z | P2-08 done | regime label sample; C1 99%+ RANGE_LOW_VOL
+2026-09-13T05:50Z | P2-02 running | ~187min; P2-03 ETH 1.5x; P2-05/06/07 grid scans active
 ```
