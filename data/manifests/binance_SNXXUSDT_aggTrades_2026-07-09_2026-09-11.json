@@ -1,0 +1,43 @@
+{
+  "venue": "binance",
+  "symbol": "SNXXUSDT",
+  "market": "futures_um_aggTrades",
+  "start": "2026-07-09",
+  "end": "2026-09-11",
+  "source": "binance_vision_daily",
+  "files": [
+    {
+      "path": "cache/binance_futures_SNXXUSDT_aggTrades_2026-09-07.csv",
+      "sha256": "2501b8d807f35288c2c7703caff9527f3080a1ea3eb3b15607004c37cd90ff42",
+      "bytes": 1694889
+    },
+    {
+      "path": "cache/binance_futures_SNXXUSDT_aggTrades_2026-09-08.csv",
+      "sha256": "da5bad4dccc61002cb90305f9a76af94e03e669b5d40244a77e5dfe82ead778c",
+      "bytes": 6728355
+    },
+    {
+      "path": "cache/binance_futures_SNXXUSDT_aggTrades_2026-09-09.csv",
+      "sha256": "0b2458fb901b8b07dcd6827f555a95d669176b3e6f1484027a9a0cdcd0e98eaa",
+      "bytes": 4402456
+    },
+    {
+      "path": "cache/binance_futures_SNXXUSDT_aggTrades_2026-09-10.csv",
+      "sha256": "b94832c35f223e8d9177eba6a42c2b1efde8d1de190f82ff15aa118aa217212f",
+      "bytes": 3730537
+    },
+    {
+      "path": "cache/binance_futures_SNXXUSDT_aggTrades_2026-09-11.csv",
+      "sha256": "4ad816774e766debd2c0325bb81b9315049876e6db3cff209811ac616a5953c5",
+      "bytes": 3862765
+    }
+  ],
+  "rows": 6422014,
+  "missing_periods": [],
+  "notes": [
+    "day_files=65",
+    "rows_est=6422014",
+    "tech_perp_tradfi"
+  ],
+  "created_at": "2026-09-13T00:09:11.968970+00:00"
+}

@@ -8,6 +8,7 @@ Fallback: GET /fapi/v1/aggTrades (may 451 in restricted regions).
 from __future__ import annotations
 
 import io
+import re
 import time
 import zipfile
 from datetime import date, datetime, timedelta, timezone
@@ -146,6 +147,37 @@ def _download_vision_klines_day(symbol: str, interval: str, day: date) -> pd.Dat
     return out.reset_index(drop=True)
 
 
+def _load_klines_from_overlap_cache(
+    sym: str, interval: str, t0: date, t1: date,
+) -> pd.DataFrame | None:
+    """If exact range cache missing, slice from a superset cached range."""
+    pat = re.compile(
+        rf"binance_futures_{re.escape(sym)}_{re.escape(interval)}_"
+        r"(?P<s>\d{4}-\d{2}-\d{2})_(?P<e>\d{4}-\d{2}-\d{2})_klines\.csv$"
+    )
+    best: pd.DataFrame | None = None
+    for p in CACHE_DIR.glob(f"binance_futures_{sym}_{interval}_*_klines.csv"):
+        m = pat.match(p.name)
+        if not m:
+            continue
+        c0 = date.fromisoformat(m.group("s"))
+        c1 = date.fromisoformat(m.group("e"))
+        if c0 <= t0 and c1 >= t1:
+            df = load_cache(p)
+            if df is None or df.empty:
+                continue
+            sub = df[
+                (df["timestamp"] >= pd.Timestamp(t0, tz="UTC"))
+                & (df["timestamp"] <= pd.Timestamp(t1, tz="UTC") + pd.Timedelta(hours=23))
+            ]
+            if not sub.empty and (best is None or len(sub) > len(best)):
+                best = sub.copy()
+    if best is not None:
+        best.attrs["source"] = "binance_vision_klines_cached_subset"
+        return best.reset_index(drop=True)
+    return None
+
+
 def fetch_binance_klines_range(
     symbol: str,
     interval: str,
@@ -163,6 +195,9 @@ def fetch_binance_klines_range(
     if cached is not None and not cached.empty:
         cached.attrs["source"] = "binance_vision_klines_cached"
         return cached
+    overlap = _load_klines_from_overlap_cache(sym, interval, t0, t1)
+    if overlap is not None and not overlap.empty:
+        return overlap
     if cache_only:
         raise RuntimeError(f"cache-only missing {path}")
 

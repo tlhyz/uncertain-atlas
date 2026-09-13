@@ -10,7 +10,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P0-01 | Merge refactor PR #8 to main | pending | |
+| P0-01 | Merge refactor PR #8 to main | blocked | awaiting human merge |
 | P0-02 | pytest green on main after merge | pending | |
 | P0-03 | README links all docs | done | refactor delivery |
 | P0-04 | Review-log policy in `.cursor/rules` | done | review-optimize-log.mdc |
@@ -21,16 +21,17 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P1-01 | Download BTC/ETH/SOL aggTrades (auto start date) | pending | |
-| P1-02 | Download SOXLUSDT aggTrades (detect earliest) | pending | |
-| P1-03 | Download SNXXUSDT aggTrades (detect earliest) | pending | |
-| P1-04 | Run `build_manifest.py` + sha256 all files | pending | |
-| P1-05 | Validate every SOXL bar has aggTrades | pending | ts_ms fix committed |
-| P1-06 | Validate every SNXX bar has aggTrades | pending | |
-| P1-07 | Cross-check tick OHLCV vs kline (SOXL) | pending | |
-| P1-08 | Cross-check tick OHLCV vs kline (SNXX) | pending | |
-| P1-09 | Document data gaps in manifest notes | pending | |
+| P1-01 | Download BTC/ETH/SOL aggTrades (auto start date) | in_progress | BTC 91d OK; ETH/SOL cache corrupt — re-download |
+| P1-02 | Download SOXLUSDT aggTrades (detect earliest) | done | 65 days 2026-07-09→09-11 |
+| P1-03 | Download SNXXUSDT aggTrades (detect earliest) | done | 65 days |
+| P1-04 | Run `build_manifest.py` + sha256 all files | done | data/manifests/*.json |
+| P1-05 | Validate every SOXL bar has aggTrades | done | 1560/1560 |
+| P1-06 | Validate every SNXX bar has aggTrades | done | 1546/1546 |
+| P1-07 | Cross-check tick OHLCV vs kline (SOXL) | done | lazy validation passed |
+| P1-08 | Cross-check tick OHLCV vs kline (SNXX) | done | lazy validation passed |
+| P1-09 | Document data gaps in manifest notes | done | Sep-12 empty; ETH/SOL noted |
 | P1-10 | Gate download script smoke test BTC_USDT | pending | |
+| P1-11 | Full 65d Binance tick backtest SOXL/SNXX | pending | 7d smoke FAIL logged |
 
 ---
 

@@ -14,7 +14,7 @@ fill_mode: base
 
 # Binance USDT-M: SOXL/SNXX tech book with aggTrades (not Gate)
 data_start: "2026-07-09"
-data_end: ""  # empty = through today
+data_end: "2026-09-11"  # Sep-12 Vision aggTrades not available yet
 download_trades: true
 tick_precise: true
 

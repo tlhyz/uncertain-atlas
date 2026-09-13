@@ -1,0 +1,42 @@
+{
+  "venue": "binance",
+  "symbol": "BTCUSDT",
+  "market": "futures_um_aggTrades",
+  "start": "2024-09-01",
+  "end": "2024-11-30",
+  "source": "binance_vision_daily",
+  "files": [
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-26.csv",
+      "sha256": "8e78f636c8716d16f57102c05e45ba301a5dcf65d116c242b626636dbd927f20",
+      "bytes": 184135015
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-27.csv",
+      "sha256": "6c9260955249eda8d35c2ce4a47a55472ec8e2601c8819736a7cfb93dfc4db49",
+      "bytes": 118335218
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-28.csv",
+      "sha256": "4cd3ce0e2b3698a8485591376755f78498db59e3645a6d54bddbc59dd5a0dbf6",
+      "bytes": 82789385
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-29.csv",
+      "sha256": "422af37edae39f4aee887aea6e7457ce741de50568a31f62b37e93ccb50d9787",
+      "bytes": 92083436
+    },
+    {
+      "path": "cache/binance_futures_BTCUSDT_aggTrades_2024-11-30.csv",
+      "sha256": "a5f09008f92e8cfb35c940c3bbb47e8cb26299f4261cb9eff794df11c2333018",
+      "bytes": 49180451
+    }
+  ],
+  "rows": 1163029,
+  "missing_periods": [],
+  "notes": [
+    "day_files=91",
+    "rows_est=1163029"
+  ],
+  "created_at": "2026-09-13T00:09:12.791151+00:00"
+}
