@@ -432,6 +432,7 @@
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
 - [applysnapusage-sold-as-restored](applysnapusage-sold-as-restored.md)
+- [queryusage-sold-as-querystate](queryusage-sold-as-querystate.md)
 - [chktxvalidate-sold-as-applied](chktxvalidate-sold-as-applied.md)
 - [chktxtype-sold-as-recheck](chktxtype-sold-as-recheck.md)
 - [offersnaptrust-sold-as-metadata](offersnaptrust-sold-as-metadata.md)

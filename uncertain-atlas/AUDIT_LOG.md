@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2370 | 高 | 看见 Query for data from the application at current or past height / 看见查当前或过去高度 会被写成已经是 QueryState，或当成已经复制到各节点 / QueryState 就是 ExecuteTxState | 官方 Query Usage：Query for data from the application at current or past height |
+| A2371 | 高 | 看见 Optionally return Merkle proof / 看见可选回默克尔证明 会被写成已经对上 AppHash，或当成已经 Query 请求 prove 那种能回就回 interchangeable / Finalize Query proofs anchored 交差 | 官方 Query Usage：Optionally return Merkle proof |
+| A2372 | 高 | 看见 Merkle proof includes self-describing type / 看见证明带自描述 type、好支持多种默克尔树和编码 会被写成已经是 ProofOp.type 按键查，或当成已经 Query 回了 Proof 就对上 AppHash / CheckTx 守卫余量 bundled interchangeable | 官方 Query Usage：Merkle proof includes self-describing `type` field to support many types of Merkle trees and encoding formats |
+| A2373 | 中 | 怎样做 Query 路径 / 怎样勾 prove / 怎样编 proof_ops 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2374 | 记录 | 会与 371 / 383 / 325 / 329 / 314 / 475 / 405 / 406 糊成「看见能 Query 就已经是 QueryState、已经对上 AppHash、已经是 ProofOp 按键查」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 QueryState / 已经对上 AppHash / ProofOp 按键查 标成另一对象 |
+
 | A2365 | 高 | 看见 CheckTx validates against current state / checking signatures and account balances / 看见对照当前状态验 会被写成已经按 ExecuteTxState 验过，或当成已经按将要执行的那份状态验过 | 官方 CheckTx Usage：CheckTx validates the transaction against the current state of the application, for example, checking signatures and account balances |
 | A2366 | 高 | 看见 does not apply any of the state changes described in the transaction / 看见不应用这笔描述的状态改动 会被写成已经改了状态 / 已经参与处理块，或当成已经 Finalize 确定执行 / Process candidate 交了差 | 官方 CheckTx Usage：but does not apply any of the state changes described in the transaction |
 | A2367 | 高 | 看见 Technically optional / not involved in processing blocks / Guardian of the mempool / Code≠0 rejected not broadcast not in proposal 会被写成已经四门已经结算 / 可以不跑 CheckTx，或当成已经 Check 通过就是已进提案 / CheckTx 过了就永远有效 | 官方 CheckTx Usage：Technically optional - not involved in processing blocks … Transactions where CheckTxResponse.Code != 0 will be rejected … will not be broadcast … or included in a proposal block |

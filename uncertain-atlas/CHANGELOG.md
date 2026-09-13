@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 487）
+
+- CometBFT Query Usage 正式三事工作实例（官方 ABCI++ Methods Query Usage Query for data at current or past height / Optionally return Merkle proof / Merkle proof self-describing type，实现 / Query Usage 正式三事，不另写 19 节）：看见 Query for data at current or past height 不是已经是 QueryState / 已经复制到各节点。看见 Optionally return Merkle proof 不是已经对上 AppHash / prove 请求栏 interchangeable。看见 Merkle proof self-describing type 不是 ProofOp 按键查 / CheckTx 守卫余量 bundled interchangeable。Query Usage 正式三事不是不变量 371，也不是不变量 383，也不是不变量 325。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 487；语料 C491；模式 name-the-queryusage-bar；反模式 queryusage-sold-as-querystate；L10.3 第 483 条。填 L4.4 / CometBFT 档案 Query Usage 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做 Query 路径、怎样勾 prove、怎样编 proof_ops。不编博物馆页。不另写 19 节。不与 371 / 383 / 325 / 329 / 314 / 475 / 405 / 406 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经是 QueryState / 已经对上 AppHash / ProofOp 按键查 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 486）
 
 - CometBFT CheckTx Usage validate-no-apply 正式三事工作实例（官方 ABCI++ Methods CheckTx Usage validates against current state / does not apply state changes / Technically optional + Code≠0 rejected，实现 / CheckTx Usage validate-no-apply 正式三事，不另写 19 节）：看见 validates against current state 不是 ExecuteTxState / 将要执行的那份状态。看见 does not apply state changes 不是已经改了状态 / Finalize interchangeable。看见 Technically optional / Code≠0 拒绝 不是四门已经结算 / CheckTx 过了就永远有效。CheckTx Usage validate-no-apply 正式三事不是不变量 312，也不是不变量 391，也不是不变量 373。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
