@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2305 | 高 | 看见 FinalizeBlock Contains the fields of the newly decided block / 看见含刚决定那块的字段 会被写成已经是四门已经结算，或当成已经跑过 Process / 已经交差 | 官方 FinalizeBlock Usage：Contains the fields of the newly decided block |
+| A2306 | 高 | 看见 newly decided block / 看见刚决定那块 会被写成 proposed block，或当成已经是 ProcessProposal Contains all information needed to fully execute it / ProcessProposalRequest 拟议块字段 interchangeable | 官方 FinalizeBlock Usage vs ProcessProposal 含执行所需全部信息 453 |
+| A2307 | 高 | 看见 fields of the newly decided block / 看见刚决定那块的字段 会被写成 height/time match proposed block header 就代表对象已经分清，或当成 fill up all fields even if Prepare/Process passed 就代表 newly decided 和 proposed interchangeable | 官方 FinalizeBlock Usage vs height/time match header 462 / fill all fields 473 |
+| A2308 | 中 | 怎样写 FinalizeBlockRequest 各栏 / 怎样和 Process 请求栏对齐会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2309 | 记录 | 会与 461 / 407 / 453 / 462 / 473 / 465 糊成「看见填了 Finalize 含刚决定那块的字段就已经是四门已经结算、已经是 Process 含全部信息、height/time 对上了就代表对象已经分清」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock Contains newly decided block fields 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是四门已经结算 / 已经是 Process 含全部信息 / height/time 对上就代表对象已经分清 标成另一对象 |
+
 | A2300 | 高 | 看见 Currently, CometBFT will fill up all fields in FinalizeBlockRequest / 看见引擎会把 Finalize 请求全部字段填齐 会被写成已经 Prepare / Process 给过就不用再 Finalize，或当成已经交差 | 官方 FinalizeBlock Usage：Currently, CometBFT will fill up all fields in FinalizeBlockRequest |
 | A2301 | 高 | 看见 even if they were already passed on via PrepareProposalRequest or ProcessProposalRequest / 看见即使 Prepare / Process 已经传过 会被写成已经字段名对得上就代表已经跑过 Process，或当成已经 Prepare 和 Process / Finalize 同一套字段就已经是刚决定那块的字段 | 官方 FinalizeBlock Usage vs Prepare 请求字段同一套 359 |
 | A2302 | 高 | 看见 all fields / 又填一遍 会被写成已经 decided_last_commit 和 proposed_last_commit 就可以混用，或当成已经 Prepare / Process 传过就意味着 decided 和 proposed 语义 interchangeable | 官方 FinalizeBlock Usage vs decided vs proposed 422 |
