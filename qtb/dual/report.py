@@ -50,12 +50,14 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
         "",
         f"- Overlap: **{provenance.get('overlap_start', '?')}** → **{provenance.get('overlap_end', '?')}**",
         f"- Bars: {provenance.get('bars', '?')} @ {provenance.get('interval', '1h')}",
+        f"- Execution: **aggTrades tick-precise** (every tech bar validated; no OHLC fill fallback)",
+        f"- Source: **Binance USDT-M Vision** (klines + aggTrades for SOXL/SNXX tech legs)",
         f"- Tech: SOXL, SNXX | Crypto: BTC, ETH, SOL (independent books)",
         f"- Capital: TECH 6500 + CRYPTO 2500 + RESERVE 1000 = **10000 USDT**",
         "",
         "### Seed Window Coverage",
         "",
-        "| ID | Status | Gate Bars | Notes |",
+        "| ID | Status | Bars | Notes |",
         "|---|---|---|---|",
     ]
 
@@ -257,7 +259,7 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
     ])
     if best_dual_b10 and b4 and best_dual_b10.get("total_return", 0) < b4.get("total_return", 0):
         lines.append(
-            f"**Primary hypothesis FAIL on available Gate overlap "
+            f"**Primary hypothesis FAIL on available Binance overlap "
             f"({provenance.get('overlap_start', '')[:10]} → {provenance.get('overlap_end', '')[:10]}):** "
             f"Short→Long dual ({best_dual_b10.get('total_return', 0):.2%}) loses to "
             f"wait-and-directional-long ({b4.get('total_return', 0):.2%}). "
@@ -272,8 +274,8 @@ def write_report(payload: dict[str, Any], out_dir: Path) -> Path:
         else "Independent books do NOT beat unified signal on return."
     )
     lines.append(
-        "Most 2024–2025 seed windows are **STRUCTURAL_SEED_ONLY** on Gate SOXL/SNXX perp; "
-        "use Binance templates for shape search, Gate ticks for execution only."
+        "Most 2024–2025 seed windows are **STRUCTURAL_SEED_ONLY** on Binance SOXL/SNXX perp history; "
+        "similar-window search uses Binance SOXL path + BTC shape proxy for templates."
     )
 
     path = out_dir / "DUAL_REPORT.md"

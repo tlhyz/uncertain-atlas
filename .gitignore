@@ -4,9 +4,21 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 .mypy_cache/
+
+# Raw market data — never commit (see docs/DATA_POLICY.md)
+data/raw/
+data/cache/
 cache/
+*.zip
+*.parquet
+large_*.csv
+
+# Logs and ephemeral optimize artifacts
 *.log
-# generated optimize artifacts from the legacy scripts
 opt_*_results.json
 opt_*_run.log
 opt_*_demo_snippet.txt
+
+# Local IDE
+.idea/
+.vscode/

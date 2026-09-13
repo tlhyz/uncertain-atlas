@@ -31,6 +31,8 @@ BINANCE_SYMBOL: dict[str, str] = {
     "BTC": "BTCUSDT",
     "ETH": "ETHUSDT",
     "SOL": "SOLUSDT",
+    "SOXL": "SOXLUSDT",
+    "SNXX": "SNXXUSDT",
 }
 
 DrawdownSet = Literal["A", "B", "C"]

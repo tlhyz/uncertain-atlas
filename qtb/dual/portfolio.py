@@ -22,6 +22,7 @@ from qtb.ab.fills import FillConfig, PendingFill, infer_tick, resolve_bar_fills
 from qtb.ab.grids import GridSpec, grid_quote_size, native_spec, rolling_atr
 
 from .tick_fills import resolve_tick_fills
+from .tick_exec import adjust_notional_via_ticks, perp_close, perp_open
 from qtb.costs.model import funding_pnl
 from qtb.data.binance_futures import slice_trades_for_bar
 
@@ -33,6 +34,7 @@ from .universe import (
     CRYPTO_BOOK,
     GLOBAL_RESERVE,
     TECH_BOOK,
+    TECH_SYMBOLS,
     TOTAL_CAPITAL,
     DualParams,
     TechParams,
@@ -166,10 +168,11 @@ def _process_grid_fills(
     fill: FillConfig,
     reanchor: bool,
     bar_trades: pd.DataFrame | None = None,
-) -> None:
+    tick_precise: bool = False,
+) -> bool:
     st = leg.state
     if st.liquidated or leg.mode != "grid" or leg.target_notional <= 0:
-        return
+        return False
     sign = 1.0 if leg.direction == "long" else -1.0
     if leg.spec is None or (reanchor and leg.spec and (c < leg.spec.lower or c > leg.spec.upper)):
         leg.spec = native_spec(c, max(atr, c * 0.002), atr_step, atr_range, "geometric")
@@ -209,14 +212,24 @@ def _process_grid_fills(
     if bar_trades is not None and not bar_trades.empty:
         tick = infer_tick(float(c), fill.tick_size)
         fill_t = FillConfig(fill.mode, fill.participation, fill.extra_ticks, fill.extra_slip_bps, tick)
-        fills = resolve_tick_fills(pending, bar_trades, fill_t)
+        fills = resolve_tick_fills(pending, bar_trades, fill_t, bar_open=o, bar_close=c)
         for tf in fills:
-            px = tf.price
-            if tf.side == "buy" and leg.direction == "long":
-                _rebalance_leg(leg, i, px, abs(st.qty) * px + tf.notional, fee, fill)
-            elif tf.side == "sell" and leg.direction == "long":
-                _rebalance_leg(leg, i, px, max(abs(st.qty) * px - tf.notional, 0), fee, fill)
-        return
+            if tf.reduce_only:
+                lot_idx = tf.level_idx - 1 if leg.direction == "long" else tf.level_idx + 1
+                perp_close(
+                    st, leg.direction, tf.qty, tf.price, fee,
+                    maker=True, level_idx=lot_idx if lot_idx in st.lots else None, is_grid=True,
+                )
+            elif tf.side == "buy" and leg.direction == "long":
+                perp_open(st, leg.direction, leg.leverage, tf.qty, tf.price, fee, maker=True, level_idx=tf.level_idx)
+            elif tf.side == "sell" and leg.direction == "short":
+                perp_open(st, leg.direction, leg.leverage, tf.qty, tf.price, fee, maker=True, level_idx=tf.level_idx)
+        return True
+
+    if tick_precise:
+        raise RuntimeError(
+            f"tick_precise: grid leg {leg.name} missing aggTrades — refuse bar OHLC approximation"
+        )
 
     fills = resolve_bar_fills(pending, o, h, l, c, quote_volume=qv, cfg=fill)
     for pf in fills:
@@ -226,6 +239,38 @@ def _process_grid_fills(
             _rebalance_leg(leg, i, px, abs(st.qty) * px + qty * px, fee, fill)
         elif pf.side == "sell" and leg.direction == "long" and pf.reduce_only:
             _rebalance_leg(leg, i, px, max(abs(st.qty) * px - (pf.qty or 0) * px, 0), fee, fill)
+    return False
+
+
+def _load_bar_trades(
+    md,
+    bar_ts: pd.Timestamp,
+    interval: str,
+    *,
+    tech_tick_fills: bool,
+    crypto_tick_fills: bool,
+    tick_precise: bool,
+) -> pd.DataFrame | None:
+    if md is None:
+        return None
+    use_ticks = (
+        (md.data_source == "binance" and getattr(md, "trades_lazy", False))
+        and (tech_tick_fills if md.symbol in TECH_SYMBOLS else crypto_tick_fills)
+    )
+    if not use_ticks:
+        return None
+    if md.trades is not None and not md.trades.empty:
+        return slice_trades_for_bar(md.trades, bar_ts, interval)
+    if getattr(md, "trades_lazy", False):
+        from qtb.data.binance_futures import fetch_agg_trades_day
+
+        day_df = fetch_agg_trades_day(md.perp, bar_ts.date(), cache_only=True)
+        if day_df.empty:
+            if tick_precise:
+                raise RuntimeError(f"Missing aggTrades cache for {md.perp} on {bar_ts.date()}")
+            return None
+        return slice_trades_for_bar(day_df, bar_ts, interval)
+    return None
 
 
 def run_dual_portfolio(
@@ -235,8 +280,11 @@ def run_dual_portfolio(
     name: str = "dual",
     fill_mode: str = "base",
     benchmark: str | None = None,
-    crypto_tick_fills: bool = True,
+    crypto_tick_fills: bool = False,
+    tech_tick_fills: bool = True,
     tech_disabled: bool = False,
+    tick_precise: bool = False,
+    tech_tick_only: bool = True,
 ) -> PortfolioResult:
     """Run dual-engine strategy or named benchmark on aligned dataset."""
     soxl = data.tech["SOXL"].bars
@@ -251,19 +299,30 @@ def run_dual_portfolio(
         return _from_engine(r, params, name)
 
     if benchmark == "B2_buy_hold":
+        if tick_precise and data.tech["SOXL"].trades_lazy:
+            return _run_tick_tech_benchmark(
+                data, params, name, fill_mode, fee, fill, tick_precise,
+                mode="hold", benchmark=benchmark,
+            )
         r = run_perp_grid(
-            soxl, name="B2_buy_hold", symbol="SOXL_USDT", fee=fee, fill=fill,
+            soxl, name="B2_buy_hold", symbol="SOXLUSDT", fee=fee, fill=fill,
             initial=TECH_BOOK, hold_only=True, target_notional=TECH_BOOK * params.tech.leverage,
             leverage_hint=params.tech.leverage, interval=data.interval,
         )
         return _from_engine(r, params, name, scale=TECH_BOOK / TOTAL_CAPITAL)
 
     if benchmark in ("B3_long_grid_only", "B4_directional_long_only"):
+        if tick_precise and data.tech["SOXL"].trades_lazy:
+            mode = "directional" if benchmark == "B4_directional_long_only" else "grid"
+            return _run_tick_tech_benchmark(
+                data, params, name, fill_mode, fee, fill, tick_precise,
+                mode=mode, benchmark=benchmark,
+            )
         hold = benchmark == "B4_directional_long_only"
         r = run_perp_grid(
             soxl,
             name=benchmark,
-            symbol="SOXL_USDT",
+            symbol="SOXLUSDT",
             fee=fee,
             fill=fill,
             initial=TECH_BOOK,
@@ -328,8 +387,20 @@ def run_dual_portfolio(
         for s in ("BTC", "ETH", "SOL")
     }
 
+    def _bar_trades_for(md, bar_ts: pd.Timestamp) -> pd.DataFrame | None:
+        return _load_bar_trades(
+            md, bar_ts, data.interval,
+            tech_tick_fills=tech_tick_fills,
+            crypto_tick_fills=crypto_tick_fills,
+            tick_precise=tick_precise,
+        )
+
     for i in range(n):
         px = float(soxl_c[i])
+        bar_ts_soxl = pd.Timestamp(soxl["timestamp"].iloc[i])
+        bar_ts_snxx = pd.Timestamp(snxx["timestamp"].iloc[i])
+        soxl_trades = _bar_trades_for(data.tech["SOXL"], bar_ts_soxl)
+        snxx_trades = _bar_trades_for(data.tech["SNXX"], bar_ts_snxx)
         if i >= warm:
             tech_exp = tech_fsm.on_bar(i, float(dd_series[i]), soxl_c, soxl_h, soxl_l, snxx_c)
             crypto_exp = crypto_fsm.on_bar(
@@ -356,6 +427,12 @@ def run_dual_portfolio(
                 if ce:
                     leg.target_notional = (ce.long_grid_frac + ce.long_dir_frac) * crypto_caps
 
+            if tech_tick_only and tick_precise:
+                for leg in legs[4:]:
+                    md = data.crypto.get(leg.symbol)
+                    if md is None or not getattr(md, "trades_lazy", False):
+                        leg.target_notional = 0.0
+
             if tech_disabled:
                 for leg in legs[:4]:
                     leg.target_notional = 0.0
@@ -370,9 +447,14 @@ def run_dual_portfolio(
         # Funding
         for leg in legs:
             st = leg.state
-            fr = float(soxl["funding_rate"].iloc[i]) if leg.symbol == "SOXL" else 0.0
-            if leg.symbol in crypto_bars:
+            if leg.symbol == "SOXL":
+                fr = float(soxl["funding_rate"].iloc[i])
+            elif leg.symbol == "SNXX":
+                fr = float(snxx["funding_rate"].iloc[i])
+            elif leg.symbol in crypto_bars:
                 fr = float(data.crypto[leg.symbol].bars["funding_rate"].iloc[i])
+            else:
+                fr = 0.0
             if st.qty != 0 and abs(fr) > 0:
                 pnl = funding_pnl(st.qty, float(soxl["open"].iloc[i]), fr)
                 st.wallet += pnl
@@ -385,29 +467,50 @@ def run_dual_portfolio(
             qv = float(soxl["quote_volume"].iloc[i]) if "quote_volume" in soxl.columns else 0.0
             atr = float(atr_s[i])
             for leg in legs[:4]:
+                if leg.symbol == "SOXL":
+                    bar_trades = soxl_trades
+                    mark_px = px
+                    o, h, l = float(soxl["open"].iloc[i]), float(soxl["high"].iloc[i]), float(soxl["low"].iloc[i])
+                else:
+                    bar_trades = snxx_trades
+                    mark_px = float(snxx_c[i])
+                    o, h, l = float(snxx["open"].iloc[i]), float(snxx["high"].iloc[i]), float(snxx["low"].iloc[i])
+                if tick_precise and (bar_trades is None or bar_trades.empty):
+                    raise RuntimeError(
+                        f"tick_precise: no aggTrades in bar {bar_ts_soxl if leg.symbol == 'SOXL' else bar_ts_snxx} "
+                        f"for {leg.symbol} — refuse bar approximation"
+                    )
                 if leg.mode == "grid":
                     _process_grid_fills(
-                        leg, i,
-                        float(soxl["open"].iloc[i]), float(soxl["high"].iloc[i]),
-                        float(soxl["low"].iloc[i]), px, qv, atr,
+                        leg, i, o, h, l, mark_px, qv if leg.symbol == "SOXL" else float(snxx["quote_volume"].iloc[i]),
+                        atr if leg.symbol == "SOXL" else float(
+                            rolling_atr(snxx["high"].to_numpy(float), snxx["low"].to_numpy(float), snxx_c, 24)[i]
+                        ),
                         params.tech.grid_atr_step, params.tech.grid_atr_range,
                         fee, fill, reanchor,
+                        bar_trades=bar_trades,
+                        tick_precise=tick_precise,
                     )
-                _rebalance_leg(leg, i, px if leg.symbol == "SOXL" else float(snxx_c[i] if leg.symbol == "SNXX" else data.crypto[leg.symbol].bars["close"].iloc[i]), leg.target_notional, fee, fill)
+                if bar_trades is not None and not bar_trades.empty:
+                    adjust_notional_via_ticks(
+                        leg.state, leg.direction, leg.leverage,
+                        leg.target_notional, bar_trades, fee, fill,
+                    )
+                elif not tick_precise:
+                    _rebalance_leg(leg, i, mark_px, leg.target_notional, fee, fill)
 
             for leg in legs[4:]:
+                md = data.crypto.get(leg.symbol)
+                if tech_tick_only and tick_precise and (md is None or not getattr(md, "trades_lazy", False)):
+                    continue
                 cpx = float(data.crypto[leg.symbol].bars["close"].iloc[i])
                 bar_ts = pd.Timestamp(data.crypto[leg.symbol].bars["timestamp"].iloc[i])
-                bar_trades = None
-                md = data.crypto.get(leg.symbol)
-                if crypto_tick_fills and md:
-                    if md.trades is not None and not md.trades.empty:
-                        bar_trades = slice_trades_for_bar(md.trades, bar_ts, data.interval)
-                    elif getattr(md, "trades_lazy", False):
-                        from qtb.data.binance_futures import fetch_agg_trades_day
-
-                        day_df = fetch_agg_trades_day(md.perp, bar_ts.date(), cache_only=True)
-                        bar_trades = slice_trades_for_bar(day_df, bar_ts, data.interval)
+                bar_trades = _bar_trades_for(md, bar_ts)
+                if tick_precise and getattr(md, "trades_lazy", False) and (bar_trades is None or bar_trades.empty):
+                    raise RuntimeError(
+                        f"tick_precise: no aggTrades in bar {bar_ts} for {leg.symbol} — refuse bar approximation"
+                    )
+                used_ticks = False
                 if leg.mode == "grid" and leg.target_notional > 0:
                     atr_c = float(
                         rolling_atr(
@@ -418,7 +521,7 @@ def run_dual_portfolio(
                         )[i]
                     )
                     qv_c = float(data.crypto[leg.symbol].bars["quote_volume"].iloc[i]) if "quote_volume" in data.crypto[leg.symbol].bars.columns else 0.0
-                    _process_grid_fills(
+                    used_ticks = _process_grid_fills(
                         leg, i,
                         float(data.crypto[leg.symbol].bars["open"].iloc[i]),
                         float(data.crypto[leg.symbol].bars["high"].iloc[i]),
@@ -427,8 +530,15 @@ def run_dual_portfolio(
                         params.crypto.grid_atr_step, params.crypto.grid_atr_range,
                         fee, fill, reanchor=True,
                         bar_trades=bar_trades,
+                        tick_precise=tick_precise,
                     )
-                _rebalance_leg(leg, i, cpx, leg.target_notional, fee, fill)
+                if bar_trades is not None and not bar_trades.empty:
+                    adjust_notional_via_ticks(
+                        leg.state, leg.direction, leg.leverage,
+                        leg.target_notional, bar_trades, fee, fill,
+                    )
+                elif not tick_precise:
+                    _rebalance_leg(leg, i, cpx, leg.target_notional, fee, fill)
 
         # Liquidation check (isolated, simplified)
         for leg in legs:
@@ -449,8 +559,19 @@ def run_dual_portfolio(
                 st.liq_count += 1
                 liq_count += 1
 
-        t_e = sum(_leg_equity(l, px if l.symbol == "SOXL" else float(snxx_c[i] if l.symbol == "SNXX" else data.crypto[l.symbol].bars["close"].iloc[i])) for l in legs[:4])
-        c_e = sum(_leg_equity(l, float(data.crypto[l.symbol].bars["close"].iloc[i])) for l in legs[4:])
+        t_e = 0.0
+        for l in legs[:4]:
+            if l.symbol == "SOXL":
+                mark = float(soxl_trades["price"].iloc[-1]) if soxl_trades is not None and not soxl_trades.empty else px
+            else:
+                mark = float(snxx_trades["price"].iloc[-1]) if snxx_trades is not None and not snxx_trades.empty else float(snxx_c[i])
+            t_e += _leg_equity(l, mark)
+        c_e = 0.0
+        for l in legs[4:]:
+            md = data.crypto[l.symbol]
+            bt = _bar_trades_for(md, pd.Timestamp(md.bars["timestamp"].iloc[i]))
+            mark = float(bt["price"].iloc[-1]) if bt is not None and not bt.empty else float(md.bars["close"].iloc[i])
+            c_e += _leg_equity(l, mark)
         total_eq[i] = t_e + c_e + reserve_pool
         tech_eq[i] = t_e
         crypto_eq[i] = c_e
@@ -476,7 +597,94 @@ def run_dual_portfolio(
         liquidation_count=liq_count,
         components=components,
         regime_log=regime_log,
-        extras={"benchmark": benchmark, "fill": fill_mode},
+        extras={"benchmark": benchmark, "fill": fill_mode, "execution": "tick_aggTrades" if tick_precise else "bar"},
+    )
+
+
+def _run_tick_tech_benchmark(
+    data: DualDataset,
+    params: DualParams,
+    name: str,
+    fill_mode: str,
+    fee: FeeSpec,
+    fill: FillConfig,
+    tick_precise: bool,
+    *,
+    mode: Literal["hold", "grid", "directional"],
+    benchmark: str,
+) -> PortfolioResult:
+    """SOXL-only benchmark on Binance aggTrades — same tick engine as dual strategy."""
+    soxl = data.tech["SOXL"].bars
+    n = len(soxl)
+    ts = soxl["timestamp"].tolist()
+    warm = min(_warmup_bars(data.interval), max(n // 8, 24))
+    soxl_c = soxl["close"].to_numpy(float)
+    soxl_h = soxl["high"].to_numpy(float)
+    soxl_l = soxl["low"].to_numpy(float)
+    atr_s = rolling_atr(soxl_h, soxl_l, soxl_c, 24 if params.tech.atr_tf == "1h" else 96)
+    reanchor = params.tech.reanchor != "off"
+    target = TECH_BOOK * params.tech.leverage * (0.6 if mode != "hold" else 1.0)
+
+    st = _PerpState(wallet=TECH_BOOK, reserve=0.0)
+    leg = LegState(
+        name, "tech", "SOXL",
+        "long", "grid" if mode == "grid" else "directional", st,
+        target_notional=target, leverage=params.tech.leverage,
+    )
+    total_eq = np.full(n, TOTAL_CAPITAL)
+    tech_eq = np.full(n, TECH_BOOK)
+    liq_count = 0
+
+    for i in range(n):
+        px = float(soxl_c[i])
+        bar_ts = pd.Timestamp(soxl["timestamp"].iloc[i])
+        bar_trades = _load_bar_trades(
+            data.tech["SOXL"], bar_ts, data.interval,
+            tech_tick_fills=True, crypto_tick_fills=False, tick_precise=tick_precise,
+        ) if tick_precise else None
+        if tick_precise and (bar_trades is None or bar_trades.empty):
+            raise RuntimeError(f"tick_precise benchmark {benchmark}: no aggTrades at {bar_ts}")
+
+        if i >= warm:
+            qv = float(soxl["quote_volume"].iloc[i]) if "quote_volume" in soxl.columns else 0.0
+            atr = float(atr_s[i])
+            if mode == "grid":
+                _process_grid_fills(
+                    leg, i,
+                    float(soxl["open"].iloc[i]), float(soxl["high"].iloc[i]),
+                    float(soxl["low"].iloc[i]), px, qv, atr,
+                    params.tech.grid_atr_step, params.tech.grid_atr_range,
+                    fee, fill, reanchor, bar_trades=bar_trades, tick_precise=tick_precise,
+                )
+            if bar_trades is not None and not bar_trades.empty:
+                adjust_notional_via_ticks(st, leg.direction, leg.leverage, target, bar_trades, fee, fill)
+            elif not tick_precise:
+                _rebalance_leg(leg, i, px, target, fee, fill)
+
+        mark = float(bar_trades["price"].iloc[-1]) if bar_trades is not None and not bar_trades.empty else px
+        te = _leg_equity(leg, mark)
+        tech_eq[i] = te
+        total_eq[i] = te + CRYPTO_BOOK + GLOBAL_RESERVE
+
+    return PortfolioResult(
+        name=name,
+        params=params,
+        timestamps=ts,
+        total_equity=total_eq,
+        tech_equity=tech_eq,
+        crypto_equity=np.full(n, CRYPTO_BOOK),
+        reserve=np.full(n, GLOBAL_RESERVE),
+        trades=[],
+        liquidated=liq_count > 0,
+        liquidation_count=liq_count,
+        components={
+            "futures_fee": st.fees,
+            "rebate": st.rebates,
+            "net_funding": st.funding_recv - st.funding_paid,
+            "turnover": st.turnover,
+            "liquidation_loss": st.liq_loss,
+        },
+        extras={"benchmark": benchmark, "fill": fill_mode, "execution": "tick_aggTrades"},
     )
 
 

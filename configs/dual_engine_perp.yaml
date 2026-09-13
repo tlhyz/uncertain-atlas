@@ -12,18 +12,23 @@ run_similar_search: true
 run_stress: true
 fill_mode: base
 
-# Binance USDT-M aggTrades (crypto tick backtest)
-run_binance_c1: true
+# Binance USDT-M: SOXL/SNXX tech book with aggTrades (not Gate)
+data_start: "2026-07-09"
+data_end: ""  # empty = through today
+download_trades: true
+tick_precise: true
+
+# Disable BTC-focused CRYPTO_C1 experiment
+run_binance_c1: false
 binance_c1_start: "2024-09-01"
 binance_c1_end: "2024-11-30"
-download_binance_trades: false
 
 # Capital pools (USDT)
 tech_book: 6500
 crypto_book: 2500
 global_reserve: 1000
 
-# Fee / rebate (Gate USDT-M defaults)
-futures_maker_fee: 0.00008
-futures_taker_fee: 0.0002
-futures_rebate: 0.75
+# Fee / rebate (Binance USDT-M defaults)
+futures_maker_fee: 0.0002
+futures_taker_fee: 0.0005
+futures_rebate: 0.0

@@ -24,8 +24,15 @@ def _spearman(a: np.ndarray, b: np.ndarray) -> float:
     rb = np.argsort(np.argsort(b))
     return _pearson(ra.astype(float), rb.astype(float))
 
-from .data import DualDataset, fetch_binance_futures_klines
+from .data import DualDataset
 from .universe import SEED_WINDOWS
+
+
+def _fetch_template_klines(symbol: str, interval: str, t0: pd.Timestamp, t1: pd.Timestamp) -> pd.DataFrame:
+    from qtb.data.binance_futures import fetch_binance_klines_range, normalize_symbol
+
+    bn = normalize_symbol(symbol)
+    return fetch_binance_klines_range(bn, interval, str(t0.date()), str(t1.date()), cache_only=True)
 
 
 @dataclass
@@ -111,11 +118,9 @@ def extract_template(seed_id: str, data: DualDataset) -> tuple[np.ndarray, str] 
         m = (md.bars["timestamp"] >= t0) & (md.bars["timestamp"] <= t1)
         sub = md.bars.loc[m]
         if len(sub) < 24:
-            # try binance BTC as shape proxy for structural seeds
+            # try Binance BTC as shape proxy for structural seeds
             try:
-                bn = fetch_binance_futures_klines("BTCUSDT" if sym == "BTC" else "BTCUSDT", "1h")
-                m2 = (bn["timestamp"] >= t0) & (bn["timestamp"] <= t1)
-                sub = bn.loc[m2]
+                sub = _fetch_template_klines("BTCUSDT", "1h", t0, t1)
             except Exception:
                 return None
         close = sub["close"].to_numpy(float)
@@ -130,7 +135,7 @@ def search_similar_windows(
     horizon_bars: int = 24 * 60,
     step_bars: int = 24 * 7,
 ) -> list[SimilarWindow]:
-    """Scan SOXL Gate history for windows similar to seed template."""
+    """Scan SOXL Binance history for windows similar to seed template."""
     tpl = extract_template(seed_id, data)
     if tpl is None:
         return []

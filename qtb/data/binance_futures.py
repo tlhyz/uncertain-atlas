@@ -26,15 +26,19 @@ except ImportError:  # pragma: no cover
 VISION = "https://data.binance.vision/data/futures/um/daily/aggTrades"
 VISION_KLINES = "https://data.binance.vision/data/futures/um/daily/klines"
 FAPI = "https://fapi.binance.com/fapi/v1/aggTrades"
-DEFAULT_SYMBOLS = ("BTCUSDT", "ETHUSDT", "SOLUSDT")
+DEFAULT_SYMBOLS = ("BTCUSDT", "ETHUSDT", "SOLUSDT", "SOXLUSDT", "SNXXUSDT")
 
 _SYMBOL_MAP = {
     "BTC": "BTCUSDT",
     "ETH": "ETHUSDT",
     "SOL": "SOLUSDT",
+    "SOXL": "SOXLUSDT",
+    "SNXX": "SNXXUSDT",
     "BTCUSDT": "BTCUSDT",
     "ETHUSDT": "ETHUSDT",
     "SOLUSDT": "SOLUSDT",
+    "SOXLUSDT": "SOXLUSDT",
+    "SNXXUSDT": "SNXXUSDT",
 }
 
 
@@ -45,6 +49,58 @@ def normalize_symbol(symbol: str) -> str:
     if s.endswith("USDT"):
         return s
     return s + "USDT"
+
+
+def _timestamp_to_ms(ts: pd.Series) -> pd.Series:
+    """Convert datetime64 series to epoch milliseconds."""
+    arr = ts.astype("int64")
+    unit = getattr(ts.dtype, "unit", "ns")
+    if unit == "ms":
+        return arr
+    if unit == "us":
+        return arr // 1_000
+    if unit == "s":
+        return arr * 1_000
+    return arr // 1_000_000  # ns → ms
+
+
+def _save_trades_cache(df: pd.DataFrame, path: Path) -> None:
+    out = df.copy()
+    if "ts_ms" in out.columns:
+        out["ts_ms"] = pd.to_numeric(out["ts_ms"], errors="coerce").astype("Int64")
+    else:
+        out["ts_ms"] = _timestamp_to_ms(out["timestamp"])
+    cols = ["ts_ms", "price", "qty", "quote_qty", "is_buyer_maker", "agg_id"]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    out[cols].to_csv(path, index=False)
+    path.with_suffix(".meta.json").write_text(
+        '{"source":"binance_vision_daily_aggTrades","format":"ts_ms"}', encoding="utf-8"
+    )
+
+
+def _load_trades_cache(path: Path) -> pd.DataFrame | None:
+    if not path.exists():
+        return None
+    raw = pd.read_csv(path)
+    if raw.empty:
+        return None
+    if "ts_ms" in raw.columns:
+        ts_ms = pd.to_numeric(raw["ts_ms"], errors="coerce")
+        # Corrupt cache: ms values far below year 2020 epoch
+        if ts_ms.max() < 1_500_000_000_000:
+            path.unlink(missing_ok=True)
+            path.with_suffix(".meta.json").unlink(missing_ok=True)
+            return None
+        raw["timestamp"] = pd.to_datetime(ts_ms, unit="ms", utc=True)
+    elif "timestamp" in raw.columns:
+        raw["timestamp"] = pd.to_datetime(raw["timestamp"], utc=True, errors="coerce")
+    for c in ("price", "qty", "quote_qty"):
+        raw[c] = raw[c].astype(float)
+    if "timestamp" not in raw.columns or raw["timestamp"].isna().sum() > len(raw) * 0.05:
+        path.unlink(missing_ok=True)
+        return None
+    raw.attrs["source"] = "binance_futures_cached_aggTrades"
+    return raw[["timestamp", "price", "qty", "quote_qty", "is_buyer_maker", "agg_id"]].reset_index(drop=True)
 
 
 def trades_day_cache_path(symbol: str, day: date) -> Path:
@@ -143,7 +199,7 @@ def _parse_vision_csv(text: str) -> pd.DataFrame:
     df["qty"] = df["qty"].astype(float)
     df["quote_qty"] = df["price"] * df["qty"]
     df["is_buyer_maker"] = df["is_buyer_maker"].astype(str).str.lower().isin(("true", "1", "yes"))
-    out = df[["timestamp", "price", "qty", "quote_qty", "is_buyer_maker", "agg_id"]].sort_values("timestamp")
+    out = df[["timestamp", "price", "qty", "quote_qty", "is_buyer_maker", "agg_id", "ts_ms"]].sort_values("timestamp")
     out.attrs["source"] = "binance_vision_daily_aggTrades"
     return out.reset_index(drop=True)
 
@@ -178,6 +234,7 @@ def _parse_agg_batch(batch: list[dict[str, Any]]) -> pd.DataFrame:
                 "quote_qty": px * qty,
                 "is_buyer_maker": bool(t["m"]),
                 "agg_id": int(t["a"]),
+                "ts_ms": int(t["T"]),
             }
         )
     df = pd.DataFrame(rows)
@@ -228,12 +285,15 @@ def fetch_agg_trades_day(
     sym = normalize_symbol(symbol)
     path = trades_day_cache_path(sym, day)
     if not force_refresh:
-        cached = load_cache(path)
+        cached = _load_trades_cache(path)
         if cached is not None and not cached.empty:
-            cached.attrs["source"] = "binance_futures_cached_aggTrades"
             cached.attrs["symbol"] = sym
             cached.attrs["day"] = day.isoformat()
             return cached
+        # Legacy corrupt CSV (ISO timestamps with subseconds) — force re-download
+        legacy = load_cache(path)
+        if legacy is not None and legacy["timestamp"].isna().sum() > len(legacy) * 0.05:
+            path.unlink(missing_ok=True)
 
     if cache_only:
         return pd.DataFrame(columns=["timestamp", "price", "qty", "quote_qty", "is_buyer_maker", "agg_id"])
@@ -245,7 +305,7 @@ def fetch_agg_trades_day(
     df.attrs["day"] = day.isoformat()
     df.attrs["market"] = "binance_futures"
     if not df.empty:
-        save_cache(df, path)
+        _save_trades_cache(df, path)
         print(f"[binance-trades] {sym} {day} rows={len(df)} source={df.attrs.get('source')}")
     return df
 

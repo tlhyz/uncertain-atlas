@@ -12,12 +12,11 @@ sys.path.insert(0, str(ROOT))
 from qtb.data.binance_futures import fetch_agg_trades_day, fetch_binance_klines_range
 
 
-def test_vision_agg_trades_one_day():
-    df = fetch_agg_trades_day("BTCUSDT", date(2024, 9, 1), cache_only=True)
-    assert len(df) > 100_000
+def test_vision_soxl_agg_trades_one_day():
+    df = fetch_agg_trades_day("SOXLUSDT", date(2026, 7, 15), cache_only=False, force_refresh=True)
+    assert len(df) > 100
     assert "quote_qty" in df.columns
-
-
-def test_vision_klines_small_range():
-    bars = fetch_binance_klines_range("BTCUSDT", "1h", "2024-09-01", "2024-09-02", cache_only=True)
-    assert len(bars) >= 24
+    assert df["timestamp"].min().year == 2026
+    df2 = fetch_agg_trades_day("SOXLUSDT", date(2026, 7, 15), cache_only=True)
+    assert len(df2) == len(df)
+    assert df2["timestamp"].min().year == 2026

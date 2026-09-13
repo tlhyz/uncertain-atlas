@@ -8,6 +8,8 @@ from typing import Any
 
 import yaml
 
+import pandas as pd
+
 from .data import load_dual_dataset, write_provenance
 from .experiments import (
     compare_independent_vs_unified,
@@ -38,10 +40,14 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "run_similar_search": True,
         "run_stress": True,
         "fill_mode": "base",
-        "run_binance_c1": True,
+        "run_binance_c1": False,
         "binance_c1_start": "2024-09-01",
         "binance_c1_end": "2024-11-30",
         "download_binance_trades": False,
+        "data_start": "2026-07-09",
+        "data_end": "",
+        "download_trades": True,
+        "tick_precise": True,
     }
     if path:
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
@@ -55,8 +61,18 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
     interval = str(cfg.get("interval") or "1h")
     cache_only = bool(cfg.get("cache_only"))
 
-    print(f"\n======== Dual-Engine Backtest {interval} ========")
-    data = load_dual_dataset(interval, cache_only=cache_only)
+    print(f"\n======== Dual-Engine Backtest {interval} (Binance SOXL/SNXX) ========")
+    data_start = str(cfg.get("data_start") or "2026-07-09")
+    data_end = str(cfg.get("data_end") or "").strip() or None
+    download_trades = bool(cfg.get("download_trades", True))
+    tick_precise = bool(cfg.get("tick_precise", True))
+    data = load_dual_dataset(
+        interval,
+        cache_only=cache_only,
+        start=data_start,
+        end=data_end,
+        download_trades=download_trades,
+    )
     write_provenance(data, out_dir)
     print(f"overlap {data.overlap_start} -> {data.overlap_end} bars={len(data.aligned_index)}")
 
@@ -67,7 +83,9 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
 
     if cfg.get("run_benchmarks", True):
         print("[run] benchmarks...")
-        payload["benchmarks"] = run_benchmarks(data, fill_mode=str(cfg.get("fill_mode") or "base"))
+        payload["benchmarks"] = run_benchmarks(
+            data, fill_mode=str(cfg.get("fill_mode") or "base"), tick_precise=tick_precise,
+        )
 
     if cfg.get("run_sweep", True):
         print("[run] parameter sweep...")
@@ -75,30 +93,31 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
             data,
             max_runs=int(cfg.get("sweep_max_runs") or 24),
             fill_mode=str(cfg.get("fill_mode") or "base"),
+            tick_precise=tick_precise,
         )
 
     if cfg.get("run_seed_windows", True):
         print("[run] seed windows...")
-        payload["seed_windows"] = run_seed_windows(data)
+        payload["seed_windows"] = run_seed_windows(data, tick_precise=tick_precise)
 
     if cfg.get("run_plans", True):
         print("[run] three plans...")
-        payload["plans"] = run_plans(data)
+        payload["plans"] = run_plans(data, tick_precise=tick_precise)
 
     print("[run] independent vs unified...")
-    payload["independent_vs_unified"] = compare_independent_vs_unified(data)
+    payload["independent_vs_unified"] = compare_independent_vs_unified(data, tick_precise=tick_precise)
 
     print("[run] short structure rank...")
-    payload["short_structures"] = rank_short_structures(data)
+    payload["short_structures"] = rank_short_structures(data, tick_precise=tick_precise)
 
     print("[run] leverage rank...")
-    payload["leverage_rank"] = rank_leverage(data)
+    payload["leverage_rank"] = rank_leverage(data, tick_precise=tick_precise)
 
-    payload["fill_modes"] = run_fill_modes(data)
+    payload["fill_modes"] = run_fill_modes(data, tick_precise=tick_precise)
 
     if cfg.get("run_stress", True):
         print("[run] 3x stress...")
-        payload["stress_3x"] = run_stress_leverage(data)
+        payload["stress_3x"] = run_stress_leverage(data, tick_precise=tick_precise)
 
     if cfg.get("run_similar_search", True):
         print("[run] similar window search...")
@@ -110,13 +129,13 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
     if cfg.get("download_binance_trades"):
         from qtb.data.binance_futures import download_symbols_range
 
-        print("[run] downloading Binance aggTrades...")
-        syms = cfg.get("binance_symbols") or ["BTC", "ETH", "SOL"]
+        print("[run] downloading Binance aggTrades (tech)...")
+        syms = cfg.get("binance_symbols") or ["SOXL", "SNXX"]
         payload["binance_download"] = {
             k: len(v) for k, v in download_symbols_range(
                 syms,
-                str(cfg.get("binance_c1_start") or "2024-09-01"),
-                str(cfg.get("binance_c1_end") or "2024-11-30"),
+                data_start,
+                data_end or pd.Timestamp.now(tz="UTC").strftime("%Y-%m-%d"),
                 cache_only=cache_only,
             ).items()
         }
