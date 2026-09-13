@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 456）
+
+- CometBFT ProcessProposal SHOULD Accept 正式三事工作实例（官方 ABCI++ Methods ProcessProposal Usage，实现 / ProcessProposal SHOULD Accept 正式三事，不另写 19 节）：看见应用 SHOULD 总是设 ProcessProposalResponse.status 为 ACCEPT 不是已经 honest proposal 必须 Accept / 已经是 Requirement 3 已经测过。看见除非真的知道 REJECT 的活性代价不是已经 REJECT 是免费过滤 / 已经 Process REJECT = prevote nil 那种已经结算。看见 SHOULD Accept 默认策略不是已经不能 Reject / 已经 Process 340 SHOULD Accept 通则 interchangeable。ProcessProposal SHOULD Accept 正式三事不是不变量 430，也不是不变量 347，也不是不变量 33 / 340 / 455。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 456；语料 C460；模式 name-the-procaccept-bar；反模式 procaccept-sold-as-req3；L10.3 第 452 条。填 L4.4 / CometBFT 档案 ProcessProposal SHOULD Accept 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写默认 Accept 策略、怎样评估 REJECT 活性代价。不编博物馆页。不另写 19 节。不与 430 / 347 / 33 / 340 / 455 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经 honest proposal 必须 Accept / 已经 REJECT 是免费过滤 / 已经 Requirement 3 已经测过 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 455）
 
 - CometBFT ProcessProposal REJECT 共识假设正式三事工作实例（官方 ABCI++ Methods ProcessProposal Usage / When，实现 / ProcessProposal REJECT 共识假设正式三事，不另写 19 节）：看见 ProcessProposalResponse.status 是 REJECT 时共识假设收到的提案不合法不是已经当成块非法 / 已经永久标成非法块。看见验证者 prevote nil 不是已经 VerifyVoteExtension REJECT 拒整张票 / 已经 Process 回包栏 bundled 三事 interchangeable。看见 REJECT 共识假设不是已经不能整块执行候选 / 已经 Process MAY 整块执行就意味着已经交差。ProcessProposal REJECT 共识假设正式三事不是不变量 430，也不是不变量 376，也不是不变量 452 / 33。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

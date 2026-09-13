@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2215 | 高 | 看见应用 SHOULD 总是设 ProcessProposalResponse.status 为 ACCEPT / 看见 SHOULD always set to ACCEPT 会被写成已经 honest proposal 必须 Accept，或当成已经是 Requirement 3 已经测过 | 官方 ProcessProposal Usage：application implementers SHOULD always set ProcessProposalResponse.status to ACCEPT |
+| A2216 | 高 | 看见除非他们 really know what the potential liveness implications of returning REJECT are / 看见除非真的知道 REJECT 的活性代价 会被写成已经 REJECT 是免费过滤，或当成已经 Process REJECT = prevote nil 那种已经结算 | 官方 ProcessProposal Usage：unless they really know what the potential liveness implications of returning REJECT are |
+| A2217 | 高 | 看见 SHOULD Accept 默认策略 / 看见写了默认 Accept 会被写成已经不能 Reject，或当成已经 Process 340 SHOULD Accept 通则 interchangeable | 官方 ProcessProposal Usage vs app requirements SHOULD Accept 通则 |
+| A2218 | 中 | 怎样写默认 Accept 策略 / 怎样评估 REJECT 活性代价会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2219 | 记录 | 会与 430 / 347 / 33 / 340 / 455 糊成「看见写了默认 Accept 就已经 honest proposal 必须 Accept、已经 REJECT 是免费过滤、已经 Requirement 3 已经测过」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposal SHOULD Accept 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 honest proposal 必须 Accept / 已经 REJECT 是免费过滤 / 已经 Requirement 3 已经测过 标成另一对象 |
+
 | A2210 | 高 | 看见 ProcessProposalResponse.status 是 REJECT 时共识假设收到的提案不合法 / 看见 consensus assumes the proposal received is not valid 会被写成已经当成块非法，或当成已经永久标成非法块 | 官方 ProcessProposal Usage：If ProcessProposalResponse.status is REJECT, consensus assumes the proposal received is not valid |
 | A2211 | 高 | 看见验证者会 prevote nil / 看见 When 里 REJECT: p prevotes nil 会被写成已经 VerifyVoteExtension REJECT 拒整张票，或当成已经 Process 回包栏 bundled 三事 interchangeable | 官方 ProcessProposal When：If p is a validator and the returned value is REJECT: p prevotes nil |
 | A2212 | 高 | 看见 REJECT 共识假设 / 看见 assumes not valid 会被写成已经不能整块执行候选，或当成已经 Process MAY 整块执行就意味着已经交差 | 官方 ProcessProposal Usage：MAY fully execute / candidate state vs REJECT assumes not valid |
