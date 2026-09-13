@@ -431,6 +431,7 @@
 - [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
+- [chktxtype-sold-as-recheck](chktxtype-sold-as-recheck.md)
 - [offersnaptrust-sold-as-metadata](offersnaptrust-sold-as-metadata.md)
 - [chktxlane-sold-as-nolane](chktxlane-sold-as-nolane.md)
 - [commitpersist-sold-as-finalize](commitpersist-sold-as-finalize.md)

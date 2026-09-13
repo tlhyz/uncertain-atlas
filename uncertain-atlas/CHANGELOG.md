@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 484）
+
+- CometBFT CheckTx Request type 正式三事工作实例（官方 ABCI++ Methods CheckTx Request type CheckTx_New default full check / CheckTx_Recheck mempool normal recheck；app requirements Commit 后再验 Type 标明，实现 / CheckTx Request type 正式三事，不另写 19 节）：看见 CheckTx_New 不是 CheckTx_Recheck / tx 栏就等于 Recheck。看见 CheckTx_Recheck 不是外部新交易 / 去重保证不重放。看见 Request type 栏 不是 tx 栏 / Commit 后再验不需要读 Type interchangeable。CheckTx Request type 正式三事不是不变量 312，也不是不变量 391，也不是不变量 468。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 484；语料 C488；模式 name-the-chktxtype-bar；反模式 chktxtype-sold-as-recheck；L10.3 第 480 条。填 L4.4 / CometBFT 档案 CheckTx Request type 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样实现 CheckTxState、怎样再验。不编博物馆页。不另写 19 节。不与 312 / 391 / 468 / 301 / 313 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。CheckTx_Recheck / 外部新交易 / tx 栏 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 483）
 
 - CometBFT OfferSnapshot Usage trust 正式三事工作实例（官方 ABCI++ Methods OfferSnapshot Usage Only AppHash can be trusted / Any other data can be spoofed employ additional verification / verified AppHash automatically checked at end of restoration，实现 / OfferSnapshot Usage trust 正式三事，不另写 19 节）：看见 Only AppHash can be trusted 不是 Snapshot 字段都可信 / hash 比对就够。看见 Any other data can be spoofed / employ additional verification 不是 hash 比对就够 / 已经防 DoS 交差。看见 verified AppHash automatically checked at end 不是装块时就 Info 对了 / 已经切进共识。OfferSnapshot Usage trust 正式三事不是不变量 38，也不是不变量 332，也不是不变量 323。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
