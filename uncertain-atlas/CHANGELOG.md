@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 499）
+
+- CometBFT OfferSnapshot Usage bootstrap accept/reject 正式三事工作实例（官方 ABCI++ Methods OfferSnapshot Usage called when bootstrapping a node using state sync / application may accept or reject snapshots as appropriate / Upon accepting retrieve and apply snapshot chunks via ApplySnapshotChunk / reject a snapshot in the chunk response prepared to accept further OfferSnapshot calls，实现 / OfferSnapshot Usage bootstrap accept/reject 正式三事，不另写 19 节）：看见 bootstrapping state sync / may accept or reject 不是 OfferSnapshot 请求 bundled（396） interchangeable / 已经本地清单 / 已经必须实现快照连接。看见 Upon accepting retrieve and apply chunks 不是 Offer 收下就已经装完（321） interchangeable / 已经齐。看见 reject in chunk response prepared for further Offer 不是 Offer 收下之后 bundled（401） interchangeable / 已经 ABORT / 已经 REJECT_SNAPSHOT。OfferSnapshot Usage bootstrap 不是不变量 396，也不是不变量 401 / 321 / 322 / 483。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 499；语料 C503；模式 name-the-offersnapusage-bootstrap-bar；反模式 offersnapusage-bootstrap-sold-as-bundled；L10.3 第 495 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage bootstrap accept/reject 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做增量验、怎样封邻居、怎样写 OfferSnapshot。不编博物馆页。不另写 19 节。不与 396 / 401 / 321 / 322 / 483 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 OfferSnapshot 请求 bundled interchangeable / 已经装完 / 已经必须实现快照连接 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 498）
 
 - CometBFT Info Usage default_lane in table / priority 0 reserved 正式二事 part 3 工作实例（官方 ABCI++ Methods Info Usage default_lane has to be one of the identifiers defined in lane_priorities / The lowest priority a lane can have is 1 / 0 is reserved for empty lane_id in ResponseCheckTx，实现 / Info Usage default_lane in table / priority 0 reserved 正式二事 part 3，不另写 19 节）：看见 default_lane must be in lane_priorities 不是 Info 车道 bundled（367） interchangeable / empty iff（497） interchangeable / CheckTx lane_id in range interchangeable。看见 priority 0 reserved for empty lane_id 不是 Info 车道 bundled（367） interchangeable / CheckTx lane_id default lane（482） interchangeable / 已经排了优先。Info Usage part 3 不是不变量 497，也不是不变量 367 / 482 / 381 / 317。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

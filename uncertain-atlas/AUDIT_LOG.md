@@ -4484,6 +4484,13 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+
+
+| A2429 | 高 | 看见 OfferSnapshot is called when bootstrapping a node using state sync / application may accept or reject snapshots as appropriate / 看见用 state sync 引导节点时会叫 OfferSnapshot、应用可以按情况接受或拒绝 会被写成已经 OfferSnapshot 请求 snapshot 是本地清单 interchangeable，或当成已经 ListSnapshots 发现 interchangeable / 已经必须实现快照连接 interchangeable | 官方 OfferSnapshot Usage：`OfferSnapshot` is called when bootstrapping a node using state sync. The application may accept or reject snapshots as appropriate |
+| A2430 | 高 | 看见 Upon accepting, CometBFT will retrieve and apply snapshot chunks via ApplySnapshotChunk / 看见 Accept 之后引擎会去拉块并装 会被写成已经 Offer 收下就已经装完 interchangeable，或当成已经 Offer 收下之后 bundled interchangeable / 已经齐 interchangeable | 官方 OfferSnapshot Usage：Upon accepting, CometBFT will retrieve and apply snapshot chunks via `ApplySnapshotChunk` |
+| A2431 | 高 | 看见 reject a snapshot in the chunk response / prepared to accept further OfferSnapshot calls / 看见在装 chunk 的回包里拒掉这份、还要再收 Offer 会被写成已经 Offer 收下之后 bundled interchangeable，或当成已经 ABORT interchangeable / 已经 REJECT_SNAPSHOT interchangeable | 官方 OfferSnapshot Usage：The application may also choose to reject a snapshot in the chunk response, in which case it should be prepared to accept further `OfferSnapshot` calls |
+| A2432 | 记录 | 会与 396 / 401 / 321 / 322 / 483 糊成「看见 Offer 了就已经本地清单 interchangeable、已经装完、已经必须实现快照连接」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot Usage bootstrap accept/reject 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 OfferSnapshot 请求 bundled interchangeable / 已经装完 / 已经必须实现快照连接 标成另一对象 |
+
 | A2425 | 高 | 看见 default_lane has to be one of the identifiers defined in lane_priorities / 看见 default_lane 必须在 lane_priorities 表里 会被写成已经 Info 车道 bundled（367） interchangeable，或当成已经 empty iff（497） interchangeable / CheckTx lane_id in range interchangeable / 已经选型 | 官方 Info Usage：`default_lane` has to be one of the identifiers defined in `lane_priorities` |
 | A2426 | 高 | 看见 The lowest priority a lane can have is 1 / 0 is reserved for empty lane_id in ResponseCheckTx / 看见最低优先级是 1、0 留给不设道 会被写成已经 Info 车道 bundled（367） interchangeable，或当成已经 CheckTx lane_id empty → default lane interchangeable / 已经排了优先 / 已经进了块 | 官方 Info Usage：The lowest priority a lane can have is `1`. The value `0` is reserved for when applications do not assign lanes (empty `lane_id` in `ResponseCheckTx`) |
 | A2427 | 中 | 怎样填 lane_priorities / 怎样选 default_lane / 怎样写 lane_id 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
