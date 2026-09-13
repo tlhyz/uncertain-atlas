@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 462）
+
+- CometBFT FinalizeBlock height/time 对上拟议块头正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage / Request，实现 / FinalizeBlock height/time 对上拟议块头正式三事，不另写 19 节）：看见 Finalize height/time match header 不是已经验过块头 / 已经跑过 Process。看见 Request height / time 栏不是已经 Usage 那种 match header / ProcessProposalRequest.height / time interchangeable。看见 Finalize match header 不是已经是 ProcessProposal height/time match interchangeable / 已经知道本头哈希。FinalizeBlock height/time 对上拟议块头正式三事不是不变量 417，也不是不变量 422，也不是不变量 454。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 462；语料 C466；模式 name-the-finht-bar；反模式 finht-sold-as-proposed；L10.3 第 458 条。填 L4.4 / CometBFT 档案 FinalizeBlock height/time 对上拟议块头正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样对 height / time、怎样和 Process 请求栏对齐。不编博物馆页。不另写 19 节。不与 417 / 422 / 454 / 461 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经验过块头 / 已经 Usage 那种 match header / 已经是 Process match interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 461）
 
 - CometBFT FinalizeBlock 含刚决定那块字段正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage，实现 / FinalizeBlock 含刚决定那块字段正式三事，不另写 19 节）：看见 Contains the fields of the newly decided block 不是已经是四门已经结算 / 已经跑过 Process。看见 newly decided block 的字段不是已经是 ProcessProposal 含执行所需全部信息 / 拟议块字段 interchangeable。看见全部字段填齐即使 Prepare/Process 已经传过不是已经 decided_last_commit 和 proposed_last_commit 就可以混用。FinalizeBlock 含刚决定那块字段正式三事不是不变量 407，也不是不变量 422，也不是不变量 453。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
