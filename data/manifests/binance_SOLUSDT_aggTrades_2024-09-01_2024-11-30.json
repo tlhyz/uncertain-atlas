@@ -1,0 +1,467 @@
+{
+  "venue": "binance",
+  "symbol": "SOLUSDT",
+  "market": "futures_um_aggTrades",
+  "start": "2024-09-01",
+  "end": "2024-11-30",
+  "source": "binance_vision_daily",
+  "files": [
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-01.csv",
+      "sha256": "932b5672317b2c31d1fea2a36a201d90ee7e825229a1c0fec0c7f854aece93b3",
+      "bytes": 51913196
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-02.csv",
+      "sha256": "3e4a5401fcb8d444c614ff9cd709df666841f796f7783deb14aa0bfd00f27c70",
+      "bytes": 53495815
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-03.csv",
+      "sha256": "c3be79d1d82943b15de651fc1f4d7013bbcf93e7707457d95bd2882f5f167d55",
+      "bytes": 44321766
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-05.csv",
+      "sha256": "7b732a780970c029dba7bc6910dc364630446573842ddfd76871d7a17d97fd88",
+      "bytes": 39376458
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-06.csv",
+      "sha256": "b1bda3179d9c15adf40ec5f4626a9f1a2e2f0ed9aa4026a4ae09a7e4f8a97b8c",
+      "bytes": 56630418
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-07.csv",
+      "sha256": "fad2fc3a45b41e87472c1f6212126bb12df96820279ec0af6fc92d5f6b258fe9",
+      "bytes": 22602657
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-08.csv",
+      "sha256": "2144dcf4982be77cb495bfbdd0de0f70d88dde275f8420291bccd947ec571bab",
+      "bytes": 23859616
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-09.csv",
+      "sha256": "6a26fca1e1dacee67ef74290b893bc78d6804c3a9edad7f4baeea9685b5f312f",
+      "bytes": 38077626
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-10.csv",
+      "sha256": "a7f63f16cc5161c2a3c6a94471b78ea42e012461b1b861e6a4b0c2db5c42d727",
+      "bytes": 27437259
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-11.csv",
+      "sha256": "cfea7e01a4db64a769970d03737338ad5ecd8a6f75474f819cfeb285cace13ff",
+      "bytes": 35859079
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-12.csv",
+      "sha256": "c90512b650009a6c1221d861d79e4705773c7ae8c4036515a56211f59426d81f",
+      "bytes": 25321825
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-13.csv",
+      "sha256": "bf1bf8af59dfb82a8e781ae0f420ad17181777ac7eb0331117a302cb158d777f",
+      "bytes": 27078251
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-14.csv",
+      "sha256": "4f2afaaca1c62f1d0a8de1c8d680497be9674447808bad2170dce3191bae659b",
+      "bytes": 14287956
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-15.csv",
+      "sha256": "ecd47f6fc5b4effcf323739b7d0ca3416e5331f92c7d56026e9c0c17a65b7186",
+      "bytes": 17847359
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-16.csv",
+      "sha256": "64b234ffdb65f1551e555bfdbd31e9f29fe9f19841b0f235bb02ecedcba92200",
+      "bytes": 21749093
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-17.csv",
+      "sha256": "9d30b06995ab1a6434651401d6cbf37dd6ca5625137b3aa82a22a34f7231d067",
+      "bytes": 24507290
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-18.csv",
+      "sha256": "f139e97341ef270cf09626d25e99e8930e39fcfcc48b06eba90c43d20d5f2392",
+      "bytes": 33917194
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-19.csv",
+      "sha256": "d9399c178acf8bd203fdf914c830829a4f83192fac26e6a8c95413878a7d13e1",
+      "bytes": 32803420
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-20.csv",
+      "sha256": "9db7dfc513be4b71bf148fdf602c1a84204891b54f1c79f162e90db968a5c15d",
+      "bytes": 40869016
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-21.csv",
+      "sha256": "28ab01168422163aec64fa6ec0e69331d2e5fd0cda39666828466ddca33ed468",
+      "bytes": 17244822
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-22.csv",
+      "sha256": "08ced7fbec07ff1e7cfa7203497ff7af8417d32b4556c56b6ff48cb5eae3b2da",
+      "bytes": 24149287
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-23.csv",
+      "sha256": "8f2ec77ddf13a3091441d7dd455e6ebd0d17dff98658ffa7ed7209476dfdb841",
+      "bytes": 30431273
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-24.csv",
+      "sha256": "8a535352033de79d5f8bca87bcb9a1e5cee63fee3663b7c20b4e525ed0f53d82",
+      "bytes": 38676852
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-25.csv",
+      "sha256": "3fab9ea2fd632f756787363148eee60ca48882f054d598fb640666a51a414368",
+      "bytes": 26650309
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-26.csv",
+      "sha256": "81bee1e84b7c94b9d516d933c3245ac8237ae3785d143ce3afc2c3f92c20cd4a",
+      "bytes": 38393854
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-27.csv",
+      "sha256": "1da03601b0838f3f7edf5228fcbffed25a447655a75808f6bd1b73b87a9cc719",
+      "bytes": 36135276
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-28.csv",
+      "sha256": "16cb3af494a66e710111c11f9a9611a96d73d0345da17a548966b22119ded0d6",
+      "bytes": 18623503
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-29.csv",
+      "sha256": "8e34f9eb00b1a9cfd842559eb2e46fc36e21aad55f4eaa03fc9e797fa3f582e4",
+      "bytes": 24825653
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-09-30.csv",
+      "sha256": "97106f542380dcad608348b5fa8b062f6fd474bf23181b1e122b326e52334047",
+      "bytes": 36225452
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-01.csv",
+      "sha256": "cebada1c08f417b6aa7dc9ff018c428acb2d36934c3d0b75d9955367d3db75b5",
+      "bytes": 57672833
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-02.csv",
+      "sha256": "af8073851f0808659a6ae2575fd29c42430df391cee30940839dbe4391f8416a",
+      "bytes": 48751963
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-03.csv",
+      "sha256": "f45d0060689323c351e7b4bdace77a2cce8937c624f417b6e869fa75ec592ec6",
+      "bytes": 54637227
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-04.csv",
+      "sha256": "376b256dbb316244d8407cf1452a73f43594523b6d3af9c617effe0c14a0c4e2",
+      "bytes": 36928907
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-05.csv",
+      "sha256": "cb393cc72a4685af81cad1945951c03988d4b5eb612536108b1f746ae340a618",
+      "bytes": 16829719
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-06.csv",
+      "sha256": "97f2a47d9c3745d0b31ad56d9b48ac16df8a6474af171ee4a8a53b132ccdcd38",
+      "bytes": 17170506
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-07.csv",
+      "sha256": "b3c23a5c8a49f8880075133b2bf746040c35c2c3cb99e84db776bb7b06add096",
+      "bytes": 38949243
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-08.csv",
+      "sha256": "82d3ada55db02ca453f5c8922328cae98d28e3cb9b6d3d6da4cba87d9a0a0099",
+      "bytes": 28523768
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-09.csv",
+      "sha256": "7ae672130c13cdb1fdb97712b2b7518e52a20b268ef1978b016575ba99a7a1d7",
+      "bytes": 27645667
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-10.csv",
+      "sha256": "bd524a5a28c7ab46ba95b4a63673e3c50955c27dd998a9b571e948bd3974148c",
+      "bytes": 30145736
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-11.csv",
+      "sha256": "3862f588f819aeba025f54a3933473747662b9cfc06828715338cab17d8179ca",
+      "bytes": 25234456
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-12.csv",
+      "sha256": "2f6372755b9920ae82a9e3e1493d6dd93a606d23fb0c03eee48aaa436f512dfc",
+      "bytes": 14145105
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-13.csv",
+      "sha256": "abb5e743706f0cc3dac1da6d3efbe61bdf4f155343a8b654a1b0fca1da576623",
+      "bytes": 18074438
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-14.csv",
+      "sha256": "841859f56eda6a5f710613a57197d7de61c92a3b0911c31111ff6665715589d2",
+      "bytes": 21243230
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-15.csv",
+      "sha256": "638c0ac1d4a1b9c2b556464ff7b7ccbff0181e0bc4cf9098f97a4906e4466737",
+      "bytes": 19031384
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-16.csv",
+      "sha256": "df78f3117ae253cb82a21d7567819aa50a9546058ac586abe8a075bcf0236acb",
+      "bytes": 12341171
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-17.csv",
+      "sha256": "5f4c9fb1045fb42cdbdea95d350284a9e89de63f011f4bff95c716303e40897b",
+      "bytes": 11395982
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-18.csv",
+      "sha256": "b6f8ff37a26fac80f86f196aab4a67017f8ddf480fb477a6a09b4652c637996f",
+      "bytes": 9670967
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-19.csv",
+      "sha256": "86554a09cf4a8aac5bc4d8810eaea252f8f0c64c4ee5b6adf762d646d5df59ca",
+      "bytes": 7043706
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-20.csv",
+      "sha256": "33609abf7157f52624486e66d94517fd4c0b97a0c8dbb19bcb9e136be8d24d1f",
+      "bytes": 13056142
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-21.csv",
+      "sha256": "5309552bf58188a818e755b945a8b61aed55e3e0cde6b6a8322314722b35170d",
+      "bytes": 17132165
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-22.csv",
+      "sha256": "855b456753512022cb93e83105861e8c693a8f18be10f55d5cc95171ed6b3ded",
+      "bytes": 16098522
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-23.csv",
+      "sha256": "2b042e43ebcd693db3cf5c517ac7b33837a53d2a85fe71bd8155e663863879d2",
+      "bytes": 18480926
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-24.csv",
+      "sha256": "36a8e43216b947298b53214f7fb02f44a09c71ebec2791b683e39fc34a18c760",
+      "bytes": 16175830
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-25.csv",
+      "sha256": "d12a9beb35edcfc248a49f4101071c350c20f66c85c3bc3a6612fcc1e5f62fbb",
+      "bytes": 22618922
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-26.csv",
+      "sha256": "c510c77014f222f060a8bbedf49b93f1971f8b4bb47c2f7cb4ce90b9129b59a2",
+      "bytes": 13442830
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-27.csv",
+      "sha256": "2fd2efd4197bd29d99933da07eee452d31a7cf8b4ab1803b3eea00396dd4534a",
+      "bytes": 12167467
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-28.csv",
+      "sha256": "76966231b11ae18cdd0ad1c4f68e9b46d422ab529148bf91d60471066f2b0cfb",
+      "bytes": 16351368
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-29.csv",
+      "sha256": "0ff24bd7b2f8f3f617a132b53ac68ad8df84b00369f39ef5c5b7da0c110d47b2",
+      "bytes": 17008901
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-30.csv",
+      "sha256": "4bb4189e81d422f44f66c5f90727e30d17513a4a239eace782ea6b772e066e28",
+      "bytes": 13515882
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-10-31.csv",
+      "sha256": "236810176961f8d6c6a44917956d057a9c942600ab83caaacd22e03f9e2e20d7",
+      "bytes": 12546148
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-01.csv",
+      "sha256": "3cfdab06bcfef6f11a23446003499122b14d7cb1d55375ce4b46cd56794e352a",
+      "bytes": 15841565
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-02.csv",
+      "sha256": "105433e4e70ac3f1ddd5d62486baeb6925668d1297605ae106d754de66b9dadc",
+      "bytes": 8574958
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-03.csv",
+      "sha256": "fe2e52683272c113965bc89db01f27e1f8f75263357cc8885279555ff78add7c",
+      "bytes": 14690943
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-04.csv",
+      "sha256": "821061e1149a67419ecab2eb83115679df51b98bd3f5181c9f690b285ccf1722",
+      "bytes": 14101154
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-05.csv",
+      "sha256": "4bdf86141e0fbd1934717032ad5728784a100ff09da1d3257e5624b378720584",
+      "bytes": 14716977
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-06.csv",
+      "sha256": "d7bc1ae8602738c8b27c794f178d2187b52ebb9f1e5942f315789e924dc64f48",
+      "bytes": 36218174
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-07.csv",
+      "sha256": "0ecea127e9b0896663f77a2bd1b7c5a4113b3ca8acc6dc9d788b966dc7228168",
+      "bytes": 21816312
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-08.csv",
+      "sha256": "b6c870a28225d8e66b8420011cd6792964a565060cbaa507af5d7a4c36272cd6",
+      "bytes": 23462883
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-09.csv",
+      "sha256": "c301394745947c96ca61971e83d76d9b62d591c1b642a094816476e465cddcb9",
+      "bytes": 14284171
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-10.csv",
+      "sha256": "67d56c2cf7474fd169ffff5d1ac69baa44b3bee27619efcc632f14e1157c8937",
+      "bytes": 32182318
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-11.csv",
+      "sha256": "0fa10cd71374b9976dddd2e84b9b1877f3527ffe38d0f8b0b3ff32de78c02b44",
+      "bytes": 33567358
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-12.csv",
+      "sha256": "f65e36c350ad6b7ebf490f367612a71db803fdad66e5147ea74f632416255375",
+      "bytes": 38759029
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-13.csv",
+      "sha256": "013e6e5bf0e72e81ff392f3d084c86fec48cf117e9778eb87cead31c7715b635",
+      "bytes": 41404369
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-14.csv",
+      "sha256": "c0af7e3bacc7ae10cff2fedf190adf8feb471a1680f7860fc5aa393ee6784071",
+      "bytes": 26918195
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-15.csv",
+      "sha256": "4051d4d4591dc6a6eaff301584319777a34e20c64a326e2897b05e89bcb5efc3",
+      "bytes": 20857521
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-16.csv",
+      "sha256": "cfac199faf923ee1ea1ad8665566d75b2503c7690fa85b69d3f166b4fc56eb8a",
+      "bytes": 16823313
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-17.csv",
+      "sha256": "d056dd06731a429719cb043984eaba6b065e3fa39aa9234a3db27ad51da1d295",
+      "bytes": 35083211
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-18.csv",
+      "sha256": "27d6c971fd546fafdfceb3e5104ca653481b5a84bfebbff7ff9363bb6f1dda31",
+      "bytes": 30278323
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-19.csv",
+      "sha256": "05168895883b694ab969ed3283dc7f2f72341f910e165f3ae734026150e3c475",
+      "bytes": 23447806
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-20.csv",
+      "sha256": "8a77f7adf49d174cad20ce75f9c7e011be4e0013b6cd123246e01a949e33eb13",
+      "bytes": 23612633
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-21.csv",
+      "sha256": "e323d4ac5d8ce86eb5936801ec8e43aa3c610fa01d1e78b6abce3bfe73379199",
+      "bytes": 37858079
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-22.csv",
+      "sha256": "c8ea2efd09384d4fdcceec53977a2c60ac93f75a0c53de9357ae24fff9176f00",
+      "bytes": 25984916
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-23.csv",
+      "sha256": "c73666953d0060585275dbc6ec91431ac40f5b80d480b76e45514ba5557066f0",
+      "bytes": 23054319
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-24.csv",
+      "sha256": "c5fc68fc7b381f65eb2a12cad8cb6aeb0c744b347ff7429e957a11c079c7ea46",
+      "bytes": 20369583
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-25.csv",
+      "sha256": "f801835e989c3e5b6ff5610fdc9b0248f1185413f62f490325a5c73e6feabaf3",
+      "bytes": 25698033
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-26.csv",
+      "sha256": "75b4d51826cd78ffc7dc1624799d46deb735dc36cf3fd69d32cc12d7d4b70297",
+      "bytes": 27290209
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-27.csv",
+      "sha256": "4446d3a250ade482bd431ba19b22f8745b25c931481fde492ee95d71c1fb5ef8",
+      "bytes": 18557008
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-28.csv",
+      "sha256": "7bc1ee10e87d774da039fa8f2439a9057792c5a208a3748af647162e95674bcf",
+      "bytes": 15157142
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-29.csv",
+      "sha256": "133c4af2643f09d9f8a91deeed782d75f390015886a042d31ab4ee4e6f18695a",
+      "bytes": 14621195
+    },
+    {
+      "path": "cache/binance_futures_SOLUSDT_aggTrades_2024-11-30.csv",
+      "sha256": "b449071e04f6900382320af1025fbf8b90202bdbf8d9b5f1eb58d2c2fbc1a8f1",
+      "bytes": 12004826
+    }
+  ],
+  "rows": 44222849,
+  "missing_periods": [],
+  "notes": [
+    "day_files=90",
+    "rows_est=44222849"
+  ],
+  "created_at": "2026-09-13T01:56:44.369339+00:00"
+}
