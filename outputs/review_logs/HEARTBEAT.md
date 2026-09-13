@@ -121,4 +121,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T08:00Z | checkpoint 0800Z | P2-02 5h17m — 6h kill threshold ~08:43Z; P2-14 ~69min
 2026-09-13T08:10Z | checkpoint 0810Z | P2-02 5h27m; ~16min to 6h kill; P2-07 60_40 running
 2026-09-13T08:20Z | checkpoint 0820Z | P2-02 5h37m; ~23min to 6h kill at 08:43Z
+2026-09-13T08:30Z | checkpoint 0830Z | P2-02 5h47m; kill/restart at 08:43Z if no report
 ```
