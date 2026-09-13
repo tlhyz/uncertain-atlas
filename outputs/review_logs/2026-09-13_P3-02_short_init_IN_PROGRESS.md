@@ -18,10 +18,12 @@
 tmux `p3-02-short-init` — log `/tmp/p3-02_short_init.log`  
 Window: 65d Binance tick overlap (1546 bars), Base fill.
 
-## Expectation
+## Job status (2020Z)
 
-All levels likely ~-58% band (Short→Long FAIL). Lower init short may reduce loss slightly but expect FAIL vs Cash/B3.
+| Level | Return | Calmar | Status |
+|-------|--------|--------|--------|
+| 10% | **-59.24%** | -1.86 | done |
+| 15% | — | — | running |
+| 20% | — | — | pending |
 
-## Next
-
-Await 3 levels → FAIL review → mark done
+10% worse than default 20% (-58.70%) — lower short does not help.
