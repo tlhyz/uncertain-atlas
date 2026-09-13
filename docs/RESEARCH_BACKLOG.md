@@ -45,7 +45,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | **in_progress** | 1.25x -87.47% done; 1.5x ~31min — outputs/review_logs/2026-09-13_P2-02_btc_leverage_RESTART.md |
 | P2-03 | ETH leverage scan | **done** | FAIL all lev ~-87.5%; no sweet spot — outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL.md |
 | P2-04 | SOL leverage scan | **done** | FAIL all lev -88.01%; crypto_max_dd=100% — outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md |
-| P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~350min; 4 steps, no variant log yet |
+| P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~360min; 4 steps, no report yet |
 | P2-06 | Grid range ±3/5/7 ATR sweep | **done** | FAIL all ~-87%; ±3 Calmar best but inert — outputs/review_logs/2026-09-13_P2-06_btc_grid_range_FAIL.md |
 | P2-07 | Grid→Trend mix 80/20→20/80 | **in_progress** | 80_20/60_40/50_50 done; 50_50 **-88.43%**; 40_60 running — outputs/review_logs/2026-09-13_P2-07_btc_grid_mix_IN_PROGRESS.md |
 | P2-08 | High-vol range regime auto-label sample | **done** | C1 mostly RANGE_LOW_VOL; SOL 3 HV bars — outputs/review_logs/2026-09-13_P2-08_regime_label_sample_PASS.md |
