@@ -98,4 +98,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T06:00Z | timer research-continue | pytest 128 pass
 2026-09-13T06:00Z | P2-09 done | CONDITIONAL PASS sell-the-winner structural; C1 0 BULL bars
 2026-09-13T06:00Z | P2-02 running | ~197min; no BTC CRYPTO_REPORT yet
+2026-09-13T06:10Z | timer research-continue | pytest 128 pass
+2026-09-13T06:10Z | P2-10 partial | Q-crypto-1 SOL no sweet spot; ETH/BTC pending
+2026-09-13T06:10Z | jobs | P2-02 ~207min; P2-03 1.5x ~79min; P2-05/06/07 running
 ```

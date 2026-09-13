@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P2-10 Q-crypto-1 | PARTIAL | outputs/review_logs/2026-09-13_P2-10_Q_crypto_1_PARTIAL.md |
+| 2026-09-13 | checkpoint 0610Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0610Z.md |
 | 2026-09-13 | P2-09 sell-the-winner | CONDITIONAL PASS | outputs/review_logs/2026-09-13_P2-09_bull_sell_winner_CONDITIONAL_PASS.md |
 | 2026-09-13 | checkpoint 0600Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0600Z.md |
 | 2026-09-13 | P2-08 regime sample | PASS | outputs/review_logs/2026-09-13_P2-08_regime_label_sample_PASS.md |
