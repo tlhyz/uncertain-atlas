@@ -66,6 +66,7 @@ def _rank_crypto_leverage(
     for lev in levels:
         cp = CryptoParams(leverage=lev)
         dp = DualParams(crypto=cp, unified_signal=False)
+        print(f"[run] crypto leverage {lev}x...")
         r = run_dual_portfolio(
             data,
             dp,
@@ -80,6 +81,7 @@ def _rank_crypto_leverage(
         m = summarize_portfolio(r, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
         m["leverage"] = lev
         rows.append(m)
+        print(f"[run] crypto leverage {lev}x done return={100*float(m.get('total_return',0)):.2f}% calmar={float(m.get('calmar',0)):.2f}")
     rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
     return rows
 

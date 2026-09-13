@@ -31,4 +31,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T02:54Z | manifests | SOL 91d 45.1M rows (Sep-04 fixed); BTC/ETH 91d
 2026-09-13T02:54Z | P2-02 running | 11+ min leverage scan active
 2026-09-13T02:54Z | P1-11 running | 72+ min; DUAL_REPORT pending
+2026-09-13T03:01Z | P2-02 running | 18+ min leverage scan; ~5min/level est on 2184 bars
+2026-09-13T03:01Z | P1-11 running | 79+ min; still computing
 ```
