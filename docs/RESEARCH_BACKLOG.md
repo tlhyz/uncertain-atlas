@@ -63,7 +63,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P3-01 | Re-run dual on Binance ticks (tick_precise) | **in_progress** | benchmarks ~99min ETA ~19:30Z — outputs/review_logs/2026-09-13_P3-01_dual_tick_IN_PROGRESS.md |
+| P3-01 | Re-run dual on Binance ticks (tick_precise) | **in_progress** | benchmarks ~109min ETA ~19:30Z — outputs/review_logs/2026-09-13_P3-01_dual_tick_IN_PROGRESS.md |
 | P3-02 | Short init 10/15/20% sweep | pending | |
 | P3-03 | Short structure dir vs grid vs 70/30 | pending | |
 | P3-04 | Drawdown set A/B/C comparison | pending | |
