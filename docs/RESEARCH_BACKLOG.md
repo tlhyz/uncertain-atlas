@@ -33,7 +33,6 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-08 | Cross-check tick OHLCV vs kline (SNXX) | done | lazy validation passed |
 | P1-09 | Document data gaps in manifest notes | done | Sep-12 empty; ETH/SOL noted |
 | P1-10 | Gate download script smoke test BTC_USDT | done | 720 bars 1h; scripts/download_gate.py path fix |
-| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | leverage scan running; skip_tick_validation; BTC Sep-01 gap fixed |
 | P1-11 | Full 65d Binance tick backtest SOXL/SNXX | in_progress | 62+ min; DUAL_REPORT pending |
 
 ---
@@ -43,7 +42,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P2-01 | Enable `crypto_regime.yaml` runner | **done** | qtb/dual/crypto_run.py + qtb.cli crypto; outputs/review_logs/2026-09-13_P2-01_crypto_regime_runner_PASS.md |
-| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | 8+ min; tick validation 2184 bars then 4 leverage levels |
+| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | leverage scan running; skip_tick_validation; BTC Sep-01 gap fixed |
 | P2-03 | ETH leverage scan | pending | klines cache ready; config crypto_eth_leverage_scan.yaml |
 | P2-04 | SOL leverage scan | pending | klines cache ready; config crypto_sol_leverage_scan.yaml |
 | P2-05 | Grid ATR step 0.30–0.60 sweep | pending | |
