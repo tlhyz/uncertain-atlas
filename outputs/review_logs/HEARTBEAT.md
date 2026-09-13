@@ -317,4 +317,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T23:00Z | timer research-continue | **P3-04 set A DONE -67.88%** (worse than B)
 2026-09-13T23:00Z | P3-04 finding | tighter tiers bind; −9.18pp vs B
 2026-09-13T23:00Z | checkpoint 2300Z | B running 2/3
+2026-09-13T23:10Z | timer research-continue | P3-04 set B ~10min
+2026-09-13T23:10Z | checkpoint 2310Z | ETA ~50min to P3-04 done
 ```
