@@ -257,4 +257,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T19:40Z | timer research-continue | pytest 131 pass; **P3-01 DONE FAIL**
 2026-09-13T19:40Z | P3-01 FAIL review | reproduces P1-11 -58.70%; C-05 reinforced
 2026-09-13T19:40Z | checkpoint 1940Z | P3-02 next
+2026-09-13T19:50Z | timer research-continue | pytest 132 pass; **P3-02 started**
+2026-09-13T19:50Z | P3-02 impl | rank_short_init + config + test
+2026-09-13T19:50Z | checkpoint 1950Z | tmux p3-02-short-init
 ```

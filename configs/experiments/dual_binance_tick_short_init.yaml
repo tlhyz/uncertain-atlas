@@ -1,0 +1,29 @@
+# P3-02 — Short init 10/15/20% sweep on Binance tick (65d overlap)
+interval: "1h"
+cache_only: true
+output_dir: outputs/experiments/dual_binance_tick_short_init
+
+run_benchmarks: false
+run_sweep: false
+run_seed_windows: false
+run_plans: false
+run_similar_search: false
+run_stress: false
+run_independent_vs_unified: false
+run_short_structures: false
+run_short_init_rank: true
+short_init_levels: [0.10, 0.15, 0.20]
+run_leverage_rank: false
+run_grid_atr_rank: false
+run_fill_modes: false
+fill_mode: base
+
+data_start: "2026-07-09"
+data_end: "2026-09-11"
+download_trades: true
+tick_precise: true
+run_binance_c1: false
+
+tech_book: 6500
+crypto_book: 2500
+global_reserve: 1000

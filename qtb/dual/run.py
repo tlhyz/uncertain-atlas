@@ -21,6 +21,7 @@ from .experiments import (
     run_seed_windows,
     run_stress_leverage,
     rank_leverage,
+    rank_short_init,
     rank_short_structures,
     rank_grid_atr,
 )
@@ -88,6 +89,7 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "data_quality_config": "configs/data_quality.yaml",
         "run_independent_vs_unified": True,
         "run_short_structures": True,
+        "run_short_init_rank": False,
         "run_leverage_rank": True,
         "run_grid_atr_rank": True,
         "run_fill_modes": True,
@@ -155,6 +157,13 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
     if cfg.get("run_short_structures", True):
         print("[run] short structure rank...")
         payload["short_structures"] = rank_short_structures(data, tick_precise=tick_precise)
+
+    if cfg.get("run_short_init_rank", False):
+        levels = tuple(float(x) for x in (cfg.get("short_init_levels") or [0.10, 0.15, 0.20]))
+        print(f"[run] short init rank {list(levels)}...")
+        payload["short_init_rank"] = rank_short_init(
+            data, levels=levels, fill_mode=str(cfg.get("fill_mode") or "base"), tick_precise=tick_precise,
+        )
 
     if cfg.get("run_leverage_rank", True):
         print("[run] leverage rank...")

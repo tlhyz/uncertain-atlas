@@ -144,3 +144,13 @@ def test_plan_presets_exist():
     assert "稳健版" in plans
     assert "平衡版" in plans
     assert "激进版" in plans
+
+
+def test_rank_short_init_sweep():
+    from qtb.dual.experiments import rank_short_init
+
+    data = _mini_dataset(120)
+    rows = rank_short_init(data, levels=(0.10, 0.15, 0.20), tick_precise=False)
+    assert len(rows) == 3
+    assert {r["short_init_pct"] for r in rows} == {0.10, 0.15, 0.20}
+    assert all("total_return" in r for r in rows)

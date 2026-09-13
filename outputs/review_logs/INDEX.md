@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | checkpoint 1950Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1950Z.md |
 | 2026-09-13 | checkpoint 1940Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1940Z.md |
 | 2026-09-13 | P3-01 dual tick re-run | FAIL | outputs/review_logs/2026-09-13_P3-01_dual_tick_FAIL.md |
 | 2026-09-13 | checkpoint 1930Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1930Z.md |
