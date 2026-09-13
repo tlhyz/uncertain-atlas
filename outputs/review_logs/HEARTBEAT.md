@@ -323,4 +323,8 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T23:20Z | checkpoint 2320Z | ETA ~20min to P3-04 done
 2026-09-13T23:30Z | timer research-continue | P3-04 set C ~10min
 2026-09-13T23:30Z | checkpoint 2330Z | P3-06 queued on completion
+2026-09-13T23:40Z | timer research-continue | **P3-04 DONE FAIL** C=-56.08% best
+2026-09-13T23:40Z | P3-04 review | A liq; C +2.62pp vs B still FAIL
+2026-09-13T23:40Z | **P3-06 started** | tmux p3-06-right-side-reserve
+2026-09-13T23:40Z | checkpoint 2340Z | ~90min ETA
 ```
