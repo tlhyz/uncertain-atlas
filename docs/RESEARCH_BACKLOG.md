@@ -42,12 +42,12 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P2-01 | Enable `crypto_regime.yaml` runner | **done** | qtb/dual/crypto_run.py + qtb.cli crypto; outputs/review_logs/2026-09-13_P2-01_crypto_regime_runner_PASS.md |
-| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | **in_progress** | 1.25x/1.5x done; 1.75x ~10min — outputs/review_logs/2026-09-13_P2-02_btc_leverage_RESTART.md |
+| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | **in_progress** | 1.25x/1.5x done; 1.75x ~20min — outputs/review_logs/2026-09-13_P2-02_btc_leverage_RESTART.md |
 | P2-03 | ETH leverage scan | **done** | FAIL all lev ~-87.5%; no sweet spot — outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL.md |
 | P2-04 | SOL leverage scan | **done** | FAIL all lev -88.01%; crypto_max_dd=100% — outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md |
 | P2-05 | Grid ATR step 0.30–0.60 sweep | **done** | FAIL all ~-87%; 0.40 worst Calmar; W-02 not supported — outputs/review_logs/2026-09-13_P2-05_btc_grid_atr_FAIL.md |
 | P2-06 | Grid range ±3/5/7 ATR sweep | **done** | FAIL all ~-87%; ±3 Calmar best but inert — outputs/review_logs/2026-09-13_P2-06_btc_grid_range_FAIL.md |
-| P2-07 | Grid→Trend mix 80/20→20/80 | **in_progress** | 50_50 -88.43% done; 40_60 ~80min — outputs/review_logs/2026-09-13_P2-07_btc_grid_mix_IN_PROGRESS.md |
+| P2-07 | Grid→Trend mix 80/20→20/80 | **in_progress** | 40_60 **-88.12%** done; 20_80 running — outputs/review_logs/2026-09-13_P2-07_btc_grid_mix_IN_PROGRESS.md |
 | P2-08 | High-vol range regime auto-label sample | **done** | C1 mostly RANGE_LOW_VOL; SOL 3 HV bars — outputs/review_logs/2026-09-13_P2-08_regime_label_sample_PASS.md |
 | P2-09 | Bull trend sell-the-winner check | **done** | CONDITIONAL PASS structural; C1 0 BULL bars — outputs/review_logs/2026-09-13_P2-09_bull_sell_winner_CONDITIONAL_PASS.md |
 | P2-10 | Answer Q-crypto-1 (leverage sweet spot) | **in_progress** | PARTIAL BTC 1.25/1.5 ~-87%; SOL/ETH FAIL — outputs/experiments/Q_CRYPTO_1_leverage_sweet_spot.md |
