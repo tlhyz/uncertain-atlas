@@ -4482,6 +4482,13 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+
+| A2250 | 高 | 看见应用可以用 FinalizeBlockRequest.decided_last_commit 和 misbehavior 定验证者奖惩 / 看见能定奖惩 会被写成已经罚没，或当成已经交差 | 官方 FinalizeBlock Usage：The Application can use decided_last_commit and misbehavior to determine rewards and punishments for the validators |
+| A2251 | 高 | 看见 FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息 / 看见填了 decided_last_commit 会被写成已经是 ProcessProposalRequest.proposed_last_commit，或当成已经交差 local_last_commit | 官方 FinalizeBlock Request 表 vs Usage |
+| A2252 | 高 | 看见 FinalizeBlockRequest.misbehavior 是过错验证者信息列表 / 看见填了 misbehavior 会被写成已经 VoteInfo 按到场定奖惩，或当成已经 Misbehavior.type 就已经罚没 | 官方 FinalizeBlock Request 表 vs VoteInfo / Misbehavior Fields |
+| A2253 | 中 | 怎样算奖惩 / 怎样 slashing / 怎样填 decided_last_commit / misbehavior 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2254 | 记录 | 会与 363 / 422 / 365 / 372 / 21 糊成「看见 Finalize 里有 decided_last_commit 和 misbehavior 就已经罚没、已经定奖惩完、已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock decided_last_commit + misbehavior 定奖惩正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经罚没 / 已经 proposed_last_commit / 已经 VoteInfo 按到场定奖惩 标成另一对象 |
+
 | A2245 | 高 | 看见 Finalize 的 height / time 对上拟议块头 / 看见对上了 会被写成已经验过块头，或当成已经跑过 Process | 官方 FinalizeBlock Usage：The height and time values match the values from the header of the proposed block |
 | A2246 | 高 | 看见 FinalizeBlockRequest.height 是已决块的高度 / FinalizeBlockRequest.time 是已决块的时间戳 / 看见填了 height / time 会被写成已经 Usage 那种 match header，或当成已经是 ProcessProposalRequest.height / time interchangeable | 官方 FinalizeBlock Request 表 vs Usage match 语句 |
 | A2247 | 高 | 看见 Finalize height / time match proposed block header / 看见 match header 会被写成已经是 ProcessProposal height/time match interchangeable，或当成已经知道本头哈希 | 官方 FinalizeBlock Usage vs ProcessProposal Usage |

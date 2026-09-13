@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 463）
+
+- CometBFT FinalizeBlock decided_last_commit + misbehavior 定奖惩正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage / Request，实现 / FinalizeBlock decided_last_commit + misbehavior 定奖惩正式三事，不另写 19 节）：看见 can use decided_last_commit 和 misbehavior 定奖惩不是已经罚没 / 已经交差。看见 decided_last_commit 从刚决定那块拿到不是已经 proposed_last_commit / 已经交差 local_last_commit。看见 misbehavior 过错列表不是已经 VoteInfo 按到场定奖惩 / 已经 Misbehavior.type 就已经罚没。FinalizeBlock decided_last_commit + misbehavior 定奖惩正式三事不是不变量 363，也不是不变量 422，也不是不变量 365。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 463；语料 C467；模式 name-the-finreward-bar；反模式 finreward-sold-as-slashed；L10.3 第 459 条。填 L4.4 / CometBFT 档案 FinalizeBlock decided_last_commit + misbehavior 定奖惩正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样算奖惩、怎样 slashing。不编博物馆页。不另写 19 节。不与 363 / 422 / 365 / 372 / 21 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经罚没 / 已经 proposed_last_commit / 已经 VoteInfo 按到场定奖惩 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 462）
 
 - CometBFT FinalizeBlock height/time 对上拟议块头正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage / Request，实现 / FinalizeBlock height/time 对上拟议块头正式三事，不另写 19 节）：看见 Finalize height/time match header 不是已经验过块头 / 已经跑过 Process。看见 Request height / time 栏不是已经 Usage 那种 match header / ProcessProposalRequest.height / time interchangeable。看见 Finalize match header 不是已经是 ProcessProposal height/time match interchangeable / 已经知道本头哈希。FinalizeBlock height/time 对上拟议块头正式三事不是不变量 417，也不是不变量 422，也不是不变量 454。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
