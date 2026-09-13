@@ -58,4 +58,10 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T04:40Z | P2-03 in_progress | ETH leverage scan started tmux p2-03-eth-leverage; 8 cores parallel OK
 2026-09-13T04:40Z | P2-02 running | ~117min; CRYPTO_REPORT may finish next cycle
 2026-09-13T04:40Z | P1-11 running | ~179min; DUAL_REPORT pending
+2026-09-13T04:50Z | timer research-continue | pytest 126 pass
+2026-09-13T04:50Z | P2-03 FAIL | ETH Sep-04 aggTrades truncated (ended 16:28); force_refresh fixed
+2026-09-13T04:51Z | P2-03 restart | ETH leverage 1.25x running tmux p2-03-eth-leverage
+2026-09-13T04:51Z | P2-04 in_progress | SOL leverage scan started tmux p2-04-sol-leverage
+2026-09-13T04:50Z | P1-11 running | ~188min (~3h08m); DUAL_REPORT pending
+2026-09-13T04:50Z | P2-02 running | ~127min (~2h07m); CRYPTO_REPORT pending
 ```
