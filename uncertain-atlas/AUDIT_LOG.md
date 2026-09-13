@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2285 | 高 | 看见 Application executes txs deterministically before returning control / 看见确定执行 txs 会被写成已经可以像 Prepare 那样依赖非确定值，或当成已经套用 candidate 就不需要再在 Finalize 执行 | 官方 FinalizeBlock Usage：executes txs deterministically vs PrepareProposal MAY be non-deterministic |
+| A2286 | 高 | 看见 app_hash MUST be deterministic / not function of anything outside params and previous state / 看见 app_hash 必须确定 会被写成已经印进本头，或当成已经 next_block_delay 非确定就代表整门非确定 | 官方 FinalizeBlock Usage：app_hash MUST be deterministic vs next_block_delay non-deterministic field |
+| A2287 | 高 | 看见 implementation MUST be deterministic for state machine replication / 看见 Usage 写了必须确定 会被写成已经是 Req 11–12 那种 s_h / T_h 只依赖两份 interchangeable，或当成已经是 finfields bundled 里那句 | 官方 FinalizeBlock Usage vs abci++_app_requirements Req 11–12 vs finfields bundled 407 |
+| A2288 | 中 | 怎样写 FinalizeBlock / 怎样测确定性 / 怎样写测试向量会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2289 | 记录 | 会与 338 / 342 / 404 / 407 / 460 / 469 糊成「看见 Usage 写了必须确定就已经可以像 Prepare 那样、已经印进本头、已经 next_block_delay 非确定就代表整门非确定」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock Usage determinism 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经可以像 Prepare 那样 / 已经 next_block_delay 非确定就代表整门非确定 / 已经是 Req 11–12 或 finfields bundled 标成另一对象 |
+
 | A2280 | 高 | 看见 `FinalizeBlockResponse.next_block_delay` 标成非确定 / each node MAY provide a different value / 看见各节点可以回不同值 会被写成已经 Finalize 必须确定，或当成已经像 `app_hash` / `tx_results` 那样 Deterministic = Yes | 官方 FinalizeBlock Response 表 Deterministic = No；Usage：non-deterministic field；each node MAY provide a different value |
 | A2281 | 高 | 看见 depends on how long processing is taking at the local node / wallclock / NTP / 看见依赖本机处理耗时 会被写成已经是本地 `timeout_commit`，或当成已经是 `ConsensusParams.block` 块间隔 | 官方 FinalizeBlock Usage vs Previously timeout_commit in CometBFT config |
 | A2282 | 高 | 看见 Commit 后再开下一高 / set to 0 立刻开下一高 / 看见 set to 0 会被写成已经是槽位，或当成已经最终，或当成已经把规范 1s 常量抄进不确定 | 官方 FinalizeBlock Usage vs post-commit wait；Set to constant 1s — 不抄进不确定 |
