@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2260 | 高 | 看见 FinalizeBlock 等价于 ABCI 1.0 的 BeginBlock / DeliverTx / EndBlock / 看见收成一门 会被写成已经四门已经结算，或当成已经交差 | 官方 FinalizeBlock Usage：This method is equivalent to the call sequence BeginBlock, DeliverTx, and EndBlock in ABCI 1.0 |
+| A2261 | 高 | 看见等价于旧三步 / 看见收成一门 会被写成已经没有 Prepare/Process，或当成已经 ABCI++ 只剩 Finalize 一门 interchangeable | 官方 FinalizeBlock Usage vs ABCI++ PrepareProposal / ProcessProposal |
+| A2262 | 高 | 看见等价于旧三步 / 看见收成一门 会被写成已经是 Contains the fields of the newly decided block interchangeable，或当成已经 Process 跑过 / 已经有 candidate 就不用在 Finalize 再执行 | 官方 FinalizeBlock Usage vs Contains the fields / executes txs / apply candidate state |
+| A2263 | 中 | 怎样写 Finalize 回包 / 怎样映射 BeginBlock/DeliverTx/EndBlock / 怎样在 Finalize 套用 candidate 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2264 | 记录 | 会与 363 / 33 / 461 / 460 糊成「看见收成一门就已经是四门已经结算、已经没有 Prepare/Process、已经 Process 跑过就不用在 Finalize 再执行」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经四门已经结算 / 已经没有 Prepare/Process / 已经 Process 就不需要 Finalize 标成另一对象 |
+
 | A2255 | 高 | 看见 FinalizeBlockResponse.tx_results[i].Code == 0 only if the i-th transaction is fully valid / 看见回了 0 会被写成已经 CheckTx 过了，或当成已经 Process 回了 Accept | 官方 FinalizeBlock Usage：tx_results[i].Code == 0 only if the i-th transaction is fully valid |
 | A2256 | 高 | 看见 Code == 0 only if fully valid / 看见这笔完全合法 会被写成已经 Code != 0 那种没进块，或当成已经无效就不在块里 | 官方 FinalizeBlock Usage vs Transaction Results：Code != 0 still in block |
 | A2257 | 高 | 看见回了 tx_results / 看见有 Code 会被写成已经 Finalize 改了就已经交差，或当成已经 Code / Data 印进本头 LastResultsHash | 官方 FinalizeBlock Usage vs Transaction Results vs FinalizeBlock / Commit |
