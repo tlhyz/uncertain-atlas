@@ -21,4 +21,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T02:08Z | P1-11 checkpoint | 26+ min elapsed; 100% CPU healthy; DUAL_REPORT pending
 2026-09-13T02:12Z | P2-01 done | crypto_regime runner enabled; qtb.cli crypto; 126 tests pass
 2026-09-13T02:12Z | P1-11 running | 30+ min; awaiting DUAL_REPORT.md
+2026-09-13T02:27Z | P2-02 in_progress | BTC leverage scan running; portfolio crypto-only + trades_lazy fixes; 126 tests
+2026-09-13T02:27Z | P1-11 running | 45+ min; DUAL_REPORT still pending
 ```
