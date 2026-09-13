@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
-"""Run Crypto regime experiment — placeholder until STEP 4."""
+"""Run Crypto independent regime experiment (Book B)."""
 
-print("Use configs/experiments/crypto_regime.yaml — not enabled in first delivery.")
-raise SystemExit(0)
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from qtb.dual.crypto_run import main
+
+if __name__ == "__main__":
+    raise SystemExit(main())

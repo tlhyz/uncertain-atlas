@@ -85,6 +85,12 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Download Binance aggTrades for CRYPTO_C1 window (2024-09~11)",
     )
+
+    crypto = sub.add_parser("crypto", help="Crypto independent regime experiment (Book B)")
+    crypto.add_argument("-c", "--config", default="configs/experiments/crypto_regime.yaml")
+    crypto.add_argument("--cache-only", action="store_true")
+    crypto.add_argument("--smoke", action="store_true", help="BTC-only single-leverage fast validation")
+    crypto.add_argument("--output-dir", default="")
     return p
 
 
@@ -225,6 +231,21 @@ def cmd_dual(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_crypto(args: argparse.Namespace) -> int:
+    from qtb.dual.crypto_run import load_crypto_config, run_crypto_job
+
+    cfg = load_crypto_config(args.config)
+    if args.cache_only:
+        cfg.setdefault("data", {})["cache_only"] = True
+    if args.smoke:
+        cfg["smoke"] = True
+        cfg["enabled"] = True
+    if args.output_dir:
+        cfg.setdefault("output", {})["dir"] = args.output_dir
+    run_crypto_job(cfg)
+    return 0
+
+
 def cmd_live(args: argparse.Namespace) -> int:
     cfg = _cfg(args)
     broker = LiveBroker(config=cfg)
@@ -259,6 +280,7 @@ def main(argv: list[str] | None = None) -> int:
         "batch-screen": cmd_screen,
         "ab": cmd_ab,
         "dual": cmd_dual,
+        "crypto": cmd_crypto,
     }
     return handlers[args.cmd](args)
 

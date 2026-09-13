@@ -1,13 +1,17 @@
 # Crypto independent regime experiment — see docs/STRATEGY_CRYPTO.md
 experiment_id: crypto_regime_v1
-enabled: false
+enabled: true
 
 data:
   venue: binance
   symbols: [BTC, ETH, SOL]
   satellite: [PENGU, PUMP]
   interval: 1h
-  auto_start_date: true
+  start: "2024-09-01"
+  end: "2024-11-30"
+  auto_start_date: false
+  cache_only: true
+  download_trades: false
   tick_precise: true
 
 execution:
