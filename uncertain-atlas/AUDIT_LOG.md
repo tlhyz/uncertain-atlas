@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2275 | 高 | 看见 CometBFT locks the mempool / no CheckTx on new transactions / 看见锁了内存池、新交易不进 CheckTx 会被写成已经是 Commit 锁，或当成已经 RPC 安全默认锁 | 官方 FinalizeBlock When step 7：CometBFT locks the mempool — no calls to CheckTx on new transactions |
+| A2276 | 高 | 看见 CometBFT calls Commit to instruct the Application to persist its state / 看见叫 Commit 让应用落盘应用状态 会被写成已经引擎 persist tx outputs / AppHash / ResultsHash，或当成已经 Finalize 改了就已经落盘 | 官方 FinalizeBlock When step 8 vs step 6 persist / Commit |
+| A2277 | 高 | 看见 optionally recheck mempool / unlocks mempool / starts h+1 round 0 / 看见可选再验、再解锁、再开下一高 round 0 会被写成已经是 Recheck，或当成已经能往下走 / 已经交差 | 官方 FinalizeBlock When steps 9–11 vs CheckTx RECHECK |
+| A2278 | 中 | 怎样写 Finalize When 流程 / 怎样再验池里剩下的 / 怎样 Commit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2279 | 记录 | 会与 403 / 467 / 310 / 312 / 335 / 399 糊成「看见 Finalize 之后就已经锁池、已经 Commit 落盘、已经 Recheck、已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When lock mempool Commit recheck 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是 Commit 锁 / 已经引擎 persist 这三份 / 已经是 Recheck 标成另一对象 |
+
 | A2270 | 高 | 看见 Application calculates and returns AppHash along with tx outputs / 看见应用回 AppHash 和各笔 tx outputs 会被写成已经印进本头，或当成已经是本头 AppHash | 官方 FinalizeBlock When step 4：Application calculates and returns the AppHash, along with a list containing the outputs of each of the transactions executed |
 | A2271 | 高 | 看见 CometBFT hashes all the transaction outputs and stores it in ResultHash / 看见引擎把各笔输出哈希进 ResultHash 会被写成已经 Code / Data 印进本头 LastResultsHash，或当成已经印进本头 | 官方 FinalizeBlock When step 5 vs Transaction Results：Code / Data 编进 LastResultsHash |
 | A2272 | 高 | 看见 CometBFT persists the transaction outputs, AppHash, and ResultsHash / 看见引擎落盘 tx outputs / AppHash / ResultsHash 会被写成已经交差，或当成已经 Commit 落盘应用状态 | 官方 FinalizeBlock When step 6 vs Commit |

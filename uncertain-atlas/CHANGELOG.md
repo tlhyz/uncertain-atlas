@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 468）
+
+- CometBFT FinalizeBlock When lock mempool Commit recheck 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock When steps 7–11，实现 / FinalizeBlock When lock mempool Commit recheck 正式三事，不另写 19 节）：看见 locks mempool / no CheckTx on new tx 不是已经是 Commit 锁 / 已经 RPC 安全默认锁。看见 calls Commit to persist application state 不是已经引擎 persist 这三份 / 已经 Finalize 改了就已经落盘。看见 optionally recheck / unlock / start h+1 round 0 不是已经是 Recheck / 已经能往下走。FinalizeBlock When lock mempool Commit recheck 正式三事不是不变量 403，也不是不变量 467，也不是不变量 310。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 468；语料 C472；模式 name-the-finlock-bar；反模式 finlock-sold-as-commit；L10.3 第 464 条。填 L4.4 / CometBFT 档案 FinalizeBlock When lock mempool Commit recheck 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 Finalize When 流程、怎样再验池里剩下的。不编博物馆页。不另写 19 节。不与 403 / 467 / 310 / 312 / 335 / 399 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经是 Commit 锁 / 已经引擎 persist 这三份 / 已经是 Recheck 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 467）
 
 - CometBFT FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock When steps 4–6，实现 / FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事，不另写 19 节）：看见 Application returns AppHash + tx outputs 不是已经印进本头 / 已经是本头 AppHash。看见 CometBFT hashes into ResultHash 不是已经 Code / Data 印进本头 LastResultsHash。看见 CometBFT persists tx outputs / AppHash / ResultsHash 不是已经 Commit 落盘应用状态 / 已经交差。FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事不是不变量 362，也不是不变量 403，也不是不变量 404。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
