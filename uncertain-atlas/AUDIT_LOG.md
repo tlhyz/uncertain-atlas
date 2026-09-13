@@ -4451,6 +4451,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2128 | 中 | 怎样写 ExtendVote When 正式流程 / 怎样填 CanonicalVoteExtension / 怎样构造 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2129 | 记录 | 会与 358 / 361 / 34 糊成「看见 ExtendVote 回了 extension 就已经广播 Precommit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经按原样签 / 已经验过扩展 / 已经写进 last_commit 标成另一对象 |
 
+| A2130 | 高 | 看见 ExtendVoteResponse.vote_extension 是 application-generated information that will be signed / 看见应用生成的信息、将由 CometBFT 签名 会被写成已经签过，或当成已经包进 CanonicalVoteExtension | 官方 Usage：vote_extension is application-generated information that will be signed |
+| A2131 | 高 | 看见 ExtendVoteResponse.non_rp_extension 是 application-generated information that will be signed by CometBFT and attached to the Precommit message / 看见相对 vote_extension 不做重放保护 会被写成已经和 vote_extension 同一份签法，或当成已经有重放保护 | 官方 Usage：No replay-protection is applied to the data as compared to vote_extension; raw data without wrapping structure |
+| A2132 | 高 | 看见 will be signed 并 attached to the Precommit message / 看见规范写「将签名并挂到 Precommit」 会被写成已经广播 Precommit，或当成已经写进 last_commit | 官方 Usage：will be signed by CometBFT and attached to the Precommit message |
+| A2133 | 中 | 怎样写 ExtendVote Response Usage application-generated 正式三事 / 怎样选 non_rp / 怎样挂到 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2134 | 记录 | 会与 418 / 358 / 438 糊成「看见应用回了扩展就已经签过」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote Response Usage application-generated 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经签过 / 已经包装 / 已经广播 Precommit 标成另一对象 |
+
 
 
 
