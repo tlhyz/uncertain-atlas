@@ -425,6 +425,7 @@
 - [procreqrest-sold-as-extreq](procreqrest-sold-as-extreq.md)
 - [extvitable-sold-as-usage](extvitable-sold-as-usage.md)
 - [finreq-sold-as-procreq](finreq-sold-as-procreq.md)
+- [extcinotes-sold-as-inblock](extcinotes-sold-as-inblock.md)
 - [extviusage-sold-as-exposed](extviusage-sold-as-exposed.md)
 - [extappgen-sold-as-signed](extappgen-sold-as-signed.md)
 - [extwhenformal-sold-as-broadcast](extwhenformal-sold-as-broadcast.md)
