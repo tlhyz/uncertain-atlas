@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 505）
+
+- CometBFT PrepareProposal When collect / synchronous / manipulate 正式三事工作实例（官方 ABCI++ Methods PrepareProposal When collects outstanding txs from mempool in order of priority / creates block header / calls PrepareProposal / call is synchronous / Application can manipulate transactions / MAY fully execute candidate / MAY use vote extensions in commit info，实现 / PrepareProposal When collect / synchronous / manipulate 正式三事，不另写 19 节）：看见 collects in order of priority / creates header 不是 raw proposal bundled（503） interchangeable / 已经整池可见 interchangeable。看见 PrepareProposal call is synchronous 不是能在返回后再改裁决 interchangeable / 已经 Process 调用是同步的（354） interchangeable。看见 can manipulate transactions 不是 Prepare 改列表 bundled（355） interchangeable / 已经从内存池删掉 interchangeable / 已经候选交差 interchangeable。PrepareProposal When collect / synchronous / manipulate 正式三事不是不变量 356，也不是不变量 503 / 355 / 311 / 352。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 505；语料 C509；模式 name-the-preparewhen-collect-bar；反模式 preparewhen-collect-sold-as-bundled；L10.3 第 501 条。填 L4.4 / CometBFT 档案 PrepareProposal When collect / synchronous / manipulate 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样从池子收交易、怎样造头、怎样改 Prepare 列表。不编博物馆页。不另写 19 节。不与 356 / 503 / 355 / 311 / 352 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 raw proposal bundled interchangeable / 能在返回后再改裁决 interchangeable / Prepare 改列表 bundled interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 504）
 
 - CometBFT PrepareProposal Usage no checks / crash / nondet 正式三事工作实例（官方 ABCI++ Methods PrepareProposal Usage CometBFT does NOT provide additional validity checks / fails to validate PrepareProposalResponse → crash / implementation MAY be non-deterministic，实现 / PrepareProposal Usage no checks / crash / nondet 正式三事，不另写 19 节）：看见 no additional validity checks 不是已经验过重复 interchangeable / 已经有应用级重放保护 interchangeable。看见 crash on invalid response 不是 Process REJECT interchangeable / 已经 prevote nil interchangeable。看见 MAY be non-deterministic 不是必须确定 interchangeable / 已经和 Process MUST deterministic interchangeable。PrepareProposal Usage no checks / crash / nondet 正式三事不是不变量 357，也不是不变量 338 / 451 / 430。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
