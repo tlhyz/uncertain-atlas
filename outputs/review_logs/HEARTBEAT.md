@@ -18,4 +18,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T01:45Z | P1-11 running | benchmarks B1–B10 tick-precise 65d; no report yet
 2026-09-13T01:58Z | P1-01 done | ETH 91d 128.8M + SOL 90d 44.2M manifests; SOL Sep-04 gap noted; 122 tests pass
 2026-09-13T01:58Z | P1-11 running | 16+ min benchmarks still computing
+2026-09-13T02:08Z | P1-11 checkpoint | 26+ min elapsed; 100% CPU healthy; DUAL_REPORT pending
 ```
