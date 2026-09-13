@@ -1,0 +1,23 @@
+# Crypto independent regime experiment — see docs/STRATEGY_CRYPTO.md
+experiment_id: crypto_regime_v1
+enabled: false
+
+data:
+  venue: binance
+  symbols: [BTC, ETH, SOL]
+  satellite: [PENGU, PUMP]
+  interval: 1h
+  auto_start_date: true
+  tick_precise: true
+
+execution:
+  fill_modes_primary: [base, conservative]
+  decouple_from_tech: true  # mandatory
+
+leverage_scan: [1.25, 1.5, 1.75, 2.0]
+grid:
+  atr_step_scan: [0.30, 0.40, 0.50, 0.60]
+  atr_range_scan: [3.0, 5.0, 7.0]
+
+output:
+  dir: outputs/experiments/crypto_regime_v1
