@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 450）
+
+- CometBFT Misbehavior total_voting_power 栏正式三事工作实例（官方 ABCI++ Methods Data Types Misbehavior Fields，实现 / Misbehavior total_voting_power 栏正式三事，不另写 19 节）：看见 Misbehavior.total_voting_power 是 height 那一高验证者集合的总投票权不是已经 VoteInfo.validator.power / Misbehavior.validator.power 那种单个验证者权 / 已经 CommitInfo.votes 里按投票权降序排过那种已经奖罚完。看见 Misbehavior.total_voting_power 是 offense height 那一高的集合总权不是已经按到场定奖惩 / 已经 block_id_flag 奖罚完。看见 Misbehavior.total_voting_power 不是已经定了奖惩 / 已经 slashed / 已经改了集合。Misbehavior total_voting_power 栏正式三事不是不变量 372，也不是不变量 365，也不是不变量 448。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 450；语料 C454；模式 name-the-misbtvp-bar；反模式 misbtvp-sold-as-attendance；L10.3 第 446 条。填 L4.4 / CometBFT 档案 Misbehavior total_voting_power 栏正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样填 Misbehavior.total_voting_power、怎样从 evidence 算那一高集合总权、怎样和 VoteInfo 对齐。不编博物馆页。不另写 19 节。不与 372 / 365 / 448 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是单个验证者 power / 已经按到场定奖惩 / 已经定了奖惩 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 449）
 
 - CometBFT Misbehavior height/time 栏正式三事工作实例（官方 ABCI++ Methods Data Types Misbehavior Fields，实现 / Misbehavior height/time 栏正式三事，不另写 19 节）：看见 Misbehavior.height 是过错发生的高度不是已经 Prepare/Process 请求 height / 已经验过块头。看见 Misbehavior.time 是 height 那一高已提交块的时间戳不是已经验过票上 Timestamp / 已经是 Prepare/Process 请求 time interchangeable。看见 Misbehavior.height 和 time 一起不是已经定了奖惩 / 已经 slashed。Misbehavior height/time 栏正式三事不是不变量 372，也不是不变量 304，也不是不变量 413/420/428。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
