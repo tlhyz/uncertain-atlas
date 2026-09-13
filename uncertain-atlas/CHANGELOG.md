@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 454）
+
+- CometBFT ProcessProposal height/time 对上拟议块头正式三事工作实例（官方 ABCI++ Methods ProcessProposal Usage / Request，实现 / ProcessProposal height/time 对上拟议块头正式三事，不另写 19 节）：看见 Process 的 height / time 对上拟议块头不是已经验过块头 / 已经跑过 Process。看见 ProcessProposalRequest.height / time 是拟议块高度和时间戳不是已经 Usage 那种 match the values from the header / 已经验过票上时间。看见 Process height/time match header 不是已经是 FinalizeBlockRequest 刚决定那块的字段 / 已经 Finalize height/time match interchangeable。ProcessProposal height/time 对上拟议块头正式三事不是不变量 417，也不是不变量 419 / 420，也不是不变量 416。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 454；语料 C458；模式 name-the-procht-bar；反模式 procht-sold-as-header；L10.3 第 450 条。填 L4.4 / CometBFT 档案 ProcessProposal height/time 对上拟议块头正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样对 height / time、怎样和 Finalize 请求栏对齐。不编博物馆页。不另写 19 节。不与 417 / 419 / 416 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经验过块头 / 已经 Usage 那种对上了 / 已经是 FinalizeBlockRequest 刚决定那块的字段 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 453）
 
 - CometBFT ProcessProposal 含执行所需全部信息正式三事工作实例（官方 ABCI++ Methods ProcessProposal Usage / Request，实现 / ProcessProposal 含执行所需全部信息正式三事，不另写 19 节）：看见 ProcessProposal Contains all information on the proposed block needed to fully execute it 不是已经执行那些交易 / 已经 Finalize 跑过。看见 ProcessProposalRequest 八栏齐不是已经只有 PrepareProposalResponse.txs / 已经只有 raw proposal。看见含提案块上执行所需的全部信息不是已经是 FinalizeBlockRequest 刚决定那块的字段 / 已经只有 txs 字段就够。ProcessProposal 含执行所需全部信息正式三事不是不变量 408，也不是不变量 419，也不是不变量 452。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
