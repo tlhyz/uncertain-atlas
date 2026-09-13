@@ -4483,6 +4483,13 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+
+| A2255 | 高 | 看见 FinalizeBlockResponse.tx_results[i].Code == 0 only if the i-th transaction is fully valid / 看见回了 0 会被写成已经 CheckTx 过了，或当成已经 Process 回了 Accept | 官方 FinalizeBlock Usage：tx_results[i].Code == 0 only if the i-th transaction is fully valid |
+| A2256 | 高 | 看见 Code == 0 only if fully valid / 看见这笔完全合法 会被写成已经 Code != 0 那种没进块，或当成已经无效就不在块里 | 官方 FinalizeBlock Usage vs Transaction Results：Code != 0 still in block |
+| A2257 | 高 | 看见回了 tx_results / 看见有 Code 会被写成已经 Finalize 改了就已经交差，或当成已经 Code / Data 印进本头 LastResultsHash | 官方 FinalizeBlock Usage vs Transaction Results vs FinalizeBlock / Commit |
+| A2258 | 中 | 怎样编回执 / 怎样建索引 / 怎样算 LastResultsHash 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2259 | 记录 | 会与 404 / 316 / 335 / 339 糊成「看见 Finalize 回了 tx_results 就已经 CheckTx 过了、已经没进块、已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock tx_results Code==0 完全合法正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 CheckTx 过了 / 已经 Code != 0 那种没进块 / 已经 Finalize 改了就已经交差 标成另一对象 |
+
 | A2250 | 高 | 看见应用可以用 FinalizeBlockRequest.decided_last_commit 和 misbehavior 定验证者奖惩 / 看见能定奖惩 会被写成已经罚没，或当成已经交差 | 官方 FinalizeBlock Usage：The Application can use decided_last_commit and misbehavior to determine rewards and punishments for the validators |
 | A2251 | 高 | 看见 FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息 / 看见填了 decided_last_commit 会被写成已经是 ProcessProposalRequest.proposed_last_commit，或当成已经交差 local_last_commit | 官方 FinalizeBlock Request 表 vs Usage |
 | A2252 | 高 | 看见 FinalizeBlockRequest.misbehavior 是过错验证者信息列表 / 看见填了 misbehavior 会被写成已经 VoteInfo 按到场定奖惩，或当成已经 Misbehavior.type 就已经罚没 | 官方 FinalizeBlock Request 表 vs VoteInfo / Misbehavior Fields |

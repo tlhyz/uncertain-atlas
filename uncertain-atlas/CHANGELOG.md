@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 464）
+
+- CometBFT FinalizeBlock tx_results Code==0 完全合法正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage + Transaction Results，实现 / FinalizeBlock tx_results Code==0 完全合法正式三事，不另写 19 节）：看见 Code == 0 only if fully valid 不是已经 CheckTx 过了 / 已经 Process Accept。看见 fully valid 不是已经 Code != 0 那种没进块。看见回了 tx_results 不是已经 Finalize 改了就已经交差 / 已经 Code Data 印进本头。FinalizeBlock tx_results Code==0 完全合法正式三事不是不变量 404，也不是不变量 316，也不是不变量 335。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 464；语料 C468；模式 name-the-fintxcode-bar；反模式 fintxcode-sold-as-absent；L10.3 第 460 条。填 L4.4 / CometBFT 档案 FinalizeBlock tx_results Code==0 完全合法正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样编回执、怎样建索引。不编博物馆页。不另写 19 节。不与 404 / 316 / 335 / 339 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经 CheckTx 过了 / 已经 Code != 0 那种没进块 / 已经 Finalize 改了就已经交差 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 463）
 
 - CometBFT FinalizeBlock decided_last_commit + misbehavior 定奖惩正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage / Request，实现 / FinalizeBlock decided_last_commit + misbehavior 定奖惩正式三事，不另写 19 节）：看见 can use decided_last_commit 和 misbehavior 定奖惩不是已经罚没 / 已经交差。看见 decided_last_commit 从刚决定那块拿到不是已经 proposed_last_commit / 已经交差 local_last_commit。看见 misbehavior 过错列表不是已经 VoteInfo 按到场定奖惩 / 已经 Misbehavior.type 就已经罚没。FinalizeBlock decided_last_commit + misbehavior 定奖惩正式三事不是不变量 363，也不是不变量 422，也不是不变量 365。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
