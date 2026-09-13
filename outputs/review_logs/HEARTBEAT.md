@@ -312,4 +312,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T22:30Z | checkpoint 2230Z | drawdown A/B/C ~90min ETA
 2026-09-13T22:40Z | timer research-continue | P3-04 set A ~10min running
 2026-09-13T22:40Z | checkpoint 2240Z | P3-06 next pending after P3-04
+2026-09-13T22:50Z | timer research-continue | P3-04 set A ~20min
+2026-09-13T22:50Z | checkpoint 2250Z | ETA A done ~10min
 ```
