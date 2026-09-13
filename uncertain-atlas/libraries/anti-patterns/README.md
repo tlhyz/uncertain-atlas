@@ -428,6 +428,7 @@
 - [cinotes-sold-as-inblock](cinotes-sold-as-inblock.md)
 - [prepevents-sold-as-finalize](prepevents-sold-as-finalize.md)
 - [proccand-sold-as-commit](proccand-sold-as-commit.md)
+- [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [misbtvp-sold-as-attendance](misbtvp-sold-as-attendance.md)
 - [misbheighttime-sold-as-votetime](misbheighttime-sold-as-votetime.md)
 - [misbvalidator-sold-as-voteinfo](misbvalidator-sold-as-voteinfo.md)

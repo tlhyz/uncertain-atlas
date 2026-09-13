@@ -323,6 +323,7 @@
 - [name-the-ci-notes-order](name-the-ci-notes-order.md)
 - [name-the-prepevents-retention-bar](name-the-prepevents-retention-bar.md)
 - [name-the-proccand-bar](name-the-proccand-bar.md)
+- [name-the-procfull-bar](name-the-procfull-bar.md)
 - [name-the-misbtvp-bar](name-the-misbtvp-bar.md)
 - [name-the-misbheighttime-bar](name-the-misbheighttime-bar.md)
 - [name-the-misbvalidator-bar](name-the-misbvalidator-bar.md)

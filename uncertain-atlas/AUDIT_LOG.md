@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2200 | 高 | 看见 ProcessProposal Contains all information on the proposed block needed to fully execute it / 看见含执行所需全部信息 会被写成已经执行那些交易，或当成已经 Finalize 跑过 | 官方 ProcessProposal Usage：Contains all information on the proposed block needed to fully execute it |
+| A2201 | 高 | 看见 ProcessProposalRequest 有 txs + proposed_last_commit + misbehavior + hash + height + time + next_validators_hash + proposer_address / 看见八栏齐 会被写成已经只有 PrepareProposalResponse.txs，或当成已经只有 raw proposal | 官方 ProcessProposal Request 表：八栏；PrepareProposalResponse 只有 txs |
+| A2202 | 高 | 看见含提案块上执行所需的全部信息 / 看见填了信息 会被写成已经是 FinalizeBlockRequest 刚决定那块的字段，或当成已经只有 txs 字段就够 | 官方 ProcessProposal Usage vs FinalizeBlock Request |
+| A2203 | 中 | 怎样从 ProcessProposalRequest 拿齐八栏 / 怎样和 Finalize 请求栏对齐会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2204 | 记录 | 会与 408 / 419 / 452 糊成「看见 Process 含全部信息就已经执行那些交易、已经只有 txs、已经是 Finalize 字段 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposal 含执行所需全部信息正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经执行那些交易 / 已经只有 PrepareProposalResponse.txs / 已经是 FinalizeBlockRequest 刚决定那块的字段 标成另一对象 |
+
 | A2195 | 高 | 看见 ProcessProposal 里 Application MAY 像处理 FinalizeBlock 那样整块执行 / 看见 immediate execution 跑过了 会被写成已经交差，或当成已经是 ExecuteTxState | 官方 ProcessProposal Usage：The Application may fully execute the block as though it was handling FinalizeBlock; MAY fully execute the block (immediate execution) |
 | A2196 | 高 | 看见 any resulting state changes must be kept as candidate state / Application should be ready to discard it in case another block is decided / 看见留着 会被写成已经改了上一份已提交状态，或当成已经 Process 回了 Accept 就已经换工作状态 | 官方 ProcessProposal Usage：However, any resulting state changes must be kept as candidate state, and the Application should be ready to discard it in case another block is decided |
 | A2197 | 高 | 看见 Application checks/processes the proposed block, which is read-only / 看见处理了 会被写成已经改了 s_{p,h-1}，或当成已经 async 了还能 Reject | 官方 ProcessProposal When：The Application checks/processes the proposed block, which is read-only; async path will not be able to reject the block |
