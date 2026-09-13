@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P1-11 65d checkpoint | CHECKPOINT | outputs/review_logs/2026-09-13_P1-11_65d_backtest_CHECKPOINT.md |
 | 2026-09-13 | P1-01 crypto download | PASS | outputs/review_logs/2026-09-13_P1-01_crypto_aggTrades_download_PASS.md |
 | 2026-09-13 | P1-01 download checkpoint | CHECKPOINT | outputs/review_logs/2026-09-13_P1-01_download_progress_CHECKPOINT.md |
 | 2026-09-13 | P1-01/P1-11 restart | IN_PROGRESS | outputs/review_logs/2026-09-13_P1-01_P1-11_infra_restart_IN_PROGRESS.md |
