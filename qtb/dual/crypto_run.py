@@ -43,6 +43,7 @@ def load_crypto_config(path: str | None) -> dict[str, Any]:
         "run_grid_scan": True,
         "run_c1_baseline": True,
         "smoke": False,
+        "skip_tick_validation": False,
     }
     if path:
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
@@ -188,6 +189,7 @@ def run_crypto_job(cfg: dict[str, Any]) -> dict[str, Any]:
         cache_only=cache_only,
         download_trades=download_trades,
         symbols=symbols,
+        skip_tick_validation=bool(cfg.get("skip_tick_validation")),
     )
     write_provenance(data, out_dir)
     print(f"bars={len(data.aligned_index)} tick_precise={tick_precise}")

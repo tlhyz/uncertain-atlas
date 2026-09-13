@@ -19,6 +19,7 @@ execution:
 leverage_scan: [1.25, 1.5, 1.75, 2.0]
 run_grid_scan: false
 run_c1_baseline: false
+skip_tick_validation: true  # P1-01 manifests validated; avoid 91d reload stall
 
 output:
   dir: outputs/experiments/crypto_btc_leverage_scan

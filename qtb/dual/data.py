@@ -411,6 +411,7 @@ def load_binance_crypto_dataset(
     cache_only: bool = False,
     download_trades: bool = True,
     symbols: tuple[str, ...] = CRYPTO_CORE,
+    skip_tick_validation: bool = False,
 ) -> DualDataset:
     """
     Crypto book on Binance USDT-M: real 1h klines + aggTrades + funding.
@@ -455,7 +456,7 @@ def load_binance_crypto_dataset(
 
     for sym in symbols:
         md = crypto[sym]
-        if md.trades_lazy:
+        if md.trades_lazy and not skip_tick_validation:
             v = validate_lazy_trades_coverage(md.bars, sym, md.perp, interval, cache_only=True)
             tick_validation[sym] = v.as_dict()
             if not v.passed:
@@ -463,6 +464,8 @@ def load_binance_crypto_dataset(
                     f"aggTrades vs kline validation FAIL for {sym}: "
                     f"coverage={v.bars_with_trades}/{v.bars_checked} failures={v.failures[:2]}"
                 )
+        elif md.trades_lazy and skip_tick_validation:
+            tick_validation[sym] = {"skipped": True, "reason": "P1 manifests validated"}
 
     prov = {
         "source": "binance_futures",

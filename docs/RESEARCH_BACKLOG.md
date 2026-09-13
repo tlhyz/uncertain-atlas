@@ -33,7 +33,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-08 | Cross-check tick OHLCV vs kline (SNXX) | done | lazy validation passed |
 | P1-09 | Document data gaps in manifest notes | done | Sep-12 empty; ETH/SOL noted |
 | P1-10 | Gate download script smoke test BTC_USDT | done | 720 bars 1h; scripts/download_gate.py path fix |
-| P1-11 | Full 65d Binance tick backtest SOXL/SNXX | in_progress | 50+ min tick-precise; DUAL_REPORT pending |
+| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | leverage scan running; skip_tick_validation; BTC Sep-01 gap fixed |
+| P1-11 | Full 65d Binance tick backtest SOXL/SNXX | in_progress | 62+ min; DUAL_REPORT pending |
 
 ---
 
