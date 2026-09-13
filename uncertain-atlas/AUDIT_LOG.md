@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2295 | 高 | 看见 When calling FinalizeBlock with a block / consensus algorithm guarantees / 看见要 Finalize 了有共识保证 会被写成已经每个验证者都跑过 Process，或当成已经 Application executes block v / persist decision 那种已经把块落成这一高的决定 | 官方 FinalizeBlock Usage：When calling FinalizeBlock … guarantees at least one non-byzantine validator has run ProcessProposal |
+| A2296 | 高 | 看见 at least one non-byzantine validator / 看见至少一名非拜占庭 会被写成已经提议者那边 Process 过就代表全网都 Process 过，或当成已经本节点刚 Process 过就代表每个验证者都 Process 过 | 官方 FinalizeBlock Usage vs ProcessProposal 也会在提议者那边叫 351 |
+| A2297 | 高 | 看见 has run ProcessProposal on that block / 看见对这块跑过 Process 会被写成已经套用 candidate / previously executed 就不需要 Process 保证，或当成已经 ProcessProposal MAY 整块执行（452）那种已经交差 interchangeable | 官方 FinalizeBlock Usage vs apply candidate 460 / candidate execution 452 |
+| A2298 | 中 | 怎样写 Finalize / 怎样缓存 candidate / 怎样测失败路径会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2299 | 记录 | 会与 360 / 351 / 466 / 460 / 452 糊成「看见要 Finalize 了就已经每个验证者都跑过 Process、已经提议者 Process 过就代表全网都 Process 过、已经套用 candidate 就不需要 Process 保证」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经每个验证者都跑过 Process / 已经提议者 Process 过就代表全网都 Process 过 / 已经套用 candidate 就不需要 guarantee 标成另一对象 |
+
 | A2290 | 高 | 看见 `FinalizeBlockResponse.consensus_param_updates` returned for block H apply to H+1 / 看见块 H 回的用于 H+1 会被写成已经在块 H 生效，或当成已经 validator_updates 那种 H+2 才计票 / H+1 换人 interchangeable | 官方 FinalizeBlock Usage：returned for block H apply to consensus params for block H+1 |
 | A2291 | 高 | 看见 Changes to gas, size, and other consensus-related parameters / Deterministic = Yes / 看见改了 gas、大小和其它共识相关参数 会被写成已经只填一个字段就只改这一项，或当成已经是 finrespend bundled 里那句 interchangeable | 官方 FinalizeBlock Response 表 Deterministic = Yes vs partial update 319 |
 | A2292 | 高 | 看见 may be empty / CometBFT will keep the current values / 看见空着则保持当前值 会被写成已经清掉参数，或当成已经 InitChain 空参数 / Finalize 没回 nil 那种 interchangeable | 官方 FinalizeBlock Usage：may be empty … keep the current values |
