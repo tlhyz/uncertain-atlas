@@ -37,7 +37,7 @@ Recurring timer **`research-continue`** should fire and enqueue:
 
 | Timer | Schedule | Purpose |
 |-------|----------|---------|
-| `research-continue` | every **4 hours** | pick next backlog task |
+| `research-continue` | every **20 minutes** | pick next backlog task |
 | `research-daily-audit` | **09:00 UTC** daily | backlog hygiene + CURRENT_CONCLUSIONS check |
 | `pr-ci-watch` | on push | subscribe_github_ci for working branch |
 
