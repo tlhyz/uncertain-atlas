@@ -1,0 +1,59 @@
+# Cursor / AI Handoff
+
+## Read first (in order)
+
+1. `README.md`
+2. `docs/THESIS.md` — market view & two books
+3. `docs/RESEARCH_HISTORY.md` — what failed vs untested
+4. `docs/DATA_POLICY.md` — no synthetic ticks
+5. `docs/CURRENT_CONCLUSIONS.md`
+6. `REPO_REFACTOR_REPORT.md`
+
+## Out of scope — DO NOT MODIFY
+
+### `uncertain-atlas/` (blockchain / consensus research)
+
+This quantitative trading refactor **does not touch** the Uncertain blockchain knowledge base.
+
+- Lives on branch: `cursor/uncertain-architecture-atlas-11a5`
+- **Not present** on `research/unified-tech-crypto-framework`
+- **Never** merge, move, rewrite, or delete `uncertain-atlas/` as part of grid/perp work
+- If both tracks need coexistence in `main`, use **separate top-level dirs** with zero cross-imports
+
+## In scope
+
+| Path | Purpose |
+|------|---------|
+| `src/` | Target package (wraps `qtb/` during migration) |
+| `qtb/` | Legacy engine — still runs all tests |
+| `configs/` | All capital, fees, risk, experiments |
+| `scripts/` | Download + run entry points |
+| `outputs/` | Tracked research artifacts |
+| `docs/` | Single source of truth for humans & AI |
+
+## Running code today
+
+```bash
+pip install -e ".[dev]"
+pytest -q
+python scripts/download_binance.py --detect-start --symbols SOXL SNXX BTC
+python -m qtb.cli ab -c configs/ab_etf_vs_perp.yaml
+python -m qtb.cli dual -c configs/dual_engine_perp.yaml
+```
+
+## Rules for next agent
+
+1. **FAIL stays FAIL** in docs and reports
+2. **No synthetic ticks** — see DATA_POLICY
+3. **Crypto independent** from Tech signals
+4. **Primary metrics:** total equity, max DD, liq buffer — not grid gross
+5. **Conclusions:** Base + Conservative fills only
+6. **Do not** start full parameter sweeps until user confirms after refactor report
+
+## Next experiments (after user OK)
+
+1. Binance SOXL/SNXX full aggTrades manifest + tick validation every bar
+2. Re-run Tech FSM Q1–Q10 on Binance ticks
+3. BTC/ETH/SOL 2019+ grid leverage scan
+4. Gate OOS calibration pass
+5. Update `outputs/LIVE_CANDIDATES.md`
