@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P2-03 ETH leverage | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-03_eth_leverage_IN_PROGRESS.md |
+| 2026-09-13 | P1-11 + P2-02 checkpoint | CHECKPOINT | outputs/review_logs/2026-09-13_P1-11_P2-02_CHECKPOINT_0440Z.md |
 | 2026-09-13 | P1-11 + P2-02 checkpoint | CHECKPOINT | outputs/review_logs/2026-09-13_P1-11_P2-02_dual_jobs_CHECKPOINT_0430Z.md |
 | 2026-09-13 | P2-02 BTC leverage | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-02_btc_leverage_IN_PROGRESS.md |
 | 2026-09-13 | P2-01 crypto runner | PASS | outputs/review_logs/2026-09-13_P2-01_crypto_regime_runner_PASS.md |

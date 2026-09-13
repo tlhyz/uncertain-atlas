@@ -54,4 +54,8 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T04:30Z | P2-02 running | ~107 min; leverage scan active; CRYPTO_REPORT pending
 2026-09-13T04:30Z | checkpoint | outputs/review_logs/2026-09-13_P1-11_P2-02_dual_jobs_CHECKPOINT_0430Z.md
 2026-09-13T04:30Z | next pending | P0-02 blocked; P2-03 queued after P2-02 (ETH klines ready)
+2026-09-13T04:40Z | timer research-continue | pytest 126 pass; P1-11 ~179min P2-02 ~117min still running
+2026-09-13T04:40Z | P2-03 in_progress | ETH leverage scan started tmux p2-03-eth-leverage; 8 cores parallel OK
+2026-09-13T04:40Z | P2-02 running | ~117min; CRYPTO_REPORT may finish next cycle
+2026-09-13T04:40Z | P1-11 running | ~179min; DUAL_REPORT pending
 ```
