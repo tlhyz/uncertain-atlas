@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2220 | 高 | 看见应用 SHOULD 总是设 VerifyVoteExtensionResponse.status 为 ACCEPT / 看见 SHOULD always set to ACCEPT 会被写成已经正确进程交出的扩展必须 Accept，或当成已经是 Requirement 6 已经测过 | 官方 VerifyVoteExtension Usage：application implementers SHOULD always set VerifyVoteExtensionResponse.status to ACCEPT |
+| A2221 | 高 | 看见除非他们 really know what the potential liveness implications of returning REJECT are / 看见除非真的知道 REJECT 的活性代价 会被写成已经拒整张 Precommit 是免费过滤，或当成已经 Verify REJECT = 块非法 那种已经结算 | 官方 VerifyVoteExtension Usage：unless they really know what the potential liveness implications of returning REJECT are |
+| A2222 | 高 | 看见 SHOULD Accept 默认策略 / 看见写了默认 Accept 会被写成已经不能 Reject，或当成已经 Verify 433 SHOULD Accept 通则 interchangeable | 官方 VerifyVoteExtension Usage vs app requirements SHOULD Accept 通则 |
+| A2223 | 中 | 怎样写默认 Accept 策略 / 怎样评估 REJECT 活性代价会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2224 | 记录 | 会与 433 / 348 / 34 / 341 糊成「看见写了默认 Accept 就已经正确进程交出的扩展必须 Accept、已经拒整张 Precommit 是免费过滤、已经 Requirement 6 已经测过」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtension SHOULD Accept 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经正确进程交出的扩展必须 Accept / 已经拒整张 Precommit 是免费过滤 / 已经 Requirement 6 已经测过 标成另一对象 |
+
 | A2215 | 高 | 看见应用 SHOULD 总是设 ProcessProposalResponse.status 为 ACCEPT / 看见 SHOULD always set to ACCEPT 会被写成已经 honest proposal 必须 Accept，或当成已经是 Requirement 3 已经测过 | 官方 ProcessProposal Usage：application implementers SHOULD always set ProcessProposalResponse.status to ACCEPT |
 | A2216 | 高 | 看见除非他们 really know what the potential liveness implications of returning REJECT are / 看见除非真的知道 REJECT 的活性代价 会被写成已经 REJECT 是免费过滤，或当成已经 Process REJECT = prevote nil 那种已经结算 | 官方 ProcessProposal Usage：unless they really know what the potential liveness implications of returning REJECT are |
 | A2217 | 高 | 看见 SHOULD Accept 默认策略 / 看见写了默认 Accept 会被写成已经不能 Reject，或当成已经 Process 340 SHOULD Accept 通则 interchangeable | 官方 ProcessProposal Usage vs app requirements SHOULD Accept 通则 |

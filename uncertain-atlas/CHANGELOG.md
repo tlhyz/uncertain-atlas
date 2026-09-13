@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 457）
+
+- CometBFT VerifyVoteExtension SHOULD Accept 正式三事工作实例（官方 ABCI++ Methods VerifyVoteExtension Usage，实现 / VerifyVoteExtension SHOULD Accept 正式三事，不另写 19 节）：看见应用 SHOULD 总是设 VerifyVoteExtensionResponse.status 为 ACCEPT 不是已经正确进程交出的扩展必须 Accept / 已经是 Requirement 6 已经测过。看见除非真的知道 REJECT 的活性代价不是已经拒整张 Precommit 是免费过滤 / 已经 Verify REJECT = 块非法 那种已经结算。看见 SHOULD Accept 默认策略不是已经不能 Reject / 已经 Verify 433 SHOULD Accept 通则 interchangeable。VerifyVoteExtension SHOULD Accept 正式三事不是不变量 433，也不是不变量 348，也不是不变量 34 / 341。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 457；语料 C461；模式 name-the-verifyaccept-bar；反模式 verifyaccept-sold-as-req6；L10.3 第 453 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension SHOULD Accept 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写默认 Accept 策略、怎样评估 REJECT 活性代价。不编博物馆页。不另写 19 节。不与 433 / 348 / 34 / 341 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经正确进程交出的扩展必须 Accept / 已经拒整张 Precommit 是免费过滤 / 已经 Requirement 6 已经测过 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 456）
 
 - CometBFT ProcessProposal SHOULD Accept 正式三事工作实例（官方 ABCI++ Methods ProcessProposal Usage，实现 / ProcessProposal SHOULD Accept 正式三事，不另写 19 节）：看见应用 SHOULD 总是设 ProcessProposalResponse.status 为 ACCEPT 不是已经 honest proposal 必须 Accept / 已经是 Requirement 3 已经测过。看见除非真的知道 REJECT 的活性代价不是已经 REJECT 是免费过滤 / 已经 Process REJECT = prevote nil 那种已经结算。看见 SHOULD Accept 默认策略不是已经不能 Reject / 已经 Process 340 SHOULD Accept 通则 interchangeable。ProcessProposal SHOULD Accept 正式三事不是不变量 430，也不是不变量 347，也不是不变量 33 / 340 / 455。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

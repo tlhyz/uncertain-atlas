@@ -431,6 +431,7 @@
 - [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
+- [verifyaccept-sold-as-req6](verifyaccept-sold-as-req6.md)
 - [procaccept-sold-as-req3](procaccept-sold-as-req3.md)
 - [misbtvp-sold-as-attendance](misbtvp-sold-as-attendance.md)
 - [misbheighttime-sold-as-votetime](misbheighttime-sold-as-votetime.md)
