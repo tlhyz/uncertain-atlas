@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [initchainusage-sold-as-bundled](initchainusage-sold-as-bundled.md) 是 InitChain Usage 正式三事就等于崩溃后再调 / 空名单 / bundled，不是本页 InitChain Usage 余量 bundled 三事。
 - [crashsteps-sold-as-committed](crashsteps-sold-as-committed.md) 是崩溃后第一块 Commit 之前再调 InitChain 就已经交差，不是本页这种 InitChain 创世时只调一次不是已经是崩溃后再调。
 - [validatorupdate-sold-as-set](validatorupdate-sold-as-set.md) 是 InitChain 回了空名单就已经没有集合，不是本页这种应用可以决定接受创世验证者集合或用创世应用信息算出另一套不是已经没有集合。
 - [validator-sold-as-update](validator-sold-as-update.md) 是 ValidatorUpdate 用公钥认人就已经改了集合，不是本页这种 Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新不是已经改了集合。
