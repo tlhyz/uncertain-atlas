@@ -231,6 +231,37 @@ def rank_drawdown_sets(
     return rows
 
 
+def rank_right_side_reserve(
+    data: DualDataset,
+    *,
+    levels: tuple[float, ...] = (0.25, 0.30, 0.35),
+    fill_mode: str = "base",
+    tick_precise: bool = False,
+) -> list[dict[str, Any]]:
+    """Sweep reversal-confirm long deployment fraction (P3-06)."""
+    rows: list[dict[str, Any]] = []
+    for frac in levels:
+        pct = int(round(frac * 100))
+        print(f"[run] right_side_reserve {pct}%...")
+        tp = TechParams(right_side_reserve_frac=frac)
+        r = run_dual_portfolio(
+            data,
+            DualParams(tech=tp),
+            name=f"right_side_reserve_{pct}",
+            fill_mode=fill_mode,
+            tick_precise=tick_precise,
+        )
+        m = summarize_portfolio(r)
+        m["right_side_reserve_frac"] = frac
+        print(
+            f"[run] right_side_reserve {pct}% done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"calmar={float(m.get('calmar', 0)):.2f}"
+        )
+        rows.append(m)
+    rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
+    return rows
+
+
 def run_binance_crypto_c1(
     *,
     start: str = "2024-09-01",

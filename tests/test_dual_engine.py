@@ -174,3 +174,13 @@ def test_rank_drawdown_sets_sweep():
     assert len(rows) == 3
     assert {r["drawdown_set"] for r in rows} == {"A", "B", "C"}
     assert all("total_return" in r for r in rows)
+
+
+def test_rank_right_side_reserve_sweep():
+    from qtb.dual.experiments import rank_right_side_reserve
+
+    data = _mini_dataset(120)
+    rows = rank_right_side_reserve(data, tick_precise=False)
+    assert len(rows) == 3
+    assert {r["right_side_reserve_frac"] for r in rows} == {0.25, 0.30, 0.35}
+    assert all("total_return" in r for r in rows)

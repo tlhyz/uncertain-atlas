@@ -137,7 +137,7 @@ class TechFSM:
         if self.tier >= 2:
             long_budget += 0.05
         if self.reversal_confirmed:
-            long_budget += 0.28  # final 25-35% on confirmation
+            long_budget += p.right_side_reserve_frac
         long_budget = min(long_budget, 0.85)
 
         g_frac, d_frac = grid_mix_fractions(p.grid_mix, self._phase_key())  # type: ignore[arg-type]

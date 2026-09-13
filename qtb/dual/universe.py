@@ -158,6 +158,7 @@ class TechParams:
     reversal: ReversalRule = "R2"
     soxl_weight: float = 0.70
     snxx_weight: float = 0.30
+    right_side_reserve_frac: float = 0.28  # deployed on reversal confirm (scan 0.25–0.35)
     rebate: float = 0.75
 
     def label(self) -> str:
