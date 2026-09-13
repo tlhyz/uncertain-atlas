@@ -20,5 +20,6 @@
 
 ## 和相邻反模式
 
+- [initchainusage-decide-sold-as-bundled](initchainusage-decide-sold-as-bundled.md) 是 InitChain Usage app decide / empty set 就等于 Response 规则 / 已经改了集合，不是本页 InitChain Usage 正式三事 part 1 专用边界。
 - [initonce-sold-as-crash](initonce-sold-as-crash.md) 是 InitChain Usage 余量 bundled 三事，不是本页 InitChain Usage 正式三事专用边界。
 - [validatorupdate-sold-as-set](validatorupdate-sold-as-set.md) 是 InitChain 回了空名单就没有集合，不是本页 empty response 规则专用边界。

@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 496）
+
+- CometBFT InitChain Usage app decide / ValidatorUpdate from empty set 正式三事工作实例（官方 ABCI++ Methods InitChain Usage This allows the app to decide to accept the initial validator set or use a different one / Both InitChainRequest.Validators and InitChainResponse.Validators are ValidatorUpdate structs / So technically they both are updating the validator set from the empty set，实现 / InitChain Usage app decide / ValidatorUpdate from empty set 正式三事，不另写 19 节）：看见 app decide accept or different one 不是 Response empty/not empty 规则 interchangeable / InitChain Usage 余量 bundled interchangeable。看见 Both Validators are ValidatorUpdate 不是已经改了集合 interchangeable / 空名单就没有集合 interchangeable。看见 updating from empty set 不是空名单就没有集合 interchangeable / Response 规则 interchangeable。InitChain Usage app decide / ValidatorUpdate from empty set 正式三事不是不变量 495，也不是不变量 412 / 318 / 364 / 303。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 496；语料 C500；模式 name-the-initchainusage-decide-bar；反模式 initchainusage-decide-sold-as-bundled；L10.3 第 492 条。填 L4.4 / CometBFT 档案 InitChain Usage app decide / ValidatorUpdate from empty set 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 InitChain、怎样决定接受创世集合、怎样从空集合更新。不编博物馆页。不另写 19 节。不与 495 / 412 / 318 / 364 / 303 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 Response 规则 interchangeable / 已经改了集合 / 空名单就没有集合 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 495）
 
 - CometBFT InitChain Usage 正式三事工作实例（官方 ABCI++ Methods InitChain Usage Called once upon genesis / If InitChainResponse.Validators is empty the initial set will be InitChainRequest.Validators / If InitChainResponse.Validators is not empty it will be the initial set regardless of InitChainRequest.Validators，实现 / InitChain Usage 正式三事，不另写 19 节）：看见 Called once upon genesis 不是崩溃后再调 InitChain interchangeable / InitChain Usage 余量 bundled interchangeable。看见 Response Validators empty → Request Validators 不是空名单就没有集合 interchangeable / ValidatorUpdate 已经改了集合 interchangeable。看见 Response Validators not empty → Response regardless of Request 不是应用 can decide bundled interchangeable / empty response 规则 interchangeable。InitChain Usage 正式三事不是不变量 412，也不是不变量 318 / 320 / 364。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

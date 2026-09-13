@@ -443,6 +443,7 @@
 - [echousage-sold-as-flush](echousage-sold-as-flush.md)
 - [flushusage-sold-as-echo](flushusage-sold-as-echo.md)
 - [infousage-sold-as-handshakebundled](infousage-sold-as-handshakebundled.md)
+- [initchainusage-decide-sold-as-bundled](initchainusage-decide-sold-as-bundled.md)
 - [initchainusage-sold-as-bundled](initchainusage-sold-as-bundled.md)
 - [commitretaincaution-sold-as-pruning](commitretaincaution-sold-as-pruning.md)
 - [commitpersist-sold-as-finalize](commitpersist-sold-as-finalize.md)
