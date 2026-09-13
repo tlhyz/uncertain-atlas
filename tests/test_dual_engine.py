@@ -184,3 +184,13 @@ def test_rank_right_side_reserve_sweep():
     assert len(rows) == 3
     assert {r["right_side_reserve_frac"] for r in rows} == {0.25, 0.30, 0.35}
     assert all("total_return" in r for r in rows)
+
+
+def test_rank_soxl_snxx_weights_sweep():
+    from qtb.dual.experiments import rank_soxl_snxx_weights
+
+    data = _mini_dataset(120)
+    rows = rank_soxl_snxx_weights(data, tick_precise=False)
+    assert len(rows) == 3
+    assert {r["soxl_weight"] for r in rows} == {0.75, 0.70, 0.65}
+    assert all("total_return" in r for r in rows)

@@ -262,6 +262,39 @@ def rank_right_side_reserve(
     return rows
 
 
+def rank_soxl_snxx_weights(
+    data: DualDataset,
+    *,
+    soxl_weights: tuple[float, ...] = (0.75, 0.70, 0.65),
+    fill_mode: str = "base",
+    tick_precise: bool = False,
+) -> list[dict[str, Any]]:
+    """Sweep SOXL/SNXX book split (P3-07)."""
+    rows: list[dict[str, Any]] = []
+    for sw in soxl_weights:
+        snw = round(1.0 - sw, 2)
+        label = f"{int(sw * 100)}_{int(snw * 100)}"
+        print(f"[run] soxl_snxx_weight {label}...")
+        tp = TechParams(soxl_weight=sw, snxx_weight=snw)
+        r = run_dual_portfolio(
+            data,
+            DualParams(tech=tp),
+            name=f"soxl_snxx_{label}",
+            fill_mode=fill_mode,
+            tick_precise=tick_precise,
+        )
+        m = summarize_portfolio(r)
+        m["soxl_weight"] = sw
+        m["snxx_weight"] = snw
+        print(
+            f"[run] soxl_snxx_weight {label} done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"calmar={float(m.get('calmar', 0)):.2f}"
+        )
+        rows.append(m)
+    rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
+    return rows
+
+
 def run_binance_crypto_c1(
     *,
     start: str = "2024-09-01",

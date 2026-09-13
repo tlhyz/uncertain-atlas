@@ -1,0 +1,32 @@
+# P3-07 — SOXL/SNXX weight 75/25 70/30 65/35 on 65d tick
+interval: "1h"
+cache_only: true
+output_dir: outputs/experiments/dual_binance_tick_soxl_snxx_weights
+
+run_benchmarks: false
+run_sweep: false
+run_seed_windows: false
+run_plans: false
+run_similar_search: false
+run_stress: false
+run_independent_vs_unified: false
+run_short_structures: false
+run_short_init_rank: false
+run_drawdown_set_rank: false
+run_right_side_reserve_rank: false
+run_soxl_snxx_weight_rank: true
+soxl_snxx_weights: [0.75, 0.70, 0.65]
+run_leverage_rank: false
+run_grid_atr_rank: false
+run_fill_modes: false
+fill_mode: base
+
+data_start: "2026-07-09"
+data_end: "2026-09-11"
+download_trades: true
+tick_precise: true
+run_binance_c1: false
+
+tech_book: 6500
+crypto_book: 2500
+global_reserve: 1000

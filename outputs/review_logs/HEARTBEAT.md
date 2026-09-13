@@ -286,4 +286,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T21:10Z | timer research-continue | P3-03 1/4 directional ~21min
 2026-09-13T21:10Z | P3-06 prep | right_side_reserve_frac + rank + config + test
 2026-09-13T21:10Z | checkpoint 2110Z | pytest 137 pass; P3-04/P3-06 queued
+2026-09-13T21:20Z | timer research-continue | **P3-03 directional DONE -58.70%**; grid 2/4
+2026-09-13T21:20Z | P3-07 prep | rank_soxl_snxx_weights + config + test
+2026-09-13T21:20Z | checkpoint 2120Z | pytest 138 pass
 ```

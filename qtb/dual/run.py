@@ -24,6 +24,7 @@ from .experiments import (
     rank_short_init,
     rank_drawdown_sets,
     rank_right_side_reserve,
+    rank_soxl_snxx_weights,
     rank_short_structures,
     rank_grid_atr,
 )
@@ -94,6 +95,7 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "run_short_init_rank": False,
         "run_drawdown_set_rank": False,
         "run_right_side_reserve_rank": False,
+        "run_soxl_snxx_weight_rank": False,
         "run_leverage_rank": True,
         "run_grid_atr_rank": True,
         "run_fill_modes": True,
@@ -181,6 +183,16 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         print(f"[run] right side reserve rank {list(levels)}...")
         payload["right_side_reserve_rank"] = rank_right_side_reserve(
             data, levels=levels, fill_mode=str(cfg.get("fill_mode") or "base"), tick_precise=tick_precise,
+        )
+
+    if cfg.get("run_soxl_snxx_weight_rank", False):
+        weights = tuple(float(x) for x in (cfg.get("soxl_snxx_weights") or [0.75, 0.70, 0.65]))
+        print(f"[run] SOXL/SNXX weight rank {list(weights)}...")
+        payload["soxl_snxx_weight_rank"] = rank_soxl_snxx_weights(
+            data,
+            soxl_weights=weights,
+            fill_mode=str(cfg.get("fill_mode") or "base"),
+            tick_precise=tick_precise,
         )
 
     if cfg.get("run_leverage_rank", True):
