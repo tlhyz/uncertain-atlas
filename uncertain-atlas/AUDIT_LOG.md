@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2375 | 高 | 看见 The transaction may come from an external user / 看见能来自外部用户 会被写成已经 CheckTx_Recheck 那种内存池再验，或当成已经填了 tx 字节就知道是 New | 官方 CheckTx Usage：The transaction may come from an external user or another node |
+| A2376 | 高 | 看见 The transaction may come from another node / 看见能来自另一节点 会被写成已经流言验过，或当成已经从池里删掉 / 提案收了 / CheckTx 过了就永远有效 | 官方 CheckTx Usage：The transaction may come from an external user or another node |
+| A2377 | 高 | 看见 may come from an external user or another node / 看见送来了 会被写成已经保证不重放，或当成已经过了 CheckTx 就有应用级重放保护 / CheckTx 守卫余量 bundled interchangeable | 官方 CheckTx Usage：The transaction may come from an external user or another node；app requirements Replay Protection |
+| A2378 | 中 | 怎样做索引器 / 怎样挑邻居 / 怎样写 CheckTx 重放谓词 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2379 | 记录 | 会与 405 / 484 / 313 / 301 / 391 糊成「看见送来了就已经是 Recheck、已经从池里删掉、已经保证不重放」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx Usage tx source 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Recheck / 已经从池里删掉 / 已经保证不重放 标成另一对象 |
+
 | A2370 | 高 | 看见 Query for data from the application at current or past height / 看见查当前或过去高度 会被写成已经是 QueryState，或当成已经复制到各节点 / QueryState 就是 ExecuteTxState | 官方 Query Usage：Query for data from the application at current or past height |
 | A2371 | 高 | 看见 Optionally return Merkle proof / 看见可选回默克尔证明 会被写成已经对上 AppHash，或当成已经 Query 请求 prove 那种能回就回 interchangeable / Finalize Query proofs anchored 交差 | 官方 Query Usage：Optionally return Merkle proof |
 | A2372 | 高 | 看见 Merkle proof includes self-describing type / 看见证明带自描述 type、好支持多种默克尔树和编码 会被写成已经是 ProofOp.type 按键查，或当成已经 Query 回了 Proof 就对上 AppHash / CheckTx 守卫余量 bundled interchangeable | 官方 Query Usage：Merkle proof includes self-describing `type` field to support many types of Merkle trees and encoding formats |

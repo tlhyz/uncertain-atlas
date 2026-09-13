@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 488）
+
+- CometBFT CheckTx Usage tx source 正式三事工作实例（官方 ABCI++ Methods CheckTx Usage The transaction may come from an external user or another node，实现 / CheckTx Usage tx source 正式三事，不另写 19 节）：看见 may come from external user 不是 CheckTx_Recheck / tx 栏就知道 New。看见 may come from another node 不是已经从池里删掉 / CheckTx 过了就永远有效。看见 external user or another node 不是已经保证不重放 / CheckTx 守卫 bundled interchangeable。CheckTx Usage tx source 正式三事不是不变量 405，也不是不变量 484，也不是不变量 313。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 488；语料 C492；模式 name-the-chktxsource-bar；反模式 chktxsource-sold-as-replay；L10.3 第 484 条。填 L4.4 / CometBFT 档案 CheckTx Usage tx source 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做索引器、怎样挑邻居、怎样写 CheckTx 重放谓词。不编博物馆页。不另写 19 节。不与 405 / 484 / 313 / 301 / 391 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。Recheck / 已经从池里删掉 / 已经保证不重放 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 487）
 
 - CometBFT Query Usage 正式三事工作实例（官方 ABCI++ Methods Query Usage Query for data at current or past height / Optionally return Merkle proof / Merkle proof self-describing type，实现 / Query Usage 正式三事，不另写 19 节）：看见 Query for data at current or past height 不是已经是 QueryState / 已经复制到各节点。看见 Optionally return Merkle proof 不是已经对上 AppHash / prove 请求栏 interchangeable。看见 Merkle proof self-describing type 不是 ProofOp 按键查 / CheckTx 守卫余量 bundled interchangeable。Query Usage 正式三事不是不变量 371，也不是不变量 383，也不是不变量 325。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
