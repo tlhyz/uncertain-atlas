@@ -35,11 +35,11 @@
 - **Contradicting:** None to date
 - **Implication:** Do not deploy initial Short without right-side confirmation
 
-### C-06: Crypto grid FSM on C1 tick shows no leverage sweet spot (SOL/ETH)
-- **Confidence:** MEDIUM (BTC scan pending P2-02 restart)
-- **Supporting:** P2-03 ETH all lev ~-87.5%; P2-04 SOL all lev ~-88.0%; tick-precise Base fill
+### C-06: Crypto grid FSM on C1 tick — NO EDGE (all majors, all param sweeps)
+- **Confidence:** **HIGH** (P2 phase complete 2026-09-13)
+- **Supporting:** P2-02 BTC lev 1.25–2.0x all ~-87%; P2-03 ETH; P2-04 SOL; P2-05 ATR step; P2-06 ATR range ±3/5/7; P2-07 grid mix 80_20→dynamic; P2-14 C1 tick baseline -87.30%; tick-precise Base fill
 - **Contradicting:** LEDGER-002 bar-mode PERP>ETF — **different engine/window/config**; does not overturn A/B bar evidence
-- **Implication:** Do not deploy current crypto grid FSM on C1 parameters; investigate accounting floor (~12% equity)
+- **Implication:** Do not deploy current crypto grid FSM on C1 parameters; investigate accounting floor (~12% equity); stop C1 param sweeps
 
 ---
 

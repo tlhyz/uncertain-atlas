@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | checkpoint 1630Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1630Z.md |
 | 2026-09-13 | checkpoint 1620Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1620Z.md |
 | 2026-09-13 | checkpoint 1610Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1610Z.md |
 | 2026-09-13 | P2-07 BTC grid mix | FAIL | outputs/review_logs/2026-09-13_P2-07_btc_grid_mix_FAIL.md |

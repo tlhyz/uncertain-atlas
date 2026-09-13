@@ -216,4 +216,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T16:10Z | P3-01 started | tmux p3-01-dual-tick; dual 65d tick re-run
 2026-09-13T16:20Z | timer research-continue | pytest 131 pass; P3-01 benchmarks running
 2026-09-13T16:20Z | checkpoint 1620Z | P2 complete; P3-01 ETA ~19:30Z
+2026-09-13T16:30Z | timer research-continue | pytest 131 pass; C-06 upgraded HIGH
+2026-09-13T16:30Z | checkpoint 1630Z | P3-01 benchmarks ~40min
 ```
