@@ -425,6 +425,8 @@
 - [procreqrest-sold-as-extreq](procreqrest-sold-as-extreq.md)
 - [extvitable-sold-as-usage](extvitable-sold-as-usage.md)
 - [finreq-sold-as-procreq](finreq-sold-as-procreq.md)
+- [extviusage-sold-as-exposed](extviusage-sold-as-exposed.md)
+- [extappgen-sold-as-signed](extappgen-sold-as-signed.md)
 - [extwhenformal-sold-as-broadcast](extwhenformal-sold-as-broadcast.md)
 - [extusage-sold-as-deterministic](extusage-sold-as-deterministic.md)
 - [verifyreqbar-sold-as-pubkey](verifyreqbar-sold-as-pubkey.md)
