@@ -22,3 +22,4 @@
 
 - [infousage-sold-as-handshakebundled](infousage-sold-as-handshakebundled.md) 是 Info Usage 正式三事 part 1 就等于 QueryState / bundled / persist，不是本页 part 2 专用边界。
 - [info-sold-as-handshake](info-sold-as-handshake.md) 是 Info 握手 bundled 三事，不是本页 Methods Info Usage last_block persist 单句专用边界。
+- [infousage-defaultlane-sold-as-priorityzero](infousage-defaultlane-sold-as-priorityzero.md) 是 Info Usage default_lane in table / priority 0 reserved 正式二事 part 3，不是本页 part 2 专用边界。

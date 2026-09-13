@@ -445,6 +445,7 @@
 - [infousage-sold-as-handshakebundled](infousage-sold-as-handshakebundled.md)
 - [initchainusage-decide-sold-as-bundled](initchainusage-decide-sold-as-bundled.md)
 - [infousage-persist-sold-as-committed](infousage-persist-sold-as-committed.md)
+- [infousage-defaultlane-sold-as-priorityzero](infousage-defaultlane-sold-as-priorityzero.md)
 - [initchainusage-sold-as-bundled](initchainusage-sold-as-bundled.md)
 - [commitretaincaution-sold-as-pruning](commitretaincaution-sold-as-pruning.md)
 - [commitpersist-sold-as-finalize](commitpersist-sold-as-finalize.md)

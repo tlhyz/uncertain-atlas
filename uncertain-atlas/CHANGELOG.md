@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 498）
+
+- CometBFT Info Usage default_lane in table / priority 0 reserved 正式二事 part 3 工作实例（官方 ABCI++ Methods Info Usage default_lane has to be one of the identifiers defined in lane_priorities / The lowest priority a lane can have is 1 / 0 is reserved for empty lane_id in ResponseCheckTx，实现 / Info Usage default_lane in table / priority 0 reserved 正式二事 part 3，不另写 19 节）：看见 default_lane must be in lane_priorities 不是 Info 车道 bundled（367） interchangeable / empty iff（497） interchangeable / CheckTx lane_id in range interchangeable。看见 priority 0 reserved for empty lane_id 不是 Info 车道 bundled（367） interchangeable / CheckTx lane_id default lane（482） interchangeable / 已经排了优先。Info Usage part 3 不是不变量 497，也不是不变量 367 / 482 / 381 / 317。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 498；语料 C502；模式 name-the-infousage-defaultlane-bar；反模式 infousage-defaultlane-sold-as-priorityzero；L10.3 第 494 条。填 L4.4 / CometBFT 档案 Info Usage default_lane in table / priority 0 reserved 正式二事 part 3 / 实现表 / 05b / 共识专题。
+- 不抄怎样填 lane_priorities、怎样选 default_lane、怎样写 lane_id。不编博物馆页。不另写 19 节。不与 497 / 367 / 482 / 381 / 317 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 Info 车道 bundled interchangeable / 已经选型 / 已经排了优先 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 497）
 
 - CometBFT Info Usage last_block persisted during Commit / lane_priorities 正式三事 part 2 工作实例（官方 ABCI++ Methods Info Usage CometBFT expects last_block_app_hash and last_block_height updated and persisted during Commit / The application does not have to define lane_priorities / lane_priorities is empty if and only if default_lane is empty，实现 / Info Usage last_block persisted during Commit / lane_priorities 正式三事 part 2，不另写 19 节）：看见 last_block persisted during Commit 不是 Info 握手 bundled（370） interchangeable / 已经 Commit 交差 / Info 回包 last_block 栏 interchangeable。看见 does not have to define lane_priorities 不是 Info 车道 bundled（367） interchangeable / 已经排了优先 / CheckTx lane_id default lane interchangeable。看见 lane_priorities empty iff default_lane empty 不是 Info 车道 bundled（367） interchangeable / 已经选型 / default_lane must be in lane_priorities interchangeable。Info Usage part 2 不是不变量 494，也不是不变量 370 / 389 / 481 / 367 / 482 / 147 / 320。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
