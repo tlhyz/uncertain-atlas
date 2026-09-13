@@ -205,6 +205,32 @@ def rank_short_init(
     return rows
 
 
+def rank_drawdown_sets(
+    data: DualDataset,
+    *,
+    sets: tuple[str, ...] = ("A", "B", "C"),
+    fill_mode: str = "base",
+    tick_precise: bool = False,
+) -> list[dict[str, Any]]:
+    """Sweep drawdown tier thresholds A/B/C (Q-tech-1 partial / P3-04)."""
+    rows: list[dict[str, Any]] = []
+    for dd in sets:
+        print(f"[run] drawdown_set {dd}...")
+        tp = TechParams(drawdown_set=dd)  # type: ignore[arg-type]
+        r = run_dual_portfolio(
+            data, DualParams(tech=tp), name=f"drawdown_set_{dd}", fill_mode=fill_mode, tick_precise=tick_precise,
+        )
+        m = summarize_portfolio(r)
+        m["drawdown_set"] = dd
+        print(
+            f"[run] drawdown_set {dd} done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"calmar={float(m.get('calmar', 0)):.2f}"
+        )
+        rows.append(m)
+    rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
+    return rows
+
+
 def run_binance_crypto_c1(
     *,
     start: str = "2024-09-01",

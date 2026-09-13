@@ -164,3 +164,13 @@ def test_rank_short_structures_sweep():
     assert len(rows) == 4
     assert {r["short_structure"] for r in rows} == {"directional", "grid", "70_30", "50_50"}
     assert all("total_return" in r for r in rows)
+
+
+def test_rank_drawdown_sets_sweep():
+    from qtb.dual.experiments import rank_drawdown_sets
+
+    data = _mini_dataset(120)
+    rows = rank_drawdown_sets(data, tick_precise=False)
+    assert len(rows) == 3
+    assert {r["drawdown_set"] for r in rows} == {"A", "B", "C"}
+    assert all("total_return" in r for r in rows)

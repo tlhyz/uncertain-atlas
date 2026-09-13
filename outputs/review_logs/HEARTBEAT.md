@@ -277,4 +277,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T21:10Z | P3-03 prep | rank_short_structures logging + config + test
 2026-09-13T21:10Z | P3-03 started | tmux p3-03-short-structures
 2026-09-13T21:10Z | checkpoint 2110Z | 4 structures ~2h ETA
+2026-09-13T21:20Z | timer research-continue | P3-03 1/4 directional running
+2026-09-13T21:20Z | P3-04 prep | rank_drawdown_sets + config + test
+2026-09-13T21:20Z | checkpoint 2120Z | pytest 134 pass; P3-04 queued
 ```

@@ -22,6 +22,7 @@ from .experiments import (
     run_stress_leverage,
     rank_leverage,
     rank_short_init,
+    rank_drawdown_sets,
     rank_short_structures,
     rank_grid_atr,
 )
@@ -90,6 +91,7 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "run_independent_vs_unified": True,
         "run_short_structures": True,
         "run_short_init_rank": False,
+        "run_drawdown_set_rank": False,
         "run_leverage_rank": True,
         "run_grid_atr_rank": True,
         "run_fill_modes": True,
@@ -163,6 +165,13 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         print(f"[run] short init rank {list(levels)}...")
         payload["short_init_rank"] = rank_short_init(
             data, levels=levels, fill_mode=str(cfg.get("fill_mode") or "base"), tick_precise=tick_precise,
+        )
+
+    if cfg.get("run_drawdown_set_rank", False):
+        sets = tuple(str(x) for x in (cfg.get("drawdown_sets") or ["A", "B", "C"]))
+        print(f"[run] drawdown set rank {list(sets)}...")
+        payload["drawdown_set_rank"] = rank_drawdown_sets(
+            data, sets=sets, fill_mode=str(cfg.get("fill_mode") or "base"), tick_precise=tick_precise,
         )
 
     if cfg.get("run_leverage_rank", True):
