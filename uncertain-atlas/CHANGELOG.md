@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 483）
+
+- CometBFT OfferSnapshot Usage trust 正式三事工作实例（官方 ABCI++ Methods OfferSnapshot Usage Only AppHash can be trusted / Any other data can be spoofed employ additional verification / verified AppHash automatically checked at end of restoration，实现 / OfferSnapshot Usage trust 正式三事，不另写 19 节）：看见 Only AppHash can be trusted 不是 Snapshot 字段都可信 / hash 比对就够。看见 Any other data can be spoofed / employ additional verification 不是 hash 比对就够 / 已经防 DoS 交差。看见 verified AppHash automatically checked at end 不是装块时就 Info 对了 / 已经切进共识。OfferSnapshot Usage trust 正式三事不是不变量 38，也不是不变量 332，也不是不变量 323。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 483；语料 C487；模式 name-the-offersnaptrust-bar；反模式 offersnaptrust-sold-as-metadata；L10.3 第 479 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage trust 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做增量验、怎样封邻居。不编博物馆页。不另写 19 节。不与 38 / 332 / 323 / 401 / 368 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。Snapshot 字段都可信 / hash 比对就够 / 装块时就 Info 对了 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 482）
 
 - CometBFT CheckTx Usage lane_id 正式二事工作实例（官方 ABCI++ Methods CheckTx Usage empty lane_id assigned to default lane / lane_id in ResponseInfo range，实现 / CheckTx Usage lane_id 正式二事，不另写 19 节）：看见 empty lane_id 不是 priority 0 留给不设道 / 已经从池里删掉。看见 assigned to default lane 不是 default_lane 标识 / 已经排了优先。看见 lane_id in ResponseInfo range 不是 Info 表选型 / CheckTx 回包栏 interchangeable。CheckTx Usage lane_id 正式二事不是不变量 367，也不是不变量 381，也不是不变量 317。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

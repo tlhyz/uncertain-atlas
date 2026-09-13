@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2350 | 高 | 看见 Only AppHash can be trusted / light client verified / 看见只有 AppHash 可信任 会被写成已经 Snapshot.hash / metadata / 五个字段都对上就可信，或当成已经 ListSnapshots 回了本地清单就可信 | 官方 OfferSnapshot Usage：Only AppHash can be trusted, as it has been verified by the light client |
+| A2351 | 高 | 看见 Any other data can be spoofed / employ additional verification / avoid denial-of-service attacks / 看见其它数据可被伪造、应用还应另做验真防 DoS 会被写成已经 hash / metadata 比对就够，或当成已经 Snapshot Verification 增量验（332） interchangeable | 官方 OfferSnapshot Usage：Any other data can be spoofed … employ additional verification schemes to avoid denial-of-service attacks |
+| A2352 | 高 | 看见 verified AppHash automatically checked at the end of snapshot restoration / 看见装回结束时自动核对 会被写成已经在装 chunk 过程中 Info 对了（332），或当成已经 Transition to Consensus（323） interchangeable | 官方 OfferSnapshot Usage：The verified AppHash is automatically checked against the restored application at the end of snapshot restoration |
+| A2353 | 中 | 怎样做增量验 / 怎样封邻居 / 怎样配轻客户端 RPC 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2354 | 记录 | 会与 38 / 332 / 323 / 401 / 368 / 396 糊成「看见 Offer 了 AppHash 就已经全信、已经防 DoS、已经装完对了」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot Usage trust 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Snapshot 字段都可信 / hash 比对就够 / 装块时就 Info 对了 标成另一对象 |
+
 | A2345 | 高 | 看见 lane_id 是空字符串 / 看见应用没在 CheckTx 回包里设道 会被写成已经 priority 0 留给不设道（367），或当成已经从池里删掉 / 已经没进池 | 官方 CheckTx Usage：If lane_id is an empty string … the transaction will be assigned to the default lane |
 | A2346 | 高 | 看见 assigned to the default lane / 看见会放进默认道 会被写成已经是 default_lane 那个标识本身写进了回包，或当成已经排了优先 / 已经进了块 | 官方 CheckTx Usage：assigned to the default lane |
 | A2347 | 高 | 看见 lane_id 的值必须在 ResponseInfo 里定义过的车道范围内 / 看见填了道 会被写成已经在 Info 回了 lane_priorities / default_lane 就算选型交差，或当成已经 CheckTx 回包栏（381） interchangeable | 官方 CheckTx Usage：The value of lane_id has to be in the range of lanes defined by the application in ResponseInfo |
