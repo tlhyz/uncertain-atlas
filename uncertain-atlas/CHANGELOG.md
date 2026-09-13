@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 504）
+
+- CometBFT PrepareProposal Usage no checks / crash / nondet 正式三事工作实例（官方 ABCI++ Methods PrepareProposal Usage CometBFT does NOT provide additional validity checks / fails to validate PrepareProposalResponse → crash / implementation MAY be non-deterministic，实现 / PrepareProposal Usage no checks / crash / nondet 正式三事，不另写 19 节）：看见 no additional validity checks 不是已经验过重复 interchangeable / 已经有应用级重放保护 interchangeable。看见 crash on invalid response 不是 Process REJECT interchangeable / 已经 prevote nil interchangeable。看见 MAY be non-deterministic 不是必须确定 interchangeable / 已经和 Process MUST deterministic interchangeable。PrepareProposal Usage no checks / crash / nondet 正式三事不是不变量 357，也不是不变量 338 / 451 / 430。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 504；语料 C508；模式 name-the-prepareusage-nochecks-bar；反模式 prepareusage-nochecks-sold-as-bundled；L10.3 第 500 条。填 L4.4 / CometBFT 档案 PrepareProposal Usage no checks / crash / nondet 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做再验 Prepare 回包、怎样查重复、怎样写 Prepare 确定性。不编博物馆页。不另写 19 节。不与 357 / 338 / 451 / 430 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 Prepare 回包校验 bundled interchangeable / 已经验过重复 interchangeable / 必须确定 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 503）
 
 - CometBFT PrepareProposal Usage raw proposal / MUST remove 正式三事工作实例（官方 ABCI++ Methods PrepareProposal Usage preliminary txs called raw proposal / Application can modify this set / MAY configure txs exceeding max_tx_bytes / MUST remove if size > max_tx_bytes，实现 / PrepareProposal Usage raw proposal / MUST remove 正式三事，不另写 19 节）：看见 raw proposal / can modify this set 不是 Prepare 改列表 bundled（355） interchangeable / 已经只有 raw proposal interchangeable。看见 MAY configure exceeding 不是 Req 2 bundled（345） interchangeable / 已经能回超限列表 interchangeable。看见 MUST remove if > max_tx_bytes 不是引擎会帮你裁 interchangeable / 已经从内存池删掉 interchangeable。PrepareProposal Usage raw proposal / MUST remove 正式三事不是不变量 355，也不是不变量 345 / 423 / 453。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
