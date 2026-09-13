@@ -21,4 +21,5 @@
 ## 和相邻反模式
 
 - [info-sold-as-handshake](info-sold-as-handshake.md) 是 Info 握手 bundled 三事，不是本页 Info Usage 正式三事专用边界。
+- [infousage-persist-sold-as-committed](infousage-persist-sold-as-committed.md) 是 Info Usage last_block persisted during Commit / lane_priorities 正式三事 part 2，不是本页 Info Usage 正式三事 part 1 专用边界。
 - [querystate-sold-as-execute](querystate-sold-as-execute.md) 是 QueryState 就已经是 ExecuteTxState，不是本页 Return information about application state 专用边界。

@@ -339,6 +339,7 @@
 - [name-the-flushusage-bar](name-the-flushusage-bar.md)
 - [name-the-infousage-bar](name-the-infousage-bar.md)
 - [name-the-initchainusage-decide-bar](name-the-initchainusage-decide-bar.md)
+- [name-the-infousage-persist-bar](name-the-infousage-persist-bar.md)
 - [name-the-initchainusage-bar](name-the-initchainusage-bar.md)
 - [name-the-commitretaincaution-bar](name-the-commitretaincaution-bar.md)
 - [name-the-commitpersist-bar](name-the-commitpersist-bar.md)

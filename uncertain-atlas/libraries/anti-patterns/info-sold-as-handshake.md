@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [infousage-sold-as-handshakebundled](infousage-sold-as-handshakebundled.md) 是 Info Usage 正式三事就等于 QueryState / bundled handshake / 已经 persist，不是本页 Info 握手 bundled 三事。
+- [infousage-persist-sold-as-committed](infousage-persist-sold-as-committed.md) 是 Info Usage last_block persisted during Commit / lane_priorities 正式三事 part 2，不是本页 Info 握手 bundled 三事。
 - [querystate-sold-as-execute](querystate-sold-as-execute.md) 是 QueryState 就已经是 ExecuteTxState，不是本页这种 Info 用来握手对齐不是已经是快照重放。
 - [apphash-sold-as-this-block](apphash-sold-as-this-block.md) 是本头 AppHash 就已经是本高度交差，不是本页这种 app_version 进每块头不是已经印进本头 AppHash。
 - [crashsteps-sold-as-committed](crashsteps-sold-as-committed.md) 是崩溃三步就已经 Commit，不是本页这种 last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差。
