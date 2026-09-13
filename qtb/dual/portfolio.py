@@ -365,8 +365,9 @@ def run_dual_portfolio(
         _mk_leg("soxl_long_dir", "tech", "SOXL", "long", "directional", tech_wallet * 0.25),
         _mk_leg("snxx_long", "tech", "SNXX", "long", "directional", tech_reserve),
     ]
-    crypto_caps = CRYPTO_BOOK / 3.0
-    for sym in ("BTC", "ETH", "SOL"):
+    crypto_symbols = tuple(s for s in ("BTC", "ETH", "SOL") if s in data.crypto)
+    crypto_caps = CRYPTO_BOOK / max(len(crypto_symbols), 1)
+    for sym in crypto_symbols:
         legs.append(_mk_leg(f"{sym.lower()}_long", "crypto", sym, "long", "grid", crypto_caps))
 
     total_eq = np.full(n, TOTAL_CAPITAL)
@@ -384,7 +385,7 @@ def run_dual_portfolio(
             "high": data.crypto[s].bars["high"].to_numpy(float),
             "low": data.crypto[s].bars["low"].to_numpy(float),
         }
-        for s in ("BTC", "ETH", "SOL")
+        for s in crypto_symbols
     }
 
     def _bar_trades_for(md, bar_ts: pd.Timestamp) -> pd.DataFrame | None:
@@ -421,7 +422,7 @@ def run_dual_portfolio(
             legs[2].target_notional = dir_tgt
             legs[3].target_notional = snxx_tgt
 
-            for sym in ("BTC", "ETH", "SOL"):
+            for sym in crypto_symbols:
                 leg = next(l for l in legs if l.symbol == sym)
                 ce = crypto_exp.get(sym)
                 if ce:
@@ -466,38 +467,39 @@ def run_dual_portfolio(
         if i >= warm:
             qv = float(soxl["quote_volume"].iloc[i]) if "quote_volume" in soxl.columns else 0.0
             atr = float(atr_s[i])
-            for leg in legs[:4]:
-                if leg.symbol == "SOXL":
-                    bar_trades = soxl_trades
-                    mark_px = px
-                    o, h, l = float(soxl["open"].iloc[i]), float(soxl["high"].iloc[i]), float(soxl["low"].iloc[i])
-                else:
-                    bar_trades = snxx_trades
-                    mark_px = float(snxx_c[i])
-                    o, h, l = float(snxx["open"].iloc[i]), float(snxx["high"].iloc[i]), float(snxx["low"].iloc[i])
-                if tick_precise and (bar_trades is None or bar_trades.empty):
-                    raise RuntimeError(
-                        f"tick_precise: no aggTrades in bar {bar_ts_soxl if leg.symbol == 'SOXL' else bar_ts_snxx} "
-                        f"for {leg.symbol} — refuse bar approximation"
-                    )
-                if leg.mode == "grid":
-                    _process_grid_fills(
-                        leg, i, o, h, l, mark_px, qv if leg.symbol == "SOXL" else float(snxx["quote_volume"].iloc[i]),
-                        atr if leg.symbol == "SOXL" else float(
-                            rolling_atr(snxx["high"].to_numpy(float), snxx["low"].to_numpy(float), snxx_c, 24)[i]
-                        ),
-                        params.tech.grid_atr_step, params.tech.grid_atr_range,
-                        fee, fill, reanchor,
-                        bar_trades=bar_trades,
-                        tick_precise=tick_precise,
-                    )
-                if bar_trades is not None and not bar_trades.empty:
-                    adjust_notional_via_ticks(
-                        leg.state, leg.direction, leg.leverage,
-                        leg.target_notional, bar_trades, fee, fill,
-                    )
-                elif not tick_precise:
-                    _rebalance_leg(leg, i, mark_px, leg.target_notional, fee, fill)
+            if not tech_disabled:
+                for leg in legs[:4]:
+                    if leg.symbol == "SOXL":
+                        bar_trades = soxl_trades
+                        mark_px = px
+                        o, h, l = float(soxl["open"].iloc[i]), float(soxl["high"].iloc[i]), float(soxl["low"].iloc[i])
+                    else:
+                        bar_trades = snxx_trades
+                        mark_px = float(snxx_c[i])
+                        o, h, l = float(snxx["open"].iloc[i]), float(snxx["high"].iloc[i]), float(snxx["low"].iloc[i])
+                    if tick_precise and (bar_trades is None or bar_trades.empty):
+                        raise RuntimeError(
+                            f"tick_precise: no aggTrades in bar {bar_ts_soxl if leg.symbol == 'SOXL' else bar_ts_snxx} "
+                            f"for {leg.symbol} — refuse bar approximation"
+                        )
+                    if leg.mode == "grid":
+                        _process_grid_fills(
+                            leg, i, o, h, l, mark_px, qv if leg.symbol == "SOXL" else float(snxx["quote_volume"].iloc[i]),
+                            atr if leg.symbol == "SOXL" else float(
+                                rolling_atr(snxx["high"].to_numpy(float), snxx["low"].to_numpy(float), snxx_c, 24)[i]
+                            ),
+                            params.tech.grid_atr_step, params.tech.grid_atr_range,
+                            fee, fill, reanchor,
+                            bar_trades=bar_trades,
+                            tick_precise=tick_precise,
+                        )
+                    if bar_trades is not None and not bar_trades.empty:
+                        adjust_notional_via_ticks(
+                            leg.state, leg.direction, leg.leverage,
+                            leg.target_notional, bar_trades, fee, fill,
+                        )
+                    elif not tick_precise:
+                        _rebalance_leg(leg, i, mark_px, leg.target_notional, fee, fill)
 
             for leg in legs[4:]:
                 md = data.crypto.get(leg.symbol)

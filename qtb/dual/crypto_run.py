@@ -72,7 +72,9 @@ def _rank_crypto_leverage(
             fill_mode=fill_mode,
             tick_precise=tick_precise,
             crypto_tick_fills=True,
+            tech_tick_fills=False,
             tech_disabled=True,
+            tech_tick_only=False,
         )
         m = summarize_portfolio(r, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
         m["leverage"] = lev
@@ -101,7 +103,9 @@ def _rank_crypto_grid(
                 fill_mode=fill_mode,
                 tick_precise=tick_precise,
                 crypto_tick_fills=True,
+                tech_tick_fills=False,
                 tech_disabled=True,
+                tech_tick_only=False,
             )
             m = summarize_portfolio(r, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
             m["grid_atr_step"] = step

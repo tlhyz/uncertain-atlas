@@ -175,15 +175,24 @@ def load_binance_market(
 
     n_rows = 0
     trades_lazy = False
+    t0 = pd.Timestamp(start, tz="UTC").date()
+    t1 = pd.Timestamp(end, tz="UTC").date()
     if download_trades:
-        t0 = pd.Timestamp(start, tz="UTC").date()
-        t1 = pd.Timestamp(end, tz="UTC").date()
         d = t0
         while d <= t1:
             day_df = fetch_agg_trades_day(bn, d, cache_only=cache_only)
             n_rows += len(day_df)
             d += timedelta(days=1)
         trades_lazy = True
+    elif cache_only:
+        from qtb.data.binance_futures import trades_day_cache_path
+
+        d = t0
+        while d <= t1:
+            if trades_day_cache_path(bn, d).exists():
+                trades_lazy = True
+                break
+            d += timedelta(days=1)
 
     funding = _fetch_binance_funding(bn, start, end, cache_only=cache_only)
     bars = _attach_binance_funding(bars, funding)

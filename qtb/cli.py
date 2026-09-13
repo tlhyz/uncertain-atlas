@@ -91,6 +91,7 @@ def build_parser() -> argparse.ArgumentParser:
     crypto.add_argument("--cache-only", action="store_true")
     crypto.add_argument("--smoke", action="store_true", help="BTC-only single-leverage fast validation")
     crypto.add_argument("--output-dir", default="")
+    crypto.add_argument("--symbols", default="", help="comma list override, e.g. BTC or BTC,ETH")
     return p
 
 
@@ -242,6 +243,8 @@ def cmd_crypto(args: argparse.Namespace) -> int:
         cfg["enabled"] = True
     if args.output_dir:
         cfg.setdefault("output", {})["dir"] = args.output_dir
+    if getattr(args, "symbols", ""):
+        cfg.setdefault("data", {})["symbols"] = [s.strip().upper() for s in args.symbols.split(",") if s.strip()]
     run_crypto_job(cfg)
     return 0
 
