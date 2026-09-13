@@ -70,4 +70,10 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T05:00Z | P2-02 running | ~137min (~2h17m); may finish next cycle
 2026-09-13T05:00Z | P2-03 running | ETH 1.25x ~9min post-fix
 2026-09-13T05:00Z | P2-04 running | SOL 1.25x ~9min
+2026-09-13T05:10Z | timer research-continue | pytest 126 pass
+2026-09-13T05:10Z | P2-05 in_progress | BTC grid ATR step sweep started tmux p2-05-btc-grid-atr
+2026-09-13T05:10Z | P2-04 interim | SOL 1.25x done return=-88.01% calmar=-2.52; 1.5x running
+2026-09-13T05:10Z | P1-11 running | ~208min (~3h28m); DUAL_REPORT pending
+2026-09-13T05:10Z | P2-02 running | ~147min (~2h27m); still no CRYPTO_REPORT
+2026-09-13T05:10Z | P2-03 running | ETH 1.25x ~19min
 ```

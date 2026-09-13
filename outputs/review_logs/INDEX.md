@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P2-05 BTC grid ATR | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-05_btc_grid_atr_IN_PROGRESS.md |
 | 2026-09-13 | P2-05 grid config | PREP | outputs/review_logs/2026-09-13_P2-05_grid_config_PREP_0500Z.md |
 | 2026-09-13 | P2-04 SOL leverage | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-04_sol_leverage_IN_PROGRESS.md |
 | 2026-09-13 | P2-03 ETH leverage | FAIL→restart | outputs/review_logs/2026-09-13_P2-03_eth_leverage_FAIL_data_gap.md |
