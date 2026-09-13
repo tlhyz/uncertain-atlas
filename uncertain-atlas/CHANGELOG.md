@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 508）
+
+- CometBFT ExtendVote When call / synchronous 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 2 calls ExtendVote with v in ExtendVoteRequest / The call is synchronous / step 2 after lock values before return extension bytes，实现 / ExtendVote When call / synchronous 正式三事，不另写 19 节）：看见 calls ExtendVote with v 不是 lock values bundled（507） interchangeable / 已经 step 1 before call interchangeable。看见 The call is synchronous 不是 ExtendVote 何时调用 bundled（361） interchangeable / 已经能在返回后再改扩展 interchangeable。看见 step 2 before return extension 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经广播 Precommit interchangeable。ExtendVote When call / synchronous 正式三事不是不变量 507，也不是不变量 361 / 438 / 409。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 508；语料 C512；模式 name-the-extwhen-call-bar；反模式 extwhen-call-sold-as-bundled；L10.3 第 504 条。填 L4.4 / CometBFT 档案 ExtendVote When call / synchronous 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做填 ExtendVoteRequest、怎样等回包、怎样写扩展。不编博物馆页。不另写 19 节。不与 507 / 361 / 438 / 409 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 lock values bundled interchangeable / ExtendVote 何时调用 bundled interchangeable / ExtendVote When 正式流程 bundled interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 507）
 
 - CometBFT ExtendVote When lock values 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 1 sets lockedValue and validValue to v / sets lockedRound and validRound to r / before calls ExtendVote with v，实现 / ExtendVote When lock values 正式三事，不另写 19 节）：看见 sets lockedValue/validValue 不是 +2/3 prevote 锁住 bundled（361） interchangeable / 已经会调 ExtendVote interchangeable。看见 sets lockedRound/validRound 不是 validValue 跳过 Prepare（356） interchangeable / 已经 locked interchangeable。看见 step 1 before ExtendVote call 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经广播 Precommit interchangeable。ExtendVote When lock values 正式三事不是不变量 361，也不是不变量 356 / 438 / 437。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
