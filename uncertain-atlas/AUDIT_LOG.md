@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2235 | 高 | 看见应用确定地执行 FinalizeBlockRequest.txs 再交还控制权 / 看见先跑了 会被写成已经交差，或当成已经可以像 Prepare 那样依赖非确定值 | 官方 FinalizeBlock Usage：executes the transactions in FinalizeBlockRequest.txs deterministically before returning control to CometBFT |
+| A2236 | 高 | 看见也可以套用同一块先前经 PrepareProposal 或 ProcessProposal 跑出的 candidate state / 看见套用了 会被写成已经是 ExecuteTxState，或当成已经 Process 回了 Accept 就已经换工作状态 | 官方 FinalizeBlock Usage：Alternatively, it can apply the candidate state corresponding to the same block previously executed via PrepareProposal or ProcessProposal |
+| A2237 | 高 | 看见同一块先前经 Prepare 或 Process 执行过 / 看见有 candidate 会被写成已经不用再在 Finalize 执行，或当成已经 candidate 就不需要 Commit | 官方 FinalizeBlock Usage：previously executed via PrepareProposal or ProcessProposal vs Finalize execute / apply candidate |
+| A2238 | 中 | 怎样实现 candidate 缓存 / 怎样在 Finalize 套用 / 怎样限制内存会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2239 | 记录 | 会与 360 / 408 / 452 / 311 / 335 糊成「看见 Process 跑过就已经在 Finalize 套用、已经是 ExecuteTxState、已经交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock 套用候选正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经在 Finalize 套用 / 已经是 ExecuteTxState / 已经交差 标成另一对象 |
+
 | A2230 | 高 | 看见块 H 触发的 validator_updates 在 H+1 只让 NextValidatorsHash 纳入这份更新 / 看见 H+1 更新了 Next 会被写成已经在 H+1 按新集合计票，或当成已经 ValidatorsHash 已经更新 | 官方 FinalizeBlock Usage：Height H+1: NextValidatorsHash includes the new validator_updates value |
 | A2231 | 高 | 看见 H+2 验证者集合变更才生效 / ValidatorsHash 才更新 / 看见 H+2 开始按新集合投票 会被写成已经在 H+1 换人，或当成已经 Next 更新了就已经计票 | 官方 FinalizeBlock Usage：Height H+2: The validator set change takes effect and ValidatorsHash is updated |
 | A2232 | 高 | 看见 H+3 PrepareProposal / ProcessProposal / FinalizeBlock 的 *_last_commit 才带上变更后的验证者集合 / 看见 H+3 last_commit 带新集合 会被写成已经在 H+1/H+2 的 proposed_last_commit / decided_last_commit 就已经是新集合，或当成已经 Process/Finalize 里 CommitInfo 立刻带新人 | 官方 FinalizeBlock Usage：Height H+3: *_last_commit fields now include the altered validator set |
