@@ -165,4 +165,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T12:10Z | checkpoint 1210Z | P2-14 complete; 3 jobs in_progress
 2026-09-13T12:20Z | timer research-continue | pytest 131 pass; **P2-05 DONE FAIL**; P2-11 done
 2026-09-13T12:20Z | checkpoint 1220Z | Q-crypto-2 finalized; W-02 not supported
+2026-09-13T12:30Z | timer research-continue | pytest 131 pass; **P2-02 1.5x DONE -87.35%**
+2026-09-13T12:30Z | checkpoint 1230Z | Q-crypto-1 BTC interim updated; 1.75x running
 ```

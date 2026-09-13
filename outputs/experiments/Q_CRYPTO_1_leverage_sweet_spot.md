@@ -1,6 +1,6 @@
 # Q-crypto-1 — Leverage sweet spot (1.25–2.0x)
 
-**Status:** PARTIAL (2026-09-13T10:40Z)  
+**Status:** PARTIAL (2026-09-13T12:20Z)  
 **Window:** C1 2024-09-01 → 2024-11-30, tick-precise, crypto FSM+grid, tech disabled  
 **Fill:** Base (primary verdict)
 
@@ -41,13 +41,11 @@ Does a leverage sweet spot exist in **1.25 / 1.5 / 1.75 / 2.0x** for BTC, ETH, S
 | Lev | Return | Calmar | Status |
 |-----|--------|--------|--------|
 | 1.25 | **-87.47%** | -16.89 | done (~109min) |
-| 1.5 | — | — | running |
-| 1.75 | — | — | pending |
+| 1.5 | **-87.35%** | -17.18 | done (~111min) |
+| 1.75 | — | — | running |
 | 2.0 | — | — | pending |
 
-**Interim:** First level matches ETH ~-87.5% band. Restart 08:40Z after 5h57m stale run. Per-level baseline **~109min** (BTC tick grid slower than ETH ~43min).
-
-**Early read:** No sweet spot at 1.25x — catastrophic loss consistent with SOL/ETH.
+**Interim:** 1.25x/1.5x both ~-87% — matches ETH pattern (slight improvement at 1.5x, still catastrophic). Per-level baseline **~110min**.
 
 ---
 
@@ -56,7 +54,7 @@ Does a leverage sweet spot exist in **1.25 / 1.5 / 1.75 / 2.0x** for BTC, ETH, S
 On C1 tick-precise with current crypto grid FSM:
 
 1. **No evidence of a viable 1.25–2.0x sweet spot** for SOL or ETH on C1 tick grid FSM.
-2. **BTC 1.25x -87.47%** (first level) — consistent with ETH band; await full scan.
+2. **BTC 1.25x -87.47%, 1.5x -87.35%** — consistent with ETH band; 1.75/2.0 pending.
 3. SOL shows near-identical ~-88% across levels (accounting floor suspected); ETH varies slightly but all catastrophic.
 4. Does **not** overturn LEDGER-002 (bar-mode PERP vs ETF A/B) — different engine, window, and config.
 

@@ -32,5 +32,6 @@
 ## Next
 
 - ~~Monitor 1.25x completion~~ **DONE 10:30Z:** -87.47%, ~109min
-- 1.5x running (~ETA 12:19Z at ~109min/level)
+- **1.5x DONE 12:20Z:** -87.35%, ~111min
+- 1.75x running (~110min/level ETA)
 - FAIL review when all 4 levels complete
