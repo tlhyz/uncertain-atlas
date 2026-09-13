@@ -129,4 +129,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T09:10Z | checkpoint 0910Z | P2-07 60_40 -87.97% done; P2-02 1.25x ~30min
 2026-09-13T09:20Z | timer research-continue | pytest 131 pass; P2 no pending; phase gate P3 blocked
 2026-09-13T09:20Z | checkpoint 0920Z | P2-02 1.25x ~40min; P2-07 50_50 running; P2-05/06 ~4h no variant logs
+2026-09-13T09:30Z | timer research-continue | pytest 131 pass; no new CRYPTO_REPORT; P2-02 1.25x ~50min
+2026-09-13T09:30Z | checkpoint 0930Z | jobs unchanged; P2-02 slightly slower than ETH ref
 ```
