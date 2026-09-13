@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2270 | 高 | 看见 Application calculates and returns AppHash along with tx outputs / 看见应用回 AppHash 和各笔 tx outputs 会被写成已经印进本头，或当成已经是本头 AppHash | 官方 FinalizeBlock When step 4：Application calculates and returns the AppHash, along with a list containing the outputs of each of the transactions executed |
+| A2271 | 高 | 看见 CometBFT hashes all the transaction outputs and stores it in ResultHash / 看见引擎把各笔输出哈希进 ResultHash 会被写成已经 Code / Data 印进本头 LastResultsHash，或当成已经印进本头 | 官方 FinalizeBlock When step 5 vs Transaction Results：Code / Data 编进 LastResultsHash |
+| A2272 | 高 | 看见 CometBFT persists the transaction outputs, AppHash, and ResultsHash / 看见引擎落盘 tx outputs / AppHash / ResultsHash 会被写成已经交差，或当成已经 Commit 落盘应用状态 | 官方 FinalizeBlock When step 6 vs Commit |
+| A2273 | 中 | 怎样算 AppHash / 怎样算 ResultHash / 怎样落盘这三份会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2274 | 记录 | 会与 362 / 403 / 404 / 316 / 147 糊成「看见回了 AppHash 和各笔输出就已经印进本头、已经交差、已经 Commit 落盘应用状态」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经印进本头 / 已经 Code Data 印进本头 / 已经 Commit 落盘应用状态 标成另一对象 |
+
 | A2265 | 高 | 看见 `_p_`'s Application executes block _v_ / 看见应用执行块 _v_ 会被写成已经把 _v_ 落成这一高的决定，或当成已经交差 | 官方 FinalizeBlock When step 3：_p_'s Application executes block _v_ |
 | A2266 | 高 | 看见 Application executes block _v_ / 看见应用执行块 _v_ 会被写成已经每个验证者都跑过 Process，或当成已经是 ExecuteTxState | 官方 FinalizeBlock When step 3 vs Usage：at least one non-byzantine validator has run ProcessProposal |
 | A2267 | 高 | 看见 Application executes block _v_ / 看见应用执行块 _v_ 会被写成已经套用 candidate 就不需要再在 Finalize 执行，或当成已经 Process 跑过就不用在 Finalize 再执行 | 官方 FinalizeBlock When step 3 vs Usage：executes txs deterministically / apply candidate state |
