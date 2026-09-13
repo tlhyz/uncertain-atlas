@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 451）
+
+- CometBFT Prepare 事件保留路径正式三事工作实例（官方 ABCI++ Methods PrepareProposal Usage，实现 / Prepare 事件保留路径正式三事，不另写 19 节）：看见 Prepare 执行准备提案时 MAY 产出块事件或交易事件不是已经在 PrepareProposalResponse 里交回 / 已经 Prepare 返回时引擎就已经收到。看见应用 MUST 把这些事件留到块决定之后不是已经 Process 时就交出去 / 已经 prevote nil / REJECT 时就可以丢掉不算。看见然后经 FinalizeBlockResponse 交给 CometBFT 不是已经是 CheckTxResponse.events / ExecTxResult.events / 已经像 Code/Data 那样印进 LastResultsHash。Prepare 事件保留路径正式三事不是不变量 357，也不是不变量 431，也不是不变量 381/446。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 451；语料 C455；模式 name-the-prepevents-retention-bar；反模式 prepevents-sold-as-finalize；L10.3 第 447 条。填 L4.4 / CometBFT 档案 Prepare 事件保留路径正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样攒 Prepare 事件、怎样等块决定、怎样在 Finalize 交回。不编博物馆页。不另写 19 节。不与 357 / 431 / 381 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经在 PrepareProposalResponse 里交回 / 已经 Process 时就交出去 / 已经是 CheckTx / ExecTxResult events 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 450）
 
 - CometBFT Misbehavior total_voting_power 栏正式三事工作实例（官方 ABCI++ Methods Data Types Misbehavior Fields，实现 / Misbehavior total_voting_power 栏正式三事，不另写 19 节）：看见 Misbehavior.total_voting_power 是 height 那一高验证者集合的总投票权不是已经 VoteInfo.validator.power / Misbehavior.validator.power 那种单个验证者权 / 已经 CommitInfo.votes 里按投票权降序排过那种已经奖罚完。看见 Misbehavior.total_voting_power 是 offense height 那一高的集合总权不是已经按到场定奖惩 / 已经 block_id_flag 奖罚完。看见 Misbehavior.total_voting_power 不是已经定了奖惩 / 已经 slashed / 已经改了集合。Misbehavior total_voting_power 栏正式三事不是不变量 372，也不是不变量 365，也不是不变量 448。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
