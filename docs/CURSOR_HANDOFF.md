@@ -15,7 +15,7 @@
 7. `PHASE1_SELF_AUDIT.md` — red team findings
 8. `NEXT_EXPERIMENTS.md` — information-gain priority
 9. `docs/DATA_POLICY.md` — no synthetic ticks
-10. `.cursor/rules/phase1-governance.mdc` — **mandatory agent rules**
+10. `.cursor/rules/quant-research-permanent.mdc` — **永久规则 & 北星目标（alwaysApply）**
 
 ---
 
@@ -89,7 +89,8 @@ outputs/review_logs/         ← session audit trail
 2. Run `pytest -q` at session start
 3. After any experiment: review log → ledger → registry → commit
 4. Red team before advancing ROADMAP level
-5. Respond to `research-continue` timer (20 min) — see `docs/WORK_CADENCE.md`
+5. Respond to `research-continue` timer (**every 10 min**) — see `docs/WORK_CADENCE.md`
+6. Obey `.cursor/rules/quant-research-permanent.mdc` (alwaysApply)
 
 ---
 
