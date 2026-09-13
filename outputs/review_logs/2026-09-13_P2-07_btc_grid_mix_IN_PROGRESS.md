@@ -53,7 +53,8 @@ SOL/ETH catastrophic returns — await full reports + liquidation counts before 
 |-----|--------|--------|--------|
 | 80_20 | -87.35% | -17.18 | done |
 | 60_40 | -87.97% | -18.56 | done |
-| 50_50 | — | — | running ~35min |
+| 50_50 | **-88.43%** | -15.70 | done |
+| 40_60 | — | — | running |
 | 40_60 | — | — | pending |
 | 20_80 | — | — | pending |
 | dynamic | — | — | pending |

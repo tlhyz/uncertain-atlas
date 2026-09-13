@@ -149,4 +149,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T10:50Z | checkpoint 1050Z | no new completions since 1040Z
 2026-09-13T11:00Z | timer research-continue | pytest 131 pass; P2-02 1.5x ~20min; P2-07 50_50 ~111min
 2026-09-13T11:00Z | checkpoint 1100Z | no completions
+2026-09-13T11:10Z | timer research-continue | pytest 131 pass; **P2-06 DONE FAIL**; P2-07 50_50 -88.43%
+2026-09-13T11:10Z | checkpoint 1110Z | P2-12 done; Q-crypto-3 finalized
 ```
