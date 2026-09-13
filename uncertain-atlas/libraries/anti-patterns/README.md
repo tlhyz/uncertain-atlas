@@ -431,6 +431,7 @@
 - [procfull-sold-as-execute](procfull-sold-as-execute.md)
 - [procht-sold-as-header](procht-sold-as-header.md)
 - [procreject-sold-as-invalid](procreject-sold-as-invalid.md)
+- [finwhenparts-sold-as-partial](finwhenparts-sold-as-partial.md)
 - [finpersist-sold-as-commit](finpersist-sold-as-commit.md)
 - [finasresult-sold-as-candidate](finasresult-sold-as-candidate.md)
 - [finharddet-sold-as-noroot](finharddet-sold-as-noroot.md)

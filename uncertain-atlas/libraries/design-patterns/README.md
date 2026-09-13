@@ -326,6 +326,7 @@
 - [name-the-procfull-bar](name-the-procfull-bar.md)
 - [name-the-procht-bar](name-the-procht-bar.md)
 - [name-the-procreject-bar](name-the-procreject-bar.md)
+- [name-the-finwhenparts-bar](name-the-finwhenparts-bar.md)
 - [name-the-finpersist-bar](name-the-finpersist-bar.md)
 - [name-the-finasresult-bar](name-the-finasresult-bar.md)
 - [name-the-finharddet-bar](name-the-finharddet-bar.md)
