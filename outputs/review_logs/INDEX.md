@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P2-12 Q-crypto-3 | PARTIAL | outputs/review_logs/2026-09-13_P2-12_Q_crypto_3_PARTIAL.md |
+| 2026-09-13 | checkpoint 0630Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0630Z.md |
 | 2026-09-13 | P2-11 Q-crypto-2 | PARTIAL | outputs/review_logs/2026-09-13_P2-11_Q_crypto_2_PARTIAL.md |
 | 2026-09-13 | checkpoint 0620Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0620Z.md |
 | 2026-09-13 | P2-10 Q-crypto-1 | PARTIAL | outputs/review_logs/2026-09-13_P2-10_Q_crypto_1_PARTIAL.md |

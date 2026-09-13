@@ -104,4 +104,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T06:20Z | timer research-continue | pytest 128 pass
 2026-09-13T06:20Z | P2-11 partial | Q-crypto-2 plateau doc; awaiting P2-05 grid step scan
 2026-09-13T06:20Z | ETH lev | 1.5x -87.74% done; 1.75x running; P2-02 ~217min
+2026-09-13T06:30Z | timer research-continue | pytest 128 pass
+2026-09-13T06:30Z | P2-12 partial | Q-crypto-3 ±ATR range doc; awaiting P2-06
+2026-09-13T06:30Z | jobs | P2-02 ~227min; P2-03 1.75x; P2-05/06/07 running
 ```
