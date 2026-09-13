@@ -42,14 +42,14 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P2-01 | Enable `crypto_regime.yaml` runner | **done** | qtb/dual/crypto_run.py + qtb.cli crypto; outputs/review_logs/2026-09-13_P2-01_crypto_regime_runner_PASS.md |
-| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | ~187 min (~3h07m); CRYPTO_REPORT pending — checkpoint 0550Z |
-| P2-03 | ETH leverage scan | **in_progress** | 1.25x done -87.86%; 1.5x running (~59min) |
+| P2-02 | BTC leverage scan 1.25/1.5/1.75/2.0 | in_progress | ~197 min (~3h17m); CRYPTO_REPORT pending — checkpoint 0600Z |
+| P2-03 | ETH leverage scan | **in_progress** | 1.25x done -87.86%; 1.5x ~69min |
 | P2-04 | SOL leverage scan | **done** | FAIL all lev -88.01%; crypto_max_dd=100% — outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md |
-| P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~39min |
-| P2-06 | Grid range ±3/5/7 ATR sweep | **in_progress** | ~19min |
-| P2-07 | Grid→Trend mix 80/20→20/80 | **in_progress** | ~8min; 80_20 running |
+| P2-05 | Grid ATR step 0.30–0.60 sweep | **in_progress** | ~49min |
+| P2-06 | Grid range ±3/5/7 ATR sweep | **in_progress** | ~29min |
+| P2-07 | Grid→Trend mix 80/20→20/80 | **in_progress** | ~18min; 80_20 first variant |
 | P2-08 | High-vol range regime auto-label sample | **done** | C1 mostly RANGE_LOW_VOL; SOL 3 HV bars — outputs/review_logs/2026-09-13_P2-08_regime_label_sample_PASS.md |
-| P2-09 | Bull trend sell-the-winner check | pending | |
+| P2-09 | Bull trend sell-the-winner check | **done** | CONDITIONAL PASS structural; C1 0 BULL bars — outputs/review_logs/2026-09-13_P2-09_bull_sell_winner_CONDITIONAL_PASS.md |
 | P2-10 | Answer Q-crypto-1 (leverage sweet spot) | pending | |
 | P2-11 | Answer Q-crypto-2 (0.40 ATR plateau?) | pending | |
 | P2-12 | Answer Q-crypto-3 (±ATR range) | pending | |
