@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 476）
+
+- CometBFT FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage may also be empty or hard-coded / MUST be deterministic / only params + previous committed state，实现 / FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事，不另写 19 节）：看见 may be empty 不是已经没有状态根 / 已经交差。看见 may be hard-coded 不是必须真是 Merkle root / 已经写死就不算 AppHash。看见 MUST be deterministic 不是已经 next_block_delay 非确定就代表整门非确定 / 已经印进本头。FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事不是不变量 404，也不是不变量 470，也不是不变量 475。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 476；语料 C480；模式 name-the-finharddet-bar；反模式 finharddet-sold-as-noroot；L10.3 第 472 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样挑空根、怎样写死常量、怎样测确定性。不编博物馆页。不另写 19 节。不与 404 / 470 / 475 / 469 / 147 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5 / mempool 正文。已经没有状态根 / 必须真是 Merkle root / next_block_delay 非确定就代表整门非确定 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 475）
 
 - CometBFT FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage optional Merkle root / included as Header.AppHash in the next block / Later calls to Query can return proofs anchored in this Merkle root hash，实现 / FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事，不另写 19 节）：看见 optional Merkle root 不是已经是本头 AppHash / 已经印进本头。看见 included as Header.AppHash in the next block 不是已经写进下一块头 / 已经本头 AppHash 就已经是本高度交差。看见 Query proofs anchored 不是已经对上 AppHash / 已经是 ProofOp 按键查。FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事不是不变量 404，也不是不变量 432，也不是不变量 147。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

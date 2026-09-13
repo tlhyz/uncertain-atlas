@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2315 | 高 | 看见 FinalizeBlockResponse.app_hash may also be empty / 看见可以空 会被写成已经没有状态根，或当成已经交差 / 已经印进本头 | 官方 FinalizeBlock Usage：may also be empty or hard-coded, but MUST be deterministic |
+| A2316 | 高 | 看见 FinalizeBlockResponse.app_hash may also be hard-coded / 看见可以硬编码 会被写成必须真是 Merkle root，或当成已经写死就不算 AppHash | 官方 FinalizeBlock Usage vs optional Merkle root 475 |
+| A2317 | 高 | 看见 MUST be deterministic / only params + previous committed state / 看见必须确定 会被写成已经 next_block_delay 非确定就代表整门非确定，或当成已经印进本头 | 官方 FinalizeBlock Usage vs next_block_delay 469 / finfields 404 / findet 470 |
+| A2318 | 中 | 怎样挑空根 / 怎样写死常量 / 怎样测确定性会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2319 | 记录 | 会与 404 / 470 / 475 / 469 / 147 糊成「看见回了空根或硬编码就已经没有状态、已经必须真是 Merkle root、已经 next_block_delay 非确定就代表整门非确定」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经没有状态根 / 必须真是 Merkle root / next_block_delay 非确定就代表整门非确定 标成另一对象 |
+
 | A2310 | 高 | 看见 FinalizeBlockResponse.app_hash contains an (optional) Merkle root hash of the application state / 看见 optional Merkle root 会被写成已经是本头 AppHash，或当成已经印进本头 / 已经交差 | 官方 FinalizeBlock Usage：contains an (optional) Merkle root hash of the application state |
 | A2311 | 高 | 看见 FinalizeBlockResponse.app_hash is included as the Header.AppHash in the next block / 看见会写进下一块头 会被写成已经写进下一块头，或当成已经本头 AppHash 就已经是本高度交差 | 官方 FinalizeBlock Usage：is included as the Header.AppHash in the next block |
 | A2312 | 高 | 看见 Later calls to Query can return proofs anchored in this Merkle root hash / 看见 Query 可以拿这份根当锚 会被写成已经对上 AppHash，或当成已经是 ProofOp 那种按键查 | 官方 FinalizeBlock Usage vs Query proofs anchored vs ProofOp 325 |
