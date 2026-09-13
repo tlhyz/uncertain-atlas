@@ -22,3 +22,4 @@
 
 - [snapshot-sold-as-identical](../../libraries/anti-patterns/snapshot-sold-as-identical.md) 是快照全字段对上就已经装完，不是本页 Only AppHash can be trusted。
 - [snapshotverify-sold-as-early](../../libraries/anti-patterns/snapshotverify-sold-as-early.md) 是装完 Info 对了就已经在装过程中验过，不是本页 automatically checked at end。
+- [offersnapusage-bootstrap-sold-as-bundled](offersnapusage-bootstrap-sold-as-bundled.md) 是 OfferSnapshot Usage bootstrap accept/reject 正式三事，不是本页 Only AppHash can be trusted。
