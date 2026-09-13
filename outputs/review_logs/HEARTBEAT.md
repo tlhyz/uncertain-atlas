@@ -310,4 +310,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T22:30Z | P3-03 review | short_structure fully inert
 2026-09-13T22:30Z | **P3-04 started** | tmux p3-04-drawdown-sets
 2026-09-13T22:30Z | checkpoint 2230Z | drawdown A/B/C ~90min ETA
+2026-09-13T22:40Z | timer research-continue | P3-04 set A ~10min running
+2026-09-13T22:40Z | checkpoint 2240Z | P3-06 next pending after P3-04
 ```

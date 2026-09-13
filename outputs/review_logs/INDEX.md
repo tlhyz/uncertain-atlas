@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | checkpoint 2240Z timer | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2240Z_timer.md |
+| 2026-09-13 | P3-04 drawdown sets | IN_PROGRESS | outputs/review_logs/2026-09-13_P3-04_drawdown_sets_IN_PROGRESS.md |
 | 2026-09-13 | checkpoint 2230Z timer | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2230Z_timer.md |
 | 2026-09-13 | P3-03 short structures | FAIL | outputs/review_logs/2026-09-13_P3-03_short_structures_FAIL.md |
 | 2026-09-13 | checkpoint 2220Z timer | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_2220Z_timer.md |
