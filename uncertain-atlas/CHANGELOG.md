@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 489）
+
+- CometBFT CheckTx Usage Code≠0 rejected 正式三事工作实例（官方 ABCI++ Methods CheckTx Usage Transactions where CheckTxResponse.Code != 0 will be rejected … will not be broadcast … or included in a proposal block … CometBFT attributes no other value to the response code，实现 / CheckTx Usage Code≠0 rejected 正式三事，不另写 19 节）：看见 Code≠0 会拒 / 不会广播 不是已经流言 / CheckTx 守卫 bundled interchangeable。看见不会进提案块 不是 Check 通过就是已进提案 / forever valid / Finalize Code≠0 仍在块里。看见 CometBFT attributes no other value 不是 CheckTx Data 已被引擎用了 / optional bundled / validate-no-apply bundled interchangeable。CheckTx Usage Code≠0 rejected 正式三事不是不变量 33，也不是不变量 373，也不是不变量 486。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 489；语料 C493；模式 name-the-chktxcodereject-bar；反模式 chktxcodereject-sold-as-proposal；L10.3 第 485 条。填 L4.4 / CometBFT 档案 CheckTx Usage Code≠0 rejected 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做广播过滤、怎样写 CheckTx 回包码。不编博物馆页。不另写 19 节。不与 33 / 301 / 316 / 317 / 373 / 405 / 486 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。没进块 / 已经 Check 通过 / 已经 forever valid 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 488）
 
 - CometBFT CheckTx Usage tx source 正式三事工作实例（官方 ABCI++ Methods CheckTx Usage The transaction may come from an external user or another node，实现 / CheckTx Usage tx source 正式三事，不另写 19 节）：看见 may come from external user 不是 CheckTx_Recheck / tx 栏就知道 New。看见 may come from another node 不是已经从池里删掉 / CheckTx 过了就永远有效。看见 external user or another node 不是已经保证不重放 / CheckTx 守卫 bundled interchangeable。CheckTx Usage tx source 正式三事不是不变量 405，也不是不变量 484，也不是不变量 313。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
