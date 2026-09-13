@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-13（续 437）
+
+- CometBFT ExtendVote Usage 正式三事工作实例（官方 ABCI++ Methods ExtendVote Usage / When，实现 / ExtendVote Usage 正式三事，不另写 19 节）：看见 ExtendVoteResponse.vote_extension 只会挂在非 nil Precommit 上、precommit nil 不会叫 ExtendVote 不是已经会调 ExtendVote。看见应用可以选 0 长扩展不是已经不会叫 ExtendVote。看见造扩展的应用逻辑可以非确定不是已经必须同一份扩展。ExtendVote Usage 正式三事不是不变量 350，也不是不变量 353，也不是不变量 338。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 437；语料 C441；模式 name-the-ext-usage；反模式 extusage-sold-as-deterministic；L10.3 第 433 条。填 L4.4 / CometBFT 档案 ExtendVote Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ExtendVote Usage 正式三事、怎样选空扩展、怎样写非确定逻辑。不编博物馆页。不另写 19 节。不与 350 / 353 / 338 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经会调 ExtendVote、已经不会叫、已经必须同一份扩展 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 436）
 
 - CometBFT Verify 请求栏工作实例（官方 ABCI++ Methods VerifyVoteExtension Request / Usage，实现 / Verify 请求栏，不另写 19 节）：看见 VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址不是已经带了公钥。看见 VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长不是已经是 vote_extension。看见 non_rp 相对 vote_extension 签名时不加额外元信息不是已经按原样签。Verify 请求栏不是不变量 364，也不是不变量 415，也不是不变量 413。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

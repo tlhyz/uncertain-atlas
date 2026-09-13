@@ -4439,6 +4439,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2118 | 中 | 怎样写 Verify 请求栏 / 怎样填 validator_address / 怎样填 non_rp 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2119 | 记录 | 会与 364 / 415 / 413 糊成「看见填了 Verify 请求栏就已经带了公钥」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 请求栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经带了公钥 / 已经是 vote_extension / 已经按原样签 标成另一对象 |
 
+| A2120 | 高 | 看见 ExtendVoteResponse.vote_extension 只会挂在非 nil Precommit 上 / 看见 precommit nil 不会叫 ExtendVote 会被写成已经会调 ExtendVote，或当成已经签了 nil 票仍带扩展 | 官方 Usage / When：vote_extension will only be attached to a non-nil Precommit; if precommit nil, will not call ExtendVote |
+| A2121 | 高 | 看见应用可以选 0 长扩展 / 看见能空 会被写成已经不会叫 ExtendVote，或当成已经跳过 Verify | 官方 Usage：The Application may choose to use an empty vote extension (0 length) |
+| A2122 | 高 | 看见造扩展的应用逻辑可以非确定 / 看见可以非确定 会被写成已经必须同一份扩展，或当成已经是 ExtendVote 没有确定性要求那种已经是同一块 | 官方 Usage：The Application logic that creates the extension can be non-deterministic |
+| A2123 | 中 | 怎样写 ExtendVote Usage 正式三事 / 怎样选空扩展 / 怎样写非确定逻辑 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2124 | 记录 | 会与 350 / 353 / 338 糊成「看见填了 ExtendVote Usage 就已经会调 ExtendVote」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经会调 ExtendVote / 已经不会叫 / 已经必须同一份扩展 标成另一对象 |
+
 
 
 
