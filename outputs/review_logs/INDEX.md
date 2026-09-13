@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | TASK-0009 accounting | PASS | outputs/review_logs/2026-09-13_TASK-0009_accounting_invariants_PASS.md |
 | 2026-09-13 | TASK-0008 data_quality | PASS | outputs/review_logs/2026-09-13_TASK-0008_data_quality_gate_PASS.md |
 | 2026-09-13 | permanent_rules_10min | PASS | outputs/review_logs/2026-09-13_permanent_rules_10min_timer_PASS.md |
 | 2026-09-13 | PHASE1-AUDIT | CONDITIONAL PASS | outputs/review_logs/2026-09-13_PHASE1_audit_CONDITIONAL_PASS.md |
