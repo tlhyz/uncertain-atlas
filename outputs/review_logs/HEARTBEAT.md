@@ -262,4 +262,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T19:50Z | checkpoint 1950Z | tmux p3-02-short-init
 2026-09-13T20:00Z | timer research-continue | pytest 132 pass; P3-02 10% running
 2026-09-13T20:00Z | checkpoint 2000Z | ETA ~50min total
+2026-09-13T20:10Z | timer research-continue | pytest 132 pass; P3-02 10% ~19min
+2026-09-13T20:10Z | checkpoint 2010Z | no new completions
 ```
