@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 481）
+
+- CometBFT Commit Usage persist signal 正式三事工作实例（官方 ABCI++ Methods Commit Usage Signal persist application state / expected persist at end of this call / Historical blocks may also be required for auditing replay light client verification，实现 / Commit Usage persist signal 正式三事，不另写 19 节）：看见 Signal persist application state 不是已经在 Finalize 改了就已经落盘 / 已经引擎 persist 这三份。看见 Expected persist at end of this call 不是已经 Commit 不带参数就等于已经落盘。看见 Historical blocks required for auditing / replay / light client 不是已经 retain_height 默认 0 就等于已经在剪。Commit Usage persist signal 正式三事不是不变量 335，也不是不变量 399，也不是不变量 366。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 481；语料 C485；模式 name-the-commitpersist-bar；反模式 commitpersist-sold-as-finalize；L10.3 第 477 条。填 L4.4 / CometBFT 档案 Commit Usage persist signal 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样落盘、怎样填 retain_height。不编博物馆页。不另写 19 节。不与 335 / 399 / 366 / 468 / 320 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经在 Finalize 落了 / Commit 空请求就等于落盘 / retain_height 默认 0 就等于在剪 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 480）
 
 - CometBFT FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事工作实例（官方 ABCI++ Methods FinalizeBlock Usage includes processing time / more precommits despite 2/3+ / after committing before next height，实现 / FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事，不另写 19 节）：看见 includes processing time 不是已经是 timeout_commit / wallclock 非确定 interchangeable。看见 more precommits despite 2/3+ 不是已经决定 / 已经最终。看见 after committing before next height 不是已经是槽位 / 已经 1s 常量。FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事不是不变量 469，也不是不变量 432，也不是不变量 479。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
