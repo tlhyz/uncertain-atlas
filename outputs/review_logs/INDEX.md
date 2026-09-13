@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | checkpoint 1430Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1430Z.md |
 | 2026-09-13 | checkpoint 1420Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_1420Z.md |
 | 2026-09-13 | checkpoint 0910Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0910Z.md |
 | 2026-09-13 | P2-15 BTC tick perf | PARTIAL | outputs/review_logs/2026-09-13_P2-15_btc_tick_perf_PARTIAL.md |

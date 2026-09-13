@@ -189,4 +189,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T14:10Z | checkpoint 1410Z | 2.0x running; Q-crypto-1 updated
 2026-09-13T14:20Z | timer research-continue | pytest 131 pass; no new completions
 2026-09-13T14:20Z | checkpoint 1420Z | P2-02 2.0x ~26min; P2-07 20_80 ~107min
+2026-09-13T14:30Z | timer research-continue | pytest 131 pass; **P2-07 20_80 DONE -89.06%**
+2026-09-13T14:30Z | checkpoint 1430Z | dynamic running; P2-02 2.0x ~36min
 ```
