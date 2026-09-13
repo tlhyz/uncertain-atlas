@@ -4427,6 +4427,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2108 | 中 | 怎样写 VerifyStatus / 怎样挑枚举 / 怎样拒整张 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2109 | 记录 | 会与 376 / 433 / 34 糊成「看见回了 VerifyStatus 就已经验过扩展」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyStatus / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经验过扩展 / 已经当成块非法 / 已经会发 Prevote nil 标成另一对象 |
 
+| A2110 | 高 | 看见 Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify / 看见丢掉了 会被写成已经跳过 Verify，或当成已经验过扩展 | 官方 When：If the Precommit message does not contain a vote extension with a valid signature, p discards the Precommit message as invalid; a 0-length vote extension is valid as long as its accompanying signature is also valid |
+| A2111 | 高 | 看见带有效签就会调 VerifyVoteExtension / 看见 CometBFT 会叫 会被写成已经验过扩展，或当成已经 Accept | 官方 When：Else, p's CometBFT calls VerifyVoteExtension; The Application returns ACCEPT or REJECT via VerifyVoteExtensionResponse.status |
+| A2112 | 高 | 看见 ACCEPT 会把票和扩展留给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo / 看见 REJECT 会把 Precommit 当非法丢掉 会被写成已经写进 last_commit，或当成已经 Verify 过迟到扩展 | 官方 When：If ACCEPT, p will keep the received vote together with its vote extension for PrepareProposal at h+1; If REJECT, p will deem the Precommit message invalid and discard it |
+| A2113 | 中 | 怎样写 Verify When 正式流程 / 怎样验伴随签名 / 怎样攒下一高 Prepare 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2114 | 记录 | 会与 353 / 409 / 352 糊成「看见收到 Precommit 就已经验过扩展」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经跳过 Verify / 已经验过扩展 / 已经写进 last_commit 标成另一对象 |
+
 
 
 

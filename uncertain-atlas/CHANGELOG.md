@@ -2,6 +2,12 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-13（续 435）
+
+- CometBFT Verify When 正式流程工作实例（官方 ABCI++ Methods VerifyVoteExtension When，实现 / Verify When 正式流程，不另写 19 节）：看见 Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify 不是已经跳过 Verify。看见带有效签就会调 VerifyVoteExtension 不是已经验过扩展。看见 ACCEPT 会把票和扩展留给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo、REJECT 会把 Precommit 当非法丢掉 不是已经写进 last_commit。Verify When 正式流程不是不变量 353，也不是不变量 409，也不是不变量 352。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 435；语料 C439；模式 name-the-verify-formal-when；反模式 verifyformalwhen-sold-as-verified；L10.3 第 431 条。填 L4.4 / CometBFT 档案 Verify When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Verify When 正式流程、怎样验伴随签名、怎样攒下一高 Prepare。不编博物馆页。不另写 19 节。不与 353 / 409 / 352 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经跳过 Verify、已经验过扩展、已经写进 last_commit 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 434）
 
 - CometBFT VerifyStatus 工作实例（官方 ABCI++ Methods Data Types VerifyStatus，实现 / VerifyStatus，不另写 19 节）：看见 VerifyStatus 的 UNKNOWN 一律是错、引擎当应用坏了会崩不是已经验过扩展。看见 VerifyStatus 的 ACCEPT 表示应用认为扩展合法、共识会收下这张票不是已经当成块非法。看见 VerifyStatus 的 REJECT 表示应用认为扩展非法、共识会拒掉整张票不是已经会发 Prevote nil。VerifyStatus 不是不变量 376，也不是不变量 433，也不是不变量 34。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
