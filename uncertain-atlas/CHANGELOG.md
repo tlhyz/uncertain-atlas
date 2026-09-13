@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 443）
+
+- CometBFT Validator Usage 四门映射正式三事工作实例（官方 ABCI++ Methods Data Types Validator Usage，实现 / Validator Usage 四门映射正式三事，不另写 19 节）：看见 Validator 装在 CommitInfo 里用于 ProcessProposal 不是已经 PrepareProposal 里的 ExtendedCommitInfo / 已经是 local_last_commit 同一份。看见 Validator 装在 CommitInfo 里用于 FinalizeBlock 不是已经 Process 里的 proposed_last_commit 同一路 / 已经是 decided_last_commit 就已经交差。看见 Validator 装在 ExtendedCommitInfo 里用于 PrepareProposal 不是已经 Process/Finalize 里的 CommitInfo 同一路 / 已经可以 interchangeable。Validator Usage 四门映射正式三事不是不变量 364，也不是不变量 365，也不是不变量 369。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 443；语料 C447；模式 name-the-validatorusage-gates；反模式 validatorusage-sold-as-samegate；L10.3 第 439 条。填 L4.4 / CometBFT 档案 Validator Usage 四门映射正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 Validator Usage 四门映射正式三事、怎样填 proposed_last_commit / decided_last_commit / local_last_commit。不编博物馆页。不另写 19 节。不与 364 / 365 / 369 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经同一门、已经同一路、已经可以 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 442）
 
 - CometBFT VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事工作实例（官方 ABCI++ Methods Data Types VoteInfo Usage / ExtendedVoteInfo Usage，实现 / VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事，不另写 19 节）：看见 VoteInfo 与 ExtendedVoteInfo Usage 都写 allowing for rewards based on validator availability 不是已经奖罚完 / 已经交差。看见 VoteInfo 通常从拟议块或已决块抽出不是已经从本进程抽出 / 已经是 Prepare 里的 ExtendedVoteInfo。看见 ExtendedVoteInfo 从本进程 CometBFT 数据结构抽出不是已经 typically extracted from proposed or decided block / 已经是 Process/Finalize 里的 CommitInfo 同一路。VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事不是不变量 365，也不是不变量 369，也不是不变量 425。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
