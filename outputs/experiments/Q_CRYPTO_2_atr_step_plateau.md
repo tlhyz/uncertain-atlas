@@ -1,6 +1,6 @@
 # Q-crypto-2 — Is 0.40 ATR step on a parameter plateau?
 
-**Status:** PARTIAL (2026-09-13T06:20Z)  
+**Status:** COMPLETE (2026-09-13T12:10Z)  
 **Window:** C1 2024-09-01 → 2024-11-30, BTC-only grid step sweep (P2-05)  
 **Sweep:** steps [0.30, 0.40, 0.50, 0.60], range fixed ±5 ATR, lev 1.5
 
@@ -14,35 +14,31 @@ Prior claim W-02 in `docs/CURRENT_CONCLUSIONS.md` — **LOW confidence**, not ve
 
 ---
 
-## Status
+## Results (P2-05 COMPLETE)
 
-**P2-05 running** (~69 min at 06:20Z). No `CRYPTO_REPORT.md` yet.
+| Step | Return | Calmar | Rank (Calmar) |
+|------|--------|--------|---------------|
+| 0.30 | -87.39% | -16.61 | 2 |
+| **0.40 (default)** | **-87.35%** | **-17.18** | **4 (worst)** |
+| 0.50 | -87.55% | -15.33 | **1** |
+| 0.60 | -87.35% | -17.17 | 3 |
 
-Default `CryptoParams.grid_atr_step = 0.40` — center of sweep band.
-
----
-
-## Interim (no measurements yet)
-
-Cannot confirm or deny plateau until P2-05 `grid_rank` payload arrives.
-
-**Pre-registration criteria for plateau (P5-style):**
-
-- Top-3 steps by Calmar within **≤10%** return of best
-- 0.40 in top-3 by Calmar on Base fill
-- Conservative fill does not invert ranking
+Source: `outputs/experiments/crypto_btc_grid_atr_step/crypto_results.json`
 
 ---
 
-## Remaining work
+## Plateau verdict
 
-- [ ] P2-05 complete → read `crypto_results.json` grid_rank
-- [ ] Run plateau check (manual or `qtb/optimize` if available)
-- [ ] Mark P2-11 **done** with PASS/FAIL verdict
+**FAIL — no actionable plateau.**
+
+1. Return spread **0.20pp** — flat band in catastrophic ~-87% zone (inert plateau).
+2. **0.40 is worst by Calmar** — W-02 **not supported**; do not promote default spacing as optimum.
+3. 0.50 nominally best Calmar but -87.55% return — not deployable.
+4. Consistent with P2-06 range FAIL and leverage scans.
 
 ---
 
-## Related
+## Evidence chain
 
-- Config: `configs/experiments/crypto_btc_grid_atr_step.yaml`
-- P2-06 range sweep (±3/5/7) also running — separate question (Q-crypto-3)
+- Review: `outputs/review_logs/2026-09-13_P2-05_btc_grid_atr_FAIL.md`
+- Artifacts: `outputs/experiments/crypto_btc_grid_atr_step/CRYPTO_REPORT.md`
