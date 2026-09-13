@@ -296,4 +296,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T21:40Z | P3-03 interim review | directional=-58.70% ≡ default
 2026-09-13T21:40Z | P3-09/10 note | blocked on seed date aggTrades
 2026-09-13T21:40Z | checkpoint 2140Z | pytest 139 pass
+2026-09-13T21:50Z | timer research-continue | **grid DONE -58.70%** = directional; 70_30 3/4
+2026-09-13T21:50Z | P3-03 finding | short structure mix **inert** on 65d tick
+2026-09-13T21:50Z | checkpoint 2150Z | ~60min to P3-03 done
 ```

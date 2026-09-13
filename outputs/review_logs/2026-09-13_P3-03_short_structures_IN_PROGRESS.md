@@ -17,17 +17,17 @@ Window: 65d Binance tick overlap (1546 bars)
 | Structure | Return | Calmar | Status |
 |-----------|--------|--------|--------|
 | directional | **-58.70%** | -1.88 | done |
-| grid | — | — | running (~22min) |
-| 70_30 (default) | -58.70% | -1.88 | baseline (P3-01) |
+| grid | **-58.70%** | -1.88 | done |
+| 70_30 (default) | -58.70% (expected) | -1.88 | running (3/4) |
 | 50_50 | — | — | pending |
 
 ## Early finding
 
-**directional ≡ default 70_30** at −58.70% on this window — short-phase structure mix appears **inert** so far; awaiting grid / 50_50 confirmation.
+**directional = grid = default** at −58.70% on this window — short-phase structure mix appears **fully inert** (identical returns through 2/4). Awaiting 70_30 confirm + 50_50.
 
 ## ETA
 
-~2 structures remaining × ~30min ≈ **~60min** from 21:40Z.
+~2 structures remaining × ~30min ≈ **~60min** from 21:50Z (70_30 + 50_50).
 
 ## Next
 

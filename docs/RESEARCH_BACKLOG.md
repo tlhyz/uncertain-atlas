@@ -65,7 +65,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 |----|------|--------|-------------|
 | P3-01 | Re-run dual on Binance ticks (tick_precise) | **done** | FAIL reproduces P1-11 dual -58.70% — outputs/review_logs/2026-09-13_P3-01_dual_tick_FAIL.md |
 | P3-02 | Short init 10/15/20% sweep | **done** | FAIL 20% best return -58.70%; 10% worst -59.24%; Q-tech-2 partial — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
-| P3-03 | Short structure dir vs grid vs 70/30 | **in_progress** | 2/4 grid ~22min; directional=-58.70% — outputs/review_logs/2026-09-13_P3-03_short_structures_IN_PROGRESS.md |
+| P3-03 | Short structure dir vs grid vs 70/30 | **in_progress** | 3/4 70_30 running; dir=grid=-58.70% inert — outputs/review_logs/2026-09-13_P3-03_short_structures_IN_PROGRESS.md |
 | P3-04 | Drawdown set A/B/C comparison | pending | config ready; queue after P3-03 |
 | P3-05 | Reversal R1–R5 no-lookahead tests | **done** | PASS — outputs/review_logs/2026-09-13_P3-05_reversal_no_leak_PASS.md |
 | P3-06 | Right-side reserve 25/30/35% | pending | config ready; queue after P3-04 |
