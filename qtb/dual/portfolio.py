@@ -477,7 +477,7 @@ def run_dual_portfolio(
                         bar_trades = snxx_trades
                         mark_px = float(snxx_c[i])
                         o, h, l = float(snxx["open"].iloc[i]), float(snxx["high"].iloc[i]), float(snxx["low"].iloc[i])
-                    if tick_precise and (bar_trades is None or bar_trades.empty):
+                    if tick_precise and tech_tick_fills and (bar_trades is None or bar_trades.empty):
                         raise RuntimeError(
                             f"tick_precise: no aggTrades in bar {bar_ts_soxl if leg.symbol == 'SOXL' else bar_ts_snxx} "
                             f"for {leg.symbol} — refuse bar approximation"
@@ -498,7 +498,7 @@ def run_dual_portfolio(
                             leg.state, leg.direction, leg.leverage,
                             leg.target_notional, bar_trades, fee, fill,
                         )
-                    elif not tick_precise:
+                    elif not tick_precise or not tech_tick_fills:
                         _rebalance_leg(leg, i, mark_px, leg.target_notional, fee, fill)
 
             for leg in legs[4:]:

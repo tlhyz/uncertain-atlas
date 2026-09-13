@@ -277,7 +277,11 @@ def run_crypto_job(cfg: dict[str, Any]) -> dict[str, Any]:
     if cfg.get("run_c1_baseline", True) and not cfg.get("smoke"):
         print("[run] C1 baseline...")
         payload["c1_baseline"] = run_binance_crypto_c1(
-            start=start, end=end, cache_only=cache_only, fill_mode=fill_mode,
+            start=start,
+            end=end,
+            cache_only=cache_only,
+            fill_mode=fill_mode,
+            skip_tick_validation=bool(cfg.get("skip_tick_validation")),
         )
 
     json_path = out_dir / "crypto_results.json"

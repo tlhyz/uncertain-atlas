@@ -178,19 +178,24 @@ def run_binance_crypto_c1(
     end: str = "2024-11-30",
     cache_only: bool = False,
     fill_mode: str = "base",
+    skip_tick_validation: bool = False,
 ) -> dict[str, Any]:
-    """CRYPTO_C1: BTC independent long on Binance aggTrades + klines."""
+    """CRYPTO_C1: BTC/ETH/SOL independent book on Binance aggTrades + klines."""
     from .data import load_binance_crypto_dataset
 
-    data = load_binance_crypto_dataset(start, end, download_trades=True, cache_only=cache_only)
+    data = load_binance_crypto_dataset(
+        start, end, download_trades=True, cache_only=cache_only,
+        skip_tick_validation=skip_tick_validation,
+    )
     dp = DualParams(unified_signal=False)
     r_ind = run_dual_portfolio(
         data, dp, name="C1_independent_ticks", fill_mode=fill_mode,
         crypto_tick_fills=True, tech_disabled=True, tick_precise=True,
     )
+    # Tech book uses placeholder bars on C1 — bar fills for tech, tick fills for crypto.
     r_uni = run_dual_portfolio(
-        data, DualParams(unified_signal=True), name="C1_unified_ticks", fill_mode=fill_mode,
-        crypto_tick_fills=True, tech_disabled=False, tick_precise=True,
+        data, DualParams(unified_signal=True), name="C1_unified_crypto_ticks", fill_mode=fill_mode,
+        crypto_tick_fills=True, tech_tick_fills=False, tech_disabled=False, tick_precise=True,
     )
     # Tech disabled vs unified with synthetic tech drawdown when unified
     m_ind = summarize_portfolio(r_ind, initial=CRYPTO_BOOK + GLOBAL_RESERVE + TECH_BOOK)
