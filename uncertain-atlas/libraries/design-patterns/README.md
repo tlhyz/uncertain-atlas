@@ -326,6 +326,7 @@
 - [name-the-procfull-bar](name-the-procfull-bar.md)
 - [name-the-procht-bar](name-the-procht-bar.md)
 - [name-the-procreject-bar](name-the-procreject-bar.md)
+- [name-the-verifyaccept-bar](name-the-verifyaccept-bar.md)
 - [name-the-procaccept-bar](name-the-procaccept-bar.md)
 - [name-the-misbtvp-bar](name-the-misbtvp-bar.md)
 - [name-the-misbheighttime-bar](name-the-misbheighttime-bar.md)
