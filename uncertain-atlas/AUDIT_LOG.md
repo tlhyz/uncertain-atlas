@@ -4480,6 +4480,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 
+| A2205 | 高 | 看见 Process 的 height / time 对上拟议块头 / 看见对上了 会被写成已经验过块头，或当成已经跑过 Process | 官方 ProcessProposal Usage：The height and time values match the values from the header of the proposed block |
+| A2206 | 高 | 看见 ProcessProposalRequest.height 是拟议块的高度 / ProcessProposalRequest.time 是拟议块的时间戳 / 看见填了 height / time 会被写成已经 Usage 那种 match the values from the header，或当成已经验过票上时间 | 官方 ProcessProposal Request 表：height / time 栏 vs Usage match 语句 |
+| A2207 | 高 | 看见 Process height / time match proposed block header / 看见 match header 会被写成已经是 FinalizeBlockRequest 刚决定那块的字段，或当成已经 Finalize height/time match interchangeable | 官方 ProcessProposal Usage vs FinalizeBlock Usage |
+| A2208 | 中 | 怎样对 height / time / 怎样和 Finalize 请求栏对齐会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2209 | 记录 | 会与 417 / 419 / 416 糊成「看见 Process 填了 height/time 就已经验过块头、已经对上了、已经是 Finalize 字段 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposal height/time 对上拟议块头正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经验过块头 / 已经 Usage 那种对上了 / 已经是 FinalizeBlockRequest 刚决定那块的字段 标成另一对象 |
+
 | A2200 | 高 | 看见 ProcessProposal Contains all information on the proposed block needed to fully execute it / 看见含执行所需全部信息 会被写成已经执行那些交易，或当成已经 Finalize 跑过 | 官方 ProcessProposal Usage：Contains all information on the proposed block needed to fully execute it |
 | A2201 | 高 | 看见 ProcessProposalRequest 有 txs + proposed_last_commit + misbehavior + hash + height + time + next_validators_hash + proposer_address / 看见八栏齐 会被写成已经只有 PrepareProposalResponse.txs，或当成已经只有 raw proposal | 官方 ProcessProposal Request 表：八栏；PrepareProposalResponse 只有 txs |
 | A2202 | 高 | 看见含提案块上执行所需的全部信息 / 看见填了信息 会被写成已经是 FinalizeBlockRequest 刚决定那块的字段，或当成已经只有 txs 字段就够 | 官方 ProcessProposal Usage vs FinalizeBlock Request |
