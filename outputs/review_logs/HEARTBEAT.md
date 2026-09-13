@@ -49,4 +49,9 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-13T04:13Z | P1-11 running | 150+ min (~2h30m)
 2026-09-13T04:24Z | P2-02 running | 100+ min; ~25min/level on 2184 tick bars
 2026-09-13T04:24Z | P1-11 running | 160+ min (~2h40m)
+2026-09-13T04:30Z | timer research-continue | read backlog + cadence; pytest 126 pass
+2026-09-13T04:30Z | P1-11 running | ~168 min (~2h48m); DUAL_REPORT pending; 99.4% CPU
+2026-09-13T04:30Z | P2-02 running | ~107 min; leverage scan active; CRYPTO_REPORT pending
+2026-09-13T04:30Z | checkpoint | outputs/review_logs/2026-09-13_P1-11_P2-02_dual_jobs_CHECKPOINT_0430Z.md
+2026-09-13T04:30Z | next pending | P0-02 blocked; P2-03 queued after P2-02 (ETH klines ready)
 ```
