@@ -321,6 +321,7 @@
 - [name-the-ext-vi-table](name-the-ext-vi-table.md)
 - [name-the-fin-req](name-the-fin-req.md)
 - [name-the-ci-notes-order](name-the-ci-notes-order.md)
+- [name-the-ci-fields-bar](name-the-ci-fields-bar.md)
 - [name-the-validatorusage-gates](name-the-validatorusage-gates.md)
 - [name-the-vi-usageavail-extract](name-the-vi-usageavail-extract.md)
 - [name-the-ext-ci-notes-order](name-the-ext-ci-notes-order.md)

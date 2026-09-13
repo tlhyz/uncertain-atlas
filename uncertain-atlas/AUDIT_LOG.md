@@ -4479,6 +4479,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2156 | 高 | 看见 CometBFT 通过更新验证者集合的逻辑保证这个顺序 / 看见集合写入 store 时顺序也落盘 会被写成已经由应用排过，或当成已经是收到票时的顺序 | 官方 Notes：CometBFT guarantees the votes ordering through its logic to update the validator set; ordering persisted when validator set saved in the store |
 | A2157 | 高 | 看见造 CommitInfo 时从 store 再装集合 / 看见从 store 装回 会被写成已经从拟议块或已决块抽出，或当成已经是 ExtendedCommitInfo Notes 那套话就已经是同一句 | 官方 Notes：validator set is loaded from the store when building the CommitInfo, ensuring order is maintained from the persisted validator set |
 | A2158 | 中 | 怎样写 CommitInfo Notes 票序正式三事 / 怎样从 store 再装 / 怎样排 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+
+| A2160 | 高 | 看见 CommitInfo.round 是提交轮 / 看见填了 round 会被写成已经按投票权排过，或当成已经罚没 | 官方 Fields：round is Commit round. Reflects the round at which the block proposer decided in the previous height |
+| A2161 | 高 | 看见 CommitInfo.votes 是上一验证者集合里各人的投票信息 / 看见填了 votes 会被写成已经进了块，或当成已经交差 | 官方 Fields：votes is List of validators' addresses in the last validator set with their voting information |
+| A2162 | 高 | 看见 Fields 栏描述 round 和 votes / 看见有 Fields 会被写成已经是 CommitInfo Notes 那套票序话就已经是同一句 | 官方把 Fields 表和 Notes 分开写 |
+| A2163 | 中 | 怎样写 CommitInfo Fields 栏 / 怎样填 round / 怎样读 votes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2164 | 记录 | 会与 392 / 444 / 365 糊成「看见 Process / Finalize 里有 CommitInfo 就已经填了提交轮、已经按投票权排好、已经进了块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CommitInfo Fields 栏正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经按投票权排过 / 已经进了块 / 已经是 Notes 那套票序话 标成另一对象 |
 | A2159 | 记录 | 会与 365 / 441 / 392 糊成「看见 Process / Finalize 里有 CommitInfo 就已经按投票权排好、已经进了块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CommitInfo Notes 票序正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经进了块 / 已经由应用排过 / 已经从拟议块或已决块抽出 标成另一对象 |
 
 | A2154 | 记录 | 会与 364 / 365 / 369 糊成「看见 Prepare / Process / Finalize 里都有验证者就已经同一门、同一路」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Validator Usage 四门映射正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经同一门 / 已经同一路 / 已经可以 interchangeable 标成另一对象 |
