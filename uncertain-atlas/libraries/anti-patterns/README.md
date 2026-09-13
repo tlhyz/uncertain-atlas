@@ -442,6 +442,7 @@
 - [chktxlane-sold-as-nolane](chktxlane-sold-as-nolane.md)
 - [echousage-sold-as-flush](echousage-sold-as-flush.md)
 - [flushusage-sold-as-echo](flushusage-sold-as-echo.md)
+- [infousage-sold-as-handshakebundled](infousage-sold-as-handshakebundled.md)
 - [commitretaincaution-sold-as-pruning](commitretaincaution-sold-as-pruning.md)
 - [commitpersist-sold-as-finalize](commitpersist-sold-as-finalize.md)
 - [finmorepre-sold-as-timeout](finmorepre-sold-as-timeout.md)

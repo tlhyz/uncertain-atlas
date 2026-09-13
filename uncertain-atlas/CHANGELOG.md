@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 494）
+
+- CometBFT Info Usage 正式三事工作实例（官方 ABCI++ Methods Info Usage Return information about the application state / Used to sync during a handshake on startup or on recovery / The returned app_version will be included in the Header of every block，实现 / Info Usage 正式三事，不另写 19 节）：看见 Return information about the application state 不是 QueryState interchangeable / 已经 persisted / Info 回包 data bundled interchangeable。看见 Used to sync during handshake on startup or on recovery 不是 Info 握手 bundled（370） interchangeable / 已经快照重放 / Info 请求 version 栏 bundled interchangeable。看见 app_version included in Header of every block 不是 last_block persisted during Commit interchangeable / Info 回包 version interchangeable / 已经印进本头 AppHash。Info Usage 正式三事不是不变量 370，也不是不变量 379 / 389 / 314。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 494；语料 C498；模式 name-the-infousage-bar；反模式 infousage-sold-as-handshakebundled；L10.3 第 490 条。填 L4.4 / CometBFT 档案 Info Usage 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样写 Info 回包、怎样对版本、怎样落盘。不编博物馆页。不另写 19 节。不与 370 / 379 / 389 / 314 / 367 / 147 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 QueryState interchangeable / Info 握手 bundled interchangeable / 已经 persist 已经落盘 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 493）
 
 - CometBFT Flush Usage 正式三事工作实例（官方 ABCI++ Methods Flush Usage Signals messages queued on client should be flushed to server / Called periodically to ensure async requests are actually sent / Called immediately for sync request returns when Flush response comes back，实现 / Flush Usage 正式三事，不另写 19 节）：看见 Signals messages queued should be flushed to server 不是 Echo 测 implementation interchangeable / 已经送到 / HasChannel 入队 interchangeable。看见 Called periodically to ensure async requests are actually sent 不是 Echo 用来测实现 interchangeable / 已经是四门 interchangeable。看见 Called immediately for sync request returns when Flush response comes back 不是 Echo 回包 Message interchangeable / 已经能往下走 interchangeable。Flush Usage 正式三事不是不变量 374，也不是不变量 492，也不是不变量 309 / 307 / 310。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

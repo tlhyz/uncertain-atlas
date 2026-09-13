@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2405 | 高 | 看见 Return information about the application state / 看见 Info 用来回报应用状态 会被写成已经 QueryState / ExecuteTxState interchangeable，或当成已经 Info 回包 data 就代表已经回报状态 / 已经 handshake 就等于已经 persisted | 官方 Info Usage：Return information about the application state |
+| A2406 | 高 | 看见 Used to sync CometBFT with the application during a handshake that happens on startup or on recovery / 看见启动或恢复时握手对齐 会被写成已经 Info 握手 bundled（370） interchangeable，或当成已经是快照重放 / Info 请求 version 栏 bundled interchangeable | 官方 Info Usage：Used to sync CometBFT with the application during a handshake that happens on startup or on recovery |
+| A2407 | 高 | 看见 The returned app_version will be included in the Header of every block / 看见回的 app_version 会写进每一块 Header 会被写成已经 last_block_app_hash / last_block_height persisted during Commit interchangeable，或当成已经 Info 回包 version interchangeable / 已经印进本头 AppHash | 官方 Info Usage：The returned `app_version` will be included in the Header of every block |
+| A2408 | 中 | 怎样写 Info 回包 / 怎样对版本 / 怎样落盘 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2409 | 记录 | 会与 370 / 379 / 389 / 314 / 367 / 147 糊成「看见能回 Info 就已经 QueryState、已经握手 bundled 交差、已经 persist 已经落盘」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 QueryState interchangeable / Info 握手 bundled interchangeable / 已经 persist 已经落盘 标成另一对象 |
+
 | A2400 | 高 | 看见 Signals that messages queued on the client should be flushed to the server / 看见 Flush 要把客户端排队的消息冲到服务端 会被写成已经 Echo a string to test an ABCI client/server implementation / Echo 用来测实现 interchangeable，或当成已经 HasChannel 就已经入队 / 已经送到 interchangeable | 官方 Flush Usage：Signals that messages queued on the client should be flushed to the server |
 | A2401 | 高 | 看见 Called periodically to ensure async requests are actually sent / 看见定期 Flush 是为了让异步请求真发出去 会被写成已经 Echo 用来测实现 interchangeable，或当成已经一条连接就已经是四门 / 已经交差 interchangeable | 官方 Flush Usage：Called periodically to ensure async requests are actually sent |
 | A2402 | 高 | 看见 Called immediately for sync request; returns when Flush response comes back / 看见立刻 Flush 是为了做成同步请求、Flush 回包回来才算这次同步 会被写成已经 Echo 回包 Message 是入参那串 interchangeable，或当成已经 Commit 里等广播就已经能往下走 / 已经 Commit interchangeable | 官方 Flush Usage：Called immediately for sync request; returns when Flush response comes back |
