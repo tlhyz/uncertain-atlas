@@ -326,6 +326,7 @@
 - [name-the-procfull-bar](name-the-procfull-bar.md)
 - [name-the-procht-bar](name-the-procht-bar.md)
 - [name-the-procreject-bar](name-the-procreject-bar.md)
+- [name-the-chktxlane-bar](name-the-chktxlane-bar.md)
 - [name-the-commitpersist-bar](name-the-commitpersist-bar.md)
 - [name-the-finmorepre-bar](name-the-finmorepre-bar.md)
 - [name-the-finwhenparts-bar](name-the-finwhenparts-bar.md)

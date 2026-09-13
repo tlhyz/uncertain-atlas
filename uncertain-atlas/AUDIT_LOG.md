@@ -4484,6 +4484,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
+| A2345 | 高 | 看见 lane_id 是空字符串 / 看见应用没在 CheckTx 回包里设道 会被写成已经 priority 0 留给不设道（367），或当成已经从池里删掉 / 已经没进池 | 官方 CheckTx Usage：If lane_id is an empty string … the transaction will be assigned to the default lane |
+| A2346 | 高 | 看见 assigned to the default lane / 看见会放进默认道 会被写成已经是 default_lane 那个标识本身写进了回包，或当成已经排了优先 / 已经进了块 | 官方 CheckTx Usage：assigned to the default lane |
+| A2347 | 高 | 看见 lane_id 的值必须在 ResponseInfo 里定义过的车道范围内 / 看见填了道 会被写成已经在 Info 回了 lane_priorities / default_lane 就算选型交差，或当成已经 CheckTx 回包栏（381） interchangeable | 官方 CheckTx Usage：The value of lane_id has to be in the range of lanes defined by the application in ResponseInfo |
+| A2348 | 中 | 怎样填 lane_id / 怎样选 default_lane / 怎样写 lane_priorities 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2349 | 记录 | 会与 367 / 381 / 317 / 373 糊成「看见 CheckTx 回了 lane_id 就已经不设道、已经排了优先、已经在 Info 表范围内交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx Usage lane_id 正式二事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 priority 0 不设道 / Info 表选型 / 已经排了优先 标成另一对象 |
+
 | A2340 | 高 | 看见 Signal the Application to persist application state / 看见叫 Commit 让应用落盘 会被写成已经在 Finalize 改了就已经落盘，或当成已经引擎 persist tx outputs / AppHash / ResultsHash | 官方 Commit Usage：Signal the Application to persist application state |
 | A2341 | 高 | 看见 Application is expected to persist its state at the end of this call / 看见应在这次 Commit 返回前落盘 会被写成已经 Commit 不带参数就等于已经落盘，或当成已经 signal 就已经交差 | 官方 Commit Usage：Application is expected to persist its state at the end of this call, before returning from Commit |
 | A2342 | 高 | 看见 Historical blocks may also be required for auditing / replay of non-persisted heights / light client verification / 看见历史块还可能要用于审计回放轻客户端验 会被写成已经 retain_height 默认 0 就等于已经在剪，或当成已经全网删了就只有 state sync 能加新节点 | 官方 Commit Usage retain_height with caution：Historical blocks may also be required for other purposes, e.g. auditing, replay of non-persisted heights, light client verification |

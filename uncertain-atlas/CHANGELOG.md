@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 482）
+
+- CometBFT CheckTx Usage lane_id 正式二事工作实例（官方 ABCI++ Methods CheckTx Usage empty lane_id assigned to default lane / lane_id in ResponseInfo range，实现 / CheckTx Usage lane_id 正式二事，不另写 19 节）：看见 empty lane_id 不是 priority 0 留给不设道 / 已经从池里删掉。看见 assigned to default lane 不是 default_lane 标识 / 已经排了优先。看见 lane_id in ResponseInfo range 不是 Info 表选型 / CheckTx 回包栏 interchangeable。CheckTx Usage lane_id 正式二事不是不变量 367，也不是不变量 381，也不是不变量 317。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 482；语料 C486；模式 name-the-chktxlane-bar；反模式 chktxlane-sold-as-nolane；L10.3 第 478 条。填 L4.4 / CometBFT 档案 CheckTx Usage lane_id 正式二事 / 实现表 / 05b / 共识专题。
+- 不抄怎样填 lane_id、怎样选 default_lane。不编博物馆页。不另写 19 节。不与 367 / 381 / 317 / 373 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 priority 0 不设道 / Info 表选型 / 已经排了优先 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 481）
 
 - CometBFT Commit Usage persist signal 正式三事工作实例（官方 ABCI++ Methods Commit Usage Signal persist application state / expected persist at end of this call / Historical blocks may also be required for auditing replay light client verification，实现 / Commit Usage persist signal 正式三事，不另写 19 节）：看见 Signal persist application state 不是已经在 Finalize 改了就已经落盘 / 已经引擎 persist 这三份。看见 Expected persist at end of this call 不是已经 Commit 不带参数就等于已经落盘。看见 Historical blocks required for auditing / replay / light client 不是已经 retain_height 默认 0 就等于已经在剪。Commit Usage persist signal 正式三事不是不变量 335，也不是不变量 399，也不是不变量 366。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

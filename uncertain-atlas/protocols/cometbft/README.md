@@ -145,7 +145,7 @@ VoteInfo 能按到场定奖惩不是已经罚没：[`../../tracks/implementation
 
 retain_height 默认 0 不是已经在剪：[`../../tracks/implementation/worked-example-retain-vs-kept.md`](../../tracks/implementation/worked-example-retain-vs-kept.md)（不变量 366）。看见低于这个高度的块可以被删不是已经没有历史。看见全网都删了会永久丢不是已经能从创世再装。
 
-没定义 lane_priorities 不是已经排了优先：[`../../tracks/implementation/worked-example-lane-vs-priority.md`](../../tracks/implementation/worked-example-lane-vs-priority.md)（不变量 367）。看见空表对空默认不是已经选型。看见优先级 0 留给不设道不是已经进了块。
+没定义 lane_priorities 不是已经排了优先：[`../../tracks/implementation/worked-example-lane-vs-priority.md`](../../tracks/implementation/worked-example-lane-vs-priority.md)（不变量 367）。CheckTx Usage lane_id 正式二事：[`../../tracks/implementation/worked-example-chktxlane-vs-default.md`](../../tracks/implementation/worked-example-chktxlane-vs-default.md)（不变量 482）。看见空 lane_id 不是 priority 0 留给不设道。看见 assigned to default lane 不是 default_lane 标识 / 已经排了优先。看见 lane_id 必须在 ResponseInfo 范围内不是 Info 表选型 interchangeable。看见空表对空默认不是已经选型。看见优先级 0 留给不设道不是已经进了块。
 
 快照全字段（含 Metadata）对上不是已经装完：[`../../tracks/implementation/worked-example-snapshot-vs-identical.md`](../../tracks/implementation/worked-example-snapshot-vs-identical.md)（不变量 368）。看见引擎不解释 format / hash 不是已经轻验 AppHash。看见空快照也至少 1 块不是已经齐。
 

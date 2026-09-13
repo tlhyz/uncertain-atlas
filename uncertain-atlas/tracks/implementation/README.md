@@ -69,6 +69,7 @@
 - [`worked-example-validator-vs-update.md`](worked-example-validator-vs-update.md) — Validator 用 address 认人 ≠ 已经带了公钥；不带 PubKey ≠ 已经选型；ValidatorUpdate 用公钥认人 ≠ 已经改了集合（不变量 364）
 - [`worked-example-voteinfo-vs-reward.md`](worked-example-voteinfo-vs-reward.md) — VoteInfo 能按到场定奖惩 ≠ 已经罚没；从拟议块或已决块抽出 ≠ 已经带了公钥；按投票权降序排 ≠ 已经进了块（不变量 365）
 - [`worked-example-retain-vs-kept.md`](worked-example-retain-vs-kept.md) — retain_height 默认 0 ≠ 已经在剪；低于这个高度的块可以被删 ≠ 已经没有历史；全网都删了会永久丢 ≠ 已经能从创世再装（不变量 366）
+- [`worked-example-chktxlane-vs-default.md`](worked-example-chktxlane-vs-default.md) — empty lane_id ≠ priority 0 留给不设道 / 已经从池里删掉；assigned to default lane ≠ default_lane 标识 / 已经排了优先；lane_id in ResponseInfo range ≠ Info 表选型 / CheckTx 回包栏 interchangeable（不变量 482）
 - [`worked-example-lane-vs-priority.md`](worked-example-lane-vs-priority.md) — 没定义 lane_priorities ≠ 已经排了优先；空表对空默认 ≠ 已经选型；优先级 0 留给不设道 ≠ 已经进了块（不变量 367）
 - [`worked-example-snapshot-vs-identical.md`](worked-example-snapshot-vs-identical.md) — 快照全字段（含 Metadata）对上 ≠ 已经装完；引擎不解释 format / hash ≠ 已经轻验 AppHash；空快照也至少 1 块 ≠ 已经齐（不变量 368）
 - [`worked-example-extvoteinfo-vs-local.md`](worked-example-extvoteinfo-vs-local.md) — ExtendedVoteInfo 从本进程抽出 ≠ 已经从块里抽出；把验过的签交给应用 ≠ 已经按原样签；扩展关掉则字段全空 ≠ 已经到了启用高度（不变量 369）
