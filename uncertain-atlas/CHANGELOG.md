@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 507）
+
+- CometBFT ExtendVote When lock values 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 1 sets lockedValue and validValue to v / sets lockedRound and validRound to r / before calls ExtendVote with v，实现 / ExtendVote When lock values 正式三事，不另写 19 节）：看见 sets lockedValue/validValue 不是 +2/3 prevote 锁住 bundled（361） interchangeable / 已经会调 ExtendVote interchangeable。看见 sets lockedRound/validRound 不是 validValue 跳过 Prepare（356） interchangeable / 已经 locked interchangeable。看见 step 1 before ExtendVote call 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经广播 Precommit interchangeable。ExtendVote When lock values 正式三事不是不变量 361，也不是不变量 356 / 438 / 437。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 507；语料 C511；模式 name-the-extwhen-lock-bar；反模式 extwhen-lock-sold-as-bundled；L10.3 第 503 条。填 L4.4 / CometBFT 档案 ExtendVote When lock values 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做写锁、怎样调 ExtendVote、怎样构造 Precommit。不编博物馆页。不另写 19 节。不与 361 / 356 / 438 / 437 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 +2/3 prevote 锁住 bundled interchangeable / validValue 跳过 Prepare interchangeable / ExtendVote When 正式流程 bundled interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 506）
 
 - CometBFT PrepareProposal When return / use-as-proposal 正式三事工作实例（官方 ABCI++ Methods PrepareProposal When step 4 includes transaction list in return parameters / returns from the call；step 5 uses possibly modified block as proposal，实现 / PrepareProposal When return / use-as-proposal 正式三事，不另写 19 节）：看见 includes tx list in return 不是 raw proposal bundled（503） interchangeable / 已经能改这套就交差 interchangeable。看见 returns from call 不是 Process 紧跟 Prepare bundled（351） interchangeable / 已经不用再 Process interchangeable。看见 uses modified block as proposal 不是 validValue 跳过 Prepare（356） interchangeable / 已经 Process 八栏齐（453） interchangeable。PrepareProposal When return / use-as-proposal 正式三事不是不变量 503，也不是不变量 351 / 356 / 453 / 505。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
