@@ -4,6 +4,9 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-13 | P2-08 regime sample | PASS | outputs/review_logs/2026-09-13_P2-08_regime_label_sample_PASS.md |
+| 2026-09-13 | P2-04 SOL leverage | FAIL | outputs/review_logs/2026-09-13_P2-04_sol_leverage_FAIL.md |
+| 2026-09-13 | checkpoint 0550Z | CHECKPOINT | outputs/review_logs/2026-09-13_checkpoint_0550Z.md |
 | 2026-09-13 | P2-07 BTC grid mix | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-07_btc_grid_mix_IN_PROGRESS.md |
 | 2026-09-13 | P2-06 BTC grid range | IN_PROGRESS | outputs/review_logs/2026-09-13_P2-06_btc_grid_range_IN_PROGRESS.md |
 | 2026-09-13 | P1-11 65d tick backtest | FAIL | outputs/review_logs/2026-09-13_P1-11_65d_tick_backtest_FAIL.md |

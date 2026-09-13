@@ -1,0 +1,58 @@
+{
+  "start": "2024-09-01",
+  "end": "2024-11-30",
+  "symbols": {
+    "BTC": {
+      "bars": 2184,
+      "regime_counts": {
+        "RANGE_LOW_VOL": 2184
+      },
+      "regime_frac": {
+        "RANGE_LOW_VOL": 1.0
+      },
+      "range_high_vol_segments": [],
+      "range_high_vol_total_bars": 0
+    },
+    "ETH": {
+      "bars": 2184,
+      "regime_counts": {
+        "RANGE_LOW_VOL": 2183,
+        "BEAR": 1
+      },
+      "regime_frac": {
+        "RANGE_LOW_VOL": 0.9995,
+        "BEAR": 0.0005
+      },
+      "range_high_vol_segments": [],
+      "range_high_vol_total_bars": 0
+    },
+    "SOL": {
+      "bars": 2184,
+      "regime_counts": {
+        "RANGE_LOW_VOL": 2170,
+        "BEAR": 11,
+        "RANGE_HIGH_VOL": 3
+      },
+      "regime_frac": {
+        "RANGE_LOW_VOL": 0.9936,
+        "BEAR": 0.005,
+        "RANGE_HIGH_VOL": 0.0014
+      },
+      "range_high_vol_segments": [
+        {
+          "regime": "RANGE_HIGH_VOL",
+          "start": "2024-11-17 11:00:00+00:00",
+          "end": "2024-11-17 11:00:00+00:00",
+          "bars": 1
+        },
+        {
+          "regime": "RANGE_HIGH_VOL",
+          "start": "2024-11-17 13:00:00+00:00",
+          "end": "2024-11-17 14:00:00+00:00",
+          "bars": 2
+        }
+      ],
+      "range_high_vol_total_bars": 3
+    }
+  }
+}
