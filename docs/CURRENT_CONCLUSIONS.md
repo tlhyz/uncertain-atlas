@@ -81,7 +81,7 @@
 
 See `outputs/LIVE_CANDIDATES.md`.
 
-**No CORE or SMALL LIVE candidates.** P5 OOS + MC gates **FAIL** (C-07). BTC/ETH/SOL MEDIUM rows remain **A/B research only**.
+**No CORE or SMALL LIVE candidates.** P5 OOS + MC gates **FAIL** (C-07). BTC demoted to **LOW** (P6-02); ETH/SOL MEDIUM rows remain **A/B research only** pending P6-03.
 
 **Tech Short→Long:** explicitly **NOT** a live candidate until beats Cash→Long on Binance ticks + Gate OOS.
 
@@ -91,6 +91,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-14 | BTC LIVE row MEDIUM→LOW | P6-02 promotion gate FAIL (6 blocking) |
 | 2026-09-14 | C-07 added; W-01/W-02 updated; P5 sync | Daily audit; P4-03/P5-02/P5-04/P5-05 review logs |
 | 2026-09-13 | C-06 upgraded HIGH; P2 complete | P2-02/05/06/07 review logs |
 | 2026-09-13 | C-06 added; C-05 65d tick FAIL | P1-11, P2-03, P2-04 review logs |
