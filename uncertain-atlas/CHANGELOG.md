@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-14（续 585）
+
+- 不变量 473；语料 C445；模式 name-the-finfill-bar；反模式 finfill-sold-as-bundled；L10.3 第 437 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields even if Prepare/Process passed / 实现表 / 05b / 共识专题 / 停链面地图。473 finfill parent bundled 启动。
+
 ## 2026-09-14（续 584）
 
 - 不变量 584；语料 C444；模式 name-the-finprocgua-notcand-bar；反模式 finprocgua-notcand-sold-as-bundled；L10.3 第 436 条。填 L4.4 / CometBFT 档案 apply candidate state not ExecuteTxState 正式三事（360 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。360 Finalize 时的 Process 保证 unbundling 续（584 item 3）。
