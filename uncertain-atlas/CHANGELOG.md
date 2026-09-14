@@ -1,3 +1,7 @@
+## 2026-09-13（续 529）
+
+- 不变量 529；语料 C533；模式 name-the-verifyaccept-default-bar；反模式 verifyaccept-default-sold-as-bundled；L10.3 第 525 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage SHOULD Accept default strategy 正式三事 / 实现表 / 05b / 共识专题。
+
 ## 2026-09-13（续 528）
 
 - 不变量 528；语料 C532；模式 name-the-verifyaccept-liveness-bar；反模式 verifyaccept-liveness-sold-as-bundled；L10.3 第 524 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage unless really know liveness implications 正式三事 / 实现表 / 05b / 共识专题。
