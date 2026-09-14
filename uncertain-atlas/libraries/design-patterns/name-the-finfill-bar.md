@@ -7,7 +7,7 @@
 
 ## 三个名字
 
-1. **fill all fields not no need to provide again 不是 Finalize 时的 Process 保证 bundled：** 看见 will fill up all fields 不是已经不用再给，不是 360 bundled interchangeable / 583 not refill interchangeable / 582 not every validator interchangeable。
+1. **fill all fields not no need to provide again 不是 Finalize 时的 Process 保证 bundled：** 看见 will fill up all fields 不是已经不用再给，不是 360 bundled interchangeable / 583 not refill interchangeable / 567 not no need to provide again interchangeable / 582 not every validator interchangeable。
 2. **even if passed not field names match means ran Process 不是 Prepare/Process/Finalize same fields：** 看见 even if already passed 不是已经跑过 Process，不是 359 same fields interchangeable / 351 Process also on proposer interchangeable / 568 not passed means ran Process interchangeable。
 3. **fill all fields not request complete means committed 不是 finfields / finpersist bundled：** 看见请求齐了 不是已经交差，不是 407 finfields interchangeable / 335 finpersist interchangeable / 584 apply candidate interchangeable。
 
