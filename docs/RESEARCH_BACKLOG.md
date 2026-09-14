@@ -74,7 +74,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P3-09 | FAIL_F1 direct-up window | pending | blocked: needs SOXL 2025-09→10 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
 | P3-10 | FAIL_F2 no-recovery window | pending | blocked: needs SOXL 2024-09→11 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
 | P3-11 | Similar-window search top-20 real windows | **blocked** | empty on TECH_T2; max 1 window on 1546 bars — outputs/review_logs/2026-09-14_P3-11_similar_windows_BLOCKED.md |
-| P3-12 | Answer Q-tech-1 Short→Long vs Cash→Long | pending | Gate FAIL preserved |
+| P3-12 | Answer Q-tech-1 Short→Long vs Cash→Long | **done** | COMPLETE FAIL dual -58.70% vs B4 -25.19%; remove Short — outputs/experiments/Q_TECH_1_short_vs_cash_long.md |
 | P3-13 | Answer Q-tech-2 initial short % | **done** | FAIL via P3-02; 20% best return, no sweet spot — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
 | P3-14 | Answer Q-tech-8 bottom grid value-add | pending | |
 | P3-15 | Answer Q-tech-9 grid in trend phase | pending | |

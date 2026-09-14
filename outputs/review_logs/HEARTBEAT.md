@@ -381,4 +381,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T03:50Z | checkpoint 0350Z | P3-11 queued next
 2026-09-14T04:00Z | timer research-continue | **P3-08 DONE FAIL** G50 -57.85%; **P3-11 BLOCKED** empty top-20
 2026-09-14T04:00Z | checkpoint 0400Z | P3-12 next unblocked
+2026-09-14T04:10Z | timer research-continue | **P3-12 DONE** Q-tech-1 COMPLETE FAIL; remove Short from baseline
+2026-09-14T04:10Z | checkpoint 0410Z | P3-14 Q-tech-8 next
 ```
