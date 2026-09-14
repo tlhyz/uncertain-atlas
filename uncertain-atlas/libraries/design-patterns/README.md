@@ -390,6 +390,7 @@
 - [name-the-verify-formal-when](name-the-verify-formal-when.md)
 - [name-the-verify-status](name-the-verify-status.md)
 - [name-the-verify-resp-status](name-the-verify-resp-status.md)
+- [name-the-verifyrespstatus-validinvalid-bar](name-the-verifyrespstatus-validinvalid-bar.md)
 - [name-the-fin-resp-end](name-the-fin-resp-end.md)
 - [name-the-fin-resp-bar](name-the-fin-resp-bar.md)
 - [name-the-proc-resp-status](name-the-proc-resp-status.md)
