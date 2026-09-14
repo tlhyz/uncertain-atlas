@@ -91,7 +91,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P4-02 | Regime A Tech↓ Crypto↑ | **done** | DONE unblock; 7d Regime A 40 bars; strategy FAIL Δ=0 — outputs/review_logs/2026-09-14_P4-02_regime_A_DONE.md |
 | P4-03 | Regime B Tech↑ Crypto↓ | **done** | DONE 326 bars 21.1%; ind +2.3pp vs uni; uni crypto liq — outputs/review_logs/2026-09-14_P4-03_regime_B_DONE.md |
 | P4-04 | Regime C both up | **done** | DONE 450 bars 29.1%; largest quadrant; FAIL alpha — outputs/review_logs/2026-09-14_P4-04_regime_C_DONE.md |
-| P4-05 | Regime D both down | pending | |
+| P4-05 | Regime D both down | **done** | DONE 435 bars 28.1%; exact proxy match; FAIL hedging — outputs/review_logs/2026-09-14_P4-05_regime_D_DONE.md |
 | P4-06 | Regime E/F mixed | pending | |
 | P4-07 | Margin/reserve 80/20 70/30 60/40 | pending | |
 | P4-08 | Funding stress deleverage rule test | pending | |
