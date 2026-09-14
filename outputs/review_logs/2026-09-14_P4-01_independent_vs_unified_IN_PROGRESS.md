@@ -20,6 +20,10 @@ Compares `DualParams(unified_signal=False)` vs `True` on 65d tick overlap.
 | Binance 7d tick | 0 | 0 | P1 smoke |
 | Binance 65d | **not run** | — | P3-01 had flag off |
 
+## Status (05:10Z)
+
+First portfolio (independent or unified) ~20min; no delta results yet.
+
 ## Status (05:00Z)
 
 DATA_QUALITY PASS. `[run] independent vs unified...` — first portfolio ~10min, no results yet.
