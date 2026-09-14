@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-14（续 586）
+
+- 不变量 568；语料 C446；模式 name-the-finfill-notpassed-bar；反模式 finfill-notpassed-sold-as-bundled；L10.3 第 438 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not passed means ran Process 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 finfill unbundling 续（568 item 2）。
+
 ## 2026-09-14（续 585）
 
 - 不变量 473；语料 C445；模式 name-the-finfill-bar；反模式 finfill-sold-as-bundled；L10.3 第 437 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields even if Prepare/Process passed / 实现表 / 05b / 共识专题 / 停链面地图。473 finfill parent bundled 启动。
