@@ -81,7 +81,7 @@
 
 See `outputs/LIVE_CANDIDATES.md`.
 
-**No CORE or SMALL LIVE candidates.** P5 OOS + MC gates **FAIL** (C-07). BTC/ETH demoted to **LOW** (P6-02/03); SOL MEDIUM row **stale** pending P6-05 review.
+**No CORE, SMALL, or MEDIUM+ LIVE candidates.** P6 complete (2026-09-14): all 7 rows **LOW** — research reference only. Terminal outcome: **`NO EDGE FOUND`** for current hypothesis set.
 
 **Tech Short→Long:** explicitly **NOT** a live candidate — OOS FAIL vs B4 (−75pp holdout, P6-04); remove Short from baseline (C-05).
 
@@ -91,6 +91,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-14 | P6 complete; all LIVE rows LOW | P6-05 final audit; SOL demoted |
 | 2026-09-14 | ETH LIVE row MEDIUM→LOW | P6-03 promotion gate FAIL (6 blocking) |
 | 2026-09-14 | BTC LIVE row MEDIUM→LOW | P6-02 promotion gate FAIL (6 blocking) |
 | 2026-09-14 | C-07 added; W-01/W-02 updated; P5 sync | Daily audit; P4-03/P5-02/P5-04/P5-05 review logs |

@@ -37,7 +37,7 @@ Validate whether **Tech (SOXL/SNXX)** and **Crypto (BTC/ETH/SOL)** can run as **
 | **P5** | Robustness | MC 1000 paths + parameter plateau on finalists |
 | **P6** | Live candidates | `LIVE_CANDIDATES.md` with MEDIUM+ confidence rows only |
 
-**Current phase:** **P0-06 Phase 1.5 infra** (DATA_QUALITY gate, accounting invariants, future-leak tests) → then P1 data → P2 research
+**Current phase:** **P6 complete** (2026-09-14) — `NO EDGE FOUND` for live deploy; P0-02 awaits PR #8 merge
 
 **Permanent rules:** `.cursor/rules/quant-research-permanent.mdc` · timer `research-continue` every **10 min**
 

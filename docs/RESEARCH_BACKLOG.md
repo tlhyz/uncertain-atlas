@@ -120,7 +120,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P6-02 | Promote BTC row to MEDIUM confidence | **done** | FAIL demote MEDIUM→LOW; 5 blocking gates — outputs/review_logs/2026-09-14_P6-02_btc_promotion_FAIL.md |
 | P6-03 | Promote ETH row to MEDIUM confidence | **done** | FAIL demote MEDIUM→LOW; 6 blocking gates — outputs/review_logs/2026-09-14_P6-03_eth_promotion_FAIL.md |
 | P6-04 | Tech row only if beats Cash→Long OOS | **done** | FAIL holdout −75.49% vs B4 −0.38% (−75pp) — outputs/review_logs/2026-09-14_P6-04_tech_cash_long_oos_FAIL.md |
-| P6-05 | Final LIVE_CANDIDATES.md review | pending | |
+| P6-05 | Final LIVE_CANDIDATES.md review | **done** | 0 MEDIUM+ rows; SOL demoted; P6 complete — outputs/review_logs/2026-09-14_P6-05_live_candidates_review_DONE.md |
 
 ---
 
