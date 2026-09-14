@@ -107,7 +107,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P5-02 | Parameter plateau detector on ATR step | **done** | PLATEAU_INERT on returns; 0.40 worst Calmar — outputs/review_logs/2026-09-14_P5-02_plateau_detector_PASS.md |
 | P5-03 | Walk-forward split BTC 2019+ | **done** | FAIL ~−86.58% mean OOS; 3 calendar folds — outputs/review_logs/2026-09-14_P5-03_walk_forward_PARTIAL.md |
 | P5-04 | OOS holdout report for finalists | **done** | 0/2 pass; BTC 2024 −86.44%; dual −75.49% — outputs/review_logs/2026-09-14_P5-04_oos_holdout_FAIL.md |
-| P5-05 | DD>10/20/30% probability from MC | pending | |
+| P5-05 | DD>10/20/30% probability from MC | **in_progress** | tmux 65d dual-book MC running |
 | P5-06 | Liquidation probability from MC | pending | |
 
 ---
