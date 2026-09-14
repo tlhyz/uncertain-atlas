@@ -365,4 +365,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T02:30Z | checkpoint 0230Z | ETA ~96min
 2026-09-14T02:40Z | timer research-continue | P3-08 G75 2/5 ~10min; G100 -71.41%
 2026-09-14T02:40Z | checkpoint 0240Z | ETA ~86min
+2026-09-14T02:50Z | timer research-continue | **P3-08 G75 DONE -59.53%**; G50 3/5
+2026-09-14T02:50Z | checkpoint 0250Z | less grid helps; ETA ~72min
 ```

@@ -12,6 +12,18 @@ tmux `p3-08-grid-mix` — log `/tmp/p3-08_grid_mix.log`
 Config: `configs/experiments/dual_binance_tick_grid_mix.yaml`  
 Mixes: G100 / G75 / G50 / G25 / dynamic
 
+## Status (02:50Z)
+
+| Mix | Return | Calmar | vs baseline (−58.70%) |
+|-----|--------|--------|------------------------|
+| G100 | -71.41% | -2.07 | −12.71pp worse |
+| **G75** | **-59.53%** | -2.29 | −0.83pp worse |
+| G50 | — | — | running 3/5 (~3min) |
+| G25 | — | — | pending |
+| dynamic | — | — | pending |
+
+**Finding:** Less grid helps monotonically so far (G75 >> G100). Still worse than default dual.
+
 ## Status (02:40Z)
 
 | Mix | Return | Calmar | vs baseline (−58.70%) |
