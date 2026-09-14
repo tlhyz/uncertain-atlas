@@ -492,6 +492,7 @@
 - [extusage-sold-as-deterministic](extusage-sold-as-deterministic.md)
 - [verifyreqbar-sold-as-pubkey](verifyreqbar-sold-as-pubkey.md)
 - [verifywhen-latemay-sold-as-bundled](verifywhen-latemay-sold-as-bundled.md)
+- [preparewhen-lateext-unverified-sold-as-bundled](preparewhen-lateext-unverified-sold-as-bundled.md)
 - [verifywhen-keepdiscard-sold-as-bundled](verifywhen-keepdiscard-sold-as-bundled.md)
 - [verifywhen-status-sold-as-bundled](verifywhen-status-sold-as-bundled.md)
 - [verifywhen-call-sold-as-bundled](verifywhen-call-sold-as-bundled.md)
