@@ -1,3 +1,7 @@
+## 2026-09-14（续 570）
+
+- 不变量 570；语料 C574；模式 name-the-finproc-notallvalidators-bar；反模式 finproc-notallvalidators-sold-as-bundled；L10.3 第 566 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee not already every validator 正式三事（472 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。472 When calling ProcessProposal guarantee unbundling 启动（570）。
+
 ## 2026-09-14（续 569）
 
 - 不变量 569；语料 C573；模式 name-the-finfill-notdecprop-bar；反模式 finfill-notdecprop-sold-as-bundled；L10.3 第 565 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not decided/proposed interchangeable 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 fill all fields even if Prepare/Process passed unbundling 完成（569）。
