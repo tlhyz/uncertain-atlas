@@ -128,7 +128,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | 168 passed 2026-09-14T10:52Z P0-02 pre-merge check |
+| M-01 | Run `pytest -q` | **done** | 168 passed 2026-09-14T11:02Z idle checkpoint |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | C-07 + W-01/W-02 sync 2026-09-14 daily audit |
 | M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-14T09:00Z |
 | M-04 | Check PR CI status | **done** | PR #8 open; no checks reported |
@@ -140,6 +140,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Reason |
 |----|------|--------|--------|
+| P0-01 | Merge refactor PR #8 to main | blocked | awaiting human merge |
+| P0-02 | pytest green on main after merge | blocked | depends on P0-01; branch 168 green pre-merge |
 | X-01 | 3L ETF long-run grid | failed | Exp 001 — inventory loss |
 | X-02 | 3x PERP unattended SOL/PENGU/PUMP | failed | liquidations |
 | X-03 | Dual Short→Long on Gate overlap | failed | −51% vs B&H −30% |
