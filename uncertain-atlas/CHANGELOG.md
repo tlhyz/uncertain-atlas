@@ -1,3 +1,7 @@
+## 2026-09-14（续 540）
+
+- 不变量 540；语料 C544；模式 name-the-procreject-assume-notblockinvalid-bar；反模式 procreject-assume-notblockinvalid-sold-as-bundled；L10.3 第 536 条。填 L4.4 / CometBFT 档案 ProcessProposal REJECT consensus assumes not valid not block invalid 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。455 Process REJECT consensus assume unbundling 启动（540）。
+
 ## 2026-09-14（续 539）
 
 - 不变量 539；语料 C543；模式 name-the-verifystatus-reject-bar；反模式 verifystatus-reject-sold-as-bundled；L10.3 第 535 条。填 L4.4 / CometBFT 档案 VerifyStatus REJECT rejects whole vote 正式三事 / 实现表 / 05b / 共识专题。434 VerifyStatus 三事 unbundling 完成（537–539）。
