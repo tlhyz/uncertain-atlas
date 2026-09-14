@@ -409,6 +409,7 @@
 - [finapphash-sold-as-header](finapphash-sold-as-header.md)
 - [checktxguard-sold-as-optional](checktxguard-sold-as-optional.md)
 - [snapheight-sold-as-queryh](snapheight-sold-as-queryh.md)
+- [finfields-nothandshake-sold-as-bundled](finfields-nothandshake-sold-as-bundled.md)
 - [finfields-notdeterministic-sold-as-bundled](finfields-notdeterministic-sold-as-bundled.md)
 - [finfields-sold-as-equiv](finfields-sold-as-equiv.md)
 - [fintxs-sold-as-control](fintxs-sold-as-control.md)

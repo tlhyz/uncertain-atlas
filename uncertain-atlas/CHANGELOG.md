@@ -1,3 +1,7 @@
+## 2026-09-14（续 575）
+
+- 不变量 575；语料 C579；模式 name-the-finfields-nothandshake-bar；反模式 finfields-nothandshake-sold-as-bundled；L10.3 第 571 条。填 L4.4 / CometBFT 档案 Info 用来回应用状态信息 not handshake 正式三事（407 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。407 Finalize 字段余量 unbundling 完成（575）。
+
 ## 2026-09-14（续 574）
 
 - 不变量 574；语料 C578；模式 name-the-finfields-notdeterministic-bar；反模式 finfields-notdeterministic-sold-as-bundled；L10.3 第 570 条。填 L4.4 / CometBFT 档案 Finalize 实现必须确定 not like Prepare 正式三事（407 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。407 Finalize 字段余量 unbundling 续（574）。
