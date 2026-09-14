@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-14（续 582）
+
+- 不变量 582；语料 C434；模式 name-the-finprocgua-notallproc-bar；反模式 finprocgua-notallproc-sold-as-bundled；L10.3 第 428 条。填 L4.4 / CometBFT 档案 at least one non-byzantine ran Process not every validator 正式三事（360 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。360 Finalize 时的 Process 保证 unbundling 启动（582）。
+
 ## 2026-09-13（续 438）
 
 - CometBFT ExtendVote When 正式流程工作实例（官方 ABCI++ Methods ExtendVote When，实现 / ExtendVote When 正式流程，不另写 19 节）：看见应用回 extension 后 CometBFT 会填进 CanonicalVoteExtension、填其它字段并签名不是已经按原样签。看见会构造并签名 CanonicalVote 不是已经验过扩展。看见用 CanonicalVoteExtension 和 CanonicalVote 构造 Precommit 并广播不是已经写进 last_commit。ExtendVote When 正式流程不是不变量 358，也不是不变量 361，也不是不变量 34。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

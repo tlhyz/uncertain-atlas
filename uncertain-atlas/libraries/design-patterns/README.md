@@ -257,6 +257,7 @@
 - [name-the-prepare-valid](name-the-prepare-valid.md)
 - [name-the-non-rp-extension](name-the-non-rp-extension.md)
 - [name-the-prepare-fields](name-the-prepare-fields.md)
+- [name-the-finprocgua-notallproc-bar](name-the-finprocgua-notallproc-bar.md)
 - [name-the-finalize-processed](name-the-finalize-processed.md)
 - [name-the-extend-when](name-the-extend-when.md)
 - [name-the-finalize-when](name-the-finalize-when.md)
