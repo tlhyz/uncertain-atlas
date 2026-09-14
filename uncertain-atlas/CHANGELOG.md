@@ -1,3 +1,7 @@
+## 2026-09-14（续 538）
+
+- 不变量 538；语料 C542；模式 name-the-verifystatus-accept-bar；反模式 verifystatus-accept-sold-as-bundled；L10.3 第 534 条。填 L4.4 / CometBFT 档案 VerifyStatus ACCEPT accepts vote 正式三事 / 实现表 / 05b / 共识专题。
+
 ## 2026-09-14（续 537）
 
 - 不变量 537；语料 C541；模式 name-the-verifystatus-unknown-bar；反模式 verifystatus-unknown-sold-as-bundled；L10.3 第 533 条。填 L4.4 / CometBFT 档案 VerifyStatus UNKNOWN always wrong 正式三事 / 实现表 / 05b / 共识专题。
