@@ -25,6 +25,7 @@ from .experiments import (
     rank_leverage,
     rank_short_init,
     rank_drawdown_sets,
+    test_dd_pause_rules,
     test_funding_stress_deleverage,
     rank_margin_reserve,
     rank_right_side_reserve,
@@ -106,6 +107,8 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "margin_reserve_fracs": [0.80, 0.70, 0.60],
         "run_funding_stress_test": False,
         "funding_stress_thresholds": [None, 0.01, 0.015, 0.02],
+        "run_dd_pause_test": False,
+        "dd_pause_scenarios": [[None, None], [-0.10, None], [-0.12, -0.20], [-0.15, -0.25]],
         "run_soxl_snxx_weight_rank": False,
         "run_grid_mix_rank": False,
         "run_leverage_rank": True,
@@ -220,6 +223,23 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         payload["funding_stress_test"] = test_funding_stress_deleverage(
             data,
             thresholds=thresholds,
+            fill_mode=str(cfg.get("fill_mode") or "base"),
+            tick_precise=tick_precise,
+            portfolio_kwargs=pk,
+        )
+
+    if cfg.get("run_dd_pause_test", False):
+        raw_sc = cfg.get("dd_pause_scenarios") or [[None, None], [-0.10, None], [-0.12, -0.20], [-0.15, -0.25]]
+        scenarios: list[tuple[float | None, float | None]] = []
+        for pair in raw_sc:
+            soft = None if pair[0] is None or str(pair[0]).lower() == "null" else float(pair[0])
+            hard = None if pair[1] is None or str(pair[1]).lower() == "null" else float(pair[1])
+            scenarios.append((soft, hard))
+        print(f"[run] DD pause rules {scenarios}...")
+        pk = portfolio_kwargs_from_config(cfg, tick_precise=tick_precise)
+        payload["dd_pause_test"] = test_dd_pause_rules(
+            data,
+            scenarios=tuple(scenarios),
             fill_mode=str(cfg.get("fill_mode") or "base"),
             tick_precise=tick_precise,
             portfolio_kwargs=pk,

@@ -192,6 +192,10 @@ class DualParams:
     funding_stress_threshold: float | None = None  # rolling net funding cost / book equity (e.g. 0.01)
     funding_stress_deleverage: float = 0.5  # fraction to cut targets when stressed
     funding_stress_window_bars: int = 168  # 7d @ 1h
+    dd_soft_threshold: float | None = None  # account DD from peak (e.g. -0.10)
+    dd_hard_threshold: float | None = None  # e.g. -0.18
+    dd_soft_risk_scale: float = 0.5  # multiply targets at soft breach
+    dd_hard_risk_scale: float = 0.0  # multiply targets at hard breach (0 = pause new risk)
 
     def label(self) -> str:
         tag = "unified" if self.unified_signal else "independent"

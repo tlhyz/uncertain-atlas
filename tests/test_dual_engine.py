@@ -207,6 +207,15 @@ def test_funding_stress_deleverage_sweep():
     assert rows[1]["funding_stress_threshold"] == 0.01
 
 
+def test_dd_pause_rules_sweep():
+    from qtb.dual.experiments import test_dd_pause_rules
+
+    data = _mini_dataset(200)
+    rows = test_dd_pause_rules(data, scenarios=((None, None), (-0.10, None)), tick_precise=False)
+    assert len(rows) == 2
+    assert rows[0]["dd_soft_threshold"] is None
+
+
 def test_rank_soxl_snxx_weights_sweep():
     from qtb.dual.experiments import rank_soxl_snxx_weights
 

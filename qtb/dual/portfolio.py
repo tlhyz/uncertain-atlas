@@ -389,6 +389,10 @@ def run_dual_portfolio(
     stress_triggers_crypto = 0
     max_stress_tech = 0.0
     max_stress_crypto = 0.0
+    peak_total_eq = float(TOTAL_CAPITAL)
+    min_account_dd = 0.0
+    dd_soft_triggers = 0
+    dd_hard_triggers = 0
 
     crypto_bars = {
         s: {
@@ -467,6 +471,23 @@ def run_dual_portfolio(
                     stress_triggers_crypto += 1
                     for leg in legs[4:]:
                         leg.target_notional *= cut
+
+            if i > 0:
+                peak_total_eq = max(peak_total_eq, float(total_eq[i - 1]))
+                acct_dd = float(total_eq[i - 1]) / peak_total_eq - 1.0
+                min_account_dd = min(min_account_dd, acct_dd)
+                hard_th = params.dd_hard_threshold
+                soft_th = params.dd_soft_threshold
+                if hard_th is not None and acct_dd <= hard_th:
+                    dd_hard_triggers += 1
+                    scale = float(params.dd_hard_risk_scale)
+                    for leg in legs:
+                        leg.target_notional *= scale
+                elif soft_th is not None and acct_dd <= soft_th:
+                    dd_soft_triggers += 1
+                    scale = float(params.dd_soft_risk_scale)
+                    for leg in legs:
+                        leg.target_notional *= scale
 
             regime_log.append({
                 "ts": str(ts[i]),
@@ -633,6 +654,9 @@ def run_dual_portfolio(
         "funding_stress_triggers_crypto": stress_triggers_crypto,
         "max_rolling_funding_stress_tech": round(max_stress_tech, 6),
         "max_rolling_funding_stress_crypto": round(max_stress_crypto, 6),
+        "min_account_dd": round(min_account_dd, 6),
+        "dd_soft_triggers": dd_soft_triggers,
+        "dd_hard_triggers": dd_hard_triggers,
     }
     return PortfolioResult(
         name=name,

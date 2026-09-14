@@ -95,7 +95,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P4-06 | Regime E/F mixed | **done** | DONE 25 bars 1.6% residual; 98.4% coverage PASS — outputs/review_logs/2026-09-14_P4-06_regime_EF_DONE.md |
 | P4-07 | Margin/reserve 80/20 70/30 60/40 | **done** | 7d 60/40 best; 65d running — outputs/review_logs/2026-09-14_P4-07_margin_reserve_CONDITIONAL_FAIL.md |
 | P4-08 | Funding stress deleverage rule test | **done** | INERT 7d 0 triggers at 1-2% — outputs/review_logs/2026-09-14_P4-08_funding_stress_INERT.md |
-| P4-09 | Soft/hard DD pause rules | pending | |
+| P4-09 | Soft/hard DD pause rules | **in_progress** | 7d sweep running |
 
 ---
 

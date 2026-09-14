@@ -334,6 +334,50 @@ def rank_margin_reserve(
     return rows
 
 
+def test_dd_pause_rules(
+    data: DualDataset,
+    *,
+    scenarios: tuple[tuple[float | None, float | None], ...] = (
+        (None, None),
+        (-0.10, None),
+        (-0.12, -0.20),
+        (-0.15, -0.25),
+    ),
+    fill_mode: str = "base",
+    tick_precise: bool = False,
+    portfolio_kwargs: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
+    """Soft/hard account DD pause rules (P4-09) per configs/risk.yaml scans."""
+    pk = dict(portfolio_kwargs or {})
+    pk.pop("fill_mode", None)
+    pk.pop("tick_precise", None)
+    rows: list[dict[str, Any]] = []
+    for soft, hard in scenarios:
+        label = "baseline"
+        if soft is not None and hard is not None:
+            label = f"soft{int(abs(soft)*100)}_hard{int(abs(hard)*100)}"
+        elif soft is not None:
+            label = f"soft{int(abs(soft)*100)}"
+        print(f"[run] dd_pause {label}...")
+        dp = DualParams(dd_soft_threshold=soft, dd_hard_threshold=hard)
+        r = run_dual_portfolio(
+            data, dp, name=label, fill_mode=fill_mode, tick_precise=tick_precise, **pk,
+        )
+        m = summarize_portfolio(r)
+        m["dd_soft_threshold"] = soft
+        m["dd_hard_threshold"] = hard
+        m["dd_soft_triggers"] = r.components.get("dd_soft_triggers", 0)
+        m["dd_hard_triggers"] = r.components.get("dd_hard_triggers", 0)
+        m["min_account_dd"] = r.components.get("min_account_dd", 0)
+        print(
+            f"[run] dd_pause {label} done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"min_dd={100 * float(m.get('min_account_dd', 0)):.2f}% "
+            f"soft={m['dd_soft_triggers']} hard={m['dd_hard_triggers']}"
+        )
+        rows.append(m)
+    return rows
+
+
 def test_funding_stress_deleverage(
     data: DualDataset,
     *,
