@@ -1,3 +1,7 @@
+## 2026-09-14（续 543）
+
+- 不变量 543；语料 C547；模式 name-the-proccand-mayexecute-notcommitted-bar；反模式 proccand-mayexecute-notcommitted-sold-as-bundled；L10.3 第 539 条。填 L4.4 / CometBFT 档案 ProcessProposal MAY fully execute not already committed 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。452 ProcessProposal 候选执行 unbundling 启动（543）。
+
 ## 2026-09-14（续 542）
 
 - 不变量 542；语料 C546；模式 name-the-procreject-assume-notexecute-bar；反模式 procreject-assume-notexecute-sold-as-bundled；L10.3 第 538 条。填 L4.4 / CometBFT 档案 ProcessProposal REJECT consensus assume not can't execute candidate 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。455 Process REJECT consensus assume unbundling 完成（540–542）。
