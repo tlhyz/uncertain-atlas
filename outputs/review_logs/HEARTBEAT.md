@@ -385,4 +385,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T04:10Z | checkpoint 0410Z | P3-14 Q-tech-8 next
 2026-09-14T04:20Z | timer research-continue | **P3-14 DONE** Q-tech-8 FAIL; grid-only beats dual 33.5pp
 2026-09-14T04:20Z | checkpoint 0420Z | P3-15 Q-tech-9 next
+2026-09-14T04:30Z | timer research-continue | **P3-15 DONE** Q-tech-9 G50 sweet spot -57.85%; FAIL vs B3
+2026-09-14T04:30Z | checkpoint 0430Z | P3-16/17 next
 ```

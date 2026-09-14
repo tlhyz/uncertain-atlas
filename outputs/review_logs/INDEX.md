@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-14 | checkpoint 0430Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0430Z_timer.md |
+| 2026-09-14 | P3-15 Q-tech-9 | CONDITIONAL FAIL | outputs/review_logs/2026-09-14_P3-15_Q-tech-9_CONDITIONAL_FAIL.md |
 | 2026-09-14 | checkpoint 0420Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0420Z_timer.md |
 | 2026-09-14 | P3-14 Q-tech-8 | FAIL | outputs/review_logs/2026-09-14_P3-14_Q-tech-8_FAIL.md |
 | 2026-09-14 | checkpoint 0410Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0410Z_timer.md |
