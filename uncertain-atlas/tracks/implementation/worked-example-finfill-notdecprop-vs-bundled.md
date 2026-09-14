@@ -1,0 +1,46 @@
+# 例：看见 all fields / 又填一遍 is not already `FinalizeBlockRequest.decided_last_commit` and `ProcessProposalRequest.proposed_last_commit` interchangeable / 看见 fill up all fields is not already FinalizeBlock fill all fields even if Prepare/Process passed bundled（473） interchangeable / 已经 decided 和 proposed 就可以混用 interchangeable / 已经 Prepare/Process 传过就意味着 decided 和 proposed 语义 interchangeable
+
+**层次**：实现 / FinalizeBlock fill all fields not decided/proposed interchangeable 正式三事（473 余量）。  
+**分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
+**来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) FinalizeBlock Usage / Request。  
+**对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「all fields not decided/proposed interchangeable 不是 FinalizeBlock fill all fields even if Prepare/Process passed bundled（473） interchangeable / 不是已经 decided 和 proposed 就可以混用 interchangeable / 不是已经 Prepare/Process 传过就意味着 decided 和 proposed interchangeable」，不是 FinalizeBlock fill all fields even if Prepare/Process passed bundled（473），也不是 fill all fields not decided/proposed interchangeable（557 461 余量），也不是 fill all fields not already don't need Finalize（567 余量）。不要另写怎样写 FinalizeBlockRequest 各栏。
+
+## 官方三件事
+
+规范把 FinalizeBlock Usage 里 fill up **all** fields in FinalizeBlockRequest、`FinalizeBlockRequest.decided_last_commit` vs `ProcessProposalRequest.proposed_last_commit`、Prepare/Process 传过和 decided vs proposed 语义、`syncing_to_height` 等 Finalize 专有栏分开写成三件独立的实现事，不是「看见 all fields / 又填一遍 就已经 decided 和 proposed 就可以混用 interchangeable、Prepare/Process 传过 interchangeable、Finalize 专有栏和 Prepare/Process 同一套 interchangeable」一件事：
+
+1. **看见 all fields / 又填一遍 is not already `FinalizeBlockRequest.decided_last_commit` and `ProcessProposalRequest.proposed_last_commit` interchangeable / 看见 fill up all fields is not already FinalizeBlock fill all fields even if Prepare/Process passed bundled（473） interchangeable / 已经 decided 和 proposed 就可以混用 interchangeable / 已经 decided_last_commit 和 proposed_last_commit interchangeable，也不是已经 Finalize 请求栏 decided vs proposed bundled（422 余量） interchangeable / 已经 decided_last_commit 和 proposed_last_commit 就可以混用 interchangeable / 已经 height / txs 单栏 interchangeable，也不是已经 FinalizeBlockRequest.decided_last_commit from decided block not proposed_last_commit bundled（559 余量） interchangeable / 已经 proposed_last_commit interchangeable / 已经 local_last_commit interchangeable，也不是已经 FinalizeBlock newly decided block fields not proposed/decided bundled（556 余量） interchangeable / 已经 proposed 对象 interchangeable / 已经 decided 对象 interchangeable，也不是已经 FinalizeBlock fill all fields not decided/proposed interchangeable bundled（557 余量 / 461 第三件事） interchangeable / 已经 decided 和 proposed 就可以混用 interchangeable / 已经 all fields 又填一遍 interchangeable，也不是已经 Process 请求余栏 bundled（420 余量） interchangeable / 已经 proposed_last_commit interchangeable / 已经 ProcessProposalRequest.hash 是拟议块的哈希 interchangeable，也不是已经 FinalizeBlock fill all fields not already don't need Finalize bundled（473 第一件事 / 567 余量） interchangeable / 已经 Prepare/Process 给过就不用再 Finalize interchangeable / 已经 committed interchangeable。**  
+   官方写 fill up **all** fields in FinalizeBlockRequest。看见全部字段齐，不是已经 `FinalizeBlockRequest.decided_last_commit` 是从刚决定那块拿到、`ProcessProposalRequest.proposed_last_commit` 是从拟议块里的信息拿到那种可以混用 interchangeable（422）——473 bundled 第三件事常被写成「又填一遍 = decided 和 proposed 就可以混用」，本页钉 all fields not decided/proposed interchangeable 单句。看见 all fields，不是已经 Finalize 请求栏 decided vs proposed（422 余量） interchangeable——422 钉 decided_last_commit / height / txs 单栏，本页钉 473 item 3 边界。看见又填一遍，不是已经 fill all fields not decided/proposed（557 余量 / 461 第三件事） interchangeable——557 钉 461 bundled item 3 余量，本页钉 473 bundled item 3 单句。
+2. **看见 all fields is not Prepare / Process 传过就意味着 decided 和 proposed 语义 interchangeable / 看见又填一遍 is not already Prepare/Process passed means newly decided and proposed interchangeable 不是已经 FinalizeBlock fill all fields even if Prepare/Process passed bundled（473） interchangeable / 已经 Prepare/Process 同一套字段 interchangeable / 已经 newly decided and proposed interchangeable，也不是已经 Prepare 请求字段同一套 bundled（359 余量） interchangeable / 已经字段名对得上 interchangeable / 已经 local_last_commit interchangeable，也不是已经 FinalizeBlock fill all fields not passed means ran Process bundled（473 第二件事 / 568 余量） interchangeable / 已经 even if passed interchangeable / 已经字段名对得上就代表已经跑过 Process interchangeable，也不是已经 FinalizeBlock newly decided block fields not ProcessProposal contains all information bundled（556 余量） interchangeable / 已经 ProcessProposal 含执行所需全部信息 interchangeable / 已经 proposed block 字段 interchangeable，也不是已经 FinalizeBlock Contains newly decided block fields not match header bundled（474 第三件事 / 566 余量） interchangeable / 已经 fill all fields interchangeable / 已经 height/time match header interchangeable。**  
+   官方把 all fields 填齐和 Prepare/Process 传过就意味着 decided 和 proposed 语义 interchangeable 分开——473 bundled 常与 359 混成「又填一遍 = Prepare/Process 传过 = decided 和 proposed interchangeable」，本页钉 all fields not Prepare/Process passed means decided/proposed interchangeable 单句。看见已经传过，不是已经 Prepare 请求字段同一套（359 余量） interchangeable——359 钉字段名对得上，本页钉 all fields 边界。看见 all fields，不是已经 fill all fields not passed means ran Process（568 余量） interchangeable——568 钉 even if passed not field names match，本页钉 473 item 3 单句。
+3. **看见 all fields is not Finalize 专有栏和 Prepare / Process 同一套字段名对上就够 interchangeable / 看见 `syncing_to_height` 等 Finalize 专有栏 is not already Prepare / Process 传过 interchangeable / 已经验完 interchangeable 不是已经 FinalizeBlock fill all fields even if Prepare/Process passed bundled（473） interchangeable / 已经 all fields 又填一遍 interchangeable / 已经 decided 和 proposed 就可以混用 interchangeable，也不是已经 Finalize 时的 Process 保证 bundled（360 余量） interchangeable / 已经字段再填一遍 interchangeable / 已经套用先前 candidate interchangeable，也不是已经 Finalize 请求余栏 bundled（428 余量） interchangeable / 已经 FinalizeBlockRequest.hash 是已决块的哈希 interchangeable / 已经 ProcessProposalRequest.hash 是拟议块的哈希 interchangeable，也不是已经 FinalizeBlock fill all fields not decided/proposed interchangeable bundled（557 余量 / 461 第三件事） interchangeable / 已经 ran Process means don't need Finalize interchangeable / 已经 Prepare/Process 传过 interchangeable，也不是已经 FinalizeBlock fill all fields not already don't need Finalize bundled（473 第一件事 / 567 余量） interchangeable / 已经 Prepare/Process 给过就不用再 Finalize interchangeable / 已经 even if passed interchangeable。**  
+   官方 Request 表把 `decided_last_commit` / `syncing_to_height` 等和 Prepare / Process 的 `proposed_last_commit` / `local_last_commit` 分开写——473 bundled 常与 360 混成「all fields 又填一遍 = 字段再填一遍 = Process 保证 interchangeable」，本页钉 all fields not Finalize 专有栏 same as Prepare/Process interchangeable 单句。看见 all fields 齐，不是已经 Finalize 时的 Process 保证（360 余量） interchangeable——360 钉至少一名非拜占庭跑过 Process / 字段再填一遍，本页钉 all fields 边界。看见又填一遍，不是已经 Finalize 请求余栏（428 余量） interchangeable——428 钉 FinalizeBlockRequest.hash 等单栏，本页钉 473 item 3 单句。
+
+怎样写 FinalizeBlockRequest 各栏、怎样和 Process 请求栏对齐、怎样缓存 Prepare / Process 数据 是规范里的做法，本页不抄。FinalizeBlock fill all fields even if Prepare/Process passed bundled（473）、fill all fields not decided/proposed interchangeable（557 461 余量）、Finalize 请求栏 decided vs proposed（422）是另外那套，本页不抄。
+
+## 官方为什么这样拆
+
+- **all fields not decided/proposed interchangeable ≠ FinalizeBlock fill all fields even if Prepare/Process passed bundled interchangeable：** 官方把 all fields 填齐和 decided_last_commit vs proposed_last_commit 语义分开。
+- **all fields not Prepare/Process passed means decided/proposed interchangeable ≠ Prepare 请求字段同一套 interchangeable：** 官方把又填一遍和 Prepare/Process 传过就意味着 decided 和 proposed interchangeable 分开。
+- **all fields not Finalize 专有栏 same as Prepare/Process interchangeable ≠ Finalize Process guarantee field refill interchangeable：** 官方把 all fields 和 Finalize 专有栏 / Process 保证字段再填一遍分开。
+
+## 和相邻页的边界
+
+| 对象 | 本页 | 那一页 |
+|---|---|---|
+| all fields / 又填一遍 | 不是 decided/proposed interchangeable | 不是 Finalize 请求栏 decided vs proposed（422） |
+| all fields | 不是 Prepare/Process passed means decided/proposed interchangeable | 不是 fill all fields not passed means ran Process（568） |
+| all fields | 不是 Finalize 专有栏 same as Prepare/Process | 不是 Finalize Process guarantee field refill（360） |
+
+## 产品
+
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 FinalizeBlock fill all fields not decided/proposed interchangeable 正式三事（473 余量），必须分开 all fields 是不是 decided/proposed interchangeable / 422 decided vs proposed interchangeable / 559 decided not proposed interchangeable、all fields 是不是 Prepare/Process passed means decided/proposed interchangeable / 359 Prepare 同一套字段 interchangeable / 568 even if passed interchangeable、all fields 是不是 Finalize 专有栏 same as Prepare/Process interchangeable / 360 Process guarantee field refill interchangeable / 428 Finalize 请求余栏 interchangeable。可以跳过「看见 all fields / 又填一遍 就已经 decided 和 proposed 就可以混用 interchangeable」。不要另写怎样写 FinalizeBlockRequest 各栏。
+
+## 本页不抄
+
+- 怎样写 FinalizeBlockRequest 各栏、怎样和 Process 请求栏对齐、怎样缓存 Prepare / Process 数据。
+- will fill up all fields not already don't need Finalize。那是不变量 567（473 item 1 余量）。
+- even if passed not field names match means ran Process。那是不变量 568（473 item 2 余量）。
+- fill all fields not decided/proposed interchangeable（461 第三件事）。那是不变量 557。
+- fill all fields even if Prepare/Process passed bundled 三事。那是不变量 473。
