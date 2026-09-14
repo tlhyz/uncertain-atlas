@@ -1,3 +1,7 @@
+## 2026-09-14（续 574）
+
+- 不变量 574；语料 C578；模式 name-the-finfields-notdeterministic-bar；反模式 finfields-notdeterministic-sold-as-bundled；L10.3 第 570 条。填 L4.4 / CometBFT 档案 Finalize 实现必须确定 not like Prepare 正式三事（407 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。407 Finalize 字段余量 unbundling 续（574）。
+
 ## 2026-09-14（续 573）
 
 - 不变量 573；语料 C577；模式 name-the-finfields-notsettled-bar；反模式 finfields-notsettled-sold-as-bundled；L10.3 第 569 条。填 L4.4 / CometBFT 档案 Finalize 含刚决定那块的字段 not already settled 正式三事（407 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。407 Finalize 字段余量 unbundling 启动（573）。
