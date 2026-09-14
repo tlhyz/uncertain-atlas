@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-14 | checkpoint 0210Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0210Z_timer.md |
+| 2026-09-14 | P3-07 SOXL/SNXX weights | FAIL | outputs/review_logs/2026-09-14_P3-07_soxl_snxx_weights_FAIL.md |
 | 2026-09-14 | checkpoint 0200Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0200Z_timer.md |
 | 2026-09-14 | checkpoint 0150Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0150Z_timer.md |
 | 2026-09-14 | checkpoint 0140Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0140Z_timer.md |
@@ -12,7 +14,7 @@ One line per review entry. Newest first.
 | 2026-09-14 | checkpoint 0110Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0110Z_timer.md |
 | 2026-09-14 | checkpoint 0100Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0100Z_timer.md |
 | 2026-09-14 | checkpoint 0050Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0050Z_timer.md |
-| 2026-09-14 | P3-07 SOXL/SNXX weights | IN_PROGRESS | outputs/review_logs/2026-09-14_P3-07_soxl_snxx_weights_IN_PROGRESS.md |
+| 2026-09-14 | P3-07 SOXL/SNXX weights | IN_PROGRESS (superseded) | outputs/review_logs/2026-09-14_P3-07_soxl_snxx_weights_IN_PROGRESS.md |
 | 2026-09-14 | checkpoint 0040Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0040Z_timer.md |
 | 2026-09-14 | P3-06 right-side reserve | FAIL | outputs/review_logs/2026-09-14_P3-06_right_side_reserve_FAIL.md |
 | 2026-09-14 | checkpoint 0030Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0030Z_timer.md |
