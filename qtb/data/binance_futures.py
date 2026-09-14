@@ -124,6 +124,12 @@ def klines_range_cache_path(symbol: str, interval: str, start: date, end: date) 
     return CACHE_DIR / f"binance_futures_{sym}_{interval}_{start.isoformat()}_{end.isoformat()}_klines.csv"
 
 
+_KLINES_COLS = (
+    "open_time", "open", "high", "low", "close", "volume", "close_time",
+    "quote_volume", "count", "taker_buy_volume", "taker_buy_quote_volume", "ignore",
+)
+
+
 def _download_vision_klines_day(symbol: str, interval: str, day: date) -> pd.DataFrame:
     if httpx is None:
         raise RuntimeError("httpx required")
@@ -135,10 +141,17 @@ def _download_vision_klines_day(symbol: str, interval: str, day: date) -> pd.Dat
         r.raise_for_status()
         zf = zipfile.ZipFile(io.BytesIO(r.content))
         text = zf.read(zf.namelist()[0]).decode("utf-8")
-    df = pd.read_csv(io.StringIO(text))
+    if not text.strip():
+        return pd.DataFrame()
+    first = text.split("\n", 1)[0]
+    has_header = first.startswith("open_time") or first.startswith("Open time")
+    df = pd.read_csv(io.StringIO(text), header=0 if has_header else None)
     if df.empty:
         return df
-    df["timestamp"] = pd.to_datetime(df["open_time"], unit="ms", utc=True)
+    if "open_time" not in df.columns:
+        df.columns = list(_KLINES_COLS[: len(df.columns)])
+    time_col = "open_time" if "open_time" in df.columns else df.columns[0]
+    df["timestamp"] = pd.to_datetime(df[time_col], unit="ms", utc=True)
     for col in ("open", "high", "low", "close", "volume", "quote_volume"):
         if col in df.columns:
             df[col] = df[col].astype(float)

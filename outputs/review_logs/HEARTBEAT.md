@@ -426,4 +426,8 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T08:05Z | checkpoint 0805Z | P4 phase complete; P5 next
 2026-09-14T08:10Z | timer research-continue | **P5-01 DONE PASS** block bootstrap MC 1000 paths; 7d 6 daily obs
 2026-09-14T08:10Z | checkpoint 0810Z | P5-02 plateau detector next
+2026-09-14T08:20Z | timer research-continue | **P5-02 DONE PASS** PLATEAU_INERT returns; 0.40 worst Calmar rank 4/4
+2026-09-14T08:20Z | checkpoint 0820Z | P5-03 walk-forward next
+2026-09-14T08:48Z | timer research-continue | **P5-03 DONE** WF infra; 2020-21 fixed −86..−87%; calendar 2020-24 tmux
+2026-09-14T08:48Z | checkpoint 0848Z | P5-04 OOS holdout next
 ```
