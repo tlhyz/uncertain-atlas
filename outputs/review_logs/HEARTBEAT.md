@@ -389,4 +389,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T04:30Z | checkpoint 0430Z | P3-16/17 next
 2026-09-14T04:40Z | timer research-continue | **P3-16 BLOCKED** Gate OOS stub; **P3-17 PASS** beta SOXL/SNXX
 2026-09-14T04:40Z | checkpoint 0440Z | P3 executable tasks complete
+2026-09-14T04:50Z | timer research-continue | **P4 phase started**; P4-01 ind vs uni running
+2026-09-14T04:50Z | checkpoint 0450Z | ETA ~48min
 ```

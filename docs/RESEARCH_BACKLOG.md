@@ -87,7 +87,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P4-01 | Independent vs unified 10k portfolio | pending | weak +2.3% one window |
+| P4-01 | Independent vs unified 10k portfolio | **in_progress** | tmux p4-01-ind-vs-uni 65d tick — outputs/review_logs/2026-09-14_P4-01_independent_vs_unified_IN_PROGRESS.md |
 | P4-02 | Regime A Tech↓ Crypto↑ | pending | |
 | P4-03 | Regime B Tech↑ Crypto↓ | pending | |
 | P4-04 | Regime C both up | pending | |
