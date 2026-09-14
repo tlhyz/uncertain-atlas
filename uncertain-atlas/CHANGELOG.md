@@ -1,3 +1,7 @@
+## 2026-09-14（续 554）
+
+- 不变量 554；语料 C558；模式 name-the-finht-notprocht-bar；反模式 finht-notprocht-sold-as-bundled；L10.3 第 550 条。填 L4.4 / CometBFT 档案 FinalizeBlock Finalize match header not ProcessProposal match 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。462 FinalizeBlock height/time 对上拟议块头 unbundling 完成（552–554）。
+
 ## 2026-09-14（续 553）
 
 - 不变量 553；语料 C557；模式 name-the-finhtreqlht-notusage-bar；反模式 finhtreqlht-notusage-sold-as-bundled；L10.3 第 549 条。填 L4.4 / CometBFT 档案 FinalizeBlock Request height/time 栏 not Usage match 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。462 FinalizeBlock height/time 对上拟议块头 unbundling 续（553）。
