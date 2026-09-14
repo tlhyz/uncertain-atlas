@@ -433,4 +433,8 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T08:55Z | timer research-continue | **P5-03 calendar DONE** 3 folds mean test −86.58%
 2026-09-14T08:55Z | timer research-continue | **P5-04 DONE FAIL** 0/2 OOS pass; BTC 2024 −86.44%
 2026-09-14T08:55Z | checkpoint 0855Z | P5-05 MC DD probs next
+2026-09-14T09:15Z | timer research-continue | **P5-05 DONE** 65d P(DD>20)=89% P(DD>30)=71%
+2026-09-14T09:15Z | checkpoint 0915Z | P5-06 liq prob next
+2026-09-14T09:55Z | timer research-continue | **P5-06 DONE** in-sample liq 0; MC proxy 0%; P5 phase complete
+2026-09-14T09:55Z | checkpoint 0955Z | P6 or M-02 next
 ```

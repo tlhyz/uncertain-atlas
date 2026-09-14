@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-14 | P5-06 liq MC | CONDITIONAL FAIL | outputs/review_logs/2026-09-14_P5-06_liq_probs_CONDITIONAL_FAIL.md |
+| 2026-09-14 | P5-05 DD MC probs | DONE | outputs/review_logs/2026-09-14_P5-05_dd_probs_DONE.md |
 | 2026-09-14 | P5-04 OOS holdout | FAIL | outputs/review_logs/2026-09-14_P5-04_oos_holdout_FAIL.md |
 | 2026-09-14 | P5-03 walk-forward BTC | FAIL | outputs/review_logs/2026-09-14_P5-03_walk_forward_PARTIAL.md |
 | 2026-09-14 | P5-02 plateau detector | PASS | outputs/review_logs/2026-09-14_P5-02_plateau_detector_PASS.md |

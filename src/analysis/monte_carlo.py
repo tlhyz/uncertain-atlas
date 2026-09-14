@@ -61,6 +61,7 @@ def summarize_bootstrap_paths(
     return_paths: np.ndarray,
     *,
     initial: float = 10_000.0,
+    liq_equity_frac: float = 0.12,
 ) -> dict[str, float]:
     """Summarize bootstrapped return paths into percentiles and probabilities."""
     n_paths = return_paths.shape[0]
@@ -68,13 +69,15 @@ def summarize_bootstrap_paths(
         return {"n_paths": 0}
     finals: list[float] = []
     dds: list[float] = []
-    loss = dd10 = dd20 = dd30 = 0
+    loss = dd10 = dd20 = dd30 = ruin = liq_proxy = 0
+    liq_floor = initial * liq_equity_frac
     for p in range(n_paths):
         curve = initial * np.cumprod(1.0 + return_paths[p])
         final = float(curve[-1]) if len(curve) else initial
         finals.append(final)
         dd = _max_drawdown(curve)
         dds.append(dd)
+        min_eq = float(np.min(curve)) if len(curve) else initial
         if final < initial:
             loss += 1
         if dd > 0.10:
@@ -83,6 +86,10 @@ def summarize_bootstrap_paths(
             dd20 += 1
         if dd > 0.30:
             dd30 += 1
+        if min_eq <= 0:
+            ruin += 1
+        if min_eq <= liq_floor:
+            liq_proxy += 1
     arr = np.asarray(finals)
     return {
         "n_paths": float(n_paths),
@@ -95,6 +102,9 @@ def summarize_bootstrap_paths(
         "prob_dd_10": dd10 / n_paths,
         "prob_dd_20": dd20 / n_paths,
         "prob_dd_30": dd30 / n_paths,
+        "prob_ruin": ruin / n_paths,
+        "prob_liquidation_proxy": liq_proxy / n_paths,
+        "liq_equity_frac": liq_equity_frac,
         "median_max_dd": float(np.median(dds)),
     }
 

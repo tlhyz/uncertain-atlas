@@ -22,6 +22,13 @@ def test_block_bootstrap_reproducible():
     assert np.allclose(p1, p2)
 
 
+def test_liquidation_proxy_triggers_on_deep_daily_losses():
+    daily = np.array([-0.60, -0.55, -0.50, 0.02, 0.01])
+    paths = block_bootstrap_paths(daily, block_days=1, n_paths=20, rng=np.random.default_rng(3))
+    stats = summarize_bootstrap_paths(paths, initial=10_000.0, liq_equity_frac=0.12)
+    assert stats["prob_liquidation_proxy"] > 0.5
+
+
 def test_block_bootstrap_mc_1000_paths():
     rng = np.random.default_rng(1)
     daily_rets = rng.normal(0.001, 0.02, 60)
@@ -34,4 +41,5 @@ def test_block_bootstrap_mc_1000_paths():
         b = result["blocks"][blk]
         assert b["n_paths"] == 1000
         assert 0 <= b["prob_loss"] <= 1
+        assert 0 <= b["prob_liquidation_proxy"] <= 1
         assert b["p50_final"] <= b["p75_final"]
