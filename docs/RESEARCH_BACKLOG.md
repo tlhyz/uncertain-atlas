@@ -68,8 +68,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P3-03 | Short structure dir vs grid vs 70/30 | **done** | FAIL all -58.70% inert; structure knob dead — outputs/review_logs/2026-09-13_P3-03_short_structures_FAIL.md |
 | P3-04 | Drawdown set A/B/C comparison | **done** | FAIL C best -56.08%; A worst -67.88% — outputs/review_logs/2026-09-13_P3-04_drawdown_sets_FAIL.md |
 | P3-05 | Reversal R1–R5 no-lookahead tests | **done** | PASS — outputs/review_logs/2026-09-13_P3-05_reversal_no_leak_PASS.md |
-| P3-06 | Right-side reserve 25/30/35% | **in_progress** | 25%=-58.92% 30%=-59.30%; 35% 3/3 — outputs/review_logs/2026-09-13_P3-06_right_side_reserve_IN_PROGRESS.md |
-| P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | pending | config ready; queue after P3-06 |
+| P3-06 | Right-side reserve 25/30/35% | **done** | FAIL 25% best −58.92%; all worse vs default −58.70% — outputs/review_logs/2026-09-14_P3-06_right_side_reserve_FAIL.md |
+| P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | **in_progress** | tmux p3-07-soxl-snxx-weights — config dual_binance_tick_soxl_snxx_weights.yaml |
 | P3-08 | Grid→Trend stage mix sweep | pending | config dual_binance_tick_grid_mix.yaml ready; queue after P3-07 |
 | P3-09 | FAIL_F1 direct-up window | pending | blocked: needs SOXL 2025-09→10 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
 | P3-10 | FAIL_F2 no-recovery window | pending | blocked: needs SOXL 2024-09→11 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |

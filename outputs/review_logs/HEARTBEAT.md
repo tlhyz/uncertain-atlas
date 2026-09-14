@@ -338,4 +338,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T00:30Z | timer research-continue | **P3-06 30% DONE -59.30%**; 35% 3/3
 2026-09-14T00:30Z | P3-06 finding | higher reserve worsens return
 2026-09-14T00:30Z | checkpoint 0030Z | ETA ~20min
+2026-09-14T00:40Z | timer research-continue | **P3-06 DONE FAIL** 25% best -58.92%; all worse vs default -58.70%
+2026-09-14T00:40Z | P3-07 started | tmux p3-07-soxl-snxx-weights SOXL/SNXX 75/25 70/30 65/35
+2026-09-14T00:40Z | checkpoint 0040Z | P3-08 grid mix queued
 ```
