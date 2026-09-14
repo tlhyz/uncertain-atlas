@@ -401,4 +401,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T05:30Z | checkpoint 0530Z | ETA ~28min
 2026-09-14T05:40Z | timer research-continue | **P4-01 DONE FAIL** ind≡uni Δreturn=0; crypto_max_dd=0
 2026-09-14T05:40Z | checkpoint 0540Z | P4-02 next
+2026-09-14T05:50Z | timer research-continue | **P4-02 BLOCKED** crypto book inert; Regime A 324 bars price-only
+2026-09-14T05:50Z | checkpoint 0550Z | audit dual crypto legs
 ```
