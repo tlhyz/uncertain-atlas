@@ -78,8 +78,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P3-13 | Answer Q-tech-2 initial short % | **done** | FAIL via P3-02; 20% best return, no sweet spot — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
 | P3-14 | Answer Q-tech-8 bottom grid value-add | **done** | COMPLETE FAIL B3 -25.20% beats dual -58.70%; grid does not salvage — outputs/experiments/Q_TECH_8_bottom_grid_value_add.md |
 | P3-15 | Answer Q-tech-9 grid in trend phase | **done** | CONDITIONAL FAIL G50 -57.85% sweet spot; FAIL vs B3 -25.20% — outputs/experiments/Q_TECH_9_grid_in_trend_phase.md |
-| P3-16 | Gate OOS on top-3 Tech param sets | pending | |
-| P3-17 | Effective beta rolling for SOXL/SNXX | pending | |
+| P3-16 | Gate OOS on top-3 Tech param sets | **blocked** | Gate OOS stub; no MEDIUM candidate — outputs/review_logs/2026-09-14_P3-16_gate_oos_BLOCKED.md |
+| P3-17 | Effective beta rolling for SOXL/SNXX | **done** | PASS SOXL→SNXX β~0.45; SNXX→SOXL β~1.2 — outputs/review_logs/2026-09-14_P3-17_effective_beta_PASS.md |
 
 ---
 
