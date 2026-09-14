@@ -347,4 +347,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T01:00Z | checkpoint 0100Z | ETA ~63min
 2026-09-14T01:10Z | timer research-continue | P3-07 75/25 1/3 ~17min; still no return
 2026-09-14T01:10Z | checkpoint 0110Z | ETA ~53min
+2026-09-14T01:20Z | timer research-continue | **P3-07 75/25 DONE -58.89%**; 70/30 2/3
+2026-09-14T01:20Z | checkpoint 0120Z | ETA ~48min
 ```
