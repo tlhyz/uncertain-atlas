@@ -414,4 +414,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T07:00Z | checkpoint 0700Z | P4-04 Regime C next
 2026-09-14T07:10Z | timer research-continue | **P4-04 DONE** Regime C 450 bars 29.1%; inf avg_ret artifact noted
 2026-09-14T07:10Z | checkpoint 0710Z | P4-05 Regime D next
+2026-09-14T07:20Z | timer research-continue | **P4-05 DONE** Regime D 435 bars 28.1%; both books bleed −1.73%/−0.31%
+2026-09-14T07:20Z | checkpoint 0720Z | P4-06 E/F mixed next
 ```
