@@ -68,6 +68,7 @@
 - [`worked-example-finfill-notcommitted-vs-bundled.md`](worked-example-finfill-notcommitted-vs-bundled.md) — all fields / request complete ≠ committed；≠ finfields / finpersist；≠ apply candidate / 583 refill（不变量 569）
 - [`worked-example-finfill-notrefill-vs-bundled.md`](worked-example-finfill-notrefill-vs-bundled.md) — will fill up all fields ≠ no need to provide again；≠ Finalize 时的 Process 保证 bundled；≠ 583 not refill（不变量 567）
 - [`worked-example-finfill-notpassed-vs-bundled.md`](worked-example-finfill-notpassed-vs-bundled.md) — even if Prepare/Process passed ≠ field names match means ran Process；≠ Prepare/Process/Finalize same fields；≠ Process also on proposer means ran Process（不变量 568）
+- [`worked-example-finwhen-notallproc-vs-bundled.md`](worked-example-finwhen-notallproc-vs-bundled.md) — When calling guarantee ≠ every validator ran Process；≠ Finalize 时的 Process 保证 bundled；≠ 582 not every validator（不变量 570）
 - [`worked-example-finwhen-bundled.md`](worked-example-finwhen-bundled.md) — When calling guarantee ≠ every validator ran Process；≠ proposer means everyone Processed；≠ executes block v / persist decision（不变量 472）
 - [`worked-example-finfill-bundled.md`](worked-example-finfill-bundled.md) — fill all fields even if Prepare/Process passed ≠ no need to provide again；≠ field names match means ran Process；≠ request complete means committed（不变量 473）
 - [`worked-example-finalize-vs-processed.md`](worked-example-finalize-vs-processed.md) — 至少一名非拜占庭验证者跑过 Process ≠ 已经每个验证者都跑过 Process；Finalize 请求把字段再填一遍 ≠ 已经不用再给；可以套用先前候选 ≠ 已经是 ExecuteTxState（不变量 360）
