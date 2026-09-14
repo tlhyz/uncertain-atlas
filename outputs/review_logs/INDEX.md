@@ -4,12 +4,14 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-14 | checkpoint 0540Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0540Z_timer.md |
+| 2026-09-14 | P4-01 independent vs unified | FAIL | outputs/review_logs/2026-09-14_P4-01_independent_vs_unified_FAIL.md |
 | 2026-09-14 | checkpoint 0530Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0530Z_timer.md |
 | 2026-09-14 | checkpoint 0520Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0520Z_timer.md |
 | 2026-09-14 | checkpoint 0510Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0510Z_timer.md |
 | 2026-09-14 | checkpoint 0500Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0500Z_timer.md |
 | 2026-09-14 | checkpoint 0450Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0450Z_timer.md |
-| 2026-09-14 | P4-01 independent vs unified | IN_PROGRESS | outputs/review_logs/2026-09-14_P4-01_independent_vs_unified_IN_PROGRESS.md |
+| 2026-09-14 | P4-01 independent vs unified | IN_PROGRESS (superseded) | outputs/review_logs/2026-09-14_P4-01_independent_vs_unified_IN_PROGRESS.md |
 | 2026-09-14 | checkpoint 0440Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0440Z_timer.md |
 | 2026-09-14 | P3-17 effective beta | PASS | outputs/review_logs/2026-09-14_P3-17_effective_beta_PASS.md |
 | 2026-09-14 | P3-16 Gate OOS | BLOCKED | outputs/review_logs/2026-09-14_P3-16_gate_oos_BLOCKED.md |

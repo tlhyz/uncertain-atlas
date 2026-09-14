@@ -87,7 +87,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P4-01 | Independent vs unified 10k portfolio | **in_progress** | 1/2 ~40min — outputs/review_logs/2026-09-14_P4-01_independent_vs_unified_IN_PROGRESS.md |
+| P4-01 | Independent vs unified 10k portfolio | **done** | FAIL Δreturn=0 ΔDD=0; ind≡uni -58.70%; crypto inert — outputs/review_logs/2026-09-14_P4-01_independent_vs_unified_FAIL.md |
 | P4-02 | Regime A Tech↓ Crypto↑ | pending | |
 | P4-03 | Regime B Tech↑ Crypto↓ | pending | |
 | P4-04 | Regime C both up | pending | |

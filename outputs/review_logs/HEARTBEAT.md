@@ -399,4 +399,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T05:20Z | checkpoint 0520Z | ETA ~28min
 2026-09-14T05:30Z | timer research-continue | P4-01 1/2 ~40min
 2026-09-14T05:30Z | checkpoint 0530Z | ETA ~28min
+2026-09-14T05:40Z | timer research-continue | **P4-01 DONE FAIL** ind≡uni Δreturn=0; crypto_max_dd=0
+2026-09-14T05:40Z | checkpoint 0540Z | P4-02 next
 ```
