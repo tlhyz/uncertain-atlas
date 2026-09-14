@@ -345,4 +345,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T00:50Z | checkpoint 0050Z | ETA ~70min; default 70/30 in sweep
 2026-09-14T01:00Z | timer research-continue | P3-07 75/25 1/3 ~7min; no return yet
 2026-09-14T01:00Z | checkpoint 0100Z | ETA ~63min
+2026-09-14T01:10Z | timer research-continue | P3-07 75/25 1/3 ~17min; still no return
+2026-09-14T01:10Z | checkpoint 0110Z | ETA ~53min
 ```
