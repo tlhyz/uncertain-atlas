@@ -516,6 +516,7 @@
 - [verifystatus-sold-as-vote](verifystatus-sold-as-vote.md)
 - [verifyrespstatus-sold-as-verifystatus](verifyrespstatus-sold-as-verifystatus.md)
 - [verifyrespstatus-validinvalid-sold-as-bundled](verifyrespstatus-validinvalid-sold-as-bundled.md)
+- [verifystatus-accept-sold-as-bundled](verifystatus-accept-sold-as-bundled.md)
 - [verifystatus-unknown-sold-as-bundled](verifystatus-unknown-sold-as-bundled.md)
 - [verifyrespstatus-exclusivedep-sold-as-bundled](verifyrespstatus-exclusivedep-sold-as-bundled.md)
 - [finrespend-sold-as-params](finrespend-sold-as-params.md)
