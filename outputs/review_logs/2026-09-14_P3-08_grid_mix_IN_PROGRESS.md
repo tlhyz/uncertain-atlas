@@ -12,6 +12,16 @@ tmux `p3-08-grid-mix` — log `/tmp/p3-08_grid_mix.log`
 Config: `configs/experiments/dual_binance_tick_grid_mix.yaml`  
 Mixes: G100 / G75 / G50 / G25 / dynamic
 
+## Status (03:00Z)
+
+| Mix | Return | Calmar | vs baseline (−58.70%) |
+|-----|--------|--------|------------------------|
+| G100 | -71.41% | -2.07 | −12.71pp worse |
+| G75 | -59.53% | -2.29 | −0.83pp worse |
+| G50 | — | — | running 3/5 (~10min) |
+| G25 | — | — | pending |
+| dynamic | — | — | pending |
+
 ## Status (02:50Z)
 
 | Mix | Return | Calmar | vs baseline (−58.70%) |
