@@ -1,3 +1,7 @@
+## 2026-09-14（续 547）
+
+- 不变量 547；语料 C551；模式 name-the-procfull-req8-notprepare-bar；反模式 procfull-req8-notprepare-sold-as-bundled；L10.3 第 543 条。填 L4.4 / CometBFT 档案 ProcessProposal Request 八栏齐 not only Prepare txs 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。453 ProcessProposal 含执行所需全部信息 unbundling 续（547）。
+
 ## 2026-09-14（续 546）
 
 - 不变量 546；语料 C550；模式 name-the-procfull-notexecuted-bar；反模式 procfull-notexecuted-sold-as-bundled；L10.3 第 542 条。填 L4.4 / CometBFT 档案 ProcessProposal Contains all information not already executed 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。453 ProcessProposal 含执行所需全部信息 unbundling 启动（546）。
