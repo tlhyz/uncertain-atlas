@@ -12,6 +12,16 @@ tmux `p3-07-soxl-snxx-weights` — log `/tmp/p3-07_soxl_snxx_weights.log`
 Config: `configs/experiments/dual_binance_tick_soxl_snxx_weights.yaml`  
 Weights: SOXL 75/70/65% vs SNXX 25/30/35% (default ~70/30 from P3-01 baseline)
 
+## Status (01:00Z)
+
+| Weight | Return | Calmar | vs baseline (−58.70%) |
+|--------|--------|--------|------------------------|
+| 75/25 | — | — | running 1/3 (~7min) |
+| 70/30 | — | — | pending |
+| 65/35 | — | — | pending |
+
+DATA_QUALITY PASS (41.3M aggTrade rows). Overlap 1546 bars @ 1h.
+
 ## Status (00:53Z)
 
 | Weight | Return | Calmar | vs baseline (−58.70%) |
