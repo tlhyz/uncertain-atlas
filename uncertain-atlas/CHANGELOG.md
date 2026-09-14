@@ -1,3 +1,15 @@
+## 2026-09-14（续 534）
+
+- 不变量 534；语料 C538；模式 name-the-procrespstatus-exclusivedep-bar；反模式 procrespstatus-exclusivedep-sold-as-bundled；L10.3 第 530 条。填 L4.4 / CometBFT 档案 ProcessProposal Response status must exclusively depend 正式三事 / 实现表 / 05b / 共识专题。
+
+## 2026-09-13（续 533）
+
+- 不变量 533；语料 C537；模式 name-the-procrespstatus-validinvalid-bar；反模式 procrespstatus-validinvalid-sold-as-bundled；L10.3 第 529 条。填 L4.4 / CometBFT 档案 ProcessProposal Response status valid/invalid 正式三事 / 实现表 / 05b / 共识专题。
+
+## 2026-09-13（续 532）
+
+- 不变量 532；语料 C536；模式 name-the-procaccept-default-bar；反模式 procaccept-default-sold-as-bundled；L10.3 第 528 条。填 L4.4 / CometBFT 档案 ProcessProposal Usage SHOULD Accept default strategy 正式三事 / 实现表 / 05b / 共识专题。
+
 ## 2026-09-13（续 531）
 
 - 不变量 531；语料 C535；模式 name-the-procaccept-liveness-bar；反模式 procaccept-liveness-sold-as-bundled；L10.3 第 527 条。填 L4.4 / CometBFT 档案 ProcessProposal Usage unless really know liveness implications 正式三事 / 实现表 / 05b / 共识专题。

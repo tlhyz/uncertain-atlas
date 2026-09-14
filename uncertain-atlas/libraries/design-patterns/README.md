@@ -409,6 +409,7 @@
 - [name-the-procaccept-liveness-bar](name-the-procaccept-liveness-bar.md)
 - [name-the-procaccept-default-bar](name-the-procaccept-default-bar.md)
 - [name-the-procrespstatus-validinvalid-bar](name-the-procrespstatus-validinvalid-bar.md)
+- [name-the-procrespstatus-exclusivedep-bar](name-the-procrespstatus-exclusivedep-bar.md)
 - [name-the-verifyaccept-liveness-bar](name-the-verifyaccept-liveness-bar.md)
 - [name-the-verifyaccept-shouldaccept-bar](name-the-verifyaccept-shouldaccept-bar.md)
 - [name-the-extusage-nondet-bar](name-the-extusage-nondet-bar.md)
