@@ -335,4 +335,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T00:10Z | checkpoint 0010Z | ETA ~50min
 2026-09-14T00:20Z | timer research-continue | P3-06 30% ~20min
 2026-09-14T00:20Z | checkpoint 0020Z | ETA ~40min
+2026-09-14T00:30Z | timer research-continue | **P3-06 30% DONE -59.30%**; 35% 3/3
+2026-09-14T00:30Z | P3-06 finding | higher reserve worsens return
+2026-09-14T00:30Z | checkpoint 0030Z | ETA ~20min
 ```
