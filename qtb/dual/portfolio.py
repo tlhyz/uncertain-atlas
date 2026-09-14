@@ -382,6 +382,13 @@ def run_dual_portfolio(
     regime_log: list[dict] = []
     liq_count = 0
     reanchor = params.tech.reanchor != "off"
+    fund_window = int(params.funding_stress_window_bars)
+    tech_fund_net = np.zeros(n)
+    crypto_fund_net = np.zeros(n)
+    stress_triggers_tech = 0
+    stress_triggers_crypto = 0
+    max_stress_tech = 0.0
+    max_stress_crypto = 0.0
 
     crypto_bars = {
         s: {
@@ -442,6 +449,25 @@ def run_dual_portfolio(
                 for leg in legs[:4]:
                     leg.target_notional = 0.0
 
+            thresh = params.funding_stress_threshold
+            if thresh is not None and i > 0:
+                w0 = max(0, i - fund_window)
+                t_eq = max(float(tech_eq[i - 1]), 1.0)
+                c_eq = max(float(crypto_eq[i - 1]), 1.0)
+                t_stress = float(tech_fund_net[w0:i].sum()) / t_eq
+                c_stress = float(crypto_fund_net[w0:i].sum()) / c_eq
+                max_stress_tech = max(max_stress_tech, t_stress)
+                max_stress_crypto = max(max_stress_crypto, c_stress)
+                cut = 1.0 - float(params.funding_stress_deleverage)
+                if t_stress > thresh:
+                    stress_triggers_tech += 1
+                    for leg in legs[:4]:
+                        leg.target_notional *= cut
+                if c_stress > thresh:
+                    stress_triggers_crypto += 1
+                    for leg in legs[4:]:
+                        leg.target_notional *= cut
+
             regime_log.append({
                 "ts": str(ts[i]),
                 "dd": float(dd_series[i]),
@@ -450,6 +476,8 @@ def run_dual_portfolio(
             })
 
         # Funding
+        bar_tech_fund = 0.0
+        bar_crypto_fund = 0.0
         for leg in legs:
             st = leg.state
             if leg.symbol == "SOXL":
@@ -467,6 +495,12 @@ def run_dual_portfolio(
                     st.funding_paid += -pnl
                 else:
                     st.funding_recv += pnl
+                if leg.book == "tech":
+                    bar_tech_fund += -pnl
+                elif leg.book == "crypto":
+                    bar_crypto_fund += -pnl
+        tech_fund_net[i] = bar_tech_fund
+        crypto_fund_net[i] = bar_crypto_fund
 
         if i >= warm:
             qv = float(soxl["quote_volume"].iloc[i]) if "quote_volume" in soxl.columns else 0.0
@@ -595,6 +629,10 @@ def run_dual_portfolio(
         "net_funding": sum(l.state.funding_recv - l.state.funding_paid for l in legs),
         "turnover": sum(l.state.turnover for l in legs),
         "liquidation_loss": sum(l.state.liq_loss for l in legs),
+        "funding_stress_triggers_tech": stress_triggers_tech,
+        "funding_stress_triggers_crypto": stress_triggers_crypto,
+        "max_rolling_funding_stress_tech": round(max_stress_tech, 6),
+        "max_rolling_funding_stress_crypto": round(max_stress_crypto, 6),
     }
     return PortfolioResult(
         name=name,

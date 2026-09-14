@@ -197,6 +197,16 @@ def test_rank_margin_reserve_sweep():
     assert all("total_return" in r for r in rows)
 
 
+def test_funding_stress_deleverage_sweep():
+    from qtb.dual.experiments import test_funding_stress_deleverage
+
+    data = _mini_dataset(200)
+    rows = test_funding_stress_deleverage(data, thresholds=(None, 0.01), tick_precise=False)
+    assert len(rows) == 2
+    assert rows[0]["funding_stress_threshold"] is None
+    assert rows[1]["funding_stress_threshold"] == 0.01
+
+
 def test_rank_soxl_snxx_weights_sweep():
     from qtb.dual.experiments import rank_soxl_snxx_weights
 

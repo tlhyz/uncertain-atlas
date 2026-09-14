@@ -25,6 +25,7 @@ from .experiments import (
     rank_leverage,
     rank_short_init,
     rank_drawdown_sets,
+    test_funding_stress_deleverage,
     rank_margin_reserve,
     rank_right_side_reserve,
     rank_soxl_snxx_weights,
@@ -103,6 +104,8 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "run_right_side_reserve_rank": False,
         "run_margin_reserve_rank": False,
         "margin_reserve_fracs": [0.80, 0.70, 0.60],
+        "run_funding_stress_test": False,
+        "funding_stress_thresholds": [None, 0.01, 0.015, 0.02],
         "run_soxl_snxx_weight_rank": False,
         "run_grid_mix_rank": False,
         "run_leverage_rank": True,
@@ -204,6 +207,19 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         payload["margin_reserve_rank"] = rank_margin_reserve(
             data,
             margin_fracs=fracs,
+            fill_mode=str(cfg.get("fill_mode") or "base"),
+            tick_precise=tick_precise,
+            portfolio_kwargs=pk,
+        )
+
+    if cfg.get("run_funding_stress_test", False):
+        raw_th = cfg.get("funding_stress_thresholds") or [None, 0.01, 0.015, 0.02]
+        thresholds = tuple(None if x is None or str(x).lower() == "null" else float(x) for x in raw_th)
+        print(f"[run] funding stress deleverage {list(thresholds)}...")
+        pk = portfolio_kwargs_from_config(cfg, tick_precise=tick_precise)
+        payload["funding_stress_test"] = test_funding_stress_deleverage(
+            data,
+            thresholds=thresholds,
             fill_mode=str(cfg.get("fill_mode") or "base"),
             tick_precise=tick_precise,
             portfolio_kwargs=pk,

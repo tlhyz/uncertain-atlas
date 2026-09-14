@@ -334,6 +334,40 @@ def rank_margin_reserve(
     return rows
 
 
+def test_funding_stress_deleverage(
+    data: DualDataset,
+    *,
+    thresholds: tuple[float | None, ...] = (None, 0.01, 0.015, 0.02),
+    fill_mode: str = "base",
+    tick_precise: bool = False,
+    portfolio_kwargs: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
+    """Baseline vs rolling-7d funding stress deleverage thresholds (P4-08)."""
+    pk = dict(portfolio_kwargs or {})
+    pk.pop("fill_mode", None)
+    pk.pop("tick_precise", None)
+    rows: list[dict[str, Any]] = []
+    for th in thresholds:
+        label = "baseline" if th is None else f"stress_{int(th * 10000)}bp"
+        print(f"[run] funding_stress {label}...")
+        dp = DualParams(funding_stress_threshold=th)
+        r = run_dual_portfolio(
+            data, dp, name=label, fill_mode=fill_mode, tick_precise=tick_precise, **pk,
+        )
+        m = summarize_portfolio(r)
+        m["funding_stress_threshold"] = th
+        m["stress_triggers_tech"] = r.components.get("funding_stress_triggers_tech", 0)
+        m["stress_triggers_crypto"] = r.components.get("funding_stress_triggers_crypto", 0)
+        m["max_rolling_stress_tech"] = r.components.get("max_rolling_funding_stress_tech", 0)
+        m["max_rolling_stress_crypto"] = r.components.get("max_rolling_funding_stress_crypto", 0)
+        print(
+            f"[run] funding_stress {label} done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"triggers tech={m['stress_triggers_tech']} crypto={m['stress_triggers_crypto']}"
+        )
+        rows.append(m)
+    return rows
+
+
 def rank_soxl_snxx_weights(
     data: DualDataset,
     *,
