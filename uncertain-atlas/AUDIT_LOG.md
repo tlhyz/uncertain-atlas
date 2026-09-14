@@ -4451,6 +4451,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2128 | 中 | 怎样写 ExtendVote When 正式流程 / 怎样填 CanonicalVoteExtension / 怎样构造 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2129 | 记录 | 会与 358 / 361 / 34 糊成「看见 ExtendVote 回了 extension 就已经广播 Precommit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经按原样签 / 已经验过扩展 / 已经写进 last_commit 标成另一对象 |
 
+| A2133 | 记录 | 会与 360 / 472 / 466 / 351 糊成「看见至少一名非拜占庭验证者跑过 Process 就已经每个验证者都跑过 Process interchangeable、已经提议者 Process 过 interchangeable、已经 persist decision interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 at least one non-byzantine ran Process not every validator 正式三事（360 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 Finalize 时的 Process 保证 bundled interchangeable / 已经每个验证者都跑过 Process interchangeable / 已经 persist decision interchangeable 标成另一对象 |
+| A2132 | 高 | 看见 at least one non-byzantine ran Process is not already When calling / persist decision / executes block v 会被写成已经 FinalizeBlock When calling ProcessProposal guarantee bundled interchangeable / 472 When calling interchangeable，或当成已经 Application executes block v bundled interchangeable / 466 executes block v interchangeable | 官方 FinalizeBlock Usage：at least one not executes block v |
+| A2131 | 高 | 看见 at least one non-byzantine ran Process is not already proposer also Process means everyone Processed 会被写成已经 Process 也会在提议者那边叫 bundled interchangeable / 351 Process also on proposer interchangeable，或当成已经 at least one not proposer bundled interchangeable / 571 not proposer interchangeable | 官方 FinalizeBlock Usage：at least one not proposer means everyone Processed |
+| A2130 | 高 | 看见 at least one non-byzantine validator has run ProcessProposal is not already every validator has run Process 会被写成已经 Finalize 时的 Process 保证 bundled interchangeable / 360 bundled interchangeable，或当成已经 When calling not every validator bundled interchangeable / 570 not every validator interchangeable | 官方 FinalizeBlock Usage：at least one not every validator |
+
 
 
 
