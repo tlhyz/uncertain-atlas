@@ -72,7 +72,7 @@
 | Crypto leverage sweet spot 1.25–2.0 | **FAIL** all majors P2-02/03/04 | P2-10 Q-crypto-1 done |
 | Binance tick-precise majors PERP vs ETF | Not re-run (bar A/B only) | Medium |
 | Cross-market Tech↓ Crypto↑ capture | Real data on both books | EXP-CROSS-002 |
-| Gate OOS fill calibration | Script stub; P3-16 blocked | P6-01 |
+| Gate OOS fill calibration | BAR BTC 1h fill_ratio 0.986 base; tick path N/A | P6-01 done |
 | P5 MC liquidation proxy | Daily bootstrap 0%; use DD MC | P5-06 done |
 
 ---

@@ -438,4 +438,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T09:55Z | timer research-continue | **P5-06 DONE** in-sample liq 0; MC proxy 0%; P5 phase complete
 2026-09-14T09:55Z | checkpoint 0955Z | P6 or M-02 next
 2026-09-14T09:00Z | daily audit 0900Z | pytest 163; C-07+W-01/W-02 sync; P5 complete P6 next
+2026-09-14T10:05Z | P6-01 done | Gate/BTC 1h fill_ratio 0.986 base; BAR only; 165 tests; P6-02 next
 ```
