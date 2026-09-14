@@ -20,6 +20,10 @@ Compares `DualParams(unified_signal=False)` vs `True` on 65d tick overlap.
 | Binance 7d tick | 0 | 0 | P1 smoke |
 | Binance 65d | **not run** | — | P3-01 had flag off |
 
+## Status (05:30Z)
+
+First portfolio ~40min; still running. Slightly slower than ~24min/sweep estimate.
+
 ## Status (05:20Z)
 
 First portfolio ~30min; still no completion line in log.
