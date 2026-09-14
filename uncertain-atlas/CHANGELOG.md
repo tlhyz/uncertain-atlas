@@ -1,3 +1,7 @@
+## 2026-09-14（续 535）
+
+- 不变量 535；语料 C539；模式 name-the-verifyrespstatus-validinvalid-bar；反模式 verifyrespstatus-validinvalid-sold-as-bundled；L10.3 第 531 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Response status valid/invalid 正式三事 / 实现表 / 05b / 共识专题。
+
 ## 2026-09-14（续 534）
 
 - 不变量 534；语料 C538；模式 name-the-procrespstatus-exclusivedep-bar；反模式 procrespstatus-exclusivedep-sold-as-bundled；L10.3 第 530 条。填 L4.4 / CometBFT 档案 ProcessProposal Response status must exclusively depend 正式三事 / 实现表 / 05b / 共识专题。
