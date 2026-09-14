@@ -1,4 +1,4 @@
-# Current Conclusions (Honest — 2026-09-13)
+# Current Conclusions (Honest — 2026-09-14)
 
 > Update after each major experiment. **Do not beautify FAIL results.**  
 > Each claim: confidence + supporting + contradicting experiments.
@@ -41,21 +41,25 @@
 - **Contradicting:** LEDGER-002 bar-mode PERP>ETF — **different engine/window/config**; does not overturn A/B bar evidence
 - **Implication:** Do not deploy current crypto grid FSM on C1 parameters; investigate accounting floor (~12% equity); stop C1 param sweeps
 
----
+### C-07: Dual-book fails OOS and Monte Carlo robustness gates
+- **Confidence:** HIGH (P5 phase complete 2026-09-14)
+- **Supporting:** P5-03 calendar WF mean test −86.58%; P5-04 holdout 0/2 pass; P5-05 P(DD>20)=89% on 65d; P5-04 dual holdout −75.5% vs B&H −33.5%
+- **Contradicting:** None for live deploy
+- **Implication:** No finalist survives temporal OOS or DD tail MC — do not promote to P6 without new hypothesis
 
 ## WEAK EVIDENCE
 
 ### W-01: Independent Crypto book may help vs unified Tech signal
-- **Confidence:** LOW
-- **Supporting:** Gate overlap Δreturn +2.3%, ΔDD -2.06%
-- **Contradicting:** Binance 7d tick — no benefit (Δreturn 0)
-- **Status:** UNTESTED on multi-year Binance ticks
+- **Confidence:** LOW–MEDIUM (partial Binance upgrade)
+- **Supporting:** Gate overlap Δreturn +2.3%; **P4-03 Binance 65d Regime B ind +2.3pp vs uni** when crypto active
+- **Contradicting:** Binance 7d inert (Δreturn 0); unified coupling still FAIL (crypto wipe)
+- **Status:** Helps only when crypto book active and regimes oppose — not general alpha
 
 ### W-02: 0.40 ATR grid spacing near parameter plateau
-- **Confidence:** LOW (downgraded Phase 1 red team)
-- **Supporting:** Prior demo sweeps, dual report narrative
-- **Contradicting:** Dual report Q9 may be **static template** — not verified by executed sweep
-- **Action:** Re-verify with plateau detector after EXP-CRYPTO-004 infra ready
+- **Confidence:** **FAIL / retract** (P5-02 on P2-05 sweep)
+- **Supporting:** None actionable
+- **Contradicting:** P2-05 + P5-02 — PLATEAU_INERT; 0.40 worst Calmar 4/4
+- **Action:** Do not promote W-02; LEDGER-009 remains WEAK
 
 ---
 
@@ -68,7 +72,8 @@
 | Crypto leverage sweet spot 1.25–2.0 | **FAIL** all majors P2-02/03/04 | P2-10 Q-crypto-1 done |
 | Binance tick-precise majors PERP vs ETF | Not re-run (bar A/B only) | Medium |
 | Cross-market Tech↓ Crypto↑ capture | Real data on both books | EXP-CROSS-002 |
-| Gate OOS fill calibration | Script stub | LEVEL 9 |
+| Gate OOS fill calibration | Script stub; P3-16 blocked | P6-01 |
+| P5 MC liquidation proxy | Daily bootstrap 0%; use DD MC | P5-06 done |
 
 ---
 
@@ -76,7 +81,7 @@
 
 See `outputs/LIVE_CANDIDATES.md`.
 
-**No CORE or SMALL LIVE candidates.** BTC/ETH/SOL at MEDIUM confidence are **A/B research rows only** — require Gate OOS + infra gates before upgrade.
+**No CORE or SMALL LIVE candidates.** P5 OOS + MC gates **FAIL** (C-07). BTC/ETH/SOL MEDIUM rows remain **A/B research only**.
 
 **Tech Short→Long:** explicitly **NOT** a live candidate until beats Cash→Long on Binance ticks + Gate OOS.
 
@@ -86,6 +91,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-14 | C-07 added; W-01/W-02 updated; P5 sync | Daily audit; P4-03/P5-02/P5-04/P5-05 review logs |
 | 2026-09-13 | C-06 upgraded HIGH; P2 complete | P2-02/05/06/07 review logs |
 | 2026-09-13 | C-06 added; C-05 65d tick FAIL | P1-11, P2-03, P2-04 review logs |
 | 2026-09-13 | UNTESTED leverage row → PARTIAL FAIL | SOL/ETH C1 tick scans complete |

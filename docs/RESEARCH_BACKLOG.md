@@ -71,8 +71,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P3-06 | Right-side reserve 25/30/35% | **done** | FAIL 25% best −58.92%; all worse vs default −58.70% — outputs/review_logs/2026-09-14_P3-06_right_side_reserve_FAIL.md |
 | P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | **done** | FAIL default 70/30 best −58.70%; 75/25 worst −58.89% — outputs/review_logs/2026-09-14_P3-07_soxl_snxx_weights_FAIL.md |
 | P3-08 | Grid→Trend stage mix sweep | **done** | FAIL G50 best −57.85% (+0.85pp); G100 worst −71.41% — outputs/review_logs/2026-09-14_P3-08_grid_mix_FAIL.md |
-| P3-09 | FAIL_F1 direct-up window | pending | blocked: needs SOXL 2025-09→10 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
-| P3-10 | FAIL_F2 no-recovery window | pending | blocked: needs SOXL 2024-09→11 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
+| P3-09 | FAIL_F1 direct-up window | **blocked** | needs SOXL 2025-09→10 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
+| P3-10 | FAIL_F2 no-recovery window | **blocked** | needs SOXL 2024-09→11 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
 | P3-11 | Similar-window search top-20 real windows | **blocked** | empty on TECH_T2; max 1 window on 1546 bars — outputs/review_logs/2026-09-14_P3-11_similar_windows_BLOCKED.md |
 | P3-12 | Answer Q-tech-1 Short→Long vs Cash→Long | **done** | COMPLETE FAIL dual -58.70% vs B4 -25.19%; remove Short — outputs/experiments/Q_TECH_1_short_vs_cash_long.md |
 | P3-13 | Answer Q-tech-2 initial short % | **done** | FAIL via P3-02; 20% best return, no sweet spot — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
@@ -93,7 +93,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P4-04 | Regime C both up | **done** | DONE 450 bars 29.1%; largest quadrant; FAIL alpha — outputs/review_logs/2026-09-14_P4-04_regime_C_DONE.md |
 | P4-05 | Regime D both down | **done** | DONE 435 bars 28.1%; exact proxy match; FAIL hedging — outputs/review_logs/2026-09-14_P4-05_regime_D_DONE.md |
 | P4-06 | Regime E/F mixed | **done** | DONE 25 bars 1.6% residual; 98.4% coverage PASS — outputs/review_logs/2026-09-14_P4-06_regime_EF_DONE.md |
-| P4-07 | Margin/reserve 80/20 70/30 60/40 | **done** | 7d 60/40 best; 65d running — outputs/review_logs/2026-09-14_P4-07_margin_reserve_CONDITIONAL_FAIL.md |
+| P4-07 | Margin/reserve 80/20 70/30 60/40 | **done** | 7d 60/40 best; **65d 80/20 best −53.03%** — outputs/review_logs/2026-09-14_P4-07_margin_reserve_CONDITIONAL_FAIL.md |
 | P4-08 | Funding stress deleverage rule test | **done** | INERT 7d 0 triggers at 1-2% — outputs/review_logs/2026-09-14_P4-08_funding_stress_INERT.md |
 | P4-09 | Soft/hard DD pause rules | **done** | FAIL soft−10% −82.35%; hard −88.75% — outputs/review_logs/2026-09-14_P4-09_dd_pause_FAIL.md |
 
@@ -128,11 +128,11 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | done | 139 passed 2026-09-13T21:30Z |
-| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | done | C-05 65d + C-06 crypto grid FAIL |
-| M-03 | Append `review_logs/INDEX.md` | done | daily audit 0900Z |
-| M-04 | Check PR CI status | done | PR #8 no checks reported |
-| M-05 | Refresh backlog — move done, add discovered tasks | done | P2-15 added; elapsed refresh |
+| M-01 | Run `pytest -q` | **done** | 163 passed 2026-09-14T09:00Z daily audit |
+| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | C-07 + W-01/W-02 sync 2026-09-14 daily audit |
+| M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-14T09:00Z |
+| M-04 | Check PR CI status | **done** | PR #8 open; no checks reported |
+| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P3-09/10→blocked; P4-07 65d note |
 
 ---
 
