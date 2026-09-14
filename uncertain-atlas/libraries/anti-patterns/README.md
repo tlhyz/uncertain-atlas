@@ -498,6 +498,7 @@
 - [verifyusage-localproc-sold-as-bundled](verifyusage-localproc-sold-as-bundled.md)
 - [verifyaccept-default-sold-as-bundled](verifyaccept-default-sold-as-bundled.md)
 - [procaccept-shouldaccept-sold-as-bundled](procaccept-shouldaccept-sold-as-bundled.md)
+- [procaccept-liveness-sold-as-bundled](procaccept-liveness-sold-as-bundled.md)
 - [verifyaccept-liveness-sold-as-bundled](verifyaccept-liveness-sold-as-bundled.md)
 - [verifyaccept-shouldaccept-sold-as-bundled](verifyaccept-shouldaccept-sold-as-bundled.md)
 - [extusage-nondet-sold-as-bundled](extusage-nondet-sold-as-bundled.md)

@@ -406,6 +406,7 @@
 - [name-the-verifyusage-localproc-bar](name-the-verifyusage-localproc-bar.md)
 - [name-the-verifyaccept-default-bar](name-the-verifyaccept-default-bar.md)
 - [name-the-procaccept-shouldaccept-bar](name-the-procaccept-shouldaccept-bar.md)
+- [name-the-procaccept-liveness-bar](name-the-procaccept-liveness-bar.md)
 - [name-the-verifyaccept-liveness-bar](name-the-verifyaccept-liveness-bar.md)
 - [name-the-verifyaccept-shouldaccept-bar](name-the-verifyaccept-shouldaccept-bar.md)
 - [name-the-extusage-nondet-bar](name-the-extusage-nondet-bar.md)
