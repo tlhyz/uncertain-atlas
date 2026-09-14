@@ -1,3 +1,7 @@
+## 2026-09-14（续 546）
+
+- 不变量 546；语料 C550；模式 name-the-procfull-notexecuted-bar；反模式 procfull-notexecuted-sold-as-bundled；L10.3 第 542 条。填 L4.4 / CometBFT 档案 ProcessProposal Contains all information not already executed 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。453 ProcessProposal 含执行所需全部信息 unbundling 启动（546）。
+
 ## 2026-09-14（续 545）
 
 - 不变量 545；语料 C549；模式 name-the-proccand-readonly-notcommitted-bar；反模式 proccand-readonly-notcommitted-sold-as-bundled；L10.3 第 541 条。填 L4.4 / CometBFT 档案 ProcessProposal read-only checks/processes not mutate committed 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。452 ProcessProposal 候选执行 unbundling 完成（543–545）。
