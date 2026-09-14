@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-14（续 588）
+
+- 不变量 569；语料 C448；模式 name-the-finfill-notcommitted-bar；反模式 finfill-notcommitted-sold-as-bundled；L10.3 第 440 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not request complete means committed 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 finfill unbundling 续（569 item 3）。473 三 slice 齐（567 / 568 / 569）。
+
 ## 2026-09-14（续 587）
 
 - 不变量 567；语料 C447；模式 name-the-finfill-notrefill-bar；反模式 finfill-notrefill-sold-as-bundled；L10.3 第 439 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not no need to provide again 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 finfill unbundling 续（567 item 1）。
