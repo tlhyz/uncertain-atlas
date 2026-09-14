@@ -424,4 +424,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T07:55Z | checkpoint 0755Z | P4-09 DD pause next
 2026-09-14T08:05Z | timer research-continue | **P4-09 DONE FAIL** soft−10% −82.35%; hard −88.75%
 2026-09-14T08:05Z | checkpoint 0805Z | P4 phase complete; P5 next
+2026-09-14T08:10Z | timer research-continue | **P5-01 DONE PASS** block bootstrap MC 1000 paths; 7d 6 daily obs
+2026-09-14T08:10Z | checkpoint 0810Z | P5-02 plateau detector next
 ```
