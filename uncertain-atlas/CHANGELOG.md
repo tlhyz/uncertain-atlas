@@ -1,3 +1,7 @@
+## 2026-09-13（续 525）
+
+- 不变量 525；语料 C529；模式 name-the-extusage-zerolen-bar；反模式 extusage-zerolen-sold-as-bundled；L10.3 第 521 条。填 L4.4 / CometBFT 档案 ExtendVote Usage application can choose 0-length extension 正式三事 / 实现表 / 05b / 共识专题。
+
 ## 2026-09-13（续 524）
 
 - 不变量 524；语料 C528；模式 name-the-extusage-precommitnil-bar；反模式 extusage-precommitnil-sold-as-bundled；L10.3 第 520 条。填 L4.4 / CometBFT 档案 ExtendVote Usage precommit nil will not call ExtendVote 正式三事 / 实现表 / 05b / 共识专题。
