@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 512）
+
+- CometBFT ExtendVote When construct Precommit 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 6 _p_ constructs the Precommit message (Vote structure) using CanonicalVoteExtension and CanonicalVote / step 6 after constructs and signs CanonicalVote / before broadcasts，实现 / ExtendVote When construct Precommit 正式三事，不另写 19 节）：看见 constructs Precommit 不是 construct CanonicalVote bundled（511） interchangeable / 已经 fill CanonicalVoteExtension interchangeable。看见 using both 不是只有 CanonicalVoteExtension interchangeable / 只有 CanonicalVote interchangeable。看见 step 6 before broadcasts 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经写进 last_commit interchangeable。ExtendVote When construct Precommit 正式三事不是不变量 511，也不是不变量 438 / 34 / 350。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 512；语料 C516；模式 name-the-extwhen-precommit-bar；反模式 extwhen-precommit-sold-as-bundled；L10.3 第 508 条。填 L4.4 / CometBFT 档案 ExtendVote When construct Precommit 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做构造 Precommit、怎样广播 Precommit、怎样写 last_commit。不编博物馆页。不另写 19 节。不与 511 / 438 / 34 / 350 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 construct CanonicalVote bundled interchangeable / ExtendVote When 正式流程 bundled interchangeable / 写进 last_commit interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 511）
 
 - CometBFT ExtendVote When construct CanonicalVote 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 5 _p_ constructs and signs the CanonicalVote structure / step 5 after signs populated CanonicalVoteExtension / before constructs Precommit using both，实现 / ExtendVote When construct CanonicalVote 正式三事，不另写 19 节）：看见 constructs CanonicalVote 不是 fill CanonicalVoteExtension bundled（510） interchangeable / 已经 signs populated CanonicalVoteExtension interchangeable。看见 signs CanonicalVote 不是已经验过扩展 interchangeable / 已经 Accept interchangeable。看见 step 5 before constructs Precommit 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经广播 Precommit interchangeable。ExtendVote When construct CanonicalVote 正式三事不是不变量 510，也不是不变量 438 / 34 / 350。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
