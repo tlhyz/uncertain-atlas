@@ -1,3 +1,7 @@
+## 2026-09-14（续 573）
+
+- 不变量 573；语料 C577；模式 name-the-finfields-notsettled-bar；反模式 finfields-notsettled-sold-as-bundled；L10.3 第 569 条。填 L4.4 / CometBFT 档案 Finalize 含刚决定那块的字段 not already settled 正式三事（407 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。407 Finalize 字段余量 unbundling 启动（573）。
+
 ## 2026-09-14（续 572）
 
 - 不变量 572；语料 C576；模式 name-the-finproc-notcand-bar；反模式 finproc-notcand-sold-as-bundled；L10.3 第 568 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee not apply candidate 正式三事（472 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。472 When calling ProcessProposal guarantee unbundling 完成（572）。
