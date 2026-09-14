@@ -491,6 +491,7 @@
 - [extwhenformal-sold-as-broadcast](extwhenformal-sold-as-broadcast.md)
 - [extusage-sold-as-deterministic](extusage-sold-as-deterministic.md)
 - [verifyreqbar-sold-as-pubkey](verifyreqbar-sold-as-pubkey.md)
+- [verifywhen-keepdiscard-sold-as-bundled](verifywhen-keepdiscard-sold-as-bundled.md)
 - [verifywhen-status-sold-as-bundled](verifywhen-status-sold-as-bundled.md)
 - [verifywhen-call-sold-as-bundled](verifywhen-call-sold-as-bundled.md)
 - [verifywhen-discard-sold-as-bundled](verifywhen-discard-sold-as-bundled.md)
