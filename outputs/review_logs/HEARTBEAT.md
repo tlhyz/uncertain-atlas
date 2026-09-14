@@ -361,4 +361,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T02:10Z | checkpoint 0210Z | P3-08 5 mixes ETA ~120min
 2026-09-14T02:20Z | timer research-continue | P3-08 G100 1/5 ~10min
 2026-09-14T02:20Z | checkpoint 0220Z | ETA ~110min
+2026-09-14T02:30Z | timer research-continue | **P3-08 G100 DONE -71.41%** (12.7pp worse); G75 2/5
+2026-09-14T02:30Z | checkpoint 0230Z | ETA ~96min
 ```
