@@ -353,4 +353,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T01:30Z | checkpoint 0130Z | ETA ~38min
 2026-09-14T01:40Z | timer research-continue | P3-07 70/30 2/3 ~20min; sanity check pending
 2026-09-14T01:40Z | checkpoint 0140Z | ETA ~31min
+2026-09-14T01:50Z | timer research-continue | **P3-07 70/30 DONE -58.70% baseline match**; 65/35 3/3
+2026-09-14T01:50Z | checkpoint 0150Z | ETA ~24min
 ```
