@@ -403,4 +403,10 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T05:40Z | checkpoint 0540Z | P4-02 next
 2026-09-14T05:50Z | timer research-continue | **P4-02 BLOCKED** crypto book inert; Regime A 324 bars price-only
 2026-09-14T05:50Z | checkpoint 0550Z | audit dual crypto legs
+2026-09-14T06:00Z | timer research-continue | **dual book unblock** portfolio+config fix
+2026-09-14T06:00Z | checkpoint 0600Z | 7d smoke queued
+2026-09-14T06:10Z | timer research-continue | 7d smoke running ~74s expected
+2026-09-14T06:10Z | checkpoint 0610Z | 65d tick P4 queued
+2026-09-14T06:50Z | timer research-continue | **P4-02 DONE** Regime A 40 bars 7d; crypto_max_dd 4.32%; 65d tick running
+2026-09-14T06:50Z | checkpoint 0650Z | P4-03 Regime B next
 ```

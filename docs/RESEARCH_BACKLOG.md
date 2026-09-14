@@ -88,7 +88,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P4-01 | Independent vs unified 10k portfolio | **done** | FAIL Δreturn=0 ΔDD=0; ind≡uni -58.70%; crypto inert — outputs/review_logs/2026-09-14_P4-01_independent_vs_unified_FAIL.md |
-| P4-02 | Regime A Tech↓ Crypto↑ | **in_progress** | dual book unblock — bar crypto fills on 65d |
+| P4-02 | Regime A Tech↓ Crypto↑ | **done** | DONE unblock; 7d Regime A 40 bars; strategy FAIL Δ=0 — outputs/review_logs/2026-09-14_P4-02_regime_A_DONE.md |
 | P4-03 | Regime B Tech↑ Crypto↓ | pending | |
 | P4-04 | Regime C both up | pending | |
 | P4-05 | Regime D both down | pending | |
