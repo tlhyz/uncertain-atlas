@@ -1,3 +1,7 @@
+## 2026-09-14（续 552）
+
+- 不变量 552；语料 C556；模式 name-the-finht-notverified-bar；反模式 finht-notverified-sold-as-bundled；L10.3 第 548 条。填 L4.4 / CometBFT 档案 FinalizeBlock height/time match header not already verified 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。462 FinalizeBlock height/time 对上拟议块头 unbundling 启动（552）。
+
 ## 2026-09-14（续 551）
 
 - 不变量 551；语料 C555；模式 name-the-procht-notfinht-bar；反模式 procht-notfinht-sold-as-bundled；L10.3 第 547 条。填 L4.4 / CometBFT 档案 ProcessProposal Process match header not Finalize newly decided fields 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。454 ProcessProposal height/time 对上拟议块头 unbundling 完成（549–551）。
