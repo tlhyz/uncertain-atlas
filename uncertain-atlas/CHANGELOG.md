@@ -1,3 +1,7 @@
+## 2026-09-13（续 524）
+
+- 不变量 524；语料 C528；模式 name-the-extusage-precommitnil-bar；反模式 extusage-precommitnil-sold-as-bundled；L10.3 第 520 条。填 L4.4 / CometBFT 档案 ExtendVote Usage precommit nil will not call ExtendVote 正式三事 / 实现表 / 05b / 共识专题。
+
 ## 2026-09-13（续 523）
 
 - CometBFT VerifyVoteExtension Usage hash does not guarantee Process 正式三事工作实例（官方 ABCI++ Methods VerifyVoteExtension Usage hash in the request points to a block / does not guarantee exposed via ProcessProposal / hash does not guarantee Process is not already Process'd，实现 / VerifyVoteExtension Usage hash does not guarantee Process 正式三事，不另写 19 节）：看见 hash points to a block 不是 Verify Usage bundled（353） interchangeable / 已经对该块跑过 Process interchangeable。看见 does not guarantee exposed via ProcessProposal 不是 proposer also Process bundled（351） interchangeable / 已经对上这次 Process interchangeable。看见 hash does not guarantee Process 不是 Verify Usage bundled interchangeable / 已经验过扩展 interchangeable。VerifyVoteExtension Usage hash does not guarantee Process 正式三事不是不变量 353，也不是不变量 351，也不是不变量 422。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
