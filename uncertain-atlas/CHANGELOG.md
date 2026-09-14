@@ -1,3 +1,9 @@
+## 2026-09-13（续 514）
+
+- CometBFT VerifyVoteExtension When discard invalid extension 正式三事工作实例（官方 ABCI++ Methods VerifyVoteExtension When step 1 discards Precommit without valid signature extension / 0-length extension valid with valid signature / step 1 before VerifyVoteExtension call，实现 / VerifyVoteExtension When discard invalid extension 正式三事，不另写 19 节）：看见 discards invalid Precommit 不是 Verify When 正式流程 bundled（435） interchangeable / 已经跳过 Verify interchangeable。看见 0-length with valid signature 不是空扩展仍会调 Verify bundled（353） interchangeable / 0 长就不合法 interchangeable。看见 step 1 before call 不是已经验过扩展 interchangeable / 已经写进 last_commit interchangeable。VerifyVoteExtension When discard invalid extension 正式三事不是不变量 435，也不是不变量 353 / 352。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 514；语料 C518；模式 name-the-verifywhen-discard-bar；反模式 verifywhen-discard-sold-as-bundled；L10.3 第 510 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension When discard invalid extension 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做验伴随签名、怎样调 VerifyVoteExtension、怎样写 ExtendedCommitInfo。不编博物馆页。不另写 19 节。不与 435 / 353 / 352 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 Verify When 正式流程 bundled interchangeable / 跳过 Verify interchangeable / 已经验过扩展 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 # 知识库修改日志
 
 ## 2026-09-13（续 513）
