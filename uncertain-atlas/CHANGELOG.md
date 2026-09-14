@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-14（续 583）
+
+- 不变量 583；语料 C443；模式 name-the-finprocgua-notrefill-bar；反模式 finprocgua-notrefill-sold-as-bundled；L10.3 第 435 条。填 L4.4 / CometBFT 档案 Finalize 请求把字段再填一遍 not no need to provide again 正式三事（360 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。360 Finalize 时的 Process 保证 unbundling 续（583 item 2）。
+
 ## 2026-09-14（续 582）
 
 - 不变量 582；语料 C434；模式 name-the-finprocgua-notallproc-bar；反模式 finprocgua-notallproc-sold-as-bundled；L10.3 第 428 条。填 L4.4 / CometBFT 档案 at least one non-byzantine ran Process not every validator 正式三事（360 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。360 Finalize 时的 Process 保证 unbundling 启动（582）。
