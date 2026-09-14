@@ -4,6 +4,9 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-14 | P3-11 similar-window search | BLOCKED | outputs/review_logs/2026-09-14_P3-11_similar_windows_BLOCKED.md |
+| 2026-09-14 | checkpoint 0400Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0400Z_timer.md |
+| 2026-09-14 | P3-08 grid mix | FAIL | outputs/review_logs/2026-09-14_P3-08_grid_mix_FAIL.md |
 | 2026-09-14 | checkpoint 0350Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0350Z_timer.md |
 | 2026-09-14 | checkpoint 0340Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0340Z_timer.md |
 | 2026-09-14 | checkpoint 0330Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0330Z_timer.md |
@@ -14,7 +17,7 @@ One line per review entry. Newest first.
 | 2026-09-14 | checkpoint 0240Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0240Z_timer.md |
 | 2026-09-14 | checkpoint 0230Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0230Z_timer.md |
 | 2026-09-14 | checkpoint 0220Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0220Z_timer.md |
-| 2026-09-14 | P3-08 grid mix | IN_PROGRESS | outputs/review_logs/2026-09-14_P3-08_grid_mix_IN_PROGRESS.md |
+| 2026-09-14 | P3-08 grid mix | IN_PROGRESS (superseded) | outputs/review_logs/2026-09-14_P3-08_grid_mix_IN_PROGRESS.md |
 | 2026-09-14 | checkpoint 0210Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0210Z_timer.md |
 | 2026-09-14 | P3-07 SOXL/SNXX weights | FAIL | outputs/review_logs/2026-09-14_P3-07_soxl_snxx_weights_FAIL.md |
 | 2026-09-14 | checkpoint 0200Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0200Z_timer.md |

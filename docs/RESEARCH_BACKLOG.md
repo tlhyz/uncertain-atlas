@@ -70,10 +70,10 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P3-05 | Reversal R1–R5 no-lookahead tests | **done** | PASS — outputs/review_logs/2026-09-13_P3-05_reversal_no_leak_PASS.md |
 | P3-06 | Right-side reserve 25/30/35% | **done** | FAIL 25% best −58.92%; all worse vs default −58.70% — outputs/review_logs/2026-09-14_P3-06_right_side_reserve_FAIL.md |
 | P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | **done** | FAIL default 70/30 best −58.70%; 75/25 worst −58.89% — outputs/review_logs/2026-09-14_P3-07_soxl_snxx_weights_FAIL.md |
-| P3-08 | Grid→Trend stage mix sweep | **in_progress** | G50=-57.85% best; dynamic 5/5 ~20min — outputs/review_logs/2026-09-14_P3-08_grid_mix_IN_PROGRESS.md |
+| P3-08 | Grid→Trend stage mix sweep | **done** | FAIL G50 best −57.85% (+0.85pp); G100 worst −71.41% — outputs/review_logs/2026-09-14_P3-08_grid_mix_FAIL.md |
 | P3-09 | FAIL_F1 direct-up window | pending | blocked: needs SOXL 2025-09→10 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
 | P3-10 | FAIL_F2 no-recovery window | pending | blocked: needs SOXL 2024-09→11 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
-| P3-11 | Similar-window search top-20 real windows | pending | |
+| P3-11 | Similar-window search top-20 real windows | **blocked** | empty on TECH_T2; max 1 window on 1546 bars — outputs/review_logs/2026-09-14_P3-11_similar_windows_BLOCKED.md |
 | P3-12 | Answer Q-tech-1 Short→Long vs Cash→Long | pending | Gate FAIL preserved |
 | P3-13 | Answer Q-tech-2 initial short % | **done** | FAIL via P3-02; 20% best return, no sweet spot — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
 | P3-14 | Answer Q-tech-8 bottom grid value-add | pending | |
