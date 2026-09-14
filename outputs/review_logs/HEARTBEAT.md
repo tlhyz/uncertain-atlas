@@ -446,4 +446,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T10:52Z | P0-02 BLOCKED | branch pytest 168 green; awaits PR #8 merge to main
 2026-09-14T11:02Z | checkpoint 1100Z | pending=0; P1-P6 done; idle until PR #8 merge
 2026-09-14T11:10Z | timer 1110Z | no change; PR #8 unmerged; pytest 168 green; skip duplicate log
+2026-09-14T11:30Z | timer 1130Z | pending=0; subscribed PR #8 merge watch for P0-02 resume
 ```
