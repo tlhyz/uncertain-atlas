@@ -443,4 +443,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T10:22Z | P6-03 FAIL | ETH MEDIUM→LOW; 6 blocking gates; P6-04 next
 2026-09-14T10:32Z | P6-04 FAIL | Tech OOS −75.49% vs B4 −0.38%; P6-05 next
 2026-09-14T10:42Z | P6-05 DONE | all rows LOW; P6 complete; P0-02 only pending
+2026-09-14T10:52Z | P0-02 BLOCKED | branch pytest 168 green; awaits PR #8 merge to main
 ```

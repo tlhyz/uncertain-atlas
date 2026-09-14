@@ -11,7 +11,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P0-01 | Merge refactor PR #8 to main | blocked | awaiting human merge |
-| P0-02 | pytest green on main after merge | pending | |
+| P0-02 | pytest green on main after merge | **blocked** | awaiting P0-01; branch 168 passed 2026-09-14 — outputs/review_logs/2026-09-14_P0-02_premerge_pytest_BLOCKED.md |
 | P0-03 | README links all docs | done | refactor delivery |
 | P0-04 | Review-log policy in `.cursor/rules` | done | review-optimize-log.mdc |
 | P0-05 | Phase 1 audit deliverables | done | REPO_AUDIT, GAP_ANALYSIS, ROADMAP, TASKS, LEDGER, PHASE1_SELF_AUDIT |
@@ -128,7 +128,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | 163 passed 2026-09-14T09:00Z daily audit |
+| M-01 | Run `pytest -q` | **done** | 168 passed 2026-09-14T10:52Z P0-02 pre-merge check |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | C-07 + W-01/W-02 sync 2026-09-14 daily audit |
 | M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-14T09:00Z |
 | M-04 | Check PR CI status | **done** | PR #8 open; no checks reported |
