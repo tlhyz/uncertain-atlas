@@ -4,7 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
-| 2026-09-14 | checkpoint 0650Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0650Z_timer.md |
+| 2026-09-14 | checkpoint 0700Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0700Z_timer.md |
+| 2026-09-14 | P4-03 Regime B | DONE | outputs/review_logs/2026-09-14_P4-03_regime_B_DONE.md |
 | 2026-09-14 | P4-02 Regime A | DONE | outputs/review_logs/2026-09-14_P4-02_regime_A_DONE.md |
 | 2026-09-14 | checkpoint 0550Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0550Z_timer.md |
 | 2026-09-14 | P4-02 Regime A | BLOCKED (superseded) | outputs/review_logs/2026-09-14_P4-02_regime_A_BLOCKED.md |

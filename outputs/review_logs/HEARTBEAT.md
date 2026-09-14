@@ -409,4 +409,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T06:10Z | checkpoint 0610Z | 65d tick P4 queued
 2026-09-14T06:50Z | timer research-continue | **P4-02 DONE** Regime A 40 bars 7d; crypto_max_dd 4.32%; 65d tick running
 2026-09-14T06:50Z | checkpoint 0650Z | P4-03 Regime B next
+2026-09-14T07:00Z | timer research-continue | **65d dual-book DONE** ind −56.4% uni −58.7% Δ+2.3pp
+2026-09-14T07:00Z | timer research-continue | **P4-03 DONE** Regime B 326 bars; uni crypto liq 100% DD
+2026-09-14T07:00Z | checkpoint 0700Z | P4-04 Regime C next
 ```
