@@ -1,3 +1,7 @@
+## 2026-09-14（续 545）
+
+- 不变量 545；语料 C549；模式 name-the-proccand-readonly-notcommitted-bar；反模式 proccand-readonly-notcommitted-sold-as-bundled；L10.3 第 541 条。填 L4.4 / CometBFT 档案 ProcessProposal read-only checks/processes not mutate committed 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。452 ProcessProposal 候选执行 unbundling 完成（543–545）。
+
 ## 2026-09-14（续 544）
 
 - 不变量 544；语料 C548；模式 name-the-proccand-candidate-notcommitted-bar；反模式 proccand-candidate-notcommitted-sold-as-bundled；L10.3 第 540 条。填 L4.4 / CometBFT 档案 ProcessProposal candidate state not already committed 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。452 ProcessProposal 候选执行 unbundling 续（544）。
