@@ -412,4 +412,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T07:00Z | timer research-continue | **65d dual-book DONE** ind −56.4% uni −58.7% Δ+2.3pp
 2026-09-14T07:00Z | timer research-continue | **P4-03 DONE** Regime B 326 bars; uni crypto liq 100% DD
 2026-09-14T07:00Z | checkpoint 0700Z | P4-04 Regime C next
+2026-09-14T07:10Z | timer research-continue | **P4-04 DONE** Regime C 450 bars 29.1%; inf avg_ret artifact noted
+2026-09-14T07:10Z | checkpoint 0710Z | P4-05 Regime D next
 ```
