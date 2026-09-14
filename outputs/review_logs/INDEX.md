@@ -4,7 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
-| 2026-09-14 | checkpoint 0755Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0755Z_timer.md |
+| 2026-09-14 | checkpoint 0805Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0805Z_timer.md |
+| 2026-09-14 | P4-09 DD pause | FAIL | outputs/review_logs/2026-09-14_P4-09_dd_pause_FAIL.md |
 | 2026-09-14 | P4-08 funding stress | INERT | outputs/review_logs/2026-09-14_P4-08_funding_stress_INERT.md |
 | 2026-09-14 | P4-07 margin/reserve | CONDITIONAL FAIL | outputs/review_logs/2026-09-14_P4-07_margin_reserve_CONDITIONAL_FAIL.md |
 | 2026-09-14 | P4-06 Regime E/F | DONE | outputs/review_logs/2026-09-14_P4-06_regime_EF_DONE.md |

@@ -422,4 +422,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T07:45Z | checkpoint 0745Z | P4-08 funding stress next
 2026-09-14T07:55Z | timer research-continue | **P4-08 DONE INERT** 0 triggers 1-2%; rule implemented
 2026-09-14T07:55Z | checkpoint 0755Z | P4-09 DD pause next
+2026-09-14T08:05Z | timer research-continue | **P4-09 DONE FAIL** soft−10% −82.35%; hard −88.75%
+2026-09-14T08:05Z | checkpoint 0805Z | P4 phase complete; P5 next
 ```
