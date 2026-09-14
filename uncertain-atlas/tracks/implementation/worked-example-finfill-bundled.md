@@ -41,6 +41,6 @@
 
 - 怎样写 Finalize、怎样再填字段、怎样从 Prepare/Process 复制字段。
 - Finalize 请求把字段再填一遍 not no need to provide again 单句边界。那是不变量 583（360 item 2 余量）。
-- even if passed not field names match 单句边界。那将是不变量 568（473 item 2 余量）。
+- even if passed not field names match 单句边界。那是不变量 568（473 item 2 余量）。
 - Finalize 时的 Process 保证 bundled 三事。那是不变量 360。
 - apply candidate not ExecuteTxState。那是不变量 584（360 item 3 余量）。
