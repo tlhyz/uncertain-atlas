@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 510）
+
+- CometBFT ExtendVote When fill CanonicalVoteExtension 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 4 _p_ sets ExtendVoteResponse.extension as extension field of CanonicalVoteExtension / populates the other fields in CanonicalVoteExtension / and signs the populated data structure，实现 / ExtendVote When fill CanonicalVoteExtension 正式三事，不另写 19 节）：看见 sets extension into CanonicalVoteExtension.extension 不是 return extension bundled（509） interchangeable / 已经按原样签 interchangeable。看见 populates other fields 不是 ExtendVoteRequest 栏 bundled（410） interchangeable / 已经只有 extension 字节 interchangeable。看见 signs populated CanonicalVoteExtension 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经广播 Precommit interchangeable。ExtendVote When fill CanonicalVoteExtension 正式三事不是不变量 509，也不是不变量 438 / 358 / 410。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 510；语料 C514；模式 name-the-extwhen-fill-bar；反模式 extwhen-fill-sold-as-bundled；L10.3 第 506 条。填 L4.4 / CometBFT 档案 ExtendVote When fill CanonicalVoteExtension 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做填 CanonicalVoteExtension、怎样构造 CanonicalVote、怎样广播 Precommit。不编博物馆页。不另写 19 节。不与 509 / 438 / 358 / 410 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 return extension bundled interchangeable / ExtendVote When 正式流程 bundled interchangeable / 按原样签 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 509）
 
 - CometBFT ExtendVote When return extension 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 3 Application returns ExtendVoteResponse.extension / not interpreted by the consensus algorithm / step 3 after synchronous call before CanonicalVoteExtension，实现 / ExtendVote When return extension 正式三事，不另写 19 节）：看见 returns ExtendVoteResponse.extension 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经填进 CanonicalVoteExtension interchangeable。看见 not interpreted by consensus 不是已经是同一份扩展 interchangeable / 已经 Verify 过 interchangeable。看见 step 3 before CanonicalVoteExtension 不是 ExtendVote 何时调用 bundled（361） interchangeable / 已经按原样签 interchangeable。ExtendVote When return extension 正式三事不是不变量 508，也不是不变量 361 / 438 / 358。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
