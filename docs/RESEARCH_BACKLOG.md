@@ -104,7 +104,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P5-01 | Implement block bootstrap MC (1000 paths) | **done** | PASS impl; 7d 6 daily obs INCONCLUSIVE — outputs/review_logs/2026-09-14_P5-01_bootstrap_mc_PASS.md |
-| P5-02 | Parameter plateau detector on ATR step | pending | |
+| P5-02 | Parameter plateau detector on ATR step | **done** | PLATEAU_INERT on returns; 0.40 worst Calmar — outputs/review_logs/2026-09-14_P5-02_plateau_detector_PASS.md |
 | P5-03 | Walk-forward split BTC 2019+ | pending | |
 | P5-04 | OOS holdout report for finalists | pending | |
 | P5-05 | DD>10/20/30% probability from MC | pending | |
