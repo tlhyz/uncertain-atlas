@@ -350,23 +350,27 @@ def run_dual_portfolio(
     tech_fsm = TechFSM(params.tech)
     crypto_fsm = CryptoBookFSM(params.crypto)
 
-    tech_wallet = TECH_BOOK * 0.95
-    tech_reserve = TECH_BOOK * 0.05
-    crypto_wallet = CRYPTO_BOOK
-    reserve_pool = GLOBAL_RESERVE
+    margin_frac = float(params.margin_frac)
+    margin_frac = min(max(margin_frac, 0.05), 0.99)
+    reserve_frac = 1.0 - margin_frac
+    tech_deploy = TECH_BOOK * margin_frac
+    tech_book_reserve = TECH_BOOK * reserve_frac
+    crypto_deploy = CRYPTO_BOOK * margin_frac
+    crypto_book_reserve = CRYPTO_BOOK * reserve_frac
+    reserve_pool = GLOBAL_RESERVE + crypto_book_reserve
 
     def _mk_leg(nm: str, book: str, sym: str, direction: str, mode: str, cap: float) -> LegState:
         st = _PerpState(wallet=cap, reserve=0.0)
         return LegState(nm, book, sym, direction, mode, st, leverage=params.tech.leverage if book == "tech" else params.crypto.leverage)  # type: ignore[arg-type]
 
     legs = [
-        _mk_leg("soxl_short", "tech", "SOXL", "short", "directional", tech_wallet * 0.4),
-        _mk_leg("soxl_long_grid", "tech", "SOXL", "long", "grid", tech_wallet * 0.35),
-        _mk_leg("soxl_long_dir", "tech", "SOXL", "long", "directional", tech_wallet * 0.25),
-        _mk_leg("snxx_long", "tech", "SNXX", "long", "directional", tech_reserve),
+        _mk_leg("soxl_short", "tech", "SOXL", "short", "directional", tech_deploy * 0.4),
+        _mk_leg("soxl_long_grid", "tech", "SOXL", "long", "grid", tech_deploy * 0.35),
+        _mk_leg("soxl_long_dir", "tech", "SOXL", "long", "directional", tech_deploy * 0.25),
+        _mk_leg("snxx_long", "tech", "SNXX", "long", "directional", tech_book_reserve),
     ]
     crypto_symbols = tuple(s for s in ("BTC", "ETH", "SOL") if s in data.crypto)
-    crypto_caps = CRYPTO_BOOK / max(len(crypto_symbols), 1)
+    crypto_caps = crypto_deploy / max(len(crypto_symbols), 1)
     for sym in crypto_symbols:
         legs.append(_mk_leg(f"{sym.lower()}_long", "crypto", sym, "long", "grid", crypto_caps))
 
@@ -410,8 +414,8 @@ def run_dual_portfolio(
                 unified=params.unified_signal,
             )
 
-            # Map exposure to legs
-            book_cap = TECH_BOOK
+            # Map exposure to legs (scale targets to deployable book capital)
+            book_cap = tech_deploy
             short_tgt = tech_exp.short_notional_frac * book_cap
             grid_tgt = tech_exp.long_grid_frac * book_cap
             dir_tgt = tech_exp.long_dir_frac * book_cap

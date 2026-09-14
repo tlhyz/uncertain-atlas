@@ -25,6 +25,7 @@ from .experiments import (
     rank_leverage,
     rank_short_init,
     rank_drawdown_sets,
+    rank_margin_reserve,
     rank_right_side_reserve,
     rank_soxl_snxx_weights,
     rank_short_structures,
@@ -100,6 +101,8 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "run_short_init_rank": False,
         "run_drawdown_set_rank": False,
         "run_right_side_reserve_rank": False,
+        "run_margin_reserve_rank": False,
+        "margin_reserve_fracs": [0.80, 0.70, 0.60],
         "run_soxl_snxx_weight_rank": False,
         "run_grid_mix_rank": False,
         "run_leverage_rank": True,
@@ -192,6 +195,18 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         print(f"[run] right side reserve rank {list(levels)}...")
         payload["right_side_reserve_rank"] = rank_right_side_reserve(
             data, levels=levels, fill_mode=str(cfg.get("fill_mode") or "base"), tick_precise=tick_precise,
+        )
+
+    if cfg.get("run_margin_reserve_rank", False):
+        fracs = tuple(float(x) for x in (cfg.get("margin_reserve_fracs") or [0.80, 0.70, 0.60]))
+        print(f"[run] margin/reserve rank {list(fracs)}...")
+        pk = portfolio_kwargs_from_config(cfg, tick_precise=tick_precise)
+        payload["margin_reserve_rank"] = rank_margin_reserve(
+            data,
+            margin_fracs=fracs,
+            fill_mode=str(cfg.get("fill_mode") or "base"),
+            tick_precise=tick_precise,
+            portfolio_kwargs=pk,
         )
 
     if cfg.get("run_soxl_snxx_weight_rank", False):

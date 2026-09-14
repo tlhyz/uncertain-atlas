@@ -188,6 +188,7 @@ class DualParams:
     unified_signal: bool = False
     use_global_reserve: bool = False
     fill_mode: str = "base"
+    margin_frac: float = 0.95  # deployed fraction within each book (legacy ≈95/5 snxx reserve)
 
     def label(self) -> str:
         tag = "unified" if self.unified_signal else "independent"

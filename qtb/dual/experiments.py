@@ -296,6 +296,44 @@ def rank_right_side_reserve(
     return rows
 
 
+def rank_margin_reserve(
+    data: DualDataset,
+    *,
+    margin_fracs: tuple[float, ...] = (0.80, 0.70, 0.60),
+    fill_mode: str = "base",
+    tick_precise: bool = False,
+    portfolio_kwargs: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
+    """Sweep margin/reserve split within each book (P4-07). margin_frac = deployed fraction."""
+    pk = dict(portfolio_kwargs or {})
+    pk.pop("fill_mode", None)
+    pk.pop("tick_precise", None)
+    rows: list[dict[str, Any]] = []
+    for mf in margin_fracs:
+        res_pct = int(round((1.0 - mf) * 100))
+        dep_pct = int(round(mf * 100))
+        label = f"{dep_pct}_{res_pct}"
+        print(f"[run] margin_reserve {dep_pct}/{res_pct}...")
+        r = run_dual_portfolio(
+            data,
+            DualParams(margin_frac=mf),
+            name=f"margin_{label}",
+            fill_mode=fill_mode,
+            tick_precise=tick_precise,
+            **pk,
+        )
+        m = summarize_portfolio(r)
+        m["margin_frac"] = mf
+        m["reserve_frac"] = round(1.0 - mf, 4)
+        print(
+            f"[run] margin_reserve {dep_pct}/{res_pct} done return={100 * float(m.get('total_return', 0)):.2f}% "
+            f"max_dd={100 * float(m.get('max_dd_pct', 0)):.2f}% calmar={float(m.get('calmar', 0)):.2f}"
+        )
+        rows.append(m)
+    rows.sort(key=lambda x: x.get("calmar", 0), reverse=True)
+    return rows
+
+
 def rank_soxl_snxx_weights(
     data: DualDataset,
     *,
