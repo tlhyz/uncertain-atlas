@@ -403,3 +403,4 @@
 - [name-the-preparewhen-lateext-unverified-bar](name-the-preparewhen-lateext-unverified-bar.md)
 - [name-the-preparewhen-suggestvalidate-bar](name-the-preparewhen-suggestvalidate-bar.md)
 - [name-the-verifyusage-emptyext-bar](name-the-verifyusage-emptyext-bar.md)
+- [name-the-verifyusage-localproc-bar](name-the-verifyusage-localproc-bar.md)
