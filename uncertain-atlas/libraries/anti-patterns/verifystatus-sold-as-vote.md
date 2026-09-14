@@ -18,5 +18,5 @@
 ## 和相邻反模式
 
 - [proposalstatus-sold-as-prevote](proposalstatus-sold-as-prevote.md) 是 ProposalStatus 那种 ACCEPT 会发 Prevote，不是本页这种 VerifyStatus 的 ACCEPT 表示应用认为扩展合法、共识会收下这张票不是已经当成块非法。
-- [verifyrespstatus-sold-as-verifystatus](verifyrespstatus-sold-as-verifystatus.md) 是 VerifyVoteExtensionResponse.status 必须只依赖请求和上一份状态，不是本页这种 VerifyStatus 的 REJECT 表示应用认为扩展非法、共识会拒掉整张票不是已经会发 Prevote nil。
+- [verifystatus-unknown-sold-as-bundled](verifystatus-unknown-sold-as-bundled.md) 是 UNKNOWN always wrong 单句专用；本页是 434 bundled 三事专用。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收整张 Precommit 就已经是块非法，不是本页这种 VerifyStatus 的 ACCEPT 不是已经当成块非法。
