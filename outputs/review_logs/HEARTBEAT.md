@@ -420,4 +420,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T07:30Z | checkpoint 0730Z | P4-07 margin sweep next
 2026-09-14T07:45Z | timer research-continue | **P4-07 DONE** margin_frac sweep; 7d 60/40 best; 65d running
 2026-09-14T07:45Z | checkpoint 0745Z | P4-08 funding stress next
+2026-09-14T07:55Z | timer research-continue | **P4-08 DONE INERT** 0 triggers 1-2%; rule implemented
+2026-09-14T07:55Z | checkpoint 0755Z | P4-09 DD pause next
 ```
