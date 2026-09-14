@@ -1,3 +1,7 @@
+## 2026-09-13（续 528）
+
+- 不变量 528；语料 C532；模式 name-the-verifyaccept-liveness-bar；反模式 verifyaccept-liveness-sold-as-bundled；L10.3 第 524 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage unless really know liveness implications 正式三事 / 实现表 / 05b / 共识专题。
+
 ## 2026-09-13（续 527）
 
 - 不变量 527；语料 C531；模式 name-the-verifyaccept-shouldaccept-bar；反模式 verifyaccept-shouldaccept-sold-as-bundled；L10.3 第 523 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage SHOULD always set ACCEPT 正式三事 / 实现表 / 05b / 共识专题。
