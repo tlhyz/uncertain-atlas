@@ -343,4 +343,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T00:40Z | checkpoint 0040Z | P3-08 grid mix queued
 2026-09-14T00:50Z | timer research-continue | P3-07 75/25 1/3 DATA_QUALITY PASS
 2026-09-14T00:50Z | checkpoint 0050Z | ETA ~70min; default 70/30 in sweep
+2026-09-14T01:00Z | timer research-continue | P3-07 75/25 1/3 ~7min; no return yet
+2026-09-14T01:00Z | checkpoint 0100Z | ETA ~63min
 ```
