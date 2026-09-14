@@ -418,4 +418,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T07:20Z | checkpoint 0720Z | P4-06 E/F mixed next
 2026-09-14T07:30Z | timer research-continue | **P4-06 DONE** mixed 25 bars 1.6%; quadrant coverage 98.4%
 2026-09-14T07:30Z | checkpoint 0730Z | P4-07 margin sweep next
+2026-09-14T07:45Z | timer research-continue | **P4-07 DONE** margin_frac sweep; 7d 60/40 best; 65d running
+2026-09-14T07:45Z | checkpoint 0745Z | P4-08 funding stress next
 ```

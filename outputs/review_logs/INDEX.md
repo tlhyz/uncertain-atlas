@@ -4,7 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
-| 2026-09-14 | checkpoint 0730Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0730Z_timer.md |
+| 2026-09-14 | checkpoint 0745Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0745Z_timer.md |
+| 2026-09-14 | P4-07 margin/reserve | CONDITIONAL FAIL | outputs/review_logs/2026-09-14_P4-07_margin_reserve_CONDITIONAL_FAIL.md |
 | 2026-09-14 | P4-06 Regime E/F | DONE | outputs/review_logs/2026-09-14_P4-06_regime_EF_DONE.md |
 | 2026-09-14 | P4-05 Regime D | DONE | outputs/review_logs/2026-09-14_P4-05_regime_D_DONE.md |
 | 2026-09-14 | P4-04 Regime C | DONE | outputs/review_logs/2026-09-14_P4-04_regime_C_DONE.md |
