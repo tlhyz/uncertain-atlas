@@ -1,5 +1,11 @@
 # 知识库修改日志
 
+## 2026-09-13（续 511）
+
+- CometBFT ExtendVote When construct CanonicalVote 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 5 _p_ constructs and signs the CanonicalVote structure / step 5 after signs populated CanonicalVoteExtension / before constructs Precommit using both，实现 / ExtendVote When construct CanonicalVote 正式三事，不另写 19 节）：看见 constructs CanonicalVote 不是 fill CanonicalVoteExtension bundled（510） interchangeable / 已经 signs populated CanonicalVoteExtension interchangeable。看见 signs CanonicalVote 不是已经验过扩展 interchangeable / 已经 Accept interchangeable。看见 step 5 before constructs Precommit 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经广播 Precommit interchangeable。ExtendVote When construct CanonicalVote 正式三事不是不变量 510，也不是不变量 438 / 34 / 350。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 511；语料 C515；模式 name-the-extwhen-canonicalvote-bar；反模式 extwhen-canonicalvote-sold-as-bundled；L10.3 第 507 条。填 L4.4 / CometBFT 档案 ExtendVote When construct CanonicalVote 正式三事 / 实现表 / 05b / 共识专题。
+- 不抄怎样做构造 CanonicalVote、怎样构造 Precommit、怎样广播 Precommit。不编博物馆页。不另写 19 节。不与 510 / 438 / 34 / 350 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L5.4 / mempool 正文。已经 fill CanonicalVoteExtension bundled interchangeable / ExtendVote When 正式流程 bundled interchangeable / 验过扩展 interchangeable 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+
 ## 2026-09-13（续 510）
 
 - CometBFT ExtendVote When fill CanonicalVoteExtension 正式三事工作实例（官方 ABCI++ Methods ExtendVote When step 4 _p_ sets ExtendVoteResponse.extension as extension field of CanonicalVoteExtension / populates the other fields in CanonicalVoteExtension / and signs the populated data structure，实现 / ExtendVote When fill CanonicalVoteExtension 正式三事，不另写 19 节）：看见 sets extension into CanonicalVoteExtension.extension 不是 return extension bundled（509） interchangeable / 已经按原样签 interchangeable。看见 populates other fields 不是 ExtendVoteRequest 栏 bundled（410） interchangeable / 已经只有 extension 字节 interchangeable。看见 signs populated CanonicalVoteExtension 不是 ExtendVote When 正式流程 bundled（438） interchangeable / 已经广播 Precommit interchangeable。ExtendVote When fill CanonicalVoteExtension 正式三事不是不变量 509，也不是不变量 438 / 358 / 410。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
