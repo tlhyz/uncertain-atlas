@@ -1,3 +1,7 @@
+## 2026-09-14（续 539）
+
+- 不变量 539；语料 C543；模式 name-the-verifystatus-reject-bar；反模式 verifystatus-reject-sold-as-bundled；L10.3 第 535 条。填 L4.4 / CometBFT 档案 VerifyStatus REJECT rejects whole vote 正式三事 / 实现表 / 05b / 共识专题。434 VerifyStatus 三事 unbundling 完成（537–539）。
+
 ## 2026-09-14（续 538）
 
 - 不变量 538；语料 C542；模式 name-the-verifystatus-accept-bar；反模式 verifystatus-accept-sold-as-bundled；L10.3 第 534 条。填 L4.4 / CometBFT 档案 VerifyStatus ACCEPT accepts vote 正式三事 / 实现表 / 05b / 共识专题。
