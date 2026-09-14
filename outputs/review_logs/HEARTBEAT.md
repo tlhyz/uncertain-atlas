@@ -369,4 +369,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T02:50Z | checkpoint 0250Z | less grid helps; ETA ~72min
 2026-09-14T03:00Z | timer research-continue | P3-08 G50 3/5 ~10min
 2026-09-14T03:00Z | checkpoint 0300Z | ETA ~58min
+2026-09-14T03:10Z | timer research-continue | **P3-08 G50 DONE -57.85% (+0.85pp vs baseline)**; G25 4/5
+2026-09-14T03:10Z | checkpoint 0310Z | first grid-mix beat default dual
 ```
