@@ -359,4 +359,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T02:00Z | checkpoint 0200Z | FAIL review + P3-08 next cycle
 2026-09-14T02:10Z | timer research-continue | **P3-07 DONE FAIL** 70/30 best -58.70%; P3-08 started
 2026-09-14T02:10Z | checkpoint 0210Z | P3-08 5 mixes ETA ~120min
+2026-09-14T02:20Z | timer research-continue | P3-08 G100 1/5 ~10min
+2026-09-14T02:20Z | checkpoint 0220Z | ETA ~110min
 ```
