@@ -1,3 +1,7 @@
+## 2026-09-14（续 542）
+
+- 不变量 542；语料 C546；模式 name-the-procreject-assume-notexecute-bar；反模式 procreject-assume-notexecute-sold-as-bundled；L10.3 第 538 条。填 L4.4 / CometBFT 档案 ProcessProposal REJECT consensus assume not can't execute candidate 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。455 Process REJECT consensus assume unbundling 完成（540–542）。
+
 ## 2026-09-14（续 541）
 
 - 不变量 541；语料 C545；模式 name-the-procreject-prevote-notverify-bar；反模式 procreject-prevote-notverify-sold-as-bundled；L10.3 第 537 条。填 L4.4 / CometBFT 档案 ProcessProposal REJECT prevote nil not Verify whole vote 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。455 Process REJECT consensus assume unbundling 续（541）。
