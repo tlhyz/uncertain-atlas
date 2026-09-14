@@ -88,7 +88,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P4-01 | Independent vs unified 10k portfolio | **done** | FAIL Δreturn=0 ΔDD=0; ind≡uni -58.70%; crypto inert — outputs/review_logs/2026-09-14_P4-01_independent_vs_unified_FAIL.md |
-| P4-02 | Regime A Tech↓ Crypto↑ | **blocked** | dual crypto inert; Regime A 324 bars in SOXL/BTC prices only — outputs/review_logs/2026-09-14_P4-02_regime_A_BLOCKED.md |
+| P4-02 | Regime A Tech↓ Crypto↑ | **in_progress** | dual book unblock — bar crypto fills on 65d |
 | P4-03 | Regime B Tech↑ Crypto↓ | pending | |
 | P4-04 | Regime C both up | pending | |
 | P4-05 | Regime D both down | pending | |

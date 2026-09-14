@@ -27,6 +27,20 @@ from .universe import (
 )
 
 
+def portfolio_kwargs_from_config(cfg: dict[str, Any] | None = None, *, tick_precise: bool = False) -> dict[str, Any]:
+    """Map dual job config to run_dual_portfolio keyword args."""
+    cfg = cfg or {}
+    tech_tick_only = bool(cfg.get("tech_tick_only", True))
+    crypto_tick_fills = bool(cfg.get("crypto_tick_fills", False))
+    return {
+        "fill_mode": str(cfg.get("fill_mode") or "base"),
+        "tick_precise": tick_precise,
+        "tech_tick_only": tech_tick_only,
+        "crypto_tick_fills": crypto_tick_fills,
+        "tech_tick_fills": bool(cfg.get("tech_tick_fills", True)),
+    }
+
+
 def run_benchmarks(data: DualDataset, fill_mode: str = "base", tick_precise: bool = False) -> list[dict[str, Any]]:
     base = DualParams()
     rows: list[dict[str, Any]] = []
@@ -149,15 +163,34 @@ def run_plans(data: DualDataset, fill_mode: str = "base", tick_precise: bool = F
     return out
 
 
-def compare_independent_vs_unified(data: DualDataset, fill_mode: str = "base", tick_precise: bool = False) -> dict[str, Any]:
-    ind = run_dual_portfolio(data, DualParams(unified_signal=False), name="independent", fill_mode=fill_mode, tick_precise=tick_precise)
-    uni = run_dual_portfolio(data, DualParams(unified_signal=True), name="unified", fill_mode=fill_mode, tick_precise=tick_precise)
+def compare_independent_vs_unified(
+    data: DualDataset,
+    fill_mode: str = "base",
+    tick_precise: bool = False,
+    *,
+    tech_tick_only: bool = True,
+    crypto_tick_fills: bool = False,
+    tech_tick_fills: bool = True,
+) -> dict[str, Any]:
+    kwargs = {
+        "fill_mode": fill_mode,
+        "tick_precise": tick_precise,
+        "tech_tick_only": tech_tick_only,
+        "crypto_tick_fills": crypto_tick_fills,
+        "tech_tick_fills": tech_tick_fills,
+    }
+    ind = run_dual_portfolio(data, DualParams(unified_signal=False), name="independent", **kwargs)
+    uni = run_dual_portfolio(data, DualParams(unified_signal=True), name="unified", **kwargs)
+    ind_m = summarize_portfolio(ind)
+    uni_m = summarize_portfolio(uni)
     return {
-        "independent": summarize_portfolio(ind),
-        "unified": summarize_portfolio(uni),
-        "delta_return": summarize_portfolio(ind)["total_return"] - summarize_portfolio(uni)["total_return"],
-        "delta_dd": summarize_portfolio(ind)["max_dd_pct"] - summarize_portfolio(uni)["max_dd_pct"],
+        "independent": ind_m,
+        "unified": uni_m,
+        "delta_return": ind_m["total_return"] - uni_m["total_return"],
+        "delta_dd": ind_m["max_dd_pct"] - uni_m["max_dd_pct"],
         "regime_independent": regime_cross_stats(ind.tech_equity, ind.crypto_equity, ind.timestamps),
+        "regime_unified": regime_cross_stats(uni.tech_equity, uni.crypto_equity, uni.timestamps),
+        "portfolio_kwargs": kwargs,
     }
 
 

@@ -183,7 +183,7 @@ def load_binance_market(
             day_df = fetch_agg_trades_day(bn, d, cache_only=cache_only)
             n_rows += len(day_df)
             d += timedelta(days=1)
-        trades_lazy = True
+        trades_lazy = n_rows > 0
     elif cache_only:
         from qtb.data.binance_futures import trades_day_cache_path
 
@@ -271,6 +271,7 @@ def load_dual_dataset(
     end: str | None = None,
     download_trades: bool = True,
     tech_tick_only: bool = True,
+    crypto_download_trades: bool | None = None,
 ) -> DualDataset:
     """
     Binance-only dual dataset: SOXL/SNXX tech with aggTrades; crypto klines only.
@@ -285,12 +286,14 @@ def load_dual_dataset(
             cache_only=cache_only, download_trades=download_trades,
         )
 
+    crypto_dl = (not tech_tick_only) if crypto_download_trades is None else bool(crypto_download_trades)
+
     crypto: dict[str, MarketData] = {}
     for sym in CRYPTO_CORE:
         crypto[sym] = load_binance_market(
             sym, interval, start=t0, end=t1,
             cache_only=cache_only,
-            download_trades=not tech_tick_only,
+            download_trades=crypto_dl,
         )
 
     frames = [tech["SOXL"].bars, tech["SNXX"].bars] + [crypto[s].bars for s in CRYPTO_CORE]

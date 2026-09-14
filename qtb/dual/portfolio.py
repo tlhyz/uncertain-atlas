@@ -508,7 +508,12 @@ def run_dual_portfolio(
                 cpx = float(data.crypto[leg.symbol].bars["close"].iloc[i])
                 bar_ts = pd.Timestamp(data.crypto[leg.symbol].bars["timestamp"].iloc[i])
                 bar_trades = _bar_trades_for(md, bar_ts)
-                if tick_precise and getattr(md, "trades_lazy", False) and (bar_trades is None or bar_trades.empty):
+                if (
+                    tick_precise
+                    and crypto_tick_fills
+                    and getattr(md, "trades_lazy", False)
+                    and (bar_trades is None or bar_trades.empty)
+                ):
                     raise RuntimeError(
                         f"tick_precise: no aggTrades in bar {bar_ts} for {leg.symbol} — refuse bar approximation"
                     )
@@ -523,6 +528,7 @@ def run_dual_portfolio(
                         )[i]
                     )
                     qv_c = float(data.crypto[leg.symbol].bars["quote_volume"].iloc[i]) if "quote_volume" in data.crypto[leg.symbol].bars.columns else 0.0
+                    crypto_grid_tick = tick_precise and crypto_tick_fills
                     used_ticks = _process_grid_fills(
                         leg, i,
                         float(data.crypto[leg.symbol].bars["open"].iloc[i]),
@@ -532,14 +538,14 @@ def run_dual_portfolio(
                         params.crypto.grid_atr_step, params.crypto.grid_atr_range,
                         fee, fill, reanchor=True,
                         bar_trades=bar_trades,
-                        tick_precise=tick_precise,
+                        tick_precise=crypto_grid_tick,
                     )
                 if bar_trades is not None and not bar_trades.empty:
                     adjust_notional_via_ticks(
                         leg.state, leg.direction, leg.leverage,
                         leg.target_notional, bar_trades, fee, fill,
                     )
-                elif not tick_precise:
+                elif not tick_precise or not crypto_tick_fills:
                     _rebalance_leg(leg, i, cpx, leg.target_notional, fee, fill)
 
         # Liquidation check (isolated, simplified)

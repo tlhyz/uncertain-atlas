@@ -13,6 +13,7 @@ import pandas as pd
 from .data import load_dual_dataset, write_provenance
 from .experiments import (
     compare_independent_vs_unified,
+    portfolio_kwargs_from_config,
     run_benchmarks,
     run_binance_crypto_c1,
     run_fill_modes,
@@ -89,6 +90,9 @@ def load_dual_config(path: str | None) -> dict[str, Any]:
         "data_end": "",
         "download_trades": True,
         "tick_precise": True,
+        "tech_tick_only": True,
+        "crypto_tick_fills": False,
+        "tech_tick_fills": True,
         "skip_data_quality": False,
         "data_quality_config": "configs/data_quality.yaml",
         "run_independent_vs_unified": True,
@@ -126,6 +130,8 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         start=data_start,
         end=data_end,
         download_trades=download_trades,
+        tech_tick_only=bool(cfg.get("tech_tick_only", True)),
+        crypto_download_trades=cfg.get("crypto_download_trades"),
     )
     write_provenance(data, out_dir)
     print(f"overlap {data.overlap_start} -> {data.overlap_end} bars={len(data.aligned_index)}")
@@ -160,7 +166,8 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
 
     if cfg.get("run_independent_vs_unified", True):
         print("[run] independent vs unified...")
-        payload["independent_vs_unified"] = compare_independent_vs_unified(data, tick_precise=tick_precise)
+        pk = portfolio_kwargs_from_config(cfg, tick_precise=tick_precise)
+        payload["independent_vs_unified"] = compare_independent_vs_unified(data, **pk)
 
     if cfg.get("run_short_structures", True):
         print("[run] short structure rank...")

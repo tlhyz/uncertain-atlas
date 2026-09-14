@@ -1,7 +1,7 @@
-# P4-01 — Independent vs unified 10k portfolio (65d tick)
+# 7d smoke — dual book with active crypto legs (bar fills; no 2026 crypto aggTrades)
 interval: "1h"
 cache_only: true
-output_dir: outputs/experiments/dual_binance_tick_independent_vs_unified
+output_dir: outputs/experiments/dual_binance_tick_dual_book_7d
 
 run_benchmarks: false
 run_sweep: false
@@ -21,7 +21,7 @@ run_grid_atr_rank: false
 run_fill_modes: false
 fill_mode: base
 
-data_start: "2026-07-09"
+data_start: "2026-09-05"
 data_end: "2026-09-11"
 download_trades: true
 tick_precise: true

@@ -16,7 +16,8 @@ from qtb.dual.crypto_fsm import CryptoAssetFSM, CryptoBookFSM
 from qtb.dual.portfolio import run_dual_portfolio
 from qtb.dual.signals import compute_anchor, dd_tier, drawdown_from_anchor, grid_mix_fractions
 from qtb.dual.tech_fsm import TechFSM
-from qtb.dual.universe import DRAWDOWN_SETS, DualParams, CryptoParams, TECH_BOOK, plan_presets
+from qtb.dual.universe import DRAWDOWN_SETS, DualParams, CryptoParams, TECH_BOOK, CRYPTO_BOOK, plan_presets
+from qtb.ab.metrics import underwater
 
 
 def _bars(closes: list[float], start="2026-01-01", freq="1h") -> pd.DataFrame:
@@ -204,3 +205,19 @@ def test_rank_grid_mix_sweep():
     assert len(rows) == 2
     assert {r["grid_mix"] for r in rows} == {"G100", "dynamic"}
     assert all("total_return" in r for r in rows)
+
+
+def test_dual_book_crypto_bar_fills_when_no_aggtrades():
+    """Crypto book trades when tech_disabled and tech_tick_only=False."""
+    data = _mini_dataset(120)
+    r = run_dual_portfolio(
+        data,
+        DualParams(),
+        name="crypto_only",
+        tech_disabled=True,
+        tech_tick_only=False,
+        crypto_tick_fills=False,
+        tick_precise=False,
+    )
+    assert not np.allclose(r.crypto_equity, CRYPTO_BOOK)
+    assert underwater(r.crypto_equity)[0] > 0
