@@ -1,3 +1,7 @@
+## 2026-09-14（续 549）
+
+- 不变量 549；语料 C553；模式 name-the-procht-notverified-bar；反模式 procht-notverified-sold-as-bundled；L10.3 第 545 条。填 L4.4 / CometBFT 档案 ProcessProposal height/time match header not already verified 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。454 ProcessProposal height/time 对上拟议块头 unbundling 启动（549）。
+
 ## 2026-09-14（续 548）
 
 - 不变量 548；语料 C552；模式 name-the-procfull-notfinfields-bar；反模式 procfull-notfinfields-sold-as-bundled；L10.3 第 544 条。填 L4.4 / CometBFT 档案 ProcessProposal Contains all information not Finalize newly decided fields 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。453 ProcessProposal 含执行所需全部信息 unbundling 完成（546–548）。
