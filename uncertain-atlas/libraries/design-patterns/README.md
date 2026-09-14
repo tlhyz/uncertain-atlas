@@ -391,6 +391,7 @@
 - [name-the-verify-status](name-the-verify-status.md)
 - [name-the-verify-resp-status](name-the-verify-resp-status.md)
 - [name-the-verifyrespstatus-validinvalid-bar](name-the-verifyrespstatus-validinvalid-bar.md)
+- [name-the-verifystatus-unknown-bar](name-the-verifystatus-unknown-bar.md)
 - [name-the-verifyrespstatus-exclusivedep-bar](name-the-verifyrespstatus-exclusivedep-bar.md)
 - [name-the-fin-resp-end](name-the-fin-resp-end.md)
 - [name-the-fin-resp-bar](name-the-fin-resp-bar.md)
