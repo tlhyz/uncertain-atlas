@@ -83,7 +83,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 **No CORE or SMALL LIVE candidates.** P5 OOS + MC gates **FAIL** (C-07). BTC/ETH demoted to **LOW** (P6-02/03); SOL MEDIUM row **stale** pending P6-05 review.
 
-**Tech Short→Long:** explicitly **NOT** a live candidate until beats Cash→Long on Binance ticks + Gate OOS.
+**Tech Short→Long:** explicitly **NOT** a live candidate — OOS FAIL vs B4 (−75pp holdout, P6-04); remove Short from baseline (C-05).
 
 ---
 

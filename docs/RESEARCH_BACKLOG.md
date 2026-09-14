@@ -119,7 +119,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P6-01 | Gate fill ratio calibration vs Binance | **done** | CONDITIONAL PASS BAR BTC 1h fill_ratio 0.986 base; vol not binding — outputs/review_logs/2026-09-14_P6-01_gate_fill_calibration_CONDITIONAL_PASS.md |
 | P6-02 | Promote BTC row to MEDIUM confidence | **done** | FAIL demote MEDIUM→LOW; 5 blocking gates — outputs/review_logs/2026-09-14_P6-02_btc_promotion_FAIL.md |
 | P6-03 | Promote ETH row to MEDIUM confidence | **done** | FAIL demote MEDIUM→LOW; 6 blocking gates — outputs/review_logs/2026-09-14_P6-03_eth_promotion_FAIL.md |
-| P6-04 | Tech row only if beats Cash→Long OOS | pending | |
+| P6-04 | Tech row only if beats Cash→Long OOS | **done** | FAIL holdout −75.49% vs B4 −0.38% (−75pp) — outputs/review_logs/2026-09-14_P6-04_tech_cash_long_oos_FAIL.md |
 | P6-05 | Final LIVE_CANDIDATES.md review | pending | |
 
 ---

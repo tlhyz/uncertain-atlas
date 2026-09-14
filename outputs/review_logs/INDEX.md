@@ -4,7 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
-| 2026-09-14 | P6-03 ETH promotion | FAIL | outputs/review_logs/2026-09-14_P6-03_eth_promotion_FAIL.md |
+| 2026-09-14 | P6-04 Tech vs B4 OOS | FAIL | outputs/review_logs/2026-09-14_P6-04_tech_cash_long_oos_FAIL.md |
 | 2026-09-14 | daily audit 0900Z | PASS | outputs/review_logs/2026-09-14_daily_audit_0900Z.md |
 | 2026-09-14 | P5-06 liq MC | CONDITIONAL FAIL | outputs/review_logs/2026-09-14_P5-06_liq_probs_CONDITIONAL_FAIL.md |
 | 2026-09-14 | P5-05 DD MC probs | DONE | outputs/review_logs/2026-09-14_P5-05_dd_probs_DONE.md |
