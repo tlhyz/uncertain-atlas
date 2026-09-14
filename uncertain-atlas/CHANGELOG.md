@@ -1,3 +1,7 @@
+## 2026-09-14（续 572）
+
+- 不变量 572；语料 C576；模式 name-the-finproc-notcand-bar；反模式 finproc-notcand-sold-as-bundled；L10.3 第 568 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee not apply candidate 正式三事（472 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。472 When calling ProcessProposal guarantee unbundling 完成（572）。
+
 ## 2026-09-14（续 571）
 
 - 不变量 571；语料 C575；模式 name-the-finproc-notproposer-bar；反模式 finproc-notproposer-sold-as-bundled；L10.3 第 567 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee not proposer means everyone Processed 正式三事（472 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。472 When calling ProcessProposal guarantee unbundling 续（571）。
