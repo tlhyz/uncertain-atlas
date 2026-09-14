@@ -494,6 +494,7 @@
 - [verifywhen-latemay-sold-as-bundled](verifywhen-latemay-sold-as-bundled.md)
 - [preparewhen-lateext-unverified-sold-as-bundled](preparewhen-lateext-unverified-sold-as-bundled.md)
 - [preparewhen-suggestvalidate-sold-as-bundled](preparewhen-suggestvalidate-sold-as-bundled.md)
+- [verifyusage-emptyext-sold-as-bundled](verifyusage-emptyext-sold-as-bundled.md)
 - [verifywhen-keepdiscard-sold-as-bundled](verifywhen-keepdiscard-sold-as-bundled.md)
 - [verifywhen-status-sold-as-bundled](verifywhen-status-sold-as-bundled.md)
 - [verifywhen-call-sold-as-bundled](verifywhen-call-sold-as-bundled.md)

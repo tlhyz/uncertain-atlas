@@ -56,6 +56,7 @@
 - [`worked-example-process-also-vs-prepare.md`](worked-example-process-also-vs-prepare.md) — Process 也会在提议者那边叫 ≠ 已经不用再 Process；通常紧跟 Prepare、列表对得上 ≠ 已经保证是这一次；失败时可能对上更早一次或根本不调 ≠ 已经每轮都会叫（不变量 351）
 - [`worked-example-late-extension-vs-verified.md`](worked-example-late-extension-vs-verified.md) — +2/3 之后才进来的扩展写进了 commit info ≠ 已经 Verify 过；建议按 Verify 同款逻辑再看一遍 ≠ 已经是引擎会再 Verify；下一高度 round 0 写进 ExtendedCommitInfo ≠ 已经又叫了 Verify（不变量 352）
 - [`worked-example-verify-when-vs-empty.md`](worked-example-verify-when-vs-empty.md) — 空扩展仍会调 Verify ≠ 已经跳过 Verify；不对本进程自己发出的 Precommit 调用 ≠ 已经自己验过；请求里的 hash ≠ 已经对该块跑过 Process（不变量 353）
+- [`worked-example-verifyusage-emptyext-vs-bundled.md`](worked-example-verifyusage-emptyext-vs-bundled.md) — even for 0-length still calls Verify ≠ skip Verify；empty extension means sender chose not to extend ≠ 0 长就不叫 Verify；still calls Verify ≠ Verify Usage bundled（不变量 521）
 - [`worked-example-process-when-vs-later.md`](worked-example-process-when-vs-later.md) — Process 调用是同步的 ≠ 已经能在返回之后再改裁决；只做基本检查再异步 Process ≠ 已经还能再 Reject；非验证者可以立刻回 ACCEPT ≠ 已经验过这块（不变量 354）
 - [`worked-example-prepare-drop-vs-mempool.md`](worked-example-prepare-drop-vs-mempool.md) — 从提案拿掉 tx ≠ 已经从内存池删掉；往提案加了一笔新的 ≠ 已经进了内存池；把 t1 改成 t2 ≠ 已经还能按 t1 查到（不变量 355）
 - [`worked-example-validvalue-vs-prepare.md`](worked-example-validvalue-vs-prepare.md) — validValue 非 nil ≠ 已经还会调 Prepare；自己是提议者 ≠ 已经每轮都会调 Prepare；没调 Prepare ≠ 已经又装了一份 raw 提案（不变量 356）
