@@ -4,7 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
-| 2026-09-14 | P5-03 walk-forward BTC | PARTIAL | outputs/review_logs/2026-09-14_P5-03_walk_forward_PARTIAL.md |
+| 2026-09-14 | P5-04 OOS holdout | FAIL | outputs/review_logs/2026-09-14_P5-04_oos_holdout_FAIL.md |
+| 2026-09-14 | P5-03 walk-forward BTC | FAIL | outputs/review_logs/2026-09-14_P5-03_walk_forward_PARTIAL.md |
 | 2026-09-14 | P5-02 plateau detector | PASS | outputs/review_logs/2026-09-14_P5-02_plateau_detector_PASS.md |
 | 2026-09-14 | P5-01 bootstrap MC | PASS | outputs/review_logs/2026-09-14_P5-01_bootstrap_mc_PASS.md |
 | 2026-09-14 | checkpoint 0805Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0805Z_timer.md |

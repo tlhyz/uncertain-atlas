@@ -430,4 +430,7 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T08:20Z | checkpoint 0820Z | P5-03 walk-forward next
 2026-09-14T08:48Z | timer research-continue | **P5-03 DONE** WF infra; 2020-21 fixed −86..−87%; calendar 2020-24 tmux
 2026-09-14T08:48Z | checkpoint 0848Z | P5-04 OOS holdout next
+2026-09-14T08:55Z | timer research-continue | **P5-03 calendar DONE** 3 folds mean test −86.58%
+2026-09-14T08:55Z | timer research-continue | **P5-04 DONE FAIL** 0/2 OOS pass; BTC 2024 −86.44%
+2026-09-14T08:55Z | checkpoint 0855Z | P5-05 MC DD probs next
 ```

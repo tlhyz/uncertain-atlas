@@ -36,9 +36,15 @@ Execution label: **BAR_crypto_klines_only**
 
 OOS stable in catastrophic band (~−87%); no overfit gap — uniformly FAIL.
 
-## Results — calendar expanding WF (2020-2024)
+## Results — calendar expanding WF (2020-2024) **COMPLETE**
 
-**Status:** tmux `p5-03-wf-btc` running (~24min at review); 3 folds (test years 2022, 2023, 2024). Artifact pending in `walk_forward.json`.
+| Test year | Train return | Test return | OOS gap |
+|-----------|--------------|-------------|---------|
+| 2022 | −86.96% | −86.89% | −0.07pp |
+| 2023 | −86.89% | −86.41% | −0.48pp |
+| 2024 | −86.41% | **−86.44%** | +0.03pp |
+
+Mean test **−86.58%**; 0/3 positive OOS folds. Artifact: `outputs/experiments/crypto_btc_walk_forward_2019/walk_forward.json`
 
 ## Question
 
@@ -49,12 +55,12 @@ Does walk-forward infrastructure run on BTC history from 2019+ and show OOS stab
 1. **Implementation:** PASS — splits, report aggregation, script wired to dual crypto portfolio.
 2. **Data infra:** PASS — klines parser fix unlocks 2020+ Vision daily files.
 3. **Fixed split:** FAIL — all segments ~−86 to −87%; crypto_max_dd=100% every split.
-4. **Calendar WF:** IN PROGRESS — 43k bars loaded; fold evals slow (~minutes each).
+4. **Calendar WF:** PASS measurement — 3 folds all ~−86%; stable OOS FAIL.
 5. **2019 label:** Effective start **2020-01-01** (Binance UM klines); Dec-2019 only 24 bars.
 
 ## Verdict
 
-- **task_verdict:** **DONE** (infra + smoke measured; full calendar artifact completing in tmux)
+- **task_verdict:** **DONE** (infra + full calendar WF measured)
 - **implementation_verdict:** **PASS**
 - **strategy_verdict:** **FAIL** — walk-forward shows no OOS edge; stable ~−87% bleed
 
