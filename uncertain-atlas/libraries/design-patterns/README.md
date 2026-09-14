@@ -404,3 +404,4 @@
 - [name-the-preparewhen-suggestvalidate-bar](name-the-preparewhen-suggestvalidate-bar.md)
 - [name-the-verifyusage-emptyext-bar](name-the-verifyusage-emptyext-bar.md)
 - [name-the-verifyusage-localproc-bar](name-the-verifyusage-localproc-bar.md)
+- [name-the-verifyusage-hashproc-bar](name-the-verifyusage-hashproc-bar.md)
