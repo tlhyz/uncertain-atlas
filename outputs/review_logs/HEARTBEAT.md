@@ -341,4 +341,6 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T00:40Z | timer research-continue | **P3-06 DONE FAIL** 25% best -58.92%; all worse vs default -58.70%
 2026-09-14T00:40Z | P3-07 started | tmux p3-07-soxl-snxx-weights SOXL/SNXX 75/25 70/30 65/35
 2026-09-14T00:40Z | checkpoint 0040Z | P3-08 grid mix queued
+2026-09-14T00:50Z | timer research-continue | P3-07 75/25 1/3 DATA_QUALITY PASS
+2026-09-14T00:50Z | checkpoint 0050Z | ETA ~70min; default 70/30 in sweep
 ```

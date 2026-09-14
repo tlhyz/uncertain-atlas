@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-14 | checkpoint 0050Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0050Z_timer.md |
+| 2026-09-14 | P3-07 SOXL/SNXX weights | IN_PROGRESS | outputs/review_logs/2026-09-14_P3-07_soxl_snxx_weights_IN_PROGRESS.md |
 | 2026-09-14 | checkpoint 0040Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0040Z_timer.md |
 | 2026-09-14 | P3-06 right-side reserve | FAIL | outputs/review_logs/2026-09-14_P3-06_right_side_reserve_FAIL.md |
 | 2026-09-14 | checkpoint 0030Z timer | CHECKPOINT | outputs/review_logs/2026-09-14_checkpoint_0030Z_timer.md |
