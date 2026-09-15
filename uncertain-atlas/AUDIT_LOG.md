@@ -4531,6 +4531,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2328 | 中 | 怎样实现 Info 握手 / 怎样配 app_version 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2327 | 高 | 看见 returned app_version will be included in the Header of every block 会被写成已经 last_block persisted during Commit（370） interchangeable，或当成已经 Info version 是应用软件语义版本（389）/ 印进 AppHash（147） | 官方 Info Usage：The returned app_version will be included in the Header of every block |
 | A2326 | 高 | 看见 Used to sync during handshake on startup or on recovery 会被写成已经 Info 握手 bundled（370） interchangeable，或当成已经 QueryState 启动对齐就是快照重放（314） | 官方 Info Usage：Used to sync CometBFT with the application during a handshake that happens on startup or on recovery |
+| A2334 | 记录 | 会与 320 / 412 / 318 / 364 / 303 糊成「看见 InitChain 了就已经崩溃后再调 / 已经空名单没集合 / 已经 accept bundled 交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。崩溃后再调 / 空名单没集合 / accept bundled 标成另一对象 |
+| A2333 | 中 | 怎样实现 InitChain / 怎样配创世验证者会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2332 | 高 | 看见 InitChainResponse.Validators not empty → initial set regardless of Request 会被写成已经 accept initial validator set bundled（412） interchangeable，或当成已经 InitChain 回了空名单就没有集合（318） | 官方 InitChain Usage：If InitChainResponse.Validators is not empty, it will be the initial validator set regardless of what is in InitChainRequest.Validators |
+| A2331 | 高 | 看见 InitChainResponse.Validators empty → use InitChainRequest.Validators 会被写成已经 InitChain 回了空名单就没有集合（318），或当成已经 ValidatorUpdate 用公钥认人就已经改了集合（364） | 官方 InitChain Usage：If InitChainResponse.Validators is empty, the initial validator set will be the InitChainRequest.Validators |
+| A2330 | 高 | 看见 Called once upon genesis 会被写成已经崩溃后第一块 Commit 之前再调 InitChain（320），或当成已经 InitChain Usage 余量 bundled（412） interchangeable | 官方 InitChain Usage：Called once upon genesis |
+
 | A2325 | 高 | 看见 Return information about the application state 会被写成已经 QueryState 就是 ExecuteTxState（314），或当成已经 Info data 是任意信息（389） bundled 就代表已经回报状态 | 官方 Info Usage：Return information about the application state |
 
 | A2320 | 高 | 看见 Signals that messages queued on the client should be flushed to the server 会被写成已经 Echo test client/server（492） interchangeable，或当成已经 HasChannel 就已经入队（309） | 官方 Flush Usage：Signals that messages queued on the client should be flushed to the server |
