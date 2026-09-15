@@ -444,6 +444,7 @@
 - [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
+- [infousage-persist-sold-as-committed](infousage-persist-sold-as-committed.md)
 - [initchainusage-decide-sold-as-bundled](initchainusage-decide-sold-as-bundled.md)
 - [initchainusage-sold-as-bundled](initchainusage-sold-as-bundled.md)
 - [infousage-sold-as-handshakebundled](infousage-sold-as-handshakebundled.md)
