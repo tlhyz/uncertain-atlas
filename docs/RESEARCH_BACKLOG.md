@@ -128,11 +128,11 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | 168 passed 2026-09-14T11:02Z idle checkpoint |
-| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | C-07 + W-01/W-02 sync 2026-09-14 daily audit |
-| M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-14T09:00Z |
-| M-04 | Check PR CI status | **done** | PR #8 open; no checks reported |
-| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P3-09/10→blocked; P4-07 65d note |
+| M-01 | Run `pytest -q` | **done** | 166 passed 2 env-fail 2026-09-15T09:00Z daily audit |
+| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | date sync 2026-09-15; no verdict change |
+| M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-15T09:00Z |
+| M-04 | Check PR CI status | **done** | PR #8 open unmerged; main at PR #3 |
+| M-05 | Refresh backlog — move done, add discovered tasks | **done** | pending=0; P0 blocked only |
 
 ---
 

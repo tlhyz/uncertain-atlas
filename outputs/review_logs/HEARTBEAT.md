@@ -448,4 +448,5 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-14T11:10Z | timer 1110Z | no change; PR #8 unmerged; pytest 168 green; skip duplicate log
 2026-09-14T11:30Z | timer 1130Z | pending=0; subscribed PR #8 merge watch for P0-02 resume
 2026-09-15T01:20Z | branch recovery | VM was on etf-vs-perp branch; restored unified; pytest 166/168 (2 env)
-```
+2026-09-15T08:58Z | timer 0858Z | pending=0; PR #8 blocked; daily audit 0900Z executed; pytest 166/168
+2026-09-15T09:00Z | daily audit 0900Z | pending=0; PR #8 blocked; pytest 166/168 env; P6 idle

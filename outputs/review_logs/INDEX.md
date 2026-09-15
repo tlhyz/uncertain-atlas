@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-15 | timer 0858Z checkpoint | BLOCKED | outputs/review_logs/2026-09-15_timer_0858Z_checkpoint.md |
+| 2026-09-15 | daily audit 0900Z | PASS | outputs/review_logs/2026-09-15_daily_audit_0900Z.md |
 | 2026-09-14 | checkpoint 1100Z idle | BLOCKED | outputs/review_logs/2026-09-14_checkpoint_1100Z_research_idle_BLOCKED.md |
 | 2026-09-14 | daily audit 0900Z | PASS | outputs/review_logs/2026-09-14_daily_audit_0900Z.md |
 | 2026-09-14 | P5-06 liq MC | CONDITIONAL FAIL | outputs/review_logs/2026-09-14_P5-06_liq_probs_CONDITIONAL_FAIL.md |

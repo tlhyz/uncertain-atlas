@@ -1,4 +1,4 @@
-# Current Conclusions (Honest — 2026-09-14)
+# Current Conclusions (Honest — 2026-09-15)
 
 > Update after each major experiment. **Do not beautify FAIL results.**  
 > Each claim: confidence + supporting + contradicting experiments.
@@ -91,6 +91,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-15 | Daily audit; no verdict change | P6 idle; PR #8 blocked; pytest 166/168 env |
 | 2026-09-14 | P6 complete; all LIVE rows LOW | P6-05 final audit; SOL demoted |
 | 2026-09-14 | ETH LIVE row MEDIUM→LOW | P6-03 promotion gate FAIL (6 blocking) |
 | 2026-09-14 | BTC LIVE row MEDIUM→LOW | P6-02 promotion gate FAIL (6 blocking) |
