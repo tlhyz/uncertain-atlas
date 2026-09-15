@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-extusage-zerolen-bar](name-the-extusage-zerolen-bar.md)
 - [name-the-extusage-precommitnil-bar](name-the-extusage-precommitnil-bar.md)
 - [name-the-verifyusage-hashproc-bar](name-the-verifyusage-hashproc-bar.md)
 - [name-the-verifyusage-localproc-bar](name-the-verifyusage-localproc-bar.md)
