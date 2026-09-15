@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 628）
+
+- 不变量 496；语料 C488；模式 name-the-initchainusage-decide-bar；反模式 initchainusage-decide-sold-as-bundled；L10.3 第 480 条。填 L4.4 / CometBFT 档案 InitChain Usage app decide / ValidatorUpdate from empty set 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 627）
 
 - 不变量 495；语料 C487；模式 name-the-initchainusage-bar；反模式 initchainusage-sold-as-bundled；L10.3 第 479 条。填 L4.4 / CometBFT 档案 InitChain Usage 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
