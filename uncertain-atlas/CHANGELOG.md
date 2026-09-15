@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-14（续 591）
+
+- 不变量 571；语料 C451；模式 name-the-finwhen-notproposer-bar；反模式 finwhen-notproposer-sold-as-bundled；L10.3 第 443 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee not proposer means everyone Processed 正式三事（472 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。472 finwhen unbundling 续（571 item 2）。
+
 ## 2026-09-14（续 590）
 
 - 不变量 570；语料 C450；模式 name-the-finwhen-notallproc-bar；反模式 finwhen-notallproc-sold-as-bundled；L10.3 第 442 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee not every validator 正式三事（472 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。472 finwhen unbundling 续（570 item 1）。
