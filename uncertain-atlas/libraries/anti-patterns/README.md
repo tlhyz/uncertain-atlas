@@ -444,6 +444,7 @@
 - [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
+- [listsnapusage-sold-as-bundled](listsnapusage-sold-as-bundled.md)
 - [offersnapusage-bootstrap-sold-as-bundled](offersnapusage-bootstrap-sold-as-bundled.md)
 - [infousage-defaultlane-sold-as-priorityzero](infousage-defaultlane-sold-as-priorityzero.md)
 - [infousage-persist-sold-as-committed](infousage-persist-sold-as-committed.md)
