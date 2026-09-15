@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 608）
+
+- 不变量 476；语料 C468；模式 name-the-finharddet-bar；反模式 finharddet-sold-as-noroot；L10.3 第 460 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
 ## 2026-09-15（续 607）
