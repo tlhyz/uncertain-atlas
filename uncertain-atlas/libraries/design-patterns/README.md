@@ -1,3 +1,4 @@
+- [name-the-proccand-readonly-notcommitted-bar](name-the-proccand-readonly-notcommitted-bar.md)
 - [name-the-proccand-mayexecute-notcommitted-bar](name-the-proccand-mayexecute-notcommitted-bar.md)
 - [name-the-proccand-candidate-notcommitted-bar](name-the-proccand-candidate-notcommitted-bar.md)
 # Design Patterns
