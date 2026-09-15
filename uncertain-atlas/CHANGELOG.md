@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 623）
+
+- 不变量 491；语料 C483；模式 name-the-commitretaincaution-bar；反模式 commitretaincaution-sold-as-pruning；L10.3 第 475 条。填 L4.4 / CometBFT 档案 Commit Usage retain_height caution 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 622）
 
 - 不变量 490；语料 C482；模式 name-the-chktxguardusage-bar；反模式 chktxguardusage-sold-as-fourgates；L10.3 第 474 条。填 L4.4 / CometBFT 档案 CheckTx Usage Guardian 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。

@@ -4515,6 +4515,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2308 | 中 | 怎样做内存池守卫 / 怎样实现 every node runs CheckTx 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2307 | 高 | 看见 before letting a transaction into its local mempool 会被写成已经 may come from external user or another node（488） bundled 就代表来源已经验完，或当成已经内存池去重保证不重放（313） | 官方 CheckTx Usage：every node runs CheckTx before letting a transaction into its local mempool |
 | A2306 | 高 | 看见 every node runs CheckTx before letting a transaction into its local mempool 会被写成已经 RPC broadcast_tx 回了就代表别的节点也会跑 CheckTx，或当成已经 Check 通过就是已进提案（33） | 官方 CheckTx Usage：every node runs CheckTx before letting a transaction into its local mempool |
+| A2314 | 记录 | 会与 366 / 481 / 323 / 38 / 335 糊成「看见 Commit 回了 retain_height 就已经在剪 / 已经从创世再装 / 已经 persist signal 交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit Usage retain_height caution 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。默认 0 / 已经在剪 / 从创世再装 标成另一对象 |
+| A2313 | 中 | 怎样配 retain_height / 怎样实现剪历史 / 怎样开 state sync 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2312 | 高 | 看见 Historical blocks may also be required for auditing / replay / light client verification 会被写成已经 retain_height 默认 0 就等于已经在剪（366），或当成已经 Commit Usage persist signal（481） bundled interchangeable | 官方 Commit Usage：Historical blocks may also be required for other purposes, e.g. auditing, replay of non-persisted heights, light client verification |
+| A2311 | 高 | 看见 If all nodes remove historical blocks then data is permanently lost / no new nodes can join unless state sync 会被写成已经能从创世再装（366 / 323），或当成已经 retain_height 回了非零高度就等于已经在剪 | 官方 Commit Usage：If all nodes in the network remove historical blocks then this data is permanently lost … unless state sync is enabled |
+| A2310 | 高 | 看见 Use CommitResponse.retain_height with caution 会被写成已经 retain_height defaults to 0 retain all（366） interchangeable，或当成已经 blocks below this height may be removed 那种回了高度就等于已经在剪 | 官方 Commit Usage：Use CommitResponse.retain_height with caution! |
+
 | A2305 | 高 | 看见 Guardian of the mempool 会被写成已经 Technically optional - not involved in processing blocks（373） interchangeable，或当成已经可以不跑 CheckTx / 已经四门已经结算（33） | 官方 CheckTx Usage：Guardian of the mempool |
 
 | A2300 | 高 | 看见 CheckTxResponse.Code != 0 will be rejected 会被写成已经进了本地池就开始 P2P 流言，或当成已经 CheckTx 是内存池守卫（405） bundled 就代表 Code 语义已经验完 | 官方 CheckTx Usage：Transactions where CheckTxResponse.Code != 0 will be rejected |
