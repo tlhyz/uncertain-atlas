@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-procreject-assume-notexecute-bar](name-the-procreject-assume-notexecute-bar.md)
 - [name-the-procreject-prevote-notverify-bar](name-the-procreject-prevote-notverify-bar.md)
 - [name-the-procreject-assume-notblockinvalid-bar](name-the-procreject-assume-notblockinvalid-bar.md)
 - [name-the-procreject-bar](name-the-procreject-bar.md)
