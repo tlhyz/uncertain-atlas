@@ -1,3 +1,7 @@
+## 2026-09-15（续 670）
+
+- 不变量 538；语料 C530；模式 name-the-procrespstatus-exclusivedep-bar；反模式 procrespstatus-exclusivedep-sold-as-bundled；L10.3 第 522 条。填 L4.4 / CometBFT 档案 ProcessProposal Response status must exclusively depend 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。430 Process 回包栏 unbundling 续（538）。
+
 ## 2026-09-15（续 669）
 
 - 不变量 537；语料 C529；模式 name-the-procrespstatus-validinvalid-bar；反模式 procrespstatus-validinvalid-sold-as-bundled；L10.3 第 521 条。填 L4.4 / CometBFT 档案 ProcessProposal Response status valid/invalid 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。430 Process 回包栏 unbundling 启动（537）。
