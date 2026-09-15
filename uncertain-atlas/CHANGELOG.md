@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 635）
+
+- 不变量 503；语料 C495；模式 name-the-prepareusage-rawmust-bar；反模式 prepareusage-rawmust-sold-as-bundled；L10.3 第 487 条。填 L4.4 / CometBFT 档案 PrepareProposal Usage raw proposal / MUST remove 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 634）
 
 - 不变量 502；语料 C494；模式 name-the-applysnapusage-refetch-bar；反模式 applysnapusage-refetch-sold-as-bundled；L10.3 第 486 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage refetch/ban 正式二事 / 实现表 / 05b / 共识专题 / 停链面地图。
