@@ -1,3 +1,4 @@
+- [`worked-example-proccand-candidate-notcommitted-vs-bundled.md`](worked-example-proccand-candidate-notcommitted-vs-bundled.md) — candidate state not already committed；ready to discard not Finalize apply candidate；candidate not ACCEPT switched working state（不变量 544）
 # 横向：实现保证
 
 协议对，两台诚实机器仍可能算出两个世界。  

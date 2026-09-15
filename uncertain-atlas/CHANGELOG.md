@@ -1,3 +1,7 @@
+## 2026-09-15（续 676）
+
+- 不变量 544；语料 C536；模式 name-the-proccand-candidate-notcommitted-bar；反模式 proccand-candidate-notcommitted-sold-as-bundled；L10.3 第 528 条。填 L4.4 / CometBFT 档案 ProcessProposal candidate state not already committed 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。452 ProcessProposal 候选执行 unbundling 续（544）。
+
 ## 2026-09-15（续 675）
 
 - 不变量 543；语料 C535；模式 name-the-verifystatus-reject-bar；反模式 verifystatus-reject-sold-as-bundled；L10.3 第 527 条。填 L4.4 / CometBFT 档案 VerifyStatus REJECT rejects whole vote 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。434 VerifyStatus unbundling 完成（541 + 542 + 543）。
