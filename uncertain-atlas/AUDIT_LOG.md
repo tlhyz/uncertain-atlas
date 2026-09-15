@@ -4463,6 +4463,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2243 | 中 | 怎样编回包四列 / 怎样在 Finalize 套用 candidate / 怎样写空更新会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2242 | 高 | 看见提供了值 / 看见 tx_results 等来自执行结果 会被写成已经空更新就没有 must provide 义务，或当成已经 CheckTx 过了就不需要 Finalize 再回 tx_results | 官方 FinalizeBlock Usage vs empty keep current 458 / CheckTx 339 / Code==0 464 |
 | A2241 | 高 | 看见 as a result of executing the block / 看见是执行这块的结果 会被写成已经 Process / Prepare candidate 就不需要再在 Finalize 执行，或当成已经 apply candidate state 就不需要执行 txs | 官方 FinalizeBlock Usage vs apply candidate 460 / Process Accept 347 |
+| A2249 | 记录 | 会与 362 / 466 / 467 / 403 糊成「看见决定了就已经 executes block v、已经 persist outputs、已经 +2/3 precommit 决定 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When persist decision / synchronous call 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 executes block v / 已经 persist outputs / 决定触发 interchangeable 标成另一对象 |
+| A2248 | 中 | 怎样 persist decision / 怎样写同步调用 / 怎样落决定会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2247 | 高 | 看见 The call is synchronous / 看见同步调用 会被写成已经异步 / 已经可以在返回后再改裁决，或当成已经 +2/3 precommit 决定就已经会调 Finalize interchangeable | 官方 FinalizeBlock When step 2：The call is synchronous |
+| A2246 | 高 | 看见 calls FinalizeBlock with _v_'s data / 看见同步调 Finalize 会被写成已经 persist tx outputs / AppHash / ResultsHash，或当成已经 +2/3 precommit 决定 interchangeable | 官方 FinalizeBlock When step 2：calls FinalizeBlock with _v_'s data |
+| A2245 | 高 | 看见 persists _v_ as the decision for height _h_ / 看见把 _v_ 落成这一高的决定 会被写成已经 Application executes block _v_，或当成已经 Finalize + Commit 那种已经交差 | 官方 FinalizeBlock When step 1：_p_ persists _v_ as the decision for height _h_ |
+
 | A2240 | 高 | 看见 must provide values for app_hash / tx_results / validator_updates / consensus_param_updates / 看见必须回四列 会被写成已经改了集合，或当成已经 Finalize + Commit 那种已经交差 | 官方 FinalizeBlock Usage：The Application must provide values … as a result of executing the block |
 
 | A2235 | 高 | 看见 FinalizeBlockResponse.app_hash may also be empty / 看见可以空 会被写成已经没有状态根，或当成已经交差 / 已经印进本头 | 官方 FinalizeBlock Usage：may also be empty or hard-coded, but MUST be deterministic |

@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 610）
+
+- 不变量 478；语料 C470；模式 name-the-finpersist-bar；反模式 finpersist-sold-as-commit；L10.3 第 462 条。填 L4.4 / CometBFT 档案 FinalizeBlock When persist decision / synchronous call 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 609）
 
 - 不变量 477；语料 C469；模式 name-the-finasresult-bar；反模式 finasresult-sold-as-candidate；L10.3 第 461 条。填 L4.4 / CometBFT 档案 FinalizeBlock must provide values as a result of executing the block 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
