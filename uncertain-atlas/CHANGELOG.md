@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 633）
+
+- 不变量 501；语料 C493；模式 name-the-loadsnapusage-bar；反模式 loadsnapusage-sold-as-bundled；L10.3 第 485 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk Usage retrieve 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 632）
 
 - 不变量 500；语料 C492；模式 name-the-listsnapusage-bar；反模式 listsnapusage-sold-as-bundled；L10.3 第 484 条。填 L4.4 / CometBFT 档案 ListSnapshots Usage discover / Snapshot type 正式二事 / 实现表 / 05b / 共识专题 / 停链面地图。
