@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 624）
+
+- 不变量 492；语料 C484；模式 name-the-echousage-bar；反模式 echousage-sold-as-flush；L10.3 第 476 条。填 L4.4 / CometBFT 档案 Echo Usage 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 623）
 
 - 不变量 491；语料 C483；模式 name-the-commitretaincaution-bar；反模式 commitretaincaution-sold-as-pruning；L10.3 第 475 条。填 L4.4 / CometBFT 档案 Commit Usage retain_height caution 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
