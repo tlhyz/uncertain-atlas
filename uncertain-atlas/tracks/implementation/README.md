@@ -68,6 +68,7 @@
 - [`worked-example-finfill-notcommitted-vs-bundled.md`](worked-example-finfill-notcommitted-vs-bundled.md) — all fields / request complete ≠ committed；≠ finfields / finpersist；≠ apply candidate / 583 refill（不变量 569）
 - [`worked-example-finfill-notrefill-vs-bundled.md`](worked-example-finfill-notrefill-vs-bundled.md) — will fill up all fields ≠ no need to provide again；≠ Finalize 时的 Process 保证 bundled；≠ 583 not refill（不变量 567）
 - [`worked-example-finfill-notpassed-vs-bundled.md`](worked-example-finfill-notpassed-vs-bundled.md) — even if Prepare/Process passed ≠ field names match means ran Process；≠ Prepare/Process/Finalize same fields；≠ Process also on proposer means ran Process（不变量 568）
+- [`worked-example-fincparam-vs-heffective.md`](worked-example-fincparam-vs-heffective.md) — consensus_param_updates H→H+1；≠ 已经在块 H 生效；≠ validator_updates H+2 才计票；≠ 只填一项 / 清掉参数（不变量 471）
 - [`worked-example-findet-vs-replication.md`](worked-example-findet-vs-replication.md) — FinalizeBlock Usage determinism 正式三事；executes txs ≠ 已经可以像 Prepare 那样；app_hash ≠ 印进本头 / next_block_delay nondet；implementation ≠ Req 11–12 / finfields bundled（不变量 470）
 - [`worked-example-findet-notreq11-vs-bundled.md`](worked-example-findet-notreq11-vs-bundled.md) — implementation MUST be deterministic ≠ Req 11–12；≠ finfields bundled；≠ findet item 1/2（不变量 581）
 - [`worked-example-findet-notapphash-vs-bundled.md`](worked-example-findet-notapphash-vs-bundled.md) — app_hash MUST be deterministic ≠ 印进本头；≠ next_block_delay nondet；≠ findet item 1/3（不变量 580）
