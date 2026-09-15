@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 
 from src.analysis.soxl_soxs_hedge import (
+    _collapse_monotonic_path,
     align_pair,
     buy_hold_pair,
     hedge_diagnostics,
@@ -99,3 +100,10 @@ def test_tick_engine_uses_trade_path_not_wick():
     tick = simulate_long_grid(bars, capital=5_000.0, fill_engine="tick", get_trades=no_cross, fee_preset="base")
     bar = simulate_long_grid(bars, capital=5_000.0, fill_engine="bar", fee_preset="base")
     assert tick["fills"] <= bar["fills"]
+
+
+def test_collapse_keeps_turning_points():
+    ts = pd.date_range("2026-07-16", periods=5, freq="s", tz="UTC")
+    tr = pd.DataFrame({"timestamp": ts, "price": [100.0, 99.0, 98.0, 97.0, 98.0], "qty": 1.0, "quote_qty": 1.0})
+    out = _collapse_monotonic_path(tr)
+    assert list(out["price"]) == [100.0, 97.0, 98.0]

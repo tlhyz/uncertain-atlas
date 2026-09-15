@@ -130,10 +130,10 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P7-01 | Download SOXSUSDT aggTrades (detect earliest) + manifest | **in_progress** | SOXS 61d cached; SOXL overlap ticks downloading |
+| P7-01 | Download SOXSUSDT aggTrades (detect earliest) + manifest | **done** | SOXS 61d 7.7M; SOXL overlap 58d 31.2M; 1392/1392 + 1383/1383 — outputs/review_logs/2026-09-15_P7-01_soxl_soxs_ticks_PASS.md |
 | P7-02 | Rolling beta / OLS hedge ratio SOXL↔SOXS vs SOXL↔SNXX | **done** | PASS corr −0.988 β −0.991; SNXX was +0.45 not inverse — outputs/review_logs/2026-09-15_P7-02_soxl_soxs_beta_PASS.md |
-| P7-03 | Same-symbol L+S grid vs pair long-grid hedge backtest | **done** | CONDITIONAL PASS BAR pair +18.8%/DD −4.4% vs L+S +14.5%/−6.7% — outputs/review_logs/2026-09-15_P7-03_pair_hedge_CONDITIONAL_PASS.md |
-| P7-04 | Tick-precise pair grid + funding vs daily 50/50 B&H | **in_progress** | SOXL ticks downloading; default grid 0.40/±5 |
+| P7-03 | Same-symbol L+S grid vs pair long-grid hedge backtest | **done** | BAR CONDITIONAL PASS **overturned by P7-04 TICK** — outputs/review_logs/2026-09-15_P7-03_pair_hedge_CONDITIONAL_PASS.md |
+| P7-04 | Tick-precise pair grid + funding vs daily 50/50 B&H | **done** | **FAIL** default 0.40/±5 pair −6.0%/DD −20%; all sweep FAIL — outputs/review_logs/2026-09-15_P7-04_tick_pair_hedge_FAIL.md |
 
 ---
 
@@ -142,10 +142,10 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
 | M-01 | Run `pytest -q` | **done** | 166 passed 2 env-fail 2026-09-15T09:00Z daily audit |
-| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03 added 2026-09-15 |
+| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03 retracted 2026-09-15 TICK FAIL |
 | M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-15T09:00Z |
 | M-04 | Check PR CI status | **done** | PR #8 open unmerged; main at PR #3 |
-| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P7 opened; P7-04 pending tick-precise |
+| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P7-01..04 closed; no new grid sweeps |
 
 ---
 

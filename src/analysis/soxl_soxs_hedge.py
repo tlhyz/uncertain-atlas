@@ -14,7 +14,7 @@ import pandas as pd
 
 from qtb.ab.fills import FillConfig, PendingFill
 from qtb.ab.grids import native_spec, rolling_atr
-from qtb.data.binance_futures import fetch_agg_trades_day, slice_trades_for_bar
+from qtb.data.binance_futures import fetch_agg_trades_day
 from qtb.dual.tick_fills import resolve_tick_fills
 
 FeePreset = Literal["base", "conservative"]
@@ -28,12 +28,12 @@ GRID_SWEEP = ((0.30, 3.0), (0.40, 3.0), (0.40, 5.0), (0.50, 5.0))
 
 
 class DayTradeCache:
-    """Load one UTC day of aggTrades at a time (cache_only)."""
+    """Load one UTC day of aggTrades at a time (cache_only), indexed by hour."""
 
     def __init__(self, symbol: str):
         self.symbol = symbol
         self._day = None
-        self._df: pd.DataFrame | None = None
+        self._by_hour: dict[pd.Timestamp, pd.DataFrame] = {}
 
     def for_bar(self, ts: pd.Timestamp) -> pd.DataFrame:
         t = pd.Timestamp(ts)
@@ -43,11 +43,39 @@ class DayTradeCache:
             t = t.tz_convert("UTC")
         d = t.date()
         if d != self._day:
-            self._df = fetch_agg_trades_day(self.symbol, d, cache_only=True)
+            raw = fetch_agg_trades_day(self.symbol, d, cache_only=True)
             self._day = d
-        if self._df is None or self._df.empty:
+            self._by_hour = {}
+            if raw is not None and not raw.empty:
+                hours = pd.to_datetime(raw["timestamp"], utc=True).dt.floor("h")
+                for hour, grp in raw.groupby(hours, sort=False):
+                    self._by_hour[pd.Timestamp(hour)] = grp.reset_index(drop=True)
+        key = t.floor("h")
+        hour = self._by_hour.get(key)
+        if hour is None or hour.empty:
             return pd.DataFrame()
-        return slice_trades_for_bar(self._df, t, "1h")
+        return _collapse_monotonic_path(hour)
+
+
+def _collapse_monotonic_path(trades: pd.DataFrame) -> pd.DataFrame:
+    """Keep turning points only — identical limit crossings, far fewer prints."""
+    px = trades["price"].to_numpy(float)
+    if len(px) <= 2:
+        return trades
+    keep = [0]
+    for i in range(1, len(px)):
+        if abs(px[i] - px[keep[-1]]) <= 1e-15:
+            continue
+        if len(keep) >= 2:
+            d_prev = px[keep[-1]] - px[keep[-2]]
+            d_now = px[i] - px[keep[-1]]
+            if d_prev * d_now > 0:
+                keep[-1] = i
+                continue
+        keep.append(i)
+    if keep[-1] != len(px) - 1:
+        keep.append(len(px) - 1)
+    return trades.iloc[keep].reset_index(drop=True)
 
 
 def validate_tick_coverage(symbol: str, bars: pd.DataFrame) -> dict[str, Any]:
@@ -494,6 +522,7 @@ def run_hedge_experiment(
     a, b = align_pair(soxl, soxs)
     if len(a) < 48:
         raise ValueError(f"aligned bars {len(a)} < 48")
+    print(f"[hedge] {fill_engine} {fee_preset} step={atr_step} range={atr_range} bars={len(a)}", flush=True)
     diag = hedge_diagnostics(_as_close(a), _as_close(b))
     half = capital / 2.0
     kw = dict(atr_step=atr_step, atr_range=atr_range, fee_preset=fee_preset, fill_engine=fill_engine)

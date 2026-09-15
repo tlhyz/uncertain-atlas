@@ -4,6 +4,8 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-15 | P7-04 tick pair hedge | FAIL | outputs/review_logs/2026-09-15_P7-04_tick_pair_hedge_FAIL.md |
+| 2026-09-15 | P7-01 SOXL/SOXS ticks | PASS | outputs/review_logs/2026-09-15_P7-01_soxl_soxs_ticks_PASS.md |
 | 2026-09-15 | P7-03 pair hedge | CONDITIONAL PASS | outputs/review_logs/2026-09-15_P7-03_pair_hedge_CONDITIONAL_PASS.md |
 | 2026-09-15 | P7-02 SOXL/SOXS beta | PASS | outputs/review_logs/2026-09-15_P7-02_soxl_soxs_beta_PASS.md |
 | 2026-09-15 | timer 0906Z checkpoint | BLOCKED | outputs/review_logs/2026-09-15_timer_0906Z_checkpoint.md |

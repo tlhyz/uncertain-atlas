@@ -72,6 +72,7 @@ def main() -> int:
         print(json.dumps({k: v for k, v in reports[fee].items() if k != "strategies"}, indent=2))
         print(json.dumps(reports[fee]["strategies"], indent=2, default=str))
 
+    print("[p7] default tick grids done; starting ATR sweep", flush=True)
     sweep = sweep_pair_grids(
         soxl,
         soxs,
