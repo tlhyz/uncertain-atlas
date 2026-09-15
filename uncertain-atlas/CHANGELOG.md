@@ -1,3 +1,7 @@
+## 2026-09-15（续 664）
+
+- 不变量 532；语料 C524；模式 name-the-procaccept-default-bar；反模式 procaccept-default-sold-as-bundled；L10.3 第 516 条。填 L4.4 / CometBFT 档案 ProcessProposal Usage SHOULD Accept default strategy 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。完成 Process Accept 456 三部曲。
+
 ## 2026-09-15（续 663）
 
 - 不变量 531；语料 C523；模式 name-the-procaccept-liveness-bar；反模式 procaccept-liveness-sold-as-bundled；L10.3 第 515 条。填 L4.4 / CometBFT 档案 ProcessProposal Usage unless really know liveness implications 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
