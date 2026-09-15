@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 626）
+
+- 不变量 494；语料 C486；模式 name-the-infousage-bar；反模式 infousage-sold-as-handshakebundled；L10.3 第 478 条。填 L4.4 / CometBFT 档案 Info Usage 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 625）
 
 - 不变量 493；语料 C485；模式 name-the-flushusage-bar；反模式 flushusage-sold-as-echo；L10.3 第 477 条。填 L4.4 / CometBFT 档案 Flush Usage 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
