@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-15（续 593）
+
+- 不变量 466；语料 C453；模式 name-the-finexecbv-bar；反模式 finexecbv-sold-as-bundled；L10.3 第 445 条。填 L4.4 / CometBFT 档案 FinalizeBlock When Application executes block v / 实现表 / 05b / 共识专题 / 停链面地图。466 finexecbv parent bundled 启动。
+
 ## 2026-09-14（续 592）
 
 - 不变量 572；语料 C452；模式 name-the-finwhen-notexecbv-bar；反模式 finwhen-notexecbv-sold-as-bundled；L10.3 第 444 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee not executes block v / persist decision 正式三事（472 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。472 finwhen unbundling 完成（570 + 571 + 572 + parent 472）。
