@@ -144,7 +144,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | 177 passed; 1 env-fail SOXL 07-09 files; plateau skip if artifact missing 2026-09-15T23:55Z |
+| M-01 | Run `pytest -q` | **done** | SOXL 07-09→07-14 gap filled; quality-gate pass; plateau skip if artifact missing |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03/W-04; Vision listing 2026-05-15 |
 | M-03 | Append `review_logs/INDEX.md` | **done** | P3-09 listing probe 2026-09-15T23:55Z |
 | M-04 | Check PR CI status | **done** | PR #8 open unmerged; main at PR #3 |
