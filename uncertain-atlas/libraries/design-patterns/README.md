@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-extwhen-canonicalvote-bar](name-the-extwhen-canonicalvote-bar.md)
 - [name-the-extwhen-fill-bar](name-the-extwhen-fill-bar.md)
 - [name-the-extwhen-return-bar](name-the-extwhen-return-bar.md)
 - [name-the-extwhen-call-bar](name-the-extwhen-call-bar.md)
