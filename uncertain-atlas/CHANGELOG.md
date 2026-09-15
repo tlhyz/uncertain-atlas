@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 634）
+
+- 不变量 502；语料 C494；模式 name-the-applysnapusage-refetch-bar；反模式 applysnapusage-refetch-sold-as-bundled；L10.3 第 486 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage refetch/ban 正式二事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 633）
 
 - 不变量 501；语料 C493；模式 name-the-loadsnapusage-bar；反模式 loadsnapusage-sold-as-bundled；L10.3 第 485 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk Usage retrieve 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
