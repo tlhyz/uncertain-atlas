@@ -1,0 +1,354 @@
+"""User-spec moving grid: 5x, ±20 USDT, 200 arithmetic levels, isolated perp.
+
+TICK path-exact fills when get_trades is provided. Daily equity is last bar of UTC day.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any, Callable, Literal
+
+import numpy as np
+import pandas as pd
+
+from qtb.ab.fills import FillConfig, PendingFill
+from qtb.dual.tick_fills import resolve_tick_fills
+
+FeePreset = Literal["base", "conservative"]
+FEE_BPS = {"base": 2.0, "conservative": 4.0}
+
+USER_LEVERAGE = 5.0
+USER_RANGE_USDT = 20.0
+USER_RANGE_PCT = 0.20
+USER_N_GRIDS = 200
+USER_CAPITAL_PER_SIDE = 5_000.0
+RangeMode = Literal["usdt", "pct"]
+
+
+def user_levels(
+    mid: float,
+    *,
+    range_mode: RangeMode = "usdt",
+    range_usdt: float = USER_RANGE_USDT,
+    range_pct: float = USER_RANGE_PCT,
+    n_grids: int = USER_N_GRIDS,
+) -> np.ndarray:
+    """Arithmetic moving-grid rungs. usdt: mid±20U; pct: mid±20%."""
+    if range_mode == "pct":
+        lo = mid * (1.0 - range_pct)
+        hi = mid * (1.0 + range_pct)
+    else:
+        lo = mid - range_usdt
+        hi = mid + range_usdt
+    if lo <= 0:
+        lo = max(mid * 0.05, 0.01)
+    return np.linspace(lo, hi, int(n_grids))
+
+
+def _fee_rate(preset: FeePreset) -> float:
+    return FEE_BPS[preset] / 10_000.0
+
+
+def _step(levels: np.ndarray) -> float:
+    if len(levels) < 2:
+        return 0.2
+    return float(levels[1] - levels[0])
+
+
+@dataclass
+class IsolatedDirBook:
+    """One-direction isolated perp book (long XOR short)."""
+
+    capital: float
+    leverage: float
+    fee: float
+    direction: Literal["long", "short"]
+    cash: float = 0.0
+    im: float = 0.0
+    qty: float = 0.0
+    avg: float = 0.0
+    lots: dict[int, float] = field(default_factory=dict)
+    realized: float = 0.0
+    turnover: float = 0.0
+    fills: int = 0
+    liquidated: bool = False
+    liq_bars: int = 0
+
+    def __post_init__(self) -> None:
+        self.cash = float(self.capital)
+
+    def equity(self, px: float) -> float:
+        if self.direction == "long":
+            upnl = self.qty * (px - self.avg) if self.qty else 0.0
+        else:
+            upnl = self.qty * (self.avg - px) if self.qty else 0.0
+        return float(self.cash + self.im + upnl)
+
+    def notional(self, px: float) -> float:
+        return abs(self.qty) * px
+
+    def _can_open(self, notion: float, px: float) -> bool:
+        if self.liquidated or notion < 1.0:
+            return False
+        if self.notional(px) + notion > self.capital * self.leverage + 1e-6:
+            return False
+        need = notion / self.leverage + notion * self.fee
+        return self.cash + 1e-9 >= need
+
+    def open_lot(self, q: float, px: float, level_idx: int) -> None:
+        notion = q * px
+        if not self._can_open(notion, px):
+            room = max(self.capital * self.leverage - self.notional(px), 0.0)
+            notion = min(notion, room, max(self.cash / (1.0 / self.leverage + self.fee), 0.0))
+            if notion < 1.0:
+                return
+            q = notion / px
+        im_add = notion / self.leverage
+        fee = notion * self.fee
+        self.cash -= im_add + fee
+        new_q = self.qty + q
+        self.avg = (self.avg * self.qty + px * q) / new_q if new_q > 1e-12 else 0.0
+        self.qty = new_q
+        self.im += im_add
+        self.lots[level_idx] = self.lots.get(level_idx, 0.0) + q
+        self.turnover += notion
+        self.fills += 1
+
+    def close_lot(self, q: float, px: float, level_idx: int | None) -> None:
+        take = min(q, self.qty)
+        if take <= 1e-12:
+            return
+        notion = take * px
+        fee = notion * self.fee
+        if self.direction == "long":
+            pnl = take * (px - self.avg)
+        else:
+            pnl = take * (self.avg - px)
+        im_rel = (take / self.qty) * self.im if self.qty else 0.0
+        self.cash += im_rel + pnl - fee
+        self.im -= im_rel
+        self.qty -= take
+        self.realized += pnl - fee
+        if self.qty <= 1e-12:
+            self.qty = 0.0
+            self.avg = 0.0
+            self.im = 0.0
+            self.lots.clear()
+        elif level_idx is not None and level_idx in self.lots:
+            left = self.lots[level_idx] - take
+            if left <= 1e-12:
+                del self.lots[level_idx]
+            else:
+                self.lots[level_idx] = left
+        self.turnover += notion
+        self.fills += 1
+
+    def check_liq(self, px: float) -> None:
+        if self.liquidated:
+            return
+        eq = self.equity(px)
+        notion = self.notional(px)
+        # Isolated: wipe if equity cannot cover ~0.5% MMR or equity <= 0
+        if eq <= 0.0 or (notion > 0 and eq <= notion * 0.005):
+            self.liquidated = True
+            self.liq_bars += 1
+            self.cash = 0.0
+            self.im = 0.0
+            self.qty = 0.0
+            self.avg = 0.0
+            self.lots.clear()
+
+
+def simulate_user_dir_grid(
+    bars: pd.DataFrame,
+    *,
+    direction: Literal["long", "short"],
+    capital: float = USER_CAPITAL_PER_SIDE,
+    leverage: float = USER_LEVERAGE,
+    range_mode: RangeMode = "usdt",
+    range_usdt: float = USER_RANGE_USDT,
+    range_pct: float = USER_RANGE_PCT,
+    n_grids: int = USER_N_GRIDS,
+    fee_preset: FeePreset = "base",
+    fill_engine: Literal["bar", "tick"] = "tick",
+    get_trades: Callable[[int, pd.Timestamp], pd.DataFrame] | None = None,
+) -> dict[str, Any]:
+    o = bars["open"].to_numpy(float)
+    h = bars["high"].to_numpy(float)
+    l = bars["low"].to_numpy(float)
+    c = bars["close"].to_numpy(float)
+    ts = pd.to_datetime(bars["timestamp"], utc=True)
+    fee = _fee_rate(fee_preset)
+    cfg = FillConfig.preset(fee_preset)
+    book = IsolatedDirBook(capital, leverage, fee, direction)
+    equity = np.empty(len(c), dtype=float)
+    mid0 = float(c[0])
+    levels = user_levels(mid0, range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids)
+    step = _step(levels)
+    reanchors = 0
+
+    for i in range(len(c)):
+        px = float(c[i])
+        if book.liquidated:
+            equity[i] = 0.0
+            continue
+        if px < float(levels[0]) or px > float(levels[-1]):
+            levels = user_levels(px, range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids)
+            step = _step(levels)
+            book.lots = {}
+            reanchors += 1
+        mid = float(np.median(levels)) if len(levels) else px
+        # nearest mid = level closest to px
+        mid = px
+        pending: list[PendingFill] = []
+        lo_b, hi_b = float(l[i]), float(h[i])
+        if direction == "long":
+            for idx, lvl in enumerate(levels):
+                if idx in book.lots or lvl > mid:
+                    continue
+                if fill_engine == "tick" and not (lo_b - step <= lvl <= hi_b + step):
+                    continue
+                pending.append(PendingFill("buy", float(lvl), idx, notional=max(capital * leverage / n_grids, 1.0), reason="grid"))
+            for idx, lot_q in list(book.lots.items()):
+                tp = float(levels[idx]) + step if idx < len(levels) else book.avg + step
+                if idx + 1 < len(levels):
+                    tp = float(levels[idx + 1])
+                pending.append(PendingFill("sell", tp, idx + 1, qty=lot_q, reduce_only=True, reason="grid_tp"))
+        else:
+            for idx, lvl in enumerate(levels):
+                if idx in book.lots or lvl < mid:
+                    continue
+                if fill_engine == "tick" and not (lo_b - step <= lvl <= hi_b + step):
+                    continue
+                pending.append(PendingFill("sell", float(lvl), idx, notional=max(capital * leverage / n_grids, 1.0), reason="grid"))
+            for idx, lot_q in list(book.lots.items()):
+                tp = float(levels[idx]) - step
+                if idx - 1 >= 0:
+                    tp = float(levels[idx - 1])
+                pending.append(PendingFill("buy", tp, idx - 1, qty=lot_q, reduce_only=True, reason="grid_tp"))
+
+        if fill_engine == "tick" and get_trades is not None:
+            trades = get_trades(i, ts.iloc[i])
+            if trades is not None and not trades.empty and pending:
+                fills = resolve_tick_fills(pending, trades, cfg, bar_open=float(o[i]), bar_close=px)
+                for tf in fills:
+                    if book.liquidated:
+                        break
+                    if tf.reduce_only:
+                        lot_idx = tf.level_idx - 1 if direction == "long" else tf.level_idx + 1
+                        book.close_lot(float(tf.qty), float(tf.price), lot_idx)
+                    elif direction == "long" and tf.side == "buy":
+                        book.open_lot(float(tf.qty), float(tf.price), tf.level_idx)
+                    elif direction == "short" and tf.side == "sell":
+                        book.open_lot(float(tf.qty), float(tf.price), tf.level_idx)
+        else:
+            for p in pending:
+                if book.liquidated:
+                    break
+                if p.reduce_only:
+                    hit = (direction == "long" and hi_b >= p.price) or (direction == "short" and lo_b <= p.price)
+                    if hit:
+                        book.close_lot(float(p.qty or 0.0), float(p.price), p.level_idx - 1 if direction == "long" else p.level_idx + 1)
+                else:
+                    hit = lo_b <= p.price <= hi_b
+                    if hit:
+                        notion = float(p.notional or 0.0)
+                        book.open_lot(notion / p.price, float(p.price), p.level_idx)
+        book.check_liq(px)
+        equity[i] = 0.0 if book.liquidated else book.equity(px)
+
+    out = {
+        "label": f"{direction}_user_grid",
+        "direction": direction,
+        "return": float(equity[-1] / capital - 1.0) if capital else float("nan"),
+        "max_dd": _max_dd(equity),
+        "end_equity": float(equity[-1]),
+        "end_qty": float(book.qty if direction == "long" else -book.qty),
+        "end_inventory_notional": float(book.notional(float(c[-1]))),
+        "inventory_frac": float(book.notional(float(c[-1])) / capital) if capital else 0.0,
+        "turnover": float(book.turnover),
+        "fills": int(book.fills),
+        "reanchors": int(reanchors),
+        "liquidated": bool(book.liquidated),
+        "leverage": leverage,
+        "range_mode": range_mode,
+        "range_usdt": range_usdt,
+        "range_pct": range_pct,
+        "n_grids": n_grids,
+        "fee_preset": fee_preset,
+        "fill_engine": fill_engine,
+        "equity": equity,
+        "timestamps": ts.reset_index(drop=True),
+    }
+    return out
+
+
+def _max_dd(equity: np.ndarray) -> float:
+    eq = np.asarray(equity, dtype=float)
+    peak = np.maximum.accumulate(np.maximum(eq, 1e-12))
+    return float((eq / peak - 1.0).min())
+
+
+def combine_user_ls(long_r: dict[str, Any], short_r: dict[str, Any], capital_total: float) -> dict[str, Any]:
+    eq = np.asarray(long_r["equity"]) + np.asarray(short_r["equity"])
+    ts = long_r["timestamps"]
+    daily = daily_pnl(ts, eq, capital_total)
+    return {
+        "label": "soxl_user_long_short",
+        "return": float(eq[-1] / capital_total - 1.0),
+        "max_dd": _max_dd(eq),
+        "end_equity": float(eq[-1]),
+        "end_inventory_notional": float(long_r["end_inventory_notional"] + short_r["end_inventory_notional"]),
+        "inventory_frac": float(
+            (long_r["end_inventory_notional"] + short_r["end_inventory_notional"]) / capital_total
+        ),
+        "net_qty_units": float(long_r["end_qty"] + short_r["end_qty"]),
+        "fills": int(long_r["fills"] + short_r["fills"]),
+        "turnover": float(long_r["turnover"] + short_r["turnover"]),
+        "reanchors": int(long_r["reanchors"] + short_r["reanchors"]),
+        "liquidated_long": bool(long_r["liquidated"]),
+        "liquidated_short": bool(short_r["liquidated"]),
+        "equity": eq,
+        "timestamps": ts,
+        "daily": daily,
+        "long": {k: v for k, v in long_r.items() if k not in ("equity", "timestamps")},
+        "short": {k: v for k, v in short_r.items() if k not in ("equity", "timestamps")},
+    }
+
+
+def run_user_ls_pair(
+    bars: pd.DataFrame,
+    *,
+    range_mode: RangeMode = "usdt",
+    capital_per_side: float = USER_CAPITAL_PER_SIDE,
+    fee_preset: FeePreset = "base",
+    fill_engine: Literal["bar", "tick"] = "tick",
+    get_trades=None,
+) -> dict[str, Any]:
+    kw: dict[str, Any] = dict(
+        capital=capital_per_side,
+        range_mode=range_mode,
+        fee_preset=fee_preset,
+        fill_engine=fill_engine,
+        get_trades=get_trades,
+    )
+    long_r = simulate_user_dir_grid(bars, direction="long", **kw)
+    short_r = simulate_user_dir_grid(bars, direction="short", **kw)
+    comb = combine_user_ls(long_r, short_r, capital_per_side * 2.0)
+    comb["range_mode"] = range_mode
+    comb["fee_preset"] = fee_preset
+    comb["fill_engine"] = fill_engine
+    return comb
+
+
+def daily_pnl(ts: pd.Series, equity: np.ndarray, start_capital: float) -> pd.DataFrame:
+    s = pd.Series(np.asarray(equity, dtype=float), index=pd.to_datetime(ts, utc=True))
+    day = s.resample("1D").last().dropna()
+    out = pd.DataFrame({"equity": day})
+    out["daily_pnl"] = out["equity"].diff()
+    out.iloc[0, out.columns.get_loc("daily_pnl")] = float(out["equity"].iloc[0] - start_capital)
+    out["daily_ret"] = out["equity"].pct_change()
+    out.iloc[0, out.columns.get_loc("daily_ret")] = float(out["equity"].iloc[0] / start_capital - 1.0)
+    out["cum_ret"] = out["equity"] / start_capital - 1.0
+    out.index.name = "date"
+    return out.reset_index()

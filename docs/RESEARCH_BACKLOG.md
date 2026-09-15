@@ -134,6 +134,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-02 | Rolling beta / OLS hedge ratio SOXL↔SOXS vs SOXL↔SNXX | **done** | PASS corr −0.988 β −0.991; SNXX was +0.45 not inverse — outputs/review_logs/2026-09-15_P7-02_soxl_soxs_beta_PASS.md |
 | P7-03 | Same-symbol L+S grid vs pair long-grid hedge backtest | **done** | BAR CONDITIONAL PASS **overturned by P7-04 TICK** — outputs/review_logs/2026-09-15_P7-03_pair_hedge_CONDITIONAL_PASS.md |
 | P7-04 | Tick-precise pair grid + funding vs daily 50/50 B&H | **done** | **FAIL** default 0.40/±5 pair −6.0%/DD −20%; all sweep FAIL — outputs/review_logs/2026-09-15_P7-04_tick_pair_hedge_FAIL.md |
+| P7-05 | User SOXL L+S: 5x, ±20U **and** ±20%, 200-grid moving, 5k+5k, daily PnL | **in_progress** | tick both legs |
 
 ---
 
