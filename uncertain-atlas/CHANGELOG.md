@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 618）
+
+- 不变量 486；语料 C478；模式 name-the-chktxvalidate-bar；反模式 chktxvalidate-sold-as-applied；L10.3 第 470 条。填 L4.4 / CometBFT 档案 CheckTx Usage validate-no-apply 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 617）
 
 - 不变量 485；语料 C477；模式 name-the-applysnapusage-bar；反模式 applysnapusage-sold-as-restored；L10.3 第 469 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage verify/Info/unable 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。

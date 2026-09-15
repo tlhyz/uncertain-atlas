@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-chktxvalidate-bar](name-the-chktxvalidate-bar.md)
 - [name-the-applysnapusage-bar](name-the-applysnapusage-bar.md)
 - [name-the-chktxtype-bar](name-the-chktxtype-bar.md)
 - [name-the-offersnaptrust-bar](name-the-offersnaptrust-bar.md)
