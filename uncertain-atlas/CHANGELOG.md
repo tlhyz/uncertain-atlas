@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-15（续 595）
+
+- 不变量 574；语料 C455；模式 name-the-finexecbv-notcand-bar；反模式 finexecbv-notcand-sold-as-bundled；L10.3 第 447 条。填 L4.4 / CometBFT 档案 FinalizeBlock When Application executes block v not apply candidate / Process already ran 正式三事（466 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。466 finexecbv unbundling 续（574 item 2）。
+
 ## 2026-09-15（续 594）
 
 - 不变量 573；语料 C454；模式 name-the-finexecbv-notpersist-bar；反模式 finexecbv-notpersist-sold-as-bundled；L10.3 第 446 条。填 L4.4 / CometBFT 档案 FinalizeBlock When Application executes block v not persist decision / When calling guarantee 正式三事（466 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。466 finexecbv unbundling 续（573 item 1）。
