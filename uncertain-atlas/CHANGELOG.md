@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 646）
+
+- 不变量 514；语料 C506；模式 name-the-verifywhen-discard-bar；反模式 verifywhen-discard-sold-as-bundled；L10.3 第 498 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension When discard invalid extension 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 645）
 
 - 不变量 513；语料 C505；模式 name-the-extwhen-broadcast-bar；反模式 extwhen-broadcast-sold-as-bundled；L10.3 第 497 条。填 L4.4 / CometBFT 档案 ExtendVote When broadcast Precommit 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
