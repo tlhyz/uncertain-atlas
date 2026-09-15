@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-offersnaptrust-bar](name-the-offersnaptrust-bar.md)
 - [name-the-chktxlane-bar](name-the-chktxlane-bar.md)
 - [name-the-commitpersist-bar](name-the-commitpersist-bar.md)
 - [name-the-finmorepre-bar](name-the-finmorepre-bar.md)
