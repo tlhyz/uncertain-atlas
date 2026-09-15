@@ -444,6 +444,7 @@
 - [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
+- [preparewhen-return-sold-as-bundled](preparewhen-return-sold-as-bundled.md)
 - [preparewhen-collect-sold-as-bundled](preparewhen-collect-sold-as-bundled.md)
 - [prepareusage-nochecks-sold-as-bundled](prepareusage-nochecks-sold-as-bundled.md)
 - [prepareusage-rawmust-sold-as-bundled](prepareusage-rawmust-sold-as-bundled.md)

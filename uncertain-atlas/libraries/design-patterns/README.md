@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-preparewhen-return-bar](name-the-preparewhen-return-bar.md)
 - [name-the-preparewhen-collect-bar](name-the-preparewhen-collect-bar.md)
 - [name-the-prepareusage-nochecks-bar](name-the-prepareusage-nochecks-bar.md)
 - [name-the-prepareusage-rawmust-bar](name-the-prepareusage-rawmust-bar.md)
