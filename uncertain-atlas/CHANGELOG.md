@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 614）
+
+- 不变量 482；语料 C474；模式 name-the-chktxlane-bar；反模式 chktxlane-sold-as-nolane；L10.3 第 466 条。填 L4.4 / CometBFT 档案 CheckTx Usage lane_id 正式二事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 613）
 
 - 不变量 481；语料 C473；模式 name-the-commitpersist-bar；反模式 commitpersist-sold-as-finalize；L10.3 第 465 条。填 L4.4 / CometBFT 档案 Commit Usage persist signal 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
