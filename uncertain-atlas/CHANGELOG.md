@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 637）
+
+- 不变量 505；语料 C497；模式 name-the-preparewhen-collect-bar；反模式 preparewhen-collect-sold-as-bundled；L10.3 第 489 条。填 L4.4 / CometBFT 档案 PrepareProposal When collect / synchronous / manipulate 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 636）
 
 - 不变量 504；语料 C496；模式 name-the-prepareusage-nochecks-bar；反模式 prepareusage-nochecks-sold-as-bundled；L10.3 第 488 条。填 L4.4 / CometBFT 档案 PrepareProposal Usage no checks / crash / nondet 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
