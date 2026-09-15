@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-applysnapusage-refetch-bar](name-the-applysnapusage-refetch-bar.md)
 - [name-the-loadsnapusage-bar](name-the-loadsnapusage-bar.md)
 - [name-the-listsnapusage-bar](name-the-listsnapusage-bar.md)
 - [name-the-offersnapusage-bootstrap-bar](name-the-offersnapusage-bootstrap-bar.md)
