@@ -130,10 +130,10 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P7-01 | Download SOXSUSDT aggTrades (detect earliest) + manifest | **in_progress** | Vision 61d 2026-07-16→09-14; tick tmux `p7-soxs-ticks`; BAR klines done |
+| P7-01 | Download SOXSUSDT aggTrades (detect earliest) + manifest | **in_progress** | SOXS 61d cached; SOXL overlap ticks downloading |
 | P7-02 | Rolling beta / OLS hedge ratio SOXL↔SOXS vs SOXL↔SNXX | **done** | PASS corr −0.988 β −0.991; SNXX was +0.45 not inverse — outputs/review_logs/2026-09-15_P7-02_soxl_soxs_beta_PASS.md |
 | P7-03 | Same-symbol L+S grid vs pair long-grid hedge backtest | **done** | CONDITIONAL PASS BAR pair +18.8%/DD −4.4% vs L+S +14.5%/−6.7% — outputs/review_logs/2026-09-15_P7-03_pair_hedge_CONDITIONAL_PASS.md |
-| P7-04 | Tick-precise pair grid + funding vs daily 50/50 B&H | **pending** | do not promote W-03 without this |
+| P7-04 | Tick-precise pair grid + funding vs daily 50/50 B&H | **in_progress** | SOXL ticks downloading; default grid 0.40/±5 |
 
 ---
 

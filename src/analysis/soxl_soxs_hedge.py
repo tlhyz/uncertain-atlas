@@ -12,10 +12,79 @@ from typing import Any, Literal
 import numpy as np
 import pandas as pd
 
+from qtb.ab.fills import FillConfig, PendingFill
 from qtb.ab.grids import native_spec, rolling_atr
+from qtb.data.binance_futures import fetch_agg_trades_day, slice_trades_for_bar
+from qtb.dual.tick_fills import resolve_tick_fills
 
 FeePreset = Literal["base", "conservative"]
+FeeEngine = Literal["bar", "tick"]
 FEE_BPS = {"base": 2.0, "conservative": 4.0}
+
+# Research default from LIVE_CANDIDATES / Tech template — not optimized on this window.
+DEFAULT_ATR_STEP = 0.40
+DEFAULT_ATR_RANGE = 5.0
+GRID_SWEEP = ((0.30, 3.0), (0.40, 3.0), (0.40, 5.0), (0.50, 5.0))
+
+
+class DayTradeCache:
+    """Load one UTC day of aggTrades at a time (cache_only)."""
+
+    def __init__(self, symbol: str):
+        self.symbol = symbol
+        self._day = None
+        self._df: pd.DataFrame | None = None
+
+    def for_bar(self, ts: pd.Timestamp) -> pd.DataFrame:
+        t = pd.Timestamp(ts)
+        if t.tzinfo is None:
+            t = t.tz_localize("UTC")
+        else:
+            t = t.tz_convert("UTC")
+        d = t.date()
+        if d != self._day:
+            self._df = fetch_agg_trades_day(self.symbol, d, cache_only=True)
+            self._day = d
+        if self._df is None or self._df.empty:
+            return pd.DataFrame()
+        return slice_trades_for_bar(self._df, t, "1h")
+
+
+def validate_tick_coverage(symbol: str, bars: pd.DataFrame) -> dict[str, Any]:
+    """Confirm every 1h bar has aggTrades; compare tick extrema to kline."""
+    cache = DayTradeCache(symbol)
+    missing = 0
+    have = 0
+    close_err: list[float] = []
+    hi_gap: list[float] = []
+    lo_gap: list[float] = []
+    empty_days: set[str] = set()
+    for row in bars.itertuples(index=False):
+        tr = cache.for_bar(row.timestamp)
+        if tr is None or tr.empty:
+            missing += 1
+            empty_days.add(str(pd.Timestamp(row.timestamp).date()))
+            continue
+        have += 1
+        px = tr["price"].to_numpy(float)
+        close_err.append(abs(float(px[-1]) / max(float(row.close), 1e-12) - 1.0))
+        hi_gap.append((float(row.high) - float(px.max())) / max(float(row.high), 1e-12))
+        lo_gap.append((float(px.min()) - float(row.low)) / max(float(row.low), 1e-12))
+    n = max(len(bars), 1)
+    return {
+        "symbol": symbol,
+        "data_class": "TICK",
+        "n_bars": int(len(bars)),
+        "bars_with_trades": have,
+        "bars_missing_trades": missing,
+        "coverage": have / n,
+        "empty_days": sorted(empty_days),
+        "median_close_rel_err": float(np.median(close_err)) if close_err else float("nan"),
+        "p99_close_rel_err": float(np.quantile(close_err, 0.99)) if close_err else float("nan"),
+        "median_high_gap": float(np.median(hi_gap)) if hi_gap else float("nan"),
+        "median_low_gap": float(np.median(lo_gap)) if lo_gap else float("nan"),
+        "pass": missing == 0 and have == len(bars),
+    }
 
 
 @dataclass(frozen=True)
@@ -162,21 +231,72 @@ def _fee_rate(preset: FeePreset) -> float:
     return FEE_BPS[preset] / 10_000.0
 
 
+def _apply_long_tick_fills(
+    pending: list[PendingFill],
+    trades: pd.DataFrame,
+    cfg: FillConfig,
+    bar_open: float,
+    bar_close: float,
+    cash: float,
+    qty: float,
+    lots: dict[int, float],
+    fee: float,
+) -> tuple[float, float, dict[int, float], float, int]:
+    fills = resolve_tick_fills(pending, trades, cfg, bar_open=bar_open, bar_close=bar_close)
+    turnover = 0.0
+    n = 0
+    for tf in fills:
+        px = float(tf.price)
+        q = float(tf.qty)
+        if q <= 0:
+            continue
+        if tf.reduce_only and tf.side == "sell":
+            lot_idx = tf.level_idx - 1
+            have = lots.get(lot_idx, 0.0)
+            take = min(q, have)
+            if take <= 0:
+                continue
+            cash += take * px * (1.0 - fee)
+            qty -= take
+            leftover = have - take
+            if leftover <= 1e-12:
+                lots.pop(lot_idx, None)
+            else:
+                lots[lot_idx] = leftover
+            turnover += take * px
+            n += 1
+        elif (not tf.reduce_only) and tf.side == "buy":
+            cash -= q * px * (1.0 + fee)
+            qty += q
+            lots[tf.level_idx] = lots.get(tf.level_idx, 0.0) + q
+            turnover += q * px
+            n += 1
+    return cash, qty, lots, turnover, n
+
+
 def simulate_long_grid(
     bars: pd.DataFrame,
     capital: float = 10_000.0,
     *,
-    atr_step: float = 0.40,
-    atr_range: float = 5.0,
+    atr_step: float = DEFAULT_ATR_STEP,
+    atr_range: float = DEFAULT_ATR_RANGE,
     fee_preset: FeePreset = "base",
     atr_n: int = 24,
+    fill_engine: FeeEngine = "bar",
+    get_trades=None,
 ) -> dict[str, Any]:
-    """Independent long-only ATR grid. BAR conservative penetration (low/high touch)."""
+    """Independent long-only ATR grid.
+
+    BAR: wick touch. TICK: path-exact aggTrades via resolve_tick_fills (Base/Conservative).
+    """
+    o = bars["open"].to_numpy(float)
     h = bars["high"].to_numpy(float)
     l = bars["low"].to_numpy(float)
     c = bars["close"].to_numpy(float)
+    ts = bars["timestamp"]
     atr = rolling_atr(h, l, c, n=atr_n)
     fee = _fee_rate(fee_preset)
+    cfg = FillConfig.preset(fee_preset)
     cash = float(capital)
     qty = 0.0
     lots: dict[int, float] = {}
@@ -194,32 +314,54 @@ def simulate_long_grid(
         remaining = max(capital - qty * mid, 0.0)
         empty = [idx for idx, lvl in enumerate(spec.levels) if idx not in lots and lvl <= spec.mid]
         baseline = remaining / max(len(empty), 1)
-        for idx, lvl in enumerate(spec.levels):
-            if idx in lots or lvl > spec.mid:
-                continue
-            if float(l[i]) <= float(lvl) <= float(h[i]):
-                notion = min(baseline, remaining)
-                if notion < 1.0:
+
+        if fill_engine == "tick" and get_trades is not None:
+            pending: list[PendingFill] = []
+            for idx, lvl in enumerate(spec.levels):
+                if idx in lots or lvl > spec.mid:
                     continue
-                px = float(lvl)
-                q = notion / px
-                cash -= q * px * (1.0 + fee)
-                qty += q
-                lots[idx] = lots.get(idx, 0.0) + q
-                remaining -= notion
-                turnover += notion
-                fills += 1
-        for idx, lot_q in list(lots.items()):
-            si = idx + 1
-            if si >= len(spec.levels) or lot_q <= 0:
-                continue
-            tp = float(spec.levels[si])
-            if float(h[i]) >= tp:
-                cash += lot_q * tp * (1.0 - fee)
-                qty -= lot_q
-                turnover += lot_q * tp
-                fills += 1
-                del lots[idx]
+                if baseline >= 1.0:
+                    pending.append(PendingFill("buy", float(lvl), idx, notional=baseline, reason="grid"))
+            for idx, lot_q in list(lots.items()):
+                si = idx + 1
+                if si < len(spec.levels) and lot_q > 0:
+                    pending.append(
+                        PendingFill("sell", float(spec.levels[si]), si, qty=lot_q, reduce_only=True, reason="grid_tp")
+                    )
+            trades = get_trades(i, ts.iloc[i])
+            if trades is not None and not trades.empty:
+                cash, qty, lots, to, n = _apply_long_tick_fills(
+                    pending, trades, cfg, float(o[i]), float(c[i]), cash, qty, lots, fee
+                )
+                turnover += to
+                fills += n
+        else:
+            for idx, lvl in enumerate(spec.levels):
+                if idx in lots or lvl > spec.mid:
+                    continue
+                if float(l[i]) <= float(lvl) <= float(h[i]):
+                    notion = min(baseline, remaining)
+                    if notion < 1.0:
+                        continue
+                    px = float(lvl)
+                    q = notion / px
+                    cash -= q * px * (1.0 + fee)
+                    qty += q
+                    lots[idx] = lots.get(idx, 0.0) + q
+                    remaining -= notion
+                    turnover += notion
+                    fills += 1
+            for idx, lot_q in list(lots.items()):
+                si = idx + 1
+                if si >= len(spec.levels) or lot_q <= 0:
+                    continue
+                tp = float(spec.levels[si])
+                if float(h[i]) >= tp:
+                    cash += lot_q * tp * (1.0 - fee)
+                    qty -= lot_q
+                    turnover += lot_q * tp
+                    fills += 1
+                    del lots[idx]
         equity[i] = cash + qty * float(c[i])
 
     inv_notional = abs(qty) * float(c[-1])
@@ -232,6 +374,9 @@ def simulate_long_grid(
             "turnover": float(turnover),
             "fills": int(fills),
             "fee_preset": fee_preset,
+            "fill_engine": fill_engine,
+            "atr_step": atr_step,
+            "atr_range": atr_range,
         }
     )
     out["equity"] = equity
@@ -242,10 +387,12 @@ def simulate_short_grid(
     bars: pd.DataFrame,
     capital: float = 10_000.0,
     *,
-    atr_step: float = 0.40,
-    atr_range: float = 5.0,
+    atr_step: float = DEFAULT_ATR_STEP,
+    atr_range: float = DEFAULT_ATR_RANGE,
     fee_preset: FeePreset = "base",
     atr_n: int = 24,
+    fill_engine: FeeEngine = "bar",
+    get_trades=None,
 ) -> dict[str, Any]:
     """Independent short-only ATR grid on one symbol (same-symbol hedge leg)."""
     h = bars["high"].to_numpy(float)
@@ -309,6 +456,9 @@ def simulate_short_grid(
             "turnover": float(turnover),
             "fills": int(fills),
             "fee_preset": fee_preset,
+            "fill_engine": fill_engine,
+            "atr_step": atr_step,
+            "atr_range": atr_range,
         }
     )
     out["equity"] = equity
@@ -334,24 +484,25 @@ def run_hedge_experiment(
     *,
     capital: float = 10_000.0,
     fee_preset: FeePreset = "base",
-    atr_step: float = 0.40,
-    atr_range: float = 5.0,
+    atr_step: float = DEFAULT_ATR_STEP,
+    atr_range: float = DEFAULT_ATR_RANGE,
+    fill_engine: FeeEngine = "bar",
+    get_trades_soxl=None,
+    get_trades_soxs=None,
 ) -> dict[str, Any]:
-    """Compare same-symbol L+S vs SOXL+SOXS pair long-grids vs baselines.
-
-    Evidence class: BAR unless input closes are tick-VWAP.
-    """
+    """Compare same-symbol L+S vs SOXL+SOXS pair long-grids vs baselines."""
     a, b = align_pair(soxl, soxs)
     if len(a) < 48:
         raise ValueError(f"aligned bars {len(a)} < 48")
     diag = hedge_diagnostics(_as_close(a), _as_close(b))
     half = capital / 2.0
-    soxl_only = simulate_long_grid(a, capital, atr_step=atr_step, atr_range=atr_range, fee_preset=fee_preset)
-    soxl_l = simulate_long_grid(a, half, atr_step=atr_step, atr_range=atr_range, fee_preset=fee_preset)
+    kw = dict(atr_step=atr_step, atr_range=atr_range, fee_preset=fee_preset, fill_engine=fill_engine)
+    soxl_only = simulate_long_grid(a, capital, get_trades=get_trades_soxl, **kw)
+    soxl_l = simulate_long_grid(a, half, get_trades=get_trades_soxl, **kw)
     soxl_s = simulate_short_grid(a, half, atr_step=atr_step, atr_range=atr_range, fee_preset=fee_preset)
     same_ls = combine_books(soxl_l, soxl_s, "same_symbol_long_short")
-    pair_l = simulate_long_grid(a, half, atr_step=atr_step, atr_range=atr_range, fee_preset=fee_preset)
-    pair_s = simulate_long_grid(b, half, atr_step=atr_step, atr_range=atr_range, fee_preset=fee_preset)
+    pair_l = simulate_long_grid(a, half, get_trades=get_trades_soxl, **kw)
+    pair_s = simulate_long_grid(b, half, get_trades=get_trades_soxs, **kw)
     pair = combine_books(pair_l, pair_s, "pair_soxl_soxs_long_grids")
     bh_soxl = _summary(buy_hold(_as_close(a), capital), "bh_soxl")
     bh_pair = _summary(buy_hold_pair(_as_close(a), _as_close(b), capital, 0.5, "none"), "bh_50_50_static")
@@ -385,10 +536,13 @@ def run_hedge_experiment(
         reason = "pair does not improve on same-symbol long+short inventory hedge"
 
     return {
-        "data_class": "BAR",
+        "data_class": "TICK" if fill_engine == "tick" else "BAR",
         "n_bars": int(len(a)),
         "start": str(a["timestamp"].iloc[0]),
         "end": str(a["timestamp"].iloc[-1]),
+        "atr_step": atr_step,
+        "atr_range": atr_range,
+        "fill_engine": fill_engine,
         "fee_preset": fee_preset,
         "diagnostics": asdict(diag),
         "inverse_gate": inverse_ok,
@@ -407,3 +561,43 @@ def run_hedge_experiment(
         "pair_beats_soxl_dd": bool(pair_beats_soxl_dd),
         "pair_beats_bh_return": bool(pair_beats_bh),
     }
+
+
+def sweep_pair_grids(
+    soxl: pd.DataFrame,
+    soxs: pd.DataFrame,
+    *,
+    fee_preset: FeePreset = "base",
+    fill_engine: FeeEngine = "bar",
+    get_trades_soxl=None,
+    get_trades_soxs=None,
+    grid: tuple[tuple[float, float], ...] = GRID_SWEEP,
+) -> list[dict[str, Any]]:
+    """Sweep ATR step/range; rank by pair max_dd then return."""
+    rows: list[dict[str, Any]] = []
+    for step, rng in grid:
+        rep = run_hedge_experiment(
+            soxl,
+            soxs,
+            fee_preset=fee_preset,
+            atr_step=step,
+            atr_range=rng,
+            fill_engine=fill_engine,
+            get_trades_soxl=get_trades_soxl,
+            get_trades_soxs=get_trades_soxs,
+        )
+        pair = rep["strategies"]["pair_soxl_soxs_long_grids"]
+        rows.append(
+            {
+                "atr_step": step,
+                "atr_range": rng,
+                "verdict": rep["verdict"],
+                "pair_return": pair["return"],
+                "pair_max_dd": pair["max_dd"],
+                "pair_inventory_frac": pair["inventory_frac"],
+                "same_ls_max_dd": rep["strategies"]["same_symbol_long_short"]["max_dd"],
+                "daily_bh_max_dd": rep["strategies"]["bh_50_50_daily"]["max_dd"],
+            }
+        )
+    rows.sort(key=lambda r: (-r["pair_max_dd"], -r["pair_return"]))
+    return rows

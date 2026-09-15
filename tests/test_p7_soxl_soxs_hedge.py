@@ -75,3 +75,27 @@ def test_long_grid_runs_on_chop():
     assert out["fills"] >= 0
     assert out["end_equity"] > 0
     assert "inventory_frac" in out
+
+
+def test_tick_engine_uses_trade_path_not_wick():
+    """A wick-only bar must not fill on TICK if no aggTrade crosses the level."""
+    close = np.full(80, 100.0)
+    close[40:] = 100.2
+    bars = _bars(close)
+    bars.loc[40, "low"] = 95.0  # wick that would fill BAR
+    bars.loc[40, "high"] = 100.3
+
+    def no_cross(_i, _ts):
+        ts = pd.Timestamp("2026-07-16 16:00:00", tz="UTC")
+        return pd.DataFrame(
+            {
+                "timestamp": [ts, ts + pd.Timedelta(minutes=1)],
+                "price": [100.05, 100.10],
+                "qty": [1.0, 1.0],
+                "quote_qty": [100.05, 100.10],
+            }
+        )
+
+    tick = simulate_long_grid(bars, capital=5_000.0, fill_engine="tick", get_trades=no_cross, fee_preset="base")
+    bar = simulate_long_grid(bars, capital=5_000.0, fill_engine="bar", fee_preset="base")
+    assert tick["fills"] <= bar["fills"]
