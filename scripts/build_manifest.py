@@ -54,8 +54,10 @@ def main() -> int:
                 file_entries.append({"path": str(f), "sha256": sha256_file(f), "bytes": f.stat().st_size})
                 total_rows += count_csv_rows(f)
             notes = [f"day_files={len(files)}", f"rows_est={total_rows}"]
-            if sym in ("SOXLUSDT", "SNXXUSDT"):
+            if sym in ("SOXLUSDT", "SNXXUSDT", "SOXSUSDT"):
                 notes.append("tech_perp_tradfi")
+            if sym == "SOXSUSDT":
+                notes.append("soxl_inverse_candidate")
             m = DatasetManifest(
                 venue="binance",
                 symbol=sym,

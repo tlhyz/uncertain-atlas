@@ -124,6 +124,18 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 
 ---
 
+## P7 — SOXL/SOXS inverse-pair hedge (user 2026-09-15)
+
+Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS long-grid (SOXS already shorts SOX) may cancel residual delta and keep grid harvest.
+
+| ID | Task | Status | Log / notes |
+|----|------|--------|-------------|
+| P7-01 | Download SOXSUSDT aggTrades (detect earliest) + manifest | **in_progress** | Vision earliest 2026-07-16; 61d to 2026-09-14; overlap SOXL 07-16→09-11 |
+| P7-02 | Rolling beta / OLS hedge ratio SOXL↔SOXS vs SOXL↔SNXX | pending | BAR 1h first; tick VWAP confirm |
+| P7-03 | Same-symbol L+S grid vs pair long-grid hedge backtest | pending | Base+Conservative; vs SOXL-only + 50/50 B&H |
+
+---
+
 ## Maintenance (recurring)
 
 | ID | Task | Status | Cadence |

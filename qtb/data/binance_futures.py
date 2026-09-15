@@ -27,7 +27,7 @@ except ImportError:  # pragma: no cover
 VISION = "https://data.binance.vision/data/futures/um/daily/aggTrades"
 VISION_KLINES = "https://data.binance.vision/data/futures/um/daily/klines"
 FAPI = "https://fapi.binance.com/fapi/v1/aggTrades"
-DEFAULT_SYMBOLS = ("BTCUSDT", "ETHUSDT", "SOLUSDT", "SOXLUSDT", "SNXXUSDT")
+DEFAULT_SYMBOLS = ("BTCUSDT", "ETHUSDT", "SOLUSDT", "SOXLUSDT", "SNXXUSDT", "SOXSUSDT")
 
 _SYMBOL_MAP = {
     "BTC": "BTCUSDT",
@@ -35,11 +35,13 @@ _SYMBOL_MAP = {
     "SOL": "SOLUSDT",
     "SOXL": "SOXLUSDT",
     "SNXX": "SNXXUSDT",
+    "SOXS": "SOXSUSDT",
     "BTCUSDT": "BTCUSDT",
     "ETHUSDT": "ETHUSDT",
     "SOLUSDT": "SOLUSDT",
     "SOXLUSDT": "SOXLUSDT",
     "SNXXUSDT": "SNXXUSDT",
+    "SOXSUSDT": "SOXSUSDT",
 }
 
 

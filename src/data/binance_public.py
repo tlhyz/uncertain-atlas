@@ -19,7 +19,7 @@ from qtb.data.binance_futures import (  # noqa: F401
 RAW_ROOT = "data/raw/binance"
 
 SYMBOLS_CRYPTO = ("BTCUSDT", "ETHUSDT", "SOLUSDT", "PENGUUSDT", "PUMPUSDT")
-SYMBOLS_TECH = ("SOXLUSDT", "SNXXUSDT")
+SYMBOLS_TECH = ("SOXLUSDT", "SNXXUSDT", "SOXSUSDT")
 
 
 def detect_earliest_available(symbol: str, *, cache_only: bool = False) -> str | None:
