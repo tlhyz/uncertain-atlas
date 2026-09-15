@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 639）
+
+- 不变量 507；语料 C499；模式 name-the-extwhen-lock-bar；反模式 extwhen-lock-sold-as-bundled；L10.3 第 491 条。填 L4.4 / CometBFT 档案 ExtendVote When lock values 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 638）
 
 - 不变量 506；语料 C498；模式 name-the-preparewhen-return-bar；反模式 preparewhen-return-sold-as-bundled；L10.3 第 490 条。填 L4.4 / CometBFT 档案 PrepareProposal When return / use-as-proposal 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
