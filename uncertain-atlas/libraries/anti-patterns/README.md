@@ -444,6 +444,7 @@
 - [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
+- [finwhenparts-sold-as-partial](finwhenparts-sold-as-partial.md)
 - [finpersist-sold-as-commit](finpersist-sold-as-commit.md)
 - [finasresult-sold-as-candidate](finasresult-sold-as-candidate.md)
 - [finharddet-sold-as-noroot](finharddet-sold-as-noroot.md)
