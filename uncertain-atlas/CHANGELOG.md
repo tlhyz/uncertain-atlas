@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-15（续 600）
+
+- 不变量 460；语料 C460；模式 name-the-fincand-bar；反模式 fincand-sold-as-commit；L10.3 第 452 条。填 L4.4 / CometBFT 档案 FinalizeBlock 套用候选 / 实现表 / 05b / 共识专题 / 停链面地图。460 FinalizeBlock 套用候选 unbundling 完成（parent bundled）。
+
 ## 2026-09-15（续 599）
 
 - 不变量 578；语料 C459；模式 name-the-fincand-notnoreexecute-bar；反模式 fincand-notnoreexecute-sold-as-bundled；L10.3 第 451 条。填 L4.4 / CometBFT 档案 previously executed not no re-execute in Finalize 正式三事（460 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。460 FinalizeBlock 套用候选 unbundling 续（578 item 3）。
