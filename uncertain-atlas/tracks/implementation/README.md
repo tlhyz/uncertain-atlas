@@ -68,6 +68,7 @@
 - [`worked-example-finfill-notcommitted-vs-bundled.md`](worked-example-finfill-notcommitted-vs-bundled.md) — all fields / request complete ≠ committed；≠ finfields / finpersist；≠ apply candidate / 583 refill（不变量 569）
 - [`worked-example-finfill-notrefill-vs-bundled.md`](worked-example-finfill-notrefill-vs-bundled.md) — will fill up all fields ≠ no need to provide again；≠ Finalize 时的 Process 保证 bundled；≠ 583 not refill（不变量 567）
 - [`worked-example-finfill-notpassed-vs-bundled.md`](worked-example-finfill-notpassed-vs-bundled.md) — even if Prepare/Process passed ≠ field names match means ran Process；≠ Prepare/Process/Finalize same fields；≠ Process also on proposer means ran Process（不变量 568）
+- [`worked-example-findet-notreq11-vs-bundled.md`](worked-example-findet-notreq11-vs-bundled.md) — implementation MUST be deterministic ≠ Req 11–12；≠ finfields bundled；≠ findet item 1/2（不变量 581）
 - [`worked-example-findet-notapphash-vs-bundled.md`](worked-example-findet-notapphash-vs-bundled.md) — app_hash MUST be deterministic ≠ 印进本头；≠ next_block_delay nondet；≠ findet item 1/3（不变量 580）
 - [`worked-example-findet-notlikeprepare-vs-bundled.md`](worked-example-findet-notlikeprepare-vs-bundled.md) — executes txs deterministically ≠ like Prepare / 338 nondet；≠ apply candidate / previously executed；≠ committed / 576 not committed（不变量 579）
 - [`worked-example-fincand-bundled.md`](worked-example-fincand-bundled.md) — executes txs deterministically ≠ committed；≠ apply candidate ExecuteTxState；≠ previously executed no re-execute in Finalize（不变量 460）
