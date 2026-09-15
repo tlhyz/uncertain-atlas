@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-15（续 607）
+
+- 不变量 475；语料 C467；模式 name-the-finmerkle-bar；反模式 finmerkle-sold-as-header；L10.3 第 459 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash Merkle root / next block Header.AppHash / Query proofs anchored 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 606）
 
 - 不变量 474；语料 C466；模式 name-the-finnewdec-bar；反模式 finnewdec-sold-as-settled；L10.3 第 458 条。填 L4.4 / CometBFT 档案 FinalizeBlock Contains newly decided block fields 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
