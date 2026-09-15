@@ -1,3 +1,7 @@
+## 2026-09-15（续 662）
+
+- 不变量 530；语料 C522；模式 name-the-procaccept-shouldaccept-bar；反模式 procaccept-shouldaccept-sold-as-bundled；L10.3 第 514 条。填 L4.4 / CometBFT 档案 ProcessProposal Usage SHOULD always set ACCEPT 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 661）
 
 - 不变量 529；语料 C521；模式 name-the-verifyaccept-default-bar；反模式 verifyaccept-default-sold-as-bundled；L10.3 第 513 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage SHOULD Accept default strategy 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
