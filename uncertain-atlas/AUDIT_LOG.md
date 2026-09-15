@@ -4499,6 +4499,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2288 | 中 | 怎样做验签 / 怎样维护 CheckTxState 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2287 | 高 | 看见 Technically optional / not involved in processing blocks / Guardian of the mempool / Code≠0 会拒 会被写成已经可以不跑 CheckTx / 已经四门已经结算（373），或当成已经 Check 通过就是已进提案（33） | 官方 CheckTx Usage：Technically optional - not involved in processing blocks; Guardian of the mempool; CheckTxResponse.Code != 0 will be rejected |
 | A2286 | 高 | 看见 but does not apply any of the state changes described in the transaction 会被写成已经在 CheckTx 里把状态改了，或当成已经 Finalize 确定执行 txs（408） interchangeable | 官方 CheckTx Usage：but does not apply any of the state changes described in the transaction |
+| A2294 | 记录 | 会与 371 / 383 / 325 / 329 / 314 / 475 / 405 糊成「看见 Query 了就已经 QueryState、已经对上 AppHash、已经复制到各节点」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。QueryState / 对上 AppHash / 复制到各节点 标成另一对象 |
+| A2293 | 中 | 怎样做 Query / 怎样实现 prove / 怎样维护 QueryState 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2292 | 高 | 看见 Merkle proof includes self-describing type field / support many types of Merkle trees and encoding formats 会被写成已经是 ProofOp.type 那种按键查（325），或当成已经 Query 回了 Proof 就对上 AppHash | 官方 Query Usage：Merkle proof includes self-describing type field to support many types of Merkle trees and encoding formats |
+| A2291 | 高 | 看见 Optionally return Merkle proof 会被写成已经 Query 请求 prove 栏能回就回（383），或当成已经 Finalize Query proofs anchored（475） interchangeable | 官方 Query Usage：Optionally return Merkle proof |
+| A2290 | 高 | 看见 Query for data from the application at current or past height 会被写成已经是 QueryState（371），或当成已经复制到各节点（329）/ QueryState 就是 ExecuteTxState（314） | 官方 Query Usage：Query for data from the application at current or past height |
+
 | A2285 | 高 | 看见 CheckTx validates against the current state / checking signatures and account balances 会被写成已经按 ExecuteTxState 验过（312），或当成已经按将要执行的那份状态验过 | 官方 CheckTx Usage：CheckTx validates the transaction against the current state of the application, for example, checking signatures and account balances |
 
 | A2280 | 高 | 看见 verify each chunk / Metadata chunk hash / incrementally against AppHash 会被写成已经 Only AppHash can be trusted（483）那种 hash/metadata 比对就够，或当成已经 Snapshot Verification 增量验（332） interchangeable | 官方 ApplySnapshotChunk Usage：The application may want to verify each chunk, e.g. by attaching chunk hashes in Snapshot.Metadata and/or incrementally verifying contents against AppHash |
