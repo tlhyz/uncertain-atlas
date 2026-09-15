@@ -1,3 +1,7 @@
+## 2026-09-15（续 672）
+
+- 不变量 540；语料 C532；模式 name-the-verifyrespstatus-exclusivedep-bar；反模式 verifyrespstatus-exclusivedep-sold-as-bundled；L10.3 第 524 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Response status must exclusively depend 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。433 Verify 回包栏 unbundling 完成（539 + 540）。
+
 ## 2026-09-15（续 671）
 
 - 不变量 539；语料 C531；模式 name-the-verifyrespstatus-validinvalid-bar；反模式 verifyrespstatus-validinvalid-sold-as-bundled；L10.3 第 523 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Response status valid/invalid 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。433 Verify 回包栏 unbundling 启动（539）。
