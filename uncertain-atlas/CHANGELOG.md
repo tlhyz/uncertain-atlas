@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-15（续 604）
+
+- 不变量 470；语料 C464；模式 name-the-findet-bar；反模式 findet-sold-as-prepare；L10.3 第 456 条。填 L4.4 / CometBFT 档案 FinalizeBlock Usage determinism 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。470 FinalizeBlock Usage determinism unbundling 完成（470 parent bundled）。
+
 ## 2026-09-15（续 603）
 
 - 不变量 581；语料 C463；模式 name-the-findet-notreq11-bar；反模式 findet-notreq11-sold-as-bundled；L10.3 第 455 条。填 L4.4 / CometBFT 档案 implementation MUST be deterministic not Req 11–12 正式三事（470 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。470 FinalizeBlock Usage determinism unbundling 完成（581 item 3）。
