@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-offersnapusage-bootstrap-bar](name-the-offersnapusage-bootstrap-bar.md)
 - [name-the-infousage-defaultlane-bar](name-the-infousage-defaultlane-bar.md)
 - [name-the-infousage-persist-bar](name-the-infousage-persist-bar.md)
 - [name-the-initchainusage-decide-bar](name-the-initchainusage-decide-bar.md)
