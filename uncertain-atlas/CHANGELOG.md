@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 641）
+
+- 不变量 509；语料 C501；模式 name-the-extwhen-return-bar；反模式 extwhen-return-sold-as-bundled；L10.3 第 493 条。填 L4.4 / CometBFT 档案 ExtendVote When return extension 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 640）
 
 - 不变量 508；语料 C500；模式 name-the-extwhen-call-bar；反模式 extwhen-call-sold-as-bundled；L10.3 第 492 条。填 L4.4 / CometBFT 档案 ExtendVote When call / synchronous 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
