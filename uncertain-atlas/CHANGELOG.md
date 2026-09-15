@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 656）
+
+- 不变量 524；语料 C516；模式 name-the-extusage-precommitnil-bar；反模式 extusage-precommitnil-sold-as-bundled；L10.3 第 508 条。填 L4.4 / CometBFT 档案 ExtendVote Usage precommit nil will not call ExtendVote 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 655）
 
 - 不变量 523；语料 C515；模式 name-the-verifyusage-hashproc-bar；反模式 verifyusage-hashproc-sold-as-bundled；L10.3 第 507 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage hash does not guarantee Process 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
