@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 650）
+
+- 不变量 518；语料 C510；模式 name-the-verifywhen-latemay-bar；反模式 verifywhen-latemay-sold-as-bundled；L10.3 第 502 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension When late-arriving MAY add without Verify 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 649）
 
 - 不变量 517；语料 C509；模式 name-the-verifywhen-keepdiscard-bar；反模式 verifywhen-keepdiscard-sold-as-bundled；L10.3 第 501 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension When ACCEPT keep or REJECT discard 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
