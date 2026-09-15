@@ -339,5 +339,6 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-finpersist-bar](name-the-finpersist-bar.md)
 - [name-the-finasresult-bar](name-the-finasresult-bar.md)
 - [name-the-finharddet-bar](name-the-finharddet-bar.md)
