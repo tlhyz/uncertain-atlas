@@ -1,3 +1,7 @@
+## 2026-09-15（续 666）
+
+- 不变量 534；语料 C526；模式 name-the-procreject-assume-notblockinvalid-bar；反模式 procreject-assume-notblockinvalid-sold-as-bundled；L10.3 第 518 条。填 L4.4 / CometBFT 档案 ProcessProposal REJECT consensus assumes not valid not block invalid 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。533 Process REJECT consensus assume unbundling 启动（534）。
+
 ## 2026-09-15（续 665）
 
 - 不变量 533；语料 C525；模式 name-the-procreject-bar；反模式 procreject-sold-as-invalid；L10.3 第 517 条。填 L4.4 / CometBFT 档案 ProcessProposal REJECT 共识假设正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。

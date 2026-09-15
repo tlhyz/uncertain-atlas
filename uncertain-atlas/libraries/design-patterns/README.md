@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-procreject-assume-notblockinvalid-bar](name-the-procreject-assume-notblockinvalid-bar.md)
 - [name-the-procreject-bar](name-the-procreject-bar.md)
 - [name-the-procaccept-default-bar](name-the-procaccept-default-bar.md)
 - [name-the-procaccept-liveness-bar](name-the-procaccept-liveness-bar.md)
