@@ -4503,6 +4503,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2293 | 中 | 怎样做 Query / 怎样实现 prove / 怎样维护 QueryState 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2292 | 高 | 看见 Merkle proof includes self-describing type field / support many types of Merkle trees and encoding formats 会被写成已经是 ProofOp.type 那种按键查（325），或当成已经 Query 回了 Proof 就对上 AppHash | 官方 Query Usage：Merkle proof includes self-describing type field to support many types of Merkle trees and encoding formats |
 | A2291 | 高 | 看见 Optionally return Merkle proof 会被写成已经 Query 请求 prove 栏能回就回（383），或当成已经 Finalize Query proofs anchored（475） interchangeable | 官方 Query Usage：Optionally return Merkle proof |
+| A2299 | 记录 | 会与 484 / 391 / 313 / 301 / 405 / 486 糊成「看见送来了 tx 就已经分清 New/Recheck、已经防重放、已经提案收了」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx Usage tx source 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。CheckTx_Recheck / 内存池去重 / 提案收了 标成另一对象 |
+| A2298 | 中 | 怎样做内存池去重 / 怎样区分来源 / 怎样实现 P2P 收 tx 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2297 | 高 | 看见 The transaction may come from an external user or another node / 送来了 会被写成已经内存池去重保证不重放（313），或当成已经 CheckTx 过了就有应用级重放保护 | 官方 CheckTx Usage：The transaction may come from an external user or another node |
+| A2296 | 高 | 看见 The transaction may come from another node 会被写成已经流言广播就代表来源已经验过，或当成已经从池里删掉 / 提案收了（301） | 官方 CheckTx Usage：The transaction may come from another node |
+| A2295 | 高 | 看见 The transaction may come from an external user 会被写成已经 CheckTx_Recheck 那种内存池再验（484），或当成已经 CheckTx_New default full check 就代表来源已经验完 | 官方 CheckTx Usage：The transaction may come from an external user |
+
 | A2290 | 高 | 看见 Query for data from the application at current or past height 会被写成已经是 QueryState（371），或当成已经复制到各节点（329）/ QueryState 就是 ExecuteTxState（314） | 官方 Query Usage：Query for data from the application at current or past height |
 
 | A2285 | 高 | 看见 CheckTx validates against the current state / checking signatures and account balances 会被写成已经按 ExecuteTxState 验过（312），或当成已经按将要执行的那份状态验过 | 官方 CheckTx Usage：CheckTx validates the transaction against the current state of the application, for example, checking signatures and account balances |
