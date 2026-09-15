@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 612）
+
+- 不变量 480；语料 C472；模式 name-the-finmorepre-bar；反模式 finmorepre-sold-as-timeout；L10.3 第 464 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay processing time / more precommits 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 611）
 
 - 不变量 479；语料 C471；模式 name-the-finwhenparts-bar；反模式 finwhenparts-sold-as-partial；L10.3 第 463 条。填 L4.4 / CometBFT 档案 FinalizeBlock When trigger Proposal block parts 2f+1 precommit 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
