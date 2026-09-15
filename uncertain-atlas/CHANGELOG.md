@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 643）
+
+- 不变量 511；语料 C503；模式 name-the-extwhen-canonicalvote-bar；反模式 extwhen-canonicalvote-sold-as-bundled；L10.3 第 495 条。填 L4.4 / CometBFT 档案 ExtendVote When construct CanonicalVote 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 642）
 
 - 不变量 510；语料 C502；模式 name-the-extwhen-fill-bar；反模式 extwhen-fill-sold-as-bundled；L10.3 第 494 条。填 L4.4 / CometBFT 档案 ExtendVote When fill CanonicalVoteExtension 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
