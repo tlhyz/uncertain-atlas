@@ -444,6 +444,7 @@
 - [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
+- [offersnaptrust-sold-as-metadata](offersnaptrust-sold-as-metadata.md)
 - [chktxlane-sold-as-nolane](chktxlane-sold-as-nolane.md)
 - [commitpersist-sold-as-finalize](commitpersist-sold-as-finalize.md)
 - [finmorepre-sold-as-timeout](finmorepre-sold-as-timeout.md)

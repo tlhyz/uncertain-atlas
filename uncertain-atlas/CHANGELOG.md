@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 615）
+
+- 不变量 483；语料 C475；模式 name-the-offersnaptrust-bar；反模式 offersnaptrust-sold-as-metadata；L10.3 第 467 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage trust 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 614）
 
 - 不变量 482；语料 C474；模式 name-the-chktxlane-bar；反模式 chktxlane-sold-as-nolane；L10.3 第 466 条。填 L4.4 / CometBFT 档案 CheckTx Usage lane_id 正式二事 / 实现表 / 05b / 共识专题 / 停链面地图。
