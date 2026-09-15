@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-verifystatus-reject-bar](name-the-verifystatus-reject-bar.md)
 - [name-the-verifystatus-accept-bar](name-the-verifystatus-accept-bar.md)
 - [name-the-verifystatus-unknown-bar](name-the-verifystatus-unknown-bar.md)
 - [name-the-verifyrespstatus-exclusivedep-bar](name-the-verifyrespstatus-exclusivedep-bar.md)
