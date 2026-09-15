@@ -1,3 +1,4 @@
+- [proccand-readonly-notcommitted-sold-as-bundled](proccand-readonly-notcommitted-sold-as-bundled.md)
 - [proccand-mayexecute-notcommitted-sold-as-bundled](proccand-mayexecute-notcommitted-sold-as-bundled.md)
 - [proccand-candidate-notcommitted-sold-as-bundled](proccand-candidate-notcommitted-sold-as-bundled.md)
 # Anti-Patterns
