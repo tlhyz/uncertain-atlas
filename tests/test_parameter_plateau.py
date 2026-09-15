@@ -6,6 +6,8 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
@@ -40,6 +42,10 @@ def test_is_plateau_legacy():
     assert is_plateau(rows, "grid_atr_step", "calmar", tol=0.15)
 
 
+@pytest.mark.skipif(
+    not (ROOT / "outputs/experiments/crypto_btc_grid_atr_step/crypto_results.json").exists(),
+    reason="BTC ATR sweep artifact not present on this VM",
+)
 def test_detect_inert_plateau_btc_sweep():
     path = ROOT / "outputs/experiments/crypto_btc_grid_atr_step/crypto_results.json"
     data = json.loads(path.read_text(encoding="utf-8"))

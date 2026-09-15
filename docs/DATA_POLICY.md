@@ -37,7 +37,7 @@ Anyone cloning the repo must be able to rebuild datasets from official sources.
 
 ## Tech (SOXL/SNXX)
 
-- Binance Vision: SOXLUSDT ~2025-05+, SNXXUSDT ~2026-07+ (verify via `detect_earliest_available`).
+- Binance Vision: SOXLUSDT **2026-05-15+** (probed 2026-09-15; 2026-05-14 and all 2025 dates 404). SNXXUSDT ~2026-07+ (verify via `detect_earliest_available`).
 - Gate perp history may be shorter → mark **`INSUFFICIENT_GATE_HISTORY`** when needed.
 
 ## Crypto

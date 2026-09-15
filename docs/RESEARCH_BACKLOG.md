@@ -24,7 +24,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
 | P1-01 | Download BTC/ETH/SOL aggTrades (auto start date) | **done** | BTC/ETH/SOL 91d manifests; Sep-04 SOL + Sep-01 BTC gaps filled 2026-09-13 — outputs/review_logs/2026-09-13_P1-01_crypto_aggTrades_download_PASS.md |
-| P1-02 | Download SOXLUSDT aggTrades (detect earliest) | done | 65 days 2026-07-09→09-11 |
+| P1-02 | Download SOXLUSDT aggTrades (detect earliest) | done | local 59d 2026-07-15→09-11; Vision listing **2026-05-15** |
+| P1-12 | Download remaining Vision SOXL 2026-05-15→07-14 | **in_progress** | listing probe 2026-09-15; gap 07-09→07-14 first |
 | P1-03 | Download SNXXUSDT aggTrades (detect earliest) | done | 65 days |
 | P1-04 | Run `build_manifest.py` + sha256 all files | done | data/manifests/*.json |
 | P1-05 | Validate every SOXL bar has aggTrades | done | 1560/1560 |
@@ -71,8 +72,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P3-06 | Right-side reserve 25/30/35% | **done** | FAIL 25% best −58.92%; all worse vs default −58.70% — outputs/review_logs/2026-09-14_P3-06_right_side_reserve_FAIL.md |
 | P3-07 | SOXL/SNXX weight 75/25 70/30 65/35 | **done** | FAIL default 70/30 best −58.70%; 75/25 worst −58.89% — outputs/review_logs/2026-09-14_P3-07_soxl_snxx_weights_FAIL.md |
 | P3-08 | Grid→Trend stage mix sweep | **done** | FAIL G50 best −57.85% (+0.85pp); G100 worst −71.41% — outputs/review_logs/2026-09-14_P3-08_grid_mix_FAIL.md |
-| P3-09 | FAIL_F1 direct-up window | **blocked** | needs SOXL 2025-09→10 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
-| P3-10 | FAIL_F2 no-recovery window | **blocked** | needs SOXL 2024-09→11 aggTrades (STRUCTURAL_SEED_ONLY on 65d overlap) |
+| P3-09 | FAIL_F1 direct-up window | **blocked** | Vision SOXL starts **2026-05-15**; 2025-09→10 **404** — not downloadable — outputs/review_logs/2026-09-15_P3-09_vision_listing_BLOCKED.md |
+| P3-10 | FAIL_F2 no-recovery window | **blocked** | 2024-09→11 **404**; predates UM listing 2026-05-15 — same log |
 | P3-11 | Similar-window search top-20 real windows | **blocked** | empty on TECH_T2; max 1 window on 1546 bars — outputs/review_logs/2026-09-14_P3-11_similar_windows_BLOCKED.md |
 | P3-12 | Answer Q-tech-1 Short→Long vs Cash→Long | **done** | COMPLETE FAIL dual -58.70% vs B4 -25.19%; remove Short — outputs/experiments/Q_TECH_1_short_vs_cash_long.md |
 | P3-13 | Answer Q-tech-2 initial short % | **done** | FAIL via P3-02; 20% best return, no sweet spot — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
@@ -143,11 +144,11 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | 166 passed 2 env-fail 2026-09-15T09:00Z daily audit |
-| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03 retracted 2026-09-15 TICK FAIL |
-| M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-15T09:00Z |
+| M-01 | Run `pytest -q` | **done** | 177 passed; 1 env-fail SOXL 07-09 files; plateau skip if artifact missing 2026-09-15T23:55Z |
+| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03/W-04; Vision listing 2026-05-15 |
+| M-03 | Append `review_logs/INDEX.md` | **done** | P3-09 listing probe 2026-09-15T23:55Z |
 | M-04 | Check PR CI status | **done** | PR #8 open unmerged; main at PR #3 |
-| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P7-01..06 closed; soxl-lab extracted locally |
+| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P1-12 in_progress; P3-09/10 cannot download |
 
 ---
 
@@ -156,7 +157,9 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | ID | Task | Status | Reason |
 |----|------|--------|--------|
 | P0-01 | Merge refactor PR #8 to main | blocked | awaiting human merge |
-| P0-02 | pytest green on main after merge | blocked | depends on P0-01; branch 168 green pre-merge |
+| P0-02 | pytest green on main after merge | blocked | depends on P0-01; branch 177 green + 1 env-fail |
+| P3-09 | FAIL_F1 2025-09→10 | blocked | Vision SOXL listing 2026-05-15; window 404 |
+| P3-10 | FAIL_F2 2024-09→11 | blocked | predates listing |
 | X-01 | 3L ETF long-run grid | failed | Exp 001 — inventory loss |
 | X-02 | 3x PERP unattended SOL/PENGU/PUMP | failed | liquidations |
 | X-03 | Dual Short→Long on Gate overlap | failed | −51% vs B&H −30% |
