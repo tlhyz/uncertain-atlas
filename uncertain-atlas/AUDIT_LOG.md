@@ -4467,6 +4467,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2248 | 中 | 怎样 persist decision / 怎样写同步调用 / 怎样落决定会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2247 | 高 | 看见 The call is synchronous / 看见同步调用 会被写成已经异步 / 已经可以在返回后再改裁决，或当成已经 +2/3 precommit 决定就已经会调 Finalize interchangeable | 官方 FinalizeBlock When step 2：The call is synchronous |
 | A2246 | 高 | 看见 calls FinalizeBlock with _v_'s data / 看见同步调 Finalize 会被写成已经 persist tx outputs / AppHash / ResultsHash，或当成已经 +2/3 precommit 决定 interchangeable | 官方 FinalizeBlock When step 2：calls FinalizeBlock with _v_'s data |
+| A2254 | 记录 | 会与 362 / 361 / 478 / 472 糊成「看见 +2/3 precommit 就已经会调 Finalize、已经只有 hash、prevote 和 precommit interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When trigger Proposal block parts 2f+1 precommit 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经只有 hash / prevote 和 precommit interchangeable / 已经到了这一高就会调 Finalize 标成另一对象 |
+| A2253 | 中 | 怎样收块片 / 怎样数 2f+1 / 怎样落决定会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2252 | 高 | 看见 then decides block _v_ and finalizes consensus for height _h_ / 看见然后决定 _v_ 会被写成已经到了这一高就会调 Finalize，或当成已经 persist outputs / 已经交差 | 官方 FinalizeBlock When preamble：then _p_ decides block _v_ and finalizes consensus for height _h_ |
+| A2251 | 高 | 看见 Precommit from 2f+1 voting power precommitting same id(_v_) / 看见 2f+1 投票权对同一 id(_v_) precommit 会被写成已经 +2/3 prevote ExtendVote，或当成已经 +2/3 precommit 就可以没有 all block parts | 官方 FinalizeBlock When：Precommit messages from 2f + 1 validators' voting power … precommitting the same block id(_v_) |
+| A2250 | 高 | 看见 Proposal message with block _v_ + all its block parts from _q_ / 看见提议者 _q_ 的提案 _v_ 和全部块片 会被写成已经只有 hash，或当成已经 Process 跑过 | 官方 FinalizeBlock When：Proposal message with block _v_ … along with all its block parts, from _q_ |
+
 | A2245 | 高 | 看见 persists _v_ as the decision for height _h_ / 看见把 _v_ 落成这一高的决定 会被写成已经 Application executes block _v_，或当成已经 Finalize + Commit 那种已经交差 | 官方 FinalizeBlock When step 1：_p_ persists _v_ as the decision for height _h_ |
 
 | A2240 | 高 | 看见 must provide values for app_hash / tx_results / validator_updates / consensus_param_updates / 看见必须回四列 会被写成已经改了集合，或当成已经 Finalize + Commit 那种已经交差 | 官方 FinalizeBlock Usage：The Application must provide values … as a result of executing the block |

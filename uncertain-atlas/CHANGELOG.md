@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 611）
+
+- 不变量 479；语料 C471；模式 name-the-finwhenparts-bar；反模式 finwhenparts-sold-as-partial；L10.3 第 463 条。填 L4.4 / CometBFT 档案 FinalizeBlock When trigger Proposal block parts 2f+1 precommit 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 610）
 
 - 不变量 478；语料 C470；模式 name-the-finpersist-bar；反模式 finpersist-sold-as-commit；L10.3 第 462 条。填 L4.4 / CometBFT 档案 FinalizeBlock When persist decision / synchronous call 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
