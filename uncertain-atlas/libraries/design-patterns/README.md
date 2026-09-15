@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-verifywhen-call-bar](name-the-verifywhen-call-bar.md)
 - [name-the-verifywhen-discard-bar](name-the-verifywhen-discard-bar.md)
 - [name-the-extwhen-broadcast-bar](name-the-extwhen-broadcast-bar.md)
 - [name-the-extwhen-precommit-bar](name-the-extwhen-precommit-bar.md)
