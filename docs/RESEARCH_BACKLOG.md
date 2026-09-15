@@ -130,9 +130,10 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Log / notes |
 |----|------|--------|-------------|
-| P7-01 | Download SOXSUSDT aggTrades (detect earliest) + manifest | **in_progress** | Vision earliest 2026-07-16; 61d to 2026-09-14; overlap SOXL 07-16→09-11 |
-| P7-02 | Rolling beta / OLS hedge ratio SOXL↔SOXS vs SOXL↔SNXX | pending | BAR 1h first; tick VWAP confirm |
-| P7-03 | Same-symbol L+S grid vs pair long-grid hedge backtest | pending | Base+Conservative; vs SOXL-only + 50/50 B&H |
+| P7-01 | Download SOXSUSDT aggTrades (detect earliest) + manifest | **in_progress** | Vision 61d 2026-07-16→09-14; tick tmux `p7-soxs-ticks`; BAR klines done |
+| P7-02 | Rolling beta / OLS hedge ratio SOXL↔SOXS vs SOXL↔SNXX | **done** | PASS corr −0.988 β −0.991; SNXX was +0.45 not inverse — outputs/review_logs/2026-09-15_P7-02_soxl_soxs_beta_PASS.md |
+| P7-03 | Same-symbol L+S grid vs pair long-grid hedge backtest | **done** | CONDITIONAL PASS BAR pair +18.8%/DD −4.4% vs L+S +14.5%/−6.7% — outputs/review_logs/2026-09-15_P7-03_pair_hedge_CONDITIONAL_PASS.md |
+| P7-04 | Tick-precise pair grid + funding vs daily 50/50 B&H | **pending** | do not promote W-03 without this |
 
 ---
 
@@ -141,10 +142,10 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
 | M-01 | Run `pytest -q` | **done** | 166 passed 2 env-fail 2026-09-15T09:00Z daily audit |
-| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | date sync 2026-09-15; no verdict change |
+| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03 added 2026-09-15 |
 | M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-15T09:00Z |
 | M-04 | Check PR CI status | **done** | PR #8 open unmerged; main at PR #3 |
-| M-05 | Refresh backlog — move done, add discovered tasks | **done** | pending=0; P0 blocked only |
+| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P7 opened; P7-04 pending tick-precise |
 
 ---
 

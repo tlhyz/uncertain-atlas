@@ -61,6 +61,12 @@
 - **Contradicting:** P2-05 + P5-02 — PLATEAU_INERT; 0.40 worst Calmar 4/4
 - **Action:** Do not promote W-02; LEDGER-009 remains WEAK
 
+### W-03: SOXL long-grid + SOXS long-grid hedges better than same-symbol L+S
+- **Confidence:** LOW–MEDIUM (**BAR only**, 57d listing window)
+- **Supporting:** P7-02 corr −0.988 / β −0.991; P7-03 pair +18.8% DD −4.4% vs same-symbol L+S +14.5% DD −6.7% (Base); leftover inventory 23% vs 35%
+- **Contradicting:** Daily 50/50 B&H DD **−2.26%** beats pair grid; static 50/50 **−15%** (decay); no tick/funding/OOS
+- **Status:** Inverse relationship is real on Binance UM. SNXX is **not** a substitute (P3-17 β +0.45). **Not live.**
+
 ---
 
 ## UNTESTED (Honest)
@@ -91,6 +97,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-15 | W-03 SOXL/SOXS pair hedge CONDITIONAL PASS BAR | P7-02/03; SNXX is not inverse |
 | 2026-09-15 | Daily audit; no verdict change | P6 idle; PR #8 blocked; pytest 166/168 env |
 | 2026-09-14 | P6 complete; all LIVE rows LOW | P6-05 final audit; SOL demoted |
 | 2026-09-14 | ETH LIVE row MEDIUM→LOW | P6-03 promotion gate FAIL (6 blocking) |

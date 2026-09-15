@@ -488,3 +488,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-15T20:51Z | timer 2051Z | no change; PR #8 blocked; pending=0; skip duplicate log
 2026-09-15T21:17Z | timer 2117Z | no change; PR #8 blocked; pending=0; skip duplicate log
 2026-09-15T21:34Z | timer 2134Z | no change; PR #8 blocked; pending=0; skip duplicate log
+2026-09-15T21:55Z | P7-02/03 | SOXS listed 2026-07-16; corr −0.988; pair grid CONDITIONAL PASS BAR; ticks downloading
