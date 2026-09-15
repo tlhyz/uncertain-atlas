@@ -134,7 +134,8 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-02 | Rolling beta / OLS hedge ratio SOXL↔SOXS vs SOXL↔SNXX | **done** | PASS corr −0.988 β −0.991; SNXX was +0.45 not inverse — outputs/review_logs/2026-09-15_P7-02_soxl_soxs_beta_PASS.md |
 | P7-03 | Same-symbol L+S grid vs pair long-grid hedge backtest | **done** | BAR CONDITIONAL PASS **overturned by P7-04 TICK** — outputs/review_logs/2026-09-15_P7-03_pair_hedge_CONDITIONAL_PASS.md |
 | P7-04 | Tick-precise pair grid + funding vs daily 50/50 B&H | **done** | **FAIL** default 0.40/±5 pair −6.0%/DD −20%; all sweep FAIL — outputs/review_logs/2026-09-15_P7-04_tick_pair_hedge_FAIL.md |
-| P7-05 | User SOXL L+S: 5x, ±20U **and** ±20%, 200-grid moving, 5k+5k, daily PnL | **in_progress** | tick both legs |
+| P7-05 | User SOXL L+S: 5x, ±20U **and** ±20%, 200-grid moving, 5k+5k, daily PnL | **done** | **FAIL** both: ±20U −12.8%/DD −80% long liq; ±20% −18.7%/DD −77% long liq — outputs/review_logs/2026-09-15_P7-05_user_soxl_ls_grid_FAIL.md |
+| P7-06 | Classify SOXL ticks/params/results; 3-pass audit; extractable private lab | **done** | `soxl-lab/`; verify --times 3 all ok; remote not creatable here — outputs/review_logs/2026-09-15_soxl_lab_3pass_PASS.md |
 
 ---
 
@@ -146,7 +147,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03 retracted 2026-09-15 TICK FAIL |
 | M-03 | Append `review_logs/INDEX.md` | **done** | daily audit 2026-09-15T09:00Z |
 | M-04 | Check PR CI status | **done** | PR #8 open unmerged; main at PR #3 |
-| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P7-01..04 closed; no new grid sweeps |
+| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P7-01..06 closed; soxl-lab extracted locally |
 
 ---
 

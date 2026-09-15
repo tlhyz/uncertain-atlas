@@ -1,0 +1,265 @@
+{
+  "generated": "2026-09-15",
+  "coverage": {
+    "SOXLUSDT": {
+      "symbol": "SOXLUSDT",
+      "data_class": "TICK",
+      "n_bars": 1392,
+      "bars_with_trades": 1392,
+      "bars_missing_trades": 0,
+      "coverage": 1.0,
+      "empty_days": [],
+      "median_close_rel_err": 0.0,
+      "p99_close_rel_err": 6.932855771368025e-05,
+      "median_high_gap": 0.0,
+      "median_low_gap": 0.0,
+      "pass": true
+    },
+    "SOXSUSDT": {
+      "symbol": "SOXSUSDT",
+      "data_class": "TICK",
+      "n_bars": 1383,
+      "bars_with_trades": 1383,
+      "bars_missing_trades": 0,
+      "coverage": 1.0,
+      "empty_days": [],
+      "median_close_rel_err": 0.0,
+      "p99_close_rel_err": 0.0,
+      "median_high_gap": 0.0,
+      "median_low_gap": 0.0,
+      "pass": true
+    }
+  },
+  "default_grid": {
+    "atr_step": 0.4,
+    "atr_range": 5.0
+  },
+  "reports": {
+    "base": {
+      "data_class": "TICK",
+      "n_bars": 1383,
+      "start": "2026-07-16 09:00:00+00:00",
+      "end": "2026-09-11 23:00:00+00:00",
+      "atr_step": 0.4,
+      "atr_range": 5.0,
+      "fill_engine": "tick",
+      "fee_preset": "base",
+      "diagnostics": {
+        "n_bars": 1383,
+        "corr_1h": -0.9875691256305054,
+        "beta_soxs_on_soxl": -0.990941843821349,
+        "beta_soxl_on_soxs": -0.985633758082576,
+        "ols_hedge_ratio": 0.985633758082576,
+        "residual_vol_1to1": 0.002553209131155687,
+        "residual_vol_ols": 0.0025415044581074014,
+        "soxl_vol": 0.016168674636859618,
+        "soxs_vol": 0.016212154007055526,
+        "product_vol_1to1": 0.002553209131155687
+      },
+      "inverse_gate": true,
+      "strategies": {
+        "soxl_only_long_grid": {
+          "label": "long_grid",
+          "return": 0.09294857771169296,
+          "max_dd": -0.4523858193921777,
+          "calmar": 1.6724384645707098,
+          "end_equity": 10929.329641605827,
+          "end_qty": 70.30240477626596,
+          "end_inventory_notional": 8597.984104137327,
+          "inventory_frac": 0.8597984104137327,
+          "turnover": 155899.12438535778,
+          "fills": 258,
+          "fee_preset": "base",
+          "fill_engine": "tick",
+          "atr_step": 0.4,
+          "atr_range": 5.0
+        },
+        "same_symbol_long_short": {
+          "label": "same_symbol_long_short",
+          "return": 0.12265694723873422,
+          "max_dd": -0.1768218024214585,
+          "calmar": 6.119624869918716,
+          "end_equity": 11238.508133282518,
+          "end_inventory_notional": 7811.459061185496,
+          "inventory_frac": 0.7803160952600082,
+          "net_qty_units": 6.4311123708244615,
+          "fills": 2193,
+          "turnover": 844198.5823032882
+        },
+        "pair_soxl_soxs_long_grids": {
+          "label": "pair_soxl_soxs_long_grids",
+          "return": -0.059711155429567175,
+          "max_dd": -0.2006603284068864,
+          "calmar": 1.6102738604791598,
+          "end_equity": 9421.210691365435,
+          "end_inventory_notional": 8495.634628483218,
+          "inventory_frac": 0.8479112430879385,
+          "net_qty_units": 130.57281622202464,
+          "fills": 371,
+          "turnover": 117403.52987492674
+        },
+        "bh_soxl": {
+          "label": "bh_soxl",
+          "return": -0.19861083808400515,
+          "max_dd": -0.47301986121081596,
+          "calmar": 1.5945361278481658,
+          "end_equity": 8013.891619159948
+        },
+        "bh_50_50_static": {
+          "label": "bh_50_50_static",
+          "return": -0.1504383033040969,
+          "max_dd": -0.2023328138069218,
+          "calmar": 3.1839191111723584,
+          "end_equity": 8495.61696695903
+        },
+        "bh_50_50_daily": {
+          "label": "bh_50_50_daily",
+          "return": 0.029391248512844248,
+          "max_dd": -0.02264370545918526,
+          "calmar": 8.90107853741462,
+          "end_equity": 10293.912485128443
+        }
+      },
+      "pair_vs_soxl_return_corr": 0.705902337961783,
+      "verdict": "FAIL",
+      "reason": "pair does not improve on same-symbol long+short inventory hedge",
+      "pair_beats_same_dd": false,
+      "pair_beats_soxl_dd": true,
+      "pair_beats_bh_return": true
+    },
+    "conservative": {
+      "data_class": "TICK",
+      "n_bars": 1383,
+      "start": "2026-07-16 09:00:00+00:00",
+      "end": "2026-09-11 23:00:00+00:00",
+      "atr_step": 0.4,
+      "atr_range": 5.0,
+      "fill_engine": "tick",
+      "fee_preset": "conservative",
+      "diagnostics": {
+        "n_bars": 1383,
+        "corr_1h": -0.9875691256305054,
+        "beta_soxs_on_soxl": -0.990941843821349,
+        "beta_soxl_on_soxs": -0.985633758082576,
+        "ols_hedge_ratio": 0.985633758082576,
+        "residual_vol_1to1": 0.002553209131155687,
+        "residual_vol_ols": 0.0025415044581074014,
+        "soxl_vol": 0.016168674636859618,
+        "soxs_vol": 0.016212154007055526,
+        "product_vol_1to1": 0.002553209131155687
+      },
+      "inverse_gate": true,
+      "strategies": {
+        "soxl_only_long_grid": {
+          "label": "long_grid",
+          "return": 0.110552465567896,
+          "max_dd": -0.4491851264376282,
+          "calmar": 2.1011804308679096,
+          "end_equity": 11104.969450817423,
+          "end_qty": 71.69529967178275,
+          "end_inventory_notional": 8768.33514985903,
+          "inventory_frac": 0.8768335149859029,
+          "turnover": 184135.1222801982,
+          "fills": 292,
+          "fee_preset": "conservative",
+          "fill_engine": "tick",
+          "atr_step": 0.4,
+          "atr_range": 5.0
+        },
+        "same_symbol_long_short": {
+          "label": "same_symbol_long_short",
+          "return": 0.11618702547392745,
+          "max_dd": -0.17855039307732545,
+          "calmar": 5.64090173527766,
+          "end_equity": 11173.078233866268,
+          "end_inventory_notional": 7896.634584046346,
+          "inventory_frac": 0.7888713283063846,
+          "net_qty_units": 7.127559818582856,
+          "fills": 2227,
+          "turnover": 858316.5812507083
+        },
+        "pair_soxl_soxs_long_grids": {
+          "label": "pair_soxl_soxs_long_grids",
+          "return": -0.051147206431913506,
+          "max_dd": -0.2005546798977348,
+          "calmar": 1.411477398590248,
+          "end_equity": 9506.525818221773,
+          "end_inventory_notional": 8580.558465074206,
+          "inventory_frac": 0.8564313636380448,
+          "net_qty_units": 131.26354092603896,
+          "fills": 411,
+          "turnover": 133541.59519052357
+        },
+        "bh_soxl": {
+          "label": "bh_soxl",
+          "return": -0.19861083808400515,
+          "max_dd": -0.47301986121081596,
+          "calmar": 1.5945361278481658,
+          "end_equity": 8013.891619159948
+        },
+        "bh_50_50_static": {
+          "label": "bh_50_50_static",
+          "return": -0.1504383033040969,
+          "max_dd": -0.2023328138069218,
+          "calmar": 3.1839191111723584,
+          "end_equity": 8495.61696695903
+        },
+        "bh_50_50_daily": {
+          "label": "bh_50_50_daily",
+          "return": 0.029391248512844248,
+          "max_dd": -0.02264370545918526,
+          "calmar": 8.90107853741462,
+          "end_equity": 10293.912485128443
+        }
+      },
+      "pair_vs_soxl_return_corr": 0.6634063879853225,
+      "verdict": "FAIL",
+      "reason": "pair does not improve on same-symbol long+short inventory hedge",
+      "pair_beats_same_dd": false,
+      "pair_beats_soxl_dd": true,
+      "pair_beats_bh_return": true
+    }
+  },
+  "sweep": [
+    {
+      "atr_step": 0.4,
+      "atr_range": 3.0,
+      "verdict": "FAIL",
+      "pair_return": -0.04747340365420405,
+      "pair_max_dd": -0.1263778146230251,
+      "pair_inventory_frac": 0.4937530056041583,
+      "same_ls_max_dd": -0.07754859800030289,
+      "daily_bh_max_dd": -0.02264370545918526
+    },
+    {
+      "atr_step": 0.5,
+      "atr_range": 5.0,
+      "verdict": "FAIL",
+      "pair_return": 0.10390842817365309,
+      "pair_max_dd": -0.176388771675123,
+      "pair_inventory_frac": 0.6200369345092029,
+      "same_ls_max_dd": -0.16475288749843364,
+      "daily_bh_max_dd": -0.02264370545918526
+    },
+    {
+      "atr_step": 0.4,
+      "atr_range": 5.0,
+      "verdict": "FAIL",
+      "pair_return": -0.059711155429567175,
+      "pair_max_dd": -0.2006603284068864,
+      "pair_inventory_frac": 0.8479112430879385,
+      "same_ls_max_dd": -0.1768218024214585,
+      "daily_bh_max_dd": -0.02264370545918526
+    },
+    {
+      "atr_step": 0.3,
+      "atr_range": 3.0,
+      "verdict": "FAIL",
+      "pair_return": -0.14769680368044014,
+      "pair_max_dd": -0.21052691350459118,
+      "pair_inventory_frac": 0.7636274232708619,
+      "same_ls_max_dd": -0.13446453084830745,
+      "daily_bh_max_dd": -0.02264370545918526
+    }
+  ]
+}

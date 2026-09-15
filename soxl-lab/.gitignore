@@ -1,0 +1,12 @@
+# Never commit raw ticks or secrets
+cache/
+*.csv.gz
+data/raw/
+.env
+.env.*
+*.pem
+*.key
+.venv/
+__pycache__/
+.pytest_cache/
+.audit_tmp/

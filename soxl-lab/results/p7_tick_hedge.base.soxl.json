@@ -1,0 +1,71 @@
+{
+  "class": "TICK",
+  "window": {
+    "start": "2026-07-16 09:00:00+00:00",
+    "end": "2026-09-11 23:00:00+00:00",
+    "n_bars": 1383
+  },
+  "grid": {
+    "atr_step": 0.4,
+    "atr_range": 5.0,
+    "fee_preset": "base"
+  },
+  "soxl_only_long_grid": {
+    "label": "long_grid",
+    "return": 0.09294857771169296,
+    "max_dd": -0.4523858193921777,
+    "calmar": 1.6724384645707098,
+    "end_equity": 10929.329641605827,
+    "end_qty": 70.30240477626596,
+    "end_inventory_notional": 8597.984104137327,
+    "inventory_frac": 0.8597984104137327,
+    "turnover": 155899.12438535778,
+    "fills": 258,
+    "fee_preset": "base",
+    "fill_engine": "tick",
+    "atr_step": 0.4,
+    "atr_range": 5.0
+  },
+  "same_symbol_long_short": {
+    "label": "same_symbol_long_short",
+    "return": 0.12265694723873422,
+    "max_dd": -0.1768218024214585,
+    "calmar": 6.119624869918716,
+    "end_equity": 11238.508133282518,
+    "end_inventory_notional": 7811.459061185496,
+    "inventory_frac": 0.7803160952600082,
+    "net_qty_units": 6.4311123708244615,
+    "fills": 2193,
+    "turnover": 844198.5823032882
+  },
+  "bh_soxl": {
+    "label": "bh_soxl",
+    "return": -0.19861083808400515,
+    "max_dd": -0.47301986121081596,
+    "calmar": 1.5945361278481658,
+    "end_equity": 8013.891619159948
+  },
+  "negative_control_pair": {
+    "pair_soxl_soxs_long_grids": {
+      "label": "pair_soxl_soxs_long_grids",
+      "return": -0.059711155429567175,
+      "max_dd": -0.2006603284068864,
+      "calmar": 1.6102738604791598,
+      "end_equity": 9421.210691365435,
+      "end_inventory_notional": 8495.634628483218,
+      "inventory_frac": 0.8479112430879385,
+      "net_qty_units": 130.57281622202464,
+      "fills": 371,
+      "turnover": 117403.52987492674
+    },
+    "bh_50_50_daily": {
+      "label": "bh_50_50_daily",
+      "return": 0.029391248512844248,
+      "max_dd": -0.02264370545918526,
+      "calmar": 8.90107853741462,
+      "end_equity": 10293.912485128443
+    },
+    "verdict": "FAIL",
+    "note": "pair is out of scope except as FAIL control; short leg of same-LS was BAR in this run"
+  }
+}

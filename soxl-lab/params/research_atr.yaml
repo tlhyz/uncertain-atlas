@@ -1,0 +1,7 @@
+# Research-template ATR grid used in P7-03/P7-04 (not the user's 200-rung spec)
+symbol: SOXLUSDT
+atr_step: 0.40
+atr_range: 5.0
+leverage: 1.0
+capital_usdt: 10000
+note: LIVE_CANDIDATES Tech template. P7-04 TICK pair hedge FAIL. Same-symbol L+S short leg was BAR-only in that run.

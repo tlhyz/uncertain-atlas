@@ -67,6 +67,12 @@
 - **Contradicting (grids):** P7-04 tick 0.40/±5 pair **−6.0% / DD −20%** vs same-symbol L+S +12.3% / −17.7%; pair vs SOXL corr **+0.71**; all ATR sweeps FAIL; daily 50/50 DD **−2.3%**
 - **Status:** Inverse **marks** ≠ grid hedge. Do not deploy pair grids. Honest hedge = daily 50/50 rebalance, no grid. SNXX is still not an inverse.
 
+### W-04: User SOXL 5x ±20U / ±20% 200-grid 5k+5k is tradeable
+- **Confidence:** **FAIL** (P7-05 TICK both legs)
+- **Supporting:** None
+- **Contradicting:** ±20U **−12.78% / DD −80.16%**; ±20% **−18.65% / DD −77.16%**; long sleeve liquidated in both; leftover is a naked short
+- **Status:** Do not live this book. Classified in `soxl-lab/`.
+
 ---
 
 ## UNTESTED (Honest)
@@ -97,6 +103,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-15 | W-04 user 5x ±20U/±20% FAIL; soxl-lab 3-pass | P7-05/06; long liquidated both modes |
 | 2026-09-15 | W-03 grid hedge FAIL (TICK); BAR P7-03 overturned | P7-01/04; daily 50/50 is the hedge |
 | 2026-09-15 | W-03 SOXL/SOXS pair hedge CONDITIONAL PASS BAR | P7-02/03; SNXX is not inverse |
 | 2026-09-15 | Daily audit; no verdict change | P6 idle; PR #8 blocked; pytest 166/168 env |
