@@ -1,3 +1,7 @@
+## 2026-09-16（续 717）
+
+- 不变量 600；语料 C577；模式 name-the-finresp-notgates-bar；反模式 finresp-notgates-sold-as-bundled；L10.3 第 569 条。填 L4.4 / CometBFT 档案 Finalize 回包义务 not four gates settled 正式三事（363 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。363 finresp unbundling 启动（600 item 1）。
+
 ## 2026-09-16（续 716）
 
 - 不变量 599；语料 C576；模式 name-the-finempty-notcparam-bar；反模式 finempty-notcparam-sold-as-bundled；L10.3 第 568 条。填 L4.4 / CometBFT 档案 FinalizeBlock empty consensus_param_updates keep current not H+1 effective 正式三事（458 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。458 finempty unbundling 完成（599 item 3）。
