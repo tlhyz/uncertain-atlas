@@ -1,3 +1,7 @@
+## 2026-09-16（续 692）
+
+- 不变量 560；语料 C552；模式 name-the-finnewdec-notproposed-bar；反模式 finnewdec-notproposed-sold-as-bundled；L10.3 第 544 条。填 L4.4 / CometBFT 档案 FinalizeBlock newly decided block not proposed block 正式三事（474 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。474 Contains newly decided block fields unbundling 续（560）。
+
 ## 2026-09-16（续 691）
 
 - 不变量 559；语料 C551；模式 name-the-finnewdec-notsettled-bar；反模式 finnewdec-notsettled-sold-as-bundled；L10.3 第 543 条。填 L4.4 / CometBFT 档案 FinalizeBlock Contains newly decided block fields not already settled 正式三事（474 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。474 Contains newly decided block fields unbundling 启动（559）。
