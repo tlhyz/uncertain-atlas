@@ -1,32 +1,33 @@
 symbol: SOXLUSDT
-local_tick_cache:
+vision_listing: "2026-05-15"
+local_full_cache:
+  start: "2026-05-15"
+  end: "2026-09-11"
+  days: 120
+  gaps: []
+  bytes: 3265883206
+audited_p7_window:
   start: "2026-07-15"
   end: "2026-09-11"
   days: 59
-  gaps: []
   rows: 31190286
   bytes: 1646097593
   price_min: 85.94
   price_max: 191.10
   daily_median_min: 101.96
   daily_median_max: 165.41
-overlap_soxs:
-  start: "2026-07-16"
-  end: "2026-09-11"
-  soxl_1h_bars: 1392
-  soxl_1h_bars_with_trades: 1392
-  soxl_1h_missing_trades: 0
 user_grid_window:
   start: "2026-07-16"
   end: "2026-09-11"
-  note: P7-05 daily PnL starts the first UTC day with a last hourly bar
-repo_manifest_on_disk:
+  days: 58
+  soxl_1h_bars: 1392
+  soxl_1h_bars_with_trades: 1392
+  soxl_1h_missing_trades: 0
+repo_manifest_audited:
   path: data/manifests/binance_SOXLUSDT_aggTrades_2026-07-15_2026-09-11.json
-  sha_sample: first_mid_last
 repo_manifest_historical:
   path: data/manifests/binance_SOXLUSDT_aggTrades_2026-07-09_2026-09-11.json
-  note: lists 2026-07-09→07-14 that are NOT on this VM
-vision_listing: "2026-05-15"
+  note: 07-09→07-14 now on this VM (P1-12)
 blocked_research_windows:
   - id: P3-09
     need: "2025-09→10 aggTrades"
@@ -34,6 +35,3 @@ blocked_research_windows:
   - id: P3-10
     need: "2024-09→11 aggTrades"
     status: not_on_binance_um_vision
-  - id: P1-12
-    need: "2026-05-15→07-14 local cache"
-    status: downloading

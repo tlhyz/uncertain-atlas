@@ -103,6 +103,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-16 | Local SOXL ticks 120d 2026-05-15→09-11; lab drawers | P1-12; soxl-lab README 看板 |
 | 2026-09-15 | SOXL UM Vision listing 2026-05-15; FAIL_F1/F2 404 | P3-09 probe; DATA_POLICY corrected |
 | 2026-09-15 | W-04 user 5x ±20U/±20% FAIL; soxl-lab 3-pass | P7-05/06; long liquidated both modes |
 | 2026-09-15 | W-03 grid hedge FAIL (TICK); BAR P7-03 overturned | P7-01/04; daily 50/50 is the hedge |

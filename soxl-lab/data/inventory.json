@@ -1,0 +1,29 @@
+{
+  "symbol": "SOXLUSDT",
+  "venue": "binance_um_vision_aggTrades",
+  "listing": "2026-05-15",
+  "local_full": {
+    "start": "2026-05-15",
+    "end": "2026-09-11",
+    "days": 120,
+    "gaps": [],
+    "bytes": 3265883206
+  },
+  "audited_p7_window": {
+    "start": "2026-07-15",
+    "end": "2026-09-11",
+    "days": 59,
+    "rows": 31190286,
+    "bytes": 1646097593
+  },
+  "user_grid_pnl_window": {
+    "start": "2026-07-16",
+    "end": "2026-09-11",
+    "days": 58,
+    "bars_1h": 1392
+  },
+  "not_on_vision": [
+    "2024-09-01..2024-11-30 FAIL_F2",
+    "2025-09-01..2025-10-31 FAIL_F1"
+  ]
+}

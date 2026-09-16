@@ -1,14 +1,11 @@
-# SOXL data inventory (this VM)
+# 库存（和 README 同一套数）
 
-Classified. Tick CSVs stay on disk. Only manifests and coverage live in git.
+机器可读：[`inventory.json`](inventory.json)
 
-| Class | What | Location | Git? | Independent recount 2026-09-15 |
-|-------|------|----------|------|--------------------------------|
-| TICK raw | 59 daily aggTrades CSV | `../../cache/binance_futures_SOXLUSDT_aggTrades_YYYY-MM-DD.csv` | **no** | 59 files, 0 gaps, 31,190,286 rows, 1,646,097,593 bytes |
-| TICK schema | columns + price span | `SCHEMA.md` | yes | min 85.94 / max 191.10 |
-| TICK manifest (local) | sha256 + bytes | `manifests/binance_SOXLUSDT_aggTrades_2026-07-15_2026-09-11.json` | yes | 59 records; first/mid/last sha256 match |
-| TICK manifest (historical) | 2026-07-09 listing | `manifests/binance_SOXLUSDT_aggTrades_2026-07-09_2026-09-11.json` | yes | 07-09→07-14 **absent** on this VM |
-| BAR 1h | Vision klines | `../../cache/binance_futures_SOXLUSDT_1h_2026-07-16_2026-09-11_klines.csv` | no | 1392 bars |
-| Coverage | TICK vs 1h | `../results/p7_tick_coverage.soxl.json` | yes | 1392/1392, miss 0 |
+| 层 | 起止 | 天 | 字节 | Git |
+|----|------|----|------|-----|
+| 全量本机 | 2026-05-15→09-11 | 120 / 0 缺口 | 3,265,883,206 | 否（CSV） |
+| 已复核窗 | 2026-07-15→09-11 | 59 / 31,190,286 笔 | 1,646,097,593 | 清单是 |
+| 上市前 | <2026-05-15 | — | — | 交易所 404 |
 
-**Do not commit tick CSVs.** Rebuild with `../../scripts/download_soxl_overlap_ticks.py`.
+重建：`../../scripts/download_soxl_listing_prefix.py` + 已有 07-15→09-11 缓存。

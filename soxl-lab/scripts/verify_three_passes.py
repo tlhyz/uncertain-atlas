@@ -23,12 +23,12 @@ ROOT = Path(__file__).resolve().parents[1]
 PARENT = Path(os.environ.get("SOXLLAB_PARENT", ROOT.parent))
 CACHE = Path(os.environ.get("SOXLLAB_CACHE", PARENT / "cache"))
 MANIFEST = ROOT / "data" / "manifests" / "binance_SOXLUSDT_aggTrades_2026-07-15_2026-09-11.json"
-TICK_COV = ROOT / "results" / "p7_tick_coverage.soxl.json"
-TICK_HEDGE = ROOT / "results" / "p7_tick_hedge_report.json"
-P705_JSON = ROOT / "results" / "p7_05_usdt20.json"
-P705_CSV = ROOT / "results" / "p7_05_usdt20_daily.csv"
-P705_PCT_JSON = ROOT / "results" / "p7_05_pct20.json"
-P705_PCT_CSV = ROOT / "results" / "p7_05_pct20_daily.csv"
+TICK_COV = ROOT / "results" / "04-coverage" / "p7_tick_coverage.soxl.json"
+TICK_HEDGE = ROOT / "results" / "02-research-atr" / "p7_tick_hedge_report.json"
+P705_JSON = ROOT / "results" / "01-yours-5x" / "p7_05_usdt20.json"
+P705_CSV = ROOT / "results" / "01-yours-5x" / "p7_05_usdt20_daily.csv"
+P705_PCT_JSON = ROOT / "results" / "01-yours-5x" / "p7_05_pct20.json"
+P705_PCT_CSV = ROOT / "results" / "01-yours-5x" / "p7_05_pct20_daily.csv"
 REVIEW = PARENT / "outputs" / "review_logs" / "2026-09-15_P7-04_tick_pair_hedge_FAIL.md"
 CODE = PARENT / "src" / "analysis" / "user_moving_grid.py"
 RUNNER = PARENT / "scripts" / "run_p7_user_soxl_ls_grid.py"
@@ -62,11 +62,11 @@ def pass1_data() -> list[str]:
     if not files:
         errs.append("cache absent — sha256 sample skipped (set SOXLLAB_CACHE)")
         return errs
-    if len(files) != 59:
-        errs.append(f"expected 59 SOXL day files, got {len(files)}")
     days = [re.search(r"(\d{4}-\d{2}-\d{2})", f.name).group(1) for f in files]  # type: ignore[union-attr]
-    if days[0] != "2026-07-15" or days[-1] != "2026-09-11":
-        errs.append(f"day span {days[0]}->{days[-1]} != 2026-07-15->2026-09-11")
+    if days[0] != "2026-05-15" or days[-1] != "2026-09-11":
+        errs.append(f"day span {days[0]}->{days[-1]} != 2026-05-15->2026-09-11")
+    if len(files) != 120:
+        errs.append(f"expected 120 SOXL day files, got {len(files)}")
     d0, d1 = date.fromisoformat(days[0]), date.fromisoformat(days[-1])
     have = set(days)
     miss = []
@@ -77,11 +77,14 @@ def pass1_data() -> list[str]:
         d += timedelta(days=1)
     if miss:
         errs.append(f"gap days {miss}")
-    if len(man["files"]) != len(files):
-        errs.append(f"manifest files {len(man['files'])} vs cache {len(files)}")
-    bytes_total = sum(f.stat().st_size for f in files)
-    if bytes_total != 1_646_097_593:
-        errs.append(f"bytes_total {bytes_total}")
+    audited = [f for f, day in zip(files, days) if "2026-07-15" <= day <= "2026-09-11"]
+    if len(audited) != 59:
+        errs.append(f"audited 59-day subset got {len(audited)}")
+    audited_bytes = sum(f.stat().st_size for f in audited)
+    if audited_bytes != 1_646_097_593:
+        errs.append(f"audited_bytes {audited_bytes}")
+    if sum(f.stat().st_size for f in files) != 3_265_883_206:
+        errs.append(f"full_bytes {sum(f.stat().st_size for f in files)}")
     sample_idx = [0, len(man["files"]) // 2, len(man["files"]) - 1]
     for i in sample_idx:
         rec = man["files"][i]
@@ -101,7 +104,7 @@ def pass1_data() -> list[str]:
 
 def pass2_params() -> list[str]:
     errs: list[str] = []
-    text = (ROOT / "params" / "user_moving_grid.yaml").read_text()
+    text = (ROOT / "params" / "01_yours_moving_grid.yaml").read_text()
     for needle in (
         "leverage: 5",
         "n_grids: 200",

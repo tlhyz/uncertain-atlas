@@ -498,3 +498,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-15T23:39Z | timer 2339Z | no change; pending=0; P7 FAIL closed; PR #8 blocked; skip duplicate log
 2026-09-15T23:55Z | P7-05/06 | user 5x ±20U/±20% FAIL (long liq); soxl-lab 3-pass ok; extractable private tree; gh cannot create remote
 2026-09-15T23:55Z | P3-09/P1-12 | Vision SOXL listing 2026-05-15; FAIL_F1/F2 404; started 05-15→07-14 download
+2026-09-16T00:05Z | P1-12 + lab | 120d cache 05-15→09-11; soxl-lab drawers 01–04; Chinese dashboard

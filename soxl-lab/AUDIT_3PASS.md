@@ -16,7 +16,8 @@ Machine logs: `results/audit/run_1.json`, `run_2.json`, `run_3.json`, `three_pas
 
 Recounted before trusting the script:
 
-- `wc`-equivalent row sum across 59 CSVs = **31,190,286** (matches manifest `rows`)
+- Full local cache is now **120** days 2026-05-15→09-11 (3,265,883,206 bytes, 0 gaps). Audited P7 window is still the 59 days below.
+- `wc`-equivalent row sum across those 59 CSVs = **31,190,286** (matches manifest `rows`)
 - Price min/max over all prints = **85.94 / 191.10**
 - 1h kline file = **1392** bars, 2026-07-16 00:00Z → 2026-09-11 23:00Z
 - P7-05 daily CSVs: 58 UTC days each; last equity / cum_ret / win-days match `summary.json`
