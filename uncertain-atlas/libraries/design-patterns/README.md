@@ -1,3 +1,4 @@
+- [`name-the-finharddet-notnondet-bar.md`](name-the-finharddet-notnondet-bar.md) — FinalizeBlockResponse MUST be deterministic not next_block_delay nondet / not 印进本头 / not finharddet bundled 正式三事（476 余量）（不变量 622）
 - [`name-the-finharddet-nothardcoded-bar.md`](name-the-finharddet-nothardcoded-bar.md) — FinalizeBlockResponse app_hash may be hard-coded not Merkle root / not settled / not finharddet bundled 正式三事（476 余量）（不变量 621）
 - [`name-the-finharddet-notempty-bar.md`](name-the-finharddet-notempty-bar.md) — FinalizeBlockResponse app_hash may be empty not no state root / not settled / not finharddet bundled 正式三事（476 余量）（不变量 620）
 - [`name-the-fndelay-notsetzero-bar.md`](name-the-fndelay-notsetzero-bar.md) — FinalizeBlockResponse next_block_delay Set to 0 not decided / not block interval / not fndelay bundled 正式三事（589 余量）（不变量 619）

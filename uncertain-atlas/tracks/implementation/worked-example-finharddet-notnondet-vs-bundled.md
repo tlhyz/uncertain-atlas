@@ -1,0 +1,48 @@
+# 例：看见 `FinalizeBlockResponse` MUST be deterministic / 看见禁止非确定源 is not already next_block_delay 非确定 interchangeable / 整包 Response 非确定 interchangeable / 已经 settled interchangeable；不是已经 FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 bundled（476） interchangeable / 已经 finharddet bundled interchangeable
+
+**层次**：实现 / FinalizeBlockResponse MUST be deterministic not next_block_delay nondet / not 印进本头 / not finharddet bundled 正式三事（476 余量）。  
+**分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
+**来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) FinalizeBlock Usage。  
+**对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「FinalizeBlockResponse MUST be deterministic not next_block_delay nondet / not 印进本头 / not finharddet bundled 正式三事（476 余量）/ not 622 notnondet interchangeable / not 589 fndelay interchangeable / not 618 notwallclock interchangeable / not 470 findet interchangeable / not 147 apphash vs this block interchangeable / not 620 notempty interchangeable / not 621 nothardcoded interchangeable」，不是 FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 bundled（476），也不是 FinalizeBlock Usage determinism bundled（470），也不是 next_block_delay 非确定 bundled（589）。不要另写怎样挑空根、怎样写死常量、怎样测确定性。
+
+## 官方三件事
+
+规范把 FinalizeBlock Usage 里 `FinalizeBlockResponse` MUST be deterministic（禁止 RNG / 当前时间等非确定源填充 response 字段）和「已经是 next_block_delay 非确定 interchangeable / 已经是整包 Response 非确定 interchangeable / 已经是已经 settled interchangeable / 已经是 finharddet bundled interchangeable」分开写成三件独立的实现事，不是「看见 MUST be deterministic 就已经 next_block_delay 非确定、就已经整包非确定、就已经 settled、就已经 finharddet bundled interchangeable」一件事：
+
+1. **看见 `FinalizeBlockResponse` MUST be deterministic / 看见禁止非确定源 is not already next_block_delay 非确定 interchangeable / 整包 Response 非确定 interchangeable / 589 fndelay interchangeable / 618 notwallclock interchangeable / 611 notproctime interchangeable / 470 findet bundled interchangeable，也不是已经 FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 bundled（476） interchangeable / 622 notnondet interchangeable / 476 finharddet interchangeable / 589 fndelay interchangeable / 52 post-commit nondet interchangeable，也不是已经 FinalizeBlockResponse next_block_delay each node MAY / wallclock not app_hash MUST be deterministic bundled（589 item 2 余量 / 618） interchangeable / 618 notwallclock interchangeable / 617 notslot interchangeable / 619 notsetzero interchangeable / 432 finrespend interchangeable，也不是已经 FinalizeBlockResponse next_block_delay Deterministic = No not slot bundled（589 item 1 余量 / 617） interchangeable / 617 notslot interchangeable / 385 block interval interchangeable / 613 notaftercommit interchangeable / 480 finmorepre interchangeable，也不是已经 FinalizeBlock Usage determinism bundled（470 余量） interchangeable / 470 findet interchangeable / 580 findet not apphash interchangeable / 581 findet not replication interchangeable。**  
+   官方 Usage 写：The fields in **FinalizeBlockResponse** MUST be deterministic. That is, the application MUST NOT use non-deterministic sources of information like random number generators or the current time to populate the fields in **FinalizeBlockResponse**。Response 表也写：`next_block_delay` Deterministic = No。看见 MUST be deterministic，不是已经 next_block_delay 非确定就代表整包 finharddet 失败 interchangeable——476 bundled 第三件事常被写成「看见 589 fndelay 就已经 finharddet 整包非确定 interchangeable」，本页从 476 item 3 侧钉 not next_block_delay nondet 单句。看见禁止非确定源，不是已经 589 fndelay / 618 notwallclock 单轴就等于 item 3 已证 interchangeable——618 另钉 each node MAY / wallclock not app_hash MUST be deterministic，本页钉 item 3 第一件事。看见 MUST be deterministic，不是已经 FinalizeBlock Usage determinism bundled（470） interchangeable——470 钉 executes txs / app_hash / implementation 三事，本页钉 476 item 3 禁止非确定源单句。
+2. **看见 `FinalizeBlockResponse` MUST be deterministic / 看见禁止非确定源 is not already 已经 settled interchangeable / 已经印进本头 interchangeable / 147 apphash vs this block interchangeable / 614 notheader interchangeable / 601 notsettled interchangeable / 580 findet not apphash interchangeable，也不是已经 FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 bundled（476） interchangeable / 622 notnondet interchangeable / 476 finharddet interchangeable / 335 finpersist interchangeable / 587 finreturn interchangeable，也不是已经 app_hash MUST be deterministic not 印进本头 bundled（470 item 2 余量 / 580） interchangeable / 580 findet not apphash interchangeable / 581 findet not replication interchangeable / 404 finapphash interchangeable / 475 finmerkle interchangeable，也不是已经 Application calculates and returns AppHash not printed in this header bundled（614 余量） interchangeable / 614 notheader interchangeable / 587 finreturn item 1 interchangeable / 470 findet not apphash interchangeable / 147 apphash vs this block interchangeable，也不是已经 本头 AppHash ≠ 本高度交易已经交差 bundled（147 余量） interchangeable / 147 apphash vs this block interchangeable / 33 four gates interchangeable / 601 notsettled interchangeable。**  
+   官方把 MUST be deterministic 和已经 settled / 印进本头分开——476 item 3 常与 147 / 470 混成「看见 MUST be deterministic 就已经 settled interchangeable」，本页钉 not 印进本头 单句。看见禁止非确定源，不是已经本头 AppHash 就代表 item 3 已证（147） interchangeable——147 钉本头 AppHash vs 本高度交差，本页钉 476 item 3 第二件事。看见 MUST be deterministic，不是已经 findet app_hash MUST be deterministic（580） interchangeable——580 另钉 not 印进本头 / not next_block_delay nondet，本页钉 not settled 单句。
+3. **看见 `FinalizeBlockResponse` MUST be deterministic / 看见禁止非确定源 is not already finharddet bundled（476） interchangeable / 已经 may be empty interchangeable / 已经 may be hard-coded interchangeable / 476 finharddet item 1 interchangeable / 476 finharddet item 2 interchangeable / 620 notempty interchangeable / 621 nothardcoded interchangeable，也不是已经 FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 bundled（476） interchangeable / 622 notnondet interchangeable / 620 notempty interchangeable / 621 nothardcoded interchangeable / 404 finapphash interchangeable / 470 findet interchangeable，也不是已经 `FinalizeBlockResponse.app_hash` may also be empty not no state root bundled（476 item 1 余量 / 620） interchangeable / 620 notempty interchangeable / 404 finapphash interchangeable / 475 finmerkle interchangeable / 392 initchain apphash interchangeable，也不是已经 `FinalizeBlockResponse.app_hash` may also be hard-coded not Merkle root bundled（476 item 2 余量 / 621） interchangeable / 621 nothardcoded interchangeable / 475 finmerkle interchangeable / 404 finapphash interchangeable / 392 initchain apphash interchangeable，也不是已经 FinalizeBlock Usage determinism bundled（470 余量） interchangeable / 470 findet interchangeable / 579 findet notlikeprepare interchangeable / 581 findet not replication interchangeable。**  
+   官方把 476 finharddet bundled 三事里的 MUST be deterministic 和 may be empty / may be hard-coded 分开——476 bundled 常与 item 1 / item 2 混成「看见 MUST be deterministic 就已经 finharddet bundled interchangeable」，本页钉 476 item 3 第三件事。看见 MUST be deterministic，不是已经 may be empty（476 item 1 余量 / 620） interchangeable——620 另钉 not no state root / not settled，本页钉 item 3 单句。看见 MUST be deterministic，不是已经 may be hard-coded（476 item 2 余量 / 621） interchangeable——621 另钉 not Merkle root / not hardcoded doesn't count as AppHash，本页钉 not finharddet bundled 单句。
+
+怎样挑空根、怎样写死常量、怎样测确定性是规范里的做法，本页不抄。FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 bundled（476）、may be empty not no state root（476 item 1 余量 / 620）、may be hard-coded not Merkle root（476 item 2 余量 / 621）、FinalizeBlock Usage determinism bundled（470）、next_block_delay 非确定 bundled（589）是另外那套，本页不抄。
+
+## 官方为什么这样拆
+
+- **MUST be deterministic not next_block_delay nondet ≠ 589 fndelay / 618 notwallclock interchangeable：** 官方把禁止非确定源和 delay 单字段非确定分开。
+- **MUST be deterministic not settled ≠ 147 apphash vs this block / 580 findet not apphash interchangeable：** 官方把 476 item 3 和已经 settled / 印进本头分开。
+- **MUST be deterministic not finharddet bundled ≠ 620 notempty / 621 nothardcoded interchangeable：** 官方把 476 item 3 和 item 1 / item 2 分开。
+
+## 和相邻页的边界
+
+| 对象 | 本页 | 那一页 |
+|---|---|---|
+| MUST be deterministic | 不是 already next_block_delay 非确定 | 不是 fndelay notwallclock（618） |
+| MUST be deterministic | 不是 already settled | 不是 findet not apphash（580） |
+| MUST be deterministic | 不是 already finharddet bundled | 不是 may be empty（476 item 1 / 620） |
+
+## 产品
+
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 FinalizeBlockResponse MUST be deterministic not next_block_delay nondet / not 印进本头 / not finharddet bundled 正式三事（476 余量），必须分开 MUST be deterministic 是不是 already next_block_delay 非确定 interchangeable / 589 fndelay interchangeable / 618 notwallclock interchangeable / 470 findet interchangeable、MUST be deterministic 是不是 already settled interchangeable / 147 apphash vs this block interchangeable / 614 notheader interchangeable / 580 findet not apphash interchangeable、MUST be deterministic 是不是 already finharddet bundled interchangeable / 620 notempty interchangeable / 621 nothardcoded interchangeable / 476 finharddet item 1 empty interchangeable / 476 finharddet item 2 hard-coded interchangeable。可以跳过「看见 MUST be deterministic 就已经 next_block_delay 非确定 interchangeable」。不要另写怎样测确定性。
+
+## 本页不抄
+
+- 怎样挑空根、怎样写死常量、怎样测确定性。
+- FinalizeBlockResponse app_hash empty / hard-coded / MUST be deterministic 正式三事 bundled。那是不变量 476。
+- may be empty not no state root。那是不变量 476 item 1 余量 / 620。
+- may be hard-coded not Merkle root。那是不变量 476 item 2 余量 / 621。
+- FinalizeBlock Usage determinism bundled。那是不变量 470。
+- next_block_delay 非确定 bundled。那是不变量 589。
+- 本头 AppHash vs 本高度交差。那是不变量 147。

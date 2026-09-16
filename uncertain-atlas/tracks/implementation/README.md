@@ -1,3 +1,4 @@
+- [`worked-example-finharddet-notnondet-vs-bundled.md`](worked-example-finharddet-notnondet-vs-bundled.md) — MUST be deterministic≠delay nondet/交差；≠finharddet bundled/empty/hard-coded（不变量 622）
 - [`worked-example-finharddet-nothardcoded-vs-bundled.md`](worked-example-finharddet-nothardcoded-vs-bundled.md) — hard-coded≠Merkle root/交差；≠finharddet bundled/empty/deterministic（不变量 621）
 - [`worked-example-finharddet-notempty-vs-bundled.md`](worked-example-finharddet-notempty-vs-bundled.md) — may be empty≠没状态根/交差；≠finharddet bundled/hard-coded/deterministic（不变量 620）
 - [`worked-example-fndelay-notsetzero-vs-bundled.md`](worked-example-fndelay-notsetzero-vs-bundled.md) — set to 0≠决定/块间隔；≠fndelay bundled/Deterministic=No/MAY wallclock（不变量 619）
