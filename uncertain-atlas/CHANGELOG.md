@@ -1,3 +1,7 @@
+## 2026-09-16（续 721）
+
+- 不变量 604；语料 C581；模式 name-the-finequiv-notnewdec-bar；反模式 finequiv-notnewdec-sold-as-bundled；L10.3 第 573 条。填 L4.4 / CometBFT 档案 FinalizeBlock equiv ABCI 1.0 not Contains newly decided / apply candidate 正式三事（586 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。586 finequiv unbundling 完成（604 item 3）。
+
 ## 2026-09-16（续 720）
 
 - 不变量 603；语料 C580；模式 name-the-finequiv-notnoprep-bar；反模式 finequiv-notnoprep-sold-as-bundled；L10.3 第 572 条。填 L4.4 / CometBFT 档案 FinalizeBlock equiv ABCI 1.0 not no Prepare/Process 正式三事（586 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。586 finequiv unbundling 续（603 item 2）。

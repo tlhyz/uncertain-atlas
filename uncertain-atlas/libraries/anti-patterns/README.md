@@ -1,3 +1,4 @@
+- [`finequiv-notnewdec-sold-as-bundled.md`](finequiv-notnewdec-sold-as-bundled.md) — FinalizeBlock equiv 被写成已经 Contains newly decided / 已经 Process 跑过就不用在 Finalize 再执行（不变量 604）
 - [`finequiv-notnoprep-sold-as-bundled.md`](finequiv-notnoprep-sold-as-bundled.md) — FinalizeBlock equiv 被写成已经没有 Prepare/Process / 已经 finequiv bundled（不变量 603）
 - [`finequiv-notgates-sold-as-bundled.md`](finequiv-notgates-sold-as-bundled.md) — FinalizeBlock equiv 被写成已经四门已经结算 / 已经 finequiv bundled（不变量 602）
 - [`finresp-notsettled-sold-as-bundled.md`](finresp-notsettled-sold-as-bundled.md) — Finalize must provide 四列 被写成已经改了集合 / 已经交差（不变量 601）
