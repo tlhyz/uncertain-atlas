@@ -1,3 +1,7 @@
+## 2026-09-16（续 729）
+
+- 不变量 612；语料 C589；模式 name-the-finmorepre-notmorepre-bar；反模式 finmorepre-notmorepre-sold-as-bundled；L10.3 第 581 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay more precommits despite 2/3+ not decided / not 479 fintrigger 正式三事（480 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。480 finmorepre unbundling 续（612 item 2）。
+
 ## 2026-09-16（续 728）
 
 - 不变量 611；语料 C588；模式 name-the-finmorepre-notproctime-bar；反模式 finmorepre-notproctime-sold-as-bundled；L10.3 第 580 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay includes processing time not timeout_commit / wallclock 正式三事（480 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。480 finmorepre unbundling 启动（611 item 1）。
