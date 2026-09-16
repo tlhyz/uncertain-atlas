@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-16 | timer 0510Z checkpoint | BLOCKED | outputs/review_logs/2026-09-16_timer_0510Z_checkpoint.md |
 | 2026-09-16 | P7-20 Q_SOXL_USER_GRID | NO | outputs/review_logs/2026-09-16_P7-20_user_grid_q.md |
 | 2026-09-16 | P7-19 5x restart-after-liq | FAIL | outputs/review_logs/2026-09-16_P7-19_restart.md |
 | 2026-09-16 | P7-18 2.5x ±20U 120d TICK | CONDITIONAL | outputs/review_logs/2026-09-16_P7-18_lev25.md |
