@@ -1,3 +1,7 @@
+## 2026-09-16（续 704）
+
+- 不变量 587；语料 C564；模式 name-the-finreturn-bar；反模式 finreturn-sold-as-header；L10.3 第 556 条。填 L4.4 / CometBFT 档案 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 467 → local 587。
+
 ## 2026-09-16（续 703）
 
 - 不变量 586；语料 C563；模式 name-the-finequiv-bar；反模式 finequiv-sold-as-gates；L10.3 第 555 条。填 L4.4 / CometBFT 档案 FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 465 → local 586。
