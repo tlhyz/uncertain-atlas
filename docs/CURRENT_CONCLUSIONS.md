@@ -71,7 +71,7 @@
 - **Confidence:** **FAIL** as independent L+S (P7-05); **STOPPED** as ≥3x ±20U moving hedge (P7-07/15–18). ≤2.5x±20U survived this path; 2x±20% survived and **lost** — not live
 - **Supporting:** None for unattended **5x** full-window use
 - **Contradicting:** P7-18 **2.5x±20U +86%** / inv 2.30 / short DD −90%. P7-17 4x dies 05-26. P7-16 2x±20U +70.7%. P7-17 2x±20% −20.5%
-- **Status:** ±20U death cliff is **(2.5, 3]** on this tape. `restart_survivor` (P7-19) dies 3× and re-levers leftover — **FAIL, do not use**. See `soxl-lab/results/01-yours-5x/hedge/`.
+- **Status:** ±20U death cliff is **(2.5, 3]** on this tape. `restart_survivor` (P7-19) dies 3× and re-levers leftover — **FAIL, do not use**. Q: `outputs/experiments/Q_SOXL_USER_GRID.md` = **NO**. See `soxl-lab/results/01-yours-5x/hedge/`.
 
 ---
 
