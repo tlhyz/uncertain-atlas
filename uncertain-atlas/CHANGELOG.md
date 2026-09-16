@@ -1,3 +1,7 @@
+## 2026-09-16（续 713）
+
+- 不变量 596；语料 C573；模式 name-the-finasresult-notempty-bar；反模式 finasresult-notempty-sold-as-bundled；L10.3 第 565 条。填 L4.4 / CometBFT 档案 FinalizeBlock must provide values provided values not empty keep current / not CheckTx 正式三事（477 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。477 finasresult unbundling 完成（596 item 3）。
+
 ## 2026-09-16（续 712）
 
 - 不变量 595；语料 C572；模式 name-the-finasresult-notcand-bar；反模式 finasresult-notcand-sold-as-bundled；L10.3 第 564 条。填 L4.4 / CometBFT 档案 FinalizeBlock must provide values as a result of executing the block not candidate / Process already ran 正式三事（477 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。477 finasresult unbundling 续（595 item 2）。

@@ -1,3 +1,4 @@
+- [`worked-example-finasresult-notempty-vs-bundled.md`](worked-example-finasresult-notempty-vs-bundled.md) — provided values≠空着就没义务；≠CheckTx过了；≠477 bundled/458/464（不变量 596）
 - [`worked-example-finasresult-notcand-vs-bundled.md`](worked-example-finasresult-notcand-vs-bundled.md) — as result executing≠Process already ran；≠apply candidate/fincand；≠466/351（不变量 595）
 - [`worked-example-finasresult-notsettled-vs-bundled.md`](worked-example-finasresult-notsettled-vs-bundled.md) — must provide≠改了集合/H+1；≠交差/persist；≠477 bundled/363/458（不变量 594）
 - [`worked-example-finh1-vs-round0.md`](worked-example-finh1-vs-round0.md) — starts h+1≠交差；round0≠同高换轮/delay；step11≠unlock/bundled（不变量 593）
