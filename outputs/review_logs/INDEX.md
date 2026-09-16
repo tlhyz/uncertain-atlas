@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-16 | P7-17 lev cliff 4x / 2x±20% | CONDITIONAL | outputs/review_logs/2026-09-16_P7-17_lev_cliff.md |
 | 2026-09-16 | P7-16 flatten 2x/3x 120d TICK | CONDITIONAL | outputs/review_logs/2026-09-16_P7-16_leverage_tick.md |
 | 2026-09-16 | P7-15 listing-prefix 62d/120d TICK | STOPPED | outputs/review_logs/2026-09-16_P7-15_listing_prefix_tick.md |
 | 2026-09-16 | P7-14 listing-prefix BAR+3d tick | CONDITIONAL | outputs/review_logs/2026-09-16_P7-14_listing_prefix.md |

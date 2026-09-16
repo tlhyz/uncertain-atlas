@@ -151,6 +151,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-14 | Listing-prefix 2026-05-15→07-15 user flatten hedge (new days) | **done** | BAR +37%/+26% **not a verdict**; 3d tick +2.1% — outputs/review_logs/2026-09-16_P7-14_listing_prefix.md |
 | P7-15 | Listing-prefix 62d **TICK** flatten hedge (05-15→07-15) | **done** | **STOPPED** 05-26 short liq; ±20U +39.3% then 50 zero days; 120d no restart — outputs/review_logs/2026-09-16_P7-15_listing_prefix_tick.md |
 | P7-16 | Flatten hedge 2x/3x TICK full listing (does lower lev survive?) | **done** | 3x STOPPED 05-27; 2x +70.7% survived path, inventory 1.81 **not live** — outputs/review_logs/2026-09-16_P7-16_leverage_tick.md |
+| P7-17 | Leverage cliff: 4x ±20U and 2x ±20% TICK 120d | **done** | 4x STOPPED 05-26; 2x±20% −20.5% survived; +70% is usdt-only — outputs/review_logs/2026-09-16_P7-17_lev_cliff.md |
 
 ---
 

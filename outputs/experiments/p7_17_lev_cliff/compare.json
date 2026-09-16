@@ -1,0 +1,13 @@
+{
+  "window": "2026-05-15/2026-09-11",
+  "fills": "tick",
+  "buy_and_hold_soxl": -0.2443,
+  "note": "4x dies like 3x/5x. 2x±20% survives but loses. 2x±20U +70% is band-specific.",
+  "variants": [
+    {"tag": "p715full", "lev": 5, "band": "usdt20", "return": 0.3929, "stopped": true, "stop": "2026-05-26"},
+    {"tag": "p717lev4", "lev": 4, "band": "usdt20", "return": 0.3442, "stopped": true, "stop": "2026-05-26"},
+    {"tag": "p716lev3", "lev": 3, "band": "usdt20", "return": 0.2876, "stopped": true, "stop": "2026-05-27"},
+    {"tag": "p716lev2", "lev": 2, "band": "usdt20", "return": 0.7066, "stopped": false, "pair_dd": -0.153, "inv": 1.81},
+    {"tag": "p717lev2p", "lev": 2, "band": "pct20", "return": -0.2049, "stopped": false, "pair_dd": -0.463, "inv": 1.42, "long_dd": -0.949, "short_dd": -0.891}
+  ]
+}
