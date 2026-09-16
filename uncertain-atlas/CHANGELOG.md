@@ -1,3 +1,7 @@
+## 2026-09-16（续 735）
+
+- 不变量 618；语料 C595；模式 name-the-fndelay-notwallclock-bar；反模式 fndelay-notwallclock-sold-as-bundled；L10.3 第 587 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay each node MAY / wallclock not app_hash MUST be deterministic / not whole response nondeterministic 正式三事（589 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。589 fndelay unbundling 续（618 item 2）。
+
 ## 2026-09-16（续 734）
 
 - 不变量 617；语料 C594；模式 name-the-fndelay-notslot-bar；反模式 fndelay-notslot-sold-as-bundled；L10.3 第 586 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay Deterministic = No not slot / not finality / not timeout_commit 正式三事（589 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。589 fndelay unbundling 启动（617 item 1）。
