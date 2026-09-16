@@ -1,3 +1,4 @@
+- [`name-the-finrecheck-notmust-bar.md`](name-the-finrecheck-notmust-bar.md) — FinalizeBlock When optionally re-checks not must recheck / not already settled / not finrecheck bundled 正式三事（591 余量）（不变量 635）
 - [`name-the-finafter-notrecheck-bar.md`](name-the-finafter-notrecheck-bar.md) — FinalizeBlock When 可选再验池里剩下的、再解锁、再开下一高 round 0 not Recheck / not unlock / not finafter bundled 正式三事（403 余量）（不变量 634）
 - [`name-the-finafter-notlock-bar.md`](name-the-finafter-notlock-bar.md) — FinalizeBlock When 落完再锁内存池、新交易不进 CheckTx not Commit lock / not already settled / not finafter bundled 正式三事（403 余量）（不变量 633）
 - [`name-the-finafter-notsettled-bar.md`](name-the-finafter-notsettled-bar.md) — FinalizeBlock When Finalize 之后引擎才落盘 tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state / not finafter bundled 正式三事（403 余量）（不变量 632）
