@@ -1,3 +1,4 @@
+- [`name-the-fintxcode-notchecktx-bar.md`](name-the-fintxcode-notchecktx-bar.md) — FinalizeBlockResponse tx_results Code==0 only if fully valid not CheckTx passed / not Process Accept / not fintxcode bundled 正式三事（585 余量）（不变量 626）
 - [`name-the-finmerkle-notquery-bar.md`](name-the-finmerkle-notquery-bar.md) — FinalizeBlockResponse Query proofs anchored in this Merkle root not matched AppHash / not ProofOp key lookup / not finmerkle bundled 正式三事（475 余量）（不变量 625）
 - [`name-the-finmerkle-notnextheader-bar.md`](name-the-finmerkle-notnextheader-bar.md) — FinalizeBlockResponse app_hash included as Header.AppHash in the next block not already written / not this header AppHash / not finmerkle bundled 正式三事（475 余量）（不变量 624）
 - [`name-the-finmerkle-notthisheader-bar.md`](name-the-finmerkle-notthisheader-bar.md) — FinalizeBlockResponse app_hash optional Merkle root not this header AppHash / not settled / not finmerkle bundled 正式三事（475 余量）（不变量 623）
