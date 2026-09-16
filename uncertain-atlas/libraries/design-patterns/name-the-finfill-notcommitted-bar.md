@@ -7,9 +7,9 @@
 
 ## 三个名字
 
-1. **fill all fields not request complete means committed 不是 FinalizeBlock fill all fields even if Prepare/Process passed bundled：** 看见 request complete 不是已经交差，不是 473 finfill interchangeable / 583 refill not request complete means committed interchangeable / 567 not no need to provide again interchangeable。
+1. **fill all fields not request complete means committed 不是 FinalizeBlock fill all fields even if Prepare/Process passed bundled：** 看见 request complete 不是已经交差，不是 473 finfill interchangeable / 583 refill not request complete means committed interchangeable / 565 not no need to provide again interchangeable。
 2. **fill all fields not request complete means committed 不是 finfields / finpersist bundled：** 看见 all fields 填齐 不是已经 newly decided block fields / persist decision，不是 407 finfields interchangeable / 335 finpersist interchangeable / 576 fincand committed interchangeable。
-3. **fill all fields not request complete means committed 不是 apply candidate / 583 refill：** 看见又填一遍 不是已经套用先前候选 / previously executed，不是 584 apply candidate interchangeable / 583 not refill interchangeable / 568 not passed means ran Process interchangeable。
+3. **fill all fields not request complete means committed 不是 apply candidate / 583 refill：** 看见又填一遍 不是已经套用先前候选 / previously executed，不是 584 apply candidate interchangeable / 583 not refill interchangeable / 563 not passed means ran Process interchangeable。
 
 ## 为什么要分开叫
 
