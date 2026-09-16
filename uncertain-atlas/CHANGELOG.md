@@ -1,3 +1,7 @@
+## 2026-09-16（续 726）
+
+- 不变量 609；语料 C586；模式 name-the-fintrigger-notprecommit-bar；反模式 fintrigger-notprecommit-sold-as-bundled；L10.3 第 578 条。填 L4.4 / CometBFT 档案 FinalizeBlock When trigger 2f+1 precommit not +2/3 prevote ExtendVote / not without all block parts 正式三事（479 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。479 fintrigger unbundling 续（609 item 2）。
+
 ## 2026-09-16（续 725）
 
 - 不变量 608；语料 C585；模式 name-the-fintrigger-notparts-bar；反模式 fintrigger-notparts-sold-as-bundled；L10.3 第 577 条。填 L4.4 / CometBFT 档案 FinalizeBlock When trigger Proposal + all block parts not only hash / Process ran 正式三事（479 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。479 fintrigger unbundling 启动（608 item 1）。
