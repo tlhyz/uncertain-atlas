@@ -1,3 +1,7 @@
+## 2026-09-16（续 746）
+
+- 不变量 629；语料 C606；模式 name-the-finlock-notsettled-bar；反模式 finlock-notsettled-sold-as-bundled；L10.3 第 598 条。填 L4.4 / CometBFT 档案 FinalizeBlock When locks mempool not already settled / not four gates settled / not finlock bundled 正式三事（588 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。588 finlock unbundling 启动（629 item 1）。
+
 ## 2026-09-16（续 745）
 
 - 不变量 628；语料 C605；模式 name-the-fintxcode-notsettled-bar；反模式 fintxcode-notsettled-sold-as-bundled；L10.3 第 597 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse tx_results returned not Finalize changed already settled / not Code Data printed in this header LastResultsHash / not fintxcode bundled 正式三事（585 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。585 fintxcode unbundling 完成（628 item 3）。
