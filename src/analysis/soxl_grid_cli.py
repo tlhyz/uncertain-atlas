@@ -23,7 +23,7 @@ from qtb.data.binance_futures import (
 from src.analysis.soxl_soxs_hedge import DayTradeCache
 from src.analysis.user_moving_grid import run_user_hedge_pair, run_user_ls_pair, run_user_one_side
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG = ROOT / "soxl-lab" / "params" / "run.yaml"
 DEFAULT_OUT = ROOT / "soxl-lab" / "results" / "runs"
 
@@ -39,7 +39,7 @@ EPILOG = """
   python3 soxl-lab/scripts/run_grid.py --check
   python3 soxl-lab/scripts/run_grid.py
   python3 soxl-lab/scripts/run_grid.py --leverage 3 --n-grids 80 --range-usdt 15
-  python3 soxl-lab/scripts/run_grid.py --mode pct --range-pct 0.10 --start 2026-08-01 --end 2026-08-31 --tag aug
+  python3 soxl-lab/scripts/run_grid.py --mode pct --range-pct 0.10 --hedge independent --start 2026-08-01 --end 2026-08-31 --tag aug
   python3 soxl-lab/scripts/run_grid.py --fills bar --start 2026-07-16 --end 2026-07-18
   python3 soxl-lab/scripts/run_grid.py --sides long --fills bar --start 2026-07-16 --end 2026-07-18
 
@@ -129,11 +129,38 @@ def spec_from_yaml(raw: dict[str, Any]) -> GridSpec:
         range_usdt=float(_coalesce(rng.get("usdt"), usdt_blk.get("range_usdt"), 20)),
         range_pct=float(_coalesce(rng.get("pct"), pct_blk.get("range_pct"), 0.20)),
         hedge=str(_coalesce(raw.get("hedge"), "flatten_survivor")),  # type: ignore[arg-type]
-        fee=str(_coalesce(raw.get("fee"), "base")),  # type: ignore[arg-type]
-        fills=str(_coalesce(raw.get("fills"), "tick")),  # type: ignore[arg-type]
+        fee=_normalize_fee(raw.get("fee")),
+        fills=_normalize_fills(raw.get("fills")),
         sides=sides,
         tag=str(_coalesce(raw.get("tag"), "")),
     )
+
+
+def _normalize_fills(raw: Any) -> FillEngine:
+    if raw is None:
+        return "tick"
+    if isinstance(raw, dict):
+        raw = raw.get("engine") or raw.get("mode") or "tick"
+    s = str(raw).strip().lower()
+    if s in ("tick", "tick_precise", "tick_precise_aggtrades", "aggtrades"):
+        return "tick"
+    if s in ("bar", "bar_ohlc", "ohlc"):
+        return "bar"
+    return s  # type: ignore[return-value]
+
+
+def _normalize_fee(raw: Any) -> FeePreset:
+    if raw is None:
+        return "base"
+    if isinstance(raw, dict):
+        # 01_yours draft lists both bps; runner default stays Base.
+        return "base"
+    s = str(raw).strip().lower()
+    if s in ("base", "2bps", "2"):
+        return "base"
+    if s in ("conservative", "4bps", "4"):
+        return "conservative"
+    return s  # type: ignore[return-value]
 
 
 def apply_cli(spec: GridSpec, ns: argparse.Namespace) -> GridSpec:
@@ -220,9 +247,9 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--capital", type=float, default=None, help="多空各用这么多 U（同时改两边）")
     p.add_argument("--capital-long", dest="capital_long", type=float, default=None)
     p.add_argument("--capital-short", dest="capital_short", type=float, default=None)
-    p.add_argument("--mode", choices=("usdt", "pct"), default=None, help="带宽：±N U 或 ±N%")
+    p.add_argument("--mode", choices=("usdt", "pct"), default=None, help="带宽：±N U 或 ±N%%")
     p.add_argument("--range-usdt", dest="range_usdt", type=float, default=None, help="±U，mode=usdt 时生效")
-    p.add_argument("--range-pct", dest="range_pct", type=float, default=None, help="±小数，0.2=20%")
+    p.add_argument("--range-pct", dest="range_pct", type=float, default=None, help="±小数，0.2=20%%")
     p.add_argument("--hedge", choices=("flatten_survivor", "independent"), default=None)
     p.add_argument("--sides", choices=("both", "long", "short"), default=None, help="默认 both=多空；可只跑一边")
     p.add_argument("--fee", choices=("base", "conservative"), default=None)
@@ -344,6 +371,7 @@ def _strip(rep: dict[str, Any], spec: GridSpec) -> dict[str, Any]:
 def write_report_md(dest: Path, spec: GridSpec, summary: dict[str, Any], bar_source: str) -> None:
     hedge_cn = {
         "flatten_survivor": "移动多空对冲（一边爆仓就平另一边）",
+        "moving_ls_flatten_survivor": "移动多空对冲（一边爆仓就平另一边）",
         "independent": "两本独立账（一边爆了另一边继续）",
         "one_side": "只做一边",
     }
@@ -357,7 +385,7 @@ def write_report_md(dest: Path, spec: GridSpec, summary: dict[str, Any], bar_sou
     lines = [
         f"# {spec.folder_name()}",
         "",
-        stopped,
+        *([stopped] if stopped else []),
         "| 项 | 值 |",
         "|----|----|",
         f"| 标的 | {spec.symbol} |",
@@ -415,14 +443,16 @@ def print_check(spec: GridSpec, *, json_only: bool) -> int:
             print("参数错误：")
             for e in errs:
                 print(f"  - {e}")
-        elif miss:
+        elif miss and spec.fills == "tick":
             print(f"窗口缺逐笔 {len(miss)} 天（前几个）：{miss[:8]}")
             print("补齐 cache/ 或加 --allow-empty-ticks；默认拒绝开跑。")
+        elif miss:
+            print(f"fills=bar：窗口缺逐笔 {len(miss)} 天，这次还能跑，结论不要当 tick。")
         else:
             print(f"窗口 {spec.start}→{spec.end} 逐笔齐，可以跑。")
     if errs:
         return 2
-    if miss:
+    if miss and spec.fills == "tick":
         return 3
     return 0
 
@@ -470,10 +500,8 @@ def run_spec(
         if i == 0 or (i + 1) % progress_every == 0 or i + 1 == n_bars:
             print(f"  {pd.Timestamp(ts).date()}  {i + 1}/{n_bars}  equity={eq:.2f}", flush=True)
 
-    kw: dict[str, Any] = dict(
+    shared = dict(
         range_mode=spec.range_mode,
-        capital_long=spec.capital_long,
-        capital_short=spec.capital_short,
         leverage=spec.leverage,
         range_usdt=spec.range_usdt,
         range_pct=spec.range_pct,
@@ -484,13 +512,17 @@ def run_spec(
         on_bar=on_bar,
     )
     if spec.sides == "long":
-        rep = run_user_one_side(bars, direction="long", capital=spec.capital_long, **{k: v for k, v in kw.items() if k != "capital_short" and k != "capital_long"})
+        rep = run_user_one_side(bars, direction="long", capital=spec.capital_long, **shared)
     elif spec.sides == "short":
-        rep = run_user_one_side(bars, direction="short", capital=spec.capital_short, **{k: v for k, v in kw.items() if k != "capital_short" and k != "capital_long"})
+        rep = run_user_one_side(bars, direction="short", capital=spec.capital_short, **shared)
     elif spec.hedge == "independent":
-        rep = run_user_ls_pair(bars, **kw)
+        if not quiet and not json_only:
+            print("independent：先跑多头整段，再跑空头整段（进度日期会走两遍）", flush=True)
+        rep = run_user_ls_pair(bars, capital_long=spec.capital_long, capital_short=spec.capital_short, **shared)
     else:
-        rep = run_user_hedge_pair(bars, **kw)
+        if spec.sides == "both" and not quiet and not json_only:
+            print("flatten_survivor：同一条移动带，一边爆仓就平另一边", flush=True)
+        rep = run_user_hedge_pair(bars, capital_long=spec.capital_long, capital_short=spec.capital_short, **shared)
 
     dest = out_root / spec.folder_name()
     dest.mkdir(parents=True, exist_ok=True)

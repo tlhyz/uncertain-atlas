@@ -139,7 +139,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-06 | Classify SOXL ticks/params/results; 3-pass audit; extractable private lab | **done** | `soxl-lab/`; verify --times 3 all ok; remote not creatable here — outputs/review_logs/2026-09-15_soxl_lab_3pass_PASS.md |
 | P7-07 | User moving L+S **hedge**: shared band, flatten survivor on liq, ±20U and ±20% | **done** | **STOPPED** 07-28; ±20U +15.6%/DD −6.0%; ±20% +6.2%/DD −9.7%; long still liq — outputs/review_logs/2026-09-16_P7-07_user_moving_hedge_STOPPED.md |
 | P7-08 | User-editable tick grid runner (YAML + CLI) | **done** | `soxl-lab/scripts/run_grid.py` + `params/run.yaml` |
-| P7-09 | Harden runner 5-pass review/optimize (check/cache/remap/YAML) | **in_progress** | five review cycles on `soxl_grid_cli` + engine |
+| P7-09 | Harden runner 5-pass review/optimize (check/cache/remap/YAML) | **done** | 5 passes; ROOT fix; 25 tests + cache smoke — outputs/review_logs/2026-09-16_P7-09_runner_5pass.md |
 
 ---
 

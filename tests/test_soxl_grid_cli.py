@@ -7,9 +7,14 @@ from pathlib import Path
 import pytest
 
 from src.analysis.soxl_grid_cli import (
+    DEFAULT_CONFIG,
+    DEFAULT_OUT,
+    ROOT,
     GridSpec,
     apply_cli,
     build_parser,
+    load_yaml,
+    main,
     spec_from_yaml,
     validate_spec,
     window_missing_ticks,
@@ -55,6 +60,9 @@ def test_cli_overrides_yaml(tmp_path: Path):
 
 def test_default_run_yaml_exists():
     assert Path("soxl-lab/params/run.yaml").exists()
+    assert ROOT.name != "src"
+    assert DEFAULT_CONFIG.exists()
+    assert DEFAULT_OUT == ROOT / "soxl-lab" / "results" / "runs"
 
 
 def test_yaml_zero_not_swallowed():
@@ -73,6 +81,8 @@ def test_yours_draft_yaml_loads():
             "capital_per_side_usdt": 5000,
             "sides": {"long": 5000, "short": 4000},
             "range_modes": {"usdt": {"range_usdt": 20}, "pct": {"range_pct": 0.20}},
+            "fee": {"base_bps": 2, "conservative_bps": 4},
+            "fills": "tick_precise_aggTrades",
             "window": {"start": "2026-07-16", "end": "2026-09-11"},
         }
     )
@@ -81,6 +91,18 @@ def test_yours_draft_yaml_loads():
     assert spec.range_usdt == 20
     assert spec.range_pct == 0.20
     assert spec.n_grids == 200
+    assert spec.fills == "tick"
+    assert spec.fee == "base"
+    assert validate_spec(spec) == []
+
+
+def test_real_yours_yaml_file_validates():
+    spec = spec_from_yaml(load_yaml(Path("soxl-lab/params/01_yours_moving_grid.yaml")))
+    assert spec.symbol == "SOXLUSDT"
+    assert spec.fills == "tick"
+    assert spec.fee == "base"
+    assert spec.n_grids == 200
+    assert validate_spec(spec) == []
 
 
 def test_validate_start_after_end():
@@ -104,6 +126,21 @@ def test_check_future_window_reports_missing():
     spec = GridSpec(start="2099-01-01", end="2099-01-03", fills="tick")
     miss = window_missing_ticks(spec)
     assert miss == ["2099-01-01", "2099-01-02", "2099-01-03"]
+
+
+def test_main_check_json_on_default_window():
+    rc = main(["--check", "--json-only", "--start", "2026-07-16", "--end", "2026-07-16"])
+    assert rc in (0, 3)  # 0 if that day is cached on this machine
+
+
+def test_main_check_bar_ignores_missing_ticks():
+    rc = main(["--check", "--fills", "bar", "--start", "2099-01-01", "--end", "2099-01-02"])
+    assert rc == 0
+
+
+def test_main_check_tick_rejects_missing():
+    rc = main(["--check", "--fills", "tick", "--start", "2099-01-01", "--end", "2099-01-02"])
+    assert rc == 3
 
 
 def test_cli_sides_and_tag():

@@ -62,27 +62,6 @@ def _step(levels: np.ndarray) -> float:
     return float(levels[1] - levels[0])
 
 
-def remap_lots(book: IsolatedDirBook, old_levels: np.ndarray, new_levels: np.ndarray) -> None:
-    """Keep inventory; reattach lot qty to nearest rungs after a band move."""
-    if not book.lots:
-        return
-    if len(new_levels) == 0:
-        book.lots = {}
-        return
-    merged: dict[int, float] = {}
-    n_old = len(old_levels)
-    for idx, q in book.lots.items():
-        if q <= 1e-12:
-            continue
-        if 0 <= idx < n_old:
-            px = float(old_levels[idx])
-        else:
-            px = float(book.avg) if book.avg else float(new_levels[len(new_levels) // 2])
-        j = int(np.argmin(np.abs(new_levels - px)))
-        merged[j] = merged.get(j, 0.0) + float(q)
-    book.lots = merged
-
-
 @dataclass
 class IsolatedDirBook:
     """One-direction isolated perp book (long XOR short)."""
@@ -192,6 +171,27 @@ class IsolatedDirBook:
             self.qty = 0.0
             self.avg = 0.0
             self.lots.clear()
+
+
+def remap_lots(book: IsolatedDirBook, old_levels: np.ndarray, new_levels: np.ndarray) -> None:
+    """Keep inventory; reattach lot qty to nearest rungs after a band move."""
+    if not book.lots:
+        return
+    if len(new_levels) == 0:
+        book.lots = {}
+        return
+    merged: dict[int, float] = {}
+    n_old = len(old_levels)
+    for idx, q in book.lots.items():
+        if q <= 1e-12:
+            continue
+        if 0 <= idx < n_old:
+            px = float(old_levels[idx])
+        else:
+            px = float(book.avg) if book.avg else float(new_levels[len(new_levels) // 2])
+        j = int(np.argmin(np.abs(new_levels - px)))
+        merged[j] = merged.get(j, 0.0) + float(q)
+    book.lots = merged
 
 
 def simulate_user_dir_grid(
