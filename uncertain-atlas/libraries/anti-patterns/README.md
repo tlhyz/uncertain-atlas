@@ -1,3 +1,4 @@
+- [`fincommit-sold-as-settled.md`](fincommit-sold-as-settled.md) — FinalizeBlock When calls Commit instruct persist 被写成已经交差（不变量 590）
 - [`fndelay-sold-as-slot.md`](fndelay-sold-as-slot.md) — next_block_delay 非确定被写成已经是槽位（不变量 589）
 - [`finlock-sold-as-settled.md`](finlock-sold-as-settled.md) — FinalizeBlock When locks mempool 被写成已经交差（不变量 588）
 - [`finreturn-sold-as-header.md`](finreturn-sold-as-header.md) — FinalizeBlock When AppHash tx outputs ResultHash persist 被写成已经印进本头（不变量 587）
