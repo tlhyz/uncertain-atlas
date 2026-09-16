@@ -1,3 +1,7 @@
+## 2026-09-16（续 684）
+
+- 不变量 552；语料 C544；模式 name-the-procht-notfinht-bar；反模式 procht-notfinht-sold-as-bundled；L10.3 第 536 条。填 L4.4 / CometBFT 档案 ProcessProposal Process match header not Finalize newly decided fields 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。454 ProcessProposal height/time 对上拟议块头 unbundling 完成（550–552）。
+
 ## 2026-09-16（续 683）
 
 - 不变量 551；语料 C543；模式 name-the-prochtreqlht-notusage-bar；反模式 prochtreqlht-notusage-sold-as-bundled；L10.3 第 535 条。填 L4.4 / CometBFT 档案 ProcessProposal Request height/time 栏 not Usage match 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。454 ProcessProposal height/time 对上拟议块头 unbundling 续（551）。
