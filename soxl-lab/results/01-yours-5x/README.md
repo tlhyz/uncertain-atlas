@@ -15,9 +15,11 @@
 | 最亏一天 | 07-30 **−5544** | 07-30 **−4855** |
 | 实盘？ | **否** | **否** |
 
-每天一行：
+每天一行（独立账）：
 
 - [`p7_05_usdt20_daily.csv`](p7_05_usdt20_daily.csv)
 - [`p7_05_pct20_daily.csv`](p7_05_pct20_daily.csv)
+
+**对冲版（P7-07，一边爆就平另一边）** → [`hedge/README.md`](hedge/README.md)
 
 两套汇总：[`p7_05_summary.json`](p7_05_summary.json)

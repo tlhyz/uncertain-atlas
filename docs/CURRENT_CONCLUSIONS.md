@@ -68,10 +68,10 @@
 - **Status:** Inverse **marks** ≠ grid hedge. Do not deploy pair grids. Honest hedge = daily 50/50 rebalance, no grid. SNXX is still not an inverse.
 
 ### W-04: User SOXL 5x ±20U / ±20% 200-grid 5k+5k is tradeable
-- **Confidence:** **FAIL** (P7-05 TICK both legs)
-- **Supporting:** None
-- **Contradicting:** ±20U **−12.78% / DD −80.16%**; ±20% **−18.65% / DD −77.16%**; long sleeve liquidated in both; leftover is a naked short
-- **Status:** Do not live this book. Classified in `soxl-lab/`.
+- **Confidence:** **FAIL** as independent L+S (P7-05); **STOPPED** as moving hedge (P7-07)
+- **Supporting:** None for unattended full-window use
+- **Contradicting:** P7-05 leftover naked short −12.8%/−80%. P7-07 flatten-survivor ±20U **+15.6% / −6.0%** but pair dies **2026-07-28** (45 zero days)
+- **Status:** Hedge rule is the user’s book. Still not live — first long liq ends the strategy. See `soxl-lab/results/01-yours-5x/hedge/`.
 
 ---
 
@@ -103,6 +103,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-16 | W-04 hedge rerun STOPPED 07-28; ±20U +15.6%/−6% | P7-07 flatten survivor; not a 58d hedge |
 | 2026-09-16 | Local SOXL ticks 120d 2026-05-15→09-11; lab drawers | P1-12; soxl-lab README 看板 |
 | 2026-09-15 | SOXL UM Vision listing 2026-05-15; FAIL_F1/F2 404 | P3-09 probe; DATA_POLICY corrected |
 | 2026-09-15 | W-04 user 5x ±20U/±20% FAIL; soxl-lab 3-pass | P7-05/06; long liquidated both modes |

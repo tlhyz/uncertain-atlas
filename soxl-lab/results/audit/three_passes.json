@@ -9,24 +9,6 @@
         "pass3_results": []
       },
       "pass_index": 1
-    },
-    {
-      "ok": true,
-      "errors": {
-        "pass1_data": [],
-        "pass2_params": [],
-        "pass3_results": []
-      },
-      "pass_index": 2
-    },
-    {
-      "ok": true,
-      "errors": {
-        "pass1_data": [],
-        "pass2_params": [],
-        "pass3_results": []
-      },
-      "pass_index": 3
     }
   ]
 }

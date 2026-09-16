@@ -137,7 +137,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-04 | Tick-precise pair grid + funding vs daily 50/50 B&H | **done** | **FAIL** default 0.40/±5 pair −6.0%/DD −20%; all sweep FAIL — outputs/review_logs/2026-09-15_P7-04_tick_pair_hedge_FAIL.md |
 | P7-05 | User SOXL L+S: 5x, ±20U **and** ±20%, 200-grid moving, 5k+5k, daily PnL | **done** | **FAIL** both: ±20U −12.8%/DD −80% long liq; ±20% −18.7%/DD −77% long liq — outputs/review_logs/2026-09-15_P7-05_user_soxl_ls_grid_FAIL.md |
 | P7-06 | Classify SOXL ticks/params/results; 3-pass audit; extractable private lab | **done** | `soxl-lab/`; verify --times 3 all ok; remote not creatable here — outputs/review_logs/2026-09-15_soxl_lab_3pass_PASS.md |
-| P7-07 | User moving L+S **hedge**: shared band, flatten survivor on liq, ±20U and ±20% | **in_progress** | previous P7-05 left a naked short after long liq |
+| P7-07 | User moving L+S **hedge**: shared band, flatten survivor on liq, ±20U and ±20% | **done** | **STOPPED** 07-28; ±20U +15.6%/DD −6.0%; ±20% +6.2%/DD −9.7%; long still liq — outputs/review_logs/2026-09-16_P7-07_user_moving_hedge_STOPPED.md |
 
 ---
 
