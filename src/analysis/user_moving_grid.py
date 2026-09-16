@@ -143,6 +143,13 @@ class IsolatedDirBook:
         self.turnover += notion
         self.fills += 1
 
+    def flatten(self, px: float) -> None:
+        """Close leftover inventory at mark. Used when the hedge pair stops."""
+        if self.liquidated or self.qty <= 1e-12:
+            self.lots.clear()
+            return
+        self.close_lot(self.qty, px, None)
+
     def check_liq(self, px: float) -> None:
         if self.liquidated:
             return
@@ -314,6 +321,215 @@ def combine_user_ls(long_r: dict[str, Any], short_r: dict[str, Any], capital_tot
         "long": {k: v for k, v in long_r.items() if k not in ("equity", "timestamps")},
         "short": {k: v for k, v in short_r.items() if k not in ("equity", "timestamps")},
     }
+
+
+def _dir_pending(
+    *,
+    direction: Literal["long", "short"],
+    levels: np.ndarray,
+    step: float,
+    mid: float,
+    book: IsolatedDirBook,
+    capital: float,
+    leverage: float,
+    n_grids: int,
+    fill_engine: str,
+    lo_b: float,
+    hi_b: float,
+) -> list[PendingFill]:
+    pending: list[PendingFill] = []
+    tag = direction
+    if direction == "long":
+        for idx, lvl in enumerate(levels):
+            if idx in book.lots or lvl > mid:
+                continue
+            if fill_engine == "tick" and not (lo_b - step <= lvl <= hi_b + step):
+                continue
+            pending.append(
+                PendingFill("buy", float(lvl), idx, notional=max(capital * leverage / n_grids, 1.0), reason=f"{tag}_grid")
+            )
+        for idx, lot_q in list(book.lots.items()):
+            tp = float(levels[idx + 1]) if idx + 1 < len(levels) else float(levels[idx]) + step
+            pending.append(PendingFill("sell", tp, idx + 1, qty=lot_q, reduce_only=True, reason=f"{tag}_tp"))
+    else:
+        for idx, lvl in enumerate(levels):
+            if idx in book.lots or lvl < mid:
+                continue
+            if fill_engine == "tick" and not (lo_b - step <= lvl <= hi_b + step):
+                continue
+            pending.append(
+                PendingFill("sell", float(lvl), idx, notional=max(capital * leverage / n_grids, 1.0), reason=f"{tag}_grid")
+            )
+        for idx, lot_q in list(book.lots.items()):
+            tp = float(levels[idx - 1]) if idx - 1 >= 0 else float(levels[idx]) - step
+            pending.append(PendingFill("buy", tp, idx - 1, qty=lot_q, reduce_only=True, reason=f"{tag}_tp"))
+    return pending
+
+
+def _apply_fill(book: IsolatedDirBook, tf: Any, direction: Literal["long", "short"]) -> None:
+    if book.liquidated:
+        return
+    if tf.reduce_only:
+        lot_idx = tf.level_idx - 1 if direction == "long" else tf.level_idx + 1
+        book.close_lot(float(tf.qty), float(tf.price), lot_idx)
+    elif direction == "long" and tf.side == "buy":
+        book.open_lot(float(tf.qty), float(tf.price), tf.level_idx)
+    elif direction == "short" and tf.side == "sell":
+        book.open_lot(float(tf.qty), float(tf.price), tf.level_idx)
+
+
+def _apply_bar_pending(book: IsolatedDirBook, pending: list[PendingFill], direction: Literal["long", "short"], lo_b: float, hi_b: float) -> None:
+    for p in pending:
+        if book.liquidated:
+            break
+        if p.reduce_only:
+            hit = (direction == "long" and hi_b >= p.price) or (direction == "short" and lo_b <= p.price)
+            if hit:
+                book.close_lot(float(p.qty or 0.0), float(p.price), p.level_idx - 1 if direction == "long" else p.level_idx + 1)
+        else:
+            if lo_b <= p.price <= hi_b:
+                notion = float(p.notional or 0.0)
+                book.open_lot(notion / p.price, float(p.price), p.level_idx)
+
+
+def _book_snapshot(book: IsolatedDirBook, equity: np.ndarray, capital: float, last_px: float, *, direction: str, reanchors: int, range_mode: str, range_usdt: float, range_pct: float, n_grids: int, fee_preset: str, fill_engine: str, leverage: float) -> dict[str, Any]:
+    return {
+        "label": f"{direction}_user_grid",
+        "direction": direction,
+        "return": float(equity[-1] / capital - 1.0) if capital else float("nan"),
+        "max_dd": _max_dd(equity),
+        "end_equity": float(equity[-1]),
+        "end_qty": float(book.qty if direction == "long" else -book.qty),
+        "end_inventory_notional": float(book.notional(last_px)),
+        "inventory_frac": float(book.notional(last_px) / capital) if capital else 0.0,
+        "turnover": float(book.turnover),
+        "fills": int(book.fills),
+        "reanchors": int(reanchors),
+        "liquidated": bool(book.liquidated),
+        "leverage": leverage,
+        "range_mode": range_mode,
+        "range_usdt": range_usdt,
+        "range_pct": range_pct,
+        "n_grids": n_grids,
+        "fee_preset": fee_preset,
+        "fill_engine": fill_engine,
+        "equity": equity,
+    }
+
+
+def run_user_hedge_pair(
+    bars: pd.DataFrame,
+    *,
+    range_mode: RangeMode = "usdt",
+    capital_per_side: float = USER_CAPITAL_PER_SIDE,
+    leverage: float = USER_LEVERAGE,
+    range_usdt: float = USER_RANGE_USDT,
+    range_pct: float = USER_RANGE_PCT,
+    n_grids: int = USER_N_GRIDS,
+    fee_preset: FeePreset = "base",
+    fill_engine: Literal["bar", "tick"] = "tick",
+    get_trades: Callable[[int, pd.Timestamp], pd.DataFrame] | None = None,
+) -> dict[str, Any]:
+    """Moving dual-side hedge: one band, both legs, flatten the survivor if either liquidates."""
+    o = bars["open"].to_numpy(float)
+    h = bars["high"].to_numpy(float)
+    l = bars["low"].to_numpy(float)
+    c = bars["close"].to_numpy(float)
+    ts = pd.to_datetime(bars["timestamp"], utc=True)
+    fee = _fee_rate(fee_preset)
+    cfg = FillConfig.preset(fee_preset)
+    long_b = IsolatedDirBook(capital_per_side, leverage, fee, "long")
+    short_b = IsolatedDirBook(capital_per_side, leverage, fee, "short")
+    eq_l = np.empty(len(c), dtype=float)
+    eq_s = np.empty(len(c), dtype=float)
+    levels = user_levels(float(c[0]), range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids)
+    step = _step(levels)
+    reanchors = 0
+    pair_stopped = False
+    stop_bar = None
+
+    for i in range(len(c)):
+        px = float(c[i])
+        if pair_stopped or long_b.liquidated or short_b.liquidated:
+            pair_stopped = True
+            if stop_bar is None:
+                stop_bar = i
+            if not long_b.liquidated:
+                long_b.flatten(px)
+            if not short_b.liquidated:
+                short_b.flatten(px)
+            eq_l[i] = 0.0 if long_b.liquidated else long_b.equity(px)
+            eq_s[i] = 0.0 if short_b.liquidated else short_b.equity(px)
+            continue
+
+        if px < float(levels[0]) or px > float(levels[-1]):
+            levels = user_levels(px, range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids)
+            step = _step(levels)
+            long_b.lots = {}
+            short_b.lots = {}
+            reanchors += 1
+
+        mid = px
+        lo_b, hi_b = float(l[i]), float(h[i])
+        pend_l = _dir_pending(
+            direction="long", levels=levels, step=step, mid=mid, book=long_b,
+            capital=capital_per_side, leverage=leverage, n_grids=n_grids,
+            fill_engine=fill_engine, lo_b=lo_b, hi_b=hi_b,
+        )
+        pend_s = _dir_pending(
+            direction="short", levels=levels, step=step, mid=mid, book=short_b,
+            capital=capital_per_side, leverage=leverage, n_grids=n_grids,
+            fill_engine=fill_engine, lo_b=lo_b, hi_b=hi_b,
+        )
+        pending = pend_l + pend_s
+        if fill_engine == "tick" and get_trades is not None and pending:
+            trades = get_trades(i, ts.iloc[i])
+            if trades is not None and not trades.empty:
+                fills = resolve_tick_fills(pending, trades, cfg, bar_open=float(o[i]), bar_close=px)
+                for tf in fills:
+                    if str(tf.reason).startswith("long"):
+                        _apply_fill(long_b, tf, "long")
+                    elif str(tf.reason).startswith("short"):
+                        _apply_fill(short_b, tf, "short")
+        else:
+            _apply_bar_pending(long_b, pend_l, "long", lo_b, hi_b)
+            _apply_bar_pending(short_b, pend_s, "short", lo_b, hi_b)
+
+        long_b.check_liq(px)
+        short_b.check_liq(px)
+        if long_b.liquidated or short_b.liquidated:
+            pair_stopped = True
+            stop_bar = i
+            if not long_b.liquidated:
+                long_b.flatten(px)
+            if not short_b.liquidated:
+                short_b.flatten(px)
+        eq_l[i] = 0.0 if long_b.liquidated else long_b.equity(px)
+        eq_s[i] = 0.0 if short_b.liquidated else short_b.equity(px)
+
+    last_px = float(c[-1])
+    long_r = _book_snapshot(
+        long_b, eq_l, capital_per_side, last_px, direction="long", reanchors=reanchors,
+        range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids,
+        fee_preset=fee_preset, fill_engine=fill_engine, leverage=leverage,
+    )
+    short_r = _book_snapshot(
+        short_b, eq_s, capital_per_side, last_px, direction="short", reanchors=reanchors,
+        range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids,
+        fee_preset=fee_preset, fill_engine=fill_engine, leverage=leverage,
+    )
+    long_r["timestamps"] = ts.reset_index(drop=True)
+    short_r["timestamps"] = ts.reset_index(drop=True)
+    comb = combine_user_ls(long_r, short_r, capital_per_side * 2.0)
+    comb["range_mode"] = range_mode
+    comb["fee_preset"] = fee_preset
+    comb["fill_engine"] = fill_engine
+    comb["hedge_mode"] = "moving_ls_flatten_survivor"
+    comb["pair_stopped"] = bool(pair_stopped)
+    comb["stop_bar"] = stop_bar
+    comb["reanchors"] = int(reanchors)
+    comb["shared_reanchors"] = int(reanchors)
+    return comb
 
 
 def run_user_ls_pair(

@@ -5,7 +5,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from src.analysis.user_moving_grid import daily_pnl, run_user_ls_pair, user_levels
+from src.analysis.user_moving_grid import IsolatedDirBook, daily_pnl, run_user_hedge_pair, run_user_ls_pair, user_levels
 
 
 def test_usdt_levels_span_40():
@@ -44,6 +44,45 @@ def test_both_range_modes_run_bar_ls():
         assert r["end_equity"] >= 0
         assert len(r["daily"]) >= 1
         assert "daily_pnl" in r["daily"].columns
+
+
+def test_flatten_closes_qty():
+    b = IsolatedDirBook(5_000.0, 5.0, 0.0002, "short")
+    b.open_lot(10.0, 100.0, 1)
+    assert b.qty > 0
+    b.flatten(100.0)
+    assert b.qty == 0.0
+    assert b.lots == {}
+
+
+def test_hedge_pair_runs_and_matches_sides():
+    bars = _chop_bars()
+    r = run_user_hedge_pair(bars, range_mode="usdt", fill_engine="bar", fee_preset="base")
+    assert r["hedge_mode"] == "moving_ls_flatten_survivor"
+    assert r["long"]["reanchors"] == r["short"]["reanchors"]
+    assert len(r["daily"]) >= 1
+    if r["pair_stopped"]:
+        assert abs(r["long"]["end_qty"]) < 1e-6 or r["liquidated_long"]
+        assert abs(r["short"]["end_qty"]) < 1e-6 or r["liquidated_short"]
+
+
+def test_hedge_flattens_survivor_after_crash():
+    close = np.concatenate([np.full(8, 130.0), np.linspace(130.0, 40.0, 40)])
+    ts = pd.date_range("2026-07-16", periods=len(close), freq="h", tz="UTC")
+    bars = pd.DataFrame(
+        {
+            "timestamp": ts,
+            "open": close,
+            "high": close + 0.4,
+            "low": np.minimum(close - 0.4, np.roll(close, 1)),
+            "close": close,
+        }
+    )
+    r = run_user_hedge_pair(bars, range_mode="usdt", fill_engine="bar", fee_preset="base")
+    if r["liquidated_long"] or r["liquidated_short"]:
+        assert r["pair_stopped"] is True
+        alive = r["short"] if r["liquidated_long"] else r["long"]
+        assert abs(alive["end_qty"]) < 1e-6
 
 
 def test_daily_pnl_first_day():
