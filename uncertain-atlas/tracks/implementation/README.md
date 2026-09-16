@@ -1,3 +1,4 @@
+- [`worked-example-fintxcode-vs-invalid.md`](worked-example-fintxcode-vs-invalid.md) — Code==0 only if fully valid ≠ CheckTx 过了；≠ Code!=0 没进块；≠ Finalize 已交差（不变量 585）
 - [`worked-example-finmisbeh-notvoteinfo-vs-bundled.md`](worked-example-finmisbeh-notvoteinfo-vs-bundled.md) — misbehavior fault list ≠ VoteInfo availability；≠ Process misbehavior already定奖惩；≠ Misbehavior.type already slashed（不变量 569）
 - [`worked-example-findecided-notproposed-vs-bundled.md`](worked-example-findecided-notproposed-vs-bundled.md) — decided block commit ≠ proposed commit；≠ local commit；≠ can use means slashed（不变量 568）
 - [`worked-example-finreward-notslashed-vs-bundled.md`](worked-example-finreward-notslashed-vs-bundled.md) — can use 定奖惩 ≠ slashed；≠ VoteInfo availability rewards；≠ already committed（不变量 567）
