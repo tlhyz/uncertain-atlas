@@ -1,3 +1,4 @@
+- [`worked-example-finreward-notslashed-vs-bundled.md`](worked-example-finreward-notslashed-vs-bundled.md) — can use 定奖惩 ≠ slashed；≠ VoteInfo availability rewards；≠ already committed（不变量 567）
 - [`worked-example-finfill-notcommitted-vs-bundled.md`](worked-example-finfill-notcommitted-vs-bundled.md) — all fields / request complete ≠ committed；≠ finfields / finpersist；≠ apply candidate / 583 refill（不变量 566）
 - [`worked-example-finfill-notrefill-vs-bundled.md`](worked-example-finfill-notrefill-vs-bundled.md) — will fill up all fields（473）≠ no need to provide again；≠ Finalize 时的 Process 保证 bundled；≠ 583 not refill（不变量 565）
 - [`worked-example-finfill-notdecprop-vs-bundled.md`](worked-example-finfill-notdecprop-vs-bundled.md) — all fields（473）≠ decided/proposed interchangeable；≠ Prepare/Process passed means dec/prop；≠ Finalize专有栏 same as Prepare/Process（不变量 564）
