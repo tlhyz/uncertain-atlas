@@ -1,3 +1,9 @@
+| A2860 | 记录 | 会与 476 / 404 / 475 / 147 / 621 糊成「看见 may be empty 就已经没有状态 interchangeable、已经交差 interchangeable、已经 finharddet bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash may be empty not no state root / not settled / not finharddet bundled 正式三事（476 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。476 finharddet unbundling 启动（620 item 1） |
+| A2859 | 中 | 怎样挑空根、怎样写死常量、怎样测确定性会被抄进不确定 | 不抄。不写怎样挑空根。不另写 19 节 |
+| A2858 | 高 | 看见 may be empty 会被写成已经 finharddet bundled，或当成已经 621 nothardcoded / 622 notnondet / 470 findet | 官方 FinalizeBlock Usage 476 item 1：not finharddet bundled / not 621 / not 622 |
+| A2857 | 高 | 看见 may be empty 会被写成已经交差，或当成已经 147 apphash vs this block / 614 notheader / 335 finpersist | 官方 FinalizeBlock Usage 476 item 1：may be empty not settled / not 147 / not 614 |
+| A2856 | 高 | 看见 may also be empty 会被写成已经没有状态根，或当成已经 404 finapphash / 475 finmerkle / 392 initchain apphash | 官方 FinalizeBlock Usage 476 item 1：may be empty not no state root / not 404 / not 475 |
+
 | A2855 | 记录 | 会与 589 / 362 / 385 / 617 / 618 糊成「看见 set to 0 就已经决定 interchangeable、已经块间隔 interchangeable、已经 fndelay bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay Set to 0 not decided / not block interval / not fndelay bundled 正式三事（589 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。589 fndelay unbundling 完成（619 item 3） |
 | A2854 | 中 | 怎样填 next_block_delay、怎样抄规范 1s 会被抄进不确定 | 不抄。不写怎样填 next_block_delay。不另写 19 节 |
 | A2853 | 高 | 看见 set to 0 会被写成已经 fndelay bundled，或当成已经 617 notslot / 618 notwallclock / 480 finmorepre | 官方 FinalizeBlock Usage 589 item 3：not fndelay bundled / not 617 / not 618 |

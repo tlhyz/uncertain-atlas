@@ -1,3 +1,4 @@
+- [`name-the-finharddet-notempty-bar.md`](name-the-finharddet-notempty-bar.md) — FinalizeBlockResponse app_hash may be empty not no state root / not settled / not finharddet bundled 正式三事（476 余量）（不变量 620）
 - [`name-the-fndelay-notsetzero-bar.md`](name-the-fndelay-notsetzero-bar.md) — FinalizeBlockResponse next_block_delay Set to 0 not decided / not block interval / not fndelay bundled 正式三事（589 余量）（不变量 619）
 - [`name-the-fndelay-notwallclock-bar.md`](name-the-fndelay-notwallclock-bar.md) — FinalizeBlockResponse next_block_delay each node MAY / wallclock not app_hash MUST be deterministic / not whole response nondeterministic 正式三事（589 余量）（不变量 618）
 - [`name-the-fndelay-notslot-bar.md`](name-the-fndelay-notslot-bar.md) — FinalizeBlockResponse next_block_delay Deterministic = No not slot / not finality / not timeout_commit 正式三事（589 余量）（不变量 617）
