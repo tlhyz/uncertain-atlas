@@ -1,3 +1,4 @@
+- [`finmerkle-notnextheader-sold-as-bundled.md`](finmerkle-notnextheader-sold-as-bundled.md) — included in next block 被写成已经写进下一块头 / 已经是本头 AppHash / 已经 finmerkle bundled（不变量 624）
 - [`finmerkle-notthisheader-sold-as-bundled.md`](finmerkle-notthisheader-sold-as-bundled.md) — optional Merkle root 被写成已经是本头 AppHash / 已经交差 / 已经 finmerkle bundled（不变量 623）
 - [`finharddet-notnondet-sold-as-bundled.md`](finharddet-notnondet-sold-as-bundled.md) — MUST be deterministic 被写成 next_block_delay 非确定 / 已经 settled / 已经 finharddet bundled（不变量 622）
 - [`finharddet-nothardcoded-sold-as-bundled.md`](finharddet-nothardcoded-sold-as-bundled.md) — may be hard-coded 被写成必须真是 Merkle root / 已经交差 / 已经 finharddet bundled（不变量 621）

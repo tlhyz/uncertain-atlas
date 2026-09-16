@@ -1,3 +1,4 @@
+- [`worked-example-finmerkle-notnextheader-vs-bundled.md`](worked-example-finmerkle-notnextheader-vs-bundled.md) — included in next block≠已写进/本头AppHash；≠finmerkle bundled/optional/query（不变量 624）
 - [`worked-example-finmerkle-notthisheader-vs-bundled.md`](worked-example-finmerkle-notthisheader-vs-bundled.md) — optional Merkle root≠本头AppHash/交差；≠finmerkle bundled/next header/query（不变量 623）
 - [`worked-example-finharddet-notnondet-vs-bundled.md`](worked-example-finharddet-notnondet-vs-bundled.md) — MUST be deterministic≠delay nondet/交差；≠finharddet bundled/empty/hard-coded（不变量 622）
 - [`worked-example-finharddet-nothardcoded-vs-bundled.md`](worked-example-finharddet-nothardcoded-vs-bundled.md) — hard-coded≠Merkle root/交差；≠finharddet bundled/empty/deterministic（不变量 621）
