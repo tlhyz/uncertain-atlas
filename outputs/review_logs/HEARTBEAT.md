@@ -504,3 +504,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T00:30Z | P7-09 pass1 | check/cache/remap/YAML-0/sides; tests not yet run
 2026-09-16T00:45Z | P7-09 done | 5 passes; help%% / yours-yaml / ROOT=parents[2]; 25 tests; tick 1d + bar 3d smoke
 2026-09-16T00:50Z | P7-10 | soxl-lab/使用注意事项.md pushed; ticks stay in cache/
+2026-09-16T00:55Z | P7-11 | extensible YAML: geometric/fee_bps/reanchor/mmr + register_hedge; 29 tests

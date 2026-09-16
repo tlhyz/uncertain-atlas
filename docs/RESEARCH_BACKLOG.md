@@ -141,6 +141,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-08 | User-editable tick grid runner (YAML + CLI) | **done** | `soxl-lab/scripts/run_grid.py` + `params/run.yaml` |
 | P7-09 | Harden runner 5-pass review/optimize (check/cache/remap/YAML) | **done** | 5 passes; ROOT fix; 25 tests + cache smoke — outputs/review_logs/2026-09-16_P7-09_runner_5pass.md |
 | P7-10 | Write Chinese usage notes and push | **done** | `soxl-lab/使用注意事项.md` — outputs/review_logs/2026-09-16_P7-10_usage_notes.md |
+| P7-11 | Extensible spec (grid_kind/fee_bps/reanchor/hedge registry) | **done** | outputs/review_logs/2026-09-16_P7-11_extensible_spec.md |
 
 ---
 
