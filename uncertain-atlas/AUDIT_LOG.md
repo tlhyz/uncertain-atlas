@@ -1,3 +1,9 @@
+| A2815 | 记录 | 会与 480 / 589 / 432 / 47 / 362 糊成「看见 includes processing time 就已经 timeout_commit、就已经 wallclock 非确定 interchangeable、已经 finmorepre bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay includes processing time not timeout_commit / wallclock 正式三事（480 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。480 finmorepre unbundling 启动 |
+| A2814 | 中 | 怎样填 next_block_delay、怎样配 NTP、怎样抄规范 1s 会被抄进不确定 | 不抄。不写怎样填 next_block_delay。不另写 19 节 |
+| A2813 | 高 | 看见 includes processing time 会被写成已经 finmorepre bundled，或当成已经 more precommits / after committing / 480 item 2 / 480 item 3 | 官方 FinalizeBlock Usage 480 item 1：not finmorepre bundled / not 480 item 2 / not 480 item 3 |
+| A2812 | 高 | 看见 includes processing time 会被写成已经 wallclock 非确定，或当成已经 589 fndelay / 470 findet / 476 finharddet | 官方 FinalizeBlock Usage 480 item 1：includes processing time not wallclock / not 589 |
+| A2811 | 高 | 看见 This includes processing time 会被写成已经 timeout_commit，或当成已经 47 / 432 finrespend / 385 block interval | 官方 FinalizeBlock Usage 480 item 1：includes processing time not timeout_commit / not 47 / not 432 |
+
 | A2810 | 记录 | 会与 479 / 362 / 478 / 608 / 609 糊成「看见 decides block v 就已经到了这一高就会调 Finalize、已经 persist outputs interchangeable、已经 fintrigger bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When trigger decides block v not at height h will Finalize / not persist outputs 正式三事（479 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。479 fintrigger unbundling 完成 |
 | A2809 | 中 | 怎样收块片、怎样数 2f+1、怎样落决定会被抄进不确定 | 不抄。不写怎样收块片。不另写 19 节 |
 | A2808 | 高 | 看见 decides block v 会被写成已经 fintrigger bundled，或当成已经 Proposal + all block parts / 2f+1 precommit / 608 notparts / 609 notprecommit | 官方 FinalizeBlock When 479 item 3：not fintrigger bundled / not 479 item 1 / not 479 item 2 |

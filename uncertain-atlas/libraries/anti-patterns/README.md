@@ -1,3 +1,4 @@
+- [`finmorepre-notproctime-sold-as-bundled.md`](finmorepre-notproctime-sold-as-bundled.md) — includes processing time 被写成已经 timeout_commit / 已经 wallclock 非确定 / 已经 finmorepre bundled（不变量 611）
 - [`fintrigger-notdecides-sold-as-bundled.md`](fintrigger-notdecides-sold-as-bundled.md) — decides block v 被写成已经 at height h will Finalize / 已经 persist outputs / 已经 fintrigger bundled（不变量 610）
 - [`fintrigger-notprecommit-sold-as-bundled.md`](fintrigger-notprecommit-sold-as-bundled.md) — 2f+1 precommit 被写成已经 prevote ExtendVote / 已经 without all block parts / 已经 fintrigger bundled（不变量 609）
 - [`fintrigger-notparts-sold-as-bundled.md`](fintrigger-notparts-sold-as-bundled.md) — Proposal + all block parts 被写成已经 only hash / 已经 Process 跑过 / 已经 fintrigger bundled（不变量 608）
