@@ -1,4 +1,4 @@
-# Current Conclusions (Honest — 2026-09-15)
+# Current Conclusions (Honest — 2026-09-16)
 
 > Update after each major experiment. **Do not beautify FAIL results.**  
 > Each claim: confidence + supporting + contradicting experiments.
