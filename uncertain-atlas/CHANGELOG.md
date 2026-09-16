@@ -1,3 +1,7 @@
+## 2026-09-16（续 734）
+
+- 不变量 617；语料 C594；模式 name-the-fndelay-notslot-bar；反模式 fndelay-notslot-sold-as-bundled；L10.3 第 586 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay Deterministic = No not slot / not finality / not timeout_commit 正式三事（589 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。589 fndelay unbundling 启动（617 item 1）。
+
 ## 2026-09-16（续 733）
 
 - 不变量 616；语料 C593；模式 name-the-finreturn-notpersist-bar；反模式 finreturn-notpersist-sold-as-bundled；L10.3 第 585 条。填 L4.4 / CometBFT 档案 FinalizeBlock When CometBFT persists tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state 正式三事（587 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。587 finreturn unbundling 完成（616 item 3）。
