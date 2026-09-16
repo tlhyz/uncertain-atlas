@@ -52,7 +52,20 @@ python3 soxl-lab/scripts/run_grid.py --fills bar --start 2026-07-16 --end 2026-0
 
 仓库根目录也可以：`python3 scripts/run_soxl_grid.py`（同一个入口）。
 
-## 4. 常见拒绝
+## 4. 以后改规则 / 一次试多组
+
+```bash
+# 看现在能接什么对冲、格子、带宽
+python3 soxl-lab/scripts/run_grid.py --list-extensions
+
+# 一组变体，叠在 params/sweep.yaml（默认 bar + 1 天，防误跑全窗）
+python3 soxl-lab/scripts/run_grid.py --sweep soxl-lab/params/sweep.yaml --check
+python3 soxl-lab/scripts/run_grid.py --sweep soxl-lab/params/sweep.yaml --fills bar --start 2026-07-16 --end 2026-07-16
+```
+
+新对冲 / 新格子：往 `soxl-lab/extensions/` 丢 `*.py`，不要改 `run_grid.py`。见 [`../extensions/README.md`](../extensions/README.md)。
+
+## 5. 常见拒绝
 
 | 情况 | 怎么办 |
 |------|--------|

@@ -28,6 +28,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-12 | Download remaining Vision SOXL 2026-05-15→07-14 | **done** | 61 prefix days + 6 gap; local **120d** 2026-05-15→09-11 0 gaps — outputs/review_logs/2026-09-16_P1-12_soxl_listing_prefix_PASS.md |
 | P1-13 | Validate listing-length SOXL 1h (2866) vs cached ticks | **done** | **2866/2866** hours; p99 close err 1.8e-4 — outputs/review_logs/2026-09-16_P1-13_listing_tick_coverage_PASS.md |
 | P1-14 | Manifest SOXL aggTrades 2026-05-15→09-11 (120d sha256) | **done** | 120d / 62,409,315 rows / 0 gaps — outputs/review_logs/2026-09-16_P1-14_soxl_listing_manifest_PASS.md |
+| P1-15 | Audit cache vs committed tick manifests | pending | SNXX/BTC/ETH/SOL files may have been evicted |
 | P1-03 | Download SNXXUSDT aggTrades (detect earliest) | done | 65 days |
 | P1-04 | Run `build_manifest.py` + sha256 all files | done | data/manifests/*.json |
 | P1-05 | Validate every SOXL bar has aggTrades | done | 1560/1560 |
@@ -145,6 +146,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-10 | Write Chinese usage notes and push | **done** | `soxl-lab/使用注意事项.md` — outputs/review_logs/2026-09-16_P7-10_usage_notes.md |
 | P7-11 | Extensible spec (grid_kind/fee_bps/reanchor/hedge registry) | **done** | outputs/review_logs/2026-09-16_P7-11_extensible_spec.md |
 | P7-12 | 1d tick smoke: default vs geometric vs fee_bps=4 | **done** | knobs move path; 1d not a verdict — outputs/review_logs/2026-09-16_P7-12_knob_smoke.md |
+| P7-13 | Plugin registry + sweep + extensions dir | **done** | outputs/review_logs/2026-09-16_P7-13_extension_hooks.md |
 
 ---
 

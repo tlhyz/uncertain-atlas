@@ -1,0 +1,23 @@
+# 一次跑多组。每组叠在 extends 上，命令行再盖一层。
+#   python3 soxl-lab/scripts/run_grid.py --sweep soxl-lab/params/sweep.yaml --check
+#   python3 soxl-lab/scripts/run_grid.py --sweep soxl-lab/params/sweep.yaml --fills bar --start 2026-07-16 --end 2026-07-16
+# 结论仍然必须 fills: tick。下面默认 bar + 1 天，避免误跑全窗逐笔。
+
+extends: run.yaml
+fills: bar
+window:
+  start: "2026-07-16"
+  end: "2026-07-16"
+
+variants:
+  - tag: yours
+  - tag: lev3
+    leverage: 3
+  - tag: g80
+    n_grids: 80
+    range:
+      usdt: 15
+  - tag: pct10
+    range:
+      mode: pct
+      pct: 0.10

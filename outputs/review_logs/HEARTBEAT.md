@@ -509,3 +509,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T01:07Z | P1-13 | listing 1h 2866/2866 ticks PASS; p99 close err 1.8e-4; 29 grid tests
 2026-09-16T01:24Z | P1-14 | SOXL listing manifest 120d 62,409,315 rows 0 gaps; 07-15 audit file untouched
 2026-09-16T01:52Z | P7-12 | 1d tick knobs: arith +4.92% / geo +4.33% / cons+4bps +5.55% (fill model differs); not a verdict
+2026-09-16T02:45Z | P7-13 | grid_ext registry + extensions/ + --sweep; 40 tests; 1d bar sweep knobs bite; not a verdict

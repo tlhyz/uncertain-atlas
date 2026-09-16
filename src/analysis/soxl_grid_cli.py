@@ -20,50 +20,31 @@ from qtb.data.binance_futures import (
     list_klines_cache_ranges,
     missing_trade_days,
 )
+from src.analysis.grid_ext import (
+    DEFAULT_EXT_DIR,
+    HEDGE_LABELS,
+    HEDGE_RUNNERS,
+    KNOWN_YAML_KEYS,
+    describe_extensions,
+    listed_grid_kinds,
+    listed_hedges,
+    listed_ranges,
+    listed_reanchors,
+    load_extensions,
+    merge_overlay,
+    register_hedge,
+    register_grid_kind,
+    register_range,
+    register_reanchor,
+    register_yaml_keys,
+)
 from src.analysis.soxl_soxs_hedge import DayTradeCache
 from src.analysis.user_moving_grid import run_user_hedge_pair, run_user_ls_pair, run_user_one_side
 
-# New hedge books: register_hedge("name", fn) — fn(bars, **engine_kwargs) -> report dict
-HEDGE_RUNNERS = {
-    "flatten_survivor": run_user_hedge_pair,
-    "independent": run_user_ls_pair,
-}
-
-
-def register_hedge(name: str, fn: Any) -> None:
-    HEDGE_RUNNERS[str(name)] = fn
-
-
-KNOWN_YAML_KEYS = {
-    "symbol",
-    "venue",
-    "leverage",
-    "n_grids",
-    "grid_kind",
-    "moving",
-    "capital_long",
-    "capital_short",
-    "capital_per_side",
-    "capital_per_side_usdt",
-    "sides",
-    "side",
-    "range",
-    "range_mode",
-    "range_modes",
-    "hedge",
-    "fee",
-    "fee_bps",
-    "fills",
-    "tag",
-    "window",
-    "start",
-    "end",
-    "reanchor",
-    "mmr",
-    "mmr_frac",
-    "note",
-    "notes",
-}
+register_hedge("flatten_survivor", run_user_hedge_pair, label="移动多空对冲（一边爆仓就平另一边）")
+register_hedge("independent", run_user_ls_pair, label="两本独立账（一边爆了另一边继续）")
+HEDGE_LABELS.setdefault("moving_ls_flatten_survivor", HEDGE_LABELS["flatten_survivor"])
+HEDGE_LABELS.setdefault("one_side", "只做一边")
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG = ROOT / "soxl-lab" / "params" / "run.yaml"
@@ -84,7 +65,10 @@ EPILOG = """
   python3 soxl-lab/scripts/run_grid.py --mode pct --range-pct 0.10 --hedge independent --start 2026-08-01 --end 2026-08-31 --tag aug
   python3 soxl-lab/scripts/run_grid.py --fills bar --start 2026-07-16 --end 2026-07-18
   python3 soxl-lab/scripts/run_grid.py --sides long --fills bar --start 2026-07-16 --end 2026-07-18
+  python3 soxl-lab/scripts/run_grid.py --list-extensions
+  python3 soxl-lab/scripts/run_grid.py --sweep soxl-lab/params/sweep.yaml --check
 
+以后要改对冲/格子/带宽：丢文件到 soxl-lab/extensions/ 或 register_hedge / register_grid_kind / register_range。
 逐笔 CSV 故意不进 git（大约 3 GB，本机 cache/）。改参数前先 --list-cache / --check。
 """
 
@@ -105,10 +89,10 @@ class GridSpec:
     n_grids: int = 200
     capital_long: float = 5000.0
     capital_short: float = 5000.0
-    range_mode: RangeMode = "usdt"
+    range_mode: str = "usdt"
     range_usdt: float = 20.0
     range_pct: float = 0.20
-    hedge: HedgeMode = "flatten_survivor"
+    hedge: str = "flatten_survivor"
     fee: FeePreset = "base"
     fills: FillEngine = "tick"
     sides: Sides = "both"
@@ -277,20 +261,20 @@ def validate_spec(spec: GridSpec) -> list[str]:
         errs.append("只做多时 capital_long 必须 > 0")
     if spec.sides == "short" and spec.capital_short <= 0:
         errs.append("只做空时 capital_short 必须 > 0")
-    if spec.range_mode not in ("usdt", "pct"):
-        errs.append(f"range_mode 只能是 usdt/pct，收到 {spec.range_mode}")
+    if spec.range_mode not in listed_ranges():
+        errs.append(f"range_mode 只能是 {listed_ranges()}，收到 {spec.range_mode}。新带宽用 register_range")
     if spec.range_mode == "usdt" and spec.range_usdt <= 0:
         errs.append("mode=usdt 时 range_usdt 必须 > 0")
     if spec.range_mode == "pct" and spec.range_pct <= 0:
         errs.append("mode=pct 时 range_pct 必须 > 0")
     if spec.hedge not in HEDGE_RUNNERS:
-        errs.append(f"hedge 只能是 {sorted(HEDGE_RUNNERS)}，收到 {spec.hedge}。新规则用 register_hedge")
+        errs.append(f"hedge 只能是 {listed_hedges()}，收到 {spec.hedge}。新规则用 register_hedge 或丢到 soxl-lab/extensions/")
     if spec.fee not in ("base", "conservative"):
         errs.append(f"fee 只能是 base/conservative（成交参与），收到 {spec.fee}")
-    if spec.grid_kind not in ("arithmetic", "geometric"):
-        errs.append(f"grid_kind 只能是 arithmetic/geometric，收到 {spec.grid_kind}")
-    if spec.reanchor not in ("remap", "drop_lots", "flatten"):
-        errs.append(f"reanchor 只能是 remap/drop_lots/flatten，收到 {spec.reanchor}")
+    if spec.grid_kind not in listed_grid_kinds():
+        errs.append(f"grid_kind 只能是 {listed_grid_kinds()}，收到 {spec.grid_kind}。新格子用 register_grid_kind")
+    if spec.reanchor not in listed_reanchors():
+        errs.append(f"reanchor 只能是 {listed_reanchors()}，收到 {spec.reanchor}。新策略用 register_reanchor")
     if spec.mmr_frac <= 0 or spec.mmr_frac >= 1:
         errs.append("mmr_frac 必须在 (0, 1)")
     if spec.fee_bps is not None and spec.fee_bps < 0:
@@ -325,19 +309,22 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--capital", type=float, default=None, help="多空各用这么多 U（同时改两边）")
     p.add_argument("--capital-long", dest="capital_long", type=float, default=None)
     p.add_argument("--capital-short", dest="capital_short", type=float, default=None)
-    p.add_argument("--mode", choices=("usdt", "pct"), default=None, help="带宽：±N U 或 ±N%%")
+    p.add_argument("--mode", default=None, help="带宽：usdt=±N U，pct=±N%%；也可是 register_range 注册的名字")
     p.add_argument("--range-usdt", dest="range_usdt", type=float, default=None, help="±U，mode=usdt 时生效")
     p.add_argument("--range-pct", dest="range_pct", type=float, default=None, help="±小数，0.2=20%%")
-    p.add_argument("--hedge", choices=tuple(HEDGE_RUNNERS), default=None)
+    p.add_argument("--hedge", default=None, help="对冲账本。内置 flatten_survivor / independent；插件见 --list-extensions")
     p.add_argument("--sides", choices=("both", "long", "short"), default=None, help="默认 both=多空；可只跑一边")
     p.add_argument("--fee", choices=("base", "conservative"), default=None)
     p.add_argument("--fee-bps", dest="fee_bps", type=float, default=None, help="覆盖手续费，单位 bps；不填用 fee 预设")
-    p.add_argument("--grid-kind", dest="grid_kind", choices=("arithmetic", "geometric"), default=None)
-    p.add_argument("--reanchor", choices=("remap", "drop_lots", "flatten"), default=None, help="价格走出带时：remap=贴新格")
+    p.add_argument("--grid-kind", dest="grid_kind", default=None, help="arithmetic / geometric，或插件注册的格子")
+    p.add_argument("--reanchor", default=None, help="走出带：remap / drop_lots / flatten，或插件")
     p.add_argument("--mmr", dest="mmr", type=float, default=None, help="逐仓维持保证金比例，默认 0.005")
     p.add_argument("--fills", choices=("tick", "bar"), default=None, help="结论用 tick；bar 只做快速试")
     p.add_argument("--tag", default=None, help="输出目录前缀")
     p.add_argument("--out", type=Path, default=None)
+    p.add_argument("--sweep", type=Path, default=None, help="YAML 变体列表，叠在 --config / extends 上一次跑多组")
+    p.add_argument("--list-extensions", action="store_true", help="打印已注册的对冲/格子/带宽/插件")
+    p.add_argument("--ext-dir", action="append", type=Path, default=None, help="额外插件目录，可重复")
     p.add_argument("--list-cache", action="store_true", help="只看本机逐笔/K线覆盖，不跑回测")
     p.add_argument("--check", action="store_true", help="打印参数 + 窗口缺不缺逐笔，不跑回测")
     p.add_argument("--allow-empty-ticks", action="store_true", help="缺天也继续跑（默认 tick 模式缺天直接拒绝）")
@@ -452,10 +439,11 @@ def _strip(rep: dict[str, Any], spec: GridSpec) -> dict[str, Any]:
 
 def write_report_md(dest: Path, spec: GridSpec, summary: dict[str, Any], bar_source: str) -> None:
     hedge_cn = {
-        "flatten_survivor": "移动多空对冲（一边爆仓就平另一边）",
-        "moving_ls_flatten_survivor": "移动多空对冲（一边爆仓就平另一边）",
-        "independent": "两本独立账（一边爆了另一边继续）",
-        "one_side": "只做一边",
+        "flatten_survivor": HEDGE_LABELS.get("flatten_survivor", "移动多空对冲（一边爆仓就平另一边）"),
+        "moving_ls_flatten_survivor": HEDGE_LABELS.get("moving_ls_flatten_survivor", "移动多空对冲（一边爆仓就平另一边）"),
+        "independent": HEDGE_LABELS.get("independent", "两本独立账（一边爆了另一边继续）"),
+        "one_side": HEDGE_LABELS.get("one_side", "只做一边"),
+        **HEDGE_LABELS,
     }
     mode_cn = "±{:.4g} U".format(spec.range_usdt) if spec.range_mode == "usdt" else "±{:.4g}%".format(spec.range_pct * 100)
     stopped = ""
@@ -474,7 +462,7 @@ def write_report_md(dest: Path, spec: GridSpec, summary: dict[str, Any], bar_sou
         f"| 窗口 | {spec.start} → {spec.end} |",
         f"| 账本 | {hedge_cn.get(str(summary.get('hedge_mode') or spec.hedge), spec.hedge)} / sides={spec.sides} |",
         f"| 杠杆 | {spec.leverage:g}x 逐仓 |",
-        f"| 格子 | {spec.n_grids} {('等差' if spec.grid_kind == 'arithmetic' else '等比')} |",
+        f"| 格子 | {spec.n_grids} {spec.grid_kind} |",
         f"| 带宽 | {mode_cn} |",
         f"| 重锚 | {spec.reanchor} |",
         f"| 本金 | 多 {spec.capital_long:g} + 空 {spec.capital_short:g} |",
@@ -522,7 +510,8 @@ def print_check(spec: GridSpec, *, json_only: bool) -> int:
         "errors": errs,
         "missing_tick_days": miss,
         "unknown_yaml_keys": list((spec.extras or {}).keys()),
-        "hedge_modes": sorted(HEDGE_RUNNERS),
+        "hedge_modes": listed_hedges(),
+        "extensions": describe_extensions(),
     }
     if json_only:
         print(json.dumps(payload, indent=2, ensure_ascii=False, default=str))
@@ -531,7 +520,7 @@ def print_check(spec: GridSpec, *, json_only: bool) -> int:
         print(f"输出目录名：{spec.folder_name()}")
         if spec.extras:
             print(f"未识别的 YAML 键（不会生效）：{sorted(spec.extras)}")
-            print("以后要让它们生效：写进 GridSpec + 引擎，或 register_hedge。")
+            print("以后要让它们生效：register_yaml_keys + 引擎读 extras，或丢到 soxl-lab/extensions/。")
         if errs:
             print("参数错误：")
             for e in errs:
@@ -607,6 +596,7 @@ def run_spec(
         fee_bps=spec.fee_bps,
         reanchor=spec.reanchor,
         mmr_frac=spec.mmr_frac,
+        extras=spec.extras or {},
     )
     if spec.sides == "long":
         rep = run_user_one_side(bars, direction="long", capital=spec.capital_long, **shared)
@@ -645,6 +635,127 @@ def run_spec(
     return dest
 
 
+def print_extensions(*, json_only: bool) -> int:
+    load_extensions()
+    payload = describe_extensions()
+    if json_only:
+        print(json.dumps(payload, indent=2, ensure_ascii=False))
+    else:
+        print("对冲 hedge：")
+        for name, label in payload["hedge"].items():
+            print(f"  {name:24} {label}")
+        print(f"带宽 range_mode：{', '.join(payload['range_mode'])}")
+        print(f"格子 grid_kind：{', '.join(payload['grid_kind'])}")
+        print(f"重锚 reanchor：{', '.join(payload['reanchor'])}")
+        if payload["plugin_files"]:
+            print("已加载插件：")
+            for f in payload["plugin_files"]:
+                print(f"  {f}")
+        else:
+            print(f"插件目录（空也行）：{DEFAULT_EXT_DIR}")
+            print("往里面丢 *.py（不要 _ 开头），启动时自动 register_*。")
+        if payload["plugin_errors"]:
+            print("插件加载失败：")
+            for e in payload["plugin_errors"]:
+                print(f"  - {e}")
+    return 1 if payload["plugin_errors"] else 0
+
+
+def _resolve_extends(sweep_path: Path, extends: Any) -> dict[str, Any]:
+    if not extends:
+        return {}
+    cand = Path(str(extends))
+    tries = [
+        cand,
+        sweep_path.parent / cand,
+        ROOT / cand,
+        ROOT / "soxl-lab" / "params" / cand.name,
+    ]
+    for p in tries:
+        if p.exists():
+            return load_yaml(p)
+    raise FileNotFoundError(f"sweep extends 找不到：{extends}")
+
+
+def load_sweep_raw(path: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    raw = load_yaml(resolve_config(path))
+    if not isinstance(raw, dict):
+        raise ValueError("sweep 文件必须是 YAML 对象")
+    base = _resolve_extends(resolve_config(path), raw.get("extends") or raw.get("base"))
+    common = {k: v for k, v in raw.items() if k not in ("variants", "extends", "base")}
+    base = merge_overlay(base, common)
+    variants = raw.get("variants")
+    if variants is None:
+        variants = [{}]
+    if not isinstance(variants, list) or not variants:
+        raise ValueError("sweep.variants 必须是非空列表")
+    out: list[dict[str, Any]] = []
+    for i, v in enumerate(variants):
+        if v is None:
+            v = {}
+        if not isinstance(v, dict):
+            raise ValueError(f"sweep.variants[{i}] 必须是对象")
+        out.append(v)
+    return base, out
+
+
+def specs_from_sweep(path: Path, args: argparse.Namespace) -> list[GridSpec]:
+    base, variants = load_sweep_raw(path)
+    specs: list[GridSpec] = []
+    for v in variants:
+        raw = merge_overlay(base, v)
+        specs.append(apply_cli(spec_from_yaml(raw), args))
+    return specs
+
+
+def run_sweep(
+    specs: list[GridSpec],
+    *,
+    out_root: Path,
+    allow_empty_ticks: bool = False,
+    bars_from_ticks: bool = False,
+    quiet: bool = False,
+    json_only: bool = False,
+    progress_every: int = 24,
+) -> Path:
+    dest = out_root
+    dest.mkdir(parents=True, exist_ok=True)
+    rows: list[dict[str, Any]] = []
+    for spec in specs:
+        row: dict[str, Any] = {"tag": spec.tag or spec.folder_name(), "folder": spec.folder_name()}
+        try:
+            run_dir = run_spec(
+                spec,
+                out_root=dest,
+                allow_empty_ticks=allow_empty_ticks,
+                bars_from_ticks=bars_from_ticks,
+                quiet=quiet,
+                json_only=json_only,
+                progress_every=progress_every,
+            )
+            summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
+            row.update(
+                {
+                    "ok": True,
+                    "return": summary.get("return"),
+                    "max_dd": summary.get("max_dd"),
+                    "pair_stopped": summary.get("pair_stopped"),
+                    "path": str(run_dir),
+                }
+            )
+        except (ValueError, FileNotFoundError, RuntimeError) as e:
+            row.update({"ok": False, "error": str(e)})
+            print(f"error [{spec.folder_name()}]: {e}", file=sys.stderr)
+        rows.append(row)
+    compare = {"n": len(rows), "variants": rows}
+    (dest / "compare.json").write_text(json.dumps(compare, indent=2, ensure_ascii=False, default=str) + "\n", encoding="utf-8")
+    if not json_only:
+        print(f"sweep compare {dest / 'compare.json'}")
+    else:
+        print(json.dumps(compare, indent=2, ensure_ascii=False, default=str))
+    return dest
+
+
 def load_spec(args: argparse.Namespace) -> GridSpec:
     if args.config is not None:
         spec = spec_from_yaml(load_yaml(resolve_config(args.config)))
@@ -657,13 +768,49 @@ def load_spec(args: argparse.Namespace) -> GridSpec:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
-    if args.list_cache and args.config is None and args.start is None and args.end is None:
+    load_extensions(list(args.ext_dir) if args.ext_dir else None)
+
+    if args.list_extensions:
+        return print_extensions(json_only=args.json_only)
+
+    if args.list_cache and args.config is None and args.sweep is None and args.start is None and args.end is None:
         if args.symbol:
             return print_cache(args.symbol, json_only=args.json_only)
         try:
             return print_cache(load_spec(args).symbol, json_only=args.json_only)
         except FileNotFoundError:
             return print_cache("SOXLUSDT", json_only=args.json_only)
+
+    if args.sweep is not None:
+        try:
+            specs = specs_from_sweep(args.sweep, args)
+        except (FileNotFoundError, ValueError) as e:
+            print(e, file=sys.stderr)
+            return 2
+        if args.list_cache:
+            return print_cache(specs[0].symbol, json_only=args.json_only)
+        if args.check:
+            worst = 0
+            for spec in specs:
+                if not args.json_only:
+                    print(f"--- {spec.tag or spec.folder_name()} ---")
+                rc = print_check(spec, json_only=args.json_only)
+                worst = max(worst, rc)
+            return worst
+        out_root = args.out or (DEFAULT_OUT.parent / "sweeps" / date.today().isoformat())
+        if not out_root.is_absolute():
+            out_root = ROOT / out_root
+        dest = run_sweep(
+            specs,
+            out_root=out_root,
+            allow_empty_ticks=args.allow_empty_ticks,
+            bars_from_ticks=args.bars_from_ticks,
+            quiet=args.quiet,
+            json_only=args.json_only,
+            progress_every=args.progress_every,
+        )
+        compare = json.loads((dest / "compare.json").read_text(encoding="utf-8"))
+        return 0 if all(v.get("ok") for v in compare.get("variants", [])) else 2
 
     try:
         spec = load_spec(args)

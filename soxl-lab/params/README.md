@@ -6,6 +6,7 @@
 | [`01_yours_moving_grid.yaml`](01_yours_moving_grid.yaml) | 你的底稿 | **5x** 逐仓 | **200** 等差 | **±20U** 和 **±20%** | 5k 多 + 5k 空 | P7-05/07 已跑 |
 | [`02_research_atr.yaml`](02_research_atr.yaml) | 研究模板 | 1x | ATR 0.40 / ±5 | ATR | 10k | P7-03/04，不是你的本 |
 | [`windows.yaml`](windows.yaml) | 窗口 | — | — | — | — | 上市日 / 回测窗 / 下不了的窗 |
+| [`sweep.yaml`](sweep.yaml) | 一次多组 | 叠在 run.yaml | 见文件 | 见文件 | 见文件 | `--sweep`；默认 bar+1天 |
 
 步长：±20U、200 格 → 40 / 199 ≈ **0.201 U**。代码锁在 `USER_*`（`../engine/README.md`）。
 

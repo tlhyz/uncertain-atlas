@@ -30,8 +30,11 @@ fills: tick           # 结论用 tick；想先快速试用 bar
 tag: ""               # 输出目录前缀，可空
 
 # --- 以后要改再打开，不填 = 现在这套 ---
-# grid_kind: arithmetic   # 或 geometric
+# grid_kind: arithmetic   # 或 geometric；新排法 register_grid_kind
 # fee_bps: 3              # 覆盖 fee 预设的会计费率
-# reanchor: remap         # remap | drop_lots | flatten
+# reanchor: remap         # remap | drop_lots | flatten；新策略 register_reanchor
 # mmr_frac: 0.005         # 逐仓维持保证金
 # --symbol 也能换（cache 里要有该标的逐笔）
+# 一次试多组：--sweep soxl-lab/params/sweep.yaml
+# 新对冲：soxl-lab/extensions/*.py → register_hedge，然后 hedge: 那个名字
+# YAML 里多出来的键进 extras，插件自己读；--check 会列「未识别」

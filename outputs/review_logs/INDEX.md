@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-16 | P7-13 plugin registry + sweep | PASS | outputs/review_logs/2026-09-16_P7-13_extension_hooks.md |
 | 2026-09-16 | P7-12 knob smoke 1d tick | PASS | outputs/review_logs/2026-09-16_P7-12_knob_smoke.md |
 | 2026-09-16 | P1-14 listing tick manifest | PASS | outputs/review_logs/2026-09-16_P1-14_soxl_listing_manifest_PASS.md |
 | 2026-09-16 | P1-13 listing 1h vs ticks | PASS | outputs/review_logs/2026-09-16_P1-13_listing_tick_coverage_PASS.md |

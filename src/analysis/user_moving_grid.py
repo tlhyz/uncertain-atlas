@@ -35,31 +35,31 @@ USER_MMR_FRAC = 0.005
 def user_levels(
     mid: float,
     *,
-    range_mode: RangeMode = "usdt",
+    range_mode: str = "usdt",
     range_usdt: float = USER_RANGE_USDT,
     range_pct: float = USER_RANGE_PCT,
     n_grids: int = USER_N_GRIDS,
-    grid_kind: GridKind = USER_GRID_KIND,
+    grid_kind: str = USER_GRID_KIND,
+    extras: dict[str, Any] | None = None,
 ) -> np.ndarray:
-    """Moving-grid rungs. usdt: mid±N U; pct: mid±N%. arithmetic or geometric."""
+    """Moving-grid rungs. Band + spacing come from grid_ext so both can be plugged in."""
+    from src.analysis.grid_ext import resolve_band, resolve_rungs
+
     n = int(n_grids)
     if n < 2:
         raise ValueError("n_grids must be >= 2")
-    if range_mode == "pct":
-        lo = mid * (1.0 - range_pct)
-        hi = mid * (1.0 + range_pct)
-    else:
-        lo = mid - range_usdt
-        hi = mid + range_usdt
+    lo, hi = resolve_band(
+        range_mode,
+        float(mid),
+        range_usdt=range_usdt,
+        range_pct=range_pct,
+        extras=extras,
+    )
     if lo <= 0:
         lo = max(mid * 0.05, 0.01)
     if hi <= lo:
         raise ValueError(f"grid band inverted lo={lo} hi={hi}")
-    if grid_kind == "geometric":
-        return np.geomspace(lo, hi, n)
-    if grid_kind != "arithmetic":
-        raise ValueError(f"unknown grid_kind {grid_kind}")
-    return np.linspace(lo, hi, n)
+    return resolve_rungs(grid_kind, lo, hi, n)
 
 
 def _fee_rate(preset: FeePreset = "base", fee_bps: float | None = None) -> float:
@@ -221,7 +221,12 @@ def apply_reanchor(
     elif policy == "flatten":
         book.flatten(px)
     else:
-        raise ValueError(f"unknown reanchor {policy}")
+        from src.analysis.grid_ext import REANCHORS
+
+        fn = REANCHORS.get(str(policy))
+        if fn is None:
+            raise ValueError(f"unknown reanchor {policy}")
+        fn(book, old_levels, new_levels, px)
 
 
 def simulate_user_dir_grid(
@@ -238,10 +243,12 @@ def simulate_user_dir_grid(
     fill_engine: Literal["bar", "tick"] = "tick",
     get_trades: Callable[[int, pd.Timestamp], pd.DataFrame] | None = None,
     on_bar: BarHook | None = None,
-    grid_kind: GridKind = USER_GRID_KIND,
+    grid_kind: str = USER_GRID_KIND,
     fee_bps: float | None = None,
-    reanchor: ReanchorPolicy = USER_REANCHOR,
+    reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
+    extras: dict[str, Any] | None = None,
+    **_kw: Any,
 ) -> dict[str, Any]:
     if fill_engine == "tick" and get_trades is None:
         raise ValueError("fill_engine='tick' requires get_trades (refuses silent bar fallback)")
@@ -255,7 +262,14 @@ def simulate_user_dir_grid(
     book = IsolatedDirBook(capital, leverage, fee, direction, mmr_frac=mmr_frac)
     equity = np.empty(len(c), dtype=float)
     mid0 = float(c[0])
-    band = dict(range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids, grid_kind=grid_kind)
+    band = dict(
+        range_mode=range_mode,
+        range_usdt=range_usdt,
+        range_pct=range_pct,
+        n_grids=n_grids,
+        grid_kind=grid_kind,
+        extras=extras or {},
+    )
     levels = user_levels(mid0, **band)
     step = _step(levels)
     reanchors = 0
@@ -490,10 +504,12 @@ def run_user_hedge_pair(
     fill_engine: Literal["bar", "tick"] = "tick",
     get_trades: Callable[[int, pd.Timestamp], pd.DataFrame] | None = None,
     on_bar: BarHook | None = None,
-    grid_kind: GridKind = USER_GRID_KIND,
+    grid_kind: str = USER_GRID_KIND,
     fee_bps: float | None = None,
-    reanchor: ReanchorPolicy = USER_REANCHOR,
+    reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
+    extras: dict[str, Any] | None = None,
+    **_kw: Any,
 ) -> dict[str, Any]:
     """Moving dual-side hedge: one band, both legs, flatten the survivor if either liquidates."""
     if fill_engine == "tick" and get_trades is None:
@@ -511,7 +527,14 @@ def run_user_hedge_pair(
     short_b = IsolatedDirBook(cap_s, leverage, fee, "short", mmr_frac=mmr_frac)
     eq_l = np.empty(len(c), dtype=float)
     eq_s = np.empty(len(c), dtype=float)
-    band = dict(range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids, grid_kind=grid_kind)
+    band = dict(
+        range_mode=range_mode,
+        range_usdt=range_usdt,
+        range_pct=range_pct,
+        n_grids=n_grids,
+        grid_kind=grid_kind,
+        extras=extras or {},
+    )
     levels = user_levels(float(c[0]), **band)
     step = _step(levels)
     reanchors = 0
@@ -623,10 +646,12 @@ def run_user_ls_pair(
     fill_engine: Literal["bar", "tick"] = "tick",
     get_trades=None,
     on_bar: BarHook | None = None,
-    grid_kind: GridKind = USER_GRID_KIND,
+    grid_kind: str = USER_GRID_KIND,
     fee_bps: float | None = None,
-    reanchor: ReanchorPolicy = USER_REANCHOR,
+    reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
+    extras: dict[str, Any] | None = None,
+    **_kw: Any,
 ) -> dict[str, Any]:
     cap_l = float(capital_long if capital_long is not None else capital_per_side)
     cap_s = float(capital_short if capital_short is not None else capital_per_side)
@@ -643,6 +668,7 @@ def run_user_ls_pair(
         fee_bps=fee_bps,
         reanchor=reanchor,
         mmr_frac=mmr_frac,
+        extras=extras or {},
     )
     # Independent books run sequentially; on_bar reports the side currently simulating.
     long_r = simulate_user_dir_grid(bars, direction="long", capital=cap_l, on_bar=on_bar, **shared)
@@ -669,10 +695,12 @@ def run_user_one_side(
     fill_engine: Literal["bar", "tick"] = "tick",
     get_trades=None,
     on_bar: BarHook | None = None,
-    grid_kind: GridKind = USER_GRID_KIND,
+    grid_kind: str = USER_GRID_KIND,
     fee_bps: float | None = None,
-    reanchor: ReanchorPolicy = USER_REANCHOR,
+    reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
+    extras: dict[str, Any] | None = None,
+    **_kw: Any,
 ) -> dict[str, Any]:
     """Single-direction moving grid, same report shape as the pair runners."""
     r = simulate_user_dir_grid(
@@ -692,6 +720,7 @@ def run_user_one_side(
         fee_bps=fee_bps,
         reanchor=reanchor,
         mmr_frac=mmr_frac,
+        extras=extras or {},
     )
     daily = daily_pnl(r["timestamps"], r["equity"], capital)
     slim = {k: v for k, v in r.items() if k not in ("equity", "timestamps")}
