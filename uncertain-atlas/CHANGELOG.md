@@ -1,3 +1,7 @@
+## 2026-09-16（续 707）
+
+- 不变量 590；语料 C567；模式 name-the-fincommit-bar；反模式 fincommit-sold-as-settled；L10.3 第 559 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calls Commit instruct persist 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 470 → local 590。更新 commitpersist 等处 stale 467/468 → 587/590；修正 finlock-vs-commit 占位 → fincommit-vs-persist；fndelay forward ref 469→589。
+
 ## 2026-09-16（续 706）
 
 - 不变量 589；语料 C566；模式 name-the-fndelay-bar；反模式 fndelay-sold-as-slot；L10.3 第 558 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay 非确定正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 469 → local 589。更新 finmorepre / findet / consensus 等处 forward ref 469→589。
