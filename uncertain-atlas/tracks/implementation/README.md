@@ -1,3 +1,4 @@
+- [`worked-example-finasresult-notcand-vs-bundled.md`](worked-example-finasresult-notcand-vs-bundled.md) — as result executing≠Process already ran；≠apply candidate/fincand；≠466/351（不变量 595）
 - [`worked-example-finasresult-notsettled-vs-bundled.md`](worked-example-finasresult-notsettled-vs-bundled.md) — must provide≠改了集合/H+1；≠交差/persist；≠477 bundled/363/458（不变量 594）
 - [`worked-example-finh1-vs-round0.md`](worked-example-finh1-vs-round0.md) — starts h+1≠交差；round0≠同高换轮/delay；step11≠unlock/bundled（不变量 593）
 - [`worked-example-finunlock-vs-lock.md`](worked-example-finunlock-vs-lock.md) — unlock≠交差；newly received≠optional recheck；step10≠h+1 round0（不变量 592）
