@@ -1,4 +1,5 @@
-# 改这一份就能跑。命令行同名参数会覆盖这里。
+# 改这一份就能跑。开跑前读 soxl-lab/使用注意事项.md
+# 命令行同名参数会覆盖这里。
 #   python3 soxl-lab/scripts/run_grid.py --list-cache
 #   python3 soxl-lab/scripts/run_grid.py --check
 #   python3 soxl-lab/scripts/run_grid.py

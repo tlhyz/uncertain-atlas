@@ -5,6 +5,7 @@
 | 类 | 路径 |
 |----|------|
 | 看板 | `README.md` |
+| 注意事项 | `使用注意事项.md` |
 | 数据 | `data/README.md` · `data/inventory.json` · `data/manifests/` |
 | 你的参数 | `params/01_yours_moving_grid.yaml` |
 | 研究参数 | `params/02_research_atr.yaml` |

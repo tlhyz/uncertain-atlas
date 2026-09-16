@@ -2,6 +2,8 @@
 
 只放 SOXL。打开这一页就够。原始逐笔在本机 `cache/`，不入库。
 
+**开跑前先读 [`使用注意事项.md`](使用注意事项.md)**（逐笔不进 git、怎么换机器、怎么读停机后的零收益日）。
+
 ## 先看结论 — 不要实盘
 
 本金 **1 万 U**（5k 多 + 5k 空），窗口 2026-07-16 → 09-11，**逐笔**。
@@ -42,7 +44,7 @@ python3 soxl-lab/scripts/run_grid.py
 python3 soxl-lab/scripts/run_grid.py --leverage 3 --n-grids 80 --range-usdt 15
 ```
 
-说明：[`scripts/README.md`](scripts/README.md)。结果在 `results/runs/`。逐笔 CSV 不进 git。
+说明：[`使用注意事项.md`](使用注意事项.md) · [`scripts/README.md`](scripts/README.md)。结果在 `results/runs/`。逐笔 CSV 不进 git。
 
 ## 三个抽屉
 

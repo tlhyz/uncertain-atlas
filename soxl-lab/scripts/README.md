@@ -1,7 +1,6 @@
 # 自己改参数跑 SOXL 逐笔网格
 
-本机 `cache/` 里是 Binance UM 真实 aggTrades，默认 **cache_only**，不会乱下。
-逐笔 CSV **不进 git**（大约 3 GB）。
+**先读 [`../使用注意事项.md`](../使用注意事项.md)。** 本机 `cache/` 是 Binance UM 真实 aggTrades，默认 **cache_only**，不会乱下。逐笔 CSV **不进 git**（大约 3 GB）。
 
 ## 0. 先看本机有没有数据
 

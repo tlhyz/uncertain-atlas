@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-16 | P7-10 usage notes | PASS | outputs/review_logs/2026-09-16_P7-10_usage_notes.md |
 | 2026-09-16 | P7-09 runner 5-pass harden | PASS | outputs/review_logs/2026-09-16_P7-09_runner_5pass.md |
 | 2026-09-16 | P7-08 editable tick grid runner | PASS | outputs/review_logs/2026-09-16_P7-08_soxl_grid_runner_PASS.md |
 | 2026-09-16 | P7-07 user moving L+S hedge | STOPPED | outputs/review_logs/2026-09-16_P7-07_user_moving_hedge_STOPPED.md |
