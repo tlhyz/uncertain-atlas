@@ -31,10 +31,14 @@ tag: ""               # 输出目录前缀，可空
 
 # --- 以后要改再打开，不填 = 现在这套 ---
 # grid_kind: arithmetic   # 或 geometric；新排法 register_grid_kind
+# sizer: equal            # equal | martingale | fixed；新仓位 register_sizer
+# martingale_ratio: 1.2   # 仅 sizer=martingale；进 extras
+# lot_usdt: 50            # 仅 sizer=fixed
 # fee_bps: 3              # 覆盖 fee 预设的会计费率
 # reanchor: remap         # remap | drop_lots | flatten；新策略 register_reanchor
 # mmr_frac: 0.005         # 逐仓维持保证金
 # --symbol 也能换（cache 里要有该标的逐笔）
+# --set 键=值 不用改文件也能加 extras
 # 一次试多组：--sweep soxl-lab/params/sweep.yaml
 # 新对冲：soxl-lab/extensions/*.py → register_hedge，然后 hedge: 那个名字
-# YAML 里多出来的键进 extras，插件自己读；--check 会列「未识别」
+# YAML 里多出来的键进 extras，插件自己读；--check 会列「未登记」（仍会传入）

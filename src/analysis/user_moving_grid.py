@@ -59,7 +59,7 @@ def user_levels(
         lo = max(mid * 0.05, 0.01)
     if hi <= lo:
         raise ValueError(f"grid band inverted lo={lo} hi={hi}")
-    return resolve_rungs(grid_kind, lo, hi, n)
+    return resolve_rungs(grid_kind, lo, hi, n, extras=extras)
 
 
 def _fee_rate(preset: FeePreset = "base", fee_bps: float | None = None) -> float:
@@ -248,6 +248,7 @@ def simulate_user_dir_grid(
     reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
     extras: dict[str, Any] | None = None,
+    sizer: str = "equal",
     **_kw: Any,
 ) -> dict[str, Any]:
     if fill_engine == "tick" and get_trades is None:
@@ -288,32 +289,22 @@ def simulate_user_dir_grid(
             step = _step(levels)
             reanchors += 1
         mid = px
-        pending: list[PendingFill] = []
         lo_b, hi_b = float(l[i]), float(h[i])
-        if direction == "long":
-            for idx, lvl in enumerate(levels):
-                if idx in book.lots or lvl > mid:
-                    continue
-                if fill_engine == "tick" and not (lo_b - step <= lvl <= hi_b + step):
-                    continue
-                pending.append(PendingFill("buy", float(lvl), idx, notional=max(capital * leverage / n_grids, 1.0), reason="grid"))
-            for idx, lot_q in list(book.lots.items()):
-                tp = float(levels[idx]) + step if idx < len(levels) else book.avg + step
-                if idx + 1 < len(levels):
-                    tp = float(levels[idx + 1])
-                pending.append(PendingFill("sell", tp, idx + 1, qty=lot_q, reduce_only=True, reason="grid_tp"))
-        else:
-            for idx, lvl in enumerate(levels):
-                if idx in book.lots or lvl < mid:
-                    continue
-                if fill_engine == "tick" and not (lo_b - step <= lvl <= hi_b + step):
-                    continue
-                pending.append(PendingFill("sell", float(lvl), idx, notional=max(capital * leverage / n_grids, 1.0), reason="grid"))
-            for idx, lot_q in list(book.lots.items()):
-                tp = float(levels[idx]) - step
-                if idx - 1 >= 0:
-                    tp = float(levels[idx - 1])
-                pending.append(PendingFill("buy", tp, idx - 1, qty=lot_q, reduce_only=True, reason="grid_tp"))
+        pending = _dir_pending(
+            direction=direction,
+            levels=levels,
+            step=step,
+            mid=mid,
+            book=book,
+            capital=capital,
+            leverage=leverage,
+            n_grids=n_grids,
+            fill_engine=fill_engine,
+            lo_b=lo_b,
+            hi_b=hi_b,
+            sizer=sizer,
+            extras=extras or {},
+        )
 
         if fill_engine == "tick":
             trades = get_trades(i, ts.iloc[i])
@@ -395,6 +386,29 @@ def combine_user_ls(long_r: dict[str, Any], short_r: dict[str, Any], capital_tot
     }
 
 
+def _rung_notional(
+    *,
+    sizer: str,
+    capital: float,
+    leverage: float,
+    n_grids: int,
+    level_idx: int,
+    extras: dict[str, Any] | None,
+    direction: str,
+) -> float:
+    from src.analysis.grid_ext import resolve_notional
+
+    return resolve_notional(
+        sizer,
+        capital=capital,
+        leverage=leverage,
+        n_grids=n_grids,
+        level_idx=level_idx,
+        extras=extras or {},
+        direction=direction,
+    )
+
+
 def _dir_pending(
     *,
     direction: Literal["long", "short"],
@@ -408,9 +422,12 @@ def _dir_pending(
     fill_engine: str,
     lo_b: float,
     hi_b: float,
+    sizer: str = "equal",
+    extras: dict[str, Any] | None = None,
 ) -> list[PendingFill]:
     pending: list[PendingFill] = []
     tag = direction
+    extras = extras or {}
     if direction == "long":
         for idx, lvl in enumerate(levels):
             if idx in book.lots or lvl > mid:
@@ -418,7 +435,21 @@ def _dir_pending(
             if fill_engine == "tick" and not (lo_b - step <= lvl <= hi_b + step):
                 continue
             pending.append(
-                PendingFill("buy", float(lvl), idx, notional=max(capital * leverage / n_grids, 1.0), reason=f"{tag}_grid")
+                PendingFill(
+                    "buy",
+                    float(lvl),
+                    idx,
+                    notional=_rung_notional(
+                        sizer=sizer,
+                        capital=capital,
+                        leverage=leverage,
+                        n_grids=n_grids,
+                        level_idx=idx,
+                        extras=extras,
+                        direction=direction,
+                    ),
+                    reason=f"{tag}_grid",
+                )
             )
         for idx, lot_q in list(book.lots.items()):
             tp = float(levels[idx + 1]) if idx + 1 < len(levels) else float(levels[idx]) + step
@@ -430,7 +461,21 @@ def _dir_pending(
             if fill_engine == "tick" and not (lo_b - step <= lvl <= hi_b + step):
                 continue
             pending.append(
-                PendingFill("sell", float(lvl), idx, notional=max(capital * leverage / n_grids, 1.0), reason=f"{tag}_grid")
+                PendingFill(
+                    "sell",
+                    float(lvl),
+                    idx,
+                    notional=_rung_notional(
+                        sizer=sizer,
+                        capital=capital,
+                        leverage=leverage,
+                        n_grids=n_grids,
+                        level_idx=idx,
+                        extras=extras,
+                        direction=direction,
+                    ),
+                    reason=f"{tag}_grid",
+                )
             )
         for idx, lot_q in list(book.lots.items()):
             tp = float(levels[idx - 1]) if idx - 1 >= 0 else float(levels[idx]) - step
@@ -509,6 +554,7 @@ def run_user_hedge_pair(
     reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
     extras: dict[str, Any] | None = None,
+    sizer: str = "equal",
     restart: bool = False,
     **_kw: Any,
 ) -> dict[str, Any]:
@@ -597,11 +643,13 @@ def run_user_hedge_pair(
             direction="long", levels=levels, step=step, mid=mid, book=long_b,
             capital=cap_l, leverage=leverage, n_grids=n_grids,
             fill_engine=fill_engine, lo_b=lo_b, hi_b=hi_b,
+            sizer=sizer, extras=extras or {},
         )
         pend_s = _dir_pending(
             direction="short", levels=levels, step=step, mid=mid, book=short_b,
             capital=cap_s, leverage=leverage, n_grids=n_grids,
             fill_engine=fill_engine, lo_b=lo_b, hi_b=hi_b,
+            sizer=sizer, extras=extras or {},
         )
         pending = pend_l + pend_s
         if fill_engine == "tick":
@@ -702,6 +750,7 @@ def run_user_ls_pair(
     reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
     extras: dict[str, Any] | None = None,
+    sizer: str = "equal",
     **_kw: Any,
 ) -> dict[str, Any]:
     cap_l = float(capital_long if capital_long is not None else capital_per_side)
@@ -720,6 +769,7 @@ def run_user_ls_pair(
         reanchor=reanchor,
         mmr_frac=mmr_frac,
         extras=extras or {},
+        sizer=sizer,
     )
     # Independent books run sequentially; on_bar reports the side currently simulating.
     long_r = simulate_user_dir_grid(bars, direction="long", capital=cap_l, on_bar=on_bar, **shared)
@@ -751,6 +801,7 @@ def run_user_one_side(
     reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
     extras: dict[str, Any] | None = None,
+    sizer: str = "equal",
     **_kw: Any,
 ) -> dict[str, Any]:
     """Single-direction moving grid, same report shape as the pair runners."""
@@ -772,6 +823,7 @@ def run_user_one_side(
         reanchor=reanchor,
         mmr_frac=mmr_frac,
         extras=extras or {},
+        sizer=sizer,
     )
     daily = daily_pnl(r["timestamps"], r["equity"], capital)
     slim = {k: v for k, v in r.items() if k not in ("equity", "timestamps")}

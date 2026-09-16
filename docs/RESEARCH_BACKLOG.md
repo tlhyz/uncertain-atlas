@@ -155,6 +155,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-18 | Cliff refine: 2.5x ±20U TICK 120d | **done** | survived +86% / inv 2.30; cliff **(2.5, 3]** — outputs/review_logs/2026-09-16_P7-18_lev25.md |
 | P7-19 | 5x restart-after-liq TICK 120d (split remaining equity) | **done** | **FAIL** 3 deaths +271% leftover re-lever; inv 14× — outputs/review_logs/2026-09-16_P7-19_restart.md |
 | P7-20 | Write Q_SOXL_USER_GRID (is 5x moving L+S tradeable?) | **done** | **NO** — outputs/experiments/Q_SOXL_USER_GRID.md |
+| P7-21 | Extensibility: extras stay, sizer registry, --set | **done** | plugin keys no longer vanish; equal/martingale/fixed — outputs/review_logs/2026-09-16_P7-21_extensibility.md |
 
 ---
 
@@ -162,7 +163,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | 2026-09-16T04:57Z **215 passed, 1 skipped** |
+| M-01 | Run `pytest -q` | **done** | 2026-09-16T06:15Z **220 passed, 1 skipped** |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | no strategy verdict this slot |
 | M-03 | Append `review_logs/INDEX.md` | **done** | P1-15 2026-09-16T02:40Z |
 | M-04 | Check PR CI status | **done** | 2026-09-16T05:10Z PR #8 MERGEABLE; 0 check rollups; unmerged |

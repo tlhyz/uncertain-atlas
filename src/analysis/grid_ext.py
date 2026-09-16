@@ -21,9 +21,12 @@ DEFAULT_EXT_DIR = ROOT / "soxl-lab" / "extensions"
 HEDGE_RUNNERS: dict[str, Callable[..., Any]] = {}
 HEDGE_LABELS: dict[str, str] = {}
 RANGE_BANDS: dict[str, Callable[..., tuple[float, float]]] = {}
-GRID_KINDS: dict[str, Callable[[float, float, int], Any]] = {}
+GRID_KINDS: dict[str, Callable[..., Any]] = {}
 REANCHORS: dict[str, Callable[..., None]] = {}
-KNOWN_YAML_KEYS: set[str] = {
+LOT_SIZERS: dict[str, Callable[..., float]] = {}
+SPEC_VALIDATORS: list[Callable[[Any], list[str]]] = []
+# Scheduler-owned keys. Plugin keys must NOT go here or they vanish from extras.
+ENGINE_YAML_KEYS: set[str] = {
     "symbol",
     "venue",
     "leverage",
@@ -50,12 +53,18 @@ KNOWN_YAML_KEYS: set[str] = {
     "reanchor",
     "mmr",
     "mmr_frac",
+    "sizer",
+    "lot_sizer",
     "note",
     "notes",
     "extends",
     "base",
     "variants",
 }
+PLUGIN_YAML_KEYS: set[str] = set()
+# Union for --check / docs. register_yaml_keys only adds to PLUGIN_YAML_KEYS.
+KNOWN_YAML_KEYS: set[str] = set(ENGINE_YAML_KEYS)
+_ENGINE_YAML_KEYS_DEFAULT = frozenset(ENGINE_YAML_KEYS)
 
 BUILTIN_REANCHORS = ("remap", "drop_lots", "flatten")
 
@@ -83,7 +92,18 @@ def register_reanchor(name: str, fn: Callable[..., None]) -> None:
 
 
 def register_yaml_keys(*keys: str) -> None:
-    KNOWN_YAML_KEYS.update(str(k) for k in keys)
+    """Mark YAML keys as plugin-owned. They stay in extras and --check stops calling them unknown."""
+    for k in keys:
+        PLUGIN_YAML_KEYS.add(str(k))
+        KNOWN_YAML_KEYS.add(str(k))
+
+
+def register_sizer(name: str, fn: Callable[..., float]) -> None:
+    LOT_SIZERS[str(name)] = fn
+
+
+def register_validator(fn: Callable[[Any], list[str]]) -> None:
+    SPEC_VALIDATORS.append(fn)
 
 
 def listed_hedges() -> list[str]:
@@ -102,6 +122,10 @@ def listed_reanchors() -> list[str]:
     return sorted(set(BUILTIN_REANCHORS) | set(REANCHORS))
 
 
+def listed_sizers() -> list[str]:
+    return sorted(LOT_SIZERS)
+
+
 def resolve_band(
     range_mode: str,
     mid: float,
@@ -116,25 +140,74 @@ def resolve_band(
     return fn(float(mid), range_usdt=range_usdt, range_pct=range_pct, extras=extras or {})
 
 
-def resolve_rungs(grid_kind: str, lo: float, hi: float, n: int) -> np.ndarray:
+def resolve_rungs(
+    grid_kind: str,
+    lo: float,
+    hi: float,
+    n: int,
+    extras: dict[str, Any] | None = None,
+) -> np.ndarray:
     fn = GRID_KINDS.get(str(grid_kind))
     if fn is None:
         raise ValueError(f"unknown grid_kind {grid_kind}; registered={listed_grid_kinds()}")
-    return np.asarray(fn(float(lo), float(hi), int(n)), dtype=float)
+    extras = extras or {}
+    try:
+        out = fn(float(lo), float(hi), int(n), extras=extras)
+    except TypeError:
+        out = fn(float(lo), float(hi), int(n))
+    return np.asarray(out, dtype=float)
 
 
-def snapshot_registry() -> dict[str, dict]:
+def resolve_notional(
+    sizer: str,
+    *,
+    capital: float,
+    leverage: float,
+    n_grids: int,
+    level_idx: int = 0,
+    extras: dict[str, Any] | None = None,
+    direction: str = "long",
+) -> float:
+    fn = LOT_SIZERS.get(str(sizer))
+    if fn is None:
+        raise ValueError(f"unknown sizer {sizer}; registered={listed_sizers()}")
+    out = fn(
+        capital=float(capital),
+        leverage=float(leverage),
+        n_grids=int(n_grids),
+        level_idx=int(level_idx),
+        extras=extras or {},
+        direction=str(direction),
+    )
+    return max(float(out), 1.0)
+
+
+def run_validators(spec: Any) -> list[str]:
+    errs: list[str] = []
+    for fn in SPEC_VALIDATORS:
+        try:
+            errs.extend(fn(spec) or [])
+        except Exception as e:  # plugin validator must not kill --check
+            errs.append(f"validator {getattr(fn, '__name__', fn)}: {e}")
+    return errs
+
+
+def snapshot_registry() -> dict[str, Any]:
     return {
         "hedge": dict(HEDGE_RUNNERS),
         "labels": dict(HEDGE_LABELS),
         "range": dict(RANGE_BANDS),
         "grid_kind": dict(GRID_KINDS),
         "reanchor": dict(REANCHORS),
+        "sizer": dict(LOT_SIZERS),
+        "validators": list(SPEC_VALIDATORS),
         "yaml_keys": set(KNOWN_YAML_KEYS),
+        "engine_yaml_keys": set(ENGINE_YAML_KEYS),
+        "plugin_yaml_keys": set(PLUGIN_YAML_KEYS),
     }
 
 
-def restore_registry(snap: dict[str, dict]) -> None:
+def restore_registry(snap: dict[str, Any]) -> None:
     HEDGE_RUNNERS.clear()
     HEDGE_RUNNERS.update(snap["hedge"])
     HEDGE_LABELS.clear()
@@ -145,8 +218,16 @@ def restore_registry(snap: dict[str, dict]) -> None:
     GRID_KINDS.update(snap["grid_kind"])
     REANCHORS.clear()
     REANCHORS.update(snap["reanchor"])
+    LOT_SIZERS.clear()
+    LOT_SIZERS.update(snap.get("sizer") or {})
+    SPEC_VALIDATORS.clear()
+    SPEC_VALIDATORS.extend(snap.get("validators") or [])
     KNOWN_YAML_KEYS.clear()
     KNOWN_YAML_KEYS.update(snap["yaml_keys"])
+    ENGINE_YAML_KEYS.clear()
+    ENGINE_YAML_KEYS.update(snap.get("engine_yaml_keys") or _ENGINE_YAML_KEYS_DEFAULT)
+    PLUGIN_YAML_KEYS.clear()
+    PLUGIN_YAML_KEYS.update(snap.get("plugin_yaml_keys") or set())
 
 
 def _band_usdt(mid: float, *, range_usdt: float = 20.0, extras: dict | None = None, **_: Any) -> tuple[float, float]:
@@ -167,10 +248,58 @@ def _rungs_geometric(lo: float, hi: float, n: int) -> np.ndarray:
     return np.geomspace(lo, hi, n)
 
 
+def _sizer_equal(
+    *,
+    capital: float,
+    leverage: float,
+    n_grids: int,
+    level_idx: int = 0,
+    extras: dict | None = None,
+    **_: Any,
+) -> float:
+    return max(float(capital) * float(leverage) / max(int(n_grids), 1), 1.0)
+
+
+def _sizer_fixed(
+    *,
+    extras: dict | None = None,
+    **_: Any,
+) -> float:
+    extras = extras or {}
+    return max(float(extras.get("lot_usdt", extras.get("notional_per_rung", 50.0))), 1.0)
+
+
+def _sizer_martingale(
+    *,
+    capital: float,
+    leverage: float,
+    n_grids: int,
+    level_idx: int = 0,
+    extras: dict | None = None,
+    direction: str = "long",
+    **_: Any,
+) -> float:
+    extras = extras or {}
+    ratio = float(extras.get("martingale_ratio", extras.get("lot_ratio", 1.2)))
+    if ratio <= 0:
+        raise ValueError("martingale_ratio 必须 > 0")
+    n = max(int(n_grids), 1)
+    base = float(capital) * float(leverage) / n
+    if str(direction) == "short":
+        k = int(level_idx)
+    else:
+        k = max(n - 1 - int(level_idx), 0)
+    return max(base * (ratio ** k), 1.0)
+
+
 register_range("usdt", _band_usdt)
 register_range("pct", _band_pct)
 register_grid_kind("arithmetic", _rungs_arithmetic)
 register_grid_kind("geometric", _rungs_geometric)
+register_sizer("equal", _sizer_equal)
+register_sizer("fixed", _sizer_fixed)
+register_sizer("martingale", _sizer_martingale)
+register_yaml_keys("martingale_ratio", "lot_ratio", "lot_usdt", "notional_per_rung")
 
 
 def merge_overlay(base: dict[str, Any], overlay: dict[str, Any] | None) -> dict[str, Any]:
@@ -264,6 +393,8 @@ def describe_extensions() -> dict[str, Any]:
         "range_mode": listed_ranges(),
         "grid_kind": listed_grid_kinds(),
         "reanchor": listed_reanchors(),
+        "sizer": listed_sizers(),
+        "plugin_yaml_keys": sorted(PLUGIN_YAML_KEYS),
         "plugin_files": loaded_extension_files(),
         "plugin_errors": extension_errors(),
         "ext_dirs": [str(p) for p in extension_dirs()],

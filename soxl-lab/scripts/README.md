@@ -63,7 +63,12 @@ python3 soxl-lab/scripts/run_grid.py --sweep soxl-lab/params/sweep.yaml --check
 python3 soxl-lab/scripts/run_grid.py --sweep soxl-lab/params/sweep.yaml --fills bar --start 2026-07-16 --end 2026-07-16
 ```
 
-新对冲 / 新格子：往 `soxl-lab/extensions/` 丢 `*.py`，不要改 `run_grid.py`。见 [`../extensions/README.md`](../extensions/README.md)。
+新对冲 / 新格子 / 新仓位：往 `soxl-lab/extensions/` 丢 `*.py`，不要改 `run_grid.py`。见 [`../extensions/README.md`](../extensions/README.md)。
+
+```bash
+# 马丁仓位，比例先 --check 看 extras 进没进
+python3 soxl-lab/scripts/run_grid.py --sizer martingale --set martingale_ratio=1.3 --check
+```
 
 ## 5. 常见拒绝
 

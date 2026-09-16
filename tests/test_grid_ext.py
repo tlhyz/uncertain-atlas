@@ -9,20 +9,26 @@ import pytest
 
 from src.analysis.grid_ext import (
     HEDGE_RUNNERS,
+    PLUGIN_YAML_KEYS,
     load_extensions,
     merge_overlay,
     register_grid_kind,
     register_hedge,
     register_range,
     register_reanchor,
+    register_sizer,
+    register_validator,
     register_yaml_keys,
     resolve_band,
+    resolve_notional,
     resolve_rungs,
     snapshot_registry,
     restore_registry,
 )
 from src.analysis.soxl_grid_cli import (
     GridSpec,
+    apply_cli,
+    build_parser,
     load_sweep_raw,
     main,
     spec_from_yaml,
@@ -127,7 +133,8 @@ def test_plugin_file_registers(tmp_path, isolated_registry):
     assert "from_file" in HEDGE_RUNNERS
     spec = spec_from_yaml({"hedge": "from_file", "n_grids": 20, "pause_hours": 4})
     assert spec.hedge == "from_file"
-    assert "pause_hours" not in spec.extras
+    assert spec.extras["pause_hours"] == 4
+    assert "pause_hours" in PLUGIN_YAML_KEYS
 
 
 def test_list_extensions_cli():
@@ -183,3 +190,75 @@ def test_extras_forwarded_to_hedge(isolated_registry):
     spec.extras = {"foo": 1}
     grab(None, extras=spec.extras)
     assert captured["extras"]["foo"] == 1
+
+
+def test_resolve_rungs_forwards_extras(isolated_registry):
+    seen = {}
+
+    def spaced(lo, hi, n, extras=None):
+        seen["ratio"] = (extras or {}).get("geo_ratio")
+        return np.linspace(lo, hi, n)
+
+    register_grid_kind("spaced", spaced)
+    lv = user_levels(100.0, n_grids=3, grid_kind="spaced", extras={"geo_ratio": 1.05})
+    assert len(lv) == 3
+    assert seen["ratio"] == 1.05
+
+
+def test_sizer_equal_and_martingale():
+    eq = resolve_notional("equal", capital=5000, leverage=5, n_grids=200, level_idx=0)
+    assert eq == pytest.approx(125.0)
+    lo = resolve_notional(
+        "martingale",
+        capital=5000,
+        leverage=5,
+        n_grids=5,
+        level_idx=0,
+        extras={"martingale_ratio": 2.0},
+        direction="long",
+    )
+    hi = resolve_notional(
+        "martingale",
+        capital=5000,
+        leverage=5,
+        n_grids=5,
+        level_idx=4,
+        extras={"martingale_ratio": 2.0},
+        direction="long",
+    )
+    assert lo > hi
+    assert lo == pytest.approx(5000 * 5 / 5 * (2.0 ** 4))
+    fixed = resolve_notional("fixed", capital=1, leverage=1, n_grids=10, extras={"lot_usdt": 40})
+    assert fixed == pytest.approx(40.0)
+
+
+def test_register_sizer_and_validator(isolated_registry):
+    register_sizer("double", lambda **kw: 2.0 * resolve_notional("equal", **{k: kw[k] for k in ("capital", "leverage", "n_grids")}))
+    spec = GridSpec(sizer="double", n_grids=20)
+    assert validate_spec(spec) == []
+
+    def need_pause(s):
+        if (s.extras or {}).get("pause_hours") is None:
+            return ["pause_hours 必填"]
+        return []
+
+    register_validator(need_pause)
+    spec.extras = {}
+    assert any("pause_hours" in e for e in validate_spec(spec))
+    spec.extras = {"pause_hours": 2}
+    assert validate_spec(spec) == []
+
+
+def test_cli_set_lands_in_extras():
+    spec = GridSpec(n_grids=20)
+    ns = build_parser().parse_args(["--set", "martingale_ratio=1.3", "--set", "pause_hours=4", "--sizer", "martingale"])
+    got = apply_cli(spec, ns)
+    assert got.sizer == "martingale"
+    assert got.extras["martingale_ratio"] == pytest.approx(1.3)
+    assert got.extras["pause_hours"] == 4
+    assert "martingale" in got.folder_name()
+
+
+def test_unknown_sizer_rejected():
+    spec = GridSpec(sizer="nope", n_grids=20)
+    assert any("sizer" in e for e in validate_spec(spec))

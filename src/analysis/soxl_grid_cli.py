@@ -22,14 +22,16 @@ from qtb.data.binance_futures import (
 )
 from src.analysis.grid_ext import (
     DEFAULT_EXT_DIR,
+    ENGINE_YAML_KEYS,
     HEDGE_LABELS,
     HEDGE_RUNNERS,
-    KNOWN_YAML_KEYS,
+    PLUGIN_YAML_KEYS,
     describe_extensions,
     listed_grid_kinds,
     listed_hedges,
     listed_ranges,
     listed_reanchors,
+    listed_sizers,
     load_extensions,
     merge_overlay,
     register_hedge,
@@ -37,6 +39,7 @@ from src.analysis.grid_ext import (
     register_range,
     register_reanchor,
     register_yaml_keys,
+    run_validators,
 )
 from src.analysis.soxl_soxs_hedge import DayTradeCache
 from src.analysis.user_moving_grid import (
@@ -74,7 +77,7 @@ EPILOG = """
   python3 soxl-lab/scripts/run_grid.py --list-extensions
   python3 soxl-lab/scripts/run_grid.py --sweep soxl-lab/params/sweep.yaml --check
 
-以后要改对冲/格子/带宽：丢文件到 soxl-lab/extensions/ 或 register_hedge / register_grid_kind / register_range。
+以后要改对冲/格子/带宽/每格仓位：丢文件到 soxl-lab/extensions/，或 --set key=value 写 extras。
 逐笔 CSV 故意不进 git（大约 3 GB，本机 cache/）。改参数前先 --list-cache / --check。
 """
 
@@ -84,6 +87,32 @@ def _coalesce(*vals: Any, default: Any = None) -> Any:
         if v is not None:
             return v
     return default
+
+
+def parse_set_item(item: str) -> tuple[str, Any]:
+    """Parse --set key=value. bool / int / float if obvious, else string."""
+    if "=" not in item:
+        raise ValueError(f"--set 需要 key=value，收到 {item!r}")
+    key, raw = item.split("=", 1)
+    key = key.strip()
+    if not key:
+        raise ValueError(f"--set 键不能空：{item!r}")
+    val = raw.strip()
+    low = val.lower()
+    if low in ("true", "yes", "on"):
+        return key, True
+    if low in ("false", "no", "off"):
+        return key, False
+    if low in ("null", "none", "~"):
+        return key, None
+    try:
+        if val.startswith(("0x", "+0x", "-0x")):
+            return key, val
+        if any(c in val.lower() for c in (".", "e")):
+            return key, float(val)
+        return key, int(val)
+    except ValueError:
+        return key, val
 
 
 @dataclass
@@ -107,6 +136,7 @@ class GridSpec:
     fee_bps: float | None = None
     reanchor: str = "remap"
     mmr_frac: float = 0.005
+    sizer: str = "equal"
     extras: dict[str, Any] = field(default_factory=dict)
 
     def folder_name(self) -> str:
@@ -128,6 +158,8 @@ class GridSpec:
             bits.append(f"f{self.fee_bps:g}bps")
         if self.reanchor and self.reanchor != "remap":
             bits.append(self.reanchor.replace("_", "-"))
+        if self.sizer and self.sizer != "equal":
+            bits.append(self.sizer.replace("_", "-")[:10])
         if self.tag:
             bits.insert(0, self.tag)
         return "_".join(bits)
@@ -165,7 +197,7 @@ def spec_from_yaml(raw: dict[str, Any]) -> GridSpec:
         fee_bps = float(raw["fee_bps"])
     elif isinstance(raw.get("fee"), (int, float)) and not isinstance(raw.get("fee"), bool):
         fee_bps = float(raw["fee"])
-    extras = {k: raw[k] for k in raw if k not in KNOWN_YAML_KEYS}
+    extras = {k: raw[k] for k in raw if k not in ENGINE_YAML_KEYS}
     return GridSpec(
         symbol=str(_coalesce(raw.get("symbol"), "SOXLUSDT")),
         start=str(start),
@@ -186,6 +218,7 @@ def spec_from_yaml(raw: dict[str, Any]) -> GridSpec:
         fee_bps=fee_bps,
         reanchor=str(_coalesce(raw.get("reanchor"), "remap")),
         mmr_frac=float(_coalesce(raw.get("mmr_frac"), raw.get("mmr"), 0.005)),
+        sizer=str(_coalesce(raw.get("sizer"), raw.get("lot_sizer"), "equal")),
         extras=extras,
     )
 
@@ -241,6 +274,7 @@ def apply_cli(spec: GridSpec, ns: argparse.Namespace) -> GridSpec:
         "fee_bps": "fee_bps",
         "reanchor": "reanchor",
         "mmr_frac": "mmr",
+        "sizer": "sizer",
     }
     for field, flag in mapping.items():
         val = getattr(ns, flag, None)
@@ -249,6 +283,11 @@ def apply_cli(spec: GridSpec, ns: argparse.Namespace) -> GridSpec:
     if getattr(ns, "capital", None) is not None:
         d["capital_long"] = ns.capital
         d["capital_short"] = ns.capital
+    extras = dict(d.get("extras") or {})
+    for item in getattr(ns, "sets", None) or []:
+        k, v = parse_set_item(item)
+        extras[k] = v
+    d["extras"] = extras
     allowed = {f.name for f in fields(GridSpec)}
     return GridSpec(**{k: v for k, v in d.items() if k in allowed})
 
@@ -281,6 +320,8 @@ def validate_spec(spec: GridSpec) -> list[str]:
         errs.append(f"grid_kind 只能是 {listed_grid_kinds()}，收到 {spec.grid_kind}。新格子用 register_grid_kind")
     if spec.reanchor not in listed_reanchors():
         errs.append(f"reanchor 只能是 {listed_reanchors()}，收到 {spec.reanchor}。新策略用 register_reanchor")
+    if spec.sizer not in listed_sizers():
+        errs.append(f"sizer 只能是 {listed_sizers()}，收到 {spec.sizer}。新仓位用 register_sizer")
     if spec.mmr_frac <= 0 or spec.mmr_frac >= 1:
         errs.append("mmr_frac 必须在 (0, 1)")
     if spec.fee_bps is not None and spec.fee_bps < 0:
@@ -289,6 +330,7 @@ def validate_spec(spec: GridSpec) -> list[str]:
         errs.append(f"fills 只能是 tick/bar，收到 {spec.fills}")
     if spec.sides not in ("both", "long", "short"):
         errs.append(f"sides 只能是 both/long/short，收到 {spec.sides}")
+    errs.extend(run_validators(spec))
     try:
         d0 = date.fromisoformat(spec.start)
         d1 = date.fromisoformat(spec.end)
@@ -324,6 +366,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--fee-bps", dest="fee_bps", type=float, default=None, help="覆盖手续费，单位 bps；不填用 fee 预设")
     p.add_argument("--grid-kind", dest="grid_kind", default=None, help="arithmetic / geometric，或插件注册的格子")
     p.add_argument("--reanchor", default=None, help="走出带：remap / drop_lots / flatten，或插件")
+    p.add_argument("--sizer", default=None, help="每格名义：equal / martingale / fixed，或 register_sizer")
+    p.add_argument("--set", dest="sets", action="append", default=None, help="额外 extras，可重复：--set martingale_ratio=1.3")
     p.add_argument("--mmr", dest="mmr", type=float, default=None, help="逐仓维持保证金比例，默认 0.005")
     p.add_argument("--fills", choices=("tick", "bar"), default=None, help="结论用 tick；bar 只做快速试")
     p.add_argument("--tag", default=None, help="输出目录前缀")
@@ -471,6 +515,7 @@ def write_report_md(dest: Path, spec: GridSpec, summary: dict[str, Any], bar_sou
         f"| 账本 | {hedge_cn.get(str(summary.get('hedge_mode') or spec.hedge), spec.hedge)} / sides={spec.sides} |",
         f"| 杠杆 | {spec.leverage:g}x 逐仓 |",
         f"| 格子 | {spec.n_grids} {spec.grid_kind} |",
+        f"| 仓位 | {spec.sizer} |",
         f"| 带宽 | {mode_cn} |",
         f"| 重锚 | {spec.reanchor} |",
         f"| 本金 | 多 {spec.capital_long:g} + 空 {spec.capital_short:g} |",
@@ -517,7 +562,8 @@ def print_check(spec: GridSpec, *, json_only: bool) -> int:
         "folder": spec.folder_name(),
         "errors": errs,
         "missing_tick_days": miss,
-        "unknown_yaml_keys": list((spec.extras or {}).keys()),
+        "unknown_yaml_keys": [k for k in (spec.extras or {}) if k not in PLUGIN_YAML_KEYS],
+        "plugin_yaml_keys": [k for k in (spec.extras or {}) if k in PLUGIN_YAML_KEYS],
         "hedge_modes": listed_hedges(),
         "extensions": describe_extensions(),
     }
@@ -526,9 +572,14 @@ def print_check(spec: GridSpec, *, json_only: bool) -> int:
     else:
         print(json.dumps(asdict(spec), indent=2, ensure_ascii=False, default=str))
         print(f"输出目录名：{spec.folder_name()}")
-        if spec.extras:
-            print(f"未识别的 YAML 键（不会生效）：{sorted(spec.extras)}")
-            print("以后要让它们生效：register_yaml_keys + 引擎读 extras，或丢到 soxl-lab/extensions/。")
+        extras = spec.extras or {}
+        plugin_keys = sorted(k for k in extras if k in PLUGIN_YAML_KEYS)
+        unknown = sorted(k for k in extras if k not in PLUGIN_YAML_KEYS)
+        if plugin_keys:
+            print(f"插件键（已进 extras，会传给引擎/插件）：{plugin_keys}")
+        if unknown:
+            print(f"未登记的 YAML 键（仍进 extras，调度自己不读）：{unknown}")
+            print("register_yaml_keys 后不再标「未登记」。插件从 extras 取，不要改 soxl_grid_cli.main。")
         if errs:
             print("参数错误：")
             for e in errs:
@@ -605,6 +656,7 @@ def run_spec(
         reanchor=spec.reanchor,
         mmr_frac=spec.mmr_frac,
         extras=spec.extras or {},
+        sizer=spec.sizer,
     )
     if spec.sides == "long":
         rep = run_user_one_side(bars, direction="long", capital=spec.capital_long, **shared)
@@ -655,6 +707,7 @@ def print_extensions(*, json_only: bool) -> int:
         print(f"带宽 range_mode：{', '.join(payload['range_mode'])}")
         print(f"格子 grid_kind：{', '.join(payload['grid_kind'])}")
         print(f"重锚 reanchor：{', '.join(payload['reanchor'])}")
+        print(f"仓位 sizer：{', '.join(payload['sizer'])}")
         if payload["plugin_files"]:
             print("已加载插件：")
             for f in payload["plugin_files"]:

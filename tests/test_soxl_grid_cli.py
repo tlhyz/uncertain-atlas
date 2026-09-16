@@ -122,6 +122,8 @@ def test_help_lists_check_and_cache():
     assert "--sides" in help_txt
     assert "--list-extensions" in help_txt
     assert "--sweep" in help_txt
+    assert "--sizer" in help_txt
+    assert "--set" in help_txt
 
 
 def test_check_future_window_reports_missing():

@@ -52,7 +52,7 @@ python3 soxl-lab/scripts/run_grid.py --leverage 3 --n-grids 80 --range-usdt 15
 
 说明：[`使用注意事项.md`](使用注意事项.md) · [`scripts/README.md`](scripts/README.md)。结果在 `results/runs/`。逐笔 CSV 不进 git。
 
-以后要改对冲/格子/带宽：[`extensions/README.md`](extensions/README.md)。一次试多组：[`params/sweep.yaml`](params/sweep.yaml)。`python3 soxl-lab/scripts/run_grid.py --list-extensions`。
+以后要改对冲/格子/带宽/每格仓位：[`extensions/README.md`](extensions/README.md)。一次试多组：[`params/sweep.yaml`](params/sweep.yaml)。`python3 soxl-lab/scripts/run_grid.py --list-extensions`。`--set 键=值` 不用改 YAML。
 
 ## 三个抽屉
 
