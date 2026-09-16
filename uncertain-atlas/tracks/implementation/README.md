@@ -1,3 +1,4 @@
+- [`worked-example-finequiv-notnewdec-vs-bundled.md`](worked-example-finequiv-notnewdec-vs-bundled.md) — FinalizeBlock equiv≠Contains newly decided；≠apply candidate/previously executed；≠finequiv bundled/602/603（不变量 604）
 - [`worked-example-finequiv-notnoprep-vs-bundled.md`](worked-example-finequiv-notnoprep-vs-bundled.md) — FinalizeBlock equiv≠no Prepare/Process；≠CheckTx skip Prepare/Process；≠finequiv bundled/602/586 item 3（不变量 603）
 - [`worked-example-finequiv-notgates-vs-bundled.md`](worked-example-finequiv-notgates-vs-bundled.md) — FinalizeBlock equiv≠四门已经结算；≠交差；≠finequiv bundled/600/363（不变量 602）
 - [`worked-example-finresp-notsettled-vs-bundled.md`](worked-example-finresp-notsettled-vs-bundled.md) — must provide 四列≠改了集合；≠交差；≠finresp bundled/594/477（不变量 601）
