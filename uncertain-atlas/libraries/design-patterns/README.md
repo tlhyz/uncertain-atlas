@@ -1,3 +1,4 @@
+- [`name-the-finpersist-notpersist-bar.md`](name-the-finpersist-notpersist-bar.md) — FinalizeBlock When persist decision not executes block v / 已经交差 正式三事（478 余量）（不变量 605）
 - [`name-the-finequiv-notnewdec-bar.md`](name-the-finequiv-notnewdec-bar.md) — FinalizeBlock equiv ABCI 1.0 not Contains newly decided / apply candidate 正式三事（586 余量）（不变量 604）
 - [`name-the-finequiv-notnoprep-bar.md`](name-the-finequiv-notnoprep-bar.md) — FinalizeBlock equiv ABCI 1.0 not no Prepare/Process 正式三事（586 余量）（不变量 603）
 - [`name-the-finequiv-notgates-bar.md`](name-the-finequiv-notgates-bar.md) — FinalizeBlock equiv ABCI 1.0 not four gates settled 正式三事（586 余量）（不变量 602）

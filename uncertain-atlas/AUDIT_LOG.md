@@ -1,3 +1,9 @@
+| A2785 | 记录 | 会与 478 / 466 / 362 / 587 / 602 糊成「看见 persist decision 就已经 executes block v、已经交差、已经 finpersist bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When persist decision not executes block v / 已经交差 正式三事（478 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。478 finpersist unbundling 启动 |
+| A2784 | 中 | 怎样 persist decision、怎样写同步调用、怎样在 When 第 2 步调 Finalize 会被抄进不确定 | 不抄。不写怎样 persist decision。不另写 19 节 |
+| A2783 | 高 | 看见 persist decision 会被写成已经 finpersist bundled，或当成已经 calls FinalizeBlock / synchronous call / 362 +2/3 precommit | 官方 FinalizeBlock When 478 item 1：not finpersist bundled / not 478 item 2 / not 478 item 3 / not 362 |
+| A2782 | 高 | 看见 persist decision 会被写成已经 Finalize + Commit 交差，或当成已经 persist outputs / 33 four gates / 587 finreturn | 官方 FinalizeBlock When step 1：persist decision not 交差 / not persist outputs |
+| A2781 | 高 | 看见 persists _v_ as the decision 会被写成已经 Application executes block _v_，或当成已经 466 executes block v / 572 not execbv | 官方 FinalizeBlock When step 1：persist decision not executes block v / not 466 / not 572 |
+
 # 审核日志
 
 本日志记录：写出的材料有没有违反 [`GOAL.md`](GOAL.md)。  
