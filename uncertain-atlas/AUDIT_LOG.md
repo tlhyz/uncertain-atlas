@@ -4671,6 +4671,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2682 | 高 | 看见 FinalizeBlockResponse.tx_results[i].Code == 0 only if the i-th transaction is fully valid / 看见回了 0 会被写成已经 CheckTx 过了，或当成已经 Process 回了 Accept | 官方 FinalizeBlock Usage：tx_results[i].Code == 0 only if the i-th transaction is fully valid |
 | A2683 | 高 | 看见 Code == 0 only if fully valid / 看见这笔完全合法 会被写成已经 Code != 0 那种没进块，或当成已经无效就不在块里 | 官方 FinalizeBlock Usage vs Transaction Results：Code != 0 still in block |
 | A2684 | 高 | 看见回了 tx_results / 看见有 Code 会被写成已经 Finalize 改了就已经交差，或当成已经 Code / Data 印进本头 LastResultsHash | 官方 FinalizeBlock Usage vs Transaction Results vs FinalizeBlock / Commit |
+| A2720 | 记录 | 会与 588 / 591 / 590 / 403 / 310 / 373 / 33 糊成「看见解锁了就已经交差、已经能收新交易、已经开下一高 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When unlocks mempool 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 / 已经 optional recheck / 已经开下一高 标成另一对象 |
+| A2719 | 中 | 怎样解锁、怎样再验、怎样开下一高会被抄进不确定 | 不抄。不写怎样解锁。不另写 19 节 |
+| A2718 | 高 | 看见 When 第 10 步 unlock after optional recheck 会被写成已经是 Commit 锁解锁，或当成已经 starts consensus for h+1 round 0 | 官方 FinalizeBlock When 第 10 步：unlock not Commit lock / not step 11 h+1 |
+| A2717 | 高 | 看见 newly received transactions can now be checked 会被写成已经 optional recheck outstanding txs，或当成已经 CheckTx 技术上可选 | 官方 FinalizeBlock When 第 10 步：newly received can check not optional recheck / not optional |
+| A2716 | 高 | 看见 unlocks the mempool 会被写成已经交差，或当成已经四门已经结算 / 已经 locks mempool interchangeable | 官方 FinalizeBlock When 第 10 步：unlocks not settled / not locks mempool |
 | A2715 | 记录 | 会与 403 / 588 / 590 / 312 / 484 / 301 / 33 糊成「看见 When 第 9 步再验了就已经交差、已经是 Recheck、已经对新交易也验了」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When optional recheck 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经必须再验 / 已经 new transactions / 已经是 Recheck 标成另一对象 |
 | A2714 | 中 | 怎样再验、怎样填 Type、怎样解锁会被抄进不确定 | 不抄。不写怎样再验。不另写 19 节 |
 | A2713 | 高 | 看见 against the newly persisted Application state 会被写成已经 CheckTxState / ExecuteTxState，或当成已经 Type 标明 RECHECK | 官方 FinalizeBlock When 第 9 步：newly persisted not CheckTxState / ExecuteTxState / Type RECHECK |
