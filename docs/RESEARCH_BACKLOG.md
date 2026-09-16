@@ -28,7 +28,8 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-12 | Download remaining Vision SOXL 2026-05-15→07-14 | **done** | 61 prefix days + 6 gap; local **120d** 2026-05-15→09-11 0 gaps — outputs/review_logs/2026-09-16_P1-12_soxl_listing_prefix_PASS.md |
 | P1-13 | Validate listing-length SOXL 1h (2866) vs cached ticks | **done** | **2866/2866** hours; p99 close err 1.8e-4 — outputs/review_logs/2026-09-16_P1-13_listing_tick_coverage_PASS.md |
 | P1-14 | Manifest SOXL aggTrades 2026-05-15→09-11 (120d sha256) | **done** | 120d / 62,409,315 rows / 0 gaps — outputs/review_logs/2026-09-16_P1-14_soxl_listing_manifest_PASS.md |
-| P1-15 | Audit cache vs committed tick manifests | pending | SNXX/BTC/ETH/SOL files may have been evicted |
+| P1-15 | Audit cache vs committed tick manifests | **done** | SOXL 120d + SOXS 61d on_disk; BTC/ETH/SOL/SNXX **evicted** — outputs/review_logs/2026-09-16_P1-15_cache_vs_manifests.md |
+| P1-16 | Re-download evicted SNXX/BTC/ETH/SOL ticks | **blocked** | manifests remain; not needed for SOXL lab; do not auto-pull multi-GB |
 | P1-03 | Download SNXXUSDT aggTrades (detect earliest) | done | 65 days |
 | P1-04 | Run `build_manifest.py` + sha256 all files | done | data/manifests/*.json |
 | P1-05 | Validate every SOXL bar has aggTrades | done | 1560/1560 |
@@ -154,11 +155,11 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | 2026-09-16T01:07Z grid suite 29 passed |
-| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03/W-04; Vision listing 2026-05-15 |
-| M-03 | Append `review_logs/INDEX.md` | **done** | P3-09 listing probe 2026-09-15T23:55Z |
+| M-01 | Run `pytest -q` | **done** | 2026-09-16T02:41Z **214 passed, 1 skipped** |
+| M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | no strategy verdict this slot |
+| M-03 | Append `review_logs/INDEX.md` | **done** | P1-15 2026-09-16T02:40Z |
 | M-04 | Check PR CI status | **done** | PR #8 open unmerged; main at PR #3 |
-| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P1-12 closed; soxl-lab drawers 01–04 |
+| M-05 | Refresh backlog — move done, add discovered tasks | **done** | P1-15 closed; P1-16 blocked |
 
 ---
 
@@ -171,6 +172,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P3-09 | FAIL_F1 2025-09→10 | blocked | Vision SOXL listing 2026-05-15; window 404 |
 | P3-10 | FAIL_F2 2024-09→11 | blocked | predates listing |
 | P3-11 | similar-window top-20 @ 60d | blocked | Vision 120d → 9 slides; need 193d |
+| P1-16 | Re-download evicted SNXX/BTC/ETH/SOL ticks | blocked | only if a new Book A/B tick experiment opens |
 | X-01 | 3L ETF long-run grid | failed | Exp 001 — inventory loss |
 | X-02 | 3x PERP unattended SOL/PENGU/PUMP | failed | liquidations |
 | X-03 | Dual Short→Long on Gate overlap | failed | −51% vs B&H −30% |
