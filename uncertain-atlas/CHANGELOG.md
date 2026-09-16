@@ -1,3 +1,7 @@
+## 2026-09-16（续 742）
+
+- 不变量 625；语料 C602；模式 name-the-finmerkle-notquery-bar；反模式 finmerkle-notquery-sold-as-bundled；L10.3 第 594 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse Query proofs anchored in this Merkle root not matched AppHash / not ProofOp key lookup / not finmerkle bundled 正式三事（475 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。475 finmerkle unbundling 完成（625 item 3）。
+
 ## 2026-09-16（续 741）
 
 - 不变量 624；语料 C601；模式 name-the-finmerkle-notnextheader-bar；反模式 finmerkle-notnextheader-sold-as-bundled；L10.3 第 593 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash included as Header.AppHash in the next block not already written / not this header AppHash / not finmerkle bundled 正式三事（475 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。475 finmerkle unbundling 续（624 item 2）。
