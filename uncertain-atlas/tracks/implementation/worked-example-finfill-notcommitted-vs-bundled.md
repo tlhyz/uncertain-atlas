@@ -40,7 +40,7 @@
 ## 本页不抄
 
 - 怎样写 Finalize、怎样再填字段、怎样从 Prepare/Process 复制字段。
-- will fill up all fields not no need to provide again。那是不变量 567（473 item 1 余量）。
+- will fill up all fields not no need to provide again。那是不变量 565（473 余量）。
 - even if passed not field names match means ran Process。那是不变量 568（473 item 2 余量）。
 - FinalizeBlock fill all fields even if Prepare/Process passed bundled 三事。那是不变量 473。
 - Finalize 请求把字段再填一遍 not no need to provide again 正式三事（360 余量）。那是不变量 583。

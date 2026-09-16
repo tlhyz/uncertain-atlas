@@ -1,3 +1,4 @@
+- [`worked-example-finfill-notrefill-vs-bundled.md`](worked-example-finfill-notrefill-vs-bundled.md) — will fill up all fields（473）≠ no need to provide again；≠ Finalize 时的 Process 保证 bundled；≠ 583 not refill（不变量 565）
 - [`worked-example-finfill-notdecprop-vs-bundled.md`](worked-example-finfill-notdecprop-vs-bundled.md) — all fields（473）≠ decided/proposed interchangeable；≠ Prepare/Process passed means dec/prop；≠ Finalize专有栏 same as Prepare/Process（不变量 564）
 - [`worked-example-finfill-notpassedran-vs-bundled.md`](worked-example-finfill-notpassedran-vs-bundled.md) — even if passed（473）≠ field names match ran Process；≠ newly decided/proposed；≠ previously executed（不变量 563）
 - [`worked-example-finfill-notneedfinalize-vs-bundled.md`](worked-example-finfill-notneedfinalize-vs-bundled.md) — will fill up all fields（473）≠ don't need Finalize；≠ committed；≠ Contains bundled（不变量 562）
@@ -87,7 +88,6 @@
 - [`worked-example-finprocgua-notcand-vs-bundled.md`](worked-example-finprocgua-notcand-vs-bundled.md) — apply candidate ≠ ExecuteTxState；≠ same block already ran means no need to execute；≠ already committed（不变量 584）
 - [`worked-example-finprocgua-notrefill-vs-bundled.md`](worked-example-finprocgua-notrefill-vs-bundled.md) — will fill up all fields ≠ no need to provide again；≠ field names match means ran Process；≠ request complete means committed（不变量 583）
 - [`worked-example-finfill-notcommitted-vs-bundled.md`](worked-example-finfill-notcommitted-vs-bundled.md) — all fields / request complete ≠ committed；≠ finfields / finpersist；≠ apply candidate / 583 refill（不变量 569）
-- [`worked-example-finfill-notrefill-vs-bundled.md`](worked-example-finfill-notrefill-vs-bundled.md) — will fill up all fields ≠ no need to provide again；≠ Finalize 时的 Process 保证 bundled；≠ 583 not refill（不变量 567）
 - [`worked-example-finfill-notpassed-vs-bundled.md`](worked-example-finfill-notpassed-vs-bundled.md) — even if Prepare/Process passed ≠ field names match means ran Process；≠ Prepare/Process/Finalize same fields；≠ Process also on proposer means ran Process（不变量 568）
 - [`worked-example-fincparam-vs-heffective.md`](worked-example-fincparam-vs-heffective.md) — consensus_param_updates H→H+1；≠ 已经在块 H 生效；≠ validator_updates H+2 才计票；≠ 只填一项 / 清掉参数（不变量 471）
 - [`worked-example-finnewdec-vs-proposed.md`](worked-example-finnewdec-vs-proposed.md) — Contains newly decided block fields ≠ 已经是四门已经结算；newly decided block ≠ proposed block / ProcessProposal 含执行所需全部信息；fields of newly decided block ≠ height/time match header 就代表对象已经分清（不变量 474）
