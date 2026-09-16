@@ -1,0 +1,39 @@
+{
+  "window": "2026-07-16",
+  "fills": "tick",
+  "runs": [
+    {
+      "folder": "p712def_flatten-survivor_usdt20_lev5_g200_L5000S5000_tick_20260716-20260716",
+      "grid_kind": "arithmetic",
+      "fee": "base",
+      "fee_bps": null,
+      "return": 0.04919980073751096,
+      "max_dd": -0.012155203186642649,
+      "end_equity": 10491.99800737511,
+      "fills": 310,
+      "pair_stopped": false
+    },
+    {
+      "folder": "p712fee_flatten-survivor_usdt20_lev5_g200_L5000S5000_tick_20260716-20260716_f4bps",
+      "grid_kind": "arithmetic",
+      "fee": "conservative",
+      "fee_bps": 4.0,
+      "return": 0.05548784261757933,
+      "max_dd": -0.013052635538897794,
+      "end_equity": 10554.878426175794,
+      "fills": 307,
+      "pair_stopped": false
+    },
+    {
+      "folder": "p712geo_flatten-survivor_usdt20_lev5_g200_L5000S5000_tick_20260716-20260716_geo",
+      "grid_kind": "geometric",
+      "fee": "base",
+      "fee_bps": null,
+      "return": 0.0433035270595068,
+      "max_dd": -0.010540090683678671,
+      "end_equity": 10433.035270595068,
+      "fills": 314,
+      "pair_stopped": false
+    }
+  ]
+}
