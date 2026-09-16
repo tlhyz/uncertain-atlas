@@ -1,3 +1,4 @@
+- [`name-the-finequiv-notnoprep-bar.md`](name-the-finequiv-notnoprep-bar.md) — FinalizeBlock equiv ABCI 1.0 not no Prepare/Process 正式三事（586 余量）（不变量 603）
 - [`name-the-finequiv-notgates-bar.md`](name-the-finequiv-notgates-bar.md) — FinalizeBlock equiv ABCI 1.0 not four gates settled 正式三事（586 余量）（不变量 602）
 - [`name-the-finresp-notsettled-bar.md`](name-the-finresp-notsettled-bar.md) — Finalize 回包义务 must provide 四列 not changed set / settled 正式三事（363 余量）（不变量 601）
 - [`name-the-finempty-notcparam-bar.md`](name-the-finempty-notcparam-bar.md) — FinalizeBlock empty consensus_param_updates keep current not H+1 effective 正式三事（458 余量）（不变量 599）
