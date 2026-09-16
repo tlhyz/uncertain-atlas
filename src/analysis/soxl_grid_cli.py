@@ -39,9 +39,15 @@ from src.analysis.grid_ext import (
     register_yaml_keys,
 )
 from src.analysis.soxl_soxs_hedge import DayTradeCache
-from src.analysis.user_moving_grid import run_user_hedge_pair, run_user_ls_pair, run_user_one_side
+from src.analysis.user_moving_grid import (
+    run_user_hedge_pair,
+    run_user_hedge_restart,
+    run_user_ls_pair,
+    run_user_one_side,
+)
 
 register_hedge("flatten_survivor", run_user_hedge_pair, label="移动多空对冲（一边爆仓就平另一边）")
+register_hedge("restart_survivor", run_user_hedge_restart, label="爆仓后用剩余权益对半再开（不加钱）")
 register_hedge("independent", run_user_ls_pair, label="两本独立账（一边爆了另一边继续）")
 HEDGE_LABELS.setdefault("moving_ls_flatten_survivor", HEDGE_LABELS["flatten_survivor"])
 HEDGE_LABELS.setdefault("one_side", "只做一边")
@@ -426,6 +432,8 @@ def _strip(rep: dict[str, Any], spec: GridSpec) -> dict[str, Any]:
         "reanchors": rep["reanchors"],
         "liquidated_long": rep.get("liquidated_long"),
         "liquidated_short": rep.get("liquidated_short"),
+        "n_restarts": rep.get("n_restarts"),
+        "deaths": rep.get("deaths"),
         "long": {k: v for k, v in (rep.get("long") or {}).items() if k != "equity"},
         "short": {k: v for k, v in (rep.get("short") or {}).items() if k != "equity"},
         "n_days": int(len(daily)),

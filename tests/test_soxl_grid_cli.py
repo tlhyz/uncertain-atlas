@@ -145,6 +145,14 @@ def test_main_check_tick_rejects_missing():
     assert rc == 3
 
 
+def test_restart_survivor_is_registered():
+    spec = GridSpec(hedge="restart_survivor", n_grids=20)
+    assert validate_spec(spec) == []
+    from src.analysis.grid_ext import listed_hedges
+
+    assert "restart_survivor" in listed_hedges()
+
+
 def test_unknown_yaml_keys_land_in_extras():
     spec = spec_from_yaml({"leverage": 5, "n_grids": 200, "stop_loss_pct": 0.1, "foo": 1})
     assert spec.extras["stop_loss_pct"] == 0.1

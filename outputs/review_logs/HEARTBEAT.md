@@ -517,3 +517,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T03:50Z | P7-16 | 3x STOPPED 05-27; 2x 120d TICK +70.7% vs B&H −24% but inv 1.81 / leg DD −71%; not live
 2026-09-16T04:12Z | P7-17 | 4x ±20U STOPPED 05-26; 2x±20% −20.5% DD −46%; +70% is usdt-band only; not live
 2026-09-16T04:23Z | P7-18 | 2.5x ±20U survived +86% inv 2.30 short DD −90%; cliff (2.5, 3]; not live
+2026-09-16T04:52Z | P7-19 | restart_survivor 5x TICK +271% FAIL; 3 deaths 05-26/07-29/08-13; inv 14×; not default

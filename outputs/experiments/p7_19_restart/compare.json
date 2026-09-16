@@ -1,0 +1,17 @@
+{
+  "note": "5x restart_survivor TICK 05-15→09-11. +271% is leftover re-levered after 3 deaths. Do not use.",
+  "buy_and_hold_soxl": -0.2443,
+  "flatten_5x": {"return": 0.3929, "stopped": true, "deaths": 1},
+  "restart_5x": {
+    "return": 2.7100,
+    "max_dd": -0.1822,
+    "n_restarts": 3,
+    "deaths": [
+      {"ts": "2026-05-26 13:00Z", "side": "short", "equity": 13928.96},
+      {"ts": "2026-07-29 20:00Z", "side": "long", "equity": 31402.45},
+      {"ts": "2026-08-13 13:00Z", "side": "short", "equity": 40075.23}
+    ],
+    "end_inventory_frac_vs_original_5k": 14.41,
+    "pair_stopped": false
+  }
+}

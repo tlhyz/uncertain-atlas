@@ -509,9 +509,13 @@ def run_user_hedge_pair(
     reanchor: ReanchorPolicy | str = USER_REANCHOR,
     mmr_frac: float = USER_MMR_FRAC,
     extras: dict[str, Any] | None = None,
+    restart: bool = False,
     **_kw: Any,
 ) -> dict[str, Any]:
-    """Moving dual-side hedge: one band, both legs, flatten the survivor if either liquidates."""
+    """Moving dual-side hedge: one band, both legs, flatten the survivor if either liquidates.
+
+    restart=True: split remaining equity 50/50 into new isolated books (no new cash).
+    """
     if fill_engine == "tick" and get_trades is None:
         raise ValueError("fill_engine='tick' requires get_trades (refuses silent bar fallback)")
     o = bars["open"].to_numpy(float)
@@ -540,10 +544,32 @@ def run_user_hedge_pair(
     reanchors = 0
     pair_stopped = False
     stop_bar = None
+    deaths: list[dict[str, Any]] = []
+    n_restarts = 0
+    pending_restart = False
+    restart_cash = 0.0
+    started_long = cap_l
+    started_short = cap_s
 
     for i in range(len(c)):
         px = float(c[i])
-        if pair_stopped or long_b.liquidated or short_b.liquidated:
+        if pending_restart:
+            if restart_cash < 200.0:
+                pair_stopped = True
+                if stop_bar is None:
+                    stop_bar = i
+                pending_restart = False
+            else:
+                half = restart_cash / 2.0
+                long_b = IsolatedDirBook(half, leverage, fee, "long", mmr_frac=mmr_frac)
+                short_b = IsolatedDirBook(half, leverage, fee, "short", mmr_frac=mmr_frac)
+                cap_l = half
+                cap_s = half
+                levels = user_levels(px, **band)
+                step = _step(levels)
+                n_restarts += 1
+                pending_restart = False
+        if pair_stopped or ((long_b.liquidated or short_b.liquidated) and not restart and not pending_restart):
             pair_stopped = True
             if stop_bar is None:
                 stop_bar = i
@@ -595,12 +621,29 @@ def run_user_hedge_pair(
         long_b.check_liq(px)
         short_b.check_liq(px)
         if long_b.liquidated or short_b.liquidated:
-            pair_stopped = True
-            stop_bar = i
             if not long_b.liquidated:
                 long_b.flatten(px)
             if not short_b.liquidated:
                 short_b.flatten(px)
+            live = (0.0 if long_b.liquidated else long_b.equity(px)) + (
+                0.0 if short_b.liquidated else short_b.equity(px)
+            )
+            deaths.append(
+                {
+                    "bar": i,
+                    "ts": str(ts.iloc[i]),
+                    "liquidated_long": bool(long_b.liquidated),
+                    "liquidated_short": bool(short_b.liquidated),
+                    "equity_after_flatten": float(live),
+                }
+            )
+            if restart and live >= 200.0:
+                pending_restart = True
+                restart_cash = float(live)
+            else:
+                pair_stopped = True
+                if stop_bar is None:
+                    stop_bar = i
         eq_l[i] = 0.0 if long_b.liquidated else long_b.equity(px)
         eq_s[i] = 0.0 if short_b.liquidated else short_b.equity(px)
         if on_bar is not None:
@@ -608,27 +651,35 @@ def run_user_hedge_pair(
 
     last_px = float(c[-1])
     long_r = _book_snapshot(
-        long_b, eq_l, cap_l, last_px, direction="long", reanchors=reanchors,
+        long_b, eq_l, started_long, last_px, direction="long", reanchors=reanchors,
         range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids,
         fee_preset=fee_preset, fill_engine=fill_engine, leverage=leverage,
     )
     short_r = _book_snapshot(
-        short_b, eq_s, cap_s, last_px, direction="short", reanchors=reanchors,
+        short_b, eq_s, started_short, last_px, direction="short", reanchors=reanchors,
         range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids,
         fee_preset=fee_preset, fill_engine=fill_engine, leverage=leverage,
     )
     long_r["timestamps"] = ts.reset_index(drop=True)
     short_r["timestamps"] = ts.reset_index(drop=True)
-    comb = combine_user_ls(long_r, short_r, cap_l + cap_s)
+    comb = combine_user_ls(long_r, short_r, started_long + started_short)
     comb["range_mode"] = range_mode
     comb["fee_preset"] = fee_preset
     comb["fill_engine"] = fill_engine
-    comb["hedge_mode"] = "moving_ls_flatten_survivor"
+    comb["hedge_mode"] = "restart_survivor" if restart else "moving_ls_flatten_survivor"
     comb["pair_stopped"] = bool(pair_stopped)
     comb["stop_bar"] = stop_bar
     comb["reanchors"] = int(reanchors)
+    comb["n_restarts"] = int(n_restarts)
+    comb["deaths"] = deaths
     comb["shared_reanchors"] = int(reanchors)
     return comb
+
+
+def run_user_hedge_restart(bars: pd.DataFrame, **kwargs: Any) -> dict[str, Any]:
+    """Flatten survivor, then re-seed both sides from remaining equity (no new cash)."""
+    kwargs.pop("restart", None)
+    return run_user_hedge_pair(bars, restart=True, **kwargs)
 
 
 def run_user_ls_pair(
