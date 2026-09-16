@@ -1,3 +1,7 @@
+## 2026-09-16（续 710）
+
+- 不变量 593；语料 C570；模式 name-the-finh1-bar；反模式 finh1-sold-as-nextheight；L10.3 第 562 条。填 L4.4 / CometBFT 档案 FinalizeBlock When starts consensus for h+1 round 0 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 473 → local 593。When steps 1–11 链完成。
+
 ## 2026-09-16（续 709）
 
 - 不变量 592；语料 C569；模式 name-the-finunlock-bar；反模式 finunlock-sold-as-checked；L10.3 第 561 条。填 L4.4 / CometBFT 档案 FinalizeBlock When unlocks mempool 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 472 → local 592。

@@ -4671,6 +4671,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2682 | 高 | 看见 FinalizeBlockResponse.tx_results[i].Code == 0 only if the i-th transaction is fully valid / 看见回了 0 会被写成已经 CheckTx 过了，或当成已经 Process 回了 Accept | 官方 FinalizeBlock Usage：tx_results[i].Code == 0 only if the i-th transaction is fully valid |
 | A2683 | 高 | 看见 Code == 0 only if fully valid / 看见这笔完全合法 会被写成已经 Code != 0 那种没进块，或当成已经无效就不在块里 | 官方 FinalizeBlock Usage vs Transaction Results：Code != 0 still in block |
 | A2684 | 高 | 看见回了 tx_results / 看见有 Code 会被写成已经 Finalize 改了就已经交差，或当成已经 Code / Data 印进本头 LastResultsHash | 官方 FinalizeBlock Usage vs Transaction Results vs FinalizeBlock / Commit |
+| A2725 | 记录 | 会与 592 / 403 / 589 / 480 / 479 / 478 / 33 糊成「看见开下一高了就已经交差、已经是 round 0、已经 unlock 之后 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When starts consensus for h+1 round 0 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经 unlock / 已经 delay / 已经 trigger 标成另一对象 |
+| A2724 | 中 | 怎样开下一高、怎样等 delay、怎样进 round 0 会被抄进不确定 | 不抄。不写怎样开下一高。不另写 19 节 |
+| A2723 | 高 | 看见 When 第 11 步 after unlock 会被写成已经 unlocks the mempool，或当成已经 Finalize 之后 bundled / 已经 When trigger 2f+1 precommit | 官方 FinalizeBlock When 第 11 步：starts h+1 not unlock / not bundled / not trigger |
+| A2722 | 高 | 看见 round 0 会被写成已经继续同一 round，或当成已经 next_block_delay / timeout_commit | 官方 FinalizeBlock When 第 11 步：round 0 not same round / not delay / not timeout_commit |
+| A2721 | 高 | 看见 starts consensus for height h+1 会被写成已经交差，或当成已经 persist decision / 已经四门已经结算 | 官方 FinalizeBlock When 第 11 步：starts h+1 not settled / not persist decision |
 | A2720 | 记录 | 会与 588 / 591 / 590 / 403 / 310 / 373 / 33 糊成「看见解锁了就已经交差、已经能收新交易、已经开下一高 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When unlocks mempool 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 / 已经 optional recheck / 已经开下一高 标成另一对象 |
 | A2719 | 中 | 怎样解锁、怎样再验、怎样开下一高会被抄进不确定 | 不抄。不写怎样解锁。不另写 19 节 |
 | A2718 | 高 | 看见 When 第 10 步 unlock after optional recheck 会被写成已经是 Commit 锁解锁，或当成已经 starts consensus for h+1 round 0 | 官方 FinalizeBlock When 第 10 步：unlock not Commit lock / not step 11 h+1 |

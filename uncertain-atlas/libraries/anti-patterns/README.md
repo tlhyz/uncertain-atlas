@@ -1,3 +1,4 @@
+- [`finh1-sold-as-nextheight.md`](finh1-sold-as-nextheight.md) — FinalizeBlock When starts consensus for h+1 round 0 被写成已经开下一高交差（不变量 593）
 - [`finunlock-sold-as-checked.md`](finunlock-sold-as-checked.md) — FinalizeBlock When unlocks mempool 被写成已经能收新交易（不变量 592）
 - [`finrecheck-sold-as-recheck.md`](finrecheck-sold-as-recheck.md) — FinalizeBlock When optional recheck 被写成已经是 Recheck（不变量 591）
 - [`fincommit-sold-as-settled.md`](fincommit-sold-as-settled.md) — FinalizeBlock When calls Commit instruct persist 被写成已经交差（不变量 590）
