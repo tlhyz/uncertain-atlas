@@ -1,3 +1,4 @@
+- [`finmorepre-notaftercommit-sold-as-bundled.md`](finmorepre-notaftercommit-sold-as-bundled.md) — after committing before next height 被写成已经 slot / 已经 final / 已经 finmorepre bundled（不变量 613）
 - [`finmorepre-notmorepre-sold-as-bundled.md`](finmorepre-notmorepre-sold-as-bundled.md) — more precommits despite 2/3+ 被写成已经 decided / 已经 479 fintrigger / 已经 finmorepre bundled（不变量 612）
 - [`finmorepre-notproctime-sold-as-bundled.md`](finmorepre-notproctime-sold-as-bundled.md) — includes processing time 被写成已经 timeout_commit / 已经 wallclock 非确定 / 已经 finmorepre bundled（不变量 611）
 - [`fintrigger-notdecides-sold-as-bundled.md`](fintrigger-notdecides-sold-as-bundled.md) — decides block v 被写成已经 at height h will Finalize / 已经 persist outputs / 已经 fintrigger bundled（不变量 610）

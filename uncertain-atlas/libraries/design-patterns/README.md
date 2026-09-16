@@ -1,3 +1,4 @@
+- [`name-the-finmorepre-notaftercommit-bar.md`](name-the-finmorepre-notaftercommit-bar.md) — FinalizeBlockResponse next_block_delay after committing before next height not slot / not final / not finmorepre bundled 正式三事（480 余量）（不变量 613）
 - [`name-the-finmorepre-notmorepre-bar.md`](name-the-finmorepre-notmorepre-bar.md) — FinalizeBlockResponse next_block_delay more precommits despite 2/3+ not decided / not 479 fintrigger 正式三事（480 余量）（不变量 612）
 - [`name-the-finmorepre-notproctime-bar.md`](name-the-finmorepre-notproctime-bar.md) — FinalizeBlockResponse next_block_delay includes processing time not timeout_commit / wallclock 正式三事（480 余量）（不变量 611）
 - [`name-the-fintrigger-notdecides-bar.md`](name-the-fintrigger-notdecides-bar.md) — FinalizeBlock When trigger decides block v not at height h will Finalize / not persist outputs 正式三事（479 余量）（不变量 610）
