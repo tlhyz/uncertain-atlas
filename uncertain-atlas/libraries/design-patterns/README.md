@@ -1,3 +1,4 @@
+- [`name-the-finrecheck-bar.md`](name-the-finrecheck-bar.md) — FinalizeBlock When optional recheck 正式三事（不变量 591）
 - [`name-the-fincommit-bar.md`](name-the-fincommit-bar.md) — FinalizeBlock When calls Commit instruct persist 正式三事（不变量 590）
 - [`name-the-fndelay-bar.md`](name-the-fndelay-bar.md) — FinalizeBlockResponse next_block_delay 非确定正式三事（不变量 589）
 - [`name-the-finlock-bar.md`](name-the-finlock-bar.md) — FinalizeBlock When locks mempool 正式三事（不变量 588）
