@@ -1,3 +1,4 @@
+- [`worked-example-finlock-notoptional-vs-bundled.md`](worked-example-finlock-notoptional-vs-bundled.md) — no CheckTx on new≠optional/in pool；≠finlock bundled/settled/Commit lock（不变量 630）
 - [`worked-example-finlock-notsettled-vs-bundled.md`](worked-example-finlock-notsettled-vs-bundled.md) — locks mempool≠settled/four gates；≠finlock bundled/optional/Commit lock（不变量 629）
 - [`worked-example-fintxcode-notsettled-vs-bundled.md`](worked-example-fintxcode-notsettled-vs-bundled.md) — tx_results returned≠settled/CodeData印头；≠fintxcode bundled/CheckTx/invalid（不变量 628）
 - [`worked-example-fintxcode-notinvalid-vs-bundled.md`](worked-example-fintxcode-notinvalid-vs-bundled.md) — only if fully valid≠Code!=0没进块/没索引；≠fintxcode bundled/CheckTx/settled（不变量 627）

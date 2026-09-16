@@ -1,3 +1,4 @@
+- [`finlock-notoptional-sold-as-bundled.md`](finlock-notoptional-sold-as-bundled.md) — no calls on new transactions 被写成已经 CheckTx 可选 / 已经进池 / 已经 finlock bundled（不变量 630）
 - [`finlock-notsettled-sold-as-bundled.md`](finlock-notsettled-sold-as-bundled.md) — locks mempool 被写成已经交差 / 已经四门已经结算 / 已经 finlock bundled（不变量 629）
 - [`fintxcode-notsettled-sold-as-bundled.md`](fintxcode-notsettled-sold-as-bundled.md) — tx_results returned 被写成已经 Finalize 改了就已经交差 / 已经 Code Data 印进本头 / 已经 fintxcode bundled（不变量 628）
 - [`fintxcode-notinvalid-sold-as-bundled.md`](fintxcode-notinvalid-sold-as-bundled.md) — only if fully valid 被写成已经 Code != 0 那种没进块 / 已经没索引 / 已经 fintxcode bundled（不变量 627）
