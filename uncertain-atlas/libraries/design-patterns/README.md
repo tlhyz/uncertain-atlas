@@ -1,3 +1,4 @@
+- [`name-the-fintrigger-notdecides-bar.md`](name-the-fintrigger-notdecides-bar.md) — FinalizeBlock When trigger decides block v not at height h will Finalize / not persist outputs 正式三事（479 余量）（不变量 610）
 - [`name-the-fintrigger-notprecommit-bar.md`](name-the-fintrigger-notprecommit-bar.md) — FinalizeBlock When trigger 2f+1 precommit not +2/3 prevote ExtendVote / not without all block parts 正式三事（479 余量）（不变量 609）
 - [`name-the-fintrigger-notparts-bar.md`](name-the-fintrigger-notparts-bar.md) — FinalizeBlock When trigger Proposal + all block parts not only hash / Process ran 正式三事（479 余量）（不变量 608）
 - [`name-the-finpersist-notsync-bar.md`](name-the-finpersist-notsync-bar.md) — FinalizeBlock When synchronous call not decides trigger / Process sync 正式三事（478 余量）（不变量 607）

@@ -1,3 +1,9 @@
+| A2810 | 记录 | 会与 479 / 362 / 478 / 608 / 609 糊成「看见 decides block v 就已经到了这一高就会调 Finalize、已经 persist outputs interchangeable、已经 fintrigger bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When trigger decides block v not at height h will Finalize / not persist outputs 正式三事（479 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。479 fintrigger unbundling 完成 |
+| A2809 | 中 | 怎样收块片、怎样数 2f+1、怎样落决定会被抄进不确定 | 不抄。不写怎样收块片。不另写 19 节 |
+| A2808 | 高 | 看见 decides block v 会被写成已经 fintrigger bundled，或当成已经 Proposal + all block parts / 2f+1 precommit / 608 notparts / 609 notprecommit | 官方 FinalizeBlock When 479 item 3：not fintrigger bundled / not 479 item 1 / not 479 item 2 |
+| A2807 | 高 | 看见 decides block v 会被写成已经 persist outputs / 已经交差，或当成已经 478 finpersist / 605 notpersist / 587 finreturn | 官方 FinalizeBlock When 479 item 3：decides block v not persist outputs / not 478 / not 605 |
+| A2806 | 高 | 看见 then decides block _v_ 会被写成已经处在高度 _h_ 就会调 Finalize，或当成已经 362 finwhen / +2/3 precommit 决定 | 官方 FinalizeBlock When 479 item 3：decides block v not at height h will Finalize / not 362 |
+
 | A2805 | 记录 | 会与 479 / 361 / 608 / 362 / 472 糊成「看见 2f+1 precommit 就已经 prevote ExtendVote、就已经可以没有 all block parts interchangeable、已经 fintrigger bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When trigger 2f+1 precommit not +2/3 prevote ExtendVote / not without all block parts 正式三事（479 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。479 fintrigger unbundling 续 |
 | A2804 | 中 | 怎样收块片、怎样数 2f+1、怎样落决定会被抄进不确定 | 不抄。不写怎样收块片。不另写 19 节 |
 | A2803 | 高 | 看见 2f+1 precommit 会被写成已经 fintrigger bundled，或当成已经 decides block v / 362 finwhen / 478 finpersist | 官方 FinalizeBlock When 479 item 2：not fintrigger bundled / not 479 item 3 / not 362 |

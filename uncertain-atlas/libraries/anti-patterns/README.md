@@ -1,3 +1,4 @@
+- [`fintrigger-notdecides-sold-as-bundled.md`](fintrigger-notdecides-sold-as-bundled.md) — decides block v 被写成已经 at height h will Finalize / 已经 persist outputs / 已经 fintrigger bundled（不变量 610）
 - [`fintrigger-notprecommit-sold-as-bundled.md`](fintrigger-notprecommit-sold-as-bundled.md) — 2f+1 precommit 被写成已经 prevote ExtendVote / 已经 without all block parts / 已经 fintrigger bundled（不变量 609）
 - [`fintrigger-notparts-sold-as-bundled.md`](fintrigger-notparts-sold-as-bundled.md) — Proposal + all block parts 被写成已经 only hash / 已经 Process 跑过 / 已经 fintrigger bundled（不变量 608）
 - [`finpersist-notsync-sold-as-bundled.md`](finpersist-notsync-sold-as-bundled.md) — synchronous call 被写成已经 Process 同步 / 已经 decides trigger / 已经 finpersist bundled（不变量 607）
