@@ -30,7 +30,7 @@
 | 对象 | 本页 | 那一页 |
 |---|---|---|
 | app_hash MUST be deterministic | 不是 already 印进本头 | 不是本头 AppHash 交差（147） |
-| app_hash MUST be deterministic | 不是 already next_block_delay nondet | 不是 next_block_delay 非确定（469） |
+| app_hash MUST be deterministic | 不是 already next_block_delay nondet | 不是 next_block_delay 非确定（589） |
 | app_hash MUST be deterministic | 不是 already findet item 1/3 | 不是 executes txs not like Prepare（579） |
 
 ## 产品

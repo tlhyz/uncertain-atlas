@@ -1,3 +1,4 @@
+- [`name-the-fndelay-bar.md`](name-the-fndelay-bar.md) — FinalizeBlockResponse next_block_delay 非确定正式三事（不变量 589）
 - [`name-the-finlock-bar.md`](name-the-finlock-bar.md) — FinalizeBlock When locks mempool 正式三事（不变量 588）
 - [`name-the-finreturn-bar.md`](name-the-finreturn-bar.md) — FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事（不变量 587）
 - [`name-the-finequiv-bar.md`](name-the-finequiv-bar.md) — FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事（不变量 586）
