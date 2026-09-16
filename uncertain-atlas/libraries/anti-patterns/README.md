@@ -1,3 +1,4 @@
+- [`finrecheck-notmust-sold-as-bundled.md`](finrecheck-notmust-sold-as-bundled.md) — optionally re-checks 被写成已经必须再验 / 已经交差 / 已经 finrecheck bundled（不变量 635）
 - [`finafter-notrecheck-sold-as-bundled.md`](finafter-notrecheck-sold-as-bundled.md) — optional recheck unlock h+1 被写成已经是 Recheck / 已经解锁 / 已经 finafter bundled（不变量 634）
 - [`finafter-notlock-sold-as-bundled.md`](finafter-notlock-sold-as-bundled.md) — 落完再锁内存池 被写成已经是 Commit 锁 / 已经交差 / 已经 finafter bundled（不变量 633）
 - [`finafter-notsettled-sold-as-bundled.md`](finafter-notsettled-sold-as-bundled.md) — Finalize 之后引擎才落盘 被写成已经交差 / 已经落盘应用状态 / 已经 finafter bundled（不变量 632）

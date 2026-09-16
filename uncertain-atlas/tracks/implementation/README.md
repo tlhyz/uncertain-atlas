@@ -1,3 +1,4 @@
+- [`worked-example-finrecheck-notmust-vs-bundled.md`](worked-example-finrecheck-notmust-vs-bundled.md) — optional recheck≠must/settled；≠finrecheck bundled/outstanding/type（不变量 635）
 - [`worked-example-finafter-notrecheck-vs-bundled.md`](worked-example-finafter-notrecheck-vs-bundled.md) — finafter recheck≠Recheck/unlock；≠finafter bundled/persist/lock（不变量 634）
 - [`worked-example-finafter-notlock-vs-bundled.md`](worked-example-finafter-notlock-vs-bundled.md) — finafter lock≠Commit lock/settled；≠finafter bundled/persist/recheck（不变量 633）
 - [`worked-example-finafter-notsettled-vs-bundled.md`](worked-example-finafter-notsettled-vs-bundled.md) — finafter persist≠settled/Commit落盘；≠finafter bundled/lock/recheck（不变量 632）
