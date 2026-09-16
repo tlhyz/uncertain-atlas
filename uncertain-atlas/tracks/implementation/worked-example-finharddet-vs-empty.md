@@ -15,9 +15,9 @@
 2. **看见 `FinalizeBlockResponse.app_hash` may also be hard-coded / 看见可以硬编码 不是已经必须真是 Merkle root，也不是已经写死就不算 AppHash。**  
    官方写：may also be empty **or hard-coded**, but MUST be deterministic。看见 hard-coded，不是已经必须算出真实 Merkle root 才合法。看见写死常量，不是已经 optional Merkle root contains an (optional) Merkle root hash（475）那种必须真是默克尔根 interchangeable。看见可以硬编码，不是已经 InitChain 回包 app_hash 是起步应用哈希（392）那种已经是本头 AppHash interchangeable。
 3. **看见 MUST be deterministic / must not be a function of anything that did not come from the parameters of `FinalizeBlockRequest` and the previous committed state / 看见必须确定 不是已经 next_block_delay 非确定就代表 Finalize 回包整门都可以非确定，也不是已经印进本头。**  
-   官方写：MUST be **deterministic** — it must not be a function of anything that did not come from the parameters of `FinalizeBlockRequest` and the previous committed state。看见 MUST be deterministic，不是已经像 `next_block_delay` 那样 Deterministic = No（469）就代表 Finalize 回包整门都可以非确定 interchangeable。看见只依赖请求参数和上一份已提交状态，不是已经 FinalizeBlock 算出的状态必须只依赖上一份状态和决定块（342）那种 Req 11–12 就已经是同一句 interchangeable——342 钉 s_h / T_h 只依赖两份，本页钉 app_hash 空 / 硬编码 / MUST be deterministic 三事。看见必须确定，不是已经印进本头。
+   官方写：MUST be **deterministic** — it must not be a function of anything that did not come from the parameters of `FinalizeBlockRequest` and the previous committed state。看见 MUST be deterministic，不是已经像 `next_block_delay` 那样 Deterministic = No（589）就代表 Finalize 回包整门都可以非确定 interchangeable。看见只依赖请求参数和上一份已提交状态，不是已经 FinalizeBlock 算出的状态必须只依赖上一份状态和决定块（342）那种 Req 11–12 就已经是同一句 interchangeable——342 钉 s_h / T_h 只依赖两份，本页钉 app_hash 空 / 硬编码 / MUST be deterministic 三事。看见必须确定，不是已经印进本头。
 
-怎样挑空根、怎样写死常量、怎样测确定性是规范里的做法，本页不抄。Finalize 回包余量 bundled（404）是 empty / hard-coded + Query proofs + Code==0 那套另一切片，FinalizeBlock Usage determinism bundled（470）是 executes txs deterministically + app_hash MUST be deterministic + implementation MUST be deterministic 那套另一切片，optional Merkle root / next block Header / Query anchored（475）是 contains optional Merkle root / included as Header.AppHash in next block / Query anchored 那套另一切片，next_block_delay 非确定（469）是 wallclock / timeout_commit / set to 0 那套另一切片，本页不抄。
+怎样挑空根、怎样写死常量、怎样测确定性是规范里的做法，本页不抄。Finalize 回包余量 bundled（404）是 empty / hard-coded + Query proofs + Code==0 那套另一切片，FinalizeBlock Usage determinism bundled（470）是 executes txs deterministically + app_hash MUST be deterministic + implementation MUST be deterministic 那套另一切片，optional Merkle root / next block Header / Query anchored（475）是 contains optional Merkle root / included as Header.AppHash in next block / Query anchored 那套另一切片，next_block_delay 非确定（589）是 wallclock / timeout_commit / set to 0 那套另一切片，本页不抄。
 
 ## 官方为什么这样拆
 
@@ -43,5 +43,5 @@
 - Finalize 回包余量 bundled 三事。那是不变量 404。
 - FinalizeBlock Usage determinism bundled 三事。那是不变量 470。
 - optional Merkle root / next block Header.AppHash / Query anchored。那是不变量 475。
-- next_block_delay 非确定。那是不变量 469。
+- next_block_delay 非确定。那是不变量 589。
 - 本头 AppHash 就已经是本高度交差。那是不变量 147。
