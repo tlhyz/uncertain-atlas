@@ -1,3 +1,4 @@
+- [`finreturn-notpersist-sold-as-bundled.md`](finreturn-notpersist-sold-as-bundled.md) — persists tx outputs / AppHash / ResultsHash 被写成已经交差 / 已经 Commit 落盘 / 已经 finreturn bundled（不变量 616）
 - [`finreturn-notresulthash-sold-as-bundled.md`](finreturn-notresulthash-sold-as-bundled.md) — hashes into ResultHash 被写成已经 Code / Data 印进本头 / 已经是本头 LastResultsHash / 已经 finreturn bundled（不变量 615）
 - [`finreturn-notheader-sold-as-bundled.md`](finreturn-notheader-sold-as-bundled.md) — Application returns AppHash + tx outputs 被写成已经印进本头 / 已经是本头 AppHash / 已经 finreturn bundled（不变量 614）
 - [`finmorepre-notaftercommit-sold-as-bundled.md`](finmorepre-notaftercommit-sold-as-bundled.md) — after committing before next height 被写成已经 slot / 已经 final / 已经 finmorepre bundled（不变量 613）

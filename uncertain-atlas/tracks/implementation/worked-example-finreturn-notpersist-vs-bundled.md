@@ -1,0 +1,49 @@
+# 例：看见 CometBFT persists the transaction outputs, AppHash, and ResultsHash / 看见引擎落盘 tx outputs / AppHash / ResultsHash is not already 已经交差 interchangeable / 已经在 Finalize 改了就已经落盘 interchangeable；不是已经 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 bundled（587） interchangeable / 已经 finreturn bundled interchangeable
+
+**层次**：实现 / FinalizeBlock When CometBFT persists tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state 正式三事（587 余量）。  
+**分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
+**来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) FinalizeBlock When step 6。  
+**对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「FinalizeBlock When CometBFT persists tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state 正式三事（587 余量）/ not 616 notpersist interchangeable / not 335 finpersist interchangeable / not 481 commitpersist interchangeable / not 403 finafter interchangeable / not 614 notheader interchangeable / not 615 notresulthash interchangeable」，不是 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 bundled（587），也不是 Finalize 落盘禁令 bundled（335），也不是 Commit Usage persist signal bundled（481）。不要另写怎样落盘这三份、怎样写 Commit、怎样锁内存池。
+
+## 官方三件事
+
+规范把 FinalizeBlock When 第 6 步 CometBFT persists the transaction outputs, AppHash, and ResultsHash 和「已经是已经交差 interchangeable / 已经是 Commit 落盘应用状态 interchangeable / 已经是 finreturn bundled interchangeable」分开写成三件独立的实现事，不是「看见 persists 这三份 就已经交差、就已经 Commit 落盘、就已经 finreturn bundled interchangeable」一件事：
+
+1. **看见 CometBFT persists the transaction outputs, AppHash, and ResultsHash / 看见引擎落盘 tx outputs / AppHash / ResultsHash is not already 已经交差 interchangeable / 已经 Finalize + Commit 交差 interchangeable / 33 four gates interchangeable / 601 notsettled interchangeable / 362 finwhen item 6 persists interchangeable，也不是已经 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 bundled（587） interchangeable / 616 notpersist interchangeable / 587 finreturn interchangeable / 335 finpersist interchangeable / 403 finafter interchangeable，也不是已经 FinalizeBlock 落盘禁令 bundled（335 余量） interchangeable / 335 finpersist interchangeable / 335 item 1 Finalize 改了就已经落盘 interchangeable / 335 item 2 必须在 Commit 落盘 interchangeable / 335 item 3 记住上次 Commit 高度 interchangeable，也不是已经 FinalizeBlock When persist decision not 已经交差 bundled（605 余量） interchangeable / 605 notpersist interchangeable / 478 finpersist interchangeable / 587 finreturn interchangeable / 606 notoutputs interchangeable，也不是已经 Finalize 之后 bundled（403 余量） interchangeable / 403 finafter interchangeable / 403 item 1 引擎才落盘这三份 interchangeable / 403 item 2 落完再锁内存池 interchangeable / 403 item 3 可选再验池里剩下的 interchangeable。**  
+   官方 When 第 6 步写：CometBFT persists the transaction outputs, _AppHash_, and _ResultsHash_。看见 persists 这三份，不是已经 Finalize + Commit 交差（33） interchangeable——587 bundled 第三件事常被写成「看见 persists 这三份 就已经交差 interchangeable」，本页从 587 item 3 侧钉 not already settled 单句。看见引擎落了 tx outputs / AppHash / ResultsHash，不是已经 Finalize 改了就已经落盘（335）那种应用在 Finalize 里落盘 interchangeable——335 钉应用 MUST NOT 在 Finalize 持久化，本页钉 When 第 6 步引擎 persist 这三份 单句。看见 When 第 6 步，不是已经 Finalize 之后 bundled（403）那种落完就锁内存池 / 已经交差 interchangeable——403 钉 Finalize 之后全流程，本页钉 587 item 3 第一件事。
+2. **看见 CometBFT persists the transaction outputs, AppHash, and ResultsHash / 看见引擎落盘 tx outputs / AppHash / ResultsHash is not already Commit 落盘应用状态 interchangeable / 已经 Signal persist application state interchangeable / 481 commitpersist interchangeable / 481 item 1 persist signal interchangeable / 481 item 2 expected persist at end of call interchangeable / 335 item 2 必须在 Commit 落盘 interchangeable，也不是已经 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 bundled（587） interchangeable / 616 notpersist interchangeable / 587 finreturn interchangeable / 467 finpersist interchangeable / 478 finpersist interchangeable，也不是已经 Commit Usage persist signal bundled（481 余量） interchangeable / 481 commitpersist interchangeable / 481 item 3 historical blocks interchangeable / 399 retain height interchangeable / 366 pruning interchangeable，也不是已经 FinalizeBlock When calls FinalizeBlock not persist outputs bundled（606 余量） interchangeable / 606 notoutputs interchangeable / 478 finpersist item 2 interchangeable / 587 finreturn interchangeable / 362 finwhen interchangeable，也不是已经 FinalizeBlock When step 8 calls Commit to instruct bundled（467 余量） interchangeable / 467 finpersist interchangeable / 588 finlock interchangeable / 589 finunlock interchangeable / 403 finafter interchangeable。**  
+   官方把 CometBFT persists tx outputs / AppHash / ResultsHash 和应用在 `Commit` 里落盘应用状态分开——587 item 3 常与 481 / 335 混成「看见 persists 这三份 就已经 Commit 落盘 interchangeable」，本页钉 not Commit persist application state 单句。看见 persists 这三份，不是已经 Signal the Application to persist application state（481） interchangeable——481 钉 Commit Usage persist signal，本页钉 When 第 6 步引擎 persist 这三份 单句。看见引擎落了这三份，不是已经 When step 8 calls Commit to instruct（467） interchangeable——467 另钉 not persist decision / not synchronous call，本页钉 587 item 3 第二件事。
+3. **看见 CometBFT persists the transaction outputs, AppHash, and ResultsHash / 看见引擎落盘 tx outputs / AppHash / ResultsHash is not already finreturn bundled（587） interchangeable / 已经 Application returns AppHash + tx outputs interchangeable / 已经 CometBFT hashes into ResultHash interchangeable / 587 finreturn item 1 interchangeable / 587 finreturn item 2 interchangeable / 614 notheader interchangeable / 615 notresulthash interchangeable，也不是已经 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 bundled（587） interchangeable / 616 notpersist interchangeable / 614 notheader interchangeable / 615 notresulthash interchangeable / 467 finpersist interchangeable / 403 finafter interchangeable，也不是已经 Application calculates and returns AppHash along with tx outputs not printed in this header bundled（614 余量） interchangeable / 614 notheader interchangeable / 587 finreturn item 1 interchangeable / 404 finapphash interchangeable / 475 finmerkle interchangeable，也不是已经 CometBFT hashes all the transaction outputs and stores it in ResultHash not Code / Data 印进本头 bundled（615 余量） interchangeable / 615 notresulthash interchangeable / 316 ExecTxResult interchangeable / 335 finpersist interchangeable / 481 commitpersist interchangeable，也不是已经 FinalizeBlock When calls FinalizeBlock not persist outputs bundled（606 余量） interchangeable / 606 notoutputs interchangeable / 478 finpersist item 2 interchangeable / 587 finreturn interchangeable / 362 finwhen interchangeable。**  
+   官方把 587 finreturn bundled 三事里的 persists tx outputs / AppHash / ResultsHash 和 Application returns AppHash + tx outputs / hashes into ResultHash 这三份 分开——587 bundled 常与 item 1 / item 2 混成「看见 persists 这三份 就已经 finreturn bundled interchangeable」，本页钉 587 item 3 第三件事。看见 persists 这三份，不是已经 Application returns AppHash + tx outputs（587 item 1 余量 / 614） interchangeable——614 另钉 not printed in this header / not this header AppHash，本页钉 item 3 单句。看见引擎落了这三份，不是已经 CometBFT hashes into ResultHash（587 item 2 余量 / 615） interchangeable——615 另钉 not Code / Data 印进本头 LastResultsHash，本页钉 not finreturn bundled 单句。
+
+怎样落盘这三份、怎样写 Commit、怎样锁内存池、怎样再验是规范里的做法，本页不抄。FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 bundled（587）、Application returns AppHash + tx outputs not printed in this header（587 item 1 余量 / 614）、CometBFT hashes into ResultHash not Code / Data 印进本头（587 item 2 余量 / 615）、Finalize 落盘禁令 bundled（335）、Commit Usage persist signal bundled（481）、Finalize 之后 bundled（403）、FinalizeBlock When calls FinalizeBlock not persist outputs（606）是另外那套，本页不抄。
+
+## 官方为什么这样拆
+
+- **CometBFT persists tx outputs / AppHash / ResultsHash not already settled ≠ 335 finpersist / 403 finafter interchangeable：** 官方把 When 第 6 步引擎 persist 这三份 和已经交差 / Finalize 改了就已经落盘分开。
+- **CometBFT persists tx outputs / AppHash / ResultsHash not Commit persist application state ≠ 481 commitpersist / 467 finpersist interchangeable：** 官方把 587 item 3 和 Commit 落盘应用状态分开。
+- **CometBFT persists tx outputs / AppHash / ResultsHash not finreturn bundled ≠ 614 notheader / 615 notresulthash interchangeable：** 官方把 587 item 3 和 item 1 / item 2 分开；587 finreturn unbundling 完成（616 item 3）。
+
+## 和相邻页的边界
+
+| 对象 | 本页 | 那一页 |
+|---|---|---|
+| CometBFT persists tx outputs / AppHash / ResultsHash | 不是 already 已经交差 | 不是 four gates（33） |
+| CometBFT persists tx outputs / AppHash / ResultsHash | 不是 already Commit 落盘应用状态 | 不是 commitpersist（481） |
+| CometBFT persists tx outputs / AppHash / ResultsHash | 不是 already finreturn bundled | 不是 Application returns（587 item 1 / 614） |
+
+## 产品
+
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 FinalizeBlock When CometBFT persists tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state 正式三事（587 余量），必须分开 persists 这三份 是不是 already 已经交差 interchangeable / 335 finpersist interchangeable / 403 finafter interchangeable / 33 four gates interchangeable、persists 这三份 是不是 already Commit 落盘应用状态 interchangeable / 481 commitpersist interchangeable / 467 finpersist interchangeable / 478 finpersist interchangeable、persists 这三份 是不是 already finreturn bundled interchangeable / 614 notheader interchangeable / 615 notresulthash interchangeable / 606 notoutputs interchangeable。可以跳过「看见 persists 这三份 就已经交差 interchangeable」。不要另写怎样落盘这三份。587 finreturn unbundling 在本页 item 3 完成。
+
+## 本页不抄
+
+- 怎样落盘这三份、怎样写 Commit、怎样锁内存池、怎样再验。
+- FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 bundled。那是不变量 587。
+- Application returns AppHash + tx outputs not printed in this header。那是不变量 587 item 1 余量 / 614。
+- CometBFT hashes into ResultHash not Code / Data 印进本头。那是不变量 587 item 2 余量 / 615。
+- Finalize 落盘禁令 bundled。那是不变量 335。
+- Commit Usage persist signal bundled。那是不变量 481。
+- Finalize 之后 bundled。那是不变量 403。
+- FinalizeBlock When calls FinalizeBlock not persist outputs。那是不变量 606。

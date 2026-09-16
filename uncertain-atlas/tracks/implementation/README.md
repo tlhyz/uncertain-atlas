@@ -1,3 +1,4 @@
+- [`worked-example-finreturn-notpersist-vs-bundled.md`](worked-example-finreturn-notpersist-vs-bundled.md) — persists≠交差/Commit落盘；≠finreturn bundled/returns/hashes ResultHash（不变量 616）
 - [`worked-example-finreturn-notresulthash-vs-bundled.md`](worked-example-finreturn-notresulthash-vs-bundled.md) — hashes ResultHash≠Code/Data印进本头/本头LastResultsHash；≠finreturn bundled/returns/persists（不变量 615）
 - [`worked-example-finreturn-notheader-vs-bundled.md`](worked-example-finreturn-notheader-vs-bundled.md) — returns AppHash≠印进本头/本头AppHash；≠finreturn bundled/hashes ResultHash/persists（不变量 614）
 - [`worked-example-finmorepre-notaftercommit-vs-bundled.md`](worked-example-finmorepre-notaftercommit-vs-bundled.md) — after committing≠slot/final；≠finmorepre bundled/includes processing time/more precommits（不变量 613）
