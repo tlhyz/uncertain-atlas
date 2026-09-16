@@ -422,6 +422,8 @@ def run_user_hedge_pair(
     *,
     range_mode: RangeMode = "usdt",
     capital_per_side: float = USER_CAPITAL_PER_SIDE,
+    capital_long: float | None = None,
+    capital_short: float | None = None,
     leverage: float = USER_LEVERAGE,
     range_usdt: float = USER_RANGE_USDT,
     range_pct: float = USER_RANGE_PCT,
@@ -438,8 +440,10 @@ def run_user_hedge_pair(
     ts = pd.to_datetime(bars["timestamp"], utc=True)
     fee = _fee_rate(fee_preset)
     cfg = FillConfig.preset(fee_preset)
-    long_b = IsolatedDirBook(capital_per_side, leverage, fee, "long")
-    short_b = IsolatedDirBook(capital_per_side, leverage, fee, "short")
+    cap_l = float(capital_long if capital_long is not None else capital_per_side)
+    cap_s = float(capital_short if capital_short is not None else capital_per_side)
+    long_b = IsolatedDirBook(cap_l, leverage, fee, "long")
+    short_b = IsolatedDirBook(cap_s, leverage, fee, "short")
     eq_l = np.empty(len(c), dtype=float)
     eq_s = np.empty(len(c), dtype=float)
     levels = user_levels(float(c[0]), range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids)
@@ -473,12 +477,12 @@ def run_user_hedge_pair(
         lo_b, hi_b = float(l[i]), float(h[i])
         pend_l = _dir_pending(
             direction="long", levels=levels, step=step, mid=mid, book=long_b,
-            capital=capital_per_side, leverage=leverage, n_grids=n_grids,
+            capital=cap_l, leverage=leverage, n_grids=n_grids,
             fill_engine=fill_engine, lo_b=lo_b, hi_b=hi_b,
         )
         pend_s = _dir_pending(
             direction="short", levels=levels, step=step, mid=mid, book=short_b,
-            capital=capital_per_side, leverage=leverage, n_grids=n_grids,
+            capital=cap_s, leverage=leverage, n_grids=n_grids,
             fill_engine=fill_engine, lo_b=lo_b, hi_b=hi_b,
         )
         pending = pend_l + pend_s
@@ -509,18 +513,18 @@ def run_user_hedge_pair(
 
     last_px = float(c[-1])
     long_r = _book_snapshot(
-        long_b, eq_l, capital_per_side, last_px, direction="long", reanchors=reanchors,
+        long_b, eq_l, cap_l, last_px, direction="long", reanchors=reanchors,
         range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids,
         fee_preset=fee_preset, fill_engine=fill_engine, leverage=leverage,
     )
     short_r = _book_snapshot(
-        short_b, eq_s, capital_per_side, last_px, direction="short", reanchors=reanchors,
+        short_b, eq_s, cap_s, last_px, direction="short", reanchors=reanchors,
         range_mode=range_mode, range_usdt=range_usdt, range_pct=range_pct, n_grids=n_grids,
         fee_preset=fee_preset, fill_engine=fill_engine, leverage=leverage,
     )
     long_r["timestamps"] = ts.reset_index(drop=True)
     short_r["timestamps"] = ts.reset_index(drop=True)
-    comb = combine_user_ls(long_r, short_r, capital_per_side * 2.0)
+    comb = combine_user_ls(long_r, short_r, cap_l + cap_s)
     comb["range_mode"] = range_mode
     comb["fee_preset"] = fee_preset
     comb["fill_engine"] = fill_engine
@@ -537,23 +541,35 @@ def run_user_ls_pair(
     *,
     range_mode: RangeMode = "usdt",
     capital_per_side: float = USER_CAPITAL_PER_SIDE,
+    capital_long: float | None = None,
+    capital_short: float | None = None,
+    leverage: float = USER_LEVERAGE,
+    range_usdt: float = USER_RANGE_USDT,
+    range_pct: float = USER_RANGE_PCT,
+    n_grids: int = USER_N_GRIDS,
     fee_preset: FeePreset = "base",
     fill_engine: Literal["bar", "tick"] = "tick",
     get_trades=None,
 ) -> dict[str, Any]:
-    kw: dict[str, Any] = dict(
-        capital=capital_per_side,
+    cap_l = float(capital_long if capital_long is not None else capital_per_side)
+    cap_s = float(capital_short if capital_short is not None else capital_per_side)
+    shared = dict(
         range_mode=range_mode,
+        leverage=leverage,
+        range_usdt=range_usdt,
+        range_pct=range_pct,
+        n_grids=n_grids,
         fee_preset=fee_preset,
         fill_engine=fill_engine,
         get_trades=get_trades,
     )
-    long_r = simulate_user_dir_grid(bars, direction="long", **kw)
-    short_r = simulate_user_dir_grid(bars, direction="short", **kw)
-    comb = combine_user_ls(long_r, short_r, capital_per_side * 2.0)
+    long_r = simulate_user_dir_grid(bars, direction="long", capital=cap_l, **shared)
+    short_r = simulate_user_dir_grid(bars, direction="short", capital=cap_s, **shared)
+    comb = combine_user_ls(long_r, short_r, cap_l + cap_s)
     comb["range_mode"] = range_mode
     comb["fee_preset"] = fee_preset
     comb["fill_engine"] = fill_engine
+    comb["hedge_mode"] = "independent"
     return comb
 
 

@@ -31,6 +31,17 @@
 | 日频 50/50 不加网格 | +2.9% / −2.3% | 这窗里唯一像样的对冲 |
 | BAR 网格 +18.8% | 已推翻 | 影线虚高，不要引用 |
 
+## 自己改参数再跑（真实逐笔）
+
+改 [`params/run.yaml`](params/run.yaml)，或命令行盖一层：
+
+```bash
+python3 soxl-lab/scripts/run_grid.py
+python3 soxl-lab/scripts/run_grid.py --leverage 3 --n-grids 80 --range-usdt 15
+```
+
+说明：[`scripts/README.md`](scripts/README.md)。结果在 `results/runs/`。
+
 ## 三个抽屉
 
 ```
