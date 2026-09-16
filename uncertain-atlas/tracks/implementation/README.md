@@ -1,3 +1,4 @@
+- [`worked-example-fintxcode-notinvalid-vs-bundled.md`](worked-example-fintxcode-notinvalid-vs-bundled.md) — only if fully valid≠Code!=0没进块/没索引；≠fintxcode bundled/CheckTx/settled（不变量 627）
 - [`worked-example-fintxcode-notchecktx-vs-bundled.md`](worked-example-fintxcode-notchecktx-vs-bundled.md) — only if fully valid≠CheckTx/Process Accept；≠fintxcode bundled/invalid/settled（不变量 626）
 - [`worked-example-finmerkle-notquery-vs-bundled.md`](worked-example-finmerkle-notquery-vs-bundled.md) — Query anchored≠matched AppHash/ProofOp key；≠finmerkle bundled/optional/next header（不变量 625）
 - [`worked-example-finmerkle-notnextheader-vs-bundled.md`](worked-example-finmerkle-notnextheader-vs-bundled.md) — included in next block≠已写进/本头AppHash；≠finmerkle bundled/optional/query（不变量 624）
