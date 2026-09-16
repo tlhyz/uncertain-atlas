@@ -1,3 +1,4 @@
+- [`fndelay-notwallclock-sold-as-bundled.md`](fndelay-notwallclock-sold-as-bundled.md) — each node MAY / wallclock 被写成已经 app_hash MUST be deterministic / 已经整门非确定 / 已经 fndelay bundled（不变量 618）
 - [`fndelay-notslot-sold-as-bundled.md`](fndelay-notslot-sold-as-bundled.md) — next_block_delay Deterministic = No 被写成已经是槽位 / 已经 finality / 已经 fndelay bundled（不变量 617）
 - [`finreturn-notpersist-sold-as-bundled.md`](finreturn-notpersist-sold-as-bundled.md) — persists tx outputs / AppHash / ResultsHash 被写成已经交差 / 已经 Commit 落盘 / 已经 finreturn bundled（不变量 616）
 - [`finreturn-notresulthash-sold-as-bundled.md`](finreturn-notresulthash-sold-as-bundled.md) — hashes into ResultHash 被写成已经 Code / Data 印进本头 / 已经是本头 LastResultsHash / 已经 finreturn bundled（不变量 615）
