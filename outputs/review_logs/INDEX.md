@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-16 | P1-13 listing 1h vs ticks | PASS | outputs/review_logs/2026-09-16_P1-13_listing_tick_coverage_PASS.md |
 | 2026-09-16 | P3-11 listing-length similar windows | BLOCKED | outputs/review_logs/2026-09-16_P3-11_listing_retry_BLOCKED.md |
 | 2026-09-16 | P7-11 extensible spec | PASS | outputs/review_logs/2026-09-16_P7-11_extensible_spec.md |
 | 2026-09-16 | P7-10 usage notes | PASS | outputs/review_logs/2026-09-16_P7-10_usage_notes.md |

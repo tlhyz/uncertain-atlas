@@ -26,6 +26,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-01 | Download BTC/ETH/SOL aggTrades (auto start date) | **done** | BTC/ETH/SOL 91d manifests; Sep-04 SOL + Sep-01 BTC gaps filled 2026-09-13 — outputs/review_logs/2026-09-13_P1-01_crypto_aggTrades_download_PASS.md |
 | P1-02 | Download SOXLUSDT aggTrades (detect earliest) | done | local 59d 2026-07-15→09-11; Vision listing **2026-05-15** |
 | P1-12 | Download remaining Vision SOXL 2026-05-15→07-14 | **done** | 61 prefix days + 6 gap; local **120d** 2026-05-15→09-11 0 gaps — outputs/review_logs/2026-09-16_P1-12_soxl_listing_prefix_PASS.md |
+| P1-13 | Validate listing-length SOXL 1h (2866) vs cached ticks | **done** | **2866/2866** hours; p99 close err 1.8e-4 — outputs/review_logs/2026-09-16_P1-13_listing_tick_coverage_PASS.md |
 | P1-03 | Download SNXXUSDT aggTrades (detect earliest) | done | 65 days |
 | P1-04 | Run `build_manifest.py` + sha256 all files | done | data/manifests/*.json |
 | P1-05 | Validate every SOXL bar has aggTrades | done | 1560/1560 |
@@ -149,7 +150,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | SOXL 07-09→07-14 gap filled; quality-gate pass; plateau skip if artifact missing |
+| M-01 | Run `pytest -q` | **done** | 2026-09-16T01:07Z grid suite 29 passed |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | W-03/W-04; Vision listing 2026-05-15 |
 | M-03 | Append `review_logs/INDEX.md` | **done** | P3-09 listing probe 2026-09-15T23:55Z |
 | M-04 | Check PR CI status | **done** | PR #8 open unmerged; main at PR #3 |

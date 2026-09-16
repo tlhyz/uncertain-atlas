@@ -1,0 +1,14 @@
+{
+  "symbol": "SOXLUSDT",
+  "start": "2026-05-15",
+  "end": "2026-09-11",
+  "n_bars": 2866,
+  "bars_with_trades": 2866,
+  "bars_missing_trades": 0,
+  "coverage": 1.0,
+  "empty_days": [],
+  "missing_hours_head": [],
+  "median_close_rel_err": 0.0,
+  "p99_close_rel_err": 0.00017930238929765287,
+  "pass": true
+}

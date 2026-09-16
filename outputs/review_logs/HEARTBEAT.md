@@ -506,3 +506,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T00:50Z | P7-10 | soxl-lab/使用注意事项.md pushed; ticks stay in cache/
 2026-09-16T00:55Z | P7-11 | extensible YAML: geometric/fee_bps/reanchor/mmr + register_hedge; 29 tests
 2026-09-16T00:47Z | P3-11 retry | 2866 1h bars 05-15→09-11; 9 slides; top-20 still BLOCKED (need 4632)
+2026-09-16T01:07Z | P1-13 | listing 1h 2866/2866 ticks PASS; p99 close err 1.8e-4; 29 grid tests
