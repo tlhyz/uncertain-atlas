@@ -1,3 +1,4 @@
+- [`worked-example-finafter-notlock-vs-bundled.md`](worked-example-finafter-notlock-vs-bundled.md) — finafter lock≠Commit lock/settled；≠finafter bundled/persist/recheck（不变量 633）
 - [`worked-example-finafter-notsettled-vs-bundled.md`](worked-example-finafter-notsettled-vs-bundled.md) — finafter persist≠settled/Commit落盘；≠finafter bundled/lock/recheck（不变量 632）
 - [`worked-example-finlock-notcommitlock-vs-bundled.md`](worked-example-finlock-notcommitlock-vs-bundled.md) — locks after persist≠Commit lock/unlock/Recheck；≠finlock bundled/settled/optional（不变量 631）
 - [`worked-example-finlock-notoptional-vs-bundled.md`](worked-example-finlock-notoptional-vs-bundled.md) — no CheckTx on new≠optional/in pool；≠finlock bundled/settled/Commit lock（不变量 630）

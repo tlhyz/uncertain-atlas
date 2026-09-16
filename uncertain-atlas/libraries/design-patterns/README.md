@@ -1,3 +1,4 @@
+- [`name-the-finafter-notlock-bar.md`](name-the-finafter-notlock-bar.md) — FinalizeBlock When 落完再锁内存池、新交易不进 CheckTx not Commit lock / not already settled / not finafter bundled 正式三事（403 余量）（不变量 633）
 - [`name-the-finafter-notsettled-bar.md`](name-the-finafter-notsettled-bar.md) — FinalizeBlock When Finalize 之后引擎才落盘 tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state / not finafter bundled 正式三事（403 余量）（不变量 632）
 - [`name-the-finlock-notcommitlock-bar.md`](name-the-finlock-notcommitlock-bar.md) — FinalizeBlock When locks mempool after persist not Commit lock / not unlock / not Recheck / not finlock bundled 正式三事（588 余量）（不变量 631）
 - [`name-the-finlock-notoptional-bar.md`](name-the-finlock-notoptional-bar.md) — FinalizeBlock When no calls to CheckTx on new transactions not CheckTx optional / not already in pool / not finlock bundled 正式三事（588 余量）（不变量 630）

@@ -1,3 +1,9 @@
+| A2925 | 记录 | 会与 403 / 310 / 632 / 634 / 631 糊成「看见落完再锁内存池 就已经 Commit 锁 interchangeable、已经交差 interchangeable、已经 finafter bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When 落完再锁内存池、新交易不进 CheckTx not Commit lock / not already settled / not finafter bundled 正式三事（403 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。403 finafter unbundling 续（633 item 2） |
+| A2924 | 中 | 怎样锁内存池、怎样再验、怎样解锁 会被抄进不确定 | 不抄。不写怎样锁内存池。不另写 19 节 |
+| A2923 | 高 | 看见落完再锁内存池 会被写成已经 finafter bundled，或当成已经 632 notsettled / 634 notrecheck / 588 finlock / 631 notcommitlock | 官方 FinalizeBlock When step 7 403 item 2：not finafter bundled / not 632 / not 634 |
+| A2922 | 高 | 看见落完再锁内存池 会被写成已经交差，或当成已经 632 notsettled / 335 finpersist / 629 notsettled / 33 four gates | 官方 FinalizeBlock When step 7 403 item 2：not already settled / not 632 / not 629 |
+| A2921 | 高 | 看见落完再锁内存池 会被写成已经是 Commit 锁，或当成已经 310 commitlock / 631 notcommitlock / 590 fincommit / 307 commitlock | 官方 FinalizeBlock When step 7 403 item 2：not Commit lock / not 310 / not 631 |
+
 | A2920 | 记录 | 会与 403 / 335 / 481 / 616 / 633 / 634 糊成「看见 Finalize 之后引擎才落盘 就已经交差 interchangeable、已经落盘应用状态 interchangeable、已经 finafter bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When Finalize 之后引擎才落盘 tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state / not finafter bundled 正式三事（403 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。403 finafter unbundling 启动（632 item 1） |
 | A2919 | 中 | 怎样落盘这三份、怎样锁内存池、怎样再验 会被抄进不确定 | 不抄。不写怎样落盘这三份。不另写 19 节 |
 | A2918 | 高 | 看见 Finalize 之后引擎才落盘 会被写成已经 finafter bundled，或当成已经 633 notlock / 634 notrecheck / 588 finlock / 629 notsettled | 官方 FinalizeBlock When step 6 403 item 1：not finafter bundled / not 633 / not 634 |
