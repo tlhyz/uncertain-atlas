@@ -1,3 +1,4 @@
+- [`worked-example-finnewdec-notsettled-vs-bundled.md`](worked-example-finnewdec-notsettled-vs-bundled.md) — Contains newly decided fields（474）≠ four gates settled；≠ already ran Process；≠ Process ACCEPT switched working state（不变量 559）
 - [`worked-example-finnewfields-notdecprop-vs-bundled.md`](worked-example-finnewfields-notdecprop-vs-bundled.md) — fill all fields ≠ decided/proposed interchangeable；≠ newly decided/proposed interchangeable；≠ ran Process means don't need Finalize（不变量 558）
 - [`worked-example-finnewfields-notprocfull-vs-bundled.md`](worked-example-finnewfields-notprocfull-vs-bundled.md) — newly decided fields ≠ ProcessProposal contains all information；≠ proposed/decided interchangeable；≠ only raw proposal enough（不变量 557）
 - [`worked-example-finnewfields-notsettled-vs-bundled.md`](worked-example-finnewfields-notsettled-vs-bundled.md) — Contains newly decided fields ≠ four gates settled；≠ already ran Process；≠ Process ACCEPT switched working state（不变量 556）
