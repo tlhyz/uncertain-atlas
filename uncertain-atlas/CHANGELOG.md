@@ -1,3 +1,7 @@
+## 2026-09-16（续 728）
+
+- 不变量 611；语料 C588；模式 name-the-finmorepre-notproctime-bar；反模式 finmorepre-notproctime-sold-as-bundled；L10.3 第 580 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay includes processing time not timeout_commit / wallclock 正式三事（480 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。480 finmorepre unbundling 启动（611 item 1）。
+
 ## 2026-09-16（续 727）
 
 - 不变量 610；语料 C587；模式 name-the-fintrigger-notdecides-bar；反模式 fintrigger-notdecides-sold-as-bundled；L10.3 第 579 条。填 L4.4 / CometBFT 档案 FinalizeBlock When trigger decides block v not at height h will Finalize / not persist outputs 正式三事（479 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。479 fintrigger unbundling 完成（610 item 3）。
