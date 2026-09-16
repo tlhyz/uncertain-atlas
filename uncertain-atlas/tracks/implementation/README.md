@@ -1,3 +1,4 @@
+- [`worked-example-finnewdec-notmatchheader-vs-bundled.md`](worked-example-finnewdec-notmatchheader-vs-bundled.md) — fields of newly decided block（474）≠ match header means separated；≠ fill all fields means dec/prop；≠ decided/proposed columns（不变量 561）
 - [`worked-example-finnewdec-notproposed-vs-bundled.md`](worked-example-finnewdec-notproposed-vs-bundled.md) — newly decided block（474）≠ proposed block；≠ proposed_last_commit from proposed；≠ only raw proposal enough（不变量 560）
 - [`worked-example-finnewdec-notsettled-vs-bundled.md`](worked-example-finnewdec-notsettled-vs-bundled.md) — Contains newly decided fields（474）≠ four gates settled；≠ already ran Process；≠ Process ACCEPT switched working state（不变量 559）
 - [`worked-example-finnewfields-notdecprop-vs-bundled.md`](worked-example-finnewfields-notdecprop-vs-bundled.md) — fill all fields ≠ decided/proposed interchangeable；≠ newly decided/proposed interchangeable；≠ ran Process means don't need Finalize（不变量 558）
