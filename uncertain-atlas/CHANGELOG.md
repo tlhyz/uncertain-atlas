@@ -1,3 +1,7 @@
+## 2026-09-16（续 725）
+
+- 不变量 608；语料 C585；模式 name-the-fintrigger-notparts-bar；反模式 fintrigger-notparts-sold-as-bundled；L10.3 第 577 条。填 L4.4 / CometBFT 档案 FinalizeBlock When trigger Proposal + all block parts not only hash / Process ran 正式三事（479 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。479 fintrigger unbundling 启动（608 item 1）。
+
 ## 2026-09-16（续 724）
 
 - 不变量 607；语料 C584；模式 name-the-finpersist-notsync-bar；反模式 finpersist-notsync-sold-as-bundled；L10.3 第 576 条。填 L4.4 / CometBFT 档案 FinalizeBlock When synchronous call not decides trigger / Process sync 正式三事（478 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。478 finpersist unbundling 完成（607 item 3）。

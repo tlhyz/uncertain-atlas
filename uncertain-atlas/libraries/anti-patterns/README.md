@@ -1,3 +1,4 @@
+- [`fintrigger-notparts-sold-as-bundled.md`](fintrigger-notparts-sold-as-bundled.md) — Proposal + all block parts 被写成已经 only hash / 已经 Process 跑过 / 已经 fintrigger bundled（不变量 608）
 - [`finpersist-notsync-sold-as-bundled.md`](finpersist-notsync-sold-as-bundled.md) — synchronous call 被写成已经 Process 同步 / 已经 decides trigger / 已经 finpersist bundled（不变量 607）
 - [`finpersist-notoutputs-sold-as-bundled.md`](finpersist-notoutputs-sold-as-bundled.md) — calls FinalizeBlock 被写成已经 persist outputs / 已经 decides trigger / 已经 finpersist bundled（不变量 606）
 - [`finpersist-notpersist-sold-as-bundled.md`](finpersist-notpersist-sold-as-bundled.md) — persist decision 被写成已经 executes block v / 已经交差 / 已经 finpersist bundled（不变量 605）

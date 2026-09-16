@@ -1,3 +1,4 @@
+- [`worked-example-fintrigger-notparts-vs-bundled.md`](worked-example-fintrigger-notparts-vs-bundled.md) — Proposal+parts≠only hash/Process ran；≠fintrigger bundled/2f+1 precommit/decides block v（不变量 608）
 - [`worked-example-finpersist-notsync-vs-bundled.md`](worked-example-finpersist-notsync-vs-bundled.md) — synchronous call≠Process sync/异步；≠362 decides trigger/finpersist bundled（不变量 607）
 - [`worked-example-finpersist-notoutputs-vs-bundled.md`](worked-example-finpersist-notoutputs-vs-bundled.md) — calls FinalizeBlock≠persist outputs/落盘；≠362 decides trigger/finpersist bundled（不变量 606）
 - [`worked-example-finpersist-notpersist-vs-bundled.md`](worked-example-finpersist-notpersist-vs-bundled.md) — persist decision≠executes block v/交差；≠finpersist bundled/calls FinalizeBlock/sync call（不变量 605）

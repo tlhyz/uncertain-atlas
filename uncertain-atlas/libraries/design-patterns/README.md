@@ -1,3 +1,4 @@
+- [`name-the-fintrigger-notparts-bar.md`](name-the-fintrigger-notparts-bar.md) — FinalizeBlock When trigger Proposal + all block parts not only hash / Process ran 正式三事（479 余量）（不变量 608）
 - [`name-the-finpersist-notsync-bar.md`](name-the-finpersist-notsync-bar.md) — FinalizeBlock When synchronous call not decides trigger / Process sync 正式三事（478 余量）（不变量 607）
 - [`name-the-finpersist-notoutputs-bar.md`](name-the-finpersist-notoutputs-bar.md) — FinalizeBlock When calls FinalizeBlock not persist outputs / 362 decides trigger 正式三事（478 余量）（不变量 606）
 - [`name-the-finpersist-notpersist-bar.md`](name-the-finpersist-notpersist-bar.md) — FinalizeBlock When persist decision not executes block v / 已经交差 正式三事（478 余量）（不变量 605）
