@@ -1,3 +1,4 @@
+- [`worked-example-finequiv-vs-abci1.md`](worked-example-finequiv-vs-abci1.md) — equiv≠四门已经结算；≠没有 Prepare/Process；≠含刚决定字段/Process 就不需要 Finalize（不变量 586）
 - [`worked-example-fintxcode-vs-invalid.md`](worked-example-fintxcode-vs-invalid.md) — Code==0 only if fully valid ≠ CheckTx 过了；≠ Code!=0 没进块；≠ Finalize 已交差（不变量 585）
 - [`worked-example-finmisbeh-notvoteinfo-vs-bundled.md`](worked-example-finmisbeh-notvoteinfo-vs-bundled.md) — misbehavior fault list ≠ VoteInfo availability；≠ Process misbehavior already定奖惩；≠ Misbehavior.type already slashed（不变量 569）
 - [`worked-example-findecided-notproposed-vs-bundled.md`](worked-example-findecided-notproposed-vs-bundled.md) — decided block commit ≠ proposed commit；≠ local commit；≠ can use means slashed（不变量 568）

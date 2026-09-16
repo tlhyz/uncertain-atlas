@@ -1,3 +1,4 @@
+- [`finequiv-sold-as-gates.md`](finequiv-sold-as-gates.md) — FinalizeBlock 等价于 ABCI 1.0 被写成已经四门已经结算（不变量 586）
 - [`fintxcode-sold-as-absent.md`](fintxcode-sold-as-absent.md) — FinalizeBlock tx_results Code==0 完全合法被写成已经 CheckTx 过了（不变量 585）
 - [`finmisbeh-notvoteinfo-sold-as-bundled.md`](finmisbeh-notvoteinfo-sold-as-bundled.md) — FinalizeBlock misbehavior not VoteInfo availability 被写成 bundled（不变量 569）
 - [`findecided-notproposed-sold-as-bundled.md`](findecided-notproposed-sold-as-bundled.md) — FinalizeBlock decided_last_commit from decided block not proposed_last_commit 被写成 bundled（不变量 568）

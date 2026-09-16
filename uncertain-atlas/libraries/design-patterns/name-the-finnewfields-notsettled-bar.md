@@ -7,7 +7,7 @@
 
 ## 三个名字
 
-1. **Contains newly decided block fields not already four gates settled 不是 FinalizeBlock 含刚决定那块字段 bundled：** 看见含刚决定那块的字段不是已经四门已经结算，不是 461 bundled interchangeable / 363 fill all fields interchangeable / 465 ABCI 1.0 equiv interchangeable。
+1. **Contains newly decided block fields not already four gates settled 不是 FinalizeBlock 含刚决定那块字段 bundled：** 看见含刚决定那块的字段不是已经四门已经结算，不是 461 bundled interchangeable / 363 fill all fields interchangeable / 586 ABCI 1.0 equiv interchangeable。
 2. **Contains newly decided block fields not already ran Process 不是 Finalize Process guarantee：** 看见 newly decided block 不是已经跑过 Process，不是 461 bundled interchangeable / 360 Process guarantee interchangeable / 546 not already executed interchangeable。
 3. **Contains newly decided block fields not Process ACCEPT switched working state 不是 452 candidate：** 看见含刚决定那块的字段不是已经 Process 回了 Accept 就换工作状态，不是 461 bundled interchangeable / 452 candidate interchangeable / 544 candidate not committed interchangeable。
 

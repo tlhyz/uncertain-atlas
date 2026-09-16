@@ -9,7 +9,7 @@
 
 1. **can use decided_last_commit + misbehavior to determine rewards not already slashed 不是 FinalizeBlock decided_last_commit + misbehavior 定奖惩 bundled：** 看见 can use 定奖惩不是已经 slashed，不是 463 bundled interchangeable / 363 回包义务 interchangeable / 21 证据上链 interchangeable。
 2. **can use not VoteInfo availability rewards 不是 365 VoteInfo 按到场定奖惩：** 看见 rewards and punishments 不是已经 VoteInfo block_id_flag 按到场定奖惩，不是 463 bundled interchangeable / 365 VoteInfo 按到场定奖惩 interchangeable / 440 ExtendedVoteInfo 暴露签 interchangeable。
-3. **can use not already committed 不是 Finalize + Commit 交差：** 看见 determine rewards and punishments 不是已经四门已经结算 / 已经交差，不是 463 bundled interchangeable / 465 ABCI 1.0 equiv interchangeable / 555 Contains newly decided not settled interchangeable。
+3. **can use not already committed 不是 Finalize + Commit 交差：** 看见 determine rewards and punishments 不是已经四门已经结算 / 已经交差，不是 463 bundled interchangeable / 586 ABCI 1.0 equiv interchangeable / 555 Contains newly decided not settled interchangeable。
 
 ## 为什么要分开叫
 
