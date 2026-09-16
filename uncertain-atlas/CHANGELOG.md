@@ -1,3 +1,7 @@
+## 2026-09-16（续 755）
+
+- 不变量 638；语料 C615；模式 name-the-finunlock-notsettled-bar；反模式 finunlock-notsettled-sold-as-bundled；L10.3 第 607 条。填 L4.4 / CometBFT 档案 FinalizeBlock When unlocks the mempool not already settled / not four gates settled / not finunlock bundled 正式三事（592 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。592 finunlock unbundling 启动（638 item 1）。
+
 ## 2026-09-16（续 754）
 
 - 不变量 637；语料 C614；模式 name-the-finrecheck-nottype-bar；反模式 finrecheck-nottype-sold-as-bundled；L10.3 第 606 条。填 L4.4 / CometBFT 档案 FinalizeBlock When against newly persisted Application state not Type=RECHECK / not CheckTxState / ExecuteTxState / not finrecheck bundled 正式三事（591 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。591 finrecheck unbundling 完成（637 item 3）。
