@@ -1,3 +1,4 @@
+- [`finasresult-notempty-sold-as-bundled.md`](finasresult-notempty-sold-as-bundled.md) — provided values 被写成已经空着就没有 must provide 义务（不变量 596）
 - [`finasresult-notcand-sold-as-bundled.md`](finasresult-notcand-sold-as-bundled.md) — as a result of executing 被写成已经 Process 跑过就不用再执行（不变量 595）
 - [`finasresult-notsettled-sold-as-bundled.md`](finasresult-notsettled-sold-as-bundled.md) — FinalizeBlock must provide values not already changed set / settled 被写成已经改了集合 / 已经交差（不变量 594）
 - [`finh1-sold-as-nextheight.md`](finh1-sold-as-nextheight.md) — FinalizeBlock When starts consensus for h+1 round 0 被写成已经开下一高交差（不变量 593）
