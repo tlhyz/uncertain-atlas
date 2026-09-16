@@ -1,3 +1,4 @@
+- [`name-the-finpersist-notsync-bar.md`](name-the-finpersist-notsync-bar.md) — FinalizeBlock When synchronous call not decides trigger / Process sync 正式三事（478 余量）（不变量 607）
 - [`name-the-finpersist-notoutputs-bar.md`](name-the-finpersist-notoutputs-bar.md) — FinalizeBlock When calls FinalizeBlock not persist outputs / 362 decides trigger 正式三事（478 余量）（不变量 606）
 - [`name-the-finpersist-notpersist-bar.md`](name-the-finpersist-notpersist-bar.md) — FinalizeBlock When persist decision not executes block v / 已经交差 正式三事（478 余量）（不变量 605）
 - [`name-the-finequiv-notnewdec-bar.md`](name-the-finequiv-notnewdec-bar.md) — FinalizeBlock equiv ABCI 1.0 not Contains newly decided / apply candidate 正式三事（586 余量）（不变量 604）

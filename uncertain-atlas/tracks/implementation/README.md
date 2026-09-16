@@ -1,3 +1,4 @@
+- [`worked-example-finpersist-notsync-vs-bundled.md`](worked-example-finpersist-notsync-vs-bundled.md) — synchronous call≠Process sync/异步；≠362 decides trigger/finpersist bundled（不变量 607）
 - [`worked-example-finpersist-notoutputs-vs-bundled.md`](worked-example-finpersist-notoutputs-vs-bundled.md) — calls FinalizeBlock≠persist outputs/落盘；≠362 decides trigger/finpersist bundled（不变量 606）
 - [`worked-example-finpersist-notpersist-vs-bundled.md`](worked-example-finpersist-notpersist-vs-bundled.md) — persist decision≠executes block v/交差；≠finpersist bundled/calls FinalizeBlock/sync call（不变量 605）
 - [`worked-example-finequiv-notnewdec-vs-bundled.md`](worked-example-finequiv-notnewdec-vs-bundled.md) — FinalizeBlock equiv≠Contains newly decided；≠apply candidate/previously executed；≠finequiv bundled/602/603（不变量 604）
