@@ -516,3 +516,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T03:22Z | P7-15 | TICK prefix STOPPED 05-26 short liq; ±20U +39.3% / 50 zero days; 120d stitch no restart; W-04 updated
 2026-09-16T03:50Z | P7-16 | 3x STOPPED 05-27; 2x 120d TICK +70.7% vs B&H −24% but inv 1.81 / leg DD −71%; not live
 2026-09-16T04:12Z | P7-17 | 4x ±20U STOPPED 05-26; 2x±20% −20.5% DD −46%; +70% is usdt-band only; not live
+2026-09-16T04:23Z | P7-18 | 2.5x ±20U survived +86% inv 2.30 short DD −90%; cliff (2.5, 3]; not live

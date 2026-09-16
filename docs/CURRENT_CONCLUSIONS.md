@@ -68,10 +68,10 @@
 - **Status:** Inverse **marks** ≠ grid hedge. Do not deploy pair grids. Honest hedge = daily 50/50 rebalance, no grid. SNXX is still not an inverse.
 
 ### W-04: User SOXL 5x ±20U / ±20% 200-grid 5k+5k is tradeable
-- **Confidence:** **FAIL** as independent L+S (P7-05); **STOPPED** as ≥3x ±20U moving hedge (P7-07/15–17). 2x±20U survived this path; 2x±20% survived and **lost** — not live
+- **Confidence:** **FAIL** as independent L+S (P7-05); **STOPPED** as ≥3x ±20U moving hedge (P7-07/15–18). ≤2.5x±20U survived this path; 2x±20% survived and **lost** — not live
 - **Supporting:** None for unattended **5x** full-window use
-- **Contradicting:** P7-07 5x dies 07-28 long. P7-15–17: **≥3x ±20U** die 05-26/27 short (4x included). P7-16 **2x±20U** +70.7% this path only. P7-17 **2x±20% −20.5%** / pair DD −46%
-- **Status:** First one-sided liq ends ≥3x. 2x±20U is band-specific, not a 2x rule. See `soxl-lab/results/01-yours-5x/hedge/`.
+- **Contradicting:** P7-18 **2.5x±20U +86%** / inv 2.30 / short DD −90%. P7-17 4x dies 05-26. P7-16 2x±20U +70.7%. P7-17 2x±20% −20.5%
+- **Status:** ±20U death cliff is **(2.5, 3]** on this tape. Not a default change. See `soxl-lab/results/01-yours-5x/hedge/`.
 
 ---
 
@@ -103,6 +103,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-16 | W-04 2.5x±20U survived +86%; cliff (2.5, 3] | P7-18; inv 2.30 short DD −90%; not live |
 | 2026-09-16 | W-04 cliff: 4x dies; 2x±20% −20.5% | P7-17; +70% is ±20U-only |
 | 2026-09-16 | W-04 3x still dies; 2x 120d TICK +70.7% not live | P7-16; inventory 1.81; B&H −24% |
 | 2026-09-16 | W-04 prefix TICK STOPPED 05-26; short liq; +39.3% not a hedge | P7-15; 120d stitch does not restart |

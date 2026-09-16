@@ -1,0 +1,14 @@
+{
+  "window": "2026-05-15/2026-09-11",
+  "band": "usdt20",
+  "fills": "tick",
+  "buy_and_hold_soxl": -0.2443,
+  "cliff": "(2.5, 3] dies on this tape",
+  "variants": [
+    {"lev": 2, "return": 0.7066, "stopped": false, "inv": 1.81, "short_dd": -0.712},
+    {"lev": 2.5, "return": 0.8600, "stopped": false, "inv": 2.30, "short_dd": -0.897, "net_qty": -56.12},
+    {"lev": 3, "return": 0.2876, "stopped": true, "stop": "2026-05-27"},
+    {"lev": 4, "return": 0.3442, "stopped": true, "stop": "2026-05-26"},
+    {"lev": 5, "return": 0.3929, "stopped": true, "stop": "2026-05-26"}
+  ]
+}
