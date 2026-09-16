@@ -525,3 +525,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T06:00Z | timer | pending=0; P0-01 blocked; no new run
 2026-09-16T06:10Z | timer | pending=0; P0-01 blocked; no new run
 2026-09-16T06:15Z | P7-21 | extras stay after register_yaml_keys; sizer+--set; no new SOXL run
+2026-09-16T06:20Z | timer | pending=0; P0-01 blocked; pytest 220/1; no new run
