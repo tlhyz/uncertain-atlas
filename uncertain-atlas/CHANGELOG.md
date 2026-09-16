@@ -1,3 +1,7 @@
+## 2026-09-16（续 703）
+
+- 不变量 586；语料 C563；模式 name-the-finequiv-bar；反模式 finequiv-sold-as-gates；L10.3 第 555 条。填 L4.4 / CometBFT 档案 FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 465 → local 586。
+
 ## 2026-09-16（续 702）
 
 - 不变量 585；语料 C562；模式 name-the-fintxcode-bar；反模式 fintxcode-sold-as-absent；L10.3 第 554 条。填 L4.4 / CometBFT 档案 FinalizeBlock tx_results Code==0 完全合法正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。

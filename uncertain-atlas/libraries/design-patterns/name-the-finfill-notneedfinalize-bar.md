@@ -7,7 +7,7 @@
 
 ## 三个名字
 
-1. **will fill up all fields not already don't need Finalize 不是 FinalizeBlock fill all fields even if Prepare/Process passed bundled：** 看见 will fill up all fields 不是已经 Prepare/Process 给过就不用再 Finalize，不是 473 bundled interchangeable / 363 fill all fields interchangeable / 465 ABCI equiv interchangeable。
+1. **will fill up all fields not already don't need Finalize 不是 FinalizeBlock fill all fields even if Prepare/Process passed bundled：** 看见 will fill up all fields 不是已经 Prepare/Process 给过就不用再 Finalize，不是 473 bundled interchangeable / 363 fill all fields interchangeable / 586 ABCI equiv interchangeable。
 2. **will fill up all fields not already committed 不是 460 apply candidate：** 看见引擎填齐不是已经 Finalize + Commit 交差，不是 473 bundled interchangeable / 460 apply candidate interchangeable / 452 candidate interchangeable。
 3. **will fill up all fields not Contains bundled interchangeable 不是 461 newly decided bundled：** 看见 will fill up 不是已经 Contains newly decided block fields bundled interchangeable，不是 473 bundled interchangeable / 461 bundled interchangeable / 474 bundled interchangeable。
 
