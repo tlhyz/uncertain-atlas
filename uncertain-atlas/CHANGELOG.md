@@ -1,3 +1,7 @@
+## 2026-09-16（续 731）
+
+- 不变量 614；语料 C591；模式 name-the-finreturn-notheader-bar；反模式 finreturn-notheader-sold-as-bundled；L10.3 第 583 条。填 L4.4 / CometBFT 档案 FinalizeBlock When Application returns AppHash + tx outputs not printed in this header / not this header AppHash 正式三事（587 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。587 finreturn unbundling 启动（614 item 1）。
+
 ## 2026-09-16（续 730）
 
 - 不变量 613；语料 C590；模式 name-the-finmorepre-notaftercommit-bar；反模式 finmorepre-notaftercommit-sold-as-bundled；L10.3 第 582 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay after committing before next height not slot / not final / not finmorepre bundled 正式三事（480 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。480 finmorepre unbundling 完成（613 item 3）。

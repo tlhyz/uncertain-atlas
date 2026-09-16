@@ -1,3 +1,4 @@
+- [`finreturn-notheader-sold-as-bundled.md`](finreturn-notheader-sold-as-bundled.md) — Application returns AppHash + tx outputs 被写成已经印进本头 / 已经是本头 AppHash / 已经 finreturn bundled（不变量 614）
 - [`finmorepre-notaftercommit-sold-as-bundled.md`](finmorepre-notaftercommit-sold-as-bundled.md) — after committing before next height 被写成已经 slot / 已经 final / 已经 finmorepre bundled（不变量 613）
 - [`finmorepre-notmorepre-sold-as-bundled.md`](finmorepre-notmorepre-sold-as-bundled.md) — more precommits despite 2/3+ 被写成已经 decided / 已经 479 fintrigger / 已经 finmorepre bundled（不变量 612）
 - [`finmorepre-notproctime-sold-as-bundled.md`](finmorepre-notproctime-sold-as-bundled.md) — includes processing time 被写成已经 timeout_commit / 已经 wallclock 非确定 / 已经 finmorepre bundled（不变量 611）
