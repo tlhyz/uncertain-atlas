@@ -1,3 +1,7 @@
+## 2026-09-16（续 719）
+
+- 不变量 602；语料 C579；模式 name-the-finequiv-notgates-bar；反模式 finequiv-notgates-sold-as-bundled；L10.3 第 571 条。填 L4.4 / CometBFT 档案 FinalizeBlock equiv ABCI 1.0 not four gates settled 正式三事（586 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。586 finequiv unbundling 启动（602 item 1）。
+
 ## 2026-09-16（续 718）
 
 - 不变量 601；语料 C578；模式 name-the-finresp-notsettled-bar；反模式 finresp-notsettled-sold-as-bundled；L10.3 第 570 条。填 L4.4 / CometBFT 档案 Finalize 回包义务 must provide 四列 not already changed set / settled 正式三事（363 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。363 finresp unbundling 完成（601 item 3）。
