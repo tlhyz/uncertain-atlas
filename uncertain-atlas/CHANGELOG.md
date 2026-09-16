@@ -1,3 +1,7 @@
+## 2026-09-16（续 732）
+
+- 不变量 615；语料 C592；模式 name-the-finreturn-notresulthash-bar；反模式 finreturn-notresulthash-sold-as-bundled；L10.3 第 584 条。填 L4.4 / CometBFT 档案 FinalizeBlock When CometBFT hashes into ResultHash not Code / Data 印进本头 LastResultsHash / not this header LastResultsHash 正式三事（587 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。587 finreturn unbundling 续（615 item 2）。
+
 ## 2026-09-16（续 731）
 
 - 不变量 614；语料 C591；模式 name-the-finreturn-notheader-bar；反模式 finreturn-notheader-sold-as-bundled；L10.3 第 583 条。填 L4.4 / CometBFT 档案 FinalizeBlock When Application returns AppHash + tx outputs not printed in this header / not this header AppHash 正式三事（587 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。587 finreturn unbundling 启动（614 item 1）。
