@@ -1,3 +1,4 @@
+- [`finrecheck-sold-as-recheck.md`](finrecheck-sold-as-recheck.md) — FinalizeBlock When optional recheck 被写成已经是 Recheck（不变量 591）
 - [`fincommit-sold-as-settled.md`](fincommit-sold-as-settled.md) — FinalizeBlock When calls Commit instruct persist 被写成已经交差（不变量 590）
 - [`fndelay-sold-as-slot.md`](fndelay-sold-as-slot.md) — next_block_delay 非确定被写成已经是槽位（不变量 589）
 - [`finlock-sold-as-settled.md`](finlock-sold-as-settled.md) — FinalizeBlock When locks mempool 被写成已经交差（不变量 588）

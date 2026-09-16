@@ -4671,6 +4671,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2682 | 高 | 看见 FinalizeBlockResponse.tx_results[i].Code == 0 only if the i-th transaction is fully valid / 看见回了 0 会被写成已经 CheckTx 过了，或当成已经 Process 回了 Accept | 官方 FinalizeBlock Usage：tx_results[i].Code == 0 only if the i-th transaction is fully valid |
 | A2683 | 高 | 看见 Code == 0 only if fully valid / 看见这笔完全合法 会被写成已经 Code != 0 那种没进块，或当成已经无效就不在块里 | 官方 FinalizeBlock Usage vs Transaction Results：Code != 0 still in block |
 | A2684 | 高 | 看见回了 tx_results / 看见有 Code 会被写成已经 Finalize 改了就已经交差，或当成已经 Code / Data 印进本头 LastResultsHash | 官方 FinalizeBlock Usage vs Transaction Results vs FinalizeBlock / Commit |
+| A2715 | 记录 | 会与 403 / 588 / 590 / 312 / 484 / 301 / 33 糊成「看见 When 第 9 步再验了就已经交差、已经是 Recheck、已经对新交易也验了」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When optional recheck 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经必须再验 / 已经 new transactions / 已经是 Recheck 标成另一对象 |
+| A2714 | 中 | 怎样再验、怎样填 Type、怎样解锁会被抄进不确定 | 不抄。不写怎样再验。不另写 19 节 |
+| A2713 | 高 | 看见 against the newly persisted Application state 会被写成已经 CheckTxState / ExecuteTxState，或当成已经 Type 标明 RECHECK | 官方 FinalizeBlock When 第 9 步：newly persisted not CheckTxState / ExecuteTxState / Type RECHECK |
+| A2712 | 高 | 看见 all outstanding transactions in the mempool 会被写成已经 new transactions，或当成已经 CheckTx 过了就永远有效 | 官方 FinalizeBlock When 第 9 步：outstanding in mempool not new transactions / forever valid |
+| A2711 | 高 | 看见 optionally re-checks 会被写成已经必须再验，或当成已经交差 / 已经四门已经结算 | 官方 FinalizeBlock When 第 9 步：optionally not mandatory / settled |
 | A2710 | 记录 | 会与 335 / 481 / 587 / 588 / 403 / 399 / 33 糊成「看见 When 第 8 步叫了 Commit 就已经交差、已经在 Finalize 落了、已经在引擎 persist 这三份 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When calls Commit instruct persist 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 / 已经引擎 persist 这三份 / 已经是 Commit 锁 标成另一对象 |
 | A2709 | 中 | 怎样落盘、怎样写 Commit、怎样 optional recheck 会被抄进不确定 | 不抄。不写怎样落盘。不另写 19 节 |
 | A2708 | 高 | 看见 When 第 8 步 calls Commit after lock mempool 会被写成已经是 Commit 锁，或当成已经 optional recheck / unlock / 已经是 Recheck | 官方 FinalizeBlock When 第 8 步：calls Commit after lock not Commit 锁 / recheck / unlock |

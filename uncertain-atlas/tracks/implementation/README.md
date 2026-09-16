@@ -1,3 +1,4 @@
+- [`worked-example-finrecheck-vs-recheck.md`](worked-example-finrecheck-vs-recheck.md) — optional recheck≠必须再验；outstanding≠new txs；newly persisted≠Type=RECHECK（不变量 591）
 - [`worked-example-fincommit-vs-persist.md`](worked-example-fincommit-vs-persist.md) — calls Commit≠交差；instruct persist≠引擎persist这三份；When第8步≠Commit锁（不变量 590）
 - [`worked-example-fndelay-vs-deterministic.md`](worked-example-fndelay-vs-deterministic.md) — next_block_delay≠槽位；MAY/wallclock≠整门非确定；set to 0≠决定（不变量 589）
 - [`worked-example-finlock-vs-commitlock.md`](worked-example-finlock-vs-commitlock.md) — locks mempool≠交差；no CheckTx on new≠optional；persist后锁≠Commit锁（不变量 588）
