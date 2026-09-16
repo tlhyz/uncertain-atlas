@@ -1,3 +1,7 @@
+## 2026-09-16（续 700）
+
+- 不变量 568；语料 C560；模式 name-the-findecided-notproposed-bar；反模式 findecided-notproposed-sold-as-bundled；L10.3 第 552 条。填 L4.4 / CometBFT 档案 FinalizeBlock decided_last_commit from decided block not proposed_last_commit 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。463 finreward unbundling 续（568 item 2）。
+
 ## 2026-09-16（续 699）
 
 - 不变量 567；语料 C559；模式 name-the-finreward-notslashed-bar；反模式 finreward-notslashed-sold-as-bundled；L10.3 第 551 条。填 L4.4 / CometBFT 档案 FinalizeBlock can use decided_last_commit + misbehavior to determine rewards not already slashed 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。463 finreward unbundling 启动（567）。新增 parent 463 bundled。
