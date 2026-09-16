@@ -1,3 +1,7 @@
+## 2026-09-16（续 743）
+
+- 不变量 626；语料 C603；模式 name-the-fintxcode-notchecktx-bar；反模式 fintxcode-notchecktx-sold-as-bundled；L10.3 第 595 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse tx_results Code==0 only if fully valid not CheckTx passed / not Process Accept / not fintxcode bundled 正式三事（585 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。585 fintxcode unbundling 启动（626 item 1）。
+
 ## 2026-09-16（续 742）
 
 - 不变量 625；语料 C602；模式 name-the-finmerkle-notquery-bar；反模式 finmerkle-notquery-sold-as-bundled；L10.3 第 594 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse Query proofs anchored in this Merkle root not matched AppHash / not ProofOp key lookup / not finmerkle bundled 正式三事（475 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。475 finmerkle unbundling 完成（625 item 3）。

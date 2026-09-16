@@ -1,3 +1,4 @@
+- [`fintxcode-notchecktx-sold-as-bundled.md`](fintxcode-notchecktx-sold-as-bundled.md) — only if fully valid 被写成已经 CheckTx 过了 / 已经 Process Accept / 已经 fintxcode bundled（不变量 626）
 - [`finmerkle-notquery-sold-as-bundled.md`](finmerkle-notquery-sold-as-bundled.md) — Query proofs anchored 被写成已经对上 AppHash / 已经是按键查 / 已经 finmerkle bundled（不变量 625）
 - [`finmerkle-notnextheader-sold-as-bundled.md`](finmerkle-notnextheader-sold-as-bundled.md) — included in next block 被写成已经写进下一块头 / 已经是本头 AppHash / 已经 finmerkle bundled（不变量 624）
 - [`finmerkle-notthisheader-sold-as-bundled.md`](finmerkle-notthisheader-sold-as-bundled.md) — optional Merkle root 被写成已经是本头 AppHash / 已经交差 / 已经 finmerkle bundled（不变量 623）
