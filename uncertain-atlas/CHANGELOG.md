@@ -1,3 +1,7 @@
+## 2026-09-16（续 701）
+
+- 不变量 569；语料 C561；模式 name-the-finmisbeh-notvoteinfo-bar；反模式 finmisbeh-notvoteinfo-sold-as-bundled；L10.3 第 553 条。填 L4.4 / CometBFT 档案 FinalizeBlock misbehavior not VoteInfo availability 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。463 finreward unbundling 完成（567–569）。
+
 ## 2026-09-16（续 700）
 
 - 不变量 568；语料 C560；模式 name-the-findecided-notproposed-bar；反模式 findecided-notproposed-sold-as-bundled；L10.3 第 552 条。填 L4.4 / CometBFT 档案 FinalizeBlock decided_last_commit from decided block not proposed_last_commit 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。463 finreward unbundling 续（568 item 2）。
