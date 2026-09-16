@@ -1,3 +1,9 @@
+| A2930 | 记录 | 会与 403 / 591 / 592 / 632 / 633 糊成「看见 optional recheck unlock h+1 就已经 Recheck interchangeable、已经解锁 interchangeable、已经 finafter bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When 可选再验池里剩下的、再解锁、再开下一高 round 0 not Recheck / not unlock / not finafter bundled 正式三事（403 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。403 finafter unbundling 完成（634 item 3） |
+| A2929 | 中 | 怎样再验、怎样解锁、怎样开下一高 会被抄进不确定 | 不抄。不写怎样再验。不另写 19 节 |
+| A2928 | 高 | 看见 optional recheck unlock h+1 会被写成已经 finafter bundled，或当成已经 632 notsettled / 633 notlock / 588 finlock / 631 notcommitlock | 官方 FinalizeBlock When steps 9–11 403 item 3：not finafter bundled / not 632 / not 633 |
+| A2927 | 高 | 看见 optional recheck unlock h+1 会被写成已经解锁，或当成已经 592 finunlock / 631 notcommitlock / 310 commitlock / 403 finafter | 官方 FinalizeBlock When steps 9–11 403 item 3：not unlock / not 592 / not 631 |
+| A2926 | 高 | 看见 optional recheck unlock h+1 会被写成已经是 Recheck，或当成已经 591 finrecheck / 312 checktxtype / 484 chktxtype / 312 RECHECK | 官方 FinalizeBlock When steps 9–11 403 item 3：not Recheck / not 591 / not 312 |
+
 | A2925 | 记录 | 会与 403 / 310 / 632 / 634 / 631 糊成「看见落完再锁内存池 就已经 Commit 锁 interchangeable、已经交差 interchangeable、已经 finafter bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When 落完再锁内存池、新交易不进 CheckTx not Commit lock / not already settled / not finafter bundled 正式三事（403 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。403 finafter unbundling 续（633 item 2） |
 | A2924 | 中 | 怎样锁内存池、怎样再验、怎样解锁 会被抄进不确定 | 不抄。不写怎样锁内存池。不另写 19 节 |
 | A2923 | 高 | 看见落完再锁内存池 会被写成已经 finafter bundled，或当成已经 632 notsettled / 634 notrecheck / 588 finlock / 631 notcommitlock | 官方 FinalizeBlock When step 7 403 item 2：not finafter bundled / not 632 / not 634 |

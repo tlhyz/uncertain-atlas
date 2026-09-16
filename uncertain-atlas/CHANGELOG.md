@@ -1,3 +1,7 @@
+## 2026-09-16（续 751）
+
+- 不变量 634；语料 C611；模式 name-the-finafter-notrecheck-bar；反模式 finafter-notrecheck-sold-as-bundled；L10.3 第 603 条。填 L4.4 / CometBFT 档案 FinalizeBlock When 可选再验池里剩下的、再解锁、再开下一高 round 0 not Recheck / not unlock / not finafter bundled 正式三事（403 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。403 finafter unbundling 完成（634 item 3）。
+
 ## 2026-09-16（续 750）
 
 - 不变量 633；语料 C610；模式 name-the-finafter-notlock-bar；反模式 finafter-notlock-sold-as-bundled；L10.3 第 602 条。填 L4.4 / CometBFT 档案 FinalizeBlock When 落完再锁内存池、新交易不进 CheckTx not Commit lock / not already settled / not finafter bundled 正式三事（403 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。403 finafter unbundling 续（633 item 2）。
