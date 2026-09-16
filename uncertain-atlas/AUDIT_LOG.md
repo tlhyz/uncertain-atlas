@@ -1,3 +1,9 @@
+| A2845 | 记录 | 会与 589 / 385 / 480 / 618 / 619 糊成「看见 Deterministic = No 就已经槽位 interchangeable、已经 finality interchangeable、已经 fndelay bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay Deterministic = No not slot / not finality / not timeout_commit 正式三事（589 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。589 fndelay unbundling 启动（617 item 1） |
+| A2844 | 中 | 怎样填 next_block_delay、怎样从 timeout_commit 迁移、怎样抄规范 1s 会被抄进不确定 | 不抄。不写怎样填 next_block_delay。不另写 19 节 |
+| A2843 | 高 | 看见 Deterministic = No 会被写成已经 fndelay bundled，或当成已经 618 notwallclock / 619 notsetzero / 611 notproctime | 官方 FinalizeBlock Response 589 item 1：not fndelay bundled / not 618 / not 619 |
+| A2842 | 高 | 看见 Deterministic = No 会被写成已经 finality，或当成已经 362 finwhen / 610 notdecides / 619 notsetzero | 官方 FinalizeBlock Response 589 item 1：Deterministic = No not finality / not 362 / not 619 |
+| A2841 | 高 | 看见 next_block_delay non-deterministic field 会被写成已经槽位，或当成已经 385 block interval / 593 finh1 / 47 timeout_commit | 官方 FinalizeBlock Response 589 item 1：Deterministic = No not slot / not 385 / not timeout_commit |
+
 | A2840 | 记录 | 会与 587 / 335 / 481 / 614 / 615 糊成「看见 persists 这三份 就已经交差 interchangeable、已经 Commit 落盘 interchangeable、已经 finreturn bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When CometBFT persists tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state 正式三事（587 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。587 finreturn unbundling 完成（616 item 3） |
 | A2839 | 中 | 怎样落盘这三份、怎样写 Commit、怎样锁内存池会被抄进不确定 | 不抄。不写怎样落盘这三份。不另写 19 节 |
 | A2838 | 高 | 看见 persists 这三份 会被写成已经 finreturn bundled，或当成已经 614 notheader / 615 notresulthash / 606 notoutputs | 官方 FinalizeBlock When 587 item 3：not finreturn bundled / not 614 / not 615 |
