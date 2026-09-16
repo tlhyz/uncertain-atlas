@@ -1,3 +1,7 @@
+## 2026-09-16（续 750）
+
+- 不变量 633；语料 C610；模式 name-the-finafter-notlock-bar；反模式 finafter-notlock-sold-as-bundled；L10.3 第 602 条。填 L4.4 / CometBFT 档案 FinalizeBlock When 落完再锁内存池、新交易不进 CheckTx not Commit lock / not already settled / not finafter bundled 正式三事（403 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。403 finafter unbundling 续（633 item 2）。
+
 ## 2026-09-16（续 749）
 
 - 不变量 632；语料 C609；模式 name-the-finafter-notsettled-bar；反模式 finafter-notsettled-sold-as-bundled；L10.3 第 601 条。填 L4.4 / CometBFT 档案 FinalizeBlock When Finalize 之后引擎才落盘 tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state / not finafter bundled 正式三事（403 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。403 finafter unbundling 启动（632 item 1）。
