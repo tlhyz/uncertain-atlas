@@ -1,3 +1,7 @@
+## 2026-09-16（续 748）
+
+- 不变量 631；语料 C608；模式 name-the-finlock-notcommitlock-bar；反模式 finlock-notcommitlock-sold-as-bundled；L10.3 第 600 条。填 L4.4 / CometBFT 档案 FinalizeBlock When locks mempool after persist not Commit lock / not unlock / not Recheck / not finlock bundled 正式三事（588 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。588 finlock unbundling 完成（631 item 3）。
+
 ## 2026-09-16（续 747）
 
 - 不变量 630；语料 C607；模式 name-the-finlock-notoptional-bar；反模式 finlock-notoptional-sold-as-bundled；L10.3 第 599 条。填 L4.4 / CometBFT 档案 FinalizeBlock When no calls to CheckTx on new transactions not CheckTx optional / not already in pool / not finlock bundled 正式三事（588 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。588 finlock unbundling 续（630 item 2）。
