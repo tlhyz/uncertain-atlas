@@ -36,7 +36,7 @@
 | 10 | 《不确定协议设计决策库》 | `libraries/decision-matrix/` | 对照列已扩；候选列空 | 重要 |
 | 11 | 《不确定威胁模型》 | `libraries/threat-model/` | 草稿 | 必学 |
 | 12 | 《不确定 Invariant Library》 | `libraries/invariants/` | 549 条 | 必学 |
-| 13 | 《不确定 Adversarial Test Corpus》 | `libraries/adversarial-corpus/` | 目录 C01–C554；runner 未建 | 重要 |
+| 13 | 《不确定 Adversarial Test Corpus》 | `libraries/adversarial-corpus/` | 目录 C01–C555；runner 未建 | 重要 |
 | 14 | 《不确定长期技术路线图》 | `courses/level-10-uncertain-studio/` | 建议清单，非选型 | 重要 |
 
 ---

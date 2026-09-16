@@ -1,3 +1,4 @@
+- [`finfill-notpassedran-sold-as-bundled.md`](finfill-notpassedran-sold-as-bundled.md) — FinalizeBlock fill all fields not passed means ran Process 被写成 bundled（不变量 563）
 - [`finfill-notneedfinalize-sold-as-bundled.md`](finfill-notneedfinalize-sold-as-bundled.md) — FinalizeBlock fill all fields not already don't need Finalize 被写成 bundled（不变量 562）
 - [proccand-readonly-notcommitted-sold-as-bundled](proccand-readonly-notcommitted-sold-as-bundled.md)
 - [proccand-mayexecute-notcommitted-sold-as-bundled](proccand-mayexecute-notcommitted-sold-as-bundled.md)
