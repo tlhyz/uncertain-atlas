@@ -1,3 +1,4 @@
+- [`worked-example-finequiv-notgates-vs-bundled.md`](worked-example-finequiv-notgates-vs-bundled.md) — FinalizeBlock equiv≠四门已经结算；≠交差；≠finequiv bundled/600/363（不变量 602）
 - [`worked-example-finresp-notsettled-vs-bundled.md`](worked-example-finresp-notsettled-vs-bundled.md) — must provide 四列≠改了集合；≠交差；≠finresp bundled/594/477（不变量 601）
 - [`worked-example-finempty-notcparam-vs-bundled.md`](worked-example-finempty-notcparam-vs-bundled.md) — empty consensus_param_updates≠清掉参数；≠H+1已在H生效；≠finempty bundled/597/598（不变量 599）
 - [`worked-example-finempty-notnoset-vs-bundled.md`](worked-example-finempty-notnoset-vs-bundled.md) — empty keep current≠没集合；≠改了集合/H+1；≠finempty bundled/597（不变量 598）
