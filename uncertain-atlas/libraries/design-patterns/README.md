@@ -1,3 +1,4 @@
+- [`name-the-finfill-notdecprop-bar.md`](name-the-finfill-notdecprop-bar.md) — FinalizeBlock fill all fields not decided/proposed interchangeable 正式三事（473 余量）（不变量 564）
 - [`name-the-finfill-notpassedran-bar.md`](name-the-finfill-notpassedran-bar.md) — FinalizeBlock fill all fields not passed means ran Process 正式三事（473 余量）（不变量 563）
 - [`name-the-finfill-notneedfinalize-bar.md`](name-the-finfill-notneedfinalize-bar.md) — FinalizeBlock fill all fields not already don't need Finalize 正式三事（473 余量）（不变量 562）
 - [name-the-proccand-readonly-notcommitted-bar](name-the-proccand-readonly-notcommitted-bar.md)

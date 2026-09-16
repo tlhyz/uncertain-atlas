@@ -1,3 +1,4 @@
+- [`worked-example-finfill-notdecprop-vs-bundled.md`](worked-example-finfill-notdecprop-vs-bundled.md) — all fields（473）≠ decided/proposed interchangeable；≠ Prepare/Process passed means dec/prop；≠ Finalize专有栏 same as Prepare/Process（不变量 564）
 - [`worked-example-finfill-notpassedran-vs-bundled.md`](worked-example-finfill-notpassedran-vs-bundled.md) — even if passed（473）≠ field names match ran Process；≠ newly decided/proposed；≠ previously executed（不变量 563）
 - [`worked-example-finfill-notneedfinalize-vs-bundled.md`](worked-example-finfill-notneedfinalize-vs-bundled.md) — will fill up all fields（473）≠ don't need Finalize；≠ committed；≠ Contains bundled（不变量 562）
 - [`worked-example-finnewdec-notmatchheader-vs-bundled.md`](worked-example-finnewdec-notmatchheader-vs-bundled.md) — fields of newly decided block（474）≠ match header means separated；≠ fill all fields means dec/prop；≠ decided/proposed columns（不变量 561）
