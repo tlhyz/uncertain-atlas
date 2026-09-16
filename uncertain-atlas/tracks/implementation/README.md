@@ -1,3 +1,4 @@
+- [`worked-example-fndelay-notsetzero-vs-bundled.md`](worked-example-fndelay-notsetzero-vs-bundled.md) — set to 0≠决定/块间隔；≠fndelay bundled/Deterministic=No/MAY wallclock（不变量 619）
 - [`worked-example-fndelay-notwallclock-vs-bundled.md`](worked-example-fndelay-notwallclock-vs-bundled.md) — MAY/wallclock≠app_hash MUST/整门非确定；≠fndelay bundled/Deterministic=No/set to 0（不变量 618）
 - [`worked-example-fndelay-notslot-vs-bundled.md`](worked-example-fndelay-notslot-vs-bundled.md) — Deterministic=No≠槽位/finality/timeout_commit；≠fndelay bundled/MAY/set to 0（不变量 617）
 - [`worked-example-finreturn-notpersist-vs-bundled.md`](worked-example-finreturn-notpersist-vs-bundled.md) — persists≠交差/Commit落盘；≠finreturn bundled/returns/hashes ResultHash（不变量 616）
