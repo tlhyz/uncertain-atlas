@@ -143,6 +143,39 @@ def test_main_check_tick_rejects_missing():
     assert rc == 3
 
 
+def test_unknown_yaml_keys_land_in_extras():
+    spec = spec_from_yaml({"leverage": 5, "n_grids": 200, "stop_loss_pct": 0.1, "foo": 1})
+    assert spec.extras["stop_loss_pct"] == 0.1
+    assert spec.extras["foo"] == 1
+    assert validate_spec(spec) == []
+
+
+def test_geometric_and_fee_bps_from_yaml():
+    spec = spec_from_yaml(
+        {
+            "grid_kind": "geometric",
+            "fee_bps": 3,
+            "reanchor": "flatten",
+            "mmr_frac": 0.01,
+            "n_grids": 40,
+            "leverage": 3,
+        }
+    )
+    assert spec.grid_kind == "geometric"
+    assert spec.fee_bps == 3
+    assert spec.reanchor == "flatten"
+    assert spec.mmr_frac == 0.01
+    assert "geo" in spec.folder_name()
+    assert validate_spec(spec) == []
+
+
+def test_numeric_fee_becomes_fee_bps():
+    spec = spec_from_yaml({"fee": 2.5, "n_grids": 20})
+    assert spec.fee_bps == 2.5
+    assert spec.fee == "base"
+    assert validate_spec(spec) == []
+
+
 def test_cli_sides_and_tag():
     spec = GridSpec()
     ns = build_parser().parse_args(["--sides", "long", "--tag", "probe"])

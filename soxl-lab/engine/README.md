@@ -7,7 +7,9 @@ parent research repo so the two copies cannot drift.
 |------|-------------|
 | 改参入口 | `../soxl-lab/scripts/run_grid.py` + `../src/analysis/soxl_grid_cli.py` |
 | User 5x moving grid | `../src/analysis/user_moving_grid.py` |
-| 重锚后挂单 | `remap_lots`（库存留下，档位贴到新格子） |
+| 重锚后挂单 | `apply_reanchor`：remap / drop_lots / flatten |
+| 新对冲规则 | `register_hedge(name, fn)` in `soxl_grid_cli.py` |
+| 格子种类 | `grid_kind`: arithmetic（默认）/ geometric |
 | DayTradeCache / ATR pair | `../src/analysis/soxl_soxs_hedge.py` |
 | P7-05 runner | `../scripts/run_p7_user_soxl_ls_grid.py` |
 | Tick download | `../scripts/download_soxl_overlap_ticks.py` |

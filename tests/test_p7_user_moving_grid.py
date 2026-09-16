@@ -19,6 +19,14 @@ from src.analysis.user_moving_grid import (
 )
 
 
+def test_geometric_levels_positive_span():
+    lv = user_levels(100.0, range_mode="usdt", range_usdt=20.0, n_grids=10, grid_kind="geometric")
+    assert len(lv) == 10
+    assert abs(lv[0] - 80.0) < 1e-9
+    assert abs(lv[-1] - 120.0) < 1e-9
+    assert (lv[1] / lv[0]) == pytest.approx(lv[2] / lv[1])
+
+
 def test_usdt_levels_span_40():
     lv = user_levels(100.0, range_mode="usdt", range_usdt=20.0, n_grids=200)
     assert len(lv) == 200

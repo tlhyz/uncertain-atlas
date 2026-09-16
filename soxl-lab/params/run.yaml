@@ -28,3 +28,10 @@ hedge: flatten_survivor
 fee: base             # base=2bps  conservative=4bps
 fills: tick           # 结论用 tick；想先快速试用 bar
 tag: ""               # 输出目录前缀，可空
+
+# --- 以后要改再打开，不填 = 现在这套 ---
+# grid_kind: arithmetic   # 或 geometric
+# fee_bps: 3              # 覆盖 fee 预设的会计费率
+# reanchor: remap         # remap | drop_lots | flatten
+# mmr_frac: 0.005         # 逐仓维持保证金
+# --symbol 也能换（cache 里要有该标的逐笔）

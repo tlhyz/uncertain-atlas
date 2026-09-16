@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from dataclasses import asdict, dataclass, fields
+from dataclasses import asdict, dataclass, field, fields
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any, Literal
@@ -22,6 +22,48 @@ from qtb.data.binance_futures import (
 )
 from src.analysis.soxl_soxs_hedge import DayTradeCache
 from src.analysis.user_moving_grid import run_user_hedge_pair, run_user_ls_pair, run_user_one_side
+
+# New hedge books: register_hedge("name", fn) — fn(bars, **engine_kwargs) -> report dict
+HEDGE_RUNNERS = {
+    "flatten_survivor": run_user_hedge_pair,
+    "independent": run_user_ls_pair,
+}
+
+
+def register_hedge(name: str, fn: Any) -> None:
+    HEDGE_RUNNERS[str(name)] = fn
+
+
+KNOWN_YAML_KEYS = {
+    "symbol",
+    "venue",
+    "leverage",
+    "n_grids",
+    "grid_kind",
+    "moving",
+    "capital_long",
+    "capital_short",
+    "capital_per_side",
+    "capital_per_side_usdt",
+    "sides",
+    "side",
+    "range",
+    "range_mode",
+    "range_modes",
+    "hedge",
+    "fee",
+    "fee_bps",
+    "fills",
+    "tag",
+    "window",
+    "start",
+    "end",
+    "reanchor",
+    "mmr",
+    "mmr_frac",
+    "note",
+    "notes",
+}
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG = ROOT / "soxl-lab" / "params" / "run.yaml"
@@ -71,6 +113,11 @@ class GridSpec:
     fills: FillEngine = "tick"
     sides: Sides = "both"
     tag: str = ""
+    grid_kind: str = "arithmetic"
+    fee_bps: float | None = None
+    reanchor: str = "remap"
+    mmr_frac: float = 0.005
+    extras: dict[str, Any] = field(default_factory=dict)
 
     def folder_name(self) -> str:
         band = f"usdt{self.range_usdt:g}" if self.range_mode == "usdt" else f"pct{self.range_pct:g}"
@@ -85,6 +132,12 @@ class GridSpec:
             self.fills,
             win,
         ]
+        if self.grid_kind and self.grid_kind != "arithmetic":
+            bits.append(self.grid_kind[:3])
+        if self.fee_bps is not None:
+            bits.append(f"f{self.fee_bps:g}bps")
+        if self.reanchor and self.reanchor != "remap":
+            bits.append(self.reanchor.replace("_", "-"))
         if self.tag:
             bits.insert(0, self.tag)
         return "_".join(bits)
@@ -117,6 +170,12 @@ def spec_from_yaml(raw: dict[str, Any]) -> GridSpec:
 
     start = _coalesce(win.get("start"), raw.get("start"), "2026-07-16")
     end = _coalesce(win.get("end"), raw.get("end"), "2026-09-11")
+    fee_bps = None
+    if raw.get("fee_bps") is not None:
+        fee_bps = float(raw["fee_bps"])
+    elif isinstance(raw.get("fee"), (int, float)) and not isinstance(raw.get("fee"), bool):
+        fee_bps = float(raw["fee"])
+    extras = {k: raw[k] for k in raw if k not in KNOWN_YAML_KEYS}
     return GridSpec(
         symbol=str(_coalesce(raw.get("symbol"), "SOXLUSDT")),
         start=str(start),
@@ -133,6 +192,11 @@ def spec_from_yaml(raw: dict[str, Any]) -> GridSpec:
         fills=_normalize_fills(raw.get("fills")),
         sides=sides,
         tag=str(_coalesce(raw.get("tag"), "")),
+        grid_kind=str(_coalesce(raw.get("grid_kind"), "arithmetic")),
+        fee_bps=fee_bps,
+        reanchor=str(_coalesce(raw.get("reanchor"), "remap")),
+        mmr_frac=float(_coalesce(raw.get("mmr_frac"), raw.get("mmr"), 0.005)),
+        extras=extras,
     )
 
 
@@ -151,6 +215,8 @@ def _normalize_fills(raw: Any) -> FillEngine:
 
 def _normalize_fee(raw: Any) -> FeePreset:
     if raw is None:
+        return "base"
+    if isinstance(raw, (int, float)) and not isinstance(raw, bool):
         return "base"
     if isinstance(raw, dict):
         # 01_yours draft lists both bps; runner default stays Base.
@@ -181,6 +247,10 @@ def apply_cli(spec: GridSpec, ns: argparse.Namespace) -> GridSpec:
         "fills": "fills",
         "sides": "sides",
         "tag": "tag",
+        "grid_kind": "grid_kind",
+        "fee_bps": "fee_bps",
+        "reanchor": "reanchor",
+        "mmr_frac": "mmr",
     }
     for field, flag in mapping.items():
         val = getattr(ns, flag, None)
@@ -213,10 +283,18 @@ def validate_spec(spec: GridSpec) -> list[str]:
         errs.append("mode=usdt 时 range_usdt 必须 > 0")
     if spec.range_mode == "pct" and spec.range_pct <= 0:
         errs.append("mode=pct 时 range_pct 必须 > 0")
-    if spec.hedge not in ("flatten_survivor", "independent"):
-        errs.append(f"hedge 只能是 flatten_survivor/independent，收到 {spec.hedge}")
+    if spec.hedge not in HEDGE_RUNNERS:
+        errs.append(f"hedge 只能是 {sorted(HEDGE_RUNNERS)}，收到 {spec.hedge}。新规则用 register_hedge")
     if spec.fee not in ("base", "conservative"):
-        errs.append(f"fee 只能是 base/conservative，收到 {spec.fee}")
+        errs.append(f"fee 只能是 base/conservative（成交参与），收到 {spec.fee}")
+    if spec.grid_kind not in ("arithmetic", "geometric"):
+        errs.append(f"grid_kind 只能是 arithmetic/geometric，收到 {spec.grid_kind}")
+    if spec.reanchor not in ("remap", "drop_lots", "flatten"):
+        errs.append(f"reanchor 只能是 remap/drop_lots/flatten，收到 {spec.reanchor}")
+    if spec.mmr_frac <= 0 or spec.mmr_frac >= 1:
+        errs.append("mmr_frac 必须在 (0, 1)")
+    if spec.fee_bps is not None and spec.fee_bps < 0:
+        errs.append("fee_bps 不能为负")
     if spec.fills not in ("tick", "bar"):
         errs.append(f"fills 只能是 tick/bar，收到 {spec.fills}")
     if spec.sides not in ("both", "long", "short"):
@@ -250,9 +328,13 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--mode", choices=("usdt", "pct"), default=None, help="带宽：±N U 或 ±N%%")
     p.add_argument("--range-usdt", dest="range_usdt", type=float, default=None, help="±U，mode=usdt 时生效")
     p.add_argument("--range-pct", dest="range_pct", type=float, default=None, help="±小数，0.2=20%%")
-    p.add_argument("--hedge", choices=("flatten_survivor", "independent"), default=None)
+    p.add_argument("--hedge", choices=tuple(HEDGE_RUNNERS), default=None)
     p.add_argument("--sides", choices=("both", "long", "short"), default=None, help="默认 both=多空；可只跑一边")
     p.add_argument("--fee", choices=("base", "conservative"), default=None)
+    p.add_argument("--fee-bps", dest="fee_bps", type=float, default=None, help="覆盖手续费，单位 bps；不填用 fee 预设")
+    p.add_argument("--grid-kind", dest="grid_kind", choices=("arithmetic", "geometric"), default=None)
+    p.add_argument("--reanchor", choices=("remap", "drop_lots", "flatten"), default=None, help="价格走出带时：remap=贴新格")
+    p.add_argument("--mmr", dest="mmr", type=float, default=None, help="逐仓维持保证金比例，默认 0.005")
     p.add_argument("--fills", choices=("tick", "bar"), default=None, help="结论用 tick；bar 只做快速试")
     p.add_argument("--tag", default=None, help="输出目录前缀")
     p.add_argument("--out", type=Path, default=None)
@@ -392,10 +474,11 @@ def write_report_md(dest: Path, spec: GridSpec, summary: dict[str, Any], bar_sou
         f"| 窗口 | {spec.start} → {spec.end} |",
         f"| 账本 | {hedge_cn.get(str(summary.get('hedge_mode') or spec.hedge), spec.hedge)} / sides={spec.sides} |",
         f"| 杠杆 | {spec.leverage:g}x 逐仓 |",
-        f"| 格子 | {spec.n_grids} 等差 |",
+        f"| 格子 | {spec.n_grids} {('等差' if spec.grid_kind == 'arithmetic' else '等比')} |",
         f"| 带宽 | {mode_cn} |",
+        f"| 重锚 | {spec.reanchor} |",
         f"| 本金 | 多 {spec.capital_long:g} + 空 {spec.capital_short:g} |",
-        f"| 成交 | {spec.fills} / fee={spec.fee} |",
+        f"| 成交 | {spec.fills} / fee={spec.fee}" + (f" / {spec.fee_bps:g}bps" if spec.fee_bps is not None else "") + " |",
         f"| K线来源 | {bar_source} |",
         f"| 收益 | {summary['return']:+.4%} |",
         f"| 回撤 | {summary['max_dd']:.4%} |",
@@ -433,12 +516,22 @@ def print_cache(symbol: str, *, json_only: bool) -> int:
 def print_check(spec: GridSpec, *, json_only: bool) -> int:
     errs = validate_spec(spec)
     miss = window_missing_ticks(spec) if not errs else []
-    payload = {"spec": asdict(spec), "folder": spec.folder_name(), "errors": errs, "missing_tick_days": miss}
+    payload = {
+        "spec": asdict(spec),
+        "folder": spec.folder_name(),
+        "errors": errs,
+        "missing_tick_days": miss,
+        "unknown_yaml_keys": list((spec.extras or {}).keys()),
+        "hedge_modes": sorted(HEDGE_RUNNERS),
+    }
     if json_only:
-        print(json.dumps(payload, indent=2, ensure_ascii=False))
+        print(json.dumps(payload, indent=2, ensure_ascii=False, default=str))
     else:
-        print(json.dumps(asdict(spec), indent=2, ensure_ascii=False))
+        print(json.dumps(asdict(spec), indent=2, ensure_ascii=False, default=str))
         print(f"输出目录名：{spec.folder_name()}")
+        if spec.extras:
+            print(f"未识别的 YAML 键（不会生效）：{sorted(spec.extras)}")
+            print("以后要让它们生效：写进 GridSpec + 引擎，或 register_hedge。")
         if errs:
             print("参数错误：")
             for e in errs:
@@ -510,19 +603,24 @@ def run_spec(
         fill_engine=spec.fills,
         get_trades=get_trades,
         on_bar=on_bar,
+        grid_kind=spec.grid_kind,
+        fee_bps=spec.fee_bps,
+        reanchor=spec.reanchor,
+        mmr_frac=spec.mmr_frac,
     )
     if spec.sides == "long":
         rep = run_user_one_side(bars, direction="long", capital=spec.capital_long, **shared)
     elif spec.sides == "short":
         rep = run_user_one_side(bars, direction="short", capital=spec.capital_short, **shared)
-    elif spec.hedge == "independent":
-        if not quiet and not json_only:
-            print("independent：先跑多头整段，再跑空头整段（进度日期会走两遍）", flush=True)
-        rep = run_user_ls_pair(bars, capital_long=spec.capital_long, capital_short=spec.capital_short, **shared)
     else:
-        if spec.sides == "both" and not quiet and not json_only:
+        runner = HEDGE_RUNNERS.get(spec.hedge)
+        if runner is None:
+            raise ValueError(f"未知 hedge {spec.hedge}，已注册：{sorted(HEDGE_RUNNERS)}")
+        if spec.hedge == "independent" and not quiet and not json_only:
+            print("independent：先跑多头整段，再跑空头整段（进度日期会走两遍）", flush=True)
+        elif spec.hedge == "flatten_survivor" and not quiet and not json_only:
             print("flatten_survivor：同一条移动带，一边爆仓就平另一边", flush=True)
-        rep = run_user_hedge_pair(bars, capital_long=spec.capital_long, capital_short=spec.capital_short, **shared)
+        rep = runner(bars, capital_long=spec.capital_long, capital_short=spec.capital_short, **shared)
 
     dest = out_root / spec.folder_name()
     dest.mkdir(parents=True, exist_ok=True)
