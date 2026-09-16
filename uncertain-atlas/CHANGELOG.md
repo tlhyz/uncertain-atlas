@@ -1,3 +1,7 @@
+## 2026-09-16（续 753）
+
+- 不变量 636；语料 C613；模式 name-the-finrecheck-notoutstanding-bar；反模式 finrecheck-notoutstanding-sold-as-bundled；L10.3 第 605 条。填 L4.4 / CometBFT 档案 FinalizeBlock When all outstanding transactions in the mempool not new transactions / not CheckTx passed forever valid / not finrecheck bundled 正式三事（591 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。591 finrecheck unbundling 续（636 item 2）。
+
 ## 2026-09-16（续 752）
 
 - 不变量 635；语料 C612；模式 name-the-finrecheck-notmust-bar；反模式 finrecheck-notmust-sold-as-bundled；L10.3 第 604 条。填 L4.4 / CometBFT 档案 FinalizeBlock When optionally re-checks not must recheck / not already settled / not finrecheck bundled 正式三事（591 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。591 finrecheck unbundling 启动（635 item 1）。
