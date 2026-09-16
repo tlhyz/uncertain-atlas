@@ -1,3 +1,4 @@
+- [`worked-example-finnewfields-notprocfull-vs-bundled.md`](worked-example-finnewfields-notprocfull-vs-bundled.md) — newly decided fields ≠ ProcessProposal contains all information；≠ proposed/decided interchangeable；≠ only raw proposal enough（不变量 557）
 - [`worked-example-finnewfields-notsettled-vs-bundled.md`](worked-example-finnewfields-notsettled-vs-bundled.md) — Contains newly decided fields ≠ four gates settled；≠ already ran Process；≠ Process ACCEPT switched working state（不变量 556）
 - [`worked-example-finht-notprocht-vs-bundled.md`](worked-example-finht-notprocht-vs-bundled.md) — Finalize match header ≠ ProcessProposal match；≠ know hash；≠ newly decided block fields（不变量 555）
 - [`worked-example-finhtreqlht-notusage-vs-bundled.md`](worked-example-finhtreqlht-notusage-vs-bundled.md) — Finalize Request height/time 栏 ≠ Usage match；≠ verified vote timestamp；≠ ProcessProposalRequest height/time interchangeable（不变量 554）

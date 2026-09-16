@@ -1,3 +1,7 @@
+## 2026-09-16（续 689）
+
+- 不变量 557；语料 C549；模式 name-the-finnewfields-notprocfull-bar；反模式 finnewfields-notprocfull-sold-as-bundled；L10.3 第 541 条。填 L4.4 / CometBFT 档案 FinalizeBlock newly decided block fields not ProcessProposal contains all information 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。461 FinalizeBlock 含刚决定那块字段 unbundling 续（557）。
+
 ## 2026-09-16（续 688）
 
 - 不变量 556；语料 C548；模式 name-the-finnewfields-notsettled-bar；反模式 finnewfields-notsettled-sold-as-bundled；L10.3 第 540 条。填 L4.4 / CometBFT 档案 FinalizeBlock Contains newly decided block fields not already settled 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。461 FinalizeBlock 含刚决定那块字段 unbundling 启动（556）。
