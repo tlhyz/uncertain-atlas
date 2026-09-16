@@ -1,3 +1,7 @@
+## 2026-09-16（续 723）
+
+- 不变量 606；语料 C583；模式 name-the-finpersist-notoutputs-bar；反模式 finpersist-notoutputs-sold-as-bundled；L10.3 第 575 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calls FinalizeBlock not persist outputs / 362 decides trigger 正式三事（478 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。478 finpersist unbundling 续（606 item 2）。
+
 ## 2026-09-16（续 722）
 
 - 不变量 605；语料 C582；模式 name-the-finpersist-notpersist-bar；反模式 finpersist-notpersist-sold-as-bundled；L10.3 第 574 条。填 L4.4 / CometBFT 档案 FinalizeBlock When persist decision not executes block v / 已经交差 正式三事（478 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。478 finpersist unbundling 启动（605 item 1）。
