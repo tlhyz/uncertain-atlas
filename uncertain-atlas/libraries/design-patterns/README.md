@@ -1,3 +1,4 @@
+- [`name-the-finasresult-notsettled-bar.md`](name-the-finasresult-notsettled-bar.md) — FinalizeBlock must provide values not already changed set / settled 正式三事（477 余量）（不变量 594）
 - [`name-the-finh1-bar.md`](name-the-finh1-bar.md) — FinalizeBlock When starts consensus for h+1 round 0 正式三事（不变量 593）
 - [`name-the-finunlock-bar.md`](name-the-finunlock-bar.md) — FinalizeBlock When unlocks mempool 正式三事（不变量 592）
 - [`name-the-finrecheck-bar.md`](name-the-finrecheck-bar.md) — FinalizeBlock When optional recheck 正式三事（不变量 591）

@@ -1,3 +1,4 @@
+- [`worked-example-finasresult-notsettled-vs-bundled.md`](worked-example-finasresult-notsettled-vs-bundled.md) — must provide≠改了集合/H+1；≠交差/persist；≠477 bundled/363/458（不变量 594）
 - [`worked-example-finh1-vs-round0.md`](worked-example-finh1-vs-round0.md) — starts h+1≠交差；round0≠同高换轮/delay；step11≠unlock/bundled（不变量 593）
 - [`worked-example-finunlock-vs-lock.md`](worked-example-finunlock-vs-lock.md) — unlock≠交差；newly received≠optional recheck；step10≠h+1 round0（不变量 592）
 - [`worked-example-finrecheck-vs-recheck.md`](worked-example-finrecheck-vs-recheck.md) — optional recheck≠必须再验；outstanding≠new txs；newly persisted≠Type=RECHECK（不变量 591）

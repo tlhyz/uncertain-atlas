@@ -1,3 +1,7 @@
+## 2026-09-16（续 711）
+
+- 不变量 594；语料 C571；模式 name-the-finasresult-notsettled-bar；反模式 finasresult-notsettled-sold-as-bundled；L10.3 第 563 条。填 L4.4 / CometBFT 档案 FinalizeBlock must provide values not already changed set / settled 正式三事（477 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。477 finasresult unbundling 启动（594 item 1）。
+
 ## 2026-09-16（续 710）
 
 - 不变量 593；语料 C570；模式 name-the-finh1-bar；反模式 finh1-sold-as-nextheight；L10.3 第 562 条。填 L4.4 / CometBFT 档案 FinalizeBlock When starts consensus for h+1 round 0 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 473 → local 593。When steps 1–11 链完成。
