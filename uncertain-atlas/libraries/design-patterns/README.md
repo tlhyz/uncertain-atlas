@@ -1,3 +1,4 @@
+- [`name-the-finreturn-notpersist-bar.md`](name-the-finreturn-notpersist-bar.md) — FinalizeBlock When CometBFT persists tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state 正式三事（587 余量）（不变量 616）
 - [`name-the-finreturn-notresulthash-bar.md`](name-the-finreturn-notresulthash-bar.md) — FinalizeBlock When CometBFT hashes into ResultHash not Code / Data 印进本头 LastResultsHash / not this header LastResultsHash 正式三事（587 余量）（不变量 615）
 - [`name-the-finreturn-notheader-bar.md`](name-the-finreturn-notheader-bar.md) — FinalizeBlock When Application returns AppHash + tx outputs not printed in this header / not this header AppHash 正式三事（587 余量）（不变量 614）
 - [`name-the-finmorepre-notaftercommit-bar.md`](name-the-finmorepre-notaftercommit-bar.md) — FinalizeBlockResponse next_block_delay after committing before next height not slot / not final / not finmorepre bundled 正式三事（480 余量）（不变量 613）
