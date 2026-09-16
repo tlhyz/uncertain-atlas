@@ -1,3 +1,7 @@
+## 2026-09-16（续 709）
+
+- 不变量 592；语料 C569；模式 name-the-finunlock-bar；反模式 finunlock-sold-as-checked；L10.3 第 561 条。填 L4.4 / CometBFT 档案 FinalizeBlock When unlocks mempool 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 472 → local 592。
+
 ## 2026-09-16（续 708）
 
 - 不变量 591；语料 C568；模式 name-the-finrecheck-bar；反模式 finrecheck-sold-as-recheck；L10.3 第 560 条。填 L4.4 / CometBFT 档案 FinalizeBlock When optional recheck 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 471 → local 591。
