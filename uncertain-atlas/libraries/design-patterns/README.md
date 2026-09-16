@@ -1,3 +1,4 @@
+- [`name-the-finunlock-notnewly-bar.md`](name-the-finunlock-notnewly-bar.md) — FinalizeBlock When newly received transactions can now be checked not optional recheck outstanding txs / not CheckTx optional / not finunlock bundled 正式三事（592 余量）（不变量 639）
 - [`name-the-finunlock-notsettled-bar.md`](name-the-finunlock-notsettled-bar.md) — FinalizeBlock When unlocks the mempool not already settled / not four gates settled / not finunlock bundled 正式三事（592 余量）（不变量 638）
 - [`name-the-finrecheck-nottype-bar.md`](name-the-finrecheck-nottype-bar.md) — FinalizeBlock When against newly persisted Application state not Type=RECHECK / not CheckTxState / ExecuteTxState / not finrecheck bundled 正式三事（591 余量）（不变量 637）
 - [`name-the-finrecheck-notoutstanding-bar.md`](name-the-finrecheck-notoutstanding-bar.md) — FinalizeBlock When all outstanding transactions in the mempool not new transactions / not CheckTx passed forever valid / not finrecheck bundled 正式三事（591 余量）（不变量 636）

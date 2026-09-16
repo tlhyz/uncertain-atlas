@@ -1,3 +1,4 @@
+- [`worked-example-finunlock-notnewly-vs-bundled.md`](worked-example-finunlock-notnewly-vs-bundled.md) — newly received≠optional recheck outstanding/CheckTx optional；≠finunlock bundled/settled/Commit lock（不变量 639）
 - [`worked-example-finunlock-notsettled-vs-bundled.md`](worked-example-finunlock-notsettled-vs-bundled.md) — unlock mempool≠settled/four gates；≠finunlock bundled/newly received/Commit lock（不变量 638）
 - [`worked-example-finrecheck-nottype-vs-bundled.md`](worked-example-finrecheck-nottype-vs-bundled.md) — newly persisted≠Type=RECHECK/CheckTxState；≠finrecheck bundled/must/outstanding（不变量 637）
 - [`worked-example-finrecheck-notoutstanding-vs-bundled.md`](worked-example-finrecheck-notoutstanding-vs-bundled.md) — outstanding txs≠new/CheckTx passed；≠finrecheck bundled/must/type（不变量 636）

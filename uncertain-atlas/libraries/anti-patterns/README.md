@@ -1,3 +1,4 @@
+- [`finunlock-notnewly-sold-as-bundled.md`](finunlock-notnewly-sold-as-bundled.md) — newly received can now be checked 被写成已经 optional recheck outstanding txs / 已经 CheckTx 技术上可选 / 已经 finunlock bundled（不变量 639）
 - [`finunlock-notsettled-sold-as-bundled.md`](finunlock-notsettled-sold-as-bundled.md) — unlocks mempool 被写成已经交差 / 已经四门已经结算 / 已经 finunlock bundled（不变量 638）
 - [`finrecheck-nottype-sold-as-bundled.md`](finrecheck-nottype-sold-as-bundled.md) — against newly persisted 被写成已经 Type=RECHECK / 已经 CheckTxState / ExecuteTxState / 已经 finrecheck bundled（不变量 637）
 - [`finrecheck-notoutstanding-sold-as-bundled.md`](finrecheck-notoutstanding-sold-as-bundled.md) — outstanding txs 被写成已经 new transactions / 已经 CheckTx 过了就永远有效 / 已经 finrecheck bundled（不变量 636）
