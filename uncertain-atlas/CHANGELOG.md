@@ -1,3 +1,7 @@
+## 2026-09-16（续 756）
+
+- 不变量 639；语料 C616；模式 name-the-finunlock-notnewly-bar；反模式 finunlock-notnewly-sold-as-bundled；L10.3 第 608 条。填 L4.4 / CometBFT 档案 FinalizeBlock When newly received transactions can now be checked not optional recheck outstanding txs / not CheckTx optional / not finunlock bundled 正式三事（592 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。592 finunlock unbundling 续（639 item 2）。
+
 ## 2026-09-16（续 755）
 
 - 不变量 638；语料 C615；模式 name-the-finunlock-notsettled-bar；反模式 finunlock-notsettled-sold-as-bundled；L10.3 第 607 条。填 L4.4 / CometBFT 档案 FinalizeBlock When unlocks the mempool not already settled / not four gates settled / not finunlock bundled 正式三事（592 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。592 finunlock unbundling 启动（638 item 1）。
