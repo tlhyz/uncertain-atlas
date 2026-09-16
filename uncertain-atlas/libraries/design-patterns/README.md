@@ -1,3 +1,4 @@
+- [`name-the-finrecheck-nottype-bar.md`](name-the-finrecheck-nottype-bar.md) — FinalizeBlock When against newly persisted Application state not Type=RECHECK / not CheckTxState / ExecuteTxState / not finrecheck bundled 正式三事（591 余量）（不变量 637）
 - [`name-the-finrecheck-notoutstanding-bar.md`](name-the-finrecheck-notoutstanding-bar.md) — FinalizeBlock When all outstanding transactions in the mempool not new transactions / not CheckTx passed forever valid / not finrecheck bundled 正式三事（591 余量）（不变量 636）
 - [`name-the-finrecheck-notmust-bar.md`](name-the-finrecheck-notmust-bar.md) — FinalizeBlock When optionally re-checks not must recheck / not already settled / not finrecheck bundled 正式三事（591 余量）（不变量 635）
 - [`name-the-finafter-notrecheck-bar.md`](name-the-finafter-notrecheck-bar.md) — FinalizeBlock When 可选再验池里剩下的、再解锁、再开下一高 round 0 not Recheck / not unlock / not finafter bundled 正式三事（403 余量）（不变量 634）

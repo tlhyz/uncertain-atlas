@@ -1,0 +1,50 @@
+# 例：看见 against the newly persisted Application state / 看见对照刚落盘的应用状态 is not already 已经 Type=RECHECK interchangeable / 已经 CheckTxState / ExecuteTxState interchangeable / 已经 finrecheck bundled interchangeable
+
+**层次**：实现 / FinalizeBlock When against newly persisted Application state not Type=RECHECK / not CheckTxState / ExecuteTxState / not finrecheck bundled 正式三事（591 余量）。  
+**分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
+**来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) FinalizeBlock When step 9。  
+**对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool 正文。本页是「FinalizeBlock When against newly persisted Application state not Type=RECHECK / not CheckTxState / ExecuteTxState / not finrecheck bundled 正式三事（591 余量）/ not 637 finrecheck-nottype interchangeable / not 635 finrecheck-notmust interchangeable / not 636 finrecheck-notoutstanding interchangeable / not 312 checktxtype interchangeable / not 634 notrecheck interchangeable」，不是 FinalizeBlock When optional recheck 正式三事 bundled（591），也不是 CheckTx Type（312 / 484），也不是 Finalize 之后 optional recheck unlock h+1 not Recheck（403 item 3 / 634）。不要另写怎样再验、怎样填 Type、怎样解锁。
+
+## 官方三件事
+
+规范把 When 第 9 步 re-checks … **against the newly persisted Application state** 和「已经是已经 Type=RECHECK interchangeable / 已经是已经 CheckTxState / ExecuteTxState interchangeable / 已经是 finrecheck bundled interchangeable」分开写成三件独立的实现事，不是「看见对照刚落盘的应用状态 就已经 Type=RECHECK、就已经 CheckTxState / ExecuteTxState、就已经 finrecheck bundled interchangeable」一件事：
+
+1. **看见 against the newly persisted Application state / 看见对照刚落盘的应用状态 / 看见 re-checks against newly persisted Application state is not already 已经 Type=RECHECK interchangeable / 已经 CheckTxRequest Type RECHECK interchangeable / 312 checktxtype RECHECK interchangeable / 484 chktxtype RECHECK interchangeable / 634 notrecheck interchangeable / 403 finafter item 3 interchangeable / 312 item 1 RECHECK not new txs interchangeable，也不是已经 FinalizeBlock When optional recheck 正式三事 bundled（591） interchangeable / 637 finrecheck-nottype interchangeable / 591 finrecheck interchangeable / 635 finrecheck-notmust interchangeable / 636 finrecheck-notoutstanding interchangeable，也不是已经 CheckTx Type bundled（312 余量） interchangeable / 312 checktxtype interchangeable / 484 chktxtype interchangeable / 312 item 2 not optional recheck interchangeable / 484 chktxtype RECHECK interchangeable，也不是已经 Finalize 之后 optional recheck unlock h+1 not Recheck bundled（403 item 3 余量 / 634） interchangeable / 634 notrecheck interchangeable / 592 finunlock interchangeable / 593 finh1 interchangeable / 632 notsettled interchangeable，也不是已经 optionally re-checks not must recheck bundled（591 item 1 余量 / 635） interchangeable / 635 finrecheck-notmust interchangeable / 312 checktxtype RECHECK interchangeable / 403 finafter interchangeable。**  
+   官方 When 第 9 步写：re-checks … **against the newly persisted Application state**。发生在 When 第 8 步 calls `Commit` 之后、第 10 步 unlocks the mempool 之前。看见 When 第 9 步再验，不是已经 `CheckTxRequest` 的 `Type` 标明 `CHECK_TX_TYPE_RECHECK`（312 / 484） interchangeable——591 bundled 第三件事常被写成「看见对照刚落盘的应用状态 就已经 Type=RECHECK interchangeable / 就已经 Recheck interchangeable」，本页从 591 item 3 侧钉 not Type=RECHECK 单句。看见 against newly persisted，不是已经 Finalize 之后 optional recheck unlock h+1 not Recheck（403 item 3 余量 / 634） interchangeable——634 另钉 403 item 3 not Recheck，本页钉 591 item 3 第一件事。看见 When 第 9 步，不是已经 CheckTx Type bundled（312） interchangeable——312 另钉 Request type / Commit 后再验机制，本页钉 not Type=RECHECK 单句。
+2. **看见 against the newly persisted Application state / 看见对照刚落盘的应用状态 is not already 已经 CheckTxState interchangeable / 已经 ExecuteTxState interchangeable / 已经 CheckTx 只是弱过滤器 interchangeable / 339 checktxweak interchangeable / 310 querystate interchangeable / 311 candidate is ExecuteTxState interchangeable / 335 finpersist interchangeable，也不是已经 FinalizeBlock When optional recheck 正式三事 bundled（591） interchangeable / 637 finrecheck-nottype interchangeable / 591 finrecheck interchangeable / 635 finrecheck-notmust interchangeable / 636 finrecheck-notoutstanding interchangeable，也不是已经 CheckTx 弱过滤器 bundled（339 余量） interchangeable / 339 checktxweak interchangeable / 339 item 3 mempool interchangeable / 312 checktxweak interchangeable / 313 checktxguard interchangeable，也不是已经 QueryState / ExecuteTxState bundled（310 / 311 余量） interchangeable / 310 querystate interchangeable / 311 candidate is ExecuteTxState interchangeable / 312 checktxstate interchangeable / 484 chktxtype interchangeable，也不是已经 Finalize 改了就已经落盘 bundled（335 余量） interchangeable / 335 finpersist interchangeable / 616 notpersist interchangeable / 632 notsettled interchangeable / 481 commitpersist interchangeable，也不是已经 optionally re-checks not must recheck bundled（591 item 1 余量 / 635） interchangeable / 635 finrecheck-notmust interchangeable / 601 notsettled interchangeable / 33 four gates interchangeable。**  
+   官方把 When 第 9 步对照刚落盘状态和 CheckTxState / ExecuteTxState 分开——591 item 3 常与 339 / 310 混成「看见 against newly persisted 就已经 CheckTxState / ExecuteTxState interchangeable / 就已经弱过滤器 interchangeable」，本页钉 not CheckTxState / ExecuteTxState 单句。看见 newly persisted，不是已经 Finalize 改了就已经落盘（335） interchangeable——335 钉应用 MUST NOT 在 Finalize 持久化，本页钉 against newly persisted 单句。看见 When 第 9 步再验，不是已经 CheckTx 只是弱过滤器、不能保证验的就是以后执行那份状态（339 / 312 Usage 前半） interchangeable——339 另钉 Process 对付无效块，本页钉 591 item 3 第二件事。
+3. **看见 against the newly persisted Application state / 看见对照刚落盘的应用状态 is not already finrecheck bundled（591） interchangeable / 已经 optionally re-checks interchangeable / 已经 all outstanding transactions in the mempool interchangeable / 591 finrecheck item 1 interchangeable / 591 finrecheck item 2 interchangeable / 635 finrecheck-notmust interchangeable / 636 finrecheck-notoutstanding interchangeable / 634 notrecheck interchangeable，也不是已经 FinalizeBlock When optional recheck 正式三事 bundled（591） interchangeable / 637 finrecheck-nottype interchangeable / 591 finrecheck interchangeable / 312 checktxtype RECHECK interchangeable / 484 chktxtype interchangeable / 403 finafter item 3 interchangeable，也不是已经 optionally re-checks not must recheck bundled（591 item 1 余量 / 635） interchangeable / 635 finrecheck-notmust interchangeable / 634 notrecheck interchangeable / 312 checktxtype RECHECK interchangeable / 403 finafter interchangeable，也不是已经 all outstanding transactions in the mempool not new transactions bundled（591 item 2 余量 / 636） interchangeable / 636 finrecheck-notoutstanding interchangeable / 588 finlock interchangeable / 301 mempool interchangeable / 339 checktxweak interchangeable，也不是已经 Finalize 之后 optional recheck unlock h+1 not Recheck bundled（403 item 3 余量 / 634） interchangeable / 634 notrecheck interchangeable / 592 finunlock interchangeable / 593 finh1 interchangeable / 632 notsettled interchangeable。**  
+   官方把 591 finrecheck bundled 三事里的 against newly persisted Application state 和 optionally re-checks / outstanding txs 分开——591 bundled 常与 item 1 / item 2 混成「看见对照刚落盘的应用状态 就已经 finrecheck bundled interchangeable」，本页钉 591 item 3 第三件事。看见 against newly persisted，不是已经 optionally re-checks not must recheck（591 item 1 余量 / 635） interchangeable——635 另钉 not must recheck / not settled，本页钉 item 3 单句。看见 When 第 9 步，不是已经 all outstanding transactions in the mempool not new transactions（591 item 2 余量 / 636） interchangeable——636 另钉 outstanding vs new / not CheckTx passed，本页钉 not finrecheck bundled 单句。591 finrecheck unbundling 在本页 item 3 完成。
+
+怎样再验、怎样填 Type、怎样解锁是规范里的做法，本页不抄。FinalizeBlock When optional recheck 正式三事 bundled（591）、optionally re-checks not must recheck（591 item 1 余量 / 635）、all outstanding transactions in the mempool not new transactions（591 item 2 余量 / 636）、CheckTx Type（312 / 484）、Finalize 之后 optional recheck unlock h+1 not Recheck（403 item 3 余量 / 634）、CheckTx 弱过滤器（339）、QueryState / ExecuteTxState（310 / 311）、Finalize 落盘禁令（335）是另外那套，本页不抄。
+
+## 官方为什么这样拆
+
+- **against newly persisted not Type=RECHECK ≠ 312 checktxtype / 634 notrecheck interchangeable：** 官方把 When 第 9 步 optional recheck 对象和 Request type RECHECK 分开。
+- **against newly persisted not CheckTxState / ExecuteTxState ≠ 339 checktxweak / 310 querystate interchangeable：** 官方把 591 item 3 和 CheckTx 弱过滤器 / QueryState 分开。
+- **against newly persisted not finrecheck bundled ≠ 635 finrecheck-notmust / 636 notoutstanding interchangeable：** 官方把 591 item 3 和 item 1 / item 2 分开；591 finrecheck unbundling 完成（637 item 3）。
+
+## 和相邻页的边界
+
+| 对象 | 本页 | 那一页 |
+|---|---|---|
+| against newly persisted | 不是 already Type=RECHECK | 不是 CheckTx Type（312 / 484） |
+| against newly persisted | 不是 already CheckTxState / ExecuteTxState | 不是 CheckTx 弱过滤器（339） |
+| against newly persisted | 不是 already finrecheck bundled | 不是 not must recheck（591 item 1 / 635） |
+
+## 产品
+
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 FinalizeBlock When against newly persisted Application state not Type=RECHECK / not CheckTxState / ExecuteTxState / not finrecheck bundled 正式三事（591 余量），必须分开 against newly persisted 是不是 already Type=RECHECK interchangeable / 312 checktxtype RECHECK interchangeable / 484 chktxtype interchangeable / 634 notrecheck interchangeable、against newly persisted 是不是 already CheckTxState / ExecuteTxState interchangeable / 339 checktxweak interchangeable / 310 querystate interchangeable / 335 finpersist interchangeable、against newly persisted 是不是 already finrecheck bundled interchangeable / 635 finrecheck-notmust interchangeable / 636 finrecheck-notoutstanding interchangeable / 403 finafter item 3 interchangeable。可以跳过「看见对照刚落盘的应用状态 就已经 Type=RECHECK interchangeable」。不要另写怎样再验。591 finrecheck unbundling 在本页 item 3 完成。
+
+## 本页不抄
+
+- 怎样再验、怎样填 Type、怎样解锁。
+- FinalizeBlock When optional recheck 正式三事 bundled。那是不变量 591。
+- optionally re-checks not must recheck。那是不变量 591 item 1 余量 / 635。
+- all outstanding transactions in the mempool not new transactions。那是不变量 591 item 2 余量 / 636。
+- CheckTx Type / RECHECK。那是不变量 312 / 484。
+- Finalize 之后 optional recheck unlock h+1 not Recheck。那是不变量 403 item 3 余量 / 634。
+- CheckTx 弱过滤器。那是不变量 339。
+- QueryState / ExecuteTxState。那是不变量 310 / 311。
+- Finalize 落盘禁令。那是不变量 335。

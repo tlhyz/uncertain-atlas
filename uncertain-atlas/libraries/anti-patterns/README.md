@@ -1,3 +1,4 @@
+- [`finrecheck-nottype-sold-as-bundled.md`](finrecheck-nottype-sold-as-bundled.md) — against newly persisted 被写成已经 Type=RECHECK / 已经 CheckTxState / ExecuteTxState / 已经 finrecheck bundled（不变量 637）
 - [`finrecheck-notoutstanding-sold-as-bundled.md`](finrecheck-notoutstanding-sold-as-bundled.md) — outstanding txs 被写成已经 new transactions / 已经 CheckTx 过了就永远有效 / 已经 finrecheck bundled（不变量 636）
 - [`finrecheck-notmust-sold-as-bundled.md`](finrecheck-notmust-sold-as-bundled.md) — optionally re-checks 被写成已经必须再验 / 已经交差 / 已经 finrecheck bundled（不变量 635）
 - [`finafter-notrecheck-sold-as-bundled.md`](finafter-notrecheck-sold-as-bundled.md) — optional recheck unlock h+1 被写成已经是 Recheck / 已经解锁 / 已经 finafter bundled（不变量 634）
