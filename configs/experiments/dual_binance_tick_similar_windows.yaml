@@ -1,4 +1,4 @@
-# P3-11 — Similar-window search top-20 (65d SOXL history)
+# P3-11 — Similar-window search (SOXL listing 2026-05-15+; TECH_T3)
 interval: "1h"
 cache_only: true
 output_dir: outputs/experiments/dual_binance_tick_similar_windows
@@ -23,8 +23,11 @@ run_binance_c1: false
 download_trades: false
 tick_precise: false
 
-data_start: "2026-07-09"
+data_start: "2026-05-15"
 data_end: "2026-09-11"
+similar_search_seed: TECH_T3
+similar_search_horizon_bars: 1440
+similar_search_step_bars: 168
 
 tech_book: 6500
 crypto_book: 2500

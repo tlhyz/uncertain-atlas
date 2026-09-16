@@ -74,7 +74,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P3-08 | Grid→Trend stage mix sweep | **done** | FAIL G50 best −57.85% (+0.85pp); G100 worst −71.41% — outputs/review_logs/2026-09-14_P3-08_grid_mix_FAIL.md |
 | P3-09 | FAIL_F1 direct-up window | **blocked** | Vision SOXL starts **2026-05-15**; 2025-09→10 **404** — not downloadable — outputs/review_logs/2026-09-15_P3-09_vision_listing_BLOCKED.md |
 | P3-10 | FAIL_F2 no-recovery window | **blocked** | 2024-09→11 **404**; predates UM listing 2026-05-15 — same log |
-| P3-11 | Similar-window search top-20 real windows | **blocked** | empty on TECH_T2; max 1 window on 1546 bars — outputs/review_logs/2026-09-14_P3-11_similar_windows_BLOCKED.md |
+| P3-11 | Similar-window search top-20 real windows | **blocked** | 120d listing 2866 bars / 9 slides; top-20 needs 4632 — outputs/review_logs/2026-09-16_P3-11_listing_retry_BLOCKED.md |
 | P3-12 | Answer Q-tech-1 Short→Long vs Cash→Long | **done** | COMPLETE FAIL dual -58.70% vs B4 -25.19%; remove Short — outputs/experiments/Q_TECH_1_short_vs_cash_long.md |
 | P3-13 | Answer Q-tech-2 initial short % | **done** | FAIL via P3-02; 20% best return, no sweet spot — outputs/review_logs/2026-09-13_P3-02_short_init_FAIL.md |
 | P3-14 | Answer Q-tech-8 bottom grid value-add | **done** | COMPLETE FAIL B3 -25.20% beats dual -58.70%; grid does not salvage — outputs/experiments/Q_TECH_8_bottom_grid_value_add.md |
@@ -165,6 +165,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P0-02 | pytest green on main after merge | blocked | depends on P0-01; branch 177 green + 1 env-fail |
 | P3-09 | FAIL_F1 2025-09→10 | blocked | Vision SOXL listing 2026-05-15; window 404 |
 | P3-10 | FAIL_F2 2024-09→11 | blocked | predates listing |
+| P3-11 | similar-window top-20 @ 60d | blocked | Vision 120d → 9 slides; need 193d |
 | X-01 | 3L ETF long-run grid | failed | Exp 001 — inventory loss |
 | X-02 | 3x PERP unattended SOL/PENGU/PUMP | failed | liquidations |
 | X-03 | Dual Short→Long on Gate overlap | failed | −51% vs B&H −30% |

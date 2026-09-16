@@ -278,9 +278,15 @@ def run_job(cfg: dict[str, Any]) -> dict[str, Any]:
         payload["stress_3x"] = run_stress_leverage(data, tick_precise=tick_precise)
 
     if cfg.get("run_similar_search", True):
-        print("[run] similar window search...")
+        seed = str(cfg.get("similar_search_seed") or "TECH_T2")
+        hz = int(cfg.get("similar_search_horizon_bars") or 24 * 60)
+        step = int(cfg.get("similar_search_step_bars") or 24 * 7)
+        print(f"[run] similar window search seed={seed} horizon={hz} step={step}...")
         try:
-            payload["similar_windows"] = [w.as_dict() for w in search_similar_windows(data)]
+            payload["similar_windows"] = [
+                w.as_dict()
+                for w in search_similar_windows(data, seed_id=seed, horizon_bars=hz, step_bars=step)
+            ]
         except Exception as exc:  # noqa: BLE001
             payload["similar_windows"] = [{"error": str(exc)}]
 
