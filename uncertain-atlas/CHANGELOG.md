@@ -1,3 +1,7 @@
+## 2026-09-16（续 705）
+
+- 不变量 588；语料 C565；模式 name-the-finlock-bar；反模式 finlock-sold-as-settled；L10.3 第 557 条。填 L4.4 / CometBFT 档案 FinalizeBlock When locks mempool 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 468 → local 588。
+
 ## 2026-09-16（续 704）
 
 - 不变量 587；语料 C564；模式 name-the-finreturn-bar；反模式 finreturn-sold-as-header；L10.3 第 556 条。填 L4.4 / CometBFT 档案 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。remote 467 → local 587。

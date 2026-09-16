@@ -1,3 +1,4 @@
+- [`finlock-sold-as-settled.md`](finlock-sold-as-settled.md) — FinalizeBlock When locks mempool 被写成已经交差（不变量 588）
 - [`finreturn-sold-as-header.md`](finreturn-sold-as-header.md) — FinalizeBlock When AppHash tx outputs ResultHash persist 被写成已经印进本头（不变量 587）
 - [`finequiv-sold-as-gates.md`](finequiv-sold-as-gates.md) — FinalizeBlock 等价于 ABCI 1.0 被写成已经四门已经结算（不变量 586）
 - [`fintxcode-sold-as-absent.md`](fintxcode-sold-as-absent.md) — FinalizeBlock tx_results Code==0 完全合法被写成已经 CheckTx 过了（不变量 585）
