@@ -1,3 +1,7 @@
+## 2026-09-16（续 716）
+
+- 不变量 599；语料 C576；模式 name-the-finempty-notcparam-bar；反模式 finempty-notcparam-sold-as-bundled；L10.3 第 568 条。填 L4.4 / CometBFT 档案 FinalizeBlock empty consensus_param_updates keep current not H+1 effective 正式三事（458 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。458 finempty unbundling 完成（599 item 3）。
+
 ## 2026-09-16（续 715）
 
 - 不变量 598；语料 C575；模式 name-the-finempty-notnoset-bar；反模式 finempty-sold-as-noset（458 item 2 完整化）；L10.3 第 567 条。填 L4.4 / CometBFT 档案 FinalizeBlock empty keep current not changed set / H+1 effective 正式三事（458 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。458 finempty unbundling 续（598 item 2）。

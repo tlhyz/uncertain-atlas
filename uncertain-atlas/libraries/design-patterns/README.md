@@ -1,3 +1,4 @@
+- [`name-the-finempty-notcparam-bar.md`](name-the-finempty-notcparam-bar.md) — FinalizeBlock empty consensus_param_updates keep current not H+1 effective 正式三事（458 余量）（不变量 599）
 - [`name-the-finempty-notnoset-bar.md`](name-the-finempty-notnoset-bar.md) — FinalizeBlock empty keep current not changed set / H+1 effective 正式三事（458 余量）（不变量 598）
 - [`name-the-finempty-notmustprovide-bar.md`](name-the-finempty-notmustprovide-bar.md) — FinalizeBlock empty keep current not no must provide obligation 正式三事（458 余量）（不变量 597）
 - [`name-the-finasresult-notempty-bar.md`](name-the-finasresult-notempty-bar.md) — FinalizeBlock must provide values provided values not empty keep current / not CheckTx 正式三事（477 余量）（不变量 596）
