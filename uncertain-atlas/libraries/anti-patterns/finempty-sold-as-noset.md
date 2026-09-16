@@ -1,16 +1,16 @@
-# 反模式：把 FinalizeBlock empty keep current 说成 validator_updates 空则保持当前集合就已经没有集合 / 已经改了集合
+# 反模式：把 FinalizeBlock empty keep current not changed set / H+1 effective 正式三事（458 余量）说成 validator_updates 空则没有集合 / 已经改了集合
 
 **层次**：实现 / 文案。  
 **分类**：推断（产品）。  
-**例**：458 item 2 余量（待写 `worked-example-finempty-notnoset-vs-bundled.md`）。
+**例**：[empty keep current not changed set ≠ bundled（458）](../../tracks/implementation/worked-example-finempty-notnoset-vs-bundled.md)。
 
 ## 错在哪里
 
-把 validator_updates may be empty … CometBFT will keep the current values 写成 validator_updates 空则保持当前集合就已经没有集合 interchangeable，或已经 empty means no validator set interchangeable；把 empty keep current 写成已经 changed validator set / H+1 换人 interchangeable，或已经 validator_updates 非空 interchangeable，或已经和 459 validator_updates H+1/H+2/H+3 / 471 fincparam interchangeable。
+把 validator_updates may be empty … CometBFT will keep the current values 写成 validator_updates 空则保持当前集合就已经没有集合 interchangeable，或已经 empty means no validator set interchangeable；把 empty keep current 写成已经 changed validator set / H+1 换人 interchangeable，或已经 validator_updates 非空 interchangeable，或已经和 459 validator_updates H+1/H+2/H+3 / 471 fincparam / 594 not settled interchangeable；把 empty keep current 写成已经是 FinalizeBlock 空更新 keep current bundled（458） interchangeable，或已经 finempty bundled interchangeable，或已经和 597 notmustprovide / 596 notempty / 477 finasresult interchangeable。
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 FinalizeBlock empty keep current not changed set 正式三事（458 item 2 余量），必须分开 empty keep current 是不是 already changed set interchangeable / 459 / 471、是不是 already finempty bundled interchangeable / 597 notmustprovide，不要和 458 item 1 / 477 / 594 糊成一句。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 FinalizeBlock empty keep current not changed set / H+1 effective 正式三事（458 余量），必须分开 empty keep current set not no set、not changed set / H+1 effective、not finempty bundled 三件事，不要和 458 / 597 / 459 / 471 / 594 / 477 糊成一句。
 
 ## 和相邻反模式
 
