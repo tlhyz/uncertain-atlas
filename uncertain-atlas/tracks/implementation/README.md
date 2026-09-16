@@ -1,3 +1,4 @@
+- [`worked-example-prochtreqlht-notusage-vs-bundled.md`](worked-example-prochtreqlht-notusage-vs-bundled.md) — Request height/time 栏 ≠ Usage match；≠ verified vote timestamp；≠ Process height/time match bundled（不变量 551）
 - [`worked-example-procht-notverified-vs-bundled.md`](worked-example-procht-notverified-vs-bundled.md) — Process height/time match header ≠ already verified；≠ already ran Process；≠ header fields bundled know hash（不变量 550）
 - [`worked-example-procfull-notfinfields-vs-bundled.md`](worked-example-procfull-notfinfields-vs-bundled.md) — Contains all information ≠ Finalize newly decided fields；Contains all information ≠ proposed/decided interchangeable；Contains all information ≠ only txs enough（不变量 549）
 - [`worked-example-procfull-req8-notprepare-vs-bundled.md`](worked-example-procfull-req8-notprepare-vs-bundled.md) — Request 八栏齐 ≠ only Prepare txs；Request 八栏齐 ≠ only raw proposal；Request 八栏齐 ≠ only txs enough（不变量 548）
