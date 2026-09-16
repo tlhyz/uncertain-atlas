@@ -1,3 +1,5 @@
+- [`finempty-notmustprovide-sold-as-bundled.md`](finempty-notmustprovide-sold-as-bundled.md) — empty keep current 被写成已经空着就没有 must provide 义务（不变量 597）
+- [`finempty-sold-as-noset.md`](finempty-sold-as-noset.md) — empty keep current 被写成 validator_updates 空则没有集合（458 item 2 余量占位）
 - [`finasresult-notempty-sold-as-bundled.md`](finasresult-notempty-sold-as-bundled.md) — provided values 被写成已经空着就没有 must provide 义务（不变量 596）
 - [`finasresult-notcand-sold-as-bundled.md`](finasresult-notcand-sold-as-bundled.md) — as a result of executing 被写成已经 Process 跑过就不用再执行（不变量 595）
 - [`finasresult-notsettled-sold-as-bundled.md`](finasresult-notsettled-sold-as-bundled.md) — FinalizeBlock must provide values not already changed set / settled 被写成已经改了集合 / 已经交差（不变量 594）

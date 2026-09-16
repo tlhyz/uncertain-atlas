@@ -1,3 +1,7 @@
+## 2026-09-16（续 714）
+
+- 不变量 597；语料 C574；模式 name-the-finempty-notmustprovide-bar；反模式 finempty-notmustprovide-sold-as-bundled；L10.3 第 566 条。填 L4.4 / CometBFT 档案 FinalizeBlock empty keep current not no must provide obligation 正式三事（458 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。458 finempty unbundling 启动（597 item 1）。补 finempty-sold-as-noset 占位。
+
 ## 2026-09-16（续 713）
 
 - 不变量 596；语料 C573；模式 name-the-finasresult-notempty-bar；反模式 finasresult-notempty-sold-as-bundled；L10.3 第 565 条。填 L4.4 / CometBFT 档案 FinalizeBlock must provide values provided values not empty keep current / not CheckTx 正式三事（477 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。477 finasresult unbundling 完成（596 item 3）。
