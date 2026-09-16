@@ -1,3 +1,4 @@
+- [`fintxcode-notsettled-sold-as-bundled.md`](fintxcode-notsettled-sold-as-bundled.md) — tx_results returned 被写成已经 Finalize 改了就已经交差 / 已经 Code Data 印进本头 / 已经 fintxcode bundled（不变量 628）
 - [`fintxcode-notinvalid-sold-as-bundled.md`](fintxcode-notinvalid-sold-as-bundled.md) — only if fully valid 被写成已经 Code != 0 那种没进块 / 已经没索引 / 已经 fintxcode bundled（不变量 627）
 - [`fintxcode-notchecktx-sold-as-bundled.md`](fintxcode-notchecktx-sold-as-bundled.md) — only if fully valid 被写成已经 CheckTx 过了 / 已经 Process Accept / 已经 fintxcode bundled（不变量 626）
 - [`finmerkle-notquery-sold-as-bundled.md`](finmerkle-notquery-sold-as-bundled.md) — Query proofs anchored 被写成已经对上 AppHash / 已经是按键查 / 已经 finmerkle bundled（不变量 625）
