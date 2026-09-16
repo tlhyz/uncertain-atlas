@@ -1,3 +1,7 @@
+## 2026-09-16（续 697）
+
+- 不变量 565；语料 C557；模式 name-the-finfill-notrefill-bar；反模式 finfill-notrefill-sold-as-bundled；L10.3 第 549 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not no need to provide again 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 finfill unbundling 续（565）。
+
 ## 2026-09-16（续 696）
 
 - 不变量 564；语料 C556；模式 name-the-finfill-notdecprop-bar；反模式 finfill-notdecprop-sold-as-bundled；L10.3 第 548 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not decided/proposed interchangeable 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 fill all fields even if Prepare/Process passed unbundling 完成（562–564）。
