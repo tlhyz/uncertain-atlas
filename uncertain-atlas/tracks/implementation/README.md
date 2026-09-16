@@ -1,3 +1,4 @@
+- [`worked-example-finmorepre-notmorepre-vs-bundled.md`](worked-example-finmorepre-notmorepre-vs-bundled.md) — more precommits≠decided/479 fintrigger；≠finmorepre bundled/includes processing time/after committing（不变量 612）
 - [`worked-example-finmorepre-notproctime-vs-bundled.md`](worked-example-finmorepre-notproctime-vs-bundled.md) — includes processing time≠timeout_commit/wallclock；≠finmorepre bundled/more precommits/after committing（不变量 611）
 - [`worked-example-fintrigger-notdecides-vs-bundled.md`](worked-example-fintrigger-notdecides-vs-bundled.md) — decides block v≠at h will Finalize/persist outputs；≠fintrigger bundled/608/609（不变量 610）
 - [`worked-example-fintrigger-notprecommit-vs-bundled.md`](worked-example-fintrigger-notprecommit-vs-bundled.md) — 2f+1 precommit≠prevote ExtendVote/without parts；≠fintrigger bundled/decides block v（不变量 609）
