@@ -8,3 +8,9 @@
 | [`windows.yaml`](windows.yaml) | 窗口 | — | — | — | — | 上市日 / 回测窗 / 下不了的窗 |
 
 步长：±20U、200 格 → 40 / 199 ≈ **0.201 U**。代码锁在 `USER_*`（`../engine/README.md`）。
+
+`01_yours_moving_grid.yaml` 也能直接喂给 runner：
+
+```bash
+python3 soxl-lab/scripts/run_grid.py --config soxl-lab/params/01_yours_moving_grid.yaml --check
+```

@@ -36,11 +36,13 @@
 改 [`params/run.yaml`](params/run.yaml)，或命令行盖一层：
 
 ```bash
+python3 soxl-lab/scripts/run_grid.py --list-cache
+python3 soxl-lab/scripts/run_grid.py --check
 python3 soxl-lab/scripts/run_grid.py
 python3 soxl-lab/scripts/run_grid.py --leverage 3 --n-grids 80 --range-usdt 15
 ```
 
-说明：[`scripts/README.md`](scripts/README.md)。结果在 `results/runs/`。
+说明：[`scripts/README.md`](scripts/README.md)。结果在 `results/runs/`。逐笔 CSV 不进 git。
 
 ## 三个抽屉
 

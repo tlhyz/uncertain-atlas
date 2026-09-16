@@ -111,6 +111,45 @@ def trades_day_cache_path(symbol: str, day: date) -> Path:
     return CACHE_DIR / f"binance_futures_{sym}_aggTrades_{day.isoformat()}.csv"
 
 
+def list_cached_trade_days(symbol: str) -> list[date]:
+    """UTC dates that have a non-empty local aggTrades CSV (no download)."""
+    sym = normalize_symbol(symbol)
+    days: list[date] = []
+    for p in CACHE_DIR.glob(f"binance_futures_{sym}_aggTrades_*.csv"):
+        m = re.search(r"(\d{4}-\d{2}-\d{2})", p.name)
+        if not m:
+            continue
+        if p.stat().st_size <= 0:
+            continue
+        days.append(date.fromisoformat(m.group(1)))
+    return sorted(set(days))
+
+
+def missing_trade_days(symbol: str, start: date, end: date) -> list[date]:
+    have = set(list_cached_trade_days(symbol))
+    miss: list[date] = []
+    d = start
+    while d <= end:
+        if d not in have:
+            miss.append(d)
+        d += timedelta(days=1)
+    return miss
+
+
+def list_klines_cache_ranges(symbol: str, interval: str = "1h") -> list[tuple[date, date]]:
+    sym = normalize_symbol(symbol)
+    pat = re.compile(
+        rf"binance_futures_{re.escape(sym)}_{re.escape(interval)}_"
+        r"(?P<s>\d{4}-\d{2}-\d{2})_(?P<e>\d{4}-\d{2}-\d{2})_klines\.csv$"
+    )
+    out: list[tuple[date, date]] = []
+    for p in CACHE_DIR.glob(f"binance_futures_{sym}_{interval}_*_klines.csv"):
+        m = pat.match(p.name)
+        if m:
+            out.append((date.fromisoformat(m.group("s")), date.fromisoformat(m.group("e"))))
+    return sorted(out)
+
+
 def vision_zip_url(symbol: str, day: date) -> str:
     sym = normalize_symbol(symbol)
     return f"{VISION}/{sym}/{sym}-aggTrades-{day.isoformat()}.zip"

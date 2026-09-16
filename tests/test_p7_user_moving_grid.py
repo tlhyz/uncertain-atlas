@@ -5,7 +5,18 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from src.analysis.user_moving_grid import IsolatedDirBook, daily_pnl, run_user_hedge_pair, run_user_ls_pair, user_levels
+import pytest
+
+from src.analysis.user_moving_grid import (
+    IsolatedDirBook,
+    daily_pnl,
+    remap_lots,
+    run_user_hedge_pair,
+    run_user_ls_pair,
+    run_user_one_side,
+    simulate_user_dir_grid,
+    user_levels,
+)
 
 
 def test_usdt_levels_span_40():
@@ -90,3 +101,35 @@ def test_daily_pnl_first_day():
     eq = np.linspace(10_000, 10_200, 30)
     d = daily_pnl(ts, eq, 10_000.0)
     assert abs(float(d.iloc[0]["daily_pnl"]) - (eq[23] - 10_000)) < 1e-6 or len(d) >= 1
+
+
+def test_remap_lots_keeps_qty():
+    b = IsolatedDirBook(5_000.0, 5.0, 0.0002, "long")
+    old = user_levels(100.0, range_mode="usdt", range_usdt=20.0, n_grids=10)
+    b.open_lot(1.0, float(old[0]), 0)
+    assert abs(b.qty - 1.0) < 1e-12
+    new = user_levels(80.0, range_mode="usdt", range_usdt=20.0, n_grids=10)
+    remap_lots(b, old, new)
+    assert abs(sum(b.lots.values()) - 1.0) < 1e-12
+    assert abs(b.qty - 1.0) < 1e-12
+    assert b.lots
+
+
+def test_tick_without_get_trades_raises():
+    bars = _chop_bars(16)
+    with pytest.raises(ValueError, match="get_trades"):
+        simulate_user_dir_grid(bars, direction="long", fill_engine="tick", get_trades=None)
+
+
+def test_n_grids_must_be_two():
+    with pytest.raises(ValueError, match="n_grids"):
+        user_levels(100.0, n_grids=1)
+
+
+def test_one_side_long_bar():
+    bars = _chop_bars()
+    r = run_user_one_side(bars, direction="long", fill_engine="bar", fee_preset="base")
+    assert r["hedge_mode"] == "one_side"
+    assert r["liquidated_short"] is False
+    assert len(r["daily"]) >= 1
+    assert r["end_equity"] >= 0

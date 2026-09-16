@@ -501,3 +501,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T00:05Z | P1-12 + lab | 120d cache 05-15→09-11; soxl-lab drawers 01–04; Chinese dashboard
 2026-09-16T00:11Z | P7-07 | moving L+S hedge STOPPED 07-28; ±20U +15.6%/DD −6%; ±20% +6.2%/DD −9.7%; long liq both
 2026-09-16T00:20Z | P7-08 | soxl-lab/scripts/run_grid.py YAML+CLI tick runner; 10 tests + 1d tick smoke
+2026-09-16T00:30Z | P7-09 pass1 | check/cache/remap/YAML-0/sides; tests not yet run
