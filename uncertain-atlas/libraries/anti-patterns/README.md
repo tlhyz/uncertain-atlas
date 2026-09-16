@@ -1,3 +1,4 @@
+- [`finpersist-notoutputs-sold-as-bundled.md`](finpersist-notoutputs-sold-as-bundled.md) — calls FinalizeBlock 被写成已经 persist outputs / 已经 decides trigger / 已经 finpersist bundled（不变量 606）
 - [`finpersist-notpersist-sold-as-bundled.md`](finpersist-notpersist-sold-as-bundled.md) — persist decision 被写成已经 executes block v / 已经交差 / 已经 finpersist bundled（不变量 605）
 - [`finequiv-notnewdec-sold-as-bundled.md`](finequiv-notnewdec-sold-as-bundled.md) — FinalizeBlock equiv 被写成已经 Contains newly decided / 已经 Process 跑过就不用在 Finalize 再执行（不变量 604）
 - [`finequiv-notnoprep-sold-as-bundled.md`](finequiv-notnoprep-sold-as-bundled.md) — FinalizeBlock equiv 被写成已经没有 Prepare/Process / 已经 finequiv bundled（不变量 603）
