@@ -1,3 +1,4 @@
+- [`worked-example-finlock-vs-commitlock.md`](worked-example-finlock-vs-commitlock.md) — locks mempool≠交差；no CheckTx on new≠optional；persist后锁≠Commit锁（不变量 588）
 - [`worked-example-finreturn-vs-header.md`](worked-example-finreturn-vs-header.md) — returns AppHash≠印进本头；hashes ResultHash≠Code/Data 印进本头；persists≠Commit 落盘（不变量 587）
 - [`worked-example-finequiv-vs-abci1.md`](worked-example-finequiv-vs-abci1.md) — equiv≠四门已经结算；≠没有 Prepare/Process；≠含刚决定字段/Process 就不需要 Finalize（不变量 586）
 - [`worked-example-fintxcode-vs-invalid.md`](worked-example-fintxcode-vs-invalid.md) — Code==0 only if fully valid ≠ CheckTx 过了；≠ Code!=0 没进块；≠ Finalize 已交差（不变量 585）

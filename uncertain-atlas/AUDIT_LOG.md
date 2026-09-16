@@ -4671,6 +4671,11 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2682 | 高 | 看见 FinalizeBlockResponse.tx_results[i].Code == 0 only if the i-th transaction is fully valid / 看见回了 0 会被写成已经 CheckTx 过了，或当成已经 Process 回了 Accept | 官方 FinalizeBlock Usage：tx_results[i].Code == 0 only if the i-th transaction is fully valid |
 | A2683 | 高 | 看见 Code == 0 only if fully valid / 看见这笔完全合法 会被写成已经 Code != 0 那种没进块，或当成已经无效就不在块里 | 官方 FinalizeBlock Usage vs Transaction Results：Code != 0 still in block |
 | A2684 | 高 | 看见回了 tx_results / 看见有 Code 会被写成已经 Finalize 改了就已经交差，或当成已经 Code / Data 印进本头 LastResultsHash | 官方 FinalizeBlock Usage vs Transaction Results vs FinalizeBlock / Commit |
+| A2700 | 记录 | 会与 403 / 310 / 312 / 373 / 33 / 587 糊成「看见锁了内存池就已经交差、已经不能再收新交易、已经是 Commit 锁 / 已经 Recheck」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When locks mempool 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经交差 / 已经 CheckTx 技术上可选 / 已经是 Commit 锁 标成另一对象 |
+| A2699 | 中 | 怎样锁内存池、怎样再验、怎样解锁会被抄进不确定 | 不抄。不写怎样锁内存池。不另写 19 节 |
+| A2698 | 高 | 看见 locks mempool after persist 会被写成已经是 Commit 锁，或当成已经解锁 / 已经是 Recheck | 官方 FinalizeBlock When 第 7 步：locks mempool not Commit 锁 / unlock / Recheck |
+| A2697 | 高 | 看见 no calls to CheckTx on new transactions 会被写成已经 CheckTx 技术上可选，或当成已经进了池 / 已经开始流言 | 官方 FinalizeBlock When 第 7 步：no calls on new transactions not optional / already in pool |
+| A2696 | 高 | 看见 CometBFT locks the mempool 会被写成已经交差，或当成已经四门已经结算 | 官方 FinalizeBlock When 第 7 步：locks the mempool not settled |
 | A2695 | 记录 | 会与 362 / 403 / 404 / 316 / 147 糊成「看见回了 AppHash 和各笔输出就已经印进本头、已经交差、已经 Commit 落盘应用状态」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经印进本头 / 已经 Code Data 印进本头 / 已经 Commit 落盘应用状态 标成另一对象 |
 | A2694 | 中 | 怎样算 AppHash、怎样算 ResultHash、怎样落盘这三份会被抄进不确定 | 不抄。不写怎样算 AppHash。不另写 19 节 |
 | A2693 | 高 | 看见 CometBFT persists tx outputs / AppHash / ResultsHash 会被写成已经 Commit 落盘应用状态，或当成已经交差 | 官方 FinalizeBlock When 第 6 步：persists 这三份 not Commit 落盘应用状态 |
