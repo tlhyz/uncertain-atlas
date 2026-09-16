@@ -1,3 +1,4 @@
+- [`finmisbeh-notvoteinfo-sold-as-bundled.md`](finmisbeh-notvoteinfo-sold-as-bundled.md) — FinalizeBlock misbehavior not VoteInfo availability 被写成 bundled（不变量 569）
 - [`findecided-notproposed-sold-as-bundled.md`](findecided-notproposed-sold-as-bundled.md) — FinalizeBlock decided_last_commit from decided block not proposed_last_commit 被写成 bundled（不变量 568）
 - [`finreward-notslashed-sold-as-bundled.md`](finreward-notslashed-sold-as-bundled.md) — FinalizeBlock can use decided_last_commit + misbehavior to determine rewards not already slashed 被写成 bundled（不变量 567）
 - [`finfill-notcommitted-sold-as-bundled.md`](finfill-notcommitted-sold-as-bundled.md) — FinalizeBlock fill all fields not request complete means committed 被写成 bundled（不变量 566）

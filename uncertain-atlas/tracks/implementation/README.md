@@ -1,3 +1,4 @@
+- [`worked-example-finmisbeh-notvoteinfo-vs-bundled.md`](worked-example-finmisbeh-notvoteinfo-vs-bundled.md) — misbehavior fault list ≠ VoteInfo availability；≠ Process misbehavior already定奖惩；≠ Misbehavior.type already slashed（不变量 569）
 - [`worked-example-findecided-notproposed-vs-bundled.md`](worked-example-findecided-notproposed-vs-bundled.md) — decided block commit ≠ proposed commit；≠ local commit；≠ can use means slashed（不变量 568）
 - [`worked-example-finreward-notslashed-vs-bundled.md`](worked-example-finreward-notslashed-vs-bundled.md) — can use 定奖惩 ≠ slashed；≠ VoteInfo availability rewards；≠ already committed（不变量 567）
 - [`worked-example-finfill-notcommitted-vs-bundled.md`](worked-example-finfill-notcommitted-vs-bundled.md) — all fields / request complete ≠ committed；≠ finfields / finpersist；≠ apply candidate / 583 refill（不变量 566）
