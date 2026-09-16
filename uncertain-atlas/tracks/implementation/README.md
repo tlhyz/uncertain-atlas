@@ -1,3 +1,4 @@
+- [`worked-example-finmerkle-notthisheader-vs-bundled.md`](worked-example-finmerkle-notthisheader-vs-bundled.md) — optional Merkle root≠本头AppHash/交差；≠finmerkle bundled/next header/query（不变量 623）
 - [`worked-example-finharddet-notnondet-vs-bundled.md`](worked-example-finharddet-notnondet-vs-bundled.md) — MUST be deterministic≠delay nondet/交差；≠finharddet bundled/empty/hard-coded（不变量 622）
 - [`worked-example-finharddet-nothardcoded-vs-bundled.md`](worked-example-finharddet-nothardcoded-vs-bundled.md) — hard-coded≠Merkle root/交差；≠finharddet bundled/empty/deterministic（不变量 621）
 - [`worked-example-finharddet-notempty-vs-bundled.md`](worked-example-finharddet-notempty-vs-bundled.md) — may be empty≠没状态根/交差；≠finharddet bundled/hard-coded/deterministic（不变量 620）
