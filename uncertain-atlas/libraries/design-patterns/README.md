@@ -1,3 +1,4 @@
+- [`name-the-finreturn-bar.md`](name-the-finreturn-bar.md) — FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事（不变量 587）
 - [`name-the-finequiv-bar.md`](name-the-finequiv-bar.md) — FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事（不变量 586）
 - [`name-the-fintxcode-bar.md`](name-the-fintxcode-bar.md) — FinalizeBlock tx_results Code==0 完全合法正式三事（不变量 585）
 - [`name-the-finmisbeh-notvoteinfo-bar.md`](name-the-finmisbeh-notvoteinfo-bar.md) — FinalizeBlock misbehavior not VoteInfo availability 正式三事（不变量 569）
