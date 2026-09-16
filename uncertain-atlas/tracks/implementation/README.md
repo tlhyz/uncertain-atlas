@@ -1,3 +1,4 @@
+- [`worked-example-procfull-req8-notprepare-vs-bundled.md`](worked-example-procfull-req8-notprepare-vs-bundled.md) — Request 八栏齐 ≠ only Prepare txs；Request 八栏齐 ≠ only raw proposal；Request 八栏齐 ≠ only txs enough（不变量 548）
 - [`worked-example-procfull-notexecuted-vs-bundled.md`](worked-example-procfull-notexecuted-vs-bundled.md) — Contains all information ≠ already executed；Contains all information ≠ MAY execute committed；Contains all information ≠ read-only settled（不变量 547）
 - [`worked-example-proccand-readonly-notcommitted-vs-bundled.md`](worked-example-proccand-readonly-notcommitted-vs-bundled.md) — read-only not mutate committed；read-only not immediate execution committed；read-only not async can still Reject（不变量 546）
 - [`worked-example-proccand-mayexecute-notcommitted-vs-bundled.md`](worked-example-proccand-mayexecute-notcommitted-vs-bundled.md) — MAY fully execute not already committed；MAY execute not ExecuteTxState；MAY execute not ACCEPT already final（不变量 545）
