@@ -1,3 +1,4 @@
+- [`finresp-notgates-sold-as-bundled.md`](finresp-notgates-sold-as-bundled.md) — Finalize equiv 被写成已经四门已经结算 / 已经 finresp bundled（不变量 600）
 - [`finempty-notcparam-sold-as-bundled.md`](finempty-notcparam-sold-as-bundled.md) — empty consensus_param_updates keep current 被写成已经清掉参数 / 已经在 H+1 生效（不变量 599）
 - [`finempty-sold-as-noset.md`](finempty-sold-as-noset.md) — empty keep current 被写成 validator_updates 空则没有集合 / 已经改了集合（不变量 598）
 - [`finempty-notmustprovide-sold-as-bundled.md`](finempty-notmustprovide-sold-as-bundled.md) — empty keep current 被写成已经空着就没有 must provide 义务（不变量 597）
