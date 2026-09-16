@@ -1,3 +1,7 @@
+## 2026-09-16（续 739）
+
+- 不变量 622；语料 C599；模式 name-the-finharddet-notnondet-bar；反模式 finharddet-notnondet-sold-as-bundled；L10.3 第 591 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse MUST be deterministic not next_block_delay nondet / not 印进本头 / not finharddet bundled 正式三事（476 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。476 finharddet unbundling 完成（622 item 3）。
+
 ## 2026-09-16（续 738）
 
 - 不变量 621；语料 C598；模式 name-the-finharddet-nothardcoded-bar；反模式 finharddet-nothardcoded-sold-as-bundled；L10.3 第 590 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash may be hard-coded not Merkle root / not settled / not finharddet bundled 正式三事（476 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。476 finharddet unbundling 续（621 item 2）。

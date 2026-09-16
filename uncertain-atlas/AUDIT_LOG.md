@@ -1,3 +1,9 @@
+| A2870 | 记录 | 会与 476 / 589 / 470 / 147 / 620 / 621 糊成「看见 MUST be deterministic 就已经 next_block_delay 非确定 interchangeable、已经 settled interchangeable、已经 finharddet bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse MUST be deterministic not next_block_delay nondet / not 印进本头 / not finharddet bundled 正式三事（476 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。476 finharddet unbundling 完成（622 item 3） |
+| A2869 | 中 | 怎样挑空根、怎样写死常量、怎样测确定性会被抄进不确定 | 不抄。不写怎样测确定性。不另写 19 节 |
+| A2868 | 高 | 看见 MUST be deterministic 会被写成已经 finharddet bundled，或当成已经 620 notempty / 621 nothardcoded / 470 findet | 官方 FinalizeBlock Usage 476 item 3：not finharddet bundled / not 620 / not 621 |
+| A2867 | 高 | 看见 MUST be deterministic 会被写成已经 settled，或当成已经 147 apphash vs this block / 614 notheader / 580 findet not apphash | 官方 FinalizeBlock Usage 476 item 3：MUST be deterministic not 印进本头 / not 147 / not 580 |
+| A2866 | 高 | 看见 MUST be deterministic 会被写成 next_block_delay 非确定，或当成已经 589 fndelay / 618 notwallclock / 470 findet bundled | 官方 FinalizeBlock Usage 476 item 3：MUST be deterministic not next_block_delay nondet / not 589 / not 618 |
+
 | A2865 | 记录 | 会与 476 / 475 / 404 / 147 / 620 糊成「看见 may be hard-coded 就已经必须真是 Merkle root interchangeable、已经交差 interchangeable、已经 finharddet bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash may be hard-coded not Merkle root / not settled / not finharddet bundled 正式三事（476 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。476 finharddet unbundling 续（621 item 2） |
 | A2864 | 中 | 怎样写死常量、怎样测确定性会被抄进不确定 | 不抄。不写怎样写死常量。不另写 19 节 |
 | A2863 | 高 | 看见 may be hard-coded 会被写成已经 finharddet bundled，或当成已经 620 notempty / 622 notnondet / 470 findet | 官方 FinalizeBlock Usage 476 item 2：not finharddet bundled / not 620 / not 622 |
