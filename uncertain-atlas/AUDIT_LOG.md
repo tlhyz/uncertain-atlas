@@ -1,3 +1,9 @@
+| A2865 | 记录 | 会与 476 / 475 / 404 / 147 / 620 糊成「看见 may be hard-coded 就已经必须真是 Merkle root interchangeable、已经交差 interchangeable、已经 finharddet bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash may be hard-coded not Merkle root / not settled / not finharddet bundled 正式三事（476 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。476 finharddet unbundling 续（621 item 2） |
+| A2864 | 中 | 怎样写死常量、怎样测确定性会被抄进不确定 | 不抄。不写怎样写死常量。不另写 19 节 |
+| A2863 | 高 | 看见 may be hard-coded 会被写成已经 finharddet bundled，或当成已经 620 notempty / 622 notnondet / 470 findet | 官方 FinalizeBlock Usage 476 item 2：not finharddet bundled / not 620 / not 622 |
+| A2862 | 高 | 看见 may be hard-coded 会被写成已经交差，或当成已经 147 apphash vs this block / 614 notheader / 335 finpersist | 官方 FinalizeBlock Usage 476 item 2：may be hard-coded not settled / not 147 / not 614 |
+| A2861 | 高 | 看见 may also be hard-coded 会被写成必须真是 Merkle root，或当成已经 475 finmerkle / 404 finapphash / 392 initchain apphash | 官方 FinalizeBlock Usage 476 item 2：may be hard-coded not Merkle root / not 475 / not 404 |
+
 | A2860 | 记录 | 会与 476 / 404 / 475 / 147 / 621 糊成「看见 may be empty 就已经没有状态 interchangeable、已经交差 interchangeable、已经 finharddet bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash may be empty not no state root / not settled / not finharddet bundled 正式三事（476 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。476 finharddet unbundling 启动（620 item 1） |
 | A2859 | 中 | 怎样挑空根、怎样写死常量、怎样测确定性会被抄进不确定 | 不抄。不写怎样挑空根。不另写 19 节 |
 | A2858 | 高 | 看见 may be empty 会被写成已经 finharddet bundled，或当成已经 621 nothardcoded / 622 notnondet / 470 findet | 官方 FinalizeBlock Usage 476 item 1：not finharddet bundled / not 621 / not 622 |
