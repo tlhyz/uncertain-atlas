@@ -1,3 +1,4 @@
+- [`name-the-findecided-notproposed-bar.md`](name-the-findecided-notproposed-bar.md) — FinalizeBlock decided_last_commit from decided block not proposed_last_commit 正式三事（不变量 568）
 - [`name-the-finreward-notslashed-bar.md`](name-the-finreward-notslashed-bar.md) — FinalizeBlock can use decided_last_commit + misbehavior to determine rewards not already slashed 正式三事（不变量 567）
 - [`name-the-finfill-notcommitted-bar.md`](name-the-finfill-notcommitted-bar.md) — FinalizeBlock fill all fields not request complete means committed 正式三事（473 余量）（不变量 566）
 - [`name-the-finfill-notrefill-bar.md`](name-the-finfill-notrefill-bar.md) — FinalizeBlock fill all fields not no need to provide again 正式三事（473 余量）（不变量 565）
