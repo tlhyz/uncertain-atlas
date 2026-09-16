@@ -512,3 +512,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T02:45Z | P7-13 | grid_ext registry + extensions/ + --sweep; 40 tests; 1d bar sweep knobs bite; not a verdict
 2026-09-16T02:40Z | P1-15 | cache vs manifests: SOXL 120d + SOXS 61d on_disk; BTC/ETH/SOL/SNXX evicted; P1-16 blocked no auto-redownload
 2026-09-16T02:41Z | M-01 | pytest 214 passed, 1 skipped; pending=0; P0-01 still blocked on PR #8 merge
+2026-09-16T02:53Z | P7-14 | listing prefix 05-15→07-15 BAR +37.6%/+26.1% NOT a verdict; 3d tick +2.1% inventory drift; P7-15 pending full tick

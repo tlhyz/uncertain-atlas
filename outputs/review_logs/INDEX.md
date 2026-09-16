@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-16 | P7-14 listing-prefix BAR+3d tick | CONDITIONAL | outputs/review_logs/2026-09-16_P7-14_listing_prefix.md |
 | 2026-09-16 | P1-15 cache vs tick manifests | PASS | outputs/review_logs/2026-09-16_P1-15_cache_vs_manifests.md |
 | 2026-09-16 | P7-13 plugin registry + sweep | PASS | outputs/review_logs/2026-09-16_P7-13_extension_hooks.md |
 | 2026-09-16 | P7-12 knob smoke 1d tick | PASS | outputs/review_logs/2026-09-16_P7-12_knob_smoke.md |
