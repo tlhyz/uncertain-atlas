@@ -521,3 +521,4 @@ Append-only. Shows last activity without opening full review logs.
 2026-09-16T04:58Z | P7-20 | Q_SOXL_USER_GRID = NO; pytest 215 passed / 1 skipped; pending=0
 2026-09-16T05:10Z | timer | pending=0; PR #8 MERGEABLE no CI; P0-01 blocked; no new run
 2026-09-16T05:39Z | timer | pending=0; verify_three_passes --times 1 ok; skip duplicate experiment; P0-01 blocked
+2026-09-16T05:49Z | timer | pending=0; P0-01 blocked; Q_SOXL_USER_GRID=NO; no new run
