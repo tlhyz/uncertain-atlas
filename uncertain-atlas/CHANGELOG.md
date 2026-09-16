@@ -1,3 +1,7 @@
+## 2026-09-16（续 698）
+
+- 不变量 566；语料 C558；模式 name-the-finfill-notcommitted-bar；反模式 finfill-notcommitted-sold-as-bundled；L10.3 第 550 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not request complete means committed 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 finfill unbundling 续（566 item 3）。
+
 ## 2026-09-16（续 697）
 
 - 不变量 565；语料 C557；模式 name-the-finfill-notrefill-bar；反模式 finfill-notrefill-sold-as-bundled；L10.3 第 549 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not no need to provide again 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 finfill unbundling 续（565）。
@@ -437,10 +441,6 @@
 ## 2026-09-14（续 589）
 
 - 不变量 472；语料 C449；模式 name-the-finwhen-bar；反模式 finwhen-sold-as-bundled；L10.3 第 441 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calling ProcessProposal guarantee / 实现表 / 05b / 共识专题 / 停链面地图。472 finwhen parent bundled 启动。
-
-## 2026-09-14（续 588）
-
-- 不变量 569；语料 C448；模式 name-the-finfill-notcommitted-bar；反模式 finfill-notcommitted-sold-as-bundled；L10.3 第 440 条。填 L4.4 / CometBFT 档案 FinalizeBlock fill all fields not request complete means committed 正式三事（473 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。473 finfill unbundling 续（569 item 3）。473 三 slice 齐（567 / 568 / 569）。
 
 ## 2026-09-14（续 587）
 

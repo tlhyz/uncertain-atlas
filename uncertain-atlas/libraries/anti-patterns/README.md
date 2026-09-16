@@ -1,3 +1,4 @@
+- [`finfill-notcommitted-sold-as-bundled.md`](finfill-notcommitted-sold-as-bundled.md) — FinalizeBlock fill all fields not request complete means committed 被写成 bundled（不变量 566）
 - [`finfill-notrefill-sold-as-bundled.md`](finfill-notrefill-sold-as-bundled.md) — FinalizeBlock fill all fields not no need to provide again 被写成 bundled（不变量 565）
 - [`finfill-notdecprop-sold-as-bundled.md`](finfill-notdecprop-sold-as-bundled.md) — FinalizeBlock fill all fields not decided/proposed interchangeable 被写成 bundled（不变量 564）
 - [`finfill-notpassedran-sold-as-bundled.md`](finfill-notpassedran-sold-as-bundled.md) — FinalizeBlock fill all fields not passed means ran Process 被写成 bundled（不变量 563）

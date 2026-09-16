@@ -41,6 +41,6 @@
 
 - 怎样写 Finalize、怎样再填字段、怎样从 Prepare/Process 复制字段。
 - even if passed not field names match means ran Process。那是不变量 563（473 item 2 余量）。
-- all fields / request complete not committed。那是不变量 569（473 item 3 余量）。
+- all fields / request complete not committed。那是不变量 566（473 item 3 余量）。
 - FinalizeBlock fill all fields even if Prepare/Process passed bundled 三事。那是不变量 473。
 - Finalize 请求把字段再填一遍 not no need to provide again 正式三事（360 余量）。那是不变量 583。

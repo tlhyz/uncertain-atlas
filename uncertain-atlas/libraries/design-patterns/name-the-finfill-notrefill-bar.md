@@ -9,7 +9,7 @@
 
 1. **fill all fields not no need to provide again 不是 FinalizeBlock fill all fields even if Prepare/Process passed bundled：** 看见 will fill up all fields 不是已经不用再 Finalize，不是 473 finfill interchangeable / 583 not refill interchangeable / 568 not passed means ran Process interchangeable。
 2. **fill all fields not no need to provide again 不是 Finalize 时的 Process 保证 bundled：** 看见再填一遍 不是已经 at least one ran Process / persist decision，不是 360 bundled interchangeable / 582 not every validator interchangeable / 584 apply candidate interchangeable。
-3. **fill all fields not no need to provide again 不是 583 not refill：** 看见 Currently 不是已经 360 item 2 refill 单句 interchangeable，不是 583 not refill interchangeable / 407 finfields interchangeable / 569 not committed interchangeable。
+3. **fill all fields not no need to provide again 不是 583 not refill：** 看见 Currently 不是已经 360 item 2 refill 单句 interchangeable，不是 583 not refill interchangeable / 407 finfields interchangeable / 566 not committed interchangeable。
 
 ## 为什么要分开叫
 
