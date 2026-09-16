@@ -103,6 +103,7 @@ See `outputs/LIVE_CANDIDATES.md`.
 
 | Date | Change | Reason |
 |------|--------|--------|
+| 2026-09-16 | Daily audit; no verdict change | pending=0; PR #8 blocked; pytest 220/1 |
 | 2026-09-16 | W-04 restart_survivor 5x +271% FAIL | P7-19; 3 deaths; inv 14×; do not use |
 | 2026-09-16 | W-04 2.5x±20U survived +86%; cliff (2.5, 3] | P7-18; inv 2.30 short DD −90%; not live |
 | 2026-09-16 | W-04 cliff: 4x dies; 2x±20% −20.5% | P7-17; +70% is ±20U-only |
