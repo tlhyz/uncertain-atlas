@@ -1,3 +1,7 @@
+## 2026-09-16（续 738）
+
+- 不变量 621；语料 C598；模式 name-the-finharddet-nothardcoded-bar；反模式 finharddet-nothardcoded-sold-as-bundled；L10.3 第 590 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash may be hard-coded not Merkle root / not settled / not finharddet bundled 正式三事（476 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。476 finharddet unbundling 续（621 item 2）。
+
 ## 2026-09-16（续 737）
 
 - 不变量 620；语料 C597；模式 name-the-finharddet-notempty-bar；反模式 finharddet-notempty-sold-as-bundled；L10.3 第 589 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse app_hash may be empty not no state root / not settled / not finharddet bundled 正式三事（476 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。476 finharddet unbundling 启动（620 item 1）。

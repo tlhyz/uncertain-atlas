@@ -1,3 +1,4 @@
+- [`finharddet-nothardcoded-sold-as-bundled.md`](finharddet-nothardcoded-sold-as-bundled.md) — may be hard-coded 被写成必须真是 Merkle root / 已经交差 / 已经 finharddet bundled（不变量 621）
 - [`finharddet-notempty-sold-as-bundled.md`](finharddet-notempty-sold-as-bundled.md) — may be empty 被写成已经没有状态 / 已经交差 / 已经 finharddet bundled（不变量 620）
 - [`fndelay-notsetzero-sold-as-bundled.md`](fndelay-notsetzero-sold-as-bundled.md) — Set to 0 被写成已经决定 / 已经块间隔 / 已经 fndelay bundled（不变量 619）
 - [`fndelay-notwallclock-sold-as-bundled.md`](fndelay-notwallclock-sold-as-bundled.md) — each node MAY / wallclock 被写成已经 app_hash MUST be deterministic / 已经整门非确定 / 已经 fndelay bundled（不变量 618）
