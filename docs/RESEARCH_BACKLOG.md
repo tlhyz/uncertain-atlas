@@ -149,7 +149,7 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 | P7-12 | 1d tick smoke: default vs geometric vs fee_bps=4 | **done** | knobs move path; 1d not a verdict — outputs/review_logs/2026-09-16_P7-12_knob_smoke.md |
 | P7-13 | Plugin registry + sweep + extensions dir | **done** | outputs/review_logs/2026-09-16_P7-13_extension_hooks.md |
 | P7-14 | Listing-prefix 2026-05-15→07-15 user flatten hedge (new days) | **done** | BAR +37%/+26% **not a verdict**; 3d tick +2.1% — outputs/review_logs/2026-09-16_P7-14_listing_prefix.md |
-| P7-15 | Listing-prefix 62d **TICK** flatten hedge (05-15→07-15) | pending | P7-14 BAR only; do not quote BAR |
+| P7-15 | Listing-prefix 62d **TICK** flatten hedge (05-15→07-15) | **done** | **STOPPED** 05-26 short liq; ±20U +39.3% then 50 zero days; 120d no restart — outputs/review_logs/2026-09-16_P7-15_listing_prefix_tick.md |
 
 ---
 
