@@ -6,8 +6,10 @@
     "start": "2026-05-15",
     "end": "2026-09-11",
     "days": 120,
+    "rows": 62409315,
     "gaps": [],
-    "bytes": 3265883206
+    "bytes": 3265883206,
+    "manifest": "data/manifests/binance_SOXLUSDT_aggTrades_2026-05-15_2026-09-11.json"
   },
   "audited_p7_window": {
     "start": "2026-07-15",

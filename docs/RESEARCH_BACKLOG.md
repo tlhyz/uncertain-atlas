@@ -27,6 +27,7 @@ Status: `pending` | `in_progress` | `done` | `blocked` | `failed` | `cancelled`
 | P1-02 | Download SOXLUSDT aggTrades (detect earliest) | done | local 59d 2026-07-15→09-11; Vision listing **2026-05-15** |
 | P1-12 | Download remaining Vision SOXL 2026-05-15→07-14 | **done** | 61 prefix days + 6 gap; local **120d** 2026-05-15→09-11 0 gaps — outputs/review_logs/2026-09-16_P1-12_soxl_listing_prefix_PASS.md |
 | P1-13 | Validate listing-length SOXL 1h (2866) vs cached ticks | **done** | **2866/2866** hours; p99 close err 1.8e-4 — outputs/review_logs/2026-09-16_P1-13_listing_tick_coverage_PASS.md |
+| P1-14 | Manifest SOXL aggTrades 2026-05-15→09-11 (120d sha256) | **done** | 120d / 62,409,315 rows / 0 gaps — outputs/review_logs/2026-09-16_P1-14_soxl_listing_manifest_PASS.md |
 | P1-03 | Download SNXXUSDT aggTrades (detect earliest) | done | 65 days |
 | P1-04 | Run `build_manifest.py` + sha256 all files | done | data/manifests/*.json |
 | P1-05 | Validate every SOXL bar has aggTrades | done | 1560/1560 |
