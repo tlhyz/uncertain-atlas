@@ -1,3 +1,4 @@
+- [`name-the-finlock-notoptional-bar.md`](name-the-finlock-notoptional-bar.md) — FinalizeBlock When no calls to CheckTx on new transactions not CheckTx optional / not already in pool / not finlock bundled 正式三事（588 余量）（不变量 630）
 - [`name-the-finlock-notsettled-bar.md`](name-the-finlock-notsettled-bar.md) — FinalizeBlock When locks mempool not already settled / not four gates settled / not finlock bundled 正式三事（588 余量）（不变量 629）
 - [`name-the-fintxcode-notsettled-bar.md`](name-the-fintxcode-notsettled-bar.md) — FinalizeBlockResponse tx_results returned not Finalize changed already settled / not Code Data printed in this header LastResultsHash / not fintxcode bundled 正式三事（585 余量）（不变量 628）
 - [`name-the-fintxcode-notinvalid-bar.md`](name-the-fintxcode-notinvalid-bar.md) — FinalizeBlockResponse tx_results Code==0 only if fully valid not Code != 0 still in block / not no index / not fintxcode bundled 正式三事（585 余量）（不变量 627）

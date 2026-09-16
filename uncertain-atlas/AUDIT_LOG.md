@@ -1,3 +1,9 @@
+| A2910 | 记录 | 会与 588 / 373 / 312 / 33 / 629 / 631 糊成「看见 no calls on new transactions 就已经 CheckTx 可选 interchangeable、已经进池 interchangeable、已经 finlock bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When no calls to CheckTx on new transactions not CheckTx optional / not already in pool / not finlock bundled 正式三事（588 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。588 finlock unbundling 续（630 item 2） |
+| A2909 | 中 | 怎样锁内存池、怎样再验、怎样解锁 会被抄进不确定 | 不抄。不写怎样锁内存池。不另写 19 节 |
+| A2908 | 高 | 看见 no calls on new transactions 会被写成已经 finlock bundled，或当成已经 629 notsettled / 631 notcommitlock / 588 finlock item 1 / item 3 | 官方 FinalizeBlock When step 7 588 item 2：not finlock bundled / not 629 / not 631 |
+| A2907 | 高 | 看见 no calls on new transactions 会被写成已经进池，或当成已经 33 four gates / 301 mempool / 339 checktxweak | 官方 FinalizeBlock When step 7 588 item 2：not already in pool / not 33 / not gossiped |
+| A2906 | 高 | 看见 no calls on new transactions 会被写成已经 CheckTx 可选，或当成已经 373 checktxopt / 312 checktxopt / 313 checktxguard | 官方 FinalizeBlock When step 7 588 item 2：not CheckTx optional / not 373 |
+
 | A2905 | 记录 | 会与 588 / 403 / 33 / 602 / 630 / 631 糊成「看见 locks the mempool 就已经交差 interchangeable、已经四门已经结算 interchangeable、已经 finlock bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlock When locks mempool not already settled / not four gates settled / not finlock bundled 正式三事（588 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。588 finlock unbundling 启动（629 item 1） |
 | A2904 | 中 | 怎样锁内存池、怎样再验、怎样解锁 会被抄进不确定 | 不抄。不写怎样锁内存池。不另写 19 节 |
 | A2903 | 高 | 看见 locks the mempool 会被写成已经 finlock bundled，或当成已经 630 notoptional / 631 notcommitlock / 373 checktxopt / 310 commitlock | 官方 FinalizeBlock When step 7 588 item 1：not finlock bundled / not 630 / not 631 |
