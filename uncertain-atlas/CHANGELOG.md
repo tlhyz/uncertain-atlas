@@ -1,3 +1,7 @@
+## 2026-09-16（续 736）
+
+- 不变量 619；语料 C596；模式 name-the-fndelay-notsetzero-bar；反模式 fndelay-notsetzero-sold-as-bundled；L10.3 第 588 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay Set to 0 not decided / not block interval / not fndelay bundled 正式三事（589 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。589 fndelay unbundling 完成（619 item 3）。
+
 ## 2026-09-16（续 735）
 
 - 不变量 618；语料 C595；模式 name-the-fndelay-notwallclock-bar；反模式 fndelay-notwallclock-sold-as-bundled；L10.3 第 587 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay each node MAY / wallclock not app_hash MUST be deterministic / not whole response nondeterministic 正式三事（589 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。589 fndelay unbundling 续（618 item 2）。

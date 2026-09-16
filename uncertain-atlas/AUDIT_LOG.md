@@ -1,3 +1,9 @@
+| A2855 | 记录 | 会与 589 / 362 / 385 / 617 / 618 糊成「看见 set to 0 就已经决定 interchangeable、已经块间隔 interchangeable、已经 fndelay bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay Set to 0 not decided / not block interval / not fndelay bundled 正式三事（589 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。589 fndelay unbundling 完成（619 item 3） |
+| A2854 | 中 | 怎样填 next_block_delay、怎样抄规范 1s 会被抄进不确定 | 不抄。不写怎样填 next_block_delay。不另写 19 节 |
+| A2853 | 高 | 看见 set to 0 会被写成已经 fndelay bundled，或当成已经 617 notslot / 618 notwallclock / 480 finmorepre | 官方 FinalizeBlock Usage 589 item 3：not fndelay bundled / not 617 / not 618 |
+| A2852 | 高 | 看见 set to 0 会被写成已经块间隔，或当成已经 385 block interval / 613 notaftercommit / 593 finh1 | 官方 FinalizeBlock Usage 589 item 3：Set to 0 not block interval / not 385 / not 613 |
+| A2851 | 高 | 看见 Set to 0 when all precommits and block processed 会被写成已经决定，或当成已经 362 finwhen / 610 notdecides / 479 fintrigger | 官方 FinalizeBlock Usage 589 item 3：Set to 0 not decided / not 362 / not 610 |
+
 | A2850 | 记录 | 会与 589 / 470 / 476 / 617 / 619 糊成「看见 MAY 回不同值 就已经 app_hash MUST be deterministic interchangeable、已经整门非确定 interchangeable、已经 fndelay bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse next_block_delay each node MAY / wallclock not app_hash MUST be deterministic / not whole response nondeterministic 正式三事（589 余量）/ 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。589 fndelay unbundling 续（618 item 2） |
 | A2849 | 中 | 怎样填 next_block_delay、怎样配 NTP、怎样抄规范 1s 会被抄进不确定 | 不抄。不写怎样配 NTP。不另写 19 节 |
 | A2848 | 高 | 看见 MAY / wallclock 会被写成已经 fndelay bundled，或当成已经 617 notslot / 619 notsetzero / 611 notproctime | 官方 FinalizeBlock Usage 589 item 2：not fndelay bundled / not 617 / not 619 |
