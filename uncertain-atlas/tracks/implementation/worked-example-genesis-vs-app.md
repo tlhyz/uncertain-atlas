@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「创世已经齐」，必须分开应用段是不是已经验过、进程起来是不是已经开出块、空名单是不是已经没有集合。可以跳过「看见创世文件就已经验过应用」。不要另写怎样填创世字段或怎样调 InitChain。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「创世已经齐」，必须分开应用段是不是已经验过、进程起来是不是已经开出块、空名单是不是已经没有集合。可以跳过「看见创世文件就已经验过应用」。不要另写怎样填创世字段或怎样调 InitChain。303 genesis vs app bundled unbundling 完成（986 item 1 / 987 item 2 / 988 item 3）；精读 [`worked-example-genesis-notapp-vs-bundled.md`](worked-example-genesis-notapp-vs-bundled.md)（不变量 986 item 1）。
 
 ## 本页不抄
 

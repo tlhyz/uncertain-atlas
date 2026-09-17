@@ -1,3 +1,6 @@
+- [`genesis-notset-sold-as-bundled.md`](genesis-notset-sold-as-bundled.md) — 空名单 被写成已经没有集合 / 已经没有状态根 / 已经交差（不变量 988）
+- [`genesis-nottime-sold-as-bundled.md`](genesis-nottime-sold-as-bundled.md) — 进程起来 被写成已经开出块 / 已经过了创世时间 / 已经交差（不变量 987）
+- [`genesis-notapp-sold-as-bundled.md`](genesis-notapp-sold-as-bundled.md) — 创世 app_state 被写成已经验过 / 已经懂余额 / 已经交差（不变量 986）
 - [`stategossip-notspec-sold-as-bundled.md`](stategossip-notspec-sold-as-bundled.md) — 落盘或查询接口 被写成已经进了规范 / 已经能在网上对上 / 已经交差（不变量 985）
 - [`stategossip-notroot-sold-as-bundled.md`](stategossip-notroot-sold-as-bundled.md) — 头上的根 被写成已经有了 State / 已经流言过对象 / 已经交差（不变量 984）
 - [`stategossip-notblock-sold-as-bundled.md`](stategossip-notblock-sold-as-bundled.md) — 本地 State 被写成已经进了块 / 已经流言 / 已经交差（不变量 983）

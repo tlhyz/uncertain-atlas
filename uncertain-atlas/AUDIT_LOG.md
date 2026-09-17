@@ -1,3 +1,18 @@
+| A4700 | 记录 | 会与 303 / 318 / 300 / 986 / 987 糊成「看见空名单就已经没有集合 interchangeable、就已经没有状态根 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 空名单 / 空根 not already no-set / not already no-root / not already settled 正式三事（303 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。303 genesis vs app bundled unbundling 完成（988 item 3） |
+| A4701 | 高 | 看见空名单 会被写成已经没有集合 interchangeable | 官方 Genesis item 3：not already no-set |
+| A4702 | 高 | 看见根空 会被写成已经没有状态根 interchangeable | 官方 Genesis item 3：not already no-root |
+| A4703 | 高 | 看见 InitChain 被叫了 会被写成已经交差 interchangeable | 官方 Genesis item 3：not already settled |
+| A4704 | 中 | 怎样填创世会被抄进不确定 | 不抄。不写怎样填创世字段或怎样调 InitChain。不另写 19 节 |
+| A4695 | 记录 | 会与 303 / 147 / 300 / 986 / 988 糊成「看见进程起来就已经开出块 interchangeable、就已经过了创世时间 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 进程起来 not already past-genesis-time / not already handshake-ready / not already settled 正式三事（303 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。303 genesis vs app bundled unbundling 续（987 item 2） |
+| A4696 | 高 | 看见进程起来 会被写成已经开出块 interchangeable | 官方 Genesis item 2：not already past-genesis-time |
+| A4697 | 高 | 看见握手过了 会被写成已经过了创世时间 interchangeable | 官方 Genesis item 2：not already handshake-ready |
+| A4698 | 高 | 看见本机钟到了 会被写成已经交差 interchangeable | 官方 Genesis item 2：not already settled |
+| A4699 | 中 | 怎样填创世会被抄进不确定 | 不抄。不写怎样填创世字段或怎样调 InitChain。不另写 19 节 |
+| A4690 | 记录 | 会与 303 / 38 / 300 / 987 / 988 糊成「看见创世文件就已经验过 interchangeable、就已经懂余额 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 创世 app_state not already app-verified / not already understood / not already settled 正式三事（303 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。303 genesis vs app bundled unbundling 启动（986 item 1） |
+| A4691 | 高 | 看见创世 app_state 会被写成已经验过 interchangeable / 38 interchangeable | 官方 Genesis item 1：not already app-verified / not 38 |
+| A4692 | 高 | 看见引擎收下了 会被写成已经懂余额 interchangeable | 官方 Genesis item 1：not already understood |
+| A4693 | 高 | 看见有 app_state 会被写成已经交差 interchangeable | 官方 Genesis item 1：not already settled |
+| A4694 | 中 | 怎样填创世会被抄进不确定 | 不抄。不写怎样填创世字段或怎样调 InitChain。不另写 19 节 |
 | A4685 | 记录 | 会与 300 / 56 / 148 / 983 / 984 糊成「看见能读本地 State 就已经进了规范 interchangeable、就已经能在网上对上 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 落盘或查询接口 not already in-spec / not already network-aligned / not already settled 正式三事（300 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。300 state vs gossip bundled unbundling 完成（985 item 3） |
 | A4686 | 高 | 看见落盘或查询接口 会被写成已经进了规范 interchangeable | 官方 State item 3：not already in-spec |
 | A4687 | 高 | 看见落盘了 会被写成已经能在网上对上 interchangeable | 官方 State item 3：not already network-aligned |

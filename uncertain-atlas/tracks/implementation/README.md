@@ -124,6 +124,9 @@
 - [`worked-example-stategossip-notroot-vs-bundled.md`](worked-example-stategossip-notroot-vs-bundled.md) — 头上的根≠already have-State/gossiped-object/settled；≠300 bundled（不变量 984）
 - [`worked-example-stategossip-notblock-vs-bundled.md`](worked-example-stategossip-notblock-vs-bundled.md) — 本地State≠already in-block/gossiped/settled；≠300 bundled（不变量 983）
 - [`worked-example-state-vs-gossip.md`](worked-example-state-vs-gossip.md) — 本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State；能读本地 State ≠ 已经进了规范（不变量 300）
+- [`worked-example-genesis-notset-vs-bundled.md`](worked-example-genesis-notset-vs-bundled.md) — 空名单≠already no-set/no-root/settled；≠303 bundled（不变量 988）
+- [`worked-example-genesis-nottime-vs-bundled.md`](worked-example-genesis-nottime-vs-bundled.md) — 进程起来≠already past-genesis-time/handshake-ready/settled；≠303 bundled（不变量 987）
+- [`worked-example-genesis-notapp-vs-bundled.md`](worked-example-genesis-notapp-vs-bundled.md) — 创世app_state≠already app-verified/understood/settled；≠303 bundled（不变量 986）
 - [`worked-example-genesis-vs-app.md`](worked-example-genesis-vs-app.md) — 创世 app_state ≠ 已经验过应用状态；进程起来 ≠ 已经过了 genesis_time；空 validators ≠ 已经没有集合（不变量 303）
 - [`worked-example-abci-conn-notgates-vs-bundled.md`](worked-example-abci-conn-notgates-vs-bundled.md) — 一条连接≠already enough/four-gates/settled；≠307 bundled（不变量 979）
 - [`worked-example-abci-conn-notfast-vs-bundled.md`](worked-example-abci-conn-notfast-vs-bundled.md) — gRPC最容易≠already fast/no-overhead/settled；≠307 bundled（不变量 978）

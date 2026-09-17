@@ -1,3 +1,9 @@
+| C966 | 988 | genesis notset≠318/303 | 文案把空名单 / 空 app_hash 写成已经没有集合 interchangeable 或已经和 318 interchangeable / 988 genesis-notset interchangeable；或把看见根空 写成已经没有状态根 interchangeable；或把看见 InitChain 被叫了 写成已经交差 interchangeable，或已经和 303 genesis-vs-app bundled / genesis-notset-sold-as-bundled interchangeable / 986 genesis-notapp interchangeable / 987 genesis-nottime interchangeable |
+
+| C965 | 987 | genesis nottime≠147/303 | 文案把进程起来 / 节点已经启动 写成已经开出块 interchangeable 或已经和 147 interchangeable / 987 genesis-nottime interchangeable；或把看见握手过了 写成已经过了创世时间 interchangeable；或把看见本机钟到了 写成已经交差 interchangeable，或已经和 303 genesis-vs-app bundled / genesis-nottime-sold-as-bundled interchangeable / 986 genesis-notapp interchangeable / 988 genesis-notset interchangeable |
+
+| C964 | 986 | genesis notapp≠38/303 | 文案把创世 app_state / 引擎收下这份创世 写成已经验过 interchangeable 或已经和 38 interchangeable / 986 genesis-notapp interchangeable；或把看见引擎收下了 写成已经懂余额 interchangeable；或把看见有 app_state 写成已经交差 interchangeable，或已经和 303 genesis-vs-app bundled / genesis-notapp-sold-as-bundled interchangeable / 987 genesis-nottime interchangeable / 988 genesis-notset interchangeable |
+
 | C963 | 985 | stategossip notspec≠56/300 | 文案把落盘或查询接口 / 能读本地 State 写成已经进了规范 interchangeable 或已经和 56 interchangeable / 985 stategossip-notspec interchangeable；或把看见落盘了 写成已经能在网上对上 interchangeable；或把看见查询回了字段 写成已经交差 interchangeable，或已经和 300 state-vs-gossip bundled / stategossip-notspec-sold-as-bundled interchangeable / 983 stategossip-notblock interchangeable / 984 stategossip-notroot interchangeable |
 
 | C962 | 984 | stategossip notroot≠38/300 | 文案把头上的根 / 验证者根或结果根 写成已经有了 State interchangeable 或已经和 38 interchangeable / 984 stategossip-notroot interchangeable；或把看见根对上了 写成已经流言过对象 interchangeable；或把看见头上有根 写成已经交差 interchangeable，或已经和 300 state-vs-gossip bundled / stategossip-notroot-sold-as-bundled interchangeable / 983 stategossip-notblock interchangeable / 985 stategossip-notspec interchangeable |

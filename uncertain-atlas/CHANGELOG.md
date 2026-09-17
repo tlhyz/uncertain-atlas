@@ -1,3 +1,15 @@
+## 2026-09-17（续 1105）
+
+- 不变量 988；语料 C966；模式 name-the-genesis-notset-bar；反模式 genesis-notset-sold-as-bundled；L10.3 第 957 条。填 L4.4 / CometBFT 档案 空名单 / 空根 not already no-set / not already no-root / not already settled 正式三事（303 余量）。303 genesis vs app bundled unbundling 完成（988 item 3）。
+
+## 2026-09-17（续 1104）
+
+- 不变量 987；语料 C965；模式 name-the-genesis-nottime-bar；反模式 genesis-nottime-sold-as-bundled；L10.3 第 956 条。填 L4.4 / CometBFT 档案 进程起来 not already past-genesis-time / not already handshake-ready / not already settled 正式三事（303 余量）。303 genesis vs app bundled unbundling 续（987 item 2）。
+
+## 2026-09-17（续 1103）
+
+- 不变量 986；语料 C964；模式 name-the-genesis-notapp-bar；反模式 genesis-notapp-sold-as-bundled；L10.3 第 955 条。填 L4.4 / CometBFT 档案 创世 app_state not already app-verified / not already understood / not already settled 正式三事（303 余量）。303 genesis vs app bundled unbundling 启动（986 item 1）。
+
 ## 2026-09-17（续 1102）
 
 - 不变量 985；语料 C963；模式 name-the-stategossip-notspec-bar；反模式 stategossip-notspec-sold-as-bundled；L10.3 第 954 条。填 L4.4 / CometBFT 档案 落盘或查询接口 not already in-spec / not already network-aligned / not already settled 正式三事（300 余量）。300 state vs gossip bundled unbundling 完成（985 item 3）。

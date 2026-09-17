@@ -1,3 +1,6 @@
+- [`name-the-genesis-notset-bar.md`](name-the-genesis-notset-bar.md) — 空名单 / 空根 not already no-set / not already no-root / not already settled 正式三事（303 余量）（不变量 988）
+- [`name-the-genesis-nottime-bar.md`](name-the-genesis-nottime-bar.md) — 进程起来 not already past-genesis-time / not already handshake-ready / not already settled 正式三事（303 余量）（不变量 987）
+- [`name-the-genesis-notapp-bar.md`](name-the-genesis-notapp-bar.md) — 创世 app_state not already app-verified / not already understood / not already settled 正式三事（303 余量）（不变量 986）
 - [`name-the-stategossip-notspec-bar.md`](name-the-stategossip-notspec-bar.md) — 落盘或查询接口 not already in-spec / not already network-aligned / not already settled 正式三事（300 余量）（不变量 985）
 - [`name-the-stategossip-notroot-bar.md`](name-the-stategossip-notroot-bar.md) — 头上的根 not already have-State / not already gossiped-object / not already settled 正式三事（300 余量）（不变量 984）
 - [`name-the-stategossip-notblock-bar.md`](name-the-stategossip-notblock-bar.md) — 本地 State not already in-block / not already gossiped / not already settled 正式三事（300 余量）（不变量 983）
