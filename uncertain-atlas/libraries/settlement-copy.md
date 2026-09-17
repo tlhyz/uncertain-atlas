@@ -30,3 +30,13 @@ Y 必须来自 `tracks/finality/` 已有行，或一条新的、写进规范的�
 ## 与决策列的关系
 
 文案选定 Y，仍不等于共识算法已定。可以先规定「产品只使用一种 Y」，再在 L10.1 记录里选实现 Y 的引擎。
+
+**2026-09-17 建议档对齐（非选型）：**
+
+| 来源 | 建议的 Y |
+|---|---|
+| [`decision-matrix/consensus.md`](decision-matrix/consensus.md) | BFT **commit 高度** + 该高度 **AppHash** |
+| [`threat-model/assets.md`](threat-model/assets.md) S10 / S2 | 只承认一种最终性对象；分区倾向停，不把两边长当到账 |
+| [`threat-model/boundaries.md`](threat-model/boundaries.md) | RPC 绿勾 / 付款 URI 不是 Y |
+
+若产品句写「commit 了」，必须能指出：是哪一高、AppHash 是否已印进**下一**块头（不变量 147：本头 AppHash ≠ 本块已交差）。

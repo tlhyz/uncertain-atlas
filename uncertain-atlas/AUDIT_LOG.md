@@ -5567,4 +5567,6 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 
 
-未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+| A2190 | 记录 | 2026-09-17 复审循环：REVIEW_LOOP + review_audit + 小时定时器协议；威胁模型 v1 三页；决策矩阵建议档已对齐 settlement-copy；corpus runner v0；永久过滤器声明 | 不写 19 节凑数。不选型。不出题。不改 qtb。Goal 保持 active |
+
+未做：写出题、填 CPU、最终选型、改交易代码。runner v0 已建。用户未答 exams/。Goal 保持 active。

@@ -99,8 +99,11 @@
 | 日期 | 完成项 |
 |---|---|
 | 2026-09-17 | ROADMAP；ARCHITECTURE 更新；index/05；决策矩阵建议档；tools/adversarial_runner.py v0 |
+| 2026-09-17 | REVIEW_LOOP.md + review_audit.py；小时定时器协议；威胁模型 v1（INDEX/actors/assets/boundaries） |
+| 2026-09-17 | P1-2 settlement-copy 对齐；P1-4 pytest 钩子；P2 永久过滤器声明 |
 
-下一批默认：**P1-1 威胁模型 v1** + **P1-3 ABCI++ 677+**（继续 cometbft 拆句流水线）。
+下一批默认：**P1-3 ABCI++ 不变量 677+**（继续 cometbft 拆句）。  
+唤醒后先跑 `python3 tools/review_audit.py`，见 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
 ---
 

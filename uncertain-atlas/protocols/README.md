@@ -35,3 +35,16 @@
 | Starknet | [starknet/](starknet/README.md) | 仅过滤器页（SNOS 程序哈希 + 四档最终性） |
 
 其余第 8 波：有状态 HBS 思想已入 `tracks/post-quantum/stateful-hbs.md`。其它「PQ 品牌链」仍先过过滤器。
+
+## 永久过滤器（2026-09-17 声明）
+
+下列对象**故意不写 19 节**，直到 L10.1 记录要求升级。过滤器页 + 对应不变量即完成标准。禁止为凑数而扩档。
+
+| 对象 | 为何停在过滤器 | 升级条件 |
+|---|---|---|
+| Cardano | 仅 eUTXO 思想；见 L2.5 / 不变量 150 | 第一版要附件 datum 再开 19 节 |
+| Babylon | k-deep ≠ commit（139） | 不确定要锁 BTC 再开 |
+| EigenLayer | AVS ≠ Casper（140） | 不确定要 restake 再开 |
+| QRL | 只对照 XMSS/OTS | PQ 账本测完再决定是否扩 |
+| Monad | 先定序再 Apply | 吞吐专题需要对照实现时再开 |
+| Starknet | 四档最终性过滤器（138） | 有效性证明进 v1 再开（默认不要） |

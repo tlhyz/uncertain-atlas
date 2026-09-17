@@ -3,6 +3,7 @@
 | 工具 | 用途 | 状态 |
 |---|---|---|
 | [`adversarial_runner.py`](adversarial_runner.py) | 解析 / 校验 `libraries/adversarial-corpus/` | v0 可用 |
+| [`review_audit.py`](review_audit.py) | 复审清单 → `REVIEW_REPORT.md` | v0 可用 |
 
 ```bash
 cd uncertain-atlas

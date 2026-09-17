@@ -75,7 +75,8 @@ index 看路
 | tracks | 16 专题；failure-museum 92+ 案；implementation 精读 ABCI++ | ~470 文件 |
 | libraries | design-patterns ~540；anti-patterns ~650；invariants ~676；corpus C653+ | 见 [`index/03-knowledge-assets.md`](index/03-knowledge-assets.md) |
 | decision-matrix | 对照列完整；**不确定候选列**填建议档（非最终选型） | 2 表 |
-| threat-model | 草稿；Phase 1 补 v1 | 进行中 |
+| threat-model | **v1 入口已立**：[`libraries/threat-model/INDEX.md`](libraries/threat-model/INDEX.md)；README 仍是 sold-as 活页 | v1 |
+| review loop | [`REVIEW_LOOP.md`](REVIEW_LOOP.md) + `tools/review_audit.py` + 小时定时器 | 已启用 |
 | tools | adversarial_runner v0 | [`tools/`](tools/README.md) |
 | exams | L0 题已迁入，暂不考 | 后置 |
 

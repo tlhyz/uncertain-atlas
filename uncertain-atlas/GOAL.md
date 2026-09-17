@@ -100,8 +100,9 @@ K 出题一律进 `exams/`，不阻塞写作。
 ## 审核与防停止
 
 1. 每批材料按本目标审核，写入 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
-2. 定时器每小时唤醒：缺件就补知识，不写出题打扰，不碰交易代码。
-3. 定时器过期必须续订。Goal 在图谱主体写完前保持 active。
+2. **复审循环：** 先读 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)，再跑 `python3 tools/review_audit.py`，按 [`REVIEW_REPORT.md`](REVIEW_REPORT.md) 继续 [`ROADMAP.md`](ROADMAP.md)。
+3. 定时器每小时唤醒：缺件就补知识，不写出题打扰，不碰交易代码。订阅名 `uncertain-atlas-hourly-review`。
+4. 定时器过期必须续订。Goal 在图谱主体写完前保持 active。用户未要求停止前不得 complete。
 
 ---
 

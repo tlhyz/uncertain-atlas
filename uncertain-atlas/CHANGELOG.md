@@ -1,3 +1,10 @@
+## 2026-09-17（复审循环）
+
+- 新增 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)、[`tools/review_audit.py`](tools/review_audit.py)；GOAL 防停止节指向小时定时器 `uncertain-atlas-hourly-review`。
+- 威胁模型 v1：[`libraries/threat-model/INDEX.md`](libraries/threat-model/INDEX.md) + actors / assets / boundaries。
+- settlement-copy 对齐决策矩阵建议 Y（commit + AppHash）。
+- `tests/test_atlas_tools.py`；protocols 永久过滤器声明（Cardano 等不扩 19 节）。
+
 ## 2026-09-17（优化迭代）
 
 - 新增 [`ROADMAP.md`](ROADMAP.md)、[`index/05-optimization-roadmap.md`](index/05-optimization-roadmap.md)；更新 [`ARCHITECTURE.md`](ARCHITECTURE.md) 进度与缺口表。

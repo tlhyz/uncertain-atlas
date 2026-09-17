@@ -8,6 +8,7 @@
 **最高准则：** [`GOAL.md`](GOAL.md)（含细致 / 精密 / 全面）  
 **目录说明：** [`ARCHITECTURE.md`](ARCHITECTURE.md)  
 **优化路线图：** [`ROADMAP.md`](ROADMAP.md) · [`index/05-optimization-roadmap.md`](index/05-optimization-roadmap.md)  
+**复审循环（防停止）：** [`REVIEW_LOOP.md`](REVIEW_LOOP.md)  
 **审核日志：** [`AUDIT_LOG.md`](AUDIT_LOG.md)
 
 出题后置，见 [`exams/`](exams/README.md)。现在先读知识。
