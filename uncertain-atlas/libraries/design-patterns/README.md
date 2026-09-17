@@ -1,3 +1,6 @@
+- [`name-the-syncingheight-notdet-bar.md`](name-the-syncingheight-notdet-bar.md) — Finalize 回包 events not already must be deterministic / not already settled / not already same order as results 正式三事（382 余量）（不变量 784）
+- [`name-the-syncingheight-notnoset-bar.md`](name-the-syncingheight-notnoset-bar.md) — validator_updates 空 not already no set / not already changed set / not already InitChain empty list 正式三事（382 余量）（不变量 783）
+- [`name-the-syncingheight-nothistory-bar.md`](name-the-syncingheight-nothistory-bar.md) — syncing_to_height not already full history / not already snapshot replay / not already settled 正式三事（382 余量）（不变量 782）
 - [`name-the-queryprove-notreqh-bar.md`](name-the-queryprove-notreqh-bar.md) — Query 回包 height not already request height / not already fresh / not already header AppHash 正式三事（383 余量）（不变量 781）
 - [`name-the-queryprove-notstore-bar.md`](name-the-queryprove-notstore-bar.md) — Query 回包 proof_ops not already key lookup / not already AppHash matched / not already settled 正式三事（383 余量）（不变量 780）
 - [`name-the-queryprove-notapphash-bar.md`](name-the-queryprove-notapphash-bar.md) — Query 请求 prove not already AppHash matched / not already one-layer tree / not already settled 正式三事（383 余量）（不变量 779）

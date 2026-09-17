@@ -335,6 +335,9 @@
 - [`worked-example-infover-vs-appversion.md`](worked-example-infover-vs-appversion.md) — Info 请求 version 是 CometBFT 软件语义版本 ≠ 已经是 app_version；block_version / p2p_version 是引擎块版本和 P2P 版本 ≠ 已经版本也对上；abci_version 是 ABCI 语义版本、按 X.X.x 显示 ≠ 已经是握手对齐（不变量 379）
 - [`worked-example-queryindex-vs-store.md`](worked-example-queryindex-vs-store.md) — Query 回包 index 是树里这个键的下标 ≠ 已经是按键查；Query 回包 key 是对上的那份数据的键 ≠ 已经是 Query 高度；Query 回包 value 是对上的那份数据的值 ≠ 已经对上 AppHash（不变量 380）
 - [`worked-example-checktxspace-vs-code.md`](worked-example-checktxspace-vs-code.md) — CheckTx 回包 codespace 是码的命名空间 ≠ 已经是回包码；CheckTx 回包 events 是给索引用的类型键值 ≠ 已经交差；CheckTx 的 lane_id 必须在 Info 回包车道范围内 ≠ 已经不设道（不变量 381）
+- [`worked-example-syncingheight-notdet-vs-bundled.md`](worked-example-syncingheight-notdet-vs-bundled.md) — events≠342 must det/settled/same order；≠382 bundled（不变量 784）
+- [`worked-example-syncingheight-notnoset-vs-bundled.md`](worked-example-syncingheight-notnoset-vs-bundled.md) — empty updates≠318 no set/changed set/InitChain empty；≠382 bundled（不变量 783）
+- [`worked-example-syncingheight-nothistory-vs-bundled.md`](worked-example-syncingheight-nothistory-vs-bundled.md) — syncing_to_height≠323 full history/snapshot replay/settled；≠382 bundled（不变量 782）
 - [`worked-example-syncingheight-vs-history.md`](worked-example-syncingheight-vs-history.md) — syncing_to_height 同步或重放时是目标高、否则等于本高 ≠ 已经有完整历史；validator_updates 空则引擎保持当前集合 ≠ 已经没有集合；Finalize 回包 events 标成非确定 ≠ 已经必须确定（不变量 382）
 - [`worked-example-queryprove-notreqh-vs-bundled.md`](worked-example-queryprove-notreqh-vs-bundled.md) — height≠request height/fresh/header AppHash；≠383 bundled（不变量 781）
 - [`worked-example-queryprove-notstore-vs-bundled.md`](worked-example-queryprove-notstore-vs-bundled.md) — proof_ops≠key lookup/380 AppHash/already settled；≠383 bundled（不变量 780）

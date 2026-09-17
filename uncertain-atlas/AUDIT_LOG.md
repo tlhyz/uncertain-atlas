@@ -1,3 +1,18 @@
+| A3680 | 记录 | 会与 382 / 342 / 782 / 783 糊成「看见回了事件就已经必须确定 interchangeable、就已经交差 interchangeable、就已经是结果列表同一顺序 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包 events not already must be deterministic / not already settled / not already same order as results 正式三事（382 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。382 syncingheight vs history bundled unbundling 完成（784 item 3） |
+| A3681 | 高 | 看见 Finalize 回包 events 会被写成已经必须确定 interchangeable / 342 interchangeable | 官方 Finalize 请求回包 item 3：not already must be deterministic / not 342 |
+| A3682 | 高 | 看见回了事件 会被写成已经交差 interchangeable | 官方 Finalize 请求回包 item 3：not already settled |
+| A3683 | 高 | 看见能按类型键值索引 会被写成已经是结果列表同一顺序 interchangeable | 官方 Finalize 请求回包 item 3：not already same order as results |
+| A3684 | 中 | 怎样写 Finalize 请求回包 会被抄进不确定 | 不抄。不写怎样写 Finalize 请求回包。不另写 19 节 |
+| A3675 | 记录 | 会与 382 / 318 / 388 / 765 / 782 / 784 糊成「看见空着就已经没有集合 interchangeable、就已经改了集合 interchangeable、就已经是 InitChain 那种空名单 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 validator_updates 空 not already no set / not already changed set / not already InitChain empty list 正式三事（382 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。382 syncingheight vs history bundled unbundling 续（783 item 2） |
+| A3676 | 高 | 看见 validator_updates 空 会被写成已经没有集合 interchangeable / 318 interchangeable | 官方 Finalize 请求回包 item 2：not already no set / not 318 |
+| A3677 | 高 | 看见空着 会被写成已经改了集合 interchangeable | 官方 Finalize 请求回包 item 2：not already changed set |
+| A3678 | 高 | 看见能空 会被写成已经是 InitChain 那种空名单 interchangeable / 318 interchangeable | 官方 Finalize 请求回包 item 2：not already InitChain empty list / not 318 |
+| A3679 | 中 | 怎样写 Finalize 请求回包 会被抄进不确定 | 不抄。不写怎样写 Finalize 请求回包。不另写 19 节 |
+| A3670 | 记录 | 会与 382 / 323 / 783 / 784 糊成「看见填了目标就已经有完整历史 interchangeable、就已经是快照重放 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 syncing_to_height not already full history / not already snapshot replay / not already settled 正式三事（382 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。382 syncingheight vs history bundled unbundling 启动（782 item 1） |
+| A3671 | 高 | 看见 syncing_to_height 会被写成已经有完整历史 interchangeable / 323 interchangeable | 官方 Finalize 请求回包 item 1：not already full history / not 323 |
+| A3672 | 高 | 看见填了目标 会被写成已经是快照重放 interchangeable | 官方 Finalize 请求回包 item 1：not already snapshot replay |
+| A3673 | 高 | 看见等于本高 会被写成已经交差 interchangeable | 官方 Finalize 请求回包 item 1：not already settled |
+| A3674 | 中 | 怎样写 Finalize 请求回包 会被抄进不确定 | 不抄。不写怎样写 Finalize 请求回包。不另写 19 节 |
 | A3665 | 记录 | 会与 383 / 371 / 779 / 780 糊成「看见回了高度就已经是请求高度 interchangeable、就已经新鲜 interchangeable、就已经印进本头 AppHash interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 height not already request height / not already fresh / not already header AppHash 正式三事（383 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。383 queryprove vs proof bundled unbundling 完成（781 item 3） |
 | A3666 | 高 | 看见 Query 回包 height 会被写成已经是请求高度 interchangeable | 官方 Query 证明回包 item 3：not already request height |
 | A3667 | 高 | 看见回了高度 会被写成已经新鲜 interchangeable | 官方 Query 证明回包 item 3：not already fresh |

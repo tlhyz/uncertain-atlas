@@ -1,3 +1,6 @@
+- [`syncingheight-notdet-sold-as-bundled.md`](syncingheight-notdet-sold-as-bundled.md) — events 被写成已经必须确定 / 已经交差 / 已经是结果列表同一顺序（不变量 784）
+- [`syncingheight-notnoset-sold-as-bundled.md`](syncingheight-notnoset-sold-as-bundled.md) — 空更新被写成已经没有集合 / 已经改了集合 / 已经是 InitChain 空名单（不变量 783）
+- [`syncingheight-nothistory-sold-as-bundled.md`](syncingheight-nothistory-sold-as-bundled.md) — syncing_to_height 被写成已经有完整历史 / 已经是快照重放 / 已经交差（不变量 782）
 - [`queryprove-notreqh-sold-as-bundled.md`](queryprove-notreqh-sold-as-bundled.md) — height 被写成已经是请求高度 / 已经新鲜 / 已经印进本头 AppHash（不变量 781）
 - [`queryprove-notstore-sold-as-bundled.md`](queryprove-notstore-sold-as-bundled.md) — proof_ops 被写成已经是按键查 / 已经对上 AppHash / 已经交差（不变量 780）
 - [`queryprove-notapphash-sold-as-bundled.md`](queryprove-notapphash-sold-as-bundled.md) — prove 被写成已经对上 AppHash / 已经是一层树 / 已经交差（不变量 779）

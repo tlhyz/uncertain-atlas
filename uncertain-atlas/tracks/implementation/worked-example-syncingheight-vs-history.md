@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了同步高度就已经有完整历史、已经没有集合、已经必须确定」，必须分开 syncing_to_height 同步或重放时是目标高、否则等于本高是不是已经有完整历史、validator_updates 空则引擎保持当前集合是不是已经没有集合、Finalize 回包 events 标成非确定是不是已经必须确定。可以跳过「看见填了同步高度就已经有完整历史」。不要另写怎样写 Finalize 请求回包。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了同步高度就已经有完整历史、已经没有集合、已经必须确定」，必须分开 syncing_to_height 同步或重放时是目标高、否则等于本高是不是已经有完整历史、validator_updates 空则引擎保持当前集合是不是已经没有集合、Finalize 回包 events 标成非确定是不是已经必须确定。可以跳过「看见填了同步高度就已经有完整历史」。不要另写怎样写 Finalize 请求回包。382 syncingheight vs history bundled unbundling 完成（782 item 1 / 783 item 2 / 784 item 3）；精读 [`worked-example-syncingheight-nothistory-vs-bundled.md`](worked-example-syncingheight-nothistory-vs-bundled.md)（不变量 782 item 1）。
 
 ## 本页不抄
 

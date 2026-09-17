@@ -1,3 +1,15 @@
+## 2026-09-17（续 901）
+
+- 不变量 784；语料 C762；模式 name-the-syncingheight-notdet-bar；反模式 syncingheight-notdet-sold-as-bundled；L10.3 第 753 条。填 L4.4 / CometBFT 档案 Finalize 回包 events not already must be deterministic / not already settled / not already same order as results 正式三事（382 余量）。382 syncingheight vs history bundled unbundling 完成（784 item 3）。
+
+## 2026-09-17（续 900）
+
+- 不变量 783；语料 C761；模式 name-the-syncingheight-notnoset-bar；反模式 syncingheight-notnoset-sold-as-bundled；L10.3 第 752 条。填 L4.4 / CometBFT 档案 validator_updates 空 not already no set / not already changed set / not already InitChain empty list 正式三事（382 余量）。382 syncingheight vs history bundled unbundling 续（783 item 2）。
+
+## 2026-09-17（续 899）
+
+- 不变量 782；语料 C760；模式 name-the-syncingheight-nothistory-bar；反模式 syncingheight-nothistory-sold-as-bundled；L10.3 第 751 条。填 L4.4 / CometBFT 档案 syncing_to_height not already full history / not already snapshot replay / not already settled 正式三事（382 余量）。382 syncingheight vs history bundled unbundling 启动（782 item 1）。
+
 ## 2026-09-17（续 898）
 
 - 不变量 781；语料 C759；模式 name-the-queryprove-notreqh-bar；反模式 queryprove-notreqh-sold-as-bundled；L10.3 第 750 条。填 L4.4 / CometBFT 档案 Query 回包 height not already request height / not already fresh / not already header AppHash 正式三事（383 余量）。383 queryprove vs proof bundled unbundling 完成（781 item 3）。
