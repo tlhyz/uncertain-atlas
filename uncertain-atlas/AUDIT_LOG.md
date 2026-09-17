@@ -4511,6 +4511,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2303 | 中 | 怎样实现 CheckTx 回包码 / 怎样配 mempool 拒绝路径会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2302 | 高 | 看见 CometBFT attributes no other value to the response code 会被写成已经 CheckTx 回包 Data 就被引擎用了（317），或当成已经 CheckTx 技术上可选（373） bundled interchangeable | 官方 CheckTx Usage：CometBFT attributes no other value to the response code |
 | A2301 | 高 | 看见 will not be broadcast / or included in a proposal block 会被写成已经 Check 通过就是已进提案（33），或当成已经 CheckTx 过了就永远有效（301） | 官方 CheckTx Usage：they will not be broadcast to other nodes or included in a proposal block |
+| A2309 | 记录 | 会与 373 / 486 / 489 / 488 / 313 / 33 / 301 糊成「看见 CheckTx 是内存池守卫就已经 optional 交差 / 已经四门已经结算 / 已经 forever valid」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx Usage Guardian 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。optional / 四门已经结算 / forever valid 标成另一对象 |
+| A2308 | 中 | 怎样做内存池守卫 / 怎样实现 every node runs CheckTx 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2307 | 高 | 看见 before letting a transaction into its local mempool 会被写成已经 may come from external user or another node（488） bundled 就代表来源已经验完，或当成已经内存池去重保证不重放（313） | 官方 CheckTx Usage：every node runs CheckTx before letting a transaction into its local mempool |
+| A2306 | 高 | 看见 every node runs CheckTx before letting a transaction into its local mempool 会被写成已经 RPC broadcast_tx 回了就代表别的节点也会跑 CheckTx，或当成已经 Check 通过就是已进提案（33） | 官方 CheckTx Usage：every node runs CheckTx before letting a transaction into its local mempool |
+| A2305 | 高 | 看见 Guardian of the mempool 会被写成已经 Technically optional - not involved in processing blocks（373） interchangeable，或当成已经可以不跑 CheckTx / 已经四门已经结算（33） | 官方 CheckTx Usage：Guardian of the mempool |
+
 | A2300 | 高 | 看见 CheckTxResponse.Code != 0 will be rejected 会被写成已经进了本地池就开始 P2P 流言，或当成已经 CheckTx 是内存池守卫（405） bundled 就代表 Code 语义已经验完 | 官方 CheckTx Usage：Transactions where CheckTxResponse.Code != 0 will be rejected |
 
 | A2295 | 高 | 看见 The transaction may come from an external user 会被写成已经 CheckTx_Recheck 那种内存池再验（484），或当成已经 CheckTx_New default full check 就代表来源已经验完 | 官方 CheckTx Usage：The transaction may come from an external user |
