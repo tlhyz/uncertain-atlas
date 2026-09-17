@@ -1,3 +1,4 @@
+- [`worked-example-fincommit-notsettled-vs-bundled.md`](worked-example-fincommit-notsettled-vs-bundled.md) — calls Commit≠settled/four gates；≠fincommit bundled/notpersist/notcommitlock（不变量 644）
 - [`worked-example-finh1-notafterunlock-vs-bundled.md`](worked-example-finh1-notafterunlock-vs-bundled.md) — after unlock≠unlock mempool/finafter/When trigger；≠finh1 bundled/notsettled/notround（不变量 643）
 - [`worked-example-finh1-notround-vs-bundled.md`](worked-example-finh1-notround-vs-bundled.md) — round 0≠same round/next_block_delay/timeout_commit；≠finh1 bundled/notsettled/notafterunlock（不变量 642）
 - [`worked-example-finh1-notsettled-vs-bundled.md`](worked-example-finh1-notsettled-vs-bundled.md) — starts h+1≠settled/persist decision；≠finh1 bundled/round 0/after unlock（不变量 641）

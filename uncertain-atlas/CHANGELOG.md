@@ -1,3 +1,7 @@
+## 2026-09-17（续 761）
+
+- 不变量 644；语料 C621；模式 name-the-fincommit-notsettled-bar；反模式 fincommit-notsettled-sold-as-bundled；L10.3 第 613 条。填 L4.4 / CometBFT 档案 FinalizeBlock When CometBFT calls Commit not already settled / not four gates settled / not fincommit bundled 正式三事（590 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。590 fincommit unbundling 启动（644 item 1）。
+
 ## 2026-09-17（续 760）
 
 - 不变量 643；语料 C620；模式 name-the-finh1-notafterunlock-bar；反模式 finh1-notafterunlock-sold-as-bundled；L10.3 第 612 条。填 L4.4 / CometBFT 档案 FinalizeBlock When after unlock not unlock mempool / not finafter bundled / not When trigger 正式三事（593 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。593 finh1 unbundling 完成（643 item 3）。

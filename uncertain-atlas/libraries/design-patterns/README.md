@@ -1,3 +1,4 @@
+- [`name-the-fincommit-notsettled-bar.md`](name-the-fincommit-notsettled-bar.md) — FinalizeBlock When CometBFT calls Commit not already settled / not four gates settled / not fincommit bundled 正式三事（590 余量）（不变量 644）
 - [`name-the-finh1-notafterunlock-bar.md`](name-the-finh1-notafterunlock-bar.md) — FinalizeBlock When after unlock not unlock mempool / not finafter bundled / not When trigger 正式三事（593 余量）（不变量 643）
 - [`name-the-finh1-notround-bar.md`](name-the-finh1-notround-bar.md) — FinalizeBlock When round 0 not same round / not next_block_delay / not timeout_commit / not finh1 bundled 正式三事（593 余量）（不变量 642）
 - [`name-the-finh1-notsettled-bar.md`](name-the-finh1-notsettled-bar.md) — FinalizeBlock When starts consensus for height h+1 not already settled / not persist decision / not finh1 bundled 正式三事（593 余量）（不变量 641）

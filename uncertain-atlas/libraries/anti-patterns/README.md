@@ -1,3 +1,4 @@
+- [`fincommit-notsettled-sold-as-bundled.md`](fincommit-notsettled-sold-as-bundled.md) — calls Commit 被写成已经交差 / 已经四门已经结算 / 已经 fincommit bundled（不变量 644）
 - [`finh1-notafterunlock-sold-as-bundled.md`](finh1-notafterunlock-sold-as-bundled.md) — after unlock 被写成已经 unlocks mempool / 已经 finafter bundled / 已经 When trigger（不变量 643）
 - [`finh1-notround-sold-as-bundled.md`](finh1-notround-sold-as-bundled.md) — round 0 被写成已经 same round / 已经 next_block_delay / 已经 timeout_commit / 已经 finh1 bundled（不变量 642）
 - [`finh1-notsettled-sold-as-bundled.md`](finh1-notsettled-sold-as-bundled.md) — starts consensus h+1 被写成已经交差 / 已经 persist decision / 已经 finh1 bundled（不变量 641）
