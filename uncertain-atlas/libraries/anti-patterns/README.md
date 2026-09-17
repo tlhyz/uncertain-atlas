@@ -1,3 +1,6 @@
+- [`prepare-nondet-notext-sold-as-bundled.md`](prepare-nondet-notext-sold-as-bundled.md) — ExtendVote 无确定性 被写成已经同一份扩展 / 已经和 Verify 同一把尺 / 已经交差（不变量 898）
+- [`prepare-nondet-notraw-sold-as-bundled.md`](prepare-nondet-notraw-sold-as-bundled.md) — raw 一样 被写成已经同一份提案 / 已经必须同一份 / 已经交差（不变量 897）
+- [`prepare-nondet-notmust-sold-as-bundled.md`](prepare-nondet-notmust-sold-as-bundled.md) — Prepare 无确定性 被写成已经必须确定 / 已经和 Process 同一把尺 / 已经交差（不变量 896）
 - [`process-det-notfix-sold-as-bundled.md`](process-det-notfix-sold-as-bundled.md) — Process 非确定无解 被写成已经丢了安全性 / 已经有补丁 / 已经交差（不变量 895）
 - [`process-det-nothonest-sold-as-bundled.md`](process-det-nothonest-sold-as-bundled.md) — 任意块同判 被写成已经只对诚实提案 / 已经是 Req 3 / 已经交差（不变量 894）
 - [`process-det-notprep-sold-as-bundled.md`](process-det-notprep-sold-as-bundled.md) — Process 必须确定 被写成已经可以像 Prepare 那样 / 已经同一把尺 / 已经交差（不变量 893）

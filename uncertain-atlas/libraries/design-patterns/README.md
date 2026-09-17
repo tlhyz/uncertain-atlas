@@ -1,3 +1,6 @@
+- [`name-the-prepare-nondet-notext-bar.md`](name-the-prepare-nondet-notext-bar.md) — ExtendVote 没有确定性要求 not already same extension / not already same ruler as Verify / not already settled 正式三事（338 余量）（不变量 898）
+- [`name-the-prepare-nondet-notraw-bar.md`](name-the-prepare-nondet-notraw-bar.md) — 两边 raw 一样 not already same prepared / not already must be same / not already settled 正式三事（338 余量）（不变量 897）
+- [`name-the-prepare-nondet-notmust-bar.md`](name-the-prepare-nondet-notmust-bar.md) — Prepare 没有确定性要求 not already must be deterministic / not already same ruler as Process / not already settled 正式三事（338 余量）（不变量 896）
 - [`name-the-process-det-notfix-bar.md`](name-the-process-det-notfix-bar.md) — Process 非确定 bug 没有现成解法 not already lost safety / not already engine patch / not already settled 正式三事（340 余量）（不变量 895）
 - [`name-the-process-det-nothonest-bar.md`](name-the-process-det-nothonest-bar.md) — 两边对任意块同一裁决 not already only honest same verdict / not already Req 3 honest Accept / not already settled 正式三事（340 余量）（不变量 894）
 - [`name-the-process-det-notprep-bar.md`](name-the-process-det-notprep-bar.md) — Process 必须只依赖请求和上一份状态 not already Prepare-style other values / not already same ruler as Prepare / not already settled 正式三事（340 余量）（不变量 893）

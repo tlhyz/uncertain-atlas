@@ -1,3 +1,15 @@
+## 2026-09-17（续 1015）
+
+- 不变量 898；语料 C876；模式 name-the-prepare-nondet-notext-bar；反模式 prepare-nondet-notext-sold-as-bundled；L10.3 第 867 条。填 L4.4 / CometBFT 档案 ExtendVote 没有确定性要求 not already same extension / not already same ruler as Verify / not already settled 正式三事（338 余量）。338 prepare-nondet vs process bundled unbundling 完成（898 item 3）。
+
+## 2026-09-17（续 1014）
+
+- 不变量 897；语料 C875；模式 name-the-prepare-nondet-notraw-bar；反模式 prepare-nondet-notraw-sold-as-bundled；L10.3 第 866 条。填 L4.4 / CometBFT 档案 两边 raw 一样 not already same prepared / not already must be same / not already settled 正式三事（338 余量）。338 prepare-nondet vs process bundled unbundling 续（897 item 2）。
+
+## 2026-09-17（续 1013）
+
+- 不变量 896；语料 C874；模式 name-the-prepare-nondet-notmust-bar；反模式 prepare-nondet-notmust-sold-as-bundled；L10.3 第 865 条。填 L4.4 / CometBFT 档案 Prepare 没有确定性要求 not already must be deterministic / not already same ruler as Process / not already settled 正式三事（338 余量）。338 prepare-nondet vs process bundled unbundling 启动（896 item 1）。
+
 ## 2026-09-17（续 1012）
 
 - 不变量 895；语料 C873；模式 name-the-process-det-notfix-bar；反模式 process-det-notfix-sold-as-bundled；L10.3 第 864 条。填 L4.4 / CometBFT 档案 Process 非确定 bug 没有现成解法 not already lost safety / not already engine patch / not already settled 正式三事（340 余量）。340 process-det vs prepare bundled unbundling 完成（895 item 3）。

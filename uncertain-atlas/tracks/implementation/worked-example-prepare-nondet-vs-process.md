@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见可以不确定就已经必须确定、已经是同一份提案、已经是同一份扩展」，必须分开 Prepare 没有确定性要求是不是已经必须确定、两边 raw 一样是不是已经是同一份提案、ExtendVote 没有确定性要求是不是已经是同一份扩展。可以跳过「看见可以不确定就必须确定」。不要把「其它值或操作」当不确定常数。不要另写怎样写 Prepare 或怎样写 ExtendVote。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见可以不确定就已经必须确定、已经是同一份提案、已经是同一份扩展」，必须分开 Prepare 没有确定性要求是不是已经必须确定、两边 raw 一样是不是已经是同一份提案、ExtendVote 没有确定性要求是不是已经是同一份扩展。可以跳过「看见可以不确定就必须确定」。不要把「其它值或操作」当不确定常数。不要另写怎样写 Prepare 或怎样写 ExtendVote。338 prepare-nondet vs process bundled unbundling 完成（896 item 1 / 897 item 2 / 898 item 3）；精读 [`worked-example-prepare-nondet-notmust-vs-bundled.md`](worked-example-prepare-nondet-notmust-vs-bundled.md)（不变量 896 item 1）。
 
 ## 本页不抄
 

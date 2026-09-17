@@ -1,3 +1,18 @@
+| A4250 | 记录 | 会与 338 / 341 / 34 / 896 / 897 糊成「看见同一块就已经同一份扩展 interchangeable、就已经和 Verify 同一把尺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 没有确定性要求 not already same extension / not already same ruler as Verify / not already settled 正式三事（338 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。338 prepare-nondet vs process bundled unbundling 完成（898 item 3） |
+| A4251 | 高 | 看见 ExtendVote 没有确定性要求 会被写成已经是同一份扩展 interchangeable | 官方 Req 11–12 之后 item 3：not already same extension |
+| A4252 | 高 | 看见同一块 会被写成已经和 Verify 同一把尺 interchangeable | 官方 Req 11–12 之后 item 3：not already same ruler as Verify |
+| A4253 | 高 | 看见能签扩展 会被写成已经交差 interchangeable | 官方 Req 11–12 之后 item 3：not already settled |
+| A4254 | 中 | 怎样写 Prepare 或 ExtendVote 会被抄进不确定 | 不抄。不写怎样写 Prepare 或怎样写 ExtendVote。不另写 19 节 |
+| A4245 | 记录 | 会与 338 / 327 / 347 / 896 / 898 糊成「看见 raw 一样就已经同一份提案 interchangeable、就已经必须同一份 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 两边 raw 一样 not already same prepared / not already must be same / not already settled 正式三事（338 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。338 prepare-nondet vs process bundled unbundling 续（897 item 2） |
+| A4246 | 高 | 看见两边 raw 一样 会被写成已经是同一份提案 interchangeable | 官方 Req 11–12 之后 item 2：not already same prepared |
+| A4247 | 高 | 看见同一高度同一轮 会被写成已经必须同一份 interchangeable | 官方 Req 11–12 之后 item 2：not already must be same |
+| A4248 | 高 | 看见诚实准备 会被写成已经交差 interchangeable | 官方 Req 11–12 之后 item 2：not already settled |
+| A4249 | 中 | 怎样写 Prepare 或 ExtendVote 会被抄进不确定 | 不抄。不写怎样写 Prepare 或怎样写 ExtendVote。不另写 19 节 |
+| A4240 | 记录 | 会与 338 / 340 / 33 / 897 / 898 糊成「看见可以不确定就已经必须确定 interchangeable、就已经和 Process 同一把尺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 没有确定性要求 not already must be deterministic / not already same ruler as Process / not already settled 正式三事（338 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。338 prepare-nondet vs process bundled unbundling 启动（896 item 1） |
+| A4241 | 高 | 看见 Prepare 没有确定性要求 会被写成已经必须确定 interchangeable / 340 interchangeable | 官方 Req 11–12 之后 item 1：not already must be deterministic / not 340 |
+| A4242 | 高 | 看见可以依赖其它值 会被写成已经和 Process 同一把尺 interchangeable | 官方 Req 11–12 之后 item 1：not already same ruler as Process |
+| A4243 | 高 | 看见 Prepare 回了 会被写成已经交差 interchangeable | 官方 Req 11–12 之后 item 1：not already settled |
+| A4244 | 中 | 怎样写 Prepare 或 ExtendVote 会被抄进不确定 | 不抄。不写怎样写 Prepare 或怎样写 ExtendVote。不另写 19 节 |
 | A4235 | 记录 | 会与 340 / 327 / 341 / 893 / 894 糊成「看见活性不能保证就已经丢了安全性 interchangeable、就已经有协议层补丁 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 非确定 bug 没有现成解法 not already lost safety / not already engine patch / not already settled 正式三事（340 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。340 process-det vs prepare bundled unbundling 完成（895 item 3） |
 | A4236 | 高 | 看见 Process 非确定 bug 没有现成解法 会被写成已经丢了安全性 interchangeable | 官方 Req 4–5 item 3：not already lost safety |
 | A4237 | 高 | 看见没有现成解法 会被写成已经有协议层补丁 interchangeable | 官方 Req 4–5 item 3：not already engine patch |

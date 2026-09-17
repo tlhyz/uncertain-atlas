@@ -148,6 +148,9 @@
 - [`worked-example-finalize-persist-vs-commit.md`](worked-example-finalize-persist-vs-commit.md) — Finalize 改了状态 ≠ 已经落盘；必须在 Commit 落盘 ≠ 已经在 Finalize 落了；记住上次成功 Commit 高度 ≠ 已经能跳步（不变量 335）
 - [`worked-example-precision-vs-msgdelay.md`](worked-example-precision-vs-msgdelay.md) — 填了 Precision ≠ 已经是 MessageDelay；填了两个 ≠ 已经启用 PBTS；用于 PBTS ≠ 已经是永恒常数（不变量 336）
 - [`worked-example-maxbytes-cap-vs-unlimited.md`](worked-example-maxbytes-cap-vs-unlimited.md) — -1 就按 100 MB 验 ≠ 已经没有上限；应用自己卡体积 ≠ 已经引擎不管了；必须 -1 或不超过 100 MB ≠ 已经是默认 21 MB（不变量 337）
+- [`worked-example-prepare-nondet-notext-vs-bundled.md`](worked-example-prepare-nondet-notext-vs-bundled.md) — ExtendVote无确定性≠already same ext/same ruler as Verify/settled；≠338 bundled（不变量 898）
+- [`worked-example-prepare-nondet-notraw-vs-bundled.md`](worked-example-prepare-nondet-notraw-vs-bundled.md) — raw一样≠already same prepared/must same/settled；≠338 bundled（不变量 897）
+- [`worked-example-prepare-nondet-notmust-vs-bundled.md`](worked-example-prepare-nondet-notmust-vs-bundled.md) — Prepare无确定性≠already must det/same ruler as Process/settled；≠338 bundled（不变量 896）
 - [`worked-example-prepare-nondet-vs-process.md`](worked-example-prepare-nondet-vs-process.md) — Prepare 没有确定性要求 ≠ 已经必须确定；两边 raw 一样 ≠ 已经是同一份提案；ExtendVote 没有确定性要求 ≠ 已经是同一份扩展（不变量 338）
 - [`worked-example-checktx-weak-vs-process.md`](worked-example-checktx-weak-vs-process.md) — 不该验排序相关有效性 ≠ 已经该在 CheckTx 里验；拜占庭能提案一满块无效交易 ≠ 已经被池子挡住；ProcessProposal 对付这种行为 ≠ 已经是 CheckTx（不变量 339）
 - [`worked-example-process-det-notfix-vs-bundled.md`](worked-example-process-det-notfix-vs-bundled.md) — Process非确定无解≠already lost safety/engine patch/settled；≠340 bundled（不变量 895）
