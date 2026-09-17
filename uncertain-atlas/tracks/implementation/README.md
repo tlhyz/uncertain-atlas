@@ -154,6 +154,9 @@
 - [`worked-example-verify-det-vs-extend.md`](worked-example-verify-det-vs-extend.md) — Verify 必须只依赖扩展、这块和上一份状态 ≠ 已经可以像 ExtendVote 那样依赖其它值；两边对任意扩展同一裁决 ≠ 已经只对诚实扩展同一裁决；Verify 非确定会伤活性 ≠ 已经丢了安全性（不变量 341）
 - [`worked-example-finalize-det-vs-prepare.md`](worked-example-finalize-det-vs-prepare.md) — Finalize 算出的状态必须只依赖上一份状态和决定块 ≠ 已经可以像 Prepare 那样依赖其它值；Finalize 算出的结果必须只依赖上一份状态和决定块 ≠ 已经是 Code/Data 印进本头；两边状态机复制 ≠ 已经是 Process 对任意块同一裁决（不变量 342）
 - [`worked-example-pbts-height-vs-params.md`](worked-example-pbts-height-vs-params.md) — 写成 0 不是已经启用 PBTS ≠ 已经填了 Precision 就是 PBTS；H 之前仍用 BFT Time ≠ 已经切到 PBTS；启用之后不能关 ≠ 已经是扩展启用高度那种切换（不变量 343）
+- [`worked-example-maxbytes-overhead-nottimeout-vs-bundled.md`](worked-example-maxbytes-overhead-nottimeout-vs-bundled.md) — 满块投递超时≠already TimeoutPropose/left path/settled；≠344 bundled（不变量 883）
+- [`worked-example-maxbytes-overhead-not21mb-vs-bundled.md`](worked-example-maxbytes-overhead-not21mb-vs-bundled.md) — MAY出满≠already default 21MB/no limit/settled；≠344 bundled（不变量 882）
+- [`worked-example-maxbytes-overhead-notfull-vs-bundled.md`](worked-example-maxbytes-overhead-notfull-vs-bundled.md) — 扣开销才是交易上限≠already full-block/evidence MaxBytes/settled；≠344 bundled（不变量 881）
 - [`worked-example-maxbytes-overhead-vs-full.md`](worked-example-maxbytes-overhead-vs-full.md) — MaxBytes 减去头集合证据才是交易上限 ≠ 已经整块都能装交易；诚实验证者 MAY 出满 MaxBytes ≠ 已经只会出默认 21 MB；timeout 必须按满块投递延迟算 ≠ 已经填了 TimeoutPropose 就装得下这次 Prepare 执行（不变量 344）
 - [`worked-example-prepare-return-notengine-vs-bundled.md`](worked-example-prepare-return-notengine-vs-bundled.md) — Req2回包保证≠already engine trims/344 overhead/settled；≠345 bundled（不变量 880）
 - [`worked-example-prepare-return-notover-vs-bundled.md`](worked-example-prepare-return-notover-vs-bundled.md) — 聚合超限≠already return oversize/already trimmed/settled；≠345 bundled（不变量 879）

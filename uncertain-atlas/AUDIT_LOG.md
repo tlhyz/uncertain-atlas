@@ -1,3 +1,18 @@
+| A4175 | 记录 | 会与 344 / 327 / 33 / 881 / 882 糊成「看见填了 TimeoutPropose 就已经装得下这次 Prepare 执行 interchangeable、就已经离开关键路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 timeout 必须按满块投递延迟算 not already TimeoutPropose covers Prepare / not already left critical path / not already settled 正式三事（344 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。344 maxbytes vs full bundled unbundling 完成（883 item 3） |
+| A4176 | 高 | 看见 timeout 必须按满块投递延迟算 会被写成已经填了 TimeoutPropose 就装得下这次 Prepare 执行 interchangeable | 官方 MaxBytes item 3：not already TimeoutPropose covers Prepare |
+| A4177 | 高 | 看见超时在 会被写成已经离开关键路径 interchangeable | 官方 MaxBytes item 3：not already left critical path |
+| A4178 | 高 | 看见投递延迟 会被写成已经交差 interchangeable | 官方 MaxBytes item 3：not already settled |
+| A4179 | 中 | 怎样算头和证据开销会被抄进不确定 | 不抄。不写怎样算头和证据开销。不另写 19 节 |
+| A4170 | 记录 | 会与 344 / 337 / 33 / 881 / 883 糊成「看见写了 MAY 就已经只会出默认 21 MB interchangeable、就已经没有上限 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 诚实验证者 MAY 出满 MaxBytes not already only default 21 MB / not already no limit / not already settled 正式三事（344 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。344 maxbytes vs full bundled unbundling 续（882 item 2） |
+| A4171 | 高 | 看见诚实验证者 MAY 出满 MaxBytes 会被写成已经只会出默认 21 MB interchangeable | 官方 MaxBytes item 2：not already only default 21 MB |
+| A4172 | 高 | 看见能打到配置上限 会被写成已经没有上限 interchangeable | 官方 MaxBytes item 2：not already no limit |
+| A4173 | 高 | 看见写了 MAY 会被写成已经交差 interchangeable | 官方 MaxBytes item 2：not already settled |
+| A4174 | 中 | 怎样算头和证据开销会被抄进不确定 | 不抄。不写怎样算头和证据开销。不另写 19 节 |
+| A4165 | 记录 | 会与 344 / 331 / 337 / 882 / 883 糊成「看见填了 MaxBytes 就已经整块都能装交易 interchangeable、就已经是证据 MaxBytes interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 MaxBytes 减去头集合证据才是交易上限 not already whole block holds txs / not already evidence MaxBytes / not already settled 正式三事（344 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。344 maxbytes vs full bundled unbundling 启动（881 item 1） |
+| A4166 | 高 | 看见 MaxBytes 减去头集合证据才是交易上限 会被写成已经整块都能装交易 interchangeable / 331 interchangeable | 官方 MaxBytes item 1：not already whole block holds txs / not 331 |
+| A4167 | 高 | 看见能装交易 会被写成已经是证据 MaxBytes interchangeable | 官方 MaxBytes item 1：not already evidence MaxBytes |
+| A4168 | 高 | 看见扣了开销 会被写成已经交差 interchangeable | 官方 MaxBytes item 1：not already settled |
+| A4169 | 中 | 怎样算头和证据开销会被抄进不确定 | 不抄。不写怎样算头和证据开销。不另写 19 节 |
 | A4160 | 记录 | 会与 345 / 344 / 33 / 878 / 879 糊成「看见写了回包上限就已经是引擎会帮你裁 interchangeable、就已经扣过头集合证据 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Req 2 保证回的列表不让块超字节上限 not already engine trims / not already 344 overhead / not already settled 正式三事（345 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。345 prepare-return vs pool bundled unbundling 完成（880 item 3） |
 | A4161 | 高 | 看见 Req 2 保证回的列表不让块超字节上限 会被写成已经是引擎会帮你裁 interchangeable | 官方 Req 2 item 3：not already engine trims |
 | A4162 | 高 | 看见回包绿了 会被写成已经扣过头集合证据 interchangeable | 官方 Req 2 item 3：not already 344 overhead |

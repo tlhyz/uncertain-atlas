@@ -1,3 +1,15 @@
+## 2026-09-17（续 1000）
+
+- 不变量 883；语料 C861；模式 name-the-maxbytes-overhead-nottimeout-bar；反模式 maxbytes-overhead-nottimeout-sold-as-bundled；L10.3 第 852 条。填 L4.4 / CometBFT 档案 timeout 必须按满块投递延迟算 not already TimeoutPropose covers Prepare / not already left critical path / not already settled 正式三事（344 余量）。344 maxbytes vs full bundled unbundling 完成（883 item 3）。
+
+## 2026-09-17（续 999）
+
+- 不变量 882；语料 C860；模式 name-the-maxbytes-overhead-not21mb-bar；反模式 maxbytes-overhead-not21mb-sold-as-bundled；L10.3 第 851 条。填 L4.4 / CometBFT 档案 诚实验证者 MAY 出满 MaxBytes not already only default 21 MB / not already no limit / not already settled 正式三事（344 余量）。344 maxbytes vs full bundled unbundling 续（882 item 2）。
+
+## 2026-09-17（续 998）
+
+- 不变量 881；语料 C859；模式 name-the-maxbytes-overhead-notfull-bar；反模式 maxbytes-overhead-notfull-sold-as-bundled；L10.3 第 850 条。填 L4.4 / CometBFT 档案 MaxBytes 减去头集合证据才是交易上限 not already whole block holds txs / not already evidence MaxBytes / not already settled 正式三事（344 余量）。344 maxbytes vs full bundled unbundling 启动（881 item 1）。
+
 ## 2026-09-17（续 997）
 
 - 不变量 880；语料 C858；模式 name-the-prepare-return-notengine-bar；反模式 prepare-return-notengine-sold-as-bundled；L10.3 第 849 条。填 L4.4 / CometBFT 档案 Req 2 保证回的列表不让块超字节上限 not already engine trims / not already 344 overhead / not already settled 正式三事（345 余量）。345 prepare-return vs pool bundled unbundling 完成（880 item 3）。

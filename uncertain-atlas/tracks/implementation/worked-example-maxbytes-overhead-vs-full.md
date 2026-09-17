@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 MaxBytes 就已经整块都能装交易、已经只会出默认 21 MB、已经装得下这次 Prepare 执行」，必须分开 MaxBytes 减去头集合证据才是交易上限是不是已经整块都能装交易、诚实验证者 MAY 出满 MaxBytes 是不是已经只会出默认 21 MB、timeout 必须按满块投递延迟算是不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行。可以跳过「看见填了 MaxBytes 就已经整块都能装交易」。不要把 21 MB 当不确定常数。不要另写怎样算头和证据开销。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 MaxBytes 就已经整块都能装交易、已经只会出默认 21 MB、已经装得下这次 Prepare 执行」，必须分开 MaxBytes 减去头集合证据才是交易上限是不是已经整块都能装交易、诚实验证者 MAY 出满 MaxBytes 是不是已经只会出默认 21 MB、timeout 必须按满块投递延迟算是不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行。可以跳过「看见填了 MaxBytes 就已经整块都能装交易」。不要把 21 MB 当不确定常数。不要另写怎样算头和证据开销。344 maxbytes vs full bundled unbundling 完成（881 item 1 / 882 item 2 / 883 item 3）；精读 [`worked-example-maxbytes-overhead-notfull-vs-bundled.md`](worked-example-maxbytes-overhead-notfull-vs-bundled.md)（不变量 881 item 1）。
 
 ## 本页不抄
 

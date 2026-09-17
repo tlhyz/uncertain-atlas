@@ -1,3 +1,6 @@
+- [`name-the-maxbytes-overhead-nottimeout-bar.md`](name-the-maxbytes-overhead-nottimeout-bar.md) — timeout 必须按满块投递延迟算 not already TimeoutPropose covers Prepare / not already left critical path / not already settled 正式三事（344 余量）（不变量 883）
+- [`name-the-maxbytes-overhead-not21mb-bar.md`](name-the-maxbytes-overhead-not21mb-bar.md) — 诚实验证者 MAY 出满 MaxBytes not already only default 21 MB / not already no limit / not already settled 正式三事（344 余量）（不变量 882）
+- [`name-the-maxbytes-overhead-notfull-bar.md`](name-the-maxbytes-overhead-notfull-bar.md) — MaxBytes 减去头集合证据才是交易上限 not already whole block holds txs / not already evidence MaxBytes / not already settled 正式三事（344 余量）（不变量 881）
 - [`name-the-prepare-return-notengine-bar.md`](name-the-prepare-return-notengine-bar.md) — Req 2 保证回的列表不让块超字节上限 not already engine trims / not already 344 overhead / not already settled 正式三事（345 余量）（不变量 880）
 - [`name-the-prepare-return-notover-bar.md`](name-the-prepare-return-notover-bar.md) — 聚合体积可以超过 max_tx_bytes not already can return oversize / not already pool already trimmed / not already settled 正式三事（345 余量）（不变量 879）
 - [`name-the-prepare-return-notsubset-bar.md`](name-the-prepare-return-notsubset-bar.md) — 整池可见 not already only subset that fits / not already no limit / not already settled 正式三事（345 余量）（不变量 878）
