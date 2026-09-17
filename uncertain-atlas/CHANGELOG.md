@@ -1,3 +1,7 @@
+## 2026-09-14（续 562）
+
+- 不变量 562；语料 C566；模式 name-the-htmatch-notverified-bar；反模式 htmatch-notverified-sold-as-bundled；L10.3 第 558 条。填 L4.4 / CometBFT 档案头字段对上余量 Process height/time match header not already verified 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。417 头字段对上余量 unbundling 续（562）。
+
 ## 2026-09-14（续 561）
 
 - 不变量 561；语料 C565；模式 name-the-htmatch-notproprocess-bar；反模式 htmatch-notproprocess-sold-as-bundled；L10.3 第 557 条。填 L4.4 / CometBFT 档案头字段对上余量 proposer prepare five steps not already no Process 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。417 头字段对上余量 unbundling 启动（561）。
