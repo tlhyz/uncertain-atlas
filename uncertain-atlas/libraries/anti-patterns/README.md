@@ -1,3 +1,4 @@
+- [`applysnapusage-notunable-sold-as-bundled.md`](applysnapusage-notunable-sold-as-bundled.md) — unable to retrieve next chunk 被写成已经 refetch 就齐 / 已经 REJECT_SNAPSHOT 回包 / 已经装完又对上 LastBlockAppHash（不变量 655）
 - [`applysnapusage-notinfo-sold-as-bundled.md`](applysnapusage-notinfo-sold-as-bundled.md) — all chunks accepted 后 Info 被写成已经装块时就 Info 对了 / 已经切进共识 / 已经 verified AppHash at end（不变量 654）
 - [`applysnapusage-notverify-sold-as-bundled.md`](applysnapusage-notverify-sold-as-bundled.md) — verify each chunk 被写成已经 Only AppHash 可信任就交差 / 已经 Snapshot Verification bundled / 已经 Result ACCEPT 就代表已经齐（不变量 653）
 - [`offersnaptrust-nottransition-sold-as-bundled.md`](offersnaptrust-nottransition-sold-as-bundled.md) — verified AppHash at end 被写成已经装块时就 Info 对了 / 已经切进共识 / 已经 Offer 装完（不变量 652）
