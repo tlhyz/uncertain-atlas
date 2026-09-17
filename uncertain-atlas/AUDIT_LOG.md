@@ -1,3 +1,18 @@
+| A3635 | 记录 | 会与 385 / 370 / 389 / 762 / 773 / 774 糊成「看见填了 version 就已经是 app_version 进了头 interchangeable、就已经印进本头 AppHash interchangeable、就已经是握手对齐 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams.version not already app_version in header / not already header AppHash / not already settled 正式三事（385 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。385 paramsblock vs maxbytes bundled unbundling 完成（775 item 3） |
+| A3636 | 高 | 看见 ConsensusParams.version 会被写成已经是 app_version 进了头 interchangeable / 370 interchangeable | 官方 ConsensusParams 字段 item 3：not already app_version in header / not 370 |
+| A3637 | 高 | 看见填了 version 会被写成已经印进本头 AppHash interchangeable / 370 interchangeable | 官方 ConsensusParams 字段 item 3：not already header AppHash / not 370 |
+| A3638 | 高 | 看见能回 会被写成已经是握手对齐 interchangeable | 官方 ConsensusParams 字段 item 3：not already settled |
+| A3639 | 中 | 怎样写 ConsensusParams 字段 会被抄进不确定 | 不抄。不写怎样写 ConsensusParams 字段。不另写 19 节 |
+| A3630 | 记录 | 会与 385 / 364 / 773 / 775 糊成「看见填了 validator 就已经带了公钥 interchangeable、就已经选型 interchangeable、就已经改了集合 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams.validator not already has pubkey / not already selected type / not already settled 正式三事（385 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。385 paramsblock vs maxbytes bundled unbundling 续（774 item 2） |
+| A3631 | 高 | 看见 ConsensusParams.validator 会被写成已经带了公钥 interchangeable / 364 interchangeable | 官方 ConsensusParams 字段 item 2：not already has pubkey / not 364 |
+| A3632 | 高 | 看见填了 validator 会被写成已经选型 interchangeable / 364 interchangeable | 官方 ConsensusParams 字段 item 2：not already selected type / not 364 |
+| A3633 | 高 | 看见能填 会被写成已经改了集合 interchangeable | 官方 ConsensusParams 字段 item 2：not already settled |
+| A3634 | 中 | 怎样写 ConsensusParams 字段 会被抄进不确定 | 不抄。不写怎样写 ConsensusParams 字段。不另写 19 节 |
+| A3625 | 记录 | 会与 385 / 337 / 386 / 770 / 774 / 775 糊成「看见填了 block 就已经是 MaxBytes 上限 interchangeable、就已经是 next_block_delay interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams.block not already MaxBytes cap / not already next_block_delay / not already settled 正式三事（385 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。385 paramsblock vs maxbytes bundled unbundling 启动（773 item 1） |
+| A3626 | 高 | 看见 ConsensusParams.block 会被写成已经是 MaxBytes 上限 interchangeable / 337 interchangeable | 官方 ConsensusParams 字段 item 1：not already MaxBytes cap / not 337 |
+| A3627 | 高 | 看见填了 block 会被写成已经是 next_block_delay interchangeable | 官方 ConsensusParams 字段 item 1：not already next_block_delay |
+| A3628 | 高 | 看见有字段 会被写成已经交差 interchangeable | 官方 ConsensusParams 字段 item 1：not already settled |
+| A3629 | 中 | 怎样写 ConsensusParams 字段 会被抄进不确定 | 不抄。不写怎样写 ConsensusParams 字段。不另写 19 节 |
 | A3620 | 记录 | 会与 386 / 336 / 770 / 771 糊成「看见填了 synchrony 就已经是 PBTS interchangeable、就已经是 Precision 就已经是 MessageDelay interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams.synchrony not already PBTS / not already Precision is MessageDelay / not already settled 正式三事（386 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。386 paramsevidence vs maxbytes bundled unbundling 完成（772 item 3） |
 | A3621 | 高 | 看见 ConsensusParams.synchrony 会被写成已经是 PBTS interchangeable | 官方 ConsensusParams 余栏 item 3：not already PBTS |
 | A3622 | 高 | 看见填了 synchrony 会被写成已经是 Precision 就已经是 MessageDelay interchangeable / 336 interchangeable | 官方 ConsensusParams 余栏 item 3：not already Precision is MessageDelay / not 336 |

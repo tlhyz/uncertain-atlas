@@ -1,3 +1,15 @@
+## 2026-09-17（续 892）
+
+- 不变量 775；语料 C753；模式 name-the-paramsblock-notappver-bar；反模式 paramsblock-notappver-sold-as-bundled；L10.3 第 744 条。填 L4.4 / CometBFT 档案 ConsensusParams.version not already app_version in header / not already header AppHash / not already settled 正式三事（385 余量）。385 paramsblock vs maxbytes bundled unbundling 完成（775 item 3）。
+
+## 2026-09-17（续 891）
+
+- 不变量 774；语料 C752；模式 name-the-paramsblock-notpubkey-bar；反模式 paramsblock-notpubkey-sold-as-bundled；L10.3 第 743 条。填 L4.4 / CometBFT 档案 ConsensusParams.validator not already has pubkey / not already selected type / not already settled 正式三事（385 余量）。385 paramsblock vs maxbytes bundled unbundling 续（774 item 2）。
+
+## 2026-09-17（续 890）
+
+- 不变量 773；语料 C751；模式 name-the-paramsblock-notmaxbytes-bar；反模式 paramsblock-notmaxbytes-sold-as-bundled；L10.3 第 742 条。填 L4.4 / CometBFT 档案 ConsensusParams.block not already MaxBytes cap / not already next_block_delay / not already settled 正式三事（385 余量）。385 paramsblock vs maxbytes bundled unbundling 启动（773 item 1）。
+
 ## 2026-09-17（续 889）
 
 - 不变量 772；语料 C750；模式 name-the-paramsevidence-notpbts-bar；反模式 paramsevidence-notpbts-sold-as-bundled；L10.3 第 741 条。填 L4.4 / CometBFT 档案 ConsensusParams.synchrony not already PBTS / not already Precision is MessageDelay / not already settled 正式三事（386 余量）。386 paramsevidence vs maxbytes bundled unbundling 完成（772 item 3）。

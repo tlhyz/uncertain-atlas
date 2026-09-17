@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ConsensusParams 就已经是 MaxBytes 上限、已经带了公钥、已经是 app_version 进了头」，必须分开 ConsensusParams.block 限制块大小和块间隔是不是已经是 MaxBytes 上限、ConsensusParams.validator 限制验证者公钥类型是不是已经带了公钥、ConsensusParams.version 是 ABCI 应用版本是不是已经是 app_version 进了头。可以跳过「看见填了 ConsensusParams 就已经是 MaxBytes 上限」。不要另写怎样写 ConsensusParams 字段。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ConsensusParams 就已经是 MaxBytes 上限、已经带了公钥、已经是 app_version 进了头」，必须分开 ConsensusParams.block 限制块大小和块间隔是不是已经是 MaxBytes 上限、ConsensusParams.validator 限制验证者公钥类型是不是已经带了公钥、ConsensusParams.version 是 ABCI 应用版本是不是已经是 app_version 进了头。可以跳过「看见填了 ConsensusParams 就已经是 MaxBytes 上限」。不要另写怎样写 ConsensusParams 字段。385 paramsblock vs maxbytes bundled unbundling 完成（773 item 1 / 774 item 2 / 775 item 3）；精读 [`worked-example-paramsblock-notmaxbytes-vs-bundled.md`](worked-example-paramsblock-notmaxbytes-vs-bundled.md)（不变量 773 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,6 @@
+- [`paramsblock-notappver-sold-as-bundled.md`](paramsblock-notappver-sold-as-bundled.md) — version 被写成已经是 app_version 进了头 / 已经印进本头 AppHash / 已经是握手对齐（不变量 775）
+- [`paramsblock-notpubkey-sold-as-bundled.md`](paramsblock-notpubkey-sold-as-bundled.md) — validator 被写成已经带了公钥 / 已经选型 / 已经改了集合（不变量 774）
+- [`paramsblock-notmaxbytes-sold-as-bundled.md`](paramsblock-notmaxbytes-sold-as-bundled.md) — block 被写成已经是 MaxBytes 上限 / 已经是 next_block_delay / 已经交差（不变量 773）
 - [`paramsevidence-notpbts-sold-as-bundled.md`](paramsevidence-notpbts-sold-as-bundled.md) — synchrony 被写成已经是 PBTS / 已经是 Precision 就已经是 MessageDelay / 已经交差（不变量 772）
 - [`paramsevidence-notextend-sold-as-bundled.md`](paramsevidence-notextend-sold-as-bundled.md) — abci 被写成已经 Prepare 带了扩展 / 已经切到 ABCI 2.0 / 已经交差（不变量 771）
 - [`paramsevidence-notmaxbytes-sold-as-bundled.md`](paramsevidence-notmaxbytes-sold-as-bundled.md) — evidence 被写成已经是证据 MaxBytes / 已经盖住解绑 / 已经交差（不变量 770）
