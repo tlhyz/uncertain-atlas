@@ -1,0 +1,52 @@
+# 例：看见 will not do unless instructed is not already refetch_chunks bundled / engine auto refetch（378） interchangeable / reject_senders bundled / engine auto ban（378） interchangeable / unable retrieve OfferSnapshot（485） interchangeable
+
+**层次**：实现 / ApplySnapshotChunk Usage will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事（502 余量）。  
+**分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
+**来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) ApplySnapshotChunk Usage。  
+**对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「ApplySnapshotChunk Usage will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事（502 余量）/ not 657 applysnapusage-notunless interchangeable / not 656 applysnapusage-notchoose interchangeable / not 502 applysnapusage refetch/ban bundled interchangeable」，不是 ApplySnapshotChunk Usage refetch/ban 正式二事 bundled（502），也不是 ApplySnapshotChunk 再拉 refetch/reject_senders（378）。不要另写怎样做增量验、怎样封邻居、怎样写 ApplySnapshotChunk。
+
+## 官方三件事
+
+规范把 ApplySnapshotChunk Usage 里 CometBFT will not do this unless instructed by the application 和「已经是 refetch_chunks 不论 result 都再拉再装 bundled（378） interchangeable / 已经是 reject_senders 不论 Result 都拒这些人 bundled（378） interchangeable / 已经是 unable to retrieve next chunk 引擎 reject via OfferSnapshot（485） interchangeable / 已经是 Offer 收下之后 bundled（401） interchangeable / 已经齐 interchangeable」分开写成三件独立的实现事，不是「看见 will not do unless instructed 就已经引擎自动 refetch interchangeable / 就已经引擎自动封邻居 interchangeable / 就已经 unable retrieve 换快照 interchangeable / 就已经齐 interchangeable」一件事：
+
+1. **看见 CometBFT will not do this unless instructed by the application / 看见引擎不会自己做，除非应用下指令 is not already 已经 refetch_chunks 不论 result 都再拉再装 bundled（378） interchangeable / 378 applysnap interchangeable / 397 ApplySnapshotChunk chunk 栏 interchangeable / 已经引擎自动 refetch interchangeable / 已经 refetch 不论 result 都再拉 interchangeable / refetch-sold-as-restored interchangeable，也不是已经 ApplySnapshotChunk Usage refetch/ban 正式二事 bundled（502） interchangeable / 657 applysnapusage-notunless interchangeable / 656 applysnapusage-notchoose interchangeable / 502 applysnapusage refetch/ban interchangeable / 485 applysnapusage verify/Info/unable interchangeable / 655 applysnapusage-notunable interchangeable，也不是已经 will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事 bundled（502 item 2 余量） interchangeable / 502 applysnapusage refetch/ban item 2 interchangeable，也不是已经 can choose refetch/ban not refetch_chunks bundled bundled（502 item 1 余量 / 656） interchangeable / 656 applysnapusage-notchoose interchangeable / 378 applysnap item 1 refetch_chunks interchangeable。**  
+   官方 Usage 写：CometBFT will not do this unless instructed by the application。看见 will not do this unless instructed，不是已经 refetch_chunks 列了块号 bundled（378） interchangeable——378 钉 refetch_chunks 行为，本页从 502 item 2 侧钉 not refetch_chunks bundled / engine auto refetch 单句。看见不会自己做，不是已经 ApplySnapshotChunk 再拉 bundled（378） interchangeable——378 钉 refetch/reject_senders 应用指令，本页钉 Methods Usage unless instructed 单句。看见 unless instructed by the application，不是已经 can choose refetch/ban 就代表引擎会自动做 interchangeable——656 另钉 can choose not refetch/ban bundled，本页钉 item 2 第一件事。502 applysnapusage refetch/ban unbundling 在本页 item 2 续。
+
+2. **看见 will not do this unless instructed / CometBFT will not do this is not already 已经 reject_senders 不论 Result 都拒这些人 bundled（378） interchangeable / 378 applysnap reject_senders interchangeable / 397 chunk 栏 interchangeable / 已经引擎自动封邻居 interchangeable / 已经 reject_senders 拒了人 bundled interchangeable / 332 snapshotverify interchangeable / 651 offersnaptrust-notverify item 3 avoid DoS interchangeable，也不是已经 ApplySnapshotChunk Usage refetch/ban 正式二事 bundled（502） interchangeable / 657 applysnapusage-notunless interchangeable / 656 applysnapusage-notchoose interchangeable / 502 applysnapusage refetch/ban item 1 can choose refetch/ban interchangeable / 485 applysnapusage verify/Info/unable interchangeable / 655 applysnapusage-notunable interchangeable，也不是已经 will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事 bundled（502 item 2 余量） interchangeable / 483 offersnaptrust item 2 avoid DoS interchangeable / 649 offersnapusage-notreject interchangeable / 400 offerabort interchangeable，也不是已经 ApplySnapshotChunk Result REJECT_SENDER bundled（398） interchangeable / 398 applysnap-result interchangeable / 378 applysnap item 2 reject_senders interchangeable。**  
+   官方把 Usage unless instructed 单句和 Response 栏 reject_senders bundled 分开——502 bundled 第二件事常与 378 混成「看见 will not do unless instructed 就已经 reject_senders 不论 Result 都拒这些人 interchangeable / 就已经引擎自动封邻居 interchangeable」，本页钉 not reject_senders bundled / engine auto ban 单句。看见 will not do this，不是已经 reject_senders 拒了人 bundled（378） interchangeable——378 钉 Response 栏 reject_senders，本页钉 Usage unless instructed 单句。看见 unless instructed by the application，不是已经 Snapshot Verification 封邻居就没有快照 DoS（332） interchangeable——332 钉 app requirements 封邻居，本页钉 item 2 第二件事。
+
+3. **看见 unless instructed by the application / will not do unless instructed is not already 已经 unable to retrieve next chunk 引擎 reject via OfferSnapshot（485） interchangeable / 485 applysnapusage verify/Info/unable interchangeable / 655 applysnapusage-notunable interchangeable / 655 applysnapusage-notunable item 1 not refetch/reject_senders interchangeable / 655 applysnapusage-notunable item 2 not REJECT_SNAPSHOT interchangeable / 655 applysnapusage-notunable item 3 not already matched LastBlockAppHash interchangeable / 已经应用 reset and accept or abort interchangeable，也不是已经 ApplySnapshotChunk Usage refetch/ban 正式二事 bundled（502） interchangeable / 657 applysnapusage-notunless interchangeable / 656 applysnapusage-notchoose interchangeable / 502 applysnapusage refetch/ban item 1 can choose refetch/ban interchangeable / 401 offerafter interchangeable / 648 offersnapusage-notrestored interchangeable，也不是已经 will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事 bundled（502 item 2 余量） interchangeable / 499 offersnapusage bundled interchangeable / 647 offersnapusage-notlisted interchangeable / 375 LoadSnapshotChunk 已经齐 interchangeable，也不是已经 Offer 收下之后 bundled（401） interchangeable / 401 offerafter interchangeable / 321 offerrestored interchangeable / 398 applysnap-result RETRY unless instructed interchangeable / applyretry-sold-as-refetch interchangeable。**  
+   官方把 Usage unless instructed 单句和 unable to retrieve next chunk 引擎换快照路径分开——502 bundled 第二件事常与 485 混成「看见 will not do unless instructed 就已经 unable retrieve 换快照 interchangeable / 就已经 reset and accept or abort interchangeable」，本页钉 not unable retrieve OfferSnapshot 单句。看见 unless instructed by the application，不是已经 unable to retrieve next chunk 就 reject via OfferSnapshot interchangeable——655 另钉 unable retrieve not refetch/reject_senders on ApplySnapshotChunk Usage item 3，本页钉 Methods Usage unless instructed 单句。看见 will not do this，不是已经 Offer 收下之后 bundled（401） interchangeable——401 钉 Accept 后拉块并装，本页钉 item 2 第三件事。502 applysnapusage refetch/ban unbundling 在本页 item 2 完成。
+
+怎样做增量验、怎样封邻居、怎样写 ApplySnapshotChunk 是规范里的做法，本页不抄。ApplySnapshotChunk Usage refetch/ban 正式二事 bundled（502）、can choose refetch/ban not refetch/ban bundled（502 item 1 余量 / 656）、ApplySnapshotChunk 再拉 refetch/reject_senders（378）、ApplySnapshotChunk Result RETRY/REJECT_SNAPSHOT（398）、ApplySnapshotChunk Usage verify/Info/unable（485）、unable to retrieve next chunk not refetch/reject_senders（485 item 3 余量 / 655）、Offer 收下之后拉块并装（401）、Snapshot Verification 封邻居（332）是另外那套，本页不抄。
+
+## 官方为什么这样拆
+
+- **will not do unless instructed not refetch_chunks bundled ≠ 378 applysnap interchangeable：** 官方把 Methods Usage unless instructed 单句和 Response 栏 refetch_chunks / 引擎自动 refetch bundled 分开。
+- **will not do unless instructed not reject_senders bundled ≠ 378 applysnap reject_senders interchangeable：** 官方把 Usage unless instructed 单句和 Response 栏 reject_senders / 引擎自动封邻居 bundled 分开。
+- **will not do unless instructed not unable retrieve OfferSnapshot ≠ 485/655 applysnapusage-notunable interchangeable：** 官方把 unless instructed 单句和 unable retrieve 引擎换快照路径分开；502 applysnapusage refetch/ban unbundling 完成（657 item 2）。
+
+## 和相邻页的边界
+
+| 对象 | 本页 | 那一页 |
+|---|---|---|
+| will not do unless instructed | 不是 refetch_chunks bundled / engine auto refetch（378） | 不是 can choose refetch/ban（656） |
+| will not do unless instructed | 不是 reject_senders bundled / engine auto ban（378） | 不是 Snapshot Verification ban（332） |
+| unless instructed by the application | 不是 unable retrieve OfferSnapshot（485/655） | 不是 Offer 收下之后 bundled（401） |
+
+## 产品
+
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ApplySnapshotChunk Usage will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事（502 余量），必须分开 will not do unless instructed 是不是 refetch_chunks bundled / engine auto refetch interchangeable / 378 applysnap interchangeable / 397 chunk 栏 interchangeable / refetch-sold-as-restored interchangeable、will not do unless instructed 是不是 reject_senders bundled / engine auto ban interchangeable / 378 applysnap reject_senders interchangeable / 332 snapshotverify interchangeable / 651 offersnaptrust-notverify interchangeable、unless instructed by the application 是不是 unable retrieve OfferSnapshot interchangeable / 485 applysnapusage verify/Info/unable interchangeable / 655 applysnapusage-notunable interchangeable / 401 offerafter interchangeable / 648 offersnapusage-notrestored interchangeable。可以跳过「看见 will not do unless instructed 就已经引擎自动 refetch interchangeable / 就已经 unable retrieve 换快照 interchangeable」。不要另写怎样做增量验、怎样封邻居。502 applysnapusage refetch/ban unbundling 在本页 item 2 完成。
+
+## 本页不抄
+
+- 怎样做增量验、怎样封邻居、怎样写 ApplySnapshotChunk、怎样再拉。
+- ApplySnapshotChunk Usage refetch/ban 正式二事 bundled。那是不变量 502。
+- can choose refetch/ban not refetch/ban bundled。那是不变量 502 item 1 余量 / 656。
+- ApplySnapshotChunk 再拉 refetch/reject_senders。那是不变量 378。
+- ApplySnapshotChunk Result RETRY/REJECT_SNAPSHOT。那是不变量 398。
+- ApplySnapshotChunk Usage verify/Info/unable。那是不变量 485。
+- unable to retrieve next chunk not refetch/reject_senders。那是不变量 485 item 3 余量 / 655。
+- Offer 收下之后拉块并装。那是不变量 401。
+- Snapshot Verification 封邻居。那是不变量 332。

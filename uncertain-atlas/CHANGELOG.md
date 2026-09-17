@@ -1,3 +1,7 @@
+## 2026-09-17（续 774）
+
+- 不变量 657；语料 C634；模式 name-the-applysnapusage-notunless-bar；反模式 applysnapusage-notunless-sold-as-bundled；L10.3 第 626 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事（502 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。502 applysnapusage refetch/ban unbundling 完成（657 item 2）。
+
 ## 2026-09-17（续 773）
 
 - 不变量 656；语料 C633；模式 name-the-applysnapusage-notchoose-bar；反模式 applysnapusage-notchoose-sold-as-bundled；L10.3 第 625 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage can choose refetch/ban not refetch_chunks bundled / not reject_senders bundled / not RETRY bundled 正式三事（502 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。502 applysnapusage refetch/ban unbundling 启动（656 item 1）。
