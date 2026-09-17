@@ -1,3 +1,15 @@
+## 2026-09-17（续 937）
+
+- 不变量 820；语料 C798；模式 name-the-extvoteinfo-notenabled-bar；反模式 extvoteinfo-notenabled-sold-as-bundled；L10.3 第 789 条。填 L4.4 / CometBFT 档案 扩展关掉全空 not already enable height / not already settled / not already from block 正式三事（369 余量）。369 extvoteinfo vs local bundled unbundling 完成（820 item 3）。
+
+## 2026-09-17（续 936）
+
+- 不变量 819；语料 C797；模式 name-the-extvoteinfo-notsigned-bar；反模式 extvoteinfo-notsigned-sold-as-bundled；L10.3 第 788 条。填 L4.4 / CometBFT 档案 验过的签交给应用 not already signed as-is / not already replay protected / not already must-fill 正式三事（369 余量）。369 extvoteinfo vs local bundled unbundling 续（819 item 2）。
+
+## 2026-09-17（续 935）
+
+- 不变量 818；语料 C796；模式 name-the-extvoteinfo-notblock-bar；反模式 extvoteinfo-notblock-sold-as-bundled；L10.3 第 787 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo 抽出 not already from block / not already has pubkey / not already settled 正式三事（369 余量）。369 extvoteinfo vs local bundled unbundling 启动（818 item 1）。
+
 ## 2026-09-17（续 934）
 
 - 不变量 817；语料 C795；模式 name-the-info-notpersist-bar；反模式 info-notpersist-sold-as-bundled；L10.3 第 786 条。填 L4.4 / CometBFT 档案 last_block 落盘 not already settled / not already crash-three-step Commit / not already pruning 正式三事（370 余量）。370 info vs handshake bundled unbundling 完成（817 item 3）。

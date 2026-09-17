@@ -1,3 +1,6 @@
+- [`extvoteinfo-notenabled-sold-as-bundled.md`](extvoteinfo-notenabled-sold-as-bundled.md) — 扩展关掉全空 被写成已经到了启用高度 / 已经交差 / 已经从块里抽出（不变量 820）
+- [`extvoteinfo-notsigned-sold-as-bundled.md`](extvoteinfo-notsigned-sold-as-bundled.md) — 验过的签交给应用 被写成已经按原样签 / 已经有重放保护 / 已经必须填（不变量 819）
+- [`extvoteinfo-notblock-sold-as-bundled.md`](extvoteinfo-notblock-sold-as-bundled.md) — 本进程抽出 被写成已经从块里抽出 / 已经带了公钥 / 已经交差（不变量 818）
 - [`info-notpersist-sold-as-bundled.md`](info-notpersist-sold-as-bundled.md) — last_block 落盘 被写成已经交差 / 已经是崩溃三步已经 Commit / 已经在剪（不变量 817）
 - [`info-notapphash-sold-as-bundled.md`](info-notapphash-sold-as-bundled.md) — app_version 进头 被写成已经印进本头 AppHash / 已经是本高度交差 / 已经选型（不变量 816）
 - [`info-notreplay-sold-as-bundled.md`](info-notreplay-sold-as-bundled.md) — 握手对齐 被写成已经是快照重放 / 已经是 QueryState / 已经交差（不变量 815）

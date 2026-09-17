@@ -1,3 +1,18 @@
+| A3860 | 记录 | 会与 369 / 330 / 361 / 365 / 818 / 819 糊成「看见空着就已经到了启用高度 interchangeable、就已经交差 interchangeable、就已经从块里抽出 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 扩展关掉全空 not already enable height / not already settled / not already from block 正式三事（369 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。369 extvoteinfo vs local bundled unbundling 完成（820 item 3） |
+| A3861 | 高 | 看见扩展关掉全空 会被写成已经到了启用高度 interchangeable / 330 interchangeable | 官方 ExtendedVoteInfo item 3：not already enable height / not 330 |
+| A3862 | 高 | 看见关掉了 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo item 3：not already settled |
+| A3863 | 高 | 看见字段在 会被写成已经从块里抽出 interchangeable | 官方 ExtendedVoteInfo item 3：not already from block |
+| A3864 | 中 | 怎样写 ExtendedVoteInfo 会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo。不另写 19 节 |
+| A3855 | 记录 | 会与 369 / 358 / 425 / 361 / 818 / 820 糊成「看见有签就已经按原样签 interchangeable、就已经有重放保护 interchangeable、就已经必须填 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 验过的签交给应用 not already signed as-is / not already replay protected / not already must-fill 正式三事（369 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。369 extvoteinfo vs local bundled unbundling 续（819 item 2） |
+| A3856 | 高 | 看见验过的签交给应用 会被写成已经按原样签 interchangeable / 358 interchangeable | 官方 ExtendedVoteInfo item 2：not already signed as-is / not 358 |
+| A3857 | 高 | 看见交给应用 会被写成已经有重放保护 interchangeable | 官方 ExtendedVoteInfo item 2：not already replay protected |
+| A3858 | 高 | 看见签了空切片 会被写成已经必须填 interchangeable | 官方 ExtendedVoteInfo item 2：not already must-fill |
+| A3859 | 中 | 怎样写 ExtendedVoteInfo 会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo。不另写 19 节 |
+| A3850 | 记录 | 会与 369 / 365 / 421 / 394 / 749 / 819 / 820 糊成「看见 Prepare 里有扩展就已经从块里抽出 interchangeable、就已经带了公钥 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo 抽出 not already from block / not already has pubkey / not already settled 正式三事（369 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。369 extvoteinfo vs local bundled unbundling 启动（818 item 1） |
+| A3851 | 高 | 看见 ExtendedVoteInfo 抽出 会被写成已经从块里抽出 interchangeable / 365 interchangeable | 官方 ExtendedVoteInfo item 1：not already from block / not 365 |
+| A3852 | 高 | 看见有 validator 会被写成已经带了公钥 interchangeable | 官方 ExtendedVoteInfo item 1：not already has pubkey |
+| A3853 | 高 | 看见能抽 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo item 1：not already settled |
+| A3854 | 中 | 怎样写 ExtendedVoteInfo 会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo。不另写 19 节 |
 | A3845 | 记录 | 会与 370 / 320 / 481 / 701 / 497 / 665 / 815 / 816 糊成「看见回了这两列就已经交差 interchangeable、就已经是崩溃三步已经 Commit interchangeable、就已经在剪 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 last_block 落盘 not already settled / not already crash-three-step Commit / not already pruning 正式三事（370 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。370 info vs handshake bundled unbundling 完成（817 item 3） |
 | A3846 | 高 | 看见 last_block 落盘 会被写成已经交差 interchangeable | 官方 Info 握手 item 3：not already settled |
 | A3847 | 高 | 看见要在 Commit 里落 会被写成已经是崩溃三步已经 Commit interchangeable / 320 interchangeable | 官方 Info 握手 item 3：not already crash-three-step Commit / not 320 |

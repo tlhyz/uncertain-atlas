@@ -1,3 +1,6 @@
+- [`name-the-extvoteinfo-notenabled-bar.md`](name-the-extvoteinfo-notenabled-bar.md) — 扩展关掉全空 not already enable height / not already settled / not already from block 正式三事（369 余量）（不变量 820）
+- [`name-the-extvoteinfo-notsigned-bar.md`](name-the-extvoteinfo-notsigned-bar.md) — 验过的签交给应用 not already signed as-is / not already replay protected / not already must-fill 正式三事（369 余量）（不变量 819）
+- [`name-the-extvoteinfo-notblock-bar.md`](name-the-extvoteinfo-notblock-bar.md) — ExtendedVoteInfo 抽出 not already from block / not already has pubkey / not already settled 正式三事（369 余量）（不变量 818）
 - [`name-the-info-notpersist-bar.md`](name-the-info-notpersist-bar.md) — last_block 落盘 not already settled / not already crash-three-step Commit / not already pruning 正式三事（370 余量）（不变量 817）
 - [`name-the-info-notapphash-bar.md`](name-the-info-notapphash-bar.md) — app_version 进头 not already header AppHash / not already this-height settled / not already selected 正式三事（370 余量）（不变量 816）
 - [`name-the-info-notreplay-bar.md`](name-the-info-notreplay-bar.md) — Info 握手 not already snapshot replay / not already QueryState / not already settled 正式三事（370 余量）（不变量 815）

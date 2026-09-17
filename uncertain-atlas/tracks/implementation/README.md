@@ -319,6 +319,9 @@
 - [`worked-example-retain-vs-kept.md`](worked-example-retain-vs-kept.md) — retain_height 默认 0 ≠ 已经在剪；低于这个高度的块可以被删 ≠ 已经没有历史；全网都删了会永久丢 ≠ 已经能从创世再装（不变量 366）
 - [`worked-example-lane-vs-priority.md`](worked-example-lane-vs-priority.md) — 没定义 lane_priorities ≠ 已经排了优先；空表对空默认 ≠ 已经选型；优先级 0 留给不设道 ≠ 已经进了块（不变量 367）
 - [`worked-example-snapshot-vs-identical.md`](worked-example-snapshot-vs-identical.md) — 快照全字段（含 Metadata）对上 ≠ 已经装完；引擎不解释 format / hash ≠ 已经轻验 AppHash；空快照也至少 1 块 ≠ 已经齐（不变量 368）
+- [`worked-example-extvoteinfo-notenabled-vs-bundled.md`](worked-example-extvoteinfo-notenabled-vs-bundled.md) — 关掉全空≠330 enable height/settled/from block；≠369 bundled（不变量 820）
+- [`worked-example-extvoteinfo-notsigned-vs-bundled.md`](worked-example-extvoteinfo-notsigned-vs-bundled.md) — 交给应用≠358 as-is/replay/must-fill；≠369 bundled（不变量 819）
+- [`worked-example-extvoteinfo-notblock-vs-bundled.md`](worked-example-extvoteinfo-notblock-vs-bundled.md) — 本进程抽出≠365 from block/pubkey/settled；≠369 bundled（不变量 818）
 - [`worked-example-extvoteinfo-vs-local.md`](worked-example-extvoteinfo-vs-local.md) — ExtendedVoteInfo 从本进程抽出 ≠ 已经从块里抽出；把验过的签交给应用 ≠ 已经按原样签；扩展关掉则字段全空 ≠ 已经到了启用高度（不变量 369）
 - [`worked-example-info-notpersist-vs-bundled.md`](worked-example-info-notpersist-vs-bundled.md) — last_block落盘≠320 crash/481 persist/pruning；≠370 bundled（不变量 817）
 - [`worked-example-info-notapphash-vs-bundled.md`](worked-example-info-notapphash-vs-bundled.md) — app_version进头≠147 AppHash/this-height/selected；≠370 bundled（不变量 816）

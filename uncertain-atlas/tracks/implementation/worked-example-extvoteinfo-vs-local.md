@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里有扩展就已经从块里抽出、已经按原样签、已经到了启用高度」，必须分开从本进程抽出是不是已经从块里抽出、把验过的签交给应用是不是已经按原样签、扩展关掉则字段全空是不是已经到了启用高度。可以跳过「看见 Prepare 里有扩展就已经从块里抽出」。不要另写怎样写 ExtendedVoteInfo。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里有扩展就已经从块里抽出、已经按原样签、已经到了启用高度」，必须分开从本进程抽出是不是已经从块里抽出、把验过的签交给应用是不是已经按原样签、扩展关掉则字段全空是不是已经到了启用高度。可以跳过「看见 Prepare 里有扩展就已经从块里抽出」。不要另写怎样写 ExtendedVoteInfo。369 extvoteinfo vs local bundled unbundling 完成（818 item 1 / 819 item 2 / 820 item 3）；精读 [`worked-example-extvoteinfo-notblock-vs-bundled.md`](worked-example-extvoteinfo-notblock-vs-bundled.md)（不变量 818 item 1）。
 
 ## 本页不抄
 
