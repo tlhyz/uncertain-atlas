@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 InitChain 请求余栏就已经没有参数、已经没有集合、已经验过应用状态」，必须分开 InitChain 请求 consensus_params 是起步共识参数是不是已经没有参数、InitChain 请求 validators 是起步验证者名单是不是已经没有集合、InitChain 请求 app_state_bytes 是序列化起步应用状态是不是已经验过应用状态。可以跳过「看见填了 InitChain 请求余栏就已经没有参数」。不要另写怎样写 InitChain 请求余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 InitChain 请求余栏就已经没有参数、已经没有集合、已经验过应用状态」，必须分开 InitChain 请求 consensus_params 是起步共识参数是不是已经没有参数、InitChain 请求 validators 是起步验证者名单是不是已经没有集合、InitChain 请求 app_state_bytes 是序列化起步应用状态是不是已经验过应用状态。可以跳过「看见填了 InitChain 请求余栏就已经没有参数」。不要另写怎样写 InitChain 请求余栏。388 initparams vs empty bundled unbundling 完成（764 item 1 / 765 item 2 / 766 item 3）；精读 [`worked-example-initparams-notnoparams-vs-bundled.md`](worked-example-initparams-notnoparams-vs-bundled.md)（不变量 764 item 1）。
 
 ## 本页不抄
 

@@ -341,6 +341,9 @@
 - [`worked-example-paramsblock-vs-maxbytes.md`](worked-example-paramsblock-vs-maxbytes.md) — ConsensusParams.block 限制块大小和块间隔 ≠ 已经是 MaxBytes 上限；ConsensusParams.validator 限制验证者公钥类型 ≠ 已经带了公钥；ConsensusParams.version 是 ABCI 应用版本 ≠ 已经是 app_version 进了头（不变量 385）
 - [`worked-example-paramsevidence-vs-maxbytes.md`](worked-example-paramsevidence-vs-maxbytes.md) — ConsensusParams.evidence 限制拜占庭证据是否合法 ≠ 已经是证据 MaxBytes；ConsensusParams.abci 是 ABCI 相关参数 ≠ 已经 Prepare 带了扩展；ConsensusParams.synchrony 定提案时间戳合法界 ≠ 已经是 PBTS（不变量 386）
 - [`worked-example-inittime-vs-genesis.md`](worked-example-inittime-vs-genesis.md) — InitChain 请求 time 是创世时间 ≠ 已经过了 genesis_time；InitChain 请求 chain_id 是链的 ID ≠ 已经有了 ChainID；InitChain 请求 initial_height 是起步块高度 ≠ 已经能跳步（不变量 387）
+- [`worked-example-initparams-notverified-vs-bundled.md`](worked-example-initparams-notverified-vs-bundled.md) — app_state_bytes≠303 verified/balances/already settled；≠388 bundled（不变量 766）
+- [`worked-example-initparams-notnoset-vs-bundled.md`](worked-example-initparams-notnoset-vs-bundled.md) — validators≠318 no set/empty list/already settled；≠388 bundled（不变量 765）
+- [`worked-example-initparams-notnoparams-vs-bundled.md`](worked-example-initparams-notnoparams-vs-bundled.md) — consensus_params≠319 no params/empty response/already settled；≠388 bundled（不变量 764）
 - [`worked-example-initparams-vs-empty.md`](worked-example-initparams-vs-empty.md) — InitChain 请求 consensus_params 是起步共识参数 ≠ 已经没有参数；InitChain 请求 validators 是起步验证者名单 ≠ 已经没有集合；InitChain 请求 app_state_bytes 是序列化起步应用状态 ≠ 已经验过应用状态（不变量 388）
 - [`worked-example-infodata-notchktxspace-vs-bundled.md`](worked-example-infodata-notchktxspace-vs-bundled.md) — Query codespace≠381 CheckTx codespace/response code/already settled；≠389 bundled（不变量 763）
 - [`worked-example-infodata-notappversion-vs-bundled.md`](worked-example-infodata-notappversion-vs-bundled.md) — Info version≠379 app_version/header AppHash/already settled；≠389 bundled（不变量 762）

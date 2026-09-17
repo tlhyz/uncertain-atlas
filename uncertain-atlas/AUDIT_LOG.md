@@ -1,3 +1,18 @@
+| A3590 | 记录 | 会与 388 / 303 / 392 / 755 / 764 / 765 糊成「看见填了 JSON 字节就已经验过应用状态 interchangeable、就已经懂余额 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 app_state_bytes not already verified / not already balances / not already settled 正式三事（388 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。388 initparams vs empty bundled unbundling 完成（766 item 3） |
+| A3591 | 高 | 看见 InitChain 请求 app_state_bytes 会被写成已经验过应用状态 interchangeable / 303 interchangeable | 官方 InitChain 请求余栏 item 3：not already verified / not 303 |
+| A3592 | 高 | 看见填了 JSON 字节 会被写成已经懂余额 interchangeable / 303 interchangeable | 官方 InitChain 请求余栏 item 3：not already balances / not 303 |
+| A3593 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 InitChain 请求余栏 item 3：not already settled |
+| A3594 | 中 | 怎样写 InitChain 请求余栏 会被抄进不确定 | 不抄。不写怎样写 InitChain 请求余栏。不另写 19 节 |
+| A3585 | 记录 | 会与 388 / 318 / 764 / 766 糊成「看见填了起步名单就已经没有集合 interchangeable、就已经用了回包空名单 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 validators not already no set / not already empty list / not already settled 正式三事（388 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。388 initparams vs empty bundled unbundling 续（765 item 2） |
+| A3586 | 高 | 看见 InitChain 请求 validators 会被写成已经没有集合 interchangeable / 318 interchangeable | 官方 InitChain 请求余栏 item 2：not already no set / not 318 |
+| A3587 | 高 | 看见填了起步名单 会被写成已经用了回包空名单 interchangeable / 318 interchangeable | 官方 InitChain 请求余栏 item 2：not already empty list / not 318 |
+| A3588 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 InitChain 请求余栏 item 2：not already settled |
+| A3589 | 中 | 怎样写 InitChain 请求余栏 会被抄进不确定 | 不抄。不写怎样写 InitChain 请求余栏。不另写 19 节 |
+| A3580 | 记录 | 会与 388 / 319 / 495 / 765 / 766 糊成「看见填了起步参数就已经没有参数 interchangeable、就已经用了回包空参数 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 consensus_params not already no params / not already empty response / not already settled 正式三事（388 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。388 initparams vs empty bundled unbundling 启动（764 item 1） |
+| A3581 | 高 | 看见 InitChain 请求 consensus_params 会被写成已经没有参数 interchangeable / 319 interchangeable | 官方 InitChain 请求余栏 item 1：not already no params / not 319 |
+| A3582 | 高 | 看见填了起步参数 会被写成已经用了回包空参数 interchangeable / 319 interchangeable | 官方 InitChain 请求余栏 item 1：not already empty response / not 319 |
+| A3583 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 InitChain 请求余栏 item 1：not already settled |
+| A3584 | 中 | 怎样写 InitChain 请求余栏 会被抄进不确定 | 不抄。不写怎样写 InitChain 请求余栏。不另写 19 节 |
 | A3575 | 记录 | 会与 389 / 381 / 393 / 748 / 761 / 762 糊成「看见写了空间就已经是 CheckTx 码空间 interchangeable、就已经是回包码 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 codespace not already CheckTx codespace / not already response code / not already settled 正式三事（389 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。389 infodata vs appversion bundled unbundling 完成（763 item 3） |
 | A3576 | 高 | 看见 Query 回包 codespace 会被写成已经是 CheckTx 码空间 interchangeable / 381 interchangeable | 官方 Info 回包余栏 item 3：not already CheckTx codespace / not 381 |
 | A3577 | 高 | 看见写了空间 会被写成已经是回包码 interchangeable / 381 interchangeable | 官方 Info 回包余栏 item 3：not already response code / not 381 |

@@ -15,9 +15,9 @@
 完成标准（事实 + 建议混合，见各条标注）：
 
 1. 五条轨（index / courses / protocols / tracks / libraries）互相指认，无孤立读书笔记。
-2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~763）。
+2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~766）。
 3. 决策矩阵「不确定候选」列填完**建议档**（非最终选型）。
-4. 对抗语料 C01–C741+ 有 runner，能批量扫描文案/测试钩子。
+4. 对抗语料 C01–C744+ 有 runner，能批量扫描文案/测试钩子。
 5. 过滤器页链（Cardano / Babylon / EigenLayer 等）要么补 19 节，要么在 index 明确「永久过滤器」。
 6. 单一 canonical 分支 + 清晰 merge 策略（见 Phase 0）。
 
@@ -34,7 +34,7 @@
 | 协议档案 | 20+ 链/品类 19 节模板 | 强 |
 | 横向专题 | 16 tracks；failure-museum 92+ 案 | 强 |
 | 模式/反模式 | 500+ design-patterns；650+ anti-patterns | 强 |
-| 不变量库 | 763+ 可测试句；ABCI++ 主线 | 进行中（强） |
+| 不变量库 | 766+ 可测试句；ABCI++ 主线 | 进行中（强） |
 | 通读路径 | `index/04-study-path.md` 六通 | 强 |
 
 ### 需调整
@@ -130,8 +130,9 @@
 | 2026-09-17 | P1-3 755–757 InitChain 回包余栏拆句（392 item 1/2/3） |
 | 2026-09-17 | P1-3 758–760 ExecTxResult 日志栏拆句（414 item 1/2/3） |
 | 2026-09-17 | P1-3 761–763 Info 回包余栏拆句（389 item 1/2/3） |
+| 2026-09-17 | P1-3 764–766 InitChain 请求余栏拆句（388 item 1/2/3） |
 
-下一批默认：**P1-3 ABCI++ 不变量 764+**（继续 cometbft 拆句）。  
+下一批默认：**P1-3 ABCI++ 不变量 767+**（继续 cometbft 拆句）。  
 唤醒后先跑 `python3 tools/review_audit.py`，见 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
 ---

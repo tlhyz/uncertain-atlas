@@ -1,3 +1,6 @@
+- [`name-the-initparams-notverified-bar.md`](name-the-initparams-notverified-bar.md) — InitChain 请求 app_state_bytes not already verified / not already balances / not already settled 正式三事（388 余量）（不变量 766）
+- [`name-the-initparams-notnoset-bar.md`](name-the-initparams-notnoset-bar.md) — InitChain 请求 validators not already no set / not already empty list / not already settled 正式三事（388 余量）（不变量 765）
+- [`name-the-initparams-notnoparams-bar.md`](name-the-initparams-notnoparams-bar.md) — InitChain 请求 consensus_params not already no params / not already empty response / not already settled 正式三事（388 余量）（不变量 764）
 - [`name-the-infodata-notchktxspace-bar.md`](name-the-infodata-notchktxspace-bar.md) — Query 回包 codespace not already CheckTx codespace / not already response code / not already settled 正式三事（389 余量）（不变量 763）
 - [`name-the-infodata-notappversion-bar.md`](name-the-infodata-notappversion-bar.md) — Info 回包 version not already app_version / not already header AppHash / not already settled 正式三事（389 余量）（不变量 762）
 - [`name-the-infodata-nothandshake-bar.md`](name-the-infodata-nothandshake-bar.md) — Info 回包 data not already handshake / not already snapshot replay / not already settled 正式三事（389 余量）（不变量 761）

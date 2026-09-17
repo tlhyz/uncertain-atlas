@@ -1,3 +1,6 @@
+- [`initparams-notverified-sold-as-bundled.md`](initparams-notverified-sold-as-bundled.md) — app_state_bytes 被写成已经验过应用状态 / 已经懂余额 / 已经交差（不变量 766）
+- [`initparams-notnoset-sold-as-bundled.md`](initparams-notnoset-sold-as-bundled.md) — validators 被写成已经没有集合 / 已经用了回包空名单 / 已经交差（不变量 765）
+- [`initparams-notnoparams-sold-as-bundled.md`](initparams-notnoparams-sold-as-bundled.md) — consensus_params 被写成已经没有参数 / 已经用了回包空参数 / 已经交差（不变量 764）
 - [`infodata-notchktxspace-sold-as-bundled.md`](infodata-notchktxspace-sold-as-bundled.md) — Query codespace 被写成已经是 CheckTx 码空间 / 已经是回包码 / 已经交差（不变量 763）
 - [`infodata-notappversion-sold-as-bundled.md`](infodata-notappversion-sold-as-bundled.md) — Info version 被写成已经是 app_version / 已经印进本头 / 已经交差（不变量 762）
 - [`infodata-nothandshake-sold-as-bundled.md`](infodata-nothandshake-sold-as-bundled.md) — Info data 被写成已经握手对齐 / 已经是快照重放 / 已经交差（不变量 761）

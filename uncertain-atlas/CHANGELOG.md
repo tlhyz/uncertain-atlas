@@ -1,3 +1,15 @@
+## 2026-09-17（续 883）
+
+- 不变量 766；语料 C744；模式 name-the-initparams-notverified-bar；反模式 initparams-notverified-sold-as-bundled；L10.3 第 735 条。填 L4.4 / CometBFT 档案 InitChain 请求 app_state_bytes not already verified / not already balances / not already settled 正式三事（388 余量）。388 initparams vs empty bundled unbundling 完成（766 item 3）。
+
+## 2026-09-17（续 882）
+
+- 不变量 765；语料 C743；模式 name-the-initparams-notnoset-bar；反模式 initparams-notnoset-sold-as-bundled；L10.3 第 734 条。填 L4.4 / CometBFT 档案 InitChain 请求 validators not already no set / not already empty list / not already settled 正式三事（388 余量）。388 initparams vs empty bundled unbundling 续（765 item 2）。
+
+## 2026-09-17（续 881）
+
+- 不变量 764；语料 C742；模式 name-the-initparams-notnoparams-bar；反模式 initparams-notnoparams-sold-as-bundled；L10.3 第 733 条。填 L4.4 / CometBFT 档案 InitChain 请求 consensus_params not already no params / not already empty response / not already settled 正式三事（388 余量）。388 initparams vs empty bundled unbundling 启动（764 item 1）。
+
 ## 2026-09-17（续 880）
 
 - 不变量 763；语料 C741；模式 name-the-infodata-notchktxspace-bar；反模式 infodata-notchktxspace-sold-as-bundled；L10.3 第 732 条。填 L4.4 / CometBFT 档案 Query 回包 codespace not already CheckTx codespace / not already response code / not already settled 正式三事（389 余量）。389 infodata vs appversion bundled unbundling 完成（763 item 3）。
