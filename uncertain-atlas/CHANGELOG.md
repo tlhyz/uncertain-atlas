@@ -1,3 +1,7 @@
+## 2026-09-17（续 782）
+
+- 不变量 665；语料 C642；模式 name-the-infousage-notcommitpersist-bar；反模式 infousage-notcommitpersist-sold-as-bundled；L10.3 第 634 条。填 L4.4 / CometBFT 档案 Info Usage last_block persisted during Commit not Info 握手 bundled / not Commit persist signal / not Info response last_block fields 正式三事（497 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。497 infousage persist/lane unbundling 启动（665 item 1）。
+
 ## 2026-09-17（续 781）
 
 - 不变量 664；语料 C641；模式 name-the-infousage-notpriorityzero-bar；反模式 infousage-notpriorityzero-sold-as-bundled；L10.3 第 633 条。填 L4.4 / CometBFT 档案 Info Usage priority 0 reserved for empty lane_id not Info 车道 bundled / not CheckTx empty lane_id default lane / not CheckTx Priority consensus order 正式三事（498 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。498 infousage default_lane/priority0 unbundling 完成（664 item 2）。
