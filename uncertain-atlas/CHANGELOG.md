@@ -1,3 +1,15 @@
+## 2026-09-17（续 862）
+
+- 不变量 745；语料 C723；模式 name-the-proofop-notquerylog-bar；反模式 proofop-notquerylog-sold-as-bundled；L10.3 第 714 条。填 L4.4 / CometBFT 档案 CheckTx 回包 log not Query log / not CheckTx Data used / not already settled 正式三事（390 余量）。390 proofop vs key bundled unbundling 完成（745 item 3）。
+
+## 2026-09-17（续 861）
+
+- 不变量 744；语料 C722；模式 name-the-proofop-notproofops-bar；反模式 proofop-notproofops-sold-as-bundled；L10.3 第 713 条。填 L4.4 / CometBFT 档案 ProofOp.data not proof_ops / not already AppHash matched / not already settled 正式三事（390 余量）。390 proofop vs key bundled unbundling 续（744 item 2）。
+
+## 2026-09-17（续 860）
+
+- 不变量 743；语料 C721；模式 name-the-proofop-notquerykey-bar；反模式 proofop-notquerykey-sold-as-bundled；L10.3 第 712 条。填 L4.4 / CometBFT 档案 ProofOp.key not Query response key / not ProofOp type / not already settled 正式三事（390 余量）。390 proofop vs key bundled unbundling 启动（743 item 1）。
+
 ## 2026-09-17（续 859）
 
 - 不变量 742；语料 C720；模式 name-the-applychunk-notoffer-bar；反模式 applychunk-notoffer-sold-as-bundled；L10.3 第 711 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk 回包 result not Offer result / not already restored / not Apply Result enum 正式三事（397 余量）。397 applychunk vs loadchunk bundled unbundling 完成（742 item 3）。

@@ -1,3 +1,6 @@
+- [`name-the-proofop-notquerylog-bar.md`](name-the-proofop-notquerylog-bar.md) — CheckTx 回包 log not Query log / not CheckTx Data used / not already settled 正式三事（390 余量）（不变量 745）
+- [`name-the-proofop-notproofops-bar.md`](name-the-proofop-notproofops-bar.md) — ProofOp.data not proof_ops / not already AppHash matched / not already settled 正式三事（390 余量）（不变量 744）
+- [`name-the-proofop-notquerykey-bar.md`](name-the-proofop-notquerykey-bar.md) — ProofOp.key not Query response key / not ProofOp type / not already settled 正式三事（390 余量）（不变量 743）
 - [`name-the-applychunk-notoffer-bar.md`](name-the-applychunk-notoffer-bar.md) — ApplySnapshotChunk 回包 result not Offer result / not already restored / not Apply Result enum 正式三事（397 余量）（不变量 742）
 - [`name-the-applychunk-notsenders-bar.md`](name-the-applychunk-notsenders-bar.md) — ApplySnapshotChunk 请求 sender not reject_senders / not already banned / not REJECT_SENDER 正式三事（397 余量）（不变量 741）
 - [`name-the-applychunk-notload-bar.md`](name-the-applychunk-notload-bar.md) — ApplySnapshotChunk 请求 chunk not already loading / not already complete / not Usage retrieve 正式三事（397 余量）（不变量 740）

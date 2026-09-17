@@ -1,3 +1,18 @@
+| A3485 | 记录 | 会与 390 / 384 / 743 / 744 糊成「看见回了日志就已经是 Query 日志 interchangeable、就已经 Data 被引擎用了 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 回包 log not Query log / not CheckTx Data used / not already settled 正式三事（390 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。390 proofop vs key bundled unbundling 完成（745 item 3） |
+| A3486 | 高 | 看见 CheckTx 回包 log 会被写成已经是 Query 日志 interchangeable / 384 interchangeable | 官方 ProofOp 键 item 3：not Query log / not 384 |
+| A3487 | 高 | 看见回了日志 会被写成已经 Data 被引擎用了 interchangeable | 官方 ProofOp 键 item 3：not CheckTx Data used |
+| A3488 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 ProofOp 键 item 3：not already settled |
+| A3489 | 中 | 怎样写 ProofOp 键 会被抄进不确定 | 不抄。不写怎样写 ProofOp 键。不另写 19 节 |
+| A3480 | 记录 | 会与 390 / 325 / 743 / 745 糊成「看见填了 data 就已经是 proof_ops interchangeable、就已经对上 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProofOp.data not proof_ops / not already AppHash matched / not already settled 正式三事（390 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。390 proofop vs key bundled unbundling 续（744 item 2） |
+| A3481 | 高 | 看见 ProofOp.data 会被写成已经是 proof_ops interchangeable / 325 interchangeable | 官方 ProofOp 键 item 2：not proof_ops / not 325 |
+| A3482 | 高 | 看见填了 data 会被写成已经对上 AppHash interchangeable / 325 interchangeable | 官方 ProofOp 键 item 2：not already AppHash matched / not 325 |
+| A3483 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 ProofOp 键 item 2：not already settled |
+| A3484 | 中 | 怎样写 ProofOp 键 会被抄进不确定 | 不抄。不写怎样写 ProofOp 键。不另写 19 节 |
+| A3475 | 记录 | 会与 390 / 380 / 744 / 745 糊成「看见填了 key 就已经是 Query 回包键 interchangeable、就已经是 ProofOp 类型 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProofOp.key not Query response key / not ProofOp type / not already settled 正式三事（390 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。390 proofop vs key bundled unbundling 启动（743 item 1） |
+| A3476 | 高 | 看见 ProofOp.key 会被写成已经是 Query 回包键 interchangeable / 380 interchangeable | 官方 ProofOp 键 item 1：not Query response key / not 380 |
+| A3477 | 高 | 看见填了 key 会被写成已经是 ProofOp 类型 interchangeable | 官方 ProofOp 键 item 1：not ProofOp type |
+| A3478 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 ProofOp 键 item 1：not already settled |
+| A3479 | 中 | 怎样写 ProofOp 键 会被抄进不确定 | 不抄。不写怎样写 ProofOp 键。不另写 19 节 |
 | A3470 | 记录 | 会与 397 / 396 / 738 / 321 / 398 / 740 / 741 糊成「看见回了 result 就已经是 Offer 的结果 interchangeable、就已经装完 interchangeable、就已经 Apply Result 枚举 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk 回包 result not Offer result / not already restored / not Apply Result enum 正式三事（397 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。397 applychunk vs loadchunk bundled unbundling 完成（742 item 3） |
 | A3471 | 高 | 看见 ApplySnapshotChunk 回包 result 会被写成已经是 Offer 的结果 interchangeable / 396 / 738 interchangeable | 官方 ApplySnapshotChunk 请求 item 3：not Offer result / not 396 |
 | A3472 | 高 | 看见回了 result 会被写成已经装完 interchangeable / 321 interchangeable | 官方 ApplySnapshotChunk 请求 item 3：not already restored / not 321 |

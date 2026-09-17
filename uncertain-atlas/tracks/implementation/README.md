@@ -343,6 +343,9 @@
 - [`worked-example-inittime-vs-genesis.md`](worked-example-inittime-vs-genesis.md) — InitChain 请求 time 是创世时间 ≠ 已经过了 genesis_time；InitChain 请求 chain_id 是链的 ID ≠ 已经有了 ChainID；InitChain 请求 initial_height 是起步块高度 ≠ 已经能跳步（不变量 387）
 - [`worked-example-initparams-vs-empty.md`](worked-example-initparams-vs-empty.md) — InitChain 请求 consensus_params 是起步共识参数 ≠ 已经没有参数；InitChain 请求 validators 是起步验证者名单 ≠ 已经没有集合；InitChain 请求 app_state_bytes 是序列化起步应用状态 ≠ 已经验过应用状态（不变量 388）
 - [`worked-example-infodata-vs-appversion.md`](worked-example-infodata-vs-appversion.md) — Info 回包 data 是任意信息 ≠ 已经是握手对齐；Info 回包 version 是应用软件语义版本 ≠ 已经是 app_version；Query 回包 codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 389）
+- [`worked-example-proofop-notquerylog-vs-bundled.md`](worked-example-proofop-notquerylog-vs-bundled.md) — CheckTx log≠384 Query log/Data used/already settled；≠390 bundled（不变量 745）
+- [`worked-example-proofop-notproofops-vs-bundled.md`](worked-example-proofop-notproofops-vs-bundled.md) — data≠325 proof_ops/AppHash matched/already settled；≠390 bundled（不变量 744）
+- [`worked-example-proofop-notquerykey-vs-bundled.md`](worked-example-proofop-notquerykey-vs-bundled.md) — key≠380 Query key/ProofOp type/already settled；≠390 bundled（不变量 743）
 - [`worked-example-proofop-vs-key.md`](worked-example-proofop-vs-key.md) — ProofOp.key 是这棵默克尔树里这把键 ≠ 已经是 Query 回包键；ProofOp.data 是这把键的编码证明 ≠ 已经是 proof_ops；CheckTx 回包 log 是应用日志输出 ≠ 已经是 Query 日志（不变量 390）
 - [`worked-example-checktxtx-vs-recheck.md`](worked-example-checktxtx-vs-recheck.md) — CheckTx 请求 tx 是请求交易字节 ≠ 已经是 Recheck；CheckTx 对照当前状态验、不应用这笔描述的状态改动 ≠ 已经按 ExecuteTxState 验过；CheckTx 回包 info 是附加信息 ≠ 已经是 Query 附加信息（不变量 391）
 - [`worked-example-initapphash-vs-header.md`](worked-example-initapphash-vs-header.md) — InitChain 回包 app_hash 是起步应用哈希 ≠ 已经是本头 AppHash；Finalize 请求 hash 是这块的哈希 ≠ 已经知道本头哈希；CommitInfo.round 是提交轮 ≠ 已经按投票权排过（不变量 392）

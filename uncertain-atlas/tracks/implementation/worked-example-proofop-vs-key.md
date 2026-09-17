@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ProofOp 键就已经是 Query 回包键、已经是 proof_ops、已经是 Query 日志」，必须分开 ProofOp.key 是这棵默克尔树里这把键是不是已经是 Query 回包键、ProofOp.data 是这把键的编码证明是不是已经是 proof_ops、CheckTx 回包 log 是应用日志输出是不是已经是 Query 日志。可以跳过「看见填了 ProofOp 键就已经是 Query 回包键」。不要另写怎样写 ProofOp 键。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ProofOp 键就已经是 Query 回包键、已经是 proof_ops、已经是 Query 日志」，必须分开 ProofOp.key 是这棵默克尔树里这把键是不是已经是 Query 回包键、ProofOp.data 是这把键的编码证明是不是已经是 proof_ops、CheckTx 回包 log 是应用日志输出是不是已经是 Query 日志。可以跳过「看见填了 ProofOp 键就已经是 Query 回包键」。不要另写怎样写 ProofOp 键。390 proofop vs key bundled unbundling 完成（743 item 1 / 744 item 2 / 745 item 3）；精读 [`worked-example-proofop-notquerykey-vs-bundled.md`](worked-example-proofop-notquerykey-vs-bundled.md)（不变量 743 item 1）。
 
 ## 本页不抄
 
