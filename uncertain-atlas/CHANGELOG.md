@@ -1,3 +1,15 @@
+## 2026-09-17（续 1111）
+
+- 不变量 994；语料 C972；模式 name-the-proposed-notforever-bar；反模式 proposed-notforever-sold-as-bundled；L10.3 第 963 条。填 L4.4 / CometBFT 档案 CheckTx 过了 not already in-block / not already settled / not already forever-valid 正式三事（301 余量）。301 proposed vs removed bundled unbundling 完成（994 item 3）。
+
+## 2026-09-17（续 1110）
+
+- 不变量 993；语料 C971；模式 name-the-proposed-notrecheck-bar；反模式 proposed-notrecheck-sold-as-bundled；L10.3 第 962 条。填 L4.4 / CometBFT 档案 本块已 commit not already skip-recheck / not already empty / not already forever 正式三事（301 余量）。301 proposed vs removed bundled unbundling 续（993 item 2）。
+
+## 2026-09-17（续 1109）
+
+- 不变量 992；语料 C970；模式 name-the-proposed-notdel-bar；反模式 proposed-notdel-sold-as-bundled；L10.3 第 961 条。填 L4.4 / CometBFT 档案 提案收了 not already deleted / not already in-block / not already processed 正式三事（301 余量）。301 proposed vs removed bundled unbundling 启动（992 item 1）。
+
 ## 2026-09-17（续 1108）
 
 - 不变量 991；语料 C969；模式 name-the-evidreap-notunlim-bar；反模式 evidreap-notunlim-sold-as-bundled；L10.3 第 960 条。填 L4.4 / CometBFT 档案 MaxBytes 写成 -1 not already unlimited / not already app-free / not already settled 正式三事（299 余量）。299 evidence vs reap bundled unbundling 完成（991 item 3）。

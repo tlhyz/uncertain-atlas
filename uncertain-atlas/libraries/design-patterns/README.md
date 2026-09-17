@@ -1,3 +1,6 @@
+- [`name-the-proposed-notforever-bar.md`](name-the-proposed-notforever-bar.md) — CheckTx 过了 not already in-block / not already settled / not already forever-valid 正式三事（301 余量）（不变量 994）
+- [`name-the-proposed-notrecheck-bar.md`](name-the-proposed-notrecheck-bar.md) — 本块已 commit not already skip-recheck / not already empty / not already forever 正式三事（301 余量）（不变量 993）
+- [`name-the-proposed-notdel-bar.md`](name-the-proposed-notdel-bar.md) — 提案收了 not already deleted / not already in-block / not already processed 正式三事（301 余量）（不变量 992）
 - [`name-the-evidreap-notunlim-bar.md`](name-the-evidreap-notunlim-bar.md) — MaxBytes 写成 -1 not already unlimited / not already app-free / not already settled 正式三事（299 余量）（不变量 991）
 - [`name-the-evidreap-notsame-bar.md`](name-the-evidreap-notsame-bar.md) — 两条收交易上限 not already same-cap / not already pool-fits / not already settled 正式三事（299 余量）（不变量 990）
 - [`name-the-evidreap-notfull-bar.md`](name-the-evidreap-notfull-bar.md) — 先装证据 not already full-of-txs / not already executed / not already settled 正式三事（299 余量）（不变量 989）

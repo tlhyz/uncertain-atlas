@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经进池」，必须分开提案收了是不是已经从池里删掉、commit 后是不是已经不用再验剩下的、曾经绿过是不是已经永远有效。可以跳过「看见提案收了就已经从池里拿走」。不要另写怎样加锁、怎样 flush、怎样再验。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经进池」，必须分开提案收了是不是已经从池里删掉、commit 后是不是已经不用再验剩下的、曾经绿过是不是已经永远有效。可以跳过「看见提案收了就已经从池里拿走」。不要另写怎样加锁、怎样 flush、怎样再验。301 proposed vs removed bundled unbundling 完成（992 item 1 / 993 item 2 / 994 item 3）；精读 [`worked-example-proposed-notdel-vs-bundled.md`](worked-example-proposed-notdel-vs-bundled.md)（不变量 992 item 1）。
 
 ## 本页不抄
 

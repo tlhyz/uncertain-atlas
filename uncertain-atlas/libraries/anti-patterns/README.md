@@ -1,3 +1,6 @@
+- [`proposed-notforever-sold-as-bundled.md`](proposed-notforever-sold-as-bundled.md) — CheckTx 过了 被写成已经进块 / 已经结算 / 已经永远有效（不变量 994）
+- [`proposed-notrecheck-sold-as-bundled.md`](proposed-notrecheck-sold-as-bundled.md) — 本块已 commit 被写成已经不用再验剩下的 / 池已经空了 / 剩下的已经永远有效（不变量 993）
+- [`proposed-notdel-sold-as-bundled.md`](proposed-notdel-sold-as-bundled.md) — 提案收了 被写成已经从池里删掉 / 已经进块 / 已经过了 Process（不变量 992）
 - [`evidreap-notunlim-sold-as-bundled.md`](evidreap-notunlim-sold-as-bundled.md) — MaxBytes 写成 -1 被写成已经没有上限 / 已经可以随便回 / 已经交差（不变量 991）
 - [`evidreap-notsame-sold-as-bundled.md`](evidreap-notsame-sold-as-bundled.md) — 两条收交易上限 被写成已经同一条 / 已经扣掉证据之后还收得下 / 已经交差（不变量 990）
 - [`evidreap-notfull-sold-as-bundled.md`](evidreap-notfull-sold-as-bundled.md) — 先装证据 被写成已经装满交易 / 已经执行 / 已经交差（不变量 989）

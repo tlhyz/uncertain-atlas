@@ -1,3 +1,18 @@
+| A4730 | 记录 | 会与 301 / 328 / 339 / 144 / 992 / 993 糊成「看见 CheckTx 过了就已经进块 interchangeable、就已经结算 interchangeable、就已经永远有效 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 过了 not already in-block / not already settled / not already forever-valid 正式三事（301 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。301 proposed vs removed bundled unbundling 完成（994 item 3） |
+| A4731 | 高 | 看见 CheckTx 过了 会被写成已经进块 interchangeable | 官方 Mempool item 3：not already in-block |
+| A4732 | 高 | 看见进了池 会被写成已经结算 interchangeable | 官方 Mempool item 3：not already settled |
+| A4733 | 高 | 看见曾经绿过 会被写成已经永远有效 interchangeable | 官方 Mempool item 3：not already forever-valid |
+| A4734 | 中 | 怎样加锁会被抄进不确定 | 不抄。不写怎样加锁、怎样 flush、怎样再验。不另写 19 节 |
+| A4725 | 记录 | 会与 301 / 69 / 312 / 992 / 994 糊成「看见 commit 就已经不用再验剩下的 interchangeable、就已经池空 interchangeable、就已经永远有效 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 本块已 commit not already skip-recheck / not already empty / not already forever 正式三事（301 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。301 proposed vs removed bundled unbundling 续（993 item 2） |
+| A4726 | 高 | 看见块已经 commit 会被写成已经不用再验剩下的 interchangeable | 官方 Mempool item 2：not already skip-recheck |
+| A4727 | 高 | 看见本块交易没了 会被写成池已经空了 interchangeable | 官方 Mempool item 2：not already empty |
+| A4728 | 高 | 看见再验开始了 会被写成剩下的已经永远有效 interchangeable | 官方 Mempool item 2：not already forever |
+| A4729 | 中 | 怎样加锁会被抄进不确定 | 不抄。不写怎样加锁、怎样 flush、怎样再验。不另写 19 节 |
+| A4720 | 记录 | 会与 301 / 33 / 299 / 993 / 994 糊成「看见提案收了就已经从池里删掉 interchangeable、就已经进块 interchangeable、就已经过了 Process interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 提案收了 not already deleted / not already in-block / not already processed 正式三事（301 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。301 proposed vs removed bundled unbundling 启动（992 item 1） |
+| A4721 | 高 | 看见提案收了 会被写成已经从池里删掉 interchangeable / 33 interchangeable | 官方 Mempool item 1：not already deleted / not 33 |
+| A4722 | 高 | 看见收了前缀 会被写成已经进块 interchangeable | 官方 Mempool item 1：not already in-block |
+| A4723 | 高 | 看见收了 会被写成已经过了 Process interchangeable | 官方 Mempool item 1：not already processed |
+| A4724 | 中 | 怎样加锁会被抄进不确定 | 不抄。不写怎样加锁、怎样 flush、怎样再验。不另写 19 节 |
 | A4715 | 记录 | 会与 299 / 337 / 46 / 989 / 990 糊成「看见写成 -1 就已经没有上限 interchangeable、就已经可以随便回 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 MaxBytes 写成 -1 not already unlimited / not already app-free / not already settled 正式三事（299 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。299 evidence vs reap bundled unbundling 完成（991 item 3） |
 | A4716 | 高 | 看见 MaxBytes 写成 -1 会被写成已经没有上限 interchangeable | 官方 Creating a proposal item 3：not already unlimited |
 | A4717 | 高 | 看见整池都给了应用 会被写成已经可以随便回 interchangeable | 官方 Creating a proposal item 3：not already app-free |
