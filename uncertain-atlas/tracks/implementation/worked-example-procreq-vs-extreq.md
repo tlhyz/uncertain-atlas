@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Process 请求栏就已经执行那些交易、已经跑过 Process、已经对上了拟议块头」，必须分开 ProcessProposalRequest.txs 是拟议块的交易列表是不是已经执行那些交易、ProcessProposalRequest.hash 是拟议块的哈希是不是已经跑过 Process、ProcessProposalRequest.height 是拟议块的高度是不是已经对上了拟议块头。可以跳过「看见填了 Process 请求栏就已经执行那些交易」。不要另写怎样写 Process 请求栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Process 请求栏就已经执行那些交易、已经跑过 Process、已经对上了拟议块头」，必须分开 ProcessProposalRequest.txs 是拟议块的交易列表是不是已经执行那些交易、ProcessProposalRequest.hash 是拟议块的哈希是不是已经跑过 Process、ProcessProposalRequest.height 是拟议块的高度是不是已经对上了拟议块头。可以跳过「看见填了 Process 请求栏就已经执行那些交易」。不要另写怎样写 Process 请求栏。419 procreq vs extreq bundled unbundling 完成（1025 item 1 / 1026 item 2 / 1027 item 3）；精读 [`worked-example-procreq-notexec-vs-bundled.md`](worked-example-procreq-notexec-vs-bundled.md)（不变量 1025 item 1）。
 
 ## 本页不抄
 

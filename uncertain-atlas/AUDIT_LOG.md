@@ -1,3 +1,18 @@
+| A4895 | 记录 | 会与 419 / 417 / 410 / 1025 / 1026 糊成「看见 ProcessProposalRequest.height 就已经对上了拟议块头 interchangeable、就已经是 ext-height interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposalRequest.height not already header-aligned / not already ext-height / not already settled 正式三事（419 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。419 procreq vs extreq bundled unbundling 完成（1027 item 3） |
+| A4896 | 高 | 看见填了 height 会被写成已经对上了拟议块头 interchangeable | 官方 ProcessProposal Request item 3：not already header-aligned |
+| A4897 | 高 | 看见有高度 会被写成已经 ExtendVoteRequest.height 那种已经对上了拟议块 interchangeable | 官方 ProcessProposal Request item 3：not already ext-height |
+| A4898 | 高 | 看见能指 会被写成已经交差 interchangeable | 官方 ProcessProposal Request item 3：not already settled |
+| A4899 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Process 请求栏。不另写 19 节 |
+| A4890 | 记录 | 会与 419 / 410 / 353 / 1025 / 1027 糊成「看见 ProcessProposalRequest.hash 就已经跑过 Process interchangeable、就已经是 ext-hash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposalRequest.hash not already processed / not already ext-hash / not already settled 正式三事（419 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。419 procreq vs extreq bundled unbundling 续（1026 item 2） |
+| A4891 | 高 | 看见填了 hash 会被写成已经跑过 Process interchangeable / 410 interchangeable | 官方 ProcessProposal Request item 2：not already processed / not 410 |
+| A4892 | 高 | 看见有拟议块哈希 会被写成已经请求里的 hash 那种不保证已经对该块跑过 Process interchangeable | 官方 ProcessProposal Request item 2：not already ext-hash |
+| A4893 | 高 | 看见能指 会被写成已经交差 interchangeable | 官方 ProcessProposal Request item 2：not already settled |
+| A4894 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Process 请求栏。不另写 19 节 |
+| A4885 | 记录 | 会与 419 / 411 / 410 / 1026 / 1027 糊成「看见 ProcessProposalRequest.txs 就已经执行那些交易 interchangeable、就已经整块跑了 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposalRequest.txs not already executed / not already whole-block / not already settled 正式三事（419 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。419 procreq vs extreq bundled unbundling 启动（1025 item 1） |
+| A4886 | 高 | 看见填了 txs 会被写成已经执行那些交易 interchangeable / 411 interchangeable | 官方 ProcessProposal Request item 1：not already executed / not 411 |
+| A4887 | 高 | 看见有交易列表 会被写成已经整块跑了 interchangeable | 官方 ProcessProposal Request item 1：not already whole-block |
+| A4888 | 高 | 看见能指 会被写成已经交差 interchangeable | 官方 ProcessProposal Request item 1：not already settled |
+| A4889 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Process 请求栏。不另写 19 节 |
 | A4880 | 记录 | 会与 410 / 304 / 352 / 1022 / 1023 糊成「看见 ExtendVoteRequest.time 就已经验过票上时间 interchangeable、就已经交差 interchangeable、就已经是过错时间 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteRequest.time not already vote-ts-checked / not already settled / not already evidence-time 正式三事（410 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。410 extreqhash vs process bundled unbundling 完成（1024 item 3） |
 | A4881 | 高 | 看见填了 time 会被写成已经验过票上时间 interchangeable | 官方 ExtendVote Request item 3：not already vote-ts-checked |
 | A4882 | 高 | 看见能指时间 会被写成已经交差 interchangeable | 官方 ExtendVote Request item 3：not already settled |

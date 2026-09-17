@@ -1,3 +1,6 @@
+- [`name-the-procreq-nothead-bar.md`](name-the-procreq-nothead-bar.md) — ProcessProposalRequest.height not already header-aligned / not already ext-height / not already settled 正式三事（419 余量）（不变量 1027）
+- [`name-the-procreq-notproc-bar.md`](name-the-procreq-notproc-bar.md) — ProcessProposalRequest.hash not already processed / not already ext-hash / not already settled 正式三事（419 余量）（不变量 1026）
+- [`name-the-procreq-notexec-bar.md`](name-the-procreq-notexec-bar.md) — ProcessProposalRequest.txs not already executed / not already whole-block / not already settled 正式三事（419 余量）（不变量 1025）
 - [`name-the-extreqhash-notts-bar.md`](name-the-extreqhash-notts-bar.md) — ExtendVoteRequest.time not already vote-ts-checked / not already settled / not already evidence-time 正式三事（410 余量）（不变量 1024）
 - [`name-the-extreqhash-notalign-bar.md`](name-the-extreqhash-notalign-bar.md) — ExtendVoteRequest.height not already aligned / not already will-call / not already snapshot-height 正式三事（410 余量）（不变量 1023）
 - [`name-the-extreqhash-notproc-bar.md`](name-the-extreqhash-notproc-bar.md) — ExtendVoteRequest.hash not already processed / not already settled / not already signed 正式三事（410 余量）（不变量 1022）

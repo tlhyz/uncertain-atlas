@@ -1,3 +1,6 @@
+- [`procreq-nothead-sold-as-bundled.md`](procreq-nothead-sold-as-bundled.md) — height 被写成已经对上了拟议块头 / 已经是 ext-height / 已经交差（不变量 1027）
+- [`procreq-notproc-sold-as-bundled.md`](procreq-notproc-sold-as-bundled.md) — hash 被写成已经跑过 Process / 已经是 ext-hash / 已经交差（不变量 1026）
+- [`procreq-notexec-sold-as-bundled.md`](procreq-notexec-sold-as-bundled.md) — txs 被写成已经执行那些交易 / 已经整块跑了 / 已经交差（不变量 1025）
 - [`extreqhash-notts-sold-as-bundled.md`](extreqhash-notts-sold-as-bundled.md) — time 被写成已经验过票上时间 / 已经交差 / 已经是过错时间（不变量 1024）
 - [`extreqhash-notalign-sold-as-bundled.md`](extreqhash-notalign-sold-as-bundled.md) — height 被写成已经对上了拟议块 / 已经会调 / 已经是拍快照高度（不变量 1023）
 - [`extreqhash-notproc-sold-as-bundled.md`](extreqhash-notproc-sold-as-bundled.md) — hash 被写成已经跑过 Process / 已经交差 / 已经签了（不变量 1022）
