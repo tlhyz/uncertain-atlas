@@ -1,3 +1,6 @@
+- [`name-the-nonrp-notsame-bar.md`](name-the-nonrp-notsame-bar.md) — 要签原样数据可以用 non_rp not already same as vote_extension / not already empty still verify / not already settled 正式三事（358 余量）（不变量 850）
+- [`name-the-nonrp-notrp-bar.md`](name-the-nonrp-notrp-bar.md) — non_rp_extension 按原样签 not already has replay protection / not already must-fill / not already settled 正式三事（358 余量）（不变量 849）
+- [`name-the-nonrp-notasis-bar.md`](name-the-nonrp-notasis-bar.md) — vote_extension 会包进 CanonicalVoteExtension not already signed as-is / not already CanonicalVote / not already settled 正式三事（358 余量）（不变量 848）
 - [`name-the-prepare-fields-nothash-bar.md`](name-the-prepare-fields-nothash-bar.md) — height / time / proposer_address 对上拟议头 not already header hash / not already ExecuteTxState / not already settled 正式三事（359 余量）（不变量 847）
 - [`name-the-prepare-fields-notlocal-bar.md`](name-the-prepare-fields-notlocal-bar.md) — local_last_commit 是上一高度的预提交带扩展 not already this-height extension / not already H Prepare has extensions / not already settled 正式三事（359 余量）（不变量 846）
 - [`name-the-prepare-fields-notrun-bar.md`](name-the-prepare-fields-notrun-bar.md) — Prepare 和 Process / Finalize 同一套字段 not already ran Process / not already Finalize / not already settled 正式三事（359 余量）（不变量 845）

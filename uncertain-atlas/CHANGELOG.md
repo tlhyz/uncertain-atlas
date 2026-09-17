@@ -1,3 +1,15 @@
+## 2026-09-17（续 967）
+
+- 不变量 850；语料 C828；模式 name-the-nonrp-notsame-bar；反模式 nonrp-notsame-sold-as-bundled；L10.3 第 819 条。填 L4.4 / CometBFT 档案 要签原样数据可以用 non_rp not already same as vote_extension / not already empty still verify / not already settled 正式三事（358 余量）。358 nonrp vs wrapped bundled unbundling 完成（850 item 3）。
+
+## 2026-09-17（续 966）
+
+- 不变量 849；语料 C827；模式 name-the-nonrp-notrp-bar；反模式 nonrp-notrp-sold-as-bundled；L10.3 第 818 条。填 L4.4 / CometBFT 档案 non_rp_extension 按原样签 not already has replay protection / not already must-fill / not already settled 正式三事（358 余量）。358 nonrp vs wrapped bundled unbundling 续（849 item 2）。
+
+## 2026-09-17（续 965）
+
+- 不变量 848；语料 C826；模式 name-the-nonrp-notasis-bar；反模式 nonrp-notasis-sold-as-bundled；L10.3 第 817 条。填 L4.4 / CometBFT 档案 vote_extension 会包进 CanonicalVoteExtension not already signed as-is / not already CanonicalVote / not already settled 正式三事（358 余量）。358 nonrp vs wrapped bundled unbundling 启动（848 item 1）。
+
 ## 2026-09-17（续 964）
 
 - 不变量 847；语料 C825；模式 name-the-prepare-fields-nothash-bar；反模式 prepare-fields-nothash-sold-as-bundled；L10.3 第 816 条。填 L4.4 / CometBFT 档案 height / time / proposer_address 对上拟议头 not already header hash / not already ExecuteTxState / not already settled 正式三事（359 余量）。359 prepare-fields vs same bundled unbundling 完成（847 item 3）。

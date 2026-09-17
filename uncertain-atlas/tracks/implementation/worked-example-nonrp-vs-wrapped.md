@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见有扩展就已经按原样签、已经有重放保护、已经和 vote_extension 同一份」，必须分开 vote_extension 会包进 CanonicalVoteExtension 是不是已经按原样签、non_rp_extension 按原样签是不是已经有重放保护、要签原样数据可以用 non_rp 是不是已经和 vote_extension 同一份。可以跳过「看见有扩展就已经按原样签」。不要另写怎样编两份扩展。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见有扩展就已经按原样签、已经有重放保护、已经和 vote_extension 同一份」，必须分开 vote_extension 会包进 CanonicalVoteExtension 是不是已经按原样签、non_rp_extension 按原样签是不是已经有重放保护、要签原样数据可以用 non_rp 是不是已经和 vote_extension 同一份。可以跳过「看见有扩展就已经按原样签」。不要另写怎样编两份扩展。358 nonrp vs wrapped bundled unbundling 完成（848 item 1 / 849 item 2 / 850 item 3）；精读 [`worked-example-nonrp-notasis-vs-bundled.md`](worked-example-nonrp-notasis-vs-bundled.md)（不变量 848 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,18 @@
+| A4010 | 记录 | 会与 358 / 353 / 361 / 844 / 350 / 848 / 849 糊成「看见有第二份就已经和 vote_extension 同一份 interchangeable、就已经是空扩展仍验签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 要签原样数据可以用 non_rp not already same as vote_extension / not already empty still verify / not already settled 正式三事（358 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。358 nonrp vs wrapped bundled unbundling 完成（850 item 3） |
+| A4011 | 高 | 看见要签原样数据可以用 non_rp 会被写成已经和 vote_extension 同一份 interchangeable | 官方 两份扩展两份签 item 3：not already same as vote_extension |
+| A4012 | 高 | 看见能空 会被写成已经是空扩展仍验签 interchangeable / 353 interchangeable | 官方 两份扩展两份签 item 3：not already empty still verify / not 353 |
+| A4013 | 高 | 看见能用 会被写成已经交差 interchangeable | 官方 两份扩展两份签 item 3：not already settled |
+| A4014 | 中 | 怎样编两份扩展 会被抄进不确定 | 不抄。不写怎样编两份扩展。不另写 19 节 |
+| A4005 | 记录 | 会与 358 / 350 / 353 / 848 / 850 糊成「看见按原样签了就已经有重放保护 interchangeable、就已经必须填 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 non_rp_extension 按原样签 not already has replay protection / not already must-fill / not already settled 正式三事（358 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。358 nonrp vs wrapped bundled unbundling 续（849 item 2） |
+| A4006 | 高 | 看见 non_rp_extension 按原样签 会被写成已经有重放保护 interchangeable | 官方 两份扩展两份签 item 2：not already has replay protection |
+| A4007 | 高 | 看见字段在 会被写成已经必须填 interchangeable | 官方 两份扩展两份签 item 2：not already must-fill |
+| A4008 | 高 | 看见没有包装 会被写成已经交差 interchangeable | 官方 两份扩展两份签 item 2：not already settled |
+| A4009 | 中 | 怎样编两份扩展 会被抄进不确定 | 不抄。不写怎样编两份扩展。不另写 19 节 |
+| A4000 | 记录 | 会与 358 / 34 / 361 / 844 / 350 / 849 / 850 糊成「看见绑了 Height Round ChainID 就已经按原样签 interchangeable、就已经是 CanonicalVote interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 vote_extension 会包进 CanonicalVoteExtension not already signed as-is / not already CanonicalVote / not already settled 正式三事（358 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。358 nonrp vs wrapped bundled unbundling 启动（848 item 1） |
+| A4001 | 高 | 看见 vote_extension 会包进 CanonicalVoteExtension 会被写成已经按原样签 interchangeable | 官方 两份扩展两份签 item 1：not already signed as-is |
+| A4002 | 高 | 看见有包装 会被写成已经是 CanonicalVote interchangeable / 34 interchangeable | 官方 两份扩展两份签 item 1：not already CanonicalVote / not 34 |
+| A4003 | 高 | 看见签了 会被写成已经交差 interchangeable | 官方 两份扩展两份签 item 1：not already settled |
+| A4004 | 中 | 怎样编两份扩展 会被抄进不确定 | 不抄。不写怎样编两份扩展。不另写 19 节 |
 | A3995 | 记录 | 会与 359 / 311 / 147 / 462 / 845 / 846 糊成「看见对得上就已经知道本头哈希 interchangeable、就已经是 ExecuteTxState interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 height / time / proposer_address 对上拟议头 not already header hash / not already ExecuteTxState / not already settled 正式三事（359 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。359 prepare-fields vs same bundled unbundling 完成（847 item 3） |
 | A3996 | 高 | 看见 height / time / proposer_address 对上拟议头 会被写成已经知道本头哈希 interchangeable | 官方 Prepare 请求字段 item 3：not already header hash |
 | A3997 | 高 | 看见头上有这些 会被写成已经是 ExecuteTxState interchangeable / 311 interchangeable | 官方 Prepare 请求字段 item 3：not already ExecuteTxState / not 311 |

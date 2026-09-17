@@ -1,3 +1,6 @@
+- [`nonrp-notsame-sold-as-bundled.md`](nonrp-notsame-sold-as-bundled.md) — 可用 non_rp 被写成已经和 vote_extension 同一份 / 已经是空扩展仍验签 / 已经交差（不变量 850）
+- [`nonrp-notrp-sold-as-bundled.md`](nonrp-notrp-sold-as-bundled.md) — 原样签 被写成已经有重放保护 / 已经必须填 / 已经交差（不变量 849）
+- [`nonrp-notasis-sold-as-bundled.md`](nonrp-notasis-sold-as-bundled.md) — 包装 被写成已经按原样签 / 已经是 CanonicalVote / 已经交差（不变量 848）
 - [`prepare-fields-nothash-sold-as-bundled.md`](prepare-fields-nothash-sold-as-bundled.md) — 对上拟议头 被写成已经知道本头哈希 / 已经是 ExecuteTxState / 已经交差（不变量 847）
 - [`prepare-fields-notlocal-sold-as-bundled.md`](prepare-fields-notlocal-sold-as-bundled.md) — local_last_commit 被写成已经是本高度刚签的扩展 / 已经到了 H 带了扩展 / 已经交差（不变量 846）
 - [`prepare-fields-notrun-sold-as-bundled.md`](prepare-fields-notrun-sold-as-bundled.md) — 同一套字段 被写成已经跑过 Process / 已经 Finalize / 已经交差（不变量 845）

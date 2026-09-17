@@ -171,6 +171,9 @@
 - [`worked-example-prepvalid-notcrash-vs-bundled.md`](worked-example-prepvalid-notcrash-vs-bundled.md) — crash≠455 Process REJECT/347 must Accept/376 ProposalStatus REJECT/504 Usage crash；≠357 bundled（不变量 717）
 - [`worked-example-prepvalid-notchecked-vs-bundled.md`](worked-example-prepvalid-notchecked-vs-bundled.md) — no extra checks≠already checked/app-level replay/313 pool dedup/504 Usage nochecks；≠357 bundled（不变量 716）
 - [`worked-example-prepare-valid-vs-checked.md`](worked-example-prepare-valid-vs-checked.md) — 引擎没有再验重复交易 ≠ 已经验过重复；Prepare 回包验不过引擎崩溃 ≠ 已经是 Process REJECT；Prepare 里产出了事件 ≠ 已经交给引擎（不变量 357）
+- [`worked-example-nonrp-notsame-vs-bundled.md`](worked-example-nonrp-notsame-vs-bundled.md) — 可用non_rp≠same as vote_extension/353 empty still verify/settled；≠358 bundled（不变量 850）
+- [`worked-example-nonrp-notrp-vs-bundled.md`](worked-example-nonrp-notrp-vs-bundled.md) — non_rp按原样签≠has RP/must-fill/settled；≠358 bundled（不变量 849）
+- [`worked-example-nonrp-notasis-vs-bundled.md`](worked-example-nonrp-notasis-vs-bundled.md) — vote_extension包装≠signed as-is/34 CanonicalVote/settled；≠358 bundled（不变量 848）
 - [`worked-example-nonrp-vs-wrapped.md`](worked-example-nonrp-vs-wrapped.md) — vote_extension 会包进 CanonicalVoteExtension ≠ 已经按原样签；non_rp_extension 按原样签 ≠ 已经有重放保护；要签原样数据可以用 non_rp ≠ 已经和 vote_extension 同一份（不变量 358）
 - [`worked-example-prepare-fields-nothash-vs-bundled.md`](worked-example-prepare-fields-nothash-vs-bundled.md) — 对上拟议头≠147 header hash/311 ExecuteTxState/settled；≠359 bundled（不变量 847）
 - [`worked-example-prepare-fields-notlocal-vs-bundled.md`](worked-example-prepare-fields-notlocal-vs-bundled.md) — local_last_commit≠this-height e/330 H Prepare has extensions/settled；≠359 bundled（不变量 846）
