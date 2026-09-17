@@ -37,8 +37,8 @@ Recurring timer **`research-continue`** fires every **10 minutes** and enqueues:
 
 | Timer | Schedule | Purpose |
 |-------|----------|---------|
-| `research-continue` | every **10 minutes** (600s) | pick next backlog task — **do not stop working** |
-| `research-daily-audit` | **09:00 UTC** daily | backlog hygiene + CURRENT_CONCLUSIONS check |
+| `research-continue` | **paused 2026-09-17T19:32Z** (was every 10 min) | user asked to stop |
+| `research-daily-audit` | **paused 2026-09-17T19:32Z** (was 09:00 UTC daily) | user asked to stop |
 | `pr-ci-watch` | on push | subscribe_github_ci for working branch |
 
 To list active timers: MCP `cursor-subscriptions` → `list_subscriptions`.
