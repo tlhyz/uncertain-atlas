@@ -1,3 +1,7 @@
+## 2026-09-17（续 789）
+
+- 不变量 672；语料 C649；模式 name-the-flushusage-notperiodicasync-bar；反模式 flushusage-notperiodicasync-sold-as-bundled；L10.3 第 641 条。填 L4.4 / CometBFT 档案 Flush Usage Called periodically ensure async requests actually sent not Echo test / not one connection four gates / not Flush bundled item 2 正式三事（493 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。493 flushusage vs echo bundled unbundling 续（672 item 2）。
+
 ## 2026-09-17（续 788）
 
 - 不变量 671；语料 C648；模式 name-the-flushusage-notechoqueued-bar；反模式 flushusage-notechoqueued-sold-as-bundled；L10.3 第 640 条。填 L4.4 / CometBFT 档案 Flush Usage Signals messages queued should be flushed to server not Echo test / not HasChannel queued / not Echo request Message is Flush 正式三事（493 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。493 flushusage vs echo bundled unbundling 启动（671 item 1）。
