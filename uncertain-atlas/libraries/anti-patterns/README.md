@@ -1,3 +1,4 @@
+- [`flushusage-notimmediatesync-sold-as-bundled.md`](flushusage-notimmediatesync-sold-as-bundled.md) — Called immediately for sync request returns when Flush response comes back 被写成已经 Echo 回包 Message / 已经 Commit 能往下走 / 已经 commit-empty-echo bundled 第三件事（不变量 673）
 - [`flushusage-notperiodicasync-sold-as-bundled.md`](flushusage-notperiodicasync-sold-as-bundled.md) — Called periodically ensure async requests actually sent 被写成已经 Echo 测 implementation / 已经四门 / 已经 Flush bundled 第二件事（不变量 672）
 - [`flushusage-notechoqueued-sold-as-bundled.md`](flushusage-notechoqueued-sold-as-bundled.md) — Signals messages queued should be flushed 被写成已经 Echo 测 implementation / 已经 HasChannel 入队 / 已经 Echo Message 是 Flush（不变量 671）
 - [`infousage-notappversion-sold-as-bundled.md`](infousage-notappversion-sold-as-bundled.md) — app_version in Header 被写成已经 last_block persisted / 已经 Info version 栏 / 已经印进 AppHash（不变量 670）
