@@ -1,3 +1,6 @@
+- [`name-the-checktxspace-notlane-bar.md`](name-the-checktxspace-notlane-bar.md) — CheckTx lane_id not already no-lane / not already prioritized / not already in-block 正式三事（381 余量）（不变量 787）
+- [`name-the-checktxspace-notsettled-bar.md`](name-the-checktxspace-notsettled-bar.md) — CheckTx 回包 events not already settled / not already not-in-block / not already consensus order 正式三事（381 余量）（不变量 786）
+- [`name-the-checktxspace-notcode-bar.md`](name-the-checktxspace-notcode-bar.md) — CheckTx 回包 codespace not already response code / not already not-in-block / not already settled 正式三事（381 余量）（不变量 785）
 - [`name-the-syncingheight-notdet-bar.md`](name-the-syncingheight-notdet-bar.md) — Finalize 回包 events not already must be deterministic / not already settled / not already same order as results 正式三事（382 余量）（不变量 784）
 - [`name-the-syncingheight-notnoset-bar.md`](name-the-syncingheight-notnoset-bar.md) — validator_updates 空 not already no set / not already changed set / not already InitChain empty list 正式三事（382 余量）（不变量 783）
 - [`name-the-syncingheight-nothistory-bar.md`](name-the-syncingheight-nothistory-bar.md) — syncing_to_height not already full history / not already snapshot replay / not already settled 正式三事（382 余量）（不变量 782）

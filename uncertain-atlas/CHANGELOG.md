@@ -1,3 +1,15 @@
+## 2026-09-17（续 904）
+
+- 不变量 787；语料 C765；模式 name-the-checktxspace-notlane-bar；反模式 checktxspace-notlane-sold-as-bundled；L10.3 第 756 条。填 L4.4 / CometBFT 档案 CheckTx lane_id not already no-lane / not already prioritized / not already in-block 正式三事（381 余量）。381 checktxspace vs code bundled unbundling 完成（787 item 3）。
+
+## 2026-09-17（续 903）
+
+- 不变量 786；语料 C764；模式 name-the-checktxspace-notsettled-bar；反模式 checktxspace-notsettled-sold-as-bundled；L10.3 第 755 条。填 L4.4 / CometBFT 档案 CheckTx 回包 events not already settled / not already not-in-block / not already consensus order 正式三事（381 余量）。381 checktxspace vs code bundled unbundling 续（786 item 2）。
+
+## 2026-09-17（续 902）
+
+- 不变量 785；语料 C763；模式 name-the-checktxspace-notcode-bar；反模式 checktxspace-notcode-sold-as-bundled；L10.3 第 754 条。填 L4.4 / CometBFT 档案 CheckTx 回包 codespace not already response code / not already not-in-block / not already settled 正式三事（381 余量）。381 checktxspace vs code bundled unbundling 启动（785 item 1）。
+
 ## 2026-09-17（续 901）
 
 - 不变量 784；语料 C762；模式 name-the-syncingheight-notdet-bar；反模式 syncingheight-notdet-sold-as-bundled；L10.3 第 753 条。填 L4.4 / CometBFT 档案 Finalize 回包 events not already must be deterministic / not already settled / not already same order as results 正式三事（382 余量）。382 syncingheight vs history bundled unbundling 完成（784 item 3）。

@@ -1,3 +1,18 @@
+| A3695 | 记录 | 会与 381 / 367 / 482 / 785 / 786 糊成「看见填了道就已经不设道 interchangeable、就已经排了优先 interchangeable、就已经进了块 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx lane_id not already no-lane / not already prioritized / not already in-block 正式三事（381 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。381 checktxspace vs code bundled unbundling 完成（787 item 3） |
+| A3696 | 高 | 看见 CheckTx lane_id 会被写成已经不设道 interchangeable / 367 interchangeable | 官方 CheckTx 回包 item 3：not already no-lane / not 367 |
+| A3697 | 高 | 看见填了道 会被写成已经排了优先 interchangeable / 367 interchangeable | 官方 CheckTx 回包 item 3：not already prioritized / not 367 |
+| A3698 | 高 | 看见能指道 会被写成已经进了块 interchangeable | 官方 CheckTx 回包 item 3：not already in-block |
+| A3699 | 中 | 怎样写 CheckTx 回包 会被抄进不确定 | 不抄。不写怎样写 CheckTx 回包。不另写 19 节 |
+| A3690 | 记录 | 会与 381 / 316 / 382 / 784 / 785 / 787 糊成「看见回了事件就已经交差 interchangeable、就已经没进块 interchangeable、就已经是共识顺序 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 回包 events not already settled / not already not-in-block / not already consensus order 正式三事（381 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。381 checktxspace vs code bundled unbundling 续（786 item 2） |
+| A3691 | 高 | 看见 CheckTx 回包 events 会被写成已经交差 interchangeable | 官方 CheckTx 回包 item 2：not already settled |
+| A3692 | 高 | 看见回了事件 会被写成已经没进块 interchangeable | 官方 CheckTx 回包 item 2：not already not-in-block |
+| A3693 | 高 | 看见有类型键值 会被写成已经是共识顺序 interchangeable / 316 interchangeable | 官方 CheckTx 回包 item 2：not already consensus order / not 316 |
+| A3694 | 中 | 怎样写 CheckTx 回包 会被抄进不确定 | 不抄。不写怎样写 CheckTx 回包。不另写 19 节 |
+| A3685 | 记录 | 会与 381 / 373 / 393 / 748 / 786 / 787 糊成「看见写了空间就已经是回包码 interchangeable、就已经没进块 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 回包 codespace not already response code / not already not-in-block / not already settled 正式三事（381 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。381 checktxspace vs code bundled unbundling 启动（785 item 1） |
+| A3686 | 高 | 看见 CheckTx 回包 codespace 会被写成已经是回包码 interchangeable / 373 interchangeable | 官方 CheckTx 回包 item 1：not already response code / not 373 |
+| A3687 | 高 | 看见写了空间 会被写成已经没进块 interchangeable | 官方 CheckTx 回包 item 1：not already not-in-block |
+| A3688 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 CheckTx 回包 item 1：not already settled |
+| A3689 | 中 | 怎样写 CheckTx 回包 会被抄进不确定 | 不抄。不写怎样写 CheckTx 回包。不另写 19 节 |
 | A3680 | 记录 | 会与 382 / 342 / 782 / 783 糊成「看见回了事件就已经必须确定 interchangeable、就已经交差 interchangeable、就已经是结果列表同一顺序 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 回包 events not already must be deterministic / not already settled / not already same order as results 正式三事（382 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。382 syncingheight vs history bundled unbundling 完成（784 item 3） |
 | A3681 | 高 | 看见 Finalize 回包 events 会被写成已经必须确定 interchangeable / 342 interchangeable | 官方 Finalize 请求回包 item 3：not already must be deterministic / not 342 |
 | A3682 | 高 | 看见回了事件 会被写成已经交差 interchangeable | 官方 Finalize 请求回包 item 3：not already settled |

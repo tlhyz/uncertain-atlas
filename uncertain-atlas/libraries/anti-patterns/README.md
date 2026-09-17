@@ -1,3 +1,6 @@
+- [`checktxspace-notlane-sold-as-bundled.md`](checktxspace-notlane-sold-as-bundled.md) — lane_id 被写成已经不设道 / 已经排了优先 / 已经进了块（不变量 787）
+- [`checktxspace-notsettled-sold-as-bundled.md`](checktxspace-notsettled-sold-as-bundled.md) — events 被写成已经交差 / 已经没进块 / 已经是共识顺序（不变量 786）
+- [`checktxspace-notcode-sold-as-bundled.md`](checktxspace-notcode-sold-as-bundled.md) — codespace 被写成已经是回包码 / 已经没进块 / 已经交差（不变量 785）
 - [`syncingheight-notdet-sold-as-bundled.md`](syncingheight-notdet-sold-as-bundled.md) — events 被写成已经必须确定 / 已经交差 / 已经是结果列表同一顺序（不变量 784）
 - [`syncingheight-notnoset-sold-as-bundled.md`](syncingheight-notnoset-sold-as-bundled.md) — 空更新被写成已经没有集合 / 已经改了集合 / 已经是 InitChain 空名单（不变量 783）
 - [`syncingheight-nothistory-sold-as-bundled.md`](syncingheight-nothistory-sold-as-bundled.md) — syncing_to_height 被写成已经有完整历史 / 已经是快照重放 / 已经交差（不变量 782）

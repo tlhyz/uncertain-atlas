@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CheckTx 回了码空间就已经是回包码、已经交差、已经不设道」，必须分开 CheckTx 回包 codespace 是码的命名空间是不是已经是回包码、CheckTx 回包 events 是给索引用的类型键值是不是已经交差、CheckTx 的 lane_id 必须在 Info 回包车道范围内是不是已经不设道。可以跳过「看见 CheckTx 回了码空间就已经是回包码」。不要另写怎样写 CheckTx 回包。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CheckTx 回了码空间就已经是回包码、已经交差、已经不设道」，必须分开 CheckTx 回包 codespace 是码的命名空间是不是已经是回包码、CheckTx 回包 events 是给索引用的类型键值是不是已经交差、CheckTx 的 lane_id 必须在 Info 回包车道范围内是不是已经不设道。可以跳过「看见 CheckTx 回了码空间就已经是回包码」。不要另写怎样写 CheckTx 回包。381 checktxspace vs code bundled unbundling 完成（785 item 1 / 786 item 2 / 787 item 3）；精读 [`worked-example-checktxspace-notcode-vs-bundled.md`](worked-example-checktxspace-notcode-vs-bundled.md)（不变量 785 item 1）。
 
 ## 本页不抄
 

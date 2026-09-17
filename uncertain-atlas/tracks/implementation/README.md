@@ -334,6 +334,9 @@
 - [`worked-example-refetch-vs-restored.md`](worked-example-refetch-vs-restored.md) — 应用可以再拉块或封邻居、引擎不自己做 ≠ 已经封了；refetch_chunks 不论 result 都再拉再装 ≠ 已经齐；reject_senders 不论 Result 都拒这些人 ≠ 已经能接着装（不变量 378）
 - [`worked-example-infover-vs-appversion.md`](worked-example-infover-vs-appversion.md) — Info 请求 version 是 CometBFT 软件语义版本 ≠ 已经是 app_version；block_version / p2p_version 是引擎块版本和 P2P 版本 ≠ 已经版本也对上；abci_version 是 ABCI 语义版本、按 X.X.x 显示 ≠ 已经是握手对齐（不变量 379）
 - [`worked-example-queryindex-vs-store.md`](worked-example-queryindex-vs-store.md) — Query 回包 index 是树里这个键的下标 ≠ 已经是按键查；Query 回包 key 是对上的那份数据的键 ≠ 已经是 Query 高度；Query 回包 value 是对上的那份数据的值 ≠ 已经对上 AppHash（不变量 380）
+- [`worked-example-checktxspace-notlane-vs-bundled.md`](worked-example-checktxspace-notlane-vs-bundled.md) — lane_id≠367 no-lane/prioritized/in-block；≠381 bundled（不变量 787）
+- [`worked-example-checktxspace-notsettled-vs-bundled.md`](worked-example-checktxspace-notsettled-vs-bundled.md) — events≠settled/not-in-block/316 consensus order；≠381 bundled（不变量 786）
+- [`worked-example-checktxspace-notcode-vs-bundled.md`](worked-example-checktxspace-notcode-vs-bundled.md) — codespace≠373 response code/not-in-block/settled；≠381 bundled（不变量 785）
 - [`worked-example-checktxspace-vs-code.md`](worked-example-checktxspace-vs-code.md) — CheckTx 回包 codespace 是码的命名空间 ≠ 已经是回包码；CheckTx 回包 events 是给索引用的类型键值 ≠ 已经交差；CheckTx 的 lane_id 必须在 Info 回包车道范围内 ≠ 已经不设道（不变量 381）
 - [`worked-example-syncingheight-notdet-vs-bundled.md`](worked-example-syncingheight-notdet-vs-bundled.md) — events≠342 must det/settled/same order；≠382 bundled（不变量 784）
 - [`worked-example-syncingheight-notnoset-vs-bundled.md`](worked-example-syncingheight-notnoset-vs-bundled.md) — empty updates≠318 no set/changed set/InitChain empty；≠382 bundled（不变量 783）
