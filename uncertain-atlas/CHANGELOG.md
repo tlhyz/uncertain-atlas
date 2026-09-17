@@ -1,3 +1,15 @@
+## 2026-09-17（续 955）
+
+- 不变量 838；语料 C816；模式 name-the-finalize-equiv-notchanged-bar；反模式 finalize-equiv-notchanged-sold-as-bundled；L10.3 第 807 条。填 L4.4 / CometBFT 档案 必须回四列 not already changed set / not already settled / not already header AppHash 正式三事（363 余量）。363 finalize-equiv vs gates bundled unbundling 完成（838 item 3）。
+
+## 2026-09-17（续 954）
+
+- 不变量 837；语料 C815；模式 name-the-finalize-equiv-notslashed-bar；反模式 finalize-equiv-notslashed-sold-as-bundled；L10.3 第 806 条。填 L4.4 / CometBFT 档案 可以用 decided_last_commit 和 misbehavior 定奖惩 not already slashed / not already LastCommit +2/3 / not already settled 正式三事（363 余量）。363 finalize-equiv vs gates bundled unbundling 续（837 item 2）。
+
+## 2026-09-17（续 953）
+
+- 不变量 836；语料 C814；模式 name-the-finalize-equiv-notgates-bar；反模式 finalize-equiv-notgates-sold-as-bundled；L10.3 第 805 条。填 L4.4 / CometBFT 档案 Finalize 等价于 ABCI 1.0 那三步 not already four gates / not already settled / not already no Prepare-Process 正式三事（363 余量）。363 finalize-equiv vs gates bundled unbundling 启动（836 item 1）。
+
 ## 2026-09-17（续 952）
 
 - 不变量 835；语料 C813；模式 name-the-validator-notchanged-bar；反模式 validator-notchanged-sold-as-bundled；L10.3 第 804 条。填 L4.4 / CometBFT 档案 ValidatorUpdate 用公钥认人 not already VoteInfo Validator / not already changed set / not already selected 正式三事（364 余量）。364 validator vs update bundled unbundling 完成（835 item 3）。

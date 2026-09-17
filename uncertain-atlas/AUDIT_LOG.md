@@ -1,3 +1,18 @@
+| A3950 | 记录 | 会与 363 / 364 / 835 / 147 / 318 / 836 / 837 糊成「看见回了四列就已经改了集合 interchangeable、就已经交差 interchangeable、就已经印进本头 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 必须回四列 not already changed set / not already settled / not already header AppHash 正式三事（363 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。363 finalize-equiv vs gates bundled unbundling 完成（838 item 3） |
+| A3951 | 高 | 看见必须回四列 会被写成已经改了集合 interchangeable / 364 / 835 interchangeable | 官方 Finalize 回包义务 item 3：not already changed set / not 364 / 835 |
+| A3952 | 高 | 看见有 validator_updates 会被写成已经交差 interchangeable | 官方 Finalize 回包义务 item 3：not already settled |
+| A3953 | 高 | 看见必须回 会被写成已经印进本头 interchangeable / 147 interchangeable | 官方 Finalize 回包义务 item 3：not already header AppHash / not 147 |
+| A3954 | 中 | 怎样写 Finalize 回包 会被抄进不确定 | 不抄。不写怎样写 Finalize 回包。不另写 19 节 |
+| A3945 | 记录 | 会与 363 / 21 / 365 / 830 / 372 / 836 / 838 糊成「看见有这两列就已经罚没 interchangeable、就已经是本头 LastCommit interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 可以用 decided_last_commit 和 misbehavior 定奖惩 not already slashed / not already LastCommit +2/3 / not already settled 正式三事（363 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。363 finalize-equiv vs gates bundled unbundling 续（837 item 2） |
+| A3946 | 高 | 看见可以用 decided_last_commit 和 misbehavior 定奖惩 会被写成已经罚没 interchangeable / 21 interchangeable | 官方 Finalize 回包义务 item 2：not already slashed / not 21 |
+| A3947 | 高 | 看见有上一份 commit 会被写成已经是本头 LastCommit 就已经是本高 +2/3 interchangeable | 官方 Finalize 回包义务 item 2：not already LastCommit +2/3 |
+| A3948 | 高 | 看见能定奖惩 会被写成已经交差 interchangeable | 官方 Finalize 回包义务 item 2：not already settled |
+| A3949 | 中 | 怎样写 Finalize 回包 会被抄进不确定 | 不抄。不写怎样写 Finalize 回包。不另写 19 节 |
+| A3940 | 记录 | 会与 363 / 33 / 403 / ~600 finresp-notgates / 837 / 838 糊成「看见收成一门就已经是四门已经结算 interchangeable、就已经交差 interchangeable、就已经没有 Prepare / Process interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 等价于 ABCI 1.0 那三步 not already four gates / not already settled / not already no Prepare-Process 正式三事（363 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。363 finalize-equiv vs gates bundled unbundling 启动（836 item 1） |
+| A3941 | 高 | 看见 Finalize 等价于 ABCI 1.0 那三步 会被写成已经是四门已经结算 interchangeable / 33 interchangeable | 官方 Finalize 回包义务 item 1：not already four gates / not 33 |
+| A3942 | 高 | 看见等价 会被写成已经交差 interchangeable / 403 interchangeable | 官方 Finalize 回包义务 item 1：not already settled / not 403 |
+| A3943 | 高 | 看见旧三步在 会被写成已经没有 Prepare / Process interchangeable | 官方 Finalize 回包义务 item 1：not already no Prepare-Process |
+| A3944 | 中 | 怎样写 Finalize 回包 会被抄进不确定 | 不抄。不写怎样写 Finalize 回包。不另写 19 节 |
 | A3935 | 记录 | 会与 364 / 363 / 35 / 365 / 831 / 833 / 834 糊成「看见更新集合就已经是 VoteInfo 里那份 interchangeable、就已经改了集合 interchangeable、就已经选型 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ValidatorUpdate 用公钥认人 not already VoteInfo Validator / not already changed set / not already selected 正式三事（364 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。364 validator vs update bundled unbundling 完成（835 item 3） |
 | A3936 | 高 | 看见 ValidatorUpdate 用公钥认人 会被写成已经是 VoteInfo 里那份 interchangeable | 官方 Validator 类型 item 3：not already VoteInfo Validator |
 | A3937 | 高 | 看见回了更新 会被写成已经改了集合 interchangeable / 363 interchangeable | 官方 Validator 类型 item 3：not already changed set / not 363 |

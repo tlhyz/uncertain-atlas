@@ -1,3 +1,6 @@
+- [`name-the-finalize-equiv-notchanged-bar.md`](name-the-finalize-equiv-notchanged-bar.md) — 必须回四列 not already changed set / not already settled / not already header AppHash 正式三事（363 余量）（不变量 838）
+- [`name-the-finalize-equiv-notslashed-bar.md`](name-the-finalize-equiv-notslashed-bar.md) — 可以用 decided_last_commit 和 misbehavior 定奖惩 not already slashed / not already LastCommit +2/3 / not already settled 正式三事（363 余量）（不变量 837）
+- [`name-the-finalize-equiv-notgates-bar.md`](name-the-finalize-equiv-notgates-bar.md) — Finalize 等价于 ABCI 1.0 那三步 not already four gates / not already settled / not already no Prepare-Process 正式三事（363 余量）（不变量 836）
 - [`name-the-validator-notchanged-bar.md`](name-the-validator-notchanged-bar.md) — ValidatorUpdate 用公钥认人 not already VoteInfo Validator / not already changed set / not already selected 正式三事（364 余量）（不变量 835）
 - [`name-the-validator-notselected-bar.md`](name-the-validator-notselected-bar.md) — 不带 PubKey not already selected / not already no PQ key / not already settled 正式三事（364 余量）（不变量 834）
 - [`name-the-validator-notpubkey-bar.md`](name-the-validator-notpubkey-bar.md) — Validator 用 address 认人 not already has pubkey / not already can verify sig / not already ValidatorUpdate 正式三事（364 余量）（不变量 833）

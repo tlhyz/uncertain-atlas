@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见收成一门就已经是四门已经结算、已经罚没、已经改了集合」，必须分开 Finalize 等价于 ABCI 1.0 那三步是不是已经是四门已经结算、可以用 decided_last_commit 和 misbehavior 定奖惩是不是已经罚没、必须回四列是不是已经改了集合。可以跳过「看见收成一门就已经是四门已经结算」。不要另写怎样写 Finalize 回包。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见收成一门就已经是四门已经结算、已经罚没、已经改了集合」，必须分开 Finalize 等价于 ABCI 1.0 那三步是不是已经是四门已经结算、可以用 decided_last_commit 和 misbehavior 定奖惩是不是已经罚没、必须回四列是不是已经改了集合。可以跳过「看见收成一门就已经是四门已经结算」。不要另写怎样写 Finalize 回包。363 finalize-equiv vs gates bundled unbundling 完成（836 item 1 / 837 item 2 / 838 item 3）；精读 [`worked-example-finalize-equiv-notgates-vs-bundled.md`](worked-example-finalize-equiv-notgates-vs-bundled.md)（不变量 836 item 1）。
 
 ## 本页不抄
 
