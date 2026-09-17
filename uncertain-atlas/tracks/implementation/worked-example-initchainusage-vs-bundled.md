@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 InitChain Usage 正式三事，必须分开 Called once upon genesis 是不是崩溃后再调 InitChain interchangeable / 已经交差、Response Validators empty → Request Validators 是不是空名单就没有集合 interchangeable、Response Validators not empty → Response regardless of Request 是不是应用 can decide bundled interchangeable / 已经改了集合。可以跳过「看见 InitChain 了就已经崩溃后再调、已经没有集合」。不要另写怎样写 InitChain。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 InitChain Usage 正式三事，必须分开 Called once upon genesis 是不是崩溃后再调 InitChain interchangeable / 已经交差、Response Validators empty → Request Validators 是不是空名单就没有集合 interchangeable、Response Validators not empty → Response regardless of Request 是不是应用 can decide bundled interchangeable / 已经改了集合。可以跳过「看见 InitChain 了就已经崩溃后再调、已经没有集合」。不要另写怎样写 InitChain。495 initchainusage vs bundled unbundling 完成（695 item 1 / 696 item 2 / 697 item 3）；精读 [`worked-example-initchainusage-notcrash-vs-bundled.md`](worked-example-initchainusage-notcrash-vs-bundled.md)（不变量 695 item 1）。
 
 ## 本页不抄
 

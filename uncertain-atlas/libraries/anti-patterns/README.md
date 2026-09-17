@@ -1,3 +1,6 @@
+- [`initchainusage-notnonempty-sold-as-bundled.md`](initchainusage-notnonempty-sold-as-bundled.md) — not empty 被写成已经 can decide bundled / 已经空名单就没有集合 / 已经重复公钥就能恢复（不变量 697）
+- [`initchainusage-notempty-sold-as-bundled.md`](initchainusage-notempty-sold-as-bundled.md) — empty → Request 被写成已经空名单就没有集合 / 已经 not empty 规则 / 已经改了集合（不变量 696）
+- [`initchainusage-notcrash-sold-as-bundled.md`](initchainusage-notcrash-sold-as-bundled.md) — once upon genesis 被写成已经崩溃后再调 / 已经 412 bundled / 已经过了 genesis_time（不变量 695）
 - [`commitretaincaution-nothistorical-sold-as-bundled.md`](commitretaincaution-nothistorical-sold-as-bundled.md) — Historical blocks required 被写成已经 persist signal bundled / 已经默认 0 就等于已经在剪 / 已经 required 就代表 persist 交差（不变量 694）
 - [`commitretaincaution-notgenesis-sold-as-bundled.md`](commitretaincaution-notgenesis-sold-as-bundled.md) — all nodes remove 被写成已经能从创世再装 / 已经非零高度就等于已经在剪 / 已经切进共识就有完整历史（不变量 693）
 - [`commitretaincaution-notdefault-sold-as-bundled.md`](commitretaincaution-notdefault-sold-as-bundled.md) — caution 被写成已经默认 0 就等于已经在剪 / 已经回了高度就等于已经在剪 / 已经 persist signal bundled（不变量 692）

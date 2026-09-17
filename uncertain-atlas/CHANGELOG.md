@@ -1,3 +1,15 @@
+## 2026-09-17（续 814）
+
+- 不变量 697；语料 C675；模式 name-the-initchainusage-notnonempty-bar；反模式 initchainusage-notnonempty-sold-as-bundled；L10.3 第 666 条。填 L4.4 / CometBFT 档案 InitChain Usage Response Validators not empty regardless of Request not app can decide bundled / not empty list means no set / not duplicate pubkeys already recoverable 正式三事（495 余量）。495 initchainusage vs bundled unbundling 完成（697 item 3）。
+
+## 2026-09-17（续 813）
+
+- 不变量 696；语料 C674；模式 name-the-initchainusage-notempty-bar；反模式 initchainusage-notempty-sold-as-bundled；L10.3 第 665 条。填 L4.4 / CometBFT 档案 InitChain Usage Response Validators empty → Request Validators not empty list means no set / not not-empty ignores Request / not ValidatorUpdate already changed set 正式三事（495 余量）。495 initchainusage vs bundled unbundling 续（696 item 2）。
+
+## 2026-09-17（续 812）
+
+- 不变量 695；语料 C673；模式 name-the-initchainusage-notcrash-bar；反模式 initchainusage-notcrash-sold-as-bundled；L10.3 第 664 条。填 L4.4 / CometBFT 档案 InitChain Usage Called once upon genesis not crash then InitChain / not InitChain Usage remainder bundled / not process up is past genesis_time 正式三事（495 余量）。495 initchainusage vs bundled unbundling 启动（695 item 1）。
+
 ## 2026-09-17（续 811）
 
 - 不变量 694；语料 C672；模式 name-the-commitretaincaution-nothistorical-bar；反模式 commitretaincaution-nothistorical-sold-as-bundled；L10.3 第 663 条。填 L4.4 / CometBFT 档案 Commit Usage Historical blocks required not persist signal bundled / not default 0 is pruning / not required means persist already done 正式三事（491 余量）。491 commitretaincaution vs kept bundled unbundling 完成（694 item 3）。
