@@ -1,3 +1,18 @@
+| A3935 | 记录 | 会与 364 / 363 / 35 / 365 / 831 / 833 / 834 糊成「看见更新集合就已经是 VoteInfo 里那份 interchangeable、就已经改了集合 interchangeable、就已经选型 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ValidatorUpdate 用公钥认人 not already VoteInfo Validator / not already changed set / not already selected 正式三事（364 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。364 validator vs update bundled unbundling 完成（835 item 3） |
+| A3936 | 高 | 看见 ValidatorUpdate 用公钥认人 会被写成已经是 VoteInfo 里那份 interchangeable | 官方 Validator 类型 item 3：not already VoteInfo Validator |
+| A3937 | 高 | 看见回了更新 会被写成已经改了集合 interchangeable / 363 interchangeable | 官方 Validator 类型 item 3：not already changed set / not 363 |
+| A3938 | 高 | 看见有 pub_key_type 会被写成已经选型 interchangeable | 官方 Validator 类型 item 3：not already selected |
+| A3939 | 中 | 怎样写 Validator 类型 会被抄进不确定 | 不抄。不写怎样写 Validator 类型。不另写 19 节 |
+| A3930 | 记录 | 会与 364 / 318 / 385 / 774 / 833 / 835 糊成「看见省了字段就已经选型 interchangeable、就已经没有后量子钥 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 不带 PubKey not already selected / not already no PQ key / not already settled 正式三事（364 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。364 validator vs update bundled unbundling 续（834 item 2） |
+| A3931 | 高 | 看见不带 PubKey 会被写成已经选型 interchangeable | 官方 Validator 类型 item 2：not already selected |
+| A3932 | 高 | 看见提到后量子公钥 会被写成已经没有后量子钥 interchangeable | 官方 Validator 类型 item 2：not already no PQ key |
+| A3933 | 高 | 看见 ABCI 不传公钥 会被写成已经交差 interchangeable | 官方 Validator 类型 item 2：not already settled |
+| A3934 | 中 | 怎样写 Validator 类型 会被抄进不确定 | 不抄。不写怎样写 Validator 类型。不另写 19 节 |
+| A3925 | 记录 | 会与 364 / 365 / 831 / 35 / 385 / 774 / 834 / 835 糊成「看见只有 address 和 power 就已经带了公钥 interchangeable、就已经能验签 interchangeable、就已经是 ValidatorUpdate interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Validator 用 address 认人 not already has pubkey / not already can verify sig / not already ValidatorUpdate 正式三事（364 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。364 validator vs update bundled unbundling 启动（833 item 1） |
+| A3926 | 高 | 看见 Validator 用 address 认人 会被写成已经带了公钥 interchangeable / 365 interchangeable | 官方 Validator 类型 item 1：not already has pubkey / not 365 |
+| A3927 | 高 | 看见有 address 会被写成已经能验签 interchangeable | 官方 Validator 类型 item 1：not already can verify sig |
+| A3928 | 高 | 看见有 power 会被写成已经是 ValidatorUpdate interchangeable | 官方 Validator 类型 item 1：not already ValidatorUpdate |
+| A3929 | 中 | 怎样写 Validator 类型 会被抄进不确定 | 不抄。不写怎样写 Validator 类型。不另写 19 节 |
 | A3920 | 记录 | 会与 365 / 300 / 363 / 21 / 830 / 831 糊成「看见顺序在就已经进了块 interchangeable、就已经交差 interchangeable、就已经罚没 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 按投票权降序排 not already in-block / not already settled / not already slashed 正式三事（365 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。365 voteinfo vs reward bundled unbundling 完成（832 item 3） |
 | A3921 | 高 | 看见按投票权降序排 会被写成已经进了块 interchangeable / 300 interchangeable | 官方 VoteInfo item 3：not already in-block / not 300 |
 | A3922 | 高 | 看见从 store 再装 会被写成已经交差 interchangeable | 官方 VoteInfo item 3：not already settled |

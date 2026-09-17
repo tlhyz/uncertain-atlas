@@ -1,3 +1,6 @@
+- [`name-the-validator-notchanged-bar.md`](name-the-validator-notchanged-bar.md) — ValidatorUpdate 用公钥认人 not already VoteInfo Validator / not already changed set / not already selected 正式三事（364 余量）（不变量 835）
+- [`name-the-validator-notselected-bar.md`](name-the-validator-notselected-bar.md) — 不带 PubKey not already selected / not already no PQ key / not already settled 正式三事（364 余量）（不变量 834）
+- [`name-the-validator-notpubkey-bar.md`](name-the-validator-notpubkey-bar.md) — Validator 用 address 认人 not already has pubkey / not already can verify sig / not already ValidatorUpdate 正式三事（364 余量）（不变量 833）
 - [`name-the-voteinfo-notinblock-bar.md`](name-the-voteinfo-notinblock-bar.md) — 按投票权降序排 not already in-block / not already settled / not already slashed 正式三事（365 余量）（不变量 832）
 - [`name-the-voteinfo-notpubkey-bar.md`](name-the-voteinfo-notpubkey-bar.md) — 从块抽出 not already has pubkey / not already ValidatorUpdate / not already changed set 正式三事（365 余量）（不变量 831）
 - [`name-the-voteinfo-notslashed-bar.md`](name-the-voteinfo-notslashed-bar.md) — VoteInfo 定奖惩 not already slashed / not already settled / not already decided_last_commit computed 正式三事（365 余量）（不变量 830）

@@ -1,3 +1,15 @@
+## 2026-09-17（续 952）
+
+- 不变量 835；语料 C813；模式 name-the-validator-notchanged-bar；反模式 validator-notchanged-sold-as-bundled；L10.3 第 804 条。填 L4.4 / CometBFT 档案 ValidatorUpdate 用公钥认人 not already VoteInfo Validator / not already changed set / not already selected 正式三事（364 余量）。364 validator vs update bundled unbundling 完成（835 item 3）。
+
+## 2026-09-17（续 951）
+
+- 不变量 834；语料 C812；模式 name-the-validator-notselected-bar；反模式 validator-notselected-sold-as-bundled；L10.3 第 803 条。填 L4.4 / CometBFT 档案 不带 PubKey not already selected / not already no PQ key / not already settled 正式三事（364 余量）。364 validator vs update bundled unbundling 续（834 item 2）。
+
+## 2026-09-17（续 950）
+
+- 不变量 833；语料 C811；模式 name-the-validator-notpubkey-bar；反模式 validator-notpubkey-sold-as-bundled；L10.3 第 802 条。填 L4.4 / CometBFT 档案 Validator 用 address 认人 not already has pubkey / not already can verify sig / not already ValidatorUpdate 正式三事（364 余量）。364 validator vs update bundled unbundling 启动（833 item 1）。
+
 ## 2026-09-17（续 949）
 
 - 不变量 832；语料 C810；模式 name-the-voteinfo-notinblock-bar；反模式 voteinfo-notinblock-sold-as-bundled；L10.3 第 801 条。填 L4.4 / CometBFT 档案 按投票权降序排 not already in-block / not already settled / not already slashed 正式三事（365 余量）。365 voteinfo vs reward bundled unbundling 完成（832 item 3）。

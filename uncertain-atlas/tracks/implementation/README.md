@@ -314,6 +314,9 @@
 - [`worked-example-extend-when-vs-locked.md`](worked-example-extend-when-vs-locked.md) — +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote ≠ 已经会调 ExtendVote；ExtendVote 调用是同步的 ≠ 已经能在返回之后再改扩展；回包字节不被共识算法解释 ≠ 已经是同一份扩展（不变量 361）
 - [`worked-example-finalize-when-vs-decided.md`](worked-example-finalize-when-vs-decided.md) — +2/3 precommit 同一 id(v) 才决定再调 Finalize ≠ 已经会调 Finalize；先把 v 落成这一高的决定再调 Finalize ≠ 已经交差；应用回了 AppHash 和各笔输出 ≠ 已经印进本头（不变量 362）
 - [`worked-example-finalize-equiv-vs-gates.md`](worked-example-finalize-equiv-vs-gates.md) — Finalize 等价于 ABCI 1.0 那三步 ≠ 已经是四门已经结算；可以用 decided_last_commit 定奖惩 ≠ 已经罚没；必须回四列 ≠ 已经改了集合（不变量 363）
+- [`worked-example-validator-notchanged-vs-bundled.md`](worked-example-validator-notchanged-vs-bundled.md) — ValidatorUpdate≠363 changed set/VoteInfo Validator/selected；≠364 bundled（不变量 835）
+- [`worked-example-validator-notselected-vs-bundled.md`](worked-example-validator-notselected-vs-bundled.md) — 不带PubKey≠selected/no PQ/settled；≠364 bundled（不变量 834）
+- [`worked-example-validator-notpubkey-vs-bundled.md`](worked-example-validator-notpubkey-vs-bundled.md) — address认人≠pubkey/verify/ValidatorUpdate；≠364 bundled（不变量 833）
 - [`worked-example-validator-vs-update.md`](worked-example-validator-vs-update.md) — Validator 用 address 认人 ≠ 已经带了公钥；不带 PubKey ≠ 已经选型；ValidatorUpdate 用公钥认人 ≠ 已经改了集合（不变量 364）
 - [`worked-example-voteinfo-notinblock-vs-bundled.md`](worked-example-voteinfo-notinblock-vs-bundled.md) — 降序排≠300 in-block/settled/slashed；≠365 bundled（不变量 832）
 - [`worked-example-voteinfo-notpubkey-vs-bundled.md`](worked-example-voteinfo-notpubkey-vs-bundled.md) — 从块抽出≠364 pubkey/ValidatorUpdate/changed set；≠365 bundled（不变量 831）

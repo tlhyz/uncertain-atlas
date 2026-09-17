@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 VoteInfo 里有验证者就已经带了公钥、已经选型、已经改了集合」，必须分开 Validator 用 address 认人是不是已经带了公钥、不带 PubKey 是不是已经选型、ValidatorUpdate 用公钥认人是不是已经改了集合。可以跳过「看见 VoteInfo 里有验证者就已经带了公钥」。不要另写怎样写 Validator 类型。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 VoteInfo 里有验证者就已经带了公钥、已经选型、已经改了集合」，必须分开 Validator 用 address 认人是不是已经带了公钥、不带 PubKey 是不是已经选型、ValidatorUpdate 用公钥认人是不是已经改了集合。可以跳过「看见 VoteInfo 里有验证者就已经带了公钥」。不要另写怎样写 Validator 类型。364 validator vs update bundled unbundling 完成（833 item 1 / 834 item 2 / 835 item 3）；精读 [`worked-example-validator-notpubkey-vs-bundled.md`](worked-example-validator-notpubkey-vs-bundled.md)（不变量 833 item 1）。
 
 ## 本页不抄
 

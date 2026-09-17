@@ -1,3 +1,6 @@
+- [`validator-notchanged-sold-as-bundled.md`](validator-notchanged-sold-as-bundled.md) — ValidatorUpdate 被写成已经是 VoteInfo 里那份 / 已经改了集合 / 已经选型（不变量 835）
+- [`validator-notselected-sold-as-bundled.md`](validator-notselected-sold-as-bundled.md) — 不带 PubKey 被写成已经选型 / 已经没有后量子钥 / 已经交差（不变量 834）
+- [`validator-notpubkey-sold-as-bundled.md`](validator-notpubkey-sold-as-bundled.md) — address 认人 被写成已经带了公钥 / 已经能验签 / 已经是 ValidatorUpdate（不变量 833）
 - [`voteinfo-notinblock-sold-as-bundled.md`](voteinfo-notinblock-sold-as-bundled.md) — 降序排 被写成已经进了块 / 已经交差 / 已经罚没（不变量 832）
 - [`voteinfo-notpubkey-sold-as-bundled.md`](voteinfo-notpubkey-sold-as-bundled.md) — 从块抽出 被写成已经带了公钥 / 已经是 ValidatorUpdate / 已经改了集合（不变量 831）
 - [`voteinfo-notslashed-sold-as-bundled.md`](voteinfo-notslashed-sold-as-bundled.md) — 定奖惩 被写成已经罚没 / 已经交差 / 已经用 decided_last_commit 算完（不变量 830）
