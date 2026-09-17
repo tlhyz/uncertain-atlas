@@ -444,6 +444,7 @@
 - [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
+- [commitretaincaution-sold-as-pruning](commitretaincaution-sold-as-pruning.md)
 - [chktxguardusage-sold-as-fourgates](chktxguardusage-sold-as-fourgates.md)
 - [chktxcodereject-sold-as-proposal](chktxcodereject-sold-as-proposal.md)
 - [chktxsource-sold-as-replay](chktxsource-sold-as-replay.md)
