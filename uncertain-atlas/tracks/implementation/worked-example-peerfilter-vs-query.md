@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「连上就已经过滤过」，必须分开发了 addr 过滤查询是不是已经收下这个人、id 过滤查询绿了是不是已经过了 addr、有 /store 路径是不是已经是引擎在用。可以跳过「看见连上了就已经收下」。不要另写怎样写过滤或怎样配路径。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「连上就已经过滤过」，必须分开发了 addr 过滤查询是不是已经收下这个人、id 过滤查询绿了是不是已经过了 addr、有 /store 路径是不是已经是引擎在用。可以跳过「看见连上了就已经收下」。不要另写怎样写过滤或怎样配路径。326 peerfilter vs query bundled unbundling 完成（944 item 1 / 945 item 2 / 946 item 3）；精读 [`worked-example-peerfilter-notaccept-vs-bundled.md`](worked-example-peerfilter-notaccept-vs-bundled.md)（不变量 944 item 1）。
 
 ## 本页不抄
 

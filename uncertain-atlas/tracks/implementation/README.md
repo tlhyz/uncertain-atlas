@@ -145,6 +145,9 @@
 - [`worked-example-snapshot-switch-vs-history.md`](worked-example-snapshot-switch-vs-history.md) — 装完 ≠ 已经有了 ChainID；AppHash 对上 ≠ 已经版本也对上；切进共识 ≠ 已经有完整历史（不变量 323）
 - [`worked-example-snapshot-take-vs-commit.md`](worked-example-snapshot-take-vs-commit.md) — 拍了这个高度 ≠ 已经交差之后拍的；没停链 ≠ 已经一致；只留最近两份 ≠ 已经有了全部历史快照（不变量 324）
 - [`worked-example-query-proof-vs-apphash.md`](worked-example-query-proof-vs-apphash.md) — 头上有 AppHash ≠ 已经是交易默克尔；Query 回了 Proof ≠ 已经对上 AppHash；一层 ProofOp 的根 ≠ 已经对上最终 AppHash（不变量 325）
+- [`worked-example-peerfilter-notstore-vs-bundled.md`](worked-example-peerfilter-notstore-vs-bundled.md) — /store路径≠already engine-used/filtering/settled；≠326 bundled（不变量 946）
+- [`worked-example-peerfilter-notaddr-vs-bundled.md`](worked-example-peerfilter-notaddr-vs-bundled.md) — id绿了≠already past-addr/interactive/settled；≠326 bundled（不变量 945）
+- [`worked-example-peerfilter-notaccept-vs-bundled.md`](worked-example-peerfilter-notaccept-vs-bundled.md) — 发了addr≠already accepted/past-id/settled；≠326 bundled（不变量 944）
 - [`worked-example-peerfilter-vs-query.md`](worked-example-peerfilter-vs-query.md) — 发了 addr 过滤查询 ≠ 已经收下这个人；id 过滤查询绿了 ≠ 已经过了 addr；有 /store 路径 ≠ 已经是引擎在用（不变量 326）
 - [`worked-example-prepare-timeout-notlost-vs-bundled.md`](worked-example-prepare-timeout-notlost-vs-bundled.md) — 又开一轮≠already lost liveness/timeout frozen/settled；≠327 bundled（不变量 901）
 - [`worked-example-prepare-timeout-notfit-vs-bundled.md`](worked-example-prepare-timeout-notfit-vs-bundled.md) — 填了TimeoutPropose≠already fits/clock silent/settled；≠327 bundled（不变量 900）

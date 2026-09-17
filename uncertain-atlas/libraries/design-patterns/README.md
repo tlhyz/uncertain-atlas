@@ -1,3 +1,6 @@
+- [`name-the-peerfilter-notstore-bar.md`](name-the-peerfilter-notstore-bar.md) — 有 /store 路径 not already engine-used / not already filtering / not already settled 正式三事（326 余量）（不变量 946）
+- [`name-the-peerfilter-notaddr-bar.md`](name-the-peerfilter-notaddr-bar.md) — id 过滤查询绿了 not already past-addr / not already interactive / not already settled 正式三事（326 余量）（不变量 945）
+- [`name-the-peerfilter-notaccept-bar.md`](name-the-peerfilter-notaccept-bar.md) — 发了 addr 过滤查询 not already accepted / not already past-id / not already settled 正式三事（326 余量）（不变量 944）
 - [`name-the-checktx-oscillate-notsameb-bar.md`](name-the-checktx-oscillate-notsameb-bar.md) — 本地不再振荡 not already global same height / not already same b / not already settled 正式三事（328 余量）（不变量 943）
 - [`name-the-checktx-oscillate-notstable-bar.md`](name-the-checktx-oscillate-notstable-bar.md) — 还在振荡 not already past h_stable / not already left the pool / not already settled 正式三事（328 余量）（不变量 942）
 - [`name-the-checktx-oscillate-notcode-bar.md`](name-the-checktx-oscillate-notcode-bar.md) — 同一高度回了不同码 not already CheckTxCode / not already OK / not already settled 正式三事（328 余量）（不变量 941）

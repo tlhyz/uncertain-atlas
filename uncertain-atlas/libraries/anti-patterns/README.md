@@ -1,3 +1,6 @@
+- [`peerfilter-notstore-sold-as-bundled.md`](peerfilter-notstore-sold-as-bundled.md) — 有 /store 路径 被写成已经是引擎在用 / 已经是过滤 / 已经交差（不变量 946）
+- [`peerfilter-notaddr-sold-as-bundled.md`](peerfilter-notaddr-sold-as-bundled.md) — id 过滤查询绿了 被写成已经过了 addr / 已经能交互 / 已经交差（不变量 945）
+- [`peerfilter-notaccept-sold-as-bundled.md`](peerfilter-notaccept-sold-as-bundled.md) — 发了 addr 过滤查询 被写成已经收下这个人 / 已经过了 id 那一道 / 已经交差（不变量 944）
 - [`checktx-oscillate-notsameb-sold-as-bundled.md`](checktx-oscillate-notsameb-sold-as-bundled.md) — 本地不再振荡 被写成已经是全局同一高度 / 已经各节点同一份 b / 已经交差（不变量 943）
 - [`checktx-oscillate-notstable-sold-as-bundled.md`](checktx-oscillate-notstable-sold-as-bundled.md) — 还在振荡 被写成已经过了 h_stable / 已经离池 / 已经交差（不变量 942）
 - [`checktx-oscillate-notcode-sold-as-bundled.md`](checktx-oscillate-notcode-sold-as-bundled.md) — 同一高度回了不同码 被写成已经有了 CheckTxCode / 已经能说 OK / 已经交差（不变量 941）

@@ -1,3 +1,18 @@
+| A4490 | 记录 | 会与 326 / 314 / 329 / 944 / 945 糊成「看见有 /store 就已经是引擎在用 interchangeable、就已经是过滤 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 有 /store 路径 not already engine-used / not already filtering / not already settled 正式三事（326 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。326 peerfilter vs query bundled unbundling 完成（946 item 3） |
+| A4491 | 高 | 看见有 /store 路径 会被写成已经是引擎在用 interchangeable | 官方 Peer Filtering item 3：not already engine-used |
+| A4492 | 高 | 看见有 /store 会被写成已经是过滤 interchangeable | 官方 Peer Filtering item 3：not already filtering |
+| A4493 | 高 | 看见能带数据 会被写成已经交差 interchangeable | 官方 Peer Filtering item 3：not already settled |
+| A4494 | 中 | 怎样写过滤会被抄进不确定 | 不抄。不写怎样写过滤或怎样配路径。不另写 19 节 |
+| A4485 | 记录 | 会与 326 / 50 / 332 / 944 / 946 糊成「看见 id 绿了就已经过了 addr interchangeable、就已经能交互 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 id 过滤查询绿了 not already past-addr / not already interactive / not already settled 正式三事（326 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。326 peerfilter vs query bundled unbundling 续（945 item 2） |
+| A4486 | 高 | 看见 id 过滤查询绿了 会被写成已经过了 addr interchangeable | 官方 Peer Filtering item 2：not already past-addr |
+| A4487 | 高 | 看见公钥地址对上 会被写成已经能交互 interchangeable | 官方 Peer Filtering item 2：not already interactive |
+| A4488 | 高 | 看见拒连 会被写成已经交差 interchangeable | 官方 Peer Filtering item 2：not already settled |
+| A4489 | 中 | 怎样写过滤会被抄进不确定 | 不抄。不写怎样写过滤或怎样配路径。不另写 19 节 |
+| A4480 | 记录 | 会与 326 / 305 / 329 / 945 / 946 糊成「看见发了 addr 就已经收下这个人 interchangeable、就已经过了 id 那一道 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 发了 addr 过滤查询 not already accepted / not already past-id / not already settled 正式三事（326 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。326 peerfilter vs query bundled unbundling 启动（944 item 1） |
+| A4481 | 高 | 看见发了 addr 过滤查询 会被写成已经收下这个人 interchangeable / 305 interchangeable | 官方 Peer Filtering item 1：not already accepted / not 305 |
+| A4482 | 高 | 看见 TCP 连上 会被写成已经过了 id 那一道 interchangeable | 官方 Peer Filtering item 1：not already past-id |
+| A4483 | 高 | 看见只问了地址 会被写成已经交差 interchangeable | 官方 Peer Filtering item 1：not already settled |
+| A4484 | 中 | 怎样写过滤会被抄进不确定 | 不抄。不写怎样写过滤或怎样配路径。不另写 19 节 |
 | A4475 | 记录 | 会与 328 / 313 / 33 / 941 / 942 糊成「看见本地稳住就已经是全局同一高度 interchangeable、就已经各节点同一份 b interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 本地不再振荡 not already global same height / not already same b / not already settled 正式三事（328 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。328 checktx-oscillate vs stable bundled unbundling 完成（943 item 3） |
 | A4476 | 高 | 看见本地 h_p,stable 会被写成已经是全局同一高度 interchangeable | 官方 Requirement 13 item 3：not already global same height |
 | A4477 | 高 | 看见本地不再振荡 会被写成已经各节点同一份 b interchangeable | 官方 Requirement 13 item 3：not already same b |

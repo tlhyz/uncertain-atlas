@@ -1,3 +1,15 @@
+## 2026-09-17（续 1063）
+
+- 不变量 946；语料 C924；模式 name-the-peerfilter-notstore-bar；反模式 peerfilter-notstore-sold-as-bundled；L10.3 第 915 条。填 L4.4 / CometBFT 档案 有 /store 路径 not already engine-used / not already filtering / not already settled 正式三事（326 余量）。326 peerfilter vs query bundled unbundling 完成（946 item 3）。
+
+## 2026-09-17（续 1062）
+
+- 不变量 945；语料 C923；模式 name-the-peerfilter-notaddr-bar；反模式 peerfilter-notaddr-sold-as-bundled；L10.3 第 914 条。填 L4.4 / CometBFT 档案 id 过滤查询绿了 not already past-addr / not already interactive / not already settled 正式三事（326 余量）。326 peerfilter vs query bundled unbundling 续（945 item 2）。
+
+## 2026-09-17（续 1061）
+
+- 不变量 944；语料 C922；模式 name-the-peerfilter-notaccept-bar；反模式 peerfilter-notaccept-sold-as-bundled；L10.3 第 913 条。填 L4.4 / CometBFT 档案 发了 addr 过滤查询 not already accepted / not already past-id / not already settled 正式三事（326 余量）。326 peerfilter vs query bundled unbundling 启动（944 item 1）。
+
 ## 2026-09-17（续 1060）
 
 - 不变量 943；语料 C921；模式 name-the-checktx-oscillate-notsameb-bar；反模式 checktx-oscillate-notsameb-sold-as-bundled；L10.3 第 912 条。填 L4.4 / CometBFT 档案 本地不再振荡 not already global same height / not already same b / not already settled 正式三事（328 余量）。328 checktx-oscillate vs stable bundled unbundling 完成（943 item 3）。
