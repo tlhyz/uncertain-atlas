@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「Prepare 已经执行」，必须分开 Prepare 是不是已经有本头哈希、候选是不是已经是 ExecuteTxState、丢掉是不是已经永远不用再执行。可以跳过「看见立刻执行就已经是本高度最终」。不要另写怎样缓存候选或怎样算头哈希。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「Prepare 已经执行」，必须分开 Prepare 是不是已经有本头哈希、候选是不是已经是 ExecuteTxState、丢掉是不是已经永远不用再执行。可以跳过「看见立刻执行就已经是本高度最终」。不要另写怎样缓存候选或怎样算头哈希。311 candidate vs execute bundled unbundling 完成（971 item 1 / 972 item 2 / 973 item 3）；精读 [`worked-example-candidate-nothash-vs-bundled.md`](worked-example-candidate-nothash-vs-bundled.md)（不变量 971 item 1）。
 
 ## 本页不抄
 

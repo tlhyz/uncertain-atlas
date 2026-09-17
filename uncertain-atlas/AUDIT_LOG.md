@@ -1,3 +1,18 @@
+| A4625 | 记录 | 会与 311 / 5 / 338 / 971 / 972 糊成「看见丢掉就已经永远不用再执行 interchangeable、就已经能一直攒 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 丢掉候选 not already never-rerun / not already unbounded-ok / not already settled 正式三事（311 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。311 candidate vs execute bundled unbundling 完成（973 item 3） |
+| A4626 | 高 | 看见丢掉候选 会被写成已经永远不用再执行 interchangeable | 官方 candidate item 3：not already never-rerun |
+| A4627 | 高 | 看见还没 Finalize 会被写成已经能一直攒 interchangeable | 官方 candidate item 3：not already unbounded-ok |
+| A4628 | 高 | 看见有上界 会被写成已经交差 interchangeable | 官方 candidate item 3：not already settled |
+| A4629 | 中 | 怎样缓存候选会被抄进不确定 | 不抄。不写怎样缓存候选或怎样算头哈希。不另写 19 节 |
+| A4620 | 记录 | 会与 311 / 310 / 342 / 971 / 973 糊成「看见立刻执行就已经是 ExecuteTxState interchangeable、就已经能点名本高度最终 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 立刻执行出候选 not already ExecuteTxState / not already this-final / not already settled 正式三事（311 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。311 candidate vs execute bundled unbundling 续（972 item 2） |
+| A4621 | 高 | 看见立刻执行出候选 会被写成已经是 ExecuteTxState interchangeable | 官方 candidate item 2：not already ExecuteTxState |
+| A4622 | 高 | 看见内存里有 会被写成已经能点名本高度最终 interchangeable | 官方 candidate item 2：not already this-final |
+| A4623 | 高 | 看见能加快 Finalize 会被写成已经交差 interchangeable | 官方 candidate item 2：not already settled |
+| A4624 | 中 | 怎样缓存候选会被抄进不确定 | 不抄。不写怎样缓存候选或怎样算头哈希。不另写 19 节 |
+| A4615 | 记录 | 会与 311 / 33 / 312 / 972 / 973 糊成「看见 Prepare 来了就已经知道本头 interchangeable、就已经是 Prepare 当时已经有 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 没有头哈希 not already this-header / not already process-had-it / not already settled 正式三事（311 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。311 candidate vs execute bundled unbundling 启动（971 item 1） |
+| A4616 | 高 | 看见 Prepare 没有头哈希 会被写成已经知道本头 interchangeable / 33 interchangeable | 官方 candidate item 1：not already this-header / not 33 |
+| A4617 | 高 | 看见 Process 有哈希 会被写成 Prepare 当时已经有 interchangeable | 官方 candidate item 1：not already process-had-it |
+| A4618 | 高 | 看见字段齐了 会被写成已经交差 interchangeable | 官方 candidate item 1：not already settled |
+| A4619 | 中 | 怎样缓存候选会被抄进不确定 | 不抄。不写怎样缓存候选或怎样算头哈希。不另写 19 节 |
 | A4610 | 记录 | 会与 312 / 301 / 328 / 968 / 969 糊成「看见 RECHECK 就已经是新交易 interchangeable、就已经当 NEW 处理 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 RECHECK not already new-tx / not already unlocked / not already settled 正式三事（312 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。312 checktxstate vs execute bundled unbundling 完成（970 item 3） |
 | A4611 | 高 | 看见 RECHECK 会被写成已经是新交易 interchangeable | 官方 CheckTxState item 3：not already new-tx |
 | A4612 | 高 | 看见 Type 在 会被写成已经当 NEW 处理 interchangeable | 官方 CheckTxState item 3：not already unlocked |

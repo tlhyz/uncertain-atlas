@@ -1,3 +1,6 @@
+- [`name-the-candidate-notdrop-bar.md`](name-the-candidate-notdrop-bar.md) — 丢掉候选 not already never-rerun / not already unbounded-ok / not already settled 正式三事（311 余量）（不变量 973）
+- [`name-the-candidate-notexec-bar.md`](name-the-candidate-notexec-bar.md) — 立刻执行出候选 not already ExecuteTxState / not already this-final / not already settled 正式三事（311 余量）（不变量 972）
+- [`name-the-candidate-nothash-bar.md`](name-the-candidate-nothash-bar.md) — Prepare 没有头哈希 not already this-header / not already process-had-it / not already settled 正式三事（311 余量）（不变量 971）
 - [`name-the-checktxstate-notrecheck-bar.md`](name-the-checktxstate-notrecheck-bar.md) — RECHECK not already new-tx / not already unlocked / not already settled 正式三事（312 余量）（不变量 970）
 - [`name-the-checktxstate-notsame-bar.md`](name-the-checktxstate-notsame-bar.md) — 同时在改 not already same-state / not already merged / not already settled 正式三事（312 余量）（不变量 969）
 - [`name-the-checktxstate-notexec-bar.md`](name-the-checktxstate-notexec-bar.md) — CheckTx 过了 not already ExecuteTxState / not already future-exec / not already settled 正式三事（312 余量）（不变量 968）

@@ -1,3 +1,6 @@
+- [`candidate-notdrop-sold-as-bundled.md`](candidate-notdrop-sold-as-bundled.md) — 丢掉候选 被写成已经永远不用再执行 / 已经能一直攒 / 已经交差（不变量 973）
+- [`candidate-notexec-sold-as-bundled.md`](candidate-notexec-sold-as-bundled.md) — 立刻执行出候选 被写成已经是 ExecuteTxState / 已经能点名本高度最终 / 已经交差（不变量 972）
+- [`candidate-nothash-sold-as-bundled.md`](candidate-nothash-sold-as-bundled.md) — Prepare 没有头哈希 被写成已经知道本头 / Prepare 当时已经有 / 已经交差（不变量 971）
 - [`checktxstate-notrecheck-sold-as-bundled.md`](checktxstate-notrecheck-sold-as-bundled.md) — RECHECK 被写成已经是新交易 / 已经当 NEW 处理 / 已经交差（不变量 970）
 - [`checktxstate-notsame-sold-as-bundled.md`](checktxstate-notsame-sold-as-bundled.md) — 同时在改 被写成已经同一份 / 已经合并 / 已经交差（不变量 969）
 - [`checktxstate-notexec-sold-as-bundled.md`](checktxstate-notexec-sold-as-bundled.md) — CheckTx 过了 被写成已经按 ExecuteTxState 验过 / 已经按将要执行的那份验过 / 已经交差（不变量 968）

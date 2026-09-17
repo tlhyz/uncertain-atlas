@@ -1,3 +1,15 @@
+## 2026-09-17（续 1090）
+
+- 不变量 973；语料 C951；模式 name-the-candidate-notdrop-bar；反模式 candidate-notdrop-sold-as-bundled；L10.3 第 942 条。填 L4.4 / CometBFT 档案 丢掉候选 not already never-rerun / not already unbounded-ok / not already settled 正式三事（311 余量）。311 candidate vs execute bundled unbundling 完成（973 item 3）。
+
+## 2026-09-17（续 1089）
+
+- 不变量 972；语料 C950；模式 name-the-candidate-notexec-bar；反模式 candidate-notexec-sold-as-bundled；L10.3 第 941 条。填 L4.4 / CometBFT 档案 立刻执行出候选 not already ExecuteTxState / not already this-final / not already settled 正式三事（311 余量）。311 candidate vs execute bundled unbundling 续（972 item 2）。
+
+## 2026-09-17（续 1088）
+
+- 不变量 971；语料 C949；模式 name-the-candidate-nothash-bar；反模式 candidate-nothash-sold-as-bundled；L10.3 第 940 条。填 L4.4 / CometBFT 档案 Prepare 没有头哈希 not already this-header / not already process-had-it / not already settled 正式三事（311 余量）。311 candidate vs execute bundled unbundling 启动（971 item 1）。
+
 ## 2026-09-17（续 1087）
 
 - 不变量 970；语料 C948；模式 name-the-checktxstate-notrecheck-bar；反模式 checktxstate-notrecheck-sold-as-bundled；L10.3 第 939 条。填 L4.4 / CometBFT 档案 RECHECK not already new-tx / not already unlocked / not already settled 正式三事（312 余量）。312 checktxstate vs execute bundled unbundling 完成（970 item 3）。
