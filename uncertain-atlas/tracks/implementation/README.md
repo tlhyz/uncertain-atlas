@@ -153,6 +153,9 @@
 - [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
 - [`worked-example-query-vs-replicated.md`](worked-example-query-vs-replicated.md) — Query 回了 ≠ 已经复制到各节点；查到了 ≠ 已经新鲜；实现了 Query ≠ 已经是正常运转必须有（不变量 329）
 - [`worked-example-ve-height-vs-prepare.md`](worked-example-ve-height-vs-prepare.md) — 到了 H ≠ 已经 Prepare 带了扩展；H+1 带了扩展 ≠ 已经是本高度刚签的；h < H 带了扩展 ≠ 已经合法（不变量 330）
+- [`worked-example-evidence-maxbytes-notblock-vs-bundled.md`](worked-example-evidence-maxbytes-notblock-vs-bundled.md) — 证据尺≠already block MaxBytes/unlimited-minus-one/settled；≠331 bundled（不变量 922）
+- [`worked-example-evidence-maxbytes-notunbond-vs-bundled.md`](worked-example-evidence-maxbytes-notunbond-vs-bundled.md) — >0≠already covering unbonding/enough to punish/settled；≠331 bundled（不变量 921）
+- [`worked-example-evidence-maxbytes-notunder-vs-bundled.md`](worked-example-evidence-maxbytes-notunder-vs-bundled.md) — 填了证据字段≠already under block cap/overhead-deducted/settled；≠331 bundled（不变量 920）
 - [`worked-example-evidence-maxbytes-vs-block.md`](worked-example-evidence-maxbytes-vs-block.md) — 填了证据 MaxBytes ≠ 已经落在块上限下面；> 0 ≠ 已经盖住解绑；证据 MaxBytes ≠ 已经是块 MaxBytes（不变量 331）
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-notve-vs-bundled.md`](worked-example-params-delay-notve-vs-bundled.md) — 参数H+1≠already VE switch/only that field/settled；≠333 bundled（不变量 913）

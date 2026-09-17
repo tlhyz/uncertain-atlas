@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「填了证据体积上限就已经落在块上限下面、已经盖住解绑、已经是块 MaxBytes」，必须分开填了证据 MaxBytes 是不是已经落在块上限下面、> 0 是不是已经盖住解绑、证据 MaxBytes 是不是已经是块 MaxBytes。可以跳过「看见填了证据体积就已经和块上限同一把尺」。不要另写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「填了证据体积上限就已经落在块上限下面、已经盖住解绑、已经是块 MaxBytes」，必须分开填了证据 MaxBytes 是不是已经落在块上限下面、> 0 是不是已经盖住解绑、证据 MaxBytes 是不是已经是块 MaxBytes。可以跳过「看见填了证据体积就已经和块上限同一把尺」。不要另写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。331 evidence-maxbytes vs block bundled unbundling 完成（920 item 1 / 921 item 2 / 922 item 3）；精读 [`worked-example-evidence-maxbytes-notunder-vs-bundled.md`](worked-example-evidence-maxbytes-notunder-vs-bundled.md)（不变量 920 item 1）。
 
 ## 本页不抄
 

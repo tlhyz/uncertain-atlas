@@ -1,3 +1,15 @@
+## 2026-09-17（续 1039）
+
+- 不变量 922；语料 C900；模式 name-the-evidence-maxbytes-notblock-bar；反模式 evidence-maxbytes-notblock-sold-as-bundled；L10.3 第 891 条。填 L4.4 / CometBFT 档案 证据 MaxBytes not already block MaxBytes / not already unlimited-minus-one / not already settled 正式三事（331 余量）。331 evidence-maxbytes vs block bundled unbundling 完成（922 item 3）。
+
+## 2026-09-17（续 1038）
+
+- 不变量 921；语料 C899；模式 name-the-evidence-maxbytes-notunbond-bar；反模式 evidence-maxbytes-notunbond-sold-as-bundled；L10.3 第 890 条。填 L4.4 / CometBFT 档案 MaxBytes > 0 not already covering unbonding / not already enough to punish / not already settled 正式三事（331 余量）。331 evidence-maxbytes vs block bundled unbundling 续（921 item 2）。
+
+## 2026-09-17（续 1037）
+
+- 不变量 920；语料 C898；模式 name-the-evidence-maxbytes-notunder-bar；反模式 evidence-maxbytes-notunder-sold-as-bundled；L10.3 第 889 条。填 L4.4 / CometBFT 档案 填了证据 MaxBytes not already under block cap / not already overhead-deducted / not already settled 正式三事（331 余量）。331 evidence-maxbytes vs block bundled unbundling 启动（920 item 1）。
+
 ## 2026-09-17（续 1036）
 
 - 不变量 919；语料 C897；模式 name-the-maxbytes-cap-not21-bar；反模式 maxbytes-cap-not21-sold-as-bundled；L10.3 第 888 条。填 L4.4 / CometBFT 档案 必须 -1 或不超过 100 MB not already default-21 / not already bandwidth-evaluated / not already settled 正式三事（337 余量）。337 maxbytes-cap vs unlimited bundled unbundling 完成（919 item 3）。

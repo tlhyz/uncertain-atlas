@@ -1,3 +1,18 @@
+| A4370 | 记录 | 会与 331 / 63 / 337 / 920 / 921 糊成「看见证据这边有 MaxBytes 就已经是块 MaxBytes interchangeable、就已经是写成 -1 的那条 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 证据 MaxBytes not already block MaxBytes / not already unlimited-minus-one / not already settled 正式三事（331 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。331 evidence-maxbytes vs block bundled unbundling 完成（922 item 3） |
+| A4371 | 高 | 看见证据 MaxBytes 会被写成已经是块 MaxBytes interchangeable | 官方 EvidenceParams.MaxBytes item 3：not already block MaxBytes |
+| A4372 | 高 | 看见填了数 会被写成已经是写成 -1 的那条 interchangeable | 官方 EvidenceParams.MaxBytes item 3：not already unlimited-minus-one |
+| A4373 | 高 | 看见有上限 会被写成已经交差 interchangeable | 官方 EvidenceParams.MaxBytes item 3：not already settled |
+| A4374 | 中 | 怎样设 EvidenceParams.MaxBytes 会被抄进不确定 | 不抄。不写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。不另写 19 节 |
+| A4365 | 记录 | 会与 331 / 46 / 63 / 920 / 922 糊成「看见 > 0 就已经盖住解绑 interchangeable、就已经够罚 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 MaxBytes > 0 not already covering unbonding / not already enough to punish / not already settled 正式三事（331 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。331 evidence-maxbytes vs block bundled unbundling 续（921 item 2） |
+| A4366 | 高 | 看见 MaxBytes > 0 会被写成已经盖住解绑 interchangeable | 官方 EvidenceParams.MaxBytes item 2：not already covering unbonding |
+| A4367 | 高 | 看见合法 会被写成已经够罚 interchangeable | 官方 EvidenceParams.MaxBytes item 2：not already enough to punish |
+| A4368 | 高 | 看见大于 0 会被写成已经交差 interchangeable | 官方 EvidenceParams.MaxBytes item 2：not already settled |
+| A4369 | 中 | 怎样设 EvidenceParams.MaxBytes 会被抄进不确定 | 不抄。不写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。不另写 19 节 |
+| A4360 | 记录 | 会与 331 / 299 / 337 / 921 / 922 糊成「看见填了证据体积就已经落在块上限下面 interchangeable、就已经扣掉开销 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 填了证据 MaxBytes not already under block cap / not already overhead-deducted / not already settled 正式三事（331 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。331 evidence-maxbytes vs block bundled unbundling 启动（920 item 1） |
+| A4361 | 高 | 看见填了证据 MaxBytes 会被写成已经落在块上限下面 interchangeable / 299 interchangeable | 官方 EvidenceParams.MaxBytes item 1：not already under block cap / not 299 |
+| A4362 | 高 | 看见有上限 会被写成已经扣掉开销 interchangeable | 官方 EvidenceParams.MaxBytes item 1：not already overhead-deducted |
+| A4363 | 高 | 看见应当落在下面 会被写成已经交差 interchangeable | 官方 EvidenceParams.MaxBytes item 1：not already settled |
+| A4364 | 中 | 怎样设 EvidenceParams.MaxBytes 会被抄进不确定 | 不抄。不写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。不另写 19 节 |
 | A4355 | 记录 | 会与 337 / 331 / 344 / 917 / 918 糊成「看见合法范围就已经是默认 21 MB interchangeable、就已经评估过带宽 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 必须 -1 或不超过 100 MB not already default-21 / not already bandwidth-evaluated / not already settled 正式三事（337 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。337 maxbytes-cap vs unlimited bundled unbundling 完成（919 item 3） |
 | A4356 | 高 | 看见必须 -1 或不超过 100 MB 会被写成已经是默认 21 MB interchangeable | 官方 BlockParams.MaxBytes item 3：not already default-21 |
 | A4357 | 高 | 看见默认能接到 21 MB 会被写成已经评估过带宽 interchangeable | 官方 BlockParams.MaxBytes item 3：not already bandwidth-evaluated |
