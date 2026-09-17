@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage 正式三事，必须分开 Return information about the application state 是不是 QueryState interchangeable / 已经 persisted、Used to sync during handshake on startup or on recovery 是不是 Info 握手 bundled interchangeable / 已经快照重放、app_version included in Header of every block 是不是 last_block persisted during Commit interchangeable / 已经印进本头 AppHash。可以跳过「看见能回 Info 就已经 QueryState、已经握手 bundled 交差」。不要另写怎样写 Info。494 infousage vs handshake bundled unbundling 在本页 item 1 启动；精读 [`worked-example-infousage-notquerystate-vs-bundled.md`](worked-example-infousage-notquerystate-vs-bundled.md)（不变量 668 item 1）；续 Used to sync during handshake not Info 握手 bundled（669 item 2 余量）；续 app_version included in Header（670 item 3 余量）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage 正式三事，必须分开 Return information about the application state 是不是 QueryState interchangeable / 已经 persisted、Used to sync during handshake on startup or on recovery 是不是 Info 握手 bundled interchangeable / 已经快照重放、app_version included in Header of every block 是不是 last_block persisted during Commit interchangeable / 已经印进本头 AppHash。可以跳过「看见能回 Info 就已经 QueryState、已经握手 bundled 交差」。不要另写怎样写 Info。494 infousage vs handshake bundled unbundling 在本页 item 1 启动；精读 [`worked-example-infousage-notquerystate-vs-bundled.md`](worked-example-infousage-notquerystate-vs-bundled.md)（不变量 668 item 1）；续 [`worked-example-infousage-nothandshake-vs-bundled.md`](worked-example-infousage-nothandshake-vs-bundled.md)（不变量 669 item 2）；续 app_version included in Header（670 item 3 余量）。
 
 ## 本页不抄
 
