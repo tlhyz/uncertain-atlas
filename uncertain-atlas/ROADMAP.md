@@ -15,9 +15,9 @@
 完成标准（事实 + 建议混合，见各条标注）：
 
 1. 五条轨（index / courses / protocols / tracks / libraries）互相指认，无孤立读书笔记。
-2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~709）。
+2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~712）。
 3. 决策矩阵「不确定候选」列填完**建议档**（非最终选型）。
-4. 对抗语料 C01–C687+ 有 runner，能批量扫描文案/测试钩子。
+4. 对抗语料 C01–C690+ 有 runner，能批量扫描文案/测试钩子。
 5. 过滤器页链（Cardano / Babylon / EigenLayer 等）要么补 19 节，要么在 index 明确「永久过滤器」。
 6. 单一 canonical 分支 + 清晰 merge 策略（见 Phase 0）。
 
@@ -34,7 +34,7 @@
 | 协议档案 | 20+ 链/品类 19 节模板 | 强 |
 | 横向专题 | 16 tracks；failure-museum 92+ 案 | 强 |
 | 模式/反模式 | 500+ design-patterns；650+ anti-patterns | 强 |
-| 不变量库 | 709+ 可测试句；ABCI++ 主线 | 进行中（强） |
+| 不变量库 | 712+ 可测试句；ABCI++ 主线 | 进行中（强） |
 | 通读路径 | `index/04-study-path.md` 六通 | 强 |
 
 ### 需调整
@@ -112,8 +112,9 @@
 | 2026-09-17 | P1-3 701–703 Commit persist signal 拆句（481 item 1/2/3） |
 | 2026-09-17 | P1-3 704–706 CheckTx lane_id 拆句（482 item 1/2/3） |
 | 2026-09-17 | P1-3 707–709 CheckTx Request type 拆句（484 item 1/2/3） |
+| 2026-09-17 | P1-3 710–712 Finalize consensus_param_updates 拆句（471 item 1/2/3） |
 
-下一批默认：**P1-3 ABCI++ 不变量 710+**（继续 cometbft 拆句）。  
+下一批默认：**P1-3 ABCI++ 不变量 713+**（继续 cometbft 拆句）。  
 唤醒后先跑 `python3 tools/review_audit.py`，见 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
 ---

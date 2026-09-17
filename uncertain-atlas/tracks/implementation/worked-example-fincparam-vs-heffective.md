@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Finalize 回了 consensus_param_updates 就已经在块 H 生效、已经只改一项、已经清掉参数」，必须分开块 H 回的用于 H+1 是不是已经在块 H 生效、Changes to gas, size / Deterministic = Yes 是不是已经只填一个字段就只改这一项、may be empty / keep current values 是不是已经清掉参数。可以跳过「看见回了 consensus_param_updates 就已经在块 H 生效」。不要另写怎样编 ConsensusParams。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Finalize 回了 consensus_param_updates 就已经在块 H 生效、已经只改一项、已经清掉参数」，必须分开块 H 回的用于 H+1 是不是已经在块 H 生效、Changes to gas, size / Deterministic = Yes 是不是已经只填一个字段就只改这一项、may be empty / keep current values 是不是已经清掉参数。可以跳过「看见回了 consensus_param_updates 就已经在块 H 生效」。不要另写怎样编 ConsensusParams。471 fincparam vs heffective bundled unbundling 完成（710 item 1 / 711 item 2 / 712 item 3）；精读 [`worked-example-fincparam-nothatH-vs-bundled.md`](worked-example-fincparam-nothatH-vs-bundled.md)（不变量 710 item 1）。
 
 ## 本页不抄
 

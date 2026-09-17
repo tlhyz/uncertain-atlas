@@ -1,3 +1,6 @@
+- [`fincparam-notcleared-sold-as-bundled.md`](fincparam-notcleared-sold-as-bundled.md) — empty keep current 被写成已经清掉参数 / 已经没有参数 / 已经空更新交差（不变量 712）
+- [`fincparam-notpartial-sold-as-bundled.md`](fincparam-notpartial-sold-as-bundled.md) — gas/size 被写成已经只改一项 / 已经回包末栏交差 / 已经整门非确定（不变量 711）
+- [`fincparam-nothatH-sold-as-bundled.md`](fincparam-nothatH-sold-as-bundled.md) — H→H+1 被写成已经在块 H 生效 / 已经换人 / 已经 333 交差（不变量 710）
 - [`chktxtype-nottxfield-sold-as-bundled.md`](chktxtype-nottxfield-sold-as-bundled.md) — type 栏 被写成已经 tx 栏就知道种类 / 已经再验不需要读 type / 已经请求余栏交差（不变量 709）
 - [`chktxtype-notsource-sold-as-bundled.md`](chktxtype-notsource-sold-as-bundled.md) — Recheck 被写成已经外部新交易 / 已经 New default / 已经去重保证不重放（不变量 708）
 - [`chktxtype-notrecheck-sold-as-bundled.md`](chktxtype-notrecheck-sold-as-bundled.md) — CheckTx_New 被写成已经 Recheck / 已经 tx 栏就等于 Recheck / 已经永远有效（不变量 707）

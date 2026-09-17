@@ -1,3 +1,15 @@
+## 2026-09-17（续 829）
+
+- 不变量 712；语料 C690；模式 name-the-fincparam-notcleared-bar；反模式 fincparam-notcleared-sold-as-bundled；L10.3 第 681 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse consensus_param_updates may be empty keep current not params cleared / not InitChain empty params / not empty-update bundled 正式三事（471 余量）。471 fincparam vs heffective bundled unbundling 完成（712 item 3）。
+
+## 2026-09-17（续 828）
+
+- 不变量 711；语料 C689；模式 name-the-fincparam-notpartial-bar；反模式 fincparam-notpartial-sold-as-bundled；L10.3 第 680 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse consensus_param_updates gas/size/Deterministic Yes not only one field / not finrespend bundled / not next_block_delay nondet means whole gate 正式三事（471 余量）。471 fincparam vs heffective bundled unbundling 续（711 item 2）。
+
+## 2026-09-17（续 827）
+
+- 不变量 710；语料 C688；模式 name-the-fincparam-nothatH-bar；反模式 fincparam-nothatH-sold-as-bundled；L10.3 第 679 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse consensus_param_updates H→H+1 not effective at H / not validator_updates H+2 / not app-requirements delay 正式三事（471 余量）。471 fincparam vs heffective bundled unbundling 启动（710 item 1）。
+
 ## 2026-09-17（续 826）
 
 - 不变量 709；语料 C687；模式 name-the-chktxtype-nottxfield-bar；反模式 chktxtype-nottxfield-sold-as-bundled；L10.3 第 678 条。填 L4.4 / CometBFT 档案 CheckTx Request type field not tx field tells New vs Recheck / not Commit then recheck needs no type / not CheckTx request rest bundled 正式三事（484 余量）。484 chktxtype vs recheck bundled unbundling 完成（709 item 3）。
