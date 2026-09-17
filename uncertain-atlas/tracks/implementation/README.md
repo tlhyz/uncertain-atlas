@@ -182,6 +182,9 @@
 - [`worked-example-prepare-nondet-notraw-vs-bundled.md`](worked-example-prepare-nondet-notraw-vs-bundled.md) — raw一样≠already same prepared/must same/settled；≠338 bundled（不变量 897）
 - [`worked-example-prepare-nondet-notmust-vs-bundled.md`](worked-example-prepare-nondet-notmust-vs-bundled.md) — Prepare无确定性≠already must det/same ruler as Process/settled；≠338 bundled（不变量 896）
 - [`worked-example-prepare-nondet-vs-process.md`](worked-example-prepare-nondet-vs-process.md) — Prepare 没有确定性要求 ≠ 已经必须确定；两边 raw 一样 ≠ 已经是同一份提案；ExtendVote 没有确定性要求 ≠ 已经是同一份扩展（不变量 338）
+- [`worked-example-checktx-weak-notproc-vs-bundled.md`](worked-example-checktx-weak-notproc-vs-bundled.md) — Process对付弱过滤≠already CheckTx/Finalize/settled；≠339 bundled（不变量 931）
+- [`worked-example-checktx-weak-notpool-vs-bundled.md`](worked-example-checktx-weak-notpool-vs-bundled.md) — 拜占庭满块无效≠already pool-blocked/out-of-consensus/settled；≠339 bundled（不变量 930）
+- [`worked-example-checktx-weak-notsort-vs-bundled.md`](worked-example-checktx-weak-notsort-vs-bundled.md) — 不该验排序≠already should-check-in-CheckTx/execute-state-checked/settled；≠339 bundled（不变量 929）
 - [`worked-example-checktx-weak-vs-process.md`](worked-example-checktx-weak-vs-process.md) — 不该验排序相关有效性 ≠ 已经该在 CheckTx 里验；拜占庭能提案一满块无效交易 ≠ 已经被池子挡住；ProcessProposal 对付这种行为 ≠ 已经是 CheckTx（不变量 339）
 - [`worked-example-process-det-notfix-vs-bundled.md`](worked-example-process-det-notfix-vs-bundled.md) — Process非确定无解≠already lost safety/engine patch/settled；≠340 bundled（不变量 895）
 - [`worked-example-process-det-nothonest-vs-bundled.md`](worked-example-process-det-nothonest-vs-bundled.md) — 任意块同判≠already honest-only/Req3 Accept/settled；≠340 bundled（不变量 894）

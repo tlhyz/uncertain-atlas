@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见过了 CheckTx 就已经验完、已经被池子挡住、已经是 ProcessProposal」，必须分开不该验排序相关有效性是不是已经该在 CheckTx 里验、拜占庭能提案一满块无效交易是不是已经被池子挡住、ProcessProposal 对付这种行为是不是已经是 CheckTx。可以跳过「看见过了 CheckTx 就已经验完」。不要把「不验排序」当不确定已经验完。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见过了 CheckTx 就已经验完、已经被池子挡住、已经是 ProcessProposal」，必须分开不该验排序相关有效性是不是已经该在 CheckTx 里验、拜占庭能提案一满块无效交易是不是已经被池子挡住、ProcessProposal 对付这种行为是不是已经是 CheckTx。可以跳过「看见过了 CheckTx 就已经验完」。不要把「不验排序」当不确定已经验完。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。339 checktx-weak vs process bundled unbundling 完成（929 item 1 / 930 item 2 / 931 item 3）；精读 [`worked-example-checktx-weak-notsort-vs-bundled.md`](worked-example-checktx-weak-notsort-vs-bundled.md)（不变量 929 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,15 @@
+## 2026-09-17（续 1048）
+
+- 不变量 931；语料 C909；模式 name-the-checktx-weak-notproc-bar；反模式 checktx-weak-notproc-sold-as-bundled；L10.3 第 900 条。填 L4.4 / CometBFT 档案 ProcessProposal 对付这种行为 not already CheckTx / not already Finalize / not already settled 正式三事（339 余量）。339 checktx-weak vs process bundled unbundling 完成（931 item 3）。
+
+## 2026-09-17（续 1047）
+
+- 不变量 930；语料 C908；模式 name-the-checktx-weak-notpool-bar；反模式 checktx-weak-notpool-sold-as-bundled；L10.3 第 899 条。填 L4.4 / CometBFT 档案 拜占庭能提案一满块无效交易 not already pool-blocked / not already out-of-consensus / not already settled 正式三事（339 余量）。339 checktx-weak vs process bundled unbundling 续（930 item 2）。
+
+## 2026-09-17（续 1046）
+
+- 不变量 929；语料 C907；模式 name-the-checktx-weak-notsort-bar；反模式 checktx-weak-notsort-sold-as-bundled；L10.3 第 898 条。填 L4.4 / CometBFT 档案 不该验排序相关有效性 not already should-check-in-CheckTx / not already execute-state-checked / not already settled 正式三事（339 余量）。339 checktx-weak vs process bundled unbundling 启动（929 item 1）。
+
 ## 2026-09-17（续 1045）
 
 - 不变量 928；语料 C906；模式 name-the-ve-height-notlegal-bar；反模式 ve-height-notlegal-sold-as-bundled；L10.3 第 897 条。填 L4.4 / CometBFT 档案 h < H 带了扩展 not already legal / not already enabled / not already settled 正式三事（330 余量）。330 ve-height vs prepare bundled unbundling 完成（928 item 3）。

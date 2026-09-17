@@ -1,3 +1,6 @@
+- [`checktx-weak-notproc-sold-as-bundled.md`](checktx-weak-notproc-sold-as-bundled.md) — ProcessProposal 对付这种行为 被写成已经是 CheckTx / 已经是 Finalize / 已经交差（不变量 931）
+- [`checktx-weak-notpool-sold-as-bundled.md`](checktx-weak-notpool-sold-as-bundled.md) — 拜占庭能提案一满块无效交易 被写成已经被池子挡住 / 已经进不了共识 / 已经交差（不变量 930）
+- [`checktx-weak-notsort-sold-as-bundled.md`](checktx-weak-notsort-sold-as-bundled.md) — 不该验排序相关有效性 被写成已经该在 CheckTx 里验 / 已经按将要执行的那份验过 / 已经交差（不变量 929）
 - [`ve-height-notlegal-sold-as-bundled.md`](ve-height-notlegal-sold-as-bundled.md) — h < H 带了扩展 被写成已经合法 / 已经启用 / 已经交差（不变量 928）
 - [`ve-height-notthis-sold-as-bundled.md`](ve-height-notthis-sold-as-bundled.md) — H+1 带了扩展 被写成已经是本高度刚签的 / 已经是这一高的 e / 已经交差（不变量 927）
 - [`ve-height-notprep-sold-as-bundled.md`](ve-height-notprep-sold-as-bundled.md) — 到了 H 被写成已经 Prepare 带了扩展 / 已经写进本高提议 / 已经交差（不变量 926）

@@ -1,3 +1,18 @@
+| A4415 | 记录 | 会与 339 / 313 / 328 / 929 / 930 糊成「看见有 ProcessProposal 就已经是 CheckTx interchangeable、就已经是 Finalize interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposal 对付这种行为 not already CheckTx / not already Finalize / not already settled 正式三事（339 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。339 checktx-weak vs process bundled unbundling 完成（931 item 3） |
+| A4416 | 高 | 看见 ProcessProposal 对付这种行为 会被写成已经是 CheckTx interchangeable | 官方 CheckTx 弱过滤器 item 3：not already CheckTx |
+| A4417 | 高 | 看见点名了这道门 会被写成已经是 Finalize interchangeable | 官方 CheckTx 弱过滤器 item 3：not already Finalize |
+| A4418 | 高 | 看见会拒提案 会被写成已经交差 interchangeable | 官方 CheckTx 弱过滤器 item 3：not already settled |
+| A4419 | 中 | 怎样写 CheckTx 会被抄进不确定 | 不抄。不写怎样写 CheckTx 或怎样写 ProcessProposal。不另写 19 节 |
+| A4410 | 记录 | 会与 339 / 33 / 313 / 929 / 931 糊成「看见拜占庭能提案就已经被池子挡住 interchangeable、就已经进不了共识 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 拜占庭能提案一满块无效交易 not already pool-blocked / not already out-of-consensus / not already settled 正式三事（339 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。339 checktx-weak vs process bundled unbundling 续（930 item 2） |
+| A4411 | 高 | 看见拜占庭能提案一满块无效交易 会被写成已经被池子挡住 interchangeable | 官方 CheckTx 弱过滤器 item 2：not already pool-blocked |
+| A4412 | 高 | 看见能提案无效交易 会被写成已经进不了共识 interchangeable | 官方 CheckTx 弱过滤器 item 2：not already out-of-consensus |
+| A4413 | 高 | 看见诚实节点过了 CheckTx 会被写成已经交差 interchangeable | 官方 CheckTx 弱过滤器 item 2：not already settled |
+| A4414 | 中 | 怎样写 CheckTx 会被抄进不确定 | 不抄。不写怎样写 CheckTx 或怎样写 ProcessProposal。不另写 19 节 |
+| A4405 | 记录 | 会与 339 / 312 / 33 / 930 / 931 糊成「看见不该验排序就已经该在 CheckTx 里验 interchangeable、就已经按将要执行的那份验过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 不该验排序相关有效性 not already should-check-in-CheckTx / not already execute-state-checked / not already settled 正式三事（339 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。339 checktx-weak vs process bundled unbundling 启动（929 item 1） |
+| A4406 | 高 | 看见不该验排序相关有效性 会被写成已经该在 CheckTx 里验 interchangeable / 312 interchangeable | 官方 CheckTx 弱过滤器 item 1：not already should-check-in-CheckTx / not 312 |
+| A4407 | 高 | 看见排序会改有效性 会被写成已经按将要执行的那份验过 interchangeable | 官方 CheckTx 弱过滤器 item 1：not already execute-state-checked |
+| A4408 | 高 | 看见过了 CheckTx 会被写成已经交差 interchangeable | 官方 CheckTx 弱过滤器 item 1：not already settled |
+| A4409 | 中 | 怎样写 CheckTx 会被抄进不确定 | 不抄。不写怎样写 CheckTx 或怎样写 ProcessProposal。不把「不验排序」当不确定已经验完。不另写 19 节 |
 | A4400 | 记录 | 会与 330 / 34 / 346 / 926 / 927 糊成「看见 h < H 带了扩展就已经合法 interchangeable、就已经启用 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 h < H 带了扩展 not already legal / not already enabled / not already settled 正式三事（330 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。330 ve-height vs prepare bundled unbundling 完成（928 item 3） |
 | A4401 | 高 | 看见 h < H 的预提交带了扩展 会被写成已经合法 interchangeable | 官方 VoteExtensionsEnableHeight item 3：not already legal |
 | A4402 | 高 | 看见字段在 会被写成已经启用 interchangeable | 官方 VoteExtensionsEnableHeight item 3：not already enabled |
