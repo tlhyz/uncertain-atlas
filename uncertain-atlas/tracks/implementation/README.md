@@ -1,3 +1,4 @@
+- [`worked-example-listsnapusage-notsnaptype-vs-bundled.md`](worked-example-listsnapusage-notsnaptype-vs-bundled.md) — See Snapshot data type≠368 Snapshot类型/321 Offer装完/395 本地清单/483 Only AppHash；≠500 bundled（不变量 662）
 - [`worked-example-listsnapusage-notdiscover-vs-bundled.md`](worked-example-listsnapusage-notdiscover-vs-bundled.md) — discover on peers≠395 空请求 bundled/395 本地清单/322 Snapshot Discovery；≠500 bundled（不变量 661）
 - [`worked-example-loadsnapusage-notchunks-vs-bundled.md`](worked-example-loadsnapusage-notchunks-vs-bundled.md) — retrieve chunks≠397 ApplySnapshotChunk chunk/401 ACCEPT/375 LoadSnapshotChunk齐；≠501 bundled（不变量 660）
 - [`worked-example-loadsnapusage-notdiscover-vs-bundled.md`](worked-example-loadsnapusage-notdiscover-vs-bundled.md) — retrieve from peers≠500 ListSnapshots discover/395 空请求 bundled/322 Snapshot Discovery；≠501 bundled（不变量 659）

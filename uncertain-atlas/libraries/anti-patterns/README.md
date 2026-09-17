@@ -1,3 +1,4 @@
+- [`listsnapusage-notsnaptype-sold-as-bundled.md`](listsnapusage-notsnaptype-sold-as-bundled.md) — See Snapshot data type 被写成已经 Snapshot 类型 bundled / 已经装完 / 已经本地清单或 Only AppHash（不变量 662）
 - [`listsnapusage-notdiscover-sold-as-bundled.md`](listsnapusage-notdiscover-sold-as-bundled.md) — discover on peers 被写成已经 ListSnapshots 空请求 bundled / 已经本地清单 / 已经问了邻居就齐（不变量 661）
 - [`loadsnapusage-notchunks-sold-as-bundled.md`](loadsnapusage-notchunks-sold-as-bundled.md) — retrieve snapshot chunks 被写成已经 ApplySnapshotChunk chunk 栏 / 已经 ACCEPT / 已经 LoadSnapshotChunk 已经齐（不变量 660）
 - [`loadsnapusage-notdiscover-sold-as-bundled.md`](loadsnapusage-notdiscover-sold-as-bundled.md) — retrieve from peers 被写成已经 ListSnapshots discover / 已经本地清单 / 已经问了邻居就齐（不变量 659）
