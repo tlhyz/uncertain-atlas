@@ -32,7 +32,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CheckTx 回了 lane_id 就已经不设道、已经排了优先、已经在 Info 表范围内交差」，必须分开 empty lane_id 是不是 assigned to default lane 而不是 priority 0 不设道 / 已经从池里删掉、assigned to default lane 是不是 default_lane 标识 / 已经排了优先、lane_id in ResponseInfo range 是不是 Info 表选型 / CheckTx 回包栏 interchangeable。可以跳过「看见 CheckTx 回了 lane_id 就已经排了优先」。不要另写怎样填 lane_id。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CheckTx 回了 lane_id 就已经不设道、已经排了优先、已经在 Info 表范围内交差」，必须分开 empty lane_id 是不是 assigned to default lane 而不是 priority 0 不设道 / 已经从池里删掉、assigned to default lane 是不是 default_lane 标识 / 已经排了优先、lane_id in ResponseInfo range 是不是 Info 表选型 / CheckTx 回包栏 interchangeable。可以跳过「看见 CheckTx 回了 lane_id 就已经排了优先」。不要另写怎样填 lane_id。482 chktxlane vs default bundled unbundling 完成（704 item 1 / 705 item 2 / 706 item 3）；精读 [`worked-example-chktxlane-notreserved-vs-bundled.md`](worked-example-chktxlane-notreserved-vs-bundled.md)（不变量 704 item 1）。
 
 ## 本页不抄
 

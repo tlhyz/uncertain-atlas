@@ -1,3 +1,15 @@
+## 2026-09-17（续 823）
+
+- 不变量 706；语料 C684；模式 name-the-chktxlane-notrange-bar；反模式 chktxlane-notrange-sold-as-bundled；L10.3 第 675 条。填 L4.4 / CometBFT 档案 CheckTx Usage lane_id in ResponseInfo range not Info table selection / not in-table means prioritized / not CheckTx response field bundled 正式三事（482 余量）。482 chktxlane vs default bundled unbundling 完成（706 item 3）。
+
+## 2026-09-17（续 822）
+
+- 不变量 705；语料 C683；模式 name-the-chktxlane-notassigned-bar；反模式 chktxlane-notassigned-sold-as-bundled；L10.3 第 674 条。填 L4.4 / CometBFT 档案 CheckTx Usage assigned to default lane not default_lane identifier / not Priority consensus order / not Check passed is in proposal 正式三事（482 余量）。482 chktxlane vs default bundled unbundling 续（705 item 2）。
+
+## 2026-09-17（续 821）
+
+- 不变量 704；语料 C682；模式 name-the-chktxlane-notreserved-bar；反模式 chktxlane-notreserved-sold-as-bundled；L10.3 第 673 条。填 L4.4 / CometBFT 档案 CheckTx Usage empty lane_id not priority 0 reserved / not deleted from pool / not no-lane means rejected 正式三事（482 余量）。482 chktxlane vs default bundled unbundling 启动（704 item 1）。
+
 ## 2026-09-17（续 820）
 
 - 不变量 703；语料 C681；模式 name-the-commitpersist-nothistorical-bar；反模式 commitpersist-nothistorical-sold-as-bundled；L10.3 第 672 条。填 L4.4 / CometBFT 档案 Commit Usage persist-context Historical blocks required not default 0 is pruning / not all-nodes-remove only statesync / not caution Historical blocks bundled 正式三事（481 余量）。481 commitpersist vs finalize bundled unbundling 完成（703 item 3）。

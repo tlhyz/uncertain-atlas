@@ -1,3 +1,6 @@
+- [`chktxlane-notrange-sold-as-bundled.md`](chktxlane-notrange-sold-as-bundled.md) — lane_id in range 被写成已经 Info 表选型 / 已经填了就排了优先 / 已经回包栏交差（不变量 706）
+- [`chktxlane-notassigned-sold-as-bundled.md`](chktxlane-notassigned-sold-as-bundled.md) — assigned to default 被写成已经写了标识 / 已经排了优先 / 已经进了块（不变量 705）
+- [`chktxlane-notreserved-sold-as-bundled.md`](chktxlane-notreserved-sold-as-bundled.md) — empty lane_id 被写成已经 priority 0 不设道 / 已经从池里删掉 / 已经可选拒（不变量 704）
 - [`commitpersist-nothistorical-sold-as-bundled.md`](commitpersist-nothistorical-sold-as-bundled.md) — persist Historical blocks 被写成已经默认 0 就等于已经在剪 / 已经只有 state sync / 已经 caution bundled（不变量 703）
 - [`commitpersist-notempty-sold-as-bundled.md`](commitpersist-notempty-sold-as-bundled.md) — expected persist 被写成已经空请求就等于落盘 / 已经 signal 交差 / 已经 Finalize+Commit 交差（不变量 702）
 - [`commitpersist-notfinalize-sold-as-bundled.md`](commitpersist-notfinalize-sold-as-bundled.md) — persist signal 被写成已经 Finalize 落了 / 已经引擎 persist 这三份 / 已经 When step 8（不变量 701）
