@@ -1,3 +1,18 @@
+| A4595 | 记录 | 会与 313 / 161 / 314 / 965 / 966 糊成「看见通常不受欢迎就已经没有例外 interchangeable、就已经由内存池保证 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 通常不受欢迎 not already no-exception / not already pool-guaranteed / not already settled 正式三事（313 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。313 replayprot vs replay bundled unbundling 完成（967 item 3） |
+| A4596 | 高 | 看见通常不受欢迎 会被写成已经没有幂等例外 interchangeable | 官方 Replay Protection item 3：not already no-exception |
+| A4597 | 高 | 看见幂等 会被写成已经由内存池保证 interchangeable | 官方 Replay Protection item 3：not already pool-guaranteed |
+| A4598 | 高 | 看见官方点名 undesirable 会被写成已经交差 interchangeable | 官方 Replay Protection item 3：not already settled |
+| A4599 | 中 | 怎样实现重放保护会被抄进不确定 | 不抄。不写怎样实现重放保护或怎样做索引器。不另写 19 节 |
+| A4590 | 记录 | 会与 313 / 301 / 328 / 965 / 967 糊成「看见过了 CheckTx 就已经有应用级保护 interchangeable、就已经是应用谓词 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 过了 CheckTx not already app-guard / not already app-predicate / not already settled 正式三事（313 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。313 replayprot vs replay bundled unbundling 续（966 item 2） |
+| A4591 | 高 | 看见过了 CheckTx 会被写成已经有应用级保护 interchangeable | 官方 Replay Protection item 2：not already app-guard |
+| A4592 | 高 | 看见索引器滤过 会被写成已经是应用谓词 interchangeable | 官方 Replay Protection item 2：not already app-predicate |
+| A4593 | 高 | 看见引擎会挡 会被写成已经交差 interchangeable | 官方 Replay Protection item 2：not already settled |
+| A4594 | 中 | 怎样实现重放保护会被抄进不确定 | 不抄。不写怎样实现重放保护或怎样做索引器。不另写 19 节 |
+| A4585 | 记录 | 会与 313 / 312 / 339 / 966 / 967 糊成「看见池子挡过就已经保证 interchangeable、就已经有强保证 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 内存池去重 not already guaranteed / not already strong / not already settled 正式三事（313 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。313 replayprot vs replay bundled unbundling 启动（965 item 1） |
+| A4586 | 高 | 看见内存池去重 会被写成已经保证不重复 interchangeable / 312 interchangeable | 官方 Replay Protection item 1：not already guaranteed / not 312 |
+| A4587 | 高 | 看见索引器在 会被写成已经有强保证 interchangeable | 官方 Replay Protection item 1：not already strong |
+| A4588 | 高 | 看见没报重复 会被写成已经交差 interchangeable | 官方 Replay Protection item 1：not already settled |
+| A4589 | 中 | 怎样实现重放保护会被抄进不确定 | 不抄。不写怎样实现重放保护或怎样做索引器。不另写 19 节 |
 | A4580 | 记录 | 会与 314 / 38 / 334 / 962 / 963 糊成「看见对齐就已经是快照重放 interchangeable、就已经从创世重放 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 启动对齐 not already snapshot-replay / not already genesis-replay / not already settled 正式三事（314 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。314 querystate vs execute bundled unbundling 完成（964 item 3） |
 | A4581 | 高 | 看见启动对齐 会被写成已经是快照重放 interchangeable | 官方 Info/Query Connection item 3：not already snapshot-replay |
 | A4582 | 高 | 看见启动握手 会被写成已经从创世重放 interchangeable | 官方 Info/Query Connection item 3：not already genesis-replay |

@@ -123,6 +123,9 @@
 - [`worked-example-commit-lock-vs-rpc.md`](worked-example-commit-lock-vs-rpc.md) — 默认锁 ≠ 已经 RPC 安全；Commit 前上锁 ≠ 已经解锁；Commit 里等广播 ≠ 已经能往下走（不变量 310）
 - [`worked-example-candidate-vs-execute.md`](worked-example-candidate-vs-execute.md) — Prepare 没有头哈希 ≠ 已经知道本头；候选 ≠ 已经是 ExecuteTxState；丢掉 ≠ 已经永远不用再执行（不变量 311）
 - [`worked-example-checktxstate-vs-execute.md`](worked-example-checktxstate-vs-execute.md) — CheckTx 过了 ≠ 已经按 ExecuteTxState 验过；两份同时在改 ≠ 已经同一份；RECHECK ≠ 已经是新交易（不变量 312）
+- [`worked-example-replayprot-notidem-vs-bundled.md`](worked-example-replayprot-notidem-vs-bundled.md) — 通常不受欢迎≠already no-exception/pool-guaranteed/settled；≠313 bundled（不变量 967）
+- [`worked-example-replayprot-notapp-vs-bundled.md`](worked-example-replayprot-notapp-vs-bundled.md) — 过了CheckTx≠already app-guard/app-predicate/settled；≠313 bundled（不变量 966）
+- [`worked-example-replayprot-notguar-vs-bundled.md`](worked-example-replayprot-notguar-vs-bundled.md) — 内存池去重≠already guaranteed/strong/settled；≠313 bundled（不变量 965）
 - [`worked-example-mempool-indexer-vs-replay.md`](worked-example-mempool-indexer-vs-replay.md) — 内存池去重 ≠ 已经保证不重放；过了 CheckTx ≠ 已经有应用级保护；通常不受欢迎 ≠ 已经没有幂等例外（不变量 313）
 - [`worked-example-querystate-notsnap-vs-bundled.md`](worked-example-querystate-notsnap-vs-bundled.md) — 启动对齐≠already snapshot-replay/genesis-replay/settled；≠314 bundled（不变量 964）
 - [`worked-example-querystate-notlive-vs-bundled.md`](worked-example-querystate-notlive-vs-bundled.md) — 上次Commit≠already live/CheckTxState/settled；≠314 bundled（不变量 963）

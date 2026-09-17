@@ -1,3 +1,6 @@
+- [`replayprot-notidem-sold-as-bundled.md`](replayprot-notidem-sold-as-bundled.md) — 通常不受欢迎 被写成已经没有幂等例外 / 已经由内存池保证 / 已经交差（不变量 967）
+- [`replayprot-notapp-sold-as-bundled.md`](replayprot-notapp-sold-as-bundled.md) — 过了 CheckTx 被写成已经有应用级保护 / 已经是应用谓词 / 已经交差（不变量 966）
+- [`replayprot-notguar-sold-as-bundled.md`](replayprot-notguar-sold-as-bundled.md) — 内存池去重 被写成已经保证不重复 / 已经有强保证 / 已经交差（不变量 965）
 - [`querystate-notsnap-sold-as-bundled.md`](querystate-notsnap-sold-as-bundled.md) — 启动对齐 被写成已经是快照重放 / 已经从创世重放 / 已经交差（不变量 964）
 - [`querystate-notlive-sold-as-bundled.md`](querystate-notlive-sold-as-bundled.md) — 上次 Commit 被写成已经跟上正在跑的块 / 已经是 CheckTxState / 已经交差（不变量 963）
 - [`querystate-notexec-sold-as-bundled.md`](querystate-notexec-sold-as-bundled.md) — Query 连接 被写成已经是 ExecuteTxState / 已经能写 / 已经交差（不变量 962）

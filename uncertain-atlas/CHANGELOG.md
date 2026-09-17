@@ -1,3 +1,15 @@
+## 2026-09-17（续 1084）
+
+- 不变量 967；语料 C945；模式 name-the-replayprot-notidem-bar；反模式 replayprot-notidem-sold-as-bundled；L10.3 第 936 条。填 L4.4 / CometBFT 档案 通常不受欢迎 not already no-exception / not already pool-guaranteed / not already settled 正式三事（313 余量）。313 replayprot vs replay bundled unbundling 完成（967 item 3）。
+
+## 2026-09-17（续 1083）
+
+- 不变量 966；语料 C944；模式 name-the-replayprot-notapp-bar；反模式 replayprot-notapp-sold-as-bundled；L10.3 第 935 条。填 L4.4 / CometBFT 档案 过了 CheckTx not already app-guard / not already app-predicate / not already settled 正式三事（313 余量）。313 replayprot vs replay bundled unbundling 续（966 item 2）。
+
+## 2026-09-17（续 1082）
+
+- 不变量 965；语料 C943；模式 name-the-replayprot-notguar-bar；反模式 replayprot-notguar-sold-as-bundled；L10.3 第 934 条。填 L4.4 / CometBFT 档案 内存池去重 not already guaranteed / not already strong / not already settled 正式三事（313 余量）。313 replayprot vs replay bundled unbundling 启动（965 item 1）。
+
 ## 2026-09-17（续 1081）
 
 - 不变量 964；语料 C942；模式 name-the-querystate-notsnap-bar；反模式 querystate-notsnap-sold-as-bundled；L10.3 第 933 条。填 L4.4 / CometBFT 档案 启动对齐 not already snapshot-replay / not already genesis-replay / not already settled 正式三事（314 余量）。314 querystate vs execute bundled unbundling 完成（964 item 3）。

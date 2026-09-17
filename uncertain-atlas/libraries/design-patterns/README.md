@@ -1,3 +1,6 @@
+- [`name-the-replayprot-notidem-bar.md`](name-the-replayprot-notidem-bar.md) — 通常不受欢迎 not already no-exception / not already pool-guaranteed / not already settled 正式三事（313 余量）（不变量 967）
+- [`name-the-replayprot-notapp-bar.md`](name-the-replayprot-notapp-bar.md) — 过了 CheckTx not already app-guard / not already app-predicate / not already settled 正式三事（313 余量）（不变量 966）
+- [`name-the-replayprot-notguar-bar.md`](name-the-replayprot-notguar-bar.md) — 内存池去重 not already guaranteed / not already strong / not already settled 正式三事（313 余量）（不变量 965）
 - [`name-the-querystate-notsnap-bar.md`](name-the-querystate-notsnap-bar.md) — 启动对齐 not already snapshot-replay / not already genesis-replay / not already settled 正式三事（314 余量）（不变量 964）
 - [`name-the-querystate-notlive-bar.md`](name-the-querystate-notlive-bar.md) — 上次 Commit not already live / not already CheckTxState / not already settled 正式三事（314 余量）（不变量 963）
 - [`name-the-querystate-notexec-bar.md`](name-the-querystate-notexec-bar.md) — Query 连接 not already ExecuteTxState / not already writable / not already settled 正式三事（314 余量）（不变量 962）
