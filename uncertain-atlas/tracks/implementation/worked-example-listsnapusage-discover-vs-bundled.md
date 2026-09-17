@@ -32,7 +32,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ListSnapshots Usage discover / Snapshot type 正式二事，必须分开 Used during state sync to discover on peers 是不是 ListSnapshots 空请求 bundled interchangeable / 已经本地清单 / 已经问了邻居就齐、See Snapshot data type for details 是不是 Snapshot 类型 bundled interchangeable / 已经 five fields 对上 / 已经装完。可以跳过「看见 ListSnapshots Usage 了就已经空请求 bundled interchangeable、已经 five fields 对上 interchangeable」。不要另写怎样写 ListSnapshots、怎样列 Snapshot 类型。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ListSnapshots Usage discover / Snapshot type 正式二事，必须分开 Used during state sync to discover on peers 是不是 ListSnapshots 空请求 bundled interchangeable / 已经本地清单 / 已经问了邻居就齐、See Snapshot data type for details 是不是 Snapshot 类型 bundled interchangeable / 已经 five fields 对上 / 已经装完。可以跳过「看见 ListSnapshots Usage 了就已经空请求 bundled interchangeable、已经 five fields 对上 interchangeable」。不要另写怎样写 ListSnapshots、怎样列 Snapshot 类型。 500 listsnapusage discover unbundling 在本页 item 1 启动；精读 [`worked-example-listsnapusage-notdiscover-vs-bundled.md`](worked-example-listsnapusage-notdiscover-vs-bundled.md)（不变量 661 item 1）。
 
 ## 本页不抄
 

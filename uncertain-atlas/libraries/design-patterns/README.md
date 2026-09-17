@@ -1,3 +1,4 @@
+- [`name-the-listsnapusage-notdiscover-bar.md`](name-the-listsnapusage-notdiscover-bar.md) — ListSnapshots Usage discover on peers not ListSnapshots 空请求 bundled / not ListSnapshots 本地清单 bundled / not Snapshot Discovery 正式三事（500 余量）（不变量 661）
 - [`name-the-loadsnapusage-notchunks-bar.md`](name-the-loadsnapusage-notchunks-bar.md) — LoadSnapshotChunk Usage retrieve snapshot chunks not ApplySnapshotChunk chunk 栏 / not ACCEPT bundled / not LoadSnapshotChunk 已经齐 正式三事（501 余量）（不变量 660）
 - [`name-the-loadsnapusage-notdiscover-bar.md`](name-the-loadsnapusage-notdiscover-bar.md) — LoadSnapshotChunk Usage retrieve from peers not ListSnapshots discover / not ListSnapshots 空请求 bundled / not Snapshot Discovery 正式三事（501 余量）（不变量 659）
 - [`name-the-loadsnapusage-notretrieve-bar.md`](name-the-loadsnapusage-notretrieve-bar.md) — LoadSnapshotChunk Usage Used during state sync to retrieve not LoadSnapshotChunk bundled / not Offer 装完 / not Transition to Consensus 正式三事（501 余量）（不变量 658）
