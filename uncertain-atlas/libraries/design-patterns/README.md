@@ -1,3 +1,6 @@
+- [`name-the-checktxstate-notrecheck-bar.md`](name-the-checktxstate-notrecheck-bar.md) — RECHECK not already new-tx / not already unlocked / not already settled 正式三事（312 余量）（不变量 970）
+- [`name-the-checktxstate-notsame-bar.md`](name-the-checktxstate-notsame-bar.md) — 同时在改 not already same-state / not already merged / not already settled 正式三事（312 余量）（不变量 969）
+- [`name-the-checktxstate-notexec-bar.md`](name-the-checktxstate-notexec-bar.md) — CheckTx 过了 not already ExecuteTxState / not already future-exec / not already settled 正式三事（312 余量）（不变量 968）
 - [`name-the-replayprot-notidem-bar.md`](name-the-replayprot-notidem-bar.md) — 通常不受欢迎 not already no-exception / not already pool-guaranteed / not already settled 正式三事（313 余量）（不变量 967）
 - [`name-the-replayprot-notapp-bar.md`](name-the-replayprot-notapp-bar.md) — 过了 CheckTx not already app-guard / not already app-predicate / not already settled 正式三事（313 余量）（不变量 966）
 - [`name-the-replayprot-notguar-bar.md`](name-the-replayprot-notguar-bar.md) — 内存池去重 not already guaranteed / not already strong / not already settled 正式三事（313 余量）（不变量 965）

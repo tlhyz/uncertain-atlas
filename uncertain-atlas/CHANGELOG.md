@@ -1,3 +1,15 @@
+## 2026-09-17（续 1087）
+
+- 不变量 970；语料 C948；模式 name-the-checktxstate-notrecheck-bar；反模式 checktxstate-notrecheck-sold-as-bundled；L10.3 第 939 条。填 L4.4 / CometBFT 档案 RECHECK not already new-tx / not already unlocked / not already settled 正式三事（312 余量）。312 checktxstate vs execute bundled unbundling 完成（970 item 3）。
+
+## 2026-09-17（续 1086）
+
+- 不变量 969；语料 C947；模式 name-the-checktxstate-notsame-bar；反模式 checktxstate-notsame-sold-as-bundled；L10.3 第 938 条。填 L4.4 / CometBFT 档案 同时在改 not already same-state / not already merged / not already settled 正式三事（312 余量）。312 checktxstate vs execute bundled unbundling 续（969 item 2）。
+
+## 2026-09-17（续 1085）
+
+- 不变量 968；语料 C946；模式 name-the-checktxstate-notexec-bar；反模式 checktxstate-notexec-sold-as-bundled；L10.3 第 937 条。填 L4.4 / CometBFT 档案 CheckTx 过了 not already ExecuteTxState / not already future-exec / not already settled 正式三事（312 余量）。312 checktxstate vs execute bundled unbundling 启动（968 item 1）。
+
 ## 2026-09-17（续 1084）
 
 - 不变量 967；语料 C945；模式 name-the-replayprot-notidem-bar；反模式 replayprot-notidem-sold-as-bundled；L10.3 第 936 条。填 L4.4 / CometBFT 档案 通常不受欢迎 not already no-exception / not already pool-guaranteed / not already settled 正式三事（313 余量）。313 replayprot vs replay bundled unbundling 完成（967 item 3）。

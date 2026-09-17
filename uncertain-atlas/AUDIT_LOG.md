@@ -1,3 +1,18 @@
+| A4610 | 记录 | 会与 312 / 301 / 328 / 968 / 969 糊成「看见 RECHECK 就已经是新交易 interchangeable、就已经当 NEW 处理 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 RECHECK not already new-tx / not already unlocked / not already settled 正式三事（312 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。312 checktxstate vs execute bundled unbundling 完成（970 item 3） |
+| A4611 | 高 | 看见 RECHECK 会被写成已经是新交易 interchangeable | 官方 CheckTxState item 3：not already new-tx |
+| A4612 | 高 | 看见 Type 在 会被写成已经当 NEW 处理 interchangeable | 官方 CheckTxState item 3：not already unlocked |
+| A4613 | 高 | 看见 Commit 回了 会被写成已经交差 interchangeable | 官方 CheckTxState item 3：not already settled |
+| A4614 | 中 | 怎样再验会被抄进不确定 | 不抄。不写怎样实现 CheckTx 或怎样再验。不另写 19 节 |
+| A4605 | 记录 | 会与 312 / 310 / 314 / 968 / 970 糊成「看见同时在改就已经同一份 interchangeable、就已经合并 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 同时在改 not already same-state / not already merged / not already settled 正式三事（312 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。312 checktxstate vs execute bundled unbundling 续（969 item 2） |
+| A4606 | 高 | 看见同时在改 会被写成已经同一份 interchangeable | 官方 CheckTxState item 2：not already same-state |
+| A4607 | 高 | 看见并发 会被写成已经合并 interchangeable | 官方 CheckTxState item 2：not already merged |
+| A4608 | 高 | 看见都叫 CheckTx / Finalize 会被写成已经交差 interchangeable | 官方 CheckTxState item 2：not already settled |
+| A4609 | 中 | 怎样再验会被抄进不确定 | 不抄。不写怎样实现 CheckTx 或怎样再验。不另写 19 节 |
+| A4600 | 记录 | 会与 312 / 311 / 313 / 969 / 970 糊成「看见 CheckTx 过了就已经按 ExecuteTxState 验过 interchangeable、就已经按将要执行的那份验过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 过了 not already ExecuteTxState / not already future-exec / not already settled 正式三事（312 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。312 checktxstate vs execute bundled unbundling 启动（968 item 1） |
+| A4601 | 高 | 看见 CheckTx 过了 会被写成已经按 ExecuteTxState 验过 interchangeable / 311 interchangeable | 官方 CheckTxState item 1：not already ExecuteTxState / not 311 |
+| A4602 | 高 | 看见进了池 会被写成已经按将要执行的那份验过 interchangeable | 官方 CheckTxState item 1：not already future-exec |
+| A4603 | 高 | 看见重置了 会被写成已经交差 interchangeable | 官方 CheckTxState item 1：not already settled |
+| A4604 | 中 | 怎样再验会被抄进不确定 | 不抄。不写怎样实现 CheckTx 或怎样再验。不另写 19 节 |
 | A4595 | 记录 | 会与 313 / 161 / 314 / 965 / 966 糊成「看见通常不受欢迎就已经没有例外 interchangeable、就已经由内存池保证 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 通常不受欢迎 not already no-exception / not already pool-guaranteed / not already settled 正式三事（313 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。313 replayprot vs replay bundled unbundling 完成（967 item 3） |
 | A4596 | 高 | 看见通常不受欢迎 会被写成已经没有幂等例外 interchangeable | 官方 Replay Protection item 3：not already no-exception |
 | A4597 | 高 | 看见幂等 会被写成已经由内存池保证 interchangeable | 官方 Replay Protection item 3：not already pool-guaranteed |

@@ -1,3 +1,6 @@
+- [`checktxstate-notrecheck-sold-as-bundled.md`](checktxstate-notrecheck-sold-as-bundled.md) — RECHECK 被写成已经是新交易 / 已经当 NEW 处理 / 已经交差（不变量 970）
+- [`checktxstate-notsame-sold-as-bundled.md`](checktxstate-notsame-sold-as-bundled.md) — 同时在改 被写成已经同一份 / 已经合并 / 已经交差（不变量 969）
+- [`checktxstate-notexec-sold-as-bundled.md`](checktxstate-notexec-sold-as-bundled.md) — CheckTx 过了 被写成已经按 ExecuteTxState 验过 / 已经按将要执行的那份验过 / 已经交差（不变量 968）
 - [`replayprot-notidem-sold-as-bundled.md`](replayprot-notidem-sold-as-bundled.md) — 通常不受欢迎 被写成已经没有幂等例外 / 已经由内存池保证 / 已经交差（不变量 967）
 - [`replayprot-notapp-sold-as-bundled.md`](replayprot-notapp-sold-as-bundled.md) — 过了 CheckTx 被写成已经有应用级保护 / 已经是应用谓词 / 已经交差（不变量 966）
 - [`replayprot-notguar-sold-as-bundled.md`](replayprot-notguar-sold-as-bundled.md) — 内存池去重 被写成已经保证不重复 / 已经有强保证 / 已经交差（不变量 965）

@@ -122,6 +122,9 @@
 - [`worked-example-abci-conn-vs-gates.md`](worked-example-abci-conn-vs-gates.md) — 同进程 ≠ 已经有套接字隔离；gRPC 最容易 ≠ 已经高性能；一条连接 ≠ 已经够用，也不是已经是四门（不变量 307）
 - [`worked-example-commit-lock-vs-rpc.md`](worked-example-commit-lock-vs-rpc.md) — 默认锁 ≠ 已经 RPC 安全；Commit 前上锁 ≠ 已经解锁；Commit 里等广播 ≠ 已经能往下走（不变量 310）
 - [`worked-example-candidate-vs-execute.md`](worked-example-candidate-vs-execute.md) — Prepare 没有头哈希 ≠ 已经知道本头；候选 ≠ 已经是 ExecuteTxState；丢掉 ≠ 已经永远不用再执行（不变量 311）
+- [`worked-example-checktxstate-notrecheck-vs-bundled.md`](worked-example-checktxstate-notrecheck-vs-bundled.md) — RECHECK≠already new-tx/unlocked/settled；≠312 bundled（不变量 970）
+- [`worked-example-checktxstate-notsame-vs-bundled.md`](worked-example-checktxstate-notsame-vs-bundled.md) — 同时在改≠already same-state/merged/settled；≠312 bundled（不变量 969）
+- [`worked-example-checktxstate-notexec-vs-bundled.md`](worked-example-checktxstate-notexec-vs-bundled.md) — CheckTx过了≠already ExecuteTxState/future-exec/settled；≠312 bundled（不变量 968）
 - [`worked-example-checktxstate-vs-execute.md`](worked-example-checktxstate-vs-execute.md) — CheckTx 过了 ≠ 已经按 ExecuteTxState 验过；两份同时在改 ≠ 已经同一份；RECHECK ≠ 已经是新交易（不变量 312）
 - [`worked-example-replayprot-notidem-vs-bundled.md`](worked-example-replayprot-notidem-vs-bundled.md) — 通常不受欢迎≠already no-exception/pool-guaranteed/settled；≠313 bundled（不变量 967）
 - [`worked-example-replayprot-notapp-vs-bundled.md`](worked-example-replayprot-notapp-vs-bundled.md) — 过了CheckTx≠already app-guard/app-predicate/settled；≠313 bundled（不变量 966）
