@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「对等节点已经齐」，必须分开句柄是不是已经是那个人、Broadcast 是不是已经送到、踢持久邻居是不是已经断干净。可以跳过「看见句柄就已经是那个人」。不要另写怎样广播或怎样重连。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「对等节点已经齐」，必须分开句柄是不是已经是那个人、Broadcast 是不是已经送到、踢持久邻居是不是已经断干净。可以跳过「看见句柄就已经是那个人」。不要另写怎样广播或怎样重连。306 peer-handler vs node bundled unbundling 完成（1004 item 1 / 1005 item 2 / 1006 item 3）；精读 [`worked-example-peerhand-notsame-vs-bundled.md`](worked-example-peerhand-notsame-vs-bundled.md)（不变量 1004 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,6 @@
+- [`peerhand-notgone-sold-as-bundled.md`](peerhand-notgone-sold-as-bundled.md) — StopPeerForError 被写成已经断干净 / 持久名单已经忘了 / 已经按「踢了就干净」执行（不变量 1006）
+- [`peerhand-notsent-sold-as-bundled.md`](peerhand-notsent-sold-as-bundled.md) — Broadcast 回通道 被写成已经送到 / 已经能点名 / 已经该当现行用法（不变量 1005）
+- [`peerhand-notsame-sold-as-bundled.md`](peerhand-notsame-sold-as-bundled.md) — Peer 句柄 被写成已经是同一个人 / 已经是上一次那份 / 身份已经换了（不变量 1004）
 - [`initpeer-nothot-sold-as-bundled.md`](initpeer-nothot-sold-as-bundled.md) — 跑着 被写成已经能再登记 / 已经能再占一个 / 已经能再开（不变量 1003）
 - [`initpeer-notadd-sold-as-bundled.md`](initpeer-notadd-sold-as-bundled.md) — Receive 被写成已经过了 AddPeer / 已经可以按「已加入」去发 / 官方禁止更早收（不变量 1002）
 - [`initpeer-nottalk-sold-as-bundled.md`](initpeer-nottalk-sold-as-bundled.md) — InitPeer 被写成已经能跟它对说 / 已经加进已连接集合 / 已经 AddPeer（不变量 1001）

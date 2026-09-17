@@ -1,3 +1,18 @@
+| A4790 | 记录 | 会与 306 / 67 / 305 / 1004 / 1005 糊成「看见叫了停就已经断干净 interchangeable、就已经忘了持久名单 interchangeable、就已经踢了就干净 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 StopPeerForError not already gone / not already forgotten / not already clean 正式三事（306 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。306 peer-handler vs node bundled unbundling 完成（1006 item 3） |
+| A4791 | 高 | 看见 StopPeerForError 会被写成已经对持久邻居也断干净 interchangeable | 官方 p2p API item 3：not already gone |
+| A4792 | 高 | 看见理由进了 会被写成持久名单已经忘了 interchangeable | 官方 p2p API item 3：not already forgotten |
+| A4793 | 高 | 看见反应堆要踢 会被写成已经按「踢了就干净」执行 interchangeable | 官方 p2p API item 3：not already clean |
+| A4794 | 中 | 怎样广播会被抄进不确定 | 不抄。不写怎样广播或怎样重连。不另写 19 节 |
+| A4785 | 记录 | 会与 306 / 36 / 309 / 1004 / 1006 糊成「看见回了通道就已经送到 interchangeable、就已经能点名 interchangeable、就已经该当现行用法 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Broadcast 回通道 not already delivered / not already named / not already current 正式三事（306 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。306 peer-handler vs node bundled unbundling 续（1005 item 2） |
+| A4786 | 高 | 看见 Broadcast 回了通道 会被写成已经送到 interchangeable | 官方 p2p API item 2：not already delivered |
+| A4787 | 高 | 看见一串真假 会被写成已经能点名 interchangeable | 官方 p2p API item 2：not already named |
+| A4788 | 高 | 看见方法还在 会被写成已经该当现行用法 interchangeable | 官方 p2p API item 2：not already current |
+| A4789 | 中 | 怎样广播会被抄进不确定 | 不抄。不写怎样广播或怎样重连。不另写 19 节 |
+| A4780 | 记录 | 会与 306 / 305 / 67 / 1005 / 1006 糊成「看见句柄就已经是同一个人 interchangeable、就已经是上一次那份 interchangeable、就已经换了身份 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Peer 句柄 not already same-person / not already same-handle / not already new-id 正式三事（306 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。306 peer-handler vs node bundled unbundling 启动（1004 item 1） |
+| A4781 | 高 | 看见 Peer 句柄 会被写成已经是同一个人 interchangeable / 305 interchangeable | 官方 p2p API item 1：not already same-person / not 305 |
+| A4782 | 高 | 看见又拿到句柄 会被写成已经是上一次那份 interchangeable | 官方 p2p API item 1：not already same-handle |
+| A4783 | 高 | 看见 InitPeer 又来了 会被写成身份已经换了 interchangeable | 官方 p2p API item 1：not already new-id |
+| A4784 | 中 | 怎样广播会被抄进不确定 | 不抄。不写怎样广播或怎样重连。不另写 19 节 |
 | A4775 | 记录 | 会与 305 / 67 / 306 / 1001 / 1002 糊成「看见跑着就已经能再登记 interchangeable、就已经能再占一个 interchangeable、就已经能再开 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 跑着 not already hot-add / not already another-name / not already restart 正式三事（305 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。305 initpeer vs addpeer bundled unbundling 完成（1003 item 3） |
 | A4776 | 高 | 看见节点已经在跑 会被写成已经能再登记 interchangeable | 官方 Reactor API item 3：not already hot-add |
 | A4777 | 高 | 看见名字已经占了 会被写成已经能再占一个 interchangeable | 官方 Reactor API item 3：not already another-name |

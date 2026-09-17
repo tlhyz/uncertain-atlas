@@ -1,3 +1,6 @@
+- [`name-the-peerhand-notgone-bar.md`](name-the-peerhand-notgone-bar.md) — StopPeerForError not already gone / not already forgotten / not already clean 正式三事（306 余量）（不变量 1006）
+- [`name-the-peerhand-notsent-bar.md`](name-the-peerhand-notsent-bar.md) — Broadcast 回通道 not already delivered / not already named / not already current 正式三事（306 余量）（不变量 1005）
+- [`name-the-peerhand-notsame-bar.md`](name-the-peerhand-notsame-bar.md) — Peer 句柄 not already same-person / not already same-handle / not already new-id 正式三事（306 余量）（不变量 1004）
 - [`name-the-initpeer-nothot-bar.md`](name-the-initpeer-nothot-bar.md) — 跑着 not already hot-add / not already another-name / not already restart 正式三事（305 余量）（不变量 1003）
 - [`name-the-initpeer-notadd-bar.md`](name-the-initpeer-notadd-bar.md) — Receive not already AddPeer / not already joined / not already forbidden-early 正式三事（305 余量）（不变量 1002）
 - [`name-the-initpeer-nottalk-bar.md`](name-the-initpeer-nottalk-bar.md) — InitPeer not already talking / not already connected / not already added 正式三事（305 余量）（不变量 1001）

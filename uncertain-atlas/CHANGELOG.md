@@ -1,3 +1,15 @@
+## 2026-09-17（续 1123）
+
+- 不变量 1006；语料 C984；模式 name-the-peerhand-notgone-bar；反模式 peerhand-notgone-sold-as-bundled；L10.3 第 975 条。填 L4.4 / CometBFT 档案 StopPeerForError not already gone / not already forgotten / not already clean 正式三事（306 余量）。306 peer-handler vs node bundled unbundling 完成（1006 item 3）。
+
+## 2026-09-17（续 1122）
+
+- 不变量 1005；语料 C983；模式 name-the-peerhand-notsent-bar；反模式 peerhand-notsent-sold-as-bundled；L10.3 第 974 条。填 L4.4 / CometBFT 档案 Broadcast 回通道 not already delivered / not already named / not already current 正式三事（306 余量）。306 peer-handler vs node bundled unbundling 续（1005 item 2）。
+
+## 2026-09-17（续 1121）
+
+- 不变量 1004；语料 C982；模式 name-the-peerhand-notsame-bar；反模式 peerhand-notsame-sold-as-bundled；L10.3 第 973 条。填 L4.4 / CometBFT 档案 Peer 句柄 not already same-person / not already same-handle / not already new-id 正式三事（306 余量）。306 peer-handler vs node bundled unbundling 启动（1004 item 1）。
+
 ## 2026-09-17（续 1120）
 
 - 不变量 1003；语料 C981；模式 name-the-initpeer-nothot-bar；反模式 initpeer-nothot-sold-as-bundled；L10.3 第 972 条。填 L4.4 / CometBFT 档案 跑着 not already hot-add / not already another-name / not already restart 正式三事（305 余量）。305 initpeer vs addpeer bundled unbundling 完成（1003 item 3）。
