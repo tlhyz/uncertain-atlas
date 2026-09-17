@@ -1,3 +1,7 @@
+## 2026-09-17（续 780）
+
+- 不变量 663；语料 C640；模式 name-the-infousage-notintable-bar；反模式 infousage-notintable-sold-as-bundled；L10.3 第 632 条。填 L4.4 / CometBFT 档案 Info Usage default_lane has to be one of identifiers defined in lane_priorities not Info 车道 bundled / not empty iff / not CheckTx lane_id in range 正式三事（498 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。498 infousage default_lane/priority0 unbundling 启动（663 item 1）。
+
 ## 2026-09-17（续 779）
 
 - 不变量 662；语料 C639；模式 name-the-listsnapusage-notsnaptype-bar；反模式 listsnapusage-notsnaptype-sold-as-bundled；L10.3 第 631 条。填 L4.4 / CometBFT 档案 ListSnapshots Usage See Snapshot data type for details not Snapshot 类型 bundled / not Offer 装完 / not ListSnapshots 本地清单就已经是同一份 正式三事（500 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。500 listsnapusage discover unbundling 完成（662 item 2）。
