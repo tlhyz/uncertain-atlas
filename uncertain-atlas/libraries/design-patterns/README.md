@@ -1,3 +1,4 @@
+- [`name-the-offersnaptrust-notverify-bar.md`](name-the-offersnaptrust-notverify-bar.md) — OfferSnapshot Usage Any other data can be spoofed not hash comparison enough / not Snapshot Verification bundled / not ApplySnapshotChunk reject refetch DoS 正式三事（483 余量）（不变量 651）
 - [`name-the-offersnaptrust-notmetadata-bar.md`](name-the-offersnaptrust-notmetadata-bar.md) — OfferSnapshot Usage Only AppHash can be trusted not Snapshot metadata / not hash comparison / not OfferSnapshot app_hash 正式三事（483 余量）（不变量 650）
 - [`name-the-offersnapusage-notreject-bar.md`](name-the-offersnapusage-notreject-bar.md) — OfferSnapshot Usage reject in chunk response not ABORT / not REJECT_SNAPSHOT / not Offer 收下之后 bundled 正式三事（499 余量）（不变量 649）
 - [`name-the-offersnapusage-notrestored-bar.md`](name-the-offersnapusage-notrestored-bar.md) — OfferSnapshot Usage upon accepting retrieve and apply not Offer 装完 / not Offer 收下之后 bundled / not LoadSnapshotChunk 正式三事（499 余量）（不变量 648）
