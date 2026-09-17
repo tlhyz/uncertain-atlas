@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 630）
+
+- 不变量 498；语料 C490；模式 name-the-infousage-defaultlane-bar；反模式 infousage-defaultlane-sold-as-priorityzero；L10.3 第 482 条。填 L4.4 / CometBFT 档案 Info Usage default_lane in table / priority 0 reserved 正式二事 part 3 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 629）
 
 - 不变量 497；语料 C489；模式 name-the-infousage-persist-bar；反模式 infousage-persist-sold-as-committed；L10.3 第 481 条。填 L4.4 / CometBFT 档案 Info Usage last_block persisted during Commit / lane_priorities 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
