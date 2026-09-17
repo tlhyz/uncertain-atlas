@@ -1,3 +1,6 @@
+- [`query-proof-notfinal-sold-as-bundled.md`](query-proof-notfinal-sold-as-bundled.md) — 一层 ProofOp 的根 被写成已经对上最终 AppHash / 已经交给下一层 / 已经交差（不变量 949）
+- [`query-proof-notmatch-sold-as-bundled.md`](query-proof-notmatch-sold-as-bundled.md) — Query 回了 Proof 被写成已经对上 AppHash / 已经是同一棵树 / 已经交差（不变量 948）
+- [`query-proof-nottx-sold-as-bundled.md`](query-proof-nottx-sold-as-bundled.md) — 头上有 AppHash 被写成已经是交易默克尔 / 已经同一种锚 / 已经交差（不变量 947）
 - [`peerfilter-notstore-sold-as-bundled.md`](peerfilter-notstore-sold-as-bundled.md) — 有 /store 路径 被写成已经是引擎在用 / 已经是过滤 / 已经交差（不变量 946）
 - [`peerfilter-notaddr-sold-as-bundled.md`](peerfilter-notaddr-sold-as-bundled.md) — id 过滤查询绿了 被写成已经过了 addr / 已经能交互 / 已经交差（不变量 945）
 - [`peerfilter-notaccept-sold-as-bundled.md`](peerfilter-notaccept-sold-as-bundled.md) — 发了 addr 过滤查询 被写成已经收下这个人 / 已经过了 id 那一道 / 已经交差（不变量 944）

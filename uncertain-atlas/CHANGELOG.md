@@ -1,3 +1,15 @@
+## 2026-09-17（续 1066）
+
+- 不变量 949；语料 C927；模式 name-the-query-proof-notfinal-bar；反模式 query-proof-notfinal-sold-as-bundled；L10.3 第 918 条。填 L4.4 / CometBFT 档案 一层 ProofOp 的根 not already final-apphash / not already next-value / not already settled 正式三事（325 余量）。325 query-proof vs apphash bundled unbundling 完成（949 item 3）。
+
+## 2026-09-17（续 1065）
+
+- 不变量 948；语料 C926；模式 name-the-query-proof-notmatch-bar；反模式 query-proof-notmatch-sold-as-bundled；L10.3 第 917 条。填 L4.4 / CometBFT 档案 Query 回了 Proof not already matched / not already one-tree / not already settled 正式三事（325 余量）。325 query-proof vs apphash bundled unbundling 续（948 item 2）。
+
+## 2026-09-17（续 1064）
+
+- 不变量 947；语料 C925；模式 name-the-query-proof-nottx-bar；反模式 query-proof-nottx-sold-as-bundled；L10.3 第 916 条。填 L4.4 / CometBFT 档案 头上有 AppHash not already tx-merkle / not already same-anchor / not already settled 正式三事（325 余量）。325 query-proof vs apphash bundled unbundling 启动（947 item 1）。
+
 ## 2026-09-17（续 1063）
 
 - 不变量 946；语料 C924；模式 name-the-peerfilter-notstore-bar；反模式 peerfilter-notstore-sold-as-bundled；L10.3 第 915 条。填 L4.4 / CometBFT 档案 有 /store 路径 not already engine-used / not already filtering / not already settled 正式三事（326 余量）。326 peerfilter vs query bundled unbundling 完成（946 item 3）。

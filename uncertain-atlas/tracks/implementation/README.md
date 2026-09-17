@@ -144,6 +144,9 @@
 - [`worked-example-snapshot-discover-vs-offer.md`](worked-example-snapshot-discover-vs-offer.md) — ListSnapshots 回了 ≠ 已经有了全部快照；挑了最高 ≠ 已经收下；Offer 被拒 ≠ 已经停（不变量 322）
 - [`worked-example-snapshot-switch-vs-history.md`](worked-example-snapshot-switch-vs-history.md) — 装完 ≠ 已经有了 ChainID；AppHash 对上 ≠ 已经版本也对上；切进共识 ≠ 已经有完整历史（不变量 323）
 - [`worked-example-snapshot-take-vs-commit.md`](worked-example-snapshot-take-vs-commit.md) — 拍了这个高度 ≠ 已经交差之后拍的；没停链 ≠ 已经一致；只留最近两份 ≠ 已经有了全部历史快照（不变量 324）
+- [`worked-example-query-proof-notfinal-vs-bundled.md`](worked-example-query-proof-notfinal-vs-bundled.md) — 一层根≠already final-apphash/next-value/settled；≠325 bundled（不变量 949）
+- [`worked-example-query-proof-notmatch-vs-bundled.md`](worked-example-query-proof-notmatch-vs-bundled.md) — 回了Proof≠already matched/one-tree/settled；≠325 bundled（不变量 948）
+- [`worked-example-query-proof-nottx-vs-bundled.md`](worked-example-query-proof-nottx-vs-bundled.md) — 头上有AppHash≠already tx-merkle/same-anchor/settled；≠325 bundled（不变量 947）
 - [`worked-example-query-proof-vs-apphash.md`](worked-example-query-proof-vs-apphash.md) — 头上有 AppHash ≠ 已经是交易默克尔；Query 回了 Proof ≠ 已经对上 AppHash；一层 ProofOp 的根 ≠ 已经对上最终 AppHash（不变量 325）
 - [`worked-example-peerfilter-notstore-vs-bundled.md`](worked-example-peerfilter-notstore-vs-bundled.md) — /store路径≠already engine-used/filtering/settled；≠326 bundled（不变量 946）
 - [`worked-example-peerfilter-notaddr-vs-bundled.md`](worked-example-peerfilter-notaddr-vs-bundled.md) — id绿了≠already past-addr/interactive/settled；≠326 bundled（不变量 945）

@@ -1,3 +1,18 @@
+| A4505 | 记录 | 会与 325 / 38 / 147 / 947 / 948 糊成「看见一层根就已经对上最终 AppHash interchangeable、就已经交给下一层 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 一层 ProofOp 的根 not already final-apphash / not already next-value / not already settled 正式三事（325 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。325 query-proof vs apphash bundled unbundling 完成（949 item 3） |
+| A4506 | 高 | 看见一层 ProofOp 的根 会被写成已经对上最终 AppHash interchangeable | 官方 Query Proofs item 3：not already final-apphash |
+| A4507 | 高 | 看见一层对上 会被写成已经交给下一层 interchangeable | 官方 Query Proofs item 3：not already next-value |
+| A4508 | 高 | 看见能证缺席 会被写成已经交差 interchangeable | 官方 Query Proofs item 3：not already settled |
+| A4509 | 中 | 怎样编证明会被抄进不确定 | 不抄。不写怎样编证明或怎样种树。不另写 19 节 |
+| A4500 | 记录 | 会与 325 / 314 / 38 / 947 / 949 糊成「看见回了 Proof 就已经对上 AppHash interchangeable、就已经是同一棵树 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回了 Proof not already matched / not already one-tree / not already settled 正式三事（325 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。325 query-proof vs apphash bundled unbundling 续（948 item 2） |
+| A4501 | 高 | 看见 Query 回了 Proof 会被写成已经对上 AppHash interchangeable | 官方 Query Proofs item 2：not already matched |
+| A4502 | 高 | 看见有 type 会被写成已经是同一棵树 interchangeable | 官方 Query Proofs item 2：not already one-tree |
+| A4503 | 高 | 看见能证存在 会被写成已经交差 interchangeable | 官方 Query Proofs item 2：not already settled |
+| A4504 | 中 | 怎样编证明会被抄进不确定 | 不抄。不写怎样编证明或怎样种树。不另写 19 节 |
+| A4495 | 记录 | 会与 325 / 147 / 329 / 948 / 949 糊成「看见头上有 AppHash 就已经是交易默克尔 interchangeable、就已经同一种锚 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 头上有 AppHash not already tx-merkle / not already same-anchor / not already settled 正式三事（325 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。325 query-proof vs apphash bundled unbundling 启动（947 item 1） |
+| A4496 | 高 | 看见头上有 AppHash 会被写成已经是交易默克尔 interchangeable / 147 interchangeable | 官方 Query Proofs item 1：not already tx-merkle / not 147 |
+| A4497 | 高 | 看见和另外两份并列 会被写成已经同一种锚 interchangeable | 官方 Query Proofs item 1：not already same-anchor |
+| A4498 | 高 | 看见交易在 会被写成已经交差 interchangeable | 官方 Query Proofs item 1：not already settled |
+| A4499 | 中 | 怎样编证明会被抄进不确定 | 不抄。不写怎样编证明或怎样种树。不另写 19 节 |
 | A4490 | 记录 | 会与 326 / 314 / 329 / 944 / 945 糊成「看见有 /store 就已经是引擎在用 interchangeable、就已经是过滤 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 有 /store 路径 not already engine-used / not already filtering / not already settled 正式三事（326 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。326 peerfilter vs query bundled unbundling 完成（946 item 3） |
 | A4491 | 高 | 看见有 /store 路径 会被写成已经是引擎在用 interchangeable | 官方 Peer Filtering item 3：not already engine-used |
 | A4492 | 高 | 看见有 /store 会被写成已经是过滤 interchangeable | 官方 Peer Filtering item 3：not already filtering |

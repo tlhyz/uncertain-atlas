@@ -1,3 +1,6 @@
+- [`name-the-query-proof-notfinal-bar.md`](name-the-query-proof-notfinal-bar.md) — 一层 ProofOp 的根 not already final-apphash / not already next-value / not already settled 正式三事（325 余量）（不变量 949）
+- [`name-the-query-proof-notmatch-bar.md`](name-the-query-proof-notmatch-bar.md) — Query 回了 Proof not already matched / not already one-tree / not already settled 正式三事（325 余量）（不变量 948）
+- [`name-the-query-proof-nottx-bar.md`](name-the-query-proof-nottx-bar.md) — 头上有 AppHash not already tx-merkle / not already same-anchor / not already settled 正式三事（325 余量）（不变量 947）
 - [`name-the-peerfilter-notstore-bar.md`](name-the-peerfilter-notstore-bar.md) — 有 /store 路径 not already engine-used / not already filtering / not already settled 正式三事（326 余量）（不变量 946）
 - [`name-the-peerfilter-notaddr-bar.md`](name-the-peerfilter-notaddr-bar.md) — id 过滤查询绿了 not already past-addr / not already interactive / not already settled 正式三事（326 余量）（不变量 945）
 - [`name-the-peerfilter-notaccept-bar.md`](name-the-peerfilter-notaccept-bar.md) — 发了 addr 过滤查询 not already accepted / not already past-id / not already settled 正式三事（326 余量）（不变量 944）

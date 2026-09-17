@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「查询已经带证明」，必须分开头上有 AppHash 是不是已经是交易默克尔、Query 回了 Proof 是不是已经对上 AppHash、一层 ProofOp 的根是不是已经对上最终 AppHash。可以跳过「看见头上有 AppHash 就已经能验应用」。不要另写怎样编证明或怎样种树。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「查询已经带证明」，必须分开头上有 AppHash 是不是已经是交易默克尔、Query 回了 Proof 是不是已经对上 AppHash、一层 ProofOp 的根是不是已经对上最终 AppHash。可以跳过「看见头上有 AppHash 就已经能验应用」。不要另写怎样编证明或怎样种树。325 query-proof vs apphash bundled unbundling 完成（947 item 1 / 948 item 2 / 949 item 3）；精读 [`worked-example-query-proof-nottx-vs-bundled.md`](worked-example-query-proof-nottx-vs-bundled.md)（不变量 947 item 1）。
 
 ## 本页不抄
 
