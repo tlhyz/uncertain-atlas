@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见快照对上就已经装完、已经轻验 AppHash、已经齐」，必须分开全字段（含 Metadata）对上是不是已经装完、引擎不解释 format / hash 是不是已经轻验 AppHash、空快照也至少 1 块是不是已经齐。可以跳过「看见快照对上就已经装完」。不要另写怎样写 Snapshot 类型。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见快照对上就已经装完、已经轻验 AppHash、已经齐」，必须分开全字段（含 Metadata）对上是不是已经装完、引擎不解释 format / hash 是不是已经轻验 AppHash、空快照也至少 1 块是不是已经齐。可以跳过「看见快照对上就已经装完」。不要另写怎样写 Snapshot 类型。368 snapshot vs identical bundled unbundling 完成（821 item 1 / 822 item 2 / 823 item 3）；精读 [`worked-example-snapshot-notrestored-vs-bundled.md`](worked-example-snapshot-notrestored-vs-bundled.md)（不变量 821 item 1）。
 
 ## 本页不抄
 

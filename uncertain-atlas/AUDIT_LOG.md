@@ -1,3 +1,18 @@
+| A3875 | 记录 | 会与 368 / 322 / 375 / 802 / 321 / 821 / 822 糊成「看见有块数就已经齐 interchangeable、就已经是共识常数 interchangeable、就已经装完 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 空快照至少 1 块 not already complete / not already consensus constant / not already restored 正式三事（368 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。368 snapshot vs identical bundled unbundling 完成（823 item 3） |
+| A3876 | 高 | 看见空快照至少 1 块 会被写成已经齐 interchangeable / 322 interchangeable | 官方 Snapshot 类型 item 3：not already complete / not 322 |
+| A3877 | 高 | 看见有上限 会被写成已经是共识常数 interchangeable / 375 interchangeable | 官方 Snapshot 类型 item 3：not already consensus constant / not 375 |
+| A3878 | 高 | 看见能发 会被写成已经装完 interchangeable | 官方 Snapshot 类型 item 3：not already restored |
+| A3879 | 中 | 怎样写 Snapshot 类型 会被抄进不确定 | 不抄。不写怎样写 Snapshot 类型。不另写 19 节 |
+| A3870 | 记录 | 会与 368 / 325 / 38 / 321 / 821 / 823 糊成「看见有哈希就已经轻验 AppHash interchangeable、就已经从创世重放 interchangeable、就已经选型 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 引擎不解释 format/hash not already light-verified AppHash / not already genesis replay / not already selected 正式三事（368 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。368 snapshot vs identical bundled unbundling 续（822 item 2） |
+| A3871 | 高 | 看见引擎不解释 format/hash 会被写成已经轻验 AppHash interchangeable / 325 interchangeable | 官方 Snapshot 类型 item 2：not already light-verified AppHash / not 325 |
+| A3872 | 高 | 看见比过了 会被写成已经从创世重放 interchangeable / 38 interchangeable | 官方 Snapshot 类型 item 2：not already genesis replay / not 38 |
+| A3873 | 高 | 看见有 format 会被写成已经选型 interchangeable | 官方 Snapshot 类型 item 2：not already selected |
+| A3874 | 中 | 怎样写 Snapshot 类型 会被抄进不确定 | 不抄。不写怎样写 Snapshot 类型。不另写 19 节 |
+| A3865 | 记录 | 会与 368 / 321 / 322 / 375 / 801 / 822 / 823 糊成「看见快照对上就已经装完 interchangeable、就已经齐 interchangeable、就已经轻验 AppHash interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 快照全字段对上 not already restored / not already complete / not already light-verified AppHash 正式三事（368 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。368 snapshot vs identical bundled unbundling 启动（821 item 1） |
+| A3866 | 高 | 看见快照全字段对上 会被写成已经装完 interchangeable / 321 interchangeable | 官方 Snapshot 类型 item 1：not already restored / not 321 |
+| A3867 | 高 | 看见能拉 会被写成已经齐 interchangeable / 322 interchangeable | 官方 Snapshot 类型 item 1：not already complete / not 322 |
+| A3868 | 高 | 看见 Metadata 在 会被写成已经轻验 AppHash interchangeable | 官方 Snapshot 类型 item 1：not already light-verified AppHash |
+| A3869 | 中 | 怎样写 Snapshot 类型 会被抄进不确定 | 不抄。不写怎样写 Snapshot 类型。不另写 19 节 |
 | A3860 | 记录 | 会与 369 / 330 / 361 / 365 / 818 / 819 糊成「看见空着就已经到了启用高度 interchangeable、就已经交差 interchangeable、就已经从块里抽出 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 扩展关掉全空 not already enable height / not already settled / not already from block 正式三事（369 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。369 extvoteinfo vs local bundled unbundling 完成（820 item 3） |
 | A3861 | 高 | 看见扩展关掉全空 会被写成已经到了启用高度 interchangeable / 330 interchangeable | 官方 ExtendedVoteInfo item 3：not already enable height / not 330 |
 | A3862 | 高 | 看见关掉了 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo item 3：not already settled |

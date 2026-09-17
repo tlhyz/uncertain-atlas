@@ -1,3 +1,15 @@
+## 2026-09-17（续 940）
+
+- 不变量 823；语料 C801；模式 name-the-snapshot-notcomplete-bar；反模式 snapshot-notcomplete-sold-as-bundled；L10.3 第 792 条。填 L4.4 / CometBFT 档案 空快照至少 1 块 not already complete / not already consensus constant / not already restored 正式三事（368 余量）。368 snapshot vs identical bundled unbundling 完成（823 item 3）。
+
+## 2026-09-17（续 939）
+
+- 不变量 822；语料 C800；模式 name-the-snapshot-nothash-bar；反模式 snapshot-nothash-sold-as-bundled；L10.3 第 791 条。填 L4.4 / CometBFT 档案 引擎不解释 format/hash not already light-verified AppHash / not already genesis replay / not already selected 正式三事（368 余量）。368 snapshot vs identical bundled unbundling 续（822 item 2）。
+
+## 2026-09-17（续 938）
+
+- 不变量 821；语料 C799；模式 name-the-snapshot-notrestored-bar；反模式 snapshot-notrestored-sold-as-bundled；L10.3 第 790 条。填 L4.4 / CometBFT 档案 快照全字段对上 not already restored / not already complete / not already light-verified AppHash 正式三事（368 余量）。368 snapshot vs identical bundled unbundling 启动（821 item 1）。
+
 ## 2026-09-17（续 937）
 
 - 不变量 820；语料 C798；模式 name-the-extvoteinfo-notenabled-bar；反模式 extvoteinfo-notenabled-sold-as-bundled；L10.3 第 789 条。填 L4.4 / CometBFT 档案 扩展关掉全空 not already enable height / not already settled / not already from block 正式三事（369 余量）。369 extvoteinfo vs local bundled unbundling 完成（820 item 3）。

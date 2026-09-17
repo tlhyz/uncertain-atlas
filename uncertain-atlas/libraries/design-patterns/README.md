@@ -1,3 +1,6 @@
+- [`name-the-snapshot-notcomplete-bar.md`](name-the-snapshot-notcomplete-bar.md) — 空快照至少 1 块 not already complete / not already consensus constant / not already restored 正式三事（368 余量）（不变量 823）
+- [`name-the-snapshot-nothash-bar.md`](name-the-snapshot-nothash-bar.md) — 引擎不解释 format/hash not already light-verified AppHash / not already genesis replay / not already selected 正式三事（368 余量）（不变量 822）
+- [`name-the-snapshot-notrestored-bar.md`](name-the-snapshot-notrestored-bar.md) — 快照全字段对上 not already restored / not already complete / not already light-verified AppHash 正式三事（368 余量）（不变量 821）
 - [`name-the-extvoteinfo-notenabled-bar.md`](name-the-extvoteinfo-notenabled-bar.md) — 扩展关掉全空 not already enable height / not already settled / not already from block 正式三事（369 余量）（不变量 820）
 - [`name-the-extvoteinfo-notsigned-bar.md`](name-the-extvoteinfo-notsigned-bar.md) — 验过的签交给应用 not already signed as-is / not already replay protected / not already must-fill 正式三事（369 余量）（不变量 819）
 - [`name-the-extvoteinfo-notblock-bar.md`](name-the-extvoteinfo-notblock-bar.md) — ExtendedVoteInfo 抽出 not already from block / not already has pubkey / not already settled 正式三事（369 余量）（不变量 818）

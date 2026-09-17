@@ -1,3 +1,6 @@
+- [`snapshot-notcomplete-sold-as-bundled.md`](snapshot-notcomplete-sold-as-bundled.md) — 空快照至少 1 块 被写成已经齐 / 已经是共识常数 / 已经装完（不变量 823）
+- [`snapshot-nothash-sold-as-bundled.md`](snapshot-nothash-sold-as-bundled.md) — 不解释 format/hash 被写成已经轻验 AppHash / 已经从创世重放 / 已经选型（不变量 822）
+- [`snapshot-notrestored-sold-as-bundled.md`](snapshot-notrestored-sold-as-bundled.md) — 全字段对上 被写成已经装完 / 已经齐 / 已经轻验 AppHash（不变量 821）
 - [`extvoteinfo-notenabled-sold-as-bundled.md`](extvoteinfo-notenabled-sold-as-bundled.md) — 扩展关掉全空 被写成已经到了启用高度 / 已经交差 / 已经从块里抽出（不变量 820）
 - [`extvoteinfo-notsigned-sold-as-bundled.md`](extvoteinfo-notsigned-sold-as-bundled.md) — 验过的签交给应用 被写成已经按原样签 / 已经有重放保护 / 已经必须填（不变量 819）
 - [`extvoteinfo-notblock-sold-as-bundled.md`](extvoteinfo-notblock-sold-as-bundled.md) — 本进程抽出 被写成已经从块里抽出 / 已经带了公钥 / 已经交差（不变量 818）
