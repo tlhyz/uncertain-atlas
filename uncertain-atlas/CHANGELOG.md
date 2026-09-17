@@ -1,3 +1,7 @@
+## 2026-09-17（续 775）
+
+- 不变量 658；语料 C635；模式 name-the-loadsnapusage-notretrieve-bar；反模式 loadsnapusage-notretrieve-sold-as-bundled；L10.3 第 627 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk Usage Used during state sync to retrieve not LoadSnapshotChunk bundled / not Offer 装完 / not Transition to Consensus 正式三事（501 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。501 loadsnapusage retrieve unbundling 启动（658 item 1）。
+
 ## 2026-09-17（续 774）
 
 - 不变量 657；语料 C634；模式 name-the-applysnapusage-notunless-bar；反模式 applysnapusage-notunless-sold-as-bundled；L10.3 第 626 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事（502 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。502 applysnapusage refetch/ban unbundling 完成（657 item 2）。
