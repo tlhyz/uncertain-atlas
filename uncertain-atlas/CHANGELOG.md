@@ -1,3 +1,15 @@
+## 2026-09-17（续 820）
+
+- 不变量 703；语料 C681；模式 name-the-commitpersist-nothistorical-bar；反模式 commitpersist-nothistorical-sold-as-bundled；L10.3 第 672 条。填 L4.4 / CometBFT 档案 Commit Usage persist-context Historical blocks required not default 0 is pruning / not all-nodes-remove only statesync / not caution Historical blocks bundled 正式三事（481 余量）。481 commitpersist vs finalize bundled unbundling 完成（703 item 3）。
+
+## 2026-09-17（续 819）
+
+- 不变量 702；语料 C680；模式 name-the-commitpersist-notempty-bar；反模式 commitpersist-notempty-sold-as-bundled；L10.3 第 671 条。填 L4.4 / CometBFT 档案 Commit Usage expected persist at end of this call not Commit no params means persisted / not signal means done / not Finalize+Commit settled 正式三事（481 余量）。481 commitpersist vs finalize bundled unbundling 续（702 item 2）。
+
+## 2026-09-17（续 818）
+
+- 不变量 701；语料 C679；模式 name-the-commitpersist-notfinalize-bar；反模式 commitpersist-notfinalize-sold-as-bundled；L10.3 第 670 条。填 L4.4 / CometBFT 档案 Commit Usage Signal persist application state not Finalize already persisted / not engine persist outputs / not When step 8 calls Commit 正式三事（481 余量）。481 commitpersist vs finalize bundled unbundling 启动（701 item 1）。
+
 ## 2026-09-17（续 817）
 
 - 不变量 700；语料 C678；模式 name-the-initchaindecide-notfromempty-bar；反模式 initchaindecide-notfromempty-sold-as-bundled；L10.3 第 669 条。填 L4.4 / CometBFT 档案 InitChain Usage updating from empty set not empty list means no set / not Response empty/not empty rule / not app decide already used genesis validators 正式三事（496 余量）。496 initchaindecide vs emptyset bundled unbundling 完成（700 item 3）。

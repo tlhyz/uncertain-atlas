@@ -1,3 +1,6 @@
+- [`commitpersist-nothistorical-sold-as-bundled.md`](commitpersist-nothistorical-sold-as-bundled.md) — persist Historical blocks 被写成已经默认 0 就等于已经在剪 / 已经只有 state sync / 已经 caution bundled（不变量 703）
+- [`commitpersist-notempty-sold-as-bundled.md`](commitpersist-notempty-sold-as-bundled.md) — expected persist 被写成已经空请求就等于落盘 / 已经 signal 交差 / 已经 Finalize+Commit 交差（不变量 702）
+- [`commitpersist-notfinalize-sold-as-bundled.md`](commitpersist-notfinalize-sold-as-bundled.md) — persist signal 被写成已经 Finalize 落了 / 已经引擎 persist 这三份 / 已经 When step 8（不变量 701）
 - [`initchaindecide-notfromempty-sold-as-bundled.md`](initchaindecide-notfromempty-sold-as-bundled.md) — from empty set 被写成已经空名单就没有集合 / 已经 Response 规则 / 已经用了创世验证者（不变量 700）
 - [`initchaindecide-notchanged-sold-as-bundled.md`](initchaindecide-notchanged-sold-as-bundled.md) — both ValidatorUpdate 被写成已经改了集合 / 已经空名单就没有集合 / 已经带了公钥（不变量 699）
 - [`initchaindecide-notrule-sold-as-bundled.md`](initchaindecide-notrule-sold-as-bundled.md) — app decide 被写成已经 Response 规则 / 已经 412 bundled / 已经验过应用状态（不变量 698）
