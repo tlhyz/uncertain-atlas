@@ -1,3 +1,18 @@
+| A3620 | 记录 | 会与 386 / 336 / 770 / 771 糊成「看见填了 synchrony 就已经是 PBTS interchangeable、就已经是 Precision 就已经是 MessageDelay interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams.synchrony not already PBTS / not already Precision is MessageDelay / not already settled 正式三事（386 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。386 paramsevidence vs maxbytes bundled unbundling 完成（772 item 3） |
+| A3621 | 高 | 看见 ConsensusParams.synchrony 会被写成已经是 PBTS interchangeable | 官方 ConsensusParams 余栏 item 3：not already PBTS |
+| A3622 | 高 | 看见填了 synchrony 会被写成已经是 Precision 就已经是 MessageDelay interchangeable / 336 interchangeable | 官方 ConsensusParams 余栏 item 3：not already Precision is MessageDelay / not 336 |
+| A3623 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 ConsensusParams 余栏 item 3：not already settled |
+| A3624 | 中 | 怎样写 ConsensusParams 余栏 会被抄进不确定 | 不抄。不写怎样写 ConsensusParams 余栏。不另写 19 节 |
+| A3615 | 记录 | 会与 386 / 330 / 770 / 772 糊成「看见填了 abci 就已经 Prepare 带了扩展 interchangeable、就已经切到 ABCI 2.0 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams.abci not already Prepare extension / not already ABCI 2.0 / not already settled 正式三事（386 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。386 paramsevidence vs maxbytes bundled unbundling 续（771 item 2） |
+| A3616 | 高 | 看见 ConsensusParams.abci 会被写成已经 Prepare 带了扩展 interchangeable / 330 interchangeable | 官方 ConsensusParams 余栏 item 2：not already Prepare extension / not 330 |
+| A3617 | 高 | 看见填了 abci 会被写成已经切到 ABCI 2.0 interchangeable / 330 interchangeable | 官方 ConsensusParams 余栏 item 2：not already ABCI 2.0 / not 330 |
+| A3618 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 ConsensusParams 余栏 item 2：not already settled |
+| A3619 | 中 | 怎样写 ConsensusParams 余栏 会被抄进不确定 | 不抄。不写怎样写 ConsensusParams 余栏。不另写 19 节 |
+| A3610 | 记录 | 会与 386 / 331 / 385 / 771 / 772 糊成「看见填了 evidence 就已经是证据 MaxBytes interchangeable、就已经盖住解绑 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams.evidence not already evidence MaxBytes / not already unbonding / not already settled 正式三事（386 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。386 paramsevidence vs maxbytes bundled unbundling 启动（770 item 1） |
+| A3611 | 高 | 看见 ConsensusParams.evidence 会被写成已经是证据 MaxBytes interchangeable / 331 interchangeable | 官方 ConsensusParams 余栏 item 1：not already evidence MaxBytes / not 331 |
+| A3612 | 高 | 看见填了 evidence 会被写成已经盖住解绑 interchangeable | 官方 ConsensusParams 余栏 item 1：not already unbonding |
+| A3613 | 高 | 看见有字段 会被写成已经交差 interchangeable | 官方 ConsensusParams 余栏 item 1：not already settled |
+| A3614 | 中 | 怎样写 ConsensusParams 余栏 会被抄进不确定 | 不抄。不写怎样写 ConsensusParams 余栏。不另写 19 节 |
 | A3605 | 记录 | 会与 387 / 320 / 767 / 768 糊成「看见填了起步高就已经能跳步 interchangeable、就已经过了崩溃三步 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 initial_height not already can skip / not already past crash steps / not already settled 正式三事（387 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。387 inittime vs genesis bundled unbundling 完成（769 item 3） |
 | A3606 | 高 | 看见 InitChain 请求 initial_height 会被写成已经能跳步 interchangeable / 320 interchangeable | 官方 InitChain 请求 item 3：not already can skip / not 320 |
 | A3607 | 高 | 看见填了起步高 会被写成已经过了崩溃三步 interchangeable / 320 interchangeable | 官方 InitChain 请求 item 3：not already past crash steps / not 320 |

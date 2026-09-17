@@ -1,3 +1,6 @@
+- [`paramsevidence-notpbts-sold-as-bundled.md`](paramsevidence-notpbts-sold-as-bundled.md) — synchrony 被写成已经是 PBTS / 已经是 Precision 就已经是 MessageDelay / 已经交差（不变量 772）
+- [`paramsevidence-notextend-sold-as-bundled.md`](paramsevidence-notextend-sold-as-bundled.md) — abci 被写成已经 Prepare 带了扩展 / 已经切到 ABCI 2.0 / 已经交差（不变量 771）
+- [`paramsevidence-notmaxbytes-sold-as-bundled.md`](paramsevidence-notmaxbytes-sold-as-bundled.md) — evidence 被写成已经是证据 MaxBytes / 已经盖住解绑 / 已经交差（不变量 770）
 - [`inittime-notskip-sold-as-bundled.md`](inittime-notskip-sold-as-bundled.md) — initial_height 被写成已经能跳步 / 已经过了崩溃三步 / 已经交差（不变量 769）
 - [`inittime-notchainid-sold-as-bundled.md`](inittime-notchainid-sold-as-bundled.md) — chain_id 被写成已经有了 ChainID / 已经有完整历史 / 已经交差（不变量 768）
 - [`inittime-notgenesis-sold-as-bundled.md`](inittime-notgenesis-sold-as-bundled.md) — time 被写成已经过了 genesis_time / 已经开出块 / 已经交差（不变量 767）

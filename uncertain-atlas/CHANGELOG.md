@@ -1,3 +1,15 @@
+## 2026-09-17（续 889）
+
+- 不变量 772；语料 C750；模式 name-the-paramsevidence-notpbts-bar；反模式 paramsevidence-notpbts-sold-as-bundled；L10.3 第 741 条。填 L4.4 / CometBFT 档案 ConsensusParams.synchrony not already PBTS / not already Precision is MessageDelay / not already settled 正式三事（386 余量）。386 paramsevidence vs maxbytes bundled unbundling 完成（772 item 3）。
+
+## 2026-09-17（续 888）
+
+- 不变量 771；语料 C749；模式 name-the-paramsevidence-notextend-bar；反模式 paramsevidence-notextend-sold-as-bundled；L10.3 第 740 条。填 L4.4 / CometBFT 档案 ConsensusParams.abci not already Prepare extension / not already ABCI 2.0 / not already settled 正式三事（386 余量）。386 paramsevidence vs maxbytes bundled unbundling 续（771 item 2）。
+
+## 2026-09-17（续 887）
+
+- 不变量 770；语料 C748；模式 name-the-paramsevidence-notmaxbytes-bar；反模式 paramsevidence-notmaxbytes-sold-as-bundled；L10.3 第 739 条。填 L4.4 / CometBFT 档案 ConsensusParams.evidence not already evidence MaxBytes / not already unbonding / not already settled 正式三事（386 余量）。386 paramsevidence vs maxbytes bundled unbundling 启动（770 item 1）。
+
 ## 2026-09-17（续 886）
 
 - 不变量 769；语料 C747；模式 name-the-inittime-notskip-bar；反模式 inittime-notskip-sold-as-bundled；L10.3 第 738 条。填 L4.4 / CometBFT 档案 InitChain 请求 initial_height not already can skip / not already past crash steps / not already settled 正式三事（387 余量）。387 inittime vs genesis bundled unbundling 完成（769 item 3）。

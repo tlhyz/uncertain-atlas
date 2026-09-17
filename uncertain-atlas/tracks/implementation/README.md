@@ -339,6 +339,9 @@
 - [`worked-example-queryprove-vs-proof.md`](worked-example-queryprove-vs-proof.md) — Query 请求 prove 是能回就回默克尔证明 ≠ 已经对上 AppHash；Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 ≠ 已经是按键查；Query 回包 height 是数据来自哪一高 ≠ 已经是请求高度（不变量 383）
 - [`worked-example-querycode-vs-consensus.md`](worked-example-querycode-vs-consensus.md) — Query 回包 code 是回包码 ≠ 已经过了共识；Query 回包 log 是应用日志输出 ≠ 已经新鲜；Query 回包 info 是附加信息 ≠ 已经是按键查（不变量 384）
 - [`worked-example-paramsblock-vs-maxbytes.md`](worked-example-paramsblock-vs-maxbytes.md) — ConsensusParams.block 限制块大小和块间隔 ≠ 已经是 MaxBytes 上限；ConsensusParams.validator 限制验证者公钥类型 ≠ 已经带了公钥；ConsensusParams.version 是 ABCI 应用版本 ≠ 已经是 app_version 进了头（不变量 385）
+- [`worked-example-paramsevidence-notpbts-vs-bundled.md`](worked-example-paramsevidence-notpbts-vs-bundled.md) — synchrony≠PBTS/336 Precision is MessageDelay/already settled；≠386 bundled（不变量 772）
+- [`worked-example-paramsevidence-notextend-vs-bundled.md`](worked-example-paramsevidence-notextend-vs-bundled.md) — abci≠330 Prepare extension/ABCI 2.0/already settled；≠386 bundled（不变量 771）
+- [`worked-example-paramsevidence-notmaxbytes-vs-bundled.md`](worked-example-paramsevidence-notmaxbytes-vs-bundled.md) — evidence≠331 evidence MaxBytes/unbonding/already settled；≠386 bundled（不变量 770）
 - [`worked-example-paramsevidence-vs-maxbytes.md`](worked-example-paramsevidence-vs-maxbytes.md) — ConsensusParams.evidence 限制拜占庭证据是否合法 ≠ 已经是证据 MaxBytes；ConsensusParams.abci 是 ABCI 相关参数 ≠ 已经 Prepare 带了扩展；ConsensusParams.synchrony 定提案时间戳合法界 ≠ 已经是 PBTS（不变量 386）
 - [`worked-example-inittime-notskip-vs-bundled.md`](worked-example-inittime-notskip-vs-bundled.md) — initial_height≠320 can skip/crash steps/already settled；≠387 bundled（不变量 769）
 - [`worked-example-inittime-notchainid-vs-bundled.md`](worked-example-inittime-notchainid-vs-bundled.md) — chain_id≠323 ChainID/full history/already settled；≠387 bundled（不变量 768）

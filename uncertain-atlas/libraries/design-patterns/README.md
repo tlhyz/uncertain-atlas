@@ -1,3 +1,6 @@
+- [`name-the-paramsevidence-notpbts-bar.md`](name-the-paramsevidence-notpbts-bar.md) — ConsensusParams.synchrony not already PBTS / not already Precision is MessageDelay / not already settled 正式三事（386 余量）（不变量 772）
+- [`name-the-paramsevidence-notextend-bar.md`](name-the-paramsevidence-notextend-bar.md) — ConsensusParams.abci not already Prepare extension / not already ABCI 2.0 / not already settled 正式三事（386 余量）（不变量 771）
+- [`name-the-paramsevidence-notmaxbytes-bar.md`](name-the-paramsevidence-notmaxbytes-bar.md) — ConsensusParams.evidence not already evidence MaxBytes / not already unbonding / not already settled 正式三事（386 余量）（不变量 770）
 - [`name-the-inittime-notskip-bar.md`](name-the-inittime-notskip-bar.md) — InitChain 请求 initial_height not already can skip / not already past crash steps / not already settled 正式三事（387 余量）（不变量 769）
 - [`name-the-inittime-notchainid-bar.md`](name-the-inittime-notchainid-bar.md) — InitChain 请求 chain_id not already have ChainID / not already full history / not already settled 正式三事（387 余量）（不变量 768）
 - [`name-the-inittime-notgenesis-bar.md`](name-the-inittime-notgenesis-bar.md) — InitChain 请求 time not already past genesis_time / not already producing blocks / not already settled 正式三事（387 余量）（不变量 767）

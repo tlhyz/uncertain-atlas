@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了余下三栏就已经是证据 MaxBytes、已经 Prepare 带了扩展、已经是 PBTS」，必须分开 ConsensusParams.evidence 限制拜占庭证据是否合法是不是已经是证据 MaxBytes、ConsensusParams.abci 是 ABCI 相关参数是不是已经 Prepare 带了扩展、ConsensusParams.synchrony 定提案时间戳合法界是不是已经是 PBTS。可以跳过「看见填了余下三栏就已经是证据 MaxBytes」。不要另写怎样写 ConsensusParams 余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了余下三栏就已经是证据 MaxBytes、已经 Prepare 带了扩展、已经是 PBTS」，必须分开 ConsensusParams.evidence 限制拜占庭证据是否合法是不是已经是证据 MaxBytes、ConsensusParams.abci 是 ABCI 相关参数是不是已经 Prepare 带了扩展、ConsensusParams.synchrony 定提案时间戳合法界是不是已经是 PBTS。可以跳过「看见填了余下三栏就已经是证据 MaxBytes」。不要另写怎样写 ConsensusParams 余栏。386 paramsevidence vs maxbytes bundled unbundling 完成（770 item 1 / 771 item 2 / 772 item 3）；精读 [`worked-example-paramsevidence-notmaxbytes-vs-bundled.md`](worked-example-paramsevidence-notmaxbytes-vs-bundled.md)（不变量 770 item 1）。
 
 ## 本页不抄
 
