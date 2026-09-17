@@ -1,3 +1,4 @@
+- [`applysnapusage-notunless-sold-as-bundled.md`](applysnapusage-notunless-sold-as-bundled.md) — unless instructed 被写成已经引擎自动 refetch / 已经引擎自动封邻居 / 已经 unable retrieve 换快照（不变量 657）
 - [`applysnapusage-notchoose-sold-as-bundled.md`](applysnapusage-notchoose-sold-as-bundled.md) — can choose refetch/ban 被写成已经 refetch/ban bundled / 已经 RETRY / 已经封邻居就交差（不变量 656）
 - [`applysnapusage-notunable-sold-as-bundled.md`](applysnapusage-notunable-sold-as-bundled.md) — unable to retrieve next chunk 被写成已经 refetch 就齐 / 已经 REJECT_SNAPSHOT 回包 / 已经装完又对上 LastBlockAppHash（不变量 655）
 - [`applysnapusage-notinfo-sold-as-bundled.md`](applysnapusage-notinfo-sold-as-bundled.md) — all chunks accepted 后 Info 被写成已经装块时就 Info 对了 / 已经切进共识 / 已经 verified AppHash at end（不变量 654）
