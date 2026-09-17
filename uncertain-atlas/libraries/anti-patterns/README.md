@@ -1,3 +1,6 @@
+- [`chktxguardusage-notsource-sold-as-bundled.md`](chktxguardusage-notsource-sold-as-bundled.md) — 才让进本地池 被写成已经来源验完 / 已经去重保证 / 已经 Code≠0 bundled（不变量 691）
+- [`chktxguardusage-notgates-sold-as-bundled.md`](chktxguardusage-notgates-sold-as-bundled.md) — every node 被写成已经别人也会跑 / 已经流言 / 已经 forever valid（不变量 690）
+- [`chktxguardusage-notoptional-sold-as-bundled.md`](chktxguardusage-notoptional-sold-as-bundled.md) — Guardian 被写成已经 optional / 已经四门已经结算 / 已经 validate-no-apply bundled（不变量 689）
 - [`chktxcodereject-notothervalue-sold-as-bundled.md`](chktxcodereject-notothervalue-sold-as-bundled.md) — no other value 被写成已经 Data 被用 / 已经 optional bundled / 已经 validate-no-apply bundled（不变量 688）
 - [`chktxcodereject-notproposal-sold-as-bundled.md`](chktxcodereject-notproposal-sold-as-bundled.md) — 不会进提案块 被写成已经进提案 / 已经 forever valid / 已经 Finalize Code≠0 仍在块里（不变量 687）
 - [`chktxcodereject-notgossip-sold-as-bundled.md`](chktxcodereject-notgossip-sold-as-bundled.md) — Code≠0 会拒 被写成已经流言 / 已经守卫 bundled / 已经别人也会收（不变量 686）

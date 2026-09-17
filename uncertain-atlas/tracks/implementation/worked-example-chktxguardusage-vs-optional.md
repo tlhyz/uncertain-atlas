@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见每条节点先跑 CheckTx 就已经是 optional、已经四门已经结算、已经保证不重放」，必须分开 Guardian of the mempool 是不是 Technically optional / 四门已经结算、every node runs CheckTx before letting into local mempool 是不是已经流言 / Check 通过就是已进提案、before letting into its local mempool 是不是已经保证不重放 / tx source bundled interchangeable。可以跳过「看见每条节点先跑 CheckTx 就已经是 optional」。不要另写怎样写内存池守卫。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见每条节点先跑 CheckTx 就已经是 optional、已经四门已经结算、已经保证不重放」，必须分开 Guardian of the mempool 是不是 Technically optional / 四门已经结算、every node runs CheckTx before letting into local mempool 是不是已经流言 / Check 通过就是已进提案、before letting into its local mempool 是不是已经保证不重放 / tx source bundled interchangeable。可以跳过「看见每条节点先跑 CheckTx 就已经是 optional」。不要另写怎样写内存池守卫。490 chktxguardusage vs optional bundled unbundling 完成（689 item 1 / 690 item 2 / 691 item 3）；精读 [`worked-example-chktxguardusage-notoptional-vs-bundled.md`](worked-example-chktxguardusage-notoptional-vs-bundled.md)（不变量 689 item 1）。
 
 ## 本页不抄
 

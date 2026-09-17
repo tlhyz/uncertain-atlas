@@ -1,3 +1,15 @@
+## 2026-09-17（续 808）
+
+- 不变量 691；语料 C669；模式 name-the-chktxguardusage-notsource-bar；反模式 chktxguardusage-notsource-sold-as-bundled；L10.3 第 660 条。填 L4.4 / CometBFT 档案 CheckTx Usage before letting into its local mempool not tx source bundled / not mempool dedup / not Code≠0 rejected bundled 正式三事（490 余量）。490 chktxguardusage vs optional bundled unbundling 完成（691 item 3）。
+
+## 2026-09-17（续 807）
+
+- 不变量 690；语料 C668；模式 name-the-chktxguardusage-notgates-bar；反模式 chktxguardusage-notgates-sold-as-bundled；L10.3 第 659 条。填 L4.4 / CometBFT 档案 CheckTx Usage every node runs CheckTx before letting into local mempool not broadcast_tx others run / not in-pool gossip / not forever valid 正式三事（490 余量）。490 chktxguardusage vs optional bundled unbundling 续（690 item 2）。
+
+## 2026-09-17（续 806）
+
+- 不变量 689；语料 C667；模式 name-the-chktxguardusage-notoptional-bar；反模式 chktxguardusage-notoptional-sold-as-bundled；L10.3 第 658 条。填 L4.4 / CometBFT 档案 CheckTx Usage Guardian of the mempool not Technically optional / not four gates settled / not validate-no-apply bundled 正式三事（490 余量）。490 chktxguardusage vs optional bundled unbundling 启动（689 item 1）。
+
 ## 2026-09-17（续 805）
 
 - 不变量 688；语料 C666；模式 name-the-chktxcodereject-notothervalue-bar；反模式 chktxcodereject-notothervalue-sold-as-bundled；L10.3 第 657 条。填 L4.4 / CometBFT 档案 CheckTx Usage no other value to the response code not CheckTx Data used / not optional bundled / not validate-no-apply bundled 正式三事（489 余量）。489 chktxcodereject vs proposal bundled unbundling 完成（688 item 3）。
