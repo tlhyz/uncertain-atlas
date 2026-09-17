@@ -1,3 +1,7 @@
+## 2026-09-17（续 798）
+
+- 不变量 681；语料 C658；模式 name-the-commitpersist-notendofcall-bar；反模式 commitpersist-notendofcall-sold-as-bundled；L10.3 第 650 条。填 L4.4 / CometBFT 档案 Expected persist at end of this call not Signal persist application state / not Commit empty request bundled / not signal already settled 正式三事（481 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。481 commitpersist vs finalize bundled unbundling 续（681 item 2）。
+
 ## 2026-09-17（续 797）
 
 - 不变量 680；语料 C657；模式 name-the-commitpersist-notfinpersist-bar；反模式 commitpersist-notfinpersist-sold-as-bundled；L10.3 第 649 条。填 L4.4 / CometBFT 档案 Signal persist application state not Finalize already persisted / not engine persist tx outputs AppHash ResultsHash / not expected persist at end of this call 正式三事（481 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。481 commitpersist vs finalize bundled unbundling 启动（680 item 1）。

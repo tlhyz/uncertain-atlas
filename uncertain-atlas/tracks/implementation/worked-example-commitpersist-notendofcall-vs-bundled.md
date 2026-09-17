@@ -1,0 +1,50 @@
+# 例：看见 Application is expected to persist at end of this call is not already Signal persist application state interchangeable / Commit empty request bundled interchangeable / signal already settled interchangeable
+
+**层次**：实现 / Expected persist at end of this call not Signal persist application state / not Commit empty request bundled / not signal already settled 正式三事（481 余量）。  
+**分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
+**来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Commit Usage。  
+**对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「Expected persist at end of this call not Signal persist application state / not Commit empty request bundled / not signal already settled 正式三事（481 余量）/ not 681 commitpersist-notendofcall interchangeable / not 481 commitpersist-vs-finalize bundled interchangeable」，不是 Commit Usage persist signal 正式三事 bundled（481），也不是 Signal persist application state not Finalize already persisted（680）或 Commit 空请求 bundled（399）。不要另写怎样落盘、怎样写 Commit。
+
+## 官方三件事
+
+规范把 Commit Usage 里 Application is expected to persist its state at the end of this call, before returning from `Commit` 和「已经是 Signal the Application to persist application state（680） interchangeable / 已经是 Commit Request 不带参数（399） interchangeable / 已经 signal 就已经交差 / Finalize + Commit 已经交差 interchangeable / 已经 Historical blocks required（682 余量） interchangeable」分开写成三件独立的实现事，不是「看见 expected persist at end 就已经 Signal persist interchangeable / 就已经 Commit 不带参数 interchangeable / 就已经 signal 就已经交差 interchangeable」一件事：
+
+1. **看见 Application is expected to persist its state at the end of this call / 看见应在这次 Commit 返回前落盘应用状态 / 看见 before returning from Commit is not already 已经 Signal the Application to persist application state（680） interchangeable / 680 commitpersist-notfinpersist interchangeable / 481 commitpersist item 1 persist signal interchangeable / 335 finpersist item 2 MUST persist in Commit interchangeable / 645 fincommit-notpersist interchangeable / 497 infousage-persist interchangeable / 665 infousage-notcommitpersist interchangeable，也不是已经 Commit Usage persist signal 正式三事 bundled（481） interchangeable / 681 commitpersist-notendofcall interchangeable / 481 commitpersist-vs-finalize bundled interchangeable / 481 commitpersist item 3 historical blocks interchangeable，也不是已经 Expected persist at end of this call not Signal persist application state / not Commit empty request bundled / not signal already settled 正式三事 bundled（481 item 2 余量） interchangeable / 481 commitpersist item 2 interchangeable，也不是已经 Finalize 改了就已经落盘 bundled（335 item 1 余量 / 680） interchangeable / 587 finreturn interchangeable / 403 finafter interchangeable。**  
+   官方 Usage 写：Application is expected to persist its state at the end of this call, before returning from `Commit`。看见 expected at end of this call，不是已经 Signal persist application state interchangeable——680 钉 persist signal 单句，本页从 481 item 2 侧钉 not Signal persist application state 单句。看见返回前落盘，不是已经 Commit Usage persist signal 正式三事 bundled（481） interchangeable——481 钉 bundled 三事，本页钉 Methods Commit Usage expected persist at end 单句。看见 before returning from Commit，不是已经 When instruct Application to persist its state（645） interchangeable——645 另钉 When 第 8 步，本页钉 item 2 第一件事。481 commitpersist vs finalize bundled unbundling 在本页 item 2 启动。
+
+2. **看见 Application is expected to persist at end of this call / 看见应在 Commit 返回前落盘 / 看见 before returning from Commit is not already 已经 Commit Request 不带参数（399） interchangeable / 399 commit-empty-echo bundled interchangeable / 399 commit-empty-echo item 1 interchangeable / 399 commitnoparam interchangeable / 399 commit-empty-echo item 2 interchangeable / 399 commit-empty-echo item 3 interchangeable / 已经 Commit 不带参数 就等于已经落盘 interchangeable / 已经能叫 Commit 就等于已经 persist interchangeable，也不是已经 Commit Usage persist signal 正式三事 bundled（481） interchangeable / 681 commitpersist-notendofcall interchangeable / 481 commitpersist item 1 persist signal interchangeable / 680 commitpersist-notfinpersist interchangeable，也不是已经 Expected persist at end of this call not Signal persist application state / not Commit empty request bundled / not signal already settled 正式三事 bundled（481 item 2 余量） interchangeable / 481 commitpersist item 2 interchangeable，也不是已经 Commit 空请求 bundled 全段（399） interchangeable / 492 echousage bundled interchangeable / 674 echousage-notflush interchangeable / 335 finpersist item 2 MUST persist in Commit interchangeable，也不是已经 Echo 回包 Message 是入参那串 bundled（399 item 2 余量） interchangeable / 676 echousage-notdone interchangeable。**  
+   官方把 Usage expected persist at end 单句和 Commit Request 不带参数 / Commit 空请求 bundled 路径分开——481 bundled 第二件事常与 399 混成「看见 expected persist at end 就已经 Commit 不带参数 interchangeable / 就已经 Commit 空请求 bundled interchangeable / 就已经能叫 Commit 就等于已经落盘 interchangeable」，本页钉 not Commit empty request bundled 单句。看见 before returning from Commit，不是已经 Commit 不带参数 interchangeable——399 钉 Commit 空请求全段 item 1，本页钉 expected persist at end 单句。看见应在 Commit 返回前落盘，不是已经 Echo 用来测实现就已经刷完 interchangeable——399 item 3 另钉 Echo 测实现，本页钉 item 2 第二件事。481 commitpersist vs finalize bundled unbundling 在本页 item 2 启动。
+
+3. **看见 Application is expected to persist at end of this call / 看见返回前落盘 / 看见 before returning from Commit is not already 已经 signal 就已经交差 interchangeable / 已经 Finalize + Commit 已经交差 interchangeable / 33 four gates interchangeable / 403 finafter interchangeable / 632 notsettled interchangeable / 587 finreturn interchangeable / 467 finpersist interchangeable / 335 finpersist interchangeable / 645 fincommit-notsettled interchangeable，也不是已经 Commit Usage persist signal 正式三事 bundled（481） interchangeable / 681 commitpersist-notendofcall interchangeable / 481 commitpersist item 3 historical blocks interchangeable / 682 commitpersist-nothistoricalblocks interchangeable / 679 commitretaincaution-notpersist interchangeable，也不是已经 Expected persist at end of this call not Signal persist application state / not Commit empty request bundled / not signal already settled 正式三事 bundled（481 item 2 余量） interchangeable / 481 commitpersist item 2 interchangeable，也不是已经 Historical blocks required for auditing bundled（481 item 3 余量 / 682） interchangeable / 366 retain-height bundled interchangeable / 677 commitretaincaution-notdefaultzero interchangeable，也不是已经 Commit 空请求 bundled 第三件事 Echo 测实现 interchangeable / 492 echousage item 1 interchangeable。**  
+   官方把 Usage expected persist at end 单句和 signal 就已经交差 / Finalize + Commit 已经交差 / Historical blocks required 路径分开——481 bundled 第二件事常与 33 / 403 混成「看见 expected persist at end 就已经 signal 就已经交差 interchangeable / 就已经 Finalize + Commit interchangeable / 就已经四门已经结算 interchangeable」，本页钉 not signal already settled 单句。看见 before returning from Commit，不是已经 signal 就已经交差 interchangeable——33 钉四门已经结算，本页钉 expected persist at end 单句。看见应在 Commit 返回前落盘，不是已经 Historical blocks required for auditing（682 item 3 余量） interchangeable——682 另钉 item 3，本页钉 item 2 第三件事。481 commitpersist vs finalize bundled unbundling 在本页 item 2 启动。
+
+怎样落盘、怎样写 Commit、怎样填 retain_height 是规范里的做法，本页不抄。Commit Usage persist signal 正式三事 bundled（481）、Signal persist application state not Finalize already persisted（481 item 1 余量 / 680）、Historical blocks required for auditing replay light client not retain_height default 0（481 item 3 余量 / 682）、Commit 空请求 bundled（399）、FinalizeBlock 落盘禁令 bundled（335）、Finalize + Commit 已经交差（33 / 403）是另外那套，本页不抄。
+
+## 官方为什么这样拆
+
+- **Expected persist at end not Signal persist application state ≠ 680 commitpersist-notfinpersist interchangeable：** 官方把 Methods Commit Usage expected persist at end 单句和 persist signal 路径分开。
+- **Expected persist at end not Commit empty request bundled ≠ 399 commit-empty-echo bundled interchangeable：** 官方把 expected persist at end 单句和 Commit Request 不带参数 / Commit 空请求 bundled 路径分开。
+- **Expected persist at end not signal already settled ≠ 682 commitpersist-nothistoricalblocks interchangeable：** 官方把 expected persist at end 单句和 signal 就已经交差 / Historical blocks required 路径分开；481 commitpersist vs finalize bundled unbundling 在本页 item 2 完成。
+
+## 和相邻页的边界
+
+| 对象 | 本页 | 那一页 |
+|---|---|---|
+| Expected persist at end of this call | 不是 Signal persist application state（680/481 item 1） | 不是 When instruct persist alone（645/590） |
+| before returning from Commit | 不是 Commit empty request bundled（399） | 不是 Echo test implementation（399 item 3） |
+| 返回前落盘 | 不是 signal already settled（33/403） | 不是 Historical blocks required（682/481 item 3） |
+
+## 产品
+
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Expected persist at end of this call not Signal persist application state / not Commit empty request bundled / not signal already settled 正式三事（481 余量），必须分开 expected persist at end 是不是 Signal persist application state interchangeable / 680 commitpersist-notfinpersist interchangeable / 335 finpersist item 2 interchangeable / 645 fincommit-notpersist interchangeable、before returning from Commit 是不是 Commit empty request bundled interchangeable / 399 commit-empty-echo bundled interchangeable / 399 commitnoparam interchangeable / 492 echousage bundled interchangeable、返回前落盘 是不是 signal already settled interchangeable / 33 four gates interchangeable / 403 finafter interchangeable / 632 notsettled interchangeable / 682 commitpersist-nothistoricalblocks interchangeable。可以跳过「看见 expected persist at end 就已经 Signal persist interchangeable / 就已经 Commit 不带参数 interchangeable / 就已经 signal 就已经交差 interchangeable」。不要另写怎样落盘。481 commitpersist vs finalize bundled unbundling 在本页 item 2 完成；续 [`worked-example-commitpersist-nothistoricalblocks-vs-bundled.md`](worked-example-commitpersist-nothistoricalblocks-vs-bundled.md)（不变量 682 item 3）。
+
+## 本页不抄
+
+- 怎样落盘、怎样写 Commit、怎样填 retain_height。
+- Commit Usage persist signal 正式三事 bundled。那是不变量 481。
+- Signal persist application state not Finalize already persisted。那是不变量 481 item 1 余量 / 680。
+- Historical blocks required for auditing replay light client not retain_height default 0。那是不变量 481 item 3 余量 / 682。
+- Commit 空请求 bundled。那是不变量 399。
+- FinalizeBlock 落盘禁令 bundled。那是不变量 335。
+- FinalizeBlock When returns persist 这三份 bundled。那是不变量 587。

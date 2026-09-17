@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 Commit 就已经落盘、已经在 Finalize 落了、已经在剪历史」，必须分开 Signal persist application state 是不是已经在 Finalize 改了就已经落盘 / 已经引擎 persist 这三份、Expected persist at end of this call 是不是已经 Commit 不带参数就等于已经落盘、Historical blocks required for auditing / replay / light client 是不是已经 retain_height 默认 0 就等于已经在剪。可以跳过「看见叫了 Commit 就已经落盘」。不要另写怎样落盘、怎样填 retain_height。481 commitpersist vs finalize bundled unbundling 启动（680 item 1）；精读 [`worked-example-commitpersist-notfinpersist-vs-bundled.md`](worked-example-commitpersist-notfinpersist-vs-bundled.md)（不变量 680 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 Commit 就已经落盘、已经在 Finalize 落了、已经在剪历史」，必须分开 Signal persist application state 是不是已经在 Finalize 改了就已经落盘 / 已经引擎 persist 这三份、Expected persist at end of this call 是不是已经 Commit 不带参数就等于已经落盘、Historical blocks required for auditing / replay / light client 是不是已经 retain_height 默认 0 就等于已经在剪。可以跳过「看见叫了 Commit 就已经落盘」。不要另写怎样落盘、怎样填 retain_height。481 commitpersist vs finalize bundled unbundling 启动（680 item 1）；精读 [`worked-example-commitpersist-notfinpersist-vs-bundled.md`](worked-example-commitpersist-notfinpersist-vs-bundled.md)（不变量 680 item 1）。481 commitpersist vs finalize bundled unbundling 续（681 item 2）；精读 [`worked-example-commitpersist-notendofcall-vs-bundled.md`](worked-example-commitpersist-notendofcall-vs-bundled.md)（不变量 681 item 2）。
 
 ## 本页不抄
 
