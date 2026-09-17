@@ -1,3 +1,6 @@
+- [`name-the-extend-when-notsame-bar.md`](name-the-extend-when-notsame-bar.md) — 回包字节不被共识算法解释 not already same extension / not already packed CanonicalVoteExtension / not already settled 正式三事（361 余量）（不变量 844）
+- [`name-the-extend-when-notlater-bar.md`](name-the-extend-when-notlater-bar.md) — ExtendVote 调用是同步的 not already can change later / not already left critical path / not already settled 正式三事（361 余量）（不变量 843）
+- [`name-the-extend-when-notcall-bar.md`](name-the-extend-when-notcall-bar.md) — +2/3 prevote 才锁住再调 ExtendVote not already will call / not already one-per-round / not already locked 正式三事（361 余量）（不变量 842）
 - [`name-the-finalize-when-notheader-bar.md`](name-the-finalize-when-notheader-bar.md) — 回了 AppHash 和输出哈希进 ResultHash not already printed in header / not already this-height AppHash / not already settled 正式三事（362 余量）（不变量 841）
 - [`name-the-finalize-when-notpersist-bar.md`](name-the-finalize-when-notpersist-bar.md) — 先落决定再同步调 Finalize not already settled / not already persist app state / not already sync means done 正式三事（362 余量）（不变量 840）
 - [`name-the-finalize-when-notcall-bar.md`](name-the-finalize-when-notcall-bar.md) — +2/3 precommit 才决定再调 Finalize not already will call / not already ExtendVote when / not already decided 正式三事（362 余量）（不变量 839）

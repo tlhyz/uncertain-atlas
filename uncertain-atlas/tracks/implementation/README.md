@@ -311,6 +311,9 @@
 - [`worked-example-finwhen-bundled.md`](worked-example-finwhen-bundled.md) — When calling guarantee ≠ every validator ran Process；≠ proposer means everyone Processed；≠ executes block v / persist decision（不变量 472）
 - [`worked-example-finfill-bundled.md`](worked-example-finfill-bundled.md) — fill all fields even if Prepare/Process passed ≠ no need to provide again；≠ field names match means ran Process；≠ request complete means committed（不变量 473）
 - [`worked-example-finalize-vs-processed.md`](worked-example-finalize-vs-processed.md) — 至少一名非拜占庭验证者跑过 Process ≠ 已经每个验证者都跑过 Process；Finalize 请求把字段再填一遍 ≠ 已经不用再给；可以套用先前候选 ≠ 已经是 ExecuteTxState（不变量 360）
+- [`worked-example-extend-when-notsame-vs-bundled.md`](worked-example-extend-when-notsame-vs-bundled.md) — 回包字节不解释≠same extension/358 packed CanonicalVoteExtension/settled；≠361 bundled（不变量 844）
+- [`worked-example-extend-when-notlater-vs-bundled.md`](worked-example-extend-when-notlater-vs-bundled.md) — 同步调用≠can change later/left critical path/settled；≠361 bundled（不变量 843）
+- [`worked-example-extend-when-notcall-vs-bundled.md`](worked-example-extend-when-notcall-vs-bundled.md) — +2/3 prevote才锁住再调≠will call/350 one-per-round/locked；≠361 bundled（不变量 842）
 - [`worked-example-extend-when-vs-locked.md`](worked-example-extend-when-vs-locked.md) — +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote ≠ 已经会调 ExtendVote；ExtendVote 调用是同步的 ≠ 已经能在返回之后再改扩展；回包字节不被共识算法解释 ≠ 已经是同一份扩展（不变量 361）
 - [`worked-example-finalize-when-notheader-vs-bundled.md`](worked-example-finalize-when-notheader-vs-bundled.md) — 回AppHash+ResultHash≠147 header/this-height AppHash/settled；≠362 bundled（不变量 841）
 - [`worked-example-finalize-when-notpersist-vs-bundled.md`](worked-example-finalize-when-notpersist-vs-bundled.md) — 先落决定再同步调≠settled/335 persist app/sync means done；≠362 bundled（不变量 840）

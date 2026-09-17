@@ -1,3 +1,6 @@
+- [`extend-when-notsame-sold-as-bundled.md`](extend-when-notsame-sold-as-bundled.md) — 回包不解释 被写成已经同一份 / 已经包进 CanonicalVoteExtension / 已经交差（不变量 844）
+- [`extend-when-notlater-sold-as-bundled.md`](extend-when-notlater-sold-as-bundled.md) — 同步调用 被写成已经能稍后改 / 已经离开关键路径 / 已经交差（不变量 843）
+- [`extend-when-notcall-sold-as-bundled.md`](extend-when-notcall-sold-as-bundled.md) — +2/3 prevote 才锁住再调 被写成已经会调 / 已经是一轮一份 / 已经锁住（不变量 842）
 - [`finalize-when-notheader-sold-as-bundled.md`](finalize-when-notheader-sold-as-bundled.md) — 回 AppHash 被写成已经印进本头 / 已经是本头 AppHash / 已经交差（不变量 841）
 - [`finalize-when-notpersist-sold-as-bundled.md`](finalize-when-notpersist-sold-as-bundled.md) — 先落决定 被写成已经交差 / 已经落盘应用状态 / 同步就已经交差（不变量 840）
 - [`finalize-when-notcall-sold-as-bundled.md`](finalize-when-notcall-sold-as-bundled.md) — +2/3 precommit 才决定再调 被写成已经会调 / 已经是 ExtendVote when / 已经决定（不变量 839）

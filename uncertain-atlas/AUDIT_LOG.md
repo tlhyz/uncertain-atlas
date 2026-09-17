@@ -1,3 +1,18 @@
+| A3980 | 记录 | 会与 361 / 358 / 359 / 510 / 842 / 843 糊成「看见回了就已经是同一份扩展 interchangeable、就已经包进 CanonicalVoteExtension interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 回包字节不被共识算法解释 not already same extension / not already packed CanonicalVoteExtension / not already settled 正式三事（361 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。361 extend-when vs locked bundled unbundling 完成（844 item 3） |
+| A3981 | 高 | 看见回包字节不被共识算法解释 会被写成已经是同一份扩展 interchangeable | 官方 ExtendVote 何时调用 item 3：not already same extension |
+| A3982 | 高 | 看见不解释 会被写成已经包进 CanonicalVoteExtension interchangeable / 358 interchangeable | 官方 ExtendVote 何时调用 item 3：not already packed CanonicalVoteExtension / not 358 |
+| A3983 | 高 | 看见有字节 会被写成已经交差 interchangeable | 官方 ExtendVote 何时调用 item 3：not already settled |
+| A3984 | 中 | 怎样写 ExtendVote 何时调用 会被抄进不确定 | 不抄。不写怎样写 ExtendVote 何时调用。不另写 19 节 |
+| A3975 | 记录 | 会与 361 / 354 / 362 / 840 / 842 / 844 糊成「看见是同步的就已经能稍后改扩展 interchangeable、就已经离开关键路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 调用是同步的 not already can change later / not already left critical path / not already settled 正式三事（361 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。361 extend-when vs locked bundled unbundling 续（843 item 2） |
+| A3976 | 高 | 看见 ExtendVote 调用是同步的 会被写成已经能稍后改扩展 interchangeable | 官方 ExtendVote 何时调用 item 2：not already can change later |
+| A3977 | 高 | 看见引擎在等 会被写成已经离开关键路径 interchangeable | 官方 ExtendVote 何时调用 item 2：not already left critical path |
+| A3978 | 高 | 看见回了 会被写成已经交差 interchangeable | 官方 ExtendVote 何时调用 item 2：not already settled |
+| A3979 | 中 | 怎样写 ExtendVote 何时调用 会被抄进不确定 | 不抄。不写怎样写 ExtendVote 何时调用。不另写 19 节 |
+| A3970 | 记录 | 会与 361 / 350 / 507–512 extwhen / 362 / 839 / 843 / 844 糊成「看见到了 prevote 步就已经会调 ExtendVote interchangeable、就已经是一轮一份扩展 interchangeable、就已经锁住 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 +2/3 prevote 才锁住再调 ExtendVote not already will call / not already one-per-round / not already locked 正式三事（361 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。361 extend-when vs locked bundled unbundling 启动（842 item 1） |
+| A3971 | 高 | 看见 +2/3 prevote 才锁住再调 ExtendVote 会被写成已经会调 ExtendVote interchangeable | 官方 ExtendVote 何时调用 item 1：not already will call |
+| A3972 | 高 | 看见规范写了 When 会被写成已经是一轮一份扩展 interchangeable / 350 interchangeable | 官方 ExtendVote 何时调用 item 1：not already one-per-round / not 350 |
+| A3973 | 高 | 看见有提案 会被写成已经锁住 interchangeable | 官方 ExtendVote 何时调用 item 1：not already locked |
+| A3974 | 中 | 怎样写 ExtendVote 何时调用 会被抄进不确定 | 不抄。不写怎样写 ExtendVote 何时调用。不另写 19 节 |
 | A3965 | 记录 | 会与 362 / 147 / 363 / 838 / 371 / 839 / 840 糊成「看见回了就已经印进本头 interchangeable、就已经是本头 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 回了 AppHash 和输出哈希进 ResultHash not already printed in header / not already this-height AppHash / not already settled 正式三事（362 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。362 finalize-when vs decided bundled unbundling 完成（841 item 3） |
 | A3966 | 高 | 看见回了 AppHash 和输出哈希进 ResultHash 会被写成已经印进本头 interchangeable | 官方 Finalize 何时调用 item 3：not already printed in header |
 | A3967 | 高 | 看见有 ResultHash 会被写成已经是本头 AppHash interchangeable / 147 interchangeable | 官方 Finalize 何时调用 item 3：not already this-height AppHash / not 147 |

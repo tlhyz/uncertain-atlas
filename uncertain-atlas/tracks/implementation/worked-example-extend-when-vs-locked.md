@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 prevote 步就已经会调 ExtendVote、已经能稍后改扩展、已经是同一份扩展」，必须分开 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 是不是已经会调 ExtendVote、ExtendVote 调用是同步的是不是已经能在返回之后再改扩展、回包字节不被共识算法解释是不是已经是同一份扩展。可以跳过「看见到了 prevote 步就已经会调 ExtendVote」。不要另写怎样写 ExtendVote 何时调用。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 prevote 步就已经会调 ExtendVote、已经能稍后改扩展、已经是同一份扩展」，必须分开 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 是不是已经会调 ExtendVote、ExtendVote 调用是同步的是不是已经能在返回之后再改扩展、回包字节不被共识算法解释是不是已经是同一份扩展。可以跳过「看见到了 prevote 步就已经会调 ExtendVote」。不要另写怎样写 ExtendVote 何时调用。361 extend-when vs locked bundled unbundling 完成（842 item 1 / 843 item 2 / 844 item 3）；精读 [`worked-example-extend-when-notcall-vs-bundled.md`](worked-example-extend-when-notcall-vs-bundled.md)（不变量 842 item 1）。
 
 ## 本页不抄
 

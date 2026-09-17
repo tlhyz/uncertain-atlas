@@ -1,3 +1,15 @@
+## 2026-09-17（续 961）
+
+- 不变量 844；语料 C822；模式 name-the-extend-when-notsame-bar；反模式 extend-when-notsame-sold-as-bundled；L10.3 第 813 条。填 L4.4 / CometBFT 档案 回包字节不被共识算法解释 not already same extension / not already packed CanonicalVoteExtension / not already settled 正式三事（361 余量）。361 extend-when vs locked bundled unbundling 完成（844 item 3）。
+
+## 2026-09-17（续 960）
+
+- 不变量 843；语料 C821；模式 name-the-extend-when-notlater-bar；反模式 extend-when-notlater-sold-as-bundled；L10.3 第 812 条。填 L4.4 / CometBFT 档案 ExtendVote 调用是同步的 not already can change later / not already left critical path / not already settled 正式三事（361 余量）。361 extend-when vs locked bundled unbundling 续（843 item 2）。
+
+## 2026-09-17（续 959）
+
+- 不变量 842；语料 C820；模式 name-the-extend-when-notcall-bar；反模式 extend-when-notcall-sold-as-bundled；L10.3 第 811 条。填 L4.4 / CometBFT 档案 +2/3 prevote 才锁住再调 ExtendVote not already will call / not already one-per-round / not already locked 正式三事（361 余量）。361 extend-when vs locked bundled unbundling 启动（842 item 1）。
+
 ## 2026-09-17（续 958）
 
 - 不变量 841；语料 C819；模式 name-the-finalize-when-notheader-bar；反模式 finalize-when-notheader-sold-as-bundled；L10.3 第 810 条。填 L4.4 / CometBFT 档案 回了 AppHash 和输出哈希进 ResultHash not already printed in header / not already this-height AppHash / not already settled 正式三事（362 余量）。362 finalize-when vs decided bundled unbundling 完成（841 item 3）。
