@@ -1,3 +1,4 @@
+- [`offersnapusage-notlisted-sold-as-bundled.md`](offersnapusage-notlisted-sold-as-bundled.md) — bootstrapping may accept/reject 被写成已经 OfferSnapshot 请求 bundled / 已经 ListSnapshots 发现 / 已经 offersnapusage bundled（不变量 647）
 - [`fincommit-notcommitlock-sold-as-bundled.md`](fincommit-notcommitlock-sold-as-bundled.md) — calls Commit after lock 被写成已经 Commit 锁 / 已经 optional recheck / unlock / 已经 fincommit bundled（不变量 646）
 - [`fincommit-notpersist-sold-as-bundled.md`](fincommit-notpersist-sold-as-bundled.md) — instruct persist 被写成已经引擎 persist 这三份 / 已经 Commit Usage signal bundled / 已经 fincommit bundled（不变量 645）
 - [`fincommit-notsettled-sold-as-bundled.md`](fincommit-notsettled-sold-as-bundled.md) — calls Commit 被写成已经交差 / 已经四门已经结算 / 已经 fincommit bundled（不变量 644）

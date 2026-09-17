@@ -1,3 +1,7 @@
+## 2026-09-17（续 764）
+
+- 不变量 647；语料 C624；模式 name-the-offersnapusage-notlisted-bar；反模式 offersnapusage-notlisted-sold-as-bundled；L10.3 第 616 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage bootstrap accept/reject not OfferSnapshot bundled / not ListSnapshots / not Snapshot Connection 正式三事（499 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。499 offersnapusage unbundling 启动（647 item 1）。
+
 ## 2026-09-17（续 763）
 
 - 不变量 646；语料 C623；模式 name-the-fincommit-notcommitlock-bar；反模式 fincommit-notcommitlock-sold-as-bundled；L10.3 第 615 条。填 L4.4 / CometBFT 档案 FinalizeBlock When calls Commit after lock mempool not Commit lock / not optional recheck / unlock / not fincommit bundled 正式三事（590 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。590 fincommit unbundling 完成（646 item 3）。
