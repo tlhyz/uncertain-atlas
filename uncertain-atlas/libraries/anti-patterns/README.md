@@ -1,3 +1,6 @@
+- [`extpre-notlate-sold-as-bundled.md`](extpre-notlate-sold-as-bundled.md) — ACCEPT 被写成已经 Verify 过迟到扩展 / 已经交差 / 已经必须再 Verify（不变量 1033）
+- [`extpre-notskip-sold-as-bundled.md`](extpre-notskip-sold-as-bundled.md) — 丢掉无有效签 被写成已经跳过 Verify / 已经没有签 / 已经自己验过（不变量 1032）
+- [`extpre-notcall-sold-as-bundled.md`](extpre-notcall-sold-as-bundled.md) — 对应即将发 Precommit 被写成已经会调 / 已经只在非 nil 才叫 / 已经交差（不变量 1031）
 - [`procrestr-notpunish-sold-as-bundled.md`](procrestr-notpunish-sold-as-bundled.md) — misbehavior 被写成已经定奖惩 / 已经罚没 / 已经交差（不变量 1030）
 - [`procrestr-notts-sold-as-bundled.md`](procrestr-notts-sold-as-bundled.md) — time 被写成已经验过票上时间 / 已经验过块头 / 已经交差（不变量 1029）
 - [`procrestr-notlocal-sold-as-bundled.md`](procrestr-notlocal-sold-as-bundled.md) — proposed_last_commit 被写成已经交差 local_last_commit / 已经交差 / 已经跑过 Process（不变量 1028）

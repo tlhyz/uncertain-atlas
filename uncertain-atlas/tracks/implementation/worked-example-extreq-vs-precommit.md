@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendVote 请求对应就已经会调 ExtendVote、已经跳过 Verify、已经 Verify 过迟到扩展」，必须分开 ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块是不是已经会调 ExtendVote、Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify 是不是已经跳过 Verify、Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo 是不是已经 Verify 过迟到扩展。可以跳过「看见填了 ExtendVote 请求对应就已经会调 ExtendVote」。不要另写怎样写 ExtendVote 请求对应。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendVote 请求对应就已经会调 ExtendVote、已经跳过 Verify、已经 Verify 过迟到扩展」，必须分开 ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块是不是已经会调 ExtendVote、Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify 是不是已经跳过 Verify、Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo 是不是已经 Verify 过迟到扩展。可以跳过「看见填了 ExtendVote 请求对应就已经会调 ExtendVote」。不要另写怎样写 ExtendVote 请求对应。409 extreq vs precommit bundled unbundling 完成（1031 item 1 / 1032 item 2 / 1033 item 3）；精读 [`worked-example-extpre-notcall-vs-bundled.md`](worked-example-extpre-notcall-vs-bundled.md)（不变量 1031 item 1）。
 
 ## 本页不抄
 

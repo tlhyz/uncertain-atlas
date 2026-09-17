@@ -1,3 +1,6 @@
+- [`name-the-extpre-notlate-bar.md`](name-the-extpre-notlate-bar.md) — Verify ACCEPT 留给 h+1 Prepare not already late-verified / not already settled / not already must-reverify 正式三事（409 余量）（不变量 1033）
+- [`name-the-extpre-notskip-bar.md`](name-the-extpre-notskip-bar.md) — Precommit 丢掉无有效签扩展 not already skip-verify / not already unsigned / not already self-verified 正式三事（409 余量）（不变量 1032）
+- [`name-the-extpre-notcall-bar.md`](name-the-extpre-notcall-bar.md) — ExtendVoteRequest 对应即将发 Precommit not already will-call / not already non-nil-only / not already settled 正式三事（409 余量）（不变量 1031）
 - [`name-the-procrestr-notpunish-bar.md`](name-the-procrestr-notpunish-bar.md) — ProcessProposalRequest.misbehavior not already rewarded / not already slashed / not already settled 正式三事（420 余量）（不变量 1030）
 - [`name-the-procrestr-notts-bar.md`](name-the-procrestr-notts-bar.md) — ProcessProposalRequest.time not already vote-ts-checked / not already header-verified / not already settled 正式三事（420 余量）（不变量 1029）
 - [`name-the-procrestr-notlocal-bar.md`](name-the-procrestr-notlocal-bar.md) — ProcessProposalRequest.proposed_last_commit not already local-settled / not already ext-commit / not already processed 正式三事（420 余量）（不变量 1028）

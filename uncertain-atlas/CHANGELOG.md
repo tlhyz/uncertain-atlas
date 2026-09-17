@@ -1,3 +1,15 @@
+## 2026-09-17（续 1150）
+
+- 不变量 1033；语料 C1011；模式 name-the-extpre-notlate-bar；反模式 extpre-notlate-sold-as-bundled；L10.3 第 1002 条。填 L4.4 / CometBFT 档案 Verify ACCEPT 留给 h+1 Prepare not already late-verified / not already settled / not already must-reverify 正式三事（409 余量）。409 extreq vs precommit bundled unbundling 完成（1033 item 3）。
+
+## 2026-09-17（续 1149）
+
+- 不变量 1032；语料 C1010；模式 name-the-extpre-notskip-bar；反模式 extpre-notskip-sold-as-bundled；L10.3 第 1001 条。填 L4.4 / CometBFT 档案 Precommit 丢掉无有效签扩展 not already skip-verify / not already unsigned / not already self-verified 正式三事（409 余量）。409 extreq vs precommit bundled unbundling 续（1032 item 2）。
+
+## 2026-09-17（续 1148）
+
+- 不变量 1031；语料 C1009；模式 name-the-extpre-notcall-bar；反模式 extpre-notcall-sold-as-bundled；L10.3 第 1000 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest 对应即将发 Precommit not already will-call / not already non-nil-only / not already settled 正式三事（409 余量）。409 extreq vs precommit bundled unbundling 启动（1031 item 1）。
+
 ## 2026-09-17（续 1147）
 
 - 不变量 1030；语料 C1008；模式 name-the-procrestr-notpunish-bar；反模式 procrestr-notpunish-sold-as-bundled；L10.3 第 999 条。填 L4.4 / CometBFT 档案 ProcessProposalRequest.misbehavior not already rewarded / not already slashed / not already settled 正式三事（420 余量）。420 procreqrest vs extreq bundled unbundling 完成（1030 item 3）。

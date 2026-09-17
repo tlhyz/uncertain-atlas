@@ -1,3 +1,18 @@
+| A4925 | 记录 | 会与 409 / 352 / 353 / 1031 / 1032 糊成「看见 Verify ACCEPT 就已经 Verify 过迟到扩展 interchangeable、就已经交差 interchangeable、就已经必须再 Verify interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify ACCEPT 留给 h+1 Prepare not already late-verified / not already settled / not already must-reverify 正式三事（409 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。409 extreq vs precommit bundled unbundling 完成（1033 item 3） |
+| A4926 | 高 | 看见收下了 会被写成已经 Verify 过迟到扩展 interchangeable | 官方 ExtendVote Usage item 3：not already late-verified |
+| A4927 | 高 | 看见留给下一高 会被写成已经交差 interchangeable | 官方 ExtendVote Usage item 3：not already settled |
+| A4928 | 高 | 看见能填 会被写成已经必须再 Verify interchangeable | 官方 ExtendVote Usage item 3：not already must-reverify |
+| A4929 | 中 | 怎样写请求对应会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求对应。不另写 19 节 |
+| A4920 | 记录 | 会与 409 / 353 / 352 / 1031 / 1033 糊成「看见丢掉无有效签扩展就已经跳过 Verify interchangeable、就已经没有签 interchangeable、就已经自己验过 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Precommit 丢掉无有效签扩展 not already skip-verify / not already unsigned / not already self-verified 正式三事（409 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。409 extreq vs precommit bundled unbundling 续（1032 item 2） |
+| A4921 | 高 | 看见丢掉了 会被写成已经跳过 Verify interchangeable / 353 interchangeable | 官方 ExtendVote Usage item 2：not already skip-verify / not 353 |
+| A4922 | 高 | 看见空扩展 会被写成已经没有签 interchangeable | 官方 ExtendVote Usage item 2：not already unsigned |
+| A4923 | 高 | 看见没调 Verify 会被写成已经自己验过 interchangeable | 官方 ExtendVote Usage item 2：not already self-verified |
+| A4924 | 中 | 怎样写请求对应会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求对应。不另写 19 节 |
+| A4915 | 记录 | 会与 409 / 350 / 410 / 1032 / 1033 糊成「看见 ExtendVoteRequest 对应即将发 Precommit 就已经会调 interchangeable、就已经只在非 nil Precommit 才叫 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteRequest 对应即将发 Precommit not already will-call / not already non-nil-only / not already settled 正式三事（409 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。409 extreq vs precommit bundled unbundling 启动（1031 item 1） |
+| A4916 | 高 | 看见填了请求 会被写成已经会调 ExtendVote interchangeable / 350 interchangeable | 官方 ExtendVote Usage item 1：not already will-call / not 350 |
+| A4917 | 高 | 看见对上了拟议块 会被写成已经只在即将广播非 nil Precommit 时才叫 interchangeable | 官方 ExtendVote Usage item 1：not already non-nil-only |
+| A4918 | 高 | 看见有内容 会被写成已经交差 interchangeable | 官方 ExtendVote Usage item 1：not already settled |
+| A4919 | 中 | 怎样写请求对应会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求对应。不另写 19 节 |
 | A4910 | 记录 | 会与 420 / 413 / 372 / 1028 / 1029 糊成「看见 ProcessProposalRequest.misbehavior 就已经定奖惩 interchangeable、就已经罚没 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposalRequest.misbehavior not already rewarded / not already slashed / not already settled 正式三事（420 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。420 procreqrest vs extreq bundled unbundling 完成（1030 item 3） |
 | A4911 | 高 | 看见填了 misbehavior 会被写成已经定奖惩 interchangeable | 官方 ProcessProposal Request rest item 3：not already rewarded |
 | A4912 | 高 | 看见有过错列表 会被写成已经罚没 interchangeable | 官方 ProcessProposal Request rest item 3：not already slashed |
