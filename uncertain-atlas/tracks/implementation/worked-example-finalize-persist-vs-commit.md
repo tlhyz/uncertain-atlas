@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「Finalize 改了状态就已经落盘、已经在 Finalize 落了、已经能从半截高度接着走」，必须分开 Finalize 改了是不是已经落盘、必须在 Commit 落盘是不是已经在 Finalize 落了、记住上次成功 Commit 高度是不是已经能跳步。可以跳过「看见 Finalize 改了就已经交差」。不要另写怎样落盘或怎样写 Commit。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「Finalize 改了状态就已经落盘、已经在 Finalize 落了、已经能从半截高度接着走」，必须分开 Finalize 改了是不是已经落盘、必须在 Commit 落盘是不是已经在 Finalize 落了、记住上次成功 Commit 高度是不是已经能跳步。可以跳过「看见 Finalize 改了就已经交差」。不要另写怎样落盘或怎样写 Commit。335 finpersist vs commit bundled unbundling 启动（683 item 1）；精读 [`worked-example-finpersist-notmustnot-vs-bundled.md`](worked-example-finpersist-notmustnot-vs-bundled.md)（不变量 683 item 1）。
 
 ## 本页不抄
 
