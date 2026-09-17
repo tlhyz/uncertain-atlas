@@ -1,3 +1,6 @@
+- [`name-the-numpeers-notheight-bar.md`](name-the-numpeers-notheight-bar.md) — PeerState not already verified / not already evidence-ready / not already spec-height 正式三事（308 余量）（不变量 1009）
+- [`name-the-numpeers-notindep-bar.md`](name-the-numpeers-notindep-bar.md) — 按名字拿到反应堆 not already independent / not already recommended / not already current 正式三事（308 余量）（不变量 1008）
+- [`name-the-numpeers-notall-bar.md`](name-the-numpeers-notall-bar.md) — NumPeers not already all-neighbors / not already unconditional / not already dialing-ok 正式三事（308 余量）（不变量 1007）
 - [`name-the-peerhand-notgone-bar.md`](name-the-peerhand-notgone-bar.md) — StopPeerForError not already gone / not already forgotten / not already clean 正式三事（306 余量）（不变量 1006）
 - [`name-the-peerhand-notsent-bar.md`](name-the-peerhand-notsent-bar.md) — Broadcast 回通道 not already delivered / not already named / not already current 正式三事（306 余量）（不变量 1005）
 - [`name-the-peerhand-notsame-bar.md`](name-the-peerhand-notsame-bar.md) — Peer 句柄 not already same-person / not already same-handle / not already new-id 正式三事（306 余量）（不变量 1004）

@@ -1,3 +1,18 @@
+| A4805 | 记录 | 会与 308 / 67 / 309 / 1007 / 1008 糊成「看见能 Get 到高度就已经验过 interchangeable、就已经证据齐 interchangeable、就已经是规范高度 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PeerState not already verified / not already evidence-ready / not already spec-height 正式三事（308 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。308 numpeers vs all bundled unbundling 完成（1009 item 3） |
+| A4806 | 高 | 看见 Peer 上有 KV 会被写成已经验过高度 interchangeable | 官方 p2p API item 3：not already verified |
+| A4807 | 高 | 看见 Consensus 写过 会被写成证据已经齐 interchangeable | 官方 p2p API item 3：not already evidence-ready |
+| A4808 | 高 | 看见 Mempool 读到了 会被写成已经是规范高度 interchangeable | 官方 p2p API item 3：not already spec-height |
+| A4809 | 中 | 怎样数邻居会被抄进不确定 | 不抄。不写怎样数邻居或怎样切共识。不另写 19 节 |
+| A4800 | 记录 | 会与 308 / 305 / 1007 / 1009 糊成「看见能拿到就已经独立 interchangeable、就已经该当推荐路径 interchangeable、就已经该当现行用法 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 按名字拿到反应堆 not already independent / not already recommended / not already current 正式三事（308 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。308 numpeers vs all bundled unbundling 续（1008 item 2） |
+| A4801 | 高 | 看见能按名字拿到另一个反应堆 会被写成已经独立 interchangeable | 官方 p2p API item 2：not already independent |
+| A4802 | 高 | 看见能切过去 会被写成已经该当推荐路径 interchangeable | 官方 p2p API item 2：not already recommended |
+| A4803 | 高 | 看见方法还在 会被写成已经该当现行用法 interchangeable | 官方 p2p API item 2：not already current |
+| A4804 | 中 | 怎样数邻居会被抄进不确定 | 不抄。不写怎样数邻居或怎样切共识。不另写 19 节 |
+| A4795 | 记录 | 会与 308 / 306 / 305 / 1008 / 1009 糊成「看见 NumPeers 就已经数完 interchangeable、就已经算进无条件名单 interchangeable、就已经连上 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 NumPeers not already all-neighbors / not already unconditional / not already dialing-ok 正式三事（308 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。308 numpeers vs all bundled unbundling 启动（1007 item 1） |
+| A4796 | 高 | 看见 NumPeers 会被写成已经数完 interchangeable / 306 interchangeable | 官方 p2p API item 1：not already all-neighbors / not 306 |
+| A4797 | 高 | 看见出站加进站 会被写成无条件名单已经算进去 interchangeable | 官方 p2p API item 1：not already unconditional |
+| A4798 | 高 | 看见正在拨 会被写成已经连上 interchangeable | 官方 p2p API item 1：not already dialing-ok |
+| A4799 | 中 | 怎样数邻居会被抄进不确定 | 不抄。不写怎样数邻居或怎样切共识。不另写 19 节 |
 | A4790 | 记录 | 会与 306 / 67 / 305 / 1004 / 1005 糊成「看见叫了停就已经断干净 interchangeable、就已经忘了持久名单 interchangeable、就已经踢了就干净 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 StopPeerForError not already gone / not already forgotten / not already clean 正式三事（306 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。306 peer-handler vs node bundled unbundling 完成（1006 item 3） |
 | A4791 | 高 | 看见 StopPeerForError 会被写成已经对持久邻居也断干净 interchangeable | 官方 p2p API item 3：not already gone |
 | A4792 | 高 | 看见理由进了 会被写成持久名单已经忘了 interchangeable | 官方 p2p API item 3：not already forgotten |

@@ -1,3 +1,15 @@
+## 2026-09-17（续 1126）
+
+- 不变量 1009；语料 C987；模式 name-the-numpeers-notheight-bar；反模式 numpeers-notheight-sold-as-bundled；L10.3 第 978 条。填 L4.4 / CometBFT 档案 PeerState not already verified / not already evidence-ready / not already spec-height 正式三事（308 余量）。308 numpeers vs all bundled unbundling 完成（1009 item 3）。
+
+## 2026-09-17（续 1125）
+
+- 不变量 1008；语料 C986；模式 name-the-numpeers-notindep-bar；反模式 numpeers-notindep-sold-as-bundled；L10.3 第 977 条。填 L4.4 / CometBFT 档案 按名字拿到反应堆 not already independent / not already recommended / not already current 正式三事（308 余量）。308 numpeers vs all bundled unbundling 续（1008 item 2）。
+
+## 2026-09-17（续 1124）
+
+- 不变量 1007；语料 C985；模式 name-the-numpeers-notall-bar；反模式 numpeers-notall-sold-as-bundled；L10.3 第 976 条。填 L4.4 / CometBFT 档案 NumPeers not already all-neighbors / not already unconditional / not already dialing-ok 正式三事（308 余量）。308 numpeers vs all bundled unbundling 启动（1007 item 1）。
+
 ## 2026-09-17（续 1123）
 
 - 不变量 1006；语料 C984；模式 name-the-peerhand-notgone-bar；反模式 peerhand-notgone-sold-as-bundled；L10.3 第 975 条。填 L4.4 / CometBFT 档案 StopPeerForError not already gone / not already forgotten / not already clean 正式三事（306 余量）。306 peer-handler vs node bundled unbundling 完成（1006 item 3）。

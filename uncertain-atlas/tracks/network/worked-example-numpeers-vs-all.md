@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「对等节点已经齐」，必须分开 NumPeers 是不是已经数完、按名字拿到反应堆是不是已经独立、PeerState 是不是已经验过高度。可以跳过「看见能问就已经数完」。不要另写怎样数邻居或怎样切共识。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「对等节点已经齐」，必须分开 NumPeers 是不是已经数完、按名字拿到反应堆是不是已经独立、PeerState 是不是已经验过高度。可以跳过「看见能问就已经数完」。不要另写怎样数邻居或怎样切共识。308 numpeers vs all bundled unbundling 完成（1007 item 1 / 1008 item 2 / 1009 item 3）；精读 [`worked-example-numpeers-notall-vs-bundled.md`](worked-example-numpeers-notall-vs-bundled.md)（不变量 1007 item 1）。
 
 ## 本页不抄
 

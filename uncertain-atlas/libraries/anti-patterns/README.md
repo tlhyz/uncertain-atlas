@@ -1,3 +1,6 @@
+- [`numpeers-notheight-sold-as-bundled.md`](numpeers-notheight-sold-as-bundled.md) — PeerState 被写成已经验过高度 / 证据已经齐 / 已经是规范高度（不变量 1009）
+- [`numpeers-notindep-sold-as-bundled.md`](numpeers-notindep-sold-as-bundled.md) — 按名字拿到反应堆 被写成已经独立 / 已经该当推荐路径 / 已经该当现行用法（不变量 1008）
+- [`numpeers-notall-sold-as-bundled.md`](numpeers-notall-sold-as-bundled.md) — NumPeers 被写成已经数完 / 无条件名单已经算进去 / 正在拨就已经连上（不变量 1007）
 - [`peerhand-notgone-sold-as-bundled.md`](peerhand-notgone-sold-as-bundled.md) — StopPeerForError 被写成已经断干净 / 持久名单已经忘了 / 已经按「踢了就干净」执行（不变量 1006）
 - [`peerhand-notsent-sold-as-bundled.md`](peerhand-notsent-sold-as-bundled.md) — Broadcast 回通道 被写成已经送到 / 已经能点名 / 已经该当现行用法（不变量 1005）
 - [`peerhand-notsame-sold-as-bundled.md`](peerhand-notsame-sold-as-bundled.md) — Peer 句柄 被写成已经是同一个人 / 已经是上一次那份 / 身份已经换了（不变量 1004）
