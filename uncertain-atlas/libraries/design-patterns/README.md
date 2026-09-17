@@ -1,3 +1,6 @@
+- [`name-the-applychunk-notoffer-bar.md`](name-the-applychunk-notoffer-bar.md) — ApplySnapshotChunk 回包 result not Offer result / not already restored / not Apply Result enum 正式三事（397 余量）（不变量 742）
+- [`name-the-applychunk-notsenders-bar.md`](name-the-applychunk-notsenders-bar.md) — ApplySnapshotChunk 请求 sender not reject_senders / not already banned / not REJECT_SENDER 正式三事（397 余量）（不变量 741）
+- [`name-the-applychunk-notload-bar.md`](name-the-applychunk-notload-bar.md) — ApplySnapshotChunk 请求 chunk not already loading / not already complete / not Usage retrieve 正式三事（397 余量）（不变量 740）
 - [`name-the-offersnapreq-notrequired-bar.md`](name-the-offersnapreq-notrequired-bar.md) — OfferSnapshot 引导时叫 not Snapshot Connection required / not already transitioned / not Usage bootstrap 正式三事（396 余量）（不变量 739）
 - [`name-the-offersnapreq-notrestored-bar.md`](name-the-offersnapreq-notrestored-bar.md) — OfferSnapshot 回包 result not already restored / not already accepted / not already settled 正式三事（396 余量）（不变量 738）
 - [`name-the-offersnapreq-notlisted-bar.md`](name-the-offersnapreq-notlisted-bar.md) — OfferSnapshot 请求 snapshot not local list / not already identical / not already settled 正式三事（396 余量）（不变量 737）

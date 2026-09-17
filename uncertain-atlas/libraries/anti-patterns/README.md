@@ -1,3 +1,6 @@
+- [`applychunk-notoffer-sold-as-bundled.md`](applychunk-notoffer-sold-as-bundled.md) — result 被写成已经是 Offer 的结果 / 已经装完 / 已经 Apply Result 枚举（不变量 742）
+- [`applychunk-notsenders-sold-as-bundled.md`](applychunk-notsenders-sold-as-bundled.md) — sender 被写成已经拒了人 / 已经封了 / 已经 REJECT_SENDER（不变量 741）
+- [`applychunk-notload-sold-as-bundled.md`](applychunk-notload-sold-as-bundled.md) — chunk 被写成已经在拉块 / 已经齐 / 已经 Usage retrieve（不变量 740）
 - [`offersnapreq-notrequired-sold-as-bundled.md`](offersnapreq-notrequired-sold-as-bundled.md) — 引导时叫被写成已经必须实现快照连接 / 已经切进共识 / 已经 Usage bootstrap（不变量 739）
 - [`offersnapreq-notrestored-sold-as-bundled.md`](offersnapreq-notrestored-sold-as-bundled.md) — result 被写成已经装完 / 已经收下 / 已经交差（不变量 738）
 - [`offersnapreq-notlisted-sold-as-bundled.md`](offersnapreq-notlisted-sold-as-bundled.md) — snapshot 被写成已经是本地清单 / 已经是同一份 / 已经交差（不变量 737）

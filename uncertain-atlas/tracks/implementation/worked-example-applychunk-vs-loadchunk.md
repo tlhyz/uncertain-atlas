@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ApplySnapshotChunk 请求就已经在拉块、已经拒了人、已经是 Offer 的结果」，必须分开 ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容是不是已经在拉块、ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID 是不是已经拒了人、ApplySnapshotChunk 回包 result 是装这块的结果是不是已经是 Offer 的结果。可以跳过「看见填了 ApplySnapshotChunk 请求就已经在拉块」。不要另写怎样写 ApplySnapshotChunk 请求。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ApplySnapshotChunk 请求就已经在拉块、已经拒了人、已经是 Offer 的结果」，必须分开 ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容是不是已经在拉块、ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID 是不是已经拒了人、ApplySnapshotChunk 回包 result 是装这块的结果是不是已经是 Offer 的结果。可以跳过「看见填了 ApplySnapshotChunk 请求就已经在拉块」。不要另写怎样写 ApplySnapshotChunk 请求。397 applychunk vs loadchunk bundled unbundling 完成（740 item 1 / 741 item 2 / 742 item 3）；精读 [`worked-example-applychunk-notload-vs-bundled.md`](worked-example-applychunk-notload-vs-bundled.md)（不变量 740 item 1）。
 
 ## 本页不抄
 

@@ -356,6 +356,9 @@
 - [`worked-example-offersnapreq-notrestored-vs-bundled.md`](worked-example-offersnapreq-notrestored-vs-bundled.md) — result≠321 restored/402 ACCEPT/401 收下之后；≠396 bundled（不变量 738）
 - [`worked-example-offersnapreq-notlisted-vs-bundled.md`](worked-example-offersnapreq-notlisted-vs-bundled.md) — snapshot≠395 local list/368 identical/already settled；≠396 bundled（不变量 737）
 - [`worked-example-offersnap-vs-listed.md`](worked-example-offersnap-vs-listed.md) — OfferSnapshot 请求 snapshot 是拿来装回的那份快照 ≠ 已经是本地清单；OfferSnapshot 回包 result 是这次 Offer 的结果 ≠ 已经装完；OfferSnapshot 在用 state sync 引导节点时叫 ≠ 已经必须实现快照连接（不变量 396）
+- [`worked-example-applychunk-notoffer-vs-bundled.md`](worked-example-applychunk-notoffer-vs-bundled.md) — result≠396 Offer result/321 restored/398 Apply Result enum；≠397 bundled（不变量 742）
+- [`worked-example-applychunk-notsenders-vs-bundled.md`](worked-example-applychunk-notsenders-vs-bundled.md) — sender≠378 reject_senders/already banned/400 REJECT_SENDER；≠397 bundled（不变量 741）
+- [`worked-example-applychunk-notload-vs-bundled.md`](worked-example-applychunk-notload-vs-bundled.md) — chunk≠375 loading/already complete/501 Usage retrieve；≠397 bundled（不变量 740）
 - [`worked-example-applychunk-vs-loadchunk.md`](worked-example-applychunk-vs-loadchunk.md) — ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容 ≠ 已经在拉块；ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID ≠ 已经拒了人；ApplySnapshotChunk 回包 result 是装这块的结果 ≠ 已经是 Offer 的结果（不变量 397）
 - [`worked-example-applyretry-notchunkresult-vs-bundled.md`](worked-example-applyretry-notchunkresult-vs-bundled.md) — REJECT_SNAPSHOT≠397 this-chunk result/378 rejected senders/400 Offer REJECT_FORMAT；≠398 bundled（不变量 721）
 - [`worked-example-applyretry-notswitch-vs-bundled.md`](worked-example-applyretry-notswitch-vs-bundled.md) — RETRY_SNAPSHOT≠321 switched/restored/401 Offer accepted；≠398 bundled（不变量 720）

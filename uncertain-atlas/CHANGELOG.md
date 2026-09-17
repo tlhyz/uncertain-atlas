@@ -1,3 +1,15 @@
+## 2026-09-17（续 859）
+
+- 不变量 742；语料 C720；模式 name-the-applychunk-notoffer-bar；反模式 applychunk-notoffer-sold-as-bundled；L10.3 第 711 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk 回包 result not Offer result / not already restored / not Apply Result enum 正式三事（397 余量）。397 applychunk vs loadchunk bundled unbundling 完成（742 item 3）。
+
+## 2026-09-17（续 858）
+
+- 不变量 741；语料 C719；模式 name-the-applychunk-notsenders-bar；反模式 applychunk-notsenders-sold-as-bundled；L10.3 第 710 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk 请求 sender not reject_senders / not already banned / not REJECT_SENDER 正式三事（397 余量）。397 applychunk vs loadchunk bundled unbundling 续（741 item 2）。
+
+## 2026-09-17（续 857）
+
+- 不变量 740；语料 C718；模式 name-the-applychunk-notload-bar；反模式 applychunk-notload-sold-as-bundled；L10.3 第 709 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk 请求 chunk not already loading / not already complete / not Usage retrieve 正式三事（397 余量）。397 applychunk vs loadchunk bundled unbundling 启动（740 item 1）。
+
 ## 2026-09-17（续 856）
 
 - 不变量 739；语料 C717；模式 name-the-offersnapreq-notrequired-bar；反模式 offersnapreq-notrequired-sold-as-bundled；L10.3 第 708 条。填 L4.4 / CometBFT 档案 OfferSnapshot 引导时叫 not Snapshot Connection required / not already transitioned / not Usage bootstrap 正式三事（396 余量）。396 offersnap vs listed bundled unbundling 完成（739 item 3）。
