@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 652）
+
+- 不变量 520；语料 C512；模式 name-the-preparewhen-suggestvalidate-bar；反模式 preparewhen-suggestvalidate-sold-as-bundled；L10.3 第 504 条。填 L4.4 / CometBFT 档案 PrepareProposal When suggested validate like Verify 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 651）
 
 - 不变量 519；语料 C511；模式 name-the-preparewhen-lateext-unverified-bar；反模式 preparewhen-lateext-unverified-sold-as-bundled；L10.3 第 503 条。填 L4.4 / CometBFT 档案 PrepareProposal When +2/3 late extensions not verified 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
