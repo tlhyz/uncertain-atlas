@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 654）
+
+- 不变量 522；语料 C514；模式 name-the-verifyusage-localproc-bar；反模式 verifyusage-localproc-sold-as-bundled；L10.3 第 506 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage not called for local process 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 653）
 
 - 不变量 521；语料 C513；模式 name-the-verifyusage-emptyext-bar；反模式 verifyusage-emptyext-sold-as-bundled；L10.3 第 505 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage empty extension still calls Verify 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
