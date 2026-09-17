@@ -1,3 +1,18 @@
+| A3500 | 记录 | 会与 393 / 381 / 746 / 747 糊成「看见写了空间就已经是 CheckTx 码空间 interchangeable、就已经是回包码 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult.codespace not CheckTx codespace / not already response code / not already settled 正式三事（393 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。393 exectxgas vs checktx bundled unbundling 完成（748 item 3） |
+| A3501 | 高 | 看见 ExecTxResult.codespace 会被写成已经是 CheckTx 码空间 interchangeable / 381 interchangeable | 官方 ExecTxResult 气 item 3：not CheckTx codespace / not 381 |
+| A3502 | 高 | 看见写了空间 会被写成已经是回包码 interchangeable / 381 interchangeable | 官方 ExecTxResult 气 item 3：not already response code / not 381 |
+| A3503 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 ExecTxResult 气 item 3：not already settled |
+| A3504 | 中 | 怎样写 ExecTxResult 气 会被抄进不确定 | 不抄。不写怎样写 ExecTxResult 气。不另写 19 节 |
+| A3495 | 记录 | 会与 393 / 316 / 746 / 748 糊成「看见填了 gas_used 就已经算进共识 interchangeable、就已经印进本头 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult.gas_used not already counted into consensus / not already printed in header / not already settled 正式三事（393 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。393 exectxgas vs checktx bundled unbundling 续（747 item 2） |
+| A3496 | 高 | 看见 ExecTxResult.gas_used 会被写成已经算进共识 interchangeable | 官方 ExecTxResult 气 item 2：not already counted into consensus |
+| A3497 | 高 | 看见填了 gas_used 会被写成已经印进本头 interchangeable / 316 interchangeable | 官方 ExecTxResult 气 item 2：not already printed in header / not 316 |
+| A3498 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 ExecTxResult 气 item 2：not already settled |
+| A3499 | 中 | 怎样写 ExecTxResult 气 会被抄进不确定 | 不抄。不写怎样写 ExecTxResult 气。不另写 19 节 |
+| A3490 | 记录 | 会与 393 / 315 / 747 / 748 糊成「看见填了 gas_wanted 就已经是 CheckTx 的 GasWanted interchangeable、就已经在执行 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult.gas_wanted not CheckTx GasWanted / not already executing / not already settled 正式三事（393 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。393 exectxgas vs checktx bundled unbundling 启动（746 item 1） |
+| A3491 | 高 | 看见 ExecTxResult.gas_wanted 会被写成已经是 CheckTx 的 GasWanted interchangeable | 官方 ExecTxResult 气 item 1：not CheckTx GasWanted |
+| A3492 | 高 | 看见填了 gas_wanted 会被写成已经在执行 interchangeable / 315 interchangeable | 官方 ExecTxResult 气 item 1：not already executing / not 315 |
+| A3493 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 ExecTxResult 气 item 1：not already settled |
+| A3494 | 中 | 怎样写 ExecTxResult 气 会被抄进不确定 | 不抄。不写怎样写 ExecTxResult 气。不另写 19 节 |
 | A3485 | 记录 | 会与 390 / 384 / 743 / 744 糊成「看见回了日志就已经是 Query 日志 interchangeable、就已经 Data 被引擎用了 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 回包 log not Query log / not CheckTx Data used / not already settled 正式三事（390 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。390 proofop vs key bundled unbundling 完成（745 item 3） |
 | A3486 | 高 | 看见 CheckTx 回包 log 会被写成已经是 Query 日志 interchangeable / 384 interchangeable | 官方 ProofOp 键 item 3：not Query log / not 384 |
 | A3487 | 高 | 看见回了日志 会被写成已经 Data 被引擎用了 interchangeable | 官方 ProofOp 键 item 3：not CheckTx Data used |

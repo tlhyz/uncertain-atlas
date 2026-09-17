@@ -1,3 +1,6 @@
+- [`name-the-exectxgas-notcodespace-bar.md`](name-the-exectxgas-notcodespace-bar.md) — ExecTxResult.codespace not CheckTx codespace / not already response code / not already settled 正式三事（393 余量）（不变量 748）
+- [`name-the-exectxgas-notused-bar.md`](name-the-exectxgas-notused-bar.md) — ExecTxResult.gas_used not already counted into consensus / not already printed in header / not already settled 正式三事（393 余量）（不变量 747）
+- [`name-the-exectxgas-notwanted-bar.md`](name-the-exectxgas-notwanted-bar.md) — ExecTxResult.gas_wanted not CheckTx GasWanted / not already executing / not already settled 正式三事（393 余量）（不变量 746）
 - [`name-the-proofop-notquerylog-bar.md`](name-the-proofop-notquerylog-bar.md) — CheckTx 回包 log not Query log / not CheckTx Data used / not already settled 正式三事（390 余量）（不变量 745）
 - [`name-the-proofop-notproofops-bar.md`](name-the-proofop-notproofops-bar.md) — ProofOp.data not proof_ops / not already AppHash matched / not already settled 正式三事（390 余量）（不变量 744）
 - [`name-the-proofop-notquerykey-bar.md`](name-the-proofop-notquerykey-bar.md) — ProofOp.key not Query response key / not ProofOp type / not already settled 正式三事（390 余量）（不变量 743）

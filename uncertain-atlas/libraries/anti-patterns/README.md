@@ -1,3 +1,6 @@
+- [`exectxgas-notcodespace-sold-as-bundled.md`](exectxgas-notcodespace-sold-as-bundled.md) — codespace 被写成已经是 CheckTx 码空间 / 已经是回包码 / 已经交差（不变量 748）
+- [`exectxgas-notused-sold-as-bundled.md`](exectxgas-notused-sold-as-bundled.md) — gas_used 被写成已经算进共识 / 已经印进本头 / 已经交差（不变量 747）
+- [`exectxgas-notwanted-sold-as-bundled.md`](exectxgas-notwanted-sold-as-bundled.md) — gas_wanted 被写成已经是 CheckTx 的 GasWanted / 已经在执行 / 已经交差（不变量 746）
 - [`proofop-notquerylog-sold-as-bundled.md`](proofop-notquerylog-sold-as-bundled.md) — CheckTx log 被写成已经是 Query 日志 / 已经 Data 被引擎用了 / 已经交差（不变量 745）
 - [`proofop-notproofops-sold-as-bundled.md`](proofop-notproofops-sold-as-bundled.md) — data 被写成已经是 proof_ops / 已经对上 AppHash / 已经交差（不变量 744）
 - [`proofop-notquerykey-sold-as-bundled.md`](proofop-notquerykey-sold-as-bundled.md) — key 被写成已经是 Query 回包键 / 已经是 ProofOp 类型 / 已经交差（不变量 743）

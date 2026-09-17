@@ -1,3 +1,15 @@
+## 2026-09-17（续 865）
+
+- 不变量 748；语料 C726；模式 name-the-exectxgas-notcodespace-bar；反模式 exectxgas-notcodespace-sold-as-bundled；L10.3 第 717 条。填 L4.4 / CometBFT 档案 ExecTxResult.codespace not CheckTx codespace / not already response code / not already settled 正式三事（393 余量）。393 exectxgas vs checktx bundled unbundling 完成（748 item 3）。
+
+## 2026-09-17（续 864）
+
+- 不变量 747；语料 C725；模式 name-the-exectxgas-notused-bar；反模式 exectxgas-notused-sold-as-bundled；L10.3 第 716 条。填 L4.4 / CometBFT 档案 ExecTxResult.gas_used not already counted into consensus / not already printed in header / not already settled 正式三事（393 余量）。393 exectxgas vs checktx bundled unbundling 续（747 item 2）。
+
+## 2026-09-17（续 863）
+
+- 不变量 746；语料 C724；模式 name-the-exectxgas-notwanted-bar；反模式 exectxgas-notwanted-sold-as-bundled；L10.3 第 715 条。填 L4.4 / CometBFT 档案 ExecTxResult.gas_wanted not CheckTx GasWanted / not already executing / not already settled 正式三事（393 余量）。393 exectxgas vs checktx bundled unbundling 启动（746 item 1）。
+
 ## 2026-09-17（续 862）
 
 - 不变量 745；语料 C723；模式 name-the-proofop-notquerylog-bar；反模式 proofop-notquerylog-sold-as-bundled；L10.3 第 714 条。填 L4.4 / CometBFT 档案 CheckTx 回包 log not Query log / not CheckTx Data used / not already settled 正式三事（390 余量）。390 proofop vs key bundled unbundling 完成（745 item 3）。

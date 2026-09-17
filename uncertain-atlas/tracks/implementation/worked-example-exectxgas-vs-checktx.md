@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExecTxResult 气就已经是 CheckTx 的 GasWanted、已经算进共识、已经是 CheckTx 码空间」，必须分开 ExecTxResult.gas_wanted 是这笔要的气是不是已经是 CheckTx 的 GasWanted、ExecTxResult.gas_used 是这笔用掉的气是不是已经算进共识、ExecTxResult.codespace 是码的命名空间是不是已经是 CheckTx 码空间。可以跳过「看见填了 ExecTxResult 气就已经是 CheckTx 的 GasWanted」。不要另写怎样写 ExecTxResult 气。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExecTxResult 气就已经是 CheckTx 的 GasWanted、已经算进共识、已经是 CheckTx 码空间」，必须分开 ExecTxResult.gas_wanted 是这笔要的气是不是已经是 CheckTx 的 GasWanted、ExecTxResult.gas_used 是这笔用掉的气是不是已经算进共识、ExecTxResult.codespace 是码的命名空间是不是已经是 CheckTx 码空间。可以跳过「看见填了 ExecTxResult 气就已经是 CheckTx 的 GasWanted」。不要另写怎样写 ExecTxResult 气。393 exectxgas vs checktx bundled unbundling 完成（746 item 1 / 747 item 2 / 748 item 3）；精读 [`worked-example-exectxgas-notwanted-vs-bundled.md`](worked-example-exectxgas-notwanted-vs-bundled.md)（不变量 746 item 1）。
 
 ## 本页不抄
 

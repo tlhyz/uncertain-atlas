@@ -349,6 +349,9 @@
 - [`worked-example-proofop-vs-key.md`](worked-example-proofop-vs-key.md) — ProofOp.key 是这棵默克尔树里这把键 ≠ 已经是 Query 回包键；ProofOp.data 是这把键的编码证明 ≠ 已经是 proof_ops；CheckTx 回包 log 是应用日志输出 ≠ 已经是 Query 日志（不变量 390）
 - [`worked-example-checktxtx-vs-recheck.md`](worked-example-checktxtx-vs-recheck.md) — CheckTx 请求 tx 是请求交易字节 ≠ 已经是 Recheck；CheckTx 对照当前状态验、不应用这笔描述的状态改动 ≠ 已经按 ExecuteTxState 验过；CheckTx 回包 info 是附加信息 ≠ 已经是 Query 附加信息（不变量 391）
 - [`worked-example-initapphash-vs-header.md`](worked-example-initapphash-vs-header.md) — InitChain 回包 app_hash 是起步应用哈希 ≠ 已经是本头 AppHash；Finalize 请求 hash 是这块的哈希 ≠ 已经知道本头哈希；CommitInfo.round 是提交轮 ≠ 已经按投票权排过（不变量 392）
+- [`worked-example-exectxgas-notcodespace-vs-bundled.md`](worked-example-exectxgas-notcodespace-vs-bundled.md) — codespace≠381 CheckTx codespace/response code/already settled；≠393 bundled（不变量 748）
+- [`worked-example-exectxgas-notused-vs-bundled.md`](worked-example-exectxgas-notused-vs-bundled.md) — gas_used≠counted into consensus/316 header/already settled；≠393 bundled（不变量 747）
+- [`worked-example-exectxgas-notwanted-vs-bundled.md`](worked-example-exectxgas-notwanted-vs-bundled.md) — gas_wanted≠CheckTx GasWanted/315 executing/already settled；≠393 bundled（不变量 746）
 - [`worked-example-exectxgas-vs-checktx.md`](worked-example-exectxgas-vs-checktx.md) — ExecTxResult.gas_wanted 是这笔要的气 ≠ 已经是 CheckTx 的 GasWanted；ExecTxResult.gas_used 是这笔用掉的气 ≠ 已经算进共识；ExecTxResult.codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 393）
 - [`worked-example-extcommitround-vs-commitinfo.md`](worked-example-extcommitround-vs-commitinfo.md) — ExtendedCommitInfo.round 是提交轮 ≠ 已经是 CommitInfo.round；Finalize 请求 next_validators_hash 是下一验证者集合默克尔根 ≠ 已经是同一套字段；Echo 请求 Message 是要回显的字符串 ≠ 已经是 Flush（不变量 394）
 - [`worked-example-listsnapempty-notchunks-vs-bundled.md`](worked-example-listsnapempty-notchunks-vs-bundled.md) — 用来发现≠375 loading chunks/322 complete/500 Usage discover；≠395 bundled（不变量 736）
