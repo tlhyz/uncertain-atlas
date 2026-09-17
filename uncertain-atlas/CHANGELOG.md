@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 625）
+
+- 不变量 493；语料 C485；模式 name-the-flushusage-bar；反模式 flushusage-sold-as-echo；L10.3 第 477 条。填 L4.4 / CometBFT 档案 Flush Usage 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 624）
 
 - 不变量 492；语料 C484；模式 name-the-echousage-bar；反模式 echousage-sold-as-flush；L10.3 第 476 条。填 L4.4 / CometBFT 档案 Echo Usage 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。

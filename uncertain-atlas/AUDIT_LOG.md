@@ -4523,6 +4523,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2318 | 中 | 怎样实现 Echo / 怎样测 ABCI 客户端会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2317 | 高 | 看见 Response Message is the input string 会被写成已经 Echo 用来测实现就已经刷完，或当成已经 Request Message 字段 interchangeable / Flush 回包回来就算同步 | 官方 Echo Response：Message (string): The input string |
 | A2316 | 高 | 看见 Request Message is a string to echo back 会被写成已经 Response Message 是入参那串 interchangeable，或当成已经 Echo 请求 Message 就已经是 Flush（394） | 官方 Echo Request：Message (string): A string to echo back |
+| A2324 | 记录 | 会与 374 / 492 / 309 / 307 / 310 糊成「看见 Flush 了就已经 Echo 回显 / 已经入队 / 已经能往下走」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Flush Usage 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。Echo / 入队 / 能往下走 标成另一对象 |
+| A2323 | 中 | 怎样实现 Flush / 怎样配 async/sync 请求会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2322 | 高 | 看见 Called immediately for sync request / returns when Flush response comes back 会被写成已经 Echo 回包 Message 是入参那串（492），或当成已经 Commit 里等广播就已经能往下走（310） | 官方 Flush Usage：Called immediately for sync request; returns when Flush response comes back |
+| A2321 | 高 | 看见 Called periodically to ensure async requests are actually sent 会被写成已经 Echo 用来测实现（492），或当成已经一条连接就已经是四门（307） | 官方 Flush Usage：Called periodically to ensure async requests are actually sent |
+| A2320 | 高 | 看见 Signals that messages queued on the client should be flushed to the server 会被写成已经 Echo test client/server（492） interchangeable，或当成已经 HasChannel 就已经入队（309） | 官方 Flush Usage：Signals that messages queued on the client should be flushed to the server |
+
 | A2315 | 高 | 看见 Echo a string to test an ABCI client/server implementation 会被写成已经 Flush 那种把客户端排队的消息冲到服务端（374），或当成已经 Commit 空请求 bundled（399） interchangeable | 官方 Echo Usage：Echo a string to test an ABCI client/server implementation |
 
 | A2310 | 高 | 看见 Use CommitResponse.retain_height with caution 会被写成已经 retain_height defaults to 0 retain all（366） interchangeable，或当成已经 blocks below this height may be removed 那种回了高度就等于已经在剪 | 官方 Commit Usage：Use CommitResponse.retain_height with caution! |
