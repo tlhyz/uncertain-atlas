@@ -1,3 +1,18 @@
+| A4685 | 记录 | 会与 300 / 56 / 148 / 983 / 984 糊成「看见能读本地 State 就已经进了规范 interchangeable、就已经能在网上对上 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 落盘或查询接口 not already in-spec / not already network-aligned / not already settled 正式三事（300 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。300 state vs gossip bundled unbundling 完成（985 item 3） |
+| A4686 | 高 | 看见落盘或查询接口 会被写成已经进了规范 interchangeable | 官方 State item 3：not already in-spec |
+| A4687 | 高 | 看见落盘了 会被写成已经能在网上对上 interchangeable | 官方 State item 3：not already network-aligned |
+| A4688 | 高 | 看见查询回了字段 会被写成已经交差 interchangeable | 官方 State item 3：not already settled |
+| A4689 | 中 | 怎样拼 State 会被抄进不确定 | 不抄。不写怎样拼 State 字段或怎样算头上的根。不另写 19 节 |
+| A4680 | 记录 | 会与 300 / 38 / 298 / 983 / 985 糊成「看见头上有根就已经有了 State interchangeable、就已经流言过对象 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 头上的根 not already have-State / not already gossiped-object / not already settled 正式三事（300 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。300 state vs gossip bundled unbundling 续（984 item 2） |
+| A4681 | 高 | 看见头上的根 会被写成已经有了 State interchangeable | 官方 State item 2：not already have-State |
+| A4682 | 高 | 看见根对上了 会被写成已经流言过对象 interchangeable | 官方 State item 2：not already gossiped-object |
+| A4683 | 高 | 看见头上有根 会被写成已经交差 interchangeable | 官方 State item 2：not already settled |
+| A4684 | 中 | 怎样拼 State 会被抄进不确定 | 不抄。不写怎样拼 State 字段或怎样算头上的根。不另写 19 节 |
+| A4675 | 记录 | 会与 300 / 147 / 298 / 984 / 985 糊成「看见本地 State 就已经进了块 interchangeable、就已经流言 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 本地 State not already in-block / not already gossiped / not already settled 正式三事（300 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。300 state vs gossip bundled unbundling 启动（983 item 1） |
+| A4676 | 高 | 看见本地 State 会被写成已经进了块 interchangeable / 147 interchangeable | 官方 State item 1：not already in-block / not 147 |
+| A4677 | 高 | 看见能读到它 会被写成已经流言 interchangeable | 官方 State item 1：not already gossiped |
+| A4678 | 高 | 看见字段齐了 会被写成已经交差 interchangeable | 官方 State item 1：not already settled |
+| A4679 | 中 | 怎样拼 State 会被抄进不确定 | 不抄。不写怎样拼 State 字段或怎样算头上的根。不另写 19 节 |
 | A4670 | 记录 | 会与 298 / 33 / 310 / 980 / 981 糊成「看见 LastSignBytes 对上就已经换了高度 interchangeable、就已经发出另一张承诺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 LastSignBytes 对上 not already new-height / not already new-commit / not already settled 正式三事（298 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。298 wal vs signed bundled unbundling 完成（982 item 3） |
 | A4671 | 高 | 看见 LastSignBytes 对上 会被写成已经换了高度 interchangeable | 官方 WAL item 3：not already new-height |
 | A4672 | 高 | 看见回放走到 precommit 会被写成已经发出另一张承诺 interchangeable | 官方 WAL item 3：not already new-commit |

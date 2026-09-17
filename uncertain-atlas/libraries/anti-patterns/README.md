@@ -1,3 +1,6 @@
+- [`stategossip-notspec-sold-as-bundled.md`](stategossip-notspec-sold-as-bundled.md) — 落盘或查询接口 被写成已经进了规范 / 已经能在网上对上 / 已经交差（不变量 985）
+- [`stategossip-notroot-sold-as-bundled.md`](stategossip-notroot-sold-as-bundled.md) — 头上的根 被写成已经有了 State / 已经流言过对象 / 已经交差（不变量 984）
+- [`stategossip-notblock-sold-as-bundled.md`](stategossip-notblock-sold-as-bundled.md) — 本地 State 被写成已经进了块 / 已经流言 / 已经交差（不变量 983）
 - [`wal-notheight-sold-as-bundled.md`](wal-notheight-sold-as-bundled.md) — LastSignBytes 对上 被写成已经换了高度 / 已经发出另一张承诺 / 已经交差（不变量 982）
 - [`wal-notresign-sold-as-bundled.md`](wal-notresign-sold-as-bundled.md) — 回放时再签 被写成已经双签 / 已经发出新票 / 已经交差（不变量 981）
 - [`wal-notfsync-sold-as-bundled.md`](wal-notfsync-sold-as-bundled.md) — 写下每条消息 被写成已经刷盘 / 已经防了双签 / 已经交差（不变量 980）

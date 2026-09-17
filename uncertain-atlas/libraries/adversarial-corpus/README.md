@@ -1,3 +1,9 @@
+| C963 | 985 | stategossip notspec≠56/300 | 文案把落盘或查询接口 / 能读本地 State 写成已经进了规范 interchangeable 或已经和 56 interchangeable / 985 stategossip-notspec interchangeable；或把看见落盘了 写成已经能在网上对上 interchangeable；或把看见查询回了字段 写成已经交差 interchangeable，或已经和 300 state-vs-gossip bundled / stategossip-notspec-sold-as-bundled interchangeable / 983 stategossip-notblock interchangeable / 984 stategossip-notroot interchangeable |
+
+| C962 | 984 | stategossip notroot≠38/300 | 文案把头上的根 / 验证者根或结果根 写成已经有了 State interchangeable 或已经和 38 interchangeable / 984 stategossip-notroot interchangeable；或把看见根对上了 写成已经流言过对象 interchangeable；或把看见头上有根 写成已经交差 interchangeable，或已经和 300 state-vs-gossip bundled / stategossip-notroot-sold-as-bundled interchangeable / 983 stategossip-notblock interchangeable / 985 stategossip-notspec interchangeable |
+
+| C961 | 983 | stategossip notblock≠147/300 | 文案把本地 State / State 对象 写成已经进了块 interchangeable 或已经和 147 interchangeable / 983 stategossip-notblock interchangeable；或把看见能读到它 写成已经流言 interchangeable；或把看见字段齐了 写成已经交差 interchangeable，或已经和 300 state-vs-gossip bundled / stategossip-notblock-sold-as-bundled interchangeable / 984 stategossip-notroot interchangeable / 985 stategossip-notspec interchangeable |
+
 | C960 | 982 | wal notheight≠33/298 | 文案把 LastSignBytes 对上 / 回放走到 precommit 写成已经换了高度 interchangeable 或已经和 33 interchangeable / 982 wal-notheight interchangeable；或把看见回放走到 precommit 写成已经发出另一张承诺 interchangeable；或把看见签名器这次肯签 写成已经交差 interchangeable，或已经和 298 wal-vs-signed bundled / wal-notheight-sold-as-bundled interchangeable / 980 wal-notfsync interchangeable / 981 wal-notresign interchangeable |
 
 | C959 | 981 | wal notresign≠5/298 | 文案把回放时再签 / 回放 写成已经双签 interchangeable 或已经和 5 interchangeable / 981 wal-notresign interchangeable；或把看见回放 写成已经发出新票 interchangeable；或把看见这次失败 写成已经交差 interchangeable，或已经和 298 wal-vs-signed bundled / wal-notresign-sold-as-bundled interchangeable / 980 wal-notfsync interchangeable / 982 wal-notheight interchangeable |

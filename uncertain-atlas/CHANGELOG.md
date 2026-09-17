@@ -1,3 +1,15 @@
+## 2026-09-17（续 1102）
+
+- 不变量 985；语料 C963；模式 name-the-stategossip-notspec-bar；反模式 stategossip-notspec-sold-as-bundled；L10.3 第 954 条。填 L4.4 / CometBFT 档案 落盘或查询接口 not already in-spec / not already network-aligned / not already settled 正式三事（300 余量）。300 state vs gossip bundled unbundling 完成（985 item 3）。
+
+## 2026-09-17（续 1101）
+
+- 不变量 984；语料 C962；模式 name-the-stategossip-notroot-bar；反模式 stategossip-notroot-sold-as-bundled；L10.3 第 953 条。填 L4.4 / CometBFT 档案 头上的根 not already have-State / not already gossiped-object / not already settled 正式三事（300 余量）。300 state vs gossip bundled unbundling 续（984 item 2）。
+
+## 2026-09-17（续 1100）
+
+- 不变量 983；语料 C961；模式 name-the-stategossip-notblock-bar；反模式 stategossip-notblock-sold-as-bundled；L10.3 第 952 条。填 L4.4 / CometBFT 档案 本地 State not already in-block / not already gossiped / not already settled 正式三事（300 余量）。300 state vs gossip bundled unbundling 启动（983 item 1）。
+
 ## 2026-09-17（续 1099）
 
 - 不变量 982；语料 C960；模式 name-the-wal-notheight-bar；反模式 wal-notheight-sold-as-bundled；L10.3 第 951 条。填 L4.4 / CometBFT 档案 LastSignBytes 对上 not already new-height / not already new-commit / not already settled 正式三事（298 余量）。298 wal vs signed bundled unbundling 完成（982 item 3）。

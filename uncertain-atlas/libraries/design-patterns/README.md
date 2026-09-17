@@ -1,3 +1,6 @@
+- [`name-the-stategossip-notspec-bar.md`](name-the-stategossip-notspec-bar.md) — 落盘或查询接口 not already in-spec / not already network-aligned / not already settled 正式三事（300 余量）（不变量 985）
+- [`name-the-stategossip-notroot-bar.md`](name-the-stategossip-notroot-bar.md) — 头上的根 not already have-State / not already gossiped-object / not already settled 正式三事（300 余量）（不变量 984）
+- [`name-the-stategossip-notblock-bar.md`](name-the-stategossip-notblock-bar.md) — 本地 State not already in-block / not already gossiped / not already settled 正式三事（300 余量）（不变量 983）
 - [`name-the-wal-notheight-bar.md`](name-the-wal-notheight-bar.md) — LastSignBytes 对上 not already new-height / not already new-commit / not already settled 正式三事（298 余量）（不变量 982）
 - [`name-the-wal-notresign-bar.md`](name-the-wal-notresign-bar.md) — 回放时再签 not already double-signed / not already new-vote / not already settled 正式三事（298 余量）（不变量 981）
 - [`name-the-wal-notfsync-bar.md`](name-the-wal-notfsync-bar.md) — 写下每条消息 not already fsynced / not already double-sign-safe / not already settled 正式三事（298 余量）（不变量 980）

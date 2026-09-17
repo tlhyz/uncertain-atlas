@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「当前状态」，必须分开本地对象、头上的根、落盘接口。可以跳过「看见本地 State 就已经在块里」。不要另写怎样拼 State 字段或怎样算头上的根。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「当前状态」，必须分开本地对象、头上的根、落盘接口。可以跳过「看见本地 State 就已经在块里」。不要另写怎样拼 State 字段或怎样算头上的根。300 state vs gossip bundled unbundling 完成（983 item 1 / 984 item 2 / 985 item 3）；精读 [`worked-example-stategossip-notblock-vs-bundled.md`](worked-example-stategossip-notblock-vs-bundled.md)（不变量 983 item 1）。
 
 ## 本页不抄
 
