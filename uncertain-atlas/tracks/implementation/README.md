@@ -161,6 +161,9 @@
 - [`worked-example-req6-coherence-vs-accept.md`](worked-example-req6-coherence-vs-accept.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept ≠ 已经是任意扩展都会 Accept；Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 ≠ 已经只是活性问题；会面对和 Req 5 同一类活性问题 ≠ 已经丢了安全性（不变量 348）
 - [`worked-example-req9-noside-vs-commit.md`](worked-example-req9-noside-vs-commit.md) — Prepare 不得改已提交状态 ≠ 已经立刻执行就已经交差；Process 不得改已提交状态 ≠ 已经 Accept 就已经改了；Extend 和 Verify 不得改已提交状态 ≠ 已经签了扩展就已经进状态（不变量 349）
 - [`worked-example-extend-once-vs-round.md`](worked-example-extend-once-vs-round.md) — 一轮最多一张 Precommit ≠ 已经能再签一张；ExtendVote 只在即将广播非 nil Precommit 时才叫 ≠ 已经签了 nil 票；一轮只能交出一份扩展 ≠ 已经是每一高度一份（不变量 350）
+- [`worked-example-process-also-notevery-vs-bundled.md`](worked-example-process-also-notevery-vs-bundled.md) — 失败路径≠this Prepare/every round/settled；≠351 bundled（不变量 862）
+- [`worked-example-process-also-notsame-vs-bundled.md`](worked-example-process-also-notsame-vs-bundled.md) — 通常对得上≠guaranteed/must match/settled；≠351 bundled（不变量 861）
+- [`worked-example-process-also-notskip-vs-bundled.md`](worked-example-process-also-notskip-vs-bundled.md) — 提议者也Process≠skip/settled/this call；≠351 bundled（不变量 860）
 - [`worked-example-process-also-vs-prepare.md`](worked-example-process-also-vs-prepare.md) — Process 也会在提议者那边叫 ≠ 已经不用再 Process；通常紧跟 Prepare、列表对得上 ≠ 已经保证是这一次；失败时可能对上更早一次或根本不调 ≠ 已经每轮都会叫（不变量 351）
 - [`worked-example-late-extension-vs-verified.md`](worked-example-late-extension-vs-verified.md) — +2/3 之后才进来的扩展写进了 commit info ≠ 已经 Verify 过；建议按 Verify 同款逻辑再看一遍 ≠ 已经是引擎会再 Verify；下一高度 round 0 写进 ExtendedCommitInfo ≠ 已经又叫了 Verify（不变量 352）
 - [`worked-example-verify-when-vs-empty.md`](worked-example-verify-when-vs-empty.md) — 空扩展仍会调 Verify ≠ 已经跳过 Verify；不对本进程自己发出的 Precommit 调用 ≠ 已经自己验过；请求里的 hash ≠ 已经对该块跑过 Process（不变量 353）

@@ -1,3 +1,6 @@
+- [`name-the-process-also-notevery-bar.md`](name-the-process-also-notevery-bar.md) — 失败时可能对上更早一次或根本不调 not already this Prepare / not already every round calls / not already settled 正式三事（351 余量）（不变量 862）
+- [`name-the-process-also-notsame-bar.md`](name-the-process-also-notsame-bar.md) — 通常紧跟 Prepare、列表对得上 not already guaranteed this Prepare / not already must match / not already settled 正式三事（351 余量）（不变量 861）
+- [`name-the-process-also-notskip-bar.md`](name-the-process-also-notskip-bar.md) — Process 也会在提议者那边叫 not already no need to Process again / not already settled / not already this call 正式三事（351 余量）（不变量 860）
 - [`name-the-process-when-notverified-bar.md`](name-the-process-when-notverified-bar.md) — 非验证者可以立刻回 ACCEPT not already verified this block / not already validators can skip / not already settled 正式三事（354 余量）（不变量 859）
 - [`name-the-process-when-notreject-bar.md`](name-the-process-when-notreject-bar.md) — 只做基本检查再异步 Process not already can still Reject / not already can force nil / not already settled 正式三事（354 余量）（不变量 858）
 - [`name-the-process-when-notlater-bar.md`](name-the-process-when-notlater-bar.md) — Process 调用是同步的 not already can change verdict later / not already left critical path / not already settled 正式三事（354 余量）（不变量 857）

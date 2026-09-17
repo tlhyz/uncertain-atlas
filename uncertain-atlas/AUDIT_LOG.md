@@ -1,3 +1,18 @@
+| A4070 | 记录 | 会与 351 / 311 / 33 / 860 / 861 糊成「看见进了这一轮就已经是这一次 Prepare interchangeable、就已经每轮都会叫 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 失败时可能对上更早一次或根本不调 not already this Prepare / not already every round calls / not already settled 正式三事（351 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。351 process-also vs prepare bundled unbundling 完成（862 item 3） |
+| A4071 | 高 | 看见失败时可能对上更早一次 会被写成已经是这一次 Prepare interchangeable | 官方 Process 也会在提议者那边叫 item 3：not already this Prepare |
+| A4072 | 高 | 看见进了这一轮 会被写成已经每轮都会叫 interchangeable | 官方 Process 也会在提议者那边叫 item 3：not already every round calls |
+| A4073 | 高 | 看见失败了 会被写成已经交差 interchangeable | 官方 Process 也会在提议者那边叫 item 3：not already settled |
+| A4074 | 中 | 怎样写 Process 会被抄进不确定 | 不抄。不写怎样写 Process。不另写 19 节 |
+| A4065 | 记录 | 会与 351 / 347 / 311 / 860 / 862 糊成「看见列表对得上就已经保证是这一次 interchangeable、就已经必须对上 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 通常紧跟 Prepare、列表对得上 not already guaranteed this Prepare / not already must match / not already settled 正式三事（351 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。351 process-also vs prepare bundled unbundling 续（861 item 2） |
+| A4066 | 高 | 看见通常紧跟 Prepare、列表对得上 会被写成已经保证是这一次 interchangeable | 官方 Process 也会在提议者那边叫 item 2：not already guaranteed this Prepare |
+| A4067 | 高 | 看见 txs 一样 会被写成已经必须对上 interchangeable | 官方 Process 也会在提议者那边叫 item 2：not already must match |
+| A4068 | 高 | 看见刚 Prepare 完 会被写成已经交差 interchangeable | 官方 Process 也会在提议者那边叫 item 2：not already settled |
+| A4069 | 中 | 怎样写 Process 会被抄进不确定 | 不抄。不写怎样写 Process。不另写 19 节 |
+| A4060 | 记录 | 会与 351 / 33 / 354 / 857 / 861 / 862 糊成「看见自己刚 Prepare 过就已经不用再 Process interchangeable、就已经交差 interchangeable、就已经过了 Process interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 也会在提议者那边叫 not already no need to Process again / not already settled / not already this call 正式三事（351 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。351 process-also vs prepare bundled unbundling 启动（860 item 1） |
+| A4061 | 高 | 看见 Process 也会在提议者那边叫 会被写成已经不用再 Process interchangeable / 33 interchangeable | 官方 Process 也会在提议者那边叫 item 1：not already no need to Process again / not 33 |
+| A4062 | 高 | 看见是提议者 会被写成已经交差 interchangeable | 官方 Process 也会在提议者那边叫 item 1：not already settled |
+| A4063 | 高 | 看见列表自己编的 会被写成已经过了 Process interchangeable | 官方 Process 也会在提议者那边叫 item 1：not already this call |
+| A4064 | 中 | 怎样写 Process 会被抄进不确定 | 不抄。不写怎样写 Process。不另写 19 节 |
 | A4055 | 记录 | 会与 354 / 351 / 33 / 857 / 858 糊成「看见立刻 ACCEPT 就已经验过这块 interchangeable、就已经是验证者也可以立刻交差 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 非验证者可以立刻回 ACCEPT not already verified this block / not already validators can skip / not already settled 正式三事（354 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。354 process-when vs later bundled unbundling 完成（859 item 3） |
 | A4056 | 高 | 看见非验证者可以立刻回 ACCEPT 会被写成已经验过这块 interchangeable | 官方 Process 何时调用 item 3：not already verified this block |
 | A4057 | 高 | 看见规范允许 会被写成已经是验证者也可以立刻交差 interchangeable | 官方 Process 何时调用 item 3：not already validators can skip |

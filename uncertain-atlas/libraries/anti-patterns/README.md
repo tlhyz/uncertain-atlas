@@ -1,3 +1,6 @@
+- [`process-also-notevery-sold-as-bundled.md`](process-also-notevery-sold-as-bundled.md) — 失败路径 被写成已经是这一次 / 已经每轮都会叫 / 已经交差（不变量 862）
+- [`process-also-notsame-sold-as-bundled.md`](process-also-notsame-sold-as-bundled.md) — 通常对得上 被写成已经保证是这一次 / 已经必须对上 / 已经交差（不变量 861）
+- [`process-also-notskip-sold-as-bundled.md`](process-also-notskip-sold-as-bundled.md) — 提议者也 Process 被写成已经不用再 Process / 已经交差 / 已经过了 Process（不变量 860）
 - [`process-when-notverified-sold-as-bundled.md`](process-when-notverified-sold-as-bundled.md) — 立刻 ACCEPT 被写成已经验过这块 / 已经是验证者也可以立刻交差 / 已经交差（不变量 859）
 - [`process-when-notreject-sold-as-bundled.md`](process-when-notreject-sold-as-bundled.md) — 异步 Process 被写成已经还能再 Reject / 已经还能强迫 nil / 已经交差（不变量 858）
 - [`process-when-notlater-sold-as-bundled.md`](process-when-notlater-sold-as-bundled.md) — 同步 Process 被写成已经能稍后改裁决 / 已经离开关键路径 / 已经交差（不变量 857）

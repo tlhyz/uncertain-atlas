@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见自己刚 Prepare 过就已经不用再 Process、已经保证是这一次、已经每轮都会叫」，必须分开 Process 也会在提议者那边叫是不是已经不用再 Process、通常紧跟 Prepare、列表对得上是不是已经保证是这一次、失败时可能对上更早一次或根本不调是不是已经每轮都会叫。可以跳过「看见自己刚 Prepare 过就已经不用再 Process」。不要另写怎样写 Process。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见自己刚 Prepare 过就已经不用再 Process、已经保证是这一次、已经每轮都会叫」，必须分开 Process 也会在提议者那边叫是不是已经不用再 Process、通常紧跟 Prepare、列表对得上是不是已经保证是这一次、失败时可能对上更早一次或根本不调是不是已经每轮都会叫。可以跳过「看见自己刚 Prepare 过就已经不用再 Process」。不要另写怎样写 Process。351 process-also vs prepare bundled unbundling 完成（860 item 1 / 861 item 2 / 862 item 3）；精读 [`worked-example-process-also-notskip-vs-bundled.md`](worked-example-process-also-notskip-vs-bundled.md)（不变量 860 item 1）。
 
 ## 本页不抄
 

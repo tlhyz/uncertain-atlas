@@ -1,3 +1,15 @@
+## 2026-09-17（续 979）
+
+- 不变量 862；语料 C840；模式 name-the-process-also-notevery-bar；反模式 process-also-notevery-sold-as-bundled；L10.3 第 831 条。填 L4.4 / CometBFT 档案 失败时可能对上更早一次或根本不调 not already this Prepare / not already every round calls / not already settled 正式三事（351 余量）。351 process-also vs prepare bundled unbundling 完成（862 item 3）。
+
+## 2026-09-17（续 978）
+
+- 不变量 861；语料 C839；模式 name-the-process-also-notsame-bar；反模式 process-also-notsame-sold-as-bundled；L10.3 第 830 条。填 L4.4 / CometBFT 档案 通常紧跟 Prepare、列表对得上 not already guaranteed this Prepare / not already must match / not already settled 正式三事（351 余量）。351 process-also vs prepare bundled unbundling 续（861 item 2）。
+
+## 2026-09-17（续 977）
+
+- 不变量 860；语料 C838；模式 name-the-process-also-notskip-bar；反模式 process-also-notskip-sold-as-bundled；L10.3 第 829 条。填 L4.4 / CometBFT 档案 Process 也会在提议者那边叫 not already no need to Process again / not already settled / not already this call 正式三事（351 余量）。351 process-also vs prepare bundled unbundling 启动（860 item 1）。
+
 ## 2026-09-17（续 976）
 
 - 不变量 859；语料 C837；模式 name-the-process-when-notverified-bar；反模式 process-when-notverified-sold-as-bundled；L10.3 第 828 条。填 L4.4 / CometBFT 档案 非验证者可以立刻回 ACCEPT not already verified this block / not already validators can skip / not already settled 正式三事（354 余量）。354 process-when vs later bundled unbundling 完成（859 item 3）。
