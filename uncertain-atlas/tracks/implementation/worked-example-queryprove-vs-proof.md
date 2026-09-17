@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见勾了 prove 就已经对上 AppHash、已经是按键查、已经是请求高度」，必须分开 Query 请求 prove 是能回就回默克尔证明是不是已经对上 AppHash、Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明是不是已经是按键查、Query 回包 height 是数据来自哪一高是不是已经是请求高度。可以跳过「看见勾了 prove 就已经对上 AppHash」。不要另写怎样写 Query 证明回包。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见勾了 prove 就已经对上 AppHash、已经是按键查、已经是请求高度」，必须分开 Query 请求 prove 是能回就回默克尔证明是不是已经对上 AppHash、Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明是不是已经是按键查、Query 回包 height 是数据来自哪一高是不是已经是请求高度。可以跳过「看见勾了 prove 就已经对上 AppHash」。不要另写怎样写 Query 证明回包。383 queryprove vs proof bundled unbundling 完成（779 item 1 / 780 item 2 / 781 item 3）；精读 [`worked-example-queryprove-notapphash-vs-bundled.md`](worked-example-queryprove-notapphash-vs-bundled.md)（不变量 779 item 1）。
 
 ## 本页不抄
 

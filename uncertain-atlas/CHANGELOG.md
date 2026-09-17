@@ -1,3 +1,15 @@
+## 2026-09-17（续 898）
+
+- 不变量 781；语料 C759；模式 name-the-queryprove-notreqh-bar；反模式 queryprove-notreqh-sold-as-bundled；L10.3 第 750 条。填 L4.4 / CometBFT 档案 Query 回包 height not already request height / not already fresh / not already header AppHash 正式三事（383 余量）。383 queryprove vs proof bundled unbundling 完成（781 item 3）。
+
+## 2026-09-17（续 897）
+
+- 不变量 780；语料 C758；模式 name-the-queryprove-notstore-bar；反模式 queryprove-notstore-sold-as-bundled；L10.3 第 749 条。填 L4.4 / CometBFT 档案 Query 回包 proof_ops not already key lookup / not already AppHash matched / not already settled 正式三事（383 余量）。383 queryprove vs proof bundled unbundling 续（780 item 2）。
+
+## 2026-09-17（续 896）
+
+- 不变量 779；语料 C757；模式 name-the-queryprove-notapphash-bar；反模式 queryprove-notapphash-sold-as-bundled；L10.3 第 748 条。填 L4.4 / CometBFT 档案 Query 请求 prove not already AppHash matched / not already one-layer tree / not already settled 正式三事（383 余量）。383 queryprove vs proof bundled unbundling 启动（779 item 1）。
+
 ## 2026-09-17（续 895）
 
 - 不变量 778；语料 C756；模式 name-the-querycode-notkey-bar；反模式 querycode-notkey-sold-as-bundled；L10.3 第 747 条。填 L4.4 / CometBFT 档案 Query 回包 info not already key lookup / not already AppHash matched / not already settled 正式三事（384 余量）。384 querycode vs consensus bundled unbundling 完成（778 item 3）。

@@ -1,3 +1,6 @@
+- [`queryprove-notreqh-sold-as-bundled.md`](queryprove-notreqh-sold-as-bundled.md) — height 被写成已经是请求高度 / 已经新鲜 / 已经印进本头 AppHash（不变量 781）
+- [`queryprove-notstore-sold-as-bundled.md`](queryprove-notstore-sold-as-bundled.md) — proof_ops 被写成已经是按键查 / 已经对上 AppHash / 已经交差（不变量 780）
+- [`queryprove-notapphash-sold-as-bundled.md`](queryprove-notapphash-sold-as-bundled.md) — prove 被写成已经对上 AppHash / 已经是一层树 / 已经交差（不变量 779）
 - [`querycode-notkey-sold-as-bundled.md`](querycode-notkey-sold-as-bundled.md) — info 被写成已经是按键查 / 已经对上 AppHash / 已经交差（不变量 778）
 - [`querycode-notfresh-sold-as-bundled.md`](querycode-notfresh-sold-as-bundled.md) — log 被写成已经新鲜 / 已经复制到各节点 / 已经交差（不变量 777）
 - [`querycode-notconsensus-sold-as-bundled.md`](querycode-notconsensus-sold-as-bundled.md) — code 被写成已经过了共识 / 已经是 CheckTx 那种拒广播 / 已经交差（不变量 776）

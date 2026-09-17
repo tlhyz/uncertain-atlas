@@ -1,3 +1,6 @@
+- [`name-the-queryprove-notreqh-bar.md`](name-the-queryprove-notreqh-bar.md) — Query 回包 height not already request height / not already fresh / not already header AppHash 正式三事（383 余量）（不变量 781）
+- [`name-the-queryprove-notstore-bar.md`](name-the-queryprove-notstore-bar.md) — Query 回包 proof_ops not already key lookup / not already AppHash matched / not already settled 正式三事（383 余量）（不变量 780）
+- [`name-the-queryprove-notapphash-bar.md`](name-the-queryprove-notapphash-bar.md) — Query 请求 prove not already AppHash matched / not already one-layer tree / not already settled 正式三事（383 余量）（不变量 779）
 - [`name-the-querycode-notkey-bar.md`](name-the-querycode-notkey-bar.md) — Query 回包 info not already key lookup / not already AppHash matched / not already settled 正式三事（384 余量）（不变量 778）
 - [`name-the-querycode-notfresh-bar.md`](name-the-querycode-notfresh-bar.md) — Query 回包 log not already fresh / not already replicated / not already settled 正式三事（384 余量）（不变量 777）
 - [`name-the-querycode-notconsensus-bar.md`](name-the-querycode-notconsensus-bar.md) — Query 回包 code not already past consensus / not already CheckTx reject-broadcast / not already settled 正式三事（384 余量）（不变量 776）

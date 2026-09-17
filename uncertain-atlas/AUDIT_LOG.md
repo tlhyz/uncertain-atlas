@@ -1,3 +1,18 @@
+| A3665 | 记录 | 会与 383 / 371 / 779 / 780 糊成「看见回了高度就已经是请求高度 interchangeable、就已经新鲜 interchangeable、就已经印进本头 AppHash interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 height not already request height / not already fresh / not already header AppHash 正式三事（383 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。383 queryprove vs proof bundled unbundling 完成（781 item 3） |
+| A3666 | 高 | 看见 Query 回包 height 会被写成已经是请求高度 interchangeable | 官方 Query 证明回包 item 3：not already request height |
+| A3667 | 高 | 看见回了高度 会被写成已经新鲜 interchangeable | 官方 Query 证明回包 item 3：not already fresh |
+| A3668 | 高 | 看见是含 Merkle 根的那块 会被写成已经印进本头 AppHash interchangeable | 官方 Query 证明回包 item 3：not already header AppHash |
+| A3669 | 中 | 怎样写 Query 证明回包 会被抄进不确定 | 不抄。不写怎样写 Query 证明回包。不另写 19 节 |
+| A3660 | 记录 | 会与 383 / 380 / 390 / 744 / 384 / 778 / 779 / 781 糊成「看见回了证明就已经是按键查 interchangeable、就已经对上 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 proof_ops not already key lookup / not already AppHash matched / not already settled 正式三事（383 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。383 queryprove vs proof bundled unbundling 续（780 item 2） |
+| A3661 | 高 | 看见 Query 回包 proof_ops 会被写成已经是按键查 interchangeable | 官方 Query 证明回包 item 2：not already key lookup |
+| A3662 | 高 | 看见回了证明 会被写成已经对上 AppHash interchangeable / 380 interchangeable | 官方 Query 证明回包 item 2：not already AppHash matched / not 380 |
+| A3663 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 Query 证明回包 item 2：not already settled |
+| A3664 | 中 | 怎样写 Query 证明回包 会被抄进不确定 | 不抄。不写怎样写 Query 证明回包。不另写 19 节 |
+| A3655 | 记录 | 会与 383 / 325 / 780 / 781 糊成「看见勾了 prove 就已经对上 AppHash interchangeable、就已经是一层树 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 请求 prove not already AppHash matched / not already one-layer tree / not already settled 正式三事（383 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。383 queryprove vs proof bundled unbundling 启动（779 item 1） |
+| A3656 | 高 | 看见 Query 请求 prove 会被写成已经对上 AppHash interchangeable / 325 interchangeable | 官方 Query 证明回包 item 1：not already AppHash matched / not 325 |
+| A3657 | 高 | 看见勾了 prove 会被写成已经是一层树 interchangeable | 官方 Query 证明回包 item 1：not already one-layer tree |
+| A3658 | 高 | 看见请求了 会被写成已经交差 interchangeable | 官方 Query 证明回包 item 1：not already settled |
+| A3659 | 中 | 怎样写 Query 证明回包 会被抄进不确定 | 不抄。不写怎样写 Query 证明回包。不另写 19 节 |
 | A3650 | 记录 | 会与 384 / 380 / 391 / 754 / 414 / 759 / 776 / 777 糊成「看见回了信息就已经是按键查 interchangeable、就已经对上 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 info not already key lookup / not already AppHash matched / not already settled 正式三事（384 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。384 querycode vs consensus bundled unbundling 完成（778 item 3） |
 | A3651 | 高 | 看见 Query 回包 info 会被写成已经是按键查 interchangeable | 官方 Query 回包码 item 3：not already key lookup |
 | A3652 | 高 | 看见回了信息 会被写成已经对上 AppHash interchangeable / 380 interchangeable | 官方 Query 回包码 item 3：not already AppHash matched / not 380 |
