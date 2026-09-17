@@ -1,3 +1,15 @@
+## 2026-09-17（续 1159）
+
+- 不变量 1042；语料 C1020；模式 name-the-finreqcol-notexec-bar；反模式 finreqcol-notexec-sold-as-bundled；L10.3 第 1011 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.txs not already executed / not already process-txs / not already settled 正式三事（422 余量）。422 finreq vs procreq bundled unbundling 完成（1042 item 3）。
+
+## 2026-09-17（续 1158）
+
+- 不变量 1041；语料 C1019；模式 name-the-finreqcol-nothead-bar；反模式 finreqcol-nothead-sold-as-bundled；L10.3 第 1010 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.height not already header-aligned / not already processed / not already settled 正式三事（422 余量）。422 finreq vs procreq bundled unbundling 续（1041 item 2）。
+
+## 2026-09-17（续 1157）
+
+- 不变量 1040；语料 C1018；模式 name-the-finreqcol-notlocal-bar；反模式 finreqcol-notlocal-sold-as-bundled；L10.3 第 1009 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.decided_last_commit not already local / not already rewarded / not already settled 正式三事（422 余量）。422 finreq vs procreq bundled unbundling 启动（1040 item 1）。
+
 ## 2026-09-17（续 1156）
 
 - 不变量 1039；语料 C1017；模式 name-the-extmis-notkey-bar；反模式 extmis-notkey-sold-as-bundled；L10.3 第 1008 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.validator_address not already has-key / not already can-verify / not already settled 正式三事（413 余量）。413 extreqmis vs reward bundled unbundling 完成（1039 item 3）。

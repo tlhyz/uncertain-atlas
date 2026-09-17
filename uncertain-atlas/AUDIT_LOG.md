@@ -1,3 +1,18 @@
+| A4970 | 记录 | 会与 422 / 408 / 411 / 419 / 1040 / 1041 糊成「看见 FinalizeBlockRequest.txs 就已经执行那些交易 interchangeable、就已经是 Process txs interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.txs not already executed / not already process-txs / not already settled 正式三事（422 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。422 finreq vs procreq bundled unbundling 完成（1042 item 3） |
+| A4971 | 高 | 看见填了 txs 会被写成已经执行那些交易 interchangeable / 408 interchangeable | 官方 Finalize 请求栏 item 3：not already executed / not 408 |
+| A4972 | 高 | 看见有交易列表 会被写成已经是 ProcessProposalRequest.txs interchangeable | 官方 Finalize 请求栏 item 3：not already process-txs |
+| A4973 | 高 | 看见能指交易 会被写成已经交差 interchangeable | 官方 Finalize 请求栏 item 3：not already settled |
+| A4974 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Finalize 请求栏。不另写 19 节 |
+| A4965 | 记录 | 会与 422 / 419 / 1040 / 1042 糊成「看见 FinalizeBlockRequest.height 就已经对上了拟议块头 interchangeable、就已经跑过 Process interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.height not already header-aligned / not already processed / not already settled 正式三事（422 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。422 finreq vs procreq bundled unbundling 续（1041 item 2） |
+| A4966 | 高 | 看见填了 height 会被写成已经对上了拟议块头 interchangeable / 419 interchangeable | 官方 Finalize 请求栏 item 2：not already header-aligned / not 419 |
+| A4967 | 高 | 看见有已决块高度 会被写成已经字段名对上就已经跑过 Process interchangeable | 官方 Finalize 请求栏 item 2：not already processed |
+| A4968 | 高 | 看见能指高度 会被写成已经交差 interchangeable | 官方 Finalize 请求栏 item 2：not already settled |
+| A4969 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Finalize 请求栏。不另写 19 节 |
+| A4960 | 记录 | 会与 422 / 420 / 363 / 1041 / 1042 糊成「看见 FinalizeBlockRequest.decided_last_commit 就已经交差 local_last_commit interchangeable、就已经定奖惩 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.decided_last_commit not already local / not already rewarded / not already settled 正式三事（422 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。422 finreq vs procreq bundled unbundling 启动（1040 item 1） |
+| A4961 | 高 | 看见填了 decided_last_commit 会被写成已经交差 local_last_commit interchangeable / 420 interchangeable | 官方 Finalize 请求栏 item 1：not already local / not 420 |
+| A4962 | 高 | 看见从刚决定那块拿到 会被写成已经定奖惩 interchangeable / 363 interchangeable | 官方 Finalize 请求栏 item 1：not already rewarded / not 363 |
+| A4963 | 高 | 看见能指上一份提交 会被写成已经交差 interchangeable | 官方 Finalize 请求栏 item 1：not already settled |
+| A4964 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Finalize 请求栏。不另写 19 节 |
 | A4955 | 记录 | 会与 413 / 364 / 353 / 1037 / 1038 糊成「看见 VerifyVoteExtensionRequest.validator_address 就已经带了公钥 interchangeable、就已经能验签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.validator_address not already has-key / not already can-verify / not already settled 正式三事（413 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。413 extreqmis vs reward bundled unbundling 完成（1039 item 3） |
 | A4956 | 高 | 看见填了 validator_address 会被写成已经带了公钥 interchangeable | 官方 ExtendVote 请求末栏 item 3：not already has-key |
 | A4957 | 高 | 看见能指签扩展的人 会被写成已经能验签 interchangeable | 官方 ExtendVote 请求末栏 item 3：not already can-verify |

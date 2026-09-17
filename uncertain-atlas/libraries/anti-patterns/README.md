@@ -1,3 +1,6 @@
+- [`finreqcol-notexec-sold-as-bundled.md`](finreqcol-notexec-sold-as-bundled.md) — txs 被写成已经执行那些交易 / 已经是 Process txs / 已经交差（不变量 1042）
+- [`finreqcol-nothead-sold-as-bundled.md`](finreqcol-nothead-sold-as-bundled.md) — height 被写成已经对上了拟议块头 / 已经跑过 Process / 已经交差（不变量 1041）
+- [`finreqcol-notlocal-sold-as-bundled.md`](finreqcol-notlocal-sold-as-bundled.md) — decided_last_commit 被写成已经交差 local_last_commit / 已经定奖惩 / 已经交差（不变量 1040）
 - [`extmis-notkey-sold-as-bundled.md`](extmis-notkey-sold-as-bundled.md) — validator_address 被写成已经带了公钥 / 已经能验签 / 已经交差（不变量 1039）
 - [`extmis-notheader-sold-as-bundled.md`](extmis-notheader-sold-as-bundled.md) — proposer_address 被写成已经知道本头哈希 / 已经跑过 Process / 已经交差（不变量 1038）
 - [`extmis-notpunish-sold-as-bundled.md`](extmis-notpunish-sold-as-bundled.md) — misbehavior 被写成已经定奖惩 / 已经交差 / 已经罚没（不变量 1037）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 请求栏就已经交差 local_last_commit、已经对上了拟议块头、已经执行那些交易」，必须分开 FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息是不是已经交差 local_last_commit、FinalizeBlockRequest.height 是已决块的高度是不是已经对上了拟议块头、FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表是不是已经执行那些交易。可以跳过「看见填了 Finalize 请求栏就已经交差 local_last_commit」。不要另写怎样写 Finalize 请求栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 请求栏就已经交差 local_last_commit、已经对上了拟议块头、已经执行那些交易」，必须分开 FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息是不是已经交差 local_last_commit、FinalizeBlockRequest.height 是已决块的高度是不是已经对上了拟议块头、FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表是不是已经执行那些交易。可以跳过「看见填了 Finalize 请求栏就已经交差 local_last_commit」。不要另写怎样写 Finalize 请求栏。422 finreq vs procreq bundled unbundling 完成（1040 item 1 / 1041 item 2 / 1042 item 3）；精读 [`worked-example-finreqcol-notlocal-vs-bundled.md`](worked-example-finreqcol-notlocal-vs-bundled.md)（不变量 1040 item 1）。
 
 ## 本页不抄
 

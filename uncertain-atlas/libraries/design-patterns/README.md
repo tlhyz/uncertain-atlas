@@ -1,3 +1,6 @@
+- [`name-the-finreqcol-notexec-bar.md`](name-the-finreqcol-notexec-bar.md) — FinalizeBlockRequest.txs not already executed / not already process-txs / not already settled 正式三事（422 余量）（不变量 1042）
+- [`name-the-finreqcol-nothead-bar.md`](name-the-finreqcol-nothead-bar.md) — FinalizeBlockRequest.height not already header-aligned / not already processed / not already settled 正式三事（422 余量）（不变量 1041）
+- [`name-the-finreqcol-notlocal-bar.md`](name-the-finreqcol-notlocal-bar.md) — FinalizeBlockRequest.decided_last_commit not already local / not already rewarded / not already settled 正式三事（422 余量）（不变量 1040）
 - [`name-the-extmis-notkey-bar.md`](name-the-extmis-notkey-bar.md) — VerifyVoteExtensionRequest.validator_address not already has-key / not already can-verify / not already settled 正式三事（413 余量）（不变量 1039）
 - [`name-the-extmis-notheader-bar.md`](name-the-extmis-notheader-bar.md) — ExtendVoteRequest.proposer_address not already header-known / not already processed / not already settled 正式三事（413 余量）（不变量 1038）
 - [`name-the-extmis-notpunish-bar.md`](name-the-extmis-notpunish-bar.md) — ExtendVoteRequest.misbehavior not already rewarded / not already settled / not already slashed 正式三事（413 余量）（不变量 1037）
