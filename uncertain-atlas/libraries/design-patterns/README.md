@@ -1,3 +1,6 @@
+- [`name-the-abci-conn-notgates-bar.md`](name-the-abci-conn-notgates-bar.md) — 一条连接 not already enough / not already four-gates / not already settled 正式三事（307 余量）（不变量 979）
+- [`name-the-abci-conn-notfast-bar.md`](name-the-abci-conn-notfast-bar.md) — gRPC 最容易 not already fast / not already no-overhead / not already settled 正式三事（307 余量）（不变量 978）
+- [`name-the-abci-conn-notsock-bar.md`](name-the-abci-conn-notsock-bar.md) — 同进程 not already socket-isolated / not already other-transport / not already settled 正式三事（307 余量）（不变量 977）
 - [`name-the-commit-lock-notbcast-bar.md`](name-the-commit-lock-notbcast-bar.md) — Commit 里等广播 not already proceeding / not already allowed / not already settled 正式三事（310 余量）（不变量 976）
 - [`name-the-commit-lock-notunlock-bar.md`](name-the-commit-lock-notunlock-bar.md) — Commit 前上锁 not already unlocked / not already updated / not already settled 正式三事（310 余量）（不变量 975）
 - [`name-the-commit-lock-notrpc-bar.md`](name-the-commit-lock-notrpc-bar.md) — 默认锁 not already RPC-safe / not already no-concurrency / not already settled 正式三事（310 余量）（不变量 974）

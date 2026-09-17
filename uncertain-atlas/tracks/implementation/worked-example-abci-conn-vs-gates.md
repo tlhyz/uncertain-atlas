@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「ABCI 已经接上」，必须分开同进程是不是已经隔离、gRPC 是不是已经快、一条连接是不是已经够用，也不是已经是四门。可以跳过「看见应用已经接上就已经是四门」。不要另写怎样开套接字或怎样编 protobuf。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「ABCI 已经接上」，必须分开同进程是不是已经隔离、gRPC 是不是已经快、一条连接是不是已经够用，也不是已经是四门。可以跳过「看见应用已经接上就已经是四门」。不要另写怎样开套接字或怎样编 protobuf。307 abci-conn vs gates bundled unbundling 完成（977 item 1 / 978 item 2 / 979 item 3）；精读 [`worked-example-abci-conn-notsock-vs-bundled.md`](worked-example-abci-conn-notsock-vs-bundled.md)（不变量 977 item 1）。
 
 ## 本页不抄
 

@@ -119,6 +119,9 @@
 - [`worked-example-wal-vs-signed.md`](worked-example-wal-vs-signed.md) — 写下每条消息 ≠ 已经 fsync；回放时又要签 ≠ 已经双签；LastSignBytes 对上 ≠ 已经换了高度（不变量 298）
 - [`worked-example-state-vs-gossip.md`](worked-example-state-vs-gossip.md) — 本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State；能读本地 State ≠ 已经进了规范（不变量 300）
 - [`worked-example-genesis-vs-app.md`](worked-example-genesis-vs-app.md) — 创世 app_state ≠ 已经验过应用状态；进程起来 ≠ 已经过了 genesis_time；空 validators ≠ 已经没有集合（不变量 303）
+- [`worked-example-abci-conn-notgates-vs-bundled.md`](worked-example-abci-conn-notgates-vs-bundled.md) — 一条连接≠already enough/four-gates/settled；≠307 bundled（不变量 979）
+- [`worked-example-abci-conn-notfast-vs-bundled.md`](worked-example-abci-conn-notfast-vs-bundled.md) — gRPC最容易≠already fast/no-overhead/settled；≠307 bundled（不变量 978）
+- [`worked-example-abci-conn-notsock-vs-bundled.md`](worked-example-abci-conn-notsock-vs-bundled.md) — 同进程≠already socket-isolated/other-transport/settled；≠307 bundled（不变量 977）
 - [`worked-example-abci-conn-vs-gates.md`](worked-example-abci-conn-vs-gates.md) — 同进程 ≠ 已经有套接字隔离；gRPC 最容易 ≠ 已经高性能；一条连接 ≠ 已经够用，也不是已经是四门（不变量 307）
 - [`worked-example-commit-lock-notbcast-vs-bundled.md`](worked-example-commit-lock-notbcast-vs-bundled.md) — Commit里等广播≠already proceeding/allowed/settled；≠310 bundled（不变量 976）
 - [`worked-example-commit-lock-notunlock-vs-bundled.md`](worked-example-commit-lock-notunlock-vs-bundled.md) — Commit前上锁≠already unlocked/updated/settled；≠310 bundled（不变量 975）

@@ -1,3 +1,15 @@
+## 2026-09-17（续 1096）
+
+- 不变量 979；语料 C957；模式 name-the-abci-conn-notgates-bar；反模式 abci-conn-notgates-sold-as-bundled；L10.3 第 948 条。填 L4.4 / CometBFT 档案 一条连接 not already enough / not already four-gates / not already settled 正式三事（307 余量）。307 abci-conn vs gates bundled unbundling 完成（979 item 3）。
+
+## 2026-09-17（续 1095）
+
+- 不变量 978；语料 C956；模式 name-the-abci-conn-notfast-bar；反模式 abci-conn-notfast-sold-as-bundled；L10.3 第 947 条。填 L4.4 / CometBFT 档案 gRPC 最容易 not already fast / not already no-overhead / not already settled 正式三事（307 余量）。307 abci-conn vs gates bundled unbundling 续（978 item 2）。
+
+## 2026-09-17（续 1094）
+
+- 不变量 977；语料 C955；模式 name-the-abci-conn-notsock-bar；反模式 abci-conn-notsock-sold-as-bundled；L10.3 第 946 条。填 L4.4 / CometBFT 档案 同进程 not already socket-isolated / not already other-transport / not already settled 正式三事（307 余量）。307 abci-conn vs gates bundled unbundling 启动（977 item 1）。
+
 ## 2026-09-17（续 1093）
 
 - 不变量 976；语料 C954；模式 name-the-commit-lock-notbcast-bar；反模式 commit-lock-notbcast-sold-as-bundled；L10.3 第 945 条。填 L4.4 / CometBFT 档案 Commit 里等广播 not already proceeding / not already allowed / not already settled 正式三事（310 余量）。310 commit-lock vs rpc bundled unbundling 完成（976 item 3）。

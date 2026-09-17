@@ -1,3 +1,18 @@
+| A4655 | 记录 | 会与 307 / 33 / 367 / 977 / 978 糊成「看见一条连接就已经够用 interchangeable、就已经是四门 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 一条连接 not already enough / not already four-gates / not already settled 正式三事（307 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。307 abci-conn vs gates bundled unbundling 完成（979 item 3） |
+| A4656 | 高 | 看见一条连接 会被写成已经够用 interchangeable | 官方 Client and Server item 3：not already enough |
+| A4657 | 高 | 看见四条连接 会被写成已经是四门 interchangeable | 官方 Client and Server item 3：not already four-gates |
+| A4658 | 高 | 看见客户端 会被写成已经交差 interchangeable | 官方 Client and Server item 3：not already settled |
+| A4659 | 中 | 怎样开套接字会被抄进不确定 | 不抄。不写怎样开套接字或怎样编 protobuf。不另写 19 节 |
+| A4650 | 记录 | 会与 307 / 52 / 334 / 977 / 979 糊成「看见最容易就已经快 interchangeable、就已经没有开销 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 gRPC 最容易 not already fast / not already no-overhead / not already settled 正式三事（307 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。307 abci-conn vs gates bundled unbundling 续（978 item 2） |
+| A4651 | 高 | 看见 gRPC 最容易 会被写成已经快 interchangeable | 官方 Client and Server item 2：not already fast |
+| A4652 | 高 | 看见能回话 会被写成已经没有开销 interchangeable | 官方 Client and Server item 2：not already no-overhead |
+| A4653 | 高 | 看见套接字那套前缀 会被写成已经交差 interchangeable | 官方 Client and Server item 2：not already settled |
+| A4654 | 中 | 怎样开套接字会被抄进不确定 | 不抄。不写怎样开套接字或怎样编 protobuf。不另写 19 节 |
+| A4645 | 记录 | 会与 307 / 5 / 310 / 978 / 979 糊成「看见同进程就已经隔离 interchangeable、就已经是另一条传输 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 同进程 not already socket-isolated / not already other-transport / not already settled 正式三事（307 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。307 abci-conn vs gates bundled unbundling 启动（977 item 1） |
+| A4646 | 高 | 看见同进程 会被写成已经隔离 interchangeable / 5 interchangeable | 官方 Client and Server item 1：not already socket-isolated / not 5 |
+| A4647 | 高 | 看见一个进程 会被写成已经是另一条传输 interchangeable | 官方 Client and Server item 1：not already other-transport |
+| A4648 | 高 | 看见链在一起 会被写成已经交差 interchangeable | 官方 Client and Server item 1：not already settled |
+| A4649 | 中 | 怎样开套接字会被抄进不确定 | 不抄。不写怎样开套接字或怎样编 protobuf。不另写 19 节 |
 | A4640 | 记录 | 会与 310 / 301 / 33 / 974 / 975 糊成「看见等广播就已经能往下走 interchangeable、就已经允许 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit 里等广播 not already proceeding / not already allowed / not already settled 正式三事（310 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。310 commit-lock vs rpc bundled unbundling 完成（976 item 3） |
 | A4641 | 高 | 看见 Commit 里等广播 会被写成已经能往下走 interchangeable | 官方 Commit lock item 3：not already proceeding |
 | A4642 | 高 | 看见能调广播 会被写成已经允许 interchangeable | 官方 Commit lock item 3：not already allowed |

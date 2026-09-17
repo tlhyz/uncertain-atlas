@@ -1,3 +1,6 @@
+- [`abci-conn-notgates-sold-as-bundled.md`](abci-conn-notgates-sold-as-bundled.md) — 一条连接 被写成已经够用 / 已经是四门 / 已经交差（不变量 979）
+- [`abci-conn-notfast-sold-as-bundled.md`](abci-conn-notfast-sold-as-bundled.md) — gRPC 最容易 被写成已经快 / 已经没有开销 / 已经交差（不变量 978）
+- [`abci-conn-notsock-sold-as-bundled.md`](abci-conn-notsock-sold-as-bundled.md) — 同进程 被写成已经隔离 / 已经是另一条传输 / 已经交差（不变量 977）
 - [`commit-lock-notbcast-sold-as-bundled.md`](commit-lock-notbcast-sold-as-bundled.md) — Commit 里等广播 被写成已经能往下走 / 已经允许 / 已经交差（不变量 976）
 - [`commit-lock-notunlock-sold-as-bundled.md`](commit-lock-notunlock-sold-as-bundled.md) — Commit 前上锁 被写成已经解锁 / 已经更新完 / 已经交差（不变量 975）
 - [`commit-lock-notrpc-sold-as-bundled.md`](commit-lock-notrpc-sold-as-bundled.md) — 默认锁 被写成已经 RPC 安全 / 已经没有并发假设 / 已经交差（不变量 974）

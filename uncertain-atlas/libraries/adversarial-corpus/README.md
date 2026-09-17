@@ -1,3 +1,9 @@
+| C957 | 979 | abci-conn notgates≠33/307 | 文案把一条连接 / 四条连接 写成已经够用 interchangeable 或已经和 33 interchangeable / 979 abci-conn-notgates interchangeable；或把看见四条连接 写成已经是四门 interchangeable；或把看见客户端 写成已经交差 interchangeable，或已经和 307 abci-conn-vs-gates bundled / abci-conn-notgates-sold-as-bundled interchangeable / 977 abci-conn-notsock interchangeable / 978 abci-conn-notfast interchangeable |
+
+| C956 | 978 | abci-conn notfast≠52/307 | 文案把 gRPC 最容易 / 能回话 写成已经快 interchangeable 或已经和 52 interchangeable / 978 abci-conn-notfast interchangeable；或把看见能回话 写成已经没有开销 interchangeable；或把看见套接字那套前缀 写成已经交差 interchangeable，或已经和 307 abci-conn-vs-gates bundled / abci-conn-notfast-sold-as-bundled interchangeable / 977 abci-conn-notsock interchangeable / 979 abci-conn-notgates interchangeable |
+
+| C955 | 977 | abci-conn notsock≠5/307 | 文案把同进程 / 编进同一个二进制 写成已经隔离 interchangeable 或已经和 5 interchangeable / 977 abci-conn-notsock interchangeable；或把看见一个进程 写成已经是另一条传输 interchangeable；或把看见链在一起 写成已经交差 interchangeable，或已经和 307 abci-conn-vs-gates bundled / abci-conn-notsock-sold-as-bundled interchangeable / 978 abci-conn-notfast interchangeable / 979 abci-conn-notgates interchangeable |
+
 | C954 | 976 | commit-lock notbcast≠301/310 | 文案把 Commit 里等广播 / 能调广播 写成已经能往下走 interchangeable 或已经和 301 interchangeable / 976 commit-lock-notbcast interchangeable；或把看见能调广播 写成已经允许 interchangeable；或把看见同步内存池调用 写成已经交差 interchangeable，或已经和 310 commit-lock-vs-rpc bundled / commit-lock-notbcast-sold-as-bundled interchangeable / 974 commit-lock-notrpc interchangeable / 975 commit-lock-notunlock interchangeable |
 
 | C953 | 975 | commit-lock notunlock≠5/310 | 文案把 Commit 前上锁 / 能一起更新 写成已经解锁 interchangeable 或已经和 5 interchangeable / 975 commit-lock-notunlock interchangeable；或把看见能一起更新 写成已经更新完 interchangeable；或把看见 Commit 回了 写成已经交差 interchangeable，或已经和 310 commit-lock-vs-rpc bundled / commit-lock-notunlock-sold-as-bundled interchangeable / 974 commit-lock-notrpc interchangeable / 976 commit-lock-notbcast interchangeable |
