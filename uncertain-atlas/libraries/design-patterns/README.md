@@ -1,3 +1,6 @@
+- [`name-the-queryindex-notapphash-bar.md`](name-the-queryindex-notapphash-bar.md) — Query 回包 value not already AppHash matched / not already replicated / not already settled 正式三事（380 余量）（不变量 790）
+- [`name-the-queryindex-notheight-bar.md`](name-the-queryindex-notheight-bar.md) — Query 回包 key not already Query height / not already fresh / not already settled 正式三事（380 余量）（不变量 789）
+- [`name-the-queryindex-notstore-bar.md`](name-the-queryindex-notstore-bar.md) — Query 回包 index not already key lookup / not already AppHash matched / not already settled 正式三事（380 余量）（不变量 788）
 - [`name-the-checktxspace-notlane-bar.md`](name-the-checktxspace-notlane-bar.md) — CheckTx lane_id not already no-lane / not already prioritized / not already in-block 正式三事（381 余量）（不变量 787）
 - [`name-the-checktxspace-notsettled-bar.md`](name-the-checktxspace-notsettled-bar.md) — CheckTx 回包 events not already settled / not already not-in-block / not already consensus order 正式三事（381 余量）（不变量 786）
 - [`name-the-checktxspace-notcode-bar.md`](name-the-checktxspace-notcode-bar.md) — CheckTx 回包 codespace not already response code / not already not-in-block / not already settled 正式三事（381 余量）（不变量 785）

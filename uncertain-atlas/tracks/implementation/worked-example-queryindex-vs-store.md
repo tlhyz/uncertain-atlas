@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Query 回了键值就已经是按键查、已经是 Query 高度、已经对上 AppHash」，必须分开 Query 回包 index 是树里这个键的下标是不是已经是按键查、Query 回包 key 是对上的那份数据的键是不是已经是 Query 高度、Query 回包 value 是对上的那份数据的值是不是已经对上 AppHash。可以跳过「看见 Query 回了键值就已经是按键查」。不要另写怎样写 Query 回包。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Query 回了键值就已经是按键查、已经是 Query 高度、已经对上 AppHash」，必须分开 Query 回包 index 是树里这个键的下标是不是已经是按键查、Query 回包 key 是对上的那份数据的键是不是已经是 Query 高度、Query 回包 value 是对上的那份数据的值是不是已经对上 AppHash。可以跳过「看见 Query 回了键值就已经是按键查」。不要另写怎样写 Query 回包。380 queryindex vs store bundled unbundling 完成（788 item 1 / 789 item 2 / 790 item 3）；精读 [`worked-example-queryindex-notstore-vs-bundled.md`](worked-example-queryindex-notstore-vs-bundled.md)（不变量 788 item 1）。
 
 ## 本页不抄
 

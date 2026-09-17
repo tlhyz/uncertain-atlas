@@ -1,3 +1,15 @@
+## 2026-09-17（续 907）
+
+- 不变量 790；语料 C768；模式 name-the-queryindex-notapphash-bar；反模式 queryindex-notapphash-sold-as-bundled；L10.3 第 759 条。填 L4.4 / CometBFT 档案 Query 回包 value not already AppHash matched / not already replicated / not already settled 正式三事（380 余量）。380 queryindex vs store bundled unbundling 完成（790 item 3）。
+
+## 2026-09-17（续 906）
+
+- 不变量 789；语料 C767；模式 name-the-queryindex-notheight-bar；反模式 queryindex-notheight-sold-as-bundled；L10.3 第 758 条。填 L4.4 / CometBFT 档案 Query 回包 key not already Query height / not already fresh / not already settled 正式三事（380 余量）。380 queryindex vs store bundled unbundling 续（789 item 2）。
+
+## 2026-09-17（续 905）
+
+- 不变量 788；语料 C766；模式 name-the-queryindex-notstore-bar；反模式 queryindex-notstore-sold-as-bundled；L10.3 第 757 条。填 L4.4 / CometBFT 档案 Query 回包 index not already key lookup / not already AppHash matched / not already settled 正式三事（380 余量）。380 queryindex vs store bundled unbundling 启动（788 item 1）。
+
 ## 2026-09-17（续 904）
 
 - 不变量 787；语料 C765；模式 name-the-checktxspace-notlane-bar；反模式 checktxspace-notlane-sold-as-bundled；L10.3 第 756 条。填 L4.4 / CometBFT 档案 CheckTx lane_id not already no-lane / not already prioritized / not already in-block 正式三事（381 余量）。381 checktxspace vs code bundled unbundling 完成（787 item 3）。

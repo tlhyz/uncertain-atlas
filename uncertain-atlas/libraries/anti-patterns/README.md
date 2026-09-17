@@ -1,3 +1,6 @@
+- [`queryindex-notapphash-sold-as-bundled.md`](queryindex-notapphash-sold-as-bundled.md) — value 被写成已经对上 AppHash / 已经复制到各节点 / 已经交差（不变量 790）
+- [`queryindex-notheight-sold-as-bundled.md`](queryindex-notheight-sold-as-bundled.md) — key 被写成已经是 Query 高度 / 已经新鲜 / 已经交差（不变量 789）
+- [`queryindex-notstore-sold-as-bundled.md`](queryindex-notstore-sold-as-bundled.md) — index 被写成已经是按键查 / 已经对上 AppHash / 已经交差（不变量 788）
 - [`checktxspace-notlane-sold-as-bundled.md`](checktxspace-notlane-sold-as-bundled.md) — lane_id 被写成已经不设道 / 已经排了优先 / 已经进了块（不变量 787）
 - [`checktxspace-notsettled-sold-as-bundled.md`](checktxspace-notsettled-sold-as-bundled.md) — events 被写成已经交差 / 已经没进块 / 已经是共识顺序（不变量 786）
 - [`checktxspace-notcode-sold-as-bundled.md`](checktxspace-notcode-sold-as-bundled.md) — codespace 被写成已经是回包码 / 已经没进块 / 已经交差（不变量 785）
