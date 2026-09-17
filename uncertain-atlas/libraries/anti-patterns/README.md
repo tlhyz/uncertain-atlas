@@ -1,3 +1,4 @@
+- [`applysnapusage-notverify-sold-as-bundled.md`](applysnapusage-notverify-sold-as-bundled.md) — verify each chunk 被写成已经 Only AppHash 可信任就交差 / 已经 Snapshot Verification bundled / 已经 Result ACCEPT 就代表已经齐（不变量 653）
 - [`offersnaptrust-nottransition-sold-as-bundled.md`](offersnaptrust-nottransition-sold-as-bundled.md) — verified AppHash at end 被写成已经装块时就 Info 对了 / 已经切进共识 / 已经 Offer 装完（不变量 652）
 - [`offersnaptrust-notverify-sold-as-bundled.md`](offersnaptrust-notverify-sold-as-bundled.md) — Any other data can be spoofed 被写成已经 hash / metadata 比对就够 / 已经 Snapshot Verification bundled / 已经 reject_senders / refetch_chunks 防 DoS（不变量 651）
 - [`offersnaptrust-notmetadata-sold-as-bundled.md`](offersnaptrust-notmetadata-sold-as-bundled.md) — Only AppHash can be trusted 被写成已经 Snapshot 字段都可信 / 已经 hash 比对就够 / 已经 OfferSnapshot app_hash 填了（不变量 650）
