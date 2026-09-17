@@ -1,0 +1,248 @@
+# 横向：实现保证
+
+协议对，两台诚实机器仍可能算出两个世界。  
+目的 A：看见「绿勾」时能指出死的是哪一层。  
+目的 B：把确定性写成可测句子，而不是「我们写得很小心」。
+
+精读：
+
+- [`worked-example-encoding.md`](worked-example-encoding.md) — 意思一样、字节不一样
+- [`worked-example-crash.md`](worked-example-crash.md) — 写到一半断电
+- [`worked-example-wal-vs-signed.md`](worked-example-wal-vs-signed.md) — 写下每条消息 ≠ 已经 fsync；回放时又要签 ≠ 已经双签；LastSignBytes 对上 ≠ 已经换了高度（不变量 298）
+- [`worked-example-state-vs-gossip.md`](worked-example-state-vs-gossip.md) — 本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State；能读本地 State ≠ 已经进了规范（不变量 300）
+- [`worked-example-genesis-vs-app.md`](worked-example-genesis-vs-app.md) — 创世 app_state ≠ 已经验过应用状态；进程起来 ≠ 已经过了 genesis_time；空 validators ≠ 已经没有集合（不变量 303）
+- [`worked-example-abci-conn-vs-gates.md`](worked-example-abci-conn-vs-gates.md) — 同进程 ≠ 已经有套接字隔离；gRPC 最容易 ≠ 已经高性能；一条连接 ≠ 已经够用，也不是已经是四门（不变量 307）
+- [`worked-example-commit-lock-vs-rpc.md`](worked-example-commit-lock-vs-rpc.md) — 默认锁 ≠ 已经 RPC 安全；Commit 前上锁 ≠ 已经解锁；Commit 里等广播 ≠ 已经能往下走（不变量 310）
+- [`worked-example-candidate-vs-execute.md`](worked-example-candidate-vs-execute.md) — Prepare 没有头哈希 ≠ 已经知道本头；候选 ≠ 已经是 ExecuteTxState；丢掉 ≠ 已经永远不用再执行（不变量 311）
+- [`worked-example-checktxstate-vs-execute.md`](worked-example-checktxstate-vs-execute.md) — CheckTx 过了 ≠ 已经按 ExecuteTxState 验过；两份同时在改 ≠ 已经同一份；RECHECK ≠ 已经是新交易（不变量 312）
+- [`worked-example-mempool-indexer-vs-replay.md`](worked-example-mempool-indexer-vs-replay.md) — 内存池去重 ≠ 已经保证不重放；过了 CheckTx ≠ 已经有应用级保护；通常不受欢迎 ≠ 已经没有幂等例外（不变量 313）
+- [`worked-example-querystate-vs-execute.md`](worked-example-querystate-vs-execute.md) — QueryState ≠ 已经是 ExecuteTxState；上次 Commit ≠ 已经跟上正在跑的块；启动对齐 ≠ 已经是快照重放（不变量 314）
+- [`worked-example-maxgas-vs-enforced.md`](worked-example-maxgas-vs-enforced.md) — MaxGas ≠ 已经在执行；GasUsed ≠ 已经算进共识；已提交块 ≠ 已经按气验过（不变量 315）
+- [`worked-example-exectxresult-vs-consensus.md`](worked-example-exectxresult-vs-consensus.md) — 结果列表 ≠ 已经同一顺序；Code 非零 ≠ 已经没进块；Code / Data ≠ 已经印进本头（不变量 316）
+- [`worked-example-checktxresponse-vs-exec.md`](worked-example-checktxresponse-vs-exec.md) — CheckTx 的 Data ≠ 已经被引擎用了；各节点 Data 不一样 ≠ 已经分叉；Priority ≠ 已经是共识顺序（不变量 317）
+- [`worked-example-validatorupdate-vs-set.md`](worked-example-validatorupdate-vs-set.md) — InitChain 空名单 ≠ 已经没有集合；同一批重复公钥 ≠ 已经能恢复；power 0 ≠ 已经删掉不在集合里的人（不变量 318）
+- [`worked-example-consensusparams-vs-update.md`](worked-example-consensusparams-vs-update.md) — InitChain 空参数 ≠ 已经没有参数；Finalize 没回 ≠ 已经清掉；只改一个字段 ≠ 已经只改这一项（不变量 319）
+- [`worked-example-crash-steps-vs-commit.md`](worked-example-crash-steps-vs-commit.md) — 应用高度比引擎高 ≠ 已经允许；块进 store ≠ 已经 Commit；启动 Info 对上 ≠ 已经能跳步（不变量 320）
+- [`worked-example-snapshot-restore-vs-offer.md`](worked-example-snapshot-restore-vs-offer.md) — Offer 收下 ≠ 已经装完；一块 chunk 收下 ≠ 已经齐；拉失败换一份 ≠ 已经能接着装（不变量 321）
+- [`worked-example-snapshot-discover-vs-offer.md`](worked-example-snapshot-discover-vs-offer.md) — ListSnapshots 回了 ≠ 已经有了全部快照；挑了最高 ≠ 已经收下；Offer 被拒 ≠ 已经停（不变量 322）
+- [`worked-example-snapshot-switch-vs-history.md`](worked-example-snapshot-switch-vs-history.md) — 装完 ≠ 已经有了 ChainID；AppHash 对上 ≠ 已经版本也对上；切进共识 ≠ 已经有完整历史（不变量 323）
+- [`worked-example-snapshot-take-vs-commit.md`](worked-example-snapshot-take-vs-commit.md) — 拍了这个高度 ≠ 已经交差之后拍的；没停链 ≠ 已经一致；只留最近两份 ≠ 已经有了全部历史快照（不变量 324）
+- [`worked-example-query-proof-vs-apphash.md`](worked-example-query-proof-vs-apphash.md) — 头上有 AppHash ≠ 已经是交易默克尔；Query 回了 Proof ≠ 已经对上 AppHash；一层 ProofOp 的根 ≠ 已经对上最终 AppHash（不变量 325）
+- [`worked-example-peerfilter-vs-query.md`](worked-example-peerfilter-vs-query.md) — 发了 addr 过滤查询 ≠ 已经收下这个人；id 过滤查询绿了 ≠ 已经过了 addr；有 /store 路径 ≠ 已经是引擎在用（不变量 326）
+- [`worked-example-prepare-timeout-vs-liveness.md`](worked-example-prepare-timeout-vs-liveness.md) — 立刻整块执行 ≠ 已经离开提议超时的关键路径；填了 TimeoutPropose ≠ 已经装得下；又开一轮 ≠ 已经丢了活性（不变量 327）
+- [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
+- [`worked-example-query-vs-replicated.md`](worked-example-query-vs-replicated.md) — Query 回了 ≠ 已经复制到各节点；查到了 ≠ 已经新鲜；实现了 Query ≠ 已经是正常运转必须有（不变量 329）
+- [`worked-example-ve-height-vs-prepare.md`](worked-example-ve-height-vs-prepare.md) — 到了 H ≠ 已经 Prepare 带了扩展；H+1 带了扩展 ≠ 已经是本高度刚签的；h < H 带了扩展 ≠ 已经合法（不变量 330）
+- [`worked-example-evidence-maxbytes-vs-block.md`](worked-example-evidence-maxbytes-vs-block.md) — 填了证据 MaxBytes ≠ 已经落在块上限下面；> 0 ≠ 已经盖住解绑；证据 MaxBytes ≠ 已经是块 MaxBytes（不变量 331）
+- [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
+- [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
+- [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-finalize-persist-vs-commit.md`](worked-example-finalize-persist-vs-commit.md) — Finalize 改了状态 ≠ 已经落盘；必须在 Commit 落盘 ≠ 已经在 Finalize 落了；记住上次成功 Commit 高度 ≠ 已经能跳步（不变量 335）
+- [`worked-example-precision-vs-msgdelay.md`](worked-example-precision-vs-msgdelay.md) — 填了 Precision ≠ 已经是 MessageDelay；填了两个 ≠ 已经启用 PBTS；用于 PBTS ≠ 已经是永恒常数（不变量 336）
+- [`worked-example-maxbytes-cap-vs-unlimited.md`](worked-example-maxbytes-cap-vs-unlimited.md) — -1 就按 100 MB 验 ≠ 已经没有上限；应用自己卡体积 ≠ 已经引擎不管了；必须 -1 或不超过 100 MB ≠ 已经是默认 21 MB（不变量 337）
+- [`worked-example-prepare-nondet-vs-process.md`](worked-example-prepare-nondet-vs-process.md) — Prepare 没有确定性要求 ≠ 已经必须确定；两边 raw 一样 ≠ 已经是同一份提案；ExtendVote 没有确定性要求 ≠ 已经是同一份扩展（不变量 338）
+- [`worked-example-checktx-weak-vs-process.md`](worked-example-checktx-weak-vs-process.md) — 不该验排序相关有效性 ≠ 已经该在 CheckTx 里验；拜占庭能提案一满块无效交易 ≠ 已经被池子挡住；ProcessProposal 对付这种行为 ≠ 已经是 CheckTx（不变量 339）
+- [`worked-example-process-det-vs-prepare.md`](worked-example-process-det-vs-prepare.md) — Process 必须只依赖请求和上一份状态 ≠ 已经可以像 Prepare 那样依赖其它值；两边对任意块同一裁决 ≠ 已经只对诚实提案同一裁决；Process 非确定 bug 没有现成解法 ≠ 已经丢了安全性（不变量 340）
+- [`worked-example-verify-det-vs-extend.md`](worked-example-verify-det-vs-extend.md) — Verify 必须只依赖扩展、这块和上一份状态 ≠ 已经可以像 ExtendVote 那样依赖其它值；两边对任意扩展同一裁决 ≠ 已经只对诚实扩展同一裁决；Verify 非确定会伤活性 ≠ 已经丢了安全性（不变量 341）
+- [`worked-example-finalize-det-vs-prepare.md`](worked-example-finalize-det-vs-prepare.md) — Finalize 算出的状态必须只依赖上一份状态和决定块 ≠ 已经可以像 Prepare 那样依赖其它值；Finalize 算出的结果必须只依赖上一份状态和决定块 ≠ 已经是 Code/Data 印进本头；两边状态机复制 ≠ 已经是 Process 对任意块同一裁决（不变量 342）
+- [`worked-example-pbts-height-vs-params.md`](worked-example-pbts-height-vs-params.md) — 写成 0 不是已经启用 PBTS ≠ 已经填了 Precision 就是 PBTS；H 之前仍用 BFT Time ≠ 已经切到 PBTS；启用之后不能关 ≠ 已经是扩展启用高度那种切换（不变量 343）
+- [`worked-example-maxbytes-overhead-vs-full.md`](worked-example-maxbytes-overhead-vs-full.md) — MaxBytes 减去头集合证据才是交易上限 ≠ 已经整块都能装交易；诚实验证者 MAY 出满 MaxBytes ≠ 已经只会出默认 21 MB；timeout 必须按满块投递延迟算 ≠ 已经填了 TimeoutPropose 就装得下这次 Prepare 执行（不变量 344）
+- [`worked-example-prepare-return-vs-pool.md`](worked-example-prepare-return-vs-pool.md) — 整池可见 ≠ 已经只能看见装得进一块的子集；聚合体积可以超过 max_tx_bytes ≠ 已经能回超限列表；Req 2 保证回的列表不让块超字节上限 ≠ 已经是引擎会帮你裁（不变量 345）
+- [`worked-example-abci20-upgrade-vs-height.md`](worked-example-abci20-upgrade-vs-height.md) — 必须协调升级 ≠ 已经只改 VoteExtensionsEnableHeight；h_e 必须高于当前 ≠ 已经能写成当前高度；引擎按当前高度决定存什么要什么 ≠ 已经按创世配好了（不变量 346）
+- [`worked-example-req3-coherence-vs-accept.md`](worked-example-req3-coherence-vs-accept.md) — 正确提议者的准备提案必须被正确接收者 Accept ≠ 已经是任意块都会 Accept；Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 ≠ 已经只是活性问题；Req 3 是大量测试和自动验证的目标 ≠ 已经测过（不变量 347）
+- [`worked-example-req6-coherence-vs-accept.md`](worked-example-req6-coherence-vs-accept.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept ≠ 已经是任意扩展都会 Accept；Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 ≠ 已经只是活性问题；会面对和 Req 5 同一类活性问题 ≠ 已经丢了安全性（不变量 348）
+- [`worked-example-req9-noside-vs-commit.md`](worked-example-req9-noside-vs-commit.md) — Prepare 不得改已提交状态 ≠ 已经立刻执行就已经交差；Process 不得改已提交状态 ≠ 已经 Accept 就已经改了；Extend 和 Verify 不得改已提交状态 ≠ 已经签了扩展就已经进状态（不变量 349）
+- [`worked-example-extend-once-vs-round.md`](worked-example-extend-once-vs-round.md) — 一轮最多一张 Precommit ≠ 已经能再签一张；ExtendVote 只在即将广播非 nil Precommit 时才叫 ≠ 已经签了 nil 票；一轮只能交出一份扩展 ≠ 已经是每一高度一份（不变量 350）
+- [`worked-example-process-also-vs-prepare.md`](worked-example-process-also-vs-prepare.md) — Process 也会在提议者那边叫 ≠ 已经不用再 Process；通常紧跟 Prepare、列表对得上 ≠ 已经保证是这一次；失败时可能对上更早一次或根本不调 ≠ 已经每轮都会叫（不变量 351）
+- [`worked-example-late-extension-vs-verified.md`](worked-example-late-extension-vs-verified.md) — +2/3 之后才进来的扩展写进了 commit info ≠ 已经 Verify 过；建议按 Verify 同款逻辑再看一遍 ≠ 已经是引擎会再 Verify；下一高度 round 0 写进 ExtendedCommitInfo ≠ 已经又叫了 Verify（不变量 352）
+- [`worked-example-verify-when-vs-empty.md`](worked-example-verify-when-vs-empty.md) — 空扩展仍会调 Verify ≠ 已经跳过 Verify；不对本进程自己发出的 Precommit 调用 ≠ 已经自己验过；请求里的 hash ≠ 已经对该块跑过 Process（不变量 353）
+- [`worked-example-process-when-vs-later.md`](worked-example-process-when-vs-later.md) — Process 调用是同步的 ≠ 已经能在返回之后再改裁决；只做基本检查再异步 Process ≠ 已经还能再 Reject；非验证者可以立刻回 ACCEPT ≠ 已经验过这块（不变量 354）
+- [`worked-example-prepare-drop-vs-mempool.md`](worked-example-prepare-drop-vs-mempool.md) — 从提案拿掉 tx ≠ 已经从内存池删掉；往提案加了一笔新的 ≠ 已经进了内存池；把 t1 改成 t2 ≠ 已经还能按 t1 查到（不变量 355）
+- [`worked-example-validvalue-vs-prepare.md`](worked-example-validvalue-vs-prepare.md) — validValue 非 nil ≠ 已经还会调 Prepare；自己是提议者 ≠ 已经每轮都会调 Prepare；没调 Prepare ≠ 已经又装了一份 raw 提案（不变量 356）
+- [`worked-example-prepare-valid-vs-checked.md`](worked-example-prepare-valid-vs-checked.md) — 引擎没有再验重复交易 ≠ 已经验过重复；Prepare 回包验不过引擎崩溃 ≠ 已经是 Process REJECT；Prepare 里产出了事件 ≠ 已经交给引擎（不变量 357）
+- [`worked-example-nonrp-vs-wrapped.md`](worked-example-nonrp-vs-wrapped.md) — vote_extension 会包进 CanonicalVoteExtension ≠ 已经按原样签；non_rp_extension 按原样签 ≠ 已经有重放保护；要签原样数据可以用 non_rp ≠ 已经和 vote_extension 同一份（不变量 358）
+- [`worked-example-prepare-fields-vs-same.md`](worked-example-prepare-fields-vs-same.md) — Prepare 和 Process / Finalize 同一套字段 ≠ 已经跑过 Process；local_last_commit 是上一高度的预提交带扩展 ≠ 已经是本高度刚签的扩展；height / time / proposer_address 对上拟议头 ≠ 已经知道本头哈希（不变量 359）
+- [`worked-example-finalize-vs-processed.md`](worked-example-finalize-vs-processed.md) — 至少一名非拜占庭验证者跑过 Process ≠ 已经每个验证者都跑过 Process；Finalize 请求把字段再填一遍 ≠ 已经不用再给；可以套用先前候选 ≠ 已经是 ExecuteTxState（不变量 360）
+- [`worked-example-extend-when-vs-locked.md`](worked-example-extend-when-vs-locked.md) — +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote ≠ 已经会调 ExtendVote；ExtendVote 调用是同步的 ≠ 已经能在返回之后再改扩展；回包字节不被共识算法解释 ≠ 已经是同一份扩展（不变量 361）
+- [`worked-example-finalize-when-vs-decided.md`](worked-example-finalize-when-vs-decided.md) — +2/3 precommit 同一 id(v) 才决定再调 Finalize ≠ 已经会调 Finalize；先把 v 落成这一高的决定再调 Finalize ≠ 已经交差；应用回了 AppHash 和各笔输出 ≠ 已经印进本头（不变量 362）
+- [`worked-example-finalize-equiv-vs-gates.md`](worked-example-finalize-equiv-vs-gates.md) — Finalize 等价于 ABCI 1.0 那三步 ≠ 已经是四门已经结算；可以用 decided_last_commit 定奖惩 ≠ 已经罚没；必须回四列 ≠ 已经改了集合（不变量 363）
+- [`worked-example-validator-vs-update.md`](worked-example-validator-vs-update.md) — Validator 用 address 认人 ≠ 已经带了公钥；不带 PubKey ≠ 已经选型；ValidatorUpdate 用公钥认人 ≠ 已经改了集合（不变量 364）
+- [`worked-example-voteinfo-vs-reward.md`](worked-example-voteinfo-vs-reward.md) — VoteInfo 能按到场定奖惩 ≠ 已经罚没；从拟议块或已决块抽出 ≠ 已经带了公钥；按投票权降序排 ≠ 已经进了块（不变量 365）
+- [`worked-example-retain-vs-kept.md`](worked-example-retain-vs-kept.md) — retain_height 默认 0 ≠ 已经在剪；低于这个高度的块可以被删 ≠ 已经没有历史；全网都删了会永久丢 ≠ 已经能从创世再装（不变量 366）
+- [`worked-example-lane-vs-priority.md`](worked-example-lane-vs-priority.md) — 没定义 lane_priorities ≠ 已经排了优先；空表对空默认 ≠ 已经选型；优先级 0 留给不设道 ≠ 已经进了块（不变量 367）
+- [`worked-example-snapshot-vs-identical.md`](worked-example-snapshot-vs-identical.md) — 快照全字段（含 Metadata）对上 ≠ 已经装完；引擎不解释 format / hash ≠ 已经轻验 AppHash；空快照也至少 1 块 ≠ 已经齐（不变量 368）
+- [`worked-example-extvoteinfo-vs-local.md`](worked-example-extvoteinfo-vs-local.md) — ExtendedVoteInfo 从本进程抽出 ≠ 已经从块里抽出；把验过的签交给应用 ≠ 已经按原样签；扩展关掉则字段全空 ≠ 已经到了启用高度（不变量 369）
+- [`worked-example-info-vs-handshake.md`](worked-example-info-vs-handshake.md) — Info 用来握手对齐 ≠ 已经是快照重放；app_version 进每块头 ≠ 已经印进本头 AppHash；last_block_app_hash / last_block_height 要在 Commit 里落盘 ≠ 已经交差（不变量 370）
+- [`worked-example-queryheight-vs-committed.md`](worked-example-queryheight-vs-committed.md) — Query 可以对当前或过去高度查 ≠ 已经是 QueryState；height 默认 0 回最新已提交 ≠ 已经新鲜；这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 ≠ 已经印进本头 AppHash（不变量 371）
+- [`worked-example-misbehavior-vs-enum.md`](worked-example-misbehavior-vs-enum.md) — Misbehavior.type 只是过错枚举 ≠ 已经罚没；height 是过错发生的高度、time 是那一高已提交块的时间 ≠ 已经验过这个时间；total_voting_power 是那一高验证者集合的总权 ≠ 已经按到场定奖惩（不变量 372）
+- [`worked-example-checktxopt-vs-block.md`](worked-example-checktxopt-vs-block.md) — CheckTx 技术上可选、不参与处理块 ≠ 已经是四门已经结算；Code ≠ 0 会被拒、不会广播也不会进提案 ≠ 已经没进块；引擎对回包码不再赋予别的含义 ≠ 已经被引擎用了 Data（不变量 373）
+- [`worked-example-flush-vs-sent.md`](worked-example-flush-vs-sent.md) — Flush 要把客户端排队的消息冲到服务端 ≠ 已经送到；定期 Flush 是为了让异步请求真发出去 ≠ 已经是四门；立刻 Flush 是为了做成同步请求、回包回来才算这次同步 ≠ 已经能往下走（不变量 374）
+- [`worked-example-loadchunk-vs-retrieved.md`](worked-example-loadchunk-vs-retrieved.md) — LoadSnapshotChunk 用来从邻居拉快照块 ≠ 已经齐；请求用 height / format / chunk（从 0 起）认这块 ≠ 已经是同一份；回包块含元数据不能超过 16 MB ≠ 已经是快照报文 4 MB（不变量 375）
+- [`worked-example-proposalstatus-vs-prevote.md`](worked-example-proposalstatus-vs-prevote.md) — UNKNOWN 一律是错、引擎当应用坏了会崩 ≠ 已经是四门已经结算；ACCEPT 表示应用认为提案合法、共识会发 Prevote ≠ 已经交差；REJECT 表示应用认为提案非法、共识会发 Prevote nil ≠ 已经能稍后改裁决（不变量 376）
+- [`worked-example-querypath-vs-store.md`](worked-example-querypath-vs-store.md) — data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 ≠ 已经是 Query 高度；path 按 URI 路径解释、/store 必须按键查 ≠ 已经是引擎在用；规范建议允许 /accounts / /votes 这类查询 ≠ 已经是正常运转必须有（不变量 377）
+- [`worked-example-refetch-vs-restored.md`](worked-example-refetch-vs-restored.md) — 应用可以再拉块或封邻居、引擎不自己做 ≠ 已经封了；refetch_chunks 不论 result 都再拉再装 ≠ 已经齐；reject_senders 不论 Result 都拒这些人 ≠ 已经能接着装（不变量 378）
+- [`worked-example-infover-vs-appversion.md`](worked-example-infover-vs-appversion.md) — Info 请求 version 是 CometBFT 软件语义版本 ≠ 已经是 app_version；block_version / p2p_version 是引擎块版本和 P2P 版本 ≠ 已经版本也对上；abci_version 是 ABCI 语义版本、按 X.X.x 显示 ≠ 已经是握手对齐（不变量 379）
+- [`worked-example-queryindex-vs-store.md`](worked-example-queryindex-vs-store.md) — Query 回包 index 是树里这个键的下标 ≠ 已经是按键查；Query 回包 key 是对上的那份数据的键 ≠ 已经是 Query 高度；Query 回包 value 是对上的那份数据的值 ≠ 已经对上 AppHash（不变量 380）
+- [`worked-example-checktxspace-vs-code.md`](worked-example-checktxspace-vs-code.md) — CheckTx 回包 codespace 是码的命名空间 ≠ 已经是回包码；CheckTx 回包 events 是给索引用的类型键值 ≠ 已经交差；CheckTx 的 lane_id 必须在 Info 回包车道范围内 ≠ 已经不设道（不变量 381）
+- [`worked-example-syncingheight-vs-history.md`](worked-example-syncingheight-vs-history.md) — syncing_to_height 同步或重放时是目标高、否则等于本高 ≠ 已经有完整历史；validator_updates 空则引擎保持当前集合 ≠ 已经没有集合；Finalize 回包 events 标成非确定 ≠ 已经必须确定（不变量 382）
+- [`worked-example-queryprove-vs-proof.md`](worked-example-queryprove-vs-proof.md) — Query 请求 prove 是能回就回默克尔证明 ≠ 已经对上 AppHash；Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 ≠ 已经是按键查；Query 回包 height 是数据来自哪一高 ≠ 已经是请求高度（不变量 383）
+- [`worked-example-querycode-vs-consensus.md`](worked-example-querycode-vs-consensus.md) — Query 回包 code 是回包码 ≠ 已经过了共识；Query 回包 log 是应用日志输出 ≠ 已经新鲜；Query 回包 info 是附加信息 ≠ 已经是按键查（不变量 384）
+- [`worked-example-paramsblock-vs-maxbytes.md`](worked-example-paramsblock-vs-maxbytes.md) — ConsensusParams.block 限制块大小和块间隔 ≠ 已经是 MaxBytes 上限；ConsensusParams.validator 限制验证者公钥类型 ≠ 已经带了公钥；ConsensusParams.version 是 ABCI 应用版本 ≠ 已经是 app_version 进了头（不变量 385）
+- [`worked-example-paramsevidence-vs-maxbytes.md`](worked-example-paramsevidence-vs-maxbytes.md) — ConsensusParams.evidence 限制拜占庭证据是否合法 ≠ 已经是证据 MaxBytes；ConsensusParams.abci 是 ABCI 相关参数 ≠ 已经 Prepare 带了扩展；ConsensusParams.synchrony 定提案时间戳合法界 ≠ 已经是 PBTS（不变量 386）
+- [`worked-example-inittime-vs-genesis.md`](worked-example-inittime-vs-genesis.md) — InitChain 请求 time 是创世时间 ≠ 已经过了 genesis_time；InitChain 请求 chain_id 是链的 ID ≠ 已经有了 ChainID；InitChain 请求 initial_height 是起步块高度 ≠ 已经能跳步（不变量 387）
+- [`worked-example-initparams-vs-empty.md`](worked-example-initparams-vs-empty.md) — InitChain 请求 consensus_params 是起步共识参数 ≠ 已经没有参数；InitChain 请求 validators 是起步验证者名单 ≠ 已经没有集合；InitChain 请求 app_state_bytes 是序列化起步应用状态 ≠ 已经验过应用状态（不变量 388）
+- [`worked-example-infodata-vs-appversion.md`](worked-example-infodata-vs-appversion.md) — Info 回包 data 是任意信息 ≠ 已经是握手对齐；Info 回包 version 是应用软件语义版本 ≠ 已经是 app_version；Query 回包 codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 389）
+- [`worked-example-proofop-vs-key.md`](worked-example-proofop-vs-key.md) — ProofOp.key 是这棵默克尔树里这把键 ≠ 已经是 Query 回包键；ProofOp.data 是这把键的编码证明 ≠ 已经是 proof_ops；CheckTx 回包 log 是应用日志输出 ≠ 已经是 Query 日志（不变量 390）
+- [`worked-example-checktxtx-vs-recheck.md`](worked-example-checktxtx-vs-recheck.md) — CheckTx 请求 tx 是请求交易字节 ≠ 已经是 Recheck；CheckTx 对照当前状态验、不应用这笔描述的状态改动 ≠ 已经按 ExecuteTxState 验过；CheckTx 回包 info 是附加信息 ≠ 已经是 Query 附加信息（不变量 391）
+- [`worked-example-initapphash-vs-header.md`](worked-example-initapphash-vs-header.md) — InitChain 回包 app_hash 是起步应用哈希 ≠ 已经是本头 AppHash；Finalize 请求 hash 是这块的哈希 ≠ 已经知道本头哈希；CommitInfo.round 是提交轮 ≠ 已经按投票权排过（不变量 392）
+- [`worked-example-exectxgas-vs-checktx.md`](worked-example-exectxgas-vs-checktx.md) — ExecTxResult.gas_wanted 是这笔要的气 ≠ 已经是 CheckTx 的 GasWanted；ExecTxResult.gas_used 是这笔用掉的气 ≠ 已经算进共识；ExecTxResult.codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 393）
+- [`worked-example-extcommitround-vs-commitinfo.md`](worked-example-extcommitround-vs-commitinfo.md) — ExtendedCommitInfo.round 是提交轮 ≠ 已经是 CommitInfo.round；Finalize 请求 next_validators_hash 是下一验证者集合默克尔根 ≠ 已经是同一套字段；Echo 请求 Message 是要回显的字符串 ≠ 已经是 Flush（不变量 394）
+- [`worked-example-listsnapempty-vs-discovery.md`](worked-example-listsnapempty-vs-discovery.md) — ListSnapshots 请求是空请求、向应用要一份快照清单 ≠ 已经齐；ListSnapshots 回包 snapshots 是本地状态快照清单 ≠ 已经是同一份；ListSnapshots 用来在 state sync 时发现邻居上有哪些快照 ≠ 已经在拉块（不变量 395）
+- [`worked-example-offersnap-vs-listed.md`](worked-example-offersnap-vs-listed.md) — OfferSnapshot 请求 snapshot 是拿来装回的那份快照 ≠ 已经是本地清单；OfferSnapshot 回包 result 是这次 Offer 的结果 ≠ 已经装完；OfferSnapshot 在用 state sync 引导节点时叫 ≠ 已经必须实现快照连接（不变量 396）
+- [`worked-example-applychunk-vs-loadchunk.md`](worked-example-applychunk-vs-loadchunk.md) — ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容 ≠ 已经在拉块；ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID ≠ 已经拒了人；ApplySnapshotChunk 回包 result 是装这块的结果 ≠ 已经是 Offer 的结果（不变量 397）
+- [`worked-example-applyretry-vs-refetch.md`](worked-example-applyretry-vs-refetch.md) — ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders ≠ 已经再拉；ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块 ≠ 已经换一份；ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份 ≠ 已经是装这块的结果（不变量 398）
+- [`worked-example-commitnoparam-vs-persist.md`](worked-example-commitnoparam-vs-persist.md) — Commit 不带参数 ≠ 已经落盘；Echo 回包 Message 是入参那串 ≠ 已经是入参字段；Echo 用来测实现 ≠ 已经刷完（不变量 399）
+- [`worked-example-offerfmt-vs-rejectsnap.md`](worked-example-offerfmt-vs-rejectsnap.md) — OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 ≠ 已经是拒掉这份；OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 ≠ 已经拒了人；OfferSnapshot Result ABORT 是中止装回、不再试别份 ≠ 已经换一份（不变量 400）
+- [`worked-example-offeraccept-vs-restored.md`](worked-example-offeraccept-vs-restored.md) — Offer 收下之后才去拉块并装 ≠ 已经装完；在装这块的回包里拒掉这份、还要再收 Offer ≠ 已经中止；ApplySnapshotChunk Result ACCEPT 是这块收下了 ≠ 已经齐（不变量 401）
+- [`worked-example-offerunk-vs-crash.md`](worked-example-offerunk-vs-crash.md) — OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 ≠ 已经崩；OfferSnapshot Result ACCEPT 是收下这份、开始装块 ≠ 已经装完；OfferSnapshot Result REJECT 是拒掉这份、换一份 ≠ 已经是拒掉这种 format（不变量 402）
+- [`worked-example-finalizeafter-vs-commit.md`](worked-example-finalizeafter-vs-commit.md) — Finalize 之后引擎才落盘各笔输出 / AppHash / ResultsHash ≠ 已经交差；落完再锁内存池、新交易不进 CheckTx ≠ 已经是 Commit 锁；可选再验池里剩下的、再解锁、再开下一高 round 0 ≠ 已经是 Recheck（不变量 403）
+- [`worked-example-finapphash-vs-header.md`](worked-example-finapphash-vs-header.md) — Finalize 回包 app_hash 可以空或硬编码、但必须确定 ≠ 已经印进本头；以后 Query 可以拿这份根当锚回证明 ≠ 已经对上 AppHash；tx_results[i].Code == 0 只表示第 i 笔完全合法 ≠ 已经没进块（不变量 404）
+- [`worked-example-checktxguard-vs-optional.md`](worked-example-checktxguard-vs-optional.md) — CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池 ≠ 已经是技术上可选；这笔可以来自外部用户、也可以来自另一节点 ≠ 已经保证不重放；默克尔证明带自描述 type、好支持多种默克尔树和编码 ≠ 已经是 ProofOp 类型（不变量 405）
+- [`worked-example-snapheight-vs-queryh.md`](worked-example-snapheight-vs-queryh.md) — Snapshot.height 是拍快照的高度（Commit 之后） ≠ 已经是 Query 高度；Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据 ≠ 已经全字段对上；Query 可以可选回默克尔证明 ≠ 已经对上 AppHash（不变量 406）
+- [`worked-example-finfields-vs-equiv.md`](worked-example-finfields-vs-equiv.md) — Finalize 含刚决定那块的字段 ≠ 已经是四门已经结算；Finalize 实现必须确定、因为它在状态机复制里推进应用状态 ≠ 已经可以像 Prepare 那样；Info 用来回应用状态信息 ≠ 已经是握手对齐（不变量 407）
+- [`worked-example-fintxs-vs-control.md`](worked-example-fintxs-vs-control.md) — Finalize 按应用自己的规则确定地执行 txs、再交还控制权 ≠ 已经交差；Process 含提案块上执行所需的全部信息 ≠ 已经是刚决定那块的字段；Process 可以像在处理 Finalize 那样整块执行 ≠ 已经是 ExecuteTxState（不变量 408）
+- [`worked-example-extreq-vs-precommit.md`](worked-example-extreq-vs-precommit.md) — ExtendVoteRequest 的内容对应共识即将发 Precommit 的那份拟议块 ≠ 已经会调 ExtendVote；Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify ≠ 已经跳过 Verify；Verify ACCEPT 会把这张票和扩展留在内部结构、给 h+1 自己提议时的 Prepare 填 ExtendedCommitInfo ≠ 已经 Verify 过迟到扩展（不变量 409）
+- [`worked-example-extreqhash-vs-process.md`](worked-example-extreqhash-vs-process.md) — ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希 ≠ 已经跑过 Process；ExtendVoteRequest.height 是拟议块高度（用来对一下） ≠ 已经对上了拟议块；ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳 ≠ 已经验过票上时间（不变量 410）
+- [`worked-example-extreqtxs-vs-fintxs.md`](worked-example-extreqtxs-vs-fintxs.md) — ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 ≠ 已经执行那些交易；ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 ≠ 已经交差 local_last_commit；ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 ≠ 已经是 Finalize 请求栏的 next_validators_hash（不变量 411）
+- [`worked-example-initonce-vs-crash.md`](worked-example-initonce-vs-crash.md) — InitChain 创世时只调一次 ≠ 已经是崩溃后再调；应用可以决定接受创世验证者集合或用创世应用信息算出另一套 ≠ 已经没有集合；Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 ≠ 已经改了集合（不变量 412）
+- [`worked-example-extreqmis-vs-reward.md`](worked-example-extreqmis-vs-reward.md) — ExtendVoteRequest.misbehavior 是拟议块里那些过错信息 ≠ 已经定奖惩；ExtendVoteRequest.proposer_address 是造这份提案的验证者地址 ≠ 已经知道本头哈希；VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 ≠ 已经带了公钥（不变量 413）
+- [`worked-example-exectxlog-vs-querylog.md`](worked-example-exectxlog-vs-querylog.md) — ExecTxResult.log 是应用日志的输出 ≠ 已经是 Query 日志；ExecTxResult.info 是附加信息 ≠ 已经是 CheckTx 附加信息；ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略 ≠ 已经印进本头（不变量 414）
+- [`worked-example-verifyheight-vs-extheight.md`](worked-example-verifyheight-vs-extheight.md) — VerifyVoteExtensionRequest.height 是块高度（用来对一下） ≠ 已经是拟议块高度；VerifyVoteExtensionRequest.hash 是扩展要指的那份拟议块哈希 ≠ 已经不保证跑过 Process；VerifyVoteExtensionRequest.vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 ≠ 已经跳过 Verify（不变量 415）
+- [`worked-example-proposetimeout-vs-process.md`](worked-example-proposetimeout-vs-process.md) — 进了这一轮会先设 ProposeTimeout ≠ 已经填了 TimeoutPropose；收到带上头的提案会先验块头 ≠ 已经跑过 Process；收齐块片才按验证者算法看该不该 prevote 这块或 nil ≠ 已经会调 Process（不变量 416）
+- [`worked-example-htmatch-vs-header.md`](worked-example-htmatch-vs-header.md) — 自己是提议者会先走完 Prepare 那五步 ≠ 已经不用再 Process；Process 的 height / time 对上拟议块头 ≠ 已经验过块头；Finalize 的 height / time 对上拟议块头 ≠ 已经是刚决定那块的字段（不变量 417）
+- [`worked-example-extresp-vs-wrap.md`](worked-example-extresp-vs-wrap.md) — ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 ≠ 已经会包进 CanonicalVoteExtension；ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定 ≠ 已经按原样签；VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 ≠ 已经是 vote_extension 表（不变量 418）
+- [`worked-example-procreq-vs-extreq.md`](worked-example-procreq-vs-extreq.md) — ProcessProposalRequest.txs 是拟议块的交易列表 ≠ 已经执行那些交易；ProcessProposalRequest.hash 是拟议块的哈希 ≠ 已经跑过 Process；ProcessProposalRequest.height 是拟议块的高度 ≠ 已经对上了拟议块头（不变量 419）
+- [`worked-example-procreqrest-vs-extreq.md`](worked-example-procreqrest-vs-extreq.md) — ProcessProposalRequest.proposed_last_commit 是从拟议块里的信息拿到的上一份提交信息 ≠ 已经交差 local_last_commit；ProcessProposalRequest.time 是拟议块的时间戳 ≠ 已经验过票上时间；ProcessProposalRequest.misbehavior 是过错验证者信息列表 ≠ 已经定奖惩（不变量 420）
+- [`worked-example-extvitable-vs-usage.md`](worked-example-extvitable-vs-usage.md) — ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展 ≠ 已经从本进程抽出；ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展 ≠ 已经按原样签；ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签 ≠ 已经把验过的签交给应用（不变量 421）
+- [`worked-example-finreq-vs-procreq.md`](worked-example-finreq-vs-procreq.md) — FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息 ≠ 已经交差 local_last_commit；FinalizeBlockRequest.height 是已决块的高度 ≠ 已经对上了拟议块头；FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表 ≠ 已经执行那些交易（不变量 422）
+- [`worked-example-prepreq-vs-return.md`](worked-example-prepreq-vs-return.md) — PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节 ≠ 已经能回超限列表；PrepareProposalRequest.txs 是挑进拟议块的初步交易列表 ≠ 已经跑过 Process；PrepareProposalRequest.height 是将要提议的那块的高度 ≠ 已经对上了拟议块头（不变量 423）
+- [`worked-example-prepreqrest-vs-procreq.md`](worked-example-prepreqrest-vs-procreq.md) — PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息 ≠ 已经交差 proposed_last_commit；PrepareProposalRequest.time 是将要提议那块的时间戳 ≠ 已经对上了拟议块头；PrepareProposalRequest.misbehavior 是过错验证者信息列表 ≠ 已经定奖惩（不变量 424）
+- [`worked-example-extvirest-vs-voteinfo.md`](worked-example-extvirest-vs-voteinfo.md) — ExtendedVoteInfo.validator 是发了这张票的验证者 ≠ 已经带了公钥；ExtendedVoteInfo.block_id_flag 标明投了上一块、nil、还是没收到票 ≠ 已经罚没；ExtendedVoteInfo.non_rp_extension_signature 是发送验证者造、CometBFT 验过的非重放保护扩展签 ≠ 已经把验过的签交给应用（不变量 425）
+- [`worked-example-prepreqend-vs-finreq.md`](worked-example-prepreqend-vs-finreq.md) — PrepareProposalRequest.next_validators_hash 是下一验证者集合默克尔根 ≠ 已经是 Finalize 请求栏的 next_validators_hash；PrepareProposalRequest.proposer_address 是正在造这份提案的验证者地址 ≠ 已经造了这份提案；FinalizeBlockRequest.time 是已决块的时间戳 ≠ 已经对上了拟议块头（不变量 426）
+- [`worked-example-extwhenformal-vs-broadcast.md`](worked-example-extwhenformal-vs-broadcast.md) — 应用回 extension 后 CometBFT 会填进 CanonicalVoteExtension、填其它字段并签名 ≠ 已经按原样签；会构造并签名 CanonicalVote ≠ 已经验过扩展；用 CanonicalVoteExtension 和 CanonicalVote 构造 Precommit 并广播 ≠ 已经写进 last_commit（不变量 438）
+- [`worked-example-extusage-vs-call.md`](worked-example-extusage-vs-call.md) — ExtendVoteResponse.vote_extension 只会挂在非 nil Precommit 上、precommit nil 不会叫 ExtendVote ≠ 已经会调 ExtendVote；应用可以选 0 长扩展 ≠ 已经不会叫 ExtendVote；造扩展的应用逻辑可以非确定 ≠ 已经必须同一份扩展（不变量 437）
+- [`worked-example-verifyreqbar-vs-rest.md`](worked-example-verifyreqbar-vs-rest.md) — VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 ≠ 已经带了公钥；VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 ≠ 已经是 vote_extension；non_rp 相对 vote_extension 签名时不加额外元信息 ≠ 已经按原样签（不变量 436）
+- [`worked-example-verify-formal-when-vs-flow.md`](worked-example-verify-formal-when-vs-flow.md) — Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify ≠ 已经跳过 Verify；带有效签就会调 VerifyVoteExtension ≠ 已经验过扩展；ACCEPT 留给 h+1 Prepare / REJECT 丢掉 Precommit ≠ 已经写进 last_commit（不变量 435）
+- [`worked-example-verifystatus-vs-vote.md`](worked-example-verifystatus-vs-vote.md) — VerifyStatus 的 UNKNOWN 一律是错、引擎当应用坏了会崩 ≠ 已经验过扩展；VerifyStatus 的 ACCEPT 表示应用认为扩展合法、共识会收下这张票 ≠ 已经当成块非法；VerifyStatus 的 REJECT 表示应用认为扩展非法、共识会拒掉整张票 ≠ 已经会发 Prevote nil（不变量 434）
+- [`worked-example-verifyresp-vs-status.md`](worked-example-verifyresp-vs-status.md) — VerifyVoteExtensionResponse.status 是应用认为这份扩展合法还是非法 ≠ 已经当成块非法；VerifyVoteExtensionResponse.status 必须只依赖 VerifyVoteExtensionRequest 和上一份已提交状态 ≠ 已经可以像 ExtendVote 那样依赖其它值；应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价 ≠ 已经正确进程交出的扩展必须 Accept（不变量 433）
+- [`worked-example-finrespend-vs-params.md`](worked-example-finrespend-vs-params.md) — FinalizeBlockResponse.consensus_param_updates 是对 gas、大小和其它共识相关参数的改动 ≠ 已经在块 H 生效；FinalizeBlockResponse.app_hash 是应用状态默克尔根 ≠ 已经写进下一块头的 AppHash；FinalizeBlockResponse.next_block_delay 是这块 Commit 后再开下一高的等待 ≠ 已经是本地 timeout_commit（不变量 432）
+- [`worked-example-finrespbar-vs-header.md`](worked-example-finrespbar-vs-header.md) — FinalizeBlockResponse.events 是给索引用的类型键值事件 ≠ 已经印进本头；FinalizeBlockResponse.tx_results 是执行这块各笔交易得到的结果列表 ≠ 已经是 CheckTx 回包；FinalizeBlockResponse.validator_updates 是对验证者集合的改动 ≠ 已经在 H+1 换人（不变量 431）
+- [`worked-example-procresp-vs-status.md`](worked-example-procresp-vs-status.md) — ProcessProposalResponse.status 是应用认为这份提案合法还是非法 ≠ 已经当成块非法；ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态 ≠ 已经可以像 Prepare 那样依赖其它值；应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价 ≠ 已经 honest proposal 必须 Accept（不变量 430）
+- [`worked-example-finreqend-vs-procreq.md`](worked-example-finreqend-vs-procreq.md) — FinalizeBlockRequest.proposer_address 是造了这份提案的验证者地址 ≠ 已经正在造这份提案；FinalizeBlockRequest.time 是已决块的时间戳 ≠ 已经对上了拟议块头；FinalizeBlockRequest.syncing_to_height 同步或重放时是目标高、否则等于本高 ≠ 已经有完整历史（不变量 429）
+- [`worked-example-finreqrest-vs-procreq.md`](worked-example-finreqrest-vs-procreq.md) — FinalizeBlockRequest.hash 是已决块的哈希 ≠ 已经是 ProcessProposalRequest.hash；FinalizeBlockRequest.misbehavior 是过错验证者信息列表 ≠ 已经定奖惩；FinalizeBlockRequest.next_validators_hash 是下一验证者集合默克尔根 ≠ 已经是 Process 请求末栏的 next_validators_hash（不变量 428）
+- [`worked-example-procreqend-vs-prepreq.md`](worked-example-procreqend-vs-prepreq.md) — ProcessProposalRequest.next_validators_hash 是下一验证者集合默克尔根 ≠ 已经是 Prepare 请求末栏的 next_validators_hash；ProcessProposalRequest.proposer_address 是造了这份提案的验证者地址 ≠ 已经正在造这份提案；PrepareProposalResponse.txs 是可能改过的、挑进拟议块的交易列表 ≠ 已经是初步交易列表（不变量 427）
+- [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
+- [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
+- [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
+- [`worked-example-txid-vs-wtxid.md`](worked-example-txid-vs-wtxid.md) — txid ≠ wtxid；改见证 ≠ 已经改交易身份；头上的 txid Merkle ≠ 已经承诺 wtxid（不变量 152）
+- [`worked-example-keypath-vs-scriptpath.md`](worked-example-keypath-vs-scriptpath.md) — 钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本（不变量 153）
+- [`worked-example-tapscript-vs-scriptpath.md`](worked-example-tapscript-vs-scriptpath.md) — 走脚本路径 ≠ 已经是 tapscript 语义；遇见成功操作码 ≠ 已经执行完；342 ≠ 341 ≠ 141 ≠ 16（不变量 189）
+- [`worked-example-miniscript-vs-script.md`](worked-example-miniscript-vs-script.md) — 看见 Miniscript ≠ 已经是链上脚本；共识健全 ≠ 已经是策略完备；379 ≠ 380 ≠ 342 ≠ 16（不变量 191）
+- [`worked-example-typed-vs-legacy.md`](worked-example-typed-vs-legacy.md) — 类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封；2718 ≠ 1559 ≠ 155（不变量 167）
+- [`../finality/worked-example-request-vs-action.md`](../finality/worked-example-request-vs-action.md) — 看见头里的请求承诺 ≠ 已经由共识层处理完；请求 ≠ 已经有权单独促成动作；7685 ≠ 4895 ≠ 2718（不变量 192）
+- [`../state-models/worked-example-delegation-vs-code.md`](../state-models/worked-example-delegation-vs-code.md) — 看见授权名单 ≠ 已经委托成功；委托指示 ≠ 已经是目标代码；7702 ≠ 3607 ≠ 3541 ≠ 2718（不变量 190）
+- [`worked-example-listed-vs-accessed.md`](worked-example-listed-vs-accessed.md) — 列出地址或槽 ≠ 已经访问过；列表外 ≠ 已经不能碰；2930 ≠ 2718 ≠ 1559（不变量 168）
+- [`worked-example-cold-vs-warm.md`](worked-example-cold-vs-warm.md) — 本笔第一次碰 ≠ 已经热；本笔再碰 ≠ 又是冷访问；2929 ≠ 2930 ≠ 墙钟（不变量 169）
+- [`worked-example-coinbase-vs-prefill.md`](worked-example-coinbase-vs-prefill.md) — 出块者地址开跑时已在热集合 ≠ 已经访问过；开跑已热 ≠ 已经付给出块者；开跑已热 ≠ 169 那几个预填已经覆盖出块者；3651 ≠ 2929 ≠ 2930 ≠ 1559（不变量 187）
+- [`worked-example-versionbit-vs-active.md`](worked-example-versionbit-vs-active.md) — 版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活；9 ≠ 34 ≠ 被部署的那条规则（不变量 171）
+- [`worked-example-valid-vs-der.md`](worked-example-valid-vs-der.md) — ECDSA 验得过 ≠ 已经是严格 DER；库收下 ≠ 共识已经接受；66 ≠ 62 ≠ 146 ≠ 34（不变量 172）
+- [`worked-example-dummy-vs-empty.md`](worked-example-dummy-vs-empty.md) — 多余栈元素 ≠ 已经随便填；隔离见证 ≠ 已经没有这条延展；策略已经要空 dummy ≠ 已经是共识（不变量 264）
+- [`worked-example-signet-vs-testnet.md`](worked-example-signet-vs-testnet.md) — signet ≠ 已经是 testnet；signet ≠ 已经是 regtest；头上有合法工作量 ≠ 已经签过（不变量 265）
+- [`worked-example-purpose-vs-compatible.md`](worked-example-purpose-vs-compatible.md) — BIP32 compatible ≠ 已经能互操作；自称 BIPxx compatible ≠ 已经是那份结构；同一套扩展钥前缀 ≠ 已经是比特币专用（不变量 266）
+- [`worked-example-account-vs-discovered.md`](worked-example-account-vs-discovered.md) — 同一份种子 ≠ 已经是同一条币；下一个账户号 ≠ 已经有过往；余额为零 ≠ 已经发现完（不变量 267）
+- [`worked-example-nested-vs-same-account.md`](worked-example-nested-vs-same-account.md) — 同一套 BIP44 账户 ≠ 已经能找回嵌套隔离见证；专用账户 ≠ 已经向后兼容；账户出现了 ≠ 已经不用核余额（不变量 268）
+- [`worked-example-script-type-vs-account.md`](worked-example-script-type-vs-account.md) — 现有多签派生习惯 ≠ 已经要搬家；脚本类型层 ≠ 已经是账户层；本页多签 ≠ 已经不排序（不变量 269）
+- [`worked-example-sorted-vs-one-address.md`](worked-example-sorted-vs-one-address.md) — 同一套钥 ≠ 已经是同一条 P2SH 地址；只共享门限和主公钥 ≠ 已经够了；未压缩钥 ≠ 已经是本页（不变量 270）
+- [`worked-example-cosigner-vs-discovered.md`](worked-example-cosigner-vs-discovered.md) — 共享主公钥 ≠ 已经是本页；能独立长地址 ≠ 已经能独立签；前面分支没有交易 ≠ 已经发现完（不变量 271）
+- [`worked-example-derived-vs-output-key.md`](worked-example-derived-vs-output-key.md) — 派生钥 ≠ 已经是输出钥；不需要脚本路径 ≠ 已经不承诺；种子备份 ≠ 已经能找回单钥 P2TR（不变量 272）
+- [`worked-example-multi-vs-sortedmulti.md`](worked-example-multi-vs-sortedmulti.md) — multi ≠ 已经按字典序排；门限和钥数 ≠ 已经同一套上限；多把扩展钥 ≠ 已经各自编号（不变量 274）
+- [`worked-example-tr-vs-tree.md`](worked-example-tr-vs-tree.md) — tr 没有树 ≠ 已经有脚本路径；树表达式 ≠ 已经是旧脚本套法；压缩钥 ≠ 已经是 x-only（不变量 275）
+- [`worked-example-pk-vs-toplevel.md`](worked-example-pk-vs-toplevel.md) — pk ≠ 已经和 pkh / sh 同一套放置；sh 产出 ≠ 已经有赎回脚本；熟悉的标准脚本 ≠ 已经能互操作（不变量 276）
+- [`worked-example-wpkh-vs-compressed.md`](worked-example-wpkh-vs-compressed.md) — wpkh / wsh ≠ 已经只能顶层；未压缩钥 ≠ 已经允许；wsh 产出 ≠ 已经有见证脚本（不变量 277）
+- [`worked-example-multia-vs-tr.md`](worked-example-multia-vs-tr.md) — multi_a ≠ 已经是 383 那种 multi；门限 ≠ 已经同一套编码；sortedmulti_a ≠ 已经是 383 那种排序（不变量 278）
+- [`worked-example-tap-psbt-vs-old.md`](worked-example-tap-psbt-vs-old.md) — 旧 PSBT 栏 ≠ 已经能装 Taproot；输出脚本里的钥 ≠ 已经是内部钥；Taproot 输入 ≠ 已经必须带整笔前交易（不变量 279）
+- [`worked-example-policy-vs-descriptor.md`](worked-example-policy-vs-descriptor.md) — 钱包策略 ≠ 已经是一条描述符；钥占位 ≠ 已经是那把精确公钥；登记过 ≠ 已经批准这笔花（不变量 280）
+- [`worked-example-combo-vs-one-script.md`](worked-example-combo-vs-one-script.md) — combo ≠ 已经只能产出一种脚本；未压缩钥 ≠ 已经带齐见证对；一份 combo ≠ 已经是一份钱包策略（不变量 281）
+- [`worked-example-raw-vs-named.md`](worked-example-raw-vs-named.md) — raw ≠ 已经能套进具名表达式；addr ≠ 已经是那份输出脚本；一份包装 ≠ 已经是 combo（不变量 282）
+- [`worked-example-musig-xpub-vs-aggregate.md`](worked-example-musig-xpub-vs-aggregate.md) — 聚合钥 ≠ 已经是扩展公钥；合成扩展公钥 ≠ 已经能硬化派生；派生出的子钥 ≠ 已经能不带微调去签（不变量 283）
+- [`worked-example-musig-psbt-vs-tap.md`](worked-example-musig-psbt-vs-tap.md) — 旧 PSBT 栏 ≠ 已经能装 MuSig2；聚合钥栏 ≠ 已经是输出钥；参与者钥 ≠ 已经能出部分签（不变量 284）
+- [`worked-example-multisig-path-vs-script.md`](worked-example-multisig-path-vs-script.md) — 脚本各走各的路径 ≠ 已经是多签该有的树；路径里的脚本类型 ≠ 已经必要；主种子 ≠ 已经够找回（不变量 285）
+- [`worked-example-entropy-vs-seed.md`](worked-example-entropy-vs-seed.md) — 一份助记词 ≠ 已经能备齐所有钱包；扩展根钥 ≠ 已经能倒回助记词；派生出的熵 ≠ 已经是目标钱包的种子（不变量 286）
+- [`worked-example-setup-vs-psbt.md`](worked-example-setup-vs-psbt.md) — 部分签名包 ≠ 已经是跨厂安全多签开户；指纹对上 ≠ 已经核过 KEY；TOKEN ≠ 已经是钱包种子（不变量 287）
+- [`worked-example-template-vs-path.md`](worked-example-template-vs-path.md) — 一条派生路径 ≠ 已经是一份路径模板；写死了熟路径检查 ≠ 已经能互操作；完整模板 ≠ 已经是半截模板（不变量 288）
+- [`worked-example-delegation-vs-xpub.md`](worked-example-delegation-vs-xpub.md) — 共享了扩展公钥 ≠ 已经是链码委托；委托方那把非扩展钥 ≠ 已经能推出整棵钱包；这一输入的微调 ≠ 已经是盲签（不变量 289）
+- [`../lifecycle/worked-example-payjoin-vs-original.md`](../lifecycle/worked-example-payjoin-vs-original.md) — 带 pj= 的付款 URI ≠ 已经是 payjoin 付款；原始包 ≠ 已经是提案；收款方加了输入 ≠ 已经另开一笔（不变量 290）
+- [`worked-example-order-vs-lex.md`](worked-example-order-vs-lex.md) — 自家习惯的输入输出顺序 ≠ 已经是字典序标准；按字典序排了 ≠ 已经是共识 / ≠ 已经私人（不变量 291）
+- [`worked-example-testnet4-vs-testnet3.md`](worked-example-testnet4-vs-testnet3.md) — Testnet 4 ≠ 已经是 Testnet 3；20 分钟例外 ≠ 已经没有块风暴；会 Testnet 3 ≠ 已经能安全跟（不变量 292）
+- [`../lifecycle/worked-example-reserves-vs-spend.md`](../lifecycle/worked-example-reserves-vs-spend.md) — 储备证明交易 ≠ 已经能花；其余输入签过 ≠ 已经控制资金；POR 栏 ≠ 已经是普通花费（不变量 293）
+- [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）
+- [`worked-example-p2sh-address-vs-redeem.md`](worked-example-p2sh-address-vs-redeem.md) — 本页这种地址 ≠ 已经是赎回脚本；旧软件报无效 ≠ 已经付过；只有地址 ≠ 已经知道付给谁（不变量 297）
+- [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
+- [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
+- [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）
+- [`worked-example-xpub-vs-spendable.md`](worked-example-xpub-vs-spendable.md) — 看见扩展公钥 ≠ 已经能花；硬化 ≠ 已经能从公钥推出；32 ≠ 173 ≠ 174 ≠ 350（不变量 182）
+- [`worked-example-mnemonic-vs-seed.md`](worked-example-mnemonic-vs-seed.md) — 看见助记词 ≠ 已经是二进制种子；口令不同 ≠ 已经非法；39 ≠ 32 ≠ 173 ≠ 380（不变量 183）
+- [`worked-example-descriptor-vs-keys.md`](worked-example-descriptor-vs-keys.md) — 看见私钥或助记词备份 ≠ 已经知道该看哪种输出脚本；看见描述符 ≠ 已经是地址；380 ≠ 39 ≠ 32 ≠ 173（不变量 184）
+- [`worked-example-initcode-vs-runtime.md`](worked-example-initcode-vs-runtime.md) — initcode 超界 ≠ 已经是部署代码超界；按字分析费 ≠ 已经跑完构造；3860 ≠ 170 ≠ 1014 ≠ 2681（不变量 176）
+- [`worked-example-calldata-floor-vs-execution.md`](worked-example-calldata-floor-vs-execution.md) — 看见 calldata 地板 ≠ 已经改了执行气；数据为主更贵 ≠ 已经让普通转账更贵；预留地板气限 ≠ 已经烧到地板；7623 ≠ 4844 ≠ 1559 ≠ 2028（不变量 197）
+- [`worked-example-rlp-cap-vs-gas.md`](worked-example-rlp-cap-vs-gas.md) — 看见 RLP 编码硬帽 ≠ 已经改了气限；共识层流言不传 ≠ 已经让执行层非法；给信标块留边 ≠ 已经并成一份编码；7934 ≠ 7623 ≠ 1559 ≠ 96（不变量 202）
+- [`worked-example-tx-gas-cap-vs-block.md`](worked-example-tx-gas-cap-vs-block.md) — 看见单笔气帽 ≠ 已经改了块气限；入池拒掉 ≠ 已经验过块；块里有一笔超帽 ≠ 已经只是策略拒绝；7825 ≠ 7934 ≠ 7623 ≠ 96（不变量 203）
+- [`worked-example-modexp-bound-vs-price.md`](worked-example-modexp-bound-vs-price.md) — 看见 MODEXP 输入长度帽 ≠ 已经改了计价公式；超帽 ≠ 已经成功返回；长度有界 ≠ 已经换成 EVM；7823 ≠ 198 重定价 ≠ 7825 ≠ 7951（不变量 206）
+- [`worked-example-clz-vs-zk.md`](worked-example-clz-vs-zk.md) — 看见数前导零操作码 ≠ 已经更便宜的 ZK 证明；动机写了后量子签 ≠ 已经有后量子签名；能表达最低位 ≠ 已经有数尾零；7939 ≠ 206 ≠ 199 ≠ 204（不变量 208）
+- [`worked-example-config-rpc-vs-aligned.md`](worked-example-config-rpc-vs-aligned.md) — 看见分叉配置 RPC 对上了 ≠ 已经过多客户端同根；看见 current / next / last ≠ 已经改了共识；RPC 绿 ≠ 对等节点没有撒谎；7910 ≠ 149 ≠ 209 ≠ 207（不变量 210）
+- [`worked-example-default-gas-vs-cap.md`](worked-example-default-gas-vs-cap.md) — 看见客户端默认气限 ≠ 已经是协议帽；看见绑到硬分叉发布 ≠ 已经改了共识；看见默认配置齐了 ≠ 已经是单笔气帽；7935 ≠ 203 ≠ 202 ≠ 96（不变量 211）
+- [`worked-example-block-list-vs-parallel.md`](worked-example-block-list-vs-parallel.md) — 看见块级访问名单 ≠ 已经并行跑完；看见强制名单 ≠ 已经是 2930；看见事后状态差 ≠ 已经不跑交易；7928 ≠ 168 ≠ 143 ≠ 122（不变量 212）
+- [`worked-example-mcopy-vs-identity.md`](worked-example-mcopy-vs-identity.md) — 看见内存拷贝指令 ≠ 已经是身份预编译；看见「像用了中间缓冲」 ≠ 已经必须真分配一块缓冲；看见能重叠拷 ≠ 已经是 calldata / 返回数据拷；5656 ≠ 2929 ≠ 208（不变量 216）
+- [`worked-example-push0-vs-push1.md`](worked-example-push0-vs-push1.md) — 看见压零指令 ≠ 已经是带立即数的压 0；看见没有立即数 ≠ 已经改了跳转目的分析；看见已经部署碰巧用了这个字节 ≠ 行为已经不变；3855 ≠ 5656 ≠ 216（不变量 217）
+- [`worked-example-basefee-opcode-vs-market.md`](worked-example-basefee-opcode-vs-market.md) — 看见基础费指令 ≠ 已经改了费用市场；看见能读本块基础费 ≠ 已经给了出块者；看见跑 EVM 前就已经有这个数 ≠ 已经改了头怎么算；3198 ≠ 1559 ≠ 158（不变量 218）
+- [`worked-example-blobbasefee-vs-basefee.md`](worked-example-blobbasefee-vs-basefee.md) — 看见 blob 基础费指令 ≠ 已经是执行层基础费指令；看见能读本块 blob 基础费 ≠ 已经并成一套气；看见跑 EVM 前就已经有这个数 ≠ 已经改了 4844 日程；7516 ≠ 3198 ≠ 218 ≠ 4844（不变量 219）
+- [`worked-example-chainid-opcode-vs-signed.md`](worked-example-chainid-opcode-vs-signed.md) — 看见链号指令 ≠ 已经是签进哈希的链号；看见指令返回配置链号 ≠ 已经是这笔交易带了 EIP-155 标识；看见编译期写死的链号 ≠ 已经在硬分叉后仍安全；1344 ≠ 155 ≠ 161 ≠ 712（不变量 220）
+- [`worked-example-extcodehash-vs-copy.md`](worked-example-extcodehash-vs-copy.md) — 看见代码哈希指令 ≠ 已经看见代码本身；看见返回 0 ≠ 已经是没代码的账户；看见空数据哈希 ≠ 已经是账户不存在；1052 ≠ 161 ≠ 180 ≠ 162（不变量 221）
+- [`worked-example-create2-vs-created.md`](worked-example-create2-vs-created.md) — 看见盐创建指令 ≠ 已经是按发送者加序号占址；看见算出来的盐地址 ≠ 已经创建；看见碰撞变得可能 ≠ 已经覆盖；1014 ≠ 3860 ≠ 176 ≠ 684（不变量 222）
+- [`worked-example-refund-vs-gone.md`](worked-example-refund-vs-gone.md) — 看见退款削减 ≠ 已经没有退款；看见去掉自毁退款 ≠ 已经改了自毁语义；看见退款计数 ≠ 已经能在执行当中用；3529 ≠ 2200 ≠ 160 ≠ 158（不变量 223）
+- [`worked-example-deprecate-vs-changed.md`](worked-example-deprecate-vs-changed.md) — 看见弃用警告 ≠ 已经改了共识行为；看见本页 ≠ 已经改了客户端；看见「以后可能变」≠ 已经变了；6049 ≠ 6780 ≠ 160 ≠ 223（不变量 224）
+- [`worked-example-net-meter-vs-transient.md`](worked-example-net-meter-vs-transient.md) — 看见净计量 ≠ 已经是瞬时存储；看见原来值 / 当前值 / 新值 ≠ 已经只有当前值；看见津贴帧禁写 ≠ 已经能改槽；2200 ≠ 1153 ≠ 159 ≠ 3529 ≠ 223（不变量 225）
+- [`worked-example-calldata-cut-vs-unlimited.md`](worked-example-calldata-cut-vs-unlimited.md) — 看见非零 calldata 降价 ≠ 已经给零字节也降价；看见降价 ≠ 已经没有块大小上限；看见降价 ≠ 已经不伤延迟 / 安全；2028 ≠ 7623 ≠ 197 ≠ 4844 ≠ 145（不变量 226）
+- [`worked-example-modexp-price-vs-bound.md`](worked-example-modexp-price-vs-bound.md) — 看见模幂重计价 ≠ 已经是 198 那道复杂度公式；看见更便宜 ≠ 已经改了接口或算法；看见最低气价 ≠ 已经能对小输入无限便宜；2565 ≠ 7823 ≠ 206 ≠ 198 原文（不变量 227）
+- [`worked-example-bn128-cut-vs-verify.md`](worked-example-bn128-cut-vs-verify.md) — 看见 bn128 加 / 乘 / 配对降价 ≠ 已经换了算法；看见更便宜 ≠ 已经在验签；看见本页 ≠ 已经是通用曲线算术；1108 ≠ 2537 ≠ 199 ≠ 196/197 原文（不变量 228）
+- [`worked-example-selfbalance-vs-balance.md`](worked-example-selfbalance-vs-balance.md) — 看见本账户余额指令 ≠ 已经是按地址查余额；看见给自己查余额 ≠ 已经按本账户价扣；看见树依赖涨价 ≠ 已经是本笔冷热 / 已经是磁盘 O(1)；1884 ≠ 2929 ≠ 169 ≠ 101 ≠ 150（不变量 229）
+- [`worked-example-blake2f-vs-hash.md`](worked-example-blake2f-vs-hash.md) — 看见 BLAKE2 压缩函数 F ≠ 已经是 BLAKE2b 哈希；看见本页 ≠ 已经能验 Equihash / 已经是中继 / 已经有隐私；152 ≠ keccak / SHA3（不变量 230）
+- [`worked-example-shift-vs-arithmetic.md`](worked-example-shift-vs-arithmetic.md) — 看见原生移位指令 ≠ 已经用算术拼过移位；看见算术右移 ≠ 已经是有符号除；看见更便宜 ≠ 已经是位域打包产品；145 ≠ 已经改了旧字节码（不变量 231）
+- [`worked-example-returndata-vs-memory.md`](worked-example-returndata-vs-memory.md) — 看见返回数据缓冲 ≠ 已经是内存；看见本页 ≠ 已经是 calldata / 已经用两次调用先问长度；看见失败数据能再取 ≠ 已经是 140；下一次类调用 ≠ 缓冲还在（不变量 232）
+- [`worked-example-delegatecall-vs-callcode.md`](worked-example-delegatecall-vs-callcode.md) — 看见委托调用 ≠ 已经是 CALLCODE；看见父作用域发送者传到子作用域 ≠ 已经是普通 CALL；看见可变代码源 ≠ 已经是 7702；能塞进调用数据 ≠ 已经是本页（不变量 233）
+- [`worked-example-homestead-vs-already-done.md`](worked-example-homestead-vs-already-done.md) — 看见交易创建变贵 ≠ 已经改了 CREATE；看见交易拒高 s ≠ 已经让 ECRECOVER 拒；看见创建失败不再留空合约 ≠ 已经限制代码；看见难度朝均值 ≠ 已经没有炸弹（不变量 234）
+- [`worked-example-receipt-status-vs-gas.md`](worked-example-receipt-status-vs-gas.md) — 看见收据状态码 ≠ 已经能从剩余气推断成功；看见本页 ≠ 已经是中间状态根；看见 RPC 能重放 ≠ 收据里已经有状态码（不变量 236）
+- [`worked-example-call-63rds-vs-oog.md`](worked-example-call-63rds-vs-oog.md) — 看见读树涨价 ≠ 已经换成去掉六十四分之一；看见问超了 ≠ 已经耗尽气；看见建议气限 ≠ 已经是协议帽（不变量 237）
+- [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
+- [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
+- [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）
+- [`worked-example-static-vs-view.md`](worked-example-static-vs-view.md) — 静态帧 ≠ 已经是高级语言只读；没转账 ≠ 已经静态；214 ≠ 140（不变量 178）
+- [`worked-example-psbt-vs-broadcast.md`](worked-example-psbt-vs-broadcast.md) — 看见部分签名包 ≠ 已经能广播；有几张签 ≠ 已经凑齐；174 ≠ 173 ≠ 125（不变量 179）
+- [`worked-example-psbtv2-vs-v0.md`](worked-example-psbtv2-vs-v0.md) — 看见后继版本工作包 ≠ 已经是旧版那份固定未签交易；能再加输入输出 ≠ 已经能广播；370 ≠ 174 ≠ 173 ≠ 125（不变量 186）
+
+平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
+外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  
+可选模块 EndBlocker 出错 ≠ 局部失败：[`../failure-museum/isa-2025-002.md`](../failure-museum/isa-2025-002.md)。  
+停链交易 ≠ 已停链：[`../failure-museum/x-crisis-no-halt.md`](../failure-museum/x-crisis-no-halt.md)。  
+奖励池溢出 ≠ 只是金额：[`../failure-museum/isa-2025-005.md`](../failure-museum/isa-2025-005.md)。  
+未初始化被挡账户 ≠ 可归属地址：[`../failure-museum/asa-2024-003.md`](../failure-museum/asa-2024-003.md)。  
+Int/Dec ≠ 位宽已齐：[`../failure-museum/asa-2024-010.md`](../failure-museum/asa-2024-010.md)。  
+跨链 ack JSON ≠ 已确定：[`../failure-museum/isa-2025-001.md`](../failure-museum/isa-2025-001.md)。  
+授权代发 ≠ 内层已认证：[`../failure-museum/elderflower.md`](../failure-museum/elderflower.md)。  
+ValidateBasic 读本地钟 ≠ 已确定：[`../failure-museum/jackfruit.md`](../failure-museum/jackfruit.md)。  
+「停链」不是一种事故：[`../failure-museum/worked-example-halt-surfaces.md`](../failure-museum/worked-example-halt-surfaces.md)。
+
+课：L1.4 编码、L1.6 随机与确定性、L4.4 ABCI+WAL、L5.3 多客户端同根、L9.3 存储。  
+博物馆：BIP 50、CVE-2010-5139、CVE-2018-17144、CVE-2012-2459、CVE-2024-52912、CVE-2024-52913、CVE-2019-25220（含 52916）。屏蔽池可靠性：CVE-2019-7167。  
+模式：canonical-encoding、multi-client-determinism。  
+反模式：noncanonical-accepted、half-written-state、impl-limit-as-consensus、local-rng-in-apply、authz-sold-as-validated、local-clock-sold-as-validatebasic。

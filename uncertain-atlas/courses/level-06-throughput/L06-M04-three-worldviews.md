@@ -1,0 +1,113 @@
+# L6.4 三种并行世界观
+
+优先级：必学（本 Level 的毕业课）  
+先修：L6.1–L6.3
+
+---
+
+## A. 先修知识
+
+三份档案和前三课。本课只横排，不增加新机制。
+
+---
+
+## B. 核心问题
+
+**「并行」到底是预先声明、类型所有权，还是乐观执行？不确定第一版该偷地图还是偷发动机？**
+
+---
+
+## C. 直觉（ELI15）
+
+同一条公路三种交规：
+
+1. **出发前报路线**（Solana）：调度所看得见谁会撞。
+2. **私家车走辅路，公交车走主干**（Sui）：类型决定要不要红绿灯。
+3. **先开，撞了再倒车对准官方车道顺序**（Aptos）：官方车道顺序仍然存在。
+
+没有第四种魔法：「因为 TPS 高所以不用顺序」。
+
+---
+
+## D. 正式定义
+
+| 世界观 | 冲突何时可见 | 谁必须诚实 | 热点时 |
+|---|---|---|---|
+| 预先声明 | 调度前 | 交易列表完整；调度器守不相交 | 本地排队、本地费 |
+| 所有权 | 类型/对象图 | address-owned 快路径规则；party 仍排队；shared 上的 BFT | shared 退回全序 |
+| 乐观 STM | 执行后校验 | STM ≡ 串行 L；共识给出 L | 回滚风暴 |
+
+五笔账对三条都适用：协议、执行、网络、状态、硬件。缺一笔就会把官网数字当成原因。
+
+**与 L2 的衔接（事实）：** 并行性首先来自冲突变少，不是执行器品牌。
+
+---
+
+## E. 最小案例
+
+同一场景：一万笔互不相干的支付 + 一笔大家都碰的发行账户。
+
+- 声明锁：一万笔并行，发行账户一条队。
+- 所有权：一万笔若是 owned 硬币，可走快路径；发行若是 shared，仍排队。
+- STM：一万笔很少回滚；发行账户附近反复 abort。
+
+三种系统在这一笔热账户上都会「变慢」。差别是慢的形状：锁等待、共识排队、还是回滚。
+
+---
+
+## F. 真实项目
+
+Solana、Sui、Aptos。Avalanche 对照的是共识抽样，不是这三种执行世界观——不要塞进本表硬比。C-Chain 事故是 EVM 事故：正确兑现委托语义 ≠ 预编译信任已经改过，见 [`../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md`](../../tracks/failure-museum/avalanche-2025-delegatecall-precompile.md)（不变量 119）。
+
+---
+
+## G. 源码入口
+
+各档案第 16 节。先画你们产品的冲突图，再决定要不要打开那些仓库。
+
+---
+
+## H. 攻击者模型
+
+专打教材把三条合成「新一代都并行所以更安全」。  
+安全仍在：签名、顺序、状态根、崩溃原子性。并行只改性能与实现复杂度。
+
+---
+
+## I. 代价
+
+三条都用复杂度换低争用时的核利用率。  
+结算链若争用本来就低，税可能白缴。  
+后量子：三条都放大验签字节；短槽 + 大委员会最疼。
+
+---
+
+## J. 对「不确定」的意义
+
+决策矩阵的「不确定」列继续空着。本课只往矩阵里加**问题**：
+
+1. 冲突能不能在类型里消灭？
+2. 程序员能不能/该不该声明锁？
+3. 有没有确定的 L？STM 是否值得第一版就上？
+4. 验证者机器门槛会不会把集合收成几家机房？  
+5. 共识票的是序，还是序+本块状态根？（Monad 官方文档的异步执行；仅过滤器页，不抄执行预算表）。顺序已定 ≠ 本块根已交差：[`../../tracks/consensus/worked-example-order-vs-state.md`](../../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）
+6. 访问集主键是账户锁、对象所有权，还是 UTXO ID / `contractID`？谓词通过 ≠ 脚本已经跑完；只读重叠 ≠ 写冲突：[`../../tracks/parallelism/worked-example-utxo-access-list.md`](../../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。看见块级访问名单不是已经并行跑完，也不是已经是 2930：[`../../tracks/implementation/worked-example-block-list-vs-parallel.md`](../../tracks/implementation/worked-example-block-list-vs-parallel.md)（不变量 212）
+
+**建议：** 第一版用「小规则 + 可重放 + 明确最终性」。三种世界观当储备，不当默认发动机。先定序再 Apply 是第四个问题，不是第四个默认发动机。短槽 + 声明调度也不是默认发动机。
+
+---
+
+## 精密检查
+
+见 `tracks/parallelism/`。
+
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 三种世界观都不取消验签 |
+| 协议 | 声明锁 / 所有权 / 乐观 STM |
+| 实现 | 各需不同的确定性钉子 |
+| 部署 | 机器门槛与争用形态 |
+| 经济 | 并行 ≠ 更安全；不确定列空 |
+
+**禁止假学习：** 「新一代都并行所以更安全。」「STM 所以不需要共识。」「Sui 所有交易都绕过共识。」「owned 就是快路径。」「谓词过了就是脚本已跑。」「UTXO 并行就是没有 L。」  
+**边界：** 不写官网 TPS。Solana 停机/降级见博物馆 2020-12-04、2022-04-30、2022-06-01、2022-09-30、2023-02-25、2024-02-06；机密证明见 2025-05-02。Sui 见 2024-11-21、2026-01-14、2026-05 气费砸币、2026-05 DKG 未落盘。Block-STM 提交 ≡ 串行 L：[`../../tracks/parallelism/worked-example-block-stm.md`](../../tracks/parallelism/worked-example-block-stm.md)（不变量 122）。其它停机仍等原文。Monad 只读 [`../../protocols/monad/README.md`](../../protocols/monad/README.md)，不写 19 节。顺序 ≠ 状态：[`../../tracks/consensus/worked-example-order-vs-state.md`](../../tracks/consensus/worked-example-order-vs-state.md)（不变量 136）。Fuel 访问集：[`../../tracks/parallelism/worked-example-utxo-access-list.md`](../../tracks/parallelism/worked-example-utxo-access-list.md)（不变量 143）。块级访问名单 ≠ 已经并行：[`../../tracks/implementation/worked-example-block-list-vs-parallel.md`](../../tracks/implementation/worked-example-block-list-vs-parallel.md)（不变量 212）。不另写 19 节。

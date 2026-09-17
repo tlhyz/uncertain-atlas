@@ -1,0 +1,100 @@
+# L7.1 模块化四件套
+
+优先级：必学  
+先修：L0.7，L4.4
+
+---
+
+## A. 先修知识
+
+一条「单片」链往往把四件事焊在同一条状态机里。
+
+---
+
+## B. 核心问题
+
+**执行、结算、共识、数据可用，各自保证什么？拆开之后用户的「到了」还指哪一层？**
+
+---
+
+## C. 直觉
+
+四间车间：
+
+1. **执行：** 把交易变成新余额。  
+2. **结算：** 谁有权说「这段执行算数、桥的钱能兑」。  
+3. **共识：** 谁的排序是 canonical。  
+4. **DA：** 排序承诺过的字节，别人是否真拿得到。
+
+单片链四件事同一帮人做，语义简单，状态易胀。  
+拆开：每间车间可换，但用户要问四次「到了吗」。
+
+---
+
+## D. 正式定义
+
+| 层 | 输出 | 不是 |
+|---|---|---|
+| 执行 | 新状态 | 数据在网上 |
+| 结算 | 对某状态根的桥/兑付规则 | 自动等于 L1 最终 |
+| 共识 | 头的全序/最终 | 体一定能下载 |
+| DA | 体可被诚实节点重建 | 执行正确 |
+
+**事实：** Bitcoin/Ethereum 主网把多件焊在一起（Ethereum 正把 DA 用 blobs 部分外溢）。Celestia 主打共识+DA。Rollup 主打执行，结算常回 Ethereum。  
+**事实：** EIP-4844 把执行气和 blob 气拆成两本账：blob 字节 EVM 不能访问，承诺能；执行层不负责持久化 blob。[精读](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。这是四层里「执行费 ≠ DA 费」的官方钉，不是已经拆成四条独立链。
+
+---
+
+## E. 最小案例
+
+Rollup 执行了 T，状态根 R。  
+数据扣在排序者硬盘。Celestia/以太坊头已最终。  
+轻钱包显示 R。挑战者无法下载数据做欺诈证明。  
+执行「发生了」，DA 失败，结算不应放行。
+
+---
+
+## F. 真实项目
+
+Celestia、Ethereum+rollup、Polkadot（执行在平行，安全在中继）。
+
+---
+
+## G. 源码
+
+先画你们产品的「到了」箭头指到哪一层，再找对应仓库。
+
+---
+
+## H. 攻击者视角
+
+专打用户把四层涂成一个绿勾。
+
+---
+
+## I. Trade-off
+
+拆：灵活、涨得动。  
+焊：语义少、假设少。  
+**建议：** 「不确定」第一版先焊成可验证结算机，但文档必须能说出四层名字，免得以后当 rollup 或被当 DA。
+
+---
+
+## J. 对「不确定」的意义
+
+后量子签名变大，首先打的是 **DA 和共识投票**，不是 EVM 功能列表。四层分开记账，才知道 PQ 税缴在哪。
+
+---
+
+## 精密检查
+
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 各层可用不同证明；拆开不自动更安全 |
+| 协议 | 执行 / 结算 / 共识 / DA 输出不同对象 |
+| 实现 | 跨层客户端必须对齐承诺 |
+| 部署 | 一层外包则假设写进用户能看见的句子 |
+| 经济 | 模块化税：桥、延迟、运营分割 |
+
+**禁止假学习：** 「模块化所以更先进。」「拆开了所以更安全。」「都叫 gas 所以执行和 DA 是同一本账。」  
+**边界：** 不把某一 rollup 品牌当四层定义。执行费 ≠ DA 费：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145）。抬高 blob 日程 ≠ 已经改了两套气 / 已经是 PeerDAS：[`../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md`](../../tracks/light-clients/worked-example-blob-schedule-vs-4844.md)（不变量 200）。blob 底价 ≠ 已经并成一套气：[`../../tracks/light-clients/worked-example-blob-reserve-vs-execution.md`](../../tracks/light-clients/worked-example-blob-reserve-vs-execution.md)（不变量 201）。看见只改 blob 参数的专用分叉 ≠ 已经改了执行规则：[`../../tracks/light-clients/worked-example-bpo-vs-hardfork.md`](../../tracks/light-clients/worked-example-bpo-vs-hardfork.md)（不变量 209）。不抄 EIP 参数表。

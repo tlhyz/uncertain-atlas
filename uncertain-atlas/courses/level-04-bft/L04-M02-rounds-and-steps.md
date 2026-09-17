@@ -1,0 +1,102 @@
+# L4.2 高度、轮、步
+
+优先级：必学  
+先修：L4.1，CometBFT 档案第 6 节
+
+---
+
+## A. 先修知识
+
+一个高度只允许最终 commit 一个块。失败了不能「换个块偷偷当同一个高度的另一个最终」。
+
+---
+
+## B. 核心问题
+
+**为什么要有 round？为什么一轮里还要拆 propose / prevote / precommit，而不是问一次？**
+
+---
+
+## C. 直觉
+
+开会：先有人起草（propose），大家举「我看见这份稿了」（prevote），再举「我愿意把这份当决议」（precommit），秘书才盖章（commit）。
+
+起草人掉线或稿子坏了：散会重开一轮，换起草人。  
+高度是「第几号决议」，轮是「第几次尝试」，步是「这次尝试进行到举手的哪一段」。
+
+只举一次手：你不知道别人是「随便看看」还是「已经签字入档」。骗子可以让一半人以为只是看看，另一半以为已经入档。
+
+---
+
+## D. 正式定义
+
+**height h：** 链上第 h 个槽，最多一个 commit 值。  
+**round r：** 在 h 上的第 r 次尝试，proposer 由确定性调度选出。  
+**step：** 该轮内部状态：propose、prevote、precommit（及等待超时）。
+
+两轮投票的原因（协议工程师）：
+
+1. prevote 形成「我们是否在看同一个值」的证据。  
+2. precommit 形成「我们可以锁定并准备 commit」的证据。  
+一张 +2/3 prevote 和一张 +2/3 precommit 不是同一张纸。
+
+超时：部分同步下，等不到票就 `r+1`。超时太短空转，太长卡死。
+
+---
+
+## E. 最小案例
+
+h=9，r=0，proposer V1 掉线。  
+众人超时 → r=1，proposer V2 提出块 B。  
+prevote(B) 凑齐 → precommit(B) 凑齐 → commit(h=9, B)。  
+h=10 开始。没有「再给 h=9 另一个 commit」。
+
+---
+
+## F. 真实项目
+
+CometBFT / Tendermint 教科书状态机。  
+HotStuff 把证书（QC）串起来，换轮更省，思想仍是「先形成可引用的多数证据」。对照，不深挖。
+
+---
+
+## G. 源码
+
+预告：`enterPropose` / `enterPrevote` / `enterPrecommit` / `finalizeCommit` 一类。读转换表，不要读网络层。
+
+---
+
+## H. 攻击者视角
+
+1. 拖延 proposer，逼不断换轮（活性）。  
+2. 对同一轮发出两个 proposal（分裂）。  
+3. 让节点的 round 时钟严重不同步。
+
+---
+
+## I. Trade-off
+
+多一步投票：更清楚「看见」和「锁定」。  
+代价：延迟、消息、后量子下每步都乘签名体积。
+
+---
+
+## J. 对「不确定」的意义
+
+结算语义挂在 **height 的唯一 commit**，不是挂在「我看见一个 proposal」。  
+产品只能把 commit 画成最终。prevote 是内部纸。
+
+---
+
+## 精密检查
+
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 每步消息仍要签 |
+| 协议 | height / round / step；commit 才是结算对象 |
+| 实现 | 步骤机必须确定；省略步骤会投出矛盾票 |
+| 部署 | 超时触发依赖本地钟；超时数字是本地配置，不是共识参数 |
+| 经济 | 空轮有机会成本，不能用省略步骤省 |
+
+**禁止假学习：** 「投票过 2/3 就可以省略步骤。」「块里有 LastCommit = 本高度已经盖章。」「看见 State 对象 = 已经写进块。」「看见头上的根 = 已经有了 State。」「看见能读本地 State = 已经进了规范。」「看见同一高度换轮 = 已经换了集合。」「看见新验证者加进来 = 已经能跳到队头。」「看见优先级差被缩放 = 已经按人头轮。」「看见票或提案带了 Timestamp = 已经验过这个时间。」「看见冲突提案 = 已经有证据。」「看见非法票被断开 = 已经罚了签的人。」
+**边界：** 超时与解锁谓词以规范为准，不在本课写死伪代码。Prevote / precommit 的被签字节见 [`../../tracks/consensus/worked-example-vote-signbytes.md`](../../tracks/consensus/worked-example-vote-signbytes.md)；两步不是同一哈希再签一次。块头时间不是「全网同意的现在」：PBTS timely 窗 ≠ BFT Time 中位数，见 [`../../tracks/consensus/worked-example-pbts.md`](../../tracks/consensus/worked-example-pbts.md)。复算中位数 ≠ 故障者不能抬高 Time：CSA-2026-001。本地超时不是最终性：`timeout_commit` 是已经 commit 之后再等，见 [`../../tracks/consensus/worked-example-timeouts.md`](../../tracks/consensus/worked-example-timeouts.md)。仓库默认 MaxBytes 不是第一轮活性 SLA：`timeout_propose` 必须对照块上限，见 [ASA-2023-002](../../tracks/failure-museum/asa-2023-002.md)。+2/3 不是其余 Commit 槽位已签：见 [CVE-2020-15091](../../tracks/failure-museum/cve-2020-15091.md)。本头 LastCommit ≠ 本高度已经 +2/3：[`../../tracks/consensus/worked-example-lastcommit-vs-this-block.md`](../../tracks/consensus/worked-example-lastcommit-vs-this-block.md)（不变量 148）。本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State：[`../../tracks/implementation/worked-example-state-vs-gossip.md`](../../tracks/implementation/worked-example-state-vs-gossip.md)（不变量 300）。不要抄验证者人数上限。不要写怎样拼 State 字段或怎样算头上的根。同一高度换轮 ≠ 已经换了集合；新加入 ≠ 已经能跳到队头：[`../../tracks/consensus/worked-example-round-vs-set.md`](../../tracks/consensus/worked-example-round-vs-set.md)（不变量 302）。不要抄惩罚系数。不要写怎样算优先级或怎样缩放。票上 Timestamp ≠ 已经验过这个时间；冲突提案 ≠ 已经有证据：[`../../tracks/consensus/worked-example-vote-ts-vs-checked.md`](../../tracks/consensus/worked-example-vote-ts-vs-checked.md)（不变量 304）。不要抄类型字节。不要写怎样记上次签过的高度轮类型。不要写 amnesia 分类。
