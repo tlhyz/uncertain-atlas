@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「四门里有 Snapshot Connection 就必须实现快照、必须两头都做、已经没有这条对象」，必须分开门在是不是已经必须实现、给人快照或给自己装回是不是已经必须两头都做、选择不实现是不是已经没有 state sync 这条对象。可以跳过「看见四门就已经必须做快照」。第一版默认可从创世。不要另写怎样实现快照方法或怎样配 state sync。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「四门里有 Snapshot Connection 就必须实现快照、必须两头都做、已经没有这条对象」，必须分开门在是不是已经必须实现、给人快照或给自己装回是不是已经必须两头都做、选择不实现是不是已经没有 state sync 这条对象。可以跳过「看见四门就已经必须做快照」。第一版默认可从创世。不要另写怎样实现快照方法或怎样配 state sync。334 snapshot-conn vs required bundled unbundling 完成（932 item 1 / 933 item 2 / 934 item 3）；精读 [`worked-example-snapshot-conn-notmust-vs-bundled.md`](worked-example-snapshot-conn-notmust-vs-bundled.md)（不变量 932 item 1）。
 
 ## 本页不抄
 

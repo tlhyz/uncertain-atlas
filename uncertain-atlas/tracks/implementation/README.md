@@ -165,6 +165,9 @@
 - [`worked-example-params-delay-notvalset-vs-bundled.md`](worked-example-params-delay-notvalset-vs-bundled.md) — 参数H+1≠already validator H+2/last_commit H+3/settled；≠333 bundled（不变量 912）
 - [`worked-example-params-delay-noteffective-vs-bundled.md`](worked-example-params-delay-noteffective-vs-bundled.md) — 本高回了≠already effective at H/this-height Prepare/settled；≠333 bundled（不变量 911）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
+- [`worked-example-snapshot-conn-notgone-vs-bundled.md`](worked-example-snapshot-conn-notgone-vs-bundled.md) — 选择不实现≠already no-state-sync/genesis-only/settled；≠334 bundled（不变量 934）
+- [`worked-example-snapshot-conn-notboth-vs-bundled.md`](worked-example-snapshot-conn-notboth-vs-bundled.md) — 给人快照或装回≠already must-do-both/restored/settled；≠334 bundled（不变量 933）
+- [`worked-example-snapshot-conn-notmust-vs-bundled.md`](worked-example-snapshot-conn-notmust-vs-bundled.md) — 四门有Snapshot≠already must implement/snapshotted/settled；≠334 bundled（不变量 932）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
 - [`worked-example-finalize-persist-notskip-vs-bundled.md`](worked-example-finalize-persist-notskip-vs-bundled.md) — 记住Commit高度≠already app ahead/can skip/settled；≠335 bundled（不变量 904）
 - [`worked-example-finalize-persist-notfin-vs-bundled.md`](worked-example-finalize-persist-notfin-vs-bundled.md) — 必须在Commit落盘≠already in Finalize/unlocked/settled；≠335 bundled（不变量 903）

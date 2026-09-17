@@ -1,3 +1,18 @@
+| A4430 | 记录 | 会与 334 / 38 / 329 / 932 / 933 糊成「看见可选就已经没有 state sync 这条对象 interchangeable、就已经从创世是唯一合法路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 应用选择不实现 not already no-state-sync-object / not already genesis-only / not already settled 正式三事（334 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。334 snapshot-conn vs required bundled unbundling 完成（934 item 3） |
+| A4431 | 高 | 看见应用选择不实现 会被写成已经没有 state sync 这条对象 interchangeable | 官方 Snapshot Connection item 3：not already no-state-sync-object |
+| A4432 | 高 | 看见快照管理可选 会被写成已经从创世是唯一合法路径 interchangeable | 官方 Snapshot Connection item 3：not already genesis-only |
+| A4433 | 高 | 看见可选 会被写成已经交差 interchangeable | 官方 Snapshot Connection item 3：not already settled |
+| A4434 | 中 | 怎样实现快照方法会被抄进不确定 | 不抄。不写怎样实现快照方法或怎样配 state sync。不另写 19 节 |
+| A4425 | 记录 | 会与 334 / 321 / 38 / 932 / 934 糊成「看见给人快照就已经必须两头都做 interchangeable、就已经装完 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 给人快照或给自己装回 not already must-do-both / not already restored / not already settled 正式三事（334 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。334 snapshot-conn vs required bundled unbundling 续（933 item 2） |
+| A4426 | 高 | 看见给人快照或给自己装回 会被写成已经必须两头都做 interchangeable | 官方 Snapshot Connection item 2：not already must-do-both |
+| A4427 | 高 | 看见能装回 会被写成已经装完 interchangeable | 官方 Snapshot Connection item 2：not already restored |
+| A4428 | 高 | 看见写了「和 / 或」 会被写成已经交差 interchangeable | 官方 Snapshot Connection item 2：not already settled |
+| A4429 | 中 | 怎样实现快照方法会被抄进不确定 | 不抄。不写怎样实现快照方法或怎样配 state sync。不另写 19 节 |
+| A4420 | 记录 | 会与 334 / 322 / 321 / 933 / 934 糊成「看见四门就已经必须实现快照 interchangeable、就已经拍过快照 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 四门里有 Snapshot Connection not already must implement snapshots / not already snapshotted / not already settled 正式三事（334 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。334 snapshot-conn vs required bundled unbundling 启动（932 item 1） |
+| A4421 | 高 | 看见四门里有 Snapshot Connection 会被写成已经必须实现快照 interchangeable / 322 interchangeable | 官方 Snapshot Connection item 1：not already must implement snapshots / not 322 |
+| A4422 | 高 | 看见四门齐了 会被写成已经拍过快照 interchangeable | 官方 Snapshot Connection item 1：not already snapshotted |
+| A4423 | 高 | 看见连接名在 会被写成已经交差 interchangeable | 官方 Snapshot Connection item 1：not already settled |
+| A4424 | 中 | 怎样实现快照方法会被抄进不确定 | 不抄。不写怎样实现快照方法或怎样配 state sync。不另写 19 节 |
 | A4415 | 记录 | 会与 339 / 313 / 328 / 929 / 930 糊成「看见有 ProcessProposal 就已经是 CheckTx interchangeable、就已经是 Finalize interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposal 对付这种行为 not already CheckTx / not already Finalize / not already settled 正式三事（339 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。339 checktx-weak vs process bundled unbundling 完成（931 item 3） |
 | A4416 | 高 | 看见 ProcessProposal 对付这种行为 会被写成已经是 CheckTx interchangeable | 官方 CheckTx 弱过滤器 item 3：not already CheckTx |
 | A4417 | 高 | 看见点名了这道门 会被写成已经是 Finalize interchangeable | 官方 CheckTx 弱过滤器 item 3：not already Finalize |

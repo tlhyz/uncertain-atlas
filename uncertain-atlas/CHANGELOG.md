@@ -1,3 +1,15 @@
+## 2026-09-17（续 1051）
+
+- 不变量 934；语料 C912；模式 name-the-snapshot-conn-notgone-bar；反模式 snapshot-conn-notgone-sold-as-bundled；L10.3 第 903 条。填 L4.4 / CometBFT 档案 应用选择不实现 not already no-state-sync-object / not already genesis-only / not already settled 正式三事（334 余量）。334 snapshot-conn vs required bundled unbundling 完成（934 item 3）。
+
+## 2026-09-17（续 1050）
+
+- 不变量 933；语料 C911；模式 name-the-snapshot-conn-notboth-bar；反模式 snapshot-conn-notboth-sold-as-bundled；L10.3 第 902 条。填 L4.4 / CometBFT 档案 给人快照或给自己装回 not already must-do-both / not already restored / not already settled 正式三事（334 余量）。334 snapshot-conn vs required bundled unbundling 续（933 item 2）。
+
+## 2026-09-17（续 1049）
+
+- 不变量 932；语料 C910；模式 name-the-snapshot-conn-notmust-bar；反模式 snapshot-conn-notmust-sold-as-bundled；L10.3 第 901 条。填 L4.4 / CometBFT 档案 四门里有 Snapshot Connection not already must implement snapshots / not already snapshotted / not already settled 正式三事（334 余量）。334 snapshot-conn vs required bundled unbundling 启动（932 item 1）。
+
 ## 2026-09-17（续 1048）
 
 - 不变量 931；语料 C909；模式 name-the-checktx-weak-notproc-bar；反模式 checktx-weak-notproc-sold-as-bundled；L10.3 第 900 条。填 L4.4 / CometBFT 档案 ProcessProposal 对付这种行为 not already CheckTx / not already Finalize / not already settled 正式三事（339 余量）。339 checktx-weak vs process bundled unbundling 完成（931 item 3）。

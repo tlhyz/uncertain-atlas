@@ -1,3 +1,6 @@
+- [`name-the-snapshot-conn-notgone-bar.md`](name-the-snapshot-conn-notgone-bar.md) — 应用选择不实现 not already no-state-sync-object / not already genesis-only / not already settled 正式三事（334 余量）（不变量 934）
+- [`name-the-snapshot-conn-notboth-bar.md`](name-the-snapshot-conn-notboth-bar.md) — 给人快照或给自己装回 not already must-do-both / not already restored / not already settled 正式三事（334 余量）（不变量 933）
+- [`name-the-snapshot-conn-notmust-bar.md`](name-the-snapshot-conn-notmust-bar.md) — 四门里有 Snapshot Connection not already must implement snapshots / not already snapshotted / not already settled 正式三事（334 余量）（不变量 932）
 - [`name-the-checktx-weak-notproc-bar.md`](name-the-checktx-weak-notproc-bar.md) — ProcessProposal 对付这种行为 not already CheckTx / not already Finalize / not already settled 正式三事（339 余量）（不变量 931）
 - [`name-the-checktx-weak-notpool-bar.md`](name-the-checktx-weak-notpool-bar.md) — 拜占庭能提案一满块无效交易 not already pool-blocked / not already out-of-consensus / not already settled 正式三事（339 余量）（不变量 930）
 - [`name-the-checktx-weak-notsort-bar.md`](name-the-checktx-weak-notsort-bar.md) — 不该验排序相关有效性 not already should-check-in-CheckTx / not already execute-state-checked / not already settled 正式三事（339 余量）（不变量 929）

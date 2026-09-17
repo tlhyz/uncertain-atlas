@@ -1,3 +1,6 @@
+- [`snapshot-conn-notgone-sold-as-bundled.md`](snapshot-conn-notgone-sold-as-bundled.md) — 应用选择不实现 被写成已经没有 state sync 这条对象 / 已经从创世是唯一合法路径 / 已经交差（不变量 934）
+- [`snapshot-conn-notboth-sold-as-bundled.md`](snapshot-conn-notboth-sold-as-bundled.md) — 给人快照或给自己装回 被写成已经必须两头都做 / 已经装完 / 已经交差（不变量 933）
+- [`snapshot-conn-notmust-sold-as-bundled.md`](snapshot-conn-notmust-sold-as-bundled.md) — 四门里有 Snapshot Connection 被写成已经必须实现快照 / 已经拍过快照 / 已经交差（不变量 932）
 - [`checktx-weak-notproc-sold-as-bundled.md`](checktx-weak-notproc-sold-as-bundled.md) — ProcessProposal 对付这种行为 被写成已经是 CheckTx / 已经是 Finalize / 已经交差（不变量 931）
 - [`checktx-weak-notpool-sold-as-bundled.md`](checktx-weak-notpool-sold-as-bundled.md) — 拜占庭能提案一满块无效交易 被写成已经被池子挡住 / 已经进不了共识 / 已经交差（不变量 930）
 - [`checktx-weak-notsort-sold-as-bundled.md`](checktx-weak-notsort-sold-as-bundled.md) — 不该验排序相关有效性 被写成已经该在 CheckTx 里验 / 已经按将要执行的那份验过 / 已经交差（不变量 929）
