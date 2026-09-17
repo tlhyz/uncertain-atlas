@@ -1,3 +1,18 @@
+| A3740 | 记录 | 会与 378 / 375 / 400 / 723 / 397 / 741 / 794 / 795 糊成「看见拒了人就已经能接着装 interchangeable、就已经停 interchangeable、就已经齐 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 reject_senders not already can continue / not already halted / not already complete 正式三事（378 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。378 refetch vs restored bundled unbundling 完成（796 item 3） |
+| A3741 | 高 | 看见 reject_senders 会被写成已经能接着装 interchangeable / 375 interchangeable | 官方 ApplySnapshotChunk 再拉 item 3：not already can continue / not 375 |
+| A3742 | 高 | 看见拒了人 会被写成已经停 interchangeable / 400 interchangeable | 官方 ApplySnapshotChunk 再拉 item 3：not already halted / not 400 |
+| A3743 | 高 | 看见已装的还在 会被写成已经齐 interchangeable | 官方 ApplySnapshotChunk 再拉 item 3：not already complete |
+| A3744 | 中 | 怎样写 ApplySnapshotChunk 会被抄进不确定 | 不抄。不写怎样写 ApplySnapshotChunk。不另写 19 节 |
+| A3735 | 记录 | 会与 378 / 332 / 398 / 719 / 375 / 794 / 796 糊成「看见列了块号就已经齐 interchangeable、就已经交差 interchangeable、就已经是同一份 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 refetch_chunks not already complete / not already settled / not already same snapshot 正式三事（378 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。378 refetch vs restored bundled unbundling 续（795 item 2） |
+| A3736 | 高 | 看见 refetch_chunks 会被写成已经齐 interchangeable / 332 interchangeable | 官方 ApplySnapshotChunk 再拉 item 2：not already complete / not 332 |
+| A3737 | 高 | 看见列了块号 会被写成已经交差 interchangeable / 398 interchangeable | 官方 ApplySnapshotChunk 再拉 item 2：not already settled / not 398 |
+| A3738 | 高 | 看见按顺序 会被写成已经是同一份 interchangeable | 官方 ApplySnapshotChunk 再拉 item 2：not already same snapshot |
+| A3739 | 中 | 怎样写 ApplySnapshotChunk 会被抄进不确定 | 不抄。不写怎样写 ApplySnapshotChunk。不另写 19 节 |
+| A3730 | 记录 | 会与 378 / 321 / 502 / 656 / 398 / 719 / 795 / 796 糊成「看见能再拉就已经封了 interchangeable、就已经齐 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 引擎不自己做 not already banned / not already complete / not already settled 正式三事（378 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。378 refetch vs restored bundled unbundling 启动（794 item 1） |
+| A3731 | 高 | 看见引擎不自己做 会被写成已经封了 interchangeable / 321 interchangeable | 官方 ApplySnapshotChunk 再拉 item 1：not already banned / not 321 |
+| A3732 | 高 | 看见能封 会被写成已经齐 interchangeable / 502 interchangeable | 官方 ApplySnapshotChunk 再拉 item 1：not already complete / not 502 |
+| A3733 | 高 | 看见有指令 会被写成已经交差 interchangeable | 官方 ApplySnapshotChunk 再拉 item 1：not already settled |
+| A3734 | 中 | 怎样写 ApplySnapshotChunk 会被抄进不确定 | 不抄。不写怎样写 ApplySnapshotChunk。不另写 19 节 |
 | A3725 | 记录 | 会与 379 / 370 / 367 / 791 / 792 糊成「看见写了 ABCI 版本就已经是握手对齐 interchangeable、就已经排了优先 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 abci_version not already handshake / not already prioritized / not already settled 正式三事（379 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。379 infover vs appversion bundled unbundling 完成（793 item 3） |
 | A3726 | 高 | 看见 abci_version 会被写成已经是握手对齐 interchangeable / 370 interchangeable | 官方 Info 请求版本 item 3：not already handshake / not 370 |
 | A3727 | 高 | 看见写了语义版本 会被写成已经排了优先 interchangeable / 367 interchangeable | 官方 Info 请求版本 item 3：not already prioritized / not 367 |

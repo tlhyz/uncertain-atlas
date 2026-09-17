@@ -1,3 +1,15 @@
+## 2026-09-17（续 913）
+
+- 不变量 796；语料 C774；模式 name-the-refetch-notcontinue-bar；反模式 refetch-notcontinue-sold-as-bundled；L10.3 第 765 条。填 L4.4 / CometBFT 档案 reject_senders not already can continue / not already halted / not already complete 正式三事（378 余量）。378 refetch vs restored bundled unbundling 完成（796 item 3）。
+
+## 2026-09-17（续 912）
+
+- 不变量 795；语料 C773；模式 name-the-refetch-notcomplete-bar；反模式 refetch-notcomplete-sold-as-bundled；L10.3 第 764 条。填 L4.4 / CometBFT 档案 refetch_chunks not already complete / not already settled / not already same snapshot 正式三事（378 余量）。378 refetch vs restored bundled unbundling 续（795 item 2）。
+
+## 2026-09-17（续 911）
+
+- 不变量 794；语料 C772；模式 name-the-refetch-notbanned-bar；反模式 refetch-notbanned-sold-as-bundled；L10.3 第 763 条。填 L4.4 / CometBFT 档案 引擎不自己做 not already banned / not already complete / not already settled 正式三事（378 余量）。378 refetch vs restored bundled unbundling 启动（794 item 1）。
+
 ## 2026-09-17（续 910）
 
 - 不变量 793；语料 C771；模式 name-the-infover-nothandshake-bar；反模式 infover-nothandshake-sold-as-bundled；L10.3 第 762 条。填 L4.4 / CometBFT 档案 abci_version not already handshake / not already prioritized / not already settled 正式三事（379 余量）。379 infover vs appversion bundled unbundling 完成（793 item 3）。

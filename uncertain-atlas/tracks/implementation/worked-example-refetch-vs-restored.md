@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了再拉就已经封了、已经齐、已经能接着装」，必须分开应用可以再拉块或封邻居、引擎不自己做是不是已经封了、refetch_chunks 不论 result 都再拉再装是不是已经齐、reject_senders 不论 Result 都拒这些人是不是已经能接着装。可以跳过「看见回了再拉就已经封了」。不要另写怎样写 ApplySnapshotChunk。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了再拉就已经封了、已经齐、已经能接着装」，必须分开应用可以再拉块或封邻居、引擎不自己做是不是已经封了、refetch_chunks 不论 result 都再拉再装是不是已经齐、reject_senders 不论 Result 都拒这些人是不是已经能接着装。可以跳过「看见回了再拉就已经封了」。不要另写怎样写 ApplySnapshotChunk。378 refetch vs restored bundled unbundling 完成（794 item 1 / 795 item 2 / 796 item 3）；精读 [`worked-example-refetch-notbanned-vs-bundled.md`](worked-example-refetch-notbanned-vs-bundled.md)（不变量 794 item 1）。
 
 ## 本页不抄
 

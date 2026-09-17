@@ -1,3 +1,6 @@
+- [`name-the-refetch-notcontinue-bar.md`](name-the-refetch-notcontinue-bar.md) — reject_senders not already can continue / not already halted / not already complete 正式三事（378 余量）（不变量 796）
+- [`name-the-refetch-notcomplete-bar.md`](name-the-refetch-notcomplete-bar.md) — refetch_chunks not already complete / not already settled / not already same snapshot 正式三事（378 余量）（不变量 795）
+- [`name-the-refetch-notbanned-bar.md`](name-the-refetch-notbanned-bar.md) — 引擎不自己做 not already banned / not already complete / not already settled 正式三事（378 余量）（不变量 794）
 - [`name-the-infover-nothandshake-bar.md`](name-the-infover-nothandshake-bar.md) — abci_version not already handshake / not already prioritized / not already settled 正式三事（379 余量）（不变量 793）
 - [`name-the-infover-notaligned-bar.md`](name-the-infover-notaligned-bar.md) — block_version / p2p_version not already versions aligned / not already full history / not already settled 正式三事（379 余量）（不变量 792）
 - [`name-the-infover-notappver-bar.md`](name-the-infover-notappver-bar.md) — Info 请求 version not already app_version / not already header AppHash / not already settled 正式三事（379 余量）（不变量 791）

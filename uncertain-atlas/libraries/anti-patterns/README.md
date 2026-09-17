@@ -1,3 +1,6 @@
+- [`refetch-notcontinue-sold-as-bundled.md`](refetch-notcontinue-sold-as-bundled.md) — reject_senders 被写成已经能接着装 / 已经停 / 已经齐（不变量 796）
+- [`refetch-notcomplete-sold-as-bundled.md`](refetch-notcomplete-sold-as-bundled.md) — refetch_chunks 被写成已经齐 / 已经交差 / 已经是同一份（不变量 795）
+- [`refetch-notbanned-sold-as-bundled.md`](refetch-notbanned-sold-as-bundled.md) — 引擎不自己做 被写成已经封了 / 已经齐 / 已经交差（不变量 794）
 - [`infover-nothandshake-sold-as-bundled.md`](infover-nothandshake-sold-as-bundled.md) — abci_version 被写成已经是握手对齐 / 已经排了优先 / 已经交差（不变量 793）
 - [`infover-notaligned-sold-as-bundled.md`](infover-notaligned-sold-as-bundled.md) — 两列被写成已经版本也对上 / 已经有完整历史 / 已经交差（不变量 792）
 - [`infover-notappver-sold-as-bundled.md`](infover-notappver-sold-as-bundled.md) — Info 请求 version 被写成已经是 app_version / 已经印进本头 AppHash / 已经交差（不变量 791）
