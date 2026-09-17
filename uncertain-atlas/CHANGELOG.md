@@ -1,3 +1,15 @@
+## 2026-09-17（续 1021）
+
+- 不变量 904；语料 C882；模式 name-the-finalize-persist-notskip-bar；反模式 finalize-persist-notskip-sold-as-bundled；L10.3 第 873 条。填 L4.4 / CometBFT 档案 记住上次成功 Commit 高度 not already app ahead / not already can skip / not already settled 正式三事（335 余量）。335 finalize-persist vs commit bundled unbundling 完成（904 item 3）。
+
+## 2026-09-17（续 1020）
+
+- 不变量 903；语料 C881；模式 name-the-finalize-persist-notfin-bar；反模式 finalize-persist-notfin-sold-as-bundled；L10.3 第 872 条。填 L4.4 / CometBFT 档案 必须在 Commit 落盘 not already persisted in Finalize / not already unlocked / not already settled 正式三事（335 余量）。335 finalize-persist vs commit bundled unbundling 续（903 item 2）。
+
+## 2026-09-17（续 1019）
+
+- 不变量 902；语料 C880；模式 name-the-finalize-persist-notdisk-bar；反模式 finalize-persist-notdisk-sold-as-bundled；L10.3 第 871 条。填 L4.4 / CometBFT 档案 Finalize 改了状态 not already persisted / not already Commit / not already settled 正式三事（335 余量）。335 finalize-persist vs commit bundled unbundling 启动（902 item 1）。
+
 ## 2026-09-17（续 1018）
 
 - 不变量 901；语料 C879；模式 name-the-prepare-timeout-notlost-bar；反模式 prepare-timeout-notlost-sold-as-bundled；L10.3 第 870 条。填 L4.4 / CometBFT 档案 又开一轮 not already lost liveness / not already timeout frozen / not already settled 正式三事（327 余量）。327 prepare-timeout vs liveness bundled unbundling 完成（901 item 3）。

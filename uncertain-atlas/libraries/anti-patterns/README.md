@@ -1,3 +1,6 @@
+- [`finalize-persist-notskip-sold-as-bundled.md`](finalize-persist-notskip-sold-as-bundled.md) — 记住 Commit 高度 被写成已经能单独比引擎高 / 已经能跳步 / 已经交差（不变量 904）
+- [`finalize-persist-notfin-sold-as-bundled.md`](finalize-persist-notfin-sold-as-bundled.md) — 必须在 Commit 落盘 被写成已经在 Finalize 落了 / 已经解锁 / 已经交差（不变量 903）
+- [`finalize-persist-notdisk-sold-as-bundled.md`](finalize-persist-notdisk-sold-as-bundled.md) — Finalize 改了状态 被写成已经落盘 / 已经 Commit / 已经交差（不变量 902）
 - [`prepare-timeout-notlost-sold-as-bundled.md`](prepare-timeout-notlost-sold-as-bundled.md) — 又开一轮 被写成已经丢了活性 / 超时已经不再涨 / 已经交差（不变量 901）
 - [`prepare-timeout-notfit-sold-as-bundled.md`](prepare-timeout-notfit-sold-as-bundled.md) — 填了 TimeoutPropose 被写成已经装得下 / 钟已经不会响 / 已经交差（不变量 900）
 - [`prepare-timeout-notpath-sold-as-bundled.md`](prepare-timeout-notpath-sold-as-bundled.md) — 立刻整块执行 被写成已经离开关键路径 / 已经不挡提议钟 / 已经交差（不变量 899）

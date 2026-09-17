@@ -1,3 +1,6 @@
+- [`name-the-finalize-persist-notskip-bar.md`](name-the-finalize-persist-notskip-bar.md) — 记住上次成功 Commit 高度 not already app ahead / not already can skip / not already settled 正式三事（335 余量）（不变量 904）
+- [`name-the-finalize-persist-notfin-bar.md`](name-the-finalize-persist-notfin-bar.md) — 必须在 Commit 落盘 not already persisted in Finalize / not already unlocked / not already settled 正式三事（335 余量）（不变量 903）
+- [`name-the-finalize-persist-notdisk-bar.md`](name-the-finalize-persist-notdisk-bar.md) — Finalize 改了状态 not already persisted / not already Commit / not already settled 正式三事（335 余量）（不变量 902）
 - [`name-the-prepare-timeout-notlost-bar.md`](name-the-prepare-timeout-notlost-bar.md) — 又开一轮 not already lost liveness / not already timeout frozen / not already settled 正式三事（327 余量）（不变量 901）
 - [`name-the-prepare-timeout-notfit-bar.md`](name-the-prepare-timeout-notfit-bar.md) — 填了 TimeoutPropose not already fits / not already clock silent / not already settled 正式三事（327 余量）（不变量 900）
 - [`name-the-prepare-timeout-notpath-bar.md`](name-the-prepare-timeout-notpath-bar.md) — 立刻整块执行 not already left critical path / not already not blocking clock / not already settled 正式三事（327 余量）（不变量 899）

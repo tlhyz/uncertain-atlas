@@ -1,3 +1,18 @@
+| A4280 | 记录 | 会与 335 / 320 / 5 / 902 / 903 糊成「看见记住了高度就已经能单独比引擎高 interchangeable、就已经能跳步 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 记住上次成功 Commit 高度 not already app ahead / not already can skip / not already settled 正式三事（335 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。335 finalize-persist vs commit bundled unbundling 完成（904 item 3） |
+| A4281 | 高 | 看见记住上次成功 Commit 高度 会被写成已经能单独比引擎高 interchangeable | 官方 Finalize/Commit item 3：not already app ahead |
+| A4282 | 高 | 看见能告诉从哪接 会被写成已经能跳步 interchangeable | 官方 Finalize/Commit item 3：not already can skip |
+| A4283 | 高 | 看见有这个高度 会被写成已经交差 interchangeable | 官方 Finalize/Commit item 3：not already settled |
+| A4284 | 中 | 怎样落盘或怎样写 Commit 会被抄进不确定 | 不抄。不写怎样落盘或怎样写 Commit。不另写 19 节 |
+| A4275 | 记录 | 会与 335 / 310 / 632 / 902 / 904 糊成「看见必须在 Commit 落盘就已经在 Finalize 落了 interchangeable、就已经解锁 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 必须在 Commit 落盘 not already persisted in Finalize / not already unlocked / not already settled 正式三事（335 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。335 finalize-persist vs commit bundled unbundling 续（903 item 2） |
+| A4276 | 高 | 看见必须在 Commit 落盘 会被写成已经在 Finalize 落了 interchangeable | 官方 Finalize/Commit item 2：not already persisted in Finalize |
+| A4277 | 高 | 看见返回前写完 会被写成已经解锁 interchangeable | 官方 Finalize/Commit item 2：not already unlocked |
+| A4278 | 高 | 看见 Commit 绿了 会被写成已经交差 interchangeable | 官方 Finalize/Commit item 2：not already settled |
+| A4279 | 中 | 怎样落盘或怎样写 Commit 会被抄进不确定 | 不抄。不写怎样落盘或怎样写 Commit。不另写 19 节 |
+| A4270 | 记录 | 会与 335 / 478 / 320 / 5 / 903 / 904 糊成「看见 Finalize 改了就已经落盘 interchangeable、就已经 Commit interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 改了状态 not already persisted / not already Commit / not already settled 正式三事（335 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。335 finalize-persist vs commit bundled unbundling 启动（902 item 1） |
+| A4271 | 高 | 看见 Finalize 改了状态 会被写成已经落盘 interchangeable / 478 interchangeable | 官方 Finalize/Commit item 1：not already persisted / not 478 |
+| A4272 | 高 | 看见决定块来了 会被写成已经 Commit interchangeable | 官方 Finalize/Commit item 1：not already Commit |
+| A4273 | 高 | 看见能转移 会被写成已经交差 interchangeable | 官方 Finalize/Commit item 1：not already settled |
+| A4274 | 中 | 怎样落盘或怎样写 Commit 会被抄进不确定 | 不抄。不写怎样落盘或怎样写 Commit。不另写 19 节 |
 | A4265 | 记录 | 会与 327 / 340 / 52 / 311 / 899 / 900 糊成「看见又开一轮就已经丢了活性 interchangeable、就已经超时不再涨 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 又开一轮 not already lost liveness / not already timeout frozen / not already settled 正式三事（327 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。327 prepare-timeout vs liveness bundled unbundling 完成（901 item 3） |
 | A4266 | 高 | 看见又开一轮 会被写成已经丢了活性 interchangeable | 官方 Req 1 item 3：not already lost liveness |
 | A4267 | 高 | 看见 TimeoutPropose 只是初值 会被写成超时已经不再涨 interchangeable | 官方 Req 1 item 3：not already timeout frozen |

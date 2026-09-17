@@ -148,6 +148,9 @@
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-finalize-persist-notskip-vs-bundled.md`](worked-example-finalize-persist-notskip-vs-bundled.md) — 记住Commit高度≠already app ahead/can skip/settled；≠335 bundled（不变量 904）
+- [`worked-example-finalize-persist-notfin-vs-bundled.md`](worked-example-finalize-persist-notfin-vs-bundled.md) — 必须在Commit落盘≠already in Finalize/unlocked/settled；≠335 bundled（不变量 903）
+- [`worked-example-finalize-persist-notdisk-vs-bundled.md`](worked-example-finalize-persist-notdisk-vs-bundled.md) — Finalize改了状态≠already persisted/Commit/settled；≠335 bundled（不变量 902）
 - [`worked-example-finalize-persist-vs-commit.md`](worked-example-finalize-persist-vs-commit.md) — Finalize 改了状态 ≠ 已经落盘；必须在 Commit 落盘 ≠ 已经在 Finalize 落了；记住上次成功 Commit 高度 ≠ 已经能跳步（不变量 335）
 - [`worked-example-precision-vs-msgdelay.md`](worked-example-precision-vs-msgdelay.md) — 填了 Precision ≠ 已经是 MessageDelay；填了两个 ≠ 已经启用 PBTS；用于 PBTS ≠ 已经是永恒常数（不变量 336）
 - [`worked-example-maxbytes-cap-vs-unlimited.md`](worked-example-maxbytes-cap-vs-unlimited.md) — -1 就按 100 MB 验 ≠ 已经没有上限；应用自己卡体积 ≠ 已经引擎不管了；必须 -1 或不超过 100 MB ≠ 已经是默认 21 MB（不变量 337）
