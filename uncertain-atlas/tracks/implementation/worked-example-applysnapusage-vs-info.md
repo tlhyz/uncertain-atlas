@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Apply 了 chunk 就已经验完、已经 Info 对了、已经齐」，必须分开 verify each chunk 是不是 Only AppHash 可信任就交差、all chunks accepted 后 Info 是不是装块时就 Info 对了 / Transition interchangeable、unable to retrieve next chunk 是不是 refetch 就齐。可以跳过「看见 Apply 了 chunk 就已经验完」。不要另写怎样做增量验。 485 applysnapusage unbundling 在本页 item 1 启动；精读 [`worked-example-applysnapusage-notverify-vs-bundled.md`](worked-example-applysnapusage-notverify-vs-bundled.md)（不变量 653 item 1）；续 654 applysnapusage-notinfo；续 655 applysnapusage-notunable。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Apply 了 chunk 就已经验完、已经 Info 对了、已经齐」，必须分开 verify each chunk 是不是 Only AppHash 可信任就交差、all chunks accepted 后 Info 是不是装块时就 Info 对了 / Transition interchangeable、unable to retrieve next chunk 是不是 refetch 就齐。可以跳过「看见 Apply 了 chunk 就已经验完」。不要另写怎样做增量验。 485 applysnapusage unbundling 在本页 item 1 启动；精读 [`worked-example-applysnapusage-notverify-vs-bundled.md`](worked-example-applysnapusage-notverify-vs-bundled.md)（不变量 653 item 1）；续 [`worked-example-applysnapusage-notinfo-vs-bundled.md`](worked-example-applysnapusage-notinfo-vs-bundled.md)（不变量 654 item 2）；续 655 applysnapusage-notunable。
 
 ## 本页不抄
 
