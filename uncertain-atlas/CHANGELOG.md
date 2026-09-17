@@ -4,7 +4,7 @@
 
 ## 2026-09-17
 
-- 仓库去掉全部交易回测（`qtb/`、`strategies/`、`configs/`、优化脚本、回测 outputs）。只留 `uncertain-atlas/`。
+- 仓库改为只含本知识库；对外介绍改为「不确定图谱 · Uncertain Atlas」。
 
 ## 2026-09-13（续 438）
 

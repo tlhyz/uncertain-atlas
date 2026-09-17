@@ -2,8 +2,6 @@
 
 全球区块链架构图谱 + 「不确定」设计参考库。
 
-本仓库只保留本知识库。交易回测代码已删除。
-
 **最高准则：** [`GOAL.md`](GOAL.md)（含细致 / 精密 / 全面）  
 **目录说明：** [`ARCHITECTURE.md`](ARCHITECTURE.md)  
 **审核日志：** [`AUDIT_LOG.md`](AUDIT_LOG.md)

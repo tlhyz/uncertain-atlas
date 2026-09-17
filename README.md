@@ -1,19 +1,20 @@
-# Uncertain Atlas
+# 不确定图谱 · Uncertain Atlas
 
-全球区块链架构图谱 + 「不确定」设计参考库。
+全球区块链架构图谱，也是「不确定」链的设计参考库。
 
-本仓库**只保留区块链知识库**。Gate / 网格 / 马丁 / 永续回测代码已全部移除。
+用来把一条链从钱包到最终确认讲清楚，并给「不确定」的后量子结算设计攒可对照的材料。  
+不是交易软件，没有网格、马丁、回测或下单。
 
-入口：[`uncertain-atlas/README.md`](uncertain-atlas/README.md)
+从这里读：[`uncertain-atlas/README.md`](uncertain-atlas/README.md)
 
-| 读什么 | 文件 |
-|--------|------|
+| | |
+|--|--|
 | 最高准则 | [`uncertain-atlas/GOAL.md`](uncertain-atlas/GOAL.md) |
-| 目录与五条轨 | [`uncertain-atlas/ARCHITECTURE.md`](uncertain-atlas/ARCHITECTURE.md) |
+| 目录（五条轨） | [`uncertain-atlas/ARCHITECTURE.md`](uncertain-atlas/ARCHITECTURE.md) |
 | 通读路径 | [`uncertain-atlas/index/04-study-path.md`](uncertain-atlas/index/04-study-path.md) |
 | Level 0–10 | [`uncertain-atlas/index/00-master-roadmap.md`](uncertain-atlas/index/00-master-roadmap.md) |
-| 课程 | [`uncertain-atlas/courses/`](uncertain-atlas/courses/README.md) |
-| 协议档案 | [`uncertain-atlas/protocols/`](uncertain-atlas/protocols/README.md) |
+| 课程 | [`uncertain-atlas/courses/README.md`](uncertain-atlas/courses/README.md) |
+| 协议档案 | [`uncertain-atlas/protocols/README.md`](uncertain-atlas/protocols/README.md) |
 
 ```text
 uncertain-atlas/
