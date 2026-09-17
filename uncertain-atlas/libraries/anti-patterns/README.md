@@ -1,3 +1,4 @@
+- [`infousage-nothandshake-sold-as-bundled.md`](infousage-nothandshake-sold-as-bundled.md) — Used to sync during handshake 被写成已经 Info 握手 bundled / 已经 QueryState 启动对齐 / 已经 Info 请求 version 栏（不变量 669）
 - [`infousage-notquerystate-sold-as-bundled.md`](infousage-notquerystate-sold-as-bundled.md) — Return application state 被写成已经 QueryState / 已经 Info data 栏 / 已经 handshake sync 交差（不变量 668）
 - [`infousage-notemptyiff-sold-as-bundled.md`](infousage-notemptyiff-sold-as-bundled.md) — empty iff 被写成已经 Info 车道 bundled / 已经 default in table / 已经 CheckTx lane_id in range（不变量 667）
 - [`infousage-notlaneoptional-sold-as-bundled.md`](infousage-notlaneoptional-sold-as-bundled.md) — optional lane_priorities 被写成已经 Info 车道 bundled / 已经 CheckTx empty lane_id default lane / 已经 Priority 共识顺序（不变量 666）

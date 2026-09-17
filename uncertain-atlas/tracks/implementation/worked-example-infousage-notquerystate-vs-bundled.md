@@ -25,7 +25,7 @@
 
 - **Return information about application state not QueryState ≠ 314 querystate interchangeable：** 官方把 Methods Info Usage Return state 单句和 QueryState vs ExecuteTxState 路径分开。
 - **Return state not Info response data arbitrary info ≠ 389 info-lane-fields interchangeable：** 官方把 Usage Return state 单句和 Info Response data 栏路径分开。
-- **Return state not handshake sync already persisted ≠ 370 info-handshake bundled interchangeable：** 官方把 Usage Return state 单句和 handshake sync = persisted 路径分开；494 infousage vs handshake bundled unbundling 启动（668 item 1）。
+- **Return state not handshake sync already persisted ≠ 370 info-handshake bundled interchangeable：** 官方把 Usage Return state 单句和 handshake sync = persisted 路径分开；494 infousage vs handshake bundled unbundling 在本页 item 1 完成。
 
 ## 和相邻页的边界
 
@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage Return information about application state not QueryState / not Info response data arbitrary info / not handshake sync already persisted 正式三事（494 余量），必须分开 Return information about application state 是不是 QueryState interchangeable / 314 querystate interchangeable / 371 queryheight interchangeable、回报应用状态 是不是 Info response data arbitrary info interchangeable / 389 info-lane-fields interchangeable / 379 info-req-version interchangeable、能回 Info 是不是 handshake sync already persisted interchangeable / 370 info-handshake bundled interchangeable / 320 crash recovery interchangeable / 665 infousage-notcommitpersist interchangeable。可以跳过「看见 Return information about application state 就已经 QueryState interchangeable / 就已经 Info data 栏 interchangeable / 就已经 handshake sync 交差 interchangeable」。不要另写怎样写 Info。494 infousage vs handshake bundled unbundling 在本页 item 1 启动。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage Return information about application state not QueryState / not Info response data arbitrary info / not handshake sync already persisted 正式三事（494 余量），必须分开 Return information about application state 是不是 QueryState interchangeable / 314 querystate interchangeable / 371 queryheight interchangeable、回报应用状态 是不是 Info response data arbitrary info interchangeable / 389 info-lane-fields interchangeable / 379 info-req-version interchangeable、能回 Info 是不是 handshake sync already persisted interchangeable / 370 info-handshake bundled interchangeable / 320 crash recovery interchangeable / 665 infousage-notcommitpersist interchangeable。可以跳过「看见 Return information about application state 就已经 QueryState interchangeable / 就已经 Info data 栏 interchangeable / 就已经 handshake sync 交差 interchangeable」。不要另写怎样写 Info。494 infousage vs handshake bundled unbundling 在本页 item 1 完成；续 [`worked-example-infousage-nothandshake-vs-bundled.md`](worked-example-infousage-nothandshake-vs-bundled.md)（不变量 669 item 2）。
 
 ## 本页不抄
 

@@ -1,3 +1,7 @@
+## 2026-09-17（续 786）
+
+- 不变量 669；语料 C646；模式 name-the-infousage-nothandshake-bar；反模式 infousage-nothandshake-sold-as-bundled；L10.3 第 638 条。填 L4.4 / CometBFT 档案 Info Usage Used to sync during handshake not Info 握手 bundled / not QueryState snapshot replay / not Info request version handshake verified 正式三事（494 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。494 infousage vs handshake bundled unbundling 续（669 item 2）。
+
 ## 2026-09-17（续 785）
 
 - 不变量 668；语料 C645；模式 name-the-infousage-notquerystate-bar；反模式 infousage-notquerystate-sold-as-bundled；L10.3 第 637 条。填 L4.4 / CometBFT 档案 Info Usage Return information about application state not QueryState / not Info response data arbitrary info / not handshake sync already persisted 正式三事（494 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。494 infousage vs handshake bundled unbundling 启动（668 item 1）。
