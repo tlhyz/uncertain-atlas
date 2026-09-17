@@ -1,3 +1,15 @@
+## 2026-09-17（续 916）
+
+- 不变量 799；语料 C777；模式 name-the-querypath-notrequired-bar；反模式 querypath-notrequired-sold-as-bundled；L10.3 第 768 条。填 L4.4 / CometBFT 档案 类型路径 not already required / not already replicated / not already fresh 正式三事（377 余量）。377 querypath vs store bundled unbundling 完成（799 item 3）。
+
+## 2026-09-17（续 915）
+
+- 不变量 798；语料 C776；模式 name-the-querypath-notengine-bar；反模式 querypath-notengine-sold-as-bundled；L10.3 第 767 条。填 L4.4 / CometBFT 档案 path /store not already engine using / not already filter / not already settled 正式三事（377 余量）。377 querypath vs store bundled unbundling 续（798 item 2）。
+
+## 2026-09-17（续 914）
+
+- 不变量 797；语料 C775；模式 name-the-querypath-notheight-bar；反模式 querypath-notheight-sold-as-bundled；L10.3 第 766 条。填 L4.4 / CometBFT 档案 data not already Query height / not already fresh / not already settled 正式三事（377 余量）。377 querypath vs store bundled unbundling 启动（797 item 1）。
+
 ## 2026-09-17（续 913）
 
 - 不变量 796；语料 C774；模式 name-the-refetch-notcontinue-bar；反模式 refetch-notcontinue-sold-as-bundled；L10.3 第 765 条。填 L4.4 / CometBFT 档案 reject_senders not already can continue / not already halted / not already complete 正式三事（378 余量）。378 refetch vs restored bundled unbundling 完成（796 item 3）。

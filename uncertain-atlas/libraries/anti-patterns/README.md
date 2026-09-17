@@ -1,3 +1,6 @@
+- [`querypath-notrequired-sold-as-bundled.md`](querypath-notrequired-sold-as-bundled.md) — 类型路径 被写成已经是正常运转必须有 / 已经复制 / 已经新鲜（不变量 799）
+- [`querypath-notengine-sold-as-bundled.md`](querypath-notengine-sold-as-bundled.md) — /store 被写成已经是引擎在用 / 已经是过滤 / 已经交差（不变量 798）
+- [`querypath-notheight-sold-as-bundled.md`](querypath-notheight-sold-as-bundled.md) — data 被写成已经是 Query 高度 / 已经新鲜 / 已经交差（不变量 797）
 - [`refetch-notcontinue-sold-as-bundled.md`](refetch-notcontinue-sold-as-bundled.md) — reject_senders 被写成已经能接着装 / 已经停 / 已经齐（不变量 796）
 - [`refetch-notcomplete-sold-as-bundled.md`](refetch-notcomplete-sold-as-bundled.md) — refetch_chunks 被写成已经齐 / 已经交差 / 已经是同一份（不变量 795）
 - [`refetch-notbanned-sold-as-bundled.md`](refetch-notbanned-sold-as-bundled.md) — 引擎不自己做 被写成已经封了 / 已经齐 / 已经交差（不变量 794）

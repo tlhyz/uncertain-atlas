@@ -330,6 +330,9 @@
 - [`worked-example-propstat-notaccept-vs-bundled.md`](worked-example-propstat-notaccept-vs-bundled.md) — ACCEPT prevote≠settled/347 must Accept/33 four gates；≠376 bundled（不变量 714）
 - [`worked-example-propstat-notunknown-vs-bundled.md`](worked-example-propstat-notunknown-vs-bundled.md) — UNKNOWN crash≠33 four gates/434 Verify UNKNOWN/402 Offer UNKNOWN；≠376 bundled（不变量 713）
 - [`worked-example-proposalstatus-vs-prevote.md`](worked-example-proposalstatus-vs-prevote.md) — UNKNOWN 一律是错、引擎当应用坏了会崩 ≠ 已经是四门已经结算；ACCEPT 表示应用认为提案合法、共识会发 Prevote ≠ 已经交差；REJECT 表示应用认为提案非法、共识会发 Prevote nil ≠ 已经能稍后改裁决（不变量 376）
+- [`worked-example-querypath-notrequired-vs-bundled.md`](worked-example-querypath-notrequired-vs-bundled.md) — type path≠329 required/replicated/fresh；≠377 bundled（不变量 799）
+- [`worked-example-querypath-notengine-vs-bundled.md`](worked-example-querypath-notengine-vs-bundled.md) — /store≠326 engine/filter/settled；≠377 bundled（不变量 798）
+- [`worked-example-querypath-notheight-vs-bundled.md`](worked-example-querypath-notheight-vs-bundled.md) — data≠371 Query height/fresh/settled；≠377 bundled（不变量 797）
 - [`worked-example-querypath-vs-store.md`](worked-example-querypath-vs-store.md) — data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 ≠ 已经是 Query 高度；path 按 URI 路径解释、/store 必须按键查 ≠ 已经是引擎在用；规范建议允许 /accounts / /votes 这类查询 ≠ 已经是正常运转必须有（不变量 377）
 - [`worked-example-refetch-notcontinue-vs-bundled.md`](worked-example-refetch-notcontinue-vs-bundled.md) — reject_senders≠375 can-continue/halted/complete；≠378 bundled（不变量 796）
 - [`worked-example-refetch-notcomplete-vs-bundled.md`](worked-example-refetch-notcomplete-vs-bundled.md) — refetch_chunks≠332 complete/settled/same snapshot；≠378 bundled（不变量 795）

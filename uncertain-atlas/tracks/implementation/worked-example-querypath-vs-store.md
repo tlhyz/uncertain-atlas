@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能带 data / path 就已经是 Query 高度、已经是引擎在用、已经是正常运转必须有」，必须分开 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用是不是已经是 Query 高度、path 按 URI 路径解释、/store 必须按键查是不是已经是引擎在用、规范建议允许 /accounts / /votes 这类查询是不是已经是正常运转必须有。可以跳过「看见能带 data / path 就已经是 Query 高度」。不要另写怎样写 Query 路径。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能带 data / path 就已经是 Query 高度、已经是引擎在用、已经是正常运转必须有」，必须分开 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用是不是已经是 Query 高度、path 按 URI 路径解释、/store 必须按键查是不是已经是引擎在用、规范建议允许 /accounts / /votes 这类查询是不是已经是正常运转必须有。可以跳过「看见能带 data / path 就已经是 Query 高度」。不要另写怎样写 Query 路径。377 querypath vs store bundled unbundling 完成（797 item 1 / 798 item 2 / 799 item 3）；精读 [`worked-example-querypath-notheight-vs-bundled.md`](worked-example-querypath-notheight-vs-bundled.md)（不变量 797 item 1）。
 
 ## 本页不抄
 

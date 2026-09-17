@@ -1,3 +1,18 @@
+| A3755 | 记录 | 会与 377 / 329 / 380 / 790 / 384 / 777 / 797 / 798 糊成「看见写了类型路径就已经是正常运转必须有 interchangeable、就已经复制 interchangeable、就已经新鲜 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 类型路径 not already required / not already replicated / not already fresh 正式三事（377 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。377 querypath vs store bundled unbundling 完成（799 item 3） |
+| A3756 | 高 | 看见类型路径 会被写成已经是正常运转必须有 interchangeable / 329 interchangeable | 官方 Query 路径 item 3：not already required / not 329 |
+| A3757 | 高 | 看见建议允许 会被写成已经复制 interchangeable / 380 interchangeable | 官方 Query 路径 item 3：not already replicated / not 380 |
+| A3758 | 高 | 看见能查账户 会被写成已经新鲜 interchangeable | 官方 Query 路径 item 3：not already fresh |
+| A3759 | 中 | 怎样写 Query 路径 会被抄进不确定 | 不抄。不写怎样写 Query 路径。不另写 19 节 |
+| A3750 | 记录 | 会与 377 / 326 / 380 / 788 / 384 / 778 / 797 / 799 糊成「看见写了 /store 就已经是引擎在用 interchangeable、就已经是过滤 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 path /store not already engine using / not already filter / not already settled 正式三事（377 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。377 querypath vs store bundled unbundling 续（798 item 2） |
+| A3751 | 高 | 看见 path /store 会被写成已经是引擎在用 interchangeable / 326 interchangeable | 官方 Query 路径 item 2：not already engine using / not 326 |
+| A3752 | 高 | 看见写了 /store 会被写成已经是过滤 interchangeable / 380 interchangeable | 官方 Query 路径 item 2：not already filter / not 380 |
+| A3753 | 高 | 看见键在 data 会被写成已经交差 interchangeable | 官方 Query 路径 item 2：not already settled |
+| A3754 | 中 | 怎样写 Query 路径 会被抄进不确定 | 不抄。不写怎样写 Query 路径。不另写 19 节 |
+| A3745 | 记录 | 会与 377 / 371 / 380 / 789 / 383 / 781 / 798 / 799 糊成「看见填了 data 就已经是 Query 高度 interchangeable、就已经新鲜 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 data not already Query height / not already fresh / not already settled 正式三事（377 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。377 querypath vs store bundled unbundling 启动（797 item 1） |
+| A3746 | 高 | 看见 data 会被写成已经是 Query 高度 interchangeable / 371 interchangeable | 官方 Query 路径 item 1：not already Query height / not 371 |
+| A3747 | 高 | 看见填了 data 会被写成已经新鲜 interchangeable / 380 interchangeable | 官方 Query 路径 item 1：not already fresh / not 380 |
+| A3748 | 高 | 看见有字节 会被写成已经交差 interchangeable | 官方 Query 路径 item 1：not already settled |
+| A3749 | 中 | 怎样写 Query 路径 会被抄进不确定 | 不抄。不写怎样写 Query 路径。不另写 19 节 |
 | A3740 | 记录 | 会与 378 / 375 / 400 / 723 / 397 / 741 / 794 / 795 糊成「看见拒了人就已经能接着装 interchangeable、就已经停 interchangeable、就已经齐 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 reject_senders not already can continue / not already halted / not already complete 正式三事（378 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。378 refetch vs restored bundled unbundling 完成（796 item 3） |
 | A3741 | 高 | 看见 reject_senders 会被写成已经能接着装 interchangeable / 375 interchangeable | 官方 ApplySnapshotChunk 再拉 item 3：not already can continue / not 375 |
 | A3742 | 高 | 看见拒了人 会被写成已经停 interchangeable / 400 interchangeable | 官方 ApplySnapshotChunk 再拉 item 3：not already halted / not 400 |

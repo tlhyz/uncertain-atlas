@@ -1,3 +1,6 @@
+- [`name-the-querypath-notrequired-bar.md`](name-the-querypath-notrequired-bar.md) — 类型路径 not already required / not already replicated / not already fresh 正式三事（377 余量）（不变量 799）
+- [`name-the-querypath-notengine-bar.md`](name-the-querypath-notengine-bar.md) — path /store not already engine using / not already filter / not already settled 正式三事（377 余量）（不变量 798）
+- [`name-the-querypath-notheight-bar.md`](name-the-querypath-notheight-bar.md) — data not already Query height / not already fresh / not already settled 正式三事（377 余量）（不变量 797）
 - [`name-the-refetch-notcontinue-bar.md`](name-the-refetch-notcontinue-bar.md) — reject_senders not already can continue / not already halted / not already complete 正式三事（378 余量）（不变量 796）
 - [`name-the-refetch-notcomplete-bar.md`](name-the-refetch-notcomplete-bar.md) — refetch_chunks not already complete / not already settled / not already same snapshot 正式三事（378 余量）（不变量 795）
 - [`name-the-refetch-notbanned-bar.md`](name-the-refetch-notbanned-bar.md) — 引擎不自己做 not already banned / not already complete / not already settled 正式三事（378 余量）（不变量 794）
