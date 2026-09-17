@@ -1,3 +1,18 @@
+| A4520 | 记录 | 会与 324 / 322 / 334 / 950 / 951 糊成「看见只留两份就已经有了全部历史 interchangeable、就已经五个字段都相同 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 只留最近两份 not already all-history / not already five-fields / not already settled 正式三事（324 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。324 snapshot-take vs commit bundled unbundling 完成（952 item 3） |
+| A4521 | 高 | 看见只留最近两份 会被写成已经有了全部历史 interchangeable | 官方 Taking Snapshots item 3：not already all-history |
+| A4522 | 高 | 看见 Hash 对上 会被写成已经五个字段都相同 interchangeable | 官方 Taking Snapshots item 3：not already five-fields |
+| A4523 | 高 | 看见 Hash 会被写成已经交差 interchangeable | 官方 Taking Snapshots item 3：not already settled |
+| A4524 | 中 | 怎样拍快照会被抄进不确定 | 不抄。不写怎样拍快照或怎样切块。不另写 19 节 |
+| A4515 | 记录 | 会与 324 / 323 / 322 / 950 / 952 糊成「看见没停链就已经隔离 interchangeable、就已经各节点相同 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 没停链 not already consistent / not already same-bytes / not already settled 正式三事（324 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。324 snapshot-take vs commit bundled unbundling 续（951 item 2） |
+| A4516 | 高 | 看见没停链 会被写成已经隔离 interchangeable | 官方 Taking Snapshots item 2：not already consistent |
+| A4517 | 高 | 看见在后台拍 会被写成已经各节点相同 interchangeable | 官方 Taking Snapshots item 2：not already same-bytes |
+| A4518 | 高 | 看见同一高度 会被写成已经交差 interchangeable | 官方 Taking Snapshots item 2：not already settled |
+| A4519 | 中 | 怎样拍快照会被抄进不确定 | 不抄。不写怎样拍快照或怎样切块。不另写 19 节 |
+| A4510 | 记录 | 会与 324 / 38 / 321 / 951 / 952 糊成「看见拍了就已经交差之后拍 interchangeable、就已经没有更高高度 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 拍了这个高度 not already after-commit / not already no-higher / not already settled 正式三事（324 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。324 snapshot-take vs commit bundled unbundling 启动（950 item 1） |
+| A4511 | 高 | 看见拍了这个高度 会被写成已经交差之后拍 interchangeable / 38 interchangeable | 官方 Taking Snapshots item 1：not already after-commit / not 38 |
+| A4512 | 高 | 看见拍了 会被写成已经没有更高高度 interchangeable | 官方 Taking Snapshots item 1：not already no-higher |
+| A4513 | 高 | 看见字段在 会被写成已经交差 interchangeable | 官方 Taking Snapshots item 1：not already settled |
+| A4514 | 中 | 怎样拍快照会被抄进不确定 | 不抄。不写怎样拍快照或怎样切块。不另写 19 节 |
 | A4505 | 记录 | 会与 325 / 38 / 147 / 947 / 948 糊成「看见一层根就已经对上最终 AppHash interchangeable、就已经交给下一层 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 一层 ProofOp 的根 not already final-apphash / not already next-value / not already settled 正式三事（325 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。325 query-proof vs apphash bundled unbundling 完成（949 item 3） |
 | A4506 | 高 | 看见一层 ProofOp 的根 会被写成已经对上最终 AppHash interchangeable | 官方 Query Proofs item 3：not already final-apphash |
 | A4507 | 高 | 看见一层对上 会被写成已经交给下一层 interchangeable | 官方 Query Proofs item 3：not already next-value |

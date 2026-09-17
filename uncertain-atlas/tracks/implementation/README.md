@@ -143,6 +143,9 @@
 - [`worked-example-snapshot-restore-vs-offer.md`](worked-example-snapshot-restore-vs-offer.md) — Offer 收下 ≠ 已经装完；一块 chunk 收下 ≠ 已经齐；拉失败换一份 ≠ 已经能接着装（不变量 321）
 - [`worked-example-snapshot-discover-vs-offer.md`](worked-example-snapshot-discover-vs-offer.md) — ListSnapshots 回了 ≠ 已经有了全部快照；挑了最高 ≠ 已经收下；Offer 被拒 ≠ 已经停（不变量 322）
 - [`worked-example-snapshot-switch-vs-history.md`](worked-example-snapshot-switch-vs-history.md) — 装完 ≠ 已经有了 ChainID；AppHash 对上 ≠ 已经版本也对上；切进共识 ≠ 已经有完整历史（不变量 323）
+- [`worked-example-snapshot-take-notall-vs-bundled.md`](worked-example-snapshot-take-notall-vs-bundled.md) — 只留两份≠already all-history/five-fields/settled；≠324 bundled（不变量 952）
+- [`worked-example-snapshot-take-notcons-vs-bundled.md`](worked-example-snapshot-take-notcons-vs-bundled.md) — 没停链≠already consistent/same-bytes/settled；≠324 bundled（不变量 951）
+- [`worked-example-snapshot-take-notafter-vs-bundled.md`](worked-example-snapshot-take-notafter-vs-bundled.md) — 拍了高度≠already after-commit/no-higher/settled；≠324 bundled（不变量 950）
 - [`worked-example-snapshot-take-vs-commit.md`](worked-example-snapshot-take-vs-commit.md) — 拍了这个高度 ≠ 已经交差之后拍的；没停链 ≠ 已经一致；只留最近两份 ≠ 已经有了全部历史快照（不变量 324）
 - [`worked-example-query-proof-notfinal-vs-bundled.md`](worked-example-query-proof-notfinal-vs-bundled.md) — 一层根≠already final-apphash/next-value/settled；≠325 bundled（不变量 949）
 - [`worked-example-query-proof-notmatch-vs-bundled.md`](worked-example-query-proof-notmatch-vs-bundled.md) — 回了Proof≠already matched/one-tree/settled；≠325 bundled（不变量 948）

@@ -1,3 +1,15 @@
+## 2026-09-17（续 1069）
+
+- 不变量 952；语料 C930；模式 name-the-snapshot-take-notall-bar；反模式 snapshot-take-notall-sold-as-bundled；L10.3 第 921 条。填 L4.4 / CometBFT 档案 只留最近两份 not already all-history / not already five-fields / not already settled 正式三事（324 余量）。324 snapshot-take vs commit bundled unbundling 完成（952 item 3）。
+
+## 2026-09-17（续 1068）
+
+- 不变量 951；语料 C929；模式 name-the-snapshot-take-notcons-bar；反模式 snapshot-take-notcons-sold-as-bundled；L10.3 第 920 条。填 L4.4 / CometBFT 档案 没停链 not already consistent / not already same-bytes / not already settled 正式三事（324 余量）。324 snapshot-take vs commit bundled unbundling 续（951 item 2）。
+
+## 2026-09-17（续 1067）
+
+- 不变量 950；语料 C928；模式 name-the-snapshot-take-notafter-bar；反模式 snapshot-take-notafter-sold-as-bundled；L10.3 第 919 条。填 L4.4 / CometBFT 档案 拍了这个高度 not already after-commit / not already no-higher / not already settled 正式三事（324 余量）。324 snapshot-take vs commit bundled unbundling 启动（950 item 1）。
+
 ## 2026-09-17（续 1066）
 
 - 不变量 949；语料 C927；模式 name-the-query-proof-notfinal-bar；反模式 query-proof-notfinal-sold-as-bundled；L10.3 第 918 条。填 L4.4 / CometBFT 档案 一层 ProofOp 的根 not already final-apphash / not already next-value / not already settled 正式三事（325 余量）。325 query-proof vs apphash bundled unbundling 完成（949 item 3）。

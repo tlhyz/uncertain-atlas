@@ -1,3 +1,6 @@
+- [`snapshot-take-notall-sold-as-bundled.md`](snapshot-take-notall-sold-as-bundled.md) — 只留最近两份 被写成已经有了全部历史 / 已经五个字段都相同 / 已经交差（不变量 952）
+- [`snapshot-take-notcons-sold-as-bundled.md`](snapshot-take-notcons-sold-as-bundled.md) — 没停链 被写成已经隔离 / 已经各节点相同 / 已经交差（不变量 951）
+- [`snapshot-take-notafter-sold-as-bundled.md`](snapshot-take-notafter-sold-as-bundled.md) — 拍了这个高度 被写成已经交差之后拍的 / 已经没有更高高度 / 已经交差（不变量 950）
 - [`query-proof-notfinal-sold-as-bundled.md`](query-proof-notfinal-sold-as-bundled.md) — 一层 ProofOp 的根 被写成已经对上最终 AppHash / 已经交给下一层 / 已经交差（不变量 949）
 - [`query-proof-notmatch-sold-as-bundled.md`](query-proof-notmatch-sold-as-bundled.md) — Query 回了 Proof 被写成已经对上 AppHash / 已经是同一棵树 / 已经交差（不变量 948）
 - [`query-proof-nottx-sold-as-bundled.md`](query-proof-nottx-sold-as-bundled.md) — 头上有 AppHash 被写成已经是交易默克尔 / 已经同一种锚 / 已经交差（不变量 947）
