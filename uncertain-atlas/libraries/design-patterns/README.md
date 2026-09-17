@@ -1,3 +1,4 @@
+- [`name-the-finh1-notsettled-bar.md`](name-the-finh1-notsettled-bar.md) — FinalizeBlock When starts consensus for height h+1 not already settled / not persist decision / not finh1 bundled 正式三事（593 余量）（不变量 641）
 - [`name-the-finunlock-notcommitlock-bar.md`](name-the-finunlock-notcommitlock-bar.md) — FinalizeBlock When unlock after optional recheck not Commit lock / not h+1 round 0 / not finunlock bundled 正式三事（592 余量）（不变量 640）
 - [`name-the-finunlock-notnewly-bar.md`](name-the-finunlock-notnewly-bar.md) — FinalizeBlock When newly received transactions can now be checked not optional recheck outstanding txs / not CheckTx optional / not finunlock bundled 正式三事（592 余量）（不变量 639）
 - [`name-the-finunlock-notsettled-bar.md`](name-the-finunlock-notsettled-bar.md) — FinalizeBlock When unlocks the mempool not already settled / not four gates settled / not finunlock bundled 正式三事（592 余量）（不变量 638）

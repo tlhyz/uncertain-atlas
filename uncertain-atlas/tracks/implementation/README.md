@@ -1,3 +1,4 @@
+- [`worked-example-finh1-notsettled-vs-bundled.md`](worked-example-finh1-notsettled-vs-bundled.md) — starts h+1≠settled/persist decision；≠finh1 bundled/round 0/after unlock（不变量 641）
 - [`worked-example-finunlock-notcommitlock-vs-bundled.md`](worked-example-finunlock-notcommitlock-vs-bundled.md) — unlock after recheck≠Commit lock/h+1 round 0；≠finunlock bundled/settled/newly received（不变量 640）
 - [`worked-example-finunlock-notnewly-vs-bundled.md`](worked-example-finunlock-notnewly-vs-bundled.md) — newly received≠optional recheck outstanding/CheckTx optional；≠finunlock bundled/settled/Commit lock（不变量 639）
 - [`worked-example-finunlock-notsettled-vs-bundled.md`](worked-example-finunlock-notsettled-vs-bundled.md) — unlock mempool≠settled/four gates；≠finunlock bundled/newly received/Commit lock（不变量 638）
