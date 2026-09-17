@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Commit Usage retain_height caution，必须分开 Use retain_height with caution 是不是 retain_height 默认 0 就等于已经在剪、all nodes remove historical blocks 是不是已经能从创世再装 / 已经开了 state sync 就交差、Historical blocks required for auditing / replay / light client 是不是已经 persist signal bundled interchangeable。可以跳过「看见 caution 段落就已经在剪」。不要另写怎样填 retain_height。491 commitretaincaution vs kept bundled unbundling 续（677 item 1 / 678 item 2）；精读 [`worked-example-commitretaincaution-notbootstrap-vs-bundled.md`](worked-example-commitretaincaution-notbootstrap-vs-bundled.md)（不变量 678 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Commit Usage retain_height caution，必须分开 Use retain_height with caution 是不是 retain_height 默认 0 就等于已经在剪、all nodes remove historical blocks 是不是已经能从创世再装 / 已经开了 state sync 就交差、Historical blocks required for auditing / replay / light client 是不是已经 persist signal bundled interchangeable。可以跳过「看见 caution 段落就已经在剪」。不要另写怎样填 retain_height。491 commitretaincaution vs kept bundled unbundling 完成（677 item 1 / 678 item 2 / 679 item 3）；精读 [`worked-example-commitretaincaution-notpersist-vs-bundled.md`](worked-example-commitretaincaution-notpersist-vs-bundled.md)（不变量 679 item 3）。
 
 ## 本页不抄
 

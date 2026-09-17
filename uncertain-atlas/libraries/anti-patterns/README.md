@@ -1,3 +1,4 @@
+- [`commitretaincaution-notpersist-sold-as-bundled.md`](commitretaincaution-notpersist-sold-as-bundled.md) — Historical blocks required 被写成已经 with caution / 已经 all nodes remove / 已经 persist signal bundled（不变量 679）
 - [`commitretaincaution-notbootstrap-sold-as-bundled.md`](commitretaincaution-notbootstrap-sold-as-bundled.md) — If all nodes remove historical blocks 被写成已经 retain_height 默认 0 全留 / 已经能从创世再装 / 已经 Historical blocks required（不变量 678）
 - [`commitretaincaution-notdefaultzero-sold-as-bundled.md`](commitretaincaution-notdefaultzero-sold-as-bundled.md) — Use retain_height with caution 被写成已经 retain_height 默认 0 全留 / 已经 blocks below may be removed / 已经 persist signal bundled（不变量 677）
 - [`echousage-notdone-sold-as-bundled.md`](echousage-notdone-sold-as-bundled.md) — Response Message the input string 被写成已经 Echo Usage test already done / 已经 Request Message / 已经 Flush sync response（不变量 676）
