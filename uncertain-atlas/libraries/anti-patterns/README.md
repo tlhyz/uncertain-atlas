@@ -1,3 +1,6 @@
+- [`retain-notgenesis-sold-as-bundled.md`](retain-notgenesis-sold-as-bundled.md) — 全网都删 被写成已经能从创世再装 / 已经能给轻客户端验 / 已经交差（不变量 829）
+- [`retain-nothistory-sold-as-bundled.md`](retain-nothistory-sold-as-bundled.md) — 可删 被写成已经没有历史 / 已经是快照截断 / 已经删完（不变量 828）
+- [`retain-notpruning-sold-as-bundled.md`](retain-notpruning-sold-as-bundled.md) — 默认 0 被写成已经在剪 / 已经交差 / 已经没有历史（不变量 827）
 - [`lane-notinblock-sold-as-bundled.md`](lane-notinblock-sold-as-bundled.md) — 优先级 0 被写成已经进了块 / 已经从池里删掉 / 已经是共识顺序（不变量 826）
 - [`lane-notselected-sold-as-bundled.md`](lane-notselected-sold-as-bundled.md) — 空表对空默认 被写成已经选型 / 已经排了优先 / 已经进了块（不变量 825）
 - [`lane-notpriority-sold-as-bundled.md`](lane-notpriority-sold-as-bundled.md) — 没定义车道 被写成已经排了优先 / 已经是 CheckTx Priority / 已经交差（不变量 824）

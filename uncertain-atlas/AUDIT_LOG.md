@@ -1,3 +1,18 @@
+| A3905 | 记录 | 会与 366 / 38 / 491 / 693 / 323 / 827 / 828 糊成「看见能剪就已经能从创世再装 interchangeable、就已经能给轻客户端验 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 全网都删会永久丢 not already genesis reload / not already light-client verify / not already settled 正式三事（366 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。366 retain vs kept bundled unbundling 完成（829 item 3） |
+| A3906 | 高 | 看见全网都删会永久丢 会被写成已经能从创世再装 interchangeable / 38 interchangeable | 官方 Commit 保留高度 item 3：not already genesis reload / not 38 |
+| A3907 | 高 | 看见开了 state sync 会被写成已经能给轻客户端验 interchangeable | 官方 Commit 保留高度 item 3：not already light-client verify |
+| A3908 | 高 | 看见能丢 会被写成已经交差 interchangeable | 官方 Commit 保留高度 item 3：not already settled |
+| A3909 | 中 | 怎样写 Commit 保留高度 会被抄进不确定 | 不抄。不写怎样写 Commit 保留高度。不另写 19 节 |
+| A3900 | 记录 | 会与 366 / 323 / 491 / 694 / 320 / 827 / 829 糊成「看见回了高度就已经没有历史 interchangeable、就已经是快照截断 interchangeable、就已经删完 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 低于这个高度可删 not already no history / not already snapshot truncated / not already deleted 正式三事（366 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。366 retain vs kept bundled unbundling 续（828 item 2） |
+| A3901 | 高 | 看见低于这个高度可删 会被写成已经没有历史 interchangeable / 323 interchangeable | 官方 Commit 保留高度 item 2：not already no history / not 323 |
+| A3902 | 高 | 看见能删 会被写成已经是快照截断 interchangeable | 官方 Commit 保留高度 item 2：not already snapshot truncated |
+| A3903 | 高 | 看见能剪 会被写成已经删完 interchangeable | 官方 Commit 保留高度 item 2：not already deleted |
+| A3904 | 中 | 怎样写 Commit 保留高度 会被抄进不确定 | 不抄。不写怎样写 Commit 保留高度。不另写 19 节 |
+| A3895 | 记录 | 会与 366 / 320 / 491 / 692 / 370 / 817 / 828 / 829 糊成「看见没填就已经在剪 interchangeable、就已经交差 interchangeable、就已经没有历史 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 retain_height 默认 0 not already pruning / not already settled / not already no history 正式三事（366 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。366 retain vs kept bundled unbundling 启动（827 item 1） |
+| A3896 | 高 | 看见 retain_height 默认 0 会被写成已经在剪 interchangeable | 官方 Commit 保留高度 item 1：not already pruning |
+| A3897 | 高 | 看见字段在 会被写成已经交差 interchangeable / 320 interchangeable | 官方 Commit 保留高度 item 1：not already settled / not 320 |
+| A3898 | 高 | 看见 Commit 回了 会被写成已经没有历史 interchangeable | 官方 Commit 保留高度 item 1：not already no history |
+| A3899 | 中 | 怎样写 Commit 保留高度 会被抄进不确定 | 不抄。不写怎样写 Commit 保留高度。不另写 19 节 |
 | A3890 | 记录 | 会与 367 / 301 / 317 / 498 / 664 / 482 / 704 / 824 / 825 糊成「看见写了 0 就已经进了块 interchangeable、就已经从池里删掉 interchangeable、就已经是共识顺序 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 优先级 0 留给不设道 not already in-block / not already deleted from pool / not already consensus order 正式三事（367 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。367 lane vs priority bundled unbundling 完成（826 item 3） |
 | A3891 | 高 | 看见优先级 0 留给不设道 会被写成已经进了块 interchangeable | 官方 Info 车道 item 3：not already in-block |
 | A3892 | 高 | 看见空 lane_id 会被写成已经从池里删掉 interchangeable / 301 interchangeable | 官方 Info 车道 item 3：not already deleted from pool / not 301 |

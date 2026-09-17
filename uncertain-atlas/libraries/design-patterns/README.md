@@ -1,3 +1,6 @@
+- [`name-the-retain-notgenesis-bar.md`](name-the-retain-notgenesis-bar.md) — 全网都删会永久丢 not already genesis reload / not already light-client verify / not already settled 正式三事（366 余量）（不变量 829）
+- [`name-the-retain-nothistory-bar.md`](name-the-retain-nothistory-bar.md) — 低于这个高度可删 not already no history / not already snapshot truncated / not already deleted 正式三事（366 余量）（不变量 828）
+- [`name-the-retain-notpruning-bar.md`](name-the-retain-notpruning-bar.md) — retain_height 默认 0 not already pruning / not already settled / not already no history 正式三事（366 余量）（不变量 827）
 - [`name-the-lane-notinblock-bar.md`](name-the-lane-notinblock-bar.md) — 优先级 0 留给不设道 not already in-block / not already deleted from pool / not already consensus order 正式三事（367 余量）（不变量 826）
 - [`name-the-lane-notselected-bar.md`](name-the-lane-notselected-bar.md) — 空表对空默认 not already selected / not already prioritized / not already in-block 正式三事（367 余量）（不变量 825）
 - [`name-the-lane-notpriority-bar.md`](name-the-lane-notpriority-bar.md) — 没定义 lane_priorities not already prioritized / not already CheckTx Priority / not already settled 正式三事（367 余量）（不变量 824）

@@ -1,3 +1,15 @@
+## 2026-09-17（续 946）
+
+- 不变量 829；语料 C807；模式 name-the-retain-notgenesis-bar；反模式 retain-notgenesis-sold-as-bundled；L10.3 第 798 条。填 L4.4 / CometBFT 档案 全网都删会永久丢 not already genesis reload / not already light-client verify / not already settled 正式三事（366 余量）。366 retain vs kept bundled unbundling 完成（829 item 3）。
+
+## 2026-09-17（续 945）
+
+- 不变量 828；语料 C806；模式 name-the-retain-nothistory-bar；反模式 retain-nothistory-sold-as-bundled；L10.3 第 797 条。填 L4.4 / CometBFT 档案 低于这个高度可删 not already no history / not already snapshot truncated / not already deleted 正式三事（366 余量）。366 retain vs kept bundled unbundling 续（828 item 2）。
+
+## 2026-09-17（续 944）
+
+- 不变量 827；语料 C805；模式 name-the-retain-notpruning-bar；反模式 retain-notpruning-sold-as-bundled；L10.3 第 796 条。填 L4.4 / CometBFT 档案 retain_height 默认 0 not already pruning / not already settled / not already no history 正式三事（366 余量）。366 retain vs kept bundled unbundling 启动（827 item 1）。
+
 ## 2026-09-17（续 943）
 
 - 不变量 826；语料 C804；模式 name-the-lane-notinblock-bar；反模式 lane-notinblock-sold-as-bundled；L10.3 第 795 条。填 L4.4 / CometBFT 档案 优先级 0 留给不设道 not already in-block / not already deleted from pool / not already consensus order 正式三事（367 余量）。367 lane vs priority bundled unbundling 完成（826 item 3）。

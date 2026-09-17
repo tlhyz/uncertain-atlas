@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Commit 回了高度就已经在剪、已经没有历史、已经能从创世再装」，必须分开 retain_height 默认 0 是不是已经在剪、低于这个高度的块可以被删是不是已经没有历史、全网都删了会永久丢是不是已经能从创世再装。可以跳过「看见 Commit 回了高度就已经在剪」。不要另写怎样写 Commit 保留高度。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Commit 回了高度就已经在剪、已经没有历史、已经能从创世再装」，必须分开 retain_height 默认 0 是不是已经在剪、低于这个高度的块可以被删是不是已经没有历史、全网都删了会永久丢是不是已经能从创世再装。可以跳过「看见 Commit 回了高度就已经在剪」。不要另写怎样写 Commit 保留高度。366 retain vs kept bundled unbundling 完成（827 item 1 / 828 item 2 / 829 item 3）；精读 [`worked-example-retain-notpruning-vs-bundled.md`](worked-example-retain-notpruning-vs-bundled.md)（不变量 827 item 1）。
 
 ## 本页不抄
 
