@@ -1,3 +1,15 @@
+## 2026-09-17（续 880）
+
+- 不变量 763；语料 C741；模式 name-the-infodata-notchktxspace-bar；反模式 infodata-notchktxspace-sold-as-bundled；L10.3 第 732 条。填 L4.4 / CometBFT 档案 Query 回包 codespace not already CheckTx codespace / not already response code / not already settled 正式三事（389 余量）。389 infodata vs appversion bundled unbundling 完成（763 item 3）。
+
+## 2026-09-17（续 879）
+
+- 不变量 762；语料 C740；模式 name-the-infodata-notappversion-bar；反模式 infodata-notappversion-sold-as-bundled；L10.3 第 731 条。填 L4.4 / CometBFT 档案 Info 回包 version not already app_version / not already header AppHash / not already settled 正式三事（389 余量）。389 infodata vs appversion bundled unbundling 续（762 item 2）。
+
+## 2026-09-17（续 878）
+
+- 不变量 761；语料 C739；模式 name-the-infodata-nothandshake-bar；反模式 infodata-nothandshake-sold-as-bundled；L10.3 第 730 条。填 L4.4 / CometBFT 档案 Info 回包 data not already handshake / not already snapshot replay / not already settled 正式三事（389 余量）。389 infodata vs appversion bundled unbundling 启动（761 item 1）。
+
 ## 2026-09-17（续 877）
 
 - 不变量 760；语料 C738；模式 name-the-exectxlog-notheader-bar；反模式 exectxlog-notheader-sold-as-bundled；L10.3 第 729 条。填 L4.4 / CometBFT 档案 ExecTxResult.log / info 非确定 not already printed in header / not already consensus / not already settled 正式三事（414 余量）。414 exectxlog vs querylog bundled unbundling 完成（760 item 3）。

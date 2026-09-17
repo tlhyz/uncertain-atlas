@@ -1,3 +1,6 @@
+- [`name-the-infodata-notchktxspace-bar.md`](name-the-infodata-notchktxspace-bar.md) — Query 回包 codespace not already CheckTx codespace / not already response code / not already settled 正式三事（389 余量）（不变量 763）
+- [`name-the-infodata-notappversion-bar.md`](name-the-infodata-notappversion-bar.md) — Info 回包 version not already app_version / not already header AppHash / not already settled 正式三事（389 余量）（不变量 762）
+- [`name-the-infodata-nothandshake-bar.md`](name-the-infodata-nothandshake-bar.md) — Info 回包 data not already handshake / not already snapshot replay / not already settled 正式三事（389 余量）（不变量 761）
 - [`name-the-exectxlog-notheader-bar.md`](name-the-exectxlog-notheader-bar.md) — ExecTxResult.log / info 非确定 not already printed in header / not already consensus / not already settled 正式三事（414 余量）（不变量 760）
 - [`name-the-exectxlog-notchecktxinfo-bar.md`](name-the-exectxlog-notchecktxinfo-bar.md) — ExecTxResult.info not already CheckTx info / not already Query info / not already settled 正式三事（414 余量）（不变量 759）
 - [`name-the-exectxlog-notquerylog-bar.md`](name-the-exectxlog-notquerylog-bar.md) — ExecTxResult.log not already Query log / not already fresh / not already settled 正式三事（414 余量）（不变量 758）

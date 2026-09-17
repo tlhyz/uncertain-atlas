@@ -342,6 +342,9 @@
 - [`worked-example-paramsevidence-vs-maxbytes.md`](worked-example-paramsevidence-vs-maxbytes.md) — ConsensusParams.evidence 限制拜占庭证据是否合法 ≠ 已经是证据 MaxBytes；ConsensusParams.abci 是 ABCI 相关参数 ≠ 已经 Prepare 带了扩展；ConsensusParams.synchrony 定提案时间戳合法界 ≠ 已经是 PBTS（不变量 386）
 - [`worked-example-inittime-vs-genesis.md`](worked-example-inittime-vs-genesis.md) — InitChain 请求 time 是创世时间 ≠ 已经过了 genesis_time；InitChain 请求 chain_id 是链的 ID ≠ 已经有了 ChainID；InitChain 请求 initial_height 是起步块高度 ≠ 已经能跳步（不变量 387）
 - [`worked-example-initparams-vs-empty.md`](worked-example-initparams-vs-empty.md) — InitChain 请求 consensus_params 是起步共识参数 ≠ 已经没有参数；InitChain 请求 validators 是起步验证者名单 ≠ 已经没有集合；InitChain 请求 app_state_bytes 是序列化起步应用状态 ≠ 已经验过应用状态（不变量 388）
+- [`worked-example-infodata-notchktxspace-vs-bundled.md`](worked-example-infodata-notchktxspace-vs-bundled.md) — Query codespace≠381 CheckTx codespace/response code/already settled；≠389 bundled（不变量 763）
+- [`worked-example-infodata-notappversion-vs-bundled.md`](worked-example-infodata-notappversion-vs-bundled.md) — Info version≠379 app_version/header AppHash/already settled；≠389 bundled（不变量 762）
+- [`worked-example-infodata-nothandshake-vs-bundled.md`](worked-example-infodata-nothandshake-vs-bundled.md) — Info data≠370 handshake/snapshot replay/already settled；≠389 bundled（不变量 761）
 - [`worked-example-infodata-vs-appversion.md`](worked-example-infodata-vs-appversion.md) — Info 回包 data 是任意信息 ≠ 已经是握手对齐；Info 回包 version 是应用软件语义版本 ≠ 已经是 app_version；Query 回包 codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 389）
 - [`worked-example-proofop-notquerylog-vs-bundled.md`](worked-example-proofop-notquerylog-vs-bundled.md) — CheckTx log≠384 Query log/Data used/already settled；≠390 bundled（不变量 745）
 - [`worked-example-proofop-notproofops-vs-bundled.md`](worked-example-proofop-notproofops-vs-bundled.md) — data≠325 proof_ops/AppHash matched/already settled；≠390 bundled（不变量 744）

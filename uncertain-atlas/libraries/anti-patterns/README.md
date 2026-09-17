@@ -1,3 +1,6 @@
+- [`infodata-notchktxspace-sold-as-bundled.md`](infodata-notchktxspace-sold-as-bundled.md) — Query codespace 被写成已经是 CheckTx 码空间 / 已经是回包码 / 已经交差（不变量 763）
+- [`infodata-notappversion-sold-as-bundled.md`](infodata-notappversion-sold-as-bundled.md) — Info version 被写成已经是 app_version / 已经印进本头 / 已经交差（不变量 762）
+- [`infodata-nothandshake-sold-as-bundled.md`](infodata-nothandshake-sold-as-bundled.md) — Info data 被写成已经握手对齐 / 已经是快照重放 / 已经交差（不变量 761）
 - [`exectxlog-notheader-sold-as-bundled.md`](exectxlog-notheader-sold-as-bundled.md) — log / info 非确定 被写成已经印进本头 / 已经是共识 / 已经交差（不变量 760）
 - [`exectxlog-notchecktxinfo-sold-as-bundled.md`](exectxlog-notchecktxinfo-sold-as-bundled.md) — ExecTxResult.info 被写成已经是 CheckTx 附加信息 / 已经是 Query 附加信息 / 已经交差（不变量 759）
 - [`exectxlog-notquerylog-sold-as-bundled.md`](exectxlog-notquerylog-sold-as-bundled.md) — ExecTxResult.log 被写成已经是 Query 日志 / 已经新鲜 / 已经交差（不变量 758）

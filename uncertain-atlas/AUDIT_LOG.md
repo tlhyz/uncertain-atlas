@@ -1,3 +1,18 @@
+| A3575 | 记录 | 会与 389 / 381 / 393 / 748 / 761 / 762 糊成「看见写了空间就已经是 CheckTx 码空间 interchangeable、就已经是回包码 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 codespace not already CheckTx codespace / not already response code / not already settled 正式三事（389 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。389 infodata vs appversion bundled unbundling 完成（763 item 3） |
+| A3576 | 高 | 看见 Query 回包 codespace 会被写成已经是 CheckTx 码空间 interchangeable / 381 interchangeable | 官方 Info 回包余栏 item 3：not already CheckTx codespace / not 381 |
+| A3577 | 高 | 看见写了空间 会被写成已经是回包码 interchangeable / 381 interchangeable | 官方 Info 回包余栏 item 3：not already response code / not 381 |
+| A3578 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 Info 回包余栏 item 3：not already settled |
+| A3579 | 中 | 怎样写 Info 回包余栏 会被抄进不确定 | 不抄。不写怎样写 Info 回包余栏。不另写 19 节 |
+| A3570 | 记录 | 会与 389 / 379 / 761 / 763 糊成「看见回了应用版本就已经是 app_version interchangeable、就已经印进本头 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 回包 version not already app_version / not already header AppHash / not already settled 正式三事（389 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。389 infodata vs appversion bundled unbundling 续（762 item 2） |
+| A3571 | 高 | 看见 Info 回包 version 会被写成已经是 app_version interchangeable / 379 interchangeable | 官方 Info 回包余栏 item 2：not already app_version / not 379 |
+| A3572 | 高 | 看见回了应用版本 会被写成已经印进本头 interchangeable | 官方 Info 回包余栏 item 2：not already header AppHash |
+| A3573 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 Info 回包余栏 item 2：not already settled |
+| A3574 | 中 | 怎样写 Info 回包余栏 会被抄进不确定 | 不抄。不写怎样写 Info 回包余栏。不另写 19 节 |
+| A3565 | 记录 | 会与 389 / 370 / 762 / 763 糊成「看见回了 data 就已经握手对齐 interchangeable、就已经是快照重放 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 回包 data not already handshake / not already snapshot replay / not already settled 正式三事（389 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。389 infodata vs appversion bundled unbundling 启动（761 item 1） |
+| A3566 | 高 | 看见 Info 回包 data 会被写成已经握手对齐 interchangeable / 370 interchangeable | 官方 Info 回包余栏 item 1：not already handshake / not 370 |
+| A3567 | 高 | 看见回了 data 会被写成已经是快照重放 interchangeable / 370 interchangeable | 官方 Info 回包余栏 item 1：not already snapshot replay / not 370 |
+| A3568 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 Info 回包余栏 item 1：not already settled |
+| A3569 | 中 | 怎样写 Info 回包余栏 会被抄进不确定 | 不抄。不写怎样写 Info 回包余栏。不另写 19 节 |
 | A3560 | 记录 | 会与 414 / 316 / 758 / 759 糊成「看见记了日志就已经印进本头 interchangeable、就已经是共识 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult.log / info 非确定 not already printed in header / not already consensus / not already settled 正式三事（414 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。414 exectxlog vs querylog bundled unbundling 完成（760 item 3） |
 | A3561 | 高 | 看见 ExecTxResult.log / info 非确定 会被写成已经印进本头 interchangeable / 316 interchangeable | 官方 ExecTxResult 日志栏 item 3：not already printed in header / not 316 |
 | A3562 | 高 | 看见记了日志 会被写成已经是共识 interchangeable / 316 interchangeable | 官方 ExecTxResult 日志栏 item 3：not already consensus / not 316 |

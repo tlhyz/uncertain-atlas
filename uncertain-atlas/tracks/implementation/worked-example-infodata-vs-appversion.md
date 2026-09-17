@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 Info 余栏就已经是握手对齐、已经是 app_version、已经是 CheckTx 码空间」，必须分开 Info 回包 data 是任意信息是不是已经是握手对齐、Info 回包 version 是应用软件语义版本是不是已经是 app_version、Query 回包 codespace 是码的命名空间是不是已经是 CheckTx 码空间。可以跳过「看见回了 Info 余栏就已经是握手对齐」。不要另写怎样写 Info 回包余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 Info 余栏就已经是握手对齐、已经是 app_version、已经是 CheckTx 码空间」，必须分开 Info 回包 data 是任意信息是不是已经是握手对齐、Info 回包 version 是应用软件语义版本是不是已经是 app_version、Query 回包 codespace 是码的命名空间是不是已经是 CheckTx 码空间。可以跳过「看见回了 Info 余栏就已经是握手对齐」。不要另写怎样写 Info 回包余栏。389 infodata vs appversion bundled unbundling 完成（761 item 1 / 762 item 2 / 763 item 3）；精读 [`worked-example-infodata-nothandshake-vs-bundled.md`](worked-example-infodata-nothandshake-vs-bundled.md)（不变量 761 item 1）。
 
 ## 本页不抄
 
