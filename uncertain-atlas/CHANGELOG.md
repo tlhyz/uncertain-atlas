@@ -1,3 +1,15 @@
+## 2026-09-17（续 991）
+
+- 不变量 874；语料 C852；模式 name-the-req3-nottested-bar；反模式 req3-nottested-sold-as-bundled；L10.3 第 843 条。填 L4.4 / CometBFT 档案 Req 3 是大量测试和自动验证的目标 not already tested / not already engine blocks / not already settled 正式三事（347 余量）。347 req3 vs accept bundled unbundling 完成（874 item 3）。
+
+## 2026-09-17（续 990）
+
+- 不变量 873；语料 C851；模式 name-the-req3-notbyz-bar；反模式 req3-notbyz-sold-as-bundled；L10.3 第 842 条。填 L4.4 / CometBFT 档案 Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 not already only liveness / not already Process nondet / not already settled 正式三事（347 余量）。347 req3 vs accept bundled unbundling 续（873 item 2）。
+
+## 2026-09-17（续 989）
+
+- 不变量 872；语料 C850；模式 name-the-req3-notany-bar；反模式 req3-notany-sold-as-bundled；L10.3 第 841 条。填 L4.4 / CometBFT 档案 正确提议者的准备提案必须被正确接收者 Accept not already any block Accepts / not already default Accept / not already settled 正式三事（347 余量）。347 req3 vs accept bundled unbundling 启动（872 item 1）。
+
 ## 2026-09-17（续 988）
 
 - 不变量 871；语料 C849；模式 name-the-req6-notsafety-bar；反模式 req6-notsafety-sold-as-bundled；L10.3 第 840 条。填 L4.4 / CometBFT 档案 会面对和 Req 5 同一类活性问题 not already lost safety / not already Req 3 proposal coherence / not already settled 正式三事（348 余量）。348 req6 vs accept bundled unbundling 完成（871 item 3）。

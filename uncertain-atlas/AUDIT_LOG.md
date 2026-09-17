@@ -1,3 +1,18 @@
+| A4130 | 记录 | 会与 347 / 338 / 33 / 872 / 873 糊成「看见写了测试目标就已经测过 interchangeable、就已经是引擎会帮你挡 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Req 3 是大量测试和自动验证的目标 not already tested / not already engine blocks / not already settled 正式三事（347 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。347 req3 vs accept bundled unbundling 完成（874 item 3） |
+| A4131 | 高 | 看见 Req 3 是大量测试和自动验证的目标 会被写成已经测过 interchangeable | 官方 Req 3 item 3：not already tested |
+| A4132 | 高 | 看见会 prevote nil 会被写成已经是引擎会帮你挡 interchangeable | 官方 Req 3 item 3：not already engine blocks |
+| A4133 | 高 | 看见写了测试目标 会被写成已经交差 interchangeable | 官方 Req 3 item 3：not already settled |
+| A4134 | 中 | 怎样写 Prepare 或 Process 会被抄进不确定 | 不抄。不写怎样写 Prepare 或 Process。不另写 19 节 |
+| A4125 | 记录 | 会与 347 / 340 / 33 / 872 / 874 糊成「看见算拜占庭就已经只是活性问题 interchangeable、就已经是非确定 bug interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 not already only liveness / not already Process nondet / not already settled 正式三事（347 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。347 req3 vs accept bundled unbundling 续（873 item 2） |
+| A4126 | 高 | 看见 Prepare 或 Process 里有确定 bug 会被写成已经只是活性问题 interchangeable | 官方 Req 3 item 2：not already only liveness |
+| A4127 | 高 | 看见算拜占庭 会被写成已经是非确定 bug interchangeable | 官方 Req 3 item 2：not already Process nondet |
+| A4128 | 高 | 看见 Prepare 也能踩中 会被写成已经交差 interchangeable | 官方 Req 3 item 2：not already settled |
+| A4129 | 中 | 怎样写 Prepare 或 Process 会被抄进不确定 | 不抄。不写怎样写 Prepare 或 Process。不另写 19 节 |
+| A4120 | 记录 | 会与 347 / 33 / 348 / 869 / 873 / 874 糊成「看见必须 Accept 就已经任意块都会过 interchangeable、就已经写了默认 Accept interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 正确提议者的准备提案必须被正确接收者 Accept not already any block Accepts / not already default Accept / not already settled 正式三事（347 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。347 req3 vs accept bundled unbundling 启动（872 item 1） |
+| A4121 | 高 | 看见正确提议者的准备提案必须被正确接收者 Accept 会被写成已经是任意块都会 Accept interchangeable / 33 interchangeable | 官方 Req 3 item 1：not already any block Accepts / not 33 |
+| A4122 | 高 | 看见必须 Accept 会被写成已经写了默认 Accept interchangeable | 官方 Req 3 item 1：not already default Accept |
+| A4123 | 高 | 看见正确进程之间过 会被写成已经交差 interchangeable | 官方 Req 3 item 1：not already settled |
+| A4124 | 中 | 怎样写 Prepare 或 Process 会被抄进不确定 | 不抄。不写怎样写 Prepare 或 Process。不另写 19 节 |
 | A4115 | 记录 | 会与 348 / 347 / 34 / 869 / 870 糊成「看见会伤活性就已经丢了安全性 interchangeable、就已经是提案一致性 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 会面对和 Req 5 同一类活性问题 not already lost safety / not already Req 3 proposal coherence / not already settled 正式三事（348 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。348 req6 vs accept bundled unbundling 完成（871 item 3） |
 | A4116 | 高 | 看见会面对和 Req 5 同一类活性问题 会被写成已经丢了安全性 interchangeable | 官方 Req 6 item 3：not already lost safety |
 | A4117 | 高 | 看见和 Req 5 同一路 会被写成已经是提案一致性 interchangeable | 官方 Req 6 item 3：not already Req 3 proposal coherence |

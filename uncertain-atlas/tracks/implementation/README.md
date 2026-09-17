@@ -157,6 +157,9 @@
 - [`worked-example-maxbytes-overhead-vs-full.md`](worked-example-maxbytes-overhead-vs-full.md) — MaxBytes 减去头集合证据才是交易上限 ≠ 已经整块都能装交易；诚实验证者 MAY 出满 MaxBytes ≠ 已经只会出默认 21 MB；timeout 必须按满块投递延迟算 ≠ 已经填了 TimeoutPropose 就装得下这次 Prepare 执行（不变量 344）
 - [`worked-example-prepare-return-vs-pool.md`](worked-example-prepare-return-vs-pool.md) — 整池可见 ≠ 已经只能看见装得进一块的子集；聚合体积可以超过 max_tx_bytes ≠ 已经能回超限列表；Req 2 保证回的列表不让块超字节上限 ≠ 已经是引擎会帮你裁（不变量 345）
 - [`worked-example-abci20-upgrade-vs-height.md`](worked-example-abci20-upgrade-vs-height.md) — 必须协调升级 ≠ 已经只改 VoteExtensionsEnableHeight；h_e 必须高于当前 ≠ 已经能写成当前高度；引擎按当前高度决定存什么要什么 ≠ 已经按创世配好了（不变量 346）
+- [`worked-example-req3-nottested-vs-bundled.md`](worked-example-req3-nottested-vs-bundled.md) — Req3测试目标≠already tested/engine blocks/settled；≠347 bundled（不变量 874）
+- [`worked-example-req3-notbyz-vs-bundled.md`](worked-example-req3-notbyz-vs-bundled.md) — 确定bug算拜占庭≠only liveness/nondet/settled；≠347 bundled（不变量 873）
+- [`worked-example-req3-notany-vs-bundled.md`](worked-example-req3-notany-vs-bundled.md) — 必须Accept≠any block/default Accept/settled；≠347 bundled（不变量 872）
 - [`worked-example-req3-coherence-vs-accept.md`](worked-example-req3-coherence-vs-accept.md) — 正确提议者的准备提案必须被正确接收者 Accept ≠ 已经是任意块都会 Accept；Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 ≠ 已经只是活性问题；Req 3 是大量测试和自动验证的目标 ≠ 已经测过（不变量 347）
 - [`worked-example-req6-notsafety-vs-bundled.md`](worked-example-req6-notsafety-vs-bundled.md) — Req5类活性≠lost safety/Req3/settled；≠348 bundled（不变量 871）
 - [`worked-example-req6-notliveness-vs-bundled.md`](worked-example-req6-notliveness-vs-bundled.md) — 确定bug丢掉≠only liveness/block invalid/nondet；≠348 bundled（不变量 870）

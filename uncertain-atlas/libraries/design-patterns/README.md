@@ -1,3 +1,6 @@
+- [`name-the-req3-nottested-bar.md`](name-the-req3-nottested-bar.md) — Req 3 是大量测试和自动验证的目标 not already tested / not already engine blocks / not already settled 正式三事（347 余量）（不变量 874）
+- [`name-the-req3-notbyz-bar.md`](name-the-req3-notbyz-bar.md) — Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 not already only liveness / not already Process nondet / not already settled 正式三事（347 余量）（不变量 873）
+- [`name-the-req3-notany-bar.md`](name-the-req3-notany-bar.md) — 正确提议者的准备提案必须被正确接收者 Accept not already any block Accepts / not already default Accept / not already settled 正式三事（347 余量）（不变量 872）
 - [`name-the-req6-notsafety-bar.md`](name-the-req6-notsafety-bar.md) — 会面对和 Req 5 同一类活性问题 not already lost safety / not already Req 3 proposal coherence / not already settled 正式三事（348 余量）（不变量 871）
 - [`name-the-req6-notliveness-bar.md`](name-the-req6-notliveness-bar.md) — Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 not already only liveness / not already block invalid / not already nondet 正式三事（348 余量）（不变量 870）
 - [`name-the-req6-notany-bar.md`](name-the-req6-notany-bar.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept not already any extension Accepts / not already default Accept / not already settled 正式三事（348 余量）（不变量 869）

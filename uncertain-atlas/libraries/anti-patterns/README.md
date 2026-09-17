@@ -1,3 +1,6 @@
+- [`req3-nottested-sold-as-bundled.md`](req3-nottested-sold-as-bundled.md) — Req3 测试目标 被写成已经测过 / 已经是引擎会挡 / 已经交差（不变量 874）
+- [`req3-notbyz-sold-as-bundled.md`](req3-notbyz-sold-as-bundled.md) — 确定 bug 算拜占庭 被写成已经只是活性 / 已经是非确定 / 已经交差（不变量 873）
+- [`req3-notany-sold-as-bundled.md`](req3-notany-sold-as-bundled.md) — 必须 Accept 被写成已经任意块都会过 / 已经默认 Accept / 已经交差（不变量 872）
 - [`req6-notsafety-sold-as-bundled.md`](req6-notsafety-sold-as-bundled.md) — Req5 类活性 被写成已经丢了安全性 / 已经是提案一致性 / 已经交差（不变量 871）
 - [`req6-notliveness-sold-as-bundled.md`](req6-notliveness-sold-as-bundled.md) — 确定 bug 丢掉 被写成已经只是活性 / 已经是块非法 / 已经是非确定（不变量 870）
 - [`req6-notany-sold-as-bundled.md`](req6-notany-sold-as-bundled.md) — 必须 Accept 被写成已经任意扩展都会过 / 已经默认 Accept / 已经交差（不变量 869）

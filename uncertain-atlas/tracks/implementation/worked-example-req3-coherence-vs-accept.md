@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须 Accept 就已经任意块都会过、已经只是活性、已经测过」，必须分开正确提议者的准备提案必须被正确接收者 Accept 是不是已经是任意块都会 Accept、Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭是不是已经只是活性问题、Req 3 是大量测试和自动验证的目标是不是已经测过。可以跳过「看见必须 Accept 就已经交差」。不要另写怎样写 Prepare 或 Process。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须 Accept 就已经任意块都会过、已经只是活性、已经测过」，必须分开正确提议者的准备提案必须被正确接收者 Accept 是不是已经是任意块都会 Accept、Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭是不是已经只是活性问题、Req 3 是大量测试和自动验证的目标是不是已经测过。可以跳过「看见必须 Accept 就已经交差」。不要另写怎样写 Prepare 或 Process。347 req3 vs accept bundled unbundling 完成（872 item 1 / 873 item 2 / 874 item 3）；精读 [`worked-example-req3-notany-vs-bundled.md`](worked-example-req3-notany-vs-bundled.md)（不变量 872 item 1）。
 
 ## 本页不抄
 
