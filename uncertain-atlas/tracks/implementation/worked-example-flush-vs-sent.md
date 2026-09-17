@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 Flush 就已经送到、已经是四门、已经能往下走」，必须分开 Flush 要把客户端排队的消息冲到服务端是不是已经送到、定期 Flush 是为了让异步请求真发出去是不是已经是四门、立刻 Flush 是为了做成同步请求、回包回来才算这次同步是不是已经能往下走。可以跳过「看见叫了 Flush 就已经送到」。不要另写怎样写 Flush。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 Flush 就已经送到、已经是四门、已经能往下走」，必须分开 Flush 要把客户端排队的消息冲到服务端是不是已经送到、定期 Flush 是为了让异步请求真发出去是不是已经是四门、立刻 Flush 是为了做成同步请求、回包回来才算这次同步是不是已经能往下走。可以跳过「看见叫了 Flush 就已经送到」。不要另写怎样写 Flush。374 flush vs sent bundled unbundling 完成（803 item 1 / 804 item 2 / 805 item 3）；精读 [`worked-example-flush-notdelivered-vs-bundled.md`](worked-example-flush-notdelivered-vs-bundled.md)（不变量 803 item 1）。
 
 ## 本页不抄
 

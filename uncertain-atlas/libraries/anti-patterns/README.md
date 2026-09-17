@@ -1,3 +1,6 @@
+- [`flush-notproceed-sold-as-bundled.md`](flush-notproceed-sold-as-bundled.md) — 立刻 Flush 被写成已经能往下走 / 已经 Commit / 已经解锁（不变量 805）
+- [`flush-notgates-sold-as-bundled.md`](flush-notgates-sold-as-bundled.md) — 定期 Flush 被写成已经是四门 / 已经收到 / 已经交差（不变量 804）
+- [`flush-notdelivered-sold-as-bundled.md`](flush-notdelivered-sold-as-bundled.md) — Flush 冲队列 被写成已经送到 / 已经入队 / 已经断开（不变量 803）
 - [`loadchunk-not4mb-sold-as-bundled.md`](loadchunk-not4mb-sold-as-bundled.md) — 16 MB 上限 被写成已经是快照报文 4 MB / 已经是共识常数 / 已经装完（不变量 802）
 - [`loadchunk-notsame-sold-as-bundled.md`](loadchunk-notsame-sold-as-bundled.md) — 三列认块 被写成已经是同一份 / 已经齐 / 已经选型（不变量 801）
 - [`loadchunk-notcomplete-sold-as-bundled.md`](loadchunk-notcomplete-sold-as-bundled.md) — LoadSnapshotChunk 被写成已经齐 / 已经有了全部快照 / 已经装完（不变量 800）

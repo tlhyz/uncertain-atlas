@@ -1,3 +1,15 @@
+## 2026-09-17（续 922）
+
+- 不变量 805；语料 C783；模式 name-the-flush-notproceed-bar；反模式 flush-notproceed-sold-as-bundled；L10.3 第 774 条。填 L4.4 / CometBFT 档案 立刻 Flush not already can proceed / not already Commit / not already unlocked 正式三事（374 余量）。374 flush vs sent bundled unbundling 完成（805 item 3）。
+
+## 2026-09-17（续 921）
+
+- 不变量 804；语料 C782；模式 name-the-flush-notgates-bar；反模式 flush-notgates-sold-as-bundled；L10.3 第 773 条。填 L4.4 / CometBFT 档案 定期 Flush not already four gates / not already received / not already settled 正式三事（374 余量）。374 flush vs sent bundled unbundling 续（804 item 2）。
+
+## 2026-09-17（续 920）
+
+- 不变量 803；语料 C781；模式 name-the-flush-notdelivered-bar；反模式 flush-notdelivered-sold-as-bundled；L10.3 第 772 条。填 L4.4 / CometBFT 档案 Flush 冲队列 not already delivered / not already queued / not already disconnected 正式三事（374 余量）。374 flush vs sent bundled unbundling 启动（803 item 1）。
+
 ## 2026-09-17（续 919）
 
 - 不变量 802；语料 C780；模式 name-the-loadchunk-not4mb-bar；反模式 loadchunk-not4mb-sold-as-bundled；L10.3 第 771 条。填 L4.4 / CometBFT 档案 16 MB 上限 not already 4 MB snapshot message / not already consensus constant / not already restored 正式三事（375 余量）。375 loadchunk vs retrieved bundled unbundling 完成（802 item 3）。

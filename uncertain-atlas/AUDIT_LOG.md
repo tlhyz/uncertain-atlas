@@ -1,3 +1,18 @@
+| A3785 | 记录 | 会与 374 / 310 / 493 / 673 / 399 / 733 / 803 / 804 糊成「看见立刻叫了就已经能往下走 interchangeable、就已经 Commit interchangeable、就已经解锁 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 立刻 Flush not already can proceed / not already Commit / not already unlocked 正式三事（374 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。374 flush vs sent bundled unbundling 完成（805 item 3） |
+| A3786 | 高 | 看见立刻 Flush 会被写成已经能往下走 interchangeable / 310 interchangeable | 官方 Flush item 3：not already can proceed / not 310 |
+| A3787 | 高 | 看见回包回来 会被写成已经 Commit interchangeable / 493 interchangeable | 官方 Flush item 3：not already Commit / not 493 |
+| A3788 | 高 | 看见同步了 会被写成已经解锁 interchangeable | 官方 Flush item 3：not already unlocked |
+| A3789 | 中 | 怎样写 Flush 会被抄进不确定 | 不抄。不写怎样写 Flush。不另写 19 节 |
+| A3780 | 记录 | 会与 374 / 307 / 493 / 672 / 492 / 674 / 803 / 805 糊成「看见定期在冲就已经是四门 interchangeable、就已经收到 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 定期 Flush not already four gates / not already received / not already settled 正式三事（374 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。374 flush vs sent bundled unbundling 续（804 item 2） |
+| A3781 | 高 | 看见定期 Flush 会被写成已经是四门 interchangeable / 307 interchangeable | 官方 Flush item 2：not already four gates / not 307 |
+| A3782 | 高 | 看见发出去了 会被写成已经收到 interchangeable / 493 interchangeable | 官方 Flush item 2：not already received / not 493 |
+| A3783 | 高 | 看见异步 会被写成已经交差 interchangeable | 官方 Flush item 2：not already settled |
+| A3784 | 中 | 怎样写 Flush 会被抄进不确定 | 不抄。不写怎样写 Flush。不另写 19 节 |
+| A3775 | 记录 | 会与 374 / 309 / 493 / 671 / 394 / 751 / 804 / 805 糊成「看见叫了 Flush 就已经送到 interchangeable、就已经入队 interchangeable、就已经断开 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Flush 冲队列 not already delivered / not already queued / not already disconnected 正式三事（374 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。374 flush vs sent bundled unbundling 启动（803 item 1） |
+| A3776 | 高 | 看见 Flush 冲队列 会被写成已经送到 interchangeable / 309 interchangeable | 官方 Flush item 1：not already delivered / not 309 |
+| A3777 | 高 | 看见叫了 Flush 会被写成已经入队 interchangeable / 493 interchangeable | 官方 Flush item 1：not already queued / not 493 |
+| A3778 | 高 | 看见排队了 会被写成已经断开 interchangeable | 官方 Flush item 1：not already disconnected |
+| A3779 | 中 | 怎样写 Flush 会被抄进不确定 | 不抄。不写怎样写 Flush。不另写 19 节 |
 | A3770 | 记录 | 会与 375 / 321 / 397 / 742 / 501 / 658 / 800 / 801 糊成「看见有上限就已经是快照报文 4 MB interchangeable、就已经是共识常数 interchangeable、就已经装完 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 16 MB 上限 not already 4 MB snapshot message / not already consensus constant / not already restored 正式三事（375 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。375 loadchunk vs retrieved bundled unbundling 完成（802 item 3） |
 | A3771 | 高 | 看见 16 MB 上限 会被写成已经是快照报文 4 MB interchangeable / 321 interchangeable | 官方 LoadSnapshotChunk item 3：not already 4 MB snapshot message / not 321 |
 | A3772 | 高 | 看见 10 MB 会被写成已经是共识常数 interchangeable / 397 interchangeable | 官方 LoadSnapshotChunk item 3：not already consensus constant / not 397 |

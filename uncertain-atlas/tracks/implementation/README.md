@@ -324,6 +324,9 @@
 - [`worked-example-queryheight-vs-committed.md`](worked-example-queryheight-vs-committed.md) — Query 可以对当前或过去高度查 ≠ 已经是 QueryState；height 默认 0 回最新已提交 ≠ 已经新鲜；这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 ≠ 已经印进本头 AppHash（不变量 371）
 - [`worked-example-misbehavior-vs-enum.md`](worked-example-misbehavior-vs-enum.md) — Misbehavior.type 只是过错枚举 ≠ 已经罚没；height 是过错发生的高度、time 是那一高已提交块的时间 ≠ 已经验过这个时间；total_voting_power 是那一高验证者集合的总权 ≠ 已经按到场定奖惩（不变量 372）
 - [`worked-example-checktxopt-vs-block.md`](worked-example-checktxopt-vs-block.md) — CheckTx 技术上可选、不参与处理块 ≠ 已经是四门已经结算；Code ≠ 0 会被拒、不会广播也不会进提案 ≠ 已经没进块；引擎对回包码不再赋予别的含义 ≠ 已经被引擎用了 Data（不变量 373）
+- [`worked-example-flush-notproceed-vs-bundled.md`](worked-example-flush-notproceed-vs-bundled.md) — 立刻 Flush≠310 proceed/Commit/unlocked；≠374 bundled（不变量 805）
+- [`worked-example-flush-notgates-vs-bundled.md`](worked-example-flush-notgates-vs-bundled.md) — 定期 Flush≠307 gates/received/settled；≠374 bundled（不变量 804）
+- [`worked-example-flush-notdelivered-vs-bundled.md`](worked-example-flush-notdelivered-vs-bundled.md) — 冲队列≠309 delivered/queued/disconnected；≠374 bundled（不变量 803）
 - [`worked-example-flush-vs-sent.md`](worked-example-flush-vs-sent.md) — Flush 要把客户端排队的消息冲到服务端 ≠ 已经送到；定期 Flush 是为了让异步请求真发出去 ≠ 已经是四门；立刻 Flush 是为了做成同步请求、回包回来才算这次同步 ≠ 已经能往下走（不变量 374）
 - [`worked-example-loadchunk-not4mb-vs-bundled.md`](worked-example-loadchunk-not4mb-vs-bundled.md) — 16MB≠4MB snapshot message/consensus constant/restored；≠375 bundled（不变量 802）
 - [`worked-example-loadchunk-notsame-vs-bundled.md`](worked-example-loadchunk-notsame-vs-bundled.md) — 三列认块≠368 same/complete/selected；≠375 bundled（不变量 801）
