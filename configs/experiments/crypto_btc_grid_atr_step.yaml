@@ -1,0 +1,30 @@
+# P2-05 — BTC grid ATR step sweep on C1 window (2024-09-01 → 2024-11-30)
+# Fixed leverage 1.5 (LEDGER-002), fixed range ±5 ATR; sweep step 0.30–0.60
+experiment_id: crypto_btc_grid_atr_step
+enabled: true
+
+data:
+  venue: binance
+  symbols: [BTC]
+  interval: 1h
+  start: "2024-09-01"
+  end: "2024-11-30"
+  cache_only: true
+  download_trades: false
+  tick_precise: true
+
+execution:
+  fill_modes_primary: [base, conservative]
+  decouple_from_tech: true
+
+run_leverage_scan: false
+run_grid_scan: true
+run_c1_baseline: false
+skip_tick_validation: true
+
+grid:
+  atr_step_scan: [0.30, 0.40, 0.50, 0.60]
+  atr_range_scan: [5.0]
+
+output:
+  dir: outputs/experiments/crypto_btc_grid_atr_step

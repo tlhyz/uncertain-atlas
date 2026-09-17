@@ -1,0 +1,18 @@
+# Gate OOS calibration after Binance structure research
+experiment_id: gate_calibration_v1
+enabled: false
+
+calibrate:
+  - funding
+  - maker_taker_fee
+  - rebate
+  - tick_size
+  - spread_proxy
+  - fill_ratio
+
+symbols: [SOXL, SNXX, BTC, ETH, SOL]
+
+insufficient_history_policy: INSUFFICIENT_GATE_HISTORY  # no synthetic tick fill-in
+
+output:
+  dir: outputs/experiments/gate_calibration_v1

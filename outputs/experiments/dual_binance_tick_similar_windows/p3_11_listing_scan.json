@@ -1,0 +1,115 @@
+{
+  "symbol": "SOXLUSDT",
+  "start": "2026-05-15",
+  "end": "2026-09-11",
+  "bar_source": "binance_vision_klines_range",
+  "n_bars": 2866,
+  "seed": "TECH_T3",
+  "horizon_bars": 1440,
+  "step_bars": 168,
+  "max_slides": 9,
+  "n_hits": 9,
+  "need_bars_for_top20": 4632,
+  "top20_structurally_possible": false,
+  "windows": [
+    {
+      "symbol": "SOXL",
+      "start": "2026-06-19 14:00:00+00:00",
+      "end": "2026-08-18 13:00:00+00:00",
+      "score_pearson": 0.4294,
+      "score_spearman": 0.526,
+      "score_dtw": 0.5276,
+      "composite": 0.4928,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    },
+    {
+      "symbol": "SOXL",
+      "start": "2026-06-12 14:00:00+00:00",
+      "end": "2026-08-11 13:00:00+00:00",
+      "score_pearson": 0.4215,
+      "score_spearman": 0.513,
+      "score_dtw": 0.5042,
+      "composite": 0.4774,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    },
+    {
+      "symbol": "SOXL",
+      "start": "2026-06-26 14:00:00+00:00",
+      "end": "2026-08-25 13:00:00+00:00",
+      "score_pearson": 0.4108,
+      "score_spearman": 0.4564,
+      "score_dtw": 0.5398,
+      "composite": 0.4738,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    },
+    {
+      "symbol": "SOXL",
+      "start": "2026-07-03 14:00:00+00:00",
+      "end": "2026-09-01 13:00:00+00:00",
+      "score_pearson": 0.3971,
+      "score_spearman": 0.3915,
+      "score_dtw": 0.562,
+      "composite": 0.4617,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    },
+    {
+      "symbol": "SOXL",
+      "start": "2026-06-05 14:00:00+00:00",
+      "end": "2026-08-04 13:00:00+00:00",
+      "score_pearson": 0.3464,
+      "score_spearman": 0.4841,
+      "score_dtw": 0.5385,
+      "composite": 0.4577,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    },
+    {
+      "symbol": "SOXL",
+      "start": "2026-05-29 14:00:00+00:00",
+      "end": "2026-07-28 13:00:00+00:00",
+      "score_pearson": 0.2806,
+      "score_spearman": 0.381,
+      "score_dtw": 0.4927,
+      "composite": 0.3905,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    },
+    {
+      "symbol": "SOXL",
+      "start": "2026-07-10 14:00:00+00:00",
+      "end": "2026-09-08 13:00:00+00:00",
+      "score_pearson": 0.2584,
+      "score_spearman": 0.2063,
+      "score_dtw": 0.5693,
+      "composite": 0.3698,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    },
+    {
+      "symbol": "SOXL",
+      "start": "2026-05-22 14:00:00+00:00",
+      "end": "2026-07-21 13:00:00+00:00",
+      "score_pearson": 0.2598,
+      "score_spearman": 0.329,
+      "score_dtw": 0.4798,
+      "composite": 0.3651,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    },
+    {
+      "symbol": "SOXL",
+      "start": "2026-05-15 14:00:00+00:00",
+      "end": "2026-07-14 13:00:00+00:00",
+      "score_pearson": 0.2327,
+      "score_spearman": 0.3183,
+      "score_dtw": 0.4985,
+      "composite": 0.3604,
+      "seed_id": "TECH_T3",
+      "bars": 1440
+    }
+  ]
+}

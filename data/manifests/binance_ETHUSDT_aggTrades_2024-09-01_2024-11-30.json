@@ -1,0 +1,472 @@
+{
+  "venue": "binance",
+  "symbol": "ETHUSDT",
+  "market": "futures_um_aggTrades",
+  "start": "2024-09-01",
+  "end": "2024-11-30",
+  "source": "binance_vision_daily",
+  "files": [
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-01.csv",
+      "sha256": "6f5a23260c15d8952eb104ae590e83caa15c572ab7cd8e358ca7fad6cb723f29",
+      "bytes": 71263717
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-02.csv",
+      "sha256": "279dce680ddfc4da4866d7e6fc1204f2e154d264c046d4a2695df3fe20df91bd",
+      "bytes": 70137528
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-03.csv",
+      "sha256": "09386a045bf7e9f0c28fab711e065a2d2e6be03e6529ed9989e538622410b1bf",
+      "bytes": 65105941
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-04.csv",
+      "sha256": "80434d8829069a67dab6090d0a4a74ea25ecd061140f80bc1edf97ce35068f3e",
+      "bytes": 84808810
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-05.csv",
+      "sha256": "7684a5679bfd29ad1ce0b2bb0569081a16017c2320bf7b825d360da07d271d62",
+      "bytes": 58857666
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-06.csv",
+      "sha256": "2da23d274a3414a70b85ead5898bc99d95c4c53f8cc35880381553df4cd32724",
+      "bytes": 108917266
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-07.csv",
+      "sha256": "a234284b3894875a0081114c36d08faa9fff1276bf2e730be871d65f5445c91a",
+      "bytes": 40542667
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-08.csv",
+      "sha256": "79a45932c5149f2afff8abb846c971c6eba8a0431af3c49bd7d32246fe07c3e2",
+      "bytes": 41017703
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-09.csv",
+      "sha256": "151e0a9f84140b9eaf786997027bfb0c0e52424341685382a41bb7353f34b344",
+      "bytes": 63224158
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-10.csv",
+      "sha256": "92b421c4f22393101598ef8d5f42c06fcb15ef3c9f618b7da36c804fa7db701e",
+      "bytes": 47338195
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-11.csv",
+      "sha256": "10eac82b64623024a5a8a73eadfdc256aefa951a85ccc491f978fb6bc1421edf",
+      "bytes": 65562229
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-12.csv",
+      "sha256": "01b9fc5aff5d6363679114799072343f62956e40b0f329186d00997816421b7c",
+      "bytes": 48261661
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-13.csv",
+      "sha256": "74d62bf08511df77ce461d896243b9f138c1b1de0052d099663f4d57569c0f70",
+      "bytes": 50993323
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-14.csv",
+      "sha256": "05d68311acd59ab19617fea4112d83927414984348dacbff042ce16be98485a4",
+      "bytes": 26795570
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-15.csv",
+      "sha256": "9e66e9474fe4c73aed65943398457489356c674484a3e5ab8c7738ebb791007e",
+      "bytes": 36024156
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-16.csv",
+      "sha256": "b9503655f9cc18969f486841b34cc08cae15c7b23ad688c7500e9b22fda8e763",
+      "bytes": 62207736
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-17.csv",
+      "sha256": "038013e762e168a9860b139f7c029dec8f2a4793dbbb97ca7c0e0bf1d2a653bc",
+      "bytes": 57368984
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-18.csv",
+      "sha256": "cf5d12c155885e0c50e6afd53b9ac3ee9b146bfb148e92713f6ff86c8515eea1",
+      "bytes": 69720254
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-19.csv",
+      "sha256": "6d62d0ad648b4a1419fe7d2b6c6c1ee27c0afea1c7e309bf96a0d02bf67ccf2b",
+      "bytes": 66062027
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-20.csv",
+      "sha256": "06ff1cf627fd04b2ce4593741693ad91290cca8f26053975eeb83d6e9e9fc754",
+      "bytes": 67689492
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-21.csv",
+      "sha256": "bf6e0219d75b53c6510a509542327bc8404746ac8556b5a278ff08ede36c22f1",
+      "bytes": 37389383
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-22.csv",
+      "sha256": "8eb7db8eb474cc395e6eba482695a90e1af705b309109871113b96b4ef949c5c",
+      "bytes": 48404161
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-23.csv",
+      "sha256": "a83ae95651006f6bf87315903f14f735358b2200f0a24ebd4471bcb3adb4f567",
+      "bytes": 75981026
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-24.csv",
+      "sha256": "dd9effd41fdeaa279b647b86598bbc7d1056f42b78e8f077cb9656b5d728cf34",
+      "bytes": 62231481
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-25.csv",
+      "sha256": "7435713d68b87a2e2485079d629820dc3623f1a1b0286392e29aed6a97efc506",
+      "bytes": 53344844
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-26.csv",
+      "sha256": "f81b9ecbcdec36839c0522f401266baddf04879473ed6d620416b458383192af",
+      "bytes": 63237820
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-27.csv",
+      "sha256": "5ab08dfb925132d22c6330a80c33e8eee24f168493ed897da07f51e9f51bf66f",
+      "bytes": 59696257
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-28.csv",
+      "sha256": "3fd466541ec6e03780f95317bf765cde972d93220ba4537612acd877fd529215",
+      "bytes": 33576262
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-29.csv",
+      "sha256": "079a5464130b0786fc1cdd3ffa8cddc7b0c642c34a43af36fc293e57e8a67edf",
+      "bytes": 35229857
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-09-30.csv",
+      "sha256": "098c226a11ee052f6eea8141c4f55e112302fdc44c3add46a0460cdc3352bd4b",
+      "bytes": 65809959
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-01.csv",
+      "sha256": "ff67307aaa7568c8f3ad5c8b82ce61c47bd7b830ac7e52e820b1cd99f2ec0f6e",
+      "bytes": 108792310
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-02.csv",
+      "sha256": "1ca37ed27bccfca0e20ef0deec43b60a580f4c938a6d84faccbfe01883bb68a0",
+      "bytes": 95677126
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-03.csv",
+      "sha256": "6b191fe1f1dd7a5ce74338f55b9af7dcf8d069af591c37234e88482fd62eebc3",
+      "bytes": 93735277
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-04.csv",
+      "sha256": "05a93d4dd264132dc837b765d53b90672c55736d512876d38dca1c604605f250",
+      "bytes": 62369657
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-05.csv",
+      "sha256": "ef1eed9f744c947e76c389d7de69c758d88014e13b3ae89e4c32e748a44251dc",
+      "bytes": 28186940
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-06.csv",
+      "sha256": "4e477b69a753b6b2a98440e5e9f7f5c4ea65578ed69ad6d95166b60f3d61da95",
+      "bytes": 28821296
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-07.csv",
+      "sha256": "a06f191e169afda9e200f466f043aebccfc5900c65285f86810965961e60fbf3",
+      "bytes": 69950466
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-08.csv",
+      "sha256": "47ed70d0de516e090983699be4cbb97c87e847c71717089ccab316ee65bcd316",
+      "bytes": 56569857
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-09.csv",
+      "sha256": "5691ea68ad4d289fba08fb11742d58d23512facc015a425ba7f690f662cc6399",
+      "bytes": 58827810
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-10.csv",
+      "sha256": "b7adba6f97d68fc2171dddc4d2c97936b56b3c82d3bea4b39bcb08b935f65308",
+      "bytes": 64349313
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-11.csv",
+      "sha256": "a0e699baa6c4d7ce9bcafb9186047d41f636d6f744b49277de209b45b0b06178",
+      "bytes": 46351218
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-12.csv",
+      "sha256": "2d86366f3193bd99826ea95f835a1fd90446b58902089a945c0027890a2f8ba5",
+      "bytes": 28973280
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-13.csv",
+      "sha256": "c3973a5a7be1210b7698cc0520a94e0da324c484cdf98a3b730f2024a8156dca",
+      "bytes": 29750000
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-14.csv",
+      "sha256": "03709a74fdd6b11db4db3bb7a58f72223e97ff9b1d3c1691def7ed437e53ba7e",
+      "bytes": 75238890
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-15.csv",
+      "sha256": "0698bde25a5af0b74ec2a4655e65e305b4e4b78b99f7943fc43f12c61cba857f",
+      "bytes": 89191750
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-16.csv",
+      "sha256": "681c555203b64a80004e2bb5db0f35575e576f891dc276ea07a0f79b02562c0c",
+      "bytes": 64362592
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-17.csv",
+      "sha256": "218ceb3f75a8e8c4d04fb425d2e0760f88b31a412268a0f116c15c55e1123f7a",
+      "bytes": 56857046
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-18.csv",
+      "sha256": "eb5249706c3cd7e5d07368cce1862840260a22a1823f3897137761d509bba4e8",
+      "bytes": 56879395
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-19.csv",
+      "sha256": "5c16df617f624bf45f4f7401aeefa1d578068b4fdeabb87f14990be56aba2dfb",
+      "bytes": 24207399
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-20.csv",
+      "sha256": "919c97a28126b2706d8125827d8970b5959367fabe71271e2e62f1b09c0e3ea3",
+      "bytes": 44556078
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-21.csv",
+      "sha256": "774c92499874b6c68ebf680c9bc5f5de753122e070a208efc99ad6a44b4759d5",
+      "bytes": 59236580
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-22.csv",
+      "sha256": "0a2359907a478a8c1f06823983a54cbffaa8d5662611e1f210daadaa1fea8f96",
+      "bytes": 56416514
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-23.csv",
+      "sha256": "61cfb60e9b81a49d259da7cca9a05f37dd44e7729118ad22099e9b7f64981c81",
+      "bytes": 72526941
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-24.csv",
+      "sha256": "7b8115aefc3b8415d684caf32c55a10eedb1e049c84bef7bede1447c2638f06f",
+      "bytes": 58400690
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-25.csv",
+      "sha256": "81fc271d754e4ff1400d9f9733d627c0c484350576a0eb8829025352191d0e3c",
+      "bytes": 90727139
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-26.csv",
+      "sha256": "ebbb0c5b2eced43169375a3f0c39a7d2510bf502e514ff0c461d6927cda43e65",
+      "bytes": 46105012
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-27.csv",
+      "sha256": "a2e2b5705cc7c2f67939f7e891b71dcffb2de8decdfa380d478ba22fa8ad8314",
+      "bytes": 33062877
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-28.csv",
+      "sha256": "9b4c6be825b3df42529d4ac87d8b4edca25a3bb5e2e295af25755ae1096ad81c",
+      "bytes": 70876521
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-29.csv",
+      "sha256": "bfa4f2db365e74adf668d54901cf02b3e01dfcbff507a8dffb07f84760ea5e6e",
+      "bytes": 79661625
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-30.csv",
+      "sha256": "06ee6f24321ebdcf0999ba586b4fa44a97b7547e7eb6728c12c490d69a18058a",
+      "bytes": 81200344
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-10-31.csv",
+      "sha256": "e469445fd69b539a8f9e31a8bb9700d918bac649ea5b5a5bdfc47201d4e96ce5",
+      "bytes": 75988384
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-01.csv",
+      "sha256": "6f1414972f31b4437cf76656fa770d070794015a737b9dcd08ba27305ab1f67c",
+      "bytes": 84931656
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-02.csv",
+      "sha256": "1cbe5d79b22acf94748e7477eddf627261b20734d2d8934efced9b1bacb12494",
+      "bytes": 34166269
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-03.csv",
+      "sha256": "d5cbfe6c2d550114ff99d9f1d9b2079a69e69de758728c5a0415f0d78d572062",
+      "bytes": 65232319
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-04.csv",
+      "sha256": "1cbfb96f2c48ae40ad06fecc7ba70bdf02c7339b487d499903284e4ea3dcf02a",
+      "bytes": 73783641
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-05.csv",
+      "sha256": "a7a00735617b356b75c2db48e01b9a96cec464ab8a37d56dbb7e1f1b3d72ba59",
+      "bytes": 72974074
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-06.csv",
+      "sha256": "d6d02e05adc0562f0f82748293784e26bdc322cb3ac0036d176cb02597f99e62",
+      "bytes": 169549231
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-07.csv",
+      "sha256": "a1d1e7b8b5b71ed2aac6e98e65059362e17d9322ec179b3e0af10e6beaa80ef9",
+      "bytes": 142963075
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-08.csv",
+      "sha256": "1c867c98798774ac3602e98589f7e8d43096f2472e254aeee0aaff6f828708a6",
+      "bytes": 112020492
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-09.csv",
+      "sha256": "c8e482b58553d4bcff553de34d045dfba2205c8c8d5d706bbd18fba4e0b5ebce",
+      "bytes": 90422654
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-10.csv",
+      "sha256": "22448798bca7e0be5ed6dba2f791ff3320ced6b83c0dda83b7468563f2d499c1",
+      "bytes": 163392437
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-11.csv",
+      "sha256": "d76b6d9bac5315cb0c38b3602287f36b6c165c63c64ce50d94b649891b8b5f2a",
+      "bytes": 196468173
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-12.csv",
+      "sha256": "f0473141f4a7de415291ac4acfe05252ea0a31c42021b0aba3d654a95d8466cd",
+      "bytes": 229843223
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-13.csv",
+      "sha256": "be66e383a776bdce67a9aad90d1036c8fc0bdb9d9b718ce01d06f81fdd762a14",
+      "bytes": 203997344
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-14.csv",
+      "sha256": "69657e05ef49be5af76df1856b35141ece4bf95de35510c23643742cda6f423f",
+      "bytes": 151910558
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-15.csv",
+      "sha256": "28e914b4bbd0590912cf4ad989234ee3033cc515901a8840b12d1c03072d9f37",
+      "bytes": 125715547
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-16.csv",
+      "sha256": "2e2149889cb0a14eabd072659935323cf28aa6d561322212206cfd9538ee4a19",
+      "bytes": 87760284
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-17.csv",
+      "sha256": "938739c0a3eae3cc1a5e88ed87f2af14df60eee6e8fbf8030eef257f92feb249",
+      "bytes": 98211621
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-18.csv",
+      "sha256": "0318e7a48cf4573e040cfd817072093fcce5c2cc59ec0ca1998e2ec8b0330712",
+      "bytes": 129592817
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-19.csv",
+      "sha256": "a2873c24c8e6ccd8f3d5d9ddbd005fdcc0c48ec06f0329516bf0383ceb89584a",
+      "bytes": 104955012
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-20.csv",
+      "sha256": "4810e6caea3cf010eba6fa3796108728e97ccfb7500b51891ced82cefaec801a",
+      "bytes": 102370719
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-21.csv",
+      "sha256": "b67b5cbd52c571edf4e8c18d1ee89db6a9fbfc15790b4d9f5b3e343cec1a0268",
+      "bytes": 182022213
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-22.csv",
+      "sha256": "a6fc3aab7303048c2f208ec34d1e1afef89f338893b90e29a79b5d31f28a27c4",
+      "bytes": 131045275
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-23.csv",
+      "sha256": "46f8424125a3c186f5cb61d2031f19e68f6874c7a79dcd78a617a9db77eebcb4",
+      "bytes": 128058151
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-24.csv",
+      "sha256": "5b63021af77a1d208d920501170a6336112154f40051f1191ef3dd18eb74b609",
+      "bytes": 101010909
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-25.csv",
+      "sha256": "397d59ac7abd5422c13da1ecf4937291e34a4dbe019130b34826fc15fabc6739",
+      "bytes": 188857343
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-26.csv",
+      "sha256": "df14140937a846bb156033bebab4b1864710478c6152faa5618e37a32067b3bd",
+      "bytes": 159535969
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-27.csv",
+      "sha256": "212837c958d802bbd6467d6b4b34f468101f46ca693c1e6c2be0c020828a1c7a",
+      "bytes": 146825328
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-28.csv",
+      "sha256": "99de8d52f2fee1e72d2831e6de2fcd41b7e8eb8b2cb063a27def0fbf082c19b9",
+      "bytes": 105843426
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-29.csv",
+      "sha256": "a9dcc0d95b2a5cc8c3ceef1e9a40e0f8ad9aeecb251759b133c641bab000bf02",
+      "bytes": 80725156
+    },
+    {
+      "path": "cache/binance_futures_ETHUSDT_aggTrades_2024-11-30.csv",
+      "sha256": "bed3e2112e80bccd376209f65cb66bd8f8fa98e9c14620b09f5978e6eb8cfbc6",
+      "bytes": 92457038
+    }
+  ],
+  "rows": 128851279,
+  "missing_periods": [],
+  "notes": [
+    "day_files=91",
+    "rows_est=128851279"
+  ],
+  "created_at": "2026-09-13T02:54:40.298877+00:00"
+}

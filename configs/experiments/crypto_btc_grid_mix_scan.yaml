@@ -1,0 +1,28 @@
+# P2-07 — BTC grid→trend mix sweep 80/20 → 20/80 on C1 window
+experiment_id: crypto_btc_grid_mix_scan
+enabled: true
+
+data:
+  venue: binance
+  symbols: [BTC]
+  interval: 1h
+  start: "2024-09-01"
+  end: "2024-11-30"
+  cache_only: true
+  download_trades: false
+  tick_precise: true
+
+execution:
+  fill_modes_primary: [base, conservative]
+  decouple_from_tech: true
+
+run_leverage_scan: false
+run_grid_scan: false
+run_grid_mix_scan: true
+run_c1_baseline: false
+skip_tick_validation: true
+
+grid_mix_scan: ["80_20", "60_40", "50_50", "40_60", "20_80", "dynamic"]
+
+output:
+  dir: outputs/experiments/crypto_btc_grid_mix_scan

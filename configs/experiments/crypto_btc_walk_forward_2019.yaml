@@ -1,0 +1,20 @@
+# P5-03 — BTC walk-forward from 2019+ (BAR crypto fills)
+experiment_id: crypto_btc_walk_forward_2019
+enabled: true
+
+data:
+  venue: binance
+  symbols: [BTC]
+  interval: 1h
+  start: "2020-01-01"
+  end: "2024-11-30"
+  cache_only: false
+  download_trades: false
+  tick_precise: false
+
+execution:
+  fill_modes_primary: [base]
+  label: BAR_crypto_klines_only
+
+output:
+  dir: outputs/experiments/crypto_btc_walk_forward_2019

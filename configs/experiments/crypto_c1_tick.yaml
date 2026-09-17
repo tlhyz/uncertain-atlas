@@ -1,0 +1,26 @@
+# P2-14 — CRYPTO_C1 full tick run (BTC/ETH/SOL, 2024-09→11)
+experiment_id: crypto_c1_tick
+enabled: true
+
+data:
+  venue: binance
+  symbols: [BTC, ETH, SOL]
+  interval: 1h
+  start: "2024-09-01"
+  end: "2024-11-30"
+  cache_only: true
+  download_trades: false
+  tick_precise: true
+
+execution:
+  fill_modes_primary: [base, conservative]
+  decouple_from_tech: true
+
+run_leverage_scan: false
+run_grid_scan: false
+run_grid_mix_scan: false
+run_c1_baseline: true
+skip_tick_validation: true
+
+output:
+  dir: outputs/experiments/crypto_c1_tick

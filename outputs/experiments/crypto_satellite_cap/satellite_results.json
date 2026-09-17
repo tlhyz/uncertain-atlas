@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "task": "P2-13",
+    "total_capital": 10000.0,
+    "meme_max_frac": 0.05,
+    "combined_budget_usdt": 500.0,
+    "cap_ok": true,
+    "leverage": 1.0,
+    "execution": "BAR"
+  },
+  "results": [
+    {
+      "symbol": "PENGU",
+      "perp": "PENGU_USDT",
+      "execution": "BAR",
+      "data_source": "gate_futures_usdt_candlesticks",
+      "bars": 10001,
+      "window_start": "2025-07-23 05:00:00+00:00",
+      "window_end": "2026-09-12 21:00:00+00:00",
+      "budget_usdt": 250.0,
+      "budget_frac_of_account": 0.025,
+      "leverage": 1.0,
+      "initial_equity": 250.0,
+      "final_equity": 1.8350377833614753,
+      "total_return": -0.992659848866554,
+      "max_drawdown": 0.9933487572218581,
+      "liquidated": false,
+      "max_trade_notional": 233.54838315480004,
+      "cap_respected": true
+    },
+    {
+      "symbol": "PUMP",
+      "perp": "PUMP_USDT",
+      "execution": "BAR",
+      "data_source": "gate_futures_usdt_candlesticks",
+      "bars": 10001,
+      "window_start": "2025-07-23 05:00:00+00:00",
+      "window_end": "2026-09-12 21:00:00+00:00",
+      "budget_usdt": 250.0,
+      "budget_frac_of_account": 0.025,
+      "leverage": 1.0,
+      "initial_equity": 250.0,
+      "final_equity": 3.554902496948973,
+      "total_return": -0.9857803900122041,
+      "max_drawdown": 0.986961193490762,
+      "liquidated": false,
+      "max_trade_notional": 182.86754055900022,
+      "cap_respected": true
+    }
+  ]
+}

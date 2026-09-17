@@ -1,0 +1,30 @@
+# P3-04 — Drawdown set A/B/C comparison on 65d Binance tick overlap
+interval: "1h"
+cache_only: true
+output_dir: outputs/experiments/dual_binance_tick_drawdown_sets
+
+run_benchmarks: false
+run_sweep: false
+run_seed_windows: false
+run_plans: false
+run_similar_search: false
+run_stress: false
+run_independent_vs_unified: false
+run_short_structures: false
+run_short_init_rank: false
+run_drawdown_set_rank: true
+drawdown_sets: [A, B, C]
+run_leverage_rank: false
+run_grid_atr_rank: false
+run_fill_modes: false
+fill_mode: base
+
+data_start: "2026-07-09"
+data_end: "2026-09-11"
+download_trades: true
+tick_precise: true
+run_binance_c1: false
+
+tech_book: 6500
+crypto_book: 2500
+global_reserve: 1000

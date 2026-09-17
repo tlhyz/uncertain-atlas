@@ -1,0 +1,48 @@
+{
+  "note": "TICK 2026-05-15→09-11 flatten_survivor ±20U 5k+5k. 5x from P7-15. B&H SOXL daily last −24.4%.",
+  "buy_and_hold_soxl": -0.2443153732081068,
+  "variants": [
+    {
+      "tag": "p715full",
+      "leverage": 5,
+      "return": 0.3928959041546729,
+      "pair_stopped": true,
+      "stop_day": "2026-05-26",
+      "liquidated_short": true
+    },
+    {
+      "tag": "p716lev3",
+      "leverage": 3,
+      "fee": "base",
+      "return": 0.28761884677064287,
+      "max_dd": -0.06869260921219533,
+      "pair_stopped": true,
+      "stop_day": "2026-05-27",
+      "liquidated_short": true,
+      "win_days": 11
+    },
+    {
+      "tag": "p716lev2",
+      "leverage": 2,
+      "fee": "base",
+      "return": 0.7065610472008403,
+      "max_dd": -0.15315565910206008,
+      "pair_stopped": false,
+      "inventory_frac": 1.8110365128355945,
+      "net_qty_units": -42.755455015588026,
+      "long_dd": -0.6157705130445738,
+      "short_dd": -0.7121999937672306,
+      "win_days": 69,
+      "zero_days": 0
+    },
+    {
+      "tag": "p716lev2c",
+      "leverage": 2,
+      "fee": "conservative",
+      "return": 0.6467190029673915,
+      "max_dd": -0.13964576596370626,
+      "pair_stopped": false,
+      "inventory_frac": 1.8154843336772193
+    }
+  ]
+}

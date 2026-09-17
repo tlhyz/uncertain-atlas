@@ -1,0 +1,34 @@
+# P3-11 — Similar-window search (SOXL listing 2026-05-15+; TECH_T3)
+interval: "1h"
+cache_only: true
+output_dir: outputs/experiments/dual_binance_tick_similar_windows
+
+run_benchmarks: false
+run_sweep: false
+run_seed_windows: false
+run_plans: false
+run_similar_search: true
+run_stress: false
+run_independent_vs_unified: false
+run_short_structures: false
+run_short_init_rank: false
+run_drawdown_set_rank: false
+run_right_side_reserve_rank: false
+run_soxl_snxx_weight_rank: false
+run_grid_mix_rank: false
+run_leverage_rank: false
+run_grid_atr_rank: false
+run_fill_modes: false
+run_binance_c1: false
+download_trades: false
+tick_precise: false
+
+data_start: "2026-05-15"
+data_end: "2026-09-11"
+similar_search_seed: TECH_T3
+similar_search_horizon_bars: 1440
+similar_search_step_bars: 168
+
+tech_book: 6500
+crypto_book: 2500
+global_reserve: 1000

@@ -1,0 +1,27 @@
+# Risk budget — NOT a mandate to deploy immediately
+# See docs/THESIS.md Book A / Book B
+
+total_capital_usdt: 10000
+
+books:
+  tech:
+    allocation_usdt: 6500
+    symbols_primary: [SOXL, SNXX]
+    symbols_watch: [AAOI]
+  crypto:
+    allocation_usdt: 2500
+    symbols_core: [BTC, ETH, SOL]
+    symbols_satellite: [PENGU, PUMP]
+    satellite_max_account_frac: 0.05
+  global_reserve:
+    allocation_usdt: 1000
+
+margin_reserve_split:
+  baseline: [0.70, 0.30]   # margin / reserve within each book
+  scan: [[0.80, 0.20], [0.70, 0.30], [0.60, 0.40]]
+
+# Tech initial short: fraction of TOTAL account notional (not full 6500U book)
+tech_initial_short_frac_scan: [0.10, 0.15, 0.20]
+
+# Right-side confirmation: fraction of Tech book kept until reversal signals
+tech_right_side_reserve_frac: [0.25, 0.30, 0.35]

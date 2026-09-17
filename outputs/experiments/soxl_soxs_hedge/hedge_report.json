@@ -1,0 +1,178 @@
+{
+  "generated": "2026-09-15",
+  "soxs_listed": "2026-07-16 -> 2026-09-14",
+  "reports": {
+    "base": {
+      "data_class": "BAR",
+      "n_bars": 1383,
+      "start": "2026-07-16 09:00:00+00:00",
+      "end": "2026-09-11 23:00:00+00:00",
+      "fee_preset": "base",
+      "diagnostics": {
+        "n_bars": 1383,
+        "corr_1h": -0.9875691256305054,
+        "beta_soxs_on_soxl": -0.990941843821349,
+        "beta_soxl_on_soxs": -0.985633758082576,
+        "ols_hedge_ratio": 0.985633758082576,
+        "residual_vol_1to1": 0.002553209131155687,
+        "residual_vol_ols": 0.0025415044581074014,
+        "soxl_vol": 0.016168674636859618,
+        "soxs_vol": 0.016212154007055526,
+        "product_vol_1to1": 0.002553209131155687
+      },
+      "inverse_gate": true,
+      "strategies": {
+        "soxl_only_long_grid": {
+          "label": "long_grid",
+          "return": 0.13841873469585653,
+          "max_dd": -0.07869841802088218,
+          "calmar": 16.19422662600231,
+          "end_equity": 11394.857555313747,
+          "end_qty": 1.0658141036401503e-14,
+          "end_inventory_notional": 1.3034906487519037e-12,
+          "inventory_frac": 1.3034906487519038e-16,
+          "turnover": 1216965.384929168,
+          "fills": 1666,
+          "fee_preset": "base"
+        },
+        "same_symbol_long_short": {
+          "label": "same_symbol_long_short",
+          "return": 0.14536424877040366,
+          "max_dd": -0.06674114096924322,
+          "calmar": 20.435123399167576,
+          "end_equity": 11471.272090136477,
+          "end_inventory_notional": 3512.4670091168323,
+          "inventory_frac": 0.3507068880954478,
+          "net_qty_units": -28.720090017308515,
+          "fills": 3601,
+          "turnover": 1374731.7125751933
+        },
+        "pair_soxl_soxs_long_grids": {
+          "label": "pair_soxl_soxs_long_grids",
+          "return": 0.1881317879779787,
+          "max_dd": -0.0442829218307097,
+          "calmar": 44.76265089927535,
+          "end_equity": 11901.982396314954,
+          "end_inventory_notional": 2333.494513827596,
+          "inventory_frac": 0.23294430428742663,
+          "net_qty_units": 53.058083534051754,
+          "fills": 2196,
+          "turnover": 786569.4486041765
+        },
+        "bh_soxl": {
+          "label": "bh_soxl",
+          "return": -0.19861083808400515,
+          "max_dd": -0.47301986121081596,
+          "calmar": 1.5945361278481658,
+          "end_equity": 8013.891619159948
+        },
+        "bh_50_50_static": {
+          "label": "bh_50_50_static",
+          "return": -0.1504383033040969,
+          "max_dd": -0.2023328138069218,
+          "calmar": 3.1839191111723584,
+          "end_equity": 8495.61696695903
+        },
+        "bh_50_50_daily": {
+          "label": "bh_50_50_daily",
+          "return": 0.029391248512844248,
+          "max_dd": -0.02264370545918526,
+          "calmar": 8.90107853741462,
+          "end_equity": 10293.912485128443
+        }
+      },
+      "pair_vs_soxl_return_corr": -0.3921526885708963,
+      "verdict": "CONDITIONAL PASS",
+      "reason": "pair reduces DD vs same-symbol L+S and SOXL-only; still check vs B&H",
+      "pair_beats_same_dd": true,
+      "pair_beats_soxl_dd": true,
+      "pair_beats_bh_return": true
+    },
+    "conservative": {
+      "data_class": "BAR",
+      "n_bars": 1383,
+      "start": "2026-07-16 09:00:00+00:00",
+      "end": "2026-09-11 23:00:00+00:00",
+      "fee_preset": "conservative",
+      "diagnostics": {
+        "n_bars": 1383,
+        "corr_1h": -0.9875691256305054,
+        "beta_soxs_on_soxl": -0.990941843821349,
+        "beta_soxl_on_soxs": -0.985633758082576,
+        "ols_hedge_ratio": 0.985633758082576,
+        "residual_vol_1to1": 0.002553209131155687,
+        "residual_vol_ols": 0.0025415044581074014,
+        "soxl_vol": 0.016168674636859618,
+        "soxs_vol": 0.016212154007055526,
+        "product_vol_1to1": 0.002553209131155687
+      },
+      "inverse_gate": true,
+      "strategies": {
+        "soxl_only_long_grid": {
+          "label": "long_grid",
+          "return": 0.11413423611968398,
+          "max_dd": -0.08091451187791221,
+          "calmar": 12.159761027452458,
+          "end_equity": 11151.464478327836,
+          "end_qty": 1.0658141036401503e-14,
+          "end_inventory_notional": 1.3034906487519037e-12,
+          "inventory_frac": 1.3034906487519038e-16,
+          "turnover": 1216965.384929168,
+          "fills": 1666,
+          "fee_preset": "conservative"
+        },
+        "same_symbol_long_short": {
+          "label": "same_symbol_long_short",
+          "return": 0.11797418635397028,
+          "max_dd": -0.0746711259768238,
+          "calmar": 13.762259149660183,
+          "end_equity": 11196.325747621475,
+          "end_inventory_notional": 3512.4670091168323,
+          "inventory_frac": 0.35072643786259666,
+          "net_qty_units": -28.720090017308515,
+          "fills": 3601,
+          "turnover": 1374731.7125751933
+        },
+        "pair_soxl_soxs_long_grids": {
+          "label": "pair_soxl_soxs_long_grids",
+          "return": 0.17248386623002232,
+          "max_dd": -0.044816831124421475,
+          "calmar": 38.865962938202934,
+          "end_equity": 11744.668506594091,
+          "end_inventory_notional": 2333.494513827596,
+          "inventory_frac": 0.23295546126848934,
+          "net_qty_units": 53.058083534051754,
+          "fills": 2196,
+          "turnover": 786569.4486041765
+        },
+        "bh_soxl": {
+          "label": "bh_soxl",
+          "return": -0.19861083808400515,
+          "max_dd": -0.47301986121081596,
+          "calmar": 1.5945361278481658,
+          "end_equity": 8013.891619159948
+        },
+        "bh_50_50_static": {
+          "label": "bh_50_50_static",
+          "return": -0.1504383033040969,
+          "max_dd": -0.2023328138069218,
+          "calmar": 3.1839191111723584,
+          "end_equity": 8495.61696695903
+        },
+        "bh_50_50_daily": {
+          "label": "bh_50_50_daily",
+          "return": 0.029391248512844248,
+          "max_dd": -0.02264370545918526,
+          "calmar": 8.90107853741462,
+          "end_equity": 10293.912485128443
+        }
+      },
+      "pair_vs_soxl_return_corr": -0.3918114283404991,
+      "verdict": "CONDITIONAL PASS",
+      "reason": "pair reduces DD vs same-symbol L+S and SOXL-only; still check vs B&H",
+      "pair_beats_same_dd": true,
+      "pair_beats_soxl_dd": true,
+      "pair_beats_bh_return": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "soxl": {
+    "symbol": "SOXLUSDT",
+    "data_class": "TICK",
+    "n_bars": 1392,
+    "bars_with_trades": 1392,
+    "bars_missing_trades": 0,
+    "coverage": 1.0,
+    "empty_days": [],
+    "median_close_rel_err": 0.0,
+    "p99_close_rel_err": 6.932855771368025e-05,
+    "median_high_gap": 0.0,
+    "median_low_gap": 0.0,
+    "pass": true
+  },
+  "note": "SOXS slice omitted from this personal lab"
+}

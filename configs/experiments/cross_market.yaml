@@ -1,0 +1,13 @@
+# Cross-market independent books vs unified signal
+experiment_id: cross_market_v1
+enabled: false
+
+portfolio: configs/portfolio.yaml
+regimes_to_test: [A, B, C, D, E, F]  # see docs/STRATEGY_CRYPTO.md PART 23
+
+variants:
+  - independent_books
+  - unified_tech_signal_on_crypto  # negative control — should lose
+
+output:
+  dir: outputs/experiments/cross_market_v1

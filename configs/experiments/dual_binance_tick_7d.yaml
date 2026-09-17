@@ -1,0 +1,22 @@
+# 7-day Binance tick smoke — fast validation
+interval: "1h"
+cache_only: true
+output_dir: outputs/dual_engine_perp_binance_ticks
+
+run_benchmarks: true
+run_sweep: false
+run_seed_windows: false
+run_plans: false
+run_similar_search: false
+run_stress: false
+fill_mode: base
+
+data_start: "2026-09-05"
+data_end: "2026-09-11"
+download_trades: true
+tick_precise: true
+run_binance_c1: false
+
+tech_book: 6500
+crypto_book: 2500
+global_reserve: 1000

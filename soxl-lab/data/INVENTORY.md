@@ -1,0 +1,11 @@
+# 库存（和 README 同一套数）
+
+机器可读：[`inventory.json`](inventory.json)
+
+| 层 | 起止 | 天 | 字节 | Git |
+|----|------|----|------|-----|
+| 全量本机 | 2026-05-15→09-11 | 120 / **62,409,315** 笔 / 0 缺口 | 3,265,883,206 | CSV 否；清单 [`manifests/binance_SOXLUSDT_aggTrades_2026-05-15_2026-09-11.json`](manifests/binance_SOXLUSDT_aggTrades_2026-05-15_2026-09-11.json) |
+| 已复核窗 | 2026-07-15→09-11 | 59 / 31,190,286 笔 | 1,646,097,593 | 清单是 |
+| 上市前 | <2026-05-15 | — | — | 交易所 404 |
+
+重建：`../../scripts/download_soxl_listing_prefix.py` + 已有 07-15→09-11 缓存。

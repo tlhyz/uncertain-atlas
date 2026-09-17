@@ -1,0 +1,22 @@
+{
+  "symbol": "SOXLUSDT",
+  "start": "2026-05-15",
+  "end": "2026-07-15",
+  "leverage": 5.0,
+  "n_grids": 200,
+  "capital_long": 5000.0,
+  "capital_short": 5000.0,
+  "range_mode": "pct",
+  "range_usdt": 20.0,
+  "range_pct": 0.2,
+  "hedge": "flatten_survivor",
+  "fee": "base",
+  "fills": "tick",
+  "sides": "both",
+  "tag": "p715p",
+  "grid_kind": "arithmetic",
+  "fee_bps": null,
+  "reanchor": "remap",
+  "mmr_frac": 0.005,
+  "extras": {}
+}

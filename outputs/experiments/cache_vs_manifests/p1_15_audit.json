@@ -1,0 +1,172 @@
+{
+  "n_manifests": 8,
+  "rows": [
+    {
+      "manifest": "binance_BTCUSDT_aggTrades_2024-09-01_2024-11-30.json",
+      "symbol": "BTCUSDT",
+      "start": "2024-09-01",
+      "end": "2024-11-30",
+      "claimed_files": 91,
+      "present": 0,
+      "missing": 91,
+      "missing_head": [
+        "cache/binance_futures_BTCUSDT_aggTrades_2024-09-01.csv",
+        "cache/binance_futures_BTCUSDT_aggTrades_2024-09-02.csv",
+        "cache/binance_futures_BTCUSDT_aggTrades_2024-09-03.csv",
+        "cache/binance_futures_BTCUSDT_aggTrades_2024-09-04.csv",
+        "cache/binance_futures_BTCUSDT_aggTrades_2024-09-05.csv"
+      ],
+      "bytes_match": 0,
+      "bytes_mismatch": 0,
+      "status": "evicted",
+      "on_disk": false
+    },
+    {
+      "manifest": "binance_ETHUSDT_aggTrades_2024-09-01_2024-11-30.json",
+      "symbol": "ETHUSDT",
+      "start": "2024-09-01",
+      "end": "2024-11-30",
+      "claimed_files": 91,
+      "present": 0,
+      "missing": 91,
+      "missing_head": [
+        "cache/binance_futures_ETHUSDT_aggTrades_2024-09-01.csv",
+        "cache/binance_futures_ETHUSDT_aggTrades_2024-09-02.csv",
+        "cache/binance_futures_ETHUSDT_aggTrades_2024-09-03.csv",
+        "cache/binance_futures_ETHUSDT_aggTrades_2024-09-04.csv",
+        "cache/binance_futures_ETHUSDT_aggTrades_2024-09-05.csv"
+      ],
+      "bytes_match": 0,
+      "bytes_mismatch": 0,
+      "status": "evicted",
+      "on_disk": false
+    },
+    {
+      "manifest": "binance_SNXXUSDT_aggTrades_2026-07-09_2026-09-11.json",
+      "symbol": "SNXXUSDT",
+      "start": "2026-07-09",
+      "end": "2026-09-11",
+      "claimed_files": 65,
+      "present": 0,
+      "missing": 65,
+      "missing_head": [
+        "cache/binance_futures_SNXXUSDT_aggTrades_2026-07-09.csv",
+        "cache/binance_futures_SNXXUSDT_aggTrades_2026-07-10.csv",
+        "cache/binance_futures_SNXXUSDT_aggTrades_2026-07-11.csv",
+        "cache/binance_futures_SNXXUSDT_aggTrades_2026-07-12.csv",
+        "cache/binance_futures_SNXXUSDT_aggTrades_2026-07-13.csv"
+      ],
+      "bytes_match": 0,
+      "bytes_mismatch": 0,
+      "status": "evicted",
+      "on_disk": false
+    },
+    {
+      "manifest": "binance_SOLUSDT_aggTrades_2024-09-01_2024-11-30.json",
+      "symbol": "SOLUSDT",
+      "start": "2024-09-01",
+      "end": "2024-11-30",
+      "claimed_files": 91,
+      "present": 0,
+      "missing": 91,
+      "missing_head": [
+        "cache/binance_futures_SOLUSDT_aggTrades_2024-09-01.csv",
+        "cache/binance_futures_SOLUSDT_aggTrades_2024-09-02.csv",
+        "cache/binance_futures_SOLUSDT_aggTrades_2024-09-03.csv",
+        "cache/binance_futures_SOLUSDT_aggTrades_2024-09-04.csv",
+        "cache/binance_futures_SOLUSDT_aggTrades_2024-09-05.csv"
+      ],
+      "bytes_match": 0,
+      "bytes_mismatch": 0,
+      "status": "evicted",
+      "on_disk": false
+    },
+    {
+      "manifest": "binance_SOXLUSDT_aggTrades_2026-05-15_2026-09-11.json",
+      "symbol": "SOXLUSDT",
+      "start": "2026-05-15",
+      "end": "2026-09-11",
+      "claimed_files": 120,
+      "present": 120,
+      "missing": 0,
+      "missing_head": [],
+      "bytes_match": 120,
+      "bytes_mismatch": 0,
+      "status": "on_disk",
+      "on_disk": true
+    },
+    {
+      "manifest": "binance_SOXLUSDT_aggTrades_2026-07-09_2026-09-11.json",
+      "symbol": "SOXLUSDT",
+      "start": "2026-07-09",
+      "end": "2026-09-11",
+      "claimed_files": 65,
+      "present": 65,
+      "missing": 0,
+      "missing_head": [],
+      "bytes_match": 65,
+      "bytes_mismatch": 0,
+      "status": "on_disk",
+      "on_disk": true
+    },
+    {
+      "manifest": "binance_SOXLUSDT_aggTrades_2026-07-15_2026-09-11.json",
+      "symbol": "SOXLUSDT",
+      "start": "2026-07-15",
+      "end": "2026-09-11",
+      "claimed_files": 59,
+      "present": 59,
+      "missing": 0,
+      "missing_head": [],
+      "bytes_match": 59,
+      "bytes_mismatch": 0,
+      "status": "on_disk",
+      "on_disk": true
+    },
+    {
+      "manifest": "binance_SOXSUSDT_aggTrades_2026-07-16_2026-09-14.json",
+      "symbol": "SOXSUSDT",
+      "start": "2026-07-16",
+      "end": "2026-09-14",
+      "claimed_files": 61,
+      "present": 61,
+      "missing": 0,
+      "missing_head": [],
+      "bytes_match": 61,
+      "bytes_mismatch": 0,
+      "status": "on_disk",
+      "on_disk": true
+    }
+  ],
+  "cache_tick_symbols": {
+    "SOXLUSDT": {
+      "days": 120,
+      "start": "2026-05-15",
+      "end": "2026-09-11"
+    },
+    "SOXSUSDT": {
+      "days": 61,
+      "start": "2026-07-16",
+      "end": "2026-09-14"
+    }
+  },
+  "claimed_symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SNXXUSDT",
+    "SOLUSDT",
+    "SOXLUSDT",
+    "SOXSUSDT"
+  ],
+  "on_disk_symbols": [
+    "SOXLUSDT",
+    "SOXSUSDT"
+  ],
+  "evicted_symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SNXXUSDT",
+    "SOLUSDT"
+  ],
+  "note": "audit only; does not re-download. ticks stay gitignored."
+}

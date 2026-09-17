@@ -1,0 +1,49 @@
+{
+  "note": "TICK path-exact. pair_stopped after short liq. +return is locked long PnL then cash. Not a 62d/120d hedge.",
+  "variants": [
+    {
+      "tag": "p715u",
+      "fills": "tick",
+      "range": "usdt20",
+      "window": "2026-05-15/2026-07-15",
+      "return": 0.3928959041546729,
+      "max_dd": -0.11291879189758425,
+      "pair_stopped": true,
+      "stop_day": "2026-05-26",
+      "liquidated_long": false,
+      "liquidated_short": true,
+      "n_days": 62,
+      "win_days": 10,
+      "zero_days": 50
+    },
+    {
+      "tag": "p715p",
+      "fills": "tick",
+      "range": "pct20",
+      "window": "2026-05-15/2026-07-15",
+      "return": 0.3448139206158056,
+      "max_dd": -0.06671762522715097,
+      "pair_stopped": true,
+      "stop_day": "2026-05-27",
+      "liquidated_long": false,
+      "liquidated_short": true,
+      "n_days": 62,
+      "win_days": 11
+    },
+    {
+      "tag": "p715full",
+      "fills": "tick",
+      "range": "usdt20",
+      "window": "2026-05-15/2026-09-11",
+      "return": 0.3928959041546729,
+      "max_dd": -0.11291879189758425,
+      "pair_stopped": true,
+      "stop_day": "2026-05-26",
+      "liquidated_long": false,
+      "liquidated_short": true,
+      "n_days": 120,
+      "win_days": 10,
+      "note": "same equity as p715u; no restart through P7-07 window"
+    }
+  ]
+}

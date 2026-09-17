@@ -1,0 +1,19 @@
+# Data quality thresholds — pre-experiment gate.
+
+min_rows: 1
+max_missing_rate: 0.05
+max_gap_fraction: 0.10
+max_duplicate_rate: 0.001
+max_time_disorder_rate: 0.0
+min_file_bytes: 64
+
+# When true, block if manifest.rows != sum of file row counts
+require_manifest_rows_match: false
+
+# Symbols requiring tick manifests before dual tick_precise runs
+dual_tech_symbols:
+  - SOXL
+  - SNXX
+
+# Set true in experiment YAML to bypass gate (tests only — not for conclusions)
+allow_skip: false

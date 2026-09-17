@@ -1,0 +1,31 @@
+# Portfolio-level risk limits — config only
+
+account_contract_leverage:
+  baseline_max: 1.5
+  hard_max: 2.0
+  stress_only: [1.75, 2.0, 3.0]
+
+drawdown:
+  soft_pct_scan: [-0.10, -0.12, -0.15]
+  hard_pct_scan: [-0.18, -0.20, -0.25]
+  soft_actions: [reduce_new_risk, reduce_satellite, raise_cash]
+  hard_actions: [stop_adding_risk, close_high_beta_experiments]
+
+funding_stress:
+  rolling_days: 7
+  deleverage_if_net_cost_pct_of_book: [0.01, 0.015, 0.02]
+
+liquidation:
+  track_min_buffer: true
+  maintenance_rate_default: 0.005
+
+tech_leverage_scan: [1.0, 1.10, 1.25, 1.5]
+tech_leverage_stress_only: [1.75, 2.0]
+tech_leverage_forbidden_default: 3.0
+
+crypto_leverage:
+  BTC_baseline: 1.5
+  ETH_baseline: [1.5, 1.75]
+  SOL_baseline: [1.25, 1.5]
+  meme_scan: [1.0, 1.25, 1.5]
+  stress_only: 3.0

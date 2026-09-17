@@ -1,0 +1,27 @@
+# Personal SOXL moving-grid spec (user 2026-09-15, corrected)
+# Do not mix with SNXX / crypto books.
+
+symbol: SOXLUSDT
+venue: binance_um_perp
+leverage: 5
+n_grids: 200
+grid_kind: arithmetic
+moving: true   # recenter when price exits the band
+capital_per_side_usdt: 5000
+sides:
+  long: 5000
+  short: 5000
+range_modes:
+  usdt:
+    range_usdt: 20          # ±20 USDT around last mid (NOT ±20%)
+    step_usdt_approx: 0.201 # 40 / 199
+  pct:
+    range_pct: 0.20         # also run: ±20 percent
+fee:
+  base_bps: 2
+  conservative_bps: 4
+fills: tick_precise_aggTrades
+window:
+  start: "2026-07-16"
+  end: "2026-09-11"
+  note: SOXS-overlap; local cache also has 2026-07-15

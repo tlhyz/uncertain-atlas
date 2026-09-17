@@ -1,0 +1,44 @@
+# 改这一份就能跑。开跑前读 soxl-lab/使用注意事项.md
+# 命令行同名参数会覆盖这里。
+#   python3 soxl-lab/scripts/run_grid.py --list-cache
+#   python3 soxl-lab/scripts/run_grid.py --check
+#   python3 soxl-lab/scripts/run_grid.py
+#   python3 soxl-lab/scripts/run_grid.py --leverage 3 --n-grids 80 --range-usdt 15
+
+symbol: SOXLUSDT
+
+window:
+  start: "2026-07-16"   # 本机逐笔 2026-05-15 → 2026-09-11
+  end: "2026-09-11"
+
+leverage: 5
+n_grids: 200
+capital_long: 5000
+capital_short: 5000
+
+range:
+  mode: usdt          # usdt = ±U；pct = ±百分比
+  usdt: 20            # ±20 USDT
+  pct: 0.20           # ±20%
+
+# flatten_survivor = 移动多空对冲（一边爆仓就平另一边）
+# independent     = 两本独立账（爆仓后另一边继续跑）
+hedge: flatten_survivor
+
+fee: base             # base=2bps  conservative=4bps
+fills: tick           # 结论用 tick；想先快速试用 bar
+tag: ""               # 输出目录前缀，可空
+
+# --- 以后要改再打开，不填 = 现在这套 ---
+# grid_kind: arithmetic   # 或 geometric；新排法 register_grid_kind
+# sizer: equal            # equal | martingale | fixed；新仓位 register_sizer
+# martingale_ratio: 1.2   # 仅 sizer=martingale；进 extras
+# lot_usdt: 50            # 仅 sizer=fixed
+# fee_bps: 3              # 覆盖 fee 预设的会计费率
+# reanchor: remap         # remap | drop_lots | flatten；新策略 register_reanchor
+# mmr_frac: 0.005         # 逐仓维持保证金
+# --symbol 也能换（cache 里要有该标的逐笔）
+# --set 键=值 不用改文件也能加 extras
+# 一次试多组：--sweep soxl-lab/params/sweep.yaml
+# 新对冲：soxl-lab/extensions/*.py → register_hedge，然后 hedge: 那个名字
+# YAML 里多出来的键进 extras，插件自己读；--check 会列「未登记」（仍会传入）

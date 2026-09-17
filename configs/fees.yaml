@@ -1,0 +1,16 @@
+# All fee/rebate assumptions — never hardcode in strategy source
+# Gate values reflect user VIP/rebate research config; validate before live
+
+binance:
+  maker: 0.0002
+  taker: 0.0005
+  rebate: 0.0
+
+gate:
+  maker: 0.00008
+  taker: 0.0002
+  rebate: 0.75
+
+scenarios:
+  with_rebate: { use: gate, rebate: 0.75 }
+  no_rebate: { use: gate, rebate: 0.0 }

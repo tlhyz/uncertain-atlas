@@ -1,0 +1,40 @@
+# Tradable universe and data venue mapping
+
+tech:
+  primary: [SOXL, SNXX]
+  watch: [AAOI]
+  gate_perp: { SOXL: SOXL_USDT, SNXX: SNXX_USDT, AAOI: AAOI_USDT }
+  binance_perp: { SOXL: SOXLUSDT, SNXX: SNXXUSDT }
+
+crypto:
+  core: [BTC, ETH, SOL]
+  satellite: [PENGU, PUMP]
+  binance_perp:
+    BTC: BTCUSDT
+    ETH: ETHUSDT
+    SOL: SOLUSDT
+    PENGU: PENGUUSDT
+    PUMP: PUMPUSDT
+  gate_perp:
+    BTC: BTC_USDT
+    ETH: ETH_USDT
+    SOL: SOL_USDT
+    PENGU: PENGU_USDT
+    PUMP: PUMP_USDT
+
+venues:
+  binance: { role: long_history_research, tick: aggTrades }
+  gate: { role: execution_calibration_oos, tick: when_available }
+
+# Seed windows — STRUCTURAL unless real perp data exists in range
+seed_windows:
+  tech:
+    - { id: TECH_T1, symbol: SOXL, start: "2024-07-10", end: "2024-09-30", pattern: crash_v_reversal }
+    - { id: TECH_T2, symbol: SOXL, start: "2025-02-01", end: "2025-06-30", pattern: sustained_crash_recovery, priority: high }
+    - { id: TECH_T3, symbol: SOXL, start: "2026-06-22", end: "2026-08-31", pattern: extreme_crash_recovery }
+    - { id: TECH_T4, symbol: SNXX, start: "2026-07-01", end: "2026-08-31", pattern: high_beta_crash_spike }
+  fail:
+    - { id: FAIL_F1, symbol: SOXL, start: "2025-09-01", end: "2025-10-31", pattern: direct_up_short_trap }
+    - { id: FAIL_F2, symbol: SOXL, start: "2024-09-01", end: "2024-11-30", pattern: no_immediate_recovery }
+  crypto:
+    - { id: CRYPTO_C1, start: "2024-09-01", end: "2024-11-30", pattern: tech_weak_crypto_strong }

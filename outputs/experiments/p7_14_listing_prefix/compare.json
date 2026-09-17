@@ -1,0 +1,49 @@
+{
+  "note": "BAR 62d is diagnostic only (P7-03 wick). Tick 3d is smoke, not a prefix verdict.",
+  "window_prefix": "2026-05-15/2026-07-15",
+  "p7_07_window": "2026-07-16/2026-09-11",
+  "variants": [
+    {
+      "tag": "p714u",
+      "fills": "bar",
+      "range": "usdt20",
+      "return": 0.375529421886438,
+      "max_dd": -0.06645257197013454,
+      "pair_stopped": false,
+      "n_days": 62,
+      "reanchors": 45,
+      "fills_n": 57584
+    },
+    {
+      "tag": "p714p",
+      "fills": "bar",
+      "range": "pct20",
+      "return": 0.26109507537014687,
+      "max_dd": -0.07745841493161776,
+      "pair_stopped": false,
+      "n_days": 62,
+      "reanchors": 7,
+      "fills_n": 27990
+    },
+    {
+      "tag": "p714t",
+      "fills": "tick",
+      "range": "usdt20",
+      "return": 0.021384403028321675,
+      "max_dd": -0.0138655949289338,
+      "pair_stopped": false,
+      "n_days": 1
+    },
+    {
+      "tag": "p714t3",
+      "fills": "tick",
+      "range": "usdt20",
+      "return": 0.020959187334252727,
+      "max_dd": -0.0138655949289338,
+      "pair_stopped": false,
+      "n_days": 3,
+      "inventory_frac": 1.2570933177147818,
+      "net_qty_units": -21.791935527440845
+    }
+  ]
+}
