@@ -1,3 +1,15 @@
+## 2026-09-17（续 895）
+
+- 不变量 778；语料 C756；模式 name-the-querycode-notkey-bar；反模式 querycode-notkey-sold-as-bundled；L10.3 第 747 条。填 L4.4 / CometBFT 档案 Query 回包 info not already key lookup / not already AppHash matched / not already settled 正式三事（384 余量）。384 querycode vs consensus bundled unbundling 完成（778 item 3）。
+
+## 2026-09-17（续 894）
+
+- 不变量 777；语料 C755；模式 name-the-querycode-notfresh-bar；反模式 querycode-notfresh-sold-as-bundled；L10.3 第 746 条。填 L4.4 / CometBFT 档案 Query 回包 log not already fresh / not already replicated / not already settled 正式三事（384 余量）。384 querycode vs consensus bundled unbundling 续（777 item 2）。
+
+## 2026-09-17（续 893）
+
+- 不变量 776；语料 C754；模式 name-the-querycode-notconsensus-bar；反模式 querycode-notconsensus-sold-as-bundled；L10.3 第 745 条。填 L4.4 / CometBFT 档案 Query 回包 code not already past consensus / not already CheckTx reject-broadcast / not already settled 正式三事（384 余量）。384 querycode vs consensus bundled unbundling 启动（776 item 1）。
+
 ## 2026-09-17（续 892）
 
 - 不变量 775；语料 C753；模式 name-the-paramsblock-notappver-bar；反模式 paramsblock-notappver-sold-as-bundled；L10.3 第 744 条。填 L4.4 / CometBFT 档案 ConsensusParams.version not already app_version in header / not already header AppHash / not already settled 正式三事（385 余量）。385 paramsblock vs maxbytes bundled unbundling 完成（775 item 3）。

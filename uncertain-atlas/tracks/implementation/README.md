@@ -337,6 +337,9 @@
 - [`worked-example-checktxspace-vs-code.md`](worked-example-checktxspace-vs-code.md) — CheckTx 回包 codespace 是码的命名空间 ≠ 已经是回包码；CheckTx 回包 events 是给索引用的类型键值 ≠ 已经交差；CheckTx 的 lane_id 必须在 Info 回包车道范围内 ≠ 已经不设道（不变量 381）
 - [`worked-example-syncingheight-vs-history.md`](worked-example-syncingheight-vs-history.md) — syncing_to_height 同步或重放时是目标高、否则等于本高 ≠ 已经有完整历史；validator_updates 空则引擎保持当前集合 ≠ 已经没有集合；Finalize 回包 events 标成非确定 ≠ 已经必须确定（不变量 382）
 - [`worked-example-queryprove-vs-proof.md`](worked-example-queryprove-vs-proof.md) — Query 请求 prove 是能回就回默克尔证明 ≠ 已经对上 AppHash；Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明 ≠ 已经是按键查；Query 回包 height 是数据来自哪一高 ≠ 已经是请求高度（不变量 383）
+- [`worked-example-querycode-notkey-vs-bundled.md`](worked-example-querycode-notkey-vs-bundled.md) — info≠key lookup/380 AppHash/already settled；≠384 bundled（不变量 778）
+- [`worked-example-querycode-notfresh-vs-bundled.md`](worked-example-querycode-notfresh-vs-bundled.md) — log≠fresh/329 replicated/already settled；≠384 bundled（不变量 777）
+- [`worked-example-querycode-notconsensus-vs-bundled.md`](worked-example-querycode-notconsensus-vs-bundled.md) — code≠past consensus/373 CheckTx reject-broadcast/already settled；≠384 bundled（不变量 776）
 - [`worked-example-querycode-vs-consensus.md`](worked-example-querycode-vs-consensus.md) — Query 回包 code 是回包码 ≠ 已经过了共识；Query 回包 log 是应用日志输出 ≠ 已经新鲜；Query 回包 info 是附加信息 ≠ 已经是按键查（不变量 384）
 - [`worked-example-paramsblock-notappver-vs-bundled.md`](worked-example-paramsblock-notappver-vs-bundled.md) — version≠370 app_version in header/AppHash/handshake；≠385 bundled（不变量 775）
 - [`worked-example-paramsblock-notpubkey-vs-bundled.md`](worked-example-paramsblock-notpubkey-vs-bundled.md) — validator≠364 has pubkey/selected type/changed set；≠385 bundled（不变量 774）

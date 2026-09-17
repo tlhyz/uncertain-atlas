@@ -1,3 +1,6 @@
+- [`querycode-notkey-sold-as-bundled.md`](querycode-notkey-sold-as-bundled.md) — info 被写成已经是按键查 / 已经对上 AppHash / 已经交差（不变量 778）
+- [`querycode-notfresh-sold-as-bundled.md`](querycode-notfresh-sold-as-bundled.md) — log 被写成已经新鲜 / 已经复制到各节点 / 已经交差（不变量 777）
+- [`querycode-notconsensus-sold-as-bundled.md`](querycode-notconsensus-sold-as-bundled.md) — code 被写成已经过了共识 / 已经是 CheckTx 那种拒广播 / 已经交差（不变量 776）
 - [`paramsblock-notappver-sold-as-bundled.md`](paramsblock-notappver-sold-as-bundled.md) — version 被写成已经是 app_version 进了头 / 已经印进本头 AppHash / 已经是握手对齐（不变量 775）
 - [`paramsblock-notpubkey-sold-as-bundled.md`](paramsblock-notpubkey-sold-as-bundled.md) — validator 被写成已经带了公钥 / 已经选型 / 已经改了集合（不变量 774）
 - [`paramsblock-notmaxbytes-sold-as-bundled.md`](paramsblock-notmaxbytes-sold-as-bundled.md) — block 被写成已经是 MaxBytes 上限 / 已经是 next_block_delay / 已经交差（不变量 773）

@@ -1,3 +1,18 @@
+| A3650 | 记录 | 会与 384 / 380 / 391 / 754 / 414 / 759 / 776 / 777 糊成「看见回了信息就已经是按键查 interchangeable、就已经对上 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 info not already key lookup / not already AppHash matched / not already settled 正式三事（384 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。384 querycode vs consensus bundled unbundling 完成（778 item 3） |
+| A3651 | 高 | 看见 Query 回包 info 会被写成已经是按键查 interchangeable | 官方 Query 回包码 item 3：not already key lookup |
+| A3652 | 高 | 看见回了信息 会被写成已经对上 AppHash interchangeable / 380 interchangeable | 官方 Query 回包码 item 3：not already AppHash matched / not 380 |
+| A3653 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 Query 回包码 item 3：not already settled |
+| A3654 | 中 | 怎样写 Query 回包码 会被抄进不确定 | 不抄。不写怎样写 Query 回包码。不另写 19 节 |
+| A3645 | 记录 | 会与 384 / 329 / 414 / 758 / 390 / 745 / 776 / 778 糊成「看见回了日志就已经新鲜 interchangeable、就已经复制到各节点 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 log not already fresh / not already replicated / not already settled 正式三事（384 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。384 querycode vs consensus bundled unbundling 续（777 item 2） |
+| A3646 | 高 | 看见 Query 回包 log 会被写成已经新鲜 interchangeable | 官方 Query 回包码 item 2：not already fresh |
+| A3647 | 高 | 看见回了日志 会被写成已经复制到各节点 interchangeable / 329 interchangeable | 官方 Query 回包码 item 2：not already replicated / not 329 |
+| A3648 | 高 | 看见能读 会被写成已经交差 interchangeable | 官方 Query 回包码 item 2：not already settled |
+| A3649 | 中 | 怎样写 Query 回包码 会被抄进不确定 | 不抄。不写怎样写 Query 回包码。不另写 19 节 |
+| A3640 | 记录 | 会与 384 / 373 / 777 / 778 糊成「看见回了码就已经过了共识 interchangeable、就已经是 CheckTx 那种拒广播 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 code not already past consensus / not already CheckTx reject-broadcast / not already settled 正式三事（384 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。384 querycode vs consensus bundled unbundling 启动（776 item 1） |
+| A3641 | 高 | 看见 Query 回包 code 会被写成已经过了共识 interchangeable | 官方 Query 回包码 item 1：not already past consensus |
+| A3642 | 高 | 看见回了码 会被写成已经是 CheckTx 那种拒广播 interchangeable / 373 interchangeable | 官方 Query 回包码 item 1：not already CheckTx reject-broadcast / not 373 |
+| A3643 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 Query 回包码 item 1：not already settled |
+| A3644 | 中 | 怎样写 Query 回包码 会被抄进不确定 | 不抄。不写怎样写 Query 回包码。不另写 19 节 |
 | A3635 | 记录 | 会与 385 / 370 / 389 / 762 / 773 / 774 糊成「看见填了 version 就已经是 app_version 进了头 interchangeable、就已经印进本头 AppHash interchangeable、就已经是握手对齐 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams.version not already app_version in header / not already header AppHash / not already settled 正式三事（385 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。385 paramsblock vs maxbytes bundled unbundling 完成（775 item 3） |
 | A3636 | 高 | 看见 ConsensusParams.version 会被写成已经是 app_version 进了头 interchangeable / 370 interchangeable | 官方 ConsensusParams 字段 item 3：not already app_version in header / not 370 |
 | A3637 | 高 | 看见填了 version 会被写成已经印进本头 AppHash interchangeable / 370 interchangeable | 官方 ConsensusParams 字段 item 3：not already header AppHash / not 370 |

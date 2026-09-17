@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Query 回了码就已经过了共识、已经新鲜、已经是按键查」，必须分开 Query 回包 code 是回包码是不是已经过了共识、Query 回包 log 是应用日志输出是不是已经新鲜、Query 回包 info 是附加信息是不是已经是按键查。可以跳过「看见 Query 回了码就已经过了共识」。不要另写怎样写 Query 回包码。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Query 回了码就已经过了共识、已经新鲜、已经是按键查」，必须分开 Query 回包 code 是回包码是不是已经过了共识、Query 回包 log 是应用日志输出是不是已经新鲜、Query 回包 info 是附加信息是不是已经是按键查。可以跳过「看见 Query 回了码就已经过了共识」。不要另写怎样写 Query 回包码。384 querycode vs consensus bundled unbundling 完成（776 item 1 / 777 item 2 / 778 item 3）；精读 [`worked-example-querycode-notconsensus-vs-bundled.md`](worked-example-querycode-notconsensus-vs-bundled.md)（不变量 776 item 1）。
 
 ## 本页不抄
 

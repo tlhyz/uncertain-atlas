@@ -1,3 +1,6 @@
+- [`name-the-querycode-notkey-bar.md`](name-the-querycode-notkey-bar.md) — Query 回包 info not already key lookup / not already AppHash matched / not already settled 正式三事（384 余量）（不变量 778）
+- [`name-the-querycode-notfresh-bar.md`](name-the-querycode-notfresh-bar.md) — Query 回包 log not already fresh / not already replicated / not already settled 正式三事（384 余量）（不变量 777）
+- [`name-the-querycode-notconsensus-bar.md`](name-the-querycode-notconsensus-bar.md) — Query 回包 code not already past consensus / not already CheckTx reject-broadcast / not already settled 正式三事（384 余量）（不变量 776）
 - [`name-the-paramsblock-notappver-bar.md`](name-the-paramsblock-notappver-bar.md) — ConsensusParams.version not already app_version in header / not already header AppHash / not already settled 正式三事（385 余量）（不变量 775）
 - [`name-the-paramsblock-notpubkey-bar.md`](name-the-paramsblock-notpubkey-bar.md) — ConsensusParams.validator not already has pubkey / not already selected type / not already settled 正式三事（385 余量）（不变量 774）
 - [`name-the-paramsblock-notmaxbytes-bar.md`](name-the-paramsblock-notmaxbytes-bar.md) — ConsensusParams.block not already MaxBytes cap / not already next_block_delay / not already settled 正式三事（385 余量）（不变量 773）
