@@ -1,3 +1,15 @@
+## 2026-09-17（续 802）
+
+- 不变量 685；语料 C663；模式 name-the-chktxsource-notreplay-bar；反模式 chktxsource-notreplay-sold-as-bundled；L10.3 第 654 条。填 L4.4 / CometBFT 档案 CheckTx Usage may come from external user or another node not mempool dedup / not app replay protection / not CheckTx guard bundled 正式三事（488 余量）。488 chktxsource vs recheck bundled unbundling 完成（685 item 3）。
+
+## 2026-09-17（续 801）
+
+- 不变量 684；语料 C662；模式 name-the-chktxsource-notremoved-bar；反模式 chktxsource-notremoved-sold-as-bundled；L10.3 第 653 条。填 L4.4 / CometBFT 档案 CheckTx Usage may come from another node not gossip verified / not removed from pool / not forever valid 正式三事（488 余量）。488 chktxsource vs recheck bundled unbundling 续（684 item 2）。
+
+## 2026-09-17（续 800）
+
+- 不变量 683；语料 C661；模式 name-the-chktxsource-notrecheck-bar；反模式 chktxsource-notrecheck-sold-as-bundled；L10.3 第 652 条。填 L4.4 / CometBFT 档案 CheckTx Usage may come from an external user not CheckTx_Recheck / not CheckTx_New bundled / not broadcast_tx once 正式三事（488 余量）。488 chktxsource vs recheck bundled unbundling 启动（683 item 1）。
+
 ## 2026-09-17（续 799）
 
 - 不变量 682；语料 C660；模式 name-the-chktxvalidate-notoptional-bar；反模式 chktxvalidate-notoptional-sold-as-bundled；L10.3 第 651 条。填 L4.4 / CometBFT 档案 CheckTx Usage Technically optional + Code≠0 rejected not four gates settled / not Check passed is in proposal / not forever valid 正式三事（486 余量）。486 chktxvalidate vs apply bundled unbundling 完成（682 item 3）。

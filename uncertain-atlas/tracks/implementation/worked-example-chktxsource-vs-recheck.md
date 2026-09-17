@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见送来了就已经是 Recheck、已经从池里删掉、已经保证不重放」，必须分开 may come from external user 是不是 CheckTx_Recheck、may come from another node 是不是已经从池里删掉 / CheckTx 过了就永远有效、external user or another node 是不是已经保证不重放 / CheckTx 守卫 bundled interchangeable。可以跳过「看见送来了就已经是 Recheck」。不要另写怎样挑邻居。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见送来了就已经是 Recheck、已经从池里删掉、已经保证不重放」，必须分开 may come from external user 是不是 CheckTx_Recheck、may come from another node 是不是已经从池里删掉 / CheckTx 过了就永远有效、external user or another node 是不是已经保证不重放 / CheckTx 守卫 bundled interchangeable。可以跳过「看见送来了就已经是 Recheck」。不要另写怎样挑邻居。488 chktxsource vs recheck bundled unbundling 完成（683 item 1 / 684 item 2 / 685 item 3）；精读 [`worked-example-chktxsource-notrecheck-vs-bundled.md`](worked-example-chktxsource-notrecheck-vs-bundled.md)（不变量 683 item 1）。
 
 ## 本页不抄
 

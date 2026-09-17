@@ -1,3 +1,6 @@
+- [`chktxsource-notreplay-sold-as-bundled.md`](chktxsource-notreplay-sold-as-bundled.md) — 送来了 被写成已经去重保证 / 已经应用级保护 / 已经守卫 bundled（不变量 685）
+- [`chktxsource-notremoved-sold-as-bundled.md`](chktxsource-notremoved-sold-as-bundled.md) — another node 被写成已经流言验过 / 已经从池里删掉 / 已经 forever valid（不变量 684）
+- [`chktxsource-notrecheck-sold-as-bundled.md`](chktxsource-notrecheck-sold-as-bundled.md) — external user 被写成已经 Recheck / 已经 New bundled / 已经 broadcast_tx once（不变量 683）
 - [`chktxvalidate-notoptional-sold-as-bundled.md`](chktxvalidate-notoptional-sold-as-bundled.md) — Technically optional + Code≠0 被写成已经四门已经结算 / 已经进提案 / 已经 forever valid（不变量 682）
 - [`chktxvalidate-notapply-sold-as-bundled.md`](chktxvalidate-notapply-sold-as-bundled.md) — does not apply state changes 被写成已经改了状态 / 已经 Finalize 执行 / 已经 Process candidate 已提交（不变量 681）
 - [`chktxvalidate-notexecstate-sold-as-bundled.md`](chktxvalidate-notexecstate-sold-as-bundled.md) — validates against current state 被写成已经 ExecuteTxState / 已经 about-to-execute / 已经 CheckTxState is ExecuteTxState（不变量 680）
