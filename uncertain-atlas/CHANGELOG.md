@@ -1,3 +1,15 @@
+## 2026-09-17（续 1108）
+
+- 不变量 991；语料 C969；模式 name-the-evidreap-notunlim-bar；反模式 evidreap-notunlim-sold-as-bundled；L10.3 第 960 条。填 L4.4 / CometBFT 档案 MaxBytes 写成 -1 not already unlimited / not already app-free / not already settled 正式三事（299 余量）。299 evidence vs reap bundled unbundling 完成（991 item 3）。
+
+## 2026-09-17（续 1107）
+
+- 不变量 990；语料 C968；模式 name-the-evidreap-notsame-bar；反模式 evidreap-notsame-sold-as-bundled；L10.3 第 959 条。填 L4.4 / CometBFT 档案 两条收交易上限 not already same-cap / not already pool-fits / not already settled 正式三事（299 余量）。299 evidence vs reap bundled unbundling 续（990 item 2）。
+
+## 2026-09-17（续 1106）
+
+- 不变量 989；语料 C967；模式 name-the-evidreap-notfull-bar；反模式 evidreap-notfull-sold-as-bundled；L10.3 第 958 条。填 L4.4 / CometBFT 档案 先装证据 not already full-of-txs / not already executed / not already settled 正式三事（299 余量）。299 evidence vs reap bundled unbundling 启动（989 item 1）。
+
 ## 2026-09-17（续 1105）
 
 - 不变量 988；语料 C966；模式 name-the-genesis-notset-bar；反模式 genesis-notset-sold-as-bundled；L10.3 第 957 条。填 L4.4 / CometBFT 档案 空名单 / 空根 not already no-set / not already no-root / not already settled 正式三事（303 余量）。303 genesis vs app bundled unbundling 完成（988 item 3）。

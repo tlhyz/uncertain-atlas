@@ -1,3 +1,18 @@
+| A4715 | 记录 | 会与 299 / 337 / 46 / 989 / 990 糊成「看见写成 -1 就已经没有上限 interchangeable、就已经可以随便回 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 MaxBytes 写成 -1 not already unlimited / not already app-free / not already settled 正式三事（299 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。299 evidence vs reap bundled unbundling 完成（991 item 3） |
+| A4716 | 高 | 看见 MaxBytes 写成 -1 会被写成已经没有上限 interchangeable | 官方 Creating a proposal item 3：not already unlimited |
+| A4717 | 高 | 看见整池都给了应用 会被写成已经可以随便回 interchangeable | 官方 Creating a proposal item 3：not already app-free |
+| A4718 | 高 | 看见回了列表 会被写成已经交差 interchangeable | 官方 Creating a proposal item 3：not already settled |
+| A4719 | 中 | 怎样算扣减会被抄进不确定 | 不抄。不写怎样算扣减或怎样从池里收割。不另写 19 节 |
+| A4710 | 记录 | 会与 299 / 63 / 331 / 989 / 991 糊成「看见两条上限就已经同一条 interchangeable、就已经扣掉证据之后还收得下 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 两条收交易上限 not already same-cap / not already pool-fits / not already settled 正式三事（299 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。299 evidence vs reap bundled unbundling 续（990 item 2） |
+| A4711 | 高 | 看见两条收交易上限 会被写成已经同一条 interchangeable | 官方 Creating a proposal item 2：not already same-cap |
+| A4712 | 高 | 看见内存池收得下 会被写成已经扣掉证据之后还收得下 interchangeable | 官方 Creating a proposal item 2：not already pool-fits |
+| A4713 | 高 | 看见两套扣法 会被写成已经交差 interchangeable | 官方 Creating a proposal item 2：not already settled |
+| A4714 | 中 | 怎样算扣减会被抄进不确定 | 不抄。不写怎样算扣减或怎样从池里收割。不另写 19 节 |
+| A4705 | 记录 | 会与 299 / 33 / 303 / 990 / 991 糊成「看见先装证据就已经装满交易 interchangeable、就已经执行 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 先装证据 not already full-of-txs / not already executed / not already settled 正式三事（299 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。299 evidence vs reap bundled unbundling 启动（989 item 1） |
+| A4706 | 高 | 看见先装证据 会被写成已经装满交易 interchangeable / 33 interchangeable | 官方 Creating a proposal item 1：not already full-of-txs / not 33 |
+| A4707 | 高 | 看见证据进了提案 会被写成已经执行 interchangeable | 官方 Creating a proposal item 1：not already executed |
+| A4708 | 高 | 看见证据占了位置 会被写成已经交差 interchangeable | 官方 Creating a proposal item 1：not already settled |
+| A4709 | 中 | 怎样算扣减会被抄进不确定 | 不抄。不写怎样算扣减或怎样从池里收割。不另写 19 节 |
 | A4700 | 记录 | 会与 303 / 318 / 300 / 986 / 987 糊成「看见空名单就已经没有集合 interchangeable、就已经没有状态根 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 空名单 / 空根 not already no-set / not already no-root / not already settled 正式三事（303 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。303 genesis vs app bundled unbundling 完成（988 item 3） |
 | A4701 | 高 | 看见空名单 会被写成已经没有集合 interchangeable | 官方 Genesis item 3：not already no-set |
 | A4702 | 高 | 看见根空 会被写成已经没有状态根 interchangeable | 官方 Genesis item 3：not already no-root |

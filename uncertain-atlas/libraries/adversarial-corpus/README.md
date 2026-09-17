@@ -1,3 +1,9 @@
+| C969 | 991 | evidreap notunlim≠337/299 | 文案把 MaxBytes 写成 -1 / 整池都给了 Prepare 写成已经没有上限 interchangeable 或已经和 337 interchangeable / 991 evidreap-notunlim interchangeable；或把看见整池都给了应用 写成已经可以随便回 interchangeable；或把看见回了列表 写成已经交差 interchangeable，或已经和 299 evidence-vs-reap bundled / evidreap-notunlim-sold-as-bundled interchangeable / 989 evidreap-notfull interchangeable / 990 evidreap-notsame interchangeable |
+
+| C968 | 990 | evidreap notsame≠63/299 | 文案把两条收交易上限 / 提案扣掉证据 写成已经同一条 interchangeable 或已经和 63 interchangeable / 990 evidreap-notsame interchangeable；或把看见内存池收得下 写成已经扣掉证据之后还收得下 interchangeable；或把看见两套扣法 写成已经交差 interchangeable，或已经和 299 evidence-vs-reap bundled / evidreap-notsame-sold-as-bundled interchangeable / 989 evidreap-notfull interchangeable / 991 evidreap-notunlim interchangeable |
+
+| C967 | 989 | evidreap notfull≠33/299 | 文案把先装证据 / 证据优先 写成已经装满交易 interchangeable 或已经和 33 interchangeable / 989 evidreap-notfull interchangeable；或把看见证据进了提案 写成已经执行 interchangeable；或把看见证据占了位置 写成已经交差 interchangeable，或已经和 299 evidence-vs-reap bundled / evidreap-notfull-sold-as-bundled interchangeable / 990 evidreap-notsame interchangeable / 991 evidreap-notunlim interchangeable |
+
 | C966 | 988 | genesis notset≠318/303 | 文案把空名单 / 空 app_hash 写成已经没有集合 interchangeable 或已经和 318 interchangeable / 988 genesis-notset interchangeable；或把看见根空 写成已经没有状态根 interchangeable；或把看见 InitChain 被叫了 写成已经交差 interchangeable，或已经和 303 genesis-vs-app bundled / genesis-notset-sold-as-bundled interchangeable / 986 genesis-notapp interchangeable / 987 genesis-nottime interchangeable |
 
 | C965 | 987 | genesis nottime≠147/303 | 文案把进程起来 / 节点已经启动 写成已经开出块 interchangeable 或已经和 147 interchangeable / 987 genesis-nottime interchangeable；或把看见握手过了 写成已经过了创世时间 interchangeable；或把看见本机钟到了 写成已经交差 interchangeable，或已经和 303 genesis-vs-app bundled / genesis-nottime-sold-as-bundled interchangeable / 986 genesis-notapp interchangeable / 988 genesis-notset interchangeable |
