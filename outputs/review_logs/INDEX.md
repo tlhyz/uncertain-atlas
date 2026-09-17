@@ -4,6 +4,7 @@ One line per review entry. Newest first.
 
 | Date (UTC) | Experiment | Verdict | Log |
 |------------|------------|---------|-----|
+| 2026-09-17 | timer 1110Z checkpoint | BLOCKED | outputs/review_logs/2026-09-17_timer_1110Z_checkpoint.md |
 | 2026-09-17 | timer 1100Z checkpoint | BLOCKED | outputs/review_logs/2026-09-17_timer_1100Z_checkpoint.md |
 | 2026-09-17 | timer 1050Z checkpoint | BLOCKED | outputs/review_logs/2026-09-17_timer_1050Z_checkpoint.md |
 | 2026-09-17 | timer 1040Z checkpoint | BLOCKED | outputs/review_logs/2026-09-17_timer_1040Z_checkpoint.md |
