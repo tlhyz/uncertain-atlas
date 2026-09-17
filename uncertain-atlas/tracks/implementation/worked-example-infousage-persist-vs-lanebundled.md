@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage last_block persisted during Commit / lane_priorities 正式三事 part 2，必须分开 last_block persisted during Commit 是不是 Info 握手 bundled interchangeable / 已经 Commit 交差 / Info 回包 last_block 栏 interchangeable、does not have to define lane_priorities 是不是 Info 车道 bundled interchangeable / 已经排了优先、lane_priorities empty iff default_lane empty 是不是 Info 车道 bundled interchangeable / 已经选型。可以跳过「看见 Info 回了 last_block / 车道 就已经 Commit 交差、已经排了优先」。不要另写怎样写 Info。497 infousage persist/lane unbundling 在本页 item 1 启动；精读 [`worked-example-infousage-notcommitpersist-vs-bundled.md`](worked-example-infousage-notcommitpersist-vs-bundled.md)（不变量 665 item 1）；续 does not have to define lane_priorities（666 item 2 余量）；续 lane_priorities empty iff default_lane empty（667 item 3 余量）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage last_block persisted during Commit / lane_priorities 正式三事 part 2，必须分开 last_block persisted during Commit 是不是 Info 握手 bundled interchangeable / 已经 Commit 交差 / Info 回包 last_block 栏 interchangeable、does not have to define lane_priorities 是不是 Info 车道 bundled interchangeable / 已经排了优先、lane_priorities empty iff default_lane empty 是不是 Info 车道 bundled interchangeable / 已经选型。可以跳过「看见 Info 回了 last_block / 车道 就已经 Commit 交差、已经排了优先」。不要另写怎样写 Info。497 infousage persist/lane unbundling 在本页 item 1 启动；精读 [`worked-example-infousage-notcommitpersist-vs-bundled.md`](worked-example-infousage-notcommitpersist-vs-bundled.md)（不变量 665 item 1）；续 [`worked-example-infousage-notlaneoptional-vs-bundled.md`](worked-example-infousage-notlaneoptional-vs-bundled.md)（不变量 666 item 2）；续 lane_priorities empty iff default_lane empty（667 item 3 余量）。
 
 ## 本页不抄
 
