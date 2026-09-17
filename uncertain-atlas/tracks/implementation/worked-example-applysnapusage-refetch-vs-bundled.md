@@ -32,7 +32,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ApplySnapshotChunk Usage refetch/ban 正式二事，必须分开 can choose refetch chunks and/or ban P2P peers 是不是 refetch/ban bundled interchangeable / 已经 RETRY interchangeable / 已经封邻居就交差、CometBFT will not do this unless instructed 是不是引擎自动 refetch interchangeable / 已经 unable retrieve 换快照 interchangeable / 已经齐。可以跳过「看见 Apply 了 chunk 回包 refetch_chunks 就已经 refetch/ban bundled interchangeable、已经引擎自动 refetch interchangeable」。不要另写怎样做增量验、怎样封邻居。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ApplySnapshotChunk Usage refetch/ban 正式二事，必须分开 can choose refetch chunks and/or ban P2P peers 是不是 refetch/ban bundled interchangeable / 已经 RETRY interchangeable / 已经封邻居就交差、CometBFT will not do this unless instructed 是不是引擎自动 refetch interchangeable / 已经 unable retrieve 换快照 interchangeable / 已经齐。可以跳过「看见 Apply 了 chunk 回包 refetch_chunks 就已经 refetch/ban bundled interchangeable、已经引擎自动 refetch interchangeable」。不要另写怎样做增量验、怎样封邻居。502 applysnapusage refetch/ban unbundling 在本页 item 1 启动；精读 [`worked-example-applysnapusage-notchoose-vs-bundled.md`](worked-example-applysnapusage-notchoose-vs-bundled.md)（不变量 656 item 1）；续 657 applysnapusage-notunless。
 
 ## 本页不抄
 
