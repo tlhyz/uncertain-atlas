@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-infousage-bar](name-the-infousage-bar.md)
 - [name-the-flushusage-bar](name-the-flushusage-bar.md)
 - [name-the-echousage-bar](name-the-echousage-bar.md)
 - [name-the-commitretaincaution-bar](name-the-commitretaincaution-bar.md)
