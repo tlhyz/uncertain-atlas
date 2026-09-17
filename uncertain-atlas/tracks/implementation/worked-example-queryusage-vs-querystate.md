@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能 Query 就已经是 QueryState、已经对上 AppHash、已经是 ProofOp 按键查」，必须分开 Query for data at current or past height 是不是已经是 QueryState、Optionally return Merkle proof 是不是已经对上 AppHash、Merkle proof self-describing type 是不是 ProofOp 按键查。可以跳过「看见能 Query 就已经是 QueryState」。不要另写怎样写 Query 路径。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能 Query 就已经是 QueryState、已经对上 AppHash、已经是 ProofOp 按键查」，必须分开 Query for data at current or past height 是不是已经是 QueryState、Optionally return Merkle proof 是不是已经对上 AppHash、Merkle proof self-describing type 是不是 ProofOp 按键查。可以跳过「看见能 Query 就已经是 QueryState」。不要另写怎样写 Query 路径。487 queryusage vs querystate bundled unbundling 完成（677 item 1 / 678 item 2 / 679 item 3）；精读 [`worked-example-queryusage-notquerystate-vs-bundled.md`](worked-example-queryusage-notquerystate-vs-bundled.md)（不变量 677 item 1）。
 
 ## 本页不抄
 

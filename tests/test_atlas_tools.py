@@ -35,3 +35,18 @@ def test_review_audit_writes_report():
     assert p.returncode in (0, 1)
     # v1 pages exist → R5 should pass; high_fail should be 0 after Phase 1
     assert "high_fail=0" in text or p.returncode == 0
+
+
+def test_atlas_index_writes_json(tmp_path):
+    out = tmp_path / "atlas_index.json"
+    p = subprocess.run(
+        [sys.executable, str(ATLAS / "tools" / "atlas_index.py"), "--out", str(out), "--stats"],
+        cwd=ATLAS,
+        capture_output=True,
+        text=True,
+    )
+    assert p.returncode == 0, p.stdout + p.stderr
+    assert out.is_file()
+    data = out.read_text(encoding="utf-8")
+    assert '"count"' in data
+    assert "GOAL.md" in data

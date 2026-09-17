@@ -91,7 +91,7 @@ def main() -> int:
     check("R3", "high", ok, msg[:240])
 
     arch = read("ARCHITECTURE.md")
-    check("R4", "med", "676" in arch or "不变量" in arch, "ARCHITECTURE 含进度数字")
+    check("R4", "med", "679" in arch or "不变量" in arch, "ARCHITECTURE 含进度数字")
 
     check("R5a", "high", exists("libraries/threat-model/INDEX.md"), "threat-model INDEX")
     check("R5b", "high", exists("libraries/threat-model/actors.md"), "actors.md")
@@ -113,11 +113,13 @@ def main() -> int:
     check("R8", "med", "commit 高度" in copy and "AppHash" in copy, "settlement-copy 对齐 Y")
     proto = read("protocols/README.md")
     check("R9", "med", "永久过滤器" in proto, "protocols 永久过滤器声明")
+    check("R10", "med", exists("tools/atlas_index.py"), "atlas_index.py")
+    check("R11", "med", exists("tracks/post-quantum/cpu-measurement-method.md"), "PQ CPU 测量方法")
 
     if not next_work:
-        next_work.append("P1-3 ABCI++ 不变量 677+")
-        next_work.append("P1-5 PQ CPU 测量方法")
-        next_work.append("P3-1 atlas_index.py")
+        next_work.append("P1-3 ABCI++ 不变量 680+")
+        next_work.append("P3-2 invariant↔corpus 链接校验")
+        next_work.append("P3-3 merge KB snapshot branches")
 
     lines = [
         f"# Review Report · {now}",

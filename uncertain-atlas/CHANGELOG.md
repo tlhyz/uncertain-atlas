@@ -1,3 +1,20 @@
+## 2026-09-17（续 796）
+
+- 不变量 679；语料 C657；模式 name-the-queryusage-notprooftype-bar；反模式 queryusage-notprooftype-sold-as-bundled；L10.3 第 648 条。填 L4.4 / CometBFT 档案 Query Usage Merkle proof self-describing type not ProofOp 按键查 / not CheckTx 守卫余量 / not Snapshot 高度余量 正式三事（487 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。487 queryusage vs querystate bundled unbundling 完成（679 item 3）。
+
+## 2026-09-17（续 795）
+
+- 不变量 678；语料 C656；模式 name-the-queryusage-notproof-bar；反模式 queryusage-notproof-sold-as-bundled；L10.3 第 647 条。填 L4.4 / CometBFT 档案 Query Usage Optionally return Merkle proof not prove 栏 / not AppHash matched / not Finalize Query proofs anchored 正式三事（487 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。487 queryusage vs querystate bundled unbundling 续（678 item 2）。
+
+## 2026-09-17（续 794）
+
+- 不变量 677；语料 C655；模式 name-the-queryusage-notquerystate-bar；反模式 queryusage-notquerystate-sold-as-bundled；L10.3 第 646 条。填 L4.4 / CometBFT 档案 Query Usage Query for data at current or past height not QueryState / not replicated / not QueryState is ExecuteTxState 正式三事（487 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。487 queryusage vs querystate bundled unbundling 启动（677 item 1）。
+
+## 2026-09-17（P1-5 / P3-1）
+
+- P1-5：[`tracks/post-quantum/cpu-measurement-method.md`](tracks/post-quantum/cpu-measurement-method.md)；工程账本第 4 行改为「方法已写，数字仍空」。
+- P3-1：[`tools/atlas_index.py`](tools/atlas_index.py) 生成本地 Markdown JSON 目录。
+
 ## 2026-09-17（复审循环）
 
 - 新增 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)、[`tools/review_audit.py`](tools/review_audit.py)；GOAL 防停止节指向小时定时器 `uncertain-atlas-hourly-review`。

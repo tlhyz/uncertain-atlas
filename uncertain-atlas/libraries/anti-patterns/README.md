@@ -1,3 +1,6 @@
+- [`queryusage-notprooftype-sold-as-bundled.md`](queryusage-notprooftype-sold-as-bundled.md) — Merkle proof self-describing type 被写成已经 ProofOp 按键查 / 已经 CheckTx 守卫余量 / 已经 Snapshot 高度余量（不变量 679）
+- [`queryusage-notproof-sold-as-bundled.md`](queryusage-notproof-sold-as-bundled.md) — Optionally return Merkle proof 被写成已经 prove 栏 / 已经对上 AppHash / 已经 Finalize Query proofs anchored（不变量 678）
+- [`queryusage-notquerystate-sold-as-bundled.md`](queryusage-notquerystate-sold-as-bundled.md) — Query for data at current or past height 被写成已经 QueryState / 已经 replicated / 已经 QueryState is ExecuteTxState（不变量 677）
 - [`echousage-notdone-sold-as-bundled.md`](echousage-notdone-sold-as-bundled.md) — Response Message the input string 被写成已经 Echo Usage test already done / 已经 Request Message / 已经 Flush sync response（不变量 676）
 - [`echousage-notreqresp-sold-as-bundled.md`](echousage-notreqresp-sold-as-bundled.md) — Request Message string to echo back 被写成已经 Response Message / 已经 Echo Message 是 Flush / 已经填了 Message 就代表已经回显（不变量 675）
 - [`echousage-notflush-sold-as-bundled.md`](echousage-notflush-sold-as-bundled.md) — Echo a string to test implementation 被写成已经 Flush 冲队列 / 已经 Commit 空请求 bundled / 已经 Flush 同步回包（不变量 674）

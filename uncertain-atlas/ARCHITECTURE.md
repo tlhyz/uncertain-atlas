@@ -73,11 +73,11 @@ index 看路
 | courses | L0–L10 均有正文；L8.4 数学后置 | 77 模块 |
 | protocols | 20+ 链/品类；主线 19 节 + 若干过滤器页 | 见 [`protocols/README.md`](protocols/README.md) |
 | tracks | 16 专题；failure-museum 92+ 案；implementation 精读 ABCI++ | ~470 文件 |
-| libraries | design-patterns ~540；anti-patterns ~650；invariants ~676；corpus C653+ | 见 [`index/03-knowledge-assets.md`](index/03-knowledge-assets.md) |
+| libraries | design-patterns ~540；anti-patterns ~650；invariants ~679；corpus C657+ | 见 [`index/03-knowledge-assets.md`](index/03-knowledge-assets.md) |
 | decision-matrix | 对照列完整；**不确定候选列**填建议档（非最终选型） | 2 表 |
 | threat-model | **v1 入口已立**：[`libraries/threat-model/INDEX.md`](libraries/threat-model/INDEX.md)；README 仍是 sold-as 活页 | v1 |
 | review loop | [`REVIEW_LOOP.md`](REVIEW_LOOP.md) + `tools/review_audit.py` + 小时定时器 | 已启用 |
-| tools | adversarial_runner v0 | [`tools/`](tools/README.md) |
+| tools | adversarial_runner v0 + atlas_index.py | [`tools/`](tools/README.md) |
 | exams | L0 题已迁入，暂不考 | 后置 |
 
 **canonical 分支（建议）：** `cursor/uncertain-atlas-optimization-5ee2`（本仓库 KB 最全 + 优化迭代）。  
@@ -92,8 +92,8 @@ index 看路
 | 缺口 | 计划 |
 |---|---|
 | 285+ cometbft 快照分支难导航 | Phase 3 合并为 long-lived KB 分支 |
-| ABCI++ 不变量未拆完（~676/793） | Phase 1 继续流水线 |
-| adversarial runner 无 pytest 钩子 | Phase 1 P1-4 |
-| PQ CPU 实测空 | Phase 1 P1-5 |
+| ABCI++ 不变量未拆完（~679/793） | Phase 1 继续流水线 |
+| adversarial runner pytest 钩子已有（2+ 测） | Phase 1 P1-4 扩到 10 条 Cxx |
+| PQ CPU 实测空（方法已写） | Phase 1 P1-5 测数字 |
+| 无全文检索 | Phase 3 atlas_index v0 已有脚本 |
 | 过滤器页链缺 19 节 | Phase 2 补档或永久声明 |
-| 无全文检索 | Phase 3 atlas_index |

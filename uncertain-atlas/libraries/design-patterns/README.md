@@ -1,3 +1,6 @@
+- [`name-the-queryusage-notprooftype-bar.md`](name-the-queryusage-notprooftype-bar.md) — Query Usage Merkle proof self-describing type not ProofOp 按键查 / not CheckTx 守卫余量 / not Snapshot 高度余量 正式三事（487 余量）（不变量 679）
+- [`name-the-queryusage-notproof-bar.md`](name-the-queryusage-notproof-bar.md) — Query Usage Optionally return Merkle proof not prove 栏 / not AppHash matched / not Finalize Query proofs anchored 正式三事（487 余量）（不变量 678）
+- [`name-the-queryusage-notquerystate-bar.md`](name-the-queryusage-notquerystate-bar.md) — Query Usage Query for data at current or past height not QueryState / not replicated / not QueryState is ExecuteTxState 正式三事（487 余量）（不变量 677）
 - [`name-the-echousage-notdone-bar.md`](name-the-echousage-notdone-bar.md) — Echo Response Message the input string not Echo Usage test already done / not Request Message string to echo back / not Flush sync response 正式三事（492 余量）（不变量 676）
 - [`name-the-echousage-notreqresp-bar.md`](name-the-echousage-notreqresp-bar.md) — Echo Request Message string to echo back not Response Message / not Echo request Message is Flush / not filled Message means echoed 正式三事（492 余量）（不变量 675）
 - [`name-the-echousage-notflush-bar.md`](name-the-echousage-notflush-bar.md) — Echo Usage Echo a string to test implementation not Flush flush queue / not commit-empty-echo bundled / not Flush sync response 正式三事（492 余量）（不变量 674）
