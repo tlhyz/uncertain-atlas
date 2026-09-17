@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见已经回了就已经能稍后改裁决、已经还能再 Reject、已经验过这块」，必须分开 Process 调用是同步的是不是已经能在返回之后再改裁决、只做基本检查再异步 Process 是不是已经还能再 Reject、非验证者可以立刻回 ACCEPT 是不是已经验过这块。可以跳过「看见已经回了就已经能稍后改裁决」。不要另写怎样写 Process 何时调用。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见已经回了就已经能稍后改裁决、已经还能再 Reject、已经验过这块」，必须分开 Process 调用是同步的是不是已经能在返回之后再改裁决、只做基本检查再异步 Process 是不是已经还能再 Reject、非验证者可以立刻回 ACCEPT 是不是已经验过这块。可以跳过「看见已经回了就已经能稍后改裁决」。不要另写怎样写 Process 何时调用。354 process-when vs later bundled unbundling 完成（857 item 1 / 858 item 2 / 859 item 3）；精读 [`worked-example-process-when-notlater-vs-bundled.md`](worked-example-process-when-notlater-vs-bundled.md)（不变量 857 item 1）。
 
 ## 本页不抄
 

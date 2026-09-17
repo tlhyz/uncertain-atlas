@@ -1,3 +1,6 @@
+- [`process-when-notverified-sold-as-bundled.md`](process-when-notverified-sold-as-bundled.md) — 立刻 ACCEPT 被写成已经验过这块 / 已经是验证者也可以立刻交差 / 已经交差（不变量 859）
+- [`process-when-notreject-sold-as-bundled.md`](process-when-notreject-sold-as-bundled.md) — 异步 Process 被写成已经还能再 Reject / 已经还能强迫 nil / 已经交差（不变量 858）
+- [`process-when-notlater-sold-as-bundled.md`](process-when-notlater-sold-as-bundled.md) — 同步 Process 被写成已经能稍后改裁决 / 已经离开关键路径 / 已经交差（不变量 857）
 - [`prepare-drop-nottrace-sold-as-bundled.md`](prepare-drop-nottrace-sold-as-bundled.md) — t1改t2 被写成已经还能按 t1 查到 / 已经有人知道来源 / 已经交差（不变量 856）
 - [`prepare-drop-notinpool-sold-as-bundled.md`](prepare-drop-notinpool-sold-as-bundled.md) — 加新的 被写成已经进了内存池 / 已经过了 CheckTx / 已经交差（不变量 855）
 - [`prepare-drop-notdeleted-sold-as-bundled.md`](prepare-drop-notdeleted-sold-as-bundled.md) — 拿掉 tx 被写成已经从池里删掉 / 已经永远不提 / 已经交差（不变量 854）

@@ -1,3 +1,6 @@
+- [`name-the-process-when-notverified-bar.md`](name-the-process-when-notverified-bar.md) — 非验证者可以立刻回 ACCEPT not already verified this block / not already validators can skip / not already settled 正式三事（354 余量）（不变量 859）
+- [`name-the-process-when-notreject-bar.md`](name-the-process-when-notreject-bar.md) — 只做基本检查再异步 Process not already can still Reject / not already can force nil / not already settled 正式三事（354 余量）（不变量 858）
+- [`name-the-process-when-notlater-bar.md`](name-the-process-when-notlater-bar.md) — Process 调用是同步的 not already can change verdict later / not already left critical path / not already settled 正式三事（354 余量）（不变量 857）
 - [`name-the-prepare-drop-nottrace-bar.md`](name-the-prepare-drop-nottrace-bar.md) — 把 t1 改成 t2 not already can look up t1 / not already someone knows t2 from t1 / not already settled 正式三事（355 余量）（不变量 856）
 - [`name-the-prepare-drop-notinpool-bar.md`](name-the-prepare-drop-notinpool-bar.md) — 往提案加了一笔新的 not already in mempool / not already passed CheckTx / not already settled 正式三事（355 余量）（不变量 855）
 - [`name-the-prepare-drop-notdeleted-bar.md`](name-the-prepare-drop-notdeleted-bar.md) — 从提案拿掉 tx not already deleted from mempool / not already never propose / not already settled 正式三事（355 余量）（不变量 854）

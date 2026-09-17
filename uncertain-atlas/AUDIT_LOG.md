@@ -1,3 +1,18 @@
+| A4055 | 记录 | 会与 354 / 351 / 33 / 857 / 858 糊成「看见立刻 ACCEPT 就已经验过这块 interchangeable、就已经是验证者也可以立刻交差 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 非验证者可以立刻回 ACCEPT not already verified this block / not already validators can skip / not already settled 正式三事（354 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。354 process-when vs later bundled unbundling 完成（859 item 3） |
+| A4056 | 高 | 看见非验证者可以立刻回 ACCEPT 会被写成已经验过这块 interchangeable | 官方 Process 何时调用 item 3：not already verified this block |
+| A4057 | 高 | 看见规范允许 会被写成已经是验证者也可以立刻交差 interchangeable | 官方 Process 何时调用 item 3：not already validators can skip |
+| A4058 | 高 | 看见立刻 ACCEPT 会被写成已经交差 interchangeable | 官方 Process 何时调用 item 3：not already settled |
+| A4059 | 中 | 怎样写 Process 何时调用 会被抄进不确定 | 不抄。不写怎样写 Process 何时调用。不另写 19 节 |
+| A4050 | 记录 | 会与 354 / 33 / 327 / 857 / 859 糊成「看见已经回了就已经还能再 Reject interchangeable、就已经还能强迫 nil interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 只做基本检查再异步 Process not already can still Reject / not already can force nil / not already settled 正式三事（354 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。354 process-when vs later bundled unbundling 续（858 item 2） |
+| A4051 | 高 | 看见只做基本检查再异步 Process 会被写成已经还能再 Reject interchangeable | 官方 Process 何时调用 item 2：not already can still Reject |
+| A4052 | 高 | 看见还在跑 会被写成已经还能强迫 nil interchangeable | 官方 Process 何时调用 item 2：not already can force nil |
+| A4053 | 高 | 看见异步了 会被写成已经交差 interchangeable | 官方 Process 何时调用 item 2：not already settled |
+| A4054 | 中 | 怎样写 Process 何时调用 会被抄进不确定 | 不抄。不写怎样写 Process 何时调用。不另写 19 节 |
+| A4045 | 记录 | 会与 354 / 327 / 361 / 843 / 858 / 859 糊成「看见已经回了就已经能稍后改裁决 interchangeable、就已经离开关键路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 调用是同步的 not already can change verdict later / not already left critical path / not already settled 正式三事（354 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。354 process-when vs later bundled unbundling 启动（857 item 1） |
+| A4046 | 高 | 看见 Process 调用是同步的 会被写成已经能稍后改裁决 interchangeable / 327 interchangeable | 官方 Process 何时调用 item 1：not already can change verdict later / not 327 |
+| A4047 | 高 | 看见引擎在等 会被写成已经离开关键路径 interchangeable | 官方 Process 何时调用 item 1：not already left critical path |
+| A4048 | 高 | 看见立刻执行 会被写成已经交差 interchangeable | 官方 Process 何时调用 item 1：not already settled |
+| A4049 | 中 | 怎样写 Process 何时调用 会被抄进不确定 | 不抄。不写怎样写 Process 何时调用。不另写 19 节 |
 | A4040 | 记录 | 会与 355 / 33 / 356 / 853 / 854 / 855 糊成「看见 t1 没进块就已经还能按 t1 查到 interchangeable、就已经有人知道 t2 来自 t1 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 把 t1 改成 t2 not already can look up t1 / not already someone knows t2 from t1 / not already settled 正式三事（355 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。355 prepare-drop vs mempool bundled unbundling 完成（856 item 3） |
 | A4041 | 高 | 看见把 t1 改成 t2 会被写成已经还能按 t1 查到 interchangeable | 官方 Prepare 改列表 item 3：not already can look up t1 |
 | A4042 | 高 | 看见 t2 进了块 会被写成已经有人知道 t2 来自 t1 interchangeable | 官方 Prepare 改列表 item 3：not already someone knows t2 from t1 |

@@ -164,6 +164,9 @@
 - [`worked-example-process-also-vs-prepare.md`](worked-example-process-also-vs-prepare.md) — Process 也会在提议者那边叫 ≠ 已经不用再 Process；通常紧跟 Prepare、列表对得上 ≠ 已经保证是这一次；失败时可能对上更早一次或根本不调 ≠ 已经每轮都会叫（不变量 351）
 - [`worked-example-late-extension-vs-verified.md`](worked-example-late-extension-vs-verified.md) — +2/3 之后才进来的扩展写进了 commit info ≠ 已经 Verify 过；建议按 Verify 同款逻辑再看一遍 ≠ 已经是引擎会再 Verify；下一高度 round 0 写进 ExtendedCommitInfo ≠ 已经又叫了 Verify（不变量 352）
 - [`worked-example-verify-when-vs-empty.md`](worked-example-verify-when-vs-empty.md) — 空扩展仍会调 Verify ≠ 已经跳过 Verify；不对本进程自己发出的 Precommit 调用 ≠ 已经自己验过；请求里的 hash ≠ 已经对该块跑过 Process（不变量 353）
+- [`worked-example-process-when-notverified-vs-bundled.md`](worked-example-process-when-notverified-vs-bundled.md) — 非验证者ACCEPT≠verified/validators skip/settled；≠354 bundled（不变量 859）
+- [`worked-example-process-when-notreject-vs-bundled.md`](worked-example-process-when-notreject-vs-bundled.md) — 异步Process≠still Reject/force nil/settled；≠354 bundled（不变量 858）
+- [`worked-example-process-when-notlater-vs-bundled.md`](worked-example-process-when-notlater-vs-bundled.md) — 同步Process≠later verdict/left path/settled；≠354 bundled（不变量 857）
 - [`worked-example-process-when-vs-later.md`](worked-example-process-when-vs-later.md) — Process 调用是同步的 ≠ 已经能在返回之后再改裁决；只做基本检查再异步 Process ≠ 已经还能再 Reject；非验证者可以立刻回 ACCEPT ≠ 已经验过这块（不变量 354）
 - [`worked-example-prepare-drop-nottrace-vs-bundled.md`](worked-example-prepare-drop-nottrace-vs-bundled.md) — t1改t2≠lookup t1/knows source/settled；≠355 bundled（不变量 856）
 - [`worked-example-prepare-drop-notinpool-vs-bundled.md`](worked-example-prepare-drop-notinpool-vs-bundled.md) — 加新的≠in mempool/passed CheckTx/settled；≠355 bundled（不变量 855）

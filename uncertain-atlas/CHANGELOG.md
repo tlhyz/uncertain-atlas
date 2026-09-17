@@ -1,3 +1,15 @@
+## 2026-09-17（续 976）
+
+- 不变量 859；语料 C837；模式 name-the-process-when-notverified-bar；反模式 process-when-notverified-sold-as-bundled；L10.3 第 828 条。填 L4.4 / CometBFT 档案 非验证者可以立刻回 ACCEPT not already verified this block / not already validators can skip / not already settled 正式三事（354 余量）。354 process-when vs later bundled unbundling 完成（859 item 3）。
+
+## 2026-09-17（续 975）
+
+- 不变量 858；语料 C836；模式 name-the-process-when-notreject-bar；反模式 process-when-notreject-sold-as-bundled；L10.3 第 827 条。填 L4.4 / CometBFT 档案 只做基本检查再异步 Process not already can still Reject / not already can force nil / not already settled 正式三事（354 余量）。354 process-when vs later bundled unbundling 续（858 item 2）。
+
+## 2026-09-17（续 974）
+
+- 不变量 857；语料 C835；模式 name-the-process-when-notlater-bar；反模式 process-when-notlater-sold-as-bundled；L10.3 第 826 条。填 L4.4 / CometBFT 档案 Process 调用是同步的 not already can change verdict later / not already left critical path / not already settled 正式三事（354 余量）。354 process-when vs later bundled unbundling 启动（857 item 1）。
+
 ## 2026-09-17（续 973）
 
 - 不变量 856；语料 C834；模式 name-the-prepare-drop-nottrace-bar；反模式 prepare-drop-nottrace-sold-as-bundled；L10.3 第 825 条。填 L4.4 / CometBFT 档案 把 t1 改成 t2 not already can look up t1 / not already someone knows t2 from t1 / not already settled 正式三事（355 余量）。355 prepare-drop vs mempool bundled unbundling 完成（856 item 3）。
