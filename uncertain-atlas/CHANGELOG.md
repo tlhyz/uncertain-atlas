@@ -1,3 +1,7 @@
+## 2026-09-17（续 759）
+
+- 不变量 642；语料 C619；模式 name-the-finh1-notround-bar；反模式 finh1-notround-sold-as-bundled；L10.3 第 611 条。填 L4.4 / CometBFT 档案 FinalizeBlock When round 0 not same round / not next_block_delay / not timeout_commit / not finh1 bundled 正式三事（593 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。593 finh1 unbundling 续（642 item 2）。
+
 ## 2026-09-17（续 758）
 
 - 不变量 641；语料 C618；模式 name-the-finh1-notsettled-bar；反模式 finh1-notsettled-sold-as-bundled；L10.3 第 610 条。填 L4.4 / CometBFT 档案 FinalizeBlock When starts consensus for height h+1 not already settled / not persist decision / not finh1 bundled 正式三事（593 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。593 finh1 unbundling 启动（641 item 1）。
