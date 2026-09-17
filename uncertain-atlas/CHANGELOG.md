@@ -1,3 +1,15 @@
+## 2026-09-17（续 928）
+
+- 不变量 811；语料 C789；模式 name-the-misbehavior-notreward-bar；反模式 misbehavior-notreward-sold-as-bundled；L10.3 第 780 条。填 L4.4 / CometBFT 档案 total_voting_power not already rewarded by presence / not already changed set / not already slashed 正式三事（372 余量）。372 misbehavior vs enum bundled unbundling 完成（811 item 3）。
+
+## 2026-09-17（续 927）
+
+- 不变量 810；语料 C788；模式 name-the-misbehavior-nottime-bar；反模式 misbehavior-nottime-sold-as-bundled；L10.3 第 779 条。填 L4.4 / CometBFT 档案 height/time not already verified time / not already settled / not already +2/3 正式三事（372 余量）。372 misbehavior vs enum bundled unbundling 续（810 item 2）。
+
+## 2026-09-17（续 926）
+
+- 不变量 809；语料 C787；模式 name-the-misbehavior-notslashed-bar；反模式 misbehavior-notslashed-sold-as-bundled；L10.3 第 778 条。填 L4.4 / CometBFT 档案 Misbehavior.type not already slashed / not already rewarded / not already settled 正式三事（372 余量）。372 misbehavior vs enum bundled unbundling 启动（809 item 1）。
+
 ## 2026-09-17（续 925）
 
 - 不变量 808；语料 C786；模式 name-the-checktxopt-notdata-bar；反模式 checktxopt-notdata-sold-as-bundled；L10.3 第 777 条。填 L4.4 / CometBFT 档案 回包码不再另有含义 not already Data used / not already consensus order / not already forked 正式三事（373 余量）。373 checktxopt vs block bundled unbundling 完成（808 item 3）。

@@ -1,3 +1,6 @@
+- [`name-the-misbehavior-notreward-bar.md`](name-the-misbehavior-notreward-bar.md) — total_voting_power not already rewarded by presence / not already changed set / not already slashed 正式三事（372 余量）（不变量 811）
+- [`name-the-misbehavior-nottime-bar.md`](name-the-misbehavior-nottime-bar.md) — height/time not already verified time / not already settled / not already +2/3 正式三事（372 余量）（不变量 810）
+- [`name-the-misbehavior-notslashed-bar.md`](name-the-misbehavior-notslashed-bar.md) — Misbehavior.type not already slashed / not already rewarded / not already settled 正式三事（372 余量）（不变量 809）
 - [`name-the-checktxopt-notdata-bar.md`](name-the-checktxopt-notdata-bar.md) — 回包码不再另有含义 not already Data used / not already consensus order / not already forked 正式三事（373 余量）（不变量 808）
 - [`name-the-checktxopt-notinblock-bar.md`](name-the-checktxopt-notinblock-bar.md) — Code≠0 拒收 not already not-in-block / not already byzantine blocked / not already settled 正式三事（373 余量）（不变量 807）
 - [`name-the-checktxopt-notsettled-bar.md`](name-the-checktxopt-notsettled-bar.md) — CheckTx 可选 not already four gates settled / not already settled / not already deleted from pool 正式三事（373 余量）（不变量 806）

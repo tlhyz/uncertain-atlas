@@ -1,3 +1,6 @@
+- [`misbehavior-notreward-sold-as-bundled.md`](misbehavior-notreward-sold-as-bundled.md) — 总权 被写成已经按到场定奖惩 / 已经改了集合 / 已经罚没（不变量 811）
+- [`misbehavior-nottime-sold-as-bundled.md`](misbehavior-nottime-sold-as-bundled.md) — height/time 被写成已经验过这个时间 / 已经交差 / 已经是本高 +2/3（不变量 810）
+- [`misbehavior-notslashed-sold-as-bundled.md`](misbehavior-notslashed-sold-as-bundled.md) — type 枚举 被写成已经罚没 / 已经定了奖惩 / 已经交差（不变量 809）
 - [`checktxopt-notdata-sold-as-bundled.md`](checktxopt-notdata-sold-as-bundled.md) — 回包码 被写成已经被引擎用了 Data / 已经是共识顺序 / 已经分叉（不变量 808）
 - [`checktxopt-notinblock-sold-as-bundled.md`](checktxopt-notinblock-sold-as-bundled.md) — Code≠0 拒收 被写成已经没进块 / 已经被挡住拜占庭 / 已经交差（不变量 807）
 - [`checktxopt-notsettled-sold-as-bundled.md`](checktxopt-notsettled-sold-as-bundled.md) — CheckTx 可选 被写成已经是四门已经结算 / 已经交差 / 已经从池里删掉（不变量 806）

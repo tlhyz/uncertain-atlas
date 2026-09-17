@@ -1,3 +1,18 @@
+| A3815 | 记录 | 会与 372 / 365 / 569 / 388 / 765 / 809 / 810 糊成「看见有总权就已经按到场定奖惩 interchangeable、就已经改了集合 interchangeable、就已经罚没 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 total_voting_power not already rewarded by presence / not already changed set / not already slashed 正式三事（372 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。372 misbehavior vs enum bundled unbundling 完成（811 item 3） |
+| A3816 | 高 | 看见 total_voting_power 会被写成已经按到场定奖惩 interchangeable / 365 interchangeable | 官方 Misbehavior item 3：not already rewarded by presence / not 365 |
+| A3817 | 高 | 看见填了权 会被写成已经改了集合 interchangeable / 569 interchangeable | 官方 Misbehavior item 3：not already changed set / not 569 |
+| A3818 | 高 | 看见有集合 会被写成已经罚没 interchangeable | 官方 Misbehavior item 3：not already slashed |
+| A3819 | 中 | 怎样写 Misbehavior 会被抄进不确定 | 不抄。不写怎样写 Misbehavior。不另写 19 节 |
+| A3810 | 记录 | 会与 372 / 304 / 387 / 767 / 420 / 809 / 811 糊成「看见有时间就已经验过 interchangeable、就已经交差 interchangeable、就已经是本高 +2/3 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 height/time not already verified time / not already settled / not already +2/3 正式三事（372 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。372 misbehavior vs enum bundled unbundling 续（810 item 2） |
+| A3811 | 高 | 看见 height/time 会被写成已经验过这个时间 interchangeable / 304 interchangeable | 官方 Misbehavior item 2：not already verified time / not 304 |
+| A3812 | 高 | 看见有高度 会被写成已经交差 interchangeable / 387 interchangeable | 官方 Misbehavior item 2：not already settled / not 387 |
+| A3813 | 高 | 看见对上了高度 会被写成已经是本高 +2/3 interchangeable | 官方 Misbehavior item 2：not already +2/3 |
+| A3814 | 中 | 怎样写 Misbehavior 会被抄进不确定 | 不抄。不写怎样写 Misbehavior。不另写 19 节 |
+| A3805 | 记录 | 会与 372 / 21 / 569 / 376 / 713 / 810 / 811 糊成「看见有类型就已经罚没 interchangeable、就已经定了奖惩 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Misbehavior.type not already slashed / not already rewarded / not already settled 正式三事（372 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。372 misbehavior vs enum bundled unbundling 启动（809 item 1） |
+| A3806 | 高 | 看见 Misbehavior.type 会被写成已经罚没 interchangeable / 21 interchangeable | 官方 Misbehavior item 1：not already slashed / not 21 |
+| A3807 | 高 | 看见写成双签 会被写成已经定了奖惩 interchangeable / 569 interchangeable | 官方 Misbehavior item 1：not already rewarded / not 569 |
+| A3808 | 高 | 看见枚举在 会被写成已经交差 interchangeable | 官方 Misbehavior item 1：not already settled |
+| A3809 | 中 | 怎样写 Misbehavior 会被抄进不确定 | 不抄。不写怎样写 Misbehavior。不另写 19 节 |
 | A3800 | 记录 | 会与 373 / 317 / 489 / 688 / 381 / 786 / 806 / 807 糊成「看见有码就已经被引擎用了 Data interchangeable、就已经是共识顺序 interchangeable、就已经分叉 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 回包码不再另有含义 not already Data used / not already consensus order / not already forked 正式三事（373 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。373 checktxopt vs block bundled unbundling 完成（808 item 3） |
 | A3801 | 高 | 看见回包码不再另有含义 会被写成已经被引擎用了 Data interchangeable / 317 interchangeable | 官方 CheckTx 可选 item 3：not already Data used / not 317 |
 | A3802 | 高 | 看见有码 会被写成已经是共识顺序 interchangeable / 489 interchangeable | 官方 CheckTx 可选 item 3：not already consensus order / not 489 |

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见有 Misbehavior 就已经罚没、已经验过时间、已经按到场定奖惩」，必须分开 Misbehavior.type 只是过错枚举是不是已经罚没、height 是过错发生的高度、time 是那一高已提交块的时间是不是已经验过这个时间、total_voting_power 是那一高验证者集合的总权是不是已经按到场定奖惩。可以跳过「看见有 Misbehavior 就已经罚没」。不要另写怎样写 Misbehavior。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见有 Misbehavior 就已经罚没、已经验过时间、已经按到场定奖惩」，必须分开 Misbehavior.type 只是过错枚举是不是已经罚没、height 是过错发生的高度、time 是那一高已提交块的时间是不是已经验过这个时间、total_voting_power 是那一高验证者集合的总权是不是已经按到场定奖惩。可以跳过「看见有 Misbehavior 就已经罚没」。不要另写怎样写 Misbehavior。372 misbehavior vs enum bundled unbundling 完成（809 item 1 / 810 item 2 / 811 item 3）；精读 [`worked-example-misbehavior-notslashed-vs-bundled.md`](worked-example-misbehavior-notslashed-vs-bundled.md)（不变量 809 item 1）。
 
 ## 本页不抄
 
