@@ -1,3 +1,18 @@
+| A3965 | 记录 | 会与 362 / 147 / 363 / 838 / 371 / 839 / 840 糊成「看见回了就已经印进本头 interchangeable、就已经是本头 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 回了 AppHash 和输出哈希进 ResultHash not already printed in header / not already this-height AppHash / not already settled 正式三事（362 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。362 finalize-when vs decided bundled unbundling 完成（841 item 3） |
+| A3966 | 高 | 看见回了 AppHash 和输出哈希进 ResultHash 会被写成已经印进本头 interchangeable | 官方 Finalize 何时调用 item 3：not already printed in header |
+| A3967 | 高 | 看见有 ResultHash 会被写成已经是本头 AppHash interchangeable / 147 interchangeable | 官方 Finalize 何时调用 item 3：not already this-height AppHash / not 147 |
+| A3968 | 高 | 看见哈希了 会被写成已经交差 interchangeable | 官方 Finalize 何时调用 item 3：not already settled |
+| A3969 | 中 | 怎样写 Finalize 何时调用 会被抄进不确定 | 不抄。不写怎样写 Finalize 何时调用。不另写 19 节 |
+| A3960 | 记录 | 会与 362 / 335 / 481 / 363 / 838 / 839 / 841 糊成「看见决定了就已经交差 interchangeable、就已经落盘应用状态 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 先落决定再同步调 Finalize not already settled / not already persist app state / not already sync means done 正式三事（362 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。362 finalize-when vs decided bundled unbundling 续（840 item 2） |
+| A3961 | 高 | 看见先落决定再同步调 Finalize 会被写成已经交差 interchangeable | 官方 Finalize 何时调用 item 2：not already settled |
+| A3962 | 高 | 看见先落了决定 会被写成已经落盘应用状态 interchangeable / 335 interchangeable | 官方 Finalize 何时调用 item 2：not already persist app state / not 335 |
+| A3963 | 高 | 看见是同步的 会被写成已经交差 interchangeable | 官方 Finalize 何时调用 item 2：not already sync means done |
+| A3964 | 中 | 怎样写 Finalize 何时调用 会被抄进不确定 | 不抄。不写怎样写 Finalize 何时调用。不另写 19 节 |
+| A3955 | 记录 | 会与 362 / 361 / 472 finwhen / 363 / 836 / 840 / 841 糊成「看见到了这一高就已经会调 Finalize interchangeable、就已经是 ExtendVote when interchangeable、就已经决定 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 +2/3 precommit 才决定再调 Finalize not already will call / not already ExtendVote when / not already decided 正式三事（362 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。362 finalize-when vs decided bundled unbundling 启动（839 item 1） |
+| A3956 | 高 | 看见 +2/3 precommit 才决定再调 Finalize 会被写成已经会调 Finalize interchangeable | 官方 Finalize 何时调用 item 1：not already will call |
+| A3957 | 高 | 看见规范写了 When 会被写成已经是 ExtendVote when interchangeable / 361 interchangeable | 官方 Finalize 何时调用 item 1：not already ExtendVote when / not 361 |
+| A3958 | 高 | 看见有提案 会被写成已经决定 interchangeable | 官方 Finalize 何时调用 item 1：not already decided |
+| A3959 | 中 | 怎样写 Finalize 何时调用 会被抄进不确定 | 不抄。不写怎样写 Finalize 何时调用。不另写 19 节 |
 | A3950 | 记录 | 会与 363 / 364 / 835 / 147 / 318 / 836 / 837 糊成「看见回了四列就已经改了集合 interchangeable、就已经交差 interchangeable、就已经印进本头 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 必须回四列 not already changed set / not already settled / not already header AppHash 正式三事（363 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。363 finalize-equiv vs gates bundled unbundling 完成（838 item 3） |
 | A3951 | 高 | 看见必须回四列 会被写成已经改了集合 interchangeable / 364 / 835 interchangeable | 官方 Finalize 回包义务 item 3：not already changed set / not 364 / 835 |
 | A3952 | 高 | 看见有 validator_updates 会被写成已经交差 interchangeable | 官方 Finalize 回包义务 item 3：not already settled |

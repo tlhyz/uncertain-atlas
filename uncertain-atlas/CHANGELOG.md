@@ -1,3 +1,15 @@
+## 2026-09-17（续 958）
+
+- 不变量 841；语料 C819；模式 name-the-finalize-when-notheader-bar；反模式 finalize-when-notheader-sold-as-bundled；L10.3 第 810 条。填 L4.4 / CometBFT 档案 回了 AppHash 和输出哈希进 ResultHash not already printed in header / not already this-height AppHash / not already settled 正式三事（362 余量）。362 finalize-when vs decided bundled unbundling 完成（841 item 3）。
+
+## 2026-09-17（续 957）
+
+- 不变量 840；语料 C818；模式 name-the-finalize-when-notpersist-bar；反模式 finalize-when-notpersist-sold-as-bundled；L10.3 第 809 条。填 L4.4 / CometBFT 档案 先落决定再同步调 Finalize not already settled / not already persist app state / not already sync means done 正式三事（362 余量）。362 finalize-when vs decided bundled unbundling 续（840 item 2）。
+
+## 2026-09-17（续 956）
+
+- 不变量 839；语料 C817；模式 name-the-finalize-when-notcall-bar；反模式 finalize-when-notcall-sold-as-bundled；L10.3 第 808 条。填 L4.4 / CometBFT 档案 +2/3 precommit 才决定再调 Finalize not already will call / not already ExtendVote when / not already decided 正式三事（362 余量）。362 finalize-when vs decided bundled unbundling 启动（839 item 1）。
+
 ## 2026-09-17（续 955）
 
 - 不变量 838；语料 C816；模式 name-the-finalize-equiv-notchanged-bar；反模式 finalize-equiv-notchanged-sold-as-bundled；L10.3 第 807 条。填 L4.4 / CometBFT 档案 必须回四列 not already changed set / not already settled / not already header AppHash 正式三事（363 余量）。363 finalize-equiv vs gates bundled unbundling 完成（838 item 3）。

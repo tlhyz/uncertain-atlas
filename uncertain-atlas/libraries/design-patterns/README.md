@@ -1,3 +1,6 @@
+- [`name-the-finalize-when-notheader-bar.md`](name-the-finalize-when-notheader-bar.md) — 回了 AppHash 和输出哈希进 ResultHash not already printed in header / not already this-height AppHash / not already settled 正式三事（362 余量）（不变量 841）
+- [`name-the-finalize-when-notpersist-bar.md`](name-the-finalize-when-notpersist-bar.md) — 先落决定再同步调 Finalize not already settled / not already persist app state / not already sync means done 正式三事（362 余量）（不变量 840）
+- [`name-the-finalize-when-notcall-bar.md`](name-the-finalize-when-notcall-bar.md) — +2/3 precommit 才决定再调 Finalize not already will call / not already ExtendVote when / not already decided 正式三事（362 余量）（不变量 839）
 - [`name-the-finalize-equiv-notchanged-bar.md`](name-the-finalize-equiv-notchanged-bar.md) — 必须回四列 not already changed set / not already settled / not already header AppHash 正式三事（363 余量）（不变量 838）
 - [`name-the-finalize-equiv-notslashed-bar.md`](name-the-finalize-equiv-notslashed-bar.md) — 可以用 decided_last_commit 和 misbehavior 定奖惩 not already slashed / not already LastCommit +2/3 / not already settled 正式三事（363 余量）（不变量 837）
 - [`name-the-finalize-equiv-notgates-bar.md`](name-the-finalize-equiv-notgates-bar.md) — Finalize 等价于 ABCI 1.0 那三步 not already four gates / not already settled / not already no Prepare-Process 正式三事（363 余量）（不变量 836）

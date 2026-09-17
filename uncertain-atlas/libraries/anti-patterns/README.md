@@ -1,3 +1,6 @@
+- [`finalize-when-notheader-sold-as-bundled.md`](finalize-when-notheader-sold-as-bundled.md) — 回 AppHash 被写成已经印进本头 / 已经是本头 AppHash / 已经交差（不变量 841）
+- [`finalize-when-notpersist-sold-as-bundled.md`](finalize-when-notpersist-sold-as-bundled.md) — 先落决定 被写成已经交差 / 已经落盘应用状态 / 同步就已经交差（不变量 840）
+- [`finalize-when-notcall-sold-as-bundled.md`](finalize-when-notcall-sold-as-bundled.md) — +2/3 precommit 才决定再调 被写成已经会调 / 已经是 ExtendVote when / 已经决定（不变量 839）
 - [`finalize-equiv-notchanged-sold-as-bundled.md`](finalize-equiv-notchanged-sold-as-bundled.md) — 必须回四列 被写成已经改了集合 / 已经交差 / 已经印进本头（不变量 838）
 - [`finalize-equiv-notslashed-sold-as-bundled.md`](finalize-equiv-notslashed-sold-as-bundled.md) — 定奖惩 被写成已经罚没 / 已经是本头 LastCommit / 已经交差（不变量 837）
 - [`finalize-equiv-notgates-sold-as-bundled.md`](finalize-equiv-notgates-sold-as-bundled.md) — 等价 ABCI 1.0 三步 被写成已经是四门已经结算 / 已经交差 / 已经没有 Prepare / Process（不变量 836）

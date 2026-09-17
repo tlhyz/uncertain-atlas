@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了这一高就已经会调 Finalize、已经交差、已经印进本头」，必须分开 +2/3 precommit 同一 id(v) 才决定再调 Finalize 是不是已经会调 Finalize、先把 v 落成这一高的决定再同步调 Finalize 是不是已经交差、应用回了 AppHash 和各笔输出引擎哈希进 ResultHash 是不是已经印进本头。可以跳过「看见到了这一高就已经会调 Finalize」。不要另写怎样写 Finalize 何时调用。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了这一高就已经会调 Finalize、已经交差、已经印进本头」，必须分开 +2/3 precommit 同一 id(v) 才决定再调 Finalize 是不是已经会调 Finalize、先把 v 落成这一高的决定再同步调 Finalize 是不是已经交差、应用回了 AppHash 和各笔输出引擎哈希进 ResultHash 是不是已经印进本头。可以跳过「看见到了这一高就已经会调 Finalize」。不要另写怎样写 Finalize 何时调用。362 finalize-when vs decided bundled unbundling 完成（839 item 1 / 840 item 2 / 841 item 3）；精读 [`worked-example-finalize-when-notcall-vs-bundled.md`](worked-example-finalize-when-notcall-vs-bundled.md)（不变量 839 item 1）。
 
 ## 本页不抄
 
