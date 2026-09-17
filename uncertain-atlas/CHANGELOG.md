@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 659）
+
+- 不变量 527；语料 C519；模式 name-the-verifyaccept-shouldaccept-bar；反模式 verifyaccept-shouldaccept-sold-as-bundled；L10.3 第 511 条。填 L4.4 / CometBFT 档案 VerifyVoteExtension Usage SHOULD always set ACCEPT 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 658）
 
 - 不变量 526；语料 C518；模式 name-the-extusage-nondet-bar；反模式 extusage-nondet-sold-as-bundled；L10.3 第 510 条。填 L4.4 / CometBFT 档案 ExtendVote Usage extension creation logic can be non-deterministic 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
