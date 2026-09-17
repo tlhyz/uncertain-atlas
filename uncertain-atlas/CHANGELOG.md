@@ -1,3 +1,15 @@
+## 2026-09-17（续 1120）
+
+- 不变量 1003；语料 C981；模式 name-the-initpeer-nothot-bar；反模式 initpeer-nothot-sold-as-bundled；L10.3 第 972 条。填 L4.4 / CometBFT 档案 跑着 not already hot-add / not already another-name / not already restart 正式三事（305 余量）。305 initpeer vs addpeer bundled unbundling 完成（1003 item 3）。
+
+## 2026-09-17（续 1119）
+
+- 不变量 1002；语料 C980；模式 name-the-initpeer-notadd-bar；反模式 initpeer-notadd-sold-as-bundled；L10.3 第 971 条。填 L4.4 / CometBFT 档案 Receive not already AddPeer / not already joined / not already forbidden-early 正式三事（305 余量）。305 initpeer vs addpeer bundled unbundling 续（1002 item 2）。
+
+## 2026-09-17（续 1118）
+
+- 不变量 1001；语料 C979；模式 name-the-initpeer-nottalk-bar；反模式 initpeer-nottalk-sold-as-bundled；L10.3 第 970 条。填 L4.4 / CometBFT 档案 InitPeer not already talking / not already connected / not already added 正式三事（305 余量）。305 initpeer vs addpeer bundled unbundling 启动（1001 item 1）。
+
 ## 2026-09-17（续 1117）
 
 - 不变量 1000；语料 C978；模式 name-the-votets-notslash-bar；反模式 votets-notslash-sold-as-bundled；L10.3 第 969 条。填 L4.4 / CometBFT 档案 断开 not already slashed / not already on-chain / not already doublesign 正式三事（304 余量）。304 vote-ts vs checked bundled unbundling 完成（1000 item 3）。

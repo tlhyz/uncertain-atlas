@@ -1,3 +1,18 @@
+| A4775 | 记录 | 会与 305 / 67 / 306 / 1001 / 1002 糊成「看见跑着就已经能再登记 interchangeable、就已经能再占一个 interchangeable、就已经能再开 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 跑着 not already hot-add / not already another-name / not already restart 正式三事（305 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。305 initpeer vs addpeer bundled unbundling 完成（1003 item 3） |
+| A4776 | 高 | 看见节点已经在跑 会被写成已经能再登记 interchangeable | 官方 Reactor API item 3：not already hot-add |
+| A4777 | 高 | 看见名字已经占了 会被写成已经能再占一个 interchangeable | 官方 Reactor API item 3：not already another-name |
+| A4778 | 高 | 看见停过了 会被写成已经能再开 interchangeable | 官方 Reactor API item 3：not already restart |
+| A4779 | 中 | 怎样实现 Receive 会被抄进不确定 | 不抄。不写怎样实现 Receive 并发或怎样发 Envelope。不另写 19 节 |
+| A4770 | 记录 | 会与 305 / 36 / 307 / 1001 / 1003 糊成「看见 Receive 就已经过了 AddPeer interchangeable、就已经按已加入去发 interchangeable、就已经禁止更早收 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Receive not already AddPeer / not already joined / not already forbidden-early 正式三事（305 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。305 initpeer vs addpeer bundled unbundling 续（1002 item 2） |
+| A4771 | 高 | 看见已经在 Receive 会被写成已经过了 AddPeer interchangeable | 官方 Reactor API item 2：not already AddPeer |
+| A4772 | 高 | 看见信封在了 会被写成已经可以按「已加入」去发 interchangeable | 官方 Reactor API item 2：not already joined |
+| A4773 | 高 | 看见最常见的是 AddPeer 之后才开始收 会被写成官方禁止更早收 interchangeable | 官方 Reactor API item 2：not already forbidden-early |
+| A4774 | 中 | 怎样实现 Receive 会被抄进不确定 | 不抄。不写怎样实现 Receive 并发或怎样发 Envelope。不另写 19 节 |
+| A4765 | 记录 | 会与 305 / 67 / 304 / 1002 / 1003 糊成「看见 InitPeer 就已经能对说 interchangeable、就已经加进已连接集合 interchangeable、就已经 AddPeer interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitPeer not already talking / not already connected / not already added 正式三事（305 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。305 initpeer vs addpeer bundled unbundling 启动（1001 item 1） |
+| A4766 | 高 | 看见 InitPeer 会被写成已经能跟它对说 interchangeable / 67 interchangeable | 官方 Reactor API item 1：not already talking / not 67 |
+| A4767 | 高 | 看见状态建了 会被写成已经加进已连接集合 interchangeable | 官方 Reactor API item 1：not already connected |
+| A4768 | 高 | 看见叫了 InitPeer 会被写成已经 AddPeer interchangeable | 官方 Reactor API item 1：not already added |
+| A4769 | 中 | 怎样实现 Receive 会被抄进不确定 | 不抄。不写怎样实现 Receive 并发或怎样发 Envelope。不另写 19 节 |
 | A4760 | 记录 | 会与 304 / 19 / 46 / 998 / 999 糊成「看见被断开就已经罚了 interchangeable、就已经上链 interchangeable、就已经是双签 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 断开 not already slashed / not already on-chain / not already doublesign 正式三事（304 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。304 vote-ts vs checked bundled unbundling 完成（1000 item 3） |
 | A4761 | 高 | 看见非法票被断开 会被写成已经罚了 interchangeable | 官方 Validator Signing item 3：not already slashed |
 | A4762 | 高 | 看见非法 会被写成已经上链 interchangeable | 官方 Validator Signing item 3：not already on-chain |

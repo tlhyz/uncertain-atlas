@@ -1,3 +1,9 @@
+| C981 | 1003 | initpeer nothot≠67/305 | 文案把节点已经在跑 / 反应堆已经登记过名字 写成已经能再登记 interchangeable 或已经和 67 interchangeable / 1003 initpeer-nothot interchangeable；或把看见名字已经占了 写成已经能再占一个 interchangeable；或把看见停过了 写成已经能再开 interchangeable，或已经和 305 initpeer-vs-addpeer bundled / initpeer-nothot-sold-as-bundled interchangeable / 1001 initpeer-nottalk interchangeable / 1002 initpeer-notadd interchangeable |
+
+| C980 | 1002 | initpeer notadd≠36/305 | 文案把已经在 Receive / 消息已经进来 写成已经过了 AddPeer interchangeable 或已经和 36 interchangeable / 1002 initpeer-notadd interchangeable；或把看见信封在了 写成已经可以按「已加入」去发 interchangeable；或把看见最常见的是 AddPeer 之后才开始收 写成官方禁止更早收 interchangeable，或已经和 305 initpeer-vs-addpeer bundled / initpeer-notadd-sold-as-bundled interchangeable / 1001 initpeer-nottalk interchangeable / 1003 initpeer-nothot interchangeable |
+
+| C979 | 1001 | initpeer nottalk≠67/305 | 文案把 InitPeer / 对等节点对象已经交给反应堆 写成已经能跟它对说 interchangeable 或已经和 67 interchangeable / 1001 initpeer-nottalk interchangeable；或把看见状态建了 写成已经加进已连接集合 interchangeable；或把看见叫了 InitPeer 写成已经 AddPeer interchangeable，或已经和 305 initpeer-vs-addpeer bundled / initpeer-nottalk-sold-as-bundled interchangeable / 1002 initpeer-notadd interchangeable / 1003 initpeer-nothot interchangeable |
+
 | C978 | 1000 | votets notslash≠19/304 | 文案把非法票被断开 / 没过基本校验 写成已经罚了 interchangeable 或已经和 19 interchangeable / 1000 votets-notslash interchangeable；或把看见非法 写成已经上链 interchangeable；或把看见没过基本校验 写成已经是双签 interchangeable，或已经和 304 vote-ts-vs-checked bundled / votets-notslash-sold-as-bundled interchangeable / 998 votets-notcheck interchangeable / 999 votets-notevid interchangeable |
 
 | C977 | 999 | votets notevid≠21/304 | 文案把冲突提案 / 双签证据机制 写成已经有提案证据 interchangeable 或已经和 21 interchangeable / 999 votets-notevid interchangeable；或把看见两份提案 写成已经有对象 interchangeable；或把看见「以后也许有」 写成已经有 interchangeable，或已经和 304 vote-ts-vs-checked bundled / votets-notevid-sold-as-bundled interchangeable / 998 votets-notcheck interchangeable / 1000 votets-notslash interchangeable |

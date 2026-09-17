@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「对等节点已经齐」，必须分开 InitPeer 是不是已经能交互、Receive 是不是已经 AddPeer、跑着是不是已经能再登记。可以跳过「看见对等节点对象就已经加进去」。不要另写怎样实现 Receive 并发或怎样发 Envelope。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「对等节点已经齐」，必须分开 InitPeer 是不是已经能交互、Receive 是不是已经 AddPeer、跑着是不是已经能再登记。可以跳过「看见对等节点对象就已经加进去」。不要另写怎样实现 Receive 并发或怎样发 Envelope。305 initpeer vs addpeer bundled unbundling 完成（1001 item 1 / 1002 item 2 / 1003 item 3）；精读 [`worked-example-initpeer-nottalk-vs-bundled.md`](worked-example-initpeer-nottalk-vs-bundled.md)（不变量 1001 item 1）。
 
 ## 本页不抄
 

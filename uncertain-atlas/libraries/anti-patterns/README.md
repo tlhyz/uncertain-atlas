@@ -1,3 +1,6 @@
+- [`initpeer-nothot-sold-as-bundled.md`](initpeer-nothot-sold-as-bundled.md) — 跑着 被写成已经能再登记 / 已经能再占一个 / 已经能再开（不变量 1003）
+- [`initpeer-notadd-sold-as-bundled.md`](initpeer-notadd-sold-as-bundled.md) — Receive 被写成已经过了 AddPeer / 已经可以按「已加入」去发 / 官方禁止更早收（不变量 1002）
+- [`initpeer-nottalk-sold-as-bundled.md`](initpeer-nottalk-sold-as-bundled.md) — InitPeer 被写成已经能跟它对说 / 已经加进已连接集合 / 已经 AddPeer（不变量 1001）
 - [`votets-notslash-sold-as-bundled.md`](votets-notslash-sold-as-bundled.md) — 断开 被写成已经罚了 / 已经上链 / 已经是双签（不变量 1000）
 - [`votets-notevid-sold-as-bundled.md`](votets-notevid-sold-as-bundled.md) — 冲突提案 被写成已经有提案证据 / 已经有对象 / 已经有（不变量 999）
 - [`votets-notcheck-sold-as-bundled.md`](votets-notcheck-sold-as-bundled.md) — 带了 Timestamp 被写成已经验过 / 已经执行 / 票上的时间已经有要求（不变量 998）

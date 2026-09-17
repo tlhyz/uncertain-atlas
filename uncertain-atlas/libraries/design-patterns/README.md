@@ -1,3 +1,6 @@
+- [`name-the-initpeer-nothot-bar.md`](name-the-initpeer-nothot-bar.md) — 跑着 not already hot-add / not already another-name / not already restart 正式三事（305 余量）（不变量 1003）
+- [`name-the-initpeer-notadd-bar.md`](name-the-initpeer-notadd-bar.md) — Receive not already AddPeer / not already joined / not already forbidden-early 正式三事（305 余量）（不变量 1002）
+- [`name-the-initpeer-nottalk-bar.md`](name-the-initpeer-nottalk-bar.md) — InitPeer not already talking / not already connected / not already added 正式三事（305 余量）（不变量 1001）
 - [`name-the-votets-notslash-bar.md`](name-the-votets-notslash-bar.md) — 断开 not already slashed / not already on-chain / not already doublesign 正式三事（304 余量）（不变量 1000）
 - [`name-the-votets-notevid-bar.md`](name-the-votets-notevid-bar.md) — 冲突提案 not already evidence / not already object / not already exists 正式三事（304 余量）（不变量 999）
 - [`name-the-votets-notcheck-bar.md`](name-the-votets-notcheck-bar.md) — 带了 Timestamp not already checked / not already enforced / not already required 正式三事（304 余量）（不变量 998）
