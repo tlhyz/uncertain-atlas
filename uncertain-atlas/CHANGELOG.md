@@ -1,3 +1,15 @@
+## 2026-09-17（续 1141）
+
+- 不变量 1024；语料 C1002；模式 name-the-extreqhash-notts-bar；反模式 extreqhash-notts-sold-as-bundled；L10.3 第 993 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.time not already vote-ts-checked / not already settled / not already evidence-time 正式三事（410 余量）。410 extreqhash vs process bundled unbundling 完成（1024 item 3）。
+
+## 2026-09-17（续 1140）
+
+- 不变量 1023；语料 C1001；模式 name-the-extreqhash-notalign-bar；反模式 extreqhash-notalign-sold-as-bundled；L10.3 第 992 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.height not already aligned / not already will-call / not already snapshot-height 正式三事（410 余量）。410 extreqhash vs process bundled unbundling 续（1023 item 2）。
+
+## 2026-09-17（续 1139）
+
+- 不变量 1022；语料 C1000；模式 name-the-extreqhash-notproc-bar；反模式 extreqhash-notproc-sold-as-bundled；L10.3 第 991 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.hash not already processed / not already settled / not already signed 正式三事（410 余量）。410 extreqhash vs process bundled unbundling 启动（1022 item 1）。
+
 ## 2026-09-17（续 1138）
 
 - 不变量 1021；语料 C999；模式 name-the-crashrec-notskip-bar；反模式 crashrec-notskip-sold-as-bundled；L10.3 第 990 条。填 L4.4 / CometBFT 档案 启动 Info 对上 not already any-height / not already skip-replay / not already no-reinit 正式三事（320 余量）。320 crash-steps vs commit bundled unbundling 完成（1021 item 3）。

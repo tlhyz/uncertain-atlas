@@ -1,3 +1,18 @@
+| A4880 | 记录 | 会与 410 / 304 / 352 / 1022 / 1023 糊成「看见 ExtendVoteRequest.time 就已经验过票上时间 interchangeable、就已经交差 interchangeable、就已经是过错时间 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteRequest.time not already vote-ts-checked / not already settled / not already evidence-time 正式三事（410 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。410 extreqhash vs process bundled unbundling 完成（1024 item 3） |
+| A4881 | 高 | 看见填了 time 会被写成已经验过票上时间 interchangeable | 官方 ExtendVote Request item 3：not already vote-ts-checked |
+| A4882 | 高 | 看见能指时间 会被写成已经交差 interchangeable | 官方 ExtendVote Request item 3：not already settled |
+| A4883 | 高 | 看见有时间戳 会被写成已经是过错发生那一高已提交块的时间 interchangeable | 官方 ExtendVote Request item 3：not already evidence-time |
+| A4884 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求栏。不另写 19 节 |
+| A4875 | 记录 | 会与 410 / 409 / 353 / 1022 / 1024 糊成「看见 ExtendVoteRequest.height 就已经对上了拟议块 interchangeable、就已经会调 interchangeable、就已经是拍快照高度 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteRequest.height not already aligned / not already will-call / not already snapshot-height 正式三事（410 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。410 extreqhash vs process bundled unbundling 续（1023 item 2） |
+| A4876 | 高 | 看见填了 height 会被写成已经对上了拟议块 interchangeable / 409 interchangeable | 官方 ExtendVote Request item 2：not already aligned / not 409 |
+| A4877 | 高 | 看见能对一下 会被写成已经会调 ExtendVote interchangeable | 官方 ExtendVote Request item 2：not already will-call |
+| A4878 | 高 | 看见有高度 会被写成已经是拍快照的高度 interchangeable | 官方 ExtendVote Request item 2：not already snapshot-height |
+| A4879 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求栏。不另写 19 节 |
+| A4870 | 记录 | 会与 410 / 353 / 304 / 1023 / 1024 糊成「看见 ExtendVoteRequest.hash 就已经跑过 Process interchangeable、就已经交差 interchangeable、就已经签了 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteRequest.hash not already processed / not already settled / not already signed 正式三事（410 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。410 extreqhash vs process bundled unbundling 启动（1022 item 1） |
+| A4871 | 高 | 看见填了 hash 会被写成已经跑过 Process interchangeable / 353 interchangeable | 官方 ExtendVote Request item 1：not already processed / not 353 |
+| A4872 | 高 | 看见有头哈希 会被写成已经交差 interchangeable | 官方 ExtendVote Request item 1：not already settled |
+| A4873 | 高 | 看见能指 会被写成已经签了 interchangeable | 官方 ExtendVote Request item 1：not already signed |
+| A4874 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求栏。不另写 19 节 |
 | A4865 | 记录 | 会与 320 / 314 / 310 / 1019 / 1020 糊成「看见启动 Info 对上就已经是任意高度 interchangeable、就已经跳过重放 interchangeable、就已经不用再叫 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 启动 Info 对上 not already any-height / not already skip-replay / not already no-reinit 正式三事（320 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。320 crash-steps vs commit bundled unbundling 完成（1021 item 3） |
 | A4866 | 高 | 看见启动 Info 会被写成已经是任意高度 interchangeable | 官方 Crash Recovery item 3：not already any-height |
 | A4867 | 高 | 看见对上了 会被写成已经跳过重放 interchangeable | 官方 Crash Recovery item 3：not already skip-replay |

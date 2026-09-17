@@ -1,3 +1,6 @@
+- [`extreqhash-notts-sold-as-bundled.md`](extreqhash-notts-sold-as-bundled.md) — time 被写成已经验过票上时间 / 已经交差 / 已经是过错时间（不变量 1024）
+- [`extreqhash-notalign-sold-as-bundled.md`](extreqhash-notalign-sold-as-bundled.md) — height 被写成已经对上了拟议块 / 已经会调 / 已经是拍快照高度（不变量 1023）
+- [`extreqhash-notproc-sold-as-bundled.md`](extreqhash-notproc-sold-as-bundled.md) — hash 被写成已经跑过 Process / 已经交差 / 已经签了（不变量 1022）
 - [`crashrec-notskip-sold-as-bundled.md`](crashrec-notskip-sold-as-bundled.md) — 启动 Info 对上 被写成已经是任意高度 / 已经跳过重放 / 已经不用再叫（不变量 1021）
 - [`crashrec-notcommit-sold-as-bundled.md`](crashrec-notcommit-sold-as-bundled.md) — 块进 store 被写成已经交差 / 应用已经提交 / 已经原子（不变量 1020）
 - [`crashrec-notahead-sold-as-bundled.md`](crashrec-notahead-sold-as-bundled.md) — 应用比引擎高 被写成已经允许 / 已经能各醒各的 / 已经和半写已经原子同一句（不变量 1019）

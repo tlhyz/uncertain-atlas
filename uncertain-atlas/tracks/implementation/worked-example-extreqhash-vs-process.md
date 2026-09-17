@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendVote 请求栏就已经跑过 Process、已经对上了拟议块、已经验过票上时间」，必须分开 ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希是不是已经跑过 Process、ExtendVoteRequest.height 是拟议块高度（用来对一下）是不是已经对上了拟议块、ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳是不是已经验过票上时间。可以跳过「看见填了 ExtendVote 请求栏就已经跑过 Process」。不要另写怎样写 ExtendVote 请求栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendVote 请求栏就已经跑过 Process、已经对上了拟议块、已经验过票上时间」，必须分开 ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希是不是已经跑过 Process、ExtendVoteRequest.height 是拟议块高度（用来对一下）是不是已经对上了拟议块、ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳是不是已经验过票上时间。可以跳过「看见填了 ExtendVote 请求栏就已经跑过 Process」。不要另写怎样写 ExtendVote 请求栏。410 extreqhash vs process bundled unbundling 完成（1022 item 1 / 1023 item 2 / 1024 item 3）；精读 [`worked-example-extreqhash-notproc-vs-bundled.md`](worked-example-extreqhash-notproc-vs-bundled.md)（不变量 1022 item 1）。
 
 ## 本页不抄
 

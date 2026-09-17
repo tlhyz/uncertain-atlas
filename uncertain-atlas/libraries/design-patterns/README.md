@@ -1,3 +1,6 @@
+- [`name-the-extreqhash-notts-bar.md`](name-the-extreqhash-notts-bar.md) — ExtendVoteRequest.time not already vote-ts-checked / not already settled / not already evidence-time 正式三事（410 余量）（不变量 1024）
+- [`name-the-extreqhash-notalign-bar.md`](name-the-extreqhash-notalign-bar.md) — ExtendVoteRequest.height not already aligned / not already will-call / not already snapshot-height 正式三事（410 余量）（不变量 1023）
+- [`name-the-extreqhash-notproc-bar.md`](name-the-extreqhash-notproc-bar.md) — ExtendVoteRequest.hash not already processed / not already settled / not already signed 正式三事（410 余量）（不变量 1022）
 - [`name-the-crashrec-notskip-bar.md`](name-the-crashrec-notskip-bar.md) — 启动 Info 对上 not already any-height / not already skip-replay / not already no-reinit 正式三事（320 余量）（不变量 1021）
 - [`name-the-crashrec-notcommit-bar.md`](name-the-crashrec-notcommit-bar.md) — 块进 store not already settled / not already committed / not already atomic 正式三事（320 余量）（不变量 1020）
 - [`name-the-crashrec-notahead-bar.md`](name-the-crashrec-notahead-bar.md) — 应用比引擎高 not already allowed / not already recover-alone / not already same-as-atomic 正式三事（320 余量）（不变量 1019）
