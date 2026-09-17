@@ -1,3 +1,15 @@
+## 2026-09-17（续 841）
+
+- 不变量 724；语料 C702；模式 name-the-offerfmt-notabort-bar；反模式 offerfmt-notabort-sold-as-bundled；L10.3 第 693 条。填 L4.4 / CometBFT 档案 OfferSnapshot Result ABORT not switched / not restored / not UNKNOWN abort-all 正式三事（400 余量）。400 offerfmt vs rejectsnap bundled unbundling 完成（724 item 3）。
+
+## 2026-09-17（续 840）
+
+- 不变量 723；语料 C701；模式 name-the-offerfmt-notsenders-bar；反模式 offerfmt-notsenders-sold-as-bundled；L10.3 第 692 条。填 L4.4 / CometBFT 档案 OfferSnapshot Result REJECT_SENDER not reject_senders regardless / not can continue / not chunk-response reject 正式三事（400 余量）。400 offerfmt vs rejectsnap bundled unbundling 续（723 item 2）。
+
+## 2026-09-17（续 839）
+
+- 不变量 722；语料 C700；模式 name-the-offerfmt-notrejectsnap-bar；反模式 offerfmt-notrejectsnap-sold-as-bundled；L10.3 第 691 条。填 L4.4 / CometBFT 档案 OfferSnapshot Result REJECT_FORMAT not REJECT_SNAPSHOT / not already complete / not Offer REJECT 正式三事（400 余量）。400 offerfmt vs rejectsnap bundled unbundling 启动（722 item 1）。
+
 ## 2026-09-17（续 838）
 
 - 不变量 721；语料 C699；模式 name-the-applyretry-notchunkresult-bar；反模式 applyretry-notchunkresult-sold-as-bundled；L10.3 第 690 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Result REJECT_SNAPSHOT not this-chunk result / not rejected senders / not Offer REJECT_FORMAT 正式三事（398 余量）。398 applyretry vs refetch bundled unbundling 完成（721 item 3）。

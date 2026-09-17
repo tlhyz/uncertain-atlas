@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 OfferSnapshot 结果枚举就已经是拒掉这份、已经拒了人、已经换一份」，必须分开 OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份是不是已经是拒掉这份、OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份是不是已经拒了人、OfferSnapshot Result ABORT 是中止装回、不再试别份是不是已经换一份。可以跳过「看见回了 OfferSnapshot 结果枚举就已经是拒掉这份」。不要另写怎样写 OfferSnapshot 结果枚举。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 OfferSnapshot 结果枚举就已经是拒掉这份、已经拒了人、已经换一份」，必须分开 OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份是不是已经是拒掉这份、OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份是不是已经拒了人、OfferSnapshot Result ABORT 是中止装回、不再试别份是不是已经换一份。可以跳过「看见回了 OfferSnapshot 结果枚举就已经是拒掉这份」。不要另写怎样写 OfferSnapshot 结果枚举。400 offerfmt vs rejectsnap bundled unbundling 完成（722 item 1 / 723 item 2 / 724 item 3）；精读 [`worked-example-offerfmt-notrejectsnap-vs-bundled.md`](worked-example-offerfmt-notrejectsnap-vs-bundled.md)（不变量 722 item 1）。
 
 ## 本页不抄
 

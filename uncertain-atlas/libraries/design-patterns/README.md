@@ -1,3 +1,6 @@
+- [`name-the-offerfmt-notabort-bar.md`](name-the-offerfmt-notabort-bar.md) — OfferSnapshot Result ABORT not switched / not restored / not UNKNOWN abort-all 正式三事（400 余量）（不变量 724）
+- [`name-the-offerfmt-notsenders-bar.md`](name-the-offerfmt-notsenders-bar.md) — OfferSnapshot Result REJECT_SENDER not reject_senders regardless / not can continue / not chunk-response reject 正式三事（400 余量）（不变量 723）
+- [`name-the-offerfmt-notrejectsnap-bar.md`](name-the-offerfmt-notrejectsnap-bar.md) — OfferSnapshot Result REJECT_FORMAT not REJECT_SNAPSHOT / not already complete / not Offer REJECT 正式三事（400 余量）（不变量 722）
 - [`name-the-applyretry-notchunkresult-bar.md`](name-the-applyretry-notchunkresult-bar.md) — ApplySnapshotChunk Result REJECT_SNAPSHOT not this-chunk result / not rejected senders / not Offer REJECT_FORMAT 正式三事（398 余量）（不变量 721）
 - [`name-the-applyretry-notswitch-bar.md`](name-the-applyretry-notswitch-bar.md) — ApplySnapshotChunk Result RETRY_SNAPSHOT not switched / not restored / not Offer accepted 正式三事（398 余量）（不变量 720）
 - [`name-the-applyretry-notrefetch-bar.md`](name-the-applyretry-notrefetch-bar.md) — ApplySnapshotChunk Result RETRY not refetch regardless / not already complete / not applysnapusage refetch 正式三事（398 余量）（不变量 719）
