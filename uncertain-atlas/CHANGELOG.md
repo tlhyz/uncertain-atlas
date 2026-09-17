@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-15（续 602）
+
+- 不变量 580；语料 C462；模式 name-the-findet-notapphash-bar；反模式 findet-notapphash-sold-as-bundled；L10.3 第 454 条。填 L4.4 / CometBFT 档案 app_hash MUST be deterministic not 印进本头 正式三事（470 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。470 FinalizeBlock Usage determinism unbundling 续（580 item 2）。
+
 ## 2026-09-15（续 601）
 
 - 不变量 579；语料 C461；模式 name-the-findet-notlikeprepare-bar；反模式 findet-notlikeprepare-sold-as-bundled；L10.3 第 453 条。填 L4.4 / CometBFT 档案 executes txs deterministically not like Prepare 正式三事（470 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。470 FinalizeBlock Usage determinism unbundling 启动（579 item 1）。
