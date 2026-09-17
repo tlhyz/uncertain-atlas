@@ -163,9 +163,9 @@ Hypothesis: same-symbol long+short grid drifts inventory; SOXL long-grid + SOXS 
 
 | ID | Task | Status | Cadence |
 |----|------|--------|---------|
-| M-01 | Run `pytest -q` | **done** | 2026-09-17T18:20Z **220 passed, 1 skipped** |
+| M-01 | Run `pytest -q` | **done** | 2026-09-17T18:30Z **220 passed, 1 skipped** |
 | M-02 | Update `CURRENT_CONCLUSIONS.md` if verdict changes | **done** | 0900Z daily audit; no verdict change |
-| M-03 | Append `review_logs/INDEX.md` | **done** | timer 1820Z |
+| M-03 | Append `review_logs/INDEX.md` | **done** | timer 1830Z |
 | M-04 | Check PR CI status | **done** | 2026-09-17T09:00Z PR #8 open MERGEABLE; no checks; unmerged |
 | M-05 | Refresh backlog — move done, add discovered tasks | **done** | pending=0; P0-01 still blocked |
 
