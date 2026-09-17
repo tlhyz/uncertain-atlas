@@ -1,3 +1,18 @@
+| A4025 | 记录 | 会与 356 / 355 / 311 / 851 / 852 糊成「看见没调 Prepare 就已经又装了一份 raw 提案 interchangeable、就已经从提案拿掉 tx interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 没调 Prepare not already packed another raw proposal / not already dropped tx from proposal / not already settled 正式三事（356 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。356 validvalue vs prepare bundled unbundling 完成（853 item 3） |
+| A4026 | 高 | 看见没调 Prepare 会被写成已经又装了一份 raw 提案 interchangeable | 官方 validValue 跳过 Prepare item 3：not already packed another raw proposal |
+| A4027 | 高 | 看见用了 validValue 会被写成已经从提案拿掉 tx interchangeable / 355 interchangeable | 官方 validValue 跳过 Prepare item 3：not already dropped tx from proposal / not 355 |
+| A4028 | 高 | 看见跳过了 会被写成已经交差 interchangeable | 官方 validValue 跳过 Prepare item 3：not already settled |
+| A4029 | 中 | 怎样设 validValue 会被抄进不确定 | 不抄。不写怎样设 validValue。不另写 19 节 |
+| A4020 | 记录 | 会与 356 / 338 / 351 / 851 / 853 糊成「看见是提议者就已经每轮都会调 Prepare interchangeable、就已经是 validValue 为 nil interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 自己是提议者 not already every round calls Prepare / not already validValue is nil / not already settled 正式三事（356 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。356 validvalue vs prepare bundled unbundling 续（852 item 2） |
+| A4021 | 高 | 看见自己是提议者 会被写成已经每轮都会调 Prepare interchangeable | 官方 validValue 跳过 Prepare item 2：not already every round calls Prepare |
+| A4022 | 高 | 看见进了这一轮 会被写成已经是 validValue 为 nil interchangeable | 官方 validValue 跳过 Prepare item 2：not already validValue is nil |
+| A4023 | 高 | 看见规范写了 When 会被写成已经交差 interchangeable | 官方 validValue 跳过 Prepare item 2：not already settled |
+| A4024 | 中 | 怎样设 validValue 会被抄进不确定 | 不抄。不写怎样设 validValue。不另写 19 节 |
+| A4015 | 记录 | 会与 356 / 311 / 355 / 338 / 852 / 853 糊成「看见本轮直接用它就已经还会调 Prepare interchangeable、就已经能再改列表 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 validValue 非 nil not already will still call Prepare / not already can change list / not already settled 正式三事（356 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。356 validvalue vs prepare bundled unbundling 启动（851 item 1） |
+| A4016 | 高 | 看见 validValue 非 nil 会被写成已经还会调 Prepare interchangeable | 官方 validValue 跳过 Prepare item 1：not already will still call Prepare |
+| A4017 | 高 | 看见有 validValue 会被写成已经能再改列表 interchangeable | 官方 validValue 跳过 Prepare item 1：not already can change list |
+| A4018 | 高 | 看见锁住了 会被写成已经交差 interchangeable | 官方 validValue 跳过 Prepare item 1：not already settled |
+| A4019 | 中 | 怎样设 validValue 会被抄进不确定 | 不抄。不写怎样设 validValue。不另写 19 节 |
 | A4010 | 记录 | 会与 358 / 353 / 361 / 844 / 350 / 848 / 849 糊成「看见有第二份就已经和 vote_extension 同一份 interchangeable、就已经是空扩展仍验签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 要签原样数据可以用 non_rp not already same as vote_extension / not already empty still verify / not already settled 正式三事（358 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。358 nonrp vs wrapped bundled unbundling 完成（850 item 3） |
 | A4011 | 高 | 看见要签原样数据可以用 non_rp 会被写成已经和 vote_extension 同一份 interchangeable | 官方 两份扩展两份签 item 3：not already same as vote_extension |
 | A4012 | 高 | 看见能空 会被写成已经是空扩展仍验签 interchangeable / 353 interchangeable | 官方 两份扩展两份签 item 3：not already empty still verify / not 353 |

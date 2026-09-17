@@ -1,3 +1,15 @@
+## 2026-09-17（续 970）
+
+- 不变量 853；语料 C831；模式 name-the-validvalue-notraw-bar；反模式 validvalue-notraw-sold-as-bundled；L10.3 第 822 条。填 L4.4 / CometBFT 档案 没调 Prepare not already packed another raw proposal / not already dropped tx from proposal / not already settled 正式三事（356 余量）。356 validvalue vs prepare bundled unbundling 完成（853 item 3）。
+
+## 2026-09-17（续 969）
+
+- 不变量 852；语料 C830；模式 name-the-validvalue-notevery-bar；反模式 validvalue-notevery-sold-as-bundled；L10.3 第 821 条。填 L4.4 / CometBFT 档案 自己是提议者 not already every round calls Prepare / not already validValue is nil / not already settled 正式三事（356 余量）。356 validvalue vs prepare bundled unbundling 续（852 item 2）。
+
+## 2026-09-17（续 968）
+
+- 不变量 851；语料 C829；模式 name-the-validvalue-notcall-bar；反模式 validvalue-notcall-sold-as-bundled；L10.3 第 820 条。填 L4.4 / CometBFT 档案 validValue 非 nil not already will still call Prepare / not already can change list / not already settled 正式三事（356 余量）。356 validvalue vs prepare bundled unbundling 启动（851 item 1）。
+
 ## 2026-09-17（续 967）
 
 - 不变量 850；语料 C828；模式 name-the-nonrp-notsame-bar；反模式 nonrp-notsame-sold-as-bundled；L10.3 第 819 条。填 L4.4 / CometBFT 档案 要签原样数据可以用 non_rp not already same as vote_extension / not already empty still verify / not already settled 正式三事（358 余量）。358 nonrp vs wrapped bundled unbundling 完成（850 item 3）。

@@ -1,3 +1,6 @@
+- [`name-the-validvalue-notraw-bar.md`](name-the-validvalue-notraw-bar.md) — 没调 Prepare not already packed another raw proposal / not already dropped tx from proposal / not already settled 正式三事（356 余量）（不变量 853）
+- [`name-the-validvalue-notevery-bar.md`](name-the-validvalue-notevery-bar.md) — 自己是提议者 not already every round calls Prepare / not already validValue is nil / not already settled 正式三事（356 余量）（不变量 852）
+- [`name-the-validvalue-notcall-bar.md`](name-the-validvalue-notcall-bar.md) — validValue 非 nil not already will still call Prepare / not already can change list / not already settled 正式三事（356 余量）（不变量 851）
 - [`name-the-nonrp-notsame-bar.md`](name-the-nonrp-notsame-bar.md) — 要签原样数据可以用 non_rp not already same as vote_extension / not already empty still verify / not already settled 正式三事（358 余量）（不变量 850）
 - [`name-the-nonrp-notrp-bar.md`](name-the-nonrp-notrp-bar.md) — non_rp_extension 按原样签 not already has replay protection / not already must-fill / not already settled 正式三事（358 余量）（不变量 849）
 - [`name-the-nonrp-notasis-bar.md`](name-the-nonrp-notasis-bar.md) — vote_extension 会包进 CanonicalVoteExtension not already signed as-is / not already CanonicalVote / not already settled 正式三事（358 余量）（不变量 848）

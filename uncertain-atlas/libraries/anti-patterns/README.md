@@ -1,3 +1,6 @@
+- [`validvalue-notraw-sold-as-bundled.md`](validvalue-notraw-sold-as-bundled.md) — 没调 Prepare 被写成已经又装 raw 提案 / 已经从提案拿掉 tx / 已经交差（不变量 853）
+- [`validvalue-notevery-sold-as-bundled.md`](validvalue-notevery-sold-as-bundled.md) — 提议者 被写成已经每轮都会调 / 已经是 validValue nil / 已经交差（不变量 852）
+- [`validvalue-notcall-sold-as-bundled.md`](validvalue-notcall-sold-as-bundled.md) — validValue 非 nil 被写成已经还会调 Prepare / 已经能再改列表 / 已经交差（不变量 851）
 - [`nonrp-notsame-sold-as-bundled.md`](nonrp-notsame-sold-as-bundled.md) — 可用 non_rp 被写成已经和 vote_extension 同一份 / 已经是空扩展仍验签 / 已经交差（不变量 850）
 - [`nonrp-notrp-sold-as-bundled.md`](nonrp-notrp-sold-as-bundled.md) — 原样签 被写成已经有重放保护 / 已经必须填 / 已经交差（不变量 849）
 - [`nonrp-notasis-sold-as-bundled.md`](nonrp-notasis-sold-as-bundled.md) — 包装 被写成已经按原样签 / 已经是 CanonicalVote / 已经交差（不变量 848）

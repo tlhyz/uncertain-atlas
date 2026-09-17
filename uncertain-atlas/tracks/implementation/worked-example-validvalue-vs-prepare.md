@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见本轮直接用它就已经还会调 Prepare、已经每轮都会调、已经又装了一份 raw 提案」，必须分开 validValue 非 nil 是不是已经还会调 Prepare、自己是提议者是不是已经每轮都会调 Prepare、没调 Prepare 是不是已经又装了一份 raw 提案。可以跳过「看见本轮直接用它就已经还会调 Prepare」。不要另写怎样设 validValue。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见本轮直接用它就已经还会调 Prepare、已经每轮都会调、已经又装了一份 raw 提案」，必须分开 validValue 非 nil 是不是已经还会调 Prepare、自己是提议者是不是已经每轮都会调 Prepare、没调 Prepare 是不是已经又装了一份 raw 提案。可以跳过「看见本轮直接用它就已经还会调 Prepare」。不要另写怎样设 validValue。356 validvalue vs prepare bundled unbundling 完成（851 item 1 / 852 item 2 / 853 item 3）；精读 [`worked-example-validvalue-notcall-vs-bundled.md`](worked-example-validvalue-notcall-vs-bundled.md)（不变量 851 item 1）。
 
 ## 本页不抄
 

@@ -166,6 +166,9 @@
 - [`worked-example-verify-when-vs-empty.md`](worked-example-verify-when-vs-empty.md) — 空扩展仍会调 Verify ≠ 已经跳过 Verify；不对本进程自己发出的 Precommit 调用 ≠ 已经自己验过；请求里的 hash ≠ 已经对该块跑过 Process（不变量 353）
 - [`worked-example-process-when-vs-later.md`](worked-example-process-when-vs-later.md) — Process 调用是同步的 ≠ 已经能在返回之后再改裁决；只做基本检查再异步 Process ≠ 已经还能再 Reject；非验证者可以立刻回 ACCEPT ≠ 已经验过这块（不变量 354）
 - [`worked-example-prepare-drop-vs-mempool.md`](worked-example-prepare-drop-vs-mempool.md) — 从提案拿掉 tx ≠ 已经从内存池删掉；往提案加了一笔新的 ≠ 已经进了内存池；把 t1 改成 t2 ≠ 已经还能按 t1 查到（不变量 355）
+- [`worked-example-validvalue-notraw-vs-bundled.md`](worked-example-validvalue-notraw-vs-bundled.md) — 没调Prepare≠another raw/355 dropped tx/settled；≠356 bundled（不变量 853）
+- [`worked-example-validvalue-notevery-vs-bundled.md`](worked-example-validvalue-notevery-vs-bundled.md) — 提议者≠every round Prepare/validValue nil/settled；≠356 bundled（不变量 852）
+- [`worked-example-validvalue-notcall-vs-bundled.md`](worked-example-validvalue-notcall-vs-bundled.md) — validValue非nil≠still call Prepare/can change list/settled；≠356 bundled（不变量 851）
 - [`worked-example-validvalue-vs-prepare.md`](worked-example-validvalue-vs-prepare.md) — validValue 非 nil ≠ 已经还会调 Prepare；自己是提议者 ≠ 已经每轮都会调 Prepare；没调 Prepare ≠ 已经又装了一份 raw 提案（不变量 356）
 - [`worked-example-prepvalid-notevents-vs-bundled.md`](worked-example-prepvalid-notevents-vs-bundled.md) — events≠handed/316 LastResultsHash/431 Finalize events/451 retain path；≠357 bundled（不变量 718）
 - [`worked-example-prepvalid-notcrash-vs-bundled.md`](worked-example-prepvalid-notcrash-vs-bundled.md) — crash≠455 Process REJECT/347 must Accept/376 ProposalStatus REJECT/504 Usage crash；≠357 bundled（不变量 717）
