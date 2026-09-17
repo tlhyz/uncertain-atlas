@@ -1,3 +1,4 @@
+- [`worked-example-infousage-notpriorityzero-vs-bundled.md`](worked-example-infousage-notpriorityzero-vs-bundled.md) — priority 0 reserved≠367 Info lane bundled/482 empty lane_id default lane/317 Priority consensus；≠498 bundled（不变量 664）
 - [`worked-example-infousage-notintable-vs-bundled.md`](worked-example-infousage-notintable-vs-bundled.md) — default_lane in table≠367 Info lane bundled/497 empty iff/482 CheckTx range；≠498 bundled（不变量 663）
 - [`worked-example-listsnapusage-notsnaptype-vs-bundled.md`](worked-example-listsnapusage-notsnaptype-vs-bundled.md) — See Snapshot data type≠368 Snapshot类型/321 Offer装完/395 本地清单/483 Only AppHash；≠500 bundled（不变量 662）
 - [`worked-example-listsnapusage-notdiscover-vs-bundled.md`](worked-example-listsnapusage-notdiscover-vs-bundled.md) — discover on peers≠395 空请求 bundled/395 本地清单/322 Snapshot Discovery；≠500 bundled（不变量 661）

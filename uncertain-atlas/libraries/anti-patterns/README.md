@@ -1,3 +1,4 @@
+- [`infousage-notpriorityzero-sold-as-bundled.md`](infousage-notpriorityzero-sold-as-bundled.md) — priority 0 reserved 被写成已经 Info 车道 bundled / 已经 CheckTx empty lane_id default lane / 已经 Priority 共识顺序（不变量 664）
 - [`infousage-notintable-sold-as-bundled.md`](infousage-notintable-sold-as-bundled.md) — default_lane in table 被写成已经 Info 车道 bundled / 已经 empty iff / 已经 CheckTx lane_id in range（不变量 663）
 - [`listsnapusage-notsnaptype-sold-as-bundled.md`](listsnapusage-notsnaptype-sold-as-bundled.md) — See Snapshot data type 被写成已经 Snapshot 类型 bundled / 已经装完 / 已经本地清单或 Only AppHash（不变量 662）
 - [`listsnapusage-notdiscover-sold-as-bundled.md`](listsnapusage-notdiscover-sold-as-bundled.md) — discover on peers 被写成已经 ListSnapshots 空请求 bundled / 已经本地清单 / 已经问了邻居就齐（不变量 661）
