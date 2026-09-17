@@ -116,6 +116,9 @@
 
 - [`worked-example-encoding.md`](worked-example-encoding.md) — 意思一样、字节不一样
 - [`worked-example-crash.md`](worked-example-crash.md) — 写到一半断电
+- [`worked-example-wal-notheight-vs-bundled.md`](worked-example-wal-notheight-vs-bundled.md) — LastSignBytes对上≠already new-height/new-commit/settled；≠298 bundled（不变量 982）
+- [`worked-example-wal-notresign-vs-bundled.md`](worked-example-wal-notresign-vs-bundled.md) — 回放再签≠already double-signed/new-vote/settled；≠298 bundled（不变量 981）
+- [`worked-example-wal-notfsync-vs-bundled.md`](worked-example-wal-notfsync-vs-bundled.md) — 写下≠already fsynced/double-sign-safe/settled；≠298 bundled（不变量 980）
 - [`worked-example-wal-vs-signed.md`](worked-example-wal-vs-signed.md) — 写下每条消息 ≠ 已经 fsync；回放时又要签 ≠ 已经双签；LastSignBytes 对上 ≠ 已经换了高度（不变量 298）
 - [`worked-example-state-vs-gossip.md`](worked-example-state-vs-gossip.md) — 本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State；能读本地 State ≠ 已经进了规范（不变量 300）
 - [`worked-example-genesis-vs-app.md`](worked-example-genesis-vs-app.md) — 创世 app_state ≠ 已经验过应用状态；进程起来 ≠ 已经过了 genesis_time；空 validators ≠ 已经没有集合（不变量 303）

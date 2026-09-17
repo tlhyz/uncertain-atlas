@@ -1,3 +1,15 @@
+## 2026-09-17（续 1099）
+
+- 不变量 982；语料 C960；模式 name-the-wal-notheight-bar；反模式 wal-notheight-sold-as-bundled；L10.3 第 951 条。填 L4.4 / CometBFT 档案 LastSignBytes 对上 not already new-height / not already new-commit / not already settled 正式三事（298 余量）。298 wal vs signed bundled unbundling 完成（982 item 3）。
+
+## 2026-09-17（续 1098）
+
+- 不变量 981；语料 C959；模式 name-the-wal-notresign-bar；反模式 wal-notresign-sold-as-bundled；L10.3 第 950 条。填 L4.4 / CometBFT 档案 回放时再签 not already double-signed / not already new-vote / not already settled 正式三事（298 余量）。298 wal vs signed bundled unbundling 续（981 item 2）。
+
+## 2026-09-17（续 1097）
+
+- 不变量 980；语料 C958；模式 name-the-wal-notfsync-bar；反模式 wal-notfsync-sold-as-bundled；L10.3 第 949 条。填 L4.4 / CometBFT 档案 写下每条消息 not already fsynced / not already double-sign-safe / not already settled 正式三事（298 余量）。298 wal vs signed bundled unbundling 启动（980 item 1）。
+
 ## 2026-09-17（续 1096）
 
 - 不变量 979；语料 C957；模式 name-the-abci-conn-notgates-bar；反模式 abci-conn-notgates-sold-as-bundled；L10.3 第 948 条。填 L4.4 / CometBFT 档案 一条连接 not already enough / not already four-gates / not already settled 正式三事（307 余量）。307 abci-conn vs gates bundled unbundling 完成（979 item 3）。

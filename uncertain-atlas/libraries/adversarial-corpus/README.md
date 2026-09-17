@@ -1,3 +1,9 @@
+| C960 | 982 | wal notheight≠33/298 | 文案把 LastSignBytes 对上 / 回放走到 precommit 写成已经换了高度 interchangeable 或已经和 33 interchangeable / 982 wal-notheight interchangeable；或把看见回放走到 precommit 写成已经发出另一张承诺 interchangeable；或把看见签名器这次肯签 写成已经交差 interchangeable，或已经和 298 wal-vs-signed bundled / wal-notheight-sold-as-bundled interchangeable / 980 wal-notfsync interchangeable / 981 wal-notresign interchangeable |
+
+| C959 | 981 | wal notresign≠5/298 | 文案把回放时再签 / 回放 写成已经双签 interchangeable 或已经和 5 interchangeable / 981 wal-notresign interchangeable；或把看见回放 写成已经发出新票 interchangeable；或把看见这次失败 写成已经交差 interchangeable，或已经和 298 wal-vs-signed bundled / wal-notresign-sold-as-bundled interchangeable / 980 wal-notfsync interchangeable / 982 wal-notheight interchangeable |
+
+| C958 | 980 | wal notfsync≠4/298 | 文案把写下每条消息 / WAL 里有消息 写成已经刷盘 interchangeable 或已经和 4 interchangeable / 980 wal-notfsync interchangeable；或把看见别人的消息也在日志里 写成已经防了双签 interchangeable；或把看见有预写日志 写成已经交差 interchangeable，或已经和 298 wal-vs-signed bundled / wal-notfsync-sold-as-bundled interchangeable / 981 wal-notresign interchangeable / 982 wal-notheight interchangeable |
+
 | C957 | 979 | abci-conn notgates≠33/307 | 文案把一条连接 / 四条连接 写成已经够用 interchangeable 或已经和 33 interchangeable / 979 abci-conn-notgates interchangeable；或把看见四条连接 写成已经是四门 interchangeable；或把看见客户端 写成已经交差 interchangeable，或已经和 307 abci-conn-vs-gates bundled / abci-conn-notgates-sold-as-bundled interchangeable / 977 abci-conn-notsock interchangeable / 978 abci-conn-notfast interchangeable |
 
 | C956 | 978 | abci-conn notfast≠52/307 | 文案把 gRPC 最容易 / 能回话 写成已经快 interchangeable 或已经和 52 interchangeable / 978 abci-conn-notfast interchangeable；或把看见能回话 写成已经没有开销 interchangeable；或把看见套接字那套前缀 写成已经交差 interchangeable，或已经和 307 abci-conn-vs-gates bundled / abci-conn-notfast-sold-as-bundled interchangeable / 977 abci-conn-notsock interchangeable / 979 abci-conn-notgates interchangeable |

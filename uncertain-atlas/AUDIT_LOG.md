@@ -1,3 +1,18 @@
+| A4670 | 记录 | 会与 298 / 33 / 310 / 980 / 981 糊成「看见 LastSignBytes 对上就已经换了高度 interchangeable、就已经发出另一张承诺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 LastSignBytes 对上 not already new-height / not already new-commit / not already settled 正式三事（298 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。298 wal vs signed bundled unbundling 完成（982 item 3） |
+| A4671 | 高 | 看见 LastSignBytes 对上 会被写成已经换了高度 interchangeable | 官方 WAL item 3：not already new-height |
+| A4672 | 高 | 看见回放走到 precommit 会被写成已经发出另一张承诺 interchangeable | 官方 WAL item 3：not already new-commit |
+| A4673 | 高 | 看见签名器这次肯签 会被写成已经交差 interchangeable | 官方 WAL item 3：not already settled |
+| A4674 | 中 | 怎样切 WAL 会被抄进不确定 | 不抄。不写怎样按旋转体积切文件或怎样从损坏里恢复。不另写 19 节 |
+| A4665 | 记录 | 会与 298 / 5 / 307 / 980 / 982 糊成「看见回放再签就已经双签 interchangeable、就已经发出新票 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 回放时再签 not already double-signed / not already new-vote / not already settled 正式三事（298 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。298 wal vs signed bundled unbundling 续（981 item 2） |
+| A4666 | 高 | 看见回放时再签 会被写成已经双签 interchangeable | 官方 WAL item 2：not already double-signed |
+| A4667 | 高 | 看见回放 会被写成已经发出新票 interchangeable | 官方 WAL item 2：not already new-vote |
+| A4668 | 高 | 看见这次失败 会被写成已经交差 interchangeable | 官方 WAL item 2：not already settled |
+| A4669 | 中 | 怎样切 WAL 会被抄进不确定 | 不抄。不写怎样按旋转体积切文件或怎样从损坏里恢复。不另写 19 节 |
+| A4660 | 记录 | 会与 298 / 4 / 307 / 981 / 982 糊成「看见写下就已经刷盘 interchangeable、就已经防了双签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 写下每条消息 not already fsynced / not already double-sign-safe / not already settled 正式三事（298 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。298 wal vs signed bundled unbundling 启动（980 item 1） |
+| A4661 | 高 | 看见写下每条消息 会被写成已经刷盘 interchangeable / 4 interchangeable | 官方 WAL item 1：not already fsynced / not 4 |
+| A4662 | 高 | 看见别人的消息也在日志里 会被写成已经防了双签 interchangeable | 官方 WAL item 1：not already double-sign-safe |
+| A4663 | 高 | 看见有预写日志 会被写成已经交差 interchangeable | 官方 WAL item 1：not already settled |
+| A4664 | 中 | 怎样切 WAL 会被抄进不确定 | 不抄。不写怎样按旋转体积切文件或怎样从损坏里恢复。不另写 19 节 |
 | A4655 | 记录 | 会与 307 / 33 / 367 / 977 / 978 糊成「看见一条连接就已经够用 interchangeable、就已经是四门 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 一条连接 not already enough / not already four-gates / not already settled 正式三事（307 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。307 abci-conn vs gates bundled unbundling 完成（979 item 3） |
 | A4656 | 高 | 看见一条连接 会被写成已经够用 interchangeable | 官方 Client and Server item 3：not already enough |
 | A4657 | 高 | 看见四条连接 会被写成已经是四门 interchangeable | 官方 Client and Server item 3：not already four-gates |

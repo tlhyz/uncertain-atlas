@@ -1,3 +1,6 @@
+- [`name-the-wal-notheight-bar.md`](name-the-wal-notheight-bar.md) — LastSignBytes 对上 not already new-height / not already new-commit / not already settled 正式三事（298 余量）（不变量 982）
+- [`name-the-wal-notresign-bar.md`](name-the-wal-notresign-bar.md) — 回放时再签 not already double-signed / not already new-vote / not already settled 正式三事（298 余量）（不变量 981）
+- [`name-the-wal-notfsync-bar.md`](name-the-wal-notfsync-bar.md) — 写下每条消息 not already fsynced / not already double-sign-safe / not already settled 正式三事（298 余量）（不变量 980）
 - [`name-the-abci-conn-notgates-bar.md`](name-the-abci-conn-notgates-bar.md) — 一条连接 not already enough / not already four-gates / not already settled 正式三事（307 余量）（不变量 979）
 - [`name-the-abci-conn-notfast-bar.md`](name-the-abci-conn-notfast-bar.md) — gRPC 最容易 not already fast / not already no-overhead / not already settled 正式三事（307 余量）（不变量 978）
 - [`name-the-abci-conn-notsock-bar.md`](name-the-abci-conn-notsock-bar.md) — 同进程 not already socket-isolated / not already other-transport / not already settled 正式三事（307 余量）（不变量 977）

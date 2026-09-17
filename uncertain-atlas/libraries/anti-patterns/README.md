@@ -1,3 +1,6 @@
+- [`wal-notheight-sold-as-bundled.md`](wal-notheight-sold-as-bundled.md) — LastSignBytes 对上 被写成已经换了高度 / 已经发出另一张承诺 / 已经交差（不变量 982）
+- [`wal-notresign-sold-as-bundled.md`](wal-notresign-sold-as-bundled.md) — 回放时再签 被写成已经双签 / 已经发出新票 / 已经交差（不变量 981）
+- [`wal-notfsync-sold-as-bundled.md`](wal-notfsync-sold-as-bundled.md) — 写下每条消息 被写成已经刷盘 / 已经防了双签 / 已经交差（不变量 980）
 - [`abci-conn-notgates-sold-as-bundled.md`](abci-conn-notgates-sold-as-bundled.md) — 一条连接 被写成已经够用 / 已经是四门 / 已经交差（不变量 979）
 - [`abci-conn-notfast-sold-as-bundled.md`](abci-conn-notfast-sold-as-bundled.md) — gRPC 最容易 被写成已经快 / 已经没有开销 / 已经交差（不变量 978）
 - [`abci-conn-notsock-sold-as-bundled.md`](abci-conn-notsock-sold-as-bundled.md) — 同进程 被写成已经隔离 / 已经是另一条传输 / 已经交差（不变量 977）
