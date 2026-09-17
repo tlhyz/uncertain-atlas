@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「本高回了 ConsensusParams 就已经在本高生效、已经是换人那种延迟、已经是扩展启用高度那种切换」，必须分开本高回了是不是已经在本高生效、H+1 立刻用了新参数是不是已经是验证人集合那种 H+2 才计票、参数更新写了 H+1 是不是已经是扩展启用高度那种切换。可以跳过「看见本高回了就已经在本高生效」。不要另写怎样编 `ConsensusParams` 或怎样选启用高度。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「本高回了 ConsensusParams 就已经在本高生效、已经是换人那种延迟、已经是扩展启用高度那种切换」，必须分开本高回了是不是已经在本高生效、H+1 立刻用了新参数是不是已经是验证人集合那种 H+2 才计票、参数更新写了 H+1 是不是已经是扩展启用高度那种切换。可以跳过「看见本高回了就已经在本高生效」。不要另写怎样编 `ConsensusParams` 或怎样选启用高度。333 params-delay vs set bundled unbundling 完成（911 item 1 / 912 item 2 / 913 item 3）；精读 [`worked-example-params-delay-noteffective-vs-bundled.md`](worked-example-params-delay-noteffective-vs-bundled.md)（不变量 911 item 1）。
 
 ## 本页不抄
 

@@ -152,6 +152,9 @@
 - [`worked-example-ve-height-vs-prepare.md`](worked-example-ve-height-vs-prepare.md) — 到了 H ≠ 已经 Prepare 带了扩展；H+1 带了扩展 ≠ 已经是本高度刚签的；h < H 带了扩展 ≠ 已经合法（不变量 330）
 - [`worked-example-evidence-maxbytes-vs-block.md`](worked-example-evidence-maxbytes-vs-block.md) — 填了证据 MaxBytes ≠ 已经落在块上限下面；> 0 ≠ 已经盖住解绑；证据 MaxBytes ≠ 已经是块 MaxBytes（不变量 331）
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
+- [`worked-example-params-delay-notve-vs-bundled.md`](worked-example-params-delay-notve-vs-bundled.md) — 参数H+1≠already VE switch/only that field/settled；≠333 bundled（不变量 913）
+- [`worked-example-params-delay-notvalset-vs-bundled.md`](worked-example-params-delay-notvalset-vs-bundled.md) — 参数H+1≠already validator H+2/last_commit H+3/settled；≠333 bundled（不变量 912）
+- [`worked-example-params-delay-noteffective-vs-bundled.md`](worked-example-params-delay-noteffective-vs-bundled.md) — 本高回了≠already effective at H/this-height Prepare/settled；≠333 bundled（不变量 911）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
 - [`worked-example-finalize-persist-notskip-vs-bundled.md`](worked-example-finalize-persist-notskip-vs-bundled.md) — 记住Commit高度≠already app ahead/can skip/settled；≠335 bundled（不变量 904）

@@ -1,3 +1,15 @@
+## 2026-09-17（续 1030）
+
+- 不变量 913；语料 C891；模式 name-the-params-delay-notve-bar；反模式 params-delay-notve-sold-as-bundled；L10.3 第 882 条。填 L4.4 / CometBFT 档案 参数更新写了 H+1 not already VE enable-height switch / not already only that field / not already settled 正式三事（333 余量）。333 params-delay vs set bundled unbundling 完成（913 item 3）。
+
+## 2026-09-17（续 1029）
+
+- 不变量 912；语料 C890；模式 name-the-params-delay-notvalset-bar；反模式 params-delay-notvalset-sold-as-bundled；L10.3 第 881 条。填 L4.4 / CometBFT 档案 H+1 立刻用了新参数 not already validator H+2 / not already last_commit H+3 / not already settled 正式三事（333 余量）。333 params-delay vs set bundled unbundling 续（912 item 2）。
+
+## 2026-09-17（续 1028）
+
+- 不变量 911；语料 C889；模式 name-the-params-delay-noteffective-bar；反模式 params-delay-noteffective-sold-as-bundled；L10.3 第 880 条。填 L4.4 / CometBFT 档案 本高回了 ConsensusParams not already effective at H / not already this-height Prepare / not already settled 正式三事（333 余量）。333 params-delay vs set bundled unbundling 启动（911 item 1）。
+
 ## 2026-09-17（续 1027）
 
 - 不变量 910；语料 C888；模式 name-the-consensusparams-notpartial-bar；反模式 consensusparams-notpartial-sold-as-bundled；L10.3 第 879 条。填 L4.4 / CometBFT 档案 只改一个字段 not already only that field / not already rest kept / not already settled 正式三事（319 余量）。319 consensusparams vs update bundled unbundling 完成（910 item 3）。

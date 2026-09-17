@@ -1,3 +1,18 @@
+| A4325 | 记录 | 会与 333 / 330 / 319 / 911 / 912 糊成「看见写了 H+1 就已经是扩展启用高度那种切换 interchangeable、就已经只改填的那一项 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 参数更新写了 H+1 not already VE enable-height switch / not already only that field / not already settled 正式三事（333 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。333 params-delay vs set bundled unbundling 完成（913 item 3） |
+| A4326 | 高 | 看见参数更新写了 H+1 会被写成已经是扩展启用高度那种切换 interchangeable | 官方 Updating Consensus Parameters delay item 3：not already VE enable-height switch |
+| A4327 | 高 | 看见立刻生效 会被写成已经只改填的那一项 interchangeable | 官方 Updating Consensus Parameters delay item 3：not already only that field |
+| A4328 | 高 | 看见写了 H+1 会被写成已经交差 interchangeable | 官方 Updating Consensus Parameters delay item 3：not already settled |
+| A4329 | 中 | 怎样编 ConsensusParams 或怎样选启用高度会被抄进不确定 | 不抄。不写怎样编 ConsensusParams 或怎样选启用高度。不另写 19 节 |
+| A4320 | 记录 | 会与 333 / 35 / 459 / 911 / 913 糊成「看见参数 H+1 就已经是验证人集合那种 H+2 才计票 interchangeable、就已经是 H+3 才带 last_commit interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 H+1 立刻用了新参数 not already validator H+2 / not already last_commit H+3 / not already settled 正式三事（333 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。333 params-delay vs set bundled unbundling 续（912 item 2） |
+| A4321 | 高 | 看见 H+1 立刻用了新参数 会被写成已经是验证人集合那种 H+2 才计票 interchangeable | 官方 Updating Consensus Parameters delay item 2：not already validator H+2 |
+| A4322 | 高 | 看见「立刻」 会被写成已经是 H+3 才带 last_commit interchangeable | 官方 Updating Consensus Parameters delay item 2：not already last_commit H+3 |
+| A4323 | 高 | 看见参数延迟 会被写成已经交差 interchangeable | 官方 Updating Consensus Parameters delay item 2：not already settled |
+| A4324 | 中 | 怎样编 ConsensusParams 或怎样选启用高度会被抄进不确定 | 不抄。不写怎样编 ConsensusParams 或怎样选启用高度。不另写 19 节 |
+| A4315 | 记录 | 会与 333 / 471 / 319 / 912 / 913 糊成「看见本高回了就已经在本高生效 interchangeable、就已经本高提议按新上限 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 本高回了 ConsensusParams not already effective at H / not already this-height Prepare / not already settled 正式三事（333 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。333 params-delay vs set bundled unbundling 启动（911 item 1） |
+| A4316 | 高 | 看见本高 Finalize 回了 ConsensusParams 会被写成已经在本高生效 interchangeable / 471 interchangeable | 官方 Updating Consensus Parameters delay item 1：not already effective at H / not 471 |
+| A4317 | 高 | 看见本高 Finalize 绿了 会被写成已经本高提议按新上限 interchangeable | 官方 Updating Consensus Parameters delay item 1：not already this-height Prepare |
+| A4318 | 高 | 看见能更新 会被写成已经交差 interchangeable | 官方 Updating Consensus Parameters delay item 1：not already settled |
+| A4319 | 中 | 怎样编 ConsensusParams 或怎样选启用高度会被抄进不确定 | 不抄。不写怎样编 ConsensusParams 或怎样选启用高度。不另写 19 节 |
 | A4310 | 记录 | 会与 319 / 315 / 299 / 471 / 908 / 909 糊成「看见只填一项就已经只改这一项 interchangeable、就已经保持其余不变 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 只改一个字段 not already only that field / not already rest kept / not already settled 正式三事（319 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。319 consensusparams vs update bundled unbundling 完成（910 item 3） |
 | A4311 | 高 | 看见只改了一个字段 会被写成已经只改这一项 interchangeable | 官方 Updating Consensus Parameters item 3：not already only that field |
 | A4312 | 高 | 看见没写的字段 会被写成已经保持其余不变 interchangeable | 官方 Updating Consensus Parameters item 3：not already rest kept |

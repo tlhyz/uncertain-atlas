@@ -1,3 +1,6 @@
+- [`params-delay-notve-sold-as-bundled.md`](params-delay-notve-sold-as-bundled.md) — 参数 H+1 被写成已经是扩展启用高度切换 / 已经只改填的那一项 / 已经交差（不变量 913）
+- [`params-delay-notvalset-sold-as-bundled.md`](params-delay-notvalset-sold-as-bundled.md) — 参数 H+1 被写成已经是集合 H+2 / 已经是 last_commit H+3 / 已经交差（不变量 912）
+- [`params-delay-noteffective-sold-as-bundled.md`](params-delay-noteffective-sold-as-bundled.md) — 本高回了参数 被写成已经在本高生效 / 已经本高提议按新上限 / 已经交差（不变量 911）
 - [`consensusparams-notpartial-sold-as-bundled.md`](consensusparams-notpartial-sold-as-bundled.md) — 只改一项 被写成已经只改这一项 / 已经保持其余不变 / 已经交差（不变量 910）
 - [`consensusparams-notcleared-sold-as-bundled.md`](consensusparams-notcleared-sold-as-bundled.md) — Finalize 没回 被写成已经清掉 / 已经改了 / 已经交差（不变量 909）
 - [`consensusparams-notnoparams-sold-as-bundled.md`](consensusparams-notnoparams-sold-as-bundled.md) — InitChain 空参数 被写成已经没有参数 / 已经用了应用自己的空参数 / 已经交差（不变量 908）
