@@ -1,3 +1,6 @@
+- [`snapshot-verify-notdos-sold-as-bundled.md`](snapshot-verify-notdos-sold-as-bundled.md) — 封禁邻居 被写成已经没有快照 DoS / 已经收下这个人 / 已经交差（不变量 937）
+- [`snapshot-verify-notanchor-sold-as-bundled.md`](snapshot-verify-notanchor-sold-as-bundled.md) — 增量验了 chunk 被写成已经是唯一可信的 AppHash / 已经不能被伪造元数据 / 已经交差（不变量 936）
+- [`snapshot-verify-notearly-sold-as-bundled.md`](snapshot-verify-notearly-sold-as-bundled.md) — 装完又对上 LastBlockAppHash 被写成已经在装回当中验过 / 已经进了网 / 已经交差（不变量 935）
 - [`snapshot-conn-notgone-sold-as-bundled.md`](snapshot-conn-notgone-sold-as-bundled.md) — 应用选择不实现 被写成已经没有 state sync 这条对象 / 已经从创世是唯一合法路径 / 已经交差（不变量 934）
 - [`snapshot-conn-notboth-sold-as-bundled.md`](snapshot-conn-notboth-sold-as-bundled.md) — 给人快照或给自己装回 被写成已经必须两头都做 / 已经装完 / 已经交差（不变量 933）
 - [`snapshot-conn-notmust-sold-as-bundled.md`](snapshot-conn-notmust-sold-as-bundled.md) — 四门里有 Snapshot Connection 被写成已经必须实现快照 / 已经拍过快照 / 已经交差（不变量 932）

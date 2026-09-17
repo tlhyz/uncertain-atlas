@@ -160,6 +160,9 @@
 - [`worked-example-evidence-maxbytes-notunbond-vs-bundled.md`](worked-example-evidence-maxbytes-notunbond-vs-bundled.md) — >0≠already covering unbonding/enough to punish/settled；≠331 bundled（不变量 921）
 - [`worked-example-evidence-maxbytes-notunder-vs-bundled.md`](worked-example-evidence-maxbytes-notunder-vs-bundled.md) — 填了证据字段≠already under block cap/overhead-deducted/settled；≠331 bundled（不变量 920）
 - [`worked-example-evidence-maxbytes-vs-block.md`](worked-example-evidence-maxbytes-vs-block.md) — 填了证据 MaxBytes ≠ 已经落在块上限下面；> 0 ≠ 已经盖住解绑；证据 MaxBytes ≠ 已经是块 MaxBytes（不变量 331）
+- [`worked-example-snapshot-verify-notdos-vs-bundled.md`](worked-example-snapshot-verify-notdos-vs-bundled.md) — 封禁邻居≠already no-DoS/accepted-peer/settled；≠332 bundled（不变量 937）
+- [`worked-example-snapshot-verify-notanchor-vs-bundled.md`](worked-example-snapshot-verify-notanchor-vs-bundled.md) — 增量验chunk≠already only-trusted/unforgeable/settled；≠332 bundled（不变量 936）
+- [`worked-example-snapshot-verify-notearly-vs-bundled.md`](worked-example-snapshot-verify-notearly-vs-bundled.md) — 装完又对上≠already incremental/in-network/settled；≠332 bundled（不变量 935）
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-notve-vs-bundled.md`](worked-example-params-delay-notve-vs-bundled.md) — 参数H+1≠already VE switch/only that field/settled；≠333 bundled（不变量 913）
 - [`worked-example-params-delay-notvalset-vs-bundled.md`](worked-example-params-delay-notvalset-vs-bundled.md) — 参数H+1≠already validator H+2/last_commit H+3/settled；≠333 bundled（不变量 912）

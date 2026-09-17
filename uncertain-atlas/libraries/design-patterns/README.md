@@ -1,3 +1,6 @@
+- [`name-the-snapshot-verify-notdos-bar.md`](name-the-snapshot-verify-notdos-bar.md) — 封禁邻居 not already no snapshot DoS / not already accepted-this-peer / not already settled 正式三事（332 余量）（不变量 937）
+- [`name-the-snapshot-verify-notanchor-bar.md`](name-the-snapshot-verify-notanchor-bar.md) — 增量验了 chunk not already the only trusted AppHash / not already unforgeable metadata / not already settled 正式三事（332 余量）（不变量 936）
+- [`name-the-snapshot-verify-notearly-bar.md`](name-the-snapshot-verify-notearly-bar.md) — 装完又对上 LastBlockAppHash not already incrementally verified / not already in-network / not already settled 正式三事（332 余量）（不变量 935）
 - [`name-the-snapshot-conn-notgone-bar.md`](name-the-snapshot-conn-notgone-bar.md) — 应用选择不实现 not already no-state-sync-object / not already genesis-only / not already settled 正式三事（334 余量）（不变量 934）
 - [`name-the-snapshot-conn-notboth-bar.md`](name-the-snapshot-conn-notboth-bar.md) — 给人快照或给自己装回 not already must-do-both / not already restored / not already settled 正式三事（334 余量）（不变量 933）
 - [`name-the-snapshot-conn-notmust-bar.md`](name-the-snapshot-conn-notmust-bar.md) — 四门里有 Snapshot Connection not already must implement snapshots / not already snapshotted / not already settled 正式三事（334 余量）（不变量 932）

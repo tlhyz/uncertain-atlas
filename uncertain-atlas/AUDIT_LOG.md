@@ -1,3 +1,18 @@
+| A4445 | 记录 | 会与 332 / 326 / 334 / 935 / 936 糊成「看见封禁就已经没有快照 DoS interchangeable、就已经收下这个人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 封禁邻居 not already no snapshot DoS / not already accepted-this-peer / not already settled 正式三事（332 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。332 snapshot-verify vs early bundled unbundling 完成（937 item 3） |
+| A4446 | 高 | 看见封禁邻居 会被写成已经没有快照 DoS interchangeable | 官方 Snapshot Verification item 3：not already no snapshot DoS |
+| A4447 | 高 | 看见配了受信名单 会被写成已经收下这个人 interchangeable | 官方 Snapshot Verification item 3：not already accepted-this-peer |
+| A4448 | 高 | 看见能挡一家 会被写成已经交差 interchangeable | 官方 Snapshot Verification item 3：not already settled |
+| A4449 | 中 | 怎样做增量默克尔证明会被抄进不确定 | 不抄。不写怎样做增量默克尔证明或怎样配受信邻居。不另写 19 节 |
+| A4440 | 记录 | 会与 332 / 38 / 334 / 935 / 937 糊成「看见增量验就已经是唯一可信的 AppHash interchangeable、就已经不能被伪造元数据 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 增量验了 chunk not already the only trusted AppHash / not already unforgeable metadata / not already settled 正式三事（332 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。332 snapshot-verify vs early bundled unbundling 续（936 item 2） |
+| A4441 | 高 | 看见增量验了 chunk 会被写成已经是唯一可信的 AppHash interchangeable | 官方 Snapshot Verification item 2：not already the only trusted AppHash |
+| A4442 | 高 | 看见 checksum 过了 会被写成已经不能被伪造元数据 interchangeable | 官方 Snapshot Verification item 2：not already unforgeable metadata |
+| A4443 | 高 | 看见证明绿了 会被写成已经交差 interchangeable | 官方 Snapshot Verification item 2：not already settled |
+| A4444 | 中 | 怎样做增量默克尔证明会被抄进不确定 | 不抄。不写怎样做增量默克尔证明或怎样配受信邻居。不另写 19 节 |
+| A4435 | 记录 | 会与 332 / 321 / 323 / 936 / 937 糊成「看见装完又对上就已经在装回当中验过 interchangeable、就已经进了网 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 装完又对上 LastBlockAppHash not already incrementally verified / not already in-network / not already settled 正式三事（332 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。332 snapshot-verify vs early bundled unbundling 启动（935 item 1） |
+| A4436 | 高 | 看见装完又对上 LastBlockAppHash 会被写成已经在装回当中验过 interchangeable / 321 interchangeable | 官方 Snapshot Verification item 1：not already incrementally verified / not 321 |
+| A4437 | 高 | 看见高度对上 会被写成已经进了网 interchangeable | 官方 Snapshot Verification item 1：not already in-network |
+| A4438 | 高 | 看见 Info 绿了 会被写成已经交差 interchangeable | 官方 Snapshot Verification item 1：not already settled |
+| A4439 | 中 | 怎样做增量默克尔证明会被抄进不确定 | 不抄。不写怎样做增量默克尔证明或怎样配受信邻居。不另写 19 节 |
 | A4430 | 记录 | 会与 334 / 38 / 329 / 932 / 933 糊成「看见可选就已经没有 state sync 这条对象 interchangeable、就已经从创世是唯一合法路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 应用选择不实现 not already no-state-sync-object / not already genesis-only / not already settled 正式三事（334 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。334 snapshot-conn vs required bundled unbundling 完成（934 item 3） |
 | A4431 | 高 | 看见应用选择不实现 会被写成已经没有 state sync 这条对象 interchangeable | 官方 Snapshot Connection item 3：not already no-state-sync-object |
 | A4432 | 高 | 看见快照管理可选 会被写成已经从创世是唯一合法路径 interchangeable | 官方 Snapshot Connection item 3：not already genesis-only |

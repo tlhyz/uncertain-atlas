@@ -1,3 +1,15 @@
+## 2026-09-17（续 1054）
+
+- 不变量 937；语料 C915；模式 name-the-snapshot-verify-notdos-bar；反模式 snapshot-verify-notdos-sold-as-bundled；L10.3 第 906 条。填 L4.4 / CometBFT 档案 封禁邻居 not already no snapshot DoS / not already accepted-this-peer / not already settled 正式三事（332 余量）。332 snapshot-verify vs early bundled unbundling 完成（937 item 3）。
+
+## 2026-09-17（续 1053）
+
+- 不变量 936；语料 C914；模式 name-the-snapshot-verify-notanchor-bar；反模式 snapshot-verify-notanchor-sold-as-bundled；L10.3 第 905 条。填 L4.4 / CometBFT 档案 增量验了 chunk not already the only trusted AppHash / not already unforgeable metadata / not already settled 正式三事（332 余量）。332 snapshot-verify vs early bundled unbundling 续（936 item 2）。
+
+## 2026-09-17（续 1052）
+
+- 不变量 935；语料 C913；模式 name-the-snapshot-verify-notearly-bar；反模式 snapshot-verify-notearly-sold-as-bundled；L10.3 第 904 条。填 L4.4 / CometBFT 档案 装完又对上 LastBlockAppHash not already incrementally verified / not already in-network / not already settled 正式三事（332 余量）。332 snapshot-verify vs early bundled unbundling 启动（935 item 1）。
+
 ## 2026-09-17（续 1051）
 
 - 不变量 934；语料 C912；模式 name-the-snapshot-conn-notgone-bar；反模式 snapshot-conn-notgone-sold-as-bundled；L10.3 第 903 条。填 L4.4 / CometBFT 档案 应用选择不实现 not already no-state-sync-object / not already genesis-only / not already settled 正式三事（334 余量）。334 snapshot-conn vs required bundled unbundling 完成（934 item 3）。
