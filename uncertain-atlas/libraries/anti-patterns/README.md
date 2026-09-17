@@ -1,3 +1,4 @@
+- [`loadsnapusage-notchunks-sold-as-bundled.md`](loadsnapusage-notchunks-sold-as-bundled.md) — retrieve snapshot chunks 被写成已经 ApplySnapshotChunk chunk 栏 / 已经 ACCEPT / 已经 LoadSnapshotChunk 已经齐（不变量 660）
 - [`loadsnapusage-notdiscover-sold-as-bundled.md`](loadsnapusage-notdiscover-sold-as-bundled.md) — retrieve from peers 被写成已经 ListSnapshots discover / 已经本地清单 / 已经问了邻居就齐（不变量 659）
 - [`loadsnapusage-notretrieve-sold-as-bundled.md`](loadsnapusage-notretrieve-sold-as-bundled.md) — Used during state sync to retrieve 被写成已经 LoadSnapshotChunk bundled / 已经 Offer 装完 / 已经 Transition to Consensus（不变量 658）
 - [`applysnapusage-notunless-sold-as-bundled.md`](applysnapusage-notunless-sold-as-bundled.md) — unless instructed 被写成已经引擎自动 refetch / 已经引擎自动封邻居 / 已经 unable retrieve 换快照（不变量 657）
