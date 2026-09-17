@@ -1,3 +1,6 @@
+- [`chktxvalidate-notoptional-sold-as-bundled.md`](chktxvalidate-notoptional-sold-as-bundled.md) — Technically optional + Code≠0 被写成已经四门已经结算 / 已经进提案 / 已经 forever valid（不变量 682）
+- [`chktxvalidate-notapply-sold-as-bundled.md`](chktxvalidate-notapply-sold-as-bundled.md) — does not apply state changes 被写成已经改了状态 / 已经 Finalize 执行 / 已经 Process candidate 已提交（不变量 681）
+- [`chktxvalidate-notexecstate-sold-as-bundled.md`](chktxvalidate-notexecstate-sold-as-bundled.md) — validates against current state 被写成已经 ExecuteTxState / 已经 about-to-execute / 已经 CheckTxState is ExecuteTxState（不变量 680）
 - [`queryusage-notprooftype-sold-as-bundled.md`](queryusage-notprooftype-sold-as-bundled.md) — Merkle proof self-describing type 被写成已经 ProofOp 按键查 / 已经 CheckTx 守卫余量 / 已经 Snapshot 高度余量（不变量 679）
 - [`queryusage-notproof-sold-as-bundled.md`](queryusage-notproof-sold-as-bundled.md) — Optionally return Merkle proof 被写成已经 prove 栏 / 已经对上 AppHash / 已经 Finalize Query proofs anchored（不变量 678）
 - [`queryusage-notquerystate-sold-as-bundled.md`](queryusage-notquerystate-sold-as-bundled.md) — Query for data at current or past height 被写成已经 QueryState / 已经 replicated / 已经 QueryState is ExecuteTxState（不变量 677）

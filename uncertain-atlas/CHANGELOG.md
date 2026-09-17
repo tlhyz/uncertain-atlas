@@ -1,3 +1,20 @@
+## 2026-09-17（续 799）
+
+- 不变量 682；语料 C660；模式 name-the-chktxvalidate-notoptional-bar；反模式 chktxvalidate-notoptional-sold-as-bundled；L10.3 第 651 条。填 L4.4 / CometBFT 档案 CheckTx Usage Technically optional + Code≠0 rejected not four gates settled / not Check passed is in proposal / not forever valid 正式三事（486 余量）。486 chktxvalidate vs apply bundled unbundling 完成（682 item 3）。
+
+## 2026-09-17（续 798）
+
+- 不变量 681；语料 C659；模式 name-the-chktxvalidate-notapply-bar；反模式 chktxvalidate-notapply-sold-as-bundled；L10.3 第 650 条。填 L4.4 / CometBFT 档案 CheckTx Usage does not apply state changes not already mutated / not Finalize executed / not Process candidate committed 正式三事（486 余量）。486 chktxvalidate vs apply bundled unbundling 续（681 item 2）。
+
+## 2026-09-17（续 797）
+
+- 不变量 680；语料 C658；模式 name-the-chktxvalidate-notexecstate-bar；反模式 chktxvalidate-notexecstate-sold-as-bundled；L10.3 第 649 条。填 L4.4 / CometBFT 档案 CheckTx Usage validates against current state not ExecuteTxState / not about-to-execute / not CheckTxState is ExecuteTxState 正式三事（486 余量）。486 chktxvalidate vs apply bundled unbundling 启动（680 item 1）。
+
+## 2026-09-17（P3-2 / P1-4）
+
+- P3-2：[`tools/invariant_corpus_links.py`](tools/invariant_corpus_links.py) 双向链接校验（gate inv≥650）。
+- P1-4：pytest 对至少 10 条 Cxx 做占位解析钩子。
+
 ## 2026-09-17（续 796）
 
 - 不变量 679；语料 C657；模式 name-the-queryusage-notprooftype-bar；反模式 queryusage-notprooftype-sold-as-bundled；L10.3 第 648 条。填 L4.4 / CometBFT 档案 Query Usage Merkle proof self-describing type not ProofOp 按键查 / not CheckTx 守卫余量 / not Snapshot 高度余量 正式三事（487 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。487 queryusage vs querystate bundled unbundling 完成（679 item 3）。

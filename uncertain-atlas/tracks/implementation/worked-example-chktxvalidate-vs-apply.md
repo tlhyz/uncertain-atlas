@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见跑了 CheckTx 就已经按 ExecuteTxState 验过、已经改了状态、已经交差」，必须分开 validates against current state 是不是 ExecuteTxState、does not apply state changes 是不是已经改了状态 / Finalize interchangeable、Technically optional / Code≠0 拒绝 是不是四门已经结算 / CheckTx 过了就永远有效。可以跳过「看见跑了 CheckTx 就已经按 ExecuteTxState 验过」。不要另写怎样实现 CheckTxState。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见跑了 CheckTx 就已经按 ExecuteTxState 验过、已经改了状态、已经交差」，必须分开 validates against current state 是不是 ExecuteTxState、does not apply state changes 是不是已经改了状态 / Finalize interchangeable、Technically optional / Code≠0 拒绝 是不是四门已经结算 / CheckTx 过了就永远有效。可以跳过「看见跑了 CheckTx 就已经按 ExecuteTxState 验过」。不要另写怎样实现 CheckTxState。486 chktxvalidate vs apply bundled unbundling 完成（680 item 1 / 681 item 2 / 682 item 3）；精读 [`worked-example-chktxvalidate-notexecstate-vs-bundled.md`](worked-example-chktxvalidate-notexecstate-vs-bundled.md)（不变量 680 item 1）。
 
 ## 本页不抄
 
