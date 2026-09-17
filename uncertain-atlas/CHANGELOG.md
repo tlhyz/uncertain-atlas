@@ -1,3 +1,7 @@
+## 2026-09-17（续 770）
+
+- 不变量 653；语料 C630；模式 name-the-applysnapusage-notverify-bar；反模式 applysnapusage-notverify-sold-as-bundled；L10.3 第 622 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage verify each chunk not Only AppHash can be trusted / not Snapshot Verification bundled / not ApplySnapshotChunk Result ACCEPT already complete 正式三事（485 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。485 applysnapusage unbundling 启动（653 item 1）。
+
 ## 2026-09-17（续 769）
 
 - 不变量 652；语料 C629；模式 name-the-offersnaptrust-nottransition-bar；反模式 offersnaptrust-nottransition-sold-as-bundled；L10.3 第 621 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage verified AppHash at end not Info during load / not Transition to Consensus bundled / not Offer restored bundled 正式三事（483 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。483 offersnaptrust unbundling 完成（652 item 3）。
