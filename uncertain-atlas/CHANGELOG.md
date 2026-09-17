@@ -1,3 +1,7 @@
+## 2026-09-17（续 762）
+
+- 不变量 645；语料 C622；模式 name-the-fincommit-notpersist-bar；反模式 fincommit-notpersist-sold-as-bundled；L10.3 第 614 条。填 L4.4 / CometBFT 档案 FinalizeBlock When instruct Application to persist its state not engine persist tx outputs / AppHash / ResultsHash / not Commit Usage signal bundled / not fincommit bundled 正式三事（590 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。590 fincommit unbundling 续（645 item 2）。
+
 ## 2026-09-17（续 761）
 
 - 不变量 644；语料 C621；模式 name-the-fincommit-notsettled-bar；反模式 fincommit-notsettled-sold-as-bundled；L10.3 第 613 条。填 L4.4 / CometBFT 档案 FinalizeBlock When CometBFT calls Commit not already settled / not four gates settled / not fincommit bundled 正式三事（590 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。590 fincommit unbundling 启动（644 item 1）。
