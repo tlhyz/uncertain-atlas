@@ -1,3 +1,4 @@
+- [`fincommit-notcommitlock-sold-as-bundled.md`](fincommit-notcommitlock-sold-as-bundled.md) — calls Commit after lock 被写成已经 Commit 锁 / 已经 optional recheck / unlock / 已经 fincommit bundled（不变量 646）
 - [`fincommit-notpersist-sold-as-bundled.md`](fincommit-notpersist-sold-as-bundled.md) — instruct persist 被写成已经引擎 persist 这三份 / 已经 Commit Usage signal bundled / 已经 fincommit bundled（不变量 645）
 - [`fincommit-notsettled-sold-as-bundled.md`](fincommit-notsettled-sold-as-bundled.md) — calls Commit 被写成已经交差 / 已经四门已经结算 / 已经 fincommit bundled（不变量 644）
 - [`finh1-notafterunlock-sold-as-bundled.md`](finh1-notafterunlock-sold-as-bundled.md) — after unlock 被写成已经 unlocks mempool / 已经 finafter bundled / 已经 When trigger（不变量 643）

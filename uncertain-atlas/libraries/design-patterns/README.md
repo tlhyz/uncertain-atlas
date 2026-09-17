@@ -1,3 +1,4 @@
+- [`name-the-fincommit-notcommitlock-bar.md`](name-the-fincommit-notcommitlock-bar.md) — FinalizeBlock When calls Commit after lock mempool not Commit lock / not optional recheck / unlock / not fincommit bundled 正式三事（590 余量）（不变量 646）
 - [`name-the-fincommit-notpersist-bar.md`](name-the-fincommit-notpersist-bar.md) — FinalizeBlock When instruct Application to persist its state not engine persist tx outputs / AppHash / ResultsHash / not Commit Usage signal bundled / not fincommit bundled 正式三事（590 余量）（不变量 645）
 - [`name-the-fincommit-notsettled-bar.md`](name-the-fincommit-notsettled-bar.md) — FinalizeBlock When CometBFT calls Commit not already settled / not four gates settled / not fincommit bundled 正式三事（590 余量）（不变量 644）
 - [`name-the-finh1-notafterunlock-bar.md`](name-the-finh1-notafterunlock-bar.md) — FinalizeBlock When after unlock not unlock mempool / not finafter bundled / not When trigger 正式三事（593 余量）（不变量 643）

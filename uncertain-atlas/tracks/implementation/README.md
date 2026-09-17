@@ -1,3 +1,4 @@
+- [`worked-example-fincommit-notcommitlock-vs-bundled.md`](worked-example-fincommit-notcommitlock-vs-bundled.md) — calls Commit after lock≠Commit lock/recheck/unlock；≠fincommit bundled/notsettled/notpersist（不变量 646）
 - [`worked-example-fincommit-notpersist-vs-bundled.md`](worked-example-fincommit-notpersist-vs-bundled.md) — instruct persist≠engine persist 这三份/Commit Usage signal；≠fincommit bundled/notsettled/notcommitlock（不变量 645）
 - [`worked-example-fincommit-notsettled-vs-bundled.md`](worked-example-fincommit-notsettled-vs-bundled.md) — calls Commit≠settled/four gates；≠fincommit bundled/notpersist/notcommitlock（不变量 644）
 - [`worked-example-finh1-notafterunlock-vs-bundled.md`](worked-example-finh1-notafterunlock-vs-bundled.md) — after unlock≠unlock mempool/finafter/When trigger；≠finh1 bundled/notsettled/notround（不变量 643）
