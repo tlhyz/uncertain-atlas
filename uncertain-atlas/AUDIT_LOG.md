@@ -1,3 +1,18 @@
+| A4760 | 记录 | 会与 304 / 19 / 46 / 998 / 999 糊成「看见被断开就已经罚了 interchangeable、就已经上链 interchangeable、就已经是双签 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 断开 not already slashed / not already on-chain / not already doublesign 正式三事（304 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。304 vote-ts vs checked bundled unbundling 完成（1000 item 3） |
+| A4761 | 高 | 看见非法票被断开 会被写成已经罚了 interchangeable | 官方 Validator Signing item 3：not already slashed |
+| A4762 | 高 | 看见非法 会被写成已经上链 interchangeable | 官方 Validator Signing item 3：not already on-chain |
+| A4763 | 高 | 看见没过基本校验 会被写成已经是双签 interchangeable | 官方 Validator Signing item 3：not already doublesign |
+| A4764 | 中 | 怎样记上次签过会被抄进不确定 | 不抄。不写怎样记上次签过的高度轮类型。不另写 19 节 |
+| A4755 | 记录 | 会与 304 / 21 / 299 / 998 / 1000 糊成「看见冲突提案就已经有证据 interchangeable、就已经有对象 interchangeable、就已经有 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 冲突提案 not already evidence / not already object / not already exists 正式三事（304 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。304 vote-ts vs checked bundled unbundling 续（999 item 2） |
+| A4756 | 高 | 看见冲突提案 会被写成已经有提案证据 interchangeable | 官方 Validator Signing item 2：not already evidence |
+| A4757 | 高 | 看见两份提案 会被写成已经有对象 interchangeable | 官方 Validator Signing item 2：not already object |
+| A4758 | 高 | 看见「以后也许有」 会被写成已经有 interchangeable | 官方 Validator Signing item 2：not already exists |
+| A4759 | 中 | 怎样记上次签过会被抄进不确定 | 不抄。不写怎样记上次签过的高度轮类型。不另写 19 节 |
+| A4750 | 记录 | 会与 304 / 40 / 302 / 999 / 1000 糊成「看见带了 Timestamp 就已经验过 interchangeable、就已经执行 interchangeable、就已经有要求 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 带了 Timestamp not already checked / not already enforced / not already required 正式三事（304 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。304 vote-ts vs checked bundled unbundling 启动（998 item 1） |
+| A4751 | 高 | 看见票或提案带了 Timestamp 会被写成已经验过 interchangeable / 40 interchangeable | 官方 Validator Signing item 1：not already checked / not 40 |
+| A4752 | 高 | 看见单调 会被写成已经执行 interchangeable | 官方 Validator Signing item 1：not already enforced |
+| A4753 | 高 | 看见会用来算下一块 会被写成票上的时间已经有要求 interchangeable | 官方 Validator Signing item 1：not already required |
+| A4754 | 中 | 怎样记上次签过会被抄进不确定 | 不抄。不写怎样记上次签过的高度轮类型。不另写 19 节 |
 | A4745 | 记录 | 会与 302 / 129 / 318 / 995 / 996 糊成「看见差被缩放就已经按人头轮 interchangeable、就已经没有优先级 interchangeable、就已经每人一轮 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 优先级差被缩放 not already per-head / not already no-priority / not already equal 正式三事（302 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。302 round vs set bundled unbundling 完成（997 item 3） |
 | A4746 | 高 | 看见优先级差被缩放 会被写成已经按人头轮 interchangeable | 官方 Proposer Selection item 3：not already per-head |
 | A4747 | 高 | 看见范围被压住 会被写成已经没有优先级 interchangeable | 官方 Proposer Selection item 3：not already no-priority |

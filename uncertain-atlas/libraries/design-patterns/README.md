@@ -1,3 +1,6 @@
+- [`name-the-votets-notslash-bar.md`](name-the-votets-notslash-bar.md) — 断开 not already slashed / not already on-chain / not already doublesign 正式三事（304 余量）（不变量 1000）
+- [`name-the-votets-notevid-bar.md`](name-the-votets-notevid-bar.md) — 冲突提案 not already evidence / not already object / not already exists 正式三事（304 余量）（不变量 999）
+- [`name-the-votets-notcheck-bar.md`](name-the-votets-notcheck-bar.md) — 带了 Timestamp not already checked / not already enforced / not already required 正式三事（304 余量）（不变量 998）
 - [`name-the-roundset-notscale-bar.md`](name-the-roundset-notscale-bar.md) — 优先级差被缩放 not already per-head / not already no-priority / not already equal 正式三事（302 余量）（不变量 997）
 - [`name-the-roundset-notjump-bar.md`](name-the-roundset-notjump-bar.md) — 新加入 not already jump / not already washed / not already fair-round 正式三事（302 余量）（不变量 996）
 - [`name-the-roundset-notset-bar.md`](name-the-roundset-notset-bar.md) — 同一高度换轮 not already new-set / not already this-height / not already applied 正式三事（302 余量）（不变量 995）

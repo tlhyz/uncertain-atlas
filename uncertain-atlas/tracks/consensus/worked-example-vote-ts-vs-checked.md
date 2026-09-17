@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「签过就齐了」，必须分开时间戳是不是已经验过、冲突提案是不是已经有证据、断开是不是已经罚了。可以跳过「看见签过就已经验过时间」。不要另写怎样记上次签过的高度轮类型。不要写 amnesia 分类。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「签过就齐了」，必须分开时间戳是不是已经验过、冲突提案是不是已经有证据、断开是不是已经罚了。可以跳过「看见签过就已经验过时间」。不要另写怎样记上次签过的高度轮类型。不要写 amnesia 分类。304 vote-ts vs checked bundled unbundling 完成（998 item 1 / 999 item 2 / 1000 item 3）；精读 [`worked-example-votets-notcheck-vs-bundled.md`](worked-example-votets-notcheck-vs-bundled.md)（不变量 998 item 1）。
 
 ## 本页不抄
 

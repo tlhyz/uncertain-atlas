@@ -1,3 +1,6 @@
+- [`votets-notslash-sold-as-bundled.md`](votets-notslash-sold-as-bundled.md) — 断开 被写成已经罚了 / 已经上链 / 已经是双签（不变量 1000）
+- [`votets-notevid-sold-as-bundled.md`](votets-notevid-sold-as-bundled.md) — 冲突提案 被写成已经有提案证据 / 已经有对象 / 已经有（不变量 999）
+- [`votets-notcheck-sold-as-bundled.md`](votets-notcheck-sold-as-bundled.md) — 带了 Timestamp 被写成已经验过 / 已经执行 / 票上的时间已经有要求（不变量 998）
 - [`roundset-notscale-sold-as-bundled.md`](roundset-notscale-sold-as-bundled.md) — 优先级差被缩放 被写成已经按人头轮 / 已经没有优先级 / 已经每人一轮（不变量 997）
 - [`roundset-notjump-sold-as-bundled.md`](roundset-notjump-sold-as-bundled.md) — 新加入 被写成已经能跳到队头 / 已经洗掉队尾 / 已经公平当过一轮（不变量 996）
 - [`roundset-notset-sold-as-bundled.md`](roundset-notset-sold-as-bundled.md) — 同一高度换轮 被写成已经换成应用刚回的那套 / 本高度各轮已经用上 / 集合已经变了（不变量 995）

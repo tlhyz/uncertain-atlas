@@ -1,3 +1,9 @@
+| C978 | 1000 | votets notslash≠19/304 | 文案把非法票被断开 / 没过基本校验 写成已经罚了 interchangeable 或已经和 19 interchangeable / 1000 votets-notslash interchangeable；或把看见非法 写成已经上链 interchangeable；或把看见没过基本校验 写成已经是双签 interchangeable，或已经和 304 vote-ts-vs-checked bundled / votets-notslash-sold-as-bundled interchangeable / 998 votets-notcheck interchangeable / 999 votets-notevid interchangeable |
+
+| C977 | 999 | votets notevid≠21/304 | 文案把冲突提案 / 双签证据机制 写成已经有提案证据 interchangeable 或已经和 21 interchangeable / 999 votets-notevid interchangeable；或把看见两份提案 写成已经有对象 interchangeable；或把看见「以后也许有」 写成已经有 interchangeable，或已经和 304 vote-ts-vs-checked bundled / votets-notevid-sold-as-bundled interchangeable / 998 votets-notcheck interchangeable / 1000 votets-notslash interchangeable |
+
+| C976 | 998 | votets notcheck≠40/304 | 文案把票或提案带了 Timestamp / 字段在 写成已经验过 interchangeable 或已经和 40 interchangeable / 998 votets-notcheck interchangeable；或把看见单调 写成已经执行 interchangeable；或把看见会用来算下一块 写成票上的时间已经有要求 interchangeable，或已经和 304 vote-ts-vs-checked bundled / votets-notcheck-sold-as-bundled interchangeable / 999 votets-notevid interchangeable / 1000 votets-notslash interchangeable |
+
 | C975 | 997 | roundset notscale≠129/302 | 文案把优先级差被缩放 / 范围被压住 写成已经按人头轮 interchangeable 或已经和 129 interchangeable / 997 roundset-notscale interchangeable；或把看见范围被压住 写成已经没有优先级 interchangeable；或把看见按票权往前走 写成已经每人一轮 interchangeable，或已经和 302 round-vs-set bundled / roundset-notscale-sold-as-bundled interchangeable / 995 roundset-notset interchangeable / 996 roundset-notjump interchangeable |
 
 | C974 | 996 | roundset notjump≠56/302 | 文案把新加入 / 初始优先级被往后放 写成已经能跳到队头 interchangeable 或已经和 56 interchangeable / 996 roundset-notjump interchangeable；或把看见退出再加入 写成已经洗掉队尾 interchangeable；或把看见初始优先级有数 写成已经公平当过一轮 interchangeable，或已经和 302 round-vs-set bundled / roundset-notjump-sold-as-bundled interchangeable / 995 roundset-notset interchangeable / 997 roundset-notscale interchangeable |

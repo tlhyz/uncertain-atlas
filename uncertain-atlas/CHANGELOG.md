@@ -1,3 +1,15 @@
+## 2026-09-17（续 1117）
+
+- 不变量 1000；语料 C978；模式 name-the-votets-notslash-bar；反模式 votets-notslash-sold-as-bundled；L10.3 第 969 条。填 L4.4 / CometBFT 档案 断开 not already slashed / not already on-chain / not already doublesign 正式三事（304 余量）。304 vote-ts vs checked bundled unbundling 完成（1000 item 3）。
+
+## 2026-09-17（续 1116）
+
+- 不变量 999；语料 C977；模式 name-the-votets-notevid-bar；反模式 votets-notevid-sold-as-bundled；L10.3 第 968 条。填 L4.4 / CometBFT 档案 冲突提案 not already evidence / not already object / not already exists 正式三事（304 余量）。304 vote-ts vs checked bundled unbundling 续（999 item 2）。
+
+## 2026-09-17（续 1115）
+
+- 不变量 998；语料 C976；模式 name-the-votets-notcheck-bar；反模式 votets-notcheck-sold-as-bundled；L10.3 第 967 条。填 L4.4 / CometBFT 档案 带了 Timestamp not already checked / not already enforced / not already required 正式三事（304 余量）。304 vote-ts vs checked bundled unbundling 启动（998 item 1）。
+
 ## 2026-09-17（续 1114）
 
 - 不变量 997；语料 C975；模式 name-the-roundset-notscale-bar；反模式 roundset-notscale-sold-as-bundled；L10.3 第 966 条。填 L4.4 / CometBFT 档案 优先级差被缩放 not already per-head / not already no-priority / not already equal 正式三事（302 余量）。302 round vs set bundled unbundling 完成（997 item 3）。
