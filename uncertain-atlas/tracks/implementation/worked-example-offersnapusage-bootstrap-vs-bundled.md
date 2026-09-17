@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 OfferSnapshot Usage bootstrap accept/reject 正式三事，必须分开 bootstrapping state sync / may accept or reject 是不是 OfferSnapshot 请求 bundled interchangeable / 已经本地清单 / 已经必须实现快照连接、Upon accepting retrieve and apply chunks 是不是 Offer 收下就已经装完 interchangeable / 已经齐、reject in chunk response prepared for further Offer 是不是 Offer 收下之后 bundled interchangeable / 已经 ABORT / 已经 REJECT_SNAPSHOT。可以跳过「看见 Offer 了就已经本地清单 interchangeable、已经装完」。不要另写怎样做增量验、怎样封邻居。499 offersnapusage unbundling 在本页 item 1 启动；精读 [`worked-example-offersnapusage-notlisted-vs-bundled.md`](worked-example-offersnapusage-notlisted-vs-bundled.md)（不变量 647 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 OfferSnapshot Usage bootstrap accept/reject 正式三事，必须分开 bootstrapping state sync / may accept or reject 是不是 OfferSnapshot 请求 bundled interchangeable / 已经本地清单 / 已经必须实现快照连接、Upon accepting retrieve and apply chunks 是不是 Offer 收下就已经装完 interchangeable / 已经齐、reject in chunk response prepared for further Offer 是不是 Offer 收下之后 bundled interchangeable / 已经 ABORT / 已经 REJECT_SNAPSHOT。可以跳过「看见 Offer 了就已经本地清单 interchangeable、已经装完」。不要另写怎样做增量验、怎样封邻居。499 offersnapusage unbundling 在本页 item 1 启动；精读 [`worked-example-offersnapusage-notlisted-vs-bundled.md`](worked-example-offersnapusage-notlisted-vs-bundled.md)（不变量 647 item 1）；续 [`worked-example-offersnapusage-notrestored-vs-bundled.md`](worked-example-offersnapusage-notrestored-vs-bundled.md)（不变量 648 item 2）。
 
 ## 本页不抄
 
