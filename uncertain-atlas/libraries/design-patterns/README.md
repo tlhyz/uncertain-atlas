@@ -1,3 +1,6 @@
+- [`name-the-commit-lock-notbcast-bar.md`](name-the-commit-lock-notbcast-bar.md) — Commit 里等广播 not already proceeding / not already allowed / not already settled 正式三事（310 余量）（不变量 976）
+- [`name-the-commit-lock-notunlock-bar.md`](name-the-commit-lock-notunlock-bar.md) — Commit 前上锁 not already unlocked / not already updated / not already settled 正式三事（310 余量）（不变量 975）
+- [`name-the-commit-lock-notrpc-bar.md`](name-the-commit-lock-notrpc-bar.md) — 默认锁 not already RPC-safe / not already no-concurrency / not already settled 正式三事（310 余量）（不变量 974）
 - [`name-the-candidate-notdrop-bar.md`](name-the-candidate-notdrop-bar.md) — 丢掉候选 not already never-rerun / not already unbounded-ok / not already settled 正式三事（311 余量）（不变量 973）
 - [`name-the-candidate-notexec-bar.md`](name-the-candidate-notexec-bar.md) — 立刻执行出候选 not already ExecuteTxState / not already this-final / not already settled 正式三事（311 余量）（不变量 972）
 - [`name-the-candidate-nothash-bar.md`](name-the-candidate-nothash-bar.md) — Prepare 没有头哈希 not already this-header / not already process-had-it / not already settled 正式三事（311 余量）（不变量 971）

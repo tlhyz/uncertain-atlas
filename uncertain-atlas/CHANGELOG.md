@@ -1,3 +1,15 @@
+## 2026-09-17（续 1093）
+
+- 不变量 976；语料 C954；模式 name-the-commit-lock-notbcast-bar；反模式 commit-lock-notbcast-sold-as-bundled；L10.3 第 945 条。填 L4.4 / CometBFT 档案 Commit 里等广播 not already proceeding / not already allowed / not already settled 正式三事（310 余量）。310 commit-lock vs rpc bundled unbundling 完成（976 item 3）。
+
+## 2026-09-17（续 1092）
+
+- 不变量 975；语料 C953；模式 name-the-commit-lock-notunlock-bar；反模式 commit-lock-notunlock-sold-as-bundled；L10.3 第 944 条。填 L4.4 / CometBFT 档案 Commit 前上锁 not already unlocked / not already updated / not already settled 正式三事（310 余量）。310 commit-lock vs rpc bundled unbundling 续（975 item 2）。
+
+## 2026-09-17（续 1091）
+
+- 不变量 974；语料 C952；模式 name-the-commit-lock-notrpc-bar；反模式 commit-lock-notrpc-sold-as-bundled；L10.3 第 943 条。填 L4.4 / CometBFT 档案 默认锁 not already RPC-safe / not already no-concurrency / not already settled 正式三事（310 余量）。310 commit-lock vs rpc bundled unbundling 启动（974 item 1）。
+
 ## 2026-09-17（续 1090）
 
 - 不变量 973；语料 C951；模式 name-the-candidate-notdrop-bar；反模式 candidate-notdrop-sold-as-bundled；L10.3 第 942 条。填 L4.4 / CometBFT 档案 丢掉候选 not already never-rerun / not already unbounded-ok / not already settled 正式三事（311 余量）。311 candidate vs execute bundled unbundling 完成（973 item 3）。

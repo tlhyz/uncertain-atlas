@@ -1,3 +1,18 @@
+| A4640 | 记录 | 会与 310 / 301 / 33 / 974 / 975 糊成「看见等广播就已经能往下走 interchangeable、就已经允许 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit 里等广播 not already proceeding / not already allowed / not already settled 正式三事（310 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。310 commit-lock vs rpc bundled unbundling 完成（976 item 3） |
+| A4641 | 高 | 看见 Commit 里等广播 会被写成已经能往下走 interchangeable | 官方 Commit lock item 3：not already proceeding |
+| A4642 | 高 | 看见能调广播 会被写成已经允许 interchangeable | 官方 Commit lock item 3：not already allowed |
+| A4643 | 高 | 看见同步内存池调用 会被写成已经交差 interchangeable | 官方 Commit lock item 3：not already settled |
+| A4644 | 中 | 怎样加锁会被抄进不确定 | 不抄。不写怎样加锁或怎样调广播。不另写 19 节 |
+| A4635 | 记录 | 会与 310 / 5 / 312 / 974 / 976 糊成「看见锁上了就已经解锁 interchangeable、就已经更新完 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit 前上锁 not already unlocked / not already updated / not already settled 正式三事（310 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。310 commit-lock vs rpc bundled unbundling 续（975 item 2） |
+| A4636 | 高 | 看见 Commit 前上锁 会被写成已经解锁 interchangeable | 官方 Commit lock item 2：not already unlocked |
+| A4637 | 高 | 看见能一起更新 会被写成已经更新完 interchangeable | 官方 Commit lock item 2：not already updated |
+| A4638 | 高 | 看见 Commit 回了 会被写成已经交差 interchangeable | 官方 Commit lock item 2：not already settled |
+| A4639 | 中 | 怎样加锁会被抄进不确定 | 不抄。不写怎样加锁或怎样调广播。不另写 19 节 |
+| A4630 | 记录 | 会与 310 / 307 / 311 / 975 / 976 糊成「看见有锁就已经 RPC 安全 interchangeable、就已经没有并发假设 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 默认锁 not already RPC-safe / not already no-concurrency / not already settled 正式三事（310 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。310 commit-lock vs rpc bundled unbundling 启动（974 item 1） |
+| A4631 | 高 | 看见默认锁 会被写成已经 RPC 安全 interchangeable / 307 interchangeable | 官方 Commit lock item 1：not already RPC-safe / not 307 |
+| A4632 | 高 | 看见默认顺序收 会被写成已经没有并发假设 interchangeable | 官方 Commit lock item 1：not already no-concurrency |
+| A4633 | 高 | 看见编进同一个二进制 会被写成已经交差 interchangeable | 官方 Commit lock item 1：not already settled |
+| A4634 | 中 | 怎样加锁会被抄进不确定 | 不抄。不写怎样加锁或怎样调广播。不另写 19 节 |
 | A4625 | 记录 | 会与 311 / 5 / 338 / 971 / 972 糊成「看见丢掉就已经永远不用再执行 interchangeable、就已经能一直攒 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 丢掉候选 not already never-rerun / not already unbounded-ok / not already settled 正式三事（311 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。311 candidate vs execute bundled unbundling 完成（973 item 3） |
 | A4626 | 高 | 看见丢掉候选 会被写成已经永远不用再执行 interchangeable | 官方 candidate item 3：not already never-rerun |
 | A4627 | 高 | 看见还没 Finalize 会被写成已经能一直攒 interchangeable | 官方 candidate item 3：not already unbounded-ok |

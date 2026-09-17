@@ -1,3 +1,6 @@
+- [`commit-lock-notbcast-sold-as-bundled.md`](commit-lock-notbcast-sold-as-bundled.md) — Commit 里等广播 被写成已经能往下走 / 已经允许 / 已经交差（不变量 976）
+- [`commit-lock-notunlock-sold-as-bundled.md`](commit-lock-notunlock-sold-as-bundled.md) — Commit 前上锁 被写成已经解锁 / 已经更新完 / 已经交差（不变量 975）
+- [`commit-lock-notrpc-sold-as-bundled.md`](commit-lock-notrpc-sold-as-bundled.md) — 默认锁 被写成已经 RPC 安全 / 已经没有并发假设 / 已经交差（不变量 974）
 - [`candidate-notdrop-sold-as-bundled.md`](candidate-notdrop-sold-as-bundled.md) — 丢掉候选 被写成已经永远不用再执行 / 已经能一直攒 / 已经交差（不变量 973）
 - [`candidate-notexec-sold-as-bundled.md`](candidate-notexec-sold-as-bundled.md) — 立刻执行出候选 被写成已经是 ExecuteTxState / 已经能点名本高度最终 / 已经交差（不变量 972）
 - [`candidate-nothash-sold-as-bundled.md`](candidate-nothash-sold-as-bundled.md) — Prepare 没有头哈希 被写成已经知道本头 / Prepare 当时已经有 / 已经交差（不变量 971）

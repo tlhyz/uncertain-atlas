@@ -120,6 +120,9 @@
 - [`worked-example-state-vs-gossip.md`](worked-example-state-vs-gossip.md) — 本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State；能读本地 State ≠ 已经进了规范（不变量 300）
 - [`worked-example-genesis-vs-app.md`](worked-example-genesis-vs-app.md) — 创世 app_state ≠ 已经验过应用状态；进程起来 ≠ 已经过了 genesis_time；空 validators ≠ 已经没有集合（不变量 303）
 - [`worked-example-abci-conn-vs-gates.md`](worked-example-abci-conn-vs-gates.md) — 同进程 ≠ 已经有套接字隔离；gRPC 最容易 ≠ 已经高性能；一条连接 ≠ 已经够用，也不是已经是四门（不变量 307）
+- [`worked-example-commit-lock-notbcast-vs-bundled.md`](worked-example-commit-lock-notbcast-vs-bundled.md) — Commit里等广播≠already proceeding/allowed/settled；≠310 bundled（不变量 976）
+- [`worked-example-commit-lock-notunlock-vs-bundled.md`](worked-example-commit-lock-notunlock-vs-bundled.md) — Commit前上锁≠already unlocked/updated/settled；≠310 bundled（不变量 975）
+- [`worked-example-commit-lock-notrpc-vs-bundled.md`](worked-example-commit-lock-notrpc-vs-bundled.md) — 默认锁≠already RPC-safe/no-concurrency/settled；≠310 bundled（不变量 974）
 - [`worked-example-commit-lock-vs-rpc.md`](worked-example-commit-lock-vs-rpc.md) — 默认锁 ≠ 已经 RPC 安全；Commit 前上锁 ≠ 已经解锁；Commit 里等广播 ≠ 已经能往下走（不变量 310）
 - [`worked-example-candidate-notdrop-vs-bundled.md`](worked-example-candidate-notdrop-vs-bundled.md) — 丢掉候选≠already never-rerun/unbounded-ok/settled；≠311 bundled（不变量 973）
 - [`worked-example-candidate-notexec-vs-bundled.md`](worked-example-candidate-notexec-vs-bundled.md) — 立刻执行≠already ExecuteTxState/this-final/settled；≠311 bundled（不变量 972）
