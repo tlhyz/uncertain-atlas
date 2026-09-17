@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Flush Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「Signals messages queued on client should be flushed to server 不是已经 Echo 测实现 interchangeable / Called periodically to ensure async requests are actually sent 不是已经 Echo 用来测实现 interchangeable / Called immediately for sync request returns when Flush response comes back 不是已经 Echo 回包 Message interchangeable」，不是 Flush 要把客户端排队的消息冲到服务端 bundled 三事（374），也不是 Echo Usage 正式三事（492）。不要另写怎样写 Flush、怎样排队、怎样做成同步请求。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「Signals messages queued on client should be flushed to server 不是已经 Echo 测实现 interchangeable / Called periodically to ensure async requests are actually sent 不是已经 Echo 用来测实现 interchangeable / Called immediately for sync request returns when Flush response comes back 不是已经 Echo 回包 Message interchangeable / not 671 flushusage-notechoqueued interchangeable / not 493 flushusage-vs-echo bundled interchangeable」，不是 Flush 要把客户端排队的消息冲到服务端 bundled 三事（374），也不是 Echo Usage 正式三事（492）。不要另写怎样写 Flush、怎样排队、怎样做成同步请求。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Flush Usage 正式三事，必须分开 Signals messages queued should be flushed to server 是不是 Echo 测 implementation interchangeable / 已经送到、Called periodically to ensure async requests are actually sent 是不是 Echo 用来测实现 interchangeable / 已经是四门、Called immediately for sync request returns when Flush response comes back 是不是 Echo 回包 Message interchangeable / 已经能往下走。可以跳过「看见 Flush 了就已经 Echo 测实现 interchangeable」。不要另写怎样写 Flush。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Flush Usage 正式三事，必须分开 Signals messages queued should be flushed to server 是不是 Echo 测 implementation interchangeable / 已经 HasChannel 入队 / 已经 Echo Message 是 Flush、Called periodically to ensure async requests are actually sent 是不是 Echo 用来测实现 interchangeable / 已经是四门、Called immediately for sync request returns when Flush response comes back 是不是 Echo 回包 Message interchangeable / 已经能往下走。可以跳过「看见 Flush 了就已经 Echo 测实现 interchangeable」。不要另写怎样写 Flush。493 flushusage vs echo bundled unbundling 启动（671 item 1）；精读 [`worked-example-flushusage-notechoqueued-vs-bundled.md`](worked-example-flushusage-notechoqueued-vs-bundled.md)（不变量 671 item 1）。
 
 ## 本页不抄
 
