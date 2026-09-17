@@ -321,6 +321,9 @@
 - [`worked-example-snapshot-vs-identical.md`](worked-example-snapshot-vs-identical.md) — 快照全字段（含 Metadata）对上 ≠ 已经装完；引擎不解释 format / hash ≠ 已经轻验 AppHash；空快照也至少 1 块 ≠ 已经齐（不变量 368）
 - [`worked-example-extvoteinfo-vs-local.md`](worked-example-extvoteinfo-vs-local.md) — ExtendedVoteInfo 从本进程抽出 ≠ 已经从块里抽出；把验过的签交给应用 ≠ 已经按原样签；扩展关掉则字段全空 ≠ 已经到了启用高度（不变量 369）
 - [`worked-example-info-vs-handshake.md`](worked-example-info-vs-handshake.md) — Info 用来握手对齐 ≠ 已经是快照重放；app_version 进每块头 ≠ 已经印进本头 AppHash；last_block_app_hash / last_block_height 要在 Commit 里落盘 ≠ 已经交差（不变量 370）
+- [`worked-example-queryheight-notapphash-vs-bundled.md`](worked-example-queryheight-notapphash-vs-bundled.md) — height含根≠325 AppHash/proof/this-height；≠371 bundled（不变量 814）
+- [`worked-example-queryheight-notfresh-vs-bundled.md`](worked-example-queryheight-notfresh-vs-bundled.md) — 默认0≠147 fresh/tip/handshake；≠371 bundled（不变量 813）
+- [`worked-example-queryheight-notstate-vs-bundled.md`](worked-example-queryheight-notstate-vs-bundled.md) — 能查≠329 QueryState/replicated/settled；≠371 bundled（不变量 812）
 - [`worked-example-queryheight-vs-committed.md`](worked-example-queryheight-vs-committed.md) — Query 可以对当前或过去高度查 ≠ 已经是 QueryState；height 默认 0 回最新已提交 ≠ 已经新鲜；这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 ≠ 已经印进本头 AppHash（不变量 371）
 - [`worked-example-misbehavior-notreward-vs-bundled.md`](worked-example-misbehavior-notreward-vs-bundled.md) — 总权≠365 rewarded/changed set/slashed；≠372 bundled（不变量 811）
 - [`worked-example-misbehavior-nottime-vs-bundled.md`](worked-example-misbehavior-nottime-vs-bundled.md) — height/time≠304 verified/settled/+2/3；≠372 bundled（不变量 810）

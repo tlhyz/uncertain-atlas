@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能查就已经是 QueryState、已经新鲜、已经印进本头 AppHash」，必须分开 Query 可以对当前或过去高度查是不是已经是 QueryState、height 默认 0 回最新已提交是不是已经新鲜、这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态是不是已经印进本头 AppHash。可以跳过「看见能查就已经是 QueryState」。不要另写怎样写 Query 高度。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能查就已经是 QueryState、已经新鲜、已经印进本头 AppHash」，必须分开 Query 可以对当前或过去高度查是不是已经是 QueryState、height 默认 0 回最新已提交是不是已经新鲜、这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态是不是已经印进本头 AppHash。可以跳过「看见能查就已经是 QueryState」。不要另写怎样写 Query 高度。371 queryheight vs committed bundled unbundling 完成（812 item 1 / 813 item 2 / 814 item 3）；精读 [`worked-example-queryheight-notstate-vs-bundled.md`](worked-example-queryheight-notstate-vs-bundled.md)（不变量 812 item 1）。
 
 ## 本页不抄
 

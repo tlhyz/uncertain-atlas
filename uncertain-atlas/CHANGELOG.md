@@ -1,3 +1,15 @@
+## 2026-09-17（续 931）
+
+- 不变量 814；语料 C792；模式 name-the-queryheight-notapphash-bar；反模式 queryheight-notapphash-sold-as-bundled；L10.3 第 783 条。填 L4.4 / CometBFT 档案 height 含根 not already header AppHash / not already proof matched / not already this-height settled 正式三事（371 余量）。371 queryheight vs committed bundled unbundling 完成（814 item 3）。
+
+## 2026-09-17（续 930）
+
+- 不变量 813；语料 C791；模式 name-the-queryheight-notfresh-bar；反模式 queryheight-notfresh-sold-as-bundled；L10.3 第 782 条。填 L4.4 / CometBFT 档案 height 默认 0 not already fresh / not already tip / not already handshake 正式三事（371 余量）。371 queryheight vs committed bundled unbundling 续（813 item 2）。
+
+## 2026-09-17（续 929）
+
+- 不变量 812；语料 C790；模式 name-the-queryheight-notstate-bar；反模式 queryheight-notstate-sold-as-bundled；L10.3 第 781 条。填 L4.4 / CometBFT 档案 Query 高度 not already QueryState / not already replicated / not already settled 正式三事（371 余量）。371 queryheight vs committed bundled unbundling 启动（812 item 1）。
+
 ## 2026-09-17（续 928）
 
 - 不变量 811；语料 C789；模式 name-the-misbehavior-notreward-bar；反模式 misbehavior-notreward-sold-as-bundled；L10.3 第 780 条。填 L4.4 / CometBFT 档案 total_voting_power not already rewarded by presence / not already changed set / not already slashed 正式三事（372 余量）。372 misbehavior vs enum bundled unbundling 完成（811 item 3）。

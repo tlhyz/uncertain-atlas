@@ -1,3 +1,6 @@
+- [`name-the-queryheight-notapphash-bar.md`](name-the-queryheight-notapphash-bar.md) — height 含根 not already header AppHash / not already proof matched / not already this-height settled 正式三事（371 余量）（不变量 814）
+- [`name-the-queryheight-notfresh-bar.md`](name-the-queryheight-notfresh-bar.md) — height 默认 0 not already fresh / not already tip / not already handshake 正式三事（371 余量）（不变量 813）
+- [`name-the-queryheight-notstate-bar.md`](name-the-queryheight-notstate-bar.md) — Query 高度 not already QueryState / not already replicated / not already settled 正式三事（371 余量）（不变量 812）
 - [`name-the-misbehavior-notreward-bar.md`](name-the-misbehavior-notreward-bar.md) — total_voting_power not already rewarded by presence / not already changed set / not already slashed 正式三事（372 余量）（不变量 811）
 - [`name-the-misbehavior-nottime-bar.md`](name-the-misbehavior-nottime-bar.md) — height/time not already verified time / not already settled / not already +2/3 正式三事（372 余量）（不变量 810）
 - [`name-the-misbehavior-notslashed-bar.md`](name-the-misbehavior-notslashed-bar.md) — Misbehavior.type not already slashed / not already rewarded / not already settled 正式三事（372 余量）（不变量 809）

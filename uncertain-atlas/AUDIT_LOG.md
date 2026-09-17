@@ -1,3 +1,18 @@
+| A3830 | 记录 | 会与 371 / 325 / 383 / 781 / 380 / 790 / 812 / 813 糊成「看见填了高度就已经印进本头 AppHash interchangeable、就已经对上 Proof interchangeable、就已经是本高度交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 height 含根 not already header AppHash / not already proof matched / not already this-height settled 正式三事（371 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。371 queryheight vs committed bundled unbundling 完成（814 item 3） |
+| A3831 | 高 | 看见 height 含根 会被写成已经印进本头 AppHash interchangeable / 325 interchangeable | 官方 Query 高度 item 3：not already header AppHash / not 325 |
+| A3832 | 高 | 看见有根 会被写成已经对上 Proof interchangeable / 383 interchangeable | 官方 Query 高度 item 3：not already proof matched / not 383 |
+| A3833 | 高 | 看见 Height-1 会被写成已经是本高度交差 interchangeable | 官方 Query 高度 item 3：not already this-height settled |
+| A3834 | 中 | 怎样写 Query 高度 会被抄进不确定 | 不抄。不写怎样写 Query 高度。不另写 19 节 |
+| A3825 | 记录 | 会与 371 / 147 / 370 / 384 / 777 / 812 / 814 糊成「看见没填高度就已经新鲜 interchangeable、就已经跟上尖 interchangeable、就已经是 Info 握手 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 height 默认 0 not already fresh / not already tip / not already handshake 正式三事（371 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。371 queryheight vs committed bundled unbundling 续（813 item 2） |
+| A3826 | 高 | 看见 height 默认 0 会被写成已经新鲜 interchangeable / 147 interchangeable | 官方 Query 高度 item 2：not already fresh / not 147 |
+| A3827 | 高 | 看见回了最新已提交 会被写成已经跟上尖 interchangeable / 370 interchangeable | 官方 Query 高度 item 2：not already tip / not 370 |
+| A3828 | 高 | 看见默认 0 会被写成已经是 Info 握手 interchangeable | 官方 Query 高度 item 2：not already handshake |
+| A3829 | 中 | 怎样写 Query 高度 会被抄进不确定 | 不抄。不写怎样写 Query 高度。不另写 19 节 |
+| A3820 | 记录 | 会与 371 / 329 / 377 / 797 / 380 / 789 / 813 / 814 糊成「看见能查就已经是 QueryState interchangeable、就已经复制 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 高度 not already QueryState / not already replicated / not already settled 正式三事（371 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。371 queryheight vs committed bundled unbundling 启动（812 item 1） |
+| A3821 | 高 | 看见 Query 能查 会被写成已经是 QueryState interchangeable / 329 interchangeable | 官方 Query 高度 item 1：not already QueryState / not 329 |
+| A3822 | 高 | 看见填了高度 会被写成已经复制 interchangeable / 377 interchangeable | 官方 Query 高度 item 1：not already replicated / not 377 |
+| A3823 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 Query 高度 item 1：not already settled |
+| A3824 | 中 | 怎样写 Query 高度 会被抄进不确定 | 不抄。不写怎样写 Query 高度。不另写 19 节 |
 | A3815 | 记录 | 会与 372 / 365 / 569 / 388 / 765 / 809 / 810 糊成「看见有总权就已经按到场定奖惩 interchangeable、就已经改了集合 interchangeable、就已经罚没 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 total_voting_power not already rewarded by presence / not already changed set / not already slashed 正式三事（372 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。372 misbehavior vs enum bundled unbundling 完成（811 item 3） |
 | A3816 | 高 | 看见 total_voting_power 会被写成已经按到场定奖惩 interchangeable / 365 interchangeable | 官方 Misbehavior item 3：not already rewarded by presence / not 365 |
 | A3817 | 高 | 看见填了权 会被写成已经改了集合 interchangeable / 569 interchangeable | 官方 Misbehavior item 3：not already changed set / not 569 |
