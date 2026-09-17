@@ -1,3 +1,4 @@
+- [`offersnaptrust-notmetadata-sold-as-bundled.md`](offersnaptrust-notmetadata-sold-as-bundled.md) — Only AppHash can be trusted 被写成已经 Snapshot 字段都可信 / 已经 hash 比对就够 / 已经 OfferSnapshot app_hash 填了（不变量 650）
 - [`offersnapusage-notreject-sold-as-bundled.md`](offersnapusage-notreject-sold-as-bundled.md) — reject in chunk response 被写成已经 ABORT / 已经 REJECT_SNAPSHOT / 已经 Offer 收下之后 bundled（不变量 649）
 - [`offersnapusage-notrestored-sold-as-bundled.md`](offersnapusage-notrestored-sold-as-bundled.md) — upon accepting retrieve and apply 被写成已经 Offer 装完 / 已经 Offer 收下之后 bundled / 已经 LoadSnapshotChunk 已经齐（不变量 648）
 - [`offersnapusage-notlisted-sold-as-bundled.md`](offersnapusage-notlisted-sold-as-bundled.md) — bootstrapping may accept/reject 被写成已经 OfferSnapshot 请求 bundled / 已经 ListSnapshots 发现 / 已经 offersnapusage bundled（不变量 647）

@@ -1,3 +1,4 @@
+- [`name-the-offersnaptrust-notmetadata-bar.md`](name-the-offersnaptrust-notmetadata-bar.md) — OfferSnapshot Usage Only AppHash can be trusted not Snapshot metadata / not hash comparison / not OfferSnapshot app_hash 正式三事（483 余量）（不变量 650）
 - [`name-the-offersnapusage-notreject-bar.md`](name-the-offersnapusage-notreject-bar.md) — OfferSnapshot Usage reject in chunk response not ABORT / not REJECT_SNAPSHOT / not Offer 收下之后 bundled 正式三事（499 余量）（不变量 649）
 - [`name-the-offersnapusage-notrestored-bar.md`](name-the-offersnapusage-notrestored-bar.md) — OfferSnapshot Usage upon accepting retrieve and apply not Offer 装完 / not Offer 收下之后 bundled / not LoadSnapshotChunk 正式三事（499 余量）（不变量 648）
 - [`name-the-offersnapusage-notlisted-bar.md`](name-the-offersnapusage-notlisted-bar.md) — OfferSnapshot Usage bootstrap accept/reject not OfferSnapshot bundled / not ListSnapshots / not Snapshot Connection 正式三事（499 余量）（不变量 647）

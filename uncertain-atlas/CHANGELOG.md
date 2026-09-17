@@ -1,3 +1,7 @@
+## 2026-09-17（续 767）
+
+- 不变量 650；语料 C627；模式 name-the-offersnaptrust-notmetadata-bar；反模式 offersnaptrust-notmetadata-sold-as-bundled；L10.3 第 619 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage Only AppHash can be trusted not Snapshot metadata / not hash comparison / not OfferSnapshot app_hash 正式三事（483 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。483 offersnaptrust unbundling 启动（650 item 1）。
+
 ## 2026-09-17（续 766）
 
 - 不变量 649；语料 C626；模式 name-the-offersnapusage-notreject-bar；反模式 offersnapusage-notreject-sold-as-bundled；L10.3 第 618 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage reject in chunk response not ABORT / not REJECT_SNAPSHOT / not Offer 收下之后 bundled 正式三事（499 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。499 offersnapusage unbundling 完成（649 item 3）。
