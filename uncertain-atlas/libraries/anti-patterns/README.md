@@ -1,3 +1,6 @@
+- [`loadchunk-not4mb-sold-as-bundled.md`](loadchunk-not4mb-sold-as-bundled.md) — 16 MB 上限 被写成已经是快照报文 4 MB / 已经是共识常数 / 已经装完（不变量 802）
+- [`loadchunk-notsame-sold-as-bundled.md`](loadchunk-notsame-sold-as-bundled.md) — 三列认块 被写成已经是同一份 / 已经齐 / 已经选型（不变量 801）
+- [`loadchunk-notcomplete-sold-as-bundled.md`](loadchunk-notcomplete-sold-as-bundled.md) — LoadSnapshotChunk 被写成已经齐 / 已经有了全部快照 / 已经装完（不变量 800）
 - [`querypath-notrequired-sold-as-bundled.md`](querypath-notrequired-sold-as-bundled.md) — 类型路径 被写成已经是正常运转必须有 / 已经复制 / 已经新鲜（不变量 799）
 - [`querypath-notengine-sold-as-bundled.md`](querypath-notengine-sold-as-bundled.md) — /store 被写成已经是引擎在用 / 已经是过滤 / 已经交差（不变量 798）
 - [`querypath-notheight-sold-as-bundled.md`](querypath-notheight-sold-as-bundled.md) — data 被写成已经是 Query 高度 / 已经新鲜 / 已经交差（不变量 797）

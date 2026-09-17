@@ -1,3 +1,15 @@
+## 2026-09-17（续 919）
+
+- 不变量 802；语料 C780；模式 name-the-loadchunk-not4mb-bar；反模式 loadchunk-not4mb-sold-as-bundled；L10.3 第 771 条。填 L4.4 / CometBFT 档案 16 MB 上限 not already 4 MB snapshot message / not already consensus constant / not already restored 正式三事（375 余量）。375 loadchunk vs retrieved bundled unbundling 完成（802 item 3）。
+
+## 2026-09-17（续 918）
+
+- 不变量 801；语料 C779；模式 name-the-loadchunk-notsame-bar；反模式 loadchunk-notsame-sold-as-bundled；L10.3 第 770 条。填 L4.4 / CometBFT 档案 三列认块 not already same snapshot / not already complete / not already selected format 正式三事（375 余量）。375 loadchunk vs retrieved bundled unbundling 续（801 item 2）。
+
+## 2026-09-17（续 917）
+
+- 不变量 800；语料 C778；模式 name-the-loadchunk-notcomplete-bar；反模式 loadchunk-notcomplete-sold-as-bundled；L10.3 第 769 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk not already complete / not already all snapshots / not already restored 正式三事（375 余量）。375 loadchunk vs retrieved bundled unbundling 启动（800 item 1）。
+
 ## 2026-09-17（续 916）
 
 - 不变量 799；语料 C777；模式 name-the-querypath-notrequired-bar；反模式 querypath-notrequired-sold-as-bundled；L10.3 第 768 条。填 L4.4 / CometBFT 档案 类型路径 not already required / not already replicated / not already fresh 正式三事（377 余量）。377 querypath vs store bundled unbundling 完成（799 item 3）。

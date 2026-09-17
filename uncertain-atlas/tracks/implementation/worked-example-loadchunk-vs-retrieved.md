@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 LoadSnapshotChunk 就已经齐、已经是同一份、已经是快照报文 4 MB」，必须分开 LoadSnapshotChunk 用来从邻居拉快照块是不是已经齐、请求用 height / format / chunk（从 0 起）认这块是不是已经是同一份、回包块含元数据不能超过 16 MB 是不是已经是快照报文 4 MB。可以跳过「看见叫了 LoadSnapshotChunk 就已经齐」。不要另写怎样写 LoadSnapshotChunk。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 LoadSnapshotChunk 就已经齐、已经是同一份、已经是快照报文 4 MB」，必须分开 LoadSnapshotChunk 用来从邻居拉快照块是不是已经齐、请求用 height / format / chunk（从 0 起）认这块是不是已经是同一份、回包块含元数据不能超过 16 MB 是不是已经是快照报文 4 MB。可以跳过「看见叫了 LoadSnapshotChunk 就已经齐」。不要另写怎样写 LoadSnapshotChunk。375 loadchunk vs retrieved bundled unbundling 完成（800 item 1 / 801 item 2 / 802 item 3）；精读 [`worked-example-loadchunk-notcomplete-vs-bundled.md`](worked-example-loadchunk-notcomplete-vs-bundled.md)（不变量 800 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,18 @@
+| A3770 | 记录 | 会与 375 / 321 / 397 / 742 / 501 / 658 / 800 / 801 糊成「看见有上限就已经是快照报文 4 MB interchangeable、就已经是共识常数 interchangeable、就已经装完 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 16 MB 上限 not already 4 MB snapshot message / not already consensus constant / not already restored 正式三事（375 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。375 loadchunk vs retrieved bundled unbundling 完成（802 item 3） |
+| A3771 | 高 | 看见 16 MB 上限 会被写成已经是快照报文 4 MB interchangeable / 321 interchangeable | 官方 LoadSnapshotChunk item 3：not already 4 MB snapshot message / not 321 |
+| A3772 | 高 | 看见 10 MB 会被写成已经是共识常数 interchangeable / 397 interchangeable | 官方 LoadSnapshotChunk item 3：not already consensus constant / not 397 |
+| A3773 | 高 | 看见回了字节 会被写成已经装完 interchangeable | 官方 LoadSnapshotChunk item 3：not already restored |
+| A3774 | 中 | 怎样写 LoadSnapshotChunk 会被抄进不确定 | 不抄。不写怎样写 LoadSnapshotChunk。不另写 19 节 |
+| A3765 | 记录 | 会与 375 / 368 / 396 / 738 / 395 / 735 / 800 / 802 糊成「看见填了三列就已经是同一份 interchangeable、就已经齐 interchangeable、就已经选型 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 三列认块 not already same snapshot / not already complete / not already selected format 正式三事（375 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。375 loadchunk vs retrieved bundled unbundling 续（801 item 2） |
+| A3766 | 高 | 看见三列认块 会被写成已经是同一份 interchangeable / 368 interchangeable | 官方 LoadSnapshotChunk item 2：not already same snapshot / not 368 |
+| A3767 | 高 | 看见填了三列 会被写成已经齐 interchangeable / 396 interchangeable | 官方 LoadSnapshotChunk item 2：not already complete / not 396 |
+| A3768 | 高 | 看见有 format 会被写成已经选型 interchangeable | 官方 LoadSnapshotChunk item 2：not already selected format |
+| A3769 | 中 | 怎样写 LoadSnapshotChunk 会被抄进不确定 | 不抄。不写怎样写 LoadSnapshotChunk。不另写 19 节 |
+| A3760 | 记录 | 会与 375 / 322 / 501 / 660 / 397 / 740 / 801 / 802 糊成「看见在拉就已经齐 interchangeable、就已经有了全部快照 interchangeable、就已经装完 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 LoadSnapshotChunk not already complete / not already all snapshots / not already restored 正式三事（375 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。375 loadchunk vs retrieved bundled unbundling 启动（800 item 1） |
+| A3761 | 高 | 看见 LoadSnapshotChunk 会被写成已经齐 interchangeable / 322 interchangeable | 官方 LoadSnapshotChunk item 1：not already complete / not 322 |
+| A3762 | 高 | 看见问了邻居 会被写成已经有了全部快照 interchangeable / 501 interchangeable | 官方 LoadSnapshotChunk item 1：not already all snapshots / not 501 |
+| A3763 | 高 | 看见能拉 会被写成已经装完 interchangeable | 官方 LoadSnapshotChunk item 1：not already restored |
+| A3764 | 中 | 怎样写 LoadSnapshotChunk 会被抄进不确定 | 不抄。不写怎样写 LoadSnapshotChunk。不另写 19 节 |
 | A3755 | 记录 | 会与 377 / 329 / 380 / 790 / 384 / 777 / 797 / 798 糊成「看见写了类型路径就已经是正常运转必须有 interchangeable、就已经复制 interchangeable、就已经新鲜 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 类型路径 not already required / not already replicated / not already fresh 正式三事（377 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。377 querypath vs store bundled unbundling 完成（799 item 3） |
 | A3756 | 高 | 看见类型路径 会被写成已经是正常运转必须有 interchangeable / 329 interchangeable | 官方 Query 路径 item 3：not already required / not 329 |
 | A3757 | 高 | 看见建议允许 会被写成已经复制 interchangeable / 380 interchangeable | 官方 Query 路径 item 3：not already replicated / not 380 |

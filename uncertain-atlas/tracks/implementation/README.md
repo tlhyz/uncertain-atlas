@@ -325,6 +325,9 @@
 - [`worked-example-misbehavior-vs-enum.md`](worked-example-misbehavior-vs-enum.md) — Misbehavior.type 只是过错枚举 ≠ 已经罚没；height 是过错发生的高度、time 是那一高已提交块的时间 ≠ 已经验过这个时间；total_voting_power 是那一高验证者集合的总权 ≠ 已经按到场定奖惩（不变量 372）
 - [`worked-example-checktxopt-vs-block.md`](worked-example-checktxopt-vs-block.md) — CheckTx 技术上可选、不参与处理块 ≠ 已经是四门已经结算；Code ≠ 0 会被拒、不会广播也不会进提案 ≠ 已经没进块；引擎对回包码不再赋予别的含义 ≠ 已经被引擎用了 Data（不变量 373）
 - [`worked-example-flush-vs-sent.md`](worked-example-flush-vs-sent.md) — Flush 要把客户端排队的消息冲到服务端 ≠ 已经送到；定期 Flush 是为了让异步请求真发出去 ≠ 已经是四门；立刻 Flush 是为了做成同步请求、回包回来才算这次同步 ≠ 已经能往下走（不变量 374）
+- [`worked-example-loadchunk-not4mb-vs-bundled.md`](worked-example-loadchunk-not4mb-vs-bundled.md) — 16MB≠4MB snapshot message/consensus constant/restored；≠375 bundled（不变量 802）
+- [`worked-example-loadchunk-notsame-vs-bundled.md`](worked-example-loadchunk-notsame-vs-bundled.md) — 三列认块≠368 same/complete/selected；≠375 bundled（不变量 801）
+- [`worked-example-loadchunk-notcomplete-vs-bundled.md`](worked-example-loadchunk-notcomplete-vs-bundled.md) — LoadSnapshotChunk≠322 complete/all snapshots/restored；≠375 bundled（不变量 800）
 - [`worked-example-loadchunk-vs-retrieved.md`](worked-example-loadchunk-vs-retrieved.md) — LoadSnapshotChunk 用来从邻居拉快照块 ≠ 已经齐；请求用 height / format / chunk（从 0 起）认这块 ≠ 已经是同一份；回包块含元数据不能超过 16 MB ≠ 已经是快照报文 4 MB（不变量 375）
 - [`worked-example-propstat-notreject-vs-bundled.md`](worked-example-propstat-notreject-vs-bundled.md) — REJECT prevote nil≠354 later/already not in block/434 Verify REJECT/455 assumes invalid；≠376 bundled（不变量 715）
 - [`worked-example-propstat-notaccept-vs-bundled.md`](worked-example-propstat-notaccept-vs-bundled.md) — ACCEPT prevote≠settled/347 must Accept/33 four gates；≠376 bundled（不变量 714）
