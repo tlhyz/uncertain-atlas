@@ -1,3 +1,15 @@
+## 2026-09-17（续 985）
+
+- 不变量 868；语料 C846；模式 name-the-req9-notext-bar；反模式 req9-notext-sold-as-bundled；L10.3 第 837 条。填 L4.4 / CometBFT 档案 Extend 和 Verify 不得改已提交状态 not already signed into state / not already sh independent of e / not already settled 正式三事（349 余量）。349 req9 vs commit bundled unbundling 完成（868 item 3）。
+
+## 2026-09-17（续 984）
+
+- 不变量 867；语料 C845；模式 name-the-req9-notproc-bar；反模式 req9-notproc-sold-as-bundled；L10.3 第 836 条。填 L4.4 / CometBFT 档案 Process 不得改已提交状态 not already Accept mutated / not already candidate ExecuteTxState / not already settled 正式三事（349 余量）。349 req9 vs commit bundled unbundling 续（867 item 2）。
+
+## 2026-09-17（续 983）
+
+- 不变量 866；语料 C844；模式 name-the-req9-notprep-bar；反模式 req9-notprep-sold-as-bundled；L10.3 第 835 条。填 L4.4 / CometBFT 档案 Prepare 不得改已提交状态 not already immediate exec settled / not already Finalize+Commit / not already can mutate s 正式三事（349 余量）。349 req9 vs commit bundled unbundling 启动（866 item 1）。
+
 ## 2026-09-17（续 982）
 
 - 不变量 865；语料 C843；模式 name-the-extend-once-notperheight-bar；反模式 extend-once-notperheight-sold-as-bundled；L10.3 第 834 条。填 L4.4 / CometBFT 档案 一轮只能交出一份扩展 not already one per height / not already must Accept / not already settled 正式三事（350 余量）。350 extend-once vs round bundled unbundling 完成（865 item 3）。

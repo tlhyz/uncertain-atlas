@@ -1,3 +1,6 @@
+- [`req9-notext-sold-as-bundled.md`](req9-notext-sold-as-bundled.md) — Extend/Verify 无副作用 被写成已经进状态 / 已经是 34 / 已经交差（不变量 868）
+- [`req9-notproc-sold-as-bundled.md`](req9-notproc-sold-as-bundled.md) — Process 无副作用 被写成已经 Accept 改了 / 已经是 ExecuteTxState / 已经交差（不变量 867）
+- [`req9-notprep-sold-as-bundled.md`](req9-notprep-sold-as-bundled.md) — Prepare 无副作用 被写成已经立刻交差 / 已经是 Finalize+Commit / 已经能改 s（不变量 866）
 - [`extend-once-notperheight-sold-as-bundled.md`](extend-once-notperheight-sold-as-bundled.md) — 一轮一份扩展 被写成已经是每一高度一份 / 已经必须 Accept / 已经交差（不变量 865）
 - [`extend-once-notnil-sold-as-bundled.md`](extend-once-notnil-sold-as-bundled.md) — 才叫 ExtendVote 被写成已经签了 nil / 已经每张票都会叫 / 已经交差（不变量 864）
 - [`extend-once-notresign-sold-as-bundled.md`](extend-once-notresign-sold-as-bundled.md) — 一轮一张 Precommit 被写成已经能再签 / 已经是扩展 / 已经交差（不变量 863）

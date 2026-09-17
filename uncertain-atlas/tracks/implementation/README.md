@@ -159,6 +159,9 @@
 - [`worked-example-abci20-upgrade-vs-height.md`](worked-example-abci20-upgrade-vs-height.md) — 必须协调升级 ≠ 已经只改 VoteExtensionsEnableHeight；h_e 必须高于当前 ≠ 已经能写成当前高度；引擎按当前高度决定存什么要什么 ≠ 已经按创世配好了（不变量 346）
 - [`worked-example-req3-coherence-vs-accept.md`](worked-example-req3-coherence-vs-accept.md) — 正确提议者的准备提案必须被正确接收者 Accept ≠ 已经是任意块都会 Accept；Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 ≠ 已经只是活性问题；Req 3 是大量测试和自动验证的目标 ≠ 已经测过（不变量 347）
 - [`worked-example-req6-coherence-vs-accept.md`](worked-example-req6-coherence-vs-accept.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept ≠ 已经是任意扩展都会 Accept；Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 ≠ 已经只是活性问题；会面对和 Req 5 同一类活性问题 ≠ 已经丢了安全性（不变量 348）
+- [`worked-example-req9-notext-vs-bundled.md`](worked-example-req9-notext-vs-bundled.md) — Extend/Verify无副作用≠signed into state/sh independent/settled；≠349 bundled（不变量 868）
+- [`worked-example-req9-notproc-vs-bundled.md`](worked-example-req9-notproc-vs-bundled.md) — Process无副作用≠Accept mutated/ExecuteTxState/settled；≠349 bundled（不变量 867）
+- [`worked-example-req9-notprep-vs-bundled.md`](worked-example-req9-notprep-vs-bundled.md) — Prepare无副作用≠immediate settled/Finalize+Commit/mutate s；≠349 bundled（不变量 866）
 - [`worked-example-req9-noside-vs-commit.md`](worked-example-req9-noside-vs-commit.md) — Prepare 不得改已提交状态 ≠ 已经立刻执行就已经交差；Process 不得改已提交状态 ≠ 已经 Accept 就已经改了；Extend 和 Verify 不得改已提交状态 ≠ 已经签了扩展就已经进状态（不变量 349）
 - [`worked-example-extend-once-notperheight-vs-bundled.md`](worked-example-extend-once-notperheight-vs-bundled.md) — 一轮一份扩展≠per height/must Accept/settled；≠350 bundled（不变量 865）
 - [`worked-example-extend-once-notnil-vs-bundled.md`](worked-example-extend-once-notnil-vs-bundled.md) — 才叫ExtendVote≠signed nil/every vote/settled；≠350 bundled（不变量 864）

@@ -1,3 +1,18 @@
+| A4100 | 记录 | 会与 349 / 34 / 350 / 865 / 866 / 867 糊成「看见签了扩展就已经进状态 interchangeable、就已经是 sh 不依赖 e interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Extend 和 Verify 不得改已提交状态 not already signed into state / not already sh independent of e / not already settled 正式三事（349 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。349 req9 vs commit bundled unbundling 完成（868 item 3） |
+| A4101 | 高 | 看见 Extend 和 Verify 不得改已提交状态 会被写成已经签了扩展就已经进状态 interchangeable | 官方 Req 9 item 3：not already signed into state |
+| A4102 | 高 | 看见 Verify 过了 会被写成已经是 sh 不依赖 e interchangeable | 官方 Req 9 item 3：not already sh independent of e |
+| A4103 | 高 | 看见扩展在 会被写成已经交差 interchangeable | 官方 Req 9 item 3：not already settled |
+| A4104 | 中 | 怎样守 Req 9 会被抄进不确定 | 不抄。不写怎样守 Req 9。不另写 19 节 |
+| A4095 | 记录 | 会与 349 / 311 / 33 / 866 / 868 糊成「看见 Accept 就已经改了已提交状态 interchangeable、就已经是候选 ExecuteTxState interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 不得改已提交状态 not already Accept mutated / not already candidate ExecuteTxState / not already settled 正式三事（349 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。349 req9 vs commit bundled unbundling 续（867 item 2） |
+| A4096 | 高 | 看见 Process 不得改已提交状态 会被写成已经 Accept 就已经改了 interchangeable | 官方 Req 9 item 2：not already Accept mutated |
+| A4097 | 高 | 看见 Reject 了 会被写成已经是候选 ExecuteTxState interchangeable | 官方 Req 9 item 2：not already candidate ExecuteTxState |
+| A4098 | 高 | 看见跑过了 会被写成已经交差 interchangeable | 官方 Req 9 item 2：not already settled |
+| A4099 | 中 | 怎样守 Req 9 会被抄进不确定 | 不抄。不写怎样守 Req 9。不另写 19 节 |
+| A4090 | 记录 | 会与 349 / 33 / 350 / 863 / 867 / 868 糊成「看见立刻执行了就已经交差 interchangeable、就已经是 Finalize + Commit interchangeable、就已经能改已提交状态 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 不得改已提交状态 not already immediate exec settled / not already Finalize+Commit / not already can mutate s 正式三事（349 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。349 req9 vs commit bundled unbundling 启动（866 item 1） |
+| A4091 | 高 | 看见 Prepare 不得改已提交状态 会被写成已经立刻执行就已经交差 interchangeable / 33 interchangeable | 官方 Req 9 item 1：not already immediate exec settled / not 33 |
+| A4092 | 高 | 看见 Prepare 回了 会被写成已经是 Finalize + Commit interchangeable | 官方 Req 9 item 1：not already Finalize+Commit |
+| A4093 | 高 | 看见能改列表 会被写成已经能改已提交状态 interchangeable | 官方 Req 9 item 1：not already can mutate s |
+| A4094 | 中 | 怎样守 Req 9 会被抄进不确定 | 不抄。不写怎样守 Req 9。不另写 19 节 |
 | A4085 | 记录 | 会与 350 / 348 / 338 / 863 / 864 糊成「看见交了一份就已经是每一高度一份 interchangeable、就已经必须 Accept interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 一轮只能交出一份扩展 not already one per height / not already must Accept / not already settled 正式三事（350 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。350 extend-once vs round bundled unbundling 完成（865 item 3） |
 | A4086 | 高 | 看见一轮只能交出一份扩展 会被写成已经是每一高度一份 interchangeable | 官方一轮一份扩展 item 3：not already one per height |
 | A4087 | 高 | 看见交出来了 会被写成已经必须 Accept interchangeable | 官方一轮一份扩展 item 3：not already must Accept |

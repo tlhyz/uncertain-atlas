@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见立刻执行了就已经交差、已经 Accept 就已经改了、已经签了扩展就已经进状态」，必须分开 Prepare 不得改已提交状态是不是已经立刻执行就已经交差、Process 不得改已提交状态是不是已经 Accept 就已经改了、Extend 和 Verify 不得改已提交状态是不是已经签了扩展就已经进状态。可以跳过「看见立刻执行了就已经交差」。不要另写怎样守 Req 9。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见立刻执行了就已经交差、已经 Accept 就已经改了、已经签了扩展就已经进状态」，必须分开 Prepare 不得改已提交状态是不是已经立刻执行就已经交差、Process 不得改已提交状态是不是已经 Accept 就已经改了、Extend 和 Verify 不得改已提交状态是不是已经签了扩展就已经进状态。可以跳过「看见立刻执行了就已经交差」。不要另写怎样守 Req 9。349 req9 vs commit bundled unbundling 完成（866 item 1 / 867 item 2 / 868 item 3）；精读 [`worked-example-req9-notprep-vs-bundled.md`](worked-example-req9-notprep-vs-bundled.md)（不变量 866 item 1）。
 
 ## 本页不抄
 

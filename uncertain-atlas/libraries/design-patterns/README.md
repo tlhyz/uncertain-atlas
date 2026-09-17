@@ -1,3 +1,6 @@
+- [`name-the-req9-notext-bar.md`](name-the-req9-notext-bar.md) — Extend 和 Verify 不得改已提交状态 not already signed into state / not already sh independent of e / not already settled 正式三事（349 余量）（不变量 868）
+- [`name-the-req9-notproc-bar.md`](name-the-req9-notproc-bar.md) — Process 不得改已提交状态 not already Accept mutated / not already candidate ExecuteTxState / not already settled 正式三事（349 余量）（不变量 867）
+- [`name-the-req9-notprep-bar.md`](name-the-req9-notprep-bar.md) — Prepare 不得改已提交状态 not already immediate exec settled / not already Finalize+Commit / not already can mutate s 正式三事（349 余量）（不变量 866）
 - [`name-the-extend-once-notperheight-bar.md`](name-the-extend-once-notperheight-bar.md) — 一轮只能交出一份扩展 not already one per height / not already must Accept / not already settled 正式三事（350 余量）（不变量 865）
 - [`name-the-extend-once-notnil-bar.md`](name-the-extend-once-notnil-bar.md) — ExtendVote 只在即将广播非 nil Precommit 时才叫 not already signed nil / not already every vote calls / not already settled 正式三事（350 余量）（不变量 864）
 - [`name-the-extend-once-notresign-bar.md`](name-the-extend-once-notresign-bar.md) — 一轮最多一张 Precommit not already can sign another / not already is the extension / not already settled 正式三事（350 余量）（不变量 863）
