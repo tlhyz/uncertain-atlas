@@ -1,3 +1,6 @@
+- [`chktxtype-nottxfield-sold-as-bundled.md`](chktxtype-nottxfield-sold-as-bundled.md) — type 栏 被写成已经 tx 栏就知道种类 / 已经再验不需要读 type / 已经请求余栏交差（不变量 709）
+- [`chktxtype-notsource-sold-as-bundled.md`](chktxtype-notsource-sold-as-bundled.md) — Recheck 被写成已经外部新交易 / 已经 New default / 已经去重保证不重放（不变量 708）
+- [`chktxtype-notrecheck-sold-as-bundled.md`](chktxtype-notrecheck-sold-as-bundled.md) — CheckTx_New 被写成已经 Recheck / 已经 tx 栏就等于 Recheck / 已经永远有效（不变量 707）
 - [`chktxlane-notrange-sold-as-bundled.md`](chktxlane-notrange-sold-as-bundled.md) — lane_id in range 被写成已经 Info 表选型 / 已经填了就排了优先 / 已经回包栏交差（不变量 706）
 - [`chktxlane-notassigned-sold-as-bundled.md`](chktxlane-notassigned-sold-as-bundled.md) — assigned to default 被写成已经写了标识 / 已经排了优先 / 已经进了块（不变量 705）
 - [`chktxlane-notreserved-sold-as-bundled.md`](chktxlane-notreserved-sold-as-bundled.md) — empty lane_id 被写成已经 priority 0 不设道 / 已经从池里删掉 / 已经可选拒（不变量 704）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 CheckTx 请求就已经是 Recheck、已经是新交易、已经永远有效」，必须分开 CheckTx_New 是不是 CheckTx_Recheck / tx 栏就等于 Recheck、CheckTx_Recheck 是不是外部新交易 / 去重保证不重放、Request type 栏是不是 tx 栏或 Commit 后再验 interchangeable。可以跳过「看见填了 CheckTx 请求就已经是 Recheck」。不要另写怎样实现 CheckTxState。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 CheckTx 请求就已经是 Recheck、已经是新交易、已经永远有效」，必须分开 CheckTx_New 是不是 CheckTx_Recheck / tx 栏就等于 Recheck、CheckTx_Recheck 是不是外部新交易 / 去重保证不重放、Request type 栏是不是 tx 栏或 Commit 后再验 interchangeable。可以跳过「看见填了 CheckTx 请求就已经是 Recheck」。不要另写怎样实现 CheckTxState。484 chktxtype vs recheck bundled unbundling 完成（707 item 1 / 708 item 2 / 709 item 3）；精读 [`worked-example-chktxtype-notrecheck-vs-bundled.md`](worked-example-chktxtype-notrecheck-vs-bundled.md)（不变量 707 item 1）。
 
 ## 本页不抄
 

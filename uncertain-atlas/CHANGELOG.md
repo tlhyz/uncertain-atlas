@@ -1,3 +1,15 @@
+## 2026-09-17（续 826）
+
+- 不变量 709；语料 C687；模式 name-the-chktxtype-nottxfield-bar；反模式 chktxtype-nottxfield-sold-as-bundled；L10.3 第 678 条。填 L4.4 / CometBFT 档案 CheckTx Request type field not tx field tells New vs Recheck / not Commit then recheck needs no type / not CheckTx request rest bundled 正式三事（484 余量）。484 chktxtype vs recheck bundled unbundling 完成（709 item 3）。
+
+## 2026-09-17（续 825）
+
+- 不变量 708；语料 C686；模式 name-the-chktxtype-notsource-bar；反模式 chktxtype-notsource-sold-as-bundled；L10.3 第 677 条。填 L4.4 / CometBFT 档案 CheckTx Request type CheckTx_Recheck mempool normal recheck not external new transaction / not CheckTx_New default / not pool dedup means no replay 正式三事（484 余量）。484 chktxtype vs recheck bundled unbundling 续（708 item 2）。
+
+## 2026-09-17（续 824）
+
+- 不变量 707；语料 C685；模式 name-the-chktxtype-notrecheck-bar；反模式 chktxtype-notrecheck-sold-as-bundled；L10.3 第 676 条。填 L4.4 / CometBFT 档案 CheckTx Request type CheckTx_New default full check not CheckTx_Recheck / not tx field means Recheck / not CheckTx forever valid 正式三事（484 余量）。484 chktxtype vs recheck bundled unbundling 启动（707 item 1）。
+
 ## 2026-09-17（续 823）
 
 - 不变量 706；语料 C684；模式 name-the-chktxlane-notrange-bar；反模式 chktxlane-notrange-sold-as-bundled；L10.3 第 675 条。填 L4.4 / CometBFT 档案 CheckTx Usage lane_id in ResponseInfo range not Info table selection / not in-table means prioritized / not CheckTx response field bundled 正式三事（482 余量）。482 chktxlane vs default bundled unbundling 完成（706 item 3）。
