@@ -67,11 +67,32 @@ index 看路
 
 ## 当前进度（知识，不是考试）
 
-| 轨 | 状态 |
+| 轨 | 状态 | 约数 |
+|---|---|---|
+| index | 已立；含 [`05-optimization-roadmap.md`](index/05-optimization-roadmap.md) | 6 文件 |
+| courses | L0–L10 均有正文；L8.4 数学后置 | 77 模块 |
+| protocols | 20+ 链/品类；主线 19 节 + 若干过滤器页 | 见 [`protocols/README.md`](protocols/README.md) |
+| tracks | 16 专题；failure-museum 92+ 案；implementation 精读 ABCI++ | ~470 文件 |
+| libraries | design-patterns ~540；anti-patterns ~650；invariants ~676；corpus C653+ | 见 [`index/03-knowledge-assets.md`](index/03-knowledge-assets.md) |
+| decision-matrix | 对照列完整；**不确定候选列**填建议档（非最终选型） | 2 表 |
+| threat-model | 草稿；Phase 1 补 v1 | 进行中 |
+| tools | adversarial_runner v0 | [`tools/`](tools/README.md) |
+| exams | L0 题已迁入，暂不考 | 后置 |
+
+**canonical 分支（建议）：** `cursor/uncertain-atlas-optimization-5ee2`（本仓库 KB 最全 + 优化迭代）。  
+`main` 仅含 `qtb/` 交易框架；协议知识不在 `main`。
+
+优化路线图：[`ROADMAP.md`](ROADMAP.md)。
+
+---
+
+## 已知架构缺口（2026-09-17）
+
+| 缺口 | 计划 |
 |---|---|
-| index | 已立；写作顺序已改「写全知识」 |
-| courses | L0–L10 均有正文；L8.4 数学后置；决策列空 |
-| protocols | 主线 11 链 + 乐观 rollup 品类 + Algorand 抽签对照 |
-| tracks | 上列精读 + 分区/形式化缝；最终性表已随第 8 波回填 |
-| libraries | 模式 12 + 反模式 13 + 决策/威胁/不变量 |
-| exams | L0 题已迁入，暂不考 |
+| 285+ cometbft 快照分支难导航 | Phase 3 合并为 long-lived KB 分支 |
+| ABCI++ 不变量未拆完（~676/793） | Phase 1 继续流水线 |
+| adversarial runner 无 pytest 钩子 | Phase 1 P1-4 |
+| PQ CPU 实测空 | Phase 1 P1-5 |
+| 过滤器页链缺 19 节 | Phase 2 补档或永久声明 |
+| 无全文检索 | Phase 3 atlas_index |

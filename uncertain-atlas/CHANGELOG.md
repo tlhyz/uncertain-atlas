@@ -1,3 +1,9 @@
+## 2026-09-17（优化迭代）
+
+- 新增 [`ROADMAP.md`](ROADMAP.md)、[`index/05-optimization-roadmap.md`](index/05-optimization-roadmap.md)；更新 [`ARCHITECTURE.md`](ARCHITECTURE.md) 进度与缺口表。
+- 决策矩阵 consensus / state-model **不确定候选**列填建议档（非最终选型）。
+- 新增 [`tools/adversarial_runner.py`](tools/adversarial_runner.py) v0；修复语料 duplicate C434 → 重编号 C654（inv 582）。
+
 ## 2026-09-17（续 793）
 
 - 不变量 676；语料 C653；模式 name-the-echousage-notdone-bar；反模式 echousage-notdone-sold-as-bundled；L10.3 第 645 条。填 L4.4 / CometBFT 档案 Echo Response Message the input string not Echo Usage test already done / not Request Message string to echo back / not Flush sync response 正式三事（492 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。492 echousage vs flush bundled unbundling 完成（676 item 3）。
