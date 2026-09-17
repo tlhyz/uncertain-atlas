@@ -1,3 +1,18 @@
+| A4310 | 记录 | 会与 319 / 315 / 299 / 471 / 908 / 909 糊成「看见只填一项就已经只改这一项 interchangeable、就已经保持其余不变 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 只改一个字段 not already only that field / not already rest kept / not already settled 正式三事（319 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。319 consensusparams vs update bundled unbundling 完成（910 item 3） |
+| A4311 | 高 | 看见只改了一个字段 会被写成已经只改这一项 interchangeable | 官方 Updating Consensus Parameters item 3：not already only that field |
+| A4312 | 高 | 看见没写的字段 会被写成已经保持其余不变 interchangeable | 官方 Updating Consensus Parameters item 3：not already rest kept |
+| A4313 | 高 | 看见只填了一项 会被写成已经交差 interchangeable | 官方 Updating Consensus Parameters item 3：not already settled |
+| A4314 | 中 | 怎样编参数或怎样选上限会被抄进不确定 | 不抄。不写怎样编参数或怎样选上限。不把仓库默认 MaxBytes / MaxGas 当不确定默认。不另写 19 节 |
+| A4305 | 记录 | 会与 319 / 333 / 471 / 908 / 910 糊成「看见 Finalize 没回就已经清掉 interchangeable、就已经改了 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 没回 not already cleared / not already changed / not already settled 正式三事（319 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。319 consensusparams vs update bundled unbundling 续（909 item 2） |
+| A4306 | 高 | 看见 Finalize 没回 会被写成已经清掉 interchangeable | 官方 Updating Consensus Parameters item 2：not already cleared |
+| A4307 | 高 | 看见空着 会被写成已经改了 interchangeable | 官方 Updating Consensus Parameters item 2：not already changed |
+| A4308 | 高 | 看见能更新 会被写成已经交差 interchangeable | 官方 Updating Consensus Parameters item 2：not already settled |
+| A4309 | 中 | 怎样编参数或怎样选上限会被抄进不确定 | 不抄。不写怎样编参数或怎样选上限。不把仓库默认 MaxBytes / MaxGas 当不确定默认。不另写 19 节 |
+| A4300 | 记录 | 会与 319 / 318 / 388 / 909 / 910 糊成「看见回了空就已经没有参数 interchangeable、就已经用了应用自己的空参数 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 空参数 not already no params / not already app empty params / not already settled 正式三事（319 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。319 consensusparams vs update bundled unbundling 启动（908 item 1） |
+| A4301 | 高 | 看见 InitChain 回了空 ConsensusParams 会被写成已经没有参数 interchangeable / 318 interchangeable | 官方 Updating Consensus Parameters item 1：not already no params / not 318 |
+| A4302 | 高 | 看见没回参数 会被写成已经用了应用自己的空参数 interchangeable | 官方 Updating Consensus Parameters item 1：not already app empty params |
+| A4303 | 高 | 看见能设初始参数 会被写成已经交差 interchangeable | 官方 Updating Consensus Parameters item 1：not already settled |
+| A4304 | 中 | 怎样编参数或怎样选上限会被抄进不确定 | 不抄。不写怎样编参数或怎样选上限。不把仓库默认 MaxBytes / MaxGas 当不确定默认。不另写 19 节 |
 | A4295 | 记录 | 会与 318 / 302 / 364 / 905 / 906 糊成「看见写成 0 就已经删掉不在集合里的人 interchangeable、就已经没有上限 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / L4.5 / CometBFT 档案 power 写成 0 not already deleted outsider / not already no cap / not already settled 正式三事（318 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。318 validatorupdate vs set bundled unbundling 完成（907 item 3） |
 | A4296 | 高 | 看见 power 写成 0 会被写成已经删掉不在集合里的人 interchangeable | 官方 Updating the Validator Set item 3：not already deleted outsider |
 | A4297 | 高 | 看见总权 会被写成已经没有上限 interchangeable | 官方 Updating the Validator Set item 3：not already no cap |

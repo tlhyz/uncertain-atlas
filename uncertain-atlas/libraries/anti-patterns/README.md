@@ -1,3 +1,6 @@
+- [`consensusparams-notpartial-sold-as-bundled.md`](consensusparams-notpartial-sold-as-bundled.md) — 只改一项 被写成已经只改这一项 / 已经保持其余不变 / 已经交差（不变量 910）
+- [`consensusparams-notcleared-sold-as-bundled.md`](consensusparams-notcleared-sold-as-bundled.md) — Finalize 没回 被写成已经清掉 / 已经改了 / 已经交差（不变量 909）
+- [`consensusparams-notnoparams-sold-as-bundled.md`](consensusparams-notnoparams-sold-as-bundled.md) — InitChain 空参数 被写成已经没有参数 / 已经用了应用自己的空参数 / 已经交差（不变量 908）
 - [`validatorupdate-notzero-sold-as-bundled.md`](validatorupdate-notzero-sold-as-bundled.md) — power 0 被写成已经删掉不在集合里的人 / 已经没有上限 / 已经交差（不变量 907）
 - [`validatorupdate-notdup-sold-as-bundled.md`](validatorupdate-notdup-sold-as-bundled.md) — 同一批重复 被写成已经按后一条改权 / 已经能恢复 / 已经交差（不变量 906）
 - [`validatorupdate-notempty-sold-as-bundled.md`](validatorupdate-notempty-sold-as-bundled.md) — InitChain 空名单 被写成已经没有集合 / 已经用了应用自己的空集 / 已经交差（不变量 905）

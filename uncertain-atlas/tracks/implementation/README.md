@@ -132,6 +132,9 @@
 - [`worked-example-validatorupdate-notdup-vs-bundled.md`](worked-example-validatorupdate-notdup-vs-bundled.md) — 同一批重复≠already last wins/recoverable/settled；≠318 bundled（不变量 906）
 - [`worked-example-validatorupdate-notempty-vs-bundled.md`](worked-example-validatorupdate-notempty-vs-bundled.md) — InitChain空名单≠already no set/app empty/settled；≠318 bundled（不变量 905）
 - [`worked-example-validatorupdate-vs-set.md`](worked-example-validatorupdate-vs-set.md) — InitChain 空名单 ≠ 已经没有集合；同一批重复公钥 ≠ 已经能恢复；power 0 ≠ 已经删掉不在集合里的人（不变量 318）
+- [`worked-example-consensusparams-notpartial-vs-bundled.md`](worked-example-consensusparams-notpartial-vs-bundled.md) — 只改一项≠already only that field/rest kept/settled；≠319 bundled（不变量 910）
+- [`worked-example-consensusparams-notcleared-vs-bundled.md`](worked-example-consensusparams-notcleared-vs-bundled.md) — Finalize没回≠already cleared/changed/settled；≠319 bundled（不变量 909）
+- [`worked-example-consensusparams-notnoparams-vs-bundled.md`](worked-example-consensusparams-notnoparams-vs-bundled.md) — InitChain空参数≠already no params/app empty/settled；≠319 bundled（不变量 908）
 - [`worked-example-consensusparams-vs-update.md`](worked-example-consensusparams-vs-update.md) — InitChain 空参数 ≠ 已经没有参数；Finalize 没回 ≠ 已经清掉；只改一个字段 ≠ 已经只改这一项（不变量 319）
 - [`worked-example-crash-steps-vs-commit.md`](worked-example-crash-steps-vs-commit.md) — 应用高度比引擎高 ≠ 已经允许；块进 store ≠ 已经 Commit；启动 Info 对上 ≠ 已经能跳步（不变量 320）
 - [`worked-example-snapshot-restore-vs-offer.md`](worked-example-snapshot-restore-vs-offer.md) — Offer 收下 ≠ 已经装完；一块 chunk 收下 ≠ 已经齐；拉失败换一份 ≠ 已经能接着装（不变量 321）

@@ -1,3 +1,15 @@
+## 2026-09-17（续 1027）
+
+- 不变量 910；语料 C888；模式 name-the-consensusparams-notpartial-bar；反模式 consensusparams-notpartial-sold-as-bundled；L10.3 第 879 条。填 L4.4 / CometBFT 档案 只改一个字段 not already only that field / not already rest kept / not already settled 正式三事（319 余量）。319 consensusparams vs update bundled unbundling 完成（910 item 3）。
+
+## 2026-09-17（续 1026）
+
+- 不变量 909；语料 C887；模式 name-the-consensusparams-notcleared-bar；反模式 consensusparams-notcleared-sold-as-bundled；L10.3 第 878 条。填 L4.4 / CometBFT 档案 Finalize 没回 not already cleared / not already changed / not already settled 正式三事（319 余量）。319 consensusparams vs update bundled unbundling 续（909 item 2）。
+
+## 2026-09-17（续 1025）
+
+- 不变量 908；语料 C886；模式 name-the-consensusparams-notnoparams-bar；反模式 consensusparams-notnoparams-sold-as-bundled；L10.3 第 877 条。填 L4.4 / CometBFT 档案 InitChain 空参数 not already no params / not already app empty params / not already settled 正式三事（319 余量）。319 consensusparams vs update bundled unbundling 启动（908 item 1）。
+
 ## 2026-09-17（续 1024）
 
 - 不变量 907；语料 C885；模式 name-the-validatorupdate-notzero-bar；反模式 validatorupdate-notzero-sold-as-bundled；L10.3 第 876 条。填 L4.4 / L4.5 / CometBFT 档案 power 写成 0 not already deleted outsider / not already no cap / not already settled 正式三事（318 余量）。318 validatorupdate vs set bundled unbundling 完成（907 item 3）。

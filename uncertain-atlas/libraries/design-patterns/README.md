@@ -1,3 +1,6 @@
+- [`name-the-consensusparams-notpartial-bar.md`](name-the-consensusparams-notpartial-bar.md) — 只改一个字段 not already only that field / not already rest kept / not already settled 正式三事（319 余量）（不变量 910）
+- [`name-the-consensusparams-notcleared-bar.md`](name-the-consensusparams-notcleared-bar.md) — Finalize 没回 not already cleared / not already changed / not already settled 正式三事（319 余量）（不变量 909）
+- [`name-the-consensusparams-notnoparams-bar.md`](name-the-consensusparams-notnoparams-bar.md) — InitChain 空参数 not already no params / not already app empty params / not already settled 正式三事（319 余量）（不变量 908）
 - [`name-the-validatorupdate-notzero-bar.md`](name-the-validatorupdate-notzero-bar.md) — power 写成 0 not already deleted outsider / not already no cap / not already settled 正式三事（318 余量）（不变量 907）
 - [`name-the-validatorupdate-notdup-bar.md`](name-the-validatorupdate-notdup-bar.md) — 同一批重复公钥 not already last wins / not already recoverable / not already settled 正式三事（318 余量）（不变量 906）
 - [`name-the-validatorupdate-notempty-bar.md`](name-the-validatorupdate-notempty-bar.md) — InitChain 空名单 not already no set / not already app empty set / not already settled 正式三事（318 余量）（不变量 905）
