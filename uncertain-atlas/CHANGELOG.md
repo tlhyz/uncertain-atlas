@@ -1,3 +1,15 @@
+## 2026-09-17（续 856）
+
+- 不变量 739；语料 C717；模式 name-the-offersnapreq-notrequired-bar；反模式 offersnapreq-notrequired-sold-as-bundled；L10.3 第 708 条。填 L4.4 / CometBFT 档案 OfferSnapshot 引导时叫 not Snapshot Connection required / not already transitioned / not Usage bootstrap 正式三事（396 余量）。396 offersnap vs listed bundled unbundling 完成（739 item 3）。
+
+## 2026-09-17（续 855）
+
+- 不变量 738；语料 C716；模式 name-the-offersnapreq-notrestored-bar；反模式 offersnapreq-notrestored-sold-as-bundled；L10.3 第 707 条。填 L4.4 / CometBFT 档案 OfferSnapshot 回包 result not already restored / not already accepted / not already settled 正式三事（396 余量）。396 offersnap vs listed bundled unbundling 续（738 item 2）。
+
+## 2026-09-17（续 854）
+
+- 不变量 737；语料 C715；模式 name-the-offersnapreq-notlisted-bar；反模式 offersnapreq-notlisted-sold-as-bundled；L10.3 第 706 条。填 L4.4 / CometBFT 档案 OfferSnapshot 请求 snapshot not local list / not already identical / not already settled 正式三事（396 余量）。396 offersnap vs listed bundled unbundling 启动（737 item 1）。
+
 ## 2026-09-17（续 853）
 
 - 不变量 736；语料 C714；模式 name-the-listsnapempty-notchunks-bar；反模式 listsnapempty-notchunks-sold-as-bundled；L10.3 第 705 条。填 L4.4 / CometBFT 档案 ListSnapshots 用来发现 not already loading chunks / not already complete / not Usage discover 正式三事（395 余量）。395 listsnapempty vs discovery bundled unbundling 完成（736 item 3）。

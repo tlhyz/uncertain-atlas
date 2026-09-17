@@ -352,6 +352,9 @@
 - [`worked-example-listsnapempty-notidentical-vs-bundled.md`](worked-example-listsnapempty-notidentical-vs-bundled.md) — 本地清单≠368 identical/321 restored/396 Offer snapshot；≠395 bundled（不变量 735）
 - [`worked-example-listsnapempty-notcomplete-vs-bundled.md`](worked-example-listsnapempty-notcomplete-vs-bundled.md) — 空请求要清单≠322 complete/asked neighbors/500 Usage discover；≠395 bundled（不变量 734）
 - [`worked-example-listsnapempty-vs-discovery.md`](worked-example-listsnapempty-vs-discovery.md) — ListSnapshots 请求是空请求、向应用要一份快照清单 ≠ 已经齐；ListSnapshots 回包 snapshots 是本地状态快照清单 ≠ 已经是同一份；ListSnapshots 用来在 state sync 时发现邻居上有哪些快照 ≠ 已经在拉块（不变量 395）
+- [`worked-example-offersnapreq-notrequired-vs-bundled.md`](worked-example-offersnapreq-notrequired-vs-bundled.md) — 引导时叫≠334 Snapshot Connection required/323 transitioned/499 Usage bootstrap；≠396 bundled（不变量 739）
+- [`worked-example-offersnapreq-notrestored-vs-bundled.md`](worked-example-offersnapreq-notrestored-vs-bundled.md) — result≠321 restored/402 ACCEPT/401 收下之后；≠396 bundled（不变量 738）
+- [`worked-example-offersnapreq-notlisted-vs-bundled.md`](worked-example-offersnapreq-notlisted-vs-bundled.md) — snapshot≠395 local list/368 identical/already settled；≠396 bundled（不变量 737）
 - [`worked-example-offersnap-vs-listed.md`](worked-example-offersnap-vs-listed.md) — OfferSnapshot 请求 snapshot 是拿来装回的那份快照 ≠ 已经是本地清单；OfferSnapshot 回包 result 是这次 Offer 的结果 ≠ 已经装完；OfferSnapshot 在用 state sync 引导节点时叫 ≠ 已经必须实现快照连接（不变量 396）
 - [`worked-example-applychunk-vs-loadchunk.md`](worked-example-applychunk-vs-loadchunk.md) — ApplySnapshotChunk 请求 chunk 是 LoadSnapshotChunk 回的那块二进制内容 ≠ 已经在拉块；ApplySnapshotChunk 请求 sender 是送来这块的节点 P2P ID ≠ 已经拒了人；ApplySnapshotChunk 回包 result 是装这块的结果 ≠ 已经是 Offer 的结果（不变量 397）
 - [`worked-example-applyretry-notchunkresult-vs-bundled.md`](worked-example-applyretry-notchunkresult-vs-bundled.md) — REJECT_SNAPSHOT≠397 this-chunk result/378 rejected senders/400 Offer REJECT_FORMAT；≠398 bundled（不变量 721）

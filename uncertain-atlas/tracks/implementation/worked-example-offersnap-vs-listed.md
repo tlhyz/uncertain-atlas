@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 OfferSnapshot 请求就已经是本地清单、已经装完、已经必须实现快照连接」，必须分开 OfferSnapshot 请求 snapshot 是拿来装回的那份快照是不是已经是本地清单、OfferSnapshot 回包 result 是这次 Offer 的结果是不是已经装完、OfferSnapshot 在用 state sync 引导节点时叫是不是已经必须实现快照连接。可以跳过「看见填了 OfferSnapshot 请求就已经是本地清单」。不要另写怎样写 OfferSnapshot 请求。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 OfferSnapshot 请求就已经是本地清单、已经装完、已经必须实现快照连接」，必须分开 OfferSnapshot 请求 snapshot 是拿来装回的那份快照是不是已经是本地清单、OfferSnapshot 回包 result 是这次 Offer 的结果是不是已经装完、OfferSnapshot 在用 state sync 引导节点时叫是不是已经必须实现快照连接。可以跳过「看见填了 OfferSnapshot 请求就已经是本地清单」。不要另写怎样写 OfferSnapshot 请求。396 offersnap vs listed bundled unbundling 完成（737 item 1 / 738 item 2 / 739 item 3）；精读 [`worked-example-offersnapreq-notlisted-vs-bundled.md`](worked-example-offersnapreq-notlisted-vs-bundled.md)（不变量 737 item 1）。
 
 ## 本页不抄
 

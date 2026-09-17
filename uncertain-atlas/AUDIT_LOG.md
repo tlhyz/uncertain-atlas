@@ -1,3 +1,18 @@
+| A3455 | 记录 | 会与 396 / 334 / 323 / 499 / 647 / 737 / 738 糊成「看见在引导时叫了就已经必须实现快照连接 interchangeable、就已经切进共识 interchangeable、就已经 Usage bootstrap interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot 引导时叫 not Snapshot Connection required / not already transitioned / not Usage bootstrap 正式三事（396 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。396 offersnap vs listed bundled unbundling 完成（739 item 3） |
+| A3456 | 高 | 看见 OfferSnapshot 引导时叫 会被写成已经必须实现快照连接 interchangeable / 334 interchangeable | 官方 OfferSnapshot 请求 item 3：not Snapshot Connection required / not 334 |
+| A3457 | 高 | 看见能叫 会被写成已经切进共识 interchangeable / 323 interchangeable | 官方 OfferSnapshot 请求 item 3：not already transitioned / not 323 |
+| A3458 | 高 | 看见能填 会被写成已经 Usage bootstrap interchangeable / 499 / 647 interchangeable | 官方 OfferSnapshot 请求 item 3：not Usage bootstrap / not 499 |
+| A3459 | 中 | 怎样写 OfferSnapshot 请求 会被抄进不确定 | 不抄。不写怎样写 OfferSnapshot 请求。不另写 19 节 |
+| A3450 | 记录 | 会与 396 / 321 / 402 / 726 / 401 / 728 / 737 / 739 糊成「看见回了 result 就已经装完 interchangeable、就已经收下 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot 回包 result not already restored / not already accepted / not already settled 正式三事（396 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。396 offersnap vs listed bundled unbundling 续（738 item 2） |
+| A3451 | 高 | 看见 OfferSnapshot 回包 result 会被写成已经装完 interchangeable / 321 interchangeable | 官方 OfferSnapshot 请求 item 2：not already restored / not 321 |
+| A3452 | 高 | 看见回了 result 会被写成已经收下 interchangeable / 402 / 726 / 401 / 728 interchangeable | 官方 OfferSnapshot 请求 item 2：not already accepted / not 402 |
+| A3453 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 OfferSnapshot 请求 item 2：not already settled |
+| A3454 | 中 | 怎样写 OfferSnapshot 请求 会被抄进不确定 | 不抄。不写怎样写 OfferSnapshot 请求。不另写 19 节 |
+| A3445 | 记录 | 会与 396 / 395 / 735 / 368 / 738 / 739 糊成「看见填了 snapshot 就已经是本地清单 interchangeable、就已经是同一份 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot 请求 snapshot not local list / not already identical / not already settled 正式三事（396 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。396 offersnap vs listed bundled unbundling 启动（737 item 1） |
+| A3446 | 高 | 看见 OfferSnapshot 请求 snapshot 会被写成已经是本地清单 interchangeable / 395 / 735 interchangeable | 官方 OfferSnapshot 请求 item 1：not local list / not 395 |
+| A3447 | 高 | 看见填了 snapshot 会被写成已经是同一份 interchangeable / 368 interchangeable | 官方 OfferSnapshot 请求 item 1：not already identical / not 368 |
+| A3448 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 OfferSnapshot 请求 item 1：not already settled |
+| A3449 | 中 | 怎样写 OfferSnapshot 请求 会被抄进不确定 | 不抄。不写怎样写 OfferSnapshot 请求。不另写 19 节 |
 | A3440 | 记录 | 会与 395 / 375 / 322 / 500 / 661 / 734 / 735 糊成「看见用来发现就已经在拉块 interchangeable、就已经齐 interchangeable、就已经 Usage discover interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ListSnapshots 用来发现 not already loading chunks / not already complete / not Usage discover 正式三事（395 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。395 listsnapempty vs discovery bundled unbundling 完成（736 item 3） |
 | A3441 | 高 | 看见 ListSnapshots 用来发现 会被写成已经在拉块 interchangeable / 375 interchangeable | 官方 ListSnapshots 空请求 item 3：not already loading chunks / not 375 |
 | A3442 | 高 | 看见用来发现 会被写成已经齐 interchangeable / 322 interchangeable | 官方 ListSnapshots 空请求 item 3：not already complete / not 322 |

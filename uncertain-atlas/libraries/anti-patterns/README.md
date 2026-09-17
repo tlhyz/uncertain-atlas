@@ -1,3 +1,6 @@
+- [`offersnapreq-notrequired-sold-as-bundled.md`](offersnapreq-notrequired-sold-as-bundled.md) — 引导时叫被写成已经必须实现快照连接 / 已经切进共识 / 已经 Usage bootstrap（不变量 739）
+- [`offersnapreq-notrestored-sold-as-bundled.md`](offersnapreq-notrestored-sold-as-bundled.md) — result 被写成已经装完 / 已经收下 / 已经交差（不变量 738）
+- [`offersnapreq-notlisted-sold-as-bundled.md`](offersnapreq-notlisted-sold-as-bundled.md) — snapshot 被写成已经是本地清单 / 已经是同一份 / 已经交差（不变量 737）
 - [`listsnapempty-notchunks-sold-as-bundled.md`](listsnapempty-notchunks-sold-as-bundled.md) — 用来发现被写成已经在拉块 / 已经齐 / 已经 Usage discover（不变量 736）
 - [`listsnapempty-notidentical-sold-as-bundled.md`](listsnapempty-notidentical-sold-as-bundled.md) — 本地清单被写成已经是同一份 / 已经装完 / 已经交差（不变量 735）
 - [`listsnapempty-notcomplete-sold-as-bundled.md`](listsnapempty-notcomplete-sold-as-bundled.md) — 空请求被写成已经齐 / 已经问了邻居 / 已经 Usage discover（不变量 734）

@@ -1,3 +1,6 @@
+- [`name-the-offersnapreq-notrequired-bar.md`](name-the-offersnapreq-notrequired-bar.md) — OfferSnapshot 引导时叫 not Snapshot Connection required / not already transitioned / not Usage bootstrap 正式三事（396 余量）（不变量 739）
+- [`name-the-offersnapreq-notrestored-bar.md`](name-the-offersnapreq-notrestored-bar.md) — OfferSnapshot 回包 result not already restored / not already accepted / not already settled 正式三事（396 余量）（不变量 738）
+- [`name-the-offersnapreq-notlisted-bar.md`](name-the-offersnapreq-notlisted-bar.md) — OfferSnapshot 请求 snapshot not local list / not already identical / not already settled 正式三事（396 余量）（不变量 737）
 - [`name-the-listsnapempty-notchunks-bar.md`](name-the-listsnapempty-notchunks-bar.md) — ListSnapshots 用来发现 not already loading chunks / not already complete / not Usage discover 正式三事（395 余量）（不变量 736）
 - [`name-the-listsnapempty-notidentical-bar.md`](name-the-listsnapempty-notidentical-bar.md) — ListSnapshots 本地清单 not already identical / not already restored / not already settled 正式三事（395 余量）（不变量 735）
 - [`name-the-listsnapempty-notcomplete-bar.md`](name-the-listsnapempty-notcomplete-bar.md) — ListSnapshots 空请求 not already complete / not already asked neighbors / not Usage discover 正式三事（395 余量）（不变量 734）
