@@ -1,3 +1,6 @@
+- [`name-the-applyretry-notchunkresult-bar.md`](name-the-applyretry-notchunkresult-bar.md) — ApplySnapshotChunk Result REJECT_SNAPSHOT not this-chunk result / not rejected senders / not Offer REJECT_FORMAT 正式三事（398 余量）（不变量 721）
+- [`name-the-applyretry-notswitch-bar.md`](name-the-applyretry-notswitch-bar.md) — ApplySnapshotChunk Result RETRY_SNAPSHOT not switched / not restored / not Offer accepted 正式三事（398 余量）（不变量 720）
+- [`name-the-applyretry-notrefetch-bar.md`](name-the-applyretry-notrefetch-bar.md) — ApplySnapshotChunk Result RETRY not refetch regardless / not already complete / not applysnapusage refetch 正式三事（398 余量）（不变量 719）
 - [`name-the-prepvalid-notevents-bar.md`](name-the-prepvalid-notevents-bar.md) — Prepare 回包校验 events not handed / not LastResultsHash / not Finalize events 正式三事（357 余量）（不变量 718）
 - [`name-the-prepvalid-notcrash-bar.md`](name-the-prepvalid-notcrash-bar.md) — Prepare 回包校验 crash not Process REJECT / not must Accept / not ProposalStatus REJECT 正式三事（357 余量）（不变量 717）
 - [`name-the-prepvalid-notchecked-bar.md`](name-the-prepvalid-notchecked-bar.md) — Prepare 回包校验 no extra checks not already checked / not app-level replay / not pool dedup 正式三事（357 余量）（不变量 716）

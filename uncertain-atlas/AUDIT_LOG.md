@@ -1,3 +1,18 @@
+| A3365 | 记录 | 会与 398 / 397 / 378 / 400 / 719 / 720 糊成「看见 REJECT_SNAPSHOT 就已经是装这块的结果 interchangeable、就已经拒了人 interchangeable、就已经 Offer REJECT_FORMAT interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk Result REJECT_SNAPSHOT not this-chunk result / not rejected senders / not Offer REJECT_FORMAT 正式三事（398 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。398 applyretry vs refetch bundled unbundling 完成（721 item 3） |
+| A3366 | 高 | 看见 REJECT_SNAPSHOT 拒掉这份换一份 会被写成已经是装这块的结果 interchangeable / 397 interchangeable | 官方 ApplySnapshotChunk Result item 3：not this-chunk result / not 397 |
+| A3367 | 高 | 看见回了 REJECT_SNAPSHOT 会被写成已经拒了人 interchangeable / 378 interchangeable | 官方 ApplySnapshotChunk Result item 3：not rejected senders / not 378 |
+| A3368 | 高 | 看见能换一份 会被写成已经 Offer REJECT_FORMAT interchangeable / 400 interchangeable | 官方 ApplySnapshotChunk Result item 3：not Offer REJECT_FORMAT / not 400 |
+| A3369 | 中 | 怎样写 ApplySnapshotChunk 结果枚举 会被抄进不确定 | 不抄。不写怎样写 ApplySnapshotChunk 结果枚举。不另写 19 节 |
+| A3360 | 记录 | 会与 398 / 321 / 401 / 719 / 721 糊成「看见 RETRY_SNAPSHOT 就已经换一份就能接着装 interchangeable、就已经装完 interchangeable、就已经 Offer 收下交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk Result RETRY_SNAPSHOT not switched / not restored / not Offer accepted 正式三事（398 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。398 applyretry vs refetch bundled unbundling 续（720 item 2） |
+| A3361 | 高 | 看见 RETRY_SNAPSHOT 从 OfferSnapshot 重来这份 会被写成已经换一份就能接着装 interchangeable / 321 interchangeable | 官方 ApplySnapshotChunk Result item 2：not switched / not 321 |
+| A3362 | 高 | 看见回了 RETRY_SNAPSHOT 会被写成已经装完 interchangeable | 官方 ApplySnapshotChunk Result item 2：not restored |
+| A3363 | 高 | 看见能重来这份 会被写成已经 Offer 收下就已经装完 interchangeable / 401 interchangeable | 官方 ApplySnapshotChunk Result item 2：not Offer accepted / not 401 |
+| A3364 | 中 | 怎样写 ApplySnapshotChunk 结果枚举 会被抄进不确定 | 不抄。不写怎样写 ApplySnapshotChunk 结果枚举。不另写 19 节 |
+| A3355 | 记录 | 会与 398 / 378 / 502 / 720 / 721 糊成「看见 RETRY 就已经 refetch 不论 result interchangeable、就已经齐 interchangeable、就已经 Usage refetch 交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk Result RETRY not refetch regardless / not already complete / not applysnapusage refetch 正式三事（398 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。398 applyretry vs refetch bundled unbundling 启动（719 item 1） |
+| A3356 | 高 | 看见 RETRY 再装这块 会被写成已经 refetch 不论 result interchangeable / 378 interchangeable | 官方 ApplySnapshotChunk Result item 1：not refetch regardless / not 378 |
+| A3357 | 高 | 看见回了 RETRY 会被写成已经齐 interchangeable | 官方 ApplySnapshotChunk Result item 1：not already complete |
+| A3358 | 高 | 看见能再装 会被写成已经 Usage refetch/ban interchangeable / 502 interchangeable | 官方 ApplySnapshotChunk Result item 1：not applysnapusage refetch / not 502 |
+| A3359 | 中 | 怎样写 ApplySnapshotChunk 结果枚举 会被抄进不确定 | 不抄。不写怎样写 ApplySnapshotChunk 结果枚举。不另写 19 节 |
 | A3350 | 记录 | 会与 357 / 316 / 431 / 451 / 716 / 717 糊成「看见有事件就已经交给引擎 interchangeable、就已经印进本头 interchangeable、就已经 Finalize events 交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 回包校验 events not handed / not LastResultsHash / not Finalize events 正式三事（357 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。357 prepare-valid vs checked bundled unbundling 完成（718 item 3） |
 | A3351 | 高 | 看见 Prepare 里产出了事件 会被写成已经交给引擎 interchangeable | 官方 Prepare 回包校验 item 3：not handed |
 | A3352 | 高 | 看见有事件 会被写成已经印进 LastResultsHash interchangeable / 316 interchangeable | 官方 Prepare 回包校验 item 3：not LastResultsHash / not 316 |

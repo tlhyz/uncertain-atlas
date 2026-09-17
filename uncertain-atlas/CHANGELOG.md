@@ -1,3 +1,15 @@
+## 2026-09-17（续 838）
+
+- 不变量 721；语料 C699；模式 name-the-applyretry-notchunkresult-bar；反模式 applyretry-notchunkresult-sold-as-bundled；L10.3 第 690 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Result REJECT_SNAPSHOT not this-chunk result / not rejected senders / not Offer REJECT_FORMAT 正式三事（398 余量）。398 applyretry vs refetch bundled unbundling 完成（721 item 3）。
+
+## 2026-09-17（续 837）
+
+- 不变量 720；语料 C698；模式 name-the-applyretry-notswitch-bar；反模式 applyretry-notswitch-sold-as-bundled；L10.3 第 689 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Result RETRY_SNAPSHOT not switched / not restored / not Offer accepted 正式三事（398 余量）。398 applyretry vs refetch bundled unbundling 续（720 item 2）。
+
+## 2026-09-17（续 836）
+
+- 不变量 719；语料 C697；模式 name-the-applyretry-notrefetch-bar；反模式 applyretry-notrefetch-sold-as-bundled；L10.3 第 688 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Result RETRY not refetch regardless / not already complete / not applysnapusage refetch 正式三事（398 余量）。398 applyretry vs refetch bundled unbundling 启动（719 item 1）。
+
 ## 2026-09-17（续 835）
 
 - 不变量 718；语料 C696；模式 name-the-prepvalid-notevents-bar；反模式 prepvalid-notevents-sold-as-bundled；L10.3 第 687 条。填 L4.4 / CometBFT 档案 Prepare 回包校验 events not handed / not LastResultsHash / not Finalize events 正式三事（357 余量）。357 prepare-valid vs checked bundled unbundling 完成（718 item 3）。

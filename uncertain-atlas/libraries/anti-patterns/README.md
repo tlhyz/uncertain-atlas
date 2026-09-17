@@ -1,3 +1,6 @@
+- [`applyretry-notchunkresult-sold-as-bundled.md`](applyretry-notchunkresult-sold-as-bundled.md) — REJECT_SNAPSHOT 被写成已经是装这块的结果 / 已经拒了人 / 已经 Offer REJECT_FORMAT（不变量 721）
+- [`applyretry-notswitch-sold-as-bundled.md`](applyretry-notswitch-sold-as-bundled.md) — RETRY_SNAPSHOT 被写成已经换一份就能接着装 / 已经装完 / 已经 Offer 收下交差（不变量 720）
+- [`applyretry-notrefetch-sold-as-bundled.md`](applyretry-notrefetch-sold-as-bundled.md) — RETRY 被写成已经 refetch 不论 result / 已经齐 / 已经 Usage refetch 交差（不变量 719）
 - [`prepvalid-notevents-sold-as-bundled.md`](prepvalid-notevents-sold-as-bundled.md) — Prepare 事件 被写成已经交给引擎 / 已经印进本头 / 已经 Finalize events 交差（不变量 718）
 - [`prepvalid-notcrash-sold-as-bundled.md`](prepvalid-notcrash-sold-as-bundled.md) — Prepare crash 被写成已经 Process REJECT / 已经必须 Accept / 已经 ProposalStatus REJECT（不变量 717）
 - [`prepvalid-notchecked-sold-as-bundled.md`](prepvalid-notchecked-sold-as-bundled.md) — 没有再验 被写成已经验过重复 / 已经有重放保护 / 已经池门去重交差（不变量 716）

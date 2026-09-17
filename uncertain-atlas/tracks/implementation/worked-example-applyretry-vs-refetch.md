@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 ApplySnapshotChunk 结果枚举就已经再拉、已经换一份、已经是装这块的结果」，必须分开 ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders 是不是已经再拉、ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块是不是已经换一份、ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份是不是已经是装这块的结果。可以跳过「看见回了 ApplySnapshotChunk 结果枚举就已经再拉」。不要另写怎样写 ApplySnapshotChunk 结果枚举。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 ApplySnapshotChunk 结果枚举就已经再拉、已经换一份、已经是装这块的结果」，必须分开 ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders 是不是已经再拉、ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块是不是已经换一份、ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份是不是已经是装这块的结果。可以跳过「看见回了 ApplySnapshotChunk 结果枚举就已经再拉」。不要另写怎样写 ApplySnapshotChunk 结果枚举。398 applyretry vs refetch bundled unbundling 完成（719 item 1 / 720 item 2 / 721 item 3）；精读 [`worked-example-applyretry-notrefetch-vs-bundled.md`](worked-example-applyretry-notrefetch-vs-bundled.md)（不变量 719 item 1）。
 
 ## 本页不抄
 
