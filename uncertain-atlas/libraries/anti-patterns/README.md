@@ -444,6 +444,7 @@
 - [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
+- [procaccept-liveness-sold-as-bundled](procaccept-liveness-sold-as-bundled.md)
 - [procaccept-shouldaccept-sold-as-bundled](procaccept-shouldaccept-sold-as-bundled.md)
 - [verifyaccept-default-sold-as-bundled](verifyaccept-default-sold-as-bundled.md)
 - [verifyaccept-liveness-sold-as-bundled](verifyaccept-liveness-sold-as-bundled.md)
