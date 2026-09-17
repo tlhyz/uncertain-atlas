@@ -1,3 +1,6 @@
+- [`snapshot-discover-nothalt-sold-as-bundled.md`](snapshot-discover-nothalt-sold-as-bundled.md) — Offer 被拒 被写成已经没有快照 / 已经停 / 已经交差（不变量 958）
+- [`snapshot-discover-nottake-sold-as-bundled.md`](snapshot-discover-nottake-sold-as-bundled.md) — 挑了最高 被写成已经收下 / 已经装完 / 已经交差（不变量 957）
+- [`snapshot-discover-notfull-sold-as-bundled.md`](snapshot-discover-notfull-sold-as-bundled.md) — ListSnapshots 回了 被写成已经齐 / 已经没有上限 / 已经交差（不变量 956）
 - [`snapshot-switch-nothist-sold-as-bundled.md`](snapshot-switch-nothist-sold-as-bundled.md) — 切进共识 被写成已经有完整历史 / 已经能给任意旧高度 / 已经交差（不变量 955）
 - [`snapshot-switch-notver-sold-as-bundled.md`](snapshot-switch-notver-sold-as-bundled.md) — AppHash 对上 被写成已经版本也对上 / 已经对了当前头 / 已经交差（不变量 954）
 - [`snapshot-switch-notchain-sold-as-bundled.md`](snapshot-switch-notchain-sold-as-bundled.md) — 装完 被写成已经有了 ChainID / 已经能出块 / 已经交差（不变量 953）

@@ -1,3 +1,6 @@
+- [`name-the-snapshot-discover-nothalt-bar.md`](name-the-snapshot-discover-nothalt-bar.md) — Offer 被拒 not already empty / not already halted / not already settled 正式三事（322 余量）（不变量 958）
+- [`name-the-snapshot-discover-nottake-bar.md`](name-the-snapshot-discover-nottake-bar.md) — 挑了最高 not already offered / not already restored / not already settled 正式三事（322 余量）（不变量 957）
+- [`name-the-snapshot-discover-notfull-bar.md`](name-the-snapshot-discover-notfull-bar.md) — ListSnapshots 回了 not already all-snapshots / not already unbounded / not already settled 正式三事（322 余量）（不变量 956）
 - [`name-the-snapshot-switch-nothist-bar.md`](name-the-snapshot-switch-nothist-bar.md) — 切进共识 not already full-history / not already any-old / not already settled 正式三事（323 余量）（不变量 955）
 - [`name-the-snapshot-switch-notver-bar.md`](name-the-snapshot-switch-notver-bar.md) — AppHash 对上 not already version-matched / not already this-header / not already settled 正式三事（323 余量）（不变量 954）
 - [`name-the-snapshot-switch-notchain-bar.md`](name-the-snapshot-switch-notchain-bar.md) — 装完 not already chainid / not already block-ready / not already settled 正式三事（323 余量）（不变量 953）

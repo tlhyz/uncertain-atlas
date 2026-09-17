@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经在发现快照」，必须分开 ListSnapshots 回了是不是已经有了全部快照、挑了最高是不是已经收下、Offer 被拒是不是已经停。可以跳过「看见问了就已经齐」。不要另写怎样列快照或怎样挑。不要把每节点 10 份当不确定默认。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经在发现快照」，必须分开 ListSnapshots 回了是不是已经有了全部快照、挑了最高是不是已经收下、Offer 被拒是不是已经停。可以跳过「看见问了就已经齐」。不要另写怎样列快照或怎样挑。不要把每节点 10 份当不确定默认。322 snapshot-discover vs offer bundled unbundling 完成（956 item 1 / 957 item 2 / 958 item 3）；精读 [`worked-example-snapshot-discover-notfull-vs-bundled.md`](worked-example-snapshot-discover-notfull-vs-bundled.md)（不变量 956 item 1）。
 
 ## 本页不抄
 

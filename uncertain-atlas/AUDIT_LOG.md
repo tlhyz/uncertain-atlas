@@ -1,3 +1,18 @@
+| A4550 | 记录 | 会与 322 / 314 / 321 / 956 / 957 糊成「看见 Offer 被拒就已经没有快照 interchangeable、就已经停 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Offer 被拒 not already empty / not already halted / not already settled 正式三事（322 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。322 snapshot-discover vs offer bundled unbundling 完成（958 item 3） |
+| A4551 | 高 | 看见 Offer 被拒 会被写成已经没有快照 interchangeable | 官方 Snapshot Discovery item 3：not already empty |
+| A4552 | 高 | 看见拒了邻居 会被写成已经停 interchangeable | 官方 Snapshot Discovery item 3：not already halted |
+| A4553 | 高 | 看见能中止 会被写成已经交差 interchangeable | 官方 Snapshot Discovery item 3：not already settled |
+| A4554 | 中 | 怎样列快照会被抄进不确定 | 不抄。不写怎样列快照或怎样挑。不另写 19 节 |
+| A4545 | 记录 | 会与 322 / 38 / 324 / 956 / 958 糊成「看见挑了就已经收下 interchangeable、就已经装完 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 挑了最高 not already offered / not already restored / not already settled 正式三事（322 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。322 snapshot-discover vs offer bundled unbundling 续（957 item 2） |
+| A4546 | 高 | 看见挑了最高 会被写成已经收下 interchangeable | 官方 Snapshot Discovery item 2：not already offered |
+| A4547 | 高 | 看见最高 会被写成已经装完 interchangeable | 官方 Snapshot Discovery item 2：not already restored |
+| A4548 | 高 | 看见排过了 会被写成已经交差 interchangeable | 官方 Snapshot Discovery item 2：not already settled |
+| A4549 | 中 | 怎样列快照会被抄进不确定 | 不抄。不写怎样列快照或怎样挑。不另写 19 节 |
+| A4540 | 记录 | 会与 322 / 321 / 323 / 957 / 958 糊成「看见问了就已经齐 interchangeable、就已经没有上限 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ListSnapshots 回了 not already all-snapshots / not already unbounded / not already settled 正式三事（322 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。322 snapshot-discover vs offer bundled unbundling 启动（956 item 1） |
+| A4541 | 高 | 看见 ListSnapshots 回了 会被写成已经齐 interchangeable / 321 interchangeable | 官方 Snapshot Discovery item 1：not already all-snapshots / not 321 |
+| A4542 | 高 | 看见回了 会被写成已经没有上限 interchangeable | 官方 Snapshot Discovery item 1：not already unbounded |
+| A4543 | 高 | 看见 10 会被写成已经交差 interchangeable | 官方 Snapshot Discovery item 1：not already settled |
+| A4544 | 中 | 怎样列快照会被抄进不确定 | 不抄。不写怎样列快照或怎样挑。不另写 19 节 |
 | A4535 | 记录 | 会与 323 / 322 / 321 / 953 / 954 糊成「看见切进就已经有完整历史 interchangeable、就已经能给任意旧高度 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 切进共识 not already full-history / not already any-old / not already settled 正式三事（323 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。323 snapshot-switch vs history bundled unbundling 完成（955 item 3） |
 | A4536 | 高 | 看见切进共识 会被写成已经有完整历史 interchangeable | 官方 Transition to Consensus item 3：not already full-history |
 | A4537 | 高 | 看见能出块 会被写成已经能给任意旧高度 interchangeable | 官方 Transition to Consensus item 3：not already any-old |
