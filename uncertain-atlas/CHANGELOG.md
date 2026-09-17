@@ -1,3 +1,7 @@
+## 2026-09-17（续 792）
+
+- 不变量 675；语料 C652；模式 name-the-echousage-notreqresp-bar；反模式 echousage-notreqresp-sold-as-bundled；L10.3 第 644 条。填 L4.4 / CometBFT 档案 Echo Request Message string to echo back not Response Message / not Echo request Message is Flush / not filled Message means echoed 正式三事（492 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。492 echousage vs flush bundled unbundling 续（675 item 2）。
+
 ## 2026-09-17（续 791）
 
 - 不变量 674；语料 C651；模式 name-the-echousage-notflush-bar；反模式 echousage-notflush-sold-as-bundled；L10.3 第 643 条。填 L4.4 / CometBFT 档案 Echo Usage Echo a string to test implementation not Flush flush queue / not commit-empty-echo bundled / not Flush sync response 正式三事（492 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。492 echousage vs flush bundled unbundling 启动（674 item 1）。
