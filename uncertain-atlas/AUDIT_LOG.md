@@ -1,3 +1,18 @@
+| A4265 | 记录 | 会与 327 / 340 / 52 / 311 / 899 / 900 糊成「看见又开一轮就已经丢了活性 interchangeable、就已经超时不再涨 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 又开一轮 not already lost liveness / not already timeout frozen / not already settled 正式三事（327 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。327 prepare-timeout vs liveness bundled unbundling 完成（901 item 3） |
+| A4266 | 高 | 看见又开一轮 会被写成已经丢了活性 interchangeable | 官方 Req 1 item 3：not already lost liveness |
+| A4267 | 高 | 看见 TimeoutPropose 只是初值 会被写成超时已经不再涨 interchangeable | 官方 Req 1 item 3：not already timeout frozen |
+| A4268 | 高 | 看见又开一轮 会被写成已经交差 interchangeable | 官方 Req 1 item 3：not already settled |
+| A4269 | 中 | 怎样设 TimeoutPropose 会被抄进不确定 | 不抄。不写怎样设 TimeoutPropose 或怎样抄默认秒数。不另写 19 节 |
+| A4260 | 记录 | 会与 327 / 47 / 344 / 899 / 901 糊成「看见填了 TimeoutPropose 就已经装得下 interchangeable、就已经钟不会响 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 填了 TimeoutPropose not already fits / not already clock silent / not already settled 正式三事（327 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。327 prepare-timeout vs liveness bundled unbundling 续（900 item 2） |
+| A4261 | 高 | 看见填了 TimeoutPropose 会被写成已经装得下 interchangeable | 官方 Req 1 item 2：not already fits |
+| A4262 | 高 | 看见同步期 会被写成钟已经不会响 interchangeable | 官方 Req 1 item 2：not already clock silent |
+| A4263 | 高 | 看见填了这个值 会被写成已经交差 interchangeable | 官方 Req 1 item 2：not already settled |
+| A4264 | 中 | 怎样设 TimeoutPropose 会被抄进不确定 | 不抄。不写怎样设 TimeoutPropose 或怎样抄默认秒数。不另写 19 节 |
+| A4255 | 记录 | 会与 327 / 344 / 33 / 900 / 901 糊成「看见立刻执行了就已经离开关键路径 interchangeable、就已经不挡提议钟 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 立刻整块执行 not already left critical path / not already not blocking clock / not already settled 正式三事（327 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。327 prepare-timeout vs liveness bundled unbundling 启动（899 item 1） |
+| A4256 | 高 | 看见立刻整块执行 会被写成已经离开关键路径 interchangeable / 344 interchangeable | 官方 Req 1 item 1：not already left critical path / not 344 |
+| A4257 | 高 | 看见执行回了 会被写成已经不挡提议钟 interchangeable | 官方 Req 1 item 1：not already not blocking clock |
+| A4258 | 高 | 看见候选写进内存 会被写成已经交差 interchangeable | 官方 Req 1 item 1：not already settled |
+| A4259 | 中 | 怎样设 TimeoutPropose 会被抄进不确定 | 不抄。不写怎样设 TimeoutPropose 或怎样抄默认秒数。不另写 19 节 |
 | A4250 | 记录 | 会与 338 / 341 / 34 / 896 / 897 糊成「看见同一块就已经同一份扩展 interchangeable、就已经和 Verify 同一把尺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 没有确定性要求 not already same extension / not already same ruler as Verify / not already settled 正式三事（338 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。338 prepare-nondet vs process bundled unbundling 完成（898 item 3） |
 | A4251 | 高 | 看见 ExtendVote 没有确定性要求 会被写成已经是同一份扩展 interchangeable | 官方 Req 11–12 之后 item 3：not already same extension |
 | A4252 | 高 | 看见同一块 会被写成已经和 Verify 同一把尺 interchangeable | 官方 Req 11–12 之后 item 3：not already same ruler as Verify |

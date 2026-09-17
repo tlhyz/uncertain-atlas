@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「立刻执行就已经来得及、超时已经够、再开一轮就已经停」，必须分开立刻整块执行是不是已经离开关键路径、填了 TimeoutPropose 是不是已经装得下、又开一轮是不是已经丢了活性。可以跳过「看见立刻执行了就已经离开关键路径」。不要另写怎样设 TimeoutPropose 或怎样抄默认秒数。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「立刻执行就已经来得及、超时已经够、再开一轮就已经停」，必须分开立刻整块执行是不是已经离开关键路径、填了 TimeoutPropose 是不是已经装得下、又开一轮是不是已经丢了活性。可以跳过「看见立刻执行了就已经离开关键路径」。不要另写怎样设 TimeoutPropose 或怎样抄默认秒数。327 prepare-timeout vs liveness bundled unbundling 完成（899 item 1 / 900 item 2 / 901 item 3）；精读 [`worked-example-prepare-timeout-notpath-vs-bundled.md`](worked-example-prepare-timeout-notpath-vs-bundled.md)（不变量 899 item 1）。
 
 ## 本页不抄
 

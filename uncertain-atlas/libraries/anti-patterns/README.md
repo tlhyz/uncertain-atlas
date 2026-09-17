@@ -1,3 +1,6 @@
+- [`prepare-timeout-notlost-sold-as-bundled.md`](prepare-timeout-notlost-sold-as-bundled.md) — 又开一轮 被写成已经丢了活性 / 超时已经不再涨 / 已经交差（不变量 901）
+- [`prepare-timeout-notfit-sold-as-bundled.md`](prepare-timeout-notfit-sold-as-bundled.md) — 填了 TimeoutPropose 被写成已经装得下 / 钟已经不会响 / 已经交差（不变量 900）
+- [`prepare-timeout-notpath-sold-as-bundled.md`](prepare-timeout-notpath-sold-as-bundled.md) — 立刻整块执行 被写成已经离开关键路径 / 已经不挡提议钟 / 已经交差（不变量 899）
 - [`prepare-nondet-notext-sold-as-bundled.md`](prepare-nondet-notext-sold-as-bundled.md) — ExtendVote 无确定性 被写成已经同一份扩展 / 已经和 Verify 同一把尺 / 已经交差（不变量 898）
 - [`prepare-nondet-notraw-sold-as-bundled.md`](prepare-nondet-notraw-sold-as-bundled.md) — raw 一样 被写成已经同一份提案 / 已经必须同一份 / 已经交差（不变量 897）
 - [`prepare-nondet-notmust-sold-as-bundled.md`](prepare-nondet-notmust-sold-as-bundled.md) — Prepare 无确定性 被写成已经必须确定 / 已经和 Process 同一把尺 / 已经交差（不变量 896）

@@ -1,3 +1,15 @@
+## 2026-09-17（续 1018）
+
+- 不变量 901；语料 C879；模式 name-the-prepare-timeout-notlost-bar；反模式 prepare-timeout-notlost-sold-as-bundled；L10.3 第 870 条。填 L4.4 / CometBFT 档案 又开一轮 not already lost liveness / not already timeout frozen / not already settled 正式三事（327 余量）。327 prepare-timeout vs liveness bundled unbundling 完成（901 item 3）。
+
+## 2026-09-17（续 1017）
+
+- 不变量 900；语料 C878；模式 name-the-prepare-timeout-notfit-bar；反模式 prepare-timeout-notfit-sold-as-bundled；L10.3 第 869 条。填 L4.4 / CometBFT 档案 填了 TimeoutPropose not already fits / not already clock silent / not already settled 正式三事（327 余量）。327 prepare-timeout vs liveness bundled unbundling 续（900 item 2）。
+
+## 2026-09-17（续 1016）
+
+- 不变量 899；语料 C877；模式 name-the-prepare-timeout-notpath-bar；反模式 prepare-timeout-notpath-sold-as-bundled；L10.3 第 868 条。填 L4.4 / CometBFT 档案 立刻整块执行 not already left critical path / not already not blocking clock / not already settled 正式三事（327 余量）。327 prepare-timeout vs liveness bundled unbundling 启动（899 item 1）。
+
 ## 2026-09-17（续 1015）
 
 - 不变量 898；语料 C876；模式 name-the-prepare-nondet-notext-bar；反模式 prepare-nondet-notext-sold-as-bundled；L10.3 第 867 条。填 L4.4 / CometBFT 档案 ExtendVote 没有确定性要求 not already same extension / not already same ruler as Verify / not already settled 正式三事（338 余量）。338 prepare-nondet vs process bundled unbundling 完成（898 item 3）。

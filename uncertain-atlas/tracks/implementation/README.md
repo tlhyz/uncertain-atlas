@@ -137,6 +137,9 @@
 - [`worked-example-snapshot-take-vs-commit.md`](worked-example-snapshot-take-vs-commit.md) — 拍了这个高度 ≠ 已经交差之后拍的；没停链 ≠ 已经一致；只留最近两份 ≠ 已经有了全部历史快照（不变量 324）
 - [`worked-example-query-proof-vs-apphash.md`](worked-example-query-proof-vs-apphash.md) — 头上有 AppHash ≠ 已经是交易默克尔；Query 回了 Proof ≠ 已经对上 AppHash；一层 ProofOp 的根 ≠ 已经对上最终 AppHash（不变量 325）
 - [`worked-example-peerfilter-vs-query.md`](worked-example-peerfilter-vs-query.md) — 发了 addr 过滤查询 ≠ 已经收下这个人；id 过滤查询绿了 ≠ 已经过了 addr；有 /store 路径 ≠ 已经是引擎在用（不变量 326）
+- [`worked-example-prepare-timeout-notlost-vs-bundled.md`](worked-example-prepare-timeout-notlost-vs-bundled.md) — 又开一轮≠already lost liveness/timeout frozen/settled；≠327 bundled（不变量 901）
+- [`worked-example-prepare-timeout-notfit-vs-bundled.md`](worked-example-prepare-timeout-notfit-vs-bundled.md) — 填了TimeoutPropose≠already fits/clock silent/settled；≠327 bundled（不变量 900）
+- [`worked-example-prepare-timeout-notpath-vs-bundled.md`](worked-example-prepare-timeout-notpath-vs-bundled.md) — 立刻整块执行≠already left path/not blocking clock/settled；≠327 bundled（不变量 899）
 - [`worked-example-prepare-timeout-vs-liveness.md`](worked-example-prepare-timeout-vs-liveness.md) — 立刻整块执行 ≠ 已经离开提议超时的关键路径；填了 TimeoutPropose ≠ 已经装得下；又开一轮 ≠ 已经丢了活性（不变量 327）
 - [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
 - [`worked-example-query-vs-replicated.md`](worked-example-query-vs-replicated.md) — Query 回了 ≠ 已经复制到各节点；查到了 ≠ 已经新鲜；实现了 Query ≠ 已经是正常运转必须有（不变量 329）
