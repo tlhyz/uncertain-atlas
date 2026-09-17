@@ -1,3 +1,6 @@
+- [`voteinfo-notinblock-sold-as-bundled.md`](voteinfo-notinblock-sold-as-bundled.md) — 降序排 被写成已经进了块 / 已经交差 / 已经罚没（不变量 832）
+- [`voteinfo-notpubkey-sold-as-bundled.md`](voteinfo-notpubkey-sold-as-bundled.md) — 从块抽出 被写成已经带了公钥 / 已经是 ValidatorUpdate / 已经改了集合（不变量 831）
+- [`voteinfo-notslashed-sold-as-bundled.md`](voteinfo-notslashed-sold-as-bundled.md) — 定奖惩 被写成已经罚没 / 已经交差 / 已经用 decided_last_commit 算完（不变量 830）
 - [`retain-notgenesis-sold-as-bundled.md`](retain-notgenesis-sold-as-bundled.md) — 全网都删 被写成已经能从创世再装 / 已经能给轻客户端验 / 已经交差（不变量 829）
 - [`retain-nothistory-sold-as-bundled.md`](retain-nothistory-sold-as-bundled.md) — 可删 被写成已经没有历史 / 已经是快照截断 / 已经删完（不变量 828）
 - [`retain-notpruning-sold-as-bundled.md`](retain-notpruning-sold-as-bundled.md) — 默认 0 被写成已经在剪 / 已经交差 / 已经没有历史（不变量 827）

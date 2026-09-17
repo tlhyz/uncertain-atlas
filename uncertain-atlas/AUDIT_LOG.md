@@ -1,3 +1,18 @@
+| A3920 | 记录 | 会与 365 / 300 / 363 / 21 / 830 / 831 糊成「看见顺序在就已经进了块 interchangeable、就已经交差 interchangeable、就已经罚没 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 按投票权降序排 not already in-block / not already settled / not already slashed 正式三事（365 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。365 voteinfo vs reward bundled unbundling 完成（832 item 3） |
+| A3921 | 高 | 看见按投票权降序排 会被写成已经进了块 interchangeable / 300 interchangeable | 官方 VoteInfo item 3：not already in-block / not 300 |
+| A3922 | 高 | 看见从 store 再装 会被写成已经交差 interchangeable | 官方 VoteInfo item 3：not already settled |
+| A3923 | 高 | 看见排好了 会被写成已经罚没 interchangeable | 官方 VoteInfo item 3：not already slashed |
+| A3924 | 中 | 怎样写 VoteInfo 会被抄进不确定 | 不抄。不写怎样写 VoteInfo。不另写 19 节 |
+| A3915 | 记录 | 会与 365 / 364 / 369 / 818 / 363 / 830 / 832 糊成「看见块里有票就已经带了公钥 interchangeable、就已经是 ValidatorUpdate interchangeable、就已经改了集合 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 从块抽出 not already has pubkey / not already ValidatorUpdate / not already changed set 正式三事（365 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。365 voteinfo vs reward bundled unbundling 续（831 item 2） |
+| A3916 | 高 | 看见从块抽出 会被写成已经带了公钥 interchangeable / 364 interchangeable | 官方 VoteInfo item 2：not already has pubkey / not 364 |
+| A3917 | 高 | 看见有 validator 会被写成已经是 ValidatorUpdate interchangeable | 官方 VoteInfo item 2：not already ValidatorUpdate |
+| A3918 | 高 | 看见从块里抽出 会被写成已经改了集合 interchangeable | 官方 VoteInfo item 2：not already changed set |
+| A3919 | 中 | 怎样写 VoteInfo 会被抄进不确定 | 不抄。不写怎样写 VoteInfo。不另写 19 节 |
+| A3910 | 记录 | 会与 365 / 21 / 372 / 809 / 811 / 363 / 831 / 832 糊成「看见有 block_id_flag 就已经罚没 interchangeable、就已经交差 interchangeable、就已经用 decided_last_commit 算完 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VoteInfo 定奖惩 not already slashed / not already settled / not already decided_last_commit computed 正式三事（365 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。365 voteinfo vs reward bundled unbundling 启动（830 item 1） |
+| A3911 | 高 | 看见 VoteInfo 定奖惩 会被写成已经罚没 interchangeable / 21 interchangeable | 官方 VoteInfo item 1：not already slashed / not 21 |
+| A3912 | 高 | 看见能定奖惩 会被写成已经交差 interchangeable | 官方 VoteInfo item 1：not already settled |
+| A3913 | 高 | 看见能定奖惩 会被写成已经用 decided_last_commit 算完 interchangeable | 官方 VoteInfo item 1：not already decided_last_commit computed |
+| A3914 | 中 | 怎样写 VoteInfo 会被抄进不确定 | 不抄。不写怎样写 VoteInfo。不另写 19 节 |
 | A3905 | 记录 | 会与 366 / 38 / 491 / 693 / 323 / 827 / 828 糊成「看见能剪就已经能从创世再装 interchangeable、就已经能给轻客户端验 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 全网都删会永久丢 not already genesis reload / not already light-client verify / not already settled 正式三事（366 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。366 retain vs kept bundled unbundling 完成（829 item 3） |
 | A3906 | 高 | 看见全网都删会永久丢 会被写成已经能从创世再装 interchangeable / 38 interchangeable | 官方 Commit 保留高度 item 3：not already genesis reload / not 38 |
 | A3907 | 高 | 看见开了 state sync 会被写成已经能给轻客户端验 interchangeable | 官方 Commit 保留高度 item 3：not already light-client verify |

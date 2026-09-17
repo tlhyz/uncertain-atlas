@@ -315,6 +315,9 @@
 - [`worked-example-finalize-when-vs-decided.md`](worked-example-finalize-when-vs-decided.md) — +2/3 precommit 同一 id(v) 才决定再调 Finalize ≠ 已经会调 Finalize；先把 v 落成这一高的决定再调 Finalize ≠ 已经交差；应用回了 AppHash 和各笔输出 ≠ 已经印进本头（不变量 362）
 - [`worked-example-finalize-equiv-vs-gates.md`](worked-example-finalize-equiv-vs-gates.md) — Finalize 等价于 ABCI 1.0 那三步 ≠ 已经是四门已经结算；可以用 decided_last_commit 定奖惩 ≠ 已经罚没；必须回四列 ≠ 已经改了集合（不变量 363）
 - [`worked-example-validator-vs-update.md`](worked-example-validator-vs-update.md) — Validator 用 address 认人 ≠ 已经带了公钥；不带 PubKey ≠ 已经选型；ValidatorUpdate 用公钥认人 ≠ 已经改了集合（不变量 364）
+- [`worked-example-voteinfo-notinblock-vs-bundled.md`](worked-example-voteinfo-notinblock-vs-bundled.md) — 降序排≠300 in-block/settled/slashed；≠365 bundled（不变量 832）
+- [`worked-example-voteinfo-notpubkey-vs-bundled.md`](worked-example-voteinfo-notpubkey-vs-bundled.md) — 从块抽出≠364 pubkey/ValidatorUpdate/changed set；≠365 bundled（不变量 831）
+- [`worked-example-voteinfo-notslashed-vs-bundled.md`](worked-example-voteinfo-notslashed-vs-bundled.md) — 定奖惩≠21 slashed/settled/computed；≠365 bundled（不变量 830）
 - [`worked-example-voteinfo-vs-reward.md`](worked-example-voteinfo-vs-reward.md) — VoteInfo 能按到场定奖惩 ≠ 已经罚没；从拟议块或已决块抽出 ≠ 已经带了公钥；按投票权降序排 ≠ 已经进了块（不变量 365）
 - [`worked-example-retain-notgenesis-vs-bundled.md`](worked-example-retain-notgenesis-vs-bundled.md) — 永久丢≠38 genesis/light-client/settled；≠366 bundled（不变量 829）
 - [`worked-example-retain-nothistory-vs-bundled.md`](worked-example-retain-nothistory-vs-bundled.md) — 可删≠323 history/truncated/deleted；≠366 bundled（不变量 828）

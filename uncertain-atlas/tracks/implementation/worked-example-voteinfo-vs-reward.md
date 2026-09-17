@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CommitInfo 里有票就已经罚没、已经带了公钥、已经进了块」，必须分开 VoteInfo 能按到场定奖惩是不是已经罚没、从拟议块或已决块抽出是不是已经带了公钥、按投票权降序排是不是已经进了块。可以跳过「看见 CommitInfo 里有票就已经罚没」。不要另写怎样写 VoteInfo。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CommitInfo 里有票就已经罚没、已经带了公钥、已经进了块」，必须分开 VoteInfo 能按到场定奖惩是不是已经罚没、从拟议块或已决块抽出是不是已经带了公钥、按投票权降序排是不是已经进了块。可以跳过「看见 CommitInfo 里有票就已经罚没」。不要另写怎样写 VoteInfo。365 voteinfo vs reward bundled unbundling 完成（830 item 1 / 831 item 2 / 832 item 3）；精读 [`worked-example-voteinfo-notslashed-vs-bundled.md`](worked-example-voteinfo-notslashed-vs-bundled.md)（不变量 830 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,15 @@
+## 2026-09-17（续 949）
+
+- 不变量 832；语料 C810；模式 name-the-voteinfo-notinblock-bar；反模式 voteinfo-notinblock-sold-as-bundled；L10.3 第 801 条。填 L4.4 / CometBFT 档案 按投票权降序排 not already in-block / not already settled / not already slashed 正式三事（365 余量）。365 voteinfo vs reward bundled unbundling 完成（832 item 3）。
+
+## 2026-09-17（续 948）
+
+- 不变量 831；语料 C809；模式 name-the-voteinfo-notpubkey-bar；反模式 voteinfo-notpubkey-sold-as-bundled；L10.3 第 800 条。填 L4.4 / CometBFT 档案 从块抽出 not already has pubkey / not already ValidatorUpdate / not already changed set 正式三事（365 余量）。365 voteinfo vs reward bundled unbundling 续（831 item 2）。
+
+## 2026-09-17（续 947）
+
+- 不变量 830；语料 C808；模式 name-the-voteinfo-notslashed-bar；反模式 voteinfo-notslashed-sold-as-bundled；L10.3 第 799 条。填 L4.4 / CometBFT 档案 VoteInfo 定奖惩 not already slashed / not already settled / not already decided_last_commit computed 正式三事（365 余量）。365 voteinfo vs reward bundled unbundling 启动（830 item 1）。
+
 ## 2026-09-17（续 946）
 
 - 不变量 829；语料 C807；模式 name-the-retain-notgenesis-bar；反模式 retain-notgenesis-sold-as-bundled；L10.3 第 798 条。填 L4.4 / CometBFT 档案 全网都删会永久丢 not already genesis reload / not already light-client verify / not already settled 正式三事（366 余量）。366 retain vs kept bundled unbundling 完成（829 item 3）。

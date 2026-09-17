@@ -1,3 +1,6 @@
+- [`name-the-voteinfo-notinblock-bar.md`](name-the-voteinfo-notinblock-bar.md) — 按投票权降序排 not already in-block / not already settled / not already slashed 正式三事（365 余量）（不变量 832）
+- [`name-the-voteinfo-notpubkey-bar.md`](name-the-voteinfo-notpubkey-bar.md) — 从块抽出 not already has pubkey / not already ValidatorUpdate / not already changed set 正式三事（365 余量）（不变量 831）
+- [`name-the-voteinfo-notslashed-bar.md`](name-the-voteinfo-notslashed-bar.md) — VoteInfo 定奖惩 not already slashed / not already settled / not already decided_last_commit computed 正式三事（365 余量）（不变量 830）
 - [`name-the-retain-notgenesis-bar.md`](name-the-retain-notgenesis-bar.md) — 全网都删会永久丢 not already genesis reload / not already light-client verify / not already settled 正式三事（366 余量）（不变量 829）
 - [`name-the-retain-nothistory-bar.md`](name-the-retain-nothistory-bar.md) — 低于这个高度可删 not already no history / not already snapshot truncated / not already deleted 正式三事（366 余量）（不变量 828）
 - [`name-the-retain-notpruning-bar.md`](name-the-retain-notpruning-bar.md) — retain_height 默认 0 not already pruning / not already settled / not already no history 正式三事（366 余量）（不变量 827）
