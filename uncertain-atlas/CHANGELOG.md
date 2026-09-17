@@ -2,6 +2,10 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-15（续 605）
+
+- 不变量 471；语料 C465；模式 name-the-fincparam-bar；反模式 fincparam-sold-as-heffective；L10.3 第 457 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse consensus_param_updates H→H+1 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 604）
 
 - 不变量 470；语料 C464；模式 name-the-findet-bar；反模式 findet-sold-as-prepare；L10.3 第 456 条。填 L4.4 / CometBFT 档案 FinalizeBlock Usage determinism 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。470 FinalizeBlock Usage determinism unbundling 完成（470 parent bundled）。
