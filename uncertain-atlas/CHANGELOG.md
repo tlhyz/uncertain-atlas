@@ -1,3 +1,7 @@
+## 2026-09-17（续 776）
+
+- 不变量 659；语料 C636；模式 name-the-loadsnapusage-notdiscover-bar；反模式 loadsnapusage-notdiscover-sold-as-bundled；L10.3 第 628 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk Usage retrieve from peers not ListSnapshots discover / not ListSnapshots 空请求 bundled / not Snapshot Discovery 正式三事（501 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。501 loadsnapusage retrieve unbundling 续（659 item 2）。
+
 ## 2026-09-17（续 775）
 
 - 不变量 658；语料 C635；模式 name-the-loadsnapusage-notretrieve-bar；反模式 loadsnapusage-notretrieve-sold-as-bundled；L10.3 第 627 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk Usage Used during state sync to retrieve not LoadSnapshotChunk bundled / not Offer 装完 / not Transition to Consensus 正式三事（501 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。501 loadsnapusage retrieve unbundling 启动（658 item 1）。
