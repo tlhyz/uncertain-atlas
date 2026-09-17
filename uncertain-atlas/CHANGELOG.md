@@ -1,3 +1,15 @@
+## 2026-09-17（续 817）
+
+- 不变量 700；语料 C678；模式 name-the-initchaindecide-notfromempty-bar；反模式 initchaindecide-notfromempty-sold-as-bundled；L10.3 第 669 条。填 L4.4 / CometBFT 档案 InitChain Usage updating from empty set not empty list means no set / not Response empty/not empty rule / not app decide already used genesis validators 正式三事（496 余量）。496 initchaindecide vs emptyset bundled unbundling 完成（700 item 3）。
+
+## 2026-09-17（续 816）
+
+- 不变量 699；语料 C677；模式 name-the-initchaindecide-notchanged-bar；反模式 initchaindecide-notchanged-sold-as-bundled；L10.3 第 668 条。填 L4.4 / CometBFT 档案 InitChain Usage Both Validators are ValidatorUpdate not already changed set / not empty list means no set / not Validator without PubKey already has PubKey 正式三事（496 余量）。496 initchaindecide vs emptyset bundled unbundling 续（699 item 2）。
+
+## 2026-09-17（续 815）
+
+- 不变量 698；语料 C676；模式 name-the-initchaindecide-notrule-bar；反模式 initchaindecide-notrule-sold-as-bundled；L10.3 第 667 条。填 L4.4 / CometBFT 档案 InitChain Usage app decide accept or different one not Response empty/not empty rule / not InitChain Usage remainder bundled / not genesis app_state already verified 正式三事（496 余量）。496 initchaindecide vs emptyset bundled unbundling 启动（698 item 1）。
+
 ## 2026-09-17（续 814）
 
 - 不变量 697；语料 C675；模式 name-the-initchainusage-notnonempty-bar；反模式 initchainusage-notnonempty-sold-as-bundled；L10.3 第 666 条。填 L4.4 / CometBFT 档案 InitChain Usage Response Validators not empty regardless of Request not app can decide bundled / not empty list means no set / not duplicate pubkeys already recoverable 正式三事（495 余量）。495 initchainusage vs bundled unbundling 完成（697 item 3）。

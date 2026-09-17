@@ -1,3 +1,6 @@
+- [`initchaindecide-notfromempty-sold-as-bundled.md`](initchaindecide-notfromempty-sold-as-bundled.md) — from empty set 被写成已经空名单就没有集合 / 已经 Response 规则 / 已经用了创世验证者（不变量 700）
+- [`initchaindecide-notchanged-sold-as-bundled.md`](initchaindecide-notchanged-sold-as-bundled.md) — both ValidatorUpdate 被写成已经改了集合 / 已经空名单就没有集合 / 已经带了公钥（不变量 699）
+- [`initchaindecide-notrule-sold-as-bundled.md`](initchaindecide-notrule-sold-as-bundled.md) — app decide 被写成已经 Response 规则 / 已经 412 bundled / 已经验过应用状态（不变量 698）
 - [`initchainusage-notnonempty-sold-as-bundled.md`](initchainusage-notnonempty-sold-as-bundled.md) — not empty 被写成已经 can decide bundled / 已经空名单就没有集合 / 已经重复公钥就能恢复（不变量 697）
 - [`initchainusage-notempty-sold-as-bundled.md`](initchainusage-notempty-sold-as-bundled.md) — empty → Request 被写成已经空名单就没有集合 / 已经 not empty 规则 / 已经改了集合（不变量 696）
 - [`initchainusage-notcrash-sold-as-bundled.md`](initchainusage-notcrash-sold-as-bundled.md) — once upon genesis 被写成已经崩溃后再调 / 已经 412 bundled / 已经过了 genesis_time（不变量 695）

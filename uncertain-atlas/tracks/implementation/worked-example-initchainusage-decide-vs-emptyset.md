@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 InitChain Usage app decide / ValidatorUpdate from empty set 正式三事，必须分开 app decide accept or different one 是不是 Response 规则 interchangeable / 已经用了创世文件里的验证者、Both Validators are ValidatorUpdate 是不是已经改了集合 interchangeable、updating from empty set 是不是空名单就没有集合 interchangeable。可以跳过「看见 InitChain 了就已经 Response 规则 interchangeable、已经改了集合」。不要另写怎样写 InitChain。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 InitChain Usage app decide / ValidatorUpdate from empty set 正式三事，必须分开 app decide accept or different one 是不是 Response 规则 interchangeable / 已经用了创世文件里的验证者、Both Validators are ValidatorUpdate 是不是已经改了集合 interchangeable、updating from empty set 是不是空名单就没有集合 interchangeable。可以跳过「看见 InitChain 了就已经 Response 规则 interchangeable、已经改了集合」。不要另写怎样写 InitChain。496 initchaindecide vs emptyset bundled unbundling 完成（698 item 1 / 699 item 2 / 700 item 3）；精读 [`worked-example-initchaindecide-notrule-vs-bundled.md`](worked-example-initchaindecide-notrule-vs-bundled.md)（不变量 698 item 1）。
 
 ## 本页不抄
 
