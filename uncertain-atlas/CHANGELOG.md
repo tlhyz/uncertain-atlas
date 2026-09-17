@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 621）
+
+- 不变量 489；语料 C481；模式 name-the-chktxcodereject-bar；反模式 chktxcodereject-sold-as-proposal；L10.3 第 473 条。填 L4.4 / CometBFT 档案 CheckTx Usage Code≠0 rejected 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 620）
 
 - 不变量 488；语料 C480；模式 name-the-chktxsource-bar；反模式 chktxsource-sold-as-replay；L10.3 第 472 条。填 L4.4 / CometBFT 档案 CheckTx Usage tx source 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。

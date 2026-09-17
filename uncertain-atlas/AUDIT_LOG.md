@@ -4507,6 +4507,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2298 | 中 | 怎样做内存池去重 / 怎样区分来源 / 怎样实现 P2P 收 tx 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2297 | 高 | 看见 The transaction may come from an external user or another node / 送来了 会被写成已经内存池去重保证不重放（313），或当成已经 CheckTx 过了就有应用级重放保护 | 官方 CheckTx Usage：The transaction may come from an external user or another node |
 | A2296 | 高 | 看见 The transaction may come from another node 会被写成已经流言广播就代表来源已经验过，或当成已经从池里删掉 / 提案收了（301） | 官方 CheckTx Usage：The transaction may come from another node |
+| A2304 | 记录 | 会与 405 / 486 / 33 / 301 / 316 / 317 / 373 糊成「看见 CheckTx 过了 Code≠0 就已经进池 / 已经进提案 / 已经 forever valid」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx Usage Code≠0 rejected 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。进池流言 / 进提案 / forever valid 标成另一对象 |
+| A2303 | 中 | 怎样实现 CheckTx 回包码 / 怎样配 mempool 拒绝路径会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2302 | 高 | 看见 CometBFT attributes no other value to the response code 会被写成已经 CheckTx 回包 Data 就被引擎用了（317），或当成已经 CheckTx 技术上可选（373） bundled interchangeable | 官方 CheckTx Usage：CometBFT attributes no other value to the response code |
+| A2301 | 高 | 看见 will not be broadcast / or included in a proposal block 会被写成已经 Check 通过就是已进提案（33），或当成已经 CheckTx 过了就永远有效（301） | 官方 CheckTx Usage：they will not be broadcast to other nodes or included in a proposal block |
+| A2300 | 高 | 看见 CheckTxResponse.Code != 0 will be rejected 会被写成已经进了本地池就开始 P2P 流言，或当成已经 CheckTx 是内存池守卫（405） bundled 就代表 Code 语义已经验完 | 官方 CheckTx Usage：Transactions where CheckTxResponse.Code != 0 will be rejected |
+
 | A2295 | 高 | 看见 The transaction may come from an external user 会被写成已经 CheckTx_Recheck 那种内存池再验（484），或当成已经 CheckTx_New default full check 就代表来源已经验完 | 官方 CheckTx Usage：The transaction may come from an external user |
 
 | A2290 | 高 | 看见 Query for data from the application at current or past height 会被写成已经是 QueryState（371），或当成已经复制到各节点（329）/ QueryState 就是 ExecuteTxState（314） | 官方 Query Usage：Query for data from the application at current or past height |
