@@ -1,5 +1,9 @@
 # 知识库修改日志
 
+## 2026-09-15（续 617）
+
+- 不变量 485；语料 C477；模式 name-the-applysnapusage-bar；反模式 applysnapusage-sold-as-restored；L10.3 第 469 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Usage verify/Info/unable 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
+
 ## 2026-09-15（续 616）
 
 - 不变量 484；语料 C476；模式 name-the-chktxtype-bar；反模式 chktxtype-sold-as-recheck；L10.3 第 468 条。填 L4.4 / CometBFT 档案 CheckTx Request type 正式三事 / 实现表 / 05b / 共识专题 / 停链面地图。
