@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「快照已经收下」，必须分开 Offer 收下是不是已经装完、一块 chunk 收下是不是已经齐、拉失败换一份是不是已经能接着装。可以跳过「看见 Offer 收下就已经装完」。不要另写怎样切块或怎样装。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「快照已经收下」，必须分开 Offer 收下是不是已经装完、一块 chunk 收下是不是已经齐、拉失败换一份是不是已经能接着装。可以跳过「看见 Offer 收下就已经装完」。不要另写怎样切块或怎样装。321 snapshot-restore vs offer bundled unbundling 完成（959 item 1 / 960 item 2 / 961 item 3）；精读 [`worked-example-snapshot-restore-notdone-vs-bundled.md`](worked-example-snapshot-restore-notdone-vs-bundled.md)（不变量 959 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,6 @@
+- [`snapshot-restore-notresume-sold-as-bundled.md`](snapshot-restore-notresume-sold-as-bundled.md) — 拉失败换一份 被写成已经能接着装 / 已经同一份 / 已经交差（不变量 961）
+- [`snapshot-restore-notchunk-sold-as-bundled.md`](snapshot-restore-notchunk-sold-as-bundled.md) — 一块 chunk 收下 被写成已经齐 / 已经封禁 / 已经交差（不变量 960）
+- [`snapshot-restore-notdone-sold-as-bundled.md`](snapshot-restore-notdone-sold-as-bundled.md) — Offer 收下 被写成已经装完 / 已经有了全部块 / 已经交差（不变量 959）
 - [`snapshot-discover-nothalt-sold-as-bundled.md`](snapshot-discover-nothalt-sold-as-bundled.md) — Offer 被拒 被写成已经没有快照 / 已经停 / 已经交差（不变量 958）
 - [`snapshot-discover-nottake-sold-as-bundled.md`](snapshot-discover-nottake-sold-as-bundled.md) — 挑了最高 被写成已经收下 / 已经装完 / 已经交差（不变量 957）
 - [`snapshot-discover-notfull-sold-as-bundled.md`](snapshot-discover-notfull-sold-as-bundled.md) — ListSnapshots 回了 被写成已经齐 / 已经没有上限 / 已经交差（不变量 956）

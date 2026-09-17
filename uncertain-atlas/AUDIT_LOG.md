@@ -1,3 +1,18 @@
+| A4565 | 记录 | 会与 321 / 320 / 322 / 959 / 960 糊成「看见换一份就已经能接着装 interchangeable、就已经同一份 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 拉失败换一份 not already resumable / not already same-snapshot / not already settled 正式三事（321 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。321 snapshot-restore vs offer bundled unbundling 完成（961 item 3） |
+| A4566 | 高 | 看见拉失败换一份 会被写成已经能接着装 interchangeable | 官方 Snapshot Restoration item 3：not already resumable |
+| A4567 | 高 | 看见能重试 会被写成已经同一份 interchangeable | 官方 Snapshot Restoration item 3：not already same-snapshot |
+| A4568 | 高 | 看见失败了 会被写成已经交差 interchangeable | 官方 Snapshot Restoration item 3：not already settled |
+| A4569 | 中 | 怎样装快照会被抄进不确定 | 不抄。不写怎样切块或怎样装。不另写 19 节 |
+| A4560 | 记录 | 会与 321 / 314 / 323 / 959 / 961 糊成「看见一块 chunk 收下就已经齐 interchangeable、就已经封禁 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 一块 chunk 收下 not already complete / not already banned / not already settled 正式三事（321 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。321 snapshot-restore vs offer bundled unbundling 续（960 item 2） |
+| A4561 | 高 | 看见一块 chunk 收下 会被写成已经齐 interchangeable | 官方 Snapshot Restoration item 2：not already complete |
+| A4562 | 高 | 看见回了再拉 会被写成已经封禁 interchangeable | 官方 Snapshot Restoration item 2：not already banned |
+| A4563 | 高 | 看见能回指令 会被写成已经交差 interchangeable | 官方 Snapshot Restoration item 2：not already settled |
+| A4564 | 中 | 怎样装快照会被抄进不确定 | 不抄。不写怎样切块或怎样装。不另写 19 节 |
+| A4555 | 记录 | 会与 321 / 38 / 322 / 960 / 961 糊成「看见 Offer 收下就已经装完 interchangeable、就已经有了全部块 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Offer 收下 not already restored / not already has-chunks / not already settled 正式三事（321 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。321 snapshot-restore vs offer bundled unbundling 启动（959 item 1） |
+| A4556 | 高 | 看见 OfferSnapshot 收下 会被写成已经装完 interchangeable / 38 interchangeable | 官方 Snapshot Restoration item 1：not already restored / not 38 |
+| A4557 | 高 | 看见选了这份 会被写成已经有了全部块 interchangeable | 官方 Snapshot Restoration item 1：not already has-chunks |
+| A4558 | 高 | 看见元数据对上 会被写成已经交差 interchangeable | 官方 Snapshot Restoration item 1：not already settled |
+| A4559 | 中 | 怎样装快照会被抄进不确定 | 不抄。不写怎样切块或怎样装。不另写 19 节 |
 | A4550 | 记录 | 会与 322 / 314 / 321 / 956 / 957 糊成「看见 Offer 被拒就已经没有快照 interchangeable、就已经停 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Offer 被拒 not already empty / not already halted / not already settled 正式三事（322 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。322 snapshot-discover vs offer bundled unbundling 完成（958 item 3） |
 | A4551 | 高 | 看见 Offer 被拒 会被写成已经没有快照 interchangeable | 官方 Snapshot Discovery item 3：not already empty |
 | A4552 | 高 | 看见拒了邻居 会被写成已经停 interchangeable | 官方 Snapshot Discovery item 3：not already halted |

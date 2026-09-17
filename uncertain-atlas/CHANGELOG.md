@@ -1,3 +1,15 @@
+## 2026-09-17（续 1078）
+
+- 不变量 961；语料 C939；模式 name-the-snapshot-restore-notresume-bar；反模式 snapshot-restore-notresume-sold-as-bundled；L10.3 第 930 条。填 L4.4 / CometBFT 档案 拉失败换一份 not already resumable / not already same-snapshot / not already settled 正式三事（321 余量）。321 snapshot-restore vs offer bundled unbundling 完成（961 item 3）。
+
+## 2026-09-17（续 1077）
+
+- 不变量 960；语料 C938；模式 name-the-snapshot-restore-notchunk-bar；反模式 snapshot-restore-notchunk-sold-as-bundled；L10.3 第 929 条。填 L4.4 / CometBFT 档案 一块 chunk 收下 not already complete / not already banned / not already settled 正式三事（321 余量）。321 snapshot-restore vs offer bundled unbundling 续（960 item 2）。
+
+## 2026-09-17（续 1076）
+
+- 不变量 959；语料 C937；模式 name-the-snapshot-restore-notdone-bar；反模式 snapshot-restore-notdone-sold-as-bundled；L10.3 第 928 条。填 L4.4 / CometBFT 档案 Offer 收下 not already restored / not already has-chunks / not already settled 正式三事（321 余量）。321 snapshot-restore vs offer bundled unbundling 启动（959 item 1）。
+
 ## 2026-09-17（续 1075）
 
 - 不变量 958；语料 C936；模式 name-the-snapshot-discover-nothalt-bar；反模式 snapshot-discover-nothalt-sold-as-bundled；L10.3 第 927 条。填 L4.4 / CometBFT 档案 Offer 被拒 not already empty / not already halted / not already settled 正式三事（322 余量）。322 snapshot-discover vs offer bundled unbundling 完成（958 item 3）。

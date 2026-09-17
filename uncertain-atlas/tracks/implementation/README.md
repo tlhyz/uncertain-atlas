@@ -140,6 +140,9 @@
 - [`worked-example-consensusparams-notnoparams-vs-bundled.md`](worked-example-consensusparams-notnoparams-vs-bundled.md) — InitChain空参数≠already no params/app empty/settled；≠319 bundled（不变量 908）
 - [`worked-example-consensusparams-vs-update.md`](worked-example-consensusparams-vs-update.md) — InitChain 空参数 ≠ 已经没有参数；Finalize 没回 ≠ 已经清掉；只改一个字段 ≠ 已经只改这一项（不变量 319）
 - [`worked-example-crash-steps-vs-commit.md`](worked-example-crash-steps-vs-commit.md) — 应用高度比引擎高 ≠ 已经允许；块进 store ≠ 已经 Commit；启动 Info 对上 ≠ 已经能跳步（不变量 320）
+- [`worked-example-snapshot-restore-notresume-vs-bundled.md`](worked-example-snapshot-restore-notresume-vs-bundled.md) — 换一份≠already resumable/same-snapshot/settled；≠321 bundled（不变量 961）
+- [`worked-example-snapshot-restore-notchunk-vs-bundled.md`](worked-example-snapshot-restore-notchunk-vs-bundled.md) — 一块chunk≠already complete/banned/settled；≠321 bundled（不变量 960）
+- [`worked-example-snapshot-restore-notdone-vs-bundled.md`](worked-example-snapshot-restore-notdone-vs-bundled.md) — Offer收下≠already restored/has-chunks/settled；≠321 bundled（不变量 959）
 - [`worked-example-snapshot-restore-vs-offer.md`](worked-example-snapshot-restore-vs-offer.md) — Offer 收下 ≠ 已经装完；一块 chunk 收下 ≠ 已经齐；拉失败换一份 ≠ 已经能接着装（不变量 321）
 - [`worked-example-snapshot-discover-nothalt-vs-bundled.md`](worked-example-snapshot-discover-nothalt-vs-bundled.md) — Offer被拒≠already empty/halted/settled；≠322 bundled（不变量 958）
 - [`worked-example-snapshot-discover-nottake-vs-bundled.md`](worked-example-snapshot-discover-nottake-vs-bundled.md) — 挑了最高≠already offered/restored/settled；≠322 bundled（不变量 957）

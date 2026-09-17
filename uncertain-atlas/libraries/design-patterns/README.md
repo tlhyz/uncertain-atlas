@@ -1,3 +1,6 @@
+- [`name-the-snapshot-restore-notresume-bar.md`](name-the-snapshot-restore-notresume-bar.md) — 拉失败换一份 not already resumable / not already same-snapshot / not already settled 正式三事（321 余量）（不变量 961）
+- [`name-the-snapshot-restore-notchunk-bar.md`](name-the-snapshot-restore-notchunk-bar.md) — 一块 chunk 收下 not already complete / not already banned / not already settled 正式三事（321 余量）（不变量 960）
+- [`name-the-snapshot-restore-notdone-bar.md`](name-the-snapshot-restore-notdone-bar.md) — Offer 收下 not already restored / not already has-chunks / not already settled 正式三事（321 余量）（不变量 959）
 - [`name-the-snapshot-discover-nothalt-bar.md`](name-the-snapshot-discover-nothalt-bar.md) — Offer 被拒 not already empty / not already halted / not already settled 正式三事（322 余量）（不变量 958）
 - [`name-the-snapshot-discover-nottake-bar.md`](name-the-snapshot-discover-nottake-bar.md) — 挑了最高 not already offered / not already restored / not already settled 正式三事（322 余量）（不变量 957）
 - [`name-the-snapshot-discover-notfull-bar.md`](name-the-snapshot-discover-notfull-bar.md) — ListSnapshots 回了 not already all-snapshots / not already unbounded / not already settled 正式三事（322 余量）（不变量 956）
