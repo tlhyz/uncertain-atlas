@@ -1,3 +1,18 @@
+| A3605 | 记录 | 会与 387 / 320 / 767 / 768 糊成「看见填了起步高就已经能跳步 interchangeable、就已经过了崩溃三步 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 initial_height not already can skip / not already past crash steps / not already settled 正式三事（387 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。387 inittime vs genesis bundled unbundling 完成（769 item 3） |
+| A3606 | 高 | 看见 InitChain 请求 initial_height 会被写成已经能跳步 interchangeable / 320 interchangeable | 官方 InitChain 请求 item 3：not already can skip / not 320 |
+| A3607 | 高 | 看见填了起步高 会被写成已经过了崩溃三步 interchangeable / 320 interchangeable | 官方 InitChain 请求 item 3：not already past crash steps / not 320 |
+| A3608 | 高 | 看见有高度 会被写成已经交差 interchangeable | 官方 InitChain 请求 item 3：not already settled |
+| A3609 | 中 | 怎样写 InitChain 请求 会被抄进不确定 | 不抄。不写怎样写 InitChain 请求。不另写 19 节 |
+| A3600 | 记录 | 会与 387 / 323 / 767 / 769 糊成「看见填了 chain_id 就已经有了 ChainID interchangeable、就已经有完整历史 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 chain_id not already have ChainID / not already full history / not already settled 正式三事（387 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。387 inittime vs genesis bundled unbundling 续（768 item 2） |
+| A3601 | 高 | 看见 InitChain 请求 chain_id 会被写成已经有了 ChainID interchangeable / 323 interchangeable | 官方 InitChain 请求 item 2：not already have ChainID / not 323 |
+| A3602 | 高 | 看见填了 chain_id 会被写成已经有完整历史 interchangeable / 323 interchangeable | 官方 InitChain 请求 item 2：not already full history / not 323 |
+| A3603 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 InitChain 请求 item 2：not already settled |
+| A3604 | 中 | 怎样写 InitChain 请求 会被抄进不确定 | 不抄。不写怎样写 InitChain 请求。不另写 19 节 |
+| A3595 | 记录 | 会与 387 / 303 / 388 / 766 / 768 / 769 糊成「看见填了 time 就已经过了 genesis_time interchangeable、就已经开出块 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 time not already past genesis_time / not already producing blocks / not already settled 正式三事（387 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。387 inittime vs genesis bundled unbundling 启动（767 item 1） |
+| A3596 | 高 | 看见 InitChain 请求 time 会被写成已经过了 genesis_time interchangeable / 303 interchangeable | 官方 InitChain 请求 item 1：not already past genesis_time / not 303 |
+| A3597 | 高 | 看见填了 time 会被写成已经开出块 interchangeable / 303 interchangeable | 官方 InitChain 请求 item 1：not already producing blocks / not 303 |
+| A3598 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 InitChain 请求 item 1：not already settled |
+| A3599 | 中 | 怎样写 InitChain 请求 会被抄进不确定 | 不抄。不写怎样写 InitChain 请求。不另写 19 节 |
 | A3590 | 记录 | 会与 388 / 303 / 392 / 755 / 764 / 765 糊成「看见填了 JSON 字节就已经验过应用状态 interchangeable、就已经懂余额 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 请求 app_state_bytes not already verified / not already balances / not already settled 正式三事（388 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。388 initparams vs empty bundled unbundling 完成（766 item 3） |
 | A3591 | 高 | 看见 InitChain 请求 app_state_bytes 会被写成已经验过应用状态 interchangeable / 303 interchangeable | 官方 InitChain 请求余栏 item 3：not already verified / not 303 |
 | A3592 | 高 | 看见填了 JSON 字节 会被写成已经懂余额 interchangeable / 303 interchangeable | 官方 InitChain 请求余栏 item 3：not already balances / not 303 |

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 InitChain 就已经过了 genesis_time、已经有了 ChainID、已经能跳步」，必须分开 InitChain 请求 time 是创世时间是不是已经过了 genesis_time、InitChain 请求 chain_id 是链的 ID 是不是已经有了 ChainID、InitChain 请求 initial_height 是起步块高度是不是已经能跳步。可以跳过「看见叫了 InitChain 就已经过了 genesis_time」。不要另写怎样写 InitChain 请求。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 InitChain 就已经过了 genesis_time、已经有了 ChainID、已经能跳步」，必须分开 InitChain 请求 time 是创世时间是不是已经过了 genesis_time、InitChain 请求 chain_id 是链的 ID 是不是已经有了 ChainID、InitChain 请求 initial_height 是起步块高度是不是已经能跳步。可以跳过「看见叫了 InitChain 就已经过了 genesis_time」。不要另写怎样写 InitChain 请求。387 inittime vs genesis bundled unbundling 完成（767 item 1 / 768 item 2 / 769 item 3）；精读 [`worked-example-inittime-notgenesis-vs-bundled.md`](worked-example-inittime-notgenesis-vs-bundled.md)（不变量 767 item 1）。
 
 ## 本页不抄
 

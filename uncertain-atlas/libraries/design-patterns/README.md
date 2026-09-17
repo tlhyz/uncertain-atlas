@@ -1,3 +1,6 @@
+- [`name-the-inittime-notskip-bar.md`](name-the-inittime-notskip-bar.md) — InitChain 请求 initial_height not already can skip / not already past crash steps / not already settled 正式三事（387 余量）（不变量 769）
+- [`name-the-inittime-notchainid-bar.md`](name-the-inittime-notchainid-bar.md) — InitChain 请求 chain_id not already have ChainID / not already full history / not already settled 正式三事（387 余量）（不变量 768）
+- [`name-the-inittime-notgenesis-bar.md`](name-the-inittime-notgenesis-bar.md) — InitChain 请求 time not already past genesis_time / not already producing blocks / not already settled 正式三事（387 余量）（不变量 767）
 - [`name-the-initparams-notverified-bar.md`](name-the-initparams-notverified-bar.md) — InitChain 请求 app_state_bytes not already verified / not already balances / not already settled 正式三事（388 余量）（不变量 766）
 - [`name-the-initparams-notnoset-bar.md`](name-the-initparams-notnoset-bar.md) — InitChain 请求 validators not already no set / not already empty list / not already settled 正式三事（388 余量）（不变量 765）
 - [`name-the-initparams-notnoparams-bar.md`](name-the-initparams-notnoparams-bar.md) — InitChain 请求 consensus_params not already no params / not already empty response / not already settled 正式三事（388 余量）（不变量 764）

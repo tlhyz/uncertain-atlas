@@ -1,3 +1,15 @@
+## 2026-09-17（续 886）
+
+- 不变量 769；语料 C747；模式 name-the-inittime-notskip-bar；反模式 inittime-notskip-sold-as-bundled；L10.3 第 738 条。填 L4.4 / CometBFT 档案 InitChain 请求 initial_height not already can skip / not already past crash steps / not already settled 正式三事（387 余量）。387 inittime vs genesis bundled unbundling 完成（769 item 3）。
+
+## 2026-09-17（续 885）
+
+- 不变量 768；语料 C746；模式 name-the-inittime-notchainid-bar；反模式 inittime-notchainid-sold-as-bundled；L10.3 第 737 条。填 L4.4 / CometBFT 档案 InitChain 请求 chain_id not already have ChainID / not already full history / not already settled 正式三事（387 余量）。387 inittime vs genesis bundled unbundling 续（768 item 2）。
+
+## 2026-09-17（续 884）
+
+- 不变量 767；语料 C745；模式 name-the-inittime-notgenesis-bar；反模式 inittime-notgenesis-sold-as-bundled；L10.3 第 736 条。填 L4.4 / CometBFT 档案 InitChain 请求 time not already past genesis_time / not already producing blocks / not already settled 正式三事（387 余量）。387 inittime vs genesis bundled unbundling 启动（767 item 1）。
+
 ## 2026-09-17（续 883）
 
 - 不变量 766；语料 C744；模式 name-the-initparams-notverified-bar；反模式 initparams-notverified-sold-as-bundled；L10.3 第 735 条。填 L4.4 / CometBFT 档案 InitChain 请求 app_state_bytes not already verified / not already balances / not already settled 正式三事（388 余量）。388 initparams vs empty bundled unbundling 完成（766 item 3）。

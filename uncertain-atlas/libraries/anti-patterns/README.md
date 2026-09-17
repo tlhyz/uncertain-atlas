@@ -1,3 +1,6 @@
+- [`inittime-notskip-sold-as-bundled.md`](inittime-notskip-sold-as-bundled.md) — initial_height 被写成已经能跳步 / 已经过了崩溃三步 / 已经交差（不变量 769）
+- [`inittime-notchainid-sold-as-bundled.md`](inittime-notchainid-sold-as-bundled.md) — chain_id 被写成已经有了 ChainID / 已经有完整历史 / 已经交差（不变量 768）
+- [`inittime-notgenesis-sold-as-bundled.md`](inittime-notgenesis-sold-as-bundled.md) — time 被写成已经过了 genesis_time / 已经开出块 / 已经交差（不变量 767）
 - [`initparams-notverified-sold-as-bundled.md`](initparams-notverified-sold-as-bundled.md) — app_state_bytes 被写成已经验过应用状态 / 已经懂余额 / 已经交差（不变量 766）
 - [`initparams-notnoset-sold-as-bundled.md`](initparams-notnoset-sold-as-bundled.md) — validators 被写成已经没有集合 / 已经用了回包空名单 / 已经交差（不变量 765）
 - [`initparams-notnoparams-sold-as-bundled.md`](initparams-notnoparams-sold-as-bundled.md) — consensus_params 被写成已经没有参数 / 已经用了回包空参数 / 已经交差（不变量 764）
