@@ -25,7 +25,7 @@
 
 - **does not have to define lane_priorities not Info 车道 bundled ≠ 367 infolane bundled interchangeable：** 官方把 Methods Info Usage optional lane_priorities 单句和 bundled 367 第一件事分开。
 - **assign all transactions to one lane not CheckTx empty lane_id default lane ≠ 482 chktxlane interchangeable：** 官方把 Usage optional lane_priorities 单句和 CheckTx Usage empty lane_id → default lane 路径分开。
-- **does not have to define lane_priorities not CheckTx Priority consensus order ≠ 317 priority consensus interchangeable：** 官方把 Usage optional lane_priorities 单句和 CheckTx Priority 共识顺序路径分开；497 infousage persist/lane unbundling 续（666 item 2）。
+- **does not have to define lane_priorities not CheckTx Priority consensus order ≠ 317 priority consensus interchangeable：** 官方把 Usage optional lane_priorities 单句和 CheckTx Priority 共识顺序路径分开；497 infousage persist/lane unbundling 在本页 item 2 完成。
 
 ## 和相邻页的边界
 
@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage does not have to define lane_priorities not Info 车道 bundled / not CheckTx empty lane_id default lane / not CheckTx Priority consensus order 正式三事（497 余量），必须分开 does not have to define lane_priorities 是不是 Info 车道 bundled interchangeable / 367 infolane bundled interchangeable / 497 infousage-persist interchangeable / 665 infousage-notcommitpersist interchangeable、assign all transactions to one lane 是不是 CheckTx empty lane_id default lane interchangeable / 482 chktxlane interchangeable / 381 chktxlane-range interchangeable / 389 info-lane-fields interchangeable / 664 infousage-notpriorityzero interchangeable、optional lane_priorities 是不是 CheckTx Priority consensus order interchangeable / 317 priority consensus interchangeable / 663 infousage-notintable interchangeable / 498 infousage-defaultlane interchangeable。可以跳过「看见 does not have to define lane_priorities 就已经 Info 车道 bundled interchangeable / 就已经 CheckTx empty lane_id default lane interchangeable / 就已经 Priority 共识顺序 interchangeable」。不要另写怎样写 Info 回包、怎样填 lane_priorities。497 infousage persist/lane unbundling 在本页 item 2 续。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage does not have to define lane_priorities not Info 车道 bundled / not CheckTx empty lane_id default lane / not CheckTx Priority consensus order 正式三事（497 余量），必须分开 does not have to define lane_priorities 是不是 Info 车道 bundled interchangeable / 367 infolane bundled interchangeable / 497 infousage-persist interchangeable / 665 infousage-notcommitpersist interchangeable、assign all transactions to one lane 是不是 CheckTx empty lane_id default lane interchangeable / 482 chktxlane interchangeable / 381 chktxlane-range interchangeable / 389 info-lane-fields interchangeable / 664 infousage-notpriorityzero interchangeable、optional lane_priorities 是不是 CheckTx Priority consensus order interchangeable / 317 priority consensus interchangeable / 663 infousage-notintable interchangeable / 498 infousage-defaultlane interchangeable。可以跳过「看见 does not have to define lane_priorities 就已经 Info 车道 bundled interchangeable / 就已经 CheckTx empty lane_id default lane interchangeable / 就已经 Priority 共识顺序 interchangeable」。不要另写怎样写 Info 回包、怎样填 lane_priorities。497 infousage persist/lane unbundling 在本页 item 2 完成；续 [`worked-example-infousage-notemptyiff-vs-bundled.md`](worked-example-infousage-notemptyiff-vs-bundled.md)（不变量 667 item 3）。
 
 ## 本页不抄
 

@@ -1,3 +1,4 @@
+- [`worked-example-infousage-notemptyiff-vs-bundled.md`](worked-example-infousage-notemptyiff-vs-bundled.md) — empty iff≠367 Info lane bundled/663 default in table/482 CheckTx lane_id in range；≠497 bundled（不变量 667）
 - [`worked-example-infousage-notlaneoptional-vs-bundled.md`](worked-example-infousage-notlaneoptional-vs-bundled.md) — optional lane_priorities≠367 Info lane bundled/482 empty lane_id default lane/317 Priority consensus；≠497 bundled（不变量 666）
 - [`worked-example-infousage-notcommitpersist-vs-bundled.md`](worked-example-infousage-notcommitpersist-vs-bundled.md) — last_block during Commit≠370 Info handshake/481 persist signal/389 last_block fields；≠497 bundled（不变量 665）
 - [`worked-example-infousage-notpriorityzero-vs-bundled.md`](worked-example-infousage-notpriorityzero-vs-bundled.md) — priority 0 reserved≠367 Info lane bundled/482 empty lane_id default lane/317 Priority consensus；≠498 bundled（不变量 664）
