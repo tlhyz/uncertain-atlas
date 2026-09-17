@@ -1,3 +1,7 @@
+## 2026-09-17（续 801）
+
+- 不变量 684；语料 C661；模式 name-the-finpersist-notmustincommit-bar；反模式 finpersist-notmustincommit-sold-as-bundled；L10.3 第 653 条。填 L4.4 / CometBFT 档案 MUST persist in Commit not already persisted in Finalize / not already unlocked / not Commit green can wait for broadcast 正式三事（335 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。335 finpersist vs commit bundled unbundling 续（684 item 2）。
+
 ## 2026-09-17（续 800）
 
 - 不变量 683；语料 C660；模式 name-the-finpersist-notmustnot-bar；反模式 finpersist-notmustnot-sold-as-bundled；L10.3 第 652 条。填 L4.4 / CometBFT 档案 FinalizeBlock changed state MUST NOT persist not already persisted / not already settled / not crash recovery block in store already Commit 正式三事（335 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。335 finpersist vs commit bundled unbundling 启动（683 item 1）。
