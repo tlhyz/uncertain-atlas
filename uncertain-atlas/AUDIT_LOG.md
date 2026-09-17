@@ -1,3 +1,18 @@
+| A3515 | 记录 | 会与 394 / 374 / 399 / 732 / 749 / 750 糊成「看见填了 Echo 请求 Message 就已经是 Flush interchangeable、就已经送到 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Echo 请求 Message not already Flush / not already delivered / not already settled 正式三事（394 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。394 extcommitround vs commitinfo bundled unbundling 完成（751 item 3） |
+| A3516 | 高 | 看见 Echo 请求 Message 会被写成已经是 Flush interchangeable / 374 interchangeable | 官方 ExtendedCommitInfo 轮 item 3：not already Flush / not 374 |
+| A3517 | 高 | 看见填了 Message 会被写成已经送到 interchangeable / 374 interchangeable | 官方 ExtendedCommitInfo 轮 item 3：not already delivered / not 374 |
+| A3518 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 ExtendedCommitInfo 轮 item 3：not already settled |
+| A3519 | 中 | 怎样写 ExtendedCommitInfo 轮 会被抄进不确定 | 不抄。不写怎样写 ExtendedCommitInfo 轮。不另写 19 节 |
+| A3510 | 记录 | 会与 394 / 359 / 749 / 751 糊成「看见填了 next_validators_hash 就已经是同一套字段 interchangeable、就已经换了人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 请求 next_validators_hash not already same fields / not already swapped / not already settled 正式三事（394 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。394 extcommitround vs commitinfo bundled unbundling 续（750 item 2） |
+| A3511 | 高 | 看见 Finalize 请求 next_validators_hash 会被写成已经是同一套字段 interchangeable / 359 interchangeable | 官方 ExtendedCommitInfo 轮 item 2：not already same fields / not 359 |
+| A3512 | 高 | 看见填了 next_validators_hash 会被写成已经换了人 interchangeable | 官方 ExtendedCommitInfo 轮 item 2：not already swapped |
+| A3513 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 ExtendedCommitInfo 轮 item 2：not already settled |
+| A3514 | 中 | 怎样写 ExtendedCommitInfo 轮 会被抄进不确定 | 不抄。不写怎样写 ExtendedCommitInfo 轮。不另写 19 节 |
+| A3505 | 记录 | 会与 394 / 392 / 750 / 751 糊成「看见填了 ExtendedCommitInfo.round 就已经是 CommitInfo.round interchangeable、就已经按投票权排过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedCommitInfo.round not CommitInfo.round / not already ranked / not already settled 正式三事（394 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。394 extcommitround vs commitinfo bundled unbundling 启动（749 item 1） |
+| A3506 | 高 | 看见 ExtendedCommitInfo.round 会被写成已经是 CommitInfo.round interchangeable | 官方 ExtendedCommitInfo 轮 item 1：not CommitInfo.round |
+| A3507 | 高 | 看见填了 round 会被写成已经按投票权排过 interchangeable / 392 interchangeable | 官方 ExtendedCommitInfo 轮 item 1：not already ranked / not 392 |
+| A3508 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 ExtendedCommitInfo 轮 item 1：not already settled |
+| A3509 | 中 | 怎样写 ExtendedCommitInfo 轮 会被抄进不确定 | 不抄。不写怎样写 ExtendedCommitInfo 轮。不另写 19 节 |
 | A3500 | 记录 | 会与 393 / 381 / 746 / 747 糊成「看见写了空间就已经是 CheckTx 码空间 interchangeable、就已经是回包码 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult.codespace not CheckTx codespace / not already response code / not already settled 正式三事（393 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。393 exectxgas vs checktx bundled unbundling 完成（748 item 3） |
 | A3501 | 高 | 看见 ExecTxResult.codespace 会被写成已经是 CheckTx 码空间 interchangeable / 381 interchangeable | 官方 ExecTxResult 气 item 3：not CheckTx codespace / not 381 |
 | A3502 | 高 | 看见写了空间 会被写成已经是回包码 interchangeable / 381 interchangeable | 官方 ExecTxResult 气 item 3：not already response code / not 381 |

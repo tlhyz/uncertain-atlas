@@ -353,6 +353,9 @@
 - [`worked-example-exectxgas-notused-vs-bundled.md`](worked-example-exectxgas-notused-vs-bundled.md) — gas_used≠counted into consensus/316 header/already settled；≠393 bundled（不变量 747）
 - [`worked-example-exectxgas-notwanted-vs-bundled.md`](worked-example-exectxgas-notwanted-vs-bundled.md) — gas_wanted≠CheckTx GasWanted/315 executing/already settled；≠393 bundled（不变量 746）
 - [`worked-example-exectxgas-vs-checktx.md`](worked-example-exectxgas-vs-checktx.md) — ExecTxResult.gas_wanted 是这笔要的气 ≠ 已经是 CheckTx 的 GasWanted；ExecTxResult.gas_used 是这笔用掉的气 ≠ 已经算进共识；ExecTxResult.codespace 是码的命名空间 ≠ 已经是 CheckTx 码空间（不变量 393）
+- [`worked-example-extcommitround-notflush-vs-bundled.md`](worked-example-extcommitround-notflush-vs-bundled.md) — Echo 请求 Message≠374 Flush/already delivered/already settled；≠394 bundled（不变量 751）
+- [`worked-example-extcommitround-notsamefields-vs-bundled.md`](worked-example-extcommitround-notsamefields-vs-bundled.md) — next_validators_hash≠359 same fields/already swapped/already settled；≠394 bundled（不变量 750）
+- [`worked-example-extcommitround-notcommitinfo-vs-bundled.md`](worked-example-extcommitround-notcommitinfo-vs-bundled.md) — ExtendedCommitInfo.round≠CommitInfo.round/392 ranked/already settled；≠394 bundled（不变量 749）
 - [`worked-example-extcommitround-vs-commitinfo.md`](worked-example-extcommitround-vs-commitinfo.md) — ExtendedCommitInfo.round 是提交轮 ≠ 已经是 CommitInfo.round；Finalize 请求 next_validators_hash 是下一验证者集合默克尔根 ≠ 已经是同一套字段；Echo 请求 Message 是要回显的字符串 ≠ 已经是 Flush（不变量 394）
 - [`worked-example-listsnapempty-notchunks-vs-bundled.md`](worked-example-listsnapempty-notchunks-vs-bundled.md) — 用来发现≠375 loading chunks/322 complete/500 Usage discover；≠395 bundled（不变量 736）
 - [`worked-example-listsnapempty-notidentical-vs-bundled.md`](worked-example-listsnapempty-notidentical-vs-bundled.md) — 本地清单≠368 identical/321 restored/396 Offer snapshot；≠395 bundled（不变量 735）

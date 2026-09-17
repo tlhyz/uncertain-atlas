@@ -1,3 +1,15 @@
+## 2026-09-17（续 868）
+
+- 不变量 751；语料 C729；模式 name-the-extcommitround-notflush-bar；反模式 extcommitround-notflush-sold-as-bundled；L10.3 第 720 条。填 L4.4 / CometBFT 档案 Echo 请求 Message not already Flush / not already delivered / not already settled 正式三事（394 余量）。394 extcommitround vs commitinfo bundled unbundling 完成（751 item 3）。
+
+## 2026-09-17（续 867）
+
+- 不变量 750；语料 C728；模式 name-the-extcommitround-notsamefields-bar；反模式 extcommitround-notsamefields-sold-as-bundled；L10.3 第 719 条。填 L4.4 / CometBFT 档案 Finalize 请求 next_validators_hash not already same fields / not already swapped / not already settled 正式三事（394 余量）。394 extcommitround vs commitinfo bundled unbundling 续（750 item 2）。
+
+## 2026-09-17（续 866）
+
+- 不变量 749；语料 C727；模式 name-the-extcommitround-notcommitinfo-bar；反模式 extcommitround-notcommitinfo-sold-as-bundled；L10.3 第 718 条。填 L4.4 / CometBFT 档案 ExtendedCommitInfo.round not CommitInfo.round / not already ranked / not already settled 正式三事（394 余量）。394 extcommitround vs commitinfo bundled unbundling 启动（749 item 1）。
+
 ## 2026-09-17（续 865）
 
 - 不变量 748；语料 C726；模式 name-the-exectxgas-notcodespace-bar；反模式 exectxgas-notcodespace-sold-as-bundled；L10.3 第 717 条。填 L4.4 / CometBFT 档案 ExecTxResult.codespace not CheckTx codespace / not already response code / not already settled 正式三事（393 余量）。393 exectxgas vs checktx bundled unbundling 完成（748 item 3）。

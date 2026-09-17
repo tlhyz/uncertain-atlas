@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendedCommitInfo 轮就已经是 CommitInfo.round、已经是同一套字段、已经是 Flush」，必须分开 ExtendedCommitInfo.round 是提交轮是不是已经是 CommitInfo.round、Finalize 请求 next_validators_hash 是下一验证者集合默克尔根是不是已经是同一套字段、Echo 请求 Message 是要回显的字符串是不是已经是 Flush。可以跳过「看见填了 ExtendedCommitInfo 轮就已经是 CommitInfo.round」。不要另写怎样写 ExtendedCommitInfo 轮。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendedCommitInfo 轮就已经是 CommitInfo.round、已经是同一套字段、已经是 Flush」，必须分开 ExtendedCommitInfo.round 是提交轮是不是已经是 CommitInfo.round、Finalize 请求 next_validators_hash 是下一验证者集合默克尔根是不是已经是同一套字段、Echo 请求 Message 是要回显的字符串是不是已经是 Flush。可以跳过「看见填了 ExtendedCommitInfo 轮就已经是 CommitInfo.round」。不要另写怎样写 ExtendedCommitInfo 轮。394 extcommitround vs commitinfo bundled unbundling 完成（749 item 1 / 750 item 2 / 751 item 3）；精读 [`worked-example-extcommitround-notcommitinfo-vs-bundled.md`](worked-example-extcommitround-notcommitinfo-vs-bundled.md)（不变量 749 item 1）。
 
 ## 本页不抄
 

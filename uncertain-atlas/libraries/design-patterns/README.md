@@ -1,3 +1,6 @@
+- [`name-the-extcommitround-notflush-bar.md`](name-the-extcommitround-notflush-bar.md) — Echo 请求 Message not already Flush / not already delivered / not already settled 正式三事（394 余量）（不变量 751）
+- [`name-the-extcommitround-notsamefields-bar.md`](name-the-extcommitround-notsamefields-bar.md) — Finalize 请求 next_validators_hash not already same fields / not already swapped / not already settled 正式三事（394 余量）（不变量 750）
+- [`name-the-extcommitround-notcommitinfo-bar.md`](name-the-extcommitround-notcommitinfo-bar.md) — ExtendedCommitInfo.round not CommitInfo.round / not already ranked / not already settled 正式三事（394 余量）（不变量 749）
 - [`name-the-exectxgas-notcodespace-bar.md`](name-the-exectxgas-notcodespace-bar.md) — ExecTxResult.codespace not CheckTx codespace / not already response code / not already settled 正式三事（393 余量）（不变量 748）
 - [`name-the-exectxgas-notused-bar.md`](name-the-exectxgas-notused-bar.md) — ExecTxResult.gas_used not already counted into consensus / not already printed in header / not already settled 正式三事（393 余量）（不变量 747）
 - [`name-the-exectxgas-notwanted-bar.md`](name-the-exectxgas-notwanted-bar.md) — ExecTxResult.gas_wanted not CheckTx GasWanted / not already executing / not already settled 正式三事（393 余量）（不变量 746）

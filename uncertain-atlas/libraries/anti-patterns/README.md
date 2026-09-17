@@ -1,3 +1,6 @@
+- [`extcommitround-notflush-sold-as-bundled.md`](extcommitround-notflush-sold-as-bundled.md) — Echo 请求 Message 被写成已经是 Flush / 已经送到 / 已经交差（不变量 751）
+- [`extcommitround-notsamefields-sold-as-bundled.md`](extcommitround-notsamefields-sold-as-bundled.md) — next_validators_hash 被写成已经是同一套字段 / 已经换了人 / 已经交差（不变量 750）
+- [`extcommitround-notcommitinfo-sold-as-bundled.md`](extcommitround-notcommitinfo-sold-as-bundled.md) — ExtendedCommitInfo.round 被写成已经是 CommitInfo.round / 已经按投票权排过 / 已经交差（不变量 749）
 - [`exectxgas-notcodespace-sold-as-bundled.md`](exectxgas-notcodespace-sold-as-bundled.md) — codespace 被写成已经是 CheckTx 码空间 / 已经是回包码 / 已经交差（不变量 748）
 - [`exectxgas-notused-sold-as-bundled.md`](exectxgas-notused-sold-as-bundled.md) — gas_used 被写成已经算进共识 / 已经印进本头 / 已经交差（不变量 747）
 - [`exectxgas-notwanted-sold-as-bundled.md`](exectxgas-notwanted-sold-as-bundled.md) — gas_wanted 被写成已经是 CheckTx 的 GasWanted / 已经在执行 / 已经交差（不变量 746）
