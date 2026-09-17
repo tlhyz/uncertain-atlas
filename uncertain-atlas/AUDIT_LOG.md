@@ -4487,6 +4487,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2273 | 中 | 怎样做增量验 / 怎样封邻居 / 怎样配轻客户端 RPC 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2272 | 高 | 看见 verified AppHash automatically checked at the end of snapshot restoration / 看见装回结束时自动核对 会被写成已经在装 chunk 过程中 Info 对了（332），或当成已经 Transition to Consensus（323） interchangeable | 官方 OfferSnapshot Usage：The verified AppHash is automatically checked against the restored application at the end of snapshot restoration |
 | A2271 | 高 | 看见 Any other data can be spoofed / employ additional verification / avoid denial-of-service attacks / 看见其它数据可被伪造、应用还应另做验真防 DoS 会被写成已经 hash / metadata 比对就够，或当成已经 Snapshot Verification 增量验（332） interchangeable | 官方 OfferSnapshot Usage：Any other data can be spoofed … employ additional verification schemes to avoid denial-of-service attacks |
+| A2279 | 记录 | 会与 312 / 391 / 468 / 301 / 313 糊成「看见填了 CheckTx 请求就已经是 Recheck、已经是新交易、已经永远有效」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx Request type 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。CheckTx_Recheck / 外部新交易 / tx 栏 interchangeable 标成另一对象 |
+| A2278 | 中 | 怎样实现 CheckTxState / 怎样再验 / 怎样填 type 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2277 | 高 | 看见 Request type 栏 / Type 标明 New 还是 Recheck 会被写成已经只看 tx 字节就知道种类，或当成已经 Commit 后再验就不需要读 type | 官方 CheckTx Request type 栏；app requirements：CheckTxRequest Type 标明 CHECK_TX_TYPE_NEW 与 CHECK_TX_TYPE_RECHECK |
+| A2276 | 高 | 看见 CheckTx_Recheck types are used when the mempool is initiating a normal recheck / 看见 CheckTx_Recheck 是内存池正常再验 会被写成已经外部用户新交易，或当成已经内存池去重就保证不重放 | 官方 CheckTx Request type：CheckTx_Recheck types are used when the mempool is initiating a normal recheck of a transaction |
+| A2275 | 高 | 看见 CheckTx_New is the default / full check of the transaction is required / 看见 CheckTx_New 是默认完整验 会被写成已经 CheckTx_Recheck 那种内存池再验，或当成已经填了 tx 字节就代表已经是 Recheck | 官方 CheckTx Request type：CheckTx_New is the default and means that a full check of the transaction is required |
+
 | A2270 | 高 | 看见 Only AppHash can be trusted / light client verified / 看见只有 AppHash 可信任 会被写成已经 Snapshot.hash / metadata / 五个字段都对上就可信，或当成已经 ListSnapshots 回了本地清单就可信 | 官方 OfferSnapshot Usage：Only AppHash can be trusted, as it has been verified by the light client |
 
 | A2265 | 高 | 看见 lane_id 是空字符串 / 看见应用没在 CheckTx 回包里设道 会被写成已经 priority 0 留给不设道（367），或当成已经从池里删掉 / 已经没进池 | 官方 CheckTx Usage：If lane_id is an empty string … the transaction will be assigned to the default lane |
