@@ -31,7 +31,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage default_lane in table / priority 0 reserved 正式二事 part 3，必须分开 default_lane must be in lane_priorities 是不是 Info 车道 bundled interchangeable / empty iff interchangeable / CheckTx lane_id in range interchangeable、priority 0 reserved for empty lane_id 是不是 Info 车道 bundled interchangeable / CheckTx lane_id default lane interchangeable / 已经排了优先。可以跳过「看见 Info 回了 default_lane / 优先级 0 就已经选型、已经进了块」。不要另写怎样写 Info 车道。 498 infousage default_lane/priority0 unbundling 在本页 item 1 启动；精读 [`worked-example-infousage-notintable-vs-bundled.md`](worked-example-infousage-notintable-vs-bundled.md)（不变量 663 item 1）；续 priority 0 reserved for empty lane_id（664 item 2 余量）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage default_lane in table / priority 0 reserved 正式二事 part 3，必须分开 default_lane must be in lane_priorities 是不是 Info 车道 bundled interchangeable / empty iff interchangeable / CheckTx lane_id in range interchangeable、priority 0 reserved for empty lane_id 是不是 Info 车道 bundled interchangeable / CheckTx lane_id default lane interchangeable / 已经排了优先。可以跳过「看见 Info 回了 default_lane / 优先级 0 就已经选型、已经进了块」。不要另写怎样写 Info 车道。 498 infousage default_lane/priority0 unbundling 在本页 item 1 启动；精读 [`worked-example-infousage-notintable-vs-bundled.md`](worked-example-infousage-notintable-vs-bundled.md)（不变量 663 item 1）；续 [`worked-example-infousage-notpriorityzero-vs-bundled.md`](worked-example-infousage-notpriorityzero-vs-bundled.md)（不变量 664 item 2）。498 infousage default_lane/priority0 unbundling 完成（663→664）。
 
 ## 本页不抄
 

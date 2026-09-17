@@ -1,3 +1,7 @@
+## 2026-09-17（续 781）
+
+- 不变量 664；语料 C641；模式 name-the-infousage-notpriorityzero-bar；反模式 infousage-notpriorityzero-sold-as-bundled；L10.3 第 633 条。填 L4.4 / CometBFT 档案 Info Usage priority 0 reserved for empty lane_id not Info 车道 bundled / not CheckTx empty lane_id default lane / not CheckTx Priority consensus order 正式三事（498 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。498 infousage default_lane/priority0 unbundling 完成（664 item 2）。
+
 ## 2026-09-17（续 780）
 
 - 不变量 663；语料 C640；模式 name-the-infousage-notintable-bar；反模式 infousage-notintable-sold-as-bundled；L10.3 第 632 条。填 L4.4 / CometBFT 档案 Info Usage default_lane has to be one of identifiers defined in lane_priorities not Info 车道 bundled / not empty iff / not CheckTx lane_id in range 正式三事（498 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。498 infousage default_lane/priority0 unbundling 启动（663 item 1）。
