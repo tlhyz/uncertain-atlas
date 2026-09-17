@@ -1,3 +1,6 @@
+- [`checktxopt-notdata-sold-as-bundled.md`](checktxopt-notdata-sold-as-bundled.md) — 回包码 被写成已经被引擎用了 Data / 已经是共识顺序 / 已经分叉（不变量 808）
+- [`checktxopt-notinblock-sold-as-bundled.md`](checktxopt-notinblock-sold-as-bundled.md) — Code≠0 拒收 被写成已经没进块 / 已经被挡住拜占庭 / 已经交差（不变量 807）
+- [`checktxopt-notsettled-sold-as-bundled.md`](checktxopt-notsettled-sold-as-bundled.md) — CheckTx 可选 被写成已经是四门已经结算 / 已经交差 / 已经从池里删掉（不变量 806）
 - [`flush-notproceed-sold-as-bundled.md`](flush-notproceed-sold-as-bundled.md) — 立刻 Flush 被写成已经能往下走 / 已经 Commit / 已经解锁（不变量 805）
 - [`flush-notgates-sold-as-bundled.md`](flush-notgates-sold-as-bundled.md) — 定期 Flush 被写成已经是四门 / 已经收到 / 已经交差（不变量 804）
 - [`flush-notdelivered-sold-as-bundled.md`](flush-notdelivered-sold-as-bundled.md) — Flush 冲队列 被写成已经送到 / 已经入队 / 已经断开（不变量 803）

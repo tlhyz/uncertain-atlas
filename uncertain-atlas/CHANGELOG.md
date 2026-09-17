@@ -1,3 +1,15 @@
+## 2026-09-17（续 925）
+
+- 不变量 808；语料 C786；模式 name-the-checktxopt-notdata-bar；反模式 checktxopt-notdata-sold-as-bundled；L10.3 第 777 条。填 L4.4 / CometBFT 档案 回包码不再另有含义 not already Data used / not already consensus order / not already forked 正式三事（373 余量）。373 checktxopt vs block bundled unbundling 完成（808 item 3）。
+
+## 2026-09-17（续 924）
+
+- 不变量 807；语料 C785；模式 name-the-checktxopt-notinblock-bar；反模式 checktxopt-notinblock-sold-as-bundled；L10.3 第 776 条。填 L4.4 / CometBFT 档案 Code≠0 拒收 not already not-in-block / not already byzantine blocked / not already settled 正式三事（373 余量）。373 checktxopt vs block bundled unbundling 续（807 item 2）。
+
+## 2026-09-17（续 923）
+
+- 不变量 806；语料 C784；模式 name-the-checktxopt-notsettled-bar；反模式 checktxopt-notsettled-sold-as-bundled；L10.3 第 775 条。填 L4.4 / CometBFT 档案 CheckTx 可选 not already four gates settled / not already settled / not already deleted from pool 正式三事（373 余量）。373 checktxopt vs block bundled unbundling 启动（806 item 1）。
+
 ## 2026-09-17（续 922）
 
 - 不变量 805；语料 C783；模式 name-the-flush-notproceed-bar；反模式 flush-notproceed-sold-as-bundled；L10.3 第 774 条。填 L4.4 / CometBFT 档案 立刻 Flush not already can proceed / not already Commit / not already unlocked 正式三事（374 余量）。374 flush vs sent bundled unbundling 完成（805 item 3）。

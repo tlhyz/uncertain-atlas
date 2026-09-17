@@ -323,6 +323,9 @@
 - [`worked-example-info-vs-handshake.md`](worked-example-info-vs-handshake.md) — Info 用来握手对齐 ≠ 已经是快照重放；app_version 进每块头 ≠ 已经印进本头 AppHash；last_block_app_hash / last_block_height 要在 Commit 里落盘 ≠ 已经交差（不变量 370）
 - [`worked-example-queryheight-vs-committed.md`](worked-example-queryheight-vs-committed.md) — Query 可以对当前或过去高度查 ≠ 已经是 QueryState；height 默认 0 回最新已提交 ≠ 已经新鲜；这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态 ≠ 已经印进本头 AppHash（不变量 371）
 - [`worked-example-misbehavior-vs-enum.md`](worked-example-misbehavior-vs-enum.md) — Misbehavior.type 只是过错枚举 ≠ 已经罚没；height 是过错发生的高度、time 是那一高已提交块的时间 ≠ 已经验过这个时间；total_voting_power 是那一高验证者集合的总权 ≠ 已经按到场定奖惩（不变量 372）
+- [`worked-example-checktxopt-notdata-vs-bundled.md`](worked-example-checktxopt-notdata-vs-bundled.md) — 回包码≠317 Data used/consensus order/forked；≠373 bundled（不变量 808）
+- [`worked-example-checktxopt-notinblock-vs-bundled.md`](worked-example-checktxopt-notinblock-vs-bundled.md) — Code≠0拒收≠316 not-in-block/byzantine/settled；≠373 bundled（不变量 807）
+- [`worked-example-checktxopt-notsettled-vs-bundled.md`](worked-example-checktxopt-notsettled-vs-bundled.md) — CheckTx可选≠33 four gates/settled/deleted；≠373 bundled（不变量 806）
 - [`worked-example-checktxopt-vs-block.md`](worked-example-checktxopt-vs-block.md) — CheckTx 技术上可选、不参与处理块 ≠ 已经是四门已经结算；Code ≠ 0 会被拒、不会广播也不会进提案 ≠ 已经没进块；引擎对回包码不再赋予别的含义 ≠ 已经被引擎用了 Data（不变量 373）
 - [`worked-example-flush-notproceed-vs-bundled.md`](worked-example-flush-notproceed-vs-bundled.md) — 立刻 Flush≠310 proceed/Commit/unlocked；≠374 bundled（不变量 805）
 - [`worked-example-flush-notgates-vs-bundled.md`](worked-example-flush-notgates-vs-bundled.md) — 定期 Flush≠307 gates/received/settled；≠374 bundled（不变量 804）

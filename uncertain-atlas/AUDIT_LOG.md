@@ -1,3 +1,18 @@
+| A3800 | 记录 | 会与 373 / 317 / 489 / 688 / 381 / 786 / 806 / 807 糊成「看见有码就已经被引擎用了 Data interchangeable、就已经是共识顺序 interchangeable、就已经分叉 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 回包码不再另有含义 not already Data used / not already consensus order / not already forked 正式三事（373 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。373 checktxopt vs block bundled unbundling 完成（808 item 3） |
+| A3801 | 高 | 看见回包码不再另有含义 会被写成已经被引擎用了 Data interchangeable / 317 interchangeable | 官方 CheckTx 可选 item 3：not already Data used / not 317 |
+| A3802 | 高 | 看见有码 会被写成已经是共识顺序 interchangeable / 489 interchangeable | 官方 CheckTx 可选 item 3：not already consensus order / not 489 |
+| A3803 | 高 | 看见拒了 会被写成已经分叉 interchangeable | 官方 CheckTx 可选 item 3：not already forked |
+| A3804 | 中 | 怎样写 CheckTx 可选 会被抄进不确定 | 不抄。不写怎样写 CheckTx 可选。不另写 19 节 |
+| A3795 | 记录 | 会与 373 / 316 / 489 / 686 / 381 / 785 / 806 / 808 糊成「看见拒了就已经没进块 interchangeable、就已经被挡住拜占庭 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Code≠0 拒收 not already not-in-block / not already byzantine blocked / not already settled 正式三事（373 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。373 checktxopt vs block bundled unbundling 续（807 item 2） |
+| A3796 | 高 | 看见 Code≠0 拒收 会被写成已经没进块 interchangeable / 316 interchangeable | 官方 CheckTx 可选 item 2：not already not-in-block / not 316 |
+| A3797 | 高 | 看见拒了 会被写成已经被挡住拜占庭 interchangeable / 489 interchangeable | 官方 CheckTx 可选 item 2：not already byzantine blocked / not 489 |
+| A3798 | 高 | 看见没进提案 会被写成已经交差 interchangeable | 官方 CheckTx 可选 item 2：not already settled |
+| A3799 | 中 | 怎样写 CheckTx 可选 会被抄进不确定 | 不抄。不写怎样写 CheckTx 可选。不另写 19 节 |
+| A3790 | 记录 | 会与 373 / 33 / 339 / 486 / 682 / 807 / 808 糊成「看见能回就已经是四门已经结算 interchangeable、就已经交差 interchangeable、就已经从池里删掉 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 可选 not already four gates settled / not already settled / not already deleted from pool 正式三事（373 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。373 checktxopt vs block bundled unbundling 启动（806 item 1） |
+| A3791 | 高 | 看见 CheckTx 可选 会被写成已经是四门已经结算 interchangeable / 33 interchangeable | 官方 CheckTx 可选 item 1：not already four gates settled / not 33 |
+| A3792 | 高 | 看见能回 会被写成已经交差 interchangeable / 486 interchangeable | 官方 CheckTx 可选 item 1：not already settled / not 486 |
+| A3793 | 高 | 看见没参与处理块 会被写成已经从池里删掉 interchangeable | 官方 CheckTx 可选 item 1：not already deleted from pool |
+| A3794 | 中 | 怎样写 CheckTx 可选 会被抄进不确定 | 不抄。不写怎样写 CheckTx 可选。不另写 19 节 |
 | A3785 | 记录 | 会与 374 / 310 / 493 / 673 / 399 / 733 / 803 / 804 糊成「看见立刻叫了就已经能往下走 interchangeable、就已经 Commit interchangeable、就已经解锁 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 立刻 Flush not already can proceed / not already Commit / not already unlocked 正式三事（374 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。374 flush vs sent bundled unbundling 完成（805 item 3） |
 | A3786 | 高 | 看见立刻 Flush 会被写成已经能往下走 interchangeable / 310 interchangeable | 官方 Flush item 3：not already can proceed / not 310 |
 | A3787 | 高 | 看见回包回来 会被写成已经 Commit interchangeable / 493 interchangeable | 官方 Flush item 3：not already Commit / not 493 |

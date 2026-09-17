@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能回 CheckTx 就已经是四门已经结算、已经没进块、已经被引擎用了 Data」，必须分开 CheckTx 技术上可选、不参与处理块是不是已经是四门已经结算、Code ≠ 0 会被拒、不会广播也不会进提案是不是已经没进块、引擎对回包码不再赋予别的含义是不是已经被引擎用了 Data。可以跳过「看见能回 CheckTx 就已经是四门已经结算」。不要另写怎样写 CheckTx 可选。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能回 CheckTx 就已经是四门已经结算、已经没进块、已经被引擎用了 Data」，必须分开 CheckTx 技术上可选、不参与处理块是不是已经是四门已经结算、Code ≠ 0 会被拒、不会广播也不会进提案是不是已经没进块、引擎对回包码不再赋予别的含义是不是已经被引擎用了 Data。可以跳过「看见能回 CheckTx 就已经是四门已经结算」。不要另写怎样写 CheckTx 可选。373 checktxopt vs block bundled unbundling 完成（806 item 1 / 807 item 2 / 808 item 3）；精读 [`worked-example-checktxopt-notsettled-vs-bundled.md`](worked-example-checktxopt-notsettled-vs-bundled.md)（不变量 806 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,6 @@
+- [`name-the-checktxopt-notdata-bar.md`](name-the-checktxopt-notdata-bar.md) — 回包码不再另有含义 not already Data used / not already consensus order / not already forked 正式三事（373 余量）（不变量 808）
+- [`name-the-checktxopt-notinblock-bar.md`](name-the-checktxopt-notinblock-bar.md) — Code≠0 拒收 not already not-in-block / not already byzantine blocked / not already settled 正式三事（373 余量）（不变量 807）
+- [`name-the-checktxopt-notsettled-bar.md`](name-the-checktxopt-notsettled-bar.md) — CheckTx 可选 not already four gates settled / not already settled / not already deleted from pool 正式三事（373 余量）（不变量 806）
 - [`name-the-flush-notproceed-bar.md`](name-the-flush-notproceed-bar.md) — 立刻 Flush not already can proceed / not already Commit / not already unlocked 正式三事（374 余量）（不变量 805）
 - [`name-the-flush-notgates-bar.md`](name-the-flush-notgates-bar.md) — 定期 Flush not already four gates / not already received / not already settled 正式三事（374 余量）（不变量 804）
 - [`name-the-flush-notdelivered-bar.md`](name-the-flush-notdelivered-bar.md) — Flush 冲队列 not already delivered / not already queued / not already disconnected 正式三事（374 余量）（不变量 803）
