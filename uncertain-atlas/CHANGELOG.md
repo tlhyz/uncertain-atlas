@@ -1,3 +1,7 @@
+## 2026-09-17（续 785）
+
+- 不变量 668；语料 C645；模式 name-the-infousage-notquerystate-bar；反模式 infousage-notquerystate-sold-as-bundled；L10.3 第 637 条。填 L4.4 / CometBFT 档案 Info Usage Return information about application state not QueryState / not Info response data arbitrary info / not handshake sync already persisted 正式三事（494 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。494 infousage vs handshake bundled unbundling 启动（668 item 1）。
+
 ## 2026-09-17（续 784）
 
 - 不变量 667；语料 C644；模式 name-the-infousage-notemptyiff-bar；反模式 infousage-notemptyiff-sold-as-bundled；L10.3 第 636 条。填 L4.4 / CometBFT 档案 Info Usage lane_priorities empty iff default_lane empty not Info 车道 bundled / not default_lane in table / not CheckTx lane_id in range 正式三事（497 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。497 infousage persist/lane unbundling 完成（667 item 3）。
