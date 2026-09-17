@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Info 回了车道就已经排了优先、已经选型、已经进了块」，必须分开没定义 lane_priorities 是不是已经排了优先、空表对空默认是不是已经选型、优先级 0 留给不设道是不是已经进了块。可以跳过「看见 Info 回了车道就已经排了优先」。不要另写怎样写 Info 车道。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Info 回了车道就已经排了优先、已经选型、已经进了块」，必须分开没定义 lane_priorities 是不是已经排了优先、空表对空默认是不是已经选型、优先级 0 留给不设道是不是已经进了块。可以跳过「看见 Info 回了车道就已经排了优先」。不要另写怎样写 Info 车道。367 lane vs priority bundled unbundling 完成（824 item 1 / 825 item 2 / 826 item 3）；精读 [`worked-example-lane-notpriority-vs-bundled.md`](worked-example-lane-notpriority-vs-bundled.md)（不变量 824 item 1）。
 
 ## 本页不抄
 

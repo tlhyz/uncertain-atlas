@@ -1,3 +1,6 @@
+- [`lane-notinblock-sold-as-bundled.md`](lane-notinblock-sold-as-bundled.md) — 优先级 0 被写成已经进了块 / 已经从池里删掉 / 已经是共识顺序（不变量 826）
+- [`lane-notselected-sold-as-bundled.md`](lane-notselected-sold-as-bundled.md) — 空表对空默认 被写成已经选型 / 已经排了优先 / 已经进了块（不变量 825）
+- [`lane-notpriority-sold-as-bundled.md`](lane-notpriority-sold-as-bundled.md) — 没定义车道 被写成已经排了优先 / 已经是 CheckTx Priority / 已经交差（不变量 824）
 - [`snapshot-notcomplete-sold-as-bundled.md`](snapshot-notcomplete-sold-as-bundled.md) — 空快照至少 1 块 被写成已经齐 / 已经是共识常数 / 已经装完（不变量 823）
 - [`snapshot-nothash-sold-as-bundled.md`](snapshot-nothash-sold-as-bundled.md) — 不解释 format/hash 被写成已经轻验 AppHash / 已经从创世重放 / 已经选型（不变量 822）
 - [`snapshot-notrestored-sold-as-bundled.md`](snapshot-notrestored-sold-as-bundled.md) — 全字段对上 被写成已经装完 / 已经齐 / 已经轻验 AppHash（不变量 821）

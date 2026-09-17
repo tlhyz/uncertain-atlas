@@ -1,3 +1,18 @@
+| A3890 | 记录 | 会与 367 / 301 / 317 / 498 / 664 / 482 / 704 / 824 / 825 糊成「看见写了 0 就已经进了块 interchangeable、就已经从池里删掉 interchangeable、就已经是共识顺序 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 优先级 0 留给不设道 not already in-block / not already deleted from pool / not already consensus order 正式三事（367 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。367 lane vs priority bundled unbundling 完成（826 item 3） |
+| A3891 | 高 | 看见优先级 0 留给不设道 会被写成已经进了块 interchangeable | 官方 Info 车道 item 3：not already in-block |
+| A3892 | 高 | 看见空 lane_id 会被写成已经从池里删掉 interchangeable / 301 interchangeable | 官方 Info 车道 item 3：not already deleted from pool / not 301 |
+| A3893 | 高 | 看见有优先级 会被写成已经是共识顺序 interchangeable / 317 interchangeable | 官方 Info 车道 item 3：not already consensus order / not 317 |
+| A3894 | 中 | 怎样写 Info 车道 会被抄进不确定 | 不抄。不写怎样写 Info 车道。不另写 19 节 |
+| A3885 | 记录 | 会与 367 / 497 / 667 / 498 / 663 / 824 / 826 糊成「看见对上了就已经选型 interchangeable、就已经排了优先 interchangeable、就已经进了块 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 空表对空默认 not already selected / not already prioritized / not already in-block 正式三事（367 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。367 lane vs priority bundled unbundling 续（825 item 2） |
+| A3886 | 高 | 看见空表对空默认 会被写成已经选型 interchangeable | 官方 Info 车道 item 2：not already selected |
+| A3887 | 高 | 看见默认道在表里 会被写成已经排了优先 interchangeable | 官方 Info 车道 item 2：not already prioritized |
+| A3888 | 高 | 看见空对空 会被写成已经进了块 interchangeable | 官方 Info 车道 item 2：not already in-block |
+| A3889 | 中 | 怎样写 Info 车道 会被抄进不确定 | 不抄。不写怎样写 Info 车道。不另写 19 节 |
+| A3880 | 记录 | 会与 367 / 317 / 497 / 666 / 312 / 825 / 826 糊成「看见没填表就已经排了优先 interchangeable、就已经是 CheckTx Priority interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 没定义 lane_priorities not already prioritized / not already CheckTx Priority / not already settled 正式三事（367 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。367 lane vs priority bundled unbundling 启动（824 item 1） |
+| A3881 | 高 | 看见没定义 lane_priorities 会被写成已经排了优先 interchangeable / 317 interchangeable | 官方 Info 车道 item 1：not already prioritized / not 317 |
+| A3882 | 高 | 看见并成一条道 会被写成已经是 CheckTx Priority interchangeable / 497 interchangeable | 官方 Info 车道 item 1：not already CheckTx Priority / not 497 |
+| A3883 | 高 | 看见 Info 回了 会被写成已经交差 interchangeable | 官方 Info 车道 item 1：not already settled |
+| A3884 | 中 | 怎样写 Info 车道 会被抄进不确定 | 不抄。不写怎样写 Info 车道。不另写 19 节 |
 | A3875 | 记录 | 会与 368 / 322 / 375 / 802 / 321 / 821 / 822 糊成「看见有块数就已经齐 interchangeable、就已经是共识常数 interchangeable、就已经装完 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 空快照至少 1 块 not already complete / not already consensus constant / not already restored 正式三事（368 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。368 snapshot vs identical bundled unbundling 完成（823 item 3） |
 | A3876 | 高 | 看见空快照至少 1 块 会被写成已经齐 interchangeable / 322 interchangeable | 官方 Snapshot 类型 item 3：not already complete / not 322 |
 | A3877 | 高 | 看见有上限 会被写成已经是共识常数 interchangeable / 375 interchangeable | 官方 Snapshot 类型 item 3：not already consensus constant / not 375 |

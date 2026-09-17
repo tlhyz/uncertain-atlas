@@ -1,3 +1,6 @@
+- [`name-the-lane-notinblock-bar.md`](name-the-lane-notinblock-bar.md) — 优先级 0 留给不设道 not already in-block / not already deleted from pool / not already consensus order 正式三事（367 余量）（不变量 826）
+- [`name-the-lane-notselected-bar.md`](name-the-lane-notselected-bar.md) — 空表对空默认 not already selected / not already prioritized / not already in-block 正式三事（367 余量）（不变量 825）
+- [`name-the-lane-notpriority-bar.md`](name-the-lane-notpriority-bar.md) — 没定义 lane_priorities not already prioritized / not already CheckTx Priority / not already settled 正式三事（367 余量）（不变量 824）
 - [`name-the-snapshot-notcomplete-bar.md`](name-the-snapshot-notcomplete-bar.md) — 空快照至少 1 块 not already complete / not already consensus constant / not already restored 正式三事（368 余量）（不变量 823）
 - [`name-the-snapshot-nothash-bar.md`](name-the-snapshot-nothash-bar.md) — 引擎不解释 format/hash not already light-verified AppHash / not already genesis replay / not already selected 正式三事（368 余量）（不变量 822）
 - [`name-the-snapshot-notrestored-bar.md`](name-the-snapshot-notrestored-bar.md) — 快照全字段对上 not already restored / not already complete / not already light-verified AppHash 正式三事（368 余量）（不变量 821）

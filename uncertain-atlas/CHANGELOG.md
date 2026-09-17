@@ -1,3 +1,15 @@
+## 2026-09-17（续 943）
+
+- 不变量 826；语料 C804；模式 name-the-lane-notinblock-bar；反模式 lane-notinblock-sold-as-bundled；L10.3 第 795 条。填 L4.4 / CometBFT 档案 优先级 0 留给不设道 not already in-block / not already deleted from pool / not already consensus order 正式三事（367 余量）。367 lane vs priority bundled unbundling 完成（826 item 3）。
+
+## 2026-09-17（续 942）
+
+- 不变量 825；语料 C803；模式 name-the-lane-notselected-bar；反模式 lane-notselected-sold-as-bundled；L10.3 第 794 条。填 L4.4 / CometBFT 档案 空表对空默认 not already selected / not already prioritized / not already in-block 正式三事（367 余量）。367 lane vs priority bundled unbundling 续（825 item 2）。
+
+## 2026-09-17（续 941）
+
+- 不变量 824；语料 C802；模式 name-the-lane-notpriority-bar；反模式 lane-notpriority-sold-as-bundled；L10.3 第 793 条。填 L4.4 / CometBFT 档案 没定义 lane_priorities not already prioritized / not already CheckTx Priority / not already settled 正式三事（367 余量）。367 lane vs priority bundled unbundling 启动（824 item 1）。
+
 ## 2026-09-17（续 940）
 
 - 不变量 823；语料 C801；模式 name-the-snapshot-notcomplete-bar；反模式 snapshot-notcomplete-sold-as-bundled；L10.3 第 792 条。填 L4.4 / CometBFT 档案 空快照至少 1 块 not already complete / not already consensus constant / not already restored 正式三事（368 余量）。368 snapshot vs identical bundled unbundling 完成（823 item 3）。
