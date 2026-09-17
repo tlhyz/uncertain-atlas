@@ -1,3 +1,6 @@
+- [`name-the-extmis-notkey-bar.md`](name-the-extmis-notkey-bar.md) — VerifyVoteExtensionRequest.validator_address not already has-key / not already can-verify / not already settled 正式三事（413 余量）（不变量 1039）
+- [`name-the-extmis-notheader-bar.md`](name-the-extmis-notheader-bar.md) — ExtendVoteRequest.proposer_address not already header-known / not already processed / not already settled 正式三事（413 余量）（不变量 1038）
+- [`name-the-extmis-notpunish-bar.md`](name-the-extmis-notpunish-bar.md) — ExtendVoteRequest.misbehavior not already rewarded / not already settled / not already slashed 正式三事（413 余量）（不变量 1037）
 - [`name-the-extrest-nothash-bar.md`](name-the-extrest-nothash-bar.md) — ExtendVoteRequest.next_validators_hash not already same-field / not already swapped / not already settled 正式三事（411 余量）（不变量 1036）
 - [`name-the-extrest-notlocal-bar.md`](name-the-extrest-notlocal-bar.md) — ExtendVoteRequest.proposed_last_commit not already local-settled / not already processed / not already this-header 正式三事（411 余量）（不变量 1035）
 - [`name-the-extrest-notexec-bar.md`](name-the-extrest-notexec-bar.md) — ExtendVoteRequest.txs not already executed / not already settled / not already whole-block 正式三事（411 余量）（不变量 1034）

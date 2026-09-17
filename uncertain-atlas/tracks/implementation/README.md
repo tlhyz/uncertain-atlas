@@ -651,6 +651,9 @@
 - [`worked-example-extrest-notexec-vs-bundled.md`](worked-example-extrest-notexec-vs-bundled.md) — txs≠already executed/settled/whole-block；≠411 bundled（不变量 1034）
 - [`worked-example-extreqtxs-vs-fintxs.md`](worked-example-extreqtxs-vs-fintxs.md) — ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 ≠ 已经执行那些交易；ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 ≠ 已经交差 local_last_commit；ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 ≠ 已经是 Finalize 请求栏的 next_validators_hash（不变量 411）
 - [`worked-example-initonce-vs-crash.md`](worked-example-initonce-vs-crash.md) — InitChain 创世时只调一次 ≠ 已经是崩溃后再调；应用可以决定接受创世验证者集合或用创世应用信息算出另一套 ≠ 已经没有集合；Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 ≠ 已经改了集合（不变量 412）
+- [`worked-example-extmis-notkey-vs-bundled.md`](worked-example-extmis-notkey-vs-bundled.md) — validator_address≠already has-key/can-verify/settled；≠413 bundled（不变量 1039）
+- [`worked-example-extmis-notheader-vs-bundled.md`](worked-example-extmis-notheader-vs-bundled.md) — proposer_address≠already header-known/processed/settled；≠413 bundled（不变量 1038）
+- [`worked-example-extmis-notpunish-vs-bundled.md`](worked-example-extmis-notpunish-vs-bundled.md) — misbehavior≠already rewarded/settled/slashed；≠413 bundled（不变量 1037）
 - [`worked-example-extreqmis-vs-reward.md`](worked-example-extreqmis-vs-reward.md) — ExtendVoteRequest.misbehavior 是拟议块里那些过错信息 ≠ 已经定奖惩；ExtendVoteRequest.proposer_address 是造这份提案的验证者地址 ≠ 已经知道本头哈希；VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 ≠ 已经带了公钥（不变量 413）
 - [`worked-example-exectxlog-notheader-vs-bundled.md`](worked-example-exectxlog-notheader-vs-bundled.md) — log/info 非确定≠316 printed/consensus/already settled；≠414 bundled（不变量 760）
 - [`worked-example-exectxlog-notchecktxinfo-vs-bundled.md`](worked-example-exectxlog-notchecktxinfo-vs-bundled.md) — ExecTxResult.info≠391 CheckTx info/384 Query info/already settled；≠414 bundled（不变量 759）

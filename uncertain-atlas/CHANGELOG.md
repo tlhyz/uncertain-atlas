@@ -1,3 +1,15 @@
+## 2026-09-17（续 1156）
+
+- 不变量 1039；语料 C1017；模式 name-the-extmis-notkey-bar；反模式 extmis-notkey-sold-as-bundled；L10.3 第 1008 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.validator_address not already has-key / not already can-verify / not already settled 正式三事（413 余量）。413 extreqmis vs reward bundled unbundling 完成（1039 item 3）。
+
+## 2026-09-17（续 1155）
+
+- 不变量 1038；语料 C1016；模式 name-the-extmis-notheader-bar；反模式 extmis-notheader-sold-as-bundled；L10.3 第 1007 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.proposer_address not already header-known / not already processed / not already settled 正式三事（413 余量）。413 extreqmis vs reward bundled unbundling 续（1038 item 2）。
+
+## 2026-09-17（续 1154）
+
+- 不变量 1037；语料 C1015；模式 name-the-extmis-notpunish-bar；反模式 extmis-notpunish-sold-as-bundled；L10.3 第 1006 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.misbehavior not already rewarded / not already settled / not already slashed 正式三事（413 余量）。413 extreqmis vs reward bundled unbundling 启动（1037 item 1）。
+
 ## 2026-09-17（续 1153）
 
 - 不变量 1036；语料 C1014；模式 name-the-extrest-nothash-bar；反模式 extrest-nothash-sold-as-bundled；L10.3 第 1005 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.next_validators_hash not already same-field / not already swapped / not already settled 正式三事（411 余量）。411 extreqtxs vs fintxs bundled unbundling 完成（1036 item 3）。

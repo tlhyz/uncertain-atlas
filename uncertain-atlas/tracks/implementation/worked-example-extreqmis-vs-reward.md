@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendVote 请求末栏就已经定奖惩、已经知道本头哈希、已经带了公钥」，必须分开 ExtendVoteRequest.misbehavior 是拟议块里那些过错信息是不是已经定奖惩、ExtendVoteRequest.proposer_address 是造这份提案的验证者地址是不是已经知道本头哈希、VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址是不是已经带了公钥。可以跳过「看见填了 ExtendVote 请求末栏就已经定奖惩」。不要另写怎样写 ExtendVote 请求末栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendVote 请求末栏就已经定奖惩、已经知道本头哈希、已经带了公钥」，必须分开 ExtendVoteRequest.misbehavior 是拟议块里那些过错信息是不是已经定奖惩、ExtendVoteRequest.proposer_address 是造这份提案的验证者地址是不是已经知道本头哈希、VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址是不是已经带了公钥。可以跳过「看见填了 ExtendVote 请求末栏就已经定奖惩」。不要另写怎样写 ExtendVote 请求末栏。413 extreqmis vs reward bundled unbundling 完成（1037 item 1 / 1038 item 2 / 1039 item 3）；精读 [`worked-example-extmis-notpunish-vs-bundled.md`](worked-example-extmis-notpunish-vs-bundled.md)（不变量 1037 item 1）。
 
 ## 本页不抄
 

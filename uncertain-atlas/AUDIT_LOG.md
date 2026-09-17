@@ -1,3 +1,18 @@
+| A4955 | 记录 | 会与 413 / 364 / 353 / 1037 / 1038 糊成「看见 VerifyVoteExtensionRequest.validator_address 就已经带了公钥 interchangeable、就已经能验签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.validator_address not already has-key / not already can-verify / not already settled 正式三事（413 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。413 extreqmis vs reward bundled unbundling 完成（1039 item 3） |
+| A4956 | 高 | 看见填了 validator_address 会被写成已经带了公钥 interchangeable | 官方 ExtendVote 请求末栏 item 3：not already has-key |
+| A4957 | 高 | 看见能指签扩展的人 会被写成已经能验签 interchangeable | 官方 ExtendVote 请求末栏 item 3：not already can-verify |
+| A4958 | 高 | 看见有地址 会被写成已经交差 interchangeable | 官方 ExtendVote 请求末栏 item 3：not already settled |
+| A4959 | 中 | 怎样写请求末栏会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求末栏。不另写 19 节 |
+| A4950 | 记录 | 会与 413 / 359 / 311 / 1037 / 1039 糊成「看见 ExtendVoteRequest.proposer_address 就已经知道本头哈希 interchangeable、就已经跑过 Process interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteRequest.proposer_address not already header-known / not already processed / not already settled 正式三事（413 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。413 extreqmis vs reward bundled unbundling 续（1038 item 2） |
+| A4951 | 高 | 看见填了 proposer_address 会被写成已经知道本头哈希 interchangeable / 359 interchangeable | 官方 ExtendVote 请求末栏 item 2：not already header-known / not 359 |
+| A4952 | 高 | 看见有造提案的人 会被写成已经字段名对上就已经跑过 Process interchangeable | 官方 ExtendVote 请求末栏 item 2：not already processed |
+| A4953 | 高 | 看见能指提议者 会被写成已经交差 interchangeable | 官方 ExtendVote 请求末栏 item 2：not already settled |
+| A4954 | 中 | 怎样写请求末栏会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求末栏。不另写 19 节 |
+| A4945 | 记录 | 会与 413 / 363 / 420 / 1038 / 1039 糊成「看见 ExtendVoteRequest.misbehavior 就已经定奖惩 interchangeable、就已经交差 interchangeable、就已经罚没 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteRequest.misbehavior not already rewarded / not already settled / not already slashed 正式三事（413 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。413 extreqmis vs reward bundled unbundling 启动（1037 item 1） |
+| A4946 | 高 | 看见填了 misbehavior 会被写成已经定奖惩 interchangeable / 363 interchangeable | 官方 ExtendVote 请求末栏 item 1：not already rewarded / not 363 |
+| A4947 | 高 | 看见拟议块里有过错信息 会被写成已经交差 interchangeable | 官方 ExtendVote 请求末栏 item 1：not already settled |
+| A4948 | 高 | 看见能指过错 会被写成已经定了奖惩 interchangeable | 官方 ExtendVote 请求末栏 item 1：not already slashed |
+| A4949 | 中 | 怎样写请求末栏会被抄进不确定 | 不抄。不写怎样写 ExtendVote 请求末栏。不另写 19 节 |
 | A4940 | 记录 | 会与 411 / 394 / 318 / 1034 / 1035 糊成「看见 ExtendVoteRequest.next_validators_hash 就已经是 Finalize 请求栏 interchangeable、就已经换了人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteRequest.next_validators_hash not already same-field / not already swapped / not already settled 正式三事（411 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。411 extreqtxs vs fintxs bundled unbundling 完成（1036 item 3） |
 | A4941 | 高 | 看见填了 next_validators_hash 会被写成已经是 Finalize 请求栏 interchangeable | 官方 ExtendVote Request rest item 3：not already same-field |
 | A4942 | 高 | 看见能指下一份集合 会被写成已经换了人 interchangeable | 官方 ExtendVote Request rest item 3：not already swapped |

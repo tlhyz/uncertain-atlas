@@ -1,3 +1,6 @@
+- [`extmis-notkey-sold-as-bundled.md`](extmis-notkey-sold-as-bundled.md) — validator_address 被写成已经带了公钥 / 已经能验签 / 已经交差（不变量 1039）
+- [`extmis-notheader-sold-as-bundled.md`](extmis-notheader-sold-as-bundled.md) — proposer_address 被写成已经知道本头哈希 / 已经跑过 Process / 已经交差（不变量 1038）
+- [`extmis-notpunish-sold-as-bundled.md`](extmis-notpunish-sold-as-bundled.md) — misbehavior 被写成已经定奖惩 / 已经交差 / 已经罚没（不变量 1037）
 - [`extrest-nothash-sold-as-bundled.md`](extrest-nothash-sold-as-bundled.md) — next_validators_hash 被写成已经是 Finalize 请求栏 / 已经换了人 / 已经交差（不变量 1036）
 - [`extrest-notlocal-sold-as-bundled.md`](extrest-notlocal-sold-as-bundled.md) — proposed_last_commit 被写成已经交差 local_last_commit / 已经跑过 Process / 已经是本头 LastCommit（不变量 1035）
 - [`extrest-notexec-sold-as-bundled.md`](extrest-notexec-sold-as-bundled.md) — txs 被写成已经执行那些交易 / 已经交差 / 已经整块跑了（不变量 1034）
