@@ -1,3 +1,7 @@
+## 2026-09-17（续 796）
+
+- 不变量 679；语料 C656；模式 name-the-commitretaincaution-notpersist-bar；反模式 commitretaincaution-notpersist-sold-as-bundled；L10.3 第 648 条。填 L4.4 / CometBFT 档案 Historical blocks required for auditing replay light client not Use retain_height with caution / not If all nodes remove historical blocks / not Commit Usage persist signal bundled 正式三事（491 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。491 commitretaincaution vs kept bundled unbundling 完成（679 item 3）。
+
 ## 2026-09-17（续 795）
 
 - 不变量 678；语料 C655；模式 name-the-commitretaincaution-notbootstrap-bar；反模式 commitretaincaution-notbootstrap-sold-as-bundled；L10.3 第 647 条。填 L4.4 / CometBFT 档案 If all nodes remove historical blocks not retain_height defaults to 0 retain all / not bootstrap from genesis unless state sync / not Historical blocks required for auditing replay light client 正式三事（491 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。491 commitretaincaution vs kept bundled unbundling 续（678 item 2）。
