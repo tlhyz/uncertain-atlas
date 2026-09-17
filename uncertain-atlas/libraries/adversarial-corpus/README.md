@@ -1,3 +1,9 @@
+| C975 | 997 | roundset notscale≠129/302 | 文案把优先级差被缩放 / 范围被压住 写成已经按人头轮 interchangeable 或已经和 129 interchangeable / 997 roundset-notscale interchangeable；或把看见范围被压住 写成已经没有优先级 interchangeable；或把看见按票权往前走 写成已经每人一轮 interchangeable，或已经和 302 round-vs-set bundled / roundset-notscale-sold-as-bundled interchangeable / 995 roundset-notset interchangeable / 996 roundset-notjump interchangeable |
+
+| C974 | 996 | roundset notjump≠56/302 | 文案把新加入 / 初始优先级被往后放 写成已经能跳到队头 interchangeable 或已经和 56 interchangeable / 996 roundset-notjump interchangeable；或把看见退出再加入 写成已经洗掉队尾 interchangeable；或把看见初始优先级有数 写成已经公平当过一轮 interchangeable，或已经和 302 round-vs-set bundled / roundset-notjump-sold-as-bundled interchangeable / 995 roundset-notset interchangeable / 997 roundset-notscale interchangeable |
+
+| C973 | 995 | roundset notset≠35/302 | 文案把同一高度换轮 / 还用同一套验证者 写成已经换成应用刚回的那套 interchangeable 或已经和 35 interchangeable / 995 roundset-notset interchangeable；或把看见应用回了更新 写成本高度各轮已经用上 interchangeable；或把看见下一轮换了人 写成集合已经变了 interchangeable，或已经和 302 round-vs-set bundled / roundset-notset-sold-as-bundled interchangeable / 996 roundset-notjump interchangeable / 997 roundset-notscale interchangeable |
+
 | C972 | 994 | proposed notforever≠328/301 | 文案把 CheckTx 过了 / 进了池 写成已经进块 interchangeable 或已经和 328 interchangeable / 994 proposed-notforever interchangeable；或把看见进了池 写成已经结算 interchangeable；或把看见曾经绿过 写成已经永远有效 interchangeable，或已经和 301 proposed-vs-removed bundled / proposed-notforever-sold-as-bundled interchangeable / 992 proposed-notdel interchangeable / 993 proposed-notrecheck interchangeable |
 
 | C971 | 993 | proposed notrecheck≠69/301 | 文案把本块已 commit / 本块交易从池里去掉 写成已经不用再验剩下的 interchangeable 或已经和 69 interchangeable / 993 proposed-notrecheck interchangeable；或把看见本块交易没了 写成池已经空了 interchangeable；或把看见再验开始了 写成剩下的已经永远有效 interchangeable，或已经和 301 proposed-vs-removed bundled / proposed-notrecheck-sold-as-bundled interchangeable / 992 proposed-notdel interchangeable / 994 proposed-notforever interchangeable |

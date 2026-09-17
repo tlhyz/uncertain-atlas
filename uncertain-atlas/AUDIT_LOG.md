@@ -1,3 +1,18 @@
+| A4745 | 记录 | 会与 302 / 129 / 318 / 995 / 996 糊成「看见差被缩放就已经按人头轮 interchangeable、就已经没有优先级 interchangeable、就已经每人一轮 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 优先级差被缩放 not already per-head / not already no-priority / not already equal 正式三事（302 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。302 round vs set bundled unbundling 完成（997 item 3） |
+| A4746 | 高 | 看见优先级差被缩放 会被写成已经按人头轮 interchangeable | 官方 Proposer Selection item 3：not already per-head |
+| A4747 | 高 | 看见范围被压住 会被写成已经没有优先级 interchangeable | 官方 Proposer Selection item 3：not already no-priority |
+| A4748 | 高 | 看见按票权往前走 会被写成已经每人一轮 interchangeable | 官方 Proposer Selection item 3：not already equal |
+| A4749 | 中 | 怎样算优先级会被抄进不确定 | 不抄。不写怎样算优先级或怎样缩放。不另写 19 节 |
+| A4740 | 记录 | 会与 302 / 56 / 303 / 995 / 997 糊成「看见新加入就已经能跳到队头 interchangeable、就已经洗掉队尾 interchangeable、就已经公平当过一轮 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 新加入 not already jump / not already washed / not already fair-round 正式三事（302 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。302 round vs set bundled unbundling 续（996 item 2） |
+| A4741 | 高 | 看见新验证者加进来 会被写成已经能跳到队头 interchangeable | 官方 Proposer Selection item 2：not already jump |
+| A4742 | 高 | 看见退出再加入 会被写成已经洗掉队尾 interchangeable | 官方 Proposer Selection item 2：not already washed |
+| A4743 | 高 | 看见初始优先级有数 会被写成已经公平当过一轮 interchangeable | 官方 Proposer Selection item 2：not already fair-round |
+| A4744 | 中 | 怎样算优先级会被抄进不确定 | 不抄。不写怎样算优先级或怎样缩放。不另写 19 节 |
+| A4735 | 记录 | 会与 302 / 35 / 301 / 996 / 997 糊成「看见换轮就已经换成应用刚回的那套 interchangeable、就已经本高度各轮用上 interchangeable、就已经集合变了 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 同一高度换轮 not already new-set / not already this-height / not already applied 正式三事（302 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。302 round vs set bundled unbundling 启动（995 item 1） |
+| A4736 | 高 | 看见同一高度换轮 会被写成已经换成应用刚回的那套 interchangeable / 35 interchangeable | 官方 Proposer Selection item 1：not already new-set / not 35 |
+| A4737 | 高 | 看见应用回了更新 会被写成本高度各轮已经用上 interchangeable | 官方 Proposer Selection item 1：not already this-height |
+| A4738 | 高 | 看见下一轮换了人 会被写成集合已经变了 interchangeable | 官方 Proposer Selection item 1：not already applied |
+| A4739 | 中 | 怎样算优先级会被抄进不确定 | 不抄。不写怎样算优先级或怎样缩放。不另写 19 节 |
 | A4730 | 记录 | 会与 301 / 328 / 339 / 144 / 992 / 993 糊成「看见 CheckTx 过了就已经进块 interchangeable、就已经结算 interchangeable、就已经永远有效 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 过了 not already in-block / not already settled / not already forever-valid 正式三事（301 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。301 proposed vs removed bundled unbundling 完成（994 item 3） |
 | A4731 | 高 | 看见 CheckTx 过了 会被写成已经进块 interchangeable | 官方 Mempool item 3：not already in-block |
 | A4732 | 高 | 看见进了池 会被写成已经结算 interchangeable | 官方 Mempool item 3：not already settled |

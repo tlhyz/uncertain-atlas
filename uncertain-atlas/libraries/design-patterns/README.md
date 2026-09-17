@@ -1,3 +1,6 @@
+- [`name-the-roundset-notscale-bar.md`](name-the-roundset-notscale-bar.md) — 优先级差被缩放 not already per-head / not already no-priority / not already equal 正式三事（302 余量）（不变量 997）
+- [`name-the-roundset-notjump-bar.md`](name-the-roundset-notjump-bar.md) — 新加入 not already jump / not already washed / not already fair-round 正式三事（302 余量）（不变量 996）
+- [`name-the-roundset-notset-bar.md`](name-the-roundset-notset-bar.md) — 同一高度换轮 not already new-set / not already this-height / not already applied 正式三事（302 余量）（不变量 995）
 - [`name-the-proposed-notforever-bar.md`](name-the-proposed-notforever-bar.md) — CheckTx 过了 not already in-block / not already settled / not already forever-valid 正式三事（301 余量）（不变量 994）
 - [`name-the-proposed-notrecheck-bar.md`](name-the-proposed-notrecheck-bar.md) — 本块已 commit not already skip-recheck / not already empty / not already forever 正式三事（301 余量）（不变量 993）
 - [`name-the-proposed-notdel-bar.md`](name-the-proposed-notdel-bar.md) — 提案收了 not already deleted / not already in-block / not already processed 正式三事（301 余量）（不变量 992）

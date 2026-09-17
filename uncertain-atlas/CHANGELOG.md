@@ -1,3 +1,15 @@
+## 2026-09-17（续 1114）
+
+- 不变量 997；语料 C975；模式 name-the-roundset-notscale-bar；反模式 roundset-notscale-sold-as-bundled；L10.3 第 966 条。填 L4.4 / CometBFT 档案 优先级差被缩放 not already per-head / not already no-priority / not already equal 正式三事（302 余量）。302 round vs set bundled unbundling 完成（997 item 3）。
+
+## 2026-09-17（续 1113）
+
+- 不变量 996；语料 C974；模式 name-the-roundset-notjump-bar；反模式 roundset-notjump-sold-as-bundled；L10.3 第 965 条。填 L4.4 / CometBFT 档案 新加入 not already jump / not already washed / not already fair-round 正式三事（302 余量）。302 round vs set bundled unbundling 续（996 item 2）。
+
+## 2026-09-17（续 1112）
+
+- 不变量 995；语料 C973；模式 name-the-roundset-notset-bar；反模式 roundset-notset-sold-as-bundled；L10.3 第 964 条。填 L4.4 / CometBFT 档案 同一高度换轮 not already new-set / not already this-height / not already applied 正式三事（302 余量）。302 round vs set bundled unbundling 启动（995 item 1）。
+
 ## 2026-09-17（续 1111）
 
 - 不变量 994；语料 C972；模式 name-the-proposed-notforever-bar；反模式 proposed-notforever-sold-as-bundled；L10.3 第 963 条。填 L4.4 / CometBFT 档案 CheckTx 过了 not already in-block / not already settled / not already forever-valid 正式三事（301 余量）。301 proposed vs removed bundled unbundling 完成（994 item 3）。

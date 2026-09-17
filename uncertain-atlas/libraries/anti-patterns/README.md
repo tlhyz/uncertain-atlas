@@ -1,3 +1,6 @@
+- [`roundset-notscale-sold-as-bundled.md`](roundset-notscale-sold-as-bundled.md) — 优先级差被缩放 被写成已经按人头轮 / 已经没有优先级 / 已经每人一轮（不变量 997）
+- [`roundset-notjump-sold-as-bundled.md`](roundset-notjump-sold-as-bundled.md) — 新加入 被写成已经能跳到队头 / 已经洗掉队尾 / 已经公平当过一轮（不变量 996）
+- [`roundset-notset-sold-as-bundled.md`](roundset-notset-sold-as-bundled.md) — 同一高度换轮 被写成已经换成应用刚回的那套 / 本高度各轮已经用上 / 集合已经变了（不变量 995）
 - [`proposed-notforever-sold-as-bundled.md`](proposed-notforever-sold-as-bundled.md) — CheckTx 过了 被写成已经进块 / 已经结算 / 已经永远有效（不变量 994）
 - [`proposed-notrecheck-sold-as-bundled.md`](proposed-notrecheck-sold-as-bundled.md) — 本块已 commit 被写成已经不用再验剩下的 / 池已经空了 / 剩下的已经永远有效（不变量 993）
 - [`proposed-notdel-sold-as-bundled.md`](proposed-notdel-sold-as-bundled.md) — 提案收了 被写成已经从池里删掉 / 已经进块 / 已经过了 Process（不变量 992）
