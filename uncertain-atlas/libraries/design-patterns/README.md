@@ -1,3 +1,6 @@
+- [`name-the-finalize-det-notprocess-bar.md`](name-the-finalize-det-notprocess-bar.md) — 两边状态机复制 not already Process same verdict / not already Prepare may be nondet / not already settled 正式三事（342 余量）（不变量 889）
+- [`name-the-finalize-det-notreceipt-bar.md`](name-the-finalize-det-notreceipt-bar.md) — Finalize 算出的结果必须只依赖上一份状态和决定块 not already Code/Data in header / not already same list order / not already settled 正式三事（342 余量）（不变量 888）
+- [`name-the-finalize-det-notprep-bar.md`](name-the-finalize-det-notprep-bar.md) — Finalize 算出的状态必须只依赖上一份状态和决定块 not already Prepare-style other values / not already same ruler as Prepare / not already settled 正式三事（342 余量）（不变量 887）
 - [`name-the-pbts-height-notlock-bar.md`](name-the-pbts-height-notlock-bar.md) — 启用之后不能关 not already vote-extension switch / not already can disable / not already settled 正式三事（343 余量）（不变量 886）
 - [`name-the-pbts-height-notbft-bar.md`](name-the-pbts-height-notbft-bar.md) — H 之前仍用 BFT Time not already switched to PBTS / not already MTP / not already settled 正式三事（343 余量）（不变量 885）
 - [`name-the-pbts-height-notzero-bar.md`](name-the-pbts-height-notzero-bar.md) — 写成 0 不是已经启用 PBTS not already Precision is PBTS / not already field-present / not already settled 正式三事（343 余量）（不变量 884）

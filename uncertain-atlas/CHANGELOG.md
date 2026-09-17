@@ -1,3 +1,15 @@
+## 2026-09-17（续 1006）
+
+- 不变量 889；语料 C867；模式 name-the-finalize-det-notprocess-bar；反模式 finalize-det-notprocess-sold-as-bundled；L10.3 第 858 条。填 L4.4 / CometBFT 档案 两边状态机复制 not already Process same verdict / not already Prepare may be nondet / not already settled 正式三事（342 余量）。342 finalize-det vs prepare bundled unbundling 完成（889 item 3）。
+
+## 2026-09-17（续 1005）
+
+- 不变量 888；语料 C866；模式 name-the-finalize-det-notreceipt-bar；反模式 finalize-det-notreceipt-sold-as-bundled；L10.3 第 857 条。填 L4.4 / CometBFT 档案 Finalize 算出的结果必须只依赖上一份状态和决定块 not already Code/Data in header / not already same list order / not already settled 正式三事（342 余量）。342 finalize-det vs prepare bundled unbundling 续（888 item 2）。
+
+## 2026-09-17（续 1004）
+
+- 不变量 887；语料 C865；模式 name-the-finalize-det-notprep-bar；反模式 finalize-det-notprep-sold-as-bundled；L10.3 第 856 条。填 L4.4 / CometBFT 档案 Finalize 算出的状态必须只依赖上一份状态和决定块 not already Prepare-style other values / not already same ruler as Prepare / not already settled 正式三事（342 余量）。342 finalize-det vs prepare bundled unbundling 启动（887 item 1）。
+
 ## 2026-09-17（续 1003）
 
 - 不变量 886；语料 C864；模式 name-the-pbts-height-notlock-bar；反模式 pbts-height-notlock-sold-as-bundled；L10.3 第 855 条。填 L4.4 / CometBFT 档案 启用之后不能关 not already vote-extension switch / not already can disable / not already settled 正式三事（343 余量）。343 pbts vs params bundled unbundling 完成（886 item 3）。

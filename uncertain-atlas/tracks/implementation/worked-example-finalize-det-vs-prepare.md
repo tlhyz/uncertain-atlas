@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 Prepare 那样、已经印进本头、已经是 Process 同判」，必须分开 Finalize 算出的状态必须只依赖上一份状态和决定块是不是已经可以像 Prepare 那样依赖其它值、Finalize 算出的结果必须只依赖上一份状态和决定块是不是已经是 Code/Data 印进本头、两边状态机复制是不是已经是 Process 对任意块同一裁决。可以跳过「看见必须确定就已经可以像 Prepare 那样」。不要把造出 *s_h* 当已经落盘。不要另写怎样写 FinalizeBlock。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 Prepare 那样、已经印进本头、已经是 Process 同判」，必须分开 Finalize 算出的状态必须只依赖上一份状态和决定块是不是已经可以像 Prepare 那样依赖其它值、Finalize 算出的结果必须只依赖上一份状态和决定块是不是已经是 Code/Data 印进本头、两边状态机复制是不是已经是 Process 对任意块同一裁决。可以跳过「看见必须确定就已经可以像 Prepare 那样」。不要把造出 *s_h* 当已经落盘。不要另写怎样写 FinalizeBlock。342 finalize-det vs prepare bundled unbundling 完成（887 item 1 / 888 item 2 / 889 item 3）；精读 [`worked-example-finalize-det-notprep-vs-bundled.md`](worked-example-finalize-det-notprep-vs-bundled.md)（不变量 887 item 1）。
 
 ## 本页不抄
 

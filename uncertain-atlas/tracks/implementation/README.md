@@ -152,6 +152,9 @@
 - [`worked-example-checktx-weak-vs-process.md`](worked-example-checktx-weak-vs-process.md) — 不该验排序相关有效性 ≠ 已经该在 CheckTx 里验；拜占庭能提案一满块无效交易 ≠ 已经被池子挡住；ProcessProposal 对付这种行为 ≠ 已经是 CheckTx（不变量 339）
 - [`worked-example-process-det-vs-prepare.md`](worked-example-process-det-vs-prepare.md) — Process 必须只依赖请求和上一份状态 ≠ 已经可以像 Prepare 那样依赖其它值；两边对任意块同一裁决 ≠ 已经只对诚实提案同一裁决；Process 非确定 bug 没有现成解法 ≠ 已经丢了安全性（不变量 340）
 - [`worked-example-verify-det-vs-extend.md`](worked-example-verify-det-vs-extend.md) — Verify 必须只依赖扩展、这块和上一份状态 ≠ 已经可以像 ExtendVote 那样依赖其它值；两边对任意扩展同一裁决 ≠ 已经只对诚实扩展同一裁决；Verify 非确定会伤活性 ≠ 已经丢了安全性（不变量 341）
+- [`worked-example-finalize-det-notprocess-vs-bundled.md`](worked-example-finalize-det-notprocess-vs-bundled.md) — 状态机复制≠already Process same verdict/Prepare nondet/settled；≠342 bundled（不变量 889）
+- [`worked-example-finalize-det-notreceipt-vs-bundled.md`](worked-example-finalize-det-notreceipt-vs-bundled.md) — 结果必须确定≠already header receipt/same order/settled；≠342 bundled（不变量 888）
+- [`worked-example-finalize-det-notprep-vs-bundled.md`](worked-example-finalize-det-notprep-vs-bundled.md) — 状态必须确定≠already Prepare-style/same ruler/settled；≠342 bundled（不变量 887）
 - [`worked-example-finalize-det-vs-prepare.md`](worked-example-finalize-det-vs-prepare.md) — Finalize 算出的状态必须只依赖上一份状态和决定块 ≠ 已经可以像 Prepare 那样依赖其它值；Finalize 算出的结果必须只依赖上一份状态和决定块 ≠ 已经是 Code/Data 印进本头；两边状态机复制 ≠ 已经是 Process 对任意块同一裁决（不变量 342）
 - [`worked-example-pbts-height-notlock-vs-bundled.md`](worked-example-pbts-height-notlock-vs-bundled.md) — 启用后不能关≠already vote-ext switch/can disable/settled；≠343 bundled（不变量 886）
 - [`worked-example-pbts-height-notbft-vs-bundled.md`](worked-example-pbts-height-notbft-vs-bundled.md) — H前仍用BFT Time≠already switched/MTP/settled；≠343 bundled（不变量 885）

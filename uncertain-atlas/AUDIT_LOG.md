@@ -1,3 +1,18 @@
+| A4205 | 记录 | 会与 342 / 340 / 338 / 887 / 888 糊成「看见状态机复制就已经是 Process 同判 interchangeable、就已经是 Prepare 可以不确定 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 两边状态机复制 not already Process same verdict / not already Prepare may be nondet / not already settled 正式三事（342 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。342 finalize-det vs prepare bundled unbundling 完成（889 item 3） |
+| A4206 | 高 | 看见两边状态机复制 会被写成已经是 Process 对任意块同一裁决 interchangeable | 官方 Req 11–12 item 3：not already Process same verdict |
+| A4207 | 高 | 看见两边状态一起走 会被写成已经是 Prepare 可以不确定 interchangeable | 官方 Req 11–12 item 3：not already Prepare may be nondet |
+| A4208 | 高 | 看见 Agreement 会被写成已经交差 interchangeable | 官方 Req 11–12 item 3：not already settled |
+| A4209 | 中 | 怎样写 FinalizeBlock 会被抄进不确定 | 不抄。不写怎样写 FinalizeBlock。不另写 19 节 |
+| A4200 | 记录 | 会与 342 / 316 / 338 / 887 / 889 糊成「看见结果必须确定就已经印进本头 interchangeable、就已经是回执顺序对上 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 算出的结果必须只依赖上一份状态和决定块 not already Code/Data in header / not already same list order / not already settled 正式三事（342 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。342 finalize-det vs prepare bundled unbundling 续（888 item 2） |
+| A4201 | 高 | 看见 Finalize 算出的结果必须只依赖上一份状态和决定块 会被写成已经是 Code/Data 印进本头 interchangeable | 官方 Req 12 item 2：not already Code/Data in header |
+| A4202 | 高 | 看见只依赖这两份 会被写成已经是回执顺序对上 interchangeable | 官方 Req 12 item 2：not already same list order |
+| A4203 | 高 | 看见造出了 T 会被写成已经交差 interchangeable | 官方 Req 12 item 2：not already settled |
+| A4204 | 中 | 怎样写 FinalizeBlock 会被抄进不确定 | 不抄。不写怎样写 FinalizeBlock。不另写 19 节 |
+| A4195 | 记录 | 会与 342 / 338 / 316 / 888 / 889 糊成「看见必须确定就已经可以像 Prepare 那样 interchangeable、就已经和 Prepare 同一把尺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 算出的状态必须只依赖上一份状态和决定块 not already Prepare-style other values / not already same ruler as Prepare / not already settled 正式三事（342 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。342 finalize-det vs prepare bundled unbundling 启动（887 item 1） |
+| A4196 | 高 | 看见 Finalize 算出的状态必须只依赖上一份状态和决定块 会被写成已经可以像 Prepare 那样依赖其它值 interchangeable / 338 interchangeable | 官方 Req 11 item 1：not already Prepare-style other values / not 338 |
+| A4197 | 高 | 看见只依赖上一份状态和决定块 会被写成已经和 Prepare 同一把尺 interchangeable | 官方 Req 11 item 1：not already same ruler as Prepare |
+| A4198 | 高 | 看见 Finalize 回了 会被写成已经交差 interchangeable | 官方 Req 11 item 1：not already settled |
+| A4199 | 中 | 怎样写 FinalizeBlock 会被抄进不确定 | 不抄。不写怎样写 FinalizeBlock。不另写 19 节 |
 | A4190 | 记录 | 会与 343 / 330 / 346 / 884 / 885 糊成「看见不能关就已经是扩展启用高度那种切换 interchangeable、就已经能关 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 启用之后不能关 not already vote-extension switch / not already can disable / not already settled 正式三事（343 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。343 pbts vs params bundled unbundling 完成（886 item 3） |
 | A4191 | 高 | 看见启用之后不能关 会被写成已经是扩展启用高度那种切换 interchangeable | 官方 PbtsEnableHeight item 3：not already vote-extension switch |
 | A4192 | 高 | 看见必须比当前高 会被写成已经能关 interchangeable | 官方 PbtsEnableHeight item 3：not already can disable |

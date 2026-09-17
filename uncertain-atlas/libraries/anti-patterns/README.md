@@ -1,3 +1,6 @@
+- [`finalize-det-notprocess-sold-as-bundled.md`](finalize-det-notprocess-sold-as-bundled.md) — 状态机复制 被写成已经是 Process 同判 / 已经是 Prepare 可以不确定 / 已经交差（不变量 889）
+- [`finalize-det-notreceipt-sold-as-bundled.md`](finalize-det-notreceipt-sold-as-bundled.md) — 结果必须确定 被写成已经印进本头 / 已经顺序对上 / 已经交差（不变量 888）
+- [`finalize-det-notprep-sold-as-bundled.md`](finalize-det-notprep-sold-as-bundled.md) — 状态必须确定 被写成已经可以像 Prepare 那样 / 已经同一把尺 / 已经交差（不变量 887）
 - [`pbts-height-notlock-sold-as-bundled.md`](pbts-height-notlock-sold-as-bundled.md) — 启用后不能关 被写成已经是扩展切换 / 已经能关 / 已经交差（不变量 886）
 - [`pbts-height-notbft-sold-as-bundled.md`](pbts-height-notbft-sold-as-bundled.md) — H前仍用BFT Time 被写成已经切到 PBTS / 已经是 MTP / 已经交差（不变量 885）
 - [`pbts-height-notzero-sold-as-bundled.md`](pbts-height-notzero-sold-as-bundled.md) — 写成 0 被写成已经启用 / 已经 Precision 就是 PBTS / 已经交差（不变量 884）
