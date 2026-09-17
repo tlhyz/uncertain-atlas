@@ -4,9 +4,6 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 .mypy_cache/
-cache/
+.idea/
+.vscode/
 *.log
-# generated optimize artifacts from the legacy scripts
-opt_*_results.json
-opt_*_run.log
-opt_*_demo_snippet.txt

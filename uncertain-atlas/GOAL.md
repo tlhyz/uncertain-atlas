@@ -36,7 +36,7 @@ Cursor Goal 保持 active。
 1. **现在不出题。** 试题后置，以后统一做。正文不要穿插考试。
 2. **现在就写全知识。** 按知识树和公链顺序，把课程、协议档案、横向专题、模式库写进仓库。
 3. **架构必须清晰。** 目录按「索引 / 课程 / 协议 / 专题 / 模式库 / 题库」分开。
-4. **不准和交易回测混在一起。** 本知识库只存在于 `uncertain-atlas/`。禁止改 `qtb/`、`strategies/`、`configs/` 来塞协议教材。根目录 README 最多放一行隔离说明。
+4. **不准和交易回测混在一起。** 本仓库只保留 `uncertain-atlas/`。禁止再引入网格 / 马丁 / 永续回测代码。
 
 旧规则「写完 Level 0 就停、等答题再开 Level 1」作废。
 
@@ -91,8 +91,8 @@ K 出题一律进 `exams/`，不阻塞写作。
 
 ```text
 /workspace/
-  qtb/ strategies/ configs/ ...   ← Gate 永续回测，禁止往这里写 Atlas
-  uncertain-atlas/                ← 唯一的协议知识库
+  README.md          ← 指向本知识库
+  uncertain-atlas/   ← 唯一内容：区块链架构图谱 + 设计参考
 ```
 
 ---

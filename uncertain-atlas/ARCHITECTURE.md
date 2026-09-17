@@ -1,10 +1,9 @@
 # Uncertain Atlas 架构
 
 本目录是一条链的长期知识系统。  
-它不是 Gate 网格/马丁回测工具的一部分。
+仓库内不再包含 Gate 网格 / 马丁 / 永续回测代码。
 
-交易相关代码：`/workspace/qtb`、`strategies`、`configs`、`backtest.py`。  
-协议知识：只在 `/workspace/uncertain-atlas`。
+协议知识：只在 `uncertain-atlas/`。
 
 ---
 
@@ -37,7 +36,7 @@ index 看路
 
 禁止：
 
-- 在 `qtb/` 里写协议教材
+- 把协议教材写回交易回测目录
 - 在某一条链的档案里塞完整密码学课（课在 `courses/`）
 - 在课程里塞 19 节项目报告（报告在 `protocols/`）
 - 在正文里穿插考试
