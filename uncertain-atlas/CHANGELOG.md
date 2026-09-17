@@ -1,3 +1,7 @@
+## 2026-09-17（续 768）
+
+- 不变量 651；语料 C628；模式 name-the-offersnaptrust-notverify-bar；反模式 offersnaptrust-notverify-sold-as-bundled；L10.3 第 620 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage Any other data can be spoofed not hash comparison enough / not Snapshot Verification bundled / not ApplySnapshotChunk reject refetch DoS 正式三事（483 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。483 offersnaptrust unbundling 续（651 item 2）。
+
 ## 2026-09-17（续 767）
 
 - 不变量 650；语料 C627；模式 name-the-offersnaptrust-notmetadata-bar；反模式 offersnaptrust-notmetadata-sold-as-bundled；L10.3 第 619 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage Only AppHash can be trusted not Snapshot metadata / not hash comparison / not OfferSnapshot app_hash 正式三事（483 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。483 offersnaptrust unbundling 启动（650 item 1）。

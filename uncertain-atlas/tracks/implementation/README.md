@@ -1,3 +1,4 @@
+- [`worked-example-offersnaptrust-notverify-vs-bundled.md`](worked-example-offersnaptrust-notverify-vs-bundled.md) — Any other data can be spoofed≠hash/metadata比对/332 bundled/378 reject refetch DoS；≠offersnaptrust bundled/notmetadata/nottransition（不变量 651）
 - [`worked-example-offersnaptrust-notmetadata-vs-bundled.md`](worked-example-offersnaptrust-notmetadata-vs-bundled.md) — Only AppHash can be trusted≠Snapshot metadata/368 hash比对/396 app_hash；≠offersnaptrust bundled/notverify/nottransition（不变量 650）
 - [`worked-example-fincommit-notcommitlock-vs-bundled.md`](worked-example-fincommit-notcommitlock-vs-bundled.md) — calls Commit after lock≠Commit lock/recheck/unlock；≠fincommit bundled/notsettled/notpersist（不变量 646）
 - [`worked-example-fincommit-notpersist-vs-bundled.md`](worked-example-fincommit-notpersist-vs-bundled.md) — instruct persist≠engine persist 这三份/Commit Usage signal；≠fincommit bundled/notsettled/notcommitlock（不变量 645）
