@@ -1,3 +1,6 @@
+- [`commitretaincaution-nothistorical-sold-as-bundled.md`](commitretaincaution-nothistorical-sold-as-bundled.md) — Historical blocks required 被写成已经 persist signal bundled / 已经默认 0 就等于已经在剪 / 已经 required 就代表 persist 交差（不变量 694）
+- [`commitretaincaution-notgenesis-sold-as-bundled.md`](commitretaincaution-notgenesis-sold-as-bundled.md) — all nodes remove 被写成已经能从创世再装 / 已经非零高度就等于已经在剪 / 已经切进共识就有完整历史（不变量 693）
+- [`commitretaincaution-notdefault-sold-as-bundled.md`](commitretaincaution-notdefault-sold-as-bundled.md) — caution 被写成已经默认 0 就等于已经在剪 / 已经回了高度就等于已经在剪 / 已经 persist signal bundled（不变量 692）
 - [`chktxguardusage-notsource-sold-as-bundled.md`](chktxguardusage-notsource-sold-as-bundled.md) — 才让进本地池 被写成已经来源验完 / 已经去重保证 / 已经 Code≠0 bundled（不变量 691）
 - [`chktxguardusage-notgates-sold-as-bundled.md`](chktxguardusage-notgates-sold-as-bundled.md) — every node 被写成已经别人也会跑 / 已经流言 / 已经 forever valid（不变量 690）
 - [`chktxguardusage-notoptional-sold-as-bundled.md`](chktxguardusage-notoptional-sold-as-bundled.md) — Guardian 被写成已经 optional / 已经四门已经结算 / 已经 validate-no-apply bundled（不变量 689）

@@ -1,3 +1,15 @@
+## 2026-09-17（续 811）
+
+- 不变量 694；语料 C672；模式 name-the-commitretaincaution-nothistorical-bar；反模式 commitretaincaution-nothistorical-sold-as-bundled；L10.3 第 663 条。填 L4.4 / CometBFT 档案 Commit Usage Historical blocks required not persist signal bundled / not default 0 is pruning / not required means persist already done 正式三事（491 余量）。491 commitretaincaution vs kept bundled unbundling 完成（694 item 3）。
+
+## 2026-09-17（续 810）
+
+- 不变量 693；语料 C671；模式 name-the-commitretaincaution-notgenesis-bar；反模式 commitretaincaution-notgenesis-sold-as-bundled；L10.3 第 662 条。填 L4.4 / CometBFT 档案 Commit Usage all nodes remove historical blocks not bootstrap from genesis / not non-zero retain is pruning / not entered consensus has full history 正式三事（491 余量）。491 commitretaincaution vs kept bundled unbundling 续（693 item 2）。
+
+## 2026-09-17（续 809）
+
+- 不变量 692；语料 C670；模式 name-the-commitretaincaution-notdefault-bar；反模式 commitretaincaution-notdefault-sold-as-bundled；L10.3 第 661 条。填 L4.4 / CometBFT 档案 Commit Usage Use retain_height with caution not defaults to 0 retain all / not blocks below may be removed / not persist signal bundled 正式三事（491 余量）。491 commitretaincaution vs kept bundled unbundling 启动（692 item 1）。
+
 ## 2026-09-17（续 808）
 
 - 不变量 691；语料 C669；模式 name-the-chktxguardusage-notsource-bar；反模式 chktxguardusage-notsource-sold-as-bundled；L10.3 第 660 条。填 L4.4 / CometBFT 档案 CheckTx Usage before letting into its local mempool not tx source bundled / not mempool dedup / not Code≠0 rejected bundled 正式三事（490 余量）。490 chktxguardusage vs optional bundled unbundling 完成（691 item 3）。
