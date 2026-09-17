@@ -339,6 +339,7 @@
 - [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
 - [name-the-prep-req-end](name-the-prep-req-end.md)
 - [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-preparewhen-lateext-unverified-bar](name-the-preparewhen-lateext-unverified-bar.md)
 - [name-the-verifywhen-latemay-bar](name-the-verifywhen-latemay-bar.md)
 - [name-the-verifywhen-keepdiscard-bar](name-the-verifywhen-keepdiscard-bar.md)
 - [name-the-verifywhen-status-bar](name-the-verifywhen-status-bar.md)
