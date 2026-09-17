@@ -1,3 +1,18 @@
+| A4385 | 记录 | 会与 336 / 40 / 343 / 923 / 924 糊成「看见用于 PBTS 就已经是永恒常数 interchangeable、就已经是 BFT Time 中位数 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 用于 PBTS not already eternal constant / not already BFT Time median / not already settled 正式三事（336 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。336 precision vs msgdelay bundled unbundling 完成（925 item 3） |
+| A4386 | 高 | 看见用于 PBTS 会被写成已经是永恒常数 interchangeable | 官方 SynchronyParams item 3：not already eternal constant |
+| A4387 | 高 | 看见能出合法提案 会被写成已经是 BFT Time 中位数 interchangeable | 官方 SynchronyParams item 3：not already BFT Time median |
+| A4388 | 高 | 看见用于 PBTS 会被写成已经交差 interchangeable | 官方 SynchronyParams item 3：not already settled |
+| A4389 | 中 | 怎样设 PRECISION / MSGDELAY 会被抄进不确定 | 不抄。不写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。不另写 19 节 |
+| A4380 | 记录 | 会与 336 / 330 / 327 / 923 / 925 糊成「看见填了两个就已经启用 PBTS interchangeable、就已经不能关 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 填了两个 not already PBTS enabled / not already cannot-disable / not already settled 正式三事（336 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。336 precision vs msgdelay bundled unbundling 续（924 item 2） |
+| A4381 | 高 | 看见填了两个 会被写成已经启用 PBTS interchangeable | 官方 SynchronyParams item 2：not already PBTS enabled |
+| A4382 | 高 | 看见写了用于 PBTS 会被写成已经不能关 interchangeable | 官方 SynchronyParams item 2：not already cannot-disable |
+| A4383 | 高 | 看见参数在 会被写成已经交差 interchangeable | 官方 SynchronyParams item 2：not already settled |
+| A4384 | 中 | 怎样设 PRECISION / MSGDELAY 会被抄进不确定 | 不抄。不写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。不另写 19 节 |
+| A4375 | 记录 | 会与 336 / 40 / 330 / 924 / 925 糊成「看见填了 Precision 就已经是 MessageDelay interchangeable、就已经 timely interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 填了 Precision not already MessageDelay / not already timely / not already settled 正式三事（336 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。336 precision vs msgdelay bundled unbundling 启动（923 item 1） |
+| A4376 | 高 | 看见填了 Precision 会被写成已经是 MessageDelay interchangeable / 40 interchangeable | 官方 SynchronyParams item 1：not already MessageDelay / not 40 |
+| A4377 | 高 | 看见钟偏有界 会被写成已经 timely interchangeable | 官方 SynchronyParams item 1：not already timely |
+| A4378 | 高 | 看见能出合法提案 会被写成已经交差 interchangeable | 官方 SynchronyParams item 1：not already settled |
+| A4379 | 中 | 怎样设 PRECISION / MSGDELAY 会被抄进不确定 | 不抄。不写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。不另写 19 节 |
 | A4370 | 记录 | 会与 331 / 63 / 337 / 920 / 921 糊成「看见证据这边有 MaxBytes 就已经是块 MaxBytes interchangeable、就已经是写成 -1 的那条 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 证据 MaxBytes not already block MaxBytes / not already unlimited-minus-one / not already settled 正式三事（331 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。331 evidence-maxbytes vs block bundled unbundling 完成（922 item 3） |
 | A4371 | 高 | 看见证据 MaxBytes 会被写成已经是块 MaxBytes interchangeable | 官方 EvidenceParams.MaxBytes item 3：not already block MaxBytes |
 | A4372 | 高 | 看见填了数 会被写成已经是写成 -1 的那条 interchangeable | 官方 EvidenceParams.MaxBytes item 3：not already unlimited-minus-one |

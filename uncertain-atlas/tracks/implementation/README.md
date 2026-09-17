@@ -167,6 +167,9 @@
 - [`worked-example-finalize-persist-notfin-vs-bundled.md`](worked-example-finalize-persist-notfin-vs-bundled.md) — 必须在Commit落盘≠already in Finalize/unlocked/settled；≠335 bundled（不变量 903）
 - [`worked-example-finalize-persist-notdisk-vs-bundled.md`](worked-example-finalize-persist-notdisk-vs-bundled.md) — Finalize改了状态≠already persisted/Commit/settled；≠335 bundled（不变量 902）
 - [`worked-example-finalize-persist-vs-commit.md`](worked-example-finalize-persist-vs-commit.md) — Finalize 改了状态 ≠ 已经落盘；必须在 Commit 落盘 ≠ 已经在 Finalize 落了；记住上次成功 Commit 高度 ≠ 已经能跳步（不变量 335）
+- [`worked-example-precision-notconst-vs-bundled.md`](worked-example-precision-notconst-vs-bundled.md) — 用于PBTS≠already eternal/BFT Time median/settled；≠336 bundled（不变量 925）
+- [`worked-example-precision-noton-vs-bundled.md`](worked-example-precision-noton-vs-bundled.md) — 填了两个≠already PBTS on/cannot-disable/settled；≠336 bundled（不变量 924）
+- [`worked-example-precision-notmsg-vs-bundled.md`](worked-example-precision-notmsg-vs-bundled.md) — Precision≠already MessageDelay/timely/settled；≠336 bundled（不变量 923）
 - [`worked-example-precision-vs-msgdelay.md`](worked-example-precision-vs-msgdelay.md) — 填了 Precision ≠ 已经是 MessageDelay；填了两个 ≠ 已经启用 PBTS；用于 PBTS ≠ 已经是永恒常数（不变量 336）
 - [`worked-example-maxbytes-cap-not21-vs-bundled.md`](worked-example-maxbytes-cap-not21-vs-bundled.md) — 合法范围≠already default-21/bandwidth-evaluated/settled；≠337 bundled（不变量 919）
 - [`worked-example-maxbytes-cap-notapp-vs-bundled.md`](worked-example-maxbytes-cap-notapp-vs-bundled.md) — 应用自己卡≠already engine-off/only-app-ruler/settled；≠337 bundled（不变量 918）

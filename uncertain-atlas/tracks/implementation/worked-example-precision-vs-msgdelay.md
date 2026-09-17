@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「填了 Precision 就已经是 MessageDelay、已经启用 PBTS、已经是永恒常数」，必须分开 Precision 是不是已经是 MessageDelay、填了两个是不是已经启用 PBTS、用于 PBTS 是不是已经是永恒常数。可以跳过「看见填了同步参数就已经是 PBTS」。不要另写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「填了 Precision 就已经是 MessageDelay、已经启用 PBTS、已经是永恒常数」，必须分开 Precision 是不是已经是 MessageDelay、填了两个是不是已经启用 PBTS、用于 PBTS 是不是已经是永恒常数。可以跳过「看见填了同步参数就已经是 PBTS」。不要另写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。336 precision vs msgdelay bundled unbundling 完成（923 item 1 / 924 item 2 / 925 item 3）；精读 [`worked-example-precision-notmsg-vs-bundled.md`](worked-example-precision-notmsg-vs-bundled.md)（不变量 923 item 1）。
 
 ## 本页不抄
 

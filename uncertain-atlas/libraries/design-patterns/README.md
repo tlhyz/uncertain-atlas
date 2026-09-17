@@ -1,3 +1,6 @@
+- [`name-the-precision-notconst-bar.md`](name-the-precision-notconst-bar.md) — 用于 PBTS not already eternal constant / not already BFT Time median / not already settled 正式三事（336 余量）（不变量 925）
+- [`name-the-precision-noton-bar.md`](name-the-precision-noton-bar.md) — 填了两个 not already PBTS enabled / not already cannot-disable / not already settled 正式三事（336 余量）（不变量 924）
+- [`name-the-precision-notmsg-bar.md`](name-the-precision-notmsg-bar.md) — 填了 Precision not already MessageDelay / not already timely / not already settled 正式三事（336 余量）（不变量 923）
 - [`name-the-evidence-maxbytes-notblock-bar.md`](name-the-evidence-maxbytes-notblock-bar.md) — 证据 MaxBytes not already block MaxBytes / not already unlimited-minus-one / not already settled 正式三事（331 余量）（不变量 922）
 - [`name-the-evidence-maxbytes-notunbond-bar.md`](name-the-evidence-maxbytes-notunbond-bar.md) — MaxBytes > 0 not already covering unbonding / not already enough to punish / not already settled 正式三事（331 余量）（不变量 921）
 - [`name-the-evidence-maxbytes-notunder-bar.md`](name-the-evidence-maxbytes-notunder-bar.md) — 填了证据 MaxBytes not already under block cap / not already overhead-deducted / not already settled 正式三事（331 余量）（不变量 920）

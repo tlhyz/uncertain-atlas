@@ -1,3 +1,6 @@
+- [`precision-notconst-sold-as-bundled.md`](precision-notconst-sold-as-bundled.md) — 用于 PBTS 被写成已经是永恒常数 / 已经是 BFT Time 中位数 / 已经交差（不变量 925）
+- [`precision-noton-sold-as-bundled.md`](precision-noton-sold-as-bundled.md) — 填了两个 被写成已经启用 PBTS / 已经不能关 / 已经交差（不变量 924）
+- [`precision-notmsg-sold-as-bundled.md`](precision-notmsg-sold-as-bundled.md) — 填了 Precision 被写成已经是 MessageDelay / 已经 timely / 已经交差（不变量 923）
 - [`evidence-maxbytes-notblock-sold-as-bundled.md`](evidence-maxbytes-notblock-sold-as-bundled.md) — 证据 MaxBytes 被写成已经是块 MaxBytes / 已经是写成 -1 的那条 / 已经交差（不变量 922）
 - [`evidence-maxbytes-notunbond-sold-as-bundled.md`](evidence-maxbytes-notunbond-sold-as-bundled.md) — MaxBytes > 0 被写成已经盖住解绑 / 已经够罚 / 已经交差（不变量 921）
 - [`evidence-maxbytes-notunder-sold-as-bundled.md`](evidence-maxbytes-notunder-sold-as-bundled.md) — 填了证据 MaxBytes 被写成已经落在块上限下面 / 已经扣掉开销 / 已经交差（不变量 920）

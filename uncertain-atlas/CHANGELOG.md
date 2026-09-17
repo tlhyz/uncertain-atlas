@@ -1,3 +1,15 @@
+## 2026-09-17（续 1042）
+
+- 不变量 925；语料 C903；模式 name-the-precision-notconst-bar；反模式 precision-notconst-sold-as-bundled；L10.3 第 894 条。填 L4.4 / CometBFT 档案 用于 PBTS not already eternal constant / not already BFT Time median / not already settled 正式三事（336 余量）。336 precision vs msgdelay bundled unbundling 完成（925 item 3）。
+
+## 2026-09-17（续 1041）
+
+- 不变量 924；语料 C902；模式 name-the-precision-noton-bar；反模式 precision-noton-sold-as-bundled；L10.3 第 893 条。填 L4.4 / CometBFT 档案 填了两个 not already PBTS enabled / not already cannot-disable / not already settled 正式三事（336 余量）。336 precision vs msgdelay bundled unbundling 续（924 item 2）。
+
+## 2026-09-17（续 1040）
+
+- 不变量 923；语料 C901；模式 name-the-precision-notmsg-bar；反模式 precision-notmsg-sold-as-bundled；L10.3 第 892 条。填 L4.4 / CometBFT 档案 填了 Precision not already MessageDelay / not already timely / not already settled 正式三事（336 余量）。336 precision vs msgdelay bundled unbundling 启动（923 item 1）。
+
 ## 2026-09-17（续 1039）
 
 - 不变量 922；语料 C900；模式 name-the-evidence-maxbytes-notblock-bar；反模式 evidence-maxbytes-notblock-sold-as-bundled；L10.3 第 891 条。填 L4.4 / CometBFT 档案 证据 MaxBytes not already block MaxBytes / not already unlimited-minus-one / not already settled 正式三事（331 余量）。331 evidence-maxbytes vs block bundled unbundling 完成（922 item 3）。
