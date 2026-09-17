@@ -1,3 +1,6 @@
+- [`name-the-ve-height-notlegal-bar.md`](name-the-ve-height-notlegal-bar.md) — h < H 带了扩展 not already legal / not already enabled / not already settled 正式三事（330 余量）（不变量 928）
+- [`name-the-ve-height-notthis-bar.md`](name-the-ve-height-notthis-bar.md) — H+1 带了扩展 not already this-height just-signed / not already this-height e / not already settled 正式三事（330 余量）（不变量 927）
+- [`name-the-ve-height-notprep-bar.md`](name-the-ve-height-notprep-bar.md) — 到了 H not already Prepare carrying extensions / not already written into this-height proposal / not already settled 正式三事（330 余量）（不变量 926）
 - [`name-the-precision-notconst-bar.md`](name-the-precision-notconst-bar.md) — 用于 PBTS not already eternal constant / not already BFT Time median / not already settled 正式三事（336 余量）（不变量 925）
 - [`name-the-precision-noton-bar.md`](name-the-precision-noton-bar.md) — 填了两个 not already PBTS enabled / not already cannot-disable / not already settled 正式三事（336 余量）（不变量 924）
 - [`name-the-precision-notmsg-bar.md`](name-the-precision-notmsg-bar.md) — 填了 Precision not already MessageDelay / not already timely / not already settled 正式三事（336 余量）（不变量 923）

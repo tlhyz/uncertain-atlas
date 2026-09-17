@@ -1,3 +1,15 @@
+## 2026-09-17（续 1045）
+
+- 不变量 928；语料 C906；模式 name-the-ve-height-notlegal-bar；反模式 ve-height-notlegal-sold-as-bundled；L10.3 第 897 条。填 L4.4 / CometBFT 档案 h < H 带了扩展 not already legal / not already enabled / not already settled 正式三事（330 余量）。330 ve-height vs prepare bundled unbundling 完成（928 item 3）。
+
+## 2026-09-17（续 1044）
+
+- 不变量 927；语料 C905；模式 name-the-ve-height-notthis-bar；反模式 ve-height-notthis-sold-as-bundled；L10.3 第 896 条。填 L4.4 / CometBFT 档案 H+1 带了扩展 not already this-height just-signed / not already this-height e / not already settled 正式三事（330 余量）。330 ve-height vs prepare bundled unbundling 续（927 item 2）。
+
+## 2026-09-17（续 1043）
+
+- 不变量 926；语料 C904；模式 name-the-ve-height-notprep-bar；反模式 ve-height-notprep-sold-as-bundled；L10.3 第 895 条。填 L4.4 / CometBFT 档案 到了 H not already Prepare carrying extensions / not already written into this-height proposal / not already settled 正式三事（330 余量）。330 ve-height vs prepare bundled unbundling 启动（926 item 1）。
+
 ## 2026-09-17（续 1042）
 
 - 不变量 925；语料 C903；模式 name-the-precision-notconst-bar；反模式 precision-notconst-sold-as-bundled；L10.3 第 894 条。填 L4.4 / CometBFT 档案 用于 PBTS not already eternal constant / not already BFT Time median / not already settled 正式三事（336 余量）。336 precision vs msgdelay bundled unbundling 完成（925 item 3）。

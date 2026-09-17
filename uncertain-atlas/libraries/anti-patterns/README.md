@@ -1,3 +1,6 @@
+- [`ve-height-notlegal-sold-as-bundled.md`](ve-height-notlegal-sold-as-bundled.md) — h < H 带了扩展 被写成已经合法 / 已经启用 / 已经交差（不变量 928）
+- [`ve-height-notthis-sold-as-bundled.md`](ve-height-notthis-sold-as-bundled.md) — H+1 带了扩展 被写成已经是本高度刚签的 / 已经是这一高的 e / 已经交差（不变量 927）
+- [`ve-height-notprep-sold-as-bundled.md`](ve-height-notprep-sold-as-bundled.md) — 到了 H 被写成已经 Prepare 带了扩展 / 已经写进本高提议 / 已经交差（不变量 926）
 - [`precision-notconst-sold-as-bundled.md`](precision-notconst-sold-as-bundled.md) — 用于 PBTS 被写成已经是永恒常数 / 已经是 BFT Time 中位数 / 已经交差（不变量 925）
 - [`precision-noton-sold-as-bundled.md`](precision-noton-sold-as-bundled.md) — 填了两个 被写成已经启用 PBTS / 已经不能关 / 已经交差（不变量 924）
 - [`precision-notmsg-sold-as-bundled.md`](precision-notmsg-sold-as-bundled.md) — 填了 Precision 被写成已经是 MessageDelay / 已经 timely / 已经交差（不变量 923）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「到了 H 就已经 Prepare 带了扩展、已经是本高度刚签的、已经合法」，必须分开到了 H 是不是已经 Prepare 带了扩展、H+1 带了扩展是不是已经是本高度刚签的、h < H 带了扩展是不是已经合法。可以跳过「看见到了 H 就已经切到 ABCI 2.0」。不要另写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「到了 H 就已经 Prepare 带了扩展、已经是本高度刚签的、已经合法」，必须分开到了 H 是不是已经 Prepare 带了扩展、H+1 带了扩展是不是已经是本高度刚签的、h < H 带了扩展是不是已经合法。可以跳过「看见到了 H 就已经切到 ABCI 2.0」。不要另写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。330 ve-height vs prepare bundled unbundling 完成（926 item 1 / 927 item 2 / 928 item 3）；精读 [`worked-example-ve-height-notprep-vs-bundled.md`](worked-example-ve-height-notprep-vs-bundled.md)（不变量 926 item 1）。
 
 ## 本页不抄
 

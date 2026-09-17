@@ -1,3 +1,18 @@
+| A4400 | 记录 | 会与 330 / 34 / 346 / 926 / 927 糊成「看见 h < H 带了扩展就已经合法 interchangeable、就已经启用 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 h < H 带了扩展 not already legal / not already enabled / not already settled 正式三事（330 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。330 ve-height vs prepare bundled unbundling 完成（928 item 3） |
+| A4401 | 高 | 看见 h < H 的预提交带了扩展 会被写成已经合法 interchangeable | 官方 VoteExtensionsEnableHeight item 3：not already legal |
+| A4402 | 高 | 看见字段在 会被写成已经启用 interchangeable | 官方 VoteExtensionsEnableHeight item 3：not already enabled |
+| A4403 | 高 | 看见字段在 会被写成已经交差 interchangeable | 官方 VoteExtensionsEnableHeight item 3：not already settled |
+| A4404 | 中 | 怎样设 VoteExtensionsEnableHeight 会被抄进不确定 | 不抄。不写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。不另写 19 节 |
+| A4395 | 记录 | 会与 330 / 58 / 35 / 926 / 928 糊成「看见 H+1 带了扩展就已经是本高度刚签的 interchangeable、就已经是这一高的 e interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 H+1 带了扩展 not already this-height just-signed / not already this-height e / not already settled 正式三事（330 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。330 ve-height vs prepare bundled unbundling 续（927 item 2） |
+| A4396 | 高 | 看见 H+1 带了扩展 会被写成已经是本高度刚签的 interchangeable | 官方 VoteExtensionsEnableHeight item 2：not already this-height just-signed |
+| A4397 | 高 | 看见 Prepare 列表里有扩展 会被写成已经是这一高的 e interchangeable | 官方 VoteExtensionsEnableHeight item 2：not already this-height e |
+| A4398 | 高 | 看见 Prepare 列表里有扩展 会被写成已经交差 interchangeable | 官方 VoteExtensionsEnableHeight item 2：not already settled |
+| A4399 | 中 | 怎样设 VoteExtensionsEnableHeight 会被抄进不确定 | 不抄。不写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。不另写 19 节 |
+| A4390 | 记录 | 会与 330 / 34 / 336 / 927 / 928 糊成「看见到了 H 就已经 Prepare 带了扩展 interchangeable、就已经写进本高提议 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 到了 H not already Prepare carrying extensions / not already written into this-height proposal / not already settled 正式三事（330 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。330 ve-height vs prepare bundled unbundling 启动（926 item 1） |
+| A4391 | 高 | 看见到了 H 会被写成已经 Prepare 带了扩展 interchangeable / 34 interchangeable | 官方 VoteExtensionsEnableHeight item 1：not already Prepare carrying extensions / not 34 |
+| A4392 | 高 | 看见已经叫了 ExtendVote 会被写成已经写进本高提议 interchangeable | 官方 VoteExtensionsEnableHeight item 1：not already written into this-height proposal |
+| A4393 | 高 | 看见已经叫了 ExtendVote 会被写成已经交差 interchangeable | 官方 VoteExtensionsEnableHeight item 1：not already settled |
+| A4394 | 中 | 怎样设 VoteExtensionsEnableHeight 会被抄进不确定 | 不抄。不写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。不另写 19 节 |
 | A4385 | 记录 | 会与 336 / 40 / 343 / 923 / 924 糊成「看见用于 PBTS 就已经是永恒常数 interchangeable、就已经是 BFT Time 中位数 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 用于 PBTS not already eternal constant / not already BFT Time median / not already settled 正式三事（336 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5。336 precision vs msgdelay bundled unbundling 完成（925 item 3） |
 | A4386 | 高 | 看见用于 PBTS 会被写成已经是永恒常数 interchangeable | 官方 SynchronyParams item 3：not already eternal constant |
 | A4387 | 高 | 看见能出合法提案 会被写成已经是 BFT Time 中位数 interchangeable | 官方 SynchronyParams item 3：not already BFT Time median |
