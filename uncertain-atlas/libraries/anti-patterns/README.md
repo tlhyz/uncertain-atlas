@@ -1,3 +1,4 @@
+- [`loadsnapusage-notdiscover-sold-as-bundled.md`](loadsnapusage-notdiscover-sold-as-bundled.md) — retrieve from peers 被写成已经 ListSnapshots discover / 已经本地清单 / 已经问了邻居就齐（不变量 659）
 - [`loadsnapusage-notretrieve-sold-as-bundled.md`](loadsnapusage-notretrieve-sold-as-bundled.md) — Used during state sync to retrieve 被写成已经 LoadSnapshotChunk bundled / 已经 Offer 装完 / 已经 Transition to Consensus（不变量 658）
 - [`applysnapusage-notunless-sold-as-bundled.md`](applysnapusage-notunless-sold-as-bundled.md) — unless instructed 被写成已经引擎自动 refetch / 已经引擎自动封邻居 / 已经 unable retrieve 换快照（不变量 657）
 - [`applysnapusage-notchoose-sold-as-bundled.md`](applysnapusage-notchoose-sold-as-bundled.md) — can choose refetch/ban 被写成已经 refetch/ban bundled / 已经 RETRY / 已经封邻居就交差（不变量 656）

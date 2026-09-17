@@ -1,3 +1,4 @@
+- [`worked-example-loadsnapusage-notdiscover-vs-bundled.md`](worked-example-loadsnapusage-notdiscover-vs-bundled.md) — retrieve from peers≠500 ListSnapshots discover/395 空请求 bundled/322 Snapshot Discovery；≠501 bundled（不变量 659）
 - [`worked-example-loadsnapusage-notretrieve-vs-bundled.md`](worked-example-loadsnapusage-notretrieve-vs-bundled.md) — Used during state sync to retrieve≠375 LoadSnapshotChunk bundled/321 Offer装完/323 Transition；≠501 bundled（不变量 658）
 - [`worked-example-applysnapusage-notunless-vs-bundled.md`](worked-example-applysnapusage-notunless-vs-bundled.md) — unless instructed≠378 auto refetch/ban/485 unable retrieve；≠502 bundled/notchoose（不变量 657）
 - [`worked-example-applysnapusage-notchoose-vs-bundled.md`](worked-example-applysnapusage-notchoose-vs-bundled.md) — can choose refetch/ban≠378 refetch_chunks/reject_senders/398 RETRY；≠502 bundled/notunless（不变量 656）

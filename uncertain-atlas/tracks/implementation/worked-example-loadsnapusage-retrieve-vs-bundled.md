@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 LoadSnapshotChunk Usage retrieve 正式三事，必须分开 Used during state sync to retrieve 是不是 LoadSnapshotChunk bundled interchangeable / 已经装完 / 已经切进共识、retrieve from peers 是不是 ListSnapshots discover interchangeable / 已经本地清单 / 已经问了邻居就齐、retrieve snapshot chunks 是不是 ApplySnapshotChunk chunk 栏 interchangeable / 已经齐 / 已经 ACCEPT。可以跳过「看见 LoadSnapshotChunk Usage 了就已经 bundled interchangeable、已经 discover interchangeable、已经 Apply 了 interchangeable」。不要另写怎样写 LoadSnapshotChunk、怎样切块。501 loadsnapusage retrieve unbundling 在本页 item 1 启动；精读 [`worked-example-loadsnapusage-notretrieve-vs-bundled.md`](worked-example-loadsnapusage-notretrieve-vs-bundled.md)（不变量 658 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 LoadSnapshotChunk Usage retrieve 正式三事，必须分开 Used during state sync to retrieve 是不是 LoadSnapshotChunk bundled interchangeable / 已经装完 / 已经切进共识、retrieve from peers 是不是 ListSnapshots discover interchangeable / 已经本地清单 / 已经问了邻居就齐、retrieve snapshot chunks 是不是 ApplySnapshotChunk chunk 栏 interchangeable / 已经齐 / 已经 ACCEPT。可以跳过「看见 LoadSnapshotChunk Usage 了就已经 bundled interchangeable、已经 discover interchangeable、已经 Apply 了 interchangeable」。不要另写怎样写 LoadSnapshotChunk、怎样切块。501 loadsnapusage retrieve unbundling 在本页 item 1 启动；精读 [`worked-example-loadsnapusage-notretrieve-vs-bundled.md`](worked-example-loadsnapusage-notretrieve-vs-bundled.md)（不变量 658 item 1）；续 [`worked-example-loadsnapusage-notdiscover-vs-bundled.md`](worked-example-loadsnapusage-notdiscover-vs-bundled.md)（不变量 659 item 2）。
 
 ## 本页不抄
 
