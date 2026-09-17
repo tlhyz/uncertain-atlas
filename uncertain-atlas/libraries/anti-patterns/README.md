@@ -1,3 +1,6 @@
+- [`infover-nothandshake-sold-as-bundled.md`](infover-nothandshake-sold-as-bundled.md) — abci_version 被写成已经是握手对齐 / 已经排了优先 / 已经交差（不变量 793）
+- [`infover-notaligned-sold-as-bundled.md`](infover-notaligned-sold-as-bundled.md) — 两列被写成已经版本也对上 / 已经有完整历史 / 已经交差（不变量 792）
+- [`infover-notappver-sold-as-bundled.md`](infover-notappver-sold-as-bundled.md) — Info 请求 version 被写成已经是 app_version / 已经印进本头 AppHash / 已经交差（不变量 791）
 - [`queryindex-notapphash-sold-as-bundled.md`](queryindex-notapphash-sold-as-bundled.md) — value 被写成已经对上 AppHash / 已经复制到各节点 / 已经交差（不变量 790）
 - [`queryindex-notheight-sold-as-bundled.md`](queryindex-notheight-sold-as-bundled.md) — key 被写成已经是 Query 高度 / 已经新鲜 / 已经交差（不变量 789）
 - [`queryindex-notstore-sold-as-bundled.md`](queryindex-notstore-sold-as-bundled.md) — index 被写成已经是按键查 / 已经对上 AppHash / 已经交差（不变量 788）

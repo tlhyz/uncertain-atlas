@@ -332,6 +332,9 @@
 - [`worked-example-proposalstatus-vs-prevote.md`](worked-example-proposalstatus-vs-prevote.md) — UNKNOWN 一律是错、引擎当应用坏了会崩 ≠ 已经是四门已经结算；ACCEPT 表示应用认为提案合法、共识会发 Prevote ≠ 已经交差；REJECT 表示应用认为提案非法、共识会发 Prevote nil ≠ 已经能稍后改裁决（不变量 376）
 - [`worked-example-querypath-vs-store.md`](worked-example-querypath-vs-store.md) — data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 ≠ 已经是 Query 高度；path 按 URI 路径解释、/store 必须按键查 ≠ 已经是引擎在用；规范建议允许 /accounts / /votes 这类查询 ≠ 已经是正常运转必须有（不变量 377）
 - [`worked-example-refetch-vs-restored.md`](worked-example-refetch-vs-restored.md) — 应用可以再拉块或封邻居、引擎不自己做 ≠ 已经封了；refetch_chunks 不论 result 都再拉再装 ≠ 已经齐；reject_senders 不论 Result 都拒这些人 ≠ 已经能接着装（不变量 378）
+- [`worked-example-infover-nothandshake-vs-bundled.md`](worked-example-infover-nothandshake-vs-bundled.md) — abci_version≠370 handshake/367 prioritized/settled；≠379 bundled（不变量 793）
+- [`worked-example-infover-notaligned-vs-bundled.md`](worked-example-infover-notaligned-vs-bundled.md) — block/p2p version≠323 aligned/full history/settled；≠379 bundled（不变量 792）
+- [`worked-example-infover-notappver-vs-bundled.md`](worked-example-infover-notappver-vs-bundled.md) — Info request version≠370 app_version/header AppHash/settled；≠379 bundled（不变量 791）
 - [`worked-example-infover-vs-appversion.md`](worked-example-infover-vs-appversion.md) — Info 请求 version 是 CometBFT 软件语义版本 ≠ 已经是 app_version；block_version / p2p_version 是引擎块版本和 P2P 版本 ≠ 已经版本也对上；abci_version 是 ABCI 语义版本、按 X.X.x 显示 ≠ 已经是握手对齐（不变量 379）
 - [`worked-example-queryindex-notapphash-vs-bundled.md`](worked-example-queryindex-notapphash-vs-bundled.md) — value≠325 AppHash/329 replicated/settled；≠380 bundled（不变量 790）
 - [`worked-example-queryindex-notheight-vs-bundled.md`](worked-example-queryindex-notheight-vs-bundled.md) — key≠371 Query height/fresh/settled；≠380 bundled（不变量 789）

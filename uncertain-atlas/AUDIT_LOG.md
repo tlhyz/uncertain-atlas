@@ -1,3 +1,18 @@
+| A3725 | 记录 | 会与 379 / 370 / 367 / 791 / 792 糊成「看见写了 ABCI 版本就已经是握手对齐 interchangeable、就已经排了优先 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 abci_version not already handshake / not already prioritized / not already settled 正式三事（379 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。379 infover vs appversion bundled unbundling 完成（793 item 3） |
+| A3726 | 高 | 看见 abci_version 会被写成已经是握手对齐 interchangeable / 370 interchangeable | 官方 Info 请求版本 item 3：not already handshake / not 370 |
+| A3727 | 高 | 看见写了语义版本 会被写成已经排了优先 interchangeable / 367 interchangeable | 官方 Info 请求版本 item 3：not already prioritized / not 367 |
+| A3728 | 高 | 看见有脚注 会被写成已经交差 interchangeable | 官方 Info 请求版本 item 3：not already settled |
+| A3729 | 中 | 怎样写 Info 请求版本 会被抄进不确定 | 不抄。不写怎样写 Info 请求版本。不另写 19 节 |
+| A3720 | 记录 | 会与 379 / 323 / 382 / 782 / 791 / 793 糊成「看见填了两列就已经版本也对上 interchangeable、就已经有完整历史 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 block_version / p2p_version not already versions aligned / not already full history / not already settled 正式三事（379 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。379 infover vs appversion bundled unbundling 续（792 item 2） |
+| A3721 | 高 | 看见 block_version / p2p_version 会被写成已经版本也对上 interchangeable / 323 interchangeable | 官方 Info 请求版本 item 2：not already versions aligned / not 323 |
+| A3722 | 高 | 看见填了两列 会被写成已经有完整历史 interchangeable | 官方 Info 请求版本 item 2：not already full history |
+| A3723 | 高 | 看见有 P2P 版本 会被写成已经交差 interchangeable | 官方 Info 请求版本 item 2：not already settled |
+| A3724 | 中 | 怎样写 Info 请求版本 会被抄进不确定 | 不抄。不写怎样写 Info 请求版本。不另写 19 节 |
+| A3715 | 记录 | 会与 379 / 370 / 389 / 762 / 385 / 775 / 792 / 793 糊成「看见填了 version 就已经是 app_version interchangeable、就已经印进本头 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 请求 version not already app_version / not already header AppHash / not already settled 正式三事（379 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。379 infover vs appversion bundled unbundling 启动（791 item 1） |
+| A3716 | 高 | 看见 Info 请求 version 会被写成已经是 app_version interchangeable / 370 interchangeable | 官方 Info 请求版本 item 1：not already app_version / not 370 |
+| A3717 | 高 | 看见填了 version 会被写成已经印进本头 AppHash interchangeable / 370 interchangeable | 官方 Info 请求版本 item 1：not already header AppHash / not 370 |
+| A3718 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 Info 请求版本 item 1：not already settled |
+| A3719 | 中 | 怎样写 Info 请求版本 会被抄进不确定 | 不抄。不写怎样写 Info 请求版本。不另写 19 节 |
 | A3710 | 记录 | 会与 380 / 325 / 329 / 788 / 789 糊成「看见回了值就已经对上 AppHash interchangeable、就已经复制到各节点 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回包 value not already AppHash matched / not already replicated / not already settled 正式三事（380 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。380 queryindex vs store bundled unbundling 完成（790 item 3） |
 | A3711 | 高 | 看见 Query 回包 value 会被写成已经对上 AppHash interchangeable / 325 interchangeable | 官方 Query 回包 item 3：not already AppHash matched / not 325 |
 | A3712 | 高 | 看见回了值 会被写成已经复制到各节点 interchangeable / 329 interchangeable | 官方 Query 回包 item 3：not already replicated / not 329 |

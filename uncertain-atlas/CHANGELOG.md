@@ -1,3 +1,15 @@
+## 2026-09-17（续 910）
+
+- 不变量 793；语料 C771；模式 name-the-infover-nothandshake-bar；反模式 infover-nothandshake-sold-as-bundled；L10.3 第 762 条。填 L4.4 / CometBFT 档案 abci_version not already handshake / not already prioritized / not already settled 正式三事（379 余量）。379 infover vs appversion bundled unbundling 完成（793 item 3）。
+
+## 2026-09-17（续 909）
+
+- 不变量 792；语料 C770；模式 name-the-infover-notaligned-bar；反模式 infover-notaligned-sold-as-bundled；L10.3 第 761 条。填 L4.4 / CometBFT 档案 block_version / p2p_version not already versions aligned / not already full history / not already settled 正式三事（379 余量）。379 infover vs appversion bundled unbundling 续（792 item 2）。
+
+## 2026-09-17（续 908）
+
+- 不变量 791；语料 C769；模式 name-the-infover-notappver-bar；反模式 infover-notappver-sold-as-bundled；L10.3 第 760 条。填 L4.4 / CometBFT 档案 Info 请求 version not already app_version / not already header AppHash / not already settled 正式三事（379 余量）。379 infover vs appversion bundled unbundling 启动（791 item 1）。
+
 ## 2026-09-17（续 907）
 
 - 不变量 790；语料 C768；模式 name-the-queryindex-notapphash-bar；反模式 queryindex-notapphash-sold-as-bundled；L10.3 第 759 条。填 L4.4 / CometBFT 档案 Query 回包 value not already AppHash matched / not already replicated / not already settled 正式三事（380 余量）。380 queryindex vs store bundled unbundling 完成（790 item 3）。

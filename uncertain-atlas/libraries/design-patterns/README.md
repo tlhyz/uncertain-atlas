@@ -1,3 +1,6 @@
+- [`name-the-infover-nothandshake-bar.md`](name-the-infover-nothandshake-bar.md) — abci_version not already handshake / not already prioritized / not already settled 正式三事（379 余量）（不变量 793）
+- [`name-the-infover-notaligned-bar.md`](name-the-infover-notaligned-bar.md) — block_version / p2p_version not already versions aligned / not already full history / not already settled 正式三事（379 余量）（不变量 792）
+- [`name-the-infover-notappver-bar.md`](name-the-infover-notappver-bar.md) — Info 请求 version not already app_version / not already header AppHash / not already settled 正式三事（379 余量）（不变量 791）
 - [`name-the-queryindex-notapphash-bar.md`](name-the-queryindex-notapphash-bar.md) — Query 回包 value not already AppHash matched / not already replicated / not already settled 正式三事（380 余量）（不变量 790）
 - [`name-the-queryindex-notheight-bar.md`](name-the-queryindex-notheight-bar.md) — Query 回包 key not already Query height / not already fresh / not already settled 正式三事（380 余量）（不变量 789）
 - [`name-the-queryindex-notstore-bar.md`](name-the-queryindex-notstore-bar.md) — Query 回包 index not already key lookup / not already AppHash matched / not already settled 正式三事（380 余量）（不变量 788）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Info 请求带了版本就已经是 app_version、已经版本也对上、已经是握手对齐」，必须分开 Info 请求 version 是 CometBFT 软件语义版本是不是已经是 app_version、block_version / p2p_version 是引擎块版本和 P2P 版本是不是已经版本也对上、abci_version 是 ABCI 语义版本、按 X.X.x 显示是不是已经是握手对齐。可以跳过「看见 Info 请求带了版本就已经是 app_version」。不要另写怎样写 Info 请求版本。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Info 请求带了版本就已经是 app_version、已经版本也对上、已经是握手对齐」，必须分开 Info 请求 version 是 CometBFT 软件语义版本是不是已经是 app_version、block_version / p2p_version 是引擎块版本和 P2P 版本是不是已经版本也对上、abci_version 是 ABCI 语义版本、按 X.X.x 显示是不是已经是握手对齐。可以跳过「看见 Info 请求带了版本就已经是 app_version」。不要另写怎样写 Info 请求版本。379 infover vs appversion bundled unbundling 完成（791 item 1 / 792 item 2 / 793 item 3）；精读 [`worked-example-infover-notappver-vs-bundled.md`](worked-example-infover-notappver-vs-bundled.md)（不变量 791 item 1）。
 
 ## 本页不抄
 
