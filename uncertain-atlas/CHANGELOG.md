@@ -1,3 +1,7 @@
+## 2026-09-17（续 791）
+
+- 不变量 674；语料 C651；模式 name-the-echousage-notflush-bar；反模式 echousage-notflush-sold-as-bundled；L10.3 第 643 条。填 L4.4 / CometBFT 档案 Echo Usage Echo a string to test implementation not Flush flush queue / not commit-empty-echo bundled / not Flush sync response 正式三事（492 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。492 echousage vs flush bundled unbundling 启动（674 item 1）。
+
 ## 2026-09-17（续 790）
 
 - 不变量 673；语料 C650；模式 name-the-flushusage-notimmediatesync-bar；反模式 flushusage-notimmediatesync-sold-as-bundled；L10.3 第 642 条。填 L4.4 / CometBFT 档案 Flush Usage Called immediately for sync request returns when Flush response comes back not Echo Response Message / not Commit lock / not commit-empty-echo bundled item 3 正式三事（493 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。493 flushusage vs echo bundled unbundling 完成（673 item 3）。

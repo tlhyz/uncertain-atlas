@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Echo Request / Response / Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「Echo a string to test implementation 不是已经 Flush / Request Message 不是 Response Message interchangeable / Response Message 不是已经测实现就已经刷完」，不是 Commit 空请求 bundled 三事（399），也不是 Echo 请求 Message 就已经是 Flush（394）。不要另写怎样写 Echo、怎样测实现。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「Echo a string to test implementation 不是已经 Flush / Request Message 不是 Response Message interchangeable / Response Message 不是已经测实现就已经刷完 / not 674 echousage-notflush interchangeable / not 492 echousage-vs-flush bundled interchangeable」，不是 Commit 空请求 bundled 三事（399），也不是 Echo 请求 Message 就已经是 Flush（394）。不要另写怎样写 Echo、怎样测实现。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Echo 了就已经 Flush、已经是入参字段、已经刷完」，必须分开 Echo a string to test implementation 是不是已经 Flush / 已经送到、Request Message string to echo back 是不是 Response Message interchangeable / 已经是 Flush、Response Message the input string 是不是已经测实现就已经刷完 interchangeable。可以跳过「看见 Echo 了就已经 Flush」。不要另写怎样写 Echo。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Echo 了就已经 Flush、已经是入参字段、已经刷完」，必须分开 Echo a string to test implementation 是不是已经 Flush flush queue / commit-empty-echo bundled / Flush sync response interchangeable、Request Message string to echo back 是不是 Response Message interchangeable / 已经是 Flush、Response Message the input string 是不是已经测实现就已经刷完 interchangeable。可以跳过「看见 Echo 了就已经 Flush」。不要另写怎样写 Echo。492 echousage vs flush bundled unbundling 启动（674 item 1）；精读 [`worked-example-echousage-notflush-vs-bundled.md`](worked-example-echousage-notflush-vs-bundled.md)（不变量 674 item 1）。
 
 ## 本页不抄
 
