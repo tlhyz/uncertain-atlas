@@ -1,3 +1,7 @@
+## 2026-09-17（续 765）
+
+- 不变量 648；语料 C625；模式 name-the-offersnapusage-notrestored-bar；反模式 offersnapusage-notrestored-sold-as-bundled；L10.3 第 617 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage upon accepting retrieve and apply not Offer 装完 / not Offer 收下之后 bundled / not LoadSnapshotChunk 正式三事（499 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。499 offersnapusage unbundling 续（648 item 2）。
+
 ## 2026-09-17（续 764）
 
 - 不变量 647；语料 C624；模式 name-the-offersnapusage-notlisted-bar；反模式 offersnapusage-notlisted-sold-as-bundled；L10.3 第 616 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage bootstrap accept/reject not OfferSnapshot bundled / not ListSnapshots / not Snapshot Connection 正式三事（499 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。499 offersnapusage unbundling 启动（647 item 1）。
