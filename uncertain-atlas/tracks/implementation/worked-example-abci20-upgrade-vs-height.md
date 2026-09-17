@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了启用高度就已经切完、已经能写成当前、已经按创世配好了存什么」，必须分开必须协调升级是不是已经只改 VoteExtensionsEnableHeight、h_e 必须高于当前是不是已经能写成当前高度、引擎按当前高度决定存什么要什么是不是已经按创世配好了。可以跳过「看见填了启用高度就已经切到 ABCI 2.0」。不要另写怎样做协调升级。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了启用高度就已经切完、已经能写成当前、已经按创世配好了存什么」，必须分开必须协调升级是不是已经只改 VoteExtensionsEnableHeight、h_e 必须高于当前是不是已经能写成当前高度、引擎按当前高度决定存什么要什么是不是已经按创世配好了。可以跳过「看见填了启用高度就已经切到 ABCI 2.0」。不要另写怎样做协调升级。346 abci20 vs height bundled unbundling 完成（875 item 1 / 876 item 2 / 877 item 3）；精读 [`worked-example-abci20-upgrade-notfield-vs-bundled.md`](worked-example-abci20-upgrade-notfield-vs-bundled.md)（不变量 875 item 1）。
 
 ## 本页不抄
 

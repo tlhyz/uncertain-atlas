@@ -1,3 +1,6 @@
+- [`name-the-abci20-upgrade-notgenesis-bar.md`](name-the-abci20-upgrade-notgenesis-bar.md) — 引擎按当前高度决定存什么要什么 not already genesis configured / not already app decides / not already settled 正式三事（346 余量）（不变量 877）
+- [`name-the-abci20-upgrade-notcurrent-bar.md`](name-the-abci20-upgrade-notcurrent-bar.md) — h_e 必须高于当前 not already current height / not already height-H Prepare / not already settled 正式三事（346 余量）（不变量 876）
+- [`name-the-abci20-upgrade-notfield-bar.md`](name-the-abci20-upgrade-notfield-bar.md) — 必须协调升级 not already only VoteExtensionsEnableHeight / not already single-node / not already settled 正式三事（346 余量）（不变量 875）
 - [`name-the-req3-nottested-bar.md`](name-the-req3-nottested-bar.md) — Req 3 是大量测试和自动验证的目标 not already tested / not already engine blocks / not already settled 正式三事（347 余量）（不变量 874）
 - [`name-the-req3-notbyz-bar.md`](name-the-req3-notbyz-bar.md) — Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 not already only liveness / not already Process nondet / not already settled 正式三事（347 余量）（不变量 873）
 - [`name-the-req3-notany-bar.md`](name-the-req3-notany-bar.md) — 正确提议者的准备提案必须被正确接收者 Accept not already any block Accepts / not already default Accept / not already settled 正式三事（347 余量）（不变量 872）

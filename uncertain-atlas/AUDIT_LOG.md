@@ -1,3 +1,18 @@
+| A4145 | 记录 | 会与 346 / 343 / 330 / 875 / 876 糊成「看见创世写了就已经按创世配好了 interchangeable、就已经是应用自己决定存什么 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 引擎按当前高度决定存什么要什么 not already genesis configured / not already app decides / not already settled 正式三事（346 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。346 abci20 vs height bundled unbundling 完成（877 item 3） |
+| A4146 | 高 | 看见引擎按当前高度决定存什么要什么 会被写成已经按创世配好了 interchangeable | 官方 ABCI 2.0 item 3：not already genesis configured |
+| A4147 | 高 | 看见应用配了参数 会被写成已经是应用自己决定存什么 interchangeable | 官方 ABCI 2.0 item 3：not already app decides |
+| A4148 | 高 | 看见当前高度在 会被写成已经交差 interchangeable | 官方 ABCI 2.0 item 3：not already settled |
+| A4149 | 中 | 怎样做协调升级会被抄进不确定 | 不抄。不写怎样做协调升级。不另写 19 节 |
+| A4140 | 记录 | 会与 346 / 330 / 343 / 875 / 877 糊成「看见必须比当前高就已经能写成当前高度 interchangeable、就已经是到了 H 才 Prepare 带扩展 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 h_e 必须高于当前 not already current height / not already height-H Prepare / not already settled 正式三事（346 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。346 abci20 vs height bundled unbundling 续（876 item 2） |
+| A4141 | 高 | 看见 h_e 必须高于当前 会被写成已经能写成当前高度 interchangeable | 官方 ABCI 2.0 item 2：not already current height |
+| A4142 | 高 | 看见必须比当前高 会被写成已经是到了 H 才 Prepare 带扩展 interchangeable | 官方 ABCI 2.0 item 2：not already height-H Prepare |
+| A4143 | 高 | 看见升级过了 会被写成已经交差 interchangeable | 官方 ABCI 2.0 item 2：not already settled |
+| A4144 | 中 | 怎样做协调升级会被抄进不确定 | 不抄。不写怎样做协调升级。不另写 19 节 |
+| A4135 | 记录 | 会与 346 / 330 / 58 / 876 / 877 糊成「看见填了启用高度就已经只改 VoteExtensionsEnableHeight interchangeable、就已经是单节点能切 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 必须协调升级 not already only VoteExtensionsEnableHeight / not already single-node / not already settled 正式三事（346 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。346 abci20 vs height bundled unbundling 启动（875 item 1） |
+| A4136 | 高 | 看见必须协调升级 会被写成已经只改 VoteExtensionsEnableHeight interchangeable / 330 interchangeable | 官方 ABCI 2.0 item 1：not already only VoteExtensionsEnableHeight / not 330 |
+| A4137 | 高 | 看见一个节点升了二进制 会被写成已经是单节点能切 interchangeable | 官方 ABCI 2.0 item 1：not already single-node |
+| A4138 | 高 | 看见能改启用高度 会被写成已经交差 interchangeable | 官方 ABCI 2.0 item 1：not already settled |
+| A4139 | 中 | 怎样做协调升级会被抄进不确定 | 不抄。不写怎样做协调升级。不另写 19 节 |
 | A4130 | 记录 | 会与 347 / 338 / 33 / 872 / 873 糊成「看见写了测试目标就已经测过 interchangeable、就已经是引擎会帮你挡 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Req 3 是大量测试和自动验证的目标 not already tested / not already engine blocks / not already settled 正式三事（347 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。347 req3 vs accept bundled unbundling 完成（874 item 3） |
 | A4131 | 高 | 看见 Req 3 是大量测试和自动验证的目标 会被写成已经测过 interchangeable | 官方 Req 3 item 3：not already tested |
 | A4132 | 高 | 看见会 prevote nil 会被写成已经是引擎会帮你挡 interchangeable | 官方 Req 3 item 3：not already engine blocks |

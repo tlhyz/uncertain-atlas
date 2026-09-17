@@ -1,3 +1,15 @@
+## 2026-09-17（续 994）
+
+- 不变量 877；语料 C855；模式 name-the-abci20-upgrade-notgenesis-bar；反模式 abci20-upgrade-notgenesis-sold-as-bundled；L10.3 第 846 条。填 L4.4 / CometBFT 档案 引擎按当前高度决定存什么要什么 not already genesis configured / not already app decides / not already settled 正式三事（346 余量）。346 abci20 vs height bundled unbundling 完成（877 item 3）。
+
+## 2026-09-17（续 993）
+
+- 不变量 876；语料 C854；模式 name-the-abci20-upgrade-notcurrent-bar；反模式 abci20-upgrade-notcurrent-sold-as-bundled；L10.3 第 845 条。填 L4.4 / CometBFT 档案 h_e 必须高于当前 not already current height / not already height-H Prepare / not already settled 正式三事（346 余量）。346 abci20 vs height bundled unbundling 续（876 item 2）。
+
+## 2026-09-17（续 992）
+
+- 不变量 875；语料 C853；模式 name-the-abci20-upgrade-notfield-bar；反模式 abci20-upgrade-notfield-sold-as-bundled；L10.3 第 844 条。填 L4.4 / CometBFT 档案 必须协调升级 not already only VoteExtensionsEnableHeight / not already single-node / not already settled 正式三事（346 余量）。346 abci20 vs height bundled unbundling 启动（875 item 1）。
+
 ## 2026-09-17（续 991）
 
 - 不变量 874；语料 C852；模式 name-the-req3-nottested-bar；反模式 req3-nottested-sold-as-bundled；L10.3 第 843 条。填 L4.4 / CometBFT 档案 Req 3 是大量测试和自动验证的目标 not already tested / not already engine blocks / not already settled 正式三事（347 余量）。347 req3 vs accept bundled unbundling 完成（874 item 3）。

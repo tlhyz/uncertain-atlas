@@ -156,6 +156,9 @@
 - [`worked-example-pbts-height-vs-params.md`](worked-example-pbts-height-vs-params.md) — 写成 0 不是已经启用 PBTS ≠ 已经填了 Precision 就是 PBTS；H 之前仍用 BFT Time ≠ 已经切到 PBTS；启用之后不能关 ≠ 已经是扩展启用高度那种切换（不变量 343）
 - [`worked-example-maxbytes-overhead-vs-full.md`](worked-example-maxbytes-overhead-vs-full.md) — MaxBytes 减去头集合证据才是交易上限 ≠ 已经整块都能装交易；诚实验证者 MAY 出满 MaxBytes ≠ 已经只会出默认 21 MB；timeout 必须按满块投递延迟算 ≠ 已经填了 TimeoutPropose 就装得下这次 Prepare 执行（不变量 344）
 - [`worked-example-prepare-return-vs-pool.md`](worked-example-prepare-return-vs-pool.md) — 整池可见 ≠ 已经只能看见装得进一块的子集；聚合体积可以超过 max_tx_bytes ≠ 已经能回超限列表；Req 2 保证回的列表不让块超字节上限 ≠ 已经是引擎会帮你裁（不变量 345）
+- [`worked-example-abci20-upgrade-notgenesis-vs-bundled.md`](worked-example-abci20-upgrade-notgenesis-vs-bundled.md) — 按当前高度存/要≠already genesis/app decides/settled；≠346 bundled（不变量 877）
+- [`worked-example-abci20-upgrade-notcurrent-vs-bundled.md`](worked-example-abci20-upgrade-notcurrent-vs-bundled.md) — h_e高于当前≠already current height/height-H/settled；≠346 bundled（不变量 876）
+- [`worked-example-abci20-upgrade-notfield-vs-bundled.md`](worked-example-abci20-upgrade-notfield-vs-bundled.md) — 必须协调升级≠only field/single-node/settled；≠346 bundled（不变量 875）
 - [`worked-example-abci20-upgrade-vs-height.md`](worked-example-abci20-upgrade-vs-height.md) — 必须协调升级 ≠ 已经只改 VoteExtensionsEnableHeight；h_e 必须高于当前 ≠ 已经能写成当前高度；引擎按当前高度决定存什么要什么 ≠ 已经按创世配好了（不变量 346）
 - [`worked-example-req3-nottested-vs-bundled.md`](worked-example-req3-nottested-vs-bundled.md) — Req3测试目标≠already tested/engine blocks/settled；≠347 bundled（不变量 874）
 - [`worked-example-req3-notbyz-vs-bundled.md`](worked-example-req3-notbyz-vs-bundled.md) — 确定bug算拜占庭≠only liveness/nondet/settled；≠347 bundled（不变量 873）

@@ -1,3 +1,6 @@
+- [`abci20-upgrade-notgenesis-sold-as-bundled.md`](abci20-upgrade-notgenesis-sold-as-bundled.md) — 按当前高度存/要 被写成已经按创世配好了 / 已经是应用自己决定 / 已经交差（不变量 877）
+- [`abci20-upgrade-notcurrent-sold-as-bundled.md`](abci20-upgrade-notcurrent-sold-as-bundled.md) — h_e 必须高于当前 被写成已经能写成当前 / 已经是到了 H / 已经交差（不变量 876）
+- [`abci20-upgrade-notfield-sold-as-bundled.md`](abci20-upgrade-notfield-sold-as-bundled.md) — 必须协调升级 被写成已经只改字段 / 已经单节点能切 / 已经交差（不变量 875）
 - [`req3-nottested-sold-as-bundled.md`](req3-nottested-sold-as-bundled.md) — Req3 测试目标 被写成已经测过 / 已经是引擎会挡 / 已经交差（不变量 874）
 - [`req3-notbyz-sold-as-bundled.md`](req3-notbyz-sold-as-bundled.md) — 确定 bug 算拜占庭 被写成已经只是活性 / 已经是非确定 / 已经交差（不变量 873）
 - [`req3-notany-sold-as-bundled.md`](req3-notany-sold-as-bundled.md) — 必须 Accept 被写成已经任意块都会过 / 已经默认 Accept / 已经交差（不变量 872）
