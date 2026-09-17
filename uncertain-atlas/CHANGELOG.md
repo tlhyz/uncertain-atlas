@@ -1,3 +1,15 @@
+## 2026-09-17（续 871）
+
+- 不变量 754；语料 C732；模式 name-the-checktxtx-notqueryinfo-bar；反模式 checktxtx-notqueryinfo-sold-as-bundled；L10.3 第 723 条。填 L4.4 / CometBFT 档案 CheckTx 回包 info not already Query info / not already CheckTx log / not already settled 正式三事（391 余量）。391 checktxtx vs recheck bundled unbundling 完成（754 item 3）。
+
+## 2026-09-17（续 870）
+
+- 不变量 753；语料 C731；模式 name-the-checktxtx-notexecstate-bar；反模式 checktxtx-notexecstate-sold-as-bundled；L10.3 第 722 条。填 L4.4 / CometBFT 档案 CheckTx 对照当前状态验 not already ExecuteTxState / not already processing block / not already settled 正式三事（391 余量）。391 checktxtx vs recheck bundled unbundling 续（753 item 2）。
+
+## 2026-09-17（续 869）
+
+- 不变量 752；语料 C730；模式 name-the-checktxtx-notrecheck-bar；反模式 checktxtx-notrecheck-sold-as-bundled；L10.3 第 721 条。填 L4.4 / CometBFT 档案 CheckTx 请求 tx not already Recheck / not already four gates / not already settled 正式三事（391 余量）。391 checktxtx vs recheck bundled unbundling 启动（752 item 1）。
+
 ## 2026-09-17（续 868）
 
 - 不变量 751；语料 C729；模式 name-the-extcommitround-notflush-bar；反模式 extcommitround-notflush-sold-as-bundled；L10.3 第 720 条。填 L4.4 / CometBFT 档案 Echo 请求 Message not already Flush / not already delivered / not already settled 正式三事（394 余量）。394 extcommitround vs commitinfo bundled unbundling 完成（751 item 3）。

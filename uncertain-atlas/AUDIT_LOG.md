@@ -1,3 +1,18 @@
+| A3530 | 记录 | 会与 391 / 384 / 390 / 745 / 752 / 753 糊成「看见回了信息就已经是 Query 附加信息 interchangeable、就已经是 CheckTx 日志 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 回包 info not already Query info / not already CheckTx log / not already settled 正式三事（391 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。391 checktxtx vs recheck bundled unbundling 完成（754 item 3） |
+| A3531 | 高 | 看见 CheckTx 回包 info 会被写成已经是 Query 附加信息 interchangeable / 384 interchangeable | 官方 CheckTx 请求余栏 item 3：not already Query info / not 384 |
+| A3532 | 高 | 看见回了信息 会被写成已经是 CheckTx 日志 interchangeable / 390 interchangeable | 官方 CheckTx 请求余栏 item 3：not already CheckTx log / not 390 |
+| A3533 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 CheckTx 请求余栏 item 3：not already settled |
+| A3534 | 中 | 怎样写 CheckTx 请求余栏 会被抄进不确定 | 不抄。不写怎样写 CheckTx 请求余栏。不另写 19 节 |
+| A3525 | 记录 | 会与 391 / 312 / 373 / 486 / 680 / 752 / 754 糊成「看见验了就已经按 ExecuteTxState 验过 interchangeable、就已经参与处理块 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 对照当前状态验 not already ExecuteTxState / not already processing block / not already settled 正式三事（391 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。391 checktxtx vs recheck bundled unbundling 续（753 item 2） |
+| A3526 | 高 | 看见 CheckTx 对照当前状态验 会被写成已经按 ExecuteTxState 验过 interchangeable / 312 interchangeable | 官方 CheckTx 请求余栏 item 2：not already ExecuteTxState / not 312 |
+| A3527 | 高 | 看见验了 会被写成已经参与处理块 interchangeable / 373 / 486 interchangeable | 官方 CheckTx 请求余栏 item 2：not already processing block / not 373 / not 486 |
+| A3528 | 高 | 看见对照当前状态 会被写成已经交差 interchangeable | 官方 CheckTx 请求余栏 item 2：not already settled |
+| A3529 | 中 | 怎样写 CheckTx 请求余栏 会被抄进不确定 | 不抄。不写怎样写 CheckTx 请求余栏。不另写 19 节 |
+| A3520 | 记录 | 会与 391 / 373 / 484 / 707 / 753 / 754 糊成「看见填了 tx 就已经是 Recheck interchangeable、就已经四门齐了 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 请求 tx not already Recheck / not already four gates / not already settled 正式三事（391 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。391 checktxtx vs recheck bundled unbundling 启动（752 item 1） |
+| A3521 | 高 | 看见 CheckTx 请求 tx 会被写成已经是 Recheck interchangeable | 官方 CheckTx 请求余栏 item 1：not already Recheck |
+| A3522 | 高 | 看见填了 tx 会被写成已经四门齐了 interchangeable / 373 interchangeable | 官方 CheckTx 请求余栏 item 1：not already four gates / not 373 |
+| A3523 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 CheckTx 请求余栏 item 1：not already settled |
+| A3524 | 中 | 怎样写 CheckTx 请求余栏 会被抄进不确定 | 不抄。不写怎样写 CheckTx 请求余栏。不另写 19 节 |
 | A3515 | 记录 | 会与 394 / 374 / 399 / 732 / 749 / 750 糊成「看见填了 Echo 请求 Message 就已经是 Flush interchangeable、就已经送到 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Echo 请求 Message not already Flush / not already delivered / not already settled 正式三事（394 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。394 extcommitround vs commitinfo bundled unbundling 完成（751 item 3） |
 | A3516 | 高 | 看见 Echo 请求 Message 会被写成已经是 Flush interchangeable / 374 interchangeable | 官方 ExtendedCommitInfo 轮 item 3：not already Flush / not 374 |
 | A3517 | 高 | 看见填了 Message 会被写成已经送到 interchangeable / 374 interchangeable | 官方 ExtendedCommitInfo 轮 item 3：not already delivered / not 374 |

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 CheckTx 请求余栏就已经是 Recheck、已经按 ExecuteTxState 验过、已经是 Query 附加信息」，必须分开 CheckTx 请求 tx 是请求交易字节是不是已经是 Recheck、CheckTx 对照当前状态验、不应用这笔描述的状态改动是不是已经按 ExecuteTxState 验过、CheckTx 回包 info 是附加信息是不是已经是 Query 附加信息。可以跳过「看见填了 CheckTx 请求余栏就已经是 Recheck」。不要另写怎样写 CheckTx 请求余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 CheckTx 请求余栏就已经是 Recheck、已经按 ExecuteTxState 验过、已经是 Query 附加信息」，必须分开 CheckTx 请求 tx 是请求交易字节是不是已经是 Recheck、CheckTx 对照当前状态验、不应用这笔描述的状态改动是不是已经按 ExecuteTxState 验过、CheckTx 回包 info 是附加信息是不是已经是 Query 附加信息。可以跳过「看见填了 CheckTx 请求余栏就已经是 Recheck」。不要另写怎样写 CheckTx 请求余栏。391 checktxtx vs recheck bundled unbundling 完成（752 item 1 / 753 item 2 / 754 item 3）；精读 [`worked-example-checktxtx-notrecheck-vs-bundled.md`](worked-example-checktxtx-notrecheck-vs-bundled.md)（不变量 752 item 1）。
 
 ## 本页不抄
 

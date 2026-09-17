@@ -1,3 +1,6 @@
+- [`name-the-checktxtx-notqueryinfo-bar.md`](name-the-checktxtx-notqueryinfo-bar.md) — CheckTx 回包 info not already Query info / not already CheckTx log / not already settled 正式三事（391 余量）（不变量 754）
+- [`name-the-checktxtx-notexecstate-bar.md`](name-the-checktxtx-notexecstate-bar.md) — CheckTx 对照当前状态验 not already ExecuteTxState / not already processing block / not already settled 正式三事（391 余量）（不变量 753）
+- [`name-the-checktxtx-notrecheck-bar.md`](name-the-checktxtx-notrecheck-bar.md) — CheckTx 请求 tx not already Recheck / not already four gates / not already settled 正式三事（391 余量）（不变量 752）
 - [`name-the-extcommitround-notflush-bar.md`](name-the-extcommitround-notflush-bar.md) — Echo 请求 Message not already Flush / not already delivered / not already settled 正式三事（394 余量）（不变量 751）
 - [`name-the-extcommitround-notsamefields-bar.md`](name-the-extcommitround-notsamefields-bar.md) — Finalize 请求 next_validators_hash not already same fields / not already swapped / not already settled 正式三事（394 余量）（不变量 750）
 - [`name-the-extcommitround-notcommitinfo-bar.md`](name-the-extcommitround-notcommitinfo-bar.md) — ExtendedCommitInfo.round not CommitInfo.round / not already ranked / not already settled 正式三事（394 余量）（不变量 749）

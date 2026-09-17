@@ -347,6 +347,9 @@
 - [`worked-example-proofop-notproofops-vs-bundled.md`](worked-example-proofop-notproofops-vs-bundled.md) — data≠325 proof_ops/AppHash matched/already settled；≠390 bundled（不变量 744）
 - [`worked-example-proofop-notquerykey-vs-bundled.md`](worked-example-proofop-notquerykey-vs-bundled.md) — key≠380 Query key/ProofOp type/already settled；≠390 bundled（不变量 743）
 - [`worked-example-proofop-vs-key.md`](worked-example-proofop-vs-key.md) — ProofOp.key 是这棵默克尔树里这把键 ≠ 已经是 Query 回包键；ProofOp.data 是这把键的编码证明 ≠ 已经是 proof_ops；CheckTx 回包 log 是应用日志输出 ≠ 已经是 Query 日志（不变量 390）
+- [`worked-example-checktxtx-notqueryinfo-vs-bundled.md`](worked-example-checktxtx-notqueryinfo-vs-bundled.md) — CheckTx 回包 info≠384 Query info/390 CheckTx log/already settled；≠391 bundled（不变量 754）
+- [`worked-example-checktxtx-notexecstate-vs-bundled.md`](worked-example-checktxtx-notexecstate-vs-bundled.md) — validate≠312 ExecuteTxState/373 processing/486 Usage；≠391 bundled（不变量 753）
+- [`worked-example-checktxtx-notrecheck-vs-bundled.md`](worked-example-checktxtx-notrecheck-vs-bundled.md) — CheckTx 请求 tx≠Recheck/373 four gates/already settled；≠391 bundled（不变量 752）
 - [`worked-example-checktxtx-vs-recheck.md`](worked-example-checktxtx-vs-recheck.md) — CheckTx 请求 tx 是请求交易字节 ≠ 已经是 Recheck；CheckTx 对照当前状态验、不应用这笔描述的状态改动 ≠ 已经按 ExecuteTxState 验过；CheckTx 回包 info 是附加信息 ≠ 已经是 Query 附加信息（不变量 391）
 - [`worked-example-initapphash-vs-header.md`](worked-example-initapphash-vs-header.md) — InitChain 回包 app_hash 是起步应用哈希 ≠ 已经是本头 AppHash；Finalize 请求 hash 是这块的哈希 ≠ 已经知道本头哈希；CommitInfo.round 是提交轮 ≠ 已经按投票权排过（不变量 392）
 - [`worked-example-exectxgas-notcodespace-vs-bundled.md`](worked-example-exectxgas-notcodespace-vs-bundled.md) — codespace≠381 CheckTx codespace/response code/already settled；≠393 bundled（不变量 748）

@@ -1,3 +1,6 @@
+- [`checktxtx-notqueryinfo-sold-as-bundled.md`](checktxtx-notqueryinfo-sold-as-bundled.md) — CheckTx 回包 info 被写成已经是 Query 附加信息 / 已经是 CheckTx 日志 / 已经交差（不变量 754）
+- [`checktxtx-notexecstate-sold-as-bundled.md`](checktxtx-notexecstate-sold-as-bundled.md) — 对照当前状态验 被写成已经按 ExecuteTxState 验过 / 已经参与处理块 / 已经交差（不变量 753）
+- [`checktxtx-notrecheck-sold-as-bundled.md`](checktxtx-notrecheck-sold-as-bundled.md) — CheckTx 请求 tx 被写成已经是 Recheck / 已经四门齐了 / 已经交差（不变量 752）
 - [`extcommitround-notflush-sold-as-bundled.md`](extcommitround-notflush-sold-as-bundled.md) — Echo 请求 Message 被写成已经是 Flush / 已经送到 / 已经交差（不变量 751）
 - [`extcommitround-notsamefields-sold-as-bundled.md`](extcommitround-notsamefields-sold-as-bundled.md) — next_validators_hash 被写成已经是同一套字段 / 已经换了人 / 已经交差（不变量 750）
 - [`extcommitround-notcommitinfo-sold-as-bundled.md`](extcommitround-notcommitinfo-sold-as-bundled.md) — ExtendedCommitInfo.round 被写成已经是 CommitInfo.round / 已经按投票权排过 / 已经交差（不变量 749）
