@@ -1,3 +1,6 @@
+- [`maxgas-notblock-sold-as-bundled.md`](maxgas-notblock-sold-as-bundled.md) — 已提交块 被写成已经按气验过 / 已经由共识层验过 / 已经交差（不变量 916）
+- [`maxgas-notused-sold-as-bundled.md`](maxgas-notused-sold-as-bundled.md) — GasUsed 被写成已经按实用气验过 / 已经算进共识 / 已经交差（不变量 915）
+- [`maxgas-noton-sold-as-bundled.md`](maxgas-noton-sold-as-bundled.md) — MaxGas 被写成已经在执行 / 已经有意义 / 已经交差（不变量 914）
 - [`params-delay-notve-sold-as-bundled.md`](params-delay-notve-sold-as-bundled.md) — 参数 H+1 被写成已经是扩展启用高度切换 / 已经只改填的那一项 / 已经交差（不变量 913）
 - [`params-delay-notvalset-sold-as-bundled.md`](params-delay-notvalset-sold-as-bundled.md) — 参数 H+1 被写成已经是集合 H+2 / 已经是 last_commit H+3 / 已经交差（不变量 912）
 - [`params-delay-noteffective-sold-as-bundled.md`](params-delay-noteffective-sold-as-bundled.md) — 本高回了参数 被写成已经在本高生效 / 已经本高提议按新上限 / 已经交差（不变量 911）

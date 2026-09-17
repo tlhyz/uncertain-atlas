@@ -1,3 +1,15 @@
+## 2026-09-17（续 1033）
+
+- 不变量 916；语料 C894；模式 name-the-maxgas-notblock-bar；反模式 maxgas-notblock-sold-as-bundled；L10.3 第 885 条。填 L4.4 / CometBFT 档案 已提交块 not already gas-checked / not already consensus-enforced / not already settled 正式三事（315 余量）。315 maxgas vs enforced bundled unbundling 完成（916 item 3）。
+
+## 2026-09-17（续 1032）
+
+- 不变量 915；语料 C893；模式 name-the-maxgas-notused-bar；反模式 maxgas-notused-sold-as-bundled；L10.3 第 884 条。填 L4.4 / CometBFT 档案 GasUsed not already consensus-checked / not already counted / not already settled 正式三事（315 余量）。315 maxgas vs enforced bundled unbundling 续（915 item 2）。
+
+## 2026-09-17（续 1031）
+
+- 不变量 914；语料 C892；模式 name-the-maxgas-noton-bar；反模式 maxgas-noton-sold-as-bundled；L10.3 第 883 条。填 L4.4 / CometBFT 档案 MaxGas not already executing / not already meaningful / not already settled 正式三事（315 余量）。315 maxgas vs enforced bundled unbundling 启动（914 item 1）。
+
 ## 2026-09-17（续 1030）
 
 - 不变量 913；语料 C891；模式 name-the-params-delay-notve-bar；反模式 params-delay-notve-sold-as-bundled；L10.3 第 882 条。填 L4.4 / CometBFT 档案 参数更新写了 H+1 not already VE enable-height switch / not already only that field / not already settled 正式三事（333 余量）。333 params-delay vs set bundled unbundling 完成（913 item 3）。

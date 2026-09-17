@@ -1,3 +1,18 @@
+| A4340 | 记录 | 会与 315 / 33 / 914 / 915 糊成「看见已提交就已经按气验过 interchangeable、就已经由共识层验过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 已提交块 not already gas-checked / not already consensus-enforced / not already settled 正式三事（315 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。315 maxgas vs enforced bundled unbundling 完成（916 item 3） |
+| A4341 | 高 | 看见已提交块 会被写成已经按气验过 interchangeable | 官方 Gas item 3：not already gas-checked |
+| A4342 | 高 | 看见池子守了 会被写成已经由共识层验过 interchangeable | 官方 Gas item 3：not already consensus-enforced |
+| A4343 | 高 | 看见有了 Prepare / Process 会被写成已经交差 interchangeable | 官方 Gas item 3：not already settled |
+| A4344 | 中 | 怎样计量气会被抄进不确定 | 不抄。不写怎样计量气或怎样在 Prepare 里卡上限。不另写 19 节 |
+| A4335 | 记录 | 会与 315 / 63 / 33 / 914 / 916 糊成「看见有 GasUsed 就已经按实用气验过 interchangeable、就已经算进共识 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 GasUsed not already consensus-checked / not already counted / not already settled 正式三事（315 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。315 maxgas vs enforced bundled unbundling 续（915 item 2） |
+| A4336 | 高 | 看见 GasUsed 会被写成已经按实用气验过 interchangeable | 官方 Gas item 2：not already consensus-checked |
+| A4337 | 高 | 看见 GasWanted 过了池门 会被写成已经算进共识 interchangeable | 官方 Gas item 2：not already counted |
+| A4338 | 高 | 看见有 GasUsed 会被写成已经交差 interchangeable | 官方 Gas item 2：not already settled |
+| A4339 | 中 | 怎样计量气会被抄进不确定 | 不抄。不写怎样计量气或怎样在 Prepare 里卡上限。不另写 19 节 |
+| A4330 | 记录 | 会与 315 / 299 / 319 / 915 / 916 糊成「看见有 MaxGas 就已经在执行 interchangeable、就已经有意义 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 MaxGas not already executing / not already meaningful / not already settled 正式三事（315 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。315 maxgas vs enforced bundled unbundling 启动（914 item 1） |
+| A4331 | 高 | 看见 MaxGas 会被写成已经在执行 interchangeable / 299 interchangeable | 官方 Gas item 1：not already executing / not 299 |
+| A4332 | 高 | 看见写成 -1 会被写成已经有意义 interchangeable | 官方 Gas item 1：not already meaningful |
+| A4333 | 高 | 看见学了以太坊 会被写成已经交差 interchangeable | 官方 Gas item 1：not already settled |
+| A4334 | 中 | 怎样计量气会被抄进不确定 | 不抄。不写怎样计量气或怎样在 Prepare 里卡上限。不把 MaxGas 默认 -1 当不确定默认。不另写 19 节 |
 | A4325 | 记录 | 会与 333 / 330 / 319 / 911 / 912 糊成「看见写了 H+1 就已经是扩展启用高度那种切换 interchangeable、就已经只改填的那一项 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 参数更新写了 H+1 not already VE enable-height switch / not already only that field / not already settled 正式三事（333 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。333 params-delay vs set bundled unbundling 完成（913 item 3） |
 | A4326 | 高 | 看见参数更新写了 H+1 会被写成已经是扩展启用高度那种切换 interchangeable | 官方 Updating Consensus Parameters delay item 3：not already VE enable-height switch |
 | A4327 | 高 | 看见立刻生效 会被写成已经只改填的那一项 interchangeable | 官方 Updating Consensus Parameters delay item 3：not already only that field |
