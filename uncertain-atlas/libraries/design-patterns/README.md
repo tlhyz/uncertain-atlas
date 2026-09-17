@@ -1,3 +1,6 @@
+- [`name-the-req6-notsafety-bar.md`](name-the-req6-notsafety-bar.md) — 会面对和 Req 5 同一类活性问题 not already lost safety / not already Req 3 proposal coherence / not already settled 正式三事（348 余量）（不变量 871）
+- [`name-the-req6-notliveness-bar.md`](name-the-req6-notliveness-bar.md) — Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 not already only liveness / not already block invalid / not already nondet 正式三事（348 余量）（不变量 870）
+- [`name-the-req6-notany-bar.md`](name-the-req6-notany-bar.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept not already any extension Accepts / not already default Accept / not already settled 正式三事（348 余量）（不变量 869）
 - [`name-the-req9-notext-bar.md`](name-the-req9-notext-bar.md) — Extend 和 Verify 不得改已提交状态 not already signed into state / not already sh independent of e / not already settled 正式三事（349 余量）（不变量 868）
 - [`name-the-req9-notproc-bar.md`](name-the-req9-notproc-bar.md) — Process 不得改已提交状态 not already Accept mutated / not already candidate ExecuteTxState / not already settled 正式三事（349 余量）（不变量 867）
 - [`name-the-req9-notprep-bar.md`](name-the-req9-notprep-bar.md) — Prepare 不得改已提交状态 not already immediate exec settled / not already Finalize+Commit / not already can mutate s 正式三事（349 余量）（不变量 866）

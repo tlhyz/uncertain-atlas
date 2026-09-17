@@ -1,3 +1,18 @@
+| A4115 | 记录 | 会与 348 / 347 / 34 / 869 / 870 糊成「看见会伤活性就已经丢了安全性 interchangeable、就已经是提案一致性 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 会面对和 Req 5 同一类活性问题 not already lost safety / not already Req 3 proposal coherence / not already settled 正式三事（348 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。348 req6 vs accept bundled unbundling 完成（871 item 3） |
+| A4116 | 高 | 看见会面对和 Req 5 同一类活性问题 会被写成已经丢了安全性 interchangeable | 官方 Req 6 item 3：not already lost safety |
+| A4117 | 高 | 看见和 Req 5 同一路 会被写成已经是提案一致性 interchangeable | 官方 Req 6 item 3：not already Req 3 proposal coherence |
+| A4118 | 高 | 看见扩展这条 会被写成已经交差 interchangeable | 官方 Req 6 item 3：not already settled |
+| A4119 | 中 | 怎样写 Extend 或 Verify 会被抄进不确定 | 不抄。不写怎样写 Extend 或 Verify。不另写 19 节 |
+| A4110 | 记录 | 会与 348 / 341 / 34 / 869 / 871 糊成「看见丢掉就已经只是活性问题 interchangeable、就已经是块非法 interchangeable、就已经是非确定 bug interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 not already only liveness / not already block invalid / not already nondet 正式三事（348 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。348 req6 vs accept bundled unbundling 续（870 item 2） |
+| A4111 | 高 | 看见 Extend 或 Verify 里有确定 bug 会被写成已经只是活性问题 interchangeable | 官方 Req 6 item 2：not already only liveness |
+| A4112 | 高 | 看见 Precommit 被丢掉 会被写成已经是块非法 interchangeable | 官方 Req 6 item 2：not already block invalid |
+| A4113 | 高 | 看见有确定 bug 会被写成已经是非确定 bug interchangeable | 官方 Req 6 item 2：not already nondet |
+| A4114 | 中 | 怎样写 Extend 或 Verify 会被抄进不确定 | 不抄。不写怎样写 Extend 或 Verify。不另写 19 节 |
+| A4105 | 记录 | 会与 348 / 34 / 349 / 868 / 870 / 871 糊成「看见必须 Accept 就已经任意扩展都会过 interchangeable、就已经写了默认 Accept interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 正确进程交出的扩展必须被正确接收者 Verify Accept not already any extension Accepts / not already default Accept / not already settled 正式三事（348 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。348 req6 vs accept bundled unbundling 启动（869 item 1） |
+| A4106 | 高 | 看见正确进程交出的扩展必须被正确接收者 Verify Accept 会被写成已经是任意扩展都会 Accept interchangeable / 34 interchangeable | 官方 Req 6 item 1：not already any extension Accepts / not 34 |
+| A4107 | 高 | 看见必须 Accept 会被写成已经写了默认 Accept interchangeable | 官方 Req 6 item 1：not already default Accept |
+| A4108 | 高 | 看见正确进程之间过 会被写成已经交差 interchangeable | 官方 Req 6 item 1：not already settled |
+| A4109 | 中 | 怎样写 Extend 或 Verify 会被抄进不确定 | 不抄。不写怎样写 Extend 或 Verify。不另写 19 节 |
 | A4100 | 记录 | 会与 349 / 34 / 350 / 865 / 866 / 867 糊成「看见签了扩展就已经进状态 interchangeable、就已经是 sh 不依赖 e interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Extend 和 Verify 不得改已提交状态 not already signed into state / not already sh independent of e / not already settled 正式三事（349 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。349 req9 vs commit bundled unbundling 完成（868 item 3） |
 | A4101 | 高 | 看见 Extend 和 Verify 不得改已提交状态 会被写成已经签了扩展就已经进状态 interchangeable | 官方 Req 9 item 3：not already signed into state |
 | A4102 | 高 | 看见 Verify 过了 会被写成已经是 sh 不依赖 e interchangeable | 官方 Req 9 item 3：not already sh independent of e |

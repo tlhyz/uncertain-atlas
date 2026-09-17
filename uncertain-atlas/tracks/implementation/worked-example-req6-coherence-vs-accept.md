@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须 Accept 就已经任意扩展都会过、已经只是活性、已经丢了安全性」，必须分开正确进程交出的扩展必须被正确接收者 Verify Accept 是不是已经是任意扩展都会 Accept、Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉是不是已经只是活性问题、会面对和 Req 5 同一类活性问题是不是已经丢了安全性。可以跳过「看见必须 Accept 就已经交差」。不要另写怎样写 Extend 或 Verify。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须 Accept 就已经任意扩展都会过、已经只是活性、已经丢了安全性」，必须分开正确进程交出的扩展必须被正确接收者 Verify Accept 是不是已经是任意扩展都会 Accept、Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉是不是已经只是活性问题、会面对和 Req 5 同一类活性问题是不是已经丢了安全性。可以跳过「看见必须 Accept 就已经交差」。不要另写怎样写 Extend 或 Verify。348 req6 vs accept bundled unbundling 完成（869 item 1 / 870 item 2 / 871 item 3）；精读 [`worked-example-req6-notany-vs-bundled.md`](worked-example-req6-notany-vs-bundled.md)（不变量 869 item 1）。
 
 ## 本页不抄
 

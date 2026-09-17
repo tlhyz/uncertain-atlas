@@ -1,3 +1,6 @@
+- [`req6-notsafety-sold-as-bundled.md`](req6-notsafety-sold-as-bundled.md) — Req5 类活性 被写成已经丢了安全性 / 已经是提案一致性 / 已经交差（不变量 871）
+- [`req6-notliveness-sold-as-bundled.md`](req6-notliveness-sold-as-bundled.md) — 确定 bug 丢掉 被写成已经只是活性 / 已经是块非法 / 已经是非确定（不变量 870）
+- [`req6-notany-sold-as-bundled.md`](req6-notany-sold-as-bundled.md) — 必须 Accept 被写成已经任意扩展都会过 / 已经默认 Accept / 已经交差（不变量 869）
 - [`req9-notext-sold-as-bundled.md`](req9-notext-sold-as-bundled.md) — Extend/Verify 无副作用 被写成已经进状态 / 已经是 34 / 已经交差（不变量 868）
 - [`req9-notproc-sold-as-bundled.md`](req9-notproc-sold-as-bundled.md) — Process 无副作用 被写成已经 Accept 改了 / 已经是 ExecuteTxState / 已经交差（不变量 867）
 - [`req9-notprep-sold-as-bundled.md`](req9-notprep-sold-as-bundled.md) — Prepare 无副作用 被写成已经立刻交差 / 已经是 Finalize+Commit / 已经能改 s（不变量 866）

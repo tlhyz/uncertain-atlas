@@ -1,3 +1,15 @@
+## 2026-09-17（续 988）
+
+- 不变量 871；语料 C849；模式 name-the-req6-notsafety-bar；反模式 req6-notsafety-sold-as-bundled；L10.3 第 840 条。填 L4.4 / CometBFT 档案 会面对和 Req 5 同一类活性问题 not already lost safety / not already Req 3 proposal coherence / not already settled 正式三事（348 余量）。348 req6 vs accept bundled unbundling 完成（871 item 3）。
+
+## 2026-09-17（续 987）
+
+- 不变量 870；语料 C848；模式 name-the-req6-notliveness-bar；反模式 req6-notliveness-sold-as-bundled；L10.3 第 839 条。填 L4.4 / CometBFT 档案 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 not already only liveness / not already block invalid / not already nondet 正式三事（348 余量）。348 req6 vs accept bundled unbundling 续（870 item 2）。
+
+## 2026-09-17（续 986）
+
+- 不变量 869；语料 C847；模式 name-the-req6-notany-bar；反模式 req6-notany-sold-as-bundled；L10.3 第 838 条。填 L4.4 / CometBFT 档案 正确进程交出的扩展必须被正确接收者 Verify Accept not already any extension Accepts / not already default Accept / not already settled 正式三事（348 余量）。348 req6 vs accept bundled unbundling 启动（869 item 1）。
+
 ## 2026-09-17（续 985）
 
 - 不变量 868；语料 C846；模式 name-the-req9-notext-bar；反模式 req9-notext-sold-as-bundled；L10.3 第 837 条。填 L4.4 / CometBFT 档案 Extend 和 Verify 不得改已提交状态 not already signed into state / not already sh independent of e / not already settled 正式三事（349 余量）。349 req9 vs commit bundled unbundling 完成（868 item 3）。
