@@ -1,3 +1,4 @@
+- [`finh1-notsettled-sold-as-bundled.md`](finh1-notsettled-sold-as-bundled.md) — starts consensus h+1 被写成已经交差 / 已经 persist decision / 已经 finh1 bundled（不变量 641）
 - [`finunlock-notcommitlock-sold-as-bundled.md`](finunlock-notcommitlock-sold-as-bundled.md) — unlock after optional recheck 被写成已经是 Commit 锁 / 已经开下一高 round 0 / 已经 finunlock bundled（不变量 640）
 - [`finunlock-notnewly-sold-as-bundled.md`](finunlock-notnewly-sold-as-bundled.md) — newly received can now be checked 被写成已经 optional recheck outstanding txs / 已经 CheckTx 技术上可选 / 已经 finunlock bundled（不变量 639）
 - [`finunlock-notsettled-sold-as-bundled.md`](finunlock-notsettled-sold-as-bundled.md) — unlocks mempool 被写成已经交差 / 已经四门已经结算 / 已经 finunlock bundled（不变量 638）

@@ -1,3 +1,7 @@
+## 2026-09-17（续 758）
+
+- 不变量 641；语料 C618；模式 name-the-finh1-notsettled-bar；反模式 finh1-notsettled-sold-as-bundled；L10.3 第 610 条。填 L4.4 / CometBFT 档案 FinalizeBlock When starts consensus for height h+1 not already settled / not persist decision / not finh1 bundled 正式三事（593 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。593 finh1 unbundling 启动（641 item 1）。
+
 ## 2026-09-16（续 757）
 
 - 不变量 640；语料 C617；模式 name-the-finunlock-notcommitlock-bar；反模式 finunlock-notcommitlock-sold-as-bundled；L10.3 第 609 条。填 L4.4 / CometBFT 档案 FinalizeBlock When unlock after optional recheck not Commit lock / not h+1 round 0 / not finunlock bundled 正式三事（592 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。592 finunlock unbundling 完成（640 item 3）。
