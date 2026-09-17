@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Echo 了就已经 Flush、已经是入参字段、已经刷完」，必须分开 Echo a string to test implementation 是不是已经 Flush flush queue / commit-empty-echo bundled / Flush sync response interchangeable、Request Message string to echo back 是不是 Response Message interchangeable / 已经是 Flush、Response Message the input string 是不是已经测实现就已经刷完 interchangeable。可以跳过「看见 Echo 了就已经 Flush」。不要另写怎样写 Echo。492 echousage vs flush bundled unbundling 续（674 item 1）；精读 [`worked-example-echousage-notreqresp-vs-bundled.md`](worked-example-echousage-notreqresp-vs-bundled.md)（不变量 675 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Echo 了就已经 Flush、已经是入参字段、已经刷完」，必须分开 Echo a string to test implementation 是不是已经 Flush flush queue / commit-empty-echo bundled / Flush sync response interchangeable、Request Message string to echo back 是不是 Response Message interchangeable / 已经是 Flush、Response Message the input string 是不是已经测实现就已经刷完 interchangeable。可以跳过「看见 Echo 了就已经 Flush」。不要另写怎样写 Echo。492 echousage vs flush bundled unbundling 完成（674 item 1 / 675 item 2 / 676 item 3）；精读 [`worked-example-echousage-notdone-vs-bundled.md`](worked-example-echousage-notdone-vs-bundled.md)（不变量 676 item 3）。
 
 ## 本页不抄
 

@@ -1,3 +1,4 @@
+- [`echousage-notdone-sold-as-bundled.md`](echousage-notdone-sold-as-bundled.md) — Response Message the input string 被写成已经 Echo Usage test already done / 已经 Request Message / 已经 Flush sync response（不变量 676）
 - [`echousage-notreqresp-sold-as-bundled.md`](echousage-notreqresp-sold-as-bundled.md) — Request Message string to echo back 被写成已经 Response Message / 已经 Echo Message 是 Flush / 已经填了 Message 就代表已经回显（不变量 675）
 - [`echousage-notflush-sold-as-bundled.md`](echousage-notflush-sold-as-bundled.md) — Echo a string to test implementation 被写成已经 Flush 冲队列 / 已经 Commit 空请求 bundled / 已经 Flush 同步回包（不变量 674）
 - [`flushusage-notimmediatesync-sold-as-bundled.md`](flushusage-notimmediatesync-sold-as-bundled.md) — Called immediately for sync request returns when Flush response comes back 被写成已经 Echo 回包 Message / 已经 Commit 能往下走 / 已经 commit-empty-echo bundled 第三件事（不变量 673）
