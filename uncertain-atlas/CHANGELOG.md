@@ -1,3 +1,7 @@
+## 2026-09-17（续 788）
+
+- 不变量 671；语料 C648；模式 name-the-flushusage-notechoqueued-bar；反模式 flushusage-notechoqueued-sold-as-bundled；L10.3 第 640 条。填 L4.4 / CometBFT 档案 Flush Usage Signals messages queued should be flushed to server not Echo test / not HasChannel queued / not Echo request Message is Flush 正式三事（493 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。493 flushusage vs echo bundled unbundling 启动（671 item 1）。
+
 ## 2026-09-17（续 787）
 
 - 不变量 670；语料 C647；模式 name-the-infousage-notappversion-bar；反模式 infousage-notappversion-sold-as-bundled；L10.3 第 639 条。填 L4.4 / CometBFT 档案 Info Usage app_version included in Header not last_block persisted during Commit / not Info response version / not AppHash in header 正式三事（494 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。494 infousage vs handshake bundled unbundling 完成（670 item 3）。
