@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经发给对等节点」，必须分开 HasChannel 是不是已经入队、Send 回假是不是已经断开、TrySend 是不是已经和 Send 同一把尺。可以跳过「看见能发就已经入队」。不要另写怎样入队或怎样编 protobuf。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经发给对等节点」，必须分开 HasChannel 是不是已经入队、Send 回假是不是已经断开、TrySend 是不是已经和 Send 同一把尺。可以跳过「看见能发就已经入队」。不要另写怎样入队或怎样编 protobuf。309 send vs enqueued bundled unbundling 完成（1010 item 1 / 1011 item 2 / 1012 item 3）；精读 [`worked-example-sendq-notqueued-vs-bundled.md`](worked-example-sendq-notqueued-vs-bundled.md)（不变量 1010 item 1）。
 
 ## 本页不抄
 

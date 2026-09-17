@@ -1,3 +1,15 @@
+## 2026-09-17（续 1129）
+
+- 不变量 1012；语料 C990；模式 name-the-sendq-notsame-bar；反模式 sendq-notsame-sold-as-bundled；L10.3 第 981 条。填 L4.4 / CometBFT 档案 TrySend 回假 not already stopped / not already same-scale / not already delivered 正式三事（309 余量）。309 send vs enqueued bundled unbundling 完成（1012 item 3）。
+
+## 2026-09-17（续 1128）
+
+- 不变量 1011；语料 C989；模式 name-the-sendq-notdisc-bar；反模式 sendq-notdisc-sold-as-bundled；L10.3 第 980 条。填 L4.4 / CometBFT 档案 Send 回假 not already disconnected / not already known-reason / not already delivered 正式三事（309 余量）。309 send vs enqueued bundled unbundling 续（1011 item 2）。
+
+## 2026-09-17（续 1127）
+
+- 不变量 1010；语料 C988；模式 name-the-sendq-notqueued-bar；反模式 sendq-notqueued-sold-as-bundled；L10.3 第 979 条。填 L4.4 / CometBFT 档案 HasChannel not already queued / not already delivered / not already sent 正式三事（309 余量）。309 send vs enqueued bundled unbundling 启动（1010 item 1）。
+
 ## 2026-09-17（续 1126）
 
 - 不变量 1009；语料 C987；模式 name-the-numpeers-notheight-bar；反模式 numpeers-notheight-sold-as-bundled；L10.3 第 978 条。填 L4.4 / CometBFT 档案 PeerState not already verified / not already evidence-ready / not already spec-height 正式三事（308 余量）。308 numpeers vs all bundled unbundling 完成（1009 item 3）。

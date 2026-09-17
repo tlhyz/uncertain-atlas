@@ -1,3 +1,6 @@
+- [`name-the-sendq-notsame-bar.md`](name-the-sendq-notsame-bar.md) — TrySend 回假 not already stopped / not already same-scale / not already delivered 正式三事（309 余量）（不变量 1012）
+- [`name-the-sendq-notdisc-bar.md`](name-the-sendq-notdisc-bar.md) — Send 回假 not already disconnected / not already known-reason / not already delivered 正式三事（309 余量）（不变量 1011）
+- [`name-the-sendq-notqueued-bar.md`](name-the-sendq-notqueued-bar.md) — HasChannel not already queued / not already delivered / not already sent 正式三事（309 余量）（不变量 1010）
 - [`name-the-numpeers-notheight-bar.md`](name-the-numpeers-notheight-bar.md) — PeerState not already verified / not already evidence-ready / not already spec-height 正式三事（308 余量）（不变量 1009）
 - [`name-the-numpeers-notindep-bar.md`](name-the-numpeers-notindep-bar.md) — 按名字拿到反应堆 not already independent / not already recommended / not already current 正式三事（308 余量）（不变量 1008）
 - [`name-the-numpeers-notall-bar.md`](name-the-numpeers-notall-bar.md) — NumPeers not already all-neighbors / not already unconditional / not already dialing-ok 正式三事（308 余量）（不变量 1007）

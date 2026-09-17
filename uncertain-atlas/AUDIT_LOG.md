@@ -1,3 +1,18 @@
+| A4820 | 记录 | 会与 309 / 67 / 1010 / 1011 糊成「看见立刻失败就已经停掉这个人 interchangeable、就已经和 Send 同一把尺 interchangeable、就已经送到 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 TrySend 回假 not already stopped / not already same-scale / not already delivered 正式三事（309 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。309 send vs enqueued bundled unbundling 完成（1012 item 3） |
+| A4821 | 高 | 看见 TrySend 回了假 会被写成已经停掉这个人 interchangeable | 官方 p2p API item 3：not already stopped |
+| A4822 | 高 | 看见立刻失败 会被写成已经和 Send 等过同一段时间 interchangeable | 官方 p2p API item 3：not already same-scale |
+| A4823 | 高 | 看见非阻塞 会被写成已经送到 interchangeable | 官方 p2p API item 3：not already delivered |
+| A4824 | 中 | 怎样入队会被抄进不确定 | 不抄。不写怎样入队或怎样编 protobuf。不另写 19 节 |
+| A4815 | 记录 | 会与 309 / 308 / 306 / 1010 / 1012 糊成「看见 Send 回假就已经断开 interchangeable、就已经知道理由 interchangeable、就已经送到 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Send 回假 not already disconnected / not already known-reason / not already delivered 正式三事（309 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。309 send vs enqueued bundled unbundling 续（1011 item 2） |
+| A4816 | 高 | 看见 Send 回了假 会被写成已经断开 interchangeable | 官方 p2p API item 2：not already disconnected |
+| A4817 | 高 | 看见回了假 会被写成已经知道是哪一种理由 interchangeable | 官方 p2p API item 2：not already known-reason |
+| A4818 | 高 | 看见方法还在 会被写成已经送到 interchangeable | 官方 p2p API item 2：not already delivered |
+| A4819 | 中 | 怎样入队会被抄进不确定 | 不抄。不写怎样入队或怎样编 protobuf。不另写 19 节 |
+| A4810 | 记录 | 会与 309 / 306 / 308 / 1011 / 1012 糊成「看见 HasChannel 就已经入队 interchangeable、就已经送到 interchangeable、就已经发出去 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 HasChannel not already queued / not already delivered / not already sent 正式三事（309 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。309 send vs enqueued bundled unbundling 启动（1010 item 1） |
+| A4811 | 高 | 看见 HasChannel 为真 会被写成已经入队 interchangeable / 306 interchangeable | 官方 p2p API item 1：not already queued / not 306 |
+| A4812 | 高 | 看见对端宣布了 会被写成已经送到 interchangeable | 官方 p2p API item 1：not already delivered |
+| A4813 | 高 | 看见辅助方法绿了 会被写成已经发出去 interchangeable | 官方 p2p API item 1：not already sent |
+| A4814 | 中 | 怎样入队会被抄进不确定 | 不抄。不写怎样入队或怎样编 protobuf。不另写 19 节 |
 | A4805 | 记录 | 会与 308 / 67 / 309 / 1007 / 1008 糊成「看见能 Get 到高度就已经验过 interchangeable、就已经证据齐 interchangeable、就已经是规范高度 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PeerState not already verified / not already evidence-ready / not already spec-height 正式三事（308 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。308 numpeers vs all bundled unbundling 完成（1009 item 3） |
 | A4806 | 高 | 看见 Peer 上有 KV 会被写成已经验过高度 interchangeable | 官方 p2p API item 3：not already verified |
 | A4807 | 高 | 看见 Consensus 写过 会被写成证据已经齐 interchangeable | 官方 p2p API item 3：not already evidence-ready |

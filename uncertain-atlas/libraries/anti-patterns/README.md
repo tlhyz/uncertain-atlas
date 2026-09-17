@@ -1,3 +1,6 @@
+- [`sendq-notsame-sold-as-bundled.md`](sendq-notsame-sold-as-bundled.md) — TrySend 回假 被写成已经停掉这个人 / 已经和 Send 同一把尺 / 已经送到（不变量 1012）
+- [`sendq-notdisc-sold-as-bundled.md`](sendq-notdisc-sold-as-bundled.md) — Send 回假 被写成已经断开 / 已经知道是哪一种理由 / 已经送到（不变量 1011）
+- [`sendq-notqueued-sold-as-bundled.md`](sendq-notqueued-sold-as-bundled.md) — HasChannel 被写成已经入队 / 已经送到 / 已经发出去（不变量 1010）
 - [`numpeers-notheight-sold-as-bundled.md`](numpeers-notheight-sold-as-bundled.md) — PeerState 被写成已经验过高度 / 证据已经齐 / 已经是规范高度（不变量 1009）
 - [`numpeers-notindep-sold-as-bundled.md`](numpeers-notindep-sold-as-bundled.md) — 按名字拿到反应堆 被写成已经独立 / 已经该当推荐路径 / 已经该当现行用法（不变量 1008）
 - [`numpeers-notall-sold-as-bundled.md`](numpeers-notall-sold-as-bundled.md) — NumPeers 被写成已经数完 / 无条件名单已经算进去 / 正在拨就已经连上（不变量 1007）
