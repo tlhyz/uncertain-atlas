@@ -165,6 +165,9 @@
 - [`worked-example-finalize-persist-notdisk-vs-bundled.md`](worked-example-finalize-persist-notdisk-vs-bundled.md) — Finalize改了状态≠already persisted/Commit/settled；≠335 bundled（不变量 902）
 - [`worked-example-finalize-persist-vs-commit.md`](worked-example-finalize-persist-vs-commit.md) — Finalize 改了状态 ≠ 已经落盘；必须在 Commit 落盘 ≠ 已经在 Finalize 落了；记住上次成功 Commit 高度 ≠ 已经能跳步（不变量 335）
 - [`worked-example-precision-vs-msgdelay.md`](worked-example-precision-vs-msgdelay.md) — 填了 Precision ≠ 已经是 MessageDelay；填了两个 ≠ 已经启用 PBTS；用于 PBTS ≠ 已经是永恒常数（不变量 336）
+- [`worked-example-maxbytes-cap-not21-vs-bundled.md`](worked-example-maxbytes-cap-not21-vs-bundled.md) — 合法范围≠already default-21/bandwidth-evaluated/settled；≠337 bundled（不变量 919）
+- [`worked-example-maxbytes-cap-notapp-vs-bundled.md`](worked-example-maxbytes-cap-notapp-vs-bundled.md) — 应用自己卡≠already engine-off/only-app-ruler/settled；≠337 bundled（不变量 918）
+- [`worked-example-maxbytes-cap-notunlim-vs-bundled.md`](worked-example-maxbytes-cap-notunlim-vs-bundled.md) — -1仍按100MB验≠already unlimited/free-to-return/settled；≠337 bundled（不变量 917）
 - [`worked-example-maxbytes-cap-vs-unlimited.md`](worked-example-maxbytes-cap-vs-unlimited.md) — -1 就按 100 MB 验 ≠ 已经没有上限；应用自己卡体积 ≠ 已经引擎不管了；必须 -1 或不超过 100 MB ≠ 已经是默认 21 MB（不变量 337）
 - [`worked-example-prepare-nondet-notext-vs-bundled.md`](worked-example-prepare-nondet-notext-vs-bundled.md) — ExtendVote无确定性≠already same ext/same ruler as Verify/settled；≠338 bundled（不变量 898）
 - [`worked-example-prepare-nondet-notraw-vs-bundled.md`](worked-example-prepare-nondet-notraw-vs-bundled.md) — raw一样≠already same prepared/must same/settled；≠338 bundled（不变量 897）

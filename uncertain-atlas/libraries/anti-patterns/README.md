@@ -1,3 +1,6 @@
+- [`maxbytes-cap-not21-sold-as-bundled.md`](maxbytes-cap-not21-sold-as-bundled.md) — 必须 -1 或不超过 100 MB 被写成已经是默认 21 MB / 已经评估过带宽 / 已经交差（不变量 919）
+- [`maxbytes-cap-notapp-sold-as-bundled.md`](maxbytes-cap-notapp-sold-as-bundled.md) — 应用自己卡体积 被写成已经引擎不管了 / 已经只有应用这一把尺 / 已经交差（不变量 918）
+- [`maxbytes-cap-notunlim-sold-as-bundled.md`](maxbytes-cap-notunlim-sold-as-bundled.md) — -1 就按 100 MB 验 被写成已经没有上限 / 已经随便回 / 已经交差（不变量 917）
 - [`maxgas-notblock-sold-as-bundled.md`](maxgas-notblock-sold-as-bundled.md) — 已提交块 被写成已经按气验过 / 已经由共识层验过 / 已经交差（不变量 916）
 - [`maxgas-notused-sold-as-bundled.md`](maxgas-notused-sold-as-bundled.md) — GasUsed 被写成已经按实用气验过 / 已经算进共识 / 已经交差（不变量 915）
 - [`maxgas-noton-sold-as-bundled.md`](maxgas-noton-sold-as-bundled.md) — MaxGas 被写成已经在执行 / 已经有意义 / 已经交差（不变量 914）

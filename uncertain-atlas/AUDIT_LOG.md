@@ -1,3 +1,18 @@
+| A4355 | 记录 | 会与 337 / 331 / 344 / 917 / 918 糊成「看见合法范围就已经是默认 21 MB interchangeable、就已经评估过带宽 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 必须 -1 或不超过 100 MB not already default-21 / not already bandwidth-evaluated / not already settled 正式三事（337 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。337 maxbytes-cap vs unlimited bundled unbundling 完成（919 item 3） |
+| A4356 | 高 | 看见必须 -1 或不超过 100 MB 会被写成已经是默认 21 MB interchangeable | 官方 BlockParams.MaxBytes item 3：not already default-21 |
+| A4357 | 高 | 看见默认能接到 21 MB 会被写成已经评估过带宽 interchangeable | 官方 BlockParams.MaxBytes item 3：not already bandwidth-evaluated |
+| A4358 | 高 | 看见建议下调 会被写成已经交差 interchangeable | 官方 BlockParams.MaxBytes item 3：not already settled |
+| A4359 | 中 | 怎样设 MaxBytes 会被抄进不确定 | 不抄。不写怎样设 MaxBytes 或怎样算块开销。不把 100 MB / 21 MB 当不确定常数。不另写 19 节 |
+| A4350 | 记录 | 会与 337 / 63 / 344 / 917 / 919 糊成「看见应用自己卡就已经引擎不管了 interchangeable、就已经只有应用这一把尺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 应用自己卡体积 not already engine-off / not already only-app-ruler / not already settled 正式三事（337 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。337 maxbytes-cap vs unlimited bundled unbundling 续（918 item 2） |
+| A4351 | 高 | 看见应用自己卡体积 会被写成已经引擎不管了 interchangeable | 官方 BlockParams.MaxBytes item 2：not already engine-off |
+| A4352 | 高 | 看见 MAY 写成 -1 会被写成已经只有应用这一把尺 interchangeable | 官方 BlockParams.MaxBytes item 2：not already only-app-ruler |
+| A4353 | 高 | 看见 Process 会拒 会被写成已经交差 interchangeable | 官方 BlockParams.MaxBytes item 2：not already settled |
+| A4354 | 中 | 怎样设 MaxBytes 会被抄进不确定 | 不抄。不写怎样设 MaxBytes 或怎样算块开销。不把 100 MB / 21 MB 当不确定常数。不另写 19 节 |
+| A4345 | 记录 | 会与 337 / 299 / 315 / 918 / 919 糊成「看见写成 -1 就已经没有上限 interchangeable、就已经随便回 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 -1 就按 100 MB 验 not already unlimited / not already free to return anything / not already settled 正式三事（337 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。337 maxbytes-cap vs unlimited bundled unbundling 启动（917 item 1） |
+| A4346 | 高 | 看见 MaxBytes 写成 -1 会被写成已经没有上限 interchangeable / 299 interchangeable | 官方 BlockParams.MaxBytes item 1：not already unlimited / not 299 |
+| A4347 | 高 | 看见按 100 MB 验 会被写成已经随便回 interchangeable | 官方 BlockParams.MaxBytes item 1：not already free to return anything |
+| A4348 | 高 | 看见能打满 会被写成已经交差 interchangeable | 官方 BlockParams.MaxBytes item 1：not already settled |
+| A4349 | 中 | 怎样设 MaxBytes 会被抄进不确定 | 不抄。不写怎样设 MaxBytes 或怎样算块开销。不把 100 MB / 21 MB 当不确定常数。不另写 19 节 |
 | A4340 | 记录 | 会与 315 / 33 / 914 / 915 糊成「看见已提交就已经按气验过 interchangeable、就已经由共识层验过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 已提交块 not already gas-checked / not already consensus-enforced / not already settled 正式三事（315 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。315 maxgas vs enforced bundled unbundling 完成（916 item 3） |
 | A4341 | 高 | 看见已提交块 会被写成已经按气验过 interchangeable | 官方 Gas item 3：not already gas-checked |
 | A4342 | 高 | 看见池子守了 会被写成已经由共识层验过 interchangeable | 官方 Gas item 3：not already consensus-enforced |

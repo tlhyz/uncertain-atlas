@@ -1,3 +1,15 @@
+## 2026-09-17（续 1036）
+
+- 不变量 919；语料 C897；模式 name-the-maxbytes-cap-not21-bar；反模式 maxbytes-cap-not21-sold-as-bundled；L10.3 第 888 条。填 L4.4 / CometBFT 档案 必须 -1 或不超过 100 MB not already default-21 / not already bandwidth-evaluated / not already settled 正式三事（337 余量）。337 maxbytes-cap vs unlimited bundled unbundling 完成（919 item 3）。
+
+## 2026-09-17（续 1035）
+
+- 不变量 918；语料 C896；模式 name-the-maxbytes-cap-notapp-bar；反模式 maxbytes-cap-notapp-sold-as-bundled；L10.3 第 887 条。填 L4.4 / CometBFT 档案 应用自己卡体积 not already engine-off / not already only-app-ruler / not already settled 正式三事（337 余量）。337 maxbytes-cap vs unlimited bundled unbundling 续（918 item 2）。
+
+## 2026-09-17（续 1034）
+
+- 不变量 917；语料 C895；模式 name-the-maxbytes-cap-notunlim-bar；反模式 maxbytes-cap-notunlim-sold-as-bundled；L10.3 第 886 条。填 L4.4 / CometBFT 档案 -1 就按 100 MB 验 not already unlimited / not already free to return anything / not already settled 正式三事（337 余量）。337 maxbytes-cap vs unlimited bundled unbundling 启动（917 item 1）。
+
 ## 2026-09-17（续 1033）
 
 - 不变量 916；语料 C894；模式 name-the-maxgas-notblock-bar；反模式 maxgas-notblock-sold-as-bundled；L10.3 第 885 条。填 L4.4 / CometBFT 档案 已提交块 not already gas-checked / not already consensus-enforced / not already settled 正式三事（315 余量）。315 maxgas vs enforced bundled unbundling 完成（916 item 3）。
