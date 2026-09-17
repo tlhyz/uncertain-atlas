@@ -1,3 +1,6 @@
+- [`name-the-procrestr-notpunish-bar.md`](name-the-procrestr-notpunish-bar.md) — ProcessProposalRequest.misbehavior not already rewarded / not already slashed / not already settled 正式三事（420 余量）（不变量 1030）
+- [`name-the-procrestr-notts-bar.md`](name-the-procrestr-notts-bar.md) — ProcessProposalRequest.time not already vote-ts-checked / not already header-verified / not already settled 正式三事（420 余量）（不变量 1029）
+- [`name-the-procrestr-notlocal-bar.md`](name-the-procrestr-notlocal-bar.md) — ProcessProposalRequest.proposed_last_commit not already local-settled / not already ext-commit / not already processed 正式三事（420 余量）（不变量 1028）
 - [`name-the-procreq-nothead-bar.md`](name-the-procreq-nothead-bar.md) — ProcessProposalRequest.height not already header-aligned / not already ext-height / not already settled 正式三事（419 余量）（不变量 1027）
 - [`name-the-procreq-notproc-bar.md`](name-the-procreq-notproc-bar.md) — ProcessProposalRequest.hash not already processed / not already ext-hash / not already settled 正式三事（419 余量）（不变量 1026）
 - [`name-the-procreq-notexec-bar.md`](name-the-procreq-notexec-bar.md) — ProcessProposalRequest.txs not already executed / not already whole-block / not already settled 正式三事（419 余量）（不变量 1025）

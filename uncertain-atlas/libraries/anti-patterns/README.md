@@ -1,3 +1,6 @@
+- [`procrestr-notpunish-sold-as-bundled.md`](procrestr-notpunish-sold-as-bundled.md) — misbehavior 被写成已经定奖惩 / 已经罚没 / 已经交差（不变量 1030）
+- [`procrestr-notts-sold-as-bundled.md`](procrestr-notts-sold-as-bundled.md) — time 被写成已经验过票上时间 / 已经验过块头 / 已经交差（不变量 1029）
+- [`procrestr-notlocal-sold-as-bundled.md`](procrestr-notlocal-sold-as-bundled.md) — proposed_last_commit 被写成已经交差 local_last_commit / 已经交差 / 已经跑过 Process（不变量 1028）
 - [`procreq-nothead-sold-as-bundled.md`](procreq-nothead-sold-as-bundled.md) — height 被写成已经对上了拟议块头 / 已经是 ext-height / 已经交差（不变量 1027）
 - [`procreq-notproc-sold-as-bundled.md`](procreq-notproc-sold-as-bundled.md) — hash 被写成已经跑过 Process / 已经是 ext-hash / 已经交差（不变量 1026）
 - [`procreq-notexec-sold-as-bundled.md`](procreq-notexec-sold-as-bundled.md) — txs 被写成已经执行那些交易 / 已经整块跑了 / 已经交差（不变量 1025）

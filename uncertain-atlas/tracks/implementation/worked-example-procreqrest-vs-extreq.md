@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Process 请求余栏就已经交差 local_last_commit、已经验过票上时间、已经定奖惩」，必须分开 ProcessProposalRequest.proposed_last_commit 是从拟议块里的信息拿到的上一份提交信息是不是已经交差 local_last_commit、ProcessProposalRequest.time 是拟议块的时间戳是不是已经验过票上时间、ProcessProposalRequest.misbehavior 是过错验证者信息列表是不是已经定奖惩。可以跳过「看见填了 Process 请求余栏就已经交差 local_last_commit」。不要另写怎样写 Process 请求余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Process 请求余栏就已经交差 local_last_commit、已经验过票上时间、已经定奖惩」，必须分开 ProcessProposalRequest.proposed_last_commit 是从拟议块里的信息拿到的上一份提交信息是不是已经交差 local_last_commit、ProcessProposalRequest.time 是拟议块的时间戳是不是已经验过票上时间、ProcessProposalRequest.misbehavior 是过错验证者信息列表是不是已经定奖惩。可以跳过「看见填了 Process 请求余栏就已经交差 local_last_commit」。不要另写怎样写 Process 请求余栏。420 procreqrest vs extreq bundled unbundling 完成（1028 item 1 / 1029 item 2 / 1030 item 3）；精读 [`worked-example-procrestr-notlocal-vs-bundled.md`](worked-example-procrestr-notlocal-vs-bundled.md)（不变量 1028 item 1）。
 
 ## 本页不抄
 

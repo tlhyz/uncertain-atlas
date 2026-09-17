@@ -1,4 +1,4 @@
-# Review Report · 2026-09-17 23:49 UTC
+# Review Report · 2026-09-17 23:51 UTC
 
 由 `tools/review_audit.py` 生成。人工复审仍看 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
@@ -10,7 +10,7 @@
 | R1d | high | pass | REVIEW_LOOP.md |
 | R2a | high | pass | consensus 不确定列 |
 | R2b | high | pass | state-model 不确定列 |
-| R3 | high | pass | OK: 570 corpus rows validated |
+| R3 | high | pass | OK: 573 corpus rows validated |
 | R4 | med | pass | ARCHITECTURE 含进度数字 |
 | R5a | high | pass | threat-model INDEX |
 | R5b | high | pass | actors.md |
@@ -25,7 +25,7 @@
 
 ## 本轮建议执行
 
-1. P1-3 ABCI++ 不变量 1028+
+1. P1-3 ABCI++ 不变量 1031+
 2. P3-3 merge KB snapshot branches
 3. P1-5 按 cpu-measurement-method 补实测数字（无机器则保持空）
 

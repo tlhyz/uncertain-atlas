@@ -1,3 +1,15 @@
+## 2026-09-17（续 1147）
+
+- 不变量 1030；语料 C1008；模式 name-the-procrestr-notpunish-bar；反模式 procrestr-notpunish-sold-as-bundled；L10.3 第 999 条。填 L4.4 / CometBFT 档案 ProcessProposalRequest.misbehavior not already rewarded / not already slashed / not already settled 正式三事（420 余量）。420 procreqrest vs extreq bundled unbundling 完成（1030 item 3）。
+
+## 2026-09-17（续 1146）
+
+- 不变量 1029；语料 C1007；模式 name-the-procrestr-notts-bar；反模式 procrestr-notts-sold-as-bundled；L10.3 第 998 条。填 L4.4 / CometBFT 档案 ProcessProposalRequest.time not already vote-ts-checked / not already header-verified / not already settled 正式三事（420 余量）。420 procreqrest vs extreq bundled unbundling 续（1029 item 2）。
+
+## 2026-09-17（续 1145）
+
+- 不变量 1028；语料 C1006；模式 name-the-procrestr-notlocal-bar；反模式 procrestr-notlocal-sold-as-bundled；L10.3 第 997 条。填 L4.4 / CometBFT 档案 ProcessProposalRequest.proposed_last_commit not already local-settled / not already ext-commit / not already processed 正式三事（420 余量）。420 procreqrest vs extreq bundled unbundling 启动（1028 item 1）。
+
 ## 2026-09-17（续 1144）
 
 - 不变量 1027；语料 C1005；模式 name-the-procreq-nothead-bar；反模式 procreq-nothead-sold-as-bundled；L10.3 第 996 条。填 L4.4 / CometBFT 档案 ProcessProposalRequest.height not already header-aligned / not already ext-height / not already settled 正式三事（419 余量）。419 procreq vs extreq bundled unbundling 完成（1027 item 3）。

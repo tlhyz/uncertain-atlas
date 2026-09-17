@@ -658,6 +658,9 @@
 - [`worked-example-procreq-notproc-vs-bundled.md`](worked-example-procreq-notproc-vs-bundled.md) — hash≠already processed/ext-hash/settled；≠419 bundled（不变量 1026）
 - [`worked-example-procreq-notexec-vs-bundled.md`](worked-example-procreq-notexec-vs-bundled.md) — txs≠already executed/whole-block/settled；≠419 bundled（不变量 1025）
 - [`worked-example-procreq-vs-extreq.md`](worked-example-procreq-vs-extreq.md) — ProcessProposalRequest.txs 是拟议块的交易列表 ≠ 已经执行那些交易；ProcessProposalRequest.hash 是拟议块的哈希 ≠ 已经跑过 Process；ProcessProposalRequest.height 是拟议块的高度 ≠ 已经对上了拟议块头（不变量 419）
+- [`worked-example-procrestr-notpunish-vs-bundled.md`](worked-example-procrestr-notpunish-vs-bundled.md) — misbehavior≠already rewarded/slashed/settled；≠420 bundled（不变量 1030）
+- [`worked-example-procrestr-notts-vs-bundled.md`](worked-example-procrestr-notts-vs-bundled.md) — time≠already vote-ts-checked/header-verified/settled；≠420 bundled（不变量 1029）
+- [`worked-example-procrestr-notlocal-vs-bundled.md`](worked-example-procrestr-notlocal-vs-bundled.md) — proposed_last_commit≠already local-settled/ext-commit/processed；≠420 bundled（不变量 1028）
 - [`worked-example-procreqrest-vs-extreq.md`](worked-example-procreqrest-vs-extreq.md) — ProcessProposalRequest.proposed_last_commit 是从拟议块里的信息拿到的上一份提交信息 ≠ 已经交差 local_last_commit；ProcessProposalRequest.time 是拟议块的时间戳 ≠ 已经验过票上时间；ProcessProposalRequest.misbehavior 是过错验证者信息列表 ≠ 已经定奖惩（不变量 420）
 - [`worked-example-extvitable-vs-usage.md`](worked-example-extvitable-vs-usage.md) — ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展 ≠ 已经从本进程抽出；ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展 ≠ 已经按原样签；ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签 ≠ 已经把验过的签交给应用（不变量 421）
 - [`worked-example-finreq-vs-procreq.md`](worked-example-finreq-vs-procreq.md) — FinalizeBlockRequest.decided_last_commit 是从刚决定那块拿到的上一份提交信息 ≠ 已经交差 local_last_commit；FinalizeBlockRequest.height 是已决块的高度 ≠ 已经对上了拟议块头；FinalizeBlockRequest.txs 是作为这块一部分提交的交易列表 ≠ 已经执行那些交易（不变量 422）
