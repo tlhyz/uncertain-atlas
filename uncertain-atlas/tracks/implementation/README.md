@@ -160,6 +160,9 @@
 - [`worked-example-req3-coherence-vs-accept.md`](worked-example-req3-coherence-vs-accept.md) — 正确提议者的准备提案必须被正确接收者 Accept ≠ 已经是任意块都会 Accept；Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 ≠ 已经只是活性问题；Req 3 是大量测试和自动验证的目标 ≠ 已经测过（不变量 347）
 - [`worked-example-req6-coherence-vs-accept.md`](worked-example-req6-coherence-vs-accept.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept ≠ 已经是任意扩展都会 Accept；Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 ≠ 已经只是活性问题；会面对和 Req 5 同一类活性问题 ≠ 已经丢了安全性（不变量 348）
 - [`worked-example-req9-noside-vs-commit.md`](worked-example-req9-noside-vs-commit.md) — Prepare 不得改已提交状态 ≠ 已经立刻执行就已经交差；Process 不得改已提交状态 ≠ 已经 Accept 就已经改了；Extend 和 Verify 不得改已提交状态 ≠ 已经签了扩展就已经进状态（不变量 349）
+- [`worked-example-extend-once-notperheight-vs-bundled.md`](worked-example-extend-once-notperheight-vs-bundled.md) — 一轮一份扩展≠per height/must Accept/settled；≠350 bundled（不变量 865）
+- [`worked-example-extend-once-notnil-vs-bundled.md`](worked-example-extend-once-notnil-vs-bundled.md) — 才叫ExtendVote≠signed nil/every vote/settled；≠350 bundled（不变量 864）
+- [`worked-example-extend-once-notresign-vs-bundled.md`](worked-example-extend-once-notresign-vs-bundled.md) — 一轮一张Precommit≠resign/is extension/settled；≠350 bundled（不变量 863）
 - [`worked-example-extend-once-vs-round.md`](worked-example-extend-once-vs-round.md) — 一轮最多一张 Precommit ≠ 已经能再签一张；ExtendVote 只在即将广播非 nil Precommit 时才叫 ≠ 已经签了 nil 票；一轮只能交出一份扩展 ≠ 已经是每一高度一份（不变量 350）
 - [`worked-example-process-also-notevery-vs-bundled.md`](worked-example-process-also-notevery-vs-bundled.md) — 失败路径≠this Prepare/every round/settled；≠351 bundled（不变量 862）
 - [`worked-example-process-also-notsame-vs-bundled.md`](worked-example-process-also-notsame-vs-bundled.md) — 通常对得上≠guaranteed/must match/settled；≠351 bundled（不变量 861）

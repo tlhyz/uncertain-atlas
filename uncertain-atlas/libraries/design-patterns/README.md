@@ -1,3 +1,6 @@
+- [`name-the-extend-once-notperheight-bar.md`](name-the-extend-once-notperheight-bar.md) — 一轮只能交出一份扩展 not already one per height / not already must Accept / not already settled 正式三事（350 余量）（不变量 865）
+- [`name-the-extend-once-notnil-bar.md`](name-the-extend-once-notnil-bar.md) — ExtendVote 只在即将广播非 nil Precommit 时才叫 not already signed nil / not already every vote calls / not already settled 正式三事（350 余量）（不变量 864）
+- [`name-the-extend-once-notresign-bar.md`](name-the-extend-once-notresign-bar.md) — 一轮最多一张 Precommit not already can sign another / not already is the extension / not already settled 正式三事（350 余量）（不变量 863）
 - [`name-the-process-also-notevery-bar.md`](name-the-process-also-notevery-bar.md) — 失败时可能对上更早一次或根本不调 not already this Prepare / not already every round calls / not already settled 正式三事（351 余量）（不变量 862）
 - [`name-the-process-also-notsame-bar.md`](name-the-process-also-notsame-bar.md) — 通常紧跟 Prepare、列表对得上 not already guaranteed this Prepare / not already must match / not already settled 正式三事（351 余量）（不变量 861）
 - [`name-the-process-also-notskip-bar.md`](name-the-process-also-notskip-bar.md) — Process 也会在提议者那边叫 not already no need to Process again / not already settled / not already this call 正式三事（351 余量）（不变量 860）

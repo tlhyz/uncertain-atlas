@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 Precommit 就已经能再签一张、已经签了 nil 票、已经是每一高度一份」，必须分开一轮最多一张 Precommit 是不是已经能再签一张、ExtendVote 只在即将广播非 nil Precommit 时才叫是不是已经签了 nil 票、一轮只能交出一份扩展是不是已经是每一高度一份。可以跳过「看见到了 Precommit 就已经能再签一张」。不要另写怎样写 ExtendVote。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 Precommit 就已经能再签一张、已经签了 nil 票、已经是每一高度一份」，必须分开一轮最多一张 Precommit 是不是已经能再签一张、ExtendVote 只在即将广播非 nil Precommit 时才叫是不是已经签了 nil 票、一轮只能交出一份扩展是不是已经是每一高度一份。可以跳过「看见到了 Precommit 就已经能再签一张」。不要另写怎样写 ExtendVote。350 extend-once vs round bundled unbundling 完成（863 item 1 / 864 item 2 / 865 item 3）；精读 [`worked-example-extend-once-notresign-vs-bundled.md`](worked-example-extend-once-notresign-vs-bundled.md)（不变量 863 item 1）。
 
 ## 本页不抄
 

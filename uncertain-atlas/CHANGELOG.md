@@ -1,3 +1,15 @@
+## 2026-09-17（续 982）
+
+- 不变量 865；语料 C843；模式 name-the-extend-once-notperheight-bar；反模式 extend-once-notperheight-sold-as-bundled；L10.3 第 834 条。填 L4.4 / CometBFT 档案 一轮只能交出一份扩展 not already one per height / not already must Accept / not already settled 正式三事（350 余量）。350 extend-once vs round bundled unbundling 完成（865 item 3）。
+
+## 2026-09-17（续 981）
+
+- 不变量 864；语料 C842；模式 name-the-extend-once-notnil-bar；反模式 extend-once-notnil-sold-as-bundled；L10.3 第 833 条。填 L4.4 / CometBFT 档案 ExtendVote 只在即将广播非 nil Precommit 时才叫 not already signed nil / not already every vote calls / not already settled 正式三事（350 余量）。350 extend-once vs round bundled unbundling 续（864 item 2）。
+
+## 2026-09-17（续 980）
+
+- 不变量 863；语料 C841；模式 name-the-extend-once-notresign-bar；反模式 extend-once-notresign-sold-as-bundled；L10.3 第 832 条。填 L4.4 / CometBFT 档案 一轮最多一张 Precommit not already can sign another / not already is the extension / not already settled 正式三事（350 余量）。350 extend-once vs round bundled unbundling 启动（863 item 1）。
+
 ## 2026-09-17（续 979）
 
 - 不变量 862；语料 C840；模式 name-the-process-also-notevery-bar；反模式 process-also-notevery-sold-as-bundled；L10.3 第 831 条。填 L4.4 / CometBFT 档案 失败时可能对上更早一次或根本不调 not already this Prepare / not already every round calls / not already settled 正式三事（351 余量）。351 process-also vs prepare bundled unbundling 完成（862 item 3）。

@@ -1,3 +1,18 @@
+| A4085 | 记录 | 会与 350 / 348 / 338 / 863 / 864 糊成「看见交了一份就已经是每一高度一份 interchangeable、就已经必须 Accept interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 一轮只能交出一份扩展 not already one per height / not already must Accept / not already settled 正式三事（350 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。350 extend-once vs round bundled unbundling 完成（865 item 3） |
+| A4086 | 高 | 看见一轮只能交出一份扩展 会被写成已经是每一高度一份 interchangeable | 官方一轮一份扩展 item 3：not already one per height |
+| A4087 | 高 | 看见交出来了 会被写成已经必须 Accept interchangeable | 官方一轮一份扩展 item 3：not already must Accept |
+| A4088 | 高 | 看见又能换一轮 会被写成已经交差 interchangeable | 官方一轮一份扩展 item 3：not already settled |
+| A4089 | 中 | 怎样写 ExtendVote 会被抄进不确定 | 不抄。不写怎样写 ExtendVote。不另写 19 节 |
+| A4080 | 记录 | 会与 350 / 338 / 34 / 863 / 865 糊成「看见叫了 ExtendVote 就已经签了 nil 票 interchangeable、就已经每张票都会叫 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote 只在即将广播非 nil Precommit 时才叫 not already signed nil / not already every vote calls / not already settled 正式三事（350 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。350 extend-once vs round bundled unbundling 续（864 item 2） |
+| A4081 | 高 | 看见 ExtendVote 只在即将广播非 nil Precommit 时才叫 会被写成已经签了 nil 票 interchangeable | 官方一轮一份扩展 item 2：not already signed nil |
+| A4082 | 高 | 看见启用了扩展 会被写成已经每张票都会叫 interchangeable | 官方一轮一份扩展 item 2：not already every vote calls |
+| A4083 | 高 | 看见有一张票 会被写成已经交差 interchangeable | 官方一轮一份扩展 item 2：not already settled |
+| A4084 | 中 | 怎样写 ExtendVote 会被抄进不确定 | 不抄。不写怎样写 ExtendVote。不另写 19 节 |
+| A4075 | 记录 | 会与 350 / 34 / 351 / 860 / 864 / 865 糊成「看见到了 Precommit 就已经能再签一张 interchangeable、就已经是扩展本身 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 一轮最多一张 Precommit not already can sign another / not already is the extension / not already settled 正式三事（350 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。350 extend-once vs round bundled unbundling 启动（863 item 1） |
+| A4076 | 高 | 看见一轮最多一张 Precommit 会被写成已经能再签一张 interchangeable / 34 interchangeable | 官方一轮一份扩展 item 1：not already can sign another / not 34 |
+| A4077 | 高 | 看见有一张票 会被写成已经是扩展本身 interchangeable | 官方一轮一份扩展 item 1：not already is the extension |
+| A4078 | 高 | 看见还能换轮 会被写成已经交差 interchangeable | 官方一轮一份扩展 item 1：not already settled |
+| A4079 | 中 | 怎样写 ExtendVote 会被抄进不确定 | 不抄。不写怎样写 ExtendVote。不另写 19 节 |
 | A4070 | 记录 | 会与 351 / 311 / 33 / 860 / 861 糊成「看见进了这一轮就已经是这一次 Prepare interchangeable、就已经每轮都会叫 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 失败时可能对上更早一次或根本不调 not already this Prepare / not already every round calls / not already settled 正式三事（351 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。351 process-also vs prepare bundled unbundling 完成（862 item 3） |
 | A4071 | 高 | 看见失败时可能对上更早一次 会被写成已经是这一次 Prepare interchangeable | 官方 Process 也会在提议者那边叫 item 3：not already this Prepare |
 | A4072 | 高 | 看见进了这一轮 会被写成已经每轮都会叫 interchangeable | 官方 Process 也会在提议者那边叫 item 3：not already every round calls |

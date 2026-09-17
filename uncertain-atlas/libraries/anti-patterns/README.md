@@ -1,3 +1,6 @@
+- [`extend-once-notperheight-sold-as-bundled.md`](extend-once-notperheight-sold-as-bundled.md) — 一轮一份扩展 被写成已经是每一高度一份 / 已经必须 Accept / 已经交差（不变量 865）
+- [`extend-once-notnil-sold-as-bundled.md`](extend-once-notnil-sold-as-bundled.md) — 才叫 ExtendVote 被写成已经签了 nil / 已经每张票都会叫 / 已经交差（不变量 864）
+- [`extend-once-notresign-sold-as-bundled.md`](extend-once-notresign-sold-as-bundled.md) — 一轮一张 Precommit 被写成已经能再签 / 已经是扩展 / 已经交差（不变量 863）
 - [`process-also-notevery-sold-as-bundled.md`](process-also-notevery-sold-as-bundled.md) — 失败路径 被写成已经是这一次 / 已经每轮都会叫 / 已经交差（不变量 862）
 - [`process-also-notsame-sold-as-bundled.md`](process-also-notsame-sold-as-bundled.md) — 通常对得上 被写成已经保证是这一次 / 已经必须对上 / 已经交差（不变量 861）
 - [`process-also-notskip-sold-as-bundled.md`](process-also-notskip-sold-as-bundled.md) — 提议者也 Process 被写成已经不用再 Process / 已经交差 / 已经过了 Process（不变量 860）
