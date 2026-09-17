@@ -1,3 +1,4 @@
+- [`worked-example-applysnapusage-notchoose-vs-bundled.md`](worked-example-applysnapusage-notchoose-vs-bundled.md) — can choose refetch/ban≠378 refetch_chunks/reject_senders/398 RETRY；≠502 bundled/notunless（不变量 656）
 - [`worked-example-applysnapusage-notunable-vs-bundled.md`](worked-example-applysnapusage-notunable-vs-bundled.md) — unable to retrieve next chunk≠378 refetch/398 REJECT_SNAPSHOT/332 matched AppHash；≠485 bundled/notverify/notinfo（不变量 655）
 - [`worked-example-applysnapusage-notinfo-vs-bundled.md`](worked-example-applysnapusage-notinfo-vs-bundled.md) — all chunks accepted后Info≠332 Info during load/323 transition/483 verified AppHash at end；≠485 bundled/notverify/notunable（不变量 654）
 - [`worked-example-applysnapusage-notverify-vs-bundled.md`](worked-example-applysnapusage-notverify-vs-bundled.md) — verify each chunk≠Only AppHash trusted/332 bundled/401 ACCEPT already complete；≠485 bundled/notinfo/notunable（不变量 653）
