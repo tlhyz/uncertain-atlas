@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「Query 已经能查」，必须分开 QueryState 是不是已经是 ExecuteTxState、上次 Commit 是不是已经跟上正在跑的块、启动对齐是不是已经是快照重放。可以跳过「看见能查就已经是工作状态」。不要另写怎样实现 QueryState 或怎样做 state sync。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「Query 已经能查」，必须分开 QueryState 是不是已经是 ExecuteTxState、上次 Commit 是不是已经跟上正在跑的块、启动对齐是不是已经是快照重放。可以跳过「看见能查就已经是工作状态」。不要另写怎样实现 QueryState 或怎样做 state sync。314 querystate vs execute bundled unbundling 完成（962 item 1 / 963 item 2 / 964 item 3）；精读 [`worked-example-querystate-notexec-vs-bundled.md`](worked-example-querystate-notexec-vs-bundled.md)（不变量 962 item 1）。
 
 ## 本页不抄
 

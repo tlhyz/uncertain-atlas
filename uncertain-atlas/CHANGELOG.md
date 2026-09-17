@@ -1,3 +1,15 @@
+## 2026-09-17（续 1081）
+
+- 不变量 964；语料 C942；模式 name-the-querystate-notsnap-bar；反模式 querystate-notsnap-sold-as-bundled；L10.3 第 933 条。填 L4.4 / CometBFT 档案 启动对齐 not already snapshot-replay / not already genesis-replay / not already settled 正式三事（314 余量）。314 querystate vs execute bundled unbundling 完成（964 item 3）。
+
+## 2026-09-17（续 1080）
+
+- 不变量 963；语料 C941；模式 name-the-querystate-notlive-bar；反模式 querystate-notlive-sold-as-bundled；L10.3 第 932 条。填 L4.4 / CometBFT 档案 上次 Commit not already live / not already CheckTxState / not already settled 正式三事（314 余量）。314 querystate vs execute bundled unbundling 续（963 item 2）。
+
+## 2026-09-17（续 1079）
+
+- 不变量 962；语料 C940；模式 name-the-querystate-notexec-bar；反模式 querystate-notexec-sold-as-bundled；L10.3 第 931 条。填 L4.4 / CometBFT 档案 Query 连接 not already ExecuteTxState / not already writable / not already settled 正式三事（314 余量）。314 querystate vs execute bundled unbundling 启动（962 item 1）。
+
 ## 2026-09-17（续 1078）
 
 - 不变量 961；语料 C939；模式 name-the-snapshot-restore-notresume-bar；反模式 snapshot-restore-notresume-sold-as-bundled；L10.3 第 930 条。填 L4.4 / CometBFT 档案 拉失败换一份 not already resumable / not already same-snapshot / not already settled 正式三事（321 余量）。321 snapshot-restore vs offer bundled unbundling 完成（961 item 3）。

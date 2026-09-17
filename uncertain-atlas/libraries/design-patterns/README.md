@@ -1,3 +1,6 @@
+- [`name-the-querystate-notsnap-bar.md`](name-the-querystate-notsnap-bar.md) — 启动对齐 not already snapshot-replay / not already genesis-replay / not already settled 正式三事（314 余量）（不变量 964）
+- [`name-the-querystate-notlive-bar.md`](name-the-querystate-notlive-bar.md) — 上次 Commit not already live / not already CheckTxState / not already settled 正式三事（314 余量）（不变量 963）
+- [`name-the-querystate-notexec-bar.md`](name-the-querystate-notexec-bar.md) — Query 连接 not already ExecuteTxState / not already writable / not already settled 正式三事（314 余量）（不变量 962）
 - [`name-the-snapshot-restore-notresume-bar.md`](name-the-snapshot-restore-notresume-bar.md) — 拉失败换一份 not already resumable / not already same-snapshot / not already settled 正式三事（321 余量）（不变量 961）
 - [`name-the-snapshot-restore-notchunk-bar.md`](name-the-snapshot-restore-notchunk-bar.md) — 一块 chunk 收下 not already complete / not already banned / not already settled 正式三事（321 余量）（不变量 960）
 - [`name-the-snapshot-restore-notdone-bar.md`](name-the-snapshot-restore-notdone-bar.md) — Offer 收下 not already restored / not already has-chunks / not already settled 正式三事（321 余量）（不变量 959）

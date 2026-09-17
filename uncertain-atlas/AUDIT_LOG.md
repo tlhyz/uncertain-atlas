@@ -1,3 +1,18 @@
+| A4580 | 记录 | 会与 314 / 38 / 334 / 962 / 963 糊成「看见对齐就已经是快照重放 interchangeable、就已经从创世重放 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 启动对齐 not already snapshot-replay / not already genesis-replay / not already settled 正式三事（314 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。314 querystate vs execute bundled unbundling 完成（964 item 3） |
+| A4581 | 高 | 看见启动对齐 会被写成已经是快照重放 interchangeable | 官方 Info/Query Connection item 3：not already snapshot-replay |
+| A4582 | 高 | 看见启动握手 会被写成已经从创世重放 interchangeable | 官方 Info/Query Connection item 3：not already genesis-replay |
+| A4583 | 高 | 看见 Query 门 会被写成已经交差 interchangeable | 官方 Info/Query Connection item 3：not already settled |
+| A4584 | 中 | 怎样实现 QueryState 会被抄进不确定 | 不抄。不写怎样实现 QueryState 或怎样做 state sync。不另写 19 节 |
+| A4575 | 记录 | 会与 314 / 310 / 321 / 962 / 964 糊成「看见上次 Commit 就已经跟上正在跑的块 interchangeable、就已经是 CheckTxState interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 上次 Commit not already live / not already CheckTxState / not already settled 正式三事（314 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。314 querystate vs execute bundled unbundling 续（963 item 2） |
+| A4576 | 高 | 看见上次 Commit 会被写成已经跟上正在跑的块 interchangeable | 官方 Info/Query Connection item 2：not already live |
+| A4577 | 高 | 看见能读 会被写成已经是 CheckTxState interchangeable | 官方 Info/Query Connection item 2：not already CheckTxState |
+| A4578 | 高 | 看见只读 会被写成已经交差 interchangeable | 官方 Info/Query Connection item 2：not already settled |
+| A4579 | 中 | 怎样实现 QueryState 会被抄进不确定 | 不抄。不写怎样实现 QueryState 或怎样做 state sync。不另写 19 节 |
+| A4570 | 记录 | 会与 314 / 312 / 329 / 963 / 964 糊成「看见能查就已经是 ExecuteTxState interchangeable、就已经能写 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 连接 not already ExecuteTxState / not already writable / not already settled 正式三事（314 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。314 querystate vs execute bundled unbundling 启动（962 item 1） |
+| A4571 | 高 | 看见 Query 连接 会被写成已经是 ExecuteTxState interchangeable / 312 interchangeable | 官方 Info/Query Connection item 1：not already ExecuteTxState / not 312 |
+| A4572 | 高 | 看见连接在 会被写成已经能写 interchangeable | 官方 Info/Query Connection item 1：not already writable |
+| A4573 | 高 | 看见名字里有 Query 会被写成已经交差 interchangeable | 官方 Info/Query Connection item 1：not already settled |
+| A4574 | 中 | 怎样实现 QueryState 会被抄进不确定 | 不抄。不写怎样实现 QueryState 或怎样做 state sync。不另写 19 节 |
 | A4565 | 记录 | 会与 321 / 320 / 322 / 959 / 960 糊成「看见换一份就已经能接着装 interchangeable、就已经同一份 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 拉失败换一份 not already resumable / not already same-snapshot / not already settled 正式三事（321 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。321 snapshot-restore vs offer bundled unbundling 完成（961 item 3） |
 | A4566 | 高 | 看见拉失败换一份 会被写成已经能接着装 interchangeable | 官方 Snapshot Restoration item 3：not already resumable |
 | A4567 | 高 | 看见能重试 会被写成已经同一份 interchangeable | 官方 Snapshot Restoration item 3：not already same-snapshot |

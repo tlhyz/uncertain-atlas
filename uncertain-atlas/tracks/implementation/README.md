@@ -124,6 +124,9 @@
 - [`worked-example-candidate-vs-execute.md`](worked-example-candidate-vs-execute.md) — Prepare 没有头哈希 ≠ 已经知道本头；候选 ≠ 已经是 ExecuteTxState；丢掉 ≠ 已经永远不用再执行（不变量 311）
 - [`worked-example-checktxstate-vs-execute.md`](worked-example-checktxstate-vs-execute.md) — CheckTx 过了 ≠ 已经按 ExecuteTxState 验过；两份同时在改 ≠ 已经同一份；RECHECK ≠ 已经是新交易（不变量 312）
 - [`worked-example-mempool-indexer-vs-replay.md`](worked-example-mempool-indexer-vs-replay.md) — 内存池去重 ≠ 已经保证不重放；过了 CheckTx ≠ 已经有应用级保护；通常不受欢迎 ≠ 已经没有幂等例外（不变量 313）
+- [`worked-example-querystate-notsnap-vs-bundled.md`](worked-example-querystate-notsnap-vs-bundled.md) — 启动对齐≠already snapshot-replay/genesis-replay/settled；≠314 bundled（不变量 964）
+- [`worked-example-querystate-notlive-vs-bundled.md`](worked-example-querystate-notlive-vs-bundled.md) — 上次Commit≠already live/CheckTxState/settled；≠314 bundled（不变量 963）
+- [`worked-example-querystate-notexec-vs-bundled.md`](worked-example-querystate-notexec-vs-bundled.md) — Query连接≠already ExecuteTxState/writable/settled；≠314 bundled（不变量 962）
 - [`worked-example-querystate-vs-execute.md`](worked-example-querystate-vs-execute.md) — QueryState ≠ 已经是 ExecuteTxState；上次 Commit ≠ 已经跟上正在跑的块；启动对齐 ≠ 已经是快照重放（不变量 314）
 - [`worked-example-maxgas-notblock-vs-bundled.md`](worked-example-maxgas-notblock-vs-bundled.md) — 已提交≠already gas-checked/consensus-enforced/settled；≠315 bundled（不变量 916）
 - [`worked-example-maxgas-notused-vs-bundled.md`](worked-example-maxgas-notused-vs-bundled.md) — GasUsed≠already consensus-checked/counted/settled；≠315 bundled（不变量 915）
