@@ -1,3 +1,15 @@
+## 2026-09-17（续 964）
+
+- 不变量 847；语料 C825；模式 name-the-prepare-fields-nothash-bar；反模式 prepare-fields-nothash-sold-as-bundled；L10.3 第 816 条。填 L4.4 / CometBFT 档案 height / time / proposer_address 对上拟议头 not already header hash / not already ExecuteTxState / not already settled 正式三事（359 余量）。359 prepare-fields vs same bundled unbundling 完成（847 item 3）。
+
+## 2026-09-17（续 963）
+
+- 不变量 846；语料 C824；模式 name-the-prepare-fields-notlocal-bar；反模式 prepare-fields-notlocal-sold-as-bundled；L10.3 第 815 条。填 L4.4 / CometBFT 档案 local_last_commit 是上一高度的预提交带扩展 not already this-height extension / not already H Prepare has extensions / not already settled 正式三事（359 余量）。359 prepare-fields vs same bundled unbundling 续（846 item 2）。
+
+## 2026-09-17（续 962）
+
+- 不变量 845；语料 C823；模式 name-the-prepare-fields-notrun-bar；反模式 prepare-fields-notrun-sold-as-bundled；L10.3 第 814 条。填 L4.4 / CometBFT 档案 Prepare 和 Process / Finalize 同一套字段 not already ran Process / not already Finalize / not already settled 正式三事（359 余量）。359 prepare-fields vs same bundled unbundling 启动（845 item 1）。
+
 ## 2026-09-17（续 961）
 
 - 不变量 844；语料 C822；模式 name-the-extend-when-notsame-bar；反模式 extend-when-notsame-sold-as-bundled；L10.3 第 813 条。填 L4.4 / CometBFT 档案 回包字节不被共识算法解释 not already same extension / not already packed CanonicalVoteExtension / not already settled 正式三事（361 余量）。361 extend-when vs locked bundled unbundling 完成（844 item 3）。

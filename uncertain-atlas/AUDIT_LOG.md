@@ -1,3 +1,18 @@
+| A3995 | 记录 | 会与 359 / 311 / 147 / 462 / 845 / 846 糊成「看见对得上就已经知道本头哈希 interchangeable、就已经是 ExecuteTxState interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 height / time / proposer_address 对上拟议头 not already header hash / not already ExecuteTxState / not already settled 正式三事（359 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。359 prepare-fields vs same bundled unbundling 完成（847 item 3） |
+| A3996 | 高 | 看见 height / time / proposer_address 对上拟议头 会被写成已经知道本头哈希 interchangeable | 官方 Prepare 请求字段 item 3：not already header hash |
+| A3997 | 高 | 看见头上有这些 会被写成已经是 ExecuteTxState interchangeable / 311 interchangeable | 官方 Prepare 请求字段 item 3：not already ExecuteTxState / not 311 |
+| A3998 | 高 | 看见拟议头 会被写成已经交差 interchangeable | 官方 Prepare 请求字段 item 3：not already settled |
+| A3999 | 中 | 怎样填 Prepare 请求字段 会被抄进不确定 | 不抄。不写怎样填 Prepare 请求字段。不另写 19 节 |
+| A3990 | 记录 | 会与 359 / 330 / 422 / 365 / 845 / 847 糊成「看见有上一高的票就已经是本高度刚签的扩展 interchangeable、就已经到了 H 就已经 Prepare 带了扩展 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 local_last_commit 是上一高度的预提交带扩展 not already this-height extension / not already H Prepare has extensions / not already settled 正式三事（359 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。359 prepare-fields vs same bundled unbundling 续（846 item 2） |
+| A3991 | 高 | 看见 local_last_commit 是上一高度的预提交带扩展 会被写成已经是本高度刚签的扩展 interchangeable | 官方 Prepare 请求字段 item 2：not already this-height extension |
+| A3992 | 高 | 看见带了扩展 会被写成已经到了 H 就已经 Prepare 带了扩展 interchangeable / 330 interchangeable | 官方 Prepare 请求字段 item 2：not already H Prepare has extensions / not 330 |
+| A3993 | 高 | 看见能用上一高 会被写成已经交差 interchangeable | 官方 Prepare 请求字段 item 2：not already settled |
+| A3994 | 中 | 怎样填 Prepare 请求字段 会被抄进不确定 | 不抄。不写怎样填 Prepare 请求字段。不另写 19 节 |
+| A3985 | 记录 | 会与 359 / 351 / 360 / 473 / 846 / 847 糊成「看见字段名对得上就已经跑过 Process interchangeable、就已经 Finalize interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 和 Process / Finalize 同一套字段 not already ran Process / not already Finalize / not already settled 正式三事（359 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。359 prepare-fields vs same bundled unbundling 启动（845 item 1） |
+| A3986 | 高 | 看见 Prepare 和 Process / Finalize 同一套字段 会被写成已经跑过 Process interchangeable / 351 interchangeable | 官方 Prepare 请求字段 item 1：not already ran Process / not 351 |
+| A3987 | 高 | 看见同一套 会被写成已经 Finalize interchangeable / 360 interchangeable | 官方 Prepare 请求字段 item 1：not already Finalize / not 360 |
+| A3988 | 高 | 看见请求在 会被写成已经交差 interchangeable | 官方 Prepare 请求字段 item 1：not already settled |
+| A3989 | 中 | 怎样填 Prepare 请求字段 会被抄进不确定 | 不抄。不写怎样填 Prepare 请求字段。不另写 19 节 |
 | A3980 | 记录 | 会与 361 / 358 / 359 / 510 / 842 / 843 糊成「看见回了就已经是同一份扩展 interchangeable、就已经包进 CanonicalVoteExtension interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 回包字节不被共识算法解释 not already same extension / not already packed CanonicalVoteExtension / not already settled 正式三事（361 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。361 extend-when vs locked bundled unbundling 完成（844 item 3） |
 | A3981 | 高 | 看见回包字节不被共识算法解释 会被写成已经是同一份扩展 interchangeable | 官方 ExtendVote 何时调用 item 3：not already same extension |
 | A3982 | 高 | 看见不解释 会被写成已经包进 CanonicalVoteExtension interchangeable / 358 interchangeable | 官方 ExtendVote 何时调用 item 3：not already packed CanonicalVoteExtension / not 358 |

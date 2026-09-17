@@ -1,3 +1,6 @@
+- [`prepare-fields-nothash-sold-as-bundled.md`](prepare-fields-nothash-sold-as-bundled.md) — 对上拟议头 被写成已经知道本头哈希 / 已经是 ExecuteTxState / 已经交差（不变量 847）
+- [`prepare-fields-notlocal-sold-as-bundled.md`](prepare-fields-notlocal-sold-as-bundled.md) — local_last_commit 被写成已经是本高度刚签的扩展 / 已经到了 H 带了扩展 / 已经交差（不变量 846）
+- [`prepare-fields-notrun-sold-as-bundled.md`](prepare-fields-notrun-sold-as-bundled.md) — 同一套字段 被写成已经跑过 Process / 已经 Finalize / 已经交差（不变量 845）
 - [`extend-when-notsame-sold-as-bundled.md`](extend-when-notsame-sold-as-bundled.md) — 回包不解释 被写成已经同一份 / 已经包进 CanonicalVoteExtension / 已经交差（不变量 844）
 - [`extend-when-notlater-sold-as-bundled.md`](extend-when-notlater-sold-as-bundled.md) — 同步调用 被写成已经能稍后改 / 已经离开关键路径 / 已经交差（不变量 843）
 - [`extend-when-notcall-sold-as-bundled.md`](extend-when-notcall-sold-as-bundled.md) — +2/3 prevote 才锁住再调 被写成已经会调 / 已经是一轮一份 / 已经锁住（不变量 842）

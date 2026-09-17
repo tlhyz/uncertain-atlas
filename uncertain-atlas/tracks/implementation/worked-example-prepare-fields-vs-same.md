@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见字段名对得上就已经跑过 Process、已经是本高度刚签的扩展、已经知道本头哈希」，必须分开 Prepare 和 Process / Finalize 同一套字段是不是已经跑过 Process、local_last_commit 是上一高度的预提交带扩展是不是已经是本高度刚签的扩展、height / time / proposer_address 对上拟议头是不是已经知道本头哈希。可以跳过「看见字段名对得上就已经跑过 Process」。不要另写怎样填 Prepare 请求字段。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见字段名对得上就已经跑过 Process、已经是本高度刚签的扩展、已经知道本头哈希」，必须分开 Prepare 和 Process / Finalize 同一套字段是不是已经跑过 Process、local_last_commit 是上一高度的预提交带扩展是不是已经是本高度刚签的扩展、height / time / proposer_address 对上拟议头是不是已经知道本头哈希。可以跳过「看见字段名对得上就已经跑过 Process」。不要另写怎样填 Prepare 请求字段。359 prepare-fields vs same bundled unbundling 完成（845 item 1 / 846 item 2 / 847 item 3）；精读 [`worked-example-prepare-fields-notrun-vs-bundled.md`](worked-example-prepare-fields-notrun-vs-bundled.md)（不变量 845 item 1）。
 
 ## 本页不抄
 

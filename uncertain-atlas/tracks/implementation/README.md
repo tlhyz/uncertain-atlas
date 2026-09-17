@@ -172,6 +172,9 @@
 - [`worked-example-prepvalid-notchecked-vs-bundled.md`](worked-example-prepvalid-notchecked-vs-bundled.md) — no extra checks≠already checked/app-level replay/313 pool dedup/504 Usage nochecks；≠357 bundled（不变量 716）
 - [`worked-example-prepare-valid-vs-checked.md`](worked-example-prepare-valid-vs-checked.md) — 引擎没有再验重复交易 ≠ 已经验过重复；Prepare 回包验不过引擎崩溃 ≠ 已经是 Process REJECT；Prepare 里产出了事件 ≠ 已经交给引擎（不变量 357）
 - [`worked-example-nonrp-vs-wrapped.md`](worked-example-nonrp-vs-wrapped.md) — vote_extension 会包进 CanonicalVoteExtension ≠ 已经按原样签；non_rp_extension 按原样签 ≠ 已经有重放保护；要签原样数据可以用 non_rp ≠ 已经和 vote_extension 同一份（不变量 358）
+- [`worked-example-prepare-fields-nothash-vs-bundled.md`](worked-example-prepare-fields-nothash-vs-bundled.md) — 对上拟议头≠147 header hash/311 ExecuteTxState/settled；≠359 bundled（不变量 847）
+- [`worked-example-prepare-fields-notlocal-vs-bundled.md`](worked-example-prepare-fields-notlocal-vs-bundled.md) — local_last_commit≠this-height e/330 H Prepare has extensions/settled；≠359 bundled（不变量 846）
+- [`worked-example-prepare-fields-notrun-vs-bundled.md`](worked-example-prepare-fields-notrun-vs-bundled.md) — 同一套字段≠ran Process/Finalize/settled；≠359 bundled（不变量 845）
 - [`worked-example-prepare-fields-vs-same.md`](worked-example-prepare-fields-vs-same.md) — Prepare 和 Process / Finalize 同一套字段 ≠ 已经跑过 Process；local_last_commit 是上一高度的预提交带扩展 ≠ 已经是本高度刚签的扩展；height / time / proposer_address 对上拟议头 ≠ 已经知道本头哈希（不变量 359）
 - [`worked-example-finprocgua-notallproc-vs-bundled.md`](worked-example-finprocgua-notallproc-vs-bundled.md) — at least one non-byzantine ran Process ≠ every validator ran Process；≠ proposer means everyone Processed；≠ executes block v / persist decision（不变量 582）
 - [`worked-example-finprocgua-notcand-vs-bundled.md`](worked-example-finprocgua-notcand-vs-bundled.md) — apply candidate ≠ ExecuteTxState；≠ same block already ran means no need to execute；≠ already committed（不变量 584）

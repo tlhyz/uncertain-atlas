@@ -1,3 +1,6 @@
+- [`name-the-prepare-fields-nothash-bar.md`](name-the-prepare-fields-nothash-bar.md) — height / time / proposer_address 对上拟议头 not already header hash / not already ExecuteTxState / not already settled 正式三事（359 余量）（不变量 847）
+- [`name-the-prepare-fields-notlocal-bar.md`](name-the-prepare-fields-notlocal-bar.md) — local_last_commit 是上一高度的预提交带扩展 not already this-height extension / not already H Prepare has extensions / not already settled 正式三事（359 余量）（不变量 846）
+- [`name-the-prepare-fields-notrun-bar.md`](name-the-prepare-fields-notrun-bar.md) — Prepare 和 Process / Finalize 同一套字段 not already ran Process / not already Finalize / not already settled 正式三事（359 余量）（不变量 845）
 - [`name-the-extend-when-notsame-bar.md`](name-the-extend-when-notsame-bar.md) — 回包字节不被共识算法解释 not already same extension / not already packed CanonicalVoteExtension / not already settled 正式三事（361 余量）（不变量 844）
 - [`name-the-extend-when-notlater-bar.md`](name-the-extend-when-notlater-bar.md) — ExtendVote 调用是同步的 not already can change later / not already left critical path / not already settled 正式三事（361 余量）（不变量 843）
 - [`name-the-extend-when-notcall-bar.md`](name-the-extend-when-notcall-bar.md) — +2/3 prevote 才锁住再调 ExtendVote not already will call / not already one-per-round / not already locked 正式三事（361 余量）（不变量 842）
