@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 ProposalStatus 就已经是四门已经结算、已经交差、已经能稍后改裁决」，必须分开 UNKNOWN 一律是错、引擎当应用坏了会崩是不是已经是四门已经结算、ACCEPT 表示应用认为提案合法、共识会发 Prevote 是不是已经交差、REJECT 表示应用认为提案非法、共识会发 Prevote nil 是不是已经能稍后改裁决。可以跳过「看见回了 ProposalStatus 就已经是四门已经结算」。不要另写怎样写 ProposalStatus。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 ProposalStatus 就已经是四门已经结算、已经交差、已经能稍后改裁决」，必须分开 UNKNOWN 一律是错、引擎当应用坏了会崩是不是已经是四门已经结算、ACCEPT 表示应用认为提案合法、共识会发 Prevote 是不是已经交差、REJECT 表示应用认为提案非法、共识会发 Prevote nil 是不是已经能稍后改裁决。可以跳过「看见回了 ProposalStatus 就已经是四门已经结算」。不要另写怎样写 ProposalStatus。376 proposalstatus vs prevote bundled unbundling 完成（713 item 1 / 714 item 2 / 715 item 3）；精读 [`worked-example-propstat-notunknown-vs-bundled.md`](worked-example-propstat-notunknown-vs-bundled.md)（不变量 713 item 1）。
 
 ## 本页不抄
 

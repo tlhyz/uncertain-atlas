@@ -1,3 +1,18 @@
+| A3335 | 记录 | 会与 376 / 354 / 434 / 455 / 713 / 714 糊成「看见 REJECT 就已经能稍后改裁决 interchangeable、就已经没进块 interchangeable、就已经 Verify REJECT / 块非法 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProposalStatus REJECT prevote nil not can change later / not already not in block / not VerifyStatus REJECT 正式三事（376 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。376 proposalstatus vs prevote bundled unbundling 完成（715 item 3） |
+| A3336 | 高 | 看见 REJECT 表示应用认为提案非法共识会发 Prevote nil 会被写成已经能稍后改裁决 interchangeable / 354 interchangeable | 官方 ProposalStatus item 3：not can change later / not 354 |
+| A3337 | 高 | 看见回了 REJECT 会被写成已经没进块 interchangeable | 官方 ProposalStatus item 3：not already not in block |
+| A3338 | 高 | 看见发了 nil 会被写成已经 VerifyStatus REJECT interchangeable / 434 / 455 interchangeable | 官方 ProposalStatus item 3：not VerifyStatus REJECT / not 455 |
+| A3339 | 中 | 怎样写 ProposalStatus 会被抄进不确定 | 不抄。不写怎样写 ProposalStatus。不另写 19 节 |
+| A3330 | 记录 | 会与 376 / 347 / 33 / 434 / 713 / 715 糊成「看见 ACCEPT 就已经交差 interchangeable、就已经必须 Accept interchangeable、就已经四门齐了 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProposalStatus ACCEPT prevote not settled / not must Accept / not four gates 正式三事（376 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。376 proposalstatus vs prevote bundled unbundling 续（714 item 2） |
+| A3331 | 高 | 看见 ACCEPT 表示应用认为提案合法共识会发 Prevote 会被写成已经交差 interchangeable | 官方 ProposalStatus item 2：not settled |
+| A3332 | 高 | 看见回了 ACCEPT 会被写成已经 honest proposal 必须 Accept interchangeable / 347 interchangeable | 官方 ProposalStatus item 2：not must Accept / not 347 |
+| A3333 | 高 | 看见会发 Prevote 会被写成已经四门齐了 interchangeable / 33 / 434 interchangeable | 官方 ProposalStatus item 2：not four gates / not 33 |
+| A3334 | 中 | 怎样写 ProposalStatus 会被抄进不确定 | 不抄。不写怎样写 ProposalStatus。不另写 19 节 |
+| A3325 | 记录 | 会与 376 / 33 / 434 / 402 / 714 / 715 糊成「看见 UNKNOWN 就已经是四门已经结算 interchangeable、就已经是 VerifyStatus UNKNOWN interchangeable、就已经是 Offer UNKNOWN 中止装回 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProposalStatus UNKNOWN always wrong crash not four gates / not VerifyStatus UNKNOWN / not OfferSnapshot UNKNOWN 正式三事（376 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。376 proposalstatus vs prevote bundled unbundling 启动（713 item 1） |
+| A3326 | 高 | 看见 UNKNOWN 一律是错引擎当应用坏了会崩 会被写成已经是四门已经结算 interchangeable / 33 interchangeable | 官方 ProposalStatus item 1：not four gates / not 33 |
+| A3327 | 高 | 看见回了 UNKNOWN 会被写成已经 VerifyStatus UNKNOWN interchangeable / 434 interchangeable | 官方 ProposalStatus item 1：not VerifyStatus UNKNOWN / not 434 |
+| A3328 | 高 | 看见崩了 会被写成已经 OfferSnapshot UNKNOWN 中止装回 interchangeable / 402 interchangeable | 官方 ProposalStatus item 1：not OfferSnapshot UNKNOWN / not 402 |
+| A3329 | 中 | 怎样写 ProposalStatus 会被抄进不确定 | 不抄。不写怎样写 ProposalStatus。不另写 19 节 |
 | A3320 | 记录 | 会与 471 / 458 / 319 / 710 / 711 糊成「看见 empty 就已经清掉参数 interchangeable、就已经没有参数 interchangeable、就已经空更新交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse consensus_param_updates may be empty keep current not params cleared / not InitChain empty params / not empty-update bundled 正式三事（471 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。471 fincparam vs heffective bundled unbundling 完成（712 item 3） |
 | A3321 | 高 | 看见 may be empty keep current 会被写成已经清掉参数 interchangeable | 官方 FinalizeBlock consensus_param_updates item 3：not params cleared |
 | A3322 | 高 | 看见空着 会被写成已经 InitChain 空参数 interchangeable | 官方 FinalizeBlock consensus_param_updates item 3：not InitChain empty params |

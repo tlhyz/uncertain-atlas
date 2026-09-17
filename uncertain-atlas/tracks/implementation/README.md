@@ -323,6 +323,9 @@
 - [`worked-example-checktxopt-vs-block.md`](worked-example-checktxopt-vs-block.md) — CheckTx 技术上可选、不参与处理块 ≠ 已经是四门已经结算；Code ≠ 0 会被拒、不会广播也不会进提案 ≠ 已经没进块；引擎对回包码不再赋予别的含义 ≠ 已经被引擎用了 Data（不变量 373）
 - [`worked-example-flush-vs-sent.md`](worked-example-flush-vs-sent.md) — Flush 要把客户端排队的消息冲到服务端 ≠ 已经送到；定期 Flush 是为了让异步请求真发出去 ≠ 已经是四门；立刻 Flush 是为了做成同步请求、回包回来才算这次同步 ≠ 已经能往下走（不变量 374）
 - [`worked-example-loadchunk-vs-retrieved.md`](worked-example-loadchunk-vs-retrieved.md) — LoadSnapshotChunk 用来从邻居拉快照块 ≠ 已经齐；请求用 height / format / chunk（从 0 起）认这块 ≠ 已经是同一份；回包块含元数据不能超过 16 MB ≠ 已经是快照报文 4 MB（不变量 375）
+- [`worked-example-propstat-notreject-vs-bundled.md`](worked-example-propstat-notreject-vs-bundled.md) — REJECT prevote nil≠354 later/already not in block/434 Verify REJECT/455 assumes invalid；≠376 bundled（不变量 715）
+- [`worked-example-propstat-notaccept-vs-bundled.md`](worked-example-propstat-notaccept-vs-bundled.md) — ACCEPT prevote≠settled/347 must Accept/33 four gates；≠376 bundled（不变量 714）
+- [`worked-example-propstat-notunknown-vs-bundled.md`](worked-example-propstat-notunknown-vs-bundled.md) — UNKNOWN crash≠33 four gates/434 Verify UNKNOWN/402 Offer UNKNOWN；≠376 bundled（不变量 713）
 - [`worked-example-proposalstatus-vs-prevote.md`](worked-example-proposalstatus-vs-prevote.md) — UNKNOWN 一律是错、引擎当应用坏了会崩 ≠ 已经是四门已经结算；ACCEPT 表示应用认为提案合法、共识会发 Prevote ≠ 已经交差；REJECT 表示应用认为提案非法、共识会发 Prevote nil ≠ 已经能稍后改裁决（不变量 376）
 - [`worked-example-querypath-vs-store.md`](worked-example-querypath-vs-store.md) — data 按 URI 查询分量解释、可以和 path 一起或代替 path 用 ≠ 已经是 Query 高度；path 按 URI 路径解释、/store 必须按键查 ≠ 已经是引擎在用；规范建议允许 /accounts / /votes 这类查询 ≠ 已经是正常运转必须有（不变量 377）
 - [`worked-example-refetch-vs-restored.md`](worked-example-refetch-vs-restored.md) — 应用可以再拉块或封邻居、引擎不自己做 ≠ 已经封了；refetch_chunks 不论 result 都再拉再装 ≠ 已经齐；reject_senders 不论 Result 都拒这些人 ≠ 已经能接着装（不变量 378）

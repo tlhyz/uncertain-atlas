@@ -1,3 +1,15 @@
+## 2026-09-17（续 832）
+
+- 不变量 715；语料 C693；模式 name-the-propstat-notreject-bar；反模式 propstat-notreject-sold-as-bundled；L10.3 第 684 条。填 L4.4 / CometBFT 档案 ProposalStatus REJECT prevote nil not can change later / not already not in block / not VerifyStatus REJECT 正式三事（376 余量）。376 proposalstatus vs prevote bundled unbundling 完成（715 item 3）。
+
+## 2026-09-17（续 831）
+
+- 不变量 714；语料 C692；模式 name-the-propstat-notaccept-bar；反模式 propstat-notaccept-sold-as-bundled；L10.3 第 683 条。填 L4.4 / CometBFT 档案 ProposalStatus ACCEPT prevote not settled / not must Accept / not four gates 正式三事（376 余量）。376 proposalstatus vs prevote bundled unbundling 续（714 item 2）。
+
+## 2026-09-17（续 830）
+
+- 不变量 713；语料 C691；模式 name-the-propstat-notunknown-bar；反模式 propstat-notunknown-sold-as-bundled；L10.3 第 682 条。填 L4.4 / CometBFT 档案 ProposalStatus UNKNOWN always wrong crash not four gates / not VerifyStatus UNKNOWN / not OfferSnapshot UNKNOWN 正式三事（376 余量）。376 proposalstatus vs prevote bundled unbundling 启动（713 item 1）。
+
 ## 2026-09-17（续 829）
 
 - 不变量 712；语料 C690；模式 name-the-fincparam-notcleared-bar；反模式 fincparam-notcleared-sold-as-bundled；L10.3 第 681 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse consensus_param_updates may be empty keep current not params cleared / not InitChain empty params / not empty-update bundled 正式三事（471 余量）。471 fincparam vs heffective bundled unbundling 完成（712 item 3）。

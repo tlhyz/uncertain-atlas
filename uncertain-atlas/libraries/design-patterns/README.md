@@ -1,3 +1,6 @@
+- [`name-the-propstat-notreject-bar.md`](name-the-propstat-notreject-bar.md) — ProposalStatus REJECT prevote nil not can change later / not already not in block / not VerifyStatus REJECT 正式三事（376 余量）（不变量 715）
+- [`name-the-propstat-notaccept-bar.md`](name-the-propstat-notaccept-bar.md) — ProposalStatus ACCEPT prevote not settled / not must Accept / not four gates 正式三事（376 余量）（不变量 714）
+- [`name-the-propstat-notunknown-bar.md`](name-the-propstat-notunknown-bar.md) — ProposalStatus UNKNOWN always wrong crash not four gates / not VerifyStatus UNKNOWN / not OfferSnapshot UNKNOWN 正式三事（376 余量）（不变量 713）
 - [`name-the-fincparam-notcleared-bar.md`](name-the-fincparam-notcleared-bar.md) — FinalizeBlockResponse consensus_param_updates may be empty keep current not params cleared / not InitChain empty params / not empty-update bundled 正式三事（471 余量）（不变量 712）
 - [`name-the-fincparam-notpartial-bar.md`](name-the-fincparam-notpartial-bar.md) — FinalizeBlockResponse consensus_param_updates gas/size/Deterministic Yes not only one field / not finrespend bundled / not next_block_delay nondet means whole gate 正式三事（471 余量）（不变量 711）
 - [`name-the-fincparam-nothatH-bar.md`](name-the-fincparam-nothatH-bar.md) — FinalizeBlockResponse consensus_param_updates H→H+1 not effective at H / not validator_updates H+2 / not app-requirements delay 正式三事（471 余量）（不变量 710）

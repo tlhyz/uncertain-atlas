@@ -1,3 +1,6 @@
+- [`propstat-notreject-sold-as-bundled.md`](propstat-notreject-sold-as-bundled.md) — REJECT 被写成已经能稍后改裁决 / 已经没进块 / 已经 Verify REJECT（不变量 715）
+- [`propstat-notaccept-sold-as-bundled.md`](propstat-notaccept-sold-as-bundled.md) — ACCEPT 被写成已经交差 / 已经必须 Accept / 已经四门齐了（不变量 714）
+- [`propstat-notunknown-sold-as-bundled.md`](propstat-notunknown-sold-as-bundled.md) — UNKNOWN 被写成已经四门齐了 / 已经 Verify UNKNOWN / 已经 Offer UNKNOWN 中止装回（不变量 713）
 - [`fincparam-notcleared-sold-as-bundled.md`](fincparam-notcleared-sold-as-bundled.md) — empty keep current 被写成已经清掉参数 / 已经没有参数 / 已经空更新交差（不变量 712）
 - [`fincparam-notpartial-sold-as-bundled.md`](fincparam-notpartial-sold-as-bundled.md) — gas/size 被写成已经只改一项 / 已经回包末栏交差 / 已经整门非确定（不变量 711）
 - [`fincparam-nothatH-sold-as-bundled.md`](fincparam-nothatH-sold-as-bundled.md) — H→H+1 被写成已经在块 H 生效 / 已经换人 / 已经 333 交差（不变量 710）
