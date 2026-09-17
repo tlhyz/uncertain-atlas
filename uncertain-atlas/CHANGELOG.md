@@ -1,3 +1,7 @@
+## 2026-09-17（续 760）
+
+- 不变量 643；语料 C620；模式 name-the-finh1-notafterunlock-bar；反模式 finh1-notafterunlock-sold-as-bundled；L10.3 第 612 条。填 L4.4 / CometBFT 档案 FinalizeBlock When after unlock not unlock mempool / not finafter bundled / not When trigger 正式三事（593 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。593 finh1 unbundling 完成（643 item 3）。
+
 ## 2026-09-17（续 759）
 
 - 不变量 642；语料 C619；模式 name-the-finh1-notround-bar；反模式 finh1-notround-sold-as-bundled；L10.3 第 611 条。填 L4.4 / CometBFT 档案 FinalizeBlock When round 0 not same round / not next_block_delay / not timeout_commit / not finh1 bundled 正式三事（593 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。593 finh1 unbundling 续（642 item 2）。

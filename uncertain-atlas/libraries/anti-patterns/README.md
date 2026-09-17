@@ -1,3 +1,4 @@
+- [`finh1-notafterunlock-sold-as-bundled.md`](finh1-notafterunlock-sold-as-bundled.md) — after unlock 被写成已经 unlocks mempool / 已经 finafter bundled / 已经 When trigger（不变量 643）
 - [`finh1-notround-sold-as-bundled.md`](finh1-notround-sold-as-bundled.md) — round 0 被写成已经 same round / 已经 next_block_delay / 已经 timeout_commit / 已经 finh1 bundled（不变量 642）
 - [`finh1-notsettled-sold-as-bundled.md`](finh1-notsettled-sold-as-bundled.md) — starts consensus h+1 被写成已经交差 / 已经 persist decision / 已经 finh1 bundled（不变量 641）
 - [`finunlock-notcommitlock-sold-as-bundled.md`](finunlock-notcommitlock-sold-as-bundled.md) — unlock after optional recheck 被写成已经是 Commit 锁 / 已经开下一高 round 0 / 已经 finunlock bundled（不变量 640）
