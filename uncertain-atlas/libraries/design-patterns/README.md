@@ -1,3 +1,6 @@
+- [`name-the-validatorupdate-notzero-bar.md`](name-the-validatorupdate-notzero-bar.md) — power 写成 0 not already deleted outsider / not already no cap / not already settled 正式三事（318 余量）（不变量 907）
+- [`name-the-validatorupdate-notdup-bar.md`](name-the-validatorupdate-notdup-bar.md) — 同一批重复公钥 not already last wins / not already recoverable / not already settled 正式三事（318 余量）（不变量 906）
+- [`name-the-validatorupdate-notempty-bar.md`](name-the-validatorupdate-notempty-bar.md) — InitChain 空名单 not already no set / not already app empty set / not already settled 正式三事（318 余量）（不变量 905）
 - [`name-the-finalize-persist-notskip-bar.md`](name-the-finalize-persist-notskip-bar.md) — 记住上次成功 Commit 高度 not already app ahead / not already can skip / not already settled 正式三事（335 余量）（不变量 904）
 - [`name-the-finalize-persist-notfin-bar.md`](name-the-finalize-persist-notfin-bar.md) — 必须在 Commit 落盘 not already persisted in Finalize / not already unlocked / not already settled 正式三事（335 余量）（不变量 903）
 - [`name-the-finalize-persist-notdisk-bar.md`](name-the-finalize-persist-notdisk-bar.md) — Finalize 改了状态 not already persisted / not already Commit / not already settled 正式三事（335 余量）（不变量 902）

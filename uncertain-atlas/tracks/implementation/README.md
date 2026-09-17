@@ -128,6 +128,9 @@
 - [`worked-example-maxgas-vs-enforced.md`](worked-example-maxgas-vs-enforced.md) — MaxGas ≠ 已经在执行；GasUsed ≠ 已经算进共识；已提交块 ≠ 已经按气验过（不变量 315）
 - [`worked-example-exectxresult-vs-consensus.md`](worked-example-exectxresult-vs-consensus.md) — 结果列表 ≠ 已经同一顺序；Code 非零 ≠ 已经没进块；Code / Data ≠ 已经印进本头（不变量 316）
 - [`worked-example-checktxresponse-vs-exec.md`](worked-example-checktxresponse-vs-exec.md) — CheckTx 的 Data ≠ 已经被引擎用了；各节点 Data 不一样 ≠ 已经分叉；Priority ≠ 已经是共识顺序（不变量 317）
+- [`worked-example-validatorupdate-notzero-vs-bundled.md`](worked-example-validatorupdate-notzero-vs-bundled.md) — power0≠already delete outsider/no cap/settled；≠318 bundled（不变量 907）
+- [`worked-example-validatorupdate-notdup-vs-bundled.md`](worked-example-validatorupdate-notdup-vs-bundled.md) — 同一批重复≠already last wins/recoverable/settled；≠318 bundled（不变量 906）
+- [`worked-example-validatorupdate-notempty-vs-bundled.md`](worked-example-validatorupdate-notempty-vs-bundled.md) — InitChain空名单≠already no set/app empty/settled；≠318 bundled（不变量 905）
 - [`worked-example-validatorupdate-vs-set.md`](worked-example-validatorupdate-vs-set.md) — InitChain 空名单 ≠ 已经没有集合；同一批重复公钥 ≠ 已经能恢复；power 0 ≠ 已经删掉不在集合里的人（不变量 318）
 - [`worked-example-consensusparams-vs-update.md`](worked-example-consensusparams-vs-update.md) — InitChain 空参数 ≠ 已经没有参数；Finalize 没回 ≠ 已经清掉；只改一个字段 ≠ 已经只改这一项（不变量 319）
 - [`worked-example-crash-steps-vs-commit.md`](worked-example-crash-steps-vs-commit.md) — 应用高度比引擎高 ≠ 已经允许；块进 store ≠ 已经 Commit；启动 Info 对上 ≠ 已经能跳步（不变量 320）

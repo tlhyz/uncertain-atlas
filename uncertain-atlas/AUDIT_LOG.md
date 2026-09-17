@@ -1,3 +1,18 @@
+| A4295 | 记录 | 会与 318 / 302 / 364 / 905 / 906 糊成「看见写成 0 就已经删掉不在集合里的人 interchangeable、就已经没有上限 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / L4.5 / CometBFT 档案 power 写成 0 not already deleted outsider / not already no cap / not already settled 正式三事（318 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。318 validatorupdate vs set bundled unbundling 完成（907 item 3） |
+| A4296 | 高 | 看见 power 写成 0 会被写成已经删掉不在集合里的人 interchangeable | 官方 Updating the Validator Set item 3：not already deleted outsider |
+| A4297 | 高 | 看见总权 会被写成已经没有上限 interchangeable | 官方 Updating the Validator Set item 3：not already no cap |
+| A4298 | 高 | 看见四种钥型 会被写成已经交差 interchangeable | 官方 Updating the Validator Set item 3：not already settled |
+| A4299 | 中 | 怎样编更新或怎样算总权会被抄进不确定 | 不抄。不写怎样编更新或怎样算总权。不把 MaxTotalVotingPower 当不确定默认。不另写 19 节 |
+| A4290 | 记录 | 会与 318 / 35 / 302 / 905 / 907 糊成「看见重复就已经按后一条改权 interchangeable、就已经能恢复 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / L4.5 / CometBFT 档案 同一批重复公钥 not already last wins / not already recoverable / not already settled 正式三事（318 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。318 validatorupdate vs set bundled unbundling 续（906 item 2） |
+| A4291 | 高 | 看见一次更新里重复公钥 会被写成已经按后一条改权 interchangeable | 官方 Updating the Validator Set item 2：not already last wins |
+| A4292 | 高 | 看见失败 会被写成已经能恢复 interchangeable | 官方 Updating the Validator Set item 2：not already recoverable |
+| A4293 | 高 | 看见同一把钥 会被写成已经交差 interchangeable | 官方 Updating the Validator Set item 2：not already settled |
+| A4294 | 中 | 怎样编更新或怎样算总权会被抄进不确定 | 不抄。不写怎样编更新或怎样算总权。不把 MaxTotalVotingPower 当不确定默认。不另写 19 节 |
+| A4285 | 记录 | 会与 318 / 303 / 364 / 906 / 907 糊成「看见回了空就已经没有集合 interchangeable、就已经用了应用自己的空集 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / L4.5 / CometBFT 档案 InitChain 空名单 not already no set / not already app empty set / not already settled 正式三事（318 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / mempool。318 validatorupdate vs set bundled unbundling 启动（905 item 1） |
+| A4286 | 高 | 看见 InitChain 回了空名单 会被写成已经没有集合 interchangeable / 303 interchangeable | 官方 Updating the Validator Set item 1：not already no set / not 303 |
+| A4287 | 高 | 看见没回人 会被写成已经用了应用自己的空集 interchangeable | 官方 Updating the Validator Set item 1：not already app empty set |
+| A4288 | 高 | 看见能设初始集合 会被写成已经交差 interchangeable | 官方 Updating the Validator Set item 1：not already settled |
+| A4289 | 中 | 怎样编更新或怎样算总权会被抄进不确定 | 不抄。不写怎样编更新或怎样算总权。不把 MaxTotalVotingPower 当不确定默认。不另写 19 节 |
 | A4280 | 记录 | 会与 335 / 320 / 5 / 902 / 903 糊成「看见记住了高度就已经能单独比引擎高 interchangeable、就已经能跳步 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 记住上次成功 Commit 高度 not already app ahead / not already can skip / not already settled 正式三事（335 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。335 finalize-persist vs commit bundled unbundling 完成（904 item 3） |
 | A4281 | 高 | 看见记住上次成功 Commit 高度 会被写成已经能单独比引擎高 interchangeable | 官方 Finalize/Commit item 3：not already app ahead |
 | A4282 | 高 | 看见能告诉从哪接 会被写成已经能跳步 interchangeable | 官方 Finalize/Commit item 3：not already can skip |

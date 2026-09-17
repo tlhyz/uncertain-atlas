@@ -1,3 +1,15 @@
+## 2026-09-17（续 1024）
+
+- 不变量 907；语料 C885；模式 name-the-validatorupdate-notzero-bar；反模式 validatorupdate-notzero-sold-as-bundled；L10.3 第 876 条。填 L4.4 / L4.5 / CometBFT 档案 power 写成 0 not already deleted outsider / not already no cap / not already settled 正式三事（318 余量）。318 validatorupdate vs set bundled unbundling 完成（907 item 3）。
+
+## 2026-09-17（续 1023）
+
+- 不变量 906；语料 C884；模式 name-the-validatorupdate-notdup-bar；反模式 validatorupdate-notdup-sold-as-bundled；L10.3 第 875 条。填 L4.4 / L4.5 / CometBFT 档案 同一批重复公钥 not already last wins / not already recoverable / not already settled 正式三事（318 余量）。318 validatorupdate vs set bundled unbundling 续（906 item 2）。
+
+## 2026-09-17（续 1022）
+
+- 不变量 905；语料 C883；模式 name-the-validatorupdate-notempty-bar；反模式 validatorupdate-notempty-sold-as-bundled；L10.3 第 874 条。填 L4.4 / L4.5 / CometBFT 档案 InitChain 空名单 not already no set / not already app empty set / not already settled 正式三事（318 余量）。318 validatorupdate vs set bundled unbundling 启动（905 item 1）。
+
 ## 2026-09-17（续 1021）
 
 - 不变量 904；语料 C882；模式 name-the-finalize-persist-notskip-bar；反模式 finalize-persist-notskip-sold-as-bundled；L10.3 第 873 条。填 L4.4 / CometBFT 档案 记住上次成功 Commit 高度 not already app ahead / not already can skip / not already settled 正式三事（335 余量）。335 finalize-persist vs commit bundled unbundling 完成（904 item 3）。
