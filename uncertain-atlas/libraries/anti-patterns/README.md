@@ -1,3 +1,6 @@
+- [`query-notmust-sold-as-bundled.md`](query-notmust-sold-as-bundled.md) — 实现了 Query 被写成已经是正常运转必须有 / 已经是邻居过滤 / 已经交差（不变量 940）
+- [`query-notfresh-sold-as-bundled.md`](query-notfresh-sold-as-bundled.md) — 查到了 被写成已经新鲜 / 已经是当前尖 / 已经交差（不变量 939）
+- [`query-notrepl-sold-as-bundled.md`](query-notrepl-sold-as-bundled.md) — Query 回了 被写成已经复制到各节点 / 已经过了共识 / 已经交差（不变量 938）
 - [`snapshot-verify-notdos-sold-as-bundled.md`](snapshot-verify-notdos-sold-as-bundled.md) — 封禁邻居 被写成已经没有快照 DoS / 已经收下这个人 / 已经交差（不变量 937）
 - [`snapshot-verify-notanchor-sold-as-bundled.md`](snapshot-verify-notanchor-sold-as-bundled.md) — 增量验了 chunk 被写成已经是唯一可信的 AppHash / 已经不能被伪造元数据 / 已经交差（不变量 936）
 - [`snapshot-verify-notearly-sold-as-bundled.md`](snapshot-verify-notearly-sold-as-bundled.md) — 装完又对上 LastBlockAppHash 被写成已经在装回当中验过 / 已经进了网 / 已经交差（不变量 935）

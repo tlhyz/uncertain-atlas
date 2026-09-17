@@ -1,3 +1,6 @@
+- [`name-the-query-notmust-bar.md`](name-the-query-notmust-bar.md) — 实现了 Query not already required for normal operation / not already peer-filter / not already settled 正式三事（329 余量）（不变量 940）
+- [`name-the-query-notfresh-bar.md`](name-the-query-notfresh-bar.md) — 查到了 not already fresh / not already tip / not already settled 正式三事（329 余量）（不变量 939）
+- [`name-the-query-notrepl-bar.md`](name-the-query-notrepl-bar.md) — Query 回了 not already replicated / not already consensus / not already settled 正式三事（329 余量）（不变量 938）
 - [`name-the-snapshot-verify-notdos-bar.md`](name-the-snapshot-verify-notdos-bar.md) — 封禁邻居 not already no snapshot DoS / not already accepted-this-peer / not already settled 正式三事（332 余量）（不变量 937）
 - [`name-the-snapshot-verify-notanchor-bar.md`](name-the-snapshot-verify-notanchor-bar.md) — 增量验了 chunk not already the only trusted AppHash / not already unforgeable metadata / not already settled 正式三事（332 余量）（不变量 936）
 - [`name-the-snapshot-verify-notearly-bar.md`](name-the-snapshot-verify-notearly-bar.md) — 装完又对上 LastBlockAppHash not already incrementally verified / not already in-network / not already settled 正式三事（332 余量）（不变量 935）

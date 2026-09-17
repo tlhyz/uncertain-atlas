@@ -1,3 +1,15 @@
+## 2026-09-17（续 1057）
+
+- 不变量 940；语料 C918；模式 name-the-query-notmust-bar；反模式 query-notmust-sold-as-bundled；L10.3 第 909 条。填 L4.4 / CometBFT 档案 实现了 Query not already required for normal operation / not already peer-filter / not already settled 正式三事（329 余量）。329 query vs replicated bundled unbundling 完成（940 item 3）。
+
+## 2026-09-17（续 1056）
+
+- 不变量 939；语料 C917；模式 name-the-query-notfresh-bar；反模式 query-notfresh-sold-as-bundled；L10.3 第 908 条。填 L4.4 / CometBFT 档案 查到了 not already fresh / not already tip / not already settled 正式三事（329 余量）。329 query vs replicated bundled unbundling 续（939 item 2）。
+
+## 2026-09-17（续 1055）
+
+- 不变量 938；语料 C916；模式 name-the-query-notrepl-bar；反模式 query-notrepl-sold-as-bundled；L10.3 第 907 条。填 L4.4 / CometBFT 档案 Query 回了 not already replicated / not already consensus / not already settled 正式三事（329 余量）。329 query vs replicated bundled unbundling 启动（938 item 1）。
+
 ## 2026-09-17（续 1054）
 
 - 不变量 937；语料 C915；模式 name-the-snapshot-verify-notdos-bar；反模式 snapshot-verify-notdos-sold-as-bundled；L10.3 第 906 条。填 L4.4 / CometBFT 档案 封禁邻居 not already no snapshot DoS / not already accepted-this-peer / not already settled 正式三事（332 余量）。332 snapshot-verify vs early bundled unbundling 完成（937 item 3）。

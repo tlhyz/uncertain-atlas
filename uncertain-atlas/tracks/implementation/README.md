@@ -151,6 +151,9 @@
 - [`worked-example-prepare-timeout-notpath-vs-bundled.md`](worked-example-prepare-timeout-notpath-vs-bundled.md) — 立刻整块执行≠already left path/not blocking clock/settled；≠327 bundled（不变量 899）
 - [`worked-example-prepare-timeout-vs-liveness.md`](worked-example-prepare-timeout-vs-liveness.md) — 立刻整块执行 ≠ 已经离开提议超时的关键路径；填了 TimeoutPropose ≠ 已经装得下；又开一轮 ≠ 已经丢了活性（不变量 327）
 - [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
+- [`worked-example-query-notmust-vs-bundled.md`](worked-example-query-notmust-vs-bundled.md) — 实现了Query≠already required/peer-filter/settled；≠329 bundled（不变量 940）
+- [`worked-example-query-notfresh-vs-bundled.md`](worked-example-query-notfresh-vs-bundled.md) — 查到了≠already fresh/tip/settled；≠329 bundled（不变量 939）
+- [`worked-example-query-notrepl-vs-bundled.md`](worked-example-query-notrepl-vs-bundled.md) — Query回了≠already replicated/consensus/settled；≠329 bundled（不变量 938）
 - [`worked-example-query-vs-replicated.md`](worked-example-query-vs-replicated.md) — Query 回了 ≠ 已经复制到各节点；查到了 ≠ 已经新鲜；实现了 Query ≠ 已经是正常运转必须有（不变量 329）
 - [`worked-example-ve-height-notlegal-vs-bundled.md`](worked-example-ve-height-notlegal-vs-bundled.md) — h<H带扩展≠already legal/enabled/settled；≠330 bundled（不变量 928）
 - [`worked-example-ve-height-notthis-vs-bundled.md`](worked-example-ve-height-notthis-vs-bundled.md) — H+1带扩展≠already this-height just-signed/this-height e/settled；≠330 bundled（不变量 927）

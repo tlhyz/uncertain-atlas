@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「查到了就已经共识、已经新鲜、已经必须实现」，必须分开 Query 回了是不是已经复制到各节点、查到了是不是已经新鲜、实现了 Query 是不是已经是正常运转必须有。可以跳过「看见查到了就已经共识」。不要另写怎样写 Query 或怎样配 RPC。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「查到了就已经共识、已经新鲜、已经必须实现」，必须分开 Query 回了是不是已经复制到各节点、查到了是不是已经新鲜、实现了 Query 是不是已经是正常运转必须有。可以跳过「看见查到了就已经共识」。不要另写怎样写 Query 或怎样配 RPC。329 query vs replicated bundled unbundling 完成（938 item 1 / 939 item 2 / 940 item 3）；精读 [`worked-example-query-notrepl-vs-bundled.md`](worked-example-query-notrepl-vs-bundled.md)（不变量 938 item 1）。
 
 ## 本页不抄
 

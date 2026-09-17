@@ -1,3 +1,18 @@
+| A4460 | 记录 | 会与 329 / 326 / 334 / 938 / 939 糊成「看见实现了就已经是正常运转必须有 interchangeable、就已经是邻居过滤 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 实现了 Query not already required for normal operation / not already peer-filter / not already settled 正式三事（329 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。329 query vs replicated bundled unbundling 完成（940 item 3） |
+| A4461 | 高 | 看见实现了 Query 会被写成已经是正常运转必须有 interchangeable | 官方 Query item 3：not already required for normal operation |
+| A4462 | 高 | 看见实现了 会被写成已经是邻居过滤 interchangeable | 官方 Query item 3：not already peer-filter |
+| A4463 | 高 | 看见实现了 会被写成已经交差 interchangeable | 官方 Query item 3：not already settled |
+| A4464 | 中 | 怎样写 Query 会被抄进不确定 | 不抄。不写怎样写 Query 或怎样配 RPC。不另写 19 节 |
+| A4455 | 记录 | 会与 329 / 325 / 326 / 938 / 940 糊成「看见查到了就已经新鲜 interchangeable、就已经是当前尖 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 查到了 not already fresh / not already tip / not already settled 正式三事（329 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。329 query vs replicated bundled unbundling 续（939 item 2） |
+| A4456 | 高 | 看见查到了 会被写成已经新鲜 interchangeable | 官方 Query item 2：not already fresh |
+| A4457 | 高 | 看见本地有这份 会被写成已经是当前尖 interchangeable | 官方 Query item 2：not already tip |
+| A4458 | 高 | 看见本地有这份 会被写成已经交差 interchangeable | 官方 Query item 2：not already settled |
+| A4459 | 中 | 怎样写 Query 会被抄进不确定 | 不抄。不写怎样写 Query 或怎样配 RPC。不另写 19 节 |
+| A4450 | 记录 | 会与 329 / 314 / 325 / 939 / 940 糊成「看见 Query 回了就已经复制到各节点 interchangeable、就已经过了共识 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query 回了 not already replicated / not already consensus / not already settled 正式三事（329 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。329 query vs replicated bundled unbundling 启动（938 item 1） |
+| A4451 | 高 | 看见 Query 回了 会被写成已经复制到各节点 interchangeable / 314 interchangeable | 官方 Query item 1：not already replicated / not 314 |
+| A4452 | 高 | 看见 RPC 绿了 会被写成已经过了共识 interchangeable | 官方 Query item 1：not already consensus |
+| A4453 | 高 | 看见 RPC 绿了 会被写成已经交差 interchangeable | 官方 Query item 1：not already settled |
+| A4454 | 中 | 怎样写 Query 会被抄进不确定 | 不抄。不写怎样写 Query 或怎样配 RPC。不另写 19 节 |
 | A4445 | 记录 | 会与 332 / 326 / 334 / 935 / 936 糊成「看见封禁就已经没有快照 DoS interchangeable、就已经收下这个人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 封禁邻居 not already no snapshot DoS / not already accepted-this-peer / not already settled 正式三事（332 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。332 snapshot-verify vs early bundled unbundling 完成（937 item 3） |
 | A4446 | 高 | 看见封禁邻居 会被写成已经没有快照 DoS interchangeable | 官方 Snapshot Verification item 3：not already no snapshot DoS |
 | A4447 | 高 | 看见配了受信名单 会被写成已经收下这个人 interchangeable | 官方 Snapshot Verification item 3：not already accepted-this-peer |
