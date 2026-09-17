@@ -1,3 +1,6 @@
+- [`prepare-drop-nottrace-sold-as-bundled.md`](prepare-drop-nottrace-sold-as-bundled.md) — t1改t2 被写成已经还能按 t1 查到 / 已经有人知道来源 / 已经交差（不变量 856）
+- [`prepare-drop-notinpool-sold-as-bundled.md`](prepare-drop-notinpool-sold-as-bundled.md) — 加新的 被写成已经进了内存池 / 已经过了 CheckTx / 已经交差（不变量 855）
+- [`prepare-drop-notdeleted-sold-as-bundled.md`](prepare-drop-notdeleted-sold-as-bundled.md) — 拿掉 tx 被写成已经从池里删掉 / 已经永远不提 / 已经交差（不变量 854）
 - [`validvalue-notraw-sold-as-bundled.md`](validvalue-notraw-sold-as-bundled.md) — 没调 Prepare 被写成已经又装 raw 提案 / 已经从提案拿掉 tx / 已经交差（不变量 853）
 - [`validvalue-notevery-sold-as-bundled.md`](validvalue-notevery-sold-as-bundled.md) — 提议者 被写成已经每轮都会调 / 已经是 validValue nil / 已经交差（不变量 852）
 - [`validvalue-notcall-sold-as-bundled.md`](validvalue-notcall-sold-as-bundled.md) — validValue 非 nil 被写成已经还会调 Prepare / 已经能再改列表 / 已经交差（不变量 851）

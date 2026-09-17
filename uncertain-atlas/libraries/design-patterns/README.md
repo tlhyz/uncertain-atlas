@@ -1,3 +1,6 @@
+- [`name-the-prepare-drop-nottrace-bar.md`](name-the-prepare-drop-nottrace-bar.md) — 把 t1 改成 t2 not already can look up t1 / not already someone knows t2 from t1 / not already settled 正式三事（355 余量）（不变量 856）
+- [`name-the-prepare-drop-notinpool-bar.md`](name-the-prepare-drop-notinpool-bar.md) — 往提案加了一笔新的 not already in mempool / not already passed CheckTx / not already settled 正式三事（355 余量）（不变量 855）
+- [`name-the-prepare-drop-notdeleted-bar.md`](name-the-prepare-drop-notdeleted-bar.md) — 从提案拿掉 tx not already deleted from mempool / not already never propose / not already settled 正式三事（355 余量）（不变量 854）
 - [`name-the-validvalue-notraw-bar.md`](name-the-validvalue-notraw-bar.md) — 没调 Prepare not already packed another raw proposal / not already dropped tx from proposal / not already settled 正式三事（356 余量）（不变量 853）
 - [`name-the-validvalue-notevery-bar.md`](name-the-validvalue-notevery-bar.md) — 自己是提议者 not already every round calls Prepare / not already validValue is nil / not already settled 正式三事（356 余量）（不变量 852）
 - [`name-the-validvalue-notcall-bar.md`](name-the-validvalue-notcall-bar.md) — validValue 非 nil not already will still call Prepare / not already can change list / not already settled 正式三事（356 余量）（不变量 851）

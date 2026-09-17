@@ -1,3 +1,15 @@
+## 2026-09-17（续 973）
+
+- 不变量 856；语料 C834；模式 name-the-prepare-drop-nottrace-bar；反模式 prepare-drop-nottrace-sold-as-bundled；L10.3 第 825 条。填 L4.4 / CometBFT 档案 把 t1 改成 t2 not already can look up t1 / not already someone knows t2 from t1 / not already settled 正式三事（355 余量）。355 prepare-drop vs mempool bundled unbundling 完成（856 item 3）。
+
+## 2026-09-17（续 972）
+
+- 不变量 855；语料 C833；模式 name-the-prepare-drop-notinpool-bar；反模式 prepare-drop-notinpool-sold-as-bundled；L10.3 第 824 条。填 L4.4 / CometBFT 档案 往提案加了一笔新的 not already in mempool / not already passed CheckTx / not already settled 正式三事（355 余量）。355 prepare-drop vs mempool bundled unbundling 续（855 item 2）。
+
+## 2026-09-17（续 971）
+
+- 不变量 854；语料 C832；模式 name-the-prepare-drop-notdeleted-bar；反模式 prepare-drop-notdeleted-sold-as-bundled；L10.3 第 823 条。填 L4.4 / CometBFT 档案 从提案拿掉 tx not already deleted from mempool / not already never propose / not already settled 正式三事（355 余量）。355 prepare-drop vs mempool bundled unbundling 启动（854 item 1）。
+
 ## 2026-09-17（续 970）
 
 - 不变量 853；语料 C831；模式 name-the-validvalue-notraw-bar；反模式 validvalue-notraw-sold-as-bundled；L10.3 第 822 条。填 L4.4 / CometBFT 档案 没调 Prepare not already packed another raw proposal / not already dropped tx from proposal / not already settled 正式三事（356 余量）。356 validvalue vs prepare bundled unbundling 完成（853 item 3）。

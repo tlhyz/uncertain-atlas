@@ -1,3 +1,18 @@
+| A4040 | 记录 | 会与 355 / 33 / 356 / 853 / 854 / 855 糊成「看见 t1 没进块就已经还能按 t1 查到 interchangeable、就已经有人知道 t2 来自 t1 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 把 t1 改成 t2 not already can look up t1 / not already someone knows t2 from t1 / not already settled 正式三事（355 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。355 prepare-drop vs mempool bundled unbundling 完成（856 item 3） |
+| A4041 | 高 | 看见把 t1 改成 t2 会被写成已经还能按 t1 查到 interchangeable | 官方 Prepare 改列表 item 3：not already can look up t1 |
+| A4042 | 高 | 看见 t2 进了块 会被写成已经有人知道 t2 来自 t1 interchangeable | 官方 Prepare 改列表 item 3：not already someone knows t2 from t1 |
+| A4043 | 高 | 看见改了 会被写成已经交差 interchangeable | 官方 Prepare 改列表 item 3：not already settled |
+| A4044 | 中 | 怎样改 Prepare 列表 会被抄进不确定 | 不抄。不写怎样改 Prepare 列表。不另写 19 节 |
+| A4035 | 记录 | 会与 355 / 345 / 317 / 854 / 856 糊成「看见回包里有它就已经进了内存池 interchangeable、就已经过了 CheckTx interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 往提案加了一笔新的 not already in mempool / not already passed CheckTx / not already settled 正式三事（355 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。355 prepare-drop vs mempool bundled unbundling 续（855 item 2） |
+| A4036 | 高 | 看见往提案加了一笔新的 会被写成已经进了内存池 interchangeable | 官方 Prepare 改列表 item 2：not already in mempool |
+| A4037 | 高 | 看见能提 会被写成已经过了 CheckTx interchangeable | 官方 Prepare 改列表 item 2：not already passed CheckTx |
+| A4038 | 高 | 看见加进去了 会被写成已经交差 interchangeable | 官方 Prepare 改列表 item 2：not already settled |
+| A4039 | 中 | 怎样改 Prepare 列表 会被抄进不确定 | 不抄。不写怎样改 Prepare 列表。不另写 19 节 |
+| A4030 | 记录 | 会与 355 / 301 / 356 / 853 / 855 / 856 糊成「看见本块不提就已经从池里删掉 interchangeable、就已经永远不提 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 从提案拿掉 tx not already deleted from mempool / not already never propose / not already settled 正式三事（355 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。355 prepare-drop vs mempool bundled unbundling 启动（854 item 1） |
+| A4031 | 高 | 看见从提案拿掉 tx 会被写成已经从内存池删掉 interchangeable / 301 interchangeable | 官方 Prepare 改列表 item 1：not already deleted from mempool / not 301 |
+| A4032 | 高 | 看见拿掉了 会被写成已经永远不提 interchangeable | 官方 Prepare 改列表 item 1：not already never propose |
+| A4033 | 高 | 看见回包没有它 会被写成已经交差 interchangeable | 官方 Prepare 改列表 item 1：not already settled |
+| A4034 | 中 | 怎样改 Prepare 列表 会被抄进不确定 | 不抄。不写怎样改 Prepare 列表。不另写 19 节 |
 | A4025 | 记录 | 会与 356 / 355 / 311 / 851 / 852 糊成「看见没调 Prepare 就已经又装了一份 raw 提案 interchangeable、就已经从提案拿掉 tx interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 没调 Prepare not already packed another raw proposal / not already dropped tx from proposal / not already settled 正式三事（356 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。356 validvalue vs prepare bundled unbundling 完成（853 item 3） |
 | A4026 | 高 | 看见没调 Prepare 会被写成已经又装了一份 raw 提案 interchangeable | 官方 validValue 跳过 Prepare item 3：not already packed another raw proposal |
 | A4027 | 高 | 看见用了 validValue 会被写成已经从提案拿掉 tx interchangeable / 355 interchangeable | 官方 validValue 跳过 Prepare item 3：not already dropped tx from proposal / not 355 |
