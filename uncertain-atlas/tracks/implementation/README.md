@@ -142,6 +142,9 @@
 - [`worked-example-crash-steps-vs-commit.md`](worked-example-crash-steps-vs-commit.md) — 应用高度比引擎高 ≠ 已经允许；块进 store ≠ 已经 Commit；启动 Info 对上 ≠ 已经能跳步（不变量 320）
 - [`worked-example-snapshot-restore-vs-offer.md`](worked-example-snapshot-restore-vs-offer.md) — Offer 收下 ≠ 已经装完；一块 chunk 收下 ≠ 已经齐；拉失败换一份 ≠ 已经能接着装（不变量 321）
 - [`worked-example-snapshot-discover-vs-offer.md`](worked-example-snapshot-discover-vs-offer.md) — ListSnapshots 回了 ≠ 已经有了全部快照；挑了最高 ≠ 已经收下；Offer 被拒 ≠ 已经停（不变量 322）
+- [`worked-example-snapshot-switch-nothist-vs-bundled.md`](worked-example-snapshot-switch-nothist-vs-bundled.md) — 切进≠already full-history/any-old/settled；≠323 bundled（不变量 955）
+- [`worked-example-snapshot-switch-notver-vs-bundled.md`](worked-example-snapshot-switch-notver-vs-bundled.md) — AppHash对上≠already version-matched/this-header/settled；≠323 bundled（不变量 954）
+- [`worked-example-snapshot-switch-notchain-vs-bundled.md`](worked-example-snapshot-switch-notchain-vs-bundled.md) — 装完≠already chainid/block-ready/settled；≠323 bundled（不变量 953）
 - [`worked-example-snapshot-switch-vs-history.md`](worked-example-snapshot-switch-vs-history.md) — 装完 ≠ 已经有了 ChainID；AppHash 对上 ≠ 已经版本也对上；切进共识 ≠ 已经有完整历史（不变量 323）
 - [`worked-example-snapshot-take-notall-vs-bundled.md`](worked-example-snapshot-take-notall-vs-bundled.md) — 只留两份≠already all-history/five-fields/settled；≠324 bundled（不变量 952）
 - [`worked-example-snapshot-take-notcons-vs-bundled.md`](worked-example-snapshot-take-notcons-vs-bundled.md) — 没停链≠already consistent/same-bytes/settled；≠324 bundled（不变量 951）

@@ -1,3 +1,18 @@
+| A4535 | 记录 | 会与 323 / 322 / 321 / 953 / 954 糊成「看见切进就已经有完整历史 interchangeable、就已经能给任意旧高度 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 切进共识 not already full-history / not already any-old / not already settled 正式三事（323 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。323 snapshot-switch vs history bundled unbundling 完成（955 item 3） |
+| A4536 | 高 | 看见切进共识 会被写成已经有完整历史 interchangeable | 官方 Transition to Consensus item 3：not already full-history |
+| A4537 | 高 | 看见能出块 会被写成已经能给任意旧高度 interchangeable | 官方 Transition to Consensus item 3：not already any-old |
+| A4538 | 高 | 看见和其他节点一样跑 会被写成已经交差 interchangeable | 官方 Transition to Consensus item 3：not already settled |
+| A4539 | 中 | 怎样切到共识会被抄进不确定 | 不抄。不写怎样切到共识或怎样配扩展。不另写 19 节 |
+| A4530 | 记录 | 会与 323 / 147 / 324 / 953 / 955 糊成「看见 AppHash 对上就已经版本也对上 interchangeable、就已经对了当前头 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 AppHash 对上 not already version-matched / not already this-header / not already settled 正式三事（323 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。323 snapshot-switch vs history bundled unbundling 续（954 item 2） |
+| A4531 | 高 | 看见 Info 的 AppHash 对上 会被写成已经版本也对上 interchangeable | 官方 Transition to Consensus item 2：not already version-matched |
+| A4532 | 高 | 看见对了下一高度 会被写成已经对了当前头 interchangeable | 官方 Transition to Consensus item 2：not already this-header |
+| A4533 | 高 | 看见 Info 绿了 会被写成已经交差 interchangeable | 官方 Transition to Consensus item 2：not already settled |
+| A4534 | 中 | 怎样切到共识会被抄进不确定 | 不抄。不写怎样切到共识或怎样配扩展。不另写 19 节 |
+| A4525 | 记录 | 会与 323 / 38 / 321 / 954 / 955 糊成「看见装完就已经有了 ChainID interchangeable、就已经能出块 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 装完 not already chainid / not already block-ready / not already settled 正式三事（323 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。323 snapshot-switch vs history bundled unbundling 启动（953 item 1） |
+| A4526 | 高 | 看见快照装完 会被写成已经有了 ChainID interchangeable / 38 interchangeable | 官方 Transition to Consensus item 1：not already chainid / not 38 |
+| A4527 | 高 | 看见状态机在 会被写成已经能出块 interchangeable | 官方 Transition to Consensus item 1：not already block-ready |
+| A4528 | 高 | 看见有创世文件 会被写成已经交差 interchangeable | 官方 Transition to Consensus item 1：not already settled |
+| A4529 | 中 | 怎样切到共识会被抄进不确定 | 不抄。不写怎样切到共识或怎样配扩展。不另写 19 节 |
 | A4520 | 记录 | 会与 324 / 322 / 334 / 950 / 951 糊成「看见只留两份就已经有了全部历史 interchangeable、就已经五个字段都相同 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 只留最近两份 not already all-history / not already five-fields / not already settled 正式三事（324 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。324 snapshot-take vs commit bundled unbundling 完成（952 item 3） |
 | A4521 | 高 | 看见只留最近两份 会被写成已经有了全部历史 interchangeable | 官方 Taking Snapshots item 3：not already all-history |
 | A4522 | 高 | 看见 Hash 对上 会被写成已经五个字段都相同 interchangeable | 官方 Taking Snapshots item 3：not already five-fields |

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「快照已经切进共识」，必须分开装完是不是已经有了 ChainID、AppHash 对上是不是已经版本也对上、切进共识是不是已经有从创世的完整历史。可以跳过「看见装完就已经是全节点」。不要另写怎样切到共识或怎样配扩展。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「快照已经切进共识」，必须分开装完是不是已经有了 ChainID、AppHash 对上是不是已经版本也对上、切进共识是不是已经有从创世的完整历史。可以跳过「看见装完就已经是全节点」。不要另写怎样切到共识或怎样配扩展。323 snapshot-switch vs history bundled unbundling 完成（953 item 1 / 954 item 2 / 955 item 3）；精读 [`worked-example-snapshot-switch-notchain-vs-bundled.md`](worked-example-snapshot-switch-notchain-vs-bundled.md)（不变量 953 item 1）。
 
 ## 本页不抄
 

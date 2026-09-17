@@ -1,3 +1,6 @@
+- [`name-the-snapshot-switch-nothist-bar.md`](name-the-snapshot-switch-nothist-bar.md) — 切进共识 not already full-history / not already any-old / not already settled 正式三事（323 余量）（不变量 955）
+- [`name-the-snapshot-switch-notver-bar.md`](name-the-snapshot-switch-notver-bar.md) — AppHash 对上 not already version-matched / not already this-header / not already settled 正式三事（323 余量）（不变量 954）
+- [`name-the-snapshot-switch-notchain-bar.md`](name-the-snapshot-switch-notchain-bar.md) — 装完 not already chainid / not already block-ready / not already settled 正式三事（323 余量）（不变量 953）
 - [`name-the-snapshot-take-notall-bar.md`](name-the-snapshot-take-notall-bar.md) — 只留最近两份 not already all-history / not already five-fields / not already settled 正式三事（324 余量）（不变量 952）
 - [`name-the-snapshot-take-notcons-bar.md`](name-the-snapshot-take-notcons-bar.md) — 没停链 not already consistent / not already same-bytes / not already settled 正式三事（324 余量）（不变量 951）
 - [`name-the-snapshot-take-notafter-bar.md`](name-the-snapshot-take-notafter-bar.md) — 拍了这个高度 not already after-commit / not already no-higher / not already settled 正式三事（324 余量）（不变量 950）

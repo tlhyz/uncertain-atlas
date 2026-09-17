@@ -1,3 +1,15 @@
+## 2026-09-17（续 1072）
+
+- 不变量 955；语料 C933；模式 name-the-snapshot-switch-nothist-bar；反模式 snapshot-switch-nothist-sold-as-bundled；L10.3 第 924 条。填 L4.4 / CometBFT 档案 切进共识 not already full-history / not already any-old / not already settled 正式三事（323 余量）。323 snapshot-switch vs history bundled unbundling 完成（955 item 3）。
+
+## 2026-09-17（续 1071）
+
+- 不变量 954；语料 C932；模式 name-the-snapshot-switch-notver-bar；反模式 snapshot-switch-notver-sold-as-bundled；L10.3 第 923 条。填 L4.4 / CometBFT 档案 AppHash 对上 not already version-matched / not already this-header / not already settled 正式三事（323 余量）。323 snapshot-switch vs history bundled unbundling 续（954 item 2）。
+
+## 2026-09-17（续 1070）
+
+- 不变量 953；语料 C931；模式 name-the-snapshot-switch-notchain-bar；反模式 snapshot-switch-notchain-sold-as-bundled；L10.3 第 922 条。填 L4.4 / CometBFT 档案 装完 not already chainid / not already block-ready / not already settled 正式三事（323 余量）。323 snapshot-switch vs history bundled unbundling 启动（953 item 1）。
+
 ## 2026-09-17（续 1069）
 
 - 不变量 952；语料 C930；模式 name-the-snapshot-take-notall-bar；反模式 snapshot-take-notall-sold-as-bundled；L10.3 第 921 条。填 L4.4 / CometBFT 档案 只留最近两份 not already all-history / not already five-fields / not already settled 正式三事（324 余量）。324 snapshot-take vs commit bundled unbundling 完成（952 item 3）。

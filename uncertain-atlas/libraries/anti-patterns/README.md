@@ -1,3 +1,6 @@
+- [`snapshot-switch-nothist-sold-as-bundled.md`](snapshot-switch-nothist-sold-as-bundled.md) — 切进共识 被写成已经有完整历史 / 已经能给任意旧高度 / 已经交差（不变量 955）
+- [`snapshot-switch-notver-sold-as-bundled.md`](snapshot-switch-notver-sold-as-bundled.md) — AppHash 对上 被写成已经版本也对上 / 已经对了当前头 / 已经交差（不变量 954）
+- [`snapshot-switch-notchain-sold-as-bundled.md`](snapshot-switch-notchain-sold-as-bundled.md) — 装完 被写成已经有了 ChainID / 已经能出块 / 已经交差（不变量 953）
 - [`snapshot-take-notall-sold-as-bundled.md`](snapshot-take-notall-sold-as-bundled.md) — 只留最近两份 被写成已经有了全部历史 / 已经五个字段都相同 / 已经交差（不变量 952）
 - [`snapshot-take-notcons-sold-as-bundled.md`](snapshot-take-notcons-sold-as-bundled.md) — 没停链 被写成已经隔离 / 已经各节点相同 / 已经交差（不变量 951）
 - [`snapshot-take-notafter-sold-as-bundled.md`](snapshot-take-notafter-sold-as-bundled.md) — 拍了这个高度 被写成已经交差之后拍的 / 已经没有更高高度 / 已经交差（不变量 950）
