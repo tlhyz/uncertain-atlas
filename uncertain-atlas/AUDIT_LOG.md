@@ -4535,6 +4535,12 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2333 | 中 | 怎样实现 InitChain / 怎样配创世验证者会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2332 | 高 | 看见 InitChainResponse.Validators not empty → initial set regardless of Request 会被写成已经 accept initial validator set bundled（412） interchangeable，或当成已经 InitChain 回了空名单就没有集合（318） | 官方 InitChain Usage：If InitChainResponse.Validators is not empty, it will be the initial validator set regardless of what is in InitChainRequest.Validators |
 | A2331 | 高 | 看见 InitChainResponse.Validators empty → use InitChainRequest.Validators 会被写成已经 InitChain 回了空名单就没有集合（318），或当成已经 ValidatorUpdate 用公钥认人就已经改了集合（364） | 官方 InitChain Usage：If InitChainResponse.Validators is empty, the initial validator set will be the InitChainRequest.Validators |
+| A2339 | 记录 | 会与 495 / 412 / 318 / 364 / 303 糊成「看见 InitChain 了就已经 empty/not empty 规则 / 已经空名单没集合 / 已经 accept bundled 交差」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain Usage app decide / ValidatorUpdate from empty set 正式三事 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。empty/not empty 规则 / 空名单没集合 / accept bundled 标成另一对象 |
+| A2338 | 中 | 怎样实现 app decide / 怎样从创世 app_state 算验证者会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2337 | 高 | 看见 technically updating validator set from the empty set 会被写成已经 InitChain 回了空名单就没有集合（318），或当成已经 Response empty/not empty 规则（495） interchangeable | 官方 InitChain Usage：So, technically, they both are updating the validator set from the empty set |
+| A2336 | 高 | 看见 Both InitChainRequest.Validators and InitChainResponse.Validators are ValidatorUpdate 会被写成已经 ValidatorUpdate 用公钥认人就已经改了集合（364），或当成已经 InitChain 回了空名单就没有集合（318） | 官方 InitChain Usage：Both InitChainRequest.Validators and InitChainResponse.Validators are ValidatorUpdate structs |
+| A2335 | 高 | 看见 app can decide accept initial validator set or use a different one 会被写成已经 Response Validators empty/not empty 规则（495） interchangeable，或当成已经 InitChain Usage bundled（412） interchangeable | 官方 InitChain Usage：This allows the app to decide if it wants to accept the initial validator set … or use a different one |
+
 | A2330 | 高 | 看见 Called once upon genesis 会被写成已经崩溃后第一块 Commit 之前再调 InitChain（320），或当成已经 InitChain Usage 余量 bundled（412） interchangeable | 官方 InitChain Usage：Called once upon genesis |
 
 | A2325 | 高 | 看见 Return information about the application state 会被写成已经 QueryState 就是 ExecuteTxState（314），或当成已经 Info data 是任意信息（389） bundled 就代表已经回报状态 | 官方 Info Usage：Return information about the application state |
