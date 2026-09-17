@@ -156,6 +156,9 @@
 - [`worked-example-maxgas-notused-vs-bundled.md`](worked-example-maxgas-notused-vs-bundled.md) — GasUsed≠already consensus-checked/counted/settled；≠315 bundled（不变量 915）
 - [`worked-example-maxgas-noton-vs-bundled.md`](worked-example-maxgas-noton-vs-bundled.md) — MaxGas≠already executing/meaningful/settled；≠315 bundled（不变量 914）
 - [`worked-example-maxgas-vs-enforced.md`](worked-example-maxgas-vs-enforced.md) — MaxGas ≠ 已经在执行；GasUsed ≠ 已经算进共识；已提交块 ≠ 已经按气验过（不变量 315）
+- [`worked-example-exectx-notheader-vs-bundled.md`](worked-example-exectx-notheader-vs-bundled.md) — Code/Data≠already this-header/in-hash/consensus；≠316 bundled（不变量 1015）
+- [`worked-example-exectx-notout-vs-bundled.md`](worked-example-exectx-notout-vs-bundled.md) — Code非零≠already out-of-block/unindexed/checktx-scale；≠316 bundled（不变量 1014）
+- [`worked-example-exectx-notorder-vs-bundled.md`](worked-example-exectx-notorder-vs-bundled.md) — 结果列表≠already same-order/same-count/engine-sorted；≠316 bundled（不变量 1013）
 - [`worked-example-exectxresult-vs-consensus.md`](worked-example-exectxresult-vs-consensus.md) — 结果列表 ≠ 已经同一顺序；Code 非零 ≠ 已经没进块；Code / Data ≠ 已经印进本头（不变量 316）
 - [`worked-example-checktxresponse-vs-exec.md`](worked-example-checktxresponse-vs-exec.md) — CheckTx 的 Data ≠ 已经被引擎用了；各节点 Data 不一样 ≠ 已经分叉；Priority ≠ 已经是共识顺序（不变量 317）
 - [`worked-example-validatorupdate-notzero-vs-bundled.md`](worked-example-validatorupdate-notzero-vs-bundled.md) — power0≠already delete outsider/no cap/settled；≠318 bundled（不变量 907）

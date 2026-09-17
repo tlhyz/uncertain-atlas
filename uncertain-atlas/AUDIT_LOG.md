@@ -1,3 +1,18 @@
+| A4835 | 记录 | 会与 316 / 147 / 317 / 1013 / 1014 糊成「看见 Code/Data 就已经印进本头 interchangeable、就已经进了那份哈希 interchangeable、就已经是共识 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Code / Data not already this-header / not already in-hash / not already consensus 正式三事（316 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。316 exectxresult vs consensus bundled unbundling 完成（1015 item 3） |
+| A4836 | 高 | 看见 Code / Data 会被写成已经印进本头 interchangeable | 官方 ExecTxResult item 3：not already this-header |
+| A4837 | 高 | 看见 Events 会被写成已经进了那份哈希 interchangeable | 官方 ExecTxResult item 3：not already in-hash |
+| A4838 | 高 | 看见 Info / Log 会被写成已经是共识 interchangeable | 官方 ExecTxResult item 3：not already consensus |
+| A4839 | 中 | 怎样编回执会被抄进不确定 | 不抄。不写怎样编回执或怎样建索引。不另写 19 节 |
+| A4830 | 记录 | 会与 316 / 315 / 301 / 1013 / 1015 糊成「看见 Code 非零就已经没进块 interchangeable、就已经没进共识 interchangeable、就已经和池门同一把尺 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Code 非零 not already out-of-block / not already unindexed / not already checktx-scale 正式三事（316 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。316 exectxresult vs consensus bundled unbundling 续（1014 item 2） |
+| A4831 | 高 | 看见 Code ≠ 0 会被写成已经没进块 interchangeable | 官方 ExecTxResult item 2：not already out-of-block |
+| A4832 | 高 | 看见没索引 会被写成已经没进共识 interchangeable | 官方 ExecTxResult item 2：not already unindexed |
+| A4833 | 高 | 看见类比 CheckTx 会被写成已经和池门同一把尺 interchangeable | 官方 ExecTxResult item 2：not already checktx-scale |
+| A4834 | 中 | 怎样编回执会被抄进不确定 | 不抄。不写怎样编回执或怎样建索引。不另写 19 节 |
+| A4825 | 记录 | 会与 316 / 33 / 309 / 1014 / 1015 糊成「看见回了列表就已经同一顺序 interchangeable、就已经按送来的顺序 interchangeable、就已经引擎排好 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 结果列表 not already same-order / not already same-count / not already engine-sorted 正式三事（316 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。316 exectxresult vs consensus bundled unbundling 启动（1013 item 1） |
+| A4826 | 高 | 看见结果列表 会被写成已经同一顺序 interchangeable / 33 interchangeable | 官方 ExecTxResult item 1：not already same-order / not 33 |
+| A4827 | 高 | 看见条数一样 会被写成已经按送来的顺序 interchangeable | 官方 ExecTxResult item 1：not already same-count |
+| A4828 | 高 | 看见 Finalize 回了 会被写成引擎已经替你排好 interchangeable | 官方 ExecTxResult item 1：not already engine-sorted |
+| A4829 | 中 | 怎样编回执会被抄进不确定 | 不抄。不写怎样编回执或怎样建索引。不另写 19 节 |
 | A4820 | 记录 | 会与 309 / 67 / 1010 / 1011 糊成「看见立刻失败就已经停掉这个人 interchangeable、就已经和 Send 同一把尺 interchangeable、就已经送到 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 TrySend 回假 not already stopped / not already same-scale / not already delivered 正式三事（309 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。309 send vs enqueued bundled unbundling 完成（1012 item 3） |
 | A4821 | 高 | 看见 TrySend 回了假 会被写成已经停掉这个人 interchangeable | 官方 p2p API item 3：not already stopped |
 | A4822 | 高 | 看见立刻失败 会被写成已经和 Send 等过同一段时间 interchangeable | 官方 p2p API item 3：not already same-scale |

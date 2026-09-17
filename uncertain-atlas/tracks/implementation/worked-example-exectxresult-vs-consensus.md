@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「Finalize 已经回了结果」，必须分开列表是不是已经同一顺序、Code 非零是不是已经没进块、Code / Data 是不是已经印进本头。可以跳过「看见回了就已经对上顺序」。不要另写怎样编回执或怎样建索引。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「Finalize 已经回了结果」，必须分开列表是不是已经同一顺序、Code 非零是不是已经没进块、Code / Data 是不是已经印进本头。可以跳过「看见回了就已经对上顺序」。不要另写怎样编回执或怎样建索引。316 exectxresult vs consensus bundled unbundling 完成（1013 item 1 / 1014 item 2 / 1015 item 3）；精读 [`worked-example-exectx-notorder-vs-bundled.md`](worked-example-exectx-notorder-vs-bundled.md)（不变量 1013 item 1）。
 
 ## 本页不抄
 

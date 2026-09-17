@@ -1,3 +1,6 @@
+- [`name-the-exectx-notheader-bar.md`](name-the-exectx-notheader-bar.md) — Code / Data not already this-header / not already in-hash / not already consensus 正式三事（316 余量）（不变量 1015）
+- [`name-the-exectx-notout-bar.md`](name-the-exectx-notout-bar.md) — Code 非零 not already out-of-block / not already unindexed / not already checktx-scale 正式三事（316 余量）（不变量 1014）
+- [`name-the-exectx-notorder-bar.md`](name-the-exectx-notorder-bar.md) — 结果列表 not already same-order / not already same-count / not already engine-sorted 正式三事（316 余量）（不变量 1013）
 - [`name-the-sendq-notsame-bar.md`](name-the-sendq-notsame-bar.md) — TrySend 回假 not already stopped / not already same-scale / not already delivered 正式三事（309 余量）（不变量 1012）
 - [`name-the-sendq-notdisc-bar.md`](name-the-sendq-notdisc-bar.md) — Send 回假 not already disconnected / not already known-reason / not already delivered 正式三事（309 余量）（不变量 1011）
 - [`name-the-sendq-notqueued-bar.md`](name-the-sendq-notqueued-bar.md) — HasChannel not already queued / not already delivered / not already sent 正式三事（309 余量）（不变量 1010）

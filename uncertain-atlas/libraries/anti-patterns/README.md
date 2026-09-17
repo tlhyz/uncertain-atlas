@@ -1,3 +1,6 @@
+- [`exectx-notheader-sold-as-bundled.md`](exectx-notheader-sold-as-bundled.md) — Code / Data 被写成已经印进本头 / 已经进了那份哈希 / 已经是共识（不变量 1015）
+- [`exectx-notout-sold-as-bundled.md`](exectx-notout-sold-as-bundled.md) — Code 非零 被写成已经没进块 / 已经没进共识 / 已经和池门同一把尺（不变量 1014）
+- [`exectx-notorder-sold-as-bundled.md`](exectx-notorder-sold-as-bundled.md) — 结果列表 被写成已经同一顺序 / 已经按送来的顺序 / 引擎已经替你排好（不变量 1013）
 - [`sendq-notsame-sold-as-bundled.md`](sendq-notsame-sold-as-bundled.md) — TrySend 回假 被写成已经停掉这个人 / 已经和 Send 同一把尺 / 已经送到（不变量 1012）
 - [`sendq-notdisc-sold-as-bundled.md`](sendq-notdisc-sold-as-bundled.md) — Send 回假 被写成已经断开 / 已经知道是哪一种理由 / 已经送到（不变量 1011）
 - [`sendq-notqueued-sold-as-bundled.md`](sendq-notqueued-sold-as-bundled.md) — HasChannel 被写成已经入队 / 已经送到 / 已经发出去（不变量 1010）

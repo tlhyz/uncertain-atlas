@@ -1,3 +1,15 @@
+## 2026-09-17（续 1132）
+
+- 不变量 1015；语料 C993；模式 name-the-exectx-notheader-bar；反模式 exectx-notheader-sold-as-bundled；L10.3 第 984 条。填 L4.4 / CometBFT 档案 Code / Data not already this-header / not already in-hash / not already consensus 正式三事（316 余量）。316 exectxresult vs consensus bundled unbundling 完成（1015 item 3）。
+
+## 2026-09-17（续 1131）
+
+- 不变量 1014；语料 C992；模式 name-the-exectx-notout-bar；反模式 exectx-notout-sold-as-bundled；L10.3 第 983 条。填 L4.4 / CometBFT 档案 Code 非零 not already out-of-block / not already unindexed / not already checktx-scale 正式三事（316 余量）。316 exectxresult vs consensus bundled unbundling 续（1014 item 2）。
+
+## 2026-09-17（续 1130）
+
+- 不变量 1013；语料 C991；模式 name-the-exectx-notorder-bar；反模式 exectx-notorder-sold-as-bundled；L10.3 第 982 条。填 L4.4 / CometBFT 档案 结果列表 not already same-order / not already same-count / not already engine-sorted 正式三事（316 余量）。316 exectxresult vs consensus bundled unbundling 启动（1013 item 1）。
+
 ## 2026-09-17（续 1129）
 
 - 不变量 1012；语料 C990；模式 name-the-sendq-notsame-bar；反模式 sendq-notsame-sold-as-bundled；L10.3 第 981 条。填 L4.4 / CometBFT 档案 TrySend 回假 not already stopped / not already same-scale / not already delivered 正式三事（309 余量）。309 send vs enqueued bundled unbundling 完成（1012 item 3）。
