@@ -1,3 +1,15 @@
+## 2026-09-17（续 874）
+
+- 不变量 757；语料 C735；模式 name-the-initapphash-notranked-bar；反模式 initapphash-notranked-sold-as-bundled；L10.3 第 726 条。填 L4.4 / CometBFT 档案 CommitInfo.round not already ranked / not already slashed / not already settled 正式三事（392 余量）。392 initapphash vs header bundled unbundling 完成（757 item 3）。
+
+## 2026-09-17（续 873）
+
+- 不变量 756；语料 C734；模式 name-the-initapphash-notknownhash-bar；反模式 initapphash-notknownhash-sold-as-bundled；L10.3 第 725 条。填 L4.4 / CometBFT 档案 Finalize 请求 hash not already known header hash / not already Process / not already settled 正式三事（392 余量）。392 initapphash vs header bundled unbundling 续（756 item 2）。
+
+## 2026-09-17（续 872）
+
+- 不变量 755；语料 C733；模式 name-the-initapphash-notheader-bar；反模式 initapphash-notheader-sold-as-bundled；L10.3 第 724 条。填 L4.4 / CometBFT 档案 InitChain 回包 app_hash not already header AppHash / not already no set / not already settled 正式三事（392 余量）。392 initapphash vs header bundled unbundling 启动（755 item 1）。
+
 ## 2026-09-17（续 871）
 
 - 不变量 754；语料 C732；模式 name-the-checktxtx-notqueryinfo-bar；反模式 checktxtx-notqueryinfo-sold-as-bundled；L10.3 第 723 条。填 L4.4 / CometBFT 档案 CheckTx 回包 info not already Query info / not already CheckTx log / not already settled 正式三事（391 余量）。391 checktxtx vs recheck bundled unbundling 完成（754 item 3）。

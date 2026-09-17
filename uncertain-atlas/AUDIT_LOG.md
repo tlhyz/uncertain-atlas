@@ -1,3 +1,18 @@
+| A3545 | 记录 | 会与 392 / 365 / 394 / 749 / 755 / 756 糊成「看见填了 CommitInfo.round 就已经按投票权排过 interchangeable、就已经罚没 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CommitInfo.round not already ranked / not already slashed / not already settled 正式三事（392 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。392 initapphash vs header bundled unbundling 完成（757 item 3） |
+| A3546 | 高 | 看见 CommitInfo.round 会被写成已经按投票权排过 interchangeable / 365 interchangeable | 官方 InitChain 回包余栏 item 3：not already ranked / not 365 |
+| A3547 | 高 | 看见填了 round 会被写成已经罚没 interchangeable | 官方 InitChain 回包余栏 item 3：not already slashed |
+| A3548 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 InitChain 回包余栏 item 3：not already settled |
+| A3549 | 中 | 怎样写 InitChain 回包余栏 会被抄进不确定 | 不抄。不写怎样写 InitChain 回包余栏。不另写 19 节 |
+| A3540 | 记录 | 会与 392 / 311 / 755 / 757 糊成「看见填了 hash 就已经知道本头哈希 interchangeable、就已经跑过 Process interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize 请求 hash not already known header hash / not already Process / not already settled 正式三事（392 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。392 initapphash vs header bundled unbundling 续（756 item 2） |
+| A3541 | 高 | 看见 Finalize 请求 hash 会被写成已经知道本头哈希 interchangeable / 311 interchangeable | 官方 InitChain 回包余栏 item 2：not already known header hash / not 311 |
+| A3542 | 高 | 看见填了 hash 会被写成已经跑过 Process interchangeable | 官方 InitChain 回包余栏 item 2：not already Process |
+| A3543 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 InitChain 回包余栏 item 2：not already settled |
+| A3544 | 中 | 怎样写 InitChain 回包余栏 会被抄进不确定 | 不抄。不写怎样写 InitChain 回包余栏。不另写 19 节 |
+| A3535 | 记录 | 会与 392 / 147 / 495 / 756 / 757 糊成「看见回了起步哈希就已经是本头 AppHash interchangeable、就已经没有集合 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain 回包 app_hash not already header AppHash / not already no set / not already settled 正式三事（392 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。392 initapphash vs header bundled unbundling 启动（755 item 1） |
+| A3536 | 高 | 看见 InitChain 回包 app_hash 会被写成已经是本头 AppHash interchangeable | 官方 InitChain 回包余栏 item 1：not already header AppHash |
+| A3537 | 高 | 看见回了起步哈希 会被写成已经没有集合 interchangeable / 495 interchangeable | 官方 InitChain 回包余栏 item 1：not already no set / not 495 |
+| A3538 | 高 | 看见能回 会被写成已经交差 interchangeable / 147 interchangeable | 官方 InitChain 回包余栏 item 1：not already settled / not 147 |
+| A3539 | 中 | 怎样写 InitChain 回包余栏 会被抄进不确定 | 不抄。不写怎样写 InitChain 回包余栏。不另写 19 节 |
 | A3530 | 记录 | 会与 391 / 384 / 390 / 745 / 752 / 753 糊成「看见回了信息就已经是 Query 附加信息 interchangeable、就已经是 CheckTx 日志 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx 回包 info not already Query info / not already CheckTx log / not already settled 正式三事（391 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。391 checktxtx vs recheck bundled unbundling 完成（754 item 3） |
 | A3531 | 高 | 看见 CheckTx 回包 info 会被写成已经是 Query 附加信息 interchangeable / 384 interchangeable | 官方 CheckTx 请求余栏 item 3：not already Query info / not 384 |
 | A3532 | 高 | 看见回了信息 会被写成已经是 CheckTx 日志 interchangeable / 390 interchangeable | 官方 CheckTx 请求余栏 item 3：not already CheckTx log / not 390 |

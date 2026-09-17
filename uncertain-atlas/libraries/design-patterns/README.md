@@ -1,3 +1,6 @@
+- [`name-the-initapphash-notranked-bar.md`](name-the-initapphash-notranked-bar.md) — CommitInfo.round not already ranked / not already slashed / not already settled 正式三事（392 余量）（不变量 757）
+- [`name-the-initapphash-notknownhash-bar.md`](name-the-initapphash-notknownhash-bar.md) — Finalize 请求 hash not already known header hash / not already Process / not already settled 正式三事（392 余量）（不变量 756）
+- [`name-the-initapphash-notheader-bar.md`](name-the-initapphash-notheader-bar.md) — InitChain 回包 app_hash not already header AppHash / not already no set / not already settled 正式三事（392 余量）（不变量 755）
 - [`name-the-checktxtx-notqueryinfo-bar.md`](name-the-checktxtx-notqueryinfo-bar.md) — CheckTx 回包 info not already Query info / not already CheckTx log / not already settled 正式三事（391 余量）（不变量 754）
 - [`name-the-checktxtx-notexecstate-bar.md`](name-the-checktxtx-notexecstate-bar.md) — CheckTx 对照当前状态验 not already ExecuteTxState / not already processing block / not already settled 正式三事（391 余量）（不变量 753）
 - [`name-the-checktxtx-notrecheck-bar.md`](name-the-checktxtx-notrecheck-bar.md) — CheckTx 请求 tx not already Recheck / not already four gates / not already settled 正式三事（391 余量）（不变量 752）

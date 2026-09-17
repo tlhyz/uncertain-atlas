@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 InitChain 回包余栏就已经是本头 AppHash、已经知道本头哈希、已经按投票权排过」，必须分开 InitChain 回包 app_hash 是起步应用哈希是不是已经是本头 AppHash、Finalize 请求 hash 是这块的哈希是不是已经知道本头哈希、CommitInfo.round 是提交轮是不是已经按投票权排过。可以跳过「看见填了 InitChain 回包余栏就已经是本头 AppHash」。不要另写怎样写 InitChain 回包余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 InitChain 回包余栏就已经是本头 AppHash、已经知道本头哈希、已经按投票权排过」，必须分开 InitChain 回包 app_hash 是起步应用哈希是不是已经是本头 AppHash、Finalize 请求 hash 是这块的哈希是不是已经知道本头哈希、CommitInfo.round 是提交轮是不是已经按投票权排过。可以跳过「看见填了 InitChain 回包余栏就已经是本头 AppHash」。不要另写怎样写 InitChain 回包余栏。392 initapphash vs header bundled unbundling 完成（755 item 1 / 756 item 2 / 757 item 3）；精读 [`worked-example-initapphash-notheader-vs-bundled.md`](worked-example-initapphash-notheader-vs-bundled.md)（不变量 755 item 1）。
 
 ## 本页不抄
 

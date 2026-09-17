@@ -1,3 +1,6 @@
+- [`initapphash-notranked-sold-as-bundled.md`](initapphash-notranked-sold-as-bundled.md) — CommitInfo.round 被写成已经按投票权排过 / 已经罚没 / 已经交差（不变量 757）
+- [`initapphash-notknownhash-sold-as-bundled.md`](initapphash-notknownhash-sold-as-bundled.md) — Finalize 请求 hash 被写成已经知道本头哈希 / 已经跑过 Process / 已经交差（不变量 756）
+- [`initapphash-notheader-sold-as-bundled.md`](initapphash-notheader-sold-as-bundled.md) — InitChain 回包 app_hash 被写成已经是本头 AppHash / 已经没有集合 / 已经交差（不变量 755）
 - [`checktxtx-notqueryinfo-sold-as-bundled.md`](checktxtx-notqueryinfo-sold-as-bundled.md) — CheckTx 回包 info 被写成已经是 Query 附加信息 / 已经是 CheckTx 日志 / 已经交差（不变量 754）
 - [`checktxtx-notexecstate-sold-as-bundled.md`](checktxtx-notexecstate-sold-as-bundled.md) — 对照当前状态验 被写成已经按 ExecuteTxState 验过 / 已经参与处理块 / 已经交差（不变量 753）
 - [`checktxtx-notrecheck-sold-as-bundled.md`](checktxtx-notrecheck-sold-as-bundled.md) — CheckTx 请求 tx 被写成已经是 Recheck / 已经四门齐了 / 已经交差（不变量 752）
