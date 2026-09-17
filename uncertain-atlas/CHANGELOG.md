@@ -1,3 +1,15 @@
+## 2026-09-17（续 805）
+
+- 不变量 688；语料 C666；模式 name-the-chktxcodereject-notothervalue-bar；反模式 chktxcodereject-notothervalue-sold-as-bundled；L10.3 第 657 条。填 L4.4 / CometBFT 档案 CheckTx Usage no other value to the response code not CheckTx Data used / not optional bundled / not validate-no-apply bundled 正式三事（489 余量）。489 chktxcodereject vs proposal bundled unbundling 完成（688 item 3）。
+
+## 2026-09-17（续 804）
+
+- 不变量 687；语料 C665；模式 name-the-chktxcodereject-notproposal-bar；反模式 chktxcodereject-notproposal-sold-as-bundled；L10.3 第 656 条。填 L4.4 / CometBFT 档案 CheckTx Usage will not broadcast or in proposal not Check passed is in proposal / not forever valid / not Finalize Code≠0 still in block 正式三事（489 余量）。489 chktxcodereject vs proposal bundled unbundling 续（687 item 2）。
+
+## 2026-09-17（续 803）
+
+- 不变量 686；语料 C664；模式 name-the-chktxcodereject-notgossip-bar；反模式 chktxcodereject-notgossip-sold-as-bundled；L10.3 第 655 条。填 L4.4 / CometBFT 档案 CheckTx Usage Code≠0 rejected not in-pool gossip / not CheckTx guard bundled / not broadcast_tx received 正式三事（489 余量）。489 chktxcodereject vs proposal bundled unbundling 启动（686 item 1）。
+
 ## 2026-09-17（续 802）
 
 - 不变量 685；语料 C663；模式 name-the-chktxsource-notreplay-bar；反模式 chktxsource-notreplay-sold-as-bundled；L10.3 第 654 条。填 L4.4 / CometBFT 档案 CheckTx Usage may come from external user or another node not mempool dedup / not app replay protection / not CheckTx guard bundled 正式三事（488 余量）。488 chktxsource vs recheck bundled unbundling 完成（685 item 3）。

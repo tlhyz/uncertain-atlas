@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CheckTx 回了非零码就已经没进块、已经交差、已经 forever valid」，必须分开 Code≠0 会拒 / 不会广播 是不是已经流言 / CheckTx 守卫 bundled interchangeable、不会进提案块 是不是 Check 通过就是已进提案 / CheckTx 过了就 forever valid / Finalize Code≠0 仍在块里 interchangeable、CometBFT attributes no other value 是不是 CheckTx Data 已被引擎用了 / optional bundled / validate-no-apply bundled interchangeable。可以跳过「看见 CheckTx 回了非零码就已经没进块」。不要另写怎样挑回包码。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CheckTx 回了非零码就已经没进块、已经交差、已经 forever valid」，必须分开 Code≠0 会拒 / 不会广播 是不是已经流言 / CheckTx 守卫 bundled interchangeable、不会进提案块 是不是 Check 通过就是已进提案 / CheckTx 过了就 forever valid / Finalize Code≠0 仍在块里 interchangeable、CometBFT attributes no other value 是不是 CheckTx Data 已被引擎用了 / optional bundled / validate-no-apply bundled interchangeable。可以跳过「看见 CheckTx 回了非零码就已经没进块」。不要另写怎样挑回包码。489 chktxcodereject vs proposal bundled unbundling 完成（686 item 1 / 687 item 2 / 688 item 3）；精读 [`worked-example-chktxcodereject-notgossip-vs-bundled.md`](worked-example-chktxcodereject-notgossip-vs-bundled.md)（不变量 686 item 1）。
 
 ## 本页不抄
 
