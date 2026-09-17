@@ -1,3 +1,6 @@
+- [`name-the-listsnapempty-notchunks-bar.md`](name-the-listsnapempty-notchunks-bar.md) — ListSnapshots 用来发现 not already loading chunks / not already complete / not Usage discover 正式三事（395 余量）（不变量 736）
+- [`name-the-listsnapempty-notidentical-bar.md`](name-the-listsnapempty-notidentical-bar.md) — ListSnapshots 本地清单 not already identical / not already restored / not already settled 正式三事（395 余量）（不变量 735）
+- [`name-the-listsnapempty-notcomplete-bar.md`](name-the-listsnapempty-notcomplete-bar.md) — ListSnapshots 空请求 not already complete / not already asked neighbors / not Usage discover 正式三事（395 余量）（不变量 734）
 - [`name-the-commitnoparam-notflush-bar.md`](name-the-commitnoparam-notflush-bar.md) — Echo 用来测实现 not Flush / not already delivered / not Echo Usage test 正式三事（399 余量）（不变量 733）
 - [`name-the-commitnoparam-notreqfield-bar.md`](name-the-commitnoparam-notreqfield-bar.md) — Echo 回包 Message not request field / not already echoed / not Echo Usage response 正式三事（399 余量）（不变量 732）
 - [`name-the-commitnoparam-notpersist-bar.md`](name-the-commitnoparam-notpersist-bar.md) — Commit 不带参数 not already persist / not persist signal / not retain_height 正式三事（399 余量）（不变量 731）

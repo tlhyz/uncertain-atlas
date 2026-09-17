@@ -1,3 +1,6 @@
+- [`listsnapempty-notchunks-sold-as-bundled.md`](listsnapempty-notchunks-sold-as-bundled.md) — 用来发现被写成已经在拉块 / 已经齐 / 已经 Usage discover（不变量 736）
+- [`listsnapempty-notidentical-sold-as-bundled.md`](listsnapempty-notidentical-sold-as-bundled.md) — 本地清单被写成已经是同一份 / 已经装完 / 已经交差（不变量 735）
+- [`listsnapempty-notcomplete-sold-as-bundled.md`](listsnapempty-notcomplete-sold-as-bundled.md) — 空请求被写成已经齐 / 已经问了邻居 / 已经 Usage discover（不变量 734）
 - [`commitnoparam-notflush-sold-as-bundled.md`](commitnoparam-notflush-sold-as-bundled.md) — Echo 测实现被写成已经刷完 / 已经送到 / 已经 Echo Usage 测实现（不变量 733）
 - [`commitnoparam-notreqfield-sold-as-bundled.md`](commitnoparam-notreqfield-sold-as-bundled.md) — Echo 回包被写成已经是入参字段 / 已经回显 / 已经 Echo Usage Response（不变量 732）
 - [`commitnoparam-notpersist-sold-as-bundled.md`](commitnoparam-notpersist-sold-as-bundled.md) — Commit 不带参数被写成已经落盘 / 已经 persist signal / 已经 retain_height（不变量 731）

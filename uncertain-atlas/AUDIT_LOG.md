@@ -1,3 +1,18 @@
+| A3440 | 记录 | 会与 395 / 375 / 322 / 500 / 661 / 734 / 735 糊成「看见用来发现就已经在拉块 interchangeable、就已经齐 interchangeable、就已经 Usage discover interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ListSnapshots 用来发现 not already loading chunks / not already complete / not Usage discover 正式三事（395 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。395 listsnapempty vs discovery bundled unbundling 完成（736 item 3） |
+| A3441 | 高 | 看见 ListSnapshots 用来发现 会被写成已经在拉块 interchangeable / 375 interchangeable | 官方 ListSnapshots 空请求 item 3：not already loading chunks / not 375 |
+| A3442 | 高 | 看见用来发现 会被写成已经齐 interchangeable / 322 interchangeable | 官方 ListSnapshots 空请求 item 3：not already complete / not 322 |
+| A3443 | 高 | 看见能填 会被写成已经 Usage discover interchangeable / 500 / 661 interchangeable | 官方 ListSnapshots 空请求 item 3：not Usage discover / not 500 |
+| A3444 | 中 | 怎样写 ListSnapshots 空请求 会被抄进不确定 | 不抄。不写怎样写 ListSnapshots 空请求。不另写 19 节 |
+| A3435 | 记录 | 会与 395 / 368 / 321 / 396 / 734 / 736 糊成「看见回了清单就已经是同一份 interchangeable、就已经装完 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ListSnapshots 本地清单 not already identical / not already restored / not already settled 正式三事（395 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。395 listsnapempty vs discovery bundled unbundling 续（735 item 2） |
+| A3436 | 高 | 看见 ListSnapshots 本地清单 会被写成已经是同一份 interchangeable / 368 interchangeable | 官方 ListSnapshots 空请求 item 2：not already identical / not 368 |
+| A3437 | 高 | 看见回了清单 会被写成已经装完 interchangeable / 321 interchangeable | 官方 ListSnapshots 空请求 item 2：not already restored / not 321 |
+| A3438 | 高 | 看见能回 会被写成已经交差 interchangeable / 396 interchangeable | 官方 ListSnapshots 空请求 item 2：not already settled / not 396 |
+| A3439 | 中 | 怎样写 ListSnapshots 空请求 会被抄进不确定 | 不抄。不写怎样写 ListSnapshots 空请求。不另写 19 节 |
+| A3430 | 记录 | 会与 395 / 322 / 500 / 661 / 735 / 736 糊成「看见填了空请求就已经齐 interchangeable、就已经问了邻居 interchangeable、就已经 Usage discover interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ListSnapshots 空请求 not already complete / not already asked neighbors / not Usage discover 正式三事（395 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。395 listsnapempty vs discovery bundled unbundling 启动（734 item 1） |
+| A3431 | 高 | 看见 ListSnapshots 空请求要清单 会被写成已经齐 interchangeable / 322 interchangeable | 官方 ListSnapshots 空请求 item 1：not already complete / not 322 |
+| A3432 | 高 | 看见填了空请求 会被写成已经问了邻居 interchangeable / 322 interchangeable | 官方 ListSnapshots 空请求 item 1：not already asked neighbors / not 322 |
+| A3433 | 高 | 看见能填 会被写成已经 Usage discover interchangeable / 500 / 661 interchangeable | 官方 ListSnapshots 空请求 item 1：not Usage discover / not 500 |
+| A3434 | 中 | 怎样写 ListSnapshots 空请求 会被抄进不确定 | 不抄。不写怎样写 ListSnapshots 空请求。不另写 19 节 |
 | A3425 | 记录 | 会与 399 / 374 / 492 / 673 / 731 / 732 糊成「看见能测就已经刷完 interchangeable、就已经送到 interchangeable、就已经 Echo Usage 测实现 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Echo 用来测实现 not Flush / not already delivered / not Echo Usage test 正式三事（399 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。399 commitnoparam vs persist bundled unbundling 完成（733 item 3） |
 | A3426 | 高 | 看见 Echo 用来测实现 会被写成已经刷完 interchangeable / 374 interchangeable | 官方 Commit 空请求 item 3：not Flush / not 374 |
 | A3427 | 高 | 看见能测 会被写成已经送到 interchangeable / 374 interchangeable | 官方 Commit 空请求 item 3：not already delivered / not 374 |

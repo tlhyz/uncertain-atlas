@@ -1,3 +1,15 @@
+## 2026-09-17（续 853）
+
+- 不变量 736；语料 C714；模式 name-the-listsnapempty-notchunks-bar；反模式 listsnapempty-notchunks-sold-as-bundled；L10.3 第 705 条。填 L4.4 / CometBFT 档案 ListSnapshots 用来发现 not already loading chunks / not already complete / not Usage discover 正式三事（395 余量）。395 listsnapempty vs discovery bundled unbundling 完成（736 item 3）。
+
+## 2026-09-17（续 852）
+
+- 不变量 735；语料 C713；模式 name-the-listsnapempty-notidentical-bar；反模式 listsnapempty-notidentical-sold-as-bundled；L10.3 第 704 条。填 L4.4 / CometBFT 档案 ListSnapshots 本地清单 not already identical / not already restored / not already settled 正式三事（395 余量）。395 listsnapempty vs discovery bundled unbundling 续（735 item 2）。
+
+## 2026-09-17（续 851）
+
+- 不变量 734；语料 C712；模式 name-the-listsnapempty-notcomplete-bar；反模式 listsnapempty-notcomplete-sold-as-bundled；L10.3 第 703 条。填 L4.4 / CometBFT 档案 ListSnapshots 空请求 not already complete / not already asked neighbors / not Usage discover 正式三事（395 余量）。395 listsnapempty vs discovery bundled unbundling 启动（734 item 1）。
+
 ## 2026-09-17（续 850）
 
 - 不变量 733；语料 C711；模式 name-the-commitnoparam-notflush-bar；反模式 commitnoparam-notflush-sold-as-bundled；L10.3 第 702 条。填 L4.4 / CometBFT 档案 Echo 用来测实现 not Flush / not already delivered / not Echo Usage test 正式三事（399 余量）。399 commitnoparam vs persist bundled unbundling 完成（733 item 3）。

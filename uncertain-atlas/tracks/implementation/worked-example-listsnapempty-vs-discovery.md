@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ListSnapshots 空请求就已经齐、已经是同一份、已经在拉块」，必须分开 ListSnapshots 请求是空请求、向应用要一份快照清单是不是已经齐、ListSnapshots 回包 snapshots 是本地状态快照清单是不是已经是同一份、ListSnapshots 用来在 state sync 时发现邻居上有哪些快照是不是已经在拉块。可以跳过「看见填了 ListSnapshots 空请求就已经齐」。不要另写怎样写 ListSnapshots 空请求。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ListSnapshots 空请求就已经齐、已经是同一份、已经在拉块」，必须分开 ListSnapshots 请求是空请求、向应用要一份快照清单是不是已经齐、ListSnapshots 回包 snapshots 是本地状态快照清单是不是已经是同一份、ListSnapshots 用来在 state sync 时发现邻居上有哪些快照是不是已经在拉块。可以跳过「看见填了 ListSnapshots 空请求就已经齐」。不要另写怎样写 ListSnapshots 空请求。395 listsnapempty vs discovery bundled unbundling 完成（734 item 1 / 735 item 2 / 736 item 3）；精读 [`worked-example-listsnapempty-notcomplete-vs-bundled.md`](worked-example-listsnapempty-notcomplete-vs-bundled.md)（不变量 734 item 1）。
 
 ## 本页不抄
 
