@@ -1,3 +1,15 @@
+## 2026-09-17（续 1153）
+
+- 不变量 1036；语料 C1014；模式 name-the-extrest-nothash-bar；反模式 extrest-nothash-sold-as-bundled；L10.3 第 1005 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.next_validators_hash not already same-field / not already swapped / not already settled 正式三事（411 余量）。411 extreqtxs vs fintxs bundled unbundling 完成（1036 item 3）。
+
+## 2026-09-17（续 1152）
+
+- 不变量 1035；语料 C1013；模式 name-the-extrest-notlocal-bar；反模式 extrest-notlocal-sold-as-bundled；L10.3 第 1004 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.proposed_last_commit not already local-settled / not already processed / not already this-header 正式三事（411 余量）。411 extreqtxs vs fintxs bundled unbundling 续（1035 item 2）。
+
+## 2026-09-17（续 1151）
+
+- 不变量 1034；语料 C1012；模式 name-the-extrest-notexec-bar；反模式 extrest-notexec-sold-as-bundled；L10.3 第 1003 条。填 L4.4 / CometBFT 档案 ExtendVoteRequest.txs not already executed / not already settled / not already whole-block 正式三事（411 余量）。411 extreqtxs vs fintxs bundled unbundling 启动（1034 item 1）。
+
 ## 2026-09-17（续 1150）
 
 - 不变量 1033；语料 C1011；模式 name-the-extpre-notlate-bar；反模式 extpre-notlate-sold-as-bundled；L10.3 第 1002 条。填 L4.4 / CometBFT 档案 Verify ACCEPT 留给 h+1 Prepare not already late-verified / not already settled / not already must-reverify 正式三事（409 余量）。409 extreq vs precommit bundled unbundling 完成（1033 item 3）。

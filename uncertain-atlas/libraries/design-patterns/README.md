@@ -1,3 +1,6 @@
+- [`name-the-extrest-nothash-bar.md`](name-the-extrest-nothash-bar.md) — ExtendVoteRequest.next_validators_hash not already same-field / not already swapped / not already settled 正式三事（411 余量）（不变量 1036）
+- [`name-the-extrest-notlocal-bar.md`](name-the-extrest-notlocal-bar.md) — ExtendVoteRequest.proposed_last_commit not already local-settled / not already processed / not already this-header 正式三事（411 余量）（不变量 1035）
+- [`name-the-extrest-notexec-bar.md`](name-the-extrest-notexec-bar.md) — ExtendVoteRequest.txs not already executed / not already settled / not already whole-block 正式三事（411 余量）（不变量 1034）
 - [`name-the-extpre-notlate-bar.md`](name-the-extpre-notlate-bar.md) — Verify ACCEPT 留给 h+1 Prepare not already late-verified / not already settled / not already must-reverify 正式三事（409 余量）（不变量 1033）
 - [`name-the-extpre-notskip-bar.md`](name-the-extpre-notskip-bar.md) — Precommit 丢掉无有效签扩展 not already skip-verify / not already unsigned / not already self-verified 正式三事（409 余量）（不变量 1032）
 - [`name-the-extpre-notcall-bar.md`](name-the-extpre-notcall-bar.md) — ExtendVoteRequest 对应即将发 Precommit not already will-call / not already non-nil-only / not already settled 正式三事（409 余量）（不变量 1031）

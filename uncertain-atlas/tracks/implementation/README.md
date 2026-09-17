@@ -646,6 +646,9 @@
 - [`worked-example-extreqhash-notalign-vs-bundled.md`](worked-example-extreqhash-notalign-vs-bundled.md) — height≠already aligned/will-call/snapshot-height；≠410 bundled（不变量 1023）
 - [`worked-example-extreqhash-notproc-vs-bundled.md`](worked-example-extreqhash-notproc-vs-bundled.md) — hash≠already processed/settled/signed；≠410 bundled（不变量 1022）
 - [`worked-example-extreqhash-vs-process.md`](worked-example-extreqhash-vs-process.md) — ExtendVoteRequest.hash 是扩展要指的那份拟议块头哈希 ≠ 已经跑过 Process；ExtendVoteRequest.height 是拟议块高度（用来对一下） ≠ 已经对上了拟议块；ExtendVoteRequest.time 是扩展要指的那份拟议块时间戳 ≠ 已经验过票上时间（不变量 410）
+- [`worked-example-extrest-nothash-vs-bundled.md`](worked-example-extrest-nothash-vs-bundled.md) — next_validators_hash≠already same-field/swapped/settled；≠411 bundled（不变量 1036）
+- [`worked-example-extrest-notlocal-vs-bundled.md`](worked-example-extrest-notlocal-vs-bundled.md) — proposed_last_commit≠already local-settled/processed/this-header；≠411 bundled（不变量 1035）
+- [`worked-example-extrest-notexec-vs-bundled.md`](worked-example-extrest-notexec-vs-bundled.md) — txs≠already executed/settled/whole-block；≠411 bundled（不变量 1034）
 - [`worked-example-extreqtxs-vs-fintxs.md`](worked-example-extreqtxs-vs-fintxs.md) — ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 ≠ 已经执行那些交易；ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 ≠ 已经交差 local_last_commit；ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 ≠ 已经是 Finalize 请求栏的 next_validators_hash（不变量 411）
 - [`worked-example-initonce-vs-crash.md`](worked-example-initonce-vs-crash.md) — InitChain 创世时只调一次 ≠ 已经是崩溃后再调；应用可以决定接受创世验证者集合或用创世应用信息算出另一套 ≠ 已经没有集合；Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 ≠ 已经改了集合（不变量 412）
 - [`worked-example-extreqmis-vs-reward.md`](worked-example-extreqmis-vs-reward.md) — ExtendVoteRequest.misbehavior 是拟议块里那些过错信息 ≠ 已经定奖惩；ExtendVoteRequest.proposer_address 是造这份提案的验证者地址 ≠ 已经知道本头哈希；VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 ≠ 已经带了公钥（不变量 413）

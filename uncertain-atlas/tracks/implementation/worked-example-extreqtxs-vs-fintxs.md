@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendVote 请求余栏就已经执行那些交易、已经交差 local_last_commit、已经是 Finalize 请求栏的 next_validators_hash」，必须分开 ExtendVoteRequest.txs 是扩展要指的那份块的交易列表是不是已经执行那些交易、ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息是不是已经交差 local_last_commit、ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希是不是已经是 Finalize 请求栏的 next_validators_hash。可以跳过「看见填了 ExtendVote 请求余栏就已经执行那些交易」。不要另写怎样写 ExtendVote 请求余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendVote 请求余栏就已经执行那些交易、已经交差 local_last_commit、已经是 Finalize 请求栏的 next_validators_hash」，必须分开 ExtendVoteRequest.txs 是扩展要指的那份块的交易列表是不是已经执行那些交易、ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息是不是已经交差 local_last_commit、ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希是不是已经是 Finalize 请求栏的 next_validators_hash。可以跳过「看见填了 ExtendVote 请求余栏就已经执行那些交易」。不要另写怎样写 ExtendVote 请求余栏。411 extreqtxs vs fintxs bundled unbundling 完成（1034 item 1 / 1035 item 2 / 1036 item 3）；精读 [`worked-example-extrest-notexec-vs-bundled.md`](worked-example-extrest-notexec-vs-bundled.md)（不变量 1034 item 1）。
 
 ## 本页不抄
 

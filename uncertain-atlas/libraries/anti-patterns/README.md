@@ -1,3 +1,6 @@
+- [`extrest-nothash-sold-as-bundled.md`](extrest-nothash-sold-as-bundled.md) — next_validators_hash 被写成已经是 Finalize 请求栏 / 已经换了人 / 已经交差（不变量 1036）
+- [`extrest-notlocal-sold-as-bundled.md`](extrest-notlocal-sold-as-bundled.md) — proposed_last_commit 被写成已经交差 local_last_commit / 已经跑过 Process / 已经是本头 LastCommit（不变量 1035）
+- [`extrest-notexec-sold-as-bundled.md`](extrest-notexec-sold-as-bundled.md) — txs 被写成已经执行那些交易 / 已经交差 / 已经整块跑了（不变量 1034）
 - [`extpre-notlate-sold-as-bundled.md`](extpre-notlate-sold-as-bundled.md) — ACCEPT 被写成已经 Verify 过迟到扩展 / 已经交差 / 已经必须再 Verify（不变量 1033）
 - [`extpre-notskip-sold-as-bundled.md`](extpre-notskip-sold-as-bundled.md) — 丢掉无有效签 被写成已经跳过 Verify / 已经没有签 / 已经自己验过（不变量 1032）
 - [`extpre-notcall-sold-as-bundled.md`](extpre-notcall-sold-as-bundled.md) — 对应即将发 Precommit 被写成已经会调 / 已经只在非 nil 才叫 / 已经交差（不变量 1031）
