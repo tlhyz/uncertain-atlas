@@ -355,6 +355,9 @@
 - [`worked-example-applyretry-notswitch-vs-bundled.md`](worked-example-applyretry-notswitch-vs-bundled.md) — RETRY_SNAPSHOT≠321 switched/restored/401 Offer accepted；≠398 bundled（不变量 720）
 - [`worked-example-applyretry-notrefetch-vs-bundled.md`](worked-example-applyretry-notrefetch-vs-bundled.md) — RETRY≠378 refetch regardless/already complete/502 Usage refetch；≠398 bundled（不变量 719）
 - [`worked-example-applyretry-vs-refetch.md`](worked-example-applyretry-vs-refetch.md) — ApplySnapshotChunk Result RETRY 是再装这块、按需配合 RefetchChunks 和 RejectSenders ≠ 已经再拉；ApplySnapshotChunk Result RETRY_SNAPSHOT 是从 OfferSnapshot 重来这份、除非另有指令否则复用已拉块 ≠ 已经换一份；ApplySnapshotChunk Result REJECT_SNAPSHOT 是拒掉这份、换一份 ≠ 已经是装这块的结果（不变量 398）
+- [`worked-example-commitnoparam-notflush-vs-bundled.md`](worked-example-commitnoparam-notflush-vs-bundled.md) — Echo 测实现≠374 Flush/already delivered/492 Echo Usage；≠399 bundled（不变量 733）
+- [`worked-example-commitnoparam-notreqfield-vs-bundled.md`](worked-example-commitnoparam-notreqfield-vs-bundled.md) — Echo 回包 Message≠394 request field/already echoed/492 Echo Usage Response；≠399 bundled（不变量 732）
+- [`worked-example-commitnoparam-notpersist-vs-bundled.md`](worked-example-commitnoparam-notpersist-vs-bundled.md) — Commit 不带参数≠335 persist/481 persist signal/491 retain_height；≠399 bundled（不变量 731）
 - [`worked-example-commitnoparam-vs-persist.md`](worked-example-commitnoparam-vs-persist.md) — Commit 不带参数 ≠ 已经落盘；Echo 回包 Message 是入参那串 ≠ 已经是入参字段；Echo 用来测实现 ≠ 已经刷完（不变量 399）
 - [`worked-example-offerfmt-notabort-vs-bundled.md`](worked-example-offerfmt-notabort-vs-bundled.md) — ABORT≠321 switched/restored/402 UNKNOWN abort-all；≠400 bundled（不变量 724）
 - [`worked-example-offerfmt-notsenders-vs-bundled.md`](worked-example-offerfmt-notsenders-vs-bundled.md) — REJECT_SENDER≠378 reject_senders regardless/can continue/499 chunk reject；≠400 bundled（不变量 723）

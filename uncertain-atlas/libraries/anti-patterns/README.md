@@ -1,3 +1,6 @@
+- [`commitnoparam-notflush-sold-as-bundled.md`](commitnoparam-notflush-sold-as-bundled.md) — Echo 测实现被写成已经刷完 / 已经送到 / 已经 Echo Usage 测实现（不变量 733）
+- [`commitnoparam-notreqfield-sold-as-bundled.md`](commitnoparam-notreqfield-sold-as-bundled.md) — Echo 回包被写成已经是入参字段 / 已经回显 / 已经 Echo Usage Response（不变量 732）
+- [`commitnoparam-notpersist-sold-as-bundled.md`](commitnoparam-notpersist-sold-as-bundled.md) — Commit 不带参数被写成已经落盘 / 已经 persist signal / 已经 retain_height（不变量 731）
 - [`offerafter-notcomplete-sold-as-bundled.md`](offerafter-notcomplete-sold-as-bundled.md) — Apply ACCEPT 被写成已经齐 / 已经是装这块的结果 / 已经 Offer ACCEPT（不变量 730）
 - [`offerafter-notabort-sold-as-bundled.md`](offerafter-notabort-sold-as-bundled.md) — 回包拒被写成已经 ABORT / 已经 REJECT_SNAPSHOT / 已经 Usage reject（不变量 729）
 - [`offerafter-notrestored-sold-as-bundled.md`](offerafter-notrestored-sold-as-bundled.md) — 收下之后才去拉装被写成已经装完 / 已经齐 / 已经交差（不变量 728）

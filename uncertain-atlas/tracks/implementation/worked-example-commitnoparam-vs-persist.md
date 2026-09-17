@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 Commit 就已经落盘、已经是入参字段、已经刷完」，必须分开 Commit 不带参数是不是已经落盘、Echo 回包 Message 是入参那串是不是已经是入参字段、Echo 用来测实现是不是已经刷完。可以跳过「看见叫了 Commit 就已经落盘」。不要另写怎样写 Commit 空请求。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 Commit 就已经落盘、已经是入参字段、已经刷完」，必须分开 Commit 不带参数是不是已经落盘、Echo 回包 Message 是入参那串是不是已经是入参字段、Echo 用来测实现是不是已经刷完。可以跳过「看见叫了 Commit 就已经落盘」。不要另写怎样写 Commit 空请求。399 commitnoparam vs persist bundled unbundling 完成（731 item 1 / 732 item 2 / 733 item 3）；精读 [`worked-example-commitnoparam-notpersist-vs-bundled.md`](worked-example-commitnoparam-notpersist-vs-bundled.md)（不变量 731 item 1）。
 
 ## 本页不抄
 

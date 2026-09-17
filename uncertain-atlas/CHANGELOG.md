@@ -1,3 +1,15 @@
+## 2026-09-17（续 850）
+
+- 不变量 733；语料 C711；模式 name-the-commitnoparam-notflush-bar；反模式 commitnoparam-notflush-sold-as-bundled；L10.3 第 702 条。填 L4.4 / CometBFT 档案 Echo 用来测实现 not Flush / not already delivered / not Echo Usage test 正式三事（399 余量）。399 commitnoparam vs persist bundled unbundling 完成（733 item 3）。
+
+## 2026-09-17（续 849）
+
+- 不变量 732；语料 C710；模式 name-the-commitnoparam-notreqfield-bar；反模式 commitnoparam-notreqfield-sold-as-bundled；L10.3 第 701 条。填 L4.4 / CometBFT 档案 Echo 回包 Message not request field / not already echoed / not Echo Usage response 正式三事（399 余量）。399 commitnoparam vs persist bundled unbundling 续（732 item 2）。
+
+## 2026-09-17（续 848）
+
+- 不变量 731；语料 C709；模式 name-the-commitnoparam-notpersist-bar；反模式 commitnoparam-notpersist-sold-as-bundled；L10.3 第 700 条。填 L4.4 / CometBFT 档案 Commit 不带参数 not already persist / not persist signal / not retain_height 正式三事（399 余量）。399 commitnoparam vs persist bundled unbundling 启动（731 item 1）。
+
 ## 2026-09-17（续 847）
 
 - 不变量 730；语料 C708；模式 name-the-offerafter-notcomplete-bar；反模式 offerafter-notcomplete-sold-as-bundled；L10.3 第 699 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Result ACCEPT not already complete / not this-chunk result / not Offer ACCEPT 正式三事（401 余量）。401 offeraccept vs restored bundled unbundling 完成（730 item 3）。

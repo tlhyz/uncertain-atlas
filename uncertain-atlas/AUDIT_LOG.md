@@ -1,3 +1,18 @@
+| A3425 | 记录 | 会与 399 / 374 / 492 / 673 / 731 / 732 糊成「看见能测就已经刷完 interchangeable、就已经送到 interchangeable、就已经 Echo Usage 测实现 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Echo 用来测实现 not Flush / not already delivered / not Echo Usage test 正式三事（399 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。399 commitnoparam vs persist bundled unbundling 完成（733 item 3） |
+| A3426 | 高 | 看见 Echo 用来测实现 会被写成已经刷完 interchangeable / 374 interchangeable | 官方 Commit 空请求 item 3：not Flush / not 374 |
+| A3427 | 高 | 看见能测 会被写成已经送到 interchangeable / 374 interchangeable | 官方 Commit 空请求 item 3：not already delivered / not 374 |
+| A3428 | 高 | 看见能叫 会被写成已经 Echo Usage 测实现 interchangeable / 492 / 673 interchangeable | 官方 Commit 空请求 item 3：not Echo Usage test / not 492 |
+| A3429 | 中 | 怎样写 Commit 空请求 会被抄进不确定 | 不抄。不写怎样写 Commit 空请求。不另写 19 节 |
+| A3420 | 记录 | 会与 399 / 394 / 492 / 675 / 731 / 733 糊成「看见回了 Message 就已经是入参字段 interchangeable、就已经回显 interchangeable、就已经 Echo Usage Response interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Echo 回包 Message not request field / not already echoed / not Echo Usage response 正式三事（399 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。399 commitnoparam vs persist bundled unbundling 续（732 item 2） |
+| A3421 | 高 | 看见 Echo 回包 Message 是入参那串 会被写成已经是入参字段 interchangeable / 394 interchangeable | 官方 Commit 空请求 item 2：not request field / not 394 |
+| A3422 | 高 | 看见回了 Message 会被写成已经回显 interchangeable | 官方 Commit 空请求 item 2：not already echoed |
+| A3423 | 高 | 看见能填 会被写成已经 Echo Usage Response interchangeable / 492 / 675 interchangeable | 官方 Commit 空请求 item 2：not Echo Usage response / not 492 |
+| A3424 | 中 | 怎样写 Commit 空请求 会被抄进不确定 | 不抄。不写怎样写 Commit 空请求。不另写 19 节 |
+| A3415 | 记录 | 会与 399 / 335 / 481 / 701 / 491 / 692 / 732 / 733 糊成「看见不带参数就已经落盘 interchangeable、就已经 persist signal interchangeable、就已经 retain_height interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Commit 不带参数 not already persist / not persist signal / not retain_height 正式三事（399 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。399 commitnoparam vs persist bundled unbundling 启动（731 item 1） |
+| A3416 | 高 | 看见 Commit 不带参数 会被写成已经落盘 interchangeable / 335 interchangeable | 官方 Commit 空请求 item 1：not already persist / not 335 |
+| A3417 | 高 | 看见能叫 会被写成已经 persist signal interchangeable / 481 / 701 interchangeable | 官方 Commit 空请求 item 1：not persist signal / not 481 |
+| A3418 | 高 | 看见能回 会被写成已经 retain_height interchangeable / 491 / 692 interchangeable | 官方 Commit 空请求 item 1：not retain_height / not 491 |
+| A3419 | 中 | 怎样写 Commit 空请求 会被抄进不确定 | 不抄。不写怎样写 Commit 空请求。不另写 19 节 |
 | A3410 | 记录 | 会与 401 / 321 / 397 / 402 / 726 / 728 / 729 糊成「看见 Apply ACCEPT 就已经齐 interchangeable、就已经是装这块的结果 interchangeable、就已经 Offer ACCEPT interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk Result ACCEPT not already complete / not this-chunk result / not Offer ACCEPT 正式三事（401 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。401 offeraccept vs restored bundled unbundling 完成（730 item 3） |
 | A3411 | 高 | 看见 Apply ACCEPT 这块收下了 会被写成已经齐 interchangeable / 321 interchangeable | 官方 Offer 收下之后 item 3：not already complete / not 321 |
 | A3412 | 高 | 看见回了 ACCEPT 会被写成已经是装这块的结果 interchangeable / 397 interchangeable | 官方 Offer 收下之后 item 3：not this-chunk result / not 397 |
