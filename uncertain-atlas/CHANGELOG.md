@@ -1,3 +1,7 @@
+## 2026-09-17（续 799）
+
+- 不变量 682；语料 C659；模式 name-the-commitpersist-nothistoricalblocks-bar；反模式 commitpersist-nothistoricalblocks-sold-as-bundled；L10.3 第 651 条。填 L4.4 / CometBFT 档案 Historical blocks required for auditing replay light client not retain_height defaults to 0 retain all / not blocks below height may be removed / not full history in consensus when joined 正式三事（481 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。481 commitpersist vs finalize bundled unbundling 完成（680 + 681 + 682）。
+
 ## 2026-09-17（续 798）
 
 - 不变量 681；语料 C658；模式 name-the-commitpersist-notendofcall-bar；反模式 commitpersist-notendofcall-sold-as-bundled；L10.3 第 650 条。填 L4.4 / CometBFT 档案 Expected persist at end of this call not Signal persist application state / not Commit empty request bundled / not signal already settled 正式三事（481 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。481 commitpersist vs finalize bundled unbundling 续（681 item 2）。

@@ -1,3 +1,4 @@
+- [`commitpersist-nothistoricalblocks-sold-as-bundled.md`](commitpersist-nothistoricalblocks-sold-as-bundled.md) — Historical blocks required 被写成已经 retain_height 默认 0 全留 / 已经能剪就没有历史 / 已经切进共识就有完整历史（不变量 682）
 - [`commitpersist-notendofcall-sold-as-bundled.md`](commitpersist-notendofcall-sold-as-bundled.md) — Expected persist at end 被写成已经 Signal persist / 已经 Commit 不带参数 / 已经 signal 就已经交差（不变量 681）
 - [`commitpersist-notfinpersist-sold-as-bundled.md`](commitpersist-notfinpersist-sold-as-bundled.md) — Signal persist 被写成已经 Finalize 落了 / 已经引擎 persist 这三份 / 已经 expected persist at end（不变量 680）
 - [`commitretaincaution-notpersist-sold-as-bundled.md`](commitretaincaution-notpersist-sold-as-bundled.md) — Historical blocks required 被写成已经 with caution / 已经 all nodes remove / 已经 persist signal bundled（不变量 679）
