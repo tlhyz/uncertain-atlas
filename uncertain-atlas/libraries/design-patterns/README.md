@@ -1,3 +1,4 @@
+- [`name-the-infousage-notcommitpersist-bar.md`](name-the-infousage-notcommitpersist-bar.md) — Info Usage last_block persisted during Commit not Info 握手 bundled / not Commit persist signal / not Info response last_block fields 正式三事（497 余量）（不变量 665）
 - [`name-the-infousage-notpriorityzero-bar.md`](name-the-infousage-notpriorityzero-bar.md) — Info Usage priority 0 reserved not Info 车道 bundled / not CheckTx empty lane_id default lane / not CheckTx Priority consensus order 正式三事（498 余量）（不变量 664）
 - [`name-the-infousage-notintable-bar.md`](name-the-infousage-notintable-bar.md) — Info Usage default_lane in table not Info 车道 bundled / not empty iff / not CheckTx lane_id in range 正式三事（498 余量）（不变量 663）
 - [`name-the-listsnapusage-notsnaptype-bar.md`](name-the-listsnapusage-notsnaptype-bar.md) — ListSnapshots Usage See Snapshot data type for details not Snapshot 类型 bundled / not Offer 装完 / not ListSnapshots 本地清单就已经是同一份 正式三事（500 余量）（不变量 662）
