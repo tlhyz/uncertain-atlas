@@ -155,6 +155,9 @@
 - [`worked-example-finalize-det-vs-prepare.md`](worked-example-finalize-det-vs-prepare.md) — Finalize 算出的状态必须只依赖上一份状态和决定块 ≠ 已经可以像 Prepare 那样依赖其它值；Finalize 算出的结果必须只依赖上一份状态和决定块 ≠ 已经是 Code/Data 印进本头；两边状态机复制 ≠ 已经是 Process 对任意块同一裁决（不变量 342）
 - [`worked-example-pbts-height-vs-params.md`](worked-example-pbts-height-vs-params.md) — 写成 0 不是已经启用 PBTS ≠ 已经填了 Precision 就是 PBTS；H 之前仍用 BFT Time ≠ 已经切到 PBTS；启用之后不能关 ≠ 已经是扩展启用高度那种切换（不变量 343）
 - [`worked-example-maxbytes-overhead-vs-full.md`](worked-example-maxbytes-overhead-vs-full.md) — MaxBytes 减去头集合证据才是交易上限 ≠ 已经整块都能装交易；诚实验证者 MAY 出满 MaxBytes ≠ 已经只会出默认 21 MB；timeout 必须按满块投递延迟算 ≠ 已经填了 TimeoutPropose 就装得下这次 Prepare 执行（不变量 344）
+- [`worked-example-prepare-return-notengine-vs-bundled.md`](worked-example-prepare-return-notengine-vs-bundled.md) — Req2回包保证≠already engine trims/344 overhead/settled；≠345 bundled（不变量 880）
+- [`worked-example-prepare-return-notover-vs-bundled.md`](worked-example-prepare-return-notover-vs-bundled.md) — 聚合超限≠already return oversize/already trimmed/settled；≠345 bundled（不变量 879）
+- [`worked-example-prepare-return-notsubset-vs-bundled.md`](worked-example-prepare-return-notsubset-vs-bundled.md) — 整池可见≠already subset/no limit/settled；≠345 bundled（不变量 878）
 - [`worked-example-prepare-return-vs-pool.md`](worked-example-prepare-return-vs-pool.md) — 整池可见 ≠ 已经只能看见装得进一块的子集；聚合体积可以超过 max_tx_bytes ≠ 已经能回超限列表；Req 2 保证回的列表不让块超字节上限 ≠ 已经是引擎会帮你裁（不变量 345）
 - [`worked-example-abci20-upgrade-notgenesis-vs-bundled.md`](worked-example-abci20-upgrade-notgenesis-vs-bundled.md) — 按当前高度存/要≠already genesis/app decides/settled；≠346 bundled（不变量 877）
 - [`worked-example-abci20-upgrade-notcurrent-vs-bundled.md`](worked-example-abci20-upgrade-notcurrent-vs-bundled.md) — h_e高于当前≠already current height/height-H/settled；≠346 bundled（不变量 876）

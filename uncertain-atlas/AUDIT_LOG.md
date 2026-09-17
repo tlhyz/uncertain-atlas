@@ -1,3 +1,18 @@
+| A4160 | 记录 | 会与 345 / 344 / 33 / 878 / 879 糊成「看见写了回包上限就已经是引擎会帮你裁 interchangeable、就已经扣过头集合证据 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Req 2 保证回的列表不让块超字节上限 not already engine trims / not already 344 overhead / not already settled 正式三事（345 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。345 prepare-return vs pool bundled unbundling 完成（880 item 3） |
+| A4161 | 高 | 看见 Req 2 保证回的列表不让块超字节上限 会被写成已经是引擎会帮你裁 interchangeable | 官方 Req 2 item 3：not already engine trims |
+| A4162 | 高 | 看见回包绿了 会被写成已经扣过头集合证据 interchangeable | 官方 Req 2 item 3：not already 344 overhead |
+| A4163 | 高 | 看见写了回包上限 会被写成已经交差 interchangeable | 官方 Req 2 item 3：not already settled |
+| A4164 | 中 | 怎样裁回包会被抄进不确定 | 不抄。不写怎样裁回包。不另写 19 节 |
+| A4155 | 记录 | 会与 345 / 299 / 33 / 878 / 880 糊成「看见池子超了就已经能回超限列表 interchangeable、就已经按这个上限裁过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 聚合体积可以超过 max_tx_bytes not already can return oversize / not already pool already trimmed / not already settled 正式三事（345 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。345 prepare-return vs pool bundled unbundling 续（879 item 2） |
+| A4156 | 高 | 看见聚合体积可以超过 max_tx_bytes 会被写成已经能回超限列表 interchangeable | 官方 Req 2 item 2：not already can return oversize |
+| A4157 | 高 | 看见请求里带了上限 会被写成已经按这个上限裁过 interchangeable | 官方 Req 2 item 2：not already pool already trimmed |
+| A4158 | 高 | 看见能看见超限的池 会被写成已经交差 interchangeable | 官方 Req 2 item 2：not already settled |
+| A4159 | 中 | 怎样裁回包会被抄进不确定 | 不抄。不写怎样裁回包。不另写 19 节 |
+| A4150 | 记录 | 会与 345 / 299 / 337 / 879 / 880 糊成「看见整池都给了就已经只能看见子集 interchangeable、就已经没有上限 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 整池可见 not already only subset that fits / not already no limit / not already settled 正式三事（345 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。345 prepare-return vs pool bundled unbundling 启动（878 item 1） |
+| A4151 | 高 | 看见整池可见 会被写成已经只能看见装得进一块的子集 interchangeable / 299 interchangeable | 官方 Req 2 item 1：not already only subset that fits / not 299 |
+| A4152 | 高 | 看见能看见全部 会被写成已经没有上限 interchangeable | 官方 Req 2 item 1：not already no limit |
+| A4153 | 高 | 看见 MaxBytes 写成 -1 会被写成已经交差 interchangeable | 官方 Req 2 item 1：not already settled |
+| A4154 | 中 | 怎样裁回包会被抄进不确定 | 不抄。不写怎样裁回包。不另写 19 节 |
 | A4145 | 记录 | 会与 346 / 343 / 330 / 875 / 876 糊成「看见创世写了就已经按创世配好了 interchangeable、就已经是应用自己决定存什么 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 引擎按当前高度决定存什么要什么 not already genesis configured / not already app decides / not already settled 正式三事（346 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。346 abci20 vs height bundled unbundling 完成（877 item 3） |
 | A4146 | 高 | 看见引擎按当前高度决定存什么要什么 会被写成已经按创世配好了 interchangeable | 官方 ABCI 2.0 item 3：not already genesis configured |
 | A4147 | 高 | 看见应用配了参数 会被写成已经是应用自己决定存什么 interchangeable | 官方 ABCI 2.0 item 3：not already app decides |

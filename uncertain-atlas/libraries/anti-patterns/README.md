@@ -1,3 +1,6 @@
+- [`prepare-return-notengine-sold-as-bundled.md`](prepare-return-notengine-sold-as-bundled.md) — 回包保证 被写成已经是引擎会裁 / 已经扣过头集合证据 / 已经交差（不变量 880）
+- [`prepare-return-notover-sold-as-bundled.md`](prepare-return-notover-sold-as-bundled.md) — 聚合超限 被写成已经能回超限 / 已经裁过 / 已经交差（不变量 879）
+- [`prepare-return-notsubset-sold-as-bundled.md`](prepare-return-notsubset-sold-as-bundled.md) — 整池可见 被写成已经只能看见子集 / 已经没有上限 / 已经交差（不变量 878）
 - [`abci20-upgrade-notgenesis-sold-as-bundled.md`](abci20-upgrade-notgenesis-sold-as-bundled.md) — 按当前高度存/要 被写成已经按创世配好了 / 已经是应用自己决定 / 已经交差（不变量 877）
 - [`abci20-upgrade-notcurrent-sold-as-bundled.md`](abci20-upgrade-notcurrent-sold-as-bundled.md) — h_e 必须高于当前 被写成已经能写成当前 / 已经是到了 H / 已经交差（不变量 876）
 - [`abci20-upgrade-notfield-sold-as-bundled.md`](abci20-upgrade-notfield-sold-as-bundled.md) — 必须协调升级 被写成已经只改字段 / 已经单节点能切 / 已经交差（不变量 875）

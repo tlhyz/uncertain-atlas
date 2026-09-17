@@ -1,3 +1,6 @@
+- [`name-the-prepare-return-notengine-bar.md`](name-the-prepare-return-notengine-bar.md) — Req 2 保证回的列表不让块超字节上限 not already engine trims / not already 344 overhead / not already settled 正式三事（345 余量）（不变量 880）
+- [`name-the-prepare-return-notover-bar.md`](name-the-prepare-return-notover-bar.md) — 聚合体积可以超过 max_tx_bytes not already can return oversize / not already pool already trimmed / not already settled 正式三事（345 余量）（不变量 879）
+- [`name-the-prepare-return-notsubset-bar.md`](name-the-prepare-return-notsubset-bar.md) — 整池可见 not already only subset that fits / not already no limit / not already settled 正式三事（345 余量）（不变量 878）
 - [`name-the-abci20-upgrade-notgenesis-bar.md`](name-the-abci20-upgrade-notgenesis-bar.md) — 引擎按当前高度决定存什么要什么 not already genesis configured / not already app decides / not already settled 正式三事（346 余量）（不变量 877）
 - [`name-the-abci20-upgrade-notcurrent-bar.md`](name-the-abci20-upgrade-notcurrent-bar.md) — h_e 必须高于当前 not already current height / not already height-H Prepare / not already settled 正式三事（346 余量）（不变量 876）
 - [`name-the-abci20-upgrade-notfield-bar.md`](name-the-abci20-upgrade-notfield-bar.md) — 必须协调升级 not already only VoteExtensionsEnableHeight / not already single-node / not already settled 正式三事（346 余量）（不变量 875）

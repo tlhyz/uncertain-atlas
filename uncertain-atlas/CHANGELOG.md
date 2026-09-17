@@ -1,3 +1,15 @@
+## 2026-09-17（续 997）
+
+- 不变量 880；语料 C858；模式 name-the-prepare-return-notengine-bar；反模式 prepare-return-notengine-sold-as-bundled；L10.3 第 849 条。填 L4.4 / CometBFT 档案 Req 2 保证回的列表不让块超字节上限 not already engine trims / not already 344 overhead / not already settled 正式三事（345 余量）。345 prepare-return vs pool bundled unbundling 完成（880 item 3）。
+
+## 2026-09-17（续 996）
+
+- 不变量 879；语料 C857；模式 name-the-prepare-return-notover-bar；反模式 prepare-return-notover-sold-as-bundled；L10.3 第 848 条。填 L4.4 / CometBFT 档案 聚合体积可以超过 max_tx_bytes not already can return oversize / not already pool already trimmed / not already settled 正式三事（345 余量）。345 prepare-return vs pool bundled unbundling 续（879 item 2）。
+
+## 2026-09-17（续 995）
+
+- 不变量 878；语料 C856；模式 name-the-prepare-return-notsubset-bar；反模式 prepare-return-notsubset-sold-as-bundled；L10.3 第 847 条。填 L4.4 / CometBFT 档案 整池可见 not already only subset that fits / not already no limit / not already settled 正式三事（345 余量）。345 prepare-return vs pool bundled unbundling 启动（878 item 1）。
+
 ## 2026-09-17（续 994）
 
 - 不变量 877；语料 C855；模式 name-the-abci20-upgrade-notgenesis-bar；反模式 abci20-upgrade-notgenesis-sold-as-bundled；L10.3 第 846 条。填 L4.4 / CometBFT 档案 引擎按当前高度决定存什么要什么 not already genesis configured / not already app decides / not already settled 正式三事（346 余量）。346 abci20 vs height bundled unbundling 完成（877 item 3）。
