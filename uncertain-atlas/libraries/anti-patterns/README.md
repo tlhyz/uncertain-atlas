@@ -1,3 +1,4 @@
+- [`finpersist-notrememberheight-sold-as-bundled.md`](finpersist-notrememberheight-sold-as-bundled.md) — remember last Commit height 被写成已经能比引擎高 / 已经能跳步 / 已经 Info 对上（不变量 685）
 - [`finpersist-notmustincommit-sold-as-bundled.md`](finpersist-notmustincommit-sold-as-bundled.md) — MUST persist in Commit 被写成已经在 Finalize 落了 / 已经解锁 / 已经 Commit 绿了（不变量 684）
 - [`finpersist-notmustnot-sold-as-bundled.md`](finpersist-notmustnot-sold-as-bundled.md) — MUST NOT persist in Finalize 被写成已经落盘 / 已经交差 / 已经崩溃恢复已经 Commit（不变量 683）
 - [`commitpersist-nothistoricalblocks-sold-as-bundled.md`](commitpersist-nothistoricalblocks-sold-as-bundled.md) — Historical blocks required 被写成已经 retain_height 默认 0 全留 / 已经能剪就没有历史 / 已经切进共识就有完整历史（不变量 682）

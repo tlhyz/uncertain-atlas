@@ -1,3 +1,7 @@
+## 2026-09-17（续 802）
+
+- 不变量 685；语料 C662；模式 name-the-finpersist-notrememberheight-bar；反模式 finpersist-notrememberheight-sold-as-bundled；L10.3 第 654 条。填 L4.4 / CometBFT 档案 remember last Commit height not already app taller than engine / not already can skip replay / not Info handshake aligned 正式三事（335 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。335 finpersist vs commit bundled unbundling 完成（683 + 684 + 685）。
+
 ## 2026-09-17（续 801）
 
 - 不变量 684；语料 C661；模式 name-the-finpersist-notmustincommit-bar；反模式 finpersist-notmustincommit-sold-as-bundled；L10.3 第 653 条。填 L4.4 / CometBFT 档案 MUST persist in Commit not already persisted in Finalize / not already unlocked / not Commit green can wait for broadcast 正式三事（335 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。335 finpersist vs commit bundled unbundling 续（684 item 2）。
