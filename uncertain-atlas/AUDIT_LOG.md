@@ -1,3 +1,18 @@
+| A3560 | 记录 | 会与 414 / 316 / 758 / 759 糊成「看见记了日志就已经印进本头 interchangeable、就已经是共识 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult.log / info 非确定 not already printed in header / not already consensus / not already settled 正式三事（414 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。414 exectxlog vs querylog bundled unbundling 完成（760 item 3） |
+| A3561 | 高 | 看见 ExecTxResult.log / info 非确定 会被写成已经印进本头 interchangeable / 316 interchangeable | 官方 ExecTxResult 日志栏 item 3：not already printed in header / not 316 |
+| A3562 | 高 | 看见记了日志 会被写成已经是共识 interchangeable / 316 interchangeable | 官方 ExecTxResult 日志栏 item 3：not already consensus / not 316 |
+| A3563 | 高 | 看见被忽略 会被写成已经交差 interchangeable | 官方 ExecTxResult 日志栏 item 3：not already settled |
+| A3564 | 中 | 怎样写 ExecTxResult 日志栏 会被抄进不确定 | 不抄。不写怎样写 ExecTxResult 日志栏。不另写 19 节 |
+| A3555 | 记录 | 会与 414 / 391 / 754 / 384 / 758 / 760 糊成「看见回了信息就已经是 CheckTx 附加信息 interchangeable、就已经是 Query 附加信息 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult.info not already CheckTx info / not already Query info / not already settled 正式三事（414 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。414 exectxlog vs querylog bundled unbundling 续（759 item 2） |
+| A3556 | 高 | 看见 ExecTxResult.info 会被写成已经是 CheckTx 附加信息 interchangeable / 391 interchangeable | 官方 ExecTxResult 日志栏 item 2：not already CheckTx info / not 391 |
+| A3557 | 高 | 看见回了信息 会被写成已经是 Query 附加信息 interchangeable / 384 interchangeable | 官方 ExecTxResult 日志栏 item 2：not already Query info / not 384 |
+| A3558 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 ExecTxResult 日志栏 item 2：not already settled |
+| A3559 | 中 | 怎样写 ExecTxResult 日志栏 会被抄进不确定 | 不抄。不写怎样写 ExecTxResult 日志栏。不另写 19 节 |
+| A3550 | 记录 | 会与 414 / 384 / 390 / 745 / 759 / 760 糊成「看见回了日志就已经是 Query 日志 interchangeable、就已经新鲜 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExecTxResult.log not already Query log / not already fresh / not already settled 正式三事（414 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。414 exectxlog vs querylog bundled unbundling 启动（758 item 1） |
+| A3551 | 高 | 看见 ExecTxResult.log 会被写成已经是 Query 日志 interchangeable / 384 interchangeable | 官方 ExecTxResult 日志栏 item 1：not already Query log / not 384 |
+| A3552 | 高 | 看见回了日志 会被写成已经新鲜 interchangeable / 384 / 390 interchangeable | 官方 ExecTxResult 日志栏 item 1：not already fresh / not 384 / not 390 |
+| A3553 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 ExecTxResult 日志栏 item 1：not already settled |
+| A3554 | 中 | 怎样写 ExecTxResult 日志栏 会被抄进不确定 | 不抄。不写怎样写 ExecTxResult 日志栏。不另写 19 节 |
 | A3545 | 记录 | 会与 392 / 365 / 394 / 749 / 755 / 756 糊成「看见填了 CommitInfo.round 就已经按投票权排过 interchangeable、就已经罚没 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CommitInfo.round not already ranked / not already slashed / not already settled 正式三事（392 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。392 initapphash vs header bundled unbundling 完成（757 item 3） |
 | A3546 | 高 | 看见 CommitInfo.round 会被写成已经按投票权排过 interchangeable / 365 interchangeable | 官方 InitChain 回包余栏 item 3：not already ranked / not 365 |
 | A3547 | 高 | 看见填了 round 会被写成已经罚没 interchangeable | 官方 InitChain 回包余栏 item 3：not already slashed |

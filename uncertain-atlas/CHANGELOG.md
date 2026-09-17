@@ -1,3 +1,15 @@
+## 2026-09-17（续 877）
+
+- 不变量 760；语料 C738；模式 name-the-exectxlog-notheader-bar；反模式 exectxlog-notheader-sold-as-bundled；L10.3 第 729 条。填 L4.4 / CometBFT 档案 ExecTxResult.log / info 非确定 not already printed in header / not already consensus / not already settled 正式三事（414 余量）。414 exectxlog vs querylog bundled unbundling 完成（760 item 3）。
+
+## 2026-09-17（续 876）
+
+- 不变量 759；语料 C737；模式 name-the-exectxlog-notchecktxinfo-bar；反模式 exectxlog-notchecktxinfo-sold-as-bundled；L10.3 第 728 条。填 L4.4 / CometBFT 档案 ExecTxResult.info not already CheckTx info / not already Query info / not already settled 正式三事（414 余量）。414 exectxlog vs querylog bundled unbundling 续（759 item 2）。
+
+## 2026-09-17（续 875）
+
+- 不变量 758；语料 C736；模式 name-the-exectxlog-notquerylog-bar；反模式 exectxlog-notquerylog-sold-as-bundled；L10.3 第 727 条。填 L4.4 / CometBFT 档案 ExecTxResult.log not already Query log / not already fresh / not already settled 正式三事（414 余量）。414 exectxlog vs querylog bundled unbundling 启动（758 item 1）。
+
 ## 2026-09-17（续 874）
 
 - 不变量 757；语料 C735；模式 name-the-initapphash-notranked-bar；反模式 initapphash-notranked-sold-as-bundled；L10.3 第 726 条。填 L4.4 / CometBFT 档案 CommitInfo.round not already ranked / not already slashed / not already settled 正式三事（392 余量）。392 initapphash vs header bundled unbundling 完成（757 item 3）。

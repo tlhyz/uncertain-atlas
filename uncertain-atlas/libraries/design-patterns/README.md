@@ -1,3 +1,6 @@
+- [`name-the-exectxlog-notheader-bar.md`](name-the-exectxlog-notheader-bar.md) — ExecTxResult.log / info 非确定 not already printed in header / not already consensus / not already settled 正式三事（414 余量）（不变量 760）
+- [`name-the-exectxlog-notchecktxinfo-bar.md`](name-the-exectxlog-notchecktxinfo-bar.md) — ExecTxResult.info not already CheckTx info / not already Query info / not already settled 正式三事（414 余量）（不变量 759）
+- [`name-the-exectxlog-notquerylog-bar.md`](name-the-exectxlog-notquerylog-bar.md) — ExecTxResult.log not already Query log / not already fresh / not already settled 正式三事（414 余量）（不变量 758）
 - [`name-the-initapphash-notranked-bar.md`](name-the-initapphash-notranked-bar.md) — CommitInfo.round not already ranked / not already slashed / not already settled 正式三事（392 余量）（不变量 757）
 - [`name-the-initapphash-notknownhash-bar.md`](name-the-initapphash-notknownhash-bar.md) — Finalize 请求 hash not already known header hash / not already Process / not already settled 正式三事（392 余量）（不变量 756）
 - [`name-the-initapphash-notheader-bar.md`](name-the-initapphash-notheader-bar.md) — InitChain 回包 app_hash not already header AppHash / not already no set / not already settled 正式三事（392 余量）（不变量 755）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExecTxResult 日志栏就已经是 Query 日志、已经是 CheckTx 附加信息、已经印进本头」，必须分开 ExecTxResult.log 是应用日志的输出是不是已经是 Query 日志、ExecTxResult.info 是附加信息是不是已经是 CheckTx 附加信息、ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略是不是已经印进本头。可以跳过「看见填了 ExecTxResult 日志栏就已经是 Query 日志」。不要另写怎样写 ExecTxResult 日志栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExecTxResult 日志栏就已经是 Query 日志、已经是 CheckTx 附加信息、已经印进本头」，必须分开 ExecTxResult.log 是应用日志的输出是不是已经是 Query 日志、ExecTxResult.info 是附加信息是不是已经是 CheckTx 附加信息、ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略是不是已经印进本头。可以跳过「看见填了 ExecTxResult 日志栏就已经是 Query 日志」。不要另写怎样写 ExecTxResult 日志栏。414 exectxlog vs querylog bundled unbundling 完成（758 item 1 / 759 item 2 / 760 item 3）；精读 [`worked-example-exectxlog-notquerylog-vs-bundled.md`](worked-example-exectxlog-notquerylog-vs-bundled.md)（不变量 758 item 1）。
 
 ## 本页不抄
 
