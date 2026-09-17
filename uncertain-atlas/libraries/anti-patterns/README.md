@@ -1,3 +1,6 @@
+- [`info-notpersist-sold-as-bundled.md`](info-notpersist-sold-as-bundled.md) — last_block 落盘 被写成已经交差 / 已经是崩溃三步已经 Commit / 已经在剪（不变量 817）
+- [`info-notapphash-sold-as-bundled.md`](info-notapphash-sold-as-bundled.md) — app_version 进头 被写成已经印进本头 AppHash / 已经是本高度交差 / 已经选型（不变量 816）
+- [`info-notreplay-sold-as-bundled.md`](info-notreplay-sold-as-bundled.md) — 握手对齐 被写成已经是快照重放 / 已经是 QueryState / 已经交差（不变量 815）
 - [`queryheight-notapphash-sold-as-bundled.md`](queryheight-notapphash-sold-as-bundled.md) — height 含根 被写成已经印进本头 AppHash / 已经对上 Proof / 已经是本高度交差（不变量 814）
 - [`queryheight-notfresh-sold-as-bundled.md`](queryheight-notfresh-sold-as-bundled.md) — 默认 0 被写成已经新鲜 / 已经跟上尖 / 已经是 Info 握手（不变量 813）
 - [`queryheight-notstate-sold-as-bundled.md`](queryheight-notstate-sold-as-bundled.md) — 能查 被写成已经是 QueryState / 已经复制 / 已经交差（不变量 812）

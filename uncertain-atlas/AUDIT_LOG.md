@@ -1,3 +1,18 @@
+| A3845 | 记录 | 会与 370 / 320 / 481 / 701 / 497 / 665 / 815 / 816 糊成「看见回了这两列就已经交差 interchangeable、就已经是崩溃三步已经 Commit interchangeable、就已经在剪 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 last_block 落盘 not already settled / not already crash-three-step Commit / not already pruning 正式三事（370 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。370 info vs handshake bundled unbundling 完成（817 item 3） |
+| A3846 | 高 | 看见 last_block 落盘 会被写成已经交差 interchangeable | 官方 Info 握手 item 3：not already settled |
+| A3847 | 高 | 看见要在 Commit 里落 会被写成已经是崩溃三步已经 Commit interchangeable / 320 interchangeable | 官方 Info 握手 item 3：not already crash-three-step Commit / not 320 |
+| A3848 | 高 | 看见有高度 会被写成已经在剪 interchangeable | 官方 Info 握手 item 3：not already pruning |
+| A3849 | 中 | 怎样写 Info 握手 会被抄进不确定 | 不抄。不写怎样写 Info 握手。不另写 19 节 |
+| A3840 | 记录 | 会与 370 / 147 / 379 / 791 / 389 / 762 / 815 / 817 糊成「看见有版本就已经印进本头 AppHash interchangeable、就已经是本高度交差 interchangeable、就已经选型 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 app_version 进头 not already header AppHash / not already this-height settled / not already selected 正式三事（370 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。370 info vs handshake bundled unbundling 续（816 item 2） |
+| A3841 | 高 | 看见 app_version 进头 会被写成已经印进本头 AppHash interchangeable / 147 interchangeable | 官方 Info 握手 item 2：not already header AppHash / not 147 |
+| A3842 | 高 | 看见进了头 会被写成已经是本高度交差 interchangeable | 官方 Info 握手 item 2：not already this-height settled |
+| A3843 | 高 | 看见字段在 会被写成已经选型 interchangeable | 官方 Info 握手 item 2：not already selected |
+| A3844 | 中 | 怎样写 Info 握手 会被抄进不确定 | 不抄。不写怎样写 Info 握手。不另写 19 节 |
+| A3835 | 记录 | 会与 370 / 314 / 494 / 669 / 389 / 761 / 816 / 817 糊成「看见能回 Info 就已经是快照重放 interchangeable、就已经是 QueryState interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info 握手 not already snapshot replay / not already QueryState / not already settled 正式三事（370 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。370 info vs handshake bundled unbundling 启动（815 item 1） |
+| A3836 | 高 | 看见 Info 握手对齐 会被写成已经是快照重放 interchangeable / 314 interchangeable | 官方 Info 握手 item 1：not already snapshot replay / not 314 |
+| A3837 | 高 | 看见握手了 会被写成已经是 QueryState interchangeable / 494 interchangeable | 官方 Info 握手 item 1：not already QueryState / not 494 |
+| A3838 | 高 | 看见对齐了 会被写成已经交差 interchangeable | 官方 Info 握手 item 1：not already settled |
+| A3839 | 中 | 怎样写 Info 握手 会被抄进不确定 | 不抄。不写怎样写 Info 握手。不另写 19 节 |
 | A3830 | 记录 | 会与 371 / 325 / 383 / 781 / 380 / 790 / 812 / 813 糊成「看见填了高度就已经印进本头 AppHash interchangeable、就已经对上 Proof interchangeable、就已经是本高度交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 height 含根 not already header AppHash / not already proof matched / not already this-height settled 正式三事（371 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。371 queryheight vs committed bundled unbundling 完成（814 item 3） |
 | A3831 | 高 | 看见 height 含根 会被写成已经印进本头 AppHash interchangeable / 325 interchangeable | 官方 Query 高度 item 3：not already header AppHash / not 325 |
 | A3832 | 高 | 看见有根 会被写成已经对上 Proof interchangeable / 383 interchangeable | 官方 Query 高度 item 3：not already proof matched / not 383 |

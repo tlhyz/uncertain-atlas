@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能回 Info 就已经是快照重放、已经印进本头 AppHash、已经交差」，必须分开 Info 用来握手对齐是不是已经是快照重放、app_version 进每块头是不是已经印进本头 AppHash、last_block_app_hash / last_block_height 要在 Commit 里落盘是不是已经交差。可以跳过「看见能回 Info 就已经是快照重放」。不要另写怎样写 Info 握手。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能回 Info 就已经是快照重放、已经印进本头 AppHash、已经交差」，必须分开 Info 用来握手对齐是不是已经是快照重放、app_version 进每块头是不是已经印进本头 AppHash、last_block_app_hash / last_block_height 要在 Commit 里落盘是不是已经交差。可以跳过「看见能回 Info 就已经是快照重放」。不要另写怎样写 Info 握手。370 info vs handshake bundled unbundling 完成（815 item 1 / 816 item 2 / 817 item 3）；精读 [`worked-example-info-notreplay-vs-bundled.md`](worked-example-info-notreplay-vs-bundled.md)（不变量 815 item 1）。
 
 ## 本页不抄
 

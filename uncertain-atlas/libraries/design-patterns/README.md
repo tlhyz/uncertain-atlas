@@ -1,3 +1,6 @@
+- [`name-the-info-notpersist-bar.md`](name-the-info-notpersist-bar.md) — last_block 落盘 not already settled / not already crash-three-step Commit / not already pruning 正式三事（370 余量）（不变量 817）
+- [`name-the-info-notapphash-bar.md`](name-the-info-notapphash-bar.md) — app_version 进头 not already header AppHash / not already this-height settled / not already selected 正式三事（370 余量）（不变量 816）
+- [`name-the-info-notreplay-bar.md`](name-the-info-notreplay-bar.md) — Info 握手 not already snapshot replay / not already QueryState / not already settled 正式三事（370 余量）（不变量 815）
 - [`name-the-queryheight-notapphash-bar.md`](name-the-queryheight-notapphash-bar.md) — height 含根 not already header AppHash / not already proof matched / not already this-height settled 正式三事（371 余量）（不变量 814）
 - [`name-the-queryheight-notfresh-bar.md`](name-the-queryheight-notfresh-bar.md) — height 默认 0 not already fresh / not already tip / not already handshake 正式三事（371 余量）（不变量 813）
 - [`name-the-queryheight-notstate-bar.md`](name-the-queryheight-notstate-bar.md) — Query 高度 not already QueryState / not already replicated / not already settled 正式三事（371 余量）（不变量 812）

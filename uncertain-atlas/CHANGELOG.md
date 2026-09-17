@@ -1,3 +1,15 @@
+## 2026-09-17（续 934）
+
+- 不变量 817；语料 C795；模式 name-the-info-notpersist-bar；反模式 info-notpersist-sold-as-bundled；L10.3 第 786 条。填 L4.4 / CometBFT 档案 last_block 落盘 not already settled / not already crash-three-step Commit / not already pruning 正式三事（370 余量）。370 info vs handshake bundled unbundling 完成（817 item 3）。
+
+## 2026-09-17（续 933）
+
+- 不变量 816；语料 C794；模式 name-the-info-notapphash-bar；反模式 info-notapphash-sold-as-bundled；L10.3 第 785 条。填 L4.4 / CometBFT 档案 app_version 进头 not already header AppHash / not already this-height settled / not already selected 正式三事（370 余量）。370 info vs handshake bundled unbundling 续（816 item 2）。
+
+## 2026-09-17（续 932）
+
+- 不变量 815；语料 C793；模式 name-the-info-notreplay-bar；反模式 info-notreplay-sold-as-bundled；L10.3 第 784 条。填 L4.4 / CometBFT 档案 Info 握手 not already snapshot replay / not already QueryState / not already settled 正式三事（370 余量）。370 info vs handshake bundled unbundling 启动（815 item 1）。
+
 ## 2026-09-17（续 931）
 
 - 不变量 814；语料 C792；模式 name-the-queryheight-notapphash-bar；反模式 queryheight-notapphash-sold-as-bundled；L10.3 第 783 条。填 L4.4 / CometBFT 档案 height 含根 not already header AppHash / not already proof matched / not already this-height settled 正式三事（371 余量）。371 queryheight vs committed bundled unbundling 完成（814 item 3）。
