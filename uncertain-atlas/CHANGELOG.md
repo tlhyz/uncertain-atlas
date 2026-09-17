@@ -1,3 +1,15 @@
+## 2026-09-17（续 1012）
+
+- 不变量 895；语料 C873；模式 name-the-process-det-notfix-bar；反模式 process-det-notfix-sold-as-bundled；L10.3 第 864 条。填 L4.4 / CometBFT 档案 Process 非确定 bug 没有现成解法 not already lost safety / not already engine patch / not already settled 正式三事（340 余量）。340 process-det vs prepare bundled unbundling 完成（895 item 3）。
+
+## 2026-09-17（续 1011）
+
+- 不变量 894；语料 C872；模式 name-the-process-det-nothonest-bar；反模式 process-det-nothonest-sold-as-bundled；L10.3 第 863 条。填 L4.4 / CometBFT 档案 两边对任意块同一裁决 not already only honest same verdict / not already Req 3 honest Accept / not already settled 正式三事（340 余量）。340 process-det vs prepare bundled unbundling 续（894 item 2）。
+
+## 2026-09-17（续 1010）
+
+- 不变量 893；语料 C871；模式 name-the-process-det-notprep-bar；反模式 process-det-notprep-sold-as-bundled；L10.3 第 862 条。填 L4.4 / CometBFT 档案 Process 必须只依赖请求和上一份状态 not already Prepare-style other values / not already same ruler as Prepare / not already settled 正式三事（340 余量）。340 process-det vs prepare bundled unbundling 启动（893 item 1）。
+
 ## 2026-09-17（续 1009）
 
 - 不变量 892；语料 C870；模式 name-the-verify-det-notsafety-bar；反模式 verify-det-notsafety-sold-as-bundled；L10.3 第 861 条。填 L4.4 / CometBFT 档案 Verify 非确定会伤活性 not already lost safety / not already engine patch / not already settled 正式三事（341 余量）。341 verify-det vs extend bundled unbundling 完成（892 item 3）。

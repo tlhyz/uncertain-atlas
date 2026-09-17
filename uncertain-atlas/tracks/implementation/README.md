@@ -150,6 +150,9 @@
 - [`worked-example-maxbytes-cap-vs-unlimited.md`](worked-example-maxbytes-cap-vs-unlimited.md) — -1 就按 100 MB 验 ≠ 已经没有上限；应用自己卡体积 ≠ 已经引擎不管了；必须 -1 或不超过 100 MB ≠ 已经是默认 21 MB（不变量 337）
 - [`worked-example-prepare-nondet-vs-process.md`](worked-example-prepare-nondet-vs-process.md) — Prepare 没有确定性要求 ≠ 已经必须确定；两边 raw 一样 ≠ 已经是同一份提案；ExtendVote 没有确定性要求 ≠ 已经是同一份扩展（不变量 338）
 - [`worked-example-checktx-weak-vs-process.md`](worked-example-checktx-weak-vs-process.md) — 不该验排序相关有效性 ≠ 已经该在 CheckTx 里验；拜占庭能提案一满块无效交易 ≠ 已经被池子挡住；ProcessProposal 对付这种行为 ≠ 已经是 CheckTx（不变量 339）
+- [`worked-example-process-det-notfix-vs-bundled.md`](worked-example-process-det-notfix-vs-bundled.md) — Process非确定无解≠already lost safety/engine patch/settled；≠340 bundled（不变量 895）
+- [`worked-example-process-det-nothonest-vs-bundled.md`](worked-example-process-det-nothonest-vs-bundled.md) — 任意块同判≠already honest-only/Req3 Accept/settled；≠340 bundled（不变量 894）
+- [`worked-example-process-det-notprep-vs-bundled.md`](worked-example-process-det-notprep-vs-bundled.md) — Process必须确定≠already Prepare-style/same ruler/settled；≠340 bundled（不变量 893）
 - [`worked-example-process-det-vs-prepare.md`](worked-example-process-det-vs-prepare.md) — Process 必须只依赖请求和上一份状态 ≠ 已经可以像 Prepare 那样依赖其它值；两边对任意块同一裁决 ≠ 已经只对诚实提案同一裁决；Process 非确定 bug 没有现成解法 ≠ 已经丢了安全性（不变量 340）
 - [`worked-example-verify-det-notsafety-vs-bundled.md`](worked-example-verify-det-notsafety-vs-bundled.md) — Verify非确定伤活性≠already lost safety/engine patch/settled；≠341 bundled（不变量 892）
 - [`worked-example-verify-det-nothonest-vs-bundled.md`](worked-example-verify-det-nothonest-vs-bundled.md) — 任意扩展同判≠already honest-only/Req6 Accept/settled；≠341 bundled（不变量 891）

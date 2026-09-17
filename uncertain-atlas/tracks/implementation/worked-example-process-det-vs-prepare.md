@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 Prepare 那样、已经只对诚实提案、已经丢了安全性」，必须分开 Process 必须只依赖请求和上一份状态是不是已经可以像 Prepare 那样依赖其它值、两边对任意块同一裁决是不是已经只对诚实提案同一裁决、Process 非确定 bug 没有现成解法是不是已经丢了安全性。可以跳过「看见必须确定就已经可以像 Prepare 那样」。不要把 SHOULD Accept 当不确定已经拒坏块。不要另写怎样写 ProcessProposal。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 Prepare 那样、已经只对诚实提案、已经丢了安全性」，必须分开 Process 必须只依赖请求和上一份状态是不是已经可以像 Prepare 那样依赖其它值、两边对任意块同一裁决是不是已经只对诚实提案同一裁决、Process 非确定 bug 没有现成解法是不是已经丢了安全性。可以跳过「看见必须确定就已经可以像 Prepare 那样」。不要把 SHOULD Accept 当不确定已经拒坏块。不要另写怎样写 ProcessProposal。340 process-det vs prepare bundled unbundling 完成（893 item 1 / 894 item 2 / 895 item 3）；精读 [`worked-example-process-det-notprep-vs-bundled.md`](worked-example-process-det-notprep-vs-bundled.md)（不变量 893 item 1）。
 
 ## 本页不抄
 

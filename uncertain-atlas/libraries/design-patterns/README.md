@@ -1,3 +1,6 @@
+- [`name-the-process-det-notfix-bar.md`](name-the-process-det-notfix-bar.md) — Process 非确定 bug 没有现成解法 not already lost safety / not already engine patch / not already settled 正式三事（340 余量）（不变量 895）
+- [`name-the-process-det-nothonest-bar.md`](name-the-process-det-nothonest-bar.md) — 两边对任意块同一裁决 not already only honest same verdict / not already Req 3 honest Accept / not already settled 正式三事（340 余量）（不变量 894）
+- [`name-the-process-det-notprep-bar.md`](name-the-process-det-notprep-bar.md) — Process 必须只依赖请求和上一份状态 not already Prepare-style other values / not already same ruler as Prepare / not already settled 正式三事（340 余量）（不变量 893）
 - [`name-the-verify-det-notsafety-bar.md`](name-the-verify-det-notsafety-bar.md) — Verify 非确定会伤活性 not already lost safety / not already engine patch / not already settled 正式三事（341 余量）（不变量 892）
 - [`name-the-verify-det-nothonest-bar.md`](name-the-verify-det-nothonest-bar.md) — 两边对任意扩展同一裁决 not already only honest same verdict / not already Req 6 honest Accept / not already settled 正式三事（341 余量）（不变量 891）
 - [`name-the-verify-det-notext-bar.md`](name-the-verify-det-notext-bar.md) — Verify 必须只依赖扩展、这块和上一份状态 not already ExtendVote-style other values / not already same ruler as ExtendVote / not already settled 正式三事（341 余量）（不变量 890）

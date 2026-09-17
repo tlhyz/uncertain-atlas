@@ -1,3 +1,18 @@
+| A4235 | 记录 | 会与 340 / 327 / 341 / 893 / 894 糊成「看见活性不能保证就已经丢了安全性 interchangeable、就已经有协议层补丁 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 非确定 bug 没有现成解法 not already lost safety / not already engine patch / not already settled 正式三事（340 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。340 process-det vs prepare bundled unbundling 完成（895 item 3） |
+| A4236 | 高 | 看见 Process 非确定 bug 没有现成解法 会被写成已经丢了安全性 interchangeable | 官方 Req 4–5 item 3：not already lost safety |
+| A4237 | 高 | 看见没有现成解法 会被写成已经有协议层补丁 interchangeable | 官方 Req 4–5 item 3：not already engine patch |
+| A4238 | 高 | 看见 SHOULD Accept 会被写成已经交差 interchangeable | 官方 Req 4–5 item 3：not already settled |
+| A4239 | 中 | 怎样写 ProcessProposal 会被抄进不确定 | 不抄。不写怎样写 ProcessProposal。不另写 19 节 |
+| A4230 | 记录 | 会与 340 / 33 / 347 / 893 / 895 糊成「看见两边同判就已经只对诚实提案 interchangeable、就已经是 Req 3 诚实对诚实 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 两边对任意块同一裁决 not already only honest same verdict / not already Req 3 honest Accept / not already settled 正式三事（340 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。340 process-det vs prepare bundled unbundling 续（894 item 2） |
+| A4231 | 高 | 看见两边对任意块同一裁决 会被写成已经只对诚实提案同一裁决 interchangeable | 官方 Req 4–5 item 2：not already only honest same verdict |
+| A4232 | 高 | 看见任意块 会被写成已经是 Req 3 诚实对诚实 interchangeable | 官方 Req 4–5 item 2：not already Req 3 honest Accept |
+| A4233 | 高 | 看见两边同判 会被写成已经交差 interchangeable | 官方 Req 4–5 item 2：not already settled |
+| A4234 | 中 | 怎样写 ProcessProposal 会被抄进不确定 | 不抄。不写怎样写 ProcessProposal。不另写 19 节 |
+| A4225 | 记录 | 会与 340 / 338 / 33 / 894 / 895 糊成「看见必须确定就已经可以像 Prepare 那样 interchangeable、就已经和 Prepare 同一把尺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process 必须只依赖请求和上一份状态 not already Prepare-style other values / not already same ruler as Prepare / not already settled 正式三事（340 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。340 process-det vs prepare bundled unbundling 启动（893 item 1） |
+| A4226 | 高 | 看见 Process 必须只依赖请求和上一份状态 会被写成已经可以像 Prepare 那样依赖其它值 interchangeable / 338 interchangeable | 官方 Req 4–5 item 1：not already Prepare-style other values / not 338 |
+| A4227 | 高 | 看见只依赖请求和上一份状态 会被写成已经和 Prepare 同一把尺 interchangeable | 官方 Req 4–5 item 1：not already same ruler as Prepare |
+| A4228 | 高 | 看见 Process 回了 会被写成已经交差 interchangeable | 官方 Req 4–5 item 1：not already settled |
+| A4229 | 中 | 怎样写 ProcessProposal 会被抄进不确定 | 不抄。不写怎样写 ProcessProposal。不另写 19 节 |
 | A4220 | 记录 | 会与 341 / 340 / 348 / 890 / 891 糊成「看见活性会被伤就已经丢了安全性 interchangeable、就已经有协议层补丁 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 非确定会伤活性 not already lost safety / not already engine patch / not already settled 正式三事（341 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。341 verify-det vs extend bundled unbundling 完成（892 item 3） |
 | A4221 | 高 | 看见 Verify 非确定会伤活性 会被写成已经丢了安全性 interchangeable | 官方 Req 7–8 item 3：not already lost safety |
 | A4222 | 高 | 看见要小心两边 会被写成已经有协议层补丁 interchangeable | 官方 Req 7–8 item 3：not already engine patch |

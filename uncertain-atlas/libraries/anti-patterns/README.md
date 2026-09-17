@@ -1,3 +1,6 @@
+- [`process-det-notfix-sold-as-bundled.md`](process-det-notfix-sold-as-bundled.md) — Process 非确定无解 被写成已经丢了安全性 / 已经有补丁 / 已经交差（不变量 895）
+- [`process-det-nothonest-sold-as-bundled.md`](process-det-nothonest-sold-as-bundled.md) — 任意块同判 被写成已经只对诚实提案 / 已经是 Req 3 / 已经交差（不变量 894）
+- [`process-det-notprep-sold-as-bundled.md`](process-det-notprep-sold-as-bundled.md) — Process 必须确定 被写成已经可以像 Prepare 那样 / 已经同一把尺 / 已经交差（不变量 893）
 - [`verify-det-notsafety-sold-as-bundled.md`](verify-det-notsafety-sold-as-bundled.md) — Verify 非确定伤活性 被写成已经丢了安全性 / 已经有补丁 / 已经交差（不变量 892）
 - [`verify-det-nothonest-sold-as-bundled.md`](verify-det-nothonest-sold-as-bundled.md) — 任意扩展同判 被写成已经只对诚实扩展 / 已经是 Req 6 / 已经交差（不变量 891）
 - [`verify-det-notext-sold-as-bundled.md`](verify-det-notext-sold-as-bundled.md) — Verify 必须确定 被写成已经可以像 ExtendVote 那样 / 已经同一把尺 / 已经交差（不变量 890）
