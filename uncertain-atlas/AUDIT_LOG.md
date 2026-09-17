@@ -1,3 +1,18 @@
+| A4475 | 记录 | 会与 328 / 313 / 33 / 941 / 942 糊成「看见本地稳住就已经是全局同一高度 interchangeable、就已经各节点同一份 b interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 本地不再振荡 not already global same height / not already same b / not already settled 正式三事（328 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。328 checktx-oscillate vs stable bundled unbundling 完成（943 item 3） |
+| A4476 | 高 | 看见本地 h_p,stable 会被写成已经是全局同一高度 interchangeable | 官方 Requirement 13 item 3：not already global same height |
+| A4477 | 高 | 看见本地不再振荡 会被写成已经各节点同一份 b interchangeable | 官方 Requirement 13 item 3：not already same b |
+| A4478 | 高 | 看见本节点稳住了 会被写成已经交差 interchangeable | 官方 Requirement 13 item 3：not already settled |
+| A4479 | 中 | 怎样实现 CheckTx 会被抄进不确定 | 不抄。不写怎样实现 CheckTx 或怎样挑稳定高度。不另写 19 节 |
+| A4470 | 记录 | 会与 328 / 301 / 33 / 941 / 943 糊成「看见还在振荡就已经过了 h_stable interchangeable、就已经离池 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 还在振荡 not already past h_stable / not already left the pool / not already settled 正式三事（328 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。328 checktx-oscillate vs stable bundled unbundling 续（942 item 2） |
+| A4471 | 高 | 看见还在振荡 会被写成已经过了 h_stable interchangeable | 官方 Requirement 13 item 2：not already past h_stable |
+| A4472 | 高 | 看见还在池里 会被写成已经离池 interchangeable | 官方 Requirement 13 item 2：not already left the pool |
+| A4473 | 高 | 看见最终不再振荡 会被写成已经交差 interchangeable | 官方 Requirement 13 item 2：not already settled |
+| A4474 | 中 | 怎样实现 CheckTx 会被抄进不确定 | 不抄。不写怎样实现 CheckTx 或怎样挑稳定高度。不另写 19 节 |
+| A4465 | 记录 | 会与 328 / 312 / 339 / 942 / 943 糊成「看见回了不同码就已经有了 CheckTxCode interchangeable、就已经能说 OK interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 同一高度回了不同码 not already CheckTxCode / not already OK / not already settled 正式三事（328 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。328 checktx-oscillate vs stable bundled unbundling 启动（941 item 1） |
+| A4466 | 高 | 看见同一高度回了不同码 会被写成已经有了 CheckTxCode interchangeable / 312 interchangeable | 官方 Requirement 13 item 1：not already CheckTxCode / not 312 |
+| A4467 | 高 | 看见集合在 会被写成已经能说 OK interchangeable | 官方 Requirement 13 item 1：not already OK |
+| A4468 | 高 | 看见集合在 会被写成已经交差 interchangeable | 官方 Requirement 13 item 1：not already settled |
+| A4469 | 中 | 怎样实现 CheckTx 会被抄进不确定 | 不抄。不写怎样实现 CheckTx 或怎样挑稳定高度。不另写 19 节 |
 | A4460 | 记录 | 会与 329 / 326 / 334 / 938 / 939 糊成「看见实现了就已经是正常运转必须有 interchangeable、就已经是邻居过滤 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 实现了 Query not already required for normal operation / not already peer-filter / not already settled 正式三事（329 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。329 query vs replicated bundled unbundling 完成（940 item 3） |
 | A4461 | 高 | 看见实现了 Query 会被写成已经是正常运转必须有 interchangeable | 官方 Query item 3：not already required for normal operation |
 | A4462 | 高 | 看见实现了 会被写成已经是邻居过滤 interchangeable | 官方 Query item 3：not already peer-filter |

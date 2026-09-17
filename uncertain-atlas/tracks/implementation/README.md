@@ -150,6 +150,9 @@
 - [`worked-example-prepare-timeout-notfit-vs-bundled.md`](worked-example-prepare-timeout-notfit-vs-bundled.md) — 填了TimeoutPropose≠already fits/clock silent/settled；≠327 bundled（不变量 900）
 - [`worked-example-prepare-timeout-notpath-vs-bundled.md`](worked-example-prepare-timeout-notpath-vs-bundled.md) — 立刻整块执行≠already left path/not blocking clock/settled；≠327 bundled（不变量 899）
 - [`worked-example-prepare-timeout-vs-liveness.md`](worked-example-prepare-timeout-vs-liveness.md) — 立刻整块执行 ≠ 已经离开提议超时的关键路径；填了 TimeoutPropose ≠ 已经装得下；又开一轮 ≠ 已经丢了活性（不变量 327）
+- [`worked-example-checktx-oscillate-notsameb-vs-bundled.md`](worked-example-checktx-oscillate-notsameb-vs-bundled.md) — 本地不再振荡≠already global height/same b/settled；≠328 bundled（不变量 943）
+- [`worked-example-checktx-oscillate-notstable-vs-bundled.md`](worked-example-checktx-oscillate-notstable-vs-bundled.md) — 还在振荡≠already past h_stable/left pool/settled；≠328 bundled（不变量 942）
+- [`worked-example-checktx-oscillate-notcode-vs-bundled.md`](worked-example-checktx-oscillate-notcode-vs-bundled.md) — 同一高度不同码≠already CheckTxCode/OK/settled；≠328 bundled（不变量 941）
 - [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
 - [`worked-example-query-notmust-vs-bundled.md`](worked-example-query-notmust-vs-bundled.md) — 实现了Query≠already required/peer-filter/settled；≠329 bundled（不变量 940）
 - [`worked-example-query-notfresh-vs-bundled.md`](worked-example-query-notfresh-vs-bundled.md) — 查到了≠already fresh/tip/settled；≠329 bundled（不变量 939）

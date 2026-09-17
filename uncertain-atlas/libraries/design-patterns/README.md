@@ -1,3 +1,6 @@
+- [`name-the-checktx-oscillate-notsameb-bar.md`](name-the-checktx-oscillate-notsameb-bar.md) — 本地不再振荡 not already global same height / not already same b / not already settled 正式三事（328 余量）（不变量 943）
+- [`name-the-checktx-oscillate-notstable-bar.md`](name-the-checktx-oscillate-notstable-bar.md) — 还在振荡 not already past h_stable / not already left the pool / not already settled 正式三事（328 余量）（不变量 942）
+- [`name-the-checktx-oscillate-notcode-bar.md`](name-the-checktx-oscillate-notcode-bar.md) — 同一高度回了不同码 not already CheckTxCode / not already OK / not already settled 正式三事（328 余量）（不变量 941）
 - [`name-the-query-notmust-bar.md`](name-the-query-notmust-bar.md) — 实现了 Query not already required for normal operation / not already peer-filter / not already settled 正式三事（329 余量）（不变量 940）
 - [`name-the-query-notfresh-bar.md`](name-the-query-notfresh-bar.md) — 查到了 not already fresh / not already tip / not already settled 正式三事（329 余量）（不变量 939）
 - [`name-the-query-notrepl-bar.md`](name-the-query-notrepl-bar.md) — Query 回了 not already replicated / not already consensus / not already settled 正式三事（329 余量）（不变量 938）

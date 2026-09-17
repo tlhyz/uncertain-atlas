@@ -1,3 +1,15 @@
+## 2026-09-17（续 1060）
+
+- 不变量 943；语料 C921；模式 name-the-checktx-oscillate-notsameb-bar；反模式 checktx-oscillate-notsameb-sold-as-bundled；L10.3 第 912 条。填 L4.4 / CometBFT 档案 本地不再振荡 not already global same height / not already same b / not already settled 正式三事（328 余量）。328 checktx-oscillate vs stable bundled unbundling 完成（943 item 3）。
+
+## 2026-09-17（续 1059）
+
+- 不变量 942；语料 C920；模式 name-the-checktx-oscillate-notstable-bar；反模式 checktx-oscillate-notstable-sold-as-bundled；L10.3 第 911 条。填 L4.4 / CometBFT 档案 还在振荡 not already past h_stable / not already left the pool / not already settled 正式三事（328 余量）。328 checktx-oscillate vs stable bundled unbundling 续（942 item 2）。
+
+## 2026-09-17（续 1058）
+
+- 不变量 941；语料 C919；模式 name-the-checktx-oscillate-notcode-bar；反模式 checktx-oscillate-notcode-sold-as-bundled；L10.3 第 910 条。填 L4.4 / CometBFT 档案 同一高度回了不同码 not already CheckTxCode / not already OK / not already settled 正式三事（328 余量）。328 checktx-oscillate vs stable bundled unbundling 启动（941 item 1）。
+
 ## 2026-09-17（续 1057）
 
 - 不变量 940；语料 C918；模式 name-the-query-notmust-bar；反模式 query-notmust-sold-as-bundled；L10.3 第 909 条。填 L4.4 / CometBFT 档案 实现了 Query not already required for normal operation / not already peer-filter / not already settled 正式三事（329 余量）。329 query vs replicated bundled unbundling 完成（940 item 3）。

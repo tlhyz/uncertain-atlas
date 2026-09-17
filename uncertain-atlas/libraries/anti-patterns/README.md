@@ -1,3 +1,6 @@
+- [`checktx-oscillate-notsameb-sold-as-bundled.md`](checktx-oscillate-notsameb-sold-as-bundled.md) — 本地不再振荡 被写成已经是全局同一高度 / 已经各节点同一份 b / 已经交差（不变量 943）
+- [`checktx-oscillate-notstable-sold-as-bundled.md`](checktx-oscillate-notstable-sold-as-bundled.md) — 还在振荡 被写成已经过了 h_stable / 已经离池 / 已经交差（不变量 942）
+- [`checktx-oscillate-notcode-sold-as-bundled.md`](checktx-oscillate-notcode-sold-as-bundled.md) — 同一高度回了不同码 被写成已经有了 CheckTxCode / 已经能说 OK / 已经交差（不变量 941）
 - [`query-notmust-sold-as-bundled.md`](query-notmust-sold-as-bundled.md) — 实现了 Query 被写成已经是正常运转必须有 / 已经是邻居过滤 / 已经交差（不变量 940）
 - [`query-notfresh-sold-as-bundled.md`](query-notfresh-sold-as-bundled.md) — 查到了 被写成已经新鲜 / 已经是当前尖 / 已经交差（不变量 939）
 - [`query-notrepl-sold-as-bundled.md`](query-notrepl-sold-as-bundled.md) — Query 回了 被写成已经复制到各节点 / 已经过了共识 / 已经交差（不变量 938）

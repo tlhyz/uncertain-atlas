@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「CheckTx 过了就已经稳定、已经离池、已经全网同一份」，必须分开同一高度回了不同码是不是已经有了 CheckTxCode、还在振荡是不是已经过了 h_stable、本地不再振荡是不是已经各节点同一份 b。可以跳过「看见过了就已经稳定」。不要另写怎样实现 CheckTx 或怎样挑稳定高度。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「CheckTx 过了就已经稳定、已经离池、已经全网同一份」，必须分开同一高度回了不同码是不是已经有了 CheckTxCode、还在振荡是不是已经过了 h_stable、本地不再振荡是不是已经各节点同一份 b。可以跳过「看见过了就已经稳定」。不要另写怎样实现 CheckTx 或怎样挑稳定高度。328 checktx-oscillate vs stable bundled unbundling 完成（941 item 1 / 942 item 2 / 943 item 3）；精读 [`worked-example-checktx-oscillate-notcode-vs-bundled.md`](worked-example-checktx-oscillate-notcode-vs-bundled.md)（不变量 941 item 1）。
 
 ## 本页不抄
 
