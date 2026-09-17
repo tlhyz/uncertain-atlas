@@ -25,7 +25,7 @@
 
 - **Used to sync during handshake not Info 握手 bundled ≠ 370 info-handshake bundled interchangeable：** 官方把 Methods Info Usage handshake sync 单句和 bundled 370 第一二件事分开。
 - **handshake sync not QueryState snapshot replay ≠ 314 querystate interchangeable：** 官方把 Usage handshake sync 单句和 QueryState 启动对齐 = 快照重放路径分开。
-- **handshake sync not Info request version handshake verified ≠ 379 info-req-version interchangeable：** 官方把 Usage handshake sync 单句和 Info Request version 栏路径分开；494 infousage vs handshake bundled unbundling 续（669 item 2）。
+- **handshake sync not Info request version handshake verified ≠ 379 info-req-version interchangeable：** 官方把 Usage handshake sync 单句和 Info Request version 栏路径分开；494 infousage vs handshake bundled unbundling 在本页 item 2 完成。
 
 ## 和相邻页的边界
 
@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage Used to sync during handshake not Info 握手 bundled / not QueryState snapshot replay / not Info request version handshake verified 正式三事（494 余量），必须分开 Used to sync during handshake 是不是 Info 握手 bundled interchangeable / 370 info-handshake bundled interchangeable / 668 infousage-notquerystate interchangeable / 665 infousage-notcommitpersist interchangeable、startup or on recovery 是不是 QueryState snapshot replay interchangeable / 314 querystate interchangeable / 371 queryheight interchangeable / 320 crash recovery interchangeable、during a handshake 是不是 Info request version handshake verified interchangeable / 379 info-req-version interchangeable / 389 info-lane-fields interchangeable / 670 infousage-notappversion interchangeable。可以跳过「看见 Used to sync during handshake 就已经 Info 握手 bundled interchangeable / 就已经 QueryState 启动对齐 interchangeable / 就已经 Info 请求 version 栏 interchangeable」。不要另写怎样写 Info。494 infousage vs handshake bundled unbundling 在本页 item 2 续。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Info Usage Used to sync during handshake not Info 握手 bundled / not QueryState snapshot replay / not Info request version handshake verified 正式三事（494 余量），必须分开 Used to sync during handshake 是不是 Info 握手 bundled interchangeable / 370 info-handshake bundled interchangeable / 668 infousage-notquerystate interchangeable / 665 infousage-notcommitpersist interchangeable、startup or on recovery 是不是 QueryState snapshot replay interchangeable / 314 querystate interchangeable / 371 queryheight interchangeable / 320 crash recovery interchangeable、during a handshake 是不是 Info request version handshake verified interchangeable / 379 info-req-version interchangeable / 389 info-lane-fields interchangeable / 670 infousage-notappversion interchangeable。可以跳过「看见 Used to sync during handshake 就已经 Info 握手 bundled interchangeable / 就已经 QueryState 启动对齐 interchangeable / 就已经 Info 请求 version 栏 interchangeable」。不要另写怎样写 Info。494 infousage vs handshake bundled unbundling 在本页 item 2 完成；续 [`worked-example-infousage-notappversion-vs-bundled.md`](worked-example-infousage-notappversion-vs-bundled.md)（不变量 670 item 3）。
 
 ## 本页不抄
 

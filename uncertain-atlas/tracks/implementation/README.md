@@ -1,3 +1,4 @@
+- [`worked-example-infousage-notappversion-vs-bundled.md`](worked-example-infousage-notappversion-vs-bundled.md) — app_version in Header≠370 last_block persisted/389 Info response version/147 AppHash in header；≠494 bundled（不变量 670）
 - [`worked-example-infousage-nothandshake-vs-bundled.md`](worked-example-infousage-nothandshake-vs-bundled.md) — Used to sync during handshake≠370 Info handshake bundled/314 QueryState snapshot replay/379 Info req version verified；≠494 bundled（不变量 669）
 - [`worked-example-infousage-notquerystate-vs-bundled.md`](worked-example-infousage-notquerystate-vs-bundled.md) — Return application state≠314 QueryState/389 Info data arbitrary/370 handshake sync persisted；≠494 bundled（不变量 668）
 - [`worked-example-infousage-notemptyiff-vs-bundled.md`](worked-example-infousage-notemptyiff-vs-bundled.md) — empty iff≠367 Info lane bundled/663 default in table/482 CheckTx lane_id in range；≠497 bundled（不变量 667）
