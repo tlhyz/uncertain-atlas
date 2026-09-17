@@ -1,3 +1,7 @@
+## 2026-09-17（续 800）
+
+- 不变量 683；语料 C660；模式 name-the-finpersist-notmustnot-bar；反模式 finpersist-notmustnot-sold-as-bundled；L10.3 第 652 条。填 L4.4 / CometBFT 档案 FinalizeBlock changed state MUST NOT persist not already persisted / not already settled / not crash recovery block in store already Commit 正式三事（335 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。335 finpersist vs commit bundled unbundling 启动（683 item 1）。
+
 ## 2026-09-17（续 799）
 
 - 不变量 682；语料 C659；模式 name-the-commitpersist-nothistoricalblocks-bar；反模式 commitpersist-nothistoricalblocks-sold-as-bundled；L10.3 第 651 条。填 L4.4 / CometBFT 档案 Historical blocks required for auditing replay light client not retain_height defaults to 0 retain all / not blocks below height may be removed / not full history in consensus when joined 正式三事（481 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。481 commitpersist vs finalize bundled unbundling 完成（680 + 681 + 682）。
