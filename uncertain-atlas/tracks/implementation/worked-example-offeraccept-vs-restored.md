@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见收下了就已经装完、已经中止、已经齐」，必须分开 Offer 收下之后才去拉块并装是不是已经装完、在装这块的回包里拒掉这份、还要再收 Offer 是不是已经中止、ApplySnapshotChunk Result ACCEPT 是这块收下了是不是已经齐。可以跳过「看见收下了就已经装完」。不要另写怎样写 Offer 收下之后。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见收下了就已经装完、已经中止、已经齐」，必须分开 Offer 收下之后才去拉块并装是不是已经装完、在装这块的回包里拒掉这份、还要再收 Offer 是不是已经中止、ApplySnapshotChunk Result ACCEPT 是这块收下了是不是已经齐。可以跳过「看见收下了就已经装完」。不要另写怎样写 Offer 收下之后。401 offeraccept vs restored bundled unbundling 完成（728 item 1 / 729 item 2 / 730 item 3）；精读 [`worked-example-offerafter-notrestored-vs-bundled.md`](worked-example-offerafter-notrestored-vs-bundled.md)（不变量 728 item 1）。
 
 ## 本页不抄
 

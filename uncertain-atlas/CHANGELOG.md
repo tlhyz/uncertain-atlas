@@ -1,3 +1,15 @@
+## 2026-09-17（续 847）
+
+- 不变量 730；语料 C708；模式 name-the-offerafter-notcomplete-bar；反模式 offerafter-notcomplete-sold-as-bundled；L10.3 第 699 条。填 L4.4 / CometBFT 档案 ApplySnapshotChunk Result ACCEPT not already complete / not this-chunk result / not Offer ACCEPT 正式三事（401 余量）。401 offeraccept vs restored bundled unbundling 完成（730 item 3）。
+
+## 2026-09-17（续 846）
+
+- 不变量 729；语料 C707；模式 name-the-offerafter-notabort-bar；反模式 offerafter-notabort-sold-as-bundled；L10.3 第 698 条。填 L4.4 / CometBFT 档案在装这块的回包里拒掉这份、还要再收 Offer not ABORT / not REJECT_SNAPSHOT / not Usage reject 正式三事（401 余量）。401 offeraccept vs restored bundled unbundling 续（729 item 2）。
+
+## 2026-09-17（续 845）
+
+- 不变量 728；语料 C706；模式 name-the-offerafter-notrestored-bar；反模式 offerafter-notrestored-sold-as-bundled；L10.3 第 697 条。填 L4.4 / CometBFT 档案 Offer 收下之后才去拉块并装 not already restored / not already complete / not already settled 正式三事（401 余量）。401 offeraccept vs restored bundled unbundling 启动（728 item 1）。
+
 ## 2026-09-17（续 844）
 
 - 不变量 727；语料 C705；模式 name-the-offerunk-notformat-bar；反模式 offerunk-notformat-sold-as-bundled；L10.3 第 696 条。填 L4.4 / CometBFT 档案 OfferSnapshot Result REJECT not REJECT_FORMAT / not REJECT_SNAPSHOT / not already complete 正式三事（402 余量）。402 offerunk vs crash bundled unbundling 完成（727 item 3）。

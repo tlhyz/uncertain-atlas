@@ -360,6 +360,9 @@
 - [`worked-example-offerfmt-notsenders-vs-bundled.md`](worked-example-offerfmt-notsenders-vs-bundled.md) — REJECT_SENDER≠378 reject_senders regardless/can continue/499 chunk reject；≠400 bundled（不变量 723）
 - [`worked-example-offerfmt-notrejectsnap-vs-bundled.md`](worked-example-offerfmt-notrejectsnap-vs-bundled.md) — REJECT_FORMAT≠398 REJECT_SNAPSHOT/already complete/402 Offer REJECT；≠400 bundled（不变量 722）
 - [`worked-example-offerfmt-vs-rejectsnap.md`](worked-example-offerfmt-vs-rejectsnap.md) — OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 ≠ 已经是拒掉这份；OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 ≠ 已经拒了人；OfferSnapshot Result ABORT 是中止装回、不再试别份 ≠ 已经换一份（不变量 400）
+- [`worked-example-offerafter-notcomplete-vs-bundled.md`](worked-example-offerafter-notcomplete-vs-bundled.md) — Apply ACCEPT≠321 complete/397 this-chunk result/402 Offer ACCEPT；≠401 bundled（不变量 730）
+- [`worked-example-offerafter-notabort-vs-bundled.md`](worked-example-offerafter-notabort-vs-bundled.md) — 回包拒还要再收 Offer≠400 ABORT/398 REJECT_SNAPSHOT/499 Usage reject；≠401 bundled（不变量 729）
+- [`worked-example-offerafter-notrestored-vs-bundled.md`](worked-example-offerafter-notrestored-vs-bundled.md) — 收下之后才去拉装≠321 restored/already complete/499 Usage upon accepting；≠401 bundled（不变量 728）
 - [`worked-example-offeraccept-vs-restored.md`](worked-example-offeraccept-vs-restored.md) — Offer 收下之后才去拉块并装 ≠ 已经装完；在装这块的回包里拒掉这份、还要再收 Offer ≠ 已经中止；ApplySnapshotChunk Result ACCEPT 是这块收下了 ≠ 已经齐（不变量 401）
 - [`worked-example-offerunk-notformat-vs-bundled.md`](worked-example-offerunk-notformat-vs-bundled.md) — REJECT≠400 REJECT_FORMAT/398 REJECT_SNAPSHOT/already complete；≠402 bundled（不变量 727）
 - [`worked-example-offerunk-notrestored-vs-bundled.md`](worked-example-offerunk-notrestored-vs-bundled.md) — ACCEPT≠401 restored/321 complete/376 ProposalStatus ACCEPT；≠402 bundled（不变量 726）

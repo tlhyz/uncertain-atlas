@@ -1,3 +1,18 @@
+| A3410 | 记录 | 会与 401 / 321 / 397 / 402 / 726 / 728 / 729 糊成「看见 Apply ACCEPT 就已经齐 interchangeable、就已经是装这块的结果 interchangeable、就已经 Offer ACCEPT interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ApplySnapshotChunk Result ACCEPT not already complete / not this-chunk result / not Offer ACCEPT 正式三事（401 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。401 offeraccept vs restored bundled unbundling 完成（730 item 3） |
+| A3411 | 高 | 看见 Apply ACCEPT 这块收下了 会被写成已经齐 interchangeable / 321 interchangeable | 官方 Offer 收下之后 item 3：not already complete / not 321 |
+| A3412 | 高 | 看见回了 ACCEPT 会被写成已经是装这块的结果 interchangeable / 397 interchangeable | 官方 Offer 收下之后 item 3：not this-chunk result / not 397 |
+| A3413 | 高 | 看见能收这块 会被写成已经 Offer ACCEPT interchangeable / 402 / 726 interchangeable | 官方 Offer 收下之后 item 3：not Offer ACCEPT / not 402 |
+| A3414 | 中 | 怎样写 Offer 收下之后 会被抄进不确定 | 不抄。不写怎样写 Offer 收下之后。不另写 19 节 |
+| A3405 | 记录 | 会与 401 / 400 / 398 / 499 / 649 / 728 / 730 糊成「看见回包拒就已经 ABORT interchangeable、就已经 REJECT_SNAPSHOT interchangeable、就已经 Usage reject interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案在装这块的回包里拒掉这份、还要再收 Offer not ABORT / not REJECT_SNAPSHOT / not Usage reject 正式三事（401 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。401 offeraccept vs restored bundled unbundling 续（729 item 2） |
+| A3406 | 高 | 看见回包拒还要再收 Offer 会被写成已经 ABORT interchangeable / 400 / 724 interchangeable | 官方 Offer 收下之后 item 2：not ABORT / not 400 |
+| A3407 | 高 | 看见在装这块时拒了 会被写成已经 REJECT_SNAPSHOT interchangeable / 398 / 721 interchangeable | 官方 Offer 收下之后 item 2：not REJECT_SNAPSHOT / not 398 |
+| A3408 | 高 | 看见还能再收 Offer 会被写成已经 Usage reject interchangeable / 499 / 649 interchangeable | 官方 Offer 收下之后 item 2：not Usage reject / not 499 |
+| A3409 | 中 | 怎样写 Offer 收下之后 会被抄进不确定 | 不抄。不写怎样写 Offer 收下之后。不另写 19 节 |
+| A3400 | 记录 | 会与 401 / 321 / 499 / 648 / 729 / 730 糊成「看见收下了就已经装完 interchangeable、就已经齐 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Offer 收下之后才去拉块并装 not already restored / not already complete / not already settled 正式三事（401 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。401 offeraccept vs restored bundled unbundling 启动（728 item 1） |
+| A3401 | 高 | 看见收下之后才去拉装 会被写成已经装完 interchangeable / 321 interchangeable | 官方 Offer 收下之后 item 1：not already restored / not 321 |
+| A3402 | 高 | 看见收下了 会被写成已经齐 interchangeable / 321 interchangeable | 官方 Offer 收下之后 item 1：not already complete / not 321 |
+| A3403 | 高 | 看见在拉 会被写成已经交差 interchangeable / 499 / 648 interchangeable | 官方 Offer 收下之后 item 1：not already settled / not 499 |
+| A3404 | 中 | 怎样写 Offer 收下之后 会被抄进不确定 | 不抄。不写怎样写 Offer 收下之后。不另写 19 节 |
 | A3395 | 记录 | 会与 402 / 400 / 398 / 725 / 726 糊成「看见 REJECT 就已经拒掉这种 format interchangeable、就已经 REJECT_SNAPSHOT interchangeable、就已经齐 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 OfferSnapshot Result REJECT not REJECT_FORMAT / not REJECT_SNAPSHOT / not already complete 正式三事（402 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。402 offerunk vs crash bundled unbundling 完成（727 item 3） |
 | A3396 | 高 | 看见 REJECT 拒掉这份换一份 会被写成已经拒掉这种 format interchangeable / 400 / 722 interchangeable | 官方 OfferSnapshot Result 余量 item 3：not REJECT_FORMAT / not 400 |
 | A3397 | 高 | 看见回了 REJECT 会被写成已经 REJECT_SNAPSHOT interchangeable / 398 / 721 interchangeable | 官方 OfferSnapshot Result 余量 item 3：not REJECT_SNAPSHOT / not 398 |
