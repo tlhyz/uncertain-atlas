@@ -1,3 +1,15 @@
+## 2026-09-17（续 844）
+
+- 不变量 727；语料 C705；模式 name-the-offerunk-notformat-bar；反模式 offerunk-notformat-sold-as-bundled；L10.3 第 696 条。填 L4.4 / CometBFT 档案 OfferSnapshot Result REJECT not REJECT_FORMAT / not REJECT_SNAPSHOT / not already complete 正式三事（402 余量）。402 offerunk vs crash bundled unbundling 完成（727 item 3）。
+
+## 2026-09-17（续 843）
+
+- 不变量 726；语料 C704；模式 name-the-offerunk-notrestored-bar；反模式 offerunk-notrestored-sold-as-bundled；L10.3 第 695 条。填 L4.4 / CometBFT 档案 OfferSnapshot Result ACCEPT not restored / not already complete / not ProposalStatus ACCEPT 正式三事（402 余量）。402 offerunk vs crash bundled unbundling 续（726 item 2）。
+
+## 2026-09-17（续 842）
+
+- 不变量 725；语料 C703；模式 name-the-offerunk-notcrash-bar；反模式 offerunk-notcrash-sold-as-bundled；L10.3 第 694 条。填 L4.4 / CometBFT 档案 OfferSnapshot Result UNKNOWN not ProposalStatus crash / not ABORT / not settled 正式三事（402 余量）。402 offerunk vs crash bundled unbundling 启动（725 item 1）。
+
 ## 2026-09-17（续 841）
 
 - 不变量 724；语料 C702；模式 name-the-offerfmt-notabort-bar；反模式 offerfmt-notabort-sold-as-bundled；L10.3 第 693 条。填 L4.4 / CometBFT 档案 OfferSnapshot Result ABORT not switched / not restored / not UNKNOWN abort-all 正式三事（400 余量）。400 offerfmt vs rejectsnap bundled unbundling 完成（724 item 3）。

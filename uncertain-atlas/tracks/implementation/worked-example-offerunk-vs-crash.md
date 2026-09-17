@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 OfferSnapshot 结果枚举余量就已经崩、已经装完、已经是拒掉这种 format」，必须分开 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回是不是已经崩、OfferSnapshot Result ACCEPT 是收下这份、开始装块是不是已经装完、OfferSnapshot Result REJECT 是拒掉这份、换一份是不是已经是拒掉这种 format。可以跳过「看见回了 OfferSnapshot 结果枚举余量就已经崩」。不要另写怎样写 OfferSnapshot UNKNOWN。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 OfferSnapshot 结果枚举余量就已经崩、已经装完、已经是拒掉这种 format」，必须分开 OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回是不是已经崩、OfferSnapshot Result ACCEPT 是收下这份、开始装块是不是已经装完、OfferSnapshot Result REJECT 是拒掉这份、换一份是不是已经是拒掉这种 format。可以跳过「看见回了 OfferSnapshot 结果枚举余量就已经崩」。不要另写怎样写 OfferSnapshot UNKNOWN。402 offerunk vs crash bundled unbundling 完成（725 item 1 / 726 item 2 / 727 item 3）；精读 [`worked-example-offerunk-notcrash-vs-bundled.md`](worked-example-offerunk-notcrash-vs-bundled.md)（不变量 725 item 1）。
 
 ## 本页不抄
 

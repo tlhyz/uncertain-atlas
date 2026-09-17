@@ -1,3 +1,6 @@
+- [`offerunk-notformat-sold-as-bundled.md`](offerunk-notformat-sold-as-bundled.md) — REJECT 被写成已经拒掉这种 format / 已经 REJECT_SNAPSHOT / 已经齐（不变量 727）
+- [`offerunk-notrestored-sold-as-bundled.md`](offerunk-notrestored-sold-as-bundled.md) — ACCEPT 被写成已经装完 / 已经齐 / 已经 Process ACCEPT（不变量 726）
+- [`offerunk-notcrash-sold-as-bundled.md`](offerunk-notcrash-sold-as-bundled.md) — UNKNOWN 被写成已经会崩 / 已经 ABORT / 已经交差（不变量 725）
 - [`offerfmt-notabort-sold-as-bundled.md`](offerfmt-notabort-sold-as-bundled.md) — ABORT 被写成已经换一份就能接着装 / 已经装完 / 已经 UNKNOWN 中止全部装回（不变量 724）
 - [`offerfmt-notsenders-sold-as-bundled.md`](offerfmt-notsenders-sold-as-bundled.md) — REJECT_SENDER 被写成已经不论 Result 都拒 / 已经能接着装 / 已经 Usage chunk 回包拒掉（不变量 723）
 - [`offerfmt-notrejectsnap-sold-as-bundled.md`](offerfmt-notrejectsnap-sold-as-bundled.md) — REJECT_FORMAT 被写成已经是拒掉这份 / 已经齐 / 已经 Offer REJECT（不变量 722）

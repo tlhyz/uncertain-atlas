@@ -361,6 +361,9 @@
 - [`worked-example-offerfmt-notrejectsnap-vs-bundled.md`](worked-example-offerfmt-notrejectsnap-vs-bundled.md) — REJECT_FORMAT≠398 REJECT_SNAPSHOT/already complete/402 Offer REJECT；≠400 bundled（不变量 722）
 - [`worked-example-offerfmt-vs-rejectsnap.md`](worked-example-offerfmt-vs-rejectsnap.md) — OfferSnapshot Result REJECT_FORMAT 是拒掉这种 format、换一份 ≠ 已经是拒掉这份；OfferSnapshot Result REJECT_SENDER 是拒掉送来这份的所有人、换一份 ≠ 已经拒了人；OfferSnapshot Result ABORT 是中止装回、不再试别份 ≠ 已经换一份（不变量 400）
 - [`worked-example-offeraccept-vs-restored.md`](worked-example-offeraccept-vs-restored.md) — Offer 收下之后才去拉块并装 ≠ 已经装完；在装这块的回包里拒掉这份、还要再收 Offer ≠ 已经中止；ApplySnapshotChunk Result ACCEPT 是这块收下了 ≠ 已经齐（不变量 401）
+- [`worked-example-offerunk-notformat-vs-bundled.md`](worked-example-offerunk-notformat-vs-bundled.md) — REJECT≠400 REJECT_FORMAT/398 REJECT_SNAPSHOT/already complete；≠402 bundled（不变量 727）
+- [`worked-example-offerunk-notrestored-vs-bundled.md`](worked-example-offerunk-notrestored-vs-bundled.md) — ACCEPT≠401 restored/321 complete/376 ProposalStatus ACCEPT；≠402 bundled（不变量 726）
+- [`worked-example-offerunk-notcrash-vs-bundled.md`](worked-example-offerunk-notcrash-vs-bundled.md) — UNKNOWN≠376 crash/400 ABORT/already settled；≠402 bundled（不变量 725）
 - [`worked-example-offerunk-vs-crash.md`](worked-example-offerunk-vs-crash.md) — OfferSnapshot Result UNKNOWN 是结果不明、中止全部装回 ≠ 已经崩；OfferSnapshot Result ACCEPT 是收下这份、开始装块 ≠ 已经装完；OfferSnapshot Result REJECT 是拒掉这份、换一份 ≠ 已经是拒掉这种 format（不变量 402）
 - [`worked-example-finalizeafter-vs-commit.md`](worked-example-finalizeafter-vs-commit.md) — Finalize 之后引擎才落盘各笔输出 / AppHash / ResultsHash ≠ 已经交差；落完再锁内存池、新交易不进 CheckTx ≠ 已经是 Commit 锁；可选再验池里剩下的、再解锁、再开下一高 round 0 ≠ 已经是 Recheck（不变量 403）
 - [`worked-example-finapphash-vs-header.md`](worked-example-finapphash-vs-header.md) — Finalize 回包 app_hash 可以空或硬编码、但必须确定 ≠ 已经印进本头；以后 Query 可以拿这份根当锚回证明 ≠ 已经对上 AppHash；tx_results[i].Code == 0 只表示第 i 笔完全合法 ≠ 已经没进块（不变量 404）

@@ -1,3 +1,6 @@
+- [`name-the-offerunk-notformat-bar.md`](name-the-offerunk-notformat-bar.md) — OfferSnapshot Result REJECT not REJECT_FORMAT / not REJECT_SNAPSHOT / not already complete 正式三事（402 余量）（不变量 727）
+- [`name-the-offerunk-notrestored-bar.md`](name-the-offerunk-notrestored-bar.md) — OfferSnapshot Result ACCEPT not restored / not already complete / not ProposalStatus ACCEPT 正式三事（402 余量）（不变量 726）
+- [`name-the-offerunk-notcrash-bar.md`](name-the-offerunk-notcrash-bar.md) — OfferSnapshot Result UNKNOWN not ProposalStatus crash / not ABORT / not settled 正式三事（402 余量）（不变量 725）
 - [`name-the-offerfmt-notabort-bar.md`](name-the-offerfmt-notabort-bar.md) — OfferSnapshot Result ABORT not switched / not restored / not UNKNOWN abort-all 正式三事（400 余量）（不变量 724）
 - [`name-the-offerfmt-notsenders-bar.md`](name-the-offerfmt-notsenders-bar.md) — OfferSnapshot Result REJECT_SENDER not reject_senders regardless / not can continue / not chunk-response reject 正式三事（400 余量）（不变量 723）
 - [`name-the-offerfmt-notrejectsnap-bar.md`](name-the-offerfmt-notrejectsnap-bar.md) — OfferSnapshot Result REJECT_FORMAT not REJECT_SNAPSHOT / not already complete / not Offer REJECT 正式三事（400 余量）（不变量 722）
