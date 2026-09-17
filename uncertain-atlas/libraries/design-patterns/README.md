@@ -1,3 +1,6 @@
+- [`name-the-crashrec-notskip-bar.md`](name-the-crashrec-notskip-bar.md) — 启动 Info 对上 not already any-height / not already skip-replay / not already no-reinit 正式三事（320 余量）（不变量 1021）
+- [`name-the-crashrec-notcommit-bar.md`](name-the-crashrec-notcommit-bar.md) — 块进 store not already settled / not already committed / not already atomic 正式三事（320 余量）（不变量 1020）
+- [`name-the-crashrec-notahead-bar.md`](name-the-crashrec-notahead-bar.md) — 应用比引擎高 not already allowed / not already recover-alone / not already same-as-atomic 正式三事（320 余量）（不变量 1019）
 - [`name-the-chktxresp-notprio-bar.md`](name-the-chktxresp-notprio-bar.md) — Priority not already consensus-order / not already in-block / not already deleted 正式三事（317 余量）（不变量 1018）
 - [`name-the-chktxresp-notfork-bar.md`](name-the-chktxresp-notfork-bar.md) — 各节点 Data 不一样 not already forked / not already illegal / not already same-state 正式三事（317 余量）（不变量 1017）
 - [`name-the-chktxresp-notused-bar.md`](name-the-chktxresp-notused-bar.md) — CheckTx Data not already engine-used / not already same-scale / not already last-results 正式三事（317 余量）（不变量 1016）

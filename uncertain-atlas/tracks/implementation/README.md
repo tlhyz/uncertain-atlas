@@ -172,6 +172,9 @@
 - [`worked-example-consensusparams-notcleared-vs-bundled.md`](worked-example-consensusparams-notcleared-vs-bundled.md) — Finalize没回≠already cleared/changed/settled；≠319 bundled（不变量 909）
 - [`worked-example-consensusparams-notnoparams-vs-bundled.md`](worked-example-consensusparams-notnoparams-vs-bundled.md) — InitChain空参数≠already no params/app empty/settled；≠319 bundled（不变量 908）
 - [`worked-example-consensusparams-vs-update.md`](worked-example-consensusparams-vs-update.md) — InitChain 空参数 ≠ 已经没有参数；Finalize 没回 ≠ 已经清掉；只改一个字段 ≠ 已经只改这一项（不变量 319）
+- [`worked-example-crashrec-notskip-vs-bundled.md`](worked-example-crashrec-notskip-vs-bundled.md) — Info对上≠already any-height/skip-replay/no-reinit；≠320 bundled（不变量 1021）
+- [`worked-example-crashrec-notcommit-vs-bundled.md`](worked-example-crashrec-notcommit-vs-bundled.md) — 块进store≠already settled/committed/atomic；≠320 bundled（不变量 1020）
+- [`worked-example-crashrec-notahead-vs-bundled.md`](worked-example-crashrec-notahead-vs-bundled.md) — 应用比引擎高≠already allowed/recover-alone/same-as-atomic；≠320 bundled（不变量 1019）
 - [`worked-example-crash-steps-vs-commit.md`](worked-example-crash-steps-vs-commit.md) — 应用高度比引擎高 ≠ 已经允许；块进 store ≠ 已经 Commit；启动 Info 对上 ≠ 已经能跳步（不变量 320）
 - [`worked-example-snapshot-restore-notresume-vs-bundled.md`](worked-example-snapshot-restore-notresume-vs-bundled.md) — 换一份≠already resumable/same-snapshot/settled；≠321 bundled（不变量 961）
 - [`worked-example-snapshot-restore-notchunk-vs-bundled.md`](worked-example-snapshot-restore-notchunk-vs-bundled.md) — 一块chunk≠already complete/banned/settled；≠321 bundled（不变量 960）

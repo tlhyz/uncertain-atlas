@@ -1,3 +1,6 @@
+- [`crashrec-notskip-sold-as-bundled.md`](crashrec-notskip-sold-as-bundled.md) — 启动 Info 对上 被写成已经是任意高度 / 已经跳过重放 / 已经不用再叫（不变量 1021）
+- [`crashrec-notcommit-sold-as-bundled.md`](crashrec-notcommit-sold-as-bundled.md) — 块进 store 被写成已经交差 / 应用已经提交 / 已经原子（不变量 1020）
+- [`crashrec-notahead-sold-as-bundled.md`](crashrec-notahead-sold-as-bundled.md) — 应用比引擎高 被写成已经允许 / 已经能各醒各的 / 已经和半写已经原子同一句（不变量 1019）
 - [`chktxresp-notprio-sold-as-bundled.md`](chktxresp-notprio-sold-as-bundled.md) — Priority 被写成已经是共识顺序 / 已经进了块 / 已经从池里删掉（不变量 1018）
 - [`chktxresp-notfork-sold-as-bundled.md`](chktxresp-notfork-sold-as-bundled.md) — 各节点 Data 不一样 被写成已经分叉 / 已经违规 / 已经和 ExecuteTxState 同一份（不变量 1017）
 - [`chktxresp-notused-sold-as-bundled.md`](chktxresp-notused-sold-as-bundled.md) — CheckTx Data 被写成已经被引擎用了 / 已经和 Finalize 那份同一把尺 / 已经进了下一头的 LastResultsHash（不变量 1016）

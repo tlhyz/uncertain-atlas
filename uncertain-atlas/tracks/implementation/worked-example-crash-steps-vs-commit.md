@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「崩溃已经能恢复」，必须分开应用比引擎高是不是已经允许、块进 store 是不是已经 Commit、启动 Info 对上是不是已经能跳步。可以跳过「看见块已经进 store 就已经交差」。不要另写怎样落盘或怎样写 Commit。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「崩溃已经能恢复」，必须分开应用比引擎高是不是已经允许、块进 store 是不是已经 Commit、启动 Info 对上是不是已经能跳步。可以跳过「看见块已经进 store 就已经交差」。不要另写怎样落盘或怎样写 Commit。320 crash-steps vs commit bundled unbundling 完成（1019 item 1 / 1020 item 2 / 1021 item 3）；精读 [`worked-example-crashrec-notahead-vs-bundled.md`](worked-example-crashrec-notahead-vs-bundled.md)（不变量 1019 item 1）。
 
 ## 本页不抄
 

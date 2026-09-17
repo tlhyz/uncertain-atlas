@@ -1,3 +1,18 @@
+| A4865 | 记录 | 会与 320 / 314 / 310 / 1019 / 1020 糊成「看见启动 Info 对上就已经是任意高度 interchangeable、就已经跳过重放 interchangeable、就已经不用再叫 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 启动 Info 对上 not already any-height / not already skip-replay / not already no-reinit 正式三事（320 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。320 crash-steps vs commit bundled unbundling 完成（1021 item 3） |
+| A4866 | 高 | 看见启动 Info 会被写成已经是任意高度 interchangeable | 官方 Crash Recovery item 3：not already any-height |
+| A4867 | 高 | 看见对上了 会被写成已经跳过重放 interchangeable | 官方 Crash Recovery item 3：not already skip-replay |
+| A4868 | 高 | 看见 InitChain 叫过 会被写成已经不用再叫 interchangeable | 官方 Crash Recovery item 3：not already no-reinit |
+| A4869 | 中 | 怎样落盘会被抄进不确定 | 不抄。不写怎样落盘或怎样写 Commit。不另写 19 节 |
+| A4860 | 记录 | 会与 320 / 298 / 335 / 1019 / 1021 糊成「看见块进 store 就已经交差 interchangeable、就已经应用提交 interchangeable、就已经原子 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 块进 store not already settled / not already committed / not already atomic 正式三事（320 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。320 crash-steps vs commit bundled unbundling 续（1020 item 2） |
+| A4861 | 高 | 看见块进 store 会被写成已经交差 interchangeable / 298 interchangeable | 官方 Crash Recovery item 2：not already settled / not 298 |
+| A4862 | 高 | 看见结果存了 会被写成应用已经提交 interchangeable | 官方 Crash Recovery item 2：not already committed |
+| A4863 | 高 | 看见三步 会被写成已经原子 interchangeable | 官方 Crash Recovery item 2：not already atomic |
+| A4864 | 中 | 怎样落盘会被抄进不确定 | 不抄。不写怎样落盘或怎样写 Commit。不另写 19 节 |
+| A4855 | 记录 | 会与 320 / 5 / 298 / 1020 / 1021 糊成「看见应用比引擎高就已经允许 interchangeable、就已经能各醒各的 interchangeable、就已经和半写已经原子同一句 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 应用比引擎高 not already allowed / not already recover-alone / not already same-as-atomic 正式三事（320 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。320 crash-steps vs commit bundled unbundling 启动（1019 item 1） |
+| A4856 | 高 | 看见应用比引擎高 会被写成已经允许 interchangeable / 5 interchangeable | 官方 Crash Recovery item 1：not already allowed / not 5 |
+| A4857 | 高 | 看见两边高度不一样 会被写成已经能各醒各的 interchangeable | 官方 Crash Recovery item 1：not already recover-alone |
+| A4858 | 高 | 看见能单独重启应用 会被写成已经和半写已经原子同一句 interchangeable | 官方 Crash Recovery item 1：not already same-as-atomic |
+| A4859 | 中 | 怎样落盘会被抄进不确定 | 不抄。不写怎样落盘或怎样写 Commit。不另写 19 节 |
 | A4850 | 记录 | 会与 317 / 301 / 69 / 1016 / 1017 糊成「看见 Priority 就已经是共识顺序 interchangeable、就已经进了块 interchangeable、就已经从池里删掉 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Priority not already consensus-order / not already in-block / not already deleted 正式三事（317 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。317 checktxresponse vs exec bundled unbundling 完成（1018 item 3） |
 | A4851 | 高 | 看见 Priority 会被写成已经是共识顺序 interchangeable | 官方 CheckTxResponse item 3：not already consensus-order |
 | A4852 | 高 | 看见排在前面 会被写成已经进了块 interchangeable | 官方 CheckTxResponse item 3：not already in-block |

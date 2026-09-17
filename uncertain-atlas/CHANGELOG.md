@@ -1,3 +1,15 @@
+## 2026-09-17（续 1138）
+
+- 不变量 1021；语料 C999；模式 name-the-crashrec-notskip-bar；反模式 crashrec-notskip-sold-as-bundled；L10.3 第 990 条。填 L4.4 / CometBFT 档案 启动 Info 对上 not already any-height / not already skip-replay / not already no-reinit 正式三事（320 余量）。320 crash-steps vs commit bundled unbundling 完成（1021 item 3）。
+
+## 2026-09-17（续 1137）
+
+- 不变量 1020；语料 C998；模式 name-the-crashrec-notcommit-bar；反模式 crashrec-notcommit-sold-as-bundled；L10.3 第 989 条。填 L4.4 / CometBFT 档案 块进 store not already settled / not already committed / not already atomic 正式三事（320 余量）。320 crash-steps vs commit bundled unbundling 续（1020 item 2）。
+
+## 2026-09-17（续 1136）
+
+- 不变量 1019；语料 C997；模式 name-the-crashrec-notahead-bar；反模式 crashrec-notahead-sold-as-bundled；L10.3 第 988 条。填 L4.4 / CometBFT 档案 应用比引擎高 not already allowed / not already recover-alone / not already same-as-atomic 正式三事（320 余量）。320 crash-steps vs commit bundled unbundling 启动（1019 item 1）。
+
 ## 2026-09-17（续 1135）
 
 - 不变量 1018；语料 C996；模式 name-the-chktxresp-notprio-bar；反模式 chktxresp-notprio-sold-as-bundled；L10.3 第 987 条。填 L4.4 / CometBFT 档案 Priority not already consensus-order / not already in-block / not already deleted 正式三事（317 余量）。317 checktxresponse vs exec bundled unbundling 完成（1018 item 3）。
