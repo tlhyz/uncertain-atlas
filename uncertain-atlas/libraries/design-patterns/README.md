@@ -1,0 +1,517 @@
+- [`name-the-chktxsource-notreplay-bar.md`](name-the-chktxsource-notreplay-bar.md) — CheckTx Usage may come from external user or another node not mempool dedup / not app replay protection / not CheckTx guard bundled 正式三事（488 余量）（不变量 685）
+- [`name-the-chktxsource-notremoved-bar.md`](name-the-chktxsource-notremoved-bar.md) — CheckTx Usage may come from another node not gossip verified / not removed from pool / not forever valid 正式三事（488 余量）（不变量 684）
+- [`name-the-chktxsource-notrecheck-bar.md`](name-the-chktxsource-notrecheck-bar.md) — CheckTx Usage may come from an external user not CheckTx_Recheck / not CheckTx_New bundled / not broadcast_tx once 正式三事（488 余量）（不变量 683）
+- [`name-the-chktxvalidate-notoptional-bar.md`](name-the-chktxvalidate-notoptional-bar.md) — CheckTx Usage Technically optional + Code≠0 rejected not four gates settled / not Check passed is in proposal / not forever valid 正式三事（486 余量）（不变量 682）
+- [`name-the-chktxvalidate-notapply-bar.md`](name-the-chktxvalidate-notapply-bar.md) — CheckTx Usage does not apply state changes not already mutated / not Finalize executed / not Process candidate committed 正式三事（486 余量）（不变量 681）
+- [`name-the-chktxvalidate-notexecstate-bar.md`](name-the-chktxvalidate-notexecstate-bar.md) — CheckTx Usage validates against current state not ExecuteTxState / not about-to-execute / not CheckTxState is ExecuteTxState 正式三事（486 余量）（不变量 680）
+- [`name-the-queryusage-notprooftype-bar.md`](name-the-queryusage-notprooftype-bar.md) — Query Usage Merkle proof self-describing type not ProofOp 按键查 / not CheckTx 守卫余量 / not Snapshot 高度余量 正式三事（487 余量）（不变量 679）
+- [`name-the-queryusage-notproof-bar.md`](name-the-queryusage-notproof-bar.md) — Query Usage Optionally return Merkle proof not prove 栏 / not AppHash matched / not Finalize Query proofs anchored 正式三事（487 余量）（不变量 678）
+- [`name-the-queryusage-notquerystate-bar.md`](name-the-queryusage-notquerystate-bar.md) — Query Usage Query for data at current or past height not QueryState / not replicated / not QueryState is ExecuteTxState 正式三事（487 余量）（不变量 677）
+- [`name-the-echousage-notdone-bar.md`](name-the-echousage-notdone-bar.md) — Echo Response Message the input string not Echo Usage test already done / not Request Message string to echo back / not Flush sync response 正式三事（492 余量）（不变量 676）
+- [`name-the-echousage-notreqresp-bar.md`](name-the-echousage-notreqresp-bar.md) — Echo Request Message string to echo back not Response Message / not Echo request Message is Flush / not filled Message means echoed 正式三事（492 余量）（不变量 675）
+- [`name-the-echousage-notflush-bar.md`](name-the-echousage-notflush-bar.md) — Echo Usage Echo a string to test implementation not Flush flush queue / not commit-empty-echo bundled / not Flush sync response 正式三事（492 余量）（不变量 674）
+- [`name-the-infousage-notappversion-bar.md`](name-the-infousage-notappversion-bar.md) — Info Usage app_version included in Header not last_block persisted during Commit / not Info response version / not AppHash in header 正式三事（494 余量）（不变量 670）
+- [`name-the-infousage-nothandshake-bar.md`](name-the-infousage-nothandshake-bar.md) — Info Usage Used to sync during handshake not Info 握手 bundled / not QueryState snapshot replay / not Info request version handshake verified 正式三事（494 余量）（不变量 669）
+- [`name-the-infousage-notquerystate-bar.md`](name-the-infousage-notquerystate-bar.md) — Info Usage Return information about application state not QueryState / not Info response data arbitrary info / not handshake sync already persisted 正式三事（494 余量）（不变量 668）
+- [`name-the-infousage-notemptyiff-bar.md`](name-the-infousage-notemptyiff-bar.md) — Info Usage lane_priorities empty iff default_lane empty not Info 车道 bundled / not default_lane in table / not CheckTx lane_id in range 正式三事（497 余量）（不变量 667）
+- [`name-the-infousage-notlaneoptional-bar.md`](name-the-infousage-notlaneoptional-bar.md) — Info Usage does not have to define lane_priorities not Info 车道 bundled / not CheckTx empty lane_id default lane / not CheckTx Priority consensus order 正式三事（497 余量）（不变量 666）
+- [`name-the-infousage-notcommitpersist-bar.md`](name-the-infousage-notcommitpersist-bar.md) — Info Usage last_block persisted during Commit not Info 握手 bundled / not Commit persist signal / not Info response last_block fields 正式三事（497 余量）（不变量 665）
+- [`name-the-infousage-notpriorityzero-bar.md`](name-the-infousage-notpriorityzero-bar.md) — Info Usage priority 0 reserved not Info 车道 bundled / not CheckTx empty lane_id default lane / not CheckTx Priority consensus order 正式三事（498 余量）（不变量 664）
+- [`name-the-infousage-notintable-bar.md`](name-the-infousage-notintable-bar.md) — Info Usage default_lane in table not Info 车道 bundled / not empty iff / not CheckTx lane_id in range 正式三事（498 余量）（不变量 663）
+- [`name-the-listsnapusage-notsnaptype-bar.md`](name-the-listsnapusage-notsnaptype-bar.md) — ListSnapshots Usage See Snapshot data type for details not Snapshot 类型 bundled / not Offer 装完 / not ListSnapshots 本地清单就已经是同一份 正式三事（500 余量）（不变量 662）
+- [`name-the-listsnapusage-notdiscover-bar.md`](name-the-listsnapusage-notdiscover-bar.md) — ListSnapshots Usage discover on peers not ListSnapshots 空请求 bundled / not ListSnapshots 本地清单 bundled / not Snapshot Discovery 正式三事（500 余量）（不变量 661）
+- [`name-the-loadsnapusage-notchunks-bar.md`](name-the-loadsnapusage-notchunks-bar.md) — LoadSnapshotChunk Usage retrieve snapshot chunks not ApplySnapshotChunk chunk 栏 / not ACCEPT bundled / not LoadSnapshotChunk 已经齐 正式三事（501 余量）（不变量 660）
+- [`name-the-loadsnapusage-notdiscover-bar.md`](name-the-loadsnapusage-notdiscover-bar.md) — LoadSnapshotChunk Usage retrieve from peers not ListSnapshots discover / not ListSnapshots 空请求 bundled / not Snapshot Discovery 正式三事（501 余量）（不变量 659）
+- [`name-the-loadsnapusage-notretrieve-bar.md`](name-the-loadsnapusage-notretrieve-bar.md) — LoadSnapshotChunk Usage Used during state sync to retrieve not LoadSnapshotChunk bundled / not Offer 装完 / not Transition to Consensus 正式三事（501 余量）（不变量 658）
+- [`name-the-applysnapusage-notunless-bar.md`](name-the-applysnapusage-notunless-bar.md) — ApplySnapshotChunk Usage will not do unless instructed not refetch_chunks bundled / not reject_senders bundled / not unable retrieve OfferSnapshot 正式三事（502 余量）（不变量 657）
+- [`name-the-applysnapusage-notchoose-bar.md`](name-the-applysnapusage-notchoose-bar.md) — ApplySnapshotChunk Usage can choose refetch/ban not refetch_chunks bundled / not reject_senders bundled / not RETRY bundled 正式三事（502 余量）（不变量 656）
+- [`name-the-applysnapusage-notunable-bar.md`](name-the-applysnapusage-notunable-bar.md) — ApplySnapshotChunk Usage unable to retrieve next chunk not refetch/reject_senders / not REJECT_SNAPSHOT bundled / not already matched LastBlockAppHash 正式三事（485 余量）（不变量 655）
+- [`name-the-applysnapusage-notinfo-bar.md`](name-the-applysnapusage-notinfo-bar.md) — ApplySnapshotChunk Usage all chunks accepted 后 Info not Info during load / not Transition to Consensus bundled / not verified AppHash at end 正式三事（485 余量）（不变量 654）
+- [`name-the-applysnapusage-notverify-bar.md`](name-the-applysnapusage-notverify-bar.md) — ApplySnapshotChunk Usage verify each chunk not Only AppHash can be trusted / not Snapshot Verification bundled / not ApplySnapshotChunk Result ACCEPT already complete 正式三事（485 余量）（不变量 653）
+- [`name-the-offersnaptrust-nottransition-bar.md`](name-the-offersnaptrust-nottransition-bar.md) — OfferSnapshot Usage verified AppHash at end not Info during load / not Transition to Consensus bundled / not Offer restored bundled 正式三事（483 余量）（不变量 652）
+- [`name-the-offersnaptrust-notverify-bar.md`](name-the-offersnaptrust-notverify-bar.md) — OfferSnapshot Usage Any other data can be spoofed not hash comparison enough / not Snapshot Verification bundled / not ApplySnapshotChunk reject refetch DoS 正式三事（483 余量）（不变量 651）
+- [`name-the-offersnaptrust-notmetadata-bar.md`](name-the-offersnaptrust-notmetadata-bar.md) — OfferSnapshot Usage Only AppHash can be trusted not Snapshot metadata / not hash comparison / not OfferSnapshot app_hash 正式三事（483 余量）（不变量 650）
+- [`name-the-offersnapusage-notreject-bar.md`](name-the-offersnapusage-notreject-bar.md) — OfferSnapshot Usage reject in chunk response not ABORT / not REJECT_SNAPSHOT / not Offer 收下之后 bundled 正式三事（499 余量）（不变量 649）
+- [`name-the-offersnapusage-notrestored-bar.md`](name-the-offersnapusage-notrestored-bar.md) — OfferSnapshot Usage upon accepting retrieve and apply not Offer 装完 / not Offer 收下之后 bundled / not LoadSnapshotChunk 正式三事（499 余量）（不变量 648）
+- [`name-the-offersnapusage-notlisted-bar.md`](name-the-offersnapusage-notlisted-bar.md) — OfferSnapshot Usage bootstrap accept/reject not OfferSnapshot bundled / not ListSnapshots / not Snapshot Connection 正式三事（499 余量）（不变量 647）
+- [`name-the-fincommit-notcommitlock-bar.md`](name-the-fincommit-notcommitlock-bar.md) — FinalizeBlock When calls Commit after lock mempool not Commit lock / not optional recheck / unlock / not fincommit bundled 正式三事（590 余量）（不变量 646）
+- [`name-the-fincommit-notpersist-bar.md`](name-the-fincommit-notpersist-bar.md) — FinalizeBlock When instruct Application to persist its state not engine persist tx outputs / AppHash / ResultsHash / not Commit Usage signal bundled / not fincommit bundled 正式三事（590 余量）（不变量 645）
+- [`name-the-fincommit-notsettled-bar.md`](name-the-fincommit-notsettled-bar.md) — FinalizeBlock When CometBFT calls Commit not already settled / not four gates settled / not fincommit bundled 正式三事（590 余量）（不变量 644）
+- [`name-the-finh1-notafterunlock-bar.md`](name-the-finh1-notafterunlock-bar.md) — FinalizeBlock When after unlock not unlock mempool / not finafter bundled / not When trigger 正式三事（593 余量）（不变量 643）
+- [`name-the-finh1-notround-bar.md`](name-the-finh1-notround-bar.md) — FinalizeBlock When round 0 not same round / not next_block_delay / not timeout_commit / not finh1 bundled 正式三事（593 余量）（不变量 642）
+- [`name-the-finh1-notsettled-bar.md`](name-the-finh1-notsettled-bar.md) — FinalizeBlock When starts consensus for height h+1 not already settled / not persist decision / not finh1 bundled 正式三事（593 余量）（不变量 641）
+- [`name-the-finunlock-notcommitlock-bar.md`](name-the-finunlock-notcommitlock-bar.md) — FinalizeBlock When unlock after optional recheck not Commit lock / not h+1 round 0 / not finunlock bundled 正式三事（592 余量）（不变量 640）
+- [`name-the-finunlock-notnewly-bar.md`](name-the-finunlock-notnewly-bar.md) — FinalizeBlock When newly received transactions can now be checked not optional recheck outstanding txs / not CheckTx optional / not finunlock bundled 正式三事（592 余量）（不变量 639）
+- [`name-the-finunlock-notsettled-bar.md`](name-the-finunlock-notsettled-bar.md) — FinalizeBlock When unlocks the mempool not already settled / not four gates settled / not finunlock bundled 正式三事（592 余量）（不变量 638）
+- [`name-the-finrecheck-nottype-bar.md`](name-the-finrecheck-nottype-bar.md) — FinalizeBlock When against newly persisted Application state not Type=RECHECK / not CheckTxState / ExecuteTxState / not finrecheck bundled 正式三事（591 余量）（不变量 637）
+- [`name-the-finrecheck-notoutstanding-bar.md`](name-the-finrecheck-notoutstanding-bar.md) — FinalizeBlock When all outstanding transactions in the mempool not new transactions / not CheckTx passed forever valid / not finrecheck bundled 正式三事（591 余量）（不变量 636）
+- [`name-the-finrecheck-notmust-bar.md`](name-the-finrecheck-notmust-bar.md) — FinalizeBlock When optionally re-checks not must recheck / not already settled / not finrecheck bundled 正式三事（591 余量）（不变量 635）
+- [`name-the-finafter-notrecheck-bar.md`](name-the-finafter-notrecheck-bar.md) — FinalizeBlock When 可选再验池里剩下的、再解锁、再开下一高 round 0 not Recheck / not unlock / not finafter bundled 正式三事（403 余量）（不变量 634）
+- [`name-the-finafter-notlock-bar.md`](name-the-finafter-notlock-bar.md) — FinalizeBlock When 落完再锁内存池、新交易不进 CheckTx not Commit lock / not already settled / not finafter bundled 正式三事（403 余量）（不变量 633）
+- [`name-the-finafter-notsettled-bar.md`](name-the-finafter-notsettled-bar.md) — FinalizeBlock When Finalize 之后引擎才落盘 tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state / not finafter bundled 正式三事（403 余量）（不变量 632）
+- [`name-the-finlock-notcommitlock-bar.md`](name-the-finlock-notcommitlock-bar.md) — FinalizeBlock When locks mempool after persist not Commit lock / not unlock / not Recheck / not finlock bundled 正式三事（588 余量）（不变量 631）
+- [`name-the-finlock-notoptional-bar.md`](name-the-finlock-notoptional-bar.md) — FinalizeBlock When no calls to CheckTx on new transactions not CheckTx optional / not already in pool / not finlock bundled 正式三事（588 余量）（不变量 630）
+- [`name-the-finlock-notsettled-bar.md`](name-the-finlock-notsettled-bar.md) — FinalizeBlock When locks mempool not already settled / not four gates settled / not finlock bundled 正式三事（588 余量）（不变量 629）
+- [`name-the-fintxcode-notsettled-bar.md`](name-the-fintxcode-notsettled-bar.md) — FinalizeBlockResponse tx_results returned not Finalize changed already settled / not Code Data printed in this header LastResultsHash / not fintxcode bundled 正式三事（585 余量）（不变量 628）
+- [`name-the-fintxcode-notinvalid-bar.md`](name-the-fintxcode-notinvalid-bar.md) — FinalizeBlockResponse tx_results Code==0 only if fully valid not Code != 0 still in block / not no index / not fintxcode bundled 正式三事（585 余量）（不变量 627）
+- [`name-the-fintxcode-notchecktx-bar.md`](name-the-fintxcode-notchecktx-bar.md) — FinalizeBlockResponse tx_results Code==0 only if fully valid not CheckTx passed / not Process Accept / not fintxcode bundled 正式三事（585 余量）（不变量 626）
+- [`name-the-finmerkle-notquery-bar.md`](name-the-finmerkle-notquery-bar.md) — FinalizeBlockResponse Query proofs anchored in this Merkle root not matched AppHash / not ProofOp key lookup / not finmerkle bundled 正式三事（475 余量）（不变量 625）
+- [`name-the-finmerkle-notnextheader-bar.md`](name-the-finmerkle-notnextheader-bar.md) — FinalizeBlockResponse app_hash included as Header.AppHash in the next block not already written / not this header AppHash / not finmerkle bundled 正式三事（475 余量）（不变量 624）
+- [`name-the-finmerkle-notthisheader-bar.md`](name-the-finmerkle-notthisheader-bar.md) — FinalizeBlockResponse app_hash optional Merkle root not this header AppHash / not settled / not finmerkle bundled 正式三事（475 余量）（不变量 623）
+- [`name-the-finharddet-notnondet-bar.md`](name-the-finharddet-notnondet-bar.md) — FinalizeBlockResponse MUST be deterministic not next_block_delay nondet / not 印进本头 / not finharddet bundled 正式三事（476 余量）（不变量 622）
+- [`name-the-finharddet-nothardcoded-bar.md`](name-the-finharddet-nothardcoded-bar.md) — FinalizeBlockResponse app_hash may be hard-coded not Merkle root / not settled / not finharddet bundled 正式三事（476 余量）（不变量 621）
+- [`name-the-finharddet-notempty-bar.md`](name-the-finharddet-notempty-bar.md) — FinalizeBlockResponse app_hash may be empty not no state root / not settled / not finharddet bundled 正式三事（476 余量）（不变量 620）
+- [`name-the-fndelay-notsetzero-bar.md`](name-the-fndelay-notsetzero-bar.md) — FinalizeBlockResponse next_block_delay Set to 0 not decided / not block interval / not fndelay bundled 正式三事（589 余量）（不变量 619）
+- [`name-the-fndelay-notwallclock-bar.md`](name-the-fndelay-notwallclock-bar.md) — FinalizeBlockResponse next_block_delay each node MAY / wallclock not app_hash MUST be deterministic / not whole response nondeterministic 正式三事（589 余量）（不变量 618）
+- [`name-the-fndelay-notslot-bar.md`](name-the-fndelay-notslot-bar.md) — FinalizeBlockResponse next_block_delay Deterministic = No not slot / not finality / not timeout_commit 正式三事（589 余量）（不变量 617）
+- [`name-the-finreturn-notpersist-bar.md`](name-the-finreturn-notpersist-bar.md) — FinalizeBlock When CometBFT persists tx outputs / AppHash / ResultsHash not already settled / not Commit persist application state 正式三事（587 余量）（不变量 616）
+- [`name-the-finreturn-notresulthash-bar.md`](name-the-finreturn-notresulthash-bar.md) — FinalizeBlock When CometBFT hashes into ResultHash not Code / Data 印进本头 LastResultsHash / not this header LastResultsHash 正式三事（587 余量）（不变量 615）
+- [`name-the-finreturn-notheader-bar.md`](name-the-finreturn-notheader-bar.md) — FinalizeBlock When Application returns AppHash + tx outputs not printed in this header / not this header AppHash 正式三事（587 余量）（不变量 614）
+- [`name-the-finmorepre-notaftercommit-bar.md`](name-the-finmorepre-notaftercommit-bar.md) — FinalizeBlockResponse next_block_delay after committing before next height not slot / not final / not finmorepre bundled 正式三事（480 余量）（不变量 613）
+- [`name-the-finmorepre-notmorepre-bar.md`](name-the-finmorepre-notmorepre-bar.md) — FinalizeBlockResponse next_block_delay more precommits despite 2/3+ not decided / not 479 fintrigger 正式三事（480 余量）（不变量 612）
+- [`name-the-finmorepre-notproctime-bar.md`](name-the-finmorepre-notproctime-bar.md) — FinalizeBlockResponse next_block_delay includes processing time not timeout_commit / wallclock 正式三事（480 余量）（不变量 611）
+- [`name-the-fintrigger-notdecides-bar.md`](name-the-fintrigger-notdecides-bar.md) — FinalizeBlock When trigger decides block v not at height h will Finalize / not persist outputs 正式三事（479 余量）（不变量 610）
+- [`name-the-fintrigger-notprecommit-bar.md`](name-the-fintrigger-notprecommit-bar.md) — FinalizeBlock When trigger 2f+1 precommit not +2/3 prevote ExtendVote / not without all block parts 正式三事（479 余量）（不变量 609）
+- [`name-the-fintrigger-notparts-bar.md`](name-the-fintrigger-notparts-bar.md) — FinalizeBlock When trigger Proposal + all block parts not only hash / Process ran 正式三事（479 余量）（不变量 608）
+- [`name-the-finpersist-notsync-bar.md`](name-the-finpersist-notsync-bar.md) — FinalizeBlock When synchronous call not decides trigger / Process sync 正式三事（478 余量）（不变量 607）
+- [`name-the-finpersist-notoutputs-bar.md`](name-the-finpersist-notoutputs-bar.md) — FinalizeBlock When calls FinalizeBlock not persist outputs / 362 decides trigger 正式三事（478 余量）（不变量 606）
+- [`name-the-finpersist-notpersist-bar.md`](name-the-finpersist-notpersist-bar.md) — FinalizeBlock When persist decision not executes block v / 已经交差 正式三事（478 余量）（不变量 605）
+- [`name-the-finequiv-notnewdec-bar.md`](name-the-finequiv-notnewdec-bar.md) — FinalizeBlock equiv ABCI 1.0 not Contains newly decided / apply candidate 正式三事（586 余量）（不变量 604）
+- [`name-the-finequiv-notnoprep-bar.md`](name-the-finequiv-notnoprep-bar.md) — FinalizeBlock equiv ABCI 1.0 not no Prepare/Process 正式三事（586 余量）（不变量 603）
+- [`name-the-finequiv-notgates-bar.md`](name-the-finequiv-notgates-bar.md) — FinalizeBlock equiv ABCI 1.0 not four gates settled 正式三事（586 余量）（不变量 602）
+- [`name-the-finresp-notsettled-bar.md`](name-the-finresp-notsettled-bar.md) — Finalize 回包义务 must provide 四列 not changed set / settled 正式三事（363 余量）（不变量 601）
+- [`name-the-finempty-notcparam-bar.md`](name-the-finempty-notcparam-bar.md) — FinalizeBlock empty consensus_param_updates keep current not H+1 effective 正式三事（458 余量）（不变量 599）
+- [`name-the-finempty-notnoset-bar.md`](name-the-finempty-notnoset-bar.md) — FinalizeBlock empty keep current not changed set / H+1 effective 正式三事（458 余量）（不变量 598）
+- [`name-the-finempty-notmustprovide-bar.md`](name-the-finempty-notmustprovide-bar.md) — FinalizeBlock empty keep current not no must provide obligation 正式三事（458 余量）（不变量 597）
+- [`name-the-finasresult-notempty-bar.md`](name-the-finasresult-notempty-bar.md) — FinalizeBlock must provide values provided values not empty keep current / not CheckTx 正式三事（477 余量）（不变量 596）
+- [`name-the-finasresult-notcand-bar.md`](name-the-finasresult-notcand-bar.md) — FinalizeBlock must provide values as a result of executing not candidate 正式三事（477 余量）（不变量 595）
+- [`name-the-finasresult-notsettled-bar.md`](name-the-finasresult-notsettled-bar.md) — FinalizeBlock must provide values not already changed set / settled 正式三事（477 余量）（不变量 594）
+- [`name-the-finh1-bar.md`](name-the-finh1-bar.md) — FinalizeBlock When starts consensus for h+1 round 0 正式三事（不变量 593）
+- [`name-the-finunlock-bar.md`](name-the-finunlock-bar.md) — FinalizeBlock When unlocks mempool 正式三事（不变量 592）
+- [`name-the-finrecheck-bar.md`](name-the-finrecheck-bar.md) — FinalizeBlock When optional recheck 正式三事（不变量 591）
+- [`name-the-fincommit-bar.md`](name-the-fincommit-bar.md) — FinalizeBlock When calls Commit instruct persist 正式三事（不变量 590）
+- [`name-the-fndelay-bar.md`](name-the-fndelay-bar.md) — FinalizeBlockResponse next_block_delay 非确定正式三事（不变量 589）
+- [`name-the-finlock-bar.md`](name-the-finlock-bar.md) — FinalizeBlock When locks mempool 正式三事（不变量 588）
+- [`name-the-finreturn-bar.md`](name-the-finreturn-bar.md) — FinalizeBlock When AppHash tx outputs ResultHash persist 正式三事（不变量 587）
+- [`name-the-finequiv-bar.md`](name-the-finequiv-bar.md) — FinalizeBlock 等价于 ABCI 1.0 BeginBlock/DeliverTx/EndBlock 正式三事（不变量 586）
+- [`name-the-fintxcode-bar.md`](name-the-fintxcode-bar.md) — FinalizeBlock tx_results Code==0 完全合法正式三事（不变量 585）
+- [`name-the-finmisbeh-notvoteinfo-bar.md`](name-the-finmisbeh-notvoteinfo-bar.md) — FinalizeBlock misbehavior not VoteInfo availability 正式三事（不变量 569）
+- [`name-the-findecided-notproposed-bar.md`](name-the-findecided-notproposed-bar.md) — FinalizeBlock decided_last_commit from decided block not proposed_last_commit 正式三事（不变量 568）
+- [`name-the-finreward-notslashed-bar.md`](name-the-finreward-notslashed-bar.md) — FinalizeBlock can use decided_last_commit + misbehavior to determine rewards not already slashed 正式三事（不变量 567）
+- [`name-the-finfill-notcommitted-bar.md`](name-the-finfill-notcommitted-bar.md) — FinalizeBlock fill all fields not request complete means committed 正式三事（473 余量）（不变量 566）
+- [`name-the-finfill-notrefill-bar.md`](name-the-finfill-notrefill-bar.md) — FinalizeBlock fill all fields not no need to provide again 正式三事（473 余量）（不变量 565）
+- [`name-the-finfill-notdecprop-bar.md`](name-the-finfill-notdecprop-bar.md) — FinalizeBlock fill all fields not decided/proposed interchangeable 正式三事（473 余量）（不变量 564）
+- [`name-the-finfill-notpassedran-bar.md`](name-the-finfill-notpassedran-bar.md) — FinalizeBlock fill all fields not passed means ran Process 正式三事（473 余量）（不变量 563）
+- [`name-the-finfill-notneedfinalize-bar.md`](name-the-finfill-notneedfinalize-bar.md) — FinalizeBlock fill all fields not already don't need Finalize 正式三事（473 余量）（不变量 562）
+- [name-the-proccand-readonly-notcommitted-bar](name-the-proccand-readonly-notcommitted-bar.md)
+- [name-the-proccand-mayexecute-notcommitted-bar](name-the-proccand-mayexecute-notcommitted-bar.md)
+- [name-the-proccand-candidate-notcommitted-bar](name-the-proccand-candidate-notcommitted-bar.md)
+# Design Patterns
+
+每条一页：问题、方案、适用、优点、缺点、真实项目、常见 bug、「不确定」。
+
+已收：
+
+- [nonce-replay-protection](nonce-replay-protection.md)
+- [quorum-certificate](quorum-certificate.md)
+- [locking-in-bft](locking-in-bft.md)
+- [authenticated-state](authenticated-state.md)
+- [domain-separation](domain-separation.md)
+- [application-consensus-split](application-consensus-split.md)
+- [canonical-encoding](canonical-encoding.md)
+- [algorithm-agility](algorithm-agility.md)
+- [data-availability-sampling](data-availability-sampling.md)
+- [multi-client-determinism](multi-client-determinism.md)
+- [declare-then-schedule](declare-then-schedule.md)
+- [vrf-sortition](vrf-sortition.md)
+- [capacity-binds-storage](capacity-binds-storage.md)
+- [single-chain-chunks](single-chain-chunks.md)
+- [stateful-hash-signature](stateful-hash-signature.md)
+- [optimistic-serial-equiv](optimistic-serial-equiv.md)
+- [name-the-proved-ledger](name-the-proved-ledger.md)
+- [name-the-da-question](name-the-da-question.md)
+- [name-the-parachain-stage](name-the-parachain-stage.md)
+- [split-production-from-finality](split-production-from-finality.md)
+- [name-the-confirmation-grade](name-the-confirmation-grade.md)
+- [name-the-ownership-path](name-the-ownership-path.md)
+- [name-the-quorum-unit](name-the-quorum-unit.md)
+- [name-the-finality-recovery](name-the-finality-recovery.md)
+- [name-the-sample-decision](name-the-sample-decision.md)
+- [name-the-dissemination-stage](name-the-dissemination-stage.md)
+- [name-the-clock-and-the-vote](name-the-clock-and-the-vote.md)
+- [name-the-sortition-step](name-the-sortition-step.md)
+- [name-the-finality-marker](name-the-finality-marker.md)
+- [name-the-order-vs-state](name-the-order-vs-state.md)
+- [name-the-selected-chain](name-the-selected-chain.md)
+- [name-the-l2-status](name-the-l2-status.md)
+- [name-the-btc-lock](name-the-btc-lock.md)
+- [name-the-slash-reason](name-the-slash-reason.md)
+- [name-the-derivation-head](name-the-derivation-head.md)
+- [name-the-da-certificate](name-the-da-certificate.md)
+- [name-the-access-list](name-the-access-list.md)
+- [name-the-relay-door](name-the-relay-door.md)
+- [name-the-blob-fee](name-the-blob-fee.md)
+- [name-the-ibc-object](name-the-ibc-object.md)
+- [name-the-header-apphash](name-the-header-apphash.md)
+- [name-the-canonical-commit](name-the-canonical-commit.md)
+- [name-the-forkchoice-event](name-the-forkchoice-event.md)
+- [name-the-reference-input](name-the-reference-input.md)
+- [name-the-move-ability](name-the-move-ability.md)
+- [name-the-txid](name-the-txid.md)
+- [name-the-spend-path](name-the-spend-path.md)
+- [name-the-system-op](name-the-system-op.md)
+- [name-the-token-hop](name-the-token-hop.md)
+- [name-the-parent-root](name-the-parent-root.md)
+- [name-the-randao](name-the-randao.md)
+- [name-the-fee-leg](name-the-fee-leg.md)
+- [name-the-storage-lifetime](name-the-storage-lifetime.md)
+- [name-the-suicide-tx](name-the-suicide-tx.md)
+- [name-the-signed-chain](name-the-signed-chain.md)
+- [name-the-sender-kind](name-the-sender-kind.md)
+- [name-the-coinbase-age](name-the-coinbase-age.md)
+- [name-the-lock-kind](name-the-lock-kind.md)
+- [name-the-relative-lock](name-the-relative-lock.md)
+- [name-the-replace-signal](name-the-replace-signal.md)
+- [name-the-tx-envelope](name-the-tx-envelope.md)
+- [name-the-planned-access](name-the-planned-access.md)
+- [name-the-access-heat](name-the-access-heat.md)
+- [name-the-redeem-reveal](name-the-redeem-reveal.md)
+- [name-the-fork-state](name-the-fork-state.md)
+- [name-the-sig-encoding](name-the-sig-encoding.md)
+- [name-the-height-object](name-the-height-object.md)
+- [name-the-address-object](name-the-address-object.md)
+- [name-the-nonce-ceiling](name-the-nonce-ceiling.md)
+- [name-the-initcode-bound](name-the-initcode-bound.md)
+- [name-the-revert-leftover](name-the-revert-leftover.md)
+- [name-the-static-frame](name-the-static-frame.md)
+- [name-the-psbt-role](name-the-psbt-role.md)
+- [name-the-empty-account](name-the-empty-account.md)
+- [name-the-checksum-version](name-the-checksum-version.md)
+- [name-the-extended-key](name-the-extended-key.md)
+- [name-the-mnemonic-seed](name-the-mnemonic-seed.md)
+- [name-the-descriptor](name-the-descriptor.md)
+- [name-the-deployed-bound](name-the-deployed-bound.md)
+- [name-the-psbt-version](name-the-psbt-version.md)
+- [name-the-coinbase-heat](name-the-coinbase-heat.md)
+- [name-the-reserved-prefix](name-the-reserved-prefix.md)
+- [name-the-tapscript-leaf](name-the-tapscript-leaf.md)
+- [name-the-delegation](name-the-delegation.md)
+- [name-the-miniscript](name-the-miniscript.md)
+- [name-the-request-bus](name-the-request-bus.md)
+- [name-the-el-exit](name-the-el-exit.md)
+- [name-the-el-deposit](name-the-el-deposit.md)
+- [name-the-history-hash](name-the-history-hash.md)
+- [name-the-consolidation](name-the-consolidation.md)
+- [name-the-calldata-floor](name-the-calldata-floor.md)
+- [name-the-committee-index](name-the-committee-index.md)
+- [name-the-bls-precompile](name-the-bls-precompile.md)
+- [name-the-blob-schedule](name-the-blob-schedule.md)
+- [name-the-blob-reserve](name-the-blob-reserve.md)
+- [name-the-rlp-cap](name-the-rlp-cap.md)
+- [name-the-tx-gas-cap](name-the-tx-gas-cap.md)
+- [name-the-p256-verify](name-the-p256-verify.md)
+- [name-the-proposer-lookahead](name-the-proposer-lookahead.md)
+- [name-the-modexp-bound](name-the-modexp-bound.md)
+- [name-the-history-window](name-the-history-window.md)
+- [name-the-clz](name-the-clz.md)
+- [name-the-bpo](name-the-bpo.md)
+- [name-the-fork-config](name-the-fork-config.md)
+- [name-the-default-gas](name-the-default-gas.md)
+- [name-the-block-list](name-the-block-list.md)
+- [name-the-exit-domain](name-the-exit-domain.md)
+- [name-the-inclusion-window](name-the-inclusion-window.md)
+- [name-the-activation-churn](name-the-activation-churn.md)
+- [name-the-mcopy](name-the-mcopy.md)
+- [name-the-push0](name-the-push0.md)
+- [name-the-basefee-opcode](name-the-basefee-opcode.md)
+- [name-the-blobbasefee](name-the-blobbasefee.md)
+- [name-the-chainid](name-the-chainid.md)
+- [name-the-extcodehash](name-the-extcodehash.md)
+- [name-the-create2](name-the-create2.md)
+- [name-the-refund-cut](name-the-refund-cut.md)
+- [name-the-deprecation](name-the-deprecation.md)
+- [name-the-net-meter](name-the-net-meter.md)
+- [name-the-calldata-cut](name-the-calldata-cut.md)
+- [name-the-modexp-price](name-the-modexp-price.md)
+- [name-the-bn128-cut](name-the-bn128-cut.md)
+- [name-the-selfbalance](name-the-selfbalance.md)
+- [name-the-blake2f](name-the-blake2f.md)
+- [name-the-shift](name-the-shift.md)
+- [name-the-returndata](name-the-returndata.md)
+- [name-the-delegatecall](name-the-delegatecall.md)
+- [name-the-homestead](name-the-homestead.md)
+- [name-the-forward-compat](name-the-forward-compat.md)
+- [name-the-receipt-status](name-the-receipt-status.md)
+- [name-the-call-63rds](name-the-call-63rds.md)
+- [name-the-uncle-diff](name-the-uncle-diff.md)
+- [name-the-forkid](name-the-forkid.md)
+- [name-the-enr](name-the-enr.md)
+- [name-the-enr-request](name-the-enr-request.md)
+- [name-the-v2-transport](name-the-v2-transport.md)
+- [name-the-cfilter](name-the-cfilter.md)
+- [name-the-basic-filter](name-the-basic-filter.md)
+- [name-the-feefilter](name-the-feefilter.md)
+- [name-the-addrv2](name-the-addrv2.md)
+- [name-the-sendheaders](name-the-sendheaders.md)
+- [name-the-wtxidrelay](name-the-wtxidrelay.md)
+- [name-the-erlay](name-the-erlay.md)
+- [name-the-limited-service](name-the-limited-service.md)
+- [name-the-witness-wire](name-the-witness-wire.md)
+- [name-the-bloom-bit](name-the-bloom-bit.md)
+- [name-the-mempool-dump](name-the-mempool-dump.md)
+- [name-the-reject](name-the-reject.md)
+- [name-the-payment-uri](name-the-payment-uri.md)
+- [name-the-disabletx](name-the-disabletx.md)
+- [name-the-duplicate-txid](name-the-duplicate-txid.md)
+- [name-the-signed-message](name-the-signed-message.md)
+- [name-the-feature-negotiation](name-the-feature-negotiation.md)
+- [name-the-silent-payment](name-the-silent-payment.md)
+- [name-the-dns-payment](name-the-dns-payment.md)
+- [name-the-pong](name-the-pong.md)
+- [name-the-user-agent](name-the-user-agent.md)
+- [name-the-dummy](name-the-dummy.md)
+- [name-the-signet](name-the-signet.md)
+- [name-the-purpose](name-the-purpose.md)
+- [name-the-account](name-the-account.md)
+- [name-the-nested-account](name-the-nested-account.md)
+- [name-the-script-type](name-the-script-type.md)
+- [name-the-sorted-keys](name-the-sorted-keys.md)
+- [name-the-cosigner](name-the-cosigner.md)
+- [name-the-internal-key](name-the-internal-key.md)
+- [name-the-payment-code](name-the-payment-code.md)
+- [name-the-sortedmulti](name-the-sortedmulti.md)
+- [name-the-tr](name-the-tr.md)
+- [name-the-nonsegwit](name-the-nonsegwit.md)
+- [name-the-wpkh](name-the-wpkh.md)
+- [name-the-multia](name-the-multia.md)
+- [name-the-tap-psbt](name-the-tap-psbt.md)
+- [name-the-wallet-policy](name-the-wallet-policy.md)
+- [name-the-combo](name-the-combo.md)
+- [name-the-raw-addr](name-the-raw-addr.md)
+- [name-the-synthetic-xpub](name-the-synthetic-xpub.md)
+- [name-the-musig-psbt](name-the-musig-psbt.md)
+- [name-the-multisig-path](name-the-multisig-path.md)
+- [name-the-derived-entropy](name-the-derived-entropy.md)
+- [name-the-secure-setup](name-the-secure-setup.md)
+- [name-the-path-template](name-the-path-template.md)
+- [name-the-chaincode-delegation](name-the-chaincode-delegation.md)
+- [name-the-payjoin](name-the-payjoin.md)
+- [name-the-lex-order](name-the-lex-order.md)
+- [name-the-testnet4](name-the-testnet4.md)
+- [name-the-reserves](name-the-reserves.md)
+- [name-the-legacy-sign](name-the-legacy-sign.md)
+- [name-the-payment-request](name-the-payment-request.md)
+- [name-the-encrypted-key](name-the-encrypted-key.md)
+- [name-the-p2sh-address](name-the-p2sh-address.md)
+- [name-the-wal](name-the-wal.md)
+- [name-the-reap](name-the-reap.md)
+- [name-the-state](name-the-state.md)
+- [name-the-kept-pool](name-the-kept-pool.md)
+- [name-the-same-set](name-the-same-set.md)
+- [name-the-genesis](name-the-genesis.md)
+- [name-the-unchecked-stamp](name-the-unchecked-stamp.md)
+- [name-the-init-peer](name-the-init-peer.md)
+- [name-the-peer-handler](name-the-peer-handler.md)
+- [name-the-abci-conn](name-the-abci-conn.md)
+- [name-the-numpeers](name-the-numpeers.md)
+- [name-the-send](name-the-send.md)
+- [name-the-commit-lock](name-the-commit-lock.md)
+- [name-the-candidate](name-the-candidate.md)
+- [name-the-checktxstate](name-the-checktxstate.md)
+- [name-the-replay-protection](name-the-replay-protection.md)
+- [name-the-querystate](name-the-querystate.md)
+- [name-the-maxgas](name-the-maxgas.md)
+- [name-the-exectxresult](name-the-exectxresult.md)
+- [name-the-checktxresponse](name-the-checktxresponse.md)
+- [name-the-validatorupdate](name-the-validatorupdate.md)
+- [name-the-consensusparams](name-the-consensusparams.md)
+- [name-the-crash-steps](name-the-crash-steps.md)
+- [name-the-snapshot-restore](name-the-snapshot-restore.md)
+- [name-the-snapshot-discover](name-the-snapshot-discover.md)
+- [name-the-snapshot-switch](name-the-snapshot-switch.md)
+- [name-the-snapshot-take](name-the-snapshot-take.md)
+- [name-the-query-proof](name-the-query-proof.md)
+- [name-the-peer-filter](name-the-peer-filter.md)
+- [name-the-prepare-timeout](name-the-prepare-timeout.md)
+- [name-the-checktx-stable](name-the-checktx-stable.md)
+- [name-the-query-local](name-the-query-local.md)
+- [name-the-ve-height](name-the-ve-height.md)
+- [name-the-evidence-maxbytes](name-the-evidence-maxbytes.md)
+- [name-the-snapshot-verify](name-the-snapshot-verify.md)
+- [name-the-params-delay](name-the-params-delay.md)
+- [name-the-snapshot-conn](name-the-snapshot-conn.md)
+- [name-the-finalize-persist](name-the-finalize-persist.md)
+- [name-the-synchrony-params](name-the-synchrony-params.md)
+- [name-the-maxbytes-cap](name-the-maxbytes-cap.md)
+- [name-the-prepare-nondet](name-the-prepare-nondet.md)
+- [name-the-checktx-weak](name-the-checktx-weak.md)
+- [name-the-process-det](name-the-process-det.md)
+- [name-the-verify-det](name-the-verify-det.md)
+- [name-the-finalize-det](name-the-finalize-det.md)
+- [name-the-pbts-height](name-the-pbts-height.md)
+- [name-the-maxbytes-overhead](name-the-maxbytes-overhead.md)
+- [name-the-prepare-return](name-the-prepare-return.md)
+- [name-the-abci20-upgrade](name-the-abci20-upgrade.md)
+- [name-the-req3-coherence](name-the-req3-coherence.md)
+- [name-the-req6-coherence](name-the-req6-coherence.md)
+- [name-the-req9-noside](name-the-req9-noside.md)
+- [name-the-extend-once](name-the-extend-once.md)
+- [name-the-process-also](name-the-process-also.md)
+- [name-the-late-extension](name-the-late-extension.md)
+- [name-the-verify-when](name-the-verify-when.md)
+- [name-the-process-when](name-the-process-when.md)
+- [name-the-prepare-drop](name-the-prepare-drop.md)
+- [name-the-valid-value](name-the-valid-value.md)
+- [name-the-prepare-valid](name-the-prepare-valid.md)
+- [name-the-non-rp-extension](name-the-non-rp-extension.md)
+- [name-the-prepare-fields](name-the-prepare-fields.md)
+- [name-the-finprocgua-notallproc-bar](name-the-finprocgua-notallproc-bar.md)
+- [name-the-finprocgua-notcand-bar](name-the-finprocgua-notcand-bar.md)
+- [name-the-finprocgua-notrefill-bar](name-the-finprocgua-notrefill-bar.md)
+- [name-the-finalize-processed](name-the-finalize-processed.md)
+- [name-the-extend-when](name-the-extend-when.md)
+- [name-the-finalize-when](name-the-finalize-when.md)
+- [name-the-finalize-equiv](name-the-finalize-equiv.md)
+- [name-the-validator-type](name-the-validator-type.md)
+- [name-the-voteinfo](name-the-voteinfo.md)
+- [name-the-retain-height](name-the-retain-height.md)
+- [name-the-lane-priorities](name-the-lane-priorities.md)
+- [name-the-snapshot-identity](name-the-snapshot-identity.md)
+- [name-the-extended-voteinfo](name-the-extended-voteinfo.md)
+- [name-the-info-handshake](name-the-info-handshake.md)
+- [name-the-query-height](name-the-query-height.md)
+- [name-the-misbehavior](name-the-misbehavior.md)
+- [name-the-checktx-optional](name-the-checktx-optional.md)
+- [name-the-flush](name-the-flush.md)
+- [name-the-load-chunk](name-the-load-chunk.md)
+- [name-the-proposal-status](name-the-proposal-status.md)
+- [name-the-query-path](name-the-query-path.md)
+- [name-the-refetch](name-the-refetch.md)
+- [name-the-info-version](name-the-info-version.md)
+- [name-the-query-index](name-the-query-index.md)
+- [name-the-checktx-space](name-the-checktx-space.md)
+- [name-the-syncing-height](name-the-syncing-height.md)
+- [name-the-query-prove](name-the-query-prove.md)
+- [name-the-query-code](name-the-query-code.md)
+- [name-the-params-block](name-the-params-block.md)
+- [name-the-params-evidence](name-the-params-evidence.md)
+- [name-the-init-time](name-the-init-time.md)
+- [name-the-init-params](name-the-init-params.md)
+- [name-the-info-data](name-the-info-data.md)
+- [name-the-proofop-key](name-the-proofop-key.md)
+- [name-the-checktx-tx](name-the-checktx-tx.md)
+- [name-the-init-apphash](name-the-init-apphash.md)
+- [name-the-exectx-gas](name-the-exectx-gas.md)
+- [name-the-ext-commit-round](name-the-ext-commit-round.md)
+- [name-the-listsnap-empty](name-the-listsnap-empty.md)
+- [name-the-offer-snapshot](name-the-offer-snapshot.md)
+- [name-the-apply-chunk](name-the-apply-chunk.md)
+- [name-the-apply-retry](name-the-apply-retry.md)
+- [name-the-commit-noparam](name-the-commit-noparam.md)
+- [name-the-offer-fmt](name-the-offer-fmt.md)
+- [name-the-offer-accept](name-the-offer-accept.md)
+- [name-the-offer-unk](name-the-offer-unk.md)
+- [name-the-finalize-after](name-the-finalize-after.md)
+- [name-the-fin-apphash](name-the-fin-apphash.md)
+- [name-the-checktx-guard](name-the-checktx-guard.md)
+- [name-the-snap-height](name-the-snap-height.md)
+- [name-the-fin-fields](name-the-fin-fields.md)
+- [name-the-fin-txs](name-the-fin-txs.md)
+- [name-the-ext-req](name-the-ext-req.md)
+- [name-the-ext-req-hash](name-the-ext-req-hash.md)
+- [name-the-ext-req-txs](name-the-ext-req-txs.md)
+- [name-the-init-once](name-the-init-once.md)
+- [name-the-ext-req-mis](name-the-ext-req-mis.md)
+- [name-the-exectx-log](name-the-exectx-log.md)
+- [name-the-verify-height](name-the-verify-height.md)
+- [name-the-propose-timeout](name-the-propose-timeout.md)
+- [name-the-ht-match](name-the-ht-match.md)
+- [name-the-ext-resp](name-the-ext-resp.md)
+- [name-the-proc-req](name-the-proc-req.md)
+- [name-the-proc-req-rest](name-the-proc-req-rest.md)
+- [name-the-ext-vi-table](name-the-ext-vi-table.md)
+- [name-the-fin-req](name-the-fin-req.md)
+- [name-the-ext-when-formal](name-the-ext-when-formal.md)
+- [name-the-ext-usage](name-the-ext-usage.md)
+- [name-the-verify-req-bar](name-the-verify-req-bar.md)
+- [name-the-verify-formal-when](name-the-verify-formal-when.md)
+- [name-the-verify-status](name-the-verify-status.md)
+- [name-the-verify-resp-status](name-the-verify-resp-status.md)
+- [name-the-fin-resp-end](name-the-fin-resp-end.md)
+- [name-the-fin-resp-bar](name-the-fin-resp-bar.md)
+- [name-the-proc-resp-status](name-the-proc-resp-status.md)
+- [name-the-fin-req-end](name-the-fin-req-end.md)
+- [name-the-fin-req-rest](name-the-fin-req-rest.md)
+- [name-the-prep-req](name-the-prep-req.md)
+- [name-the-prep-req-rest](name-the-prep-req-rest.md)
+- [name-the-ext-vi-rest](name-the-ext-vi-rest.md)
+- [name-the-prep-req-end](name-the-prep-req-end.md)
+- [name-the-proc-req-end](name-the-proc-req-end.md)
+- [name-the-verifystatus-reject-bar](name-the-verifystatus-reject-bar.md)
+- [name-the-verifystatus-accept-bar](name-the-verifystatus-accept-bar.md)
+- [name-the-verifystatus-unknown-bar](name-the-verifystatus-unknown-bar.md)
+- [name-the-verifyrespstatus-exclusivedep-bar](name-the-verifyrespstatus-exclusivedep-bar.md)
+- [name-the-verifyrespstatus-validinvalid-bar](name-the-verifyrespstatus-validinvalid-bar.md)
+- [name-the-procrespstatus-exclusivedep-bar](name-the-procrespstatus-exclusivedep-bar.md)
+- [name-the-procrespstatus-validinvalid-bar](name-the-procrespstatus-validinvalid-bar.md)
+- [name-the-procreject-assume-notexecute-bar](name-the-procreject-assume-notexecute-bar.md)
+- [name-the-procreject-prevote-notverify-bar](name-the-procreject-prevote-notverify-bar.md)
+- [name-the-procreject-assume-notblockinvalid-bar](name-the-procreject-assume-notblockinvalid-bar.md)
+- [name-the-procreject-bar](name-the-procreject-bar.md)
+- [name-the-procaccept-default-bar](name-the-procaccept-default-bar.md)
+- [name-the-procaccept-liveness-bar](name-the-procaccept-liveness-bar.md)
+- [name-the-procaccept-shouldaccept-bar](name-the-procaccept-shouldaccept-bar.md)
+- [name-the-verifyaccept-default-bar](name-the-verifyaccept-default-bar.md)
+- [name-the-verifyaccept-liveness-bar](name-the-verifyaccept-liveness-bar.md)
+- [name-the-verifyaccept-shouldaccept-bar](name-the-verifyaccept-shouldaccept-bar.md)
+- [name-the-extusage-nondet-bar](name-the-extusage-nondet-bar.md)
+- [name-the-extusage-zerolen-bar](name-the-extusage-zerolen-bar.md)
+- [name-the-extusage-precommitnil-bar](name-the-extusage-precommitnil-bar.md)
+- [name-the-verifyusage-hashproc-bar](name-the-verifyusage-hashproc-bar.md)
+- [name-the-verifyusage-localproc-bar](name-the-verifyusage-localproc-bar.md)
+- [name-the-verifyusage-emptyext-bar](name-the-verifyusage-emptyext-bar.md)
+- [name-the-preparewhen-suggestvalidate-bar](name-the-preparewhen-suggestvalidate-bar.md)
+- [name-the-preparewhen-lateext-unverified-bar](name-the-preparewhen-lateext-unverified-bar.md)
+- [name-the-verifywhen-latemay-bar](name-the-verifywhen-latemay-bar.md)
+- [name-the-verifywhen-keepdiscard-bar](name-the-verifywhen-keepdiscard-bar.md)
+- [name-the-verifywhen-status-bar](name-the-verifywhen-status-bar.md)
+- [name-the-verifywhen-call-bar](name-the-verifywhen-call-bar.md)
+- [name-the-verifywhen-discard-bar](name-the-verifywhen-discard-bar.md)
+- [name-the-extwhen-broadcast-bar](name-the-extwhen-broadcast-bar.md)
+- [name-the-extwhen-precommit-bar](name-the-extwhen-precommit-bar.md)
+- [name-the-extwhen-canonicalvote-bar](name-the-extwhen-canonicalvote-bar.md)
+- [name-the-extwhen-fill-bar](name-the-extwhen-fill-bar.md)
+- [name-the-extwhen-return-bar](name-the-extwhen-return-bar.md)
+- [name-the-extwhen-call-bar](name-the-extwhen-call-bar.md)
+- [name-the-extwhen-lock-bar](name-the-extwhen-lock-bar.md)
+- [name-the-preparewhen-return-bar](name-the-preparewhen-return-bar.md)
+- [name-the-preparewhen-collect-bar](name-the-preparewhen-collect-bar.md)
+- [name-the-prepareusage-nochecks-bar](name-the-prepareusage-nochecks-bar.md)
+- [name-the-prepareusage-rawmust-bar](name-the-prepareusage-rawmust-bar.md)
+- [name-the-applysnapusage-refetch-bar](name-the-applysnapusage-refetch-bar.md)
+- [name-the-loadsnapusage-bar](name-the-loadsnapusage-bar.md)
+- [name-the-listsnapusage-bar](name-the-listsnapusage-bar.md)
+- [name-the-offersnapusage-bootstrap-bar](name-the-offersnapusage-bootstrap-bar.md)
+- [name-the-infousage-defaultlane-bar](name-the-infousage-defaultlane-bar.md)
+- [name-the-infousage-persist-bar](name-the-infousage-persist-bar.md)
+- [name-the-initchainusage-decide-bar](name-the-initchainusage-decide-bar.md)
+- [name-the-initchainusage-bar](name-the-initchainusage-bar.md)
+- [name-the-infousage-bar](name-the-infousage-bar.md)
+- [name-the-flushusage-bar](name-the-flushusage-bar.md)
+- [name-the-echousage-bar](name-the-echousage-bar.md)
+- [name-the-commitretaincaution-bar](name-the-commitretaincaution-bar.md)
+- [name-the-chktxguardusage-bar](name-the-chktxguardusage-bar.md)
+- [name-the-chktxcodereject-bar](name-the-chktxcodereject-bar.md)
+- [name-the-chktxsource-bar](name-the-chktxsource-bar.md)
+- [name-the-queryusage-bar](name-the-queryusage-bar.md)
+- [name-the-chktxvalidate-bar](name-the-chktxvalidate-bar.md)
+- [name-the-applysnapusage-bar](name-the-applysnapusage-bar.md)
+- [name-the-chktxtype-bar](name-the-chktxtype-bar.md)
+- [name-the-offersnaptrust-bar](name-the-offersnaptrust-bar.md)
+- [name-the-chktxlane-bar](name-the-chktxlane-bar.md)
+- [name-the-commitpersist-bar](name-the-commitpersist-bar.md)
+- [name-the-finmorepre-bar](name-the-finmorepre-bar.md)
+- [name-the-finwhenparts-bar](name-the-finwhenparts-bar.md)
+- [name-the-finpersist-bar](name-the-finpersist-bar.md)
+- [name-the-finasresult-bar](name-the-finasresult-bar.md)
+- [name-the-finharddet-bar](name-the-finharddet-bar.md)

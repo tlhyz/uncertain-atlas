@@ -1,5 +1,8 @@
 # qtb — Gate USDT-M 永续回测 / 寻参 / 报告框架
 
+区块链协议知识库在 [`uncertain-atlas/`](uncertain-atlas/README.md)，与本交易框架无关，不要混进 `qtb/`。
+
+
 面向 **Gate VIP7 + 高返佣** 的现金流型量化研究工具。  
 任意 USDT 永续合约（`BTC_USDT` / `ETH_USDT` / `牛来_USDT`）。  
 默认 **只做回测**。实盘模块存在，但 **强制 DRY_RUN**，没有真实下单通道。

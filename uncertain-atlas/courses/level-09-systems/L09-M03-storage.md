@@ -1,0 +1,117 @@
+# L9.3 存储：原子提交、WAL、断电
+
+优先级：必学  
+先修：L4.4 WAL，L0.2 确定性，L5.3 同根
+
+---
+
+## A. 先修知识
+
+共识说「高度 H 提交了」。磁盘必须留下与这句话一致的字节。  
+L4.4：崩溃后不能投矛盾票。本课把同一思想扩到状态库。
+
+---
+
+## B. 核心问题
+
+**写到一半断电，重启后可以存在哪些磁盘状态？哪些必须当实现事故？**
+
+---
+
+## C. 直觉（ELI15）
+
+记账员同时改两本册：余额和「已处理序号」。  
+雷劈了：一本改了，一本没改。第二天两名记账员对不上。  
+正确的规矩：要么两本都是旧的，要么两本都是新的。不允许各改一半。
+
+预写日志（WAL）：先在防水纸上写下「我准备做什么」，再改册。醒来先读防水纸。
+
+---
+
+## D. 正式定义
+
+**崩溃原子性（实现保证）**
+
+对已 commit 的高度 H，重启后只允许：
+
+1. 完全没有 H 的状态（将重放 H），或  
+2. 完整的 H 后状态 + 与之一致的共识元数据（锁、投票记录、应用哈希）。
+
+禁止：应用状态在 H、共识锁还在 H-1；或相反。
+
+**WAL / 快照 / 重放**
+
+- WAL：按顺序记将要做的事，fsync 策略决定断电窗口。
+- 快照：少重放；快照与 WAL 切点错了会静默坏数据。
+- 剪枝：删旧体之后，必须仍能验新头（或明确放弃从创世校验）。
+
+**事实：** 这不是密码学。磁盘、文件系统、容器突然杀进程，都在部署层。  
+**事实：** 两客户端同 L 不同根，也可能是一边半提交，不是 STM 数学错了。
+
+---
+
+## E. 最小案例
+
+高度 100 commit。进程在写出账户 A 新余额后、写账户 B 前被杀。  
+重启若直接服务：A、B 和一个状态根谎言。  
+正确：丢弃未 fsync 的 100，从 99 + WAL 重放；或恢复到完整 100。
+
+CometBFT：崩溃后把已 lock 的值忘掉，去投冲突块 → **安全**事故，不是「性能小问题」。
+
+---
+
+## F. 真实项目
+
+Bitcoin 的 chainstate / flush；CometBFT WAL；Ethereum 各客户端 KV；Aptos 多版本提交边界。  
+本课不点名未核过的数据库品牌当规范。
+
+---
+
+## G. 源码入口
+
+预告：commit 时的写顺序、fsync、重启重放、校验应用哈希。  
+先写一个「杀进程再开」的测试，再谈吞吐。
+
+---
+
+## H. 攻击者模型
+
+- 不需要拜占庭：只需要 SIGKILL 和满磁盘。
+- 诱导频繁快照与损坏切点。
+- 剪枝后骗轻节点「没有历史所以信我」。
+
+---
+
+## I. 代价
+
+每笔 fsync：安全、慢。  
+少 fsync：快、断电窗口大。  
+这是明确的实现/部署权衡，不要写进「协议 TPS」广告。
+
+---
+
+## J. 对「不确定」的意义
+
+结算机第一版的 invariant 应可写成测试：
+
+```text
+crash_at_any_point ⇒ restart ∈ {pre_H, post_H_complete}
+```
+
+见 `libraries/invariants/` 与反模式 half-written-state。  
+后量子验签再慢，也不许用「先写一半状态」换速度。
+
+---
+
+## 精密检查
+
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | 状态承诺哈希必须与落盘一致 |
+| 协议 | 原子高度：无半块状态 |
+| 实现 | WAL、fsync、剪枝切点 |
+| 部署 | 断电、磁盘满、状态同步源 |
+| 经济 | 存档成本谁付（L2.6） |
+
+**禁止假学习：** 「fsync 慢所以可以先写一半。」「state sync 过了所以从创世验证过。」「有限服务位 = 已经能服任意旧块。」「只保证最近窗口 = 已经剪枝。」「看见写下每条消息 = 已经 fsync。」「看见回放时又要签 = 已经双签。」「看见 LastSignBytes 对上 = 已经换了高度。」「看见 State 对象 = 已经写进块。」「看见头上的根 = 已经有了 State。」「看见能读本地 State = 已经进了规范。」「看见创世 app_state = 已经验过应用状态。」「看见节点起来 = 已经过了 genesis_time。」「看见创世 validators 空 = 已经没有集合。」
+**边界：** 见反模式 half-written-state。精读：[`../../tracks/implementation/worked-example-crash.md`](../../tracks/implementation/worked-example-crash.md)、[`../../tracks/implementation/worked-example-statesync.md`](../../tracks/implementation/worked-example-statesync.md)（快照跳过历史重放；锚是轻验 AppHash，不是 Snapshot.hash）。轻验集合 ≠ 提议者选择：ASA-2024-009。写盘前尺寸检查不得用平台宽度整数：CVE-2025-46597（卡住内存池旋钮 ≠ 固定宽度）。有限服务位 ≠ 已经能服任意旧块；只保证最近窗口 ≠ 已经剪枝：[`../../tracks/network/worked-example-limited-service-vs-archive.md`](../../tracks/network/worked-example-limited-service-vs-archive.md)（不变量 250）。不要抄位编号 / 窗口块数。写下每条消息 ≠ 已经 fsync；回放时又要签 ≠ 已经双签：[`../../tracks/implementation/worked-example-wal-vs-signed.md`](../../tracks/implementation/worked-example-wal-vs-signed.md)（不变量 298）。不要抄旋转体积。不要写怎样从损坏里恢复。本地 State ≠ 已经进了块；头上的根 ≠ 已经有了 State：[`../../tracks/implementation/worked-example-state-vs-gossip.md`](../../tracks/implementation/worked-example-state-vs-gossip.md)（不变量 300）。不要抄验证者人数上限。不要写怎样拼 State 字段或怎样算头上的根。创世 app_state ≠ 已经验过应用状态；进程起来 ≠ 已经过了 genesis_time：[`../../tracks/implementation/worked-example-genesis-vs-app.md`](../../tracks/implementation/worked-example-genesis-vs-app.md)（不变量 303）。不要抄字段表。不要写怎样填创世字段或怎样调 InitChain。

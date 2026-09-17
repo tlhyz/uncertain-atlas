@@ -1,0 +1,120 @@
+# L4.6 HotStuff / Casper 对照（不深挖变体）
+
+优先级：进阶（知识树 M4.7）  
+先修：L4.1–L4.3，L5.2 可后读
+
+---
+
+## A. 先修知识
+
+CometBFT：同一高度上 Propose → Prevote → Precommit，靠锁防止对两个值出证书。  
+本课只建对照表。不把所有 BFT 变体讲完。
+
+---
+
+## B. 核心问题
+
+**QC、view change、FFG 检查点，各自换掉了 Tendermint 的哪一块？它们还要不要 quorum 相交？**
+
+---
+
+## C. 直觉（ELI15）
+
+三种开会规矩：
+
+1. **Tendermint：** 每一层楼都要走完两轮举手，超时就整层换主持人。  
+2. **HotStuff 味：** 把「同意」做成一张可接力的证书（QC）。主持人换了，带着证书往下走，少一些全员空转。  
+3. **Casper FFG 味：** 平时还可以先跟一个头走（像选当前导演），每隔一段再盖「这一卷成片了」的章。
+
+都还是「足够多的人重叠里要有诚实的」。没有魔法第三种算术。
+
+---
+
+## D. 正式定义
+
+**共同（事实：标准 BFT 论证）**
+
+只要最终性来自法定人数证书，就需要某种相交：两张关于冲突值的最终证书不能同时成立。
+
+**HotStuff 家族（论文级描述，实现各异）**
+
+- 关键对象：Quorum Certificate（见模式 quorum-certificate）。  
+- 线性 view change 是论文卖点之一：换主不总是 O(n²) 全员对全员。  
+- **推断：** 「线性」指消息复杂度量级，不是「一定更快」。常数、流水线、实现决定体感。
+
+**Casper FFG（Ethereum 用其思想，见 L5.2）**
+
+- 在一条可能摆动的 fork choice 之上，叠加检查点最终性。  
+- 与 Tendermint 不同：不是每个 slot/高度都 commit。  
+- 与 Nakamoto 不同：最终性是协议对象，不是纯确认数政策。
+
+**不要混**
+
+| | 每高度 commit | 单独 fork choice 头 | 抽样固化 |
+|---|---|---|---|
+| CometBFT | 是 | 弱 / 不走这条 | 否 |
+| Gasper | 否 | 是（LMD-GHOST） | 否 |
+| Avalanche | 否 | 否（另一套） | 是 |
+
+---
+
+## E. 最小案例
+
+同一冲突：块 A、块 B。  
+Tendermint：同一高度两张 precommit QC 在 <1/3 作恶下不应并存。  
+FFG：两个冲突检查点被最终，应可抽出可 slash 的矛盾票。谓词是 phase0 的 double / surround（容器顺序不对称），由信标状态执行 `slash_validator`，不是「任意两张签」。见 [`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。  
+若实现只检查「票数够」不检查「同一目标/同一集合」，相交被架空。
+
+---
+
+## F. 真实项目
+
+HotStuff 论文与 Diem/后继系统；CometBFT；Ethereum Gasper。  
+本课不点名所有「HotStuff 改进」品牌。
+
+---
+
+## G. 源码入口
+
+先读一张 QC 的字节里有没有：高度/view、值哈希、集合哈希、签名聚合域。缺域分离见反模式。
+
+---
+
+## H. 攻击者模型
+
+- 用 A 家族的直觉去审 B 家族的实现（假学习导致漏锁）。  
+- 聚合签名实现错，假 QC。  
+- 把「论文线性」写成运维 SLA。
+
+---
+
+## I. 代价
+
+流水线/QC：吞吐与换主更活，规范与实现更绕。  
+FFG + fork choice：用户有三种「到了」，产品必须选一种结算。
+
+---
+
+## J. 对「不确定」的意义
+
+**建议：** 第一版先钉一种：CometBFT 式每高度 commit，或明确的检查点最终。  
+不要第一版同时卖 QC 流水线 + FFG + 抽样。对照表留给以后改引擎。  
+出块装置与最终装置拆开是另一行：Polkadot 官方把 BABE 与 GRANDPA 写成并行独立服务，最终对链、一次敲定祖先。精读：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)（不变量 126）。不要把「混合共识」写成已经每高度 commit，也不要写成已经 Gasper 三词。  
+Gasper 自己的三等是另一页：head ≠ justified ≠ finalized。精读：[`../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md`](../../tracks/finality/worked-example-head-vs-justified-vs-finalized.md)（不变量 127）。  
+抽样固化是第三列：α 多数不是全集证书，连续 β 不是 QC。精读：[`../../tracks/consensus/worked-example-snow-sample-vs-qc.md`](../../tracks/consensus/worked-example-snow-sample-vs-qc.md)（不变量 131）。  
+Algorand 不在这三列：VRF 抽中不是已经认证，soft vote 不是已经 certify。精读：[`../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134）。
+
+---
+
+## 精密检查
+
+| 层 | 本课钉在哪 |
+|---|---|
+| 密码学 | QC / 签名聚合是密码组件，本课不证 |
+| 协议 | 流水线 QC ≠ 每高度 Tendermint commit；FFG 是检查点最终 |
+| 实现 | 消息路径不同，两实现必须同最终对象 |
+| 部署 | 未测时延不得当事实 |
+| 经济 | 「更新所以更安全」是广告 |
+
+**禁止假学习：** 「都是 BFT 所以最终性一样。」「HotStuff 更新所以更安全。」「Avalanche 也是 BFT 所以有 QC。」「密码抽签所以已经最终。」  
+**边界：** 不证论文、不列所有变体、不写未测的消息时延。不抄现行罚金。slash 谓词精读见 [`../../tracks/economic/worked-example-casper-slashing.md`](../../tracks/economic/worked-example-casper-slashing.md)。BABE ≠ GRANDPA 不在本课展开：[`../../tracks/consensus/worked-example-babe-vs-grandpa.md`](../../tracks/consensus/worked-example-babe-vs-grandpa.md)。超多数单位（验证者 vs 质押）见 [`../../tracks/consensus/worked-example-npos-equal-weight.md`](../../tracks/consensus/worked-example-npos-equal-weight.md)（不变量 129）。抽样 α ≠ QC：[`../../tracks/consensus/worked-example-snow-sample-vs-qc.md`](../../tracks/consensus/worked-example-snow-sample-vs-qc.md)（不变量 131）。抽签 ≠ 已认证：[`../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md`](../../tracks/consensus/worked-example-vrf-sortition-vs-certified.md)（不变量 134）。Doomslug ≠ BFT 谓词：[`../../tracks/finality/worked-example-doomslug-vs-bft.md`](../../tracks/finality/worked-example-doomslug-vs-bft.md)（不变量 135）。

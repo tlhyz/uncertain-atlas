@@ -1,0 +1,185 @@
+# Sui · 19 节档案（第一版）
+
+核心对照：传统 `Account → State` vs `Object → Ownership → Dependency`。  
+资料：Sui 文档与论文（Narwhal/Bullshark、对象模型）。源码路径预告。不写官网 TPS。
+
+---
+
+## 1. 一句话定义
+
+对象有 ID、版本、所有者。所有权同时决定谁能用和版本走快路径还是共识。Address-owned 可走快路径；party 仍是单地址所有，版本走共识。shared 重新引入争用与共识，引用不是已经授权。精读：[`../../tracks/parallelism/worked-example-owned-vs-fastpath.md`](../../tracks/parallelism/worked-example-owned-vs-fastpath.md)（不变量 128）。
+
+---
+
+## 2. 它解决的问题
+
+账户模型把很多不相关的支付挤在「全网一个顺序」里。  
+Sui 想：如果两笔交易动的是不同的私有对象，何必全球排队？
+
+它不消灭共享状态。DEX 式盘子仍是 shared，故事退回排序。
+
+---
+
+## 3. 架构图
+
+```text
+钱包 -- 声明对象的交易 --> 全节点
+                               ↓
+                    分类：只碰 owned？还是碰 shared？
+                               ↓
+              owned 快路径（共识旁路思想）    shared → 共识排序（Narwhal/Bullshark 等）
+                               ↓
+                    Move 执行 + 对象版本 +1
+                               ↓
+                    对象存储
+```
+
+具体共识组件名称随版本演进，以当前 Sui 仓库为准。
+
+---
+
+## 4. 一笔交易完整生命周期
+
+1. 交易列出要读/写的对象及其版本。  
+2. 签名。所有者必须覆盖 owned 对象的转移。  
+3. 节点检查版本是否仍是最新。过期则拒。  
+4. 若是 address-owned 且官方表走快路径：仍须读现行提交路径。Party 对象即使单地址所有也走共识。  
+5. 若有 shared 或其它共识对象：进入排序。引用 shared 不是已经授权。进了某验证者的共识块不是这笔已被接受。  
+6. Move 执行。成功则对象版本递增，所有权可能变更。  
+7. 失败：版本已变或执行 abort，状态回到执行前对象版本。
+
+---
+
+## 5. 状态模型
+
+见课程 L2.3。  
+**owned / shared / immutable** 三分。版本是乐观并发控制的钉。  
+并行来自「依赖图稀疏」，不是执行器喊得响。
+
+---
+
+## 6. 共识
+
+共享对象路径需要全序。历史上走 Narwhal / Bullshark 一族；现行官方页写 Mysticeti + Transaction Driver。客户端不自己拼证书。  
+**事实：** 带着这笔的块被提交，单独不够让这笔生效，还要接受票。certified effects 与 certified checkpoint 是两种最终证明。  
+**事实：** 这是「数据可用与排序拆开」的工程路线之一。  
+**推断：** 快路径的安全论证必须单独读，不能用「我们有 BFT」一句话罩住所有交易。  
+精读：[`../../tracks/parallelism/worked-example-owned-vs-fastpath.md`](../../tracks/parallelism/worked-example-owned-vs-fastpath.md)（不变量 128）。不抄测试 TPS。
+
+与 Solana 比：Solana 每笔都进 leader 槽的全序味道更重；Sui 试图让无争用交易少排队。
+
+---
+
+## 7. 执行
+
+Move VM。资源不能随便 copy/drop。  
+确定性：同版本对象 + 同交易字节 → 同结果。  
+冲突：版本过期，不是「先并行再回滚一整块」的 Aptos 故事。
+
+---
+
+## 8. 网络
+
+对象交易的传播仍受对象热点影响：热 shared 对象的交易会在共识路径上挤。  
+快路径减少的是**无冲突交易的排序延迟**，不是魔法带宽。
+
+---
+
+## 9. 存储
+
+对象存活性、版本、所有权索引。垃圾对象与历史版本策略属实现。  
+崩溃必须不出现「对象版本加了、所有权没改」的半态。
+
+---
+
+## 10. 密码学
+
+用户签名（常用 Ed25519 等）、共识投票签名、对象 ID / 摘要哈希。  
+后量子：每对象转移一签，owned 分散；热 shared 仍会把验签挤到共识路径。
+
+---
+
+## 11. 安全假设
+
+| 假设 | 失效 |
+|---|---|
+| 快路径规则被诚实多数执行 | 双花 owned 或分叉可见性 |
+| 共享对象上的 BFT 假设 | 与普通 BFT 同类 |
+| Move 模块不破坏资源不变量 | 「钱被复制」 |
+| 版本检查完整 | 脏写 |
+| 用户签名算法 | 盗签 |
+
+---
+
+## 12. 最大结构性优势
+
+**所有权把「要不要全球排队」变成类型问题。**  
+这是世界观级的并行来源，比「机器更好」稳。
+
+---
+
+## 13. 最大具体缺陷
+
+1. 共享对象一多，优势收缩。  
+2. 钱包必须理解对象/版本，比余额难。  
+3. 快路径与共识路径两套语义，产品文案易混。  
+4. 共识栈随版本变，档案必须跟仓库，不能跟新闻。  
+5. 对「不确定」：若第一版没有共享盘子，整套双路径是过量复杂度。
+
+---
+
+## 14. Trade-off
+
+| 得到 | 换 |
+|---|---|
+| 无争用交易低延迟 | 双路径安全论证与实现 |
+| Move 线性减少复制类 bug | 语言与工具链陡 |
+| 对象证明/所有权清晰 | 热 shared 仍痛 |
+
+---
+
+## 15. 历史事故
+
+已归档官方七问：[`../../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md`](../../tracks/failure-museum/sui-2024-11-21-zero-cost-assert.md)（估值为 0 ≠ 已安全）；[`../../tracks/failure-museum/sui-2026-01-14-commit-divergence.md`](../../tracks/failure-museum/sui-2026-01-14-commit-divergence.md)（隔离拒证 ≠ 已分叉）；[`../../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md`](../../tracks/failure-museum/sui-2026-05-gas-smash-cancel.md)（取消 ≠ 已不扣款）；[`../../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md`](../../tracks/failure-museum/sui-2026-05-dkg-verdict-disk.md)（DKG 关掉 ≠ 已落盘）。其它停机仍须官方 postmortem，不编根因。
+
+---
+
+## 16. 源码入口（预告）
+
+1. 交易分类：owned vs shared。  
+2. 对象版本检查。  
+3. Move 执行与对象写回。
+
+先分类器，再共识。
+
+---
+
+## 17. 关键函数（逻辑级）
+
+**版本检查**  
+输入：声明的 object version、存储中的 version。  
+输出：过期则拒。  
+invariant：不得对 stale version 写成功。
+
+**所有权转移**  
+输入：owner 签名、对象。  
+输出：新 owner。  
+invariant：非 owner 不能转 owned。
+
+---
+
+## 18. 如何测试
+
+owned 快路径与 shared 路径的差分；版本抢跑；资源复制应编译失败或执行 abort。  
+「不确定」应偷：每条并行路径都要有「为什么可以不进全序」的书面 invariant。
+
+---
+
+## 19. 「不确定」适用性
+
+| 档 | 内容 |
+|---|---|
+| 强烈建议研究 | owned vs shared；版本；「无争用可不进全序」的条件 |
+| 可以参考 | Move 资源线性 |
+| 暂时不需要 | 整套 Narwhal 产品栈、Sui 生态对象 |
+| 不建议采用 | 第一版就上双路径却说不清快路径假设 |

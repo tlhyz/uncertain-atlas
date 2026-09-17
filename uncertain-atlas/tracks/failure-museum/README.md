@@ -1,0 +1,105 @@
+# 失败博物馆
+
+每案固定 7 问：发生了什么 / 根因 / 哪个 invariant / 为何测试没发现 / 修复 / 「不确定」怎么办 / 回归测试。
+
+已归档：
+
+- [cve-2018-17144](cve-2018-17144.md)（实现：重复输入）
+- [cve-2010-5139](cve-2010-5139.md)（实现：输出求和溢出）
+- [bip-0050-2013-fork](bip-0050-2013-fork.md)（实现：BDB 锁上限变成未写明的共识；BIP 50）
+- [cve-2012-2459](cve-2012-2459.md)（协议构造+实现：Merkle 奇数复制 ⇒ 同根不同列表）
+- [cve-2019-7167](cve-2019-7167.md)（密码：Sprout 证明可靠性破 ⇒ 屏蔽池可伪造）
+- [cve-2021-39137](cve-2021-39137.md)（实现：Geth RETURNDATA 别名 ⇒ 少数分叉）
+- [cve-2024-52912](cve-2024-52912.md)（实现+部署：调整钟绕过上限 ⇒ 拒收规范新块）
+- [cve-2024-52913](cve-2024-52913.md)（实现+网络：有界索取表 ⇒ 看不见未确认交易）
+- [cve-2019-25220](cve-2019-25220.md)（实现+部署：低难度头填爆索引；含 CVE-2024-52916 亲戚）
+- [cve-2024-52914](cve-2024-52914.md)（实现：孤儿解析二次扫描卡住数小时）
+- [cve-2024-52922](cve-2024-52922.md)（实现+网络：宣布新块后单一对等节点卡住传播）
+- [cve-2024-35202](cve-2024-35202.md)（实现+网络：部分块重建失败后第二次 blocktxn 断言崩）
+- [cve-2024-52921](cve-2024-52921.md)（实现+网络：未请求变异块清掉其他对等节点的下载状态）
+- [cve-2025-54605](cve-2025-54605.md)（实现+部署：非法块无条件日志灌盘；含 54604 自连接亲戚）
+- [cve-2024-52911](cve-2024-52911.md)（实现：非法块提前 return，后台脚本读已释放预计算）
+- [cve-2025-46598](cve-2025-46598.md)（实现+网络：未确认非标准拒了但不踢人，重复烧 CPU）
+- [cve-2024-52915](cve-2024-52915.md)（实现+网络：一条 INV 灌满发送缓冲）
+- [cve-2024-52920](cve-2024-52920.md)（实现+网络：畸形 GETDATA 单连接空转）
+- [inv-to-send-2023](inv-to-send-2023.md)（实现+网络：出站待宣布集合排序卡住 P2P；官方披露，无 CVE）
+- [asa-2024-004](asa-2024-004.md)（部署+经济：默认证据窗可能短于解绑；无代码补丁）
+- [cve-2015-3641](cve-2015-3641.md)（实现+网络：最大序列化长度被当成接收分配上限）
+- [cve-2024-52919](cve-2024-52919.md)（实现+网络：地址表递增 ID 回绕；限速 ≠ 宽度）
+- [cve-2020-14198](cve-2020-14198.md)（实现+网络：无界封禁表 + GETADDR 二次扫描）
+- [cve-2025-46597](cve-2025-46597.md)（实现：32-bit 写盘前尺寸检查溢出；卡住旋钮 ≠ 固定宽度）
+- [cve-2015-20111](cve-2015-20111.md)（实现+部署：UPnP 局域网打洞辅助；含 52917 默认关则不受影响）
+- [cve-2017-18350](cve-2017-18350.md)（实现+部署：出站 SOCKS 代理不是 P2P 对等节点；须先配置才脆弱）
+- [cve-2024-52918](cve-2024-52918.md)（实现+部署：支付 URI 远程取单不是共识验证；修法是删 BIP70）
+- [asa-2024-009](asa-2024-009.md)（协议+实现+部署：轻验集合对上 ≠ 提议者选择已对齐）
+- [asa-2024-011](asa-2024-011.md)（实现：扩展快路径跳过普通票的发送者下标检查）
+- [asa-2024-001](asa-2024-001.md)（实现+协议：治理改扩展启用高度，验证写错则 panic 停链）
+- [asa-2025-002](asa-2025-002.md)（实现+网络：分片外层下标必须等于证明下标；错配会挡住正确片）
+- [asa-2025-003](asa-2025-003.md)（实现+网络：位图结构未验完就先流言，最坏停网）
+- [csa-2026-001](csa-2026-001.md)（协议+实现：BFT Time 验 commit 与推导 Time 路径不一致；Critical）
+- [asa-2025-001](asa-2025-001.md)（实现+网络：blocksync 目标高度必须可归因且可回退）
+- [asa-2023-002](asa-2023-002.md)（部署+协议：默认块上限不是第一轮活性 SLA）
+- [cve-2021-21271](cve-2021-21271.md)（协议+实现：飞行中的 last commit 不是证据身份；Mulberry）
+- [cve-2020-15091](cve-2020-15091.md)（协议+实现+经济：+2/3 不是其余槽位已签；Syringa）
+- [alderfly](alderfly.md)（协议+经济：验过头不是已经能交证据；朝前 lunatic）
+- [cve-2020-5303](cve-2020-5303.md)（实现+网络+部署：握手请求不是已接受的邻居；Lavender）
+- [asa-2024-006](asa-2024-006.md)（协议+实现：提议者注入的扩展不是投票权预言机）
+- [asa-2024-002](asa-2024-002.md)（协议+实现：单笔 CheckTx 绿不是整包可提案）
+- [asa-2024-0012](asa-2024-0012.md)（实现+协议：外层交易上限不是内层解码已有界；含 0013）
+- [isa-2025-002](isa-2025-002.md)（协议+实现+部署：可选模块 EndBlocker 出错不是局部失败；亲戚 ASA-2025-003 不另立）
+- [asa-2024-005](asa-2024-005.md)（经济+协议：再委托不是待执行罚没的洗白）
+- [x-crisis-no-halt](x-crisis-no-halt.md)（协议+实现+部署：停链交易不是链已经停；官方不修）
+- [isa-2025-005](isa-2025-005.md)（实现+协议+经济：奖励池入金溢出不是只是金额算错）
+- [asa-2024-003](asa-2024-003.md)（协议+实现+部署：未初始化的被挡账户不是可归属的地址）
+- [asa-2024-010](asa-2024-010.md)（实现+协议：Int/Dec 位宽对不齐不是已对齐的数）
+- [isa-2025-001](isa-2025-001.md)（协议+实现：跨链确认的 JSON 反序列化不是已经确定；含 ASA-2025-004）
+- [asa-2024-007](asa-2024-007.md)（协议+实现+经济：超时回调里再跑超时不是 ICS-20 已经原子）
+- [dragonberry](dragonberry.md)（密码+协议+经济：ICS-23 验通过不是叶子已在原树；伪造超时不是 ICS-20 已结算）
+- [asa-2023-001](asa-2023-001.md)（部署+实现：升级高度上的进程管理器不是可信的下载通道）
+- [elderflower](elderflower.md)（协议+实现+经济：授权代发漏掉 ValidateBasic 不是内层已认证）
+- [jackfruit](jackfruit.md)（协议+实现：ValidateBasic 读本地钟不是已经确定；CVE-2021-41135）
+- [barberry](barberry.md)（协议+实现+经济：别人把空地址初始化成只进不出不是还没开户所以安全）
+- [solana-2022-06-01-durable-nonce](solana-2022-06-01-durable-nonce.md)（协议+实现：失败的 durable nonce 不是已经不能再播；当普通交易处理再重提不是已消费）
+- [solana-2022-09-30-duplicate-fork](solana-2022-09-30-duplicate-fork.md)（协议+实现+部署：已确认的重复槽赢家不是下一领导者会往上建的父块）
+- [solana-2023-02-25-turbine-recovery](solana-2023-02-25-turbine-recovery.md)（协议+实现+部署：恢复 shred 不是已经按父槽滤掉；vote-only 不是已经停链）
+- [solana-2024-02-06-legacy-loader-loop](solana-2024-02-06-legacy-loader-loop.md)（实现+协议：哨兵有效槽 0 不是卸载后再编译已经可见）
+- [solana-2022-04-30-fork-cleanup-oom](solana-2022-04-30-fork-cleanup-oom.md)（实现+协议+经济+部署：入站洪水不是已经停链；票不够落地、分叉清不掉才 OOM）
+- [sui-2024-11-21-zero-cost-assert](sui-2024-11-21-zero-cost-assert.md)（实现+协议：估值为 0 不是已经安全；拥塞控制 assert 不是局部跳过）
+- [sui-2026-01-14-commit-divergence](sui-2026-01-14-commit-divergence.md)（协议+实现：检查点隔离拒证不是已经分叉）
+- [sui-2026-05-gas-smash-cancel](sui-2026-05-gas-smash-cancel.md)（协议+实现：因余额不足取消不是已经不再扣款；只认一种取消理由不是下溢已消失）
+- [sui-2026-05-dkg-verdict-disk](sui-2026-05-dkg-verdict-disk.md)（协议+实现+部署：DKG 按设计关掉不是重启后还记得；失败裁决未落盘不是随机性已经关闭）
+- [solana-2020-12-04-slot-as-block-id](solana-2020-12-04-slot-as-block-id.md)（协议+实现：槽号当块身份不是同槽两块已经能互修；乐观确认不是已经 rooted）
+- [solana-2025-05-02-elgamal-fiat-shamir](solana-2025-05-02-elgamal-fiat-shamir.md)（密码+协议+实现：验绿不是 Fiat-Shamir transcript 已经绑完）
+- [ethereum-2024-03-sepolia-engine-rpc](ethereum-2024-03-sepolia-engine-rpc.md)（实现+协议+部署：单笔低于入池上限不是拼块已被所有客户端接受）
+- [polkadot-2025-05-runtime-api-decode-depth](polkadot-2025-05-runtime-api-decode-depth.md)（协议+实现：交易解码深度有界不是 runtime API 再解整块已安全）
+- [kusama-2025-08-24-group-index-votes](kusama-2025-08-24-group-index-votes.md)（协议+实现+部署：组下标不是票向量下标；create_inherent 回 None 不是客户端已经报错）
+- [kusama-2024-02-15-disabled-active-dispute](kusama-2024-02-15-disabled-active-dispute.md)（协议+实现：Active 争议不是已经 Confirmed；GRANDPA 跳过不是最终性还在走）
+- [kusama-2025-05-09-offchain-disable](kusama-2025-05-09-offchain-disable.md)（协议+实现+部署：链下内存禁用不是已确认争议已经不参与；训练轮触发不是最终性还在走）
+- [ethereum-2021-05-state-gas-not-time](ethereum-2021-05-state-gas-not-time.md)（协议+实现+部署：块 gas 上限不是墙钟已经有界；状态访问的常数 gas 不是磁盘已经是 O(1)）
+- [zcash-2026-orchard-circuit-not-statement](zcash-2026-orchard-circuit-not-statement.md)（密码+协议+实现：电路实现不是已经写明的陈述；旧验证钥过验不是新电路已经安全）
+- [ethereum-2016-11-oog-empty-account](ethereum-2016-11-oog-empty-account.md)（实现+协议：交易以 out-of-gas 结束不是空账户删除已经回滚）
+- [zcash-2026-zip209-header-reset](zcash-2026-zip209-header-reset.md)（协议+实现：重复块头静默复位跟踪不是闸门还在转）
+- [zcash-2026-valuebalance-normalized](zcash-2026-valuebalance-normalized.md)（协议+实现：反序列化归一化成零不是编码必须为零）
+- [zcash-2026-nu5-body-poison](zcash-2026-nu5-body-poison.md)（协议+实现：体可变拒绝先于授权承诺不是头已经绑死）
+- [zcash-2026-identity-rk-panic](zcash-2026-identity-rk-panic.md)（密码+协议+实现：规范允许身份 rk 不是验证明已经能吃）
+- [zcash-2026-ephemeralkey-split](zcash-2026-ephemeralkey-split.md)（协议+实现：一家收下无效 ephemeralKey 不是规范已经允许）
+- [zcash-2026-coinbase-balance-crash](zcash-2026-coinbase-balance-crash.md)（实现+协议：coinbase 正屏蔽余额不是重启能起来）
+- [polkadot-2026-06-election-score-floor](polkadot-2026-06-election-score-floor.md)（协议+治理+经济：改冻结门槛不是选举地板已经配对；出块还在不是纪元已经转）
+- [monero-2025-08-find-and-save-rings](monero-2025-08-find-and-save-rings.md)（实现+部署：从文件加载钱包不是出站 TXID 已经不泄漏）
+- [bitcoin-2026-06-privatebroadcast-v1-retry](bitcoin-2026-06-privatebroadcast-v1-retry.md)（实现+部署+网络：privatebroadcast 开关不是 IP 已经不暴露）
+- [polkadot-2026-03-xcm-preserve-origin](polkadot-2026-03-xcm-preserve-origin.md)（协议+实现：preserve_origin 为真不是出站已经带了改 origin 的指令；静默跳过不是 BadOrigin）
+- [polkadot-2026-03-deprecated-runtime-api-scale](polkadot-2026-03-deprecated-runtime-api-scale.md)（协议+实现+部署：废弃 runtime API 还在不是返回编码已经兼容；出块者还能写块不是中继已经收到）
+- [cosmos-evm-2026-08-statedb-vesting](cosmos-evm-2026-08-statedb-vesting.md)（协议+实现+经济：StateDB 可花不是归属锁定已经从同一笔写回排除；回绕后的数不是银行账已经对齐）
+- [cve-2025-30147](cve-2025-30147.md)（密码+实现：子群成员检查通过不是点已经在曲线上；原生预编译加速不是两家客户端已经同根）
+- [isa-2025-004](isa-2025-004.md)（协议+实现：预编译中途出错不是 SDK 已写入已经撤回；领奖转出不是可领已经清零）
+- [asa-2026-002](asa-2026-002.md)（协议+实现+经济：内层预编译改过账不是外层已经看见；同一笔里余额还在不是不能再花一次）
+- [avalanche-2025-delegatecall-precompile](avalanche-2025-delegatecall-precompile.md)（协议+实现：正确兑现 EVM 委托语义不是预编译信任模型已经跟着改过；库换了正确语义不是旧假设已经更新）
+- [bitcoin-2026-01-wallet-migration-delete](bitcoin-2026-01-wallet-migration-delete.md)（实现+部署：迁移失败不是目录里其它钱包已经安全；现有用户不受影响不是迁移路径已经安全）
+- [cve-2026-34219](cve-2026-34219.md)（实现+网络：插入路径做了检查加法不是心跳加上余量已经安全；解析当时没崩不是心跳不会崩）
+
+待补（有原始出处再写，不写传闻）：各链 halt、桥、其它客户端分歧、其它池的后续披露。ZIP 256 其余薄行、Pectra 测试网配置、其它 XCM 回归：有独立官方句且不与已归档条重复才另档。Pectra RCA 仍在项目文件夹，本环境未取到独立复盘页，不写。Avalanche Native Asset Call（2022）未见独立 GHSA / 第一方七问页，不写。AncestryProof 论坛帖不是官方 Parity/W3F 复盘，不写。CVE-2026-33040 只当 34219 对照，不另档。
+
+写法：[`../../courses/level-09-systems/L09-M09-failure-museum-method.md`](../../courses/level-09-systems/L09-M09-failure-museum-method.md)  
+五层对照精读：[`worked-example-five-layers.md`](worked-example-five-layers.md)（同一通胀案，五层各说什么）。  
+停链面地图：[`worked-example-halt-surfaces.md`](worked-example-halt-surfaces.md)（「停链」不是一种事故；只指向已归档页）。  
+回流测试目录：[`../../libraries/adversarial-corpus/`](../../libraries/adversarial-corpus/README.md)。
