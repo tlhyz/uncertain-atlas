@@ -1,3 +1,15 @@
+## 2026-09-17（续 835）
+
+- 不变量 718；语料 C696；模式 name-the-prepvalid-notevents-bar；反模式 prepvalid-notevents-sold-as-bundled；L10.3 第 687 条。填 L4.4 / CometBFT 档案 Prepare 回包校验 events not handed / not LastResultsHash / not Finalize events 正式三事（357 余量）。357 prepare-valid vs checked bundled unbundling 完成（718 item 3）。
+
+## 2026-09-17（续 834）
+
+- 不变量 717；语料 C695；模式 name-the-prepvalid-notcrash-bar；反模式 prepvalid-notcrash-sold-as-bundled；L10.3 第 686 条。填 L4.4 / CometBFT 档案 Prepare 回包校验 crash not Process REJECT / not must Accept / not ProposalStatus REJECT 正式三事（357 余量）。357 prepare-valid vs checked bundled unbundling 续（717 item 2）。
+
+## 2026-09-17（续 833）
+
+- 不变量 716；语料 C694；模式 name-the-prepvalid-notchecked-bar；反模式 prepvalid-notchecked-sold-as-bundled；L10.3 第 685 条。填 L4.4 / CometBFT 档案 Prepare 回包校验 no extra checks not already checked / not app-level replay / not pool dedup 正式三事（357 余量）。357 prepare-valid vs checked bundled unbundling 启动（716 item 1）。
+
 ## 2026-09-17（续 832）
 
 - 不变量 715；语料 C693；模式 name-the-propstat-notreject-bar；反模式 propstat-notreject-sold-as-bundled；L10.3 第 684 条。填 L4.4 / CometBFT 档案 ProposalStatus REJECT prevote nil not can change later / not already not in block / not VerifyStatus REJECT 正式三事（376 余量）。376 proposalstatus vs prevote bundled unbundling 完成（715 item 3）。

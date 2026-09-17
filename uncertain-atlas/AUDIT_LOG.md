@@ -1,3 +1,18 @@
+| A3350 | 记录 | 会与 357 / 316 / 431 / 451 / 716 / 717 糊成「看见有事件就已经交给引擎 interchangeable、就已经印进本头 interchangeable、就已经 Finalize events 交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 回包校验 events not handed / not LastResultsHash / not Finalize events 正式三事（357 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。357 prepare-valid vs checked bundled unbundling 完成（718 item 3） |
+| A3351 | 高 | 看见 Prepare 里产出了事件 会被写成已经交给引擎 interchangeable | 官方 Prepare 回包校验 item 3：not handed |
+| A3352 | 高 | 看见有事件 会被写成已经印进 LastResultsHash interchangeable / 316 interchangeable | 官方 Prepare 回包校验 item 3：not LastResultsHash / not 316 |
+| A3353 | 高 | 看见先跑了 会被写成已经 Finalize events interchangeable / 431 / 451 interchangeable | 官方 Prepare 回包校验 item 3：not Finalize events / not 451 |
+| A3354 | 中 | 怎样攒事件 会被抄进不确定 | 不抄。不写怎样攒事件。不另写 19 节 |
+| A3345 | 记录 | 会与 357 / 347 / 376 / 504 / 716 / 718 糊成「看见崩了就已经是 Process REJECT interchangeable、就已经必须 Accept interchangeable、就已经 ProposalStatus REJECT interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 回包校验 crash not Process REJECT / not must Accept / not ProposalStatus REJECT 正式三事（357 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。357 prepare-valid vs checked bundled unbundling 续（717 item 2） |
+| A3346 | 高 | 看见 Prepare 回包验不过引擎崩溃 会被写成已经是 Process REJECT interchangeable / 455 interchangeable | 官方 Prepare 回包校验 item 2：not Process REJECT / not 455 |
+| A3347 | 高 | 看见回包坏了 会被写成已经必须 Accept interchangeable / 347 interchangeable | 官方 Prepare 回包校验 item 2：not must Accept / not 347 |
+| A3348 | 高 | 看见崩溃了 会被写成已经 ProposalStatus REJECT interchangeable / 376 / 504 interchangeable | 官方 Prepare 回包校验 item 2：not ProposalStatus REJECT / not 504 |
+| A3349 | 中 | 怎样再验 Prepare 回包 会被抄进不确定 | 不抄。不写怎样再验 Prepare 回包。不另写 19 节 |
+| A3340 | 记录 | 会与 357 / 313 / 504 / 717 / 718 糊成「看见回了提案就已经验过重复 interchangeable、就已经有重放保护 interchangeable、就已经池门去重交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Prepare 回包校验 no extra checks not already checked / not app-level replay / not pool dedup 正式三事（357 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。357 prepare-valid vs checked bundled unbundling 启动（716 item 1） |
+| A3341 | 高 | 看见引擎没有再验重复交易 会被写成已经验过重复 interchangeable | 官方 Prepare 回包校验 item 1：not already checked |
+| A3342 | 高 | 看见回了提案 会被写成已经有应用级重放保护 interchangeable | 官方 Prepare 回包校验 item 1：not app-level replay |
+| A3343 | 高 | 看见没有再验 会被写成已经池门去重 interchangeable / 313 / 504 interchangeable | 官方 Prepare 回包校验 item 1：not pool dedup / not 504 |
+| A3344 | 中 | 怎样再验 Prepare 回包 会被抄进不确定 | 不抄。不写怎样再验 Prepare 回包。不另写 19 节 |
 | A3335 | 记录 | 会与 376 / 354 / 434 / 455 / 713 / 714 糊成「看见 REJECT 就已经能稍后改裁决 interchangeable、就已经没进块 interchangeable、就已经 Verify REJECT / 块非法 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProposalStatus REJECT prevote nil not can change later / not already not in block / not VerifyStatus REJECT 正式三事（376 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。376 proposalstatus vs prevote bundled unbundling 完成（715 item 3） |
 | A3336 | 高 | 看见 REJECT 表示应用认为提案非法共识会发 Prevote nil 会被写成已经能稍后改裁决 interchangeable / 354 interchangeable | 官方 ProposalStatus item 3：not can change later / not 354 |
 | A3337 | 高 | 看见回了 REJECT 会被写成已经没进块 interchangeable | 官方 ProposalStatus item 3：not already not in block |

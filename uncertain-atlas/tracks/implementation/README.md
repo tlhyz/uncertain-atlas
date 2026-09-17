@@ -167,6 +167,9 @@
 - [`worked-example-process-when-vs-later.md`](worked-example-process-when-vs-later.md) — Process 调用是同步的 ≠ 已经能在返回之后再改裁决；只做基本检查再异步 Process ≠ 已经还能再 Reject；非验证者可以立刻回 ACCEPT ≠ 已经验过这块（不变量 354）
 - [`worked-example-prepare-drop-vs-mempool.md`](worked-example-prepare-drop-vs-mempool.md) — 从提案拿掉 tx ≠ 已经从内存池删掉；往提案加了一笔新的 ≠ 已经进了内存池；把 t1 改成 t2 ≠ 已经还能按 t1 查到（不变量 355）
 - [`worked-example-validvalue-vs-prepare.md`](worked-example-validvalue-vs-prepare.md) — validValue 非 nil ≠ 已经还会调 Prepare；自己是提议者 ≠ 已经每轮都会调 Prepare；没调 Prepare ≠ 已经又装了一份 raw 提案（不变量 356）
+- [`worked-example-prepvalid-notevents-vs-bundled.md`](worked-example-prepvalid-notevents-vs-bundled.md) — events≠handed/316 LastResultsHash/431 Finalize events/451 retain path；≠357 bundled（不变量 718）
+- [`worked-example-prepvalid-notcrash-vs-bundled.md`](worked-example-prepvalid-notcrash-vs-bundled.md) — crash≠455 Process REJECT/347 must Accept/376 ProposalStatus REJECT/504 Usage crash；≠357 bundled（不变量 717）
+- [`worked-example-prepvalid-notchecked-vs-bundled.md`](worked-example-prepvalid-notchecked-vs-bundled.md) — no extra checks≠already checked/app-level replay/313 pool dedup/504 Usage nochecks；≠357 bundled（不变量 716）
 - [`worked-example-prepare-valid-vs-checked.md`](worked-example-prepare-valid-vs-checked.md) — 引擎没有再验重复交易 ≠ 已经验过重复；Prepare 回包验不过引擎崩溃 ≠ 已经是 Process REJECT；Prepare 里产出了事件 ≠ 已经交给引擎（不变量 357）
 - [`worked-example-nonrp-vs-wrapped.md`](worked-example-nonrp-vs-wrapped.md) — vote_extension 会包进 CanonicalVoteExtension ≠ 已经按原样签；non_rp_extension 按原样签 ≠ 已经有重放保护；要签原样数据可以用 non_rp ≠ 已经和 vote_extension 同一份（不变量 358）
 - [`worked-example-prepare-fields-vs-same.md`](worked-example-prepare-fields-vs-same.md) — Prepare 和 Process / Finalize 同一套字段 ≠ 已经跑过 Process；local_last_commit 是上一高度的预提交带扩展 ≠ 已经是本高度刚签的扩展；height / time / proposer_address 对上拟议头 ≠ 已经知道本头哈希（不变量 359）

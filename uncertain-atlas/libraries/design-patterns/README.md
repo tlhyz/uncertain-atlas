@@ -1,3 +1,6 @@
+- [`name-the-prepvalid-notevents-bar.md`](name-the-prepvalid-notevents-bar.md) — Prepare 回包校验 events not handed / not LastResultsHash / not Finalize events 正式三事（357 余量）（不变量 718）
+- [`name-the-prepvalid-notcrash-bar.md`](name-the-prepvalid-notcrash-bar.md) — Prepare 回包校验 crash not Process REJECT / not must Accept / not ProposalStatus REJECT 正式三事（357 余量）（不变量 717）
+- [`name-the-prepvalid-notchecked-bar.md`](name-the-prepvalid-notchecked-bar.md) — Prepare 回包校验 no extra checks not already checked / not app-level replay / not pool dedup 正式三事（357 余量）（不变量 716）
 - [`name-the-propstat-notreject-bar.md`](name-the-propstat-notreject-bar.md) — ProposalStatus REJECT prevote nil not can change later / not already not in block / not VerifyStatus REJECT 正式三事（376 余量）（不变量 715）
 - [`name-the-propstat-notaccept-bar.md`](name-the-propstat-notaccept-bar.md) — ProposalStatus ACCEPT prevote not settled / not must Accept / not four gates 正式三事（376 余量）（不变量 714）
 - [`name-the-propstat-notunknown-bar.md`](name-the-propstat-notunknown-bar.md) — ProposalStatus UNKNOWN always wrong crash not four gates / not VerifyStatus UNKNOWN / not OfferSnapshot UNKNOWN 正式三事（376 余量）（不变量 713）

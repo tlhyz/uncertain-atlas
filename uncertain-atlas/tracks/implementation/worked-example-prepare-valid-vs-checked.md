@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了提案就已经验过重复、已经是 Process REJECT、已经交给引擎」，必须分开引擎没有再验重复交易是不是已经验过重复、Prepare 回包验不过引擎崩溃是不是已经是 Process REJECT、Prepare 里产出了事件是不是已经交给引擎。可以跳过「看见回了提案就已经验过重复」。不要另写怎样再验 Prepare 回包。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了提案就已经验过重复、已经是 Process REJECT、已经交给引擎」，必须分开引擎没有再验重复交易是不是已经验过重复、Prepare 回包验不过引擎崩溃是不是已经是 Process REJECT、Prepare 里产出了事件是不是已经交给引擎。可以跳过「看见回了提案就已经验过重复」。不要另写怎样再验 Prepare 回包。357 prepare-valid vs checked bundled unbundling 完成（716 item 1 / 717 item 2 / 718 item 3）；精读 [`worked-example-prepvalid-notchecked-vs-bundled.md`](worked-example-prepvalid-notchecked-vs-bundled.md)（不变量 716 item 1）。
 
 ## 本页不抄
 

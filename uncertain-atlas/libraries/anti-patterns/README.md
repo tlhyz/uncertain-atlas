@@ -1,3 +1,6 @@
+- [`prepvalid-notevents-sold-as-bundled.md`](prepvalid-notevents-sold-as-bundled.md) — Prepare 事件 被写成已经交给引擎 / 已经印进本头 / 已经 Finalize events 交差（不变量 718）
+- [`prepvalid-notcrash-sold-as-bundled.md`](prepvalid-notcrash-sold-as-bundled.md) — Prepare crash 被写成已经 Process REJECT / 已经必须 Accept / 已经 ProposalStatus REJECT（不变量 717）
+- [`prepvalid-notchecked-sold-as-bundled.md`](prepvalid-notchecked-sold-as-bundled.md) — 没有再验 被写成已经验过重复 / 已经有重放保护 / 已经池门去重交差（不变量 716）
 - [`propstat-notreject-sold-as-bundled.md`](propstat-notreject-sold-as-bundled.md) — REJECT 被写成已经能稍后改裁决 / 已经没进块 / 已经 Verify REJECT（不变量 715）
 - [`propstat-notaccept-sold-as-bundled.md`](propstat-notaccept-sold-as-bundled.md) — ACCEPT 被写成已经交差 / 已经必须 Accept / 已经四门齐了（不变量 714）
 - [`propstat-notunknown-sold-as-bundled.md`](propstat-notunknown-sold-as-bundled.md) — UNKNOWN 被写成已经四门齐了 / 已经 Verify UNKNOWN / 已经 Offer UNKNOWN 中止装回（不变量 713）
