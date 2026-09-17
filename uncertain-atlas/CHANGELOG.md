@@ -1,3 +1,7 @@
+## 2026-09-17（续 769）
+
+- 不变量 652；语料 C629；模式 name-the-offersnaptrust-nottransition-bar；反模式 offersnaptrust-nottransition-sold-as-bundled；L10.3 第 621 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage verified AppHash at end not Info during load / not Transition to Consensus bundled / not Offer restored bundled 正式三事（483 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。483 offersnaptrust unbundling 完成（652 item 3）。
+
 ## 2026-09-17（续 768）
 
 - 不变量 651；语料 C628；模式 name-the-offersnaptrust-notverify-bar；反模式 offersnaptrust-notverify-sold-as-bundled；L10.3 第 620 条。填 L4.4 / CometBFT 档案 OfferSnapshot Usage Any other data can be spoofed not hash comparison enough / not Snapshot Verification bundled / not ApplySnapshotChunk reject refetch DoS 正式三事（483 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。483 offersnaptrust unbundling 续（651 item 2）。

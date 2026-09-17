@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Offer 了 AppHash 就已经全信、已经防 DoS、已经装完对了」，必须分开 Only AppHash can be trusted 是不是 Snapshot 字段都可信、Any other data can be spoofed / employ additional verification 是不是 hash 比对就够 / 已经防 DoS、verified AppHash automatically checked at end 是不是装块时就 Info 对了 / 已经切进共识。可以跳过「看见 Offer 了 AppHash 就已经全信」。不要另写怎样做增量验、怎样封邻居。483 offersnaptrust unbundling 在本页 item 1 启动；精读 [`worked-example-offersnaptrust-notmetadata-vs-bundled.md`](worked-example-offersnaptrust-notmetadata-vs-bundled.md)（不变量 650 item 1）；续 [`worked-example-offersnaptrust-notverify-vs-bundled.md`](worked-example-offersnaptrust-notverify-vs-bundled.md)（不变量 651 item 2）；完成 [`worked-example-offersnaptrust-nottransition-vs-bundled.md`](worked-example-offersnaptrust-nottransition-vs-bundled.md)（不变量 652 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Offer 了 AppHash 就已经全信、已经防 DoS、已经装完对了」，必须分开 Only AppHash can be trusted 是不是 Snapshot 字段都可信、Any other data can be spoofed / employ additional verification 是不是 hash 比对就够 / 已经防 DoS、verified AppHash automatically checked at end 是不是装块时就 Info 对了 / 已经切进共识。可以跳过「看见 Offer 了 AppHash 就已经全信」。不要另写怎样做增量验、怎样封邻居。483 offersnaptrust unbundling 在本页 item 1 启动；精读 [`worked-example-offersnaptrust-notmetadata-vs-bundled.md`](worked-example-offersnaptrust-notmetadata-vs-bundled.md)（不变量 650 item 1）；续 [`worked-example-offersnaptrust-notverify-vs-bundled.md`](worked-example-offersnaptrust-notverify-vs-bundled.md)（不变量 651 item 2）；完成 [`worked-example-offersnaptrust-nottransition-vs-bundled.md`](worked-example-offersnaptrust-nottransition-vs-bundled.md)（不变量 652 item 3）。483 offersnaptrust unbundling 完成（650 → 651 → 652）。
 
 ## 本页不抄
 
