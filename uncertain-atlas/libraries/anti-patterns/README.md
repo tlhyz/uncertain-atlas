@@ -1,3 +1,6 @@
+- [`verify-det-notsafety-sold-as-bundled.md`](verify-det-notsafety-sold-as-bundled.md) — Verify 非确定伤活性 被写成已经丢了安全性 / 已经有补丁 / 已经交差（不变量 892）
+- [`verify-det-nothonest-sold-as-bundled.md`](verify-det-nothonest-sold-as-bundled.md) — 任意扩展同判 被写成已经只对诚实扩展 / 已经是 Req 6 / 已经交差（不变量 891）
+- [`verify-det-notext-sold-as-bundled.md`](verify-det-notext-sold-as-bundled.md) — Verify 必须确定 被写成已经可以像 ExtendVote 那样 / 已经同一把尺 / 已经交差（不变量 890）
 - [`finalize-det-notprocess-sold-as-bundled.md`](finalize-det-notprocess-sold-as-bundled.md) — 状态机复制 被写成已经是 Process 同判 / 已经是 Prepare 可以不确定 / 已经交差（不变量 889）
 - [`finalize-det-notreceipt-sold-as-bundled.md`](finalize-det-notreceipt-sold-as-bundled.md) — 结果必须确定 被写成已经印进本头 / 已经顺序对上 / 已经交差（不变量 888）
 - [`finalize-det-notprep-sold-as-bundled.md`](finalize-det-notprep-sold-as-bundled.md) — 状态必须确定 被写成已经可以像 Prepare 那样 / 已经同一把尺 / 已经交差（不变量 887）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 ExtendVote 那样、已经只对诚实扩展、已经丢了安全性」，必须分开 Verify 必须只依赖扩展、这块和上一份状态是不是已经可以像 ExtendVote 那样依赖其它值、两边对任意扩展同一裁决是不是已经只对诚实扩展同一裁决、Verify 非确定会伤活性是不是已经丢了安全性。可以跳过「看见必须确定就已经可以像 ExtendVote 那样」。不要把 SHOULD Accept 当不确定已经拒坏扩展。不要另写怎样写 VerifyVoteExtension。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 ExtendVote 那样、已经只对诚实扩展、已经丢了安全性」，必须分开 Verify 必须只依赖扩展、这块和上一份状态是不是已经可以像 ExtendVote 那样依赖其它值、两边对任意扩展同一裁决是不是已经只对诚实扩展同一裁决、Verify 非确定会伤活性是不是已经丢了安全性。可以跳过「看见必须确定就已经可以像 ExtendVote 那样」。不要把 SHOULD Accept 当不确定已经拒坏扩展。不要另写怎样写 VerifyVoteExtension。341 verify-det vs extend bundled unbundling 完成（890 item 1 / 891 item 2 / 892 item 3）；精读 [`worked-example-verify-det-notext-vs-bundled.md`](worked-example-verify-det-notext-vs-bundled.md)（不变量 890 item 1）。
 
 ## 本页不抄
 

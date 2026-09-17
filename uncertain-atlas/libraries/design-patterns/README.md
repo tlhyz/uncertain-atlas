@@ -1,3 +1,6 @@
+- [`name-the-verify-det-notsafety-bar.md`](name-the-verify-det-notsafety-bar.md) — Verify 非确定会伤活性 not already lost safety / not already engine patch / not already settled 正式三事（341 余量）（不变量 892）
+- [`name-the-verify-det-nothonest-bar.md`](name-the-verify-det-nothonest-bar.md) — 两边对任意扩展同一裁决 not already only honest same verdict / not already Req 6 honest Accept / not already settled 正式三事（341 余量）（不变量 891）
+- [`name-the-verify-det-notext-bar.md`](name-the-verify-det-notext-bar.md) — Verify 必须只依赖扩展、这块和上一份状态 not already ExtendVote-style other values / not already same ruler as ExtendVote / not already settled 正式三事（341 余量）（不变量 890）
 - [`name-the-finalize-det-notprocess-bar.md`](name-the-finalize-det-notprocess-bar.md) — 两边状态机复制 not already Process same verdict / not already Prepare may be nondet / not already settled 正式三事（342 余量）（不变量 889）
 - [`name-the-finalize-det-notreceipt-bar.md`](name-the-finalize-det-notreceipt-bar.md) — Finalize 算出的结果必须只依赖上一份状态和决定块 not already Code/Data in header / not already same list order / not already settled 正式三事（342 余量）（不变量 888）
 - [`name-the-finalize-det-notprep-bar.md`](name-the-finalize-det-notprep-bar.md) — Finalize 算出的状态必须只依赖上一份状态和决定块 not already Prepare-style other values / not already same ruler as Prepare / not already settled 正式三事（342 余量）（不变量 887）

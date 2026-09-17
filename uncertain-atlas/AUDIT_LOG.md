@@ -1,3 +1,18 @@
+| A4220 | 记录 | 会与 341 / 340 / 348 / 890 / 891 糊成「看见活性会被伤就已经丢了安全性 interchangeable、就已经有协议层补丁 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 非确定会伤活性 not already lost safety / not already engine patch / not already settled 正式三事（341 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。341 verify-det vs extend bundled unbundling 完成（892 item 3） |
+| A4221 | 高 | 看见 Verify 非确定会伤活性 会被写成已经丢了安全性 interchangeable | 官方 Req 7–8 item 3：not already lost safety |
+| A4222 | 高 | 看见要小心两边 会被写成已经有协议层补丁 interchangeable | 官方 Req 7–8 item 3：not already engine patch |
+| A4223 | 高 | 看见 SHOULD Accept 会被写成已经交差 interchangeable | 官方 Req 7–8 item 3：not already settled |
+| A4224 | 中 | 怎样写 VerifyVoteExtension 会被抄进不确定 | 不抄。不写怎样写 VerifyVoteExtension。不另写 19 节 |
+| A4215 | 记录 | 会与 341 / 34 / 348 / 890 / 892 糊成「看见两边同判就已经只对诚实扩展 interchangeable、就已经是 Req 6 诚实对诚实 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 两边对任意扩展同一裁决 not already only honest same verdict / not already Req 6 honest Accept / not already settled 正式三事（341 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。341 verify-det vs extend bundled unbundling 续（891 item 2） |
+| A4216 | 高 | 看见两边对任意扩展同一裁决 会被写成已经只对诚实扩展同一裁决 interchangeable | 官方 Req 7–8 item 2：not already only honest same verdict |
+| A4217 | 高 | 看见任意扩展 会被写成已经是 Req 6 诚实对诚实 interchangeable | 官方 Req 7–8 item 2：not already Req 6 honest Accept |
+| A4218 | 高 | 看见两边同判 会被写成已经交差 interchangeable | 官方 Req 7–8 item 2：not already settled |
+| A4219 | 中 | 怎样写 VerifyVoteExtension 会被抄进不确定 | 不抄。不写怎样写 VerifyVoteExtension。不另写 19 节 |
+| A4210 | 记录 | 会与 341 / 338 / 34 / 891 / 892 糊成「看见必须确定就已经可以像 ExtendVote 那样 interchangeable、就已经和 ExtendVote 同一把尺 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Verify 必须只依赖扩展、这块和上一份状态 not already ExtendVote-style other values / not already same ruler as ExtendVote / not already settled 正式三事（341 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。341 verify-det vs extend bundled unbundling 启动（890 item 1） |
+| A4211 | 高 | 看见 Verify 必须只依赖扩展、这块和上一份状态 会被写成已经可以像 ExtendVote 那样依赖其它值 interchangeable / 338 interchangeable | 官方 Req 7–8 item 1：not already ExtendVote-style other values / not 338 |
+| A4212 | 高 | 看见只依赖扩展、这块和上一份状态 会被写成已经和 ExtendVote 同一把尺 interchangeable | 官方 Req 7–8 item 1：not already same ruler as ExtendVote |
+| A4213 | 高 | 看见 Verify 回了 会被写成已经交差 interchangeable | 官方 Req 7–8 item 1：not already settled |
+| A4214 | 中 | 怎样写 VerifyVoteExtension 会被抄进不确定 | 不抄。不写怎样写 VerifyVoteExtension。不另写 19 节 |
 | A4205 | 记录 | 会与 342 / 340 / 338 / 887 / 888 糊成「看见状态机复制就已经是 Process 同判 interchangeable、就已经是 Prepare 可以不确定 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 两边状态机复制 not already Process same verdict / not already Prepare may be nondet / not already settled 正式三事（342 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。342 finalize-det vs prepare bundled unbundling 完成（889 item 3） |
 | A4206 | 高 | 看见两边状态机复制 会被写成已经是 Process 对任意块同一裁决 interchangeable | 官方 Req 11–12 item 3：not already Process same verdict |
 | A4207 | 高 | 看见两边状态一起走 会被写成已经是 Prepare 可以不确定 interchangeable | 官方 Req 11–12 item 3：not already Prepare may be nondet |
