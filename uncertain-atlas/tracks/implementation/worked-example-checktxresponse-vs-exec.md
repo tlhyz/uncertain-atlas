@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「CheckTx 已经回了 Data」，必须分开这份 Data 是不是已经被引擎用了、各节点不一样是不是已经分叉、Priority 是不是已经是共识顺序。可以跳过「看见回了就已经被引擎用了」。不要另写怎样实现 Priority 或怎样编 Data。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「CheckTx 已经回了 Data」，必须分开这份 Data 是不是已经被引擎用了、各节点不一样是不是已经分叉、Priority 是不是已经是共识顺序。可以跳过「看见回了就已经被引擎用了」。不要另写怎样实现 Priority 或怎样编 Data。317 checktxresponse vs exec bundled unbundling 完成（1016 item 1 / 1017 item 2 / 1018 item 3）；精读 [`worked-example-chktxresp-notused-vs-bundled.md`](worked-example-chktxresp-notused-vs-bundled.md)（不变量 1016 item 1）。
 
 ## 本页不抄
 

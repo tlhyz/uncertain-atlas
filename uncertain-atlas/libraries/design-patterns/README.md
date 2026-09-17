@@ -1,3 +1,6 @@
+- [`name-the-chktxresp-notprio-bar.md`](name-the-chktxresp-notprio-bar.md) — Priority not already consensus-order / not already in-block / not already deleted 正式三事（317 余量）（不变量 1018）
+- [`name-the-chktxresp-notfork-bar.md`](name-the-chktxresp-notfork-bar.md) — 各节点 Data 不一样 not already forked / not already illegal / not already same-state 正式三事（317 余量）（不变量 1017）
+- [`name-the-chktxresp-notused-bar.md`](name-the-chktxresp-notused-bar.md) — CheckTx Data not already engine-used / not already same-scale / not already last-results 正式三事（317 余量）（不变量 1016）
 - [`name-the-exectx-notheader-bar.md`](name-the-exectx-notheader-bar.md) — Code / Data not already this-header / not already in-hash / not already consensus 正式三事（316 余量）（不变量 1015）
 - [`name-the-exectx-notout-bar.md`](name-the-exectx-notout-bar.md) — Code 非零 not already out-of-block / not already unindexed / not already checktx-scale 正式三事（316 余量）（不变量 1014）
 - [`name-the-exectx-notorder-bar.md`](name-the-exectx-notorder-bar.md) — 结果列表 not already same-order / not already same-count / not already engine-sorted 正式三事（316 余量）（不变量 1013）

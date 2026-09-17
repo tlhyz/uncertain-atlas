@@ -1,3 +1,18 @@
+| A4850 | 记录 | 会与 317 / 301 / 69 / 1016 / 1017 糊成「看见 Priority 就已经是共识顺序 interchangeable、就已经进了块 interchangeable、就已经从池里删掉 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Priority not already consensus-order / not already in-block / not already deleted 正式三事（317 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。317 checktxresponse vs exec bundled unbundling 完成（1018 item 3） |
+| A4851 | 高 | 看见 Priority 会被写成已经是共识顺序 interchangeable | 官方 CheckTxResponse item 3：not already consensus-order |
+| A4852 | 高 | 看见排在前面 会被写成已经进了块 interchangeable | 官方 CheckTxResponse item 3：not already in-block |
+| A4853 | 高 | 看见能优先 会被写成已经从池里删掉 interchangeable | 官方 CheckTxResponse item 3：not already deleted |
+| A4854 | 中 | 怎样实现 Priority 会被抄进不确定 | 不抄。不写怎样实现 Priority 或怎样编 Data。不另写 19 节 |
+| A4845 | 记录 | 会与 317 / 312 / 328 / 1016 / 1018 糊成「看见各节点 Data 不一样就已经分叉 interchangeable、就已经违规 interchangeable、就已经和 ExecuteTxState 同一份 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 各节点 Data 不一样 not already forked / not already illegal / not already same-state 正式三事（317 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。317 checktxresponse vs exec bundled unbundling 续（1017 item 2） |
+| A4846 | 高 | 看见各节点 Data 不一样 会被写成已经分叉 interchangeable | 官方 CheckTxResponse item 2：not already forked |
+| A4847 | 高 | 看见不确定 会被写成已经违规 interchangeable | 官方 CheckTxResponse item 2：not already illegal |
+| A4848 | 高 | 看见 CheckTxState 不同 会被写成已经和 ExecuteTxState 同一份 interchangeable | 官方 CheckTxResponse item 2：not already same-state |
+| A4849 | 中 | 怎样实现 Priority 会被抄进不确定 | 不抄。不写怎样实现 Priority 或怎样编 Data。不另写 19 节 |
+| A4840 | 记录 | 会与 317 / 316 / 312 / 1017 / 1018 糊成「看见 CheckTx Data 就已经被引擎用了 interchangeable、就已经和 Finalize 同一把尺 interchangeable、就已经进了 LastResultsHash interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx Data not already engine-used / not already same-scale / not already last-results 正式三事（317 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。317 checktxresponse vs exec bundled unbundling 启动（1016 item 1） |
+| A4841 | 高 | 看见 CheckTx 的 Data 会被写成已经被引擎用了 interchangeable / 316 interchangeable | 官方 CheckTxResponse item 1：not already engine-used / not 316 |
+| A4842 | 高 | 看见字段名也叫 Data 会被写成已经和 Finalize 那份同一把尺 interchangeable | 官方 CheckTxResponse item 1：not already same-scale |
+| A4843 | 高 | 看见有结果 会被写成已经进了下一头的 LastResultsHash interchangeable | 官方 CheckTxResponse item 1：not already last-results |
+| A4844 | 中 | 怎样实现 Priority 会被抄进不确定 | 不抄。不写怎样实现 Priority 或怎样编 Data。不另写 19 节 |
 | A4835 | 记录 | 会与 316 / 147 / 317 / 1013 / 1014 糊成「看见 Code/Data 就已经印进本头 interchangeable、就已经进了那份哈希 interchangeable、就已经是共识 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Code / Data not already this-header / not already in-hash / not already consensus 正式三事（316 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。316 exectxresult vs consensus bundled unbundling 完成（1015 item 3） |
 | A4836 | 高 | 看见 Code / Data 会被写成已经印进本头 interchangeable | 官方 ExecTxResult item 3：not already this-header |
 | A4837 | 高 | 看见 Events 会被写成已经进了那份哈希 interchangeable | 官方 ExecTxResult item 3：not already in-hash |

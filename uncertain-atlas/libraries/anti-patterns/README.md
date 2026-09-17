@@ -1,3 +1,6 @@
+- [`chktxresp-notprio-sold-as-bundled.md`](chktxresp-notprio-sold-as-bundled.md) — Priority 被写成已经是共识顺序 / 已经进了块 / 已经从池里删掉（不变量 1018）
+- [`chktxresp-notfork-sold-as-bundled.md`](chktxresp-notfork-sold-as-bundled.md) — 各节点 Data 不一样 被写成已经分叉 / 已经违规 / 已经和 ExecuteTxState 同一份（不变量 1017）
+- [`chktxresp-notused-sold-as-bundled.md`](chktxresp-notused-sold-as-bundled.md) — CheckTx Data 被写成已经被引擎用了 / 已经和 Finalize 那份同一把尺 / 已经进了下一头的 LastResultsHash（不变量 1016）
 - [`exectx-notheader-sold-as-bundled.md`](exectx-notheader-sold-as-bundled.md) — Code / Data 被写成已经印进本头 / 已经进了那份哈希 / 已经是共识（不变量 1015）
 - [`exectx-notout-sold-as-bundled.md`](exectx-notout-sold-as-bundled.md) — Code 非零 被写成已经没进块 / 已经没进共识 / 已经和池门同一把尺（不变量 1014）
 - [`exectx-notorder-sold-as-bundled.md`](exectx-notorder-sold-as-bundled.md) — 结果列表 被写成已经同一顺序 / 已经按送来的顺序 / 引擎已经替你排好（不变量 1013）

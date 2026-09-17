@@ -160,6 +160,9 @@
 - [`worked-example-exectx-notout-vs-bundled.md`](worked-example-exectx-notout-vs-bundled.md) — Code非零≠already out-of-block/unindexed/checktx-scale；≠316 bundled（不变量 1014）
 - [`worked-example-exectx-notorder-vs-bundled.md`](worked-example-exectx-notorder-vs-bundled.md) — 结果列表≠already same-order/same-count/engine-sorted；≠316 bundled（不变量 1013）
 - [`worked-example-exectxresult-vs-consensus.md`](worked-example-exectxresult-vs-consensus.md) — 结果列表 ≠ 已经同一顺序；Code 非零 ≠ 已经没进块；Code / Data ≠ 已经印进本头（不变量 316）
+- [`worked-example-chktxresp-notprio-vs-bundled.md`](worked-example-chktxresp-notprio-vs-bundled.md) — Priority≠already consensus-order/in-block/deleted；≠317 bundled（不变量 1018）
+- [`worked-example-chktxresp-notfork-vs-bundled.md`](worked-example-chktxresp-notfork-vs-bundled.md) — 各节点Data≠already forked/illegal/same-state；≠317 bundled（不变量 1017）
+- [`worked-example-chktxresp-notused-vs-bundled.md`](worked-example-chktxresp-notused-vs-bundled.md) — CheckTx Data≠already engine-used/same-scale/last-results；≠317 bundled（不变量 1016）
 - [`worked-example-checktxresponse-vs-exec.md`](worked-example-checktxresponse-vs-exec.md) — CheckTx 的 Data ≠ 已经被引擎用了；各节点 Data 不一样 ≠ 已经分叉；Priority ≠ 已经是共识顺序（不变量 317）
 - [`worked-example-validatorupdate-notzero-vs-bundled.md`](worked-example-validatorupdate-notzero-vs-bundled.md) — power0≠already delete outsider/no cap/settled；≠318 bundled（不变量 907）
 - [`worked-example-validatorupdate-notdup-vs-bundled.md`](worked-example-validatorupdate-notdup-vs-bundled.md) — 同一批重复≠already last wins/recoverable/settled；≠318 bundled（不变量 906）

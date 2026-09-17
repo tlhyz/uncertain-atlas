@@ -1,3 +1,15 @@
+## 2026-09-17（续 1135）
+
+- 不变量 1018；语料 C996；模式 name-the-chktxresp-notprio-bar；反模式 chktxresp-notprio-sold-as-bundled；L10.3 第 987 条。填 L4.4 / CometBFT 档案 Priority not already consensus-order / not already in-block / not already deleted 正式三事（317 余量）。317 checktxresponse vs exec bundled unbundling 完成（1018 item 3）。
+
+## 2026-09-17（续 1134）
+
+- 不变量 1017；语料 C995；模式 name-the-chktxresp-notfork-bar；反模式 chktxresp-notfork-sold-as-bundled；L10.3 第 986 条。填 L4.4 / CometBFT 档案 各节点 Data 不一样 not already forked / not already illegal / not already same-state 正式三事（317 余量）。317 checktxresponse vs exec bundled unbundling 续（1017 item 2）。
+
+## 2026-09-17（续 1133）
+
+- 不变量 1016；语料 C994；模式 name-the-chktxresp-notused-bar；反模式 chktxresp-notused-sold-as-bundled；L10.3 第 985 条。填 L4.4 / CometBFT 档案 CheckTx Data not already engine-used / not already same-scale / not already last-results 正式三事（317 余量）。317 checktxresponse vs exec bundled unbundling 启动（1016 item 1）。
+
 ## 2026-09-17（续 1132）
 
 - 不变量 1015；语料 C993；模式 name-the-exectx-notheader-bar；反模式 exectx-notheader-sold-as-bundled；L10.3 第 984 条。填 L4.4 / CometBFT 档案 Code / Data not already this-header / not already in-hash / not already consensus 正式三事（316 余量）。316 exectxresult vs consensus bundled unbundling 完成（1015 item 3）。
