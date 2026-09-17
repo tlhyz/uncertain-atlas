@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了同步参数就已经启用、已经切到 PBTS、已经能关」，必须分开写成 0 不是已经启用 PBTS 是不是已经填了 Precision 就是 PBTS、H 之前仍用 BFT Time 是不是已经切到 PBTS、启用之后不能关是不是已经是扩展启用高度那种切换。可以跳过「看见填了同步参数就已经启用」。不要把写成 0 当已经切到 PBTS。不要另写怎样设 PbtsEnableHeight。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了同步参数就已经启用、已经切到 PBTS、已经能关」，必须分开写成 0 不是已经启用 PBTS 是不是已经填了 Precision 就是 PBTS、H 之前仍用 BFT Time 是不是已经切到 PBTS、启用之后不能关是不是已经是扩展启用高度那种切换。可以跳过「看见填了同步参数就已经启用」。不要把写成 0 当已经切到 PBTS。不要另写怎样设 PbtsEnableHeight。343 pbts vs params bundled unbundling 完成（884 item 1 / 885 item 2 / 886 item 3）；精读 [`worked-example-pbts-height-notzero-vs-bundled.md`](worked-example-pbts-height-notzero-vs-bundled.md)（不变量 884 item 1）。
 
 ## 本页不抄
 

@@ -153,6 +153,9 @@
 - [`worked-example-process-det-vs-prepare.md`](worked-example-process-det-vs-prepare.md) — Process 必须只依赖请求和上一份状态 ≠ 已经可以像 Prepare 那样依赖其它值；两边对任意块同一裁决 ≠ 已经只对诚实提案同一裁决；Process 非确定 bug 没有现成解法 ≠ 已经丢了安全性（不变量 340）
 - [`worked-example-verify-det-vs-extend.md`](worked-example-verify-det-vs-extend.md) — Verify 必须只依赖扩展、这块和上一份状态 ≠ 已经可以像 ExtendVote 那样依赖其它值；两边对任意扩展同一裁决 ≠ 已经只对诚实扩展同一裁决；Verify 非确定会伤活性 ≠ 已经丢了安全性（不变量 341）
 - [`worked-example-finalize-det-vs-prepare.md`](worked-example-finalize-det-vs-prepare.md) — Finalize 算出的状态必须只依赖上一份状态和决定块 ≠ 已经可以像 Prepare 那样依赖其它值；Finalize 算出的结果必须只依赖上一份状态和决定块 ≠ 已经是 Code/Data 印进本头；两边状态机复制 ≠ 已经是 Process 对任意块同一裁决（不变量 342）
+- [`worked-example-pbts-height-notlock-vs-bundled.md`](worked-example-pbts-height-notlock-vs-bundled.md) — 启用后不能关≠already vote-ext switch/can disable/settled；≠343 bundled（不变量 886）
+- [`worked-example-pbts-height-notbft-vs-bundled.md`](worked-example-pbts-height-notbft-vs-bundled.md) — H前仍用BFT Time≠already switched/MTP/settled；≠343 bundled（不变量 885）
+- [`worked-example-pbts-height-notzero-vs-bundled.md`](worked-example-pbts-height-notzero-vs-bundled.md) — 写成0≠already enabled/Precision is PBTS/settled；≠343 bundled（不变量 884）
 - [`worked-example-pbts-height-vs-params.md`](worked-example-pbts-height-vs-params.md) — 写成 0 不是已经启用 PBTS ≠ 已经填了 Precision 就是 PBTS；H 之前仍用 BFT Time ≠ 已经切到 PBTS；启用之后不能关 ≠ 已经是扩展启用高度那种切换（不变量 343）
 - [`worked-example-maxbytes-overhead-nottimeout-vs-bundled.md`](worked-example-maxbytes-overhead-nottimeout-vs-bundled.md) — 满块投递超时≠already TimeoutPropose/left path/settled；≠344 bundled（不变量 883）
 - [`worked-example-maxbytes-overhead-not21mb-vs-bundled.md`](worked-example-maxbytes-overhead-not21mb-vs-bundled.md) — MAY出满≠already default 21MB/no limit/settled；≠344 bundled（不变量 882）

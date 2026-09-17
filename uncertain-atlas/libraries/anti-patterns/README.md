@@ -1,3 +1,6 @@
+- [`pbts-height-notlock-sold-as-bundled.md`](pbts-height-notlock-sold-as-bundled.md) — 启用后不能关 被写成已经是扩展切换 / 已经能关 / 已经交差（不变量 886）
+- [`pbts-height-notbft-sold-as-bundled.md`](pbts-height-notbft-sold-as-bundled.md) — H前仍用BFT Time 被写成已经切到 PBTS / 已经是 MTP / 已经交差（不变量 885）
+- [`pbts-height-notzero-sold-as-bundled.md`](pbts-height-notzero-sold-as-bundled.md) — 写成 0 被写成已经启用 / 已经 Precision 就是 PBTS / 已经交差（不变量 884）
 - [`maxbytes-overhead-nottimeout-sold-as-bundled.md`](maxbytes-overhead-nottimeout-sold-as-bundled.md) — 满块投递超时 被写成已经 TimeoutPropose 装得下 / 已经离开关键路径 / 已经交差（不变量 883）
 - [`maxbytes-overhead-not21mb-sold-as-bundled.md`](maxbytes-overhead-not21mb-sold-as-bundled.md) — MAY 出满 被写成已经只会出 21 MB / 已经没有上限 / 已经交差（不变量 882）
 - [`maxbytes-overhead-notfull-sold-as-bundled.md`](maxbytes-overhead-notfull-sold-as-bundled.md) — 扣开销才是交易上限 被写成已经整块都能装 / 已经是证据尺 / 已经交差（不变量 881）

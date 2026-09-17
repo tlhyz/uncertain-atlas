@@ -1,3 +1,18 @@
+| A4190 | 记录 | 会与 343 / 330 / 346 / 884 / 885 糊成「看见不能关就已经是扩展启用高度那种切换 interchangeable、就已经能关 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 启用之后不能关 not already vote-extension switch / not already can disable / not already settled 正式三事（343 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。343 pbts vs params bundled unbundling 完成（886 item 3） |
+| A4191 | 高 | 看见启用之后不能关 会被写成已经是扩展启用高度那种切换 interchangeable | 官方 PbtsEnableHeight item 3：not already vote-extension switch |
+| A4192 | 高 | 看见必须比当前高 会被写成已经能关 interchangeable | 官方 PbtsEnableHeight item 3：not already can disable |
+| A4193 | 高 | 看见字段锁死 会被写成已经交差 interchangeable | 官方 PbtsEnableHeight item 3：not already settled |
+| A4194 | 中 | 怎样设 PbtsEnableHeight 会被抄进不确定 | 不抄。不写怎样设 PbtsEnableHeight。不另写 19 节 |
+| A4185 | 记录 | 会与 343 / 40 / 330 / 884 / 886 糊成「看见写了用于 PBTS 就已经切到 PBTS interchangeable、就已经是 MTP interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 H 之前仍用 BFT Time not already switched to PBTS / not already MTP / not already settled 正式三事（343 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。343 pbts vs params bundled unbundling 续（885 item 2） |
+| A4186 | 高 | 看见 H 之前仍用 BFT Time 会被写成已经切到 PBTS interchangeable | 官方 PbtsEnableHeight item 2：not already switched to PBTS |
+| A4187 | 高 | 看见到了 H 会被写成已经是 MTP interchangeable | 官方 PbtsEnableHeight item 2：not already MTP |
+| A4188 | 高 | 看见还能出合法提案 会被写成已经交差 interchangeable | 官方 PbtsEnableHeight item 2：not already settled |
+| A4189 | 中 | 怎样设 PbtsEnableHeight 会被抄进不确定 | 不抄。不写怎样设 PbtsEnableHeight。不另写 19 节 |
+| A4180 | 记录 | 会与 343 / 336 / 330 / 885 / 886 糊成「看见填了同步参数就已经启用 interchangeable、就已经填了 Precision 就是 PBTS interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 写成 0 不是已经启用 PBTS not already Precision is PBTS / not already field-present / not already settled 正式三事（343 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。343 pbts vs params bundled unbundling 启动（884 item 1） |
+| A4181 | 高 | 看见写成 0 会被写成已经启用 PBTS interchangeable / 336 interchangeable | 官方 PbtsEnableHeight item 1：not already enabled / not 336 |
+| A4182 | 高 | 看见填了 Precision 会被写成已经填了 Precision 就是 PBTS interchangeable | 官方 PbtsEnableHeight item 1：not already Precision is PBTS |
+| A4183 | 高 | 看见字段在 会被写成已经交差 interchangeable | 官方 PbtsEnableHeight item 1：not already settled |
+| A4184 | 中 | 怎样设 PbtsEnableHeight 会被抄进不确定 | 不抄。不写怎样设 PbtsEnableHeight。不另写 19 节 |
 | A4175 | 记录 | 会与 344 / 327 / 33 / 881 / 882 糊成「看见填了 TimeoutPropose 就已经装得下这次 Prepare 执行 interchangeable、就已经离开关键路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 timeout 必须按满块投递延迟算 not already TimeoutPropose covers Prepare / not already left critical path / not already settled 正式三事（344 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。344 maxbytes vs full bundled unbundling 完成（883 item 3） |
 | A4176 | 高 | 看见 timeout 必须按满块投递延迟算 会被写成已经填了 TimeoutPropose 就装得下这次 Prepare 执行 interchangeable | 官方 MaxBytes item 3：not already TimeoutPropose covers Prepare |
 | A4177 | 高 | 看见超时在 会被写成已经离开关键路径 interchangeable | 官方 MaxBytes item 3：not already left critical path |

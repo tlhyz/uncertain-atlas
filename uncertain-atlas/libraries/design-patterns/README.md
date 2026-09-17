@@ -1,3 +1,6 @@
+- [`name-the-pbts-height-notlock-bar.md`](name-the-pbts-height-notlock-bar.md) — 启用之后不能关 not already vote-extension switch / not already can disable / not already settled 正式三事（343 余量）（不变量 886）
+- [`name-the-pbts-height-notbft-bar.md`](name-the-pbts-height-notbft-bar.md) — H 之前仍用 BFT Time not already switched to PBTS / not already MTP / not already settled 正式三事（343 余量）（不变量 885）
+- [`name-the-pbts-height-notzero-bar.md`](name-the-pbts-height-notzero-bar.md) — 写成 0 不是已经启用 PBTS not already Precision is PBTS / not already field-present / not already settled 正式三事（343 余量）（不变量 884）
 - [`name-the-maxbytes-overhead-nottimeout-bar.md`](name-the-maxbytes-overhead-nottimeout-bar.md) — timeout 必须按满块投递延迟算 not already TimeoutPropose covers Prepare / not already left critical path / not already settled 正式三事（344 余量）（不变量 883）
 - [`name-the-maxbytes-overhead-not21mb-bar.md`](name-the-maxbytes-overhead-not21mb-bar.md) — 诚实验证者 MAY 出满 MaxBytes not already only default 21 MB / not already no limit / not already settled 正式三事（344 余量）（不变量 882）
 - [`name-the-maxbytes-overhead-notfull-bar.md`](name-the-maxbytes-overhead-notfull-bar.md) — MaxBytes 减去头集合证据才是交易上限 not already whole block holds txs / not already evidence MaxBytes / not already settled 正式三事（344 余量）（不变量 881）

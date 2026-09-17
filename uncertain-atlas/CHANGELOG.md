@@ -1,3 +1,15 @@
+## 2026-09-17（续 1003）
+
+- 不变量 886；语料 C864；模式 name-the-pbts-height-notlock-bar；反模式 pbts-height-notlock-sold-as-bundled；L10.3 第 855 条。填 L4.4 / CometBFT 档案 启用之后不能关 not already vote-extension switch / not already can disable / not already settled 正式三事（343 余量）。343 pbts vs params bundled unbundling 完成（886 item 3）。
+
+## 2026-09-17（续 1002）
+
+- 不变量 885；语料 C863；模式 name-the-pbts-height-notbft-bar；反模式 pbts-height-notbft-sold-as-bundled；L10.3 第 854 条。填 L4.4 / CometBFT 档案 H 之前仍用 BFT Time not already switched to PBTS / not already MTP / not already settled 正式三事（343 余量）。343 pbts vs params bundled unbundling 续（885 item 2）。
+
+## 2026-09-17（续 1001）
+
+- 不变量 884；语料 C862；模式 name-the-pbts-height-notzero-bar；反模式 pbts-height-notzero-sold-as-bundled；L10.3 第 853 条。填 L4.4 / CometBFT 档案 写成 0 不是已经启用 PBTS not already Precision is PBTS / not already field-present / not already settled 正式三事（343 余量）。343 pbts vs params bundled unbundling 启动（884 item 1）。
+
 ## 2026-09-17（续 1000）
 
 - 不变量 883；语料 C861；模式 name-the-maxbytes-overhead-nottimeout-bar；反模式 maxbytes-overhead-nottimeout-sold-as-bundled；L10.3 第 852 条。填 L4.4 / CometBFT 档案 timeout 必须按满块投递延迟算 not already TimeoutPropose covers Prepare / not already left critical path / not already settled 正式三事（344 余量）。344 maxbytes vs full bundled unbundling 完成（883 item 3）。
