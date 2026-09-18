@@ -1030,6 +1030,9 @@
 - [`worked-example-prepev-notkeep-vs-bundled.md`](worked-example-prepev-notkeep-vs-bundled.md) — MUST留到决定≠already Process就交/REJECT可丢/已经交差；≠448 bundled（不变量 1369）
 - [`worked-example-prepev-notfin-vs-bundled.md`](worked-example-prepev-notfin-vs-bundled.md) — 经Finalize交回≠already CheckTx/ExecTx events/LastResultsHash；≠448 bundled（不变量 1370）
 - [`worked-example-prepevents-vs-finalize.md`](worked-example-prepevents-vs-finalize.md) — Prepare 事件保留≠already 回包交回/Process就交/CheckTx events
+- [`worked-example-valuse-notproc-vs-bundled.md`](worked-example-valuse-notproc-vs-bundled.md) — Process CommitInfo Validator≠already Prepare Extended/local_last_commit/364公钥；≠449 bundled（不变量 1371）
+- [`worked-example-valuse-notfin-vs-bundled.md`](worked-example-valuse-notfin-vs-bundled.md) — Finalize decided≠already Process proposed/已经交差/Prepare Extended；≠449 bundled（不变量 1372）
+- [`worked-example-valuse-notprep-vs-bundled.md`](worked-example-valuse-notprep-vs-bundled.md) — Prepare Extended Validator≠already Process-Finalize CommitInfo/可互换/369抽出；≠449 bundled（不变量 1373）
 - [`worked-example-validatorusage-vs-gates.md`](worked-example-validatorusage-vs-gates.md) — Validator Usage 四门≠already 同一路 CommitInfo/ExtendedCommitInfo
 - [`worked-example-viusageavail-vs-extractpath.md`](worked-example-viusageavail-vs-extractpath.md) — availability 同句抽取异路≠already 奖罚完/同一抽出路径
 - [`worked-example-hstead-notfee-vs-bundled.md`](worked-example-hstead-notfee-vs-bundled.md) — 交易创建变贵≠already 改了CREATE/重定价操作码/Homestead四件bundled；≠234 bundled（不变量 1346）

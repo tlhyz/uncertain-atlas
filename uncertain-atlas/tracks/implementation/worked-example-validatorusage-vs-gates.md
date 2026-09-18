@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare / Process / Finalize 里都有验证者就已经同一门、同一路」，必须分开 Validator 装在 CommitInfo 里用于 ProcessProposal 是不是已经 PrepareProposal 里的 ExtendedCommitInfo / 已经是 local_last_commit 同一份、Validator 装在 CommitInfo 里用于 FinalizeBlock 是不是已经 Process 里的 proposed_last_commit 同一路 / 已经是 decided_last_commit 就已经交差、Validator 装在 ExtendedCommitInfo 里用于 PrepareProposal 是不是已经 Process/Finalize 里的 CommitInfo 同一路 / 已经可以拿 CommitInfo 代替 ExtendedCommitInfo。可以跳过「看见四门里都有 Validator 就已经同一门」。不要另写怎样写 Validator Usage 四门映射正式三事。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare / Process / Finalize 里都有验证者就已经同一门、同一路」，必须分开 Validator 装在 CommitInfo 里用于 ProcessProposal 是不是已经 PrepareProposal 里的 ExtendedCommitInfo / 已经是 local_last_commit 同一份、Validator 装在 CommitInfo 里用于 FinalizeBlock 是不是已经 Process 里的 proposed_last_commit 同一路 / 已经是 decided_last_commit 就已经交差、Validator 装在 ExtendedCommitInfo 里用于 PrepareProposal 是不是已经 Process/Finalize 里的 CommitInfo 同一路 / 已经可以拿 CommitInfo 代替 ExtendedCommitInfo。可以跳过「看见四门里都有 Validator 就已经同一门」。449 Validator Usage four-gate mapping bundled unbundling 完成（1371 item 1 / 1372 item 2 / 1373 item 3）；精读 [`worked-example-valuse-notproc-vs-bundled.md`](worked-example-valuse-notproc-vs-bundled.md)（不变量 1371 item 1）、[`worked-example-valuse-notfin-vs-bundled.md`](worked-example-valuse-notfin-vs-bundled.md)（不变量 1372 item 2）、[`worked-example-valuse-notprep-vs-bundled.md`](worked-example-valuse-notprep-vs-bundled.md)（不变量 1373 item 3）。不要另写怎样写 Validator Usage 四门映射正式三事。
 
 ## 本页不抄
 

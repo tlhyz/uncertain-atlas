@@ -1,3 +1,6 @@
+- [`valuse-notprep-sold-as-bundled.md`](valuse-notprep-sold-as-bundled.md) — Prepare Extended Validator 被写成已经是 CommitInfo / 就已经可互换 / 就已经从块抽出（不变量 1373）
+- [`valuse-notfin-sold-as-bundled.md`](valuse-notfin-sold-as-bundled.md) — Finalize decided 被写成已经是 Process proposed / 就已经交差 / 就已经可拿 Prepare 代替（不变量 1372）
+- [`valuse-notproc-sold-as-bundled.md`](valuse-notproc-sold-as-bundled.md) — Process CommitInfo Validator 被写成已经是 Prepare Extended / 就已经是 local_last_commit / 就已经带公钥（不变量 1371）
 - [`prepev-notfin-sold-as-bundled.md`](prepev-notfin-sold-as-bundled.md) — 经 Finalize 交回 被写成已经是 CheckTx events / 就已经是 ExecTx events / 就已经印进本头（不变量 1370）
 - [`prepev-notkeep-sold-as-bundled.md`](prepev-notkeep-sold-as-bundled.md) — MUST 留到决定 被写成已经 Process 就交 / 就已经 REJECT 可丢 / 就已经交差（不变量 1369）
 - [`prepev-notret-sold-as-bundled.md`](prepev-notret-sold-as-bundled.md) — Prepare MAY 产出 被写成已经在回包里 / 就已经引擎收到 / 就已经 357 验过（不变量 1368）

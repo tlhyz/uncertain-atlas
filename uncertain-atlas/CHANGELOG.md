@@ -1,3 +1,15 @@
+## 2026-09-18（续 1490）
+
+- 不变量 1373；语料 C1351；模式 name-the-valuse-notprep-bar；反模式 valuse-notprep-sold-as-bundled；L10.3 第 1342 条。填 L4.4 ValUse Prepare ExtendedCommitInfo Validator not already Process-Finalize CommitInfo / not already interchangeable / not already 369-extract 正式三事（449 余量）。449 Validator Usage four-gate mapping bundled unbundling 完成（1373 item 3）。
+
+## 2026-09-18（续 1489）
+
+- 不变量 1372；语料 C1350；模式 name-the-valuse-notfin-bar；反模式 valuse-notfin-sold-as-bundled；L10.3 第 1341 条。填 L4.4 ValUse Finalize decided_last_commit Validator not already Process proposed / not already settled / not already Prepare-ext 正式三事（449 余量）。449 Validator Usage four-gate mapping bundled unbundling 续（1372 item 2）。
+
+## 2026-09-18（续 1488）
+
+- 不变量 1371；语料 C1349；模式 name-the-valuse-notproc-bar；反模式 valuse-notproc-sold-as-bundled；L10.3 第 1340 条。填 L4.4 ValUse Process CommitInfo Validator not already Prepare ExtendedCommitInfo / not already local_last_commit / not already 364-pubkey 正式三事（449 余量）。449 Validator Usage four-gate mapping bundled unbundling 启动（1371 item 1）。
+
 ## 2026-09-18（续 1487）
 
 - 不变量 1370；语料 C1348；模式 name-the-prepev-notfin-bar；反模式 prepev-notfin-sold-as-bundled；L10.3 第 1339 条。填 L4.4 PrepEv pass via FinalizeBlockResponse not already CheckTx events / not already ExecTxResult events / not already LastResultsHash 正式三事（448 余量）。448 Prepare events retention until Finalize bundled unbundling 完成（1370 item 3）。

@@ -1,3 +1,6 @@
+- [`name-the-valuse-notprep-bar.md`](name-the-valuse-notprep-bar.md) — ValUse Prepare ExtendedCommitInfo Validator not already Process-Finalize CommitInfo / not already interchangeable / not already 369-extract 正式三事（449 余量）（不变量 1373）
+- [`name-the-valuse-notfin-bar.md`](name-the-valuse-notfin-bar.md) — ValUse Finalize decided_last_commit Validator not already Process proposed / not already settled / not already Prepare-ext 正式三事（449 余量）（不变量 1372）
+- [`name-the-valuse-notproc-bar.md`](name-the-valuse-notproc-bar.md) — ValUse Process CommitInfo Validator not already Prepare ExtendedCommitInfo / not already local_last_commit / not already 364-pubkey 正式三事（449 余量）（不变量 1371）
 - [`name-the-prepev-notfin-bar.md`](name-the-prepev-notfin-bar.md) — PrepEv pass via FinalizeBlockResponse not already CheckTx events / not already ExecTxResult events / not already LastResultsHash 正式三事（448 余量）（不变量 1370）
 - [`name-the-prepev-notkeep-bar.md`](name-the-prepev-notkeep-bar.md) — PrepEv MUST keep until decided not already handed at Process / not already discarded-on-REJECT / not already settled 正式三事（448 余量）（不变量 1369）
 - [`name-the-prepev-notret-bar.md`](name-the-prepev-notret-bar.md) — PrepEv Prepare MAY produce events not already in PrepareProposalResponse / not already engine-received / not already 357-checked 正式三事（448 余量）（不变量 1368）
