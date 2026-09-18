@@ -1,3 +1,18 @@
+| A5225 | 记录 | 会与 412 / 364 / 318 / 1091 / 1092 糊成「看见两边都是 ValidatorUpdate 就已经改了集合 interchangeable、就已经带了公钥 interchangeable、就已经没有集合 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain Validators-as-update not already set-changed / not already has-key / not already no-set 正式三事（412 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。412 initonce vs crash bundled unbundling 完成（1093 item 3） |
+| A5226 | 高 | 看见两边都是 ValidatorUpdate 会被写成已经改了集合 interchangeable / 364 interchangeable | 官方 InitChain Usage 余量 item 3：not already set-changed / not 364 |
+| A5227 | 高 | 看见从空集合更新 会被写成已经带了公钥 interchangeable / 318 interchangeable | 官方 InitChain Usage 余量 item 3：not already has-key / not 318 |
+| A5228 | 高 | 看见有更新结构 会被写成已经没有集合 interchangeable | 官方 InitChain Usage 余量 item 3：not already no-set |
+| A5229 | 中 | 怎样写 Usage 余量会被抄进不确定 | 不抄。不写怎样写 InitChain Usage 余量。不另写 19 节 |
+| A5220 | 记录 | 会与 412 / 318 / 364 / 1091 / 1093 糊成「看见能决定就已经没有集合 interchangeable、就已经用了创世文件 interchangeable、就已经验过应用状态 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain may-choose-set not already no-set / not already genesis-used / not already app-checked 正式三事（412 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。412 initonce vs crash bundled unbundling 续（1092 item 2） |
+| A5221 | 高 | 看见能决定 会被写成已经没有集合 interchangeable / 318 interchangeable | 官方 InitChain Usage 余量 item 2：not already no-set / not 318 |
+| A5222 | 高 | 看见能算另一套 会被写成已经用了创世文件 interchangeable / 364 interchangeable | 官方 InitChain Usage 余量 item 2：not already genesis-used / not 364 |
+| A5223 | 高 | 看见有创世应用信息 会被写成已经验过应用状态 interchangeable | 官方 InitChain Usage 余量 item 2：not already app-checked |
+| A5224 | 中 | 怎样写 Usage 余量会被抄进不确定 | 不抄。不写怎样写 InitChain Usage 余量。不另写 19 节 |
+| A5215 | 记录 | 会与 412 / 320 / 303 / 1092 / 1093 糊成「看见创世时只调一次就已经是崩溃后再调 interchangeable、就已经能跳步 interchangeable、就已经过了 genesis_time interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain once-at-genesis not already crash-recall / not already skip-step / not already past-genesis 正式三事（412 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。412 initonce vs crash bundled unbundling 启动（1091 item 1） |
+| A5216 | 高 | 看见调了一次 会被写成已经是崩溃后再调 interchangeable / 320 interchangeable | 官方 InitChain Usage 余量 item 1：not already crash-recall / not 320 |
+| A5217 | 高 | 看见调了一次 会被写成已经能跳步 interchangeable / 303 interchangeable | 官方 InitChain Usage 余量 item 1：not already skip-step / not 303 |
+| A5218 | 高 | 看见有创世调用 会被写成已经过了 genesis_time interchangeable | 官方 InitChain Usage 余量 item 1：not already past-genesis |
+| A5219 | 中 | 怎样写 Usage 余量会被抄进不确定 | 不抄。不写怎样写 InitChain Usage 余量。不另写 19 节 |
 | A5210 | 记录 | 会与 415 / 353 / 358 / 1088 / 1089 糊成「看见 vote_extension 就已经跳过 Verify interchangeable、就已经按原样签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.vote_extension not already skip-verify / not already signed-as-is / not already settled 正式三事（415 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。415 verifyheight vs extheight bundled unbundling 完成（1090 item 3） |
 | A5211 | 高 | 看见能空 会被写成已经跳过 Verify interchangeable / 353 interchangeable | 官方 Verify 请求余栏 item 3：not already skip-verify / not 353 |
 | A5212 | 高 | 看见由 CometBFT 签 会被写成已经按原样签 interchangeable / 358 interchangeable | 官方 Verify 请求余栏 item 3：not already signed-as-is / not 358 |

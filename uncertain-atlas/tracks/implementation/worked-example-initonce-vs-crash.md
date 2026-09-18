@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 InitChain Usage 余量就已经是崩溃后再调、已经没有集合、已经改了集合」，必须分开 InitChain 创世时只调一次是不是已经是崩溃后再调、应用可以决定接受创世验证者集合或用创世应用信息算出另一套是不是已经没有集合、Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新是不是已经改了集合。可以跳过「看见填了 InitChain Usage 余量就已经是崩溃后再调」。不要另写怎样写 InitChain Usage 余量。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 InitChain Usage 余量就已经是崩溃后再调、已经没有集合、已经改了集合」，必须分开 InitChain 创世时只调一次是不是已经是崩溃后再调、应用可以决定接受创世验证者集合或用创世应用信息算出另一套是不是已经没有集合、Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新是不是已经改了集合。可以跳过「看见填了 InitChain Usage 余量就已经是崩溃后再调」。不要另写怎样写 InitChain Usage 余量。412 initonce vs crash bundled unbundling 完成（1091 item 1 / 1092 item 2 / 1093 item 3）；精读 [`worked-example-ionce-notcrash-vs-bundled.md`](worked-example-ionce-notcrash-vs-bundled.md)（不变量 1091 item 1）。
 
 ## 本页不抄
 

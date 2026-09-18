@@ -650,6 +650,9 @@
 - [`worked-example-extrest-notlocal-vs-bundled.md`](worked-example-extrest-notlocal-vs-bundled.md) — proposed_last_commit≠already local-settled/processed/this-header；≠411 bundled（不变量 1035）
 - [`worked-example-extrest-notexec-vs-bundled.md`](worked-example-extrest-notexec-vs-bundled.md) — txs≠already executed/settled/whole-block；≠411 bundled（不变量 1034）
 - [`worked-example-extreqtxs-vs-fintxs.md`](worked-example-extreqtxs-vs-fintxs.md) — ExtendVoteRequest.txs 是扩展要指的那份块的交易列表 ≠ 已经执行那些交易；ExtendVoteRequest.proposed_last_commit 是上一份拟议块的 last commit 信息 ≠ 已经交差 local_last_commit；ExtendVoteRequest.next_validators_hash 是下一份验证者集合的哈希 ≠ 已经是 Finalize 请求栏的 next_validators_hash（不变量 411）
+- [`worked-example-ionce-notchg-vs-bundled.md`](worked-example-ionce-notchg-vs-bundled.md) — Validators-as-update≠already set-changed/has-key/no-set；≠412 bundled（不变量 1093）
+- [`worked-example-ionce-notempty-vs-bundled.md`](worked-example-ionce-notempty-vs-bundled.md) — may-choose-set≠already no-set/genesis-used/app-checked；≠412 bundled（不变量 1092）
+- [`worked-example-ionce-notcrash-vs-bundled.md`](worked-example-ionce-notcrash-vs-bundled.md) — once-at-genesis≠already crash-recall/skip-step/past-genesis；≠412 bundled（不变量 1091）
 - [`worked-example-initonce-vs-crash.md`](worked-example-initonce-vs-crash.md) — InitChain 创世时只调一次 ≠ 已经是崩溃后再调；应用可以决定接受创世验证者集合或用创世应用信息算出另一套 ≠ 已经没有集合；Request 和 Response 的 Validators 都是 ValidatorUpdate、技术上是从空集合更新 ≠ 已经改了集合（不变量 412）
 - [`worked-example-extmis-notkey-vs-bundled.md`](worked-example-extmis-notkey-vs-bundled.md) — validator_address≠already has-key/can-verify/settled；≠413 bundled（不变量 1039）
 - [`worked-example-extmis-notheader-vs-bundled.md`](worked-example-extmis-notheader-vs-bundled.md) — proposer_address≠already header-known/processed/settled；≠413 bundled（不变量 1038）

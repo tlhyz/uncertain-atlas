@@ -1,3 +1,6 @@
+- [`ionce-notchg-sold-as-bundled.md`](ionce-notchg-sold-as-bundled.md) — Validators-as-update 被写成已经改了集合 / 已经带了公钥 / 已经没有集合（不变量 1093）
+- [`ionce-notempty-sold-as-bundled.md`](ionce-notempty-sold-as-bundled.md) — may-choose-set 被写成已经没有集合 / 已经用了创世文件 / 已经验过应用状态（不变量 1092）
+- [`ionce-notcrash-sold-as-bundled.md`](ionce-notcrash-sold-as-bundled.md) — once-at-genesis 被写成已经是崩溃后再调 / 已经能跳步 / 已经过了 genesis_time（不变量 1091）
 - [`vreqh-notskip-sold-as-bundled.md`](vreqh-notskip-sold-as-bundled.md) — vote_extension 被写成已经跳过 Verify / 已经按原样签 / 已经交差（不变量 1090）
 - [`vreqh-notproc-sold-as-bundled.md`](vreqh-notproc-sold-as-bundled.md) — hash 被写成已经不保证跑过 Process / 已经是 ExtendVote hash / 已经交差（不变量 1089）
 - [`vreqh-notprop-sold-as-bundled.md`](vreqh-notprop-sold-as-bundled.md) — height 被写成已经是拟议块高度 / 已经对上了 / 已经会调 Verify（不变量 1088）

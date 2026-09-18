@@ -1,3 +1,6 @@
+- [`name-the-ionce-notchg-bar.md`](name-the-ionce-notchg-bar.md) — InitChain Validators-as-update not already set-changed / not already has-key / not already no-set 正式三事（412 余量）（不变量 1093）
+- [`name-the-ionce-notempty-bar.md`](name-the-ionce-notempty-bar.md) — InitChain may-choose-set not already no-set / not already genesis-used / not already app-checked 正式三事（412 余量）（不变量 1092）
+- [`name-the-ionce-notcrash-bar.md`](name-the-ionce-notcrash-bar.md) — InitChain once-at-genesis not already crash-recall / not already skip-step / not already past-genesis 正式三事（412 余量）（不变量 1091）
 - [`name-the-vreqh-notskip-bar.md`](name-the-vreqh-notskip-bar.md) — VerifyVoteExtensionRequest.vote_extension not already skip-verify / not already signed-as-is / not already settled 正式三事（415 余量）（不变量 1090）
 - [`name-the-vreqh-notproc-bar.md`](name-the-vreqh-notproc-bar.md) — VerifyVoteExtensionRequest.hash not already not-guaranteed-processed / not already ext-hash / not already settled 正式三事（415 余量）（不变量 1089）
 - [`name-the-vreqh-notprop-bar.md`](name-the-vreqh-notprop-bar.md) — VerifyVoteExtensionRequest.height not already proposed-height / not already aligned / not already will-call 正式三事（415 余量）（不变量 1088）

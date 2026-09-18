@@ -1,3 +1,15 @@
+## 2026-09-18（续 1210）
+
+- 不变量 1093；语料 C1071；模式 name-the-ionce-notchg-bar；反模式 ionce-notchg-sold-as-bundled；L10.3 第 1062 条。填 L4.4 / CometBFT 档案 InitChain Validators-as-update not already set-changed / not already has-key / not already no-set 正式三事（412 余量）。412 initonce vs crash bundled unbundling 完成（1093 item 3）。
+
+## 2026-09-18（续 1209）
+
+- 不变量 1092；语料 C1070；模式 name-the-ionce-notempty-bar；反模式 ionce-notempty-sold-as-bundled；L10.3 第 1061 条。填 L4.4 / CometBFT 档案 InitChain may-choose-set not already no-set / not already genesis-used / not already app-checked 正式三事（412 余量）。412 initonce vs crash bundled unbundling 续（1092 item 2）。
+
+## 2026-09-18（续 1208）
+
+- 不变量 1091；语料 C1069；模式 name-the-ionce-notcrash-bar；反模式 ionce-notcrash-sold-as-bundled；L10.3 第 1060 条。填 L4.4 / CometBFT 档案 InitChain once-at-genesis not already crash-recall / not already skip-step / not already past-genesis 正式三事（412 余量）。412 initonce vs crash bundled unbundling 启动（1091 item 1）。
+
 ## 2026-09-18（续 1207）
 
 - 不变量 1090；语料 C1068；模式 name-the-vreqh-notskip-bar；反模式 vreqh-notskip-sold-as-bundled；L10.3 第 1059 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.vote_extension not already skip-verify / not already signed-as-is / not already settled 正式三事（415 余量）。415 verifyheight vs extheight bundled unbundling 完成（1090 item 3）。
