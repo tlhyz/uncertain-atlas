@@ -1,3 +1,15 @@
+## 2026-09-18（续 1201）
+
+- 不变量 1084；语料 C1062；模式 name-the-eresp-nottable-bar；反模式 eresp-nottable-sold-as-bundled；L10.3 第 1053 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-ext-table / not already skip-verify / not already same-copy 正式三事（418 余量）。418 extresp vs wrap bundled unbundling 完成（1084 item 3）。
+
+## 2026-09-18（续 1200）
+
+- 不变量 1083；语料 C1061；模式 name-the-eresp-notraw-bar；反模式 eresp-notraw-sold-as-bundled；L10.3 第 1052 条。填 L4.4 / CometBFT 档案 ExtendVoteResponse.non_rp_extension not already signed-as-is / not already replay-protected / not already must-fill 正式三事（418 余量）。418 extresp vs wrap bundled unbundling 续（1083 item 2）。
+
+## 2026-09-18（续 1199）
+
+- 不变量 1082；语料 C1060；模式 name-the-eresp-notwrap-bar；反模式 eresp-notwrap-sold-as-bundled；L10.3 第 1051 条。填 L4.4 / CometBFT 档案 ExtendVoteResponse.vote_extension not already canonical-wrapped / not already same-ext / not already settled 正式三事（418 余量）。418 extresp vs wrap bundled unbundling 启动（1082 item 1）。
+
 ## 2026-09-18（续 1198）
 
 - 不变量 1081；语料 C1059；模式 name-the-vreqb-notraw-bar；反模式 vreqb-notraw-sold-as-bundled；L10.3 第 1050 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp raw-sign not already signed-as-is / not already wrapped / not already replay-protected 正式三事（436 余量）。436 verifyreqbar vs rest bundled unbundling 完成（1081 item 3）。

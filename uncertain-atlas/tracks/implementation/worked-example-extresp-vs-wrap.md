@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了扩展回包栏就已经会包进 CanonicalVoteExtension、已经按原样签、已经是 vote_extension 表」，必须分开 ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定是不是已经会包进 CanonicalVoteExtension、ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定是不是已经按原样签、VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长是不是已经是 vote_extension 表。可以跳过「看见填了扩展回包栏就已经会包进 CanonicalVoteExtension」。不要另写怎样写扩展回包栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了扩展回包栏就已经会包进 CanonicalVoteExtension、已经按原样签、已经是 vote_extension 表」，必须分开 ExtendVoteResponse.vote_extension 是 CometBFT 签的信息、可以 0 长、标成非确定是不是已经会包进 CanonicalVoteExtension、ExtendVoteResponse.non_rp_extension 是 CometBFT 签的信息、可以 0 长、标成非确定是不是已经按原样签、VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长是不是已经是 vote_extension 表。可以跳过「看见填了扩展回包栏就已经会包进 CanonicalVoteExtension」。不要另写怎样写扩展回包栏。418 extresp vs wrap bundled unbundling 完成（1082 item 1 / 1083 item 2 / 1084 item 3）；精读 [`worked-example-eresp-notwrap-vs-bundled.md`](worked-example-eresp-notwrap-vs-bundled.md)（不变量 1082 item 1）。
 
 ## 本页不抄
 

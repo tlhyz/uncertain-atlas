@@ -1,3 +1,6 @@
+- [`name-the-eresp-nottable-bar.md`](name-the-eresp-nottable-bar.md) — VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-ext-table / not already skip-verify / not already same-copy 正式三事（418 余量）（不变量 1084）
+- [`name-the-eresp-notraw-bar.md`](name-the-eresp-notraw-bar.md) — ExtendVoteResponse.non_rp_extension not already signed-as-is / not already replay-protected / not already must-fill 正式三事（418 余量）（不变量 1083）
+- [`name-the-eresp-notwrap-bar.md`](name-the-eresp-notwrap-bar.md) — ExtendVoteResponse.vote_extension not already canonical-wrapped / not already same-ext / not already settled 正式三事（418 余量）（不变量 1082）
 - [`name-the-vreqb-notraw-bar.md`](name-the-vreqb-notraw-bar.md) — VerifyVoteExtensionRequest.non_rp raw-sign not already signed-as-is / not already wrapped / not already replay-protected 正式三事（436 余量）（不变量 1081）
 - [`name-the-vreqb-notext-bar.md`](name-the-vreqb-notext-bar.md) — VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-extension / not already skip-verify / not already same-object 正式三事（436 余量）（不变量 1080）
 - [`name-the-vreqb-notkey-bar.md`](name-the-vreqb-notkey-bar.md) — VerifyVoteExtensionRequest.validator_address not already has-key / not already proposer / not already can-verify 正式三事（436 余量）（不变量 1079）

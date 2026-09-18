@@ -1,3 +1,18 @@
+| A5180 | 记录 | 会与 418 / 415 / 436 / 1082 / 1083 糊成「看见 Verify non_rp 就已经是 vote_extension 表 interchangeable、就已经跳过 Verify interchangeable、就已经同一份 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-ext-table / not already skip-verify / not already same-copy 正式三事（418 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。418 extresp vs wrap bundled unbundling 完成（1084 item 3） |
+| A5181 | 高 | 看见能空 会被写成已经是 vote_extension 表 interchangeable / 415 interchangeable | 官方扩展回包栏 item 3：not already vote-ext-table / not 415 |
+| A5182 | 高 | 看见由 CometBFT 签 会被写成已经跳过 Verify interchangeable / 436 interchangeable | 官方扩展回包栏 item 3：not already skip-verify / not 436 |
+| A5183 | 高 | 看见是应用自己的信息 会被写成已经同一份 interchangeable | 官方扩展回包栏 item 3：not already same-copy |
+| A5184 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写扩展回包栏。不另写 19 节 |
+| A5175 | 记录 | 会与 418 / 358 / 436 / 1082 / 1084 糊成「看见 ExtendVote non_rp 就已经按原样签 interchangeable、就已经有重放保护 interchangeable、就已经必须填 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteResponse.non_rp_extension not already signed-as-is / not already replay-protected / not already must-fill 正式三事（418 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。418 extresp vs wrap bundled unbundling 续（1083 item 2） |
+| A5176 | 高 | 看见回了第二份 会被写成已经按原样签 interchangeable / 358 interchangeable | 官方扩展回包栏 item 2：not already signed-as-is / not 358 |
+| A5177 | 高 | 看见标成非确定 会被写成已经有重放保护 interchangeable | 官方扩展回包栏 item 2：not already replay-protected |
+| A5178 | 高 | 看见可以 0 长 会被写成已经必须填 interchangeable | 官方扩展回包栏 item 2：not already must-fill |
+| A5179 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写扩展回包栏。不另写 19 节 |
+| A5170 | 记录 | 会与 418 / 358 / 338 / 1083 / 1084 糊成「看见 ExtendVote vote_extension 就已经会包进 CanonicalVoteExtension interchangeable、就已经是同一份扩展 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVoteResponse.vote_extension not already canonical-wrapped / not already same-ext / not already settled 正式三事（418 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。418 extresp vs wrap bundled unbundling 启动（1082 item 1） |
+| A5171 | 高 | 看见回了扩展 会被写成已经会包进 CanonicalVoteExtension interchangeable / 358 interchangeable | 官方扩展回包栏 item 1：not already canonical-wrapped / not 358 |
+| A5172 | 高 | 看见标成非确定 会被写成已经是同一份扩展 interchangeable / 338 interchangeable | 官方扩展回包栏 item 1：not already same-ext / not 338 |
+| A5173 | 高 | 看见可以 0 长 会被写成已经交差 interchangeable | 官方扩展回包栏 item 1：not already settled |
+| A5174 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写扩展回包栏。不另写 19 节 |
 | A5165 | 记录 | 会与 436 / 358 / 1079 / 1080 糊成「看见 non_rp 按原样签就已经按原样签 interchangeable、就已经包进 CanonicalVoteExtension interchangeable、就已经有重放保护 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp raw-sign not already signed-as-is / not already wrapped / not already replay-protected 正式三事（436 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。436 verifyreqbar vs rest bundled unbundling 完成（1081 item 3） |
 | A5166 | 高 | 看见按原样签 会被写成已经按原样签 interchangeable / 358 interchangeable | 官方 Verify 请求栏 item 3：not already signed-as-is / not 358 |
 | A5167 | 高 | 看见不加元信息 会被写成已经包进 CanonicalVoteExtension interchangeable | 官方 Verify 请求栏 item 3：not already wrapped |

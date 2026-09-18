@@ -1,3 +1,6 @@
+- [`eresp-nottable-sold-as-bundled.md`](eresp-nottable-sold-as-bundled.md) — Verify non_rp 被写成已经是 vote_extension 表 / 已经跳过 Verify / 已经同一份（不变量 1084）
+- [`eresp-notraw-sold-as-bundled.md`](eresp-notraw-sold-as-bundled.md) — non_rp_extension 被写成已经按原样签 / 已经有重放保护 / 已经必须填（不变量 1083）
+- [`eresp-notwrap-sold-as-bundled.md`](eresp-notwrap-sold-as-bundled.md) — vote_extension 被写成已经会包进 CanonicalVoteExtension / 已经是同一份扩展 / 已经交差（不变量 1082）
 - [`vreqb-notraw-sold-as-bundled.md`](vreqb-notraw-sold-as-bundled.md) — non_rp raw-sign 被写成已经按原样签 / 已经包进 CanonicalVoteExtension / 已经有重放保护（不变量 1081）
 - [`vreqb-notext-sold-as-bundled.md`](vreqb-notext-sold-as-bundled.md) — non_rp 被写成已经是 vote_extension / 已经跳过 Verify / 已经同一对象（不变量 1080）
 - [`vreqb-notkey-sold-as-bundled.md`](vreqb-notkey-sold-as-bundled.md) — validator_address 被写成已经带了公钥 / 已经是 proposer / 已经能验签（不变量 1079）
