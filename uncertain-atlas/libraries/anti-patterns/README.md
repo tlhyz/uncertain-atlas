@@ -1,3 +1,6 @@
+- [`vresp-nothonest-sold-as-bundled.md`](vresp-nothonest-sold-as-bundled.md) — SHOULD Accept 被写成已经正确进程必须 Accept / 已经是 Req 6 已经测过 / 已经验过扩展（不变量 1078）
+- [`vresp-notext-sold-as-bundled.md`](vresp-notext-sold-as-bundled.md) — exclusive 被写成已经可以像 ExtendVote 那样 / 已经和对任意扩展同一裁决一回事 / 已经和 ExtendVote 同一把尺（不变量 1077）
+- [`vresp-notinvalid-sold-as-bundled.md`](vresp-notinvalid-sold-as-bundled.md) — status 被写成已经当成块非法 / 已经不能收这张 Precommit / 已经是 Process REJECT（不变量 1076）
 - [`fend-nottimeout-sold-as-bundled.md`](fend-nottimeout-sold-as-bundled.md) — next_block_delay 被写成已经是本地 timeout_commit / 已经是块间隔 / 已经像 app_hash 那样必须确定（不变量 1075）
 - [`fend-notapphash-sold-as-bundled.md`](fend-notapphash-sold-as-bundled.md) — app_hash 被写成已经写进下一块头 / 已经是本头 AppHash / 已经只是索引（不变量 1074）
 - [`fend-notheffect-sold-as-bundled.md`](fend-notheffect-sold-as-bundled.md) — cparam 被写成已经在块 H 生效 / 已经在 H+1 换人 / 已经只改这一项（不变量 1073）

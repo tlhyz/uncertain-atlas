@@ -1,3 +1,6 @@
+- [`name-the-vresp-nothonest-bar.md`](name-the-vresp-nothonest-bar.md) — VerifyVoteExtensionResponse.status SHOULD Accept not already honest-must / not already req6-tested / not already verified 正式三事（433 余量）（不变量 1078）
+- [`name-the-vresp-notext-bar.md`](name-the-vresp-notext-bar.md) — VerifyVoteExtensionResponse.status exclusive dependence not already extend-nondet / not already same-ruling / not already same-ruler 正式三事（433 余量）（不变量 1077）
+- [`name-the-vresp-notinvalid-bar.md`](name-the-vresp-notinvalid-bar.md) — VerifyVoteExtensionResponse.status not already block-invalid / not already no-precommit / not already process-reject 正式三事（433 余量）（不变量 1076）
 - [`name-the-fend-nottimeout-bar.md`](name-the-fend-nottimeout-bar.md) — FinalizeBlockResponse.next_block_delay not already timeout-commit / not already block-interval / not already must-det 正式三事（432 余量）（不变量 1075）
 - [`name-the-fend-notapphash-bar.md`](name-the-fend-notapphash-bar.md) — FinalizeBlockResponse.app_hash not already next-header / not already this-header / not already index-only 正式三事（432 余量）（不变量 1074）
 - [`name-the-fend-notheffect-bar.md`](name-the-fend-notheffect-bar.md) — FinalizeBlockResponse.consensus_param_updates not already h-effective / not already h1-rotate / not already one-field 正式三事（432 余量）（不变量 1073）

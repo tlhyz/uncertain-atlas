@@ -1,3 +1,18 @@
+| A5150 | 记录 | 会与 433 / 348 / 1076 / 1077 糊成「看见应用 SHOULD 总是设 ACCEPT 就已经正确进程交出的扩展必须 Accept interchangeable、就已经是 Req 6 已经测过 interchangeable、就已经验过扩展 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionResponse.status SHOULD Accept not already honest-must / not already req6-tested / not already verified 正式三事（433 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。433 verifyresp vs status bundled unbundling 完成（1078 item 3） |
+| A5151 | 高 | 看见 SHOULD 总是 Accept 会被写成已经正确进程交出的扩展必须 Accept interchangeable / 348 interchangeable | 官方 Verify 回包栏 item 3：not already honest-must / not 348 |
+| A5152 | 高 | 看见除非真的知道活性代价 会被写成已经是 Req 6 已经测过 interchangeable | 官方 Verify 回包栏 item 3：not already req6-tested |
+| A5153 | 高 | 看见写了默认 Accept 会被写成已经验过扩展 interchangeable | 官方 Verify 回包栏 item 3：not already verified |
+| A5154 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Verify 回包栏。不另写 19 节 |
+| A5145 | 记录 | 会与 433 / 338 / 1076 / 1078 糊成「看见 VerifyVoteExtensionResponse.status exclusive dependence 就已经可以像 ExtendVote 那样 interchangeable、就已经和对任意扩展同一裁决一回事 interchangeable、就已经和 ExtendVote 同一把尺 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionResponse.status exclusive dependence not already extend-nondet / not already same-ruling / not already same-ruler 正式三事（433 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。433 verifyresp vs status bundled unbundling 续（1077 item 2） |
+| A5146 | 高 | 看见回了 status 会被写成已经可以像 ExtendVote 那样 interchangeable / 338 interchangeable | 官方 Verify 回包栏 item 2：not already extend-nondet / not 338 |
+| A5147 | 高 | 看见必须只依赖 会被写成已经和对任意扩展同一裁决一回事 interchangeable | 官方 Verify 回包栏 item 2：not already same-ruling |
+| A5148 | 高 | 看见有确定要求 会被写成已经和 ExtendVote 同一把尺 interchangeable | 官方 Verify 回包栏 item 2：not already same-ruler |
+| A5149 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Verify 回包栏。不另写 19 节 |
+| A5140 | 记录 | 会与 433 / 34 / 430 / 1077 / 1078 糊成「看见 VerifyVoteExtensionResponse.status 就已经当成块非法 interchangeable、就已经不能收这张 Precommit interchangeable、就已经是 Process REJECT interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionResponse.status not already block-invalid / not already no-precommit / not already process-reject 正式三事（433 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。433 verifyresp vs status bundled unbundling 启动（1076 item 1） |
+| A5141 | 高 | 看见回了 REJECT 会被写成已经当成块非法 interchangeable / 34 interchangeable | 官方 Verify 回包栏 item 1：not already block-invalid / not 34 |
+| A5142 | 高 | 看见拒掉整张票 会被写成已经不能收这张 Precommit interchangeable | 官方 Verify 回包栏 item 1：not already no-precommit |
+| A5143 | 高 | 看见 Precommit 被丢掉 会被写成已经是 Process REJECT interchangeable / 430 interchangeable | 官方 Verify 回包栏 item 1：not already process-reject / not 430 |
+| A5144 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Verify 回包栏。不另写 19 节 |
 | A5135 | 记录 | 会与 432 / 52 / 1073 / 1074 糊成「看见 FinalizeBlockResponse.next_block_delay 就已经是本地 timeout_commit interchangeable、就已经是块间隔 interchangeable、就已经像 app_hash 那样必须确定 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse.next_block_delay not already timeout-commit / not already block-interval / not already must-det 正式三事（432 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。432 finrespend vs params bundled unbundling 完成（1075 item 3） |
 | A5136 | 高 | 看见回了 next_block_delay 会被写成已经是本地 timeout_commit interchangeable / 52 interchangeable | 官方 Finalize 回包末栏 item 3：not already timeout-commit / not 52 |
 | A5137 | 高 | 看见能指 post-commit 等待 会被写成已经是块间隔 interchangeable | 官方 Finalize 回包末栏 item 3：not already block-interval |

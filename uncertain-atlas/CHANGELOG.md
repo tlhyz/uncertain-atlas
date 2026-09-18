@@ -1,3 +1,15 @@
+## 2026-09-18（续 1195）
+
+- 不变量 1078；语料 C1056；模式 name-the-vresp-nothonest-bar；反模式 vresp-nothonest-sold-as-bundled；L10.3 第 1047 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionResponse.status SHOULD Accept not already honest-must / not already req6-tested / not already verified 正式三事（433 余量）。433 verifyresp vs status bundled unbundling 完成（1078 item 3）。
+
+## 2026-09-18（续 1194）
+
+- 不变量 1077；语料 C1055；模式 name-the-vresp-notext-bar；反模式 vresp-notext-sold-as-bundled；L10.3 第 1046 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionResponse.status exclusive dependence not already extend-nondet / not already same-ruling / not already same-ruler 正式三事（433 余量）。433 verifyresp vs status bundled unbundling 续（1077 item 2）。
+
+## 2026-09-18（续 1193）
+
+- 不变量 1076；语料 C1054；模式 name-the-vresp-notinvalid-bar；反模式 vresp-notinvalid-sold-as-bundled；L10.3 第 1045 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionResponse.status not already block-invalid / not already no-precommit / not already process-reject 正式三事（433 余量）。433 verifyresp vs status bundled unbundling 启动（1076 item 1）。
+
 ## 2026-09-18（续 1192）
 
 - 不变量 1075；语料 C1053；模式 name-the-fend-nottimeout-bar；反模式 fend-nottimeout-sold-as-bundled；L10.3 第 1044 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse.next_block_delay not already timeout-commit / not already block-interval / not already must-det 正式三事（432 余量）。432 finrespend vs params bundled unbundling 完成（1075 item 3）。
