@@ -1,3 +1,6 @@
+- [`name-the-lex69-notpriv-bar.md`](name-the-lex69-notpriv-bar.md) — BIP-69 lex-order not already private / not already random / not already settled 正式三事（291 余量）（不变量 1189）
+- [`name-the-lex69-notcons-bar.md`](name-the-lex69-notcons-bar.md) — BIP-69 lex-order not already consensus / not already spend-gate / not already settled 正式三事（291 余量）（不变量 1188）
+- [`name-the-lex69-nothabit-bar.md`](name-the-lex69-nothabit-bar.md) — BIP-69 habit-order not already lex-standard / not already no-fingerprint / not already settled 正式三事（291 余量）（不变量 1187）
 - [`name-the-pj78-notmerge-bar.md`](name-the-pj78-notmerge-bar.md) — BIP-78 added-input not already other-tx / not already network-private / not already settled 正式三事（290 余量）（不变量 1186）
 - [`name-the-pj78-notorig-bar.md`](name-the-pj78-notorig-bar.md) — BIP-78 original not already proposal / not already payjoin-tx / not already settled 正式三事（290 余量）（不变量 1185）
 - [`name-the-pj78-noturi-bar.md`](name-the-pj78-noturi-bar.md) — BIP-78 pj-uri not already payjoin-payment / not already original / not already settled 正式三事（290 余量）（不变量 1184）

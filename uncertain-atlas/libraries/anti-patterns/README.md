@@ -1,3 +1,6 @@
+- [`lex69-notpriv-sold-as-bundled.md`](lex69-notpriv-sold-as-bundled.md) — 字典序 被写成已经私人 / 已经是随机打乱 / 已经交差（不变量 1189）
+- [`lex69-notcons-sold-as-bundled.md`](lex69-notcons-sold-as-bundled.md) — 字典序 被写成已经是共识 / 已经决定这笔能不能花 / 已经交差（不变量 1188）
+- [`lex69-nothabit-sold-as-bundled.md`](lex69-nothabit-sold-as-bundled.md) — 习惯顺序 被写成已经是字典序标准 / 已经没有指纹 / 已经交差（不变量 1187）
 - [`pj78-notmerge-sold-as-bundled.md`](pj78-notmerge-sold-as-bundled.md) — 加输入 被写成已经另开一笔 / 已经对全网私人 / 已经交差（不变量 1186）
 - [`pj78-notorig-sold-as-bundled.md`](pj78-notorig-sold-as-bundled.md) — 原始包 被写成已经是提案 / 已经是 Payjoin 交易 / 已经交差（不变量 1185）
 - [`pj78-noturi-sold-as-bundled.md`](pj78-noturi-sold-as-bundled.md) — pj= URI 被写成已经是 payjoin 付款 / 已经有原始包 / 已经交差（不变量 1184）

@@ -1,3 +1,18 @@
+| A5710 | 记录 | 会与 291 / 1186 / 257 / 1187 / 1188 糊成「看见按字典序排了就已经私人 interchangeable、就已经是随机打乱 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-69 lex-order not already private / not already random / not already settled 正式三事（291 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。291 order vs lex bundled unbundling 完成（1189 item 3） |
+| A5711 | 高 | 看见按字典序排了 会被写成已经私人 interchangeable / 1186 interchangeable | 官方 BIP-69 输入输出顺序 item 3：not already private / not 1186 |
+| A5712 | 高 | 看见确定排过 会被写成已经是随机打乱 interchangeable / 257 interchangeable | 官方 BIP-69 输入输出顺序 item 3：not already random / not 257 |
+| A5713 | 高 | 看见能给 CoinJoin 用 会被写成已经交差 interchangeable | 官方 BIP-69 输入输出顺序 item 3：not already settled |
+| A5714 | 中 | 怎样按前交易哈希排输入会被抄进不确定 | 不抄。不写怎样按前交易哈希排输入。不另写 19 节 |
+| A5705 | 记录 | 会与 291 / 144 / 166 / 1187 / 1189 糊成「看见按字典序排了就已经是共识 interchangeable、就已经决定这笔能不能花 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-69 lex-order not already consensus / not already spend-gate / not already settled 正式三事（291 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。291 order vs lex bundled unbundling 续（1188 item 2） |
+| A5706 | 高 | 看见按字典序排了 会被写成已经是共识 interchangeable / 144 interchangeable | 官方 BIP-69 输入输出顺序 item 2：not already consensus / not 144 |
+| A5707 | 高 | 看见顺序变了 会被写成已经决定这笔能不能花 interchangeable / 166 interchangeable | 官方 BIP-69 输入输出顺序 item 2：not already spend-gate / not 166 |
+| A5708 | 高 | 看见排过了 会被写成已经交差 interchangeable | 官方 BIP-69 输入输出顺序 item 2：not already settled |
+| A5709 | 中 | 怎样按前交易哈希排输入会被抄进不确定 | 不抄。不写怎样按前交易哈希排输入。不另写 19 节 |
+| A5700 | 记录 | 会与 291 / 1185 / 144 / 1188 / 1189 糊成「看见自家习惯的输入输出顺序就已经是字典序标准 interchangeable、就已经没有指纹 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-69 habit-order not already lex-standard / not already no-fingerprint / not already settled 正式三事（291 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。291 order vs lex bundled unbundling 启动（1187 item 1） |
+| A5701 | 高 | 看见自家习惯的输入输出顺序 会被写成已经是字典序标准 interchangeable / 1185 interchangeable | 官方 BIP-69 输入输出顺序 item 1：not already lex-standard / not 1185 |
+| A5702 | 高 | 看见先花后找零 会被写成已经没有指纹 interchangeable / 144 interchangeable | 官方 BIP-69 输入输出顺序 item 1：not already no-fingerprint / not 144 |
+| A5703 | 高 | 看见一种排法 会被写成已经交差 interchangeable | 官方 BIP-69 输入输出顺序 item 1：not already settled |
+| A5704 | 中 | 怎样按前交易哈希排输入会被抄进不确定 | 不抄。不写怎样按前交易哈希排输入。不另写 19 节 |
 | A5695 | 记录 | 会与 290 / 144 / 255 / 1184 / 1185 糊成「看见收款方加了输入就已经另开一笔 interchangeable、就已经对全网私人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-78 added-input not already other-tx / not already network-private / not already settled 正式三事（290 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。290 payjoin vs original bundled unbundling 完成（1186 item 3） |
 | A5696 | 高 | 看见收款方加了输入 会被写成已经另开一笔 interchangeable / 144 interchangeable | 官方 BIP-78 payjoin item 3：not already other-tx / not 144 |
 | A5697 | 高 | 看见提案存在 会被写成已经对全网私人 interchangeable / 255 interchangeable | 官方 BIP-78 payjoin item 3：not already network-private / not 255 |

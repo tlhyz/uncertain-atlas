@@ -877,6 +877,9 @@
 - [`../lifecycle/worked-example-pj78-notorig-vs-bundled.md`](../lifecycle/worked-example-pj78-notorig-vs-bundled.md) — 原始包≠already proposal/payjoin-tx/settled；≠290 bundled（不变量 1185）
 - [`../lifecycle/worked-example-pj78-noturi-vs-bundled.md`](../lifecycle/worked-example-pj78-noturi-vs-bundled.md) — pj= URI≠already payjoin-payment/original/settled；≠290 bundled（不变量 1184）
 - [`../lifecycle/worked-example-payjoin-vs-original.md`](../lifecycle/worked-example-payjoin-vs-original.md) — 带 pj= 的付款 URI ≠ 已经是 payjoin 付款；原始包 ≠ 已经是提案；收款方加了输入 ≠ 已经另开一笔（不变量 290）
+- [`worked-example-lex69-notpriv-vs-bundled.md`](worked-example-lex69-notpriv-vs-bundled.md) — 字典序≠already private/random/settled；≠291 bundled（不变量 1189）
+- [`worked-example-lex69-notcons-vs-bundled.md`](worked-example-lex69-notcons-vs-bundled.md) — 字典序≠already consensus/spend-gate/settled；≠291 bundled（不变量 1188）
+- [`worked-example-lex69-nothabit-vs-bundled.md`](worked-example-lex69-nothabit-vs-bundled.md) — 习惯顺序≠already lex-standard/no-fingerprint/settled；≠291 bundled（不变量 1187）
 - [`worked-example-order-vs-lex.md`](worked-example-order-vs-lex.md) — 自家习惯的输入输出顺序 ≠ 已经是字典序标准；按字典序排了 ≠ 已经是共识 / ≠ 已经私人（不变量 291）
 - [`worked-example-testnet4-vs-testnet3.md`](worked-example-testnet4-vs-testnet3.md) — Testnet 4 ≠ 已经是 Testnet 3；20 分钟例外 ≠ 已经没有块风暴；会 Testnet 3 ≠ 已经能安全跟（不变量 292）
 - [`../lifecycle/worked-example-reserves-vs-spend.md`](../lifecycle/worked-example-reserves-vs-spend.md) — 储备证明交易 ≠ 已经能花；其余输入签过 ≠ 已经控制资金；POR 栏 ≠ 已经是普通花费（不变量 293）

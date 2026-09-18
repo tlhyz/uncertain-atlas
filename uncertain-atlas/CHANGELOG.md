@@ -1,3 +1,15 @@
+## 2026-09-18（续 1306）
+
+- 不变量 1189；语料 C1167；模式 name-the-lex69-notpriv-bar；反模式 lex69-notpriv-sold-as-bundled；L10.3 第 1158 条。填 L1.4 / L3.6 BIP-69 lex-order not already private / not already random / not already settled 正式三事（291 余量）。291 order vs lex bundled unbundling 完成（1189 item 3）。
+
+## 2026-09-18（续 1305）
+
+- 不变量 1188；语料 C1166；模式 name-the-lex69-notcons-bar；反模式 lex69-notcons-sold-as-bundled；L10.3 第 1157 条。填 L1.4 / L3.6 BIP-69 lex-order not already consensus / not already spend-gate / not already settled 正式三事（291 余量）。291 order vs lex bundled unbundling 续（1188 item 2）。
+
+## 2026-09-18（续 1304）
+
+- 不变量 1187；语料 C1165；模式 name-the-lex69-nothabit-bar；反模式 lex69-nothabit-sold-as-bundled；L10.3 第 1156 条。填 L1.4 / L3.6 BIP-69 habit-order not already lex-standard / not already no-fingerprint / not already settled 正式三事（291 余量）。291 order vs lex bundled unbundling 启动（1187 item 1）。
+
 ## 2026-09-18（续 1303）
 
 - 不变量 1186；语料 C1164；模式 name-the-pj78-notmerge-bar；反模式 pj78-notmerge-sold-as-bundled；L10.3 第 1155 条。填 L0.7 / L1.4 / L3.6 BIP-78 added-input not already other-tx / not already network-private / not already settled 正式三事（290 余量）。290 payjoin vs original bundled unbundling 完成（1186 item 3）。
