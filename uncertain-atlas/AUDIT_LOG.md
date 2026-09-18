@@ -1,3 +1,18 @@
+| A7005 | 记录 | 会与 187 / 169 / 163 / 1446 / 1447 糊成「看见开跑已热不是 169 预填已经覆盖出块者就已经是 169 预填覆盖出块者 interchangeable、就已经是 2930 名单 interchangeable、就已经是不变量 163 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3651 warm-start not already 169-prefill / not already 2930 / not already 163 正式三事（187 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。187 coinbase vs prefill bundled unbundling 完成（1448 item 3） |
+| A7006 | 高 | 看见开跑已热不是 169 预填已经覆盖出块者 会被写成已经是 169 预填覆盖出块者 interchangeable / 169 interchangeable | 官方 EIP-3651 cbase item 3：not already 已经是 169 预填覆盖出块者 / not 169 |
+| A7007 | 高 | 看见warm-at-start is not already the 169 prefills 会被写成已经是 2930 名单 interchangeable / 163 interchangeable | 官方 EIP-3651 cbase item 3：not already 已经是 2930 名单 / not 163 |
+| A7008 | 高 | 看见开跑已热不是 169 预填已经覆盖出块者 会被写成已经是不变量 163 interchangeable | 官方 EIP-3651 cbase item 3：not already settled |
+| A7009 | 中 | 怎样把付款指到出块者、怎样预热救人会被抄进不确定 | 不抄。不写 怎样把付款指到出块者、怎样预热救人。不另写 19 节 |
+| A7000 | 记录 | 会与 187 / 158 / 169 / 1446 / 1448 糊成「看见开跑已热不是已经付给出块者就已经付给出块者 interchangeable、就已经是 1559 小费 interchangeable、就已经是不变量 158 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3651 warm-start not already paid / not already 1559 / not already 158 正式三事（187 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。187 coinbase vs prefill bundled unbundling 续（1447 item 2） |
+| A7001 | 高 | 看见开跑已热不是已经付给出块者 会被写成已经付给出块者 interchangeable / 158 interchangeable | 官方 EIP-3651 cbase item 2：not already 已经付给出块者 / not 158 |
+| A7002 | 高 | 看见warm-at-start is not already paid to coinbase 会被写成已经是 1559 小费 interchangeable / 169 interchangeable | 官方 EIP-3651 cbase item 2：not already 已经是 1559 小费 / not 169 |
+| A7003 | 高 | 看见开跑已热不是已经付给出块者 会被写成已经是不变量 158 interchangeable | 官方 EIP-3651 cbase item 2：not already settled |
+| A7004 | 中 | 怎样把付款指到出块者、怎样预热救人会被抄进不确定 | 不抄。不写 怎样把付款指到出块者、怎样预热救人。不另写 19 节 |
+| A6995 | 记录 | 会与 187 / 169 / 168 / 1447 / 1448 糊成「看见出块者开跑已热不是已经访问过就已经访问过 interchangeable、就已经是 2929 第一次访问 interchangeable、就已经 187 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3651 coinbase-warm not already accessed / not already 2929-first / not already 187-bundled 正式三事（187 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。187 coinbase vs prefill bundled unbundling 启动（1446 item 1） |
+| A6996 | 高 | 看见出块者开跑已热不是已经访问过 会被写成已经访问过 interchangeable / 169 interchangeable | 官方 EIP-3651 cbase item 1：not already 已经访问过 / not 169 |
+| A6997 | 高 | 看见coinbase warm-at-start is not already accessed 会被写成已经是 2929 第一次访问 interchangeable / 168 interchangeable | 官方 EIP-3651 cbase item 1：not already 已经是 2929 第一次访问 / not 168 |
+| A6998 | 高 | 看见出块者开跑已热不是已经访问过 会被写成已经 187 bundled interchangeable | 官方 EIP-3651 cbase item 1：not already settled |
+| A6999 | 中 | 怎样把付款指到出块者、怎样预热救人会被抄进不确定 | 不抄。不写 怎样把付款指到出块者、怎样预热救人。不另写 19 节 |
 | A6990 | 记录 | 会与 188 / 176 / 185 / 1443 / 1444 糊成「看见initcode 里出现该字节不是已经是本页失败就已经是本页失败 interchangeable、就已经是 170 长度界 interchangeable、就已经是 3860 构造界 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。188 reserved-prefix vs eof bundled unbundling 完成（1445 item 3） |
 | A6991 | 高 | 看见initcode 里出现该字节不是已经是本页失败 会被写成已经是本页失败 interchangeable / 176 interchangeable | 官方 EIP-3541 rpfx item 3：not already 已经是本页失败 / not 176 |
 | A6992 | 高 | 看见initcode containing the byte is not already this-page fail 会被写成已经是 170 长度界 interchangeable / 185 interchangeable | 官方 EIP-3541 rpfx item 3：not already 已经是 170 长度界 / not 185 |

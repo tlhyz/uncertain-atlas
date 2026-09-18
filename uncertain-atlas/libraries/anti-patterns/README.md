@@ -1,3 +1,6 @@
+- [`cbase-not169-sold-as-bundled.md`](cbase-not169-sold-as-bundled.md) — 开跑已热 被写成已经是 169 预填含出块者 / 就已经是 2930 / 就已经是 163（不变量 1448）
+- [`cbase-notpay-sold-as-bundled.md`](cbase-notpay-sold-as-bundled.md) — 开跑已热 被写成已经付钱 / 就已经是 1559 / 就已经是 158（不变量 1447）
+- [`cbase-notacc-sold-as-bundled.md`](cbase-notacc-sold-as-bundled.md) — 出块者开跑已热 被写成已经访问过 / 就已经是 2929 第一次 / 就已经 187 bundled（不变量 1446）
 - [`rpfx-notinit-sold-as-bundled.md`](rpfx-notinit-sold-as-bundled.md) — initcode 出现该字节 被写成已经是本页失败 / 就已经是 170 / 就已经是 3860（不变量 1445）
 - [`rpfx-notold-sold-as-bundled.md`](rpfx-notold-sold-as-bundled.md) — 已有同首字节 被写成已经被改语义 / 就已经按新格式重验 / 就已经做完 3541（不变量 1444）
 - [`rpfx-noteof-sold-as-bundled.md`](rpfx-noteof-sold-as-bundled.md) — 保留首字节 被写成已经是对象格式已部署 / 就已经验过 / 就已经 188 bundled（不变量 1443）

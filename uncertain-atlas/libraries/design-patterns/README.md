@@ -1,3 +1,6 @@
+- [`name-the-cbase-not169-bar.md`](name-the-cbase-not169-bar.md) — EIP-3651 warm-start not already 169-prefill / not already 2930 / not already 163 正式三事（187 余量）（不变量 1448）
+- [`name-the-cbase-notpay-bar.md`](name-the-cbase-notpay-bar.md) — EIP-3651 warm-start not already paid / not already 1559 / not already 158 正式三事（187 余量）（不变量 1447）
+- [`name-the-cbase-notacc-bar.md`](name-the-cbase-notacc-bar.md) — EIP-3651 coinbase-warm not already accessed / not already 2929-first / not already 187-bundled 正式三事（187 余量）（不变量 1446）
 - [`name-the-rpfx-notinit-bar.md`](name-the-rpfx-notinit-bar.md) — EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）（不变量 1445）
 - [`name-the-rpfx-notold-bar.md`](name-the-rpfx-notold-bar.md) — EIP-3541 existing-code not already rewritten / not already revalidated / not already 3541-done 正式三事（188 余量）（不变量 1444）
 - [`name-the-rpfx-noteof-bar.md`](name-the-rpfx-noteof-bar.md) — EIP-3541 reserved-prefix not already EOF-deployed / not already validated / not already 188-bundled 正式三事（188 余量）（不变量 1443）

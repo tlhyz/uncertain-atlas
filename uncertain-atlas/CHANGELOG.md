@@ -1,3 +1,15 @@
+## 2026-09-18（续 1565）
+
+- 不变量 1448；语料 C1426；模式 name-the-cbase-not169-bar；反模式 cbase-not169-sold-as-bundled；L10.3 第 1417 条。填 L5.1 EIP-3651 warm-start not already 169-prefill / not already 2930 / not already 163 正式三事（187 余量）。187 coinbase vs prefill bundled unbundling 完成（1448 item 3）。
+
+## 2026-09-18（续 1564）
+
+- 不变量 1447；语料 C1425；模式 name-the-cbase-notpay-bar；反模式 cbase-notpay-sold-as-bundled；L10.3 第 1416 条。填 L5.1 EIP-3651 warm-start not already paid / not already 1559 / not already 158 正式三事（187 余量）。187 coinbase vs prefill bundled unbundling 续（1447 item 2）。
+
+## 2026-09-18（续 1563）
+
+- 不变量 1446；语料 C1424；模式 name-the-cbase-notacc-bar；反模式 cbase-notacc-sold-as-bundled；L10.3 第 1415 条。填 L5.1 EIP-3651 coinbase-warm not already accessed / not already 2929-first / not already 187-bundled 正式三事（187 余量）。187 coinbase vs prefill bundled unbundling 启动（1446 item 1）。
+
 ## 2026-09-18（续 1562）
 
 - 不变量 1445；语料 C1423；模式 name-the-rpfx-notinit-bar；反模式 rpfx-notinit-sold-as-bundled；L10.3 第 1414 条。填 L5.1 EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）。188 reserved-prefix vs eof bundled unbundling 完成（1445 item 3）。
