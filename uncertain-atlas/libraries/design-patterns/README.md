@@ -1,3 +1,6 @@
+- [`name-the-rcpt-notrpc-bar.md`](name-the-rcpt-notrpc-bar.md) — EIP-658 rpc not already in-receipt / not already light-checked / not already returndata 正式三事（236 余量）（不变量 1303）
+- [`name-the-rcpt-notgas-bar.md`](name-the-rcpt-notgas-bar.md) — EIP-658 gas not already success / not already failure / not already revert-177 正式三事（236 余量）（不变量 1302）
+- [`name-the-rcpt-notroot-bar.md`](name-the-rcpt-notroot-bar.md) — EIP-658 status not already mid-root / not already deprecated-spec / not already extra-column 正式三事（236 余量）（不变量 1301）
 - [`name-the-c63-notcap-bar.md`](name-the-c63-notcap-bar.md) — EIP-150 gaslimit not already protocol-cap / not already throughput / not already consensus-cap 正式三事（237 余量）（不变量 1300）
 - [`name-the-c63-notoog-bar.md`](name-the-c63-notoog-bar.md) — EIP-150 63rds not already oog / not already no-depth / not already all-parent 正式三事（237 余量）（不变量 1299）
 - [`name-the-c63-notprice-bar.md`](name-the-c63-notprice-bar.md) — EIP-150 reprice not already disk-O1 / not already 1884 / not already cold-hot 正式三事（237 余量）（不变量 1298）

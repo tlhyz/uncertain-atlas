@@ -1,3 +1,6 @@
+- [`rcpt-notrpc-sold-as-bundled.md`](rcpt-notrpc-sold-as-bundled.md) — RPC 能告诉你成没成 被写成收据里已经有状态码 / 轻客户端就已经齐 / 返回数据就已经进收据（不变量 1303）
+- [`rcpt-notgas-sold-as-bundled.md`](rcpt-notgas-sold-as-bundled.md) — 还剩气 被写成已经成功 / 气烧光就已经失败 / 就已经写了回滚留气（不变量 1302）
+- [`rcpt-notroot-sold-as-bundled.md`](rcpt-notroot-sold-as-bundled.md) — 状态码 被写成收据里还印着中间根 / 就已经写了废掉中间根的规范 / 就已经另开一栏（不变量 1301）
 - [`c63-notcap-sold-as-bundled.md`](c63-notcap-sold-as-bundled.md) — 建议气限 被写成已经是协议帽 / 官网吞吐就已经是事实 / 就已经改了共识帽（不变量 1300）
 - [`c63-notoog-sold-as-bundled.md`](c63-notoog-sold-as-bundled.md) — 问超了 被写成已经耗尽气 / 63/64 就已经没有深度上限 / 就已经把父帧气全给子执行（不变量 1299）
 - [`c63-notprice-sold-as-bundled.md`](c63-notprice-sold-as-bundled.md) — 读树涨价 被写成磁盘已经常数时间 / 就已经写了后来树依赖涨价 / 就已经写了本笔冷热（不变量 1298）

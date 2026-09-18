@@ -42,7 +42,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见还剩气就已经知道成功 / 看见 RPC 绿了收据就已经有状态码 / 看见状态码就已经有返回数据」。成功或失败若要给轻节点看，必须写进共识对象，不能靠重放。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见还剩气就已经知道成功 / 看见 RPC 绿了收据就已经有状态码 / 看见状态码就已经有返回数据」。成功或失败若要给轻节点看，必须写进共识对象，不能靠重放。236 receipt status vs gas bundled unbundling 完成（1301 item 1 / 1302 item 2 / 1303 item 3）；精读 [`worked-example-rcpt-notroot-vs-bundled.md`](worked-example-rcpt-notroot-vs-bundled.md)（不变量 1301 item 1）、[`worked-example-rcpt-notgas-vs-bundled.md`](worked-example-rcpt-notgas-vs-bundled.md)（不变量 1302 item 2）、[`worked-example-rcpt-notrpc-vs-bundled.md`](worked-example-rcpt-notrpc-vs-bundled.md)（不变量 1303 item 3）。
 
 ## 本页不抄
 

@@ -1,3 +1,18 @@
+| A6280 | 记录 | 会与 236 / 232 / 207 / 1301 / 1302 糊成「看见RPC 能告诉你成没成就收据里已经有状态码 interchangeable、就轻客户端产品已经齐 interchangeable、就返回数据已经进了收据 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-658 rpc not already in-receipt / not already light-checked / not already returndata 正式三事（236 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。236 receipt status vs gas bundled unbundling 完成（1303 item 3） |
+| A6281 | 高 | 看见RPC 能告诉你成没成 会被写成收据里已经有状态码 interchangeable / 232 interchangeable | 官方 EIP-658 rcpt item 3：not already 收据里已经有状态码 / not 232 |
+| A6282 | 高 | 看见钱包绿了 会被写成轻客户端产品已经齐 interchangeable / 207 interchangeable | 官方 EIP-658 rcpt item 3：not already 轻客户端产品已经齐 / not 207 |
+| A6283 | 高 | 看见RPC 能告诉你成没成 会被写成返回数据已经进了收据 interchangeable | 官方 EIP-658 rcpt item 3：not already settled |
+| A6284 | 中 | 怎样重放交易问 RPC，怎样改收据编码，怎样从枢轴之后补状态会被抄进不确定 | 不抄。不写 怎样重放交易问 RPC，怎样改收据编码，怎样从枢轴之后补状态。不另写 19 节 |
+| A6275 | 记录 | 会与 236 / 177 / 207 / 1301 / 1303 糊成「看见还剩气就已经成功 interchangeable、就已经失败 interchangeable、就已经写了带回剩余气的回滚 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-658 gas not already success / not already failure / not already revert-177 正式三事（236 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。236 receipt status vs gas bundled unbundling 续（1302 item 2） |
+| A6276 | 高 | 看见还剩气 会被写成已经成功 interchangeable / 177 interchangeable | 官方 EIP-658 rcpt item 2：not already 已经成功 / not 177 |
+| A6277 | 高 | 看见气烧光 会被写成已经失败 interchangeable / 207 interchangeable | 官方 EIP-658 rcpt item 2：not already 已经失败 / not 207 |
+| A6278 | 高 | 看见还剩气 会被写成已经写了带回剩余气的回滚 interchangeable | 官方 EIP-658 rcpt item 2：not already settled |
+| A6279 | 中 | 怎样重放交易问 RPC，怎样改收据编码，怎样从枢轴之后补状态会被抄进不确定 | 不抄。不写 怎样重放交易问 RPC，怎样改收据编码，怎样从枢轴之后补状态。不另写 19 节 |
+| A6270 | 记录 | 会与 236 / 177 / 232 / 1302 / 1303 糊成「看见状态码就收据里还印着中间状态根 interchangeable、就已经写了那份废掉中间根的规范 interchangeable、就已经另开一栏 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-658 status not already mid-root / not already deprecated-spec / not already extra-column 正式三事（236 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。236 receipt status vs gas bundled unbundling 启动（1301 item 1） |
+| A6271 | 高 | 看见状态码 会被写成收据里还印着中间状态根 interchangeable / 177 interchangeable | 官方 EIP-658 rcpt item 1：not already 收据里还印着中间状态根 / not 177 |
+| A6272 | 高 | 看见本页 会被写成已经写了那份废掉中间根的规范 interchangeable / 232 interchangeable | 官方 EIP-658 rcpt item 1：not already 已经写了那份废掉中间根的规范 / not 232 |
+| A6273 | 高 | 看见状态码 会被写成已经另开一栏 interchangeable | 官方 EIP-658 rcpt item 1：not already settled |
+| A6274 | 中 | 怎样重放交易问 RPC，怎样改收据编码，怎样从枢轴之后补状态会被抄进不确定 | 不抄。不写 怎样重放交易问 RPC，怎样改收据编码，怎样从枢轴之后补状态。不另写 19 节 |
 | A6265 | 记录 | 会与 237 / 211 / 160 / 1298 / 1299 糊成「看见建议目标就已经是协议帽 interchangeable、就官网吞吐已经是事实 interchangeable、就已经改了共识帽 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-150 gaslimit not already protocol-cap / not already throughput / not already consensus-cap 正式三事（237 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。237 call 63rds vs oog bundled unbundling 完成（1300 item 3） |
 | A6266 | 高 | 看见建议目标 会被写成已经是协议帽 interchangeable / 211 interchangeable | 官方 EIP-150 c63 item 3：not already 已经是协议帽 / not 211 |
 | A6267 | 高 | 看见软限制 会被写成官网吞吐已经是事实 interchangeable / 160 interchangeable | 官方 EIP-150 c63 item 3：not already 官网吞吐已经是事实 / not 160 |

@@ -961,6 +961,9 @@
 - [`worked-example-returndata-vs-memory.md`](worked-example-returndata-vs-memory.md) — 看见返回数据缓冲 ≠ 已经是内存；看见本页 ≠ 已经是 calldata / 已经用两次调用先问长度；看见失败数据能再取 ≠ 已经是 140；下一次类调用 ≠ 缓冲还在（不变量 232）
 - [`worked-example-delegatecall-vs-callcode.md`](worked-example-delegatecall-vs-callcode.md) — 看见委托调用 ≠ 已经是 CALLCODE；看见父作用域发送者传到子作用域 ≠ 已经是普通 CALL；看见可变代码源 ≠ 已经是 7702；能塞进调用数据 ≠ 已经是本页（不变量 233）
 - [`worked-example-homestead-vs-already-done.md`](worked-example-homestead-vs-already-done.md) — 看见交易创建变贵 ≠ 已经改了 CREATE；看见交易拒高 s ≠ 已经让 ECRECOVER 拒；看见创建失败不再留空合约 ≠ 已经限制代码；看见难度朝均值 ≠ 已经没有炸弹（不变量 234）
+- [`worked-example-rcpt-notroot-vs-bundled.md`](worked-example-rcpt-notroot-vs-bundled.md) — 状态码≠already 中间状态根/废掉中间根的规范/另开一栏；≠236 bundled（不变量 1301）
+- [`worked-example-rcpt-notgas-vs-bundled.md`](worked-example-rcpt-notgas-vs-bundled.md) — 还剩气≠already 成功/气烧光就已经失败/已经写了回滚留气；≠236 bundled（不变量 1302）
+- [`worked-example-rcpt-notrpc-vs-bundled.md`](worked-example-rcpt-notrpc-vs-bundled.md) — RPC能告诉你成没成≠already 收据有状态码/轻客户端已齐/返回数据进了收据；≠236 bundled（不变量 1303）
 - [`worked-example-receipt-status-vs-gas.md`](worked-example-receipt-status-vs-gas.md) — 看见收据状态码 ≠ 已经能从剩余气推断成功；看见本页 ≠ 已经是中间状态根；看见 RPC 能重放 ≠ 收据里已经有状态码（不变量 236）
 - [`worked-example-c63-notprice-vs-bundled.md`](worked-example-c63-notprice-vs-bundled.md) — 读树涨价≠already 磁盘常数时间/后来树依赖涨价/本笔冷热；≠237 bundled（不变量 1298）
 - [`worked-example-c63-notoog-vs-bundled.md`](worked-example-c63-notoog-vs-bundled.md) — 问超了≠already 耗尽气/没有调用深度上限/父帧气全给了子执行；≠237 bundled（不变量 1299）

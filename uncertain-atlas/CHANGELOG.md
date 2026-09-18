@@ -1,3 +1,15 @@
+## 2026-09-18（续 1420）
+
+- 不变量 1303；语料 C1281；模式 name-the-rcpt-notrpc-bar；反模式 rcpt-notrpc-sold-as-bundled；L10.3 第 1272 条。填 L5.1 EIP-658 rpc not already in-receipt / not already light-checked / not already returndata 正式三事（236 余量）。236 receipt status vs gas bundled unbundling 完成（1303 item 3）。
+
+## 2026-09-18（续 1419）
+
+- 不变量 1302；语料 C1280；模式 name-the-rcpt-notgas-bar；反模式 rcpt-notgas-sold-as-bundled；L10.3 第 1271 条。填 L5.1 EIP-658 gas not already success / not already failure / not already revert-177 正式三事（236 余量）。236 receipt status vs gas bundled unbundling 续（1302 item 2）。
+
+## 2026-09-18（续 1418）
+
+- 不变量 1301；语料 C1279；模式 name-the-rcpt-notroot-bar；反模式 rcpt-notroot-sold-as-bundled；L10.3 第 1270 条。填 L5.1 EIP-658 status not already mid-root / not already deprecated-spec / not already extra-column 正式三事（236 余量）。236 receipt status vs gas bundled unbundling 启动（1301 item 1）。
+
 ## 2026-09-18（续 1417）
 
 - 不变量 1300；语料 C1278；模式 name-the-c63-notcap-bar；反模式 c63-notcap-sold-as-bundled；L10.3 第 1269 条。填 L5.1 EIP-150 gaslimit not already protocol-cap / not already throughput / not already consensus-cap 正式三事（237 余量）。237 call 63rds vs oog bundled unbundling 完成（1300 item 3）。
