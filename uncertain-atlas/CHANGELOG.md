@@ -1,3 +1,15 @@
+## 2026-09-18（续 1562）
+
+- 不变量 1445；语料 C1423；模式 name-the-rpfx-notinit-bar；反模式 rpfx-notinit-sold-as-bundled；L10.3 第 1414 条。填 L5.1 EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）。188 reserved-prefix vs eof bundled unbundling 完成（1445 item 3）。
+
+## 2026-09-18（续 1561）
+
+- 不变量 1444；语料 C1422；模式 name-the-rpfx-notold-bar；反模式 rpfx-notold-sold-as-bundled；L10.3 第 1413 条。填 L5.1 EIP-3541 existing-code not already rewritten / not already revalidated / not already 3541-done 正式三事（188 余量）。188 reserved-prefix vs eof bundled unbundling 续（1444 item 2）。
+
+## 2026-09-18（续 1560）
+
+- 不变量 1443；语料 C1421；模式 name-the-rpfx-noteof-bar；反模式 rpfx-noteof-sold-as-bundled；L10.3 第 1412 条。填 L5.1 EIP-3541 reserved-prefix not already EOF-deployed / not already validated / not already 188-bundled 正式三事（188 余量）。188 reserved-prefix vs eof bundled unbundling 启动（1443 item 1）。
+
 ## 2026-09-18（续 1559）
 
 - 不变量 1442；语料 C1420；模式 name-the-retc-notfree-bar；反模式 retc-notfree-sold-as-bundled；L10.3 第 1411 条。填 L5.1 EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）。185 returned vs initcode bundled unbundling 完成（1442 item 3）。

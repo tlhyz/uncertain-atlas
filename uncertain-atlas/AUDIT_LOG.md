@@ -1,3 +1,18 @@
+| A6990 | 记录 | 会与 188 / 176 / 185 / 1443 / 1444 糊成「看见initcode 里出现该字节不是已经是本页失败就已经是本页失败 interchangeable、就已经是 170 长度界 interchangeable、就已经是 3860 构造界 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。188 reserved-prefix vs eof bundled unbundling 完成（1445 item 3） |
+| A6991 | 高 | 看见initcode 里出现该字节不是已经是本页失败 会被写成已经是本页失败 interchangeable / 176 interchangeable | 官方 EIP-3541 rpfx item 3：not already 已经是本页失败 / not 176 |
+| A6992 | 高 | 看见initcode containing the byte is not already this-page fail 会被写成已经是 170 长度界 interchangeable / 185 interchangeable | 官方 EIP-3541 rpfx item 3：not already 已经是 170 长度界 / not 185 |
+| A6993 | 高 | 看见initcode 里出现该字节不是已经是本页失败 会被写成已经是 3860 构造界 interchangeable | 官方 EIP-3541 rpfx item 3：not already settled |
+| A6994 | 中 | 怎样造以该字节开头的返回代码会被抄进不确定 | 不抄。不写 怎样造以该字节开头的返回代码。不另写 19 节 |
+| A6985 | 记录 | 会与 188 / 185 / 177 / 1443 / 1445 糊成「看见已有同首字节代码不是已经被本页改语义就已经被本页改语义 interchangeable、就已经按新格式重验 interchangeable、就已经做完 3541 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3541 existing-code not already rewritten / not already revalidated / not already 3541-done 正式三事（188 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。188 reserved-prefix vs eof bundled unbundling 续（1444 item 2） |
+| A6986 | 高 | 看见已有同首字节代码不是已经被本页改语义 会被写成已经被本页改语义 interchangeable / 185 interchangeable | 官方 EIP-3541 rpfx item 2：not already 已经被本页改语义 / not 185 |
+| A6987 | 高 | 看见existing same-prefix code is not already rewritten 会被写成已经按新格式重验 interchangeable / 177 interchangeable | 官方 EIP-3541 rpfx item 2：not already 已经按新格式重验 / not 177 |
+| A6988 | 高 | 看见已有同首字节代码不是已经被本页改语义 会被写成已经做完 3541 interchangeable | 官方 EIP-3541 rpfx item 2：not already settled |
+| A6989 | 中 | 怎样造以该字节开头的返回代码会被抄进不确定 | 不抄。不写 怎样造以该字节开头的返回代码。不另写 19 节 |
+| A6980 | 记录 | 会与 188 / 185 / 176 / 1444 / 1445 糊成「看见新代码以保留首字节开头不是已经是对象格式已经部署就已经是对象格式已经部署 interchangeable、就已经按新格式验过 interchangeable、就已经 188 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3541 reserved-prefix not already EOF-deployed / not already validated / not already 188-bundled 正式三事（188 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。188 reserved-prefix vs eof bundled unbundling 启动（1443 item 1） |
+| A6981 | 高 | 看见新代码以保留首字节开头不是已经是对象格式已经部署 会被写成已经是对象格式已经部署 interchangeable / 185 interchangeable | 官方 EIP-3541 rpfx item 1：not already 已经是对象格式已经部署 / not 185 |
+| A6982 | 高 | 看见reserved prefix is not already EOF deployed 会被写成已经按新格式验过 interchangeable / 176 interchangeable | 官方 EIP-3541 rpfx item 1：not already 已经按新格式验过 / not 176 |
+| A6983 | 高 | 看见新代码以保留首字节开头不是已经是对象格式已经部署 会被写成已经 188 bundled interchangeable | 官方 EIP-3541 rpfx item 1：not already settled |
+| A6984 | 中 | 怎样造以该字节开头的返回代码会被抄进不确定 | 不抄。不写 怎样造以该字节开头的返回代码。不另写 19 节 |
 | A6975 | 记录 | 会与 185 / 170 / 176 / 1440 / 1441 糊成「看见CALL 气是常数不是已经没有按长度代价就已经没有按长度的磁盘/证明代价 interchangeable、就已经是不变量 170 interchangeable、就已经免费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。185 returned vs initcode bundled unbundling 完成（1442 item 3） |
 | A6976 | 高 | 看见CALL 气是常数不是已经没有按长度代价 会被写成已经没有按长度的磁盘/证明代价 interchangeable / 170 interchangeable | 官方 EIP-170 retc item 3：not already 已经没有按长度的磁盘/证明代价 / not 170 |
 | A6977 | 高 | 看见constant CALL gas is not already free of length cost 会被写成已经是不变量 170 interchangeable / 176 interchangeable | 官方 EIP-170 retc item 3：not already 已经是不变量 170 / not 176 |

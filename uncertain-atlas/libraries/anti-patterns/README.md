@@ -1,3 +1,6 @@
+- [`rpfx-notinit-sold-as-bundled.md`](rpfx-notinit-sold-as-bundled.md) — initcode 出现该字节 被写成已经是本页失败 / 就已经是 170 / 就已经是 3860（不变量 1445）
+- [`rpfx-notold-sold-as-bundled.md`](rpfx-notold-sold-as-bundled.md) — 已有同首字节 被写成已经被改语义 / 就已经按新格式重验 / 就已经做完 3541（不变量 1444）
+- [`rpfx-noteof-sold-as-bundled.md`](rpfx-noteof-sold-as-bundled.md) — 保留首字节 被写成已经是对象格式已部署 / 就已经验过 / 就已经 188 bundled（不变量 1443）
 - [`retc-notfree-sold-as-bundled.md`](retc-notfree-sold-as-bundled.md) — CALL 气常数 被写成已经没有按长度代价 / 就已经是不变量 170 / 就已经免费（不变量 1442）
 - [`retc-nottx-sold-as-bundled.md`](retc-nottx-sold-as-bundled.md) — 耗尽气失败 被写成已经整笔非法 / 就已经是剩余气回滚 / 就已经是 177（不变量 1441）
 - [`retc-notinit-sold-as-bundled.md`](retc-notinit-sold-as-bundled.md) — 返回代码超界 被写成已经是 initcode 超界 / 就已经是 3860 / 就已经 185 bundled（不变量 1440）

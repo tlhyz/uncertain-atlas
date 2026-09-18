@@ -1,3 +1,6 @@
+- [`name-the-rpfx-notinit-bar.md`](name-the-rpfx-notinit-bar.md) — EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）（不变量 1445）
+- [`name-the-rpfx-notold-bar.md`](name-the-rpfx-notold-bar.md) — EIP-3541 existing-code not already rewritten / not already revalidated / not already 3541-done 正式三事（188 余量）（不变量 1444）
+- [`name-the-rpfx-noteof-bar.md`](name-the-rpfx-noteof-bar.md) — EIP-3541 reserved-prefix not already EOF-deployed / not already validated / not already 188-bundled 正式三事（188 余量）（不变量 1443）
 - [`name-the-retc-notfree-bar.md`](name-the-retc-notfree-bar.md) — EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）（不变量 1442）
 - [`name-the-retc-nottx-bar.md`](name-the-retc-nottx-bar.md) — EIP-170 oog-fail not already whole-tx-illegal / not already leftover-gas / not already 177 正式三事（185 余量）（不变量 1441）
 - [`name-the-retc-notinit-bar.md`](name-the-retc-notinit-bar.md) — EIP-170 returned-bound not already initcode-bound / not already 3860 / not already 185-bundled 正式三事（185 余量）（不变量 1440）

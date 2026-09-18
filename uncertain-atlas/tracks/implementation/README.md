@@ -1112,6 +1112,9 @@
 - [`worked-example-retc-nottx-vs-bundled.md`](worked-example-retc-nottx-vs-bundled.md) — 耗尽气失败≠already 整笔非法/剩余气回滚/177；≠185 bundled（不变量 1441）
 - [`worked-example-retc-notfree-vs-bundled.md`](worked-example-retc-notfree-vs-bundled.md) — CALL气常数≠already 无按长度代价/不变量170/已免费；≠185 bundled（不变量 1442）
 - [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
+- [`worked-example-rpfx-noteof-vs-bundled.md`](worked-example-rpfx-noteof-vs-bundled.md) — 保留首字节≠already 对象格式已部署/已验过/188 bundled；≠188 bundled（不变量 1443）
+- [`worked-example-rpfx-notold-vs-bundled.md`](worked-example-rpfx-notold-vs-bundled.md) — 已有同首字节≠already 被改语义/按新格式重验/3541做完；≠188 bundled（不变量 1444）
+- [`worked-example-rpfx-notinit-vs-bundled.md`](worked-example-rpfx-notinit-vs-bundled.md) — initcode出现该字节≠already 本页失败/170/3860；≠188 bundled（不变量 1445）
 - [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
 - [`worked-example-rvert-notburn-vs-bundled.md`](worked-example-rvert-notburn-vs-bundled.md) — 带回剩余气的回滚≠already 非法指令烧光/气耗尽烧光/177 bundled；≠177 bundled（不变量 1380）
 - [`worked-example-rvert-notfee-vs-bundled.md`](worked-example-rvert-notfee-vs-bundled.md) — 不够付回滚自己的费≠already 留下剩余气/103/免费；≠177 bundled（不变量 1381）
