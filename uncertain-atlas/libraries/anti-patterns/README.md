@@ -1,3 +1,6 @@
+- [`extvirc-notgive-sold-as-bundled.md`](extvirc-notgive-sold-as-bundled.md) — non_rp_extension_signature 被写成已经把验过的签交给应用 / 已经是 extension_signature / 已经交差（不变量 1054）
+- [`extvirc-notflag-sold-as-bundled.md`](extvirc-notflag-sold-as-bundled.md) — block_id_flag 被写成已经罚没 / 已经是 VoteInfo flag / 已经交差（不变量 1053）
+- [`extvirc-notkey-sold-as-bundled.md`](extvirc-notkey-sold-as-bundled.md) — validator 被写成已经带了公钥 / 已经从本进程抽出 / 已经交差（不变量 1052）
 - [`preprestr-notpunish-sold-as-bundled.md`](preprestr-notpunish-sold-as-bundled.md) — misbehavior 被写成已经定奖惩 / 已经是 Process misbehavior / 已经交差（不变量 1051）
 - [`preprestr-notts-sold-as-bundled.md`](preprestr-notts-sold-as-bundled.md) — time 被写成已经对上了拟议块头 / 已经验过票上时间 / 已经交差（不变量 1050）
 - [`preprestr-notlocal-sold-as-bundled.md`](preprestr-notlocal-sold-as-bundled.md) — local_last_commit 被写成已经交差 proposed_last_commit / 已经是本高度刚签的扩展 / 已经交差（不变量 1049）

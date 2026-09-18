@@ -1,3 +1,18 @@
+| A5030 | 记录 | 会与 425 / 421 / 1052 / 1053 糊成「看见 ExtendedVoteInfo.non_rp_extension_signature 就已经把验过的签交给应用 interchangeable、就已经是 extension_signature interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo.non_rp_extension_signature not already given-to-app / not already same-as-extsig / not already settled 正式三事（425 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。425 extvirest vs voteinfo bundled unbundling 完成（1054 item 3） |
+| A5031 | 高 | 看见填了 non_rp_extension_signature 会被写成已经把验过的签交给应用 interchangeable / 421 interchangeable | 官方 ExtendedVoteInfo 表余栏 item 3：not already given-to-app / not 421 |
+| A5032 | 高 | 看见验过了 会被写成已经是 extension_signature interchangeable | 官方 ExtendedVoteInfo 表余栏 item 3：not already same-as-extsig |
+| A5033 | 高 | 看见能指第二份签 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo 表余栏 item 3：not already settled |
+| A5034 | 中 | 怎样写表余栏会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo 表余栏。不另写 19 节 |
+| A5025 | 记录 | 会与 425 / 365 / 424 / 1052 / 1054 糊成「看见 ExtendedVoteInfo.block_id_flag 就已经罚没 interchangeable、就已经是 VoteInfo flag interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo.block_id_flag not already slashed / not already voteinfo-flag / not already settled 正式三事（425 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。425 extvirest vs voteinfo bundled unbundling 续（1053 item 2） |
+| A5026 | 高 | 看见填了 block_id_flag 会被写成已经罚没 interchangeable / 365 interchangeable | 官方 ExtendedVoteInfo 表余栏 item 2：not already slashed / not 365 |
+| A5027 | 高 | 看见能指没收到 会被写成已经是 VoteInfo 的 block_id_flag interchangeable | 官方 ExtendedVoteInfo 表余栏 item 2：not already voteinfo-flag |
+| A5028 | 高 | 看见能指 nil 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo 表余栏 item 2：not already settled |
+| A5029 | 中 | 怎样写表余栏会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo 表余栏。不另写 19 节 |
+| A5020 | 记录 | 会与 425 / 369 / 364 / 1053 / 1054 糊成「看见 ExtendedVoteInfo.validator 就已经带了公钥 interchangeable、就已经从本进程抽出 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo.validator not already has-key / not already extracted / not already settled 正式三事（425 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。425 extvirest vs voteinfo bundled unbundling 启动（1052 item 1） |
+| A5021 | 高 | 看见填了 validator 会被写成已经带了公钥 interchangeable / 369 interchangeable | 官方 ExtendedVoteInfo 表余栏 item 1：not already has-key / not 369 |
+| A5022 | 高 | 看见能指发票的人 会被写成已经从本进程抽出 interchangeable | 官方 ExtendedVoteInfo 表余栏 item 1：not already extracted |
+| A5023 | 高 | 看见能指人 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo 表余栏 item 1：not already settled |
+| A5024 | 中 | 怎样写表余栏会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo 表余栏。不另写 19 节 |
 | A5015 | 记录 | 会与 424 / 420 / 413 / 363 / 1049 / 1050 糊成「看见 PrepareProposalRequest.misbehavior 就已经定奖惩 interchangeable、就已经是 Process misbehavior interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.misbehavior not already rewarded / not already process-mis / not already settled 正式三事（424 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。424 prepreqrest vs procreq bundled unbundling 完成（1051 item 3） |
 | A5016 | 高 | 看见填了 misbehavior 会被写成已经定奖惩 interchangeable / 420 interchangeable | 官方 Prepare 请求余栏 item 3：not already rewarded / not 420 |
 | A5017 | 高 | 看见有过错列表 会被写成已经是 ProcessProposalRequest.misbehavior interchangeable | 官方 Prepare 请求余栏 item 3：not already process-mis |
