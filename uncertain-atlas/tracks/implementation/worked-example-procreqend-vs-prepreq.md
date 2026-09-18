@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Process 请求末栏就已经是 Prepare 请求末栏的 next_validators_hash、已经正在造这份提案、已经是初步交易列表」，必须分开 ProcessProposalRequest.next_validators_hash 是下一验证者集合默克尔根是不是已经是 Prepare 请求末栏的 next_validators_hash、ProcessProposalRequest.proposer_address 是造了这份提案的验证者地址是不是已经正在造这份提案、PrepareProposalResponse.txs 是可能改过的、挑进拟议块的交易列表是不是已经是初步交易列表。可以跳过「看见填了 Process 请求末栏就已经是 Prepare 请求末栏的 next_validators_hash」。不要另写怎样写 Process 请求末栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Process 请求末栏就已经是 Prepare 请求末栏的 next_validators_hash、已经正在造这份提案、已经是初步交易列表」，必须分开 ProcessProposalRequest.next_validators_hash 是下一验证者集合默克尔根是不是已经是 Prepare 请求末栏的 next_validators_hash、ProcessProposalRequest.proposer_address 是造了这份提案的验证者地址是不是已经正在造这份提案、PrepareProposalResponse.txs 是可能改过的、挑进拟议块的交易列表是不是已经是初步交易列表。可以跳过「看见填了 Process 请求末栏就已经是 Prepare 请求末栏的 next_validators_hash」。不要另写怎样写 Process 请求末栏。427 procreqend vs prepreq bundled unbundling 完成（1058 item 1 / 1059 item 2 / 1060 item 3）；精读 [`worked-example-procend-nothash-vs-bundled.md`](worked-example-procend-nothash-vs-bundled.md)（不变量 1058 item 1）。
 
 ## 本页不抄
 

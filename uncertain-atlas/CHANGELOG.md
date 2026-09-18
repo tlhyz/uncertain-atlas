@@ -1,3 +1,15 @@
+## 2026-09-18（续 1177）
+
+- 不变量 1060；语料 C1038；模式 name-the-procend-notprelim-bar；反模式 procend-notprelim-sold-as-bundled；L10.3 第 1029 条。填 L4.4 / CometBFT 档案 PrepareProposalResponse.txs not already preliminary / not already same-round / not already settled 正式三事（427 余量）。427 procreqend vs prepreq bundled unbundling 完成（1060 item 3）。
+
+## 2026-09-18（续 1176）
+
+- 不变量 1059；语料 C1037；模式 name-the-procend-notmaking-bar；反模式 procend-notmaking-sold-as-bundled；L10.3 第 1028 条。填 L4.4 / CometBFT 档案 ProcessProposalRequest.proposer_address not already making / not already header-known / not already settled 正式三事（427 余量）。427 procreqend vs prepreq bundled unbundling 续（1059 item 2）。
+
+## 2026-09-18（续 1175）
+
+- 不变量 1058；语料 C1036；模式 name-the-procend-nothash-bar；反模式 procend-nothash-sold-as-bundled；L10.3 第 1027 条。填 L4.4 / CometBFT 档案 ProcessProposalRequest.next_validators_hash not already prepare-hash / not already finalize-hash / not already settled 正式三事（427 余量）。427 procreqend vs prepreq bundled unbundling 启动（1058 item 1）。
+
 ## 2026-09-18（续 1174）
 
 - 不变量 1057；语料 C1035；模式 name-the-preprend-notts-bar；反模式 preprend-notts-sold-as-bundled；L10.3 第 1026 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.time not already header-aligned / not already prepare-time / not already settled 正式三事（426 余量）。426 prepreqend vs finreq bundled unbundling 完成（1057 item 3）。

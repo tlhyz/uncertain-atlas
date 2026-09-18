@@ -1,3 +1,6 @@
+- [`name-the-procend-notprelim-bar.md`](name-the-procend-notprelim-bar.md) — PrepareProposalResponse.txs not already preliminary / not already same-round / not already settled 正式三事（427 余量）（不变量 1060）
+- [`name-the-procend-notmaking-bar.md`](name-the-procend-notmaking-bar.md) — ProcessProposalRequest.proposer_address not already making / not already header-known / not already settled 正式三事（427 余量）（不变量 1059）
+- [`name-the-procend-nothash-bar.md`](name-the-procend-nothash-bar.md) — ProcessProposalRequest.next_validators_hash not already prepare-hash / not already finalize-hash / not already settled 正式三事（427 余量）（不变量 1058）
 - [`name-the-preprend-notts-bar.md`](name-the-preprend-notts-bar.md) — FinalizeBlockRequest.time not already header-aligned / not already prepare-time / not already settled 正式三事（426 余量）（不变量 1057）
 - [`name-the-preprend-notmade-bar.md`](name-the-preprend-notmade-bar.md) — PrepareProposalRequest.proposer_address not already made / not already header-known / not already settled 正式三事（426 余量）（不变量 1056）
 - [`name-the-preprend-nothash-bar.md`](name-the-preprend-nothash-bar.md) — PrepareProposalRequest.next_validators_hash not already finalize-hash / not already rotated / not already settled 正式三事（426 余量）（不变量 1055）
