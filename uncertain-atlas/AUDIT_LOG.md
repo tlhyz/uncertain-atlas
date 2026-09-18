@@ -1,3 +1,18 @@
+| A6960 | 记录 | 会与 176 / 185 / 188 / 1437 / 1438 糊成「看见按字收跳转分析费不是已经跑完 initcode就已经跑完 initcode interchangeable、就已经是 CREATE2 算地址的哈希费 interchangeable、就已经创建 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3860 jumpdest-fee not already ran-initcode / not already CREATE2-hash-fee / not already created 正式三事（176 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。176 initcode vs runtime bundled unbundling 完成（1439 item 3） |
+| A6961 | 高 | 看见按字收跳转分析费不是已经跑完 initcode 会被写成已经跑完 initcode interchangeable / 185 interchangeable | 官方 EIP-3860 icode item 3：not already 已经跑完 initcode / not 185 |
+| A6962 | 高 | 看见jumpdest fee is not already having run initcode 会被写成已经是 CREATE2 算地址的哈希费 interchangeable / 188 interchangeable | 官方 EIP-3860 icode item 3：not already 已经是 CREATE2 算地址的哈希费 / not 188 |
+| A6963 | 高 | 看见按字收跳转分析费不是已经跑完 initcode 会被写成已经创建 interchangeable | 官方 EIP-3860 icode item 3：not already settled |
+| A6964 | 中 | 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界会被抄进不确定 | 不抄。不写 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界。不另写 19 节 |
+| A6955 | 记录 | 会与 176 / 175 / 169 / 1437 / 1439 糊成「看见创建交易超界不是已经是 CREATE 指令失败就已经是 CREATE 指令失败 interchangeable、就已经是 2681 序号上限 interchangeable、就已经进 EVM 再失败 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3860 create-tx-oversize not already CREATE-fail / not already 2681 / not already in-EVM 正式三事（176 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。176 initcode vs runtime bundled unbundling 续（1438 item 2） |
+| A6956 | 高 | 看见创建交易超界不是已经是 CREATE 指令失败 会被写成已经是 CREATE 指令失败 interchangeable / 175 interchangeable | 官方 EIP-3860 icode item 2：not already 已经是 CREATE 指令失败 / not 175 |
+| A6957 | 高 | 看见create-tx oversize is not already CREATE fail 会被写成已经是 2681 序号上限 interchangeable / 169 interchangeable | 官方 EIP-3860 icode item 2：not already 已经是 2681 序号上限 / not 169 |
+| A6958 | 高 | 看见创建交易超界不是已经是 CREATE 指令失败 会被写成已经进 EVM 再失败 interchangeable | 官方 EIP-3860 icode item 2：not already settled |
+| A6959 | 中 | 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界会被抄进不确定 | 不抄。不写 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界。不另写 19 节 |
+| A6950 | 记录 | 会与 176 / 185 / 175 / 1438 / 1439 糊成「看见initcode 超界不是已经是部署代码超界就已经是部署代码超界 interchangeable、就已经是 1014 哈希费 interchangeable、就已经 176 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3860 initcode-bound not already 170-runtime / not already 1014 / not already 176-bundled 正式三事（176 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。176 initcode vs runtime bundled unbundling 启动（1437 item 1） |
+| A6951 | 高 | 看见initcode 超界不是已经是部署代码超界 会被写成已经是部署代码超界 interchangeable / 185 interchangeable | 官方 EIP-3860 icode item 1：not already 已经是部署代码超界 / not 185 |
+| A6952 | 高 | 看见initcode bound is not already the 170 runtime bound 会被写成已经是 1014 哈希费 interchangeable / 175 interchangeable | 官方 EIP-3860 icode item 1：not already 已经是 1014 哈希费 / not 175 |
+| A6953 | 高 | 看见initcode 超界不是已经是部署代码超界 会被写成已经 176 bundled interchangeable | 官方 EIP-3860 icode item 1：not already settled |
+| A6954 | 中 | 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界会被抄进不确定 | 不抄。不写 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界。不另写 19 节 |
 | A6945 | 记录 | 会与 230 / 221 / 199 / 1434 / 1435 糊成「看见定长输入不是已经是任意哈希 API就已经是任意哈希 API interchangeable、就已经返回一份摘要 interchangeable、就已经是不变量 199 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-152 fixed-input not already generic-hash-API / not already digest / not already 199 正式三事（230 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。230 blake2f vs hash bundled unbundling 完成（1436 item 3） |
 | A6946 | 高 | 看见定长输入不是已经是任意哈希 API 会被写成已经是任意哈希 API interchangeable / 221 interchangeable | 官方 EIP-152 b2f item 3：not already 已经是任意哈希 API / not 221 |
 | A6947 | 高 | 看见fixed-length input is not already a generic hash API 会被写成已经返回一份摘要 interchangeable / 199 interchangeable | 官方 EIP-152 b2f item 3：not already 已经返回一份摘要 / not 199 |

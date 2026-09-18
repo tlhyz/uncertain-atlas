@@ -15,9 +15,9 @@
 完成标准（事实 + 建议混合，见各条标注）：
 
 1. 五条轨（index / courses / protocols / tracks / libraries）互相指认，无孤立读书笔记。
-2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1436）。
+2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1439）。
 3. 决策矩阵「不确定候选」列填完**建议档**（非最终选型）。
-4. 对抗语料 C01–C1414+ 有 runner，能批量扫描文案/测试钩子。
+4. 对抗语料 C01–C1417+ 有 runner，能批量扫描文案/测试钩子。
 5. 过滤器页链（Cardano / Babylon / EigenLayer 等）要么补 19 节，要么在 index 明确「永久过滤器」。
 6. 单一 canonical 分支 + 清晰 merge 策略（见 Phase 0）。
 
@@ -34,7 +34,7 @@
 | 协议档案 | 20+ 链/品类 19 节模板 | 强 |
 | 横向专题 | 16 tracks；failure-museum 92+ 案 | 强 |
 | 模式/反模式 | 500+ design-patterns；650+ anti-patterns | 强 |
-| 不变量库 | 1436+ 可测试句；ABCI++ 主线 | 进行中（强） |
+| 不变量库 | 1439+ 可测试句；ABCI++ 主线 | 进行中（强） |
 | 通读路径 | `index/04-study-path.md` 六通 | 强 |
 
 ### 需调整
@@ -71,7 +71,7 @@
 |---|---|---|
 | P1-1 | 威胁模型 v1 | `libraries/threat-model/` _actor / _asset / _boundary 三页 |
 | P1-2 | settlement-copy 与矩阵对齐 | L10.3 清单 ↔ 矩阵行可互链 |
-| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325/127/137/70/38/13/321/322/352/353/47/30/147/155/130/133/338/434/339/330/159/144/111/35/61/31/14/324/157/158 1115–1282；EIP-8 1283–1285；EIP-2124 1286–1288；EIP-778 1289–1291；EIP-868 1292–1294；EIP-100 1295–1297；EIP-150 1298–1300；EIP-658 1301–1303；PrepareUsage 1304–1306；PrepareNochecks 1307–1309；PrepareWhen 1310–1312；PrepareWhenRet 1313–1315；SuggestValidate 1316–1318；LateUnverified 1319–1321；LateMay 1322–1324；VerifyDiscard 1325–1327；VerifyCall 1328–1330；VerifyStatusWhen 1331–1333；VerifyKeep 1334–1336；VerifyAcceptDef 1337–1339；ProcAcceptDef 1340–1342；ExtWhenBcast 1343–1345；EIP-2 Homestead 1346–1349；ExtAppGen 1350–1352；CiNotes 1353–1355；ExtCiNotes 1356–1358；CiFields 1359–1361；ExecTxEv 1362–1364；ExtViUse 1365–1367；PrepEv 1368–1370；ValUse 1371–1373；ViAvail 1374–1376；EIP-7 DELEGATECALL 1377–1379；EIP-140 REVERT 1380–1382；EIP-214 STATICCALL 1383–1385；EIP-211 returndata 1386–1388；EIP-1014 CREATE2 1389–1391；EIP-1052 EXTCODEHASH 1392–1394；EIP-1344 CHAINID 1395–1397；EIP-3198 BASEFEE 1398–1400；EIP-7516 BLOBBASEFEE 1401–1403；EIP-145 SHIFT 1404–1406；EIP-3855 PUSH0 1407–1409；EIP-5656 MCOPY 1410–1412；EIP-3529 refund 1413–1415；EIP-6049 deprecate 1416–1418；EIP-2200 net-meter 1419–1421；EIP-2028 calldata-cut 1422–1424；EIP-2565 modexp-price 1425–1427；EIP-1108 bn128-cut 1428–1430；EIP-1884 SELFBALANCE 1431–1433；EIP-152 BLAKE2F 1434–1436 | AUDIT_LOG 连续；invariants README 更新 |
+| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325/127/137/70/38/13/321/322/352/353/47/30/147/155/130/133/338/434/339/330/159/144/111/35/61/31/14/324/157/158 1115–1282；EIP-8 1283–1285；EIP-2124 1286–1288；EIP-778 1289–1291；EIP-868 1292–1294；EIP-100 1295–1297；EIP-150 1298–1300；EIP-658 1301–1303；PrepareUsage 1304–1306；PrepareNochecks 1307–1309；PrepareWhen 1310–1312；PrepareWhenRet 1313–1315；SuggestValidate 1316–1318；LateUnverified 1319–1321；LateMay 1322–1324；VerifyDiscard 1325–1327；VerifyCall 1328–1330；VerifyStatusWhen 1331–1333；VerifyKeep 1334–1336；VerifyAcceptDef 1337–1339；ProcAcceptDef 1340–1342；ExtWhenBcast 1343–1345；EIP-2 Homestead 1346–1349；ExtAppGen 1350–1352；CiNotes 1353–1355；ExtCiNotes 1356–1358；CiFields 1359–1361；ExecTxEv 1362–1364；ExtViUse 1365–1367；PrepEv 1368–1370；ValUse 1371–1373；ViAvail 1374–1376；EIP-7 DELEGATECALL 1377–1379；EIP-140 REVERT 1380–1382；EIP-214 STATICCALL 1383–1385；EIP-211 returndata 1386–1388；EIP-1014 CREATE2 1389–1391；EIP-1052 EXTCODEHASH 1392–1394；EIP-1344 CHAINID 1395–1397；EIP-3198 BASEFEE 1398–1400；EIP-7516 BLOBBASEFEE 1401–1403；EIP-145 SHIFT 1404–1406；EIP-3855 PUSH0 1407–1409；EIP-5656 MCOPY 1410–1412；EIP-3529 refund 1413–1415；EIP-6049 deprecate 1416–1418；EIP-2200 net-meter 1419–1421；EIP-2028 calldata-cut 1422–1424；EIP-2565 modexp-price 1425–1427；EIP-1108 bn128-cut 1428–1430；EIP-1884 SELFBALANCE 1431–1433；EIP-152 BLAKE2F 1434–1436；EIP-3860 initcode 1437–1439 | AUDIT_LOG 连续；invariants README 更新 |
 | P1-4 | runner 接 pytest | 至少 10 条 Cxx 有占位测试 |
 | P1-5 | PQ 尺寸卡补 CPU 列 | `tracks/post-quantum/engineering-ledger.md` 有测量方法 |
 
@@ -355,8 +355,9 @@
 | 2026-09-18 | P1-3 1428–1430 EIP-1108 bn128-cut 不是已经换了算法 / 更便宜不是已经在验签 / 本页不是已经是通用曲线算术 拆句（228 item 1/2/3） |
 | 2026-09-18 | P1-3 1431–1433 EIP-1884 SELFBALANCE 不是已经是按地址查余额 / 给自己查不是已经按本账户价扣 / 涨价不是已经是本笔冷热 拆句（229 item 1/2/3） |
 | 2026-09-18 | P1-3 1434–1436 EIP-152 BLAKE2F 不是已经是哈希 / 本页不是已经能验 Equihash / 定长输入不是已经是任意哈希 API 拆句（230 item 1/2/3） |
+| 2026-09-18 | P1-3 1437–1439 EIP-3860 initcode 不是已经是 170 运行时界 / 创建交易超界不是已经是 CREATE 失败 / 分析费不是已经跑完 拆句（176 item 1/2/3） |
 
-下一批默认：**P1-3 官方三事 1437+**（继续以太坊仍捆着的官方对象：initcode 176，或 P3-3 / P1-5）。  
+下一批默认：**P1-3 官方三事 1440+**（继续以太坊仍捆着的官方对象：returned 185，或 P3-3 / P1-5）。  
 唤醒后先跑 `python3 tools/review_audit.py`，见 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
 ---

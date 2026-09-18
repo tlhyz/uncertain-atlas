@@ -1,3 +1,6 @@
+- [`name-the-icode-notrun-bar.md`](name-the-icode-notrun-bar.md) — EIP-3860 jumpdest-fee not already ran-initcode / not already CREATE2-hash-fee / not already created 正式三事（176 余量）（不变量 1439）
+- [`name-the-icode-nottx-bar.md`](name-the-icode-nottx-bar.md) — EIP-3860 create-tx-oversize not already CREATE-fail / not already 2681 / not already in-EVM 正式三事（176 余量）（不变量 1438）
+- [`name-the-icode-not170-bar.md`](name-the-icode-not170-bar.md) — EIP-3860 initcode-bound not already 170-runtime / not already 1014 / not already 176-bundled 正式三事（176 余量）（不变量 1437）
 - [`name-the-b2f-notapi-bar.md`](name-the-b2f-notapi-bar.md) — EIP-152 fixed-input not already generic-hash-API / not already digest / not already 199 正式三事（230 余量）（不变量 1436）
 - [`name-the-b2f-notprod-bar.md`](name-the-b2f-notprod-bar.md) — EIP-152 this-page not already Equihash / not already relay / not already privacy 正式三事（230 余量）（不变量 1435）
 - [`name-the-b2f-nothash-bar.md`](name-the-b2f-nothash-bar.md) — EIP-152 F not already BLAKE2b-hash / not already keccak / not already 230-bundled 正式三事（230 余量）（不变量 1434）

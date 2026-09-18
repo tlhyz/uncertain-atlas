@@ -1,3 +1,6 @@
+- [`icode-notrun-sold-as-bundled.md`](icode-notrun-sold-as-bundled.md) — 按字分析费 被写成已经跑完 initcode / 就已经是 CREATE2 哈希费 / 就已经创建（不变量 1439）
+- [`icode-nottx-sold-as-bundled.md`](icode-nottx-sold-as-bundled.md) — 创建交易超界 被写成已经是 CREATE 失败 / 就已经是 2681 / 就已经进 EVM（不变量 1438）
+- [`icode-not170-sold-as-bundled.md`](icode-not170-sold-as-bundled.md) — initcode 超界 被写成已经是部署代码超界 / 就已经是 1014 / 就已经 176 bundled（不变量 1437）
 - [`b2f-notapi-sold-as-bundled.md`](b2f-notapi-sold-as-bundled.md) — 定长输入 被写成已经是任意哈希 API / 就已经返回摘要 / 就已经是 199（不变量 1436）
 - [`b2f-notprod-sold-as-bundled.md`](b2f-notprod-sold-as-bundled.md) — 本页 被写成已经能验 Equihash / 就已经是中继交换 / 就已经有隐私（不变量 1435）
 - [`b2f-nothash-sold-as-bundled.md`](b2f-nothash-sold-as-bundled.md) — 压缩函数 F 被写成已经是 BLAKE2b 哈希 / 就已经是 keccak / 就已经 230 bundled（不变量 1434）
