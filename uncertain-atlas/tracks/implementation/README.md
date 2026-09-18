@@ -1040,6 +1040,9 @@
 - [`worked-example-sbal-notself-vs-bundled.md`](worked-example-sbal-notself-vs-bundled.md) — 给自己查余额≠already 按本账户价扣/更便宜BALANCE/1884做完；≠229 bundled（不变量 1432）
 - [`worked-example-sbal-notwarm-vs-bundled.md`](worked-example-sbal-notwarm-vs-bundled.md) — 树依赖涨价≠already 本笔冷热/磁盘O(1)/2929；≠229 bundled（不变量 1433）
 - [`worked-example-selfbalance-vs-balance.md`](worked-example-selfbalance-vs-balance.md) — 看见本账户余额指令 ≠ 已经是按地址查余额；看见给自己查余额 ≠ 已经按本账户价扣；看见树依赖涨价 ≠ 已经是本笔冷热 / 已经是磁盘 O(1)；1884 ≠ 2929 ≠ 169 ≠ 101 ≠ 150（不变量 229）
+- [`worked-example-b2f-nothash-vs-bundled.md`](worked-example-b2f-nothash-vs-bundled.md) — 压缩函数F≠already BLAKE2b哈希/keccak/230 bundled；≠230 bundled（不变量 1434）
+- [`worked-example-b2f-notprod-vs-bundled.md`](worked-example-b2f-notprod-vs-bundled.md) — 本页≠already Equihash/中继交换/已有隐私；≠230 bundled（不变量 1435）
+- [`worked-example-b2f-notapi-vs-bundled.md`](worked-example-b2f-notapi-vs-bundled.md) — 定长输入≠already 任意哈希API/已返回摘要/199；≠230 bundled（不变量 1436）
 - [`worked-example-blake2f-vs-hash.md`](worked-example-blake2f-vs-hash.md) — 看见 BLAKE2 压缩函数 F ≠ 已经是 BLAKE2b 哈希；看见本页 ≠ 已经能验 Equihash / 已经是中继 / 已经有隐私；152 ≠ keccak / SHA3（不变量 230）
 - [`worked-example-shft-notarith-vs-bundled.md`](worked-example-shft-notarith-vs-bundled.md) — 原生移位≠already 算术拼过/只有一条/231 bundled；≠231 bundled（不变量 1404）
 - [`worked-example-shft-notsdiv-vs-bundled.md`](worked-example-shft-notsdiv-vs-bundled.md) — 算术右移≠already 有符号除/同一舍入/同一操作数顺序；≠231 bundled（不变量 1405）

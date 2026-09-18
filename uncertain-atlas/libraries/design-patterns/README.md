@@ -1,3 +1,6 @@
+- [`name-the-b2f-notapi-bar.md`](name-the-b2f-notapi-bar.md) — EIP-152 fixed-input not already generic-hash-API / not already digest / not already 199 正式三事（230 余量）（不变量 1436）
+- [`name-the-b2f-notprod-bar.md`](name-the-b2f-notprod-bar.md) — EIP-152 this-page not already Equihash / not already relay / not already privacy 正式三事（230 余量）（不变量 1435）
+- [`name-the-b2f-nothash-bar.md`](name-the-b2f-nothash-bar.md) — EIP-152 F not already BLAKE2b-hash / not already keccak / not already 230-bundled 正式三事（230 余量）（不变量 1434）
 - [`name-the-sbal-notwarm-bar.md`](name-the-sbal-notwarm-bar.md) — EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）（不变量 1433）
 - [`name-the-sbal-notself-bar.md`](name-the-sbal-notself-bar.md) — EIP-1884 self-query not already self-priced / not already cheaper-BALANCE / not already 1884-done 正式三事（229 余量）（不变量 1432）
 - [`name-the-sbal-notbal-bar.md`](name-the-sbal-notbal-bar.md) — EIP-1884 selfbalance not already BALANCE / not already stack-pop-balance / not already 229-bundled 正式三事（229 余量）（不变量 1431）

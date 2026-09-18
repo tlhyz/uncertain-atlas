@@ -1,3 +1,18 @@
+| A6945 | 记录 | 会与 230 / 221 / 199 / 1434 / 1435 糊成「看见定长输入不是已经是任意哈希 API就已经是任意哈希 API interchangeable、就已经返回一份摘要 interchangeable、就已经是不变量 199 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-152 fixed-input not already generic-hash-API / not already digest / not already 199 正式三事（230 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。230 blake2f vs hash bundled unbundling 完成（1436 item 3） |
+| A6946 | 高 | 看见定长输入不是已经是任意哈希 API 会被写成已经是任意哈希 API interchangeable / 221 interchangeable | 官方 EIP-152 b2f item 3：not already 已经是任意哈希 API / not 221 |
+| A6947 | 高 | 看见fixed-length input is not already a generic hash API 会被写成已经返回一份摘要 interchangeable / 199 interchangeable | 官方 EIP-152 b2f item 3：not already 已经返回一份摘要 / not 199 |
+| A6948 | 高 | 看见定长输入不是已经是任意哈希 API 会被写成已经是不变量 199 interchangeable | 官方 EIP-152 b2f item 3：not already settled |
+| A6949 | 中 | 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换会被抄进不确定 | 不抄。不写 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换。不另写 19 节 |
+| A6940 | 记录 | 会与 230 / 199 / 229 / 1434 / 1436 糊成「看见本页不是已经能验 Equihash就已经能验 Equihash interchangeable、就已经是跨链中继 / 原子交换 interchangeable、就已经有隐私 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-152 this-page not already Equihash / not already relay / not already privacy 正式三事（230 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。230 blake2f vs hash bundled unbundling 续（1435 item 2） |
+| A6941 | 高 | 看见本页不是已经能验 Equihash 会被写成已经能验 Equihash interchangeable / 199 interchangeable | 官方 EIP-152 b2f item 2：not already 已经能验 Equihash / not 199 |
+| A6942 | 高 | 看见this page is not already Equihash-live 会被写成已经是跨链中继 / 原子交换 interchangeable / 229 interchangeable | 官方 EIP-152 b2f item 2：not already 已经是跨链中继 / 原子交换 / not 229 |
+| A6943 | 高 | 看见本页不是已经能验 Equihash 会被写成已经有隐私 interchangeable | 官方 EIP-152 b2f item 2：not already settled |
+| A6944 | 中 | 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换会被抄进不确定 | 不抄。不写 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换。不另写 19 节 |
+| A6935 | 记录 | 会与 230 / 199 / 228 / 1435 / 1436 糊成「看见BLAKE2 压缩函数 F 不是已经是 BLAKE2b 哈希就已经是 BLAKE2b 哈希 interchangeable、就已经是 keccak / SHA3 interchangeable、就已经 230 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-152 F not already BLAKE2b-hash / not already keccak / not already 230-bundled 正式三事（230 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。230 blake2f vs hash bundled unbundling 启动（1434 item 1） |
+| A6936 | 高 | 看见BLAKE2 压缩函数 F 不是已经是 BLAKE2b 哈希 会被写成已经是 BLAKE2b 哈希 interchangeable / 199 interchangeable | 官方 EIP-152 b2f item 1：not already 已经是 BLAKE2b 哈希 / not 199 |
+| A6937 | 高 | 看见F is not already BLAKE2b hash 会被写成已经是 keccak / SHA3 interchangeable / 228 interchangeable | 官方 EIP-152 b2f item 1：not already 已经是 keccak / SHA3 / not 228 |
+| A6938 | 高 | 看见BLAKE2 压缩函数 F 不是已经是 BLAKE2b 哈希 会被写成已经 230 bundled interchangeable | 官方 EIP-152 b2f item 1：not already settled |
+| A6939 | 中 | 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换会被抄进不确定 | 不抄。不写 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换。不另写 19 节 |
 | A6930 | 记录 | 会与 229 / 101 / 169 / 1431 / 1432 糊成「看见树依赖涨价不是已经是本笔冷热就已经是本笔冷热 interchangeable、就已经是磁盘 O(1) interchangeable、就已经是 2929 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。229 selfbalance vs balance bundled unbundling 完成（1433 item 3） |
 | A6931 | 高 | 看见树依赖涨价不是已经是本笔冷热 会被写成已经是本笔冷热 interchangeable / 101 interchangeable | 官方 EIP-1884 sbal item 3：not already 已经是本笔冷热 / not 101 |
 | A6932 | 高 | 看见trie-dependent reprice is not already cold-warm 会被写成已经是磁盘 O(1) interchangeable / 169 interchangeable | 官方 EIP-1884 sbal item 3：not already 已经是磁盘 O(1) / not 169 |

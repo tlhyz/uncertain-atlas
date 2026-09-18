@@ -1,3 +1,15 @@
+## 2026-09-18（续 1553）
+
+- 不变量 1436；语料 C1414；模式 name-the-b2f-notapi-bar；反模式 b2f-notapi-sold-as-bundled；L10.3 第 1405 条。填 L5.1 EIP-152 fixed-input not already generic-hash-API / not already digest / not already 199 正式三事（230 余量）。230 blake2f vs hash bundled unbundling 完成（1436 item 3）。
+
+## 2026-09-18（续 1552）
+
+- 不变量 1435；语料 C1413；模式 name-the-b2f-notprod-bar；反模式 b2f-notprod-sold-as-bundled；L10.3 第 1404 条。填 L5.1 EIP-152 this-page not already Equihash / not already relay / not already privacy 正式三事（230 余量）。230 blake2f vs hash bundled unbundling 续（1435 item 2）。
+
+## 2026-09-18（续 1551）
+
+- 不变量 1434；语料 C1412；模式 name-the-b2f-nothash-bar；反模式 b2f-nothash-sold-as-bundled；L10.3 第 1403 条。填 L5.1 EIP-152 F not already BLAKE2b-hash / not already keccak / not already 230-bundled 正式三事（230 余量）。230 blake2f vs hash bundled unbundling 启动（1434 item 1）。
+
 ## 2026-09-18（续 1550）
 
 - 不变量 1433；语料 C1411；模式 name-the-sbal-notwarm-bar；反模式 sbal-notwarm-sold-as-bundled；L10.3 第 1402 条。填 L5.1 EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）。229 selfbalance vs balance bundled unbundling 完成（1433 item 3）。

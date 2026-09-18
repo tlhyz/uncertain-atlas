@@ -1,3 +1,6 @@
+- [`b2f-notapi-sold-as-bundled.md`](b2f-notapi-sold-as-bundled.md) — 定长输入 被写成已经是任意哈希 API / 就已经返回摘要 / 就已经是 199（不变量 1436）
+- [`b2f-notprod-sold-as-bundled.md`](b2f-notprod-sold-as-bundled.md) — 本页 被写成已经能验 Equihash / 就已经是中继交换 / 就已经有隐私（不变量 1435）
+- [`b2f-nothash-sold-as-bundled.md`](b2f-nothash-sold-as-bundled.md) — 压缩函数 F 被写成已经是 BLAKE2b 哈希 / 就已经是 keccak / 就已经 230 bundled（不变量 1434）
 - [`sbal-notwarm-sold-as-bundled.md`](sbal-notwarm-sold-as-bundled.md) — 树依赖涨价 被写成已经是本笔冷热 / 就已经是磁盘 O(1) / 就已经是 2929（不变量 1433）
 - [`sbal-notself-sold-as-bundled.md`](sbal-notself-sold-as-bundled.md) — 给自己查余额 被写成已经按本账户价扣 / 就已经是更便宜的按地址查 / 就已经做完 1884（不变量 1432）
 - [`sbal-notbal-sold-as-bundled.md`](sbal-notbal-sold-as-bundled.md) — 本账户余额指令 被写成已经是按地址查余额 / 就已经改了余额语义 / 就已经 229 bundled（不变量 1431）
