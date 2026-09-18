@@ -1,3 +1,7 @@
+## 2026-09-18（续 809）
+
+- 不变量 692；语料 C669；模式 name-the-candidate-notheader-bar；反模式 candidate-notheader-sold-as-bundled；L10.3 第 661 条。填 L4.4 / CometBFT 档案 Prepare 没有头哈希 not already have header hash / not Prepare already had hash / not already decided block identity 正式三事（311 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。311 candidate vs execute bundled unbundling 启动（692 item 1）。
+
 ## 2026-09-18（续 808）
 
 - 不变量 691；语料 C668；模式 name-the-commitlock-notbroadcast-bar；反模式 commitlock-notbroadcast-sold-as-bundled；L10.3 第 660 条。填 L4.4 / CometBFT 档案 Commit 里等 broadcast_tx not already can proceed / not already settled / not already allowed sync mempool in Commit 正式三事（310 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。310 commitlock vs RPC bundled unbundling 完成（689 + 690 + 691）。
