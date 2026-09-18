@@ -1,3 +1,6 @@
+- [`pk381-notcompat-sold-as-bundled.md`](pk381-notcompat-sold-as-bundled.md) — 熟悉脚本 被写成已经能互操作 / 已经不必再写本页 / 已经交差（不变量 1150）
+- [`pk381-notredeem-sold-as-bundled.md`](pk381-notredeem-sold-as-bundled.md) — sh 产出 被写成已经有赎回脚本 / 已经能花 / 已经交差（不变量 1149）
+- [`pk381-notplace-sold-as-bundled.md`](pk381-notplace-sold-as-bundled.md) — pk 放置 被写成已经是 pkh 那种放置 / 已经能再套一层 sh / 已经交差（不变量 1148）
 - [`tr386-notxonly-sold-as-bundled.md`](tr386-notxonly-sold-as-bundled.md) — 压缩钥 被写成已经是 x-only / 已经允许未压缩 / 已经交差（不变量 1147）
 - [`tr386-notold-sold-as-bundled.md`](tr386-notold-sold-as-bundled.md) — 树表达式 被写成已经是旧套法 / 已经都能进树 / 已经交差（不变量 1146）
 - [`tr386-notpath-sold-as-bundled.md`](tr386-notpath-sold-as-bundled.md) — tr 只有钥 被写成已经有脚本路径 / 已经同一套微调 / 已经交差（不变量 1145）

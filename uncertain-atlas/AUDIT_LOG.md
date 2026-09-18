@@ -1,3 +1,18 @@
+| A5515 | 记录 | 会与 276 / 1118 / 184 / 1148 / 1149 糊成「看见熟悉的标准脚本就已经能互操作 interchangeable、就已经不必再写本页 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-381 familiar-scripts not already interoperable / not already skip-page / not already settled 正式三事（276 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。276 pk vs toplevel bundled unbundling 完成（1150 item 3） |
+| A5516 | 高 | 看见熟悉的标准脚本 会被写成已经能互操作 interchangeable / 1118 interchangeable | 官方 BIP-381 非隔离见证描述符 item 3：not already interoperable / not 1118 |
+| A5517 | 高 | 看见旧钱包认得输出 会被写成已经不必再写本页 interchangeable / 184 interchangeable | 官方 BIP-381 非隔离见证描述符 item 3：not already skip-page / not 184 |
+| A5518 | 高 | 看见全新描述符 会被写成已经交差 interchangeable | 官方 BIP-381 非隔离见证描述符 item 3：not already settled |
+| A5519 | 中 | 怎样拼 P2PK 会被抄进不确定 | 不抄。不写怎样拼 P2PK。不另写 19 节 |
+| A5510 | 记录 | 会与 276 / 170 / 1142 / 1148 / 1150 糊成「看见 sh 产出就已经有赎回脚本 interchangeable、就已经能花 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-381 sh-output not already have-redeem / not already spendable / not already settled 正式三事（276 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。276 pk vs toplevel bundled unbundling 续（1149 item 2） |
+| A5511 | 高 | 看见 sh 产出 会被写成已经有赎回脚本 interchangeable / 170 interchangeable | 官方 BIP-381 非隔离见证描述符 item 2：not already have-redeem / not 170 |
+| A5512 | 高 | 看见套进了脚本表达式 会被写成已经能花 interchangeable / 1142 interchangeable | 官方 BIP-381 非隔离见证描述符 item 2：not already spendable / not 1142 |
+| A5513 | 高 | 看见另造一份赎回脚本 会被写成已经交差 interchangeable | 官方 BIP-381 非隔离见证描述符 item 2：not already settled |
+| A5514 | 中 | 怎样拼 P2PK 会被抄进不确定 | 不抄。不写怎样拼 P2PK。不另写 19 节 |
+| A5505 | 记录 | 会与 276 / 184 / 1145 / 1149 / 1150 糊成「看见 pk 就已经是 pkh 那种放置 interchangeable、就已经能再套一层 sh interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-381 pk-placement not already pkh-place / not already sh-only-top / not already settled 正式三事（276 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。276 pk vs toplevel bundled unbundling 启动（1148 item 1） |
+| A5506 | 高 | 看见 pk 会被写成已经是 pkh 那种放置 interchangeable / 184 interchangeable | 官方 BIP-381 非隔离见证描述符 item 1：not already pkh-place / not 184 |
+| A5507 | 高 | 看见写了脚本表达式 会被写成已经能再套一层 sh interchangeable / 1145 interchangeable | 官方 BIP-381 非隔离见证描述符 item 1：not already sh-only-top / not 1145 |
+| A5508 | 高 | 看见 pk 可以出现在任何一层 会被写成已经交差 interchangeable | 官方 BIP-381 非隔离见证描述符 item 1：not already settled |
+| A5509 | 中 | 怎样拼 P2PK 会被抄进不确定 | 不抄。不写怎样拼 P2PK。不另写 19 节 |
 | A5500 | 记录 | 会与 275 / 189 / 184 / 1145 / 1146 糊成「看见压缩钥就已经是 x-only interchangeable、就已经允许未压缩 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-386 compressed-key not already x-only / not already uncompressed-ok / not already settled 正式三事（275 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。275 tr vs tree bundled unbundling 完成（1147 item 3） |
 | A5501 | 高 | 看见压缩钥 会被写成已经是 x-only interchangeable / 189 interchangeable | 官方 BIP-386 tr 描述符 item 3：not already x-only / not 189 |
 | A5502 | 高 | 看见未压缩钥 会被写成已经允许未压缩 interchangeable / 184 interchangeable | 官方 BIP-386 tr 描述符 item 3：not already uncompressed-ok / not 184 |

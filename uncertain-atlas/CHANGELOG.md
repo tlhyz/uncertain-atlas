@@ -1,3 +1,15 @@
+## 2026-09-18（续 1267）
+
+- 不变量 1150；语料 C1128；模式 name-the-pk381-notcompat-bar；反模式 pk381-notcompat-sold-as-bundled；L10.3 第 1119 条。填 L1.4 / L3.6 BIP-381 familiar-scripts not already interoperable / not already skip-page / not already settled 正式三事（276 余量）。276 pk vs toplevel bundled unbundling 完成（1150 item 3）。
+
+## 2026-09-18（续 1266）
+
+- 不变量 1149；语料 C1127；模式 name-the-pk381-notredeem-bar；反模式 pk381-notredeem-sold-as-bundled；L10.3 第 1118 条。填 L1.4 / L3.6 BIP-381 sh-output not already have-redeem / not already spendable / not already settled 正式三事（276 余量）。276 pk vs toplevel bundled unbundling 续（1149 item 2）。
+
+## 2026-09-18（续 1265）
+
+- 不变量 1148；语料 C1126；模式 name-the-pk381-notplace-bar；反模式 pk381-notplace-sold-as-bundled；L10.3 第 1117 条。填 L1.4 / L3.6 BIP-381 pk-placement not already pkh-place / not already sh-only-top / not already settled 正式三事（276 余量）。276 pk vs toplevel bundled unbundling 启动（1148 item 1）。
+
 ## 2026-09-18（续 1264）
 
 - 不变量 1147；语料 C1125；模式 name-the-tr386-notxonly-bar；反模式 tr386-notxonly-sold-as-bundled；L10.3 第 1116 条。填 L1.4 / L3.6 BIP-386 compressed-key not already x-only / not already uncompressed-ok / not already settled 正式三事（275 余量）。275 tr vs tree bundled unbundling 完成（1147 item 3）。

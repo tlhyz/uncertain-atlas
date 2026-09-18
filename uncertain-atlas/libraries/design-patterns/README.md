@@ -1,3 +1,6 @@
+- [`name-the-pk381-notcompat-bar.md`](name-the-pk381-notcompat-bar.md) — BIP-381 familiar-scripts not already interoperable / not already skip-page / not already settled 正式三事（276 余量）（不变量 1150）
+- [`name-the-pk381-notredeem-bar.md`](name-the-pk381-notredeem-bar.md) — BIP-381 sh-output not already have-redeem / not already spendable / not already settled 正式三事（276 余量）（不变量 1149）
+- [`name-the-pk381-notplace-bar.md`](name-the-pk381-notplace-bar.md) — BIP-381 pk-placement not already pkh-place / not already sh-only-top / not already settled 正式三事（276 余量）（不变量 1148）
 - [`name-the-tr386-notxonly-bar.md`](name-the-tr386-notxonly-bar.md) — BIP-386 compressed-key not already x-only / not already uncompressed-ok / not already settled 正式三事（275 余量）（不变量 1147）
 - [`name-the-tr386-notold-bar.md`](name-the-tr386-notold-bar.md) — BIP-386 tree-expr not already old-wrap / not already any-old-expr / not already settled 正式三事（275 余量）（不变量 1146）
 - [`name-the-tr386-notpath-bar.md`](name-the-tr386-notpath-bar.md) — BIP-386 tr-key-only not already has-script-path / not already same-tweak / not already settled 正式三事（275 余量）（不变量 1145）

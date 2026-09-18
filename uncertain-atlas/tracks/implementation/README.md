@@ -817,6 +817,9 @@
 - [`worked-example-tr386-notold-vs-bundled.md`](worked-example-tr386-notold-vs-bundled.md) — 树表达式≠already old-wrap/any-old-expr/settled；≠275 bundled（不变量 1146）
 - [`worked-example-tr386-notpath-vs-bundled.md`](worked-example-tr386-notpath-vs-bundled.md) — tr 只有钥≠already has-script-path/same-tweak/settled；≠275 bundled（不变量 1145）
 - [`worked-example-tr-vs-tree.md`](worked-example-tr-vs-tree.md) — tr 没有树 ≠ 已经有脚本路径；树表达式 ≠ 已经是旧脚本套法；压缩钥 ≠ 已经是 x-only（不变量 275）
+- [`worked-example-pk381-notcompat-vs-bundled.md`](worked-example-pk381-notcompat-vs-bundled.md) — 熟悉脚本≠already interoperable/skip-page/settled；≠276 bundled（不变量 1150）
+- [`worked-example-pk381-notredeem-vs-bundled.md`](worked-example-pk381-notredeem-vs-bundled.md) — sh 产出≠already have-redeem/spendable/settled；≠276 bundled（不变量 1149）
+- [`worked-example-pk381-notplace-vs-bundled.md`](worked-example-pk381-notplace-vs-bundled.md) — pk 放置≠already pkh-place/sh-only-top/settled；≠276 bundled（不变量 1148）
 - [`worked-example-pk-vs-toplevel.md`](worked-example-pk-vs-toplevel.md) — pk ≠ 已经和 pkh / sh 同一套放置；sh 产出 ≠ 已经有赎回脚本；熟悉的标准脚本 ≠ 已经能互操作（不变量 276）
 - [`worked-example-wpkh-vs-compressed.md`](worked-example-wpkh-vs-compressed.md) — wpkh / wsh ≠ 已经只能顶层；未压缩钥 ≠ 已经允许；wsh 产出 ≠ 已经有见证脚本（不变量 277）
 - [`worked-example-multia-vs-tr.md`](worked-example-multia-vs-tr.md) — multi_a ≠ 已经是 383 那种 multi；门限 ≠ 已经同一套编码；sortedmulti_a ≠ 已经是 383 那种排序（不变量 278）
