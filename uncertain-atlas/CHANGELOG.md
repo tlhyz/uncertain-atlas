@@ -1,3 +1,15 @@
+## 2026-09-18（续 1499）
+
+- 不变量 1382；语料 C1360；模式 name-the-rvert-notdep-bar；反模式 rvert-notdep-sold-as-bundled；L10.3 第 1351 条。填 L5.1 EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）。177 REVERT leftover-gas vs burn bundled unbundling 完成（1382 item 3）。
+
+## 2026-09-18（续 1498）
+
+- 不变量 1381；语料 C1359；模式 name-the-rvert-notfee-bar；反模式 rvert-notfee-sold-as-bundled；L10.3 第 1350 条。填 L5.1 EIP-140 unpaid-self-fee not already leftover-semantics / not already 103 / not already free 正式三事（177 余量）。177 REVERT leftover-gas vs burn bundled unbundling 续（1381 item 2）。
+
+## 2026-09-18（续 1497）
+
+- 不变量 1380；语料 C1358；模式 name-the-rvert-notburn-bar；反模式 rvert-notburn-sold-as-bundled；L10.3 第 1349 条。填 L5.1 EIP-140 leftover-gas revert not already INVALID-burn / not already OOG-burn / not already 177-bundled 正式三事（177 余量）。177 REVERT leftover-gas vs burn bundled unbundling 启动（1380 item 1）。
+
 ## 2026-09-18（续 1496）
 
 - 不变量 1379；语料 C1357；模式 name-the-dcall-not7702-bar；反模式 dcall-not7702-sold-as-bundled；L10.3 第 1348 条。填 L5.1 EIP-7 mutable-code-source not already 7702 / not already product-shipped / not already calldata-replica 正式三事（233 余量）。233 DELEGATECALL four objects bundled unbundling 完成（1379 item 3）。

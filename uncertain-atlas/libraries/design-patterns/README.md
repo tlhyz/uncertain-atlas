@@ -1,3 +1,6 @@
+- [`name-the-rvert-notdep-bar.md`](name-the-rvert-notdep-bar.md) — EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）（不变量 1382）
+- [`name-the-rvert-notfee-bar.md`](name-the-rvert-notfee-bar.md) — EIP-140 unpaid-self-fee not already leftover-semantics / not already 103 / not already free 正式三事（177 余量）（不变量 1381）
+- [`name-the-rvert-notburn-bar.md`](name-the-rvert-notburn-bar.md) — EIP-140 leftover-gas revert not already INVALID-burn / not already OOG-burn / not already 177-bundled 正式三事（177 余量）（不变量 1380）
 - [`name-the-dcall-not7702-bar.md`](name-the-dcall-not7702-bar.md) — EIP-7 mutable-code-source not already 7702 / not already product-shipped / not already calldata-replica 正式三事（233 余量）（不变量 1379）
 - [`name-the-dcall-notcall-bar.md`](name-the-dcall-notcall-bar.md) — EIP-7 parent-sender not already CALL / not already stipend / not already creates-account 正式三事（233 余量）（不变量 1378）
 - [`name-the-dcall-notcode-bar.md`](name-the-dcall-notcode-bar.md) — EIP-7 DELEGATECALL not already CALLCODE / not already same-sender-CALLCODE / not already 233-bundled 正式三事（233 余量）（不变量 1377）

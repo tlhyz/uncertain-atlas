@@ -1,3 +1,18 @@
+| A6675 | 记录 | 会与 177 / 138 / 178 / 1380 / 1381 糊成「看见创建里回滚不是已经部署就已经部署 interchangeable、就已经占址 interchangeable、就已经是另一条链的 REVERTED 档 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。177 REVERT leftover-gas vs burn bundled unbundling 完成（1382 item 3） |
+| A6676 | 高 | 看见创建里回滚不是已经部署 会被写成已经部署 interchangeable / 138 interchangeable | 官方 EIP-140 rvert item 3：not already 已经部署 / not 138 |
+| A6677 | 高 | 看见create revert is not already deployed 会被写成已经占址 interchangeable / 178 interchangeable | 官方 EIP-140 rvert item 3：not already 已经占址 / not 178 |
+| A6678 | 高 | 看见创建里回滚不是已经部署 会被写成已经是另一条链的 REVERTED 档 interchangeable | 官方 EIP-140 rvert item 3：not already settled |
+| A6679 | 中 | 怎样挑回滚或非法指令去留气或烧气会被抄进不确定 | 不抄。不写 怎样挑回滚或非法指令去留气或烧气。不另写 19 节 |
+| A6670 | 记录 | 会与 177 / 103 / 176 / 1380 / 1382 糊成「看见不够付回滚自己的费不是已经留下剩余气就已经按回滚语义留下剩余气 interchangeable、就已经是 103 空户回滚 interchangeable、就已经免费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-140 unpaid-self-fee not already leftover-semantics / not already 103 / not already free 正式三事（177 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。177 REVERT leftover-gas vs burn bundled unbundling 续（1381 item 2） |
+| A6671 | 高 | 看见不够付回滚自己的费不是已经留下剩余气 会被写成已经按回滚语义留下剩余气 interchangeable / 103 interchangeable | 官方 EIP-140 rvert item 2：not already 已经按回滚语义留下剩余气 / not 103 |
+| A6672 | 高 | 看见unpaid revert fee is not already leftover 会被写成已经是 103 空户回滚 interchangeable / 176 interchangeable | 官方 EIP-140 rvert item 2：not already 已经是 103 空户回滚 / not 176 |
+| A6673 | 高 | 看见不够付回滚自己的费不是已经留下剩余气 会被写成已经免费 interchangeable | 官方 EIP-140 rvert item 2：not already settled |
+| A6674 | 中 | 怎样挑回滚或非法指令去留气或烧气会被抄进不确定 | 不抄。不写 怎样挑回滚或非法指令去留气或烧气。不另写 19 节 |
+| A6665 | 记录 | 会与 177 / 103 / 232 / 1381 / 1382 糊成「看见带回剩余气的回滚不是已经烧光就已经像非法指令那样烧光剩余气 interchangeable、就已经是气耗尽烧光 interchangeable、就已经 177 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-140 leftover-gas revert not already INVALID-burn / not already OOG-burn / not already 177-bundled 正式三事（177 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。177 REVERT leftover-gas vs burn bundled unbundling 启动（1380 item 1） |
+| A6666 | 高 | 看见带回剩余气的回滚不是已经烧光 会被写成已经像非法指令那样烧光剩余气 interchangeable / 103 interchangeable | 官方 EIP-140 rvert item 1：not already 已经像非法指令那样烧光剩余气 / not 103 |
+| A6667 | 高 | 看见leftover-gas revert is not already burn 会被写成已经是气耗尽烧光 interchangeable / 232 interchangeable | 官方 EIP-140 rvert item 1：not already 已经是气耗尽烧光 / not 232 |
+| A6668 | 高 | 看见带回剩余气的回滚不是已经烧光 会被写成已经 177 bundled interchangeable | 官方 EIP-140 rvert item 1：not already settled |
+| A6669 | 中 | 怎样挑回滚或非法指令去留气或烧气会被抄进不确定 | 不抄。不写 怎样挑回滚或非法指令去留气或烧气。不另写 19 节 |
 | A6660 | 记录 | 会与 233 / 234 / 190 / 1377 / 1378 糊成「看见可变代码源不是已经是 7702就已经是 7702 interchangeable、就可变代码源产品已经上线 interchangeable、就已经能靠调用数据复刻 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7 mutable-code-source not already 7702 / not already product-shipped / not already calldata-replica 正式三事（233 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。233 DELEGATECALL four objects bundled unbundling 完成（1379 item 3） |
 | A6661 | 高 | 看见可变代码源不是已经是 7702 会被写成已经是 7702 interchangeable / 234 interchangeable | 官方 EIP-7 dcall item 3：not already 已经是 7702 / not 234 |
 | A6662 | 高 | 看见mutable code source is not already 7702 会被写成可变代码源产品已经上线 interchangeable / 190 interchangeable | 官方 EIP-7 dcall item 3：not already 可变代码源产品已经上线 / not 190 |

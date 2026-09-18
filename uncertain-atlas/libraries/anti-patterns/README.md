@@ -1,3 +1,6 @@
+- [`rvert-notdep-sold-as-bundled.md`](rvert-notdep-sold-as-bundled.md) — 创建里回滚 被写成已经部署 / 就已经占址 / 就已经是另一条链 REVERTED（不变量 1382）
+- [`rvert-notfee-sold-as-bundled.md`](rvert-notfee-sold-as-bundled.md) — 不够付回滚自己的费 被写成已经留下剩余气 / 就已经是 103 / 就已经免费（不变量 1381）
+- [`rvert-notburn-sold-as-bundled.md`](rvert-notburn-sold-as-bundled.md) — 带回剩余气的回滚 被写成已经像非法指令烧光 / 就已经气耗尽烧光 / 就已经 177 bundled（不变量 1380）
 - [`dcall-not7702-sold-as-bundled.md`](dcall-not7702-sold-as-bundled.md) — 可变代码源 被写成已经是 7702 / 就已经产品上线 / 就已经能靠调用数据复刻（不变量 1379）
 - [`dcall-notcall-sold-as-bundled.md`](dcall-notcall-sold-as-bundled.md) — 父作用域发送者传到子作用域 被写成已经是普通 CALL / 就已经有 CALL 津贴 / 就已经创建账户（不变量 1378）
 - [`dcall-notcode-sold-as-bundled.md`](dcall-notcode-sold-as-bundled.md) — 委托调用 被写成已经是 CALLCODE / 就已经是同一发送者的 CALLCODE / 就已经 Homestead 委托 bundled（不变量 1377）

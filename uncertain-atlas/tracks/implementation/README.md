@@ -1056,6 +1056,9 @@
 - [`worked-example-call-63rds-vs-oog.md`](worked-example-call-63rds-vs-oog.md) — 看见读树涨价 ≠ 已经换成去掉六十四分之一；看见问超了 ≠ 已经耗尽气；看见建议气限 ≠ 已经是协议帽（不变量 237）
 - [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
 - [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
+- [`worked-example-rvert-notburn-vs-bundled.md`](worked-example-rvert-notburn-vs-bundled.md) — 带回剩余气的回滚≠already 非法指令烧光/气耗尽烧光/177 bundled；≠177 bundled（不变量 1380）
+- [`worked-example-rvert-notfee-vs-bundled.md`](worked-example-rvert-notfee-vs-bundled.md) — 不够付回滚自己的费≠already 留下剩余气/103/免费；≠177 bundled（不变量 1381）
+- [`worked-example-rvert-notdep-vs-bundled.md`](worked-example-rvert-notdep-vs-bundled.md) — 创建里回滚≠already 部署/占址/另一条链 REVERTED；≠177 bundled（不变量 1382）
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）
 - [`worked-example-static-vs-view.md`](worked-example-static-vs-view.md) — 静态帧 ≠ 已经是高级语言只读；没转账 ≠ 已经静态；214 ≠ 140（不变量 178）
 - [`worked-example-psbt-vs-broadcast.md`](worked-example-psbt-vs-broadcast.md) — 看见部分签名包 ≠ 已经能广播；有几张签 ≠ 已经凑齐；174 ≠ 173 ≠ 125（不变量 179）
