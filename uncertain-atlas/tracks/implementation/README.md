@@ -371,6 +371,9 @@
 - [`worked-example-latemay-notcall-vs-bundled.md`](worked-example-latemay-notcall-vs-bundled.md) — 不再叫Verify≠already 已Verify/建议再看/正常When step2 call；≠518 bundled（不变量 1324）
 - [`worked-example-verifywhen-latemay-vs-bundled.md`](worked-example-verifywhen-latemay-vs-bundled.md) — MAY add without Verify ≠ 迟到扩展 bundled / 已经 Verify 过；round 0 h-1 CommitRound ≠ 正常 When round r height h；without calling VerifyVoteExtension ≠ 已经又叫了 Verify（不变量 518）
 - [`worked-example-verifywhen-keepdiscard-vs-bundled.md`](worked-example-verifywhen-keepdiscard-vs-bundled.md) — ACCEPT keep ≠ Verify When 正式流程 bundled / 写进 last_commit；populate ExtendedCommitInfo in h+1 Prepare ≠ 已经进了块；REJECT discard ≠ step 1 discard bundled（不变量 517）
+- [`worked-example-vwstat-notret-vs-bundled.md`](worked-example-vwstat-notret-vs-bundled.md) — 应用回ACCEPT/REJECT≠already Verify When bundled/已验过/回包栏；≠516 bundled（不变量 1331）
+- [`worked-example-vwstat-notafter-vs-bundled.md`](worked-example-vwstat-notafter-vs-bundled.md) — step3在call之后≠already step2 call/引擎会叫/step1 discard；≠516 bundled（不变量 1332）
+- [`worked-example-vwstat-notkeep-vs-bundled.md`](worked-example-vwstat-notkeep-vs-bundled.md) — step3在keep/discard前≠already Verify When bundled/已写last_commit/ACCEPT留给h+1；≠516 bundled（不变量 1333）
 - [`worked-example-verifywhen-status-vs-bundled.md`](worked-example-verifywhen-status-vs-bundled.md) — Application returns ACCEPT/REJECT ≠ Verify When 正式流程 bundled；step 3 after call ≠ step 2 call bundled；step 3 before keep/discard ≠ 已经写进 last_commit / REJECT 丢掉 Precommit（不变量 516）
 - [`worked-example-vwcall-notcall-vs-bundled.md`](worked-example-vwcall-notcall-vs-bundled.md) — Else调Verify≠already Verify When bundled/已验过/已经Accept；≠515 bundled（不变量 1328）
 - [`worked-example-vwcall-notrecv-vs-bundled.md`](worked-example-vwcall-notrecv-vs-bundled.md) — 收到他人Precommit≠already 本地票也Verify/ExtendVote When/迟到MAY；≠515 bundled（不变量 1329）

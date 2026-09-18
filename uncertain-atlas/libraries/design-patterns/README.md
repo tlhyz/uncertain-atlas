@@ -1,3 +1,6 @@
+- [`name-the-vwstat-notkeep-bar.md`](name-the-vwstat-notkeep-bar.md) — VerifyStatusWhen before-keep not already Verify-When / not already ACCEPT-keep / not already REJECT-discard 正式三事（516 余量）（不变量 1333）
+- [`name-the-vwstat-notafter-bar.md`](name-the-vwstat-notafter-bar.md) — VerifyStatusWhen after-call not already step-2-call / not already step-1-discard / not already late-MAY 正式三事（516 余量）（不变量 1332）
+- [`name-the-vwstat-notret-bar.md`](name-the-vwstat-notret-bar.md) — VerifyStatusWhen return not already Verify-When / not already verified / not already status-column 正式三事（516 余量）（不变量 1331）
 - [`name-the-vwcall-notbefore-bar.md`](name-the-vwcall-notbefore-bar.md) — VerifyCall before-status not already Verify-When / not already status-column / not already ACCEPT-keep 正式三事（515 余量）（不变量 1330）
 - [`name-the-vwcall-notrecv-bar.md`](name-the-vwcall-notrecv-bar.md) — VerifyCall recv not already local-also-Verify / not already ExtendVote-When / not already late-MAY 正式三事（515 余量）（不变量 1329）
 - [`name-the-vwcall-notcall-bar.md`](name-the-vwcall-notcall-bar.md) — VerifyCall call not already Verify-When / not already verified / not already Accept 正式三事（515 余量）（不变量 1328）

@@ -1,3 +1,15 @@
+## 2026-09-18（续 1450）
+
+- 不变量 1333；语料 C1311；模式 name-the-vwstat-notkeep-bar；反模式 vwstat-notkeep-sold-as-bundled；L10.3 第 1302 条。填 L4.4 VerifyStatusWhen before-keep not already Verify-When / not already ACCEPT-keep / not already REJECT-discard 正式三事（516 余量）。516 VerifyVoteExtension When status bundled unbundling 完成（1333 item 3）。
+
+## 2026-09-18（续 1449）
+
+- 不变量 1332；语料 C1310；模式 name-the-vwstat-notafter-bar；反模式 vwstat-notafter-sold-as-bundled；L10.3 第 1301 条。填 L4.4 VerifyStatusWhen after-call not already step-2-call / not already step-1-discard / not already late-MAY 正式三事（516 余量）。516 VerifyVoteExtension When status bundled unbundling 续（1332 item 2）。
+
+## 2026-09-18（续 1448）
+
+- 不变量 1331；语料 C1309；模式 name-the-vwstat-notret-bar；反模式 vwstat-notret-sold-as-bundled；L10.3 第 1300 条。填 L4.4 VerifyStatusWhen return not already Verify-When / not already verified / not already status-column 正式三事（516 余量）。516 VerifyVoteExtension When status bundled unbundling 启动（1331 item 1）。
+
 ## 2026-09-18（续 1447）
 
 - 不变量 1330；语料 C1308；模式 name-the-vwcall-notbefore-bar；反模式 vwcall-notbefore-sold-as-bundled；L10.3 第 1299 条。填 L4.4 VerifyCall before-status not already Verify-When / not already status-column / not already ACCEPT-keep 正式三事（515 余量）。515 VerifyVoteExtension When call bundled unbundling 完成（1330 item 3）。

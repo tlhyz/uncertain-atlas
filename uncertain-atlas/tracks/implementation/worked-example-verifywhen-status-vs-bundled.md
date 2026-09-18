@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When return status 正式三事，必须分开 Application returns ACCEPT/REJECT 是不是 Verify When 正式流程 bundled interchangeable / 已经 Accept interchangeable、step 3 after call 是不是 step 2 call bundled interchangeable、step 3 before keep/discard 是不是已经写进 last_commit interchangeable / 已经 REJECT 丢掉 Precommit interchangeable。可以跳过「看见 CometBFT 会叫 VerifyVoteExtension 就已经 Accept interchangeable、已经 REJECT 丢掉 Precommit interchangeable」。不要另写怎样写 Verify 回包栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When return status 正式三事，必须分开 Application returns ACCEPT/REJECT 是不是 Verify When 正式流程 bundled interchangeable / 已经 Accept interchangeable、step 3 after call 是不是 step 2 call bundled interchangeable、step 3 before keep/discard 是不是已经写进 last_commit interchangeable / 已经 REJECT 丢掉 Precommit interchangeable。可以跳过「看见 CometBFT 会叫 VerifyVoteExtension 就已经 Accept interchangeable、已经 REJECT 丢掉 Precommit interchangeable」。516 VerifyVoteExtension When status bundled unbundling 完成（1331 item 1 / 1332 item 2 / 1333 item 3）；精读 [`worked-example-vwstat-notret-vs-bundled.md`](worked-example-vwstat-notret-vs-bundled.md)（不变量 1331 item 1）、[`worked-example-vwstat-notafter-vs-bundled.md`](worked-example-vwstat-notafter-vs-bundled.md)（不变量 1332 item 2）、[`worked-example-vwstat-notkeep-vs-bundled.md`](worked-example-vwstat-notkeep-vs-bundled.md)（不变量 1333 item 3）。不要另写怎样写 Verify 回包栏。
 
 ## 本页不抄
 

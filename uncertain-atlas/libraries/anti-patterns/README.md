@@ -1,3 +1,6 @@
+- [`vwstat-notkeep-sold-as-bundled.md`](vwstat-notkeep-sold-as-bundled.md) — step 3 在 keep/discard 前 被写成已经是 Verify When bundled / 就已经写进 last_commit / 就已经 ACCEPT 留给 h+1（不变量 1333）
+- [`vwstat-notafter-sold-as-bundled.md`](vwstat-notafter-sold-as-bundled.md) — step 3 在 call 之后 被写成已经是 step 2 call / 引擎就会叫 / 就已经 step 1 discard（不变量 1332）
+- [`vwstat-notret-sold-as-bundled.md`](vwstat-notret-sold-as-bundled.md) — 应用回 status 被写成已经是 Verify When bundled / 就已经验过 / 就已经是回包栏（不变量 1331）
 - [`vwcall-notbefore-sold-as-bundled.md`](vwcall-notbefore-sold-as-bundled.md) — step 2 在回 status 前 被写成已经是 Verify When bundled / 就已经写进 last_commit / 就已经是回包栏（不变量 1330）
 - [`vwcall-notrecv-sold-as-bundled.md`](vwcall-notrecv-sold-as-bundled.md) — 收到他人 Precommit 被写成已经本地票也 Verify / 就已经是 ExtendVote When / 就已经迟到 MAY（不变量 1329）
 - [`vwcall-notcall-sold-as-bundled.md`](vwcall-notcall-sold-as-bundled.md) — Else 调 Verify 被写成已经是 Verify When bundled / 就已经验过 / 就已经 Accept（不变量 1328）
