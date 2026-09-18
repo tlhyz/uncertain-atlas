@@ -1,3 +1,15 @@
+## 2026-09-18（续 1502）
+
+- 不变量 1385；语料 C1363；模式 name-the-stcall-notchg-bar；反模式 stcall-notchg-sold-as-bundled；L10.3 第 1354 条。填 L5.1 EIP-214 static-state-change not already applied / not already CALLCODE-value / not already 140 正式三事（178 余量）。178 STATICCALL flag vs view bundled unbundling 完成（1385 item 3）。
+
+## 2026-09-18（续 1501）
+
+- 不变量 1384；语料 C1362；模式 name-the-stcall-notxfer-bar；反模式 stcall-notxfer-sold-as-bundled；L10.3 第 1353 条。填 L5.1 EIP-214 zero-value-CALL not already static-flag / not already readonly / not already 214-bundled 正式三事（178 余量）。178 STATICCALL flag vs view bundled unbundling 续（1384 item 2）。
+
+## 2026-09-18（续 1500）
+
+- 不变量 1383；语料 C1361；模式 name-the-stcall-notview-bar；反模式 stcall-notview-sold-as-bundled；L10.3 第 1352 条。填 L5.1 EIP-214 static-frame not already high-level-view / not already compiler-readonly / not already 178-bundled 正式三事（178 余量）。178 STATICCALL flag vs view bundled unbundling 启动（1383 item 1）。
+
 ## 2026-09-18（续 1499）
 
 - 不变量 1382；语料 C1360；模式 name-the-rvert-notdep-bar；反模式 rvert-notdep-sold-as-bundled；L10.3 第 1351 条。填 L5.1 EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）。177 REVERT leftover-gas vs burn bundled unbundling 完成（1382 item 3）。

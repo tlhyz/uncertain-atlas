@@ -1,3 +1,6 @@
+- [`stcall-notchg-sold-as-bundled.md`](stcall-notchg-sold-as-bundled.md) — 静态帧里改状态 被写成已经改成 / 就已经和 CALLCODE 带值同一盏灯 / 就已经是 140（不变量 1385）
+- [`stcall-notxfer-sold-as-bundled.md`](stcall-notxfer-sold-as-bundled.md) — 没转账的普通调用 被写成已经打开静态旗 / 就已经只读 / 就已经 214 bundled（不变量 1384）
+- [`stcall-notview-sold-as-bundled.md`](stcall-notview-sold-as-bundled.md) — 静态帧 被写成已经是高级语言只读 / 就已经是编译器 view / 就已经 178 bundled（不变量 1383）
 - [`rvert-notdep-sold-as-bundled.md`](rvert-notdep-sold-as-bundled.md) — 创建里回滚 被写成已经部署 / 就已经占址 / 就已经是另一条链 REVERTED（不变量 1382）
 - [`rvert-notfee-sold-as-bundled.md`](rvert-notfee-sold-as-bundled.md) — 不够付回滚自己的费 被写成已经留下剩余气 / 就已经是 103 / 就已经免费（不变量 1381）
 - [`rvert-notburn-sold-as-bundled.md`](rvert-notburn-sold-as-bundled.md) — 带回剩余气的回滚 被写成已经像非法指令烧光 / 就已经气耗尽烧光 / 就已经 177 bundled（不变量 1380）

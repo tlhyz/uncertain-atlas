@@ -1,3 +1,18 @@
+| A6690 | 记录 | 会与 178 / 160 / 177 / 1383 / 1384 糊成「看见静态帧里改状态不是已经改成就已经改成 interchangeable、就已经和 CALLCODE 带值同一盏灯 interchangeable、就已经是 140 回滚 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-214 static-state-change not already applied / not already CALLCODE-value / not already 140 正式三事（178 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。178 STATICCALL flag vs view bundled unbundling 完成（1385 item 3） |
+| A6691 | 高 | 看见静态帧里改状态不是已经改成 会被写成已经改成 interchangeable / 160 interchangeable | 官方 EIP-214 stcall item 3：not already 已经改成 / not 160 |
+| A6692 | 高 | 看见static state change is not already applied 会被写成已经和 CALLCODE 带值同一盏灯 interchangeable / 177 interchangeable | 官方 EIP-214 stcall item 3：not already 已经和 CALLCODE 带值同一盏灯 / not 177 |
+| A6693 | 高 | 看见静态帧里改状态不是已经改成 会被写成已经是 140 回滚 interchangeable | 官方 EIP-214 stcall item 3：not already settled |
+| A6694 | 中 | 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值会被抄进不确定 | 不抄。不写 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值。不另写 19 节 |
+| A6685 | 记录 | 会与 178 / 177 / 233 / 1383 / 1385 糊成「看见没转账的普通调用不是已经是静态帧就已经打开静态旗 interchangeable、就已经只读 interchangeable、就已经 214 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-214 zero-value-CALL not already static-flag / not already readonly / not already 214-bundled 正式三事（178 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。178 STATICCALL flag vs view bundled unbundling 续（1384 item 2） |
+| A6686 | 高 | 看见没转账的普通调用不是已经是静态帧 会被写成已经打开静态旗 interchangeable / 177 interchangeable | 官方 EIP-214 stcall item 2：not already 已经打开静态旗 / not 177 |
+| A6687 | 高 | 看见zero-value CALL is not already static 会被写成已经只读 interchangeable / 233 interchangeable | 官方 EIP-214 stcall item 2：not already 已经只读 / not 233 |
+| A6688 | 高 | 看见没转账的普通调用不是已经是静态帧 会被写成已经 214 bundled interchangeable | 官方 EIP-214 stcall item 2：not already settled |
+| A6689 | 中 | 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值会被抄进不确定 | 不抄。不写 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值。不另写 19 节 |
+| A6680 | 记录 | 会与 178 / 177 / 159 / 1384 / 1385 糊成「看见静态帧不是已经是高级语言只读就已经是高级语言的只读函数 interchangeable、就已经是编译器 view interchangeable、就已经 178 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-214 static-frame not already high-level-view / not already compiler-readonly / not already 178-bundled 正式三事（178 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。178 STATICCALL flag vs view bundled unbundling 启动（1383 item 1） |
+| A6681 | 高 | 看见静态帧不是已经是高级语言只读 会被写成已经是高级语言的只读函数 interchangeable / 177 interchangeable | 官方 EIP-214 stcall item 1：not already 已经是高级语言的只读函数 / not 177 |
+| A6682 | 高 | 看见static frame is not already view 会被写成已经是编译器 view interchangeable / 159 interchangeable | 官方 EIP-214 stcall item 1：not already 已经是编译器 view / not 159 |
+| A6683 | 高 | 看见静态帧不是已经是高级语言只读 会被写成已经 178 bundled interchangeable | 官方 EIP-214 stcall item 1：not already settled |
+| A6684 | 中 | 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值会被抄进不确定 | 不抄。不写 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值。不另写 19 节 |
 | A6675 | 记录 | 会与 177 / 138 / 178 / 1380 / 1381 糊成「看见创建里回滚不是已经部署就已经部署 interchangeable、就已经占址 interchangeable、就已经是另一条链的 REVERTED 档 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。177 REVERT leftover-gas vs burn bundled unbundling 完成（1382 item 3） |
 | A6676 | 高 | 看见创建里回滚不是已经部署 会被写成已经部署 interchangeable / 138 interchangeable | 官方 EIP-140 rvert item 3：not already 已经部署 / not 138 |
 | A6677 | 高 | 看见create revert is not already deployed 会被写成已经占址 interchangeable / 178 interchangeable | 官方 EIP-140 rvert item 3：not already 已经占址 / not 178 |

@@ -1,3 +1,6 @@
+- [`name-the-stcall-notchg-bar.md`](name-the-stcall-notchg-bar.md) — EIP-214 static-state-change not already applied / not already CALLCODE-value / not already 140 正式三事（178 余量）（不变量 1385）
+- [`name-the-stcall-notxfer-bar.md`](name-the-stcall-notxfer-bar.md) — EIP-214 zero-value-CALL not already static-flag / not already readonly / not already 214-bundled 正式三事（178 余量）（不变量 1384）
+- [`name-the-stcall-notview-bar.md`](name-the-stcall-notview-bar.md) — EIP-214 static-frame not already high-level-view / not already compiler-readonly / not already 178-bundled 正式三事（178 余量）（不变量 1383）
 - [`name-the-rvert-notdep-bar.md`](name-the-rvert-notdep-bar.md) — EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）（不变量 1382）
 - [`name-the-rvert-notfee-bar.md`](name-the-rvert-notfee-bar.md) — EIP-140 unpaid-self-fee not already leftover-semantics / not already 103 / not already free 正式三事（177 余量）（不变量 1381）
 - [`name-the-rvert-notburn-bar.md`](name-the-rvert-notburn-bar.md) — EIP-140 leftover-gas revert not already INVALID-burn / not already OOG-burn / not already 177-bundled 正式三事（177 余量）（不变量 1380）

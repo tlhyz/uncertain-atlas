@@ -1060,6 +1060,9 @@
 - [`worked-example-rvert-notfee-vs-bundled.md`](worked-example-rvert-notfee-vs-bundled.md) — 不够付回滚自己的费≠already 留下剩余气/103/免费；≠177 bundled（不变量 1381）
 - [`worked-example-rvert-notdep-vs-bundled.md`](worked-example-rvert-notdep-vs-bundled.md) — 创建里回滚≠already 部署/占址/另一条链 REVERTED；≠177 bundled（不变量 1382）
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）
+- [`worked-example-stcall-notview-vs-bundled.md`](worked-example-stcall-notview-vs-bundled.md) — 静态帧≠already 高级语言只读/编译器 view/178 bundled；≠178 bundled（不变量 1383）
+- [`worked-example-stcall-notxfer-vs-bundled.md`](worked-example-stcall-notxfer-vs-bundled.md) — 没转账的普通调用≠already 打开静态旗/只读/214 bundled；≠178 bundled（不变量 1384）
+- [`worked-example-stcall-notchg-vs-bundled.md`](worked-example-stcall-notchg-vs-bundled.md) — 静态帧里改状态≠already 改成/CALLCODE带值/140；≠178 bundled（不变量 1385）
 - [`worked-example-static-vs-view.md`](worked-example-static-vs-view.md) — 静态帧 ≠ 已经是高级语言只读；没转账 ≠ 已经静态；214 ≠ 140（不变量 178）
 - [`worked-example-psbt-vs-broadcast.md`](worked-example-psbt-vs-broadcast.md) — 看见部分签名包 ≠ 已经能广播；有几张签 ≠ 已经凑齐；174 ≠ 173 ≠ 125（不变量 179）
 - [`worked-example-psbtv2-vs-v0.md`](worked-example-psbtv2-vs-v0.md) — 看见后继版本工作包 ≠ 已经是旧版那份固定未签交易；能再加输入输出 ≠ 已经能广播；370 ≠ 174 ≠ 173 ≠ 125（不变量 186）
