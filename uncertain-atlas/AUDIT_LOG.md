@@ -1,3 +1,18 @@
+| A5120 | 记录 | 会与 431 / 35 / 1070 / 1071 糊成「看见 FinalizeBlockResponse.validator_updates 就已经在 H+1 换人 interchangeable、就已经改了集合 interchangeable、就已经必须回四列 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse.validator_updates not already h1-rotate / not already set-changed / not already four-col 正式三事（431 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。431 finrespbar vs header bundled unbundling 完成（1072 item 3） |
+| A5121 | 高 | 看见回了 validator_updates 会被写成已经在 H+1 换人 interchangeable / 35 interchangeable | 官方 Finalize 回包栏 item 3：not already h1-rotate / not 35 |
+| A5122 | 高 | 看见有 ValidatorUpdate 会被写成已经改了集合 interchangeable | 官方 Finalize 回包栏 item 3：not already set-changed |
+| A5123 | 高 | 看见能指下一份集合 会被写成已经必须回四列 interchangeable | 官方 Finalize 回包栏 item 3：not already four-col |
+| A5124 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Finalize 回包栏。不另写 19 节 |
+| A5115 | 记录 | 会与 431 / 316 / 1070 / 1072 糊成「看见 FinalizeBlockResponse.tx_results 就已经是 CheckTx 回包 interchangeable、就已经印进 LastResultsHash interchangeable、就已经只是记日志 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse.tx_results not already checktx-resp / not already resulthash / not already log-only 正式三事（431 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。431 finrespbar vs header bundled unbundling 续（1071 item 2） |
+| A5116 | 高 | 看见回了 tx_results 会被写成已经是 CheckTx 回包 interchangeable / 316 interchangeable | 官方 Finalize 回包栏 item 2：not already checktx-resp / not 316 |
+| A5117 | 高 | 看见有执行结果 会被写成已经印进 LastResultsHash interchangeable | 官方 Finalize 回包栏 item 2：not already resulthash |
+| A5118 | 高 | 看见 Deterministic 是 Yes 会被写成已经只是记日志 interchangeable | 官方 Finalize 回包栏 item 2：not already log-only |
+| A5119 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Finalize 回包栏。不另写 19 节 |
+| A5110 | 记录 | 会与 431 / 357 / 316 / 1071 / 1072 糊成「看见 FinalizeBlockResponse.events 就已经印进本头 interchangeable、就已经交给引擎 interchangeable、就已经必须确定 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse.events not already header-printed / not already engine-handed / not already must-det 正式三事（431 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。431 finrespbar vs header bundled unbundling 启动（1070 item 1） |
+| A5111 | 高 | 看见回了 events 会被写成已经印进本头 interchangeable / 357 interchangeable | 官方 Finalize 回包栏 item 1：not already header-printed / not 357 |
+| A5112 | 高 | 看见能指索引 会被写成已经交给引擎 interchangeable | 官方 Finalize 回包栏 item 1：not already engine-handed |
+| A5113 | 高 | 看见标成非确定 会被写成已经必须确定 interchangeable | 官方 Finalize 回包栏 item 1：not already must-det |
+| A5114 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Finalize 回包栏。不另写 19 节 |
 | A5105 | 记录 | 会与 430 / 347 / 1067 / 1068 糊成「看见应用 SHOULD 总是设 ACCEPT 就已经 honest proposal 必须 Accept interchangeable、就已经是 Req 3 已经测过 interchangeable、就已经四门默认 Accept interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposalResponse.status SHOULD Accept not already honest-must / not already req3-tested / not already four-gates 正式三事（430 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。430 procresp vs status bundled unbundling 完成（1069 item 3） |
 | A5106 | 高 | 看见 SHOULD 总是 Accept 会被写成已经 honest proposal 必须 Accept interchangeable / 347 interchangeable | 官方 Process 回包栏 item 3：not already honest-must / not 347 |
 | A5107 | 高 | 看见除非真的知道活性代价 会被写成已经是 Req 3 已经测过 interchangeable | 官方 Process 回包栏 item 3：not already req3-tested |

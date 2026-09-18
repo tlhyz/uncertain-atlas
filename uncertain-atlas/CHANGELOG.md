@@ -1,3 +1,15 @@
+## 2026-09-18（续 1189）
+
+- 不变量 1072；语料 C1050；模式 name-the-finbar-notrotate-bar；反模式 finbar-notrotate-sold-as-bundled；L10.3 第 1041 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse.validator_updates not already h1-rotate / not already set-changed / not already four-col 正式三事（431 余量）。431 finrespbar vs header bundled unbundling 完成（1072 item 3）。
+
+## 2026-09-18（续 1188）
+
+- 不变量 1071；语料 C1049；模式 name-the-finbar-notchktx-bar；反模式 finbar-notchktx-sold-as-bundled；L10.3 第 1040 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse.tx_results not already checktx-resp / not already resulthash / not already log-only 正式三事（431 余量）。431 finrespbar vs header bundled unbundling 续（1071 item 2）。
+
+## 2026-09-18（续 1187）
+
+- 不变量 1070；语料 C1048；模式 name-the-finbar-notheader-bar；反模式 finbar-notheader-sold-as-bundled；L10.3 第 1039 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse.events not already header-printed / not already engine-handed / not already must-det 正式三事（431 余量）。431 finrespbar vs header bundled unbundling 启动（1070 item 1）。
+
 ## 2026-09-18（续 1186）
 
 - 不变量 1069；语料 C1047；模式 name-the-presp-nothonest-bar；反模式 presp-nothonest-sold-as-bundled；L10.3 第 1038 条。填 L4.4 / CometBFT 档案 ProcessProposalResponse.status SHOULD Accept not already honest-must / not already req3-tested / not already four-gates 正式三事（430 余量）。430 procresp vs status bundled unbundling 完成（1069 item 3）。

@@ -1,3 +1,6 @@
+- [`finbar-notrotate-sold-as-bundled.md`](finbar-notrotate-sold-as-bundled.md) — validator_updates 被写成已经在 H+1 换人 / 已经改了集合 / 已经必须回四列（不变量 1072）
+- [`finbar-notchktx-sold-as-bundled.md`](finbar-notchktx-sold-as-bundled.md) — tx_results 被写成已经是 CheckTx 回包 / 已经印进 LastResultsHash / 已经只是记日志（不变量 1071）
+- [`finbar-notheader-sold-as-bundled.md`](finbar-notheader-sold-as-bundled.md) — events 被写成已经印进本头 / 已经交给引擎 / 已经必须确定（不变量 1070）
 - [`presp-nothonest-sold-as-bundled.md`](presp-nothonest-sold-as-bundled.md) — SHOULD Accept 被写成已经 honest must Accept / 已经是 Req 3 已经测过 / 已经四门默认 Accept（不变量 1069）
 - [`presp-notprep-sold-as-bundled.md`](presp-notprep-sold-as-bundled.md) — exclusive 被写成已经可以像 Prepare 那样 / 已经和对任意块同一裁决一回事 / 已经和对诚实提案同一裁决一回事（不变量 1068）
 - [`presp-notinvalid-sold-as-bundled.md`](presp-notinvalid-sold-as-bundled.md) — status 被写成已经当成块非法 / 已经不能整块执行候选 / 已经交差（不变量 1067）

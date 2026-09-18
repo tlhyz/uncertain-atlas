@@ -1,3 +1,6 @@
+- [`name-the-finbar-notrotate-bar.md`](name-the-finbar-notrotate-bar.md) — FinalizeBlockResponse.validator_updates not already h1-rotate / not already set-changed / not already four-col 正式三事（431 余量）（不变量 1072）
+- [`name-the-finbar-notchktx-bar.md`](name-the-finbar-notchktx-bar.md) — FinalizeBlockResponse.tx_results not already checktx-resp / not already resulthash / not already log-only 正式三事（431 余量）（不变量 1071）
+- [`name-the-finbar-notheader-bar.md`](name-the-finbar-notheader-bar.md) — FinalizeBlockResponse.events not already header-printed / not already engine-handed / not already must-det 正式三事（431 余量）（不变量 1070）
 - [`name-the-presp-nothonest-bar.md`](name-the-presp-nothonest-bar.md) — ProcessProposalResponse.status SHOULD Accept not already honest-must / not already req3-tested / not already four-gates 正式三事（430 余量）（不变量 1069）
 - [`name-the-presp-notprep-bar.md`](name-the-presp-notprep-bar.md) — ProcessProposalResponse.status exclusive dependence not already prepare-nondet / not already same-ruling / not already settled 正式三事（430 余量）（不变量 1068）
 - [`name-the-presp-notinvalid-bar.md`](name-the-presp-notinvalid-bar.md) — ProcessProposalResponse.status not already block-invalid / not already no-exec / not already settled 正式三事（430 余量）（不变量 1067）

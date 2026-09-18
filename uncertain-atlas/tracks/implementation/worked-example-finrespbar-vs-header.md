@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 Finalize 回包栏就已经印进本头、已经是 CheckTx 回包、已经在 H+1 换人」，必须分开 FinalizeBlockResponse.events 是给索引用的类型键值事件是不是已经印进本头、FinalizeBlockResponse.tx_results 是执行这块各笔交易得到的结果列表是不是已经是 CheckTx 回包、FinalizeBlockResponse.validator_updates 是对验证者集合的改动是不是已经在 H+1 换人。可以跳过「看见回了 Finalize 回包栏就已经印进本头」。不要另写怎样写 Finalize 回包栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 Finalize 回包栏就已经印进本头、已经是 CheckTx 回包、已经在 H+1 换人」，必须分开 FinalizeBlockResponse.events 是给索引用的类型键值事件是不是已经印进本头、FinalizeBlockResponse.tx_results 是执行这块各笔交易得到的结果列表是不是已经是 CheckTx 回包、FinalizeBlockResponse.validator_updates 是对验证者集合的改动是不是已经在 H+1 换人。可以跳过「看见回了 Finalize 回包栏就已经印进本头」。不要另写怎样写 Finalize 回包栏。431 finrespbar vs header bundled unbundling 完成（1070 item 1 / 1071 item 2 / 1072 item 3）；精读 [`worked-example-finbar-notheader-vs-bundled.md`](worked-example-finbar-notheader-vs-bundled.md)（不变量 1070 item 1）。
 
 ## 本页不抄
 
