@@ -1,3 +1,15 @@
+## 2026-09-18（续 1228）
+
+- 不变量 1111；语料 C1089；模式 name-the-ffields-notinfo-bar；反模式 ffields-notinfo-sold-as-bundled；L10.3 第 1080 条。填 L4.4 / CometBFT 档案 Info app-state-info not already handshake-aligned / not already snapshot-replay / not already settled 正式三事（407 余量）。407 finfields vs equiv bundled unbundling 完成（1111 item 3）。
+
+## 2026-09-18（续 1227）
+
+- 不变量 1110；语料 C1088；模式 name-the-ffields-notprep-bar；反模式 ffields-notprep-sold-as-bundled；L10.3 第 1079 条。填 L4.4 / CometBFT 档案 Finalize must-det state-machine not already like-Prepare / not already header-printed / not already settled 正式三事（407 余量）。407 finfields vs equiv bundled unbundling 续（1110 item 2）。
+
+## 2026-09-18（续 1226）
+
+- 不变量 1109；语料 C1087；模式 name-the-ffields-notfour-bar；反模式 ffields-notfour-sold-as-bundled；L10.3 第 1078 条。填 L4.4 / CometBFT 档案 Finalize just-decided-fields not already four-gates / not already processed / not already settled 正式三事（407 余量）。407 finfields vs equiv bundled unbundling 启动（1109 item 1）。
+
 ## 2026-09-18（续 1225）
 
 - 不变量 1108；语料 C1086；模式 name-the-sheight-notprove-bar；反模式 sheight-notprove-sold-as-bundled；L10.3 第 1077 条。填 L4.4 / CometBFT 档案 Query optional Merkle-proof not already apphash-aligned / not already prove-flagged / not already settled 正式三事（406 余量）。406 snapheight vs queryh bundled unbundling 完成（1108 item 3）。

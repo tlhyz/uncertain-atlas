@@ -645,6 +645,9 @@
 - [`worked-example-sheight-notmeta-vs-bundled.md`](worked-example-sheight-notmeta-vs-bundled.md) — metadata≠already all-fields-match/incrementally-verified/settled；≠406 bundled（不变量 1107）
 - [`worked-example-sheight-notqueryh-vs-bundled.md`](worked-example-sheight-notqueryh-vs-bundled.md) — Snapshot.height≠already Query-height/loaded/settled；≠406 bundled（不变量 1106）
 - [`worked-example-snapheight-vs-queryh.md`](worked-example-snapheight-vs-queryh.md) — Snapshot.height 是拍快照的高度（Commit 之后） ≠ 已经是 Query 高度；Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据 ≠ 已经全字段对上；Query 可以可选回默克尔证明 ≠ 已经对上 AppHash（不变量 406）
+- [`worked-example-ffields-notinfo-vs-bundled.md`](worked-example-ffields-notinfo-vs-bundled.md) — Info回应用状态≠already handshake-aligned/snapshot-replay/settled；≠407 bundled（不变量 1111）
+- [`worked-example-ffields-notprep-vs-bundled.md`](worked-example-ffields-notprep-vs-bundled.md) — Finalize必须确定≠already like-Prepare/header-printed/settled；≠407 bundled（不变量 1110）
+- [`worked-example-ffields-notfour-vs-bundled.md`](worked-example-ffields-notfour-vs-bundled.md) — 刚决定字段≠already four-gates/processed/settled；≠407 bundled（不变量 1109）
 - [`worked-example-finfields-vs-equiv.md`](worked-example-finfields-vs-equiv.md) — Finalize 含刚决定那块的字段 ≠ 已经是四门已经结算；Finalize 实现必须确定、因为它在状态机复制里推进应用状态 ≠ 已经可以像 Prepare 那样；Info 用来回应用状态信息 ≠ 已经是握手对齐（不变量 407）
 - [`worked-example-fintxs-vs-control.md`](worked-example-fintxs-vs-control.md) — Finalize 按应用自己的规则确定地执行 txs、再交还控制权 ≠ 已经交差；Process 含提案块上执行所需的全部信息 ≠ 已经是刚决定那块的字段；Process 可以像在处理 Finalize 那样整块执行 ≠ 已经是 ExecuteTxState（不变量 408）
 - [`worked-example-extpre-notlate-vs-bundled.md`](worked-example-extpre-notlate-vs-bundled.md) — ACCEPT留给h+1≠already late-verified/settled/must-reverify；≠409 bundled（不变量 1033）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 字段余量就已经是四门已经结算、已经可以像 Prepare 那样、已经是握手对齐」，必须分开 Finalize 含刚决定那块的字段是不是已经是四门已经结算、Finalize 实现必须确定、因为它在状态机复制里推进应用状态是不是已经可以像 Prepare 那样、Info 用来回应用状态信息是不是已经是握手对齐。可以跳过「看见填了 Finalize 字段余量就已经是四门已经结算」。不要另写怎样写 Finalize 字段余量。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 字段余量就已经是四门已经结算、已经可以像 Prepare 那样、已经是握手对齐」，必须分开 Finalize 含刚决定那块的字段是不是已经是四门已经结算、Finalize 实现必须确定、因为它在状态机复制里推进应用状态是不是已经可以像 Prepare 那样、Info 用来回应用状态信息是不是已经是握手对齐。可以跳过「看见填了 Finalize 字段余量就已经是四门已经结算」。不要另写怎样写 Finalize 字段余量。407 finfields vs equiv bundled unbundling 完成（1109 item 1 / 1110 item 2 / 1111 item 3）；精读 [`worked-example-ffields-notfour-vs-bundled.md`](worked-example-ffields-notfour-vs-bundled.md)（不变量 1109 item 1）。
 
 ## 本页不抄
 

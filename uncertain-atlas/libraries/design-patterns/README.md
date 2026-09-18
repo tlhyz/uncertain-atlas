@@ -1,3 +1,6 @@
+- [`name-the-ffields-notinfo-bar.md`](name-the-ffields-notinfo-bar.md) — Info app-state-info not already handshake-aligned / not already snapshot-replay / not already settled 正式三事（407 余量）（不变量 1111）
+- [`name-the-ffields-notprep-bar.md`](name-the-ffields-notprep-bar.md) — Finalize must-det state-machine not already like-Prepare / not already header-printed / not already settled 正式三事（407 余量）（不变量 1110）
+- [`name-the-ffields-notfour-bar.md`](name-the-ffields-notfour-bar.md) — Finalize just-decided-fields not already four-gates / not already processed / not already settled 正式三事（407 余量）（不变量 1109）
 - [`name-the-sheight-notprove-bar.md`](name-the-sheight-notprove-bar.md) — Query optional Merkle-proof not already apphash-aligned / not already prove-flagged / not already settled 正式三事（406 余量）（不变量 1108）
 - [`name-the-sheight-notmeta-bar.md`](name-the-sheight-notmeta-bar.md) — Snapshot.metadata arbitrary not already all-fields-match / not already incrementally-verified / not already settled 正式三事（406 余量）（不变量 1107）
 - [`name-the-sheight-notqueryh-bar.md`](name-the-sheight-notqueryh-bar.md) — Snapshot.height after-Commit not already Query-height / not already loaded / not already settled 正式三事（406 余量）（不变量 1106）

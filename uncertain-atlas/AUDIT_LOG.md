@@ -1,3 +1,18 @@
+| A5315 | 记录 | 会与 407 / 370 / 367 / 1109 / 1110 糊成「看见能回就已经是握手对齐 interchangeable、就已经是快照重放 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info app-state-info not already handshake-aligned / not already snapshot-replay / not already settled 正式三事（407 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。407 finfields vs equiv bundled unbundling 完成（1111 item 3） |
+| A5316 | 高 | 看见能回 会被写成已经是握手对齐 interchangeable / 370 interchangeable | 官方 Finalize 字段余量 item 3：not already handshake-aligned / not 370 |
+| A5317 | 高 | 看见写了应用状态 会被写成已经是快照重放 interchangeable / 367 interchangeable | 官方 Finalize 字段余量 item 3：not already snapshot-replay / not 367 |
+| A5318 | 高 | 看见能查 会被写成已经交差 interchangeable | 官方 Finalize 字段余量 item 3：not already settled |
+| A5319 | 中 | 怎样写字段余量会被抄进不确定 | 不抄。不写怎样写 Finalize 字段余量。不另写 19 节 |
+| A5310 | 记录 | 会与 407 / 342 / 338 / 1109 / 1111 糊成「看见必须确定就已经可以像 Prepare 那样 interchangeable、就已经印进本头 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize must-det state-machine not already like-Prepare / not already header-printed / not already settled 正式三事（407 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。407 finfields vs equiv bundled unbundling 续（1110 item 2） |
+| A5311 | 高 | 看见必须确定 会被写成已经可以像 Prepare 那样 interchangeable / 342 interchangeable | 官方 Finalize 字段余量 item 2：not already like-Prepare / not 342 |
+| A5312 | 高 | 看见在复制里推进 会被写成已经印进本头 interchangeable / 338 interchangeable | 官方 Finalize 字段余量 item 2：not already header-printed / not 338 |
+| A5313 | 高 | 看见能推进 会被写成已经交差 interchangeable | 官方 Finalize 字段余量 item 2：not already settled |
+| A5314 | 中 | 怎样写字段余量会被抄进不确定 | 不抄。不写怎样写 Finalize 字段余量。不另写 19 节 |
+| A5305 | 记录 | 会与 407 / 363 / 1099 / 1110 / 1111 糊成「看见填了字段就已经是四门已经结算 interchangeable、就已经跑过 Process interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize just-decided-fields not already four-gates / not already processed / not already settled 正式三事（407 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。407 finfields vs equiv bundled unbundling 启动（1109 item 1） |
+| A5306 | 高 | 看见填了字段 会被写成已经是四门已经结算 interchangeable / 363 interchangeable | 官方 Finalize 字段余量 item 1：not already four-gates / not 363 |
+| A5307 | 高 | 看见有刚决定那块 会被写成已经跑过 Process interchangeable / 1099 interchangeable | 官方 Finalize 字段余量 item 1：not already processed / not 1099 |
+| A5308 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 Finalize 字段余量 item 1：not already settled |
+| A5309 | 中 | 怎样写字段余量会被抄进不确定 | 不抄。不写怎样写 Finalize 字段余量。不另写 19 节 |
 | A5300 | 记录 | 会与 406 / 383 / 1101 / 1106 / 1107 糊成「看见能回证明就已经对上 AppHash interchangeable、就已经勾了 prove interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query optional Merkle-proof not already apphash-aligned / not already prove-flagged / not already settled 正式三事（406 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。406 snapheight vs queryh bundled unbundling 完成（1108 item 3） |
 | A5301 | 高 | 看见能回证明 会被写成已经对上 AppHash interchangeable / 383 interchangeable | 官方 Snapshot 高度余量 item 3：not already apphash-aligned / not 383 |
 | A5302 | 高 | 看见有证明 会被写成已经勾了 prove interchangeable / 1101 interchangeable | 官方 Snapshot 高度余量 item 3：not already prove-flagged / not 1101 |

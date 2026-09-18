@@ -1,3 +1,6 @@
+- [`ffields-notinfo-sold-as-bundled.md`](ffields-notinfo-sold-as-bundled.md) — Info 回应用状态 被写成已经是握手对齐 / 已经是快照重放 / 已经交差（不变量 1111）
+- [`ffields-notprep-sold-as-bundled.md`](ffields-notprep-sold-as-bundled.md) — Finalize 必须确定 被写成已经可以像 Prepare 那样 / 已经印进本头 / 已经交差（不变量 1110）
+- [`ffields-notfour-sold-as-bundled.md`](ffields-notfour-sold-as-bundled.md) — 刚决定字段 被写成已经是四门已经结算 / 已经跑过 Process / 已经交差（不变量 1109）
 - [`sheight-notprove-sold-as-bundled.md`](sheight-notprove-sold-as-bundled.md) — Query 可选证明 被写成已经对上 AppHash / 已经勾了 prove / 已经交差（不变量 1108）
 - [`sheight-notmeta-sold-as-bundled.md`](sheight-notmeta-sold-as-bundled.md) — metadata 被写成已经全字段对上 / 已经在装回当中增量验过 / 已经交差（不变量 1107）
 - [`sheight-notqueryh-sold-as-bundled.md`](sheight-notqueryh-sold-as-bundled.md) — Snapshot.height 被写成已经是 Query 高度 / 已经装完 / 已经交差（不变量 1106）
