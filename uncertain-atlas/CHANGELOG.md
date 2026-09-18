@@ -1,3 +1,7 @@
+## 2026-09-18（续 812）
+
+- 不变量 695；语料 C672；模式 name-the-checktxstate-notexecute-bar；反模式 checktxstate-notexecute-sold-as-bundled；L10.3 第 664 条。填 L4.4 / CometBFT 档案 CheckTxState 不是已经按 ExecuteTxState 验过 not already checked against ExecuteTxState / not already checked against to-be-executed state / not already same as ExecuteTxState after reset 正式三事（312 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。312 checktxstate vs execute bundled unbundling 启动（695 item 1）。
+
 ## 2026-09-18（续 811）
 
 - 不变量 694；语料 C671；模式 name-the-candidate-notdiscarded-bar；反模式 candidate-notdiscarded-sold-as-bundled；L10.3 第 663 条。填 L4.4 / CometBFT 档案丢掉候选 not already can unboundedly accumulate / not already never need re-execute / not already bound by spec 正式三事（311 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。311 candidate vs execute bundled unbundling 完成（692 + 693 + 694）。

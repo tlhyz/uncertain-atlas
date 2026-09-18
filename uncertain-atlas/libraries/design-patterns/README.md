@@ -1,3 +1,4 @@
+- [`name-the-checktxstate-notexecute-bar.md`](name-the-checktxstate-notexecute-bar.md) — CheckTxState 不是已经按 ExecuteTxState 验过 not already checked against ExecuteTxState / not already checked against to-be-executed state / not already same as ExecuteTxState after reset 正式三事（312 余量）（不变量 695）
 - [`name-the-candidate-notdiscarded-bar.md`](name-the-candidate-notdiscarded-bar.md) — 丢掉候选 not already can unboundedly accumulate / not already never need re-execute / not already bound by spec 正式三事（311 余量）（不变量 694）
 - [`name-the-candidate-notexecute-bar.md`](name-the-candidate-notexecute-bar.md) — 候选不是已经是 ExecuteTxState not already ExecuteTxState / not already can name this height final / not already settled 正式三事（311 余量）（不变量 693）
 - [`name-the-candidate-notheader-bar.md`](name-the-candidate-notheader-bar.md) — Prepare 没有头哈希 not already have header hash / not Prepare already had hash / not already decided block identity 正式三事（311 余量）（不变量 692）
