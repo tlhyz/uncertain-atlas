@@ -1,3 +1,6 @@
+- [`dcall-not7702-sold-as-bundled.md`](dcall-not7702-sold-as-bundled.md) — 可变代码源 被写成已经是 7702 / 就已经产品上线 / 就已经能靠调用数据复刻（不变量 1379）
+- [`dcall-notcall-sold-as-bundled.md`](dcall-notcall-sold-as-bundled.md) — 父作用域发送者传到子作用域 被写成已经是普通 CALL / 就已经有 CALL 津贴 / 就已经创建账户（不变量 1378）
+- [`dcall-notcode-sold-as-bundled.md`](dcall-notcode-sold-as-bundled.md) — 委托调用 被写成已经是 CALLCODE / 就已经是同一发送者的 CALLCODE / 就已经 Homestead 委托 bundled（不变量 1377）
 - [`viaext-notloc-sold-as-bundled.md`](viaext-notloc-sold-as-bundled.md) — ExtendedVoteInfo from local 被写成已经 typically from block / 就已经是 Process VoteInfo / 就已经 425 罚没（不变量 1376）
 - [`viaext-notblk-sold-as-bundled.md`](viaext-notblk-sold-as-bundled.md) — VoteInfo typically from block 被写成已经从本进程抽出 / 就已经是 Prepare Extended / 就已经 369（不变量 1375）
 - [`viaext-notrew-sold-as-bundled.md`](viaext-notrew-sold-as-bundled.md) — availability 同句 被写成已经奖罚完 / 就已经交差 / 就已经 Finalize 算完（不变量 1374）

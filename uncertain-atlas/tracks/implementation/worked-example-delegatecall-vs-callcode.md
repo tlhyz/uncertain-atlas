@@ -86,7 +86,7 @@
 | 经济 | 不另给基础津贴；看见本页不是计量墙已经取消 |
 
 **推断：** 产品句若只写「终于能做库了」，读者会把 CALLCODE 听成已经齐，或把可变代码源听成 7702 已经上线。  
-**建议：** 第一版可以不上委托调用。若对照，必须分开委托调用、CALLCODE、普通 CALL / 7702、调用数据复刻。不要发明「看见 7 就已经是 CALLCODE」。不要抄操作码号。不要写怎样做可变代码源或怎样拆代码绕过计量墙。
+**建议：** 第一版可以不上委托调用。若对照，必须分开委托调用、CALLCODE、普通 CALL / 7702、调用数据复刻。可以跳过「看见委托调用就已经是 CALLCODE」。233 DELEGATECALL four objects bundled unbundling 完成（1377 item 1 / 1378 item 2 / 1379 item 3）；精读 [`worked-example-dcall-notcode-vs-bundled.md`](worked-example-dcall-notcode-vs-bundled.md)（不变量 1377 item 1）、[`worked-example-dcall-notcall-vs-bundled.md`](worked-example-dcall-notcall-vs-bundled.md)（不变量 1378 item 2）、[`worked-example-dcall-not7702-vs-bundled.md`](worked-example-dcall-not7702-vs-bundled.md)（不变量 1379 item 3）。不要发明「看见 7 就已经是 CALLCODE」。不要抄操作码号。不要写怎样做可变代码源或怎样拆代码绕过计量墙。
 
 ---
 

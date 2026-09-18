@@ -1,3 +1,6 @@
+- [`name-the-dcall-not7702-bar.md`](name-the-dcall-not7702-bar.md) — EIP-7 mutable-code-source not already 7702 / not already product-shipped / not already calldata-replica 正式三事（233 余量）（不变量 1379）
+- [`name-the-dcall-notcall-bar.md`](name-the-dcall-notcall-bar.md) — EIP-7 parent-sender not already CALL / not already stipend / not already creates-account 正式三事（233 余量）（不变量 1378）
+- [`name-the-dcall-notcode-bar.md`](name-the-dcall-notcode-bar.md) — EIP-7 DELEGATECALL not already CALLCODE / not already same-sender-CALLCODE / not already 233-bundled 正式三事（233 余量）（不变量 1377）
 - [`name-the-viaext-notloc-bar.md`](name-the-viaext-notloc-bar.md) — ViAvail ExtendedVoteInfo from local process not already typically-from-block / not already Process VoteInfo / not already 425-flag 正式三事（442 余量）（不变量 1376）
 - [`name-the-viaext-notblk-bar.md`](name-the-viaext-notblk-bar.md) — ViAvail VoteInfo typically from block not already local-process / not already Prepare ExtendedVoteInfo / not already 369-path 正式三事（442 余量）（不变量 1375）
 - [`name-the-viaext-notrew-bar.md`](name-the-viaext-notrew-bar.md) — ViAvail availability same-sentence not already rewarded / not already settled / not already Finalize-computed 正式三事（442 余量）（不变量 1374）

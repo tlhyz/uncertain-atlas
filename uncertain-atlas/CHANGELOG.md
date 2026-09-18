@@ -1,3 +1,15 @@
+## 2026-09-18（续 1496）
+
+- 不变量 1379；语料 C1357；模式 name-the-dcall-not7702-bar；反模式 dcall-not7702-sold-as-bundled；L10.3 第 1348 条。填 L5.1 EIP-7 mutable-code-source not already 7702 / not already product-shipped / not already calldata-replica 正式三事（233 余量）。233 DELEGATECALL four objects bundled unbundling 完成（1379 item 3）。
+
+## 2026-09-18（续 1495）
+
+- 不变量 1378；语料 C1356；模式 name-the-dcall-notcall-bar；反模式 dcall-notcall-sold-as-bundled；L10.3 第 1347 条。填 L5.1 EIP-7 parent-sender not already CALL / not already stipend / not already creates-account 正式三事（233 余量）。233 DELEGATECALL four objects bundled unbundling 续（1378 item 2）。
+
+## 2026-09-18（续 1494）
+
+- 不变量 1377；语料 C1355；模式 name-the-dcall-notcode-bar；反模式 dcall-notcode-sold-as-bundled；L10.3 第 1346 条。填 L5.1 EIP-7 DELEGATECALL not already CALLCODE / not already same-sender-CALLCODE / not already 233-bundled 正式三事（233 余量）。233 DELEGATECALL four objects bundled unbundling 启动（1377 item 1）。
+
 ## 2026-09-18（续 1493）
 
 - 不变量 1376；语料 C1354；模式 name-the-viaext-notloc-bar；反模式 viaext-notloc-sold-as-bundled；L10.3 第 1345 条。填 L4.4 ViAvail ExtendedVoteInfo from local process not already typically-from-block / not already Process VoteInfo / not already 425-flag 正式三事（442 余量）。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 完成（1376 item 3）。
