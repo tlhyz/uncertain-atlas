@@ -1,3 +1,6 @@
+- [`ewbcast-notlc-sold-as-bundled.md`](ewbcast-notlc-sold-as-bundled.md) — 广播了 被写成已经写进 last_commit / 就已经 Verify 过迟到扩展 / 就已经是 438 bundled（不变量 1345）
+- [`ewbcast-notord-sold-as-bundled.md`](ewbcast-notord-sold-as-bundled.md) — step 7 顺序 被写成已经 construct CanonicalVote / 就已经 fill / 就已经 Verify 过（不变量 1344）
+- [`ewbcast-notpre-sold-as-bundled.md`](ewbcast-notpre-sold-as-bundled.md) — 广播 Precommit 被写成已经 constructs Precommit / 就已经是 438 bundled / 就已经 return extension（不变量 1343）
 - [`pacdef-not340-sold-as-bundled.md`](pacdef-not340-sold-as-bundled.md) — 默认 Accept 被写成已经是 456 bundled / 就已经是 340 通则 / 就已经 SHOULD always set（不变量 1342）
 - [`pacdef-notrej-sold-as-bundled.md`](pacdef-notrej-sold-as-bundled.md) — REJECT assumes not valid 被写成已经不能 Reject / 就已经是回包栏 / 就已经 455 assume（不变量 1341）
 - [`pacdef-notcant-sold-as-bundled.md`](pacdef-notcant-sold-as-bundled.md) — SHOULD Accept 默认策略 被写成已经是 456 bundled / 就不能 Reject / 就已经 MUST Accept（不变量 1340）

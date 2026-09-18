@@ -1,3 +1,6 @@
+- [`name-the-ewbcast-notlc-bar.md`](name-the-ewbcast-notlc-bar.md) — ExtWhenBcast broadcast not already last_commit / not already late-Verify / not already 438-bundled 正式三事（513 余量）（不变量 1345）
+- [`name-the-ewbcast-notord-bar.md`](name-the-ewbcast-notord-bar.md) — ExtWhenBcast step7-after-step6 not already construct-CanonicalVote / not already fill / not already Verify 正式三事（513 余量）（不变量 1344）
+- [`name-the-ewbcast-notpre-bar.md`](name-the-ewbcast-notpre-bar.md) — ExtWhenBcast broadcast not already construct-Precommit / not already 438-bundled / not already return-ext 正式三事（513 余量）（不变量 1343）
 - [`name-the-pacdef-not340-bar.md`](name-the-pacdef-not340-bar.md) — ProcAcceptDef default not already 456-bundled / not already 340-general / not already 530-always 正式三事（532 余量）（不变量 1342）
 - [`name-the-pacdef-notrej-bar.md`](name-the-pacdef-notrej-bar.md) — ProcAcceptDef REJECT-path not already can't-Reject / not already 430-bundled / not already 455-assume 正式三事（532 余量）（不变量 1341）
 - [`name-the-pacdef-notcant-bar.md`](name-the-pacdef-notcant-bar.md) — ProcAcceptDef default not already 456-bundled / not already can't-Reject / not already MUST-Accept 正式三事（532 余量）（不变量 1340）

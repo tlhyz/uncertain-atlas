@@ -1,3 +1,15 @@
+## 2026-09-18（续 1462）
+
+- 不变量 1345；语料 C1323；模式 name-the-ewbcast-notlc-bar；反模式 ewbcast-notlc-sold-as-bundled；L10.3 第 1314 条。填 L4.4 ExtWhenBcast broadcast not already last_commit / not already late-Verify / not already 438-bundled 正式三事（513 余量）。513 ExtendVote When broadcast Precommit bundled unbundling 完成（1345 item 3）。
+
+## 2026-09-18（续 1461）
+
+- 不变量 1344；语料 C1322；模式 name-the-ewbcast-notord-bar；反模式 ewbcast-notord-sold-as-bundled；L10.3 第 1313 条。填 L4.4 ExtWhenBcast step7-after-step6 not already construct-CanonicalVote / not already fill / not already Verify 正式三事（513 余量）。513 ExtendVote When broadcast Precommit bundled unbundling 续（1344 item 2）。
+
+## 2026-09-18（续 1460）
+
+- 不变量 1343；语料 C1321；模式 name-the-ewbcast-notpre-bar；反模式 ewbcast-notpre-sold-as-bundled；L10.3 第 1312 条。填 L4.4 ExtWhenBcast broadcast not already construct-Precommit / not already 438-bundled / not already return-ext 正式三事（513 余量）。513 ExtendVote When broadcast Precommit bundled unbundling 启动（1343 item 1）。
+
 ## 2026-09-18（续 1459）
 
 - 不变量 1342；语料 C1320；模式 name-the-pacdef-not340-bar；反模式 pacdef-not340-sold-as-bundled；L10.3 第 1311 条。填 L4.4 ProcAcceptDef default not already 456-bundled / not already 340-general / not already 530-always 正式三事（532 余量）。532 ProcessProposal Usage SHOULD Accept default bundled unbundling 完成（1342 item 3）。

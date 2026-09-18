@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ExtendVote When broadcast Precommit 正式三事，必须分开 broadcasts Precommit 是不是 construct Precommit bundled interchangeable、step 7 after step 6 是不是 construct CanonicalVote interchangeable / fill bundled interchangeable、broadcasts 是不是已经写进 last_commit interchangeable / 已经 Verify 过迟到扩展 interchangeable。可以跳过「看见构造了 Precommit 就已经写进 last_commit interchangeable、已经 Verify 过迟到扩展 interchangeable、已经 ExtendVote 回了 extension 就已经交差 interchangeable」。不要另写怎样广播 Precommit。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ExtendVote When broadcast Precommit 正式三事，必须分开 broadcasts Precommit 是不是 construct Precommit bundled interchangeable、step 7 after step 6 是不是 construct CanonicalVote interchangeable / fill bundled interchangeable、broadcasts 是不是已经写进 last_commit interchangeable / 已经 Verify 过迟到扩展 interchangeable。可以跳过「看见构造了 Precommit 就已经写进 last_commit interchangeable、已经 Verify 过迟到扩展 interchangeable、已经 ExtendVote 回了 extension 就已经交差 interchangeable」。513 ExtendVote When broadcast Precommit bundled unbundling 完成（1343 item 1 / 1344 item 2 / 1345 item 3）；精读 [`worked-example-ewbcast-notpre-vs-bundled.md`](worked-example-ewbcast-notpre-vs-bundled.md)（不变量 1343 item 1）、[`worked-example-ewbcast-notord-vs-bundled.md`](worked-example-ewbcast-notord-vs-bundled.md)（不变量 1344 item 2）、[`worked-example-ewbcast-notlc-vs-bundled.md`](worked-example-ewbcast-notlc-vs-bundled.md)（不变量 1345 item 3）。不要另写怎样广播 Precommit。
 
 ## 本页不抄
 
