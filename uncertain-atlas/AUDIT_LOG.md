@@ -1,3 +1,18 @@
+| A5470 | 记录 | 会与 289 / 280 / 287 / 1139 / 1140 糊成「看见这一输入的微调就已经能扫整棵钱包 interchangeable、就已经是盲签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-89 this-input-tweak not already whole-tree / not already blind-sign / not already settled 正式三事（289 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。289 delegation vs xpub bundled unbundling 完成（1141 item 3） |
+| A5471 | 高 | 看见这一输入的微调 会被写成已经能扫整棵钱包 interchangeable / 280 interchangeable | 官方 BIP-89 链码委托 item 3：not already whole-tree / not 280 |
+| A5472 | 高 | 看见能签 会被写成已经是盲签 interchangeable / 287 interchangeable | 官方 BIP-89 链码委托 item 3：not already blind-sign / not 287 |
+| A5473 | 高 | 看见签过了 会被写成已经交差 interchangeable | 官方 BIP-89 链码委托 item 3：not already settled |
+| A5474 | 中 | 怎样做委托微调或盲签会被抄进不确定 | 不抄。不写怎样做委托微调或盲签。不另写 19 节 |
+| A5465 | 记录 | 会与 289 / 283 / 1138 / 1139 / 1141 糊成「看见委托方那把非扩展钥对就已经是扩展公钥 interchangeable、就已经能推出整棵钱包 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-89 delegator-plain-key not already xpub / not already whole-wallet / not already settled 正式三事（289 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。289 delegation vs xpub bundled unbundling 续（1140 item 2） |
+| A5466 | 高 | 看见委托方那把非扩展钥对 会被写成已经是扩展公钥 interchangeable / 283 interchangeable | 官方 BIP-89 链码委托 item 2：not already xpub / not 283 |
+| A5467 | 高 | 看见受托方有扩展公钥 会被写成已经能推出整棵钱包 interchangeable / 1138 interchangeable | 官方 BIP-89 链码委托 item 2：not already whole-wallet / not 1138 |
+| A5468 | 高 | 看见从这份扩展钥往下长只能走未硬化派生 会被写成已经交差 interchangeable | 官方 BIP-89 链码委托 item 2：not already settled |
+| A5469 | 中 | 怎样做委托微调或盲签会被抄进不确定 | 不抄。不写怎样做委托微调或盲签。不另写 19 节 |
+| A5460 | 记录 | 会与 289 / 182 / 283 / 1140 / 1141 糊成「看见共享了扩展公钥就已经是本页 interchangeable、就已经藏住余额 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-89 shared-xpub not already chaincode-delegation / not already hide-balance / not already settled 正式三事（289 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。289 delegation vs xpub bundled unbundling 启动（1139 item 1） |
+| A5461 | 高 | 看见共享了扩展公钥 会被写成已经是本页 interchangeable / 182 interchangeable | 官方 BIP-89 链码委托 item 1：not already chaincode-delegation / not 182 |
+| A5462 | 高 | 看见共享了扩展公钥 会被写成已经藏住余额 interchangeable / 283 interchangeable | 官方 BIP-89 链码委托 item 1：not already hide-balance / not 283 |
+| A5463 | 高 | 看见能共签 会被写成已经交差 interchangeable | 官方 BIP-89 链码委托 item 1：not already settled |
+| A5464 | 中 | 怎样做委托微调或盲签会被抄进不确定 | 不抄。不写怎样做委托微调或盲签。不另写 19 节 |
 | A5455 | 记录 | 会与 272 / 184 / 1126 / 1136 / 1137 糊成「看见种子备份就已经能找回单钥 P2TR interchangeable、就已经不必再写本页 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-86 seed-backup not already recover-p2tr / not already skip-this-page / not already settled 正式三事（272 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。272 derived vs output-key bundled unbundling 完成（1138 item 3） |
 | A5456 | 高 | 看见种子备份 会被写成已经能找回单钥 P2TR interchangeable / 184 interchangeable | 官方 BIP-86 单钥 P2TR item 3：not already recover-p2tr / not 184 |
 | A5457 | 高 | 看见已有描述符 会被写成已经不必再写本页 interchangeable / 1126 interchangeable | 官方 BIP-86 单钥 P2TR item 3：not already skip-this-page / not 1126 |

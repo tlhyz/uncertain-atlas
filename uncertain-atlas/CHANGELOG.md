@@ -1,3 +1,15 @@
+## 2026-09-18（续 1258）
+
+- 不变量 1141；语料 C1119；模式 name-the-del89-notblind-bar；反模式 del89-notblind-sold-as-bundled；L10.3 第 1110 条。填 L1.4 / L3.6 BIP-89 this-input-tweak not already whole-tree / not already blind-sign / not already settled 正式三事（289 余量）。289 delegation vs xpub bundled unbundling 完成（1141 item 3）。
+
+## 2026-09-18（续 1257）
+
+- 不变量 1140；语料 C1118；模式 name-the-del89-nottree-bar；反模式 del89-nottree-sold-as-bundled；L10.3 第 1109 条。填 L1.4 / L3.6 BIP-89 delegator-plain-key not already xpub / not already whole-wallet / not already settled 正式三事（289 余量）。289 delegation vs xpub bundled unbundling 续（1140 item 2）。
+
+## 2026-09-18（续 1256）
+
+- 不变量 1139；语料 C1117；模式 name-the-del89-notshare-bar；反模式 del89-notshare-sold-as-bundled；L10.3 第 1108 条。填 L1.4 / L3.6 BIP-89 shared-xpub not already chaincode-delegation / not already hide-balance / not already settled 正式三事（289 余量）。289 delegation vs xpub bundled unbundling 启动（1139 item 1）。
+
 ## 2026-09-18（续 1255）
 
 - 不变量 1138；语料 C1116；模式 name-the-tap86-notseed-bar；反模式 tap86-notseed-sold-as-bundled；L10.3 第 1107 条。填 L1.4 / L3.6 BIP-86 seed-backup not already recover-p2tr / not already skip-this-page / not already settled 正式三事（272 余量）。272 derived vs output-key bundled unbundling 完成（1138 item 3）。

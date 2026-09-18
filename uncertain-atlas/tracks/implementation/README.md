@@ -827,6 +827,9 @@
 - [`worked-example-entropy-vs-seed.md`](worked-example-entropy-vs-seed.md) — 一份助记词 ≠ 已经能备齐所有钱包；扩展根钥 ≠ 已经能倒回助记词；派生出的熵 ≠ 已经是目标钱包的种子（不变量 286）
 - [`worked-example-setup-vs-psbt.md`](worked-example-setup-vs-psbt.md) — 部分签名包 ≠ 已经是跨厂安全多签开户；指纹对上 ≠ 已经核过 KEY；TOKEN ≠ 已经是钱包种子（不变量 287）
 - [`worked-example-template-vs-path.md`](worked-example-template-vs-path.md) — 一条派生路径 ≠ 已经是一份路径模板；写死了熟路径检查 ≠ 已经能互操作；完整模板 ≠ 已经是半截模板（不变量 288）
+- [`worked-example-del89-notblind-vs-bundled.md`](worked-example-del89-notblind-vs-bundled.md) — 这一输入微调≠already whole-tree/blind-sign/settled；≠289 bundled（不变量 1141）
+- [`worked-example-del89-nottree-vs-bundled.md`](worked-example-del89-nottree-vs-bundled.md) — 委托方非扩展钥≠already xpub/whole-wallet/settled；≠289 bundled（不变量 1140）
+- [`worked-example-del89-notshare-vs-bundled.md`](worked-example-del89-notshare-vs-bundled.md) — 共享扩展公钥≠already chaincode-delegation/hide-balance/settled；≠289 bundled（不变量 1139）
 - [`worked-example-delegation-vs-xpub.md`](worked-example-delegation-vs-xpub.md) — 共享了扩展公钥 ≠ 已经是链码委托；委托方那把非扩展钥 ≠ 已经能推出整棵钱包；这一输入的微调 ≠ 已经是盲签（不变量 289）
 - [`../lifecycle/worked-example-payjoin-vs-original.md`](../lifecycle/worked-example-payjoin-vs-original.md) — 带 pj= 的付款 URI ≠ 已经是 payjoin 付款；原始包 ≠ 已经是提案；收款方加了输入 ≠ 已经另开一笔（不变量 290）
 - [`worked-example-order-vs-lex.md`](worked-example-order-vs-lex.md) — 自家习惯的输入输出顺序 ≠ 已经是字典序标准；按字典序排了 ≠ 已经是共识 / ≠ 已经私人（不变量 291）

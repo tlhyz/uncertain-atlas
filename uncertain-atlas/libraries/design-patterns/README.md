@@ -1,3 +1,6 @@
+- [`name-the-del89-notblind-bar.md`](name-the-del89-notblind-bar.md) — BIP-89 this-input-tweak not already whole-tree / not already blind-sign / not already settled 正式三事（289 余量）（不变量 1141）
+- [`name-the-del89-nottree-bar.md`](name-the-del89-nottree-bar.md) — BIP-89 delegator-plain-key not already xpub / not already whole-wallet / not already settled 正式三事（289 余量）（不变量 1140）
+- [`name-the-del89-notshare-bar.md`](name-the-del89-notshare-bar.md) — BIP-89 shared-xpub not already chaincode-delegation / not already hide-balance / not already settled 正式三事（289 余量）（不变量 1139）
 - [`name-the-tap86-notseed-bar.md`](name-the-tap86-notseed-bar.md) — BIP-86 seed-backup not already recover-p2tr / not already skip-this-page / not already settled 正式三事（272 余量）（不变量 1138）
 - [`name-the-tap86-notcommit-bar.md`](name-the-tap86-notcommit-bar.md) — BIP-86 no-script-path-needed not already uncommitted / not already no-script-path / not already settled 正式三事（272 余量）（不变量 1137）
 - [`name-the-tap86-notout-bar.md`](name-the-tap86-notout-bar.md) — BIP-86 derived-key not already output-key / not already witness-32 / not already settled 正式三事（272 余量）（不变量 1136）

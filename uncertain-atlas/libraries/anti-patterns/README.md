@@ -1,3 +1,6 @@
+- [`del89-notblind-sold-as-bundled.md`](del89-notblind-sold-as-bundled.md) — 这一输入微调 被写成已经能扫整棵钱包 / 已经是盲签 / 已经交差（不变量 1141）
+- [`del89-nottree-sold-as-bundled.md`](del89-nottree-sold-as-bundled.md) — 委托方非扩展钥 被写成已经是扩展公钥 / 已经能推出整棵钱包 / 已经交差（不变量 1140）
+- [`del89-notshare-sold-as-bundled.md`](del89-notshare-sold-as-bundled.md) — 共享扩展公钥 被写成已经是本页 / 已经藏住余额 / 已经交差（不变量 1139）
 - [`tap86-notseed-sold-as-bundled.md`](tap86-notseed-sold-as-bundled.md) — 种子备份 被写成已经能找回单钥 P2TR / 已经不必再写本页 / 已经交差（不变量 1138）
 - [`tap86-notcommit-sold-as-bundled.md`](tap86-notcommit-sold-as-bundled.md) — 不需要脚本路径 被写成已经不承诺 / 已经没有脚本路径 / 已经交差（不变量 1137）
 - [`tap86-notout-sold-as-bundled.md`](tap86-notout-sold-as-bundled.md) — 派生钥 被写成已经是输出钥 / 已经是见证 32 字节 / 已经交差（不变量 1136）

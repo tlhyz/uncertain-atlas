@@ -1,3 +1,9 @@
+| C1119 | 1141 | del89 notblind≠280/289 | 文案把这一输入的微调 / 一次签名会话 写成已经能扫整棵钱包 interchangeable 或已经和 280 interchangeable / 1141 del89-notblind interchangeable；或把看见能签 写成已经是盲签 interchangeable；或把看见签过了 写成已经交差 interchangeable，或已经和 289 delegation-vs-xpub bundled / del89-notblind-sold-as-bundled interchangeable / 1139 del89-notshare interchangeable / 1140 del89-nottree interchangeable |
+
+| C1118 | 1140 | del89 nottree≠283/289 | 文案把委托方那把非扩展钥对 写成已经是扩展公钥 interchangeable 或已经和 283 interchangeable / 1140 del89-nottree interchangeable；或把看见受托方有扩展公钥 写成已经能推出整棵钱包 interchangeable；或把看见从这份扩展钥往下长只能走未硬化派生 写成已经交差 interchangeable，或已经和 289 delegation-vs-xpub bundled / del89-nottree-sold-as-bundled interchangeable / 1139 del89-notshare interchangeable / 1141 del89-notblind interchangeable |
+
+| C1117 | 1139 | del89 notshare≠182/289 | 文案把共享了扩展公钥 / 共享了描述符 写成已经是本页 interchangeable 或已经和 182 interchangeable / 1139 del89-notshare interchangeable；或把看见共享了扩展公钥 写成已经藏住余额 interchangeable；或把看见能共签 写成已经交差 interchangeable，或已经和 289 delegation-vs-xpub bundled / del89-notshare-sold-as-bundled interchangeable / 1140 del89-nottree interchangeable / 1141 del89-notblind interchangeable |
+
 | C1116 | 1138 | tap86 notseed≠184/272 | 文案把种子备份 / 已有描述符方案 写成已经能找回单钥 P2TR interchangeable 或已经和 184 interchangeable / 1138 tap86-notseed interchangeable；或把看见已有描述符 写成已经不必再写本页 interchangeable；或把看见本页按设计不向后兼容 写成已经交差 interchangeable，或已经和 272 derived-vs-output-key bundled / tap86-notseed-sold-as-bundled interchangeable / 1136 tap86-notout interchangeable / 1137 tap86-notcommit interchangeable |
 
 | C1115 | 1137 | tap86 notcommit≠189/272 | 文案把不需要脚本路径 / 单钥 写成已经不承诺脚本路径 interchangeable 或已经和 189 interchangeable / 1137 tap86-notcommit interchangeable；或把看见单钥 写成已经是没有脚本路径那种输出 interchangeable；或把看见仍应当承诺一条不可花的脚本路径 写成已经交差 interchangeable，或已经和 272 derived-vs-output-key bundled / tap86-notcommit-sold-as-bundled interchangeable / 1136 tap86-notout interchangeable / 1138 tap86-notseed interchangeable |
