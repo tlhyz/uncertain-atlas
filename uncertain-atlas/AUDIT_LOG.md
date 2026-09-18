@@ -1,3 +1,18 @@
+| A6705 | 记录 | 会与 232 / 177 / 3 / 1386 / 1387 糊成「看见失败数据能再取不是已经是 140就已经是 EIP-140 interchangeable、就输出区已经自动够大 interchangeable、就通用转发产品已经上线 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-211 refetch-fail-data not already 140 / not already auto-sized-out / not already forwarder-product 正式三事（232 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。232 returndata buffer vs memory bundled unbundling 完成（1388 item 3） |
+| A6706 | 高 | 看见失败数据能再取不是已经是 140 会被写成已经是 EIP-140 interchangeable / 177 interchangeable | 官方 EIP-211 rdata item 3：not already 已经是 EIP-140 / not 177 |
+| A6707 | 高 | 看见refetch fail data is not already 140 会被写成输出区已经自动够大 interchangeable / 3 interchangeable | 官方 EIP-211 rdata item 3：not already 输出区已经自动够大 / not 3 |
+| A6708 | 高 | 看见失败数据能再取不是已经是 140 会被写成通用转发产品已经上线 interchangeable | 官方 EIP-211 rdata item 3：not already settled |
+| A6709 | 中 | 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备会被抄进不确定 | 不抄。不写 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备。不另写 19 节 |
+| A6700 | 记录 | 会与 232 / 217 / 231 / 1386 / 1388 糊成「看见本页不是已经是 calldata就已经是 calldata interchangeable、就已经用两次调用先问长度 interchangeable、就下一次类调用之后缓冲还在 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-211 this-page not already calldata / not already two-call-length / not already still-after-next 正式三事（232 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。232 returndata buffer vs memory bundled unbundling 续（1387 item 2） |
+| A6701 | 高 | 看见本页不是已经是 calldata 会被写成已经是 calldata interchangeable / 217 interchangeable | 官方 EIP-211 rdata item 2：not already 已经是 calldata / not 217 |
+| A6702 | 高 | 看见this page is not already calldata 会被写成已经用两次调用先问长度 interchangeable / 231 interchangeable | 官方 EIP-211 rdata item 2：not already 已经用两次调用先问长度 / not 231 |
+| A6703 | 高 | 看见本页不是已经是 calldata 会被写成下一次类调用之后缓冲还在 interchangeable | 官方 EIP-211 rdata item 2：not already settled |
+| A6704 | 中 | 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备会被抄进不确定 | 不抄。不写 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备。不另写 19 节 |
+| A6695 | 记录 | 会与 232 / 177 / 216 / 1387 / 1388 糊成「看见返回数据缓冲不是已经是内存就已经是内存 interchangeable、就已经是 CALL 预留输出区 interchangeable、就已经 232 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-211 returndata-buffer not already memory / not already CALL-out / not already 232-bundled 正式三事（232 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。232 returndata buffer vs memory bundled unbundling 启动（1386 item 1） |
+| A6696 | 高 | 看见返回数据缓冲不是已经是内存 会被写成已经是内存 interchangeable / 177 interchangeable | 官方 EIP-211 rdata item 1：not already 已经是内存 / not 177 |
+| A6697 | 高 | 看见returndata buffer is not already memory 会被写成已经是 CALL 预留输出区 interchangeable / 216 interchangeable | 官方 EIP-211 rdata item 1：not already 已经是 CALL 预留输出区 / not 216 |
+| A6698 | 高 | 看见返回数据缓冲不是已经是内存 会被写成已经 232 bundled interchangeable | 官方 EIP-211 rdata item 1：not already settled |
+| A6699 | 中 | 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备会被抄进不确定 | 不抄。不写 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备。不另写 19 节 |
 | A6690 | 记录 | 会与 178 / 160 / 177 / 1383 / 1384 糊成「看见静态帧里改状态不是已经改成就已经改成 interchangeable、就已经和 CALLCODE 带值同一盏灯 interchangeable、就已经是 140 回滚 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-214 static-state-change not already applied / not already CALLCODE-value / not already 140 正式三事（178 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。178 STATICCALL flag vs view bundled unbundling 完成（1385 item 3） |
 | A6691 | 高 | 看见静态帧里改状态不是已经改成 会被写成已经改成 interchangeable / 160 interchangeable | 官方 EIP-214 stcall item 3：not already 已经改成 / not 160 |
 | A6692 | 高 | 看见static state change is not already applied 会被写成已经和 CALLCODE 带值同一盏灯 interchangeable / 177 interchangeable | 官方 EIP-214 stcall item 3：not already 已经和 CALLCODE 带值同一盏灯 / not 177 |

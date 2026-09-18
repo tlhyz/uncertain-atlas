@@ -1,3 +1,6 @@
+- [`rdata-not140-sold-as-bundled.md`](rdata-not140-sold-as-bundled.md) — 失败数据能再取 被写成已经是 140 / 就已经输出区自动够大 / 就已经转发产品上线（不变量 1388）
+- [`rdata-notcalld-sold-as-bundled.md`](rdata-notcalld-sold-as-bundled.md) — 本页 被写成已经是 calldata / 就已经用两次调用先问长度 / 就已经下次调用后还在（不变量 1387）
+- [`rdata-notmem-sold-as-bundled.md`](rdata-notmem-sold-as-bundled.md) — 返回数据缓冲 被写成已经是内存 / 就已经是 CALL 预留输出区 / 就已经 232 bundled（不变量 1386）
 - [`stcall-notchg-sold-as-bundled.md`](stcall-notchg-sold-as-bundled.md) — 静态帧里改状态 被写成已经改成 / 就已经和 CALLCODE 带值同一盏灯 / 就已经是 140（不变量 1385）
 - [`stcall-notxfer-sold-as-bundled.md`](stcall-notxfer-sold-as-bundled.md) — 没转账的普通调用 被写成已经打开静态旗 / 就已经只读 / 就已经 214 bundled（不变量 1384）
 - [`stcall-notview-sold-as-bundled.md`](stcall-notview-sold-as-bundled.md) — 静态帧 被写成已经是高级语言只读 / 就已经是编译器 view / 就已经 178 bundled（不变量 1383）

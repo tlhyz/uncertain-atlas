@@ -1,3 +1,15 @@
+## 2026-09-18（续 1505）
+
+- 不变量 1388；语料 C1366；模式 name-the-rdata-not140-bar；反模式 rdata-not140-sold-as-bundled；L10.3 第 1357 条。填 L5.1 EIP-211 refetch-fail-data not already 140 / not already auto-sized-out / not already forwarder-product 正式三事（232 余量）。232 returndata buffer vs memory bundled unbundling 完成（1388 item 3）。
+
+## 2026-09-18（续 1504）
+
+- 不变量 1387；语料 C1365；模式 name-the-rdata-notcalld-bar；反模式 rdata-notcalld-sold-as-bundled；L10.3 第 1356 条。填 L5.1 EIP-211 this-page not already calldata / not already two-call-length / not already still-after-next 正式三事（232 余量）。232 returndata buffer vs memory bundled unbundling 续（1387 item 2）。
+
+## 2026-09-18（续 1503）
+
+- 不变量 1386；语料 C1364；模式 name-the-rdata-notmem-bar；反模式 rdata-notmem-sold-as-bundled；L10.3 第 1355 条。填 L5.1 EIP-211 returndata-buffer not already memory / not already CALL-out / not already 232-bundled 正式三事（232 余量）。232 returndata buffer vs memory bundled unbundling 启动（1386 item 1）。
+
 ## 2026-09-18（续 1502）
 
 - 不变量 1385；语料 C1363；模式 name-the-stcall-notchg-bar；反模式 stcall-notchg-sold-as-bundled；L10.3 第 1354 条。填 L5.1 EIP-214 static-state-change not already applied / not already CALLCODE-value / not already 140 正式三事（178 余量）。178 STATICCALL flag vs view bundled unbundling 完成（1385 item 3）。

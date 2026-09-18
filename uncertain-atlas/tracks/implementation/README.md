@@ -1000,6 +1000,9 @@
 - [`worked-example-selfbalance-vs-balance.md`](worked-example-selfbalance-vs-balance.md) — 看见本账户余额指令 ≠ 已经是按地址查余额；看见给自己查余额 ≠ 已经按本账户价扣；看见树依赖涨价 ≠ 已经是本笔冷热 / 已经是磁盘 O(1)；1884 ≠ 2929 ≠ 169 ≠ 101 ≠ 150（不变量 229）
 - [`worked-example-blake2f-vs-hash.md`](worked-example-blake2f-vs-hash.md) — 看见 BLAKE2 压缩函数 F ≠ 已经是 BLAKE2b 哈希；看见本页 ≠ 已经能验 Equihash / 已经是中继 / 已经有隐私；152 ≠ keccak / SHA3（不变量 230）
 - [`worked-example-shift-vs-arithmetic.md`](worked-example-shift-vs-arithmetic.md) — 看见原生移位指令 ≠ 已经用算术拼过移位；看见算术右移 ≠ 已经是有符号除；看见更便宜 ≠ 已经是位域打包产品；145 ≠ 已经改了旧字节码（不变量 231）
+- [`worked-example-rdata-notmem-vs-bundled.md`](worked-example-rdata-notmem-vs-bundled.md) — 返回数据缓冲≠already 内存/CALL预留输出区/232 bundled；≠232 bundled（不变量 1386）
+- [`worked-example-rdata-notcalld-vs-bundled.md`](worked-example-rdata-notcalld-vs-bundled.md) — 本页≠already calldata/两次调用先问长度/下次调用后还在；≠232 bundled（不变量 1387）
+- [`worked-example-rdata-not140-vs-bundled.md`](worked-example-rdata-not140-vs-bundled.md) — 失败数据能再取≠already 140/输出区自动够大/转发产品；≠232 bundled（不变量 1388）
 - [`worked-example-returndata-vs-memory.md`](worked-example-returndata-vs-memory.md) — 看见返回数据缓冲 ≠ 已经是内存；看见本页 ≠ 已经是 calldata / 已经用两次调用先问长度；看见失败数据能再取 ≠ 已经是 140；下一次类调用 ≠ 缓冲还在（不变量 232）
 - [`worked-example-dcall-notcode-vs-bundled.md`](worked-example-dcall-notcode-vs-bundled.md) — 委托调用≠already CALLCODE/同一发送者CALLCODE/233 bundled；≠233 bundled（不变量 1377）
 - [`worked-example-dcall-notcall-vs-bundled.md`](worked-example-dcall-notcall-vs-bundled.md) — 父作用域发送者传到子作用域≠already CALL/津贴/创建账户；≠233 bundled（不变量 1378）
