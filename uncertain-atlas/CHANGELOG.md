@@ -1,3 +1,15 @@
+## 2026-09-18（续 1273）
+
+- 不变量 1156；语料 C1134；模式 name-the-ma387-notsort-bar；反模式 ma387-notsort-sold-as-bundled；L10.3 第 1125 条。填 L1.4 / L3.6 BIP-387 sortedmulti_a not already 383-sort / not already same-key-class / not already settled 正式三事（278 余量）。278 multi_a vs tr bundled unbundling 完成（1156 item 3）。
+
+## 2026-09-18（续 1272）
+
+- 不变量 1155；语料 C1133；模式 name-the-ma387-notenc-bar；反模式 ma387-notenc-sold-as-bundled；L10.3 第 1124 条。填 L1.4 / L3.6 BIP-387 threshold not already same-encoding / not already 383-outer-keycap / not already settled 正式三事（278 余量）。278 multi_a vs tr bundled unbundling 续（1155 item 2）。
+
+## 2026-09-18（续 1271）
+
+- 不变量 1154；语料 C1132；模式 name-the-ma387-not383-bar；反模式 ma387-not383-sold-as-bundled；L10.3 第 1123 条。填 L1.4 / L3.6 BIP-387 multi_a not already 383-multi / not already toplevel / not already nestable-in-sh-wsh 正式三事（278 余量）。278 multi_a vs tr bundled unbundling 启动（1154 item 1）。
+
 ## 2026-09-18（续 1270）
 
 - 不变量 1153；语料 C1131；模式 name-the-wpkh382-notwit-bar；反模式 wpkh382-notwit-sold-as-bundled；L10.3 第 1122 条。填 L1.4 / L3.6 BIP-382 wsh-output not already have-witness-script / not already 381-redeem / not already settled 正式三事（277 余量）。277 wpkh vs compressed bundled unbundling 完成（1153 item 3）。

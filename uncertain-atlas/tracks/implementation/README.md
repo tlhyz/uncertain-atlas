@@ -825,6 +825,9 @@
 - [`worked-example-wpkh382-notuncomp-vs-bundled.md`](worked-example-wpkh382-notuncomp-vs-bundled.md) — 未压缩钥≠already allowed-in-wpkh/allowed-under-wsh/settled；≠277 bundled（不变量 1152）
 - [`worked-example-wpkh382-nottop-vs-bundled.md`](worked-example-wpkh382-nottop-vs-bundled.md) — wpkh/wsh≠already toplevel-only/nestable-in-wsh/settled；≠277 bundled（不变量 1151）
 - [`worked-example-wpkh-vs-compressed.md`](worked-example-wpkh-vs-compressed.md) — wpkh / wsh ≠ 已经只能顶层；未压缩钥 ≠ 已经允许；wsh 产出 ≠ 已经有见证脚本（不变量 277）
+- [`worked-example-ma387-notsort-vs-bundled.md`](worked-example-ma387-notsort-vs-bundled.md) — sortedmulti_a≠already 383-sort/same-key-class/settled；≠278 bundled（不变量 1156）
+- [`worked-example-ma387-notenc-vs-bundled.md`](worked-example-ma387-notenc-vs-bundled.md) — 门限≠already same-encoding/383-outer-keycap/settled；≠278 bundled（不变量 1155）
+- [`worked-example-ma387-not383-vs-bundled.md`](worked-example-ma387-not383-vs-bundled.md) — multi_a≠already 383-multi/toplevel/nestable-in-sh-wsh；≠278 bundled（不变量 1154）
 - [`worked-example-multia-vs-tr.md`](worked-example-multia-vs-tr.md) — multi_a ≠ 已经是 383 那种 multi；门限 ≠ 已经同一套编码；sortedmulti_a ≠ 已经是 383 那种排序（不变量 278）
 - [`worked-example-tap-psbt-vs-old.md`](worked-example-tap-psbt-vs-old.md) — 旧 PSBT 栏 ≠ 已经能装 Taproot；输出脚本里的钥 ≠ 已经是内部钥；Taproot 输入 ≠ 已经必须带整笔前交易（不变量 279）
 - [`worked-example-policy-vs-descriptor.md`](worked-example-policy-vs-descriptor.md) — 钱包策略 ≠ 已经是一条描述符；钥占位 ≠ 已经是那把精确公钥；登记过 ≠ 已经批准这笔花（不变量 280）

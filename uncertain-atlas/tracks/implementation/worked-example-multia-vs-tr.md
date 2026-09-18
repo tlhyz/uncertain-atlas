@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出 tapscript 多签描述符，必须分开只许在 `tr` 里、门限编码分档、x-only 排序。可以跳过「看见又一种 multi 就已经是 383」。若对照，必须分开本页排序和 383 那种排序。不要另写怎样按 x-only 排公钥。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出 tapscript 多签描述符，必须分开只许在 `tr` 里、门限编码分档、x-only 排序。可以跳过「看见又一种 multi 就已经是 383」。若对照，必须分开本页排序和 383 那种排序。不要另写怎样按 x-only 排公钥。278 multi_a vs tr bundled unbundling 完成（1154 item 1 / 1155 item 2 / 1156 item 3）；精读 [`worked-example-ma387-not383-vs-bundled.md`](worked-example-ma387-not383-vs-bundled.md)（不变量 1154 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,18 @@
+| A5545 | 记录 | 会与 278 / 1142 / 1147 / 1154 / 1155 糊成「看见 sortedmulti_a 就已经是 383 那种排序 interchangeable、就已经排的是同一类钥 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-387 sortedmulti_a not already 383-sort / not already same-key-class / not already settled 正式三事（278 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。278 multi_a vs tr bundled unbundling 完成（1156 item 3） |
+| A5546 | 高 | 看见 sortedmulti_a 会被写成已经是 383 那种排序 interchangeable / 1142 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 3：not already 383-sort / not 1142 |
+| A5547 | 高 | 看见排的是公钥 会被写成已经排的是同一类钥 interchangeable / 1147 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 3：not already same-key-class / not 1147 |
+| A5548 | 高 | 看见按字典序排 x-only 会被写成已经交差 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 3：not already settled |
+| A5549 | 中 | 怎样按 x-only 排公钥会被抄进不确定 | 不抄。不写怎样按 x-only 排公钥。不另写 19 节 |
+| A5540 | 记录 | 会与 278 / 1143 / 184 / 1154 / 1156 糊成「看见门限就已经同一套编码 interchangeable、就已经是 383 外层钥数界 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-387 threshold not already same-encoding / not already 383-outer-keycap / not already settled 正式三事（278 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。278 multi_a vs tr bundled unbundling 续（1155 item 2） |
+| A5541 | 高 | 看见门限 会被写成已经同一套编码 interchangeable / 1143 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 2：not already same-encoding / not 1143 |
+| A5542 | 高 | 看见 383 按外层限钥数 会被写成已经是本页 interchangeable / 184 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 2：not already 383-outer-keycap / not 184 |
+| A5543 | 高 | 看见钥数另有一把上限 会被写成已经交差 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 2：not already settled |
+| A5544 | 中 | 怎样按 x-only 排公钥会被抄进不确定 | 不抄。不写怎样按 x-only 排公钥。不另写 19 节 |
+| A5535 | 记录 | 会与 278 / 1142 / 1145 / 1155 / 1156 糊成「看见 multi_a 就已经是 383 那种 multi interchangeable、就已经能当顶层 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-387 multi_a not already 383-multi / not already toplevel / not already nestable-in-sh-wsh 正式三事（278 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。278 multi_a vs tr bundled unbundling 启动（1154 item 1） |
+| A5536 | 高 | 看见 multi_a 会被写成已经是 383 那种 multi interchangeable / 1142 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 1：not already 383-multi / not 1142 |
+| A5537 | 高 | 看见能套进描述符 会被写成已经能当顶层 interchangeable / 1145 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 1：not already toplevel / not 1145 |
+| A5538 | 高 | 看见只能写在 tr 里面 会被写成已经交差 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 1：not already nestable-in-sh-wsh |
+| A5539 | 中 | 怎样按 x-only 排公钥会被抄进不确定 | 不抄。不写怎样按 x-only 排公钥。不另写 19 节 |
 | A5530 | 记录 | 会与 277 / 1149 / 170 / 1151 / 1152 糊成「看见 wsh 产出就已经有见证脚本 interchangeable、就已经是 381 赎回 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-382 wsh-output not already have-witness-script / not already 381-redeem / not already settled 正式三事（277 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。277 wpkh vs compressed bundled unbundling 完成（1153 item 3） |
 | A5531 | 高 | 看见 wsh 产出 会被写成已经有见证脚本 interchangeable / 1149 interchangeable | 官方 BIP-382 隔离见证描述符 item 3：not already have-witness-script / not 1149 |
 | A5532 | 高 | 看见 381 另造了赎回脚本 会被写成已经是本页这份见证脚本 interchangeable / 170 interchangeable | 官方 BIP-382 隔离见证描述符 item 3：not already 381-redeem / not 170 |

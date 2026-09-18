@@ -1,3 +1,6 @@
+- [`name-the-ma387-notsort-bar.md`](name-the-ma387-notsort-bar.md) — BIP-387 sortedmulti_a not already 383-sort / not already same-key-class / not already settled 正式三事（278 余量）（不变量 1156）
+- [`name-the-ma387-notenc-bar.md`](name-the-ma387-notenc-bar.md) — BIP-387 threshold not already same-encoding / not already 383-outer-keycap / not already settled 正式三事（278 余量）（不变量 1155）
+- [`name-the-ma387-not383-bar.md`](name-the-ma387-not383-bar.md) — BIP-387 multi_a not already 383-multi / not already toplevel / not already nestable-in-sh-wsh 正式三事（278 余量）（不变量 1154）
 - [`name-the-wpkh382-notwit-bar.md`](name-the-wpkh382-notwit-bar.md) — BIP-382 wsh-output not already have-witness-script / not already 381-redeem / not already settled 正式三事（277 余量）（不变量 1153）
 - [`name-the-wpkh382-notuncomp-bar.md`](name-the-wpkh382-notuncomp-bar.md) — BIP-382 uncompressed-key not already allowed-in-wpkh / not already allowed-under-wsh / not already settled 正式三事（277 余量）（不变量 1152）
 - [`name-the-wpkh382-nottop-bar.md`](name-the-wpkh382-nottop-bar.md) — BIP-382 wpkh-wsh not already toplevel-only / not already nestable-in-wsh / not already settled 正式三事（277 余量）（不变量 1151）

@@ -1,3 +1,6 @@
+- [`ma387-notsort-sold-as-bundled.md`](ma387-notsort-sold-as-bundled.md) — sortedmulti_a 被写成已经是 383 那种排序 / 已经排的是同一类钥 / 已经交差（不变量 1156）
+- [`ma387-notenc-sold-as-bundled.md`](ma387-notenc-sold-as-bundled.md) — 门限 被写成已经同一套编码 / 已经是 383 外层钥数界 / 已经交差（不变量 1155）
+- [`ma387-not383-sold-as-bundled.md`](ma387-not383-sold-as-bundled.md) — multi_a 被写成已经是 383 那种 multi / 已经能当顶层 / 已经交差（不变量 1154）
 - [`wpkh382-notwit-sold-as-bundled.md`](wpkh382-notwit-sold-as-bundled.md) — wsh 产出 被写成已经有见证脚本 / 已经是 381 赎回 / 已经交差（不变量 1153）
 - [`wpkh382-notuncomp-sold-as-bundled.md`](wpkh382-notuncomp-sold-as-bundled.md) — 未压缩钥 被写成已经允许进 wpkh / 已经允许出现在 wsh 下面 / 已经交差（不变量 1152）
 - [`wpkh382-nottop-sold-as-bundled.md`](wpkh382-nottop-sold-as-bundled.md) — wpkh/wsh 被写成已经只能顶层 / 已经能再套进 wsh / 已经交差（不变量 1151）
