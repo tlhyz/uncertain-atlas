@@ -1,3 +1,6 @@
+- [`c63-notcap-sold-as-bundled.md`](c63-notcap-sold-as-bundled.md) — 建议气限 被写成已经是协议帽 / 官网吞吐就已经是事实 / 就已经改了共识帽（不变量 1300）
+- [`c63-notoog-sold-as-bundled.md`](c63-notoog-sold-as-bundled.md) — 问超了 被写成已经耗尽气 / 63/64 就已经没有深度上限 / 就已经把父帧气全给子执行（不变量 1299）
+- [`c63-notprice-sold-as-bundled.md`](c63-notprice-sold-as-bundled.md) — 读树涨价 被写成磁盘已经常数时间 / 就已经写了后来树依赖涨价 / 就已经写了本笔冷热（不变量 1298）
 - [`udiff-notden-sold-as-bundled.md`](udiff-notden-sold-as-bundled.md) — 改了分母 被写成已经量过墙钟 / 官网吞吐就已经是事实 / 就已经写了后来推迟炸弹（不变量 1297）
 - [`udiff-notcount-sold-as-bundled.md`](udiff-notcount-sold-as-bundled.md) — 头上叔块哈希不是空 被写成已经数清 / 能调难度就已经按个数调 / 就已经看整块（不变量 1296）
 - [`udiff-notbomb-sold-as-bundled.md`](udiff-notbomb-sold-as-bundled.md) — 难度把叔块算进去 被写成已经改奖励 / 已经 Homestead 朝均值 / 就已经没有炸弹（不变量 1295）

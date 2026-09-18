@@ -1,3 +1,15 @@
+## 2026-09-18（续 1417）
+
+- 不变量 1300；语料 C1278；模式 name-the-c63-notcap-bar；反模式 c63-notcap-sold-as-bundled；L10.3 第 1269 条。填 L5.1 EIP-150 gaslimit not already protocol-cap / not already throughput / not already consensus-cap 正式三事（237 余量）。237 call 63rds vs oog bundled unbundling 完成（1300 item 3）。
+
+## 2026-09-18（续 1416）
+
+- 不变量 1299；语料 C1277；模式 name-the-c63-notoog-bar；反模式 c63-notoog-sold-as-bundled；L10.3 第 1268 条。填 L5.1 EIP-150 63rds not already oog / not already no-depth / not already all-parent 正式三事（237 余量）。237 call 63rds vs oog bundled unbundling 续（1299 item 2）。
+
+## 2026-09-18（续 1415）
+
+- 不变量 1298；语料 C1276；模式 name-the-c63-notprice-bar；反模式 c63-notprice-sold-as-bundled；L10.3 第 1267 条。填 L5.1 EIP-150 reprice not already disk-O1 / not already 1884 / not already cold-hot 正式三事（237 余量）。237 call 63rds vs oog bundled unbundling 启动（1298 item 1）。
+
 ## 2026-09-18（续 1414）
 
 - 不变量 1297；语料 C1275；模式 name-the-udiff-notden-bar；反模式 udiff-notden-sold-as-bundled；L10.3 第 1266 条。填 L3.1 EIP-100 denom not already wall-clock / not already throughput / not already later-fork 正式三事（238 余量）。238 uncle diff vs header bundled unbundling 完成（1297 item 3）。

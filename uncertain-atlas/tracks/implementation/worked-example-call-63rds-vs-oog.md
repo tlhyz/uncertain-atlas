@@ -45,7 +45,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见读树涨价就已经齐了 / 看见问超了就已经耗尽气 / 看见软深度就已经没有深度 / 看见建议气限就已经是协议帽」。子调用能拿多少气，必须写成共识对象，不能靠「剩下的再减一截」。官网吞吐不得当事实。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见读树涨价就已经齐了 / 看见问超了就已经耗尽气 / 看见软深度就已经没有深度 / 看见建议气限就已经是协议帽」。子调用能拿多少气，必须写成共识对象，不能靠「剩下的再减一截」。237 call 63rds vs oog bundled unbundling 完成（1298 item 1 / 1299 item 2 / 1300 item 3）；精读 [`worked-example-c63-notprice-vs-bundled.md`](worked-example-c63-notprice-vs-bundled.md)（不变量 1298 item 1）、[`worked-example-c63-notoog-vs-bundled.md`](worked-example-c63-notoog-vs-bundled.md)（不变量 1299 item 2）、[`worked-example-c63-notcap-vs-bundled.md`](worked-example-c63-notcap-vs-bundled.md)（不变量 1300 item 3）。官网吞吐不得当事实。
 
 ## 本页不抄
 

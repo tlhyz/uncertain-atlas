@@ -1,3 +1,18 @@
+| A6265 | 记录 | 会与 237 / 211 / 160 / 1298 / 1299 糊成「看见建议目标就已经是协议帽 interchangeable、就官网吞吐已经是事实 interchangeable、就已经改了共识帽 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-150 gaslimit not already protocol-cap / not already throughput / not already consensus-cap 正式三事（237 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。237 call 63rds vs oog bundled unbundling 完成（1300 item 3） |
+| A6266 | 高 | 看见建议目标 会被写成已经是协议帽 interchangeable / 211 interchangeable | 官方 EIP-150 c63 item 3：not already 已经是协议帽 / not 211 |
+| A6267 | 高 | 看见软限制 会被写成官网吞吐已经是事实 interchangeable / 160 interchangeable | 官方 EIP-150 c63 item 3：not already 官网吞吐已经是事实 / not 160 |
+| A6268 | 高 | 看见建议目标 会被写成已经改了共识帽 interchangeable | 官方 EIP-150 c63 item 3：not already settled |
+| A6269 | 中 | 怎样造读树垃圾交易，怎样按「剩下的再减一截」复刻旧合约，怎样打满一块会被抄进不确定 | 不抄。不写 怎样造读树垃圾交易，怎样按「剩下的再减一截」复刻旧合约，怎样打满一块。不另写 19 节 |
+| A6260 | 记录 | 会与 237 / 101 / 211 / 1298 / 1300 糊成「看见问超了就已经耗尽气 interchangeable、就已经没有调用深度上限 interchangeable、就已经把父帧气全给了子执行 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-150 63rds not already oog / not already no-depth / not already all-parent 正式三事（237 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。237 call 63rds vs oog bundled unbundling 续（1299 item 2） |
+| A6261 | 高 | 看见问超了 会被写成已经耗尽气 interchangeable / 101 interchangeable | 官方 EIP-150 c63 item 2：not already 已经耗尽气 / not 101 |
+| A6262 | 高 | 看见去掉六十四分之一 会被写成已经没有调用深度上限 interchangeable / 211 interchangeable | 官方 EIP-150 c63 item 2：not already 已经没有调用深度上限 / not 211 |
+| A6263 | 高 | 看见问超了 会被写成已经把父帧气全给了子执行 interchangeable | 官方 EIP-150 c63 item 2：not already settled |
+| A6264 | 中 | 怎样造读树垃圾交易，怎样按「剩下的再减一截」复刻旧合约，怎样打满一块会被抄进不确定 | 不抄。不写 怎样造读树垃圾交易，怎样按「剩下的再减一截」复刻旧合约，怎样打满一块。不另写 19 节 |
+| A6255 | 记录 | 会与 237 / 229 / 169 / 1299 / 1300 糊成「看见读树涨价就磁盘已经是常数时间 interchangeable、就已经写了后来那次树依赖涨价 interchangeable、就已经写了本笔冷热 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-150 reprice not already disk-O1 / not already 1884 / not already cold-hot 正式三事（237 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。237 call 63rds vs oog bundled unbundling 启动（1298 item 1） |
+| A6256 | 高 | 看见读树涨价 会被写成磁盘已经是常数时间 interchangeable / 229 interchangeable | 官方 EIP-150 c63 item 1：not already 磁盘已经是常数时间 / not 229 |
+| A6257 | 高 | 看见本页 会被写成已经写了后来那次树依赖涨价 interchangeable / 169 interchangeable | 官方 EIP-150 c63 item 1：not already 已经写了后来那次树依赖涨价 / not 169 |
+| A6258 | 高 | 看见读树涨价 会被写成已经写了本笔冷热 interchangeable | 官方 EIP-150 c63 item 1：not already settled |
+| A6259 | 中 | 怎样造读树垃圾交易，怎样按「剩下的再减一截」复刻旧合约，怎样打满一块会被抄进不确定 | 不抄。不写 怎样造读树垃圾交易，怎样按「剩下的再减一截」复刻旧合约，怎样打满一块。不另写 19 节 |
 | A6250 | 记录 | 会与 238 / 234 / 163 / 1295 / 1296 糊成「看见改了分母就已经量过不确定的墙钟 interchangeable、就官网吞吐已经是事实 interchangeable、就已经写了后来那些推迟炸弹 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 EIP-100 denom not already wall-clock / not already throughput / not already later-fork 正式三事（238 余量）/ 共识表 / 停链面地图。不写进 `index/03` 状态行、M5.4、L5.1、L5.4、05b。238 uncle diff vs header bundled unbundling 完成（1297 item 3） |
 | A6251 | 高 | 看见改了分母 会被写成已经量过不确定的墙钟 interchangeable / 234 interchangeable | 官方 EIP-100 udiff item 3：not already 已经量过不确定的墙钟 / not 234 |
 | A6252 | 高 | 看见可预期 会被写成官网吞吐已经是事实 interchangeable / 163 interchangeable | 官方 EIP-100 udiff item 3：not already 官网吞吐已经是事实 / not 163 |
