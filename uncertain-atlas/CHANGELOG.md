@@ -1,3 +1,7 @@
+## 2026-09-18（续 822）
+
+- 不变量 705；语料 C682；模式 name-the-maxgas-notgasused-bar；反模式 maxgas-notgasused-sold-as-bundled；L10.3 第 674 条。填 L4.4 / CometBFT 档案 GasUsed 不是已经算进共识 not already in consensus / not already practical-gas checked / not already engine-enforced inequality 正式三事（315 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。315 maxgas vs enforced bundled unbundling 续（705 item 2）。
+
 ## 2026-09-18（续 821）
 
 - 不变量 704；语料 C681；模式 name-the-maxgas-notenforced-bar；反模式 maxgas-notenforced-sold-as-bundled；L10.3 第 673 条。填 L4.4 / CometBFT 档案 MaxGas 不是已经在执行 not already enforcing / not already MaxBytes synonym / not already fee market 正式三事（315 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。315 maxgas vs enforced bundled unbundling 启动（704 item 1）。
