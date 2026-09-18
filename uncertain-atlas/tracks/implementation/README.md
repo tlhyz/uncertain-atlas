@@ -873,6 +873,9 @@
 - [`worked-example-del89-nottree-vs-bundled.md`](worked-example-del89-nottree-vs-bundled.md) — 委托方非扩展钥≠already xpub/whole-wallet/settled；≠289 bundled（不变量 1140）
 - [`worked-example-del89-notshare-vs-bundled.md`](worked-example-del89-notshare-vs-bundled.md) — 共享扩展公钥≠already chaincode-delegation/hide-balance/settled；≠289 bundled（不变量 1139）
 - [`worked-example-delegation-vs-xpub.md`](worked-example-delegation-vs-xpub.md) — 共享了扩展公钥 ≠ 已经是链码委托；委托方那把非扩展钥 ≠ 已经能推出整棵钱包；这一输入的微调 ≠ 已经是盲签（不变量 289）
+- [`../lifecycle/worked-example-pj78-notmerge-vs-bundled.md`](../lifecycle/worked-example-pj78-notmerge-vs-bundled.md) — 加输入≠already other-tx/network-private/settled；≠290 bundled（不变量 1186）
+- [`../lifecycle/worked-example-pj78-notorig-vs-bundled.md`](../lifecycle/worked-example-pj78-notorig-vs-bundled.md) — 原始包≠already proposal/payjoin-tx/settled；≠290 bundled（不变量 1185）
+- [`../lifecycle/worked-example-pj78-noturi-vs-bundled.md`](../lifecycle/worked-example-pj78-noturi-vs-bundled.md) — pj= URI≠already payjoin-payment/original/settled；≠290 bundled（不变量 1184）
 - [`../lifecycle/worked-example-payjoin-vs-original.md`](../lifecycle/worked-example-payjoin-vs-original.md) — 带 pj= 的付款 URI ≠ 已经是 payjoin 付款；原始包 ≠ 已经是提案；收款方加了输入 ≠ 已经另开一笔（不变量 290）
 - [`worked-example-order-vs-lex.md`](worked-example-order-vs-lex.md) — 自家习惯的输入输出顺序 ≠ 已经是字典序标准；按字典序排了 ≠ 已经是共识 / ≠ 已经私人（不变量 291）
 - [`worked-example-testnet4-vs-testnet3.md`](worked-example-testnet4-vs-testnet3.md) — Testnet 4 ≠ 已经是 Testnet 3；20 分钟例外 ≠ 已经没有块风暴；会 Testnet 3 ≠ 已经能安全跟（不变量 292）

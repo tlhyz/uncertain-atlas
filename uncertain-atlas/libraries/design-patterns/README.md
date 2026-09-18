@@ -1,3 +1,6 @@
+- [`name-the-pj78-notmerge-bar.md`](name-the-pj78-notmerge-bar.md) — BIP-78 added-input not already other-tx / not already network-private / not already settled 正式三事（290 余量）（不变量 1186）
+- [`name-the-pj78-notorig-bar.md`](name-the-pj78-notorig-bar.md) — BIP-78 original not already proposal / not already payjoin-tx / not already settled 正式三事（290 余量）（不变量 1185）
+- [`name-the-pj78-noturi-bar.md`](name-the-pj78-noturi-bar.md) — BIP-78 pj-uri not already payjoin-payment / not already original / not already settled 正式三事（290 余量）（不变量 1184）
 - [`name-the-tmpl88-notfull-bar.md`](name-the-tmpl88-notfull-bar.md) — BIP-88 full-template not already half-template / not already same-path / not already settled 正式三事（288 余量）（不变量 1183）
 - [`name-the-tmpl88-nothard-bar.md`](name-the-tmpl88-nothard-bar.md) — BIP-88 hardcoded-check not already interoperable / not already blocks-wild / not already settled 正式三事（288 余量）（不变量 1182）
 - [`name-the-tmpl88-notpath-bar.md`](name-the-tmpl88-notpath-bar.md) — BIP-88 one-path not already path-template / not already unambiguous / not already settled 正式三事（288 余量）（不变量 1181）

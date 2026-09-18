@@ -36,7 +36,7 @@ HTTP 配方、加费公式、发送方/收款方核对清单、怎样构造或�
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果让收款方往付款里加输入，必须分开 URI 上的端点、原始包、提案、payjoin 交易。可以跳过「看见 pj= 就已经是 payjoin 付款」。若对照，必须分开端点、原始包 / 提案 / 交易、加输入不是另开一笔。不要另写怎样构造提案或怎样加费。
+**建议（产品，不是事实）**：不确定第一条结算机如果让收款方往付款里加输入，必须分开 URI 上的端点、原始包、提案、payjoin 交易。可以跳过「看见 pj= 就已经是 payjoin 付款」。若对照，必须分开端点、原始包 / 提案 / 交易、加输入不是另开一笔。不要另写怎样构造提案或怎样加费。290 payjoin vs original bundled unbundling 完成（1184 item 1 / 1185 item 2 / 1186 item 3）；精读 [`worked-example-pj78-noturi-vs-bundled.md`](worked-example-pj78-noturi-vs-bundled.md)（不变量 1184 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,18 @@
+| A5695 | 记录 | 会与 290 / 144 / 255 / 1184 / 1185 糊成「看见收款方加了输入就已经另开一笔 interchangeable、就已经对全网私人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-78 added-input not already other-tx / not already network-private / not already settled 正式三事（290 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。290 payjoin vs original bundled unbundling 完成（1186 item 3） |
+| A5696 | 高 | 看见收款方加了输入 会被写成已经另开一笔 interchangeable / 144 interchangeable | 官方 BIP-78 payjoin item 3：not already other-tx / not 144 |
+| A5697 | 高 | 看见提案存在 会被写成已经对全网私人 interchangeable / 255 interchangeable | 官方 BIP-78 payjoin item 3：not already network-private / not 255 |
+| A5698 | 高 | 看见一笔 payjoin 交易 会被写成已经交差 interchangeable | 官方 BIP-78 payjoin item 3：not already settled |
+| A5699 | 中 | 怎样构造提案或怎样加费会被抄进不确定 | 不抄。不写怎样构造提案或怎样加费。不另写 19 节 |
+| A5690 | 记录 | 会与 290 / 179 / 166 / 1184 / 1186 糊成「看见原始包就已经是提案 interchangeable、就已经是 Payjoin 交易 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-78 original not already proposal / not already payjoin-tx / not already settled 正式三事（290 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。290 payjoin vs original bundled unbundling 续（1185 item 2） |
+| A5691 | 高 | 看见原始包 会被写成已经是 Payjoin 提案 interchangeable / 179 interchangeable | 官方 BIP-78 payjoin item 2：not already proposal / not 179 |
+| A5692 | 高 | 看见提案 会被写成已经是 Payjoin 交易 interchangeable / 166 interchangeable | 官方 BIP-78 payjoin item 2：not already payjoin-tx / not 166 |
+| A5693 | 高 | 看见一份能广播的原始包 会被写成已经交差 interchangeable | 官方 BIP-78 payjoin item 2：not already settled |
+| A5694 | 中 | 怎样构造提案或怎样加费会被抄进不确定 | 不抄。不写怎样构造提案或怎样加费。不另写 19 节 |
+| A5685 | 记录 | 会与 290 / 255 / 179 / 1185 / 1186 糊成「看见带 pj= 的付款 URI 就已经是 payjoin 付款 interchangeable、就已经有原始包 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-78 pj-uri not already payjoin-payment / not already original / not already settled 正式三事（290 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。290 payjoin vs original bundled unbundling 启动（1184 item 1） |
+| A5686 | 高 | 看见带 pj= 的付款 URI 会被写成已经是 payjoin 付款 interchangeable / 255 interchangeable | 官方 BIP-78 payjoin item 1：not already payjoin-payment / not 255 |
+| A5687 | 高 | 看见端点 会被写成已经有原始包 interchangeable / 179 interchangeable | 官方 BIP-78 payjoin item 1：not already original / not 179 |
+| A5688 | 高 | 看见 pjos=0 会被写成已经交差 interchangeable | 官方 BIP-78 payjoin item 1：not already settled |
+| A5689 | 中 | 怎样构造提案或怎样加费会被抄进不确定 | 不抄。不写怎样构造提案或怎样加费。不另写 19 节 |
 | A5680 | 记录 | 会与 288 / 182 / 1176 / 1181 / 1182 糊成「看见完整模板就已经是半截模板 interchangeable、就已经是同一条路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-88 full-template not already half-template / not already same-path / not already settled 正式三事（288 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。288 template vs path bundled unbundling 完成（1183 item 3） |
 | A5681 | 高 | 看见完整模板 会被写成已经是半截模板 interchangeable / 182 interchangeable | 官方 BIP-88 路径模板 item 3：not already half-template / not 182 |
 | A5682 | 高 | 看见模板长度对上 会被写成已经是同一条路径 interchangeable / 1176 interchangeable | 官方 BIP-88 路径模板 item 3：not already same-path / not 1176 |

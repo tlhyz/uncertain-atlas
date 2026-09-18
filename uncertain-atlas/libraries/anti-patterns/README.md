@@ -1,3 +1,6 @@
+- [`pj78-notmerge-sold-as-bundled.md`](pj78-notmerge-sold-as-bundled.md) — 加输入 被写成已经另开一笔 / 已经对全网私人 / 已经交差（不变量 1186）
+- [`pj78-notorig-sold-as-bundled.md`](pj78-notorig-sold-as-bundled.md) — 原始包 被写成已经是提案 / 已经是 Payjoin 交易 / 已经交差（不变量 1185）
+- [`pj78-noturi-sold-as-bundled.md`](pj78-noturi-sold-as-bundled.md) — pj= URI 被写成已经是 payjoin 付款 / 已经有原始包 / 已经交差（不变量 1184）
 - [`tmpl88-notfull-sold-as-bundled.md`](tmpl88-notfull-sold-as-bundled.md) — 完整模板 被写成已经是半截模板 / 已经是同一条路径 / 已经交差（不变量 1183）
 - [`tmpl88-nothard-sold-as-bundled.md`](tmpl88-nothard-sold-as-bundled.md) — 写死了熟路径检查 被写成已经能互操作 / 已经挡住乱派生 / 已经交差（不变量 1182）
 - [`tmpl88-notpath-sold-as-bundled.md`](tmpl88-notpath-sold-as-bundled.md) — 一条派生路径 被写成已经是一份路径模板 / 已经能被软件无歧义解析 / 已经交差（不变量 1181）

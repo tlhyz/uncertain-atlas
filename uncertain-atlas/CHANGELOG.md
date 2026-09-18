@@ -1,3 +1,15 @@
+## 2026-09-18（续 1303）
+
+- 不变量 1186；语料 C1164；模式 name-the-pj78-notmerge-bar；反模式 pj78-notmerge-sold-as-bundled；L10.3 第 1155 条。填 L0.7 / L1.4 / L3.6 BIP-78 added-input not already other-tx / not already network-private / not already settled 正式三事（290 余量）。290 payjoin vs original bundled unbundling 完成（1186 item 3）。
+
+## 2026-09-18（续 1302）
+
+- 不变量 1185；语料 C1163；模式 name-the-pj78-notorig-bar；反模式 pj78-notorig-sold-as-bundled；L10.3 第 1154 条。填 L0.7 / L1.4 / L3.6 BIP-78 original not already proposal / not already payjoin-tx / not already settled 正式三事（290 余量）。290 payjoin vs original bundled unbundling 续（1185 item 2）。
+
+## 2026-09-18（续 1301）
+
+- 不变量 1184；语料 C1162；模式 name-the-pj78-noturi-bar；反模式 pj78-noturi-sold-as-bundled；L10.3 第 1153 条。填 L0.7 / L1.4 / L3.6 BIP-78 pj-uri not already payjoin-payment / not already original / not already settled 正式三事（290 余量）。290 payjoin vs original bundled unbundling 启动（1184 item 1）。
+
 ## 2026-09-18（续 1300）
 
 - 不变量 1183；语料 C1161；模式 name-the-tmpl88-notfull-bar；反模式 tmpl88-notfull-sold-as-bundled；L10.3 第 1152 条。填 L1.4 / L3.6 BIP-88 full-template not already half-template / not already same-path / not already settled 正式三事（288 余量）。288 template vs path bundled unbundling 完成（1183 item 3）。
