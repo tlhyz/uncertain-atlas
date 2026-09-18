@@ -1,3 +1,4 @@
+- [`name-the-querystate-notexecute-bar.md`](name-the-querystate-notexecute-bar.md) — Query 连接不是已经是 ExecuteTxState not already ExecuteTxState / not already writable / not already same as execute 正式三事（314 余量）（不变量 701）
 - [`name-the-indexer-notnoidempotent-bar.md`](name-the-indexer-notnoidempotent-bar.md) — 通常不受欢迎不是已经没有幂等例外 not already no exceptions / not already mempool-guaranteed / not already prescribed 正式三事（313 余量）（不变量 700）
 - [`name-the-indexer-notappprotect-bar.md`](name-the-indexer-notappprotect-bar.md) — 过了 CheckTx 不是已经有应用级保护 not already app-level protection / not already app predicate / not already handed to app 正式三事（313 余量）（不变量 699）
 - [`name-the-indexer-notguarantee-bar.md`](name-the-indexer-notguarantee-bar.md) — 索引器去重不是已经保证不重复 not already no-duplicate guarantee / not already strong guarantee / not already never again 正式三事（313 余量）（不变量 698）

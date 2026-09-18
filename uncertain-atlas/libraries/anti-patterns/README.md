@@ -1,3 +1,4 @@
+- [`querystate-notexecute-sold-as-bundled.md`](querystate-notexecute-sold-as-bundled.md) — 能查 被写成已经是 ExecuteTxState / 已经能写 / 已经同一份（不变量 701）
 - [`indexer-notnoidempotent-sold-as-bundled.md`](indexer-notnoidempotent-sold-as-bundled.md) — 通常不受欢迎 被写成已经没有例外 / 已经由内存池保证 / 已经规定怎样写幂等（不变量 700）
 - [`indexer-notappprotect-sold-as-bundled.md`](indexer-notappprotect-sold-as-bundled.md) — 过了 CheckTx 被写成已经有应用级保护 / 已经是应用谓词 / 已经交给应用（不变量 699）
 - [`indexer-notguarantee-sold-as-bundled.md`](indexer-notguarantee-sold-as-bundled.md) — 池子挡过一次 被写成已经保证不重复 / 已经有强保证 / 已经不会再来（不变量 698）
