@@ -145,6 +145,7 @@
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-querystate-notcaughtup-vs-bundled.md`](worked-example-querystate-notcaughtup-vs-bundled.md) — 上次 Commit≠跟上/CheckTxState/同步；≠314 bundled（不变量 702）
 - [`worked-example-querystate-notexecute-vs-bundled.md`](worked-example-querystate-notexecute-vs-bundled.md) — 能查≠ExecuteTxState/能写/同一份；≠314 bundled（不变量 701）
 - [`worked-example-indexer-notnoidempotent-vs-bundled.md`](worked-example-indexer-notnoidempotent-vs-bundled.md) — 通常不受欢迎≠没有例外/内存池保证/已规定幂等；≠313 bundled（不变量 700）
 - [`worked-example-indexer-notappprotect-vs-bundled.md`](worked-example-indexer-notappprotect-vs-bundled.md) — 过了 CheckTx≠应用级保护/应用谓词/交给应用；≠313 bundled（不变量 699）
