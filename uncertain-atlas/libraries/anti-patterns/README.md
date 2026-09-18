@@ -1,3 +1,6 @@
+- [`wpkh382-notwit-sold-as-bundled.md`](wpkh382-notwit-sold-as-bundled.md) — wsh 产出 被写成已经有见证脚本 / 已经是 381 赎回 / 已经交差（不变量 1153）
+- [`wpkh382-notuncomp-sold-as-bundled.md`](wpkh382-notuncomp-sold-as-bundled.md) — 未压缩钥 被写成已经允许进 wpkh / 已经允许出现在 wsh 下面 / 已经交差（不变量 1152）
+- [`wpkh382-nottop-sold-as-bundled.md`](wpkh382-nottop-sold-as-bundled.md) — wpkh/wsh 被写成已经只能顶层 / 已经能再套进 wsh / 已经交差（不变量 1151）
 - [`pk381-notcompat-sold-as-bundled.md`](pk381-notcompat-sold-as-bundled.md) — 熟悉脚本 被写成已经能互操作 / 已经不必再写本页 / 已经交差（不变量 1150）
 - [`pk381-notredeem-sold-as-bundled.md`](pk381-notredeem-sold-as-bundled.md) — sh 产出 被写成已经有赎回脚本 / 已经能花 / 已经交差（不变量 1149）
 - [`pk381-notplace-sold-as-bundled.md`](pk381-notplace-sold-as-bundled.md) — pk 放置 被写成已经是 pkh 那种放置 / 已经能再套一层 sh / 已经交差（不变量 1148）

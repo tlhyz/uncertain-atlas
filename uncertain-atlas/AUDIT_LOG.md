@@ -1,3 +1,18 @@
+| A5530 | 记录 | 会与 277 / 1149 / 170 / 1151 / 1152 糊成「看见 wsh 产出就已经有见证脚本 interchangeable、就已经是 381 赎回 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-382 wsh-output not already have-witness-script / not already 381-redeem / not already settled 正式三事（277 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。277 wpkh vs compressed bundled unbundling 完成（1153 item 3） |
+| A5531 | 高 | 看见 wsh 产出 会被写成已经有见证脚本 interchangeable / 1149 interchangeable | 官方 BIP-382 隔离见证描述符 item 3：not already have-witness-script / not 1149 |
+| A5532 | 高 | 看见 381 另造了赎回脚本 会被写成已经是本页这份见证脚本 interchangeable / 170 interchangeable | 官方 BIP-382 隔离见证描述符 item 3：not already 381-redeem / not 170 |
+| A5533 | 高 | 看见 P2WSH 输出脚本 会被写成已经交差 interchangeable | 官方 BIP-382 隔离见证描述符 item 3：not already settled |
+| A5534 | 中 | 怎样拼见证程序会被抄进不确定 | 不抄。不写怎样拼见证程序。不另写 19 节 |
+| A5525 | 记录 | 会与 277 / 1147 / 184 / 1151 / 1153 糊成「看见未压缩钥就已经允许进 wpkh interchangeable、就已经允许出现在 wsh 下面 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-382 uncompressed-key not already allowed-in-wpkh / not already allowed-under-wsh / not already settled 正式三事（277 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。277 wpkh vs compressed bundled unbundling 续（1152 item 2） |
+| A5526 | 高 | 看见未压缩钥 会被写成已经允许进 wpkh interchangeable / 1147 interchangeable | 官方 BIP-382 隔离见证描述符 item 2：not already allowed-in-wpkh / not 1147 |
+| A5527 | 高 | 看见任意钥 会被写成已经允许出现在 wsh 下面 interchangeable / 184 interchangeable | 官方 BIP-382 隔离见证描述符 item 2：not already allowed-under-wsh / not 184 |
+| A5528 | 高 | 看见 381 还收未压缩 会被写成已经交差 interchangeable | 官方 BIP-382 隔离见证描述符 item 2：not already settled |
+| A5529 | 中 | 怎样拼见证程序会被抄进不确定 | 不抄。不写怎样拼见证程序。不另写 19 节 |
+| A5520 | 记录 | 会与 277 / 1148 / 1124 / 1152 / 1153 糊成「看见 wpkh / wsh 就已经只能顶层 interchangeable、就已经能再套进 wsh interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-382 wpkh-wsh not already toplevel-only / not already nestable-in-wsh / not already settled 正式三事（277 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。277 wpkh vs compressed bundled unbundling 启动（1151 item 1） |
+| A5521 | 高 | 看见 wpkh / wsh 会被写成已经只能顶层 interchangeable / 1148 interchangeable | 官方 BIP-382 隔离见证描述符 item 1：not already toplevel-only / not 1148 |
+| A5522 | 高 | 看见能套进 sh 会被写成已经能再套进 wsh interchangeable / 1124 interchangeable | 官方 BIP-382 隔离见证描述符 item 1：not already nestable-in-wsh / not 1124 |
+| A5523 | 高 | 看见写了隔离见证表达式 会被写成已经交差 interchangeable | 官方 BIP-382 隔离见证描述符 item 1：not already settled |
+| A5524 | 中 | 怎样拼见证程序会被抄进不确定 | 不抄。不写怎样拼见证程序。不另写 19 节 |
 | A5515 | 记录 | 会与 276 / 1118 / 184 / 1148 / 1149 糊成「看见熟悉的标准脚本就已经能互操作 interchangeable、就已经不必再写本页 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-381 familiar-scripts not already interoperable / not already skip-page / not already settled 正式三事（276 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。276 pk vs toplevel bundled unbundling 完成（1150 item 3） |
 | A5516 | 高 | 看见熟悉的标准脚本 会被写成已经能互操作 interchangeable / 1118 interchangeable | 官方 BIP-381 非隔离见证描述符 item 3：not already interoperable / not 1118 |
 | A5517 | 高 | 看见旧钱包认得输出 会被写成已经不必再写本页 interchangeable / 184 interchangeable | 官方 BIP-381 非隔离见证描述符 item 3：not already skip-page / not 184 |

@@ -1,3 +1,6 @@
+- [`name-the-wpkh382-notwit-bar.md`](name-the-wpkh382-notwit-bar.md) — BIP-382 wsh-output not already have-witness-script / not already 381-redeem / not already settled 正式三事（277 余量）（不变量 1153）
+- [`name-the-wpkh382-notuncomp-bar.md`](name-the-wpkh382-notuncomp-bar.md) — BIP-382 uncompressed-key not already allowed-in-wpkh / not already allowed-under-wsh / not already settled 正式三事（277 余量）（不变量 1152）
+- [`name-the-wpkh382-nottop-bar.md`](name-the-wpkh382-nottop-bar.md) — BIP-382 wpkh-wsh not already toplevel-only / not already nestable-in-wsh / not already settled 正式三事（277 余量）（不变量 1151）
 - [`name-the-pk381-notcompat-bar.md`](name-the-pk381-notcompat-bar.md) — BIP-381 familiar-scripts not already interoperable / not already skip-page / not already settled 正式三事（276 余量）（不变量 1150）
 - [`name-the-pk381-notredeem-bar.md`](name-the-pk381-notredeem-bar.md) — BIP-381 sh-output not already have-redeem / not already spendable / not already settled 正式三事（276 余量）（不变量 1149）
 - [`name-the-pk381-notplace-bar.md`](name-the-pk381-notplace-bar.md) — BIP-381 pk-placement not already pkh-place / not already sh-only-top / not already settled 正式三事（276 余量）（不变量 1148）

@@ -821,6 +821,9 @@
 - [`worked-example-pk381-notredeem-vs-bundled.md`](worked-example-pk381-notredeem-vs-bundled.md) — sh 产出≠already have-redeem/spendable/settled；≠276 bundled（不变量 1149）
 - [`worked-example-pk381-notplace-vs-bundled.md`](worked-example-pk381-notplace-vs-bundled.md) — pk 放置≠already pkh-place/sh-only-top/settled；≠276 bundled（不变量 1148）
 - [`worked-example-pk-vs-toplevel.md`](worked-example-pk-vs-toplevel.md) — pk ≠ 已经和 pkh / sh 同一套放置；sh 产出 ≠ 已经有赎回脚本；熟悉的标准脚本 ≠ 已经能互操作（不变量 276）
+- [`worked-example-wpkh382-notwit-vs-bundled.md`](worked-example-wpkh382-notwit-vs-bundled.md) — wsh 产出≠already have-witness-script/381-redeem/settled；≠277 bundled（不变量 1153）
+- [`worked-example-wpkh382-notuncomp-vs-bundled.md`](worked-example-wpkh382-notuncomp-vs-bundled.md) — 未压缩钥≠already allowed-in-wpkh/allowed-under-wsh/settled；≠277 bundled（不变量 1152）
+- [`worked-example-wpkh382-nottop-vs-bundled.md`](worked-example-wpkh382-nottop-vs-bundled.md) — wpkh/wsh≠already toplevel-only/nestable-in-wsh/settled；≠277 bundled（不变量 1151）
 - [`worked-example-wpkh-vs-compressed.md`](worked-example-wpkh-vs-compressed.md) — wpkh / wsh ≠ 已经只能顶层；未压缩钥 ≠ 已经允许；wsh 产出 ≠ 已经有见证脚本（不变量 277）
 - [`worked-example-multia-vs-tr.md`](worked-example-multia-vs-tr.md) — multi_a ≠ 已经是 383 那种 multi；门限 ≠ 已经同一套编码；sortedmulti_a ≠ 已经是 383 那种排序（不变量 278）
 - [`worked-example-tap-psbt-vs-old.md`](worked-example-tap-psbt-vs-old.md) — 旧 PSBT 栏 ≠ 已经能装 Taproot；输出脚本里的钥 ≠ 已经是内部钥；Taproot 输入 ≠ 已经必须带整笔前交易（不变量 279）

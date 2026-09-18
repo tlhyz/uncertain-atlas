@@ -1,3 +1,15 @@
+## 2026-09-18（续 1270）
+
+- 不变量 1153；语料 C1131；模式 name-the-wpkh382-notwit-bar；反模式 wpkh382-notwit-sold-as-bundled；L10.3 第 1122 条。填 L1.4 / L3.6 BIP-382 wsh-output not already have-witness-script / not already 381-redeem / not already settled 正式三事（277 余量）。277 wpkh vs compressed bundled unbundling 完成（1153 item 3）。
+
+## 2026-09-18（续 1269）
+
+- 不变量 1152；语料 C1130；模式 name-the-wpkh382-notuncomp-bar；反模式 wpkh382-notuncomp-sold-as-bundled；L10.3 第 1121 条。填 L1.4 / L3.6 BIP-382 uncompressed-key not already allowed-in-wpkh / not already allowed-under-wsh / not already settled 正式三事（277 余量）。277 wpkh vs compressed bundled unbundling 续（1152 item 2）。
+
+## 2026-09-18（续 1268）
+
+- 不变量 1151；语料 C1129；模式 name-the-wpkh382-nottop-bar；反模式 wpkh382-nottop-sold-as-bundled；L10.3 第 1120 条。填 L1.4 / L3.6 BIP-382 wpkh-wsh not already toplevel-only / not already nestable-in-wsh / not already settled 正式三事（277 余量）。277 wpkh vs compressed bundled unbundling 启动（1151 item 1）。
+
 ## 2026-09-18（续 1267）
 
 - 不变量 1150；语料 C1128；模式 name-the-pk381-notcompat-bar；反模式 pk381-notcompat-sold-as-bundled；L10.3 第 1119 条。填 L1.4 / L3.6 BIP-381 familiar-scripts not already interoperable / not already skip-page / not already settled 正式三事（276 余量）。276 pk vs toplevel bundled unbundling 完成（1150 item 3）。
