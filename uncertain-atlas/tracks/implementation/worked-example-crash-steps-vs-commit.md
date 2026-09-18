@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「崩溃已经能恢复」，必须分开应用比引擎高是不是已经允许、块进 store 是不是已经 Commit、启动 Info 对上是不是已经能跳步。可以跳过「看见块已经进 store 就已经交差」。不要另写怎样落盘或怎样写 Commit。320 crash recovery bundled unbundling 启动（686 item 1）；精读 [`worked-example-crashsteps-notapptaller-vs-bundled.md`](worked-example-crashsteps-notapptaller-vs-bundled.md)（不变量 686 item 1）。续 [`worked-example-crashsteps-notblockstore-vs-bundled.md`](worked-example-crashsteps-notblockstore-vs-bundled.md)（不变量 687 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「崩溃已经能恢复」，必须分开应用比引擎高是不是已经允许、块进 store 是不是已经 Commit、启动 Info 对上是不是已经能跳步。可以跳过「看见块已经进 store 就已经交差」。不要另写怎样落盘或怎样写 Commit。320 crash recovery bundled unbundling 完成（686 + 687 + 688）；精读 [`worked-example-crashsteps-notapptaller-vs-bundled.md`](worked-example-crashsteps-notapptaller-vs-bundled.md)（不变量 686 item 1）、[`worked-example-crashsteps-notblockstore-vs-bundled.md`](worked-example-crashsteps-notblockstore-vs-bundled.md)（不变量 687 item 2）、[`worked-example-crashsteps-notinfoskip-vs-bundled.md`](worked-example-crashsteps-notinfoskip-vs-bundled.md)（不变量 688 item 3）。
 
 ## 本页不抄
 
