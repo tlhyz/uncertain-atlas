@@ -1,3 +1,15 @@
+## 2026-09-18（续 1288）
+
+- 不变量 1171；语料 C1149；模式 name-the-musig328-nottweak-bar；反模式 musig328-nottweak-sold-as-bundled；L10.3 第 1140 条。填 L1.4 / L3.6 BIP-328 child-key not already sign-without-tweak / not already x-only-tweak / not already settled 正式三事（283 余量）。283 musig xpub vs aggregate bundled unbundling 完成（1171 item 3）。
+
+## 2026-09-18（续 1287）
+
+- 不变量 1170；语料 C1148；模式 name-the-musig328-nothard-bar；反模式 musig328-nothard-sold-as-bundled；L10.3 第 1139 条。填 L1.4 / L3.6 BIP-328 synthetic-xpub not already hardened / not already many-xpubs-then-aggregate / not already settled 正式三事（283 余量）。283 musig xpub vs aggregate bundled unbundling 续（1170 item 2）。
+
+## 2026-09-18（续 1286）
+
+- 不变量 1169；语料 C1147；模式 name-the-musig328-notxpub-bar；反模式 musig328-notxpub-sold-as-bundled；L10.3 第 1138 条。填 L1.4 / L3.6 BIP-328 aggregate-key not already xpub / not already bip32-tree / not already settled 正式三事（283 余量）。283 musig xpub vs aggregate bundled unbundling 启动（1169 item 1）。
+
 ## 2026-09-18（续 1285）
 
 - 不变量 1168；语料 C1146；模式 name-the-raw385-notwrap-bar；反模式 raw385-notwrap-sold-as-bundled；L10.3 第 1137 条。填 L1.4 / L3.6 BIP-385 one-wrap not already combo / not already wallet-policy / not already settled 正式三事（282 余量）。282 raw vs named bundled unbundling 完成（1168 item 3）。

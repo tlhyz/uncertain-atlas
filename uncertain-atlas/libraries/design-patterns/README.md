@@ -1,3 +1,6 @@
+- [`name-the-musig328-nottweak-bar.md`](name-the-musig328-nottweak-bar.md) — BIP-328 child-key not already sign-without-tweak / not already x-only-tweak / not already settled 正式三事（283 余量）（不变量 1171）
+- [`name-the-musig328-nothard-bar.md`](name-the-musig328-nothard-bar.md) — BIP-328 synthetic-xpub not already hardened / not already many-xpubs-then-aggregate / not already settled 正式三事（283 余量）（不变量 1170）
+- [`name-the-musig328-notxpub-bar.md`](name-the-musig328-notxpub-bar.md) — BIP-328 aggregate-key not already xpub / not already bip32-tree / not already settled 正式三事（283 余量）（不变量 1169）
 - [`name-the-raw385-notwrap-bar.md`](name-the-raw385-notwrap-bar.md) — BIP-385 one-wrap not already combo / not already wallet-policy / not already settled 正式三事（282 余量）（不变量 1168）
 - [`name-the-raw385-notaddr-bar.md`](name-the-raw385-notaddr-bar.md) — BIP-385 addr not already nestable-in-sh-wsh / not already output-script-written / not already settled 正式三事（282 余量）（不变量 1167）
 - [`name-the-raw385-notraw-bar.md`](name-the-raw385-notraw-bar.md) — BIP-385 raw not already nestable-in-sh-wsh / not already named-expr / not already settled 正式三事（282 余量）（不变量 1166）

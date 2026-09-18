@@ -1,3 +1,18 @@
+| A5620 | 记录 | 会与 283 / 1136 / 1147 / 1169 / 1170 糊成「看见子钥就已经能不带微调去签 interchangeable、就已经是 x-only 那种微调 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-328 child-key not already sign-without-tweak / not already x-only-tweak / not already settled 正式三事（283 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。283 musig xpub vs aggregate bundled unbundling 完成（1171 item 3） |
+| A5621 | 高 | 看见派生出的子钥 会被写成已经能不带微调去签 interchangeable / 1136 interchangeable | 官方 BIP-328 聚合钥派生 item 3：not already sign-without-tweak / not 1136 |
+| A5622 | 高 | 看见写了微调 会被写成已经是 x-only 那种微调 interchangeable / 1147 interchangeable | 官方 BIP-328 聚合钥派生 item 3：not already x-only-tweak / not 1147 |
+| A5623 | 高 | 看见一次签名会话 会被写成已经交差 interchangeable | 官方 BIP-328 聚合钥派生 item 3：not already settled |
+| A5624 | 中 | 怎样算派生微调会被抄进不确定 | 不抄。不写怎样算派生微调。不另写 19 节 |
+| A5615 | 记录 | 会与 283 / 1142 / 184 / 1169 / 1171 糊成「看见合成扩展公钥就已经能硬化 interchangeable、就已经是各自派生再拼 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-328 synthetic-xpub not already hardened / not already many-xpubs-then-aggregate / not already settled 正式三事（283 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。283 musig xpub vs aggregate bundled unbundling 续（1170 item 2） |
+| A5616 | 高 | 看见合成扩展公钥 会被写成已经能硬化 interchangeable / 1142 interchangeable | 官方 BIP-328 聚合钥派生 item 2：not already hardened / not 1142 |
+| A5617 | 高 | 看见少存了几份扩展公钥 会被写成已经是各自派生再拼 interchangeable / 184 interchangeable | 官方 BIP-328 聚合钥派生 item 2：not already many-xpubs-then-aggregate / not 184 |
+| A5618 | 高 | 看见没有聚合私钥 会被写成已经交差 interchangeable | 官方 BIP-328 聚合钥派生 item 2：not already settled |
+| A5619 | 中 | 怎样算派生微调会被抄进不确定 | 不抄。不写怎样算派生微调。不另写 19 节 |
+| A5610 | 记录 | 会与 283 / 182 / 1168 / 1170 / 1171 糊成「看见聚合钥就已经是扩展公钥 interchangeable、就已经能按 32 那种树往下长 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-328 aggregate-key not already xpub / not already bip32-tree / not already settled 正式三事（283 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。283 musig xpub vs aggregate bundled unbundling 启动（1169 item 1） |
+| A5611 | 高 | 看见 MuSig2 聚合钥 会被写成已经是扩展公钥 interchangeable / 182 interchangeable | 官方 BIP-328 聚合钥派生 item 1：not already xpub / not 182 |
+| A5612 | 高 | 看见能当普通公钥用 会被写成已经能按 32 那种树往下长 interchangeable / 1168 interchangeable | 官方 BIP-328 聚合钥派生 item 1：not already bip32-tree / not 1168 |
+| A5613 | 高 | 看见一把普通公钥 会被写成已经交差 interchangeable | 官方 BIP-328 聚合钥派生 item 1：not already settled |
+| A5614 | 中 | 怎样算派生微调会被抄进不确定 | 不抄。不写怎样算派生微调。不另写 19 节 |
 | A5605 | 记录 | 会与 282 / 1165 / 1160 / 1166 / 1167 糊成「看见一份包装就已经是 combo interchangeable、就已经是一份钱包策略 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-385 one-wrap not already combo / not already wallet-policy / not already settled 正式三事（282 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。282 raw vs named bundled unbundling 完成（1168 item 3） |
 | A5606 | 高 | 看见一份包装 会被写成已经是一份 combo interchangeable / 1165 interchangeable | 官方 BIP-385 raw / addr 描述符 item 3：not already combo / not 1165 |
 | A5607 | 高 | 看见能包住今天在用的脚本或地址 会被写成已经是一份钱包策略 interchangeable / 1160 interchangeable | 官方 BIP-385 raw / addr 描述符 item 3：not already wallet-policy / not 1160 |

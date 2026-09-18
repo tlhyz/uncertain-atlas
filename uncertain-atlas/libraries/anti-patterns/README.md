@@ -1,3 +1,6 @@
+- [`musig328-nottweak-sold-as-bundled.md`](musig328-nottweak-sold-as-bundled.md) — 子钥 被写成已经能不带微调去签 / 已经是 x-only 那种微调 / 已经交差（不变量 1171）
+- [`musig328-nothard-sold-as-bundled.md`](musig328-nothard-sold-as-bundled.md) — 合成扩展公钥 被写成已经能硬化 / 已经是各自派生再拼 / 已经交差（不变量 1170）
+- [`musig328-notxpub-sold-as-bundled.md`](musig328-notxpub-sold-as-bundled.md) — 聚合钥 被写成已经是扩展公钥 / 已经能按 32 那种树往下长 / 已经交差（不变量 1169）
 - [`raw385-notwrap-sold-as-bundled.md`](raw385-notwrap-sold-as-bundled.md) — 一份包装 被写成已经是 combo / 已经是钱包策略 / 已经交差（不变量 1168）
 - [`raw385-notaddr-sold-as-bundled.md`](raw385-notaddr-sold-as-bundled.md) — addr 被写成已经能套进 sh / wsh / 已经把输出脚本写在描述符里 / 已经交差（不变量 1167）
 - [`raw385-notraw-sold-as-bundled.md`](raw385-notraw-sold-as-bundled.md) — raw 被写成已经能套进 sh / wsh / 已经是具名表达式 / 已经交差（不变量 1166）
