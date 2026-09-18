@@ -1,3 +1,6 @@
+- [`mcpy-notcd-sold-as-bundled.md`](mcpy-notcd-sold-as-bundled.md) — 能重叠拷 被写成已经是 calldata 拷 / 就已经改了 CALL / 就已经是 169（不变量 1412）
+- [`mcpy-notbuf-sold-as-bundled.md`](mcpy-notbuf-sold-as-bundled.md) — 像用了中间缓冲 被写成必须真分配 / 就已经是 DoS / 就已经是 208（不变量 1411）
+- [`mcpy-notid-sold-as-bundled.md`](mcpy-notid-sold-as-bundled.md) — 内存拷贝指令 被写成已经是身份预编译 / 就已经是 2929 / 就已经 216 bundled（不变量 1410）
 - [`psh0-notold-sold-as-bundled.md`](psh0-notold-sold-as-bundled.md) — 旧字节碰巧用了这个码 被写成行为已经不变 / 就已经是常数零 / 就已经是 208（不变量 1409）
 - [`psh0-notjump-sold-as-bundled.md`](psh0-notjump-sold-as-bundled.md) — 没有立即数 被写成已经改了跳转分析 / 就已经共用实现 / 就已经是 5656（不变量 1408）
 - [`psh0-notimm-sold-as-bundled.md`](psh0-notimm-sold-as-bundled.md) — 压零指令 被写成已经是带立即数的压 0 / 就已经是 216 / 就已经 217 bundled（不变量 1407）

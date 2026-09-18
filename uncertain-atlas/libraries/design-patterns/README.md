@@ -1,3 +1,6 @@
+- [`name-the-mcpy-notcd-bar.md`](name-the-mcpy-notcd-bar.md) — EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）（不变量 1412）
+- [`name-the-mcpy-notbuf-bar.md`](name-the-mcpy-notbuf-bar.md) — EIP-5656 as-if-buffer not already real-alloc / not already DoS / not already 208 正式三事（216 余量）（不变量 1411）
+- [`name-the-mcpy-notid-bar.md`](name-the-mcpy-notid-bar.md) — EIP-5656 MCOPY not already identity-precompile / not already 2929 / not already 216-bundled 正式三事（216 余量）（不变量 1410）
 - [`name-the-psh0-notold-bar.md`](name-the-psh0-notold-bar.md) — EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）（不变量 1409）
 - [`name-the-psh0-notjump-bar.md`](name-the-psh0-notjump-bar.md) — EIP-3855 no-immediate not already jumpdest-changed / not already shared-impl / not already 5656 正式三事（217 余量）（不变量 1408）
 - [`name-the-psh0-notimm-bar.md`](name-the-psh0-notimm-bar.md) — EIP-3855 PUSH0 not already immediate-push0 / not already 216 / not already 217-bundled 正式三事（217 余量）（不变量 1407）

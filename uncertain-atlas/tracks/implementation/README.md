@@ -984,6 +984,9 @@
 - [`worked-example-config-rpc-vs-aligned.md`](worked-example-config-rpc-vs-aligned.md) — 看见分叉配置 RPC 对上了 ≠ 已经过多客户端同根；看见 current / next / last ≠ 已经改了共识；RPC 绿 ≠ 对等节点没有撒谎；7910 ≠ 149 ≠ 209 ≠ 207（不变量 210）
 - [`worked-example-default-gas-vs-cap.md`](worked-example-default-gas-vs-cap.md) — 看见客户端默认气限 ≠ 已经是协议帽；看见绑到硬分叉发布 ≠ 已经改了共识；看见默认配置齐了 ≠ 已经是单笔气帽；7935 ≠ 203 ≠ 202 ≠ 96（不变量 211）
 - [`worked-example-block-list-vs-parallel.md`](worked-example-block-list-vs-parallel.md) — 看见块级访问名单 ≠ 已经并行跑完；看见强制名单 ≠ 已经是 2930；看见事后状态差 ≠ 已经不跑交易；7928 ≠ 168 ≠ 143 ≠ 122（不变量 212）
+- [`worked-example-mcpy-notid-vs-bundled.md`](worked-example-mcpy-notid-vs-bundled.md) — 内存拷贝指令≠already 身份预编译/2929/216 bundled；≠216 bundled（不变量 1410）
+- [`worked-example-mcpy-notbuf-vs-bundled.md`](worked-example-mcpy-notbuf-vs-bundled.md) — 像用了中间缓冲≠already 必须真分配/已经是DoS/208；≠216 bundled（不变量 1411）
+- [`worked-example-mcpy-notcd-vs-bundled.md`](worked-example-mcpy-notcd-vs-bundled.md) — 能重叠拷≠already calldata拷/已经改了CALL/169；≠216 bundled（不变量 1412）
 - [`worked-example-mcopy-vs-identity.md`](worked-example-mcopy-vs-identity.md) — 看见内存拷贝指令 ≠ 已经是身份预编译；看见「像用了中间缓冲」 ≠ 已经必须真分配一块缓冲；看见能重叠拷 ≠ 已经是 calldata / 返回数据拷；5656 ≠ 2929 ≠ 208（不变量 216）
 - [`worked-example-psh0-notimm-vs-bundled.md`](worked-example-psh0-notimm-vs-bundled.md) — 压零指令≠already 带立即数的压0/216/217 bundled；≠217 bundled（不变量 1407）
 - [`worked-example-psh0-notjump-vs-bundled.md`](worked-example-psh0-notjump-vs-bundled.md) — 没有立即数≠already 改了跳转分析/共用实现/5656；≠217 bundled（不变量 1408）

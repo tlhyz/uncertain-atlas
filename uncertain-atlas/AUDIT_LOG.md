@@ -1,3 +1,18 @@
+| A6825 | 记录 | 会与 216 / 169 / 197 / 1410 / 1411 糊成「看见能重叠拷不是已经是 calldata / 返回数据拷就已经是 calldata / 返回数据拷 interchangeable、就已经改了 CALL 的效果 interchangeable、就已经是不变量 169 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。216 MCOPY vs identity bundled unbundling 完成（1412 item 3） |
+| A6826 | 高 | 看见能重叠拷不是已经是 calldata / 返回数据拷 会被写成已经是 calldata / 返回数据拷 interchangeable / 169 interchangeable | 官方 EIP-5656 mcpy item 3：not already 已经是 calldata / 返回数据拷 / not 169 |
+| A6827 | 高 | 看见overlap copy is not already calldata copy 会被写成已经改了 CALL 的效果 interchangeable / 197 interchangeable | 官方 EIP-5656 mcpy item 3：not already 已经改了 CALL 的效果 / not 197 |
+| A6828 | 高 | 看见能重叠拷不是已经是 calldata / 返回数据拷 会被写成已经是不变量 169 interchangeable | 官方 EIP-5656 mcpy item 3：not already settled |
+| A6829 | 中 | 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果会被抄进不确定 | 不抄。不写 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果。不另写 19 节 |
+| A6820 | 记录 | 会与 216 / 208 / 176 / 1410 / 1412 糊成「看见「像用了中间缓冲」不是已经必须真分配一块缓冲就已经必须真分配一块缓冲 interchangeable、就已经是拒绝服务面 interchangeable、就已经是不变量 208 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-5656 as-if-buffer not already real-alloc / not already DoS / not already 208 正式三事（216 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。216 MCOPY vs identity bundled unbundling 续（1411 item 2） |
+| A6821 | 高 | 看见「像用了中间缓冲」不是已经必须真分配一块缓冲 会被写成已经必须真分配一块缓冲 interchangeable / 208 interchangeable | 官方 EIP-5656 mcpy item 2：not already 已经必须真分配一块缓冲 / not 208 |
+| A6822 | 高 | 看见as-if-buffer is not already real allocation 会被写成已经是拒绝服务面 interchangeable / 176 interchangeable | 官方 EIP-5656 mcpy item 2：not already 已经是拒绝服务面 / not 176 |
+| A6823 | 高 | 看见「像用了中间缓冲」不是已经必须真分配一块缓冲 会被写成已经是不变量 208 interchangeable | 官方 EIP-5656 mcpy item 2：not already settled |
+| A6824 | 中 | 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果会被抄进不确定 | 不抄。不写 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果。不另写 19 节 |
+| A6815 | 记录 | 会与 216 / 169 / 208 / 1411 / 1412 糊成「看见内存拷贝指令不是已经是身份预编译就已经是身份预编译 interchangeable、就已经是 2929 interchangeable、就已经 216 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-5656 MCOPY not already identity-precompile / not already 2929 / not already 216-bundled 正式三事（216 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。216 MCOPY vs identity bundled unbundling 启动（1410 item 1） |
+| A6816 | 高 | 看见内存拷贝指令不是已经是身份预编译 会被写成已经是身份预编译 interchangeable / 169 interchangeable | 官方 EIP-5656 mcpy item 1：not already 已经是身份预编译 / not 169 |
+| A6817 | 高 | 看见MCOPY is not already identity precompile 会被写成已经是 2929 interchangeable / 208 interchangeable | 官方 EIP-5656 mcpy item 1：not already 已经是 2929 / not 208 |
+| A6818 | 高 | 看见内存拷贝指令不是已经是身份预编译 会被写成已经 216 bundled interchangeable | 官方 EIP-5656 mcpy item 1：not already settled |
+| A6819 | 中 | 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果会被抄进不确定 | 不抄。不写 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果。不另写 19 节 |
 | A6810 | 记录 | 会与 217 / 208 / 188 / 1407 / 1408 糊成「看见已经部署碰巧用了这个字节不是行为已经不变就行为已经不变 interchangeable、就已经是常数零 interchangeable、就已经是不变量 208 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。217 PUSH0 vs PUSH1 bundled unbundling 完成（1409 item 3） |
 | A6811 | 高 | 看见已经部署碰巧用了这个字节不是行为已经不变 会被写成行为已经不变 interchangeable / 208 interchangeable | 官方 EIP-3855 psh0 item 3：not already 行为已经不变 / not 208 |
 | A6812 | 高 | 看见old byte is not already unchanged 会被写成已经是常数零 interchangeable / 188 interchangeable | 官方 EIP-3855 psh0 item 3：not already 已经是常数零 / not 188 |

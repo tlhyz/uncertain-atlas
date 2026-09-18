@@ -1,3 +1,15 @@
+## 2026-09-18（续 1529）
+
+- 不变量 1412；语料 C1390；模式 name-the-mcpy-notcd-bar；反模式 mcpy-notcd-sold-as-bundled；L10.3 第 1381 条。填 L5.1 EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）。216 MCOPY vs identity bundled unbundling 完成（1412 item 3）。
+
+## 2026-09-18（续 1528）
+
+- 不变量 1411；语料 C1389；模式 name-the-mcpy-notbuf-bar；反模式 mcpy-notbuf-sold-as-bundled；L10.3 第 1380 条。填 L5.1 EIP-5656 as-if-buffer not already real-alloc / not already DoS / not already 208 正式三事（216 余量）。216 MCOPY vs identity bundled unbundling 续（1411 item 2）。
+
+## 2026-09-18（续 1527）
+
+- 不变量 1410；语料 C1388；模式 name-the-mcpy-notid-bar；反模式 mcpy-notid-sold-as-bundled；L10.3 第 1379 条。填 L5.1 EIP-5656 MCOPY not already identity-precompile / not already 2929 / not already 216-bundled 正式三事（216 余量）。216 MCOPY vs identity bundled unbundling 启动（1410 item 1）。
+
 ## 2026-09-18（续 1526）
 
 - 不变量 1409；语料 C1387；模式 name-the-psh0-notold-bar；反模式 psh0-notold-sold-as-bundled；L10.3 第 1378 条。填 L5.1 EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）。217 PUSH0 vs PUSH1 bundled unbundling 完成（1409 item 3）。
