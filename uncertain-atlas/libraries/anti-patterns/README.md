@@ -1,3 +1,6 @@
+- [`shft-notpack-sold-as-bundled.md`](shft-notpack-sold-as-bundled.md) — 更便宜 被写成已经是位域产品 / 就已经改了旧字节码 / 就已经是 208（不变量 1406）
+- [`shft-notsdiv-sold-as-bundled.md`](shft-notsdiv-sold-as-bundled.md) — 算术右移 被写成已经是有符号除 / 就已经是同一舍入 / 就已经和加减同一顺序（不变量 1405）
+- [`shft-notarith-sold-as-bundled.md`](shft-notarith-sold-as-bundled.md) — 原生移位 被写成已经用算术拼过 / 就已经只有一条 / 就已经 231 bundled（不变量 1404）
 - [`bbfee-not4844-sold-as-bundled.md`](bbfee-not4844-sold-as-bundled.md) — 跑前就有这个数 被写成已经改了 4844 / 就已经改了市场 / 就已经是 7918（不变量 1403）
 - [`bbfee-notone-sold-as-bundled.md`](bbfee-notone-sold-as-bundled.md) — 能读本块 blob 基础费 被写成已经并成一套气 / 就已经是 145 / 就已经是 201（不变量 1402）
 - [`bbfee-not3198-sold-as-bundled.md`](bbfee-not3198-sold-as-bundled.md) — blob 基础费指令 被写成已经是执行层基础费 / 就已经是 218 / 就已经 219 bundled（不变量 1401）

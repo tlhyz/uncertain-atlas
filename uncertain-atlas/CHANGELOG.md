@@ -1,3 +1,15 @@
+## 2026-09-18（续 1523）
+
+- 不变量 1406；语料 C1384；模式 name-the-shft-notpack-bar；反模式 shft-notpack-sold-as-bundled；L10.3 第 1375 条。填 L5.1 EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）。231 SHIFT vs arithmetic bundled unbundling 完成（1406 item 3）。
+
+## 2026-09-18（续 1522）
+
+- 不变量 1405；语料 C1383；模式 name-the-shft-notsdiv-bar；反模式 shft-notsdiv-sold-as-bundled；L10.3 第 1374 条。填 L5.1 EIP-145 SAR not already signed-div / not already same-rounding / not already same-operand-order 正式三事（231 余量）。231 SHIFT vs arithmetic bundled unbundling 续（1405 item 2）。
+
+## 2026-09-18（续 1521）
+
+- 不变量 1404；语料 C1382；模式 name-the-shft-notarith-bar；反模式 shft-notarith-sold-as-bundled；L10.3 第 1373 条。填 L5.1 EIP-145 native-shift not already arith-composed / not already one-shift / not already 231-bundled 正式三事（231 余量）。231 SHIFT vs arithmetic bundled unbundling 启动（1404 item 1）。
+
 ## 2026-09-18（续 1520）
 
 - 不变量 1403；语料 C1381；模式 name-the-bbfee-not4844-bar；反模式 bbfee-not4844-sold-as-bundled；L10.3 第 1372 条。填 L5.1 EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）。219 BLOBBASEFEE vs BASEFEE bundled unbundling 完成（1403 item 3）。

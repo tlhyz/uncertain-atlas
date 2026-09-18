@@ -1,3 +1,18 @@
+| A6795 | 记录 | 会与 231 / 208 / 217 / 1404 / 1405 糊成「看见更便宜不是已经是位域打包产品就已经是位域打包产品 interchangeable、就已经改了旧字节码 interchangeable、就已经是不变量 208 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。231 SHIFT vs arithmetic bundled unbundling 完成（1406 item 3） |
+| A6796 | 高 | 看见更便宜不是已经是位域打包产品 会被写成已经是位域打包产品 interchangeable / 208 interchangeable | 官方 EIP-145 shft item 3：not already 已经是位域打包产品 / not 208 |
+| A6797 | 高 | 看见cheaper is not already a bitfield product 会被写成已经改了旧字节码 interchangeable / 217 interchangeable | 官方 EIP-145 shft item 3：not already 已经改了旧字节码 / not 217 |
+| A6798 | 高 | 看见更便宜不是已经是位域打包产品 会被写成已经是不变量 208 interchangeable | 官方 EIP-145 shft item 3：not already settled |
+| A6799 | 中 | 怎样做位域打包、怎样抽字段、怎样用移位代替哈希会被抄进不确定 | 不抄。不写 怎样做位域打包、怎样抽字段、怎样用移位代替哈希。不另写 19 节 |
+| A6790 | 记录 | 会与 231 / 216 / 230 / 1404 / 1406 糊成「看见算术右移不是已经是有符号除就已经是有符号除 interchangeable、就已经是同一条舍入 interchangeable、就已经和加减同一套操作数顺序 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-145 SAR not already signed-div / not already same-rounding / not already same-operand-order 正式三事（231 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。231 SHIFT vs arithmetic bundled unbundling 续（1405 item 2） |
+| A6791 | 高 | 看见算术右移不是已经是有符号除 会被写成已经是有符号除 interchangeable / 216 interchangeable | 官方 EIP-145 shft item 2：not already 已经是有符号除 / not 216 |
+| A6792 | 高 | 看见SAR is not already signed division 会被写成已经是同一条舍入 interchangeable / 230 interchangeable | 官方 EIP-145 shft item 2：not already 已经是同一条舍入 / not 230 |
+| A6793 | 高 | 看见算术右移不是已经是有符号除 会被写成已经和加减同一套操作数顺序 interchangeable | 官方 EIP-145 shft item 2：not already settled |
+| A6794 | 中 | 怎样做位域打包、怎样抽字段、怎样用移位代替哈希会被抄进不确定 | 不抄。不写 怎样做位域打包、怎样抽字段、怎样用移位代替哈希。不另写 19 节 |
+| A6785 | 记录 | 会与 231 / 208 / 217 / 1405 / 1406 糊成「看见原生移位指令不是已经用算术拼过移位就已经用算术拼过移位 interchangeable、就已经只有一条移位 interchangeable、就已经 231 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-145 native-shift not already arith-composed / not already one-shift / not already 231-bundled 正式三事（231 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。231 SHIFT vs arithmetic bundled unbundling 启动（1404 item 1） |
+| A6786 | 高 | 看见原生移位指令不是已经用算术拼过移位 会被写成已经用算术拼过移位 interchangeable / 208 interchangeable | 官方 EIP-145 shft item 1：not already 已经用算术拼过移位 / not 208 |
+| A6787 | 高 | 看见native shift is not already arithmetic-composed 会被写成已经只有一条移位 interchangeable / 217 interchangeable | 官方 EIP-145 shft item 1：not already 已经只有一条移位 / not 217 |
+| A6788 | 高 | 看见原生移位指令不是已经用算术拼过移位 会被写成已经 231 bundled interchangeable | 官方 EIP-145 shft item 1：not already settled |
+| A6789 | 中 | 怎样做位域打包、怎样抽字段、怎样用移位代替哈希会被抄进不确定 | 不抄。不写 怎样做位域打包、怎样抽字段、怎样用移位代替哈希。不另写 19 节 |
 | A6780 | 记录 | 会与 219 / 218 / 201 / 1401 / 1402 糊成「看见跑 EVM 前就已经有这个数不是已经改了 4844 日程就已经改了 4844 日程 interchangeable、就已经改了费用市场 interchangeable、就已经是 7918 底价规则 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。219 BLOBBASEFEE vs BASEFEE bundled unbundling 完成（1403 item 3） |
 | A6781 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了 4844 日程 会被写成已经改了 4844 日程 interchangeable / 218 interchangeable | 官方 EIP-7516 bbfee item 3：not already 已经改了 4844 日程 / not 218 |
 | A6782 | 高 | 看见pre-EVM value is not already 4844-changed 会被写成已经改了费用市场 interchangeable / 201 interchangeable | 官方 EIP-7516 bbfee item 3：not already 已经改了费用市场 / not 201 |

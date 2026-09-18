@@ -1,3 +1,6 @@
+- [`name-the-shft-notpack-bar.md`](name-the-shft-notpack-bar.md) — EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）（不变量 1406）
+- [`name-the-shft-notsdiv-bar.md`](name-the-shft-notsdiv-bar.md) — EIP-145 SAR not already signed-div / not already same-rounding / not already same-operand-order 正式三事（231 余量）（不变量 1405）
+- [`name-the-shft-notarith-bar.md`](name-the-shft-notarith-bar.md) — EIP-145 native-shift not already arith-composed / not already one-shift / not already 231-bundled 正式三事（231 余量）（不变量 1404）
 - [`name-the-bbfee-not4844-bar.md`](name-the-bbfee-not4844-bar.md) — EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）（不变量 1403）
 - [`name-the-bbfee-notone-bar.md`](name-the-bbfee-notone-bar.md) — EIP-7516 read-blobbasefee not already one-gas / not already 145-bundled / not already 201 正式三事（219 余量）（不变量 1402）
 - [`name-the-bbfee-not3198-bar.md`](name-the-bbfee-not3198-bar.md) — EIP-7516 BLOBBASEFEE opcode not already 3198-basefee / not already 218-bundled / not already 219-bundled 正式三事（219 余量）（不变量 1401）
