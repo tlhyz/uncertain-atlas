@@ -1,3 +1,15 @@
+## 2026-09-18（续 1550）
+
+- 不变量 1433；语料 C1411；模式 name-the-sbal-notwarm-bar；反模式 sbal-notwarm-sold-as-bundled；L10.3 第 1402 条。填 L5.1 EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）。229 selfbalance vs balance bundled unbundling 完成（1433 item 3）。
+
+## 2026-09-18（续 1549）
+
+- 不变量 1432；语料 C1410；模式 name-the-sbal-notself-bar；反模式 sbal-notself-sold-as-bundled；L10.3 第 1401 条。填 L5.1 EIP-1884 self-query not already self-priced / not already cheaper-BALANCE / not already 1884-done 正式三事（229 余量）。229 selfbalance vs balance bundled unbundling 续（1432 item 2）。
+
+## 2026-09-18（续 1548）
+
+- 不变量 1431；语料 C1409；模式 name-the-sbal-notbal-bar；反模式 sbal-notbal-sold-as-bundled；L10.3 第 1400 条。填 L5.1 EIP-1884 selfbalance not already BALANCE / not already stack-pop-balance / not already 229-bundled 正式三事（229 余量）。229 selfbalance vs balance bundled unbundling 启动（1431 item 1）。
+
 ## 2026-09-18（续 1547）
 
 - 不变量 1430；语料 C1408；模式 name-the-bn128-notgen-bar；反模式 bn128-notgen-sold-as-bundled；L10.3 第 1399 条。填 L5.1 EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）。228 bn128-cut vs verify bundled unbundling 完成（1430 item 3）。

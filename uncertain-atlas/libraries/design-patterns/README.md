@@ -1,3 +1,6 @@
+- [`name-the-sbal-notwarm-bar.md`](name-the-sbal-notwarm-bar.md) — EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）（不变量 1433）
+- [`name-the-sbal-notself-bar.md`](name-the-sbal-notself-bar.md) — EIP-1884 self-query not already self-priced / not already cheaper-BALANCE / not already 1884-done 正式三事（229 余量）（不变量 1432）
+- [`name-the-sbal-notbal-bar.md`](name-the-sbal-notbal-bar.md) — EIP-1884 selfbalance not already BALANCE / not already stack-pop-balance / not already 229-bundled 正式三事（229 余量）（不变量 1431）
 - [`name-the-bn128-notgen-bar.md`](name-the-bn128-notgen-bar.md) — EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）（不变量 1430）
 - [`name-the-bn128-notsig-bar.md`](name-the-bn128-notsig-bar.md) — EIP-1108 cheaper not already verifying / not already privacy-live / not already 2537 正式三事（228 余量）（不变量 1429）
 - [`name-the-bn128-notalgo-bar.md`](name-the-bn128-notalgo-bar.md) — EIP-1108 bn128-cut not already algo-changed / not already 196-197-readded / not already 228-bundled 正式三事（228 余量）（不变量 1428）

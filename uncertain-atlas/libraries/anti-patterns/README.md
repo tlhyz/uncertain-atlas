@@ -1,3 +1,6 @@
+- [`sbal-notwarm-sold-as-bundled.md`](sbal-notwarm-sold-as-bundled.md) — 树依赖涨价 被写成已经是本笔冷热 / 就已经是磁盘 O(1) / 就已经是 2929（不变量 1433）
+- [`sbal-notself-sold-as-bundled.md`](sbal-notself-sold-as-bundled.md) — 给自己查余额 被写成已经按本账户价扣 / 就已经是更便宜的按地址查 / 就已经做完 1884（不变量 1432）
+- [`sbal-notbal-sold-as-bundled.md`](sbal-notbal-sold-as-bundled.md) — 本账户余额指令 被写成已经是按地址查余额 / 就已经改了余额语义 / 就已经 229 bundled（不变量 1431）
 - [`bn128-notgen-sold-as-bundled.md`](bn128-notgen-sold-as-bundled.md) — 本页 被写成已经是通用曲线算术 / 就已经是 199 / 就已经是 227（不变量 1430）
 - [`bn128-notsig-sold-as-bundled.md`](bn128-notsig-sold-as-bundled.md) — 更便宜 被写成已经在验签 / 就已经上了隐私产品 / 就已经是 2537（不变量 1429）
 - [`bn128-notalgo-sold-as-bundled.md`](bn128-notalgo-sold-as-bundled.md) — bn128 降价 被写成已经换了算法 / 就已经重新加入预编译 / 就已经 228 bundled（不变量 1428）

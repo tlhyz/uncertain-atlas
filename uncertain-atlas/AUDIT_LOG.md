@@ -1,3 +1,18 @@
+| A6930 | 记录 | 会与 229 / 101 / 169 / 1431 / 1432 糊成「看见树依赖涨价不是已经是本笔冷热就已经是本笔冷热 interchangeable、就已经是磁盘 O(1) interchangeable、就已经是 2929 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。229 selfbalance vs balance bundled unbundling 完成（1433 item 3） |
+| A6931 | 高 | 看见树依赖涨价不是已经是本笔冷热 会被写成已经是本笔冷热 interchangeable / 101 interchangeable | 官方 EIP-1884 sbal item 3：not already 已经是本笔冷热 / not 101 |
+| A6932 | 高 | 看见trie-dependent reprice is not already cold-warm 会被写成已经是磁盘 O(1) interchangeable / 169 interchangeable | 官方 EIP-1884 sbal item 3：not already 已经是磁盘 O(1) / not 169 |
+| A6933 | 高 | 看见树依赖涨价不是已经是本笔冷热 会被写成已经是 2929 interchangeable | 官方 EIP-1884 sbal item 3：not already settled |
+| A6934 | 中 | 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数会被抄进不确定 | 不抄。不写 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数。不另写 19 节 |
+| A6925 | 记录 | 会与 229 / 169 / 228 / 1431 / 1433 糊成「看见给自己查余额不是已经按本账户价扣就已经按本账户价扣 interchangeable、就已经是更便宜的按地址查 interchangeable、就已经做完 1884 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1884 self-query not already self-priced / not already cheaper-BALANCE / not already 1884-done 正式三事（229 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。229 selfbalance vs balance bundled unbundling 续（1432 item 2） |
+| A6926 | 高 | 看见给自己查余额不是已经按本账户价扣 会被写成已经按本账户价扣 interchangeable / 169 interchangeable | 官方 EIP-1884 sbal item 2：not already 已经按本账户价扣 / not 169 |
+| A6927 | 高 | 看见self-query is not already self-priced 会被写成已经是更便宜的按地址查 interchangeable / 228 interchangeable | 官方 EIP-1884 sbal item 2：not already 已经是更便宜的按地址查 / not 228 |
+| A6928 | 高 | 看见给自己查余额不是已经按本账户价扣 会被写成已经做完 1884 interchangeable | 官方 EIP-1884 sbal item 2：not already settled |
+| A6929 | 中 | 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数会被抄进不确定 | 不抄。不写 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数。不另写 19 节 |
+| A6920 | 记录 | 会与 229 / 169 / 221 / 1432 / 1433 糊成「看见本账户余额指令不是已经是按地址查余额就已经是按地址查余额 interchangeable、就已经改了余额语义 interchangeable、就已经 229 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1884 selfbalance not already BALANCE / not already stack-pop-balance / not already 229-bundled 正式三事（229 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。229 selfbalance vs balance bundled unbundling 启动（1431 item 1） |
+| A6921 | 高 | 看见本账户余额指令不是已经是按地址查余额 会被写成已经是按地址查余额 interchangeable / 169 interchangeable | 官方 EIP-1884 sbal item 1：not already 已经是按地址查余额 / not 169 |
+| A6922 | 高 | 看见SELFBALANCE is not already BALANCE 会被写成已经改了余额语义 interchangeable / 221 interchangeable | 官方 EIP-1884 sbal item 1：not already 已经改了余额语义 / not 221 |
+| A6923 | 高 | 看见本账户余额指令不是已经是按地址查余额 会被写成已经 229 bundled interchangeable | 官方 EIP-1884 sbal item 1：not already settled |
+| A6924 | 中 | 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数会被抄进不确定 | 不抄。不写 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数。不另写 19 节 |
 | A6915 | 记录 | 会与 228 / 199 / 206 / 1428 / 1429 糊成「看见本页不是已经是通用曲线算术就已经是通用曲线算术 interchangeable、就已经是不变量 199 interchangeable、就已经是不变量 227 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。228 bn128-cut vs verify bundled unbundling 完成（1430 item 3） |
 | A6916 | 高 | 看见本页不是已经是通用曲线算术 会被写成已经是通用曲线算术 interchangeable / 199 interchangeable | 官方 EIP-1108 bn128 item 3：not already 已经是通用曲线算术 / not 199 |
 | A6917 | 高 | 看见this page is not already generic curve arithmetic 会被写成已经是不变量 199 interchangeable / 206 interchangeable | 官方 EIP-1108 bn128 item 3：not already 已经是不变量 199 / not 206 |
