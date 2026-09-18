@@ -1,3 +1,7 @@
+- [`name-the-hstead-notbomb-bar.md`](name-the-hstead-notbomb-bar.md) — EIP-2 diff-mean not already bomb-gone / not already bomb-delay / not already 234-bundled 正式四事（234 余量）（不变量 1349）
+- [`name-the-hstead-notfail-bar.md`](name-the-hstead-notfail-bar.md) — EIP-2 no-empty not already code-limit / not already initcode / not already empty-dead 正式四事（234 余量）（不变量 1348）
+- [`name-the-hstead-notsig-bar.md`](name-the-hstead-notsig-bar.md) — EIP-2 high-s not already ECRECOVER-rejects / not already BIP-66 / not already EIP-155 正式四事（234 余量）（不变量 1347）
+- [`name-the-hstead-notfee-bar.md`](name-the-hstead-notfee-bar.md) — EIP-2 create-fee not already CREATE-repriced / not already opcode-gas / not already 234-bundled 正式四事（234 余量）（不变量 1346）
 - [`name-the-ewbcast-notlc-bar.md`](name-the-ewbcast-notlc-bar.md) — ExtWhenBcast broadcast not already last_commit / not already late-Verify / not already 438-bundled 正式三事（513 余量）（不变量 1345）
 - [`name-the-ewbcast-notord-bar.md`](name-the-ewbcast-notord-bar.md) — ExtWhenBcast step7-after-step6 not already construct-CanonicalVote / not already fill / not already Verify 正式三事（513 余量）（不变量 1344）
 - [`name-the-ewbcast-notpre-bar.md`](name-the-ewbcast-notpre-bar.md) — ExtWhenBcast broadcast not already construct-Precommit / not already 438-bundled / not already return-ext 正式三事（513 余量）（不变量 1343）

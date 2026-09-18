@@ -50,7 +50,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过“看见 Homestead 就已经改了 `CREATE` / 就已经让预编译拒高 `s` / 就已经限制代码 / 就已经没有炸弹”。交易创建的费、交易验签、创建失败语义、出块节奏，是四个旋钮。预编译仍接受高 `s`，是官方留下的旧接口，不是“验签已经统一”。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过“看见 Homestead 就已经改了 `CREATE` / 就已经让预编译拒高 `s` / 就已经限制代码 / 就已经没有炸弹”。234 Homestead 硬分叉四件事 bundled unbundling 完成（1346 item 1 / 1347 item 2 / 1348 item 3 / 1349 item 4）；精读 [`worked-example-hstead-notfee-vs-bundled.md`](worked-example-hstead-notfee-vs-bundled.md)（不变量 1346 item 1）、[`worked-example-hstead-notsig-vs-bundled.md`](worked-example-hstead-notsig-vs-bundled.md)（不变量 1347 item 2）、[`worked-example-hstead-notfail-vs-bundled.md`](worked-example-hstead-notfail-vs-bundled.md)（不变量 1348 item 3）、[`worked-example-hstead-notbomb-vs-bundled.md`](worked-example-hstead-notbomb-vs-bundled.md)（不变量 1349 item 4）。交易创建的费、交易验签、创建失败语义、出块节奏，是四个旋钮。预编译仍接受高 `s`，是官方留下的旧接口，不是“验签已经统一”。
 
 ## 本页不抄
 

@@ -1,3 +1,23 @@
+| A6510 | 记录 | 会与 234 / 208 / 223 / 1346 / 1347 糊成「看见难度朝均值不是已经没有炸弹就已经取消指数炸弹 interchangeable、就已经写了推迟炸弹的分叉 interchangeable、就已经 Homestead 四件事 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2 diff-mean not already bomb-gone / not already bomb-delay / not already 234-bundled 正式四事（234 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。234 Homestead 硬分叉四件事 bundled unbundling 完成（1349 item 4） |
+| A6511 | 高 | 看见难度朝均值不是已经没有炸弹 会被写成已经取消指数炸弹 interchangeable / 208 interchangeable | 官方 EIP-2 hstead item 4：not already 已经取消指数炸弹 / not 208 |
+| A6512 | 高 | 看见difficulty toward mean is not bomb gone 会被写成已经写了推迟炸弹的分叉 interchangeable / 223 interchangeable | 官方 EIP-2 hstead item 4：not already 已经写了推迟炸弹的分叉 / not 223 |
+| A6513 | 高 | 看见难度朝均值不是已经没有炸弹 会被写成已经 Homestead 四件事 bundled interchangeable | 官方 EIP-2 hstead item 4：not already settled |
+| A6514 | 中 | 怎样用创建再自毁做便宜转账、怎样调时间戳磨难度会被抄进不确定 | 不抄。不写 怎样用创建再自毁做便宜转账、怎样调时间戳磨难度。不另写 19 节 |
+| A6505 | 记录 | 会与 234 / 185 / 176 / 1346 / 1347 糊成「看见失败不再留空合约不是已经限制代码就已经限制返回代码长度 interchangeable、就已经限制 initcode interchangeable、就已经区分 empty / dead interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2 no-empty not already code-limit / not already initcode / not already empty-dead 正式四事（234 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。234 Homestead 硬分叉四件事 bundled unbundling 续（1348 item 3） |
+| A6506 | 高 | 看见失败不再留空合约不是已经限制代码 会被写成已经限制返回代码长度 interchangeable / 185 interchangeable | 官方 EIP-2 hstead item 3：not already 已经限制返回代码长度 / not 185 |
+| A6507 | 高 | 看见failed create no empty is not code limit 会被写成已经限制 initcode interchangeable / 176 interchangeable | 官方 EIP-2 hstead item 3：not already 已经限制 initcode / not 176 |
+| A6508 | 高 | 看见失败不再留空合约不是已经限制代码 会被写成已经区分 empty / dead interchangeable | 官方 EIP-2 hstead item 3：not already settled |
+| A6509 | 中 | 怎样用创建再自毁做便宜转账、怎样调时间戳磨难度会被抄进不确定 | 不抄。不写 怎样用创建再自毁做便宜转账、怎样调时间戳磨难度。不另写 19 节 |
+| A6500 | 记录 | 会与 234 / 172 / 161 / 1346 / 1348 糊成「看见交易拒高 s 不是已经让预编译拒就已经让 ECRECOVER 拒高 s interchangeable、就已经是比特币 DER 低 s interchangeable、就已经把链标识写进签名 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2 high-s not already ECRECOVER-rejects / not already BIP-66 / not already EIP-155 正式四事（234 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。234 Homestead 硬分叉四件事 bundled unbundling 续（1347 item 2） |
+| A6501 | 高 | 看见交易拒高 s 不是已经让预编译拒 会被写成已经让 ECRECOVER 拒高 s interchangeable / 172 interchangeable | 官方 EIP-2 hstead item 2：not already 已经让 ECRECOVER 拒高 s / not 172 |
+| A6502 | 高 | 看见tx rejects high s is not ECRECOVER rejects 会被写成已经是比特币 DER 低 s interchangeable / 161 interchangeable | 官方 EIP-2 hstead item 2：not already 已经是比特币 DER 低 s / not 161 |
+| A6503 | 高 | 看见交易拒高 s 不是已经让预编译拒 会被写成已经把链标识写进签名 interchangeable | 官方 EIP-2 hstead item 2：not already settled |
+| A6504 | 中 | 怎样用创建再自毁做便宜转账、怎样调时间戳磨难度会被抄进不确定 | 不抄。不写 怎样用创建再自毁做便宜转账、怎样调时间戳磨难度。不另写 19 节 |
+| A6495 | 记录 | 会与 234 / 233 / 160 / 1347 / 1348 糊成「看见交易创建变贵不是已经改了 CREATE就已经改了 CREATE interchangeable、就已经重定价操作码 interchangeable、就已经 Homestead 四件事 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2 create-fee not already CREATE-repriced / not already opcode-gas / not already 234-bundled 正式四事（234 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。234 Homestead 硬分叉四件事 bundled unbundling 启动（1346 item 1） |
+| A6496 | 高 | 看见交易创建变贵不是已经改了 CREATE 会被写成已经改了 CREATE interchangeable / 233 interchangeable | 官方 EIP-2 hstead item 1：not already 已经改了 CREATE / not 233 |
+| A6497 | 高 | 看见tx create fee is not CREATE repriced 会被写成已经重定价操作码 interchangeable / 160 interchangeable | 官方 EIP-2 hstead item 1：not already 已经重定价操作码 / not 160 |
+| A6498 | 高 | 看见交易创建变贵不是已经改了 CREATE 会被写成已经 Homestead 四件事 bundled interchangeable | 官方 EIP-2 hstead item 1：not already settled |
+| A6499 | 中 | 怎样用创建再自毁做便宜转账、怎样调时间戳磨难度会被抄进不确定 | 不抄。不写 怎样用创建再自毁做便宜转账、怎样调时间戳磨难度。不另写 19 节 |
 | A6490 | 记录 | 会与 513 / 438 / 435 / 1343 / 1344 糊成「看见广播了不是已经写进 last_commit就已经写进 last_commit interchangeable、就已经 Verify 过迟到扩展 interchangeable、就已经 ExtendVote When 正式流程 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtWhenBcast broadcast not already last_commit / not already late-Verify / not already 438-bundled 正式三事（513 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。513 ExtendVote When broadcast Precommit bundled unbundling 完成（1345 item 3） |
 | A6491 | 高 | 看见广播了不是已经写进 last_commit 会被写成已经写进 last_commit interchangeable / 438 interchangeable | 官方 ExtWhenBcast ewbcast item 3：not already 已经写进 last_commit / not 438 |
 | A6492 | 高 | 看见broadcasts is not write into last_commit 会被写成已经 Verify 过迟到扩展 interchangeable / 435 interchangeable | 官方 ExtWhenBcast ewbcast item 3：not already 已经 Verify 过迟到扩展 / not 435 |

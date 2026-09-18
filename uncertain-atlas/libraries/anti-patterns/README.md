@@ -1,3 +1,7 @@
+- [`hstead-notbomb-sold-as-bundled.md`](hstead-notbomb-sold-as-bundled.md) — 难度朝均值 被写成已经取消炸弹 / 就已经写了推迟炸弹分叉 / 就已经是 Homestead 四件 bundled（不变量 1349）
+- [`hstead-notfail-sold-as-bundled.md`](hstead-notfail-sold-as-bundled.md) — 失败不再留空合约 被写成已经限制代码长度 / 就已经限制 initcode / 就已经 empty/dead（不变量 1348）
+- [`hstead-notsig-sold-as-bundled.md`](hstead-notsig-sold-as-bundled.md) — 交易拒高 s 被写成已经让预编译拒 / 就已经是比特币 DER / 就已经是 EIP-155（不变量 1347）
+- [`hstead-notfee-sold-as-bundled.md`](hstead-notfee-sold-as-bundled.md) — 交易创建变贵 被写成已经改了 CREATE / 就已经重定价操作码 / 就已经是 Homestead 四件 bundled（不变量 1346）
 - [`ewbcast-notlc-sold-as-bundled.md`](ewbcast-notlc-sold-as-bundled.md) — 广播了 被写成已经写进 last_commit / 就已经 Verify 过迟到扩展 / 就已经是 438 bundled（不变量 1345）
 - [`ewbcast-notord-sold-as-bundled.md`](ewbcast-notord-sold-as-bundled.md) — step 7 顺序 被写成已经 construct CanonicalVote / 就已经 fill / 就已经 Verify 过（不变量 1344）
 - [`ewbcast-notpre-sold-as-bundled.md`](ewbcast-notpre-sold-as-bundled.md) — 广播 Precommit 被写成已经 constructs Precommit / 就已经是 438 bundled / 就已经 return extension（不变量 1343）

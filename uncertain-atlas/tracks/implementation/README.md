@@ -1002,6 +1002,10 @@
 - [`worked-example-shift-vs-arithmetic.md`](worked-example-shift-vs-arithmetic.md) — 看见原生移位指令 ≠ 已经用算术拼过移位；看见算术右移 ≠ 已经是有符号除；看见更便宜 ≠ 已经是位域打包产品；145 ≠ 已经改了旧字节码（不变量 231）
 - [`worked-example-returndata-vs-memory.md`](worked-example-returndata-vs-memory.md) — 看见返回数据缓冲 ≠ 已经是内存；看见本页 ≠ 已经是 calldata / 已经用两次调用先问长度；看见失败数据能再取 ≠ 已经是 140；下一次类调用 ≠ 缓冲还在（不变量 232）
 - [`worked-example-delegatecall-vs-callcode.md`](worked-example-delegatecall-vs-callcode.md) — 看见委托调用 ≠ 已经是 CALLCODE；看见父作用域发送者传到子作用域 ≠ 已经是普通 CALL；看见可变代码源 ≠ 已经是 7702；能塞进调用数据 ≠ 已经是本页（不变量 233）
+- [`worked-example-hstead-notfee-vs-bundled.md`](worked-example-hstead-notfee-vs-bundled.md) — 交易创建变贵≠already 改了CREATE/重定价操作码/Homestead四件bundled；≠234 bundled（不变量 1346）
+- [`worked-example-hstead-notsig-vs-bundled.md`](worked-example-hstead-notsig-vs-bundled.md) — 交易拒高s≠already ECRECOVER拒/比特币DER/EIP-155链标识；≠234 bundled（不变量 1347）
+- [`worked-example-hstead-notfail-vs-bundled.md`](worked-example-hstead-notfail-vs-bundled.md) — 失败不再留空合约≠already 代码长度上限/initcode/empty-dead；≠234 bundled（不变量 1348）
+- [`worked-example-hstead-notbomb-vs-bundled.md`](worked-example-hstead-notbomb-vs-bundled.md) — 难度朝均值≠already 取消炸弹/推迟炸弹分叉/Homestead四件bundled；≠234 bundled（不变量 1349）
 - [`worked-example-homestead-vs-already-done.md`](worked-example-homestead-vs-already-done.md) — 看见交易创建变贵 ≠ 已经改了 CREATE；看见交易拒高 s ≠ 已经让 ECRECOVER 拒；看见创建失败不再留空合约 ≠ 已经限制代码；看见难度朝均值 ≠ 已经没有炸弹（不变量 234）
 - [`worked-example-rcpt-notroot-vs-bundled.md`](worked-example-rcpt-notroot-vs-bundled.md) — 状态码≠already 中间状态根/废掉中间根的规范/另开一栏；≠236 bundled（不变量 1301）
 - [`worked-example-rcpt-notgas-vs-bundled.md`](worked-example-rcpt-notgas-vs-bundled.md) — 还剩气≠already 成功/气烧光就已经失败/已经写了回滚留气；≠236 bundled（不变量 1302）

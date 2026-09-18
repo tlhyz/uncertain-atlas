@@ -1,3 +1,19 @@
+## 2026-09-18（续 1466）
+
+- 不变量 1349；语料 C1327；模式 name-the-hstead-notbomb-bar；反模式 hstead-notbomb-sold-as-bundled；L10.3 第 1318 条。填 L5.1 EIP-2 diff-mean not already bomb-gone / not already bomb-delay / not already 234-bundled 正式四事（234 余量）。234 Homestead 硬分叉四件事 bundled unbundling 完成（1349 item 4）。
+
+## 2026-09-18（续 1465）
+
+- 不变量 1348；语料 C1326；模式 name-the-hstead-notfail-bar；反模式 hstead-notfail-sold-as-bundled；L10.3 第 1317 条。填 L5.1 EIP-2 no-empty not already code-limit / not already initcode / not already empty-dead 正式四事（234 余量）。234 Homestead 硬分叉四件事 bundled unbundling 续（1348 item 3）。
+
+## 2026-09-18（续 1464）
+
+- 不变量 1347；语料 C1325；模式 name-the-hstead-notsig-bar；反模式 hstead-notsig-sold-as-bundled；L10.3 第 1316 条。填 L5.1 EIP-2 high-s not already ECRECOVER-rejects / not already BIP-66 / not already EIP-155 正式四事（234 余量）。234 Homestead 硬分叉四件事 bundled unbundling 续（1347 item 2）。
+
+## 2026-09-18（续 1463）
+
+- 不变量 1346；语料 C1324；模式 name-the-hstead-notfee-bar；反模式 hstead-notfee-sold-as-bundled；L10.3 第 1315 条。填 L5.1 EIP-2 create-fee not already CREATE-repriced / not already opcode-gas / not already 234-bundled 正式四事（234 余量）。234 Homestead 硬分叉四件事 bundled unbundling 启动（1346 item 1）。
+
 ## 2026-09-18（续 1462）
 
 - 不变量 1345；语料 C1323；模式 name-the-ewbcast-notlc-bar；反模式 ewbcast-notlc-sold-as-bundled；L10.3 第 1314 条。填 L4.4 ExtWhenBcast broadcast not already last_commit / not already late-Verify / not already 438-bundled 正式三事（513 余量）。513 ExtendVote When broadcast Precommit bundled unbundling 完成（1345 item 3）。
