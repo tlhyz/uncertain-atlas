@@ -1,3 +1,6 @@
+- [`name-the-enreq-notfind-bar.md`](name-the-enreq-notfind-bar.md) — EIP-868 find not already have / not already trusted / not already no-amp 正式三事（241 余量）（不变量 1294）
+- [`name-the-enreq-notreq-bar.md`](name-the-enreq-notreq-bar.md) — EIP-868 request not already parsed / not already signed-ok / not already verified 正式三事（241 余量）（不变量 1293）
+- [`name-the-enreq-notping-bar.md`](name-the-enreq-notping-bar.md) — EIP-868 ping not already have / not already fetched / not already in-hand 正式三事（241 余量）（不变量 1292）
 - [`name-the-enr-notid-bar.md`](name-the-enr-notid-bar.md) — EIP-778 scheme not already new-disc / not already new-scheme / not already found-trusted 正式三事（240 余量）（不变量 1291）
 - [`name-the-enr-notnew-bar.md`](name-the-enr-notnew-bar.md) — EIP-778 signed not already newest / not already compared / not already network-swapped 正式三事（240 余量）（不变量 1290）
 - [`name-the-enr-notkeys-bar.md`](name-the-enr-notkeys-bar.md) — EIP-778 keys not already interpreted / not already endpoint / not already disc-upgraded 正式三事（240 余量）（不变量 1289）

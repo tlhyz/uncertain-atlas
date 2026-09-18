@@ -1,3 +1,6 @@
+- [`enreq-notfind-sold-as-bundled.md`](enreq-notfind-sold-as-bundled.md) — FindNode 找到人 被写成已经有记录 / 看见公钥就已经有当前记录 / 有请求放大面就已经消失（不变量 1294）
+- [`enreq-notreq-sold-as-bundled.md`](enreq-notreq-sold-as-bundled.md) — 能发请求 被写成已经解析 / 回了记录就已经核签 / 能要就已经验过（不变量 1293）
+- [`enreq-notping-sold-as-bundled.md`](enreq-notping-sold-as-bundled.md) — ping 里有序号 被写成已经拿到记录 / 序号对上就已经取回 / 通告序号记录就已经在手里（不变量 1292）
 - [`enr-notid-sold-as-bundled.md`](enr-notid-sold-as-bundled.md) — 默认方案名 被写成已经换发现协议 / 多写键就已经换签名方案 / DNS 转发就已经从发现找到（不变量 1291）
 - [`enr-notnew-sold-as-bundled.md`](enr-notnew-sold-as-bundled.md) — 签过的记录 被写成已经最新 / 能验就已经比过序号 / 看见序号就已经全网换完（不变量 1290）
 - [`enr-notkeys-sold-as-bundled.md`](enr-notkeys-sold-as-bundled.md) — 能多写键被收下 被写成已经解释 / 签过就已经有可连地址 / 多写键就已经升级发现（不变量 1289）

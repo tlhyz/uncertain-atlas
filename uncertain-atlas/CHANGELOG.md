@@ -1,3 +1,15 @@
+## 2026-09-18（续 1411）
+
+- 不变量 1294；语料 C1272；模式 name-the-enreq-notfind-bar；反模式 enreq-notfind-sold-as-bundled；L10.3 第 1263 条。填 L9.1 EIP-868 find not already have / not already trusted / not already no-amp 正式三事（241 余量）。241 enr request vs have bundled unbundling 完成（1294 item 3）。
+
+## 2026-09-18（续 1410）
+
+- 不变量 1293；语料 C1271；模式 name-the-enreq-notreq-bar；反模式 enreq-notreq-sold-as-bundled；L10.3 第 1262 条。填 L9.1 EIP-868 request not already parsed / not already signed-ok / not already verified 正式三事（241 余量）。241 enr request vs have bundled unbundling 续（1293 item 2）。
+
+## 2026-09-18（续 1409）
+
+- 不变量 1292；语料 C1270；模式 name-the-enreq-notping-bar；反模式 enreq-notping-sold-as-bundled；L10.3 第 1261 条。填 L9.1 EIP-868 ping not already have / not already fetched / not already in-hand 正式三事（241 余量）。241 enr request vs have bundled unbundling 启动（1292 item 1）。
+
 ## 2026-09-18（续 1408）
 
 - 不变量 1291；语料 C1269；模式 name-the-enr-notid-bar；反模式 enr-notid-sold-as-bundled；L10.3 第 1260 条。填 L9.1 EIP-778 scheme not already new-disc / not already new-scheme / not already found-trusted 正式三事（240 余量）。240 enr vs newest bundled unbundling 完成（1291 item 3）。

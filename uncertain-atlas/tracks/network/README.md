@@ -27,6 +27,9 @@ blocksync 目标必须可归因：[`../failure-museum/asa-2025-001.md`](../failu
 签过的记录 ≠ 已经是最新一份：[`worked-example-enr-notnew-vs-bundled.md`](worked-example-enr-notnew-vs-bundled.md)（签过的记录≠already 是最新一份/比过序号/全网换完；≠240 bundled；不变量 1290）。
 默认方案名 ≠ 已经换了发现协议：[`worked-example-enr-notid-vs-bundled.md`](worked-example-enr-notid-vs-bundled.md)（默认方案名≠already 换了发现协议/换了签名方案/从发现里找到；≠240 bundled；不变量 1291）。
 签过的节点记录 ≠ 已经最新：[`worked-example-enr-vs-newest.md`](worked-example-enr-vs-newest.md)（看见签过的记录不是已经是最新一份；能多写键不是已经换了身份方案；778 ≠ 2124 ≠ 8 ≠ 7642）。
+ping 里有序号 ≠ 已经拿到当前记录：[`worked-example-enreq-notping-vs-bundled.md`](worked-example-enreq-notping-vs-bundled.md)（ping 里有序号≠already 拿到当前记录/把记录取回来/记录在手里；≠241 bundled；不变量 1292）。
+能发请求 ≠ 已经解析完：[`worked-example-enreq-notreq-vs-bundled.md`](worked-example-enreq-notreq-vs-bundled.md)（能发请求≠already 解析完/核过签名/验过是那个节点签的；≠241 bundled；不变量 1293）。
+FindNode 找到人 ≠ 已经有当前记录：[`worked-example-enreq-notfind-vs-bundled.md`](worked-example-enreq-notfind-vs-bundled.md)（FindNode 找到人≠already 有当前记录/拿到记录/放大面消失；≠241 bundled；不变量 1294）。
 ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`](worked-example-enr-request-vs-have.md)（看见 ping 里的记录序号不是已经有当前记录；能发请求不是已经解析；FindNode 找到人不是已经有记录；868 ≠ 778 ≠ 2124 ≠ 8）。
 线上在加密 ≠ 已经私人：[`worked-example-vt324-notpriv-vs-bundled.md`](worked-example-vt324-notpriv-vs-bundled.md)（线上在加密≠already 知道对面是谁/私人/没有隐私改进；≠242 bundled；不变量 1274）。
 字节看起来随机 ≠ 已经认不出：[`worked-example-vt324-notrand-vs-bundled.md`](worked-example-vt324-notrand-vs-bundled.md)（字节看起来随机≠already 防火墙认不出/塑过形/流量分析失效；≠242 bundled；不变量 1275）。

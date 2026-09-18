@@ -1,3 +1,18 @@
+| A6235 | 记录 | 会与 241 / 240 / 235 / 1292 / 1293 糊成「看见FindNode 找到人就已经有当前记录 interchangeable、就已经拿到记录 interchangeable、就放大面已经消失 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-868 find not already have / not already trusted / not already no-amp 正式三事（241 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。241 enr request vs have bundled unbundling 完成（1294 item 3） |
+| A6236 | 高 | 看见FindNode 找到人 会被写成已经有当前记录 interchangeable / 240 interchangeable | 官方 EIP-868 enreq item 3：not already 已经有当前记录 / not 240 |
+| A6237 | 高 | 看见公钥 会被写成已经拿到记录 interchangeable / 235 interchangeable | 官方 EIP-868 enreq item 3：not already 已经拿到记录 / not 235 |
+| A6238 | 高 | 看见FindNode 找到人 会被写成放大面已经消失 interchangeable | 官方 EIP-868 enreq item 3：not already settled |
+| A6239 | 中 | 怎样造放大流量、怎样伪造答复、怎样用过期包试探会被抄进不确定 | 不抄。不写 怎样造放大流量、怎样伪造答复、怎样用过期包试探。不另写 19 节 |
+| A6230 | 记录 | 会与 241 / 240 / 235 / 1292 / 1294 糊成「看见能发请求就已经解析完 interchangeable、就已经核过签名 interchangeable、就已经验过是那个节点签的 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-868 request not already parsed / not already signed-ok / not already verified 正式三事（241 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。241 enr request vs have bundled unbundling 续（1293 item 2） |
+| A6231 | 高 | 看见能发请求 会被写成已经解析完 interchangeable / 240 interchangeable | 官方 EIP-868 enreq item 2：not already 已经解析完 / not 240 |
+| A6232 | 高 | 看见回了记录 会被写成已经核过签名 interchangeable / 235 interchangeable | 官方 EIP-868 enreq item 2：not already 已经核过签名 / not 235 |
+| A6233 | 高 | 看见能发请求 会被写成已经验过是那个节点签的 interchangeable | 官方 EIP-868 enreq item 2：not already settled |
+| A6234 | 中 | 怎样造放大流量、怎样伪造答复、怎样用过期包试探会被抄进不确定 | 不抄。不写 怎样造放大流量、怎样伪造答复、怎样用过期包试探。不另写 19 节 |
+| A6225 | 记录 | 会与 241 / 240 / 239 / 1293 / 1294 糊成「看见ping 里有序号就已经拿到当前记录 interchangeable、就已经把记录取回来 interchangeable、就记录已经在手里 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-868 ping not already have / not already fetched / not already in-hand 正式三事（241 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。241 enr request vs have bundled unbundling 启动（1292 item 1） |
+| A6226 | 高 | 看见ping 里有序号 会被写成已经拿到当前记录 interchangeable / 240 interchangeable | 官方 EIP-868 enreq item 1：not already 已经拿到当前记录 / not 240 |
+| A6227 | 高 | 看见两边序号对上 会被写成已经把记录取回来 interchangeable / 239 interchangeable | 官方 EIP-868 enreq item 1：not already 已经把记录取回来 / not 239 |
+| A6228 | 高 | 看见ping 里有序号 会被写成记录已经在手里 interchangeable | 官方 EIP-868 enreq item 1：not already settled |
+| A6229 | 中 | 怎样造放大流量、怎样伪造答复、怎样用过期包试探会被抄进不确定 | 不抄。不写 怎样造放大流量、怎样伪造答复、怎样用过期包试探。不另写 19 节 |
 | A6220 | 记录 | 会与 240 / 241 / 235 / 1289 / 1290 糊成「看见默认方案名就已经换了发现协议 interchangeable、就已经换了签名方案 interchangeable、就已经从发现里找到 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-778 scheme not already new-disc / not already new-scheme / not already found-trusted 正式三事（240 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。240 enr vs newest bundled unbundling 完成（1291 item 3） |
 | A6221 | 高 | 看见默认方案名 会被写成已经换了发现协议 interchangeable / 241 interchangeable | 官方 EIP-778 enr item 3：not already 已经换了发现协议 / not 241 |
 | A6222 | 高 | 看见能走 DNS 转发 会被写成已经换了签名方案 interchangeable / 235 interchangeable | 官方 EIP-778 enr item 3：not already 已经换了签名方案 / not 235 |

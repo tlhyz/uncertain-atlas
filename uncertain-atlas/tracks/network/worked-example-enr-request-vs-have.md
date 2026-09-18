@@ -41,7 +41,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见 ping 带了序号就已经有当前记录 / 就能请求就已经解析 / 就已经没有放大」。若对照发现要记录，必须分开通告序号、请求答复、查找路径。不要把找到邻居写成已经信任。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见 ping 带了序号就已经有当前记录 / 就能请求就已经解析 / 就已经没有放大」。若对照发现要记录，必须分开通告序号、请求答复、查找路径。不要把找到邻居写成已经信任。241 enr request vs have bundled unbundling 完成（1292 item 1 / 1293 item 2 / 1294 item 3）；精读 [`worked-example-enreq-notping-vs-bundled.md`](worked-example-enreq-notping-vs-bundled.md)（不变量 1292 item 1）、[`worked-example-enreq-notreq-vs-bundled.md`](worked-example-enreq-notreq-vs-bundled.md)（不变量 1293 item 2）、[`worked-example-enreq-notfind-vs-bundled.md`](worked-example-enreq-notfind-vs-bundled.md)（不变量 1294 item 3）。
 
 ## 本页不抄
 
