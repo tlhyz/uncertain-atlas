@@ -1,3 +1,15 @@
+## 2026-09-18（续 1369）
+
+- 不变量 1252；语料 C1230；模式 name-the-erl330-notflood-bar；反模式 erl330-notflood-sold-as-bundled；L10.3 第 1221 条。填 L3.4 / L9.1 / L9.2 BIP-330 sketch not already have / not already illegal / not already wtxid 正式三事（249 余量）。249 erlay vs have bundled unbundling 完成（1252 item 3）。
+
+## 2026-09-18（续 1368）
+
+- 不变量 1251；语料 C1229；模式 name-the-erl330-notsig-bar；反模式 erl330-notsig-sold-as-bundled；L10.3 第 1220 条。填 L3.4 / L9.1 / L9.2 BIP-330 sendtxrcncl not already reconciling / not already opened / not already aligned 正式三事（249 余量）。249 erlay vs have bundled unbundling 续（1251 item 2）。
+
+## 2026-09-18（续 1367）
+
+- 不变量 1250；语料 C1228；模式 name-the-erl330-nothave-bar；反模式 erl330-nothave-sold-as-bundled；L10.3 第 1219 条。填 L3.4 / L9.1 / L9.2 BIP-330 recon not already have / not already flood-retired / not already net-wide 正式三事（249 余量）。249 erlay vs have bundled unbundling 启动（1250 item 1）。
+
 ## 2026-09-18（续 1366）
 
 - 不变量 1249；语料 C1227；模式 name-the-wtx339-notold-bar；反模式 wtx339-notold-sold-as-bundled；L10.3 第 1218 条。填 L3.4 / L3.7 / L9.1 BIP-339 old-getdata not already retired / not already have-wit / not already net-wide 正式三事（248 余量）。248 wtxidrelay vs have bundled unbundling 完成（1249 item 3）。

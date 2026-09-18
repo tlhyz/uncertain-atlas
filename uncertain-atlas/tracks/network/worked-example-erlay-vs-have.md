@@ -38,7 +38,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见对账素描就已经有那些交易 / 就已经代替洪水 / 就已经在对账」。若对照通告集合对账，必须分开积木、握手信号、素描与退回洪水。不要把草案写成已经在主网默认打开。不要把短标识写成已经有带见证的哈希。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见对账素描就已经有那些交易 / 就已经代替洪水 / 就已经在对账」。若对照通告集合对账，必须分开积木、握手信号、素描与退回洪水。不要把草案写成已经在主网默认打开。不要把短标识写成已经有带见证的哈希。249 erlay vs have bundled unbundling 完成（1250 item 1 / 1251 item 2 / 1252 item 3）；精读 [`worked-example-erl330-nothave-vs-bundled.md`](worked-example-erl330-nothave-vs-bundled.md)（不变量 1250 item 1）、[`worked-example-erl330-notsig-vs-bundled.md`](worked-example-erl330-notsig-vs-bundled.md)（不变量 1251 item 2）、[`worked-example-erl330-notflood-vs-bundled.md`](worked-example-erl330-notflood-vs-bundled.md)（不变量 1252 item 3）。
 
 ## 本页不抄
 

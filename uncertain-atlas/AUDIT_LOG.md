@@ -1,3 +1,18 @@
+| A6025 | 记录 | 会与 249 / 152 / 36 / 1250 / 1251 糊成「看见对账失败退回洪水就已经退役库存通告 interchangeable、就已经有那些交易 interchangeable、就已经有带见证的哈希 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 / L9.2 BIP-330 sketch not already have / not already illegal / not already wtxid 正式三事（249 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。249 erlay vs have bundled unbundling 完成（1252 item 3） |
+| A6026 | 高 | 看见对账失败退回洪水 会被写成库存通告已经退役 interchangeable / 152 interchangeable | 官方 BIP-330 erlay item 3：not already have / not 152 |
+| A6027 | 高 | 看见一份素描 会被写成已经有那些交易 interchangeable / 36 interchangeable | 官方 BIP-330 erlay item 3：not already not already illegal / not 36 |
+| A6028 | 高 | 看见短标识 会被写成已经有带见证的哈希 interchangeable | 官方 BIP-330 erlay item 3：not already settled |
+| A6029 | 中 | 怎样造碰撞短标识、怎样拖住对账、怎样用失败旗标灌库存通告会被抄进不确定 | 不抄。不写 怎样造碰撞短标识、怎样拖住对账、怎样用失败旗标灌库存通告。不另写 19 节 |
+| A6020 | 记录 | 会与 249 / 248 / 259 / 1250 / 1252 糊成「看见发了 sendtxrcncl 就已经在对账 interchangeable、就已经打开对账 interchangeable、就已经对齐过一轮 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 / L9.2 BIP-330 sendtxrcncl not already reconciling / not already opened / not already aligned 正式三事（249 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。249 erlay vs have bundled unbundling 续（1251 item 2） |
+| A6021 | 高 | 看见发了 sendtxrcncl 会被写成已经在对账 interchangeable / 248 interchangeable | 官方 BIP-330 erlay item 2：not already reconciling / not 248 |
+| A6022 | 高 | 看见发了 wtxidrelay 会被写成对账已经打开 interchangeable / 259 interchangeable | 官方 BIP-330 erlay item 2：not already not already opened / not 259 |
+| A6023 | 高 | 看见协议两边都写了支持 会被写成已经对齐过一轮 interchangeable | 官方 BIP-330 erlay item 2：not already settled |
+| A6024 | 中 | 怎样造碰撞短标识、怎样拖住对账、怎样用失败旗标灌库存通告会被抄进不确定 | 不抄。不写 怎样造碰撞短标识、怎样拖住对账、怎样用失败旗标灌库存通告。不另写 19 节 |
+| A6015 | 记录 | 会与 249 / 248 / 245 / 1251 / 1252 糊成「看见一次对账就已经有那些交易 interchangeable、就已经退役库存通告 interchangeable、就已经全网齐 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 / L9.2 BIP-330 recon not already have / not already flood-retired / not already net-wide 正式三事（249 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。249 erlay vs have bundled unbundling 启动（1250 item 1） |
+| A6016 | 高 | 看见一次对账 会被写成已经有那些交易 interchangeable / 248 interchangeable | 官方 BIP-330 erlay item 1：not already have / not 248 |
+| A6017 | 高 | 看见对账还在用库存通告 会被写成库存通告已经退役 interchangeable / 245 interchangeable | 官方 BIP-330 erlay item 1：not already not already flood-retired / not 245 |
+| A6018 | 高 | 看见只向一小撮邻居发洪水 会被写成全网已经齐 interchangeable | 官方 BIP-330 erlay item 1：not already settled |
+| A6019 | 中 | 怎样造碰撞短标识、怎样拖住对账、怎样用失败旗标灌库存通告会被抄进不确定 | 不抄。不写 怎样造碰撞短标识、怎样拖住对账、怎样用失败旗标灌库存通告。不另写 19 节 |
 | A6010 | 记录 | 会与 248 / 152 / 245 / 1247 / 1248 糊成「看见仍用旧类型要父交易就已经退役旧库存 interchangeable、就已经有见证 interchangeable、就已经全网不再按 txid 通告 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L3.7 / L9.1 BIP-339 old-getdata not already retired / not already have-wit / not already net-wide 正式三事（248 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。248 wtxidrelay vs have bundled unbundling 完成（1249 item 3） |
 | A6011 | 高 | 看见仍用旧类型要父交易 会被写成旧库存已经退役 interchangeable / 152 interchangeable | 官方 BIP-339 wtxidrelay item 3：not already retired / not 152 |
 | A6012 | 高 | 看见通告类型改了 会被写成已经有见证 interchangeable / 245 interchangeable | 官方 BIP-339 wtxidrelay item 3：not already not already have-wit / not 245 |

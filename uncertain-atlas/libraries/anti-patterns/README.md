@@ -1,3 +1,6 @@
+- [`erl330-notflood-sold-as-bundled.md`](erl330-notflood-sold-as-bundled.md) — 对账失败退回洪水 被写成库存通告已经退役 / 一份素描就已经有交易 / 短标识就已经有带见证的哈希（不变量 1252）
+- [`erl330-notsig-sold-as-bundled.md`](erl330-notsig-sold-as-bundled.md) — 发了 sendtxrcncl 被写成已经在对账 / 发了 wtxidrelay 就已经打开对账 / 两边都写了支持就已经对齐（不变量 1251）
+- [`erl330-nothave-sold-as-bundled.md`](erl330-nothave-sold-as-bundled.md) — 一次对账 被写成已经有那些交易 / 库存通告已经退役 / 只向一小撮邻居发洪水就已经全网齐（不变量 1250）
 - [`wtx339-notold-sold-as-bundled.md`](wtx339-notold-sold-as-bundled.md) — 仍用旧类型要父交易 被写成旧库存已经退役 / 通告类型改了就已经有见证 / 两端都支持就已经全网改口（不变量 1249）
 - [`wtx339-notswitch-sold-as-bundled.md`](wtx339-notswitch-sold-as-bundled.md) — 发了 wtxidrelay 被写成已经改口 / 已经谈妥 / 已经在用（不变量 1248）
 - [`wtx339-nothave-sold-as-bundled.md`](wtx339-nothave-sold-as-bundled.md) — 按 wtxid 通告 被写成已经有那笔交易 / 已经收下 / 拒过见证就永远不该下（不变量 1247）

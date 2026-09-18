@@ -1,3 +1,6 @@
+- [`name-the-erl330-notflood-bar.md`](name-the-erl330-notflood-bar.md) — BIP-330 sketch not already have / not already illegal / not already wtxid 正式三事（249 余量）（不变量 1252）
+- [`name-the-erl330-notsig-bar.md`](name-the-erl330-notsig-bar.md) — BIP-330 sendtxrcncl not already reconciling / not already opened / not already aligned 正式三事（249 余量）（不变量 1251）
+- [`name-the-erl330-nothave-bar.md`](name-the-erl330-nothave-bar.md) — BIP-330 recon not already have / not already flood-retired / not already net-wide 正式三事（249 余量）（不变量 1250）
 - [`name-the-wtx339-notold-bar.md`](name-the-wtx339-notold-bar.md) — BIP-339 old-getdata not already retired / not already have-wit / not already net-wide 正式三事（248 余量）（不变量 1249）
 - [`name-the-wtx339-notswitch-bar.md`](name-the-wtx339-notswitch-bar.md) — BIP-339 wtxidrelay not already switched / not already negotiated / not already using 正式三事（248 余量）（不变量 1248）
 - [`name-the-wtx339-nothave-bar.md`](name-the-wtx339-nothave-bar.md) — BIP-339 wtxid-ann not already have / not already accepted / not already never-again 正式三事（248 余量）（不变量 1247）
