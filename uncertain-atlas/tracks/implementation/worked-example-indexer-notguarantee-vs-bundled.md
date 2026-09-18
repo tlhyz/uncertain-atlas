@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看索引器去重不是已经保证不重复 not already no-duplicate guarantee / not already strong guarantee / not already never again 正式三事（313 余量），必须分开池子挡过一次 是不是 already no-duplicate guarantee interchangeable / 313 mempool-indexer bundled interchangeable / indexer-sold-as-replay interchangeable、索引器在 是不是 already strong guarantee interchangeable、没报重复 是不是 already never again interchangeable。可以跳过「看见池子挡过就已经保证不重放 interchangeable / 就已经有强保证 interchangeable / 就已经不会再来 interchangeable」。不要另写怎样做索引器。313 mempool-indexer vs replay bundled unbundling 在本页 item 1 完成；续 [`worked-example-indexer-notappprotect-vs-bundled.md`](worked-example-indexer-notappprotect-vs-bundled.md)（不变量 699 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看索引器去重不是已经保证不重复 not already no-duplicate guarantee / not already strong guarantee / not already never again 正式三事（313 余量），必须分开池子挡过一次 是不是 already no-duplicate guarantee interchangeable / 313 mempool-indexer bundled interchangeable / indexer-sold-as-replay interchangeable、索引器在 是不是 already strong guarantee interchangeable、没报重复 是不是 already never again interchangeable。可以跳过「看见池子挡过就已经保证不重放 interchangeable / 就已经有强保证 interchangeable / 就已经不会再来 interchangeable」。不要另写怎样做索引器。313 mempool-indexer vs replay bundled unbundling 在本页 item 1 完成；续 [`worked-example-indexer-notappprotect-vs-bundled.md`](worked-example-indexer-notappprotect-vs-bundled.md)（不变量 699 item 2）。
 
 ## 本页不抄
 
