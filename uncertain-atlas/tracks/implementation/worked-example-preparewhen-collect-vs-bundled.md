@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When collect / synchronous / manipulate 正式三事，必须分开 collects priority / creates header 是不是 raw proposal bundled interchangeable、PrepareProposal synchronous call 是不是能在返回后再改裁决 interchangeable、can manipulate transactions 是不是 Prepare 改列表 bundled interchangeable / 已经候选交差 interchangeable。可以跳过「看见自己是提议者就已经 raw proposal bundled interchangeable、已经能在返回后再改裁决、已经 Prepare 改列表 bundled interchangeable」。不要另写怎样从池子收交易、怎样改 Prepare 列表。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When collect / synchronous / manipulate 正式三事，必须分开 collects priority / creates header 是不是 raw proposal bundled interchangeable、PrepareProposal synchronous call 是不是能在返回后再改裁决 interchangeable、can manipulate transactions 是不是 Prepare 改列表 bundled interchangeable / 已经候选交差 interchangeable。可以跳过「看见自己是提议者就已经 raw proposal bundled interchangeable、已经能在返回后再改裁决、已经 Prepare 改列表 bundled interchangeable」。505 PrepareProposal When collect bundled unbundling 完成（1310 item 1 / 1311 item 2 / 1312 item 3）；精读 [`worked-example-prepwhen-notprio-vs-bundled.md`](worked-example-prepwhen-notprio-vs-bundled.md)（不变量 1310 item 1）、[`worked-example-prepwhen-notsync-vs-bundled.md`](worked-example-prepwhen-notsync-vs-bundled.md)（不变量 1311 item 2）、[`worked-example-prepwhen-notmanip-vs-bundled.md`](worked-example-prepwhen-notmanip-vs-bundled.md)（不变量 1312 item 3）。不要另写怎样从池子收交易、怎样改 Prepare 列表。
 
 ## 本页不抄
 

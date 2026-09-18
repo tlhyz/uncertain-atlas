@@ -1,3 +1,15 @@
+## 2026-09-18（续 1429）
+
+- 不变量 1312；语料 C1290；模式 name-the-prepwhen-notmanip-bar；反模式 prepwhen-notmanip-sold-as-bundled；L10.3 第 1281 条。填 L4.4 PrepareWhen manip not already Prepare-list / not already ExecuteTxState / not already late-ext 正式三事（505 余量）。505 PrepareProposal When collect bundled unbundling 完成（1312 item 3）。
+
+## 2026-09-18（续 1428）
+
+- 不变量 1311；语料 C1289；模式 name-the-prepwhen-notsync-bar；反模式 prepwhen-notsync-sold-as-bundled；L10.3 第 1280 条。填 L4.4 PrepareWhen sync not already can-change-after-return / not already left-critical-path / not already Process-sync 正式三事（505 余量）。505 PrepareProposal When collect bundled unbundling 续（1311 item 2）。
+
+## 2026-09-18（续 1427）
+
+- 不变量 1310；语料 C1288；模式 name-the-prepwhen-notprio-bar；反模式 prepwhen-notprio-sold-as-bundled；L10.3 第 1279 条。填 L4.4 PrepareWhen collect not already raw-proposal / not already full-pool / not already validValue-skip 正式三事（505 余量）。505 PrepareProposal When collect bundled unbundling 启动（1310 item 1）。
+
 ## 2026-09-18（续 1426）
 
 - 不变量 1309；语料 C1287；模式 name-the-nochecks-notdet-bar；反模式 nochecks-notdet-sold-as-bundled；L10.3 第 1278 条。填 L4.4 PrepareNochecks nondet not already must-deterministic / not already same-ruler / not already Process-MUST-det 正式三事（504 余量）。504 PrepareProposal Usage nochecks bundled unbundling 完成（1309 item 3）。

@@ -373,6 +373,9 @@
 - [`worked-example-extwhen-call-vs-bundled.md`](worked-example-extwhen-call-vs-bundled.md) — calls ExtendVote with v ≠ lock values bundled；synchronous ExtendVote call ≠ ExtendVote 何时调用 bundled；step 2 before return extension ≠ ExtendVote When 正式流程 bundled（不变量 508）
 - [`worked-example-extwhen-lock-vs-bundled.md`](worked-example-extwhen-lock-vs-bundled.md) — sets lockedValue/validValue ≠ +2/3 prevote 锁住 bundled；sets lockedRound/validRound ≠ validValue 跳过 Prepare；step 1 before ExtendVote call ≠ ExtendVote When 正式流程 bundled（不变量 507）
 - [`worked-example-preparewhen-return-vs-bundled.md`](worked-example-preparewhen-return-vs-bundled.md) — includes tx list in return ≠ raw proposal bundled；returns from call ≠ Process 紧跟 Prepare bundled；uses modified block as proposal ≠ validValue 跳过 Prepare（不变量 506）
+- [`worked-example-prepwhen-notprio-vs-bundled.md`](worked-example-prepwhen-notprio-vs-bundled.md) — 按优先级收池造头≠already raw proposal/整池可见/validValue跳过；≠505 bundled（不变量 1310）
+- [`worked-example-prepwhen-notsync-vs-bundled.md`](worked-example-prepwhen-notsync-vs-bundled.md) — Prepare同步调用≠already 返回后再改裁决/离开关键路径/Process同步；≠505 bundled（不变量 1311）
+- [`worked-example-prepwhen-notmanip-vs-bundled.md`](worked-example-prepwhen-notmanip-vs-bundled.md) — 可以改列表≠already Prepare改列表/候选已是ExecuteTxState/迟到扩展；≠505 bundled（不变量 1312）
 - [`worked-example-preparewhen-collect-vs-bundled.md`](worked-example-preparewhen-collect-vs-bundled.md) — collect priority ≠ raw proposal bundled；synchronous Prepare ≠ 能在返回后再改裁决；can manipulate ≠ Prepare 改列表 bundled（不变量 505）
 - [`worked-example-nochecks-notdup-vs-bundled.md`](worked-example-nochecks-notdup-vs-bundled.md) — 不再做额外检查≠already 验过重复/应用级重放保护/内存池去重就不重放；≠504 bundled（不变量 1307）
 - [`worked-example-nochecks-notcrash-vs-bundled.md`](worked-example-nochecks-notcrash-vs-bundled.md) — 回包验不过崩溃≠already Process REJECT/必须Accept/ProposalStatus REJECT；≠504 bundled（不变量 1308）

@@ -1,3 +1,6 @@
+- [`name-the-prepwhen-notmanip-bar.md`](name-the-prepwhen-notmanip-bar.md) — PrepareWhen manip not already Prepare-list / not already ExecuteTxState / not already late-ext 正式三事（505 余量）（不变量 1312）
+- [`name-the-prepwhen-notsync-bar.md`](name-the-prepwhen-notsync-bar.md) — PrepareWhen sync not already can-change-after-return / not already left-critical-path / not already Process-sync 正式三事（505 余量）（不变量 1311）
+- [`name-the-prepwhen-notprio-bar.md`](name-the-prepwhen-notprio-bar.md) — PrepareWhen collect not already raw-proposal / not already full-pool / not already validValue-skip 正式三事（505 余量）（不变量 1310）
 - [`name-the-nochecks-notdet-bar.md`](name-the-nochecks-notdet-bar.md) — PrepareNochecks nondet not already must-deterministic / not already same-ruler / not already Process-MUST-det 正式三事（504 余量）（不变量 1309）
 - [`name-the-nochecks-notcrash-bar.md`](name-the-nochecks-notcrash-bar.md) — PrepareNochecks crash not already Process-REJECT / not already must-Accept / not already ProposalStatus-REJECT 正式三事（504 余量）（不变量 1308）
 - [`name-the-nochecks-notdup-bar.md`](name-the-nochecks-notdup-bar.md) — PrepareNochecks nocheck not already checked-dup / not already app-replay / not already pool-dedup 正式三事（504 余量）（不变量 1307）
