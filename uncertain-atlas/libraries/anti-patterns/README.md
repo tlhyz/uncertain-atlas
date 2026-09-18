@@ -1,3 +1,6 @@
+- [`cf157-notfull-sold-as-bundled.md`](cf157-notfull-sold-as-bundled.md) — 支持客户端侧过滤 被写成已经是全节点 / 脚本已经验完 / BIP-37 已经退役（不变量 1279）
+- [`cf157-notcons-sold-as-bundled.md`](cf157-notcons-sold-as-bundled.md) — 过滤器头链对上 被写成已经写进共识 / 块已经合法 / 已经不需要诚实对等节点（不变量 1278）
+- [`cf157-nothave-sold-as-bundled.md`](cf157-nothave-sold-as-bundled.md) — 过滤器对上 被写成已经有块 / 已经有那笔交易 / 已经是 BIP-37（不变量 1277）
 - [`vt324-notold-sold-as-bundled.md`](vt324-notold-sold-as-bundled.md) — 支持第 2 版 被写成第 1 版已经退役 / 导出了会话标识就已经对照过 / 应用消息已经不再公开（不变量 1276）
 - [`vt324-notrand-sold-as-bundled.md`](vt324-notrand-sold-as-bundled.md) — 字节看起来随机 被写成防火墙已经认不出 / 允许垃圾就已经塑过形 / 流量分析已经失效（不变量 1275）
 - [`vt324-notpriv-sold-as-bundled.md`](vt324-notpriv-sold-as-bundled.md) — 线上在加密 被写成已经知道对面是谁 / 已经私人 / 未认证就已经没有隐私改进（不变量 1274）

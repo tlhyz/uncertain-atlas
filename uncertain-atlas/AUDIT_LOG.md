@@ -1,3 +1,18 @@
+| A6160 | 记录 | 会与 243 / 252 / 244 / 1277 / 1278 糊成「看见支持客户端侧过滤就已经是全节点 interchangeable、就脚本已经验完 interchangeable、就BIP-37 已经退役 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.6 BIP-157 cfilter not already full-node / not already scripts-checked / not already bloom-retired 正式三事（243 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。243 cfilter vs have bundled unbundling 完成（1279 item 3） |
+| A6161 | 高 | 看见支持客户端侧过滤 会被写成已经是全节点 interchangeable / 252 interchangeable | 官方 BIP-157 cfilter item 3：not already 已经是全节点 / not 252 |
+| A6162 | 高 | 看见比 BIP-37 好核 会被写成脚本已经验完 interchangeable / 244 interchangeable | 官方 BIP-157 cfilter item 3：not already 脚本已经验完 / not 244 |
+| A6163 | 高 | 看见支持客户端侧过滤 会被写成BIP-37 已经退役 interchangeable | 官方 BIP-157 cfilter item 3：not already settled |
+| A6164 | 中 | 怎样造假过滤器、怎样用布隆做拒绝服务、怎样做交集分析、怎样匿名取块会被抄进不确定 | 不抄。不写 怎样造假过滤器、怎样用布隆做拒绝服务、怎样做交集分析、怎样匿名取块。不另写 19 节 |
+| A6155 | 记录 | 会与 243 / 22 / 242 / 1277 / 1279 糊成「看见过滤器头链对上就已经写进共识 interchangeable、就块已经合法 interchangeable、就已经不需要诚实对等节点 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.6 BIP-157 header-chain not already consensus / not already valid-block / not already no-honest-peer 正式三事（243 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。243 cfilter vs have bundled unbundling 续（1278 item 2） |
+| A6156 | 高 | 看见过滤器头链对上 会被写成已经写进共识 interchangeable / 22 interchangeable | 官方 BIP-157 cfilter item 2：not already 已经写进共识 / not 22 |
+| A6157 | 高 | 看见至少一个诚实对等节点 会被写成块已经合法 interchangeable / 242 interchangeable | 官方 BIP-157 cfilter item 2：not already 块已经合法 / not 242 |
+| A6158 | 高 | 看见过滤器头链对上 会被写成已经不需要诚实对等节点 interchangeable | 官方 BIP-157 cfilter item 2：not already settled |
+| A6159 | 中 | 怎样造假过滤器、怎样用布隆做拒绝服务、怎样做交集分析、怎样匿名取块会被抄进不确定 | 不抄。不写 怎样造假过滤器、怎样用布隆做拒绝服务、怎样做交集分析、怎样匿名取块。不另写 19 节 |
+| A6150 | 记录 | 会与 243 / 252 / 244 / 1278 / 1279 糊成「看见过滤器对上就已经有块 interchangeable、就已经有那笔交易 interchangeable、就已经是 BIP-37 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.6 BIP-157 match not already have-block / not already have-tx / not already bip37 正式三事（243 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。243 cfilter vs have bundled unbundling 启动（1277 item 1） |
+| A6151 | 高 | 看见过滤器对上 会被写成已经有块 interchangeable / 252 interchangeable | 官方 BIP-157 cfilter item 1：not already 已经有块 / not 252 |
+| A6152 | 高 | 看见确定性 会被写成已经有那笔交易 interchangeable / 244 interchangeable | 官方 BIP-157 cfilter item 1：not already 已经有那笔交易 / not 244 |
+| A6153 | 高 | 看见过滤器对上 会被写成已经是 BIP-37 interchangeable | 官方 BIP-157 cfilter item 1：not already settled |
+| A6154 | 中 | 怎样造假过滤器、怎样用布隆做拒绝服务、怎样做交集分析、怎样匿名取块会被抄进不确定 | 不抄。不写 怎样造假过滤器、怎样用布隆做拒绝服务、怎样做交集分析、怎样匿名取块。不另写 19 节 |
 | A6145 | 记录 | 会与 242 / 112 / 263 / 1274 / 1275 糊成「看见支持第 2 版就第 1 版已经退役 interchangeable、就已经对照过 interchangeable、就应用消息已经不再公开 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-324 v2 not already v1-retired / not already session-checked / not already app-private 正式三事（242 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。242 v2 transport vs private bundled unbundling 完成（1276 item 3） |
 | A6146 | 高 | 看见支持第 2 版 会被写成第 1 版已经退役 interchangeable / 112 interchangeable | 官方 BIP-324 v2 item 3：not already 第 1 版已经退役 / not 112 |
 | A6147 | 高 | 看见导出了会话标识 会被写成已经对照过 interchangeable / 263 interchangeable | 官方 BIP-324 v2 item 3：not already 已经对照过 / not 263 |

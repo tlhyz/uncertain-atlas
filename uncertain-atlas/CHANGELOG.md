@@ -1,3 +1,15 @@
+## 2026-09-18（续 1396）
+
+- 不变量 1279；语料 C1257；模式 name-the-cf157-notfull-bar；反模式 cf157-notfull-sold-as-bundled；L10.3 第 1248 条。填 L3.5 / L9.6 BIP-157 cfilter not already full-node / not already scripts-checked / not already bloom-retired 正式三事（243 余量）。243 cfilter vs have bundled unbundling 完成（1279 item 3）。
+
+## 2026-09-18（续 1395）
+
+- 不变量 1278；语料 C1256；模式 name-the-cf157-notcons-bar；反模式 cf157-notcons-sold-as-bundled；L10.3 第 1247 条。填 L3.5 / L9.6 BIP-157 header-chain not already consensus / not already valid-block / not already no-honest-peer 正式三事（243 余量）。243 cfilter vs have bundled unbundling 续（1278 item 2）。
+
+## 2026-09-18（续 1394）
+
+- 不变量 1277；语料 C1255；模式 name-the-cf157-nothave-bar；反模式 cf157-nothave-sold-as-bundled；L10.3 第 1246 条。填 L3.5 / L9.6 BIP-157 match not already have-block / not already have-tx / not already bip37 正式三事（243 余量）。243 cfilter vs have bundled unbundling 启动（1277 item 1）。
+
 ## 2026-09-18（续 1393）
 
 - 不变量 1276；语料 C1254；模式 name-the-vt324-notold-bar；反模式 vt324-notold-sold-as-bundled；L10.3 第 1245 条。填 L3.4 / L9.1 BIP-324 v2 not already v1-retired / not already session-checked / not already app-private 正式三事（242 余量）。242 v2 transport vs private bundled unbundling 完成（1276 item 3）。

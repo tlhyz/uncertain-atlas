@@ -41,7 +41,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见客户端侧过滤器对上就已经看见付款 / 就已经验完脚本 / 就已经私人」。若对照轻客户端过滤，必须分开匹配、下块、过滤器头链、共识承诺、全节点复算。不要把「至少一个诚实对等节点」写成已经不需要连谁。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见客户端侧过滤器对上就已经看见付款 / 就已经验完脚本 / 就已经私人」。若对照轻客户端过滤，必须分开匹配、下块、过滤器头链、共识承诺、全节点复算。不要把「至少一个诚实对等节点」写成已经不需要连谁。243 cfilter vs have bundled unbundling 完成（1277 item 1 / 1278 item 2 / 1279 item 3）；精读 [`worked-example-cf157-nothave-vs-bundled.md`](worked-example-cf157-nothave-vs-bundled.md)（不变量 1277 item 1）、[`worked-example-cf157-notcons-vs-bundled.md`](worked-example-cf157-notcons-vs-bundled.md)（不变量 1278 item 2）、[`worked-example-cf157-notfull-vs-bundled.md`](worked-example-cf157-notfull-vs-bundled.md)（不变量 1279 item 3）。
 
 ## 本页不抄
 

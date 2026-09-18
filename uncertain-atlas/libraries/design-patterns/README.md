@@ -1,3 +1,6 @@
+- [`name-the-cf157-notfull-bar.md`](name-the-cf157-notfull-bar.md) — BIP-157 cfilter not already full-node / not already scripts-checked / not already bloom-retired 正式三事（243 余量）（不变量 1279）
+- [`name-the-cf157-notcons-bar.md`](name-the-cf157-notcons-bar.md) — BIP-157 header-chain not already consensus / not already valid-block / not already no-honest-peer 正式三事（243 余量）（不变量 1278）
+- [`name-the-cf157-nothave-bar.md`](name-the-cf157-nothave-bar.md) — BIP-157 match not already have-block / not already have-tx / not already bip37 正式三事（243 余量）（不变量 1277）
 - [`name-the-vt324-notold-bar.md`](name-the-vt324-notold-bar.md) — BIP-324 v2 not already v1-retired / not already session-checked / not already app-private 正式三事（242 余量）（不变量 1276）
 - [`name-the-vt324-notrand-bar.md`](name-the-vt324-notrand-bar.md) — BIP-324 randstream not already unrecognized / not already shaped / not already analysis-dead 正式三事（242 余量）（不变量 1275）
 - [`name-the-vt324-notpriv-bar.md`](name-the-vt324-notpriv-bar.md) — BIP-324 enc not already private / not already authenticated / not already no-gain 正式三事（242 余量）（不变量 1274）
