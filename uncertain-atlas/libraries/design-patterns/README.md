@@ -1,3 +1,6 @@
+- [`name-the-rfnd-notmid-bar.md`](name-the-rfnd-notmid-bar.md) — EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）（不变量 1415）
+- [`name-the-rfnd-not6780-bar.md`](name-the-rfnd-not6780-bar.md) — EIP-3529 drop-selfdestruct-refund not already 6780-semantics / not already 160 / not already 1559 正式三事（223 余量）（不变量 1414）
+- [`name-the-rfnd-notgone-bar.md`](name-the-rfnd-notgone-bar.md) — EIP-3529 refund-cut not already no-refund / not already 2200-rewritten / not already 223-bundled 正式三事（223 余量）（不变量 1413）
 - [`name-the-mcpy-notcd-bar.md`](name-the-mcpy-notcd-bar.md) — EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）（不变量 1412）
 - [`name-the-mcpy-notbuf-bar.md`](name-the-mcpy-notbuf-bar.md) — EIP-5656 as-if-buffer not already real-alloc / not already DoS / not already 208 正式三事（216 余量）（不变量 1411）
 - [`name-the-mcpy-notid-bar.md`](name-the-mcpy-notid-bar.md) — EIP-5656 MCOPY not already identity-precompile / not already 2929 / not already 216-bundled 正式三事（216 余量）（不变量 1410）

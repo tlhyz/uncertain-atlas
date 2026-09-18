@@ -1,3 +1,15 @@
+## 2026-09-18（续 1532）
+
+- 不变量 1415；语料 C1393；模式 name-the-rfnd-notmid-bar；反模式 rfnd-notmid-sold-as-bundled；L10.3 第 1384 条。填 L5.1 EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）。223 refund vs gone bundled unbundling 完成（1415 item 3）。
+
+## 2026-09-18（续 1531）
+
+- 不变量 1414；语料 C1392；模式 name-the-rfnd-not6780-bar；反模式 rfnd-not6780-sold-as-bundled；L10.3 第 1383 条。填 L5.1 EIP-3529 drop-selfdestruct-refund not already 6780-semantics / not already 160 / not already 1559 正式三事（223 余量）。223 refund vs gone bundled unbundling 续（1414 item 2）。
+
+## 2026-09-18（续 1530）
+
+- 不变量 1413；语料 C1391；模式 name-the-rfnd-notgone-bar；反模式 rfnd-notgone-sold-as-bundled；L10.3 第 1382 条。填 L5.1 EIP-3529 refund-cut not already no-refund / not already 2200-rewritten / not already 223-bundled 正式三事（223 余量）。223 refund vs gone bundled unbundling 启动（1413 item 1）。
+
 ## 2026-09-18（续 1529）
 
 - 不变量 1412；语料 C1390；模式 name-the-mcpy-notcd-bar；反模式 mcpy-notcd-sold-as-bundled；L10.3 第 1381 条。填 L5.1 EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）。216 MCOPY vs identity bundled unbundling 完成（1412 item 3）。

@@ -1,3 +1,6 @@
+- [`rfnd-notmid-sold-as-bundled.md`](rfnd-notmid-sold-as-bundled.md) — 退款计数 被写成执行当中能用 / 就已经封死烧掉上限 / 就已经是 158（不变量 1415）
+- [`rfnd-not6780-sold-as-bundled.md`](rfnd-not6780-sold-as-bundled.md) — 去掉自毁退款 被写成已经改了自毁语义 / 就已经是 160 / 就已经是 1559（不变量 1414）
+- [`rfnd-notgone-sold-as-bundled.md`](rfnd-notgone-sold-as-bundled.md) — 退款削减 被写成已经没有退款 / 就已经重写 2200 / 就已经 223 bundled（不变量 1413）
 - [`mcpy-notcd-sold-as-bundled.md`](mcpy-notcd-sold-as-bundled.md) — 能重叠拷 被写成已经是 calldata 拷 / 就已经改了 CALL / 就已经是 169（不变量 1412）
 - [`mcpy-notbuf-sold-as-bundled.md`](mcpy-notbuf-sold-as-bundled.md) — 像用了中间缓冲 被写成必须真分配 / 就已经是 DoS / 就已经是 208（不变量 1411）
 - [`mcpy-notid-sold-as-bundled.md`](mcpy-notid-sold-as-bundled.md) — 内存拷贝指令 被写成已经是身份预编译 / 就已经是 2929 / 就已经 216 bundled（不变量 1410）

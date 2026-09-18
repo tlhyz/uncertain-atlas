@@ -1,3 +1,18 @@
+| A6840 | 记录 | 会与 223 / 158 / 169 / 1413 / 1414 糊成「看见退款计数不是已经能在执行当中用就已经能在执行当中用 interchangeable、就已经是本块实际能烧掉的上限 interchangeable、就已经是不变量 158 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。223 refund vs gone bundled unbundling 完成（1415 item 3） |
+| A6841 | 高 | 看见退款计数不是已经能在执行当中用 会被写成已经能在执行当中用 interchangeable / 158 interchangeable | 官方 EIP-3529 rfnd item 3：not already 已经能在执行当中用 / not 158 |
+| A6842 | 高 | 看见refund counter is not already mid-exec spendable 会被写成已经是本块实际能烧掉的上限 interchangeable / 169 interchangeable | 官方 EIP-3529 rfnd item 3：not already 已经是本块实际能烧掉的上限 / not 169 |
+| A6843 | 高 | 看见退款计数不是已经能在执行当中用 会被写成已经是不变量 158 interchangeable | 官方 EIP-3529 rfnd item 3：not already settled |
+| A6844 | 中 | 怎样做气代币、怎样留灰、怎样用退款打满一块会被抄进不确定 | 不抄。不写 怎样做气代币、怎样留灰、怎样用退款打满一块。不另写 19 节 |
+| A6835 | 记录 | 会与 223 / 160 / 159 / 1413 / 1415 糊成「看见去掉自毁退款不是已经改了自毁语义就已经改了自毁语义 interchangeable、就已经是不变量 160 interchangeable、就已经是 1559 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3529 drop-selfdestruct-refund not already 6780-semantics / not already 160 / not already 1559 正式三事（223 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。223 refund vs gone bundled unbundling 续（1414 item 2） |
+| A6836 | 高 | 看见去掉自毁退款不是已经改了自毁语义 会被写成已经改了自毁语义 interchangeable / 160 interchangeable | 官方 EIP-3529 rfnd item 2：not already 已经改了自毁语义 / not 160 |
+| A6837 | 高 | 看见drop selfdestruct refund is not already 6780 会被写成已经是不变量 160 interchangeable / 159 interchangeable | 官方 EIP-3529 rfnd item 2：not already 已经是不变量 160 / not 159 |
+| A6838 | 高 | 看见去掉自毁退款不是已经改了自毁语义 会被写成已经是 1559 interchangeable | 官方 EIP-3529 rfnd item 2：not already settled |
+| A6839 | 中 | 怎样做气代币、怎样留灰、怎样用退款打满一块会被抄进不确定 | 不抄。不写 怎样做气代币、怎样留灰、怎样用退款打满一块。不另写 19 节 |
+| A6830 | 记录 | 会与 223 / 160 / 158 / 1414 / 1415 糊成「看见退款削减不是已经没有退款就已经没有退款 interchangeable、就已经重写 2200 interchangeable、就已经 223 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3529 refund-cut not already no-refund / not already 2200-rewritten / not already 223-bundled 正式三事（223 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。223 refund vs gone bundled unbundling 启动（1413 item 1） |
+| A6831 | 高 | 看见退款削减不是已经没有退款 会被写成已经没有退款 interchangeable / 160 interchangeable | 官方 EIP-3529 rfnd item 1：not already 已经没有退款 / not 160 |
+| A6832 | 高 | 看见refund cut is not already no refunds 会被写成已经重写 2200 interchangeable / 158 interchangeable | 官方 EIP-3529 rfnd item 1：not already 已经重写 2200 / not 158 |
+| A6833 | 高 | 看见退款削减不是已经没有退款 会被写成已经 223 bundled interchangeable | 官方 EIP-3529 rfnd item 1：not already settled |
+| A6834 | 中 | 怎样做气代币、怎样留灰、怎样用退款打满一块会被抄进不确定 | 不抄。不写 怎样做气代币、怎样留灰、怎样用退款打满一块。不另写 19 节 |
 | A6825 | 记录 | 会与 216 / 169 / 197 / 1410 / 1411 糊成「看见能重叠拷不是已经是 calldata / 返回数据拷就已经是 calldata / 返回数据拷 interchangeable、就已经改了 CALL 的效果 interchangeable、就已经是不变量 169 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。216 MCOPY vs identity bundled unbundling 完成（1412 item 3） |
 | A6826 | 高 | 看见能重叠拷不是已经是 calldata / 返回数据拷 会被写成已经是 calldata / 返回数据拷 interchangeable / 169 interchangeable | 官方 EIP-5656 mcpy item 3：not already 已经是 calldata / 返回数据拷 / not 169 |
 | A6827 | 高 | 看见overlap copy is not already calldata copy 会被写成已经改了 CALL 的效果 interchangeable / 197 interchangeable | 官方 EIP-5656 mcpy item 3：not already 已经改了 CALL 的效果 / not 197 |
