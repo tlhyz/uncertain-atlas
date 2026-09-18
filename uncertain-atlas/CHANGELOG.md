@@ -1,3 +1,15 @@
+## 2026-09-18（续 1399）
+
+- 不变量 1282；语料 C1260；模式 name-the-bf158-notcomm-bar；反模式 bf158-notcomm-sold-as-bundled；L10.3 第 1251 条。填 L3.5 / L9.6 BIP-158 exclude-opreturn not already consensus / not already other-type / not already header-chain 正式三事（244 余量）。244 basic filter vs relevant bundled unbundling 完成（1282 item 3）。
+
+## 2026-09-18（续 1398）
+
+- 不变量 1281；语料 C1259；模式 name-the-bf158-notrel-bar；反模式 bf158-notrel-sold-as-bundled；L10.3 第 1250 条。填 L3.5 / L9.6 BIP-158 match not already in-set / not already relevant / not already no-false-positive 正式三事（244 余量）。244 basic filter vs relevant bundled unbundling 续（1281 item 2）。
+
+## 2026-09-18（续 1397）
+
+- 不变量 1280；语料 C1258；模式 name-the-bf158-nottx-bar；反模式 bf158-nottx-sold-as-bundled；L10.3 第 1249 条。填 L3.5 / L9.6 BIP-158 scripts not already have-tx / not already have-opreturn / not already spent 正式三事（244 余量）。244 basic filter vs relevant bundled unbundling 启动（1280 item 1）。
+
 ## 2026-09-18（续 1396）
 
 - 不变量 1279；语料 C1257；模式 name-the-cf157-notfull-bar；反模式 cf157-notfull-sold-as-bundled；L10.3 第 1248 条。填 L3.5 / L9.6 BIP-157 cfilter not already full-node / not already scripts-checked / not already bloom-retired 正式三事（243 余量）。243 cfilter vs have bundled unbundling 完成（1279 item 3）。

@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见基本过滤器对上就已经是我的付款 / 就已经相关 / 就已经写进共识」。若对照过滤器内容，必须分开装了什么、假阳性、共识承诺。不要把脚本对上写成已经能花。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见基本过滤器对上就已经是我的付款 / 就已经相关 / 就已经写进共识」。若对照过滤器内容，必须分开装了什么、假阳性、共识承诺。不要把脚本对上写成已经能花。244 basic filter vs relevant bundled unbundling 完成（1280 item 1 / 1281 item 2 / 1282 item 3）；精读 [`worked-example-bf158-nottx-vs-bundled.md`](worked-example-bf158-nottx-vs-bundled.md)（不变量 1280 item 1）、[`worked-example-bf158-notrel-vs-bundled.md`](worked-example-bf158-notrel-vs-bundled.md)（不变量 1281 item 2）、[`worked-example-bf158-notcomm-vs-bundled.md`](worked-example-bf158-notcomm-vs-bundled.md)（不变量 1282 item 3）。
 
 ## 本页不抄
 

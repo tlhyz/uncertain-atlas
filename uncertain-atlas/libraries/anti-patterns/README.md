@@ -1,3 +1,6 @@
+- [`bf158-notcomm-sold-as-bundled.md`](bf158-notcomm-sold-as-bundled.md) — 排除了 OP_RETURN 被写成已经有共识承诺 / 服务位就已经答别的类型 / 就已经写了 157 头链（不变量 1282）
+- [`bf158-notrel-sold-as-bundled.md`](bf158-notrel-sold-as-bundled.md) — 对上 被写成已经在集合里 / 已经相关 / 假阳性已经消失（不变量 1281）
+- [`bf158-nottx-sold-as-bundled.md`](bf158-nottx-sold-as-bundled.md) — 装了花费脚本和收款脚本 被写成已经有那笔交易 / 已经有附言 / 已经花掉（不变量 1280）
 - [`cf157-notfull-sold-as-bundled.md`](cf157-notfull-sold-as-bundled.md) — 支持客户端侧过滤 被写成已经是全节点 / 脚本已经验完 / BIP-37 已经退役（不变量 1279）
 - [`cf157-notcons-sold-as-bundled.md`](cf157-notcons-sold-as-bundled.md) — 过滤器头链对上 被写成已经写进共识 / 块已经合法 / 已经不需要诚实对等节点（不变量 1278）
 - [`cf157-nothave-sold-as-bundled.md`](cf157-nothave-sold-as-bundled.md) — 过滤器对上 被写成已经有块 / 已经有那笔交易 / 已经是 BIP-37（不变量 1277）

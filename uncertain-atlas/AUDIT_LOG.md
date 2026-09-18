@@ -1,3 +1,18 @@
+| A6175 | 记录 | 会与 244 / 243 / 22 / 1280 / 1281 糊成「看见排除了 OP_RETURN就已经有共识承诺 interchangeable、就已经在答别的过滤器类型 interchangeable、就已经写了 157 那套头链 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.6 BIP-158 exclude-opreturn not already consensus / not already other-type / not already header-chain 正式三事（244 余量）/ 轻客户端表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。244 basic filter vs relevant bundled unbundling 完成（1282 item 3） |
+| A6176 | 高 | 看见排除了 OP_RETURN 会被写成已经有共识承诺 interchangeable / 243 interchangeable | 官方 BIP-158 basic item 3：not already 已经有共识承诺 / not 243 |
+| A6177 | 高 | 看见服务位 会被写成已经在答别的过滤器类型 interchangeable / 22 interchangeable | 官方 BIP-158 basic item 3：not already 已经在答别的过滤器类型 / not 22 |
+| A6178 | 高 | 看见排除了 OP_RETURN 会被写成已经写了 157 那套头链 interchangeable | 官方 BIP-158 basic item 3：not already settled |
+| A6179 | 中 | 怎样造对得上的假项、怎样调假阳性、怎样按编码复刻会被抄进不确定 | 不抄。不写 怎样造对得上的假项、怎样调假阳性、怎样按编码复刻。不另写 19 节 |
+| A6170 | 记录 | 会与 244 / 243 / 22 / 1280 / 1282 糊成「看见对上就已经在集合里 interchangeable、就已经相关 interchangeable、就假阳性已经消失 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.6 BIP-158 match not already in-set / not already relevant / not already no-false-positive 正式三事（244 余量）/ 轻客户端表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。244 basic filter vs relevant bundled unbundling 续（1281 item 2） |
+| A6171 | 高 | 看见对上 会被写成已经在集合里 interchangeable / 243 interchangeable | 官方 BIP-158 basic item 2：not already 已经在集合里 / not 243 |
+| A6172 | 高 | 看见会多下块 会被写成已经相关 interchangeable / 22 interchangeable | 官方 BIP-158 basic item 2：not already 已经相关 / not 22 |
+| A6173 | 高 | 看见对上 会被写成假阳性已经消失 interchangeable | 官方 BIP-158 basic item 2：not already settled |
+| A6174 | 中 | 怎样造对得上的假项、怎样调假阳性、怎样按编码复刻会被抄进不确定 | 不抄。不写 怎样造对得上的假项、怎样调假阳性、怎样按编码复刻。不另写 19 节 |
+| A6165 | 记录 | 会与 244 / 243 / 252 / 1281 / 1282 糊成「看见装了花费脚本和收款脚本就已经有那笔交易 interchangeable、就已经有附言数据 interchangeable、就已经花掉 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.6 BIP-158 scripts not already have-tx / not already have-opreturn / not already spent 正式三事（244 余量）/ 轻客户端表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。244 basic filter vs relevant bundled unbundling 启动（1280 item 1） |
+| A6166 | 高 | 看见装了花费脚本和收款脚本 会被写成已经有那笔交易 interchangeable / 243 interchangeable | 官方 BIP-158 basic item 1：not already 已经有那笔交易 / not 243 |
+| A6167 | 高 | 看见对上了一个脚本 会被写成已经有附言数据 interchangeable / 252 interchangeable | 官方 BIP-158 basic item 1：not already 已经有附言数据 / not 252 |
+| A6168 | 高 | 看见装了花费脚本和收款脚本 会被写成已经花掉 interchangeable | 官方 BIP-158 basic item 1：not already settled |
+| A6169 | 中 | 怎样造对得上的假项、怎样调假阳性、怎样按编码复刻会被抄进不确定 | 不抄。不写 怎样造对得上的假项、怎样调假阳性、怎样按编码复刻。不另写 19 节 |
 | A6160 | 记录 | 会与 243 / 252 / 244 / 1277 / 1278 糊成「看见支持客户端侧过滤就已经是全节点 interchangeable、就脚本已经验完 interchangeable、就BIP-37 已经退役 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.6 BIP-157 cfilter not already full-node / not already scripts-checked / not already bloom-retired 正式三事（243 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。243 cfilter vs have bundled unbundling 完成（1279 item 3） |
 | A6161 | 高 | 看见支持客户端侧过滤 会被写成已经是全节点 interchangeable / 252 interchangeable | 官方 BIP-157 cfilter item 3：not already 已经是全节点 / not 252 |
 | A6162 | 高 | 看见比 BIP-37 好核 会被写成脚本已经验完 interchangeable / 244 interchangeable | 官方 BIP-157 cfilter item 3：not already 脚本已经验完 / not 244 |

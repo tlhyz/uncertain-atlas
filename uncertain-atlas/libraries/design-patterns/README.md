@@ -1,3 +1,6 @@
+- [`name-the-bf158-notcomm-bar.md`](name-the-bf158-notcomm-bar.md) — BIP-158 exclude-opreturn not already consensus / not already other-type / not already header-chain 正式三事（244 余量）（不变量 1282）
+- [`name-the-bf158-notrel-bar.md`](name-the-bf158-notrel-bar.md) — BIP-158 match not already in-set / not already relevant / not already no-false-positive 正式三事（244 余量）（不变量 1281）
+- [`name-the-bf158-nottx-bar.md`](name-the-bf158-nottx-bar.md) — BIP-158 scripts not already have-tx / not already have-opreturn / not already spent 正式三事（244 余量）（不变量 1280）
 - [`name-the-cf157-notfull-bar.md`](name-the-cf157-notfull-bar.md) — BIP-157 cfilter not already full-node / not already scripts-checked / not already bloom-retired 正式三事（243 余量）（不变量 1279）
 - [`name-the-cf157-notcons-bar.md`](name-the-cf157-notcons-bar.md) — BIP-157 header-chain not already consensus / not already valid-block / not already no-honest-peer 正式三事（243 余量）（不变量 1278）
 - [`name-the-cf157-nothave-bar.md`](name-the-cf157-nothave-bar.md) — BIP-157 match not already have-block / not already have-tx / not already bip37 正式三事（243 余量）（不变量 1277）
