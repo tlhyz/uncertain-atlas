@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 Process 何时调用就已经填了 TimeoutPropose、已经跑过 Process、已经会调 Process」，必须分开进了这一轮会先设 ProposeTimeout 是不是已经填了 TimeoutPropose、收到带上头的提案会先验块头是不是已经跑过 Process、收齐块片才按验证者算法看该不该 prevote 这块或 nil 是不是已经会调 Process。可以跳过「看见到了 Process 何时调用就已经填了 TimeoutPropose」。不要另写怎样写 Process 何时调用余量。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 Process 何时调用就已经填了 TimeoutPropose、已经跑过 Process、已经会调 Process」，必须分开进了这一轮会先设 ProposeTimeout 是不是已经填了 TimeoutPropose、收到带上头的提案会先验块头是不是已经跑过 Process、收齐块片才按验证者算法看该不该 prevote 这块或 nil 是不是已经会调 Process。可以跳过「看见到了 Process 何时调用就已经填了 TimeoutPropose」。不要另写怎样写 Process 何时调用余量。416 proposetimeout vs process bundled unbundling 完成（1094 item 1 / 1095 item 2 / 1096 item 3）；精读 [`worked-example-ptime-notcfg-vs-bundled.md`](worked-example-ptime-notcfg-vs-bundled.md)（不变量 1094 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,6 @@
+- [`ptime-notcall-sold-as-bundled.md`](ptime-notcall-sold-as-bundled.md) — prevote-or-nil 被写成已经会调 Process / 已经还能再 Reject / 已经交差（不变量 1096）
+- [`ptime-notproc-sold-as-bundled.md`](ptime-notproc-sold-as-bundled.md) — 先验块头 被写成已经跑过 Process / 已经知道本头哈希 / 已经交差（不变量 1095）
+- [`ptime-notcfg-sold-as-bundled.md`](ptime-notcfg-sold-as-bundled.md) — ProposeTimeout 被写成已经填了 TimeoutPropose / 已经离开关键路径 / 已经会调 Process（不变量 1094）
 - [`ionce-notchg-sold-as-bundled.md`](ionce-notchg-sold-as-bundled.md) — Validators-as-update 被写成已经改了集合 / 已经带了公钥 / 已经没有集合（不变量 1093）
 - [`ionce-notempty-sold-as-bundled.md`](ionce-notempty-sold-as-bundled.md) — may-choose-set 被写成已经没有集合 / 已经用了创世文件 / 已经验过应用状态（不变量 1092）
 - [`ionce-notcrash-sold-as-bundled.md`](ionce-notcrash-sold-as-bundled.md) — once-at-genesis 被写成已经是崩溃后再调 / 已经能跳步 / 已经过了 genesis_time（不变量 1091）

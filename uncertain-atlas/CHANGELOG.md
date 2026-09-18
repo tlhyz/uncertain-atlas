@@ -1,3 +1,15 @@
+## 2026-09-18（续 1213）
+
+- 不变量 1096；语料 C1074；模式 name-the-ptime-notcall-bar；反模式 ptime-notcall-sold-as-bundled；L10.3 第 1065 条。填 L4.4 / CometBFT 档案 prevote-or-nil look not already will-call / not already still-reject / not already settled 正式三事（416 余量）。416 proposetimeout vs process bundled unbundling 完成（1096 item 3）。
+
+## 2026-09-18（续 1212）
+
+- 不变量 1095；语料 C1073；模式 name-the-ptime-notproc-bar；反模式 ptime-notproc-sold-as-bundled；L10.3 第 1064 条。填 L4.4 / CometBFT 档案 proposal header-first not already processed / not already header-known / not already settled 正式三事（416 余量）。416 proposetimeout vs process bundled unbundling 续（1095 item 2）。
+
+## 2026-09-18（续 1211）
+
+- 不变量 1094；语料 C1072；模式 name-the-ptime-notcfg-bar；反模式 ptime-notcfg-sold-as-bundled；L10.3 第 1063 条。填 L4.4 / CometBFT 档案 ProposeTimeout set-on-enter not already timeout-propose / not already left-critical / not already will-call 正式三事（416 余量）。416 proposetimeout vs process bundled unbundling 启动（1094 item 1）。
+
 ## 2026-09-18（续 1210）
 
 - 不变量 1093；语料 C1071；模式 name-the-ionce-notchg-bar；反模式 ionce-notchg-sold-as-bundled；L10.3 第 1062 条。填 L4.4 / CometBFT 档案 InitChain Validators-as-update not already set-changed / not already has-key / not already no-set 正式三事（412 余量）。412 initonce vs crash bundled unbundling 完成（1093 item 3）。

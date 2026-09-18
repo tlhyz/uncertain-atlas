@@ -1,3 +1,6 @@
+- [`name-the-ptime-notcall-bar.md`](name-the-ptime-notcall-bar.md) — prevote-or-nil look not already will-call / not already still-reject / not already settled 正式三事（416 余量）（不变量 1096）
+- [`name-the-ptime-notproc-bar.md`](name-the-ptime-notproc-bar.md) — proposal header-first not already processed / not already header-known / not already settled 正式三事（416 余量）（不变量 1095）
+- [`name-the-ptime-notcfg-bar.md`](name-the-ptime-notcfg-bar.md) — ProposeTimeout set-on-enter not already timeout-propose / not already left-critical / not already will-call 正式三事（416 余量）（不变量 1094）
 - [`name-the-ionce-notchg-bar.md`](name-the-ionce-notchg-bar.md) — InitChain Validators-as-update not already set-changed / not already has-key / not already no-set 正式三事（412 余量）（不变量 1093）
 - [`name-the-ionce-notempty-bar.md`](name-the-ionce-notempty-bar.md) — InitChain may-choose-set not already no-set / not already genesis-used / not already app-checked 正式三事（412 余量）（不变量 1092）
 - [`name-the-ionce-notcrash-bar.md`](name-the-ionce-notcrash-bar.md) — InitChain once-at-genesis not already crash-recall / not already skip-step / not already past-genesis 正式三事（412 余量）（不变量 1091）

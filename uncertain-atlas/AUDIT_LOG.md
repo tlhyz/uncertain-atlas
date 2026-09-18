@@ -1,3 +1,18 @@
+| A5240 | 记录 | 会与 416 / 354 / 351 / 1094 / 1095 糊成「看见在看 prevote 就已经会调 Process interchangeable、就已经还能再 Reject interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 prevote-or-nil look not already will-call / not already still-reject / not already settled 正式三事（416 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。416 proposetimeout vs process bundled unbundling 完成（1096 item 3） |
+| A5241 | 高 | 看见在看 会被写成已经会调 Process interchangeable / 354 interchangeable | 官方 Process 何时调用余量 item 3：not already will-call / not 354 |
+| A5242 | 高 | 看见还没调 会被写成已经还能再 Reject interchangeable / 351 interchangeable | 官方 Process 何时调用余量 item 3：not already still-reject / not 351 |
+| A5243 | 高 | 看见有算法 会被写成已经交差 interchangeable | 官方 Process 何时调用余量 item 3：not already settled |
+| A5244 | 中 | 怎样写 When 余量会被抄进不确定 | 不抄。不写怎样写 Process 何时调用余量。不另写 19 节 |
+| A5235 | 记录 | 会与 416 / 359 / 417 / 1094 / 1096 糊成「看见先验块头就已经跑过 Process interchangeable、就已经知道本头哈希 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 proposal header-first not already processed / not already header-known / not already settled 正式三事（416 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。416 proposetimeout vs process bundled unbundling 续（1095 item 2） |
+| A5236 | 高 | 看见验了头 会被写成已经跑过 Process interchangeable / 359 interchangeable | 官方 Process 何时调用余量 item 2：not already processed / not 359 |
+| A5237 | 高 | 看见提案带上头 会被写成已经知道本头哈希 interchangeable / 417 interchangeable | 官方 Process 何时调用余量 item 2：not already header-known / not 417 |
+| A5238 | 高 | 看见先验 会被写成已经交差 interchangeable | 官方 Process 何时调用余量 item 2：not already settled |
+| A5239 | 中 | 怎样写 When 余量会被抄进不确定 | 不抄。不写怎样写 Process 何时调用余量。不另写 19 节 |
+| A5230 | 记录 | 会与 416 / 327 / 354 / 1095 / 1096 糊成「看见设了 ProposeTimeout 就已经填了 TimeoutPropose interchangeable、就已经离开关键路径 interchangeable、就已经会调 Process interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProposeTimeout set-on-enter not already timeout-propose / not already left-critical / not already will-call 正式三事（416 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。416 proposetimeout vs process bundled unbundling 启动（1094 item 1） |
+| A5231 | 高 | 看见设了定时 会被写成已经填了 TimeoutPropose interchangeable / 327 interchangeable | 官方 Process 何时调用余量 item 1：not already timeout-propose / not 327 |
+| A5232 | 高 | 看见进了这一轮 会被写成已经离开关键路径 interchangeable / 354 interchangeable | 官方 Process 何时调用余量 item 1：not already left-critical / not 354 |
+| A5233 | 高 | 看见有定时器 会被写成已经会调 Process interchangeable | 官方 Process 何时调用余量 item 1：not already will-call |
+| A5234 | 中 | 怎样写 When 余量会被抄进不确定 | 不抄。不写怎样写 Process 何时调用余量。不另写 19 节 |
 | A5225 | 记录 | 会与 412 / 364 / 318 / 1091 / 1092 糊成「看见两边都是 ValidatorUpdate 就已经改了集合 interchangeable、就已经带了公钥 interchangeable、就已经没有集合 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 InitChain Validators-as-update not already set-changed / not already has-key / not already no-set 正式三事（412 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。412 initonce vs crash bundled unbundling 完成（1093 item 3） |
 | A5226 | 高 | 看见两边都是 ValidatorUpdate 会被写成已经改了集合 interchangeable / 364 interchangeable | 官方 InitChain Usage 余量 item 3：not already set-changed / not 364 |
 | A5227 | 高 | 看见从空集合更新 会被写成已经带了公钥 interchangeable / 318 interchangeable | 官方 InitChain Usage 余量 item 3：not already has-key / not 318 |
