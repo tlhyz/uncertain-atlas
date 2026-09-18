@@ -1,3 +1,7 @@
+## 2026-09-18（续 804）
+
+- 不变量 687；语料 C664；模式 name-the-crashsteps-notblockstore-bar；反模式 crashsteps-notblockstore-sold-as-bundled；L10.3 第 656 条。填 L4.4 / CometBFT 档案 blockstore not already settled / not already Commit / not three steps already atomic 正式三事（320 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。320 crash recovery bundled unbundling 续（687 item 2）。
+
 ## 2026-09-18（续 803）
 
 - 不变量 686；语料 C663；模式 name-the-crashsteps-notapptaller-bar；反模式 crashsteps-notapptaller-sold-as-bundled；L10.3 第 655 条。填 L4.4 / CometBFT 档案 app taller than engine not already allowed / not already can wake separately / not half-write atomic 正式三事（320 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。320 crash recovery bundled unbundling 启动（686 item 1）。
