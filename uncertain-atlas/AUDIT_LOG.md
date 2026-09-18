@@ -1,3 +1,18 @@
+| A5980 | 记录 | 会与 256 / 246 / 252 / 1241 / 1242 糊成「看见建议关掉地址就已经禁止 interchangeable、就已经断开 interchangeable、就已经共识非法 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-338 addr-suggest not already forbidden / not already disconnected / not already illegal 正式三事（256 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。256 disabletx vs lifetime bundled unbundling 完成（1243 item 3） |
+| A5981 | 高 | 看见建议关掉地址 会被写成已经禁止传地址 interchangeable / 246 interchangeable | 官方 BIP-338 disabletx item 3：not already forbidden / not 246 |
+| A5982 | 高 | 看见发了本页 会被写成已经断开 interchangeable / 252 interchangeable | 官方 BIP-338 disabletx item 3：not already not already disconnected / not 252 |
+| A5983 | 高 | 看见这条连接上还在传地址 会被写成已经共识非法 interchangeable | 官方 BIP-338 disabletx item 3：not already settled |
+| A5984 | 中 | 怎样按只传块连接认人、怎样靠多开只传块入口做日蚀、怎样用本页探测别人会不会断开会被抄进不确定 | 不抄。不写 怎样按只传块连接认人、怎样靠多开只传块入口做日蚀、怎样用本页探测别人会不会断开。不另写 19 节 |
+| A5975 | 记录 | 会与 256 / 36 / 245 / 1241 / 1243 糊成「看见发了本页就已经没有紧凑块 interchangeable、就已经交易消息非法 interchangeable、就已经没有块 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-338 disabletx not already no-compact / not already tx-illegal / not already no-block 正式三事（256 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。256 disabletx vs lifetime bundled unbundling 续（1242 item 2） |
+| A5976 | 高 | 看见发了本页 会被写成已经没有紧凑块 interchangeable / 36 interchangeable | 官方 BIP-338 disabletx item 2：not already no-compact / not 36 |
+| A5977 | 高 | 看见发了本页 会被写成那些交易消息已经共识非法 interchangeable / 245 interchangeable | 官方 BIP-338 disabletx item 2：not already not already tx-illegal / not 245 |
+| A5978 | 高 | 看见本页 会被写成已经没有块 interchangeable | 官方 BIP-338 disabletx item 2：not already settled |
+| A5979 | 中 | 怎样按只传块连接认人、怎样靠多开只传块入口做日蚀、怎样用本页探测别人会不会断开会被抄进不确定 | 不抄。不写 怎样按只传块连接认人、怎样靠多开只传块入口做日蚀、怎样用本页探测别人会不会断开。不另写 19 节 |
+| A5970 | 记录 | 会与 256 / 245 / 253 / 1242 / 1243 糊成「看见版本里关掉了转发就已经终身只传块 interchangeable、就已经实现本页 interchangeable、就已经默认这样谈 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-338 version-flag not already lifetime / not already implemented / not already default-on 正式三事（256 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。256 disabletx vs lifetime bundled unbundling 启动（1241 item 1） |
+| A5971 | 高 | 看见版本里关掉了转发 会被写成已经终身只传块 interchangeable / 245 interchangeable | 官方 BIP-338 disabletx item 1：not already lifetime / not 245 |
+| A5972 | 高 | 看见协议版本够了 会被写成已经实现本页 interchangeable / 253 interchangeable | 官方 BIP-338 disabletx item 1：not already not already implemented / not 253 |
+| A5973 | 高 | 看见本页状态是关闭 会被写成网上已经默认这样谈 interchangeable | 官方 BIP-338 disabletx item 1：not already settled |
+| A5974 | 中 | 怎样按只传块连接认人、怎样靠多开只传块入口做日蚀、怎样用本页探测别人会不会断开会被抄进不确定 | 不抄。不写 怎样按只传块连接认人、怎样靠多开只传块入口做日蚀、怎样用本页探测别人会不会断开。不另写 19 节 |
 | A5965 | 记录 | 会与 245 / 44 / 166 / 1238 / 1239 糊成「看见布隆过了就已经过了费率门 interchangeable、就已经是精确最低费率 interchangeable、就已经关掉全部策略 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.2 BIP-133 bloom-and not already fee-pass / not already exact-min / not already policy-off 正式三事（245 余量）/ 内存池表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。245 feefilter vs rejected bundled unbundling 完成（1240 item 3） |
 | A5966 | 高 | 看见布隆过了 会被写成已经过了费率门 interchangeable / 44 interchangeable | 官方 BIP-133 feefilter item 3：not already fee-pass / not 44 |
 | A5967 | 高 | 看见费率过滤器 会被写成已经是本节点精确的最低费率 interchangeable / 166 interchangeable | 官方 BIP-133 feefilter item 3：not already not already exact-min / not 166 |

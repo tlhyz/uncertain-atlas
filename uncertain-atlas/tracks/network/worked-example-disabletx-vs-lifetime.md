@@ -40,7 +40,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见版本里关掉转发就已经是终身只传块 / 就已经没有紧凑块 / 就已经禁止传地址」。若对照只传块连接，必须分开版本字段、终身信号、禁止的交易消息、地址建议。不要把关闭状态写成已经在主网默认打开。不要另写布隆构造页。不要另写紧凑块第二页。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见版本里关掉转发就已经是终身只传块 / 就已经没有紧凑块 / 就已经禁止传地址」。若对照只传块连接，必须分开版本字段、终身信号、禁止的交易消息、地址建议。不要把关闭状态写成已经在主网默认打开。不要另写布隆构造页。不要另写紧凑块第二页。256 disabletx vs lifetime bundled unbundling 完成（1241 item 1 / 1242 item 2 / 1243 item 3）；精读 [`worked-example-dis338-notlife-vs-bundled.md`](worked-example-dis338-notlife-vs-bundled.md)（不变量 1241 item 1）、[`worked-example-dis338-notcmpct-vs-bundled.md`](worked-example-dis338-notcmpct-vs-bundled.md)（不变量 1242 item 2）、[`worked-example-dis338-notaddr-vs-bundled.md`](worked-example-dis338-notaddr-vs-bundled.md)（不变量 1243 item 3）。
 
 ## 本页不抄
 

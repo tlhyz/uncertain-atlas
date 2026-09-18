@@ -1,3 +1,15 @@
+## 2026-09-18（续 1360）
+
+- 不变量 1243；语料 C1221；模式 name-the-dis338-notaddr-bar；反模式 dis338-notaddr-sold-as-bundled；L10.3 第 1212 条。填 L3.4 / L9.1 BIP-338 addr-suggest not already forbidden / not already disconnected / not already illegal 正式三事（256 余量）。256 disabletx vs lifetime bundled unbundling 完成（1243 item 3）。
+
+## 2026-09-18（续 1359）
+
+- 不变量 1242；语料 C1220；模式 name-the-dis338-notcmpct-bar；反模式 dis338-notcmpct-sold-as-bundled；L10.3 第 1211 条。填 L3.4 / L9.1 BIP-338 disabletx not already no-compact / not already tx-illegal / not already no-block 正式三事（256 余量）。256 disabletx vs lifetime bundled unbundling 续（1242 item 2）。
+
+## 2026-09-18（续 1358）
+
+- 不变量 1241；语料 C1219；模式 name-the-dis338-notlife-bar；反模式 dis338-notlife-sold-as-bundled；L10.3 第 1210 条。填 L3.4 / L9.1 BIP-338 version-flag not already lifetime / not already implemented / not already default-on 正式三事（256 余量）。256 disabletx vs lifetime bundled unbundling 启动（1241 item 1）。
+
 ## 2026-09-18（续 1357）
 
 - 不变量 1240；语料 C1218；模式 name-the-fee133-notbloom-bar；反模式 fee133-notbloom-sold-as-bundled；L10.3 第 1209 条。填 L3.2 / L9.2 BIP-133 bloom-and not already fee-pass / not already exact-min / not already policy-off 正式三事（245 余量）。245 feefilter vs rejected bundled unbundling 完成（1240 item 3）。

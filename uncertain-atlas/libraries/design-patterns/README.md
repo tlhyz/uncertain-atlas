@@ -1,3 +1,6 @@
+- [`name-the-dis338-notaddr-bar.md`](name-the-dis338-notaddr-bar.md) — BIP-338 addr-suggest not already forbidden / not already disconnected / not already illegal 正式三事（256 余量）（不变量 1243）
+- [`name-the-dis338-notcmpct-bar.md`](name-the-dis338-notcmpct-bar.md) — BIP-338 disabletx not already no-compact / not already tx-illegal / not already no-block 正式三事（256 余量）（不变量 1242）
+- [`name-the-dis338-notlife-bar.md`](name-the-dis338-notlife-bar.md) — BIP-338 version-flag not already lifetime / not already implemented / not already default-on 正式三事（256 余量）（不变量 1241）
 - [`name-the-fee133-notbloom-bar.md`](name-the-fee133-notbloom-bar.md) — BIP-133 bloom-and not already fee-pass / not already exact-min / not already policy-off 正式三事（245 余量）（不变量 1240）
 - [`name-the-fee133-notmust-bar.md`](name-the-fee133-notmust-bar.md) — BIP-133 permission not already must / not already sending / not already obeying 正式三事（245 余量）（不变量 1239）
 - [`name-the-fee133-notpool-bar.md`](name-the-fee133-notpool-bar.md) — BIP-133 skip-inv not already rejected / not already illegal / not already filtered-net 正式三事（245 余量）（不变量 1238）

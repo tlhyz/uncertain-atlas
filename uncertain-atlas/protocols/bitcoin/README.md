@@ -43,7 +43,7 @@
 
 精读：[`../../tracks/network/worked-example-reject-vs-consensus.md`](../../tracks/network/worked-example-reject-vs-consensus.md)（不变量 254）。看见拒收消息不是已经共识非法。看见调试理由不是已经该给用户看。看见没拒收不是已经是当前最好链。
 
-精读：[`../../tracks/network/worked-example-disabletx-vs-lifetime.md`](../../tracks/network/worked-example-disabletx-vs-lifetime.md)（不变量 256）。看见版本里关掉交易转发不是已经终身只传块。看见发了停交易转发不是已经没有紧凑块。看见建议关掉地址不是已经禁止传地址。看见协议版本够了不是已经实现本页。
+精读：[`../../tracks/network/worked-example-disabletx-vs-lifetime.md`](../../tracks/network/worked-example-disabletx-vs-lifetime.md) BIP-338 version-flag not already lifetime / not already implemented / not already default-on 正式三事（256 余量）：[`../../tracks/network/worked-example-dis338-notlife-vs-bundled.md`](../../tracks/network/worked-example-dis338-notlife-vs-bundled.md)（不变量 1241）。 BIP-338 disabletx not already no-compact / not already tx-illegal / not already no-block 正式三事（256 余量）：[`../../tracks/network/worked-example-dis338-notcmpct-vs-bundled.md`](../../tracks/network/worked-example-dis338-notcmpct-vs-bundled.md)（不变量 1242）。 BIP-338 addr-suggest not already forbidden / not already disconnected / not already illegal 正式三事（256 余量）：[`../../tracks/network/worked-example-dis338-notaddr-vs-bundled.md`](../../tracks/network/worked-example-dis338-notaddr-vs-bundled.md)（不变量 1243）。（不变量 256）。看见版本里关掉交易转发不是已经终身只传块。看见发了停交易转发不是已经没有紧凑块。看见建议关掉地址不是已经禁止传地址。看见协议版本够了不是已经实现本页。
 
 精读：[`../../tracks/network/worked-example-feature-vs-enabled.md`](../../tracks/network/worked-example-feature-vs-enabled.md)（不变量 259）。看见协议版本够了不是已经支持某项功能。看见通告了 feature 不是已经启用。看见 verack 之后才来的 feature 不是已经是本页协商。
 
