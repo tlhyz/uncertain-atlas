@@ -1,3 +1,7 @@
+## 2026-09-18（续 821）
+
+- 不变量 704；语料 C681；模式 name-the-maxgas-notenforced-bar；反模式 maxgas-notenforced-sold-as-bundled；L10.3 第 673 条。填 L4.4 / CometBFT 档案 MaxGas 不是已经在执行 not already enforcing / not already MaxBytes synonym / not already fee market 正式三事（315 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。315 maxgas vs enforced bundled unbundling 启动（704 item 1）。
+
 ## 2026-09-18（续 820）
 
 - 不变量 703；语料 C680；模式 name-the-querystate-notsnapshot-bar；反模式 querystate-notsnapshot-sold-as-bundled；L10.3 第 672 条。填 L4.4 / CometBFT 档案启动对齐不是已经是快照重放 not already snapshot loaded / not already genesis replay / not already Snapshot connection 正式三事（314 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。314 querystate vs execute bundled unbundling 完成（701 + 702 + 703）。
