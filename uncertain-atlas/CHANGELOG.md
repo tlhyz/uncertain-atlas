@@ -1,3 +1,15 @@
+## 2026-09-17（续 1165）
+
+- 不变量 1048；语料 C1026；模式 name-the-prepreqcol-nothead-bar；反模式 prepreqcol-nothead-sold-as-bundled；L10.3 第 1017 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.height not already header-aligned / not already header-known / not already settled 正式三事（423 余量）。423 prepreq vs return bundled unbundling 完成（1048 item 3）。
+
+## 2026-09-17（续 1164）
+
+- 不变量 1047；语料 C1025；模式 name-the-prepreqcol-notproc-bar；反模式 prepreqcol-notproc-sold-as-bundled；L10.3 第 1016 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.txs not already processed / not already executed / not already settled 正式三事（423 余量）。423 prepreq vs return bundled unbundling 续（1047 item 2）。
+
+## 2026-09-17（续 1163）
+
+- 不变量 1046；语料 C1024；模式 name-the-prepreqcol-notcap-bar；反模式 prepreqcol-notcap-sold-as-bundled；L10.3 第 1015 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.max_tx_bytes not already over-limit-ok / not already engine-trimmed / not already settled 正式三事（423 余量）。423 prepreq vs return bundled unbundling 启动（1046 item 1）。
+
 ## 2026-09-17（续 1162）
 
 - 不变量 1045；语料 C1023；模式 name-the-extvicol-notgive-bar；反模式 extvicol-notgive-sold-as-bundled；L10.3 第 1014 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo.extension_signature not already given-to-app / not already replay-protected / not already settled 正式三事（421 余量）。421 extvitable vs usage bundled unbundling 完成（1045 item 3）。

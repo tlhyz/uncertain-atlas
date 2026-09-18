@@ -1,3 +1,6 @@
+- [`name-the-prepreqcol-nothead-bar.md`](name-the-prepreqcol-nothead-bar.md) — PrepareProposalRequest.height not already header-aligned / not already header-known / not already settled 正式三事（423 余量）（不变量 1048）
+- [`name-the-prepreqcol-notproc-bar.md`](name-the-prepreqcol-notproc-bar.md) — PrepareProposalRequest.txs not already processed / not already executed / not already settled 正式三事（423 余量）（不变量 1047）
+- [`name-the-prepreqcol-notcap-bar.md`](name-the-prepreqcol-notcap-bar.md) — PrepareProposalRequest.max_tx_bytes not already over-limit-ok / not already engine-trimmed / not already settled 正式三事（423 余量）（不变量 1046）
 - [`name-the-extvicol-notgive-bar.md`](name-the-extvicol-notgive-bar.md) — ExtendedVoteInfo.extension_signature not already given-to-app / not already replay-protected / not already settled 正式三事（421 余量）（不变量 1045）
 - [`name-the-extvicol-notsign-bar.md`](name-the-extvicol-notsign-bar.md) — ExtendedVoteInfo.non_rp_vote_extension not already signed-as-is / not already replay-protected / not already settled 正式三事（421 余量）（不变量 1044）
 - [`name-the-extvicol-notextract-bar.md`](name-the-extvicol-notextract-bar.md) — ExtendedVoteInfo.vote_extension not already extracted / not already packed / not already settled 正式三事（421 余量）（不变量 1043）

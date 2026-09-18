@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Prepare 请求栏就已经能回超限列表、已经跑过 Process、已经对上了拟议块头」，必须分开 PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节是不是已经能回超限列表、PrepareProposalRequest.txs 是挑进拟议块的初步交易列表是不是已经跑过 Process、PrepareProposalRequest.height 是将要提议的那块的高度是不是已经对上了拟议块头。可以跳过「看见填了 Prepare 请求栏就已经能回超限列表」。不要另写怎样写 Prepare 请求栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Prepare 请求栏就已经能回超限列表、已经跑过 Process、已经对上了拟议块头」，必须分开 PrepareProposalRequest.max_tx_bytes 是当前配置的、改过的交易占的最大字节是不是已经能回超限列表、PrepareProposalRequest.txs 是挑进拟议块的初步交易列表是不是已经跑过 Process、PrepareProposalRequest.height 是将要提议的那块的高度是不是已经对上了拟议块头。可以跳过「看见填了 Prepare 请求栏就已经能回超限列表」。不要另写怎样写 Prepare 请求栏。423 prepreq vs return bundled unbundling 完成（1046 item 1 / 1047 item 2 / 1048 item 3）；精读 [`worked-example-prepreqcol-notcap-vs-bundled.md`](worked-example-prepreqcol-notcap-vs-bundled.md)（不变量 1046 item 1）。
 
 ## 本页不抄
 

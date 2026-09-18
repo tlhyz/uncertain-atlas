@@ -1,3 +1,18 @@
+| A5000 | 记录 | 会与 423 / 419 / 359 / 422 / 1046 / 1047 糊成「看见 PrepareProposalRequest.height 就已经对上了拟议块头 interchangeable、就已经知道本头哈希 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.height not already header-aligned / not already header-known / not already settled 正式三事（423 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。423 prepreq vs return bundled unbundling 完成（1048 item 3） |
+| A5001 | 高 | 看见填了 height 会被写成已经对上了拟议块头 interchangeable / 419 interchangeable | 官方 Prepare 请求栏 item 3：not already header-aligned / not 419 |
+| A5002 | 高 | 看见有将要提议的高度 会被写成已经知道本头哈希 interchangeable / 359 interchangeable | 官方 Prepare 请求栏 item 3：not already header-known / not 359 |
+| A5003 | 高 | 看见能指高度 会被写成已经交差 interchangeable | 官方 Prepare 请求栏 item 3：not already settled |
+| A5004 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求栏。不另写 19 节 |
+| A4995 | 记录 | 会与 423 / 359 / 422 / 419 / 1046 / 1048 糊成「看见 PrepareProposalRequest.txs 就已经跑过 Process interchangeable、就已经执行那些交易 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.txs not already processed / not already executed / not already settled 正式三事（423 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。423 prepreq vs return bundled unbundling 续（1047 item 2） |
+| A4996 | 高 | 看见填了 txs 会被写成已经跑过 Process interchangeable / 359 interchangeable | 官方 Prepare 请求栏 item 2：not already processed / not 359 |
+| A4997 | 高 | 看见是初步列表 会被写成已经执行那些交易 interchangeable | 官方 Prepare 请求栏 item 2：not already executed |
+| A4998 | 高 | 看见能指初步交易 会被写成已经交差 interchangeable | 官方 Prepare 请求栏 item 2：not already settled |
+| A4999 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求栏。不另写 19 节 |
+| A4990 | 记录 | 会与 423 / 345 / 337 / 1047 / 1048 糊成「看见 PrepareProposalRequest.max_tx_bytes 就已经能回超限列表 interchangeable、就已经是引擎会帮你裁 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.max_tx_bytes not already over-limit-ok / not already engine-trimmed / not already settled 正式三事（423 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。423 prepreq vs return bundled unbundling 启动（1046 item 1） |
+| A4991 | 高 | 看见填了 max_tx_bytes 会被写成已经能回超限列表 interchangeable / 345 interchangeable | 官方 Prepare 请求栏 item 1：not already over-limit-ok / not 345 |
+| A4992 | 高 | 看见有当前配置上限 会被写成已经是引擎会帮你裁 interchangeable | 官方 Prepare 请求栏 item 1：not already engine-trimmed |
+| A4993 | 高 | 看见能指上限 会被写成已经交差 interchangeable | 官方 Prepare 请求栏 item 1：not already settled |
+| A4994 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求栏。不另写 19 节 |
 | A4985 | 记录 | 会与 421 / 358 / 369 / 1043 / 1044 糊成「看见 ExtendedVoteInfo.extension_signature 就已经把验过的签交给应用 interchangeable、就已经有重放保护 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo.extension_signature not already given-to-app / not already replay-protected / not already settled 正式三事（421 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。421 extvitable vs usage bundled unbundling 完成（1045 item 3） |
 | A4986 | 高 | 看见填了 extension_signature 会被写成已经把验过的签交给应用 interchangeable | 官方 ExtendedVoteInfo 表栏 item 3：not already given-to-app |
 | A4987 | 高 | 看见验过了 会被写成已经有重放保护 interchangeable | 官方 ExtendedVoteInfo 表栏 item 3：not already replay-protected |

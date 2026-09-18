@@ -1,3 +1,6 @@
+- [`prepreqcol-nothead-sold-as-bundled.md`](prepreqcol-nothead-sold-as-bundled.md) — height 被写成已经对上了拟议块头 / 已经知道本头哈希 / 已经交差（不变量 1048）
+- [`prepreqcol-notproc-sold-as-bundled.md`](prepreqcol-notproc-sold-as-bundled.md) — txs 被写成已经跑过 Process / 已经执行那些交易 / 已经交差（不变量 1047）
+- [`prepreqcol-notcap-sold-as-bundled.md`](prepreqcol-notcap-sold-as-bundled.md) — max_tx_bytes 被写成已经能回超限列表 / 已经是引擎会帮你裁 / 已经交差（不变量 1046）
 - [`extvicol-notgive-sold-as-bundled.md`](extvicol-notgive-sold-as-bundled.md) — extension_signature 被写成已经把验过的签交给应用 / 已经有重放保护 / 已经交差（不变量 1045）
 - [`extvicol-notsign-sold-as-bundled.md`](extvicol-notsign-sold-as-bundled.md) — non_rp_vote_extension 被写成已经按原样签 / 已经有重放保护 / 已经交差（不变量 1044）
 - [`extvicol-notextract-sold-as-bundled.md`](extvicol-notextract-sold-as-bundled.md) — vote_extension 被写成已经从本进程抽出 / 已经会包进 CanonicalVoteExtension / 已经交差（不变量 1043）
