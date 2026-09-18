@@ -1,3 +1,6 @@
+- [`name-the-enr-notid-bar.md`](name-the-enr-notid-bar.md) — EIP-778 scheme not already new-disc / not already new-scheme / not already found-trusted 正式三事（240 余量）（不变量 1291）
+- [`name-the-enr-notnew-bar.md`](name-the-enr-notnew-bar.md) — EIP-778 signed not already newest / not already compared / not already network-swapped 正式三事（240 余量）（不变量 1290）
+- [`name-the-enr-notkeys-bar.md`](name-the-enr-notkeys-bar.md) — EIP-778 keys not already interpreted / not already endpoint / not already disc-upgraded 正式三事（240 余量）（不变量 1289）
 - [`name-the-forkid-notfeat-bar.md`](name-the-forkid-notfeat-bar.md) — EIP-2124 id-scheme not already consensus / not already three-way / not already future-list 正式三事（239 余量）（不变量 1288）
 - [`name-the-forkid-notcompat-bar.md`](name-the-forkid-notcompat-bar.md) — EIP-2124 nextfork not already compatible / not already stale / not already must-upgrade 正式三事（239 余量）（不变量 1287）
 - [`name-the-forkid-notsame-bar.md`](name-the-forkid-notsame-bar.md) — EIP-2124 hash not already same-chain / not already naive-eq / not already genesis-counted 正式三事（239 余量）（不变量 1286）

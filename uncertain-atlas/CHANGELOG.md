@@ -1,3 +1,15 @@
+## 2026-09-18（续 1408）
+
+- 不变量 1291；语料 C1269；模式 name-the-enr-notid-bar；反模式 enr-notid-sold-as-bundled；L10.3 第 1260 条。填 L9.1 EIP-778 scheme not already new-disc / not already new-scheme / not already found-trusted 正式三事（240 余量）。240 enr vs newest bundled unbundling 完成（1291 item 3）。
+
+## 2026-09-18（续 1407）
+
+- 不变量 1290；语料 C1268；模式 name-the-enr-notnew-bar；反模式 enr-notnew-sold-as-bundled；L10.3 第 1259 条。填 L9.1 EIP-778 signed not already newest / not already compared / not already network-swapped 正式三事（240 余量）。240 enr vs newest bundled unbundling 续（1290 item 2）。
+
+## 2026-09-18（续 1406）
+
+- 不变量 1289；语料 C1267；模式 name-the-enr-notkeys-bar；反模式 enr-notkeys-sold-as-bundled；L10.3 第 1258 条。填 L9.1 EIP-778 keys not already interpreted / not already endpoint / not already disc-upgraded 正式三事（240 余量）。240 enr vs newest bundled unbundling 启动（1289 item 1）。
+
 ## 2026-09-18（续 1405）
 
 - 不变量 1288；语料 C1266；模式 name-the-forkid-notfeat-bar；反模式 forkid-notfeat-sold-as-bundled；L10.3 第 1257 条。填 L9.1 EIP-2124 id-scheme not already consensus / not already three-way / not already future-list 正式三事（239 余量）。239 forkid vs same chain bundled unbundling 完成（1288 item 3）。

@@ -1,3 +1,18 @@
+| A6220 | 记录 | 会与 240 / 241 / 235 / 1289 / 1290 糊成「看见默认方案名就已经换了发现协议 interchangeable、就已经换了签名方案 interchangeable、就已经从发现里找到 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-778 scheme not already new-disc / not already new-scheme / not already found-trusted 正式三事（240 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。240 enr vs newest bundled unbundling 完成（1291 item 3） |
+| A6221 | 高 | 看见默认方案名 会被写成已经换了发现协议 interchangeable / 241 interchangeable | 官方 EIP-778 enr item 3：not already 已经换了发现协议 / not 241 |
+| A6222 | 高 | 看见能走 DNS 转发 会被写成已经换了签名方案 interchangeable / 235 interchangeable | 官方 EIP-778 enr item 3：not already 已经换了签名方案 / not 235 |
+| A6223 | 高 | 看见默认方案名 会被写成已经从发现里找到 interchangeable | 官方 EIP-778 enr item 3：not already settled |
+| A6224 | 中 | 怎样造记录、怎样磨序号、怎样靠 DNS 冒充邻居会被抄进不确定 | 不抄。不写 怎样造记录、怎样磨序号、怎样靠 DNS 冒充邻居。不另写 19 节 |
+| A6215 | 记录 | 会与 240 / 241 / 239 / 1289 / 1291 糊成「看见签过的记录就已经是最新一份 interchangeable、就已经比过序号 interchangeable、就全网已经换完 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-778 signed not already newest / not already compared / not already network-swapped 正式三事（240 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。240 enr vs newest bundled unbundling 续（1290 item 2） |
+| A6216 | 高 | 看见签过的记录 会被写成已经是最新一份 interchangeable / 241 interchangeable | 官方 EIP-778 enr item 2：not already 已经是最新一份 / not 241 |
+| A6217 | 高 | 看见能验 会被写成已经比过序号 interchangeable / 239 interchangeable | 官方 EIP-778 enr item 2：not already 已经比过序号 / not 239 |
+| A6218 | 高 | 看见签过的记录 会被写成全网已经换完 interchangeable | 官方 EIP-778 enr item 2：not already settled |
+| A6219 | 中 | 怎样造记录、怎样磨序号、怎样靠 DNS 冒充邻居会被抄进不确定 | 不抄。不写 怎样造记录、怎样磨序号、怎样靠 DNS 冒充邻居。不另写 19 节 |
+| A6210 | 记录 | 会与 240 / 239 / 235 / 1290 / 1291 糊成「看见能多写键被收下就已经解释这些键 interchangeable、就已经有了可连的地址 interchangeable、就发现已经升级完 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-778 keys not already interpreted / not already endpoint / not already disc-upgraded 正式三事（240 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。240 enr vs newest bundled unbundling 启动（1289 item 1） |
+| A6211 | 高 | 看见能多写键被收下 会被写成已经解释这些键 interchangeable / 239 interchangeable | 官方 EIP-778 enr item 1：not already 已经解释这些键 / not 239 |
+| A6212 | 高 | 看见签过的记录 会被写成已经有了可连的地址 interchangeable / 235 interchangeable | 官方 EIP-778 enr item 1：not already 已经有了可连的地址 / not 235 |
+| A6213 | 高 | 看见能多写键被收下 会被写成发现已经升级完 interchangeable | 官方 EIP-778 enr item 1：not already settled |
+| A6214 | 中 | 怎样造记录、怎样磨序号、怎样靠 DNS 冒充邻居会被抄进不确定 | 不抄。不写 怎样造记录、怎样磨序号、怎样靠 DNS 冒充邻居。不另写 19 节 |
 | A6205 | 记录 | 会与 239 / 235 / 240 / 1286 / 1287 糊成「看见有了分叉标识就已经改了共识 interchangeable、就三向分叉已经能分开 interchangeable、就未来分叉清单已经齐 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-2124 id-scheme not already consensus / not already three-way / not already future-list 正式三事（239 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。239 forkid vs same chain bundled unbundling 完成（1288 item 3） |
 | A6206 | 高 | 看见有了分叉标识 会被写成已经改了共识 interchangeable / 235 interchangeable | 官方 EIP-2124 forkid item 3：not already 已经改了共识 / not 235 |
 | A6207 | 高 | 看见只通告下一次 会被写成三向分叉已经能分开 interchangeable / 240 interchangeable | 官方 EIP-2124 forkid item 3：not already 三向分叉已经能分开 / not 240 |

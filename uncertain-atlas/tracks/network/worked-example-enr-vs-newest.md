@@ -41,7 +41,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见签过的节点记录就已经是最新一份 / 就已经发现 / 就已经换了身份方案」。若对照连通身份，必须分开记录格式、序号更新、身份方案、发现以外的转发。不要把文本前缀记录写成已经连上。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见签过的节点记录就已经是最新一份 / 就已经发现 / 就已经换了身份方案」。若对照连通身份，必须分开记录格式、序号更新、身份方案、发现以外的转发。不要把文本前缀记录写成已经连上。240 enr vs newest bundled unbundling 完成（1289 item 1 / 1290 item 2 / 1291 item 3）；精读 [`worked-example-enr-notkeys-vs-bundled.md`](worked-example-enr-notkeys-vs-bundled.md)（不变量 1289 item 1）、[`worked-example-enr-notnew-vs-bundled.md`](worked-example-enr-notnew-vs-bundled.md)（不变量 1290 item 2）、[`worked-example-enr-notid-vs-bundled.md`](worked-example-enr-notid-vs-bundled.md)（不变量 1291 item 3）。
 
 ## 本页不抄
 

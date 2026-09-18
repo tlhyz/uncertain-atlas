@@ -1,3 +1,6 @@
+- [`enr-notid-sold-as-bundled.md`](enr-notid-sold-as-bundled.md) — 默认方案名 被写成已经换发现协议 / 多写键就已经换签名方案 / DNS 转发就已经从发现找到（不变量 1291）
+- [`enr-notnew-sold-as-bundled.md`](enr-notnew-sold-as-bundled.md) — 签过的记录 被写成已经最新 / 能验就已经比过序号 / 看见序号就已经全网换完（不变量 1290）
+- [`enr-notkeys-sold-as-bundled.md`](enr-notkeys-sold-as-bundled.md) — 能多写键被收下 被写成已经解释 / 签过就已经有可连地址 / 多写键就已经升级发现（不变量 1289）
 - [`forkid-notfeat-sold-as-bundled.md`](forkid-notfeat-sold-as-bundled.md) — 有了分叉标识 被写成已经改了共识 / 三向分叉已经能分开 / 未来分叉清单已经齐（不变量 1288）
 - [`forkid-notcompat-sold-as-bundled.md`](forkid-notcompat-sold-as-bundled.md) — 通告了下一分叉 被写成已经兼容 / 子集就已经陈旧 / 超集就已经该升级（不变量 1287）
 - [`forkid-notsame-sold-as-bundled.md`](forkid-notsame-sold-as-bundled.md) — 分叉哈希对上 被写成已经同一条链 / 已经朴素相等 / 创世非 Frontier 就已经算进已应用分叉（不变量 1286）
