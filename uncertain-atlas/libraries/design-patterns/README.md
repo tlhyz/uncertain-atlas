@@ -1,3 +1,6 @@
+- [`name-the-enc38-notfrag-bar.md`](name-the-enc38-notfrag-bar.md) — BIP-38 address-fragment not already address / not already decrypted / not already recommended 正式三事（296 余量）（不变量 1207）
+- [`name-the-enc38-notmint-bar.md`](name-the-enc38-notmint-bar.md) — BIP-38 factory-generated not already redeemable / not already same-path / not already settled 正式三事（296 余量）（不变量 1206）
+- [`name-the-enc38-notuse-bar.md`](name-the-enc38-notuse-bar.md) — BIP-38 encrypted-record not already private-key / not already usable / not already settled 正式三事（296 余量）（不变量 1205）
 - [`name-the-pay70-notfinal-bar.md`](name-the-pay70-notfinal-bar.md) — BIP-70 ack not already final / not already confirmed / not already refunded 正式三事（295 余量）（不变量 1204）
 - [`name-the-pay70-notack-bar.md`](name-the-pay70-notack-bar.md) — BIP-70 payment-message not already ack / not already merchant-accepted / not already settled 正式三事（295 余量）（不变量 1203）
 - [`name-the-pay70-notauth-bar.md`](name-the-pay70-notauth-bar.md) — BIP-70 payment-request not already authorized / not already that-address / not already settled 正式三事（295 余量）（不变量 1202）

@@ -898,6 +898,9 @@
 - [`../lifecycle/worked-example-por127-notctrl-vs-bundled.md`](../lifecycle/worked-example-por127-notctrl-vs-bundled.md) — 其余输入签过≠already 258-control/paid/settled；≠293 bundled（不变量 1197）
 - [`../lifecycle/worked-example-por127-notspend-vs-bundled.md`](../lifecycle/worked-example-por127-notspend-vs-bundled.md) — 储备证明交易≠already spendable/confirmable/settled；≠293 bundled（不变量 1196）
 - [`../lifecycle/worked-example-reserves-vs-spend.md`](../lifecycle/worked-example-reserves-vs-spend.md) — 储备证明交易 ≠ 已经能花；其余输入签过 ≠ 已经控制资金；POR 栏 ≠ 已经是普通花费（不变量 293）
+- [`worked-example-enc38-notfrag-vs-bundled.md`](worked-example-enc38-notfrag-vs-bundled.md) — 地址片段≠already address/decrypted/recommended；≠296 bundled（不变量 1207）
+- [`worked-example-enc38-notmint-vs-bundled.md`](worked-example-enc38-notmint-vs-bundled.md) — 厂家代生成≠already redeemable/same-path/settled；≠296 bundled（不变量 1206）
+- [`worked-example-enc38-notuse-vs-bundled.md`](worked-example-enc38-notuse-vs-bundled.md) — 加密记录≠already private-key/usable/settled；≠296 bundled（不变量 1205）
 - [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）
 - [`worked-example-p2sh-address-vs-redeem.md`](worked-example-p2sh-address-vs-redeem.md) — 本页这种地址 ≠ 已经是赎回脚本；旧软件报无效 ≠ 已经付过；只有地址 ≠ 已经知道付给谁（不变量 297）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）

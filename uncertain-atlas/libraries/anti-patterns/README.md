@@ -1,3 +1,6 @@
+- [`enc38-notfrag-sold-as-bundled.md`](enc38-notfrag-sold-as-bundled.md) — 地址哈希片段 被写成已经是地址 / 已经解开 / 已经交差（不变量 1207）
+- [`enc38-notmint-sold-as-bundled.md`](enc38-notmint-sold-as-bundled.md) — 厂家代生成 被写成已经能兑 / 已经能分辨编法 / 已经交差（不变量 1206）
+- [`enc38-notuse-sold-as-bundled.md`](enc38-notuse-sold-as-bundled.md) — 加密私钥记录 被写成已经是私钥 / 已经能用 / 已经交差（不变量 1205）
 - [`pay70-notfinal-sold-as-bundled.md`](pay70-notfinal-sold-as-bundled.md) — 回执 被写成已经最终 / 已经确认 / 已经交差（不变量 1204）
 - [`pay70-notack-sold-as-bundled.md`](pay70-notack-sold-as-bundled.md) — 付款报文 被写成已经是回执 / 已经商家收下 / 已经交差（不变量 1203）
 - [`pay70-notauth-sold-as-bundled.md`](pay70-notauth-sold-as-bundled.md) — 付款请求 被写成已经授权 / 已经是那条地址 / 已经交差（不变量 1202）

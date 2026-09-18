@@ -1,3 +1,18 @@
+| A5800 | 记录 | 会与 296 / 174 / 258 / 1205 / 1206 糊成「看见地址哈希片段就已经是地址 interchangeable、就已经解开 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-38 address-fragment not already address / not already decrypted / not already recommended 正式三事（296 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。296 encrypted key vs usable bundled unbundling 完成（1207 item 3） |
+| A5801 | 高 | 看见地址哈希片段 会被写成已经是地址 interchangeable / 174 interchangeable | 官方 BIP-38 encrypted-key item 3：not already address / not 174 |
+| A5802 | 高 | 看见这种打印前缀 会被写成已经解开 interchangeable / 258 interchangeable | 官方 BIP-38 encrypted-key item 3：not already decrypted / not 258 |
+| A5803 | 高 | 看见本页已部署 会被写成已经交差 interchangeable | 官方 BIP-38 encrypted-key item 3：not already recommended |
+| A5804 | 中 | 怎样用口令解开或怎样做椭圆曲线倍点会被抄进不确定 | 不抄。不写怎样用口令解开或怎样做椭圆曲线倍点。不另写 19 节 |
+| A5795 | 记录 | 会与 296 / 182 / 174 / 1205 / 1207 糊成「看见厂家代生成就已经能兑 interchangeable、就已经能分辨编法 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-38 factory-generated not already redeemable / not already same-path / not already settled 正式三事（296 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。296 encrypted key vs usable bundled unbundling 续（1206 item 2） |
+| A5796 | 高 | 看见厂家代生成 会被写成已经能兑 interchangeable / 182 interchangeable | 官方 BIP-38 encrypted-key item 2：not already redeemable / not 182 |
+| A5797 | 高 | 看见同一种打印串 会被写成已经能分辨编法 interchangeable / 174 interchangeable | 官方 BIP-38 encrypted-key item 2：not already same-path / not 174 |
+| A5798 | 高 | 看见共享生成 会被写成已经交差 interchangeable | 官方 BIP-38 encrypted-key item 2：not already settled |
+| A5799 | 中 | 怎样用口令解开或怎样做椭圆曲线倍点会被抄进不确定 | 不抄。不写怎样用口令解开或怎样做椭圆曲线倍点。不另写 19 节 |
+| A5790 | 记录 | 会与 296 / 183 / 182 / 1206 / 1207 糊成「看见加密私钥记录就已经是私钥 interchangeable、就已经能用 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-38 encrypted-record not already private-key / not already usable / not already settled 正式三事（296 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。296 encrypted key vs usable bundled unbundling 启动（1205 item 1） |
+| A5791 | 高 | 看见加密私钥记录 会被写成已经是私钥 interchangeable / 183 interchangeable | 官方 BIP-38 encrypted-key item 1：not already private-key / not 183 |
+| A5792 | 高 | 看见还缺一样才能用 会被写成已经能用 interchangeable / 182 interchangeable | 官方 BIP-38 encrypted-key item 1：not already usable / not 182 |
+| A5793 | 高 | 看见能打印 会被写成已经交差 interchangeable | 官方 BIP-38 encrypted-key item 1：not already settled |
+| A5794 | 中 | 怎样用口令解开或怎样做椭圆曲线倍点会被抄进不确定 | 不抄。不写怎样用口令解开或怎样做椭圆曲线倍点。不另写 19 节 |
 | A5785 | 记录 | 会与 295 / 255 / 294 / 1202 / 1203 糊成「看见回执就已经最终 interchangeable、就已经确认 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-70 ack not already final / not already confirmed / not already refunded 正式三事（295 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。295 request vs ack bundled unbundling 完成（1204 item 3） |
 | A5786 | 高 | 看见回执 会被写成已经最终 interchangeable / 255 interchangeable | 官方 BIP-70 payment item 3：not already final / not 255 |
 | A5787 | 高 | 看见已收到那句备忘 会被写成已经确认 interchangeable / 294 interchangeable | 官方 BIP-70 payment item 3：not already confirmed / not 294 |

@@ -1,3 +1,15 @@
+## 2026-09-18（续 1324）
+
+- 不变量 1207；语料 C1185；模式 name-the-enc38-notfrag-bar；反模式 enc38-notfrag-sold-as-bundled；L10.3 第 1176 条。填 L1.4 / L3.6 BIP-38 address-fragment not already address / not already decrypted / not already recommended 正式三事（296 余量）。296 encrypted key vs usable bundled unbundling 完成（1207 item 3）。
+
+## 2026-09-18（续 1323）
+
+- 不变量 1206；语料 C1184；模式 name-the-enc38-notmint-bar；反模式 enc38-notmint-sold-as-bundled；L10.3 第 1175 条。填 L1.4 / L3.6 BIP-38 factory-generated not already redeemable / not already same-path / not already settled 正式三事（296 余量）。296 encrypted key vs usable bundled unbundling 续（1206 item 2）。
+
+## 2026-09-18（续 1322）
+
+- 不变量 1205；语料 C1183；模式 name-the-enc38-notuse-bar；反模式 enc38-notuse-sold-as-bundled；L10.3 第 1174 条。填 L1.4 / L3.6 BIP-38 encrypted-record not already private-key / not already usable / not already settled 正式三事（296 余量）。296 encrypted key vs usable bundled unbundling 启动（1205 item 1）。
+
 ## 2026-09-18（续 1321）
 
 - 不变量 1204；语料 C1182；模式 name-the-pay70-notfinal-bar；反模式 pay70-notfinal-sold-as-bundled；L10.3 第 1173 条。填 L0.7 / L3.6 BIP-70 ack not already final / not already confirmed / not already refunded 正式三事（295 余量）。295 request vs ack bundled unbundling 完成（1204 item 3）。
