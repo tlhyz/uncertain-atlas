@@ -1,3 +1,15 @@
+## 2026-09-18（续 1183）
+
+- 不变量 1066；语料 C1044；模式 name-the-finend-nothist-bar；反模式 finend-nothist-sold-as-bundled；L10.3 第 1035 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.syncing_to_height not already full-history / not already snapshot-restore / not already consensus 正式三事（429 余量）。429 finreqend vs procreq bundled unbundling 完成（1066 item 3）。
+
+## 2026-09-18（续 1182）
+
+- 不变量 1065；语料 C1043；模式 name-the-finend-nothead-bar；反模式 finend-nothead-sold-as-bundled；L10.3 第 1034 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.time not already header-aligned / not already prepare-time / not already settled 正式三事（429 余量）。429 finreqend vs procreq bundled unbundling 续（1065 item 2）。
+
+## 2026-09-18（续 1181）
+
+- 不变量 1064；语料 C1042；模式 name-the-finend-notmaking-bar；反模式 finend-notmaking-sold-as-bundled；L10.3 第 1033 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.proposer_address not already making / not already header-known / not already settled 正式三事（429 余量）。429 finreqend vs procreq bundled unbundling 启动（1064 item 1）。
+
 ## 2026-09-18（续 1180）
 
 - 不变量 1063；语料 C1041；模式 name-the-finrestr-notproc-bar；反模式 finrestr-notproc-sold-as-bundled；L10.3 第 1032 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.next_validators_hash not already process-hash / not already prepare-hash / not already settled 正式三事（428 余量）。428 finreqrest vs procreq bundled unbundling 完成（1063 item 3）。

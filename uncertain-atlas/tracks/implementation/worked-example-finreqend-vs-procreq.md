@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 请求末栏就已经正在造这份提案、已经对上了拟议块头、已经有完整历史」，必须分开 FinalizeBlockRequest.proposer_address 是造了这份提案的验证者地址是不是已经正在造这份提案、FinalizeBlockRequest.time 是已决块的时间戳是不是已经对上了拟议块头、FinalizeBlockRequest.syncing_to_height 同步或重放时是目标高、否则等于本高是不是已经有完整历史。可以跳过「看见填了 Finalize 请求末栏就已经正在造这份提案」。不要另写怎样写 Finalize 请求末栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 请求末栏就已经正在造这份提案、已经对上了拟议块头、已经有完整历史」，必须分开 FinalizeBlockRequest.proposer_address 是造了这份提案的验证者地址是不是已经正在造这份提案、FinalizeBlockRequest.time 是已决块的时间戳是不是已经对上了拟议块头、FinalizeBlockRequest.syncing_to_height 同步或重放时是目标高、否则等于本高是不是已经有完整历史。可以跳过「看见填了 Finalize 请求末栏就已经正在造这份提案」。不要另写怎样写 Finalize 请求末栏。429 finreqend vs procreq bundled unbundling 完成（1064 item 1 / 1065 item 2 / 1066 item 3）；精读 [`worked-example-finend-notmaking-vs-bundled.md`](worked-example-finend-notmaking-vs-bundled.md)（不变量 1064 item 1）。
 
 ## 本页不抄
 

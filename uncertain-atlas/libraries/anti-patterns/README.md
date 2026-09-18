@@ -1,3 +1,6 @@
+- [`finend-nothist-sold-as-bundled.md`](finend-nothist-sold-as-bundled.md) — syncing_to_height 被写成已经有完整历史 / 已经是快照重放 / 已经切进共识（不变量 1066）
+- [`finend-nothead-sold-as-bundled.md`](finend-nothead-sold-as-bundled.md) — time 被写成已经对上了拟议块头 / 已经是 Prepare time / 已经交差（不变量 1065）
+- [`finend-notmaking-sold-as-bundled.md`](finend-notmaking-sold-as-bundled.md) — proposer 被写成已经正在造 / 已经知道本头哈希 / 已经交差（不变量 1064）
 - [`finrestr-notproc-sold-as-bundled.md`](finrestr-notproc-sold-as-bundled.md) — next_validators_hash 被写成已经是 Process 末栏 / 已经是 Prepare 末栏 / 已经换了人（不变量 1063）
 - [`finrestr-notpunish-sold-as-bundled.md`](finrestr-notpunish-sold-as-bundled.md) — misbehavior 被写成已经定奖惩 / 已经是 Process misbehavior / 已经交差（不变量 1062）
 - [`finrestr-nothash-sold-as-bundled.md`](finrestr-nothash-sold-as-bundled.md) — hash 被写成已经是 Process hash / 已经跑过 Process / 已经交差（不变量 1061）

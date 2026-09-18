@@ -1,3 +1,6 @@
+- [`name-the-finend-nothist-bar.md`](name-the-finend-nothist-bar.md) — FinalizeBlockRequest.syncing_to_height not already full-history / not already snapshot-restore / not already consensus 正式三事（429 余量）（不变量 1066）
+- [`name-the-finend-nothead-bar.md`](name-the-finend-nothead-bar.md) — FinalizeBlockRequest.time not already header-aligned / not already prepare-time / not already settled 正式三事（429 余量）（不变量 1065）
+- [`name-the-finend-notmaking-bar.md`](name-the-finend-notmaking-bar.md) — FinalizeBlockRequest.proposer_address not already making / not already header-known / not already settled 正式三事（429 余量）（不变量 1064）
 - [`name-the-finrestr-notproc-bar.md`](name-the-finrestr-notproc-bar.md) — FinalizeBlockRequest.next_validators_hash not already process-hash / not already prepare-hash / not already settled 正式三事（428 余量）（不变量 1063）
 - [`name-the-finrestr-notpunish-bar.md`](name-the-finrestr-notpunish-bar.md) — FinalizeBlockRequest.misbehavior not already rewarded / not already process-mis / not already settled 正式三事（428 余量）（不变量 1062）
 - [`name-the-finrestr-nothash-bar.md`](name-the-finrestr-nothash-bar.md) — FinalizeBlockRequest.hash not already process-hash / not already processed / not already settled 正式三事（428 余量）（不变量 1061）
