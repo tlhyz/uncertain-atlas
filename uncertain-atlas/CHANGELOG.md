@@ -1,3 +1,7 @@
+## 2026-09-18（续 819）
+
+- 不变量 702；语料 C679；模式 name-the-querystate-notcaughtup-bar；反模式 querystate-notcaughtup-sold-as-bundled；L10.3 第 671 条。填 L4.4 / CometBFT 档案上次 Commit 不是已经跟上正在跑的块 not already caught up / not already CheckTxState / not already synced 正式三事（314 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。314 querystate vs execute bundled unbundling 续（702 item 2）。
+
 ## 2026-09-18（续 818）
 
 - 不变量 701；语料 C678；模式 name-the-querystate-notexecute-bar；反模式 querystate-notexecute-sold-as-bundled；L10.3 第 670 条。填 L4.4 / CometBFT 档案 Query 连接不是已经是 ExecuteTxState not already ExecuteTxState / not already writable / not already same as execute 正式三事（314 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。314 querystate vs execute bundled unbundling 启动（701 item 1）。

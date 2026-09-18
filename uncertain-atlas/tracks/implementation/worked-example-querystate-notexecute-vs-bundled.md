@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Query 连接不是已经是 ExecuteTxState not already ExecuteTxState / not already writable / not already same as execute 正式三事（314 余量），必须分开能查 是不是 already ExecuteTxState interchangeable / 314 querystate bundled interchangeable / querystate-sold-as-execute interchangeable、连接在 是不是 already writable interchangeable、名字里有 Query 是不是 already same as execute interchangeable。可以跳过「看见能查就已经是工作状态 interchangeable / 就已经能写 interchangeable / 就已经同一份 interchangeable」。不要另写怎样实现 QueryState。314 querystate vs execute bundled unbundling 在本页 item 1 完成；续 [`worked-example-querystate-notcaughtup-vs-bundled.md`](worked-example-querystate-notcaughtup-vs-bundled.md)（不变量 702 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Query 连接不是已经是 ExecuteTxState not already ExecuteTxState / not already writable / not already same as execute 正式三事（314 余量），必须分开能查 是不是 already ExecuteTxState interchangeable / 314 querystate bundled interchangeable / querystate-sold-as-execute interchangeable、连接在 是不是 already writable interchangeable、名字里有 Query 是不是 already same as execute interchangeable。可以跳过「看见能查就已经是工作状态 interchangeable / 就已经能写 interchangeable / 就已经同一份 interchangeable」。不要另写怎样实现 QueryState。314 querystate vs execute bundled unbundling 在本页 item 1 完成；续 [`worked-example-querystate-notcaughtup-vs-bundled.md`](worked-example-querystate-notcaughtup-vs-bundled.md)（不变量 702 item 2）。
 
 ## 本页不抄
 
