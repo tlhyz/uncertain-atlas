@@ -1,3 +1,15 @@
+## 2026-09-18（续 1207）
+
+- 不变量 1090；语料 C1068；模式 name-the-vreqh-notskip-bar；反模式 vreqh-notskip-sold-as-bundled；L10.3 第 1059 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.vote_extension not already skip-verify / not already signed-as-is / not already settled 正式三事（415 余量）。415 verifyheight vs extheight bundled unbundling 完成（1090 item 3）。
+
+## 2026-09-18（续 1206）
+
+- 不变量 1089；语料 C1067；模式 name-the-vreqh-notproc-bar；反模式 vreqh-notproc-sold-as-bundled；L10.3 第 1058 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.hash not already not-guaranteed-processed / not already ext-hash / not already settled 正式三事（415 余量）。415 verifyheight vs extheight bundled unbundling 续（1089 item 2）。
+
+## 2026-09-18（续 1205）
+
+- 不变量 1088；语料 C1066；模式 name-the-vreqh-notprop-bar；反模式 vreqh-notprop-sold-as-bundled；L10.3 第 1057 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.height not already proposed-height / not already aligned / not already will-call 正式三事（415 余量）。415 verifyheight vs extheight bundled unbundling 启动（1088 item 1）。
+
 ## 2026-09-18（续 1204）
 
 - 不变量 1087；语料 C1065；模式 name-the-vfwhen-notcommit-bar；反模式 vfwhen-notcommit-sold-as-bundled；L10.3 第 1056 条。填 L4.4 / CometBFT 档案 ACCEPT keep / REJECT discard not already last-commit / not already late-verified / not already block-invalid 正式三事（435 余量）。435 verify-formal-when vs flow bundled unbundling 完成（1087 item 3）。

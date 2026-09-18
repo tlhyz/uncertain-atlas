@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Verify 请求余栏就已经是拟议块高度、已经不保证跑过 Process、已经跳过 Verify」，必须分开 VerifyVoteExtensionRequest.height 是块高度（用来对一下）是不是已经是拟议块高度、VerifyVoteExtensionRequest.hash 是扩展要指的那份拟议块哈希是不是已经不保证跑过 Process、VerifyVoteExtensionRequest.vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长是不是已经跳过 Verify。可以跳过「看见填了 Verify 请求余栏就已经是拟议块高度」。不要另写怎样写 Verify 请求余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Verify 请求余栏就已经是拟议块高度、已经不保证跑过 Process、已经跳过 Verify」，必须分开 VerifyVoteExtensionRequest.height 是块高度（用来对一下）是不是已经是拟议块高度、VerifyVoteExtensionRequest.hash 是扩展要指的那份拟议块哈希是不是已经不保证跑过 Process、VerifyVoteExtensionRequest.vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长是不是已经跳过 Verify。可以跳过「看见填了 Verify 请求余栏就已经是拟议块高度」。不要另写怎样写 Verify 请求余栏。415 verifyheight vs extheight bundled unbundling 完成（1088 item 1 / 1089 item 2 / 1090 item 3）；精读 [`worked-example-vreqh-notprop-vs-bundled.md`](worked-example-vreqh-notprop-vs-bundled.md)（不变量 1088 item 1）。
 
 ## 本页不抄
 

@@ -659,6 +659,9 @@
 - [`worked-example-exectxlog-notchecktxinfo-vs-bundled.md`](worked-example-exectxlog-notchecktxinfo-vs-bundled.md) — ExecTxResult.info≠391 CheckTx info/384 Query info/already settled；≠414 bundled（不变量 759）
 - [`worked-example-exectxlog-notquerylog-vs-bundled.md`](worked-example-exectxlog-notquerylog-vs-bundled.md) — ExecTxResult.log≠384 Query log/already fresh/390 CheckTx log；≠414 bundled（不变量 758）
 - [`worked-example-exectxlog-vs-querylog.md`](worked-example-exectxlog-vs-querylog.md) — ExecTxResult.log 是应用日志的输出 ≠ 已经是 Query 日志；ExecTxResult.info 是附加信息 ≠ 已经是 CheckTx 附加信息；ExecTxResult.log / info 标成非确定、引擎会记日志此外忽略 ≠ 已经印进本头（不变量 414）
+- [`worked-example-vreqh-notskip-vs-bundled.md`](worked-example-vreqh-notskip-vs-bundled.md) — vote_extension≠already skip-verify/signed-as-is/settled；≠415 bundled（不变量 1090）
+- [`worked-example-vreqh-notproc-vs-bundled.md`](worked-example-vreqh-notproc-vs-bundled.md) — hash≠already not-guaranteed-processed/ext-hash/settled；≠415 bundled（不变量 1089）
+- [`worked-example-vreqh-notprop-vs-bundled.md`](worked-example-vreqh-notprop-vs-bundled.md) — height≠already proposed-height/aligned/will-call；≠415 bundled（不变量 1088）
 - [`worked-example-verifyheight-vs-extheight.md`](worked-example-verifyheight-vs-extheight.md) — VerifyVoteExtensionRequest.height 是块高度（用来对一下） ≠ 已经是拟议块高度；VerifyVoteExtensionRequest.hash 是扩展要指的那份拟议块哈希 ≠ 已经不保证跑过 Process；VerifyVoteExtensionRequest.vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 ≠ 已经跳过 Verify（不变量 415）
 - [`worked-example-proposetimeout-vs-process.md`](worked-example-proposetimeout-vs-process.md) — 进了这一轮会先设 ProposeTimeout ≠ 已经填了 TimeoutPropose；收到带上头的提案会先验块头 ≠ 已经跑过 Process；收齐块片才按验证者算法看该不该 prevote 这块或 nil ≠ 已经会调 Process（不变量 416）
 - [`worked-example-htmatch-vs-header.md`](worked-example-htmatch-vs-header.md) — 自己是提议者会先走完 Prepare 那五步 ≠ 已经不用再 Process；Process 的 height / time 对上拟议块头 ≠ 已经验过块头；Finalize 的 height / time 对上拟议块头 ≠ 已经是刚决定那块的字段（不变量 417）

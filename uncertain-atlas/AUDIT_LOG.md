@@ -1,3 +1,18 @@
+| A5210 | 记录 | 会与 415 / 353 / 358 / 1088 / 1089 糊成「看见 vote_extension 就已经跳过 Verify interchangeable、就已经按原样签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.vote_extension not already skip-verify / not already signed-as-is / not already settled 正式三事（415 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。415 verifyheight vs extheight bundled unbundling 完成（1090 item 3） |
+| A5211 | 高 | 看见能空 会被写成已经跳过 Verify interchangeable / 353 interchangeable | 官方 Verify 请求余栏 item 3：not already skip-verify / not 353 |
+| A5212 | 高 | 看见由 CometBFT 签 会被写成已经按原样签 interchangeable / 358 interchangeable | 官方 Verify 请求余栏 item 3：not already signed-as-is / not 358 |
+| A5213 | 高 | 看见是应用自己的信息 会被写成已经交差 interchangeable | 官方 Verify 请求余栏 item 3：not already settled |
+| A5214 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Verify 请求余栏。不另写 19 节 |
+| A5205 | 记录 | 会与 415 / 353 / 410 / 1088 / 1090 糊成「看见 hash 就已经不保证跑过 Process interchangeable、就已经是 ExtendVote hash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.hash not already not-guaranteed-processed / not already ext-hash / not already settled 正式三事（415 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。415 verifyheight vs extheight bundled unbundling 续（1089 item 2） |
+| A5206 | 高 | 看见填了 hash 会被写成已经不保证跑过 Process interchangeable / 353 interchangeable | 官方 Verify 请求余栏 item 2：not already not-guaranteed-processed / not 353 |
+| A5207 | 高 | 看见有拟议块哈希 会被写成已经是 ExtendVoteRequest.hash interchangeable / 410 interchangeable | 官方 Verify 请求余栏 item 2：not already ext-hash / not 410 |
+| A5208 | 高 | 看见能指 会被写成已经交差 interchangeable | 官方 Verify 请求余栏 item 2：not already settled |
+| A5209 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Verify 请求余栏。不另写 19 节 |
+| A5200 | 记录 | 会与 415 / 410 / 435 / 1089 / 1090 糊成「看见 height 就已经是拟议块高度 interchangeable、就已经对上了 interchangeable、就已经会调 Verify interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.height not already proposed-height / not already aligned / not already will-call 正式三事（415 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。415 verifyheight vs extheight bundled unbundling 启动（1088 item 1） |
+| A5201 | 高 | 看见填了 height 会被写成已经是拟议块高度 interchangeable / 410 interchangeable | 官方 Verify 请求余栏 item 1：not already proposed-height / not 410 |
+| A5202 | 高 | 看见能对一下 会被写成已经对上了 interchangeable / 435 interchangeable | 官方 Verify 请求余栏 item 1：not already aligned / not 435 |
+| A5203 | 高 | 看见有高度 会被写成已经会调 Verify interchangeable | 官方 Verify 请求余栏 item 1：not already will-call |
+| A5204 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Verify 请求余栏。不另写 19 节 |
 | A5195 | 记录 | 会与 435 / 352 / 409 / 1085 / 1086 糊成「看见 ACCEPT/REJECT 就已经写进 last_commit interchangeable、就已经迟到已验 interchangeable、就已经当成块非法 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ACCEPT keep / REJECT discard not already last-commit / not already late-verified / not already block-invalid 正式三事（435 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。435 verify-formal-when vs flow bundled unbundling 完成（1087 item 3） |
 | A5196 | 高 | 看见收下了 会被写成已经写进 last_commit interchangeable / 352 interchangeable | 官方 Verify When 正式流程 item 3：not already last-commit / not 352 |
 | A5197 | 高 | 看见留给下一高 会被写成已经 Verify 过迟到扩展 interchangeable / 409 interchangeable | 官方 Verify When 正式流程 item 3：not already late-verified / not 409 |

@@ -1,3 +1,6 @@
+- [`name-the-vreqh-notskip-bar.md`](name-the-vreqh-notskip-bar.md) — VerifyVoteExtensionRequest.vote_extension not already skip-verify / not already signed-as-is / not already settled 正式三事（415 余量）（不变量 1090）
+- [`name-the-vreqh-notproc-bar.md`](name-the-vreqh-notproc-bar.md) — VerifyVoteExtensionRequest.hash not already not-guaranteed-processed / not already ext-hash / not already settled 正式三事（415 余量）（不变量 1089）
+- [`name-the-vreqh-notprop-bar.md`](name-the-vreqh-notprop-bar.md) — VerifyVoteExtensionRequest.height not already proposed-height / not already aligned / not already will-call 正式三事（415 余量）（不变量 1088）
 - [`name-the-vfwhen-notcommit-bar.md`](name-the-vfwhen-notcommit-bar.md) — ACCEPT keep / REJECT discard not already last-commit / not already late-verified / not already block-invalid 正式三事（435 余量）（不变量 1087）
 - [`name-the-vfwhen-notverif-bar.md`](name-the-vfwhen-notverif-bar.md) — signed Precommit calls Verify not already verified / not already accept / not already local-skip 正式三事（435 余量）（不变量 1086）
 - [`name-the-vfwhen-notskip-bar.md`](name-the-vfwhen-notskip-bar.md) — Precommit unsigned discard not already skip-verify / not already verified / not already accept 正式三事（435 余量）（不变量 1085）

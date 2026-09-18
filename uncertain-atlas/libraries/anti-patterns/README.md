@@ -1,3 +1,6 @@
+- [`vreqh-notskip-sold-as-bundled.md`](vreqh-notskip-sold-as-bundled.md) — vote_extension 被写成已经跳过 Verify / 已经按原样签 / 已经交差（不变量 1090）
+- [`vreqh-notproc-sold-as-bundled.md`](vreqh-notproc-sold-as-bundled.md) — hash 被写成已经不保证跑过 Process / 已经是 ExtendVote hash / 已经交差（不变量 1089）
+- [`vreqh-notprop-sold-as-bundled.md`](vreqh-notprop-sold-as-bundled.md) — height 被写成已经是拟议块高度 / 已经对上了 / 已经会调 Verify（不变量 1088）
 - [`vfwhen-notcommit-sold-as-bundled.md`](vfwhen-notcommit-sold-as-bundled.md) — ACCEPT/REJECT 被写成已经写进 last_commit / 已经迟到已验 / 已经当成块非法（不变量 1087）
 - [`vfwhen-notverif-sold-as-bundled.md`](vfwhen-notverif-sold-as-bundled.md) — 会叫 Verify 被写成已经验过扩展 / 已经 Accept / 已经本地票（不变量 1086）
 - [`vfwhen-notskip-sold-as-bundled.md`](vfwhen-notskip-sold-as-bundled.md) — unsigned discard 被写成已经跳过 Verify / 已经验过扩展 / 已经 Accept（不变量 1085）
