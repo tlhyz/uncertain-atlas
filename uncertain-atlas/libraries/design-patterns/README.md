@@ -1,3 +1,6 @@
+- [`name-the-bfee-nothdr-bar.md`](name-the-bfee-nothdr-bar.md) — EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）（不变量 1400）
+- [`name-the-bfee-notprop-bar.md`](name-the-bfee-notprop-bar.md) — EIP-3198 read-basefee not already paid-to-proposer / not already blob-basefee / not already 219 正式三事（218 余量）（不变量 1399）
+- [`name-the-bfee-notmkt-bar.md`](name-the-bfee-notmkt-bar.md) — EIP-3198 BASEFEE opcode not already 1559-market / not already 158-bundled / not already 218-bundled 正式三事（218 余量）（不变量 1398）
 - [`name-the-chid-notfork-bar.md`](name-the-chid-notfork-bar.md) — EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）（不变量 1397）
 - [`name-the-chid-nottx-bar.md`](name-the-chid-nottx-bar.md) — EIP-1344 config-chainid not already this-tx-155 / not already default-value / not already 161 正式三事（220 余量）（不变量 1396）
 - [`name-the-chid-not155-bar.md`](name-the-chid-not155-bar.md) — EIP-1344 CHAINID opcode not already 155-signed / not already JSON-chainId / not already 220-bundled 正式三事（220 余量）（不变量 1395）

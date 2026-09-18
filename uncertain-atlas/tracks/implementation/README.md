@@ -986,6 +986,9 @@
 - [`worked-example-block-list-vs-parallel.md`](worked-example-block-list-vs-parallel.md) — 看见块级访问名单 ≠ 已经并行跑完；看见强制名单 ≠ 已经是 2930；看见事后状态差 ≠ 已经不跑交易；7928 ≠ 168 ≠ 143 ≠ 122（不变量 212）
 - [`worked-example-mcopy-vs-identity.md`](worked-example-mcopy-vs-identity.md) — 看见内存拷贝指令 ≠ 已经是身份预编译；看见「像用了中间缓冲」 ≠ 已经必须真分配一块缓冲；看见能重叠拷 ≠ 已经是 calldata / 返回数据拷；5656 ≠ 2929 ≠ 208（不变量 216）
 - [`worked-example-push0-vs-push1.md`](worked-example-push0-vs-push1.md) — 看见压零指令 ≠ 已经是带立即数的压 0；看见没有立即数 ≠ 已经改了跳转目的分析；看见已经部署碰巧用了这个字节 ≠ 行为已经不变；3855 ≠ 5656 ≠ 216（不变量 217）
+- [`worked-example-bfee-notmkt-vs-bundled.md`](worked-example-bfee-notmkt-vs-bundled.md) — 基础费指令≠already 改了费用市场/158/218 bundled；≠218 bundled（不变量 1398）
+- [`worked-example-bfee-notprop-vs-bundled.md`](worked-example-bfee-notprop-vs-bundled.md) — 能读本块基础费≠already 给了出块者/blob基础费/219；≠218 bundled（不变量 1399）
+- [`worked-example-bfee-nothdr-vs-bundled.md`](worked-example-bfee-nothdr-vs-bundled.md) — 跑前就有这个数≠already 改了头/气期货/加长挑战期；≠218 bundled（不变量 1400）
 - [`worked-example-basefee-opcode-vs-market.md`](worked-example-basefee-opcode-vs-market.md) — 看见基础费指令 ≠ 已经改了费用市场；看见能读本块基础费 ≠ 已经给了出块者；看见跑 EVM 前就已经有这个数 ≠ 已经改了头怎么算；3198 ≠ 1559 ≠ 158（不变量 218）
 - [`worked-example-blobbasefee-vs-basefee.md`](worked-example-blobbasefee-vs-basefee.md) — 看见 blob 基础费指令 ≠ 已经是执行层基础费指令；看见能读本块 blob 基础费 ≠ 已经并成一套气；看见跑 EVM 前就已经有这个数 ≠ 已经改了 4844 日程；7516 ≠ 3198 ≠ 218 ≠ 4844（不变量 219）
 - [`worked-example-chid-not155-vs-bundled.md`](worked-example-chid-not155-vs-bundled.md) — 链号指令≠already 签进哈希/JSON chainId/220 bundled；≠220 bundled（不变量 1395）

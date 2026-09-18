@@ -1,3 +1,18 @@
+| A6765 | 记录 | 会与 218 / 217 / 145 / 1398 / 1399 糊成「看见跑 EVM 前就已经有这个数不是已经改了头怎么算就已经改了头怎么算 interchangeable、就已经有气期货 interchangeable、就已经自动加长挑战期 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。218 BASEFEE opcode vs market bundled unbundling 完成（1400 item 3） |
+| A6766 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了头怎么算 会被写成已经改了头怎么算 interchangeable / 217 interchangeable | 官方 EIP-3198 bfee item 3：not already 已经改了头怎么算 / not 217 |
+| A6767 | 高 | 看见pre-EVM value is not already header-changed 会被写成已经有气期货 interchangeable / 145 interchangeable | 官方 EIP-3198 bfee item 3：not already 已经有气期货 / not 145 |
+| A6768 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了头怎么算 会被写成已经自动加长挑战期 interchangeable | 官方 EIP-3198 bfee item 3：not already settled |
+| A6769 | 中 | 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期会被抄进不确定 | 不抄。不写 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期。不另写 19 节 |
+| A6760 | 记录 | 会与 218 / 158 / 219 / 1398 / 1400 糊成「看见能读本块基础费不是已经给了出块者就已经给了出块者 interchangeable、就已经是 blob 基础费指令 interchangeable、就已经是不变量 219 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3198 read-basefee not already paid-to-proposer / not already blob-basefee / not already 219 正式三事（218 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。218 BASEFEE opcode vs market bundled unbundling 续（1399 item 2） |
+| A6761 | 高 | 看见能读本块基础费不是已经给了出块者 会被写成已经给了出块者 interchangeable / 158 interchangeable | 官方 EIP-3198 bfee item 2：not already 已经给了出块者 / not 158 |
+| A6762 | 高 | 看见readable basefee is not already paid to proposer 会被写成已经是 blob 基础费指令 interchangeable / 219 interchangeable | 官方 EIP-3198 bfee item 2：not already 已经是 blob 基础费指令 / not 219 |
+| A6763 | 高 | 看见能读本块基础费不是已经给了出块者 会被写成已经是不变量 219 interchangeable | 官方 EIP-3198 bfee item 2：not already settled |
+| A6764 | 中 | 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期会被抄进不确定 | 不抄。不写 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期。不另写 19 节 |
+| A6755 | 记录 | 会与 218 / 158 / 219 / 1399 / 1400 糊成「看见基础费指令不是已经改了费用市场就已经改了费用市场 interchangeable、就已经是不变量 158 interchangeable、就已经 218 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3198 BASEFEE opcode not already 1559-market / not already 158-bundled / not already 218-bundled 正式三事（218 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。218 BASEFEE opcode vs market bundled unbundling 启动（1398 item 1） |
+| A6756 | 高 | 看见基础费指令不是已经改了费用市场 会被写成已经改了费用市场 interchangeable / 158 interchangeable | 官方 EIP-3198 bfee item 1：not already 已经改了费用市场 / not 158 |
+| A6757 | 高 | 看见BASEFEE is not already 1559 market 会被写成已经是不变量 158 interchangeable / 219 interchangeable | 官方 EIP-3198 bfee item 1：not already 已经是不变量 158 / not 219 |
+| A6758 | 高 | 看见基础费指令不是已经改了费用市场 会被写成已经 218 bundled interchangeable | 官方 EIP-3198 bfee item 1：not already settled |
+| A6759 | 中 | 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期会被抄进不确定 | 不抄。不写 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期。不另写 19 节 |
 | A6750 | 记录 | 会与 220 / 218 / 219 / 1395 / 1396 糊成「看见编译期写死的链号不是已经在硬分叉后仍安全就已经在硬分叉后仍安全 interchangeable、就已经是 712 域 interchangeable、就已经处理好有争议的分裂 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。220 CHAINID opcode vs signed bundled unbundling 完成（1397 item 3） |
 | A6751 | 高 | 看见编译期写死的链号不是已经在硬分叉后仍安全 会被写成已经在硬分叉后仍安全 interchangeable / 218 interchangeable | 官方 EIP-1344 chid item 3：not already 已经在硬分叉后仍安全 / not 218 |
 | A6752 | 高 | 看见compile-time chainId is not already fork-safe 会被写成已经是 712 域 interchangeable / 219 interchangeable | 官方 EIP-1344 chid item 3：not already 已经是 712 域 / not 219 |

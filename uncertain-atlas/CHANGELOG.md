@@ -1,3 +1,15 @@
+## 2026-09-18（续 1517）
+
+- 不变量 1400；语料 C1378；模式 name-the-bfee-nothdr-bar；反模式 bfee-nothdr-sold-as-bundled；L10.3 第 1369 条。填 L5.1 EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）。218 BASEFEE opcode vs market bundled unbundling 完成（1400 item 3）。
+
+## 2026-09-18（续 1516）
+
+- 不变量 1399；语料 C1377；模式 name-the-bfee-notprop-bar；反模式 bfee-notprop-sold-as-bundled；L10.3 第 1368 条。填 L5.1 EIP-3198 read-basefee not already paid-to-proposer / not already blob-basefee / not already 219 正式三事（218 余量）。218 BASEFEE opcode vs market bundled unbundling 续（1399 item 2）。
+
+## 2026-09-18（续 1515）
+
+- 不变量 1398；语料 C1376；模式 name-the-bfee-notmkt-bar；反模式 bfee-notmkt-sold-as-bundled；L10.3 第 1367 条。填 L5.1 EIP-3198 BASEFEE opcode not already 1559-market / not already 158-bundled / not already 218-bundled 正式三事（218 余量）。218 BASEFEE opcode vs market bundled unbundling 启动（1398 item 1）。
+
 ## 2026-09-18（续 1514）
 
 - 不变量 1397；语料 C1375；模式 name-the-chid-notfork-bar；反模式 chid-notfork-sold-as-bundled；L10.3 第 1366 条。填 L5.1 EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）。220 CHAINID opcode vs signed bundled unbundling 完成（1397 item 3）。

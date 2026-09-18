@@ -1,3 +1,6 @@
+- [`bfee-nothdr-sold-as-bundled.md`](bfee-nothdr-sold-as-bundled.md) — 跑前就有这个数 被写成已经改了头 / 就已经有气期货 / 就已经加长挑战期（不变量 1400）
+- [`bfee-notprop-sold-as-bundled.md`](bfee-notprop-sold-as-bundled.md) — 能读本块基础费 被写成已经给了出块者 / 就已经是 blob 基础费 / 就已经是 219（不变量 1399）
+- [`bfee-notmkt-sold-as-bundled.md`](bfee-notmkt-sold-as-bundled.md) — 基础费指令 被写成已经改了费用市场 / 就已经是 158 / 就已经 218 bundled（不变量 1398）
 - [`chid-notfork-sold-as-bundled.md`](chid-notfork-sold-as-bundled.md) — 编译期写死 被写成分叉后仍安全 / 就已经是 712 域 / 就已经处理好分裂（不变量 1397）
 - [`chid-nottx-sold-as-bundled.md`](chid-nottx-sold-as-bundled.md) — 返回配置链号 被写成这笔已经带了 155 / 就已经返回默认值 / 就已经是 161（不变量 1396）
 - [`chid-not155-sold-as-bundled.md`](chid-not155-sold-as-bundled.md) — 链号指令 被写成已经是签进哈希 / 就已经是 JSON chainId / 就已经 220 bundled（不变量 1395）
