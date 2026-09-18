@@ -1,3 +1,15 @@
+## 2026-09-18（续 1198）
+
+- 不变量 1081；语料 C1059；模式 name-the-vreqb-notraw-bar；反模式 vreqb-notraw-sold-as-bundled；L10.3 第 1050 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp raw-sign not already signed-as-is / not already wrapped / not already replay-protected 正式三事（436 余量）。436 verifyreqbar vs rest bundled unbundling 完成（1081 item 3）。
+
+## 2026-09-18（续 1197）
+
+- 不变量 1080；语料 C1058；模式 name-the-vreqb-notext-bar；反模式 vreqb-notext-sold-as-bundled；L10.3 第 1049 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-extension / not already skip-verify / not already same-object 正式三事（436 余量）。436 verifyreqbar vs rest bundled unbundling 续（1080 item 2）。
+
+## 2026-09-18（续 1196）
+
+- 不变量 1079；语料 C1057；模式 name-the-vreqb-notkey-bar；反模式 vreqb-notkey-sold-as-bundled；L10.3 第 1048 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.validator_address not already has-key / not already proposer / not already can-verify 正式三事（436 余量）。436 verifyreqbar vs rest bundled unbundling 启动（1079 item 1）。
+
 ## 2026-09-18（续 1195）
 
 - 不变量 1078；语料 C1056；模式 name-the-vresp-nothonest-bar；反模式 vresp-nothonest-sold-as-bundled；L10.3 第 1047 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionResponse.status SHOULD Accept not already honest-must / not already req6-tested / not already verified 正式三事（433 余量）。433 verifyresp vs status bundled unbundling 完成（1078 item 3）。

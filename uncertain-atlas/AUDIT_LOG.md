@@ -1,3 +1,18 @@
+| A5165 | 记录 | 会与 436 / 358 / 1079 / 1080 糊成「看见 non_rp 按原样签就已经按原样签 interchangeable、就已经包进 CanonicalVoteExtension interchangeable、就已经有重放保护 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp raw-sign not already signed-as-is / not already wrapped / not already replay-protected 正式三事（436 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。436 verifyreqbar vs rest bundled unbundling 完成（1081 item 3） |
+| A5166 | 高 | 看见按原样签 会被写成已经按原样签 interchangeable / 358 interchangeable | 官方 Verify 请求栏 item 3：not already signed-as-is / not 358 |
+| A5167 | 高 | 看见不加元信息 会被写成已经包进 CanonicalVoteExtension interchangeable | 官方 Verify 请求栏 item 3：not already wrapped |
+| A5168 | 高 | 看见按原样签 会被写成已经有重放保护 interchangeable | 官方 Verify 请求栏 item 3：not already replay-protected |
+| A5169 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Verify 请求栏。不另写 19 节 |
+| A5160 | 记录 | 会与 436 / 415 / 353 / 1079 / 1081 糊成「看见 non_rp_vote_extension 就已经是 vote_extension interchangeable、就已经跳过 Verify interchangeable、就已经同一对象 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-extension / not already skip-verify / not already same-object 正式三事（436 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。436 verifyreqbar vs rest bundled unbundling 续（1080 item 2） |
+| A5161 | 高 | 看见能空 会被写成已经是 vote_extension interchangeable / 415 interchangeable | 官方 Verify 请求栏 item 2：not already vote-extension / not 415 |
+| A5162 | 高 | 看见能空 会被写成已经跳过 Verify interchangeable / 353 interchangeable | 官方 Verify 请求栏 item 2：not already skip-verify / not 353 |
+| A5163 | 高 | 看见有第二份 会被写成已经同一对象 interchangeable | 官方 Verify 请求栏 item 2：not already same-object |
+| A5164 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Verify 请求栏。不另写 19 节 |
+| A5155 | 记录 | 会与 436 / 364 / 413 / 1080 / 1081 糊成「看见 validator_address 就已经带了公钥 interchangeable、就已经是 proposer_address interchangeable、就已经能验签 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.validator_address not already has-key / not already proposer / not already can-verify 正式三事（436 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。436 verifyreqbar vs rest bundled unbundling 启动（1079 item 1） |
+| A5156 | 高 | 看见填了 validator_address 会被写成已经带了公钥 interchangeable / 364 interchangeable | 官方 Verify 请求栏 item 1：not already has-key / not 364 |
+| A5157 | 高 | 看见能指签扩展的人 会被写成已经是 proposer_address interchangeable / 413 interchangeable | 官方 Verify 请求栏 item 1：not already proposer / not 413 |
+| A5158 | 高 | 看见有地址 会被写成已经能验签 interchangeable | 官方 Verify 请求栏 item 1：not already can-verify |
+| A5159 | 中 | 怎样写请求栏会被抄进不确定 | 不抄。不写怎样写 Verify 请求栏。不另写 19 节 |
 | A5150 | 记录 | 会与 433 / 348 / 1076 / 1077 糊成「看见应用 SHOULD 总是设 ACCEPT 就已经正确进程交出的扩展必须 Accept interchangeable、就已经是 Req 6 已经测过 interchangeable、就已经验过扩展 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionResponse.status SHOULD Accept not already honest-must / not already req6-tested / not already verified 正式三事（433 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。433 verifyresp vs status bundled unbundling 完成（1078 item 3） |
 | A5151 | 高 | 看见 SHOULD 总是 Accept 会被写成已经正确进程交出的扩展必须 Accept interchangeable / 348 interchangeable | 官方 Verify 回包栏 item 3：not already honest-must / not 348 |
 | A5152 | 高 | 看见除非真的知道活性代价 会被写成已经是 Req 6 已经测过 interchangeable | 官方 Verify 回包栏 item 3：not already req6-tested |

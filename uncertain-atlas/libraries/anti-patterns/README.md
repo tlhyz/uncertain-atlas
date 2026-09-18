@@ -1,3 +1,6 @@
+- [`vreqb-notraw-sold-as-bundled.md`](vreqb-notraw-sold-as-bundled.md) — non_rp raw-sign 被写成已经按原样签 / 已经包进 CanonicalVoteExtension / 已经有重放保护（不变量 1081）
+- [`vreqb-notext-sold-as-bundled.md`](vreqb-notext-sold-as-bundled.md) — non_rp 被写成已经是 vote_extension / 已经跳过 Verify / 已经同一对象（不变量 1080）
+- [`vreqb-notkey-sold-as-bundled.md`](vreqb-notkey-sold-as-bundled.md) — validator_address 被写成已经带了公钥 / 已经是 proposer / 已经能验签（不变量 1079）
 - [`vresp-nothonest-sold-as-bundled.md`](vresp-nothonest-sold-as-bundled.md) — SHOULD Accept 被写成已经正确进程必须 Accept / 已经是 Req 6 已经测过 / 已经验过扩展（不变量 1078）
 - [`vresp-notext-sold-as-bundled.md`](vresp-notext-sold-as-bundled.md) — exclusive 被写成已经可以像 ExtendVote 那样 / 已经和对任意扩展同一裁决一回事 / 已经和 ExtendVote 同一把尺（不变量 1077）
 - [`vresp-notinvalid-sold-as-bundled.md`](vresp-notinvalid-sold-as-bundled.md) — status 被写成已经当成块非法 / 已经不能收这张 Precommit / 已经是 Process REJECT（不变量 1076）

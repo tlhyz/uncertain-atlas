@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Verify 请求栏就已经带了公钥、已经是 vote_extension、已经按原样签」，必须分开 VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址是不是已经带了公钥、VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长是不是已经是 vote_extension、non_rp 相对 vote_extension 签名时不加额外元信息是不是已经按原样签。可以跳过「看见填了 Verify 请求栏就已经带了公钥」。不要另写怎样写 Verify 请求栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Verify 请求栏就已经带了公钥、已经是 vote_extension、已经按原样签」，必须分开 VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址是不是已经带了公钥、VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长是不是已经是 vote_extension、non_rp 相对 vote_extension 签名时不加额外元信息是不是已经按原样签。可以跳过「看见填了 Verify 请求栏就已经带了公钥」。不要另写怎样写 Verify 请求栏。436 verifyreqbar vs rest bundled unbundling 完成（1079 item 1 / 1080 item 2 / 1081 item 3）；精读 [`worked-example-vreqb-notkey-vs-bundled.md`](worked-example-vreqb-notkey-vs-bundled.md)（不变量 1079 item 1）。
 
 ## 本页不抄
 

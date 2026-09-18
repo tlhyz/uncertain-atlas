@@ -1,3 +1,6 @@
+- [`name-the-vreqb-notraw-bar.md`](name-the-vreqb-notraw-bar.md) — VerifyVoteExtensionRequest.non_rp raw-sign not already signed-as-is / not already wrapped / not already replay-protected 正式三事（436 余量）（不变量 1081）
+- [`name-the-vreqb-notext-bar.md`](name-the-vreqb-notext-bar.md) — VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-extension / not already skip-verify / not already same-object 正式三事（436 余量）（不变量 1080）
+- [`name-the-vreqb-notkey-bar.md`](name-the-vreqb-notkey-bar.md) — VerifyVoteExtensionRequest.validator_address not already has-key / not already proposer / not already can-verify 正式三事（436 余量）（不变量 1079）
 - [`name-the-vresp-nothonest-bar.md`](name-the-vresp-nothonest-bar.md) — VerifyVoteExtensionResponse.status SHOULD Accept not already honest-must / not already req6-tested / not already verified 正式三事（433 余量）（不变量 1078）
 - [`name-the-vresp-notext-bar.md`](name-the-vresp-notext-bar.md) — VerifyVoteExtensionResponse.status exclusive dependence not already extend-nondet / not already same-ruling / not already same-ruler 正式三事（433 余量）（不变量 1077）
 - [`name-the-vresp-notinvalid-bar.md`](name-the-vresp-notinvalid-bar.md) — VerifyVoteExtensionResponse.status not already block-invalid / not already no-precommit / not already process-reject 正式三事（433 余量）（不变量 1076）
