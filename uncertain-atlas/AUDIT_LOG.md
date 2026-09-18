@@ -1,3 +1,18 @@
+| A5270 | 记录 | 会与 404 / 316 / 431 / 1100 / 1101 糊成「看见 Code==0 就已经没进块 interchangeable、就已经印进本头 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 tx_results Code==0 not already not-in-block / not already header-printed / not already settled 正式三事（404 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。404 finapphash vs header bundled unbundling 完成（1102 item 3） |
+| A5271 | 高 | 看见回了 0 会被写成已经没进块 interchangeable / 316 interchangeable | 官方 Finalize 回包余量 item 3：not already not-in-block / not 316 |
+| A5272 | 高 | 看见这笔合法 会被写成已经印进本头 interchangeable / 431 interchangeable | 官方 Finalize 回包余量 item 3：not already header-printed / not 431 |
+| A5273 | 高 | 看见能回 会被写成已经交差 interchangeable | 官方 Finalize 回包余量 item 3：not already settled |
+| A5274 | 中 | 怎样写回包余量会被抄进不确定 | 不抄。不写怎样写 Finalize 回包余量。不另写 19 节 |
+| A5265 | 记录 | 会与 404 / 325 / 431 / 1100 / 1102 糊成「看见 Query 锚就已经对上 AppHash interchangeable、就已经是按键查 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query proof-anchor not already apphash-aligned / not already keyed-lookup / not already settled 正式三事（404 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。404 finapphash vs header bundled unbundling 续（1101 item 2） |
+| A5266 | 高 | 看见能回证明 会被写成已经对上 AppHash interchangeable / 325 interchangeable | 官方 Finalize 回包余量 item 2：not already apphash-aligned / not 325 |
+| A5267 | 高 | 看见有锚 会被写成已经是按键查 interchangeable / 431 interchangeable | 官方 Finalize 回包余量 item 2：not already keyed-lookup / not 431 |
+| A5268 | 高 | 看见能查 会被写成已经交差 interchangeable | 官方 Finalize 回包余量 item 2：not already settled |
+| A5269 | 中 | 怎样写回包余量会被抄进不确定 | 不抄。不写怎样写 Finalize 回包余量。不另写 19 节 |
+| A5260 | 记录 | 会与 404 / 147 / 432 / 1101 / 1102 糊成「看见空或硬编码就已经印进本头 interchangeable、就已经是本头 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize app_hash empty-or-hardcoded-det not already header-printed / not already this-header / not already settled 正式三事（404 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。404 finapphash vs header bundled unbundling 启动（1100 item 1） |
+| A5261 | 高 | 看见回了 app_hash 会被写成已经印进本头 interchangeable / 147 interchangeable | 官方 Finalize 回包余量 item 1：not already header-printed / not 147 |
+| A5262 | 高 | 看见硬编码 会被写成已经是本头 AppHash interchangeable / 432 interchangeable | 官方 Finalize 回包余量 item 1：not already this-header / not 432 |
+| A5263 | 高 | 看见必须确定 会被写成已经交差 interchangeable | 官方 Finalize 回包余量 item 1：not already settled |
+| A5264 | 中 | 怎样写回包余量会被抄进不确定 | 不抄。不写怎样写 Finalize 回包余量。不另写 19 节 |
 | A5255 | 记录 | 会与 417 / 407 / 416 / 1097 / 1098 糊成「看见 Finalize h/t 对上就已经是刚决定那块的字段 interchangeable、就已经知道本头哈希 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize height/time match not already decided-fields / not already header-known / not already settled 正式三事（417 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。417 htmatch vs header bundled unbundling 完成（1099 item 3） |
 | A5256 | 高 | 看见对上了 会被写成已经是刚决定那块的字段 interchangeable / 407 interchangeable | 官方头字段对上余量 item 3：not already decided-fields / not 407 |
 | A5257 | 高 | 看见字段对上 会被写成已经知道本头哈希 interchangeable / 416 interchangeable | 官方头字段对上余量 item 3：not already header-known / not 416 |

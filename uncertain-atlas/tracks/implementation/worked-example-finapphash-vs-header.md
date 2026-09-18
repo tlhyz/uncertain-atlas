@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 Finalize 回包余量就已经印进本头、已经对上 AppHash、已经没进块」，必须分开 Finalize 回包 app_hash 可以空或硬编码、但必须确定是不是已经印进本头、以后 Query 可以拿这份根当锚回证明是不是已经对上 AppHash、tx_results[i].Code == 0 只表示第 i 笔完全合法是不是已经没进块。可以跳过「看见回了 Finalize 回包余量就已经印进本头」。不要另写怎样写 Finalize 回包余量。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 Finalize 回包余量就已经印进本头、已经对上 AppHash、已经没进块」，必须分开 Finalize 回包 app_hash 可以空或硬编码、但必须确定是不是已经印进本头、以后 Query 可以拿这份根当锚回证明是不是已经对上 AppHash、tx_results[i].Code == 0 只表示第 i 笔完全合法是不是已经没进块。可以跳过「看见回了 Finalize 回包余量就已经印进本头」。不要另写怎样写 Finalize 回包余量。404 finapphash vs header bundled unbundling 完成（1100 item 1 / 1101 item 2 / 1102 item 3）；精读 [`worked-example-fhash-notheader-vs-bundled.md`](worked-example-fhash-notheader-vs-bundled.md)（不变量 1100 item 1）。
 
 ## 本页不抄
 

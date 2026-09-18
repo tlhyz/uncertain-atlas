@@ -1,3 +1,15 @@
+## 2026-09-18（续 1219）
+
+- 不变量 1102；语料 C1080；模式 name-the-fhash-notout-bar；反模式 fhash-notout-sold-as-bundled；L10.3 第 1071 条。填 L4.4 / CometBFT 档案 tx_results Code==0 not already not-in-block / not already header-printed / not already settled 正式三事（404 余量）。404 finapphash vs header bundled unbundling 完成（1102 item 3）。
+
+## 2026-09-18（续 1218）
+
+- 不变量 1101；语料 C1079；模式 name-the-fhash-notalign-bar；反模式 fhash-notalign-sold-as-bundled；L10.3 第 1070 条。填 L4.4 / CometBFT 档案 Query proof-anchor not already apphash-aligned / not already keyed-lookup / not already settled 正式三事（404 余量）。404 finapphash vs header bundled unbundling 续（1101 item 2）。
+
+## 2026-09-18（续 1217）
+
+- 不变量 1100；语料 C1078；模式 name-the-fhash-notheader-bar；反模式 fhash-notheader-sold-as-bundled；L10.3 第 1069 条。填 L4.4 / CometBFT 档案 Finalize app_hash empty-or-hardcoded-det not already header-printed / not already this-header / not already settled 正式三事（404 余量）。404 finapphash vs header bundled unbundling 启动（1100 item 1）。
+
 ## 2026-09-18（续 1216）
 
 - 不变量 1099；语料 C1077；模式 name-the-htmt-notdec-bar；反模式 htmt-notdec-sold-as-bundled；L10.3 第 1068 条。填 L4.4 / CometBFT 档案 Finalize height/time match not already decided-fields / not already header-known / not already settled 正式三事（417 余量）。417 htmatch vs header bundled unbundling 完成（1099 item 3）。

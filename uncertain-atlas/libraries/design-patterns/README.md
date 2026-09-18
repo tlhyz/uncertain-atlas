@@ -1,3 +1,6 @@
+- [`name-the-fhash-notout-bar.md`](name-the-fhash-notout-bar.md) — tx_results Code==0 not already not-in-block / not already header-printed / not already settled 正式三事（404 余量）（不变量 1102）
+- [`name-the-fhash-notalign-bar.md`](name-the-fhash-notalign-bar.md) — Query proof-anchor not already apphash-aligned / not already keyed-lookup / not already settled 正式三事（404 余量）（不变量 1101）
+- [`name-the-fhash-notheader-bar.md`](name-the-fhash-notheader-bar.md) — Finalize app_hash empty-or-hardcoded-det not already header-printed / not already this-header / not already settled 正式三事（404 余量）（不变量 1100）
 - [`name-the-htmt-notdec-bar.md`](name-the-htmt-notdec-bar.md) — Finalize height/time match not already decided-fields / not already header-known / not already settled 正式三事（417 余量）（不变量 1099）
 - [`name-the-htmt-notverif-bar.md`](name-the-htmt-notverif-bar.md) — Process height/time match not already header-verified / not already processed / not already settled 正式三事（417 余量）（不变量 1098）
 - [`name-the-htmt-notskip-bar.md`](name-the-htmt-notskip-bar.md) — proposer Prepare-first not already skip-process / not already same-round / not already settled 正式三事（417 余量）（不变量 1097）

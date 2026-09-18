@@ -1,3 +1,9 @@
+| C1080 | 1102 | fhash notout≠316/404 | 文案把 tx_results Code==0 / 回了 0 写成已经没进块 interchangeable 或已经和 316 interchangeable / 1102 fhash-notout interchangeable；或把看见这笔合法 写成已经印进本头 interchangeable；或把看见能回 写成已经交差 interchangeable，或已经和 404 finapphash-vs-header bundled / fhash-notout-sold-as-bundled interchangeable / 1100 fhash-notheader interchangeable / 1101 fhash-notalign interchangeable |
+
+| C1079 | 1101 | fhash notalign≠325/404 | 文案把 Query 拿这份根当锚 / 能回证明 写成已经对上 AppHash interchangeable 或已经和 325 interchangeable / 1101 fhash-notalign interchangeable；或把看见有锚 写成已经是按键查 interchangeable；或把看见能查 写成已经交差 interchangeable，或已经和 404 finapphash-vs-header bundled / fhash-notalign-sold-as-bundled interchangeable / 1100 fhash-notheader interchangeable / 1102 fhash-notout interchangeable |
+
+| C1078 | 1100 | fhash notheader≠147/404 | 文案把 Finalize app_hash 可以空或硬编码 / 回了 app_hash 写成已经印进本头 interchangeable 或已经和 147 interchangeable / 1100 fhash-notheader interchangeable；或把看见硬编码 写成已经是本头 AppHash interchangeable；或把看见必须确定 写成已经交差 interchangeable，或已经和 404 finapphash-vs-header bundled / fhash-notheader-sold-as-bundled interchangeable / 1101 fhash-notalign interchangeable / 1102 fhash-notout interchangeable |
+
 | C1077 | 1099 | htmt notdec≠407/417 | 文案把 Finalize height/time 对上 / 对上了 写成已经是刚决定那块的字段 interchangeable 或已经和 407 interchangeable / 1099 htmt-notdec interchangeable；或把看见字段对上 写成已经知道本头哈希 interchangeable；或把看见能对 写成已经交差 interchangeable，或已经和 417 htmatch-vs-header bundled / htmt-notdec-sold-as-bundled interchangeable / 1097 htmt-notskip interchangeable / 1098 htmt-notverif interchangeable |
 
 | C1076 | 1098 | htmt notverif≠416/417 | 文案把 Process height/time 对上 / 对上了 写成已经验过块头 interchangeable 或已经和 416 interchangeable / 1098 htmt-notverif interchangeable；或把看见字段对上 写成已经跑过 Process interchangeable；或把看见能对 写成已经交差 interchangeable，或已经和 417 htmatch-vs-header bundled / htmt-notverif-sold-as-bundled interchangeable / 1097 htmt-notskip interchangeable / 1099 htmt-notdec interchangeable |

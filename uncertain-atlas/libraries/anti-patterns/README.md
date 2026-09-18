@@ -1,3 +1,6 @@
+- [`fhash-notout-sold-as-bundled.md`](fhash-notout-sold-as-bundled.md) — Code==0 被写成已经没进块 / 已经印进本头 / 已经交差（不变量 1102）
+- [`fhash-notalign-sold-as-bundled.md`](fhash-notalign-sold-as-bundled.md) — Query 锚 被写成已经对上 AppHash / 已经是按键查 / 已经交差（不变量 1101）
+- [`fhash-notheader-sold-as-bundled.md`](fhash-notheader-sold-as-bundled.md) — app_hash 空或硬编码 被写成已经印进本头 / 已经是本头 AppHash / 已经交差（不变量 1100）
 - [`htmt-notdec-sold-as-bundled.md`](htmt-notdec-sold-as-bundled.md) — Finalize h/t 被写成已经是刚决定那块的字段 / 已经知道本头哈希 / 已经交差（不变量 1099）
 - [`htmt-notverif-sold-as-bundled.md`](htmt-notverif-sold-as-bundled.md) — Process h/t 被写成已经验过块头 / 已经跑过 Process / 已经交差（不变量 1098）
 - [`htmt-notskip-sold-as-bundled.md`](htmt-notskip-sold-as-bundled.md) — Prepare-first 被写成已经不用再 Process / 已经保证是这一次 / 已经交差（不变量 1097）
