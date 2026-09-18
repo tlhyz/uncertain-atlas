@@ -1,3 +1,15 @@
+## 2026-09-18（续 1469）
+
+- 不变量 1352；语料 C1330；模式 name-the-eappgen-notbcast-bar；反模式 eappgen-notbcast-sold-as-bundled；L10.3 第 1321 条。填 L4.4 ExtAppGen will-be-signed attached-to-Precommit not already broadcast / not already last_commit / not already 438-bundled 正式三事（439 余量）。439 ExtendVote Response application-generated will-be-signed bundled unbundling 完成（1352 item 3）。
+
+## 2026-09-18（续 1468）
+
+- 不变量 1351；语料 C1329；模式 name-the-eappgen-notnrp-bar；反模式 eappgen-notnrp-sold-as-bundled；L10.3 第 1320 条。填 L4.4 ExtAppGen appgen non_rp will-be-signed-attached no-replay-prot not already same-sign / not already 358-raw / not already replay-prot 正式三事（439 余量）。439 ExtendVote Response application-generated will-be-signed bundled unbundling 续（1351 item 2）。
+
+## 2026-09-18（续 1467）
+
+- 不变量 1350；语料 C1328；模式 name-the-eappgen-notsig-bar；反模式 eappgen-notsig-sold-as-bundled；L10.3 第 1319 条。填 L4.4 ExtAppGen appgen vote_extension will-be-signed not already signed / not already 418-wrap / not already attached 正式三事（439 余量）。439 ExtendVote Response application-generated will-be-signed bundled unbundling 启动（1350 item 1）。
+
 ## 2026-09-18（续 1466）
 
 - 不变量 1349；语料 C1327；模式 name-the-hstead-notbomb-bar；反模式 hstead-notbomb-sold-as-bundled；L10.3 第 1318 条。填 L5.1 EIP-2 diff-mean not already bomb-gone / not already bomb-delay / not already 234-bundled 正式四事（234 余量）。234 Homestead 硬分叉四件事 bundled unbundling 完成（1349 item 4）。

@@ -1,3 +1,15 @@
+- [`name-the-eappgen-notbcast-bar.md`](name-the-eappgen-notbcast-bar.md) — ExtAppGen will-be-signed attached-to-Precommit not already broadcast / not already last_commit / not already 438-bundled 正式三事（439 余量）（不变量 1352）
+- [`name-the-eappgen-notnrp-bar.md`](name-the-eappgen-notnrp-bar.md) — ExtAppGen appgen non_rp will-be-signed-attached no-replay-prot not already same-sign / not already 358-raw / not already replay-prot 正式三事（439 余量）（不变量 1351）
+- [`name-the-eappgen-notsig-bar.md`](name-the-eappgen-notsig-bar.md) — ExtAppGen appgen vote_extension will-be-signed not already signed / not already 418-wrap / not already attached 正式三事（439 余量）（不变量 1350）
+- [`name-the-ext-appgen.md`](name-the-ext-appgen.md) — ExtendVote Response application-generated will-be-signed（快照 439）
+- [`name-the-ext-ci-notes-order.md`](name-the-ext-ci-notes-order.md) — ExtendedCommitInfo Notes 票序
+- [`name-the-ci-notes-order.md`](name-the-ci-notes-order.md) — CommitInfo Notes 票序（快照 444）
+- [`name-the-ci-fields-bar.md`](name-the-ci-fields-bar.md) — CommitInfo Fields 栏（快照 445）
+- [`name-the-exectx-events-bar.md`](name-the-exectx-events-bar.md) — ExecTxResult.events 栏（快照 446）
+- [`name-the-ext-vi-usage-expose.md`](name-the-ext-vi-usage-expose.md) — ExtendedVoteInfo Usage 暴露签
+- [`name-the-prepevents-retention-bar.md`](name-the-prepevents-retention-bar.md) — Prepare 事件保留到 Finalize
+- [`name-the-validatorusage-gates.md`](name-the-validatorusage-gates.md) — Validator Usage 四门映射
+- [`name-the-vi-usageavail-extract.md`](name-the-vi-usageavail-extract.md) — VoteInfo/ExtendedVoteInfo availability 同句抽取异路
 - [`name-the-hstead-notbomb-bar.md`](name-the-hstead-notbomb-bar.md) — EIP-2 diff-mean not already bomb-gone / not already bomb-delay / not already 234-bundled 正式四事（234 余量）（不变量 1349）
 - [`name-the-hstead-notfail-bar.md`](name-the-hstead-notfail-bar.md) — EIP-2 no-empty not already code-limit / not already initcode / not already empty-dead 正式四事（234 余量）（不变量 1348）
 - [`name-the-hstead-notsig-bar.md`](name-the-hstead-notsig-bar.md) — EIP-2 high-s not already ECRECOVER-rejects / not already BIP-66 / not already EIP-155 正式四事（234 余量）（不变量 1347）

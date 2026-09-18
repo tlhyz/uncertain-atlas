@@ -1002,6 +1002,18 @@
 - [`worked-example-shift-vs-arithmetic.md`](worked-example-shift-vs-arithmetic.md) — 看见原生移位指令 ≠ 已经用算术拼过移位；看见算术右移 ≠ 已经是有符号除；看见更便宜 ≠ 已经是位域打包产品；145 ≠ 已经改了旧字节码（不变量 231）
 - [`worked-example-returndata-vs-memory.md`](worked-example-returndata-vs-memory.md) — 看见返回数据缓冲 ≠ 已经是内存；看见本页 ≠ 已经是 calldata / 已经用两次调用先问长度；看见失败数据能再取 ≠ 已经是 140；下一次类调用 ≠ 缓冲还在（不变量 232）
 - [`worked-example-delegatecall-vs-callcode.md`](worked-example-delegatecall-vs-callcode.md) — 看见委托调用 ≠ 已经是 CALLCODE；看见父作用域发送者传到子作用域 ≠ 已经是普通 CALL；看见可变代码源 ≠ 已经是 7702；能塞进调用数据 ≠ 已经是本页（不变量 233）
+- [`worked-example-eappgen-notsig-vs-bundled.md`](worked-example-eappgen-notsig-vs-bundled.md) — 应用生成vote_extension将签名≠already签过/418包装/已经挂上；≠439 bundled（不变量 1350）
+- [`worked-example-eappgen-notnrp-vs-bundled.md`](worked-example-eappgen-notnrp-vs-bundled.md) — non_rp将签名挂上无重放保护≠already同一签法/358按原样签/已有重放保护；≠439 bundled（不变量 1351）
+- [`worked-example-eappgen-notbcast-vs-bundled.md`](worked-example-eappgen-notbcast-vs-bundled.md) — 将签名并挂到Precommit≠already广播/last_commit/438 bundled；≠439 bundled（不变量 1352）
+- [`worked-example-extappgen-vs-signed.md`](worked-example-extappgen-vs-signed.md) — ExtendVoteResponse 应用生成将签名≠already 签过/包进包装/广播（快照 439）
+- [`worked-example-extcinotes-vs-order.md`](worked-example-extcinotes-vs-order.md) — ExtendedCommitInfo Notes 票序≠already 进块/应用排过/从块抽出
+- [`worked-example-cinotes-vs-order.md`](worked-example-cinotes-vs-order.md) — CommitInfo Notes 票序≠already 进块/应用排过/从块抽出（快照 444）
+- [`worked-example-cifields-vs-notes.md`](worked-example-cifields-vs-notes.md) — CommitInfo Fields 栏≠already Notes 票序/已经进块（快照 445）
+- [`worked-example-exectxevents-vs-header.md`](worked-example-exectxevents-vs-header.md) — ExecTxResult.events≠already 印进本头/块级events（快照 446）
+- [`worked-example-extviusage-vs-expose.md`](worked-example-extviusage-vs-expose.md) — ExtendedVoteInfo Usage 暴露签≠already 应用验完/必须填内容
+- [`worked-example-prepevents-vs-finalize.md`](worked-example-prepevents-vs-finalize.md) — Prepare 事件保留≠already 回包交回/Process就交/CheckTx events
+- [`worked-example-validatorusage-vs-gates.md`](worked-example-validatorusage-vs-gates.md) — Validator Usage 四门≠already 同一路 CommitInfo/ExtendedCommitInfo
+- [`worked-example-viusageavail-vs-extractpath.md`](worked-example-viusageavail-vs-extractpath.md) — availability 同句抽取异路≠already 奖罚完/同一抽出路径
 - [`worked-example-hstead-notfee-vs-bundled.md`](worked-example-hstead-notfee-vs-bundled.md) — 交易创建变贵≠already 改了CREATE/重定价操作码/Homestead四件bundled；≠234 bundled（不变量 1346）
 - [`worked-example-hstead-notsig-vs-bundled.md`](worked-example-hstead-notsig-vs-bundled.md) — 交易拒高s≠already ECRECOVER拒/比特币DER/EIP-155链标识；≠234 bundled（不变量 1347）
 - [`worked-example-hstead-notfail-vs-bundled.md`](worked-example-hstead-notfail-vs-bundled.md) — 失败不再留空合约≠already 代码长度上限/initcode/empty-dead；≠234 bundled（不变量 1348）

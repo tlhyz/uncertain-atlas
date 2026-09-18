@@ -1,3 +1,15 @@
+- [`eappgen-notbcast-sold-as-bundled.md`](eappgen-notbcast-sold-as-bundled.md) — 将签名并挂到 Precommit 被写成已经广播 / 就已经写进 last_commit / 就已经是 438 bundled（不变量 1352）
+- [`eappgen-notnrp-sold-as-bundled.md`](eappgen-notnrp-sold-as-bundled.md) — non_rp 将签名挂上且无重放保护 被写成已经同一签法 / 就已经 358 按原样签 / 就已经有重放保护（不变量 1351）
+- [`eappgen-notsig-sold-as-bundled.md`](eappgen-notsig-sold-as-bundled.md) — 应用生成 vote_extension 将签名 被写成已经签过 / 就已经包进包装 / 就已经挂上（不变量 1350）
+- [`extappgen-sold-as-signed.md`](extappgen-sold-as-signed.md) — 应用生成将签名 被写成已经签过
+- [`extcinotes-sold-as-inblock.md`](extcinotes-sold-as-inblock.md) — ExtendedCommitInfo Notes 被写成已经进块
+- [`cinotes-sold-as-inblock.md`](cinotes-sold-as-inblock.md) — CommitInfo Notes 被写成已经进块
+- [`cifields-sold-as-notes.md`](cifields-sold-as-notes.md) — CommitInfo Fields 被写成已经是 Notes
+- [`exectxevents-sold-as-header.md`](exectxevents-sold-as-header.md) — ExecTxResult.events 被写成已经印进本头
+- [`extviusage-sold-as-exposed.md`](extviusage-sold-as-exposed.md) — 暴露签 被写成已经应用验完
+- [`prepevents-sold-as-finalize.md`](prepevents-sold-as-finalize.md) — Prepare 事件 被写成已经交给引擎
+- [`validatorusage-sold-as-samegate.md`](validatorusage-sold-as-samegate.md) — Validator 四门 被写成已经同一路
+- [`viusageavail-sold-as-samepath.md`](viusageavail-sold-as-samepath.md) — 两条抽出路径 被写成已经同一路
 - [`hstead-notbomb-sold-as-bundled.md`](hstead-notbomb-sold-as-bundled.md) — 难度朝均值 被写成已经取消炸弹 / 就已经写了推迟炸弹分叉 / 就已经是 Homestead 四件 bundled（不变量 1349）
 - [`hstead-notfail-sold-as-bundled.md`](hstead-notfail-sold-as-bundled.md) — 失败不再留空合约 被写成已经限制代码长度 / 就已经限制 initcode / 就已经 empty/dead（不变量 1348）
 - [`hstead-notsig-sold-as-bundled.md`](hstead-notsig-sold-as-bundled.md) — 交易拒高 s 被写成已经让预编译拒 / 就已经是比特币 DER / 就已经是 EIP-155（不变量 1347）
