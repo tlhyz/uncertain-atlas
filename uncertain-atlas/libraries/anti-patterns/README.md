@@ -1,3 +1,6 @@
+- [`tmpl88-notfull-sold-as-bundled.md`](tmpl88-notfull-sold-as-bundled.md) — 完整模板 被写成已经是半截模板 / 已经是同一条路径 / 已经交差（不变量 1183）
+- [`tmpl88-nothard-sold-as-bundled.md`](tmpl88-nothard-sold-as-bundled.md) — 写死了熟路径检查 被写成已经能互操作 / 已经挡住乱派生 / 已经交差（不变量 1182）
+- [`tmpl88-notpath-sold-as-bundled.md`](tmpl88-notpath-sold-as-bundled.md) — 一条派生路径 被写成已经是一份路径模板 / 已经能被软件无歧义解析 / 已经交差（不变量 1181）
 - [`bsms129-nottoken-sold-as-bundled.md`](bsms129-nottoken-sold-as-bundled.md) — TOKEN 被写成已经是钱包种子 / 已经防篡改存储 / 已经交差（不变量 1180）
 - [`bsms129-notkey-sold-as-bundled.md`](bsms129-notkey-sold-as-bundled.md) — 指纹对上 被写成已经核过 KEY / 已经各方确认同一份 / 已经交差（不变量 1179）
 - [`bsms129-notsetup-sold-as-bundled.md`](bsms129-notsetup-sold-as-bundled.md) — 部分签名包 被写成已经是跨厂安全多签开户 / 已经核过成员 / 已经交差（不变量 1178）

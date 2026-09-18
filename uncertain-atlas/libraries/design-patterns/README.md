@@ -1,3 +1,6 @@
+- [`name-the-tmpl88-notfull-bar.md`](name-the-tmpl88-notfull-bar.md) — BIP-88 full-template not already half-template / not already same-path / not already settled 正式三事（288 余量）（不变量 1183）
+- [`name-the-tmpl88-nothard-bar.md`](name-the-tmpl88-nothard-bar.md) — BIP-88 hardcoded-check not already interoperable / not already blocks-wild / not already settled 正式三事（288 余量）（不变量 1182）
+- [`name-the-tmpl88-notpath-bar.md`](name-the-tmpl88-notpath-bar.md) — BIP-88 one-path not already path-template / not already unambiguous / not already settled 正式三事（288 余量）（不变量 1181）
 - [`name-the-bsms129-nottoken-bar.md`](name-the-bsms129-nottoken-bar.md) — BIP-129 token not already wallet-seed / not already tamper-store / not already settled 正式三事（287 余量）（不变量 1180）
 - [`name-the-bsms129-notkey-bar.md`](name-the-bsms129-notkey-bar.md) — BIP-129 fingerprint not already verified-key / not already same-confirm / not already settled 正式三事（287 余量）（不变量 1179）
 - [`name-the-bsms129-notsetup-bar.md`](name-the-bsms129-notsetup-bar.md) — BIP-129 psbt-flow not already secure-setup / not already members-checked / not already settled 正式三事（287 余量）（不变量 1178）

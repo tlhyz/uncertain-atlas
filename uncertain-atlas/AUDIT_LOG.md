@@ -1,3 +1,18 @@
+| A5680 | 记录 | 会与 288 / 182 / 1176 / 1181 / 1182 糊成「看见完整模板就已经是半截模板 interchangeable、就已经是同一条路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-88 full-template not already half-template / not already same-path / not already settled 正式三事（288 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。288 template vs path bundled unbundling 完成（1183 item 3） |
+| A5681 | 高 | 看见完整模板 会被写成已经是半截模板 interchangeable / 182 interchangeable | 官方 BIP-88 路径模板 item 3：not already half-template / not 182 |
+| A5682 | 高 | 看见模板长度对上 会被写成已经是同一条路径 interchangeable / 1176 interchangeable | 官方 BIP-88 路径模板 item 3：not already same-path / not 1176 |
+| A5683 | 高 | 看见以 m/ 开头 会被写成已经交差 interchangeable | 官方 BIP-88 路径模板 item 3：not already settled |
+| A5684 | 中 | 怎样解析或匹配模板会被抄进不确定 | 不抄。不写怎样解析或匹配模板。不另写 19 节 |
+| A5675 | 记录 | 会与 288 / 1118 / 1178 / 1181 / 1183 糊成「看见写死了熟路径检查就已经能互操作 interchangeable、就已经挡住乱派生 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-88 hardcoded-check not already interoperable / not already blocks-wild / not already settled 正式三事（288 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。288 template vs path bundled unbundling 续（1182 item 2） |
+| A5676 | 高 | 看见写死了熟路径检查 会被写成已经能互操作 interchangeable / 1118 interchangeable | 官方 BIP-88 路径模板 item 2：not already interoperable / not 1118 |
+| A5677 | 高 | 看见熟路径表 会被写成已经挡住乱派生 interchangeable / 1178 interchangeable | 官方 BIP-88 路径模板 item 2：not already blocks-wild / not 1178 |
+| A5678 | 高 | 看见写死了 44 / 49 / 84 会被写成已经交差 interchangeable | 官方 BIP-88 路径模板 item 2：not already settled |
+| A5679 | 中 | 怎样解析或匹配模板会被抄进不确定 | 不抄。不写怎样解析或匹配模板。不另写 19 节 |
+| A5670 | 记录 | 会与 288 / 1118 / 1176 / 1182 / 1183 糊成「看见一条派生路径就已经是一份路径模板 interchangeable、就已经能被软件无歧义解析 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-88 one-path not already path-template / not already unambiguous / not already settled 正式三事（288 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。288 template vs path bundled unbundling 启动（1181 item 1） |
+| A5671 | 高 | 看见一条派生路径 会被写成已经是一份路径模板 interchangeable / 1118 interchangeable | 官方 BIP-88 路径模板 item 1：not already path-template / not 1118 |
+| A5672 | 高 | 看见写了 44 会被写成已经能被软件无歧义解析 interchangeable / 1176 interchangeable | 官方 BIP-88 路径模板 item 1：not already unambiguous / not 1176 |
+| A5673 | 高 | 看见一条路径 会被写成已经交差 interchangeable | 官方 BIP-88 路径模板 item 1：not already settled |
+| A5674 | 中 | 怎样解析或匹配模板会被抄进不确定 | 不抄。不写怎样解析或匹配模板。不另写 19 节 |
 | A5665 | 记录 | 会与 287 / 1177 / 183 / 1178 / 1179 糊成「看见 TOKEN 就已经是钱包种子 interchangeable、就已经防篡改存储 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-129 token not already wallet-seed / not already tamper-store / not already settled 正式三事（287 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。287 setup vs psbt bundled unbundling 完成（1180 item 3） |
 | A5666 | 高 | 看见 TOKEN 会被写成已经是钱包种子 interchangeable / 1177 interchangeable | 官方 BIP-129 安全多签开户 item 3：not already wallet-seed / not 1177 |
 | A5667 | 高 | 看见加密会话 会被写成已经防篡改存储 interchangeable / 183 interchangeable | 官方 BIP-129 安全多签开户 item 3：not already tamper-store / not 183 |

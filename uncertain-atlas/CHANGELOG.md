@@ -1,3 +1,15 @@
+## 2026-09-18（续 1300）
+
+- 不变量 1183；语料 C1161；模式 name-the-tmpl88-notfull-bar；反模式 tmpl88-notfull-sold-as-bundled；L10.3 第 1152 条。填 L1.4 / L3.6 BIP-88 full-template not already half-template / not already same-path / not already settled 正式三事（288 余量）。288 template vs path bundled unbundling 完成（1183 item 3）。
+
+## 2026-09-18（续 1299）
+
+- 不变量 1182；语料 C1160；模式 name-the-tmpl88-nothard-bar；反模式 tmpl88-nothard-sold-as-bundled；L10.3 第 1151 条。填 L1.4 / L3.6 BIP-88 hardcoded-check not already interoperable / not already blocks-wild / not already settled 正式三事（288 余量）。288 template vs path bundled unbundling 续（1182 item 2）。
+
+## 2026-09-18（续 1298）
+
+- 不变量 1181；语料 C1159；模式 name-the-tmpl88-notpath-bar；反模式 tmpl88-notpath-sold-as-bundled；L10.3 第 1150 条。填 L1.4 / L3.6 BIP-88 one-path not already path-template / not already unambiguous / not already settled 正式三事（288 余量）。288 template vs path bundled unbundling 启动（1181 item 1）。
+
 ## 2026-09-18（续 1297）
 
 - 不变量 1180；语料 C1158；模式 name-the-bsms129-nottoken-bar；反模式 bsms129-nottoken-sold-as-bundled；L10.3 第 1149 条。填 L1.4 / L3.6 BIP-129 token not already wallet-seed / not already tamper-store / not already settled 正式三事（287 余量）。287 setup vs psbt bundled unbundling 完成（1180 item 3）。

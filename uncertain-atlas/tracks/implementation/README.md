@@ -865,6 +865,9 @@
 - [`worked-example-bsms129-notkey-vs-bundled.md`](worked-example-bsms129-notkey-vs-bundled.md) — 指纹≠already verified-key/same-confirm/settled；≠287 bundled（不变量 1179）
 - [`worked-example-bsms129-notsetup-vs-bundled.md`](worked-example-bsms129-notsetup-vs-bundled.md) — 部分签名包≠already secure-setup/members-checked/settled；≠287 bundled（不变量 1178）
 - [`worked-example-setup-vs-psbt.md`](worked-example-setup-vs-psbt.md) — 部分签名包 ≠ 已经是跨厂安全多签开户；指纹对上 ≠ 已经核过 KEY；TOKEN ≠ 已经是钱包种子（不变量 287）
+- [`worked-example-tmpl88-notfull-vs-bundled.md`](worked-example-tmpl88-notfull-vs-bundled.md) — 完整模板≠already half-template/same-path/settled；≠288 bundled（不变量 1183）
+- [`worked-example-tmpl88-nothard-vs-bundled.md`](worked-example-tmpl88-nothard-vs-bundled.md) — 写死熟路径≠already interoperable/blocks-wild/settled；≠288 bundled（不变量 1182）
+- [`worked-example-tmpl88-notpath-vs-bundled.md`](worked-example-tmpl88-notpath-vs-bundled.md) — 一条路径≠already path-template/unambiguous/settled；≠288 bundled（不变量 1181）
 - [`worked-example-template-vs-path.md`](worked-example-template-vs-path.md) — 一条派生路径 ≠ 已经是一份路径模板；写死了熟路径检查 ≠ 已经能互操作；完整模板 ≠ 已经是半截模板（不变量 288）
 - [`worked-example-del89-notblind-vs-bundled.md`](worked-example-del89-notblind-vs-bundled.md) — 这一输入微调≠already whole-tree/blind-sign/settled；≠289 bundled（不变量 1141）
 - [`worked-example-del89-nottree-vs-bundled.md`](worked-example-del89-nottree-vs-bundled.md) — 委托方非扩展钥≠already xpub/whole-wallet/settled；≠289 bundled（不变量 1140）
