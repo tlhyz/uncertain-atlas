@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看过了 CheckTx 不是已经有应用级保护 not already app-level protection / not already app predicate / not already handed to app 正式三事（313 余量），必须分开过了 CheckTx 是不是 already app-level protection interchangeable / 313 mempool-indexer bundled interchangeable / indexer-sold-as-replay interchangeable、索引器滤过 是不是 already app predicate interchangeable、引擎会挡 是不是 already handed to app interchangeable。可以跳过「看见过了就已经有应用级保护 interchangeable / 就已经是应用谓词 interchangeable / 就已经交给应用 interchangeable」。不要另写怎样做索引器。313 mempool-indexer vs replay bundled unbundling 在本页 item 2 完成；续 [`worked-example-indexer-notnoidempotent-vs-bundled.md`](worked-example-indexer-notnoidempotent-vs-bundled.md)（不变量 700 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看过了 CheckTx 不是已经有应用级保护 not already app-level protection / not already app predicate / not already handed to app 正式三事（313 余量），必须分开过了 CheckTx 是不是 already app-level protection interchangeable / 313 mempool-indexer bundled interchangeable / indexer-sold-as-replay interchangeable、索引器滤过 是不是 already app predicate interchangeable、引擎会挡 是不是 already handed to app interchangeable。可以跳过「看见过了就已经有应用级保护 interchangeable / 就已经是应用谓词 interchangeable / 就已经交给应用 interchangeable」。不要另写怎样做索引器。313 mempool-indexer vs replay bundled unbundling 在本页 item 2 完成；续 [`worked-example-indexer-notnoidempotent-vs-bundled.md`](worked-example-indexer-notnoidempotent-vs-bundled.md)（不变量 700 item 3）；313 mempool-indexer vs replay bundled unbundling 完成（698 + 699 + 700）。
 
 ## 本页不抄
 

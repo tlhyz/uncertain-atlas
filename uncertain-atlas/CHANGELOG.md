@@ -1,3 +1,7 @@
+## 2026-09-18（续 817）
+
+- 不变量 700；语料 C677；模式 name-the-indexer-notnoidempotent-bar；反模式 indexer-notnoidempotent-sold-as-bundled；L10.3 第 669 条。填 L4.4 / CometBFT 档案通常不受欢迎不是已经没有幂等例外 not already no exceptions / not already mempool-guaranteed / not already prescribed 正式三事（313 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。313 mempool-indexer vs replay bundled unbundling 完成（698 + 699 + 700）。
+
 ## 2026-09-18（续 816）
 
 - 不变量 699；语料 C676；模式 name-the-indexer-notappprotect-bar；反模式 indexer-notappprotect-sold-as-bundled；L10.3 第 668 条。填 L4.4 / CometBFT 档案过了 CheckTx 不是已经有应用级保护 not already app-level protection / not already app predicate / not already handed to app 正式三事（313 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。313 mempool-indexer vs replay bundled unbundling 续（699 item 2）。
