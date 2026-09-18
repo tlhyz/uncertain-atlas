@@ -1,3 +1,6 @@
+- [`name-the-dump35-notver-bar.md`](name-the-dump35-notver-bar.md) — BIP-35 dump-disc not already answering / not already serving / not already illegal 正式三事（253 余量）（不变量 1264）
+- [`name-the-dump35-notget-bar.md`](name-the-dump35-notget-bar.md) — BIP-35 dump-get not already downloaded / not already full-query / not already gone 正式三事（253 余量）（不变量 1263）
+- [`name-the-dump35-nothave-bar.md`](name-the-dump35-nothave-bar.md) — BIP-35 dump-inv not already have / not already accepted / not already empty-pool 正式三事（253 余量）（不变量 1262）
 - [`name-the-blm111-notver-bar.md`](name-the-blm111-notver-bar.md) — BIP-111 version-enough not already obeying / not already full-history / not already archive 正式三事（252 余量）（不变量 1261）
 - [`name-the-blm111-notoff-bar.md`](name-the-blm111-notoff-bar.md) — BIP-111 bloom-off not already retired / not already cfilter / not already consensus-illegal 正式三事（252 余量）（不变量 1260）
 - [`name-the-blm111-notpriv-bar.md`](name-the-blm111-notpriv-bar.md) — BIP-111 bloom-bit not already private / not already no-dos / not already everyone-serves 正式三事（252 余量）（不变量 1259）

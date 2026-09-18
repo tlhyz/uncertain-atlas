@@ -1,3 +1,15 @@
+## 2026-09-18（续 1381）
+
+- 不变量 1264；语料 C1242；模式 name-the-dump35-notver-bar；反模式 dump35-notver-sold-as-bundled；L10.3 第 1233 条。填 L3.2 / L9.2 BIP-35 dump-disc not already answering / not already serving / not already illegal 正式三事（253 余量）。253 mempool vs have bundled unbundling 完成（1264 item 3）。
+
+## 2026-09-18（续 1380）
+
+- 不变量 1263；语料 C1241；模式 name-the-dump35-notget-bar；反模式 dump35-notget-sold-as-bundled；L10.3 第 1232 条。填 L3.2 / L9.2 BIP-35 dump-get not already downloaded / not already full-query / not already gone 正式三事（253 余量）。253 mempool vs have bundled unbundling 续（1263 item 2）。
+
+## 2026-09-18（续 1379）
+
+- 不变量 1262；语料 C1240；模式 name-the-dump35-nothave-bar；反模式 dump35-nothave-sold-as-bundled；L10.3 第 1231 条。填 L3.2 / L9.2 BIP-35 dump-inv not already have / not already accepted / not already empty-pool 正式三事（253 余量）。253 mempool vs have bundled unbundling 启动（1262 item 1）。
+
 ## 2026-09-18（续 1378）
 
 - 不变量 1261；语料 C1239；模式 name-the-blm111-notver-bar；反模式 blm111-notver-sold-as-bundled；L10.3 第 1230 条。填 L3.5 / L9.1 / L9.6 BIP-111 version-enough not already obeying / not already full-history / not already archive 正式三事（252 余量）。252 bloom vs retired bundled unbundling 完成（1261 item 3）。

@@ -1,3 +1,18 @@
+| A6085 | 记录 | 会与 253 / 144 / 252 / 1262 / 1263 糊成「看见协议版本够了就已经在答 interchangeable、就已经在答 interchangeable、就已经共识非法 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.2 BIP-35 dump-disc not already answering / not already serving / not already illegal 正式三事（253 余量）/ 内存池表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。253 mempool vs have bundled unbundling 完成（1264 item 3） |
+| A6086 | 高 | 看见协议版本够了 会被写成已经在答内存池查询 interchangeable / 144 interchangeable | 官方 BIP-35 dump item 3：not already answering / not 144 |
+| A6087 | 高 | 看见开了能服数据 会被写成已经在答 interchangeable / 252 interchangeable | 官方 BIP-35 dump item 3：not already not already serving / not 252 |
+| A6088 | 高 | 看见过大的库存被丢掉 会被写成已经共识非法 interchangeable | 官方 BIP-35 dump item 3：not already settled |
+| A6089 | 中 | 怎样把别人的内存池整包拉走、怎样按内存池认人、怎样用过大库存打人会被抄进不确定 | 不抄。不写 怎样把别人的内存池整包拉走、怎样按内存池认人、怎样用过大库存打人。不另写 19 节 |
+| A6080 | 记录 | 会与 253 / 249 / 245 / 1262 / 1264 糊成「看见回了内存池库存就已经下载 interchangeable、就已经支持整池查询 interchangeable、就已经不在池里 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.2 BIP-35 dump-get not already downloaded / not already full-query / not already gone 正式三事（253 余量）/ 内存池表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。253 mempool vs have bundled unbundling 续（1263 item 2） |
+| A6081 | 高 | 看见回了内存池库存 会被写成已经下载那些交易 interchangeable / 249 interchangeable | 官方 BIP-35 dump item 2：not already downloaded / not 249 |
+| A6082 | 高 | 看见只肯给最近转发过的 会被写成已经支持整池查询 interchangeable / 245 interchangeable | 官方 BIP-35 dump item 2：not already not already full-query / not 245 |
+| A6083 | 高 | 看见仍只肯给最近转发过的 会被写成那些交易已经不在池里 interchangeable | 官方 BIP-35 dump item 2：not already settled |
+| A6084 | 中 | 怎样把别人的内存池整包拉走、怎样按内存池认人、怎样用过大库存打人会被抄进不确定 | 不抄。不写 怎样把别人的内存池整包拉走、怎样按内存池认人、怎样用过大库存打人。不另写 19 节 |
+| A6075 | 记录 | 会与 253 / 245 / 248 / 1263 / 1264 糊成「看见回了一串库存就已经有那些交易 interchangeable、就已经收下 interchangeable、就已经没有未确认池 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.2 BIP-35 dump-inv not already have / not already accepted / not already empty-pool 正式三事（253 余量）/ 内存池表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。253 mempool vs have bundled unbundling 启动（1262 item 1） |
+| A6076 | 高 | 看见回了一串库存 会被写成已经有那些交易 interchangeable / 245 interchangeable | 官方 BIP-35 dump item 1：not already have / not 245 |
+| A6077 | 高 | 看见回了一串库存 会被写成已经收下 interchangeable / 248 interchangeable | 官方 BIP-35 dump item 1：not already not already accepted / not 248 |
+| A6078 | 高 | 看见回了空库存 会被写成这个节点已经没有未确认池 interchangeable | 官方 BIP-35 dump item 1：not already settled |
+| A6079 | 中 | 怎样把别人的内存池整包拉走、怎样按内存池认人、怎样用过大库存打人会被抄进不确定 | 不抄。不写 怎样把别人的内存池整包拉走、怎样按内存池认人、怎样用过大库存打人。不另写 19 节 |
 | A6070 | 记录 | 会与 252 / 250 / 243 / 1259 / 1260 糊成「看见协议版本够了就已经在遵守 interchangeable、就已经能服完整历史 interchangeable、就已经是归档 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.1 / L9.6 BIP-111 version-enough not already obeying / not already full-history / not already archive 正式三事（252 余量）/ 轻客户端表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。252 bloom vs retired bundled unbundling 完成（1261 item 3） |
 | A6071 | 高 | 看见协议版本够了 会被写成已经在遵守这一位 interchangeable / 250 interchangeable | 官方 BIP-111 bloom item 3：not already obeying / not 250 |
 | A6072 | 高 | 看见开了布隆位 会被写成已经能服完整历史 interchangeable / 243 interchangeable | 官方 BIP-111 bloom item 3：not already not already full-history / not 243 |

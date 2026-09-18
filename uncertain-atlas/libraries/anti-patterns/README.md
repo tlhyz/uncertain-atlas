@@ -1,3 +1,6 @@
+- [`dump35-notver-sold-as-bundled.md`](dump35-notver-sold-as-bundled.md) — 协议版本够了 被写成已经在答 / 开了能服数据就已经在答 / 过大库存被丢掉就已经共识非法（不变量 1264）
+- [`dump35-notget-sold-as-bundled.md`](dump35-notget-sold-as-bundled.md) — 回了内存池库存 被写成已经下载 / 只肯给最近转发过的就已经支持整池 / 就已经不在池里（不变量 1263）
+- [`dump35-nothave-sold-as-bundled.md`](dump35-nothave-sold-as-bundled.md) — 回了一串库存 被写成已经有那些交易 / 已经收下 / 回了空库存就已经没有未确认池（不变量 1262）
 - [`blm111-notver-sold-as-bundled.md`](blm111-notver-sold-as-bundled.md) — 协议版本够了 被写成已经在遵守 / 开了布隆位就已经能服完整历史 / 就已经是归档（不变量 1261）
 - [`blm111-notoff-sold-as-bundled.md`](blm111-notoff-sold-as-bundled.md) — 没开布隆服务位 被写成全网已经退役 / 已经改用客户端侧过滤 / 因过滤器命令被断开就已经共识非法（不变量 1260）
 - [`blm111-notpriv-sold-as-bundled.md`](blm111-notpriv-sold-as-bundled.md) — 开了布隆服务位 被写成已经私人 / 拒绝服务面已经没了 / 旧协议就已经保证人人都服（不变量 1259）

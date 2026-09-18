@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见内存池查询回了一串库存就已经有那些交易 / 就已经是全网同一口池 / 就已经共识」。若对照未确认池查询，必须分开列出哈希、索取扩到池、发现条件。不要把一节点的池写成全球队列。不要写怎样把别人的内存池整包拉走。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见内存池查询回了一串库存就已经有那些交易 / 就已经是全网同一口池 / 就已经共识」。若对照未确认池查询，必须分开列出哈希、索取扩到池、发现条件。不要把一节点的池写成全球队列。253 mempool vs have bundled unbundling 完成（1262 item 1 / 1263 item 2 / 1264 item 3）；精读 [`worked-example-dump35-nothave-vs-bundled.md`](worked-example-dump35-nothave-vs-bundled.md)（不变量 1262 item 1）、[`worked-example-dump35-notget-vs-bundled.md`](worked-example-dump35-notget-vs-bundled.md)（不变量 1263 item 2）、[`worked-example-dump35-notver-vs-bundled.md`](worked-example-dump35-notver-vs-bundled.md)（不变量 1264 item 3）。不要写怎样把别人的内存池整包拉走。
 
 ## 本页不抄
 
