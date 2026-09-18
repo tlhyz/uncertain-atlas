@@ -1,3 +1,6 @@
+- [`preprestr-notpunish-sold-as-bundled.md`](preprestr-notpunish-sold-as-bundled.md) — misbehavior 被写成已经定奖惩 / 已经是 Process misbehavior / 已经交差（不变量 1051）
+- [`preprestr-notts-sold-as-bundled.md`](preprestr-notts-sold-as-bundled.md) — time 被写成已经对上了拟议块头 / 已经验过票上时间 / 已经交差（不变量 1050）
+- [`preprestr-notlocal-sold-as-bundled.md`](preprestr-notlocal-sold-as-bundled.md) — local_last_commit 被写成已经交差 proposed_last_commit / 已经是本高度刚签的扩展 / 已经交差（不变量 1049）
 - [`prepreqcol-nothead-sold-as-bundled.md`](prepreqcol-nothead-sold-as-bundled.md) — height 被写成已经对上了拟议块头 / 已经知道本头哈希 / 已经交差（不变量 1048）
 - [`prepreqcol-notproc-sold-as-bundled.md`](prepreqcol-notproc-sold-as-bundled.md) — txs 被写成已经跑过 Process / 已经执行那些交易 / 已经交差（不变量 1047）
 - [`prepreqcol-notcap-sold-as-bundled.md`](prepreqcol-notcap-sold-as-bundled.md) — max_tx_bytes 被写成已经能回超限列表 / 已经是引擎会帮你裁 / 已经交差（不变量 1046）

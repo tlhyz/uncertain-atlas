@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Prepare 请求余栏就已经交差 proposed_last_commit、已经对上了拟议块头、已经定奖惩」，必须分开 PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息是不是已经交差 proposed_last_commit、PrepareProposalRequest.time 是将要提议那块的时间戳是不是已经对上了拟议块头、PrepareProposalRequest.misbehavior 是过错验证者信息列表是不是已经定奖惩。可以跳过「看见填了 Prepare 请求余栏就已经交差 proposed_last_commit」。不要另写怎样写 Prepare 请求余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Prepare 请求余栏就已经交差 proposed_last_commit、已经对上了拟议块头、已经定奖惩」，必须分开 PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息是不是已经交差 proposed_last_commit、PrepareProposalRequest.time 是将要提议那块的时间戳是不是已经对上了拟议块头、PrepareProposalRequest.misbehavior 是过错验证者信息列表是不是已经定奖惩。可以跳过「看见填了 Prepare 请求余栏就已经交差 proposed_last_commit」。不要另写怎样写 Prepare 请求余栏。424 prepreqrest vs procreq bundled unbundling 完成（1049 item 1 / 1050 item 2 / 1051 item 3）；精读 [`worked-example-preprestr-notlocal-vs-bundled.md`](worked-example-preprestr-notlocal-vs-bundled.md)（不变量 1049 item 1）。
 
 ## 本页不抄
 

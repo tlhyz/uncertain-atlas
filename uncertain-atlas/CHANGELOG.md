@@ -1,3 +1,15 @@
+## 2026-09-17（续 1168）
+
+- 不变量 1051；语料 C1029；模式 name-the-preprestr-notpunish-bar；反模式 preprestr-notpunish-sold-as-bundled；L10.3 第 1020 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.misbehavior not already rewarded / not already process-mis / not already settled 正式三事（424 余量）。424 prepreqrest vs procreq bundled unbundling 完成（1051 item 3）。
+
+## 2026-09-17（续 1167）
+
+- 不变量 1050；语料 C1028；模式 name-the-preprestr-notts-bar；反模式 preprestr-notts-sold-as-bundled；L10.3 第 1019 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.time not already header-aligned / not already vote-checked / not already settled 正式三事（424 余量）。424 prepreqrest vs procreq bundled unbundling 续（1050 item 2）。
+
+## 2026-09-17（续 1166）
+
+- 不变量 1049；语料 C1027；模式 name-the-preprestr-notlocal-bar；反模式 preprestr-notlocal-sold-as-bundled；L10.3 第 1018 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.local_last_commit not already proposed / not already last-ext / not already settled 正式三事（424 余量）。424 prepreqrest vs procreq bundled unbundling 启动（1049 item 1）。
+
 ## 2026-09-17（续 1165）
 
 - 不变量 1048；语料 C1026；模式 name-the-prepreqcol-nothead-bar；反模式 prepreqcol-nothead-sold-as-bundled；L10.3 第 1017 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.height not already header-aligned / not already header-known / not already settled 正式三事（423 余量）。423 prepreq vs return bundled unbundling 完成（1048 item 3）。

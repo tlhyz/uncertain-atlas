@@ -1,3 +1,6 @@
+- [`name-the-preprestr-notpunish-bar.md`](name-the-preprestr-notpunish-bar.md) — PrepareProposalRequest.misbehavior not already rewarded / not already process-mis / not already settled 正式三事（424 余量）（不变量 1051）
+- [`name-the-preprestr-notts-bar.md`](name-the-preprestr-notts-bar.md) — PrepareProposalRequest.time not already header-aligned / not already vote-checked / not already settled 正式三事（424 余量）（不变量 1050）
+- [`name-the-preprestr-notlocal-bar.md`](name-the-preprestr-notlocal-bar.md) — PrepareProposalRequest.local_last_commit not already proposed / not already last-ext / not already settled 正式三事（424 余量）（不变量 1049）
 - [`name-the-prepreqcol-nothead-bar.md`](name-the-prepreqcol-nothead-bar.md) — PrepareProposalRequest.height not already header-aligned / not already header-known / not already settled 正式三事（423 余量）（不变量 1048）
 - [`name-the-prepreqcol-notproc-bar.md`](name-the-prepreqcol-notproc-bar.md) — PrepareProposalRequest.txs not already processed / not already executed / not already settled 正式三事（423 余量）（不变量 1047）
 - [`name-the-prepreqcol-notcap-bar.md`](name-the-prepreqcol-notcap-bar.md) — PrepareProposalRequest.max_tx_bytes not already over-limit-ok / not already engine-trimmed / not already settled 正式三事（423 余量）（不变量 1046）

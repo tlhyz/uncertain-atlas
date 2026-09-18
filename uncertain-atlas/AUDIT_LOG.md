@@ -1,3 +1,18 @@
+| A5015 | 记录 | 会与 424 / 420 / 413 / 363 / 1049 / 1050 糊成「看见 PrepareProposalRequest.misbehavior 就已经定奖惩 interchangeable、就已经是 Process misbehavior interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.misbehavior not already rewarded / not already process-mis / not already settled 正式三事（424 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。424 prepreqrest vs procreq bundled unbundling 完成（1051 item 3） |
+| A5016 | 高 | 看见填了 misbehavior 会被写成已经定奖惩 interchangeable / 420 interchangeable | 官方 Prepare 请求余栏 item 3：not already rewarded / not 420 |
+| A5017 | 高 | 看见有过错列表 会被写成已经是 ProcessProposalRequest.misbehavior interchangeable | 官方 Prepare 请求余栏 item 3：not already process-mis |
+| A5018 | 高 | 看见能指过错 会被写成已经交差 interchangeable | 官方 Prepare 请求余栏 item 3：not already settled |
+| A5019 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求余栏。不另写 19 节 |
+| A5010 | 记录 | 会与 424 / 420 / 359 / 1049 / 1051 糊成「看见 PrepareProposalRequest.time 就已经对上了拟议块头 interchangeable、就已经验过票上时间 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.time not already header-aligned / not already vote-checked / not already settled 正式三事（424 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。424 prepreqrest vs procreq bundled unbundling 续（1050 item 2） |
+| A5011 | 高 | 看见填了 time 会被写成已经对上了拟议块头 interchangeable | 官方 Prepare 请求余栏 item 2：not already header-aligned |
+| A5012 | 高 | 看见有将要提议的时间戳 会被写成已经验过票上时间 interchangeable / 420 interchangeable | 官方 Prepare 请求余栏 item 2：not already vote-checked / not 420 |
+| A5013 | 高 | 看见能指时间 会被写成已经交差 interchangeable | 官方 Prepare 请求余栏 item 2：not already settled |
+| A5014 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求余栏。不另写 19 节 |
+| A5005 | 记录 | 会与 424 / 420 / 359 / 1050 / 1051 糊成「看见 PrepareProposalRequest.local_last_commit 就已经交差 proposed_last_commit interchangeable、就已经是本高度刚签的扩展 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.local_last_commit not already proposed / not already last-ext / not already settled 正式三事（424 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。424 prepreqrest vs procreq bundled unbundling 启动（1049 item 1） |
+| A5006 | 高 | 看见填了 local_last_commit 会被写成已经交差 proposed_last_commit interchangeable / 420 interchangeable | 官方 Prepare 请求余栏 item 1：not already proposed / not 420 |
+| A5007 | 高 | 看见从本进程拿到 会被写成已经是本高度刚签的扩展 interchangeable / 359 interchangeable | 官方 Prepare 请求余栏 item 1：not already last-ext / not 359 |
+| A5008 | 高 | 看见能指上一份提交 会被写成已经交差 interchangeable | 官方 Prepare 请求余栏 item 1：not already settled |
+| A5009 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求余栏。不另写 19 节 |
 | A5000 | 记录 | 会与 423 / 419 / 359 / 422 / 1046 / 1047 糊成「看见 PrepareProposalRequest.height 就已经对上了拟议块头 interchangeable、就已经知道本头哈希 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.height not already header-aligned / not already header-known / not already settled 正式三事（423 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。423 prepreq vs return bundled unbundling 完成（1048 item 3） |
 | A5001 | 高 | 看见填了 height 会被写成已经对上了拟议块头 interchangeable / 419 interchangeable | 官方 Prepare 请求栏 item 3：not already header-aligned / not 419 |
 | A5002 | 高 | 看见有将要提议的高度 会被写成已经知道本头哈希 interchangeable / 359 interchangeable | 官方 Prepare 请求栏 item 3：not already header-known / not 359 |
