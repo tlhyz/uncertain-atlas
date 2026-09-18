@@ -1,3 +1,6 @@
+- [`name-the-cifields-notnts-bar.md`](name-the-cifields-notnts-bar.md) — CiFields Fields column not already Notes order / not already 444-bundled / not already 365-rewards 正式三事（445 余量）（不变量 1361）
+- [`name-the-cifields-notlst-bar.md`](name-the-cifields-notlst-bar.md) — CiFields votes is last-set voting-info not already in-block / not already settled / not already 444-notes-order 正式三事（445 余量）（不变量 1360）
+- [`name-the-cifields-notrnd-bar.md`](name-the-cifields-notrnd-bar.md) — CiFields round is commit-round not already voting-power-ordered / not already slashed / not already 394-ext-round 正式三事（445 余量）（不变量 1359）
 - [`name-the-extcnotes-notload-bar.md`](name-the-extcnotes-notload-bar.md) — ExtCiNotes rebuild ExtendedCommitInfo from store not already extracted-from-block / not already 365-path / not already 444-cinotes 正式三事（441 余量）（不变量 1358）
 - [`name-the-extcnotes-noteng-bar.md`](name-the-extcnotes-noteng-bar.md) — ExtCiNotes engine guarantees and persists ext order not already app-sorted / not already recv-order / not already Prepare-decided 正式三事（441 余量）（不变量 1357）
 - [`name-the-extcnotes-notord-bar.md`](name-the-extcnotes-notord-bar.md) — ExtCiNotes ext votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（441 余量）（不变量 1356）

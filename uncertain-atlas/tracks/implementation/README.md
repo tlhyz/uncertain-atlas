@@ -1014,6 +1014,9 @@
 - [`worked-example-cinotes-notapp-vs-bundled.md`](worked-example-cinotes-notapp-vs-bundled.md) — 引擎保证并落盘≠already应用排过/收票顺序/Process决定；≠444 bundled（不变量 1354）
 - [`worked-example-cinotes-notstore-vs-bundled.md`](worked-example-cinotes-notstore-vs-bundled.md) — 从store再装≠already从块抽出/365路径/ExtendedCommitInfo Notes；≠444 bundled（不变量 1355）
 - [`worked-example-cinotes-vs-order.md`](worked-example-cinotes-vs-order.md) — CommitInfo Notes 票序≠already 进块/应用排过/从块抽出（快照 444）
+- [`worked-example-cifields-notrnd-vs-bundled.md`](worked-example-cifields-notrnd-vs-bundled.md) — CommitInfo.round是提交轮≠already按投票权排/罚没/394 ext-round；≠445 bundled（不变量 1359）
+- [`worked-example-cifields-notlst-vs-bundled.md`](worked-example-cifields-notlst-vs-bundled.md) — votes是上一集合投票信息≠already进块/交差/444 Notes票序；≠445 bundled（不变量 1360）
+- [`worked-example-cifields-notnts-vs-bundled.md`](worked-example-cifields-notnts-vs-bundled.md) — Fields栏≠already Notes票序/444 bundled/365奖罚；≠445 bundled（不变量 1361）
 - [`worked-example-cifields-vs-notes.md`](worked-example-cifields-vs-notes.md) — CommitInfo Fields 栏≠already Notes 票序/已经进块（快照 445）
 - [`worked-example-exectxevents-vs-header.md`](worked-example-exectxevents-vs-header.md) — ExecTxResult.events≠already 印进本头/块级events（快照 446）
 - [`worked-example-extviusage-vs-expose.md`](worked-example-extviusage-vs-expose.md) — ExtendedVoteInfo Usage 暴露签≠already 应用验完/必须填内容

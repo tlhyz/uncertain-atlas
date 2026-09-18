@@ -1,3 +1,15 @@
+## 2026-09-18（续 1478）
+
+- 不变量 1361；语料 C1339；模式 name-the-cifields-notnts-bar；反模式 cifields-notnts-sold-as-bundled；L10.3 第 1330 条。填 L4.4 CiFields Fields column not already Notes order / not already 444-bundled / not already 365-rewards 正式三事（445 余量）。445 CommitInfo Fields round-and-votes bundled unbundling 完成（1361 item 3）。
+
+## 2026-09-18（续 1477）
+
+- 不变量 1360；语料 C1338；模式 name-the-cifields-notlst-bar；反模式 cifields-notlst-sold-as-bundled；L10.3 第 1329 条。填 L4.4 CiFields votes is last-set voting-info not already in-block / not already settled / not already 444-notes-order 正式三事（445 余量）。445 CommitInfo Fields round-and-votes bundled unbundling 续（1360 item 2）。
+
+## 2026-09-18（续 1476）
+
+- 不变量 1359；语料 C1337；模式 name-the-cifields-notrnd-bar；反模式 cifields-notrnd-sold-as-bundled；L10.3 第 1328 条。填 L4.4 CiFields round is commit-round not already voting-power-ordered / not already slashed / not already 394-ext-round 正式三事（445 余量）。445 CommitInfo Fields round-and-votes bundled unbundling 启动（1359 item 1）。
+
 ## 2026-09-18（续 1475）
 
 - 不变量 1358；语料 C1336；模式 name-the-extcnotes-notload-bar；反模式 extcnotes-notload-sold-as-bundled；L10.3 第 1327 条。填 L4.4 ExtCiNotes rebuild ExtendedCommitInfo from store not already extracted-from-block / not already 365-path / not already 444-cinotes 正式三事（441 余量）。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 完成（1358 item 3）。

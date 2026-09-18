@@ -1,3 +1,6 @@
+- [`cifields-notnts-sold-as-bundled.md`](cifields-notnts-sold-as-bundled.md) — Fields 栏 被写成已经是 Notes 票序 / 就已经是 444 bundled / 就已经按到场定奖惩（不变量 1361）
+- [`cifields-notlst-sold-as-bundled.md`](cifields-notlst-sold-as-bundled.md) — CommitInfo.votes 列表含义 被写成已经进了块 / 就已经交差 / 就已经是 Notes 票序（不变量 1360）
+- [`cifields-notrnd-sold-as-bundled.md`](cifields-notrnd-sold-as-bundled.md) — CommitInfo.round 被写成已经按投票权排过 / 就已经罚没 / 就已经是 ExtendedCommitInfo.round（不变量 1359）
 - [`extcnotes-notload-sold-as-bundled.md`](extcnotes-notload-sold-as-bundled.md) — 从 store 再装 ExtendedCommitInfo 被写成已经从块抽出 / 就已经是 365 路径 / 就已经是 444 cinotes（不变量 1358）
 - [`extcnotes-noteng-sold-as-bundled.md`](extcnotes-noteng-sold-as-bundled.md) — 引擎保证并落盘 Extended 顺序 被写成已经由应用排过 / 就已经是收票顺序 / 就已经由 Prepare 决定（不变量 1357）
 - [`extcnotes-notord-sold-as-bundled.md`](extcnotes-notord-sold-as-bundled.md) — Extended 按投票权降序 被写成已经进了块 / 就已经交差 / 就已经写进 last_commit（不变量 1356）

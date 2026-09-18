@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Process / Finalize 里有 CommitInfo 就已经填了提交轮、已经按投票权排好、已经进了块」，必须分开 CommitInfo.round 是提交轮是不是已经按投票权排过 / 已经罚没、CommitInfo.votes 是上一验证者集合里各人的投票信息是不是已经进了块 / 已经交差、Fields 栏描述 round 和 votes 是不是已经是 CommitInfo Notes 那套票序话就已经是同一句。可以跳过「看见 Process / Finalize 里有 CommitInfo 就已经填了提交轮」。不要另写怎样写 CommitInfo Fields 栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Process / Finalize 里有 CommitInfo 就已经填了提交轮、已经按投票权排好、已经进了块」，必须分开 CommitInfo.round 是提交轮是不是已经按投票权排过 / 已经罚没、CommitInfo.votes 是上一验证者集合里各人的投票信息是不是已经进了块 / 已经交差、Fields 栏描述 round 和 votes 是不是已经是 CommitInfo Notes 那套票序话就已经是同一句。可以跳过「看见 Process / Finalize 里有 CommitInfo 就已经填了提交轮」。445 CommitInfo Fields round-and-votes bundled unbundling 完成（1359 item 1 / 1360 item 2 / 1361 item 3）；精读 [`worked-example-cifields-notrnd-vs-bundled.md`](worked-example-cifields-notrnd-vs-bundled.md)（不变量 1359 item 1）、[`worked-example-cifields-notlst-vs-bundled.md`](worked-example-cifields-notlst-vs-bundled.md)（不变量 1360 item 2）、[`worked-example-cifields-notnts-vs-bundled.md`](worked-example-cifields-notnts-vs-bundled.md)（不变量 1361 item 3）。不要另写怎样写 CommitInfo Fields 栏。
 
 ## 本页不抄
 
