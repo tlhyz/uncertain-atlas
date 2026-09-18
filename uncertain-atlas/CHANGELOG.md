@@ -1,3 +1,7 @@
+## 2026-09-18（续 814）
+
+- 不变量 697；语料 C674；模式 name-the-checktxstate-notrecheck-bar；反模式 checktxstate-notrecheck-sold-as-bundled；L10.3 第 666 条。填 L4.4 / CometBFT 档案 RECHECK 不是已经是新交易 not already new transaction / not already treated as NEW / not already unlocked 正式三事（312 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。312 checktxstate vs execute bundled unbundling 完成（695 + 696 + 697）。
+
 ## 2026-09-18（续 813）
 
 - 不变量 696；语料 C673；模式 name-the-checktxstate-notsame-bar；反模式 checktxstate-notsame-sold-as-bundled；L10.3 第 665 条。填 L4.4 / CometBFT 档案同时在改不是已经同一份 not already same state / not already merged / not already shared working state 正式三事（312 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。312 checktxstate vs execute bundled unbundling 续（696 item 2）。
