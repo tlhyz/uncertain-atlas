@@ -1,3 +1,18 @@
+| A5455 | 记录 | 会与 272 / 184 / 1126 / 1136 / 1137 糊成「看见种子备份就已经能找回单钥 P2TR interchangeable、就已经不必再写本页 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-86 seed-backup not already recover-p2tr / not already skip-this-page / not already settled 正式三事（272 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。272 derived vs output-key bundled unbundling 完成（1138 item 3） |
+| A5456 | 高 | 看见种子备份 会被写成已经能找回单钥 P2TR interchangeable / 184 interchangeable | 官方 BIP-86 单钥 P2TR item 3：not already recover-p2tr / not 184 |
+| A5457 | 高 | 看见已有描述符 会被写成已经不必再写本页 interchangeable / 1126 interchangeable | 官方 BIP-86 单钥 P2TR item 3：not already skip-this-page / not 1126 |
+| A5458 | 高 | 看见本页按设计不向后兼容 会被写成已经交差 interchangeable | 官方 BIP-86 单钥 P2TR item 3：not already settled |
+| A5459 | 中 | 怎样算标签微调或 BIP-84 会被抄进不确定 | 不抄。不写怎样算标签微调。不另写 BIP-84。不另写 19 节 |
+| A5450 | 记录 | 会与 272 / 189 / 1135 / 1136 / 1138 糊成「看见不需要脚本路径就已经不承诺 interchangeable、就已经是没有脚本路径那种输出 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-86 no-script-path-needed not already uncommitted / not already no-script-path / not already settled 正式三事（272 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。272 derived vs output-key bundled unbundling 续（1137 item 2） |
+| A5451 | 高 | 看见不需要脚本路径 会被写成已经不承诺脚本路径 interchangeable / 189 interchangeable | 官方 BIP-86 单钥 P2TR item 2：not already uncommitted / not 189 |
+| A5452 | 高 | 看见单钥 会被写成已经是没有脚本路径那种输出 interchangeable / 1135 interchangeable | 官方 BIP-86 单钥 P2TR item 2：not already no-script-path / not 1135 |
+| A5453 | 高 | 看见仍应当承诺一条不可花的脚本路径 会被写成已经交差 interchangeable | 官方 BIP-86 单钥 P2TR item 2：not already settled |
+| A5454 | 中 | 怎样算标签微调或 BIP-84 会被抄进不确定 | 不抄。不写怎样算标签微调。不另写 BIP-84。不另写 19 节 |
+| A5445 | 记录 | 会与 272 / 153 / 1124 / 1137 / 1138 糊成「看见派生钥就已经是输出钥 interchangeable、就已经是见证里那 32 字节 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-86 derived-key not already output-key / not already witness-32 / not already settled 正式三事（272 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。272 derived vs output-key bundled unbundling 启动（1136 item 1） |
+| A5446 | 高 | 看见派生钥 会被写成已经是输出钥 interchangeable / 153 interchangeable | 官方 BIP-86 单钥 P2TR item 1：not already output-key / not 153 |
+| A5447 | 高 | 看见内部钥 会被写成已经是见证里那 32 字节 interchangeable / 1124 interchangeable | 官方 BIP-86 单钥 P2TR item 1：not already witness-32 / not 1124 |
+| A5448 | 高 | 看见路径对上了 会被写成已经交差 interchangeable | 官方 BIP-86 单钥 P2TR item 1：not already settled |
+| A5449 | 中 | 怎样算标签微调或 BIP-84 会被抄进不确定 | 不抄。不写怎样算标签微调。不另写 BIP-84。不另写 19 节 |
 | A5440 | 记录 | 会与 270 / 1129 / 1131 / 1133 / 1134 糊成「看见未压缩钥就已经是本页 interchangeable、就已经能当网络规则 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-67 uncompressed-key not already this-page / not already network-rule / not already settled 正式三事（270 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。270 sorted vs one-address bundled unbundling 完成（1135 item 3） |
 | A5441 | 高 | 看见未压缩钥 会被写成已经是本页 interchangeable / 1129 interchangeable | 官方 BIP-67 确定性多签地址 item 3：not already this-page / not 1129 |
 | A5442 | 高 | 看见一条 P2SH 地址 会被写成已经能当网络规则 interchangeable / 1131 interchangeable | 官方 BIP-67 确定性多签地址 item 3：not already network-rule / not 1131 |

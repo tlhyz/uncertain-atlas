@@ -1,3 +1,6 @@
+- [`name-the-tap86-notseed-bar.md`](name-the-tap86-notseed-bar.md) — BIP-86 seed-backup not already recover-p2tr / not already skip-this-page / not already settled 正式三事（272 余量）（不变量 1138）
+- [`name-the-tap86-notcommit-bar.md`](name-the-tap86-notcommit-bar.md) — BIP-86 no-script-path-needed not already uncommitted / not already no-script-path / not already settled 正式三事（272 余量）（不变量 1137）
+- [`name-the-tap86-notout-bar.md`](name-the-tap86-notout-bar.md) — BIP-86 derived-key not already output-key / not already witness-32 / not already settled 正式三事（272 余量）（不变量 1136）
 - [`name-the-sort67-notuncomp-bar.md`](name-the-sort67-notuncomp-bar.md) — BIP-67 uncompressed-key not already this-page / not already network-rule / not already settled 正式三事（270 余量）（不变量 1135）
 - [`name-the-sort67-notshare-bar.md`](name-the-sort67-notshare-bar.md) — BIP-67 shared-threshold-master not already enough / not already must-store-each / not already settled 正式三事（270 余量）（不变量 1134）
 - [`name-the-sort67-notaddr-bar.md`](name-the-sort67-notaddr-bar.md) — BIP-67 same-keys-threshold not already same-redeem / not already same-p2sh / not already settled 正式三事（270 余量）（不变量 1133）

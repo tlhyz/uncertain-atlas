@@ -1,3 +1,15 @@
+## 2026-09-18（续 1255）
+
+- 不变量 1138；语料 C1116；模式 name-the-tap86-notseed-bar；反模式 tap86-notseed-sold-as-bundled；L10.3 第 1107 条。填 L1.4 / L3.6 BIP-86 seed-backup not already recover-p2tr / not already skip-this-page / not already settled 正式三事（272 余量）。272 derived vs output-key bundled unbundling 完成（1138 item 3）。
+
+## 2026-09-18（续 1254）
+
+- 不变量 1137；语料 C1115；模式 name-the-tap86-notcommit-bar；反模式 tap86-notcommit-sold-as-bundled；L10.3 第 1106 条。填 L1.4 / L3.6 BIP-86 no-script-path-needed not already uncommitted / not already no-script-path / not already settled 正式三事（272 余量）。272 derived vs output-key bundled unbundling 续（1137 item 2）。
+
+## 2026-09-18（续 1253）
+
+- 不变量 1136；语料 C1114；模式 name-the-tap86-notout-bar；反模式 tap86-notout-sold-as-bundled；L10.3 第 1105 条。填 L1.4 / L3.6 BIP-86 derived-key not already output-key / not already witness-32 / not already settled 正式三事（272 余量）。272 derived vs output-key bundled unbundling 启动（1136 item 1）。
+
 ## 2026-09-18（续 1252）
 
 - 不变量 1135；语料 C1113；模式 name-the-sort67-notuncomp-bar；反模式 sort67-notuncomp-sold-as-bundled；L10.3 第 1104 条。填 L1.4 / L3.6 BIP-67 uncompressed-key not already this-page / not already network-rule / not already settled 正式三事（270 余量）。270 sorted vs one-address bundled unbundling 完成（1135 item 3）。

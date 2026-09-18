@@ -805,6 +805,9 @@
 - [`worked-example-cos45-notsign-vs-bundled.md`](worked-example-cos45-notsign-vs-bundled.md) — 能独立长地址≠already independent-sign/same-person-key/settled；≠271 bundled（不变量 1131）
 - [`worked-example-cos45-notmaster-vs-bundled.md`](worked-example-cos45-notmaster-vs-bundled.md) — 共享主公钥≠already this-page/enough/settled；≠271 bundled（不变量 1130）
 - [`worked-example-cosigner-vs-discovered.md`](worked-example-cosigner-vs-discovered.md) — 共享主公钥 ≠ 已经是本页；能独立长地址 ≠ 已经能独立签；前面分支没有交易 ≠ 已经发现完（不变量 271）
+- [`worked-example-tap86-notseed-vs-bundled.md`](worked-example-tap86-notseed-vs-bundled.md) — 种子备份≠already recover-p2tr/skip-this-page/settled；≠272 bundled（不变量 1138）
+- [`worked-example-tap86-notcommit-vs-bundled.md`](worked-example-tap86-notcommit-vs-bundled.md) — 不需要脚本路径≠already uncommitted/no-script-path/settled；≠272 bundled（不变量 1137）
+- [`worked-example-tap86-notout-vs-bundled.md`](worked-example-tap86-notout-vs-bundled.md) — 派生钥≠already output-key/witness-32/settled；≠272 bundled（不变量 1136）
 - [`worked-example-derived-vs-output-key.md`](worked-example-derived-vs-output-key.md) — 派生钥 ≠ 已经是输出钥；不需要脚本路径 ≠ 已经不承诺；种子备份 ≠ 已经能找回单钥 P2TR（不变量 272）
 - [`worked-example-multi-vs-sortedmulti.md`](worked-example-multi-vs-sortedmulti.md) — multi ≠ 已经按字典序排；门限和钥数 ≠ 已经同一套上限；多把扩展钥 ≠ 已经各自编号（不变量 274）
 - [`worked-example-tr-vs-tree.md`](worked-example-tr-vs-tree.md) — tr 没有树 ≠ 已经有脚本路径；树表达式 ≠ 已经是旧脚本套法；压缩钥 ≠ 已经是 x-only（不变量 275）

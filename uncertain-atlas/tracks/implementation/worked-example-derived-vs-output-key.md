@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出单钥后量子地址，必须分开派生钥、输出钥、承诺了没有。可以跳过「看见种子就已经能找回 Taproot」。若对照，必须分开内部钥和输出钥。不要另写怎样算标签微调，也不要另写 BIP-84。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出单钥后量子地址，必须分开派生钥、输出钥、承诺了没有。可以跳过「看见种子就已经能找回 Taproot」。若对照，必须分开内部钥和输出钥。不要另写怎样算标签微调，也不要另写 BIP-84。272 derived vs output-key bundled unbundling 完成（1136 item 1 / 1137 item 2 / 1138 item 3）；精读 [`worked-example-tap86-notout-vs-bundled.md`](worked-example-tap86-notout-vs-bundled.md)（不变量 1136 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,6 @@
+- [`tap86-notseed-sold-as-bundled.md`](tap86-notseed-sold-as-bundled.md) — 种子备份 被写成已经能找回单钥 P2TR / 已经不必再写本页 / 已经交差（不变量 1138）
+- [`tap86-notcommit-sold-as-bundled.md`](tap86-notcommit-sold-as-bundled.md) — 不需要脚本路径 被写成已经不承诺 / 已经没有脚本路径 / 已经交差（不变量 1137）
+- [`tap86-notout-sold-as-bundled.md`](tap86-notout-sold-as-bundled.md) — 派生钥 被写成已经是输出钥 / 已经是见证 32 字节 / 已经交差（不变量 1136）
 - [`sort67-notuncomp-sold-as-bundled.md`](sort67-notuncomp-sold-as-bundled.md) — 未压缩钥 被写成已经是本页 / 已经能当网络规则 / 已经交差（不变量 1135）
 - [`sort67-notshare-sold-as-bundled.md`](sort67-notshare-sold-as-bundled.md) — 只共享门限和主公钥 被写成已经够了 / 已经必须另存状态 / 已经交差（不变量 1134）
 - [`sort67-notaddr-sold-as-bundled.md`](sort67-notaddr-sold-as-bundled.md) — 同一套钥 被写成已经是同一条赎回 / 已经是同一条地址 / 已经交差（不变量 1133）
