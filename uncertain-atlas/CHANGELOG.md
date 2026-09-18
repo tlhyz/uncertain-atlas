@@ -1,3 +1,15 @@
+## 2026-09-18（续 1330）
+
+- 不变量 1213；语料 C1191；模式 name-the-uri321-notreq-bar；反模式 uri321-notreq-sold-as-bundled；L10.3 第 1182 条。填 L0.7 / L3.6 BIP-321 required-param not already payable / not already confirmed / not already settled 正式三事（255 余量）。255 uri vs authorized bundled unbundling 完成（1213 item 3）。
+
+## 2026-09-18（续 1329）
+
+- 不变量 1212；语料 C1190；模式 name-the-uri321-notempty-bar；反模式 uri321-notempty-sold-as-bundled；L10.3 第 1181 条。填 L0.7 / L3.6 BIP-321 empty-path not already no-instruction / not already only-one / not already settled 正式三事（255 余量）。255 uri vs authorized bundled unbundling 续（1212 item 2）。
+
+## 2026-09-18（续 1328）
+
+- 不变量 1211；语料 C1189；模式 name-the-uri321-notauth-bar；反模式 uri321-notauth-sold-as-bundled；L10.3 第 1180 条。填 L0.7 / L3.6 BIP-321 uri not already authorized / not already paid / not already settled 正式三事（255 余量）。255 uri vs authorized bundled unbundling 启动（1211 item 1）。
+
 ## 2026-09-18（续 1327）
 
 - 不变量 1210；语料 C1188；模式 name-the-p2sh13-notwho-bar；反模式 p2sh13-notwho-sold-as-bundled；L10.3 第 1179 条。填 L1.4 / L3.6 BIP-13 address-only not already know-payee / not already identity / not already settled 正式三事（297 余量）。297 p2sh address vs redeem bundled unbundling 完成（1210 item 3）。

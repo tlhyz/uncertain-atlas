@@ -1,3 +1,18 @@
+| A5830 | 记录 | 会与 255 / 181 / 55 / 1211 / 1212 糊成「看见不认识的必选参数就已经能付 interchangeable、就已经确认 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-321 required-param not already payable / not already confirmed / not already settled 正式三事（255 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。255 uri vs authorized bundled unbundling 完成（1213 item 3） |
+| A5831 | 高 | 看见不认识的必选参数 会被写成已经能付 interchangeable / 181 interchangeable | 官方 BIP-321 uri item 3：not already payable / not 181 |
+| A5832 | 高 | 看见打开了回执 会被写成已经确认 interchangeable / 55 interchangeable | 官方 BIP-321 uri item 3：not already confirmed / not 55 |
+| A5833 | 高 | 看见必选回执却是浏览器方案 会被写成已经交差 interchangeable | 官方 BIP-321 uri item 3：not already settled |
+| A5834 | 中 | 怎样造能骗过旧钱包的必选参数会被抄进不确定 | 不抄。不写怎样造能骗过旧钱包的必选参数。不另写 19 节 |
+| A5825 | 记录 | 会与 255 / 174 / 179 / 1211 / 1213 糊成「看见路径没有链上地址就已经没有付款指示 interchangeable、就已经只有这一种付法 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-321 empty-path not already no-instruction / not already only-one / not already settled 正式三事（255 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。255 uri vs authorized bundled unbundling 续（1212 item 2） |
+| A5826 | 高 | 看见路径没有链上地址 会被写成已经没有付款指示 interchangeable / 174 interchangeable | 官方 BIP-321 uri item 2：not already no-instruction / not 174 |
+| A5827 | 高 | 看见路径上有地址 会被写成已经只有这一种付法 interchangeable / 179 interchangeable | 官方 BIP-321 uri item 2：not already only-one / not 179 |
+| A5828 | 高 | 看见查询里另有付款指示 会被写成已经交差 interchangeable | 官方 BIP-321 uri item 2：not already settled |
+| A5829 | 中 | 怎样造能骗过旧钱包的必选参数会被抄进不确定 | 不抄。不写怎样造能骗过旧钱包的必选参数。不另写 19 节 |
+| A5820 | 记录 | 会与 255 / 55 / 290 / 1212 / 1213 糊成「看见付款 URI 就已经授权 interchangeable、就已经付了 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-321 uri not already authorized / not already paid / not already settled 正式三事（255 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。255 uri vs authorized bundled unbundling 启动（1211 item 1） |
+| A5821 | 高 | 看见付款 URI 会被写成已经授权 interchangeable / 55 interchangeable | 官方 BIP-321 uri item 1：not already authorized / not 55 |
+| A5822 | 高 | 看见扫了码 会被写成已经付了 interchangeable / 290 interchangeable | 官方 BIP-321 uri item 1：not already paid / not 290 |
+| A5823 | 高 | 看见链接 会被写成已经交差 interchangeable | 官方 BIP-321 uri item 1：not already settled |
+| A5824 | 中 | 怎样造能骗过旧钱包的必选参数会被抄进不确定 | 不抄。不写怎样造能骗过旧钱包的必选参数。不另写 19 节 |
 | A5815 | 记录 | 会与 297 / 270 / 170 / 1208 / 1209 糊成「看见只有本页这种地址就已经知道付给谁 interchangeable、就已经核过收款人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-13 address-only not already know-payee / not already identity / not already settled 正式三事（297 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。297 p2sh address vs redeem bundled unbundling 完成（1210 item 3） |
 | A5816 | 高 | 看见只有本页这种地址 会被写成已经知道付给谁 interchangeable / 270 interchangeable | 官方 BIP-13 p2sh-address item 3：not already know-payee / not 270 |
 | A5817 | 高 | 看见地址上没有身份 会被写成已经核过收款人 interchangeable / 170 interchangeable | 官方 BIP-13 p2sh-address item 3：not already identity / not 170 |

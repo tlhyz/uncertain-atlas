@@ -1,3 +1,6 @@
+- [`uri321-notreq-sold-as-bundled.md`](uri321-notreq-sold-as-bundled.md) — 必选参数 被写成已经能付 / 已经确认 / 已经交差（不变量 1213）
+- [`uri321-notempty-sold-as-bundled.md`](uri321-notempty-sold-as-bundled.md) — 路径空 被写成已经没有付款指示 / 已经只有这一种付法 / 已经交差（不变量 1212）
+- [`uri321-notauth-sold-as-bundled.md`](uri321-notauth-sold-as-bundled.md) — 付款 URI 被写成已经授权 / 已经付了 / 已经交差（不变量 1211）
 - [`p2sh13-notwho-sold-as-bundled.md`](p2sh13-notwho-sold-as-bundled.md) — 只有地址 被写成已经知道付给谁 / 已经核过收款人 / 已经交差（不变量 1210）
 - [`p2sh13-notpaid-sold-as-bundled.md`](p2sh13-notpaid-sold-as-bundled.md) — 旧软件报无效 被写成已经付过 / 已经走了 16 / 已经交差（不变量 1209）
 - [`p2sh13-not16-sold-as-bundled.md`](p2sh13-not16-sold-as-bundled.md) — 本页这种地址 被写成已经是赎回脚本 / 已经是 16 / 已经交差（不变量 1208）

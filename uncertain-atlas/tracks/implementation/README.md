@@ -902,6 +902,9 @@
 - [`worked-example-enc38-notmint-vs-bundled.md`](worked-example-enc38-notmint-vs-bundled.md) — 厂家代生成≠already redeemable/same-path/settled；≠296 bundled（不变量 1206）
 - [`worked-example-enc38-notuse-vs-bundled.md`](worked-example-enc38-notuse-vs-bundled.md) — 加密记录≠already private-key/usable/settled；≠296 bundled（不变量 1205）
 - [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）
+- [`../lifecycle/worked-example-uri321-notreq-vs-bundled.md`](../lifecycle/worked-example-uri321-notreq-vs-bundled.md) — 必选参数≠already payable/confirmed/settled；≠255 bundled（不变量 1213）
+- [`../lifecycle/worked-example-uri321-notempty-vs-bundled.md`](../lifecycle/worked-example-uri321-notempty-vs-bundled.md) — 路径空≠already no-instruction/only-one/settled；≠255 bundled（不变量 1212）
+- [`../lifecycle/worked-example-uri321-notauth-vs-bundled.md`](../lifecycle/worked-example-uri321-notauth-vs-bundled.md) — 付款URI≠already authorized/paid/settled；≠255 bundled（不变量 1211）
 - [`worked-example-p2sh13-notwho-vs-bundled.md`](worked-example-p2sh13-notwho-vs-bundled.md) — 只有地址≠already know-payee/identity/settled；≠297 bundled（不变量 1210）
 - [`worked-example-p2sh13-notpaid-vs-bundled.md`](worked-example-p2sh13-notpaid-vs-bundled.md) — 旧软件报无效≠already paid/16/settled；≠297 bundled（不变量 1209）
 - [`worked-example-p2sh13-not16-vs-bundled.md`](worked-example-p2sh13-not16-vs-bundled.md) — 本页这种地址≠already redeem-script/16/settled；≠297 bundled（不变量 1208）

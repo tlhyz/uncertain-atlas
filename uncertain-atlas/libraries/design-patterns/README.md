@@ -1,3 +1,6 @@
+- [`name-the-uri321-notreq-bar.md`](name-the-uri321-notreq-bar.md) — BIP-321 required-param not already payable / not already confirmed / not already settled 正式三事（255 余量）（不变量 1213）
+- [`name-the-uri321-notempty-bar.md`](name-the-uri321-notempty-bar.md) — BIP-321 empty-path not already no-instruction / not already only-one / not already settled 正式三事（255 余量）（不变量 1212）
+- [`name-the-uri321-notauth-bar.md`](name-the-uri321-notauth-bar.md) — BIP-321 uri not already authorized / not already paid / not already settled 正式三事（255 余量）（不变量 1211）
 - [`name-the-p2sh13-notwho-bar.md`](name-the-p2sh13-notwho-bar.md) — BIP-13 address-only not already know-payee / not already identity / not already settled 正式三事（297 余量）（不变量 1210）
 - [`name-the-p2sh13-notpaid-bar.md`](name-the-p2sh13-notpaid-bar.md) — BIP-13 old-reject not already paid / not already 16 / not already settled 正式三事（297 余量）（不变量 1209）
 - [`name-the-p2sh13-not16-bar.md`](name-the-p2sh13-not16-bar.md) — BIP-13 this-address not already redeem-script / not already 16 / not already settled 正式三事（297 余量）（不变量 1208）
