@@ -1,3 +1,6 @@
+- [`name-the-wit144-notold-bar.md`](name-the-wit144-notold-bar.md) — BIP-144 old-inv not already no-wit / not already wtxid-ann / not already verified 正式三事（251 余量）（不变量 1258）
+- [`name-the-wit144-notsend-bar.md`](name-the-wit144-notsend-bar.md) — BIP-144 service-bit not already sending / not already have / not already old-retired 正式三事（251 余量）（不变量 1257）
+- [`name-the-wit144-nothave-bar.md`](name-the-wit144-nothave-bar.md) — BIP-144 witness-ser not already have / not already accepted / not already no-capability 正式三事（251 余量）（不变量 1256）
 - [`name-the-lim159-notcut-bar.md`](name-the-lim159-notcut-bar.md) — BIP-159 served-recent not already leaked / not already ibd-done / not already light-checked 正式三事（250 余量）（不变量 1255）
 - [`name-the-lim159-notprune-bar.md`](name-the-lim159-notprune-bar.md) — BIP-159 limited-bit not already pruned / not already same-service / not already unusable 正式三事（250 余量）（不变量 1254）
 - [`name-the-lim159-notarch-bar.md`](name-the-lim159-notarch-bar.md) — BIP-159 limited-bit not already any-old / not already genesis-body / not already archive 正式三事（250 余量）（不变量 1253）

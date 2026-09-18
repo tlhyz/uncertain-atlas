@@ -1,3 +1,15 @@
+## 2026-09-18（续 1375）
+
+- 不变量 1258；语料 C1236；模式 name-the-wit144-notold-bar；反模式 wit144-notold-sold-as-bundled；L10.3 第 1227 条。填 L3.4 / L3.7 / L9.1 BIP-144 old-inv not already no-wit / not already wtxid-ann / not already verified 正式三事（251 余量）。251 witness vs have bundled unbundling 完成（1258 item 3）。
+
+## 2026-09-18（续 1374）
+
+- 不变量 1257；语料 C1235；模式 name-the-wit144-notsend-bar；反模式 wit144-notsend-sold-as-bundled；L10.3 第 1226 条。填 L3.4 / L3.7 / L9.1 BIP-144 service-bit not already sending / not already have / not already old-retired 正式三事（251 余量）。251 witness vs have bundled unbundling 续（1257 item 2）。
+
+## 2026-09-18（续 1373）
+
+- 不变量 1256；语料 C1234；模式 name-the-wit144-nothave-bar；反模式 wit144-nothave-sold-as-bundled；L10.3 第 1225 条。填 L3.4 / L3.7 / L9.1 BIP-144 witness-ser not already have / not already accepted / not already no-capability 正式三事（251 余量）。251 witness vs have bundled unbundling 启动（1256 item 1）。
+
 ## 2026-09-18（续 1372）
 
 - 不变量 1255；语料 C1233；模式 name-the-lim159-notcut-bar；反模式 lim159-notcut-sold-as-bundled；L10.3 第 1224 条。填 L3.5 / L9.1 / L9.3 BIP-159 served-recent not already leaked / not already ibd-done / not already light-checked 正式三事（250 余量）。250 limited vs archive bundled unbundling 完成（1255 item 3）。

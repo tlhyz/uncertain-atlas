@@ -1,3 +1,6 @@
+- [`wit144-notold-sold-as-bundled.md`](wit144-notold-sold-as-bundled.md) — 库存通告仍用旧类型 被写成线上已经没有见证 / 按带见证类型索取就已经按 wtxid 通告 / 回了交易就已经验完（不变量 1258）
+- [`wit144-notsend-sold-as-bundled.md`](wit144-notsend-sold-as-bundled.md) — 开了能提供见证那一位 被写成已经在传 / 已经在请求方手里 / 旧序列化已经退役（不变量 1257）
+- [`wit144-nothave-sold-as-bundled.md`](wit144-nothave-sold-as-bundled.md) — 带见证的线上序列化 被写成已经有见证 / 已经收下 / 仍用旧序列化就已经没有见证能力（不变量 1256）
 - [`lim159-notcut-sold-as-bundled.md`](lim159-notcut-sold-as-bundled.md) — 服了最近一块 被写成已经暴露剪点 / 连上有限位就已经能从创世拉完 / 地址表有这一位就已经核过（不变量 1255）
 - [`lim159-notprune-sold-as-bundled.md`](lim159-notprune-sold-as-bundled.md) — 有限服务位 被写成已经剪枝 / 两位都开就已经同一种服务 / 没开完整链位就已经不可用（不变量 1254）
 - [`lim159-notarch-sold-as-bundled.md`](lim159-notarch-sold-as-bundled.md) — 有限服务位 被写成已经能服任意旧块 / 能转发新块就已经能服创世 / 有限位就已经是归档（不变量 1253）

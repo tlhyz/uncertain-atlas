@@ -1,3 +1,18 @@
+| A6055 | 记录 | 会与 251 / 248 / 247 / 1256 / 1257 糊成「看见库存通告仍用旧类型就已经没有见证 interchangeable、就已经按 wtxid 通告 interchangeable、就已经验完 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L3.7 / L9.1 BIP-144 old-inv not already no-wit / not already wtxid-ann / not already verified 正式三事（251 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。251 witness vs have bundled unbundling 完成（1258 item 3） |
+| A6056 | 高 | 看见库存通告仍用旧类型 会被写成线上已经没有见证 interchangeable / 248 interchangeable | 官方 BIP-144 witness item 3：not already no-wit / not 248 |
+| A6057 | 高 | 看见按带见证类型去索取 会被写成已经按 wtxid 通告 interchangeable / 247 interchangeable | 官方 BIP-144 witness item 3：not already not already wtxid-ann / not 247 |
+| A6058 | 高 | 看见回了交易消息 会被写成已经验完 interchangeable | 官方 BIP-144 witness item 3：not already settled |
+| A6059 | 中 | 怎样拼能骗过旧解析器的字节、怎样用索取类型重放、怎样按服务位认出节点会被抄进不确定 | 不抄。不写 怎样拼能骗过旧解析器的字节、怎样用索取类型重放、怎样按服务位认出节点。不另写 19 节 |
+| A6050 | 记录 | 会与 251 / 250 / 248 / 1256 / 1258 糊成「看见开了能提供见证那一位就已经在传 interchangeable、就已经在请求方手里 interchangeable、就已经退役旧序列化 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L3.7 / L9.1 BIP-144 service-bit not already sending / not already have / not already old-retired 正式三事（251 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。251 witness vs have bundled unbundling 续（1257 item 2） |
+| A6051 | 高 | 看见开了能提供见证那一位 会被写成已经在传 interchangeable / 250 interchangeable | 官方 BIP-144 witness item 2：not already sending / not 250 |
+| A6052 | 高 | 看见开了这一位 会被写成见证已经在请求方手里 interchangeable / 248 interchangeable | 官方 BIP-144 witness item 2：not already not already have / not 248 |
+| A6053 | 高 | 看见开了这一位 会被写成旧序列化已经退役 interchangeable | 官方 BIP-144 witness item 2：not already settled |
+| A6054 | 中 | 怎样拼能骗过旧解析器的字节、怎样用索取类型重放、怎样按服务位认出节点会被抄进不确定 | 不抄。不写 怎样拼能骗过旧解析器的字节、怎样用索取类型重放、怎样按服务位认出节点。不另写 19 节 |
+| A6045 | 记录 | 会与 251 / 152 / 248 / 1257 / 1258 糊成「看见带见证的线上序列化就已经有见证 interchangeable、就已经收下 interchangeable、就已经没有见证能力 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L3.7 / L9.1 BIP-144 witness-ser not already have / not already accepted / not already no-capability 正式三事（251 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。251 witness vs have bundled unbundling 启动（1256 item 1） |
+| A6046 | 高 | 看见带见证的线上序列化 会被写成已经有见证 interchangeable / 152 interchangeable | 官方 BIP-144 witness item 1：not already have / not 152 |
+| A6047 | 高 | 看见带见证的线上序列化 会被写成已经收下 interchangeable / 248 interchangeable | 官方 BIP-144 witness item 1：not already not already accepted / not 248 |
+| A6048 | 高 | 看见仍用旧序列化 会被写成已经没有见证能力 interchangeable | 官方 BIP-144 witness item 1：not already settled |
+| A6049 | 中 | 怎样拼能骗过旧解析器的字节、怎样用索取类型重放、怎样按服务位认出节点会被抄进不确定 | 不抄。不写 怎样拼能骗过旧解析器的字节、怎样用索取类型重放、怎样按服务位认出节点。不另写 19 节 |
 | A6040 | 记录 | 会与 250 / 243 / 25 / 1253 / 1254 糊成「看见服了最近一块就已经暴露剪点 interchangeable、就已经能从创世拉完 interchangeable、就已经核过服务位 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.1 / L9.3 BIP-159 served-recent not already leaked / not already ibd-done / not already light-checked 正式三事（250 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。250 limited vs archive bundled unbundling 完成（1255 item 3） |
 | A6041 | 高 | 看见服了最近一块 会被写成已经暴露了剪到哪 interchangeable / 243 interchangeable | 官方 BIP-159 limited item 3：not already leaked / not 243 |
 | A6042 | 高 | 看见连上了有限服务位 会被写成初始同步已经能靠它从创世拉完 interchangeable / 25 interchangeable | 官方 BIP-159 limited item 3：not already not already ibd-done / not 25 |

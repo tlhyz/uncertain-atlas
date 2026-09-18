@@ -38,7 +38,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见带见证的线上序列化就已经有见证 / 就已经改口通告 / 就已经退役旧格式」。若对照隔离见证的对等服务，必须分开线上序列化、服务位、索取类型。不要把通告仍用旧类型写成见证已经不在网上。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见带见证的线上序列化就已经有见证 / 就已经改口通告 / 就已经退役旧格式」。若对照隔离见证的对等服务，必须分开线上序列化、服务位、索取类型。不要把通告仍用旧类型写成见证已经不在网上。251 witness vs have bundled unbundling 完成（1256 item 1 / 1257 item 2 / 1258 item 3）；精读 [`worked-example-wit144-nothave-vs-bundled.md`](worked-example-wit144-nothave-vs-bundled.md)（不变量 1256 item 1）、[`worked-example-wit144-notsend-vs-bundled.md`](worked-example-wit144-notsend-vs-bundled.md)（不变量 1257 item 2）、[`worked-example-wit144-notold-vs-bundled.md`](worked-example-wit144-notold-vs-bundled.md)（不变量 1258 item 3）。
 
 ## 本页不抄
 
