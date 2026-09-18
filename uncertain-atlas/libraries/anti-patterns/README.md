@@ -1,3 +1,6 @@
+- [`fend-nottimeout-sold-as-bundled.md`](fend-nottimeout-sold-as-bundled.md) — next_block_delay 被写成已经是本地 timeout_commit / 已经是块间隔 / 已经像 app_hash 那样必须确定（不变量 1075）
+- [`fend-notapphash-sold-as-bundled.md`](fend-notapphash-sold-as-bundled.md) — app_hash 被写成已经写进下一块头 / 已经是本头 AppHash / 已经只是索引（不变量 1074）
+- [`fend-notheffect-sold-as-bundled.md`](fend-notheffect-sold-as-bundled.md) — cparam 被写成已经在块 H 生效 / 已经在 H+1 换人 / 已经只改这一项（不变量 1073）
 - [`finbar-notrotate-sold-as-bundled.md`](finbar-notrotate-sold-as-bundled.md) — validator_updates 被写成已经在 H+1 换人 / 已经改了集合 / 已经必须回四列（不变量 1072）
 - [`finbar-notchktx-sold-as-bundled.md`](finbar-notchktx-sold-as-bundled.md) — tx_results 被写成已经是 CheckTx 回包 / 已经印进 LastResultsHash / 已经只是记日志（不变量 1071）
 - [`finbar-notheader-sold-as-bundled.md`](finbar-notheader-sold-as-bundled.md) — events 被写成已经印进本头 / 已经交给引擎 / 已经必须确定（不变量 1070）

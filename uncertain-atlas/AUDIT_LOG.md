@@ -1,3 +1,18 @@
+| A5135 | 记录 | 会与 432 / 52 / 1073 / 1074 糊成「看见 FinalizeBlockResponse.next_block_delay 就已经是本地 timeout_commit interchangeable、就已经是块间隔 interchangeable、就已经像 app_hash 那样必须确定 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse.next_block_delay not already timeout-commit / not already block-interval / not already must-det 正式三事（432 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。432 finrespend vs params bundled unbundling 完成（1075 item 3） |
+| A5136 | 高 | 看见回了 next_block_delay 会被写成已经是本地 timeout_commit interchangeable / 52 interchangeable | 官方 Finalize 回包末栏 item 3：not already timeout-commit / not 52 |
+| A5137 | 高 | 看见能指 post-commit 等待 会被写成已经是块间隔 interchangeable | 官方 Finalize 回包末栏 item 3：not already block-interval |
+| A5138 | 高 | 看见标成非确定 会被写成已经像 app_hash 那样必须确定 interchangeable | 官方 Finalize 回包末栏 item 3：not already must-det |
+| A5139 | 中 | 怎样写回包末栏会被抄进不确定 | 不抄。不写怎样写 Finalize 回包末栏。不另写 19 节 |
+| A5130 | 记录 | 会与 432 / 404 / 431 / 1073 / 1075 糊成「看见 FinalizeBlockResponse.app_hash 就已经写进下一块头 interchangeable、就已经是本头 AppHash interchangeable、就已经只是索引 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse.app_hash not already next-header / not already this-header / not already index-only 正式三事（432 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。432 finrespend vs params bundled unbundling 续（1074 item 2） |
+| A5131 | 高 | 看见回了 app_hash 会被写成已经写进下一块头 interchangeable / 404 interchangeable | 官方 Finalize 回包末栏 item 2：not already next-header / not 404 |
+| A5132 | 高 | 看见有默克尔根 会被写成已经是本头 AppHash interchangeable | 官方 Finalize 回包末栏 item 2：not already this-header |
+| A5133 | 高 | 看见必须确定 会被写成已经只是索引 interchangeable | 官方 Finalize 回包末栏 item 2：not already index-only |
+| A5134 | 中 | 怎样写回包末栏会被抄进不确定 | 不抄。不写怎样写 Finalize 回包末栏。不另写 19 节 |
+| A5125 | 记录 | 会与 432 / 319 / 35 / 1074 / 1075 糊成「看见 FinalizeBlockResponse.consensus_param_updates 就已经在块 H 生效 interchangeable、就已经在 H+1 换人 interchangeable、就已经只改这一项 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse.consensus_param_updates not already h-effective / not already h1-rotate / not already one-field 正式三事（432 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。432 finrespend vs params bundled unbundling 启动（1073 item 1） |
+| A5126 | 高 | 看见回了 consensus_param_updates 会被写成已经在块 H 生效 interchangeable / 319 interchangeable | 官方 Finalize 回包末栏 item 1：not already h-effective / not 319 |
+| A5127 | 高 | 看见能指 H+1 会被写成已经在 H+1 换人 interchangeable / 35 interchangeable | 官方 Finalize 回包末栏 item 1：not already h1-rotate / not 35 |
+| A5128 | 高 | 看见有 ConsensusParams 会被写成已经只改这一项 interchangeable | 官方 Finalize 回包末栏 item 1：not already one-field |
+| A5129 | 中 | 怎样写回包末栏会被抄进不确定 | 不抄。不写怎样写 Finalize 回包末栏。不另写 19 节 |
 | A5120 | 记录 | 会与 431 / 35 / 1070 / 1071 糊成「看见 FinalizeBlockResponse.validator_updates 就已经在 H+1 换人 interchangeable、就已经改了集合 interchangeable、就已经必须回四列 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockResponse.validator_updates not already h1-rotate / not already set-changed / not already four-col 正式三事（431 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。431 finrespbar vs header bundled unbundling 完成（1072 item 3） |
 | A5121 | 高 | 看见回了 validator_updates 会被写成已经在 H+1 换人 interchangeable / 35 interchangeable | 官方 Finalize 回包栏 item 3：not already h1-rotate / not 35 |
 | A5122 | 高 | 看见有 ValidatorUpdate 会被写成已经改了集合 interchangeable | 官方 Finalize 回包栏 item 3：not already set-changed |

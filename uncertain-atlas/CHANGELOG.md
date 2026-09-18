@@ -1,3 +1,15 @@
+## 2026-09-18（续 1192）
+
+- 不变量 1075；语料 C1053；模式 name-the-fend-nottimeout-bar；反模式 fend-nottimeout-sold-as-bundled；L10.3 第 1044 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse.next_block_delay not already timeout-commit / not already block-interval / not already must-det 正式三事（432 余量）。432 finrespend vs params bundled unbundling 完成（1075 item 3）。
+
+## 2026-09-18（续 1191）
+
+- 不变量 1074；语料 C1052；模式 name-the-fend-notapphash-bar；反模式 fend-notapphash-sold-as-bundled；L10.3 第 1043 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse.app_hash not already next-header / not already this-header / not already index-only 正式三事（432 余量）。432 finrespend vs params bundled unbundling 续（1074 item 2）。
+
+## 2026-09-18（续 1190）
+
+- 不变量 1073；语料 C1051；模式 name-the-fend-notheffect-bar；反模式 fend-notheffect-sold-as-bundled；L10.3 第 1042 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse.consensus_param_updates not already h-effective / not already h1-rotate / not already one-field 正式三事（432 余量）。432 finrespend vs params bundled unbundling 启动（1073 item 1）。
+
 ## 2026-09-18（续 1189）
 
 - 不变量 1072；语料 C1050；模式 name-the-finbar-notrotate-bar；反模式 finbar-notrotate-sold-as-bundled；L10.3 第 1041 条。填 L4.4 / CometBFT 档案 FinalizeBlockResponse.validator_updates not already h1-rotate / not already set-changed / not already four-col 正式三事（431 余量）。431 finrespbar vs header bundled unbundling 完成（1072 item 3）。

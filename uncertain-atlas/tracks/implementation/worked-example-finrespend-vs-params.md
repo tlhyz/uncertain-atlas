@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 Finalize 回包末栏就已经在块 H 生效、已经写进下一块头、已经是本地 timeout_commit」，必须分开 FinalizeBlockResponse.consensus_param_updates 是对 gas、大小和其它共识相关参数的改动是不是已经在块 H 生效、FinalizeBlockResponse.app_hash 是应用状态默克尔根是不是已经写进下一块头的 AppHash、FinalizeBlockResponse.next_block_delay 是这块 Commit 后再开下一高的等待是不是已经是本地 timeout_commit。可以跳过「看见回了 Finalize 回包末栏就已经在块 H 生效」。不要另写怎样写 Finalize 回包末栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 Finalize 回包末栏就已经在块 H 生效、已经写进下一块头、已经是本地 timeout_commit」，必须分开 FinalizeBlockResponse.consensus_param_updates 是对 gas、大小和其它共识相关参数的改动是不是已经在块 H 生效、FinalizeBlockResponse.app_hash 是应用状态默克尔根是不是已经写进下一块头的 AppHash、FinalizeBlockResponse.next_block_delay 是这块 Commit 后再开下一高的等待是不是已经是本地 timeout_commit。可以跳过「看见回了 Finalize 回包末栏就已经在块 H 生效」。不要另写怎样写 Finalize 回包末栏。432 finrespend vs params bundled unbundling 完成（1073 item 1 / 1074 item 2 / 1075 item 3）；精读 [`worked-example-fend-notheffect-vs-bundled.md`](worked-example-fend-notheffect-vs-bundled.md)（不变量 1073 item 1）。
 
 ## 本页不抄
 
