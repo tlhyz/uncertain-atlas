@@ -1,3 +1,7 @@
+## 2026-09-18（续 807）
+
+- 不变量 690；语料 C667；模式 name-the-commitlock-notunlocked-bar；反模式 commitlock-notunlocked-sold-as-bundled；L10.3 第 659 条。填 L4.4 / CometBFT 档案 lock mempool before Commit not already unlocked / not already sync done / not Commit return already released 正式三事（310 余量） / 实现表 / 05b / 共识专题 / 停链面地图。310 commitlock vs RPC bundled unbundling 续（690 item 2）。
+
 ## 2026-09-18（续 806）
 
 - 不变量 689；语料 C666；模式 name-the-commitlock-notrpcsafe-bar；反模式 commitlock-notrpcsafe-sold-as-bundled；L10.3 第 658 条。填 L4.4 / CometBFT 档案 default global lock not already RPC safe / not already no concurrency / not already changed lock 正式三事（310 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。310 commitlock vs RPC bundled unbundling 启动（689 item 1）。
