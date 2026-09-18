@@ -81,7 +81,7 @@
 | 经济 | 不把「只读」写成已经便宜或已经不能重入 |
 
 **推断：** 产品句若只写「支持只读调用」，读者会把编译器的 `view` 听成已经开了静态旗，或把没转账听成已经只读。  
-**建议：** 第一版必须分开静态帧和高级语言只读。不要发明「没转账 = 已经不能改状态」。不要抄操作码号。不要把 214 写成 140。不要把 CALLCODE 例外写成产品功能。
+**建议：** 第一版必须分开静态帧和高级语言只读。可以跳过「看见 view 就已经开了静态旗」。178 STATICCALL flag vs view bundled unbundling 完成（1383 item 1 / 1384 item 2 / 1385 item 3）；精读 [`worked-example-stcall-notview-vs-bundled.md`](worked-example-stcall-notview-vs-bundled.md)（不变量 1383 item 1）、[`worked-example-stcall-notxfer-vs-bundled.md`](worked-example-stcall-notxfer-vs-bundled.md)（不变量 1384 item 2）、[`worked-example-stcall-notchg-vs-bundled.md`](worked-example-stcall-notchg-vs-bundled.md)（不变量 1385 item 3）。不要发明「没转账 = 已经不能改状态」。不要抄操作码号。不要把 214 写成 140。不要把 CALLCODE 例外写成产品功能。
 
 ---
 

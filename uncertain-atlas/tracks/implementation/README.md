@@ -818,6 +818,9 @@
 - [`../state-models/worked-example-delegation-vs-code.md`](../state-models/worked-example-delegation-vs-code.md) — 看见授权名单 ≠ 已经委托成功；委托指示 ≠ 已经是目标代码；7702 ≠ 3607 ≠ 3541 ≠ 2718（不变量 190）
 - [`worked-example-listed-vs-accessed.md`](worked-example-listed-vs-accessed.md) — 列出地址或槽 ≠ 已经访问过；列表外 ≠ 已经不能碰；2930 ≠ 2718 ≠ 1559（不变量 168）
 - [`worked-example-cold-vs-warm.md`](worked-example-cold-vs-warm.md) — 本笔第一次碰 ≠ 已经热；本笔再碰 ≠ 又是冷访问；2929 ≠ 2930 ≠ 墙钟（不变量 169）
+- [`worked-example-cbase-notacc-vs-bundled.md`](worked-example-cbase-notacc-vs-bundled.md) — 出块者开跑已热≠already 已访问/2929第一次/187 bundled；≠187 bundled（不变量 1446）
+- [`worked-example-cbase-notpay-vs-bundled.md`](worked-example-cbase-notpay-vs-bundled.md) — 开跑已热≠already 已付钱/1559/158；≠187 bundled（不变量 1447）
+- [`worked-example-cbase-not169-vs-bundled.md`](worked-example-cbase-not169-vs-bundled.md) — 开跑已热≠already 169预填含出块者/2930/163；≠187 bundled（不变量 1448）
 - [`worked-example-coinbase-vs-prefill.md`](worked-example-coinbase-vs-prefill.md) — 出块者地址开跑时已在热集合 ≠ 已经访问过；开跑已热 ≠ 已经付给出块者；开跑已热 ≠ 169 那几个预填已经覆盖出块者；3651 ≠ 2929 ≠ 2930 ≠ 1559（不变量 187）
 - [`worked-example-versionbit-vs-active.md`](worked-example-versionbit-vs-active.md) — 版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活；9 ≠ 34 ≠ 被部署的那条规则（不变量 171）
 - [`worked-example-valid-vs-der.md`](worked-example-valid-vs-der.md) — ECDSA 验得过 ≠ 已经是严格 DER；库收下 ≠ 共识已经接受；66 ≠ 62 ≠ 146 ≠ 34（不变量 172）
@@ -975,6 +978,9 @@
 - [`worked-example-xpub-vs-spendable.md`](worked-example-xpub-vs-spendable.md) — 看见扩展公钥 ≠ 已经能花；硬化 ≠ 已经能从公钥推出；32 ≠ 173 ≠ 174 ≠ 350（不变量 182）
 - [`worked-example-mnemonic-vs-seed.md`](worked-example-mnemonic-vs-seed.md) — 看见助记词 ≠ 已经是二进制种子；口令不同 ≠ 已经非法；39 ≠ 32 ≠ 173 ≠ 380（不变量 183）
 - [`worked-example-descriptor-vs-keys.md`](worked-example-descriptor-vs-keys.md) — 看见私钥或助记词备份 ≠ 已经知道该看哪种输出脚本；看见描述符 ≠ 已经是地址；380 ≠ 39 ≠ 32 ≠ 173（不变量 184）
+- [`worked-example-icode-not170-vs-bundled.md`](worked-example-icode-not170-vs-bundled.md) — initcode超界≠already 部署代码超界/1014/176 bundled；≠176 bundled（不变量 1437）
+- [`worked-example-icode-nottx-vs-bundled.md`](worked-example-icode-nottx-vs-bundled.md) — 创建交易超界≠already CREATE失败/2681/已进EVM；≠176 bundled（不变量 1438）
+- [`worked-example-icode-notrun-vs-bundled.md`](worked-example-icode-notrun-vs-bundled.md) — 按字分析费≠already 跑完initcode/CREATE2哈希费/已创建；≠176 bundled（不变量 1439）
 - [`worked-example-initcode-vs-runtime.md`](worked-example-initcode-vs-runtime.md) — initcode 超界 ≠ 已经是部署代码超界；按字分析费 ≠ 已经跑完构造；3860 ≠ 170 ≠ 1014 ≠ 2681（不变量 176）
 - [`worked-example-calldata-floor-vs-execution.md`](worked-example-calldata-floor-vs-execution.md) — 看见 calldata 地板 ≠ 已经改了执行气；数据为主更贵 ≠ 已经让普通转账更贵；预留地板气限 ≠ 已经烧到地板；7623 ≠ 4844 ≠ 1559 ≠ 2028（不变量 197）
 - [`worked-example-rlp-cap-vs-gas.md`](worked-example-rlp-cap-vs-gas.md) — 看见 RLP 编码硬帽 ≠ 已经改了气限；共识层流言不传 ≠ 已经让执行层非法；给信标块留边 ≠ 已经并成一份编码；7934 ≠ 7623 ≠ 1559 ≠ 96（不变量 202）
@@ -984,24 +990,114 @@
 - [`worked-example-config-rpc-vs-aligned.md`](worked-example-config-rpc-vs-aligned.md) — 看见分叉配置 RPC 对上了 ≠ 已经过多客户端同根；看见 current / next / last ≠ 已经改了共识；RPC 绿 ≠ 对等节点没有撒谎；7910 ≠ 149 ≠ 209 ≠ 207（不变量 210）
 - [`worked-example-default-gas-vs-cap.md`](worked-example-default-gas-vs-cap.md) — 看见客户端默认气限 ≠ 已经是协议帽；看见绑到硬分叉发布 ≠ 已经改了共识；看见默认配置齐了 ≠ 已经是单笔气帽；7935 ≠ 203 ≠ 202 ≠ 96（不变量 211）
 - [`worked-example-block-list-vs-parallel.md`](worked-example-block-list-vs-parallel.md) — 看见块级访问名单 ≠ 已经并行跑完；看见强制名单 ≠ 已经是 2930；看见事后状态差 ≠ 已经不跑交易；7928 ≠ 168 ≠ 143 ≠ 122（不变量 212）
+- [`worked-example-mcpy-notid-vs-bundled.md`](worked-example-mcpy-notid-vs-bundled.md) — 内存拷贝指令≠already 身份预编译/2929/216 bundled；≠216 bundled（不变量 1410）
+- [`worked-example-mcpy-notbuf-vs-bundled.md`](worked-example-mcpy-notbuf-vs-bundled.md) — 像用了中间缓冲≠already 必须真分配/已经是DoS/208；≠216 bundled（不变量 1411）
+- [`worked-example-mcpy-notcd-vs-bundled.md`](worked-example-mcpy-notcd-vs-bundled.md) — 能重叠拷≠already calldata拷/已经改了CALL/169；≠216 bundled（不变量 1412）
 - [`worked-example-mcopy-vs-identity.md`](worked-example-mcopy-vs-identity.md) — 看见内存拷贝指令 ≠ 已经是身份预编译；看见「像用了中间缓冲」 ≠ 已经必须真分配一块缓冲；看见能重叠拷 ≠ 已经是 calldata / 返回数据拷；5656 ≠ 2929 ≠ 208（不变量 216）
+- [`worked-example-psh0-notimm-vs-bundled.md`](worked-example-psh0-notimm-vs-bundled.md) — 压零指令≠already 带立即数的压0/216/217 bundled；≠217 bundled（不变量 1407）
+- [`worked-example-psh0-notjump-vs-bundled.md`](worked-example-psh0-notjump-vs-bundled.md) — 没有立即数≠already 改了跳转分析/共用实现/5656；≠217 bundled（不变量 1408）
+- [`worked-example-psh0-notold-vs-bundled.md`](worked-example-psh0-notold-vs-bundled.md) — 旧字节碰巧用了这个码≠already 行为不变/已经是常数零/208；≠217 bundled（不变量 1409）
 - [`worked-example-push0-vs-push1.md`](worked-example-push0-vs-push1.md) — 看见压零指令 ≠ 已经是带立即数的压 0；看见没有立即数 ≠ 已经改了跳转目的分析；看见已经部署碰巧用了这个字节 ≠ 行为已经不变；3855 ≠ 5656 ≠ 216（不变量 217）
+- [`worked-example-bfee-notmkt-vs-bundled.md`](worked-example-bfee-notmkt-vs-bundled.md) — 基础费指令≠already 改了费用市场/158/218 bundled；≠218 bundled（不变量 1398）
+- [`worked-example-bfee-notprop-vs-bundled.md`](worked-example-bfee-notprop-vs-bundled.md) — 能读本块基础费≠already 给了出块者/blob基础费/219；≠218 bundled（不变量 1399）
+- [`worked-example-bfee-nothdr-vs-bundled.md`](worked-example-bfee-nothdr-vs-bundled.md) — 跑前就有这个数≠already 改了头/气期货/加长挑战期；≠218 bundled（不变量 1400）
 - [`worked-example-basefee-opcode-vs-market.md`](worked-example-basefee-opcode-vs-market.md) — 看见基础费指令 ≠ 已经改了费用市场；看见能读本块基础费 ≠ 已经给了出块者；看见跑 EVM 前就已经有这个数 ≠ 已经改了头怎么算；3198 ≠ 1559 ≠ 158（不变量 218）
+- [`worked-example-bbfee-not3198-vs-bundled.md`](worked-example-bbfee-not3198-vs-bundled.md) — blob基础费指令≠already 执行层基础费/218/219 bundled；≠219 bundled（不变量 1401）
+- [`worked-example-bbfee-notone-vs-bundled.md`](worked-example-bbfee-notone-vs-bundled.md) — 能读本块blob基础费≠already 并成一套气/145/201；≠219 bundled（不变量 1402）
+- [`worked-example-bbfee-not4844-vs-bundled.md`](worked-example-bbfee-not4844-vs-bundled.md) — 跑前就有这个数≠already 改了4844/改了市场/7918底价；≠219 bundled（不变量 1403）
 - [`worked-example-blobbasefee-vs-basefee.md`](worked-example-blobbasefee-vs-basefee.md) — 看见 blob 基础费指令 ≠ 已经是执行层基础费指令；看见能读本块 blob 基础费 ≠ 已经并成一套气；看见跑 EVM 前就已经有这个数 ≠ 已经改了 4844 日程；7516 ≠ 3198 ≠ 218 ≠ 4844（不变量 219）
+- [`worked-example-chid-not155-vs-bundled.md`](worked-example-chid-not155-vs-bundled.md) — 链号指令≠already 签进哈希/JSON chainId/220 bundled；≠220 bundled（不变量 1395）
+- [`worked-example-chid-nottx-vs-bundled.md`](worked-example-chid-nottx-vs-bundled.md) — 返回配置链号≠already 这笔带了155/默认值/161；≠220 bundled（不变量 1396）
+- [`worked-example-chid-notfork-vs-bundled.md`](worked-example-chid-notfork-vs-bundled.md) — 编译期写死≠already 分叉后仍安全/712域/已处理好分裂；≠220 bundled（不变量 1397）
 - [`worked-example-chainid-opcode-vs-signed.md`](worked-example-chainid-opcode-vs-signed.md) — 看见链号指令 ≠ 已经是签进哈希的链号；看见指令返回配置链号 ≠ 已经是这笔交易带了 EIP-155 标识；看见编译期写死的链号 ≠ 已经在硬分叉后仍安全；1344 ≠ 155 ≠ 161 ≠ 712（不变量 220）
+- [`worked-example-xhash-notsee-vs-bundled.md`](worked-example-xhash-notsee-vs-bundled.md) — 代码哈希指令≠already 看见代码/整份拷/221 bundled；≠221 bundled（不变量 1392）
+- [`worked-example-xhash-notzero-vs-bundled.md`](worked-example-xhash-notzero-vs-bundled.md) — 返回0≠already 没代码账户/空数据哈希/180三灯；≠221 bundled（不变量 1393）
+- [`worked-example-xhash-notmiss-vs-bundled.md`](worked-example-xhash-notmiss-vs-bundled.md) — 空数据哈希≠already 账户不存在/已改161/3607；≠221 bundled（不变量 1394）
 - [`worked-example-extcodehash-vs-copy.md`](worked-example-extcodehash-vs-copy.md) — 看见代码哈希指令 ≠ 已经看见代码本身；看见返回 0 ≠ 已经是没代码的账户；看见空数据哈希 ≠ 已经是账户不存在；1052 ≠ 161 ≠ 180 ≠ 162（不变量 221）
+- [`worked-example-cr2-notcre-vs-bundled.md`](worked-example-cr2-notcre-vs-bundled.md) — 盐创建指令≠already 按序号占址/能和旧式撞上/222 bundled；≠222 bundled（不变量 1389）
+- [`worked-example-cr2-notexist-vs-bundled.md`](worked-example-cr2-notexist-vs-bundled.md) — 算出来的盐地址≠already 创建/已有代码/已付创建费；≠222 bundled（不变量 1390）
+- [`worked-example-cr2-notover-vs-bundled.md`](worked-example-cr2-notover-vs-bundled.md) — 碰撞变得可能≠already 覆盖/684本身/3860分析费；≠222 bundled（不变量 1391）
 - [`worked-example-create2-vs-created.md`](worked-example-create2-vs-created.md) — 看见盐创建指令 ≠ 已经是按发送者加序号占址；看见算出来的盐地址 ≠ 已经创建；看见碰撞变得可能 ≠ 已经覆盖；1014 ≠ 3860 ≠ 176 ≠ 684（不变量 222）
+- [`worked-example-rfnd-notgone-vs-bundled.md`](worked-example-rfnd-notgone-vs-bundled.md) — 退款削减≠already 没有退款/重写2200/223 bundled；≠223 bundled（不变量 1413）
+- [`worked-example-rfnd-not6780-vs-bundled.md`](worked-example-rfnd-not6780-vs-bundled.md) — 去掉自毁退款≠already 改了自毁语义/160/1559；≠223 bundled（不变量 1414）
+- [`worked-example-rfnd-notmid-vs-bundled.md`](worked-example-rfnd-notmid-vs-bundled.md) — 退款计数≠already 执行当中能用/账面气限已封死/158；≠223 bundled（不变量 1415）
 - [`worked-example-refund-vs-gone.md`](worked-example-refund-vs-gone.md) — 看见退款削减 ≠ 已经没有退款；看见去掉自毁退款 ≠ 已经改了自毁语义；看见退款计数 ≠ 已经能在执行当中用；3529 ≠ 2200 ≠ 160 ≠ 158（不变量 223）
+- [`worked-example-depre-notcons-vs-bundled.md`](worked-example-depre-notcons-vs-bundled.md) — 弃用警告≠already 改了共识/6780/224 bundled；≠224 bundled（不变量 1416）
+- [`worked-example-depre-notcli-vs-bundled.md`](worked-example-depre-notcli-vs-bundled.md) — 元层页≠already 改了客户端/已删指令/3529；≠224 bundled（不变量 1417）
+- [`worked-example-depre-notdone-vs-bundled.md`](worked-example-depre-notdone-vs-bundled.md) — 以后可能变≠already 已经变了/160/223；≠224 bundled（不变量 1418）
 - [`worked-example-deprecate-vs-changed.md`](worked-example-deprecate-vs-changed.md) — 看见弃用警告 ≠ 已经改了共识行为；看见本页 ≠ 已经改了客户端；看见「以后可能变」≠ 已经变了；6049 ≠ 6780 ≠ 160 ≠ 223（不变量 224）
+- [`worked-example-nmet-not1153-vs-bundled.md`](worked-example-nmet-not1153-vs-bundled.md) — 净计量≠already 瞬时存储/1153/225 bundled；≠225 bundled（不变量 1419）
+- [`worked-example-nmet-notcur-vs-bundled.md`](worked-example-nmet-notcur-vs-bundled.md) — 原来值当前值新值≠already 只有当前值/第一次写/2929；≠225 bundled（不变量 1420）
+- [`worked-example-nmet-notstip-vs-bundled.md`](worked-example-nmet-notstip-vs-bundled.md) — 津贴帧禁写≠already 津贴里能改槽/1283洞/223；≠225 bundled（不变量 1421）
 - [`worked-example-net-meter-vs-transient.md`](worked-example-net-meter-vs-transient.md) — 看见净计量 ≠ 已经是瞬时存储；看见原来值 / 当前值 / 新值 ≠ 已经只有当前值；看见津贴帧禁写 ≠ 已经能改槽；2200 ≠ 1153 ≠ 159 ≠ 3529 ≠ 223（不变量 225）
+- [`worked-example-cdcut-notzero-vs-bundled.md`](worked-example-cdcut-notzero-vs-bundled.md) — 非零calldata降价≠already 零字节也降/7623/226 bundled；≠226 bundled（不变量 1422）
+- [`worked-example-cdcut-notcap-vs-bundled.md`](worked-example-cdcut-notcap-vs-bundled.md) — 降价≠already 没有块上限/DA已齐/4844；≠226 bundled（不变量 1423）
+- [`worked-example-cdcut-notsafe-vs-bundled.md`](worked-example-cdcut-notsafe-vs-bundled.md) — 降价≠already 不伤延迟/不改安全/197；≠226 bundled（不变量 1424）
 - [`worked-example-calldata-cut-vs-unlimited.md`](worked-example-calldata-cut-vs-unlimited.md) — 看见非零 calldata 降价 ≠ 已经给零字节也降价；看见降价 ≠ 已经没有块大小上限；看见降价 ≠ 已经不伤延迟 / 安全；2028 ≠ 7623 ≠ 197 ≠ 4844 ≠ 145（不变量 226）
+- [`worked-example-mexp-not198-vs-bundled.md`](worked-example-mexp-not198-vs-bundled.md) — 模幂重计价≠already 198公式/7823/227 bundled；≠227 bundled（不变量 1425）
+- [`worked-example-mexp-notiface-vs-bundled.md`](worked-example-mexp-notiface-vs-bundled.md) — 更便宜≠already 改了接口算法/206/换了得数；≠227 bundled（不变量 1426）
+- [`worked-example-mexp-notmin-vs-bundled.md`](worked-example-mexp-notmin-vs-bundled.md) — 最低气价≠already 小输入无限便宜/不伤安全/签名产品；≠227 bundled（不变量 1427）
 - [`worked-example-modexp-price-vs-bound.md`](worked-example-modexp-price-vs-bound.md) — 看见模幂重计价 ≠ 已经是 198 那道复杂度公式；看见更便宜 ≠ 已经改了接口或算法；看见最低气价 ≠ 已经能对小输入无限便宜；2565 ≠ 7823 ≠ 206 ≠ 198 原文（不变量 227）
+- [`worked-example-bn128-notalgo-vs-bundled.md`](worked-example-bn128-notalgo-vs-bundled.md) — bn128降价≠already 换了算法/重新加入预编译/228 bundled；≠228 bundled（不变量 1428）
+- [`worked-example-bn128-notsig-vs-bundled.md`](worked-example-bn128-notsig-vs-bundled.md) — 更便宜≠already 在验签/隐私产品已齐/2537；≠228 bundled（不变量 1429）
+- [`worked-example-bn128-notgen-vs-bundled.md`](worked-example-bn128-notgen-vs-bundled.md) — 本页≠already 通用曲线算术/199/227；≠228 bundled（不变量 1430）
 - [`worked-example-bn128-cut-vs-verify.md`](worked-example-bn128-cut-vs-verify.md) — 看见 bn128 加 / 乘 / 配对降价 ≠ 已经换了算法；看见更便宜 ≠ 已经在验签；看见本页 ≠ 已经是通用曲线算术；1108 ≠ 2537 ≠ 199 ≠ 196/197 原文（不变量 228）
+- [`worked-example-sbal-notbal-vs-bundled.md`](worked-example-sbal-notbal-vs-bundled.md) — 本账户余额指令≠already 按地址查余额/改了语义/229 bundled；≠229 bundled（不变量 1431）
+- [`worked-example-sbal-notself-vs-bundled.md`](worked-example-sbal-notself-vs-bundled.md) — 给自己查余额≠already 按本账户价扣/更便宜BALANCE/1884做完；≠229 bundled（不变量 1432）
+- [`worked-example-sbal-notwarm-vs-bundled.md`](worked-example-sbal-notwarm-vs-bundled.md) — 树依赖涨价≠already 本笔冷热/磁盘O(1)/2929；≠229 bundled（不变量 1433）
 - [`worked-example-selfbalance-vs-balance.md`](worked-example-selfbalance-vs-balance.md) — 看见本账户余额指令 ≠ 已经是按地址查余额；看见给自己查余额 ≠ 已经按本账户价扣；看见树依赖涨价 ≠ 已经是本笔冷热 / 已经是磁盘 O(1)；1884 ≠ 2929 ≠ 169 ≠ 101 ≠ 150（不变量 229）
+- [`worked-example-b2f-nothash-vs-bundled.md`](worked-example-b2f-nothash-vs-bundled.md) — 压缩函数F≠already BLAKE2b哈希/keccak/230 bundled；≠230 bundled（不变量 1434）
+- [`worked-example-b2f-notprod-vs-bundled.md`](worked-example-b2f-notprod-vs-bundled.md) — 本页≠already Equihash/中继交换/已有隐私；≠230 bundled（不变量 1435）
+- [`worked-example-b2f-notapi-vs-bundled.md`](worked-example-b2f-notapi-vs-bundled.md) — 定长输入≠already 任意哈希API/已返回摘要/199；≠230 bundled（不变量 1436）
 - [`worked-example-blake2f-vs-hash.md`](worked-example-blake2f-vs-hash.md) — 看见 BLAKE2 压缩函数 F ≠ 已经是 BLAKE2b 哈希；看见本页 ≠ 已经能验 Equihash / 已经是中继 / 已经有隐私；152 ≠ keccak / SHA3（不变量 230）
+- [`worked-example-shft-notarith-vs-bundled.md`](worked-example-shft-notarith-vs-bundled.md) — 原生移位≠already 算术拼过/只有一条/231 bundled；≠231 bundled（不变量 1404）
+- [`worked-example-shft-notsdiv-vs-bundled.md`](worked-example-shft-notsdiv-vs-bundled.md) — 算术右移≠already 有符号除/同一舍入/同一操作数顺序；≠231 bundled（不变量 1405）
+- [`worked-example-shft-notpack-vs-bundled.md`](worked-example-shft-notpack-vs-bundled.md) — 更便宜≠already 位域产品/改了旧字节码/208；≠231 bundled（不变量 1406）
 - [`worked-example-shift-vs-arithmetic.md`](worked-example-shift-vs-arithmetic.md) — 看见原生移位指令 ≠ 已经用算术拼过移位；看见算术右移 ≠ 已经是有符号除；看见更便宜 ≠ 已经是位域打包产品；145 ≠ 已经改了旧字节码（不变量 231）
+- [`worked-example-rdata-notmem-vs-bundled.md`](worked-example-rdata-notmem-vs-bundled.md) — 返回数据缓冲≠already 内存/CALL预留输出区/232 bundled；≠232 bundled（不变量 1386）
+- [`worked-example-rdata-notcalld-vs-bundled.md`](worked-example-rdata-notcalld-vs-bundled.md) — 本页≠already calldata/两次调用先问长度/下次调用后还在；≠232 bundled（不变量 1387）
+- [`worked-example-rdata-not140-vs-bundled.md`](worked-example-rdata-not140-vs-bundled.md) — 失败数据能再取≠already 140/输出区自动够大/转发产品；≠232 bundled（不变量 1388）
 - [`worked-example-returndata-vs-memory.md`](worked-example-returndata-vs-memory.md) — 看见返回数据缓冲 ≠ 已经是内存；看见本页 ≠ 已经是 calldata / 已经用两次调用先问长度；看见失败数据能再取 ≠ 已经是 140；下一次类调用 ≠ 缓冲还在（不变量 232）
+- [`worked-example-dcall-notcode-vs-bundled.md`](worked-example-dcall-notcode-vs-bundled.md) — 委托调用≠already CALLCODE/同一发送者CALLCODE/233 bundled；≠233 bundled（不变量 1377）
+- [`worked-example-dcall-notcall-vs-bundled.md`](worked-example-dcall-notcall-vs-bundled.md) — 父作用域发送者传到子作用域≠already CALL/津贴/创建账户；≠233 bundled（不变量 1378）
+- [`worked-example-dcall-not7702-vs-bundled.md`](worked-example-dcall-not7702-vs-bundled.md) — 可变代码源≠already 7702/产品已上线/调用数据复刻；≠233 bundled（不变量 1379）
 - [`worked-example-delegatecall-vs-callcode.md`](worked-example-delegatecall-vs-callcode.md) — 看见委托调用 ≠ 已经是 CALLCODE；看见父作用域发送者传到子作用域 ≠ 已经是普通 CALL；看见可变代码源 ≠ 已经是 7702；能塞进调用数据 ≠ 已经是本页（不变量 233）
+- [`worked-example-eappgen-notsig-vs-bundled.md`](worked-example-eappgen-notsig-vs-bundled.md) — 应用生成vote_extension将签名≠already签过/418包装/已经挂上；≠439 bundled（不变量 1350）
+- [`worked-example-eappgen-notnrp-vs-bundled.md`](worked-example-eappgen-notnrp-vs-bundled.md) — non_rp将签名挂上无重放保护≠already同一签法/358按原样签/已有重放保护；≠439 bundled（不变量 1351）
+- [`worked-example-eappgen-notbcast-vs-bundled.md`](worked-example-eappgen-notbcast-vs-bundled.md) — 将签名并挂到Precommit≠already广播/last_commit/438 bundled；≠439 bundled（不变量 1352）
+- [`worked-example-extappgen-vs-signed.md`](worked-example-extappgen-vs-signed.md) — ExtendVoteResponse 应用生成将签名≠already 签过/包进包装/广播（快照 439）
+- [`worked-example-extcnotes-notord-vs-bundled.md`](worked-example-extcnotes-notord-vs-bundled.md) — Extended votes按投票权降序≠already进块/交差/last_commit；≠441 bundled（不变量 1356）
+- [`worked-example-extcnotes-noteng-vs-bundled.md`](worked-example-extcnotes-noteng-vs-bundled.md) — 引擎保证并落盘Extended顺序≠already应用排过/收票顺序/Prepare决定；≠441 bundled（不变量 1357）
+- [`worked-example-extcnotes-notload-vs-bundled.md`](worked-example-extcnotes-notload-vs-bundled.md) — 从store再装ExtendedCommitInfo≠already从块抽出/365路径/444 cinotes；≠441 bundled（不变量 1358）
+- [`worked-example-extcinotes-vs-order.md`](worked-example-extcinotes-vs-order.md) — ExtendedCommitInfo Notes 票序≠already 进块/应用排过/从块抽出
+- [`worked-example-cinotes-notblk-vs-bundled.md`](worked-example-cinotes-notblk-vs-bundled.md) — votes按投票权降序≠already进块/交差/last_commit；≠444 bundled（不变量 1353）
+- [`worked-example-cinotes-notapp-vs-bundled.md`](worked-example-cinotes-notapp-vs-bundled.md) — 引擎保证并落盘≠already应用排过/收票顺序/Process决定；≠444 bundled（不变量 1354）
+- [`worked-example-cinotes-notstore-vs-bundled.md`](worked-example-cinotes-notstore-vs-bundled.md) — 从store再装≠already从块抽出/365路径/ExtendedCommitInfo Notes；≠444 bundled（不变量 1355）
+- [`worked-example-cinotes-vs-order.md`](worked-example-cinotes-vs-order.md) — CommitInfo Notes 票序≠already 进块/应用排过/从块抽出（快照 444）
+- [`worked-example-cifields-notrnd-vs-bundled.md`](worked-example-cifields-notrnd-vs-bundled.md) — CommitInfo.round是提交轮≠already按投票权排/罚没/394 ext-round；≠445 bundled（不变量 1359）
+- [`worked-example-cifields-notlst-vs-bundled.md`](worked-example-cifields-notlst-vs-bundled.md) — votes是上一集合投票信息≠already进块/交差/444 Notes票序；≠445 bundled（不变量 1360）
+- [`worked-example-cifields-notnts-vs-bundled.md`](worked-example-cifields-notnts-vs-bundled.md) — Fields栏≠already Notes票序/444 bundled/365奖罚；≠445 bundled（不变量 1361）
+- [`worked-example-cifields-vs-notes.md`](worked-example-cifields-vs-notes.md) — CommitInfo Fields 栏≠already Notes 票序/已经进块（快照 445）
+- [`worked-example-etxev-notidx-vs-bundled.md`](worked-example-etxev-notidx-vs-bundled.md) — ExecTxResult.events索引kv≠already印进本头/Code-Data必须确定；≠446 bundled（不变量 1362）
+- [`worked-example-etxev-notdet-vs-bundled.md`](worked-example-etxev-notdet-vs-bundled.md) — events标成非确定≠already共识字段/已经哈希/316必须确定；≠446 bundled（不变量 1363）
+- [`worked-example-etxev-notlvl-vs-bundled.md`](worked-example-etxev-notlvl-vs-bundled.md) — 逐笔events≠already块级431/CheckTx 381/池门回包；≠446 bundled（不变量 1364）
+- [`worked-example-exectxevents-vs-header.md`](worked-example-exectxevents-vs-header.md) — ExecTxResult.events≠already 印进本头/块级events（快照 446）
+- [`worked-example-eviuse-notapp-vs-bundled.md`](worked-example-eviuse-notapp-vs-bundled.md) — vote_extension引擎已验且可空≠already应用验完/必须填/Accept；≠447 bundled（不变量 1365）
+- [`worked-example-eviuse-notexp-vs-bundled.md`](worked-example-eviuse-notexp-vs-bundled.md) — extension_signature暴露再处理≠already应用验完/已Verify/421交出；≠447 bundled（不变量 1366）
+- [`worked-example-eviuse-nottwo-vs-bundled.md`](worked-example-eviuse-nottwo-vs-bundled.md) — 两份签都在空切片≠already只有一份/没non_rp就没有/跳过Verify；≠447 bundled（不变量 1367）
+- [`worked-example-extviusage-vs-expose.md`](worked-example-extviusage-vs-expose.md) — ExtendedVoteInfo Usage 暴露签≠already 应用验完/必须填内容
+- [`worked-example-prepev-notret-vs-bundled.md`](worked-example-prepev-notret-vs-bundled.md) — Prepare MAY产出事件≠already回包交回/引擎已收到/357验过；≠448 bundled（不变量 1368）
+- [`worked-example-prepev-notkeep-vs-bundled.md`](worked-example-prepev-notkeep-vs-bundled.md) — MUST留到决定≠already Process就交/REJECT可丢/已经交差；≠448 bundled（不变量 1369）
+- [`worked-example-prepev-notfin-vs-bundled.md`](worked-example-prepev-notfin-vs-bundled.md) — 经Finalize交回≠already CheckTx/ExecTx events/LastResultsHash；≠448 bundled（不变量 1370）
+- [`worked-example-prepevents-vs-finalize.md`](worked-example-prepevents-vs-finalize.md) — Prepare 事件保留≠already 回包交回/Process就交/CheckTx events
+- [`worked-example-valuse-notproc-vs-bundled.md`](worked-example-valuse-notproc-vs-bundled.md) — Process CommitInfo Validator≠already Prepare Extended/local_last_commit/364公钥；≠449 bundled（不变量 1371）
+- [`worked-example-valuse-notfin-vs-bundled.md`](worked-example-valuse-notfin-vs-bundled.md) — Finalize decided≠already Process proposed/已经交差/Prepare Extended；≠449 bundled（不变量 1372）
+- [`worked-example-valuse-notprep-vs-bundled.md`](worked-example-valuse-notprep-vs-bundled.md) — Prepare Extended Validator≠already Process-Finalize CommitInfo/可互换/369抽出；≠449 bundled（不变量 1373）
+- [`worked-example-validatorusage-vs-gates.md`](worked-example-validatorusage-vs-gates.md) — Validator Usage 四门≠already 同一路 CommitInfo/ExtendedCommitInfo
+- [`worked-example-viaext-notrew-vs-bundled.md`](worked-example-viaext-notrew-vs-bundled.md) — availability同句≠already奖罚完/交差/Finalize算完；≠442 bundled（不变量 1374）
+- [`worked-example-viaext-notblk-vs-bundled.md`](worked-example-viaext-notblk-vs-bundled.md) — VoteInfo typically from block≠already本进程抽出/Prepare Extended/369；≠442 bundled（不变量 1375）
+- [`worked-example-viaext-notloc-vs-bundled.md`](worked-example-viaext-notloc-vs-bundled.md) — ExtendedVoteInfo from local≠already typically from block/Process VoteInfo/425；≠442 bundled（不变量 1376）
+- [`worked-example-viusageavail-vs-extractpath.md`](worked-example-viusageavail-vs-extractpath.md) — availability 同句抽取异路≠already 奖罚完/同一抽出路径
 - [`worked-example-hstead-notfee-vs-bundled.md`](worked-example-hstead-notfee-vs-bundled.md) — 交易创建变贵≠already 改了CREATE/重定价操作码/Homestead四件bundled；≠234 bundled（不变量 1346）
 - [`worked-example-hstead-notsig-vs-bundled.md`](worked-example-hstead-notsig-vs-bundled.md) — 交易拒高s≠already ECRECOVER拒/比特币DER/EIP-155链标识；≠234 bundled（不变量 1347）
 - [`worked-example-hstead-notfail-vs-bundled.md`](worked-example-hstead-notfail-vs-bundled.md) — 失败不再留空合约≠already 代码长度上限/initcode/empty-dead；≠234 bundled（不变量 1348）
@@ -1015,9 +1111,21 @@
 - [`worked-example-c63-notoog-vs-bundled.md`](worked-example-c63-notoog-vs-bundled.md) — 问超了≠already 耗尽气/没有调用深度上限/父帧气全给了子执行；≠237 bundled（不变量 1299）
 - [`worked-example-c63-notcap-vs-bundled.md`](worked-example-c63-notcap-vs-bundled.md) — 建议气限≠already 协议帽/官网吞吐是事实/改了共识帽；≠237 bundled（不变量 1300）
 - [`worked-example-call-63rds-vs-oog.md`](worked-example-call-63rds-vs-oog.md) — 看见读树涨价 ≠ 已经换成去掉六十四分之一；看见问超了 ≠ 已经耗尽气；看见建议气限 ≠ 已经是协议帽（不变量 237）
+- [`worked-example-retc-notinit-vs-bundled.md`](worked-example-retc-notinit-vs-bundled.md) — 返回代码超界≠already initcode超界/3860/185 bundled；≠185 bundled（不变量 1440）
+- [`worked-example-retc-nottx-vs-bundled.md`](worked-example-retc-nottx-vs-bundled.md) — 耗尽气失败≠already 整笔非法/剩余气回滚/177；≠185 bundled（不变量 1441）
+- [`worked-example-retc-notfree-vs-bundled.md`](worked-example-retc-notfree-vs-bundled.md) — CALL气常数≠already 无按长度代价/不变量170/已免费；≠185 bundled（不变量 1442）
 - [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
+- [`worked-example-rpfx-noteof-vs-bundled.md`](worked-example-rpfx-noteof-vs-bundled.md) — 保留首字节≠already 对象格式已部署/已验过/188 bundled；≠188 bundled（不变量 1443）
+- [`worked-example-rpfx-notold-vs-bundled.md`](worked-example-rpfx-notold-vs-bundled.md) — 已有同首字节≠already 被改语义/按新格式重验/3541做完；≠188 bundled（不变量 1444）
+- [`worked-example-rpfx-notinit-vs-bundled.md`](worked-example-rpfx-notinit-vs-bundled.md) — initcode出现该字节≠already 本页失败/170/3860；≠188 bundled（不变量 1445）
 - [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
+- [`worked-example-rvert-notburn-vs-bundled.md`](worked-example-rvert-notburn-vs-bundled.md) — 带回剩余气的回滚≠already 非法指令烧光/气耗尽烧光/177 bundled；≠177 bundled（不变量 1380）
+- [`worked-example-rvert-notfee-vs-bundled.md`](worked-example-rvert-notfee-vs-bundled.md) — 不够付回滚自己的费≠already 留下剩余气/103/免费；≠177 bundled（不变量 1381）
+- [`worked-example-rvert-notdep-vs-bundled.md`](worked-example-rvert-notdep-vs-bundled.md) — 创建里回滚≠already 部署/占址/另一条链 REVERTED；≠177 bundled（不变量 1382）
 - [`worked-example-revert-vs-invalid.md`](worked-example-revert-vs-invalid.md) — 带回剩余气的回滚 ≠ 已经烧光剩余气；不够付自己的费 ≠ 已经留下剩余气；140 ≠ 空账户 OOG ≠ 另一条链的 REVERTED（不变量 177）
+- [`worked-example-stcall-notview-vs-bundled.md`](worked-example-stcall-notview-vs-bundled.md) — 静态帧≠already 高级语言只读/编译器 view/178 bundled；≠178 bundled（不变量 1383）
+- [`worked-example-stcall-notxfer-vs-bundled.md`](worked-example-stcall-notxfer-vs-bundled.md) — 没转账的普通调用≠already 打开静态旗/只读/214 bundled；≠178 bundled（不变量 1384）
+- [`worked-example-stcall-notchg-vs-bundled.md`](worked-example-stcall-notchg-vs-bundled.md) — 静态帧里改状态≠already 改成/CALLCODE带值/140；≠178 bundled（不变量 1385）
 - [`worked-example-static-vs-view.md`](worked-example-static-vs-view.md) — 静态帧 ≠ 已经是高级语言只读；没转账 ≠ 已经静态；214 ≠ 140（不变量 178）
 - [`worked-example-psbt-vs-broadcast.md`](worked-example-psbt-vs-broadcast.md) — 看见部分签名包 ≠ 已经能广播；有几张签 ≠ 已经凑齐；174 ≠ 173 ≠ 125（不变量 179）
 - [`worked-example-psbtv2-vs-v0.md`](worked-example-psbtv2-vs-v0.md) — 看见后继版本工作包 ≠ 已经是旧版那份固定未签交易；能再加输入输出 ≠ 已经能广播；370 ≠ 174 ≠ 173 ≠ 125（不变量 186）

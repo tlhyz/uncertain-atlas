@@ -85,7 +85,7 @@
 | 经济 | 账面气限不是本块实际能烧掉的上限；看见本页不是已经改了 1559 |
 
 **推断：** 产品句若只写「退款削减所以已经没有退款」，读者会把削薄听成取消，或把去掉自毁退款听成 6780，或把账面气限听成已经封死执行量。  
-**建议：** 第一版可以不抄这套退款表。若对照，必须分开削减后退款、已经没有退款、自毁语义、执行当中能用的气。不要发明「看见 3529 就已经没有退款」。不要抄退款比例或气价表。不要写怎样做气代币、留灰或用退款打满一块。
+**建议：** 第一版可以不抄这套退款表。若对照，必须分开削减后退款、已经没有退款、自毁语义、执行当中能用的气。可以跳过「看见 3529 就已经没有退款」。223 refund vs gone bundled unbundling 完成（1413 item 1 / 1414 item 2 / 1415 item 3）；精读 [`worked-example-rfnd-notgone-vs-bundled.md`](worked-example-rfnd-notgone-vs-bundled.md)（不变量 1413 item 1）、[`worked-example-rfnd-not6780-vs-bundled.md`](worked-example-rfnd-not6780-vs-bundled.md)（不变量 1414 item 2）、[`worked-example-rfnd-notmid-vs-bundled.md`](worked-example-rfnd-notmid-vs-bundled.md)（不变量 1415 item 3）。不要发明「看见 3529 就已经没有退款」。不要抄退款比例或气价表。不要写怎样做气代币、留灰或用退款打满一块。
 
 ---
 

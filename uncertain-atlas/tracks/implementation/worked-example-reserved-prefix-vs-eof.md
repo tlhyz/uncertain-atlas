@@ -81,7 +81,7 @@
 | 经济 | 这次中止烧光创建拿到的气，不是已经按长度界或构造界计价 |
 
 **推断：** 产品句若只写「支持对象格式 / 合约有开头限制」，读者会把占位听成格式已经上线，或把已有代码听成已经被改。  
-**建议：** 第一版若允许链上创建，必须分开返回代码第一字节、返回代码长度、initcode 长度。不要发明「占了首字节就是格式已上」。不要抄保留字节取值。不要把 3541 写成 170 或对象格式规范。
+**建议：** 第一版若允许链上创建，必须分开返回代码第一字节、返回代码长度、initcode 长度。可以跳过「占了首字节就是格式已上」。188 reserved-prefix vs eof bundled unbundling 完成（1443 item 1 / 1444 item 2 / 1445 item 3）；精读 [`worked-example-rpfx-noteof-vs-bundled.md`](worked-example-rpfx-noteof-vs-bundled.md)（不变量 1443 item 1）、[`worked-example-rpfx-notold-vs-bundled.md`](worked-example-rpfx-notold-vs-bundled.md)（不变量 1444 item 2）、[`worked-example-rpfx-notinit-vs-bundled.md`](worked-example-rpfx-notinit-vs-bundled.md)（不变量 1445 item 3）。不要发明「占了首字节就是格式已上」。不要抄保留字节取值。不要把 3541 写成 170 或对象格式规范。
 
 ---
 

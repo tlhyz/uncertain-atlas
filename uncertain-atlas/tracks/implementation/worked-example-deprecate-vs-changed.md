@@ -81,7 +81,7 @@
 | 经济 | 弃用不改退款，也不是已经拿掉自毁退款 |
 
 **推断：** 产品句若只写「已弃用所以行为已经变」，读者会把告示听成拆门，或把 6049 听成 6780，或把元层页听成已经改了客户端。  
-**建议：** 第一版可以不上自毁指令。若对照，必须分开弃用警告、已经改了共识、客户端已经改、以后的改动已经落地。不要发明「看见 6049 就已经改了行为」。不要抄黄皮书章节号或操作码号。不要写怎样继续用自毁、迁合约或实现以后那次改动。
+**建议：** 第一版可以不上自毁指令。若对照，必须分开弃用警告、已经改了共识、客户端已经改、以后的改动已经落地。可以跳过「看见 6049 就已经改了行为」。224 deprecate vs changed bundled unbundling 完成（1416 item 1 / 1417 item 2 / 1418 item 3）；精读 [`worked-example-depre-notcons-vs-bundled.md`](worked-example-depre-notcons-vs-bundled.md)（不变量 1416 item 1）、[`worked-example-depre-notcli-vs-bundled.md`](worked-example-depre-notcli-vs-bundled.md)（不变量 1417 item 2）、[`worked-example-depre-notdone-vs-bundled.md`](worked-example-depre-notdone-vs-bundled.md)（不变量 1418 item 3）。不要发明「看见 6049 就已经改了行为」。不要抄黄皮书章节号或操作码号。不要写怎样继续用自毁、迁合约或实现以后那次改动。
 
 ---
 

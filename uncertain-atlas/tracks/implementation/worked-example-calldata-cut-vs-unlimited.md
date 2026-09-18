@@ -83,7 +83,7 @@
 | 经济 | 更便宜不是已经不改攻击成本，也不是二层已经免费 |
 
 **推断：** 产品句若只写「calldata 降价所以已经没有上限」，读者会把便宜听成无限，或把 2028 听成 7623，或把贴在 calldata 听成 DA 已经齐。  
-**建议：** 第一版不要把短时 calldata 当默认 DA。若对照，必须分开非零降价、零字节价、块上限、后来的地板 / blob。不要发明「看见 2028 就已经没有上限」。不要抄每字节气价或延迟公式。不要写怎样往 calldata 里塞证明或打满更大块。
+**建议：** 第一版不要把短时 calldata 当默认 DA。若对照，必须分开非零降价、零字节价、块上限、后来的地板 / blob。可以跳过「看见 2028 就已经没有上限」。226 calldata-cut vs unlimited bundled unbundling 完成（1422 item 1 / 1423 item 2 / 1424 item 3）；精读 [`worked-example-cdcut-notzero-vs-bundled.md`](worked-example-cdcut-notzero-vs-bundled.md)（不变量 1422 item 1）、[`worked-example-cdcut-notcap-vs-bundled.md`](worked-example-cdcut-notcap-vs-bundled.md)（不变量 1423 item 2）、[`worked-example-cdcut-notsafe-vs-bundled.md`](worked-example-cdcut-notsafe-vs-bundled.md)（不变量 1424 item 3）。不要发明「看见 2028 就已经没有上限」。不要抄每字节气价或延迟公式。不要写怎样往 calldata 里塞证明或打满更大块。
 
 ---
 

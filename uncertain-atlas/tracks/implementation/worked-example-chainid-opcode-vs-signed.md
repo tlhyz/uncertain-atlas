@@ -85,7 +85,7 @@
 | 经济 | 编译期写错或分叉后仍用旧域，官方写会丢资金或重放已签消息 |
 
 **推断：** 产品句若只写「能读链号所以交易已经绑了这条链」，读者会把合约读数听成 155 签名绑定，或把编译期 712 域听成硬分叉后仍安全。  
-**建议：** 第一版可以不加这条读数指令。若对照，必须分开读本链号、签进哈希、编译期写死、分裂后谁说了算。不要发明「看见 1344 就已经是 155」。不要抄操作码号或实现仓库。不要写怎样实现预言机、处理 Plasma 分裂或重放未绑链号的签。
+**建议：** 第一版可以不加这条读数指令。若对照，必须分开读本链号、签进哈希、编译期写死、分裂后谁说了算。可以跳过「看见链号指令就已经绑了签名链号」。220 CHAINID opcode vs signed bundled unbundling 完成（1395 item 1 / 1396 item 2 / 1397 item 3）；精读 [`worked-example-chid-not155-vs-bundled.md`](worked-example-chid-not155-vs-bundled.md)（不变量 1395 item 1）、[`worked-example-chid-nottx-vs-bundled.md`](worked-example-chid-nottx-vs-bundled.md)（不变量 1396 item 2）、[`worked-example-chid-notfork-vs-bundled.md`](worked-example-chid-notfork-vs-bundled.md)（不变量 1397 item 3）。不要发明「看见 1344 就已经是 155」。不要抄操作码号或实现仓库。不要写怎样实现预言机、处理 Plasma 分裂或重放未绑链号的签。
 
 ---
 

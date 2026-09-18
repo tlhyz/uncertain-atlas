@@ -86,7 +86,7 @@
 | 经济 | 专用拷不是已经改了 CALL 计价，也不是已经更便宜的 calldata |
 
 **推断：** 产品句若只写「有拷贝指令所以已经不用预编译」，读者会把专用指令听成身份预编译，或把「像缓冲」听成必须真分配。  
-**建议：** 第一版可以不加这条拷贝指令。若对照，必须分开内存拷、身份预编译、「像缓冲」、真缓冲。不要发明「看见 5656 就已经是身份预编译」。不要抄气价或测试向量。不要写怎样造真缓冲。
+**建议：** 第一版可以不加这条拷贝指令。若对照，必须分开内存拷、身份预编译、「像缓冲」、真缓冲。可以跳过「看见 5656 就已经是身份预编译」。216 MCOPY vs identity bundled unbundling 完成（1410 item 1 / 1411 item 2 / 1412 item 3）；精读 [`worked-example-mcpy-notid-vs-bundled.md`](worked-example-mcpy-notid-vs-bundled.md)（不变量 1410 item 1）、[`worked-example-mcpy-notbuf-vs-bundled.md`](worked-example-mcpy-notbuf-vs-bundled.md)（不变量 1411 item 2）、[`worked-example-mcpy-notcd-vs-bundled.md`](worked-example-mcpy-notcd-vs-bundled.md)（不变量 1412 item 3）。不要发明「看见 5656 就已经是身份预编译」。不要抄气价或测试向量。不要写怎样造真缓冲。
 
 ---
 

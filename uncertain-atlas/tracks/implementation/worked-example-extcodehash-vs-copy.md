@@ -83,7 +83,7 @@
 | 经济 | 只要哈希时不必付整份拷的代价；看见本页不是已经改了费用市场 |
 
 **推断：** 产品句若只写「能读代码哈希所以已经看见代码」，读者会把指纹听成开箱，或把 0 听成「没代码」、把空数据哈希听成「不存在」。  
-**建议：** 第一版可以不加这条读数指令。若对照，必须分开拷代码、读尺寸、读哈希、返回 0、空数据哈希。不要发明「看见 1052 就已经是 161」。不要抄操作码号、气价或空代码哈希字面量。不要写怎样探存在、按哈希白名单实现或整份拷代码。
+**建议：** 第一版可以不加这条读数指令。若对照，必须分开拷代码、读尺寸、读哈希、返回 0、空数据哈希。可以跳过「看见代码哈希就已经看见代码」。221 EXTCODEHASH vs copy bundled unbundling 完成（1392 item 1 / 1393 item 2 / 1394 item 3）；精读 [`worked-example-xhash-notsee-vs-bundled.md`](worked-example-xhash-notsee-vs-bundled.md)（不变量 1392 item 1）、[`worked-example-xhash-notzero-vs-bundled.md`](worked-example-xhash-notzero-vs-bundled.md)（不变量 1393 item 2）、[`worked-example-xhash-notmiss-vs-bundled.md`](worked-example-xhash-notmiss-vs-bundled.md)（不变量 1394 item 3）。不要发明「看见 1052 就已经是 161」。不要抄操作码号、气价或空代码哈希字面量。不要写怎样探存在、按哈希白名单实现或整份拷代码。
 
 ---
 

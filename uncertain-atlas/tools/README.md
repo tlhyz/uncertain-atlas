@@ -6,6 +6,7 @@
 | [`review_audit.py`](review_audit.py) | 复审清单 → `REVIEW_REPORT.md` | v0 可用 |
 | [`atlas_index.py`](atlas_index.py) | 本地 Markdown 目录 JSON | v0 可用 |
 | [`invariant_corpus_links.py`](invariant_corpus_links.py) | 不变量 ↔ 语料双向链接（gate inv≥650） | v0 可用 |
+| [`snapshot_branch_inventory.py`](snapshot_branch_inventory.py) | P3-3 cometbft snapshot 分支库存 | v0 可用 |
 
 ```bash
 cd uncertain-atlas
@@ -17,4 +18,4 @@ python tools/atlas_index.py --stats
 python tools/invariant_corpus_links.py
 ```
 
-Phase 3 余项：P3-3 merge 285 snapshot 分支。
+Phase 3 余项：P3-3 已量 211/74/107；unique 9 簇开始回收。不要删 285 remote。

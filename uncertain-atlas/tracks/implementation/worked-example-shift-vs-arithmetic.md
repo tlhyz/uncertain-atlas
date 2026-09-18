@@ -86,7 +86,7 @@
 | 经济 | 更便宜不是位域打包已经免费 |
 
 **推断：** 产品句若只写「以太坊终于能移位了」，读者会把算术拼听成已经齐，或把算术右移听成已经是有符号除。  
-**建议：** 第一版可以不加这三条移位。若对照，必须分开原生移位、算术拼移位、算术右移、已经是位域产品。不要发明「看见 145 就已经和乘除同一条」。不要抄操作码号或测试向量。不要写怎样做位域打包或用移位代替哈希。
+**建议：** 第一版可以不加这三条移位。若对照，必须分开原生移位、算术拼移位、算术右移、已经是位域产品。可以跳过「看见 145 就已经和乘除同一条」。231 SHIFT vs arithmetic bundled unbundling 完成（1404 item 1 / 1405 item 2 / 1406 item 3）；精读 [`worked-example-shft-notarith-vs-bundled.md`](worked-example-shft-notarith-vs-bundled.md)（不变量 1404 item 1）、[`worked-example-shft-notsdiv-vs-bundled.md`](worked-example-shft-notsdiv-vs-bundled.md)（不变量 1405 item 2）、[`worked-example-shft-notpack-vs-bundled.md`](worked-example-shft-notpack-vs-bundled.md)（不变量 1406 item 3）。不要发明「看见 145 就已经和乘除同一条」。不要抄操作码号或测试向量。不要写怎样做位域打包或用移位代替哈希。
 
 ---
 

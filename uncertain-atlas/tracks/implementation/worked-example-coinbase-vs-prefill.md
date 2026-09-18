@@ -78,7 +78,7 @@
 | 经济 | 开跑已热不是已经付过奖励或小费 |
 
 **推断：** 产品句若只写「支持访问列表 / 出块者付款」，读者会把 169 那几个预填听成已经含出块者，或把开跑已热听成已经付过钱。  
-**建议：** 第一版若做本笔访问集合，必须点名开跑预填里有没有出块者。不要发明「发送者已热所以出块者也热」。不要抄操作码号。不要把 3651 写成 2929 或 1559。
+**建议：** 第一版若做本笔访问集合，必须点名开跑预填里有没有出块者。可以跳过「发送者已热所以出块者也热」。187 coinbase vs prefill bundled unbundling 完成（1446 item 1 / 1447 item 2 / 1448 item 3）；精读 [`worked-example-cbase-notacc-vs-bundled.md`](worked-example-cbase-notacc-vs-bundled.md)（不变量 1446 item 1）、[`worked-example-cbase-notpay-vs-bundled.md`](worked-example-cbase-notpay-vs-bundled.md)（不变量 1447 item 2）、[`worked-example-cbase-not169-vs-bundled.md`](worked-example-cbase-not169-vs-bundled.md)（不变量 1448 item 3）。不要发明「发送者已热所以出块者也热」。不要抄操作码号。不要把 3651 写成 2929 或 1559。
 
 ---
 

@@ -82,7 +82,7 @@ initcode、运行时代码、已经创建，是三件事。
 | 经济 | 不抄每字气价；分析费不是已经跑完构造 |
 
 **推断：** 产品句若只写「合约有大小限制」，读者会把构造代码听成已经是运行时代码，或把分析费听成已经创建。  
-**建议：** 第一版若允许链上创建，必须分开 initcode 界和部署代码界。不要发明「一份上限管两种代码」。不要抄字节数。不要把 3860 写成 170。
+**建议：** 第一版若允许链上创建，必须分开 initcode 界和部署代码界。可以跳过「一份上限管两种代码」。176 initcode vs runtime bundled unbundling 完成（1437 item 1 / 1438 item 2 / 1439 item 3）；精读 [`worked-example-icode-not170-vs-bundled.md`](worked-example-icode-not170-vs-bundled.md)（不变量 1437 item 1）、[`worked-example-icode-nottx-vs-bundled.md`](worked-example-icode-nottx-vs-bundled.md)（不变量 1438 item 2）、[`worked-example-icode-notrun-vs-bundled.md`](worked-example-icode-notrun-vs-bundled.md)（不变量 1439 item 3）。不要发明「一份上限管两种代码」。不要抄字节数。不要把 3860 写成 170。
 
 ---
 
