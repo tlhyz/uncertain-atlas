@@ -1,3 +1,18 @@
+| A5860 | 记录 | 会与 260 / 181 / 243 / 1217 / 1218 糊成「看见同一条静默付款地址再用就已经同一笔输出 interchangeable、就已经没有付款 interchangeable、就已经把各次付款连上 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-352 reuse not already same-output / not already linked / not already settled 正式三事（260 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。260 silent payment vs output bundled unbundling 完成（1219 item 3） |
+| A5861 | 高 | 看见同一条静默付款地址再用 会被写成已经同一笔输出 interchangeable / 181 interchangeable | 官方 BIP-352 silent item 3：not already same-output / not 181 |
+| A5862 | 高 | 看见没有通知 会被写成已经没有付款 interchangeable / 243 interchangeable | 官方 BIP-352 silent item 3：not already linked / not 243 |
+| A5863 | 高 | 看见再用 会被写成已经把各次付款连上 interchangeable | 官方 BIP-352 silent item 3：not already settled |
+| A5864 | 中 | 怎样派生输出会被抄进不确定 | 不抄。不写怎样派生输出。不另写 19 节 |
+| A5855 | 记录 | 会与 260 / 182 / 258 / 1217 / 1219 糊成「看见扫过就已经收到 interchangeable、就已经没人付 interchangeable、就已经是本页这种发现 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-352 scanned not already received / not already spendable / not already settled 正式三事（260 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。260 silent payment vs output bundled unbundling 续（1218 item 2） |
+| A5856 | 高 | 看见扫过 会被写成已经收到 interchangeable / 182 interchangeable | 官方 BIP-352 silent item 2：not already received / not 182 |
+| A5857 | 高 | 看见没扫到 会被写成已经没人付 interchangeable / 258 interchangeable | 官方 BIP-352 silent item 2：not already spendable / not 258 |
+| A5858 | 高 | 看见轻客户端过滤器对上 会被写成已经是本页这种发现 interchangeable | 官方 BIP-352 silent item 2：not already settled |
+| A5859 | 中 | 怎样派生输出会被抄进不确定 | 不抄。不写怎样派生输出。不另写 19 节 |
+| A5850 | 记录 | 会与 260 / 174 / 255 / 1218 / 1219 糊成「看见静默付款地址就已经有一笔链上输出 interchangeable、就已经是旧见证地址 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-352 silent-address not already output / not already paid / not already settled 正式三事（260 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。260 silent payment vs output bundled unbundling 启动（1217 item 1） |
+| A5851 | 高 | 看见静默付款地址 会被写成已经有一笔链上输出 interchangeable / 174 interchangeable | 官方 BIP-352 silent item 1：not already output / not 174 |
+| A5852 | 高 | 看见专用编码过了校验 会被写成已经是旧见证地址 interchangeable / 255 interchangeable | 官方 BIP-352 silent item 1：not already paid / not 255 |
+| A5853 | 高 | 看见码 会被写成已经交差 interchangeable | 官方 BIP-352 silent item 1：not already settled |
+| A5854 | 中 | 怎样派生输出会被抄进不确定 | 不抄。不写怎样派生输出。不另写 19 节 |
 | A5845 | 记录 | 会与 258 / 255 / 182 / 1214 / 1215 糊成「看见资金证明清单就已经齐 interchangeable、就已经没花 interchangeable、就已经是一笔付款 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.2 / L3.6 BIP-322 proof-list not already complete / not already unspent / not already settled 正式三事（258 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。258 signed message vs control bundled unbundling 完成（1216 item 3） |
 | A5846 | 高 | 看见资金证明清单 会被写成已经齐 interchangeable / 255 interchangeable | 官方 BIP-322 signed item 3：not already complete / not 255 |
 | A5847 | 高 | 看见清单 会被写成已经没花 interchangeable / 182 interchangeable | 官方 BIP-322 signed item 3：not already unspent / not 182 |

@@ -1,3 +1,6 @@
+- [`name-the-sil352-notreuse-bar.md`](name-the-sil352-notreuse-bar.md) — BIP-352 reuse not already same-output / not already linked / not already settled 正式三事（260 余量）（不变量 1219）
+- [`name-the-sil352-notscan-bar.md`](name-the-sil352-notscan-bar.md) — BIP-352 scanned not already received / not already spendable / not already settled 正式三事（260 余量）（不变量 1218）
+- [`name-the-sil352-notout-bar.md`](name-the-sil352-notout-bar.md) — BIP-352 silent-address not already output / not already paid / not already settled 正式三事（260 余量）（不变量 1217）
 - [`name-the-sig322-notfund-bar.md`](name-the-sig322-notfund-bar.md) — BIP-322 proof-list not already complete / not already unspent / not already settled 正式三事（258 余量）（不变量 1216）
 - [`name-the-sig322-notprev-bar.md`](name-the-sig322-notprev-bar.md) — BIP-322 invoice-control not already previous-tx / not already paid / not already settled 正式三事（258 余量）（不变量 1215）
 - [`name-the-sig322-notctrl-bar.md`](name-the-sig322-notctrl-bar.md) — BIP-322 signed-message not already control / not already will-sign-spend / not already settled 正式三事（258 余量）（不变量 1214）

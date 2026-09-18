@@ -1,3 +1,6 @@
+- [`sil352-notreuse-sold-as-bundled.md`](sil352-notreuse-sold-as-bundled.md) — 再用 被写成已经同一笔输出 / 已经没有付款 / 已经把各次付款连上（不变量 1219）
+- [`sil352-notscan-sold-as-bundled.md`](sil352-notscan-sold-as-bundled.md) — 扫过 被写成已经收到 / 已经没人付 / 已经是本页这种发现（不变量 1218）
+- [`sil352-notout-sold-as-bundled.md`](sil352-notout-sold-as-bundled.md) — 静默付款地址 被写成已经有一笔链上输出 / 已经是旧见证地址 / 已经交差（不变量 1217）
 - [`sig322-notfund-sold-as-bundled.md`](sig322-notfund-sold-as-bundled.md) — 资金证明清单 被写成已经齐 / 已经没花 / 已经是一笔付款（不变量 1216）
 - [`sig322-notprev-sold-as-bundled.md`](sig322-notprev-sold-as-bundled.md) — 发票将来控制 被写成已经证明发过上一笔 / 已经付过 / 已经广播过上一笔（不变量 1215）
 - [`sig322-notctrl-sold-as-bundled.md`](sig322-notctrl-sold-as-bundled.md) — 签过的消息 被写成已经证明能控制资金 / 已经肯签真正的交易 / 已经交差（不变量 1214）

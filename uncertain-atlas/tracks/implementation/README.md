@@ -902,6 +902,9 @@
 - [`worked-example-enc38-notmint-vs-bundled.md`](worked-example-enc38-notmint-vs-bundled.md) — 厂家代生成≠already redeemable/same-path/settled；≠296 bundled（不变量 1206）
 - [`worked-example-enc38-notuse-vs-bundled.md`](worked-example-enc38-notuse-vs-bundled.md) — 加密记录≠already private-key/usable/settled；≠296 bundled（不变量 1205）
 - [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）
+- [`../lifecycle/worked-example-sil352-notreuse-vs-bundled.md`](../lifecycle/worked-example-sil352-notreuse-vs-bundled.md) — 再用≠already same-output/linked/settled；≠260 bundled（不变量 1219）
+- [`../lifecycle/worked-example-sil352-notscan-vs-bundled.md`](../lifecycle/worked-example-sil352-notscan-vs-bundled.md) — 扫过≠already received/spendable/settled；≠260 bundled（不变量 1218）
+- [`../lifecycle/worked-example-sil352-notout-vs-bundled.md`](../lifecycle/worked-example-sil352-notout-vs-bundled.md) — 静默码≠already output/paid/settled；≠260 bundled（不变量 1217）
 - [`../lifecycle/worked-example-sig322-notfund-vs-bundled.md`](../lifecycle/worked-example-sig322-notfund-vs-bundled.md) — 资金证明清单≠already complete/unspent/settled；≠258 bundled（不变量 1216）
 - [`../lifecycle/worked-example-sig322-notprev-vs-bundled.md`](../lifecycle/worked-example-sig322-notprev-vs-bundled.md) — 发票将来控制≠already previous-tx/paid/settled；≠258 bundled（不变量 1215）
 - [`../lifecycle/worked-example-sig322-notctrl-vs-bundled.md`](../lifecycle/worked-example-sig322-notctrl-vs-bundled.md) — 签过消息≠already control/will-sign-spend/settled；≠258 bundled（不变量 1214）

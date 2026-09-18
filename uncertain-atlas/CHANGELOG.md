@@ -1,3 +1,15 @@
+## 2026-09-18（续 1336）
+
+- 不变量 1219；语料 C1197；模式 name-the-sil352-notreuse-bar；反模式 sil352-notreuse-sold-as-bundled；L10.3 第 1188 条。填 L0.7 / L3.6 BIP-352 reuse not already same-output / not already linked / not already settled 正式三事（260 余量）。260 silent payment vs output bundled unbundling 完成（1219 item 3）。
+
+## 2026-09-18（续 1335）
+
+- 不变量 1218；语料 C1196；模式 name-the-sil352-notscan-bar；反模式 sil352-notscan-sold-as-bundled；L10.3 第 1187 条。填 L0.7 / L3.6 BIP-352 scanned not already received / not already spendable / not already settled 正式三事（260 余量）。260 silent payment vs output bundled unbundling 续（1218 item 2）。
+
+## 2026-09-18（续 1334）
+
+- 不变量 1217；语料 C1195；模式 name-the-sil352-notout-bar；反模式 sil352-notout-sold-as-bundled；L10.3 第 1186 条。填 L0.7 / L3.6 BIP-352 silent-address not already output / not already paid / not already settled 正式三事（260 余量）。260 silent payment vs output bundled unbundling 启动（1217 item 1）。
+
 ## 2026-09-18（续 1333）
 
 - 不变量 1216；语料 C1194；模式 name-the-sig322-notfund-bar；反模式 sig322-notfund-sold-as-bundled；L10.3 第 1185 条。填 L0.7 / L1.2 / L3.6 BIP-322 proof-list not already complete / not already unspent / not already settled 正式三事（258 余量）。258 signed message vs control bundled unbundling 完成（1216 item 3）。
