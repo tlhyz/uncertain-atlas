@@ -19,6 +19,9 @@ blocksync 目标必须可归因：[`../failure-museum/asa-2025-001.md`](../failu
 发现能吞多余字段 ≠ 已经升级发现：[`worked-example-eip8-notdisc-vs-bundled.md`](worked-example-eip8-notdisc-vs-bundled.md)（发现能吞多余字段≠already 发现升级/在说新协议/升级发现；≠235 bundled；不变量 1284）。
 能收新握手编码 ≠ 已经退役旧握手：[`worked-example-eip8-nothand-vs-bundled.md`](worked-example-eip8-nothand-vs-bundled.md)（能收新握手编码≠already 旧握手退役/改了共识/旧格式退役；≠235 bundled；不变量 1285）。
 忽略版本 ≠ 已经在说新协议：[`worked-example-eip8-vs-already-new.md`](worked-example-eip8-vs-already-new.md)（看见能吞多余字段不是已经谈成新线协议；跟 Homestead 一起上不是已经改共识；仍收旧握手不是已经退役旧格式；8 ≠ 2 ≠ 7642）。
+分叉哈希对上 ≠ 已经同一条链：[`worked-example-forkid-notsame-vs-bundled.md`](worked-example-forkid-notsame-vs-bundled.md)（分叉哈希对上≠already 同一条链/用朴素相等判定同一条链/把创世算进已应用分叉；≠239 bundled；不变量 1286）。
+通告了下一分叉 ≠ 已经兼容：[`worked-example-forkid-notcompat-vs-bundled.md`](worked-example-forkid-notcompat-vs-bundled.md)（通告了下一分叉≠already 兼容/陈旧/本地该升级；≠239 bundled；不变量 1287）。
+有了分叉标识 ≠ 已经改了共识：[`worked-example-forkid-notfeat-vs-bundled.md`](worked-example-forkid-notfeat-vs-bundled.md)（有了分叉标识≠already 改了共识/三向分叉能分开/未来分叉清单齐；≠239 bundled；不变量 1288）。
 分叉标识 ≠ 已经同一条链：[`worked-example-forkid-vs-same-chain.md`](worked-example-forkid-vs-same-chain.md)（看见分叉标识对上不是已经同一条链；通告了下一分叉不是已经兼容；2124 ≠ 8 ≠ 7642 ≠ 7910）。
 签过的节点记录 ≠ 已经最新：[`worked-example-enr-vs-newest.md`](worked-example-enr-vs-newest.md)（看见签过的记录不是已经是最新一份；能多写键不是已经换了身份方案；778 ≠ 2124 ≠ 8 ≠ 7642）。
 ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`](worked-example-enr-request-vs-have.md)（看见 ping 里的记录序号不是已经有当前记录；能发请求不是已经解析；FindNode 找到人不是已经有记录；868 ≠ 778 ≠ 2124 ≠ 8）。

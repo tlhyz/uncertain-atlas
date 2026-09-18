@@ -1,3 +1,6 @@
+- [`forkid-notfeat-sold-as-bundled.md`](forkid-notfeat-sold-as-bundled.md) — 有了分叉标识 被写成已经改了共识 / 三向分叉已经能分开 / 未来分叉清单已经齐（不变量 1288）
+- [`forkid-notcompat-sold-as-bundled.md`](forkid-notcompat-sold-as-bundled.md) — 通告了下一分叉 被写成已经兼容 / 子集就已经陈旧 / 超集就已经该升级（不变量 1287）
+- [`forkid-notsame-sold-as-bundled.md`](forkid-notsame-sold-as-bundled.md) — 分叉哈希对上 被写成已经同一条链 / 已经朴素相等 / 创世非 Frontier 就已经算进已应用分叉（不变量 1286）
 - [`eip8-nothand-sold-as-bundled.md`](eip8-nothand-sold-as-bundled.md) — 能收新握手编码 被写成旧握手已经退役 / 已经改了共识 / 旧格式已经退役（不变量 1285）
 - [`eip8-notdisc-sold-as-bundled.md`](eip8-notdisc-sold-as-bundled.md) — 发现能吞多余字段 被写成发现已经升级 / 已经在说新协议 / 已经升级发现（不变量 1284）
 - [`eip8-nothello-sold-as-bundled.md`](eip8-nothello-sold-as-bundled.md) — 忽略 hello 版本 被写成已经在说新协议 / 已经谈成新线 / 新功能已经启用（不变量 1283）

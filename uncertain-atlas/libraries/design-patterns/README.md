@@ -1,3 +1,6 @@
+- [`name-the-forkid-notfeat-bar.md`](name-the-forkid-notfeat-bar.md) — EIP-2124 id-scheme not already consensus / not already three-way / not already future-list 正式三事（239 余量）（不变量 1288）
+- [`name-the-forkid-notcompat-bar.md`](name-the-forkid-notcompat-bar.md) — EIP-2124 nextfork not already compatible / not already stale / not already must-upgrade 正式三事（239 余量）（不变量 1287）
+- [`name-the-forkid-notsame-bar.md`](name-the-forkid-notsame-bar.md) — EIP-2124 hash not already same-chain / not already naive-eq / not already genesis-counted 正式三事（239 余量）（不变量 1286）
 - [`name-the-eip8-nothand-bar.md`](name-the-eip8-nothand-bar.md) — EIP-8 handshake not already old-retired / not already homestead-consensus / not already new-proto 正式三事（235 余量）（不变量 1285）
 - [`name-the-eip8-notdisc-bar.md`](name-the-eip8-notdisc-bar.md) — EIP-8 disc not already upgraded / not already new-proto / not already unknown-accepted 正式三事（235 余量）（不变量 1284）
 - [`name-the-eip8-nothello-bar.md`](name-the-eip8-nothello-bar.md) — EIP-8 hello not already new-proto / not already negotiated / not already extra-enabled 正式三事（235 余量）（不变量 1283）

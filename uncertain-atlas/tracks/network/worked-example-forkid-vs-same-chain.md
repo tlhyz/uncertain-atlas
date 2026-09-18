@@ -41,7 +41,7 @@ CRC 取值、分叉高度、编码样例是规范里的常数，本页不抄。
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见分叉标识对上就已经同一条链 / 就已经兼容 / 就已经改了共识」。若对照网络身份，必须分开创世、已应用分叉、通告的下一次、还在同步、软件陈旧、已经改共识。不要把四字节摘要写成密码学身份。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见分叉标识对上就已经同一条链 / 就已经兼容 / 就已经改了共识」。若对照网络身份，必须分开创世、已应用分叉、通告的下一次、还在同步、软件陈旧、已经改共识。不要把四字节摘要写成密码学身份。239 forkid vs same chain bundled unbundling 完成（1286 item 1 / 1287 item 2 / 1288 item 3）；精读 [`worked-example-forkid-notsame-vs-bundled.md`](worked-example-forkid-notsame-vs-bundled.md)（不变量 1286 item 1）、[`worked-example-forkid-notcompat-vs-bundled.md`](worked-example-forkid-notcompat-vs-bundled.md)（不变量 1287 item 2）、[`worked-example-forkid-notfeat-vs-bundled.md`](worked-example-forkid-notfeat-vs-bundled.md)（不变量 1288 item 3）。
 
 ## 本页不抄
 

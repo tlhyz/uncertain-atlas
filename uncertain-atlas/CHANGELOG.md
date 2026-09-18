@@ -1,3 +1,15 @@
+## 2026-09-18（续 1405）
+
+- 不变量 1288；语料 C1266；模式 name-the-forkid-notfeat-bar；反模式 forkid-notfeat-sold-as-bundled；L10.3 第 1257 条。填 L9.1 EIP-2124 id-scheme not already consensus / not already three-way / not already future-list 正式三事（239 余量）。239 forkid vs same chain bundled unbundling 完成（1288 item 3）。
+
+## 2026-09-18（续 1404）
+
+- 不变量 1287；语料 C1265；模式 name-the-forkid-notcompat-bar；反模式 forkid-notcompat-sold-as-bundled；L10.3 第 1256 条。填 L9.1 EIP-2124 nextfork not already compatible / not already stale / not already must-upgrade 正式三事（239 余量）。239 forkid vs same chain bundled unbundling 续（1287 item 2）。
+
+## 2026-09-18（续 1403）
+
+- 不变量 1286；语料 C1264；模式 name-the-forkid-notsame-bar；反模式 forkid-notsame-sold-as-bundled；L10.3 第 1255 条。填 L9.1 EIP-2124 hash not already same-chain / not already naive-eq / not already genesis-counted 正式三事（239 余量）。239 forkid vs same chain bundled unbundling 启动（1286 item 1）。
+
 ## 2026-09-18（续 1402）
 
 - 不变量 1285；语料 C1263；模式 name-the-eip8-nothand-bar；反模式 eip8-nothand-sold-as-bundled；L10.3 第 1254 条。填 L9.1 EIP-8 handshake not already old-retired / not already homestead-consensus / not already new-proto 正式三事（235 余量）。235 eip8 vs already new bundled unbundling 完成（1285 item 3）。

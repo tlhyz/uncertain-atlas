@@ -1,3 +1,18 @@
+| A6205 | 记录 | 会与 239 / 235 / 240 / 1286 / 1287 糊成「看见有了分叉标识就已经改了共识 interchangeable、就三向分叉已经能分开 interchangeable、就未来分叉清单已经齐 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-2124 id-scheme not already consensus / not already three-way / not already future-list 正式三事（239 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。239 forkid vs same chain bundled unbundling 完成（1288 item 3） |
+| A6206 | 高 | 看见有了分叉标识 会被写成已经改了共识 interchangeable / 235 interchangeable | 官方 EIP-2124 forkid item 3：not already 已经改了共识 / not 235 |
+| A6207 | 高 | 看见只通告下一次 会被写成三向分叉已经能分开 interchangeable / 240 interchangeable | 官方 EIP-2124 forkid item 3：not already 三向分叉已经能分开 / not 240 |
+| A6208 | 高 | 看见有了分叉标识 会被写成未来分叉清单已经齐 interchangeable | 官方 EIP-2124 forkid item 3：not already settled |
+| A6209 | 中 | 怎样伪造分叉标识、怎样假装同一条链、怎样在三向分叉里互踢会被抄进不确定 | 不抄。不写 怎样伪造分叉标识、怎样假装同一条链、怎样在三向分叉里互踢。不另写 19 节 |
+| A6200 | 记录 | 会与 239 / 235 / 210 / 1286 / 1288 糊成「看见通告了下一分叉就已经兼容 interchangeable、就已经陈旧 interchangeable、就本地已经该升级 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-2124 nextfork not already compatible / not already stale / not already must-upgrade 正式三事（239 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。239 forkid vs same chain bundled unbundling 续（1287 item 2） |
+| A6201 | 高 | 看见通告了下一分叉 会被写成已经兼容 interchangeable / 235 interchangeable | 官方 EIP-2124 forkid item 2：not already 已经兼容 / not 235 |
+| A6202 | 高 | 看见远端哈希是子集 会被写成已经陈旧 interchangeable / 210 interchangeable | 官方 EIP-2124 forkid item 2：not already 已经陈旧 / not 210 |
+| A6203 | 高 | 看见通告了下一分叉 会被写成本地已经该升级 interchangeable | 官方 EIP-2124 forkid item 2：not already settled |
+| A6204 | 中 | 怎样伪造分叉标识、怎样假装同一条链、怎样在三向分叉里互踢会被抄进不确定 | 不抄。不写 怎样伪造分叉标识、怎样假装同一条链、怎样在三向分叉里互踢。不另写 19 节 |
+| A6195 | 记录 | 会与 239 / 235 / 207 / 1287 / 1288 糊成「看见分叉哈希对上就已经同一条链 interchangeable、就已经用朴素相等判定同一条链 interchangeable、就已经把创世算进已应用分叉 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-2124 hash not already same-chain / not already naive-eq / not already genesis-counted 正式三事（239 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。239 forkid vs same chain bundled unbundling 启动（1286 item 1） |
+| A6196 | 高 | 看见分叉哈希对上 会被写成已经同一条链 interchangeable / 235 interchangeable | 官方 EIP-2124 forkid item 1：not already 已经同一条链 / not 235 |
+| A6197 | 高 | 看见创世规则已经不是 Frontier 会被写成已经用朴素相等判定同一条链 interchangeable / 207 interchangeable | 官方 EIP-2124 forkid item 1：not already 已经用朴素相等判定同一条链 / not 207 |
+| A6198 | 高 | 看见分叉哈希对上 会被写成已经把创世算进已应用分叉 interchangeable | 官方 EIP-2124 forkid item 1：not already settled |
+| A6199 | 中 | 怎样伪造分叉标识、怎样假装同一条链、怎样在三向分叉里互踢会被抄进不确定 | 不抄。不写 怎样伪造分叉标识、怎样假装同一条链、怎样在三向分叉里互踢。不另写 19 节 |
 | A6190 | 记录 | 会与 235 / 234 / 242 / 1283 / 1284 糊成「看见能收新握手编码就旧握手已经退役 interchangeable、就已经改了共识 interchangeable、就旧格式已经退役 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-8 handshake not already old-retired / not already homestead-consensus / not already new-proto 正式三事（235 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4。235 eip8 vs already new bundled unbundling 完成（1285 item 3） |
 | A6191 | 高 | 看见能收新握手编码 会被写成旧握手已经退役 interchangeable / 234 interchangeable | 官方 EIP-8 eip8 item 3：not already 旧握手已经退役 / not 234 |
 | A6192 | 高 | 看见仍收旧握手 会被写成已经改了共识 interchangeable / 242 interchangeable | 官方 EIP-8 eip8 item 3：not already 已经改了共识 / not 242 |
