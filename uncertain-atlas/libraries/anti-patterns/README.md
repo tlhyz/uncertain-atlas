@@ -1,3 +1,4 @@
+- [`maxgas-notenforced-sold-as-bundled.md`](maxgas-notenforced-sold-as-bundled.md) — 字段在 被写成已经在执行 / 已经和 MaxBytes -1 同一句 / 已经有费用市场（不变量 704）
 - [`querystate-notsnapshot-sold-as-bundled.md`](querystate-notsnapshot-sold-as-bundled.md) — 对齐 被写成已经装了快照 / 已经从创世重放 / 已经是 Snapshot 连接（不变量 703）
 - [`querystate-notcaughtup-sold-as-bundled.md`](querystate-notcaughtup-sold-as-bundled.md) — 上次 Commit 被写成已经跟上 / 已经是 CheckTxState / 已经同步（不变量 702）
 - [`querystate-notexecute-sold-as-bundled.md`](querystate-notexecute-sold-as-bundled.md) — 能查 被写成已经是 ExecuteTxState / 已经能写 / 已经同一份（不变量 701）
