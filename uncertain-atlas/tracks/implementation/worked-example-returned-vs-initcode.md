@@ -79,7 +79,7 @@
 | 经济 | 调用气是常数，不是磁盘/证明已经没有按长度的代价 |
 
 **推断：** 产品句若只写「合约有大小限制」，读者会把返回代码听成已经管 initcode，或把这次耗尽气听成整笔非法。  
-**建议：** 第一版若允许链上创建，必须分开返回代码界和 initcode 界。不要发明「一份上限管两种代码」。不要抄字节数。不要把规范 170 写成不变量 170。
+**建议：** 第一版若允许链上创建，必须分开返回代码界和 initcode 界。可以跳过「规范 170 就已经是不变量 170」。185 returned vs initcode bundled unbundling 完成（1440 item 1 / 1441 item 2 / 1442 item 3）；精读 [`worked-example-retc-notinit-vs-bundled.md`](worked-example-retc-notinit-vs-bundled.md)（不变量 1440 item 1）、[`worked-example-retc-nottx-vs-bundled.md`](worked-example-retc-nottx-vs-bundled.md)（不变量 1441 item 2）、[`worked-example-retc-notfree-vs-bundled.md`](worked-example-retc-notfree-vs-bundled.md)（不变量 1442 item 3）。不要发明「一份上限管两种代码」。不要抄字节数。不要把规范 170 写成不变量 170。
 
 ---
 

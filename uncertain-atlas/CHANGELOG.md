@@ -1,3 +1,15 @@
+## 2026-09-18（续 1559）
+
+- 不变量 1442；语料 C1420；模式 name-the-retc-notfree-bar；反模式 retc-notfree-sold-as-bundled；L10.3 第 1411 条。填 L5.1 EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）。185 returned vs initcode bundled unbundling 完成（1442 item 3）。
+
+## 2026-09-18（续 1558）
+
+- 不变量 1441；语料 C1419；模式 name-the-retc-nottx-bar；反模式 retc-nottx-sold-as-bundled；L10.3 第 1410 条。填 L5.1 EIP-170 oog-fail not already whole-tx-illegal / not already leftover-gas / not already 177 正式三事（185 余量）。185 returned vs initcode bundled unbundling 续（1441 item 2）。
+
+## 2026-09-18（续 1557）
+
+- 不变量 1440；语料 C1418；模式 name-the-retc-notinit-bar；反模式 retc-notinit-sold-as-bundled；L10.3 第 1409 条。填 L5.1 EIP-170 returned-bound not already initcode-bound / not already 3860 / not already 185-bundled 正式三事（185 余量）。185 returned vs initcode bundled unbundling 启动（1440 item 1）。
+
 ## 2026-09-18（续 1556）
 
 - 不变量 1439；语料 C1417；模式 name-the-icode-notrun-bar；反模式 icode-notrun-sold-as-bundled；L10.3 第 1408 条。填 L5.1 EIP-3860 jumpdest-fee not already ran-initcode / not already CREATE2-hash-fee / not already created 正式三事（176 余量）。176 initcode vs runtime bundled unbundling 完成（1439 item 3）。

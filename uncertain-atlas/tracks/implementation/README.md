@@ -1108,6 +1108,9 @@
 - [`worked-example-c63-notoog-vs-bundled.md`](worked-example-c63-notoog-vs-bundled.md) — 问超了≠already 耗尽气/没有调用深度上限/父帧气全给了子执行；≠237 bundled（不变量 1299）
 - [`worked-example-c63-notcap-vs-bundled.md`](worked-example-c63-notcap-vs-bundled.md) — 建议气限≠already 协议帽/官网吞吐是事实/改了共识帽；≠237 bundled（不变量 1300）
 - [`worked-example-call-63rds-vs-oog.md`](worked-example-call-63rds-vs-oog.md) — 看见读树涨价 ≠ 已经换成去掉六十四分之一；看见问超了 ≠ 已经耗尽气；看见建议气限 ≠ 已经是协议帽（不变量 237）
+- [`worked-example-retc-notinit-vs-bundled.md`](worked-example-retc-notinit-vs-bundled.md) — 返回代码超界≠already initcode超界/3860/185 bundled；≠185 bundled（不变量 1440）
+- [`worked-example-retc-nottx-vs-bundled.md`](worked-example-retc-nottx-vs-bundled.md) — 耗尽气失败≠already 整笔非法/剩余气回滚/177；≠185 bundled（不变量 1441）
+- [`worked-example-retc-notfree-vs-bundled.md`](worked-example-retc-notfree-vs-bundled.md) — CALL气常数≠already 无按长度代价/不变量170/已免费；≠185 bundled（不变量 1442）
 - [`worked-example-returned-vs-initcode.md`](worked-example-returned-vs-initcode.md) — 创建结束返回的运行时代码超界 ≠ 已经是 initcode 超界；这次失败是耗尽气 ≠ 已经整笔非法；规范 EIP-170 ≠ 不变量 170（不变量 185）
 - [`worked-example-reserved-prefix-vs-eof.md`](worked-example-reserved-prefix-vs-eof.md) — 新创建要存上链的代码以保留首字节开头 ≠ 已经是对象格式已经部署；链上已有以该字节开头的代码 ≠ 已经被本页改语义；3541 ≠ EOF 规范 ≠ 170 ≠ 3860（不变量 188）
 - [`worked-example-rvert-notburn-vs-bundled.md`](worked-example-rvert-notburn-vs-bundled.md) — 带回剩余气的回滚≠already 非法指令烧光/气耗尽烧光/177 bundled；≠177 bundled（不变量 1380）

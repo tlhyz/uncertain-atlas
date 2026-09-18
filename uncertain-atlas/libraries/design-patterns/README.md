@@ -1,3 +1,6 @@
+- [`name-the-retc-notfree-bar.md`](name-the-retc-notfree-bar.md) — EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）（不变量 1442）
+- [`name-the-retc-nottx-bar.md`](name-the-retc-nottx-bar.md) — EIP-170 oog-fail not already whole-tx-illegal / not already leftover-gas / not already 177 正式三事（185 余量）（不变量 1441）
+- [`name-the-retc-notinit-bar.md`](name-the-retc-notinit-bar.md) — EIP-170 returned-bound not already initcode-bound / not already 3860 / not already 185-bundled 正式三事（185 余量）（不变量 1440）
 - [`name-the-icode-notrun-bar.md`](name-the-icode-notrun-bar.md) — EIP-3860 jumpdest-fee not already ran-initcode / not already CREATE2-hash-fee / not already created 正式三事（176 余量）（不变量 1439）
 - [`name-the-icode-nottx-bar.md`](name-the-icode-nottx-bar.md) — EIP-3860 create-tx-oversize not already CREATE-fail / not already 2681 / not already in-EVM 正式三事（176 余量）（不变量 1438）
 - [`name-the-icode-not170-bar.md`](name-the-icode-not170-bar.md) — EIP-3860 initcode-bound not already 170-runtime / not already 1014 / not already 176-bundled 正式三事（176 余量）（不变量 1437）

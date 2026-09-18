@@ -1,3 +1,18 @@
+| A6975 | 记录 | 会与 185 / 170 / 176 / 1440 / 1441 糊成「看见CALL 气是常数不是已经没有按长度代价就已经没有按长度的磁盘/证明代价 interchangeable、就已经是不变量 170 interchangeable、就已经免费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。185 returned vs initcode bundled unbundling 完成（1442 item 3） |
+| A6976 | 高 | 看见CALL 气是常数不是已经没有按长度代价 会被写成已经没有按长度的磁盘/证明代价 interchangeable / 170 interchangeable | 官方 EIP-170 retc item 3：not already 已经没有按长度的磁盘/证明代价 / not 170 |
+| A6977 | 高 | 看见constant CALL gas is not already free of length cost 会被写成已经是不变量 170 interchangeable / 176 interchangeable | 官方 EIP-170 retc item 3：not already 已经是不变量 170 / not 176 |
+| A6978 | 高 | 看见CALL 气是常数不是已经没有按长度代价 会被写成已经免费 interchangeable | 官方 EIP-170 retc item 3：not already settled |
+| A6979 | 中 | 怎样造超长返回代码会被抄进不确定 | 不抄。不写 怎样造超长返回代码。不另写 19 节 |
+| A6970 | 记录 | 会与 185 / 177 / 176 / 1440 / 1442 糊成「看见这次失败是耗尽气不是已经整笔非法就已经整笔非法 interchangeable、就已经是带回剩余气的回滚 interchangeable、就已经是不变量 177 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-170 oog-fail not already whole-tx-illegal / not already leftover-gas / not already 177 正式三事（185 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。185 returned vs initcode bundled unbundling 续（1441 item 2） |
+| A6971 | 高 | 看见这次失败是耗尽气不是已经整笔非法 会被写成已经整笔非法 interchangeable / 177 interchangeable | 官方 EIP-170 retc item 2：not already 已经整笔非法 / not 177 |
+| A6972 | 高 | 看见OOG fail is not already whole-tx illegal 会被写成已经是带回剩余气的回滚 interchangeable / 176 interchangeable | 官方 EIP-170 retc item 2：not already 已经是带回剩余气的回滚 / not 176 |
+| A6973 | 高 | 看见这次失败是耗尽气不是已经整笔非法 会被写成已经是不变量 177 interchangeable | 官方 EIP-170 retc item 2：not already settled |
+| A6974 | 中 | 怎样造超长返回代码会被抄进不确定 | 不抄。不写 怎样造超长返回代码。不另写 19 节 |
+| A6965 | 记录 | 会与 185 / 176 / 188 / 1441 / 1442 糊成「看见返回的运行时代码超界不是已经是 initcode 超界就已经是 initcode 超界 interchangeable、就已经是 3860 interchangeable、就已经 185 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-170 returned-bound not already initcode-bound / not already 3860 / not already 185-bundled 正式三事（185 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。185 returned vs initcode bundled unbundling 启动（1440 item 1） |
+| A6966 | 高 | 看见返回的运行时代码超界不是已经是 initcode 超界 会被写成已经是 initcode 超界 interchangeable / 176 interchangeable | 官方 EIP-170 retc item 1：not already 已经是 initcode 超界 / not 176 |
+| A6967 | 高 | 看见returned-code bound is not already initcode bound 会被写成已经是 3860 interchangeable / 188 interchangeable | 官方 EIP-170 retc item 1：not already 已经是 3860 / not 188 |
+| A6968 | 高 | 看见返回的运行时代码超界不是已经是 initcode 超界 会被写成已经 185 bundled interchangeable | 官方 EIP-170 retc item 1：not already settled |
+| A6969 | 中 | 怎样造超长返回代码会被抄进不确定 | 不抄。不写 怎样造超长返回代码。不另写 19 节 |
 | A6960 | 记录 | 会与 176 / 185 / 188 / 1437 / 1438 糊成「看见按字收跳转分析费不是已经跑完 initcode就已经跑完 initcode interchangeable、就已经是 CREATE2 算地址的哈希费 interchangeable、就已经创建 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3860 jumpdest-fee not already ran-initcode / not already CREATE2-hash-fee / not already created 正式三事（176 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。176 initcode vs runtime bundled unbundling 完成（1439 item 3） |
 | A6961 | 高 | 看见按字收跳转分析费不是已经跑完 initcode 会被写成已经跑完 initcode interchangeable / 185 interchangeable | 官方 EIP-3860 icode item 3：not already 已经跑完 initcode / not 185 |
 | A6962 | 高 | 看见jumpdest fee is not already having run initcode 会被写成已经是 CREATE2 算地址的哈希费 interchangeable / 188 interchangeable | 官方 EIP-3860 icode item 3：not already 已经是 CREATE2 算地址的哈希费 / not 188 |

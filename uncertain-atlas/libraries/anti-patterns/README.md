@@ -1,3 +1,6 @@
+- [`retc-notfree-sold-as-bundled.md`](retc-notfree-sold-as-bundled.md) — CALL 气常数 被写成已经没有按长度代价 / 就已经是不变量 170 / 就已经免费（不变量 1442）
+- [`retc-nottx-sold-as-bundled.md`](retc-nottx-sold-as-bundled.md) — 耗尽气失败 被写成已经整笔非法 / 就已经是剩余气回滚 / 就已经是 177（不变量 1441）
+- [`retc-notinit-sold-as-bundled.md`](retc-notinit-sold-as-bundled.md) — 返回代码超界 被写成已经是 initcode 超界 / 就已经是 3860 / 就已经 185 bundled（不变量 1440）
 - [`icode-notrun-sold-as-bundled.md`](icode-notrun-sold-as-bundled.md) — 按字分析费 被写成已经跑完 initcode / 就已经是 CREATE2 哈希费 / 就已经创建（不变量 1439）
 - [`icode-nottx-sold-as-bundled.md`](icode-nottx-sold-as-bundled.md) — 创建交易超界 被写成已经是 CREATE 失败 / 就已经是 2681 / 就已经进 EVM（不变量 1438）
 - [`icode-not170-sold-as-bundled.md`](icode-not170-sold-as-bundled.md) — initcode 超界 被写成已经是部署代码超界 / 就已经是 1014 / 就已经 176 bundled（不变量 1437）
