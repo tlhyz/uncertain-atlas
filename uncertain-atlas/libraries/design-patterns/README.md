@@ -1,3 +1,6 @@
+- [`name-the-lsig137-nothabit-bar.md`](name-the-lsig137-nothabit-bar.md) — BIP-137 old-habit not already interoperable / not already old-verifiers / not already settled 正式三事（294 余量）（不变量 1201）
+- [`name-the-lsig137-notaddr-bar.md`](name-the-lsig137-notaddr-bar.md) — BIP-137 header-byte not already have-address / not already spendable-output / not already settled 正式三事（294 余量）（不变量 1200）
+- [`name-the-lsig137-not322-bar.md`](name-the-lsig137-not322-bar.md) — BIP-137 this-sign not already 322 / not already 258-control / not already settled 正式三事（294 余量）（不变量 1199）
 - [`name-the-por127-notpor-bar.md`](name-the-por127-notpor-bar.md) — BIP-127 por-field not already ordinary-spend / not already have-prev-utxo / not already settled 正式三事（293 余量）（不变量 1198）
 - [`name-the-por127-notctrl-bar.md`](name-the-por127-notctrl-bar.md) — BIP-127 remaining-signed not already 258-control / not already paid / not already settled 正式三事（293 余量）（不变量 1197）
 - [`name-the-por127-notspend-bar.md`](name-the-por127-notspend-bar.md) — BIP-127 por-tx not already spendable / not already confirmable / not already settled 正式三事（293 余量）（不变量 1196）

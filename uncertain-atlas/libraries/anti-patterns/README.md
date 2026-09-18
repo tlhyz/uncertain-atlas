@@ -1,3 +1,6 @@
+- [`lsig137-nothabit-sold-as-bundled.md`](lsig137-nothabit-sold-as-bundled.md) — 旧 P2PKH 习惯 被写成已经互操作 / 已经能被所有旧校验器收下 / 已经交差（不变量 1201）
+- [`lsig137-notaddr-sold-as-bundled.md`](lsig137-notaddr-sold-as-bundled.md) — 头字节 被写成已经有那条地址 / 已经能花 / 已经交差（不变量 1200）
+- [`lsig137-not322-sold-as-bundled.md`](lsig137-not322-sold-as-bundled.md) — 本页这种签消息 被写成已经是 322 / 已经控制资金 / 已经交差（不变量 1199）
 - [`por127-notpor-sold-as-bundled.md`](por127-notpor-sold-as-bundled.md) — POR 栏 被写成已经是普通花费 / 已经有前一笔未花输出 / 已经交差（不变量 1198）
 - [`por127-notctrl-sold-as-bundled.md`](por127-notctrl-sold-as-bundled.md) — 其余输入签过 被写成已经是 258 那种控制资金 / 已经付过 / 已经交差（不变量 1197）
 - [`por127-notspend-sold-as-bundled.md`](por127-notspend-sold-as-bundled.md) — 储备证明交易 被写成已经能花 / 已经能确认 / 已经交差（不变量 1196）

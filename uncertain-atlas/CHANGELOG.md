@@ -1,3 +1,15 @@
+## 2026-09-18（续 1318）
+
+- 不变量 1201；语料 C1179；模式 name-the-lsig137-nothabit-bar；反模式 lsig137-nothabit-sold-as-bundled；L10.3 第 1170 条。填 L0.7 / L1.2 / L3.6 BIP-137 old-habit not already interoperable / not already old-verifiers / not already settled 正式三事（294 余量）。294 legacy sign vs 322 bundled unbundling 完成（1201 item 3）。
+
+## 2026-09-18（续 1317）
+
+- 不变量 1200；语料 C1178；模式 name-the-lsig137-notaddr-bar；反模式 lsig137-notaddr-sold-as-bundled；L10.3 第 1169 条。填 L0.7 / L1.2 / L3.6 BIP-137 header-byte not already have-address / not already spendable-output / not already settled 正式三事（294 余量）。294 legacy sign vs 322 bundled unbundling 续（1200 item 2）。
+
+## 2026-09-18（续 1316）
+
+- 不变量 1199；语料 C1177；模式 name-the-lsig137-not322-bar；反模式 lsig137-not322-sold-as-bundled；L10.3 第 1168 条。填 L0.7 / L1.2 / L3.6 BIP-137 this-sign not already 322 / not already 258-control / not already settled 正式三事（294 余量）。294 legacy sign vs 322 bundled unbundling 启动（1199 item 1）。
+
 ## 2026-09-18（续 1315）
 
 - 不变量 1198；语料 C1176；模式 name-the-por127-notpor-bar；反模式 por127-notpor-sold-as-bundled；L10.3 第 1167 条。填 L0.7 / L1.4 / L3.6 BIP-127 por-field not already ordinary-spend / not already have-prev-utxo / not already settled 正式三事（293 余量）。293 reserves vs spend bundled unbundling 完成（1198 item 3）。

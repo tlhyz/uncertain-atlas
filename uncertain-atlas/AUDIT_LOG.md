@@ -1,3 +1,18 @@
+| A5770 | 记录 | 会与 294 / 258 / 293 / 1199 / 1200 糊成「看见旧的 P2PKH 签消息习惯就已经互操作 interchangeable、就已经能被所有旧校验器收下 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.2 / L3.6 BIP-137 old-habit not already interoperable / not already old-verifiers / not already settled 正式三事（294 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。294 legacy sign vs 322 bundled unbundling 完成（1201 item 3） |
+| A5771 | 高 | 看见旧的 P2PKH 签消息习惯 会被写成已经互操作 interchangeable / 258 interchangeable | 官方 BIP-137 legacy-sign item 3：not already interoperable / not 258 |
+| A5772 | 高 | 看见本页这种格式 会被写成已经能被所有旧校验器收下 interchangeable / 293 interchangeable | 官方 BIP-137 legacy-sign item 3：not already old-verifiers / not 293 |
+| A5773 | 高 | 看见覆盖了旧地址 会被写成已经交差 interchangeable | 官方 BIP-137 legacy-sign item 3：not already settled |
+| A5774 | 中 | 怎样从头字节还原公钥会被抄进不确定 | 不抄。不写怎样从头字节还原公钥。不另写 19 节 |
+| A5765 | 记录 | 会与 294 / 174 / 179 / 1199 / 1201 糊成「看见头字节标了地址种类就已经有那条地址 interchangeable、就已经能花 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.2 / L3.6 BIP-137 header-byte not already have-address / not already spendable-output / not already settled 正式三事（294 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。294 legacy sign vs 322 bundled unbundling 续（1200 item 2） |
+| A5766 | 高 | 看见头字节标了地址种类 会被写成已经有那条地址 interchangeable / 174 interchangeable | 官方 BIP-137 legacy-sign item 2：not already have-address / not 174 |
+| A5767 | 高 | 看见能分开种类 会被写成已经能花 interchangeable / 179 interchangeable | 官方 BIP-137 legacy-sign item 2：not already spendable-output / not 179 |
+| A5768 | 高 | 看见格式能区分 会被写成已经交差 interchangeable | 官方 BIP-137 legacy-sign item 2：not already settled |
+| A5769 | 中 | 怎样从头字节还原公钥会被抄进不确定 | 不抄。不写怎样从头字节还原公钥。不另写 19 节 |
+| A5760 | 记录 | 会与 294 / 258 / 293 / 1200 / 1201 糊成「看见本页这种签消息就已经是 322 interchangeable、就已经控制资金 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.2 / L3.6 BIP-137 this-sign not already 322 / not already 258-control / not already settled 正式三事（294 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。294 legacy sign vs 322 bundled unbundling 启动（1199 item 1） |
+| A5761 | 高 | 看见本页这种签消息 会被写成已经是 322 interchangeable / 258 interchangeable | 官方 BIP-137 legacy-sign item 1：not already 322 / not 258 |
+| A5762 | 高 | 看见验过本页这种签 会被写成已经控制资金 interchangeable / 293 interchangeable | 官方 BIP-137 legacy-sign item 1：not already 258-control / not 293 |
+| A5763 | 高 | 看见为了兼容还在用 会被写成已经交差 interchangeable | 官方 BIP-137 legacy-sign item 1：not already settled |
+| A5764 | 中 | 怎样从头字节还原公钥会被抄进不确定 | 不抄。不写怎样从头字节还原公钥。不另写 19 节 |
 | A5755 | 记录 | 会与 293 / 179 / 182 / 1196 / 1197 糊成「看见 POR 栏就已经是普通花费 interchangeable、就已经有前一笔未花输出 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-127 por-field not already ordinary-spend / not already have-prev-utxo / not already settled 正式三事（293 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。293 reserves vs spend bundled unbundling 完成（1198 item 3） |
 | A5756 | 高 | 看见 POR 栏 会被写成已经是普通花费 interchangeable / 179 interchangeable | 官方 BIP-127 reserves item 3：not already ordinary-spend / not 179 |
 | A5757 | 高 | 看见硬件钱包弹出确认 会被写成已经有前一笔未花输出 interchangeable / 182 interchangeable | 官方 BIP-127 reserves item 3：not already have-prev-utxo / not 182 |

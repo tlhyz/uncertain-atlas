@@ -888,6 +888,9 @@
 - [`worked-example-tn94-notstorm-vs-bundled.md`](worked-example-tn94-notstorm-vs-bundled.md) — 20 分钟例外≠already no-storm/exception-removed/settled；≠292 bundled（不变量 1191）
 - [`worked-example-tn94-not3-vs-bundled.md`](worked-example-tn94-not3-vs-bundled.md) — Testnet 4≠already testnet3/mainnet/settled；≠292 bundled（不变量 1190）
 - [`worked-example-testnet4-vs-testnet3.md`](worked-example-testnet4-vs-testnet3.md) — Testnet 4 ≠ 已经是 Testnet 3；20 分钟例外 ≠ 已经没有块风暴；会 Testnet 3 ≠ 已经能安全跟（不变量 292）
+- [`../lifecycle/worked-example-lsig137-nothabit-vs-bundled.md`](../lifecycle/worked-example-lsig137-nothabit-vs-bundled.md) — 旧习惯≠already interoperable/old-verifiers/settled；≠294 bundled（不变量 1201）
+- [`../lifecycle/worked-example-lsig137-notaddr-vs-bundled.md`](../lifecycle/worked-example-lsig137-notaddr-vs-bundled.md) — 头字节≠already have-address/spendable-output/settled；≠294 bundled（不变量 1200）
+- [`../lifecycle/worked-example-lsig137-not322-vs-bundled.md`](../lifecycle/worked-example-lsig137-not322-vs-bundled.md) — 本页这种签≠already 322/258-control/settled；≠294 bundled（不变量 1199）
 - [`../lifecycle/worked-example-por127-notpor-vs-bundled.md`](../lifecycle/worked-example-por127-notpor-vs-bundled.md) — POR栏≠already ordinary-spend/have-prev-utxo/settled；≠293 bundled（不变量 1198）
 - [`../lifecycle/worked-example-por127-notctrl-vs-bundled.md`](../lifecycle/worked-example-por127-notctrl-vs-bundled.md) — 其余输入签过≠already 258-control/paid/settled；≠293 bundled（不变量 1197）
 - [`../lifecycle/worked-example-por127-notspend-vs-bundled.md`](../lifecycle/worked-example-por127-notspend-vs-bundled.md) — 储备证明交易≠already spendable/confirmable/settled；≠293 bundled（不变量 1196）
