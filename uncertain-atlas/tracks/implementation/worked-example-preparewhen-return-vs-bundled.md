@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When return / use-as-proposal 正式三事，必须分开 includes tx list in return 是不是 raw proposal bundled interchangeable、returns from call 是不是 Process 紧跟 Prepare bundled interchangeable、uses modified block as proposal 是不是 validValue 跳过 Prepare interchangeable / 已经 Process 八栏齐 interchangeable。可以跳过「看见应用改了列表就已经 raw proposal bundled interchangeable、已经 Process 紧跟 Prepare interchangeable、已经 validValue 跳过 Prepare interchangeable」。不要另写怎样填回包、怎样广播提案。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When return / use-as-proposal 正式三事，必须分开 includes tx list in return 是不是 raw proposal bundled interchangeable、returns from call 是不是 Process 紧跟 Prepare bundled interchangeable、uses modified block as proposal 是不是 validValue 跳过 Prepare interchangeable / 已经 Process 八栏齐 interchangeable。可以跳过「看见应用改了列表就已经 raw proposal bundled interchangeable、已经 Process 紧跟 Prepare interchangeable、已经 validValue 跳过 Prepare interchangeable」。506 PrepareProposal When return bundled unbundling 完成（1313 item 1 / 1314 item 2 / 1315 item 3）；精读 [`worked-example-whenret-notlist-vs-bundled.md`](worked-example-whenret-notlist-vs-bundled.md)（不变量 1313 item 1）、[`worked-example-whenret-notret-vs-bundled.md`](worked-example-whenret-notret-vs-bundled.md)（不变量 1314 item 2）、[`worked-example-whenret-notuse-vs-bundled.md`](worked-example-whenret-notuse-vs-bundled.md)（不变量 1315 item 3）。不要另写怎样填回包、怎样广播提案。
 
 ## 本页不抄
 

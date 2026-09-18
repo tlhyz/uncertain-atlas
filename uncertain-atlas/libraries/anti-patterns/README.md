@@ -1,3 +1,6 @@
+- [`whenret-notuse-sold-as-bundled.md`](whenret-notuse-sold-as-bundled.md) — 用改过的块当提案 被写成已经 validValue 跳过 / 就已经 txs 对得上 / 就已经 Process 八栏齐（不变量 1315）
+- [`whenret-notret-sold-as-bundled.md`](whenret-notret-sold-as-bundled.md) — 从 Prepare 调用返回 被写成已经 Process 紧跟 Prepare / 就已经同步在等 / 就已经 Process 八栏（不变量 1314）
+- [`whenret-notlist-sold-as-bundled.md`](whenret-notlist-sold-as-bundled.md) — 回包带交易列表 被写成已经 raw proposal / 就已经能改列表 / 就已经是 Response 栏 txs（不变量 1313）
 - [`prepwhen-notmanip-sold-as-bundled.md`](prepwhen-notmanip-sold-as-bundled.md) — 可以改列表 被写成已经 Prepare 改列表 / 就已经是 ExecuteTxState / 就已经迟到扩展（不变量 1312）
 - [`prepwhen-notsync-sold-as-bundled.md`](prepwhen-notsync-sold-as-bundled.md) — Prepare 同步调用 被写成已经能在返回后再改裁决 / 就已经离开关键路径 / 就已经 Process 同步（不变量 1311）
 - [`prepwhen-notprio-sold-as-bundled.md`](prepwhen-notprio-sold-as-bundled.md) — 按优先级收池造头 被写成已经 raw proposal / 就已经整池可见 / 就已经 validValue 跳过（不变量 1310）

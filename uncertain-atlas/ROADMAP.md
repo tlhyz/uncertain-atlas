@@ -15,9 +15,9 @@
 完成标准（事实 + 建议混合，见各条标注）：
 
 1. 五条轨（index / courses / protocols / tracks / libraries）互相指认，无孤立读书笔记。
-2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1312）。
+2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1315）。
 3. 决策矩阵「不确定候选」列填完**建议档**（非最终选型）。
-4. 对抗语料 C01–C1290+ 有 runner，能批量扫描文案/测试钩子。
+4. 对抗语料 C01–C1293+ 有 runner，能批量扫描文案/测试钩子。
 5. 过滤器页链（Cardano / Babylon / EigenLayer 等）要么补 19 节，要么在 index 明确「永久过滤器」。
 6. 单一 canonical 分支 + 清晰 merge 策略（见 Phase 0）。
 
@@ -34,7 +34,7 @@
 | 协议档案 | 20+ 链/品类 19 节模板 | 强 |
 | 横向专题 | 16 tracks；failure-museum 92+ 案 | 强 |
 | 模式/反模式 | 500+ design-patterns；650+ anti-patterns | 强 |
-| 不变量库 | 1312+ 可测试句；ABCI++ 主线 | 进行中（强） |
+| 不变量库 | 1315+ 可测试句；ABCI++ 主线 | 进行中（强） |
 | 通读路径 | `index/04-study-path.md` 六通 | 强 |
 
 ### 需调整
@@ -71,7 +71,7 @@
 |---|---|---|
 | P1-1 | 威胁模型 v1 | `libraries/threat-model/` _actor / _asset / _boundary 三页 |
 | P1-2 | settlement-copy 与矩阵对齐 | L10.3 清单 ↔ 矩阵行可互链 |
-| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325/127/137/70/38/13/321/322/352/353/47/30/147/155/130/133/338/434/339/330/159/144/111/35/61/31/14/324/157/158 1115–1282；EIP-8 1283–1285；EIP-2124 1286–1288；EIP-778 1289–1291；EIP-868 1292–1294；EIP-100 1295–1297；EIP-150 1298–1300；EIP-658 1301–1303；PrepareUsage 1304–1306；PrepareNochecks 1307–1309；PrepareWhen 1310–1312 | AUDIT_LOG 连续；invariants README 更新 |
+| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325/127/137/70/38/13/321/322/352/353/47/30/147/155/130/133/338/434/339/330/159/144/111/35/61/31/14/324/157/158 1115–1282；EIP-8 1283–1285；EIP-2124 1286–1288；EIP-778 1289–1291；EIP-868 1292–1294；EIP-100 1295–1297；EIP-150 1298–1300；EIP-658 1301–1303；PrepareUsage 1304–1306；PrepareNochecks 1307–1309；PrepareWhen 1310–1312；PrepareWhenRet 1313–1315 | AUDIT_LOG 连续；invariants README 更新 |
 | P1-4 | runner 接 pytest | 至少 10 条 Cxx 有占位测试 |
 | P1-5 | PQ 尺寸卡补 CPU 列 | `tracks/post-quantum/engineering-ledger.md` 有测量方法 |
 
@@ -313,8 +313,9 @@
 | 2026-09-18 | P1-3 1304–1306 PrepareUsage raw proposal 不是已经 Prepare 改列表 / MAY 超上限不是已经 Req 2 / MUST remove 不是已经引擎会帮你裁 拆句（503 item 1/2/3） |
 | 2026-09-18 | P1-3 1307–1309 PrepareNochecks 不再做额外检查不是已经验过重复 / 回包验不过崩溃不是 Process REJECT / MAY 非确定不是必须确定 拆句（504 item 1/2/3） |
 | 2026-09-18 | P1-3 1310–1312 PrepareWhen 按优先级收池造头不是 raw proposal / 同步调用不是能返回后再改 / 可以改列表不是 Prepare 改列表 拆句（505 item 1/2/3） |
+| 2026-09-18 | P1-3 1313–1315 PrepareWhenRet 回包带列表不是 raw proposal / 返回不是 Process 紧跟 Prepare / 用改过的块当提案不是 validValue 跳过 拆句（506 item 1/2/3） |
 
-下一批默认：**P1-3 官方三事 1313+**（继续 cometbft 拆句）。  
+下一批默认：**P1-3 官方三事 1316+**（继续 cometbft 拆句）。  
 唤醒后先跑 `python3 tools/review_audit.py`，见 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
 ---

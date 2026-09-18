@@ -1,3 +1,6 @@
+- [`name-the-whenret-notuse-bar.md`](name-the-whenret-notuse-bar.md) — PrepareWhenRet use-as-proposal not already validValue-skip / not already txs-equal / not already eight-cols 正式三事（506 余量）（不变量 1315）
+- [`name-the-whenret-notret-bar.md`](name-the-whenret-notret-bar.md) — PrepareWhenRet returns not already Process-follows-Prepare / not already sync-blocks / not already Process-all-info 正式三事（506 余量）（不变量 1314）
+- [`name-the-whenret-notlist-bar.md`](name-the-whenret-notlist-bar.md) — PrepareWhenRet return-list not already raw-proposal / not already manipulate / not already Response-txs 正式三事（506 余量）（不变量 1313）
 - [`name-the-prepwhen-notmanip-bar.md`](name-the-prepwhen-notmanip-bar.md) — PrepareWhen manip not already Prepare-list / not already ExecuteTxState / not already late-ext 正式三事（505 余量）（不变量 1312）
 - [`name-the-prepwhen-notsync-bar.md`](name-the-prepwhen-notsync-bar.md) — PrepareWhen sync not already can-change-after-return / not already left-critical-path / not already Process-sync 正式三事（505 余量）（不变量 1311）
 - [`name-the-prepwhen-notprio-bar.md`](name-the-prepwhen-notprio-bar.md) — PrepareWhen collect not already raw-proposal / not already full-pool / not already validValue-skip 正式三事（505 余量）（不变量 1310）

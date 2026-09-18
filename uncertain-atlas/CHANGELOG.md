@@ -1,3 +1,15 @@
+## 2026-09-18（续 1432）
+
+- 不变量 1315；语料 C1293；模式 name-the-whenret-notuse-bar；反模式 whenret-notuse-sold-as-bundled；L10.3 第 1284 条。填 L4.4 PrepareWhenRet use-as-proposal not already validValue-skip / not already txs-equal / not already eight-cols 正式三事（506 余量）。506 PrepareProposal When return bundled unbundling 完成（1315 item 3）。
+
+## 2026-09-18（续 1431）
+
+- 不变量 1314；语料 C1292；模式 name-the-whenret-notret-bar；反模式 whenret-notret-sold-as-bundled；L10.3 第 1283 条。填 L4.4 PrepareWhenRet returns not already Process-follows-Prepare / not already sync-blocks / not already Process-all-info 正式三事（506 余量）。506 PrepareProposal When return bundled unbundling 续（1314 item 2）。
+
+## 2026-09-18（续 1430）
+
+- 不变量 1313；语料 C1291；模式 name-the-whenret-notlist-bar；反模式 whenret-notlist-sold-as-bundled；L10.3 第 1282 条。填 L4.4 PrepareWhenRet return-list not already raw-proposal / not already manipulate / not already Response-txs 正式三事（506 余量）。506 PrepareProposal When return bundled unbundling 启动（1313 item 1）。
+
 ## 2026-09-18（续 1429）
 
 - 不变量 1312；语料 C1290；模式 name-the-prepwhen-notmanip-bar；反模式 prepwhen-notmanip-sold-as-bundled；L10.3 第 1281 条。填 L4.4 PrepareWhen manip not already Prepare-list / not already ExecuteTxState / not already late-ext 正式三事（505 余量）。505 PrepareProposal When collect bundled unbundling 完成（1312 item 3）。

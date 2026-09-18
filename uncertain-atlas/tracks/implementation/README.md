@@ -372,6 +372,9 @@
 - [`worked-example-extwhen-return-vs-bundled.md`](worked-example-extwhen-return-vs-bundled.md) — returns extension ≠ ExtendVote When 正式流程 bundled；not interpreted ≠ 已经是同一份扩展；step 3 before CanonicalVoteExtension ≠ ExtendVote 何时调用 bundled（不变量 509）
 - [`worked-example-extwhen-call-vs-bundled.md`](worked-example-extwhen-call-vs-bundled.md) — calls ExtendVote with v ≠ lock values bundled；synchronous ExtendVote call ≠ ExtendVote 何时调用 bundled；step 2 before return extension ≠ ExtendVote When 正式流程 bundled（不变量 508）
 - [`worked-example-extwhen-lock-vs-bundled.md`](worked-example-extwhen-lock-vs-bundled.md) — sets lockedValue/validValue ≠ +2/3 prevote 锁住 bundled；sets lockedRound/validRound ≠ validValue 跳过 Prepare；step 1 before ExtendVote call ≠ ExtendVote When 正式流程 bundled（不变量 507）
+- [`worked-example-whenret-notlist-vs-bundled.md`](worked-example-whenret-notlist-vs-bundled.md) — 回包带交易列表≠already raw proposal/manipulate能力/Response栏txs；≠506 bundled（不变量 1313）
+- [`worked-example-whenret-notret-vs-bundled.md`](worked-example-whenret-notret-vs-bundled.md) — 从Prepare调用返回≠already Process紧跟Prepare/同步在等/Process八栏；≠506 bundled（不变量 1314）
+- [`worked-example-whenret-notuse-vs-bundled.md`](worked-example-whenret-notuse-vs-bundled.md) — 用改过的块当提案≠already validValue跳过/txs对得上/Process八栏齐；≠506 bundled（不变量 1315）
 - [`worked-example-preparewhen-return-vs-bundled.md`](worked-example-preparewhen-return-vs-bundled.md) — includes tx list in return ≠ raw proposal bundled；returns from call ≠ Process 紧跟 Prepare bundled；uses modified block as proposal ≠ validValue 跳过 Prepare（不变量 506）
 - [`worked-example-prepwhen-notprio-vs-bundled.md`](worked-example-prepwhen-notprio-vs-bundled.md) — 按优先级收池造头≠already raw proposal/整池可见/validValue跳过；≠505 bundled（不变量 1310）
 - [`worked-example-prepwhen-notsync-vs-bundled.md`](worked-example-prepwhen-notsync-vs-bundled.md) — Prepare同步调用≠already 返回后再改裁决/离开关键路径/Process同步；≠505 bundled（不变量 1311）
