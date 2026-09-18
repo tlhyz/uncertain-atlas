@@ -1,3 +1,6 @@
+- [`name-the-finrestr-notproc-bar.md`](name-the-finrestr-notproc-bar.md) — FinalizeBlockRequest.next_validators_hash not already process-hash / not already prepare-hash / not already settled 正式三事（428 余量）（不变量 1063）
+- [`name-the-finrestr-notpunish-bar.md`](name-the-finrestr-notpunish-bar.md) — FinalizeBlockRequest.misbehavior not already rewarded / not already process-mis / not already settled 正式三事（428 余量）（不变量 1062）
+- [`name-the-finrestr-nothash-bar.md`](name-the-finrestr-nothash-bar.md) — FinalizeBlockRequest.hash not already process-hash / not already processed / not already settled 正式三事（428 余量）（不变量 1061）
 - [`name-the-procend-notprelim-bar.md`](name-the-procend-notprelim-bar.md) — PrepareProposalResponse.txs not already preliminary / not already same-round / not already settled 正式三事（427 余量）（不变量 1060）
 - [`name-the-procend-notmaking-bar.md`](name-the-procend-notmaking-bar.md) — ProcessProposalRequest.proposer_address not already making / not already header-known / not already settled 正式三事（427 余量）（不变量 1059）
 - [`name-the-procend-nothash-bar.md`](name-the-procend-nothash-bar.md) — ProcessProposalRequest.next_validators_hash not already prepare-hash / not already finalize-hash / not already settled 正式三事（427 余量）（不变量 1058）

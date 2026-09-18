@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 请求余栏就已经是 ProcessProposalRequest.hash、已经定奖惩、已经是 Process 请求末栏的 next_validators_hash」，必须分开 FinalizeBlockRequest.hash 是已决块的哈希是不是已经是 ProcessProposalRequest.hash、FinalizeBlockRequest.misbehavior 是过错验证者信息列表是不是已经定奖惩、FinalizeBlockRequest.next_validators_hash 是下一验证者集合默克尔根是不是已经是 Process 请求末栏的 next_validators_hash。可以跳过「看见填了 Finalize 请求余栏就已经是 ProcessProposalRequest.hash」。不要另写怎样写 Finalize 请求余栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 请求余栏就已经是 ProcessProposalRequest.hash、已经定奖惩、已经是 Process 请求末栏的 next_validators_hash」，必须分开 FinalizeBlockRequest.hash 是已决块的哈希是不是已经是 ProcessProposalRequest.hash、FinalizeBlockRequest.misbehavior 是过错验证者信息列表是不是已经定奖惩、FinalizeBlockRequest.next_validators_hash 是下一验证者集合默克尔根是不是已经是 Process 请求末栏的 next_validators_hash。可以跳过「看见填了 Finalize 请求余栏就已经是 ProcessProposalRequest.hash」。不要另写怎样写 Finalize 请求余栏。428 finreqrest vs procreq bundled unbundling 完成（1061 item 1 / 1062 item 2 / 1063 item 3）；精读 [`worked-example-finrestr-nothash-vs-bundled.md`](worked-example-finrestr-nothash-vs-bundled.md)（不变量 1061 item 1）。
 
 ## 本页不抄
 

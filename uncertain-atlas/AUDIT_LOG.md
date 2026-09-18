@@ -1,3 +1,18 @@
+| A5075 | 记录 | 会与 428 / 427 / 426 / 1061 / 1062 糊成「看见 FinalizeBlockRequest.next_validators_hash 就已经是 Process 请求末栏 interchangeable、就已经是 Prepare 请求末栏 interchangeable、就已经换了人 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.next_validators_hash not already process-hash / not already prepare-hash / not already settled 正式三事（428 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。428 finreqrest vs procreq bundled unbundling 完成（1063 item 3） |
+| A5076 | 高 | 看见填了 next_validators_hash 会被写成已经是 Process 请求末栏 interchangeable / 427 interchangeable | 官方 Finalize 请求余栏 item 3：not already process-hash / not 427 |
+| A5077 | 高 | 看见能指下一份集合 会被写成已经是 Prepare 请求末栏 interchangeable / 426 interchangeable | 官方 Finalize 请求余栏 item 3：not already prepare-hash / not 426 |
+| A5078 | 高 | 看见字段名对得上 会被写成已经换了人 interchangeable | 官方 Finalize 请求余栏 item 3：not already settled |
+| A5079 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Finalize 请求余栏。不另写 19 节 |
+| A5070 | 记录 | 会与 428 / 363 / 420 / 1061 / 1063 糊成「看见 FinalizeBlockRequest.misbehavior 就已经定奖惩 interchangeable、就已经是 Process misbehavior interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.misbehavior not already rewarded / not already process-mis / not already settled 正式三事（428 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。428 finreqrest vs procreq bundled unbundling 续（1062 item 2） |
+| A5071 | 高 | 看见填了 misbehavior 会被写成已经定奖惩 interchangeable / 363 interchangeable | 官方 Finalize 请求余栏 item 2：not already rewarded / not 363 |
+| A5072 | 高 | 看见有过错列表 会被写成已经是 ProcessProposalRequest.misbehavior interchangeable / 420 interchangeable | 官方 Finalize 请求余栏 item 2：not already process-mis / not 420 |
+| A5073 | 高 | 看见能指过错 会被写成已经交差 interchangeable | 官方 Finalize 请求余栏 item 2：not already settled |
+| A5074 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Finalize 请求余栏。不另写 19 节 |
+| A5065 | 记录 | 会与 428 / 419 / 410 / 1062 / 1063 糊成「看见 FinalizeBlockRequest.hash 就已经是 ProcessProposalRequest.hash interchangeable、就已经跑过 Process interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.hash not already process-hash / not already processed / not already settled 正式三事（428 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。428 finreqrest vs procreq bundled unbundling 启动（1061 item 1） |
+| A5066 | 高 | 看见填了 hash 会被写成已经是 ProcessProposalRequest.hash interchangeable / 419 interchangeable | 官方 Finalize 请求余栏 item 1：not already process-hash / not 419 |
+| A5067 | 高 | 看见能指已决块 会被写成已经跑过 Process interchangeable | 官方 Finalize 请求余栏 item 1：not already processed |
+| A5068 | 高 | 看见字段名对得上 会被写成已经交差 interchangeable | 官方 Finalize 请求余栏 item 1：not already settled |
+| A5069 | 中 | 怎样写请求余栏会被抄进不确定 | 不抄。不写怎样写 Finalize 请求余栏。不另写 19 节 |
 | A5060 | 记录 | 会与 427 / 423 / 422 / 1058 / 1059 糊成「看见 PrepareProposalResponse.txs 就已经是初步交易列表 interchangeable、就已经保证是这一次 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalResponse.txs not already preliminary / not already same-round / not already settled 正式三事（427 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。427 procreqend vs prepreq bundled unbundling 完成（1060 item 3） |
 | A5061 | 高 | 看见回了 txs 会被写成已经是初步交易列表 interchangeable / 423 interchangeable | 官方 Process 请求末栏 item 3：not already preliminary / not 423 |
 | A5062 | 高 | 看见可能改过 会被写成已经保证是这一次 interchangeable | 官方 Process 请求末栏 item 3：not already same-round |

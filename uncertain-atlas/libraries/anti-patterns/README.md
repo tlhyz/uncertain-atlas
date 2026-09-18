@@ -1,3 +1,6 @@
+- [`finrestr-notproc-sold-as-bundled.md`](finrestr-notproc-sold-as-bundled.md) — next_validators_hash 被写成已经是 Process 末栏 / 已经是 Prepare 末栏 / 已经换了人（不变量 1063）
+- [`finrestr-notpunish-sold-as-bundled.md`](finrestr-notpunish-sold-as-bundled.md) — misbehavior 被写成已经定奖惩 / 已经是 Process misbehavior / 已经交差（不变量 1062）
+- [`finrestr-nothash-sold-as-bundled.md`](finrestr-nothash-sold-as-bundled.md) — hash 被写成已经是 Process hash / 已经跑过 Process / 已经交差（不变量 1061）
 - [`procend-notprelim-sold-as-bundled.md`](procend-notprelim-sold-as-bundled.md) — Prepare resp txs 被写成已经是初步交易列表 / 已经保证是这一次 / 已经交差（不变量 1060）
 - [`procend-notmaking-sold-as-bundled.md`](procend-notmaking-sold-as-bundled.md) — proposer_address 被写成已经正在造这份提案 / 已经知道本头哈希 / 已经交差（不变量 1059）
 - [`procend-nothash-sold-as-bundled.md`](procend-nothash-sold-as-bundled.md) — next_validators_hash 被写成已经是 Prepare 请求末栏 / 已经是 Finalize 请求栏 / 已经交差（不变量 1058）
