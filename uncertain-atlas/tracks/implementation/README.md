@@ -780,6 +780,9 @@
 - [`worked-example-versionbit-vs-active.md`](worked-example-versionbit-vs-active.md) — 版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活；9 ≠ 34 ≠ 被部署的那条规则（不变量 171）
 - [`worked-example-valid-vs-der.md`](worked-example-valid-vs-der.md) — ECDSA 验得过 ≠ 已经是严格 DER；库收下 ≠ 共识已经接受；66 ≠ 62 ≠ 146 ≠ 34（不变量 172）
 - [`worked-example-dummy-vs-empty.md`](worked-example-dummy-vs-empty.md) — 多余栈元素 ≠ 已经随便填；隔离见证 ≠ 已经没有这条延展；策略已经要空 dummy ≠ 已经是共识（不变量 264）
+- [`worked-example-sig325-notsign-vs-bundled.md`](worked-example-sig325-notsign-vs-bundled.md) — 头上工作量≠already signed/full-valid/settled；≠265 bundled（不变量 1195）
+- [`worked-example-sig325-notreg-vs-bundled.md`](worked-example-sig325-notreg-vs-bundled.md) — signet≠already regtest/anyone-controls/settled；≠265 bundled（不变量 1194）
+- [`worked-example-sig325-nottn-vs-bundled.md`](worked-example-sig325-nottn-vs-bundled.md) — signet≠already testnet/same-unreliable/settled；≠265 bundled（不变量 1193）
 - [`worked-example-signet-vs-testnet.md`](worked-example-signet-vs-testnet.md) — signet ≠ 已经是 testnet；signet ≠ 已经是 regtest；头上有合法工作量 ≠ 已经签过（不变量 265）
 - [`worked-example-purp43-notbtc-vs-bundled.md`](worked-example-purp43-notbtc-vs-bundled.md) — 同一套前缀≠already bitcoin-only/BIP32-default-account/settled；≠266 bundled（不变量 1120）
 - [`worked-example-purp43-notstruct-vs-bundled.md`](worked-example-purp43-notstruct-vs-bundled.md) — 自称BIPxx≠already that-BIP-structure/full-capability/settled；≠266 bundled（不变量 1119）

@@ -1,3 +1,6 @@
+- [`sig325-notsign-sold-as-bundled.md`](sig325-notsign-sold-as-bundled.md) — 头上工作量 被写成已经签过 / 已经全验证通过 / 已经交差（不变量 1195）
+- [`sig325-notreg-sold-as-bundled.md`](sig325-notreg-sold-as-bundled.md) — signet 被写成已经是 regtest / 已经谁都能独占 / 已经交差（不变量 1194）
+- [`sig325-nottn-sold-as-bundled.md`](sig325-nottn-sold-as-bundled.md) — signet 被写成已经是 testnet / 已经和 testnet 一样不可靠 / 已经交差（不变量 1193）
 - [`tn94-notfollow-sold-as-bundled.md`](tn94-notfollow-sold-as-bundled.md) — 会 Testnet 3 被写成已经能安全跟 / 已经在验新规则 / 已经交差（不变量 1192）
 - [`tn94-notstorm-sold-as-bundled.md`](tn94-notstorm-sold-as-bundled.md) — 20 分钟例外 被写成已经没有块风暴 / 已经拿掉了例外 / 已经交差（不变量 1191）
 - [`tn94-not3-sold-as-bundled.md`](tn94-not3-sold-as-bundled.md) — Testnet 4 被写成已经是 Testnet 3 / 已经没价值 / 已经交差（不变量 1190）

@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果写测试网，必须分开 testnet 式不可靠、regtest 式无代价控制、signet 式可预期不可靠。可以跳过「看见测试网就已经能当主网预演」。若对照，必须分开工作量过了和块签名过了。不要另写怎样拼挑战或造假签块。
+**建议（产品，不是事实）**：不确定第一条结算机如果写测试网，必须分开 testnet 式不可靠、regtest 式无代价控制、signet 式可预期不可靠。可以跳过「看见测试网就已经能当主网预演」。若对照，必须分开工作量过了和块签名过了。不要另写怎样拼挑战或造假签块。265 signet vs testnet bundled unbundling 完成（1193 item 1 / 1194 item 2 / 1195 item 3）；精读 [`worked-example-sig325-nottn-vs-bundled.md`](worked-example-sig325-nottn-vs-bundled.md)（不变量 1193 item 1）。
 
 ## 本页不抄
 

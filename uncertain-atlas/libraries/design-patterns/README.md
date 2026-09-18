@@ -1,3 +1,6 @@
+- [`name-the-sig325-notsign-bar.md`](name-the-sig325-notsign-bar.md) — BIP-325 header-work not already signed / not already full-valid / not already settled 正式三事（265 余量）（不变量 1195）
+- [`name-the-sig325-notreg-bar.md`](name-the-sig325-notreg-bar.md) — BIP-325 signet not already regtest / not already anyone-controls / not already settled 正式三事（265 余量）（不变量 1194）
+- [`name-the-sig325-nottn-bar.md`](name-the-sig325-nottn-bar.md) — BIP-325 signet not already testnet / not already same-unreliable / not already settled 正式三事（265 余量）（不变量 1193）
 - [`name-the-tn94-notfollow-bar.md`](name-the-tn94-notfollow-bar.md) — BIP-94 know-testnet3 not already safe-follow / not already new-rules / not already settled 正式三事（292 余量）（不变量 1192）
 - [`name-the-tn94-notstorm-bar.md`](name-the-tn94-notstorm-bar.md) — BIP-94 twenty-min not already no-storm / not already exception-removed / not already settled 正式三事（292 余量）（不变量 1191）
 - [`name-the-tn94-not3-bar.md`](name-the-tn94-not3-bar.md) — BIP-94 testnet4 not already testnet3 / not already mainnet / not already settled 正式三事（292 余量）（不变量 1190）

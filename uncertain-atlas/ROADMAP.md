@@ -15,9 +15,9 @@
 完成标准（事实 + 建议混合，见各条标注）：
 
 1. 五条轨（index / courses / protocols / tracks / libraries）互相指认，无孤立读书笔记。
-2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1192）。
+2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1195）。
 3. 决策矩阵「不确定候选」列填完**建议档**（非最终选型）。
-4. 对抗语料 C01–C1170+ 有 runner，能批量扫描文案/测试钩子。
+4. 对抗语料 C01–C1173+ 有 runner，能批量扫描文案/测试钩子。
 5. 过滤器页链（Cardano / Babylon / EigenLayer 等）要么补 19 节，要么在 index 明确「永久过滤器」。
 6. 单一 canonical 分支 + 清晰 merge 策略（见 Phase 0）。
 
@@ -34,7 +34,7 @@
 | 协议档案 | 20+ 链/品类 19 节模板 | 强 |
 | 横向专题 | 16 tracks；failure-museum 92+ 案 | 强 |
 | 模式/反模式 | 500+ design-patterns；650+ anti-patterns | 强 |
-| 不变量库 | 1192+ 可测试句；ABCI++ 主线 | 进行中（强） |
+| 不变量库 | 1195+ 可测试句；ABCI++ 主线 | 进行中（强） |
 | 通读路径 | `index/04-study-path.md` 六通 | 强 |
 
 ### 需调整
@@ -71,7 +71,7 @@
 |---|---|---|
 | P1-1 | 威胁模型 v1 | `libraries/threat-model/` _actor / _asset / _boundary 三页 |
 | P1-2 | settlement-copy 与矩阵对齐 | L10.3 清单 ↔ 矩阵行可互链 |
-| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94 1115–1192 | AUDIT_LOG 连续；invariants README 更新 |
+| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325 1115–1195 | AUDIT_LOG 连续；invariants README 更新 |
 | P1-4 | runner 接 pytest | 至少 10 条 Cxx 有占位测试 |
 | P1-5 | PQ 尺寸卡补 CPU 列 | `tracks/post-quantum/engineering-ledger.md` 有测量方法 |
 
@@ -273,8 +273,9 @@
 | 2026-09-18 | P1-3 1184–1186 BIP-78 pj= 不是已经是 payjoin 付款 / 原始包不是提案 / 加输入不是已经另开一笔 拆句（290 item 1/2/3） |
 | 2026-09-18 | P1-3 1187–1189 BIP-69 习惯顺序不是字典序标准 / 字典序不是已经是共识 / 字典序不是已经私人 拆句（291 item 1/2/3） |
 | 2026-09-18 | P1-3 1190–1192 BIP-94 Testnet 4 不是 Testnet 3 / 20 分钟例外不是已经没有块风暴 / 会 Testnet 3 不是已经能安全跟 拆句（292 item 1/2/3） |
+| 2026-09-18 | P1-3 1193–1195 BIP-325 signet 不是 testnet / 不是 regtest / 头上工作量不是已经签过 拆句（265 item 1/2/3） |
 
-下一批默认：**P1-3 官方三事 1193+**（继续 cometbft 拆句）。  
+下一批默认：**P1-3 官方三事 1196+**（继续 cometbft 拆句）。  
 唤醒后先跑 `python3 tools/review_audit.py`，见 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
 ---

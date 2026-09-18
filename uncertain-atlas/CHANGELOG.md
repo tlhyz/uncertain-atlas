@@ -1,3 +1,15 @@
+## 2026-09-18（续 1312）
+
+- 不变量 1195；语料 C1173；模式 name-the-sig325-notsign-bar；反模式 sig325-notsign-sold-as-bundled；L10.3 第 1164 条。填 L3.6 BIP-325 header-work not already signed / not already full-valid / not already settled 正式三事（265 余量）。265 signet vs testnet bundled unbundling 完成（1195 item 3）。
+
+## 2026-09-18（续 1311）
+
+- 不变量 1194；语料 C1172；模式 name-the-sig325-notreg-bar；反模式 sig325-notreg-sold-as-bundled；L10.3 第 1163 条。填 L3.6 BIP-325 signet not already regtest / not already anyone-controls / not already settled 正式三事（265 余量）。265 signet vs testnet bundled unbundling 续（1194 item 2）。
+
+## 2026-09-18（续 1310）
+
+- 不变量 1193；语料 C1171；模式 name-the-sig325-nottn-bar；反模式 sig325-nottn-sold-as-bundled；L10.3 第 1162 条。填 L3.6 BIP-325 signet not already testnet / not already same-unreliable / not already settled 正式三事（265 余量）。265 signet vs testnet bundled unbundling 启动（1193 item 1）。
+
 ## 2026-09-18（续 1309）
 
 - 不变量 1192；语料 C1170；模式 name-the-tn94-notfollow-bar；反模式 tn94-notfollow-sold-as-bundled；L10.3 第 1161 条。填 L3.6 BIP-94 know-testnet3 not already safe-follow / not already new-rules / not already settled 正式三事（292 余量）。292 testnet4 vs testnet3 bundled unbundling 完成（1192 item 3）。

@@ -1,3 +1,18 @@
+| A5740 | 记录 | 会与 265 / 1192 / 163 / 1193 / 1194 糊成「看见头上有合法工作量就已经签过 interchangeable、就已经全验证通过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.6 BIP-325 header-work not already signed / not already full-valid / not already settled 正式三事（265 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。265 signet vs testnet bundled unbundling 完成（1195 item 3） |
+| A5741 | 高 | 看见头上有合法工作量 会被写成已经签过 interchangeable / 1192 interchangeable | 官方 BIP-325 signet item 3：not already signed / not 1192 |
+| A5742 | 高 | 看见只加了网络参数 会被写成已经全验证通过 interchangeable / 163 interchangeable | 官方 BIP-325 signet item 3：not already full-valid / not 163 |
+| A5743 | 高 | 看见同一份创世 会被写成已经交差 interchangeable | 官方 BIP-325 signet item 3：not already settled |
+| A5744 | 中 | 怎样拼挑战或造假签块会被抄进不确定 | 不抄。不写怎样拼挑战或造假签块。不另写 19 节 |
+| A5735 | 记录 | 会与 265 / 1191 / 25 / 1193 / 1195 糊成「看见 signet 就已经是 regtest interchangeable、就已经谁都能独占 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.6 BIP-325 signet not already regtest / not already anyone-controls / not already settled 正式三事（265 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。265 signet vs testnet bundled unbundling 续（1194 item 2） |
+| A5736 | 高 | 看见 signet 会被写成已经是 regtest interchangeable / 1191 interchangeable | 官方 BIP-325 signet item 2：not already regtest / not 1191 |
+| A5737 | 高 | 看见还能协调出块 会被写成已经谁都能独占 interchangeable / 25 interchangeable | 官方 BIP-325 signet item 2：not already anyone-controls / not 25 |
+| A5738 | 高 | 看见本地无代价出块 会被写成已经交差 interchangeable | 官方 BIP-325 signet item 2：not already settled |
+| A5739 | 中 | 怎样拼挑战或造假签块会被抄进不确定 | 不抄。不写怎样拼挑战或造假签块。不另写 19 节 |
+| A5730 | 记录 | 会与 265 / 1190 / 257 / 1194 / 1195 糊成「看见 signet 就已经是 testnet interchangeable、就已经和 testnet 一样不可靠 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.6 BIP-325 signet not already testnet / not already same-unreliable / not already settled 正式三事（265 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。265 signet vs testnet bundled unbundling 启动（1193 item 1） |
+| A5731 | 高 | 看见 signet 会被写成已经是 testnet interchangeable / 1190 interchangeable | 官方 BIP-325 signet item 1：not already testnet / not 1190 |
+| A5732 | 高 | 看见它比 testnet 稳 会被写成已经和主网同一套结算 interchangeable / 257 interchangeable | 官方 BIP-325 signet item 1：not already same-unreliable / not 257 |
+| A5733 | 高 | 看见测试网 会被写成已经交差 interchangeable | 官方 BIP-325 signet item 1：not already settled |
+| A5734 | 中 | 怎样拼挑战或造假签块会被抄进不确定 | 不抄。不写怎样拼挑战或造假签块。不另写 19 节 |
 | A5725 | 记录 | 会与 292 / 257 / 144 / 1190 / 1191 糊成「看见会 Testnet 3 就已经能安全跟 Testnet 4 interchangeable、就已经在验新规则 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.6 BIP-94 know-testnet3 not already safe-follow / not already new-rules / not already settled 正式三事（292 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。292 testnet4 vs testnet3 bundled unbundling 完成（1192 item 3） |
 | A5726 | 高 | 看见会 Testnet 3 会被写成已经能安全跟 Testnet 4 interchangeable / 257 interchangeable | 官方 BIP-94 Testnet 4 item 3：not already safe-follow / not 257 |
 | A5727 | 高 | 看见补了参数 会被写成已经在验新规则 interchangeable / 144 interchangeable | 官方 BIP-94 Testnet 4 item 3：not already new-rules / not 144 |
