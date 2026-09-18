@@ -1,3 +1,15 @@
+## 2026-09-18（续 1459）
+
+- 不变量 1342；语料 C1320；模式 name-the-pacdef-not340-bar；反模式 pacdef-not340-sold-as-bundled；L10.3 第 1311 条。填 L4.4 ProcAcceptDef default not already 456-bundled / not already 340-general / not already 530-always 正式三事（532 余量）。532 ProcessProposal Usage SHOULD Accept default bundled unbundling 完成（1342 item 3）。
+
+## 2026-09-18（续 1458）
+
+- 不变量 1341；语料 C1319；模式 name-the-pacdef-notrej-bar；反模式 pacdef-notrej-sold-as-bundled；L10.3 第 1310 条。填 L4.4 ProcAcceptDef REJECT-path not already can't-Reject / not already 430-bundled / not already 455-assume 正式三事（532 余量）。532 ProcessProposal Usage SHOULD Accept default bundled unbundling 续（1341 item 2）。
+
+## 2026-09-18（续 1457）
+
+- 不变量 1340；语料 C1318；模式 name-the-pacdef-notcant-bar；反模式 pacdef-notcant-sold-as-bundled；L10.3 第 1309 条。填 L4.4 ProcAcceptDef default not already 456-bundled / not already can't-Reject / not already MUST-Accept 正式三事（532 余量）。532 ProcessProposal Usage SHOULD Accept default bundled unbundling 启动（1340 item 1）。
+
 ## 2026-09-18（续 1456）
 
 - 不变量 1339；语料 C1317；模式 name-the-vacdef-not341-bar；反模式 vacdef-not341-sold-as-bundled；L10.3 第 1308 条。填 L4.4 VerifyAcceptDef default not already 457-bundled / not already 341-general / not already 527-always 正式三事（529 余量）。529 VerifyVoteExtension Usage SHOULD Accept default bundled unbundling 完成（1339 item 3）。

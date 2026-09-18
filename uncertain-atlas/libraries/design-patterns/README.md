@@ -1,3 +1,6 @@
+- [`name-the-pacdef-not340-bar.md`](name-the-pacdef-not340-bar.md) — ProcAcceptDef default not already 456-bundled / not already 340-general / not already 530-always 正式三事（532 余量）（不变量 1342）
+- [`name-the-pacdef-notrej-bar.md`](name-the-pacdef-notrej-bar.md) — ProcAcceptDef REJECT-path not already can't-Reject / not already 430-bundled / not already 455-assume 正式三事（532 余量）（不变量 1341）
+- [`name-the-pacdef-notcant-bar.md`](name-the-pacdef-notcant-bar.md) — ProcAcceptDef default not already 456-bundled / not already can't-Reject / not already MUST-Accept 正式三事（532 余量）（不变量 1340）
 - [`name-the-vacdef-not341-bar.md`](name-the-vacdef-not341-bar.md) — VerifyAcceptDef default not already 457-bundled / not already 341-general / not already 527-always 正式三事（529 余量）（不变量 1339）
 - [`name-the-vacdef-notrej-bar.md`](name-the-vacdef-notrej-bar.md) — VerifyAcceptDef REJECT-path not already can't-Reject / not already 433-bundled / not already 517-discard 正式三事（529 余量）（不变量 1338）
 - [`name-the-vacdef-notcant-bar.md`](name-the-vacdef-notcant-bar.md) — VerifyAcceptDef default not already 457-bundled / not already can't-Reject / not already MUST-Accept 正式三事（529 余量）（不变量 1337）

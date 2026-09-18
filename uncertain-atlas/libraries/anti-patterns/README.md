@@ -1,3 +1,6 @@
+- [`pacdef-not340-sold-as-bundled.md`](pacdef-not340-sold-as-bundled.md) — 默认 Accept 被写成已经是 456 bundled / 就已经是 340 通则 / 就已经 SHOULD always set（不变量 1342）
+- [`pacdef-notrej-sold-as-bundled.md`](pacdef-notrej-sold-as-bundled.md) — REJECT assumes not valid 被写成已经不能 Reject / 就已经是回包栏 / 就已经 455 assume（不变量 1341）
+- [`pacdef-notcant-sold-as-bundled.md`](pacdef-notcant-sold-as-bundled.md) — SHOULD Accept 默认策略 被写成已经是 456 bundled / 就不能 Reject / 就已经 MUST Accept（不变量 1340）
 - [`vacdef-not341-sold-as-bundled.md`](vacdef-not341-sold-as-bundled.md) — 默认 Accept 被写成已经是 457 bundled / 就已经是 341 通则 / 就已经 SHOULD always set（不变量 1339）
 - [`vacdef-notrej-sold-as-bundled.md`](vacdef-notrej-sold-as-bundled.md) — REJECT 拒整张票 被写成已经不能 Reject / 就已经是回包栏 / 就已经 When REJECT discard（不变量 1338）
 - [`vacdef-notcant-sold-as-bundled.md`](vacdef-notcant-sold-as-bundled.md) — SHOULD Accept 默认策略 被写成已经是 457 bundled / 就不能 Reject / 就已经 MUST Accept（不变量 1337）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ProcessProposal Usage SHOULD Accept default strategy 正式三事，必须分开 SHOULD Accept default strategy 是不是已经 can't Reject interchangeable / 已经 MUST Accept interchangeable、REJECT assumes not valid 是不是 can't Reject interchangeable、default Accept 是不是 Process 340 SHOULD Accept 通则 interchangeable。可以跳过「看见 SHOULD Accept 默认策略 就已经不能 Reject interchangeable」。不要另写怎样写默认 Accept 策略。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ProcessProposal Usage SHOULD Accept default strategy 正式三事，必须分开 SHOULD Accept default strategy 是不是已经 can't Reject interchangeable / 已经 MUST Accept interchangeable、REJECT assumes not valid 是不是 can't Reject interchangeable、default Accept 是不是 Process 340 SHOULD Accept 通则 interchangeable。可以跳过「看见 SHOULD Accept 默认策略 就已经不能 Reject interchangeable」。532 ProcessProposal Usage SHOULD Accept default bundled unbundling 完成（1340 item 1 / 1341 item 2 / 1342 item 3）；精读 [`worked-example-pacdef-notcant-vs-bundled.md`](worked-example-pacdef-notcant-vs-bundled.md)（不变量 1340 item 1）、[`worked-example-pacdef-notrej-vs-bundled.md`](worked-example-pacdef-notrej-vs-bundled.md)（不变量 1341 item 2）、[`worked-example-pacdef-not340-vs-bundled.md`](worked-example-pacdef-not340-vs-bundled.md)（不变量 1342 item 3）。不要另写怎样写默认 Accept 策略。
 
 ## 本页不抄
 
