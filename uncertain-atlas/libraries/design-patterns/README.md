@@ -1,3 +1,6 @@
+- [`name-the-p2sh13-notwho-bar.md`](name-the-p2sh13-notwho-bar.md) — BIP-13 address-only not already know-payee / not already identity / not already settled 正式三事（297 余量）（不变量 1210）
+- [`name-the-p2sh13-notpaid-bar.md`](name-the-p2sh13-notpaid-bar.md) — BIP-13 old-reject not already paid / not already 16 / not already settled 正式三事（297 余量）（不变量 1209）
+- [`name-the-p2sh13-not16-bar.md`](name-the-p2sh13-not16-bar.md) — BIP-13 this-address not already redeem-script / not already 16 / not already settled 正式三事（297 余量）（不变量 1208）
 - [`name-the-enc38-notfrag-bar.md`](name-the-enc38-notfrag-bar.md) — BIP-38 address-fragment not already address / not already decrypted / not already recommended 正式三事（296 余量）（不变量 1207）
 - [`name-the-enc38-notmint-bar.md`](name-the-enc38-notmint-bar.md) — BIP-38 factory-generated not already redeemable / not already same-path / not already settled 正式三事（296 余量）（不变量 1206）
 - [`name-the-enc38-notuse-bar.md`](name-the-enc38-notuse-bar.md) — BIP-38 encrypted-record not already private-key / not already usable / not already settled 正式三事（296 余量）（不变量 1205）

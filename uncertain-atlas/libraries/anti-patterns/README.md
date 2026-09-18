@@ -1,3 +1,6 @@
+- [`p2sh13-notwho-sold-as-bundled.md`](p2sh13-notwho-sold-as-bundled.md) — 只有地址 被写成已经知道付给谁 / 已经核过收款人 / 已经交差（不变量 1210）
+- [`p2sh13-notpaid-sold-as-bundled.md`](p2sh13-notpaid-sold-as-bundled.md) — 旧软件报无效 被写成已经付过 / 已经走了 16 / 已经交差（不变量 1209）
+- [`p2sh13-not16-sold-as-bundled.md`](p2sh13-not16-sold-as-bundled.md) — 本页这种地址 被写成已经是赎回脚本 / 已经是 16 / 已经交差（不变量 1208）
 - [`enc38-notfrag-sold-as-bundled.md`](enc38-notfrag-sold-as-bundled.md) — 地址哈希片段 被写成已经是地址 / 已经解开 / 已经交差（不变量 1207）
 - [`enc38-notmint-sold-as-bundled.md`](enc38-notmint-sold-as-bundled.md) — 厂家代生成 被写成已经能兑 / 已经能分辨编法 / 已经交差（不变量 1206）
 - [`enc38-notuse-sold-as-bundled.md`](enc38-notuse-sold-as-bundled.md) — 加密私钥记录 被写成已经是私钥 / 已经能用 / 已经交差（不变量 1205）

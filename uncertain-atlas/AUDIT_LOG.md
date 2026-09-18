@@ -1,3 +1,18 @@
+| A5815 | 记录 | 会与 297 / 270 / 170 / 1208 / 1209 糊成「看见只有本页这种地址就已经知道付给谁 interchangeable、就已经核过收款人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-13 address-only not already know-payee / not already identity / not already settled 正式三事（297 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。297 p2sh address vs redeem bundled unbundling 完成（1210 item 3） |
+| A5816 | 高 | 看见只有本页这种地址 会被写成已经知道付给谁 interchangeable / 270 interchangeable | 官方 BIP-13 p2sh-address item 3：not already know-payee / not 270 |
+| A5817 | 高 | 看见地址上没有身份 会被写成已经核过收款人 interchangeable / 170 interchangeable | 官方 BIP-13 p2sh-address item 3：not already identity / not 170 |
+| A5818 | 高 | 看见本页已部署 会被写成已经交差 interchangeable | 官方 BIP-13 p2sh-address item 3：not already settled |
+| A5819 | 中 | 怎样按 Base58Check 编地址或怎样从版本字节认网会被抄进不确定 | 不抄。不写怎样按 Base58Check 编地址或怎样从版本字节认网。不另写 19 节 |
+| A5810 | 记录 | 会与 297 / 174 / 181 / 1208 / 1210 糊成「看见旧软件报无效就已经付过 interchangeable、就已经走了 16 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-13 old-reject not already paid / not already 16 / not already settled 正式三事（297 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。297 p2sh address vs redeem bundled unbundling 续（1209 item 2） |
+| A5811 | 高 | 看见旧软件报无效 会被写成已经付过 interchangeable / 174 interchangeable | 官方 BIP-13 p2sh-address item 2：not already paid / not 174 |
+| A5812 | 高 | 看见它不肯造交易 会被写成已经走了 16 interchangeable / 181 interchangeable | 官方 BIP-13 p2sh-address item 2：not already 16 / not 181 |
+| A5813 | 高 | 看见失败温和 会被写成已经交差 interchangeable | 官方 BIP-13 p2sh-address item 2：not already settled |
+| A5814 | 中 | 怎样按 Base58Check 编地址或怎样从版本字节认网会被抄进不确定 | 不抄。不写怎样按 Base58Check 编地址或怎样从版本字节认网。不另写 19 节 |
+| A5805 | 记录 | 会与 297 / 170 / 174 / 1209 / 1210 糊成「看见本页这种地址就已经是赎回脚本 interchangeable、就已经是 16 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-13 this-address not already redeem-script / not already 16 / not already settled 正式三事（297 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。297 p2sh address vs redeem bundled unbundling 启动（1208 item 1） |
+| A5806 | 高 | 看见本页这种地址 会被写成已经是赎回脚本 interchangeable / 170 interchangeable | 官方 BIP-13 p2sh-address item 1：not already redeem-script / not 170 |
+| A5807 | 高 | 看见编的是脚本哈希 会被写成已经是 16 interchangeable / 174 interchangeable | 官方 BIP-13 p2sh-address item 1：not already 16 / not 174 |
+| A5808 | 高 | 看见能给人看 会被写成已经交差 interchangeable | 官方 BIP-13 p2sh-address item 1：not already settled |
+| A5809 | 中 | 怎样按 Base58Check 编地址或怎样从版本字节认网会被抄进不确定 | 不抄。不写怎样按 Base58Check 编地址或怎样从版本字节认网。不另写 19 节 |
 | A5800 | 记录 | 会与 296 / 174 / 258 / 1205 / 1206 糊成「看见地址哈希片段就已经是地址 interchangeable、就已经解开 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-38 address-fragment not already address / not already decrypted / not already recommended 正式三事（296 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。296 encrypted key vs usable bundled unbundling 完成（1207 item 3） |
 | A5801 | 高 | 看见地址哈希片段 会被写成已经是地址 interchangeable / 174 interchangeable | 官方 BIP-38 encrypted-key item 3：not already address / not 174 |
 | A5802 | 高 | 看见这种打印前缀 会被写成已经解开 interchangeable / 258 interchangeable | 官方 BIP-38 encrypted-key item 3：not already decrypted / not 258 |

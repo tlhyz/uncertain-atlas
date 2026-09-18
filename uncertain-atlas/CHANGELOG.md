@@ -1,3 +1,15 @@
+## 2026-09-18（续 1327）
+
+- 不变量 1210；语料 C1188；模式 name-the-p2sh13-notwho-bar；反模式 p2sh13-notwho-sold-as-bundled；L10.3 第 1179 条。填 L1.4 / L3.6 BIP-13 address-only not already know-payee / not already identity / not already settled 正式三事（297 余量）。297 p2sh address vs redeem bundled unbundling 完成（1210 item 3）。
+
+## 2026-09-18（续 1326）
+
+- 不变量 1209；语料 C1187；模式 name-the-p2sh13-notpaid-bar；反模式 p2sh13-notpaid-sold-as-bundled；L10.3 第 1178 条。填 L1.4 / L3.6 BIP-13 old-reject not already paid / not already 16 / not already settled 正式三事（297 余量）。297 p2sh address vs redeem bundled unbundling 续（1209 item 2）。
+
+## 2026-09-18（续 1325）
+
+- 不变量 1208；语料 C1186；模式 name-the-p2sh13-not16-bar；反模式 p2sh13-not16-sold-as-bundled；L10.3 第 1177 条。填 L1.4 / L3.6 BIP-13 this-address not already redeem-script / not already 16 / not already settled 正式三事（297 余量）。297 p2sh address vs redeem bundled unbundling 启动（1208 item 1）。
+
 ## 2026-09-18（续 1324）
 
 - 不变量 1207；语料 C1185；模式 name-the-enc38-notfrag-bar；反模式 enc38-notfrag-sold-as-bundled；L10.3 第 1176 条。填 L1.4 / L3.6 BIP-38 address-fragment not already address / not already decrypted / not already recommended 正式三事（296 余量）。296 encrypted key vs usable bundled unbundling 完成（1207 item 3）。
