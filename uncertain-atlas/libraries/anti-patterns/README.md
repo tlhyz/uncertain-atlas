@@ -1,3 +1,4 @@
+- [`checktxstate-notsame-sold-as-bundled.md`](checktxstate-notsame-sold-as-bundled.md) — 同时在改 被写成已经同一份 / 已经合并 / 已经共用一份工作状态（不变量 696）
 - [`checktxstate-notexecute-sold-as-bundled.md`](checktxstate-notexecute-sold-as-bundled.md) — CheckTx 过了 被写成已经按 ExecuteTxState 验过 / 已经按将要执行的那份验过 / 已经同一份（不变量 695）
 - [`candidate-notdiscarded-sold-as-bundled.md`](candidate-notdiscarded-sold-as-bundled.md) — 丢掉候选 被写成已经能无界攒着 / 已经永远不用再跑 / 规范已经写死条数（不变量 694）
 - [`candidate-notexecute-sold-as-bundled.md`](candidate-notexecute-sold-as-bundled.md) — 立刻执行出候选 被写成已经是 ExecuteTxState / 已经能点名本高度最终 / 已经交差（不变量 693）

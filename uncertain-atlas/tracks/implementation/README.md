@@ -145,6 +145,7 @@
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-checktxstate-notsame-vs-bundled.md`](worked-example-checktxstate-notsame-vs-bundled.md) — 同时在改≠同一份/合并/共用工作状态；≠312 bundled（不变量 696）
 - [`worked-example-checktxstate-notexecute-vs-bundled.md`](worked-example-checktxstate-notexecute-vs-bundled.md) — CheckTx过了≠按ExecuteTxState验/按将要执行的那份验/重置后同一份；≠312 bundled（不变量 695）
 - [`worked-example-candidate-notdiscarded-vs-bundled.md`](worked-example-candidate-notdiscarded-vs-bundled.md) — 丢掉候选≠能无界攒着/永远不用再跑/规范写死条数；≠311 bundled（不变量 694）
 - [`worked-example-candidate-notexecute-vs-bundled.md`](worked-example-candidate-notexecute-vs-bundled.md) — 候选≠ExecuteTxState/能点名本高度最终/交差；≠311 bundled（不变量 693）
