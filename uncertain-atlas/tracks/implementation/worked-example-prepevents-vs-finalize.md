@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里产出了事件就已经交给引擎、已经索引、已经印进 LastResultsHash」，必须分开 Prepare MAY 产出块/tx 事件是不是已经在 PrepareProposalResponse 里交回、MUST 留到块决定之后是不是已经 Process 时就交出去、经 FinalizeBlockResponse 交回是不是已经是 CheckTxResponse.events / ExecTxResult.events。可以跳过「看见 Prepare 里产出了事件就已经交给引擎」。不要另写怎样攒 Prepare 事件。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里产出了事件就已经交给引擎、已经索引、已经印进 LastResultsHash」，必须分开 Prepare MAY 产出块/tx 事件是不是已经在 PrepareProposalResponse 里交回、MUST 留到块决定之后是不是已经 Process 时就交出去、经 FinalizeBlockResponse 交回是不是已经是 CheckTxResponse.events / ExecTxResult.events。可以跳过「看见 Prepare 里产出了事件就已经交给引擎」。448 Prepare events retention until Finalize bundled unbundling 完成（1368 item 1 / 1369 item 2 / 1370 item 3）；精读 [`worked-example-prepev-notret-vs-bundled.md`](worked-example-prepev-notret-vs-bundled.md)（不变量 1368 item 1）、[`worked-example-prepev-notkeep-vs-bundled.md`](worked-example-prepev-notkeep-vs-bundled.md)（不变量 1369 item 2）、[`worked-example-prepev-notfin-vs-bundled.md`](worked-example-prepev-notfin-vs-bundled.md)（不变量 1370 item 3）。不要另写怎样攒 Prepare 事件。
 
 ## 本页不抄
 

@@ -1026,6 +1026,9 @@
 - [`worked-example-eviuse-notexp-vs-bundled.md`](worked-example-eviuse-notexp-vs-bundled.md) — extension_signature暴露再处理≠already应用验完/已Verify/421交出；≠447 bundled（不变量 1366）
 - [`worked-example-eviuse-nottwo-vs-bundled.md`](worked-example-eviuse-nottwo-vs-bundled.md) — 两份签都在空切片≠already只有一份/没non_rp就没有/跳过Verify；≠447 bundled（不变量 1367）
 - [`worked-example-extviusage-vs-expose.md`](worked-example-extviusage-vs-expose.md) — ExtendedVoteInfo Usage 暴露签≠already 应用验完/必须填内容
+- [`worked-example-prepev-notret-vs-bundled.md`](worked-example-prepev-notret-vs-bundled.md) — Prepare MAY产出事件≠already回包交回/引擎已收到/357验过；≠448 bundled（不变量 1368）
+- [`worked-example-prepev-notkeep-vs-bundled.md`](worked-example-prepev-notkeep-vs-bundled.md) — MUST留到决定≠already Process就交/REJECT可丢/已经交差；≠448 bundled（不变量 1369）
+- [`worked-example-prepev-notfin-vs-bundled.md`](worked-example-prepev-notfin-vs-bundled.md) — 经Finalize交回≠already CheckTx/ExecTx events/LastResultsHash；≠448 bundled（不变量 1370）
 - [`worked-example-prepevents-vs-finalize.md`](worked-example-prepevents-vs-finalize.md) — Prepare 事件保留≠already 回包交回/Process就交/CheckTx events
 - [`worked-example-validatorusage-vs-gates.md`](worked-example-validatorusage-vs-gates.md) — Validator Usage 四门≠already 同一路 CommitInfo/ExtendedCommitInfo
 - [`worked-example-viusageavail-vs-extractpath.md`](worked-example-viusageavail-vs-extractpath.md) — availability 同句抽取异路≠already 奖罚完/同一抽出路径

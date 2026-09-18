@@ -1,3 +1,6 @@
+- [`name-the-prepev-notfin-bar.md`](name-the-prepev-notfin-bar.md) — PrepEv pass via FinalizeBlockResponse not already CheckTx events / not already ExecTxResult events / not already LastResultsHash 正式三事（448 余量）（不变量 1370）
+- [`name-the-prepev-notkeep-bar.md`](name-the-prepev-notkeep-bar.md) — PrepEv MUST keep until decided not already handed at Process / not already discarded-on-REJECT / not already settled 正式三事（448 余量）（不变量 1369）
+- [`name-the-prepev-notret-bar.md`](name-the-prepev-notret-bar.md) — PrepEv Prepare MAY produce events not already in PrepareProposalResponse / not already engine-received / not already 357-checked 正式三事（448 余量）（不变量 1368）
 - [`name-the-eviuse-nottwo-bar.md`](name-the-eviuse-nottwo-bar.md) — ExtViUse two sigs when enabled empty-slice if no non_rp not already one-sig / not already no-second / not already 358-replay 正式三事（447 余量）（不变量 1367）
 - [`name-the-eviuse-notexp-bar.md`](name-the-eviuse-notexp-bar.md) — ExtViUse extension_signature exposed for further processing not already app-verified / not already Verify / not already 421-handed 正式三事（447 余量）（不变量 1366）
 - [`name-the-eviuse-notapp-bar.md`](name-the-eviuse-notapp-bar.md) — ExtViUse vote_extension engine-verified can-be-empty not already app-verified / not already must-fill / not already Accept 正式三事（447 余量）（不变量 1365）

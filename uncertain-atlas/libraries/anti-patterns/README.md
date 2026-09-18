@@ -1,3 +1,6 @@
+- [`prepev-notfin-sold-as-bundled.md`](prepev-notfin-sold-as-bundled.md) — 经 Finalize 交回 被写成已经是 CheckTx events / 就已经是 ExecTx events / 就已经印进本头（不变量 1370）
+- [`prepev-notkeep-sold-as-bundled.md`](prepev-notkeep-sold-as-bundled.md) — MUST 留到决定 被写成已经 Process 就交 / 就已经 REJECT 可丢 / 就已经交差（不变量 1369）
+- [`prepev-notret-sold-as-bundled.md`](prepev-notret-sold-as-bundled.md) — Prepare MAY 产出 被写成已经在回包里 / 就已经引擎收到 / 就已经 357 验过（不变量 1368）
 - [`eviuse-nottwo-sold-as-bundled.md`](eviuse-nottwo-sold-as-bundled.md) — 两份签都在 / 空切片 被写成已经只有一份签 / 就已经没有第二份 / 就已经跳过 Verify（不变量 1367）
 - [`eviuse-notexp-sold-as-bundled.md`](eviuse-notexp-sold-as-bundled.md) — 暴露给应用再处理 被写成已经应用验完 / 就已经 Verify / 就已经 421 交出（不变量 1366）
 - [`eviuse-notapp-sold-as-bundled.md`](eviuse-notapp-sold-as-bundled.md) — 引擎已验且可空 被写成已经应用验完 / 就必须填内容 / 就已经 Accept（不变量 1365）

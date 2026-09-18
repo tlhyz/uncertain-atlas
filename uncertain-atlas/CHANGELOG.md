@@ -1,3 +1,15 @@
+## 2026-09-18（续 1487）
+
+- 不变量 1370；语料 C1348；模式 name-the-prepev-notfin-bar；反模式 prepev-notfin-sold-as-bundled；L10.3 第 1339 条。填 L4.4 PrepEv pass via FinalizeBlockResponse not already CheckTx events / not already ExecTxResult events / not already LastResultsHash 正式三事（448 余量）。448 Prepare events retention until Finalize bundled unbundling 完成（1370 item 3）。
+
+## 2026-09-18（续 1486）
+
+- 不变量 1369；语料 C1347；模式 name-the-prepev-notkeep-bar；反模式 prepev-notkeep-sold-as-bundled；L10.3 第 1338 条。填 L4.4 PrepEv MUST keep until decided not already handed at Process / not already discarded-on-REJECT / not already settled 正式三事（448 余量）。448 Prepare events retention until Finalize bundled unbundling 续（1369 item 2）。
+
+## 2026-09-18（续 1485）
+
+- 不变量 1368；语料 C1346；模式 name-the-prepev-notret-bar；反模式 prepev-notret-sold-as-bundled；L10.3 第 1337 条。填 L4.4 PrepEv Prepare MAY produce events not already in PrepareProposalResponse / not already engine-received / not already 357-checked 正式三事（448 余量）。448 Prepare events retention until Finalize bundled unbundling 启动（1368 item 1）。
+
 ## 2026-09-18（续 1484）
 
 - 不变量 1367；语料 C1345；模式 name-the-eviuse-nottwo-bar；反模式 eviuse-nottwo-sold-as-bundled；L10.3 第 1336 条。填 L4.4 ExtViUse two sigs when enabled empty-slice if no non_rp not already one-sig / not already no-second / not already 358-replay 正式三事（447 余量）。447 ExtendedVoteInfo Usage expose signature bundled unbundling 完成（1367 item 3）。
