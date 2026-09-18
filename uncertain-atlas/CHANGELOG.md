@@ -1,3 +1,15 @@
+## 2026-09-18（续 1237）
+
+- 不变量 1120；语料 C1098；模式 name-the-purp43-notbtc-bar；反模式 purp43-notbtc-sold-as-bundled；L10.3 第 1089 条。填 L1.4 / L3.6 BIP-43 same-xpub-prefix not already bitcoin-only / not already BIP32-default-account / not already settled 正式三事（266 余量）。266 purpose vs compatible bundled unbundling 完成（1120 item 3）。
+
+## 2026-09-18（续 1236）
+
+- 不变量 1119；语料 C1097；模式 name-the-purp43-notstruct-bar；反模式 purp43-notstruct-sold-as-bundled；L10.3 第 1088 条。填 L1.4 / L3.6 BIP-43 BIPxx-compatible-subset not already that-BIP-structure / not already full-capability / not already settled 正式三事（266 余量）。266 purpose vs compatible bundled unbundling 续（1119 item 2）。
+
+## 2026-09-18（续 1235）
+
+- 不变量 1118；语料 C1096；模式 name-the-purp43-notinterop-bar；反模式 purp43-notinterop-sold-as-bundled；L10.3 第 1087 条。填 L1.4 / L3.6 BIP-43 BIP32-compatible not already interoperable / not already same-tree / not already settled 正式三事（266 余量）。266 purpose vs compatible bundled unbundling 启动（1118 item 1）。
+
 ## 2026-09-18（续 1234）
 
 - 不变量 1117；语料 C1095；模式 name-the-acc44-notdone-bar；反模式 acc44-notdone-sold-as-bundled；L10.3 第 1086 条。填 L1.4 / L3.6 BIP-44 zero-balance not already discovery-done / not already no-later-account / not already settled 正式三事（267 余量）。267 account vs discovered bundled unbundling 完成（1117 item 3）。

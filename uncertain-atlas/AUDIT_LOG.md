@@ -1,3 +1,18 @@
+| A5365 | 记录 | 会与 266 / 182 / 1116 / 1118 / 1119 糊成「看见同一套前缀就已经是比特币专用 interchangeable、就已经是 BIP32 默认账户 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-43 same-xpub-prefix not already bitcoin-only / not already BIP32-default-account / not already settled 正式三事（266 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。266 purpose vs compatible bundled unbundling 完成（1120 item 3） |
+| A5366 | 高 | 看见同一套前缀 会被写成已经是比特币专用 interchangeable / 182 interchangeable | 官方 BIP-43 用途层 item 3：not already bitcoin-only / not 182 |
+| A5367 | 高 | 看见默认账户支 会被写成已经是 BIP32 默认账户 interchangeable / 1116 interchangeable | 官方 BIP-43 用途层 item 3：not already BIP32-default-account / not 1116 |
+| A5368 | 高 | 看见不必另开魔数 会被写成已经交差 interchangeable | 官方 BIP-43 用途层 item 3：not already settled |
+| A5369 | 中 | 怎样选用途号会被抄进不确定 | 不抄。不写怎样选用途号或从种子扫账户。不另写 19 节 |
+| A5360 | 记录 | 会与 266 / 184 / 191 / 1118 / 1120 糊成「看见自称 BIPxx compatible 就已经是那份结构 interchangeable、就已经支持全部能力 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-43 BIPxx-compatible-subset not already that-BIP-structure / not already full-capability / not already settled 正式三事（266 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。266 purpose vs compatible bundled unbundling 续（1119 item 2） |
+| A5361 | 高 | 看见自称 BIPxx compatible 会被写成已经是那份结构 interchangeable / 184 interchangeable | 官方 BIP-43 用途层 item 2：not already that-BIP-structure / not 184 |
+| A5362 | 高 | 看见用途号 会被写成已经支持全部能力 interchangeable / 191 interchangeable | 官方 BIP-43 用途层 item 2：not already full-capability / not 191 |
+| A5363 | 高 | 看见另写一份 BIP 会被写成已经交差 interchangeable | 官方 BIP-43 用途层 item 2：not already settled |
+| A5364 | 中 | 怎样选用途号会被抄进不确定 | 不抄。不写怎样选用途号或从种子扫账户。不另写 19 节 |
+| A5355 | 记录 | 会与 266 / 182 / 1115 / 1119 / 1120 糊成「看见 BIP32 compatible 就已经能互操作 interchangeable、就已经同一套树 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-43 BIP32-compatible not already interoperable / not already same-tree / not already settled 正式三事（266 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。266 purpose vs compatible bundled unbundling 启动（1118 item 1） |
+| A5356 | 高 | 看见自称兼容 会被写成已经能互操作 interchangeable / 182 interchangeable | 官方 BIP-43 用途层 item 1：not already interoperable / not 182 |
+| A5357 | 高 | 看见都能从同一份种子长钥 会被写成已经同一套树 interchangeable / 1115 interchangeable | 官方 BIP-43 用途层 item 1：not already same-tree / not 1115 |
+| A5358 | 高 | 看见这句话相当没用 会被写成已经交差 interchangeable | 官方 BIP-43 用途层 item 1：not already settled |
+| A5359 | 中 | 怎样选用途号会被抄进不确定 | 不抄。不写怎样选用途号或从种子扫账户。不另写 19 节 |
 | A5345 | 记录 | 会与 267 / 184 / 183 / 1115 / 1116 糊成「看见余额为零就已经发现完 interchangeable、就已经没有后面的账户 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-44 zero-balance not already discovery-done / not already no-later-account / not already settled 正式三事（267 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。267 account vs discovered bundled unbundling 完成（1117 item 3） |
 | A5346 | 高 | 看见余额为零 会被写成已经发现完 interchangeable / 184 interchangeable | 官方 BIP-44 多账户层次 item 3：not already discovery-done / not 184 |
 | A5347 | 高 | 看见停搜 会被写成已经没有后面的账户 interchangeable / 183 interchangeable | 官方 BIP-44 多账户层次 item 3：not already no-later-account / not 183 |

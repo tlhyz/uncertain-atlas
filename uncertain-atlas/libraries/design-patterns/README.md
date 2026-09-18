@@ -1,3 +1,6 @@
+- [`name-the-purp43-notbtc-bar.md`](name-the-purp43-notbtc-bar.md) — BIP-43 same-xpub-prefix not already bitcoin-only / not already BIP32-default-account / not already settled 正式三事（266 余量）（不变量 1120）
+- [`name-the-purp43-notstruct-bar.md`](name-the-purp43-notstruct-bar.md) — BIP-43 BIPxx-compatible-subset not already that-BIP-structure / not already full-capability / not already settled 正式三事（266 余量）（不变量 1119）
+- [`name-the-purp43-notinterop-bar.md`](name-the-purp43-notinterop-bar.md) — BIP-43 BIP32-compatible not already interoperable / not already same-tree / not already settled 正式三事（266 余量）（不变量 1118）
 - [`name-the-acc44-notdone-bar.md`](name-the-acc44-notdone-bar.md) — BIP-44 zero-balance not already discovery-done / not already no-later-account / not already settled 正式三事（267 余量）（不变量 1117）
 - [`name-the-acc44-notpast-bar.md`](name-the-acc44-notpast-bar.md) — BIP-44 next-account-number not already has-history / not already same-identity / not already settled 正式三事（267 余量）（不变量 1116）
 - [`name-the-acc44-notcoin-bar.md`](name-the-acc44-notcoin-bar.md) — BIP-44 same-seed not already same-coin / not already shared-address / not already settled 正式三事（267 余量）（不变量 1115）

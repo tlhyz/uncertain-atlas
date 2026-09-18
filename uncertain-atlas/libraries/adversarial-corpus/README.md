@@ -1,3 +1,9 @@
+| C1098 | 1120 | purp43 notbtc≠182/266 | 文案把同一套扩展钥前缀 / 版本魔数 写成已经是比特币专用 interchangeable 或已经和 182 interchangeable / 1120 purp43-notbtc interchangeable；或把看见默认账户支 写成已经是 BIP32 默认账户 interchangeable；或把看见不必另开魔数 写成已经交差 interchangeable，或已经和 266 purpose-vs-compatible bundled / purp43-notbtc-sold-as-bundled interchangeable / 1118 purp43-notinterop interchangeable / 1119 purp43-notstruct interchangeable |
+
+| C1097 | 1119 | purp43 notstruct≠184/266 | 文案把自称 BIPxx compatible / 只实现一部分 写成已经是那份结构 interchangeable 或已经和 184 interchangeable / 1119 purp43-notstruct interchangeable；或把看见用途号 写成已经支持全部能力 interchangeable；或把看见另写一份 BIP 写成已经交差 interchangeable，或已经和 266 purpose-vs-compatible bundled / purp43-notstruct-sold-as-bundled interchangeable / 1118 purp43-notinterop interchangeable / 1120 purp43-notbtc interchangeable |
+
+| C1096 | 1118 | purp43 notinterop≠182/266 | 文案把 BIP32 compatible / 自称兼容 写成已经能互操作 interchangeable 或已经和 182 interchangeable / 1118 purp43-notinterop interchangeable；或把看见都能从同一份种子长钥 写成已经同一套树 interchangeable；或把看见这句话相当没用 写成已经交差 interchangeable，或已经和 266 purpose-vs-compatible bundled / purp43-notinterop-sold-as-bundled interchangeable / 1119 purp43-notstruct interchangeable / 1120 purp43-notbtc interchangeable |
+
 | C1095 | 1117 | acc44 notdone≠184/267 | 文案把余额为零 / 一串没用过的地址 写成已经发现完 interchangeable 或已经和 184 interchangeable / 1117 acc44-notdone interchangeable；或把看见停搜 写成已经没有后面的账户 interchangeable；或把看见只扫外链 写成已经交差 interchangeable，或已经和 267 account-vs-discovered bundled / acc44-notdone-sold-as-bundled interchangeable / 1115 acc44-notcoin interchangeable / 1116 acc44-notpast interchangeable |
 
 | C1094 | 1116 | acc44 notpast≠266/267 | 文案把下一个账户号 / 去开新账户 写成已经有过往 interchangeable 或已经和 266 interchangeable / 1116 acc44-notpast interchangeable；或把看见两户 写成已经和上一户同一身份 interchangeable；或把看见不得混花 写成已经交差 interchangeable，或已经和 267 account-vs-discovered bundled / acc44-notpast-sold-as-bundled interchangeable / 1115 acc44-notcoin interchangeable / 1117 acc44-notdone interchangeable |

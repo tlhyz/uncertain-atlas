@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出分层钱包，必须分开兼容声明、用途层、花费能力。可以跳过「看见 BIP32 compatible 就已经能互操作」。若对照，必须分开树结构、用途号、描述符。不要另写怎样选用途号或从种子扫账户。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出分层钱包，必须分开兼容声明、用途层、花费能力。可以跳过「看见 BIP32 compatible 就已经能互操作」。若对照，必须分开树结构、用途号、描述符。不要另写怎样选用途号或从种子扫账户。266 purpose vs compatible bundled unbundling 完成（1118 item 1 / 1119 item 2 / 1120 item 3）；精读 [`worked-example-purp43-notinterop-vs-bundled.md`](worked-example-purp43-notinterop-vs-bundled.md)（不变量 1118 item 1）。
 
 ## 本页不抄
 

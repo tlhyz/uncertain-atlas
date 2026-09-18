@@ -1,3 +1,6 @@
+- [`purp43-notbtc-sold-as-bundled.md`](purp43-notbtc-sold-as-bundled.md) — 同一套前缀 被写成已经是比特币专用 / 已经是 BIP32 默认账户 / 已经交差（不变量 1120）
+- [`purp43-notstruct-sold-as-bundled.md`](purp43-notstruct-sold-as-bundled.md) — 自称 BIPxx compatible 被写成已经是那份结构 / 已经支持全部能力 / 已经交差（不变量 1119）
+- [`purp43-notinterop-sold-as-bundled.md`](purp43-notinterop-sold-as-bundled.md) — BIP32 compatible 被写成已经能互操作 / 已经同一套树 / 已经交差（不变量 1118）
 - [`acc44-notdone-sold-as-bundled.md`](acc44-notdone-sold-as-bundled.md) — 余额为零 被写成已经发现完 / 已经没有后面的账户 / 已经交差（不变量 1117）
 - [`acc44-notpast-sold-as-bundled.md`](acc44-notpast-sold-as-bundled.md) — 账户号 被写成已经有过往 / 已经和上一户同一身份 / 已经交差（不变量 1116）
 - [`acc44-notcoin-sold-as-bundled.md`](acc44-notcoin-sold-as-bundled.md) — 同一份种子 被写成已经是同一条币 / 已经可以共用地址 / 已经交差（不变量 1115）

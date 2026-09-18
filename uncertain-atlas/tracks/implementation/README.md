@@ -781,6 +781,9 @@
 - [`worked-example-valid-vs-der.md`](worked-example-valid-vs-der.md) — ECDSA 验得过 ≠ 已经是严格 DER；库收下 ≠ 共识已经接受；66 ≠ 62 ≠ 146 ≠ 34（不变量 172）
 - [`worked-example-dummy-vs-empty.md`](worked-example-dummy-vs-empty.md) — 多余栈元素 ≠ 已经随便填；隔离见证 ≠ 已经没有这条延展；策略已经要空 dummy ≠ 已经是共识（不变量 264）
 - [`worked-example-signet-vs-testnet.md`](worked-example-signet-vs-testnet.md) — signet ≠ 已经是 testnet；signet ≠ 已经是 regtest；头上有合法工作量 ≠ 已经签过（不变量 265）
+- [`worked-example-purp43-notbtc-vs-bundled.md`](worked-example-purp43-notbtc-vs-bundled.md) — 同一套前缀≠already bitcoin-only/BIP32-default-account/settled；≠266 bundled（不变量 1120）
+- [`worked-example-purp43-notstruct-vs-bundled.md`](worked-example-purp43-notstruct-vs-bundled.md) — 自称BIPxx≠already that-BIP-structure/full-capability/settled；≠266 bundled（不变量 1119）
+- [`worked-example-purp43-notinterop-vs-bundled.md`](worked-example-purp43-notinterop-vs-bundled.md) — BIP32 compatible≠already interoperable/same-tree/settled；≠266 bundled（不变量 1118）
 - [`worked-example-purpose-vs-compatible.md`](worked-example-purpose-vs-compatible.md) — BIP32 compatible ≠ 已经能互操作；自称 BIPxx compatible ≠ 已经是那份结构；同一套扩展钥前缀 ≠ 已经是比特币专用（不变量 266）
 - [`worked-example-acc44-notdone-vs-bundled.md`](worked-example-acc44-notdone-vs-bundled.md) — 余额为零≠already discovery-done/no-later-account/settled；≠267 bundled（不变量 1117）
 - [`worked-example-acc44-notpast-vs-bundled.md`](worked-example-acc44-notpast-vs-bundled.md) — 账户号≠already has-history/same-identity/settled；≠267 bundled（不变量 1116）
