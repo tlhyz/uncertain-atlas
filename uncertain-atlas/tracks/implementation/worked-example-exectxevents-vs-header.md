@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 ExecTxResult 里填了 events 就已经印进本头、已经是块级事件、已经是 CheckTx 回包」，必须分开 ExecTxResult.events 是给交易建索引的类型键值事件是不是已经印进本头、ExecTxResult.events 标成非确定是不是已经像 Code/Data 那样必须确定、ExecTxResult.events 在 tx_results 里逐笔出现是不是已经是 FinalizeBlockResponse.events / CheckTxResponse.events。可以跳过「看见 ExecTxResult 里填了 events 就已经印进本头」。不要另写怎样写 ExecTxResult events 栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 ExecTxResult 里填了 events 就已经印进本头、已经是块级事件、已经是 CheckTx 回包」，必须分开 ExecTxResult.events 是给交易建索引的类型键值事件是不是已经印进本头、ExecTxResult.events 标成非确定是不是已经像 Code/Data 那样必须确定、ExecTxResult.events 在 tx_results 里逐笔出现是不是已经是 FinalizeBlockResponse.events / CheckTxResponse.events。可以跳过「看见 ExecTxResult 里填了 events 就已经印进本头」。446 ExecTxResult events vs header bundled unbundling 完成（1362 item 1 / 1363 item 2 / 1364 item 3）；精读 [`worked-example-etxev-notidx-vs-bundled.md`](worked-example-etxev-notidx-vs-bundled.md)（不变量 1362 item 1）、[`worked-example-etxev-notdet-vs-bundled.md`](worked-example-etxev-notdet-vs-bundled.md)（不变量 1363 item 2）、[`worked-example-etxev-notlvl-vs-bundled.md`](worked-example-etxev-notlvl-vs-bundled.md)（不变量 1364 item 3）。不要另写怎样写 ExecTxResult events 栏。
 
 ## 本页不抄
 

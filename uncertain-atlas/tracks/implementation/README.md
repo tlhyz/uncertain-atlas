@@ -1018,6 +1018,9 @@
 - [`worked-example-cifields-notlst-vs-bundled.md`](worked-example-cifields-notlst-vs-bundled.md) — votes是上一集合投票信息≠already进块/交差/444 Notes票序；≠445 bundled（不变量 1360）
 - [`worked-example-cifields-notnts-vs-bundled.md`](worked-example-cifields-notnts-vs-bundled.md) — Fields栏≠already Notes票序/444 bundled/365奖罚；≠445 bundled（不变量 1361）
 - [`worked-example-cifields-vs-notes.md`](worked-example-cifields-vs-notes.md) — CommitInfo Fields 栏≠already Notes 票序/已经进块（快照 445）
+- [`worked-example-etxev-notidx-vs-bundled.md`](worked-example-etxev-notidx-vs-bundled.md) — ExecTxResult.events索引kv≠already印进本头/Code-Data必须确定；≠446 bundled（不变量 1362）
+- [`worked-example-etxev-notdet-vs-bundled.md`](worked-example-etxev-notdet-vs-bundled.md) — events标成非确定≠already共识字段/已经哈希/316必须确定；≠446 bundled（不变量 1363）
+- [`worked-example-etxev-notlvl-vs-bundled.md`](worked-example-etxev-notlvl-vs-bundled.md) — 逐笔events≠already块级431/CheckTx 381/池门回包；≠446 bundled（不变量 1364）
 - [`worked-example-exectxevents-vs-header.md`](worked-example-exectxevents-vs-header.md) — ExecTxResult.events≠already 印进本头/块级events（快照 446）
 - [`worked-example-extviusage-vs-expose.md`](worked-example-extviusage-vs-expose.md) — ExtendedVoteInfo Usage 暴露签≠already 应用验完/必须填内容
 - [`worked-example-prepevents-vs-finalize.md`](worked-example-prepevents-vs-finalize.md) — Prepare 事件保留≠already 回包交回/Process就交/CheckTx events

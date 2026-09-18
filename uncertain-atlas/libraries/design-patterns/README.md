@@ -1,3 +1,6 @@
+- [`name-the-etxev-notlvl-bar.md`](name-the-etxev-notlvl-bar.md) — ExecTxEv per-tx events in tx_results not already block-level 431 / not already CheckTx 381 / not already interchangeable 正式三事（446 余量）（不变量 1364）
+- [`name-the-etxev-notdet-bar.md`](name-the-etxev-notdet-bar.md) — ExecTxEv tx events marked non-deterministic not already consensus-field / not already hashed / not already 316-det 正式三事（446 余量）（不变量 1363）
+- [`name-the-etxev-notidx-bar.md`](name-the-etxev-notidx-bar.md) — ExecTxEv tx events are index kv not already LastResultsHash / not already Code-Data-det / not already in-header 正式三事（446 余量）（不变量 1362）
 - [`name-the-cifields-notnts-bar.md`](name-the-cifields-notnts-bar.md) — CiFields Fields column not already Notes order / not already 444-bundled / not already 365-rewards 正式三事（445 余量）（不变量 1361）
 - [`name-the-cifields-notlst-bar.md`](name-the-cifields-notlst-bar.md) — CiFields votes is last-set voting-info not already in-block / not already settled / not already 444-notes-order 正式三事（445 余量）（不变量 1360）
 - [`name-the-cifields-notrnd-bar.md`](name-the-cifields-notrnd-bar.md) — CiFields round is commit-round not already voting-power-ordered / not already slashed / not already 394-ext-round 正式三事（445 余量）（不变量 1359）

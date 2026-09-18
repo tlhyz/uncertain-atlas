@@ -1,3 +1,15 @@
+## 2026-09-18（续 1481）
+
+- 不变量 1364；语料 C1342；模式 name-the-etxev-notlvl-bar；反模式 etxev-notlvl-sold-as-bundled；L10.3 第 1333 条。填 L4.4 ExecTxEv per-tx events in tx_results not already block-level 431 / not already CheckTx 381 / not already interchangeable 正式三事（446 余量）。446 ExecTxResult events vs header bundled unbundling 完成（1364 item 3）。
+
+## 2026-09-18（续 1480）
+
+- 不变量 1363；语料 C1341；模式 name-the-etxev-notdet-bar；反模式 etxev-notdet-sold-as-bundled；L10.3 第 1332 条。填 L4.4 ExecTxEv tx events marked non-deterministic not already consensus-field / not already hashed / not already 316-det 正式三事（446 余量）。446 ExecTxResult events vs header bundled unbundling 续（1363 item 2）。
+
+## 2026-09-18（续 1479）
+
+- 不变量 1362；语料 C1340；模式 name-the-etxev-notidx-bar；反模式 etxev-notidx-sold-as-bundled；L10.3 第 1331 条。填 L4.4 ExecTxEv tx events are index kv not already LastResultsHash / not already Code-Data-det / not already in-header 正式三事（446 余量）。446 ExecTxResult events vs header bundled unbundling 启动（1362 item 1）。
+
 ## 2026-09-18（续 1478）
 
 - 不变量 1361；语料 C1339；模式 name-the-cifields-notnts-bar；反模式 cifields-notnts-sold-as-bundled；L10.3 第 1330 条。填 L4.4 CiFields Fields column not already Notes order / not already 444-bundled / not already 365-rewards 正式三事（445 余量）。445 CommitInfo Fields round-and-votes bundled unbundling 完成（1361 item 3）。

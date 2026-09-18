@@ -1,3 +1,6 @@
+- [`etxev-notlvl-sold-as-bundled.md`](etxev-notlvl-sold-as-bundled.md) — 逐笔 events 被写成已经是块级 events / 就已经是 CheckTx events / 就已经 interchangeable（不变量 1364）
+- [`etxev-notdet-sold-as-bundled.md`](etxev-notdet-sold-as-bundled.md) — events 非确定 被写成已经是共识字段 / 就已经编进哈希 / 就已经必须确定（不变量 1363）
+- [`etxev-notidx-sold-as-bundled.md`](etxev-notidx-sold-as-bundled.md) — ExecTxResult.events 被写成已经印进本头 / 就已经像 Code/Data 必须确定 / 就已经交差（不变量 1362）
 - [`cifields-notnts-sold-as-bundled.md`](cifields-notnts-sold-as-bundled.md) — Fields 栏 被写成已经是 Notes 票序 / 就已经是 444 bundled / 就已经按到场定奖惩（不变量 1361）
 - [`cifields-notlst-sold-as-bundled.md`](cifields-notlst-sold-as-bundled.md) — CommitInfo.votes 列表含义 被写成已经进了块 / 就已经交差 / 就已经是 Notes 票序（不变量 1360）
 - [`cifields-notrnd-sold-as-bundled.md`](cifields-notrnd-sold-as-bundled.md) — CommitInfo.round 被写成已经按投票权排过 / 就已经罚没 / 就已经是 ExtendedCommitInfo.round（不变量 1359）
