@@ -1,3 +1,15 @@
+## 2026-09-18（续 1547）
+
+- 不变量 1430；语料 C1408；模式 name-the-bn128-notgen-bar；反模式 bn128-notgen-sold-as-bundled；L10.3 第 1399 条。填 L5.1 EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）。228 bn128-cut vs verify bundled unbundling 完成（1430 item 3）。
+
+## 2026-09-18（续 1546）
+
+- 不变量 1429；语料 C1407；模式 name-the-bn128-notsig-bar；反模式 bn128-notsig-sold-as-bundled；L10.3 第 1398 条。填 L5.1 EIP-1108 cheaper not already verifying / not already privacy-live / not already 2537 正式三事（228 余量）。228 bn128-cut vs verify bundled unbundling 续（1429 item 2）。
+
+## 2026-09-18（续 1545）
+
+- 不变量 1428；语料 C1406；模式 name-the-bn128-notalgo-bar；反模式 bn128-notalgo-sold-as-bundled；L10.3 第 1397 条。填 L5.1 EIP-1108 bn128-cut not already algo-changed / not already 196-197-readded / not already 228-bundled 正式三事（228 余量）。228 bn128-cut vs verify bundled unbundling 启动（1428 item 1）。
+
 ## 2026-09-18（续 1544）
 
 - 不变量 1427；语料 C1405；模式 name-the-mexp-notmin-bar；反模式 mexp-notmin-sold-as-bundled；L10.3 第 1396 条。填 L5.1 EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）。227 modexp-price vs bound bundled unbundling 完成（1427 item 3）。

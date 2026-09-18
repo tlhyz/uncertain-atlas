@@ -1032,6 +1032,9 @@
 - [`worked-example-mexp-notiface-vs-bundled.md`](worked-example-mexp-notiface-vs-bundled.md) — 更便宜≠already 改了接口算法/206/换了得数；≠227 bundled（不变量 1426）
 - [`worked-example-mexp-notmin-vs-bundled.md`](worked-example-mexp-notmin-vs-bundled.md) — 最低气价≠already 小输入无限便宜/不伤安全/签名产品；≠227 bundled（不变量 1427）
 - [`worked-example-modexp-price-vs-bound.md`](worked-example-modexp-price-vs-bound.md) — 看见模幂重计价 ≠ 已经是 198 那道复杂度公式；看见更便宜 ≠ 已经改了接口或算法；看见最低气价 ≠ 已经能对小输入无限便宜；2565 ≠ 7823 ≠ 206 ≠ 198 原文（不变量 227）
+- [`worked-example-bn128-notalgo-vs-bundled.md`](worked-example-bn128-notalgo-vs-bundled.md) — bn128降价≠already 换了算法/重新加入预编译/228 bundled；≠228 bundled（不变量 1428）
+- [`worked-example-bn128-notsig-vs-bundled.md`](worked-example-bn128-notsig-vs-bundled.md) — 更便宜≠already 在验签/隐私产品已齐/2537；≠228 bundled（不变量 1429）
+- [`worked-example-bn128-notgen-vs-bundled.md`](worked-example-bn128-notgen-vs-bundled.md) — 本页≠already 通用曲线算术/199/227；≠228 bundled（不变量 1430）
 - [`worked-example-bn128-cut-vs-verify.md`](worked-example-bn128-cut-vs-verify.md) — 看见 bn128 加 / 乘 / 配对降价 ≠ 已经换了算法；看见更便宜 ≠ 已经在验签；看见本页 ≠ 已经是通用曲线算术；1108 ≠ 2537 ≠ 199 ≠ 196/197 原文（不变量 228）
 - [`worked-example-selfbalance-vs-balance.md`](worked-example-selfbalance-vs-balance.md) — 看见本账户余额指令 ≠ 已经是按地址查余额；看见给自己查余额 ≠ 已经按本账户价扣；看见树依赖涨价 ≠ 已经是本笔冷热 / 已经是磁盘 O(1)；1884 ≠ 2929 ≠ 169 ≠ 101 ≠ 150（不变量 229）
 - [`worked-example-blake2f-vs-hash.md`](worked-example-blake2f-vs-hash.md) — 看见 BLAKE2 压缩函数 F ≠ 已经是 BLAKE2b 哈希；看见本页 ≠ 已经能验 Equihash / 已经是中继 / 已经有隐私；152 ≠ keccak / SHA3（不变量 230）

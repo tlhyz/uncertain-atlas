@@ -1,3 +1,6 @@
+- [`bn128-notgen-sold-as-bundled.md`](bn128-notgen-sold-as-bundled.md) — 本页 被写成已经是通用曲线算术 / 就已经是 199 / 就已经是 227（不变量 1430）
+- [`bn128-notsig-sold-as-bundled.md`](bn128-notsig-sold-as-bundled.md) — 更便宜 被写成已经在验签 / 就已经上了隐私产品 / 就已经是 2537（不变量 1429）
+- [`bn128-notalgo-sold-as-bundled.md`](bn128-notalgo-sold-as-bundled.md) — bn128 降价 被写成已经换了算法 / 就已经重新加入预编译 / 就已经 228 bundled（不变量 1428）
 - [`mexp-notmin-sold-as-bundled.md`](mexp-notmin-sold-as-bundled.md) — 最低气价 被写成已经能无限便宜 / 就已经不伤安全 / 就已经是签名产品（不变量 1427）
 - [`mexp-notiface-sold-as-bundled.md`](mexp-notiface-sold-as-bundled.md) — 更便宜 被写成已经改了接口算法 / 就已经是 206 / 就已经换了得数（不变量 1426）
 - [`mexp-not198-sold-as-bundled.md`](mexp-not198-sold-as-bundled.md) — 模幂重计价 被写成已经是 198 公式 / 就已经是 7823 / 就已经 227 bundled（不变量 1425）

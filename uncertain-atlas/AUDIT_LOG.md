@@ -1,3 +1,18 @@
+| A6915 | 记录 | 会与 228 / 199 / 206 / 1428 / 1429 糊成「看见本页不是已经是通用曲线算术就已经是通用曲线算术 interchangeable、就已经是不变量 199 interchangeable、就已经是不变量 227 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。228 bn128-cut vs verify bundled unbundling 完成（1430 item 3） |
+| A6916 | 高 | 看见本页不是已经是通用曲线算术 会被写成已经是通用曲线算术 interchangeable / 199 interchangeable | 官方 EIP-1108 bn128 item 3：not already 已经是通用曲线算术 / not 199 |
+| A6917 | 高 | 看见this page is not already generic curve arithmetic 会被写成已经是不变量 199 interchangeable / 206 interchangeable | 官方 EIP-1108 bn128 item 3：not already 已经是不变量 199 / not 206 |
+| A6918 | 高 | 看见本页不是已经是通用曲线算术 会被写成已经是不变量 227 interchangeable | 官方 EIP-1108 bn128 item 3：not already settled |
+| A6919 | 中 | 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证会被抄进不确定 | 不抄。不写 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证。不另写 19 节 |
+| A6910 | 记录 | 会与 228 / 199 / 116 / 1428 / 1430 糊成「看见更便宜不是已经在验签就已经在验签 interchangeable、就已经上了隐私 / 扩容产品 interchangeable、就已经是 2537 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1108 cheaper not already verifying / not already privacy-live / not already 2537 正式三事（228 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。228 bn128-cut vs verify bundled unbundling 续（1429 item 2） |
+| A6911 | 高 | 看见更便宜不是已经在验签 会被写成已经在验签 interchangeable / 199 interchangeable | 官方 EIP-1108 bn128 item 2：not already 已经在验签 / not 199 |
+| A6912 | 高 | 看见cheaper is not already verifying signatures 会被写成已经上了隐私 / 扩容产品 interchangeable / 116 interchangeable | 官方 EIP-1108 bn128 item 2：not already 已经上了隐私 / 扩容产品 / not 116 |
+| A6913 | 高 | 看见更便宜不是已经在验签 会被写成已经是 2537 interchangeable | 官方 EIP-1108 bn128 item 2：not already settled |
+| A6914 | 中 | 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证会被抄进不确定 | 不抄。不写 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证。不另写 19 节 |
+| A6905 | 记录 | 会与 228 / 199 / 227 / 1429 / 1430 糊成「看见bn128 加 / 乘 / 配对降价不是已经换了算法就已经换了算法 interchangeable、就已经重新加入这三条预编译 interchangeable、就已经 228 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1108 bn128-cut not already algo-changed / not already 196-197-readded / not already 228-bundled 正式三事（228 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。228 bn128-cut vs verify bundled unbundling 启动（1428 item 1） |
+| A6906 | 高 | 看见bn128 加 / 乘 / 配对降价不是已经换了算法 会被写成已经换了算法 interchangeable / 199 interchangeable | 官方 EIP-1108 bn128 item 1：not already 已经换了算法 / not 199 |
+| A6907 | 高 | 看见bn128 cut is not already algo-changed 会被写成已经重新加入这三条预编译 interchangeable / 227 interchangeable | 官方 EIP-1108 bn128 item 1：not already 已经重新加入这三条预编译 / not 227 |
+| A6908 | 高 | 看见bn128 加 / 乘 / 配对降价不是已经换了算法 会被写成已经 228 bundled interchangeable | 官方 EIP-1108 bn128 item 1：not already settled |
+| A6909 | 中 | 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证会被抄进不确定 | 不抄。不写 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证。不另写 19 节 |
 | A6900 | 记录 | 会与 227 / 177 / 199 / 1425 / 1426 糊成「看见最低气价不是已经能对小输入无限便宜就已经能对小输入无限便宜 interchangeable、就已经不伤安全 interchangeable、就已经是签名产品 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。227 modexp-price vs bound bundled unbundling 完成（1427 item 3） |
 | A6901 | 高 | 看见最低气价不是已经能对小输入无限便宜 会被写成已经能对小输入无限便宜 interchangeable / 177 interchangeable | 官方 EIP-2565 mexp item 3：not already 已经能对小输入无限便宜 / not 177 |
 | A6902 | 高 | 看见min gas is not already infinitely cheap 会被写成已经不伤安全 interchangeable / 199 interchangeable | 官方 EIP-2565 mexp item 3：not already 已经不伤安全 / not 199 |

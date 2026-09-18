@@ -1,3 +1,6 @@
+- [`name-the-bn128-notgen-bar.md`](name-the-bn128-notgen-bar.md) — EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）（不变量 1430）
+- [`name-the-bn128-notsig-bar.md`](name-the-bn128-notsig-bar.md) — EIP-1108 cheaper not already verifying / not already privacy-live / not already 2537 正式三事（228 余量）（不变量 1429）
+- [`name-the-bn128-notalgo-bar.md`](name-the-bn128-notalgo-bar.md) — EIP-1108 bn128-cut not already algo-changed / not already 196-197-readded / not already 228-bundled 正式三事（228 余量）（不变量 1428）
 - [`name-the-mexp-notmin-bar.md`](name-the-mexp-notmin-bar.md) — EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）（不变量 1427）
 - [`name-the-mexp-notiface-bar.md`](name-the-mexp-notiface-bar.md) — EIP-2565 cheaper not already iface-changed / not already algo-changed / not already 206 正式三事（227 余量）（不变量 1426）
 - [`name-the-mexp-not198-bar.md`](name-the-mexp-not198-bar.md) — EIP-2565 reprice not already 198-formula / not already 7823 / not already 227-bundled 正式三事（227 余量）（不变量 1425）

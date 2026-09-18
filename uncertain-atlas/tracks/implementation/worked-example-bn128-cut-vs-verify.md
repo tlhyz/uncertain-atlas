@@ -86,7 +86,7 @@
 | 经济 | 更便宜不是隐私 / 扩容 / 简短证明已经免费 |
 
 **推断：** 产品句若只写「配对终于便宜了」，读者会把降价听成已经在验签，或把 1108 听成 2537，或把动机听成隐私产品已经齐。  
-**建议：** 第一版可以不做配对预编译。若对照，必须分开改价、196/197 原文、2537、已经在验签。不要发明「看见 1108 就已经在验签」。不要抄新旧气价或产品气账。不要写怎样拼配对或做机密交易。
+**建议：** 第一版可以不做配对预编译。若对照，必须分开改价、196/197 原文、2537、已经在验签。可以跳过「看见 1108 就已经在验签」。228 bn128-cut vs verify bundled unbundling 完成（1428 item 1 / 1429 item 2 / 1430 item 3）；精读 [`worked-example-bn128-notalgo-vs-bundled.md`](worked-example-bn128-notalgo-vs-bundled.md)（不变量 1428 item 1）、[`worked-example-bn128-notsig-vs-bundled.md`](worked-example-bn128-notsig-vs-bundled.md)（不变量 1429 item 2）、[`worked-example-bn128-notgen-vs-bundled.md`](worked-example-bn128-notgen-vs-bundled.md)（不变量 1430 item 3）。不要发明「看见 1108 就已经在验签」。不要抄新旧气价或产品气账。不要写怎样拼配对或做机密交易。
 
 ---
 
