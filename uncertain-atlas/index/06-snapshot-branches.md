@@ -18,9 +18,9 @@
 | 已是 HEAD 祖先 | 211 | `git merge-base --is-ancestor $ref HEAD` 为真；知识已在 canonical |
 | 平行（非祖先） | 74 | 与 HEAD 分叉；最肥 tip 是 `finfields-nothandshake-575` |
 | 最肥平行 tip 的 atlas 文件 | 1797 | `origin/cursor/cometbft-finfields-nothandshake-575-2f0b` |
-| tip 有、工作树没有 | 107 | 37 implementation + 35 anti-patterns + 35 design-patterns |
-| 其中无后继（unique） | 27 文件 / 9 簇 | 见下表；不变量 README 没有 `^439.`–`^446.` 编号头 |
-| 其中已被后继取代 | 80 | 见「不要抄」 |
+| tip 有、工作树没有（回收前） | 107 | 37 implementation + 35 anti-patterns + 35 design-patterns |
+| 本回合收回 unique | 27 文件 / 9 簇 | 实现页 + 配套模式/反模式；`extappgen` 已拆 1350–1352 |
+| 回收后仍缺（全是 superseded） | 80 | 见「不要抄」；不要再 checkout |
 
 前五肥平行 tip（atlas 文件数）：
 
