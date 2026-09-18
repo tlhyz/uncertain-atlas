@@ -1,3 +1,15 @@
+## 2026-09-18（续 1243）
+
+- 不变量 1126；语料 C1104；模式 name-the-nest49-notbal-bar；反模式 nest49-notbal-sold-as-bundled；L10.3 第 1095 条。填 L1.4 / L3.6 BIP-49 account-appeared not already complete / not already skip-balance-check / not already settled 正式三事（268 余量）。268 nested vs same-account bundled unbundling 完成（1126 item 3）。
+
+## 2026-09-18（续 1242）
+
+- 不变量 1125；语料 C1103；模式 name-the-nest49-notback-bar；反模式 nest49-notback-sold-as-bundled；L10.3 第 1094 条。填 L1.4 / L3.6 BIP-49 dedicated-account not already backward-compatible / not already same-household / not already settled 正式三事（268 余量）。268 nested vs same-account bundled unbundling 续（1125 item 2）。
+
+## 2026-09-18（续 1241）
+
+- 不变量 1124；语料 C1102；模式 name-the-nest49-notold-bar；反模式 nest49-notold-sold-as-bundled；L10.3 第 1093 条。填 L1.4 / L3.6 BIP-49 same-BIP44-account not already recover-nested / not already same-keys-rewritten / not already settled 正式三事（268 余量）。268 nested vs same-account bundled unbundling 启动（1124 item 1）。
+
 ## 2026-09-18（续 1240）
 
 - 不变量 1123；语料 C1101；模式 name-the-bip85-nottarget-bar；反模式 bip85-nottarget-sold-as-bundled；L10.3 第 1092 条。填 L1.4 / L3.6 BIP-85 derived-entropy not already target-wallet-seed / not already this-tree-key / not already settled 正式三事（286 余量）。286 entropy vs seed bundled unbundling 完成（1123 item 3）。

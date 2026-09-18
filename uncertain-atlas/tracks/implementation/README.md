@@ -789,6 +789,9 @@
 - [`worked-example-acc44-notpast-vs-bundled.md`](worked-example-acc44-notpast-vs-bundled.md) — 账户号≠already has-history/same-identity/settled；≠267 bundled（不变量 1116）
 - [`worked-example-acc44-notcoin-vs-bundled.md`](worked-example-acc44-notcoin-vs-bundled.md) — 同一份种子≠already same-coin/shared-address/settled；≠267 bundled（不变量 1115）
 - [`worked-example-account-vs-discovered.md`](worked-example-account-vs-discovered.md) — 同一份种子 ≠ 已经是同一条币；下一个账户号 ≠ 已经有过往；余额为零 ≠ 已经发现完（不变量 267）
+- [`worked-example-nest49-notbal-vs-bundled.md`](worked-example-nest49-notbal-vs-bundled.md) — 账户出现≠already complete/skip-balance-check/settled；≠268 bundled（不变量 1126）
+- [`worked-example-nest49-notback-vs-bundled.md`](worked-example-nest49-notback-vs-bundled.md) — 专用账户≠already backward-compatible/same-household/settled；≠268 bundled（不变量 1125）
+- [`worked-example-nest49-notold-vs-bundled.md`](worked-example-nest49-notold-vs-bundled.md) — 同一套 BIP44 账户≠already recover-nested/same-keys-rewritten/settled；≠268 bundled（不变量 1124）
 - [`worked-example-nested-vs-same-account.md`](worked-example-nested-vs-same-account.md) — 同一套 BIP44 账户 ≠ 已经能找回嵌套隔离见证；专用账户 ≠ 已经向后兼容；账户出现了 ≠ 已经不用核余额（不变量 268）
 - [`worked-example-script-type-vs-account.md`](worked-example-script-type-vs-account.md) — 现有多签派生习惯 ≠ 已经要搬家；脚本类型层 ≠ 已经是账户层；本页多签 ≠ 已经不排序（不变量 269）
 - [`worked-example-sorted-vs-one-address.md`](worked-example-sorted-vs-one-address.md) — 同一套钥 ≠ 已经是同一条 P2SH 地址；只共享门限和主公钥 ≠ 已经够了；未压缩钥 ≠ 已经是本页（不变量 270）

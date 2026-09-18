@@ -1,3 +1,18 @@
+| A5395 | 记录 | 会与 268 / 1117 / 1116 / 1124 / 1125 糊成「看见账户出现了就已经把嵌套隔离见证那批未花输出都找齐 interchangeable、就已经不用核余额 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-49 account-appeared not already complete / not already skip-balance-check / not already settled 正式三事（268 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。268 nested vs same-account bundled unbundling 完成（1126 item 3） |
+| A5396 | 高 | 看见账户出现了 会被写成已经把嵌套隔离见证那批未花输出都找齐 interchangeable / 1117 interchangeable | 官方 BIP-49 嵌套找回 item 3：not already complete / not 1117 |
+| A5397 | 高 | 看见账户出现了 会被写成已经不用核余额 interchangeable / 1116 interchangeable | 官方 BIP-49 嵌套找回 item 3：not already skip-balance-check / not 1116 |
+| A5398 | 高 | 看见账户完全不出现 会被写成已经交差 interchangeable | 官方 BIP-49 嵌套找回 item 3：not already settled |
+| A5399 | 中 | 怎样套脚本或从种子扫嵌套地址会被抄进不确定 | 不抄。不写怎样套脚本或从种子扫嵌套地址。不另写 19 节 |
+| A5390 | 记录 | 会与 268 / 1118 / 266 / 1124 / 1126 糊成「看见专用账户就已经向后兼容 interchangeable、就已经是原来那户 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-49 dedicated-account not already backward-compatible / not already same-household / not already settled 正式三事（268 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。268 nested vs same-account bundled unbundling 续（1125 item 2） |
+| A5391 | 高 | 看见专用隔离见证账户 会被写成已经向后兼容 interchangeable / 1118 interchangeable | 官方 BIP-49 嵌套找回 item 2：not already backward-compatible / not 1118 |
+| A5392 | 高 | 看见换了用途 会被写成已经是原来那户 interchangeable / 266 interchangeable | 官方 BIP-49 嵌套找回 item 2：not already same-household / not 266 |
+| A5393 | 高 | 看见不会本页的钱包根本发现不了这些账户 会被写成已经交差 interchangeable | 官方 BIP-49 嵌套找回 item 2：not already settled |
+| A5394 | 中 | 怎样套脚本或从种子扫嵌套地址会被抄进不确定 | 不抄。不写怎样套脚本或从种子扫嵌套地址。不另写 19 节 |
+| A5385 | 记录 | 会与 268 / 182 / 1115 / 1125 / 1126 糊成「看见同一套 BIP44 账户就已经能找回这些币 interchangeable、就已经看见那些币 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-49 same-BIP44-account not already recover-nested / not already same-keys-rewritten / not already settled 正式三事（268 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。268 nested vs same-account bundled unbundling 启动（1124 item 1） |
+| A5386 | 高 | 看见同一套 BIP44 账户 会被写成已经能找回这些币 interchangeable / 182 interchangeable | 官方 BIP-49 嵌套找回 item 1：not already recover-nested / not 182 |
+| A5387 | 高 | 看见同一批钥能编出付款脚本哈希地址 会被写成已经看见那些币 interchangeable / 1115 interchangeable | 官方 BIP-49 嵌套找回 item 1：not already same-keys-rewritten / not 1115 |
+| A5388 | 高 | 看见把本页兼容的种子导进不会本页的钱包 会被写成已经交差 interchangeable | 官方 BIP-49 嵌套找回 item 1：not already settled |
+| A5389 | 中 | 怎样套脚本或从种子扫嵌套地址会被抄进不确定 | 不抄。不写怎样套脚本或从种子扫嵌套地址。不另写 19 节 |
 | A5380 | 记录 | 会与 286 / 183 / 1115 / 1121 / 1122 糊成「看见派生出的熵就已经是目标钱包的种子 interchangeable、就已经是本钱包里的钥 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-85 derived-entropy not already target-wallet-seed / not already this-tree-key / not already settled 正式三事（286 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。286 entropy vs seed bundled unbundling 完成（1123 item 3） |
 | A5381 | 高 | 看见派生出的熵 会被写成已经是目标钱包的种子 interchangeable / 183 interchangeable | 官方 BIP-85 导出熵 item 3：not already target-wallet-seed / not 183 |
 | A5382 | 高 | 看见给另一个应用用了 会被写成已经是本钱包里的钥 interchangeable / 1115 interchangeable | 官方 BIP-85 导出熵 item 3：not already this-tree-key / not 1115 |

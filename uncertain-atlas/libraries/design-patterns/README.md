@@ -1,3 +1,6 @@
+- [`name-the-nest49-notbal-bar.md`](name-the-nest49-notbal-bar.md) — BIP-49 account-appeared not already complete / not already skip-balance-check / not already settled 正式三事（268 余量）（不变量 1126）
+- [`name-the-nest49-notback-bar.md`](name-the-nest49-notback-bar.md) — BIP-49 dedicated-account not already backward-compatible / not already same-household / not already settled 正式三事（268 余量）（不变量 1125）
+- [`name-the-nest49-notold-bar.md`](name-the-nest49-notold-bar.md) — BIP-49 same-BIP44-account not already recover-nested / not already same-keys-rewritten / not already settled 正式三事（268 余量）（不变量 1124）
 - [`name-the-bip85-nottarget-bar.md`](name-the-bip85-nottarget-bar.md) — BIP-85 derived-entropy not already target-wallet-seed / not already this-tree-key / not already settled 正式三事（286 余量）（不变量 1123）
 - [`name-the-bip85-notinvert-bar.md`](name-the-bip85-notinvert-bar.md) — BIP-85 xprv-root not already invertible-to-mnemonic / not already the-entropy / not already settled 正式三事（286 余量）（不变量 1122）
 - [`name-the-bip85-notcover-bar.md`](name-the-bip85-notcover-bar.md) — BIP-85 one-mnemonic not already covers-all-wallets / not already safer-to-share / not already settled 正式三事（286 余量）（不变量 1121）

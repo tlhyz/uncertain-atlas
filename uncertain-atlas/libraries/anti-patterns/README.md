@@ -1,3 +1,6 @@
+- [`nest49-notbal-sold-as-bundled.md`](nest49-notbal-sold-as-bundled.md) — 账户出现了 被写成已经找齐 / 已经不用核余额 / 已经交差（不变量 1126）
+- [`nest49-notback-sold-as-bundled.md`](nest49-notback-sold-as-bundled.md) — 专用账户 被写成已经向后兼容 / 已经是原来那户 / 已经交差（不变量 1125）
+- [`nest49-notold-sold-as-bundled.md`](nest49-notold-sold-as-bundled.md) — 同一套 BIP44 账户 被写成已经能找回这些币 / 已经看见那些币 / 已经交差（不变量 1124）
 - [`bip85-nottarget-sold-as-bundled.md`](bip85-nottarget-sold-as-bundled.md) — 派生熵 被写成已经是目标钱包的种子 / 已经是本钱包里的钥 / 已经交差（不变量 1123）
 - [`bip85-notinvert-sold-as-bundled.md`](bip85-notinvert-sold-as-bundled.md) — 扩展根钥 被写成已经能倒回助记词 / 已经是那份熵 / 已经交差（不变量 1122）
 - [`bip85-notcover-sold-as-bundled.md`](bip85-notcover-sold-as-bundled.md) — 一份助记词 被写成已经能备齐所有钱包 / 已经更安全 / 已经交差（不变量 1121）
