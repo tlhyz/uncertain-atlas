@@ -1,3 +1,15 @@
+## 2026-09-18（续 1246）
+
+- 不变量 1129；语料 C1107；模式 name-the-msig48-notsort-bar；反模式 msig48-notsort-sold-as-bundled；L10.3 第 1098 条。填 L1.4 / L3.6 BIP-48 this-page-multisig not already unsorted / not already bip44-path / not already settled 正式三事（269 余量）。269 script-type vs account bundled unbundling 完成（1129 item 3）。
+
+## 2026-09-18（续 1245）
+
+- 不变量 1128；语料 C1106；模式 name-the-msig48-notacct-bar；反模式 msig48-notacct-sold-as-bundled；L10.3 第 1097 条。填 L1.4 / L3.6 BIP-48 script-type-layer not already account-layer / not already all-future-scripts-fixed / not already settled 正式三事（269 余量）。269 script-type vs account bundled unbundling 续（1128 item 2）。
+
+## 2026-09-18（续 1244）
+
+- 不变量 1127；语料 C1105；模式 name-the-msig48-notmove-bar；反模式 msig48-notmove-sold-as-bundled；L10.3 第 1096 条。填 L1.4 / L3.6 BIP-48 existing-multisig-habit not already must-migrate / not already path-rewritable / not already settled 正式三事（269 余量）。269 script-type vs account bundled unbundling 启动（1127 item 1）。
+
 ## 2026-09-18（续 1243）
 
 - 不变量 1126；语料 C1104；模式 name-the-nest49-notbal-bar；反模式 nest49-notbal-sold-as-bundled；L10.3 第 1095 条。填 L1.4 / L3.6 BIP-49 account-appeared not already complete / not already skip-balance-check / not already settled 正式三事（268 余量）。268 nested vs same-account bundled unbundling 完成（1126 item 3）。

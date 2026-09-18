@@ -1,3 +1,6 @@
+- [`name-the-msig48-notsort-bar.md`](name-the-msig48-notsort-bar.md) — BIP-48 this-page-multisig not already unsorted / not already bip44-path / not already settled 正式三事（269 余量）（不变量 1129）
+- [`name-the-msig48-notacct-bar.md`](name-the-msig48-notacct-bar.md) — BIP-48 script-type-layer not already account-layer / not already all-future-scripts-fixed / not already settled 正式三事（269 余量）（不变量 1128）
+- [`name-the-msig48-notmove-bar.md`](name-the-msig48-notmove-bar.md) — BIP-48 existing-multisig-habit not already must-migrate / not already path-rewritable / not already settled 正式三事（269 余量）（不变量 1127）
 - [`name-the-nest49-notbal-bar.md`](name-the-nest49-notbal-bar.md) — BIP-49 account-appeared not already complete / not already skip-balance-check / not already settled 正式三事（268 余量）（不变量 1126）
 - [`name-the-nest49-notback-bar.md`](name-the-nest49-notback-bar.md) — BIP-49 dedicated-account not already backward-compatible / not already same-household / not already settled 正式三事（268 余量）（不变量 1125）
 - [`name-the-nest49-notold-bar.md`](name-the-nest49-notold-bar.md) — BIP-49 same-BIP44-account not already recover-nested / not already same-keys-rewritten / not already settled 正式三事（268 余量）（不变量 1124）

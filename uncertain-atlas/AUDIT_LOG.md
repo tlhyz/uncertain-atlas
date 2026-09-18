@@ -1,3 +1,18 @@
+| A5410 | 记录 | 会与 269 / 1124 / 1125 / 1127 / 1128 糊成「看见本页多签就已经可以按随便的顺序拼多签 interchangeable、就已经是 BIP44 那条路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-48 this-page-multisig not already unsorted / not already bip44-path / not already settled 正式三事（269 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。269 script-type vs account bundled unbundling 完成（1129 item 3） |
+| A5411 | 高 | 看见本页多签 会被写成已经可以按随便的顺序拼多签 interchangeable / 1124 interchangeable | 官方 BIP-48 多签层次 item 3：not already unsorted / not 1124 |
+| A5412 | 高 | 看见多签层次 会被写成已经是 BIP44 那条路径 interchangeable / 1125 interchangeable | 官方 BIP-48 多签层次 item 3：not already bip44-path / not 1125 |
+| A5413 | 高 | 看见支持本页就自带确定性排序 会被写成已经交差 interchangeable | 官方 BIP-48 多签层次 item 3：not already settled |
+| A5414 | 中 | 怎样排序公钥或从种子扫多签会被抄进不确定 | 不抄。不写怎样排序公钥或从种子扫多签。不另写 19 节 |
+| A5405 | 记录 | 会与 269 / 1117 / 1126 / 1127 / 1129 糊成「看见脚本类型层就已经是账户层 interchangeable、就已经把以后的脚本类型都写死 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-48 script-type-layer not already account-layer / not already all-future-scripts-fixed / not already settled 正式三事（269 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。269 script-type vs account bundled unbundling 续（1128 item 2） |
+| A5406 | 高 | 看见脚本类型层 会被写成已经是账户层 interchangeable / 1117 interchangeable | 官方 BIP-48 多签层次 item 2：not already account-layer / not 1117 |
+| A5407 | 高 | 看见本页 会被写成已经把以后的脚本类型都写死 interchangeable / 1126 interchangeable | 官方 BIP-48 多签层次 item 2：not already all-future-scripts-fixed / not 1126 |
+| A5408 | 高 | 看见账户号 会被写成已经交差 interchangeable | 官方 BIP-48 多签层次 item 2：not already settled |
+| A5409 | 中 | 怎样排序公钥或从种子扫多签会被抄进不确定 | 不抄。不写怎样排序公钥或从种子扫多签。不另写 19 节 |
+| A5400 | 记录 | 会与 269 / 1118 / 266 / 1128 / 1129 糊成「看见现有多签派生习惯就已经要搬家 interchangeable、就已经可以换路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-48 existing-multisig-habit not already must-migrate / not already path-rewritable / not already settled 正式三事（269 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。269 script-type vs account bundled unbundling 启动（1127 item 1） |
+| A5401 | 高 | 看见现有多签派生习惯 会被写成已经要搬家 interchangeable / 1118 interchangeable | 官方 BIP-48 多签层次 item 1：not already must-migrate / not 1118 |
+| A5402 | 高 | 看见写了标准 会被写成已经可以换路径 interchangeable / 266 interchangeable | 官方 BIP-48 多签层次 item 1：not already path-rewritable / not 266 |
+| A5403 | 高 | 看见已经在用这套习惯的钱包 会被写成已经交差 interchangeable | 官方 BIP-48 多签层次 item 1：not already settled |
+| A5404 | 中 | 怎样排序公钥或从种子扫多签会被抄进不确定 | 不抄。不写怎样排序公钥或从种子扫多签。不另写 19 节 |
 | A5395 | 记录 | 会与 268 / 1117 / 1116 / 1124 / 1125 糊成「看见账户出现了就已经把嵌套隔离见证那批未花输出都找齐 interchangeable、就已经不用核余额 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-49 account-appeared not already complete / not already skip-balance-check / not already settled 正式三事（268 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。268 nested vs same-account bundled unbundling 完成（1126 item 3） |
 | A5396 | 高 | 看见账户出现了 会被写成已经把嵌套隔离见证那批未花输出都找齐 interchangeable / 1117 interchangeable | 官方 BIP-49 嵌套找回 item 3：not already complete / not 1117 |
 | A5397 | 高 | 看见账户出现了 会被写成已经不用核余额 interchangeable / 1116 interchangeable | 官方 BIP-49 嵌套找回 item 3：not already skip-balance-check / not 1116 |

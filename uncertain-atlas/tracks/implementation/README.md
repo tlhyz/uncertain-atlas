@@ -793,6 +793,9 @@
 - [`worked-example-nest49-notback-vs-bundled.md`](worked-example-nest49-notback-vs-bundled.md) — 专用账户≠already backward-compatible/same-household/settled；≠268 bundled（不变量 1125）
 - [`worked-example-nest49-notold-vs-bundled.md`](worked-example-nest49-notold-vs-bundled.md) — 同一套 BIP44 账户≠already recover-nested/same-keys-rewritten/settled；≠268 bundled（不变量 1124）
 - [`worked-example-nested-vs-same-account.md`](worked-example-nested-vs-same-account.md) — 同一套 BIP44 账户 ≠ 已经能找回嵌套隔离见证；专用账户 ≠ 已经向后兼容；账户出现了 ≠ 已经不用核余额（不变量 268）
+- [`worked-example-msig48-notsort-vs-bundled.md`](worked-example-msig48-notsort-vs-bundled.md) — 本页多签≠already unsorted/bip44-path/settled；≠269 bundled（不变量 1129）
+- [`worked-example-msig48-notacct-vs-bundled.md`](worked-example-msig48-notacct-vs-bundled.md) — 脚本类型层≠already account-layer/all-future-scripts-fixed/settled；≠269 bundled（不变量 1128）
+- [`worked-example-msig48-notmove-vs-bundled.md`](worked-example-msig48-notmove-vs-bundled.md) — 现有多签习惯≠already must-migrate/path-rewritable/settled；≠269 bundled（不变量 1127）
 - [`worked-example-script-type-vs-account.md`](worked-example-script-type-vs-account.md) — 现有多签派生习惯 ≠ 已经要搬家；脚本类型层 ≠ 已经是账户层；本页多签 ≠ 已经不排序（不变量 269）
 - [`worked-example-sorted-vs-one-address.md`](worked-example-sorted-vs-one-address.md) — 同一套钥 ≠ 已经是同一条 P2SH 地址；只共享门限和主公钥 ≠ 已经够了；未压缩钥 ≠ 已经是本页（不变量 270）
 - [`worked-example-cosigner-vs-discovered.md`](worked-example-cosigner-vs-discovered.md) — 共享主公钥 ≠ 已经是本页；能独立长地址 ≠ 已经能独立签；前面分支没有交易 ≠ 已经发现完（不变量 271）

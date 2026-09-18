@@ -1,3 +1,6 @@
+- [`msig48-notsort-sold-as-bundled.md`](msig48-notsort-sold-as-bundled.md) — 本页多签 被写成已经不排序 / 已经是 BIP44 路径 / 已经交差（不变量 1129）
+- [`msig48-notacct-sold-as-bundled.md`](msig48-notacct-sold-as-bundled.md) — 脚本类型层 被写成已经是账户层 / 已经写死以后脚本 / 已经交差（不变量 1128）
+- [`msig48-notmove-sold-as-bundled.md`](msig48-notmove-sold-as-bundled.md) — 现有多签习惯 被写成已经要搬家 / 已经可以换路径 / 已经交差（不变量 1127）
 - [`nest49-notbal-sold-as-bundled.md`](nest49-notbal-sold-as-bundled.md) — 账户出现了 被写成已经找齐 / 已经不用核余额 / 已经交差（不变量 1126）
 - [`nest49-notback-sold-as-bundled.md`](nest49-notback-sold-as-bundled.md) — 专用账户 被写成已经向后兼容 / 已经是原来那户 / 已经交差（不变量 1125）
 - [`nest49-notold-sold-as-bundled.md`](nest49-notold-sold-as-bundled.md) — 同一套 BIP44 账户 被写成已经能找回这些币 / 已经看见那些币 / 已经交差（不变量 1124）

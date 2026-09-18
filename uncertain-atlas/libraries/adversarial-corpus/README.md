@@ -1,3 +1,9 @@
+| C1107 | 1129 | msig48 notsort≠1124/269 | 文案把本页多签 / 多签路径 写成已经可以按随便的顺序拼多签 interchangeable 或已经和 1124 interchangeable / 1129 msig48-notsort interchangeable；或把看见多签层次 写成已经是 BIP44 那条路径 interchangeable；或把看见支持本页就自带确定性排序 写成已经交差 interchangeable，或已经和 269 script-type-vs-account bundled / msig48-notsort-sold-as-bundled interchangeable / 1127 msig48-notmove interchangeable / 1128 msig48-notacct interchangeable |
+
+| C1106 | 1128 | msig48 notacct≠1117/269 | 文案把脚本类型层 / 账户层 写成已经是同一层 interchangeable 或已经和 1117 interchangeable / 1128 msig48-notacct interchangeable；或把看见本页 写成已经把以后的脚本类型都写死 interchangeable；或把看见账户号 写成已经交差 interchangeable，或已经和 269 script-type-vs-account bundled / msig48-notacct-sold-as-bundled interchangeable / 1127 msig48-notmove interchangeable / 1129 msig48-notsort interchangeable |
+
+| C1105 | 1127 | msig48 notmove≠1118/269 | 文案把现有多签派生习惯 / 看见本页 写成已经要搬家 interchangeable 或已经和 1118 interchangeable / 1127 msig48-notmove interchangeable；或把看见写了标准 写成已经可以换路径 interchangeable；或把看见已经在用这套习惯的钱包 写成已经交差 interchangeable，或已经和 269 script-type-vs-account bundled / msig48-notmove-sold-as-bundled interchangeable / 1128 msig48-notacct interchangeable / 1129 msig48-notsort interchangeable |
+
 | C1104 | 1126 | nest49 notbal≠1117/268 | 文案把账户出现了 / 看见有余额 写成已经把嵌套隔离见证那批未花输出都找齐 interchangeable 或已经和 1117 interchangeable / 1126 nest49-notbal interchangeable；或把看见账户出现了 写成已经不用核余额 interchangeable；或把看见账户完全不出现 写成已经交差 interchangeable，或已经和 268 nested-vs-same-account bundled / nest49-notbal-sold-as-bundled interchangeable / 1124 nest49-notold interchangeable / 1125 nest49-notback interchangeable |
 
 | C1103 | 1125 | nest49 notback≠1118/268 | 文案把专用隔离见证账户 / 换了用途 写成已经向后兼容 interchangeable 或已经和 1118 interchangeable / 1125 nest49-notback interchangeable；或把看见换了用途 写成已经是原来那户 interchangeable；或把看见不会本页的钱包根本发现不了这些账户 写成已经交差 interchangeable，或已经和 268 nested-vs-same-account bundled / nest49-notback-sold-as-bundled interchangeable / 1124 nest49-notold interchangeable / 1126 nest49-notbal interchangeable |
