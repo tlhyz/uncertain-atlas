@@ -1,3 +1,6 @@
+- [`extcnotes-notload-sold-as-bundled.md`](extcnotes-notload-sold-as-bundled.md) — 从 store 再装 ExtendedCommitInfo 被写成已经从块抽出 / 就已经是 365 路径 / 就已经是 444 cinotes（不变量 1358）
+- [`extcnotes-noteng-sold-as-bundled.md`](extcnotes-noteng-sold-as-bundled.md) — 引擎保证并落盘 Extended 顺序 被写成已经由应用排过 / 就已经是收票顺序 / 就已经由 Prepare 决定（不变量 1357）
+- [`extcnotes-notord-sold-as-bundled.md`](extcnotes-notord-sold-as-bundled.md) — Extended 按投票权降序 被写成已经进了块 / 就已经交差 / 就已经写进 last_commit（不变量 1356）
 - [`cinotes-notstore-sold-as-bundled.md`](cinotes-notstore-sold-as-bundled.md) — 从 store 再装 被写成已经从块抽出 / 就已经是 365 路径 / 就已经是 ExtendedCommitInfo Notes（不变量 1355）
 - [`cinotes-notapp-sold-as-bundled.md`](cinotes-notapp-sold-as-bundled.md) — 引擎保证并落盘 被写成已经由应用排过 / 就已经是收票顺序 / 就已经由 Process 决定（不变量 1354）
 - [`cinotes-notblk-sold-as-bundled.md`](cinotes-notblk-sold-as-bundled.md) — 按投票权降序 被写成已经进了块 / 就已经交差 / 就已经写进 last_commit（不变量 1353）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里有 ExtendedCommitInfo 就已经按投票权排好、已经进了块、已经从块里抽出」，必须分开 ExtendedCommitInfo.votes 里的 ExtendedVoteInfo 按投票权降序排是不是已经进了块 / 已经交差、CometBFT 通过更新验证者集合的逻辑保证这个顺序、集合写入 store 时顺序也落盘是不是已经由应用排过 / 已经是收到票时的顺序、造 ExtendedCommitInfo 时从 store 再装集合是不是已经从拟议块或已决块抽出 / 已经是 CommitInfo Notes 那套话就已经是同一句。可以跳过「看见 Prepare 里有 ExtendedCommitInfo 就已经按投票权排好」。不要另写怎样写 ExtendedCommitInfo Notes 票序正式三事。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里有 ExtendedCommitInfo 就已经按投票权排好、已经进了块、已经从块里抽出」，必须分开 ExtendedCommitInfo.votes 里的 ExtendedVoteInfo 按投票权降序排是不是已经进了块 / 已经交差、CometBFT 通过更新验证者集合的逻辑保证这个顺序、集合写入 store 时顺序也落盘是不是已经由应用排过 / 已经是收到票时的顺序、造 ExtendedCommitInfo 时从 store 再装集合是不是已经从拟议块或已决块抽出 / 已经是 CommitInfo Notes 那套话就已经是同一句。可以跳过「看见 Prepare 里有 ExtendedCommitInfo 就已经按投票权排好」。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 完成（1356 item 1 / 1357 item 2 / 1358 item 3）；精读 [`worked-example-extcnotes-notord-vs-bundled.md`](worked-example-extcnotes-notord-vs-bundled.md)（不变量 1356 item 1）、[`worked-example-extcnotes-noteng-vs-bundled.md`](worked-example-extcnotes-noteng-vs-bundled.md)（不变量 1357 item 2）、[`worked-example-extcnotes-notload-vs-bundled.md`](worked-example-extcnotes-notload-vs-bundled.md)（不变量 1358 item 3）。不要另写怎样写 ExtendedCommitInfo Notes 票序正式三事。
 
 ## 本页不抄
 

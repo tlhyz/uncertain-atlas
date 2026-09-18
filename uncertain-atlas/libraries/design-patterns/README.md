@@ -1,3 +1,6 @@
+- [`name-the-extcnotes-notload-bar.md`](name-the-extcnotes-notload-bar.md) — ExtCiNotes rebuild ExtendedCommitInfo from store not already extracted-from-block / not already 365-path / not already 444-cinotes 正式三事（441 余量）（不变量 1358）
+- [`name-the-extcnotes-noteng-bar.md`](name-the-extcnotes-noteng-bar.md) — ExtCiNotes engine guarantees and persists ext order not already app-sorted / not already recv-order / not already Prepare-decided 正式三事（441 余量）（不变量 1357）
+- [`name-the-extcnotes-notord-bar.md`](name-the-extcnotes-notord-bar.md) — ExtCiNotes ext votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（441 余量）（不变量 1356）
 - [`name-the-cinotes-notstore-bar.md`](name-the-cinotes-notstore-bar.md) — CiNotes rebuild CommitInfo from store not already extracted-from-block / not already 365-path / not already extcinotes 正式三事（444 余量）（不变量 1355）
 - [`name-the-cinotes-notapp-bar.md`](name-the-cinotes-notapp-bar.md) — CiNotes engine guarantees and persists order not already app-sorted / not already recv-order / not already Process-decided 正式三事（444 余量）（不变量 1354）
 - [`name-the-cinotes-notblk-bar.md`](name-the-cinotes-notblk-bar.md) — CiNotes votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（444 余量）（不变量 1353）

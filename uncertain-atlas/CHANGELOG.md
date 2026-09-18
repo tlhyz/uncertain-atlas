@@ -1,3 +1,15 @@
+## 2026-09-18（续 1475）
+
+- 不变量 1358；语料 C1336；模式 name-the-extcnotes-notload-bar；反模式 extcnotes-notload-sold-as-bundled；L10.3 第 1327 条。填 L4.4 ExtCiNotes rebuild ExtendedCommitInfo from store not already extracted-from-block / not already 365-path / not already 444-cinotes 正式三事（441 余量）。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 完成（1358 item 3）。
+
+## 2026-09-18（续 1474）
+
+- 不变量 1357；语料 C1335；模式 name-the-extcnotes-noteng-bar；反模式 extcnotes-noteng-sold-as-bundled；L10.3 第 1326 条。填 L4.4 ExtCiNotes engine guarantees and persists ext order not already app-sorted / not already recv-order / not already Prepare-decided 正式三事（441 余量）。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 续（1357 item 2）。
+
+## 2026-09-18（续 1473）
+
+- 不变量 1356；语料 C1334；模式 name-the-extcnotes-notord-bar；反模式 extcnotes-notord-sold-as-bundled；L10.3 第 1325 条。填 L4.4 ExtCiNotes ext votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（441 余量）。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 启动（1356 item 1）。
+
 ## 2026-09-18（续 1472）
 
 - 不变量 1355；语料 C1333；模式 name-the-cinotes-notstore-bar；反模式 cinotes-notstore-sold-as-bundled；L10.3 第 1324 条。填 L4.4 CiNotes rebuild CommitInfo from store not already extracted-from-block / not already 365-path / not already extcinotes 正式三事（444 余量）。444 CommitInfo Notes vote-power order bundled unbundling 完成（1355 item 3）。

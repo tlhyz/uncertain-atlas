@@ -1006,6 +1006,9 @@
 - [`worked-example-eappgen-notnrp-vs-bundled.md`](worked-example-eappgen-notnrp-vs-bundled.md) — non_rp将签名挂上无重放保护≠already同一签法/358按原样签/已有重放保护；≠439 bundled（不变量 1351）
 - [`worked-example-eappgen-notbcast-vs-bundled.md`](worked-example-eappgen-notbcast-vs-bundled.md) — 将签名并挂到Precommit≠already广播/last_commit/438 bundled；≠439 bundled（不变量 1352）
 - [`worked-example-extappgen-vs-signed.md`](worked-example-extappgen-vs-signed.md) — ExtendVoteResponse 应用生成将签名≠already 签过/包进包装/广播（快照 439）
+- [`worked-example-extcnotes-notord-vs-bundled.md`](worked-example-extcnotes-notord-vs-bundled.md) — Extended votes按投票权降序≠already进块/交差/last_commit；≠441 bundled（不变量 1356）
+- [`worked-example-extcnotes-noteng-vs-bundled.md`](worked-example-extcnotes-noteng-vs-bundled.md) — 引擎保证并落盘Extended顺序≠already应用排过/收票顺序/Prepare决定；≠441 bundled（不变量 1357）
+- [`worked-example-extcnotes-notload-vs-bundled.md`](worked-example-extcnotes-notload-vs-bundled.md) — 从store再装ExtendedCommitInfo≠already从块抽出/365路径/444 cinotes；≠441 bundled（不变量 1358）
 - [`worked-example-extcinotes-vs-order.md`](worked-example-extcinotes-vs-order.md) — ExtendedCommitInfo Notes 票序≠already 进块/应用排过/从块抽出
 - [`worked-example-cinotes-notblk-vs-bundled.md`](worked-example-cinotes-notblk-vs-bundled.md) — votes按投票权降序≠already进块/交差/last_commit；≠444 bundled（不变量 1353）
 - [`worked-example-cinotes-notapp-vs-bundled.md`](worked-example-cinotes-notapp-vs-bundled.md) — 引擎保证并落盘≠already应用排过/收票顺序/Process决定；≠444 bundled（不变量 1354）
