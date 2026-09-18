@@ -1,3 +1,15 @@
+## 2026-09-18（续 1186）
+
+- 不变量 1069；语料 C1047；模式 name-the-presp-nothonest-bar；反模式 presp-nothonest-sold-as-bundled；L10.3 第 1038 条。填 L4.4 / CometBFT 档案 ProcessProposalResponse.status SHOULD Accept not already honest-must / not already req3-tested / not already four-gates 正式三事（430 余量）。430 procresp vs status bundled unbundling 完成（1069 item 3）。
+
+## 2026-09-18（续 1185）
+
+- 不变量 1068；语料 C1046；模式 name-the-presp-notprep-bar；反模式 presp-notprep-sold-as-bundled；L10.3 第 1037 条。填 L4.4 / CometBFT 档案 ProcessProposalResponse.status exclusive dependence not already prepare-nondet / not already same-ruling / not already settled 正式三事（430 余量）。430 procresp vs status bundled unbundling 续（1068 item 2）。
+
+## 2026-09-18（续 1184）
+
+- 不变量 1067；语料 C1045；模式 name-the-presp-notinvalid-bar；反模式 presp-notinvalid-sold-as-bundled；L10.3 第 1036 条。填 L4.4 / CometBFT 档案 ProcessProposalResponse.status not already block-invalid / not already no-exec / not already settled 正式三事（430 余量）。430 procresp vs status bundled unbundling 启动（1067 item 1）。
+
 ## 2026-09-18（续 1183）
 
 - 不变量 1066；语料 C1044；模式 name-the-finend-nothist-bar；反模式 finend-nothist-sold-as-bundled；L10.3 第 1035 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.syncing_to_height not already full-history / not already snapshot-restore / not already consensus 正式三事（429 余量）。429 finreqend vs procreq bundled unbundling 完成（1066 item 3）。

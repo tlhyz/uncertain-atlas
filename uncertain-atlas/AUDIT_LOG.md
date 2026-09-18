@@ -1,3 +1,18 @@
+| A5105 | 记录 | 会与 430 / 347 / 1067 / 1068 糊成「看见应用 SHOULD 总是设 ACCEPT 就已经 honest proposal 必须 Accept interchangeable、就已经是 Req 3 已经测过 interchangeable、就已经四门默认 Accept interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposalResponse.status SHOULD Accept not already honest-must / not already req3-tested / not already four-gates 正式三事（430 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。430 procresp vs status bundled unbundling 完成（1069 item 3） |
+| A5106 | 高 | 看见 SHOULD 总是 Accept 会被写成已经 honest proposal 必须 Accept interchangeable / 347 interchangeable | 官方 Process 回包栏 item 3：not already honest-must / not 347 |
+| A5107 | 高 | 看见除非真的知道活性代价 会被写成已经是 Req 3 已经测过 interchangeable | 官方 Process 回包栏 item 3：not already req3-tested |
+| A5108 | 高 | 看见写了默认 Accept 会被写成已经四门默认 Accept interchangeable | 官方 Process 回包栏 item 3：not already four-gates |
+| A5109 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Process 回包栏。不另写 19 节 |
+| A5100 | 记录 | 会与 430 / 338 / 340 / 1067 / 1069 糊成「看见 ProcessProposalResponse.status exclusive dependence 就已经可以像 Prepare 那样 interchangeable、就已经和对任意块同一裁决一回事 interchangeable、就已经和对诚实提案同一裁决一回事 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposalResponse.status exclusive dependence not already prepare-nondet / not already same-ruling / not already settled 正式三事（430 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。430 procresp vs status bundled unbundling 续（1068 item 2） |
+| A5101 | 高 | 看见回了 status 会被写成已经可以像 Prepare 那样 interchangeable / 338 interchangeable | 官方 Process 回包栏 item 2：not already prepare-nondet / not 338 |
+| A5102 | 高 | 看见必须只依赖 会被写成已经和对任意块同一裁决一回事 interchangeable / 340 interchangeable | 官方 Process 回包栏 item 2：not already same-ruling / not 340 |
+| A5103 | 高 | 看见有确定要求 会被写成已经和对诚实提案同一裁决一回事 interchangeable | 官方 Process 回包栏 item 2：not already settled |
+| A5104 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Process 回包栏。不另写 19 节 |
+| A5095 | 记录 | 会与 430 / 376 / 340 / 1068 / 1069 糊成「看见 ProcessProposalResponse.status 就已经当成块非法 interchangeable、就已经不能整块执行候选 interchangeable、就已经当成块非法交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ProcessProposalResponse.status not already block-invalid / not already no-exec / not already settled 正式三事（430 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。430 procresp vs status bundled unbundling 启动（1067 item 1） |
+| A5096 | 高 | 看见回了 REJECT 会被写成已经当成块非法 interchangeable / 376 interchangeable | 官方 Process 回包栏 item 1：not already block-invalid / not 376 |
+| A5097 | 高 | 看见共识假设不合法 会被写成已经不能整块执行候选 interchangeable | 官方 Process 回包栏 item 1：not already no-exec |
+| A5098 | 高 | 看见会 prevote nil 会被写成已经当成块非法 interchangeable | 官方 Process 回包栏 item 1：not already settled |
+| A5099 | 中 | 怎样写回包栏会被抄进不确定 | 不抄。不写怎样写 Process 回包栏。不另写 19 节 |
 | A5090 | 记录 | 会与 429 / 382 / 1064 / 1065 糊成「看见 FinalizeBlockRequest.syncing_to_height 就已经有完整历史 interchangeable、就已经是快照重放 interchangeable、就已经切进共识 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.syncing_to_height not already full-history / not already snapshot-restore / not already consensus 正式三事（429 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。429 finreqend vs procreq bundled unbundling 完成（1066 item 3） |
 | A5091 | 高 | 看见填了 syncing_to_height 会被写成已经有完整历史 interchangeable / 382 interchangeable | 官方 Finalize 请求末栏 item 3：not already full-history / not 382 |
 | A5092 | 高 | 看见在同步或重放 会被写成已经是快照重放 interchangeable | 官方 Finalize 请求末栏 item 3：not already snapshot-restore |

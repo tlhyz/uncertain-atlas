@@ -1,3 +1,6 @@
+- [`presp-nothonest-sold-as-bundled.md`](presp-nothonest-sold-as-bundled.md) — SHOULD Accept 被写成已经 honest must Accept / 已经是 Req 3 已经测过 / 已经四门默认 Accept（不变量 1069）
+- [`presp-notprep-sold-as-bundled.md`](presp-notprep-sold-as-bundled.md) — exclusive 被写成已经可以像 Prepare 那样 / 已经和对任意块同一裁决一回事 / 已经和对诚实提案同一裁决一回事（不变量 1068）
+- [`presp-notinvalid-sold-as-bundled.md`](presp-notinvalid-sold-as-bundled.md) — status 被写成已经当成块非法 / 已经不能整块执行候选 / 已经交差（不变量 1067）
 - [`finend-nothist-sold-as-bundled.md`](finend-nothist-sold-as-bundled.md) — syncing_to_height 被写成已经有完整历史 / 已经是快照重放 / 已经切进共识（不变量 1066）
 - [`finend-nothead-sold-as-bundled.md`](finend-nothead-sold-as-bundled.md) — time 被写成已经对上了拟议块头 / 已经是 Prepare time / 已经交差（不变量 1065）
 - [`finend-notmaking-sold-as-bundled.md`](finend-notmaking-sold-as-bundled.md) — proposer 被写成已经正在造 / 已经知道本头哈希 / 已经交差（不变量 1064）

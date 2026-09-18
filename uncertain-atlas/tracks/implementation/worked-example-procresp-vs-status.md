@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 ProcessProposalResponse.status 就已经当成块非法、已经可以像 Prepare 那样依赖其它值、已经 honest proposal 必须 Accept」，必须分开 ProcessProposalResponse.status 是应用认为这份提案合法还是非法是不是已经当成块非法、ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态是不是已经可以像 Prepare 那样依赖其它值、应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价是不是已经 honest proposal 必须 Accept。可以跳过「看见回了 ProcessProposalResponse.status 就已经当成块非法」。不要另写怎样写 Process 回包栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 ProcessProposalResponse.status 就已经当成块非法、已经可以像 Prepare 那样依赖其它值、已经 honest proposal 必须 Accept」，必须分开 ProcessProposalResponse.status 是应用认为这份提案合法还是非法是不是已经当成块非法、ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态是不是已经可以像 Prepare 那样依赖其它值、应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价是不是已经 honest proposal 必须 Accept。可以跳过「看见回了 ProcessProposalResponse.status 就已经当成块非法」。不要另写怎样写 Process 回包栏。430 procresp vs status bundled unbundling 完成（1067 item 1 / 1068 item 2 / 1069 item 3）；精读 [`worked-example-presp-notinvalid-vs-bundled.md`](worked-example-presp-notinvalid-vs-bundled.md)（不变量 1067 item 1）。
 
 ## 本页不抄
 
