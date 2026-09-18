@@ -1,3 +1,6 @@
+- [`name-the-fee133-notbloom-bar.md`](name-the-fee133-notbloom-bar.md) — BIP-133 bloom-and not already fee-pass / not already exact-min / not already policy-off 正式三事（245 余量）（不变量 1240）
+- [`name-the-fee133-notmust-bar.md`](name-the-fee133-notmust-bar.md) — BIP-133 permission not already must / not already sending / not already obeying 正式三事（245 余量）（不变量 1239）
+- [`name-the-fee133-notpool-bar.md`](name-the-fee133-notpool-bar.md) — BIP-133 skip-inv not already rejected / not already illegal / not already filtered-net 正式三事（245 余量）（不变量 1238）
 - [`name-the-hdr130-nothave-bar.md`](name-the-hdr130-nothave-bar.md) — BIP-130 tip-headers not already have-block / not already have-middle / not already reorg-done 正式三事（247 余量）（不变量 1237）
 - [`name-the-hdr130-notmust-bar.md`](name-the-hdr130-notmust-bar.md) — BIP-130 permission not already must / not already sending / not already forever 正式三事（247 余量）（不变量 1236）
 - [`name-the-hdr130-notswitch-bar.md`](name-the-hdr130-notswitch-bar.md) — BIP-130 sendheaders not already switched / not already have-block / not already headers-first 正式三事（247 余量）（不变量 1235）

@@ -1,3 +1,18 @@
+| A5965 | 记录 | 会与 245 / 44 / 166 / 1238 / 1239 糊成「看见布隆过了就已经过了费率门 interchangeable、就已经是精确最低费率 interchangeable、就已经关掉全部策略 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.2 BIP-133 bloom-and not already fee-pass / not already exact-min / not already policy-off 正式三事（245 余量）/ 内存池表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。245 feefilter vs rejected bundled unbundling 完成（1240 item 3） |
+| A5966 | 高 | 看见布隆过了 会被写成已经过了费率门 interchangeable / 44 interchangeable | 官方 BIP-133 feefilter item 3：not already fee-pass / not 44 |
+| A5967 | 高 | 看见费率过滤器 会被写成已经是本节点精确的最低费率 interchangeable / 166 interchangeable | 官方 BIP-133 feefilter item 3：not already not already exact-min / not 166 |
+| A5968 | 高 | 看见强制转发例外 会被写成已经关掉全部策略 interchangeable | 官方 BIP-133 feefilter item 3：not already settled |
+| A5969 | 中 | 怎样按费率认出节点、怎样绕过过滤器、怎样伪造库存通告会被抄进不确定 | 不抄。不写 怎样按费率认出节点、怎样绕过过滤器、怎样伪造库存通告。不另写 19 节 |
+| A5960 | 记录 | 会与 245 / 247 / 144 / 1238 / 1240 糊成「看见你发了费率过滤器就已经照做 interchangeable、就已经在发 interchangeable、就已经必须滤 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.2 BIP-133 permission not already must / not already sending / not already obeying 正式三事（245 余量）/ 内存池表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。245 feefilter vs rejected bundled unbundling 续（1239 item 2） |
+| A5961 | 高 | 看见你发了费率过滤器 会被写成对等节点已经照做 interchangeable / 247 interchangeable | 官方 BIP-133 feefilter item 2：not already must / not 247 |
+| A5962 | 高 | 看见协议版本够了 会被写成已经在发 interchangeable / 144 interchangeable | 官方 BIP-133 feefilter item 2：not already not already sending / not 144 |
+| A5963 | 高 | 看见许可 会被写成已经必须滤 interchangeable | 官方 BIP-133 feefilter item 2：not already settled |
+| A5964 | 中 | 怎样按费率认出节点、怎样绕过过滤器、怎样伪造库存通告会被抄进不确定 | 不抄。不写 怎样按费率认出节点、怎样绕过过滤器、怎样伪造库存通告。不另写 19 节 |
+| A5955 | 记录 | 会与 245 / 144 / 166 / 1239 / 1240 糊成「看见跳过了库存通告就已经拒进池 interchangeable、就已经共识非法 interchangeable、就已经滤掉全网低费率 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.2 BIP-133 skip-inv not already rejected / not already illegal / not already filtered-net 正式三事（245 余量）/ 内存池表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。245 feefilter vs rejected bundled unbundling 启动（1238 item 1） |
+| A5956 | 高 | 看见跳过了库存通告 会被写成已经拒进池 interchangeable / 144 interchangeable | 官方 BIP-133 feefilter item 1：not already rejected / not 144 |
+| A5957 | 高 | 看见跳过通告 会被写成已经共识非法 interchangeable / 166 interchangeable | 官方 BIP-133 feefilter item 1：not already not already illegal / not 166 |
+| A5958 | 高 | 看见发了这条消息 会被写成全网低费率交易已经被滤掉 interchangeable | 官方 BIP-133 feefilter item 1：not already settled |
+| A5959 | 中 | 怎样按费率认出节点、怎样绕过过滤器、怎样伪造库存通告会被抄进不确定 | 不抄。不写 怎样按费率认出节点、怎样绕过过滤器、怎样伪造库存通告。不另写 19 节 |
 | A5950 | 记录 | 会与 247 / 36 / 246 / 1235 / 1236 糊成「看见用头通告新尖就已经有块 interchangeable、就已经有中间块 interchangeable、就已经处理完重组 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-130 tip-headers not already have-block / not already have-middle / not already reorg-done 正式三事（247 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。247 sendheaders vs have bundled unbundling 完成（1237 item 3） |
 | A5951 | 高 | 看见用头通告新尖 会被写成已经有块 interchangeable / 36 interchangeable | 官方 BIP-130 sendheaders item 3：not already have-block / not 36 |
 | A5952 | 高 | 看见重组时先发了头 会被写成中间块已经在手里 interchangeable / 246 interchangeable | 官方 BIP-130 sendheaders item 3：not already not already have-middle / not 246 |

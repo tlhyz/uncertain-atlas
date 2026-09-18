@@ -1,3 +1,6 @@
+- [`fee133-notbloom-sold-as-bundled.md`](fee133-notbloom-sold-as-bundled.md) — 布隆过了 被写成已经过了费率门 / 已经是精确最低费率 / 已经关掉全部策略（不变量 1240）
+- [`fee133-notmust-sold-as-bundled.md`](fee133-notmust-sold-as-bundled.md) — 许可 被写成已经必须滤 / 已经在发 / 对等节点已经照做（不变量 1239）
+- [`fee133-notpool-sold-as-bundled.md`](fee133-notpool-sold-as-bundled.md) — 跳过库存通告 被写成已经拒进池 / 已经共识非法 / 全网低费率已经被滤掉（不变量 1238）
 - [`hdr130-nothave-sold-as-bundled.md`](hdr130-nothave-sold-as-bundled.md) — 头通告新尖 被写成已经有块 / 中间块已经在手里 / 重组已经处理完（不变量 1237）
 - [`hdr130-notmust-sold-as-bundled.md`](hdr130-notmust-sold-as-bundled.md) — 许可 被写成已经必须改 / 已经在发 / 已经永远理会（不变量 1236）
 - [`hdr130-notswitch-sold-as-bundled.md`](hdr130-notswitch-sold-as-bundled.md) — sendheaders 被写成已经改用头通告 / 已经有那块 / 头先同步已经做完（不变量 1235）

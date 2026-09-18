@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见跳过库存通告就已经被链拒绝 / 就已经拒进池 / 就已经是精确最低费率」。若对照费率过滤器，必须分开指令、许可、相加门、隐私代价。不要把没通告写成已经非法。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见跳过库存通告就已经被链拒绝 / 就已经拒进池 / 就已经是精确最低费率」。若对照费率过滤器，必须分开指令、许可、相加门、隐私代价。不要把没通告写成已经非法。245 feefilter vs rejected bundled unbundling 完成（1238 item 1 / 1239 item 2 / 1240 item 3）；精读 [`worked-example-fee133-notpool-vs-bundled.md`](worked-example-fee133-notpool-vs-bundled.md)（不变量 1238 item 1）、[`worked-example-fee133-notmust-vs-bundled.md`](worked-example-fee133-notmust-vs-bundled.md)（不变量 1239 item 2）、[`worked-example-fee133-notbloom-vs-bundled.md`](worked-example-fee133-notbloom-vs-bundled.md)（不变量 1240 item 3）。
 
 ## 本页不抄
 

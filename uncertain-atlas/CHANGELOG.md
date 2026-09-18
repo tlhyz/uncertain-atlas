@@ -1,3 +1,15 @@
+## 2026-09-18（续 1357）
+
+- 不变量 1240；语料 C1218；模式 name-the-fee133-notbloom-bar；反模式 fee133-notbloom-sold-as-bundled；L10.3 第 1209 条。填 L3.2 / L9.2 BIP-133 bloom-and not already fee-pass / not already exact-min / not already policy-off 正式三事（245 余量）。245 feefilter vs rejected bundled unbundling 完成（1240 item 3）。
+
+## 2026-09-18（续 1356）
+
+- 不变量 1239；语料 C1217；模式 name-the-fee133-notmust-bar；反模式 fee133-notmust-sold-as-bundled；L10.3 第 1208 条。填 L3.2 / L9.2 BIP-133 permission not already must / not already sending / not already obeying 正式三事（245 余量）。245 feefilter vs rejected bundled unbundling 续（1239 item 2）。
+
+## 2026-09-18（续 1355）
+
+- 不变量 1238；语料 C1216；模式 name-the-fee133-notpool-bar；反模式 fee133-notpool-sold-as-bundled；L10.3 第 1207 条。填 L3.2 / L9.2 BIP-133 skip-inv not already rejected / not already illegal / not already filtered-net 正式三事（245 余量）。245 feefilter vs rejected bundled unbundling 启动（1238 item 1）。
+
 ## 2026-09-18（续 1354）
 
 - 不变量 1237；语料 C1215；模式 name-the-hdr130-nothave-bar；反模式 hdr130-nothave-sold-as-bundled；L10.3 第 1206 条。填 L3.4 / L9.1 BIP-130 tip-headers not already have-block / not already have-middle / not already reorg-done 正式三事（247 余量）。247 sendheaders vs have bundled unbundling 完成（1237 item 3）。
