@@ -1,3 +1,6 @@
+- [`chid-notfork-sold-as-bundled.md`](chid-notfork-sold-as-bundled.md) — 编译期写死 被写成分叉后仍安全 / 就已经是 712 域 / 就已经处理好分裂（不变量 1397）
+- [`chid-nottx-sold-as-bundled.md`](chid-nottx-sold-as-bundled.md) — 返回配置链号 被写成这笔已经带了 155 / 就已经返回默认值 / 就已经是 161（不变量 1396）
+- [`chid-not155-sold-as-bundled.md`](chid-not155-sold-as-bundled.md) — 链号指令 被写成已经是签进哈希 / 就已经是 JSON chainId / 就已经 220 bundled（不变量 1395）
 - [`xhash-notmiss-sold-as-bundled.md`](xhash-notmiss-sold-as-bundled.md) — 空数据哈希 被写成已经是账户不存在 / 就已经改了 161 / 就已经是 3607（不变量 1394）
 - [`xhash-notzero-sold-as-bundled.md`](xhash-notzero-sold-as-bundled.md) — 返回 0 被写成已经是没代码账户 / 就已经是空数据哈希 / 就已经是 180（不变量 1393）
 - [`xhash-notsee-sold-as-bundled.md`](xhash-notsee-sold-as-bundled.md) — 代码哈希指令 被写成已经看见代码 / 就已经是整份拷 / 就已经 221 bundled（不变量 1392）

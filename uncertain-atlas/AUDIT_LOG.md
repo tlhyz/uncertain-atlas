@@ -1,3 +1,18 @@
+| A6750 | 记录 | 会与 220 / 218 / 219 / 1395 / 1396 糊成「看见编译期写死的链号不是已经在硬分叉后仍安全就已经在硬分叉后仍安全 interchangeable、就已经是 712 域 interchangeable、就已经处理好有争议的分裂 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。220 CHAINID opcode vs signed bundled unbundling 完成（1397 item 3） |
+| A6751 | 高 | 看见编译期写死的链号不是已经在硬分叉后仍安全 会被写成已经在硬分叉后仍安全 interchangeable / 218 interchangeable | 官方 EIP-1344 chid item 3：not already 已经在硬分叉后仍安全 / not 218 |
+| A6752 | 高 | 看见compile-time chainId is not already fork-safe 会被写成已经是 712 域 interchangeable / 219 interchangeable | 官方 EIP-1344 chid item 3：not already 已经是 712 域 / not 219 |
+| A6753 | 高 | 看见编译期写死的链号不是已经在硬分叉后仍安全 会被写成已经处理好有争议的分裂 interchangeable | 官方 EIP-1344 chid item 3：not already settled |
+| A6754 | 中 | 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放会被抄进不确定 | 不抄。不写 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放。不另写 19 节 |
+| A6745 | 记录 | 会与 220 / 161 / 218 / 1395 / 1397 糊成「看见指令返回配置链号不是这笔已经带了 155 标识就这笔交易已经带了 EIP-155 标识 interchangeable、就已经返回某个默认值 interchangeable、就已经是不变量 161 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1344 config-chainid not already this-tx-155 / not already default-value / not already 161 正式三事（220 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。220 CHAINID opcode vs signed bundled unbundling 续（1396 item 2） |
+| A6746 | 高 | 看见指令返回配置链号不是这笔已经带了 155 标识 会被写成这笔交易已经带了 EIP-155 标识 interchangeable / 161 interchangeable | 官方 EIP-1344 chid item 2：not already 这笔交易已经带了 EIP-155 标识 / not 161 |
+| A6747 | 高 | 看见config chainId is not already this-tx 155 会被写成已经返回某个默认值 interchangeable / 218 interchangeable | 官方 EIP-1344 chid item 2：not already 已经返回某个默认值 / not 218 |
+| A6748 | 高 | 看见指令返回配置链号不是这笔已经带了 155 标识 会被写成已经是不变量 161 interchangeable | 官方 EIP-1344 chid item 2：not already settled |
+| A6749 | 中 | 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放会被抄进不确定 | 不抄。不写 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放。不另写 19 节 |
+| A6740 | 记录 | 会与 220 / 161 / 18 / 1396 / 1397 糊成「看见链号指令不是已经是签进哈希的链号就已经是签进哈希的链号 interchangeable、就已经是钱包 JSON 里的 chainId interchangeable、就已经 220 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1344 CHAINID opcode not already 155-signed / not already JSON-chainId / not already 220-bundled 正式三事（220 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。220 CHAINID opcode vs signed bundled unbundling 启动（1395 item 1） |
+| A6741 | 高 | 看见链号指令不是已经是签进哈希的链号 会被写成已经是签进哈希的链号 interchangeable / 161 interchangeable | 官方 EIP-1344 chid item 1：not already 已经是签进哈希的链号 / not 161 |
+| A6742 | 高 | 看见CHAINID is not already signed chainId 会被写成已经是钱包 JSON 里的 chainId interchangeable / 18 interchangeable | 官方 EIP-1344 chid item 1：not already 已经是钱包 JSON 里的 chainId / not 18 |
+| A6743 | 高 | 看见链号指令不是已经是签进哈希的链号 会被写成已经 220 bundled interchangeable | 官方 EIP-1344 chid item 1：not already settled |
+| A6744 | 中 | 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放会被抄进不确定 | 不抄。不写 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放。不另写 19 节 |
 | A6735 | 记录 | 会与 221 / 162 / 220 / 1392 / 1393 糊成「看见空数据哈希不是已经是账户不存在就已经是账户不存在 interchangeable、就已经改了 161 interchangeable、就已经是 3607 发送者规则 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。221 EXTCODEHASH vs copy bundled unbundling 完成（1394 item 3） |
 | A6736 | 高 | 看见空数据哈希不是已经是账户不存在 会被写成已经是账户不存在 interchangeable / 162 interchangeable | 官方 EIP-1052 xhash item 3：not already 已经是账户不存在 / not 162 |
 | A6737 | 高 | 看见empty-data hash is not already missing 会被写成已经改了 161 interchangeable / 220 interchangeable | 官方 EIP-1052 xhash item 3：not already 已经改了 161 / not 220 |

@@ -1,3 +1,6 @@
+- [`name-the-chid-notfork-bar.md`](name-the-chid-notfork-bar.md) — EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）（不变量 1397）
+- [`name-the-chid-nottx-bar.md`](name-the-chid-nottx-bar.md) — EIP-1344 config-chainid not already this-tx-155 / not already default-value / not already 161 正式三事（220 余量）（不变量 1396）
+- [`name-the-chid-not155-bar.md`](name-the-chid-not155-bar.md) — EIP-1344 CHAINID opcode not already 155-signed / not already JSON-chainId / not already 220-bundled 正式三事（220 余量）（不变量 1395）
 - [`name-the-xhash-notmiss-bar.md`](name-the-xhash-notmiss-bar.md) — EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）（不变量 1394）
 - [`name-the-xhash-notzero-bar.md`](name-the-xhash-notzero-bar.md) — EIP-1052 return-0 not already no-code-account / not already empty-data-hash / not already 180 正式三事（221 余量）（不变量 1393）
 - [`name-the-xhash-notsee-bar.md`](name-the-xhash-notsee-bar.md) — EIP-1052 code-hash opcode not already saw-code / not already EXTCODECOPY / not already 221-bundled 正式三事（221 余量）（不变量 1392）

@@ -988,6 +988,9 @@
 - [`worked-example-push0-vs-push1.md`](worked-example-push0-vs-push1.md) — 看见压零指令 ≠ 已经是带立即数的压 0；看见没有立即数 ≠ 已经改了跳转目的分析；看见已经部署碰巧用了这个字节 ≠ 行为已经不变；3855 ≠ 5656 ≠ 216（不变量 217）
 - [`worked-example-basefee-opcode-vs-market.md`](worked-example-basefee-opcode-vs-market.md) — 看见基础费指令 ≠ 已经改了费用市场；看见能读本块基础费 ≠ 已经给了出块者；看见跑 EVM 前就已经有这个数 ≠ 已经改了头怎么算；3198 ≠ 1559 ≠ 158（不变量 218）
 - [`worked-example-blobbasefee-vs-basefee.md`](worked-example-blobbasefee-vs-basefee.md) — 看见 blob 基础费指令 ≠ 已经是执行层基础费指令；看见能读本块 blob 基础费 ≠ 已经并成一套气；看见跑 EVM 前就已经有这个数 ≠ 已经改了 4844 日程；7516 ≠ 3198 ≠ 218 ≠ 4844（不变量 219）
+- [`worked-example-chid-not155-vs-bundled.md`](worked-example-chid-not155-vs-bundled.md) — 链号指令≠already 签进哈希/JSON chainId/220 bundled；≠220 bundled（不变量 1395）
+- [`worked-example-chid-nottx-vs-bundled.md`](worked-example-chid-nottx-vs-bundled.md) — 返回配置链号≠already 这笔带了155/默认值/161；≠220 bundled（不变量 1396）
+- [`worked-example-chid-notfork-vs-bundled.md`](worked-example-chid-notfork-vs-bundled.md) — 编译期写死≠already 分叉后仍安全/712域/已处理好分裂；≠220 bundled（不变量 1397）
 - [`worked-example-chainid-opcode-vs-signed.md`](worked-example-chainid-opcode-vs-signed.md) — 看见链号指令 ≠ 已经是签进哈希的链号；看见指令返回配置链号 ≠ 已经是这笔交易带了 EIP-155 标识；看见编译期写死的链号 ≠ 已经在硬分叉后仍安全；1344 ≠ 155 ≠ 161 ≠ 712（不变量 220）
 - [`worked-example-xhash-notsee-vs-bundled.md`](worked-example-xhash-notsee-vs-bundled.md) — 代码哈希指令≠already 看见代码/整份拷/221 bundled；≠221 bundled（不变量 1392）
 - [`worked-example-xhash-notzero-vs-bundled.md`](worked-example-xhash-notzero-vs-bundled.md) — 返回0≠already 没代码账户/空数据哈希/180三灯；≠221 bundled（不变量 1393）

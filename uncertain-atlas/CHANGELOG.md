@@ -1,3 +1,15 @@
+## 2026-09-18（续 1514）
+
+- 不变量 1397；语料 C1375；模式 name-the-chid-notfork-bar；反模式 chid-notfork-sold-as-bundled；L10.3 第 1366 条。填 L5.1 EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）。220 CHAINID opcode vs signed bundled unbundling 完成（1397 item 3）。
+
+## 2026-09-18（续 1513）
+
+- 不变量 1396；语料 C1374；模式 name-the-chid-nottx-bar；反模式 chid-nottx-sold-as-bundled；L10.3 第 1365 条。填 L5.1 EIP-1344 config-chainid not already this-tx-155 / not already default-value / not already 161 正式三事（220 余量）。220 CHAINID opcode vs signed bundled unbundling 续（1396 item 2）。
+
+## 2026-09-18（续 1512）
+
+- 不变量 1395；语料 C1373；模式 name-the-chid-not155-bar；反模式 chid-not155-sold-as-bundled；L10.3 第 1364 条。填 L5.1 EIP-1344 CHAINID opcode not already 155-signed / not already JSON-chainId / not already 220-bundled 正式三事（220 余量）。220 CHAINID opcode vs signed bundled unbundling 启动（1395 item 1）。
+
 ## 2026-09-18（续 1511）
 
 - 不变量 1394；语料 C1372；模式 name-the-xhash-notmiss-bar；反模式 xhash-notmiss-sold-as-bundled；L10.3 第 1363 条。填 L5.1 EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）。221 EXTCODEHASH vs copy bundled unbundling 完成（1394 item 3）。
