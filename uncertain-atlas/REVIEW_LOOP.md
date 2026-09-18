@@ -92,6 +92,6 @@ Objective 保持 active，直到 ROADMAP Phase 2 主体写完：
 
 ## 本回合做完仍有余力时的默认队列
 
-1. P1-3 官方三事 1389+
+1. P1-3 官方三事 1392+
 2. P3-3 merge 285 snapshot 分支
 3. P1-5 按 cpu-measurement-method 补实测数字（无机器则保持空）

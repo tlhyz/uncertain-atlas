@@ -990,6 +990,9 @@
 - [`worked-example-blobbasefee-vs-basefee.md`](worked-example-blobbasefee-vs-basefee.md) — 看见 blob 基础费指令 ≠ 已经是执行层基础费指令；看见能读本块 blob 基础费 ≠ 已经并成一套气；看见跑 EVM 前就已经有这个数 ≠ 已经改了 4844 日程；7516 ≠ 3198 ≠ 218 ≠ 4844（不变量 219）
 - [`worked-example-chainid-opcode-vs-signed.md`](worked-example-chainid-opcode-vs-signed.md) — 看见链号指令 ≠ 已经是签进哈希的链号；看见指令返回配置链号 ≠ 已经是这笔交易带了 EIP-155 标识；看见编译期写死的链号 ≠ 已经在硬分叉后仍安全；1344 ≠ 155 ≠ 161 ≠ 712（不变量 220）
 - [`worked-example-extcodehash-vs-copy.md`](worked-example-extcodehash-vs-copy.md) — 看见代码哈希指令 ≠ 已经看见代码本身；看见返回 0 ≠ 已经是没代码的账户；看见空数据哈希 ≠ 已经是账户不存在；1052 ≠ 161 ≠ 180 ≠ 162（不变量 221）
+- [`worked-example-cr2-notcre-vs-bundled.md`](worked-example-cr2-notcre-vs-bundled.md) — 盐创建指令≠already 按序号占址/能和旧式撞上/222 bundled；≠222 bundled（不变量 1389）
+- [`worked-example-cr2-notexist-vs-bundled.md`](worked-example-cr2-notexist-vs-bundled.md) — 算出来的盐地址≠already 创建/已有代码/已付创建费；≠222 bundled（不变量 1390）
+- [`worked-example-cr2-notover-vs-bundled.md`](worked-example-cr2-notover-vs-bundled.md) — 碰撞变得可能≠already 覆盖/684本身/3860分析费；≠222 bundled（不变量 1391）
 - [`worked-example-create2-vs-created.md`](worked-example-create2-vs-created.md) — 看见盐创建指令 ≠ 已经是按发送者加序号占址；看见算出来的盐地址 ≠ 已经创建；看见碰撞变得可能 ≠ 已经覆盖；1014 ≠ 3860 ≠ 176 ≠ 684（不变量 222）
 - [`worked-example-refund-vs-gone.md`](worked-example-refund-vs-gone.md) — 看见退款削减 ≠ 已经没有退款；看见去掉自毁退款 ≠ 已经改了自毁语义；看见退款计数 ≠ 已经能在执行当中用；3529 ≠ 2200 ≠ 160 ≠ 158（不变量 223）
 - [`worked-example-deprecate-vs-changed.md`](worked-example-deprecate-vs-changed.md) — 看见弃用警告 ≠ 已经改了共识行为；看见本页 ≠ 已经改了客户端；看见「以后可能变」≠ 已经变了；6049 ≠ 6780 ≠ 160 ≠ 223（不变量 224）

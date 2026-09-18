@@ -1,3 +1,6 @@
+- [`cr2-notover-sold-as-bundled.md`](cr2-notover-sold-as-bundled.md) — 碰撞变得可能 被写成已经覆盖 / 就已经是 684 本身 / 就已经是 3860（不变量 1391）
+- [`cr2-notexist-sold-as-bundled.md`](cr2-notexist-sold-as-bundled.md) — 算出来的盐地址 被写成已经创建 / 就已经有那份代码 / 就已经付过创建费（不变量 1390）
+- [`cr2-notcre-sold-as-bundled.md`](cr2-notcre-sold-as-bundled.md) — 盐创建指令 被写成已经是按序号占址 / 就已经能和旧式撞上 / 就已经 222 bundled（不变量 1389）
 - [`rdata-not140-sold-as-bundled.md`](rdata-not140-sold-as-bundled.md) — 失败数据能再取 被写成已经是 140 / 就已经输出区自动够大 / 就已经转发产品上线（不变量 1388）
 - [`rdata-notcalld-sold-as-bundled.md`](rdata-notcalld-sold-as-bundled.md) — 本页 被写成已经是 calldata / 就已经用两次调用先问长度 / 就已经下次调用后还在（不变量 1387）
 - [`rdata-notmem-sold-as-bundled.md`](rdata-notmem-sold-as-bundled.md) — 返回数据缓冲 被写成已经是内存 / 就已经是 CALL 预留输出区 / 就已经 232 bundled（不变量 1386）

@@ -85,7 +85,7 @@
 | 经济 | 能事先算址不是已经付过创建费，也不是通道产品已经上线 |
 
 **推断：** 产品句若只写「能算出盐地址所以已经创建」，读者会把门牌听成房子，或把 1014 听成 3860，或把「碰撞变得可能」听成已经覆盖。  
-**建议：** 第一版可以不加盐创建。若对照，必须分开普通创建、盐算址、已经占址、碰撞失败。不要发明「看见 1014 就已经创建」。不要抄操作码号、气价或例址。不要写怎样做反事实交互、制造碰撞或拆户重占。
+**建议：** 第一版可以不加盐创建。若对照，必须分开普通创建、盐算址、已经占址、碰撞失败。可以跳过「看见盐地址就已经创建」。222 CREATE2 salt-address vs created bundled unbundling 完成（1389 item 1 / 1390 item 2 / 1391 item 3）；精读 [`worked-example-cr2-notcre-vs-bundled.md`](worked-example-cr2-notcre-vs-bundled.md)（不变量 1389 item 1）、[`worked-example-cr2-notexist-vs-bundled.md`](worked-example-cr2-notexist-vs-bundled.md)（不变量 1390 item 2）、[`worked-example-cr2-notover-vs-bundled.md`](worked-example-cr2-notover-vs-bundled.md)（不变量 1391 item 3）。不要发明「看见 1014 就已经创建」。不要抄操作码号、气价或例址。不要写怎样做反事实交互、制造碰撞或拆户重占。
 
 ---
 

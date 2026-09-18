@@ -1,3 +1,15 @@
+## 2026-09-18（续 1508）
+
+- 不变量 1391；语料 C1369；模式 name-the-cr2-notover-bar；反模式 cr2-notover-sold-as-bundled；L10.3 第 1360 条。填 L5.1 EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）。222 CREATE2 salt-address vs created bundled unbundling 完成（1391 item 3）。
+
+## 2026-09-18（续 1507）
+
+- 不变量 1390；语料 C1368；模式 name-the-cr2-notexist-bar；反模式 cr2-notexist-sold-as-bundled；L10.3 第 1359 条。填 L5.1 EIP-1014 salt-address not already created / not already has-code / not already paid-create 正式三事（222 余量）。222 CREATE2 salt-address vs created bundled unbundling 续（1390 item 2）。
+
+## 2026-09-18（续 1506）
+
+- 不变量 1389；语料 C1367；模式 name-the-cr2-notcre-bar；反模式 cr2-notcre-sold-as-bundled；L10.3 第 1358 条。填 L5.1 EIP-1014 CREATE2 not already CREATE-nonce / not already sender-nonce / not already 222-bundled 正式三事（222 余量）。222 CREATE2 salt-address vs created bundled unbundling 启动（1389 item 1）。
+
 ## 2026-09-18（续 1505）
 
 - 不变量 1388；语料 C1366；模式 name-the-rdata-not140-bar；反模式 rdata-not140-sold-as-bundled；L10.3 第 1357 条。填 L5.1 EIP-211 refetch-fail-data not already 140 / not already auto-sized-out / not already forwarder-product 正式三事（232 余量）。232 returndata buffer vs memory bundled unbundling 完成（1388 item 3）。

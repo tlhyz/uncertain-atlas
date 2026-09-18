@@ -1,3 +1,18 @@
+| A6720 | 记录 | 会与 222 / 176 / 160 / 1389 / 1390 糊成「看见碰撞变得可能不是已经覆盖就已经覆盖已有代码 interchangeable、就已经是 684 本身 interchangeable、就已经是 3860 分析费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。222 CREATE2 salt-address vs created bundled unbundling 完成（1391 item 3） |
+| A6721 | 高 | 看见碰撞变得可能不是已经覆盖 会被写成已经覆盖已有代码 interchangeable / 176 interchangeable | 官方 EIP-1014 cr2 item 3：not already 已经覆盖已有代码 / not 176 |
+| A6722 | 高 | 看见collision possible is not already overwrite 会被写成已经是 684 本身 interchangeable / 160 interchangeable | 官方 EIP-1014 cr2 item 3：not already 已经是 684 本身 / not 160 |
+| A6723 | 高 | 看见碰撞变得可能不是已经覆盖 会被写成已经是 3860 分析费 interchangeable | 官方 EIP-1014 cr2 item 3：not already settled |
+| A6724 | 中 | 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址会被抄进不确定 | 不抄。不写 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址。不另写 19 节 |
+| A6715 | 记录 | 会与 222 / 160 / 221 / 1389 / 1391 糊成「看见算出来的盐地址不是已经创建就已经创建 interchangeable、就已经有那份代码 interchangeable、就已经付过创建费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1014 salt-address not already created / not already has-code / not already paid-create 正式三事（222 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。222 CREATE2 salt-address vs created bundled unbundling 续（1390 item 2） |
+| A6716 | 高 | 看见算出来的盐地址不是已经创建 会被写成已经创建 interchangeable / 160 interchangeable | 官方 EIP-1014 cr2 item 2：not already 已经创建 / not 160 |
+| A6717 | 高 | 看见computed salt address is not already created 会被写成已经有那份代码 interchangeable / 221 interchangeable | 官方 EIP-1014 cr2 item 2：not already 已经有那份代码 / not 221 |
+| A6718 | 高 | 看见算出来的盐地址不是已经创建 会被写成已经付过创建费 interchangeable | 官方 EIP-1014 cr2 item 2：not already settled |
+| A6719 | 中 | 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址会被抄进不确定 | 不抄。不写 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址。不另写 19 节 |
+| A6710 | 记录 | 会与 222 / 175 / 176 / 1390 / 1391 糊成「看见盐创建指令不是已经是按序号占址就已经是按发送者加序号占址 interchangeable、就已经能和旧式创建地址撞上 interchangeable、就已经 222 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1014 CREATE2 not already CREATE-nonce / not already sender-nonce / not already 222-bundled 正式三事（222 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。222 CREATE2 salt-address vs created bundled unbundling 启动（1389 item 1） |
+| A6711 | 高 | 看见盐创建指令不是已经是按序号占址 会被写成已经是按发送者加序号占址 interchangeable / 175 interchangeable | 官方 EIP-1014 cr2 item 1：not already 已经是按发送者加序号占址 / not 175 |
+| A6712 | 高 | 看见CREATE2 is not already CREATE 会被写成已经能和旧式创建地址撞上 interchangeable / 176 interchangeable | 官方 EIP-1014 cr2 item 1：not already 已经能和旧式创建地址撞上 / not 176 |
+| A6713 | 高 | 看见盐创建指令不是已经是按序号占址 会被写成已经 222 bundled interchangeable | 官方 EIP-1014 cr2 item 1：not already settled |
+| A6714 | 中 | 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址会被抄进不确定 | 不抄。不写 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址。不另写 19 节 |
 | A6705 | 记录 | 会与 232 / 177 / 3 / 1386 / 1387 糊成「看见失败数据能再取不是已经是 140就已经是 EIP-140 interchangeable、就输出区已经自动够大 interchangeable、就通用转发产品已经上线 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-211 refetch-fail-data not already 140 / not already auto-sized-out / not already forwarder-product 正式三事（232 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。232 returndata buffer vs memory bundled unbundling 完成（1388 item 3） |
 | A6706 | 高 | 看见失败数据能再取不是已经是 140 会被写成已经是 EIP-140 interchangeable / 177 interchangeable | 官方 EIP-211 rdata item 3：not already 已经是 EIP-140 / not 177 |
 | A6707 | 高 | 看见refetch fail data is not already 140 会被写成输出区已经自动够大 interchangeable / 3 interchangeable | 官方 EIP-211 rdata item 3：not already 输出区已经自动够大 / not 3 |

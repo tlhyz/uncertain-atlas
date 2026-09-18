@@ -1,3 +1,6 @@
+- [`name-the-cr2-notover-bar.md`](name-the-cr2-notover-bar.md) — EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）（不变量 1391）
+- [`name-the-cr2-notexist-bar.md`](name-the-cr2-notexist-bar.md) — EIP-1014 salt-address not already created / not already has-code / not already paid-create 正式三事（222 余量）（不变量 1390）
+- [`name-the-cr2-notcre-bar.md`](name-the-cr2-notcre-bar.md) — EIP-1014 CREATE2 not already CREATE-nonce / not already sender-nonce / not already 222-bundled 正式三事（222 余量）（不变量 1389）
 - [`name-the-rdata-not140-bar.md`](name-the-rdata-not140-bar.md) — EIP-211 refetch-fail-data not already 140 / not already auto-sized-out / not already forwarder-product 正式三事（232 余量）（不变量 1388）
 - [`name-the-rdata-notcalld-bar.md`](name-the-rdata-notcalld-bar.md) — EIP-211 this-page not already calldata / not already two-call-length / not already still-after-next 正式三事（232 余量）（不变量 1387）
 - [`name-the-rdata-notmem-bar.md`](name-the-rdata-notmem-bar.md) — EIP-211 returndata-buffer not already memory / not already CALL-out / not already 232-bundled 正式三事（232 余量）（不变量 1386）
