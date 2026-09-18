@@ -1,3 +1,7 @@
+## 2026-09-18（续 811）
+
+- 不变量 694；语料 C671；模式 name-the-candidate-notdiscarded-bar；反模式 candidate-notdiscarded-sold-as-bundled；L10.3 第 663 条。填 L4.4 / CometBFT 档案丢掉候选 not already can unboundedly accumulate / not already never need re-execute / not already bound by spec 正式三事（311 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。311 candidate vs execute bundled unbundling 完成（692 + 693 + 694）。
+
 ## 2026-09-18（续 810）
 
 - 不变量 693；语料 C670；模式 name-the-candidate-notexecute-bar；反模式 candidate-notexecute-sold-as-bundled；L10.3 第 662 条。填 L4.4 / CometBFT 档案候选不是已经是 ExecuteTxState not already ExecuteTxState / not already can name this height final / not already settled 正式三事（311 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。311 candidate vs execute bundled unbundling 续（693 item 2）。
