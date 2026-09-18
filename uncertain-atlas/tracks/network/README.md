@@ -19,6 +19,9 @@ blocksync 目标必须可归因：[`../failure-museum/asa-2025-001.md`](../failu
 分叉标识 ≠ 已经同一条链：[`worked-example-forkid-vs-same-chain.md`](worked-example-forkid-vs-same-chain.md)（看见分叉标识对上不是已经同一条链；通告了下一分叉不是已经兼容；2124 ≠ 8 ≠ 7642 ≠ 7910）。
 签过的节点记录 ≠ 已经最新：[`worked-example-enr-vs-newest.md`](worked-example-enr-vs-newest.md)（看见签过的记录不是已经是最新一份；能多写键不是已经换了身份方案；778 ≠ 2124 ≠ 8 ≠ 7642）。
 ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`](worked-example-enr-request-vs-have.md)（看见 ping 里的记录序号不是已经有当前记录；能发请求不是已经解析；FindNode 找到人不是已经有记录；868 ≠ 778 ≠ 2124 ≠ 8）。
+线上在加密 ≠ 已经私人：[`worked-example-vt324-notpriv-vs-bundled.md`](worked-example-vt324-notpriv-vs-bundled.md)（线上在加密≠already 知道对面是谁/私人/没有隐私改进；≠242 bundled；不变量 1274）。
+字节看起来随机 ≠ 已经认不出：[`worked-example-vt324-notrand-vs-bundled.md`](worked-example-vt324-notrand-vs-bundled.md)（字节看起来随机≠already 防火墙认不出/塑过形/流量分析失效；≠242 bundled；不变量 1275）。
+支持第 2 版 ≠ 已经退役旧线：[`worked-example-vt324-notold-vs-bundled.md`](worked-example-vt324-notold-vs-bundled.md)（支持第 2 版≠already 第 1 版退役/对照过/应用消息不再公开；≠242 bundled；不变量 1276）。
 第 2 版传输 ≠ 已经私人：[`worked-example-v2-transport-vs-private.md`](worked-example-v2-transport-vs-private.md)（看见机会主义未认证加密不是已经私人；伪随机字节流不是已经认不出；仍收下第 1 版不是已经退役旧线；324 ≠ 112 ≠ 8 ≠ 868）。
 后继地址流言 ≠ 已经连得上：[`worked-example-addr155-notreach-vs-bundled.md`](worked-example-addr155-notreach-vs-bundled.md)（流言≠already connected/reachable/old-retired；≠246 bundled；不变量 1232）。
 sendaddrv2 ≠ 已经只收后继格式：[`worked-example-addr155-notpref-vs-bundled.md`](worked-example-addr155-notpref-vs-bundled.md)（信号≠already only-v2/old-retired/unsolicited-pref；≠246 bundled；不变量 1233）。

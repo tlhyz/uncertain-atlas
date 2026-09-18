@@ -1,3 +1,15 @@
+## 2026-09-18（续 1393）
+
+- 不变量 1276；语料 C1254；模式 name-the-vt324-notold-bar；反模式 vt324-notold-sold-as-bundled；L10.3 第 1245 条。填 L3.4 / L9.1 BIP-324 v2 not already v1-retired / not already session-checked / not already app-private 正式三事（242 余量）。242 v2 transport vs private bundled unbundling 完成（1276 item 3）。
+
+## 2026-09-18（续 1392）
+
+- 不变量 1275；语料 C1253；模式 name-the-vt324-notrand-bar；反模式 vt324-notrand-sold-as-bundled；L10.3 第 1244 条。填 L3.4 / L9.1 BIP-324 randstream not already unrecognized / not already shaped / not already analysis-dead 正式三事（242 余量）。242 v2 transport vs private bundled unbundling 续（1275 item 2）。
+
+## 2026-09-18（续 1391）
+
+- 不变量 1274；语料 C1252；模式 name-the-vt324-notpriv-bar；反模式 vt324-notpriv-sold-as-bundled；L10.3 第 1243 条。填 L3.4 / L9.1 BIP-324 enc not already private / not already authenticated / not already no-gain 正式三事（242 余量）。242 v2 transport vs private bundled unbundling 启动（1274 item 1）。
+
 ## 2026-09-18（续 1390）
 
 - 不变量 1273；语料 C1251；模式 name-the-ua14-notsame-bar；反模式 ua14-notsame-sold-as-bundled；L10.3 第 1242 条。填 L3.4 / L9.1 BIP-14 same-proto not already same-impl / not already capability / not already feature 正式三事（263 余量）。263 ua vs protocol bundled unbundling 完成（1273 item 3）。

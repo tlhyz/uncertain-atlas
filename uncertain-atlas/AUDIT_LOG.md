@@ -1,3 +1,18 @@
+| A6145 | 记录 | 会与 242 / 112 / 263 / 1274 / 1275 糊成「看见支持第 2 版就第 1 版已经退役 interchangeable、就已经对照过 interchangeable、就应用消息已经不再公开 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-324 v2 not already v1-retired / not already session-checked / not already app-private 正式三事（242 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。242 v2 transport vs private bundled unbundling 完成（1276 item 3） |
+| A6146 | 高 | 看见支持第 2 版 会被写成第 1 版已经退役 interchangeable / 112 interchangeable | 官方 BIP-324 v2 item 3：not already 第 1 版已经退役 / not 112 |
+| A6147 | 高 | 看见导出了会话标识 会被写成已经对照过 interchangeable / 263 interchangeable | 官方 BIP-324 v2 item 3：not already 已经对照过 / not 263 |
+| A6148 | 高 | 看见支持第 2 版 会被写成应用消息已经不再公开 interchangeable | 官方 BIP-324 v2 item 3：not already settled |
+| A6149 | 中 | 怎样做中间人、怎样降级、怎样按时间认协议、怎样塑形会被抄进不确定 | 不抄。不写 怎样做中间人、怎样降级、怎样按时间认协议、怎样塑形。不另写 19 节 |
+| A6140 | 记录 | 会与 242 / 241 / 240 / 1274 / 1276 糊成「看见字节看起来随机就防火墙已经认不出 interchangeable、就已经塑过形 interchangeable、就流量分析已经失效 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-324 randstream not already unrecognized / not already shaped / not already analysis-dead 正式三事（242 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。242 v2 transport vs private bundled unbundling 续（1275 item 2） |
+| A6141 | 高 | 看见字节看起来随机 会被写成防火墙已经认不出 interchangeable / 241 interchangeable | 官方 BIP-324 v2 item 2：not already 防火墙已经认不出 / not 241 |
+| A6142 | 高 | 看见协议允许垃圾或诱饵 会被写成已经塑过形 interchangeable / 240 interchangeable | 官方 BIP-324 v2 item 2：not already 已经塑过形 / not 240 |
+| A6143 | 高 | 看见字节看起来随机 会被写成流量分析已经失效 interchangeable | 官方 BIP-324 v2 item 2：not already settled |
+| A6144 | 中 | 怎样做中间人、怎样降级、怎样按时间认协议、怎样塑形会被抄进不确定 | 不抄。不写 怎样做中间人、怎样降级、怎样按时间认协议、怎样塑形。不另写 19 节 |
+| A6135 | 记录 | 会与 242 / 112 / 235 / 1275 / 1276 糊成「看见线上在加密就已经知道对面是谁 interchangeable、就已经私人 interchangeable、就已经没有隐私改进 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-324 enc not already private / not already authenticated / not already no-gain 正式三事（242 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。242 v2 transport vs private bundled unbundling 启动（1274 item 1） |
+| A6136 | 高 | 看见线上在加密 会被写成已经知道对面是谁 interchangeable / 112 interchangeable | 官方 BIP-324 v2 item 1：not already 已经知道对面是谁 / not 112 |
+| A6137 | 高 | 看见未认证 会被写成已经私人 interchangeable / 235 interchangeable | 官方 BIP-324 v2 item 1：not already 已经私人 / not 235 |
+| A6138 | 高 | 看见线上在加密 会被写成已经没有隐私改进 interchangeable | 官方 BIP-324 v2 item 1：not already settled |
+| A6139 | 中 | 怎样做中间人、怎样降级、怎样按时间认协议、怎样塑形会被抄进不确定 | 不抄。不写 怎样做中间人、怎样降级、怎样按时间认协议、怎样塑形。不另写 19 节 |
 | A6130 | 记录 | 会与 263 / 259 / 262 / 1271 / 1272 糊成「看见同一协议版本就已经是同一套实现 interchangeable、就已经是协议能力 interchangeable、就已经谈妥了某项功能 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-14 same-proto not already same-impl / not already capability / not already feature 正式三事（263 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。263 ua vs protocol bundled unbundling 完成（1273 item 3） |
 | A6131 | 高 | 看见同一协议版本 会被写成已经是同一套实现 interchangeable / 259 interchangeable | 官方 BIP-14 ua item 3：not already 已经是同一套实现 / not 259 |
 | A6132 | 高 | 看见user agent 栈 会被写成已经是协议能力 interchangeable / 262 interchangeable | 官方 BIP-14 ua item 3：not already 已经是协议能力 / not 262 |

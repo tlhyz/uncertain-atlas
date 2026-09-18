@@ -1,3 +1,6 @@
+- [`name-the-vt324-notold-bar.md`](name-the-vt324-notold-bar.md) — BIP-324 v2 not already v1-retired / not already session-checked / not already app-private 正式三事（242 余量）（不变量 1276）
+- [`name-the-vt324-notrand-bar.md`](name-the-vt324-notrand-bar.md) — BIP-324 randstream not already unrecognized / not already shaped / not already analysis-dead 正式三事（242 余量）（不变量 1275）
+- [`name-the-vt324-notpriv-bar.md`](name-the-vt324-notpriv-bar.md) — BIP-324 enc not already private / not already authenticated / not already no-gain 正式三事（242 余量）（不变量 1274）
 - [`name-the-ua14-notsame-bar.md`](name-the-ua14-notsame-bar.md) — BIP-14 same-proto not already same-impl / not already capability / not already feature 正式三事（263 余量）（不变量 1273）
 - [`name-the-ua14-notua-bar.md`](name-the-ua14-notua-bar.md) — BIP-14 user-agent not already change-behavior / not already swap-rules / not already allowed-fingerprint 正式三事（263 余量）（不变量 1272）
 - [`name-the-ua14-notcli-bar.md`](name-the-ua14-notcli-bar.md) — BIP-14 proto-ver not already client-ver / not already impl-ver / not already raised-proto 正式三事（263 余量）（不变量 1271）

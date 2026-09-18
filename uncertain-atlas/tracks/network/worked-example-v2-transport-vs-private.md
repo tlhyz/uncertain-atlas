@@ -41,7 +41,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见机会主义未认证加密就已经私人 / 就已经认证 / 就已经认不出 / 就已经没有第 1 版」。若对照传输加密，必须分开通道机密、身份认证、流量分析、旧线兼容、应用层公开数据。不要把传输加密写成广播元数据已经藏住。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见机会主义未认证加密就已经私人 / 就已经认证 / 就已经认不出 / 就已经没有第 1 版」。若对照传输加密，必须分开通道机密、身份认证、流量分析、旧线兼容、应用层公开数据。不要把传输加密写成广播元数据已经藏住。242 v2 transport vs private bundled unbundling 完成（1274 item 1 / 1275 item 2 / 1276 item 3）；精读 [`worked-example-vt324-notpriv-vs-bundled.md`](worked-example-vt324-notpriv-vs-bundled.md)（不变量 1274 item 1）、[`worked-example-vt324-notrand-vs-bundled.md`](worked-example-vt324-notrand-vs-bundled.md)（不变量 1275 item 2）、[`worked-example-vt324-notold-vs-bundled.md`](worked-example-vt324-notold-vs-bundled.md)（不变量 1276 item 3）。
 
 ## 本页不抄
 

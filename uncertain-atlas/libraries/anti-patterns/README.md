@@ -1,3 +1,6 @@
+- [`vt324-notold-sold-as-bundled.md`](vt324-notold-sold-as-bundled.md) — 支持第 2 版 被写成第 1 版已经退役 / 导出了会话标识就已经对照过 / 应用消息已经不再公开（不变量 1276）
+- [`vt324-notrand-sold-as-bundled.md`](vt324-notrand-sold-as-bundled.md) — 字节看起来随机 被写成防火墙已经认不出 / 允许垃圾就已经塑过形 / 流量分析已经失效（不变量 1275）
+- [`vt324-notpriv-sold-as-bundled.md`](vt324-notpriv-sold-as-bundled.md) — 线上在加密 被写成已经知道对面是谁 / 已经私人 / 未认证就已经没有隐私改进（不变量 1274）
 - [`ua14-notsame-sold-as-bundled.md`](ua14-notsame-sold-as-bundled.md) — 同一协议版本 被写成已经是同一套实现 / user agent 栈就已经是协议能力 / 就已经谈妥功能（不变量 1273）
 - [`ua14-notua-sold-as-bundled.md`](ua14-notua-sold-as-bundled.md) — user agent 被写成已经可以按实现改行为 / 已经按这家换规则 / 已经是本页允许按 UA 认人（不变量 1272）
 - [`ua14-notcli-sold-as-bundled.md`](ua14-notcli-sold-as-bundled.md) — 协议版本 被写成已经是客户端版本 / 已经是实现版本 / 实现发了新版本就已经抬了协议（不变量 1271）
