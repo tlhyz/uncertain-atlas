@@ -1,3 +1,6 @@
+- [`name-the-pol388-notreg-bar.md`](name-the-pol388-notreg-bar.md) — BIP-388 registered not already approved-this-spend / not already miniscript-policy / not already settled 正式三事（280 余量）（不变量 1162）
+- [`name-the-pol388-notkey-bar.md`](name-the-pol388-notkey-bar.md) — BIP-388 key-placeholder not already exact-pubkey / not already fully-derived / not already settled 正式三事（280 余量）（不变量 1161）
+- [`name-the-pol388-notdesc-bar.md`](name-the-pol388-notdesc-bar.md) — BIP-388 wallet-policy not already one-descriptor / not already account-collapsed / not already settled 正式三事（280 余量）（不变量 1160）
 - [`name-the-tap371-notprev-bar.md`](name-the-tap371-notprev-bar.md) — BIP-371 taproot-input not already must-prev-tx / not already same-utxo-fields / not already settled 正式三事（279 余量）（不变量 1159）
 - [`name-the-tap371-notinner-bar.md`](name-the-tap371-notinner-bar.md) — BIP-371 output-script-key not already internal-key / not already same-key / not already settled 正式三事（279 余量）（不变量 1158）
 - [`name-the-tap371-notold-bar.md`](name-the-tap371-notold-bar.md) — BIP-371 old-psbt-fields not already can-hold-taproot / not already can-sign-taproot / not already settled 正式三事（279 余量）（不变量 1157）

@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出钱包策略，必须分开模板、钥信息列、登记。可以跳过「看见账户就已经是一条描述符」。若对照，必须分开本页 policy 和 379 那种语言。不要另写怎样编译占位。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出钱包策略，必须分开模板、钥信息列、登记。可以跳过「看见账户就已经是一条描述符」。若对照，必须分开本页 policy 和 379 那种语言。不要另写怎样编译占位。280 policy vs descriptor bundled unbundling 完成（1160 item 1 / 1161 item 2 / 1162 item 3）；精读 [`worked-example-pol388-notdesc-vs-bundled.md`](worked-example-pol388-notdesc-vs-bundled.md)（不变量 1160 item 1）。
 
 ## 本页不抄
 

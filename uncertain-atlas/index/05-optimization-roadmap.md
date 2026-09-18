@@ -15,7 +15,7 @@
 cursor/uncertain-atlas-optimization-5ee2
 ```
 
-来源：合并 `cursor/cometbft-echousage-notdone-676-2f0b`（KB 最全）+ 本优化迭代（677–1114 Query/CheckTx/Commit/InitChain/Finalize/ProposalStatus/Prepare/Apply/Offer Result 拆句；1115–1159 BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371 账户发现、用途层、导出熵、嵌套找回、多签层次、联合签名人发现、确定性地址、单钥 P2TR、链码委托、多签描述符、tr 树、非隔离见证放置、隔离见证压缩、tapscript 多签与 Taproot 工作包栏拆句）。  
+来源：合并 `cursor/cometbft-echousage-notdone-676-2f0b`（KB 最全）+ 本优化迭代（677–1114 Query/CheckTx/Commit/InitChain/Finalize/ProposalStatus/Prepare/Apply/Offer Result 拆句；1115–1162 BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388 账户发现、用途层、导出熵、嵌套找回、多签层次、联合签名人发现、确定性地址、单钥 P2TR、链码委托、多签描述符、tr 树、非隔离见证放置、隔离见证压缩、tapscript 多签、Taproot 工作包栏与钱包策略拆句）。  
 `main` 仍只有 `qtb/` 交易框架；协议知识不在 `main`。
 
 ---

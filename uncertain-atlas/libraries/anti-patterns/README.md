@@ -1,3 +1,6 @@
+- [`pol388-notreg-sold-as-bundled.md`](pol388-notreg-sold-as-bundled.md) — 登记过 被写成已经批准这笔花 / 已经是 379 那种语言 / 已经交差（不变量 1162）
+- [`pol388-notkey-sold-as-bundled.md`](pol388-notkey-sold-as-bundled.md) — 钥占位 被写成已经是精确公钥 / 已经是那把 KEY / 已经交差（不变量 1161）
+- [`pol388-notdesc-sold-as-bundled.md`](pol388-notdesc-sold-as-bundled.md) — 钱包策略 被写成已经是一条描述符 / 已经不必再展开 / 已经交差（不变量 1160）
 - [`tap371-notprev-sold-as-bundled.md`](tap371-notprev-sold-as-bundled.md) — Taproot 输入 被写成已经必须带整笔前交易 / 已经是旧输入那套 / 已经交差（不变量 1159）
 - [`tap371-notinner-sold-as-bundled.md`](tap371-notinner-sold-as-bundled.md) — 输出脚本钥 被写成已经是内部钥 / 已经不必再给内部钥 / 已经交差（不变量 1158）
 - [`tap371-notold-sold-as-bundled.md`](tap371-notold-sold-as-bundled.md) — 旧 PSBT 栏 被写成已经能装 Taproot / 已经能签 / 已经交差（不变量 1157）

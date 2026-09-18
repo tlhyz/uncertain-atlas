@@ -1,3 +1,15 @@
+## 2026-09-18（续 1279）
+
+- 不变量 1162；语料 C1140；模式 name-the-pol388-notreg-bar；反模式 pol388-notreg-sold-as-bundled；L10.3 第 1131 条。填 L1.4 / L3.6 BIP-388 registered not already approved-this-spend / not already miniscript-policy / not already settled 正式三事（280 余量）。280 policy vs descriptor bundled unbundling 完成（1162 item 3）。
+
+## 2026-09-18（续 1278）
+
+- 不变量 1161；语料 C1139；模式 name-the-pol388-notkey-bar；反模式 pol388-notkey-sold-as-bundled；L10.3 第 1130 条。填 L1.4 / L3.6 BIP-388 key-placeholder not already exact-pubkey / not already fully-derived / not already settled 正式三事（280 余量）。280 policy vs descriptor bundled unbundling 续（1161 item 2）。
+
+## 2026-09-18（续 1277）
+
+- 不变量 1160；语料 C1138；模式 name-the-pol388-notdesc-bar；反模式 pol388-notdesc-sold-as-bundled；L10.3 第 1129 条。填 L1.4 / L3.6 BIP-388 wallet-policy not already one-descriptor / not already account-collapsed / not already settled 正式三事（280 余量）。280 policy vs descriptor bundled unbundling 启动（1160 item 1）。
+
 ## 2026-09-18（续 1276）
 
 - 不变量 1159；语料 C1137；模式 name-the-tap371-notprev-bar；反模式 tap371-notprev-sold-as-bundled；L10.3 第 1128 条。填 L1.4 / L3.6 BIP-371 taproot-input not already must-prev-tx / not already same-utxo-fields / not already settled 正式三事（279 余量）。279 tap PSBT vs old bundled unbundling 完成（1159 item 3）。

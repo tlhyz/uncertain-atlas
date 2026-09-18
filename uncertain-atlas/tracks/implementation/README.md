@@ -833,6 +833,9 @@
 - [`worked-example-tap371-notinner-vs-bundled.md`](worked-example-tap371-notinner-vs-bundled.md) — 输出脚本钥≠already internal-key/same-key/settled；≠279 bundled（不变量 1158）
 - [`worked-example-tap371-notold-vs-bundled.md`](worked-example-tap371-notold-vs-bundled.md) — 旧 PSBT 栏≠already can-hold-taproot/can-sign-taproot/settled；≠279 bundled（不变量 1157）
 - [`worked-example-tap-psbt-vs-old.md`](worked-example-tap-psbt-vs-old.md) — 旧 PSBT 栏 ≠ 已经能装 Taproot；输出脚本里的钥 ≠ 已经是内部钥；Taproot 输入 ≠ 已经必须带整笔前交易（不变量 279）
+- [`worked-example-pol388-notreg-vs-bundled.md`](worked-example-pol388-notreg-vs-bundled.md) — 登记过≠already approved-this-spend/miniscript-policy/settled；≠280 bundled（不变量 1162）
+- [`worked-example-pol388-notkey-vs-bundled.md`](worked-example-pol388-notkey-vs-bundled.md) — 钥占位≠already exact-pubkey/fully-derived/settled；≠280 bundled（不变量 1161）
+- [`worked-example-pol388-notdesc-vs-bundled.md`](worked-example-pol388-notdesc-vs-bundled.md) — 钱包策略≠already one-descriptor/account-collapsed/settled；≠280 bundled（不变量 1160）
 - [`worked-example-policy-vs-descriptor.md`](worked-example-policy-vs-descriptor.md) — 钱包策略 ≠ 已经是一条描述符；钥占位 ≠ 已经是那把精确公钥；登记过 ≠ 已经批准这笔花（不变量 280）
 - [`worked-example-combo-vs-one-script.md`](worked-example-combo-vs-one-script.md) — combo ≠ 已经只能产出一种脚本；未压缩钥 ≠ 已经带齐见证对；一份 combo ≠ 已经是一份钱包策略（不变量 281）
 - [`worked-example-raw-vs-named.md`](worked-example-raw-vs-named.md) — raw ≠ 已经能套进具名表达式；addr ≠ 已经是那份输出脚本；一份包装 ≠ 已经是 combo（不变量 282）

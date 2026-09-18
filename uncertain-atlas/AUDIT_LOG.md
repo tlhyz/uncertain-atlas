@@ -1,3 +1,18 @@
+| A5575 | 记录 | 会与 280 / 191 / 184 / 1160 / 1161 糊成「看见登记过就已经批准这笔花 interchangeable、就已经是 379 那种语言 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-388 registered not already approved-this-spend / not already miniscript-policy / not already settled 正式三事（280 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。280 policy vs descriptor bundled unbundling 完成（1162 item 3） |
+| A5576 | 高 | 看见登记过 会被写成已经批准这笔花 interchangeable / 191 interchangeable | 官方 BIP-388 钱包策略 item 3：not already approved-this-spend / not 191 |
+| A5577 | 高 | 看见写了 policy 会被写成已经是 379 那种语言 interchangeable / 184 interchangeable | 官方 BIP-388 钱包策略 item 3：not already miniscript-policy / not 184 |
+| A5578 | 高 | 看见登记证明 会被写成已经交差 interchangeable | 官方 BIP-388 钱包策略 item 3：not already settled |
+| A5579 | 中 | 怎样编译占位会被抄进不确定 | 不抄。不写怎样编译占位。不另写 19 节 |
+| A5570 | 记录 | 会与 280 / 1118 / 184 / 1160 / 1162 糊成「看见钥占位就已经是那把精确公钥 interchangeable、就已经是描述符里那把 KEY interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-388 key-placeholder not already exact-pubkey / not already fully-derived / not already settled 正式三事（280 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。280 policy vs descriptor bundled unbundling 续（1161 item 2） |
+| A5571 | 高 | 看见钥占位 会被写成已经是那把精确公钥 interchangeable / 1118 interchangeable | 官方 BIP-388 钱包策略 item 2：not already exact-pubkey / not 1118 |
+| A5572 | 高 | 看见列开了扩展公钥 会被写成已经是描述符里那把 KEY interchangeable / 184 interchangeable | 官方 BIP-388 钱包策略 item 2：not already fully-derived / not 184 |
+| A5573 | 高 | 看见账户根 会被写成已经交差 interchangeable | 官方 BIP-388 钱包策略 item 2：not already settled |
+| A5574 | 中 | 怎样编译占位会被抄进不确定 | 不抄。不写怎样编译占位。不另写 19 节 |
+| A5565 | 记录 | 会与 280 / 184 / 1157 / 1161 / 1162 糊成「看见钱包策略就已经是一条描述符 interchangeable、就已经不必再展开 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-388 wallet-policy not already one-descriptor / not already account-collapsed / not already settled 正式三事（280 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。280 policy vs descriptor bundled unbundling 启动（1160 item 1） |
+| A5566 | 高 | 看见钱包策略 会被写成已经是一条描述符 interchangeable / 184 interchangeable | 官方 BIP-388 钱包策略 item 1：not already one-descriptor / not 184 |
+| A5567 | 高 | 看见账户 会被写成已经不必再展开 interchangeable / 1157 interchangeable | 官方 BIP-388 钱包策略 item 1：not already account-collapsed / not 1157 |
+| A5568 | 高 | 看见一份描述符模板 会被写成已经交差 interchangeable | 官方 BIP-388 钱包策略 item 1：not already settled |
+| A5569 | 中 | 怎样编译占位会被抄进不确定 | 不抄。不写怎样编译占位。不另写 19 节 |
 | A5560 | 记录 | 会与 279 / 186 / 179 / 1157 / 1158 糊成「看见 Taproot 输入就必须带整笔前交易 interchangeable、就已经是旧输入那套 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-371 taproot-input not already must-prev-tx / not already same-utxo-fields / not already settled 正式三事（279 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。279 tap PSBT vs old bundled unbundling 完成（1159 item 3） |
 | A5561 | 高 | 看见 Taproot 输入 会被写成已经必须带整笔前交易 interchangeable / 186 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 3：not already must-prev-tx / not 186 |
 | A5562 | 高 | 看见只带了见证 UTXO 会被写成已经是旧输入那套 interchangeable / 179 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 3：not already same-utxo-fields / not 179 |
