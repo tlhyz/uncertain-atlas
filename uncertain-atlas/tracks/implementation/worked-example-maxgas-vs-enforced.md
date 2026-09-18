@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经有气限」，必须分开 MaxGas 是不是已经在执行、GasUsed 是不是已经算进共识、已提交块是不是已经按气验过。可以跳过「看见有 MaxGas 就已经在卡」。不要另写怎样计量气或怎样在 Prepare 里卡上限。315 maxgas vs enforced bundled unbundling 续（704 + 705）；精读 [`worked-example-maxgas-notenforced-vs-bundled.md`](worked-example-maxgas-notenforced-vs-bundled.md)（不变量 704 item 1）；[`worked-example-maxgas-notgasused-vs-bundled.md`](worked-example-maxgas-notgasused-vs-bundled.md)（不变量 705 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经有气限」，必须分开 MaxGas 是不是已经在执行、GasUsed 是不是已经算进共识、已提交块是不是已经按气验过。可以跳过「看见有 MaxGas 就已经在卡」。不要另写怎样计量气或怎样在 Prepare 里卡上限。315 maxgas vs enforced bundled unbundling 完成（704 + 705 + 706）；精读 [`worked-example-maxgas-notenforced-vs-bundled.md`](worked-example-maxgas-notenforced-vs-bundled.md)（不变量 704 item 1）；[`worked-example-maxgas-notgasused-vs-bundled.md`](worked-example-maxgas-notgasused-vs-bundled.md)（不变量 705 item 2）；[`worked-example-maxgas-notcommitted-vs-bundled.md`](worked-example-maxgas-notcommitted-vs-bundled.md)（不变量 706 item 3）。
 
 ## 本页不抄
 

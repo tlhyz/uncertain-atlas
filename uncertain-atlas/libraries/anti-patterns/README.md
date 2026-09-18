@@ -1,3 +1,4 @@
+- [`maxgas-notcommitted-sold-as-bundled.md`](maxgas-notcommitted-sold-as-bundled.md) — 块已经提交 被写成已经按气验过 / 已经共识守了 / 已经默认卡气（不变量 706）
 - [`maxgas-notgasused-sold-as-bundled.md`](maxgas-notgasused-sold-as-bundled.md) — 有 GasUsed 被写成已经算进共识 / 已经按实用气验过 / 已经由引擎强制不等式（不变量 705）
 - [`maxgas-notenforced-sold-as-bundled.md`](maxgas-notenforced-sold-as-bundled.md) — 字段在 被写成已经在执行 / 已经和 MaxBytes -1 同一句 / 已经有费用市场（不变量 704）
 - [`querystate-notsnapshot-sold-as-bundled.md`](querystate-notsnapshot-sold-as-bundled.md) — 对齐 被写成已经装了快照 / 已经从创世重放 / 已经是 Snapshot 连接（不变量 703）
