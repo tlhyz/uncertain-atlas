@@ -902,6 +902,9 @@
 - [`worked-example-enc38-notmint-vs-bundled.md`](worked-example-enc38-notmint-vs-bundled.md) — 厂家代生成≠already redeemable/same-path/settled；≠296 bundled（不变量 1206）
 - [`worked-example-enc38-notuse-vs-bundled.md`](worked-example-enc38-notuse-vs-bundled.md) — 加密记录≠already private-key/usable/settled；≠296 bundled（不变量 1205）
 - [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）
+- [`../consensus/worked-example-dup30-notspent-vs-bundled.md`](../consensus/worked-example-dup30-notspent-vs-bundled.md) — 花光后再出现≠already illegal/revived/settled；≠257 bundled（不变量 1228）
+- [`../consensus/worked-example-dup30-notlive-vs-bundled.md`](../consensus/worked-example-dup30-notlive-vs-bundled.md) — 还没花光再装≠already legal/all-coinbase-unique/settled；≠257 bundled（不变量 1227）
+- [`../consensus/worked-example-dup30-notuniq-vs-bundled.md`](../consensus/worked-example-dup30-notuniq-vs-bundled.md) — 同一标识≠already unique/same-outputs/settled；≠257 bundled（不变量 1226）
 - [`../lifecycle/worked-example-pc47-notagain-vs-bundled.md`](../lifecycle/worked-example-pc47-notagain-vs-bundled.md) — 第一次付款≠already skip-notify/recovered/settled；≠273 bundled（不变量 1225）
 - [`../lifecycle/worked-example-pc47-notnote-vs-bundled.md`](../lifecycle/worked-example-pc47-notnote-vs-bundled.md) — 通知输出≠already payment/spendable/settled；≠273 bundled（不变量 1224）
 - [`../lifecycle/worked-example-pc47-notdep-vs-bundled.md`](../lifecycle/worked-example-pc47-notdep-vs-bundled.md) — 付款码≠already deposit/paid/settled；≠273 bundled（不变量 1223）

@@ -1,3 +1,6 @@
+- [`name-the-dup30-notspent-bar.md`](name-the-dup30-notspent-bar.md) — BIP-30 spent-reappear not already illegal / not already revived / not already settled 正式三事（257 余量）（不变量 1228）
+- [`name-the-dup30-notlive-bar.md`](name-the-dup30-notlive-bar.md) — BIP-30 unspent-collide not already legal / not already all-coinbase-unique / not already settled 正式三事（257 余量）（不变量 1227）
+- [`name-the-dup30-notuniq-bar.md`](name-the-dup30-notuniq-bar.md) — BIP-30 same-txid not already unique / not already same-outputs / not already settled 正式三事（257 余量）（不变量 1226）
 - [`name-the-pc47-notagain-bar.md`](name-the-pc47-notagain-bar.md) — BIP-47 first-pay not already skip-notify / not already recovered / not already settled 正式三事（273 余量）（不变量 1225）
 - [`name-the-pc47-notnote-bar.md`](name-the-pc47-notnote-bar.md) — BIP-47 notification not already payment / not already spendable / not already settled 正式三事（273 余量）（不变量 1224）
 - [`name-the-pc47-notdep-bar.md`](name-the-pc47-notdep-bar.md) — BIP-47 payment-code not already deposit / not already paid / not already settled 正式三事（273 余量）（不变量 1223）

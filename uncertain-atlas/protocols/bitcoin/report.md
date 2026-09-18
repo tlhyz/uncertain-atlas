@@ -72,7 +72,7 @@ UTXO 集。见课程 L2.1。
 
 **PoW：** 找头哈希满足难度。假设：多数算力不合作改历史。
 
-**最终性：** 概率。确认数越多，改写期望成本越高，不是「第 N 块后数学禁止」。许多确认也不是已经不怕同一标识被覆盖：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见多余栈元素不是已经随便填；看见隔离见证不是已经没有这条延展；看见转发策略已经要空 dummy 不是已经是共识：[`../../tracks/implementation/worked-example-dummy-vs-empty.md`](../../tracks/implementation/worked-example-dummy-vs-empty.md)（不变量 264）。
+**最终性：** 概率。确认数越多，改写期望成本越高，不是「第 N 块后数学禁止」。许多确认也不是已经不怕同一标识被覆盖：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。 BIP-30 same-txid not already unique / not already same-outputs / not already settled 正式三事（257 余量）：[`../../tracks/consensus/worked-example-dup30-notuniq-vs-bundled.md`](../../tracks/consensus/worked-example-dup30-notuniq-vs-bundled.md)（不变量 1226）。 BIP-30 unspent-collide not already legal / not already all-coinbase-unique / not already settled 正式三事（257 余量）：[`../../tracks/consensus/worked-example-dup30-notlive-vs-bundled.md`](../../tracks/consensus/worked-example-dup30-notlive-vs-bundled.md)（不变量 1227）。 BIP-30 spent-reappear not already illegal / not already revived / not already settled 正式三事（257 余量）：[`../../tracks/consensus/worked-example-dup30-notspent-vs-bundled.md`](../../tracks/consensus/worked-example-dup30-notspent-vs-bundled.md)（不变量 1228）。看见多余栈元素不是已经随便填；看见隔离见证不是已经没有这条延展；看见转发策略已经要空 dummy 不是已经是共识：[`../../tracks/implementation/worked-example-dummy-vs-empty.md`](../../tracks/implementation/worked-example-dummy-vs-empty.md)（不变量 264）。
 
 **分叉：** 同一高度两个合法块常见于传播延迟。短分叉靠后续工作消解。
 

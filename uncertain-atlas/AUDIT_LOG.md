@@ -1,3 +1,18 @@
+| A5905 | 记录 | 会与 257 / 163 / 152 / 1226 / 1227 糊成「看见后来又出现已经花光的那条标识就已经非法 interchangeable、就已经把花掉再重复的输出加回来 interchangeable、就已经没有历史上那两处例外 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-30 spent-reappear not already illegal / not already revived / not already settled 正式三事（257 余量）/ 共识表 / 停链面地图。不写进 Ethereum 行 / L5.1 / M5.4 / L5.4。257 duplicate txid vs unique bundled unbundling 完成（1228 item 3） |
+| A5906 | 高 | 看见后来又出现已经花光的那条标识 会被写成已经非法 interchangeable / 163 interchangeable | 官方 BIP-30 dup item 3：not already illegal / not 163 |
+| A5907 | 高 | 看见重组 会被写成已经把花掉再重复的输出加回来 interchangeable / 152 interchangeable | 官方 BIP-30 dup item 3：not already revived / not 152 |
+| A5908 | 高 | 看见本页 会被写成历史上那两处例外已经没了 interchangeable | 官方 BIP-30 dup item 3：not already settled |
+| A5909 | 中 | 怎样造重复 coinbase 会被抄进不确定 | 不抄。不写怎样造重复 coinbase。不另写 19 节 |
+| A5900 | 记录 | 会与 257 / 173 / 1226 / 1228 糊成「看见后来又来一条同一标识而旧的还可花就已经合法 interchangeable、就已经保证所有 coinbase 标识都唯一 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-30 unspent-collide not already legal / not already all-coinbase-unique / not already settled 正式三事（257 余量）/ 共识表 / 停链面地图。不写进 Ethereum 行 / L5.1 / M5.4 / L5.4。257 duplicate txid vs unique bundled unbundling 续（1227 item 2） |
+| A5901 | 高 | 看见后来又来一条同一标识而旧的还可花 会被写成已经合法 interchangeable / 173 interchangeable | 官方 BIP-30 dup item 2：not already legal / not 173 |
+| A5902 | 高 | 看见本页 会被写成已经保证所有 coinbase 标识都唯一 interchangeable / 1226 interchangeable | 官方 BIP-30 dup item 2：not already all-coinbase-unique / not 1226 |
+| A5903 | 高 | 看见还没花光 会被写成已经交差 interchangeable | 官方 BIP-30 dup item 2：not already settled |
+| A5904 | 中 | 怎样造重复 coinbase 会被抄进不确定 | 不抄。不写怎样造重复 coinbase。不另写 19 节 |
+| A5895 | 记录 | 会与 257 / 152 / 163 / 1227 / 1228 糊成「看见同一交易标识就已经唯一 interchangeable、就已经不怕被覆盖 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-30 same-txid not already unique / not already same-outputs / not already settled 正式三事（257 余量）/ 共识表 / 停链面地图。不写进 Ethereum 行 / L5.1 / M5.4 / L5.4。257 duplicate txid vs unique bundled unbundling 启动（1226 item 1） |
+| A5896 | 高 | 看见同一交易标识 会被写成已经唯一 interchangeable / 152 interchangeable | 官方 BIP-30 dup item 1：not already unique / not 152 |
+| A5897 | 高 | 看见许多确认 会被写成已经不怕被覆盖 interchangeable / 163 interchangeable | 官方 BIP-30 dup item 1：not already same-outputs / not 163 |
+| A5898 | 高 | 看见同一标识 会被写成已经交差 interchangeable | 官方 BIP-30 dup item 1：not already settled |
+| A5899 | 中 | 怎样造重复 coinbase 会被抄进不确定 | 不抄。不写怎样造重复 coinbase。不另写 19 节 |
 | A5890 | 记录 | 会与 273 / 260 / 258 / 1223 / 1224 糊成「看见第一次付款就已经不必再发通知 interchangeable、就已经可以免通知 interchangeable、就已经是本页 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-47 first-pay not already skip-notify / not already recovered / not already settled 正式三事（273 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。273 payment code vs notification bundled unbundling 完成（1225 item 3） |
 | A5891 | 高 | 看见第一次付款 会被写成已经不必再发通知 interchangeable / 260 interchangeable | 官方 BIP-47 paycode item 3：not already skip-notify / not 260 |
 | A5892 | 高 | 看见已经收过 会被写成已经可以免通知 interchangeable / 258 interchangeable | 官方 BIP-47 paycode item 3：not already recovered / not 258 |

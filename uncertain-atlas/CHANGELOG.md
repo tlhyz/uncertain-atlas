@@ -1,3 +1,15 @@
+## 2026-09-18（续 1345）
+
+- 不变量 1228；语料 C1206；模式 name-the-dup30-notspent-bar；反模式 dup30-notspent-sold-as-bundled；L10.3 第 1197 条。填 L3.1 BIP-30 spent-reappear not already illegal / not already revived / not already settled 正式三事（257 余量）。257 duplicate txid vs unique bundled unbundling 完成（1228 item 3）。
+
+## 2026-09-18（续 1344）
+
+- 不变量 1227；语料 C1205；模式 name-the-dup30-notlive-bar；反模式 dup30-notlive-sold-as-bundled；L10.3 第 1196 条。填 L3.1 BIP-30 unspent-collide not already legal / not already all-coinbase-unique / not already settled 正式三事（257 余量）。257 duplicate txid vs unique bundled unbundling 续（1227 item 2）。
+
+## 2026-09-18（续 1343）
+
+- 不变量 1226；语料 C1204；模式 name-the-dup30-notuniq-bar；反模式 dup30-notuniq-sold-as-bundled；L10.3 第 1195 条。填 L3.1 BIP-30 same-txid not already unique / not already same-outputs / not already settled 正式三事（257 余量）。257 duplicate txid vs unique bundled unbundling 启动（1226 item 1）。
+
 ## 2026-09-18（续 1342）
 
 - 不变量 1225；语料 C1203；模式 name-the-pc47-notagain-bar；反模式 pc47-notagain-sold-as-bundled；L10.3 第 1194 条。填 L0.7 / L1.4 / L3.6 BIP-47 first-pay not already skip-notify / not already recovered / not already settled 正式三事（273 余量）。273 payment code vs notification bundled unbundling 完成（1225 item 3）。

@@ -131,7 +131,7 @@
 
 精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。coinbase 第一项写了高度不是头上已经有高度字段。块 version 加大不是已经按 BIP-9 位向量激活。写了高度不是已经能花。
 
-精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。
+精读：[`../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md`](../../tracks/consensus/worked-example-duplicate-txid-vs-unique.md)（不变量 257）。 BIP-30 same-txid not already unique / not already same-outputs / not already settled 正式三事（257 余量）：[`../../tracks/consensus/worked-example-dup30-notuniq-vs-bundled.md`](../../tracks/consensus/worked-example-dup30-notuniq-vs-bundled.md)（不变量 1226）。 BIP-30 unspent-collide not already legal / not already all-coinbase-unique / not already settled 正式三事（257 余量）：[`../../tracks/consensus/worked-example-dup30-notlive-vs-bundled.md`](../../tracks/consensus/worked-example-dup30-notlive-vs-bundled.md)（不变量 1227）。 BIP-30 spent-reappear not already illegal / not already revived / not already settled 正式三事（257 余量）：[`../../tracks/consensus/worked-example-dup30-notspent-vs-bundled.md`](../../tracks/consensus/worked-example-dup30-notspent-vs-bundled.md)（不变量 1228）。看见同一交易标识不是已经唯一，也不是已经同一组可花输出。看见许多确认不是已经不怕被覆盖。看见已经花光后再出现不是已经非法。
 
 精读：[`../../tracks/implementation/worked-example-address-vs-utxo.md`](../../tracks/implementation/worked-example-address-vs-utxo.md)（不变量 174）。看见 Bech32 地址串不是链上已经有这笔输出。校验过不是见证程序已经在链上。编出版本和程序不是已经付过款。BIP-173 不是 BIP-350，也不是 BIP-141，也不是 BIP-13。
 

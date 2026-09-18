@@ -1,3 +1,6 @@
+- [`dup30-notspent-sold-as-bundled.md`](dup30-notspent-sold-as-bundled.md) — 花光后再出现 被写成已经非法 / 已经加回旧输出 / 历史上例外已经没了（不变量 1228）
+- [`dup30-notlive-sold-as-bundled.md`](dup30-notlive-sold-as-bundled.md) — 还没花光再装 被写成已经合法 / 已经保证所有 coinbase 唯一 / 已经交差（不变量 1227）
+- [`dup30-notuniq-sold-as-bundled.md`](dup30-notuniq-sold-as-bundled.md) — 同一交易标识 被写成已经唯一 / 已经不怕被覆盖 / 已经交差（不变量 1226）
 - [`pc47-notagain-sold-as-bundled.md`](pc47-notagain-sold-as-bundled.md) — 第一次付款 被写成已经不必再通知 / 已经可以免通知 / 已经是本页（不变量 1225）
 - [`pc47-notnote-sold-as-bundled.md`](pc47-notnote-sold-as-bundled.md) — 通知输出 被写成已经是付款 / 已经付到存款地址 / 已经能花（不变量 1224）
 - [`pc47-notdep-sold-as-bundled.md`](pc47-notdep-sold-as-bundled.md) — 付款码 被写成已经是存款地址 / 已经付过 / 已经交差（不变量 1223）
