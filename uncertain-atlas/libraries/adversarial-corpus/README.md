@@ -1,3 +1,9 @@
+| C1110 | 1132 | cos45 notdone≠1117/271 | 文案把前面的联合签名人分支没有交易 写成已经扫完 interchangeable 或已经和 1117 interchangeable / 1132 cos45-notdone interchangeable；或把看见余额为零 写成已经没有这一支 interchangeable；或把看见每个联合签名人只在自己的分支上长地址 写成已经交差 interchangeable，或已经和 271 cosigner-vs-discovered bundled / cos45-notdone-sold-as-bundled interchangeable / 1130 cos45-notmaster interchangeable / 1131 cos45-notsign interchangeable |
+
+| C1109 | 1131 | cos45 notsign≠270/271 | 文案把能独立长地址 / 不必通信就能长地址 写成已经能独立花 interchangeable 或已经和 270 interchangeable / 1131 cos45-notsign interchangeable；或把看见同一条路径 写成已经是同一个人的钥 interchangeable；或把看见造交易和签名要求各方通信 写成已经交差 interchangeable，或已经和 271 cosigner-vs-discovered bundled / cos45-notsign-sold-as-bundled interchangeable / 1130 cos45-notmaster interchangeable / 1132 cos45-notdone interchangeable |
+
+| C1108 | 1130 | cos45 notmaster≠182/271 | 文案把共享主公钥 / 扩展公钥 写成已经是本页 interchangeable 或已经和 182 interchangeable / 1130 cos45-notmaster interchangeable；或把看见扩展公钥 写成已经共享了本页要的那一层 interchangeable；或把看见各方各自独立生成自己的主私钥 写成已经交差 interchangeable，或已经和 271 cosigner-vs-discovered bundled / cos45-notmaster-sold-as-bundled interchangeable / 1131 cos45-notsign interchangeable / 1132 cos45-notdone interchangeable |
+
 | C1107 | 1129 | msig48 notsort≠1124/269 | 文案把本页多签 / 多签路径 写成已经可以按随便的顺序拼多签 interchangeable 或已经和 1124 interchangeable / 1129 msig48-notsort interchangeable；或把看见多签层次 写成已经是 BIP44 那条路径 interchangeable；或把看见支持本页就自带确定性排序 写成已经交差 interchangeable，或已经和 269 script-type-vs-account bundled / msig48-notsort-sold-as-bundled interchangeable / 1127 msig48-notmove interchangeable / 1128 msig48-notacct interchangeable |
 
 | C1106 | 1128 | msig48 notacct≠1117/269 | 文案把脚本类型层 / 账户层 写成已经是同一层 interchangeable 或已经和 1117 interchangeable / 1128 msig48-notacct interchangeable；或把看见本页 写成已经把以后的脚本类型都写死 interchangeable；或把看见账户号 写成已经交差 interchangeable，或已经和 269 script-type-vs-account bundled / msig48-notacct-sold-as-bundled interchangeable / 1127 msig48-notmove interchangeable / 1129 msig48-notsort interchangeable |

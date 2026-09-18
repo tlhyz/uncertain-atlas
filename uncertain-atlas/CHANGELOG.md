@@ -1,3 +1,15 @@
+## 2026-09-18（续 1249）
+
+- 不变量 1132；语料 C1110；模式 name-the-cos45-notdone-bar；反模式 cos45-notdone-sold-as-bundled；L10.3 第 1101 条。填 L1.4 / L3.6 BIP-45 earlier-cosigner-branch not already discovery-done / not already first-branch-enough / not already settled 正式三事（271 余量）。271 cosigner vs discovered bundled unbundling 完成（1132 item 3）。
+
+## 2026-09-18（续 1248）
+
+- 不变量 1131；语料 C1109；模式 name-the-cos45-notsign-bar；反模式 cos45-notsign-sold-as-bundled；L10.3 第 1100 条。填 L1.4 / L3.6 BIP-45 independent-address not already independent-sign / not already same-person-key / not already settled 正式三事（271 余量）。271 cosigner vs discovered bundled unbundling 续（1131 item 2）。
+
+## 2026-09-18（续 1247）
+
+- 不变量 1130；语料 C1108；模式 name-the-cos45-notmaster-bar；反模式 cos45-notmaster-sold-as-bundled；L10.3 第 1099 条。填 L1.4 / L3.6 BIP-45 shared-master-xpub not already this-page / not already enough / not already settled 正式三事（271 余量）。271 cosigner vs discovered bundled unbundling 启动（1130 item 1）。
+
 ## 2026-09-18（续 1246）
 
 - 不变量 1129；语料 C1107；模式 name-the-msig48-notsort-bar；反模式 msig48-notsort-sold-as-bundled；L10.3 第 1098 条。填 L1.4 / L3.6 BIP-48 this-page-multisig not already unsorted / not already bip44-path / not already settled 正式三事（269 余量）。269 script-type vs account bundled unbundling 完成（1129 item 3）。

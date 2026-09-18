@@ -1,3 +1,6 @@
+- [`cos45-notdone-sold-as-bundled.md`](cos45-notdone-sold-as-bundled.md) — 前面分支没有交易 被写成已经扫完 / 已经没有这一支 / 已经交差（不变量 1132）
+- [`cos45-notsign-sold-as-bundled.md`](cos45-notsign-sold-as-bundled.md) — 能独立长地址 被写成已经能独立花 / 已经是同一个人的钥 / 已经交差（不变量 1131）
+- [`cos45-notmaster-sold-as-bundled.md`](cos45-notmaster-sold-as-bundled.md) — 共享主公钥 被写成已经是本页 / 已经共享了本页要的那一层 / 已经交差（不变量 1130）
 - [`msig48-notsort-sold-as-bundled.md`](msig48-notsort-sold-as-bundled.md) — 本页多签 被写成已经不排序 / 已经是 BIP44 路径 / 已经交差（不变量 1129）
 - [`msig48-notacct-sold-as-bundled.md`](msig48-notacct-sold-as-bundled.md) — 脚本类型层 被写成已经是账户层 / 已经写死以后脚本 / 已经交差（不变量 1128）
 - [`msig48-notmove-sold-as-bundled.md`](msig48-notmove-sold-as-bundled.md) — 现有多签习惯 被写成已经要搬家 / 已经可以换路径 / 已经交差（不变量 1127）

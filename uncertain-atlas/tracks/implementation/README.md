@@ -798,6 +798,9 @@
 - [`worked-example-msig48-notmove-vs-bundled.md`](worked-example-msig48-notmove-vs-bundled.md) — 现有多签习惯≠already must-migrate/path-rewritable/settled；≠269 bundled（不变量 1127）
 - [`worked-example-script-type-vs-account.md`](worked-example-script-type-vs-account.md) — 现有多签派生习惯 ≠ 已经要搬家；脚本类型层 ≠ 已经是账户层；本页多签 ≠ 已经不排序（不变量 269）
 - [`worked-example-sorted-vs-one-address.md`](worked-example-sorted-vs-one-address.md) — 同一套钥 ≠ 已经是同一条 P2SH 地址；只共享门限和主公钥 ≠ 已经够了；未压缩钥 ≠ 已经是本页（不变量 270）
+- [`worked-example-cos45-notdone-vs-bundled.md`](worked-example-cos45-notdone-vs-bundled.md) — 前面分支没有交易≠already discovery-done/first-branch-enough/settled；≠271 bundled（不变量 1132）
+- [`worked-example-cos45-notsign-vs-bundled.md`](worked-example-cos45-notsign-vs-bundled.md) — 能独立长地址≠already independent-sign/same-person-key/settled；≠271 bundled（不变量 1131）
+- [`worked-example-cos45-notmaster-vs-bundled.md`](worked-example-cos45-notmaster-vs-bundled.md) — 共享主公钥≠already this-page/enough/settled；≠271 bundled（不变量 1130）
 - [`worked-example-cosigner-vs-discovered.md`](worked-example-cosigner-vs-discovered.md) — 共享主公钥 ≠ 已经是本页；能独立长地址 ≠ 已经能独立签；前面分支没有交易 ≠ 已经发现完（不变量 271）
 - [`worked-example-derived-vs-output-key.md`](worked-example-derived-vs-output-key.md) — 派生钥 ≠ 已经是输出钥；不需要脚本路径 ≠ 已经不承诺；种子备份 ≠ 已经能找回单钥 P2TR（不变量 272）
 - [`worked-example-multi-vs-sortedmulti.md`](worked-example-multi-vs-sortedmulti.md) — multi ≠ 已经按字典序排；门限和钥数 ≠ 已经同一套上限；多把扩展钥 ≠ 已经各自编号（不变量 274）

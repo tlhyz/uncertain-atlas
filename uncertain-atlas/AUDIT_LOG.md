@@ -1,3 +1,18 @@
+| A5425 | 记录 | 会与 271 / 1117 / 1126 / 1130 / 1131 糊成「看见前面分支没有交易就已经扫完 interchangeable、就已经没有这一支 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-45 earlier-cosigner-branch not already discovery-done / not already first-branch-enough / not already settled 正式三事（271 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。271 cosigner vs discovered bundled unbundling 完成（1132 item 3） |
+| A5426 | 高 | 看见前面的联合签名人分支没有交易 会被写成已经扫完 interchangeable / 1117 interchangeable | 官方 BIP-45 多方多签 item 3：not already discovery-done / not 1117 |
+| A5427 | 高 | 看见余额为零 会被写成已经没有这一支 interchangeable / 1126 interchangeable | 官方 BIP-45 多方多签 item 3：not already first-branch-enough / not 1126 |
+| A5428 | 高 | 看见每个联合签名人只在自己的分支上长地址 会被写成已经交差 interchangeable | 官方 BIP-45 多方多签 item 3：not already settled |
+| A5429 | 中 | 怎样按用途公钥排下标或 BIP-11 / BIP-67 会被抄进不确定 | 不抄。不写怎样按用途公钥排下标。不另写 BIP-11 / BIP-67。不另写 19 节 |
+| A5420 | 记录 | 会与 271 / 270 / 1129 / 1130 / 1132 糊成「看见能独立长地址就已经能独立花 interchangeable、就已经是同一个人的钥 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-45 independent-address not already independent-sign / not already same-person-key / not already settled 正式三事（271 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。271 cosigner vs discovered bundled unbundling 续（1131 item 2） |
+| A5421 | 高 | 看见能独立长地址 会被写成已经能独立花 interchangeable / 270 interchangeable | 官方 BIP-45 多方多签 item 2：not already independent-sign / not 270 |
+| A5422 | 高 | 看见同一条路径 会被写成已经是同一个人的钥 interchangeable / 1129 interchangeable | 官方 BIP-45 多方多签 item 2：not already same-person-key / not 1129 |
+| A5423 | 高 | 看见造交易和签名要求各方通信 会被写成已经交差 interchangeable | 官方 BIP-45 多方多签 item 2：not already settled |
+| A5424 | 中 | 怎样按用途公钥排下标或 BIP-11 / BIP-67 会被抄进不确定 | 不抄。不写怎样按用途公钥排下标。不另写 BIP-11 / BIP-67。不另写 19 节 |
+| A5415 | 记录 | 会与 271 / 182 / 1118 / 1131 / 1132 糊成「看见共享主公钥就已经是本页 interchangeable、就已经共享了本页要的那一层 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-45 shared-master-xpub not already this-page / not already enough / not already settled 正式三事（271 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。271 cosigner vs discovered bundled unbundling 启动（1130 item 1） |
+| A5416 | 高 | 看见共享主公钥 会被写成已经是本页 interchangeable / 182 interchangeable | 官方 BIP-45 多方多签 item 1：not already this-page / not 182 |
+| A5417 | 高 | 看见扩展公钥 会被写成已经共享了本页要的那一层 interchangeable / 1118 interchangeable | 官方 BIP-45 多方多签 item 1：not already enough / not 1118 |
+| A5418 | 高 | 看见各方各自独立生成自己的主私钥 会被写成已经交差 interchangeable | 官方 BIP-45 多方多签 item 1：not already settled |
+| A5419 | 中 | 怎样按用途公钥排下标或 BIP-11 / BIP-67 会被抄进不确定 | 不抄。不写怎样按用途公钥排下标。不另写 BIP-11 / BIP-67。不另写 19 节 |
 | A5410 | 记录 | 会与 269 / 1124 / 1125 / 1127 / 1128 糊成「看见本页多签就已经可以按随便的顺序拼多签 interchangeable、就已经是 BIP44 那条路径 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-48 this-page-multisig not already unsorted / not already bip44-path / not already settled 正式三事（269 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。269 script-type vs account bundled unbundling 完成（1129 item 3） |
 | A5411 | 高 | 看见本页多签 会被写成已经可以按随便的顺序拼多签 interchangeable / 1124 interchangeable | 官方 BIP-48 多签层次 item 3：not already unsorted / not 1124 |
 | A5412 | 高 | 看见多签层次 会被写成已经是 BIP44 那条路径 interchangeable / 1125 interchangeable | 官方 BIP-48 多签层次 item 3：not already bip44-path / not 1125 |

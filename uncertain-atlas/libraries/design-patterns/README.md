@@ -1,3 +1,6 @@
+- [`name-the-cos45-notdone-bar.md`](name-the-cos45-notdone-bar.md) — BIP-45 earlier-cosigner-branch not already discovery-done / not already first-branch-enough / not already settled 正式三事（271 余量）（不变量 1132）
+- [`name-the-cos45-notsign-bar.md`](name-the-cos45-notsign-bar.md) — BIP-45 independent-address not already independent-sign / not already same-person-key / not already settled 正式三事（271 余量）（不变量 1131）
+- [`name-the-cos45-notmaster-bar.md`](name-the-cos45-notmaster-bar.md) — BIP-45 shared-master-xpub not already this-page / not already enough / not already settled 正式三事（271 余量）（不变量 1130）
 - [`name-the-msig48-notsort-bar.md`](name-the-msig48-notsort-bar.md) — BIP-48 this-page-multisig not already unsorted / not already bip44-path / not already settled 正式三事（269 余量）（不变量 1129）
 - [`name-the-msig48-notacct-bar.md`](name-the-msig48-notacct-bar.md) — BIP-48 script-type-layer not already account-layer / not already all-future-scripts-fixed / not already settled 正式三事（269 余量）（不变量 1128）
 - [`name-the-msig48-notmove-bar.md`](name-the-msig48-notmove-bar.md) — BIP-48 existing-multisig-habit not already must-migrate / not already path-rewritable / not already settled 正式三事（269 余量）（不变量 1127）
