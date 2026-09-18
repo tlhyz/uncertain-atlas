@@ -1,3 +1,4 @@
+- [`name-the-querystate-notsnapshot-bar.md`](name-the-querystate-notsnapshot-bar.md) — 启动对齐不是已经是快照重放 not already snapshot loaded / not already genesis replay / not already Snapshot connection 正式三事（314 余量）（不变量 703）
 - [`name-the-querystate-notcaughtup-bar.md`](name-the-querystate-notcaughtup-bar.md) — 上次 Commit 不是已经跟上正在跑的块 not already caught up / not already CheckTxState / not already synced 正式三事（314 余量）（不变量 702）
 - [`name-the-querystate-notexecute-bar.md`](name-the-querystate-notexecute-bar.md) — Query 连接不是已经是 ExecuteTxState not already ExecuteTxState / not already writable / not already same as execute 正式三事（314 余量）（不变量 701）
 - [`name-the-indexer-notnoidempotent-bar.md`](name-the-indexer-notnoidempotent-bar.md) — 通常不受欢迎不是已经没有幂等例外 not already no exceptions / not already mempool-guaranteed / not already prescribed 正式三事（313 余量）（不变量 700）

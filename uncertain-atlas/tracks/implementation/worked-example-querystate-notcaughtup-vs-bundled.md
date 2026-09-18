@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看上次 Commit 不是已经跟上正在跑的块 not already caught up / not already CheckTxState / not already synced 正式三事（314 余量），必须分开上次 Commit 是不是 already caught up interchangeable / 314 querystate bundled interchangeable / querystate-sold-as-execute interchangeable、能读 是不是 already CheckTxState interchangeable、只读 是不是 already synced interchangeable。可以跳过「看见上次 Commit 就已经跟上 interchangeable / 就已经是 CheckTxState interchangeable / 就已经同步 interchangeable」。不要另写怎样实现 QueryState。314 querystate vs execute bundled unbundling 在本页 item 2 完成；续 [`worked-example-querystate-notsnapshot-vs-bundled.md`](worked-example-querystate-notsnapshot-vs-bundled.md)（不变量 703 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看上次 Commit 不是已经跟上正在跑的块 not already caught up / not already CheckTxState / not already synced 正式三事（314 余量），必须分开上次 Commit 是不是 already caught up interchangeable / 314 querystate bundled interchangeable / querystate-sold-as-execute interchangeable、能读 是不是 already CheckTxState interchangeable、只读 是不是 already synced interchangeable。可以跳过「看见上次 Commit 就已经跟上 interchangeable / 就已经是 CheckTxState interchangeable / 就已经同步 interchangeable」。不要另写怎样实现 QueryState。314 querystate vs execute bundled unbundling 在本页 item 2 完成；续 [`worked-example-querystate-notsnapshot-vs-bundled.md`](worked-example-querystate-notsnapshot-vs-bundled.md)（不变量 703 item 3）；314 querystate vs execute bundled unbundling 完成（701 + 702 + 703）。
 
 ## 本页不抄
 
