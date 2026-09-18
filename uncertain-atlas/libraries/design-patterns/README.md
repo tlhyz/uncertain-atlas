@@ -1,3 +1,6 @@
+- [`name-the-vwcall-notbefore-bar.md`](name-the-vwcall-notbefore-bar.md) — VerifyCall before-status not already Verify-When / not already status-column / not already ACCEPT-keep 正式三事（515 余量）（不变量 1330）
+- [`name-the-vwcall-notrecv-bar.md`](name-the-vwcall-notrecv-bar.md) — VerifyCall recv not already local-also-Verify / not already ExtendVote-When / not already late-MAY 正式三事（515 余量）（不变量 1329）
+- [`name-the-vwcall-notcall-bar.md`](name-the-vwcall-notcall-bar.md) — VerifyCall call not already Verify-When / not already verified / not already Accept 正式三事（515 余量）（不变量 1328）
 - [`name-the-vwdisc-notstep-bar.md`](name-the-vwdisc-notstep-bar.md) — VerifyDiscard before-call not already Verify-When / not already ACCEPT-REJECT / not already local-also-Verify 正式三事（514 余量）（不变量 1327）
 - [`name-the-vwdisc-notzero-bar.md`](name-the-vwdisc-notzero-bar.md) — VerifyDiscard zerolen not already still-calls-Verify / not already skip / not already 0-len-illegal 正式三事（514 余量）（不变量 1326）
 - [`name-the-vwdisc-notsig-bar.md`](name-the-vwdisc-notsig-bar.md) — VerifyDiscard discard not already Verify-When / not already skip-Verify / not already verified 正式三事（514 余量）（不变量 1325）

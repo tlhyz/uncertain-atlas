@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When call VerifyVoteExtension 正式三事，必须分开 calls VerifyVoteExtension 是不是 Verify When 正式流程 bundled interchangeable / 已经验过扩展 interchangeable、received from q≠p 是不是不对 local process 调用 bundled interchangeable / 已经本地票也 Verify interchangeable、step 2 before status return 是不是已经 Accept interchangeable / 已经写进 last_commit interchangeable。可以跳过「看见带有效签就会调 VerifyVoteExtension 就已经验过扩展 interchangeable、已经 Accept interchangeable」。不要另写怎样填 VerifyVoteExtensionRequest。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When call VerifyVoteExtension 正式三事，必须分开 calls VerifyVoteExtension 是不是 Verify When 正式流程 bundled interchangeable / 已经验过扩展 interchangeable、received from q≠p 是不是不对 local process 调用 bundled interchangeable / 已经本地票也 Verify interchangeable、step 2 before status return 是不是已经 Accept interchangeable / 已经写进 last_commit interchangeable。可以跳过「看见带有效签就会调 VerifyVoteExtension 就已经验过扩展 interchangeable、已经 Accept interchangeable」。515 VerifyVoteExtension When call bundled unbundling 完成（1328 item 1 / 1329 item 2 / 1330 item 3）；精读 [`worked-example-vwcall-notcall-vs-bundled.md`](worked-example-vwcall-notcall-vs-bundled.md)（不变量 1328 item 1）、[`worked-example-vwcall-notrecv-vs-bundled.md`](worked-example-vwcall-notrecv-vs-bundled.md)（不变量 1329 item 2）、[`worked-example-vwcall-notbefore-vs-bundled.md`](worked-example-vwcall-notbefore-vs-bundled.md)（不变量 1330 item 3）。不要另写怎样填 VerifyVoteExtensionRequest。
 
 ## 本页不抄
 

@@ -1,3 +1,6 @@
+- [`vwcall-notbefore-sold-as-bundled.md`](vwcall-notbefore-sold-as-bundled.md) — step 2 在回 status 前 被写成已经是 Verify When bundled / 就已经写进 last_commit / 就已经是回包栏（不变量 1330）
+- [`vwcall-notrecv-sold-as-bundled.md`](vwcall-notrecv-sold-as-bundled.md) — 收到他人 Precommit 被写成已经本地票也 Verify / 就已经是 ExtendVote When / 就已经迟到 MAY（不变量 1329）
+- [`vwcall-notcall-sold-as-bundled.md`](vwcall-notcall-sold-as-bundled.md) — Else 调 Verify 被写成已经是 Verify When bundled / 就已经验过 / 就已经 Accept（不变量 1328）
 - [`vwdisc-notstep-sold-as-bundled.md`](vwdisc-notstep-sold-as-bundled.md) — step 1 在 call 之前 被写成已经是 Verify When bundled / 就已经验过 / 就已经写进 last_commit（不变量 1327）
 - [`vwdisc-notzero-sold-as-bundled.md`](vwdisc-notzero-sold-as-bundled.md) — 0 长+有效签 被写成已经空扩展仍叫 Verify / 就已经跳过 Verify / 就已经 0 长不合法（不变量 1326）
 - [`vwdisc-notsig-sold-as-bundled.md`](vwdisc-notsig-sold-as-bundled.md) — 无有效签丢掉 被写成已经是 Verify When bundled / 就已经跳过 Verify / 就已经验过扩展（不变量 1325）
