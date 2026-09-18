@@ -1,3 +1,6 @@
+- [`name-the-eip8-nothand-bar.md`](name-the-eip8-nothand-bar.md) — EIP-8 handshake not already old-retired / not already homestead-consensus / not already new-proto 正式三事（235 余量）（不变量 1285）
+- [`name-the-eip8-notdisc-bar.md`](name-the-eip8-notdisc-bar.md) — EIP-8 disc not already upgraded / not already new-proto / not already unknown-accepted 正式三事（235 余量）（不变量 1284）
+- [`name-the-eip8-nothello-bar.md`](name-the-eip8-nothello-bar.md) — EIP-8 hello not already new-proto / not already negotiated / not already extra-enabled 正式三事（235 余量）（不变量 1283）
 - [`name-the-bf158-notcomm-bar.md`](name-the-bf158-notcomm-bar.md) — BIP-158 exclude-opreturn not already consensus / not already other-type / not already header-chain 正式三事（244 余量）（不变量 1282）
 - [`name-the-bf158-notrel-bar.md`](name-the-bf158-notrel-bar.md) — BIP-158 match not already in-set / not already relevant / not already no-false-positive 正式三事（244 余量）（不变量 1281）
 - [`name-the-bf158-nottx-bar.md`](name-the-bf158-nottx-bar.md) — BIP-158 scripts not already have-tx / not already have-opreturn / not already spent 正式三事（244 余量）（不变量 1280）

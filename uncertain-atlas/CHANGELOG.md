@@ -1,3 +1,15 @@
+## 2026-09-18（续 1402）
+
+- 不变量 1285；语料 C1263；模式 name-the-eip8-nothand-bar；反模式 eip8-nothand-sold-as-bundled；L10.3 第 1254 条。填 L9.1 EIP-8 handshake not already old-retired / not already homestead-consensus / not already new-proto 正式三事（235 余量）。235 eip8 vs already new bundled unbundling 完成（1285 item 3）。
+
+## 2026-09-18（续 1401）
+
+- 不变量 1284；语料 C1262；模式 name-the-eip8-notdisc-bar；反模式 eip8-notdisc-sold-as-bundled；L10.3 第 1253 条。填 L9.1 EIP-8 disc not already upgraded / not already new-proto / not already unknown-accepted 正式三事（235 余量）。235 eip8 vs already new bundled unbundling 续（1284 item 2）。
+
+## 2026-09-18（续 1400）
+
+- 不变量 1283；语料 C1261；模式 name-the-eip8-nothello-bar；反模式 eip8-nothello-sold-as-bundled；L10.3 第 1252 条。填 L9.1 EIP-8 hello not already new-proto / not already negotiated / not already extra-enabled 正式三事（235 余量）。235 eip8 vs already new bundled unbundling 启动（1283 item 1）。
+
 ## 2026-09-18（续 1399）
 
 - 不变量 1282；语料 C1260；模式 name-the-bf158-notcomm-bar；反模式 bf158-notcomm-sold-as-bundled；L10.3 第 1251 条。填 L3.5 / L9.6 BIP-158 exclude-opreturn not already consensus / not already other-type / not already header-chain 正式三事（244 余量）。244 basic filter vs relevant bundled unbundling 完成（1282 item 3）。

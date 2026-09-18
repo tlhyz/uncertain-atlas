@@ -44,7 +44,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见能吞多余字段就已经在说新协议 / 就已经改了共识 / 就已经退役旧握手」。线协议版本、发现包、传输握手是三个旋钮。版本号对不上仍连着，是官方留下的旧假定，不是能力协商已经齐。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见能吞多余字段就已经在说新协议 / 就已经改了共识 / 就已经退役旧握手」。线协议版本、发现包、传输握手是三个旋钮。版本号对不上仍连着，是官方留下的旧假定，不是能力协商已经齐。235 eip8 vs already new bundled unbundling 完成（1283 item 1 / 1284 item 2 / 1285 item 3）；精读 [`worked-example-eip8-nothello-vs-bundled.md`](worked-example-eip8-nothello-vs-bundled.md)（不变量 1283 item 1）、[`worked-example-eip8-notdisc-vs-bundled.md`](worked-example-eip8-notdisc-vs-bundled.md)（不变量 1284 item 2）、[`worked-example-eip8-nothand-vs-bundled.md`](worked-example-eip8-nothand-vs-bundled.md)（不变量 1285 item 3）。
 
 ## 本页不抄
 

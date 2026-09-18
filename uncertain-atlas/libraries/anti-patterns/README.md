@@ -1,3 +1,6 @@
+- [`eip8-nothand-sold-as-bundled.md`](eip8-nothand-sold-as-bundled.md) — 能收新握手编码 被写成旧握手已经退役 / 已经改了共识 / 旧格式已经退役（不变量 1285）
+- [`eip8-notdisc-sold-as-bundled.md`](eip8-notdisc-sold-as-bundled.md) — 发现能吞多余字段 被写成发现已经升级 / 已经在说新协议 / 已经升级发现（不变量 1284）
+- [`eip8-nothello-sold-as-bundled.md`](eip8-nothello-sold-as-bundled.md) — 忽略 hello 版本 被写成已经在说新协议 / 已经谈成新线 / 新功能已经启用（不变量 1283）
 - [`bf158-notcomm-sold-as-bundled.md`](bf158-notcomm-sold-as-bundled.md) — 排除了 OP_RETURN 被写成已经有共识承诺 / 服务位就已经答别的类型 / 就已经写了 157 头链（不变量 1282）
 - [`bf158-notrel-sold-as-bundled.md`](bf158-notrel-sold-as-bundled.md) — 对上 被写成已经在集合里 / 已经相关 / 假阳性已经消失（不变量 1281）
 - [`bf158-nottx-sold-as-bundled.md`](bf158-nottx-sold-as-bundled.md) — 装了花费脚本和收款脚本 被写成已经有那笔交易 / 已经有附言 / 已经花掉（不变量 1280）

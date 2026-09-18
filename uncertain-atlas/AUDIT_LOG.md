@@ -1,3 +1,18 @@
+| A6190 | 记录 | 会与 235 / 234 / 242 / 1283 / 1284 糊成「看见能收新握手编码就旧握手已经退役 interchangeable、就已经改了共识 interchangeable、就旧格式已经退役 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-8 handshake not already old-retired / not already homestead-consensus / not already new-proto 正式三事（235 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4。235 eip8 vs already new bundled unbundling 完成（1285 item 3） |
+| A6191 | 高 | 看见能收新握手编码 会被写成旧握手已经退役 interchangeable / 234 interchangeable | 官方 EIP-8 eip8 item 3：not already 旧握手已经退役 / not 234 |
+| A6192 | 高 | 看见仍收旧握手 会被写成已经改了共识 interchangeable / 242 interchangeable | 官方 EIP-8 eip8 item 3：not already 已经改了共识 / not 242 |
+| A6193 | 高 | 看见能收新握手编码 会被写成旧格式已经退役 interchangeable | 官方 EIP-8 eip8 item 3：not already settled |
+| A6194 | 中 | 怎样同时认旧握手和新握手、怎样垫垃圾、怎样按头两个字节过滤连接会被抄进不确定 | 不抄。不写 怎样同时认旧握手和新握手、怎样垫垃圾、怎样按头两个字节过滤连接。不另写 19 节 |
+| A6185 | 记录 | 会与 235 / 241 / 234 / 1283 / 1285 糊成「看见发现能吞多余字段就发现已经升级 interchangeable、就已经在说新协议 interchangeable、就已经升级发现 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-8 disc not already upgraded / not already new-proto / not already unknown-accepted 正式三事（235 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4。235 eip8 vs already new bundled unbundling 续（1284 item 2） |
+| A6186 | 高 | 看见发现能吞多余字段 会被写成发现已经升级 interchangeable / 241 interchangeable | 官方 EIP-8 eip8 item 2：not already 发现已经升级 / not 241 |
+| A6187 | 高 | 看见不认识的发现包类型被丢掉 会被写成已经在说新协议 interchangeable / 234 interchangeable | 官方 EIP-8 eip8 item 2：not already 已经在说新协议 / not 234 |
+| A6188 | 高 | 看见发现能吞多余字段 会被写成已经升级发现 interchangeable | 官方 EIP-8 eip8 item 2：not already settled |
+| A6189 | 中 | 怎样同时认旧握手和新握手、怎样垫垃圾、怎样按头两个字节过滤连接会被抄进不确定 | 不抄。不写 怎样同时认旧握手和新握手、怎样垫垃圾、怎样按头两个字节过滤连接。不另写 19 节 |
+| A6180 | 记录 | 会与 235 / 234 / 207 / 1284 / 1285 糊成「看见忽略 hello 版本就已经在说新协议 interchangeable、就已经谈成新线协议 interchangeable、就新功能已经启用 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-8 hello not already new-proto / not already negotiated / not already extra-enabled 正式三事（235 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4。235 eip8 vs already new bundled unbundling 启动（1283 item 1） |
+| A6181 | 高 | 看见忽略 hello 版本 会被写成已经在说新协议 interchangeable / 234 interchangeable | 官方 EIP-8 eip8 item 1：not already 已经在说新协议 / not 234 |
+| A6182 | 高 | 看见能吞多余字段 会被写成已经谈成新线协议 interchangeable / 207 interchangeable | 官方 EIP-8 eip8 item 1：not already 已经谈成新线协议 / not 207 |
+| A6183 | 高 | 看见忽略 hello 版本 会被写成新功能已经启用 interchangeable | 官方 EIP-8 eip8 item 1：not already settled |
+| A6184 | 中 | 怎样同时认旧握手和新握手、怎样垫垃圾、怎样按头两个字节过滤连接会被抄进不确定 | 不抄。不写 怎样同时认旧握手和新握手、怎样垫垃圾、怎样按头两个字节过滤连接。不另写 19 节 |
 | A6175 | 记录 | 会与 244 / 243 / 22 / 1280 / 1281 糊成「看见排除了 OP_RETURN就已经有共识承诺 interchangeable、就已经在答别的过滤器类型 interchangeable、就已经写了 157 那套头链 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.6 BIP-158 exclude-opreturn not already consensus / not already other-type / not already header-chain 正式三事（244 余量）/ 轻客户端表 / 停链面地图。不写进 `index/03` 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。244 basic filter vs relevant bundled unbundling 完成（1282 item 3） |
 | A6176 | 高 | 看见排除了 OP_RETURN 会被写成已经有共识承诺 interchangeable / 243 interchangeable | 官方 BIP-158 basic item 3：not already 已经有共识承诺 / not 243 |
 | A6177 | 高 | 看见服务位 会被写成已经在答别的过滤器类型 interchangeable / 22 interchangeable | 官方 BIP-158 basic item 3：not already 已经在答别的过滤器类型 / not 22 |
