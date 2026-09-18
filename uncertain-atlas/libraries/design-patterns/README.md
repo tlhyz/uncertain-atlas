@@ -1,3 +1,4 @@
+- [`name-the-crashsteps-notapptaller-bar.md`](name-the-crashsteps-notapptaller-bar.md) — app taller than engine not already allowed / not already can wake separately / not half-write atomic 正式三事（320 余量）（不变量 686）
 - [`name-the-finpersist-notrememberheight-bar.md`](name-the-finpersist-notrememberheight-bar.md) — remember last Commit height not already app taller than engine / not already can skip replay / not Info handshake aligned 正式三事（335 余量）（不变量 685）
 - [`name-the-finpersist-notmustincommit-bar.md`](name-the-finpersist-notmustincommit-bar.md) — MUST persist in Commit not already persisted in Finalize / not already unlocked / not Commit green can wait for broadcast 正式三事（335 余量）（不变量 684）
 - [`name-the-finpersist-notmustnot-bar.md`](name-the-finpersist-notmustnot-bar.md) — FinalizeBlock changed state MUST NOT persist not already persisted / not already settled / not crash recovery block in store already Commit 正式三事（335 余量）（不变量 683）

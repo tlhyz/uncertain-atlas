@@ -1,3 +1,7 @@
+## 2026-09-18（续 803）
+
+- 不变量 686；语料 C663；模式 name-the-crashsteps-notapptaller-bar；反模式 crashsteps-notapptaller-sold-as-bundled；L10.3 第 655 条。填 L4.4 / CometBFT 档案 app taller than engine not already allowed / not already can wake separately / not half-write atomic 正式三事（320 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。320 crash recovery bundled unbundling 启动（686 item 1）。
+
 ## 2026-09-17（续 802）
 
 - 不变量 685；语料 C662；模式 name-the-finpersist-notrememberheight-bar；反模式 finpersist-notrememberheight-sold-as-bundled；L10.3 第 654 条。填 L4.4 / CometBFT 档案 remember last Commit height not already app taller than engine / not already can skip replay / not Info handshake aligned 正式三事（335 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。335 finpersist vs commit bundled unbundling 完成（683 + 684 + 685）。
