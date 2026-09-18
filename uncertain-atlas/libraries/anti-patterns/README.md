@@ -1,3 +1,6 @@
+- [`addr155-notnet-sold-as-bundled.md`](addr155-notnet-sold-as-bundled.md) — 传了某种网 被写成已经连上那种网 / 换编号已经是另一个人 / 旧洋葱已经能当隐藏服务（不变量 1234）
+- [`addr155-notpref-sold-as-bundled.md`](addr155-notpref-sold-as-bundled.md) — sendaddrv2 被写成已经只收后继格式 / 旧线已经退役 / 未请求偏好已经谈妥（不变量 1233）
+- [`addr155-notreach-sold-as-bundled.md`](addr155-notreach-sold-as-bundled.md) — 后继地址流言 被写成已经连得上 / 已经可达 / 旧格式已经退役（不变量 1232）
 - [`dum147-notpol-sold-as-bundled.md`](dum147-notpol-sold-as-bundled.md) — 转发策略 被写成已经是共识 / 已经是本页这一条 / 已经没有功能损失（不变量 1231）
 - [`dum147-notwit-sold-as-bundled.md`](dum147-notwit-sold-as-bundled.md) — 隔离见证 被写成已经没有 dummy 延展 / wtxid 已经没变 / 已经交差（不变量 1230）
 - [`dum147-notany-sold-as-bundled.md`](dum147-notany-sold-as-bundled.md) — 多余栈元素 被写成已经随便填 / 已经看过 dummy / 已经合法（不变量 1229）

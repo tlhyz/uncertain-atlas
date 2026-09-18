@@ -25,7 +25,7 @@
 
 精读：[`../../tracks/mempool/worked-example-feefilter-vs-rejected.md`](../../tracks/mempool/worked-example-feefilter-vs-rejected.md)（不变量 245）。看见跳过库存通告不是已经拒进池。看见发了费率过滤器不是对等节点已经照做。看见布隆过了不是已经过了费率门。
 
-精读：[`../../tracks/network/worked-example-addrv2-vs-reachable.md`](../../tracks/network/worked-example-addrv2-vs-reachable.md)（不变量 246）。看见后继地址流言不是已经连得上。看见发了 sendaddrv2 不是已经只收后继格式。看见在传某种网上的地址不是已经连上那种网。
+精读：[`../../tracks/network/worked-example-addrv2-vs-reachable.md`](../../tracks/network/worked-example-addrv2-vs-reachable.md) BIP-155 addrv2-gossip not already connected / not already reachable / not already old-retired 正式三事（246 余量）：[`../../tracks/network/worked-example-addr155-notreach-vs-bundled.md`](../../tracks/network/worked-example-addr155-notreach-vs-bundled.md)（不变量 1232）。 BIP-155 sendaddrv2 not already only-v2 / not already old-retired / not already unsolicited-pref 正式三事（246 余量）：[`../../tracks/network/worked-example-addr155-notpref-vs-bundled.md`](../../tracks/network/worked-example-addr155-notpref-vs-bundled.md)（不变量 1233）。 BIP-155 gossip-net not already connected-to-net / not already two-peers / not already hidden-service 正式三事（246 余量）：[`../../tracks/network/worked-example-addr155-notnet-vs-bundled.md`](../../tracks/network/worked-example-addr155-notnet-vs-bundled.md)（不变量 1234）。（不变量 246）。看见后继地址流言不是已经连得上。看见发了 sendaddrv2 不是已经只收后继格式。看见在传某种网上的地址不是已经连上那种网。
 
 精读：[`../../tracks/network/worked-example-sendheaders-vs-have.md`](../../tracks/network/worked-example-sendheaders-vs-have.md)（不变量 247）。看见发了 sendheaders 不是已经改用头通告。看见用头通告新尖不是已经有块。看见重组时先发头不是中间块已经在手里。
 

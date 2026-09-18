@@ -1,3 +1,6 @@
+- [`name-the-addr155-notnet-bar.md`](name-the-addr155-notnet-bar.md) — BIP-155 gossip-net not already connected-to-net / not already two-peers / not already hidden-service 正式三事（246 余量）（不变量 1234）
+- [`name-the-addr155-notpref-bar.md`](name-the-addr155-notpref-bar.md) — BIP-155 sendaddrv2 not already only-v2 / not already old-retired / not already unsolicited-pref 正式三事（246 余量）（不变量 1233）
+- [`name-the-addr155-notreach-bar.md`](name-the-addr155-notreach-bar.md) — BIP-155 addrv2-gossip not already connected / not already reachable / not already old-retired 正式三事（246 余量）（不变量 1232）
 - [`name-the-dum147-notpol-bar.md`](name-the-dum147-notpol-bar.md) — BIP-147 policy not already consensus / not already bip62 / not already settled 正式三事（264 余量）（不变量 1231）
 - [`name-the-dum147-notwit-bar.md`](name-the-dum147-notwit-bar.md) — BIP-147 segwit not already no-dummy-malleation / not already wtxid-fixed / not already settled 正式三事（264 余量）（不变量 1230）
 - [`name-the-dum147-notany-bar.md`](name-the-dum147-notany-bar.md) — BIP-147 dummy not already arbitrary / not already legal / not already settled 正式三事（264 余量）（不变量 1229）

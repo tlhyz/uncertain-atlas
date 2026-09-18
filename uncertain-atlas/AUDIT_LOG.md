@@ -1,3 +1,18 @@
+| A5935 | 记录 | 会与 246 / 242 / 241 / 1232 / 1233 糊成「看见在传某种网上的地址就已经连上那种网 interchangeable、就已经是另一个人 interchangeable、就已经能当隐藏服务用 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-155 gossip-net not already connected-to-net / not already two-peers / not already hidden-service 正式三事（246 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。246 addrv2 vs reachable bundled unbundling 完成（1234 item 3） |
+| A5936 | 高 | 看见在传某种网上的地址 会被写成已经连上那种网 interchangeable / 242 interchangeable | 官方 BIP-155 addrv2 item 3：not already connected-to-net / not 242 |
+| A5937 | 高 | 看见同一份地址换了编号 会被写成已经是另一个人 interchangeable / 241 interchangeable | 官方 BIP-155 addrv2 item 3：not already not already two-peers / not 241 |
+| A5938 | 高 | 看见旧洋葱类型编号 会被写成已经能当隐藏服务用 interchangeable | 官方 BIP-155 addrv2 item 3：not already settled |
+| A5939 | 中 | 怎样按传了哪些网认出节点、怎样骗节点去传无效地址、怎样把同一份地址拆成两个身份会被抄进不确定 | 不抄。不写 怎样按传了哪些网认出节点、怎样骗节点去传无效地址、怎样把同一份地址拆成两个身份。不另写 19 节 |
+| A5930 | 记录 | 会与 246 / 241 / 240 / 1232 / 1234 糊成「看见发了 sendaddrv2 就已经只收后继格式 interchangeable、就已经退役旧线 interchangeable、就已经谈妥未请求偏好 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-155 sendaddrv2 not already only-v2 / not already old-retired / not already unsolicited-pref 正式三事（246 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。246 addrv2 vs reachable bundled unbundling 续（1233 item 2） |
+| A5931 | 高 | 看见发了 sendaddrv2 会被写成已经只收后继格式 interchangeable / 241 interchangeable | 官方 BIP-155 addrv2 item 2：not already only-v2 / not 241 |
+| A5932 | 高 | 看见偏好信号 会被写成旧地址消息已经退役 interchangeable / 240 interchangeable | 官方 BIP-155 addrv2 item 2：not already not already old-retired / not 240 |
+| A5933 | 高 | 看见发或不发 会被写成未请求地址偏好已经谈妥 interchangeable | 官方 BIP-155 addrv2 item 2：not already settled |
+| A5934 | 中 | 怎样按传了哪些网认出节点、怎样骗节点去传无效地址、怎样把同一份地址拆成两个身份会被抄进不确定 | 不抄。不写 怎样按传了哪些网认出节点、怎样骗节点去传无效地址、怎样把同一份地址拆成两个身份。不另写 19 节 |
+| A5925 | 记录 | 会与 246 / 242 / 112 / 1233 / 1234 糊成「看见后继地址流言就已经连得上 interchangeable、就已经可达 interchangeable、就已经退役旧地址格式 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-155 addrv2-gossip not already connected / not already reachable / not already old-retired 正式三事（246 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。246 addrv2 vs reachable bundled unbundling 启动（1232 item 1） |
+| A5926 | 高 | 看见后继地址流言 会被写成已经连得上 interchangeable / 242 interchangeable | 官方 BIP-155 addrv2 item 1：not already connected / not 242 |
+| A5927 | 高 | 看见更长容器 会被写成已经可达 interchangeable / 112 interchangeable | 官方 BIP-155 addrv2 item 1：not already not already reachable / not 112 |
+| A5928 | 高 | 看见后继地址消息 会被写成旧地址格式已经退役 interchangeable | 官方 BIP-155 addrv2 item 1：not already settled |
+| A5929 | 中 | 怎样按传了哪些网认出节点、怎样骗节点去传无效地址、怎样把同一份地址拆成两个身份会被抄进不确定 | 不抄。不写 怎样按传了哪些网认出节点、怎样骗节点去传无效地址、怎样把同一份地址拆成两个身份。不另写 19 节 |
 | A5920 | 记录 | 会与 264 / 171 / 144 / 1229 / 1230 糊成「看见转发已经拒就已经是共识 interchangeable、就已经是本页这一条 interchangeable、就已经没有功能损失 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.3 / L3.7 BIP-147 policy not already consensus / not already bip62 / not already settled 正式三事（264 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行 / L5.1 / M5.4 / L5.4。264 dummy vs empty bundled unbundling 完成（1231 item 3） |
 | A5921 | 高 | 看见转发已经拒 会被写成已经是共识 interchangeable / 171 interchangeable | 官方 BIP-147 dummy item 3：not already consensus / not 171 |
 | A5922 | 高 | 看见 BIP-62 菜谱 会被写成已经是本页这一条 interchangeable / 144 interchangeable | 官方 BIP-147 dummy item 3：not already bip62 / not 144 |

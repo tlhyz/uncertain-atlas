@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见后继地址流言就已经连得上 / 就已经可达 / 就已经退役旧地址格式」。若对照后继地址，必须分开容器、偏好信号、没连上也传。不要把传了某种网写成已经连上那种网。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见后继地址流言就已经连得上 / 就已经可达 / 就已经退役旧地址格式」。若对照后继地址，必须分开容器、偏好信号、没连上也传。不要把传了某种网写成已经连上那种网。246 addrv2 vs reachable bundled unbundling 完成（1232 item 1 / 1233 item 2 / 1234 item 3）；精读 [`worked-example-addr155-notreach-vs-bundled.md`](worked-example-addr155-notreach-vs-bundled.md)（不变量 1232 item 1）、[`worked-example-addr155-notpref-vs-bundled.md`](worked-example-addr155-notpref-vs-bundled.md)（不变量 1233 item 2）、[`worked-example-addr155-notnet-vs-bundled.md`](worked-example-addr155-notnet-vs-bundled.md)（不变量 1234 item 3）。
 
 ## 本页不抄
 

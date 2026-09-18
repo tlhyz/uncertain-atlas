@@ -20,6 +20,9 @@ blocksync 目标必须可归因：[`../failure-museum/asa-2025-001.md`](../failu
 签过的节点记录 ≠ 已经最新：[`worked-example-enr-vs-newest.md`](worked-example-enr-vs-newest.md)（看见签过的记录不是已经是最新一份；能多写键不是已经换了身份方案；778 ≠ 2124 ≠ 8 ≠ 7642）。
 ping 序号 ≠ 已经有当前记录：[`worked-example-enr-request-vs-have.md`](worked-example-enr-request-vs-have.md)（看见 ping 里的记录序号不是已经有当前记录；能发请求不是已经解析；FindNode 找到人不是已经有记录；868 ≠ 778 ≠ 2124 ≠ 8）。
 第 2 版传输 ≠ 已经私人：[`worked-example-v2-transport-vs-private.md`](worked-example-v2-transport-vs-private.md)（看见机会主义未认证加密不是已经私人；伪随机字节流不是已经认不出；仍收下第 1 版不是已经退役旧线；324 ≠ 112 ≠ 8 ≠ 868）。
+后继地址流言 ≠ 已经连得上：[`worked-example-addr155-notreach-vs-bundled.md`](worked-example-addr155-notreach-vs-bundled.md)（流言≠already connected/reachable/old-retired；≠246 bundled；不变量 1232）。
+sendaddrv2 ≠ 已经只收后继格式：[`worked-example-addr155-notpref-vs-bundled.md`](worked-example-addr155-notpref-vs-bundled.md)（信号≠already only-v2/old-retired/unsolicited-pref；≠246 bundled；不变量 1233）。
+传了某种网 ≠ 已经连上那种网：[`worked-example-addr155-notnet-vs-bundled.md`](worked-example-addr155-notnet-vs-bundled.md)（传网≠already connected-to-net/two-peers/hidden-service；≠246 bundled；不变量 1234）。
 后继地址 ≠ 已经连得上：[`worked-example-addrv2-vs-reachable.md`](worked-example-addrv2-vs-reachable.md)（看见后继地址流言不是已经连得上；发了 sendaddrv2 不是已经只收后继格式；在传某种网上的地址不是已经连上那种网；155 ≠ 324 ≠ 112 ≠ 868）。
 头通告偏好 ≠ 已经有块：[`worked-example-sendheaders-vs-have.md`](worked-example-sendheaders-vs-have.md)（看见发了 sendheaders 不是已经改用头通告；用头通告新尖不是已经有块；重组时先发头不是中间块已经在手里；130 ≠ 36 ≠ 155 ≠ compact）。
 按 wtxid 通告 ≠ 已经有交易：[`worked-example-wtxidrelay-vs-have.md`](worked-example-wtxidrelay-vs-have.md)（看见按 wtxid 通告不是已经有那笔交易；发了 wtxidrelay 不是已经改口；仍用旧类型要父交易不是旧库存已经退役；339 ≠ 152 ≠ 130 ≠ 133）。

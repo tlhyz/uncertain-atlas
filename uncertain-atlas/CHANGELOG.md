@@ -1,3 +1,15 @@
+## 2026-09-18（续 1351）
+
+- 不变量 1234；语料 C1212；模式 name-the-addr155-notnet-bar；反模式 addr155-notnet-sold-as-bundled；L10.3 第 1203 条。填 L3.4 / L9.1 BIP-155 gossip-net not already connected-to-net / not already two-peers / not already hidden-service 正式三事（246 余量）。246 addrv2 vs reachable bundled unbundling 完成（1234 item 3）。
+
+## 2026-09-18（续 1350）
+
+- 不变量 1233；语料 C1211；模式 name-the-addr155-notpref-bar；反模式 addr155-notpref-sold-as-bundled；L10.3 第 1202 条。填 L3.4 / L9.1 BIP-155 sendaddrv2 not already only-v2 / not already old-retired / not already unsolicited-pref 正式三事（246 余量）。246 addrv2 vs reachable bundled unbundling 续（1233 item 2）。
+
+## 2026-09-18（续 1349）
+
+- 不变量 1232；语料 C1210；模式 name-the-addr155-notreach-bar；反模式 addr155-notreach-sold-as-bundled；L10.3 第 1201 条。填 L3.4 / L9.1 BIP-155 addrv2-gossip not already connected / not already reachable / not already old-retired 正式三事（246 余量）。246 addrv2 vs reachable bundled unbundling 启动（1232 item 1）。
+
 ## 2026-09-18（续 1348）
 
 - 不变量 1231；语料 C1209；模式 name-the-dum147-notpol-bar；反模式 dum147-notpol-sold-as-bundled；L10.3 第 1200 条。填 L1.4 / L3.3 / L3.7 BIP-147 policy not already consensus / not already bip62 / not already settled 正式三事（264 余量）。264 dummy vs empty bundled unbundling 完成（1231 item 3）。
