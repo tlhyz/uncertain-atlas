@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When late-arriving MAY add without Verify 正式三事，必须分开 MAY add without Verify 是不是迟到扩展 bundled interchangeable / 已经 Verify 过 interchangeable、round 0 h-1 CommitRound 是不是正常 When round r height h interchangeable、without calling VerifyVoteExtension 是不是已经又叫了 Verify interchangeable / 已经是引擎会再 Verify interchangeable。可以跳过「看见 last_commit 里有扩展就已经 Verify 过 interchangeable、已经又叫了 Verify interchangeable」。不要另写怎样再验迟到扩展。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When late-arriving MAY add without Verify 正式三事，必须分开 MAY add without Verify 是不是迟到扩展 bundled interchangeable / 已经 Verify 过 interchangeable、round 0 h-1 CommitRound 是不是正常 When round r height h interchangeable、without calling VerifyVoteExtension 是不是已经又叫了 Verify interchangeable / 已经是引擎会再 Verify interchangeable。可以跳过「看见 last_commit 里有扩展就已经 Verify 过 interchangeable、已经又叫了 Verify interchangeable」。518 VerifyVoteExtension When latemay bundled unbundling 完成（1322 item 1 / 1323 item 2 / 1324 item 3）；精读 [`worked-example-latemay-notadd-vs-bundled.md`](worked-example-latemay-notadd-vs-bundled.md)（不变量 1322 item 1）、[`worked-example-latemay-notround-vs-bundled.md`](worked-example-latemay-notround-vs-bundled.md)（不变量 1323 item 2）、[`worked-example-latemay-notcall-vs-bundled.md`](worked-example-latemay-notcall-vs-bundled.md)（不变量 1324 item 3）。不要另写怎样再验迟到扩展。
 
 ## 本页不抄
 

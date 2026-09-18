@@ -1,3 +1,6 @@
+- [`latemay-notcall-sold-as-bundled.md`](latemay-notcall-sold-as-bundled.md) — 不再叫 Verify 被写成已经 Verify 过 / 就已经建议再看 / 就已经 step 2 call（不变量 1324）
+- [`latemay-notround-sold-as-bundled.md`](latemay-notround-sold-as-bundled.md) — round 0 / h-1 被写成已经是正常 When / 就已经是本高度 / 就已经是 ExtendVote When（不变量 1323）
+- [`latemay-notadd-sold-as-bundled.md`](latemay-notadd-sold-as-bundled.md) — MAY 写入不再 Verify 被写成已经迟到扩展 bundled / 就已经 Verify 过 / 就已经是正常 When（不变量 1322）
 - [`whenlate-notsug-sold-as-bundled.md`](whenlate-notsug-sold-as-bundled.md) — 建议按 Verify 同款再看 被写成已经是引擎会再 Verify / 就已经 step 2 call / 就已经 Req 6（不变量 1321）
 - [`whenlate-notuse-sold-as-bundled.md`](whenlate-notuse-sold-as-bundled.md) — MAY 用 commit info 扩展 被写成已经 Verify 过 / 就已经进了块 / 就已经 Prepare 改列表（不变量 1320）
 - [`whenlate-notver-sold-as-bundled.md`](whenlate-notver-sold-as-bundled.md) — +2/3 未 Verify 被写成已经迟到扩展 bundled / 就已经 Verify 过 / 就已经是 Verify When（不变量 1319）

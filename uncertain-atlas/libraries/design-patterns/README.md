@@ -1,3 +1,6 @@
+- [`name-the-latemay-notcall-bar.md`](name-the-latemay-notcall-bar.md) — LateMay without-call not already verified / not already suggested-recheck / not already step-2-call 正式三事（518 余量）（不变量 1324）
+- [`name-the-latemay-notround-bar.md`](name-the-latemay-notround-bar.md) — LateMay round0-h-1 not already normal-When / not already this-height / not already ExtendVote-When 正式三事（518 余量）（不变量 1323）
+- [`name-the-latemay-notadd-bar.md`](name-the-latemay-notadd-bar.md) — LateMay MAY-add not already 352-bundled / not already verified / not already step-2-call 正式三事（518 余量）（不变量 1322）
 - [`name-the-whenlate-notsug-bar.md`](name-the-whenlate-notsug-bar.md) — LateUnverified suggested not already engine-re-Verify / not already step-2-call / not already Req-6 正式三事（519 余量）（不变量 1321）
 - [`name-the-whenlate-notuse-bar.md`](name-the-whenlate-notuse-bar.md) — LateUnverified MAY-use not already verified / not already in-block / not already Prepare-list 正式三事（519 余量）（不变量 1320）
 - [`name-the-whenlate-notver-bar.md`](name-the-whenlate-notver-bar.md) — LateUnverified not-verified not already 352-bundled / not already verified / not already Verify-When 正式三事（519 余量）（不变量 1319）

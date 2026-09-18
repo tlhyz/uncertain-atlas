@@ -1,3 +1,15 @@
+## 2026-09-18（续 1441）
+
+- 不变量 1324；语料 C1302；模式 name-the-latemay-notcall-bar；反模式 latemay-notcall-sold-as-bundled；L10.3 第 1293 条。填 L4.4 LateMay without-call not already verified / not already suggested-recheck / not already step-2-call 正式三事（518 余量）。518 VerifyVoteExtension When latemay bundled unbundling 完成（1324 item 3）。
+
+## 2026-09-18（续 1440）
+
+- 不变量 1323；语料 C1301；模式 name-the-latemay-notround-bar；反模式 latemay-notround-sold-as-bundled；L10.3 第 1292 条。填 L4.4 LateMay round0-h-1 not already normal-When / not already this-height / not already ExtendVote-When 正式三事（518 余量）。518 VerifyVoteExtension When latemay bundled unbundling 续（1323 item 2）。
+
+## 2026-09-18（续 1439）
+
+- 不变量 1322；语料 C1300；模式 name-the-latemay-notadd-bar；反模式 latemay-notadd-sold-as-bundled；L10.3 第 1291 条。填 L4.4 LateMay MAY-add not already 352-bundled / not already verified / not already step-2-call 正式三事（518 余量）。518 VerifyVoteExtension When latemay bundled unbundling 启动（1322 item 1）。
+
 ## 2026-09-18（续 1438）
 
 - 不变量 1321；语料 C1299；模式 name-the-whenlate-notsug-bar；反模式 whenlate-notsug-sold-as-bundled；L10.3 第 1290 条。填 L4.4 LateUnverified suggested not already engine-re-Verify / not already step-2-call / not already Req-6 正式三事（519 余量）。519 PrepareProposal When lateext-unverified bundled unbundling 完成（1321 item 3）。
