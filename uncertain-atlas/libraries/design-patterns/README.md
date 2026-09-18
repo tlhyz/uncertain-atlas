@@ -1,3 +1,6 @@
+- [`name-the-combo384-notpol-bar.md`](name-the-combo384-notpol-bar.md) — BIP-384 one-combo not already wallet-policy / not already those-named-exprs / not already settled 正式三事（281 余量）（不变量 1165）
+- [`name-the-combo384-notwitpair-bar.md`](name-the-combo384-notwitpair-bar.md) — BIP-384 uncompressed-key not already have-witness-pair / not already fixed-four / not already settled 正式三事（281 余量）（不变量 1164）
+- [`name-the-combo384-notone-bar.md`](name-the-combo384-notone-bar.md) — BIP-384 combo not already nestable-in-sh-wsh / not already one-script / not already settled 正式三事（281 余量）（不变量 1163）
 - [`name-the-pol388-notreg-bar.md`](name-the-pol388-notreg-bar.md) — BIP-388 registered not already approved-this-spend / not already miniscript-policy / not already settled 正式三事（280 余量）（不变量 1162）
 - [`name-the-pol388-notkey-bar.md`](name-the-pol388-notkey-bar.md) — BIP-388 key-placeholder not already exact-pubkey / not already fully-derived / not already settled 正式三事（280 余量）（不变量 1161）
 - [`name-the-pol388-notdesc-bar.md`](name-the-pol388-notdesc-bar.md) — BIP-388 wallet-policy not already one-descriptor / not already account-collapsed / not already settled 正式三事（280 余量）（不变量 1160）

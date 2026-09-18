@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出 combo，必须分开只能顶层、压缩才出见证对、两份或四份不是账户策略。可以跳过「看见一把钥就已经是一种输出脚本」。若对照，必须分开本页 combo 和 388 那种账户策略。不要另写怎样拼那几份输出脚本。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出 combo，必须分开只能顶层、压缩才出见证对、两份或四份不是账户策略。可以跳过「看见一把钥就已经是一种输出脚本」。若对照，必须分开本页 combo 和 388 那种账户策略。不要另写怎样拼那几份输出脚本。281 combo vs one-script bundled unbundling 完成（1163 item 1 / 1164 item 2 / 1165 item 3）；精读 [`worked-example-combo384-notone-vs-bundled.md`](worked-example-combo384-notone-vs-bundled.md)（不变量 1163 item 1）。
 
 ## 本页不抄
 

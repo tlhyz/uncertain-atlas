@@ -1,3 +1,18 @@
+| A5590 | 记录 | 会与 281 / 1160 / 184 / 1163 / 1164 糊成「看见一份 combo 就已经是一份钱包策略 interchangeable、就已经写了那几条表达式 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-384 one-combo not already wallet-policy / not already those-named-exprs / not already settled 正式三事（281 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。281 combo vs one-script bundled unbundling 完成（1165 item 3） |
+| A5591 | 高 | 看见一份 combo 会被写成已经是一份钱包策略 interchangeable / 1160 interchangeable | 官方 BIP-384 combo 描述符 item 3：not already wallet-policy / not 1160 |
+| A5592 | 高 | 看见产出一样的脚本 会被写成已经写了那几条表达式 interchangeable / 184 interchangeable | 官方 BIP-384 combo 描述符 item 3：not already those-named-exprs / not 184 |
+| A5593 | 高 | 看见两份或四份脚本 会被写成已经交差 interchangeable | 官方 BIP-384 combo 描述符 item 3：not already settled |
+| A5594 | 中 | 怎样拼那几份输出脚本会被抄进不确定 | 不抄。不写怎样拼那几份输出脚本。不另写 19 节 |
+| A5585 | 记录 | 会与 281 / 1152 / 184 / 1163 / 1165 糊成「看见未压缩钥就已经带齐见证对 interchangeable、就已经有四份 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-384 uncompressed-key not already have-witness-pair / not already fixed-four / not already settled 正式三事（281 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。281 combo vs one-script bundled unbundling 续（1164 item 2） |
+| A5586 | 高 | 看见未压缩钥 会被写成已经带齐见证对 interchangeable / 1152 interchangeable | 官方 BIP-384 combo 描述符 item 2：not already have-witness-pair / not 1152 |
+| A5587 | 高 | 看见永远有两份 会被写成已经有四份 interchangeable / 184 interchangeable | 官方 BIP-384 combo 描述符 item 2：not already fixed-four / not 184 |
+| A5588 | 高 | 看见总是那两份旧脚本 会被写成已经交差 interchangeable | 官方 BIP-384 combo 描述符 item 2：not already settled |
+| A5589 | 中 | 怎样拼那几份输出脚本会被抄进不确定 | 不抄。不写怎样拼那几份输出脚本。不另写 19 节 |
+| A5580 | 记录 | 会与 281 / 1148 / 1160 / 1164 / 1165 糊成「看见 combo 就已经能套进 sh / wsh interchangeable、就已经是一种输出脚本 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-384 combo not already nestable-in-sh-wsh / not already one-script / not already settled 正式三事（281 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。281 combo vs one-script bundled unbundling 启动（1163 item 1） |
+| A5581 | 高 | 看见 combo 会被写成已经能套进 sh / wsh interchangeable / 1148 interchangeable | 官方 BIP-384 combo 描述符 item 1：not already nestable-in-sh-wsh / not 1148 |
+| A5582 | 高 | 看见一把钥 会被写成已经是一种输出脚本 interchangeable / 1160 interchangeable | 官方 BIP-384 combo 描述符 item 1：not already one-script / not 1160 |
+| A5583 | 高 | 看见只能当顶层 会被写成已经交差 interchangeable | 官方 BIP-384 combo 描述符 item 1：not already settled |
+| A5584 | 中 | 怎样拼那几份输出脚本会被抄进不确定 | 不抄。不写怎样拼那几份输出脚本。不另写 19 节 |
 | A5575 | 记录 | 会与 280 / 191 / 184 / 1160 / 1161 糊成「看见登记过就已经批准这笔花 interchangeable、就已经是 379 那种语言 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-388 registered not already approved-this-spend / not already miniscript-policy / not already settled 正式三事（280 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。280 policy vs descriptor bundled unbundling 完成（1162 item 3） |
 | A5576 | 高 | 看见登记过 会被写成已经批准这笔花 interchangeable / 191 interchangeable | 官方 BIP-388 钱包策略 item 3：not already approved-this-spend / not 191 |
 | A5577 | 高 | 看见写了 policy 会被写成已经是 379 那种语言 interchangeable / 184 interchangeable | 官方 BIP-388 钱包策略 item 3：not already miniscript-policy / not 184 |

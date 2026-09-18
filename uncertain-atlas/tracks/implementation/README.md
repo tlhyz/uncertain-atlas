@@ -837,6 +837,9 @@
 - [`worked-example-pol388-notkey-vs-bundled.md`](worked-example-pol388-notkey-vs-bundled.md) — 钥占位≠already exact-pubkey/fully-derived/settled；≠280 bundled（不变量 1161）
 - [`worked-example-pol388-notdesc-vs-bundled.md`](worked-example-pol388-notdesc-vs-bundled.md) — 钱包策略≠already one-descriptor/account-collapsed/settled；≠280 bundled（不变量 1160）
 - [`worked-example-policy-vs-descriptor.md`](worked-example-policy-vs-descriptor.md) — 钱包策略 ≠ 已经是一条描述符；钥占位 ≠ 已经是那把精确公钥；登记过 ≠ 已经批准这笔花（不变量 280）
+- [`worked-example-combo384-notpol-vs-bundled.md`](worked-example-combo384-notpol-vs-bundled.md) — 一份 combo≠already wallet-policy/those-named-exprs/settled；≠281 bundled（不变量 1165）
+- [`worked-example-combo384-notwitpair-vs-bundled.md`](worked-example-combo384-notwitpair-vs-bundled.md) — 未压缩钥≠already have-witness-pair/fixed-four/settled；≠281 bundled（不变量 1164）
+- [`worked-example-combo384-notone-vs-bundled.md`](worked-example-combo384-notone-vs-bundled.md) — combo≠already nestable-in-sh-wsh/one-script/settled；≠281 bundled（不变量 1163）
 - [`worked-example-combo-vs-one-script.md`](worked-example-combo-vs-one-script.md) — combo ≠ 已经只能产出一种脚本；未压缩钥 ≠ 已经带齐见证对；一份 combo ≠ 已经是一份钱包策略（不变量 281）
 - [`worked-example-raw-vs-named.md`](worked-example-raw-vs-named.md) — raw ≠ 已经能套进具名表达式；addr ≠ 已经是那份输出脚本；一份包装 ≠ 已经是 combo（不变量 282）
 - [`worked-example-musig-xpub-vs-aggregate.md`](worked-example-musig-xpub-vs-aggregate.md) — 聚合钥 ≠ 已经是扩展公钥；合成扩展公钥 ≠ 已经能硬化派生；派生出的子钥 ≠ 已经能不带微调去签（不变量 283）

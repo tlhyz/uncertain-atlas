@@ -1,3 +1,15 @@
+## 2026-09-18（续 1282）
+
+- 不变量 1165；语料 C1143；模式 name-the-combo384-notpol-bar；反模式 combo384-notpol-sold-as-bundled；L10.3 第 1134 条。填 L1.4 / L3.6 BIP-384 one-combo not already wallet-policy / not already those-named-exprs / not already settled 正式三事（281 余量）。281 combo vs one-script bundled unbundling 完成（1165 item 3）。
+
+## 2026-09-18（续 1281）
+
+- 不变量 1164；语料 C1142；模式 name-the-combo384-notwitpair-bar；反模式 combo384-notwitpair-sold-as-bundled；L10.3 第 1133 条。填 L1.4 / L3.6 BIP-384 uncompressed-key not already have-witness-pair / not already fixed-four / not already settled 正式三事（281 余量）。281 combo vs one-script bundled unbundling 续（1164 item 2）。
+
+## 2026-09-18（续 1280）
+
+- 不变量 1163；语料 C1141；模式 name-the-combo384-notone-bar；反模式 combo384-notone-sold-as-bundled；L10.3 第 1132 条。填 L1.4 / L3.6 BIP-384 combo not already nestable-in-sh-wsh / not already one-script / not already settled 正式三事（281 余量）。281 combo vs one-script bundled unbundling 启动（1163 item 1）。
+
 ## 2026-09-18（续 1279）
 
 - 不变量 1162；语料 C1140；模式 name-the-pol388-notreg-bar；反模式 pol388-notreg-sold-as-bundled；L10.3 第 1131 条。填 L1.4 / L3.6 BIP-388 registered not already approved-this-spend / not already miniscript-policy / not already settled 正式三事（280 余量）。280 policy vs descriptor bundled unbundling 完成（1162 item 3）。
