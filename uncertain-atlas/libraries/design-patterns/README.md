@@ -1,3 +1,6 @@
+- [`name-the-preprend-notts-bar.md`](name-the-preprend-notts-bar.md) — FinalizeBlockRequest.time not already header-aligned / not already prepare-time / not already settled 正式三事（426 余量）（不变量 1057）
+- [`name-the-preprend-notmade-bar.md`](name-the-preprend-notmade-bar.md) — PrepareProposalRequest.proposer_address not already made / not already header-known / not already settled 正式三事（426 余量）（不变量 1056）
+- [`name-the-preprend-nothash-bar.md`](name-the-preprend-nothash-bar.md) — PrepareProposalRequest.next_validators_hash not already finalize-hash / not already rotated / not already settled 正式三事（426 余量）（不变量 1055）
 - [`name-the-extvirc-notgive-bar.md`](name-the-extvirc-notgive-bar.md) — ExtendedVoteInfo.non_rp_extension_signature not already given-to-app / not already same-as-extsig / not already settled 正式三事（425 余量）（不变量 1054）
 - [`name-the-extvirc-notflag-bar.md`](name-the-extvirc-notflag-bar.md) — ExtendedVoteInfo.block_id_flag not already slashed / not already voteinfo-flag / not already settled 正式三事（425 余量）（不变量 1053）
 - [`name-the-extvirc-notkey-bar.md`](name-the-extvirc-notkey-bar.md) — ExtendedVoteInfo.validator not already has-key / not already extracted / not already settled 正式三事（425 余量）（不变量 1052）

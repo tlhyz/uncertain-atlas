@@ -1,3 +1,6 @@
+- [`preprend-notts-sold-as-bundled.md`](preprend-notts-sold-as-bundled.md) — Finalize time 被写成已经对上了拟议块头 / 已经是 Prepare time / 已经交差（不变量 1057）
+- [`preprend-notmade-sold-as-bundled.md`](preprend-notmade-sold-as-bundled.md) — proposer_address 被写成已经造了这份提案 / 已经知道本头哈希 / 已经交差（不变量 1056）
+- [`preprend-nothash-sold-as-bundled.md`](preprend-nothash-sold-as-bundled.md) — next_validators_hash 被写成已经是 Finalize 请求栏 / 已经换了人 / 已经交差（不变量 1055）
 - [`extvirc-notgive-sold-as-bundled.md`](extvirc-notgive-sold-as-bundled.md) — non_rp_extension_signature 被写成已经把验过的签交给应用 / 已经是 extension_signature / 已经交差（不变量 1054）
 - [`extvirc-notflag-sold-as-bundled.md`](extvirc-notflag-sold-as-bundled.md) — block_id_flag 被写成已经罚没 / 已经是 VoteInfo flag / 已经交差（不变量 1053）
 - [`extvirc-notkey-sold-as-bundled.md`](extvirc-notkey-sold-as-bundled.md) — validator 被写成已经带了公钥 / 已经从本进程抽出 / 已经交差（不变量 1052）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Prepare 请求末栏就已经是 Finalize 请求栏的 next_validators_hash、已经造了这份提案、已经对上了拟议块头」，必须分开 PrepareProposalRequest.next_validators_hash 是下一验证者集合默克尔根是不是已经是 Finalize 请求栏的 next_validators_hash、PrepareProposalRequest.proposer_address 是正在造这份提案的验证者地址是不是已经造了这份提案、FinalizeBlockRequest.time 是已决块的时间戳是不是已经对上了拟议块头。可以跳过「看见填了 Prepare 请求末栏就已经是 Finalize 请求栏的 next_validators_hash」。不要另写怎样写 Prepare 请求末栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Prepare 请求末栏就已经是 Finalize 请求栏的 next_validators_hash、已经造了这份提案、已经对上了拟议块头」，必须分开 PrepareProposalRequest.next_validators_hash 是下一验证者集合默克尔根是不是已经是 Finalize 请求栏的 next_validators_hash、PrepareProposalRequest.proposer_address 是正在造这份提案的验证者地址是不是已经造了这份提案、FinalizeBlockRequest.time 是已决块的时间戳是不是已经对上了拟议块头。可以跳过「看见填了 Prepare 请求末栏就已经是 Finalize 请求栏的 next_validators_hash」。不要另写怎样写 Prepare 请求末栏。426 prepreqend vs finreq bundled unbundling 完成（1055 item 1 / 1056 item 2 / 1057 item 3）；精读 [`worked-example-preprend-nothash-vs-bundled.md`](worked-example-preprend-nothash-vs-bundled.md)（不变量 1055 item 1）。
 
 ## 本页不抄
 

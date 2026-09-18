@@ -1,3 +1,18 @@
+| A5045 | 记录 | 会与 426 / 424 / 420 / 1055 / 1056 糊成「看见 FinalizeBlockRequest.time 就已经对上了拟议块头 interchangeable、就已经是 Prepare time interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.time not already header-aligned / not already prepare-time / not already settled 正式三事（426 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。426 prepreqend vs finreq bundled unbundling 完成（1057 item 3） |
+| A5046 | 高 | 看见填了 time 会被写成已经对上了拟议块头 interchangeable / 424 interchangeable | 官方 Prepare 请求末栏 item 3：not already header-aligned / not 424 |
+| A5047 | 高 | 看见有已决块时间戳 会被写成已经是 PrepareProposalRequest.time interchangeable | 官方 Prepare 请求末栏 item 3：not already prepare-time |
+| A5048 | 高 | 看见能指已决时间 会被写成已经交差 interchangeable | 官方 Prepare 请求末栏 item 3：not already settled |
+| A5049 | 中 | 怎样写请求末栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求末栏。不另写 19 节 |
+| A5040 | 记录 | 会与 426 / 413 / 359 / 1055 / 1057 糊成「看见 PrepareProposalRequest.proposer_address 就已经造了这份提案 interchangeable、就已经知道本头哈希 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.proposer_address not already made / not already header-known / not already settled 正式三事（426 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。426 prepreqend vs finreq bundled unbundling 续（1056 item 2） |
+| A5041 | 高 | 看见填了 proposer_address 会被写成已经造了这份提案 interchangeable / 413 interchangeable | 官方 Prepare 请求末栏 item 2：not already made / not 413 |
+| A5042 | 高 | 看见正在造 会被写成已经知道本头哈希 interchangeable / 359 interchangeable | 官方 Prepare 请求末栏 item 2：not already header-known / not 359 |
+| A5043 | 高 | 看见能指正在造的人 会被写成已经交差 interchangeable | 官方 Prepare 请求末栏 item 2：not already settled |
+| A5044 | 中 | 怎样写请求末栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求末栏。不另写 19 节 |
+| A5035 | 记录 | 会与 426 / 394 / 411 / 1056 / 1057 糊成「看见 PrepareProposalRequest.next_validators_hash 就已经是 Finalize 请求栏 interchangeable、就已经换了人 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 PrepareProposalRequest.next_validators_hash not already finalize-hash / not already rotated / not already settled 正式三事（426 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。426 prepreqend vs finreq bundled unbundling 启动（1055 item 1） |
+| A5036 | 高 | 看见填了 next_validators_hash 会被写成已经是 Finalize 请求栏 interchangeable / 394 interchangeable | 官方 Prepare 请求末栏 item 1：not already finalize-hash / not 394 |
+| A5037 | 高 | 看见能指下一份集合 会被写成已经换了人 interchangeable | 官方 Prepare 请求末栏 item 1：not already rotated |
+| A5038 | 高 | 看见字段名对得上 会被写成已经交差 interchangeable | 官方 Prepare 请求末栏 item 1：not already settled |
+| A5039 | 中 | 怎样写请求末栏会被抄进不确定 | 不抄。不写怎样写 Prepare 请求末栏。不另写 19 节 |
 | A5030 | 记录 | 会与 425 / 421 / 1052 / 1053 糊成「看见 ExtendedVoteInfo.non_rp_extension_signature 就已经把验过的签交给应用 interchangeable、就已经是 extension_signature interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo.non_rp_extension_signature not already given-to-app / not already same-as-extsig / not already settled 正式三事（425 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。425 extvirest vs voteinfo bundled unbundling 完成（1054 item 3） |
 | A5031 | 高 | 看见填了 non_rp_extension_signature 会被写成已经把验过的签交给应用 interchangeable / 421 interchangeable | 官方 ExtendedVoteInfo 表余栏 item 3：not already given-to-app / not 421 |
 | A5032 | 高 | 看见验过了 会被写成已经是 extension_signature interchangeable | 官方 ExtendedVoteInfo 表余栏 item 3：not already same-as-extsig |

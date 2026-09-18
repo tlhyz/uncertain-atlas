@@ -1,3 +1,15 @@
+## 2026-09-18（续 1174）
+
+- 不变量 1057；语料 C1035；模式 name-the-preprend-notts-bar；反模式 preprend-notts-sold-as-bundled；L10.3 第 1026 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.time not already header-aligned / not already prepare-time / not already settled 正式三事（426 余量）。426 prepreqend vs finreq bundled unbundling 完成（1057 item 3）。
+
+## 2026-09-18（续 1173）
+
+- 不变量 1056；语料 C1034；模式 name-the-preprend-notmade-bar；反模式 preprend-notmade-sold-as-bundled；L10.3 第 1025 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.proposer_address not already made / not already header-known / not already settled 正式三事（426 余量）。426 prepreqend vs finreq bundled unbundling 续（1056 item 2）。
+
+## 2026-09-18（续 1172）
+
+- 不变量 1055；语料 C1033；模式 name-the-preprend-nothash-bar；反模式 preprend-nothash-sold-as-bundled；L10.3 第 1024 条。填 L4.4 / CometBFT 档案 PrepareProposalRequest.next_validators_hash not already finalize-hash / not already rotated / not already settled 正式三事（426 余量）。426 prepreqend vs finreq bundled unbundling 启动（1055 item 1）。
+
 ## 2026-09-18（续 1171）
 
 - 不变量 1054；语料 C1032；模式 name-the-extvirc-notgive-bar；反模式 extvirc-notgive-sold-as-bundled；L10.3 第 1023 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo.non_rp_extension_signature not already given-to-app / not already same-as-extsig / not already settled 正式三事（425 余量）。425 extvirest vs voteinfo bundled unbundling 完成（1054 item 3）。
