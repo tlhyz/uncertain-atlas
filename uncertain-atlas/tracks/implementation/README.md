@@ -374,6 +374,9 @@
 - [`worked-example-extwhen-lock-vs-bundled.md`](worked-example-extwhen-lock-vs-bundled.md) — sets lockedValue/validValue ≠ +2/3 prevote 锁住 bundled；sets lockedRound/validRound ≠ validValue 跳过 Prepare；step 1 before ExtendVote call ≠ ExtendVote When 正式流程 bundled（不变量 507）
 - [`worked-example-preparewhen-return-vs-bundled.md`](worked-example-preparewhen-return-vs-bundled.md) — includes tx list in return ≠ raw proposal bundled；returns from call ≠ Process 紧跟 Prepare bundled；uses modified block as proposal ≠ validValue 跳过 Prepare（不变量 506）
 - [`worked-example-preparewhen-collect-vs-bundled.md`](worked-example-preparewhen-collect-vs-bundled.md) — collect priority ≠ raw proposal bundled；synchronous Prepare ≠ 能在返回后再改裁决；can manipulate ≠ Prepare 改列表 bundled（不变量 505）
+- [`worked-example-nochecks-notdup-vs-bundled.md`](worked-example-nochecks-notdup-vs-bundled.md) — 不再做额外检查≠already 验过重复/应用级重放保护/内存池去重就不重放；≠504 bundled（不变量 1307）
+- [`worked-example-nochecks-notcrash-vs-bundled.md`](worked-example-nochecks-notcrash-vs-bundled.md) — 回包验不过崩溃≠already Process REJECT/必须Accept/ProposalStatus REJECT；≠504 bundled（不变量 1308）
+- [`worked-example-nochecks-notdet-vs-bundled.md`](worked-example-nochecks-notdet-vs-bundled.md) — MAY非确定≠already 必须确定/同一把尺/Process MUST deterministic；≠504 bundled（不变量 1309）
 - [`worked-example-prepareusage-nochecks-vs-bundled.md`](worked-example-prepareusage-nochecks-vs-bundled.md) — no checks ≠ 已经验过重复；crash ≠ Process REJECT；MAY nondet ≠ 必须确定（不变量 504）
 - [`worked-example-prepusage-notraw-vs-bundled.md`](worked-example-prepusage-notraw-vs-bundled.md) — raw proposal/can modify≠already Prepare改列表/从内存池删掉/只有raw；≠503 bundled（不变量 1304）
 - [`worked-example-prepusage-notexceed-vs-bundled.md`](worked-example-prepusage-notexceed-vs-bundled.md) — MAY超上限≠already Req2/能回超限/整池没有上限；≠503 bundled（不变量 1305）

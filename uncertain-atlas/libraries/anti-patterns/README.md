@@ -1,3 +1,6 @@
+- [`nochecks-notdet-sold-as-bundled.md`](nochecks-notdet-sold-as-bundled.md) — MAY 非确定 被写成已经必须确定 / 就已经同一把尺 / 就已经 Process MUST deterministic（不变量 1309）
+- [`nochecks-notcrash-sold-as-bundled.md`](nochecks-notcrash-sold-as-bundled.md) — 回包验不过崩溃 被写成已经是 Process REJECT / 就必须被 Accept / 就已经 ProposalStatus REJECT（不变量 1308）
+- [`nochecks-notdup-sold-as-bundled.md`](nochecks-notdup-sold-as-bundled.md) — 不再做额外检查 被写成已经验过重复 / 就已经有应用级重放保护 / 就已经内存池去重不重放（不变量 1307）
 - [`prepusage-notmust-sold-as-bundled.md`](prepusage-notmust-sold-as-bundled.md) — MUST remove 被写成已经引擎会帮你裁 / 就已经从内存池删掉 / 就已经 -1 没有上限（不变量 1306）
 - [`prepusage-notexceed-sold-as-bundled.md`](prepusage-notexceed-sold-as-bundled.md) — MAY 超上限 被写成已经 Req 2 / 就已经能回超限 / 就已经整池没有上限（不变量 1305）
 - [`prepusage-notraw-sold-as-bundled.md`](prepusage-notraw-sold-as-bundled.md) — raw proposal 被写成已经 Prepare 改列表 / 就已经从内存池删掉 / 就已经只有 raw（不变量 1304）

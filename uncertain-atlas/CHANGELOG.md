@@ -1,3 +1,15 @@
+## 2026-09-18（续 1426）
+
+- 不变量 1309；语料 C1287；模式 name-the-nochecks-notdet-bar；反模式 nochecks-notdet-sold-as-bundled；L10.3 第 1278 条。填 L4.4 PrepareNochecks nondet not already must-deterministic / not already same-ruler / not already Process-MUST-det 正式三事（504 余量）。504 PrepareProposal Usage nochecks bundled unbundling 完成（1309 item 3）。
+
+## 2026-09-18（续 1425）
+
+- 不变量 1308；语料 C1286；模式 name-the-nochecks-notcrash-bar；反模式 nochecks-notcrash-sold-as-bundled；L10.3 第 1277 条。填 L4.4 PrepareNochecks crash not already Process-REJECT / not already must-Accept / not already ProposalStatus-REJECT 正式三事（504 余量）。504 PrepareProposal Usage nochecks bundled unbundling 续（1308 item 2）。
+
+## 2026-09-18（续 1424）
+
+- 不变量 1307；语料 C1285；模式 name-the-nochecks-notdup-bar；反模式 nochecks-notdup-sold-as-bundled；L10.3 第 1276 条。填 L4.4 PrepareNochecks nocheck not already checked-dup / not already app-replay / not already pool-dedup 正式三事（504 余量）。504 PrepareProposal Usage nochecks bundled unbundling 启动（1307 item 1）。
+
 ## 2026-09-18（续 1423）
 
 - 不变量 1306；语料 C1284；模式 name-the-prepusage-notmust-bar；反模式 prepusage-notmust-sold-as-bundled；L10.3 第 1275 条。填 L4.4 PrepareUsage must not already engine-trims / not already 355-pool / not already -1-no-cap 正式三事（503 余量）。503 PrepareProposal Usage rawmust bundled unbundling 完成（1306 item 3）。

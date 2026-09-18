@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal Usage no checks / crash / nondet 正式三事，必须分开 no additional validity checks 是不是已经验过重复 interchangeable、crash on invalid response 是不是 Process REJECT interchangeable、MAY be non-deterministic 是不是必须确定 interchangeable。可以跳过「看见回了 Prepare 回包就已经验过重复、已经是 Process REJECT、已经必须确定 interchangeable」。不要另写怎样再验 Prepare 回包。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal Usage no checks / crash / nondet 正式三事，必须分开 no additional validity checks 是不是已经验过重复 interchangeable、crash on invalid response 是不是 Process REJECT interchangeable、MAY be non-deterministic 是不是必须确定 interchangeable。可以跳过「看见回了 Prepare 回包就已经验过重复、已经是 Process REJECT、已经必须确定 interchangeable」。504 PrepareProposal Usage nochecks bundled unbundling 完成（1307 item 1 / 1308 item 2 / 1309 item 3）；精读 [`worked-example-nochecks-notdup-vs-bundled.md`](worked-example-nochecks-notdup-vs-bundled.md)（不变量 1307 item 1）、[`worked-example-nochecks-notcrash-vs-bundled.md`](worked-example-nochecks-notcrash-vs-bundled.md)（不变量 1308 item 2）、[`worked-example-nochecks-notdet-vs-bundled.md`](worked-example-nochecks-notdet-vs-bundled.md)（不变量 1309 item 3）。不要另写怎样再验 Prepare 回包。
 
 ## 本页不抄
 
