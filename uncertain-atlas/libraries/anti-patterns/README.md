@@ -1,3 +1,6 @@
+- [`vwkeep-notrej-sold-as-bundled.md`](vwkeep-notrej-sold-as-bundled.md) — REJECT 丢掉 被写成已经是 Verify When bundled / 就已经 step 1 discard / 就已经当成块非法（不变量 1336）
+- [`vwkeep-notpop-sold-as-bundled.md`](vwkeep-notpop-sold-as-bundled.md) — h+1 Prepare 填 ExtendedCommitInfo 被写成已经写进 last_commit / 就已经进了块 / 就已经同一路（不变量 1335）
+- [`vwkeep-notkeep-sold-as-bundled.md`](vwkeep-notkeep-sold-as-bundled.md) — ACCEPT 留下 被写成已经是 Verify When bundled / 就已经写进 last_commit / 就已经迟到扩展 Verify 过（不变量 1334）
 - [`vwstat-notkeep-sold-as-bundled.md`](vwstat-notkeep-sold-as-bundled.md) — step 3 在 keep/discard 前 被写成已经是 Verify When bundled / 就已经写进 last_commit / 就已经 ACCEPT 留给 h+1（不变量 1333）
 - [`vwstat-notafter-sold-as-bundled.md`](vwstat-notafter-sold-as-bundled.md) — step 3 在 call 之后 被写成已经是 step 2 call / 引擎就会叫 / 就已经 step 1 discard（不变量 1332）
 - [`vwstat-notret-sold-as-bundled.md`](vwstat-notret-sold-as-bundled.md) — 应用回 status 被写成已经是 Verify When bundled / 就已经验过 / 就已经是回包栏（不变量 1331）

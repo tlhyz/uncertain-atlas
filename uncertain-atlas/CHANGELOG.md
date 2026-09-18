@@ -1,3 +1,15 @@
+## 2026-09-18（续 1453）
+
+- 不变量 1336；语料 C1314；模式 name-the-vwkeep-notrej-bar；反模式 vwkeep-notrej-sold-as-bundled；L10.3 第 1305 条。填 L4.4 VerifyKeep REJECT-discard not already Verify-When / not already step-1-discard / not already block-invalid 正式三事（517 余量）。517 VerifyVoteExtension When keepdiscard bundled unbundling 完成（1336 item 3）。
+
+## 2026-09-18（续 1452）
+
+- 不变量 1335；语料 C1313；模式 name-the-vwkeep-notpop-bar；反模式 vwkeep-notpop-sold-as-bundled；L10.3 第 1304 条。填 L4.4 VerifyKeep h+1-Prepare not already last_commit / not already in-block / not already same-path 正式三事（517 余量）。517 VerifyVoteExtension When keepdiscard bundled unbundling 续（1335 item 2）。
+
+## 2026-09-18（续 1451）
+
+- 不变量 1334；语料 C1312；模式 name-the-vwkeep-notkeep-bar；反模式 vwkeep-notkeep-sold-as-bundled；L10.3 第 1303 条。填 L4.4 VerifyKeep ACCEPT-keep not already Verify-When / not already last_commit / not already late-verified 正式三事（517 余量）。517 VerifyVoteExtension When keepdiscard bundled unbundling 启动（1334 item 1）。
+
 ## 2026-09-18（续 1450）
 
 - 不变量 1333；语料 C1311；模式 name-the-vwstat-notkeep-bar；反模式 vwstat-notkeep-sold-as-bundled；L10.3 第 1302 条。填 L4.4 VerifyStatusWhen before-keep not already Verify-When / not already ACCEPT-keep / not already REJECT-discard 正式三事（516 余量）。516 VerifyVoteExtension When status bundled unbundling 完成（1333 item 3）。

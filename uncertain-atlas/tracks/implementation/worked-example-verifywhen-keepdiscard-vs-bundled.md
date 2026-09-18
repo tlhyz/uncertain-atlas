@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When ACCEPT keep or REJECT discard 正式三事，必须分开 ACCEPT keep 是不是 Verify When 正式流程 bundled interchangeable / 已经写进 last_commit interchangeable、populate ExtendedCommitInfo in h+1 Prepare 是不是已经进了块 interchangeable / 已经 Prepare 带了扩展 interchangeable、REJECT discard 是不是 step 1 discard bundled interchangeable / 已经当成块非法 interchangeable。可以跳过「看见 ACCEPT 就已经写进 last_commit interchangeable、已经 Verify 过迟到扩展 interchangeable」。不要另写怎样写 ExtendedCommitInfo。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When ACCEPT keep or REJECT discard 正式三事，必须分开 ACCEPT keep 是不是 Verify When 正式流程 bundled interchangeable / 已经写进 last_commit interchangeable、populate ExtendedCommitInfo in h+1 Prepare 是不是已经进了块 interchangeable / 已经 Prepare 带了扩展 interchangeable、REJECT discard 是不是 step 1 discard bundled interchangeable / 已经当成块非法 interchangeable。可以跳过「看见 ACCEPT 就已经写进 last_commit interchangeable、已经 Verify 过迟到扩展 interchangeable」。517 VerifyVoteExtension When keepdiscard bundled unbundling 完成（1334 item 1 / 1335 item 2 / 1336 item 3）；精读 [`worked-example-vwkeep-notkeep-vs-bundled.md`](worked-example-vwkeep-notkeep-vs-bundled.md)（不变量 1334 item 1）、[`worked-example-vwkeep-notpop-vs-bundled.md`](worked-example-vwkeep-notpop-vs-bundled.md)（不变量 1335 item 2）、[`worked-example-vwkeep-notrej-vs-bundled.md`](worked-example-vwkeep-notrej-vs-bundled.md)（不变量 1336 item 3）。不要另写怎样写 ExtendedCommitInfo。
 
 ## 本页不抄
 

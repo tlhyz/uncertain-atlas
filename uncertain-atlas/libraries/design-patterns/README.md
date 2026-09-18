@@ -1,3 +1,6 @@
+- [`name-the-vwkeep-notrej-bar.md`](name-the-vwkeep-notrej-bar.md) — VerifyKeep REJECT-discard not already Verify-When / not already step-1-discard / not already block-invalid 正式三事（517 余量）（不变量 1336）
+- [`name-the-vwkeep-notpop-bar.md`](name-the-vwkeep-notpop-bar.md) — VerifyKeep h+1-Prepare not already last_commit / not already in-block / not already same-path 正式三事（517 余量）（不变量 1335）
+- [`name-the-vwkeep-notkeep-bar.md`](name-the-vwkeep-notkeep-bar.md) — VerifyKeep ACCEPT-keep not already Verify-When / not already last_commit / not already late-verified 正式三事（517 余量）（不变量 1334）
 - [`name-the-vwstat-notkeep-bar.md`](name-the-vwstat-notkeep-bar.md) — VerifyStatusWhen before-keep not already Verify-When / not already ACCEPT-keep / not already REJECT-discard 正式三事（516 余量）（不变量 1333）
 - [`name-the-vwstat-notafter-bar.md`](name-the-vwstat-notafter-bar.md) — VerifyStatusWhen after-call not already step-2-call / not already step-1-discard / not already late-MAY 正式三事（516 余量）（不变量 1332）
 - [`name-the-vwstat-notret-bar.md`](name-the-vwstat-notret-bar.md) — VerifyStatusWhen return not already Verify-When / not already verified / not already status-column 正式三事（516 余量）（不变量 1331）
