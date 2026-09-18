@@ -1,3 +1,6 @@
+- [`name-the-psh0-notold-bar.md`](name-the-psh0-notold-bar.md) — EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）（不变量 1409）
+- [`name-the-psh0-notjump-bar.md`](name-the-psh0-notjump-bar.md) — EIP-3855 no-immediate not already jumpdest-changed / not already shared-impl / not already 5656 正式三事（217 余量）（不变量 1408）
+- [`name-the-psh0-notimm-bar.md`](name-the-psh0-notimm-bar.md) — EIP-3855 PUSH0 not already immediate-push0 / not already 216 / not already 217-bundled 正式三事（217 余量）（不变量 1407）
 - [`name-the-shft-notpack-bar.md`](name-the-shft-notpack-bar.md) — EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）（不变量 1406）
 - [`name-the-shft-notsdiv-bar.md`](name-the-shft-notsdiv-bar.md) — EIP-145 SAR not already signed-div / not already same-rounding / not already same-operand-order 正式三事（231 余量）（不变量 1405）
 - [`name-the-shft-notarith-bar.md`](name-the-shft-notarith-bar.md) — EIP-145 native-shift not already arith-composed / not already one-shift / not already 231-bundled 正式三事（231 余量）（不变量 1404）

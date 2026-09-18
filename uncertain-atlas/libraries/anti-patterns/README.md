@@ -1,3 +1,6 @@
+- [`psh0-notold-sold-as-bundled.md`](psh0-notold-sold-as-bundled.md) — 旧字节碰巧用了这个码 被写成行为已经不变 / 就已经是常数零 / 就已经是 208（不变量 1409）
+- [`psh0-notjump-sold-as-bundled.md`](psh0-notjump-sold-as-bundled.md) — 没有立即数 被写成已经改了跳转分析 / 就已经共用实现 / 就已经是 5656（不变量 1408）
+- [`psh0-notimm-sold-as-bundled.md`](psh0-notimm-sold-as-bundled.md) — 压零指令 被写成已经是带立即数的压 0 / 就已经是 216 / 就已经 217 bundled（不变量 1407）
 - [`shft-notpack-sold-as-bundled.md`](shft-notpack-sold-as-bundled.md) — 更便宜 被写成已经是位域产品 / 就已经改了旧字节码 / 就已经是 208（不变量 1406）
 - [`shft-notsdiv-sold-as-bundled.md`](shft-notsdiv-sold-as-bundled.md) — 算术右移 被写成已经是有符号除 / 就已经是同一舍入 / 就已经和加减同一顺序（不变量 1405）
 - [`shft-notarith-sold-as-bundled.md`](shft-notarith-sold-as-bundled.md) — 原生移位 被写成已经用算术拼过 / 就已经只有一条 / 就已经 231 bundled（不变量 1404）

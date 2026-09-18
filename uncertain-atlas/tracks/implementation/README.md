@@ -985,6 +985,9 @@
 - [`worked-example-default-gas-vs-cap.md`](worked-example-default-gas-vs-cap.md) — 看见客户端默认气限 ≠ 已经是协议帽；看见绑到硬分叉发布 ≠ 已经改了共识；看见默认配置齐了 ≠ 已经是单笔气帽；7935 ≠ 203 ≠ 202 ≠ 96（不变量 211）
 - [`worked-example-block-list-vs-parallel.md`](worked-example-block-list-vs-parallel.md) — 看见块级访问名单 ≠ 已经并行跑完；看见强制名单 ≠ 已经是 2930；看见事后状态差 ≠ 已经不跑交易；7928 ≠ 168 ≠ 143 ≠ 122（不变量 212）
 - [`worked-example-mcopy-vs-identity.md`](worked-example-mcopy-vs-identity.md) — 看见内存拷贝指令 ≠ 已经是身份预编译；看见「像用了中间缓冲」 ≠ 已经必须真分配一块缓冲；看见能重叠拷 ≠ 已经是 calldata / 返回数据拷；5656 ≠ 2929 ≠ 208（不变量 216）
+- [`worked-example-psh0-notimm-vs-bundled.md`](worked-example-psh0-notimm-vs-bundled.md) — 压零指令≠already 带立即数的压0/216/217 bundled；≠217 bundled（不变量 1407）
+- [`worked-example-psh0-notjump-vs-bundled.md`](worked-example-psh0-notjump-vs-bundled.md) — 没有立即数≠already 改了跳转分析/共用实现/5656；≠217 bundled（不变量 1408）
+- [`worked-example-psh0-notold-vs-bundled.md`](worked-example-psh0-notold-vs-bundled.md) — 旧字节碰巧用了这个码≠already 行为不变/已经是常数零/208；≠217 bundled（不变量 1409）
 - [`worked-example-push0-vs-push1.md`](worked-example-push0-vs-push1.md) — 看见压零指令 ≠ 已经是带立即数的压 0；看见没有立即数 ≠ 已经改了跳转目的分析；看见已经部署碰巧用了这个字节 ≠ 行为已经不变；3855 ≠ 5656 ≠ 216（不变量 217）
 - [`worked-example-bfee-notmkt-vs-bundled.md`](worked-example-bfee-notmkt-vs-bundled.md) — 基础费指令≠already 改了费用市场/158/218 bundled；≠218 bundled（不变量 1398）
 - [`worked-example-bfee-notprop-vs-bundled.md`](worked-example-bfee-notprop-vs-bundled.md) — 能读本块基础费≠already 给了出块者/blob基础费/219；≠218 bundled（不变量 1399）

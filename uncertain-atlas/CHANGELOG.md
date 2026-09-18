@@ -1,3 +1,15 @@
+## 2026-09-18（续 1526）
+
+- 不变量 1409；语料 C1387；模式 name-the-psh0-notold-bar；反模式 psh0-notold-sold-as-bundled；L10.3 第 1378 条。填 L5.1 EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）。217 PUSH0 vs PUSH1 bundled unbundling 完成（1409 item 3）。
+
+## 2026-09-18（续 1525）
+
+- 不变量 1408；语料 C1386；模式 name-the-psh0-notjump-bar；反模式 psh0-notjump-sold-as-bundled；L10.3 第 1377 条。填 L5.1 EIP-3855 no-immediate not already jumpdest-changed / not already shared-impl / not already 5656 正式三事（217 余量）。217 PUSH0 vs PUSH1 bundled unbundling 续（1408 item 2）。
+
+## 2026-09-18（续 1524）
+
+- 不变量 1407；语料 C1385；模式 name-the-psh0-notimm-bar；反模式 psh0-notimm-sold-as-bundled；L10.3 第 1376 条。填 L5.1 EIP-3855 PUSH0 not already immediate-push0 / not already 216 / not already 217-bundled 正式三事（217 余量）。217 PUSH0 vs PUSH1 bundled unbundling 启动（1407 item 1）。
+
 ## 2026-09-18（续 1523）
 
 - 不变量 1406；语料 C1384；模式 name-the-shft-notpack-bar；反模式 shft-notpack-sold-as-bundled；L10.3 第 1375 条。填 L5.1 EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）。231 SHIFT vs arithmetic bundled unbundling 完成（1406 item 3）。

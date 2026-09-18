@@ -1,3 +1,18 @@
+| A6810 | 记录 | 会与 217 / 208 / 188 / 1407 / 1408 糊成「看见已经部署碰巧用了这个字节不是行为已经不变就行为已经不变 interchangeable、就已经是常数零 interchangeable、就已经是不变量 208 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。217 PUSH0 vs PUSH1 bundled unbundling 完成（1409 item 3） |
+| A6811 | 高 | 看见已经部署碰巧用了这个字节不是行为已经不变 会被写成行为已经不变 interchangeable / 208 interchangeable | 官方 EIP-3855 psh0 item 3：not already 行为已经不变 / not 208 |
+| A6812 | 高 | 看见old byte is not already unchanged 会被写成已经是常数零 interchangeable / 188 interchangeable | 官方 EIP-3855 psh0 item 3：not already 已经是常数零 / not 188 |
+| A6813 | 高 | 看见已经部署碰巧用了这个字节不是行为已经不变 会被写成已经是不变量 208 interchangeable | 官方 EIP-3855 psh0 item 3：not already settled |
+| A6814 | 中 | 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析会被抄进不确定 | 不抄。不写 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析。不另写 19 节 |
+| A6805 | 记录 | 会与 217 / 216 / 176 / 1407 / 1409 糊成「看见没有立即数不是已经改了跳转目的分析就已经改了跳转目的分析 interchangeable、就已经共用实现 interchangeable、就已经是 5656 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3855 no-immediate not already jumpdest-changed / not already shared-impl / not already 5656 正式三事（217 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。217 PUSH0 vs PUSH1 bundled unbundling 续（1408 item 2） |
+| A6806 | 高 | 看见没有立即数不是已经改了跳转目的分析 会被写成已经改了跳转目的分析 interchangeable / 216 interchangeable | 官方 EIP-3855 psh0 item 2：not already 已经改了跳转目的分析 / not 216 |
+| A6807 | 高 | 看见no immediate is not already jumpdest-changed 会被写成已经共用实现 interchangeable / 176 interchangeable | 官方 EIP-3855 psh0 item 2：not already 已经共用实现 / not 176 |
+| A6808 | 高 | 看见没有立即数不是已经改了跳转目的分析 会被写成已经是 5656 interchangeable | 官方 EIP-3855 psh0 item 2：not already settled |
+| A6809 | 中 | 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析会被抄进不确定 | 不抄。不写 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析。不另写 19 节 |
+| A6800 | 记录 | 会与 217 / 216 / 208 / 1408 / 1409 糊成「看见压零指令不是已经是带立即数的压 0就已经是带立即数的压 0 interchangeable、就已经是不变量 216 interchangeable、就已经 217 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3855 PUSH0 not already immediate-push0 / not already 216 / not already 217-bundled 正式三事（217 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。217 PUSH0 vs PUSH1 bundled unbundling 启动（1407 item 1） |
+| A6801 | 高 | 看见压零指令不是已经是带立即数的压 0 会被写成已经是带立即数的压 0 interchangeable / 216 interchangeable | 官方 EIP-3855 psh0 item 1：not already 已经是带立即数的压 0 / not 216 |
+| A6802 | 高 | 看见PUSH0 is not already immediate push-0 会被写成已经是不变量 216 interchangeable / 208 interchangeable | 官方 EIP-3855 psh0 item 1：not already 已经是不变量 216 / not 208 |
+| A6803 | 高 | 看见压零指令不是已经是带立即数的压 0 会被写成已经 217 bundled interchangeable | 官方 EIP-3855 psh0 item 1：not already settled |
+| A6804 | 中 | 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析会被抄进不确定 | 不抄。不写 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析。不另写 19 节 |
 | A6795 | 记录 | 会与 231 / 208 / 217 / 1404 / 1405 糊成「看见更便宜不是已经是位域打包产品就已经是位域打包产品 interchangeable、就已经改了旧字节码 interchangeable、就已经是不变量 208 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。231 SHIFT vs arithmetic bundled unbundling 完成（1406 item 3） |
 | A6796 | 高 | 看见更便宜不是已经是位域打包产品 会被写成已经是位域打包产品 interchangeable / 208 interchangeable | 官方 EIP-145 shft item 3：not already 已经是位域打包产品 / not 208 |
 | A6797 | 高 | 看见cheaper is not already a bitfield product 会被写成已经改了旧字节码 interchangeable / 217 interchangeable | 官方 EIP-145 shft item 3：not already 已经改了旧字节码 / not 217 |
