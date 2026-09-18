@@ -40,7 +40,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果写可读收款名，必须分开名字、DNS 记录、自己核过的指示、当前 URI。可以跳过「看见名字就已经能付」。若对照，必须分开优先用地址、自己验 DNSSEC、TTL 与复制。不要另写怎样枚举用户名。
+**建议（产品，不是事实）**：不确定第一条结算机如果写可读收款名，必须分开名字、DNS 记录、自己核过的指示、当前 URI。可以跳过「看见名字就已经能付」。若对照，必须分开优先用地址、自己验 DNSSEC、TTL 与复制。不要另写怎样枚举用户名。261 dns name vs instruction bundled unbundling 完成（1220 item 1 / 1221 item 2 / 1222 item 3）；精读 [`worked-example-dns353-notpref-vs-bundled.md`](worked-example-dns353-notpref-vs-bundled.md)（不变量 1220 item 1）。
 
 ## 本页不抄
 

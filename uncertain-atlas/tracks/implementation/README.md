@@ -902,6 +902,9 @@
 - [`worked-example-enc38-notmint-vs-bundled.md`](worked-example-enc38-notmint-vs-bundled.md) — 厂家代生成≠already redeemable/same-path/settled；≠296 bundled（不变量 1206）
 - [`worked-example-enc38-notuse-vs-bundled.md`](worked-example-enc38-notuse-vs-bundled.md) — 加密记录≠already private-key/usable/settled；≠296 bundled（不变量 1205）
 - [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）
+- [`../lifecycle/worked-example-dns353-notcache-vs-bundled.md`](../lifecycle/worked-example-dns353-notcache-vs-bundled.md) — 缓存复制≠already current-uri/quote-live/settled；≠261 bundled（不变量 1222）
+- [`../lifecycle/worked-example-dns353-nottxt-vs-bundled.md`](../lifecycle/worked-example-dns353-nottxt-vs-bundled.md) — TXT≠already legal/remote-verified/settled；≠261 bundled（不变量 1221）
+- [`../lifecycle/worked-example-dns353-notpref-vs-bundled.md`](../lifecycle/worked-example-dns353-notpref-vs-bundled.md) — 可读名字≠already prefer-dns/better/settled；≠261 bundled（不变量 1220）
 - [`../lifecycle/worked-example-sil352-notreuse-vs-bundled.md`](../lifecycle/worked-example-sil352-notreuse-vs-bundled.md) — 再用≠already same-output/linked/settled；≠260 bundled（不变量 1219）
 - [`../lifecycle/worked-example-sil352-notscan-vs-bundled.md`](../lifecycle/worked-example-sil352-notscan-vs-bundled.md) — 扫过≠already received/spendable/settled；≠260 bundled（不变量 1218）
 - [`../lifecycle/worked-example-sil352-notout-vs-bundled.md`](../lifecycle/worked-example-sil352-notout-vs-bundled.md) — 静默码≠already output/paid/settled；≠260 bundled（不变量 1217）

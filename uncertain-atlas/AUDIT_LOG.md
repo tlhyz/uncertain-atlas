@@ -1,3 +1,18 @@
+| A5875 | 记录 | 会与 261 / 258 / 255 / 1220 / 1221 糊成「看见复制了可读名字就已经复制了 URI interchangeable、就已经是当前那条 URI interchangeable、就已经不复用 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-353 cache-copy not already current-uri / not already quote-live / not already settled 正式三事（261 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。261 dns name vs instruction bundled unbundling 完成（1222 item 3） |
+| A5876 | 高 | 看见复制了可读名字 会被写成已经复制了 URI interchangeable / 258 interchangeable | 官方 BIP-353 dns item 3：not already current-uri / not 258 |
+| A5877 | 高 | 看见 DNS 还没过期 会被写成里面的报价还有效 interchangeable / 255 interchangeable | 官方 BIP-353 dns item 3：not already quote-live / not 255 |
+| A5878 | 高 | 看见指示里有链上地址 会被写成已经不复用 interchangeable | 官方 BIP-353 dns item 3：not already settled |
+| A5879 | 中 | 怎样枚举用户名会被抄进不确定 | 不抄。不写怎样枚举用户名。不另写 19 节 |
+| A5870 | 记录 | 会与 261 / 55 / 260 / 1220 / 1222 糊成「看见 TXT 就已经是合法付款指示 interchangeable、就已经核过 interchangeable、就已经是一条能付的 URI interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-353 txt not already legal / not already remote-verified / not already settled 正式三事（261 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。261 dns name vs instruction bundled unbundling 续（1221 item 2） |
+| A5871 | 高 | 看见 TXT 会被写成已经是合法付款指示 interchangeable / 55 interchangeable | 官方 BIP-353 dns item 2：not already legal / not 55 |
+| A5872 | 高 | 看见解析器说绿 会被写成已经核过 interchangeable / 260 interchangeable | 官方 BIP-353 dns item 2：not already remote-verified / not 260 |
+| A5873 | 高 | 看见一条 TXT 会被写成已经是一条能付的 URI interchangeable | 官方 BIP-353 dns item 2：not already settled |
+| A5874 | 中 | 怎样枚举用户名会被抄进不确定 | 不抄。不写怎样枚举用户名。不另写 19 节 |
+| A5865 | 记录 | 会与 261 / 255 / 174 / 1221 / 1222 糊成「看见可读名字就已经该走 DNS interchangeable、就已经写进要解析的标签 interchangeable、就已经是本页 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-353 readable-name not already prefer-dns / not already better / not already settled 正式三事（261 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。261 dns name vs instruction bundled unbundling 启动（1220 item 1） |
+| A5866 | 高 | 看见可读名字 会被写成已经该走 DNS interchangeable / 255 interchangeable | 官方 BIP-353 dns item 1：not already prefer-dns / not 255 |
+| A5867 | 高 | 看见展示前缀 会被写成已经写进要解析的标签 interchangeable / 174 interchangeable | 官方 BIP-353 dns item 1：not already better / not 174 |
+| A5868 | 高 | 看见名字像邮箱 会被写成已经是本页 interchangeable | 官方 BIP-353 dns item 1：not already settled |
+| A5869 | 中 | 怎样枚举用户名会被抄进不确定 | 不抄。不写怎样枚举用户名。不另写 19 节 |
 | A5860 | 记录 | 会与 260 / 181 / 243 / 1217 / 1218 糊成「看见同一条静默付款地址再用就已经同一笔输出 interchangeable、就已经没有付款 interchangeable、就已经把各次付款连上 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-352 reuse not already same-output / not already linked / not already settled 正式三事（260 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。260 silent payment vs output bundled unbundling 完成（1219 item 3） |
 | A5861 | 高 | 看见同一条静默付款地址再用 会被写成已经同一笔输出 interchangeable / 181 interchangeable | 官方 BIP-352 silent item 3：not already same-output / not 181 |
 | A5862 | 高 | 看见没有通知 会被写成已经没有付款 interchangeable / 243 interchangeable | 官方 BIP-352 silent item 3：not already linked / not 243 |

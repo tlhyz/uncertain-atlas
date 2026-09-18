@@ -1,3 +1,6 @@
+- [`name-the-dns353-notcache-bar.md`](name-the-dns353-notcache-bar.md) — BIP-353 cache-copy not already current-uri / not already quote-live / not already settled 正式三事（261 余量）（不变量 1222）
+- [`name-the-dns353-nottxt-bar.md`](name-the-dns353-nottxt-bar.md) — BIP-353 txt not already legal / not already remote-verified / not already settled 正式三事（261 余量）（不变量 1221）
+- [`name-the-dns353-notpref-bar.md`](name-the-dns353-notpref-bar.md) — BIP-353 readable-name not already prefer-dns / not already better / not already settled 正式三事（261 余量）（不变量 1220）
 - [`name-the-sil352-notreuse-bar.md`](name-the-sil352-notreuse-bar.md) — BIP-352 reuse not already same-output / not already linked / not already settled 正式三事（260 余量）（不变量 1219）
 - [`name-the-sil352-notscan-bar.md`](name-the-sil352-notscan-bar.md) — BIP-352 scanned not already received / not already spendable / not already settled 正式三事（260 余量）（不变量 1218）
 - [`name-the-sil352-notout-bar.md`](name-the-sil352-notout-bar.md) — BIP-352 silent-address not already output / not already paid / not already settled 正式三事（260 余量）（不变量 1217）

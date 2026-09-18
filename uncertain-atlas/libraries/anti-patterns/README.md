@@ -1,3 +1,6 @@
+- [`dns353-notcache-sold-as-bundled.md`](dns353-notcache-sold-as-bundled.md) — 缓存复制 被写成已经当前 URI / 报价还有效 / 已经不复用（不变量 1222）
+- [`dns353-nottxt-sold-as-bundled.md`](dns353-nottxt-sold-as-bundled.md) — TXT 被写成已经合法付款指示 / 已经核过 / 已经是能付 URI（不变量 1221）
+- [`dns353-notpref-sold-as-bundled.md`](dns353-notpref-sold-as-bundled.md) — 可读名字 被写成已经该走 DNS / 已经写进标签 / 已经是本页（不变量 1220）
 - [`sil352-notreuse-sold-as-bundled.md`](sil352-notreuse-sold-as-bundled.md) — 再用 被写成已经同一笔输出 / 已经没有付款 / 已经把各次付款连上（不变量 1219）
 - [`sil352-notscan-sold-as-bundled.md`](sil352-notscan-sold-as-bundled.md) — 扫过 被写成已经收到 / 已经没人付 / 已经是本页这种发现（不变量 1218）
 - [`sil352-notout-sold-as-bundled.md`](sil352-notout-sold-as-bundled.md) — 静默付款地址 被写成已经有一笔链上输出 / 已经是旧见证地址 / 已经交差（不变量 1217）

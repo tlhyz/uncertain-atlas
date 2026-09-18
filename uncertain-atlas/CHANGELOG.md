@@ -1,3 +1,15 @@
+## 2026-09-18（续 1339）
+
+- 不变量 1222；语料 C1200；模式 name-the-dns353-notcache-bar；反模式 dns353-notcache-sold-as-bundled；L10.3 第 1191 条。填 L0.7 / L3.6 BIP-353 cache-copy not already current-uri / not already quote-live / not already settled 正式三事（261 余量）。261 dns name vs instruction bundled unbundling 完成（1222 item 3）。
+
+## 2026-09-18（续 1338）
+
+- 不变量 1221；语料 C1199；模式 name-the-dns353-nottxt-bar；反模式 dns353-nottxt-sold-as-bundled；L10.3 第 1190 条。填 L0.7 / L3.6 BIP-353 txt not already legal / not already remote-verified / not already settled 正式三事（261 余量）。261 dns name vs instruction bundled unbundling 续（1221 item 2）。
+
+## 2026-09-18（续 1337）
+
+- 不变量 1220；语料 C1198；模式 name-the-dns353-notpref-bar；反模式 dns353-notpref-sold-as-bundled；L10.3 第 1189 条。填 L0.7 / L3.6 BIP-353 readable-name not already prefer-dns / not already better / not already settled 正式三事（261 余量）。261 dns name vs instruction bundled unbundling 启动（1220 item 1）。
+
 ## 2026-09-18（续 1336）
 
 - 不变量 1219；语料 C1197；模式 name-the-sil352-notreuse-bar；反模式 sil352-notreuse-sold-as-bundled；L10.3 第 1188 条。填 L0.7 / L3.6 BIP-352 reuse not already same-output / not already linked / not already settled 正式三事（260 余量）。260 silent payment vs output bundled unbundling 完成（1219 item 3）。
