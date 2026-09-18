@@ -1,3 +1,6 @@
+- [`name-the-vwdisc-notstep-bar.md`](name-the-vwdisc-notstep-bar.md) — VerifyDiscard before-call not already Verify-When / not already ACCEPT-REJECT / not already local-also-Verify 正式三事（514 余量）（不变量 1327）
+- [`name-the-vwdisc-notzero-bar.md`](name-the-vwdisc-notzero-bar.md) — VerifyDiscard zerolen not already still-calls-Verify / not already skip / not already 0-len-illegal 正式三事（514 余量）（不变量 1326）
+- [`name-the-vwdisc-notsig-bar.md`](name-the-vwdisc-notsig-bar.md) — VerifyDiscard discard not already Verify-When / not already skip-Verify / not already verified 正式三事（514 余量）（不变量 1325）
 - [`name-the-latemay-notcall-bar.md`](name-the-latemay-notcall-bar.md) — LateMay without-call not already verified / not already suggested-recheck / not already step-2-call 正式三事（518 余量）（不变量 1324）
 - [`name-the-latemay-notround-bar.md`](name-the-latemay-notround-bar.md) — LateMay round0-h-1 not already normal-When / not already this-height / not already ExtendVote-When 正式三事（518 余量）（不变量 1323）
 - [`name-the-latemay-notadd-bar.md`](name-the-latemay-notadd-bar.md) — LateMay MAY-add not already 352-bundled / not already verified / not already step-2-call 正式三事（518 余量）（不变量 1322）

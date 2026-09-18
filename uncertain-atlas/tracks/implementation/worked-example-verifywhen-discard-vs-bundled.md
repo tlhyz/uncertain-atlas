@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When discard invalid extension 正式三事，必须分开 discards invalid Precommit 是不是 Verify When 正式流程 bundled interchangeable、0-length with valid signature 是不是空扩展仍会调 Verify bundled interchangeable、step 1 before call 是不是已经验过扩展 interchangeable / 已经写进 last_commit interchangeable。可以跳过「看见收到 Precommit 就已经跳过 Verify interchangeable、已经验过扩展 interchangeable」。不要另写怎样验伴随签名。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 VerifyVoteExtension When discard invalid extension 正式三事，必须分开 discards invalid Precommit 是不是 Verify When 正式流程 bundled interchangeable、0-length with valid signature 是不是空扩展仍会调 Verify bundled interchangeable、step 1 before call 是不是已经验过扩展 interchangeable / 已经写进 last_commit interchangeable。可以跳过「看见收到 Precommit 就已经跳过 Verify interchangeable、已经验过扩展 interchangeable」。514 VerifyVoteExtension When discard bundled unbundling 完成（1325 item 1 / 1326 item 2 / 1327 item 3）；精读 [`worked-example-vwdisc-notsig-vs-bundled.md`](worked-example-vwdisc-notsig-vs-bundled.md)（不变量 1325 item 1）、[`worked-example-vwdisc-notzero-vs-bundled.md`](worked-example-vwdisc-notzero-vs-bundled.md)（不变量 1326 item 2）、[`worked-example-vwdisc-notstep-vs-bundled.md`](worked-example-vwdisc-notstep-vs-bundled.md)（不变量 1327 item 3）。不要另写怎样验伴随签名。
 
 ## 本页不抄
 

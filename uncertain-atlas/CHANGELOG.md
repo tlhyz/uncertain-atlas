@@ -1,3 +1,15 @@
+## 2026-09-18（续 1444）
+
+- 不变量 1327；语料 C1305；模式 name-the-vwdisc-notstep-bar；反模式 vwdisc-notstep-sold-as-bundled；L10.3 第 1296 条。填 L4.4 VerifyDiscard before-call not already Verify-When / not already ACCEPT-REJECT / not already local-also-Verify 正式三事（514 余量）。514 VerifyVoteExtension When discard bundled unbundling 完成（1327 item 3）。
+
+## 2026-09-18（续 1443）
+
+- 不变量 1326；语料 C1304；模式 name-the-vwdisc-notzero-bar；反模式 vwdisc-notzero-sold-as-bundled；L10.3 第 1295 条。填 L4.4 VerifyDiscard zerolen not already still-calls-Verify / not already skip / not already 0-len-illegal 正式三事（514 余量）。514 VerifyVoteExtension When discard bundled unbundling 续（1326 item 2）。
+
+## 2026-09-18（续 1442）
+
+- 不变量 1325；语料 C1303；模式 name-the-vwdisc-notsig-bar；反模式 vwdisc-notsig-sold-as-bundled；L10.3 第 1294 条。填 L4.4 VerifyDiscard discard not already Verify-When / not already skip-Verify / not already verified 正式三事（514 余量）。514 VerifyVoteExtension When discard bundled unbundling 启动（1325 item 1）。
+
 ## 2026-09-18（续 1441）
 
 - 不变量 1324；语料 C1302；模式 name-the-latemay-notcall-bar；反模式 latemay-notcall-sold-as-bundled；L10.3 第 1293 条。填 L4.4 LateMay without-call not already verified / not already suggested-recheck / not already step-2-call 正式三事（518 余量）。518 VerifyVoteExtension When latemay bundled unbundling 完成（1324 item 3）。

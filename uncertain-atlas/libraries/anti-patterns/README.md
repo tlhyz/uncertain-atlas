@@ -1,3 +1,6 @@
+- [`vwdisc-notstep-sold-as-bundled.md`](vwdisc-notstep-sold-as-bundled.md) — step 1 在 call 之前 被写成已经是 Verify When bundled / 就已经验过 / 就已经写进 last_commit（不变量 1327）
+- [`vwdisc-notzero-sold-as-bundled.md`](vwdisc-notzero-sold-as-bundled.md) — 0 长+有效签 被写成已经空扩展仍叫 Verify / 就已经跳过 Verify / 就已经 0 长不合法（不变量 1326）
+- [`vwdisc-notsig-sold-as-bundled.md`](vwdisc-notsig-sold-as-bundled.md) — 无有效签丢掉 被写成已经是 Verify When bundled / 就已经跳过 Verify / 就已经验过扩展（不变量 1325）
 - [`latemay-notcall-sold-as-bundled.md`](latemay-notcall-sold-as-bundled.md) — 不再叫 Verify 被写成已经 Verify 过 / 就已经建议再看 / 就已经 step 2 call（不变量 1324）
 - [`latemay-notround-sold-as-bundled.md`](latemay-notround-sold-as-bundled.md) — round 0 / h-1 被写成已经是正常 When / 就已经是本高度 / 就已经是 ExtendVote When（不变量 1323）
 - [`latemay-notadd-sold-as-bundled.md`](latemay-notadd-sold-as-bundled.md) — MAY 写入不再 Verify 被写成已经迟到扩展 bundled / 就已经 Verify 过 / 就已经是正常 When（不变量 1322）
