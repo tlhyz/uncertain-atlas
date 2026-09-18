@@ -704,6 +704,9 @@
 - [`worked-example-vreqb-notext-vs-bundled.md`](worked-example-vreqb-notext-vs-bundled.md) — non_rp≠already vote-extension/skip-verify/same-object；≠436 bundled（不变量 1080）
 - [`worked-example-vreqb-notkey-vs-bundled.md`](worked-example-vreqb-notkey-vs-bundled.md) — validator_address≠already has-key/proposer/can-verify；≠436 bundled（不变量 1079）
 - [`worked-example-verifyreqbar-vs-rest.md`](worked-example-verifyreqbar-vs-rest.md) — VerifyVoteExtensionRequest.validator_address 是签了这份扩展的验证者地址 ≠ 已经带了公钥；VerifyVoteExtensionRequest.non_rp_vote_extension 是应用自己的信息、由 CometBFT 签、可以 0 长 ≠ 已经是 vote_extension；non_rp 相对 vote_extension 签名时不加额外元信息 ≠ 已经按原样签（不变量 436）
+- [`worked-example-vfwhen-notcommit-vs-bundled.md`](worked-example-vfwhen-notcommit-vs-bundled.md) — ACCEPT/REJECT≠already last-commit/late-verified/block-invalid；≠435 bundled（不变量 1087）
+- [`worked-example-vfwhen-notverif-vs-bundled.md`](worked-example-vfwhen-notverif-vs-bundled.md) — calls Verify≠already verified/accept/local-skip；≠435 bundled（不变量 1086）
+- [`worked-example-vfwhen-notskip-vs-bundled.md`](worked-example-vfwhen-notskip-vs-bundled.md) — unsigned discard≠already skip-verify/verified/accept；≠435 bundled（不变量 1085）
 - [`worked-example-verify-formal-when-vs-flow.md`](worked-example-verify-formal-when-vs-flow.md) — Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify ≠ 已经跳过 Verify；带有效签就会调 VerifyVoteExtension ≠ 已经验过扩展；ACCEPT 留给 h+1 Prepare / REJECT 丢掉 Precommit ≠ 已经写进 last_commit（不变量 435）
 - [`worked-example-verifystatus-vs-vote.md`](worked-example-verifystatus-vs-vote.md) — VerifyStatus 的 UNKNOWN 一律是错、引擎当应用坏了会崩 ≠ 已经验过扩展；VerifyStatus 的 ACCEPT 表示应用认为扩展合法、共识会收下这张票 ≠ 已经当成块非法；VerifyStatus 的 REJECT 表示应用认为扩展非法、共识会拒掉整张票 ≠ 已经会发 Prevote nil（不变量 434）
 - [`worked-example-vresp-nothonest-vs-bundled.md`](worked-example-vresp-nothonest-vs-bundled.md) — SHOULD Accept≠already honest-must/req6-tested/verified；≠433 bundled（不变量 1078）

@@ -1,3 +1,6 @@
+- [`vfwhen-notcommit-sold-as-bundled.md`](vfwhen-notcommit-sold-as-bundled.md) — ACCEPT/REJECT 被写成已经写进 last_commit / 已经迟到已验 / 已经当成块非法（不变量 1087）
+- [`vfwhen-notverif-sold-as-bundled.md`](vfwhen-notverif-sold-as-bundled.md) — 会叫 Verify 被写成已经验过扩展 / 已经 Accept / 已经本地票（不变量 1086）
+- [`vfwhen-notskip-sold-as-bundled.md`](vfwhen-notskip-sold-as-bundled.md) — unsigned discard 被写成已经跳过 Verify / 已经验过扩展 / 已经 Accept（不变量 1085）
 - [`eresp-nottable-sold-as-bundled.md`](eresp-nottable-sold-as-bundled.md) — Verify non_rp 被写成已经是 vote_extension 表 / 已经跳过 Verify / 已经同一份（不变量 1084）
 - [`eresp-notraw-sold-as-bundled.md`](eresp-notraw-sold-as-bundled.md) — non_rp_extension 被写成已经按原样签 / 已经有重放保护 / 已经必须填（不变量 1083）
 - [`eresp-notwrap-sold-as-bundled.md`](eresp-notwrap-sold-as-bundled.md) — vote_extension 被写成已经会包进 CanonicalVoteExtension / 已经是同一份扩展 / 已经交差（不变量 1082）

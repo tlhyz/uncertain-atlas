@@ -1,3 +1,15 @@
+## 2026-09-18（续 1204）
+
+- 不变量 1087；语料 C1065；模式 name-the-vfwhen-notcommit-bar；反模式 vfwhen-notcommit-sold-as-bundled；L10.3 第 1056 条。填 L4.4 / CometBFT 档案 ACCEPT keep / REJECT discard not already last-commit / not already late-verified / not already block-invalid 正式三事（435 余量）。435 verify-formal-when vs flow bundled unbundling 完成（1087 item 3）。
+
+## 2026-09-18（续 1203）
+
+- 不变量 1086；语料 C1064；模式 name-the-vfwhen-notverif-bar；反模式 vfwhen-notverif-sold-as-bundled；L10.3 第 1055 条。填 L4.4 / CometBFT 档案 signed Precommit calls Verify not already verified / not already accept / not already local-skip 正式三事（435 余量）。435 verify-formal-when vs flow bundled unbundling 续（1086 item 2）。
+
+## 2026-09-18（续 1202）
+
+- 不变量 1085；语料 C1063；模式 name-the-vfwhen-notskip-bar；反模式 vfwhen-notskip-sold-as-bundled；L10.3 第 1054 条。填 L4.4 / CometBFT 档案 Precommit unsigned discard not already skip-verify / not already verified / not already accept 正式三事（435 余量）。435 verify-formal-when vs flow bundled unbundling 启动（1085 item 1）。
+
 ## 2026-09-18（续 1201）
 
 - 不变量 1084；语料 C1062；模式 name-the-eresp-nottable-bar；反模式 eresp-nottable-sold-as-bundled；L10.3 第 1053 条。填 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-ext-table / not already skip-verify / not already same-copy 正式三事（418 余量）。418 extresp vs wrap bundled unbundling 完成（1084 item 3）。

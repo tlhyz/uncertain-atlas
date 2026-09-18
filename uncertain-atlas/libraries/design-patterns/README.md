@@ -1,3 +1,6 @@
+- [`name-the-vfwhen-notcommit-bar.md`](name-the-vfwhen-notcommit-bar.md) — ACCEPT keep / REJECT discard not already last-commit / not already late-verified / not already block-invalid 正式三事（435 余量）（不变量 1087）
+- [`name-the-vfwhen-notverif-bar.md`](name-the-vfwhen-notverif-bar.md) — signed Precommit calls Verify not already verified / not already accept / not already local-skip 正式三事（435 余量）（不变量 1086）
+- [`name-the-vfwhen-notskip-bar.md`](name-the-vfwhen-notskip-bar.md) — Precommit unsigned discard not already skip-verify / not already verified / not already accept 正式三事（435 余量）（不变量 1085）
 - [`name-the-eresp-nottable-bar.md`](name-the-eresp-nottable-bar.md) — VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-ext-table / not already skip-verify / not already same-copy 正式三事（418 余量）（不变量 1084）
 - [`name-the-eresp-notraw-bar.md`](name-the-eresp-notraw-bar.md) — ExtendVoteResponse.non_rp_extension not already signed-as-is / not already replay-protected / not already must-fill 正式三事（418 余量）（不变量 1083）
 - [`name-the-eresp-notwrap-bar.md`](name-the-eresp-notwrap-bar.md) — ExtendVoteResponse.vote_extension not already canonical-wrapped / not already same-ext / not already settled 正式三事（418 余量）（不变量 1082）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见收到 Precommit 就已经跳过 Verify、已经验过扩展、已经写进 last_commit」，必须分开 Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify 是不是已经跳过 Verify、带有效签就会调 VerifyVoteExtension 是不是已经验过扩展、ACCEPT 留给 h+1 Prepare / REJECT 丢掉 Precommit 是不是已经写进 last_commit。可以跳过「看见收到 Precommit 就已经验过扩展」。不要另写怎样写 Verify When 正式流程。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见收到 Precommit 就已经跳过 Verify、已经验过扩展、已经写进 last_commit」，必须分开 Precommit 没有带有效签的扩展就会当非法丢掉、不调 Verify 是不是已经跳过 Verify、带有效签就会调 VerifyVoteExtension 是不是已经验过扩展、ACCEPT 留给 h+1 Prepare / REJECT 丢掉 Precommit 是不是已经写进 last_commit。可以跳过「看见收到 Precommit 就已经验过扩展」。不要另写怎样写 Verify When 正式流程。435 verify-formal-when vs flow bundled unbundling 完成（1085 item 1 / 1086 item 2 / 1087 item 3）；精读 [`worked-example-vfwhen-notskip-vs-bundled.md`](worked-example-vfwhen-notskip-vs-bundled.md)（不变量 1085 item 1）。
 
 ## 本页不抄
 

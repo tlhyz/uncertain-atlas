@@ -1,3 +1,18 @@
+| A5195 | 记录 | 会与 435 / 352 / 409 / 1085 / 1086 糊成「看见 ACCEPT/REJECT 就已经写进 last_commit interchangeable、就已经迟到已验 interchangeable、就已经当成块非法 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ACCEPT keep / REJECT discard not already last-commit / not already late-verified / not already block-invalid 正式三事（435 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。435 verify-formal-when vs flow bundled unbundling 完成（1087 item 3） |
+| A5196 | 高 | 看见收下了 会被写成已经写进 last_commit interchangeable / 352 interchangeable | 官方 Verify When 正式流程 item 3：not already last-commit / not 352 |
+| A5197 | 高 | 看见留给下一高 会被写成已经 Verify 过迟到扩展 interchangeable / 409 interchangeable | 官方 Verify When 正式流程 item 3：not already late-verified / not 409 |
+| A5198 | 高 | 看见丢掉了 会被写成已经当成块非法 interchangeable | 官方 Verify When 正式流程 item 3：not already block-invalid |
+| A5199 | 中 | 怎样写 When 会被抄进不确定 | 不抄。不写怎样写 Verify When 正式流程。不另写 19 节 |
+| A5190 | 记录 | 会与 435 / 434 / 433 / 1085 / 1087 糊成「看见会叫 Verify 就已经验过扩展 interchangeable、就已经 Accept interchangeable、就已经本地票 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 signed Precommit calls Verify not already verified / not already accept / not already local-skip 正式三事（435 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。435 verify-formal-when vs flow bundled unbundling 续（1086 item 2） |
+| A5191 | 高 | 看见会叫 会被写成已经验过扩展 interchangeable / 434 interchangeable | 官方 Verify When 正式流程 item 2：not already verified / not 434 |
+| A5192 | 高 | 看见会调 会被写成已经 Accept interchangeable / 433 interchangeable | 官方 Verify When 正式流程 item 2：not already accept / not 433 |
+| A5193 | 高 | 看见收到他人票 会被写成已经本地票 interchangeable | 官方 Verify When 正式流程 item 2：not already local-skip |
+| A5194 | 中 | 怎样写 When 会被抄进不确定 | 不抄。不写怎样写 Verify When 正式流程。不另写 19 节 |
+| A5185 | 记录 | 会与 435 / 353 / 409 / 1086 / 1087 糊成「看见丢掉无有效签就已经跳过 Verify interchangeable、就已经验过扩展 interchangeable、就已经 Accept interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Precommit unsigned discard not already skip-verify / not already verified / not already accept 正式三事（435 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。435 verify-formal-when vs flow bundled unbundling 启动（1085 item 1） |
+| A5186 | 高 | 看见丢掉了 会被写成已经跳过 Verify interchangeable / 353 interchangeable | 官方 Verify When 正式流程 item 1：not already skip-verify / not 353 |
+| A5187 | 高 | 看见没调 Verify 会被写成已经验过扩展 interchangeable / 409 interchangeable | 官方 Verify When 正式流程 item 1：not already verified / not 409 |
+| A5188 | 高 | 看见没签 会被写成已经 Accept interchangeable | 官方 Verify When 正式流程 item 1：not already accept |
+| A5189 | 中 | 怎样写 When 会被抄进不确定 | 不抄。不写怎样写 Verify When 正式流程。不另写 19 节 |
 | A5180 | 记录 | 会与 418 / 415 / 436 / 1082 / 1083 糊成「看见 Verify non_rp 就已经是 vote_extension 表 interchangeable、就已经跳过 Verify interchangeable、就已经同一份 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 VerifyVoteExtensionRequest.non_rp_vote_extension not already vote-ext-table / not already skip-verify / not already same-copy 正式三事（418 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。418 extresp vs wrap bundled unbundling 完成（1084 item 3） |
 | A5181 | 高 | 看见能空 会被写成已经是 vote_extension 表 interchangeable / 415 interchangeable | 官方扩展回包栏 item 3：not already vote-ext-table / not 415 |
 | A5182 | 高 | 看见由 CometBFT 签 会被写成已经跳过 Verify interchangeable / 436 interchangeable | 官方扩展回包栏 item 3：not already skip-verify / not 436 |
