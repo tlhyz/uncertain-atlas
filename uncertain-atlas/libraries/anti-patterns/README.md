@@ -1,3 +1,6 @@
+- [`vacdef-not341-sold-as-bundled.md`](vacdef-not341-sold-as-bundled.md) — 默认 Accept 被写成已经是 457 bundled / 就已经是 341 通则 / 就已经 SHOULD always set（不变量 1339）
+- [`vacdef-notrej-sold-as-bundled.md`](vacdef-notrej-sold-as-bundled.md) — REJECT 拒整张票 被写成已经不能 Reject / 就已经是回包栏 / 就已经 When REJECT discard（不变量 1338）
+- [`vacdef-notcant-sold-as-bundled.md`](vacdef-notcant-sold-as-bundled.md) — SHOULD Accept 默认策略 被写成已经是 457 bundled / 就不能 Reject / 就已经 MUST Accept（不变量 1337）
 - [`vwkeep-notrej-sold-as-bundled.md`](vwkeep-notrej-sold-as-bundled.md) — REJECT 丢掉 被写成已经是 Verify When bundled / 就已经 step 1 discard / 就已经当成块非法（不变量 1336）
 - [`vwkeep-notpop-sold-as-bundled.md`](vwkeep-notpop-sold-as-bundled.md) — h+1 Prepare 填 ExtendedCommitInfo 被写成已经写进 last_commit / 就已经进了块 / 就已经同一路（不变量 1335）
 - [`vwkeep-notkeep-sold-as-bundled.md`](vwkeep-notkeep-sold-as-bundled.md) — ACCEPT 留下 被写成已经是 Verify When bundled / 就已经写进 last_commit / 就已经迟到扩展 Verify 过（不变量 1334）

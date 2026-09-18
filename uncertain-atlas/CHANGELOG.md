@@ -1,3 +1,15 @@
+## 2026-09-18（续 1456）
+
+- 不变量 1339；语料 C1317；模式 name-the-vacdef-not341-bar；反模式 vacdef-not341-sold-as-bundled；L10.3 第 1308 条。填 L4.4 VerifyAcceptDef default not already 457-bundled / not already 341-general / not already 527-always 正式三事（529 余量）。529 VerifyVoteExtension Usage SHOULD Accept default bundled unbundling 完成（1339 item 3）。
+
+## 2026-09-18（续 1455）
+
+- 不变量 1338；语料 C1316；模式 name-the-vacdef-notrej-bar；反模式 vacdef-notrej-sold-as-bundled；L10.3 第 1307 条。填 L4.4 VerifyAcceptDef REJECT-path not already can't-Reject / not already 433-bundled / not already 517-discard 正式三事（529 余量）。529 VerifyVoteExtension Usage SHOULD Accept default bundled unbundling 续（1338 item 2）。
+
+## 2026-09-18（续 1454）
+
+- 不变量 1337；语料 C1315；模式 name-the-vacdef-notcant-bar；反模式 vacdef-notcant-sold-as-bundled；L10.3 第 1306 条。填 L4.4 VerifyAcceptDef default not already 457-bundled / not already can't-Reject / not already MUST-Accept 正式三事（529 余量）。529 VerifyVoteExtension Usage SHOULD Accept default bundled unbundling 启动（1337 item 1）。
+
 ## 2026-09-18（续 1453）
 
 - 不变量 1336；语料 C1314；模式 name-the-vwkeep-notrej-bar；反模式 vwkeep-notrej-sold-as-bundled；L10.3 第 1305 条。填 L4.4 VerifyKeep REJECT-discard not already Verify-When / not already step-1-discard / not already block-invalid 正式三事（517 余量）。517 VerifyVoteExtension When keepdiscard bundled unbundling 完成（1336 item 3）。

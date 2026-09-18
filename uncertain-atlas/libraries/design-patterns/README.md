@@ -1,3 +1,6 @@
+- [`name-the-vacdef-not341-bar.md`](name-the-vacdef-not341-bar.md) — VerifyAcceptDef default not already 457-bundled / not already 341-general / not already 527-always 正式三事（529 余量）（不变量 1339）
+- [`name-the-vacdef-notrej-bar.md`](name-the-vacdef-notrej-bar.md) — VerifyAcceptDef REJECT-path not already can't-Reject / not already 433-bundled / not already 517-discard 正式三事（529 余量）（不变量 1338）
+- [`name-the-vacdef-notcant-bar.md`](name-the-vacdef-notcant-bar.md) — VerifyAcceptDef default not already 457-bundled / not already can't-Reject / not already MUST-Accept 正式三事（529 余量）（不变量 1337）
 - [`name-the-vwkeep-notrej-bar.md`](name-the-vwkeep-notrej-bar.md) — VerifyKeep REJECT-discard not already Verify-When / not already step-1-discard / not already block-invalid 正式三事（517 余量）（不变量 1336）
 - [`name-the-vwkeep-notpop-bar.md`](name-the-vwkeep-notpop-bar.md) — VerifyKeep h+1-Prepare not already last_commit / not already in-block / not already same-path 正式三事（517 余量）（不变量 1335）
 - [`name-the-vwkeep-notkeep-bar.md`](name-the-vwkeep-notkeep-bar.md) — VerifyKeep ACCEPT-keep not already Verify-When / not already last_commit / not already late-verified 正式三事（517 余量）（不变量 1334）
