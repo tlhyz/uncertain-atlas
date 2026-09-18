@@ -1,3 +1,6 @@
+- [`name-the-sugval-notreverify-bar.md`](name-the-sugval-notreverify-bar.md) — SuggestValidate not-reverify not already verified / not already called-again / not already MAY-add-without-Verify 正式三事（520 余量）（不变量 1318）
+- [`name-the-sugval-notcall-bar.md`](name-the-sugval-notcall-bar.md) — SuggestValidate same-manner not already step-2-call / not already Verify-When / not already MUST-det 正式三事（520 余量）（不变量 1317）
+- [`name-the-sugval-notmust-bar.md`](name-the-sugval-notmust-bar.md) — SuggestValidate suggested not already late-ext / not already engine-re-Verify / not already Accept 正式三事（520 余量）（不变量 1316）
 - [`name-the-whenret-notuse-bar.md`](name-the-whenret-notuse-bar.md) — PrepareWhenRet use-as-proposal not already validValue-skip / not already txs-equal / not already eight-cols 正式三事（506 余量）（不变量 1315）
 - [`name-the-whenret-notret-bar.md`](name-the-whenret-notret-bar.md) — PrepareWhenRet returns not already Process-follows-Prepare / not already sync-blocks / not already Process-all-info 正式三事（506 余量）（不变量 1314）
 - [`name-the-whenret-notlist-bar.md`](name-the-whenret-notlist-bar.md) — PrepareWhenRet return-list not already raw-proposal / not already manipulate / not already Response-txs 正式三事（506 余量）（不变量 1313）

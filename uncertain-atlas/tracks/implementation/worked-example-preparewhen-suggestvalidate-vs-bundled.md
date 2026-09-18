@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When suggested validate like Verify 正式三事，必须分开 it is suggested 是不是已经是引擎会再 Verify interchangeable / 已经 Accept interchangeable、same manner as VerifyVoteExtension 是不是 step 2 call bundled interchangeable / 已经 CometBFT 会叫 interchangeable、not engine re-Verify 是不是已经 Verify 过 interchangeable / 已经又叫了 Verify interchangeable。可以跳过「看见建议按 Verify 同款逻辑再看一遍就已经是引擎会再 Verify interchangeable」。不要另写怎样再验迟到扩展。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When suggested validate like Verify 正式三事，必须分开 it is suggested 是不是已经是引擎会再 Verify interchangeable / 已经 Accept interchangeable、same manner as VerifyVoteExtension 是不是 step 2 call bundled interchangeable / 已经 CometBFT 会叫 interchangeable、not engine re-Verify 是不是已经 Verify 过 interchangeable / 已经又叫了 Verify interchangeable。可以跳过「看见建议按 Verify 同款逻辑再看一遍就已经是引擎会再 Verify interchangeable」。520 PrepareProposal When suggestvalidate bundled unbundling 完成（1316 item 1 / 1317 item 2 / 1318 item 3）；精读 [`worked-example-sugval-notmust-vs-bundled.md`](worked-example-sugval-notmust-vs-bundled.md)（不变量 1316 item 1）、[`worked-example-sugval-notcall-vs-bundled.md`](worked-example-sugval-notcall-vs-bundled.md)（不变量 1317 item 2）、[`worked-example-sugval-notreverify-vs-bundled.md`](worked-example-sugval-notreverify-vs-bundled.md)（不变量 1318 item 3）。不要另写怎样再验迟到扩展。
 
 ## 本页不抄
 

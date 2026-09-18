@@ -1,3 +1,6 @@
+- [`sugval-notreverify-sold-as-bundled.md`](sugval-notreverify-sold-as-bundled.md) — 不是引擎再 Verify 被写成已经 Verify 过 / 就已经又叫了 Verify / 就已经 MAY add without Verify（不变量 1318）
+- [`sugval-notcall-sold-as-bundled.md`](sugval-notcall-sold-as-bundled.md) — 按 Verify 同款逻辑 被写成已经 step 2 call / 引擎就会叫 / 就已经 MUST deterministic（不变量 1317）
+- [`sugval-notmust-sold-as-bundled.md`](sugval-notmust-sold-as-bundled.md) — 建议自验 被写成已经迟到扩展 / 就已经是引擎会再 Verify / 就已经 Accept（不变量 1316）
 - [`whenret-notuse-sold-as-bundled.md`](whenret-notuse-sold-as-bundled.md) — 用改过的块当提案 被写成已经 validValue 跳过 / 就已经 txs 对得上 / 就已经 Process 八栏齐（不变量 1315）
 - [`whenret-notret-sold-as-bundled.md`](whenret-notret-sold-as-bundled.md) — 从 Prepare 调用返回 被写成已经 Process 紧跟 Prepare / 就已经同步在等 / 就已经 Process 八栏（不变量 1314）
 - [`whenret-notlist-sold-as-bundled.md`](whenret-notlist-sold-as-bundled.md) — 回包带交易列表 被写成已经 raw proposal / 就已经能改列表 / 就已经是 Response 栏 txs（不变量 1313）
