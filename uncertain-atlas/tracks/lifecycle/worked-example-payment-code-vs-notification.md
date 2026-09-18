@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出可复用收款码，必须分开付款码、通知、存款地址。可以跳过「看见公开码就已经付到链上」。若对照，必须分开本页通知和 352 那种不必通知。不要另写怎样做 ECDH 或怎样拼通知。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出可复用收款码，必须分开付款码、通知、存款地址。可以跳过「看见公开码就已经付到链上」。若对照，必须分开本页通知和 352 那种不必通知。不要另写怎样做 ECDH 或怎样拼通知。273 payment code vs notification bundled unbundling 完成（1223 item 1 / 1224 item 2 / 1225 item 3）；精读 [`worked-example-pc47-notdep-vs-bundled.md`](worked-example-pc47-notdep-vs-bundled.md)（不变量 1223 item 1）。
 
 ## 本页不抄
 

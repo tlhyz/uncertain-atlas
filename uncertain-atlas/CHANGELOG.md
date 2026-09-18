@@ -1,3 +1,15 @@
+## 2026-09-18（续 1342）
+
+- 不变量 1225；语料 C1203；模式 name-the-pc47-notagain-bar；反模式 pc47-notagain-sold-as-bundled；L10.3 第 1194 条。填 L0.7 / L1.4 / L3.6 BIP-47 first-pay not already skip-notify / not already recovered / not already settled 正式三事（273 余量）。273 payment code vs notification bundled unbundling 完成（1225 item 3）。
+
+## 2026-09-18（续 1341）
+
+- 不变量 1224；语料 C1202；模式 name-the-pc47-notnote-bar；反模式 pc47-notnote-sold-as-bundled；L10.3 第 1193 条。填 L0.7 / L1.4 / L3.6 BIP-47 notification not already payment / not already spendable / not already settled 正式三事（273 余量）。273 payment code vs notification bundled unbundling 续（1224 item 2）。
+
+## 2026-09-18（续 1340）
+
+- 不变量 1223；语料 C1201；模式 name-the-pc47-notdep-bar；反模式 pc47-notdep-sold-as-bundled；L10.3 第 1192 条。填 L0.7 / L1.4 / L3.6 BIP-47 payment-code not already deposit / not already paid / not already settled 正式三事（273 余量）。273 payment code vs notification bundled unbundling 启动（1223 item 1）。
+
 ## 2026-09-18（续 1339）
 
 - 不变量 1222；语料 C1200；模式 name-the-dns353-notcache-bar；反模式 dns353-notcache-sold-as-bundled；L10.3 第 1191 条。填 L0.7 / L3.6 BIP-353 cache-copy not already current-uri / not already quote-live / not already settled 正式三事（261 余量）。261 dns name vs instruction bundled unbundling 完成（1222 item 3）。

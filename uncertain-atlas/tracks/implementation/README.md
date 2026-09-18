@@ -902,6 +902,9 @@
 - [`worked-example-enc38-notmint-vs-bundled.md`](worked-example-enc38-notmint-vs-bundled.md) — 厂家代生成≠already redeemable/same-path/settled；≠296 bundled（不变量 1206）
 - [`worked-example-enc38-notuse-vs-bundled.md`](worked-example-enc38-notuse-vs-bundled.md) — 加密记录≠already private-key/usable/settled；≠296 bundled（不变量 1205）
 - [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）
+- [`../lifecycle/worked-example-pc47-notagain-vs-bundled.md`](../lifecycle/worked-example-pc47-notagain-vs-bundled.md) — 第一次付款≠already skip-notify/recovered/settled；≠273 bundled（不变量 1225）
+- [`../lifecycle/worked-example-pc47-notnote-vs-bundled.md`](../lifecycle/worked-example-pc47-notnote-vs-bundled.md) — 通知输出≠already payment/spendable/settled；≠273 bundled（不变量 1224）
+- [`../lifecycle/worked-example-pc47-notdep-vs-bundled.md`](../lifecycle/worked-example-pc47-notdep-vs-bundled.md) — 付款码≠already deposit/paid/settled；≠273 bundled（不变量 1223）
 - [`../lifecycle/worked-example-dns353-notcache-vs-bundled.md`](../lifecycle/worked-example-dns353-notcache-vs-bundled.md) — 缓存复制≠already current-uri/quote-live/settled；≠261 bundled（不变量 1222）
 - [`../lifecycle/worked-example-dns353-nottxt-vs-bundled.md`](../lifecycle/worked-example-dns353-nottxt-vs-bundled.md) — TXT≠already legal/remote-verified/settled；≠261 bundled（不变量 1221）
 - [`../lifecycle/worked-example-dns353-notpref-vs-bundled.md`](../lifecycle/worked-example-dns353-notpref-vs-bundled.md) — 可读名字≠already prefer-dns/better/settled；≠261 bundled（不变量 1220）

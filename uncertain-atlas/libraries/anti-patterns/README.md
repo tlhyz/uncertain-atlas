@@ -1,3 +1,6 @@
+- [`pc47-notagain-sold-as-bundled.md`](pc47-notagain-sold-as-bundled.md) — 第一次付款 被写成已经不必再通知 / 已经可以免通知 / 已经是本页（不变量 1225）
+- [`pc47-notnote-sold-as-bundled.md`](pc47-notnote-sold-as-bundled.md) — 通知输出 被写成已经是付款 / 已经付到存款地址 / 已经能花（不变量 1224）
+- [`pc47-notdep-sold-as-bundled.md`](pc47-notdep-sold-as-bundled.md) — 付款码 被写成已经是存款地址 / 已经付过 / 已经交差（不变量 1223）
 - [`dns353-notcache-sold-as-bundled.md`](dns353-notcache-sold-as-bundled.md) — 缓存复制 被写成已经当前 URI / 报价还有效 / 已经不复用（不变量 1222）
 - [`dns353-nottxt-sold-as-bundled.md`](dns353-nottxt-sold-as-bundled.md) — TXT 被写成已经合法付款指示 / 已经核过 / 已经是能付 URI（不变量 1221）
 - [`dns353-notpref-sold-as-bundled.md`](dns353-notpref-sold-as-bundled.md) — 可读名字 被写成已经该走 DNS / 已经写进标签 / 已经是本页（不变量 1220）

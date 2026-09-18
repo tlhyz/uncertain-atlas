@@ -1,3 +1,18 @@
+| A5890 | 记录 | 会与 273 / 260 / 258 / 1223 / 1224 糊成「看见第一次付款就已经不必再发通知 interchangeable、就已经可以免通知 interchangeable、就已经是本页 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-47 first-pay not already skip-notify / not already recovered / not already settled 正式三事（273 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。273 payment code vs notification bundled unbundling 完成（1225 item 3） |
+| A5891 | 高 | 看见第一次付款 会被写成已经不必再发通知 interchangeable / 260 interchangeable | 官方 BIP-47 paycode item 3：not already skip-notify / not 260 |
+| A5892 | 高 | 看见已经收过 会被写成已经可以免通知 interchangeable / 258 interchangeable | 官方 BIP-47 paycode item 3：not already recovered / not 258 |
+| A5893 | 高 | 看见 352 不必通知 会被写成已经是本页 interchangeable | 官方 BIP-47 paycode item 3：not already settled |
+| A5894 | 中 | 怎样做 ECDH 或怎样拼通知会被抄进不确定 | 不抄。不写怎样做 ECDH 或怎样拼通知。不另写 19 节 |
+| A5885 | 记录 | 会与 273 / 174 / 182 / 1223 / 1225 糊成「看见通知交易就已经是付款 interchangeable、就已经付到存款地址 interchangeable、就已经能花 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-47 notification not already payment / not already spendable / not already settled 正式三事（273 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。273 payment code vs notification bundled unbundling 续（1224 item 2） |
+| A5886 | 高 | 看见通知交易 会被写成已经是付款 interchangeable / 174 interchangeable | 官方 BIP-47 paycode item 2：not already payment / not 174 |
+| A5887 | 高 | 看见通知地址进了币 会被写成已经付到存款地址 interchangeable / 182 interchangeable | 官方 BIP-47 paycode item 2：not already spendable / not 182 |
+| A5888 | 高 | 看见通知输出 会被写成已经能花 interchangeable | 官方 BIP-47 paycode item 2：not already settled |
+| A5889 | 中 | 怎样做 ECDH 或怎样拼通知会被抄进不确定 | 不抄。不写怎样做 ECDH 或怎样拼通知。不另写 19 节 |
+| A5880 | 记录 | 会与 273 / 260 / 255 / 1224 / 1225 糊成「看见付款码就已经是存款地址 interchangeable、就已经付过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-47 payment-code not already deposit / not already paid / not already settled 正式三事（273 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。273 payment code vs notification bundled unbundling 启动（1223 item 1） |
+| A5881 | 高 | 看见付款码 会被写成已经是存款地址 interchangeable / 260 interchangeable | 官方 BIP-47 paycode item 1：not already deposit / not 260 |
+| A5882 | 高 | 看见公开身份 会被写成已经付过 interchangeable / 255 interchangeable | 官方 BIP-47 paycode item 1：not already paid / not 255 |
+| A5883 | 高 | 看见码 会被写成已经交差 interchangeable | 官方 BIP-47 paycode item 1：not already settled |
+| A5884 | 中 | 怎样做 ECDH 或怎样拼通知会被抄进不确定 | 不抄。不写怎样做 ECDH 或怎样拼通知。不另写 19 节 |
 | A5875 | 记录 | 会与 261 / 258 / 255 / 1220 / 1221 糊成「看见复制了可读名字就已经复制了 URI interchangeable、就已经是当前那条 URI interchangeable、就已经不复用 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-353 cache-copy not already current-uri / not already quote-live / not already settled 正式三事（261 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。261 dns name vs instruction bundled unbundling 完成（1222 item 3） |
 | A5876 | 高 | 看见复制了可读名字 会被写成已经复制了 URI interchangeable / 258 interchangeable | 官方 BIP-353 dns item 3：not already current-uri / not 258 |
 | A5877 | 高 | 看见 DNS 还没过期 会被写成里面的报价还有效 interchangeable / 255 interchangeable | 官方 BIP-353 dns item 3：not already quote-live / not 255 |

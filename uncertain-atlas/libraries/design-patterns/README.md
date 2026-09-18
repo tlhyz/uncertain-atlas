@@ -1,3 +1,6 @@
+- [`name-the-pc47-notagain-bar.md`](name-the-pc47-notagain-bar.md) — BIP-47 first-pay not already skip-notify / not already recovered / not already settled 正式三事（273 余量）（不变量 1225）
+- [`name-the-pc47-notnote-bar.md`](name-the-pc47-notnote-bar.md) — BIP-47 notification not already payment / not already spendable / not already settled 正式三事（273 余量）（不变量 1224）
+- [`name-the-pc47-notdep-bar.md`](name-the-pc47-notdep-bar.md) — BIP-47 payment-code not already deposit / not already paid / not already settled 正式三事（273 余量）（不变量 1223）
 - [`name-the-dns353-notcache-bar.md`](name-the-dns353-notcache-bar.md) — BIP-353 cache-copy not already current-uri / not already quote-live / not already settled 正式三事（261 余量）（不变量 1222）
 - [`name-the-dns353-nottxt-bar.md`](name-the-dns353-nottxt-bar.md) — BIP-353 txt not already legal / not already remote-verified / not already settled 正式三事（261 余量）（不变量 1221）
 - [`name-the-dns353-notpref-bar.md`](name-the-dns353-notpref-bar.md) — BIP-353 readable-name not already prefer-dns / not already better / not already settled 正式三事（261 余量）（不变量 1220）
