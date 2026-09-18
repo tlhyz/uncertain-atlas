@@ -1,3 +1,18 @@
+| A6870 | 记录 | 会与 225 / 159 / 169 / 1419 / 1420 糊成「看见津贴帧里写存储会停不是已经能在转账津贴里改槽就已经能在转账津贴里改槽 interchangeable、就已经是 1283 那道洞 interchangeable、就已经是不变量 223 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2200 stipend-ban not already stipend-writable / not already 1283-hole / not already 223 正式三事（225 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。225 net-meter vs transient bundled unbundling 完成（1421 item 3） |
+| A6871 | 高 | 看见津贴帧里写存储会停不是已经能在转账津贴里改槽 会被写成已经能在转账津贴里改槽 interchangeable / 159 interchangeable | 官方 EIP-2200 nmet item 3：not already 已经能在转账津贴里改槽 / not 159 |
+| A6872 | 高 | 看见stipend ban is not already stipend-writable 会被写成已经是 1283 那道洞 interchangeable / 169 interchangeable | 官方 EIP-2200 nmet item 3：not already 已经是 1283 那道洞 / not 169 |
+| A6873 | 高 | 看见津贴帧里写存储会停不是已经能在转账津贴里改槽 会被写成已经是不变量 223 interchangeable | 官方 EIP-2200 nmet item 3：not already settled |
+| A6874 | 中 | 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图会被抄进不确定 | 不抄。不写 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图。不另写 19 节 |
+| A6865 | 记录 | 会与 225 / 169 / 223 / 1419 / 1421 糊成「看见原来值 / 当前值 / 新值不是已经只有当前值就已经只有当前值 interchangeable、就已经是这一上下文第一次写 interchangeable、就已经是 2929 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2200 orig-cur-new not already current-only / not already first-write / not already 2929 正式三事（225 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。225 net-meter vs transient bundled unbundling 续（1420 item 2） |
+| A6866 | 高 | 看见原来值 / 当前值 / 新值不是已经只有当前值 会被写成已经只有当前值 interchangeable / 169 interchangeable | 官方 EIP-2200 nmet item 2：not already 已经只有当前值 / not 169 |
+| A6867 | 高 | 看见three values are not already current-only 会被写成已经是这一上下文第一次写 interchangeable / 223 interchangeable | 官方 EIP-2200 nmet item 2：not already 已经是这一上下文第一次写 / not 223 |
+| A6868 | 高 | 看见原来值 / 当前值 / 新值不是已经只有当前值 会被写成已经是 2929 interchangeable | 官方 EIP-2200 nmet item 2：not already settled |
+| A6869 | 中 | 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图会被抄进不确定 | 不抄。不写 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图。不另写 19 节 |
+| A6860 | 记录 | 会与 225 / 159 / 223 / 1420 / 1421 糊成「看见净计量不是已经是瞬时存储就已经是瞬时存储 interchangeable、就已经是 1153 interchangeable、就已经 225 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2200 net-meter not already transient / not already 1153 / not already 225-bundled 正式三事（225 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。225 net-meter vs transient bundled unbundling 启动（1419 item 1） |
+| A6861 | 高 | 看见净计量不是已经是瞬时存储 会被写成已经是瞬时存储 interchangeable / 159 interchangeable | 官方 EIP-2200 nmet item 1：not already 已经是瞬时存储 / not 159 |
+| A6862 | 高 | 看见net metering is not already transient storage 会被写成已经是 1153 interchangeable / 223 interchangeable | 官方 EIP-2200 nmet item 1：not already 已经是 1153 / not 223 |
+| A6863 | 高 | 看见净计量不是已经是瞬时存储 会被写成已经 225 bundled interchangeable | 官方 EIP-2200 nmet item 1：not already settled |
+| A6864 | 中 | 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图会被抄进不确定 | 不抄。不写 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图。不另写 19 节 |
 | A6855 | 记录 | 会与 224 / 160 / 223 / 1416 / 1417 糊成「看见「以后可能变」不是已经变了就已经变了 interchangeable、就已经是不变量 160 interchangeable、就已经是不变量 223 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。224 deprecate vs changed bundled unbundling 完成（1418 item 3） |
 | A6856 | 高 | 看见「以后可能变」不是已经变了 会被写成已经变了 interchangeable / 160 interchangeable | 官方 EIP-6049 depre item 3：not already 已经变了 / not 160 |
 | A6857 | 高 | 看见later-may-change is not already changed 会被写成已经是不变量 160 interchangeable / 223 interchangeable | 官方 EIP-6049 depre item 3：not already 已经是不变量 160 / not 223 |

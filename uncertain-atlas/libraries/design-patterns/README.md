@@ -1,3 +1,6 @@
+- [`name-the-nmet-notstip-bar.md`](name-the-nmet-notstip-bar.md) — EIP-2200 stipend-ban not already stipend-writable / not already 1283-hole / not already 223 正式三事（225 余量）（不变量 1421）
+- [`name-the-nmet-notcur-bar.md`](name-the-nmet-notcur-bar.md) — EIP-2200 orig-cur-new not already current-only / not already first-write / not already 2929 正式三事（225 余量）（不变量 1420）
+- [`name-the-nmet-not1153-bar.md`](name-the-nmet-not1153-bar.md) — EIP-2200 net-meter not already transient / not already 1153 / not already 225-bundled 正式三事（225 余量）（不变量 1419）
 - [`name-the-depre-notdone-bar.md`](name-the-depre-notdone-bar.md) — EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）（不变量 1418）
 - [`name-the-depre-notcli-bar.md`](name-the-depre-notcli-bar.md) — EIP-6049 meta-page not already client-changed / not already instruction-removed / not already 3529 正式三事（224 余量）（不变量 1417）
 - [`name-the-depre-notcons-bar.md`](name-the-depre-notcons-bar.md) — EIP-6049 deprecate-warn not already consensus-changed / not already 6780 / not already 224-bundled 正式三事（224 余量）（不变量 1416）

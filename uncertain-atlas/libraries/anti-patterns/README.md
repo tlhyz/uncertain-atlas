@@ -1,3 +1,6 @@
+- [`nmet-notstip-sold-as-bundled.md`](nmet-notstip-sold-as-bundled.md) — 津贴帧禁写 被写成已经能在津贴里改槽 / 就已经是 1283 洞 / 就已经是 223（不变量 1421）
+- [`nmet-notcur-sold-as-bundled.md`](nmet-notcur-sold-as-bundled.md) — 三值 被写成已经只有当前值 / 就已经是第一次写 / 就已经是 2929（不变量 1420）
+- [`nmet-not1153-sold-as-bundled.md`](nmet-not1153-sold-as-bundled.md) — 净计量 被写成已经是瞬时存储 / 就已经是 1153 / 就已经 225 bundled（不变量 1419）
 - [`depre-notdone-sold-as-bundled.md`](depre-notdone-sold-as-bundled.md) — 以后可能变 被写成已经变了 / 就已经是 160 / 就已经是 223（不变量 1418）
 - [`depre-notcli-sold-as-bundled.md`](depre-notcli-sold-as-bundled.md) — 元层页 被写成已经改了客户端 / 就已经删掉指令 / 就已经是 3529（不变量 1417）
 - [`depre-notcons-sold-as-bundled.md`](depre-notcons-sold-as-bundled.md) — 弃用警告 被写成已经改了共识 / 就已经是 6780 / 就已经 224 bundled（不变量 1416）

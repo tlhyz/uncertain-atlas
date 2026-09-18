@@ -1,3 +1,15 @@
+## 2026-09-18（续 1538）
+
+- 不变量 1421；语料 C1399；模式 name-the-nmet-notstip-bar；反模式 nmet-notstip-sold-as-bundled；L10.3 第 1390 条。填 L5.1 EIP-2200 stipend-ban not already stipend-writable / not already 1283-hole / not already 223 正式三事（225 余量）。225 net-meter vs transient bundled unbundling 完成（1421 item 3）。
+
+## 2026-09-18（续 1537）
+
+- 不变量 1420；语料 C1398；模式 name-the-nmet-notcur-bar；反模式 nmet-notcur-sold-as-bundled；L10.3 第 1389 条。填 L5.1 EIP-2200 orig-cur-new not already current-only / not already first-write / not already 2929 正式三事（225 余量）。225 net-meter vs transient bundled unbundling 续（1420 item 2）。
+
+## 2026-09-18（续 1536）
+
+- 不变量 1419；语料 C1397；模式 name-the-nmet-not1153-bar；反模式 nmet-not1153-sold-as-bundled；L10.3 第 1388 条。填 L5.1 EIP-2200 net-meter not already transient / not already 1153 / not already 225-bundled 正式三事（225 余量）。225 net-meter vs transient bundled unbundling 启动（1419 item 1）。
+
 ## 2026-09-18（续 1535）
 
 - 不变量 1418；语料 C1396；模式 name-the-depre-notdone-bar；反模式 depre-notdone-sold-as-bundled；L10.3 第 1387 条。填 L5.1 EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）。224 deprecate vs changed bundled unbundling 完成（1418 item 3）。

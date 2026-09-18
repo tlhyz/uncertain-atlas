@@ -1020,6 +1020,9 @@
 - [`worked-example-depre-notcli-vs-bundled.md`](worked-example-depre-notcli-vs-bundled.md) — 元层页≠already 改了客户端/已删指令/3529；≠224 bundled（不变量 1417）
 - [`worked-example-depre-notdone-vs-bundled.md`](worked-example-depre-notdone-vs-bundled.md) — 以后可能变≠already 已经变了/160/223；≠224 bundled（不变量 1418）
 - [`worked-example-deprecate-vs-changed.md`](worked-example-deprecate-vs-changed.md) — 看见弃用警告 ≠ 已经改了共识行为；看见本页 ≠ 已经改了客户端；看见「以后可能变」≠ 已经变了；6049 ≠ 6780 ≠ 160 ≠ 223（不变量 224）
+- [`worked-example-nmet-not1153-vs-bundled.md`](worked-example-nmet-not1153-vs-bundled.md) — 净计量≠already 瞬时存储/1153/225 bundled；≠225 bundled（不变量 1419）
+- [`worked-example-nmet-notcur-vs-bundled.md`](worked-example-nmet-notcur-vs-bundled.md) — 原来值当前值新值≠already 只有当前值/第一次写/2929；≠225 bundled（不变量 1420）
+- [`worked-example-nmet-notstip-vs-bundled.md`](worked-example-nmet-notstip-vs-bundled.md) — 津贴帧禁写≠already 津贴里能改槽/1283洞/223；≠225 bundled（不变量 1421）
 - [`worked-example-net-meter-vs-transient.md`](worked-example-net-meter-vs-transient.md) — 看见净计量 ≠ 已经是瞬时存储；看见原来值 / 当前值 / 新值 ≠ 已经只有当前值；看见津贴帧禁写 ≠ 已经能改槽；2200 ≠ 1153 ≠ 159 ≠ 3529 ≠ 223（不变量 225）
 - [`worked-example-calldata-cut-vs-unlimited.md`](worked-example-calldata-cut-vs-unlimited.md) — 看见非零 calldata 降价 ≠ 已经给零字节也降价；看见降价 ≠ 已经没有块大小上限；看见降价 ≠ 已经不伤延迟 / 安全；2028 ≠ 7623 ≠ 197 ≠ 4844 ≠ 145（不变量 226）
 - [`worked-example-modexp-price-vs-bound.md`](worked-example-modexp-price-vs-bound.md) — 看见模幂重计价 ≠ 已经是 198 那道复杂度公式；看见更便宜 ≠ 已经改了接口或算法；看见最低气价 ≠ 已经能对小输入无限便宜；2565 ≠ 7823 ≠ 206 ≠ 198 原文（不变量 227）
