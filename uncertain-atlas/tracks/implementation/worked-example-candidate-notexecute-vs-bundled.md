@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看候选不是已经是 ExecuteTxState not already ExecuteTxState / not already can name this height final / not already settled 正式三事（311 余量），必须分开立刻执行 是不是 already ExecuteTxState interchangeable / 311 candidate bundled interchangeable / 33 four gates interchangeable、内存里有 是不是 already can name this height final interchangeable、能加快 Finalize 是不是 already settled interchangeable / 403 finafter interchangeable。可以跳过「看见立刻执行 就已经进工作状态 interchangeable / 就已经能预测 Finalize 交哪一块 interchangeable / 就已经交差 interchangeable」。不要另写怎样缓存候选。311 candidate vs execute bundled unbundling 在本页 item 2 完成；续 [`worked-example-candidate-notdiscarded-vs-bundled.md`](worked-example-candidate-notdiscarded-vs-bundled.md)（不变量 694 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看候选不是已经是 ExecuteTxState not already ExecuteTxState / not already can name this height final / not already settled 正式三事（311 余量），必须分开立刻执行 是不是 already ExecuteTxState interchangeable / 311 candidate bundled interchangeable / 33 four gates interchangeable、内存里有 是不是 already can name this height final interchangeable、能加快 Finalize 是不是 already settled interchangeable / 403 finafter interchangeable。可以跳过「看见立刻执行 就已经进工作状态 interchangeable / 就已经能预测 Finalize 交哪一块 interchangeable / 就已经交差 interchangeable」。不要另写怎样缓存候选。311 candidate vs execute bundled unbundling 在本页 item 2 完成；完成见 [`worked-example-candidate-notdiscarded-vs-bundled.md`](worked-example-candidate-notdiscarded-vs-bundled.md)（不变量 694 item 3）。
 
 ## 本页不抄
 
