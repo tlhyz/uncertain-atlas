@@ -1,3 +1,7 @@
+## 2026-09-18（续 806）
+
+- 不变量 689；语料 C666；模式 name-the-commitlock-notrpcsafe-bar；反模式 commitlock-notrpcsafe-sold-as-bundled；L10.3 第 658 条。填 L4.4 / CometBFT 档案 default global lock not already RPC safe / not already no concurrency / not already changed lock 正式三事（310 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。310 commitlock vs RPC bundled unbundling 启动（689 item 1）。
+
 ## 2026-09-18（续 805）
 
 - 不变量 688；语料 C665；模式 name-the-crashsteps-notinfoskip-bar；反模式 crashsteps-notinfoskip-sold-as-bundled；L10.3 第 657 条。填 L4.4 / CometBFT 档案 startup Info not already mid-height resume / not already can skip replay / not InitChain already done 正式三事（320 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。320 crash recovery bundled unbundling 完成（686 + 687 + 688）。

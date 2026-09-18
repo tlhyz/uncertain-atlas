@@ -1,3 +1,4 @@
+- [`commitlock-notrpcsafe-sold-as-bundled.md`](commitlock-notrpcsafe-sold-as-bundled.md) — 默认全局锁 被写成已经能直接给 RPC 读 / 已经没有并发 / 已经换了锁（不变量 689）
 - [`crashsteps-notinfoskip-sold-as-bundled.md`](crashsteps-notinfoskip-sold-as-bundled.md) — 启动 Info 对上 被写成已经能从半截高度接着走 / 已经能跳步 / 已经不用再叫 InitChain（不变量 688）
 - [`crashsteps-notblockstore-sold-as-bundled.md`](crashsteps-notblockstore-sold-as-bundled.md) — 块进 blockstore 被写成已经交差 / 已经 Commit / 已经原子（不变量 687）
 - [`crashsteps-notapptaller-sold-as-bundled.md`](crashsteps-notapptaller-sold-as-bundled.md) — app taller than engine 被写成已经允许 / 已经能各醒各的 / 已经半写原子（不变量 686）

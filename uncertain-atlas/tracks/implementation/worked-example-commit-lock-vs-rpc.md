@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「ABCI 已经接上」，必须分开默认锁是不是已经 RPC 安全、Commit 前上锁是不是已经解锁、Commit 里等广播是不是已经能往下走。可以跳过「看见有锁就已经能直接给 RPC 读」。不要另写怎样加锁或怎样调广播。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「ABCI 已经接上」，必须分开默认锁是不是已经 RPC 安全、Commit 前上锁是不是已经解锁、Commit 里等广播是不是已经能往下走。可以跳过「看见有锁就已经能直接给 RPC 读」。不要另写怎样加锁或怎样调广播。310 commitlock vs RPC bundled unbundling 启动（689 item 1）；精读 [`worked-example-commitlock-notrpcsafe-vs-bundled.md`](worked-example-commitlock-notrpcsafe-vs-bundled.md)（不变量 689 item 1）。
 
 ## 本页不抄
 
