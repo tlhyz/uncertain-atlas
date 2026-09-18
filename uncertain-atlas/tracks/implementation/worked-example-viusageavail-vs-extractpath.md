@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 block_id_flag 就已经奖罚完、Prepare 和 Process 是同一路、已经从块里抽出」，必须分开 VoteInfo 与 ExtendedVoteInfo Usage 都写 allowing for rewards based on validator availability 是不是已经奖罚完 / 已经交差、VoteInfo 通常从拟议块或已决块抽出是不是已经从本进程抽出 / 已经是 Prepare 里的 ExtendedVoteInfo、ExtendedVoteInfo 从本进程 CometBFT 数据结构抽出是不是已经 typically extracted from proposed or decided block / 已经是 Process/Finalize 里的 CommitInfo 同一路。可以跳过「看见 block_id_flag 就已经奖罚完」。不要另写怎样写 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 block_id_flag 就已经奖罚完、Prepare 和 Process 是同一路、已经从块里抽出」，必须分开 VoteInfo 与 ExtendedVoteInfo Usage 都写 allowing for rewards based on validator availability 是不是已经奖罚完 / 已经交差、VoteInfo 通常从拟议块或已决块抽出是不是已经从本进程抽出 / 已经是 Prepare 里的 ExtendedVoteInfo、ExtendedVoteInfo 从本进程 CometBFT 数据结构抽出是不是已经 typically extracted from proposed or decided block / 已经是 Process/Finalize 里的 CommitInfo 同一路。可以跳过「看见 block_id_flag 就已经奖罚完」。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 完成（1374 item 1 / 1375 item 2 / 1376 item 3）；精读 [`worked-example-viaext-notrew-vs-bundled.md`](worked-example-viaext-notrew-vs-bundled.md)（不变量 1374 item 1）、[`worked-example-viaext-notblk-vs-bundled.md`](worked-example-viaext-notblk-vs-bundled.md)（不变量 1375 item 2）、[`worked-example-viaext-notloc-vs-bundled.md`](worked-example-viaext-notloc-vs-bundled.md)（不变量 1376 item 3）。不要另写怎样写 VoteInfo ExtendedVoteInfo Usage 到场定奖惩同句、抽取异路正式三事。
 
 ## 本页不抄
 

@@ -1,3 +1,15 @@
+## 2026-09-18（续 1493）
+
+- 不变量 1376；语料 C1354；模式 name-the-viaext-notloc-bar；反模式 viaext-notloc-sold-as-bundled；L10.3 第 1345 条。填 L4.4 ViAvail ExtendedVoteInfo from local process not already typically-from-block / not already Process VoteInfo / not already 425-flag 正式三事（442 余量）。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 完成（1376 item 3）。
+
+## 2026-09-18（续 1492）
+
+- 不变量 1375；语料 C1353；模式 name-the-viaext-notblk-bar；反模式 viaext-notblk-sold-as-bundled；L10.3 第 1344 条。填 L4.4 ViAvail VoteInfo typically from block not already local-process / not already Prepare ExtendedVoteInfo / not already 369-path 正式三事（442 余量）。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 续（1375 item 2）。
+
+## 2026-09-18（续 1491）
+
+- 不变量 1374；语料 C1352；模式 name-the-viaext-notrew-bar；反模式 viaext-notrew-sold-as-bundled；L10.3 第 1343 条。填 L4.4 ViAvail availability same-sentence not already rewarded / not already settled / not already Finalize-computed 正式三事（442 余量）。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 启动（1374 item 1）。
+
 ## 2026-09-18（续 1490）
 
 - 不变量 1373；语料 C1351；模式 name-the-valuse-notprep-bar；反模式 valuse-notprep-sold-as-bundled；L10.3 第 1342 条。填 L4.4 ValUse Prepare ExtendedCommitInfo Validator not already Process-Finalize CommitInfo / not already interchangeable / not already 369-extract 正式三事（449 余量）。449 Validator Usage four-gate mapping bundled unbundling 完成（1373 item 3）。

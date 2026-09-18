@@ -1,3 +1,6 @@
+- [`viaext-notloc-sold-as-bundled.md`](viaext-notloc-sold-as-bundled.md) — ExtendedVoteInfo from local 被写成已经 typically from block / 就已经是 Process VoteInfo / 就已经 425 罚没（不变量 1376）
+- [`viaext-notblk-sold-as-bundled.md`](viaext-notblk-sold-as-bundled.md) — VoteInfo typically from block 被写成已经从本进程抽出 / 就已经是 Prepare Extended / 就已经 369（不变量 1375）
+- [`viaext-notrew-sold-as-bundled.md`](viaext-notrew-sold-as-bundled.md) — availability 同句 被写成已经奖罚完 / 就已经交差 / 就已经 Finalize 算完（不变量 1374）
 - [`valuse-notprep-sold-as-bundled.md`](valuse-notprep-sold-as-bundled.md) — Prepare Extended Validator 被写成已经是 CommitInfo / 就已经可互换 / 就已经从块抽出（不变量 1373）
 - [`valuse-notfin-sold-as-bundled.md`](valuse-notfin-sold-as-bundled.md) — Finalize decided 被写成已经是 Process proposed / 就已经交差 / 就已经可拿 Prepare 代替（不变量 1372）
 - [`valuse-notproc-sold-as-bundled.md`](valuse-notproc-sold-as-bundled.md) — Process CommitInfo Validator 被写成已经是 Prepare Extended / 就已经是 local_last_commit / 就已经带公钥（不变量 1371）

@@ -6,7 +6,7 @@
 
 本页是量过的库存，不是已经把 74 条平行线快进进 HEAD，也不是已经可以删 remote。
 
-量法：`python3 tools/snapshot_branch_inventory.py`。对照分支是 `origin/cursor/cometbft-*`。首次测量 HEAD 是 `f8a91c71`（Homestead 1346–1349 之后）。本回合已把 unique 9 簇文件收回 canonical，并把 `extappgen` 拆成不变量 1350–1352。其余 8 簇仍是未拆的官方三事父页。
+量法：`python3 tools/snapshot_branch_inventory.py`。对照分支是 `origin/cursor/cometbft-*`。首次测量 HEAD 是 `f8a91c71`（Homestead 1346–1349 之后）。unique 9 簇已收回 canonical，并全部拆完：439/1350–1352、444/1353–1355、441/1356–1358、445/1359–1361、446/1362–1364、447/1365–1367、448/1368–1370、449/1371–1373、442/1374–1376。不要再 checkout superseded 80 份。
 
 ---
 

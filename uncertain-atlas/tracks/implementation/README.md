@@ -1034,6 +1034,9 @@
 - [`worked-example-valuse-notfin-vs-bundled.md`](worked-example-valuse-notfin-vs-bundled.md) — Finalize decided≠already Process proposed/已经交差/Prepare Extended；≠449 bundled（不变量 1372）
 - [`worked-example-valuse-notprep-vs-bundled.md`](worked-example-valuse-notprep-vs-bundled.md) — Prepare Extended Validator≠already Process-Finalize CommitInfo/可互换/369抽出；≠449 bundled（不变量 1373）
 - [`worked-example-validatorusage-vs-gates.md`](worked-example-validatorusage-vs-gates.md) — Validator Usage 四门≠already 同一路 CommitInfo/ExtendedCommitInfo
+- [`worked-example-viaext-notrew-vs-bundled.md`](worked-example-viaext-notrew-vs-bundled.md) — availability同句≠already奖罚完/交差/Finalize算完；≠442 bundled（不变量 1374）
+- [`worked-example-viaext-notblk-vs-bundled.md`](worked-example-viaext-notblk-vs-bundled.md) — VoteInfo typically from block≠already本进程抽出/Prepare Extended/369；≠442 bundled（不变量 1375）
+- [`worked-example-viaext-notloc-vs-bundled.md`](worked-example-viaext-notloc-vs-bundled.md) — ExtendedVoteInfo from local≠already typically from block/Process VoteInfo/425；≠442 bundled（不变量 1376）
 - [`worked-example-viusageavail-vs-extractpath.md`](worked-example-viusageavail-vs-extractpath.md) — availability 同句抽取异路≠already 奖罚完/同一抽出路径
 - [`worked-example-hstead-notfee-vs-bundled.md`](worked-example-hstead-notfee-vs-bundled.md) — 交易创建变贵≠already 改了CREATE/重定价操作码/Homestead四件bundled；≠234 bundled（不变量 1346）
 - [`worked-example-hstead-notsig-vs-bundled.md`](worked-example-hstead-notsig-vs-bundled.md) — 交易拒高s≠already ECRECOVER拒/比特币DER/EIP-155链标识；≠234 bundled（不变量 1347）

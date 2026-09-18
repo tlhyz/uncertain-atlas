@@ -1,3 +1,6 @@
+- [`name-the-viaext-notloc-bar.md`](name-the-viaext-notloc-bar.md) — ViAvail ExtendedVoteInfo from local process not already typically-from-block / not already Process VoteInfo / not already 425-flag 正式三事（442 余量）（不变量 1376）
+- [`name-the-viaext-notblk-bar.md`](name-the-viaext-notblk-bar.md) — ViAvail VoteInfo typically from block not already local-process / not already Prepare ExtendedVoteInfo / not already 369-path 正式三事（442 余量）（不变量 1375）
+- [`name-the-viaext-notrew-bar.md`](name-the-viaext-notrew-bar.md) — ViAvail availability same-sentence not already rewarded / not already settled / not already Finalize-computed 正式三事（442 余量）（不变量 1374）
 - [`name-the-valuse-notprep-bar.md`](name-the-valuse-notprep-bar.md) — ValUse Prepare ExtendedCommitInfo Validator not already Process-Finalize CommitInfo / not already interchangeable / not already 369-extract 正式三事（449 余量）（不变量 1373）
 - [`name-the-valuse-notfin-bar.md`](name-the-valuse-notfin-bar.md) — ValUse Finalize decided_last_commit Validator not already Process proposed / not already settled / not already Prepare-ext 正式三事（449 余量）（不变量 1372）
 - [`name-the-valuse-notproc-bar.md`](name-the-valuse-notproc-bar.md) — ValUse Process CommitInfo Validator not already Prepare ExtendedCommitInfo / not already local_last_commit / not already 364-pubkey 正式三事（449 余量）（不变量 1371）
