@@ -1,3 +1,15 @@
+## 2026-09-18（续 1333）
+
+- 不变量 1216；语料 C1194；模式 name-the-sig322-notfund-bar；反模式 sig322-notfund-sold-as-bundled；L10.3 第 1185 条。填 L0.7 / L1.2 / L3.6 BIP-322 proof-list not already complete / not already unspent / not already settled 正式三事（258 余量）。258 signed message vs control bundled unbundling 完成（1216 item 3）。
+
+## 2026-09-18（续 1332）
+
+- 不变量 1215；语料 C1193；模式 name-the-sig322-notprev-bar；反模式 sig322-notprev-sold-as-bundled；L10.3 第 1184 条。填 L0.7 / L1.2 / L3.6 BIP-322 invoice-control not already previous-tx / not already paid / not already settled 正式三事（258 余量）。258 signed message vs control bundled unbundling 续（1215 item 2）。
+
+## 2026-09-18（续 1331）
+
+- 不变量 1214；语料 C1192；模式 name-the-sig322-notctrl-bar；反模式 sig322-notctrl-sold-as-bundled；L10.3 第 1183 条。填 L0.7 / L1.2 / L3.6 BIP-322 signed-message not already control / not already will-sign-spend / not already settled 正式三事（258 余量）。258 signed message vs control bundled unbundling 启动（1214 item 1）。
+
 ## 2026-09-18（续 1330）
 
 - 不变量 1213；语料 C1191；模式 name-the-uri321-notreq-bar；反模式 uri321-notreq-sold-as-bundled；L10.3 第 1182 条。填 L0.7 / L3.6 BIP-321 required-param not already payable / not already confirmed / not already settled 正式三事（255 余量）。255 uri vs authorized bundled unbundling 完成（1213 item 3）。

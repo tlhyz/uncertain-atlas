@@ -1,3 +1,18 @@
+| A5845 | 记录 | 会与 258 / 255 / 182 / 1214 / 1215 糊成「看见资金证明清单就已经齐 interchangeable、就已经没花 interchangeable、就已经是一笔付款 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.2 / L3.6 BIP-322 proof-list not already complete / not already unspent / not already settled 正式三事（258 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。258 signed message vs control bundled unbundling 完成（1216 item 3） |
+| A5846 | 高 | 看见资金证明清单 会被写成已经齐 interchangeable / 255 interchangeable | 官方 BIP-322 signed item 3：not already complete / not 255 |
+| A5847 | 高 | 看见清单 会被写成已经没花 interchangeable / 182 interchangeable | 官方 BIP-322 signed item 3：not already unspent / not 182 |
+| A5848 | 高 | 看见被证明过的清单 会被写成已经是一笔付款 interchangeable | 官方 BIP-322 signed item 3：not already settled |
+| A5849 | 中 | 怎样拼虚拟交易会被抄进不确定 | 不抄。不写怎样拼虚拟交易。不另写 19 节 |
+| A5840 | 记录 | 会与 258 / 179 / 174 / 1214 / 1216 糊成「看见签过的消息就已经证明发过上一笔 interchangeable、就已经付过 interchangeable、就已经广播过上一笔 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.2 / L3.6 BIP-322 invoice-control not already previous-tx / not already paid / not already settled 正式三事（258 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。258 signed message vs control bundled unbundling 续（1215 item 2） |
+| A5841 | 高 | 看见签过的消息 会被写成已经证明发过上一笔 interchangeable / 179 interchangeable | 官方 BIP-322 signed item 2：not already previous-tx / not 179 |
+| A5842 | 高 | 看见本页覆盖发票地址将来控制 会被写成已经付过 interchangeable / 174 interchangeable | 官方 BIP-322 signed item 2：not already paid / not 174 |
+| A5843 | 高 | 看见签过 会被写成已经广播过上一笔 interchangeable | 官方 BIP-322 signed item 2：not already settled |
+| A5844 | 中 | 怎样拼虚拟交易会被抄进不确定 | 不抄。不写怎样拼虚拟交易。不另写 19 节 |
+| A5835 | 记录 | 会与 258 / 182 / 293 / 1215 / 1216 糊成「看见签过的消息就已经证明能控制资金 interchangeable、就已经肯签真正的交易 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.2 / L3.6 BIP-322 signed-message not already control / not already will-sign-spend / not already settled 正式三事（258 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。258 signed message vs control bundled unbundling 启动（1214 item 1） |
+| A5836 | 高 | 看见签过的消息 会被写成已经证明能控制资金 interchangeable / 182 interchangeable | 官方 BIP-322 signed item 1：not already control / not 182 |
+| A5837 | 高 | 看见验过 会被写成已经肯签真正的交易 interchangeable / 293 interchangeable | 官方 BIP-322 signed item 1：not already will-sign-spend / not 293 |
+| A5838 | 高 | 看见签过 会被写成已经交差 interchangeable | 官方 BIP-322 signed item 1：not already settled |
+| A5839 | 中 | 怎样拼虚拟交易会被抄进不确定 | 不抄。不写怎样拼虚拟交易。不另写 19 节 |
 | A5830 | 记录 | 会与 255 / 181 / 55 / 1211 / 1212 糊成「看见不认识的必选参数就已经能付 interchangeable、就已经确认 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-321 required-param not already payable / not already confirmed / not already settled 正式三事（255 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。255 uri vs authorized bundled unbundling 完成（1213 item 3） |
 | A5831 | 高 | 看见不认识的必选参数 会被写成已经能付 interchangeable / 181 interchangeable | 官方 BIP-321 uri item 3：not already payable / not 181 |
 | A5832 | 高 | 看见打开了回执 会被写成已经确认 interchangeable / 55 interchangeable | 官方 BIP-321 uri item 3：not already confirmed / not 55 |

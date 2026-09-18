@@ -1,3 +1,6 @@
+- [`sig322-notfund-sold-as-bundled.md`](sig322-notfund-sold-as-bundled.md) — 资金证明清单 被写成已经齐 / 已经没花 / 已经是一笔付款（不变量 1216）
+- [`sig322-notprev-sold-as-bundled.md`](sig322-notprev-sold-as-bundled.md) — 发票将来控制 被写成已经证明发过上一笔 / 已经付过 / 已经广播过上一笔（不变量 1215）
+- [`sig322-notctrl-sold-as-bundled.md`](sig322-notctrl-sold-as-bundled.md) — 签过的消息 被写成已经证明能控制资金 / 已经肯签真正的交易 / 已经交差（不变量 1214）
 - [`uri321-notreq-sold-as-bundled.md`](uri321-notreq-sold-as-bundled.md) — 必选参数 被写成已经能付 / 已经确认 / 已经交差（不变量 1213）
 - [`uri321-notempty-sold-as-bundled.md`](uri321-notempty-sold-as-bundled.md) — 路径空 被写成已经没有付款指示 / 已经只有这一种付法 / 已经交差（不变量 1212）
 - [`uri321-notauth-sold-as-bundled.md`](uri321-notauth-sold-as-bundled.md) — 付款 URI 被写成已经授权 / 已经付了 / 已经交差（不变量 1211）

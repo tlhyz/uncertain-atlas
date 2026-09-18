@@ -1,3 +1,6 @@
+- [`name-the-sig322-notfund-bar.md`](name-the-sig322-notfund-bar.md) — BIP-322 proof-list not already complete / not already unspent / not already settled 正式三事（258 余量）（不变量 1216）
+- [`name-the-sig322-notprev-bar.md`](name-the-sig322-notprev-bar.md) — BIP-322 invoice-control not already previous-tx / not already paid / not already settled 正式三事（258 余量）（不变量 1215）
+- [`name-the-sig322-notctrl-bar.md`](name-the-sig322-notctrl-bar.md) — BIP-322 signed-message not already control / not already will-sign-spend / not already settled 正式三事（258 余量）（不变量 1214）
 - [`name-the-uri321-notreq-bar.md`](name-the-uri321-notreq-bar.md) — BIP-321 required-param not already payable / not already confirmed / not already settled 正式三事（255 余量）（不变量 1213）
 - [`name-the-uri321-notempty-bar.md`](name-the-uri321-notempty-bar.md) — BIP-321 empty-path not already no-instruction / not already only-one / not already settled 正式三事（255 余量）（不变量 1212）
 - [`name-the-uri321-notauth-bar.md`](name-the-uri321-notauth-bar.md) — BIP-321 uri not already authorized / not already paid / not already settled 正式三事（255 余量）（不变量 1211）
