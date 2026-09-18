@@ -1,3 +1,6 @@
+- [`ftxs-notexec-sold-as-bundled.md`](ftxs-notexec-sold-as-bundled.md) — Process 整块像 Finalize 被写成已经是 ExecuteTxState / 已经 Finalize + Commit / 已经交差（不变量 1114）
+- [`ftxs-notdec-sold-as-bundled.md`](ftxs-notdec-sold-as-bundled.md) — Process 全部执行信息 被写成已经是刚决定那块的字段 / 已经跑过 Process / 已经交差（不变量 1113）
+- [`ftxs-notsettle-sold-as-bundled.md`](ftxs-notsettle-sold-as-bundled.md) — Finalize 执行再交还 被写成已经交差 / 已经可以像 Prepare 那样 / 已经只依赖上一份状态和决定块（不变量 1112）
 - [`ffields-notinfo-sold-as-bundled.md`](ffields-notinfo-sold-as-bundled.md) — Info 回应用状态 被写成已经是握手对齐 / 已经是快照重放 / 已经交差（不变量 1111）
 - [`ffields-notprep-sold-as-bundled.md`](ffields-notprep-sold-as-bundled.md) — Finalize 必须确定 被写成已经可以像 Prepare 那样 / 已经印进本头 / 已经交差（不变量 1110）
 - [`ffields-notfour-sold-as-bundled.md`](ffields-notfour-sold-as-bundled.md) — 刚决定字段 被写成已经是四门已经结算 / 已经跑过 Process / 已经交差（不变量 1109）

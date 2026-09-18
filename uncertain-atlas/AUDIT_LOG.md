@@ -1,3 +1,18 @@
+| A5330 | 记录 | 会与 408 / 311 / 316 / 1112 / 1113 糊成「看见整块跑了就已经是 ExecuteTxState interchangeable、就已经 Finalize + Commit interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process whole-block-like-Finalize not already ExecuteTxState / not already Finalize-plus-Commit / not already settled 正式三事（408 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。408 fintxs vs control bundled unbundling 完成（1114 item 3） |
+| A5331 | 高 | 看见整块跑了 会被写成已经是 ExecuteTxState interchangeable / 311 interchangeable | 官方 Finalize 执行余量 item 3：not already ExecuteTxState / not 311 |
+| A5332 | 高 | 看见像 Finalize 会被写成已经 Finalize + Commit interchangeable / 316 interchangeable | 官方 Finalize 执行余量 item 3：not already Finalize-plus-Commit / not 316 |
+| A5333 | 高 | 看见能跑 会被写成已经交差 interchangeable | 官方 Finalize 执行余量 item 3：not already settled |
+| A5334 | 中 | 怎样写执行余量会被抄进不确定 | 不抄。不写怎样写 Finalize 执行余量。不另写 19 节 |
+| A5325 | 记录 | 会与 408 / 359 / 1109 / 1112 / 1114 糊成「看见填了信息就已经是刚决定那块的字段 interchangeable、就已经跑过 Process interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process all-exec-info not already just-decided-fields / not already processed / not already settled 正式三事（408 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。408 fintxs vs control bundled unbundling 续（1113 item 2） |
+| A5326 | 高 | 看见填了信息 会被写成已经是刚决定那块的字段 interchangeable / 359 interchangeable | 官方 Finalize 执行余量 item 2：not already just-decided-fields / not 359 |
+| A5327 | 高 | 看见能执行 会被写成已经跑过 Process interchangeable / 1109 interchangeable | 官方 Finalize 执行余量 item 2：not already processed / not 1109 |
+| A5328 | 高 | 看见有提案块 会被写成已经交差 interchangeable | 官方 Finalize 执行余量 item 2：not already settled |
+| A5329 | 中 | 怎样写执行余量会被抄进不确定 | 不抄。不写怎样写 Finalize 执行余量。不另写 19 节 |
+| A5320 | 记录 | 会与 408 / 1110 / 342 / 1113 / 1114 糊成「看见先跑了就已经交差 interchangeable、就已经可以像 Prepare 那样 interchangeable、就已经只依赖上一份状态和决定块 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize exec-txs-return-control not already settled / not already like-Prepare / not already last-state-only 正式三事（408 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。408 fintxs vs control bundled unbundling 启动（1112 item 1） |
+| A5321 | 高 | 看见先跑了 会被写成已经交差 interchangeable / 1110 interchangeable | 官方 Finalize 执行余量 item 1：not already settled / not 1110 |
+| A5322 | 高 | 看见必须确定 会被写成已经可以像 Prepare 那样 interchangeable / 342 interchangeable | 官方 Finalize 执行余量 item 1：not already like-Prepare / not 342 |
+| A5323 | 高 | 看见按自己的规则 会被写成已经只依赖上一份状态和决定块 interchangeable | 官方 Finalize 执行余量 item 1：not already last-state-only |
+| A5324 | 中 | 怎样写执行余量会被抄进不确定 | 不抄。不写怎样写 Finalize 执行余量。不另写 19 节 |
 | A5315 | 记录 | 会与 407 / 370 / 367 / 1109 / 1110 糊成「看见能回就已经是握手对齐 interchangeable、就已经是快照重放 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Info app-state-info not already handshake-aligned / not already snapshot-replay / not already settled 正式三事（407 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。407 finfields vs equiv bundled unbundling 完成（1111 item 3） |
 | A5316 | 高 | 看见能回 会被写成已经是握手对齐 interchangeable / 370 interchangeable | 官方 Finalize 字段余量 item 3：not already handshake-aligned / not 370 |
 | A5317 | 高 | 看见写了应用状态 会被写成已经是快照重放 interchangeable / 367 interchangeable | 官方 Finalize 字段余量 item 3：not already snapshot-replay / not 367 |

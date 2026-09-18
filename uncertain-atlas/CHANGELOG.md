@@ -1,3 +1,15 @@
+## 2026-09-18（续 1231）
+
+- 不变量 1114；语料 C1092；模式 name-the-ftxs-notexec-bar；反模式 ftxs-notexec-sold-as-bundled；L10.3 第 1083 条。填 L4.4 / CometBFT 档案 Process whole-block-like-Finalize not already ExecuteTxState / not already Finalize-plus-Commit / not already settled 正式三事（408 余量）。408 fintxs vs control bundled unbundling 完成（1114 item 3）。
+
+## 2026-09-18（续 1230）
+
+- 不变量 1113；语料 C1091；模式 name-the-ftxs-notdec-bar；反模式 ftxs-notdec-sold-as-bundled；L10.3 第 1082 条。填 L4.4 / CometBFT 档案 Process all-exec-info not already just-decided-fields / not already processed / not already settled 正式三事（408 余量）。408 fintxs vs control bundled unbundling 续（1113 item 2）。
+
+## 2026-09-18（续 1229）
+
+- 不变量 1112；语料 C1090；模式 name-the-ftxs-notsettle-bar；反模式 ftxs-notsettle-sold-as-bundled；L10.3 第 1081 条。填 L4.4 / CometBFT 档案 Finalize exec-txs-return-control not already settled / not already like-Prepare / not already last-state-only 正式三事（408 余量）。408 fintxs vs control bundled unbundling 启动（1112 item 1）。
+
 ## 2026-09-18（续 1228）
 
 - 不变量 1111；语料 C1089；模式 name-the-ffields-notinfo-bar；反模式 ffields-notinfo-sold-as-bundled；L10.3 第 1080 条。填 L4.4 / CometBFT 档案 Info app-state-info not already handshake-aligned / not already snapshot-replay / not already settled 正式三事（407 余量）。407 finfields vs equiv bundled unbundling 完成（1111 item 3）。

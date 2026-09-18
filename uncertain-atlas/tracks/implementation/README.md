@@ -649,6 +649,9 @@
 - [`worked-example-ffields-notprep-vs-bundled.md`](worked-example-ffields-notprep-vs-bundled.md) — Finalize必须确定≠already like-Prepare/header-printed/settled；≠407 bundled（不变量 1110）
 - [`worked-example-ffields-notfour-vs-bundled.md`](worked-example-ffields-notfour-vs-bundled.md) — 刚决定字段≠already four-gates/processed/settled；≠407 bundled（不变量 1109）
 - [`worked-example-finfields-vs-equiv.md`](worked-example-finfields-vs-equiv.md) — Finalize 含刚决定那块的字段 ≠ 已经是四门已经结算；Finalize 实现必须确定、因为它在状态机复制里推进应用状态 ≠ 已经可以像 Prepare 那样；Info 用来回应用状态信息 ≠ 已经是握手对齐（不变量 407）
+- [`worked-example-ftxs-notexec-vs-bundled.md`](worked-example-ftxs-notexec-vs-bundled.md) — Process整块像Finalize≠already ExecuteTxState/Finalize-plus-Commit/settled；≠408 bundled（不变量 1114）
+- [`worked-example-ftxs-notdec-vs-bundled.md`](worked-example-ftxs-notdec-vs-bundled.md) — Process全部执行信息≠already just-decided-fields/processed/settled；≠408 bundled（不变量 1113）
+- [`worked-example-ftxs-notsettle-vs-bundled.md`](worked-example-ftxs-notsettle-vs-bundled.md) — Finalize执行再交还≠already settled/like-Prepare/last-state-only；≠408 bundled（不变量 1112）
 - [`worked-example-fintxs-vs-control.md`](worked-example-fintxs-vs-control.md) — Finalize 按应用自己的规则确定地执行 txs、再交还控制权 ≠ 已经交差；Process 含提案块上执行所需的全部信息 ≠ 已经是刚决定那块的字段；Process 可以像在处理 Finalize 那样整块执行 ≠ 已经是 ExecuteTxState（不变量 408）
 - [`worked-example-extpre-notlate-vs-bundled.md`](worked-example-extpre-notlate-vs-bundled.md) — ACCEPT留给h+1≠already late-verified/settled/must-reverify；≠409 bundled（不变量 1033）
 - [`worked-example-extpre-notskip-vs-bundled.md`](worked-example-extpre-notskip-vs-bundled.md) — 丢掉无有效签≠already skip-verify/unsigned/self-verified；≠409 bundled（不变量 1032）

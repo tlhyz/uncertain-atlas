@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 执行余量就已经交差、已经是刚决定那块的字段、已经是 ExecuteTxState」，必须分开 Finalize 按应用自己的规则确定地执行 txs、再交还控制权是不是已经交差、Process 含提案块上执行所需的全部信息是不是已经是刚决定那块的字段、Process 可以像在处理 Finalize 那样整块执行是不是已经是 ExecuteTxState。可以跳过「看见填了 Finalize 执行余量就已经交差」。不要另写怎样写 Finalize 执行余量。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Finalize 执行余量就已经交差、已经是刚决定那块的字段、已经是 ExecuteTxState」，必须分开 Finalize 按应用自己的规则确定地执行 txs、再交还控制权是不是已经交差、Process 含提案块上执行所需的全部信息是不是已经是刚决定那块的字段、Process 可以像在处理 Finalize 那样整块执行是不是已经是 ExecuteTxState。可以跳过「看见填了 Finalize 执行余量就已经交差」。不要另写怎样写 Finalize 执行余量。408 fintxs vs control bundled unbundling 完成（1112 item 1 / 1113 item 2 / 1114 item 3）；精读 [`worked-example-ftxs-notsettle-vs-bundled.md`](worked-example-ftxs-notsettle-vs-bundled.md)（不变量 1112 item 1）。
 
 ## 本页不抄
 
