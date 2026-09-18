@@ -1,3 +1,4 @@
+- [`name-the-checktxstate-notrecheck-bar.md`](name-the-checktxstate-notrecheck-bar.md) — RECHECK 不是已经是新交易 not already new transaction / not already treated as NEW / not already unlocked 正式三事（312 余量）（不变量 697）
 - [`name-the-checktxstate-notsame-bar.md`](name-the-checktxstate-notsame-bar.md) — 同时在改不是已经同一份 not already same state / not already merged / not already shared working state 正式三事（312 余量）（不变量 696）
 - [`name-the-checktxstate-notexecute-bar.md`](name-the-checktxstate-notexecute-bar.md) — CheckTxState 不是已经按 ExecuteTxState 验过 not already checked against ExecuteTxState / not already checked against to-be-executed state / not already same as ExecuteTxState after reset 正式三事（312 余量）（不变量 695）
 - [`name-the-candidate-notdiscarded-bar.md`](name-the-candidate-notdiscarded-bar.md) — 丢掉候选 not already can unboundedly accumulate / not already never need re-execute / not already bound by spec 正式三事（311 余量）（不变量 694）

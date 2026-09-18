@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看同时在改不是已经同一份 not already same state / not already merged / not already shared working state 正式三事（312 余量），必须分开两边都在改 是不是 already same state interchangeable / 312 checktxstate bundled interchangeable / 33 four gates interchangeable、两条连接并发 是不是 already merged interchangeable、都叫 CheckTx / Finalize 是不是 already shared working state interchangeable。可以跳过「看见同时在改 就已经同一份 interchangeable / 就已经合并 interchangeable / 就已经共用一份 interchangeable」。不要另写怎样实现两份状态。312 checktxstate vs execute bundled unbundling 在本页 item 2 完成；续 [`worked-example-checktxstate-notrecheck-vs-bundled.md`](worked-example-checktxstate-notrecheck-vs-bundled.md)（不变量 697 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看同时在改不是已经同一份 not already same state / not already merged / not already shared working state 正式三事（312 余量），必须分开两边都在改 是不是 already same state interchangeable / 312 checktxstate bundled interchangeable / 33 four gates interchangeable、两条连接并发 是不是 already merged interchangeable、都叫 CheckTx / Finalize 是不是 already shared working state interchangeable。可以跳过「看见同时在改 就已经同一份 interchangeable / 就已经合并 interchangeable / 就已经共用一份 interchangeable」。不要另写怎样实现两份状态。312 checktxstate vs execute bundled unbundling 在本页 item 2 完成；完成见 [`worked-example-checktxstate-notrecheck-vs-bundled.md`](worked-example-checktxstate-notrecheck-vs-bundled.md)（不变量 697 item 3）。
 
 ## 本页不抄
 

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「CheckTx 已经过了」，必须分开 CheckTxState 是不是已经按 ExecuteTxState 验过、两份状态是不是已经同一份、RECHECK 是不是已经是新交易。可以跳过「看见过了就已经按将要执行的那份验过」。不要另写怎样实现 CheckTx 或怎样再验。312 checktxstate vs execute bundled unbundling 续（696 item 2）；精读 [`worked-example-checktxstate-notexecute-vs-bundled.md`](worked-example-checktxstate-notexecute-vs-bundled.md)（不变量 695 item 1）；续 [`worked-example-checktxstate-notsame-vs-bundled.md`](worked-example-checktxstate-notsame-vs-bundled.md)（不变量 696 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「CheckTx 已经过了」，必须分开 CheckTxState 是不是已经按 ExecuteTxState 验过、两份状态是不是已经同一份、RECHECK 是不是已经是新交易。可以跳过「看见过了就已经按将要执行的那份验过」。不要另写怎样实现 CheckTx 或怎样再验。312 checktxstate vs execute bundled unbundling 完成（695 + 696 + 697）；精读 [`worked-example-checktxstate-notexecute-vs-bundled.md`](worked-example-checktxstate-notexecute-vs-bundled.md)（不变量 695 item 1）；[`worked-example-checktxstate-notsame-vs-bundled.md`](worked-example-checktxstate-notsame-vs-bundled.md)（不变量 696 item 2）；[`worked-example-checktxstate-notrecheck-vs-bundled.md`](worked-example-checktxstate-notrecheck-vs-bundled.md)（不变量 697 item 3）。
 
 ## 本页不抄
 
