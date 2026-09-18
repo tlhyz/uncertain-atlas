@@ -15,7 +15,7 @@
 cursor/uncertain-atlas-optimization-5ee2
 ```
 
-来源：合并 `cursor/cometbft-echousage-notdone-676-2f0b`（KB 最全）+ 本优化迭代（677–1105 Query/CheckTx/Commit/InitChain/Finalize/ProposalStatus/Prepare/Apply/Offer Result 拆句）。  
+来源：合并 `cursor/cometbft-echousage-notdone-676-2f0b`（KB 最全）+ 本优化迭代（677–1108 Query/CheckTx/Commit/InitChain/Finalize/ProposalStatus/Prepare/Apply/Offer Result 拆句）。  
 `main` 仍只有 `qtb/` 交易框架；协议知识不在 `main`。
 
 ---

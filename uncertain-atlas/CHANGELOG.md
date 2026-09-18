@@ -1,3 +1,15 @@
+## 2026-09-18（续 1225）
+
+- 不变量 1108；语料 C1086；模式 name-the-sheight-notprove-bar；反模式 sheight-notprove-sold-as-bundled；L10.3 第 1077 条。填 L4.4 / CometBFT 档案 Query optional Merkle-proof not already apphash-aligned / not already prove-flagged / not already settled 正式三事（406 余量）。406 snapheight vs queryh bundled unbundling 完成（1108 item 3）。
+
+## 2026-09-18（续 1224）
+
+- 不变量 1107；语料 C1085；模式 name-the-sheight-notmeta-bar；反模式 sheight-notmeta-sold-as-bundled；L10.3 第 1076 条。填 L4.4 / CometBFT 档案 Snapshot.metadata arbitrary not already all-fields-match / not already incrementally-verified / not already settled 正式三事（406 余量）。406 snapheight vs queryh bundled unbundling 续（1107 item 2）。
+
+## 2026-09-18（续 1223）
+
+- 不变量 1106；语料 C1084；模式 name-the-sheight-notqueryh-bar；反模式 sheight-notqueryh-sold-as-bundled；L10.3 第 1075 条。填 L4.4 / CometBFT 档案 Snapshot.height after-Commit not already Query-height / not already loaded / not already settled 正式三事（406 余量）。406 snapheight vs queryh bundled unbundling 启动（1106 item 1）。
+
 ## 2026-09-18（续 1222）
 
 - 不变量 1105；语料 C1083；模式 name-the-cguard-notproof-bar；反模式 cguard-notproof-sold-as-bundled；L10.3 第 1074 条。填 L4.4 / CometBFT 档案 Merkle proof self-describing-type not already ProofOp-type / not already apphash-aligned / not already settled 正式三事（405 余量）。405 checktxguard vs optional bundled unbundling 完成（1105 item 3）。

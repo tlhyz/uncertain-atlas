@@ -1,3 +1,6 @@
+- [`sheight-notprove-sold-as-bundled.md`](sheight-notprove-sold-as-bundled.md) — Query 可选证明 被写成已经对上 AppHash / 已经勾了 prove / 已经交差（不变量 1108）
+- [`sheight-notmeta-sold-as-bundled.md`](sheight-notmeta-sold-as-bundled.md) — metadata 被写成已经全字段对上 / 已经在装回当中增量验过 / 已经交差（不变量 1107）
+- [`sheight-notqueryh-sold-as-bundled.md`](sheight-notqueryh-sold-as-bundled.md) — Snapshot.height 被写成已经是 Query 高度 / 已经装完 / 已经交差（不变量 1106）
 - [`cguard-notproof-sold-as-bundled.md`](cguard-notproof-sold-as-bundled.md) — 自描述 type 被写成已经是 ProofOp 类型 / 已经对上 AppHash / 已经交差（不变量 1105）
 - [`cguard-notreplay-sold-as-bundled.md`](cguard-notreplay-sold-as-bundled.md) — 来源 被写成已经保证不重放 / 已经过了 CheckTx 就有应用级保护 / 已经交差（不变量 1104）
 - [`cguard-notopt-sold-as-bundled.md`](cguard-notopt-sold-as-bundled.md) — CheckTx 守卫 被写成已经是技术上可选 / 已经是四门已经结算 / 已经交差（不变量 1103）

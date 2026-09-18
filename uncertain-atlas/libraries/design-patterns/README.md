@@ -1,3 +1,6 @@
+- [`name-the-sheight-notprove-bar.md`](name-the-sheight-notprove-bar.md) — Query optional Merkle-proof not already apphash-aligned / not already prove-flagged / not already settled 正式三事（406 余量）（不变量 1108）
+- [`name-the-sheight-notmeta-bar.md`](name-the-sheight-notmeta-bar.md) — Snapshot.metadata arbitrary not already all-fields-match / not already incrementally-verified / not already settled 正式三事（406 余量）（不变量 1107）
+- [`name-the-sheight-notqueryh-bar.md`](name-the-sheight-notqueryh-bar.md) — Snapshot.height after-Commit not already Query-height / not already loaded / not already settled 正式三事（406 余量）（不变量 1106）
 - [`name-the-cguard-notproof-bar.md`](name-the-cguard-notproof-bar.md) — Merkle proof self-describing-type not already ProofOp-type / not already apphash-aligned / not already settled 正式三事（405 余量）（不变量 1105）
 - [`name-the-cguard-notreplay-bar.md`](name-the-cguard-notreplay-bar.md) — CheckTx source-from-user-or-peer not already no-replay / not already app-protected / not already settled 正式三事（405 余量）（不变量 1104）
 - [`name-the-cguard-notopt-bar.md`](name-the-cguard-notopt-bar.md) — CheckTx mempool-guard not already technically-optional / not already four-gates / not already settled 正式三事（405 余量）（不变量 1103）

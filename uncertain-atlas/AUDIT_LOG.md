@@ -1,3 +1,18 @@
+| A5300 | 记录 | 会与 406 / 383 / 1101 / 1106 / 1107 糊成「看见能回证明就已经对上 AppHash interchangeable、就已经勾了 prove interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Query optional Merkle-proof not already apphash-aligned / not already prove-flagged / not already settled 正式三事（406 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。406 snapheight vs queryh bundled unbundling 完成（1108 item 3） |
+| A5301 | 高 | 看见能回证明 会被写成已经对上 AppHash interchangeable / 383 interchangeable | 官方 Snapshot 高度余量 item 3：not already apphash-aligned / not 383 |
+| A5302 | 高 | 看见有证明 会被写成已经勾了 prove interchangeable / 1101 interchangeable | 官方 Snapshot 高度余量 item 3：not already prove-flagged / not 1101 |
+| A5303 | 高 | 看见能查 会被写成已经交差 interchangeable | 官方 Snapshot 高度余量 item 3：not already settled |
+| A5304 | 中 | 怎样写高度余量会被抄进不确定 | 不抄。不写怎样写 Snapshot 高度余量。不另写 19 节 |
+| A5295 | 记录 | 会与 406 / 368 / 332 / 1106 / 1108 糊成「看见填了 metadata 就已经全字段对上 interchangeable、就已经在装回当中增量验过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Snapshot.metadata arbitrary not already all-fields-match / not already incrementally-verified / not already settled 正式三事（406 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。406 snapheight vs queryh bundled unbundling 续（1107 item 2） |
+| A5296 | 高 | 看见填了 metadata 会被写成已经全字段对上 interchangeable / 368 interchangeable | 官方 Snapshot 高度余量 item 2：not already all-fields-match / not 368 |
+| A5297 | 高 | 看见有块哈希 会被写成已经在装回当中增量验过 interchangeable / 332 interchangeable | 官方 Snapshot 高度余量 item 2：not already incrementally-verified / not 332 |
+| A5298 | 高 | 看见能填 会被写成已经交差 interchangeable | 官方 Snapshot 高度余量 item 2：not already settled |
+| A5299 | 中 | 怎样写高度余量会被抄进不确定 | 不抄。不写怎样写 Snapshot 高度余量。不另写 19 节 |
+| A5290 | 记录 | 会与 406 / 371 / 321 / 1107 / 1108 糊成「看见填了 height 就已经是 Query 高度 interchangeable、就已经装完 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Snapshot.height after-Commit not already Query-height / not already loaded / not already settled 正式三事（406 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。406 snapheight vs queryh bundled unbundling 启动（1106 item 1） |
+| A5291 | 高 | 看见填了 height 会被写成已经是 Query 高度 interchangeable / 371 interchangeable | 官方 Snapshot 高度余量 item 1：not already Query-height / not 371 |
+| A5292 | 高 | 看见写成 Commit 之后 会被写成已经装完 interchangeable / 321 interchangeable | 官方 Snapshot 高度余量 item 1：not already loaded / not 321 |
+| A5293 | 高 | 看见有高度 会被写成已经交差 interchangeable | 官方 Snapshot 高度余量 item 1：not already settled |
+| A5294 | 中 | 怎样写高度余量会被抄进不确定 | 不抄。不写怎样写 Snapshot 高度余量。不另写 19 节 |
 | A5285 | 记录 | 会与 405 / 325 / 1101 / 1103 / 1104 糊成「看见写了 type 就已经是 ProofOp 类型 interchangeable、就已经对上 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Merkle proof self-describing-type not already ProofOp-type / not already apphash-aligned / not already settled 正式三事（405 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。405 checktxguard vs optional bundled unbundling 完成（1105 item 3） |
 | A5286 | 高 | 看见写了 type 会被写成已经是 ProofOp 类型 interchangeable / 325 interchangeable | 官方 CheckTx 守卫余量 item 3：not already ProofOp-type / not 325 |
 | A5287 | 高 | 看见能支持多种树 会被写成已经对上 AppHash interchangeable / 1101 interchangeable | 官方 CheckTx 守卫余量 item 3：not already apphash-aligned / not 1101 |

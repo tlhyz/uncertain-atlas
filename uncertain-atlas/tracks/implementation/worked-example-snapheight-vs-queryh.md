@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Snapshot 高度余量就已经是 Query 高度、已经全字段对上、已经对上 AppHash」，必须分开 Snapshot.height 是拍快照的高度（Commit 之后）是不是已经是 Query 高度、Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据是不是已经全字段对上、Query 可以可选回默克尔证明是不是已经对上 AppHash。可以跳过「看见填了 Snapshot 高度余量就已经是 Query 高度」。不要另写怎样写 Snapshot 高度余量。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 Snapshot 高度余量就已经是 Query 高度、已经全字段对上、已经对上 AppHash」，必须分开 Snapshot.height 是拍快照的高度（Commit 之后）是不是已经是 Query 高度、Snapshot.metadata 是任意应用元数据、例如块哈希或其他核对数据是不是已经全字段对上、Query 可以可选回默克尔证明是不是已经对上 AppHash。可以跳过「看见填了 Snapshot 高度余量就已经是 Query 高度」。不要另写怎样写 Snapshot 高度余量。406 snapheight vs queryh bundled unbundling 完成（1106 item 1 / 1107 item 2 / 1108 item 3）；精读 [`worked-example-sheight-notqueryh-vs-bundled.md`](worked-example-sheight-notqueryh-vs-bundled.md)（不变量 1106 item 1）。
 
 ## 本页不抄
 
