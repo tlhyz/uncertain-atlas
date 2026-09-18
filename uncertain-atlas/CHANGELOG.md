@@ -1,3 +1,15 @@
+## 2026-09-18（续 1387）
+
+- 不变量 1270；语料 C1248；模式 name-the-pong31-notlive-bar；反模式 pong31-notlive-sold-as-bundled；L10.3 第 1239 条。填 L3.4 / L9.1 BIP-31 pong not already alive / not already unstuck / not already forever 正式三事（262 余量）。262 pong vs live bundled unbundling 完成（1270 item 3）。
+
+## 2026-09-18（续 1386）
+
+- 不变量 1269；语料 C1247；模式 name-the-pong31-notmatch-bar；反模式 pong31-notmatch-sold-as-bundled；L10.3 第 1238 条。填 L3.4 / L9.1 BIP-31 pong not already matched / not already this-ping / not already rtt 正式三事（262 余量）。262 pong vs live bundled unbundling 续（1269 item 2）。
+
+## 2026-09-18（续 1385）
+
+- 不变量 1268；语料 C1246；模式 name-the-pong31-notver-bar；反模式 pong31-notver-sold-as-bundled；L10.3 第 1237 条。填 L3.4 / L9.1 BIP-31 version-enough not already nonce-ping / not already will-pong / not already merged-feature 正式三事（262 余量）。262 pong vs live bundled unbundling 启动（1268 item 1）。
+
 ## 2026-09-18（续 1384）
 
 - 不变量 1267；语料 C1245；模式 name-the-rej61-notpol-bar；反模式 rej61-notpol-sold-as-bundled；L10.3 第 1236 条。填 L3.2 / L9.1 / L9.2 BIP-61 policy-code not already illegal / not already net-illegal / not already notify 正式三事（254 余量）。254 reject vs consensus bundled unbundling 完成（1267 item 3）。

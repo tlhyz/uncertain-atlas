@@ -1,3 +1,6 @@
+- [`pong31-notlive-sold-as-bundled.md`](pong31-notlive-sold-as-bundled.md) — 回了 pong 被写成已经还活着 / 已经不卡 / 一次往返就已经永远响应（不变量 1270）
+- [`pong31-notmatch-sold-as-bundled.md`](pong31-notmatch-sold-as-bundled.md) — 一条 pong 被写成已经对上那一次 ping / 回显了 nonce 就已经对上刚发的 / nonce 是零就已经测过往返（不变量 1269）
+- [`pong31-notver-sold-as-bundled.md`](pong31-notver-sold-as-bundled.md) — 协议版本够了 被写成已经会带 nonce 的 ping / 已经会回 pong / 已经并进功能协商（不变量 1268）
 - [`rej61-notpol-sold-as-bundled.md`](rej61-notpol-sold-as-bundled.md) — 策略拒收 被写成已经共识非法 / 语义非法码就已经全网非法 / 一条拒收就已经该弹窗或写满日志（不变量 1267）
 - [`rej61-notuser-sold-as-bundled.md`](rej61-notuser-sold-as-bundled.md) — 一条拒收理由 被写成已经是官方原因 / 已经写进共识 / 已经该弹给用户（不变量 1266）
 - [`rej61-notill-sold-as-bundled.md`](rej61-notill-sold-as-bundled.md) — 拒收 被写成已经共识非法 / 全网已经知道 / 没拒收就已经是当前最好链（不变量 1265）

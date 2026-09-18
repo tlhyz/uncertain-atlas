@@ -1,3 +1,18 @@
+| A6115 | 记录 | 会与 262 / 256 / 259 / 1268 / 1269 糊成「看见回了 pong 就已经还活着 interchangeable、就已经不卡 interchangeable、就已经永远响应 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-31 pong not already alive / not already unstuck / not already forever 正式三事（262 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。262 pong vs live bundled unbundling 完成（1270 item 3） |
+| A6116 | 高 | 看见回了 pong 会被写成已经还活着 interchangeable / 256 interchangeable | 官方 BIP-31 pong item 3：not already alive / not 256 |
+| A6117 | 高 | 看见回了 pong 会被写成已经不卡 interchangeable / 259 interchangeable | 官方 BIP-31 pong item 3：not already not already unstuck / not 259 |
+| A6118 | 高 | 看见测到一次往返 会被写成已经永远响应 interchangeable | 官方 BIP-31 pong item 3：not already settled |
+| A6119 | 中 | 怎样叠许多 ping、怎样靠假 pong 认人、怎样用往返选人做日蚀会被抄进不确定 | 不抄。不写 怎样叠许多 ping、怎样靠假 pong 认人、怎样用往返选人做日蚀。不另写 19 节 |
+| A6110 | 记录 | 会与 262 / 241 / 248 / 1268 / 1270 糊成「看见一条 pong 就已经对上那一次 ping interchangeable、就已经对上刚发的那一次 interchangeable、就已经测过往返 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-31 pong not already matched / not already this-ping / not already rtt 正式三事（262 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。262 pong vs live bundled unbundling 续（1269 item 2） |
+| A6111 | 高 | 看见一条 pong 会被写成已经对上那一次 ping interchangeable / 241 interchangeable | 官方 BIP-31 pong item 2：not already matched / not 241 |
+| A6112 | 高 | 看见回显了 nonce 会被写成已经对上你刚发的那一次 interchangeable / 248 interchangeable | 官方 BIP-31 pong item 2：not already not already this-ping / not 248 |
+| A6113 | 高 | 看见 nonce 是零 会被写成已经测过往返 interchangeable | 官方 BIP-31 pong item 2：not already settled |
+| A6114 | 中 | 怎样叠许多 ping、怎样靠假 pong 认人、怎样用往返选人做日蚀会被抄进不确定 | 不抄。不写 怎样叠许多 ping、怎样靠假 pong 认人、怎样用往返选人做日蚀。不另写 19 节 |
+| A6105 | 记录 | 会与 262 / 259 / 247 / 1269 / 1270 糊成「看见协议版本够了就已经会带 nonce 的 ping interchangeable、就已经会回 pong interchangeable、就已经并进功能协商 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-31 version-enough not already nonce-ping / not already will-pong / not already merged-feature 正式三事（262 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。262 pong vs live bundled unbundling 启动（1268 item 1） |
+| A6106 | 高 | 看见协议版本够了 会被写成已经会带 nonce 的 ping interchangeable / 259 interchangeable | 官方 BIP-31 pong item 1：not already nonce-ping / not 259 |
+| A6107 | 高 | 看见协议版本够了 会被写成对端已经会回 pong interchangeable / 247 interchangeable | 官方 BIP-31 pong item 1：not already not already will-pong / not 247 |
+| A6108 | 高 | 看见协议版本够了 会被写成本页已经并进后来的功能协商 interchangeable | 官方 BIP-31 pong item 1：not already settled |
+| A6109 | 中 | 怎样叠许多 ping、怎样靠假 pong 认人、怎样用往返选人做日蚀会被抄进不确定 | 不抄。不写 怎样叠许多 ping、怎样靠假 pong 认人、怎样用往返选人做日蚀。不另写 19 节 |
 | A6100 | 记录 | 会与 254 / 144 / 253 / 1265 / 1266 糊成「看见策略拒收就已经共识非法 interchangeable、就已经全网非法 interchangeable、就已经该弹窗或写满日志 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.1 / L9.2 BIP-61 policy-code not already illegal / not already net-illegal / not already notify 正式三事（254 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。254 reject vs consensus bundled unbundling 完成（1267 item 3） |
 | A6101 | 高 | 看见策略拒收 会被写成已经共识非法 interchangeable / 144 interchangeable | 官方 BIP-61 reject item 3：not already illegal / not 144 |
 | A6102 | 高 | 看见语义非法码 会被写成已经全网非法 interchangeable / 253 interchangeable | 官方 BIP-61 reject item 3：not already not already net-illegal / not 253 |

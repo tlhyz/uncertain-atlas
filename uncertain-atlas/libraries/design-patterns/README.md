@@ -1,3 +1,6 @@
+- [`name-the-pong31-notlive-bar.md`](name-the-pong31-notlive-bar.md) — BIP-31 pong not already alive / not already unstuck / not already forever 正式三事（262 余量）（不变量 1270）
+- [`name-the-pong31-notmatch-bar.md`](name-the-pong31-notmatch-bar.md) — BIP-31 pong not already matched / not already this-ping / not already rtt 正式三事（262 余量）（不变量 1269）
+- [`name-the-pong31-notver-bar.md`](name-the-pong31-notver-bar.md) — BIP-31 version-enough not already nonce-ping / not already will-pong / not already merged-feature 正式三事（262 余量）（不变量 1268）
 - [`name-the-rej61-notpol-bar.md`](name-the-rej61-notpol-bar.md) — BIP-61 policy-code not already illegal / not already net-illegal / not already notify 正式三事（254 余量）（不变量 1267）
 - [`name-the-rej61-notuser-bar.md`](name-the-rej61-notuser-bar.md) — BIP-61 reason not already official / not already consensus / not already for-users 正式三事（254 余量）（不变量 1266）
 - [`name-the-rej61-notill-bar.md`](name-the-rej61-notill-bar.md) — BIP-61 reject not already illegal / not already net-wide / not already best-chain 正式三事（254 余量）（不变量 1265）

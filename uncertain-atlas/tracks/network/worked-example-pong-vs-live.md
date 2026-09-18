@@ -40,7 +40,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果写对等探活，必须分开版本门槛、对上某一次 ping、一次往返样本。可以跳过「看见回了 ping 就已经还活着」。若对照，必须分开加入本页、nonce 对上、样本不是永久健康。不要另写怎样叠 ping 做日蚀。
+**建议（产品，不是事实）**：不确定第一条结算机如果写对等探活，必须分开版本门槛、对上某一次 ping、一次往返样本。可以跳过「看见回了 ping 就已经还活着」。若对照，必须分开加入本页、nonce 对上、样本不是永久健康。不要另写怎样叠 ping 做日蚀。262 pong vs live bundled unbundling 完成（1268 item 1 / 1269 item 2 / 1270 item 3）；精读 [`worked-example-pong31-notver-vs-bundled.md`](worked-example-pong31-notver-vs-bundled.md)（不变量 1268 item 1）、[`worked-example-pong31-notmatch-vs-bundled.md`](worked-example-pong31-notmatch-vs-bundled.md)（不变量 1269 item 2）、[`worked-example-pong31-notlive-vs-bundled.md`](worked-example-pong31-notlive-vs-bundled.md)（不变量 1270 item 3）。
 
 ## 本页不抄
 
