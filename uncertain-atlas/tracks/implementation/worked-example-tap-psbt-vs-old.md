@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出 Taproot 工作包，必须分开旧栏装不下、内部钥、见证 UTXO。可以跳过「看见部分签名包就已经能签 Taproot」。若对照，必须分开本页内部钥和 86 那种派生钥。不要另写怎样拼控制块。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出 Taproot 工作包，必须分开旧栏装不下、内部钥、见证 UTXO。可以跳过「看见部分签名包就已经能签 Taproot」。若对照，必须分开本页内部钥和 86 那种派生钥。不要另写怎样拼控制块。279 tap PSBT vs old bundled unbundling 完成（1157 item 1 / 1158 item 2 / 1159 item 3）；精读 [`worked-example-tap371-notold-vs-bundled.md`](worked-example-tap371-notold-vs-bundled.md)（不变量 1157 item 1）。
 
 ## 本页不抄
 

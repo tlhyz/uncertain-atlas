@@ -1,3 +1,18 @@
+| A5560 | 记录 | 会与 279 / 186 / 179 / 1157 / 1158 糊成「看见 Taproot 输入就必须带整笔前交易 interchangeable、就已经是旧输入那套 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-371 taproot-input not already must-prev-tx / not already same-utxo-fields / not already settled 正式三事（279 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。279 tap PSBT vs old bundled unbundling 完成（1159 item 3） |
+| A5561 | 高 | 看见 Taproot 输入 会被写成已经必须带整笔前交易 interchangeable / 186 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 3：not already must-prev-tx / not 186 |
+| A5562 | 高 | 看见只带了见证 UTXO 会被写成已经是旧输入那套 interchangeable / 179 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 3：not already same-utxo-fields / not 179 |
+| A5563 | 高 | 看见 174 建议带整笔前交易 会被写成已经交差 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 3：not already settled |
+| A5564 | 中 | 怎样拼控制块会被抄进不确定 | 不抄。不写怎样拼控制块。不另写 19 节 |
+| A5555 | 记录 | 会与 279 / 1136 / 153 / 1157 / 1159 糊成「看见输出脚本里的钥就已经是内部钥 interchangeable、就已经不必再给内部钥 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-371 output-script-key not already internal-key / not already same-key / not already settled 正式三事（279 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。279 tap PSBT vs old bundled unbundling 续（1158 item 2） |
+| A5556 | 高 | 看见输出脚本里的钥 会被写成已经是内部钥 interchangeable / 1136 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 2：not already internal-key / not 1136 |
+| A5557 | 高 | 看见钥匙路径签 会被写成已经不必再给内部钥 interchangeable / 153 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 2：not already same-key / not 153 |
+| A5558 | 高 | 看见 341 建议用钥对自己的哈希做微调 会被写成已经交差 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 2：not already settled |
+| A5559 | 中 | 怎样拼控制块会被抄进不确定 | 不抄。不写怎样拼控制块。不另写 19 节 |
+| A5550 | 记录 | 会与 279 / 179 / 1136 / 1158 / 1159 糊成「看见旧 PSBT 栏就已经能装 Taproot interchangeable、就已经能签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-371 old-psbt-fields not already can-hold-taproot / not already can-sign-taproot / not already settled 正式三事（279 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。279 tap PSBT vs old bundled unbundling 启动（1157 item 1） |
+| A5551 | 高 | 看见旧 PSBT 栏 会被写成已经能装 Taproot interchangeable / 179 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 1：not already can-hold-taproot / not 179 |
+| A5552 | 高 | 看见旧软件会忽略新栏 会被写成已经能签 interchangeable / 1136 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 1：not already can-sign-taproot / not 1136 |
+| A5553 | 高 | 看见包还在 会被写成已经交差 interchangeable | 官方 BIP-371 Taproot 工作包栏 item 1：not already settled |
+| A5554 | 中 | 怎样拼控制块会被抄进不确定 | 不抄。不写怎样拼控制块。不另写 19 节 |
 | A5545 | 记录 | 会与 278 / 1142 / 1147 / 1154 / 1155 糊成「看见 sortedmulti_a 就已经是 383 那种排序 interchangeable、就已经排的是同一类钥 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-387 sortedmulti_a not already 383-sort / not already same-key-class / not already settled 正式三事（278 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。278 multi_a vs tr bundled unbundling 完成（1156 item 3） |
 | A5546 | 高 | 看见 sortedmulti_a 会被写成已经是 383 那种排序 interchangeable / 1142 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 3：not already 383-sort / not 1142 |
 | A5547 | 高 | 看见排的是公钥 会被写成已经排的是同一类钥 interchangeable / 1147 interchangeable | 官方 BIP-387 tapscript 多签描述符 item 3：not already same-key-class / not 1147 |

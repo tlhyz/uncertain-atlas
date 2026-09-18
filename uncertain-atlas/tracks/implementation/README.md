@@ -829,6 +829,9 @@
 - [`worked-example-ma387-notenc-vs-bundled.md`](worked-example-ma387-notenc-vs-bundled.md) — 门限≠already same-encoding/383-outer-keycap/settled；≠278 bundled（不变量 1155）
 - [`worked-example-ma387-not383-vs-bundled.md`](worked-example-ma387-not383-vs-bundled.md) — multi_a≠already 383-multi/toplevel/nestable-in-sh-wsh；≠278 bundled（不变量 1154）
 - [`worked-example-multia-vs-tr.md`](worked-example-multia-vs-tr.md) — multi_a ≠ 已经是 383 那种 multi；门限 ≠ 已经同一套编码；sortedmulti_a ≠ 已经是 383 那种排序（不变量 278）
+- [`worked-example-tap371-notprev-vs-bundled.md`](worked-example-tap371-notprev-vs-bundled.md) — Taproot 输入≠already must-prev-tx/same-utxo-fields/settled；≠279 bundled（不变量 1159）
+- [`worked-example-tap371-notinner-vs-bundled.md`](worked-example-tap371-notinner-vs-bundled.md) — 输出脚本钥≠already internal-key/same-key/settled；≠279 bundled（不变量 1158）
+- [`worked-example-tap371-notold-vs-bundled.md`](worked-example-tap371-notold-vs-bundled.md) — 旧 PSBT 栏≠already can-hold-taproot/can-sign-taproot/settled；≠279 bundled（不变量 1157）
 - [`worked-example-tap-psbt-vs-old.md`](worked-example-tap-psbt-vs-old.md) — 旧 PSBT 栏 ≠ 已经能装 Taproot；输出脚本里的钥 ≠ 已经是内部钥；Taproot 输入 ≠ 已经必须带整笔前交易（不变量 279）
 - [`worked-example-policy-vs-descriptor.md`](worked-example-policy-vs-descriptor.md) — 钱包策略 ≠ 已经是一条描述符；钥占位 ≠ 已经是那把精确公钥；登记过 ≠ 已经批准这笔花（不变量 280）
 - [`worked-example-combo-vs-one-script.md`](worked-example-combo-vs-one-script.md) — combo ≠ 已经只能产出一种脚本；未压缩钥 ≠ 已经带齐见证对；一份 combo ≠ 已经是一份钱包策略（不变量 281）

@@ -1,3 +1,15 @@
+## 2026-09-18（续 1276）
+
+- 不变量 1159；语料 C1137；模式 name-the-tap371-notprev-bar；反模式 tap371-notprev-sold-as-bundled；L10.3 第 1128 条。填 L1.4 / L3.6 BIP-371 taproot-input not already must-prev-tx / not already same-utxo-fields / not already settled 正式三事（279 余量）。279 tap PSBT vs old bundled unbundling 完成（1159 item 3）。
+
+## 2026-09-18（续 1275）
+
+- 不变量 1158；语料 C1136；模式 name-the-tap371-notinner-bar；反模式 tap371-notinner-sold-as-bundled；L10.3 第 1127 条。填 L1.4 / L3.6 BIP-371 output-script-key not already internal-key / not already same-key / not already settled 正式三事（279 余量）。279 tap PSBT vs old bundled unbundling 续（1158 item 2）。
+
+## 2026-09-18（续 1274）
+
+- 不变量 1157；语料 C1135；模式 name-the-tap371-notold-bar；反模式 tap371-notold-sold-as-bundled；L10.3 第 1126 条。填 L1.4 / L3.6 BIP-371 old-psbt-fields not already can-hold-taproot / not already can-sign-taproot / not already settled 正式三事（279 余量）。279 tap PSBT vs old bundled unbundling 启动（1157 item 1）。
+
 ## 2026-09-18（续 1273）
 
 - 不变量 1156；语料 C1134；模式 name-the-ma387-notsort-bar；反模式 ma387-notsort-sold-as-bundled；L10.3 第 1125 条。填 L1.4 / L3.6 BIP-387 sortedmulti_a not already 383-sort / not already same-key-class / not already settled 正式三事（278 余量）。278 multi_a vs tr bundled unbundling 完成（1156 item 3）。

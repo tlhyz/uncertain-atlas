@@ -1,3 +1,6 @@
+- [`name-the-tap371-notprev-bar.md`](name-the-tap371-notprev-bar.md) — BIP-371 taproot-input not already must-prev-tx / not already same-utxo-fields / not already settled 正式三事（279 余量）（不变量 1159）
+- [`name-the-tap371-notinner-bar.md`](name-the-tap371-notinner-bar.md) — BIP-371 output-script-key not already internal-key / not already same-key / not already settled 正式三事（279 余量）（不变量 1158）
+- [`name-the-tap371-notold-bar.md`](name-the-tap371-notold-bar.md) — BIP-371 old-psbt-fields not already can-hold-taproot / not already can-sign-taproot / not already settled 正式三事（279 余量）（不变量 1157）
 - [`name-the-ma387-notsort-bar.md`](name-the-ma387-notsort-bar.md) — BIP-387 sortedmulti_a not already 383-sort / not already same-key-class / not already settled 正式三事（278 余量）（不变量 1156）
 - [`name-the-ma387-notenc-bar.md`](name-the-ma387-notenc-bar.md) — BIP-387 threshold not already same-encoding / not already 383-outer-keycap / not already settled 正式三事（278 余量）（不变量 1155）
 - [`name-the-ma387-not383-bar.md`](name-the-ma387-not383-bar.md) — BIP-387 multi_a not already 383-multi / not already toplevel / not already nestable-in-sh-wsh 正式三事（278 余量）（不变量 1154）

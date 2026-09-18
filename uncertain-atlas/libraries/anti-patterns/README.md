@@ -1,3 +1,6 @@
+- [`tap371-notprev-sold-as-bundled.md`](tap371-notprev-sold-as-bundled.md) — Taproot 输入 被写成已经必须带整笔前交易 / 已经是旧输入那套 / 已经交差（不变量 1159）
+- [`tap371-notinner-sold-as-bundled.md`](tap371-notinner-sold-as-bundled.md) — 输出脚本钥 被写成已经是内部钥 / 已经不必再给内部钥 / 已经交差（不变量 1158）
+- [`tap371-notold-sold-as-bundled.md`](tap371-notold-sold-as-bundled.md) — 旧 PSBT 栏 被写成已经能装 Taproot / 已经能签 / 已经交差（不变量 1157）
 - [`ma387-notsort-sold-as-bundled.md`](ma387-notsort-sold-as-bundled.md) — sortedmulti_a 被写成已经是 383 那种排序 / 已经排的是同一类钥 / 已经交差（不变量 1156）
 - [`ma387-notenc-sold-as-bundled.md`](ma387-notenc-sold-as-bundled.md) — 门限 被写成已经同一套编码 / 已经是 383 外层钥数界 / 已经交差（不变量 1155）
 - [`ma387-not383-sold-as-bundled.md`](ma387-not383-sold-as-bundled.md) — multi_a 被写成已经是 383 那种 multi / 已经能当顶层 / 已经交差（不变量 1154）
