@@ -1,3 +1,6 @@
+- [`feat434-notlate-sold-as-bundled.md`](feat434-notlate-sold-as-bundled.md) — verack 之后才来的 feature 被写成已经是本页协商 / 已经启用 / 忽略不认识就已经实现本页（不变量 1246）
+- [`feat434-noton-sold-as-bundled.md`](feat434-noton-sold-as-bundled.md) — 通告了 feature 被写成已经启用 / 已经理解 / 不认识就已经非法（不变量 1245）
+- [`feat434-notver-sold-as-bundled.md`](feat434-notver-sold-as-bundled.md) — 协议版本够了 被写成已经支持某项功能 / 已经发了本页 / 旧绑版本功能已经并进（不变量 1244）
 - [`dis338-notaddr-sold-as-bundled.md`](dis338-notaddr-sold-as-bundled.md) — 建议关掉地址 被写成已经禁止 / 已经断开 / 还在传就已经非法（不变量 1243）
 - [`dis338-notcmpct-sold-as-bundled.md`](dis338-notcmpct-sold-as-bundled.md) — 发了停交易转发 被写成已经没有紧凑块 / 交易消息已经非法 / 已经没有块（不变量 1242）
 - [`dis338-notlife-sold-as-bundled.md`](dis338-notlife-sold-as-bundled.md) — 版本里关掉转发 被写成已经终身只传块 / 已经实现本页 / 网上已经默认这样谈（不变量 1241）

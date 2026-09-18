@@ -1,3 +1,15 @@
+## 2026-09-18（续 1363）
+
+- 不变量 1246；语料 C1224；模式 name-the-feat434-notlate-bar；反模式 feat434-notlate-sold-as-bundled；L10.3 第 1215 条。填 L3.4 / L9.1 BIP-434 after-verack not already this-handshake / not already enabled / not already implemented 正式三事（259 余量）。259 feature vs enabled bundled unbundling 完成（1246 item 3）。
+
+## 2026-09-18（续 1362）
+
+- 不变量 1245；语料 C1223；模式 name-the-feat434-noton-bar；反模式 feat434-noton-sold-as-bundled；L10.3 第 1214 条。填 L3.4 / L9.1 BIP-434 feature-adv not already enabled / not already understood / not already illegal 正式三事（259 余量）。259 feature vs enabled bundled unbundling 续（1245 item 2）。
+
+## 2026-09-18（续 1361）
+
+- 不变量 1244；语料 C1222；模式 name-the-feat434-notver-bar；反模式 feat434-notver-sold-as-bundled；L10.3 第 1213 条。填 L3.4 / L9.1 BIP-434 version-enough not already support / not already sent-page / not already merged-old 正式三事（259 余量）。259 feature vs enabled bundled unbundling 启动（1244 item 1）。
+
 ## 2026-09-18（续 1360）
 
 - 不变量 1243；语料 C1221；模式 name-the-dis338-notaddr-bar；反模式 dis338-notaddr-sold-as-bundled；L10.3 第 1212 条。填 L3.4 / L9.1 BIP-338 addr-suggest not already forbidden / not already disconnected / not already illegal 正式三事（256 余量）。256 disabletx vs lifetime bundled unbundling 完成（1243 item 3）。

@@ -1,3 +1,6 @@
+- [`name-the-feat434-notlate-bar.md`](name-the-feat434-notlate-bar.md) — BIP-434 after-verack not already this-handshake / not already enabled / not already implemented 正式三事（259 余量）（不变量 1246）
+- [`name-the-feat434-noton-bar.md`](name-the-feat434-noton-bar.md) — BIP-434 feature-adv not already enabled / not already understood / not already illegal 正式三事（259 余量）（不变量 1245）
+- [`name-the-feat434-notver-bar.md`](name-the-feat434-notver-bar.md) — BIP-434 version-enough not already support / not already sent-page / not already merged-old 正式三事（259 余量）（不变量 1244）
 - [`name-the-dis338-notaddr-bar.md`](name-the-dis338-notaddr-bar.md) — BIP-338 addr-suggest not already forbidden / not already disconnected / not already illegal 正式三事（256 余量）（不变量 1243）
 - [`name-the-dis338-notcmpct-bar.md`](name-the-dis338-notcmpct-bar.md) — BIP-338 disabletx not already no-compact / not already tx-illegal / not already no-block 正式三事（256 余量）（不变量 1242）
 - [`name-the-dis338-notlife-bar.md`](name-the-dis338-notlife-bar.md) — BIP-338 version-flag not already lifetime / not already implemented / not already default-on 正式三事（256 余量）（不变量 1241）

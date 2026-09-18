@@ -41,7 +41,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果写对等升级，必须分开协议版本、功能通告、启用。可以跳过「看见版本号够了就已经会这项功能」。若对照，必须分开版本门槛、通告、启用、协商窗。不要另写怎样按功能标识认人。
+**建议（产品，不是事实）**：不确定第一条结算机如果写对等升级，必须分开协议版本、功能通告、启用。可以跳过「看见版本号够了就已经会这项功能」。若对照，必须分开版本门槛、通告、启用、协商窗。不要另写怎样按功能标识认人。259 feature vs enabled bundled unbundling 完成（1244 item 1 / 1245 item 2 / 1246 item 3）；精读 [`worked-example-feat434-notver-vs-bundled.md`](worked-example-feat434-notver-vs-bundled.md)（不变量 1244 item 1）、[`worked-example-feat434-noton-vs-bundled.md`](worked-example-feat434-noton-vs-bundled.md)（不变量 1245 item 2）、[`worked-example-feat434-notlate-vs-bundled.md`](worked-example-feat434-notlate-vs-bundled.md)（不变量 1246 item 3）。
 
 ## 本页不抄
 

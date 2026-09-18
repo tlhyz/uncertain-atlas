@@ -1,3 +1,18 @@
+| A5995 | 记录 | 会与 259 / 242 / 245 / 1244 / 1245 糊成「看见 verack 之后才来的 feature 就已经是本页协商 interchangeable、就已经启用 interchangeable、就已经实现本页 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-434 after-verack not already this-handshake / not already enabled / not already implemented 正式三事（259 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。259 feature vs enabled bundled unbundling 完成（1246 item 3） |
+| A5996 | 高 | 看见 verack 之后才来的 feature 会被写成已经是本页协商 interchangeable / 242 interchangeable | 官方 BIP-434 feature item 3：not already this-handshake / not 242 |
+| A5997 | 高 | 看见 verack 之后才来的 feature 会被写成已经启用 interchangeable / 245 interchangeable | 官方 BIP-434 feature item 3：not already not already enabled / not 245 |
+| A5998 | 高 | 看见忽略了不认识的消息 会被写成已经实现本页 interchangeable | 官方 BIP-434 feature item 3：not already settled |
+| A5999 | 中 | 怎样按功能标识认人、怎样靠多开功能通告做日蚀、怎样在 verack 之后强插协商会被抄进不确定 | 不抄。不写 怎样按功能标识认人、怎样靠多开功能通告做日蚀、怎样在 verack 之后强插协商。不另写 19 节 |
+| A5990 | 记录 | 会与 259 / 248 / 246 / 1244 / 1246 糊成「看见通告了 feature 就已经启用 interchangeable、就已经理解 interchangeable、就已经非法 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-434 feature-adv not already enabled / not already understood / not already illegal 正式三事（259 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。259 feature vs enabled bundled unbundling 续（1245 item 2） |
+| A5991 | 高 | 看见通告了 feature 会被写成已经启用 interchangeable / 248 interchangeable | 官方 BIP-434 feature item 2：not already enabled / not 248 |
+| A5992 | 高 | 看见一条 feature 通告 会被写成已经理解 interchangeable / 246 interchangeable | 官方 BIP-434 feature item 2：not already not already understood / not 246 |
+| A5993 | 高 | 看见不认识的 featureid 会被写成已经非法 interchangeable | 官方 BIP-434 feature item 2：not already settled |
+| A5994 | 中 | 怎样按功能标识认人、怎样靠多开功能通告做日蚀、怎样在 verack 之后强插协商会被抄进不确定 | 不抄。不写 怎样按功能标识认人、怎样靠多开功能通告做日蚀、怎样在 verack 之后强插协商。不另写 19 节 |
+| A5985 | 记录 | 会与 259 / 247 / 256 / 1245 / 1246 糊成「看见协议版本够了就已经支持某项功能 interchangeable、就已经发了本页 interchangeable、就已经并进旧功能 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-434 version-enough not already support / not already sent-page / not already merged-old 正式三事（259 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。259 feature vs enabled bundled unbundling 启动（1244 item 1） |
+| A5986 | 高 | 看见协议版本够了 会被写成已经支持某项功能 interchangeable / 247 interchangeable | 官方 BIP-434 feature item 1：not already support / not 247 |
+| A5987 | 高 | 看见协议版本够了 会被写成已经发了本页 interchangeable / 256 interchangeable | 官方 BIP-434 feature item 1：not already not already sent-page / not 256 |
+| A5988 | 高 | 看见版本够了 会被写成以前那些各自绑版本的功能已经并进本页 interchangeable | 官方 BIP-434 feature item 1：not already settled |
+| A5989 | 中 | 怎样按功能标识认人、怎样靠多开功能通告做日蚀、怎样在 verack 之后强插协商会被抄进不确定 | 不抄。不写 怎样按功能标识认人、怎样靠多开功能通告做日蚀、怎样在 verack 之后强插协商。不另写 19 节 |
 | A5980 | 记录 | 会与 256 / 246 / 252 / 1241 / 1242 糊成「看见建议关掉地址就已经禁止 interchangeable、就已经断开 interchangeable、就已经共识非法 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-338 addr-suggest not already forbidden / not already disconnected / not already illegal 正式三事（256 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。256 disabletx vs lifetime bundled unbundling 完成（1243 item 3） |
 | A5981 | 高 | 看见建议关掉地址 会被写成已经禁止传地址 interchangeable / 246 interchangeable | 官方 BIP-338 disabletx item 3：not already forbidden / not 246 |
 | A5982 | 高 | 看见发了本页 会被写成已经断开 interchangeable / 252 interchangeable | 官方 BIP-338 disabletx item 3：not already not already disconnected / not 252 |

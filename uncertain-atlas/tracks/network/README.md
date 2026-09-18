@@ -37,6 +37,9 @@ sendheaders ≠ 已经改用头通告：[`worked-example-hdr130-notswitch-vs-bun
 停交易 ≠ 已经没有紧凑块：[`worked-example-dis338-notcmpct-vs-bundled.md`](worked-example-dis338-notcmpct-vs-bundled.md)（停交易≠already no-compact/tx-illegal/no-block；≠256 bundled；不变量 1242）。
 建议关掉地址 ≠ 已经禁止：[`worked-example-dis338-notaddr-vs-bundled.md`](worked-example-dis338-notaddr-vs-bundled.md)（建议≠already forbidden/disconnected/illegal；≠256 bundled；不变量 1243）。
 停交易转发 ≠ 已经终身只传块：[`worked-example-disabletx-vs-lifetime.md`](worked-example-disabletx-vs-lifetime.md)（看见版本里关掉转发不是已经终身只传块；发了停交易转发不是已经没有紧凑块；建议关掉地址不是已经禁止；338 ≠ 133 ≠ 35 ≠ 152）。
+协议版本够了 ≠ 已经支持某项功能：[`worked-example-feat434-notver-vs-bundled.md`](worked-example-feat434-notver-vs-bundled.md)（版本≠already support/sent-page/merged-old；≠259 bundled；不变量 1244）。
+通告了 feature ≠ 已经启用：[`worked-example-feat434-noton-vs-bundled.md`](worked-example-feat434-noton-vs-bundled.md)（通告≠already enabled/understood/illegal；≠259 bundled；不变量 1245）。
+verack 之后才来的 feature ≠ 已经是本页协商：[`worked-example-feat434-notlate-vs-bundled.md`](worked-example-feat434-notlate-vs-bundled.md)（晚到≠already this-handshake/enabled/implemented；≠259 bundled；不变量 1246）。
 协议版本够了 ≠ 已经支持某项功能：[`worked-example-feature-vs-enabled.md`](worked-example-feature-vs-enabled.md)（看见通告了 feature 不是已经启用；verack 之后才来的 feature 不是已经是本页协商；434 ≠ 339 ≠ 155 ≠ 338）。
 看见 pong ≠ 已经还活着：[`worked-example-pong-vs-live.md`](worked-example-pong-vs-live.md)（协议版本够了不是已经会回 pong；回显 nonce 不是已经对上那一次；31 ≠ 434 ≠ 868）。
 协议版本 ≠ 已经是客户端版本：[`worked-example-ua-vs-protocol.md`](worked-example-ua-vs-protocol.md)（user agent 不是已经可以按实现改行为；同一协议版本不是已经是同一套实现；14 ≠ 434 ≠ 31）。
