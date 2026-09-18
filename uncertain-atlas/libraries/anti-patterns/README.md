@@ -1,3 +1,6 @@
+- [`por127-notpor-sold-as-bundled.md`](por127-notpor-sold-as-bundled.md) — POR 栏 被写成已经是普通花费 / 已经有前一笔未花输出 / 已经交差（不变量 1198）
+- [`por127-notctrl-sold-as-bundled.md`](por127-notctrl-sold-as-bundled.md) — 其余输入签过 被写成已经是 258 那种控制资金 / 已经付过 / 已经交差（不变量 1197）
+- [`por127-notspend-sold-as-bundled.md`](por127-notspend-sold-as-bundled.md) — 储备证明交易 被写成已经能花 / 已经能确认 / 已经交差（不变量 1196）
 - [`sig325-notsign-sold-as-bundled.md`](sig325-notsign-sold-as-bundled.md) — 头上工作量 被写成已经签过 / 已经全验证通过 / 已经交差（不变量 1195）
 - [`sig325-notreg-sold-as-bundled.md`](sig325-notreg-sold-as-bundled.md) — signet 被写成已经是 regtest / 已经谁都能独占 / 已经交差（不变量 1194）
 - [`sig325-nottn-sold-as-bundled.md`](sig325-nottn-sold-as-bundled.md) — signet 被写成已经是 testnet / 已经和 testnet 一样不可靠 / 已经交差（不变量 1193）

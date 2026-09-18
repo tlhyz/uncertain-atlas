@@ -1,3 +1,15 @@
+## 2026-09-18（续 1315）
+
+- 不变量 1198；语料 C1176；模式 name-the-por127-notpor-bar；反模式 por127-notpor-sold-as-bundled；L10.3 第 1167 条。填 L0.7 / L1.4 / L3.6 BIP-127 por-field not already ordinary-spend / not already have-prev-utxo / not already settled 正式三事（293 余量）。293 reserves vs spend bundled unbundling 完成（1198 item 3）。
+
+## 2026-09-18（续 1314）
+
+- 不变量 1197；语料 C1175；模式 name-the-por127-notctrl-bar；反模式 por127-notctrl-sold-as-bundled；L10.3 第 1166 条。填 L0.7 / L1.4 / L3.6 BIP-127 remaining-signed not already 258-control / not already paid / not already settled 正式三事（293 余量）。293 reserves vs spend bundled unbundling 续（1197 item 2）。
+
+## 2026-09-18（续 1313）
+
+- 不变量 1196；语料 C1174；模式 name-the-por127-notspend-bar；反模式 por127-notspend-sold-as-bundled；L10.3 第 1165 条。填 L0.7 / L1.4 / L3.6 BIP-127 por-tx not already spendable / not already confirmable / not already settled 正式三事（293 余量）。293 reserves vs spend bundled unbundling 启动（1196 item 1）。
+
 ## 2026-09-18（续 1312）
 
 - 不变量 1195；语料 C1173；模式 name-the-sig325-notsign-bar；反模式 sig325-notsign-sold-as-bundled；L10.3 第 1164 条。填 L3.6 BIP-325 header-work not already signed / not already full-valid / not already settled 正式三事（265 余量）。265 signet vs testnet bundled unbundling 完成（1195 item 3）。

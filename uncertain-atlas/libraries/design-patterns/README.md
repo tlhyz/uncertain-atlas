@@ -1,3 +1,6 @@
+- [`name-the-por127-notpor-bar.md`](name-the-por127-notpor-bar.md) — BIP-127 por-field not already ordinary-spend / not already have-prev-utxo / not already settled 正式三事（293 余量）（不变量 1198）
+- [`name-the-por127-notctrl-bar.md`](name-the-por127-notctrl-bar.md) — BIP-127 remaining-signed not already 258-control / not already paid / not already settled 正式三事（293 余量）（不变量 1197）
+- [`name-the-por127-notspend-bar.md`](name-the-por127-notspend-bar.md) — BIP-127 por-tx not already spendable / not already confirmable / not already settled 正式三事（293 余量）（不变量 1196）
 - [`name-the-sig325-notsign-bar.md`](name-the-sig325-notsign-bar.md) — BIP-325 header-work not already signed / not already full-valid / not already settled 正式三事（265 余量）（不变量 1195）
 - [`name-the-sig325-notreg-bar.md`](name-the-sig325-notreg-bar.md) — BIP-325 signet not already regtest / not already anyone-controls / not already settled 正式三事（265 余量）（不变量 1194）
 - [`name-the-sig325-nottn-bar.md`](name-the-sig325-nottn-bar.md) — BIP-325 signet not already testnet / not already same-unreliable / not already settled 正式三事（265 余量）（不变量 1193）

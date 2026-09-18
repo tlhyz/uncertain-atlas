@@ -1,3 +1,18 @@
+| A5755 | 记录 | 会与 293 / 179 / 182 / 1196 / 1197 糊成「看见 POR 栏就已经是普通花费 interchangeable、就已经有前一笔未花输出 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-127 por-field not already ordinary-spend / not already have-prev-utxo / not already settled 正式三事（293 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。293 reserves vs spend bundled unbundling 完成（1198 item 3） |
+| A5756 | 高 | 看见 POR 栏 会被写成已经是普通花费 interchangeable / 179 interchangeable | 官方 BIP-127 reserves item 3：not already ordinary-spend / not 179 |
+| A5757 | 高 | 看见硬件钱包弹出确认 会被写成已经有前一笔未花输出 interchangeable / 182 interchangeable | 官方 BIP-127 reserves item 3：not already have-prev-utxo / not 182 |
+| A5758 | 高 | 看见问要不要全部打走 会被写成已经交差 interchangeable | 官方 BIP-127 reserves item 3：not already settled |
+| A5759 | 中 | 怎样造承诺输入或怎样填 POR 栏会被抄进不确定 | 不抄。不写怎样造承诺输入或怎样填 POR 栏。不另写 19 节 |
+| A5750 | 记录 | 会与 293 / 258 / 174 / 1196 / 1198 糊成「看见其余输入签过就已经是 258 那种控制资金 interchangeable、就已经付过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-127 remaining-signed not already 258-control / not already paid / not already settled 正式三事（293 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。293 reserves vs spend bundled unbundling 续（1197 item 2） |
+| A5751 | 高 | 看见其余输入签过 会被写成已经是 258 那种控制资金 interchangeable / 258 interchangeable | 官方 BIP-127 reserves item 2：not already 258-control / not 258 |
+| A5752 | 高 | 看见承诺了消息 会被写成已经付过 interchangeable / 174 interchangeable | 官方 BIP-127 reserves item 2：not already paid / not 174 |
+| A5753 | 高 | 看见某一块时有过 会被写成已经交差 interchangeable | 官方 BIP-127 reserves item 2：not already settled |
+| A5754 | 中 | 怎样造承诺输入或怎样填 POR 栏会被抄进不确定 | 不抄。不写怎样造承诺输入或怎样填 POR 栏。不另写 19 节 |
+| A5745 | 记录 | 会与 293 / 258 / 179 / 1197 / 1198 糊成「看见储备证明交易就已经能花 interchangeable、就已经能确认 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.4 / L3.6 BIP-127 por-tx not already spendable / not already confirmable / not already settled 正式三事（293 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。293 reserves vs spend bundled unbundling 启动（1196 item 1） |
+| A5746 | 高 | 看见储备证明交易 会被写成已经能花 interchangeable / 258 interchangeable | 官方 BIP-127 reserves item 1：not already spendable / not 258 |
+| A5747 | 高 | 看见没有矿工费 会被写成已经能确认 interchangeable / 179 interchangeable | 官方 BIP-127 reserves item 1：not already confirmable / not 179 |
+| A5748 | 高 | 看见排得像交易 会被写成已经交差 interchangeable | 官方 BIP-127 reserves item 1：not already settled |
+| A5749 | 中 | 怎样造承诺输入或怎样填 POR 栏会被抄进不确定 | 不抄。不写怎样造承诺输入或怎样填 POR 栏。不另写 19 节 |
 | A5740 | 记录 | 会与 265 / 1192 / 163 / 1193 / 1194 糊成「看见头上有合法工作量就已经签过 interchangeable、就已经全验证通过 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.6 BIP-325 header-work not already signed / not already full-valid / not already settled 正式三事（265 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。265 signet vs testnet bundled unbundling 完成（1195 item 3） |
 | A5741 | 高 | 看见头上有合法工作量 会被写成已经签过 interchangeable / 1192 interchangeable | 官方 BIP-325 signet item 3：not already signed / not 1192 |
 | A5742 | 高 | 看见只加了网络参数 会被写成已经全验证通过 interchangeable / 163 interchangeable | 官方 BIP-325 signet item 3：not already full-valid / not 163 |
