@@ -1,3 +1,15 @@
+## 2026-09-18（续 1264）
+
+- 不变量 1147；语料 C1125；模式 name-the-tr386-notxonly-bar；反模式 tr386-notxonly-sold-as-bundled；L10.3 第 1116 条。填 L1.4 / L3.6 BIP-386 compressed-key not already x-only / not already uncompressed-ok / not already settled 正式三事（275 余量）。275 tr vs tree bundled unbundling 完成（1147 item 3）。
+
+## 2026-09-18（续 1263）
+
+- 不变量 1146；语料 C1124；模式 name-the-tr386-notold-bar；反模式 tr386-notold-sold-as-bundled；L10.3 第 1115 条。填 L1.4 / L3.6 BIP-386 tree-expr not already old-wrap / not already any-old-expr / not already settled 正式三事（275 余量）。275 tr vs tree bundled unbundling 续（1146 item 2）。
+
+## 2026-09-18（续 1262）
+
+- 不变量 1145；语料 C1123；模式 name-the-tr386-notpath-bar；反模式 tr386-notpath-sold-as-bundled；L10.3 第 1114 条。填 L1.4 / L3.6 BIP-386 tr-key-only not already has-script-path / not already same-tweak / not already settled 正式三事（275 余量）。275 tr vs tree bundled unbundling 启动（1145 item 1）。
+
 ## 2026-09-18（续 1261）
 
 - 不变量 1144；语料 C1122；模式 name-the-desc383-notidx-bar；反模式 desc383-notidx-sold-as-bundled；L10.3 第 1113 条。填 L1.4 / L3.6 BIP-383 many-xpubs not already own-index / not already offset-child / not already settled 正式三事（274 余量）。274 multi vs sortedmulti bundled unbundling 完成（1144 item 3）。

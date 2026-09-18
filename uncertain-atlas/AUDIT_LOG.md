@@ -1,3 +1,18 @@
+| A5500 | 记录 | 会与 275 / 189 / 184 / 1145 / 1146 糊成「看见压缩钥就已经是 x-only interchangeable、就已经允许未压缩 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-386 compressed-key not already x-only / not already uncompressed-ok / not already settled 正式三事（275 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。275 tr vs tree bundled unbundling 完成（1147 item 3） |
+| A5501 | 高 | 看见压缩钥 会被写成已经是 x-only interchangeable / 189 interchangeable | 官方 BIP-386 tr 描述符 item 3：not already x-only / not 189 |
+| A5502 | 高 | 看见未压缩钥 会被写成已经允许未压缩 interchangeable / 184 interchangeable | 官方 BIP-386 tr 描述符 item 3：not already uncompressed-ok / not 184 |
+| A5503 | 高 | 看见从扩展钥派生出来的钥也必须按 x-only 序列化 会被写成已经交差 interchangeable | 官方 BIP-386 tr 描述符 item 3：not already settled |
+| A5504 | 中 | 怎样算标签微调会被抄进不确定 | 不抄。不写怎样算标签微调。不另写 19 节 |
+| A5495 | 记录 | 会与 275 / 191 / 1142 / 1145 / 1147 糊成「看见树表达式就已经是旧的脚本哈希套法 interchangeable、就已经都能进树 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-386 tree-expr not already old-wrap / not already any-old-expr / not already settled 正式三事（275 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。275 tr vs tree bundled unbundling 续（1146 item 2） |
+| A5496 | 高 | 看见树表达式 会被写成已经是旧的脚本哈希套法 interchangeable / 191 interchangeable | 官方 BIP-386 tr 描述符 item 2：not already old-wrap / not 191 |
+| A5497 | 高 | 看见旧表达式 会被写成已经都能进树 interchangeable / 1142 interchangeable | 官方 BIP-386 tr 描述符 item 2：not already any-old-expr / not 1142 |
+| A5498 | 高 | 看见树表达式可以是一对树表达式 会被写成已经交差 interchangeable | 官方 BIP-386 tr 描述符 item 2：not already settled |
+| A5499 | 中 | 怎样算标签微调会被抄进不确定 | 不抄。不写怎样算标签微调。不另写 19 节 |
+| A5490 | 记录 | 会与 275 / 1136 / 153 / 1146 / 1147 糊成「看见 tr 只有钥就已经有脚本路径 interchangeable、就已经和带树那次同一套微调 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-386 tr-key-only not already has-script-path / not already same-tweak / not already settled 正式三事（275 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。275 tr vs tree bundled unbundling 启动（1145 item 1） |
+| A5491 | 高 | 看见 tr 只有钥 会被写成已经有脚本路径 interchangeable / 1136 interchangeable | 官方 BIP-386 tr 描述符 item 1：not already has-script-path / not 1136 |
+| A5492 | 高 | 看见带了树 会被写成已经和带树那次同一套微调 interchangeable / 153 interchangeable | 官方 BIP-386 tr 描述符 item 1：not already same-tweak / not 153 |
+| A5493 | 高 | 看见 tr 只能当顶层表达式 会被写成已经交差 interchangeable | 官方 BIP-386 tr 描述符 item 1：not already settled |
+| A5494 | 中 | 怎样算标签微调会被抄进不确定 | 不抄。不写怎样算标签微调。不另写 19 节 |
 | A5485 | 记录 | 会与 274 / 184 / 191 / 1142 / 1143 糊成「看见多把扩展钥就已经可以各走各的下标 interchangeable、就已经能错开子号 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-383 many-xpubs not already own-index / not already offset-child / not already settled 正式三事（274 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。274 multi vs sortedmulti bundled unbundling 完成（1144 item 3） |
 | A5486 | 高 | 看见多把扩展钥 会被写成已经可以各走各的下标 interchangeable / 184 interchangeable | 官方 BIP-383 多签描述符 item 3：not already own-index / not 184 |
 | A5487 | 高 | 看见路径写法不同 会被写成已经能错开子号 interchangeable / 191 interchangeable | 官方 BIP-383 多签描述符 item 3：not already offset-child / not 191 |

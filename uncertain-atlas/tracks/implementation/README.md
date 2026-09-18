@@ -813,6 +813,9 @@
 - [`worked-example-desc383-notcap-vs-bundled.md`](worked-example-desc383-notcap-vs-bundled.md) — 门限钥数≠already same-cap/any-number/settled；≠274 bundled（不变量 1143）
 - [`worked-example-desc383-notsort-vs-bundled.md`](worked-example-desc383-notsort-vs-bundled.md) — multi≠already sortedmulti/lex-sorted/settled；≠274 bundled（不变量 1142）
 - [`worked-example-multi-vs-sortedmulti.md`](worked-example-multi-vs-sortedmulti.md) — multi ≠ 已经按字典序排；门限和钥数 ≠ 已经同一套上限；多把扩展钥 ≠ 已经各自编号（不变量 274）
+- [`worked-example-tr386-notxonly-vs-bundled.md`](worked-example-tr386-notxonly-vs-bundled.md) — 压缩钥≠already x-only/uncompressed-ok/settled；≠275 bundled（不变量 1147）
+- [`worked-example-tr386-notold-vs-bundled.md`](worked-example-tr386-notold-vs-bundled.md) — 树表达式≠already old-wrap/any-old-expr/settled；≠275 bundled（不变量 1146）
+- [`worked-example-tr386-notpath-vs-bundled.md`](worked-example-tr386-notpath-vs-bundled.md) — tr 只有钥≠already has-script-path/same-tweak/settled；≠275 bundled（不变量 1145）
 - [`worked-example-tr-vs-tree.md`](worked-example-tr-vs-tree.md) — tr 没有树 ≠ 已经有脚本路径；树表达式 ≠ 已经是旧脚本套法；压缩钥 ≠ 已经是 x-only（不变量 275）
 - [`worked-example-pk-vs-toplevel.md`](worked-example-pk-vs-toplevel.md) — pk ≠ 已经和 pkh / sh 同一套放置；sh 产出 ≠ 已经有赎回脚本；熟悉的标准脚本 ≠ 已经能互操作（不变量 276）
 - [`worked-example-wpkh-vs-compressed.md`](worked-example-wpkh-vs-compressed.md) — wpkh / wsh ≠ 已经只能顶层；未压缩钥 ≠ 已经允许；wsh 产出 ≠ 已经有见证脚本（不变量 277）

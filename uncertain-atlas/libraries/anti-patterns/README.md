@@ -1,3 +1,6 @@
+- [`tr386-notxonly-sold-as-bundled.md`](tr386-notxonly-sold-as-bundled.md) — 压缩钥 被写成已经是 x-only / 已经允许未压缩 / 已经交差（不变量 1147）
+- [`tr386-notold-sold-as-bundled.md`](tr386-notold-sold-as-bundled.md) — 树表达式 被写成已经是旧套法 / 已经都能进树 / 已经交差（不变量 1146）
+- [`tr386-notpath-sold-as-bundled.md`](tr386-notpath-sold-as-bundled.md) — tr 只有钥 被写成已经有脚本路径 / 已经同一套微调 / 已经交差（不变量 1145）
 - [`desc383-notidx-sold-as-bundled.md`](desc383-notidx-sold-as-bundled.md) — 多把扩展钥 被写成已经各自编号 / 已经能错开子号 / 已经交差（不变量 1144）
 - [`desc383-notcap-sold-as-bundled.md`](desc383-notcap-sold-as-bundled.md) — 门限钥数 被写成已经同一套上限 / 已经是顶层三把 / 已经交差（不变量 1143）
 - [`desc383-notsort-sold-as-bundled.md`](desc383-notsort-sold-as-bundled.md) — multi 被写成已经是 sortedmulti / 已经按字典序排 / 已经交差（不变量 1142）

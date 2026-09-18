@@ -1,3 +1,9 @@
+| C1125 | 1147 | tr386 notxonly≠189/275 | 文案把压缩钥 / 未压缩钥 写成已经是 x-only interchangeable 或已经和 189 interchangeable / 1147 tr386-notxonly interchangeable；或把看见未压缩钥 写成已经允许未压缩 interchangeable；或把看见从扩展钥派生出来的钥也必须按 x-only 序列化 写成已经交差 interchangeable，或已经和 275 tr-vs-tree bundled / tr386-notxonly-sold-as-bundled interchangeable / 1145 tr386-notpath interchangeable / 1146 tr386-notold interchangeable |
+
+| C1124 | 1146 | tr386 notold≠191/275 | 文案把树表达式 / 一对花括号 写成已经是旧的脚本哈希套法 interchangeable 或已经和 191 interchangeable / 1146 tr386-notold interchangeable；或把看见旧表达式 写成已经都能进树 interchangeable；或把看见树表达式可以是一对树表达式 写成已经交差 interchangeable，或已经和 275 tr-vs-tree bundled / tr386-notold-sold-as-bundled interchangeable / 1145 tr386-notpath interchangeable / 1147 tr386-notxonly interchangeable |
+
+| C1123 | 1145 | tr386 notpath≠1136/275 | 文案把 tr 只有钥 / 没有树参数 写成已经有脚本路径 interchangeable 或已经和 1136 interchangeable / 1145 tr386-notpath interchangeable；或把看见带了树 写成已经和带树那次同一套微调 interchangeable；或把看见 tr 只能当顶层表达式 写成已经交差 interchangeable，或已经和 275 tr-vs-tree bundled / tr386-notpath-sold-as-bundled interchangeable / 1146 tr386-notold interchangeable / 1147 tr386-notxonly interchangeable |
+
 | C1122 | 1144 | desc383 notidx≠184/274 | 文案把多把扩展钥 / 各钥自己的派生路径 写成已经可以各走各的下标 interchangeable 或已经和 184 interchangeable / 1144 desc383-notidx interchangeable；或把看见路径写法不同 写成已经能错开子号 interchangeable；或把看见钥会齐步变 写成已经交差 interchangeable，或已经和 274 multi-vs-sortedmulti bundled / desc383-notidx-sold-as-bundled interchangeable / 1142 desc383-notsort interchangeable / 1143 desc383-notcap interchangeable |
 
 | C1121 | 1143 | desc383 notcap≠170/274 | 文案把门限 / 钥数 写成已经同一套上限 interchangeable 或已经和 170 interchangeable / 1143 desc383-notcap interchangeable；或把看见套进了脚本哈希 写成已经是顶层那三把 interchangeable；或把看见否则另有一把更大的上限 写成已经交差 interchangeable，或已经和 274 multi-vs-sortedmulti bundled / desc383-notcap-sold-as-bundled interchangeable / 1142 desc383-notsort interchangeable / 1144 desc383-notidx interchangeable |

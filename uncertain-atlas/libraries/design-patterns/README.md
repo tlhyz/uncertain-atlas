@@ -1,3 +1,6 @@
+- [`name-the-tr386-notxonly-bar.md`](name-the-tr386-notxonly-bar.md) — BIP-386 compressed-key not already x-only / not already uncompressed-ok / not already settled 正式三事（275 余量）（不变量 1147）
+- [`name-the-tr386-notold-bar.md`](name-the-tr386-notold-bar.md) — BIP-386 tree-expr not already old-wrap / not already any-old-expr / not already settled 正式三事（275 余量）（不变量 1146）
+- [`name-the-tr386-notpath-bar.md`](name-the-tr386-notpath-bar.md) — BIP-386 tr-key-only not already has-script-path / not already same-tweak / not already settled 正式三事（275 余量）（不变量 1145）
 - [`name-the-desc383-notidx-bar.md`](name-the-desc383-notidx-bar.md) — BIP-383 many-xpubs not already own-index / not already offset-child / not already settled 正式三事（274 余量）（不变量 1144）
 - [`name-the-desc383-notcap-bar.md`](name-the-desc383-notcap-bar.md) — BIP-383 threshold-keycount not already same-cap / not already any-number / not already settled 正式三事（274 余量）（不变量 1143）
 - [`name-the-desc383-notsort-bar.md`](name-the-desc383-notsort-bar.md) — BIP-383 multi not already sortedmulti / not already lex-sorted / not already settled 正式三事（274 余量）（不变量 1142）

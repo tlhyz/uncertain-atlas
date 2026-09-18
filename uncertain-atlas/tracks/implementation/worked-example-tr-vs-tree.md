@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出 Taproot 描述符，必须分开没有树、带树、x-only。可以跳过「看见 tr 就已经有脚本树」。若对照，必须分开本页描述符和 86 那种派生路径。不要另写怎样算标签微调。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出 Taproot 描述符，必须分开没有树、带树、x-only。可以跳过「看见 tr 就已经有脚本树」。若对照，必须分开本页描述符和 86 那种派生路径。不要另写怎样算标签微调。275 tr vs tree bundled unbundling 完成（1145 item 1 / 1146 item 2 / 1147 item 3）；精读 [`worked-example-tr386-notpath-vs-bundled.md`](worked-example-tr386-notpath-vs-bundled.md)（不变量 1145 item 1）。
 
 ## 本页不抄
 
