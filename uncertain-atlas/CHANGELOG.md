@@ -1,3 +1,15 @@
+## 2026-09-18（续 1321）
+
+- 不变量 1204；语料 C1182；模式 name-the-pay70-notfinal-bar；反模式 pay70-notfinal-sold-as-bundled；L10.3 第 1173 条。填 L0.7 / L3.6 BIP-70 ack not already final / not already confirmed / not already refunded 正式三事（295 余量）。295 request vs ack bundled unbundling 完成（1204 item 3）。
+
+## 2026-09-18（续 1320）
+
+- 不变量 1203；语料 C1181；模式 name-the-pay70-notack-bar；反模式 pay70-notack-sold-as-bundled；L10.3 第 1172 条。填 L0.7 / L3.6 BIP-70 payment-message not already ack / not already merchant-accepted / not already settled 正式三事（295 余量）。295 request vs ack bundled unbundling 续（1203 item 2）。
+
+## 2026-09-18（续 1319）
+
+- 不变量 1202；语料 C1180；模式 name-the-pay70-notauth-bar；反模式 pay70-notauth-sold-as-bundled；L10.3 第 1171 条。填 L0.7 / L3.6 BIP-70 payment-request not already authorized / not already that-address / not already settled 正式三事（295 余量）。295 request vs ack bundled unbundling 启动（1202 item 1）。
+
 ## 2026-09-18（续 1318）
 
 - 不变量 1201；语料 C1179；模式 name-the-lsig137-nothabit-bar；反模式 lsig137-nothabit-sold-as-bundled；L10.3 第 1170 条。填 L0.7 / L1.2 / L3.6 BIP-137 old-habit not already interoperable / not already old-verifiers / not already settled 正式三事（294 余量）。294 legacy sign vs 322 bundled unbundling 完成（1201 item 3）。

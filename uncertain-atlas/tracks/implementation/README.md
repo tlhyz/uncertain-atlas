@@ -888,6 +888,9 @@
 - [`worked-example-tn94-notstorm-vs-bundled.md`](worked-example-tn94-notstorm-vs-bundled.md) — 20 分钟例外≠already no-storm/exception-removed/settled；≠292 bundled（不变量 1191）
 - [`worked-example-tn94-not3-vs-bundled.md`](worked-example-tn94-not3-vs-bundled.md) — Testnet 4≠already testnet3/mainnet/settled；≠292 bundled（不变量 1190）
 - [`worked-example-testnet4-vs-testnet3.md`](worked-example-testnet4-vs-testnet3.md) — Testnet 4 ≠ 已经是 Testnet 3；20 分钟例外 ≠ 已经没有块风暴；会 Testnet 3 ≠ 已经能安全跟（不变量 292）
+- [`../lifecycle/worked-example-pay70-notfinal-vs-bundled.md`](../lifecycle/worked-example-pay70-notfinal-vs-bundled.md) — 回执≠already final/confirmed/refunded；≠295 bundled（不变量 1204）
+- [`../lifecycle/worked-example-pay70-notack-vs-bundled.md`](../lifecycle/worked-example-pay70-notack-vs-bundled.md) — 付款报文≠already ack/merchant-accepted/settled；≠295 bundled（不变量 1203）
+- [`../lifecycle/worked-example-pay70-notauth-vs-bundled.md`](../lifecycle/worked-example-pay70-notauth-vs-bundled.md) — 付款请求≠already authorized/that-address/settled；≠295 bundled（不变量 1202）
 - [`../lifecycle/worked-example-lsig137-nothabit-vs-bundled.md`](../lifecycle/worked-example-lsig137-nothabit-vs-bundled.md) — 旧习惯≠already interoperable/old-verifiers/settled；≠294 bundled（不变量 1201）
 - [`../lifecycle/worked-example-lsig137-notaddr-vs-bundled.md`](../lifecycle/worked-example-lsig137-notaddr-vs-bundled.md) — 头字节≠already have-address/spendable-output/settled；≠294 bundled（不变量 1200）
 - [`../lifecycle/worked-example-lsig137-not322-vs-bundled.md`](../lifecycle/worked-example-lsig137-not322-vs-bundled.md) — 本页这种签≠already 322/258-control/settled；≠294 bundled（不变量 1199）

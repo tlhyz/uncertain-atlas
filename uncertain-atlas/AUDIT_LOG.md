@@ -1,3 +1,18 @@
+| A5785 | 记录 | 会与 295 / 255 / 294 / 1202 / 1203 糊成「看见回执就已经最终 interchangeable、就已经确认 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-70 ack not already final / not already confirmed / not already refunded 正式三事（295 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。295 request vs ack bundled unbundling 完成（1204 item 3） |
+| A5786 | 高 | 看见回执 会被写成已经最终 interchangeable / 255 interchangeable | 官方 BIP-70 payment item 3：not already final / not 255 |
+| A5787 | 高 | 看见已收到那句备忘 会被写成已经确认 interchangeable / 294 interchangeable | 官方 BIP-70 payment item 3：not already confirmed / not 294 |
+| A5788 | 高 | 看见退款输出 会被写成已经交差 interchangeable | 官方 BIP-70 payment item 3：not already refunded |
+| A5789 | 中 | 怎样拼付款请求或怎样验证书链会被抄进不确定 | 不抄。不写怎样拼付款请求或怎样验证书链。不另写 19 节 |
+| A5780 | 记录 | 会与 295 / 290 / 174 / 1202 / 1204 糊成「看见付款报文就已经是回执 interchangeable、就已经商家收下 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-70 payment-message not already ack / not already merchant-accepted / not already settled 正式三事（295 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。295 request vs ack bundled unbundling 续（1203 item 2） |
+| A5781 | 高 | 看见付款报文 会被写成已经是回执 interchangeable / 290 interchangeable | 官方 BIP-70 payment item 2：not already ack / not 290 |
+| A5782 | 高 | 看见里面有签过的交易 会被写成商家已经收下 interchangeable / 174 interchangeable | 官方 BIP-70 payment item 2：not already merchant-accepted / not 174 |
+| A5783 | 高 | 看见送到了付款网址 会被写成已经交差 interchangeable | 官方 BIP-70 payment item 2：not already settled |
+| A5784 | 中 | 怎样拼付款请求或怎样验证书链会被抄进不确定 | 不抄。不写怎样拼付款请求或怎样验证书链。不另写 19 节 |
+| A5775 | 记录 | 会与 295 / 255 / 55 / 1203 / 1204 糊成「看见付款请求就已经授权 interchangeable、就已经是那条地址 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L3.6 BIP-70 payment-request not already authorized / not already that-address / not already settled 正式三事（295 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。295 request vs ack bundled unbundling 启动（1202 item 1） |
+| A5776 | 高 | 看见付款请求 会被写成已经授权 interchangeable / 255 interchangeable | 官方 BIP-70 payment item 1：not already authorized / not 255 |
+| A5777 | 高 | 看见商家常用名 会被写成已经是那条地址 interchangeable / 55 interchangeable | 官方 BIP-70 payment item 1：not already that-address / not 55 |
+| A5778 | 高 | 看见身份类型写成没有 会被写成已经交差 interchangeable | 官方 BIP-70 payment item 1：not already settled |
+| A5779 | 中 | 怎样拼付款请求或怎样验证书链会被抄进不确定 | 不抄。不写怎样拼付款请求或怎样验证书链。不另写 19 节 |
 | A5770 | 记录 | 会与 294 / 258 / 293 / 1199 / 1200 糊成「看见旧的 P2PKH 签消息习惯就已经互操作 interchangeable、就已经能被所有旧校验器收下 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L0.7 / L1.2 / L3.6 BIP-137 old-habit not already interoperable / not already old-verifiers / not already settled 正式三事（294 余量）/ 生命周期表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。294 legacy sign vs 322 bundled unbundling 完成（1201 item 3） |
 | A5771 | 高 | 看见旧的 P2PKH 签消息习惯 会被写成已经互操作 interchangeable / 258 interchangeable | 官方 BIP-137 legacy-sign item 3：not already interoperable / not 258 |
 | A5772 | 高 | 看见本页这种格式 会被写成已经能被所有旧校验器收下 interchangeable / 293 interchangeable | 官方 BIP-137 legacy-sign item 3：not already old-verifiers / not 293 |

@@ -1,3 +1,6 @@
+- [`name-the-pay70-notfinal-bar.md`](name-the-pay70-notfinal-bar.md) — BIP-70 ack not already final / not already confirmed / not already refunded 正式三事（295 余量）（不变量 1204）
+- [`name-the-pay70-notack-bar.md`](name-the-pay70-notack-bar.md) — BIP-70 payment-message not already ack / not already merchant-accepted / not already settled 正式三事（295 余量）（不变量 1203）
+- [`name-the-pay70-notauth-bar.md`](name-the-pay70-notauth-bar.md) — BIP-70 payment-request not already authorized / not already that-address / not already settled 正式三事（295 余量）（不变量 1202）
 - [`name-the-lsig137-nothabit-bar.md`](name-the-lsig137-nothabit-bar.md) — BIP-137 old-habit not already interoperable / not already old-verifiers / not already settled 正式三事（294 余量）（不变量 1201）
 - [`name-the-lsig137-notaddr-bar.md`](name-the-lsig137-notaddr-bar.md) — BIP-137 header-byte not already have-address / not already spendable-output / not already settled 正式三事（294 余量）（不变量 1200）
 - [`name-the-lsig137-not322-bar.md`](name-the-lsig137-not322-bar.md) — BIP-137 this-sign not already 322 / not already 258-control / not already settled 正式三事（294 余量）（不变量 1199）
