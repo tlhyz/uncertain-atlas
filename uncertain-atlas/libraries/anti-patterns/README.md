@@ -1,3 +1,6 @@
+- [`rej61-notpol-sold-as-bundled.md`](rej61-notpol-sold-as-bundled.md) — 策略拒收 被写成已经共识非法 / 语义非法码就已经全网非法 / 一条拒收就已经该弹窗或写满日志（不变量 1267）
+- [`rej61-notuser-sold-as-bundled.md`](rej61-notuser-sold-as-bundled.md) — 一条拒收理由 被写成已经是官方原因 / 已经写进共识 / 已经该弹给用户（不变量 1266）
+- [`rej61-notill-sold-as-bundled.md`](rej61-notill-sold-as-bundled.md) — 拒收 被写成已经共识非法 / 全网已经知道 / 没拒收就已经是当前最好链（不变量 1265）
 - [`dump35-notver-sold-as-bundled.md`](dump35-notver-sold-as-bundled.md) — 协议版本够了 被写成已经在答 / 开了能服数据就已经在答 / 过大库存被丢掉就已经共识非法（不变量 1264）
 - [`dump35-notget-sold-as-bundled.md`](dump35-notget-sold-as-bundled.md) — 回了内存池库存 被写成已经下载 / 只肯给最近转发过的就已经支持整池 / 就已经不在池里（不变量 1263）
 - [`dump35-nothave-sold-as-bundled.md`](dump35-nothave-sold-as-bundled.md) — 回了一串库存 被写成已经有那些交易 / 已经收下 / 回了空库存就已经没有未确认池（不变量 1262）

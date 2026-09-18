@@ -1,3 +1,18 @@
+| A6100 | 记录 | 会与 254 / 144 / 253 / 1265 / 1266 糊成「看见策略拒收就已经共识非法 interchangeable、就已经全网非法 interchangeable、就已经该弹窗或写满日志 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.1 / L9.2 BIP-61 policy-code not already illegal / not already net-illegal / not already notify 正式三事（254 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。254 reject vs consensus bundled unbundling 完成（1267 item 3） |
+| A6101 | 高 | 看见策略拒收 会被写成已经共识非法 interchangeable / 144 interchangeable | 官方 BIP-61 reject item 3：not already illegal / not 144 |
+| A6102 | 高 | 看见语义非法码 会被写成已经全网非法 interchangeable / 253 interchangeable | 官方 BIP-61 reject item 3：not already not already net-illegal / not 253 |
+| A6103 | 高 | 看见一条拒收 会被写成已经该弹窗或已经该写满日志 interchangeable | 官方 BIP-61 reject item 3：not already settled |
+| A6104 | 中 | 怎样对合法对象乱发拒收、怎样骚扰用户、怎样把日志盘写满会被抄进不确定 | 不抄。不写 怎样对合法对象乱发拒收、怎样骚扰用户、怎样把日志盘写满。不另写 19 节 |
+| A6095 | 记录 | 会与 254 / 44 / 253 / 1265 / 1267 糊成「看见一条拒收理由就已经是官方原因 interchangeable、就已经写进共识 interchangeable、就已经该弹给用户 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.1 / L9.2 BIP-61 reason not already official / not already consensus / not already for-users 正式三事（254 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。254 reject vs consensus bundled unbundling 续（1266 item 2） |
+| A6096 | 高 | 看见一条拒收理由 会被写成已经是官方原因 interchangeable / 44 interchangeable | 官方 BIP-61 reject item 2：not already official / not 44 |
+| A6097 | 高 | 看见一条拒收理由 会被写成已经写进共识 interchangeable / 253 interchangeable | 官方 BIP-61 reject item 2：not already not already consensus / not 253 |
+| A6098 | 高 | 看见一条拒收理由 会被写成已经该弹给用户 interchangeable | 官方 BIP-61 reject item 2：not already settled |
+| A6099 | 中 | 怎样对合法对象乱发拒收、怎样骚扰用户、怎样把日志盘写满会被抄进不确定 | 不抄。不写 怎样对合法对象乱发拒收、怎样骚扰用户、怎样把日志盘写满。不另写 19 节 |
+| A6090 | 记录 | 会与 254 / 144 / 245 / 1266 / 1267 糊成「看见拒收就已经共识非法 interchangeable、就已经全网知道 interchangeable、就已经是当前最好链 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.1 / L9.2 BIP-61 reject not already illegal / not already net-wide / not already best-chain 正式三事（254 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。254 reject vs consensus bundled unbundling 启动（1265 item 1） |
+| A6091 | 高 | 看见拒收 会被写成已经共识非法 interchangeable / 144 interchangeable | 官方 BIP-61 reject item 1：not already illegal / not 144 |
+| A6092 | 高 | 看见拒收 会被写成全网已经知道 interchangeable / 245 interchangeable | 官方 BIP-61 reject item 1：not already not already net-wide / not 245 |
+| A6093 | 高 | 看见没拒收 会被写成已经是当前最好链 interchangeable | 官方 BIP-61 reject item 1：not already settled |
+| A6094 | 中 | 怎样对合法对象乱发拒收、怎样骚扰用户、怎样把日志盘写满会被抄进不确定 | 不抄。不写 怎样对合法对象乱发拒收、怎样骚扰用户、怎样把日志盘写满。不另写 19 节 |
 | A6085 | 记录 | 会与 253 / 144 / 252 / 1262 / 1263 糊成「看见协议版本够了就已经在答 interchangeable、就已经在答 interchangeable、就已经共识非法 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 / L9.2 BIP-35 dump-disc not already answering / not already serving / not already illegal 正式三事（253 余量）/ 内存池表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。253 mempool vs have bundled unbundling 完成（1264 item 3） |
 | A6086 | 高 | 看见协议版本够了 会被写成已经在答内存池查询 interchangeable / 144 interchangeable | 官方 BIP-35 dump item 3：not already answering / not 144 |
 | A6087 | 高 | 看见开了能服数据 会被写成已经在答 interchangeable / 252 interchangeable | 官方 BIP-35 dump item 3：not already not already serving / not 252 |

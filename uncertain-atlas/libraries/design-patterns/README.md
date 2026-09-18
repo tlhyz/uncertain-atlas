@@ -1,3 +1,6 @@
+- [`name-the-rej61-notpol-bar.md`](name-the-rej61-notpol-bar.md) — BIP-61 policy-code not already illegal / not already net-illegal / not already notify 正式三事（254 余量）（不变量 1267）
+- [`name-the-rej61-notuser-bar.md`](name-the-rej61-notuser-bar.md) — BIP-61 reason not already official / not already consensus / not already for-users 正式三事（254 余量）（不变量 1266）
+- [`name-the-rej61-notill-bar.md`](name-the-rej61-notill-bar.md) — BIP-61 reject not already illegal / not already net-wide / not already best-chain 正式三事（254 余量）（不变量 1265）
 - [`name-the-dump35-notver-bar.md`](name-the-dump35-notver-bar.md) — BIP-35 dump-disc not already answering / not already serving / not already illegal 正式三事（253 余量）（不变量 1264）
 - [`name-the-dump35-notget-bar.md`](name-the-dump35-notget-bar.md) — BIP-35 dump-get not already downloaded / not already full-query / not already gone 正式三事（253 余量）（不变量 1263）
 - [`name-the-dump35-nothave-bar.md`](name-the-dump35-nothave-bar.md) — BIP-35 dump-inv not already have / not already accepted / not already empty-pool 正式三事（253 余量）（不变量 1262）

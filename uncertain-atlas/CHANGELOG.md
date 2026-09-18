@@ -1,3 +1,15 @@
+## 2026-09-18（续 1384）
+
+- 不变量 1267；语料 C1245；模式 name-the-rej61-notpol-bar；反模式 rej61-notpol-sold-as-bundled；L10.3 第 1236 条。填 L3.2 / L9.1 / L9.2 BIP-61 policy-code not already illegal / not already net-illegal / not already notify 正式三事（254 余量）。254 reject vs consensus bundled unbundling 完成（1267 item 3）。
+
+## 2026-09-18（续 1383）
+
+- 不变量 1266；语料 C1244；模式 name-the-rej61-notuser-bar；反模式 rej61-notuser-sold-as-bundled；L10.3 第 1235 条。填 L3.2 / L9.1 / L9.2 BIP-61 reason not already official / not already consensus / not already for-users 正式三事（254 余量）。254 reject vs consensus bundled unbundling 续（1266 item 2）。
+
+## 2026-09-18（续 1382）
+
+- 不变量 1265；语料 C1243；模式 name-the-rej61-notill-bar；反模式 rej61-notill-sold-as-bundled；L10.3 第 1234 条。填 L3.2 / L9.1 / L9.2 BIP-61 reject not already illegal / not already net-wide / not already best-chain 正式三事（254 余量）。254 reject vs consensus bundled unbundling 启动（1265 item 1）。
+
 ## 2026-09-18（续 1381）
 
 - 不变量 1264；语料 C1242；模式 name-the-dump35-notver-bar；反模式 dump35-notver-sold-as-bundled；L10.3 第 1233 条。填 L3.2 / L9.2 BIP-35 dump-disc not already answering / not already serving / not already illegal 正式三事（253 余量）。253 mempool vs have bundled unbundling 完成（1264 item 3）。

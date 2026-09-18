@@ -44,6 +44,9 @@ sendheaders ≠ 已经改用头通告：[`worked-example-hdr130-notswitch-vs-bun
 开了能提供见证那一位 ≠ 已经在传：[`worked-example-wit144-notsend-vs-bundled.md`](worked-example-wit144-notsend-vs-bundled.md)（服务位≠already sending/have/old-retired；≠251 bundled；不变量 1257）。
 库存通告仍用旧类型 ≠ 线上已经没有见证：[`worked-example-wit144-notold-vs-bundled.md`](worked-example-wit144-notold-vs-bundled.md)（旧通告≠already no-wit/wtxid-ann/verified；≠251 bundled；不变量 1258）。
 带见证的线上序列化 ≠ 已经有见证：[`worked-example-witness-wire-vs-have.md`](worked-example-witness-wire-vs-have.md)（看见带见证的线上序列化不是已经有见证；能提供见证不是已经在传；库存通告仍用旧类型不是线上已经没有见证；144 ≠ 141 ≠ 339 ≠ 130）。
+拒收 ≠ 已经共识非法：[`worked-example-rej61-notill-vs-bundled.md`](worked-example-rej61-notill-vs-bundled.md)（拒收≠already illegal/net-wide/best-chain；≠254 bundled；不变量 1265）。
+一条拒收理由 ≠ 已经该弹给用户：[`worked-example-rej61-notuser-vs-bundled.md`](worked-example-rej61-notuser-vs-bundled.md)（理由≠already official/consensus/for-users；≠254 bundled；不变量 1266）。
+策略拒收 ≠ 已经共识非法：[`worked-example-rej61-notpol-vs-bundled.md`](worked-example-rej61-notpol-vs-bundled.md)（策略码≠already illegal/net-illegal/notify；≠254 bundled；不变量 1267）。
 拒收消息 ≠ 已经共识非法：[`worked-example-reject-vs-consensus.md`](worked-example-reject-vs-consensus.md)（看见拒收消息不是已经共识非法；调试理由不是已经该给用户看；没拒收不是已经是当前最好链；61 ≠ 144 ≠ 133 ≠ 35）。
 版本关掉转发 ≠ 已经终身只传块：[`worked-example-dis338-notlife-vs-bundled.md`](worked-example-dis338-notlife-vs-bundled.md)（版本字段≠already lifetime/implemented/default-on；≠256 bundled；不变量 1241）。
 停交易 ≠ 已经没有紧凑块：[`worked-example-dis338-notcmpct-vs-bundled.md`](worked-example-dis338-notcmpct-vs-bundled.md)（停交易≠already no-compact/tx-illegal/no-block；≠256 bundled；不变量 1242）。

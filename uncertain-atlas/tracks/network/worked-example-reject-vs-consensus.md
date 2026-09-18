@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见拒收消息就已经共识非法 / 就已经该弹给用户 / 就已经是全网拒绝」。若对照拒收反馈，必须分开这个节点回了一句、调试理由、策略码与共识码。不要把没拒收写成已经是最好链。不要写怎样用拒收骚扰或灌盘。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见拒收消息就已经共识非法 / 就已经该弹给用户 / 就已经是全网拒绝」。若对照拒收反馈，必须分开这个节点回了一句、调试理由、策略码与共识码。不要把没拒收写成已经是最好链。254 reject vs consensus bundled unbundling 完成（1265 item 1 / 1266 item 2 / 1267 item 3）；精读 [`worked-example-rej61-notill-vs-bundled.md`](worked-example-rej61-notill-vs-bundled.md)（不变量 1265 item 1）、[`worked-example-rej61-notuser-vs-bundled.md`](worked-example-rej61-notuser-vs-bundled.md)（不变量 1266 item 2）、[`worked-example-rej61-notpol-vs-bundled.md`](worked-example-rej61-notpol-vs-bundled.md)（不变量 1267 item 3）。不要写怎样用拒收骚扰或灌盘。
 
 ## 本页不抄
 
