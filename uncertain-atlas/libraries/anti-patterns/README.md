@@ -1,3 +1,6 @@
+- [`hdr130-nothave-sold-as-bundled.md`](hdr130-nothave-sold-as-bundled.md) — 头通告新尖 被写成已经有块 / 中间块已经在手里 / 重组已经处理完（不变量 1237）
+- [`hdr130-notmust-sold-as-bundled.md`](hdr130-notmust-sold-as-bundled.md) — 许可 被写成已经必须改 / 已经在发 / 已经永远理会（不变量 1236）
+- [`hdr130-notswitch-sold-as-bundled.md`](hdr130-notswitch-sold-as-bundled.md) — sendheaders 被写成已经改用头通告 / 已经有那块 / 头先同步已经做完（不变量 1235）
 - [`addr155-notnet-sold-as-bundled.md`](addr155-notnet-sold-as-bundled.md) — 传了某种网 被写成已经连上那种网 / 换编号已经是另一个人 / 旧洋葱已经能当隐藏服务（不变量 1234）
 - [`addr155-notpref-sold-as-bundled.md`](addr155-notpref-sold-as-bundled.md) — sendaddrv2 被写成已经只收后继格式 / 旧线已经退役 / 未请求偏好已经谈妥（不变量 1233）
 - [`addr155-notreach-sold-as-bundled.md`](addr155-notreach-sold-as-bundled.md) — 后继地址流言 被写成已经连得上 / 已经可达 / 旧格式已经退役（不变量 1232）

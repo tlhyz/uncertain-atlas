@@ -1,3 +1,18 @@
+| A5950 | 记录 | 会与 247 / 36 / 246 / 1235 / 1236 糊成「看见用头通告新尖就已经有块 interchangeable、就已经有中间块 interchangeable、就已经处理完重组 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-130 tip-headers not already have-block / not already have-middle / not already reorg-done 正式三事（247 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。247 sendheaders vs have bundled unbundling 完成（1237 item 3） |
+| A5951 | 高 | 看见用头通告新尖 会被写成已经有块 interchangeable / 36 interchangeable | 官方 BIP-130 sendheaders item 3：not already have-block / not 36 |
+| A5952 | 高 | 看见重组时先发了头 会被写成中间块已经在手里 interchangeable / 246 interchangeable | 官方 BIP-130 sendheaders item 3：not already not already have-middle / not 246 |
+| A5953 | 高 | 看见先发头 会被写成重组已经处理完 interchangeable | 官方 BIP-130 sendheaders item 3：not already settled |
+| A5954 | 中 | 怎样扣头、怎样用假头围住对等节点、怎样只通告哈希卡住中间块会被抄进不确定 | 不抄。不写 怎样扣头、怎样用假头围住对等节点、怎样只通告哈希卡住中间块。不另写 19 节 |
+| A5945 | 记录 | 会与 247 / 246 / 36 / 1235 / 1237 糊成「看见你发了 sendheaders 就已经改用头通告 interchangeable、就已经在发 interchangeable、就已经照做 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-130 permission not already must / not already sending / not already forever 正式三事（247 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。247 sendheaders vs have bundled unbundling 续（1236 item 2） |
+| A5946 | 高 | 看见你发了 sendheaders 会被写成对等节点已经改用头通告 interchangeable / 246 interchangeable | 官方 BIP-130 sendheaders item 2：not already must / not 246 |
+| A5947 | 高 | 看见协议版本够了 会被写成已经在发 interchangeable / 36 interchangeable | 官方 BIP-130 sendheaders item 2：not already not already sending / not 36 |
+| A5948 | 高 | 看见许可 会被写成已经照做 interchangeable | 官方 BIP-130 sendheaders item 2：not already settled |
+| A5949 | 中 | 怎样扣头、怎样用假头围住对等节点、怎样只通告哈希卡住中间块会被抄进不确定 | 不抄。不写 怎样扣头、怎样用假头围住对等节点、怎样只通告哈希卡住中间块。不另写 19 节 |
+| A5940 | 记录 | 会与 247 / 36 / 246 / 1236 / 1237 糊成「看见发了 sendheaders 就已经改用头通告 interchangeable、就已经有那块 interchangeable、就已经做完头先同步 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-130 sendheaders not already switched / not already have-block / not already headers-first 正式三事（247 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。247 sendheaders vs have bundled unbundling 启动（1235 item 1） |
+| A5941 | 高 | 看见发了 sendheaders 会被写成已经改用头通告 interchangeable / 36 interchangeable | 官方 BIP-130 sendheaders item 1：not already switched / not 36 |
+| A5942 | 高 | 看见发了偏好 会被写成已经有那块 interchangeable / 246 interchangeable | 官方 BIP-130 sendheaders item 1：not already not already have-block / not 246 |
+| A5943 | 高 | 看见发了 sendheaders 会被写成头先同步已经做完 interchangeable | 官方 BIP-130 sendheaders item 1：not already settled |
+| A5944 | 中 | 怎样扣头、怎样用假头围住对等节点、怎样只通告哈希卡住中间块会被抄进不确定 | 不抄。不写 怎样扣头、怎样用假头围住对等节点、怎样只通告哈希卡住中间块。不另写 19 节 |
 | A5935 | 记录 | 会与 246 / 242 / 241 / 1232 / 1233 糊成「看见在传某种网上的地址就已经连上那种网 interchangeable、就已经是另一个人 interchangeable、就已经能当隐藏服务用 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-155 gossip-net not already connected-to-net / not already two-peers / not already hidden-service 正式三事（246 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。246 addrv2 vs reachable bundled unbundling 完成（1234 item 3） |
 | A5936 | 高 | 看见在传某种网上的地址 会被写成已经连上那种网 interchangeable / 242 interchangeable | 官方 BIP-155 addrv2 item 3：not already connected-to-net / not 242 |
 | A5937 | 高 | 看见同一份地址换了编号 会被写成已经是另一个人 interchangeable / 241 interchangeable | 官方 BIP-155 addrv2 item 3：not already not already two-peers / not 241 |

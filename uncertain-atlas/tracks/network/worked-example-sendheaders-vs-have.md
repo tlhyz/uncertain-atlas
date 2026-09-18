@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见发了 sendheaders 就已经有新块 / 就已经改用头通告 / 就已经处理完重组」。若对照头通告偏好，必须分开信号、许可、先发头。不要把头通告写成已经验完块。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见发了 sendheaders 就已经有新块 / 就已经改用头通告 / 就已经处理完重组」。若对照头通告偏好，必须分开信号、许可、先发头。不要把头通告写成已经验完块。247 sendheaders vs have bundled unbundling 完成（1235 item 1 / 1236 item 2 / 1237 item 3）；精读 [`worked-example-hdr130-notswitch-vs-bundled.md`](worked-example-hdr130-notswitch-vs-bundled.md)（不变量 1235 item 1）、[`worked-example-hdr130-notmust-vs-bundled.md`](worked-example-hdr130-notmust-vs-bundled.md)（不变量 1236 item 2）、[`worked-example-hdr130-nothave-vs-bundled.md`](worked-example-hdr130-nothave-vs-bundled.md)（不变量 1237 item 3）。
 
 ## 本页不抄
 

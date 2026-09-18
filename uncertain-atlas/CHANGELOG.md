@@ -1,3 +1,15 @@
+## 2026-09-18（续 1354）
+
+- 不变量 1237；语料 C1215；模式 name-the-hdr130-nothave-bar；反模式 hdr130-nothave-sold-as-bundled；L10.3 第 1206 条。填 L3.4 / L9.1 BIP-130 tip-headers not already have-block / not already have-middle / not already reorg-done 正式三事（247 余量）。247 sendheaders vs have bundled unbundling 完成（1237 item 3）。
+
+## 2026-09-18（续 1353）
+
+- 不变量 1236；语料 C1214；模式 name-the-hdr130-notmust-bar；反模式 hdr130-notmust-sold-as-bundled；L10.3 第 1205 条。填 L3.4 / L9.1 BIP-130 permission not already must / not already sending / not already forever 正式三事（247 余量）。247 sendheaders vs have bundled unbundling 续（1236 item 2）。
+
+## 2026-09-18（续 1352）
+
+- 不变量 1235；语料 C1213；模式 name-the-hdr130-notswitch-bar；反模式 hdr130-notswitch-sold-as-bundled；L10.3 第 1204 条。填 L3.4 / L9.1 BIP-130 sendheaders not already switched / not already have-block / not already headers-first 正式三事（247 余量）。247 sendheaders vs have bundled unbundling 启动（1235 item 1）。
+
 ## 2026-09-18（续 1351）
 
 - 不变量 1234；语料 C1212；模式 name-the-addr155-notnet-bar；反模式 addr155-notnet-sold-as-bundled；L10.3 第 1203 条。填 L3.4 / L9.1 BIP-155 gossip-net not already connected-to-net / not already two-peers / not already hidden-service 正式三事（246 余量）。246 addrv2 vs reachable bundled unbundling 完成（1234 item 3）。
