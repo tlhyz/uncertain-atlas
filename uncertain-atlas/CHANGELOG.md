@@ -1,3 +1,15 @@
+## 2026-09-18（续 1285）
+
+- 不变量 1168；语料 C1146；模式 name-the-raw385-notwrap-bar；反模式 raw385-notwrap-sold-as-bundled；L10.3 第 1137 条。填 L1.4 / L3.6 BIP-385 one-wrap not already combo / not already wallet-policy / not already settled 正式三事（282 余量）。282 raw vs named bundled unbundling 完成（1168 item 3）。
+
+## 2026-09-18（续 1284）
+
+- 不变量 1167；语料 C1145；模式 name-the-raw385-notaddr-bar；反模式 raw385-notaddr-sold-as-bundled；L10.3 第 1136 条。填 L1.4 / L3.6 BIP-385 addr not already nestable-in-sh-wsh / not already output-script-written / not already settled 正式三事（282 余量）。282 raw vs named bundled unbundling 续（1167 item 2）。
+
+## 2026-09-18（续 1283）
+
+- 不变量 1166；语料 C1144；模式 name-the-raw385-notraw-bar；反模式 raw385-notraw-sold-as-bundled；L10.3 第 1135 条。填 L1.4 / L3.6 BIP-385 raw not already nestable-in-sh-wsh / not already named-expr / not already settled 正式三事（282 余量）。282 raw vs named bundled unbundling 启动（1166 item 1）。
+
 ## 2026-09-18（续 1282）
 
 - 不变量 1165；语料 C1143；模式 name-the-combo384-notpol-bar；反模式 combo384-notpol-sold-as-bundled；L10.3 第 1134 条。填 L1.4 / L3.6 BIP-384 one-combo not already wallet-policy / not already those-named-exprs / not already settled 正式三事（281 余量）。281 combo vs one-script bundled unbundling 完成（1165 item 3）。

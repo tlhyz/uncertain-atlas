@@ -1,3 +1,18 @@
+| A5605 | 记录 | 会与 282 / 1165 / 1160 / 1166 / 1167 糊成「看见一份包装就已经是 combo interchangeable、就已经是一份钱包策略 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-385 one-wrap not already combo / not already wallet-policy / not already settled 正式三事（282 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。282 raw vs named bundled unbundling 完成（1168 item 3） |
+| A5606 | 高 | 看见一份包装 会被写成已经是一份 combo interchangeable / 1165 interchangeable | 官方 BIP-385 raw / addr 描述符 item 3：not already combo / not 1165 |
+| A5607 | 高 | 看见能包住今天在用的脚本或地址 会被写成已经是一份钱包策略 interchangeable / 1160 interchangeable | 官方 BIP-385 raw / addr 描述符 item 3：not already wallet-policy / not 1160 |
+| A5608 | 高 | 看见一份包装 会被写成已经交差 interchangeable | 官方 BIP-385 raw / addr 描述符 item 3：not already settled |
+| A5609 | 中 | 怎样把地址解成脚本会被抄进不确定 | 不抄。不写怎样把地址解成脚本。不另写 19 节 |
+| A5600 | 记录 | 会与 282 / 174 / 184 / 1166 / 1168 糊成「看见 addr 就已经能套进 sh / wsh interchangeable、就已经把输出脚本写在描述符里 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-385 addr not already nestable-in-sh-wsh / not already output-script-written / not already settled 正式三事（282 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。282 raw vs named bundled unbundling 续（1167 item 2） |
+| A5601 | 高 | 看见 addr 会被写成已经能套进 sh / wsh interchangeable / 174 interchangeable | 官方 BIP-385 raw / addr 描述符 item 2：not already nestable-in-sh-wsh / not 174 |
+| A5602 | 高 | 看见一个地址 会被写成已经把输出脚本写在描述符里 interchangeable / 184 interchangeable | 官方 BIP-385 raw / addr 描述符 item 2：not already output-script-written / not 184 |
+| A5603 | 高 | 看见用 addr 包住了地址 会被写成已经交差 interchangeable | 官方 BIP-385 raw / addr 描述符 item 2：not already settled |
+| A5604 | 中 | 怎样把地址解成脚本会被抄进不确定 | 不抄。不写怎样把地址解成脚本。不另写 19 节 |
+| A5595 | 记录 | 会与 282 / 1163 / 184 / 1167 / 1168 糊成「看见 raw 就已经能套进 sh / wsh interchangeable、就已经是具名表达式 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-385 raw not already nestable-in-sh-wsh / not already named-expr / not already settled 正式三事（282 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。282 raw vs named bundled unbundling 启动（1166 item 1） |
+| A5596 | 高 | 看见 raw 会被写成已经能套进 sh / wsh interchangeable / 1163 interchangeable | 官方 BIP-385 raw / addr 描述符 item 1：not already nestable-in-sh-wsh / not 1163 |
+| A5597 | 高 | 看见交出了脚本字节 会被写成已经是具名表达式 interchangeable / 184 interchangeable | 官方 BIP-385 raw / addr 描述符 item 1：not already named-expr / not 184 |
+| A5598 | 高 | 看见一串十六进制脚本 会被写成已经交差 interchangeable | 官方 BIP-385 raw / addr 描述符 item 1：not already settled |
+| A5599 | 中 | 怎样把地址解成脚本会被抄进不确定 | 不抄。不写怎样把地址解成脚本。不另写 19 节 |
 | A5590 | 记录 | 会与 281 / 1160 / 184 / 1163 / 1164 糊成「看见一份 combo 就已经是一份钱包策略 interchangeable、就已经写了那几条表达式 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-384 one-combo not already wallet-policy / not already those-named-exprs / not already settled 正式三事（281 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。281 combo vs one-script bundled unbundling 完成（1165 item 3） |
 | A5591 | 高 | 看见一份 combo 会被写成已经是一份钱包策略 interchangeable / 1160 interchangeable | 官方 BIP-384 combo 描述符 item 3：not already wallet-policy / not 1160 |
 | A5592 | 高 | 看见产出一样的脚本 会被写成已经写了那几条表达式 interchangeable / 184 interchangeable | 官方 BIP-384 combo 描述符 item 3：not already those-named-exprs / not 184 |

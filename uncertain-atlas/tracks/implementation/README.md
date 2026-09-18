@@ -841,6 +841,9 @@
 - [`worked-example-combo384-notwitpair-vs-bundled.md`](worked-example-combo384-notwitpair-vs-bundled.md) — 未压缩钥≠already have-witness-pair/fixed-four/settled；≠281 bundled（不变量 1164）
 - [`worked-example-combo384-notone-vs-bundled.md`](worked-example-combo384-notone-vs-bundled.md) — combo≠already nestable-in-sh-wsh/one-script/settled；≠281 bundled（不变量 1163）
 - [`worked-example-combo-vs-one-script.md`](worked-example-combo-vs-one-script.md) — combo ≠ 已经只能产出一种脚本；未压缩钥 ≠ 已经带齐见证对；一份 combo ≠ 已经是一份钱包策略（不变量 281）
+- [`worked-example-raw385-notwrap-vs-bundled.md`](worked-example-raw385-notwrap-vs-bundled.md) — 一份包装≠already combo/wallet-policy/settled；≠282 bundled（不变量 1168）
+- [`worked-example-raw385-notaddr-vs-bundled.md`](worked-example-raw385-notaddr-vs-bundled.md) — addr≠already nestable-in-sh-wsh/output-script-written/settled；≠282 bundled（不变量 1167）
+- [`worked-example-raw385-notraw-vs-bundled.md`](worked-example-raw385-notraw-vs-bundled.md) — raw≠already nestable-in-sh-wsh/named-expr/settled；≠282 bundled（不变量 1166）
 - [`worked-example-raw-vs-named.md`](worked-example-raw-vs-named.md) — raw ≠ 已经能套进具名表达式；addr ≠ 已经是那份输出脚本；一份包装 ≠ 已经是 combo（不变量 282）
 - [`worked-example-musig-xpub-vs-aggregate.md`](worked-example-musig-xpub-vs-aggregate.md) — 聚合钥 ≠ 已经是扩展公钥；合成扩展公钥 ≠ 已经能硬化派生；派生出的子钥 ≠ 已经能不带微调去签（不变量 283）
 - [`worked-example-musig-psbt-vs-tap.md`](worked-example-musig-psbt-vs-tap.md) — 旧 PSBT 栏 ≠ 已经能装 MuSig2；聚合钥栏 ≠ 已经是输出钥；参与者钥 ≠ 已经能出部分签（不变量 284）

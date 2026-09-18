@@ -1,3 +1,6 @@
+- [`raw385-notwrap-sold-as-bundled.md`](raw385-notwrap-sold-as-bundled.md) — 一份包装 被写成已经是 combo / 已经是钱包策略 / 已经交差（不变量 1168）
+- [`raw385-notaddr-sold-as-bundled.md`](raw385-notaddr-sold-as-bundled.md) — addr 被写成已经能套进 sh / wsh / 已经把输出脚本写在描述符里 / 已经交差（不变量 1167）
+- [`raw385-notraw-sold-as-bundled.md`](raw385-notraw-sold-as-bundled.md) — raw 被写成已经能套进 sh / wsh / 已经是具名表达式 / 已经交差（不变量 1166）
 - [`combo384-notpol-sold-as-bundled.md`](combo384-notpol-sold-as-bundled.md) — 一份 combo 被写成已经是一份钱包策略 / 已经写了那几条表达式 / 已经交差（不变量 1165）
 - [`combo384-notwitpair-sold-as-bundled.md`](combo384-notwitpair-sold-as-bundled.md) — 未压缩钥 被写成已经带齐见证对 / 已经有四份 / 已经交差（不变量 1164）
 - [`combo384-notone-sold-as-bundled.md`](combo384-notone-sold-as-bundled.md) — combo 被写成已经能套进 sh / wsh / 已经是一种输出脚本 / 已经交差（不变量 1163）

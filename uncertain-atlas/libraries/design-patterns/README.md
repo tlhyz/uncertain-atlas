@@ -1,3 +1,6 @@
+- [`name-the-raw385-notwrap-bar.md`](name-the-raw385-notwrap-bar.md) — BIP-385 one-wrap not already combo / not already wallet-policy / not already settled 正式三事（282 余量）（不变量 1168）
+- [`name-the-raw385-notaddr-bar.md`](name-the-raw385-notaddr-bar.md) — BIP-385 addr not already nestable-in-sh-wsh / not already output-script-written / not already settled 正式三事（282 余量）（不变量 1167）
+- [`name-the-raw385-notraw-bar.md`](name-the-raw385-notraw-bar.md) — BIP-385 raw not already nestable-in-sh-wsh / not already named-expr / not already settled 正式三事（282 余量）（不变量 1166）
 - [`name-the-combo384-notpol-bar.md`](name-the-combo384-notpol-bar.md) — BIP-384 one-combo not already wallet-policy / not already those-named-exprs / not already settled 正式三事（281 余量）（不变量 1165）
 - [`name-the-combo384-notwitpair-bar.md`](name-the-combo384-notwitpair-bar.md) — BIP-384 uncompressed-key not already have-witness-pair / not already fixed-four / not already settled 正式三事（281 余量）（不变量 1164）
 - [`name-the-combo384-notone-bar.md`](name-the-combo384-notone-bar.md) — BIP-384 combo not already nestable-in-sh-wsh / not already one-script / not already settled 正式三事（281 余量）（不变量 1163）
