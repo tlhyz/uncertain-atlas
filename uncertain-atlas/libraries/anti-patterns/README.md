@@ -1,3 +1,4 @@
+- [`commitlock-notbroadcast-sold-as-bundled.md`](commitlock-notbroadcast-sold-as-bundled.md) — Commit 里等广播 被写成已经能往下走 / 已经交差 / 已经允许（不变量 691）
 - [`commitlock-notunlocked-sold-as-bundled.md`](commitlock-notunlocked-sold-as-bundled.md) — Commit 前锁内存池 被写成已经解锁 / 已经同步做完 / 已经放下锁（不变量 690）
 - [`commitlock-notrpcsafe-sold-as-bundled.md`](commitlock-notrpcsafe-sold-as-bundled.md) — 默认全局锁 被写成已经能直接给 RPC 读 / 已经没有并发 / 已经换了锁（不变量 689）
 - [`crashsteps-notinfoskip-sold-as-bundled.md`](crashsteps-notinfoskip-sold-as-bundled.md) — 启动 Info 对上 被写成已经能从半截高度接着走 / 已经能跳步 / 已经不用再叫 InitChain（不变量 688）

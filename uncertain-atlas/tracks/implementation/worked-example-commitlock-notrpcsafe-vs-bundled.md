@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 default global lock not already RPC safe / not already no concurrency / not already changed lock 正式三事（310 余量），必须分开有锁 是不是 already RPC safe interchangeable / 310 commitlock bundled interchangeable / 307 conn-sold-as-gates interchangeable、默认顺序收 是不是 already no concurrency interchangeable / 原则上并发已经取消 interchangeable、编进同一个二进制 是不是 already changed lock interchangeable / 已经另有措施 interchangeable。可以跳过「看见有锁 就已经能直接给 RPC 读 interchangeable / 就已经没有并发 interchangeable / 就已经换了锁 interchangeable」。不要另写怎样加锁。310 commitlock vs RPC bundled unbundling 在本页 item 1 完成；续 [`worked-example-commitlock-notunlocked-vs-bundled.md`](worked-example-commitlock-notunlocked-vs-bundled.md)（不变量 690 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 default global lock not already RPC safe / not already no concurrency / not already changed lock 正式三事（310 余量），必须分开有锁 是不是 already RPC safe interchangeable / 310 commitlock bundled interchangeable / 307 conn-sold-as-gates interchangeable、默认顺序收 是不是 already no concurrency interchangeable / 原则上并发已经取消 interchangeable、编进同一个二进制 是不是 already changed lock interchangeable / 已经另有措施 interchangeable。可以跳过「看见有锁 就已经能直接给 RPC 读 interchangeable / 就已经没有并发 interchangeable / 就已经换了锁 interchangeable」。不要另写怎样加锁。310 commitlock vs RPC bundled unbundling 在本页 item 1 完成；续 [`worked-example-commitlock-notunlocked-vs-bundled.md`](worked-example-commitlock-notunlocked-vs-bundled.md)（不变量 690 item 2）；完成见 [`worked-example-commitlock-notbroadcast-vs-bundled.md`](worked-example-commitlock-notbroadcast-vs-bundled.md)（不变量 691 item 3）。
 
 ## 本页不抄
 
