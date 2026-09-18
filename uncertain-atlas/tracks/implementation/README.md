@@ -1016,6 +1016,9 @@
 - [`worked-example-rfnd-not6780-vs-bundled.md`](worked-example-rfnd-not6780-vs-bundled.md) — 去掉自毁退款≠already 改了自毁语义/160/1559；≠223 bundled（不变量 1414）
 - [`worked-example-rfnd-notmid-vs-bundled.md`](worked-example-rfnd-notmid-vs-bundled.md) — 退款计数≠already 执行当中能用/账面气限已封死/158；≠223 bundled（不变量 1415）
 - [`worked-example-refund-vs-gone.md`](worked-example-refund-vs-gone.md) — 看见退款削减 ≠ 已经没有退款；看见去掉自毁退款 ≠ 已经改了自毁语义；看见退款计数 ≠ 已经能在执行当中用；3529 ≠ 2200 ≠ 160 ≠ 158（不变量 223）
+- [`worked-example-depre-notcons-vs-bundled.md`](worked-example-depre-notcons-vs-bundled.md) — 弃用警告≠already 改了共识/6780/224 bundled；≠224 bundled（不变量 1416）
+- [`worked-example-depre-notcli-vs-bundled.md`](worked-example-depre-notcli-vs-bundled.md) — 元层页≠already 改了客户端/已删指令/3529；≠224 bundled（不变量 1417）
+- [`worked-example-depre-notdone-vs-bundled.md`](worked-example-depre-notdone-vs-bundled.md) — 以后可能变≠already 已经变了/160/223；≠224 bundled（不变量 1418）
 - [`worked-example-deprecate-vs-changed.md`](worked-example-deprecate-vs-changed.md) — 看见弃用警告 ≠ 已经改了共识行为；看见本页 ≠ 已经改了客户端；看见「以后可能变」≠ 已经变了；6049 ≠ 6780 ≠ 160 ≠ 223（不变量 224）
 - [`worked-example-net-meter-vs-transient.md`](worked-example-net-meter-vs-transient.md) — 看见净计量 ≠ 已经是瞬时存储；看见原来值 / 当前值 / 新值 ≠ 已经只有当前值；看见津贴帧禁写 ≠ 已经能改槽；2200 ≠ 1153 ≠ 159 ≠ 3529 ≠ 223（不变量 225）
 - [`worked-example-calldata-cut-vs-unlimited.md`](worked-example-calldata-cut-vs-unlimited.md) — 看见非零 calldata 降价 ≠ 已经给零字节也降价；看见降价 ≠ 已经没有块大小上限；看见降价 ≠ 已经不伤延迟 / 安全；2028 ≠ 7623 ≠ 197 ≠ 4844 ≠ 145（不变量 226）

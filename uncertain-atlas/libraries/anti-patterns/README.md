@@ -1,3 +1,6 @@
+- [`depre-notdone-sold-as-bundled.md`](depre-notdone-sold-as-bundled.md) — 以后可能变 被写成已经变了 / 就已经是 160 / 就已经是 223（不变量 1418）
+- [`depre-notcli-sold-as-bundled.md`](depre-notcli-sold-as-bundled.md) — 元层页 被写成已经改了客户端 / 就已经删掉指令 / 就已经是 3529（不变量 1417）
+- [`depre-notcons-sold-as-bundled.md`](depre-notcons-sold-as-bundled.md) — 弃用警告 被写成已经改了共识 / 就已经是 6780 / 就已经 224 bundled（不变量 1416）
 - [`rfnd-notmid-sold-as-bundled.md`](rfnd-notmid-sold-as-bundled.md) — 退款计数 被写成执行当中能用 / 就已经封死烧掉上限 / 就已经是 158（不变量 1415）
 - [`rfnd-not6780-sold-as-bundled.md`](rfnd-not6780-sold-as-bundled.md) — 去掉自毁退款 被写成已经改了自毁语义 / 就已经是 160 / 就已经是 1559（不变量 1414）
 - [`rfnd-notgone-sold-as-bundled.md`](rfnd-notgone-sold-as-bundled.md) — 退款削减 被写成已经没有退款 / 就已经重写 2200 / 就已经 223 bundled（不变量 1413）

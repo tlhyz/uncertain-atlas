@@ -1,3 +1,18 @@
+| A6855 | 记录 | 会与 224 / 160 / 223 / 1416 / 1417 糊成「看见「以后可能变」不是已经变了就已经变了 interchangeable、就已经是不变量 160 interchangeable、就已经是不变量 223 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。224 deprecate vs changed bundled unbundling 完成（1418 item 3） |
+| A6856 | 高 | 看见「以后可能变」不是已经变了 会被写成已经变了 interchangeable / 160 interchangeable | 官方 EIP-6049 depre item 3：not already 已经变了 / not 160 |
+| A6857 | 高 | 看见later-may-change is not already changed 会被写成已经是不变量 160 interchangeable / 223 interchangeable | 官方 EIP-6049 depre item 3：not already 已经是不变量 160 / not 223 |
+| A6858 | 高 | 看见「以后可能变」不是已经变了 会被写成已经是不变量 223 interchangeable | 官方 EIP-6049 depre item 3：not already settled |
+| A6859 | 中 | 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动会被抄进不确定 | 不抄。不写 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动。不另写 19 节 |
+| A6850 | 记录 | 会与 224 / 160 / 223 / 1416 / 1418 糊成「看见本页不是已经改了客户端就已经改了客户端 interchangeable、就已经删掉这条指令 interchangeable、就已经是 3529 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-6049 meta-page not already client-changed / not already instruction-removed / not already 3529 正式三事（224 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。224 deprecate vs changed bundled unbundling 续（1417 item 2） |
+| A6851 | 高 | 看见本页不是已经改了客户端 会被写成已经改了客户端 interchangeable / 160 interchangeable | 官方 EIP-6049 depre item 2：not already 已经改了客户端 / not 160 |
+| A6852 | 高 | 看见this page is not already client-changed 会被写成已经删掉这条指令 interchangeable / 223 interchangeable | 官方 EIP-6049 depre item 2：not already 已经删掉这条指令 / not 223 |
+| A6853 | 高 | 看见本页不是已经改了客户端 会被写成已经是 3529 interchangeable | 官方 EIP-6049 depre item 2：not already settled |
+| A6854 | 中 | 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动会被抄进不确定 | 不抄。不写 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动。不另写 19 节 |
+| A6845 | 记录 | 会与 224 / 160 / 223 / 1417 / 1418 糊成「看见弃用警告不是已经改了共识行为就已经改了共识行为 interchangeable、就已经是 6780 interchangeable、就已经 224 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-6049 deprecate-warn not already consensus-changed / not already 6780 / not already 224-bundled 正式三事（224 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。224 deprecate vs changed bundled unbundling 启动（1416 item 1） |
+| A6846 | 高 | 看见弃用警告不是已经改了共识行为 会被写成已经改了共识行为 interchangeable / 160 interchangeable | 官方 EIP-6049 depre item 1：not already 已经改了共识行为 / not 160 |
+| A6847 | 高 | 看见deprecation is not already consensus-changed 会被写成已经是 6780 interchangeable / 223 interchangeable | 官方 EIP-6049 depre item 1：not already 已经是 6780 / not 223 |
+| A6848 | 高 | 看见弃用警告不是已经改了共识行为 会被写成已经 224 bundled interchangeable | 官方 EIP-6049 depre item 1：not already settled |
+| A6849 | 中 | 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动会被抄进不确定 | 不抄。不写 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动。不另写 19 节 |
 | A6840 | 记录 | 会与 223 / 158 / 169 / 1413 / 1414 糊成「看见退款计数不是已经能在执行当中用就已经能在执行当中用 interchangeable、就已经是本块实际能烧掉的上限 interchangeable、就已经是不变量 158 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。223 refund vs gone bundled unbundling 完成（1415 item 3） |
 | A6841 | 高 | 看见退款计数不是已经能在执行当中用 会被写成已经能在执行当中用 interchangeable / 158 interchangeable | 官方 EIP-3529 rfnd item 3：not already 已经能在执行当中用 / not 158 |
 | A6842 | 高 | 看见refund counter is not already mid-exec spendable 会被写成已经是本块实际能烧掉的上限 interchangeable / 169 interchangeable | 官方 EIP-3529 rfnd item 3：not already 已经是本块实际能烧掉的上限 / not 169 |

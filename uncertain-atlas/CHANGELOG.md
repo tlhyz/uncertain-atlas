@@ -1,3 +1,15 @@
+## 2026-09-18（续 1535）
+
+- 不变量 1418；语料 C1396；模式 name-the-depre-notdone-bar；反模式 depre-notdone-sold-as-bundled；L10.3 第 1387 条。填 L5.1 EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）。224 deprecate vs changed bundled unbundling 完成（1418 item 3）。
+
+## 2026-09-18（续 1534）
+
+- 不变量 1417；语料 C1395；模式 name-the-depre-notcli-bar；反模式 depre-notcli-sold-as-bundled；L10.3 第 1386 条。填 L5.1 EIP-6049 meta-page not already client-changed / not already instruction-removed / not already 3529 正式三事（224 余量）。224 deprecate vs changed bundled unbundling 续（1417 item 2）。
+
+## 2026-09-18（续 1533）
+
+- 不变量 1416；语料 C1394；模式 name-the-depre-notcons-bar；反模式 depre-notcons-sold-as-bundled；L10.3 第 1385 条。填 L5.1 EIP-6049 deprecate-warn not already consensus-changed / not already 6780 / not already 224-bundled 正式三事（224 余量）。224 deprecate vs changed bundled unbundling 启动（1416 item 1）。
+
 ## 2026-09-18（续 1532）
 
 - 不变量 1415；语料 C1393；模式 name-the-rfnd-notmid-bar；反模式 rfnd-notmid-sold-as-bundled；L10.3 第 1384 条。填 L5.1 EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）。223 refund vs gone bundled unbundling 完成（1415 item 3）。

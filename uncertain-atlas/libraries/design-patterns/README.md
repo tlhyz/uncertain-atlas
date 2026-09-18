@@ -1,3 +1,6 @@
+- [`name-the-depre-notdone-bar.md`](name-the-depre-notdone-bar.md) — EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）（不变量 1418）
+- [`name-the-depre-notcli-bar.md`](name-the-depre-notcli-bar.md) — EIP-6049 meta-page not already client-changed / not already instruction-removed / not already 3529 正式三事（224 余量）（不变量 1417）
+- [`name-the-depre-notcons-bar.md`](name-the-depre-notcons-bar.md) — EIP-6049 deprecate-warn not already consensus-changed / not already 6780 / not already 224-bundled 正式三事（224 余量）（不变量 1416）
 - [`name-the-rfnd-notmid-bar.md`](name-the-rfnd-notmid-bar.md) — EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）（不变量 1415）
 - [`name-the-rfnd-not6780-bar.md`](name-the-rfnd-not6780-bar.md) — EIP-3529 drop-selfdestruct-refund not already 6780-semantics / not already 160 / not already 1559 正式三事（223 余量）（不变量 1414）
 - [`name-the-rfnd-notgone-bar.md`](name-the-rfnd-notgone-bar.md) — EIP-3529 refund-cut not already no-refund / not already 2200-rewritten / not already 223-bundled 正式三事（223 余量）（不变量 1413）
