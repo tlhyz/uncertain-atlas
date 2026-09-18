@@ -1,3 +1,6 @@
+- [`mexp-notmin-sold-as-bundled.md`](mexp-notmin-sold-as-bundled.md) — 最低气价 被写成已经能无限便宜 / 就已经不伤安全 / 就已经是签名产品（不变量 1427）
+- [`mexp-notiface-sold-as-bundled.md`](mexp-notiface-sold-as-bundled.md) — 更便宜 被写成已经改了接口算法 / 就已经是 206 / 就已经换了得数（不变量 1426）
+- [`mexp-not198-sold-as-bundled.md`](mexp-not198-sold-as-bundled.md) — 模幂重计价 被写成已经是 198 公式 / 就已经是 7823 / 就已经 227 bundled（不变量 1425）
 - [`cdcut-notsafe-sold-as-bundled.md`](cdcut-notsafe-sold-as-bundled.md) — 降价 被写成已经不伤延迟 / 就已经不改安全 / 就已经是 197（不变量 1424）
 - [`cdcut-notcap-sold-as-bundled.md`](cdcut-notcap-sold-as-bundled.md) — 降价 被写成已经没有块上限 / 就已经解决 DA / 就已经是 4844（不变量 1423）
 - [`cdcut-notzero-sold-as-bundled.md`](cdcut-notzero-sold-as-bundled.md) — 非零 calldata 降价 被写成已经给零字节也降 / 就已经是 7623 / 就已经 226 bundled（不变量 1422）

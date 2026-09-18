@@ -1028,6 +1028,9 @@
 - [`worked-example-cdcut-notcap-vs-bundled.md`](worked-example-cdcut-notcap-vs-bundled.md) — 降价≠already 没有块上限/DA已齐/4844；≠226 bundled（不变量 1423）
 - [`worked-example-cdcut-notsafe-vs-bundled.md`](worked-example-cdcut-notsafe-vs-bundled.md) — 降价≠already 不伤延迟/不改安全/197；≠226 bundled（不变量 1424）
 - [`worked-example-calldata-cut-vs-unlimited.md`](worked-example-calldata-cut-vs-unlimited.md) — 看见非零 calldata 降价 ≠ 已经给零字节也降价；看见降价 ≠ 已经没有块大小上限；看见降价 ≠ 已经不伤延迟 / 安全；2028 ≠ 7623 ≠ 197 ≠ 4844 ≠ 145（不变量 226）
+- [`worked-example-mexp-not198-vs-bundled.md`](worked-example-mexp-not198-vs-bundled.md) — 模幂重计价≠already 198公式/7823/227 bundled；≠227 bundled（不变量 1425）
+- [`worked-example-mexp-notiface-vs-bundled.md`](worked-example-mexp-notiface-vs-bundled.md) — 更便宜≠already 改了接口算法/206/换了得数；≠227 bundled（不变量 1426）
+- [`worked-example-mexp-notmin-vs-bundled.md`](worked-example-mexp-notmin-vs-bundled.md) — 最低气价≠already 小输入无限便宜/不伤安全/签名产品；≠227 bundled（不变量 1427）
 - [`worked-example-modexp-price-vs-bound.md`](worked-example-modexp-price-vs-bound.md) — 看见模幂重计价 ≠ 已经是 198 那道复杂度公式；看见更便宜 ≠ 已经改了接口或算法；看见最低气价 ≠ 已经能对小输入无限便宜；2565 ≠ 7823 ≠ 206 ≠ 198 原文（不变量 227）
 - [`worked-example-bn128-cut-vs-verify.md`](worked-example-bn128-cut-vs-verify.md) — 看见 bn128 加 / 乘 / 配对降价 ≠ 已经换了算法；看见更便宜 ≠ 已经在验签；看见本页 ≠ 已经是通用曲线算术；1108 ≠ 2537 ≠ 199 ≠ 196/197 原文（不变量 228）
 - [`worked-example-selfbalance-vs-balance.md`](worked-example-selfbalance-vs-balance.md) — 看见本账户余额指令 ≠ 已经是按地址查余额；看见给自己查余额 ≠ 已经按本账户价扣；看见树依赖涨价 ≠ 已经是本笔冷热 / 已经是磁盘 O(1)；1884 ≠ 2929 ≠ 169 ≠ 101 ≠ 150（不变量 229）

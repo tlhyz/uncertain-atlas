@@ -1,3 +1,18 @@
+| A6900 | 记录 | 会与 227 / 177 / 199 / 1425 / 1426 糊成「看见最低气价不是已经能对小输入无限便宜就已经能对小输入无限便宜 interchangeable、就已经不伤安全 interchangeable、就已经是签名产品 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。227 modexp-price vs bound bundled unbundling 完成（1427 item 3） |
+| A6901 | 高 | 看见最低气价不是已经能对小输入无限便宜 会被写成已经能对小输入无限便宜 interchangeable / 177 interchangeable | 官方 EIP-2565 mexp item 3：not already 已经能对小输入无限便宜 / not 177 |
+| A6902 | 高 | 看见min gas is not already infinitely cheap 会被写成已经不伤安全 interchangeable / 199 interchangeable | 官方 EIP-2565 mexp item 3：not already 已经不伤安全 / not 199 |
+| A6903 | 高 | 看见最低气价不是已经能对小输入无限便宜 会被写成已经是签名产品 interchangeable | 官方 EIP-2565 mexp item 3：not already settled |
+| A6904 | 中 | 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数会被抄进不确定 | 不抄。不写 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数。不另写 19 节 |
+| A6895 | 记录 | 会与 227 / 206 / 203 / 1425 / 1427 糊成「看见更便宜不是已经改了接口或算法就已经改了接口或算法 interchangeable、就已经是不变量 206 interchangeable、就已经换了得数 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2565 cheaper not already iface-changed / not already algo-changed / not already 206 正式三事（227 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。227 modexp-price vs bound bundled unbundling 续（1426 item 2） |
+| A6896 | 高 | 看见更便宜不是已经改了接口或算法 会被写成已经改了接口或算法 interchangeable / 206 interchangeable | 官方 EIP-2565 mexp item 2：not already 已经改了接口或算法 / not 206 |
+| A6897 | 高 | 看见cheaper is not already interface/algo-changed 会被写成已经是不变量 206 interchangeable / 203 interchangeable | 官方 EIP-2565 mexp item 2：not already 已经是不变量 206 / not 203 |
+| A6898 | 高 | 看见更便宜不是已经改了接口或算法 会被写成已经换了得数 interchangeable | 官方 EIP-2565 mexp item 2：not already settled |
+| A6899 | 中 | 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数会被抄进不确定 | 不抄。不写 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数。不另写 19 节 |
+| A6890 | 记录 | 会与 227 / 206 / 198 / 1426 / 1427 糊成「看见模幂重计价不是已经是 198 那道复杂度公式就已经是 198 那道复杂度公式 interchangeable、就已经是 7823 interchangeable、就已经 227 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2565 reprice not already 198-formula / not already 7823 / not already 227-bundled 正式三事（227 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。227 modexp-price vs bound bundled unbundling 启动（1425 item 1） |
+| A6891 | 高 | 看见模幂重计价不是已经是 198 那道复杂度公式 会被写成已经是 198 那道复杂度公式 interchangeable / 206 interchangeable | 官方 EIP-2565 mexp item 1：not already 已经是 198 那道复杂度公式 / not 206 |
+| A6892 | 高 | 看见reprice is not already the 198 formula 会被写成已经是 7823 interchangeable / 198 interchangeable | 官方 EIP-2565 mexp item 1：not already 已经是 7823 / not 198 |
+| A6893 | 高 | 看见模幂重计价不是已经是 198 那道复杂度公式 会被写成已经 227 bundled interchangeable | 官方 EIP-2565 mexp item 1：not already settled |
+| A6894 | 中 | 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数会被抄进不确定 | 不抄。不写 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数。不另写 19 节 |
 | A6885 | 记录 | 会与 226 / 197 / 225 / 1422 / 1423 糊成「看见降价不是已经不伤网络延迟 / 安全就已经不伤网络延迟 / 安全 interchangeable、就已经不改安全 interchangeable、就已经是不变量 197 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2028 cheaper not already no-delay / not already no-security-change / not already 197 正式三事（226 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。226 calldata-cut vs unlimited bundled unbundling 完成（1424 item 3） |
 | A6886 | 高 | 看见降价不是已经不伤网络延迟 / 安全 会被写成已经不伤网络延迟 / 安全 interchangeable / 197 interchangeable | 官方 EIP-2028 cdcut item 3：not already 已经不伤网络延迟 / 安全 / not 197 |
 | A6887 | 高 | 看见cheaper is not already no delay/security impact 会被写成已经不改安全 interchangeable / 225 interchangeable | 官方 EIP-2028 cdcut item 3：not already 已经不改安全 / not 225 |

@@ -89,7 +89,7 @@
 | 经济 | 更便宜不是签名 / 可验证延迟函数 / 简短证明已经免费 |
 
 **推断：** 产品句若只写「模幂终于便宜了」，读者会把新公式听成已经是 198，或把便宜听成已经加了帽，或把动机听成产品已经上线。  
-**建议：** 第一版可以不做无界模幂预编译。若对照，必须分开新公式、198 旧公式、输入长度帽、已经不伤安全。不要发明「看见 2565 就已经加了帽」。不要抄最低气价、除数常数或复杂度公式。不要写怎样造便宜模幂或按新价实现签名产品。
+**建议：** 第一版可以不做无界模幂预编译。若对照，必须分开新公式、198 旧公式、输入长度帽、已经不伤安全。可以跳过「看见 2565 就已经加了帽」。227 modexp-price vs bound bundled unbundling 完成（1425 item 1 / 1426 item 2 / 1427 item 3）；精读 [`worked-example-mexp-not198-vs-bundled.md`](worked-example-mexp-not198-vs-bundled.md)（不变量 1425 item 1）、[`worked-example-mexp-notiface-vs-bundled.md`](worked-example-mexp-notiface-vs-bundled.md)（不变量 1426 item 2）、[`worked-example-mexp-notmin-vs-bundled.md`](worked-example-mexp-notmin-vs-bundled.md)（不变量 1427 item 3）。不要发明「看见 2565 就已经加了帽」。不要抄最低气价、除数常数或复杂度公式。不要写怎样造便宜模幂或按新价实现签名产品。
 
 ---
 

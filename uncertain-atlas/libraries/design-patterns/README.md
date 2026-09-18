@@ -1,3 +1,6 @@
+- [`name-the-mexp-notmin-bar.md`](name-the-mexp-notmin-bar.md) — EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）（不变量 1427）
+- [`name-the-mexp-notiface-bar.md`](name-the-mexp-notiface-bar.md) — EIP-2565 cheaper not already iface-changed / not already algo-changed / not already 206 正式三事（227 余量）（不变量 1426）
+- [`name-the-mexp-not198-bar.md`](name-the-mexp-not198-bar.md) — EIP-2565 reprice not already 198-formula / not already 7823 / not already 227-bundled 正式三事（227 余量）（不变量 1425）
 - [`name-the-cdcut-notsafe-bar.md`](name-the-cdcut-notsafe-bar.md) — EIP-2028 cheaper not already no-delay / not already no-security-change / not already 197 正式三事（226 余量）（不变量 1424）
 - [`name-the-cdcut-notcap-bar.md`](name-the-cdcut-notcap-bar.md) — EIP-2028 cheaper not already no-block-cap / not already DA-solved / not already 4844 正式三事（226 余量）（不变量 1423）
 - [`name-the-cdcut-notzero-bar.md`](name-the-cdcut-notzero-bar.md) — EIP-2028 nonzero-cut not already zero-cut / not already 7623 / not already 226-bundled 正式三事（226 余量）（不变量 1422）

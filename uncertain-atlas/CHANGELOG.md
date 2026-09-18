@@ -1,3 +1,15 @@
+## 2026-09-18（续 1544）
+
+- 不变量 1427；语料 C1405；模式 name-the-mexp-notmin-bar；反模式 mexp-notmin-sold-as-bundled；L10.3 第 1396 条。填 L5.1 EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）。227 modexp-price vs bound bundled unbundling 完成（1427 item 3）。
+
+## 2026-09-18（续 1543）
+
+- 不变量 1426；语料 C1404；模式 name-the-mexp-notiface-bar；反模式 mexp-notiface-sold-as-bundled；L10.3 第 1395 条。填 L5.1 EIP-2565 cheaper not already iface-changed / not already algo-changed / not already 206 正式三事（227 余量）。227 modexp-price vs bound bundled unbundling 续（1426 item 2）。
+
+## 2026-09-18（续 1542）
+
+- 不变量 1425；语料 C1403；模式 name-the-mexp-not198-bar；反模式 mexp-not198-sold-as-bundled；L10.3 第 1394 条。填 L5.1 EIP-2565 reprice not already 198-formula / not already 7823 / not already 227-bundled 正式三事（227 余量）。227 modexp-price vs bound bundled unbundling 启动（1425 item 1）。
+
 ## 2026-09-18（续 1541）
 
 - 不变量 1424；语料 C1402；模式 name-the-cdcut-notsafe-bar；反模式 cdcut-notsafe-sold-as-bundled；L10.3 第 1393 条。填 L5.1 EIP-2028 cheaper not already no-delay / not already no-security-change / not already 197 正式三事（226 余量）。226 calldata-cut vs unlimited bundled unbundling 完成（1424 item 3）。
