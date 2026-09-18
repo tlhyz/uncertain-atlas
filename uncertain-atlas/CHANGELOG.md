@@ -1,3 +1,15 @@
+## 2026-09-18（续 1390）
+
+- 不变量 1273；语料 C1251；模式 name-the-ua14-notsame-bar；反模式 ua14-notsame-sold-as-bundled；L10.3 第 1242 条。填 L3.4 / L9.1 BIP-14 same-proto not already same-impl / not already capability / not already feature 正式三事（263 余量）。263 ua vs protocol bundled unbundling 完成（1273 item 3）。
+
+## 2026-09-18（续 1389）
+
+- 不变量 1272；语料 C1250；模式 name-the-ua14-notua-bar；反模式 ua14-notua-sold-as-bundled；L10.3 第 1241 条。填 L3.4 / L9.1 BIP-14 user-agent not already change-behavior / not already swap-rules / not already allowed-fingerprint 正式三事（263 余量）。263 ua vs protocol bundled unbundling 续（1272 item 2）。
+
+## 2026-09-18（续 1388）
+
+- 不变量 1271；语料 C1249；模式 name-the-ua14-notcli-bar；反模式 ua14-notcli-sold-as-bundled；L10.3 第 1240 条。填 L3.4 / L9.1 BIP-14 proto-ver not already client-ver / not already impl-ver / not already raised-proto 正式三事（263 余量）。263 ua vs protocol bundled unbundling 启动（1271 item 1）。
+
 ## 2026-09-18（续 1387）
 
 - 不变量 1270；语料 C1248；模式 name-the-pong31-notlive-bar；反模式 pong31-notlive-sold-as-bundled；L10.3 第 1239 条。填 L3.4 / L9.1 BIP-31 pong not already alive / not already unstuck / not already forever 正式三事（262 余量）。262 pong vs live bundled unbundling 完成（1270 item 3）。

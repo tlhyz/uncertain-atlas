@@ -1,3 +1,6 @@
+- [`name-the-ua14-notsame-bar.md`](name-the-ua14-notsame-bar.md) — BIP-14 same-proto not already same-impl / not already capability / not already feature 正式三事（263 余量）（不变量 1273）
+- [`name-the-ua14-notua-bar.md`](name-the-ua14-notua-bar.md) — BIP-14 user-agent not already change-behavior / not already swap-rules / not already allowed-fingerprint 正式三事（263 余量）（不变量 1272）
+- [`name-the-ua14-notcli-bar.md`](name-the-ua14-notcli-bar.md) — BIP-14 proto-ver not already client-ver / not already impl-ver / not already raised-proto 正式三事（263 余量）（不变量 1271）
 - [`name-the-pong31-notlive-bar.md`](name-the-pong31-notlive-bar.md) — BIP-31 pong not already alive / not already unstuck / not already forever 正式三事（262 余量）（不变量 1270）
 - [`name-the-pong31-notmatch-bar.md`](name-the-pong31-notmatch-bar.md) — BIP-31 pong not already matched / not already this-ping / not already rtt 正式三事（262 余量）（不变量 1269）
 - [`name-the-pong31-notver-bar.md`](name-the-pong31-notver-bar.md) — BIP-31 version-enough not already nonce-ping / not already will-pong / not already merged-feature 正式三事（262 余量）（不变量 1268）

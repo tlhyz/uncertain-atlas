@@ -38,7 +38,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果写对等握手，必须分开协议版本、实现版本、user agent。可以跳过「看见 user agent 就已经按这家换规则」。若对照，必须分开协议能力、实现号、信息牌。不要另写怎样按 user agent 认人或排斥。
+**建议（产品，不是事实）**：不确定第一条结算机如果写对等握手，必须分开协议版本、实现版本、user agent。可以跳过「看见 user agent 就已经按这家换规则」。若对照，必须分开协议能力、实现号、信息牌。不要另写怎样按 user agent 认人或排斥。263 ua vs protocol bundled unbundling 完成（1271 item 1 / 1272 item 2 / 1273 item 3）；精读 [`worked-example-ua14-notcli-vs-bundled.md`](worked-example-ua14-notcli-vs-bundled.md)（不变量 1271 item 1）、[`worked-example-ua14-notua-vs-bundled.md`](worked-example-ua14-notua-vs-bundled.md)（不变量 1272 item 2）、[`worked-example-ua14-notsame-vs-bundled.md`](worked-example-ua14-notsame-vs-bundled.md)（不变量 1273 item 3）。
 
 ## 本页不抄
 

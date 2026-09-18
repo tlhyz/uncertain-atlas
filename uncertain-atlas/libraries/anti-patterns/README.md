@@ -1,3 +1,6 @@
+- [`ua14-notsame-sold-as-bundled.md`](ua14-notsame-sold-as-bundled.md) — 同一协议版本 被写成已经是同一套实现 / user agent 栈就已经是协议能力 / 就已经谈妥功能（不变量 1273）
+- [`ua14-notua-sold-as-bundled.md`](ua14-notua-sold-as-bundled.md) — user agent 被写成已经可以按实现改行为 / 已经按这家换规则 / 已经是本页允许按 UA 认人（不变量 1272）
+- [`ua14-notcli-sold-as-bundled.md`](ua14-notcli-sold-as-bundled.md) — 协议版本 被写成已经是客户端版本 / 已经是实现版本 / 实现发了新版本就已经抬了协议（不变量 1271）
 - [`pong31-notlive-sold-as-bundled.md`](pong31-notlive-sold-as-bundled.md) — 回了 pong 被写成已经还活着 / 已经不卡 / 一次往返就已经永远响应（不变量 1270）
 - [`pong31-notmatch-sold-as-bundled.md`](pong31-notmatch-sold-as-bundled.md) — 一条 pong 被写成已经对上那一次 ping / 回显了 nonce 就已经对上刚发的 / nonce 是零就已经测过往返（不变量 1269）
 - [`pong31-notver-sold-as-bundled.md`](pong31-notver-sold-as-bundled.md) — 协议版本够了 被写成已经会带 nonce 的 ping / 已经会回 pong / 已经并进功能协商（不变量 1268）

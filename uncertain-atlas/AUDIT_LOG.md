@@ -1,3 +1,18 @@
+| A6130 | 记录 | 会与 263 / 259 / 262 / 1271 / 1272 糊成「看见同一协议版本就已经是同一套实现 interchangeable、就已经是协议能力 interchangeable、就已经谈妥了某项功能 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-14 same-proto not already same-impl / not already capability / not already feature 正式三事（263 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。263 ua vs protocol bundled unbundling 完成（1273 item 3） |
+| A6131 | 高 | 看见同一协议版本 会被写成已经是同一套实现 interchangeable / 259 interchangeable | 官方 BIP-14 ua item 3：not already 已经是同一套实现 / not 259 |
+| A6132 | 高 | 看见user agent 栈 会被写成已经是协议能力 interchangeable / 262 interchangeable | 官方 BIP-14 ua item 3：not already 已经是协议能力 / not 262 |
+| A6133 | 高 | 看见同一协议版本 会被写成已经谈妥了某项功能 interchangeable | 官方 BIP-14 ua item 3：not already settled |
+| A6134 | 中 | 怎样按 user agent 指纹认人、怎样靠它排斥故障客户端、怎样按实现换协议会被抄进不确定 | 不抄。不写 怎样按 user agent 指纹认人、怎样靠它排斥故障客户端、怎样按实现换协议。不另写 19 节 |
+| A6125 | 记录 | 会与 263 / 259 / 262 / 1271 / 1273 糊成「看见user agent就已经可以按实现改行为 interchangeable、就已经可以按这家实现换规则 interchangeable、就已经是本页允许的行为 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-14 user-agent not already change-behavior / not already swap-rules / not already allowed-fingerprint 正式三事（263 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。263 ua vs protocol bundled unbundling 续（1272 item 2） |
+| A6126 | 高 | 看见user agent 会被写成已经可以按实现改行为 interchangeable / 259 interchangeable | 官方 BIP-14 ua item 2：not already 已经可以按实现改行为 / not 259 |
+| A6127 | 高 | 看见一条 user agent 会被写成已经可以按这家实现换规则 interchangeable / 262 interchangeable | 官方 BIP-14 ua item 2：not already 已经可以按这家实现换规则 / not 262 |
+| A6128 | 高 | 看见user agent 会被写成已经是本页允许的行为 interchangeable | 官方 BIP-14 ua item 2：not already settled |
+| A6129 | 中 | 怎样按 user agent 指纹认人、怎样靠它排斥故障客户端、怎样按实现换协议会被抄进不确定 | 不抄。不写 怎样按 user agent 指纹认人、怎样靠它排斥故障客户端、怎样按实现换协议。不另写 19 节 |
+| A6120 | 记录 | 会与 263 / 259 / 262 / 1272 / 1273 糊成「看见协议版本就已经是客户端版本 interchangeable、就已经是实现版本 interchangeable、就已经抬了协议 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-14 proto-ver not already client-ver / not already impl-ver / not already raised-proto 正式三事（263 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。263 ua vs protocol bundled unbundling 启动（1271 item 1） |
+| A6121 | 高 | 看见协议版本 会被写成已经是客户端版本 interchangeable / 259 interchangeable | 官方 BIP-14 ua item 1：not already 已经是客户端版本 / not 259 |
+| A6122 | 高 | 看见协议版本 会被写成已经是实现版本 interchangeable / 262 interchangeable | 官方 BIP-14 ua item 1：not already 已经是实现版本 / not 262 |
+| A6123 | 高 | 看见协议版本 会被写成已经抬了协议 interchangeable | 官方 BIP-14 ua item 1：not already settled |
+| A6124 | 中 | 怎样按 user agent 指纹认人、怎样靠它排斥故障客户端、怎样按实现换协议会被抄进不确定 | 不抄。不写 怎样按 user agent 指纹认人、怎样靠它排斥故障客户端、怎样按实现换协议。不另写 19 节 |
 | A6115 | 记录 | 会与 262 / 256 / 259 / 1268 / 1269 糊成「看见回了 pong 就已经还活着 interchangeable、就已经不卡 interchangeable、就已经永远响应 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-31 pong not already alive / not already unstuck / not already forever 正式三事（262 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。262 pong vs live bundled unbundling 完成（1270 item 3） |
 | A6116 | 高 | 看见回了 pong 会被写成已经还活着 interchangeable / 256 interchangeable | 官方 BIP-31 pong item 3：not already alive / not 256 |
 | A6117 | 高 | 看见回了 pong 会被写成已经不卡 interchangeable / 259 interchangeable | 官方 BIP-31 pong item 3：not already not already unstuck / not 259 |
