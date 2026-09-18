@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 lock mempool before Commit not already unlocked / not already sync done / not Commit return already released 正式三事（310 余量），必须分开锁上了 是不是 already unlocked interchangeable / 310 commitlock bundled interchangeable / 588 finlock interchangeable、能一起更新 是不是 already sync done interchangeable / 已经和 Commit 同步做完 interchangeable、Commit 回了 是不是 already released interchangeable / 异步解锁已经同路径 interchangeable。可以跳过「看见锁上了 就已经解锁 interchangeable / 就已经同步做完 interchangeable / 就已经放下锁 interchangeable」。不要另写怎样加锁。310 commitlock vs RPC bundled unbundling 在本页 item 2 完成；续 [`worked-example-commitlock-notbroadcast-vs-bundled.md`](worked-example-commitlock-notbroadcast-vs-bundled.md)（不变量 691 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 lock mempool before Commit not already unlocked / not already sync done / not Commit return already released 正式三事（310 余量），必须分开锁上了 是不是 already unlocked interchangeable / 310 commitlock bundled interchangeable / 588 finlock interchangeable、能一起更新 是不是 already sync done interchangeable / 已经和 Commit 同步做完 interchangeable、Commit 回了 是不是 already released interchangeable / 异步解锁已经同路径 interchangeable。可以跳过「看见锁上了 就已经解锁 interchangeable / 就已经同步做完 interchangeable / 就已经放下锁 interchangeable」。不要另写怎样加锁。310 commitlock vs RPC bundled unbundling 在本页 item 2 完成；完成见 [`worked-example-commitlock-notbroadcast-vs-bundled.md`](worked-example-commitlock-notbroadcast-vs-bundled.md)（不变量 691 item 3）。
 
 ## 本页不抄
 
