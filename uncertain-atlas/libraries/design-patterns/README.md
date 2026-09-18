@@ -1,3 +1,6 @@
+- [`name-the-xhash-notmiss-bar.md`](name-the-xhash-notmiss-bar.md) — EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）（不变量 1394）
+- [`name-the-xhash-notzero-bar.md`](name-the-xhash-notzero-bar.md) — EIP-1052 return-0 not already no-code-account / not already empty-data-hash / not already 180 正式三事（221 余量）（不变量 1393）
+- [`name-the-xhash-notsee-bar.md`](name-the-xhash-notsee-bar.md) — EIP-1052 code-hash opcode not already saw-code / not already EXTCODECOPY / not already 221-bundled 正式三事（221 余量）（不变量 1392）
 - [`name-the-cr2-notover-bar.md`](name-the-cr2-notover-bar.md) — EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）（不变量 1391）
 - [`name-the-cr2-notexist-bar.md`](name-the-cr2-notexist-bar.md) — EIP-1014 salt-address not already created / not already has-code / not already paid-create 正式三事（222 余量）（不变量 1390）
 - [`name-the-cr2-notcre-bar.md`](name-the-cr2-notcre-bar.md) — EIP-1014 CREATE2 not already CREATE-nonce / not already sender-nonce / not already 222-bundled 正式三事（222 余量）（不变量 1389）

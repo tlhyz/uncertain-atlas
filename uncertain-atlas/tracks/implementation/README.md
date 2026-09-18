@@ -989,6 +989,9 @@
 - [`worked-example-basefee-opcode-vs-market.md`](worked-example-basefee-opcode-vs-market.md) — 看见基础费指令 ≠ 已经改了费用市场；看见能读本块基础费 ≠ 已经给了出块者；看见跑 EVM 前就已经有这个数 ≠ 已经改了头怎么算；3198 ≠ 1559 ≠ 158（不变量 218）
 - [`worked-example-blobbasefee-vs-basefee.md`](worked-example-blobbasefee-vs-basefee.md) — 看见 blob 基础费指令 ≠ 已经是执行层基础费指令；看见能读本块 blob 基础费 ≠ 已经并成一套气；看见跑 EVM 前就已经有这个数 ≠ 已经改了 4844 日程；7516 ≠ 3198 ≠ 218 ≠ 4844（不变量 219）
 - [`worked-example-chainid-opcode-vs-signed.md`](worked-example-chainid-opcode-vs-signed.md) — 看见链号指令 ≠ 已经是签进哈希的链号；看见指令返回配置链号 ≠ 已经是这笔交易带了 EIP-155 标识；看见编译期写死的链号 ≠ 已经在硬分叉后仍安全；1344 ≠ 155 ≠ 161 ≠ 712（不变量 220）
+- [`worked-example-xhash-notsee-vs-bundled.md`](worked-example-xhash-notsee-vs-bundled.md) — 代码哈希指令≠already 看见代码/整份拷/221 bundled；≠221 bundled（不变量 1392）
+- [`worked-example-xhash-notzero-vs-bundled.md`](worked-example-xhash-notzero-vs-bundled.md) — 返回0≠already 没代码账户/空数据哈希/180三灯；≠221 bundled（不变量 1393）
+- [`worked-example-xhash-notmiss-vs-bundled.md`](worked-example-xhash-notmiss-vs-bundled.md) — 空数据哈希≠already 账户不存在/已改161/3607；≠221 bundled（不变量 1394）
 - [`worked-example-extcodehash-vs-copy.md`](worked-example-extcodehash-vs-copy.md) — 看见代码哈希指令 ≠ 已经看见代码本身；看见返回 0 ≠ 已经是没代码的账户；看见空数据哈希 ≠ 已经是账户不存在；1052 ≠ 161 ≠ 180 ≠ 162（不变量 221）
 - [`worked-example-cr2-notcre-vs-bundled.md`](worked-example-cr2-notcre-vs-bundled.md) — 盐创建指令≠already 按序号占址/能和旧式撞上/222 bundled；≠222 bundled（不变量 1389）
 - [`worked-example-cr2-notexist-vs-bundled.md`](worked-example-cr2-notexist-vs-bundled.md) — 算出来的盐地址≠already 创建/已有代码/已付创建费；≠222 bundled（不变量 1390）

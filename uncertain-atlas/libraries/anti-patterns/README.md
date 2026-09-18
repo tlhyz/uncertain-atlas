@@ -1,3 +1,6 @@
+- [`xhash-notmiss-sold-as-bundled.md`](xhash-notmiss-sold-as-bundled.md) — 空数据哈希 被写成已经是账户不存在 / 就已经改了 161 / 就已经是 3607（不变量 1394）
+- [`xhash-notzero-sold-as-bundled.md`](xhash-notzero-sold-as-bundled.md) — 返回 0 被写成已经是没代码账户 / 就已经是空数据哈希 / 就已经是 180（不变量 1393）
+- [`xhash-notsee-sold-as-bundled.md`](xhash-notsee-sold-as-bundled.md) — 代码哈希指令 被写成已经看见代码 / 就已经是整份拷 / 就已经 221 bundled（不变量 1392）
 - [`cr2-notover-sold-as-bundled.md`](cr2-notover-sold-as-bundled.md) — 碰撞变得可能 被写成已经覆盖 / 就已经是 684 本身 / 就已经是 3860（不变量 1391）
 - [`cr2-notexist-sold-as-bundled.md`](cr2-notexist-sold-as-bundled.md) — 算出来的盐地址 被写成已经创建 / 就已经有那份代码 / 就已经付过创建费（不变量 1390）
 - [`cr2-notcre-sold-as-bundled.md`](cr2-notcre-sold-as-bundled.md) — 盐创建指令 被写成已经是按序号占址 / 就已经能和旧式撞上 / 就已经 222 bundled（不变量 1389）

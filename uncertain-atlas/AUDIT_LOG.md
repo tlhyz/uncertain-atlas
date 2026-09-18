@@ -1,3 +1,18 @@
+| A6735 | 记录 | 会与 221 / 162 / 220 / 1392 / 1393 糊成「看见空数据哈希不是已经是账户不存在就已经是账户不存在 interchangeable、就已经改了 161 interchangeable、就已经是 3607 发送者规则 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。221 EXTCODEHASH vs copy bundled unbundling 完成（1394 item 3） |
+| A6736 | 高 | 看见空数据哈希不是已经是账户不存在 会被写成已经是账户不存在 interchangeable / 162 interchangeable | 官方 EIP-1052 xhash item 3：not already 已经是账户不存在 / not 162 |
+| A6737 | 高 | 看见empty-data hash is not already missing 会被写成已经改了 161 interchangeable / 220 interchangeable | 官方 EIP-1052 xhash item 3：not already 已经改了 161 / not 220 |
+| A6738 | 高 | 看见空数据哈希不是已经是账户不存在 会被写成已经是 3607 发送者规则 interchangeable | 官方 EIP-1052 xhash item 3：not already settled |
+| A6739 | 中 | 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码会被抄进不确定 | 不抄。不写 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码。不另写 19 节 |
+| A6730 | 记录 | 会与 221 / 180 / 160 / 1392 / 1394 糊成「看见返回 0 不是已经是没代码的账户就已经是没代码的账户 interchangeable、就已经是空数据哈希 interchangeable、就已经是 180 空户三灯 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1052 return-0 not already no-code-account / not already empty-data-hash / not already 180 正式三事（221 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。221 EXTCODEHASH vs copy bundled unbundling 续（1393 item 2） |
+| A6731 | 高 | 看见返回 0 不是已经是没代码的账户 会被写成已经是没代码的账户 interchangeable / 180 interchangeable | 官方 EIP-1052 xhash item 2：not already 已经是没代码的账户 / not 180 |
+| A6732 | 高 | 看见return 0 is not already no-code account 会被写成已经是空数据哈希 interchangeable / 160 interchangeable | 官方 EIP-1052 xhash item 2：not already 已经是空数据哈希 / not 160 |
+| A6733 | 高 | 看见返回 0 不是已经是没代码的账户 会被写成已经是 180 空户三灯 interchangeable | 官方 EIP-1052 xhash item 2：not already settled |
+| A6734 | 中 | 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码会被抄进不确定 | 不抄。不写 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码。不另写 19 节 |
+| A6725 | 记录 | 会与 221 / 180 / 162 / 1393 / 1394 糊成「看见代码哈希指令不是已经看见代码就已经看见代码本身 interchangeable、就已经是整份拷代码 interchangeable、就已经 221 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1052 code-hash opcode not already saw-code / not already EXTCODECOPY / not already 221-bundled 正式三事（221 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。221 EXTCODEHASH vs copy bundled unbundling 启动（1392 item 1） |
+| A6726 | 高 | 看见代码哈希指令不是已经看见代码 会被写成已经看见代码本身 interchangeable / 180 interchangeable | 官方 EIP-1052 xhash item 1：not already 已经看见代码本身 / not 180 |
+| A6727 | 高 | 看见EXTCODEHASH is not already saw code 会被写成已经是整份拷代码 interchangeable / 162 interchangeable | 官方 EIP-1052 xhash item 1：not already 已经是整份拷代码 / not 162 |
+| A6728 | 高 | 看见代码哈希指令不是已经看见代码 会被写成已经 221 bundled interchangeable | 官方 EIP-1052 xhash item 1：not already settled |
+| A6729 | 中 | 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码会被抄进不确定 | 不抄。不写 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码。不另写 19 节 |
 | A6720 | 记录 | 会与 222 / 176 / 160 / 1389 / 1390 糊成「看见碰撞变得可能不是已经覆盖就已经覆盖已有代码 interchangeable、就已经是 684 本身 interchangeable、就已经是 3860 分析费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。222 CREATE2 salt-address vs created bundled unbundling 完成（1391 item 3） |
 | A6721 | 高 | 看见碰撞变得可能不是已经覆盖 会被写成已经覆盖已有代码 interchangeable / 176 interchangeable | 官方 EIP-1014 cr2 item 3：not already 已经覆盖已有代码 / not 176 |
 | A6722 | 高 | 看见collision possible is not already overwrite 会被写成已经是 684 本身 interchangeable / 160 interchangeable | 官方 EIP-1014 cr2 item 3：not already 已经是 684 本身 / not 160 |

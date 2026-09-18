@@ -1,3 +1,15 @@
+## 2026-09-18（续 1511）
+
+- 不变量 1394；语料 C1372；模式 name-the-xhash-notmiss-bar；反模式 xhash-notmiss-sold-as-bundled；L10.3 第 1363 条。填 L5.1 EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）。221 EXTCODEHASH vs copy bundled unbundling 完成（1394 item 3）。
+
+## 2026-09-18（续 1510）
+
+- 不变量 1393；语料 C1371；模式 name-the-xhash-notzero-bar；反模式 xhash-notzero-sold-as-bundled；L10.3 第 1362 条。填 L5.1 EIP-1052 return-0 not already no-code-account / not already empty-data-hash / not already 180 正式三事（221 余量）。221 EXTCODEHASH vs copy bundled unbundling 续（1393 item 2）。
+
+## 2026-09-18（续 1509）
+
+- 不变量 1392；语料 C1370；模式 name-the-xhash-notsee-bar；反模式 xhash-notsee-sold-as-bundled；L10.3 第 1361 条。填 L5.1 EIP-1052 code-hash opcode not already saw-code / not already EXTCODECOPY / not already 221-bundled 正式三事（221 余量）。221 EXTCODEHASH vs copy bundled unbundling 启动（1392 item 1）。
+
 ## 2026-09-18（续 1508）
 
 - 不变量 1391；语料 C1369；模式 name-the-cr2-notover-bar；反模式 cr2-notover-sold-as-bundled；L10.3 第 1360 条。填 L5.1 EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）。222 CREATE2 salt-address vs created bundled unbundling 完成（1391 item 3）。
