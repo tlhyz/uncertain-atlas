@@ -1024,6 +1024,9 @@
 - [`worked-example-nmet-notcur-vs-bundled.md`](worked-example-nmet-notcur-vs-bundled.md) — 原来值当前值新值≠already 只有当前值/第一次写/2929；≠225 bundled（不变量 1420）
 - [`worked-example-nmet-notstip-vs-bundled.md`](worked-example-nmet-notstip-vs-bundled.md) — 津贴帧禁写≠already 津贴里能改槽/1283洞/223；≠225 bundled（不变量 1421）
 - [`worked-example-net-meter-vs-transient.md`](worked-example-net-meter-vs-transient.md) — 看见净计量 ≠ 已经是瞬时存储；看见原来值 / 当前值 / 新值 ≠ 已经只有当前值；看见津贴帧禁写 ≠ 已经能改槽；2200 ≠ 1153 ≠ 159 ≠ 3529 ≠ 223（不变量 225）
+- [`worked-example-cdcut-notzero-vs-bundled.md`](worked-example-cdcut-notzero-vs-bundled.md) — 非零calldata降价≠already 零字节也降/7623/226 bundled；≠226 bundled（不变量 1422）
+- [`worked-example-cdcut-notcap-vs-bundled.md`](worked-example-cdcut-notcap-vs-bundled.md) — 降价≠already 没有块上限/DA已齐/4844；≠226 bundled（不变量 1423）
+- [`worked-example-cdcut-notsafe-vs-bundled.md`](worked-example-cdcut-notsafe-vs-bundled.md) — 降价≠already 不伤延迟/不改安全/197；≠226 bundled（不变量 1424）
 - [`worked-example-calldata-cut-vs-unlimited.md`](worked-example-calldata-cut-vs-unlimited.md) — 看见非零 calldata 降价 ≠ 已经给零字节也降价；看见降价 ≠ 已经没有块大小上限；看见降价 ≠ 已经不伤延迟 / 安全；2028 ≠ 7623 ≠ 197 ≠ 4844 ≠ 145（不变量 226）
 - [`worked-example-modexp-price-vs-bound.md`](worked-example-modexp-price-vs-bound.md) — 看见模幂重计价 ≠ 已经是 198 那道复杂度公式；看见更便宜 ≠ 已经改了接口或算法；看见最低气价 ≠ 已经能对小输入无限便宜；2565 ≠ 7823 ≠ 206 ≠ 198 原文（不变量 227）
 - [`worked-example-bn128-cut-vs-verify.md`](worked-example-bn128-cut-vs-verify.md) — 看见 bn128 加 / 乘 / 配对降价 ≠ 已经换了算法；看见更便宜 ≠ 已经在验签；看见本页 ≠ 已经是通用曲线算术；1108 ≠ 2537 ≠ 199 ≠ 196/197 原文（不变量 228）

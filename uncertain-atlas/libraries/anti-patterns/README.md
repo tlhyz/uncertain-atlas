@@ -1,3 +1,6 @@
+- [`cdcut-notsafe-sold-as-bundled.md`](cdcut-notsafe-sold-as-bundled.md) — 降价 被写成已经不伤延迟 / 就已经不改安全 / 就已经是 197（不变量 1424）
+- [`cdcut-notcap-sold-as-bundled.md`](cdcut-notcap-sold-as-bundled.md) — 降价 被写成已经没有块上限 / 就已经解决 DA / 就已经是 4844（不变量 1423）
+- [`cdcut-notzero-sold-as-bundled.md`](cdcut-notzero-sold-as-bundled.md) — 非零 calldata 降价 被写成已经给零字节也降 / 就已经是 7623 / 就已经 226 bundled（不变量 1422）
 - [`nmet-notstip-sold-as-bundled.md`](nmet-notstip-sold-as-bundled.md) — 津贴帧禁写 被写成已经能在津贴里改槽 / 就已经是 1283 洞 / 就已经是 223（不变量 1421）
 - [`nmet-notcur-sold-as-bundled.md`](nmet-notcur-sold-as-bundled.md) — 三值 被写成已经只有当前值 / 就已经是第一次写 / 就已经是 2929（不变量 1420）
 - [`nmet-not1153-sold-as-bundled.md`](nmet-not1153-sold-as-bundled.md) — 净计量 被写成已经是瞬时存储 / 就已经是 1153 / 就已经 225 bundled（不变量 1419）

@@ -1,3 +1,6 @@
+- [`name-the-cdcut-notsafe-bar.md`](name-the-cdcut-notsafe-bar.md) — EIP-2028 cheaper not already no-delay / not already no-security-change / not already 197 正式三事（226 余量）（不变量 1424）
+- [`name-the-cdcut-notcap-bar.md`](name-the-cdcut-notcap-bar.md) — EIP-2028 cheaper not already no-block-cap / not already DA-solved / not already 4844 正式三事（226 余量）（不变量 1423）
+- [`name-the-cdcut-notzero-bar.md`](name-the-cdcut-notzero-bar.md) — EIP-2028 nonzero-cut not already zero-cut / not already 7623 / not already 226-bundled 正式三事（226 余量）（不变量 1422）
 - [`name-the-nmet-notstip-bar.md`](name-the-nmet-notstip-bar.md) — EIP-2200 stipend-ban not already stipend-writable / not already 1283-hole / not already 223 正式三事（225 余量）（不变量 1421）
 - [`name-the-nmet-notcur-bar.md`](name-the-nmet-notcur-bar.md) — EIP-2200 orig-cur-new not already current-only / not already first-write / not already 2929 正式三事（225 余量）（不变量 1420）
 - [`name-the-nmet-not1153-bar.md`](name-the-nmet-not1153-bar.md) — EIP-2200 net-meter not already transient / not already 1153 / not already 225-bundled 正式三事（225 余量）（不变量 1419）

@@ -1,3 +1,18 @@
+| A6885 | 记录 | 会与 226 / 197 / 225 / 1422 / 1423 糊成「看见降价不是已经不伤网络延迟 / 安全就已经不伤网络延迟 / 安全 interchangeable、就已经不改安全 interchangeable、就已经是不变量 197 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2028 cheaper not already no-delay / not already no-security-change / not already 197 正式三事（226 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。226 calldata-cut vs unlimited bundled unbundling 完成（1424 item 3） |
+| A6886 | 高 | 看见降价不是已经不伤网络延迟 / 安全 会被写成已经不伤网络延迟 / 安全 interchangeable / 197 interchangeable | 官方 EIP-2028 cdcut item 3：not already 已经不伤网络延迟 / 安全 / not 197 |
+| A6887 | 高 | 看见cheaper is not already no delay/security impact 会被写成已经不改安全 interchangeable / 225 interchangeable | 官方 EIP-2028 cdcut item 3：not already 已经不改安全 / not 225 |
+| A6888 | 高 | 看见降价不是已经不伤网络延迟 / 安全 会被写成已经是不变量 197 interchangeable | 官方 EIP-2028 cdcut item 3：not already settled |
+| A6889 | 中 | 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价会被抄进不确定 | 不抄。不写 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价。不另写 19 节 |
+| A6880 | 记录 | 会与 226 / 145 / 158 / 1422 / 1424 糊成「看见降价不是已经没有块大小上限就已经没有块大小上限 interchangeable、就已经解决数据可用性 interchangeable、就已经是 4844 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2028 cheaper not already no-block-cap / not already DA-solved / not already 4844 正式三事（226 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。226 calldata-cut vs unlimited bundled unbundling 续（1423 item 2） |
+| A6881 | 高 | 看见降价不是已经没有块大小上限 会被写成已经没有块大小上限 interchangeable / 145 interchangeable | 官方 EIP-2028 cdcut item 2：not already 已经没有块大小上限 / not 145 |
+| A6882 | 高 | 看见cheaper is not already no block-size cap 会被写成已经解决数据可用性 interchangeable / 158 interchangeable | 官方 EIP-2028 cdcut item 2：not already 已经解决数据可用性 / not 158 |
+| A6883 | 高 | 看见降价不是已经没有块大小上限 会被写成已经是 4844 interchangeable | 官方 EIP-2028 cdcut item 2：not already settled |
+| A6884 | 中 | 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价会被抄进不确定 | 不抄。不写 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价。不另写 19 节 |
+| A6875 | 记录 | 会与 226 / 197 / 145 / 1423 / 1424 糊成「看见非零 calldata 降价不是已经给零字节也降价就已经给零字节也降价 interchangeable、就已经是 7623 interchangeable、就已经 226 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2028 nonzero-cut not already zero-cut / not already 7623 / not already 226-bundled 正式三事（226 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。226 calldata-cut vs unlimited bundled unbundling 启动（1422 item 1） |
+| A6876 | 高 | 看见非零 calldata 降价不是已经给零字节也降价 会被写成已经给零字节也降价 interchangeable / 197 interchangeable | 官方 EIP-2028 cdcut item 1：not already 已经给零字节也降价 / not 197 |
+| A6877 | 高 | 看见nonzero cut is not already zero-byte cut 会被写成已经是 7623 interchangeable / 145 interchangeable | 官方 EIP-2028 cdcut item 1：not already 已经是 7623 / not 145 |
+| A6878 | 高 | 看见非零 calldata 降价不是已经给零字节也降价 会被写成已经 226 bundled interchangeable | 官方 EIP-2028 cdcut item 1：not already settled |
+| A6879 | 中 | 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价会被抄进不确定 | 不抄。不写 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价。不另写 19 节 |
 | A6870 | 记录 | 会与 225 / 159 / 169 / 1419 / 1420 糊成「看见津贴帧里写存储会停不是已经能在转账津贴里改槽就已经能在转账津贴里改槽 interchangeable、就已经是 1283 那道洞 interchangeable、就已经是不变量 223 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2200 stipend-ban not already stipend-writable / not already 1283-hole / not already 223 正式三事（225 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。225 net-meter vs transient bundled unbundling 完成（1421 item 3） |
 | A6871 | 高 | 看见津贴帧里写存储会停不是已经能在转账津贴里改槽 会被写成已经能在转账津贴里改槽 interchangeable / 159 interchangeable | 官方 EIP-2200 nmet item 3：not already 已经能在转账津贴里改槽 / not 159 |
 | A6872 | 高 | 看见stipend ban is not already stipend-writable 会被写成已经是 1283 那道洞 interchangeable / 169 interchangeable | 官方 EIP-2200 nmet item 3：not already 已经是 1283 那道洞 / not 169 |
