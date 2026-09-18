@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里有 ExtendedVoteInfo 就已经应用验完、已经必须填内容、已经 Verify 过」，必须分开 vote_extension 的签已由 CometBFT 验过、扩展可以空是不是已经应用验完 / 已经必须填内容、extension_signature 已由 CometBFT 验过、暴露给应用再处理是不是已经应用验完 / 已经 Verify 过、扩展启用时两份签都在、没给 non_rp 就签空切片是不是已经只有一份签 / 已经没 non_rp 就没有第二份签。可以跳过「看见 Prepare 里有 ExtendedVoteInfo 就已经应用验完」。不要另写怎样写 ExtendedVoteInfo Usage 暴露签正式三事。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里有 ExtendedVoteInfo 就已经应用验完、已经必须填内容、已经 Verify 过」，必须分开 vote_extension 的签已由 CometBFT 验过、扩展可以空是不是已经应用验完 / 已经必须填内容、extension_signature 已由 CometBFT 验过、暴露给应用再处理是不是已经应用验完 / 已经 Verify 过、扩展启用时两份签都在、没给 non_rp 就签空切片是不是已经只有一份签 / 已经没 non_rp 就没有第二份签。可以跳过「看见 Prepare 里有 ExtendedVoteInfo 就已经应用验完」。447 ExtendedVoteInfo Usage expose signature bundled unbundling 完成（1365 item 1 / 1366 item 2 / 1367 item 3）；精读 [`worked-example-eviuse-notapp-vs-bundled.md`](worked-example-eviuse-notapp-vs-bundled.md)（不变量 1365 item 1）、[`worked-example-eviuse-notexp-vs-bundled.md`](worked-example-eviuse-notexp-vs-bundled.md)（不变量 1366 item 2）、[`worked-example-eviuse-nottwo-vs-bundled.md`](worked-example-eviuse-nottwo-vs-bundled.md)（不变量 1367 item 3）。不要另写怎样写 ExtendedVoteInfo Usage 暴露签正式三事。
 
 ## 本页不抄
 

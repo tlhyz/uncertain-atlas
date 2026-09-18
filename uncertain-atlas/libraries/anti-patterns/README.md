@@ -1,3 +1,6 @@
+- [`eviuse-nottwo-sold-as-bundled.md`](eviuse-nottwo-sold-as-bundled.md) — 两份签都在 / 空切片 被写成已经只有一份签 / 就已经没有第二份 / 就已经跳过 Verify（不变量 1367）
+- [`eviuse-notexp-sold-as-bundled.md`](eviuse-notexp-sold-as-bundled.md) — 暴露给应用再处理 被写成已经应用验完 / 就已经 Verify / 就已经 421 交出（不变量 1366）
+- [`eviuse-notapp-sold-as-bundled.md`](eviuse-notapp-sold-as-bundled.md) — 引擎已验且可空 被写成已经应用验完 / 就必须填内容 / 就已经 Accept（不变量 1365）
 - [`etxev-notlvl-sold-as-bundled.md`](etxev-notlvl-sold-as-bundled.md) — 逐笔 events 被写成已经是块级 events / 就已经是 CheckTx events / 就已经 interchangeable（不变量 1364）
 - [`etxev-notdet-sold-as-bundled.md`](etxev-notdet-sold-as-bundled.md) — events 非确定 被写成已经是共识字段 / 就已经编进哈希 / 就已经必须确定（不变量 1363）
 - [`etxev-notidx-sold-as-bundled.md`](etxev-notidx-sold-as-bundled.md) — ExecTxResult.events 被写成已经印进本头 / 就已经像 Code/Data 必须确定 / 就已经交差（不变量 1362）

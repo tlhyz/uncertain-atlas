@@ -1,3 +1,15 @@
+## 2026-09-18（续 1484）
+
+- 不变量 1367；语料 C1345；模式 name-the-eviuse-nottwo-bar；反模式 eviuse-nottwo-sold-as-bundled；L10.3 第 1336 条。填 L4.4 ExtViUse two sigs when enabled empty-slice if no non_rp not already one-sig / not already no-second / not already 358-replay 正式三事（447 余量）。447 ExtendedVoteInfo Usage expose signature bundled unbundling 完成（1367 item 3）。
+
+## 2026-09-18（续 1483）
+
+- 不变量 1366；语料 C1344；模式 name-the-eviuse-notexp-bar；反模式 eviuse-notexp-sold-as-bundled；L10.3 第 1335 条。填 L4.4 ExtViUse extension_signature exposed for further processing not already app-verified / not already Verify / not already 421-handed 正式三事（447 余量）。447 ExtendedVoteInfo Usage expose signature bundled unbundling 续（1366 item 2）。
+
+## 2026-09-18（续 1482）
+
+- 不变量 1365；语料 C1343；模式 name-the-eviuse-notapp-bar；反模式 eviuse-notapp-sold-as-bundled；L10.3 第 1334 条。填 L4.4 ExtViUse vote_extension engine-verified can-be-empty not already app-verified / not already must-fill / not already Accept 正式三事（447 余量）。447 ExtendedVoteInfo Usage expose signature bundled unbundling 启动（1365 item 1）。
+
 ## 2026-09-18（续 1481）
 
 - 不变量 1364；语料 C1342；模式 name-the-etxev-notlvl-bar；反模式 etxev-notlvl-sold-as-bundled；L10.3 第 1333 条。填 L4.4 ExecTxEv per-tx events in tx_results not already block-level 431 / not already CheckTx 381 / not already interchangeable 正式三事（446 余量）。446 ExecTxResult events vs header bundled unbundling 完成（1364 item 3）。

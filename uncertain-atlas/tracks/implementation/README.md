@@ -1022,6 +1022,9 @@
 - [`worked-example-etxev-notdet-vs-bundled.md`](worked-example-etxev-notdet-vs-bundled.md) — events标成非确定≠already共识字段/已经哈希/316必须确定；≠446 bundled（不变量 1363）
 - [`worked-example-etxev-notlvl-vs-bundled.md`](worked-example-etxev-notlvl-vs-bundled.md) — 逐笔events≠already块级431/CheckTx 381/池门回包；≠446 bundled（不变量 1364）
 - [`worked-example-exectxevents-vs-header.md`](worked-example-exectxevents-vs-header.md) — ExecTxResult.events≠already 印进本头/块级events（快照 446）
+- [`worked-example-eviuse-notapp-vs-bundled.md`](worked-example-eviuse-notapp-vs-bundled.md) — vote_extension引擎已验且可空≠already应用验完/必须填/Accept；≠447 bundled（不变量 1365）
+- [`worked-example-eviuse-notexp-vs-bundled.md`](worked-example-eviuse-notexp-vs-bundled.md) — extension_signature暴露再处理≠already应用验完/已Verify/421交出；≠447 bundled（不变量 1366）
+- [`worked-example-eviuse-nottwo-vs-bundled.md`](worked-example-eviuse-nottwo-vs-bundled.md) — 两份签都在空切片≠already只有一份/没non_rp就没有/跳过Verify；≠447 bundled（不变量 1367）
 - [`worked-example-extviusage-vs-expose.md`](worked-example-extviusage-vs-expose.md) — ExtendedVoteInfo Usage 暴露签≠already 应用验完/必须填内容
 - [`worked-example-prepevents-vs-finalize.md`](worked-example-prepevents-vs-finalize.md) — Prepare 事件保留≠already 回包交回/Process就交/CheckTx events
 - [`worked-example-validatorusage-vs-gates.md`](worked-example-validatorusage-vs-gates.md) — Validator Usage 四门≠already 同一路 CommitInfo/ExtendedCommitInfo

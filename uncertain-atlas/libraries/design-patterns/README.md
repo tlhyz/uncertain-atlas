@@ -1,3 +1,6 @@
+- [`name-the-eviuse-nottwo-bar.md`](name-the-eviuse-nottwo-bar.md) — ExtViUse two sigs when enabled empty-slice if no non_rp not already one-sig / not already no-second / not already 358-replay 正式三事（447 余量）（不变量 1367）
+- [`name-the-eviuse-notexp-bar.md`](name-the-eviuse-notexp-bar.md) — ExtViUse extension_signature exposed for further processing not already app-verified / not already Verify / not already 421-handed 正式三事（447 余量）（不变量 1366）
+- [`name-the-eviuse-notapp-bar.md`](name-the-eviuse-notapp-bar.md) — ExtViUse vote_extension engine-verified can-be-empty not already app-verified / not already must-fill / not already Accept 正式三事（447 余量）（不变量 1365）
 - [`name-the-etxev-notlvl-bar.md`](name-the-etxev-notlvl-bar.md) — ExecTxEv per-tx events in tx_results not already block-level 431 / not already CheckTx 381 / not already interchangeable 正式三事（446 余量）（不变量 1364）
 - [`name-the-etxev-notdet-bar.md`](name-the-etxev-notdet-bar.md) — ExecTxEv tx events marked non-deterministic not already consensus-field / not already hashed / not already 316-det 正式三事（446 余量）（不变量 1363）
 - [`name-the-etxev-notidx-bar.md`](name-the-etxev-notidx-bar.md) — ExecTxEv tx events are index kv not already LastResultsHash / not already Code-Data-det / not already in-header 正式三事（446 余量）（不变量 1362）
