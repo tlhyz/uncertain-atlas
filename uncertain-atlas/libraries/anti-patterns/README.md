@@ -1,3 +1,6 @@
+- [`udiff-notden-sold-as-bundled.md`](udiff-notden-sold-as-bundled.md) — 改了分母 被写成已经量过墙钟 / 官网吞吐就已经是事实 / 就已经写了后来推迟炸弹（不变量 1297）
+- [`udiff-notcount-sold-as-bundled.md`](udiff-notcount-sold-as-bundled.md) — 头上叔块哈希不是空 被写成已经数清 / 能调难度就已经按个数调 / 就已经看整块（不变量 1296）
+- [`udiff-notbomb-sold-as-bundled.md`](udiff-notbomb-sold-as-bundled.md) — 难度把叔块算进去 被写成已经改奖励 / 已经 Homestead 朝均值 / 就已经没有炸弹（不变量 1295）
 - [`enreq-notfind-sold-as-bundled.md`](enreq-notfind-sold-as-bundled.md) — FindNode 找到人 被写成已经有记录 / 看见公钥就已经有当前记录 / 有请求放大面就已经消失（不变量 1294）
 - [`enreq-notreq-sold-as-bundled.md`](enreq-notreq-sold-as-bundled.md) — 能发请求 被写成已经解析 / 回了记录就已经核签 / 能要就已经验过（不变量 1293）
 - [`enreq-notping-sold-as-bundled.md`](enreq-notping-sold-as-bundled.md) — ping 里有序号 被写成已经拿到记录 / 序号对上就已经取回 / 通告序号记录就已经在手里（不变量 1292）

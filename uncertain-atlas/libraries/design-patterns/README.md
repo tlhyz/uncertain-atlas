@@ -1,3 +1,6 @@
+- [`name-the-udiff-notden-bar.md`](name-the-udiff-notden-bar.md) — EIP-100 denom not already wall-clock / not already throughput / not already later-fork 正式三事（238 余量）（不变量 1297）
+- [`name-the-udiff-notcount-bar.md`](name-the-udiff-notcount-bar.md) — EIP-100 header-approx not already counted / not already exact-k / not already whole-block 正式三事（238 余量）（不变量 1296）
+- [`name-the-udiff-notbomb-bar.md`](name-the-udiff-notbomb-bar.md) — EIP-100 uncles-in-diff not already reward / not already homestead-mean / not already no-bomb 正式三事（238 余量）（不变量 1295）
 - [`name-the-enreq-notfind-bar.md`](name-the-enreq-notfind-bar.md) — EIP-868 find not already have / not already trusted / not already no-amp 正式三事（241 余量）（不变量 1294）
 - [`name-the-enreq-notreq-bar.md`](name-the-enreq-notreq-bar.md) — EIP-868 request not already parsed / not already signed-ok / not already verified 正式三事（241 余量）（不变量 1293）
 - [`name-the-enreq-notping-bar.md`](name-the-enreq-notping-bar.md) — EIP-868 ping not already have / not already fetched / not already in-hand 正式三事（241 余量）（不变量 1292）

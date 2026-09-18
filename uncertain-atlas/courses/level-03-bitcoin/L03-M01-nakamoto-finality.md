@@ -42,7 +42,7 @@
 coinbase 第一项写了高度不是头上已经有高度字段。精读：[`../../tracks/implementation/worked-example-coinbase-height-vs-header.md`](../../tracks/implementation/worked-example-coinbase-height-vs-header.md)（不变量 173）。
 脚本里的 CLTV 不是交易 nLockTime 已经把输出锁住。精读：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。
 脚本里的 CSV 不是绝对锁，也不是「CSV 部署」四个字。精读：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。
-看见难度把叔块算进去不是已经按个数调。看见头上叔块哈希不是空不是已经数清个数。看见可预期发行不是已经没有炸弹。精读：[`../../tracks/consensus/worked-example-uncle-diff-vs-header.md`](../../tracks/consensus/worked-example-uncle-diff-vs-header.md)（不变量 238）。
+看见难度把叔块算进去不是已经按个数调。看见头上叔块哈希不是空不是已经数清个数。看见可预期发行不是已经没有炸弹。精读：[`../../tracks/consensus/worked-example-uncle-diff-vs-header.md`](../../tracks/consensus/worked-example-uncle-diff-vs-header.md) EIP-100 uncles-in-diff not already reward / not already homestead-mean / not already no-bomb 正式三事（238 余量）：[`../../tracks/consensus/worked-example-udiff-notbomb-vs-bundled.md`](../../tracks/consensus/worked-example-udiff-notbomb-vs-bundled.md)（不变量 1295）。 EIP-100 header-approx not already counted / not already exact-k / not already whole-block 正式三事（238 余量）：[`../../tracks/consensus/worked-example-udiff-notcount-vs-bundled.md`](../../tracks/consensus/worked-example-udiff-notcount-vs-bundled.md)（不变量 1296）。 EIP-100 denom not already wall-clock / not already throughput / not already later-fork 正式三事（238 余量）：[`../../tracks/consensus/worked-example-udiff-notden-vs-bundled.md`](../../tracks/consensus/worked-example-udiff-notden-vs-bundled.md)（不变量 1297）。（不变量 238）。
 
 ---
 

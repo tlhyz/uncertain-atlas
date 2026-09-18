@@ -1,3 +1,15 @@
+## 2026-09-18（续 1414）
+
+- 不变量 1297；语料 C1275；模式 name-the-udiff-notden-bar；反模式 udiff-notden-sold-as-bundled；L10.3 第 1266 条。填 L3.1 EIP-100 denom not already wall-clock / not already throughput / not already later-fork 正式三事（238 余量）。238 uncle diff vs header bundled unbundling 完成（1297 item 3）。
+
+## 2026-09-18（续 1413）
+
+- 不变量 1296；语料 C1274；模式 name-the-udiff-notcount-bar；反模式 udiff-notcount-sold-as-bundled；L10.3 第 1265 条。填 L3.1 EIP-100 header-approx not already counted / not already exact-k / not already whole-block 正式三事（238 余量）。238 uncle diff vs header bundled unbundling 续（1296 item 2）。
+
+## 2026-09-18（续 1412）
+
+- 不变量 1295；语料 C1273；模式 name-the-udiff-notbomb-bar；反模式 udiff-notbomb-sold-as-bundled；L10.3 第 1264 条。填 L3.1 EIP-100 uncles-in-diff not already reward / not already homestead-mean / not already no-bomb 正式三事（238 余量）。238 uncle diff vs header bundled unbundling 启动（1295 item 1）。
+
 ## 2026-09-18（续 1411）
 
 - 不变量 1294；语料 C1272；模式 name-the-enreq-notfind-bar；反模式 enreq-notfind-sold-as-bundled；L10.3 第 1263 条。填 L9.1 EIP-868 find not already have / not already trusted / not already no-amp 正式三事（241 余量）。241 enr request vs have bundled unbundling 完成（1294 item 3）。

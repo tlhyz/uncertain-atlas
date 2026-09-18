@@ -1,3 +1,18 @@
+| A6250 | 记录 | 会与 238 / 234 / 163 / 1295 / 1296 糊成「看见改了分母就已经量过不确定的墙钟 interchangeable、就官网吞吐已经是事实 interchangeable、就已经写了后来那些推迟炸弹 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 EIP-100 denom not already wall-clock / not already throughput / not already later-fork 正式三事（238 余量）/ 共识表 / 停链面地图。不写进 `index/03` 状态行、M5.4、L5.1、L5.4、05b。238 uncle diff vs header bundled unbundling 完成（1297 item 3） |
+| A6251 | 高 | 看见改了分母 会被写成已经量过不确定的墙钟 interchangeable / 234 interchangeable | 官方 EIP-100 udiff item 3：not already 已经量过不确定的墙钟 / not 234 |
+| A6252 | 高 | 看见可预期 会被写成官网吞吐已经是事实 interchangeable / 163 interchangeable | 官方 EIP-100 udiff item 3：not already 官网吞吐已经是事实 / not 163 |
+| A6253 | 高 | 看见改了分母 会被写成已经写了后来那些推迟炸弹 interchangeable | 官方 EIP-100 udiff item 3：not already settled |
+| A6254 | 中 | 怎样磨时间戳，怎样抬叔块率，怎样按精确个数复刻会被抄进不确定 | 不抄。不写 怎样磨时间戳，怎样抬叔块率，怎样按精确个数复刻。不另写 19 节 |
+| A6245 | 记录 | 会与 238 / 234 / 41 / 1295 / 1297 糊成「看见头上叔块哈希不是空就已经数清有几个叔块 interchangeable、就已经按个数调 interchangeable、就已经看整块 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 EIP-100 header-approx not already counted / not already exact-k / not already whole-block 正式三事（238 余量）/ 共识表 / 停链面地图。不写进 `index/03` 状态行、M5.4、L5.1、L5.4、05b。238 uncle diff vs header bundled unbundling 续（1296 item 2） |
+| A6246 | 高 | 看见头上叔块哈希不是空 会被写成已经数清有几个叔块 interchangeable / 234 interchangeable | 官方 EIP-100 udiff item 2：not already 已经数清有几个叔块 / not 234 |
+| A6247 | 高 | 看见能调难度 会被写成已经按个数调 interchangeable / 41 interchangeable | 官方 EIP-100 udiff item 2：not already 已经按个数调 / not 41 |
+| A6248 | 高 | 看见头上叔块哈希不是空 会被写成已经看整块 interchangeable | 官方 EIP-100 udiff item 2：not already settled |
+| A6249 | 中 | 怎样磨时间戳，怎样抬叔块率，怎样按精确个数复刻会被抄进不确定 | 不抄。不写 怎样磨时间戳，怎样抬叔块率，怎样按精确个数复刻。不另写 19 节 |
+| A6240 | 记录 | 会与 238 / 234 / 163 / 1296 / 1297 糊成「看见难度把叔块算进去就已经改了出块奖励 interchangeable、就已经写了 Homestead 那次朝均值收敛 interchangeable、就已经没有炸弹 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 EIP-100 uncles-in-diff not already reward / not already homestead-mean / not already no-bomb 正式三事（238 余量）/ 共识表 / 停链面地图。不写进 `index/03` 状态行、M5.4、L5.1、L5.4、05b。238 uncle diff vs header bundled unbundling 启动（1295 item 1） |
+| A6241 | 高 | 看见难度把叔块算进去 会被写成已经改了出块奖励 interchangeable / 234 interchangeable | 官方 EIP-100 udiff item 1：not already 已经改了出块奖励 / not 234 |
+| A6242 | 高 | 看见可预期发行 会被写成已经写了 Homestead 那次朝均值收敛 interchangeable / 163 interchangeable | 官方 EIP-100 udiff item 1：not already 已经写了 Homestead 那次朝均值收敛 / not 163 |
+| A6243 | 高 | 看见难度把叔块算进去 会被写成已经没有炸弹 interchangeable | 官方 EIP-100 udiff item 1：not already settled |
+| A6244 | 中 | 怎样磨时间戳，怎样抬叔块率，怎样按精确个数复刻会被抄进不确定 | 不抄。不写 怎样磨时间戳，怎样抬叔块率，怎样按精确个数复刻。不另写 19 节 |
 | A6235 | 记录 | 会与 241 / 240 / 235 / 1292 / 1293 糊成「看见FindNode 找到人就已经有当前记录 interchangeable、就已经拿到记录 interchangeable、就放大面已经消失 interchangeable」 | 对照写清。不编博物馆页。写进 L9.1 EIP-868 find not already have / not already trusted / not already no-amp 正式三事（241 余量）/ 网络表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.1、L5.4、05b。241 enr request vs have bundled unbundling 完成（1294 item 3） |
 | A6236 | 高 | 看见FindNode 找到人 会被写成已经有当前记录 interchangeable / 240 interchangeable | 官方 EIP-868 enreq item 3：not already 已经有当前记录 / not 240 |
 | A6237 | 高 | 看见公钥 会被写成已经拿到记录 interchangeable / 235 interchangeable | 官方 EIP-868 enreq item 3：not already 已经拿到记录 / not 235 |

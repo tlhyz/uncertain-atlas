@@ -38,7 +38,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见难度把叔块算进去就已经按个数调 / 就已经没有炸弹 / 就已经改了奖励」。若对照工作量难度，必须分开均值目标、叔块进不进目标、只看头还是看整块、炸弹、奖励。官网吞吐不得当事实。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见难度把叔块算进去就已经按个数调 / 就已经没有炸弹 / 就已经改了奖励」。若对照工作量难度，必须分开均值目标、叔块进不进目标、只看头还是看整块、炸弹、奖励。官网吞吐不得当事实。238 uncle diff vs header bundled unbundling 完成（1295 item 1 / 1296 item 2 / 1297 item 3）；精读 [`worked-example-udiff-notbomb-vs-bundled.md`](worked-example-udiff-notbomb-vs-bundled.md)（不变量 1295 item 1）、[`worked-example-udiff-notcount-vs-bundled.md`](worked-example-udiff-notcount-vs-bundled.md)（不变量 1296 item 2）、[`worked-example-udiff-notden-vs-bundled.md`](worked-example-udiff-notden-vs-bundled.md)（不变量 1297 item 3）。
 
 ## 本页不抄
 
