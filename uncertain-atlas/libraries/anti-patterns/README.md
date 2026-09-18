@@ -1,3 +1,4 @@
+- [`querystate-notsnapshot-sold-as-bundled.md`](querystate-notsnapshot-sold-as-bundled.md) — 对齐 被写成已经装了快照 / 已经从创世重放 / 已经是 Snapshot 连接（不变量 703）
 - [`querystate-notcaughtup-sold-as-bundled.md`](querystate-notcaughtup-sold-as-bundled.md) — 上次 Commit 被写成已经跟上 / 已经是 CheckTxState / 已经同步（不变量 702）
 - [`querystate-notexecute-sold-as-bundled.md`](querystate-notexecute-sold-as-bundled.md) — 能查 被写成已经是 ExecuteTxState / 已经能写 / 已经同一份（不变量 701）
 - [`indexer-notnoidempotent-sold-as-bundled.md`](indexer-notnoidempotent-sold-as-bundled.md) — 通常不受欢迎 被写成已经没有例外 / 已经由内存池保证 / 已经规定怎样写幂等（不变量 700）
