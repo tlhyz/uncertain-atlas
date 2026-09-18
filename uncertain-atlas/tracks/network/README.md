@@ -36,6 +36,9 @@ sendheaders ≠ 已经改用头通告：[`worked-example-hdr130-notswitch-vs-bun
 发了 sendtxrcncl ≠ 已经在对账：[`worked-example-erl330-notsig-vs-bundled.md`](worked-example-erl330-notsig-vs-bundled.md)（信号≠already reconciling/opened/aligned；≠249 bundled；不变量 1251）。
 对账失败退回洪水 ≠ 库存通告已经退役：[`worked-example-erl330-notflood-vs-bundled.md`](worked-example-erl330-notflood-vs-bundled.md)（失败≠already retired/have/wtxid；≠249 bundled；不变量 1252）。
 对账素描 ≠ 已经有交易：[`worked-example-erlay-vs-have.md`](worked-example-erlay-vs-have.md)（看见对账素描不是已经有那些交易；发了 sendtxrcncl 不是已经在对账；对账失败退回洪水不是库存通告已经退役；330 ≠ 339 ≠ 133 ≠ 36）。
+有限服务位 ≠ 已经能服任意旧块：[`worked-example-lim159-notarch-vs-bundled.md`](worked-example-lim159-notarch-vs-bundled.md)（有限位≠already any-old/genesis-body/archive；≠250 bundled；不变量 1253）。
+有限服务位 ≠ 已经剪枝：[`worked-example-lim159-notprune-vs-bundled.md`](worked-example-lim159-notprune-vs-bundled.md)（有限位≠already pruned/same-service/unusable；≠250 bundled；不变量 1254）。
+服了最近一块 ≠ 已经暴露了剪到哪：[`worked-example-lim159-notcut-vs-bundled.md`](worked-example-lim159-notcut-vs-bundled.md)（最近一块≠already leaked/ibd-done/light-checked；≠250 bundled；不变量 1255）。
 有限服务位 ≠ 已经是归档：[`worked-example-limited-service-vs-archive.md`](worked-example-limited-service-vs-archive.md)（看见有限服务位不是已经能服任意旧块；只保证最近窗口不是已经剪枝；服了最近一块不是已经暴露剪点；159 ≠ 207 ≠ 243 ≠ 25）。
 带见证的线上序列化 ≠ 已经有见证：[`worked-example-witness-wire-vs-have.md`](worked-example-witness-wire-vs-have.md)（看见带见证的线上序列化不是已经有见证；能提供见证不是已经在传；库存通告仍用旧类型不是线上已经没有见证；144 ≠ 141 ≠ 339 ≠ 130）。
 拒收消息 ≠ 已经共识非法：[`worked-example-reject-vs-consensus.md`](worked-example-reject-vs-consensus.md)（看见拒收消息不是已经共识非法；调试理由不是已经该给用户看；没拒收不是已经是当前最好链；61 ≠ 144 ≠ 133 ≠ 35）。

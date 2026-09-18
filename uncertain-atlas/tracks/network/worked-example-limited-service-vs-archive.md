@@ -38,7 +38,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见有限服务位就已经是剪枝 / 就已经能服任意旧块 / 就已经拉完初始同步」。若对照有限历史服务，必须分开宣布窗口、完整链位、不泄露剪点。不要把窗口长度抄进产品常量。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见有限服务位就已经是剪枝 / 就已经能服任意旧块 / 就已经拉完初始同步」。若对照有限历史服务，必须分开宣布窗口、完整链位、不泄露剪点。不要把窗口长度抄进产品常量。250 limited vs archive bundled unbundling 完成（1253 item 1 / 1254 item 2 / 1255 item 3）；精读 [`worked-example-lim159-notarch-vs-bundled.md`](worked-example-lim159-notarch-vs-bundled.md)（不变量 1253 item 1）、[`worked-example-lim159-notprune-vs-bundled.md`](worked-example-lim159-notprune-vs-bundled.md)（不变量 1254 item 2）、[`worked-example-lim159-notcut-vs-bundled.md`](worked-example-lim159-notcut-vs-bundled.md)（不变量 1255 item 3）。
 
 ## 本页不抄
 

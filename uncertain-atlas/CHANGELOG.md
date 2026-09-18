@@ -1,3 +1,15 @@
+## 2026-09-18（续 1372）
+
+- 不变量 1255；语料 C1233；模式 name-the-lim159-notcut-bar；反模式 lim159-notcut-sold-as-bundled；L10.3 第 1224 条。填 L3.5 / L9.1 / L9.3 BIP-159 served-recent not already leaked / not already ibd-done / not already light-checked 正式三事（250 余量）。250 limited vs archive bundled unbundling 完成（1255 item 3）。
+
+## 2026-09-18（续 1371）
+
+- 不变量 1254；语料 C1232；模式 name-the-lim159-notprune-bar；反模式 lim159-notprune-sold-as-bundled；L10.3 第 1223 条。填 L3.5 / L9.1 / L9.3 BIP-159 limited-bit not already pruned / not already same-service / not already unusable 正式三事（250 余量）。250 limited vs archive bundled unbundling 续（1254 item 2）。
+
+## 2026-09-18（续 1370）
+
+- 不变量 1253；语料 C1231；模式 name-the-lim159-notarch-bar；反模式 lim159-notarch-sold-as-bundled；L10.3 第 1222 条。填 L3.5 / L9.1 / L9.3 BIP-159 limited-bit not already any-old / not already genesis-body / not already archive 正式三事（250 余量）。250 limited vs archive bundled unbundling 启动（1253 item 1）。
+
 ## 2026-09-18（续 1369）
 
 - 不变量 1252；语料 C1230；模式 name-the-erl330-notflood-bar；反模式 erl330-notflood-sold-as-bundled；L10.3 第 1221 条。填 L3.4 / L9.1 / L9.2 BIP-330 sketch not already have / not already illegal / not already wtxid 正式三事（249 余量）。249 erlay vs have bundled unbundling 完成（1252 item 3）。

@@ -1,3 +1,18 @@
+| A6040 | 记录 | 会与 250 / 243 / 25 / 1253 / 1254 糊成「看见服了最近一块就已经暴露剪点 interchangeable、就已经能从创世拉完 interchangeable、就已经核过服务位 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.1 / L9.3 BIP-159 served-recent not already leaked / not already ibd-done / not already light-checked 正式三事（250 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。250 limited vs archive bundled unbundling 完成（1255 item 3） |
+| A6041 | 高 | 看见服了最近一块 会被写成已经暴露了剪到哪 interchangeable / 243 interchangeable | 官方 BIP-159 limited item 3：not already leaked / not 243 |
+| A6042 | 高 | 看见连上了有限服务位 会被写成初始同步已经能靠它从创世拉完 interchangeable / 25 interchangeable | 官方 BIP-159 limited item 3：not already not already ibd-done / not 25 |
+| A6043 | 高 | 看见地址表里有这一位 会被写成轻客户端已经核过服务位 interchangeable | 官方 BIP-159 limited item 3：not already settled |
+| A6044 | 中 | 怎样按索取旧块摸剪点、怎样把轻客户端骗到有限对等节点上下旧块会被抄进不确定 | 不抄。不写 怎样按索取旧块摸剪点、怎样把轻客户端骗到有限对等节点上下旧块。不另写 19 节 |
+| A6035 | 记录 | 会与 250 / 207 / 25 / 1253 / 1255 糊成「看见有限服务位就已经剪枝 interchangeable、就已经同一种服务 interchangeable、就已经不可用 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.1 / L9.3 BIP-159 limited-bit not already pruned / not already same-service / not already unusable 正式三事（250 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。250 limited vs archive bundled unbundling 续（1254 item 2） |
+| A6036 | 高 | 看见有限服务位 会被写成已经剪枝 interchangeable / 207 interchangeable | 官方 BIP-159 limited item 2：not already pruned / not 207 |
+| A6037 | 高 | 看见两位都开 会被写成已经同一种服务 interchangeable / 25 interchangeable | 官方 BIP-159 limited item 2：not already not already same-service / not 25 |
+| A6038 | 高 | 看见没开完整链位 会被写成已经不可用 interchangeable | 官方 BIP-159 limited item 2：not already settled |
+| A6039 | 中 | 怎样按索取旧块摸剪点、怎样把轻客户端骗到有限对等节点上下旧块会被抄进不确定 | 不抄。不写 怎样按索取旧块摸剪点、怎样把轻客户端骗到有限对等节点上下旧块。不另写 19 节 |
+| A6030 | 记录 | 会与 250 / 207 / 243 / 1254 / 1255 糊成「看见有限服务位就能服任意旧块 interchangeable、就能服创世以来的体 interchangeable、就已经是归档 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.1 / L9.3 BIP-159 limited-bit not already any-old / not already genesis-body / not already archive 正式三事（250 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。250 limited vs archive bundled unbundling 启动（1253 item 1） |
+| A6031 | 高 | 看见有限服务位 会被写成已经能服任意旧块 interchangeable / 207 interchangeable | 官方 BIP-159 limited item 1：not already any-old / not 207 |
+| A6032 | 高 | 看见能转发新块 会被写成已经能服创世以来的体 interchangeable / 243 interchangeable | 官方 BIP-159 limited item 1：not already not already genesis-body / not 243 |
+| A6033 | 高 | 看见有限位 会被写成已经是归档节点 interchangeable | 官方 BIP-159 limited item 1：not already settled |
+| A6034 | 中 | 怎样按索取旧块摸剪点、怎样把轻客户端骗到有限对等节点上下旧块会被抄进不确定 | 不抄。不写 怎样按索取旧块摸剪点、怎样把轻客户端骗到有限对等节点上下旧块。不另写 19 节 |
 | A6025 | 记录 | 会与 249 / 152 / 36 / 1250 / 1251 糊成「看见对账失败退回洪水就已经退役库存通告 interchangeable、就已经有那些交易 interchangeable、就已经有带见证的哈希 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 / L9.2 BIP-330 sketch not already have / not already illegal / not already wtxid 正式三事（249 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。249 erlay vs have bundled unbundling 完成（1252 item 3） |
 | A6026 | 高 | 看见对账失败退回洪水 会被写成库存通告已经退役 interchangeable / 152 interchangeable | 官方 BIP-330 erlay item 3：not already have / not 152 |
 | A6027 | 高 | 看见一份素描 会被写成已经有那些交易 interchangeable / 36 interchangeable | 官方 BIP-330 erlay item 3：not already not already illegal / not 36 |

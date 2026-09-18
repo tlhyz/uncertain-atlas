@@ -1,3 +1,6 @@
+- [`name-the-lim159-notcut-bar.md`](name-the-lim159-notcut-bar.md) — BIP-159 served-recent not already leaked / not already ibd-done / not already light-checked 正式三事（250 余量）（不变量 1255）
+- [`name-the-lim159-notprune-bar.md`](name-the-lim159-notprune-bar.md) — BIP-159 limited-bit not already pruned / not already same-service / not already unusable 正式三事（250 余量）（不变量 1254）
+- [`name-the-lim159-notarch-bar.md`](name-the-lim159-notarch-bar.md) — BIP-159 limited-bit not already any-old / not already genesis-body / not already archive 正式三事（250 余量）（不变量 1253）
 - [`name-the-erl330-notflood-bar.md`](name-the-erl330-notflood-bar.md) — BIP-330 sketch not already have / not already illegal / not already wtxid 正式三事（249 余量）（不变量 1252）
 - [`name-the-erl330-notsig-bar.md`](name-the-erl330-notsig-bar.md) — BIP-330 sendtxrcncl not already reconciling / not already opened / not already aligned 正式三事（249 余量）（不变量 1251）
 - [`name-the-erl330-nothave-bar.md`](name-the-erl330-nothave-bar.md) — BIP-330 recon not already have / not already flood-retired / not already net-wide 正式三事（249 余量）（不变量 1250）

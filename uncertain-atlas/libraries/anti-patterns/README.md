@@ -1,3 +1,6 @@
+- [`lim159-notcut-sold-as-bundled.md`](lim159-notcut-sold-as-bundled.md) — 服了最近一块 被写成已经暴露剪点 / 连上有限位就已经能从创世拉完 / 地址表有这一位就已经核过（不变量 1255）
+- [`lim159-notprune-sold-as-bundled.md`](lim159-notprune-sold-as-bundled.md) — 有限服务位 被写成已经剪枝 / 两位都开就已经同一种服务 / 没开完整链位就已经不可用（不变量 1254）
+- [`lim159-notarch-sold-as-bundled.md`](lim159-notarch-sold-as-bundled.md) — 有限服务位 被写成已经能服任意旧块 / 能转发新块就已经能服创世 / 有限位就已经是归档（不变量 1253）
 - [`erl330-notflood-sold-as-bundled.md`](erl330-notflood-sold-as-bundled.md) — 对账失败退回洪水 被写成库存通告已经退役 / 一份素描就已经有交易 / 短标识就已经有带见证的哈希（不变量 1252）
 - [`erl330-notsig-sold-as-bundled.md`](erl330-notsig-sold-as-bundled.md) — 发了 sendtxrcncl 被写成已经在对账 / 发了 wtxidrelay 就已经打开对账 / 两边都写了支持就已经对齐（不变量 1251）
 - [`erl330-nothave-sold-as-bundled.md`](erl330-nothave-sold-as-bundled.md) — 一次对账 被写成已经有那些交易 / 库存通告已经退役 / 只向一小撮邻居发洪水就已经全网齐（不变量 1250）
