@@ -1,0 +1,16 @@
+# 反模式：把 LateUnverified suggested not already engine-re-Verify / not already step-2-call / not already Req-6 正式三事（519 余量） 写成已经 已经是引擎会再 Verify / 已经 Verify When step 2 call bundled / 已经正确进程必须 Verify Accept
+
+**层次**：实现 / LateUnverified suggested not already engine-re-Verify / not already step-2-call / not already Req-6 正式三事（519 余量）。  
+**分类**：建议（产品）。  
+**来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) PrepareProposal When step 3 迟到扩展脚注。  
+**对应**：[`../tracks/implementation/worked-example-whenlate-notsug-vs-bundled.md`](../tracks/implementation/worked-example-whenlate-notsug-vs-bundled.md)。
+
+把 LateUnverified suggested not already engine-re-Verify / not already step-2-call / not already Req-6 正式三事（519 余量） 写成已经 已经是引擎会再 Verify / 已经 Verify When step 2 call bundled / 已经正确进程必须 Verify Accept，就是本页。
+
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When +2/3 late extensions not verified 正式三事（519 余量），必须分开 not already 352-bundled、not already verified、not already engine-re-Verify 三件事，不要和 519 / 515 / 348 / 1319 / 1320 糊成一句。
+
+也不是：
+
+- [whenlate-notver-sold-as-bundled](whenlate-notver-sold-as-bundled.md) 是 notver 单句边界（1319），不是本页边界。
+- [whenlate-notuse-sold-as-bundled](whenlate-notuse-sold-as-bundled.md) 是 notuse 单句边界（1320），不是本页边界。
+- [sugval-notreverify-sold-as-bundled](sugval-notreverify-sold-as-bundled.md) 是 SuggestValidate 不是引擎再 Verify 仍未是已经 Verify 过边界（520/1318），不是本页 +2/3 未 Verify 边界。

@@ -1,3 +1,15 @@
+## 2026-09-18（续 1438）
+
+- 不变量 1321；语料 C1299；模式 name-the-whenlate-notsug-bar；反模式 whenlate-notsug-sold-as-bundled；L10.3 第 1290 条。填 L4.4 LateUnverified suggested not already engine-re-Verify / not already step-2-call / not already Req-6 正式三事（519 余量）。519 PrepareProposal When lateext-unverified bundled unbundling 完成（1321 item 3）。
+
+## 2026-09-18（续 1437）
+
+- 不变量 1320；语料 C1298；模式 name-the-whenlate-notuse-bar；反模式 whenlate-notuse-sold-as-bundled；L10.3 第 1289 条。填 L4.4 LateUnverified MAY-use not already verified / not already in-block / not already Prepare-list 正式三事（519 余量）。519 PrepareProposal When lateext-unverified bundled unbundling 续（1320 item 2）。
+
+## 2026-09-18（续 1436）
+
+- 不变量 1319；语料 C1297；模式 name-the-whenlate-notver-bar；反模式 whenlate-notver-sold-as-bundled；L10.3 第 1288 条。填 L4.4 LateUnverified not-verified not already 352-bundled / not already verified / not already Verify-When 正式三事（519 余量）。519 PrepareProposal When lateext-unverified bundled unbundling 启动（1319 item 1）。
+
 ## 2026-09-18（续 1435）
 
 - 不变量 1318；语料 C1296；模式 name-the-sugval-notreverify-bar；反模式 sugval-notreverify-sold-as-bundled；L10.3 第 1287 条。填 L4.4 SuggestValidate not-reverify not already verified / not already called-again / not already MAY-add-without-Verify 正式三事（520 余量）。520 PrepareProposal When suggestvalidate bundled unbundling 完成（1318 item 3）。

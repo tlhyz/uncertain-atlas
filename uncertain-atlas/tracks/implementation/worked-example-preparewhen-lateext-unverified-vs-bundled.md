@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When +2/3 late extensions not verified 正式三事，必须分开 +2/3 commit info extensions not verified 是不是迟到扩展 bundled interchangeable / 已经 Verify 过 interchangeable、MAY use commit info extensions 是不是已经 Verify 过 interchangeable / 已经进了块 interchangeable、suggested validate like Verify 是不是已经是引擎会再 Verify interchangeable / 已经 Accept interchangeable。可以跳过「看见 last_commit 里有扩展就已经 Verify 过 interchangeable」。不要另写怎样再验迟到扩展。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal When +2/3 late extensions not verified 正式三事，必须分开 +2/3 commit info extensions not verified 是不是迟到扩展 bundled interchangeable / 已经 Verify 过 interchangeable、MAY use commit info extensions 是不是已经 Verify 过 interchangeable / 已经进了块 interchangeable、suggested validate like Verify 是不是已经是引擎会再 Verify interchangeable / 已经 Accept interchangeable。可以跳过「看见 last_commit 里有扩展就已经 Verify 过 interchangeable」。519 PrepareProposal When lateext-unverified bundled unbundling 完成（1319 item 1 / 1320 item 2 / 1321 item 3）；精读 [`worked-example-whenlate-notver-vs-bundled.md`](worked-example-whenlate-notver-vs-bundled.md)（不变量 1319 item 1）、[`worked-example-whenlate-notuse-vs-bundled.md`](worked-example-whenlate-notuse-vs-bundled.md)（不变量 1320 item 2）、[`worked-example-whenlate-notsug-vs-bundled.md`](worked-example-whenlate-notsug-vs-bundled.md)（不变量 1321 item 3）。不要另写怎样再验迟到扩展。
 
 ## 本页不抄
 

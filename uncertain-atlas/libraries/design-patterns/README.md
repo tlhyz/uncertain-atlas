@@ -1,3 +1,6 @@
+- [`name-the-whenlate-notsug-bar.md`](name-the-whenlate-notsug-bar.md) — LateUnverified suggested not already engine-re-Verify / not already step-2-call / not already Req-6 正式三事（519 余量）（不变量 1321）
+- [`name-the-whenlate-notuse-bar.md`](name-the-whenlate-notuse-bar.md) — LateUnverified MAY-use not already verified / not already in-block / not already Prepare-list 正式三事（519 余量）（不变量 1320）
+- [`name-the-whenlate-notver-bar.md`](name-the-whenlate-notver-bar.md) — LateUnverified not-verified not already 352-bundled / not already verified / not already Verify-When 正式三事（519 余量）（不变量 1319）
 - [`name-the-sugval-notreverify-bar.md`](name-the-sugval-notreverify-bar.md) — SuggestValidate not-reverify not already verified / not already called-again / not already MAY-add-without-Verify 正式三事（520 余量）（不变量 1318）
 - [`name-the-sugval-notcall-bar.md`](name-the-sugval-notcall-bar.md) — SuggestValidate same-manner not already step-2-call / not already Verify-When / not already MUST-det 正式三事（520 余量）（不变量 1317）
 - [`name-the-sugval-notmust-bar.md`](name-the-sugval-notmust-bar.md) — SuggestValidate suggested not already late-ext / not already engine-re-Verify / not already Accept 正式三事（520 余量）（不变量 1316）

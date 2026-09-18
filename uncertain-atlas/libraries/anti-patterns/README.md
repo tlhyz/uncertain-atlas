@@ -1,3 +1,6 @@
+- [`whenlate-notsug-sold-as-bundled.md`](whenlate-notsug-sold-as-bundled.md) — 建议按 Verify 同款再看 被写成已经是引擎会再 Verify / 就已经 step 2 call / 就已经 Req 6（不变量 1321）
+- [`whenlate-notuse-sold-as-bundled.md`](whenlate-notuse-sold-as-bundled.md) — MAY 用 commit info 扩展 被写成已经 Verify 过 / 就已经进了块 / 就已经 Prepare 改列表（不变量 1320）
+- [`whenlate-notver-sold-as-bundled.md`](whenlate-notver-sold-as-bundled.md) — +2/3 未 Verify 被写成已经迟到扩展 bundled / 就已经 Verify 过 / 就已经是 Verify When（不变量 1319）
 - [`sugval-notreverify-sold-as-bundled.md`](sugval-notreverify-sold-as-bundled.md) — 不是引擎再 Verify 被写成已经 Verify 过 / 就已经又叫了 Verify / 就已经 MAY add without Verify（不变量 1318）
 - [`sugval-notcall-sold-as-bundled.md`](sugval-notcall-sold-as-bundled.md) — 按 Verify 同款逻辑 被写成已经 step 2 call / 引擎就会叫 / 就已经 MUST deterministic（不变量 1317）
 - [`sugval-notmust-sold-as-bundled.md`](sugval-notmust-sold-as-bundled.md) — 建议自验 被写成已经迟到扩展 / 就已经是引擎会再 Verify / 就已经 Accept（不变量 1316）
