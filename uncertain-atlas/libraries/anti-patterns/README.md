@@ -1,3 +1,6 @@
+- [`cinotes-notstore-sold-as-bundled.md`](cinotes-notstore-sold-as-bundled.md) — 从 store 再装 被写成已经从块抽出 / 就已经是 365 路径 / 就已经是 ExtendedCommitInfo Notes（不变量 1355）
+- [`cinotes-notapp-sold-as-bundled.md`](cinotes-notapp-sold-as-bundled.md) — 引擎保证并落盘 被写成已经由应用排过 / 就已经是收票顺序 / 就已经由 Process 决定（不变量 1354）
+- [`cinotes-notblk-sold-as-bundled.md`](cinotes-notblk-sold-as-bundled.md) — 按投票权降序 被写成已经进了块 / 就已经交差 / 就已经写进 last_commit（不变量 1353）
 - [`eappgen-notbcast-sold-as-bundled.md`](eappgen-notbcast-sold-as-bundled.md) — 将签名并挂到 Precommit 被写成已经广播 / 就已经写进 last_commit / 就已经是 438 bundled（不变量 1352）
 - [`eappgen-notnrp-sold-as-bundled.md`](eappgen-notnrp-sold-as-bundled.md) — non_rp 将签名挂上且无重放保护 被写成已经同一签法 / 就已经 358 按原样签 / 就已经有重放保护（不变量 1351）
 - [`eappgen-notsig-sold-as-bundled.md`](eappgen-notsig-sold-as-bundled.md) — 应用生成 vote_extension 将签名 被写成已经签过 / 就已经包进包装 / 就已经挂上（不变量 1350）

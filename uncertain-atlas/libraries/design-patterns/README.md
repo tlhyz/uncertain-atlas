@@ -1,3 +1,6 @@
+- [`name-the-cinotes-notstore-bar.md`](name-the-cinotes-notstore-bar.md) — CiNotes rebuild CommitInfo from store not already extracted-from-block / not already 365-path / not already extcinotes 正式三事（444 余量）（不变量 1355）
+- [`name-the-cinotes-notapp-bar.md`](name-the-cinotes-notapp-bar.md) — CiNotes engine guarantees and persists order not already app-sorted / not already recv-order / not already Process-decided 正式三事（444 余量）（不变量 1354）
+- [`name-the-cinotes-notblk-bar.md`](name-the-cinotes-notblk-bar.md) — CiNotes votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（444 余量）（不变量 1353）
 - [`name-the-eappgen-notbcast-bar.md`](name-the-eappgen-notbcast-bar.md) — ExtAppGen will-be-signed attached-to-Precommit not already broadcast / not already last_commit / not already 438-bundled 正式三事（439 余量）（不变量 1352）
 - [`name-the-eappgen-notnrp-bar.md`](name-the-eappgen-notnrp-bar.md) — ExtAppGen appgen non_rp will-be-signed-attached no-replay-prot not already same-sign / not already 358-raw / not already replay-prot 正式三事（439 余量）（不变量 1351）
 - [`name-the-eappgen-notsig-bar.md`](name-the-eappgen-notsig-bar.md) — ExtAppGen appgen vote_extension will-be-signed not already signed / not already 418-wrap / not already attached 正式三事（439 余量）（不变量 1350）

@@ -1007,6 +1007,9 @@
 - [`worked-example-eappgen-notbcast-vs-bundled.md`](worked-example-eappgen-notbcast-vs-bundled.md) — 将签名并挂到Precommit≠already广播/last_commit/438 bundled；≠439 bundled（不变量 1352）
 - [`worked-example-extappgen-vs-signed.md`](worked-example-extappgen-vs-signed.md) — ExtendVoteResponse 应用生成将签名≠already 签过/包进包装/广播（快照 439）
 - [`worked-example-extcinotes-vs-order.md`](worked-example-extcinotes-vs-order.md) — ExtendedCommitInfo Notes 票序≠already 进块/应用排过/从块抽出
+- [`worked-example-cinotes-notblk-vs-bundled.md`](worked-example-cinotes-notblk-vs-bundled.md) — votes按投票权降序≠already进块/交差/last_commit；≠444 bundled（不变量 1353）
+- [`worked-example-cinotes-notapp-vs-bundled.md`](worked-example-cinotes-notapp-vs-bundled.md) — 引擎保证并落盘≠already应用排过/收票顺序/Process决定；≠444 bundled（不变量 1354）
+- [`worked-example-cinotes-notstore-vs-bundled.md`](worked-example-cinotes-notstore-vs-bundled.md) — 从store再装≠already从块抽出/365路径/ExtendedCommitInfo Notes；≠444 bundled（不变量 1355）
 - [`worked-example-cinotes-vs-order.md`](worked-example-cinotes-vs-order.md) — CommitInfo Notes 票序≠already 进块/应用排过/从块抽出（快照 444）
 - [`worked-example-cifields-vs-notes.md`](worked-example-cifields-vs-notes.md) — CommitInfo Fields 栏≠already Notes 票序/已经进块（快照 445）
 - [`worked-example-exectxevents-vs-header.md`](worked-example-exectxevents-vs-header.md) — ExecTxResult.events≠already 印进本头/块级events（快照 446）

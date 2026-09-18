@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Process / Finalize 里有 CommitInfo 就已经按投票权排好、已经进了块、已经从块里抽出」，必须分开 CommitInfo.votes 里的 VoteInfo 按投票权降序排是不是已经进了块 / 已经交差、CometBFT 通过更新验证者集合的逻辑保证这个顺序、集合写入 store 时顺序也落盘是不是已经由应用排过 / 已经是收到票时的顺序、造 CommitInfo 时从 store 再装集合是不是已经从拟议块或已决块抽出 / 已经是 ExtendedCommitInfo Notes 那套话就已经是同一句。可以跳过「看见 Process / Finalize 里有 CommitInfo 就已经按投票权排好」。不要另写怎样写 CommitInfo Notes 票序正式三事。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Process / Finalize 里有 CommitInfo 就已经按投票权排好、已经进了块、已经从块里抽出」，必须分开 CommitInfo.votes 里的 VoteInfo 按投票权降序排是不是已经进了块 / 已经交差、CometBFT 通过更新验证者集合的逻辑保证这个顺序、集合写入 store 时顺序也落盘是不是已经由应用排过 / 已经是收到票时的顺序、造 CommitInfo 时从 store 再装集合是不是已经从拟议块或已决块抽出 / 已经是 ExtendedCommitInfo Notes 那套话就已经是同一句。可以跳过「看见 Process / Finalize 里有 CommitInfo 就已经按投票权排好」。444 CommitInfo Notes vote-power order bundled unbundling 完成（1353 item 1 / 1354 item 2 / 1355 item 3）；精读 [`worked-example-cinotes-notblk-vs-bundled.md`](worked-example-cinotes-notblk-vs-bundled.md)（不变量 1353 item 1）、[`worked-example-cinotes-notapp-vs-bundled.md`](worked-example-cinotes-notapp-vs-bundled.md)（不变量 1354 item 2）、[`worked-example-cinotes-notstore-vs-bundled.md`](worked-example-cinotes-notstore-vs-bundled.md)（不变量 1355 item 3）。不要另写怎样写 CommitInfo Notes 票序正式三事。
 
 ## 本页不抄
 

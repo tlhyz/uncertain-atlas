@@ -1,3 +1,15 @@
+## 2026-09-18（续 1472）
+
+- 不变量 1355；语料 C1333；模式 name-the-cinotes-notstore-bar；反模式 cinotes-notstore-sold-as-bundled；L10.3 第 1324 条。填 L4.4 CiNotes rebuild CommitInfo from store not already extracted-from-block / not already 365-path / not already extcinotes 正式三事（444 余量）。444 CommitInfo Notes vote-power order bundled unbundling 完成（1355 item 3）。
+
+## 2026-09-18（续 1471）
+
+- 不变量 1354；语料 C1332；模式 name-the-cinotes-notapp-bar；反模式 cinotes-notapp-sold-as-bundled；L10.3 第 1323 条。填 L4.4 CiNotes engine guarantees and persists order not already app-sorted / not already recv-order / not already Process-decided 正式三事（444 余量）。444 CommitInfo Notes vote-power order bundled unbundling 续（1354 item 2）。
+
+## 2026-09-18（续 1470）
+
+- 不变量 1353；语料 C1331；模式 name-the-cinotes-notblk-bar；反模式 cinotes-notblk-sold-as-bundled；L10.3 第 1322 条。填 L4.4 CiNotes votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（444 余量）。444 CommitInfo Notes vote-power order bundled unbundling 启动（1353 item 1）。
+
 ## 2026-09-18（续 1469）
 
 - 不变量 1352；语料 C1330；模式 name-the-eappgen-notbcast-bar；反模式 eappgen-notbcast-sold-as-bundled；L10.3 第 1321 条。填 L4.4 ExtAppGen will-be-signed attached-to-Precommit not already broadcast / not already last_commit / not already 438-bundled 正式三事（439 余量）。439 ExtendVote Response application-generated will-be-signed bundled unbundling 完成（1352 item 3）。
