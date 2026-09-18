@@ -1,3 +1,6 @@
+- [`desc383-notidx-sold-as-bundled.md`](desc383-notidx-sold-as-bundled.md) — 多把扩展钥 被写成已经各自编号 / 已经能错开子号 / 已经交差（不变量 1144）
+- [`desc383-notcap-sold-as-bundled.md`](desc383-notcap-sold-as-bundled.md) — 门限钥数 被写成已经同一套上限 / 已经是顶层三把 / 已经交差（不变量 1143）
+- [`desc383-notsort-sold-as-bundled.md`](desc383-notsort-sold-as-bundled.md) — multi 被写成已经是 sortedmulti / 已经按字典序排 / 已经交差（不变量 1142）
 - [`del89-notblind-sold-as-bundled.md`](del89-notblind-sold-as-bundled.md) — 这一输入微调 被写成已经能扫整棵钱包 / 已经是盲签 / 已经交差（不变量 1141）
 - [`del89-nottree-sold-as-bundled.md`](del89-nottree-sold-as-bundled.md) — 委托方非扩展钥 被写成已经是扩展公钥 / 已经能推出整棵钱包 / 已经交差（不变量 1140）
 - [`del89-notshare-sold-as-bundled.md`](del89-notshare-sold-as-bundled.md) — 共享扩展公钥 被写成已经是本页 / 已经藏住余额 / 已经交差（不变量 1139）

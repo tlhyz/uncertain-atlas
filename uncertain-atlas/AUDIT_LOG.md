@@ -1,3 +1,18 @@
+| A5485 | 记录 | 会与 274 / 184 / 191 / 1142 / 1143 糊成「看见多把扩展钥就已经可以各走各的下标 interchangeable、就已经能错开子号 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-383 many-xpubs not already own-index / not already offset-child / not already settled 正式三事（274 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。274 multi vs sortedmulti bundled unbundling 完成（1144 item 3） |
+| A5486 | 高 | 看见多把扩展钥 会被写成已经可以各走各的下标 interchangeable / 184 interchangeable | 官方 BIP-383 多签描述符 item 3：not already own-index / not 184 |
+| A5487 | 高 | 看见路径写法不同 会被写成已经能错开子号 interchangeable / 191 interchangeable | 官方 BIP-383 多签描述符 item 3：not already offset-child / not 191 |
+| A5488 | 高 | 看见钥会齐步变 会被写成已经交差 interchangeable | 官方 BIP-383 多签描述符 item 3：not already settled |
+| A5489 | 中 | 怎样按字节排公钥会被抄进不确定 | 不抄。不写怎样按字节排公钥。不另写 19 节 |
+| A5480 | 记录 | 会与 274 / 170 / 1141 / 1142 / 1144 糊成「看见门限就已经同一套上限 interchangeable、就已经是顶层那三把 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-383 threshold-keycount not already same-cap / not already any-number / not already settled 正式三事（274 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。274 multi vs sortedmulti bundled unbundling 续（1143 item 2） |
+| A5481 | 高 | 看见门限 会被写成已经同一套上限 interchangeable / 170 interchangeable | 官方 BIP-383 多签描述符 item 2：not already same-cap / not 170 |
+| A5482 | 高 | 看见套进了脚本哈希 会被写成已经是顶层那三把 interchangeable / 1141 interchangeable | 官方 BIP-383 多签描述符 item 2：not already any-number / not 1141 |
+| A5483 | 高 | 看见否则另有一把更大的上限 会被写成已经交差 interchangeable | 官方 BIP-383 多签描述符 item 2：not already settled |
+| A5484 | 中 | 怎样按字节排公钥会被抄进不确定 | 不抄。不写怎样按字节排公钥。不另写 19 节 |
+| A5475 | 记录 | 会与 274 / 1133 / 1129 / 1143 / 1144 糊成「看见 multi 就已经是 sortedmulti interchangeable、就已经按字典序排 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-383 multi not already sortedmulti / not already lex-sorted / not already settled 正式三事（274 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。274 multi vs sortedmulti bundled unbundling 启动（1142 item 1） |
+| A5476 | 高 | 看见 multi 会被写成已经是 sortedmulti interchangeable / 1133 interchangeable | 官方 BIP-383 多签描述符 item 1：not already sortedmulti / not 1133 |
+| A5477 | 高 | 看见门限一样 会被写成已经按字典序排 interchangeable / 1129 interchangeable | 官方 BIP-383 多签描述符 item 1：not already lex-sorted / not 1129 |
+| A5478 | 高 | 看见这种排序排的是即将写进输出脚本的那些钥 会被写成已经交差 interchangeable | 官方 BIP-383 多签描述符 item 1：not already settled |
+| A5479 | 中 | 怎样按字节排公钥会被抄进不确定 | 不抄。不写怎样按字节排公钥。不另写 19 节 |
 | A5470 | 记录 | 会与 289 / 280 / 287 / 1139 / 1140 糊成「看见这一输入的微调就已经能扫整棵钱包 interchangeable、就已经是盲签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-89 this-input-tweak not already whole-tree / not already blind-sign / not already settled 正式三事（289 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。289 delegation vs xpub bundled unbundling 完成（1141 item 3） |
 | A5471 | 高 | 看见这一输入的微调 会被写成已经能扫整棵钱包 interchangeable / 280 interchangeable | 官方 BIP-89 链码委托 item 3：not already whole-tree / not 280 |
 | A5472 | 高 | 看见能签 会被写成已经是盲签 interchangeable / 287 interchangeable | 官方 BIP-89 链码委托 item 3：not already blind-sign / not 287 |

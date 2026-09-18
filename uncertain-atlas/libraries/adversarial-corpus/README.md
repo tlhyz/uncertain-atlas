@@ -1,3 +1,9 @@
+| C1122 | 1144 | desc383 notidx≠184/274 | 文案把多把扩展钥 / 各钥自己的派生路径 写成已经可以各走各的下标 interchangeable 或已经和 184 interchangeable / 1144 desc383-notidx interchangeable；或把看见路径写法不同 写成已经能错开子号 interchangeable；或把看见钥会齐步变 写成已经交差 interchangeable，或已经和 274 multi-vs-sortedmulti bundled / desc383-notidx-sold-as-bundled interchangeable / 1142 desc383-notsort interchangeable / 1143 desc383-notcap interchangeable |
+
+| C1121 | 1143 | desc383 notcap≠170/274 | 文案把门限 / 钥数 写成已经同一套上限 interchangeable 或已经和 170 interchangeable / 1143 desc383-notcap interchangeable；或把看见套进了脚本哈希 写成已经是顶层那三把 interchangeable；或把看见否则另有一把更大的上限 写成已经交差 interchangeable，或已经和 274 multi-vs-sortedmulti bundled / desc383-notcap-sold-as-bundled interchangeable / 1142 desc383-notsort interchangeable / 1144 desc383-notidx interchangeable |
+
+| C1120 | 1142 | desc383 notsort≠1133/274 | 文案把 multi / 按书写顺序放钥 写成已经是 sortedmulti interchangeable 或已经和 1133 interchangeable / 1142 desc383-notsort interchangeable；或把看见门限一样 写成已经按字典序排 interchangeable；或把看见这种排序排的是即将写进输出脚本的那些钥 写成已经交差 interchangeable，或已经和 274 multi-vs-sortedmulti bundled / desc383-notsort-sold-as-bundled interchangeable / 1143 desc383-notcap interchangeable / 1144 desc383-notidx interchangeable |
+
 | C1119 | 1141 | del89 notblind≠280/289 | 文案把这一输入的微调 / 一次签名会话 写成已经能扫整棵钱包 interchangeable 或已经和 280 interchangeable / 1141 del89-notblind interchangeable；或把看见能签 写成已经是盲签 interchangeable；或把看见签过了 写成已经交差 interchangeable，或已经和 289 delegation-vs-xpub bundled / del89-notblind-sold-as-bundled interchangeable / 1139 del89-notshare interchangeable / 1140 del89-nottree interchangeable |
 
 | C1118 | 1140 | del89 nottree≠283/289 | 文案把委托方那把非扩展钥对 写成已经是扩展公钥 interchangeable 或已经和 283 interchangeable / 1140 del89-nottree interchangeable；或把看见受托方有扩展公钥 写成已经能推出整棵钱包 interchangeable；或把看见从这份扩展钥往下长只能走未硬化派生 写成已经交差 interchangeable，或已经和 289 delegation-vs-xpub bundled / del89-nottree-sold-as-bundled interchangeable / 1139 del89-notshare interchangeable / 1141 del89-notblind interchangeable |

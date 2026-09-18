@@ -809,6 +809,9 @@
 - [`worked-example-tap86-notcommit-vs-bundled.md`](worked-example-tap86-notcommit-vs-bundled.md) — 不需要脚本路径≠already uncommitted/no-script-path/settled；≠272 bundled（不变量 1137）
 - [`worked-example-tap86-notout-vs-bundled.md`](worked-example-tap86-notout-vs-bundled.md) — 派生钥≠already output-key/witness-32/settled；≠272 bundled（不变量 1136）
 - [`worked-example-derived-vs-output-key.md`](worked-example-derived-vs-output-key.md) — 派生钥 ≠ 已经是输出钥；不需要脚本路径 ≠ 已经不承诺；种子备份 ≠ 已经能找回单钥 P2TR（不变量 272）
+- [`worked-example-desc383-notidx-vs-bundled.md`](worked-example-desc383-notidx-vs-bundled.md) — 多把扩展钥≠already own-index/offset-child/settled；≠274 bundled（不变量 1144）
+- [`worked-example-desc383-notcap-vs-bundled.md`](worked-example-desc383-notcap-vs-bundled.md) — 门限钥数≠already same-cap/any-number/settled；≠274 bundled（不变量 1143）
+- [`worked-example-desc383-notsort-vs-bundled.md`](worked-example-desc383-notsort-vs-bundled.md) — multi≠already sortedmulti/lex-sorted/settled；≠274 bundled（不变量 1142）
 - [`worked-example-multi-vs-sortedmulti.md`](worked-example-multi-vs-sortedmulti.md) — multi ≠ 已经按字典序排；门限和钥数 ≠ 已经同一套上限；多把扩展钥 ≠ 已经各自编号（不变量 274）
 - [`worked-example-tr-vs-tree.md`](worked-example-tr-vs-tree.md) — tr 没有树 ≠ 已经有脚本路径；树表达式 ≠ 已经是旧脚本套法；压缩钥 ≠ 已经是 x-only（不变量 275）
 - [`worked-example-pk-vs-toplevel.md`](worked-example-pk-vs-toplevel.md) — pk ≠ 已经和 pkh / sh 同一套放置；sh 产出 ≠ 已经有赎回脚本；熟悉的标准脚本 ≠ 已经能互操作（不变量 276）

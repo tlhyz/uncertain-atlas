@@ -1,3 +1,15 @@
+## 2026-09-18（续 1261）
+
+- 不变量 1144；语料 C1122；模式 name-the-desc383-notidx-bar；反模式 desc383-notidx-sold-as-bundled；L10.3 第 1113 条。填 L1.4 / L3.6 BIP-383 many-xpubs not already own-index / not already offset-child / not already settled 正式三事（274 余量）。274 multi vs sortedmulti bundled unbundling 完成（1144 item 3）。
+
+## 2026-09-18（续 1260）
+
+- 不变量 1143；语料 C1121；模式 name-the-desc383-notcap-bar；反模式 desc383-notcap-sold-as-bundled；L10.3 第 1112 条。填 L1.4 / L3.6 BIP-383 threshold-keycount not already same-cap / not already any-number / not already settled 正式三事（274 余量）。274 multi vs sortedmulti bundled unbundling 续（1143 item 2）。
+
+## 2026-09-18（续 1259）
+
+- 不变量 1142；语料 C1120；模式 name-the-desc383-notsort-bar；反模式 desc383-notsort-sold-as-bundled；L10.3 第 1111 条。填 L1.4 / L3.6 BIP-383 multi not already sortedmulti / not already lex-sorted / not already settled 正式三事（274 余量）。274 multi vs sortedmulti bundled unbundling 启动（1142 item 1）。
+
 ## 2026-09-18（续 1258）
 
 - 不变量 1141；语料 C1119；模式 name-the-del89-notblind-bar；反模式 del89-notblind-sold-as-bundled；L10.3 第 1110 条。填 L1.4 / L3.6 BIP-89 this-input-tweak not already whole-tree / not already blind-sign / not already settled 正式三事（289 余量）。289 delegation vs xpub bundled unbundling 完成（1141 item 3）。

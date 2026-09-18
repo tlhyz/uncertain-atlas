@@ -1,3 +1,6 @@
+- [`name-the-desc383-notidx-bar.md`](name-the-desc383-notidx-bar.md) — BIP-383 many-xpubs not already own-index / not already offset-child / not already settled 正式三事（274 余量）（不变量 1144）
+- [`name-the-desc383-notcap-bar.md`](name-the-desc383-notcap-bar.md) — BIP-383 threshold-keycount not already same-cap / not already any-number / not already settled 正式三事（274 余量）（不变量 1143）
+- [`name-the-desc383-notsort-bar.md`](name-the-desc383-notsort-bar.md) — BIP-383 multi not already sortedmulti / not already lex-sorted / not already settled 正式三事（274 余量）（不变量 1142）
 - [`name-the-del89-notblind-bar.md`](name-the-del89-notblind-bar.md) — BIP-89 this-input-tweak not already whole-tree / not already blind-sign / not already settled 正式三事（289 余量）（不变量 1141）
 - [`name-the-del89-nottree-bar.md`](name-the-del89-nottree-bar.md) — BIP-89 delegator-plain-key not already xpub / not already whole-wallet / not already settled 正式三事（289 余量）（不变量 1140）
 - [`name-the-del89-notshare-bar.md`](name-the-del89-notshare-bar.md) — BIP-89 shared-xpub not already chaincode-delegation / not already hide-balance / not already settled 正式三事（289 余量）（不变量 1139）
