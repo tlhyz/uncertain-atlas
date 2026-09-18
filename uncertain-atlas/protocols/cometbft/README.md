@@ -37,7 +37,7 @@ HasChannel 为真不是已经入队：[`../../tracks/network/worked-example-send
 
 CheckTx 过了不是已经按 ExecuteTxState 验过：[`../../tracks/implementation/worked-example-checktxstate-vs-execute.md`](../../tracks/implementation/worked-example-checktxstate-vs-execute.md)（不变量 312）。看见两份状态同时在改不是已经同一份。看见 Type 是 RECHECK 不是已经是一笔新交易。
 
-内存池会挡重复不是已经保证不重放：[`../../tracks/implementation/worked-example-mempool-indexer-vs-replay.md`](../../tracks/implementation/worked-example-mempool-indexer-vs-replay.md)（不变量 313）。看见过了 CheckTx 不是已经有应用级保护。看见通常不受欢迎不是已经没有幂等例外。
+内存池会挡重复不是已经保证不重放：[`../../tracks/implementation/worked-example-mempool-indexer-vs-replay.md`](../../tracks/implementation/worked-example-mempool-indexer-vs-replay.md)（不变量 313） 索引器去重不是已经保证不重复 not already no-duplicate guarantee / not already strong guarantee / not already never again 正式三事（313 余量）：[`../../tracks/implementation/worked-example-indexer-notguarantee-vs-bundled.md`](../../tracks/implementation/worked-example-indexer-notguarantee-vs-bundled.md)（不变量 698）。看见过了 CheckTx 不是已经有应用级保护。看见通常不受欢迎不是已经没有幂等例外。
 
 QueryState 不是已经是 ExecuteTxState：[`../../tracks/implementation/worked-example-querystate-vs-execute.md`](../../tracks/implementation/worked-example-querystate-vs-execute.md)（不变量 314）。看见上次 Commit 不是已经跟上正在跑的块。看见启动对齐不是已经是快照重放。
 

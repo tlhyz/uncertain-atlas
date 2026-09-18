@@ -1,3 +1,4 @@
+- [`indexer-notguarantee-sold-as-bundled.md`](indexer-notguarantee-sold-as-bundled.md) — 池子挡过一次 被写成已经保证不重复 / 已经有强保证 / 已经不会再来（不变量 698）
 - [`checktxstate-notrecheck-sold-as-bundled.md`](checktxstate-notrecheck-sold-as-bundled.md) — RECHECK 被写成已经是新交易 / 已经当 NEW 处理 / 已经解锁（不变量 697）
 - [`checktxstate-notsame-sold-as-bundled.md`](checktxstate-notsame-sold-as-bundled.md) — 同时在改 被写成已经同一份 / 已经合并 / 已经共用一份工作状态（不变量 696）
 - [`checktxstate-notexecute-sold-as-bundled.md`](checktxstate-notexecute-sold-as-bundled.md) — CheckTx 过了 被写成已经按 ExecuteTxState 验过 / 已经按将要执行的那份验过 / 已经同一份（不变量 695）

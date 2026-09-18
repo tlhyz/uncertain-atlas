@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「内存池已经挡了重复」，必须分开索引器是不是已经保证不重复、CheckTx 是不是已经有应用级强保证、幂等交易是不是已经没有例外。可以跳过「看见池子挡过就已经保证不重放」。不要另写怎样实现重放保护或怎样做索引器。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「内存池已经挡了重复」，必须分开索引器是不是已经保证不重复、CheckTx 是不是已经有应用级强保证、幂等交易是不是已经没有例外。可以跳过「看见池子挡过就已经保证不重放」。不要另写怎样实现重放保护或怎样做索引器。313 mempool-indexer vs replay bundled unbundling 启动（698 item 1）；精读 [`worked-example-indexer-notguarantee-vs-bundled.md`](worked-example-indexer-notguarantee-vs-bundled.md)（不变量 698 item 1）。
 
 ## 本页不抄
 

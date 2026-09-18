@@ -1,3 +1,7 @@
+## 2026-09-18（续 815）
+
+- 不变量 698；语料 C675；模式 name-the-indexer-notguarantee-bar；反模式 indexer-notguarantee-sold-as-bundled；L10.3 第 667 条。填 L4.4 / CometBFT 档案索引器去重不是已经保证不重复 not already no-duplicate guarantee / not already strong guarantee / not already never again 正式三事（313 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。313 mempool-indexer vs replay bundled unbundling 启动（698 item 1）。
+
 ## 2026-09-18（续 814）
 
 - 不变量 697；语料 C674；模式 name-the-checktxstate-notrecheck-bar；反模式 checktxstate-notrecheck-sold-as-bundled；L10.3 第 666 条。填 L4.4 / CometBFT 档案 RECHECK 不是已经是新交易 not already new transaction / not already treated as NEW / not already unlocked 正式三事（312 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。312 checktxstate vs execute bundled unbundling 完成（695 + 696 + 697）。
