@@ -1,3 +1,15 @@
+## 2026-09-18（续 1234）
+
+- 不变量 1117；语料 C1095；模式 name-the-acc44-notdone-bar；反模式 acc44-notdone-sold-as-bundled；L10.3 第 1086 条。填 L1.4 / L3.6 BIP-44 zero-balance not already discovery-done / not already no-later-account / not already settled 正式三事（267 余量）。267 account vs discovered bundled unbundling 完成（1117 item 3）。
+
+## 2026-09-18（续 1233）
+
+- 不变量 1116；语料 C1094；模式 name-the-acc44-notpast-bar；反模式 acc44-notpast-sold-as-bundled；L10.3 第 1085 条。填 L1.4 / L3.6 BIP-44 next-account-number not already has-history / not already same-identity / not already settled 正式三事（267 余量）。267 account vs discovered bundled unbundling 续（1116 item 2）。
+
+## 2026-09-18（续 1232）
+
+- 不变量 1115；语料 C1093；模式 name-the-acc44-notcoin-bar；反模式 acc44-notcoin-sold-as-bundled；L10.3 第 1084 条。填 L1.4 / L3.6 BIP-44 same-seed not already same-coin / not already shared-address / not already settled 正式三事（267 余量）。267 account vs discovered bundled unbundling 启动（1115 item 1）。479 finwhenparts 已用 fintrigger-not*（608–610），不重拆。
+
 ## 2026-09-18（续 1231）
 
 - 不变量 1114；语料 C1092；模式 name-the-ftxs-notexec-bar；反模式 ftxs-notexec-sold-as-bundled；L10.3 第 1083 条。填 L4.4 / CometBFT 档案 Process whole-block-like-Finalize not already ExecuteTxState / not already Finalize-plus-Commit / not already settled 正式三事（408 余量）。408 fintxs vs control bundled unbundling 完成（1114 item 3）。

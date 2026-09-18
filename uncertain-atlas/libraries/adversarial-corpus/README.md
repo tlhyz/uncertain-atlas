@@ -1,3 +1,9 @@
+| C1095 | 1117 | acc44 notdone≠184/267 | 文案把余额为零 / 一串没用过的地址 写成已经发现完 interchangeable 或已经和 184 interchangeable / 1117 acc44-notdone interchangeable；或把看见停搜 写成已经没有后面的账户 interchangeable；或把看见只扫外链 写成已经交差 interchangeable，或已经和 267 account-vs-discovered bundled / acc44-notdone-sold-as-bundled interchangeable / 1115 acc44-notcoin interchangeable / 1116 acc44-notpast interchangeable |
+
+| C1094 | 1116 | acc44 notpast≠266/267 | 文案把下一个账户号 / 去开新账户 写成已经有过往 interchangeable 或已经和 266 interchangeable / 1116 acc44-notpast interchangeable；或把看见两户 写成已经和上一户同一身份 interchangeable；或把看见不得混花 写成已经交差 interchangeable，或已经和 267 account-vs-discovered bundled / acc44-notpast-sold-as-bundled interchangeable / 1115 acc44-notcoin interchangeable / 1117 acc44-notdone interchangeable |
+
+| C1093 | 1115 | acc44 notcoin≠182/267 | 文案把同一份种子 / 同一颗主节点 写成已经是同一条币 interchangeable 或已经和 182 interchangeable / 1115 acc44-notcoin interchangeable；或把看见还能再长出别的币 写成已经可以共用地址 interchangeable；或把看见单独一棵子树 写成已经交差 interchangeable，或已经和 267 account-vs-discovered bundled / acc44-notcoin-sold-as-bundled interchangeable / 1116 acc44-notpast interchangeable / 1117 acc44-notdone interchangeable |
+
 | C1092 | 1114 | ftxs notexec≠311/408 | 文案把 Process 可以像在处理 Finalize 那样整块执行 / 整块跑了 写成已经是 ExecuteTxState interchangeable 或已经和 311 interchangeable / 1114 ftxs-notexec interchangeable；或把看见像 Finalize 写成已经 Finalize + Commit interchangeable；或把看见能跑 写成已经交差 interchangeable，或已经和 408 fintxs-vs-control bundled / ftxs-notexec-sold-as-bundled interchangeable / 1112 ftxs-notsettle interchangeable / 1113 ftxs-notdec interchangeable |
 
 | C1091 | 1113 | ftxs notdec≠359/408 | 文案把 Process 含提案块上执行所需的全部信息 / 填了信息 写成已经是刚决定那块的字段 interchangeable 或已经和 359 interchangeable / 1113 ftxs-notdec interchangeable；或把看见能执行 写成已经跑过 Process interchangeable；或把看见有提案块 写成已经交差 interchangeable，或已经和 408 fintxs-vs-control bundled / ftxs-notdec-sold-as-bundled interchangeable / 1112 ftxs-notsettle interchangeable / 1114 ftxs-notexec interchangeable |

@@ -1,3 +1,19 @@
+| A5345 | 记录 | 会与 267 / 184 / 183 / 1115 / 1116 糊成「看见余额为零就已经发现完 interchangeable、就已经没有后面的账户 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-44 zero-balance not already discovery-done / not already no-later-account / not already settled 正式三事（267 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。267 account vs discovered bundled unbundling 完成（1117 item 3） |
+| A5346 | 高 | 看见余额为零 会被写成已经发现完 interchangeable / 184 interchangeable | 官方 BIP-44 多账户层次 item 3：not already discovery-done / not 184 |
+| A5347 | 高 | 看见停搜 会被写成已经没有后面的账户 interchangeable / 183 interchangeable | 官方 BIP-44 多账户层次 item 3：not already no-later-account / not 183 |
+| A5348 | 高 | 看见只扫外链 会被写成已经交差 interchangeable | 官方 BIP-44 多账户层次 item 3：not already settled |
+| A5349 | 中 | 怎样扫间隙会被抄进不确定 | 不抄。不写怎样扫间隙或枚举账户。不另写 19 节 |
+| A5340 | 记录 | 会与 267 / 266 / 1115 / 1117 糊成「看见下一个账户号就已经有过往 interchangeable、就已经和上一户同一身份 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-44 next-account-number not already has-history / not already same-identity / not already settled 正式三事（267 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。267 account vs discovered bundled unbundling 续（1116 item 2） |
+| A5341 | 高 | 看见下一个账户号 会被写成已经有过往 interchangeable / 266 interchangeable | 官方 BIP-44 多账户层次 item 2：not already has-history / not 266 |
+| A5342 | 高 | 看见两户 会被写成已经和上一户同一身份 interchangeable | 官方 BIP-44 多账户层次 item 2：not already same-identity |
+| A5343 | 高 | 看见不得混花 会被写成已经交差 interchangeable | 官方 BIP-44 多账户层次 item 2：not already settled |
+| A5344 | 中 | 怎样扫间隙会被抄进不确定 | 不抄。不写怎样扫间隙或枚举账户。不另写 19 节 |
+| A5335 | 记录 | 会与 267 / 182 / 266 / 1116 / 1117 糊成「看见同一份种子就已经是同一条币 interchangeable、就已经可以共用地址 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-44 same-seed not already same-coin / not already shared-address / not already settled 正式三事（267 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。267 account vs discovered bundled unbundling 启动（1115 item 1） |
+| A5336 | 高 | 看见同一份种子 会被写成已经是同一条币 interchangeable / 182 interchangeable | 官方 BIP-44 多账户层次 item 1：not already same-coin / not 182 |
+| A5337 | 高 | 看见还能再长出别的币 会被写成已经可以共用地址 interchangeable / 266 interchangeable | 官方 BIP-44 多账户层次 item 1：not already shared-address / not 266 |
+| A5338 | 高 | 看见单独一棵子树 会被写成已经交差 interchangeable | 官方 BIP-44 多账户层次 item 1：not already settled |
+| A5339 | 中 | 怎样扫间隙会被抄进不确定 | 不抄。不写怎样扫间隙或枚举账户。不另写 19 节 |
+| A5350 | 记录 | 479 finwhenparts-vs-partial 已用 fintrigger-not*（608–610）拆完，本回合不重拆 | 对照 README / fintrigger-notparts/notprecommit/notdecides。继续 P1-3 仍捆着的官方三事父页（BIP-44 267） |
 | A5330 | 记录 | 会与 408 / 311 / 316 / 1112 / 1113 糊成「看见整块跑了就已经是 ExecuteTxState interchangeable、就已经 Finalize + Commit interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process whole-block-like-Finalize not already ExecuteTxState / not already Finalize-plus-Commit / not already settled 正式三事（408 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。408 fintxs vs control bundled unbundling 完成（1114 item 3） |
 | A5331 | 高 | 看见整块跑了 会被写成已经是 ExecuteTxState interchangeable / 311 interchangeable | 官方 Finalize 执行余量 item 3：not already ExecuteTxState / not 311 |
 | A5332 | 高 | 看见像 Finalize 会被写成已经 Finalize + Commit interchangeable / 316 interchangeable | 官方 Finalize 执行余量 item 3：not already Finalize-plus-Commit / not 316 |

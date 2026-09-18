@@ -1,3 +1,6 @@
+- [`name-the-acc44-notdone-bar.md`](name-the-acc44-notdone-bar.md) — BIP-44 zero-balance not already discovery-done / not already no-later-account / not already settled 正式三事（267 余量）（不变量 1117）
+- [`name-the-acc44-notpast-bar.md`](name-the-acc44-notpast-bar.md) — BIP-44 next-account-number not already has-history / not already same-identity / not already settled 正式三事（267 余量）（不变量 1116）
+- [`name-the-acc44-notcoin-bar.md`](name-the-acc44-notcoin-bar.md) — BIP-44 same-seed not already same-coin / not already shared-address / not already settled 正式三事（267 余量）（不变量 1115）
 - [`name-the-ftxs-notexec-bar.md`](name-the-ftxs-notexec-bar.md) — Process whole-block-like-Finalize not already ExecuteTxState / not already Finalize-plus-Commit / not already settled 正式三事（408 余量）（不变量 1114）
 - [`name-the-ftxs-notdec-bar.md`](name-the-ftxs-notdec-bar.md) — Process all-exec-info not already just-decided-fields / not already processed / not already settled 正式三事（408 余量）（不变量 1113）
 - [`name-the-ftxs-notsettle-bar.md`](name-the-ftxs-notsettle-bar.md) — Finalize exec-txs-return-control not already settled / not already like-Prepare / not already last-state-only 正式三事（408 余量）（不变量 1112）

@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了这一高、有 +2/3 precommit 就已经会调 Finalize」，必须分开 Proposal + all block parts 是不是已经只有 hash、2f+1 precommit same id(v) 是不是已经 +2/3 prevote ExtendVote、decides block v 是不是已经 persist outputs / 已经交差。可以跳过「看见有 +2/3 precommit 就已经会调 Finalize」。不要另写怎样收块片。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了这一高、有 +2/3 precommit 就已经会调 Finalize」，必须分开 Proposal + all block parts 是不是已经只有 hash、2f+1 precommit same id(v) 是不是已经 +2/3 prevote ExtendVote、decides block v 是不是已经 persist outputs / 已经交差。可以跳过「看见有 +2/3 precommit 就已经会调 Finalize」。不要另写怎样收块片。479 finwhenparts vs partial 已用 fintrigger-not* 拆完（608 item 1 / 609 item 2 / 610 item 3）；精读 [`worked-example-fintrigger-notparts-vs-bundled.md`](worked-example-fintrigger-notparts-vs-bundled.md)（不变量 608 item 1）。不要重拆。
 
 ## 本页不抄
 

@@ -782,6 +782,9 @@
 - [`worked-example-dummy-vs-empty.md`](worked-example-dummy-vs-empty.md) — 多余栈元素 ≠ 已经随便填；隔离见证 ≠ 已经没有这条延展；策略已经要空 dummy ≠ 已经是共识（不变量 264）
 - [`worked-example-signet-vs-testnet.md`](worked-example-signet-vs-testnet.md) — signet ≠ 已经是 testnet；signet ≠ 已经是 regtest；头上有合法工作量 ≠ 已经签过（不变量 265）
 - [`worked-example-purpose-vs-compatible.md`](worked-example-purpose-vs-compatible.md) — BIP32 compatible ≠ 已经能互操作；自称 BIPxx compatible ≠ 已经是那份结构；同一套扩展钥前缀 ≠ 已经是比特币专用（不变量 266）
+- [`worked-example-acc44-notdone-vs-bundled.md`](worked-example-acc44-notdone-vs-bundled.md) — 余额为零≠already discovery-done/no-later-account/settled；≠267 bundled（不变量 1117）
+- [`worked-example-acc44-notpast-vs-bundled.md`](worked-example-acc44-notpast-vs-bundled.md) — 账户号≠already has-history/same-identity/settled；≠267 bundled（不变量 1116）
+- [`worked-example-acc44-notcoin-vs-bundled.md`](worked-example-acc44-notcoin-vs-bundled.md) — 同一份种子≠already same-coin/shared-address/settled；≠267 bundled（不变量 1115）
 - [`worked-example-account-vs-discovered.md`](worked-example-account-vs-discovered.md) — 同一份种子 ≠ 已经是同一条币；下一个账户号 ≠ 已经有过往；余额为零 ≠ 已经发现完（不变量 267）
 - [`worked-example-nested-vs-same-account.md`](worked-example-nested-vs-same-account.md) — 同一套 BIP44 账户 ≠ 已经能找回嵌套隔离见证；专用账户 ≠ 已经向后兼容；账户出现了 ≠ 已经不用核余额（不变量 268）
 - [`worked-example-script-type-vs-account.md`](worked-example-script-type-vs-account.md) — 现有多签派生习惯 ≠ 已经要搬家；脚本类型层 ≠ 已经是账户层；本页多签 ≠ 已经不排序（不变量 269）

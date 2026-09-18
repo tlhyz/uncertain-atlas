@@ -1,3 +1,6 @@
+- [`acc44-notdone-sold-as-bundled.md`](acc44-notdone-sold-as-bundled.md) — 余额为零 被写成已经发现完 / 已经没有后面的账户 / 已经交差（不变量 1117）
+- [`acc44-notpast-sold-as-bundled.md`](acc44-notpast-sold-as-bundled.md) — 账户号 被写成已经有过往 / 已经和上一户同一身份 / 已经交差（不变量 1116）
+- [`acc44-notcoin-sold-as-bundled.md`](acc44-notcoin-sold-as-bundled.md) — 同一份种子 被写成已经是同一条币 / 已经可以共用地址 / 已经交差（不变量 1115）
 - [`ftxs-notexec-sold-as-bundled.md`](ftxs-notexec-sold-as-bundled.md) — Process 整块像 Finalize 被写成已经是 ExecuteTxState / 已经 Finalize + Commit / 已经交差（不变量 1114）
 - [`ftxs-notdec-sold-as-bundled.md`](ftxs-notdec-sold-as-bundled.md) — Process 全部执行信息 被写成已经是刚决定那块的字段 / 已经跑过 Process / 已经交差（不变量 1113）
 - [`ftxs-notsettle-sold-as-bundled.md`](ftxs-notsettle-sold-as-bundled.md) — Finalize 执行再交还 被写成已经交差 / 已经可以像 Prepare 那样 / 已经只依赖上一份状态和决定块（不变量 1112）
