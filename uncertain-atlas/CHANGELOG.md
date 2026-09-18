@@ -1,3 +1,15 @@
+## 2026-09-18（续 1216）
+
+- 不变量 1099；语料 C1077；模式 name-the-htmt-notdec-bar；反模式 htmt-notdec-sold-as-bundled；L10.3 第 1068 条。填 L4.4 / CometBFT 档案 Finalize height/time match not already decided-fields / not already header-known / not already settled 正式三事（417 余量）。417 htmatch vs header bundled unbundling 完成（1099 item 3）。
+
+## 2026-09-18（续 1215）
+
+- 不变量 1098；语料 C1076；模式 name-the-htmt-notverif-bar；反模式 htmt-notverif-sold-as-bundled；L10.3 第 1067 条。填 L4.4 / CometBFT 档案 Process height/time match not already header-verified / not already processed / not already settled 正式三事（417 余量）。417 htmatch vs header bundled unbundling 续（1098 item 2）。
+
+## 2026-09-18（续 1214）
+
+- 不变量 1097；语料 C1075；模式 name-the-htmt-notskip-bar；反模式 htmt-notskip-sold-as-bundled；L10.3 第 1066 条。填 L4.4 / CometBFT 档案 proposer Prepare-first not already skip-process / not already same-round / not already settled 正式三事（417 余量）。417 htmatch vs header bundled unbundling 启动（1097 item 1）。
+
 ## 2026-09-18（续 1213）
 
 - 不变量 1096；语料 C1074；模式 name-the-ptime-notcall-bar；反模式 ptime-notcall-sold-as-bundled；L10.3 第 1065 条。填 L4.4 / CometBFT 档案 prevote-or-nil look not already will-call / not already still-reject / not already settled 正式三事（416 余量）。416 proposetimeout vs process bundled unbundling 完成（1096 item 3）。

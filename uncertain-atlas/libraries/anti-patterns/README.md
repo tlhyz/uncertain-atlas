@@ -1,3 +1,6 @@
+- [`htmt-notdec-sold-as-bundled.md`](htmt-notdec-sold-as-bundled.md) — Finalize h/t 被写成已经是刚决定那块的字段 / 已经知道本头哈希 / 已经交差（不变量 1099）
+- [`htmt-notverif-sold-as-bundled.md`](htmt-notverif-sold-as-bundled.md) — Process h/t 被写成已经验过块头 / 已经跑过 Process / 已经交差（不变量 1098）
+- [`htmt-notskip-sold-as-bundled.md`](htmt-notskip-sold-as-bundled.md) — Prepare-first 被写成已经不用再 Process / 已经保证是这一次 / 已经交差（不变量 1097）
 - [`ptime-notcall-sold-as-bundled.md`](ptime-notcall-sold-as-bundled.md) — prevote-or-nil 被写成已经会调 Process / 已经还能再 Reject / 已经交差（不变量 1096）
 - [`ptime-notproc-sold-as-bundled.md`](ptime-notproc-sold-as-bundled.md) — 先验块头 被写成已经跑过 Process / 已经知道本头哈希 / 已经交差（不变量 1095）
 - [`ptime-notcfg-sold-as-bundled.md`](ptime-notcfg-sold-as-bundled.md) — ProposeTimeout 被写成已经填了 TimeoutPropose / 已经离开关键路径 / 已经会调 Process（不变量 1094）

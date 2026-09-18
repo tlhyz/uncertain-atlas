@@ -670,6 +670,9 @@
 - [`worked-example-ptime-notproc-vs-bundled.md`](worked-example-ptime-notproc-vs-bundled.md) — header-first≠already processed/header-known/settled；≠416 bundled（不变量 1095）
 - [`worked-example-ptime-notcfg-vs-bundled.md`](worked-example-ptime-notcfg-vs-bundled.md) — ProposeTimeout≠already timeout-propose/left-critical/will-call；≠416 bundled（不变量 1094）
 - [`worked-example-proposetimeout-vs-process.md`](worked-example-proposetimeout-vs-process.md) — 进了这一轮会先设 ProposeTimeout ≠ 已经填了 TimeoutPropose；收到带上头的提案会先验块头 ≠ 已经跑过 Process；收齐块片才按验证者算法看该不该 prevote 这块或 nil ≠ 已经会调 Process（不变量 416）
+- [`worked-example-htmt-notdec-vs-bundled.md`](worked-example-htmt-notdec-vs-bundled.md) — Finalize h/t≠already decided-fields/header-known/settled；≠417 bundled（不变量 1099）
+- [`worked-example-htmt-notverif-vs-bundled.md`](worked-example-htmt-notverif-vs-bundled.md) — Process h/t≠already header-verified/processed/settled；≠417 bundled（不变量 1098）
+- [`worked-example-htmt-notskip-vs-bundled.md`](worked-example-htmt-notskip-vs-bundled.md) — Prepare-first≠already skip-process/same-round/settled；≠417 bundled（不变量 1097）
 - [`worked-example-htmatch-vs-header.md`](worked-example-htmatch-vs-header.md) — 自己是提议者会先走完 Prepare 那五步 ≠ 已经不用再 Process；Process 的 height / time 对上拟议块头 ≠ 已经验过块头；Finalize 的 height / time 对上拟议块头 ≠ 已经是刚决定那块的字段（不变量 417）
 - [`worked-example-eresp-nottable-vs-bundled.md`](worked-example-eresp-nottable-vs-bundled.md) — Verify non_rp≠already vote-ext-table/skip-verify/same-copy；≠418 bundled（不变量 1084）
 - [`worked-example-eresp-notraw-vs-bundled.md`](worked-example-eresp-notraw-vs-bundled.md) — non_rp_extension≠already signed-as-is/replay-protected/must-fill；≠418 bundled（不变量 1083）

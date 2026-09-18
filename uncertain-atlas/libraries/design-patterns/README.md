@@ -1,3 +1,6 @@
+- [`name-the-htmt-notdec-bar.md`](name-the-htmt-notdec-bar.md) — Finalize height/time match not already decided-fields / not already header-known / not already settled 正式三事（417 余量）（不变量 1099）
+- [`name-the-htmt-notverif-bar.md`](name-the-htmt-notverif-bar.md) — Process height/time match not already header-verified / not already processed / not already settled 正式三事（417 余量）（不变量 1098）
+- [`name-the-htmt-notskip-bar.md`](name-the-htmt-notskip-bar.md) — proposer Prepare-first not already skip-process / not already same-round / not already settled 正式三事（417 余量）（不变量 1097）
 - [`name-the-ptime-notcall-bar.md`](name-the-ptime-notcall-bar.md) — prevote-or-nil look not already will-call / not already still-reject / not already settled 正式三事（416 余量）（不变量 1096）
 - [`name-the-ptime-notproc-bar.md`](name-the-ptime-notproc-bar.md) — proposal header-first not already processed / not already header-known / not already settled 正式三事（416 余量）（不变量 1095）
 - [`name-the-ptime-notcfg-bar.md`](name-the-ptime-notcfg-bar.md) — ProposeTimeout set-on-enter not already timeout-propose / not already left-critical / not already will-call 正式三事（416 余量）（不变量 1094）

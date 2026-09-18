@@ -1,3 +1,18 @@
+| A5255 | 记录 | 会与 417 / 407 / 416 / 1097 / 1098 糊成「看见 Finalize h/t 对上就已经是刚决定那块的字段 interchangeable、就已经知道本头哈希 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Finalize height/time match not already decided-fields / not already header-known / not already settled 正式三事（417 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。417 htmatch vs header bundled unbundling 完成（1099 item 3） |
+| A5256 | 高 | 看见对上了 会被写成已经是刚决定那块的字段 interchangeable / 407 interchangeable | 官方头字段对上余量 item 3：not already decided-fields / not 407 |
+| A5257 | 高 | 看见字段对上 会被写成已经知道本头哈希 interchangeable / 416 interchangeable | 官方头字段对上余量 item 3：not already header-known / not 416 |
+| A5258 | 高 | 看见能对 会被写成已经交差 interchangeable | 官方头字段对上余量 item 3：not already settled |
+| A5259 | 中 | 怎样写头字段会被抄进不确定 | 不抄。不写怎样写头字段对上余量。不另写 19 节 |
+| A5250 | 记录 | 会与 417 / 416 / 359 / 1097 / 1099 糊成「看见 Process h/t 对上就已经验过块头 interchangeable、就已经跑过 Process interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Process height/time match not already header-verified / not already processed / not already settled 正式三事（417 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。417 htmatch vs header bundled unbundling 续（1098 item 2） |
+| A5251 | 高 | 看见对上了 会被写成已经验过块头 interchangeable / 416 interchangeable | 官方头字段对上余量 item 2：not already header-verified / not 416 |
+| A5252 | 高 | 看见字段对上 会被写成已经跑过 Process interchangeable / 359 interchangeable | 官方头字段对上余量 item 2：not already processed / not 359 |
+| A5253 | 高 | 看见能对 会被写成已经交差 interchangeable | 官方头字段对上余量 item 2：not already settled |
+| A5254 | 中 | 怎样写头字段会被抄进不确定 | 不抄。不写怎样写头字段对上余量。不另写 19 节 |
+| A5245 | 记录 | 会与 417 / 351 / 416 / 1098 / 1099 糊成「看见先走完 Prepare 就已经不用再 Process interchangeable、就已经保证是这一次 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 proposer Prepare-first not already skip-process / not already same-round / not already settled 正式三事（417 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。417 htmatch vs header bundled unbundling 启动（1097 item 1） |
+| A5246 | 高 | 看见走完了 会被写成已经不用再 Process interchangeable / 351 interchangeable | 官方头字段对上余量 item 1：not already skip-process / not 351 |
+| A5247 | 高 | 看见自己是提议者 会被写成已经保证是这一次 interchangeable / 416 interchangeable | 官方头字段对上余量 item 1：not already same-round / not 416 |
+| A5248 | 高 | 看见先走 Prepare 会被写成已经交差 interchangeable | 官方头字段对上余量 item 1：not already settled |
+| A5249 | 中 | 怎样写头字段会被抄进不确定 | 不抄。不写怎样写头字段对上余量。不另写 19 节 |
 | A5240 | 记录 | 会与 416 / 354 / 351 / 1094 / 1095 糊成「看见在看 prevote 就已经会调 Process interchangeable、就已经还能再 Reject interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 prevote-or-nil look not already will-call / not already still-reject / not already settled 正式三事（416 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。416 proposetimeout vs process bundled unbundling 完成（1096 item 3） |
 | A5241 | 高 | 看见在看 会被写成已经会调 Process interchangeable / 354 interchangeable | 官方 Process 何时调用余量 item 3：not already will-call / not 354 |
 | A5242 | 高 | 看见还没调 会被写成已经还能再 Reject interchangeable / 351 interchangeable | 官方 Process 何时调用余量 item 3：not already still-reject / not 351 |

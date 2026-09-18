@@ -1,3 +1,9 @@
+| C1077 | 1099 | htmt notdec≠407/417 | 文案把 Finalize height/time 对上 / 对上了 写成已经是刚决定那块的字段 interchangeable 或已经和 407 interchangeable / 1099 htmt-notdec interchangeable；或把看见字段对上 写成已经知道本头哈希 interchangeable；或把看见能对 写成已经交差 interchangeable，或已经和 417 htmatch-vs-header bundled / htmt-notdec-sold-as-bundled interchangeable / 1097 htmt-notskip interchangeable / 1098 htmt-notverif interchangeable |
+
+| C1076 | 1098 | htmt notverif≠416/417 | 文案把 Process height/time 对上 / 对上了 写成已经验过块头 interchangeable 或已经和 416 interchangeable / 1098 htmt-notverif interchangeable；或把看见字段对上 写成已经跑过 Process interchangeable；或把看见能对 写成已经交差 interchangeable，或已经和 417 htmatch-vs-header bundled / htmt-notverif-sold-as-bundled interchangeable / 1097 htmt-notskip interchangeable / 1099 htmt-notdec interchangeable |
+
+| C1075 | 1097 | htmt notskip≠351/417 | 文案把提议者先走完 Prepare 五步 / 走完了 写成已经不用再 Process interchangeable 或已经和 351 interchangeable / 1097 htmt-notskip interchangeable；或把看见自己是提议者 写成已经保证是这一次 interchangeable；或把看见先走 Prepare 写成已经交差 interchangeable，或已经和 417 htmatch-vs-header bundled / htmt-notskip-sold-as-bundled interchangeable / 1098 htmt-notverif interchangeable / 1099 htmt-notdec interchangeable |
+
 | C1074 | 1096 | ptime notcall≠354/416 | 文案把收齐块片才看 prevote / 在看 写成已经会调 Process interchangeable 或已经和 354 interchangeable / 1096 ptime-notcall interchangeable；或把看见还没调 写成已经还能再 Reject interchangeable；或把看见有算法 写成已经交差 interchangeable，或已经和 416 proposetimeout-vs-process bundled / ptime-notcall-sold-as-bundled interchangeable / 1094 ptime-notcfg interchangeable / 1095 ptime-notproc interchangeable |
 
 | C1073 | 1095 | ptime notproc≠359/416 | 文案把收到带上头的提案会先验块头 / 验了头 写成已经跑过 Process interchangeable 或已经和 359 interchangeable / 1095 ptime-notproc interchangeable；或把看见提案带上头 写成已经知道本头哈希 interchangeable；或把看见先验 写成已经交差 interchangeable，或已经和 416 proposetimeout-vs-process bundled / ptime-notproc-sold-as-bundled interchangeable / 1094 ptime-notcfg interchangeable / 1096 ptime-notcall interchangeable |

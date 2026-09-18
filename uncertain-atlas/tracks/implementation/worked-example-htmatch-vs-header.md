@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了头字段就已经不用再 Process、已经验过块头、已经是刚决定那块的字段」，必须分开自己是提议者会先走完 Prepare 那五步是不是已经不用再 Process、Process 的 height / time 对上拟议块头是不是已经验过块头、Finalize 的 height / time 对上拟议块头是不是已经是刚决定那块的字段。可以跳过「看见填了头字段就已经不用再 Process」。不要另写怎样写头字段对上余量。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了头字段就已经不用再 Process、已经验过块头、已经是刚决定那块的字段」，必须分开自己是提议者会先走完 Prepare 那五步是不是已经不用再 Process、Process 的 height / time 对上拟议块头是不是已经验过块头、Finalize 的 height / time 对上拟议块头是不是已经是刚决定那块的字段。可以跳过「看见填了头字段就已经不用再 Process」。不要另写怎样写头字段对上余量。417 htmatch vs header bundled unbundling 完成（1097 item 1 / 1098 item 2 / 1099 item 3）；精读 [`worked-example-htmt-notskip-vs-bundled.md`](worked-example-htmt-notskip-vs-bundled.md)（不变量 1097 item 1）。
 
 ## 本页不抄
 
