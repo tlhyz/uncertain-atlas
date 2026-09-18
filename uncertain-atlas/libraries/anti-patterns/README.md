@@ -1,3 +1,6 @@
+- [`bbfee-not4844-sold-as-bundled.md`](bbfee-not4844-sold-as-bundled.md) — 跑前就有这个数 被写成已经改了 4844 / 就已经改了市场 / 就已经是 7918（不变量 1403）
+- [`bbfee-notone-sold-as-bundled.md`](bbfee-notone-sold-as-bundled.md) — 能读本块 blob 基础费 被写成已经并成一套气 / 就已经是 145 / 就已经是 201（不变量 1402）
+- [`bbfee-not3198-sold-as-bundled.md`](bbfee-not3198-sold-as-bundled.md) — blob 基础费指令 被写成已经是执行层基础费 / 就已经是 218 / 就已经 219 bundled（不变量 1401）
 - [`bfee-nothdr-sold-as-bundled.md`](bfee-nothdr-sold-as-bundled.md) — 跑前就有这个数 被写成已经改了头 / 就已经有气期货 / 就已经加长挑战期（不变量 1400）
 - [`bfee-notprop-sold-as-bundled.md`](bfee-notprop-sold-as-bundled.md) — 能读本块基础费 被写成已经给了出块者 / 就已经是 blob 基础费 / 就已经是 219（不变量 1399）
 - [`bfee-notmkt-sold-as-bundled.md`](bfee-notmkt-sold-as-bundled.md) — 基础费指令 被写成已经改了费用市场 / 就已经是 158 / 就已经 218 bundled（不变量 1398）

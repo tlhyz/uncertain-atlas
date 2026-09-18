@@ -1,3 +1,6 @@
+- [`name-the-bbfee-not4844-bar.md`](name-the-bbfee-not4844-bar.md) — EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）（不变量 1403）
+- [`name-the-bbfee-notone-bar.md`](name-the-bbfee-notone-bar.md) — EIP-7516 read-blobbasefee not already one-gas / not already 145-bundled / not already 201 正式三事（219 余量）（不变量 1402）
+- [`name-the-bbfee-not3198-bar.md`](name-the-bbfee-not3198-bar.md) — EIP-7516 BLOBBASEFEE opcode not already 3198-basefee / not already 218-bundled / not already 219-bundled 正式三事（219 余量）（不变量 1401）
 - [`name-the-bfee-nothdr-bar.md`](name-the-bfee-nothdr-bar.md) — EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）（不变量 1400）
 - [`name-the-bfee-notprop-bar.md`](name-the-bfee-notprop-bar.md) — EIP-3198 read-basefee not already paid-to-proposer / not already blob-basefee / not already 219 正式三事（218 余量）（不变量 1399）
 - [`name-the-bfee-notmkt-bar.md`](name-the-bfee-notmkt-bar.md) — EIP-3198 BASEFEE opcode not already 1559-market / not already 158-bundled / not already 218-bundled 正式三事（218 余量）（不变量 1398）

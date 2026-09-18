@@ -990,6 +990,9 @@
 - [`worked-example-bfee-notprop-vs-bundled.md`](worked-example-bfee-notprop-vs-bundled.md) — 能读本块基础费≠already 给了出块者/blob基础费/219；≠218 bundled（不变量 1399）
 - [`worked-example-bfee-nothdr-vs-bundled.md`](worked-example-bfee-nothdr-vs-bundled.md) — 跑前就有这个数≠already 改了头/气期货/加长挑战期；≠218 bundled（不变量 1400）
 - [`worked-example-basefee-opcode-vs-market.md`](worked-example-basefee-opcode-vs-market.md) — 看见基础费指令 ≠ 已经改了费用市场；看见能读本块基础费 ≠ 已经给了出块者；看见跑 EVM 前就已经有这个数 ≠ 已经改了头怎么算；3198 ≠ 1559 ≠ 158（不变量 218）
+- [`worked-example-bbfee-not3198-vs-bundled.md`](worked-example-bbfee-not3198-vs-bundled.md) — blob基础费指令≠already 执行层基础费/218/219 bundled；≠219 bundled（不变量 1401）
+- [`worked-example-bbfee-notone-vs-bundled.md`](worked-example-bbfee-notone-vs-bundled.md) — 能读本块blob基础费≠already 并成一套气/145/201；≠219 bundled（不变量 1402）
+- [`worked-example-bbfee-not4844-vs-bundled.md`](worked-example-bbfee-not4844-vs-bundled.md) — 跑前就有这个数≠already 改了4844/改了市场/7918底价；≠219 bundled（不变量 1403）
 - [`worked-example-blobbasefee-vs-basefee.md`](worked-example-blobbasefee-vs-basefee.md) — 看见 blob 基础费指令 ≠ 已经是执行层基础费指令；看见能读本块 blob 基础费 ≠ 已经并成一套气；看见跑 EVM 前就已经有这个数 ≠ 已经改了 4844 日程；7516 ≠ 3198 ≠ 218 ≠ 4844（不变量 219）
 - [`worked-example-chid-not155-vs-bundled.md`](worked-example-chid-not155-vs-bundled.md) — 链号指令≠already 签进哈希/JSON chainId/220 bundled；≠220 bundled（不变量 1395）
 - [`worked-example-chid-nottx-vs-bundled.md`](worked-example-chid-nottx-vs-bundled.md) — 返回配置链号≠already 这笔带了155/默认值/161；≠220 bundled（不变量 1396）

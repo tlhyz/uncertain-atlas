@@ -1,3 +1,18 @@
+| A6780 | 记录 | 会与 219 / 218 / 201 / 1401 / 1402 糊成「看见跑 EVM 前就已经有这个数不是已经改了 4844 日程就已经改了 4844 日程 interchangeable、就已经改了费用市场 interchangeable、就已经是 7918 底价规则 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。219 BLOBBASEFEE vs BASEFEE bundled unbundling 完成（1403 item 3） |
+| A6781 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了 4844 日程 会被写成已经改了 4844 日程 interchangeable / 218 interchangeable | 官方 EIP-7516 bbfee item 3：not already 已经改了 4844 日程 / not 218 |
+| A6782 | 高 | 看见pre-EVM value is not already 4844-changed 会被写成已经改了费用市场 interchangeable / 201 interchangeable | 官方 EIP-7516 bbfee item 3：not already 已经改了费用市场 / not 201 |
+| A6783 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了 4844 日程 会被写成已经是 7918 底价规则 interchangeable | 官方 EIP-7516 bbfee item 3：not already settled |
+| A6784 | 中 | 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程会被抄进不确定 | 不抄。不写 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程。不另写 19 节 |
+| A6775 | 记录 | 会与 219 / 145 / 201 / 1401 / 1403 糊成「看见能读本块 blob 基础费不是已经并成一套气就已经并成一套气 interchangeable、就已经是不变量 145 interchangeable、就已经是不变量 201 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7516 read-blobbasefee not already one-gas / not already 145-bundled / not already 201 正式三事（219 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。219 BLOBBASEFEE vs BASEFEE bundled unbundling 续（1402 item 2） |
+| A6776 | 高 | 看见能读本块 blob 基础费不是已经并成一套气 会被写成已经并成一套气 interchangeable / 145 interchangeable | 官方 EIP-7516 bbfee item 2：not already 已经并成一套气 / not 145 |
+| A6777 | 高 | 看见readable blob basefee is not already one gas 会被写成已经是不变量 145 interchangeable / 201 interchangeable | 官方 EIP-7516 bbfee item 2：not already 已经是不变量 145 / not 201 |
+| A6778 | 高 | 看见能读本块 blob 基础费不是已经并成一套气 会被写成已经是不变量 201 interchangeable | 官方 EIP-7516 bbfee item 2：not already settled |
+| A6779 | 中 | 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程会被抄进不确定 | 不抄。不写 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程。不另写 19 节 |
+| A6770 | 记录 | 会与 219 / 218 / 158 / 1402 / 1403 糊成「看见blob 基础费指令不是已经是执行层基础费指令就已经是执行层基础费指令 interchangeable、就已经是不变量 218 interchangeable、就已经 219 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7516 BLOBBASEFEE opcode not already 3198-basefee / not already 218-bundled / not already 219-bundled 正式三事（219 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。219 BLOBBASEFEE vs BASEFEE bundled unbundling 启动（1401 item 1） |
+| A6771 | 高 | 看见blob 基础费指令不是已经是执行层基础费指令 会被写成已经是执行层基础费指令 interchangeable / 218 interchangeable | 官方 EIP-7516 bbfee item 1：not already 已经是执行层基础费指令 / not 218 |
+| A6772 | 高 | 看见BLOBBASEFEE is not already BASEFEE 会被写成已经是不变量 218 interchangeable / 158 interchangeable | 官方 EIP-7516 bbfee item 1：not already 已经是不变量 218 / not 158 |
+| A6773 | 高 | 看见blob 基础费指令不是已经是执行层基础费指令 会被写成已经 219 bundled interchangeable | 官方 EIP-7516 bbfee item 1：not already settled |
+| A6774 | 中 | 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程会被抄进不确定 | 不抄。不写 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程。不另写 19 节 |
 | A6765 | 记录 | 会与 218 / 217 / 145 / 1398 / 1399 糊成「看见跑 EVM 前就已经有这个数不是已经改了头怎么算就已经改了头怎么算 interchangeable、就已经有气期货 interchangeable、就已经自动加长挑战期 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。218 BASEFEE opcode vs market bundled unbundling 完成（1400 item 3） |
 | A6766 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了头怎么算 会被写成已经改了头怎么算 interchangeable / 217 interchangeable | 官方 EIP-3198 bfee item 3：not already 已经改了头怎么算 / not 217 |
 | A6767 | 高 | 看见pre-EVM value is not already header-changed 会被写成已经有气期货 interchangeable / 145 interchangeable | 官方 EIP-3198 bfee item 3：not already 已经有气期货 / not 145 |

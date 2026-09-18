@@ -1,3 +1,15 @@
+## 2026-09-18（续 1520）
+
+- 不变量 1403；语料 C1381；模式 name-the-bbfee-not4844-bar；反模式 bbfee-not4844-sold-as-bundled；L10.3 第 1372 条。填 L5.1 EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）。219 BLOBBASEFEE vs BASEFEE bundled unbundling 完成（1403 item 3）。
+
+## 2026-09-18（续 1519）
+
+- 不变量 1402；语料 C1380；模式 name-the-bbfee-notone-bar；反模式 bbfee-notone-sold-as-bundled；L10.3 第 1371 条。填 L5.1 EIP-7516 read-blobbasefee not already one-gas / not already 145-bundled / not already 201 正式三事（219 余量）。219 BLOBBASEFEE vs BASEFEE bundled unbundling 续（1402 item 2）。
+
+## 2026-09-18（续 1518）
+
+- 不变量 1401；语料 C1379；模式 name-the-bbfee-not3198-bar；反模式 bbfee-not3198-sold-as-bundled；L10.3 第 1370 条。填 L5.1 EIP-7516 BLOBBASEFEE opcode not already 3198-basefee / not already 218-bundled / not already 219-bundled 正式三事（219 余量）。219 BLOBBASEFEE vs BASEFEE bundled unbundling 启动（1401 item 1）。
+
 ## 2026-09-18（续 1517）
 
 - 不变量 1400；语料 C1378；模式 name-the-bfee-nothdr-bar；反模式 bfee-nothdr-sold-as-bundled；L10.3 第 1369 条。填 L5.1 EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）。218 BASEFEE opcode vs market bundled unbundling 完成（1400 item 3）。
