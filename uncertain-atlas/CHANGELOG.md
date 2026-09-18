@@ -1,3 +1,7 @@
+## 2026-09-18（续 810）
+
+- 不变量 693；语料 C670；模式 name-the-candidate-notexecute-bar；反模式 candidate-notexecute-sold-as-bundled；L10.3 第 662 条。填 L4.4 / CometBFT 档案候选不是已经是 ExecuteTxState not already ExecuteTxState / not already can name this height final / not already settled 正式三事（311 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。311 candidate vs execute bundled unbundling 续（693 item 2）。
+
 ## 2026-09-18（续 809）
 
 - 不变量 692；语料 C669；模式 name-the-candidate-notheader-bar；反模式 candidate-notheader-sold-as-bundled；L10.3 第 661 条。填 L4.4 / CometBFT 档案 Prepare 没有头哈希 not already have header hash / not Prepare already had hash / not already decided block identity 正式三事（311 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。311 candidate vs execute bundled unbundling 启动（692 item 1）。

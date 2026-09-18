@@ -1,3 +1,4 @@
+- [`candidate-notexecute-sold-as-bundled.md`](candidate-notexecute-sold-as-bundled.md) — 立刻执行出候选 被写成已经是 ExecuteTxState / 已经能点名本高度最终 / 已经交差（不变量 693）
 - [`candidate-notheader-sold-as-bundled.md`](candidate-notheader-sold-as-bundled.md) — Prepare 没有头哈希 被写成已经有本头哈希 / Prepare 当时已经有 / 已经是决定块身份（不变量 692）
 - [`commitlock-notbroadcast-sold-as-bundled.md`](commitlock-notbroadcast-sold-as-bundled.md) — Commit 里等广播 被写成已经能往下走 / 已经交差 / 已经允许（不变量 691）
 - [`commitlock-notunlocked-sold-as-bundled.md`](commitlock-notunlocked-sold-as-bundled.md) — Commit 前锁内存池 被写成已经解锁 / 已经同步做完 / 已经放下锁（不变量 690）

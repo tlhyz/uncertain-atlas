@@ -1,3 +1,4 @@
+- [`name-the-candidate-notexecute-bar.md`](name-the-candidate-notexecute-bar.md) — 候选不是已经是 ExecuteTxState not already ExecuteTxState / not already can name this height final / not already settled 正式三事（311 余量）（不变量 693）
 - [`name-the-candidate-notheader-bar.md`](name-the-candidate-notheader-bar.md) — Prepare 没有头哈希 not already have header hash / not Prepare already had hash / not already decided block identity 正式三事（311 余量）（不变量 692）
 - [`name-the-commitlock-notbroadcast-bar.md`](name-the-commitlock-notbroadcast-bar.md) — Commit 里等 broadcast_tx not already can proceed / not already settled / not already allowed sync mempool in Commit 正式三事（310 余量）（不变量 691）
 - [`name-the-commitlock-notunlocked-bar.md`](name-the-commitlock-notunlocked-bar.md) — lock mempool before Commit not already unlocked / not already sync done / not Commit return already released 正式三事（310 余量）（不变量 690）
