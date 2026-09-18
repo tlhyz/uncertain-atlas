@@ -1,3 +1,15 @@
+## 2026-09-18（续 1309）
+
+- 不变量 1192；语料 C1170；模式 name-the-tn94-notfollow-bar；反模式 tn94-notfollow-sold-as-bundled；L10.3 第 1161 条。填 L3.6 BIP-94 know-testnet3 not already safe-follow / not already new-rules / not already settled 正式三事（292 余量）。292 testnet4 vs testnet3 bundled unbundling 完成（1192 item 3）。
+
+## 2026-09-18（续 1308）
+
+- 不变量 1191；语料 C1169；模式 name-the-tn94-notstorm-bar；反模式 tn94-notstorm-sold-as-bundled；L10.3 第 1160 条。填 L3.6 BIP-94 twenty-min not already no-storm / not already exception-removed / not already settled 正式三事（292 余量）。292 testnet4 vs testnet3 bundled unbundling 续（1191 item 2）。
+
+## 2026-09-18（续 1307）
+
+- 不变量 1190；语料 C1168；模式 name-the-tn94-not3-bar；反模式 tn94-not3-sold-as-bundled；L10.3 第 1159 条。填 L3.6 BIP-94 testnet4 not already testnet3 / not already mainnet / not already settled 正式三事（292 余量）。292 testnet4 vs testnet3 bundled unbundling 启动（1190 item 1）。
+
 ## 2026-09-18（续 1306）
 
 - 不变量 1189；语料 C1167；模式 name-the-lex69-notpriv-bar；反模式 lex69-notpriv-sold-as-bundled；L10.3 第 1158 条。填 L1.4 / L3.6 BIP-69 lex-order not already private / not already random / not already settled 正式三事（291 余量）。291 order vs lex bundled unbundling 完成（1189 item 3）。

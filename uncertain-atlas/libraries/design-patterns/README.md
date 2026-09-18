@@ -1,3 +1,6 @@
+- [`name-the-tn94-notfollow-bar.md`](name-the-tn94-notfollow-bar.md) — BIP-94 know-testnet3 not already safe-follow / not already new-rules / not already settled 正式三事（292 余量）（不变量 1192）
+- [`name-the-tn94-notstorm-bar.md`](name-the-tn94-notstorm-bar.md) — BIP-94 twenty-min not already no-storm / not already exception-removed / not already settled 正式三事（292 余量）（不变量 1191）
+- [`name-the-tn94-not3-bar.md`](name-the-tn94-not3-bar.md) — BIP-94 testnet4 not already testnet3 / not already mainnet / not already settled 正式三事（292 余量）（不变量 1190）
 - [`name-the-lex69-notpriv-bar.md`](name-the-lex69-notpriv-bar.md) — BIP-69 lex-order not already private / not already random / not already settled 正式三事（291 余量）（不变量 1189）
 - [`name-the-lex69-notcons-bar.md`](name-the-lex69-notcons-bar.md) — BIP-69 lex-order not already consensus / not already spend-gate / not already settled 正式三事（291 余量）（不变量 1188）
 - [`name-the-lex69-nothabit-bar.md`](name-the-lex69-nothabit-bar.md) — BIP-69 habit-order not already lex-standard / not already no-fingerprint / not already settled 正式三事（291 余量）（不变量 1187）

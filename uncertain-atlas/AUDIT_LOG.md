@@ -1,3 +1,18 @@
+| A5725 | 记录 | 会与 292 / 257 / 144 / 1190 / 1191 糊成「看见会 Testnet 3 就已经能安全跟 Testnet 4 interchangeable、就已经在验新规则 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.6 BIP-94 know-testnet3 not already safe-follow / not already new-rules / not already settled 正式三事（292 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。292 testnet4 vs testnet3 bundled unbundling 完成（1192 item 3） |
+| A5726 | 高 | 看见会 Testnet 3 会被写成已经能安全跟 Testnet 4 interchangeable / 257 interchangeable | 官方 BIP-94 Testnet 4 item 3：not already safe-follow / not 257 |
+| A5727 | 高 | 看见补了参数 会被写成已经在验新规则 interchangeable / 144 interchangeable | 官方 BIP-94 Testnet 4 item 3：not already new-rules / not 144 |
+| A5728 | 高 | 看见和主网同一套软分叉 会被写成已经交差 interchangeable | 官方 BIP-94 Testnet 4 item 3：not already settled |
+| A5729 | 中 | 怎样挖最低难度或怎样造块风暴会被抄进不确定 | 不抄。不写怎样挖最低难度或怎样造块风暴。不另写 19 节 |
+| A5720 | 记录 | 会与 292 / 265 / 1190 / 1192 糊成「看见 20 分钟例外就已经没有块风暴 interchangeable、就已经拿掉了例外 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.6 BIP-94 twenty-min not already no-storm / not already exception-removed / not already settled 正式三事（292 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。292 testnet4 vs testnet3 bundled unbundling 续（1191 item 2） |
+| A5721 | 高 | 看见 20 分钟例外 会被写成已经没有块风暴 interchangeable / 265 interchangeable | 官方 BIP-94 Testnet 4 item 2：not already no-storm / not 265 |
+| A5722 | 高 | 看见最低难度 会被写成已经拿掉了例外 interchangeable / 265 interchangeable | 官方 BIP-94 Testnet 4 item 2：not already exception-removed / not 265 |
+| A5723 | 高 | 看见留着例外 会被写成已经交差 interchangeable | 官方 BIP-94 Testnet 4 item 2：not already settled |
+| A5724 | 中 | 怎样挖最低难度或怎样造块风暴会被抄进不确定 | 不抄。不写怎样挖最低难度或怎样造块风暴。不另写 19 节 |
+| A5715 | 记录 | 会与 292 / 265 / 144 / 1191 / 1192 糊成「看见 Testnet 4 就已经是 Testnet 3 interchangeable、就已经没价值 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L3.6 BIP-94 testnet4 not already testnet3 / not already mainnet / not already settled 正式三事（292 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。292 testnet4 vs testnet3 bundled unbundling 启动（1190 item 1） |
+| A5716 | 高 | 看见 Testnet 4 会被写成已经是 Testnet 3 interchangeable / 265 interchangeable | 官方 BIP-94 Testnet 4 item 1：not already testnet3 / not 265 |
+| A5717 | 高 | 看见测试币 会被写成已经没价值 interchangeable / 144 interchangeable | 官方 BIP-94 Testnet 4 item 1：not already mainnet / not 144 |
+| A5718 | 高 | 看见规则更近主网 会被写成已经交差 interchangeable | 官方 BIP-94 Testnet 4 item 1：not already settled |
+| A5719 | 中 | 怎样挖最低难度或怎样造块风暴会被抄进不确定 | 不抄。不写怎样挖最低难度或怎样造块风暴。不另写 19 节 |
 | A5710 | 记录 | 会与 291 / 1186 / 257 / 1187 / 1188 糊成「看见按字典序排了就已经私人 interchangeable、就已经是随机打乱 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-69 lex-order not already private / not already random / not already settled 正式三事（291 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。291 order vs lex bundled unbundling 完成（1189 item 3） |
 | A5711 | 高 | 看见按字典序排了 会被写成已经私人 interchangeable / 1186 interchangeable | 官方 BIP-69 输入输出顺序 item 3：not already private / not 1186 |
 | A5712 | 高 | 看见确定排过 会被写成已经是随机打乱 interchangeable / 257 interchangeable | 官方 BIP-69 输入输出顺序 item 3：not already random / not 257 |

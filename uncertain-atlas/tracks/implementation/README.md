@@ -881,6 +881,9 @@
 - [`worked-example-lex69-notcons-vs-bundled.md`](worked-example-lex69-notcons-vs-bundled.md) — 字典序≠already consensus/spend-gate/settled；≠291 bundled（不变量 1188）
 - [`worked-example-lex69-nothabit-vs-bundled.md`](worked-example-lex69-nothabit-vs-bundled.md) — 习惯顺序≠already lex-standard/no-fingerprint/settled；≠291 bundled（不变量 1187）
 - [`worked-example-order-vs-lex.md`](worked-example-order-vs-lex.md) — 自家习惯的输入输出顺序 ≠ 已经是字典序标准；按字典序排了 ≠ 已经是共识 / ≠ 已经私人（不变量 291）
+- [`worked-example-tn94-notfollow-vs-bundled.md`](worked-example-tn94-notfollow-vs-bundled.md) — 会 Testnet 3≠already safe-follow/new-rules/settled；≠292 bundled（不变量 1192）
+- [`worked-example-tn94-notstorm-vs-bundled.md`](worked-example-tn94-notstorm-vs-bundled.md) — 20 分钟例外≠already no-storm/exception-removed/settled；≠292 bundled（不变量 1191）
+- [`worked-example-tn94-not3-vs-bundled.md`](worked-example-tn94-not3-vs-bundled.md) — Testnet 4≠already testnet3/mainnet/settled；≠292 bundled（不变量 1190）
 - [`worked-example-testnet4-vs-testnet3.md`](worked-example-testnet4-vs-testnet3.md) — Testnet 4 ≠ 已经是 Testnet 3；20 分钟例外 ≠ 已经没有块风暴；会 Testnet 3 ≠ 已经能安全跟（不变量 292）
 - [`../lifecycle/worked-example-reserves-vs-spend.md`](../lifecycle/worked-example-reserves-vs-spend.md) — 储备证明交易 ≠ 已经能花；其余输入签过 ≠ 已经控制资金；POR 栏 ≠ 已经是普通花费（不变量 293）
 - [`worked-example-encrypted-key-vs-usable.md`](worked-example-encrypted-key-vs-usable.md) — 加密私钥记录 ≠ 已经能用；厂家代生成 ≠ 已经能兑；地址哈希片段 ≠ 已经是地址（不变量 296）

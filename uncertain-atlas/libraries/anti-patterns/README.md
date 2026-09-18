@@ -1,3 +1,6 @@
+- [`tn94-notfollow-sold-as-bundled.md`](tn94-notfollow-sold-as-bundled.md) — 会 Testnet 3 被写成已经能安全跟 / 已经在验新规则 / 已经交差（不变量 1192）
+- [`tn94-notstorm-sold-as-bundled.md`](tn94-notstorm-sold-as-bundled.md) — 20 分钟例外 被写成已经没有块风暴 / 已经拿掉了例外 / 已经交差（不变量 1191）
+- [`tn94-not3-sold-as-bundled.md`](tn94-not3-sold-as-bundled.md) — Testnet 4 被写成已经是 Testnet 3 / 已经没价值 / 已经交差（不变量 1190）
 - [`lex69-notpriv-sold-as-bundled.md`](lex69-notpriv-sold-as-bundled.md) — 字典序 被写成已经私人 / 已经是随机打乱 / 已经交差（不变量 1189）
 - [`lex69-notcons-sold-as-bundled.md`](lex69-notcons-sold-as-bundled.md) — 字典序 被写成已经是共识 / 已经决定这笔能不能花 / 已经交差（不变量 1188）
 - [`lex69-nothabit-sold-as-bundled.md`](lex69-nothabit-sold-as-bundled.md) — 习惯顺序 被写成已经是字典序标准 / 已经没有指纹 / 已经交差（不变量 1187）
