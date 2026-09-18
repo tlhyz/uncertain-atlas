@@ -1,3 +1,15 @@
+## 2026-09-18（续 1297）
+
+- 不变量 1180；语料 C1158；模式 name-the-bsms129-nottoken-bar；反模式 bsms129-nottoken-sold-as-bundled；L10.3 第 1149 条。填 L1.4 / L3.6 BIP-129 token not already wallet-seed / not already tamper-store / not already settled 正式三事（287 余量）。287 setup vs psbt bundled unbundling 完成（1180 item 3）。
+
+## 2026-09-18（续 1296）
+
+- 不变量 1179；语料 C1157；模式 name-the-bsms129-notkey-bar；反模式 bsms129-notkey-sold-as-bundled；L10.3 第 1148 条。填 L1.4 / L3.6 BIP-129 fingerprint not already verified-key / not already same-confirm / not already settled 正式三事（287 余量）。287 setup vs psbt bundled unbundling 续（1179 item 2）。
+
+## 2026-09-18（续 1295）
+
+- 不变量 1178；语料 C1156；模式 name-the-bsms129-notsetup-bar；反模式 bsms129-notsetup-sold-as-bundled；L10.3 第 1147 条。填 L1.4 / L3.6 BIP-129 psbt-flow not already secure-setup / not already members-checked / not already settled 正式三事（287 余量）。287 setup vs psbt bundled unbundling 启动（1178 item 1）。
+
 ## 2026-09-18（续 1294）
 
 - 不变量 1177；语料 C1155；模式 name-the-mpath87-notseed-bar；反模式 mpath87-notseed-sold-as-bundled；L10.3 第 1146 条。填 L1.4 / L3.6 BIP-87 master-seed not already enough-to-recover / not already singlesig-default / not already settled 正式三事（285 余量）。285 multisig path vs script bundled unbundling 完成（1177 item 3）。

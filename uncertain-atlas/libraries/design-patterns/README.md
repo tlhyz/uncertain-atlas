@@ -1,3 +1,6 @@
+- [`name-the-bsms129-nottoken-bar.md`](name-the-bsms129-nottoken-bar.md) — BIP-129 token not already wallet-seed / not already tamper-store / not already settled 正式三事（287 余量）（不变量 1180）
+- [`name-the-bsms129-notkey-bar.md`](name-the-bsms129-notkey-bar.md) — BIP-129 fingerprint not already verified-key / not already same-confirm / not already settled 正式三事（287 余量）（不变量 1179）
+- [`name-the-bsms129-notsetup-bar.md`](name-the-bsms129-notsetup-bar.md) — BIP-129 psbt-flow not already secure-setup / not already members-checked / not already settled 正式三事（287 余量）（不变量 1178）
 - [`name-the-mpath87-notseed-bar.md`](name-the-mpath87-notseed-bar.md) — BIP-87 master-seed not already enough-to-recover / not already singlesig-default / not already settled 正式三事（285 余量）（不变量 1177）
 - [`name-the-mpath87-notneed-bar.md`](name-the-mpath87-notneed-bar.md) — BIP-87 script-type-in-path not already necessary / not already no-descriptor / not already settled 正式三事（285 余量）（不变量 1176）
 - [`name-the-mpath87-nottree-bar.md`](name-the-mpath87-nottree-bar.md) — BIP-87 per-script-path not already the-multisig-tree / not already no-descriptor / not already settled 正式三事（285 余量）（不变量 1175）

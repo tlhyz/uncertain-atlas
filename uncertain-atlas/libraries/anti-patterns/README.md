@@ -1,3 +1,6 @@
+- [`bsms129-nottoken-sold-as-bundled.md`](bsms129-nottoken-sold-as-bundled.md) — TOKEN 被写成已经是钱包种子 / 已经防篡改存储 / 已经交差（不变量 1180）
+- [`bsms129-notkey-sold-as-bundled.md`](bsms129-notkey-sold-as-bundled.md) — 指纹对上 被写成已经核过 KEY / 已经各方确认同一份 / 已经交差（不变量 1179）
+- [`bsms129-notsetup-sold-as-bundled.md`](bsms129-notsetup-sold-as-bundled.md) — 部分签名包 被写成已经是跨厂安全多签开户 / 已经核过成员 / 已经交差（不变量 1178）
 - [`mpath87-notseed-sold-as-bundled.md`](mpath87-notseed-sold-as-bundled.md) — 主种子 被写成已经够找回 / 已经给单签用 / 已经交差（不变量 1177）
 - [`mpath87-notneed-sold-as-bundled.md`](mpath87-notneed-sold-as-bundled.md) — 路径里的脚本类型 被写成已经必要 / 已经不必再带描述符 / 已经交差（不变量 1176）
 - [`mpath87-nottree-sold-as-bundled.md`](mpath87-nottree-sold-as-bundled.md) — 脚本各走各的路径 被写成已经是多签该有的树 / 已经不必再带描述符 / 已经交差（不变量 1175）

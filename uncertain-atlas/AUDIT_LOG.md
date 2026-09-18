@@ -1,3 +1,18 @@
+| A5665 | 记录 | 会与 287 / 1177 / 183 / 1178 / 1179 糊成「看见 TOKEN 就已经是钱包种子 interchangeable、就已经防篡改存储 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-129 token not already wallet-seed / not already tamper-store / not already settled 正式三事（287 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。287 setup vs psbt bundled unbundling 完成（1180 item 3） |
+| A5666 | 高 | 看见 TOKEN 会被写成已经是钱包种子 interchangeable / 1177 interchangeable | 官方 BIP-129 安全多签开户 item 3：not already wallet-seed / not 1177 |
+| A5667 | 高 | 看见加密会话 会被写成已经防篡改存储 interchangeable / 183 interchangeable | 官方 BIP-129 安全多签开户 item 3：not already tamper-store / not 183 |
+| A5668 | 高 | 看见存进了签名器 会被写成已经交差 interchangeable | 官方 BIP-129 安全多签开户 item 3：not already settled |
+| A5669 | 中 | 怎样核对钥或怎样加密会话会被抄进不确定 | 不抄。不写怎样核对钥或怎样加密会话。不另写 19 节 |
+| A5660 | 记录 | 会与 287 / 184 / 1162 / 1178 / 1180 糊成「看见指纹对上就已经核过 KEY interchangeable、就已经各方确认同一份 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-129 fingerprint not already verified-key / not already same-confirm / not already settled 正式三事（287 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。287 setup vs psbt bundled unbundling 续（1179 item 2） |
+| A5661 | 高 | 看见指纹对上 会被写成已经核过 KEY interchangeable / 184 interchangeable | 官方 BIP-129 安全多签开户 item 2：not already verified-key / not 184 |
+| A5662 | 高 | 看见第一地址 会被写成已经各方确认同一份 interchangeable / 1162 interchangeable | 官方 BIP-129 安全多签开户 item 2：not already same-confirm / not 1162 |
+| A5663 | 高 | 看见钥记录 会被写成已经交差 interchangeable | 官方 BIP-129 安全多签开户 item 2：not already settled |
+| A5664 | 中 | 怎样核对钥或怎样加密会话会被抄进不确定 | 不抄。不写怎样核对钥或怎样加密会话。不另写 19 节 |
+| A5655 | 记录 | 会与 287 / 179 / 1162 / 1179 / 1180 糊成「看见部分签名包就已经是跨厂安全多签开户 interchangeable、就已经核过成员 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-129 psbt-flow not already secure-setup / not already members-checked / not already settled 正式三事（287 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。287 setup vs psbt bundled unbundling 启动（1178 item 1） |
+| A5656 | 高 | 看见部分签名包 会被写成已经是跨厂安全多签开户 interchangeable / 179 interchangeable | 官方 BIP-129 安全多签开户 item 1：not already secure-setup / not 179 |
+| A5657 | 高 | 看见签流程 会被写成已经核过成员 interchangeable / 1162 interchangeable | 官方 BIP-129 安全多签开户 item 1：not already members-checked / not 1162 |
+| A5658 | 高 | 看见包还能签 会被写成已经交差 interchangeable | 官方 BIP-129 安全多签开户 item 1：not already settled |
+| A5659 | 中 | 怎样核对钥或怎样加密会话会被抄进不确定 | 不抄。不写怎样核对钥或怎样加密会话。不另写 19 节 |
 | A5650 | 记录 | 会与 285 / 184 / 1116 / 1175 / 1176 糊成「看见主种子就已经够找回 interchangeable、就已经给单签用 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-87 master-seed not already enough-to-recover / not already singlesig-default / not already settled 正式三事（285 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。285 multisig path vs script bundled unbundling 完成（1177 item 3） |
 | A5651 | 高 | 看见主种子 会被写成已经够找回 interchangeable / 184 interchangeable | 官方 BIP-87 多签派生层次 item 3：not already enough-to-recover / not 184 |
 | A5652 | 高 | 看见这份不按脚本拆的树 会被写成已经给单签用 interchangeable / 1116 interchangeable | 官方 BIP-87 多签派生层次 item 3：not already singlesig-default / not 1116 |

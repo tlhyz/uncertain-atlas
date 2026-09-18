@@ -861,6 +861,9 @@
 - [`worked-example-bip85-notinvert-vs-bundled.md`](worked-example-bip85-notinvert-vs-bundled.md) — 扩展根钥≠already invertible-to-mnemonic/the-entropy/settled；≠286 bundled（不变量 1122）
 - [`worked-example-bip85-notcover-vs-bundled.md`](worked-example-bip85-notcover-vs-bundled.md) — 一份助记词≠already covers-all-wallets/safer-to-share/settled；≠286 bundled（不变量 1121）
 - [`worked-example-entropy-vs-seed.md`](worked-example-entropy-vs-seed.md) — 一份助记词 ≠ 已经能备齐所有钱包；扩展根钥 ≠ 已经能倒回助记词；派生出的熵 ≠ 已经是目标钱包的种子（不变量 286）
+- [`worked-example-bsms129-nottoken-vs-bundled.md`](worked-example-bsms129-nottoken-vs-bundled.md) — TOKEN≠already wallet-seed/tamper-store/settled；≠287 bundled（不变量 1180）
+- [`worked-example-bsms129-notkey-vs-bundled.md`](worked-example-bsms129-notkey-vs-bundled.md) — 指纹≠already verified-key/same-confirm/settled；≠287 bundled（不变量 1179）
+- [`worked-example-bsms129-notsetup-vs-bundled.md`](worked-example-bsms129-notsetup-vs-bundled.md) — 部分签名包≠already secure-setup/members-checked/settled；≠287 bundled（不变量 1178）
 - [`worked-example-setup-vs-psbt.md`](worked-example-setup-vs-psbt.md) — 部分签名包 ≠ 已经是跨厂安全多签开户；指纹对上 ≠ 已经核过 KEY；TOKEN ≠ 已经是钱包种子（不变量 287）
 - [`worked-example-template-vs-path.md`](worked-example-template-vs-path.md) — 一条派生路径 ≠ 已经是一份路径模板；写死了熟路径检查 ≠ 已经能互操作；完整模板 ≠ 已经是半截模板（不变量 288）
 - [`worked-example-del89-notblind-vs-bundled.md`](worked-example-del89-notblind-vs-bundled.md) — 这一输入微调≠already whole-tree/blind-sign/settled；≠289 bundled（不变量 1141）
