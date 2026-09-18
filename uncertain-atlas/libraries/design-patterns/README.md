@@ -1,3 +1,4 @@
+- [`name-the-crashsteps-notinfoskip-bar.md`](name-the-crashsteps-notinfoskip-bar.md) — startup Info not already mid-height resume / not already can skip replay / not InitChain already done 正式三事（320 余量）（不变量 688）
 - [`name-the-crashsteps-notblockstore-bar.md`](name-the-crashsteps-notblockstore-bar.md) — blockstore not already settled / not already Commit / not three steps already atomic 正式三事（320 余量）（不变量 687）
 - [`name-the-crashsteps-notapptaller-bar.md`](name-the-crashsteps-notapptaller-bar.md) — app taller than engine not already allowed / not already can wake separately / not half-write atomic 正式三事（320 余量）（不变量 686）
 - [`name-the-finpersist-notrememberheight-bar.md`](name-the-finpersist-notrememberheight-bar.md) — remember last Commit height not already app taller than engine / not already can skip replay / not Info handshake aligned 正式三事（335 余量）（不变量 685）

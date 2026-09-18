@@ -1,3 +1,4 @@
+- [`crashsteps-notinfoskip-sold-as-bundled.md`](crashsteps-notinfoskip-sold-as-bundled.md) — 启动 Info 对上 被写成已经能从半截高度接着走 / 已经能跳步 / 已经不用再叫 InitChain（不变量 688）
 - [`crashsteps-notblockstore-sold-as-bundled.md`](crashsteps-notblockstore-sold-as-bundled.md) — 块进 blockstore 被写成已经交差 / 已经 Commit / 已经原子（不变量 687）
 - [`crashsteps-notapptaller-sold-as-bundled.md`](crashsteps-notapptaller-sold-as-bundled.md) — app taller than engine 被写成已经允许 / 已经能各醒各的 / 已经半写原子（不变量 686）
 - [`finpersist-notrememberheight-sold-as-bundled.md`](finpersist-notrememberheight-sold-as-bundled.md) — remember last Commit height 被写成已经能比引擎高 / 已经能跳步 / 已经 Info 对上（不变量 685）
