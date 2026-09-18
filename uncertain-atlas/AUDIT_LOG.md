@@ -1,3 +1,18 @@
+| A6070 | 记录 | 会与 252 / 250 / 243 / 1259 / 1260 糊成「看见协议版本够了就已经在遵守 interchangeable、就已经能服完整历史 interchangeable、就已经是归档 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.1 / L9.6 BIP-111 version-enough not already obeying / not already full-history / not already archive 正式三事（252 余量）/ 轻客户端表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。252 bloom vs retired bundled unbundling 完成（1261 item 3） |
+| A6071 | 高 | 看见协议版本够了 会被写成已经在遵守这一位 interchangeable / 250 interchangeable | 官方 BIP-111 bloom item 3：not already obeying / not 250 |
+| A6072 | 高 | 看见开了布隆位 会被写成已经能服完整历史 interchangeable / 243 interchangeable | 官方 BIP-111 bloom item 3：not already not already full-history / not 243 |
+| A6073 | 高 | 看见开了布隆位 会被写成已经是归档节点 interchangeable | 官方 BIP-111 bloom item 3：not already settled |
+| A6074 | 中 | 怎样用布隆做拒绝服务、怎样做交集分析、怎样按服务位认出节点会被抄进不确定 | 不抄。不写 怎样用布隆做拒绝服务、怎样做交集分析、怎样按服务位认出节点。不另写 19 节 |
+| A6065 | 记录 | 会与 252 / 243 / 245 / 1259 / 1261 糊成「看见没开布隆服务位就已经退役 interchangeable、就已经改用客户端侧过滤 interchangeable、就已经共识非法 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.1 / L9.6 BIP-111 bloom-off not already retired / not already cfilter / not already consensus-illegal 正式三事（252 余量）/ 轻客户端表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。252 bloom vs retired bundled unbundling 续（1260 item 2） |
+| A6066 | 高 | 看见没开布隆服务位 会被写成全网布隆已经退役 interchangeable / 243 interchangeable | 官方 BIP-111 bloom item 2：not already retired / not 243 |
+| A6067 | 高 | 看见没开这一位 会被写成已经改用客户端侧过滤 interchangeable / 245 interchangeable | 官方 BIP-111 bloom item 2：not already not already cfilter / not 245 |
+| A6068 | 高 | 看见因过滤器命令被断开 会被写成已经共识非法 interchangeable | 官方 BIP-111 bloom item 2：not already settled |
+| A6069 | 中 | 怎样用布隆做拒绝服务、怎样做交集分析、怎样按服务位认出节点会被抄进不确定 | 不抄。不写 怎样用布隆做拒绝服务、怎样做交集分析、怎样按服务位认出节点。不另写 19 节 |
+| A6060 | 记录 | 会与 252 / 243 / 244 / 1260 / 1261 糊成「看见开了布隆服务位就已经私人 interchangeable、就已经没了拒绝服务面 interchangeable、就已经保证人人都服 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 / L9.1 / L9.6 BIP-111 bloom-bit not already private / not already no-dos / not already everyone-serves 正式三事（252 余量）/ 轻客户端表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。252 bloom vs retired bundled unbundling 启动（1259 item 1） |
+| A6061 | 高 | 看见开了布隆服务位 会被写成已经私人 interchangeable / 243 interchangeable | 官方 BIP-111 bloom item 1：not already private / not 243 |
+| A6062 | 高 | 看见开了这一位 会被写成拒绝服务面已经没了 interchangeable / 244 interchangeable | 官方 BIP-111 bloom item 1：not already not already no-dos / not 244 |
+| A6063 | 高 | 看见没写服务位的旧协议 会被写成已经保证人人都服 interchangeable | 官方 BIP-111 bloom item 1：not already settled |
+| A6064 | 中 | 怎样用布隆做拒绝服务、怎样做交集分析、怎样按服务位认出节点会被抄进不确定 | 不抄。不写 怎样用布隆做拒绝服务、怎样做交集分析、怎样按服务位认出节点。不另写 19 节 |
 | A6055 | 记录 | 会与 251 / 248 / 247 / 1256 / 1257 糊成「看见库存通告仍用旧类型就已经没有见证 interchangeable、就已经按 wtxid 通告 interchangeable、就已经验完 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L3.7 / L9.1 BIP-144 old-inv not already no-wit / not already wtxid-ann / not already verified 正式三事（251 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。251 witness vs have bundled unbundling 完成（1258 item 3） |
 | A6056 | 高 | 看见库存通告仍用旧类型 会被写成线上已经没有见证 interchangeable / 248 interchangeable | 官方 BIP-144 witness item 3：not already no-wit / not 248 |
 | A6057 | 高 | 看见按带见证类型去索取 会被写成已经按 wtxid 通告 interchangeable / 247 interchangeable | 官方 BIP-144 witness item 3：not already not already wtxid-ann / not 247 |

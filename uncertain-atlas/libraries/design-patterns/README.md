@@ -1,3 +1,6 @@
+- [`name-the-blm111-notver-bar.md`](name-the-blm111-notver-bar.md) — BIP-111 version-enough not already obeying / not already full-history / not already archive 正式三事（252 余量）（不变量 1261）
+- [`name-the-blm111-notoff-bar.md`](name-the-blm111-notoff-bar.md) — BIP-111 bloom-off not already retired / not already cfilter / not already consensus-illegal 正式三事（252 余量）（不变量 1260）
+- [`name-the-blm111-notpriv-bar.md`](name-the-blm111-notpriv-bar.md) — BIP-111 bloom-bit not already private / not already no-dos / not already everyone-serves 正式三事（252 余量）（不变量 1259）
 - [`name-the-wit144-notold-bar.md`](name-the-wit144-notold-bar.md) — BIP-144 old-inv not already no-wit / not already wtxid-ann / not already verified 正式三事（251 余量）（不变量 1258）
 - [`name-the-wit144-notsend-bar.md`](name-the-wit144-notsend-bar.md) — BIP-144 service-bit not already sending / not already have / not already old-retired 正式三事（251 余量）（不变量 1257）
 - [`name-the-wit144-nothave-bar.md`](name-the-wit144-nothave-bar.md) — BIP-144 witness-ser not already have / not already accepted / not already no-capability 正式三事（251 余量）（不变量 1256）

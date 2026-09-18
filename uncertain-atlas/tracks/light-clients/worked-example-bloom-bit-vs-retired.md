@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见没开布隆服务位就已经退役布隆 / 就已经改用客户端侧过滤 / 就已经私人」。若对照连接过滤，必须分开显式宣布、能关掉、旧版本兼容。不要把服务位写成已经修好隐私。不要另写 BIP-37 构造页。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见没开布隆服务位就已经退役布隆 / 就已经改用客户端侧过滤 / 就已经私人」。若对照连接过滤，必须分开显式宣布、能关掉、旧版本兼容。不要把服务位写成已经修好隐私。252 bloom vs retired bundled unbundling 完成（1259 item 1 / 1260 item 2 / 1261 item 3）；精读 [`worked-example-blm111-notpriv-vs-bundled.md`](worked-example-blm111-notpriv-vs-bundled.md)（不变量 1259 item 1）、[`worked-example-blm111-notoff-vs-bundled.md`](worked-example-blm111-notoff-vs-bundled.md)（不变量 1260 item 2）、[`worked-example-blm111-notver-vs-bundled.md`](worked-example-blm111-notver-vs-bundled.md)（不变量 1261 item 3）。不要另写 BIP-37 构造页。
 
 ## 本页不抄
 

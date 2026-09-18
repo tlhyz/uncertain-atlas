@@ -1,3 +1,6 @@
+- [`blm111-notver-sold-as-bundled.md`](blm111-notver-sold-as-bundled.md) — 协议版本够了 被写成已经在遵守 / 开了布隆位就已经能服完整历史 / 就已经是归档（不变量 1261）
+- [`blm111-notoff-sold-as-bundled.md`](blm111-notoff-sold-as-bundled.md) — 没开布隆服务位 被写成全网已经退役 / 已经改用客户端侧过滤 / 因过滤器命令被断开就已经共识非法（不变量 1260）
+- [`blm111-notpriv-sold-as-bundled.md`](blm111-notpriv-sold-as-bundled.md) — 开了布隆服务位 被写成已经私人 / 拒绝服务面已经没了 / 旧协议就已经保证人人都服（不变量 1259）
 - [`wit144-notold-sold-as-bundled.md`](wit144-notold-sold-as-bundled.md) — 库存通告仍用旧类型 被写成线上已经没有见证 / 按带见证类型索取就已经按 wtxid 通告 / 回了交易就已经验完（不变量 1258）
 - [`wit144-notsend-sold-as-bundled.md`](wit144-notsend-sold-as-bundled.md) — 开了能提供见证那一位 被写成已经在传 / 已经在请求方手里 / 旧序列化已经退役（不变量 1257）
 - [`wit144-nothave-sold-as-bundled.md`](wit144-nothave-sold-as-bundled.md) — 带见证的线上序列化 被写成已经有见证 / 已经收下 / 仍用旧序列化就已经没有见证能力（不变量 1256）

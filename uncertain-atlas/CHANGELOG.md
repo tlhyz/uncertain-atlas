@@ -1,3 +1,15 @@
+## 2026-09-18（续 1378）
+
+- 不变量 1261；语料 C1239；模式 name-the-blm111-notver-bar；反模式 blm111-notver-sold-as-bundled；L10.3 第 1230 条。填 L3.5 / L9.1 / L9.6 BIP-111 version-enough not already obeying / not already full-history / not already archive 正式三事（252 余量）。252 bloom vs retired bundled unbundling 完成（1261 item 3）。
+
+## 2026-09-18（续 1377）
+
+- 不变量 1260；语料 C1238；模式 name-the-blm111-notoff-bar；反模式 blm111-notoff-sold-as-bundled；L10.3 第 1229 条。填 L3.5 / L9.1 / L9.6 BIP-111 bloom-off not already retired / not already cfilter / not already consensus-illegal 正式三事（252 余量）。252 bloom vs retired bundled unbundling 续（1260 item 2）。
+
+## 2026-09-18（续 1376）
+
+- 不变量 1259；语料 C1237；模式 name-the-blm111-notpriv-bar；反模式 blm111-notpriv-sold-as-bundled；L10.3 第 1228 条。填 L3.5 / L9.1 / L9.6 BIP-111 bloom-bit not already private / not already no-dos / not already everyone-serves 正式三事（252 余量）。252 bloom vs retired bundled unbundling 启动（1259 item 1）。
+
 ## 2026-09-18（续 1375）
 
 - 不变量 1258；语料 C1236；模式 name-the-wit144-notold-bar；反模式 wit144-notold-sold-as-bundled；L10.3 第 1227 条。填 L3.4 / L3.7 / L9.1 BIP-144 old-inv not already no-wit / not already wtxid-ann / not already verified 正式三事（251 余量）。251 witness vs have bundled unbundling 完成（1258 item 3）。
