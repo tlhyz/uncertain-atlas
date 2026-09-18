@@ -375,6 +375,9 @@
 - [`worked-example-preparewhen-return-vs-bundled.md`](worked-example-preparewhen-return-vs-bundled.md) — includes tx list in return ≠ raw proposal bundled；returns from call ≠ Process 紧跟 Prepare bundled；uses modified block as proposal ≠ validValue 跳过 Prepare（不变量 506）
 - [`worked-example-preparewhen-collect-vs-bundled.md`](worked-example-preparewhen-collect-vs-bundled.md) — collect priority ≠ raw proposal bundled；synchronous Prepare ≠ 能在返回后再改裁决；can manipulate ≠ Prepare 改列表 bundled（不变量 505）
 - [`worked-example-prepareusage-nochecks-vs-bundled.md`](worked-example-prepareusage-nochecks-vs-bundled.md) — no checks ≠ 已经验过重复；crash ≠ Process REJECT；MAY nondet ≠ 必须确定（不变量 504）
+- [`worked-example-prepusage-notraw-vs-bundled.md`](worked-example-prepusage-notraw-vs-bundled.md) — raw proposal/can modify≠already Prepare改列表/从内存池删掉/只有raw；≠503 bundled（不变量 1304）
+- [`worked-example-prepusage-notexceed-vs-bundled.md`](worked-example-prepusage-notexceed-vs-bundled.md) — MAY超上限≠already Req2/能回超限/整池没有上限；≠503 bundled（不变量 1305）
+- [`worked-example-prepusage-notmust-vs-bundled.md`](worked-example-prepusage-notmust-vs-bundled.md) — MUST remove≠already 引擎会帮你裁/从内存池删掉/-1没有上限；≠503 bundled（不变量 1306）
 - [`worked-example-prepareusage-rawmust-vs-bundled.md`](worked-example-prepareusage-rawmust-vs-bundled.md) — raw proposal / can modify this set ≠ Prepare 改列表 bundled；MAY configure exceeding ≠ Req 2 bundled；MUST remove ≠ 引擎会帮你裁（不变量 503）
 - [`worked-example-applysnapusage-refetch-vs-bundled.md`](worked-example-applysnapusage-refetch-vs-bundled.md) — can choose refetch/ban ≠ refetch/ban bundled；will not do unless instructed ≠ 引擎自动 refetch（不变量 502）
 - [`worked-example-loadsnapusage-retrieve-vs-bundled.md`](worked-example-loadsnapusage-retrieve-vs-bundled.md) — retrieve snapshot chunks from peers ≠ LoadSnapshotChunk bundled（375）；≠ ListSnapshots discover（500）；≠ ApplySnapshotChunk chunk 栏（397）（不变量 501）

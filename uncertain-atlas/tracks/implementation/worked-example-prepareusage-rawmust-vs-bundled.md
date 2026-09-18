@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal Usage raw proposal / MUST remove 正式三事，必须分开 preliminary raw proposal / can modify this set 是不是 Prepare 改列表 bundled interchangeable / 已经只有 raw proposal interchangeable、MAY configure txs exceeding max_tx_bytes 是不是 Req 2 bundled interchangeable / 已经能回超限列表 interchangeable、MUST remove if size > max_tx_bytes 是不是引擎会帮你裁 interchangeable / 已经从内存池删掉 interchangeable。可以跳过「看见 Prepare 请求里带了 txs 就已经改列表 bundled interchangeable、已经能回超限、已经是引擎会帮你裁 interchangeable」。不要另写怎样裁回包、怎样改 Prepare 列表。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal Usage raw proposal / MUST remove 正式三事，必须分开 preliminary raw proposal / can modify this set 是不是 Prepare 改列表 bundled interchangeable / 已经只有 raw proposal interchangeable、MAY configure txs exceeding max_tx_bytes 是不是 Req 2 bundled interchangeable / 已经能回超限列表 interchangeable、MUST remove if size > max_tx_bytes 是不是引擎会帮你裁 interchangeable / 已经从内存池删掉 interchangeable。可以跳过「看见 Prepare 请求里带了 txs 就已经改列表 bundled interchangeable、已经能回超限、已经是引擎会帮你裁 interchangeable」。503 PrepareProposal Usage rawmust bundled unbundling 完成（1304 item 1 / 1305 item 2 / 1306 item 3）；精读 [`worked-example-prepusage-notraw-vs-bundled.md`](worked-example-prepusage-notraw-vs-bundled.md)（不变量 1304 item 1）、[`worked-example-prepusage-notexceed-vs-bundled.md`](worked-example-prepusage-notexceed-vs-bundled.md)（不变量 1305 item 2）、[`worked-example-prepusage-notmust-vs-bundled.md`](worked-example-prepusage-notmust-vs-bundled.md)（不变量 1306 item 3）。不要另写怎样裁回包、怎样改 Prepare 列表。
 
 ## 本页不抄
 

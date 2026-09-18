@@ -1,3 +1,6 @@
+- [`prepusage-notmust-sold-as-bundled.md`](prepusage-notmust-sold-as-bundled.md) — MUST remove 被写成已经引擎会帮你裁 / 就已经从内存池删掉 / 就已经 -1 没有上限（不变量 1306）
+- [`prepusage-notexceed-sold-as-bundled.md`](prepusage-notexceed-sold-as-bundled.md) — MAY 超上限 被写成已经 Req 2 / 就已经能回超限 / 就已经整池没有上限（不变量 1305）
+- [`prepusage-notraw-sold-as-bundled.md`](prepusage-notraw-sold-as-bundled.md) — raw proposal 被写成已经 Prepare 改列表 / 就已经从内存池删掉 / 就已经只有 raw（不变量 1304）
 - [`rcpt-notrpc-sold-as-bundled.md`](rcpt-notrpc-sold-as-bundled.md) — RPC 能告诉你成没成 被写成收据里已经有状态码 / 轻客户端就已经齐 / 返回数据就已经进收据（不变量 1303）
 - [`rcpt-notgas-sold-as-bundled.md`](rcpt-notgas-sold-as-bundled.md) — 还剩气 被写成已经成功 / 气烧光就已经失败 / 就已经写了回滚留气（不变量 1302）
 - [`rcpt-notroot-sold-as-bundled.md`](rcpt-notroot-sold-as-bundled.md) — 状态码 被写成收据里还印着中间根 / 就已经写了废掉中间根的规范 / 就已经另开一栏（不变量 1301）

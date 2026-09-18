@@ -1,3 +1,15 @@
+## 2026-09-18（续 1423）
+
+- 不变量 1306；语料 C1284；模式 name-the-prepusage-notmust-bar；反模式 prepusage-notmust-sold-as-bundled；L10.3 第 1275 条。填 L4.4 PrepareUsage must not already engine-trims / not already 355-pool / not already -1-no-cap 正式三事（503 余量）。503 PrepareProposal Usage rawmust bundled unbundling 完成（1306 item 3）。
+
+## 2026-09-18（续 1422）
+
+- 不变量 1305；语料 C1283；模式 name-the-prepusage-notexceed-bar；反模式 prepusage-notexceed-sold-as-bundled；L10.3 第 1274 条。填 L4.4 PrepareUsage exceed not already Req-2 / not already can-return-oversize / not already no-cap 正式三事（503 余量）。503 PrepareProposal Usage rawmust bundled unbundling 续（1305 item 2）。
+
+## 2026-09-18（续 1421）
+
+- 不变量 1304；语料 C1282；模式 name-the-prepusage-notraw-bar；反模式 prepusage-notraw-sold-as-bundled；L10.3 第 1273 条。填 L4.4 PrepareUsage raw not already Prepare-改列表 / not already deleted-from-mempool / not already only-raw 正式三事（503 余量）。503 PrepareProposal Usage rawmust bundled unbundling 启动（1304 item 1）。
+
 ## 2026-09-18（续 1420）
 
 - 不变量 1303；语料 C1281；模式 name-the-rcpt-notrpc-bar；反模式 rcpt-notrpc-sold-as-bundled；L10.3 第 1272 条。填 L5.1 EIP-658 rpc not already in-receipt / not already light-checked / not already returndata 正式三事（236 余量）。236 receipt status vs gas bundled unbundling 完成（1303 item 3）。

@@ -1,3 +1,18 @@
+| A6295 | 记录 | 会与 503 / 345 / 337 / 1304 / 1305 糊成「看见MUST 删到回包上限内就已经引擎会帮你裁 interchangeable、就已经从内存池删掉 interchangeable、就已经 -1 就按 100 MB 验已经没有上限 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 PrepareUsage must not already engine-trims / not already 355-pool / not already -1-no-cap 正式三事（503 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。503 PrepareProposal Usage rawmust bundled unbundling 完成（1306 item 3） |
+| A6296 | 高 | 看见MUST 删到回包上限内 会被写成已经引擎会帮你裁 interchangeable / 345 interchangeable | 官方 PrepareUsage prepusage item 3：not already 已经引擎会帮你裁 / not 345 |
+| A6297 | 高 | 看见引擎会帮你裁 会被写成已经从内存池删掉 interchangeable / 337 interchangeable | 官方 PrepareUsage prepusage item 3：not already 已经从内存池删掉 / not 337 |
+| A6298 | 高 | 看见MUST 删到回包上限内 会被写成已经 -1 就按 100 MB 验已经没有上限 interchangeable | 官方 PrepareUsage prepusage item 3：not already settled |
+| A6299 | 中 | 怎样裁回包、怎样设 MaxBytes = -1、怎样改 Prepare 列表会被抄进不确定 | 不抄。不写 怎样裁回包、怎样设 MaxBytes = -1、怎样改 Prepare 列表。不另写 19 节 |
+| A6290 | 记录 | 会与 503 / 345 / 299 / 1304 / 1306 糊成「看见MAY 让请求超上限就已经 Req 2 bundled interchangeable、就已经能回超限列表 interchangeable、就已经整池都给 Prepare 就没有上限 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 PrepareUsage exceed not already Req-2 / not already can-return-oversize / not already no-cap 正式三事（503 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。503 PrepareProposal Usage rawmust bundled unbundling 续（1305 item 2） |
+| A6291 | 高 | 看见MAY 让请求超上限 会被写成已经 Req 2 bundled interchangeable / 345 interchangeable | 官方 PrepareUsage prepusage item 2：not already 已经 Req 2 bundled / not 345 |
+| A6292 | 高 | 看见MaxBytes=-1 会交来整池 会被写成已经能回超限列表 interchangeable / 299 interchangeable | 官方 PrepareUsage prepusage item 2：not already 已经能回超限列表 / not 299 |
+| A6293 | 高 | 看见MAY 让请求超上限 会被写成已经整池都给 Prepare 就没有上限 interchangeable | 官方 PrepareUsage prepusage item 2：not already settled |
+| A6294 | 中 | 怎样裁回包、怎样设 MaxBytes = -1、怎样改 Prepare 列表会被抄进不确定 | 不抄。不写 怎样裁回包、怎样设 MaxBytes = -1、怎样改 Prepare 列表。不另写 19 节 |
+| A6285 | 记录 | 会与 503 / 355 / 423 / 1305 / 1306 糊成「看见初步交易列表叫 raw proposal就已经 Prepare 改列表 bundled interchangeable、就已经从内存池删掉 interchangeable、就已经只有 raw proposal interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 PrepareUsage raw not already Prepare-改列表 / not already deleted-from-mempool / not already only-raw 正式三事（503 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。503 PrepareProposal Usage rawmust bundled unbundling 启动（1304 item 1） |
+| A6286 | 高 | 看见初步交易列表叫 raw proposal 会被写成已经 Prepare 改列表 bundled interchangeable / 355 interchangeable | 官方 PrepareUsage prepusage item 1：not already 已经 Prepare 改列表 bundled / not 355 |
+| A6287 | 高 | 看见应用可以改这套 会被写成已经从内存池删掉 interchangeable / 423 interchangeable | 官方 PrepareUsage prepusage item 1：not already 已经从内存池删掉 / not 423 |
+| A6288 | 高 | 看见初步交易列表叫 raw proposal 会被写成已经只有 raw proposal interchangeable | 官方 PrepareUsage prepusage item 1：not already settled |
+| A6289 | 中 | 怎样裁回包、怎样设 MaxBytes = -1、怎样改 Prepare 列表会被抄进不确定 | 不抄。不写 怎样裁回包、怎样设 MaxBytes = -1、怎样改 Prepare 列表。不另写 19 节 |
 | A6280 | 记录 | 会与 236 / 232 / 207 / 1301 / 1302 糊成「看见RPC 能告诉你成没成就收据里已经有状态码 interchangeable、就轻客户端产品已经齐 interchangeable、就返回数据已经进了收据 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-658 rpc not already in-receipt / not already light-checked / not already returndata 正式三事（236 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。236 receipt status vs gas bundled unbundling 完成（1303 item 3） |
 | A6281 | 高 | 看见RPC 能告诉你成没成 会被写成收据里已经有状态码 interchangeable / 232 interchangeable | 官方 EIP-658 rcpt item 3：not already 收据里已经有状态码 / not 232 |
 | A6282 | 高 | 看见钱包绿了 会被写成轻客户端产品已经齐 interchangeable / 207 interchangeable | 官方 EIP-658 rcpt item 3：not already 轻客户端产品已经齐 / not 207 |

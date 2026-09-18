@@ -1,3 +1,6 @@
+- [`name-the-prepusage-notmust-bar.md`](name-the-prepusage-notmust-bar.md) — PrepareUsage must not already engine-trims / not already 355-pool / not already -1-no-cap 正式三事（503 余量）（不变量 1306）
+- [`name-the-prepusage-notexceed-bar.md`](name-the-prepusage-notexceed-bar.md) — PrepareUsage exceed not already Req-2 / not already can-return-oversize / not already no-cap 正式三事（503 余量）（不变量 1305）
+- [`name-the-prepusage-notraw-bar.md`](name-the-prepusage-notraw-bar.md) — PrepareUsage raw not already Prepare-改列表 / not already deleted-from-mempool / not already only-raw 正式三事（503 余量）（不变量 1304）
 - [`name-the-rcpt-notrpc-bar.md`](name-the-rcpt-notrpc-bar.md) — EIP-658 rpc not already in-receipt / not already light-checked / not already returndata 正式三事（236 余量）（不变量 1303）
 - [`name-the-rcpt-notgas-bar.md`](name-the-rcpt-notgas-bar.md) — EIP-658 gas not already success / not already failure / not already revert-177 正式三事（236 余量）（不变量 1302）
 - [`name-the-rcpt-notroot-bar.md`](name-the-rcpt-notroot-bar.md) — EIP-658 status not already mid-root / not already deprecated-spec / not already extra-column 正式三事（236 余量）（不变量 1301）
