@@ -1,3 +1,6 @@
+- [`name-the-extvicol-notgive-bar.md`](name-the-extvicol-notgive-bar.md) — ExtendedVoteInfo.extension_signature not already given-to-app / not already replay-protected / not already settled 正式三事（421 余量）（不变量 1045）
+- [`name-the-extvicol-notsign-bar.md`](name-the-extvicol-notsign-bar.md) — ExtendedVoteInfo.non_rp_vote_extension not already signed-as-is / not already replay-protected / not already settled 正式三事（421 余量）（不变量 1044）
+- [`name-the-extvicol-notextract-bar.md`](name-the-extvicol-notextract-bar.md) — ExtendedVoteInfo.vote_extension not already extracted / not already packed / not already settled 正式三事（421 余量）（不变量 1043）
 - [`name-the-finreqcol-notexec-bar.md`](name-the-finreqcol-notexec-bar.md) — FinalizeBlockRequest.txs not already executed / not already process-txs / not already settled 正式三事（422 余量）（不变量 1042）
 - [`name-the-finreqcol-nothead-bar.md`](name-the-finreqcol-nothead-bar.md) — FinalizeBlockRequest.height not already header-aligned / not already processed / not already settled 正式三事（422 余量）（不变量 1041）
 - [`name-the-finreqcol-notlocal-bar.md`](name-the-finreqcol-notlocal-bar.md) — FinalizeBlockRequest.decided_last_commit not already local / not already rewarded / not already settled 正式三事（422 余量）（不变量 1040）

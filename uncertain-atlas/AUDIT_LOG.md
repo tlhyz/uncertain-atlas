@@ -1,3 +1,18 @@
+| A4985 | 记录 | 会与 421 / 358 / 369 / 1043 / 1044 糊成「看见 ExtendedVoteInfo.extension_signature 就已经把验过的签交给应用 interchangeable、就已经有重放保护 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo.extension_signature not already given-to-app / not already replay-protected / not already settled 正式三事（421 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。421 extvitable vs usage bundled unbundling 完成（1045 item 3） |
+| A4986 | 高 | 看见填了 extension_signature 会被写成已经把验过的签交给应用 interchangeable | 官方 ExtendedVoteInfo 表栏 item 3：not already given-to-app |
+| A4987 | 高 | 看见验过了 会被写成已经有重放保护 interchangeable | 官方 ExtendedVoteInfo 表栏 item 3：not already replay-protected |
+| A4988 | 高 | 看见能指签 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo 表栏 item 3：not already settled |
+| A4989 | 中 | 怎样写表栏会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo 表栏。不另写 19 节 |
+| A4980 | 记录 | 会与 421 / 418 / 358 / 1043 / 1045 糊成「看见 ExtendedVoteInfo.non_rp_vote_extension 就已经按原样签 interchangeable、就已经有重放保护 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo.non_rp_vote_extension not already signed-as-is / not already replay-protected / not already settled 正式三事（421 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。421 extvitable vs usage bundled unbundling 续（1044 item 2） |
+| A4981 | 高 | 看见填了 non_rp_vote_extension 会被写成已经按原样签 interchangeable / 418 interchangeable | 官方 ExtendedVoteInfo 表栏 item 2：not already signed-as-is / not 418 |
+| A4982 | 高 | 看见是应用给的第二份 会被写成已经有重放保护 interchangeable | 官方 ExtendedVoteInfo 表栏 item 2：not already replay-protected |
+| A4983 | 高 | 看见能指第二份 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo 表栏 item 2：not already settled |
+| A4984 | 中 | 怎样写表栏会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo 表栏。不另写 19 节 |
+| A4975 | 记录 | 会与 421 / 369 / 418 / 1044 / 1045 糊成「看见 ExtendedVoteInfo.vote_extension 就已经从本进程抽出 interchangeable、就已经会包进 CanonicalVoteExtension interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendedVoteInfo.vote_extension not already extracted / not already packed / not already settled 正式三事（421 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。421 extvitable vs usage bundled unbundling 启动（1043 item 1） |
+| A4976 | 高 | 看见填了 vote_extension 会被写成已经从本进程抽出 interchangeable / 369 interchangeable | 官方 ExtendedVoteInfo 表栏 item 1：not already extracted / not 369 |
+| A4977 | 高 | 看见是应用给的 会被写成已经会包进 CanonicalVoteExtension interchangeable / 418 interchangeable | 官方 ExtendedVoteInfo 表栏 item 1：not already packed / not 418 |
+| A4978 | 高 | 看见能指扩展 会被写成已经交差 interchangeable | 官方 ExtendedVoteInfo 表栏 item 1：not already settled |
+| A4979 | 中 | 怎样写表栏会被抄进不确定 | 不抄。不写怎样写 ExtendedVoteInfo 表栏。不另写 19 节 |
 | A4970 | 记录 | 会与 422 / 408 / 411 / 419 / 1040 / 1041 糊成「看见 FinalizeBlockRequest.txs 就已经执行那些交易 interchangeable、就已经是 Process txs interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 FinalizeBlockRequest.txs not already executed / not already process-txs / not already settled 正式三事（422 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。422 finreq vs procreq bundled unbundling 完成（1042 item 3） |
 | A4971 | 高 | 看见填了 txs 会被写成已经执行那些交易 interchangeable / 408 interchangeable | 官方 Finalize 请求栏 item 3：not already executed / not 408 |
 | A4972 | 高 | 看见有交易列表 会被写成已经是 ProcessProposalRequest.txs interchangeable | 官方 Finalize 请求栏 item 3：not already process-txs |

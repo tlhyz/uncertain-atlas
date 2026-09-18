@@ -1,3 +1,15 @@
+## 2026-09-17（续 1162）
+
+- 不变量 1045；语料 C1023；模式 name-the-extvicol-notgive-bar；反模式 extvicol-notgive-sold-as-bundled；L10.3 第 1014 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo.extension_signature not already given-to-app / not already replay-protected / not already settled 正式三事（421 余量）。421 extvitable vs usage bundled unbundling 完成（1045 item 3）。
+
+## 2026-09-17（续 1161）
+
+- 不变量 1044；语料 C1022；模式 name-the-extvicol-notsign-bar；反模式 extvicol-notsign-sold-as-bundled；L10.3 第 1013 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo.non_rp_vote_extension not already signed-as-is / not already replay-protected / not already settled 正式三事（421 余量）。421 extvitable vs usage bundled unbundling 续（1044 item 2）。
+
+## 2026-09-17（续 1160）
+
+- 不变量 1043；语料 C1021；模式 name-the-extvicol-notextract-bar；反模式 extvicol-notextract-sold-as-bundled；L10.3 第 1012 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo.vote_extension not already extracted / not already packed / not already settled 正式三事（421 余量）。421 extvitable vs usage bundled unbundling 启动（1043 item 1）。
+
 ## 2026-09-17（续 1159）
 
 - 不变量 1042；语料 C1020；模式 name-the-finreqcol-notexec-bar；反模式 finreqcol-notexec-sold-as-bundled；L10.3 第 1011 条。填 L4.4 / CometBFT 档案 FinalizeBlockRequest.txs not already executed / not already process-txs / not already settled 正式三事（422 余量）。422 finreq vs procreq bundled unbundling 完成（1042 item 3）。

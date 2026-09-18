@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendedVoteInfo 表栏就已经从本进程抽出、已经按原样签、已经把验过的签交给应用」，必须分开 ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展是不是已经从本进程抽出、ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展是不是已经按原样签、ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签是不是已经把验过的签交给应用。可以跳过「看见填了 ExtendedVoteInfo 表栏就已经从本进程抽出」。不要另写怎样写 ExtendedVoteInfo 表栏。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 ExtendedVoteInfo 表栏就已经从本进程抽出、已经按原样签、已经把验过的签交给应用」，必须分开 ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展是不是已经从本进程抽出、ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展是不是已经按原样签、ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签是不是已经把验过的签交给应用。可以跳过「看见填了 ExtendedVoteInfo 表栏就已经从本进程抽出」。不要另写怎样写 ExtendedVoteInfo 表栏。421 extvitable vs usage bundled unbundling 完成（1043 item 1 / 1044 item 2 / 1045 item 3）；精读 [`worked-example-extvicol-notextract-vs-bundled.md`](worked-example-extvicol-notextract-vs-bundled.md)（不变量 1043 item 1）。
 
 ## 本页不抄
 

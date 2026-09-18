@@ -671,6 +671,9 @@
 - [`worked-example-procrestr-notts-vs-bundled.md`](worked-example-procrestr-notts-vs-bundled.md) — time≠already vote-ts-checked/header-verified/settled；≠420 bundled（不变量 1029）
 - [`worked-example-procrestr-notlocal-vs-bundled.md`](worked-example-procrestr-notlocal-vs-bundled.md) — proposed_last_commit≠already local-settled/ext-commit/processed；≠420 bundled（不变量 1028）
 - [`worked-example-procreqrest-vs-extreq.md`](worked-example-procreqrest-vs-extreq.md) — ProcessProposalRequest.proposed_last_commit 是从拟议块里的信息拿到的上一份提交信息 ≠ 已经交差 local_last_commit；ProcessProposalRequest.time 是拟议块的时间戳 ≠ 已经验过票上时间；ProcessProposalRequest.misbehavior 是过错验证者信息列表 ≠ 已经定奖惩（不变量 420）
+- [`worked-example-extvicol-notgive-vs-bundled.md`](worked-example-extvicol-notgive-vs-bundled.md) — extension_signature≠already given-to-app/replay-protected/settled；≠421 bundled（不变量 1045）
+- [`worked-example-extvicol-notsign-vs-bundled.md`](worked-example-extvicol-notsign-vs-bundled.md) — non_rp_vote_extension≠already signed-as-is/replay-protected/settled；≠421 bundled（不变量 1044）
+- [`worked-example-extvicol-notextract-vs-bundled.md`](worked-example-extvicol-notextract-vs-bundled.md) — vote_extension≠already extracted/packed/settled；≠421 bundled（不变量 1043）
 - [`worked-example-extvitable-vs-usage.md`](worked-example-extvitable-vs-usage.md) — ExtendedVoteInfo.vote_extension 是发送验证者的应用给的非确定扩展 ≠ 已经从本进程抽出；ExtendedVoteInfo.non_rp_vote_extension 是发送验证者的应用给的非重放保护扩展 ≠ 已经按原样签；ExtendedVoteInfo.extension_signature 是发送验证者造、CometBFT 验过的扩展签 ≠ 已经把验过的签交给应用（不变量 421）
 - [`worked-example-finreqcol-notexec-vs-bundled.md`](worked-example-finreqcol-notexec-vs-bundled.md) — txs≠already executed/process-txs/settled；≠422 bundled（不变量 1042）
 - [`worked-example-finreqcol-nothead-vs-bundled.md`](worked-example-finreqcol-nothead-vs-bundled.md) — height≠already header-aligned/processed/settled；≠422 bundled（不变量 1041）
