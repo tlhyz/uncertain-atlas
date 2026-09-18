@@ -1,3 +1,6 @@
+- [`name-the-wtx339-notold-bar.md`](name-the-wtx339-notold-bar.md) — BIP-339 old-getdata not already retired / not already have-wit / not already net-wide 正式三事（248 余量）（不变量 1249）
+- [`name-the-wtx339-notswitch-bar.md`](name-the-wtx339-notswitch-bar.md) — BIP-339 wtxidrelay not already switched / not already negotiated / not already using 正式三事（248 余量）（不变量 1248）
+- [`name-the-wtx339-nothave-bar.md`](name-the-wtx339-nothave-bar.md) — BIP-339 wtxid-ann not already have / not already accepted / not already never-again 正式三事（248 余量）（不变量 1247）
 - [`name-the-feat434-notlate-bar.md`](name-the-feat434-notlate-bar.md) — BIP-434 after-verack not already this-handshake / not already enabled / not already implemented 正式三事（259 余量）（不变量 1246）
 - [`name-the-feat434-noton-bar.md`](name-the-feat434-noton-bar.md) — BIP-434 feature-adv not already enabled / not already understood / not already illegal 正式三事（259 余量）（不变量 1245）
 - [`name-the-feat434-notver-bar.md`](name-the-feat434-notver-bar.md) — BIP-434 version-enough not already support / not already sent-page / not already merged-old 正式三事（259 余量）（不变量 1244）

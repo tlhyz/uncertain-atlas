@@ -39,7 +39,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见按 wtxid 通告就已经有那笔交易 / 就已经改口 / 就已经退役旧库存」。若对照带见证哈希转发，必须分开通告哈希、握手信号、旧类型索取。不要把通告类型写成已经验完见证。
+**建议（产品，不是事实）**：不确定第一条结算机可以跳过「看见按 wtxid 通告就已经有那笔交易 / 就已经改口 / 就已经退役旧库存」。若对照带见证哈希转发，必须分开通告哈希、握手信号、旧类型索取。不要把通告类型写成已经验完见证。248 wtxidrelay vs have bundled unbundling 完成（1247 item 1 / 1248 item 2 / 1249 item 3）；精读 [`worked-example-wtx339-nothave-vs-bundled.md`](worked-example-wtx339-nothave-vs-bundled.md)（不变量 1247 item 1）、[`worked-example-wtx339-notswitch-vs-bundled.md`](worked-example-wtx339-notswitch-vs-bundled.md)（不变量 1248 item 2）、[`worked-example-wtx339-notold-vs-bundled.md`](worked-example-wtx339-notold-vs-bundled.md)（不变量 1249 item 3）。
 
 ## 本页不抄
 

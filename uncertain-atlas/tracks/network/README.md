@@ -28,6 +28,9 @@ sendheaders ≠ 已经改用头通告：[`worked-example-hdr130-notswitch-vs-bun
 许可 ≠ 已经照做：[`worked-example-hdr130-notmust-vs-bundled.md`](worked-example-hdr130-notmust-vs-bundled.md)（许可≠already must/sending/forever；≠247 bundled；不变量 1236）。
 头通告新尖 ≠ 已经有块：[`worked-example-hdr130-nothave-vs-bundled.md`](worked-example-hdr130-nothave-vs-bundled.md)（先发头≠already have-block/have-middle/reorg-done；≠247 bundled；不变量 1237）。
 头通告偏好 ≠ 已经有块：[`worked-example-sendheaders-vs-have.md`](worked-example-sendheaders-vs-have.md)（看见发了 sendheaders 不是已经改用头通告；用头通告新尖不是已经有块；重组时先发头不是中间块已经在手里；130 ≠ 36 ≠ 155 ≠ compact）。
+按 wtxid 通告 ≠ 已经有那笔交易：[`worked-example-wtx339-nothave-vs-bundled.md`](worked-example-wtx339-nothave-vs-bundled.md)（通告≠already have/accepted/never-again；≠248 bundled；不变量 1247）。
+发了 wtxidrelay ≠ 已经改口：[`worked-example-wtx339-notswitch-vs-bundled.md`](worked-example-wtx339-notswitch-vs-bundled.md)（信号≠already switched/negotiated/using；≠248 bundled；不变量 1248）。
+仍用旧类型要父交易 ≠ 旧库存已经退役：[`worked-example-wtx339-notold-vs-bundled.md`](worked-example-wtx339-notold-vs-bundled.md)（旧索取≠already retired/have-wit/net-wide；≠248 bundled；不变量 1249）。
 按 wtxid 通告 ≠ 已经有交易：[`worked-example-wtxidrelay-vs-have.md`](worked-example-wtxidrelay-vs-have.md)（看见按 wtxid 通告不是已经有那笔交易；发了 wtxidrelay 不是已经改口；仍用旧类型要父交易不是旧库存已经退役；339 ≠ 152 ≠ 130 ≠ 133）。
 对账素描 ≠ 已经有交易：[`worked-example-erlay-vs-have.md`](worked-example-erlay-vs-have.md)（看见对账素描不是已经有那些交易；发了 sendtxrcncl 不是已经在对账；对账失败退回洪水不是库存通告已经退役；330 ≠ 339 ≠ 133 ≠ 36）。
 有限服务位 ≠ 已经是归档：[`worked-example-limited-service-vs-archive.md`](worked-example-limited-service-vs-archive.md)（看见有限服务位不是已经能服任意旧块；只保证最近窗口不是已经剪枝；服了最近一块不是已经暴露剪点；159 ≠ 207 ≠ 243 ≠ 25）。

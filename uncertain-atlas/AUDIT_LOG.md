@@ -1,3 +1,18 @@
+| A6010 | 记录 | 会与 248 / 152 / 245 / 1247 / 1248 糊成「看见仍用旧类型要父交易就已经退役旧库存 interchangeable、就已经有见证 interchangeable、就已经全网不再按 txid 通告 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L3.7 / L9.1 BIP-339 old-getdata not already retired / not already have-wit / not already net-wide 正式三事（248 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。248 wtxidrelay vs have bundled unbundling 完成（1249 item 3） |
+| A6011 | 高 | 看见仍用旧类型要父交易 会被写成旧库存已经退役 interchangeable / 152 interchangeable | 官方 BIP-339 wtxidrelay item 3：not already retired / not 152 |
+| A6012 | 高 | 看见通告类型改了 会被写成已经有见证 interchangeable / 245 interchangeable | 官方 BIP-339 wtxidrelay item 3：not already not already have-wit / not 245 |
+| A6013 | 高 | 看见两端都支持 会被写成全网已经不再按 txid 通告 interchangeable | 官方 BIP-339 wtxidrelay item 3：not already settled |
+| A6014 | 中 | 怎样改见证挡住转发、怎样用旧类型重放、怎样在应答之后补发信号会被抄进不确定 | 不抄。不写 怎样改见证挡住转发、怎样用旧类型重放、怎样在应答之后补发信号。不另写 19 节 |
+| A6005 | 记录 | 会与 248 / 247 / 259 / 1247 / 1249 糊成「看见发了 wtxidrelay 就已经改口 interchangeable、就已经谈妥 interchangeable、就已经在用 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L3.7 / L9.1 BIP-339 wtxidrelay not already switched / not already negotiated / not already using 正式三事（248 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。248 wtxidrelay vs have bundled unbundling 续（1248 item 2） |
+| A6006 | 高 | 看见发了 wtxidrelay 会被写成已经改口 interchangeable / 247 interchangeable | 官方 BIP-339 wtxidrelay item 2：not already switched / not 247 |
+| A6007 | 高 | 看见协议版本够了 会被写成已经谈妥 interchangeable / 259 interchangeable | 官方 BIP-339 wtxidrelay item 2：not already not already negotiated / not 259 |
+| A6008 | 高 | 看见发了 wtxidrelay 会被写成已经在用 interchangeable | 官方 BIP-339 wtxidrelay item 2：not already settled |
+| A6009 | 中 | 怎样改见证挡住转发、怎样用旧类型重放、怎样在应答之后补发信号会被抄进不确定 | 不抄。不写 怎样改见证挡住转发、怎样用旧类型重放、怎样在应答之后补发信号。不另写 19 节 |
+| A6000 | 记录 | 会与 248 / 152 / 247 / 1248 / 1249 糊成「看见按 wtxid 通告就已经有那笔交易 interchangeable、就已经收下 interchangeable、就已经永远不该下 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L3.7 / L9.1 BIP-339 wtxid-ann not already have / not already accepted / not already never-again 正式三事（248 余量）/ 网络表 / 停链面地图。不写进 index/03 共识行、Ethereum 行、M5.4、L5.1、L5.4、05b。248 wtxidrelay vs have bundled unbundling 启动（1247 item 1） |
+| A6001 | 高 | 看见按 wtxid 通告 会被写成已经有那笔交易 interchangeable / 152 interchangeable | 官方 BIP-339 wtxidrelay item 1：not already have / not 152 |
+| A6002 | 高 | 看见按 wtxid 通告 会被写成已经收下 interchangeable / 247 interchangeable | 官方 BIP-339 wtxidrelay item 1：not already not already accepted / not 247 |
+| A6003 | 高 | 看见拒过一份见证 会被写成这个 txid 已经永远不该下 interchangeable | 官方 BIP-339 wtxidrelay item 1：not already settled |
+| A6004 | 中 | 怎样改见证挡住转发、怎样用旧类型重放、怎样在应答之后补发信号会被抄进不确定 | 不抄。不写 怎样改见证挡住转发、怎样用旧类型重放、怎样在应答之后补发信号。不另写 19 节 |
 | A5995 | 记录 | 会与 259 / 242 / 245 / 1244 / 1245 糊成「看见 verack 之后才来的 feature 就已经是本页协商 interchangeable、就已经启用 interchangeable、就已经实现本页 interchangeable」 | 对照写清。不编博物馆页。写进 L3.4 / L9.1 BIP-434 after-verack not already this-handshake / not already enabled / not already implemented 正式三事（259 余量）/ 网络表 / 停链面地图。不写进 Ethereum 行、L5.1、05b、M5.4、L5.4、03 共识。259 feature vs enabled bundled unbundling 完成（1246 item 3） |
 | A5996 | 高 | 看见 verack 之后才来的 feature 会被写成已经是本页协商 interchangeable / 242 interchangeable | 官方 BIP-434 feature item 3：not already this-handshake / not 242 |
 | A5997 | 高 | 看见 verack 之后才来的 feature 会被写成已经启用 interchangeable / 245 interchangeable | 官方 BIP-434 feature item 3：not already not already enabled / not 245 |

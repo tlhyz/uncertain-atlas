@@ -1,3 +1,6 @@
+- [`wtx339-notold-sold-as-bundled.md`](wtx339-notold-sold-as-bundled.md) — 仍用旧类型要父交易 被写成旧库存已经退役 / 通告类型改了就已经有见证 / 两端都支持就已经全网改口（不变量 1249）
+- [`wtx339-notswitch-sold-as-bundled.md`](wtx339-notswitch-sold-as-bundled.md) — 发了 wtxidrelay 被写成已经改口 / 已经谈妥 / 已经在用（不变量 1248）
+- [`wtx339-nothave-sold-as-bundled.md`](wtx339-nothave-sold-as-bundled.md) — 按 wtxid 通告 被写成已经有那笔交易 / 已经收下 / 拒过见证就永远不该下（不变量 1247）
 - [`feat434-notlate-sold-as-bundled.md`](feat434-notlate-sold-as-bundled.md) — verack 之后才来的 feature 被写成已经是本页协商 / 已经启用 / 忽略不认识就已经实现本页（不变量 1246）
 - [`feat434-noton-sold-as-bundled.md`](feat434-noton-sold-as-bundled.md) — 通告了 feature 被写成已经启用 / 已经理解 / 不认识就已经非法（不变量 1245）
 - [`feat434-notver-sold-as-bundled.md`](feat434-notver-sold-as-bundled.md) — 协议版本够了 被写成已经支持某项功能 / 已经发了本页 / 旧绑版本功能已经并进（不变量 1244）

@@ -1,3 +1,15 @@
+## 2026-09-18（续 1366）
+
+- 不变量 1249；语料 C1227；模式 name-the-wtx339-notold-bar；反模式 wtx339-notold-sold-as-bundled；L10.3 第 1218 条。填 L3.4 / L3.7 / L9.1 BIP-339 old-getdata not already retired / not already have-wit / not already net-wide 正式三事（248 余量）。248 wtxidrelay vs have bundled unbundling 完成（1249 item 3）。
+
+## 2026-09-18（续 1365）
+
+- 不变量 1248；语料 C1226；模式 name-the-wtx339-notswitch-bar；反模式 wtx339-notswitch-sold-as-bundled；L10.3 第 1217 条。填 L3.4 / L3.7 / L9.1 BIP-339 wtxidrelay not already switched / not already negotiated / not already using 正式三事（248 余量）。248 wtxidrelay vs have bundled unbundling 续（1248 item 2）。
+
+## 2026-09-18（续 1364）
+
+- 不变量 1247；语料 C1225；模式 name-the-wtx339-nothave-bar；反模式 wtx339-nothave-sold-as-bundled；L10.3 第 1216 条。填 L3.4 / L3.7 / L9.1 BIP-339 wtxid-ann not already have / not already accepted / not already never-again 正式三事（248 余量）。248 wtxidrelay vs have bundled unbundling 启动（1247 item 1）。
+
 ## 2026-09-18（续 1363）
 
 - 不变量 1246；语料 C1224；模式 name-the-feat434-notlate-bar；反模式 feat434-notlate-sold-as-bundled；L10.3 第 1215 条。填 L3.4 / L9.1 BIP-434 after-verack not already this-handshake / not already enabled / not already implemented 正式三事（259 余量）。259 feature vs enabled bundled unbundling 完成（1246 item 3）。
