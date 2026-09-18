@@ -1,3 +1,15 @@
+## 2026-09-18（续 1222）
+
+- 不变量 1105；语料 C1083；模式 name-the-cguard-notproof-bar；反模式 cguard-notproof-sold-as-bundled；L10.3 第 1074 条。填 L4.4 / CometBFT 档案 Merkle proof self-describing-type not already ProofOp-type / not already apphash-aligned / not already settled 正式三事（405 余量）。405 checktxguard vs optional bundled unbundling 完成（1105 item 3）。
+
+## 2026-09-18（续 1221）
+
+- 不变量 1104；语料 C1082；模式 name-the-cguard-notreplay-bar；反模式 cguard-notreplay-sold-as-bundled；L10.3 第 1073 条。填 L4.4 / CometBFT 档案 CheckTx source-from-user-or-peer not already no-replay / not already app-protected / not already settled 正式三事（405 余量）。405 checktxguard vs optional bundled unbundling 续（1104 item 2）。
+
+## 2026-09-18（续 1220）
+
+- 不变量 1103；语料 C1081；模式 name-the-cguard-notopt-bar；反模式 cguard-notopt-sold-as-bundled；L10.3 第 1072 条。填 L4.4 / CometBFT 档案 CheckTx mempool-guard not already technically-optional / not already four-gates / not already settled 正式三事（405 余量）。405 checktxguard vs optional bundled unbundling 启动（1103 item 1）。
+
 ## 2026-09-18（续 1219）
 
 - 不变量 1102；语料 C1080；模式 name-the-fhash-notout-bar；反模式 fhash-notout-sold-as-bundled；L10.3 第 1071 条。填 L4.4 / CometBFT 档案 tx_results Code==0 not already not-in-block / not already header-printed / not already settled 正式三事（404 余量）。404 finapphash vs header bundled unbundling 完成（1102 item 3）。

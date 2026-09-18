@@ -1,3 +1,6 @@
+- [`cguard-notproof-sold-as-bundled.md`](cguard-notproof-sold-as-bundled.md) — 自描述 type 被写成已经是 ProofOp 类型 / 已经对上 AppHash / 已经交差（不变量 1105）
+- [`cguard-notreplay-sold-as-bundled.md`](cguard-notreplay-sold-as-bundled.md) — 来源 被写成已经保证不重放 / 已经过了 CheckTx 就有应用级保护 / 已经交差（不变量 1104）
+- [`cguard-notopt-sold-as-bundled.md`](cguard-notopt-sold-as-bundled.md) — CheckTx 守卫 被写成已经是技术上可选 / 已经是四门已经结算 / 已经交差（不变量 1103）
 - [`fhash-notout-sold-as-bundled.md`](fhash-notout-sold-as-bundled.md) — Code==0 被写成已经没进块 / 已经印进本头 / 已经交差（不变量 1102）
 - [`fhash-notalign-sold-as-bundled.md`](fhash-notalign-sold-as-bundled.md) — Query 锚 被写成已经对上 AppHash / 已经是按键查 / 已经交差（不变量 1101）
 - [`fhash-notheader-sold-as-bundled.md`](fhash-notheader-sold-as-bundled.md) — app_hash 空或硬编码 被写成已经印进本头 / 已经是本头 AppHash / 已经交差（不变量 1100）

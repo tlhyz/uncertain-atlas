@@ -1,3 +1,6 @@
+- [`name-the-cguard-notproof-bar.md`](name-the-cguard-notproof-bar.md) — Merkle proof self-describing-type not already ProofOp-type / not already apphash-aligned / not already settled 正式三事（405 余量）（不变量 1105）
+- [`name-the-cguard-notreplay-bar.md`](name-the-cguard-notreplay-bar.md) — CheckTx source-from-user-or-peer not already no-replay / not already app-protected / not already settled 正式三事（405 余量）（不变量 1104）
+- [`name-the-cguard-notopt-bar.md`](name-the-cguard-notopt-bar.md) — CheckTx mempool-guard not already technically-optional / not already four-gates / not already settled 正式三事（405 余量）（不变量 1103）
 - [`name-the-fhash-notout-bar.md`](name-the-fhash-notout-bar.md) — tx_results Code==0 not already not-in-block / not already header-printed / not already settled 正式三事（404 余量）（不变量 1102）
 - [`name-the-fhash-notalign-bar.md`](name-the-fhash-notalign-bar.md) — Query proof-anchor not already apphash-aligned / not already keyed-lookup / not already settled 正式三事（404 余量）（不变量 1101）
 - [`name-the-fhash-notheader-bar.md`](name-the-fhash-notheader-bar.md) — Finalize app_hash empty-or-hardcoded-det not already header-printed / not already this-header / not already settled 正式三事（404 余量）（不变量 1100）

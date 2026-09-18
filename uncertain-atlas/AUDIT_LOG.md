@@ -1,3 +1,18 @@
+| A5285 | 记录 | 会与 405 / 325 / 1101 / 1103 / 1104 糊成「看见写了 type 就已经是 ProofOp 类型 interchangeable、就已经对上 AppHash interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Merkle proof self-describing-type not already ProofOp-type / not already apphash-aligned / not already settled 正式三事（405 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。405 checktxguard vs optional bundled unbundling 完成（1105 item 3） |
+| A5286 | 高 | 看见写了 type 会被写成已经是 ProofOp 类型 interchangeable / 325 interchangeable | 官方 CheckTx 守卫余量 item 3：not already ProofOp-type / not 325 |
+| A5287 | 高 | 看见能支持多种树 会被写成已经对上 AppHash interchangeable / 1101 interchangeable | 官方 CheckTx 守卫余量 item 3：not already apphash-aligned / not 1101 |
+| A5288 | 高 | 看见能回证明 会被写成已经交差 interchangeable | 官方 CheckTx 守卫余量 item 3：not already settled |
+| A5289 | 中 | 怎样写守卫余量会被抄进不确定 | 不抄。不写怎样写 CheckTx 守卫余量。不另写 19 节 |
+| A5280 | 记录 | 会与 405 / 313 / 328 / 1103 / 1105 糊成「看见送来了就已经保证不重放 interchangeable、就已经过了 CheckTx 就有应用级保护 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx source-from-user-or-peer not already no-replay / not already app-protected / not already settled 正式三事（405 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。405 checktxguard vs optional bundled unbundling 续（1104 item 2） |
+| A5281 | 高 | 看见送来了 会被写成已经保证不重放 interchangeable / 313 interchangeable | 官方 CheckTx 守卫余量 item 2：not already no-replay / not 313 |
+| A5282 | 高 | 看见能来自邻居 会被写成已经过了 CheckTx 就有应用级保护 interchangeable / 328 interchangeable | 官方 CheckTx 守卫余量 item 2：not already app-protected / not 328 |
+| A5283 | 高 | 看见能来自用户 会被写成已经交差 interchangeable | 官方 CheckTx 守卫余量 item 2：not already settled |
+| A5284 | 中 | 怎样写守卫余量会被抄进不确定 | 不抄。不写怎样写 CheckTx 守卫余量。不另写 19 节 |
+| A5275 | 记录 | 会与 405 / 373 / 339 / 1104 / 1105 糊成「看见先跑了就已经是技术上可选 interchangeable、就已经是四门已经结算 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 CheckTx mempool-guard not already technically-optional / not already four-gates / not already settled 正式三事（405 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。405 checktxguard vs optional bundled unbundling 启动（1103 item 1） |
+| A5276 | 高 | 看见先跑了 会被写成已经是技术上可选 interchangeable / 373 interchangeable | 官方 CheckTx 守卫余量 item 1：not already technically-optional / not 373 |
+| A5277 | 高 | 看见守着本地池 会被写成已经是四门已经结算 interchangeable / 339 interchangeable | 官方 CheckTx 守卫余量 item 1：not already four-gates / not 339 |
+| A5278 | 高 | 看见每条节点都跑 会被写成已经交差 interchangeable | 官方 CheckTx 守卫余量 item 1：not already settled |
+| A5279 | 中 | 怎样写守卫余量会被抄进不确定 | 不抄。不写怎样写 CheckTx 守卫余量。不另写 19 节 |
 | A5270 | 记录 | 会与 404 / 316 / 431 / 1100 / 1101 糊成「看见 Code==0 就已经没进块 interchangeable、就已经印进本头 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 tx_results Code==0 not already not-in-block / not already header-printed / not already settled 正式三事（404 余量）/ 实现表 / 停链面地图 / CometBFT 行。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1。404 finapphash vs header bundled unbundling 完成（1102 item 3） |
 | A5271 | 高 | 看见回了 0 会被写成已经没进块 interchangeable / 316 interchangeable | 官方 Finalize 回包余量 item 3：not already not-in-block / not 316 |
 | A5272 | 高 | 看见这笔合法 会被写成已经印进本头 interchangeable / 431 interchangeable | 官方 Finalize 回包余量 item 3：not already header-printed / not 431 |

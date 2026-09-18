@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 CheckTx 守卫余量就已经是技术上可选、已经保证不重放、已经是 ProofOp 类型」，必须分开 CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池是不是已经是技术上可选、这笔可以来自外部用户、也可以来自另一节点是不是已经保证不重放、默克尔证明带自描述 type、好支持多种默克尔树和编码是不是已经是 ProofOp 类型。可以跳过「看见回了 CheckTx 守卫余量就已经是技术上可选」。不要另写怎样写 CheckTx 守卫余量。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 CheckTx 守卫余量就已经是技术上可选、已经保证不重放、已经是 ProofOp 类型」，必须分开 CheckTx 是内存池的守卫、每条节点先跑 CheckTx 才让交易进本地池是不是已经是技术上可选、这笔可以来自外部用户、也可以来自另一节点是不是已经保证不重放、默克尔证明带自描述 type、好支持多种默克尔树和编码是不是已经是 ProofOp 类型。可以跳过「看见回了 CheckTx 守卫余量就已经是技术上可选」。不要另写怎样写 CheckTx 守卫余量。405 checktxguard vs optional bundled unbundling 完成（1103 item 1 / 1104 item 2 / 1105 item 3）；精读 [`worked-example-cguard-notopt-vs-bundled.md`](worked-example-cguard-notopt-vs-bundled.md)（不变量 1103 item 1）。
 
 ## 本页不抄
 
