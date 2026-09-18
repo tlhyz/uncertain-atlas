@@ -1,3 +1,6 @@
+- [`bip85-nottarget-sold-as-bundled.md`](bip85-nottarget-sold-as-bundled.md) — 派生熵 被写成已经是目标钱包的种子 / 已经是本钱包里的钥 / 已经交差（不变量 1123）
+- [`bip85-notinvert-sold-as-bundled.md`](bip85-notinvert-sold-as-bundled.md) — 扩展根钥 被写成已经能倒回助记词 / 已经是那份熵 / 已经交差（不变量 1122）
+- [`bip85-notcover-sold-as-bundled.md`](bip85-notcover-sold-as-bundled.md) — 一份助记词 被写成已经能备齐所有钱包 / 已经更安全 / 已经交差（不变量 1121）
 - [`purp43-notbtc-sold-as-bundled.md`](purp43-notbtc-sold-as-bundled.md) — 同一套前缀 被写成已经是比特币专用 / 已经是 BIP32 默认账户 / 已经交差（不变量 1120）
 - [`purp43-notstruct-sold-as-bundled.md`](purp43-notstruct-sold-as-bundled.md) — 自称 BIPxx compatible 被写成已经是那份结构 / 已经支持全部能力 / 已经交差（不变量 1119）
 - [`purp43-notinterop-sold-as-bundled.md`](purp43-notinterop-sold-as-bundled.md) — BIP32 compatible 被写成已经能互操作 / 已经同一套树 / 已经交差（不变量 1118）

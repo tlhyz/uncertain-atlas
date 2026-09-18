@@ -1,3 +1,15 @@
+## 2026-09-18（续 1240）
+
+- 不变量 1123；语料 C1101；模式 name-the-bip85-nottarget-bar；反模式 bip85-nottarget-sold-as-bundled；L10.3 第 1092 条。填 L1.4 / L3.6 BIP-85 derived-entropy not already target-wallet-seed / not already this-tree-key / not already settled 正式三事（286 余量）。286 entropy vs seed bundled unbundling 完成（1123 item 3）。
+
+## 2026-09-18（续 1239）
+
+- 不变量 1122；语料 C1100；模式 name-the-bip85-notinvert-bar；反模式 bip85-notinvert-sold-as-bundled；L10.3 第 1091 条。填 L1.4 / L3.6 BIP-85 xprv-root not already invertible-to-mnemonic / not already the-entropy / not already settled 正式三事（286 余量）。286 entropy vs seed bundled unbundling 续（1122 item 2）。
+
+## 2026-09-18（续 1238）
+
+- 不变量 1121；语料 C1099；模式 name-the-bip85-notcover-bar；反模式 bip85-notcover-sold-as-bundled；L10.3 第 1090 条。填 L1.4 / L3.6 BIP-85 one-mnemonic not already covers-all-wallets / not already safer-to-share / not already settled 正式三事（286 余量）。286 entropy vs seed bundled unbundling 启动（1121 item 1）。
+
 ## 2026-09-18（续 1237）
 
 - 不变量 1120；语料 C1098；模式 name-the-purp43-notbtc-bar；反模式 purp43-notbtc-sold-as-bundled；L10.3 第 1089 条。填 L1.4 / L3.6 BIP-43 same-xpub-prefix not already bitcoin-only / not already BIP32-default-account / not already settled 正式三事（266 余量）。266 purpose vs compatible bundled unbundling 完成（1120 item 3）。

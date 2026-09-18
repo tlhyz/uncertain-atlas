@@ -1,3 +1,9 @@
+| C1101 | 1123 | bip85 nottarget≠183/286 | 文案把派生出的熵 / 截过的比特 写成已经是目标钱包的种子 interchangeable 或已经和 183 interchangeable / 1123 bip85-nottarget interchangeable；或把看见给另一个应用用了 写成已经是本钱包里的钥 interchangeable；或把看见其余截掉 写成已经交差 interchangeable，或已经和 286 entropy-vs-seed bundled / bip85-nottarget-sold-as-bundled interchangeable / 1121 bip85-notcover interchangeable / 1122 bip85-notinvert interchangeable |
+
+| C1100 | 1122 | bip85 notinvert≠182/286 | 文案把扩展根钥 / 派生出的子私钥 写成已经能倒回助记词 interchangeable 或已经和 182 interchangeable / 1122 bip85-notinvert interchangeable；或把看见子私钥 写成已经是那份熵 interchangeable；或把看见本页不关心来源 写成已经交差 interchangeable，或已经和 286 entropy-vs-seed bundled / bip85-notinvert-sold-as-bundled interchangeable / 1121 bip85-notcover interchangeable / 1123 bip85-nottarget interchangeable |
+
+| C1099 | 1121 | bip85 notcover≠183/286 | 文案把一份助记词 / 一份种子备份 写成已经能备齐所有钱包 interchangeable 或已经和 183 interchangeable / 1121 bip85-notcover interchangeable；或把看见共用了种子 写成已经更安全 interchangeable；或把看见标准互不兼容 写成已经交差 interchangeable，或已经和 286 entropy-vs-seed bundled / bip85-notcover-sold-as-bundled interchangeable / 1122 bip85-notinvert interchangeable / 1123 bip85-nottarget interchangeable |
+
 | C1098 | 1120 | purp43 notbtc≠182/266 | 文案把同一套扩展钥前缀 / 版本魔数 写成已经是比特币专用 interchangeable 或已经和 182 interchangeable / 1120 purp43-notbtc interchangeable；或把看见默认账户支 写成已经是 BIP32 默认账户 interchangeable；或把看见不必另开魔数 写成已经交差 interchangeable，或已经和 266 purpose-vs-compatible bundled / purp43-notbtc-sold-as-bundled interchangeable / 1118 purp43-notinterop interchangeable / 1119 purp43-notstruct interchangeable |
 
 | C1097 | 1119 | purp43 notstruct≠184/266 | 文案把自称 BIPxx compatible / 只实现一部分 写成已经是那份结构 interchangeable 或已经和 184 interchangeable / 1119 purp43-notstruct interchangeable；或把看见用途号 写成已经支持全部能力 interchangeable；或把看见另写一份 BIP 写成已经交差 interchangeable，或已经和 266 purpose-vs-compatible bundled / purp43-notstruct-sold-as-bundled interchangeable / 1118 purp43-notinterop interchangeable / 1120 purp43-notbtc interchangeable |

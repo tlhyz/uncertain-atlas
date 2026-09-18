@@ -1,3 +1,6 @@
+- [`name-the-bip85-nottarget-bar.md`](name-the-bip85-nottarget-bar.md) — BIP-85 derived-entropy not already target-wallet-seed / not already this-tree-key / not already settled 正式三事（286 余量）（不变量 1123）
+- [`name-the-bip85-notinvert-bar.md`](name-the-bip85-notinvert-bar.md) — BIP-85 xprv-root not already invertible-to-mnemonic / not already the-entropy / not already settled 正式三事（286 余量）（不变量 1122）
+- [`name-the-bip85-notcover-bar.md`](name-the-bip85-notcover-bar.md) — BIP-85 one-mnemonic not already covers-all-wallets / not already safer-to-share / not already settled 正式三事（286 余量）（不变量 1121）
 - [`name-the-purp43-notbtc-bar.md`](name-the-purp43-notbtc-bar.md) — BIP-43 same-xpub-prefix not already bitcoin-only / not already BIP32-default-account / not already settled 正式三事（266 余量）（不变量 1120）
 - [`name-the-purp43-notstruct-bar.md`](name-the-purp43-notstruct-bar.md) — BIP-43 BIPxx-compatible-subset not already that-BIP-structure / not already full-capability / not already settled 正式三事（266 余量）（不变量 1119）
 - [`name-the-purp43-notinterop-bar.md`](name-the-purp43-notinterop-bar.md) — BIP-43 BIP32-compatible not already interoperable / not already same-tree / not already settled 正式三事（266 余量）（不变量 1118）

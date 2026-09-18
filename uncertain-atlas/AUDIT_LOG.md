@@ -1,3 +1,18 @@
+| A5380 | 记录 | 会与 286 / 183 / 1115 / 1121 / 1122 糊成「看见派生出的熵就已经是目标钱包的种子 interchangeable、就已经是本钱包里的钥 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-85 derived-entropy not already target-wallet-seed / not already this-tree-key / not already settled 正式三事（286 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。286 entropy vs seed bundled unbundling 完成（1123 item 3） |
+| A5381 | 高 | 看见派生出的熵 会被写成已经是目标钱包的种子 interchangeable / 183 interchangeable | 官方 BIP-85 导出熵 item 3：not already target-wallet-seed / not 183 |
+| A5382 | 高 | 看见给另一个应用用了 会被写成已经是本钱包里的钥 interchangeable / 1115 interchangeable | 官方 BIP-85 导出熵 item 3：not already this-tree-key / not 1115 |
+| A5383 | 高 | 看见其余截掉 会被写成已经交差 interchangeable | 官方 BIP-85 导出熵 item 3：not already settled |
+| A5384 | 中 | 怎样从子钥算出熵会被抄进不确定 | 不抄。不写怎样从子钥算出熵。不另写 19 节 |
+| A5375 | 记录 | 会与 286 / 182 / 183 / 1121 / 1123 糊成「看见扩展根钥就已经能倒回助记词 interchangeable、就已经是那份熵 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-85 xprv-root not already invertible-to-mnemonic / not already the-entropy / not already settled 正式三事（286 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。286 entropy vs seed bundled unbundling 续（1122 item 2） |
+| A5376 | 高 | 看见扩展根钥 会被写成已经能倒回助记词 interchangeable / 182 interchangeable | 官方 BIP-85 导出熵 item 2：not already invertible-to-mnemonic / not 182 |
+| A5377 | 高 | 看见子私钥 会被写成已经是那份熵 interchangeable / 183 interchangeable | 官方 BIP-85 导出熵 item 2：not already the-entropy / not 183 |
+| A5378 | 高 | 看见本页不关心来源 会被写成已经交差 interchangeable | 官方 BIP-85 导出熵 item 2：not already settled |
+| A5379 | 中 | 怎样从子钥算出熵会被抄进不确定 | 不抄。不写怎样从子钥算出熵。不另写 19 节 |
+| A5370 | 记录 | 会与 286 / 183 / 1118 / 1122 / 1123 糊成「看见一份助记词就已经能备齐所有钱包 interchangeable、就已经更安全 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-85 one-mnemonic not already covers-all-wallets / not already safer-to-share / not already settled 正式三事（286 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。286 entropy vs seed bundled unbundling 启动（1121 item 1） |
+| A5371 | 高 | 看见一份助记词 会被写成已经能备齐所有钱包 interchangeable / 183 interchangeable | 官方 BIP-85 导出熵 item 1：not already covers-all-wallets / not 183 |
+| A5372 | 高 | 看见共用了种子 会被写成已经更安全 interchangeable / 1118 interchangeable | 官方 BIP-85 导出熵 item 1：not already safer-to-share / not 1118 |
+| A5373 | 高 | 看见标准互不兼容 会被写成已经交差 interchangeable | 官方 BIP-85 导出熵 item 1：not already settled |
+| A5374 | 中 | 怎样从子钥算出熵会被抄进不确定 | 不抄。不写怎样从子钥算出熵。不另写 19 节 |
 | A5365 | 记录 | 会与 266 / 182 / 1116 / 1118 / 1119 糊成「看见同一套前缀就已经是比特币专用 interchangeable、就已经是 BIP32 默认账户 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-43 same-xpub-prefix not already bitcoin-only / not already BIP32-default-account / not already settled 正式三事（266 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。266 purpose vs compatible bundled unbundling 完成（1120 item 3） |
 | A5366 | 高 | 看见同一套前缀 会被写成已经是比特币专用 interchangeable / 182 interchangeable | 官方 BIP-43 用途层 item 3：not already bitcoin-only / not 182 |
 | A5367 | 高 | 看见默认账户支 会被写成已经是 BIP32 默认账户 interchangeable / 1116 interchangeable | 官方 BIP-43 用途层 item 3：not already BIP32-default-account / not 1116 |
