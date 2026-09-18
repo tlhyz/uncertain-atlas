@@ -1,3 +1,18 @@
+| A5440 | 记录 | 会与 270 / 1129 / 1131 / 1133 / 1134 糊成「看见未压缩钥就已经是本页 interchangeable、就已经能当网络规则 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-67 uncompressed-key not already this-page / not already network-rule / not already settled 正式三事（270 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。270 sorted vs one-address bundled unbundling 完成（1135 item 3） |
+| A5441 | 高 | 看见未压缩钥 会被写成已经是本页 interchangeable / 1129 interchangeable | 官方 BIP-67 确定性多签地址 item 3：not already this-page / not 1129 |
+| A5442 | 高 | 看见一条 P2SH 地址 会被写成已经能当网络规则 interchangeable / 1131 interchangeable | 官方 BIP-67 确定性多签地址 item 3：not already network-rule / not 1131 |
+| A5443 | 高 | 看见一群人没有全部合规 会被写成已经交差 interchangeable | 官方 BIP-67 确定性多签地址 item 3：not already settled |
+| A5444 | 中 | 怎样按字节字典序排公钥或 BIP-11 / BIP-45 会被抄进不确定 | 不抄。不写怎样按字节字典序排公钥。不另写 BIP-11 / BIP-45。不另写 19 节 |
+| A5435 | 记录 | 会与 270 / 182 / 1130 / 1133 / 1135 糊成「看见只共享门限和主公钥就已经够了 interchangeable、就已经必须为每个地址另存一份状态 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-67 shared-threshold-master not already enough / not already must-store-each / not already settled 正式三事（270 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。270 sorted vs one-address bundled unbundling 续（1134 item 2） |
+| A5436 | 高 | 看见只共享门限和参与者主公钥 会被写成已经够了 interchangeable / 182 interchangeable | 官方 BIP-67 确定性多签地址 item 2：not already enough / not 182 |
+| A5437 | 高 | 看见还没采用本页 会被写成已经必须为每个地址另存一份状态 interchangeable / 1130 interchangeable | 官方 BIP-67 确定性多签地址 item 2：not already must-store-each / not 1130 |
+| A5438 | 高 | 看见代签服务之外的一方也能找回 会被写成已经交差 interchangeable | 官方 BIP-67 确定性多签地址 item 2：not already settled |
+| A5439 | 中 | 怎样按字节字典序排公钥或 BIP-11 / BIP-45 会被抄进不确定 | 不抄。不写怎样按字节字典序排公钥。不另写 BIP-11 / BIP-45。不另写 19 节 |
+| A5430 | 记录 | 会与 270 / 170 / 1129 / 1134 / 1135 糊成「看见同一套钥就已经是同一条赎回脚本 interchangeable、就已经是同一条 P2SH 地址 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-67 same-keys-threshold not already same-redeem / not already same-p2sh / not already settled 正式三事（270 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。270 sorted vs one-address bundled unbundling 启动（1133 item 1） |
+| A5431 | 高 | 看见同一套钥 会被写成已经是同一条赎回脚本 interchangeable / 170 interchangeable | 官方 BIP-67 确定性多签地址 item 1：not already same-redeem / not 170 |
+| A5432 | 高 | 看见门限一样 会被写成已经是同一条 P2SH 地址 interchangeable / 1129 interchangeable | 官方 BIP-67 确定性多签地址 item 1：not already same-p2sh / not 1129 |
+| A5433 | 高 | 看见遵守顺序和编码 会被写成已经交差 interchangeable | 官方 BIP-67 确定性多签地址 item 1：not already settled |
+| A5434 | 中 | 怎样按字节字典序排公钥或 BIP-11 / BIP-45 会被抄进不确定 | 不抄。不写怎样按字节字典序排公钥。不另写 BIP-11 / BIP-45。不另写 19 节 |
 | A5425 | 记录 | 会与 271 / 1117 / 1126 / 1130 / 1131 糊成「看见前面分支没有交易就已经扫完 interchangeable、就已经没有这一支 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-45 earlier-cosigner-branch not already discovery-done / not already first-branch-enough / not already settled 正式三事（271 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。271 cosigner vs discovered bundled unbundling 完成（1132 item 3） |
 | A5426 | 高 | 看见前面的联合签名人分支没有交易 会被写成已经扫完 interchangeable / 1117 interchangeable | 官方 BIP-45 多方多签 item 3：not already discovery-done / not 1117 |
 | A5427 | 高 | 看见余额为零 会被写成已经没有这一支 interchangeable / 1126 interchangeable | 官方 BIP-45 多方多签 item 3：not already first-branch-enough / not 1126 |

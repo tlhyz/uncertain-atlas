@@ -1,3 +1,6 @@
+- [`sort67-notuncomp-sold-as-bundled.md`](sort67-notuncomp-sold-as-bundled.md) — 未压缩钥 被写成已经是本页 / 已经能当网络规则 / 已经交差（不变量 1135）
+- [`sort67-notshare-sold-as-bundled.md`](sort67-notshare-sold-as-bundled.md) — 只共享门限和主公钥 被写成已经够了 / 已经必须另存状态 / 已经交差（不变量 1134）
+- [`sort67-notaddr-sold-as-bundled.md`](sort67-notaddr-sold-as-bundled.md) — 同一套钥 被写成已经是同一条赎回 / 已经是同一条地址 / 已经交差（不变量 1133）
 - [`cos45-notdone-sold-as-bundled.md`](cos45-notdone-sold-as-bundled.md) — 前面分支没有交易 被写成已经扫完 / 已经没有这一支 / 已经交差（不变量 1132）
 - [`cos45-notsign-sold-as-bundled.md`](cos45-notsign-sold-as-bundled.md) — 能独立长地址 被写成已经能独立花 / 已经是同一个人的钥 / 已经交差（不变量 1131）
 - [`cos45-notmaster-sold-as-bundled.md`](cos45-notmaster-sold-as-bundled.md) — 共享主公钥 被写成已经是本页 / 已经共享了本页要的那一层 / 已经交差（不变量 1130）

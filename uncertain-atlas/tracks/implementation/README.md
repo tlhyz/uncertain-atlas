@@ -797,6 +797,9 @@
 - [`worked-example-msig48-notacct-vs-bundled.md`](worked-example-msig48-notacct-vs-bundled.md) — 脚本类型层≠already account-layer/all-future-scripts-fixed/settled；≠269 bundled（不变量 1128）
 - [`worked-example-msig48-notmove-vs-bundled.md`](worked-example-msig48-notmove-vs-bundled.md) — 现有多签习惯≠already must-migrate/path-rewritable/settled；≠269 bundled（不变量 1127）
 - [`worked-example-script-type-vs-account.md`](worked-example-script-type-vs-account.md) — 现有多签派生习惯 ≠ 已经要搬家；脚本类型层 ≠ 已经是账户层；本页多签 ≠ 已经不排序（不变量 269）
+- [`worked-example-sort67-notuncomp-vs-bundled.md`](worked-example-sort67-notuncomp-vs-bundled.md) — 未压缩钥≠already this-page/network-rule/settled；≠270 bundled（不变量 1135）
+- [`worked-example-sort67-notshare-vs-bundled.md`](worked-example-sort67-notshare-vs-bundled.md) — 只共享门限和主公钥≠already enough/must-store-each/settled；≠270 bundled（不变量 1134）
+- [`worked-example-sort67-notaddr-vs-bundled.md`](worked-example-sort67-notaddr-vs-bundled.md) — 同一套钥≠already same-redeem/same-p2sh/settled；≠270 bundled（不变量 1133）
 - [`worked-example-sorted-vs-one-address.md`](worked-example-sorted-vs-one-address.md) — 同一套钥 ≠ 已经是同一条 P2SH 地址；只共享门限和主公钥 ≠ 已经够了；未压缩钥 ≠ 已经是本页（不变量 270）
 - [`worked-example-cos45-notdone-vs-bundled.md`](worked-example-cos45-notdone-vs-bundled.md) — 前面分支没有交易≠already discovery-done/first-branch-enough/settled；≠271 bundled（不变量 1132）
 - [`worked-example-cos45-notsign-vs-bundled.md`](worked-example-cos45-notsign-vs-bundled.md) — 能独立长地址≠already independent-sign/same-person-key/settled；≠271 bundled（不变量 1131）

@@ -1,3 +1,15 @@
+## 2026-09-18（续 1252）
+
+- 不变量 1135；语料 C1113；模式 name-the-sort67-notuncomp-bar；反模式 sort67-notuncomp-sold-as-bundled；L10.3 第 1104 条。填 L1.4 / L3.6 BIP-67 uncompressed-key not already this-page / not already network-rule / not already settled 正式三事（270 余量）。270 sorted vs one-address bundled unbundling 完成（1135 item 3）。
+
+## 2026-09-18（续 1251）
+
+- 不变量 1134；语料 C1112；模式 name-the-sort67-notshare-bar；反模式 sort67-notshare-sold-as-bundled；L10.3 第 1103 条。填 L1.4 / L3.6 BIP-67 shared-threshold-master not already enough / not already must-store-each / not already settled 正式三事（270 余量）。270 sorted vs one-address bundled unbundling 续（1134 item 2）。
+
+## 2026-09-18（续 1250）
+
+- 不变量 1133；语料 C1111；模式 name-the-sort67-notaddr-bar；反模式 sort67-notaddr-sold-as-bundled；L10.3 第 1102 条。填 L1.4 / L3.6 BIP-67 same-keys-threshold not already same-redeem / not already same-p2sh / not already settled 正式三事（270 余量）。270 sorted vs one-address bundled unbundling 启动（1133 item 1）。
+
 ## 2026-09-18（续 1249）
 
 - 不变量 1132；语料 C1110；模式 name-the-cos45-notdone-bar；反模式 cos45-notdone-sold-as-bundled；L10.3 第 1101 条。填 L1.4 / L3.6 BIP-45 earlier-cosigner-branch not already discovery-done / not already first-branch-enough / not already settled 正式三事（271 余量）。271 cosigner vs discovered bundled unbundling 完成（1132 item 3）。

@@ -1,3 +1,6 @@
+- [`name-the-sort67-notuncomp-bar.md`](name-the-sort67-notuncomp-bar.md) — BIP-67 uncompressed-key not already this-page / not already network-rule / not already settled 正式三事（270 余量）（不变量 1135）
+- [`name-the-sort67-notshare-bar.md`](name-the-sort67-notshare-bar.md) — BIP-67 shared-threshold-master not already enough / not already must-store-each / not already settled 正式三事（270 余量）（不变量 1134）
+- [`name-the-sort67-notaddr-bar.md`](name-the-sort67-notaddr-bar.md) — BIP-67 same-keys-threshold not already same-redeem / not already same-p2sh / not already settled 正式三事（270 余量）（不变量 1133）
 - [`name-the-cos45-notdone-bar.md`](name-the-cos45-notdone-bar.md) — BIP-45 earlier-cosigner-branch not already discovery-done / not already first-branch-enough / not already settled 正式三事（271 余量）（不变量 1132）
 - [`name-the-cos45-notsign-bar.md`](name-the-cos45-notsign-bar.md) — BIP-45 independent-address not already independent-sign / not already same-person-key / not already settled 正式三事（271 余量）（不变量 1131）
 - [`name-the-cos45-notmaster-bar.md`](name-the-cos45-notmaster-bar.md) — BIP-45 shared-master-xpub not already this-page / not already enough / not already settled 正式三事（271 余量）（不变量 1130）
