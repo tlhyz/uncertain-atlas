@@ -853,6 +853,9 @@
 - [`worked-example-mpsbt373-notout-vs-bundled.md`](worked-example-mpsbt373-notout-vs-bundled.md) — 聚合钥栏≠already tap-output-key/x-only-or-internal/settled；≠284 bundled（不变量 1173）
 - [`worked-example-mpsbt373-notold-vs-bundled.md`](worked-example-mpsbt373-notold-vs-bundled.md) — 旧栏≠already can-hold-musig/can-finish-rounds/settled；≠284 bundled（不变量 1172）
 - [`worked-example-musig-psbt-vs-tap.md`](worked-example-musig-psbt-vs-tap.md) — 旧 PSBT 栏 ≠ 已经能装 MuSig2；聚合钥栏 ≠ 已经是输出钥；参与者钥 ≠ 已经能出部分签（不变量 284）
+- [`worked-example-mpath87-notseed-vs-bundled.md`](worked-example-mpath87-notseed-vs-bundled.md) — 主种子≠already enough-to-recover/singlesig-default/settled；≠285 bundled（不变量 1177）
+- [`worked-example-mpath87-notneed-vs-bundled.md`](worked-example-mpath87-notneed-vs-bundled.md) — 路径脚本类型≠already necessary/no-descriptor/settled；≠285 bundled（不变量 1176）
+- [`worked-example-mpath87-nottree-vs-bundled.md`](worked-example-mpath87-nottree-vs-bundled.md) — 脚本各走各的路径≠already the-multisig-tree/no-descriptor/settled；≠285 bundled（不变量 1175）
 - [`worked-example-multisig-path-vs-script.md`](worked-example-multisig-path-vs-script.md) — 脚本各走各的路径 ≠ 已经是多签该有的树；路径里的脚本类型 ≠ 已经必要；主种子 ≠ 已经够找回（不变量 285）
 - [`worked-example-bip85-nottarget-vs-bundled.md`](worked-example-bip85-nottarget-vs-bundled.md) — 派生熵≠already target-wallet-seed/this-tree-key/settled；≠286 bundled（不变量 1123）
 - [`worked-example-bip85-notinvert-vs-bundled.md`](worked-example-bip85-notinvert-vs-bundled.md) — 扩展根钥≠already invertible-to-mnemonic/the-entropy/settled；≠286 bundled（不变量 1122）

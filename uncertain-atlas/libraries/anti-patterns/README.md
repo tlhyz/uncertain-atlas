@@ -1,3 +1,6 @@
+- [`mpath87-notseed-sold-as-bundled.md`](mpath87-notseed-sold-as-bundled.md) — 主种子 被写成已经够找回 / 已经给单签用 / 已经交差（不变量 1177）
+- [`mpath87-notneed-sold-as-bundled.md`](mpath87-notneed-sold-as-bundled.md) — 路径里的脚本类型 被写成已经必要 / 已经不必再带描述符 / 已经交差（不变量 1176）
+- [`mpath87-nottree-sold-as-bundled.md`](mpath87-nottree-sold-as-bundled.md) — 脚本各走各的路径 被写成已经是多签该有的树 / 已经不必再带描述符 / 已经交差（不变量 1175）
 - [`mpsbt373-notpartial-sold-as-bundled.md`](mpsbt373-notpartial-sold-as-bundled.md) — 参与者钥 被写成已经有部分签 / 已经是 371 那种 Taproot 签 / 已经交差（不变量 1174）
 - [`mpsbt373-notout-sold-as-bundled.md`](mpsbt373-notout-sold-as-bundled.md) — 聚合钥栏 被写成已经是输出钥 / 已经是 371 那种 x-only / 已经交差（不变量 1173）
 - [`mpsbt373-notold-sold-as-bundled.md`](mpsbt373-notold-sold-as-bundled.md) — 旧栏 被写成已经能装 MuSig2 / 已经能走完多轮 / 已经交差（不变量 1172）

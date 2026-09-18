@@ -1,3 +1,18 @@
+| A5650 | 记录 | 会与 285 / 184 / 1116 / 1175 / 1176 糊成「看见主种子就已经够找回 interchangeable、就已经给单签用 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-87 master-seed not already enough-to-recover / not already singlesig-default / not already settled 正式三事（285 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。285 multisig path vs script bundled unbundling 完成（1177 item 3） |
+| A5651 | 高 | 看见主种子 会被写成已经够找回 interchangeable / 184 interchangeable | 官方 BIP-87 多签派生层次 item 3：not already enough-to-recover / not 184 |
+| A5652 | 高 | 看见这份不按脚本拆的树 会被写成已经给单签用 interchangeable / 1116 interchangeable | 官方 BIP-87 多签派生层次 item 3：not already singlesig-default / not 1116 |
+| A5653 | 高 | 看见主种子 会被写成已经交差 interchangeable | 官方 BIP-87 多签派生层次 item 3：not already settled |
+| A5654 | 中 | 怎样加账户号会被抄进不确定 | 不抄。不写怎样加账户号。不另写 19 节 |
+| A5645 | 记录 | 会与 285 / 1127 / 1160 / 1175 / 1177 糊成「看见路径里的脚本类型就已经必要 interchangeable、就已经不必再带描述符 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-87 script-type-in-path not already necessary / not already no-descriptor / not already settled 正式三事（285 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。285 multisig path vs script bundled unbundling 续（1176 item 2） |
+| A5646 | 高 | 看见路径里的脚本类型 会被写成已经必要 interchangeable / 1127 interchangeable | 官方 BIP-87 多签派生层次 item 2：not already necessary / not 1127 |
+| A5647 | 高 | 看见 48 那种多插一层 会被写成已经不必再带描述符 interchangeable / 1160 interchangeable | 官方 BIP-87 多签派生层次 item 2：not already no-descriptor / not 1160 |
+| A5648 | 高 | 看见路径里写了脚本类型 会被写成已经交差 interchangeable | 官方 BIP-87 多签派生层次 item 2：not already settled |
+| A5649 | 中 | 怎样加账户号会被抄进不确定 | 不抄。不写怎样加账户号。不另写 19 节 |
+| A5640 | 记录 | 会与 285 / 1127 / 1130 / 1176 / 1177 糊成「看见脚本各走各的路径就已经是多签该有的树 interchangeable、就已经不必再带描述符 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-87 per-script-path not already the-multisig-tree / not already no-descriptor / not already settled 正式三事（285 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。285 multisig path vs script bundled unbundling 启动（1175 item 1） |
+| A5641 | 高 | 看见脚本各走各的路径 会被写成已经是多签该有的树 interchangeable / 1127 interchangeable | 官方 BIP-87 多签派生层次 item 1：not already the-multisig-tree / not 1127 |
+| A5642 | 高 | 看见 45 那种只认一种脚本 会被写成已经不必再带描述符 interchangeable / 1130 interchangeable | 官方 BIP-87 多签派生层次 item 1：not already no-descriptor / not 1130 |
+| A5643 | 高 | 看见单签那套拆法 会被写成已经交差 interchangeable | 官方 BIP-87 多签派生层次 item 1：not already settled |
+| A5644 | 中 | 怎样加账户号会被抄进不确定 | 不抄。不写怎样加账户号。不另写 19 节 |
 | A5635 | 记录 | 会与 284 / 179 / 1157 / 1172 / 1173 糊成「看见参与者钥就已经有部分签 interchangeable、就已经是 371 那种 Taproot 签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-373 participant-key not already have-partial / not already bip340-sig / not already settled 正式三事（284 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。284 musig PSBT vs tap bundled unbundling 完成（1174 item 3） |
 | A5636 | 高 | 看见参与者钥 会被写成已经有部分签 interchangeable / 179 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 3：not already have-partial / not 179 |
 | A5637 | 高 | 看见部分签 会被写成已经是 371 那种 Taproot 签 interchangeable / 1157 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 3：not already bip340-sig / not 1157 |

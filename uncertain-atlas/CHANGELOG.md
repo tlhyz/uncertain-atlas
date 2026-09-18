@@ -1,3 +1,15 @@
+## 2026-09-18（续 1294）
+
+- 不变量 1177；语料 C1155；模式 name-the-mpath87-notseed-bar；反模式 mpath87-notseed-sold-as-bundled；L10.3 第 1146 条。填 L1.4 / L3.6 BIP-87 master-seed not already enough-to-recover / not already singlesig-default / not already settled 正式三事（285 余量）。285 multisig path vs script bundled unbundling 完成（1177 item 3）。
+
+## 2026-09-18（续 1293）
+
+- 不变量 1176；语料 C1154；模式 name-the-mpath87-notneed-bar；反模式 mpath87-notneed-sold-as-bundled；L10.3 第 1145 条。填 L1.4 / L3.6 BIP-87 script-type-in-path not already necessary / not already no-descriptor / not already settled 正式三事（285 余量）。285 multisig path vs script bundled unbundling 续（1176 item 2）。
+
+## 2026-09-18（续 1292）
+
+- 不变量 1175；语料 C1153；模式 name-the-mpath87-nottree-bar；反模式 mpath87-nottree-sold-as-bundled；L10.3 第 1144 条。填 L1.4 / L3.6 BIP-87 per-script-path not already the-multisig-tree / not already no-descriptor / not already settled 正式三事（285 余量）。285 multisig path vs script bundled unbundling 启动（1175 item 1）。
+
 ## 2026-09-18（续 1291）
 
 - 不变量 1174；语料 C1152；模式 name-the-mpsbt373-notpartial-bar；反模式 mpsbt373-notpartial-sold-as-bundled；L10.3 第 1143 条。填 L1.4 / L3.6 BIP-373 participant-key not already have-partial / not already bip340-sig / not already settled 正式三事（284 余量）。284 musig PSBT vs tap bundled unbundling 完成（1174 item 3）。

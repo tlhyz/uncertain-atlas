@@ -1,3 +1,6 @@
+- [`name-the-mpath87-notseed-bar.md`](name-the-mpath87-notseed-bar.md) — BIP-87 master-seed not already enough-to-recover / not already singlesig-default / not already settled 正式三事（285 余量）（不变量 1177）
+- [`name-the-mpath87-notneed-bar.md`](name-the-mpath87-notneed-bar.md) — BIP-87 script-type-in-path not already necessary / not already no-descriptor / not already settled 正式三事（285 余量）（不变量 1176）
+- [`name-the-mpath87-nottree-bar.md`](name-the-mpath87-nottree-bar.md) — BIP-87 per-script-path not already the-multisig-tree / not already no-descriptor / not already settled 正式三事（285 余量）（不变量 1175）
 - [`name-the-mpsbt373-notpartial-bar.md`](name-the-mpsbt373-notpartial-bar.md) — BIP-373 participant-key not already have-partial / not already bip340-sig / not already settled 正式三事（284 余量）（不变量 1174）
 - [`name-the-mpsbt373-notout-bar.md`](name-the-mpsbt373-notout-bar.md) — BIP-373 aggregate-key-field not already tap-output-key / not already x-only-or-internal / not already settled 正式三事（284 余量）（不变量 1173）
 - [`name-the-mpsbt373-notold-bar.md`](name-the-mpsbt373-notold-bar.md) — BIP-373 old-psbt-fields not already can-hold-musig / not already can-finish-rounds / not already settled 正式三事（284 余量）（不变量 1172）
