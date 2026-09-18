@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 GasUsed 不是已经算进共识 not already in consensus / not already practical-gas checked / not already engine-enforced inequality 正式三事（315 余量），必须分开有 GasUsed 是不是 already in consensus interchangeable / 315 maxgas bundled interchangeable / maxgas-sold-as-enforced interchangeable、GasWanted 过了池门 是不是 already practical-gas checked interchangeable、应用应强制 是不是 already engine-enforced inequality interchangeable。可以跳过「看见有 GasUsed 就已经算进共识 interchangeable / 就已经按实用气验过 interchangeable / 就已经由引擎强制不等式 interchangeable」。不要另写怎样计量气。315 maxgas vs enforced bundled unbundling 在本页 item 2 完成；续 [`worked-example-maxgas-notcommitted-vs-bundled.md`](worked-example-maxgas-notcommitted-vs-bundled.md)（不变量 706 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 GasUsed 不是已经算进共识 not already in consensus / not already practical-gas checked / not already engine-enforced inequality 正式三事（315 余量），必须分开有 GasUsed 是不是 already in consensus interchangeable / 315 maxgas bundled interchangeable / maxgas-sold-as-enforced interchangeable、GasWanted 过了池门 是不是 already practical-gas checked interchangeable、应用应强制 是不是 already engine-enforced inequality interchangeable。可以跳过「看见有 GasUsed 就已经算进共识 interchangeable / 就已经按实用气验过 interchangeable / 就已经由引擎强制不等式 interchangeable」。不要另写怎样计量气。315 maxgas vs enforced bundled unbundling 在本页 item 2 完成；续 [`worked-example-maxgas-notcommitted-vs-bundled.md`](worked-example-maxgas-notcommitted-vs-bundled.md)（不变量 706 item 3）；315 maxgas vs enforced bundled unbundling 完成（704 + 705 + 706）。
 
 ## 本页不抄
 

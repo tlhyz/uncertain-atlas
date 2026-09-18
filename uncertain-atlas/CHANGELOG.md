@@ -1,3 +1,7 @@
+## 2026-09-18（续 823）
+
+- 不变量 706；语料 C683；模式 name-the-maxgas-notcommitted-bar；反模式 maxgas-notcommitted-sold-as-bundled；L10.3 第 675 条。填 L4.4 / CometBFT 档案已提交块不是已经按气验过 not already gas-checked / not already consensus-enforced / not already default Prepare Process capping 正式三事（315 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。315 maxgas vs enforced bundled unbundling 完成（704 + 705 + 706）。
+
 ## 2026-09-18（续 822）
 
 - 不变量 705；语料 C682；模式 name-the-maxgas-notgasused-bar；反模式 maxgas-notgasused-sold-as-bundled；L10.3 第 674 条。填 L4.4 / CometBFT 档案 GasUsed 不是已经算进共识 not already in consensus / not already practical-gas checked / not already engine-enforced inequality 正式三事（315 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。315 maxgas vs enforced bundled unbundling 续（705 item 2）。
