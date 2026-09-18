@@ -1,3 +1,6 @@
+- [`name-the-dum147-notpol-bar.md`](name-the-dum147-notpol-bar.md) — BIP-147 policy not already consensus / not already bip62 / not already settled 正式三事（264 余量）（不变量 1231）
+- [`name-the-dum147-notwit-bar.md`](name-the-dum147-notwit-bar.md) — BIP-147 segwit not already no-dummy-malleation / not already wtxid-fixed / not already settled 正式三事（264 余量）（不变量 1230）
+- [`name-the-dum147-notany-bar.md`](name-the-dum147-notany-bar.md) — BIP-147 dummy not already arbitrary / not already legal / not already settled 正式三事（264 余量）（不变量 1229）
 - [`name-the-dup30-notspent-bar.md`](name-the-dup30-notspent-bar.md) — BIP-30 spent-reappear not already illegal / not already revived / not already settled 正式三事（257 余量）（不变量 1228）
 - [`name-the-dup30-notlive-bar.md`](name-the-dup30-notlive-bar.md) — BIP-30 unspent-collide not already legal / not already all-coinbase-unique / not already settled 正式三事（257 余量）（不变量 1227）
 - [`name-the-dup30-notuniq-bar.md`](name-the-dup30-notuniq-bar.md) — BIP-30 same-txid not already unique / not already same-outputs / not already settled 正式三事（257 余量）（不变量 1226）

@@ -1,3 +1,6 @@
+- [`dum147-notpol-sold-as-bundled.md`](dum147-notpol-sold-as-bundled.md) — 转发策略 被写成已经是共识 / 已经是本页这一条 / 已经没有功能损失（不变量 1231）
+- [`dum147-notwit-sold-as-bundled.md`](dum147-notwit-sold-as-bundled.md) — 隔离见证 被写成已经没有 dummy 延展 / wtxid 已经没变 / 已经交差（不变量 1230）
+- [`dum147-notany-sold-as-bundled.md`](dum147-notany-sold-as-bundled.md) — 多余栈元素 被写成已经随便填 / 已经看过 dummy / 已经合法（不变量 1229）
 - [`dup30-notspent-sold-as-bundled.md`](dup30-notspent-sold-as-bundled.md) — 花光后再出现 被写成已经非法 / 已经加回旧输出 / 历史上例外已经没了（不变量 1228）
 - [`dup30-notlive-sold-as-bundled.md`](dup30-notlive-sold-as-bundled.md) — 还没花光再装 被写成已经合法 / 已经保证所有 coinbase 唯一 / 已经交差（不变量 1227）
 - [`dup30-notuniq-sold-as-bundled.md`](dup30-notuniq-sold-as-bundled.md) — 同一交易标识 被写成已经唯一 / 已经不怕被覆盖 / 已经交差（不变量 1226）

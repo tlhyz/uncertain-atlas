@@ -1,3 +1,15 @@
+## 2026-09-18（续 1348）
+
+- 不变量 1231；语料 C1209；模式 name-the-dum147-notpol-bar；反模式 dum147-notpol-sold-as-bundled；L10.3 第 1200 条。填 L1.4 / L3.3 / L3.7 BIP-147 policy not already consensus / not already bip62 / not already settled 正式三事（264 余量）。264 dummy vs empty bundled unbundling 完成（1231 item 3）。
+
+## 2026-09-18（续 1347）
+
+- 不变量 1230；语料 C1208；模式 name-the-dum147-notwit-bar；反模式 dum147-notwit-sold-as-bundled；L10.3 第 1199 条。填 L1.4 / L3.3 / L3.7 BIP-147 segwit not already no-dummy-malleation / not already wtxid-fixed / not already settled 正式三事（264 余量）。264 dummy vs empty bundled unbundling 续（1230 item 2）。
+
+## 2026-09-18（续 1346）
+
+- 不变量 1229；语料 C1207；模式 name-the-dum147-notany-bar；反模式 dum147-notany-sold-as-bundled；L10.3 第 1198 条。填 L1.4 / L3.3 / L3.7 BIP-147 dummy not already arbitrary / not already legal / not already settled 正式三事（264 余量）。264 dummy vs empty bundled unbundling 启动（1229 item 1）。
+
 ## 2026-09-18（续 1345）
 
 - 不变量 1228；语料 C1206；模式 name-the-dup30-notspent-bar；反模式 dup30-notspent-sold-as-bundled；L10.3 第 1197 条。填 L3.1 BIP-30 spent-reappear not already illegal / not already revived / not already settled 正式三事（257 余量）。257 duplicate txid vs unique bundled unbundling 完成（1228 item 3）。

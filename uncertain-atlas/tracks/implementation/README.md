@@ -779,6 +779,9 @@
 - [`worked-example-coinbase-vs-prefill.md`](worked-example-coinbase-vs-prefill.md) — 出块者地址开跑时已在热集合 ≠ 已经访问过；开跑已热 ≠ 已经付给出块者；开跑已热 ≠ 169 那几个预填已经覆盖出块者；3651 ≠ 2929 ≠ 2930 ≠ 1559（不变量 187）
 - [`worked-example-versionbit-vs-active.md`](worked-example-versionbit-vs-active.md) — 版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活；9 ≠ 34 ≠ 被部署的那条规则（不变量 171）
 - [`worked-example-valid-vs-der.md`](worked-example-valid-vs-der.md) — ECDSA 验得过 ≠ 已经是严格 DER；库收下 ≠ 共识已经接受；66 ≠ 62 ≠ 146 ≠ 34（不变量 172）
+- [`worked-example-dum147-notpol-vs-bundled.md`](worked-example-dum147-notpol-vs-bundled.md) — 转发策略≠already consensus/bip62/settled；≠264 bundled（不变量 1231）
+- [`worked-example-dum147-notwit-vs-bundled.md`](worked-example-dum147-notwit-vs-bundled.md) — 隔离见证≠already no-dummy-malleation/wtxid-fixed/settled；≠264 bundled（不变量 1230）
+- [`worked-example-dum147-notany-vs-bundled.md`](worked-example-dum147-notany-vs-bundled.md) — dummy≠already arbitrary/legal/settled；≠264 bundled（不变量 1229）
 - [`worked-example-dummy-vs-empty.md`](worked-example-dummy-vs-empty.md) — 多余栈元素 ≠ 已经随便填；隔离见证 ≠ 已经没有这条延展；策略已经要空 dummy ≠ 已经是共识（不变量 264）
 - [`worked-example-sig325-notsign-vs-bundled.md`](worked-example-sig325-notsign-vs-bundled.md) — 头上工作量≠already signed/full-valid/settled；≠265 bundled（不变量 1195）
 - [`worked-example-sig325-notreg-vs-bundled.md`](worked-example-sig325-notreg-vs-bundled.md) — signet≠already regtest/anyone-controls/settled；≠265 bundled（不变量 1194）

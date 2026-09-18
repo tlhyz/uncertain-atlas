@@ -40,7 +40,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果写多重签或多吃栈元素，必须分开验签、dummy、txid、wtxid。可以跳过「看见多重签验过就已经不可延展」。若对照，必须分开空 dummy、策略、共识。不要另写怎样改 dummy 撞身份。
+**建议（产品，不是事实）**：不确定第一条结算机如果写多重签或多吃栈元素，必须分开验签、dummy、txid、wtxid。可以跳过「看见多重签验过就已经不可延展」。若对照，必须分开空 dummy、策略、共识。不要另写怎样改 dummy 撞身份。264 dummy vs empty bundled unbundling 完成（1229 item 1 / 1230 item 2 / 1231 item 3）；精读 [`worked-example-dum147-notany-vs-bundled.md`](worked-example-dum147-notany-vs-bundled.md)（不变量 1229 item 1）。
 
 ## 本页不抄
 

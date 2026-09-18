@@ -1,3 +1,18 @@
+| A5920 | 记录 | 会与 264 / 171 / 144 / 1229 / 1230 糊成「看见转发已经拒就已经是共识 interchangeable、就已经是本页这一条 interchangeable、就已经没有功能损失 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.3 / L3.7 BIP-147 policy not already consensus / not already bip62 / not already settled 正式三事（264 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行 / L5.1 / M5.4 / L5.4。264 dummy vs empty bundled unbundling 完成（1231 item 3） |
+| A5921 | 高 | 看见转发已经拒 会被写成已经是共识 interchangeable / 171 interchangeable | 官方 BIP-147 dummy item 3：not already consensus / not 171 |
+| A5922 | 高 | 看见 BIP-62 菜谱 会被写成已经是本页这一条 interchangeable / 144 interchangeable | 官方 BIP-147 dummy item 3：not already bip62 / not 144 |
+| A5923 | 高 | 看见非兼容签能改成兼容 会被写成已经没有功能损失 interchangeable | 官方 BIP-147 dummy item 3：not already settled |
+| A5924 | 中 | 怎样改 dummy 撞身份会被抄进不确定 | 不抄。不写怎样改 dummy 撞身份。不另写 19 节 |
+| A5915 | 记录 | 会与 264 / 144 / 36 / 1229 / 1231 糊成「看见隔离见证已经开就已经没有 dummy 延展 interchangeable、就已经 wtxid 没变 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.3 / L3.7 BIP-147 segwit not already no-dummy-malleation / not already wtxid-fixed / not already settled 正式三事（264 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行 / L5.1 / M5.4 / L5.4。264 dummy vs empty bundled unbundling 续（1230 item 2） |
+| A5916 | 高 | 看见隔离见证已经开 会被写成已经没有 dummy 延展 interchangeable / 144 interchangeable | 官方 BIP-147 dummy item 2：not already no-dummy-malleation / not 144 |
+| A5917 | 高 | 看见 txid 没变 会被写成 wtxid 已经没变 interchangeable / 36 interchangeable | 官方 BIP-147 dummy item 2：not already wtxid-fixed / not 36 |
+| A5918 | 高 | 看见隔离见证 会被写成已经交差 interchangeable | 官方 BIP-147 dummy item 2：not already settled |
+| A5919 | 中 | 怎样改 dummy 撞身份会被抄进不确定 | 不抄。不写怎样改 dummy 撞身份。不另写 19 节 |
+| A5910 | 记录 | 会与 264 / 172 / 152 / 1230 / 1231 糊成「看见多余栈元素就已经随便填 interchangeable、就已经看过 dummy interchangeable、就已经合法 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.3 / L3.7 BIP-147 dummy not already arbitrary / not already legal / not already settled 正式三事（264 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行 / L5.1 / M5.4 / L5.4。264 dummy vs empty bundled unbundling 启动（1229 item 1） |
+| A5911 | 高 | 看见多余栈元素 会被写成已经随便填 interchangeable / 172 interchangeable | 官方 BIP-147 dummy item 1：not already arbitrary / not 172 |
+| A5912 | 高 | 看见多重签验过 会被写成已经看过 dummy interchangeable / 152 interchangeable | 官方 BIP-147 dummy item 1：not already legal / not 152 |
+| A5913 | 高 | 看见 dummy 不是空 会被写成已经合法 interchangeable | 官方 BIP-147 dummy item 1：not already settled |
+| A5914 | 中 | 怎样改 dummy 撞身份会被抄进不确定 | 不抄。不写怎样改 dummy 撞身份。不另写 19 节 |
 | A5905 | 记录 | 会与 257 / 163 / 152 / 1226 / 1227 糊成「看见后来又出现已经花光的那条标识就已经非法 interchangeable、就已经把花掉再重复的输出加回来 interchangeable、就已经没有历史上那两处例外 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-30 spent-reappear not already illegal / not already revived / not already settled 正式三事（257 余量）/ 共识表 / 停链面地图。不写进 Ethereum 行 / L5.1 / M5.4 / L5.4。257 duplicate txid vs unique bundled unbundling 完成（1228 item 3） |
 | A5906 | 高 | 看见后来又出现已经花光的那条标识 会被写成已经非法 interchangeable / 163 interchangeable | 官方 BIP-30 dup item 3：not already illegal / not 163 |
 | A5907 | 高 | 看见重组 会被写成已经把花掉再重复的输出加回来 interchangeable / 152 interchangeable | 官方 BIP-30 dup item 3：not already revived / not 152 |
