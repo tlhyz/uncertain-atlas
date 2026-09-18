@@ -1,3 +1,15 @@
+## 2026-09-18（续 1291）
+
+- 不变量 1174；语料 C1152；模式 name-the-mpsbt373-notpartial-bar；反模式 mpsbt373-notpartial-sold-as-bundled；L10.3 第 1143 条。填 L1.4 / L3.6 BIP-373 participant-key not already have-partial / not already bip340-sig / not already settled 正式三事（284 余量）。284 musig PSBT vs tap bundled unbundling 完成（1174 item 3）。
+
+## 2026-09-18（续 1290）
+
+- 不变量 1173；语料 C1151；模式 name-the-mpsbt373-notout-bar；反模式 mpsbt373-notout-sold-as-bundled；L10.3 第 1142 条。填 L1.4 / L3.6 BIP-373 aggregate-key-field not already tap-output-key / not already x-only-or-internal / not already settled 正式三事（284 余量）。284 musig PSBT vs tap bundled unbundling 续（1173 item 2）。
+
+## 2026-09-18（续 1289）
+
+- 不变量 1172；语料 C1150；模式 name-the-mpsbt373-notold-bar；反模式 mpsbt373-notold-sold-as-bundled；L10.3 第 1141 条。填 L1.4 / L3.6 BIP-373 old-psbt-fields not already can-hold-musig / not already can-finish-rounds / not already settled 正式三事（284 余量）。284 musig PSBT vs tap bundled unbundling 启动（1172 item 1）。
+
 ## 2026-09-18（续 1288）
 
 - 不变量 1171；语料 C1149；模式 name-the-musig328-nottweak-bar；反模式 musig328-nottweak-sold-as-bundled；L10.3 第 1140 条。填 L1.4 / L3.6 BIP-328 child-key not already sign-without-tweak / not already x-only-tweak / not already settled 正式三事（283 余量）。283 musig xpub vs aggregate bundled unbundling 完成（1171 item 3）。

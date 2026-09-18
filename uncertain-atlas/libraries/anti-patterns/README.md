@@ -1,3 +1,6 @@
+- [`mpsbt373-notpartial-sold-as-bundled.md`](mpsbt373-notpartial-sold-as-bundled.md) — 参与者钥 被写成已经有部分签 / 已经是 371 那种 Taproot 签 / 已经交差（不变量 1174）
+- [`mpsbt373-notout-sold-as-bundled.md`](mpsbt373-notout-sold-as-bundled.md) — 聚合钥栏 被写成已经是输出钥 / 已经是 371 那种 x-only / 已经交差（不变量 1173）
+- [`mpsbt373-notold-sold-as-bundled.md`](mpsbt373-notold-sold-as-bundled.md) — 旧栏 被写成已经能装 MuSig2 / 已经能走完多轮 / 已经交差（不变量 1172）
 - [`musig328-nottweak-sold-as-bundled.md`](musig328-nottweak-sold-as-bundled.md) — 子钥 被写成已经能不带微调去签 / 已经是 x-only 那种微调 / 已经交差（不变量 1171）
 - [`musig328-nothard-sold-as-bundled.md`](musig328-nothard-sold-as-bundled.md) — 合成扩展公钥 被写成已经能硬化 / 已经是各自派生再拼 / 已经交差（不变量 1170）
 - [`musig328-notxpub-sold-as-bundled.md`](musig328-notxpub-sold-as-bundled.md) — 聚合钥 被写成已经是扩展公钥 / 已经能按 32 那种树往下长 / 已经交差（不变量 1169）

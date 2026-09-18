@@ -36,7 +36,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果导出 MuSig2 工作包，必须分开旧栏装不下、聚合钥不一定是输出钥、名单不是已经有部分签。可以跳过「看见 Taproot 工作包栏就已经能签 MuSig2」。若对照，必须分开本页新栏和 371 那种 Taproot 栏。不要另写怎样造 nonce 或部分签。
+**建议（产品，不是事实）**：不确定第一条结算机如果导出 MuSig2 工作包，必须分开旧栏装不下、聚合钥不一定是输出钥、名单不是已经有部分签。可以跳过「看见 Taproot 工作包栏就已经能签 MuSig2」。若对照，必须分开本页新栏和 371 那种 Taproot 栏。不要另写怎样造 nonce 或部分签。284 musig PSBT vs tap bundled unbundling 完成（1172 item 1 / 1173 item 2 / 1174 item 3）；精读 [`worked-example-mpsbt373-notold-vs-bundled.md`](worked-example-mpsbt373-notold-vs-bundled.md)（不变量 1172 item 1）。
 
 ## 本页不抄
 

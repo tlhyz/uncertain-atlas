@@ -849,6 +849,9 @@
 - [`worked-example-musig328-nothard-vs-bundled.md`](worked-example-musig328-nothard-vs-bundled.md) — 合成扩展公钥≠already hardened/many-xpubs-then-aggregate/settled；≠283 bundled（不变量 1170）
 - [`worked-example-musig328-notxpub-vs-bundled.md`](worked-example-musig328-notxpub-vs-bundled.md) — 聚合钥≠already xpub/bip32-tree/settled；≠283 bundled（不变量 1169）
 - [`worked-example-musig-xpub-vs-aggregate.md`](worked-example-musig-xpub-vs-aggregate.md) — 聚合钥 ≠ 已经是扩展公钥；合成扩展公钥 ≠ 已经能硬化派生；派生出的子钥 ≠ 已经能不带微调去签（不变量 283）
+- [`worked-example-mpsbt373-notpartial-vs-bundled.md`](worked-example-mpsbt373-notpartial-vs-bundled.md) — 参与者钥≠already have-partial/bip340-sig/settled；≠284 bundled（不变量 1174）
+- [`worked-example-mpsbt373-notout-vs-bundled.md`](worked-example-mpsbt373-notout-vs-bundled.md) — 聚合钥栏≠already tap-output-key/x-only-or-internal/settled；≠284 bundled（不变量 1173）
+- [`worked-example-mpsbt373-notold-vs-bundled.md`](worked-example-mpsbt373-notold-vs-bundled.md) — 旧栏≠already can-hold-musig/can-finish-rounds/settled；≠284 bundled（不变量 1172）
 - [`worked-example-musig-psbt-vs-tap.md`](worked-example-musig-psbt-vs-tap.md) — 旧 PSBT 栏 ≠ 已经能装 MuSig2；聚合钥栏 ≠ 已经是输出钥；参与者钥 ≠ 已经能出部分签（不变量 284）
 - [`worked-example-multisig-path-vs-script.md`](worked-example-multisig-path-vs-script.md) — 脚本各走各的路径 ≠ 已经是多签该有的树；路径里的脚本类型 ≠ 已经必要；主种子 ≠ 已经够找回（不变量 285）
 - [`worked-example-bip85-nottarget-vs-bundled.md`](worked-example-bip85-nottarget-vs-bundled.md) — 派生熵≠already target-wallet-seed/this-tree-key/settled；≠286 bundled（不变量 1123）

@@ -1,3 +1,18 @@
+| A5635 | 记录 | 会与 284 / 179 / 1157 / 1172 / 1173 糊成「看见参与者钥就已经有部分签 interchangeable、就已经是 371 那种 Taproot 签 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-373 participant-key not already have-partial / not already bip340-sig / not already settled 正式三事（284 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。284 musig PSBT vs tap bundled unbundling 完成（1174 item 3） |
+| A5636 | 高 | 看见参与者钥 会被写成已经有部分签 interchangeable / 179 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 3：not already have-partial / not 179 |
+| A5637 | 高 | 看见部分签 会被写成已经是 371 那种 Taproot 签 interchangeable / 1157 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 3：not already bip340-sig / not 1157 |
+| A5638 | 高 | 看见 nonce 栏 会被写成已经交差 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 3：not already settled |
+| A5639 | 中 | 怎样造 nonce 或部分签会被抄进不确定 | 不抄。不写怎样造 nonce 或部分签。不另写 19 节 |
+| A5630 | 记录 | 会与 284 / 1169 / 1158 / 1172 / 1174 糊成「看见聚合钥栏就已经是输出钥 interchangeable、就已经是 371 那种 x-only interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-373 aggregate-key-field not already tap-output-key / not already x-only-or-internal / not already settled 正式三事（284 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。284 musig PSBT vs tap bundled unbundling 续（1173 item 2） |
+| A5631 | 高 | 看见聚合钥栏 会被写成已经是 Taproot 输出钥 interchangeable / 1169 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 2：not already tap-output-key / not 1169 |
+| A5632 | 高 | 看见压缩 会被写成已经是 371 那种 x-only interchangeable / 1158 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 2：not already x-only-or-internal / not 1158 |
+| A5633 | 高 | 看见栏里有聚合钥 会被写成已经交差 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 2：not already settled |
+| A5634 | 中 | 怎样造 nonce 或部分签会被抄进不确定 | 不抄。不写怎样造 nonce 或部分签。不另写 19 节 |
+| A5625 | 记录 | 会与 284 / 1157 / 1169 / 1173 / 1174 糊成「看见旧 PSBT 栏就已经能装 MuSig2 interchangeable、就已经能走完多轮 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-373 old-psbt-fields not already can-hold-musig / not already can-finish-rounds / not already settled 正式三事（284 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。284 musig PSBT vs tap bundled unbundling 启动（1172 item 1） |
+| A5626 | 高 | 看见旧 PSBT 栏 会被写成已经能装 MuSig2 interchangeable / 1157 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 1：not already can-hold-musig / not 1157 |
+| A5627 | 高 | 看见 371 补了 Taproot 栏 会被写成已经能走完多轮 interchangeable / 1169 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 1：not already can-finish-rounds / not 1169 |
+| A5628 | 高 | 看见 174 那套栏 会被写成已经交差 interchangeable | 官方 BIP-373 MuSig2 工作包栏 item 1：not already settled |
+| A5629 | 中 | 怎样造 nonce 或部分签会被抄进不确定 | 不抄。不写怎样造 nonce 或部分签。不另写 19 节 |
 | A5620 | 记录 | 会与 283 / 1136 / 1147 / 1169 / 1170 糊成「看见子钥就已经能不带微调去签 interchangeable、就已经是 x-only 那种微调 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 / L3.6 BIP-328 child-key not already sign-without-tweak / not already x-only-tweak / not already settled 正式三事（283 余量）/ 实现表 / 停链面地图。不写进 03 共识图谱 / Ethereum 行 / L5.1 / M5.4 / L5.4。283 musig xpub vs aggregate bundled unbundling 完成（1171 item 3） |
 | A5621 | 高 | 看见派生出的子钥 会被写成已经能不带微调去签 interchangeable / 1136 interchangeable | 官方 BIP-328 聚合钥派生 item 3：not already sign-without-tweak / not 1136 |
 | A5622 | 高 | 看见写了微调 会被写成已经是 x-only 那种微调 interchangeable / 1147 interchangeable | 官方 BIP-328 聚合钥派生 item 3：not already x-only-tweak / not 1147 |

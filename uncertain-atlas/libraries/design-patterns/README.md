@@ -1,3 +1,6 @@
+- [`name-the-mpsbt373-notpartial-bar.md`](name-the-mpsbt373-notpartial-bar.md) — BIP-373 participant-key not already have-partial / not already bip340-sig / not already settled 正式三事（284 余量）（不变量 1174）
+- [`name-the-mpsbt373-notout-bar.md`](name-the-mpsbt373-notout-bar.md) — BIP-373 aggregate-key-field not already tap-output-key / not already x-only-or-internal / not already settled 正式三事（284 余量）（不变量 1173）
+- [`name-the-mpsbt373-notold-bar.md`](name-the-mpsbt373-notold-bar.md) — BIP-373 old-psbt-fields not already can-hold-musig / not already can-finish-rounds / not already settled 正式三事（284 余量）（不变量 1172）
 - [`name-the-musig328-nottweak-bar.md`](name-the-musig328-nottweak-bar.md) — BIP-328 child-key not already sign-without-tweak / not already x-only-tweak / not already settled 正式三事（283 余量）（不变量 1171）
 - [`name-the-musig328-nothard-bar.md`](name-the-musig328-nothard-bar.md) — BIP-328 synthetic-xpub not already hardened / not already many-xpubs-then-aggregate / not already settled 正式三事（283 余量）（不变量 1170）
 - [`name-the-musig328-notxpub-bar.md`](name-the-musig328-notxpub-bar.md) — BIP-328 aggregate-key not already xpub / not already bip32-tree / not already settled 正式三事（283 余量）（不变量 1169）
