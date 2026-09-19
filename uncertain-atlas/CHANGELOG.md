@@ -1,3 +1,7 @@
+## 2026-09-19（续 829）
+
+- 不变量 712；语料 C689；模式 name-the-checktxresponse-notpriority-bar；反模式 checktxresponse-notpriority-sold-as-bundled；L10.3 第 681 条。填 L4.4 / CometBFT 档案 Priority 不是已经是共识顺序 not already consensus order / not already in block / not already removed from mempool 正式三事（317 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。317 checktxresponse vs exec bundled unbundling 完成（710 + 711 + 712）。
+
 ## 2026-09-19（续 828）
 
 - 不变量 711；语料 C688；模式 name-the-checktxresponse-notfork-bar；反模式 checktxresponse-notfork-sold-as-bundled；L10.3 第 680 条。填 L4.4 / CometBFT 档案各节点 Data 不一样不是已经分叉 not already fork / not already violation / not already ExecuteTxState 正式三事（317 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。317 checktxresponse vs exec bundled unbundling 续（711 item 2）。

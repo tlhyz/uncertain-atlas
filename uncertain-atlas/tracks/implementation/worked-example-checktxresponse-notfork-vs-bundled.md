@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看各节点 Data 不一样不是已经分叉 not already fork / not already violation / not already ExecuteTxState 正式三事（317 余量），必须分开各节点 Data 不一样 是不是 already fork interchangeable / 317 checktxresponse bundled interchangeable / checktxresponse-sold-as-exec interchangeable、Data 不确定 是不是 already violation interchangeable、CheckTxState 不同 是不是 already ExecuteTxState interchangeable。可以跳过「看见不确定就已经分叉 interchangeable / 就已经违规 interchangeable / 就已经和 Finalize 同一把确定性尺子 interchangeable」。不要另写怎样编 Data。317 checktxresponse vs exec bundled unbundling 在本页 item 2 完成；续 [`worked-example-checktxresponse-notpriority-vs-bundled.md`](worked-example-checktxresponse-notpriority-vs-bundled.md)（不变量 712 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看各节点 Data 不一样不是已经分叉 not already fork / not already violation / not already ExecuteTxState 正式三事（317 余量），必须分开各节点 Data 不一样 是不是 already fork interchangeable / 317 checktxresponse bundled interchangeable / checktxresponse-sold-as-exec interchangeable、Data 不确定 是不是 already violation interchangeable、CheckTxState 不同 是不是 already ExecuteTxState interchangeable。可以跳过「看见不确定就已经分叉 interchangeable / 就已经违规 interchangeable / 就已经和 Finalize 同一把确定性尺子 interchangeable」。不要另写怎样编 Data。317 checktxresponse vs exec bundled unbundling 在本页 item 2 完成；续 [`worked-example-checktxresponse-notpriority-vs-bundled.md`](worked-example-checktxresponse-notpriority-vs-bundled.md)（不变量 712 item 3）。
 
 ## 本页不抄
 

@@ -145,6 +145,7 @@
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-checktxresponse-notpriority-vs-bundled.md`](worked-example-checktxresponse-notpriority-vs-bundled.md) — 有Priority≠共识顺序/排在前面≠进了块/能优先≠从池里删掉；≠317 bundled（不变量 712）
 - [`worked-example-checktxresponse-notfork-vs-bundled.md`](worked-example-checktxresponse-notfork-vs-bundled.md) — 各节点Data不一样≠分叉/Data不确定≠违规/CheckTxState不同≠ExecuteTxState；≠317 bundled（不变量 711）
 - [`worked-example-checktxresponse-notused-vs-bundled.md`](worked-example-checktxresponse-notused-vs-bundled.md) — 回了字节≠被引擎用/字段名也叫Data≠ExecTxResult.Data/有结果≠进LastResultsHash；≠317 bundled（不变量 710）
 - [`worked-example-exectxresult-notheader-vs-bundled.md`](worked-example-exectxresult-notheader-vs-bundled.md) — Code/Data≠印进本头/Events≠进LastResultsHash/InfoLog≠共识字段；≠316 bundled（不变量 709）

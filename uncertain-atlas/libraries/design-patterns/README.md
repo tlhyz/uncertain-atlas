@@ -1,3 +1,4 @@
+- [`name-the-checktxresponse-notpriority-bar.md`](name-the-checktxresponse-notpriority-bar.md) — Priority 不是已经是共识顺序 not already consensus order / not already in block / not already removed from mempool 正式三事（317 余量）（不变量 712）
 - [`name-the-checktxresponse-notfork-bar.md`](name-the-checktxresponse-notfork-bar.md) — 各节点 Data 不一样不是已经分叉 not already fork / not already violation / not already ExecuteTxState 正式三事（317 余量）（不变量 711）
 - [`name-the-checktxresponse-notused-bar.md`](name-the-checktxresponse-notused-bar.md) — CheckTx Data 不是已经被引擎用了 not already used by engine / not already ExecTxResult.Data / not already in LastResultsHash 正式三事（317 余量）（不变量 710）
 - [`name-the-exectxresult-notheader-bar.md`](name-the-exectxresult-notheader-bar.md) — Code Data 不是已经印进本头 not already in this header / not already in LastResultsHash / not already consensus field 正式三事（316 余量）（不变量 709）
