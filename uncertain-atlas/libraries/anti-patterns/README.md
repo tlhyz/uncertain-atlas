@@ -1,3 +1,6 @@
+- [`hwin-notsync-sold-as-bundled.md`](hwin-notsync-sold-as-bundled.md) — 握手无总难度 被写成已经能判断同步 / 就已经更安全 / 就已经是 167（不变量 1490）
+- [`hwin-notenc-sold-as-bundled.md`](hwin-notenc-sold-as-bundled.md) — 线上无布隆 被写成已经改了共识收据 / 就已经是 25 / 就已经是 195（不变量 1489）
+- [`hwin-notcons-sold-as-bundled.md`](hwin-notcons-sold-as-bundled.md) — 历史窗宣布 被写成已经改了共识历史 / 就已经是 23 / 就已经 207 bundled（不变量 1488）
 - [`bfmkt-notmev-sold-as-bundled.md`](bfmkt-notmev-sold-as-bundled.md) — 烧掉 被写成已经解决MEV / 就已经更安全 / 就已经是 144（不变量 1487）
 - [`bfmkt-notmkt-sold-as-bundled.md`](bfmkt-notmkt-sold-as-bundled.md) — 弹性块大小 被写成已经齐 / 就已经是 101 / 就已经是 27（不变量 1486）
 - [`bfmkt-notpay-sold-as-bundled.md`](bfmkt-notpay-sold-as-bundled.md) — 基础费烧掉 被写成已经给了出块者 / 就已经是 145 / 就已经 158 bundled（不变量 1485）

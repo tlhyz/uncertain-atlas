@@ -1,3 +1,6 @@
+- [`name-the-hwin-notsync-bar.md`](name-the-hwin-notsync-bar.md) — EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）（不变量 1490）
+- [`name-the-hwin-notenc-bar.md`](name-the-hwin-notenc-bar.md) — EIP-7642 wire-no-bloom not already consensus-receipt / not already 25 / not already 195 正式三事（207 余量）（不变量 1489）
+- [`name-the-hwin-notcons-bar.md`](name-the-hwin-notcons-bar.md) — EIP-7642 history-window not already consensus-pruned / not already 23 / not already 207-bundled 正式三事（207 余量）（不变量 1488）
 - [`name-the-bfmkt-notmev-bar.md`](name-the-bfmkt-notmev-bar.md) — EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）（不变量 1487）
 - [`name-the-bfmkt-notmkt-bar.md`](name-the-bfmkt-notmkt-bar.md) — EIP-1559 elastic-size not already market-complete / not already 101 / not already 27 正式三事（158 余量）（不变量 1486）
 - [`name-the-bfmkt-notpay-bar.md`](name-the-bfmkt-notpay-bar.md) — EIP-1559 basefee-burned not already paid-to-proposer / not already 145 / not already 158-bundled 正式三事（158 余量）（不变量 1485）

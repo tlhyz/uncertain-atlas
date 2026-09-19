@@ -1,3 +1,15 @@
+## 2026-09-19（续 1607）
+
+- 不变量 1490；语料 C1468；模式 name-the-hwin-notsync-bar；反模式 hwin-notsync-sold-as-bundled；L10.3 第 1459 条。填 L5.3 EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）。207 history-window vs consensus bundled unbundling 完成（1490 item 3）。
+
+## 2026-09-19（续 1606）
+
+- 不变量 1489；语料 C1467；模式 name-the-hwin-notenc-bar；反模式 hwin-notenc-sold-as-bundled；L10.3 第 1458 条。填 L5.3 EIP-7642 wire-no-bloom not already consensus-receipt / not already 25 / not already 195 正式三事（207 余量）。207 history-window vs consensus bundled unbundling 续（1489 item 2）。
+
+## 2026-09-19（续 1605）
+
+- 不变量 1488；语料 C1466；模式 name-the-hwin-notcons-bar；反模式 hwin-notcons-sold-as-bundled；L10.3 第 1457 条。填 L5.3 EIP-7642 history-window not already consensus-pruned / not already 23 / not already 207-bundled 正式三事（207 余量）。207 history-window vs consensus bundled unbundling 启动（1488 item 1）。
+
 ## 2026-09-19（续 1604）
 
 - 不变量 1487；语料 C1465；模式 name-the-bfmkt-notmev-bar；反模式 bfmkt-notmev-sold-as-bundled；L10.3 第 1456 条。填 L5.1 EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）。158 basefee vs tip bundled unbundling 完成（1487 item 3）。

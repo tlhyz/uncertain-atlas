@@ -1,3 +1,18 @@
+| A7215 | 记录 | 会与 207 / 195 / 167 / 1488 / 1489 糊成「看见握手去掉总难度不是已经能判断同步完没完就已经能判断同步完没完 interchangeable、就已经更安全 interchangeable、就已经是不变量 167 interchangeable」 | 对照写清。不编博物馆页。写进 L5.3 EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。207 history-window vs consensus bundled unbundling 完成（1490 item 3） |
+| A7216 | 高 | 看见握手去掉总难度不是已经能判断同步完没完 会被写成已经能判断同步完没完 interchangeable / 195 interchangeable | 官方 EIP-7642 hwin item 3：not already 已经能判断同步完没完 / not 195 |
+| A7217 | 高 | 看见handshake without TD is not already sync-complete 会被写成已经更安全 interchangeable / 167 interchangeable | 官方 EIP-7642 hwin item 3：not already 已经更安全 / not 167 |
+| A7218 | 高 | 看见握手去掉总难度不是已经能判断同步完没完 会被写成已经是不变量 167 interchangeable | 官方 EIP-7642 hwin item 3：not already settled |
+| A7219 | 中 | 怎样丢历史、怎样谎报最早块会被抄进不确定 | 不抄。不写 怎样丢历史、怎样谎报最早块。不另写 19 节 |
+| A7210 | 记录 | 会与 207 / 25 / 195 / 1488 / 1490 糊成「看见线上收据没有布隆不是已经改了共识收据编码就已经改了共识收据编码 interchangeable、就已经是不变量 25 interchangeable、就已经是不变量 195 interchangeable」 | 对照写清。不编博物馆页。写进 L5.3 EIP-7642 wire-no-bloom not already consensus-receipt / not already 25 / not already 195 正式三事（207 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。207 history-window vs consensus bundled unbundling 续（1489 item 2） |
+| A7211 | 高 | 看见线上收据没有布隆不是已经改了共识收据编码 会被写成已经改了共识收据编码 interchangeable / 25 interchangeable | 官方 EIP-7642 hwin item 2：not already 已经改了共识收据编码 / not 25 |
+| A7212 | 高 | 看见wire receipts without bloom are not already consensus receipt encoding 会被写成已经是不变量 25 interchangeable / 195 interchangeable | 官方 EIP-7642 hwin item 2：not already 已经是不变量 25 / not 195 |
+| A7213 | 高 | 看见线上收据没有布隆不是已经改了共识收据编码 会被写成已经是不变量 195 interchangeable | 官方 EIP-7642 hwin item 2：not already settled |
+| A7214 | 中 | 怎样丢历史、怎样谎报最早块会被抄进不确定 | 不抄。不写 怎样丢历史、怎样谎报最早块。不另写 19 节 |
+| A7205 | 记录 | 会与 207 / 23 / 25 / 1489 / 1490 糊成「看见对等节点宣布历史窗不是已经改了共识历史就已经改了共识历史 interchangeable、就已经是不变量 23 interchangeable、就已经 207 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.3 EIP-7642 history-window not already consensus-pruned / not already 23 / not already 207-bundled 正式三事（207 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。207 history-window vs consensus bundled unbundling 启动（1488 item 1） |
+| A7206 | 高 | 看见对等节点宣布历史窗不是已经改了共识历史 会被写成已经改了共识历史 interchangeable / 23 interchangeable | 官方 EIP-7642 hwin item 1：not already 已经改了共识历史 / not 23 |
+| A7207 | 高 | 看见peer history window is not already consensus history changed 会被写成已经是不变量 23 interchangeable / 25 interchangeable | 官方 EIP-7642 hwin item 1：not already 已经是不变量 23 / not 25 |
+| A7208 | 高 | 看见对等节点宣布历史窗不是已经改了共识历史 会被写成已经 207 bundled interchangeable | 官方 EIP-7642 hwin item 1：not already settled |
+| A7209 | 中 | 怎样丢历史、怎样谎报最早块会被抄进不确定 | 不抄。不写 怎样丢历史、怎样谎报最早块。不另写 19 节 |
 | A7200 | 记录 | 会与 158 / 167 / 187 / 1485 / 1486 糊成「看见烧掉不是MEV已经解决就已经解决MEV interchangeable、就已经更安全 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。158 basefee vs tip bundled unbundling 完成（1487 item 3） |
 | A7201 | 高 | 看见烧掉不是MEV已经解决 会被写成已经解决MEV interchangeable / 167 interchangeable | 官方 EIP-1559 bfmkt item 3：not already 已经解决MEV / not 167 |
 | A7202 | 高 | 看见burning is not already MEV solved 会被写成已经更安全 interchangeable / 187 interchangeable | 官方 EIP-1559 bfmkt item 3：not already 已经更安全 / not 187 |
