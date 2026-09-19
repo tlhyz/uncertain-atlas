@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看同一批重复公钥不是已经能恢复 not already last-wins / not already recoverable / not already two rows 正式三事（318 余量），必须分开看见重复 是不是 already last-wins interchangeable / 318 validatorupdate bundled interchangeable / validatorupdate-sold-as-set interchangeable、看见失败 是不是 already recoverable interchangeable、看见同一把钥 是不是 already two rows interchangeable。可以跳过「看见重复就已经按后一条改权 interchangeable / 就已经能恢复 interchangeable / 就已经能写两行 interchangeable」。不要另写怎样编更新。318 validatorupdate vs set bundled unbundling 在本页 item 2 完成；续 [`worked-example-validatorupdate-notpower0-vs-bundled.md`](worked-example-validatorupdate-notpower0-vs-bundled.md)（不变量 715 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看同一批重复公钥不是已经能恢复 not already last-wins / not already recoverable / not already two rows 正式三事（318 余量），必须分开看见重复 是不是 already last-wins interchangeable / 318 validatorupdate bundled interchangeable / validatorupdate-sold-as-set interchangeable、看见失败 是不是 already recoverable interchangeable、看见同一把钥 是不是 already two rows interchangeable。可以跳过「看见重复就已经按后一条改权 interchangeable / 就已经能恢复 interchangeable / 就已经能写两行 interchangeable」。不要另写怎样编更新。318 validatorupdate vs set bundled unbundling 在本页 item 2 完成；续 [`worked-example-validatorupdate-notpower0-vs-bundled.md`](worked-example-validatorupdate-notpower0-vs-bundled.md)（不变量 715 item 3）。
 
 ## 本页不抄
 

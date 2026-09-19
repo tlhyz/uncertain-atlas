@@ -1,3 +1,4 @@
+- [`name-the-validatorupdate-notpower0-bar.md`](name-the-validatorupdate-notpower0-bar.md) — power 0 不是已经删掉不在集合里的人 not already delete outsider / not already no max / not already key-type chosen 正式三事（318 余量）（不变量 715）
 - [`name-the-validatorupdate-notdup-bar.md`](name-the-validatorupdate-notdup-bar.md) — 同一批重复公钥不是已经能恢复 not already last-wins / not already recoverable / not already two rows 正式三事（318 余量）（不变量 714）
 - [`name-the-validatorupdate-notempty-bar.md`](name-the-validatorupdate-notempty-bar.md) — InitChain 空名单不是已经没有集合 not already no set / not already deleted genesis / not already app empty set 正式三事（318 余量）（不变量 713）
 - [`name-the-checktxresponse-notpriority-bar.md`](name-the-checktxresponse-notpriority-bar.md) — Priority 不是已经是共识顺序 not already consensus order / not already in block / not already removed from mempool 正式三事（317 余量）（不变量 712）
