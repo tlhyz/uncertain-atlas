@@ -1,3 +1,6 @@
+- [`tpsm-notmin-sold-as-bundled.md`](tpsm-notmin-sold-as-bundled.md) — MINIMALIF 被写成已经只是 P2WSH 策略 / 就已经是 191 / 就已经是 144（不变量 1559）
+- [`tpsm-notdone-sold-as-bundled.md`](tpsm-notdone-sold-as-bundled.md) — 遇见成功操作码 被写成已经执行完 / 就已经安全升级 / 就已经 189 bundled（不变量 1558）
+- [`tpsm-notsem-sold-as-bundled.md`](tpsm-notsem-sold-as-bundled.md) — 走脚本路径 被写成已经是 tapscript 语义 / 就已经是 153 / 就已经 189 bundled（不变量 1557）
 - [`kpsp-notlook-sold-as-bundled.md`](kpsp-notlook-sold-as-bundled.md) — Taproot 输出 被写成已经分辨付款给钥还是付款给脚本 / 就已经是 170 / 就已经是 174（不变量 1556）
 - [`kpsp-notall-sold-as-bundled.md`](kpsp-notall-sold-as-bundled.md) — 脚本路径 被写成已经揭开全部脚本 / 就已经是 189 / 就已经是 152（不变量 1555）
 - [`kpsp-notree-sold-as-bundled.md`](kpsp-notree-sold-as-bundled.md) — 钥匙路径 被写成已经揭开有没有脚本树 / 就已经是 189 / 就已经 153 bundled（不变量 1554）

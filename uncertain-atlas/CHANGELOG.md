@@ -1,3 +1,15 @@
+## 2026-09-19（续 1676）
+
+- 不变量 1559；语料 C1537；模式 name-the-tpsm-notmin-bar；反模式 tpsm-notmin-sold-as-bundled；L10.3 第 1528 条。填 L3.7 BIP-342 minimalif not already p2wsh-policy-only / not already 191 / not already 144 正式三事（189 余量）。189 tapscript vs scriptpath bundled unbundling 完成（1559 item 3）。
+
+## 2026-09-19（续 1675）
+
+- 不变量 1558；语料 C1536；模式 name-the-tpsm-notdone-bar；反模式 tpsm-notdone-sold-as-bundled；L10.3 第 1527 条。填 L3.7 BIP-342 success-opcode not already executed / not already safe-upgrade / not already 189-bundled 正式三事（189 余量）。189 tapscript vs scriptpath bundled unbundling 续（1558 item 2）。
+
+## 2026-09-19（续 1674）
+
+- 不变量 1557；语料 C1535；模式 name-the-tpsm-notsem-bar；反模式 tpsm-notsem-sold-as-bundled；L10.3 第 1526 条。填 L3.7 BIP-342 scriptpath not already tapscript-semantics / not already 153 / not already 189-bundled 正式三事（189 余量）。189 tapscript vs scriptpath bundled unbundling 启动（1557 item 1）。
+
 ## 2026-09-19（续 1673）
 
 - 不变量 1556；语料 C1534；模式 name-the-kpsp-notlook-bar；反模式 kpsp-notlook-sold-as-bundled；L10.3 第 1525 条。填 L3.7 BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）。153 keypath vs scriptpath bundled unbundling 完成（1556 item 3）。

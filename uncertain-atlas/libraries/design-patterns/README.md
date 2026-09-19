@@ -1,3 +1,6 @@
+- [`name-the-tpsm-notmin-bar.md`](name-the-tpsm-notmin-bar.md) — BIP-342 minimalif not already p2wsh-policy-only / not already 191 / not already 144 正式三事（189 余量）（不变量 1559）
+- [`name-the-tpsm-notdone-bar.md`](name-the-tpsm-notdone-bar.md) — BIP-342 success-opcode not already executed / not already safe-upgrade / not already 189-bundled 正式三事（189 余量）（不变量 1558）
+- [`name-the-tpsm-notsem-bar.md`](name-the-tpsm-notsem-bar.md) — BIP-342 scriptpath not already tapscript-semantics / not already 153 / not already 189-bundled 正式三事（189 余量）（不变量 1557）
 - [`name-the-kpsp-notlook-bar.md`](name-the-kpsp-notlook-bar.md) — BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）（不变量 1556）
 - [`name-the-kpsp-notall-bar.md`](name-the-kpsp-notall-bar.md) — BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）（不变量 1555）
 - [`name-the-kpsp-notree-bar.md`](name-the-kpsp-notree-bar.md) — BIP-341 keypath not already revealed-tree / not already 189 / not already 153-bundled 正式三事（153 余量）（不变量 1554）

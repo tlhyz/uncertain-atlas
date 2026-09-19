@@ -820,6 +820,9 @@
 - [`worked-example-kpsp-notall-vs-bundled.md`](worked-example-kpsp-notall-vs-bundled.md) — BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）（不变量 1555）
 - [`worked-example-kpsp-notlook-vs-bundled.md`](worked-example-kpsp-notlook-vs-bundled.md) — BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）（不变量 1556）
 - [`worked-example-keypath-vs-scriptpath.md`](worked-example-keypath-vs-scriptpath.md) — 钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本（不变量 153）
+- [`worked-example-tpsm-notsem-vs-bundled.md`](worked-example-tpsm-notsem-vs-bundled.md) — BIP-342 scriptpath not already tapscript-semantics / not already 153 / not already 189-bundled 正式三事（189 余量）（不变量 1557）
+- [`worked-example-tpsm-notdone-vs-bundled.md`](worked-example-tpsm-notdone-vs-bundled.md) — BIP-342 success-opcode not already executed / not already safe-upgrade / not already 189-bundled 正式三事（189 余量）（不变量 1558）
+- [`worked-example-tpsm-notmin-vs-bundled.md`](worked-example-tpsm-notmin-vs-bundled.md) — BIP-342 minimalif not already p2wsh-policy-only / not already 191 / not already 144 正式三事（189 余量）（不变量 1559）
 - [`worked-example-tapscript-vs-scriptpath.md`](worked-example-tapscript-vs-scriptpath.md) — 走脚本路径 ≠ 已经是 tapscript 语义；遇见成功操作码 ≠ 已经执行完；342 ≠ 341 ≠ 141 ≠ 16（不变量 189）
 - [`worked-example-miniscript-vs-script.md`](worked-example-miniscript-vs-script.md) — 看见 Miniscript ≠ 已经是链上脚本；共识健全 ≠ 已经是策略完备；379 ≠ 380 ≠ 342 ≠ 16（不变量 191）
 - [`worked-example-tenv-notinner-vs-bundled.md`](worked-example-tenv-notinner-vs-bundled.md) — 类型字节≠already 解开内层/1559/167 bundled；≠167 bundled（不变量 1455）

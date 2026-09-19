@@ -65,7 +65,7 @@ SegWit 后：改 witness 不改 txid，子支付仍指同一对象（在新规�
 ## F. 真实项目
 
 Bitcoin SegWit 激活史（版本位/矿工信号，细节后置）。  
-Taproot 是后续软分叉，本课不展开脚本语言。走脚本路径不是已经是 tapscript 语义：[`../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md)（不变量 189）。看见 Miniscript 不是已经是链上脚本：[`../../tracks/implementation/worked-example-miniscript-vs-script.md`](../../tracks/implementation/worked-example-miniscript-vs-script.md)（不变量 191）。  
+Taproot 是后续软分叉，本课不展开脚本语言。走脚本路径不是已经是 tapscript 语义：[`../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md`](../../tracks/implementation/worked-example-tapscript-vs-scriptpath.md) BIP-342 scriptpath not already tapscript-semantics / not already 153 / not already 189-bundled 正式三事（189 余量）：[`../../tracks/implementation/worked-example-tpsm-notsem-vs-bundled.md`](../../tracks/implementation/worked-example-tpsm-notsem-vs-bundled.md)（不变量 1557）。 BIP-342 success-opcode not already executed / not already safe-upgrade / not already 189-bundled 正式三事（189 余量）：[`../../tracks/implementation/worked-example-tpsm-notdone-vs-bundled.md`](../../tracks/implementation/worked-example-tpsm-notdone-vs-bundled.md)（不变量 1558）。 BIP-342 minimalif not already p2wsh-policy-only / not already 191 / not already 144 正式三事（189 余量）：[`../../tracks/implementation/worked-example-tpsm-notmin-vs-bundled.md`](../../tracks/implementation/worked-example-tpsm-notmin-vs-bundled.md)（不变量 1559）。（不变量 189）。看见 Miniscript 不是已经是链上脚本：[`../../tracks/implementation/worked-example-miniscript-vs-script.md`](../../tracks/implementation/worked-example-miniscript-vs-script.md)（不变量 191）。  
 对照：Ethereum 硬分叉改操作码更常把旧客户端直接踢走。
 
 ---

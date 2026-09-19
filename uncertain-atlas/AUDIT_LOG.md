@@ -1,3 +1,18 @@
+| A7560 | 记录 | 会与 189 / 191 / 144 / 1557 / 1558 糊成「看见MINIMALIF不是已经只是P2WSH策略就已经只是P2WSH策略 interchangeable、就已经是不变量 191 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-342 minimalif not already p2wsh-policy-only / not already 191 / not already 144 正式三事（189 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。189 tapscript vs scriptpath bundled unbundling 完成（1559 item 3） |
+| A7561 | 高 | 看见MINIMALIF不是已经只是P2WSH策略 会被写成已经只是P2WSH策略 interchangeable / 191 interchangeable | 官方 BIP-342 tpsm item 3：not already 已经只是P2WSH策略 / not 191 |
+| A7562 | 高 | 看见MINIMALIF is not already only a P2WSH policy 会被写成已经是不变量 191 interchangeable / 144 interchangeable | 官方 BIP-342 tpsm item 3：not already 已经是不变量 191 / not 144 |
+| A7563 | 高 | 看见MINIMALIF不是已经只是P2WSH策略 会被写成已经是不变量 144 interchangeable | 官方 BIP-342 tpsm item 3：not already settled |
+| A7564 | 中 | 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签会被抄进不确定 | 不抄。不写 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签。不另写 19 节 |
+| A7555 | 记录 | 会与 189 / 153 / 191 / 1557 / 1559 糊成「看见遇见成功操作码不是已经执行完就已经执行完 interchangeable、就已经安全升级 interchangeable、就已经 189 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-342 success-opcode not already executed / not already safe-upgrade / not already 189-bundled 正式三事（189 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。189 tapscript vs scriptpath bundled unbundling 续（1558 item 2） |
+| A7556 | 高 | 看见遇见成功操作码不是已经执行完 会被写成已经执行完 interchangeable / 153 interchangeable | 官方 BIP-342 tpsm item 2：not already 已经执行完 / not 153 |
+| A7557 | 高 | 看见encountering a success opcode is not already execution having completed 会被写成已经安全升级 interchangeable / 191 interchangeable | 官方 BIP-342 tpsm item 2：not already 已经安全升级 / not 191 |
+| A7558 | 高 | 看见遇见成功操作码不是已经执行完 会被写成已经 189 bundled interchangeable | 官方 BIP-342 tpsm item 2：not already settled |
+| A7559 | 中 | 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签会被抄进不确定 | 不抄。不写 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签。不另写 19 节 |
+| A7550 | 记录 | 会与 189 / 153 / 170 / 1558 / 1559 糊成「看见走脚本路径不是已经是本页这种脚本语义就已经是本页这种脚本语义 interchangeable、就已经是不变量 153 interchangeable、就已经 189 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-342 scriptpath not already tapscript-semantics / not already 153 / not already 189-bundled 正式三事（189 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。189 tapscript vs scriptpath bundled unbundling 启动（1557 item 1） |
+| A7551 | 高 | 看见走脚本路径不是已经是本页这种脚本语义 会被写成已经是本页这种脚本语义 interchangeable / 153 interchangeable | 官方 BIP-342 tpsm item 1：not already 已经是本页这种脚本语义 / not 153 |
+| A7552 | 高 | 看见taking the script path is not already this page's script semantics 会被写成已经是不变量 153 interchangeable / 170 interchangeable | 官方 BIP-342 tpsm item 1：not already 已经是不变量 153 / not 170 |
+| A7553 | 高 | 看见走脚本路径不是已经是本页这种脚本语义 会被写成已经 189 bundled interchangeable | 官方 BIP-342 tpsm item 1：not already settled |
+| A7554 | 中 | 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签会被抄进不确定 | 不抄。不写 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签。不另写 19 节 |
 | A7545 | 记录 | 会与 153 / 170 / 174 / 1554 / 1555 糊成「看见看见Taproot输出不是已经分辨付款给钥还是付款给脚本就已经分辨付款给钥还是付款给脚本 interchangeable、就已经是不变量 170 interchangeable、就已经是不变量 174 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。153 keypath vs scriptpath bundled unbundling 完成（1556 item 3） |
 | A7546 | 高 | 看见看见Taproot输出不是已经分辨付款给钥还是付款给脚本 会被写成已经分辨付款给钥还是付款给脚本 interchangeable / 170 interchangeable | 官方 BIP-341 kpsp item 3：not already 已经分辨付款给钥还是付款给脚本 / not 170 |
 | A7547 | 高 | 看见seeing a Taproot output is not already telling whether it pays to key or to script 会被写成已经是不变量 170 interchangeable / 174 interchangeable | 官方 BIP-341 kpsp item 3：not already 已经是不变量 170 / not 174 |
