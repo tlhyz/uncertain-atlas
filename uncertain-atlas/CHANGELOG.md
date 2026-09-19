@@ -1,3 +1,7 @@
+## 2026-09-19（续 825）
+
+- 不变量 708；语料 C685；模式 name-the-exectxresult-notexcluded-bar；反模式 exectxresult-notexcluded-sold-as-bundled；L10.3 第 677 条。填 L4.4 / CometBFT 档案 Code 非零不是已经没进块 not already excluded from block / not already excluded from consensus / not already same as CheckTx gate 正式三事（316 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。316 exectxresult vs consensus bundled unbundling 续（708 item 2）。
+
 ## 2026-09-19（续 824）
 
 - 不变量 707；语料 C684；模式 name-the-exectxresult-notorder-bar；反模式 exectxresult-notorder-sold-as-bundled；L10.3 第 676 条。填 L4.4 / CometBFT 档案结果列表不是已经同一顺序 not already same order / not already count-implies-order / not already engine-ordered 正式三事（316 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。316 exectxresult vs consensus bundled unbundling 启动（707 item 1）。

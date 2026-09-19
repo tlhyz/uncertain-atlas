@@ -1,3 +1,4 @@
+- [`exectxresult-notexcluded-sold-as-bundled.md`](exectxresult-notexcluded-sold-as-bundled.md) — 标成无效 被写成已经没进块 / 已经没进共识 / 已经和池门同一把尺（不变量 708）
 - [`exectxresult-notorder-sold-as-bundled.md`](exectxresult-notorder-sold-as-bundled.md) — 回了列表 被写成已经同一顺序 / 已经条数等于顺序 / 已经引擎排好（不变量 707）
 - [`maxgas-notcommitted-sold-as-bundled.md`](maxgas-notcommitted-sold-as-bundled.md) — 块已经提交 被写成已经按气验过 / 已经共识守了 / 已经默认卡气（不变量 706）
 - [`maxgas-notgasused-sold-as-bundled.md`](maxgas-notgasused-sold-as-bundled.md) — 有 GasUsed 被写成已经算进共识 / 已经按实用气验过 / 已经由引擎强制不等式（不变量 705）
