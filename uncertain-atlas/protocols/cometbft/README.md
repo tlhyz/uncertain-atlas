@@ -53,7 +53,7 @@ power 0 不是已经删掉不在集合里的人 not already delete outsider / no
 
 应用高度比引擎高不是已经允许：[`../../tracks/implementation/worked-example-crash-steps-vs-commit.md`](../../tracks/implementation/worked-example-crash-steps-vs-commit.md)（不变量 320）。看见块进了 blockstore 不是已经 Commit。看见启动 Info 对上不是已经能跳步。
 
-Offer 收下不是已经装完：[`../../tracks/implementation/worked-example-snapshot-restore-vs-offer.md`](../../tracks/implementation/worked-example-snapshot-restore-vs-offer.md)（不变量 321）。看见一块 chunk 收下不是已经齐。看见拉失败换一份不是已经能接着装。
+Offer 收下不是已经装完 not already restored / not already all-chunks / not already AppHash-verified 正式三事（321 余量）：[`../../tracks/implementation/worked-example-snapshotrestore-notrestored-vs-bundled.md`](../../tracks/implementation/worked-example-snapshotrestore-notrestored-vs-bundled.md)（不变量 719）。 Offer 收下不是已经装完：[`../../tracks/implementation/worked-example-snapshot-restore-vs-offer.md`](../../tracks/implementation/worked-example-snapshot-restore-vs-offer.md)（不变量 321）。看见一块 chunk 收下不是已经齐。看见拉失败换一份不是已经能接着装。
 
 ListSnapshots 回了不是已经有了全部快照：[`../../tracks/implementation/worked-example-snapshot-discover-vs-offer.md`](../../tracks/implementation/worked-example-snapshot-discover-vs-offer.md)（不变量 322）。看见挑了最高不是已经收下。看见 Offer 被拒不是已经停。
 
