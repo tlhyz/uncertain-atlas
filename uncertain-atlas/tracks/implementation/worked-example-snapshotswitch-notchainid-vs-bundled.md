@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看装完不是已经有了 ChainID not already has-ChainID / not already can-propose / not already genesis-RPC-checked 正式三事（323 余量），必须分开装完 是不是 already has-ChainID interchangeable / 323 snapshotswitch bundled interchangeable / snapshotswitch-sold-as-full-history interchangeable、状态机在 是不是 already can-propose interchangeable、有创世文件 是不是 already genesis-RPC-checked interchangeable。可以跳过「看见快照已经装完就已经有了这些 interchangeable / 就已经能出块 interchangeable / 就已经和轻客户端对过 interchangeable」。不要另写怎样切到共识。323 snapshotswitch vs history bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotswitch-notversion-vs-bundled.md`](worked-example-snapshotswitch-notversion-vs-bundled.md)（不变量 726 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看装完不是已经有了 ChainID not already has-ChainID / not already can-propose / not already genesis-RPC-checked 正式三事（323 余量），必须分开装完 是不是 already has-ChainID interchangeable / 323 snapshotswitch bundled interchangeable / snapshotswitch-sold-as-full-history interchangeable、状态机在 是不是 already can-propose interchangeable、有创世文件 是不是 already genesis-RPC-checked interchangeable。可以跳过「看见快照已经装完就已经有了这些 interchangeable / 就已经能出块 interchangeable / 就已经和轻客户端对过 interchangeable」。不要另写怎样切到共识。323 snapshotswitch vs history bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotswitch-notversion-vs-bundled.md`](worked-example-snapshotswitch-notversion-vs-bundled.md)（不变量 726 item 2）。
 
 ## 本页不抄
 
