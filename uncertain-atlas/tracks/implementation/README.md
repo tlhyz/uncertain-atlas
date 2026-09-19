@@ -985,6 +985,9 @@
 - [`worked-example-p2sh13-not16-vs-bundled.md`](worked-example-p2sh13-not16-vs-bundled.md) — 本页这种地址≠already redeem-script/16/settled；≠297 bundled（不变量 1208）
 - [`worked-example-p2sh-address-vs-redeem.md`](worked-example-p2sh-address-vs-redeem.md) — 本页这种地址 ≠ 已经是赎回脚本；旧软件报无效 ≠ 已经付过；只有地址 ≠ 已经知道付给谁（不变量 297）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
+- [`worked-example-adut-notout-vs-bundled.md`](worked-example-adut-notout-vs-bundled.md) — BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）（不变量 1536）
+- [`worked-example-adut-notchk-vs-bundled.md`](worked-example-adut-notchk-vs-bundled.md) — BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）（不变量 1537）
+- [`worked-example-adut-notpay-vs-bundled.md`](worked-example-adut-notpay-vs-bundled.md) — BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）（不变量 1538）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）
 - [`worked-example-xpub-vs-spendable.md`](worked-example-xpub-vs-spendable.md) — 看见扩展公钥 ≠ 已经能花；硬化 ≠ 已经能从公钥推出；32 ≠ 173 ≠ 174 ≠ 350（不变量 182）

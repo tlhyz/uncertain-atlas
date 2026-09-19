@@ -85,7 +85,7 @@
 | 经济 | 转错 scriptPubKey 会不能花或不安全；错串会丢币 |
 
 **推断：** 产品句若只写「支持 Bech32 地址」，读者会把看见串听成已经有 UTXO，或把校验过听成已经上链。  
-**建议：** 第一版若提供收款地址，必须写清地址是给人看的编码，不是账本对象。不要发明「看见地址 = 已经有输出」。不要抄字符表。不要把 173 写成 350 或 141。
+**建议：** 第一版若提供收款地址，必须写清地址是给人看的编码，不是账本对象。可以跳过「看见地址就已经有输出」。174 address vs utxo bundled unbundling 完成（1536 item 1 / 1537 item 2 / 1538 item 3）；精读 [`worked-example-adut-notout-vs-bundled.md`](worked-example-adut-notout-vs-bundled.md)（不变量 1536 item 1）、[`worked-example-adut-notchk-vs-bundled.md`](worked-example-adut-notchk-vs-bundled.md)（不变量 1537 item 2）、[`worked-example-adut-notpay-vs-bundled.md`](worked-example-adut-notpay-vs-bundled.md)（不变量 1538 item 3）。不要发明「看见地址 = 已经有输出」。不要抄字符表。不要把 173 写成 350 或 141。
 
 ---
 

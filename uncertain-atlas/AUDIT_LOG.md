@@ -1,3 +1,18 @@
+| A7455 | 记录 | 会与 174 / 179 / 181 / 1536 / 1537 糊成「看见编出版本和程序不是已经付过款就已经付过款 interchangeable、就已经是不变量 179 interchangeable、就已经是不变量 181 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。174 address vs utxo bundled unbundling 完成（1538 item 3） |
+| A7456 | 高 | 看见编出版本和程序不是已经付过款 会被写成已经付过款 interchangeable / 179 interchangeable | 官方 BIP-173 adut item 3：not already 已经付过款 / not 179 |
+| A7457 | 高 | 看见encoding version and program is not already having paid 会被写成已经是不变量 179 interchangeable / 181 interchangeable | 官方 BIP-173 adut item 3：not already 已经是不变量 179 / not 181 |
+| A7458 | 高 | 看见编出版本和程序不是已经付过款 会被写成已经是不变量 181 interchangeable | 官方 BIP-173 adut item 3：not already settled |
+| A7459 | 中 | 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法会被抄进不确定 | 不抄。不写 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法。不另写 19 节 |
+| A7450 | 记录 | 会与 174 / 170 / 152 / 1536 / 1538 糊成「看见校验过不是见证程序已经在链上就已经在链上 interchangeable、就已经是不变量 170 interchangeable、就已经是不变量 152 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。174 address vs utxo bundled unbundling 续（1537 item 2） |
+| A7451 | 高 | 看见校验过不是见证程序已经在链上 会被写成已经在链上 interchangeable / 170 interchangeable | 官方 BIP-173 adut item 2：not already 已经在链上 / not 170 |
+| A7452 | 高 | 看见passing the checksum is not already the witness program being on chain 会被写成已经是不变量 170 interchangeable / 152 interchangeable | 官方 BIP-173 adut item 2：not already 已经是不变量 170 / not 152 |
+| A7453 | 高 | 看见校验过不是见证程序已经在链上 会被写成已经是不变量 152 interchangeable | 官方 BIP-173 adut item 2：not already settled |
+| A7454 | 中 | 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法会被抄进不确定 | 不抄。不写 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法。不另写 19 节 |
+| A7445 | 记录 | 会与 174 / 181 / 170 / 1537 / 1538 糊成「看见Bech32地址串不是链上已经有这笔输出就已经有这笔输出 interchangeable、就已经是不变量 181 interchangeable、就已经 174 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。174 address vs utxo bundled unbundling 启动（1536 item 1） |
+| A7446 | 高 | 看见Bech32地址串不是链上已经有这笔输出 会被写成已经有这笔输出 interchangeable / 181 interchangeable | 官方 BIP-173 adut item 1：not already 已经有这笔输出 / not 181 |
+| A7447 | 高 | 看见seeing a Bech32 string is not already having that output on chain 会被写成已经是不变量 181 interchangeable / 170 interchangeable | 官方 BIP-173 adut item 1：not already 已经是不变量 181 / not 170 |
+| A7448 | 高 | 看见Bech32地址串不是链上已经有这笔输出 会被写成已经 174 bundled interchangeable | 官方 BIP-173 adut item 1：not already settled |
+| A7449 | 中 | 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法会被抄进不确定 | 不抄。不写 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法。不另写 19 节 |
 | A7440 | 记录 | 会与 170 / 152 / 297 / 1533 / 1534 糊成「看见哈希对上不是内层已经验过就已经验过内层 interchangeable、就已经是不变量 152 interchangeable、就已经是不变量 297 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。170 p2sh hash vs redeem bundled unbundling 完成（1535 item 3） |
 | A7441 | 高 | 看见哈希对上不是内层已经验过 会被写成已经验过内层 interchangeable / 152 interchangeable | 官方 BIP-16 phsh item 3：not already 已经验过内层 / not 152 |
 | A7442 | 高 | 看见hash matching is not already the inner script having been verified 会被写成已经是不变量 152 interchangeable / 297 interchangeable | 官方 BIP-16 phsh item 3：not already 已经是不变量 152 / not 297 |

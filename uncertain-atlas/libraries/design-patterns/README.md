@@ -1,3 +1,6 @@
+- [`name-the-adut-notpay-bar.md`](name-the-adut-notpay-bar.md) — BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）（不变量 1538）
+- [`name-the-adut-notchk-bar.md`](name-the-adut-notchk-bar.md) — BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）（不变量 1537）
+- [`name-the-adut-notout-bar.md`](name-the-adut-notout-bar.md) — BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）（不变量 1536）
 - [`name-the-phsh-notinr-bar.md`](name-the-phsh-notinr-bar.md) — BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）（不变量 1535）
 - [`name-the-phsh-notrun-bar.md`](name-the-phsh-notrun-bar.md) — BIP-16 old-equal not already new-reran / not already 153 / not already 144 正式三事（170 余量）（不变量 1534）
 - [`name-the-phsh-notrev-bar.md`](name-the-phsh-notrev-bar.md) — BIP-16 hash-output not already redeem-revealed / not already 297 / not already 170-bundled 正式三事（170 余量）（不变量 1533）

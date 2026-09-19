@@ -1,3 +1,15 @@
+## 2026-09-19（续 1655）
+
+- 不变量 1538；语料 C1516；模式 name-the-adut-notpay-bar；反模式 adut-notpay-sold-as-bundled；L10.3 第 1507 条。填 L3.7 BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）。174 address vs utxo bundled unbundling 完成（1538 item 3）。
+
+## 2026-09-19（续 1654）
+
+- 不变量 1537；语料 C1515；模式 name-the-adut-notchk-bar；反模式 adut-notchk-sold-as-bundled；L10.3 第 1506 条。填 L3.7 BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）。174 address vs utxo bundled unbundling 续（1537 item 2）。
+
+## 2026-09-19（续 1653）
+
+- 不变量 1536；语料 C1514；模式 name-the-adut-notout-bar；反模式 adut-notout-sold-as-bundled；L10.3 第 1505 条。填 L3.7 BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）。174 address vs utxo bundled unbundling 启动（1536 item 1）。
+
 ## 2026-09-19（续 1652）
 
 - 不变量 1535；语料 C1513；模式 name-the-phsh-notinr-bar；反模式 phsh-notinr-sold-as-bundled；L10.3 第 1504 条。填 L2.1 BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）。170 p2sh hash vs redeem bundled unbundling 完成（1535 item 3）。

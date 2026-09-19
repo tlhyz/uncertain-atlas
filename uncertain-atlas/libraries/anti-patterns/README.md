@@ -1,3 +1,6 @@
+- [`adut-notpay-sold-as-bundled.md`](adut-notpay-sold-as-bundled.md) — 编出版本和程序 被写成已经付过款 / 就已经是 179 / 就已经是 181（不变量 1538）
+- [`adut-notchk-sold-as-bundled.md`](adut-notchk-sold-as-bundled.md) — 校验过 被写成见证程序已经上链 / 就已经是 170 / 就已经是 152（不变量 1537）
+- [`adut-notout-sold-as-bundled.md`](adut-notout-sold-as-bundled.md) — Bech32 地址串 被写成已经有链上输出 / 就已经是 181 / 就已经 174 bundled（不变量 1536）
 - [`phsh-notinr-sold-as-bundled.md`](phsh-notinr-sold-as-bundled.md) — 哈希对上 被写成内层已经验过 / 就已经是 152 / 就已经是 297（不变量 1535）
 - [`phsh-notrun-sold-as-bundled.md`](phsh-notrun-sold-as-bundled.md) — 旧节点 EQUAL 通过 被写成新节点已经再跑 / 就已经是 153 / 就已经是 144（不变量 1534）
 - [`phsh-notrev-sold-as-bundled.md`](phsh-notrev-sold-as-bundled.md) — 付给脚本哈希 被写成已经揭开赎回 / 就已经是 297 / 就已经 170 bundled（不变量 1533）
