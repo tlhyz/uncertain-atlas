@@ -1,3 +1,4 @@
+- [`consensusparams-notpartial-sold-as-bundled.md`](consensusparams-notpartial-sold-as-bundled.md) — 只填一项 被写成已经只改这一项 / 没写字段 被写成已经保持原值 / 能整份套上 被写成已经是按字段合并（不变量 718）
 - [`consensusparams-notclear-sold-as-bundled.md`](consensusparams-notclear-sold-as-bundled.md) — 没回 被写成已经清成默认 / 空着 被写成已经改过 / 能更新 被写成已经和 InitChain 空回包同一句（不变量 717）
 - [`consensusparams-notempty-sold-as-bundled.md`](consensusparams-notempty-sold-as-bundled.md) — 回了空 被写成已经没有参数 / 没回参数 被写成已经删掉创世参数 / 能设初始参数 被写成已经用了应用自己的空参数（不变量 716）
 - [`validatorupdate-notpower0-sold-as-bundled.md`](validatorupdate-notpower0-sold-as-bundled.md) — 写成 0 被写成已经能删不在名单里的人 / 看见总权 被写成已经没有上限 / 看见四种钥型 被写成已经选型（不变量 715）

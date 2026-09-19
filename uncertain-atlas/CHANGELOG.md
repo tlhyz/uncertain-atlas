@@ -1,3 +1,7 @@
+## 2026-09-19（续 835）
+
+- 不变量 718；语料 C695；模式 name-the-consensusparams-notpartial-bar；反模式 consensusparams-notpartial-sold-as-bundled；L10.3 第 687 条。填 L4.4 / CometBFT 档案 只改一个字段不是已经只改这一项 not already only-that / not already rest-unchanged / not already field-merge 正式三事（319 余量） / 实现表 / 05b / 共识专题 / 停链面地图。319 consensusparams vs update bundled unbundling 完成（718 item 3）。
+
 ## 2026-09-19（续 834）
 
 - 不变量 717；语料 C694；模式 name-the-consensusparams-notclear-bar；反模式 consensusparams-notclear-sold-as-bundled；L10.3 第 686 条。填 L4.4 / CometBFT 档案 Finalize 没回不是已经清掉 not already clear / not already changed / not already InitChain-empty-same 正式三事（319 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。319 consensusparams vs update bundled unbundling 续（717 item 2）。
