@@ -1,3 +1,7 @@
+## 2026-09-19（续 842）
+
+- 不变量 725；语料 C702；模式 name-the-snapshotswitch-notchainid-bar；反模式 snapshotswitch-notchainid-sold-as-bundled；L10.3 第 694 条。填 L4.4 / CometBFT 档案 装完不是已经有了 ChainID not already has-ChainID / not already can-propose / not already genesis-RPC-checked 正式三事（323 余量） / 实现表 / 05b / 共识专题 / 停链面地图。323 snapshotswitch vs history bundled unbundling 启动（725 item 1）。
+
 ## 2026-09-19（续 841）
 
 - 不变量 724；语料 C701；模式 name-the-snapshotdiscover-notstop-bar；反模式 snapshotdiscover-notstop-sold-as-bundled；L10.3 第 693 条。填 L4.4 / CometBFT 档案 Offer 被拒不是已经停 not already no-snapshots / not already stopped / not already discovery-done 正式三事（322 余量） / 实现表 / 05b / 共识专题 / 停链面地图。322 snapshotdiscover vs offer bundled unbundling 完成（724 item 3）。

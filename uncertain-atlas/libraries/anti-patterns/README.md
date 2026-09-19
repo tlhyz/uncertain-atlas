@@ -1,3 +1,4 @@
+- [`snapshotswitch-notchainid-sold-as-bundled.md`](snapshotswitch-notchainid-sold-as-bundled.md) — 装完 被写成已经有了这些 / 状态机在 被写成已经能出块 / 有创世文件 被写成已经和轻客户端对过（不变量 725）
 - [`snapshotdiscover-notstop-sold-as-bundled.md`](snapshotdiscover-notstop-sold-as-bundled.md) — 被拒 被写成已经没有快照 / 拒了邻居 被写成已经停 / 能中止 被写成已经发现完（不变量 724）
 - [`snapshotdiscover-notaccepted-sold-as-bundled.md`](snapshotdiscover-notaccepted-sold-as-bundled.md) — 挑了 被写成已经收下 / 最高 被写成已经装完 / 排过了 被写成已经是应用要的格式（不变量 723）
 - [`snapshotdiscover-notall-sold-as-bundled.md`](snapshotdiscover-notall-sold-as-bundled.md) — 问了邻居 被写成已经有了全部快照 / 回了 被写成已经没有上限 / 看见 10 被写成已经是不确定默认（不变量 722）
