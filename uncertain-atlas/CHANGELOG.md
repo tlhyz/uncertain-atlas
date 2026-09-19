@@ -1,3 +1,7 @@
+## 2026-09-19（续 836）
+
+- 不变量 719；语料 C696；模式 name-the-snapshotrestore-notrestored-bar；反模式 snapshotrestore-notrestored-sold-as-bundled；L10.3 第 688 条。填 L4.4 / CometBFT 档案 Offer 收下不是已经装完 not already restored / not already all-chunks / not already AppHash-verified 正式三事（321 余量） / 实现表 / 05b / 共识专题 / 停链面地图。321 snapshotrestore vs offer bundled unbundling 启动（719 item 1）。
+
 ## 2026-09-19（续 835）
 
 - 不变量 718；语料 C695；模式 name-the-consensusparams-notpartial-bar；反模式 consensusparams-notpartial-sold-as-bundled；L10.3 第 687 条。填 L4.4 / CometBFT 档案 只改一个字段不是已经只改这一项 not already only-that / not already rest-unchanged / not already field-merge 正式三事（319 余量） / 实现表 / 05b / 共识专题 / 停链面地图。319 consensusparams vs update bundled unbundling 完成（718 item 3）。
