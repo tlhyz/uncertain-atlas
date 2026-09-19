@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 AppHash 对上不是已经版本也对上 not already version-matched / not already current-header / not already this-header-settled 正式三事（323 余量），必须分开 AppHash 对上 是不是 already version-matched interchangeable / 323 snapshotswitch bundled interchangeable / snapshotswitch-sold-as-full-history interchangeable、对了下一高度 是不是 already current-header interchangeable、Info 绿了 是不是 already this-header-settled interchangeable。可以跳过「看见 Info 的 AppHash 对上了就已经版本也对上 interchangeable / 就已经对了当前头 interchangeable / 就已经本头交差 interchangeable」。不要另写怎样切到共识。323 snapshotswitch vs history bundled unbundling 在本页 item 2 续；续 [`worked-example-snapshotswitch-nothistory-vs-bundled.md`](worked-example-snapshotswitch-nothistory-vs-bundled.md)（不变量 727 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 AppHash 对上不是已经版本也对上 not already version-matched / not already current-header / not already this-header-settled 正式三事（323 余量），必须分开 AppHash 对上 是不是 already version-matched interchangeable / 323 snapshotswitch bundled interchangeable / snapshotswitch-sold-as-full-history interchangeable、对了下一高度 是不是 already current-header interchangeable、Info 绿了 是不是 already this-header-settled interchangeable。可以跳过「看见 Info 的 AppHash 对上了就已经版本也对上 interchangeable / 就已经对了当前头 interchangeable / 就已经本头交差 interchangeable」。不要另写怎样切到共识。323 snapshotswitch vs history bundled unbundling 在本页 item 2 续；续 [`worked-example-snapshotswitch-nothistory-vs-bundled.md`](worked-example-snapshotswitch-nothistory-vs-bundled.md)（不变量 727 item 3）。323 snapshotswitch vs history bundled unbundling 在 725 + 726 + 727 完成。
 
 ## 本页不抄
 

@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Transition to Consensus。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「装完不是已经有了 ChainID / AppHash 对上不是已经版本也对上 / 切进共识不是已经有完整历史」，不是只有 AppHash 可信任，也不是 Offer 收下已经装完。不要另写怎样切到共识或怎样配扩展。323 snapshotswitch vs history bundled unbundling 续（725 + 726）；精读 [`worked-example-snapshotswitch-notchainid-vs-bundled.md`](worked-example-snapshotswitch-notchainid-vs-bundled.md)（不变量 725 item 1）；[`worked-example-snapshotswitch-notversion-vs-bundled.md`](worked-example-snapshotswitch-notversion-vs-bundled.md)（不变量 726 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「装完不是已经有了 ChainID / AppHash 对上不是已经版本也对上 / 切进共识不是已经有完整历史」，不是只有 AppHash 可信任，也不是 Offer 收下已经装完。不要另写怎样切到共识或怎样配扩展。323 snapshotswitch vs history bundled unbundling 完成（725 + 726 + 727）；精读 [`worked-example-snapshotswitch-notchainid-vs-bundled.md`](worked-example-snapshotswitch-notchainid-vs-bundled.md)（不变量 725 item 1）；[`worked-example-snapshotswitch-notversion-vs-bundled.md`](worked-example-snapshotswitch-notversion-vs-bundled.md)（不变量 726 item 2）；[`worked-example-snapshotswitch-nothistory-vs-bundled.md`](worked-example-snapshotswitch-nothistory-vs-bundled.md)（不变量 727 item 3）。
 
 ## 官方三件事
 
