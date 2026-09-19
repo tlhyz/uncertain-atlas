@@ -1,3 +1,4 @@
+- [`name-the-validatorupdate-notempty-bar.md`](name-the-validatorupdate-notempty-bar.md) — InitChain 空名单不是已经没有集合 not already no set / not already deleted genesis / not already app empty set 正式三事（318 余量）（不变量 713）
 - [`name-the-checktxresponse-notpriority-bar.md`](name-the-checktxresponse-notpriority-bar.md) — Priority 不是已经是共识顺序 not already consensus order / not already in block / not already removed from mempool 正式三事（317 余量）（不变量 712）
 - [`name-the-checktxresponse-notfork-bar.md`](name-the-checktxresponse-notfork-bar.md) — 各节点 Data 不一样不是已经分叉 not already fork / not already violation / not already ExecuteTxState 正式三事（317 余量）（不变量 711）
 - [`name-the-checktxresponse-notused-bar.md`](name-the-checktxresponse-notused-bar.md) — CheckTx Data 不是已经被引擎用了 not already used by engine / not already ExecTxResult.Data / not already in LastResultsHash 正式三事（317 余量）（不变量 710）
