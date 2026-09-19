@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看一块 chunk 收下不是已经齐 not already complete / not already banned / not already settled 正式三事（321 余量），必须分开收下一块 是不是 already complete interchangeable / 321 snapshotrestore bundled interchangeable / snapshotrestore-sold-as-offered interchangeable、回了再拉 是不是 already banned interchangeable、能回指令 是不是 already settled interchangeable。可以跳过「看见 ApplySnapshotChunk 收下了一块就已经齐 interchangeable / 就已经封禁 interchangeable / 就已经交差 interchangeable」。不要另写怎样切块或怎样装。321 snapshotrestore vs offer bundled unbundling 在本页 item 2 续；续 [`worked-example-snapshotrestore-notresume-vs-bundled.md`](worked-example-snapshotrestore-notresume-vs-bundled.md)（不变量 721 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看一块 chunk 收下不是已经齐 not already complete / not already banned / not already settled 正式三事（321 余量），必须分开收下一块 是不是 already complete interchangeable / 321 snapshotrestore bundled interchangeable / snapshotrestore-sold-as-offered interchangeable、回了再拉 是不是 already banned interchangeable、能回指令 是不是 already settled interchangeable。可以跳过「看见 ApplySnapshotChunk 收下了一块就已经齐 interchangeable / 就已经封禁 interchangeable / 就已经交差 interchangeable」。不要另写怎样切块或怎样装。321 snapshotrestore vs offer bundled unbundling 在本页 item 2 续；续 [`worked-example-snapshotrestore-notresume-vs-bundled.md`](worked-example-snapshotrestore-notresume-vs-bundled.md)（不变量 721 item 3）。321 snapshotrestore vs offer bundled unbundling 在 719 + 720 + 721 完成。
 
 ## 本页不抄
 
