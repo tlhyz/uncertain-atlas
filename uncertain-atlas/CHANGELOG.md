@@ -1,3 +1,7 @@
+## 2026-09-19（续 839）
+
+- 不变量 722；语料 C699；模式 name-the-snapshotdiscover-notall-bar；反模式 snapshotdiscover-notall-sold-as-bundled；L10.3 第 691 条。填 L4.4 / CometBFT 档案 ListSnapshots 回了不是已经有了全部快照 not already all-snapshots / not already no-cap / not already product-default-10 正式三事（322 余量） / 实现表 / 05b / 共识专题 / 停链面地图。322 snapshotdiscover vs offer bundled unbundling 启动（722 item 1）。
+
 ## 2026-09-19（续 838）
 
 - 不变量 721；语料 C698；模式 name-the-snapshotrestore-notresume-bar；反模式 snapshotrestore-notresume-sold-as-bundled；L10.3 第 690 条。填 L4.4 / CometBFT 档案 拉失败换一份不是已经能接着装 not already can-resume / not already same-snapshot / not already prior-usable 正式三事（321 余量） / 实现表 / 05b / 共识专题 / 停链面地图。321 snapshotrestore vs offer bundled unbundling 完成（721 item 3）。
