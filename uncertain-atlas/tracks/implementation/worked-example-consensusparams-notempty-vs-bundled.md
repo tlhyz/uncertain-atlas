@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 InitChain 空参数不是已经没有参数 not already no params / not already deleted genesis params / not already app empty params 正式三事（319 余量），必须分开回了空 是不是 already no params interchangeable / 319 consensusparams bundled interchangeable / consensusparams-sold-as-updated interchangeable、没回参数 是不是 already deleted genesis params interchangeable、能设初始参数 是不是 already app empty params interchangeable。可以跳过「看见回了空就已经没有参数 interchangeable / 就已经删掉创世参数 interchangeable / 就已经和 InitChain 空验证者名单同一句 interchangeable」。不要另写怎样编参数。319 consensusparams vs update bundled unbundling 在本页 item 1 完成；续 [`worked-example-consensusparams-notclear-vs-bundled.md`](worked-example-consensusparams-notclear-vs-bundled.md)（不变量 717 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 InitChain 空参数不是已经没有参数 not already no params / not already deleted genesis params / not already app empty params 正式三事（319 余量），必须分开回了空 是不是 already no params interchangeable / 319 consensusparams bundled interchangeable / consensusparams-sold-as-updated interchangeable、没回参数 是不是 already deleted genesis params interchangeable、能设初始参数 是不是 already app empty params interchangeable。可以跳过「看见回了空就已经没有参数 interchangeable / 就已经删掉创世参数 interchangeable / 就已经和 InitChain 空验证者名单同一句 interchangeable」。不要另写怎样编参数。319 consensusparams vs update bundled unbundling 在本页 item 1 完成；续 [`worked-example-consensusparams-notclear-vs-bundled.md`](worked-example-consensusparams-notclear-vs-bundled.md)（不变量 717 item 2）。
 
 ## 本页不抄
 

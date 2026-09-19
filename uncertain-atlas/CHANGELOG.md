@@ -1,3 +1,7 @@
+## 2026-09-19（续 834）
+
+- 不变量 717；语料 C694；模式 name-the-consensusparams-notclear-bar；反模式 consensusparams-notclear-sold-as-bundled；L10.3 第 686 条。填 L4.4 / CometBFT 档案 Finalize 没回不是已经清掉 not already clear / not already changed / not already InitChain-empty-same 正式三事（319 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。319 consensusparams vs update bundled unbundling 续（717 item 2）。
+
 ## 2026-09-19（续 833）
 
 - 不变量 716；语料 C693；模式 name-the-consensusparams-notempty-bar；反模式 consensusparams-notempty-sold-as-bundled；L10.3 第 685 条。填 L4.4 / CometBFT 档案 InitChain 空参数不是已经没有参数 not already no params / not already deleted genesis params / not already app empty params 正式三事（319 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。319 consensusparams vs update bundled unbundling 启动（716 item 1）。
