@@ -86,7 +86,7 @@
 | 经济 | 压最大块与方差；不抄地板每 token |
 
 **推断：** 产品句若只写「gas 更贵了」，读者会把数据为主的上限听成已经改了普通执行气，或把预留听成已经烧到。  
-**建议：** 第一版若做 DA 定价，必须分开 calldata 地板、blob 气、1559 拆分、3860 字成本。不要发明「看见地板就已经改了执行气」。不要抄参数。不要把 7623 写成 4844。
+**建议：** 第一版若做 DA 定价，必须分开 calldata 地板、blob 气、1559 拆分、3860 字成本。可以跳过「看见地板就已经改了执行气」。197 calldata-floor vs execution bundled unbundling 完成（1467 item 1 / 1468 item 2 / 1469 item 3）；精读 [`worked-example-cflr-notexec-vs-bundled.md`](worked-example-cflr-notexec-vs-bundled.md)（不变量 1467 item 1）、[`worked-example-cflr-notxfer-vs-bundled.md`](worked-example-cflr-notxfer-vs-bundled.md)（不变量 1468 item 2）、[`worked-example-cflr-notburn-vs-bundled.md`](worked-example-cflr-notburn-vs-bundled.md)（不变量 1469 item 3）。不要发明「看见地板就已经改了执行气」。不要抄参数。不要把 7623 写成 4844。
 
 ---
 

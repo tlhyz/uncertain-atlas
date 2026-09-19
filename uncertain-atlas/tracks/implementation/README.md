@@ -991,6 +991,9 @@
 - [`worked-example-icode-nottx-vs-bundled.md`](worked-example-icode-nottx-vs-bundled.md) — 创建交易超界≠already CREATE失败/2681/已进EVM；≠176 bundled（不变量 1438）
 - [`worked-example-icode-notrun-vs-bundled.md`](worked-example-icode-notrun-vs-bundled.md) — 按字分析费≠already 跑完initcode/CREATE2哈希费/已创建；≠176 bundled（不变量 1439）
 - [`worked-example-initcode-vs-runtime.md`](worked-example-initcode-vs-runtime.md) — initcode 超界 ≠ 已经是部署代码超界；按字分析费 ≠ 已经跑完构造；3860 ≠ 170 ≠ 1014 ≠ 2681（不变量 176）
+- [`worked-example-cflr-notexec-vs-bundled.md`](worked-example-cflr-notexec-vs-bundled.md) — calldata地板≠already 改了执行气/145/197 bundled；≠197 bundled（不变量 1467）
+- [`worked-example-cflr-notxfer-vs-bundled.md`](worked-example-cflr-notxfer-vs-bundled.md) — 数据为主更贵≠already 普通转账更贵/158/226；≠197 bundled（不变量 1468）
+- [`worked-example-cflr-notburn-vs-bundled.md`](worked-example-cflr-notburn-vs-bundled.md) — 预留地板气限≠already 烧到地板/更安全/101；≠197 bundled（不变量 1469）
 - [`worked-example-calldata-floor-vs-execution.md`](worked-example-calldata-floor-vs-execution.md) — 看见 calldata 地板 ≠ 已经改了执行气；数据为主更贵 ≠ 已经让普通转账更贵；预留地板气限 ≠ 已经烧到地板；7623 ≠ 4844 ≠ 1559 ≠ 2028（不变量 197）
 - [`worked-example-rcap-notgas-vs-bundled.md`](worked-example-rcap-notgas-vs-bundled.md) — RLP编码硬帽≠already 改了气/197/202 bundled；≠202 bundled（不变量 1464）
 - [`worked-example-rcap-notprop-vs-bundled.md`](worked-example-rcap-notprop-vs-bundled.md) — 流言不传≠already 执行层非法/96/158；≠202 bundled（不变量 1465）

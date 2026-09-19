@@ -1,3 +1,15 @@
+## 2026-09-19（续 1586）
+
+- 不变量 1469；语料 C1447；模式 name-the-cflr-notburn-bar；反模式 cflr-notburn-sold-as-bundled；L10.3 第 1438 条。填 L5.1 EIP-7623 reserve-floor not already burned / not already safer / not already 101 正式三事（197 余量）。197 calldata-floor vs execution bundled unbundling 完成（1469 item 3）。
+
+## 2026-09-19（续 1585）
+
+- 不变量 1468；语料 C1446；模式 name-the-cflr-notxfer-bar；反模式 cflr-notxfer-sold-as-bundled；L10.3 第 1437 条。填 L5.1 EIP-7623 data-heavy-dearer not already transfer-dearer / not already 158 / not already 226 正式三事（197 余量）。197 calldata-floor vs execution bundled unbundling 续（1468 item 2）。
+
+## 2026-09-19（续 1584）
+
+- 不变量 1467；语料 C1445；模式 name-the-cflr-notexec-bar；反模式 cflr-notexec-sold-as-bundled；L10.3 第 1436 条。填 L5.1 EIP-7623 calldata-floor not already execution-gas / not already 145 / not already 197-bundled 正式三事（197 余量）。197 calldata-floor vs execution bundled unbundling 启动（1467 item 1）。
+
 ## 2026-09-19（续 1583）
 
 - 不变量 1466；语料 C1444；模式 name-the-rcap-notone-bar；反模式 rcap-notone-sold-as-bundled；L10.3 第 1435 条。填 L5.1 EIP-7934 beacon-margin not already one-encoding / not already safer / not already 101 正式三事（202 余量）。202 rlp-cap vs gas bundled unbundling 完成（1466 item 3）。

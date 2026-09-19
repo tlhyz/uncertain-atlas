@@ -1,3 +1,6 @@
+- [`cflr-notburn-sold-as-bundled.md`](cflr-notburn-sold-as-bundled.md) — 预留地板气限 被写成已经烧到地板 / 就已经更安全 / 就已经是 101（不变量 1469）
+- [`cflr-notxfer-sold-as-bundled.md`](cflr-notxfer-sold-as-bundled.md) — 数据为主更贵 被写成已经让普通转账更贵 / 就已经是 158 / 就已经是 226（不变量 1468）
+- [`cflr-notexec-sold-as-bundled.md`](cflr-notexec-sold-as-bundled.md) — calldata地板 被写成已经改了执行气 / 就已经是 145 / 就已经 197 bundled（不变量 1467）
 - [`rcap-notone-sold-as-bundled.md`](rcap-notone-sold-as-bundled.md) — 给信标留边 被写成已经并成一份编码 / 就已经更安全 / 就已经是 101（不变量 1466）
 - [`rcap-notprop-sold-as-bundled.md`](rcap-notprop-sold-as-bundled.md) — 流言不传 被写成已经让执行层非法 / 就已经是 96 / 就已经是 158（不变量 1465）
 - [`rcap-notgas-sold-as-bundled.md`](rcap-notgas-sold-as-bundled.md) — RLP编码硬帽 被写成已经改了气限 / 就已经是 197 / 就已经 202 bundled（不变量 1464）

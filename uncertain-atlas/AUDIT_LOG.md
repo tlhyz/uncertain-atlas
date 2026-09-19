@@ -1,3 +1,18 @@
+| A7110 | 记录 | 会与 197 / 176 / 101 / 1467 / 1468 糊成「看见预留地板气限不是已经烧到地板就已经烧到地板 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7623 reserve-floor not already burned / not already safer / not already 101 正式三事（197 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。197 calldata-floor vs execution bundled unbundling 完成（1469 item 3） |
+| A7111 | 高 | 看见预留地板气限不是已经烧到地板 会被写成已经烧到地板 interchangeable / 176 interchangeable | 官方 EIP-7623 cflr item 3：not already 已经烧到地板 / not 176 |
+| A7112 | 高 | 看见reserved floor gasLimit is not already burned to the floor 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7623 cflr item 3：not already 已经更安全 / not 101 |
+| A7113 | 高 | 看见预留地板气限不是已经烧到地板 会被写成已经是不变量 101 interchangeable | 官方 EIP-7623 cflr item 3：not already settled |
+| A7114 | 中 | 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板会被抄进不确定 | 不抄。不写 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板。不另写 19 节 |
+| A7105 | 记录 | 会与 197 / 158 / 226 / 1467 / 1469 糊成「看见数据为主更贵不是已经让普通转账更贵就已经让普通转账更贵 interchangeable、就已经是不变量 158 interchangeable、就已经是不变量 226 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7623 data-heavy-dearer not already transfer-dearer / not already 158 / not already 226 正式三事（197 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。197 calldata-floor vs execution bundled unbundling 续（1468 item 2） |
+| A7106 | 高 | 看见数据为主更贵不是已经让普通转账更贵 会被写成已经让普通转账更贵 interchangeable / 158 interchangeable | 官方 EIP-7623 cflr item 2：not already 已经让普通转账更贵 / not 158 |
+| A7107 | 高 | 看见data-heavy dearer is not already transfer dearer 会被写成已经是不变量 158 interchangeable / 226 interchangeable | 官方 EIP-7623 cflr item 2：not already 已经是不变量 158 / not 226 |
+| A7108 | 高 | 看见数据为主更贵不是已经让普通转账更贵 会被写成已经是不变量 226 interchangeable | 官方 EIP-7623 cflr item 2：not already settled |
+| A7109 | 中 | 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板会被抄进不确定 | 不抄。不写 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板。不另写 19 节 |
+| A7100 | 记录 | 会与 197 / 145 / 202 / 1468 / 1469 糊成「看见calldata地板不是已经改了执行气就已经改了执行气 interchangeable、就已经是不变量 145 interchangeable、就已经 197 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7623 calldata-floor not already execution-gas / not already 145 / not already 197-bundled 正式三事（197 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。197 calldata-floor vs execution bundled unbundling 启动（1467 item 1） |
+| A7101 | 高 | 看见calldata地板不是已经改了执行气 会被写成已经改了执行气 interchangeable / 145 interchangeable | 官方 EIP-7623 cflr item 1：not already 已经改了执行气 / not 145 |
+| A7102 | 高 | 看见calldata floor is not already execution-gas changed 会被写成已经是不变量 145 interchangeable / 202 interchangeable | 官方 EIP-7623 cflr item 1：not already 已经是不变量 145 / not 202 |
+| A7103 | 高 | 看见calldata地板不是已经改了执行气 会被写成已经 197 bundled interchangeable | 官方 EIP-7623 cflr item 1：not already settled |
+| A7104 | 中 | 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板会被抄进不确定 | 不抄。不写 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板。不另写 19 节 |
 | A7095 | 记录 | 会与 202 / 101 / 145 / 1464 / 1465 糊成「看见给信标块留边不是已经并成一份编码就已经并成一份编码 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7934 beacon-margin not already one-encoding / not already safer / not already 101 正式三事（202 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。202 rlp-cap vs gas bundled unbundling 完成（1466 item 3） |
 | A7096 | 高 | 看见给信标块留边不是已经并成一份编码 会被写成已经并成一份编码 interchangeable / 101 interchangeable | 官方 EIP-7934 rcap item 3：not already 已经并成一份编码 / not 101 |
 | A7097 | 高 | 看见beacon-block margin is not already one encoding 会被写成已经更安全 interchangeable / 145 interchangeable | 官方 EIP-7934 rcap item 3：not already 已经更安全 / not 145 |
