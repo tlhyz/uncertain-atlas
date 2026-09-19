@@ -1,3 +1,4 @@
+- [`name-the-commitlock-notbroadcast-bar.md`](name-the-commitlock-notbroadcast-bar.md) — Commit wait broadcast_tx not already can proceed / not receipt already settled / not sync call already allowed 正式三事（310 余量）（不变量 691）
 - [`name-the-commitlock-notunlocked-bar.md`](name-the-commitlock-notunlocked-bar.md) — lock mempool before Commit not already unlocked / not already sync done / not Commit return already released 正式三事（310 余量）（不变量 690）
 - [`name-the-commitlock-notrpcsafe-bar.md`](name-the-commitlock-notrpcsafe-bar.md) — default global lock not already RPC safe / not already no concurrency / not already changed lock 正式三事（310 余量）（不变量 689）
 - [`name-the-crashsteps-notinfoskip-bar.md`](name-the-crashsteps-notinfoskip-bar.md) — startup Info not already mid-height resume / not already can skip replay / not InitChain already done 正式三事（320 余量）（不变量 688）
