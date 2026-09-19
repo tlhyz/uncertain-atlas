@@ -1,3 +1,4 @@
+- [`snapshotrestore-notchunkcomplete-sold-as-bundled.md`](snapshotrestore-notchunkcomplete-sold-as-bundled.md) — 收下一块 被写成已经齐 / 回了再拉 被写成已经封禁 / 能回指令 被写成已经交差（不变量 720）
 - [`snapshotrestore-notrestored-sold-as-bundled.md`](snapshotrestore-notrestored-sold-as-bundled.md) — Offer 收下 被写成已经装完 / 选了这份 被写成已经有了全部块 / 元数据对上 被写成已经验过 AppHash（不变量 719）
 - [`consensusparams-notpartial-sold-as-bundled.md`](consensusparams-notpartial-sold-as-bundled.md) — 只填一项 被写成已经只改这一项 / 没写字段 被写成已经保持原值 / 能整份套上 被写成已经是按字段合并（不变量 718）
 - [`consensusparams-notclear-sold-as-bundled.md`](consensusparams-notclear-sold-as-bundled.md) — 没回 被写成已经清成默认 / 空着 被写成已经改过 / 能更新 被写成已经和 InitChain 空回包同一句（不变量 717）
