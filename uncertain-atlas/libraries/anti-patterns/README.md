@@ -1,3 +1,6 @@
+- [`cwarm-notany-sold-as-bundled.md`](cwarm-notany-sold-as-bundled.md) — 开跑预填 被写成任意地址已经热 / 就已经是 2930 / 就已经是 101（不变量 1451）
+- [`cwarm-notrecold-sold-as-bundled.md`](cwarm-notrecold-sold-as-bundled.md) — 本笔再碰 被写成又是一次冷访问 / 就已经永远热 / 就已经是 168（不变量 1450）
+- [`cwarm-notwarm-sold-as-bundled.md`](cwarm-notwarm-sold-as-bundled.md) — 本笔第一次碰 被写成已经是热的 / 就已经是下一笔还热 / 就已经 169 bundled（不变量 1449）
 - [`cbase-not169-sold-as-bundled.md`](cbase-not169-sold-as-bundled.md) — 开跑已热 被写成已经是 169 预填含出块者 / 就已经是 2930 / 就已经是 163（不变量 1448）
 - [`cbase-notpay-sold-as-bundled.md`](cbase-notpay-sold-as-bundled.md) — 开跑已热 被写成已经付钱 / 就已经是 1559 / 就已经是 158（不变量 1447）
 - [`cbase-notacc-sold-as-bundled.md`](cbase-notacc-sold-as-bundled.md) — 出块者开跑已热 被写成已经访问过 / 就已经是 2929 第一次 / 就已经 187 bundled（不变量 1446）

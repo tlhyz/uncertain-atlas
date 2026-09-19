@@ -817,6 +817,9 @@
 - [`../finality/worked-example-request-vs-action.md`](../finality/worked-example-request-vs-action.md) — 看见头里的请求承诺 ≠ 已经由共识层处理完；请求 ≠ 已经有权单独促成动作；7685 ≠ 4895 ≠ 2718（不变量 192）
 - [`../state-models/worked-example-delegation-vs-code.md`](../state-models/worked-example-delegation-vs-code.md) — 看见授权名单 ≠ 已经委托成功；委托指示 ≠ 已经是目标代码；7702 ≠ 3607 ≠ 3541 ≠ 2718（不变量 190）
 - [`worked-example-listed-vs-accessed.md`](worked-example-listed-vs-accessed.md) — 列出地址或槽 ≠ 已经访问过；列表外 ≠ 已经不能碰；2930 ≠ 2718 ≠ 1559（不变量 168）
+- [`worked-example-cwarm-notwarm-vs-bundled.md`](worked-example-cwarm-notwarm-vs-bundled.md) — 本笔第一次碰≠already 已热/下一笔还热/169 bundled；≠169 bundled（不变量 1449）
+- [`worked-example-cwarm-notrecold-vs-bundled.md`](worked-example-cwarm-notrecold-vs-bundled.md) — 本笔再碰≠already 又是冷的/永远热/168；≠169 bundled（不变量 1450）
+- [`worked-example-cwarm-notany-vs-bundled.md`](worked-example-cwarm-notany-vs-bundled.md) — 开跑预填≠already 任意地址已热/2930/101；≠169 bundled（不变量 1451）
 - [`worked-example-cold-vs-warm.md`](worked-example-cold-vs-warm.md) — 本笔第一次碰 ≠ 已经热；本笔再碰 ≠ 又是冷访问；2929 ≠ 2930 ≠ 墙钟（不变量 169）
 - [`worked-example-cbase-notacc-vs-bundled.md`](worked-example-cbase-notacc-vs-bundled.md) — 出块者开跑已热≠already 已访问/2929第一次/187 bundled；≠187 bundled（不变量 1446）
 - [`worked-example-cbase-notpay-vs-bundled.md`](worked-example-cbase-notpay-vs-bundled.md) — 开跑已热≠already 已付钱/1559/158；≠187 bundled（不变量 1447）

@@ -1,3 +1,18 @@
+| A7020 | 记录 | 会与 169 / 187 / 101 / 1449 / 1450 糊成「看见开跑预填不是任意地址已经热就任意地址已经热 interchangeable、就已经是 2930 名单 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2929 prefill not already any-address-warm / not already 2930 / not already 101 正式三事（169 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。169 cold vs warm bundled unbundling 完成（1451 item 3） |
+| A7021 | 高 | 看见开跑预填不是任意地址已经热 会被写成任意地址已经热 interchangeable / 187 interchangeable | 官方 EIP-2929 cwarm item 3：not already 任意地址已经热 / not 187 |
+| A7022 | 高 | 看见sender/to/precompile prefill is not any address already warm 会被写成已经是 2930 名单 interchangeable / 101 interchangeable | 官方 EIP-2929 cwarm item 3：not already 已经是 2930 名单 / not 101 |
+| A7023 | 高 | 看见开跑预填不是任意地址已经热 会被写成已经是不变量 101 interchangeable | 官方 EIP-2929 cwarm item 3：not already settled |
+| A7024 | 中 | 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合会被抄进不确定 | 不抄。不写 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合。不另写 19 节 |
+| A7015 | 记录 | 会与 169 / 168 / 101 / 1449 / 1451 糊成「看见本笔再碰不是又是一次冷访问就又是一次冷访问 interchangeable、就已经永远热 interchangeable、就已经是不变量 168 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2929 retouch not already cold-again / not already forever-warm / not already 168 正式三事（169 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。169 cold vs warm bundled unbundling 续（1450 item 2） |
+| A7016 | 高 | 看见本笔再碰不是又是一次冷访问 会被写成又是一次冷访问 interchangeable / 168 interchangeable | 官方 EIP-2929 cwarm item 2：not already 又是一次冷访问 / not 168 |
+| A7017 | 高 | 看见retouch this tx is not another cold access 会被写成已经永远热 interchangeable / 101 interchangeable | 官方 EIP-2929 cwarm item 2：not already 已经永远热 / not 101 |
+| A7018 | 高 | 看见本笔再碰不是又是一次冷访问 会被写成已经是不变量 168 interchangeable | 官方 EIP-2929 cwarm item 2：not already settled |
+| A7019 | 中 | 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合会被抄进不确定 | 不抄。不写 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合。不另写 19 节 |
+| A7010 | 记录 | 会与 169 / 168 / 187 / 1450 / 1451 糊成「看见本笔第一次碰不是已经是热的就已经是热的 interchangeable、就已经是下一笔还热 interchangeable、就已经 169 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2929 first-touch not already warm / not already next-tx / not already 169-bundled 正式三事（169 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。169 cold vs warm bundled unbundling 启动（1449 item 1） |
+| A7011 | 高 | 看见本笔第一次碰不是已经是热的 会被写成已经是热的 interchangeable / 168 interchangeable | 官方 EIP-2929 cwarm item 1：not already 已经是热的 / not 168 |
+| A7012 | 高 | 看见first touch this tx is not already warm 会被写成已经是下一笔还热 interchangeable / 187 interchangeable | 官方 EIP-2929 cwarm item 1：not already 已经是下一笔还热 / not 187 |
+| A7013 | 高 | 看见本笔第一次碰不是已经是热的 会被写成已经 169 bundled interchangeable | 官方 EIP-2929 cwarm item 1：not already settled |
+| A7014 | 中 | 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合会被抄进不确定 | 不抄。不写 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合。不另写 19 节 |
 | A7005 | 记录 | 会与 187 / 169 / 163 / 1446 / 1447 糊成「看见开跑已热不是 169 预填已经覆盖出块者就已经是 169 预填覆盖出块者 interchangeable、就已经是 2930 名单 interchangeable、就已经是不变量 163 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3651 warm-start not already 169-prefill / not already 2930 / not already 163 正式三事（187 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。187 coinbase vs prefill bundled unbundling 完成（1448 item 3） |
 | A7006 | 高 | 看见开跑已热不是 169 预填已经覆盖出块者 会被写成已经是 169 预填覆盖出块者 interchangeable / 169 interchangeable | 官方 EIP-3651 cbase item 3：not already 已经是 169 预填覆盖出块者 / not 169 |
 | A7007 | 高 | 看见warm-at-start is not already the 169 prefills 会被写成已经是 2930 名单 interchangeable / 163 interchangeable | 官方 EIP-3651 cbase item 3：not already 已经是 2930 名单 / not 163 |

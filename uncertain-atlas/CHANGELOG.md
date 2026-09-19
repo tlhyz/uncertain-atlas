@@ -1,3 +1,15 @@
+## 2026-09-19（续 1568）
+
+- 不变量 1451；语料 C1429；模式 name-the-cwarm-notany-bar；反模式 cwarm-notany-sold-as-bundled；L10.3 第 1420 条。填 L5.1 EIP-2929 prefill not already any-address-warm / not already 2930 / not already 101 正式三事（169 余量）。169 cold vs warm bundled unbundling 完成（1451 item 3）。
+
+## 2026-09-19（续 1567）
+
+- 不变量 1450；语料 C1428；模式 name-the-cwarm-notrecold-bar；反模式 cwarm-notrecold-sold-as-bundled；L10.3 第 1419 条。填 L5.1 EIP-2929 retouch not already cold-again / not already forever-warm / not already 168 正式三事（169 余量）。169 cold vs warm bundled unbundling 续（1450 item 2）。
+
+## 2026-09-19（续 1566）
+
+- 不变量 1449；语料 C1427；模式 name-the-cwarm-notwarm-bar；反模式 cwarm-notwarm-sold-as-bundled；L10.3 第 1418 条。填 L5.1 EIP-2929 first-touch not already warm / not already next-tx / not already 169-bundled 正式三事（169 余量）。169 cold vs warm bundled unbundling 启动（1449 item 1）。
+
 ## 2026-09-18（续 1565）
 
 - 不变量 1448；语料 C1426；模式 name-the-cbase-not169-bar；反模式 cbase-not169-sold-as-bundled；L10.3 第 1417 条。填 L5.1 EIP-3651 warm-start not already 169-prefill / not already 2930 / not already 163 正式三事（187 余量）。187 coinbase vs prefill bundled unbundling 完成（1448 item 3）。
