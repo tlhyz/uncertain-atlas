@@ -1,3 +1,6 @@
+- [`phsh-notinr-sold-as-bundled.md`](phsh-notinr-sold-as-bundled.md) — 哈希对上 被写成内层已经验过 / 就已经是 152 / 就已经是 297（不变量 1535）
+- [`phsh-notrun-sold-as-bundled.md`](phsh-notrun-sold-as-bundled.md) — 旧节点 EQUAL 通过 被写成新节点已经再跑 / 就已经是 153 / 就已经是 144（不变量 1534）
+- [`phsh-notrev-sold-as-bundled.md`](phsh-notrev-sold-as-bundled.md) — 付给脚本哈希 被写成已经揭开赎回 / 就已经是 297 / 就已经 170 bundled（不变量 1533）
 - [`cl65-notclk-sold-as-bundled.md`](cl65-notclk-sold-as-bundled.md) — CLTV 比 nLockTime 被写成已经在跟墙上现在比 / 就已经是 41 / 就已经是 165（不变量 1532）
 - [`cl65-notnow-sold-as-bundled.md`](cl65-notnow-sold-as-bundled.md) — nLockTime 将来能花 被写成已经证明现在不能花 / 就已经是 163 / 就已经是 41（不变量 1531）
 - [`cl65-notfld-sold-as-bundled.md`](cl65-notfld-sold-as-bundled.md) — 脚本里的 CLTV 被写成 nLockTime 已经锁住输出 / 就已经是 165 / 就已经 164 bundled（不变量 1530）

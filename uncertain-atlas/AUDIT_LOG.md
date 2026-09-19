@@ -1,3 +1,18 @@
+| A7440 | 记录 | 会与 170 / 152 / 297 / 1533 / 1534 糊成「看见哈希对上不是内层已经验过就已经验过内层 interchangeable、就已经是不变量 152 interchangeable、就已经是不变量 297 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。170 p2sh hash vs redeem bundled unbundling 完成（1535 item 3） |
+| A7441 | 高 | 看见哈希对上不是内层已经验过 会被写成已经验过内层 interchangeable / 152 interchangeable | 官方 BIP-16 phsh item 3：not already 已经验过内层 / not 152 |
+| A7442 | 高 | 看见hash matching is not already the inner script having been verified 会被写成已经是不变量 152 interchangeable / 297 interchangeable | 官方 BIP-16 phsh item 3：not already 已经是不变量 152 / not 297 |
+| A7443 | 高 | 看见哈希对上不是内层已经验过 会被写成已经是不变量 297 interchangeable | 官方 BIP-16 phsh item 3：not already settled |
+| A7444 | 中 | 怎样构造旧合法新非法的赎回、一确认攻击会被抄进不确定 | 不抄。不写 怎样构造旧合法新非法的赎回、一确认攻击。不另写 19 节 |
+| A7435 | 记录 | 会与 170 / 153 / 144 / 1533 / 1535 糊成「看见旧节点HASH160 EQUAL通过不是新节点已经再跑赎回就已经再跑过赎回 interchangeable、就已经是不变量 153 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-16 old-equal not already new-reran / not already 153 / not already 144 正式三事（170 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。170 p2sh hash vs redeem bundled unbundling 续（1534 item 2） |
+| A7436 | 高 | 看见旧节点HASH160 EQUAL通过不是新节点已经再跑赎回 会被写成已经再跑过赎回 interchangeable / 153 interchangeable | 官方 BIP-16 phsh item 2：not already 已经再跑过赎回 / not 153 |
+| A7437 | 高 | 看见old-node HASH160 EQUAL passing is not already the new node re-running redeem 会被写成已经是不变量 153 interchangeable / 144 interchangeable | 官方 BIP-16 phsh item 2：not already 已经是不变量 153 / not 144 |
+| A7438 | 高 | 看见旧节点HASH160 EQUAL通过不是新节点已经再跑赎回 会被写成已经是不变量 144 interchangeable | 官方 BIP-16 phsh item 2：not already settled |
+| A7439 | 中 | 怎样构造旧合法新非法的赎回、一确认攻击会被抄进不确定 | 不抄。不写 怎样构造旧合法新非法的赎回、一确认攻击。不另写 19 节 |
+| A7430 | 记录 | 会与 170 / 297 / 153 / 1534 / 1535 糊成「看见付给脚本哈希不是已经揭开赎回脚本就已经揭开赎回脚本 interchangeable、就已经是不变量 297 interchangeable、就已经 170 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-16 hash-output not already redeem-revealed / not already 297 / not already 170-bundled 正式三事（170 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。170 p2sh hash vs redeem bundled unbundling 启动（1533 item 1） |
+| A7431 | 高 | 看见付给脚本哈希不是已经揭开赎回脚本 会被写成已经揭开赎回脚本 interchangeable / 297 interchangeable | 官方 BIP-16 phsh item 1：not already 已经揭开赎回脚本 / not 297 |
+| A7432 | 高 | 看见paying a script hash is not already revealing the redeem script 会被写成已经是不变量 297 interchangeable / 153 interchangeable | 官方 BIP-16 phsh item 1：not already 已经是不变量 297 / not 153 |
+| A7433 | 高 | 看见付给脚本哈希不是已经揭开赎回脚本 会被写成已经 170 bundled interchangeable | 官方 BIP-16 phsh item 1：not already settled |
+| A7434 | 中 | 怎样构造旧合法新非法的赎回、一确认攻击会被抄进不确定 | 不抄。不写 怎样构造旧合法新非法的赎回、一确认攻击。不另写 19 节 |
 | A7425 | 记录 | 会与 164 / 41 / 165 / 1530 / 1531 糊成「看见CLTV比的是花费交易的nLockTime不是墙上现在就已经在跟墙上现在比 interchangeable、就已经是不变量 41 interchangeable、就已经是不变量 165 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-65 cltv-compares-nlocktime not already wall-clock / not already 41 / not already 165 正式三事（164 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。164 cltv vs nlocktime bundled unbundling 完成（1532 item 3） |
 | A7426 | 高 | 看见CLTV比的是花费交易的nLockTime不是墙上现在 会被写成已经在跟墙上现在比 interchangeable / 41 interchangeable | 官方 BIP-65 cl65 item 3：not already 已经在跟墙上现在比 / not 41 |
 | A7427 | 高 | 看见CLTV comparing against nLockTime is not already comparing against wall-clock now 会被写成已经是不变量 41 interchangeable / 165 interchangeable | 官方 BIP-65 cl65 item 3：not already 已经是不变量 41 / not 165 |

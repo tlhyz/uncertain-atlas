@@ -1,3 +1,6 @@
+- [`name-the-phsh-notinr-bar.md`](name-the-phsh-notinr-bar.md) — BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）（不变量 1535）
+- [`name-the-phsh-notrun-bar.md`](name-the-phsh-notrun-bar.md) — BIP-16 old-equal not already new-reran / not already 153 / not already 144 正式三事（170 余量）（不变量 1534）
+- [`name-the-phsh-notrev-bar.md`](name-the-phsh-notrev-bar.md) — BIP-16 hash-output not already redeem-revealed / not already 297 / not already 170-bundled 正式三事（170 余量）（不变量 1533）
 - [`name-the-cl65-notclk-bar.md`](name-the-cl65-notclk-bar.md) — BIP-65 cltv-compares-nlocktime not already wall-clock / not already 41 / not already 165 正式三事（164 余量）（不变量 1532）
 - [`name-the-cl65-notnow-bar.md`](name-the-cl65-notnow-bar.md) — BIP-65 nlocktime-future-spend not already present-unspendable / not already 163 / not already 41 正式三事（164 余量）（不变量 1531）
 - [`name-the-cl65-notfld-bar.md`](name-the-cl65-notfld-bar.md) — BIP-65 script-cltv not already nlocktime-locked / not already 165 / not already 164-bundled 正式三事（164 余量）（不变量 1530）

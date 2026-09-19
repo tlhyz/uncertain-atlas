@@ -1,3 +1,15 @@
+## 2026-09-19（续 1652）
+
+- 不变量 1535；语料 C1513；模式 name-the-phsh-notinr-bar；反模式 phsh-notinr-sold-as-bundled；L10.3 第 1504 条。填 L2.1 BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）。170 p2sh hash vs redeem bundled unbundling 完成（1535 item 3）。
+
+## 2026-09-19（续 1651）
+
+- 不变量 1534；语料 C1512；模式 name-the-phsh-notrun-bar；反模式 phsh-notrun-sold-as-bundled；L10.3 第 1503 条。填 L2.1 BIP-16 old-equal not already new-reran / not already 153 / not already 144 正式三事（170 余量）。170 p2sh hash vs redeem bundled unbundling 续（1534 item 2）。
+
+## 2026-09-19（续 1650）
+
+- 不变量 1533；语料 C1511；模式 name-the-phsh-notrev-bar；反模式 phsh-notrev-sold-as-bundled；L10.3 第 1502 条。填 L2.1 BIP-16 hash-output not already redeem-revealed / not already 297 / not already 170-bundled 正式三事（170 余量）。170 p2sh hash vs redeem bundled unbundling 启动（1533 item 1）。
+
 ## 2026-09-19（续 1649）
 
 - 不变量 1532；语料 C1510；模式 name-the-cl65-notclk-bar；反模式 cl65-notclk-sold-as-bundled；L10.3 第 1501 条。填 L2.1 BIP-65 cltv-compares-nlocktime not already wall-clock / not already 41 / not already 165 正式三事（164 余量）。164 cltv vs nlocktime bundled unbundling 完成（1532 item 3）。
