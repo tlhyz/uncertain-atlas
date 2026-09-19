@@ -144,7 +144,7 @@ UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用
 ## 12. 最大结构性优势
 
 **可独立复验的小规则集 + 慢变更。**  
-任何人可跑全节点重放。协议进化偏软分叉、偏兼容旧验证者。这与「十年还在」强相关。版本位被置上不是已经锁定；锁定不是已经激活：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。
+任何人可跑全节点重放。协议进化偏软分叉、偏兼容旧验证者。这与「十年还在」强相关。版本位被置上不是已经锁定；锁定不是已经激活：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md) BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）：[`../../tracks/implementation/worked-example-vb9-notlock-vs-bundled.md`](../../tracks/implementation/worked-example-vb9-notlock-vs-bundled.md)（不变量 1545）。 BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）：[`../../tracks/implementation/worked-example-vb9-notact-vs-bundled.md`](../../tracks/implementation/worked-example-vb9-notact-vs-bundled.md)（不变量 1546）。 BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）：[`../../tracks/implementation/worked-example-vb9-notfail-vs-bundled.md`](../../tracks/implementation/worked-example-vb9-notfail-vs-bundled.md)（不变量 1547）。（不变量 171）。
 
 这是结构，不是市值。
 

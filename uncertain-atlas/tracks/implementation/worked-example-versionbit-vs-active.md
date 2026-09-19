@@ -85,7 +85,7 @@
 | 经济 | 并行示意省协调；不是置位已经等于全网升级 |
 
 **推断：** 产品句若只写「用版本位激活」，读者会把举手听成新尺子已经在用。  
-**建议：** 第一版可以不抄版本位并行激活。若做软分叉示意，必须把示意、锁定、激活、失败四套文案分开。不要发明「置位 = 已经激活」。不要抄阈值。不要写怎样假示意。
+**建议：** 第一版可以不抄版本位并行激活。若做软分叉示意，必须把示意、锁定、激活、失败四套文案分开。可以跳过「看见置位就已经激活」。171 versionbit vs active bundled unbundling 完成（1545 item 1 / 1546 item 2 / 1547 item 3）；精读 [`worked-example-vb9-notlock-vs-bundled.md`](worked-example-vb9-notlock-vs-bundled.md)（不变量 1545 item 1）、[`worked-example-vb9-notact-vs-bundled.md`](worked-example-vb9-notact-vs-bundled.md)（不变量 1546 item 2）、[`worked-example-vb9-notfail-vs-bundled.md`](worked-example-vb9-notfail-vs-bundled.md)（不变量 1547 item 3）。不要发明「置位 = 已经激活」。不要抄阈值。不要写怎样假示意。
 
 ---
 

@@ -57,7 +57,7 @@ Bitcoin 的 BIP 过程、长时间讨论、激活机制（细节各次不同）�
 
 ## G. 源码
 
-看一次软分叉的脚本标志位 / 版本位，比看十篇新闻有用。版本位被置上不是已经锁定。锁定不是已经激活。精读：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md)（不变量 171）。
+看一次软分叉的脚本标志位 / 版本位，比看十篇新闻有用。版本位被置上不是已经锁定。锁定不是已经激活。精读：[`../../tracks/implementation/worked-example-versionbit-vs-active.md`](../../tracks/implementation/worked-example-versionbit-vs-active.md) BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）：[`../../tracks/implementation/worked-example-vb9-notlock-vs-bundled.md`](../../tracks/implementation/worked-example-vb9-notlock-vs-bundled.md)（不变量 1545）。 BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）：[`../../tracks/implementation/worked-example-vb9-notact-vs-bundled.md`](../../tracks/implementation/worked-example-vb9-notact-vs-bundled.md)（不变量 1546）。 BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）：[`../../tracks/implementation/worked-example-vb9-notfail-vs-bundled.md`](../../tracks/implementation/worked-example-vb9-notfail-vs-bundled.md)（不变量 1547）。（不变量 171）。
 
 ---
 

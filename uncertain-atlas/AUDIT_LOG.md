@@ -1,3 +1,18 @@
+| A7500 | 记录 | 会与 171 / 173 / 144 / 1545 / 1546 糊成「看见超时未锁定不是已经可以当激活就已经可以当激活 interchangeable、就已经是不变量 173 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L3.3 BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.3、L3.3。171 versionbit vs active bundled unbundling 完成（1547 item 3） |
+| A7501 | 高 | 看见超时未锁定不是已经可以当激活 会被写成已经可以当激活 interchangeable / 173 interchangeable | 官方 BIP-9 vb9 item 3：not already 已经可以当激活 / not 173 |
+| A7502 | 高 | 看见timing out without lock is not already treating it as active 会被写成已经是不变量 173 interchangeable / 144 interchangeable | 官方 BIP-9 vb9 item 3：not already 已经是不变量 173 / not 144 |
+| A7503 | 高 | 看见超时未锁定不是已经可以当激活 会被写成已经是不变量 144 interchangeable | 官方 BIP-9 vb9 item 3：not already settled |
+| A7504 | 中 | 怎样假示意、怎样拖激活、怎样复用位去骗旧软件会被抄进不确定 | 不抄。不写 怎样假示意、怎样拖激活、怎样复用位去骗旧软件。不另写 19 节 |
+| A7495 | 记录 | 会与 171 / 165 / 41 / 1545 / 1547 糊成「看见锁定不是已经激活就已经激活 interchangeable、就已经是不变量 165 interchangeable、就已经是不变量 41 interchangeable」 | 对照写清。不编博物馆页。写进 L3.3 BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.3、L3.3。171 versionbit vs active bundled unbundling 续（1546 item 2） |
+| A7496 | 高 | 看见锁定不是已经激活 会被写成已经激活 interchangeable / 165 interchangeable | 官方 BIP-9 vb9 item 2：not already 已经激活 / not 165 |
+| A7497 | 高 | 看见LOCKED_IN is not already ACTIVE 会被写成已经是不变量 165 interchangeable / 41 interchangeable | 官方 BIP-9 vb9 item 2：not already 已经是不变量 165 / not 41 |
+| A7498 | 高 | 看见锁定不是已经激活 会被写成已经是不变量 41 interchangeable | 官方 BIP-9 vb9 item 2：not already settled |
+| A7499 | 中 | 怎样假示意、怎样拖激活、怎样复用位去骗旧软件会被抄进不确定 | 不抄。不写 怎样假示意、怎样拖激活、怎样复用位去骗旧软件。不另写 19 节 |
+| A7490 | 记录 | 会与 171 / 173 / 165 / 1546 / 1547 糊成「看见版本位被置上不是已经锁定就已经锁定 interchangeable、就已经是不变量 173 interchangeable、就已经 171 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.3 BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.3、L3.3。171 versionbit vs active bundled unbundling 启动（1545 item 1） |
+| A7491 | 高 | 看见版本位被置上不是已经锁定 会被写成已经锁定 interchangeable / 173 interchangeable | 官方 BIP-9 vb9 item 1：not already 已经锁定 / not 173 |
+| A7492 | 高 | 看见setting a version bit is not already LOCKED_IN 会被写成已经是不变量 173 interchangeable / 165 interchangeable | 官方 BIP-9 vb9 item 1：not already 已经是不变量 173 / not 165 |
+| A7493 | 高 | 看见版本位被置上不是已经锁定 会被写成已经 171 bundled interchangeable | 官方 BIP-9 vb9 item 1：not already settled |
+| A7494 | 中 | 怎样假示意、怎样拖激活、怎样复用位去骗旧软件会被抄进不确定 | 不抄。不写 怎样假示意、怎样拖激活、怎样复用位去骗旧软件。不另写 19 节 |
 | A7485 | 记录 | 会与 173 / 163 / 144 / 1542 / 1543 糊成「看见写了高度不是coinbase已经能花就已经能花 interchangeable、就已经是不变量 163 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.1、L3.1。173 coinbase height vs header bundled unbundling 完成（1544 item 3） |
 | A7486 | 高 | 看见写了高度不是coinbase已经能花 会被写成已经能花 interchangeable / 163 interchangeable | 官方 BIP-34 cbht item 3：not already 已经能花 / not 163 |
 | A7487 | 高 | 看见writing the height is not already making the coinbase spendable 会被写成已经是不变量 163 interchangeable / 144 interchangeable | 官方 BIP-34 cbht item 3：not already 已经是不变量 163 / not 144 |

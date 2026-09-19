@@ -1,3 +1,15 @@
+## 2026-09-19（续 1664）
+
+- 不变量 1547；语料 C1525；模式 name-the-vb9-notfail-bar；反模式 vb9-notfail-sold-as-bundled；L10.3 第 1516 条。填 L3.3 BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）。171 versionbit vs active bundled unbundling 完成（1547 item 3）。
+
+## 2026-09-19（续 1663）
+
+- 不变量 1546；语料 C1524；模式 name-the-vb9-notact-bar；反模式 vb9-notact-sold-as-bundled；L10.3 第 1515 条。填 L3.3 BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）。171 versionbit vs active bundled unbundling 续（1546 item 2）。
+
+## 2026-09-19（续 1662）
+
+- 不变量 1545；语料 C1523；模式 name-the-vb9-notlock-bar；反模式 vb9-notlock-sold-as-bundled；L10.3 第 1514 条。填 L3.3 BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）。171 versionbit vs active bundled unbundling 启动（1545 item 1）。
+
 ## 2026-09-19（续 1661）
 
 - 不变量 1544；语料 C1522；模式 name-the-cbht-notmat-bar；反模式 cbht-notmat-sold-as-bundled；L10.3 第 1513 条。填 L3.1 BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）。173 coinbase height vs header bundled unbundling 完成（1544 item 3）。

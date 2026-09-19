@@ -1,3 +1,6 @@
+- [`name-the-vb9-notfail-bar.md`](name-the-vb9-notfail-bar.md) — BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）（不变量 1547）
+- [`name-the-vb9-notact-bar.md`](name-the-vb9-notact-bar.md) — BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）（不变量 1546）
+- [`name-the-vb9-notlock-bar.md`](name-the-vb9-notlock-bar.md) — BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）（不变量 1545）
 - [`name-the-cbht-notmat-bar.md`](name-the-cbht-notmat-bar.md) — BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）（不变量 1544）
 - [`name-the-cbht-notv9-bar.md`](name-the-cbht-notv9-bar.md) — BIP-34 block-version-bump not already bip9-bits / not already 171 / not already 172 正式三事（173 余量）（不变量 1543）
 - [`name-the-cbht-nothdr-bar.md`](name-the-cbht-nothdr-bar.md) — BIP-34 coinbase-height not already header-field / not already 171 / not already 173-bundled 正式三事（173 余量）（不变量 1542）

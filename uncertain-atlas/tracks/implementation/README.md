@@ -834,6 +834,9 @@
 - [`worked-example-cbase-notpay-vs-bundled.md`](worked-example-cbase-notpay-vs-bundled.md) — 开跑已热≠already 已付钱/1559/158；≠187 bundled（不变量 1447）
 - [`worked-example-cbase-not169-vs-bundled.md`](worked-example-cbase-not169-vs-bundled.md) — 开跑已热≠already 169预填含出块者/2930/163；≠187 bundled（不变量 1448）
 - [`worked-example-coinbase-vs-prefill.md`](worked-example-coinbase-vs-prefill.md) — 出块者地址开跑时已在热集合 ≠ 已经访问过；开跑已热 ≠ 已经付给出块者；开跑已热 ≠ 169 那几个预填已经覆盖出块者；3651 ≠ 2929 ≠ 2930 ≠ 1559（不变量 187）
+- [`worked-example-vb9-notlock-vs-bundled.md`](worked-example-vb9-notlock-vs-bundled.md) — BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）（不变量 1545）
+- [`worked-example-vb9-notact-vs-bundled.md`](worked-example-vb9-notact-vs-bundled.md) — BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）（不变量 1546）
+- [`worked-example-vb9-notfail-vs-bundled.md`](worked-example-vb9-notfail-vs-bundled.md) — BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）（不变量 1547）
 - [`worked-example-versionbit-vs-active.md`](worked-example-versionbit-vs-active.md) — 版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活；9 ≠ 34 ≠ 被部署的那条规则（不变量 171）
 - [`worked-example-valid-vs-der.md`](worked-example-valid-vs-der.md) — ECDSA 验得过 ≠ 已经是严格 DER；库收下 ≠ 共识已经接受；66 ≠ 62 ≠ 146 ≠ 34（不变量 172）
 - [`worked-example-dum147-notpol-vs-bundled.md`](worked-example-dum147-notpol-vs-bundled.md) — 转发策略≠already consensus/bip62/settled；≠264 bundled（不变量 1231）
