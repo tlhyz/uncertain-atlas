@@ -1,3 +1,4 @@
+- [`name-the-consensusparams-notempty-bar.md`](name-the-consensusparams-notempty-bar.md) — InitChain 空参数不是已经没有参数 not already no params / not already deleted genesis params / not already app empty params 正式三事（319 余量）（不变量 716）
 - [`name-the-validatorupdate-notpower0-bar.md`](name-the-validatorupdate-notpower0-bar.md) — power 0 不是已经删掉不在集合里的人 not already delete outsider / not already no max / not already key-type chosen 正式三事（318 余量）（不变量 715）
 - [`name-the-validatorupdate-notdup-bar.md`](name-the-validatorupdate-notdup-bar.md) — 同一批重复公钥不是已经能恢复 not already last-wins / not already recoverable / not already two rows 正式三事（318 余量）（不变量 714）
 - [`name-the-validatorupdate-notempty-bar.md`](name-the-validatorupdate-notempty-bar.md) — InitChain 空名单不是已经没有集合 not already no set / not already deleted genesis / not already app empty set 正式三事（318 余量）（不变量 713）
