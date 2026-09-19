@@ -1,3 +1,18 @@
+| A7140 | 记录 | 会与 206 / 199 / 203 / 1473 / 1474 糊成「看见长度有界不是已经用EVM换掉预编译就已经用EVM换掉预编译 interchangeable、就已经更安全 interchangeable、就已经是不变量 199 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。206 modexp-bound vs price bundled unbundling 完成（1475 item 3） |
+| A7141 | 高 | 看见长度有界不是已经用EVM换掉预编译 会被写成已经用EVM换掉预编译 interchangeable / 199 interchangeable | 官方 EIP-7823 mxbd item 3：not already 已经用EVM换掉预编译 / not 199 |
+| A7142 | 高 | 看见being bounded is not already EVM-replaced 会被写成已经更安全 interchangeable / 203 interchangeable | 官方 EIP-7823 mxbd item 3：not already 已经更安全 / not 203 |
+| A7143 | 高 | 看见长度有界不是已经用EVM换掉预编译 会被写成已经是不变量 199 interchangeable | 官方 EIP-7823 mxbd item 3：not already settled |
+| A7144 | 中 | 怎样造超长输入会被抄进不确定 | 不抄。不写 怎样造超长输入。不另写 19 节 |
+| A7135 | 记录 | 会与 206 / 177 / 204 / 1473 / 1475 糊成「看见超帽不是已经成功返回就已经成功返回 interchangeable、就已经是不变量 177 interchangeable、就已经是不变量 204 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7823 over-cap not already success / not already 177 / not already 204 正式三事（206 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。206 modexp-bound vs price bundled unbundling 续（1474 item 2） |
+| A7136 | 高 | 看见超帽不是已经成功返回 会被写成已经成功返回 interchangeable / 177 interchangeable | 官方 EIP-7823 mxbd item 2：not already 已经成功返回 / not 177 |
+| A7137 | 高 | 看见over-cap is not already a successful return 会被写成已经是不变量 177 interchangeable / 204 interchangeable | 官方 EIP-7823 mxbd item 2：not already 已经是不变量 177 / not 204 |
+| A7138 | 高 | 看见超帽不是已经成功返回 会被写成已经是不变量 204 interchangeable | 官方 EIP-7823 mxbd item 2：not already settled |
+| A7139 | 中 | 怎样造超长输入会被抄进不确定 | 不抄。不写 怎样造超长输入。不另写 19 节 |
+| A7130 | 记录 | 会与 206 / 227 / 203 / 1474 / 1475 糊成「看见MODEXP输入长度帽不是已经改了计价公式就已经改了计价公式 interchangeable、就已经是不变量 227 interchangeable、就已经 206 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7823 input-bound not already price-changed / not already 227 / not already 206-bundled 正式三事（206 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。206 modexp-bound vs price bundled unbundling 启动（1473 item 1） |
+| A7131 | 高 | 看见MODEXP输入长度帽不是已经改了计价公式 会被写成已经改了计价公式 interchangeable / 227 interchangeable | 官方 EIP-7823 mxbd item 1：not already 已经改了计价公式 / not 227 |
+| A7132 | 高 | 看见MODEXP input bound is not already a price change 会被写成已经是不变量 227 interchangeable / 203 interchangeable | 官方 EIP-7823 mxbd item 1：not already 已经是不变量 227 / not 203 |
+| A7133 | 高 | 看见MODEXP输入长度帽不是已经改了计价公式 会被写成已经 206 bundled interchangeable | 官方 EIP-7823 mxbd item 1：not already settled |
+| A7134 | 中 | 怎样造超长输入会被抄进不确定 | 不抄。不写 怎样造超长输入。不另写 19 节 |
 | A7125 | 记录 | 会与 208 / 204 / 206 / 1470 / 1471 糊成「看见能表达最低位不是已经有数尾零就已经有数尾零 interchangeable、就已经更安全 interchangeable、就已经是不变量 206 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。208 clz vs zk bundled unbundling 完成（1472 item 3） |
 | A7126 | 高 | 看见能表达最低位不是已经有数尾零 会被写成已经有数尾零 interchangeable / 204 interchangeable | 官方 EIP-7939 clz item 3：not already 已经有数尾零 / not 204 |
 | A7127 | 高 | 看见expressing LSB is not already a CTZ opcode 会被写成已经更安全 interchangeable / 206 interchangeable | 官方 EIP-7939 clz item 3：not already 已经更安全 / not 206 |

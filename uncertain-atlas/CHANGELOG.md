@@ -1,3 +1,15 @@
+## 2026-09-19（续 1592）
+
+- 不变量 1475；语料 C1453；模式 name-the-mxbd-notevm-bar；反模式 mxbd-notevm-sold-as-bundled；L10.3 第 1444 条。填 L5.1 EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）。206 modexp-bound vs price bundled unbundling 完成（1475 item 3）。
+
+## 2026-09-19（续 1591）
+
+- 不变量 1474；语料 C1452；模式 name-the-mxbd-notok-bar；反模式 mxbd-notok-sold-as-bundled；L10.3 第 1443 条。填 L5.1 EIP-7823 over-cap not already success / not already 177 / not already 204 正式三事（206 余量）。206 modexp-bound vs price bundled unbundling 续（1474 item 2）。
+
+## 2026-09-19（续 1590）
+
+- 不变量 1473；语料 C1451；模式 name-the-mxbd-notprice-bar；反模式 mxbd-notprice-sold-as-bundled；L10.3 第 1442 条。填 L5.1 EIP-7823 input-bound not already price-changed / not already 227 / not already 206-bundled 正式三事（206 余量）。206 modexp-bound vs price bundled unbundling 启动（1473 item 1）。
+
 ## 2026-09-19（续 1589）
 
 - 不变量 1472；语料 C1450；模式 name-the-clz-notctz-bar；反模式 clz-notctz-sold-as-bundled；L10.3 第 1441 条。填 L5.1 EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）。208 clz vs zk bundled unbundling 完成（1472 item 3）。

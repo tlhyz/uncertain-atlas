@@ -1,3 +1,6 @@
+- [`mxbd-notevm-sold-as-bundled.md`](mxbd-notevm-sold-as-bundled.md) — 长度有界 被写成已经换成EVM / 就已经更安全 / 就已经是 199（不变量 1475）
+- [`mxbd-notok-sold-as-bundled.md`](mxbd-notok-sold-as-bundled.md) — 超帽 被写成已经成功返回 / 就已经是 177 / 就已经是 204（不变量 1474）
+- [`mxbd-notprice-sold-as-bundled.md`](mxbd-notprice-sold-as-bundled.md) — 输入长度帽 被写成已经改了计价 / 就已经是 227 / 就已经 206 bundled（不变量 1473）
 - [`clz-notctz-sold-as-bundled.md`](clz-notctz-sold-as-bundled.md) — 能表达最低位 被写成已经有数尾零 / 就已经更安全 / 就已经是 206（不变量 1472）
 - [`clz-notpq-sold-as-bundled.md`](clz-notpq-sold-as-bundled.md) — 动机写了后量子 被写成已经有后量子签名 / 就已经是 199 / 就已经是 204（不变量 1471）
 - [`clz-notzk-sold-as-bundled.md`](clz-notzk-sold-as-bundled.md) — 数前导零 被写成已经更便宜的ZK / 就已经是 206 / 就已经 208 bundled（不变量 1470）

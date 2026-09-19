@@ -1003,6 +1003,9 @@
 - [`worked-example-txcap-notpool-vs-bundled.md`](worked-example-txcap-notpool-vs-bundled.md) — 入池拒掉≠already 验过块/197/96；≠203 bundled（不变量 1462）
 - [`worked-example-txcap-notpol-vs-bundled.md`](worked-example-txcap-notpol-vs-bundled.md) — 块里超帽≠already 策略拒绝/更安全/101；≠203 bundled（不变量 1463）
 - [`worked-example-tx-gas-cap-vs-block.md`](worked-example-tx-gas-cap-vs-block.md) — 看见单笔气帽 ≠ 已经改了块气限；入池拒掉 ≠ 已经验过块；块里有一笔超帽 ≠ 已经只是策略拒绝；7825 ≠ 7934 ≠ 7623 ≠ 96（不变量 203）
+- [`worked-example-mxbd-notprice-vs-bundled.md`](worked-example-mxbd-notprice-vs-bundled.md) — 输入长度帽≠already 改了计价/227/206 bundled；≠206 bundled（不变量 1473）
+- [`worked-example-mxbd-notok-vs-bundled.md`](worked-example-mxbd-notok-vs-bundled.md) — 超帽≠already 成功返回/177/204；≠206 bundled（不变量 1474）
+- [`worked-example-mxbd-notevm-vs-bundled.md`](worked-example-mxbd-notevm-vs-bundled.md) — 长度有界≠already 换成EVM/更安全/199；≠206 bundled（不变量 1475）
 - [`worked-example-modexp-bound-vs-price.md`](worked-example-modexp-bound-vs-price.md) — 看见 MODEXP 输入长度帽 ≠ 已经改了计价公式；超帽 ≠ 已经成功返回；长度有界 ≠ 已经换成 EVM；7823 ≠ 198 重定价 ≠ 7825 ≠ 7951（不变量 206）
 - [`worked-example-clz-notzk-vs-bundled.md`](worked-example-clz-notzk-vs-bundled.md) — 数前导零≠already 更便宜ZK/206/208 bundled；≠208 bundled（不变量 1470）
 - [`worked-example-clz-notpq-vs-bundled.md`](worked-example-clz-notpq-vs-bundled.md) — 动机写了后量子≠already 已有后量子签/199/204；≠208 bundled（不变量 1471）

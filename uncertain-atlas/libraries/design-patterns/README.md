@@ -1,3 +1,6 @@
+- [`name-the-mxbd-notevm-bar.md`](name-the-mxbd-notevm-bar.md) — EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）（不变量 1475）
+- [`name-the-mxbd-notok-bar.md`](name-the-mxbd-notok-bar.md) — EIP-7823 over-cap not already success / not already 177 / not already 204 正式三事（206 余量）（不变量 1474）
+- [`name-the-mxbd-notprice-bar.md`](name-the-mxbd-notprice-bar.md) — EIP-7823 input-bound not already price-changed / not already 227 / not already 206-bundled 正式三事（206 余量）（不变量 1473）
 - [`name-the-clz-notctz-bar.md`](name-the-clz-notctz-bar.md) — EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）（不变量 1472）
 - [`name-the-clz-notpq-bar.md`](name-the-clz-notpq-bar.md) — EIP-7939 pq-motive not already pq-sig / not already 199 / not already 204 正式三事（208 余量）（不变量 1471）
 - [`name-the-clz-notzk-bar.md`](name-the-clz-notzk-bar.md) — EIP-7939 clz not already cheaper-zk / not already 206 / not already 208-bundled 正式三事（208 余量）（不变量 1470）

@@ -85,7 +85,7 @@
 | 经济 | 不把长度帽写成已经让块气限能涨 |
 
 **推断：** 产品句若只写「模幂终于有界了」，读者会把帽听成已经改了价，或把有界听成专用预编译已经拆掉。  
-**建议：** 第一版可以不做无界模幂预编译。若做，必须分开输入长度、计价、替换路径。不要发明「看见 7823 就已经改了计价」。不要抄长度上限。不要把 7823 写成 7825。
+**建议：** 第一版可以不做无界模幂预编译。若做，必须分开输入长度、计价、替换路径。可以跳过「看见 7823 就已经改了计价」。206 modexp-bound vs price bundled unbundling 完成（1473 item 1 / 1474 item 2 / 1475 item 3）；精读 [`worked-example-mxbd-notprice-vs-bundled.md`](worked-example-mxbd-notprice-vs-bundled.md)（不变量 1473 item 1）、[`worked-example-mxbd-notok-vs-bundled.md`](worked-example-mxbd-notok-vs-bundled.md)（不变量 1474 item 2）、[`worked-example-mxbd-notevm-vs-bundled.md`](worked-example-mxbd-notevm-vs-bundled.md)（不变量 1475 item 3）。不要发明「看见 7823 就已经改了计价」。不要抄长度上限。不要把 7823 写成 7825。
 
 ---
 
