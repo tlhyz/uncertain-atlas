@@ -1,3 +1,15 @@
+## 2026-09-19（续 1580）
+
+- 不变量 1463；语料 C1441；模式 name-the-txcap-notpol-bar；反模式 txcap-notpol-sold-as-bundled；L10.3 第 1432 条。填 L5.1 EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）。203 tx-gas-cap vs block bundled unbundling 完成（1463 item 3）。
+
+## 2026-09-19（续 1579）
+
+- 不变量 1462；语料 C1440；模式 name-the-txcap-notpool-bar；反模式 txcap-notpool-sold-as-bundled；L10.3 第 1431 条。填 L5.1 EIP-7825 pool-reject not already block-verified / not already 197 / not already 96 正式三事（203 余量）。203 tx-gas-cap vs block bundled unbundling 续（1462 item 2）。
+
+## 2026-09-19（续 1578）
+
+- 不变量 1461；语料 C1439；模式 name-the-txcap-notblk-bar；反模式 txcap-notblk-sold-as-bundled；L10.3 第 1430 条。填 L5.1 EIP-7825 tx-gas-cap not already block-gas / not already 202 / not already 203-bundled 正式三事（203 余量）。203 tx-gas-cap vs block bundled unbundling 启动（1461 item 1）。
+
 ## 2026-09-19（续 1577）
 
 - 不变量 1460；语料 C1438；模式 name-the-dgas-nottx-bar；反模式 dgas-nottx-sold-as-bundled；L10.3 第 1429 条。填 L5.1 EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）。211 default-gas vs cap bundled unbundling 完成（1460 item 3）。

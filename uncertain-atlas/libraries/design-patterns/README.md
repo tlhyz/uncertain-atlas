@@ -1,3 +1,6 @@
+- [`name-the-txcap-notpol-bar.md`](name-the-txcap-notpol-bar.md) — EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）（不变量 1463）
+- [`name-the-txcap-notpool-bar.md`](name-the-txcap-notpool-bar.md) — EIP-7825 pool-reject not already block-verified / not already 197 / not already 96 正式三事（203 余量）（不变量 1462）
+- [`name-the-txcap-notblk-bar.md`](name-the-txcap-notblk-bar.md) — EIP-7825 tx-gas-cap not already block-gas / not already 202 / not already 203-bundled 正式三事（203 余量）（不变量 1461）
 - [`name-the-dgas-nottx-bar.md`](name-the-dgas-nottx-bar.md) — EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）（不变量 1460）
 - [`name-the-dgas-notcons-bar.md`](name-the-dgas-notcons-bar.md) — EIP-7935 hardfork-bind not already consensus-changed / not already 202 / not already 96 正式三事（211 余量）（不变量 1459）
 - [`name-the-dgas-notcap-bar.md`](name-the-dgas-notcap-bar.md) — EIP-7935 default-gas not already protocol-cap / not already 203 / not already 211-bundled 正式三事（211 余量）（不变量 1458）

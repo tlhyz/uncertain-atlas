@@ -1,3 +1,6 @@
+- [`txcap-notpol-sold-as-bundled.md`](txcap-notpol-sold-as-bundled.md) — 块里超帽 被写成已经只是策略拒绝 / 就已经更安全 / 就已经是 101（不变量 1463）
+- [`txcap-notpool-sold-as-bundled.md`](txcap-notpool-sold-as-bundled.md) — 入池拒掉 被写成已经验过块 / 就已经是 197 / 就已经是 96（不变量 1462）
+- [`txcap-notblk-sold-as-bundled.md`](txcap-notblk-sold-as-bundled.md) — 单笔气帽 被写成已经改了块气限 / 就已经是 202 / 就已经 203 bundled（不变量 1461）
 - [`dgas-nottx-sold-as-bundled.md`](dgas-nottx-sold-as-bundled.md) — 默认齐了 被写成已经是单笔气帽 / 就已经更安全 / 就已经是 101（不变量 1460）
 - [`dgas-notcons-sold-as-bundled.md`](dgas-notcons-sold-as-bundled.md) — 绑到硬分叉 被写成已经改了共识 / 就已经是 202 / 就已经是 96（不变量 1459）
 - [`dgas-notcap-sold-as-bundled.md`](dgas-notcap-sold-as-bundled.md) — 客户端默认气限 被写成已经是协议帽 / 就已经是 203 / 就已经 211 bundled（不变量 1458）

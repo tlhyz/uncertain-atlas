@@ -993,6 +993,9 @@
 - [`worked-example-initcode-vs-runtime.md`](worked-example-initcode-vs-runtime.md) — initcode 超界 ≠ 已经是部署代码超界；按字分析费 ≠ 已经跑完构造；3860 ≠ 170 ≠ 1014 ≠ 2681（不变量 176）
 - [`worked-example-calldata-floor-vs-execution.md`](worked-example-calldata-floor-vs-execution.md) — 看见 calldata 地板 ≠ 已经改了执行气；数据为主更贵 ≠ 已经让普通转账更贵；预留地板气限 ≠ 已经烧到地板；7623 ≠ 4844 ≠ 1559 ≠ 2028（不变量 197）
 - [`worked-example-rlp-cap-vs-gas.md`](worked-example-rlp-cap-vs-gas.md) — 看见 RLP 编码硬帽 ≠ 已经改了气限；共识层流言不传 ≠ 已经让执行层非法；给信标块留边 ≠ 已经并成一份编码；7934 ≠ 7623 ≠ 1559 ≠ 96（不变量 202）
+- [`worked-example-txcap-notblk-vs-bundled.md`](worked-example-txcap-notblk-vs-bundled.md) — 单笔气帽≠already 改了块气/202/203 bundled；≠203 bundled（不变量 1461）
+- [`worked-example-txcap-notpool-vs-bundled.md`](worked-example-txcap-notpool-vs-bundled.md) — 入池拒掉≠already 验过块/197/96；≠203 bundled（不变量 1462）
+- [`worked-example-txcap-notpol-vs-bundled.md`](worked-example-txcap-notpol-vs-bundled.md) — 块里超帽≠already 策略拒绝/更安全/101；≠203 bundled（不变量 1463）
 - [`worked-example-tx-gas-cap-vs-block.md`](worked-example-tx-gas-cap-vs-block.md) — 看见单笔气帽 ≠ 已经改了块气限；入池拒掉 ≠ 已经验过块；块里有一笔超帽 ≠ 已经只是策略拒绝；7825 ≠ 7934 ≠ 7623 ≠ 96（不变量 203）
 - [`worked-example-modexp-bound-vs-price.md`](worked-example-modexp-bound-vs-price.md) — 看见 MODEXP 输入长度帽 ≠ 已经改了计价公式；超帽 ≠ 已经成功返回；长度有界 ≠ 已经换成 EVM；7823 ≠ 198 重定价 ≠ 7825 ≠ 7951（不变量 206）
 - [`worked-example-clz-vs-zk.md`](worked-example-clz-vs-zk.md) — 看见数前导零操作码 ≠ 已经更便宜的 ZK 证明；动机写了后量子签 ≠ 已经有后量子签名；能表达最低位 ≠ 已经有数尾零；7939 ≠ 206 ≠ 199 ≠ 204（不变量 208）

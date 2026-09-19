@@ -1,3 +1,18 @@
+| A7080 | 记录 | 会与 203 / 211 / 101 / 1461 / 1462 糊成「看见块里有一笔超帽不是已经只是策略拒绝就已经只是策略拒绝 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。203 tx-gas-cap vs block bundled unbundling 完成（1463 item 3） |
+| A7081 | 高 | 看见块里有一笔超帽不是已经只是策略拒绝 会被写成已经只是策略拒绝 interchangeable / 211 interchangeable | 官方 EIP-7825 txcap item 3：not already 已经只是策略拒绝 / not 211 |
+| A7082 | 高 | 看见one over-cap in a block is not already policy-only 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7825 txcap item 3：not already 已经更安全 / not 101 |
+| A7083 | 高 | 看见块里有一笔超帽不是已经只是策略拒绝 会被写成已经是不变量 101 interchangeable | 官方 EIP-7825 txcap item 3：not already settled |
+| A7084 | 中 | 怎样把一笔拆到帽下会被抄进不确定 | 不抄。不写 怎样把一笔拆到帽下。不另写 19 节 |
+| A7075 | 记录 | 会与 203 / 197 / 96 / 1461 / 1463 糊成「看见入池拒掉不是已经验过块就已经验过块 interchangeable、就已经是不变量 197 interchangeable、就已经是不变量 96 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7825 pool-reject not already block-verified / not already 197 / not already 96 正式三事（203 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。203 tx-gas-cap vs block bundled unbundling 续（1462 item 2） |
+| A7076 | 高 | 看见入池拒掉不是已经验过块 会被写成已经验过块 interchangeable / 197 interchangeable | 官方 EIP-7825 txcap item 2：not already 已经验过块 / not 197 |
+| A7077 | 高 | 看见pool reject is not already block-verified 会被写成已经是不变量 197 interchangeable / 96 interchangeable | 官方 EIP-7825 txcap item 2：not already 已经是不变量 197 / not 96 |
+| A7078 | 高 | 看见入池拒掉不是已经验过块 会被写成已经是不变量 96 interchangeable | 官方 EIP-7825 txcap item 2：not already settled |
+| A7079 | 中 | 怎样把一笔拆到帽下会被抄进不确定 | 不抄。不写 怎样把一笔拆到帽下。不另写 19 节 |
+| A7070 | 记录 | 会与 203 / 202 / 211 / 1462 / 1463 糊成「看见单笔气帽不是已经改了块气限就已经改了块气限 interchangeable、就已经是不变量 202 interchangeable、就已经 203 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7825 tx-gas-cap not already block-gas / not already 202 / not already 203-bundled 正式三事（203 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。203 tx-gas-cap vs block bundled unbundling 启动（1461 item 1） |
+| A7071 | 高 | 看见单笔气帽不是已经改了块气限 会被写成已经改了块气限 interchangeable / 202 interchangeable | 官方 EIP-7825 txcap item 1：not already 已经改了块气限 / not 202 |
+| A7072 | 高 | 看见tx gas cap is not already the block gas limit 会被写成已经是不变量 202 interchangeable / 211 interchangeable | 官方 EIP-7825 txcap item 1：not already 已经是不变量 202 / not 211 |
+| A7073 | 高 | 看见单笔气帽不是已经改了块气限 会被写成已经 203 bundled interchangeable | 官方 EIP-7825 txcap item 1：not already settled |
+| A7074 | 中 | 怎样把一笔拆到帽下会被抄进不确定 | 不抄。不写 怎样把一笔拆到帽下。不另写 19 节 |
 | A7065 | 记录 | 会与 211 / 203 / 101 / 1458 / 1459 糊成「看见默认配置齐了不是已经是单笔气帽就已经是单笔气帽 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。211 default-gas vs cap bundled unbundling 完成（1460 item 3） |
 | A7066 | 高 | 看见默认配置齐了不是已经是单笔气帽 会被写成已经是单笔气帽 interchangeable / 203 interchangeable | 官方 EIP-7935 dgas item 3：not already 已经是单笔气帽 / not 203 |
 | A7067 | 高 | 看见aligned defaults are not already the tx gas cap 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7935 dgas item 3：not already 已经更安全 / not 101 |
