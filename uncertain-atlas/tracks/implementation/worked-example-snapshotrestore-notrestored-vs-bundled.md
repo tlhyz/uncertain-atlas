@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Offer 收下不是已经装完 not already restored / not already all-chunks / not already AppHash-verified 正式三事（321 余量），必须分开 Offer 收下 是不是 already restored interchangeable / 321 snapshotrestore bundled interchangeable / snapshotrestore-sold-as-offered interchangeable、选了这份 是不是 already all-chunks interchangeable、元数据对上 是不是 already AppHash-verified interchangeable。可以跳过「看见 OfferSnapshot 收下就已经装完 interchangeable / 就已经有了全部块 interchangeable / 就已经验过 AppHash interchangeable」。不要另写怎样切块或怎样装。321 snapshotrestore vs offer bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotrestore-notchunkcomplete-vs-bundled.md`](worked-example-snapshotrestore-notchunkcomplete-vs-bundled.md)（不变量 720 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Offer 收下不是已经装完 not already restored / not already all-chunks / not already AppHash-verified 正式三事（321 余量），必须分开 Offer 收下 是不是 already restored interchangeable / 321 snapshotrestore bundled interchangeable / snapshotrestore-sold-as-offered interchangeable、选了这份 是不是 already all-chunks interchangeable、元数据对上 是不是 already AppHash-verified interchangeable。可以跳过「看见 OfferSnapshot 收下就已经装完 interchangeable / 就已经有了全部块 interchangeable / 就已经验过 AppHash interchangeable」。不要另写怎样切块或怎样装。321 snapshotrestore vs offer bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotrestore-notchunkcomplete-vs-bundled.md`](worked-example-snapshotrestore-notchunkcomplete-vs-bundled.md)（不变量 720 item 2）。
 
 ## 本页不抄
 
