@@ -145,6 +145,7 @@
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-exectxresult-notorder-vs-bundled.md`](worked-example-exectxresult-notorder-vs-bundled.md) — 回了列表≠同一顺序/条数等于顺序/引擎排好；≠316 bundled（不变量 707）
 - [`worked-example-maxgas-notcommitted-vs-bundled.md`](worked-example-maxgas-notcommitted-vs-bundled.md) — 已提交≠按气验/共识守/默认Prepare卡气；≠315 bundled（不变量 706）
 - [`worked-example-maxgas-notgasused-vs-bundled.md`](worked-example-maxgas-notgasused-vs-bundled.md) — 有GasUsed≠算进共识/按实用气验/引擎强制不等式；≠315 bundled（不变量 705）
 - [`worked-example-maxgas-notenforced-vs-bundled.md`](worked-example-maxgas-notenforced-vs-bundled.md) — 字段在≠在执行/MaxBytes同句/费用市场；≠315 bundled（不变量 704）
