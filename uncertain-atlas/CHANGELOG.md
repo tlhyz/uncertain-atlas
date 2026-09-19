@@ -1,3 +1,7 @@
+## 2026-09-19（续 827）
+
+- 不变量 710；语料 C687；模式 name-the-checktxresponse-notused-bar；反模式 checktxresponse-notused-sold-as-bundled；L10.3 第 679 条。填 L4.4 / CometBFT 档案 CheckTx Data 不是已经被引擎用了 not already used by engine / not already ExecTxResult.Data / not already in LastResultsHash 正式三事（317 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。317 checktxresponse vs exec bundled unbundling 启动（710 item 1）。
+
 ## 2026-09-19（续 826）
 
 - 不变量 709；语料 C686；模式 name-the-exectxresult-notheader-bar；反模式 exectxresult-notheader-sold-as-bundled；L10.3 第 678 条。填 L4.4 / CometBFT 档案 Code Data 不是已经印进本头 not already in this header / not already in LastResultsHash / not already consensus field 正式三事（316 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。316 exectxresult vs consensus bundled unbundling 完成（707 + 708 + 709）。
