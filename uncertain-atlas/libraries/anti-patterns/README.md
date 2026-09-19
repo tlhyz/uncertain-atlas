@@ -1,3 +1,4 @@
+- [`checktxresponse-notpriority-sold-as-bundled.md`](checktxresponse-notpriority-sold-as-bundled.md) — 有 Priority 被写成已经是共识顺序 / 排在前面 被写成已经进了块 / 能优先 被写成已经从池里删掉（不变量 712）
 - [`checktxresponse-notfork-sold-as-bundled.md`](checktxresponse-notfork-sold-as-bundled.md) — 各节点 Data 不一样 被写成已经分叉 / Data 不确定 被写成已经违规 / CheckTxState 不同 被写成已经是 ExecuteTxState（不变量 711）
 - [`checktxresponse-notused-sold-as-bundled.md`](checktxresponse-notused-sold-as-bundled.md) — 回了字节 被写成已经被引擎用了 / 字段名也叫 Data 被写成已经是 ExecTxResult.Data / 有结果 被写成已经进了 LastResultsHash（不变量 710）
 - [`exectxresult-notheader-sold-as-bundled.md`](exectxresult-notheader-sold-as-bundled.md) — Code / Data 被写成已经印进本头 / Events 被写成已经进了那份哈希 / Info Log 被写成已经是共识字段（不变量 709）
