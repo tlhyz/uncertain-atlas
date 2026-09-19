@@ -1,3 +1,15 @@
+## 2026-09-19（续 1658）
+
+- 不变量 1541；语料 C1519；模式 name-the-b32m-notutx-bar；反模式 b32m-notutx-sold-as-bundled；L10.3 第 1510 条。填 L3.7 BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）。181 bech32m vs bech32 bundled unbundling 完成（1541 item 3）。
+
+## 2026-09-19（续 1657）
+
+- 不变量 1540；语料 C1518；模式 name-the-b32m-notv0-bar；反模式 b32m-notv0-sold-as-bundled；L10.3 第 1509 条。填 L3.7 BIP-350 higher-ver-old-checksum not already legal / not already 174 / not already 152 正式三事（181 余量）。181 bech32m vs bech32 bundled unbundling 续（1540 item 2）。
+
+## 2026-09-19（续 1656）
+
+- 不变量 1539；语料 C1517；模式 name-the-b32m-notold-bar；反模式 b32m-notold-sold-as-bundled；L10.3 第 1508 条。填 L3.7 BIP-350 successor-pass not already old-bech32 / not already 174 / not already 181-bundled 正式三事（181 余量）。181 bech32m vs bech32 bundled unbundling 启动（1539 item 1）。
+
 ## 2026-09-19（续 1655）
 
 - 不变量 1538；语料 C1516；模式 name-the-adut-notpay-bar；反模式 adut-notpay-sold-as-bundled；L10.3 第 1507 条。填 L3.7 BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）。174 address vs utxo bundled unbundling 完成（1538 item 3）。

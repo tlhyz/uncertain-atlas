@@ -989,6 +989,9 @@
 - [`worked-example-adut-notchk-vs-bundled.md`](worked-example-adut-notchk-vs-bundled.md) — BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）（不变量 1537）
 - [`worked-example-adut-notpay-vs-bundled.md`](worked-example-adut-notpay-vs-bundled.md) — BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）（不变量 1538）
 - [`worked-example-address-vs-utxo.md`](worked-example-address-vs-utxo.md) — 看见 Bech32 地址串 ≠ 链上已经有这笔输出；校验过 ≠ 程序已经上链；173 ≠ 350 ≠ 141 ≠ 13（不变量 174）
+- [`worked-example-b32m-notold-vs-bundled.md`](worked-example-b32m-notold-vs-bundled.md) — BIP-350 successor-pass not already old-bech32 / not already 174 / not already 181-bundled 正式三事（181 余量）（不变量 1539）
+- [`worked-example-b32m-notv0-vs-bundled.md`](worked-example-b32m-notv0-vs-bundled.md) — BIP-350 higher-ver-old-checksum not already legal / not already 174 / not already 152 正式三事（181 余量）（不变量 1540）
+- [`worked-example-b32m-notutx-vs-bundled.md`](worked-example-b32m-notutx-vs-bundled.md) — BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）（不变量 1541）
 - [`worked-example-bech32m-vs-bech32.md`](worked-example-bech32m-vs-bech32.md) — 后继校验过了 ≠ 已经是旧校验那套地址；版本与编码必须配对；350 ≠ 173 ≠ 141（不变量 181）
 - [`worked-example-xpub-vs-spendable.md`](worked-example-xpub-vs-spendable.md) — 看见扩展公钥 ≠ 已经能花；硬化 ≠ 已经能从公钥推出；32 ≠ 173 ≠ 174 ≠ 350（不变量 182）
 - [`worked-example-mnemonic-vs-seed.md`](worked-example-mnemonic-vs-seed.md) — 看见助记词 ≠ 已经是二进制种子；口令不同 ≠ 已经非法；39 ≠ 32 ≠ 173 ≠ 380（不变量 183）

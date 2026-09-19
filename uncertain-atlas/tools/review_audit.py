@@ -91,7 +91,7 @@ def main() -> int:
     check("R3", "high", ok, msg[:240])
 
     arch = read("ARCHITECTURE.md")
-    check("R4", "med", "1538" in arch or "不变量" in arch, "ARCHITECTURE 含进度数字")
+    check("R4", "med", "1541" in arch or "不变量" in arch, "ARCHITECTURE 含进度数字")
 
     check("R5a", "high", exists("libraries/threat-model/INDEX.md"), "threat-model INDEX")
     check("R5b", "high", exists("libraries/threat-model/actors.md"), "actors.md")
@@ -134,7 +134,7 @@ def main() -> int:
     check("R12", "med", link_ok, link_msg)
 
     if not next_work:
-        next_work.append("P1-3 官方三事 1539+")
+        next_work.append("P1-3 官方三事 1542+")
         next_work.append("P3-3 merge KB snapshot branches")
         next_work.append("P1-5 按 cpu-measurement-method 补实测数字（无机器则保持空）")
 

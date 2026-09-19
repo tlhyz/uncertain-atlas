@@ -1,3 +1,6 @@
+- [`name-the-b32m-notutx-bar.md`](name-the-b32m-notutx-bar.md) — BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）（不变量 1541）
+- [`name-the-b32m-notv0-bar.md`](name-the-b32m-notv0-bar.md) — BIP-350 higher-ver-old-checksum not already legal / not already 174 / not already 152 正式三事（181 余量）（不变量 1540）
+- [`name-the-b32m-notold-bar.md`](name-the-b32m-notold-bar.md) — BIP-350 successor-pass not already old-bech32 / not already 174 / not already 181-bundled 正式三事（181 余量）（不变量 1539）
 - [`name-the-adut-notpay-bar.md`](name-the-adut-notpay-bar.md) — BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）（不变量 1538）
 - [`name-the-adut-notchk-bar.md`](name-the-adut-notchk-bar.md) — BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）（不变量 1537）
 - [`name-the-adut-notout-bar.md`](name-the-adut-notout-bar.md) — BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）（不变量 1536）

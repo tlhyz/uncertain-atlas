@@ -1,3 +1,18 @@
+| A7470 | 记录 | 会与 181 / 174 / 153 / 1539 / 1540 糊成「看见看见后继地址串不是已经有UTXO就已经有UTXO interchangeable、就已经是不变量 174 interchangeable、就已经是不变量 153 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。181 bech32m vs bech32 bundled unbundling 完成（1541 item 3） |
+| A7471 | 高 | 看见看见后继地址串不是已经有UTXO 会被写成已经有UTXO interchangeable / 174 interchangeable | 官方 BIP-350 b32m item 3：not already 已经有UTXO / not 174 |
+| A7472 | 高 | 看见seeing a Bech32m string is not already having a UTXO 会被写成已经是不变量 174 interchangeable / 153 interchangeable | 官方 BIP-350 b32m item 3：not already 已经是不变量 174 / not 153 |
+| A7473 | 高 | 看见看见后继地址串不是已经有UTXO 会被写成已经是不变量 153 interchangeable | 官方 BIP-350 b32m item 3：not already settled |
+| A7474 | 中 | 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串会被抄进不确定 | 不抄。不写 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串。不另写 19 节 |
+| A7465 | 记录 | 会与 181 / 174 / 152 / 1539 / 1541 糊成「看见更高版本过了旧校验不是已经合法就已经合法 interchangeable、就已经是不变量 174 interchangeable、就已经是不变量 152 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-350 higher-ver-old-checksum not already legal / not already 174 / not already 152 正式三事（181 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。181 bech32m vs bech32 bundled unbundling 续（1540 item 2） |
+| A7466 | 高 | 看见更高版本过了旧校验不是已经合法 会被写成已经合法 interchangeable / 174 interchangeable | 官方 BIP-350 b32m item 2：not already 已经合法 / not 174 |
+| A7467 | 高 | 看见a higher version passing old checksum is not already legal 会被写成已经是不变量 174 interchangeable / 152 interchangeable | 官方 BIP-350 b32m item 2：not already 已经是不变量 174 / not 152 |
+| A7468 | 高 | 看见更高版本过了旧校验不是已经合法 会被写成已经是不变量 152 interchangeable | 官方 BIP-350 b32m item 2：not already settled |
+| A7469 | 中 | 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串会被抄进不确定 | 不抄。不写 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串。不另写 19 节 |
+| A7460 | 记录 | 会与 181 / 174 / 170 / 1540 / 1541 糊成「看见后继校验过了不是已经是旧校验那套地址就已经是旧校验那套地址 interchangeable、就已经是不变量 174 interchangeable、就已经 181 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-350 successor-pass not already old-bech32 / not already 174 / not already 181-bundled 正式三事（181 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。181 bech32m vs bech32 bundled unbundling 启动（1539 item 1） |
+| A7461 | 高 | 看见后继校验过了不是已经是旧校验那套地址 会被写成已经是旧校验那套地址 interchangeable / 174 interchangeable | 官方 BIP-350 b32m item 1：not already 已经是旧校验那套地址 / not 174 |
+| A7462 | 高 | 看见passing Bech32m is not already being a Bech32 address 会被写成已经是不变量 174 interchangeable / 170 interchangeable | 官方 BIP-350 b32m item 1：not already 已经是不变量 174 / not 170 |
+| A7463 | 高 | 看见后继校验过了不是已经是旧校验那套地址 会被写成已经 181 bundled interchangeable | 官方 BIP-350 b32m item 1：not already settled |
+| A7464 | 中 | 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串会被抄进不确定 | 不抄。不写 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串。不另写 19 节 |
 | A7455 | 记录 | 会与 174 / 179 / 181 / 1536 / 1537 糊成「看见编出版本和程序不是已经付过款就已经付过款 interchangeable、就已经是不变量 179 interchangeable、就已经是不变量 181 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。174 address vs utxo bundled unbundling 完成（1538 item 3） |
 | A7456 | 高 | 看见编出版本和程序不是已经付过款 会被写成已经付过款 interchangeable / 179 interchangeable | 官方 BIP-173 adut item 3：not already 已经付过款 / not 179 |
 | A7457 | 高 | 看见encoding version and program is not already having paid 会被写成已经是不变量 179 interchangeable / 181 interchangeable | 官方 BIP-173 adut item 3：not already 已经是不变量 179 / not 181 |

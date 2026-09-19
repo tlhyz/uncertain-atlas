@@ -1,3 +1,6 @@
+- [`b32m-notutx-sold-as-bundled.md`](b32m-notutx-sold-as-bundled.md) — 看见后继地址串 被写成已经有 UTXO / 就已经是 174 / 就已经是 153（不变量 1541）
+- [`b32m-notv0-sold-as-bundled.md`](b32m-notv0-sold-as-bundled.md) — 更高版本过了旧校验 被写成已经合法 / 就已经是 174 / 就已经是 152（不变量 1540）
+- [`b32m-notold-sold-as-bundled.md`](b32m-notold-sold-as-bundled.md) — 后继校验过了 被写成已经是旧校验地址 / 就已经是 174 / 就已经 181 bundled（不变量 1539）
 - [`adut-notpay-sold-as-bundled.md`](adut-notpay-sold-as-bundled.md) — 编出版本和程序 被写成已经付过款 / 就已经是 179 / 就已经是 181（不变量 1538）
 - [`adut-notchk-sold-as-bundled.md`](adut-notchk-sold-as-bundled.md) — 校验过 被写成见证程序已经上链 / 就已经是 170 / 就已经是 152（不变量 1537）
 - [`adut-notout-sold-as-bundled.md`](adut-notout-sold-as-bundled.md) — Bech32 地址串 被写成已经有链上输出 / 就已经是 181 / 就已经 174 bundled（不变量 1536）
