@@ -1,3 +1,4 @@
+- [`validatorupdate-notdup-sold-as-bundled.md`](validatorupdate-notdup-sold-as-bundled.md) — 看见重复 被写成已经按后一条改权 / 看见失败 被写成已经能重放修好 / 看见同一把钥 被写成已经能写两行（不变量 714）
 - [`validatorupdate-notempty-sold-as-bundled.md`](validatorupdate-notempty-sold-as-bundled.md) — 回了空 被写成已经没有集合 / 没回人 被写成已经删掉创世名单 / 能设初始集合 被写成已经用了应用自己的空集（不变量 713）
 - [`checktxresponse-notpriority-sold-as-bundled.md`](checktxresponse-notpriority-sold-as-bundled.md) — 有 Priority 被写成已经是共识顺序 / 排在前面 被写成已经进了块 / 能优先 被写成已经从池里删掉（不变量 712）
 - [`checktxresponse-notfork-sold-as-bundled.md`](checktxresponse-notfork-sold-as-bundled.md) — 各节点 Data 不一样 被写成已经分叉 / Data 不确定 被写成已经违规 / CheckTxState 不同 被写成已经是 ExecuteTxState（不变量 711）

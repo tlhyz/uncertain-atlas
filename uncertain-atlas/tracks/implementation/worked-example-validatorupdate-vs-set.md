@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「InitChain 已经回了名单」，必须分开回空是不是已经没有集合、重复是不是已经能恢复、power 0 是不是已经删掉不在集合里的人。可以跳过「看见回了就已经定了」。不要另写怎样编更新或怎样算总权。不要把 `MaxTotalVotingPower` 当不确定默认。318 validatorupdate vs set bundled unbundling 启动（713 item 1）；精读 [`worked-example-validatorupdate-notempty-vs-bundled.md`](worked-example-validatorupdate-notempty-vs-bundled.md)（不变量 713 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「InitChain 已经回了名单」，必须分开回空是不是已经没有集合、重复是不是已经能恢复、power 0 是不是已经删掉不在集合里的人。可以跳过「看见回了就已经定了」。不要另写怎样编更新或怎样算总权。不要把 `MaxTotalVotingPower` 当不确定默认。318 validatorupdate vs set bundled unbundling 续（713 + 714）；精读 [`worked-example-validatorupdate-notempty-vs-bundled.md`](worked-example-validatorupdate-notempty-vs-bundled.md)（不变量 713 item 1）；[`worked-example-validatorupdate-notdup-vs-bundled.md`](worked-example-validatorupdate-notdup-vs-bundled.md)（不变量 714 item 2）。
 
 ## 本页不抄
 
