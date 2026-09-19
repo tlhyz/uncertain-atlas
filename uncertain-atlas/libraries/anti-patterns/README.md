@@ -1,3 +1,4 @@
+- [`queryproof-nottxmerkle-sold-as-bundled.md`](queryproof-nottxmerkle-sold-as-bundled.md) — 头上有 AppHash 被写成已经是交易默克尔 / 并列 被写成已经是验证者集合锚 / 交易在 被写成已经有分开的应用状态（不变量 731）
 - [`snapshottake-notretained-sold-as-bundled.md`](snapshottake-notretained-sold-as-bundled.md) — 只留最近两份 被写成已经有了全部历史 / Hash 对上 被写成已经五字段同一份 / 有 Hash 被写成已经轻验 AppHash（不变量 730）
 - [`snapshottake-notconsistent-sold-as-bundled.md`](snapshottake-notconsistent-sold-as-bundled.md) — 没停链 被写成已经一致 / 后台拍 被写成已经 Asynchronous 交差 / 同一高度 被写成已经各节点字节相同（不变量 729）
 - [`snapshottake-notcommitted-sold-as-bundled.md`](snapshottake-notcommitted-sold-as-bundled.md) — 标了这个高度 被写成已经交差之后拍 / 拍了 被写成已经没有更高高度 / 字段在 被写成已经隔离在这一高度（不变量 728）
