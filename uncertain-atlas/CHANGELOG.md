@@ -1,3 +1,15 @@
+## 2026-09-19（续 1673）
+
+- 不变量 1556；语料 C1534；模式 name-the-kpsp-notlook-bar；反模式 kpsp-notlook-sold-as-bundled；L10.3 第 1525 条。填 L3.7 BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）。153 keypath vs scriptpath bundled unbundling 完成（1556 item 3）。
+
+## 2026-09-19（续 1672）
+
+- 不变量 1555；语料 C1533；模式 name-the-kpsp-notall-bar；反模式 kpsp-notall-sold-as-bundled；L10.3 第 1524 条。填 L3.7 BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）。153 keypath vs scriptpath bundled unbundling 续（1555 item 2）。
+
+## 2026-09-19（续 1671）
+
+- 不变量 1554；语料 C1532；模式 name-the-kpsp-notree-bar；反模式 kpsp-notree-sold-as-bundled；L10.3 第 1523 条。填 L3.7 BIP-341 keypath not already revealed-tree / not already 189 / not already 153-bundled 正式三事（153 余量）。153 keypath vs scriptpath bundled unbundling 启动（1554 item 1）。
+
 ## 2026-09-19（续 1670）
 
 - 不变量 1553；语料 C1531；模式 name-the-twid-notmer-bar；反模式 twid-notmer-sold-as-bundled；L10.3 第 1522 条。填 L3.7 BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）。152 txid vs wtxid bundled unbundling 完成（1553 item 3）。

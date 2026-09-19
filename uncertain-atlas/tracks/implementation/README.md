@@ -816,6 +816,9 @@
 - [`worked-example-twid-notchg-vs-bundled.md`](worked-example-twid-notchg-vs-bundled.md) — BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）（不变量 1552）
 - [`worked-example-twid-notmer-vs-bundled.md`](worked-example-twid-notmer-vs-bundled.md) — BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）（不变量 1553）
 - [`worked-example-txid-vs-wtxid.md`](worked-example-txid-vs-wtxid.md) — txid ≠ wtxid；改见证 ≠ 已经改交易身份；头上的 txid Merkle ≠ 已经承诺 wtxid（不变量 152）
+- [`worked-example-kpsp-notree-vs-bundled.md`](worked-example-kpsp-notree-vs-bundled.md) — BIP-341 keypath not already revealed-tree / not already 189 / not already 153-bundled 正式三事（153 余量）（不变量 1554）
+- [`worked-example-kpsp-notall-vs-bundled.md`](worked-example-kpsp-notall-vs-bundled.md) — BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）（不变量 1555）
+- [`worked-example-kpsp-notlook-vs-bundled.md`](worked-example-kpsp-notlook-vs-bundled.md) — BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）（不变量 1556）
 - [`worked-example-keypath-vs-scriptpath.md`](worked-example-keypath-vs-scriptpath.md) — 钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本（不变量 153）
 - [`worked-example-tapscript-vs-scriptpath.md`](worked-example-tapscript-vs-scriptpath.md) — 走脚本路径 ≠ 已经是 tapscript 语义；遇见成功操作码 ≠ 已经执行完；342 ≠ 341 ≠ 141 ≠ 16（不变量 189）
 - [`worked-example-miniscript-vs-script.md`](worked-example-miniscript-vs-script.md) — 看见 Miniscript ≠ 已经是链上脚本；共识健全 ≠ 已经是策略完备；379 ≠ 380 ≠ 342 ≠ 16（不变量 191）

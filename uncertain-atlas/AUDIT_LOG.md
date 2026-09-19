@@ -1,3 +1,18 @@
+| A7545 | 记录 | 会与 153 / 170 / 174 / 1554 / 1555 糊成「看见看见Taproot输出不是已经分辨付款给钥还是付款给脚本就已经分辨付款给钥还是付款给脚本 interchangeable、就已经是不变量 170 interchangeable、就已经是不变量 174 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。153 keypath vs scriptpath bundled unbundling 完成（1556 item 3） |
+| A7546 | 高 | 看见看见Taproot输出不是已经分辨付款给钥还是付款给脚本 会被写成已经分辨付款给钥还是付款给脚本 interchangeable / 170 interchangeable | 官方 BIP-341 kpsp item 3：not already 已经分辨付款给钥还是付款给脚本 / not 170 |
+| A7547 | 高 | 看见seeing a Taproot output is not already telling whether it pays to key or to script 会被写成已经是不变量 170 interchangeable / 174 interchangeable | 官方 BIP-341 kpsp item 3：not already 已经是不变量 170 / not 174 |
+| A7548 | 高 | 看见看见Taproot输出不是已经分辨付款给钥还是付款给脚本 会被写成已经是不变量 174 interchangeable | 官方 BIP-341 kpsp item 3：not already settled |
+| A7549 | 中 | 怎样藏一条别人看不见的脚本路径会被抄进不确定 | 不抄。不写 怎样藏一条别人看不见的脚本路径。不另写 19 节 |
+| A7540 | 记录 | 会与 153 / 189 / 152 / 1554 / 1556 糊成「看见脚本路径不是已经揭开全部脚本就已经揭开全部脚本 interchangeable、就已经是不变量 189 interchangeable、就已经是不变量 152 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。153 keypath vs scriptpath bundled unbundling 续（1555 item 2） |
+| A7541 | 高 | 看见脚本路径不是已经揭开全部脚本 会被写成已经揭开全部脚本 interchangeable / 189 interchangeable | 官方 BIP-341 kpsp item 2：not already 已经揭开全部脚本 / not 189 |
+| A7542 | 高 | 看见scriptpath spend is not already revealing all scripts 会被写成已经是不变量 189 interchangeable / 152 interchangeable | 官方 BIP-341 kpsp item 2：not already 已经是不变量 189 / not 152 |
+| A7543 | 高 | 看见脚本路径不是已经揭开全部脚本 会被写成已经是不变量 152 interchangeable | 官方 BIP-341 kpsp item 2：not already settled |
+| A7544 | 中 | 怎样藏一条别人看不见的脚本路径会被抄进不确定 | 不抄。不写 怎样藏一条别人看不见的脚本路径。不另写 19 节 |
+| A7535 | 记录 | 会与 153 / 189 / 170 / 1555 / 1556 糊成「看见钥匙路径不是已经揭开有没有脚本树就已经揭开有没有脚本树 interchangeable、就已经是不变量 189 interchangeable、就已经 153 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-341 keypath not already revealed-tree / not already 189 / not already 153-bundled 正式三事（153 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。153 keypath vs scriptpath bundled unbundling 启动（1554 item 1） |
+| A7536 | 高 | 看见钥匙路径不是已经揭开有没有脚本树 会被写成已经揭开有没有脚本树 interchangeable / 189 interchangeable | 官方 BIP-341 kpsp item 1：not already 已经揭开有没有脚本树 / not 189 |
+| A7537 | 高 | 看见keypath spend is not already revealing whether a script tree exists 会被写成已经是不变量 189 interchangeable / 170 interchangeable | 官方 BIP-341 kpsp item 1：not already 已经是不变量 189 / not 170 |
+| A7538 | 高 | 看见钥匙路径不是已经揭开有没有脚本树 会被写成已经 153 bundled interchangeable | 官方 BIP-341 kpsp item 1：not already settled |
+| A7539 | 中 | 怎样藏一条别人看不见的脚本路径会被抄进不确定 | 不抄。不写 怎样藏一条别人看不见的脚本路径。不另写 19 节 |
 | A7530 | 记录 | 会与 152 / 145 / 174 / 1551 / 1552 糊成「看见头上的txid Merkle不是已经承诺wtxid就已经承诺wtxid interchangeable、就已经是不变量 145 interchangeable、就已经是不变量 174 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。152 txid vs wtxid bundled unbundling 完成（1553 item 3） |
 | A7531 | 高 | 看见头上的txid Merkle不是已经承诺wtxid 会被写成已经承诺wtxid interchangeable / 145 interchangeable | 官方 BIP-141 twid item 3：not already 已经承诺wtxid / not 145 |
 | A7532 | 高 | 看见the header txid Merkle is not already the wtxid commitment 会被写成已经是不变量 145 interchangeable / 174 interchangeable | 官方 BIP-141 twid item 3：not already 已经是不变量 145 / not 174 |

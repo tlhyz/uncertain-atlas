@@ -83,7 +83,7 @@
 | 经济 | 空间与隐私来自「多数日子走钥匙路径」的假设，不是官网 TPS |
 
 **推断：** 产品句若只写「Taproot 输出」，读者会把备用规章听成已经贴在门牌上。  
-**建议：** 第一版若做「一个输出、多条条件」，必须写清平常那次花费揭不揭开树。可以不上 Taproot / MAST。不要抄控制块公式。不要发明「钥匙路径已经等于没有脚本」。
+**建议：** 第一版若做「一个输出、多条条件」，必须写清平常那次花费揭不揭开树。可以不上 Taproot / MAST。不要抄控制块公式。可以跳过「看见一个签名所以脚本树已经公开」。153 keypath vs scriptpath bundled unbundling 完成（1554 item 1 / 1555 item 2 / 1556 item 3）；精读 [`worked-example-kpsp-notree-vs-bundled.md`](worked-example-kpsp-notree-vs-bundled.md)（不变量 1554 item 1）、[`worked-example-kpsp-notall-vs-bundled.md`](worked-example-kpsp-notall-vs-bundled.md)（不变量 1555 item 2）、[`worked-example-kpsp-notlook-vs-bundled.md`](worked-example-kpsp-notlook-vs-bundled.md)（不变量 1556 item 3）。不要发明「钥匙路径已经等于没有脚本」。
 
 ---
 

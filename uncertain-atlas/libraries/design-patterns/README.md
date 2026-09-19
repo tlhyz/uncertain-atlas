@@ -1,3 +1,6 @@
+- [`name-the-kpsp-notlook-bar.md`](name-the-kpsp-notlook-bar.md) — BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）（不变量 1556）
+- [`name-the-kpsp-notall-bar.md`](name-the-kpsp-notall-bar.md) — BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）（不变量 1555）
+- [`name-the-kpsp-notree-bar.md`](name-the-kpsp-notree-bar.md) — BIP-341 keypath not already revealed-tree / not already 189 / not already 153-bundled 正式三事（153 余量）（不变量 1554）
 - [`name-the-twid-notmer-bar.md`](name-the-twid-notmer-bar.md) — BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）（不变量 1553）
 - [`name-the-twid-notchg-bar.md`](name-the-twid-notchg-bar.md) — BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）（不变量 1552）
 - [`name-the-twid-noteq-bar.md`](name-the-twid-noteq-bar.md) — BIP-141 txid not already wtxid / not already 248 / not already 152-bundled 正式三事（152 余量）（不变量 1551）

@@ -1,3 +1,6 @@
+- [`kpsp-notlook-sold-as-bundled.md`](kpsp-notlook-sold-as-bundled.md) — Taproot 输出 被写成已经分辨付款给钥还是付款给脚本 / 就已经是 170 / 就已经是 174（不变量 1556）
+- [`kpsp-notall-sold-as-bundled.md`](kpsp-notall-sold-as-bundled.md) — 脚本路径 被写成已经揭开全部脚本 / 就已经是 189 / 就已经是 152（不变量 1555）
+- [`kpsp-notree-sold-as-bundled.md`](kpsp-notree-sold-as-bundled.md) — 钥匙路径 被写成已经揭开有没有脚本树 / 就已经是 189 / 就已经 153 bundled（不变量 1554）
 - [`twid-notmer-sold-as-bundled.md`](twid-notmer-sold-as-bundled.md) — 头上的 txid Merkle 被写成已经承诺 wtxid / 就已经是 145 / 就已经是 174（不变量 1553）
 - [`twid-notchg-sold-as-bundled.md`](twid-notchg-sold-as-bundled.md) — 改见证 被写成已经改 txid / 就已经是 144 / 就已经是 12（不变量 1552）
 - [`twid-noteq-sold-as-bundled.md`](twid-noteq-sold-as-bundled.md) — txid 被写成已经是 wtxid / 就已经是 248 / 就已经 152 bundled（不变量 1551）
