@@ -1,3 +1,6 @@
+- [`name-the-rcap-notone-bar.md`](name-the-rcap-notone-bar.md) — EIP-7934 beacon-margin not already one-encoding / not already safer / not already 101 正式三事（202 余量）（不变量 1466）
+- [`name-the-rcap-notprop-bar.md`](name-the-rcap-notprop-bar.md) — EIP-7934 gossip-drop not already el-illegal / not already 96 / not already 158 正式三事（202 余量）（不变量 1465）
+- [`name-the-rcap-notgas-bar.md`](name-the-rcap-notgas-bar.md) — EIP-7934 rlp-cap not already gas-limit / not already 197 / not already 202-bundled 正式三事（202 余量）（不变量 1464）
 - [`name-the-txcap-notpol-bar.md`](name-the-txcap-notpol-bar.md) — EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）（不变量 1463）
 - [`name-the-txcap-notpool-bar.md`](name-the-txcap-notpool-bar.md) — EIP-7825 pool-reject not already block-verified / not already 197 / not already 96 正式三事（203 余量）（不变量 1462）
 - [`name-the-txcap-notblk-bar.md`](name-the-txcap-notblk-bar.md) — EIP-7825 tx-gas-cap not already block-gas / not already 202 / not already 203-bundled 正式三事（203 余量）（不变量 1461）

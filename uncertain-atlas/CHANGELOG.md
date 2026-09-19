@@ -1,3 +1,15 @@
+## 2026-09-19（续 1583）
+
+- 不变量 1466；语料 C1444；模式 name-the-rcap-notone-bar；反模式 rcap-notone-sold-as-bundled；L10.3 第 1435 条。填 L5.1 EIP-7934 beacon-margin not already one-encoding / not already safer / not already 101 正式三事（202 余量）。202 rlp-cap vs gas bundled unbundling 完成（1466 item 3）。
+
+## 2026-09-19（续 1582）
+
+- 不变量 1465；语料 C1443；模式 name-the-rcap-notprop-bar；反模式 rcap-notprop-sold-as-bundled；L10.3 第 1434 条。填 L5.1 EIP-7934 gossip-drop not already el-illegal / not already 96 / not already 158 正式三事（202 余量）。202 rlp-cap vs gas bundled unbundling 续（1465 item 2）。
+
+## 2026-09-19（续 1581）
+
+- 不变量 1464；语料 C1442；模式 name-the-rcap-notgas-bar；反模式 rcap-notgas-sold-as-bundled；L10.3 第 1433 条。填 L5.1 EIP-7934 rlp-cap not already gas-limit / not already 197 / not already 202-bundled 正式三事（202 余量）。202 rlp-cap vs gas bundled unbundling 启动（1464 item 1）。
+
 ## 2026-09-19（续 1580）
 
 - 不变量 1463；语料 C1441；模式 name-the-txcap-notpol-bar；反模式 txcap-notpol-sold-as-bundled；L10.3 第 1432 条。填 L5.1 EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）。203 tx-gas-cap vs block bundled unbundling 完成（1463 item 3）。

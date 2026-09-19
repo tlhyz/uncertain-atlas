@@ -992,6 +992,9 @@
 - [`worked-example-icode-notrun-vs-bundled.md`](worked-example-icode-notrun-vs-bundled.md) — 按字分析费≠already 跑完initcode/CREATE2哈希费/已创建；≠176 bundled（不变量 1439）
 - [`worked-example-initcode-vs-runtime.md`](worked-example-initcode-vs-runtime.md) — initcode 超界 ≠ 已经是部署代码超界；按字分析费 ≠ 已经跑完构造；3860 ≠ 170 ≠ 1014 ≠ 2681（不变量 176）
 - [`worked-example-calldata-floor-vs-execution.md`](worked-example-calldata-floor-vs-execution.md) — 看见 calldata 地板 ≠ 已经改了执行气；数据为主更贵 ≠ 已经让普通转账更贵；预留地板气限 ≠ 已经烧到地板；7623 ≠ 4844 ≠ 1559 ≠ 2028（不变量 197）
+- [`worked-example-rcap-notgas-vs-bundled.md`](worked-example-rcap-notgas-vs-bundled.md) — RLP编码硬帽≠already 改了气/197/202 bundled；≠202 bundled（不变量 1464）
+- [`worked-example-rcap-notprop-vs-bundled.md`](worked-example-rcap-notprop-vs-bundled.md) — 流言不传≠already 执行层非法/96/158；≠202 bundled（不变量 1465）
+- [`worked-example-rcap-notone-vs-bundled.md`](worked-example-rcap-notone-vs-bundled.md) — 给信标留边≠already 一份编码/更安全/101；≠202 bundled（不变量 1466）
 - [`worked-example-rlp-cap-vs-gas.md`](worked-example-rlp-cap-vs-gas.md) — 看见 RLP 编码硬帽 ≠ 已经改了气限；共识层流言不传 ≠ 已经让执行层非法；给信标块留边 ≠ 已经并成一份编码；7934 ≠ 7623 ≠ 1559 ≠ 96（不变量 202）
 - [`worked-example-txcap-notblk-vs-bundled.md`](worked-example-txcap-notblk-vs-bundled.md) — 单笔气帽≠already 改了块气/202/203 bundled；≠203 bundled（不变量 1461）
 - [`worked-example-txcap-notpool-vs-bundled.md`](worked-example-txcap-notpool-vs-bundled.md) — 入池拒掉≠already 验过块/197/96；≠203 bundled（不变量 1462）

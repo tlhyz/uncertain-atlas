@@ -1,3 +1,6 @@
+- [`rcap-notone-sold-as-bundled.md`](rcap-notone-sold-as-bundled.md) — 给信标留边 被写成已经并成一份编码 / 就已经更安全 / 就已经是 101（不变量 1466）
+- [`rcap-notprop-sold-as-bundled.md`](rcap-notprop-sold-as-bundled.md) — 流言不传 被写成已经让执行层非法 / 就已经是 96 / 就已经是 158（不变量 1465）
+- [`rcap-notgas-sold-as-bundled.md`](rcap-notgas-sold-as-bundled.md) — RLP编码硬帽 被写成已经改了气限 / 就已经是 197 / 就已经 202 bundled（不变量 1464）
 - [`txcap-notpol-sold-as-bundled.md`](txcap-notpol-sold-as-bundled.md) — 块里超帽 被写成已经只是策略拒绝 / 就已经更安全 / 就已经是 101（不变量 1463）
 - [`txcap-notpool-sold-as-bundled.md`](txcap-notpool-sold-as-bundled.md) — 入池拒掉 被写成已经验过块 / 就已经是 197 / 就已经是 96（不变量 1462）
 - [`txcap-notblk-sold-as-bundled.md`](txcap-notblk-sold-as-bundled.md) — 单笔气帽 被写成已经改了块气限 / 就已经是 202 / 就已经 203 bundled（不变量 1461）

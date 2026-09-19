@@ -1,3 +1,18 @@
+| A7095 | 记录 | 会与 202 / 101 / 145 / 1464 / 1465 糊成「看见给信标块留边不是已经并成一份编码就已经并成一份编码 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7934 beacon-margin not already one-encoding / not already safer / not already 101 正式三事（202 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。202 rlp-cap vs gas bundled unbundling 完成（1466 item 3） |
+| A7096 | 高 | 看见给信标块留边不是已经并成一份编码 会被写成已经并成一份编码 interchangeable / 101 interchangeable | 官方 EIP-7934 rcap item 3：not already 已经并成一份编码 / not 101 |
+| A7097 | 高 | 看见beacon-block margin is not already one encoding 会被写成已经更安全 interchangeable / 145 interchangeable | 官方 EIP-7934 rcap item 3：not already 已经更安全 / not 145 |
+| A7098 | 高 | 看见给信标块留边不是已经并成一份编码 会被写成已经是不变量 101 interchangeable | 官方 EIP-7934 rcap item 3：not already settled |
+| A7099 | 中 | 怎样刚好塞进帽下会被抄进不确定 | 不抄。不写 怎样刚好塞进帽下。不另写 19 节 |
+| A7090 | 记录 | 会与 202 / 96 / 158 / 1464 / 1466 糊成「看见共识层流言不传不是已经让执行层非法就已经让执行层非法 interchangeable、就已经是不变量 96 interchangeable、就已经是不变量 158 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7934 gossip-drop not already el-illegal / not already 96 / not already 158 正式三事（202 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。202 rlp-cap vs gas bundled unbundling 续（1465 item 2） |
+| A7091 | 高 | 看见共识层流言不传不是已经让执行层非法 会被写成已经让执行层非法 interchangeable / 96 interchangeable | 官方 EIP-7934 rcap item 2：not already 已经让执行层非法 / not 96 |
+| A7092 | 高 | 看见consensus gossip drop is not already EL-illegal 会被写成已经是不变量 96 interchangeable / 158 interchangeable | 官方 EIP-7934 rcap item 2：not already 已经是不变量 96 / not 158 |
+| A7093 | 高 | 看见共识层流言不传不是已经让执行层非法 会被写成已经是不变量 158 interchangeable | 官方 EIP-7934 rcap item 2：not already settled |
+| A7094 | 中 | 怎样刚好塞进帽下会被抄进不确定 | 不抄。不写 怎样刚好塞进帽下。不另写 19 节 |
+| A7085 | 记录 | 会与 202 / 197 / 203 / 1465 / 1466 糊成「看见RLP编码硬帽不是已经改了气限就已经改了气限 interchangeable、就已经是不变量 197 interchangeable、就已经 202 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7934 rlp-cap not already gas-limit / not already 197 / not already 202-bundled 正式三事（202 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。202 rlp-cap vs gas bundled unbundling 启动（1464 item 1） |
+| A7086 | 高 | 看见RLP编码硬帽不是已经改了气限 会被写成已经改了气限 interchangeable / 197 interchangeable | 官方 EIP-7934 rcap item 1：not already 已经改了气限 / not 197 |
+| A7087 | 高 | 看见RLP encoding cap is not already a gas limit change 会被写成已经是不变量 197 interchangeable / 203 interchangeable | 官方 EIP-7934 rcap item 1：not already 已经是不变量 197 / not 203 |
+| A7088 | 高 | 看见RLP编码硬帽不是已经改了气限 会被写成已经 202 bundled interchangeable | 官方 EIP-7934 rcap item 1：not already settled |
+| A7089 | 中 | 怎样刚好塞进帽下会被抄进不确定 | 不抄。不写 怎样刚好塞进帽下。不另写 19 节 |
 | A7080 | 记录 | 会与 203 / 211 / 101 / 1461 / 1462 糊成「看见块里有一笔超帽不是已经只是策略拒绝就已经只是策略拒绝 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。203 tx-gas-cap vs block bundled unbundling 完成（1463 item 3） |
 | A7081 | 高 | 看见块里有一笔超帽不是已经只是策略拒绝 会被写成已经只是策略拒绝 interchangeable / 211 interchangeable | 官方 EIP-7825 txcap item 3：not already 已经只是策略拒绝 / not 211 |
 | A7082 | 高 | 看见one over-cap in a block is not already policy-only 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7825 txcap item 3：not already 已经更安全 / not 101 |
