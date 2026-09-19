@@ -1,3 +1,6 @@
+- [`blal-notrun-sold-as-bundled.md`](blal-notrun-sold-as-bundled.md) — 事后状态差 被写成已经不跑交易 / 就已经更安全 / 就已经是 96（不变量 1478）
+- [`blal-not2930-sold-as-bundled.md`](blal-not2930-sold-as-bundled.md) — 强制名单 被写成已经是 2930 / 就已经是 143 / 就已经是 122（不变量 1477）
+- [`blal-notpar-sold-as-bundled.md`](blal-notpar-sold-as-bundled.md) — 块级访问名单 被写成已经并行跑完 / 就已经是 168 / 就已经 212 bundled（不变量 1476）
 - [`mxbd-notevm-sold-as-bundled.md`](mxbd-notevm-sold-as-bundled.md) — 长度有界 被写成已经换成EVM / 就已经更安全 / 就已经是 199（不变量 1475）
 - [`mxbd-notok-sold-as-bundled.md`](mxbd-notok-sold-as-bundled.md) — 超帽 被写成已经成功返回 / 就已经是 177 / 就已经是 204（不变量 1474）
 - [`mxbd-notprice-sold-as-bundled.md`](mxbd-notprice-sold-as-bundled.md) — 输入长度帽 被写成已经改了计价 / 就已经是 227 / 就已经 206 bundled（不变量 1473）

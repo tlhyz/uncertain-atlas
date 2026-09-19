@@ -86,7 +86,7 @@
 | 经济 | 不把「能并行」写成已经更安全 |
 
 **推断：** 产品句若只写「有了访问名单所以已经并行」，读者会把记录听成已经跑完，或把强制听成 2930。  
-**建议：** 第一版可以不抄块级强制名单。若对照，必须分开块级强制、交易级可选、声明调度、乐观并行。不要发明「看见 7928 就已经并行」。不要抄条数或地址。不要写怎样造名单。
+**建议：** 第一版可以不抄块级强制名单。若对照，必须分开块级强制、交易级可选、声明调度、乐观并行。可以跳过「看见 7928 就已经并行」。212 block-list vs parallel bundled unbundling 完成（1476 item 1 / 1477 item 2 / 1478 item 3）；精读 [`worked-example-blal-notpar-vs-bundled.md`](worked-example-blal-notpar-vs-bundled.md)（不变量 1476 item 1）、[`worked-example-blal-not2930-vs-bundled.md`](worked-example-blal-not2930-vs-bundled.md)（不变量 1477 item 2）、[`worked-example-blal-notrun-vs-bundled.md`](worked-example-blal-notrun-vs-bundled.md)（不变量 1478 item 3）。不要发明「看见 7928 就已经并行」。不要抄条数或地址。不要写怎样造名单。
 
 ---
 

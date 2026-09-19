@@ -1,3 +1,15 @@
+## 2026-09-19（续 1595）
+
+- 不变量 1478；语料 C1456；模式 name-the-blal-notrun-bar；反模式 blal-notrun-sold-as-bundled；L10.3 第 1447 条。填 L5.1 EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）。212 block-list vs parallel bundled unbundling 完成（1478 item 3）。
+
+## 2026-09-19（续 1594）
+
+- 不变量 1477；语料 C1455；模式 name-the-blal-not2930-bar；反模式 blal-not2930-sold-as-bundled；L10.3 第 1446 条。填 L5.1 EIP-7928 forced-list not already 2930 / not already 143 / not already 122 正式三事（212 余量）。212 block-list vs parallel bundled unbundling 续（1477 item 2）。
+
+## 2026-09-19（续 1593）
+
+- 不变量 1476；语料 C1454；模式 name-the-blal-notpar-bar；反模式 blal-notpar-sold-as-bundled；L10.3 第 1445 条。填 L5.1 EIP-7928 block-list not already parallel-done / not already 168 / not already 212-bundled 正式三事（212 余量）。212 block-list vs parallel bundled unbundling 启动（1476 item 1）。
+
 ## 2026-09-19（续 1592）
 
 - 不变量 1475；语料 C1453；模式 name-the-mxbd-notevm-bar；反模式 mxbd-notevm-sold-as-bundled；L10.3 第 1444 条。填 L5.1 EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）。206 modexp-bound vs price bundled unbundling 完成（1475 item 3）。

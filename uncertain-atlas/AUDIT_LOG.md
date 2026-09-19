@@ -1,3 +1,18 @@
+| A7155 | 记录 | 会与 212 / 122 / 96 / 1476 / 1477 糊成「看见事后状态差不是已经不跑交易就已经不跑交易 interchangeable、就已经更安全 interchangeable、就已经是不变量 96 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。212 block-list vs parallel bundled unbundling 完成（1478 item 3） |
+| A7156 | 高 | 看见事后状态差不是已经不跑交易 会被写成已经不跑交易 interchangeable / 122 interchangeable | 官方 EIP-7928 blal item 3：not already 已经不跑交易 / not 122 |
+| A7157 | 高 | 看见post-state delta is not already skip-exec 会被写成已经更安全 interchangeable / 96 interchangeable | 官方 EIP-7928 blal item 3：not already 已经更安全 / not 96 |
+| A7158 | 高 | 看见事后状态差不是已经不跑交易 会被写成已经是不变量 96 interchangeable | 官方 EIP-7928 blal item 3：not already settled |
+| A7159 | 中 | 怎样造名单、怎样申报从未碰过的只读槽会被抄进不确定 | 不抄。不写 怎样造名单、怎样申报从未碰过的只读槽。不另写 19 节 |
+| A7150 | 记录 | 会与 212 / 143 / 122 / 1476 / 1478 糊成「看见强制名单不是已经是2930就已经是2930 interchangeable、就已经是不变量 143 interchangeable、就已经是不变量 122 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7928 forced-list not already 2930 / not already 143 / not already 122 正式三事（212 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。212 block-list vs parallel bundled unbundling 续（1477 item 2） |
+| A7151 | 高 | 看见强制名单不是已经是2930 会被写成已经是2930 interchangeable / 143 interchangeable | 官方 EIP-7928 blal item 2：not already 已经是2930 / not 143 |
+| A7152 | 高 | 看见forced list is not already 2930 会被写成已经是不变量 143 interchangeable / 122 interchangeable | 官方 EIP-7928 blal item 2：not already 已经是不变量 143 / not 122 |
+| A7153 | 高 | 看见强制名单不是已经是2930 会被写成已经是不变量 122 interchangeable | 官方 EIP-7928 blal item 2：not already settled |
+| A7154 | 中 | 怎样造名单、怎样申报从未碰过的只读槽会被抄进不确定 | 不抄。不写 怎样造名单、怎样申报从未碰过的只读槽。不另写 19 节 |
+| A7145 | 记录 | 会与 212 / 168 / 143 / 1477 / 1478 糊成「看见块级访问名单不是已经并行跑完就已经并行跑完 interchangeable、就已经是不变量 168 interchangeable、就已经 212 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7928 block-list not already parallel-done / not already 168 / not already 212-bundled 正式三事（212 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。212 block-list vs parallel bundled unbundling 启动（1476 item 1） |
+| A7146 | 高 | 看见块级访问名单不是已经并行跑完 会被写成已经并行跑完 interchangeable / 168 interchangeable | 官方 EIP-7928 blal item 1：not already 已经并行跑完 / not 168 |
+| A7147 | 高 | 看见block-level access list is not already parallel-done 会被写成已经是不变量 168 interchangeable / 143 interchangeable | 官方 EIP-7928 blal item 1：not already 已经是不变量 168 / not 143 |
+| A7148 | 高 | 看见块级访问名单不是已经并行跑完 会被写成已经 212 bundled interchangeable | 官方 EIP-7928 blal item 1：not already settled |
+| A7149 | 中 | 怎样造名单、怎样申报从未碰过的只读槽会被抄进不确定 | 不抄。不写 怎样造名单、怎样申报从未碰过的只读槽。不另写 19 节 |
 | A7140 | 记录 | 会与 206 / 199 / 203 / 1473 / 1474 糊成「看见长度有界不是已经用EVM换掉预编译就已经用EVM换掉预编译 interchangeable、就已经更安全 interchangeable、就已经是不变量 199 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。206 modexp-bound vs price bundled unbundling 完成（1475 item 3） |
 | A7141 | 高 | 看见长度有界不是已经用EVM换掉预编译 会被写成已经用EVM换掉预编译 interchangeable / 199 interchangeable | 官方 EIP-7823 mxbd item 3：not already 已经用EVM换掉预编译 / not 199 |
 | A7142 | 高 | 看见being bounded is not already EVM-replaced 会被写成已经更安全 interchangeable / 203 interchangeable | 官方 EIP-7823 mxbd item 3：not already 已经更安全 / not 203 |

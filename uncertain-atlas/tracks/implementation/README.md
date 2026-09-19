@@ -1016,6 +1016,9 @@
 - [`worked-example-dgas-notcons-vs-bundled.md`](worked-example-dgas-notcons-vs-bundled.md) — 绑到硬分叉≠already 共识已改/202/96；≠211 bundled（不变量 1459）
 - [`worked-example-dgas-nottx-vs-bundled.md`](worked-example-dgas-nottx-vs-bundled.md) — 默认齐了≠already 单笔气帽/更安全/101；≠211 bundled（不变量 1460）
 - [`worked-example-default-gas-vs-cap.md`](worked-example-default-gas-vs-cap.md) — 看见客户端默认气限 ≠ 已经是协议帽；看见绑到硬分叉发布 ≠ 已经改了共识；看见默认配置齐了 ≠ 已经是单笔气帽；7935 ≠ 203 ≠ 202 ≠ 96（不变量 211）
+- [`worked-example-blal-notpar-vs-bundled.md`](worked-example-blal-notpar-vs-bundled.md) — 块级访问名单≠already 并行跑完/168/212 bundled；≠212 bundled（不变量 1476）
+- [`worked-example-blal-not2930-vs-bundled.md`](worked-example-blal-not2930-vs-bundled.md) — 强制名单≠already 2930/143/122；≠212 bundled（不变量 1477）
+- [`worked-example-blal-notrun-vs-bundled.md`](worked-example-blal-notrun-vs-bundled.md) — 事后状态差≠already 不跑交易/更安全/96；≠212 bundled（不变量 1478）
 - [`worked-example-block-list-vs-parallel.md`](worked-example-block-list-vs-parallel.md) — 看见块级访问名单 ≠ 已经并行跑完；看见强制名单 ≠ 已经是 2930；看见事后状态差 ≠ 已经不跑交易；7928 ≠ 168 ≠ 143 ≠ 122（不变量 212）
 - [`worked-example-mcpy-notid-vs-bundled.md`](worked-example-mcpy-notid-vs-bundled.md) — 内存拷贝指令≠already 身份预编译/2929/216 bundled；≠216 bundled（不变量 1410）
 - [`worked-example-mcpy-notbuf-vs-bundled.md`](worked-example-mcpy-notbuf-vs-bundled.md) — 像用了中间缓冲≠already 必须真分配/已经是DoS/208；≠216 bundled（不变量 1411）

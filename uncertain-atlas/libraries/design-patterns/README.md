@@ -1,3 +1,6 @@
+- [`name-the-blal-notrun-bar.md`](name-the-blal-notrun-bar.md) — EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）（不变量 1478）
+- [`name-the-blal-not2930-bar.md`](name-the-blal-not2930-bar.md) — EIP-7928 forced-list not already 2930 / not already 143 / not already 122 正式三事（212 余量）（不变量 1477）
+- [`name-the-blal-notpar-bar.md`](name-the-blal-notpar-bar.md) — EIP-7928 block-list not already parallel-done / not already 168 / not already 212-bundled 正式三事（212 余量）（不变量 1476）
 - [`name-the-mxbd-notevm-bar.md`](name-the-mxbd-notevm-bar.md) — EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）（不变量 1475）
 - [`name-the-mxbd-notok-bar.md`](name-the-mxbd-notok-bar.md) — EIP-7823 over-cap not already success / not already 177 / not already 204 正式三事（206 余量）（不变量 1474）
 - [`name-the-mxbd-notprice-bar.md`](name-the-mxbd-notprice-bar.md) — EIP-7823 input-bound not already price-changed / not already 227 / not already 206-bundled 正式三事（206 余量）（不变量 1473）
