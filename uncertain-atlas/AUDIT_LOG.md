@@ -1,3 +1,18 @@
+| A7125 | 记录 | 会与 208 / 204 / 206 / 1470 / 1471 糊成「看见能表达最低位不是已经有数尾零就已经有数尾零 interchangeable、就已经更安全 interchangeable、就已经是不变量 206 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。208 clz vs zk bundled unbundling 完成（1472 item 3） |
+| A7126 | 高 | 看见能表达最低位不是已经有数尾零 会被写成已经有数尾零 interchangeable / 204 interchangeable | 官方 EIP-7939 clz item 3：not already 已经有数尾零 / not 204 |
+| A7127 | 高 | 看见expressing LSB is not already a CTZ opcode 会被写成已经更安全 interchangeable / 206 interchangeable | 官方 EIP-7939 clz item 3：not already 已经更安全 / not 206 |
+| A7128 | 高 | 看见能表达最低位不是已经有数尾零 会被写成已经是不变量 206 interchangeable | 官方 EIP-7939 clz item 3：not already settled |
+| A7129 | 中 | 怎样用它拼数尾零、怎样压证明费会被抄进不确定 | 不抄。不写 怎样用它拼数尾零、怎样压证明费。不另写 19 节 |
+| A7120 | 记录 | 会与 208 / 199 / 204 / 1470 / 1472 糊成「看见动机写了后量子签不是已经有后量子签名就已经有后量子签名 interchangeable、就已经是不变量 199 interchangeable、就已经是不变量 204 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7939 pq-motive not already pq-sig / not already 199 / not already 204 正式三事（208 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。208 clz vs zk bundled unbundling 续（1471 item 2） |
+| A7121 | 高 | 看见动机写了后量子签不是已经有后量子签名 会被写成已经有后量子签名 interchangeable / 199 interchangeable | 官方 EIP-7939 clz item 2：not already 已经有后量子签名 / not 199 |
+| A7122 | 高 | 看见PQ motive is not already a PQ signature 会被写成已经是不变量 199 interchangeable / 204 interchangeable | 官方 EIP-7939 clz item 2：not already 已经是不变量 199 / not 204 |
+| A7123 | 高 | 看见动机写了后量子签不是已经有后量子签名 会被写成已经是不变量 204 interchangeable | 官方 EIP-7939 clz item 2：not already settled |
+| A7124 | 中 | 怎样用它拼数尾零、怎样压证明费会被抄进不确定 | 不抄。不写 怎样用它拼数尾零、怎样压证明费。不另写 19 节 |
+| A7115 | 记录 | 会与 208 / 206 / 199 / 1471 / 1472 糊成「看见数前导零操作码不是已经更便宜的ZK证明就已经更便宜的ZK证明 interchangeable、就已经是不变量 206 interchangeable、就已经 208 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7939 clz not already cheaper-zk / not already 206 / not already 208-bundled 正式三事（208 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。208 clz vs zk bundled unbundling 启动（1470 item 1） |
+| A7116 | 高 | 看见数前导零操作码不是已经更便宜的ZK证明 会被写成已经更便宜的ZK证明 interchangeable / 206 interchangeable | 官方 EIP-7939 clz item 1：not already 已经更便宜的ZK证明 / not 206 |
+| A7117 | 高 | 看见CLZ opcode is not already cheaper ZK 会被写成已经是不变量 206 interchangeable / 199 interchangeable | 官方 EIP-7939 clz item 1：not already 已经是不变量 206 / not 199 |
+| A7118 | 高 | 看见数前导零操作码不是已经更便宜的ZK证明 会被写成已经 208 bundled interchangeable | 官方 EIP-7939 clz item 1：not already settled |
+| A7119 | 中 | 怎样用它拼数尾零、怎样压证明费会被抄进不确定 | 不抄。不写 怎样用它拼数尾零、怎样压证明费。不另写 19 节 |
 | A7110 | 记录 | 会与 197 / 176 / 101 / 1467 / 1468 糊成「看见预留地板气限不是已经烧到地板就已经烧到地板 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7623 reserve-floor not already burned / not already safer / not already 101 正式三事（197 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。197 calldata-floor vs execution bundled unbundling 完成（1469 item 3） |
 | A7111 | 高 | 看见预留地板气限不是已经烧到地板 会被写成已经烧到地板 interchangeable / 176 interchangeable | 官方 EIP-7623 cflr item 3：not already 已经烧到地板 / not 176 |
 | A7112 | 高 | 看见reserved floor gasLimit is not already burned to the floor 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7623 cflr item 3：not already 已经更安全 / not 101 |

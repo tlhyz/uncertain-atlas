@@ -1,3 +1,6 @@
+- [`clz-notctz-sold-as-bundled.md`](clz-notctz-sold-as-bundled.md) — 能表达最低位 被写成已经有数尾零 / 就已经更安全 / 就已经是 206（不变量 1472）
+- [`clz-notpq-sold-as-bundled.md`](clz-notpq-sold-as-bundled.md) — 动机写了后量子 被写成已经有后量子签名 / 就已经是 199 / 就已经是 204（不变量 1471）
+- [`clz-notzk-sold-as-bundled.md`](clz-notzk-sold-as-bundled.md) — 数前导零 被写成已经更便宜的ZK / 就已经是 206 / 就已经 208 bundled（不变量 1470）
 - [`cflr-notburn-sold-as-bundled.md`](cflr-notburn-sold-as-bundled.md) — 预留地板气限 被写成已经烧到地板 / 就已经更安全 / 就已经是 101（不变量 1469）
 - [`cflr-notxfer-sold-as-bundled.md`](cflr-notxfer-sold-as-bundled.md) — 数据为主更贵 被写成已经让普通转账更贵 / 就已经是 158 / 就已经是 226（不变量 1468）
 - [`cflr-notexec-sold-as-bundled.md`](cflr-notexec-sold-as-bundled.md) — calldata地板 被写成已经改了执行气 / 就已经是 145 / 就已经 197 bundled（不变量 1467）

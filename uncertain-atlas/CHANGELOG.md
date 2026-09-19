@@ -1,3 +1,15 @@
+## 2026-09-19（续 1589）
+
+- 不变量 1472；语料 C1450；模式 name-the-clz-notctz-bar；反模式 clz-notctz-sold-as-bundled；L10.3 第 1441 条。填 L5.1 EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）。208 clz vs zk bundled unbundling 完成（1472 item 3）。
+
+## 2026-09-19（续 1588）
+
+- 不变量 1471；语料 C1449；模式 name-the-clz-notpq-bar；反模式 clz-notpq-sold-as-bundled；L10.3 第 1440 条。填 L5.1 EIP-7939 pq-motive not already pq-sig / not already 199 / not already 204 正式三事（208 余量）。208 clz vs zk bundled unbundling 续（1471 item 2）。
+
+## 2026-09-19（续 1587）
+
+- 不变量 1470；语料 C1448；模式 name-the-clz-notzk-bar；反模式 clz-notzk-sold-as-bundled；L10.3 第 1439 条。填 L5.1 EIP-7939 clz not already cheaper-zk / not already 206 / not already 208-bundled 正式三事（208 余量）。208 clz vs zk bundled unbundling 启动（1470 item 1）。
+
 ## 2026-09-19（续 1586）
 
 - 不变量 1469；语料 C1447；模式 name-the-cflr-notburn-bar；反模式 cflr-notburn-sold-as-bundled；L10.3 第 1438 条。填 L5.1 EIP-7623 reserve-floor not already burned / not already safer / not already 101 正式三事（197 余量）。197 calldata-floor vs execution bundled unbundling 完成（1469 item 3）。

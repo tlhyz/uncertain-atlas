@@ -1004,6 +1004,9 @@
 - [`worked-example-txcap-notpol-vs-bundled.md`](worked-example-txcap-notpol-vs-bundled.md) — 块里超帽≠already 策略拒绝/更安全/101；≠203 bundled（不变量 1463）
 - [`worked-example-tx-gas-cap-vs-block.md`](worked-example-tx-gas-cap-vs-block.md) — 看见单笔气帽 ≠ 已经改了块气限；入池拒掉 ≠ 已经验过块；块里有一笔超帽 ≠ 已经只是策略拒绝；7825 ≠ 7934 ≠ 7623 ≠ 96（不变量 203）
 - [`worked-example-modexp-bound-vs-price.md`](worked-example-modexp-bound-vs-price.md) — 看见 MODEXP 输入长度帽 ≠ 已经改了计价公式；超帽 ≠ 已经成功返回；长度有界 ≠ 已经换成 EVM；7823 ≠ 198 重定价 ≠ 7825 ≠ 7951（不变量 206）
+- [`worked-example-clz-notzk-vs-bundled.md`](worked-example-clz-notzk-vs-bundled.md) — 数前导零≠already 更便宜ZK/206/208 bundled；≠208 bundled（不变量 1470）
+- [`worked-example-clz-notpq-vs-bundled.md`](worked-example-clz-notpq-vs-bundled.md) — 动机写了后量子≠already 已有后量子签/199/204；≠208 bundled（不变量 1471）
+- [`worked-example-clz-notctz-vs-bundled.md`](worked-example-clz-notctz-vs-bundled.md) — 能表达最低位≠already 已有数尾零/更安全/206；≠208 bundled（不变量 1472）
 - [`worked-example-clz-vs-zk.md`](worked-example-clz-vs-zk.md) — 看见数前导零操作码 ≠ 已经更便宜的 ZK 证明；动机写了后量子签 ≠ 已经有后量子签名；能表达最低位 ≠ 已经有数尾零；7939 ≠ 206 ≠ 199 ≠ 204（不变量 208）
 - [`worked-example-config-rpc-vs-aligned.md`](worked-example-config-rpc-vs-aligned.md) — 看见分叉配置 RPC 对上了 ≠ 已经过多客户端同根；看见 current / next / last ≠ 已经改了共识；RPC 绿 ≠ 对等节点没有撒谎；7910 ≠ 149 ≠ 209 ≠ 207（不变量 210）
 - [`worked-example-dgas-notcap-vs-bundled.md`](worked-example-dgas-notcap-vs-bundled.md) — 客户端默认气限≠already 协议帽/203/211 bundled；≠211 bundled（不变量 1458）

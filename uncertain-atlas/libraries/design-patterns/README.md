@@ -1,3 +1,6 @@
+- [`name-the-clz-notctz-bar.md`](name-the-clz-notctz-bar.md) — EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）（不变量 1472）
+- [`name-the-clz-notpq-bar.md`](name-the-clz-notpq-bar.md) — EIP-7939 pq-motive not already pq-sig / not already 199 / not already 204 正式三事（208 余量）（不变量 1471）
+- [`name-the-clz-notzk-bar.md`](name-the-clz-notzk-bar.md) — EIP-7939 clz not already cheaper-zk / not already 206 / not already 208-bundled 正式三事（208 余量）（不变量 1470）
 - [`name-the-cflr-notburn-bar.md`](name-the-cflr-notburn-bar.md) — EIP-7623 reserve-floor not already burned / not already safer / not already 101 正式三事（197 余量）（不变量 1469）
 - [`name-the-cflr-notxfer-bar.md`](name-the-cflr-notxfer-bar.md) — EIP-7623 data-heavy-dearer not already transfer-dearer / not already 158 / not already 226 正式三事（197 余量）（不变量 1468）
 - [`name-the-cflr-notexec-bar.md`](name-the-cflr-notexec-bar.md) — EIP-7623 calldata-floor not already execution-gas / not already 145 / not already 197-bundled 正式三事（197 余量）（不变量 1467）
