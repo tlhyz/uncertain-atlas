@@ -1,3 +1,6 @@
+- [`cl65-notclk-sold-as-bundled.md`](cl65-notclk-sold-as-bundled.md) — CLTV 比 nLockTime 被写成已经在跟墙上现在比 / 就已经是 41 / 就已经是 165（不变量 1532）
+- [`cl65-notnow-sold-as-bundled.md`](cl65-notnow-sold-as-bundled.md) — nLockTime 将来能花 被写成已经证明现在不能花 / 就已经是 163 / 就已经是 41（不变量 1531）
+- [`cl65-notfld-sold-as-bundled.md`](cl65-notfld-sold-as-bundled.md) — 脚本里的 CLTV 被写成 nLockTime 已经锁住输出 / 就已经是 165 / 就已经 164 bundled（不变量 1530）
 - [`csvd-notdep-sold-as-bundled.md`](csvd-notdep-sold-as-bundled.md) — CSV 部署名 被写成已经是操作码 / 就已经是 41 / 就已经是 164（不变量 1529）
 - [`csvd-notabs-sold-as-bundled.md`](csvd-notabs-sold-as-bundled.md) — 相对锁 被写成已经是绝对锁 / 就已经是 164 / 就已经是 163（不变量 1528）
 - [`csvd-notseq-sold-as-bundled.md`](csvd-notseq-sold-as-bundled.md) — 脚本里的 CSV 被写成 nSequence 已经相对锁住 / 就已经是 164 / 就已经 165 bundled（不变量 1527）

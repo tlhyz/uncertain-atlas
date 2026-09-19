@@ -1,3 +1,18 @@
+| A7425 | 记录 | 会与 164 / 41 / 165 / 1530 / 1531 糊成「看见CLTV比的是花费交易的nLockTime不是墙上现在就已经在跟墙上现在比 interchangeable、就已经是不变量 41 interchangeable、就已经是不变量 165 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-65 cltv-compares-nlocktime not already wall-clock / not already 41 / not already 165 正式三事（164 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。164 cltv vs nlocktime bundled unbundling 完成（1532 item 3） |
+| A7426 | 高 | 看见CLTV比的是花费交易的nLockTime不是墙上现在 会被写成已经在跟墙上现在比 interchangeable / 41 interchangeable | 官方 BIP-65 cl65 item 3：not already 已经在跟墙上现在比 / not 41 |
+| A7427 | 高 | 看见CLTV comparing against nLockTime is not already comparing against wall-clock now 会被写成已经是不变量 41 interchangeable / 165 interchangeable | 官方 BIP-65 cl65 item 3：not already 已经是不变量 41 / not 165 |
+| A7428 | 高 | 看见CLTV比的是花费交易的nLockTime不是墙上现在 会被写成已经是不变量 165 interchangeable | 官方 BIP-65 cl65 item 3：not already settled |
+| A7429 | 中 | 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款会被抄进不确定 | 不抄。不写 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款。不另写 19 节 |
+| A7420 | 记录 | 会与 164 / 163 / 41 / 1530 / 1532 糊成「看见nLockTime能证明将来能花不是已经证明现在不能花就已经证明现在不能花 interchangeable、就已经是不变量 163 interchangeable、就已经是不变量 41 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-65 nlocktime-future-spend not already present-unspendable / not already 163 / not already 41 正式三事（164 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。164 cltv vs nlocktime bundled unbundling 续（1531 item 2） |
+| A7421 | 高 | 看见nLockTime能证明将来能花不是已经证明现在不能花 会被写成已经证明现在不能花 interchangeable / 163 interchangeable | 官方 BIP-65 cl65 item 2：not already 已经证明现在不能花 / not 163 |
+| A7422 | 高 | 看见nLockTime proving a future spend is not already proving it cannot be spent now 会被写成已经是不变量 163 interchangeable / 41 interchangeable | 官方 BIP-65 cl65 item 2：not already 已经是不变量 163 / not 41 |
+| A7423 | 高 | 看见nLockTime能证明将来能花不是已经证明现在不能花 会被写成已经是不变量 41 interchangeable | 官方 BIP-65 cl65 item 2：not already settled |
+| A7424 | 中 | 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款会被抄进不确定 | 不抄。不写 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款。不另写 19 节 |
+| A7415 | 记录 | 会与 164 / 165 / 163 / 1531 / 1532 糊成「看见脚本里的CLTV不是交易nLockTime已经把输出锁到那时就已经把输出锁住 interchangeable、就已经是不变量 165 interchangeable、就已经 164 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-65 script-cltv not already nlocktime-locked / not already 165 / not already 164-bundled 正式三事（164 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。164 cltv vs nlocktime bundled unbundling 启动（1530 item 1） |
+| A7416 | 高 | 看见脚本里的CLTV不是交易nLockTime已经把输出锁到那时 会被写成已经把输出锁住 interchangeable / 165 interchangeable | 官方 BIP-65 cl65 item 1：not already 已经把输出锁住 / not 165 |
+| A7417 | 高 | 看见script CLTV is not already an output locked by nLockTime 会被写成已经是不变量 165 interchangeable / 163 interchangeable | 官方 BIP-65 cl65 item 1：not already 已经是不变量 165 / not 163 |
+| A7418 | 高 | 看见脚本里的CLTV不是交易nLockTime已经把输出锁到那时 会被写成已经 164 bundled interchangeable | 官方 BIP-65 cl65 item 1：not already settled |
+| A7419 | 中 | 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款会被抄进不确定 | 不抄。不写 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款。不另写 19 节 |
 | A7410 | 记录 | 会与 165 / 41 / 164 / 1527 / 1528 糊成「看见CSV软分叉部署不是已经在讲CHECKSEQUENCEVERIFY操作码就已经是操作码 interchangeable、就已经是不变量 41 interchangeable、就已经是不变量 164 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。165 csv vs cltv bundled unbundling 完成（1529 item 3） |
 | A7411 | 高 | 看见CSV软分叉部署不是已经在讲CHECKSEQUENCEVERIFY操作码 会被写成已经是操作码 interchangeable / 41 interchangeable | 官方 BIP-112 csvd item 3：not already 已经是操作码 / not 41 |
 | A7412 | 高 | 看见the CSV soft-fork name is not already the CHECKSEQUENCEVERIFY opcode 会被写成已经是不变量 41 interchangeable / 164 interchangeable | 官方 BIP-112 csvd item 3：not already 已经是不变量 41 / not 164 |

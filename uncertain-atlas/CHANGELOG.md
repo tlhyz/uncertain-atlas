@@ -1,3 +1,15 @@
+## 2026-09-19（续 1649）
+
+- 不变量 1532；语料 C1510；模式 name-the-cl65-notclk-bar；反模式 cl65-notclk-sold-as-bundled；L10.3 第 1501 条。填 L2.1 BIP-65 cltv-compares-nlocktime not already wall-clock / not already 41 / not already 165 正式三事（164 余量）。164 cltv vs nlocktime bundled unbundling 完成（1532 item 3）。
+
+## 2026-09-19（续 1648）
+
+- 不变量 1531；语料 C1509；模式 name-the-cl65-notnow-bar；反模式 cl65-notnow-sold-as-bundled；L10.3 第 1500 条。填 L2.1 BIP-65 nlocktime-future-spend not already present-unspendable / not already 163 / not already 41 正式三事（164 余量）。164 cltv vs nlocktime bundled unbundling 续（1531 item 2）。
+
+## 2026-09-19（续 1647）
+
+- 不变量 1530；语料 C1508；模式 name-the-cl65-notfld-bar；反模式 cl65-notfld-sold-as-bundled；L10.3 第 1499 条。填 L2.1 BIP-65 script-cltv not already nlocktime-locked / not already 165 / not already 164-bundled 正式三事（164 余量）。164 cltv vs nlocktime bundled unbundling 启动（1530 item 1）。
+
 ## 2026-09-19（续 1646）
 
 - 不变量 1529；语料 C1507；模式 name-the-csvd-notdep-bar；反模式 csvd-notdep-sold-as-bundled；L10.3 第 1498 条。填 L2.1 BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）。165 csv vs cltv bundled unbundling 完成（1529 item 3）。
