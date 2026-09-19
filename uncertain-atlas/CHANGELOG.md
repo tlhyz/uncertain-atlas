@@ -1,3 +1,7 @@
+## 2026-09-19（续 828）
+
+- 不变量 711；语料 C688；模式 name-the-checktxresponse-notfork-bar；反模式 checktxresponse-notfork-sold-as-bundled；L10.3 第 680 条。填 L4.4 / CometBFT 档案各节点 Data 不一样不是已经分叉 not already fork / not already violation / not already ExecuteTxState 正式三事（317 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。317 checktxresponse vs exec bundled unbundling 续（711 item 2）。
+
 ## 2026-09-19（续 827）
 
 - 不变量 710；语料 C687；模式 name-the-checktxresponse-notused-bar；反模式 checktxresponse-notused-sold-as-bundled；L10.3 第 679 条。填 L4.4 / CometBFT 档案 CheckTx Data 不是已经被引擎用了 not already used by engine / not already ExecTxResult.Data / not already in LastResultsHash 正式三事（317 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。317 checktxresponse vs exec bundled unbundling 启动（710 item 1）。
