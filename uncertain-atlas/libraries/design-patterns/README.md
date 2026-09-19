@@ -1,3 +1,6 @@
+- [`name-the-cbht-notmat-bar.md`](name-the-cbht-notmat-bar.md) — BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）（不变量 1544）
+- [`name-the-cbht-notv9-bar.md`](name-the-cbht-notv9-bar.md) — BIP-34 block-version-bump not already bip9-bits / not already 171 / not already 172 正式三事（173 余量）（不变量 1543）
+- [`name-the-cbht-nothdr-bar.md`](name-the-cbht-nothdr-bar.md) — BIP-34 coinbase-height not already header-field / not already 171 / not already 173-bundled 正式三事（173 余量）（不变量 1542）
 - [`name-the-b32m-notutx-bar.md`](name-the-b32m-notutx-bar.md) — BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）（不变量 1541）
 - [`name-the-b32m-notv0-bar.md`](name-the-b32m-notv0-bar.md) — BIP-350 higher-ver-old-checksum not already legal / not already 174 / not already 152 正式三事（181 余量）（不变量 1540）
 - [`name-the-b32m-notold-bar.md`](name-the-b32m-notold-bar.md) — BIP-350 successor-pass not already old-bech32 / not already 174 / not already 181-bundled 正式三事（181 余量）（不变量 1539）

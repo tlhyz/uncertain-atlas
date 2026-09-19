@@ -1,3 +1,6 @@
+- [`cbht-notmat-sold-as-bundled.md`](cbht-notmat-sold-as-bundled.md) — 写了高度 被写成 coinbase 已经能花 / 就已经是 163 / 就已经是 144（不变量 1544）
+- [`cbht-notv9-sold-as-bundled.md`](cbht-notv9-sold-as-bundled.md) — 块 version 加大 被写成已经按 BIP-9 激活 / 就已经是 171 / 就已经是 172（不变量 1543）
+- [`cbht-nothdr-sold-as-bundled.md`](cbht-nothdr-sold-as-bundled.md) — coinbase 第一项写了高度 被写成头上已经有高度字段 / 就已经是 171 / 就已经 173 bundled（不变量 1542）
 - [`b32m-notutx-sold-as-bundled.md`](b32m-notutx-sold-as-bundled.md) — 看见后继地址串 被写成已经有 UTXO / 就已经是 174 / 就已经是 153（不变量 1541）
 - [`b32m-notv0-sold-as-bundled.md`](b32m-notv0-sold-as-bundled.md) — 更高版本过了旧校验 被写成已经合法 / 就已经是 174 / 就已经是 152（不变量 1540）
 - [`b32m-notold-sold-as-bundled.md`](b32m-notold-sold-as-bundled.md) — 后继校验过了 被写成已经是旧校验地址 / 就已经是 174 / 就已经 181 bundled（不变量 1539）

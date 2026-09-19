@@ -1,3 +1,15 @@
+## 2026-09-19（续 1661）
+
+- 不变量 1544；语料 C1522；模式 name-the-cbht-notmat-bar；反模式 cbht-notmat-sold-as-bundled；L10.3 第 1513 条。填 L3.1 BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）。173 coinbase height vs header bundled unbundling 完成（1544 item 3）。
+
+## 2026-09-19（续 1660）
+
+- 不变量 1543；语料 C1521；模式 name-the-cbht-notv9-bar；反模式 cbht-notv9-sold-as-bundled；L10.3 第 1512 条。填 L3.1 BIP-34 block-version-bump not already bip9-bits / not already 171 / not already 172 正式三事（173 余量）。173 coinbase height vs header bundled unbundling 续（1543 item 2）。
+
+## 2026-09-19（续 1659）
+
+- 不变量 1542；语料 C1520；模式 name-the-cbht-nothdr-bar；反模式 cbht-nothdr-sold-as-bundled；L10.3 第 1511 条。填 L3.1 BIP-34 coinbase-height not already header-field / not already 171 / not already 173-bundled 正式三事（173 余量）。173 coinbase height vs header bundled unbundling 启动（1542 item 1）。
+
 ## 2026-09-19（续 1658）
 
 - 不变量 1541；语料 C1519；模式 name-the-b32m-notutx-bar；反模式 b32m-notutx-sold-as-bundled；L10.3 第 1510 条。填 L3.7 BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）。181 bech32m vs bech32 bundled unbundling 完成（1541 item 3）。

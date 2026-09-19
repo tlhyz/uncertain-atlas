@@ -984,6 +984,9 @@
 - [`worked-example-p2sh13-notpaid-vs-bundled.md`](worked-example-p2sh13-notpaid-vs-bundled.md) — 旧软件报无效≠already paid/16/settled；≠297 bundled（不变量 1209）
 - [`worked-example-p2sh13-not16-vs-bundled.md`](worked-example-p2sh13-not16-vs-bundled.md) — 本页这种地址≠already redeem-script/16/settled；≠297 bundled（不变量 1208）
 - [`worked-example-p2sh-address-vs-redeem.md`](worked-example-p2sh-address-vs-redeem.md) — 本页这种地址 ≠ 已经是赎回脚本；旧软件报无效 ≠ 已经付过；只有地址 ≠ 已经知道付给谁（不变量 297）
+- [`worked-example-cbht-nothdr-vs-bundled.md`](worked-example-cbht-nothdr-vs-bundled.md) — BIP-34 coinbase-height not already header-field / not already 171 / not already 173-bundled 正式三事（173 余量）（不变量 1542）
+- [`worked-example-cbht-notv9-vs-bundled.md`](worked-example-cbht-notv9-vs-bundled.md) — BIP-34 block-version-bump not already bip9-bits / not already 171 / not already 172 正式三事（173 余量）（不变量 1543）
+- [`worked-example-cbht-notmat-vs-bundled.md`](worked-example-cbht-notmat-vs-bundled.md) — BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）（不变量 1544）
 - [`worked-example-coinbase-height-vs-header.md`](worked-example-coinbase-height-vs-header.md) — coinbase 第一项写了高度 ≠ 头上已经有高度字段；34 ≠ 9 ≠ 66（不变量 173）
 - [`worked-example-adut-notout-vs-bundled.md`](worked-example-adut-notout-vs-bundled.md) — BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）（不变量 1536）
 - [`worked-example-adut-notchk-vs-bundled.md`](worked-example-adut-notchk-vs-bundled.md) — BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）（不变量 1537）

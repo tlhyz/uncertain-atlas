@@ -1,3 +1,18 @@
+| A7485 | 记录 | 会与 173 / 163 / 144 / 1542 / 1543 糊成「看见写了高度不是coinbase已经能花就已经能花 interchangeable、就已经是不变量 163 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.1、L3.1。173 coinbase height vs header bundled unbundling 完成（1544 item 3） |
+| A7486 | 高 | 看见写了高度不是coinbase已经能花 会被写成已经能花 interchangeable / 163 interchangeable | 官方 BIP-34 cbht item 3：not already 已经能花 / not 163 |
+| A7487 | 高 | 看见writing the height is not already making the coinbase spendable 会被写成已经是不变量 163 interchangeable / 144 interchangeable | 官方 BIP-34 cbht item 3：not already 已经是不变量 163 / not 144 |
+| A7488 | 高 | 看见写了高度不是coinbase已经能花 会被写成已经是不变量 144 interchangeable | 官方 BIP-34 cbht item 3：not already settled |
+| A7489 | 中 | 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份会被抄进不确定 | 不抄。不写 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份。不另写 19 节 |
+| A7480 | 记录 | 会与 173 / 171 / 172 / 1542 / 1544 糊成「看见块version加大不是已经按BIP-9位向量激活就已经按BIP-9激活 interchangeable、就已经是不变量 171 interchangeable、就已经是不变量 172 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-34 block-version-bump not already bip9-bits / not already 171 / not already 172 正式三事（173 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.1、L3.1。173 coinbase height vs header bundled unbundling 续（1543 item 2） |
+| A7481 | 高 | 看见块version加大不是已经按BIP-9位向量激活 会被写成已经按BIP-9激活 interchangeable / 171 interchangeable | 官方 BIP-34 cbht item 2：not already 已经按BIP-9激活 / not 171 |
+| A7482 | 高 | 看见bumping block version is not already BIP-9 bitvector activation 会被写成已经是不变量 171 interchangeable / 172 interchangeable | 官方 BIP-34 cbht item 2：not already 已经是不变量 171 / not 172 |
+| A7483 | 高 | 看见块version加大不是已经按BIP-9位向量激活 会被写成已经是不变量 172 interchangeable | 官方 BIP-34 cbht item 2：not already settled |
+| A7484 | 中 | 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份会被抄进不确定 | 不抄。不写 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份。不另写 19 节 |
+| A7475 | 记录 | 会与 173 / 171 / 163 / 1543 / 1544 糊成「看见coinbase第一项写了高度不是头上已经有高度字段就已经有高度字段 interchangeable、就已经是不变量 171 interchangeable、就已经 173 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-34 coinbase-height not already header-field / not already 171 / not already 173-bundled 正式三事（173 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.1、L3.1。173 coinbase height vs header bundled unbundling 启动（1542 item 1） |
+| A7476 | 高 | 看见coinbase第一项写了高度不是头上已经有高度字段 会被写成已经有高度字段 interchangeable / 171 interchangeable | 官方 BIP-34 cbht item 1：not already 已经有高度字段 / not 171 |
+| A7477 | 高 | 看见writing height in coinbase is not already a height field in the header 会被写成已经是不变量 171 interchangeable / 163 interchangeable | 官方 BIP-34 cbht item 1：not already 已经是不变量 171 / not 163 |
+| A7478 | 高 | 看见coinbase第一项写了高度不是头上已经有高度字段 会被写成已经 173 bundled interchangeable | 官方 BIP-34 cbht item 1：not already settled |
+| A7479 | 中 | 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份会被抄进不确定 | 不抄。不写 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份。不另写 19 节 |
 | A7470 | 记录 | 会与 181 / 174 / 153 / 1539 / 1540 糊成「看见看见后继地址串不是已经有UTXO就已经有UTXO interchangeable、就已经是不变量 174 interchangeable、就已经是不变量 153 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。181 bech32m vs bech32 bundled unbundling 完成（1541 item 3） |
 | A7471 | 高 | 看见看见后继地址串不是已经有UTXO 会被写成已经有UTXO interchangeable / 174 interchangeable | 官方 BIP-350 b32m item 3：not already 已经有UTXO / not 174 |
 | A7472 | 高 | 看见seeing a Bech32m string is not already having a UTXO 会被写成已经是不变量 174 interchangeable / 153 interchangeable | 官方 BIP-350 b32m item 3：not already 已经是不变量 174 / not 153 |
