@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Taking Snapshots。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「拍了这个高度不是已经交差之后拍的 / 没停链不是已经一致 / 只留最近两份不是已经有了全部历史快照」，不是只有 AppHash 可信任，也不是 Offer 收下已经装完。不要另写怎样拍快照或怎样切块。324 snapshottake vs commit bundled unbundling 续（728 + 729）；精读 [`worked-example-snapshottake-notcommitted-vs-bundled.md`](worked-example-snapshottake-notcommitted-vs-bundled.md)（不变量 728 item 1）；[`worked-example-snapshottake-notconsistent-vs-bundled.md`](worked-example-snapshottake-notconsistent-vs-bundled.md)（不变量 729 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「拍了这个高度不是已经交差之后拍的 / 没停链不是已经一致 / 只留最近两份不是已经有了全部历史快照」，不是只有 AppHash 可信任，也不是 Offer 收下已经装完。不要另写怎样拍快照或怎样切块。324 snapshottake vs commit bundled unbundling 完成（728 + 729 + 730）；精读 [`worked-example-snapshottake-notcommitted-vs-bundled.md`](worked-example-snapshottake-notcommitted-vs-bundled.md)（不变量 728 item 1）；[`worked-example-snapshottake-notconsistent-vs-bundled.md`](worked-example-snapshottake-notconsistent-vs-bundled.md)（不变量 729 item 2）；[`worked-example-snapshottake-notretained-vs-bundled.md`](worked-example-snapshottake-notretained-vs-bundled.md)（不变量 730 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经在拍快照」，必须分开拍了这个高度是不是已经交差之后拍的、没停链是不是已经一致、只留最近两份是不是已经有了全部历史快照。可以跳过「看见拍了就已经交差之后拍」。不要另写怎样拍快照或怎样切块。不要把最近两份当不确定默认。 324 snapshottake vs commit bundled unbundling 续（728 + 729 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「已经在拍快照」，必须分开拍了这个高度是不是已经交差之后拍的、没停链是不是已经一致、只留最近两份是不是已经有了全部历史快照。可以跳过「看见拍了就已经交差之后拍」。不要另写怎样拍快照或怎样切块。不要把最近两份当不确定默认。 324 snapshottake vs commit bundled unbundling 完成（728 + 729 + 730）。
 
 ## 本页不抄
 
