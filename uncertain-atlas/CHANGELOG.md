@@ -1,3 +1,7 @@
+## 2026-09-19（续 845）
+
+- 不变量 728；语料 C705；模式 name-the-snapshottake-notcommitted-bar；反模式 snapshottake-notcommitted-sold-as-bundled；L10.3 第 697 条。填 L4.4 / CometBFT 档案 拍了这个高度不是已经交差之后拍的 not already post-commit / not already no-higher-height / not already height-isolated 正式三事（324 余量） / 实现表 / 05b / 共识专题 / 停链面地图。324 snapshottake vs commit bundled unbundling 启动（728 item 1）。
+
 ## 2026-09-19（续 844）
 
 - 不变量 727；语料 C704；模式 name-the-snapshotswitch-nothistory-bar；反模式 snapshotswitch-nothistory-sold-as-bundled；L10.3 第 696 条。填 L4.4 / CometBFT 档案 切进共识不是已经有完整历史 not already full-history / not already genesis-replay / not already no-extension-care 正式三事（323 余量） / 实现表 / 05b / 共识专题 / 停链面地图。323 snapshotswitch vs history bundled unbundling 完成（727 item 3）。
