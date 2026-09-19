@@ -1,3 +1,6 @@
+- [`name-the-twid-notmer-bar.md`](name-the-twid-notmer-bar.md) — BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）（不变量 1553）
+- [`name-the-twid-notchg-bar.md`](name-the-twid-notchg-bar.md) — BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）（不变量 1552）
+- [`name-the-twid-noteq-bar.md`](name-the-twid-noteq-bar.md) — BIP-141 txid not already wtxid / not already 248 / not already 152-bundled 正式三事（152 余量）（不变量 1551）
 - [`name-the-sder-notpol-bar.md`](name-the-sder-notpol-bar.md) — BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）（不变量 1550）
 - [`name-the-sder-notlib-bar.md`](name-the-sder-notlib-bar.md) — BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）（不变量 1549）
 - [`name-the-sder-notmath-bar.md`](name-the-sder-notmath-bar.md) — BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）（不变量 1548）

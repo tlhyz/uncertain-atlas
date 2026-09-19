@@ -1,3 +1,18 @@
+| A7530 | 记录 | 会与 152 / 145 / 174 / 1551 / 1552 糊成「看见头上的txid Merkle不是已经承诺wtxid就已经承诺wtxid interchangeable、就已经是不变量 145 interchangeable、就已经是不变量 174 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。152 txid vs wtxid bundled unbundling 完成（1553 item 3） |
+| A7531 | 高 | 看见头上的txid Merkle不是已经承诺wtxid 会被写成已经承诺wtxid interchangeable / 145 interchangeable | 官方 BIP-141 twid item 3：not already 已经承诺wtxid / not 145 |
+| A7532 | 高 | 看见the header txid Merkle is not already the wtxid commitment 会被写成已经是不变量 145 interchangeable / 174 interchangeable | 官方 BIP-141 twid item 3：not already 已经是不变量 145 / not 174 |
+| A7533 | 高 | 看见头上的txid Merkle不是已经承诺wtxid 会被写成已经是不变量 174 interchangeable | 官方 BIP-141 twid item 3：not already settled |
+| A7534 | 中 | 怎样改见证编码会被抄进不确定 | 不抄。不写 怎样改见证编码。不另写 19 节 |
+| A7525 | 记录 | 会与 152 / 144 / 12 / 1551 / 1553 糊成「看见改见证不是已经改交易身份就已经改txid interchangeable、就已经是不变量 144 interchangeable、就已经是不变量 12 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。152 txid vs wtxid bundled unbundling 续（1552 item 2） |
+| A7526 | 高 | 看见改见证不是已经改交易身份 会被写成已经改txid interchangeable / 144 interchangeable | 官方 BIP-141 twid item 2：not already 已经改txid / not 144 |
+| A7527 | 高 | 看见changing the witness is not already changing the txid 会被写成已经是不变量 144 interchangeable / 12 interchangeable | 官方 BIP-141 twid item 2：not already 已经是不变量 144 / not 12 |
+| A7528 | 高 | 看见改见证不是已经改交易身份 会被写成已经是不变量 12 interchangeable | 官方 BIP-141 twid item 2：not already settled |
+| A7529 | 中 | 怎样改见证编码会被抄进不确定 | 不抄。不写 怎样改见证编码。不另写 19 节 |
+| A7520 | 记录 | 会与 152 / 248 / 144 / 1552 / 1553 糊成「看见txid不是wtxid就已经是wtxid interchangeable、就已经是不变量 248 interchangeable、就已经 152 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-141 txid not already wtxid / not already 248 / not already 152-bundled 正式三事（152 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。152 txid vs wtxid bundled unbundling 启动（1551 item 1） |
+| A7521 | 高 | 看见txid不是wtxid 会被写成已经是wtxid interchangeable / 248 interchangeable | 官方 BIP-141 twid item 1：not already 已经是wtxid / not 248 |
+| A7522 | 高 | 看见txid is not already wtxid 会被写成已经是不变量 248 interchangeable / 144 interchangeable | 官方 BIP-141 twid item 1：not already 已经是不变量 248 / not 144 |
+| A7523 | 高 | 看见txid不是wtxid 会被写成已经 152 bundled interchangeable | 官方 BIP-141 twid item 1：not already settled |
+| A7524 | 中 | 怎样改见证编码会被抄进不确定 | 不抄。不写 怎样改见证编码。不另写 19 节 |
 | A7515 | 记录 | 会与 172 / 144 / 171 / 1548 / 1549 糊成「看见转发策略已经要DER不是共识已经要就共识已经要 interchangeable、就已经是不变量 144 interchangeable、就已经是不变量 171 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M1.4、L1.4。172 valid vs der bundled unbundling 完成（1550 item 3） |
 | A7516 | 高 | 看见转发策略已经要DER不是共识已经要 会被写成共识已经要 interchangeable / 144 interchangeable | 官方 BIP-66 sder item 3：not already 共识已经要 / not 144 |
 | A7517 | 高 | 看见relay already requiring DER is not already consensus requiring it 会被写成已经是不变量 144 interchangeable / 171 interchangeable | 官方 BIP-66 sder item 3：not already 已经是不变量 144 / not 171 |

@@ -812,6 +812,9 @@
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)
+- [`worked-example-twid-noteq-vs-bundled.md`](worked-example-twid-noteq-vs-bundled.md) — BIP-141 txid not already wtxid / not already 248 / not already 152-bundled 正式三事（152 余量）（不变量 1551）
+- [`worked-example-twid-notchg-vs-bundled.md`](worked-example-twid-notchg-vs-bundled.md) — BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）（不变量 1552）
+- [`worked-example-twid-notmer-vs-bundled.md`](worked-example-twid-notmer-vs-bundled.md) — BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）（不变量 1553）
 - [`worked-example-txid-vs-wtxid.md`](worked-example-txid-vs-wtxid.md) — txid ≠ wtxid；改见证 ≠ 已经改交易身份；头上的 txid Merkle ≠ 已经承诺 wtxid（不变量 152）
 - [`worked-example-keypath-vs-scriptpath.md`](worked-example-keypath-vs-scriptpath.md) — 钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本（不变量 153）
 - [`worked-example-tapscript-vs-scriptpath.md`](worked-example-tapscript-vs-scriptpath.md) — 走脚本路径 ≠ 已经是 tapscript 语义；遇见成功操作码 ≠ 已经执行完；342 ≠ 341 ≠ 141 ≠ 16（不变量 189）

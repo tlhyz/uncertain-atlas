@@ -1,3 +1,15 @@
+## 2026-09-19（续 1670）
+
+- 不变量 1553；语料 C1531；模式 name-the-twid-notmer-bar；反模式 twid-notmer-sold-as-bundled；L10.3 第 1522 条。填 L3.7 BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）。152 txid vs wtxid bundled unbundling 完成（1553 item 3）。
+
+## 2026-09-19（续 1669）
+
+- 不变量 1552；语料 C1530；模式 name-the-twid-notchg-bar；反模式 twid-notchg-sold-as-bundled；L10.3 第 1521 条。填 L3.7 BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）。152 txid vs wtxid bundled unbundling 续（1552 item 2）。
+
+## 2026-09-19（续 1668）
+
+- 不变量 1551；语料 C1529；模式 name-the-twid-noteq-bar；反模式 twid-noteq-sold-as-bundled；L10.3 第 1520 条。填 L3.7 BIP-141 txid not already wtxid / not already 248 / not already 152-bundled 正式三事（152 余量）。152 txid vs wtxid bundled unbundling 启动（1551 item 1）。
+
 ## 2026-09-19（续 1667）
 
 - 不变量 1550；语料 C1528；模式 name-the-sder-notpol-bar；反模式 sder-notpol-sold-as-bundled；L10.3 第 1519 条。填 L1.4 BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）。172 valid vs der bundled unbundling 完成（1550 item 3）。

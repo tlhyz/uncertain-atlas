@@ -1,3 +1,6 @@
+- [`twid-notmer-sold-as-bundled.md`](twid-notmer-sold-as-bundled.md) — 头上的 txid Merkle 被写成已经承诺 wtxid / 就已经是 145 / 就已经是 174（不变量 1553）
+- [`twid-notchg-sold-as-bundled.md`](twid-notchg-sold-as-bundled.md) — 改见证 被写成已经改 txid / 就已经是 144 / 就已经是 12（不变量 1552）
+- [`twid-noteq-sold-as-bundled.md`](twid-noteq-sold-as-bundled.md) — txid 被写成已经是 wtxid / 就已经是 248 / 就已经 152 bundled（不变量 1551）
 - [`sder-notpol-sold-as-bundled.md`](sder-notpol-sold-as-bundled.md) — 转发策略已经要 DER 被写成共识已经要 / 就已经是 144 / 就已经是 171（不变量 1550）
 - [`sder-notlib-sold-as-bundled.md`](sder-notlib-sold-as-bundled.md) — 库接受某种变形 被写成共识已经接受 / 就已经是 3 / 就已经是 152（不变量 1549）
 - [`sder-notmath-sold-as-bundled.md`](sder-notmath-sold-as-bundled.md) — ECDSA 验得过 被写成已经是严格 DER / 就已经是 144 / 就已经 172 bundled（不变量 1548）
