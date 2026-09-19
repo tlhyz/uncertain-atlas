@@ -1,3 +1,7 @@
+## 2026-09-19（续 830）
+
+- 不变量 713；语料 C690；模式 name-the-validatorupdate-notempty-bar；反模式 validatorupdate-notempty-sold-as-bundled；L10.3 第 682 条。填 L4.4 / L4.5 / CometBFT 档案 InitChain 空名单不是已经没有集合 not already no set / not already deleted genesis / not already app empty set 正式三事（318 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。318 validatorupdate vs set bundled unbundling 启动（713 item 1）。
+
 ## 2026-09-19（续 829）
 
 - 不变量 712；语料 C689；模式 name-the-checktxresponse-notpriority-bar；反模式 checktxresponse-notpriority-sold-as-bundled；L10.3 第 681 条。填 L4.4 / CometBFT 档案 Priority 不是已经是共识顺序 not already consensus order / not already in block / not already removed from mempool 正式三事（317 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。317 checktxresponse vs exec bundled unbundling 完成（710 + 711 + 712）。
