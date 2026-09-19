@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 InitChain 空名单不是已经没有集合 not already no set / not already deleted genesis / not already app empty set 正式三事（318 余量），必须分开回了空 是不是 already no set interchangeable / 318 validatorupdate bundled interchangeable / validatorupdate-sold-as-set interchangeable、没回人 是不是 already deleted genesis interchangeable、能设初始集合 是不是 already app empty set interchangeable。可以跳过「看见回了空就已经没有集合 interchangeable / 就已经删掉创世名单 interchangeable / 就已经和创世 validators 空同一句 interchangeable」。不要另写怎样编更新。318 validatorupdate vs set bundled unbundling 在本页 item 1 完成；续 [`worked-example-validatorupdate-notdup-vs-bundled.md`](worked-example-validatorupdate-notdup-vs-bundled.md)（不变量 714 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 InitChain 空名单不是已经没有集合 not already no set / not already deleted genesis / not already app empty set 正式三事（318 余量），必须分开回了空 是不是 already no set interchangeable / 318 validatorupdate bundled interchangeable / validatorupdate-sold-as-set interchangeable、没回人 是不是 already deleted genesis interchangeable、能设初始集合 是不是 already app empty set interchangeable。可以跳过「看见回了空就已经没有集合 interchangeable / 就已经删掉创世名单 interchangeable / 就已经和创世 validators 空同一句 interchangeable」。不要另写怎样编更新。318 validatorupdate vs set bundled unbundling 在本页 item 1 完成；续 [`worked-example-validatorupdate-notdup-vs-bundled.md`](worked-example-validatorupdate-notdup-vs-bundled.md)（不变量 714 item 2）。
 
 ## 本页不抄
 

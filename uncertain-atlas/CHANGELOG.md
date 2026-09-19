@@ -1,3 +1,7 @@
+## 2026-09-19（续 831）
+
+- 不变量 714；语料 C691；模式 name-the-validatorupdate-notdup-bar；反模式 validatorupdate-notdup-sold-as-bundled；L10.3 第 683 条。填 L4.4 / L4.5 / CometBFT 档案同一批重复公钥不是已经能恢复 not already last-wins / not already recoverable / not already two rows 正式三事（318 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。318 validatorupdate vs set bundled unbundling 续（714 item 2）。
+
 ## 2026-09-19（续 830）
 
 - 不变量 713；语料 C690；模式 name-the-validatorupdate-notempty-bar；反模式 validatorupdate-notempty-sold-as-bundled；L10.3 第 682 条。填 L4.4 / L4.5 / CometBFT 档案 InitChain 空名单不是已经没有集合 not already no set / not already deleted genesis / not already app empty set 正式三事（318 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。318 validatorupdate vs set bundled unbundling 启动（713 item 1）。
