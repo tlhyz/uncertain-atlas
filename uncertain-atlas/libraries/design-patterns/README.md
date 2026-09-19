@@ -1,3 +1,4 @@
+- [`name-the-snapshottake-notconsistent-bar.md`](name-the-snapshottake-notconsistent-bar.md) — 没停链不是已经一致 not already consistent / not already async-safe / not already deterministic-bytes 正式三事（324 余量）（不变量 729）
 - [`name-the-snapshottake-notcommitted-bar.md`](name-the-snapshottake-notcommitted-bar.md) — 拍了这个高度不是已经交差之后拍的 not already post-commit / not already no-higher-height / not already height-isolated 正式三事（324 余量）（不变量 728）
 - [`name-the-snapshotswitch-nothistory-bar.md`](name-the-snapshotswitch-nothistory-bar.md) — 切进共识不是已经有完整历史 not already full-history / not already genesis-replay / not already no-extension-care 正式三事（323 余量）（不变量 727）
 - [`name-the-snapshotswitch-notversion-bar.md`](name-the-snapshotswitch-notversion-bar.md) — AppHash 对上不是已经版本也对上 not already version-matched / not already current-header / not already this-header-settled 正式三事（323 余量）（不变量 726）
