@@ -1,3 +1,18 @@
+| A7185 | 记录 | 会与 205 / 27 / 134 / 1482 / 1483 糊成「看见信标状态里的前瞻名单不是已经是based预确认就已经是based预确认 interchangeable、就已经更安全 interchangeable、就已经是不变量 134 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7917 lookahead-list not already preconfirm / not already safer / not already 134 正式三事（205 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。205 lookahead vs randao bundled unbundling 完成（1484 item 3） |
+| A7186 | 高 | 看见信标状态里的前瞻名单不是已经是based预确认 会被写成已经是based预确认 interchangeable / 27 interchangeable | 官方 EIP-7917 lkah item 3：not already 已经是based预确认 / not 27 |
+| A7187 | 高 | 看见lookahead list is not already based preconfirmations 会被写成已经更安全 interchangeable / 134 interchangeable | 官方 EIP-7917 lkah item 3：not already 已经更安全 / not 134 |
+| A7188 | 高 | 看见信标状态里的前瞻名单不是已经是based预确认 会被写成已经是不变量 134 interchangeable | 官方 EIP-7917 lkah item 3：not already settled |
+| A7189 | 中 | 怎样打磨有效余额会被抄进不确定 | 不抄。不写 怎样打磨有效余额。不另写 19 节 |
+| A7180 | 记录 | 会与 205 / 196 / 27 / 1482 / 1484 糊成「看见有效余额还能在本纪元变不是种子已知就已经排完就已经排完 interchangeable、就已经是不变量 196 interchangeable、就已经是不变量 27 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7917 balance-still-moves not already scheduled / not already 196 / not already 27 正式三事（205 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。205 lookahead vs randao bundled unbundling 续（1483 item 2） |
+| A7181 | 高 | 看见有效余额还能在本纪元变不是种子已知就已经排完 会被写成已经排完 interchangeable / 196 interchangeable | 官方 EIP-7917 lkah item 2：not already 已经排完 / not 196 |
+| A7182 | 高 | 看见balances still moving is not already a finished schedule 会被写成已经是不变量 196 interchangeable / 27 interchangeable | 官方 EIP-7917 lkah item 2：not already 已经是不变量 196 / not 27 |
+| A7183 | 高 | 看见有效余额还能在本纪元变不是种子已知就已经排完 会被写成已经是不变量 27 interchangeable | 官方 EIP-7917 lkah item 2：not already settled |
+| A7184 | 中 | 怎样打磨有效余额会被抄进不确定 | 不抄。不写 怎样打磨有效余额。不另写 19 节 |
+| A7175 | 记录 | 会与 205 / 157 / 196 / 1483 / 1484 糊成「看见RANDAO种子已经提前知道不是已经锁死下一纪元出块日程就已经锁死下一纪元出块日程 interchangeable、就已经是不变量 157 interchangeable、就已经 205 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7917 seed-known not already schedule-locked / not already 157 / not already 205-bundled 正式三事（205 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。205 lookahead vs randao bundled unbundling 启动（1482 item 1） |
+| A7176 | 高 | 看见RANDAO种子已经提前知道不是已经锁死下一纪元出块日程 会被写成已经锁死下一纪元出块日程 interchangeable / 157 interchangeable | 官方 EIP-7917 lkah item 1：not already 已经锁死下一纪元出块日程 / not 157 |
+| A7177 | 高 | 看见known RANDAO seed is not already a locked proposer schedule 会被写成已经是不变量 157 interchangeable / 196 interchangeable | 官方 EIP-7917 lkah item 1：not already 已经是不变量 157 / not 196 |
+| A7178 | 高 | 看见RANDAO种子已经提前知道不是已经锁死下一纪元出块日程 会被写成已经 205 bundled interchangeable | 官方 EIP-7917 lkah item 1：not already settled |
+| A7179 | 中 | 怎样打磨有效余额会被抄进不确定 | 不抄。不写 怎样打磨有效余额。不另写 19 节 |
 | A7170 | 记录 | 会与 213 / 192 / 6 / 1479 / 1480 糊成「看见分叉两边都能重放不是已经丢资金就已经丢资金 interchangeable、就已经更安全 interchangeable、就已经是不变量 6 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7044 replay-both not already lost-funds / not already safer / not already 6 正式三事（213 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。213 exit-domain vs fork bundled unbundling 完成（1481 item 3） |
 | A7171 | 高 | 看见分叉两边都能重放不是已经丢资金 会被写成已经丢资金 interchangeable / 192 interchangeable | 官方 EIP-7044 exdom item 3：not already 已经丢资金 / not 192 |
 | A7172 | 高 | 看见replay on both forks is not already lost funds 会被写成已经更安全 interchangeable / 6 interchangeable | 官方 EIP-7044 exdom item 3：not already 已经更安全 / not 6 |

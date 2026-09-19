@@ -1,3 +1,15 @@
+## 2026-09-19（续 1601）
+
+- 不变量 1484；语料 C1462；模式 name-the-lkah-notpc-bar；反模式 lkah-notpc-sold-as-bundled；L10.3 第 1453 条。填 L5.2 EIP-7917 lookahead-list not already preconfirm / not already safer / not already 134 正式三事（205 余量）。205 lookahead vs randao bundled unbundling 完成（1484 item 3）。
+
+## 2026-09-19（续 1600）
+
+- 不变量 1483；语料 C1461；模式 name-the-lkah-notbal-bar；反模式 lkah-notbal-sold-as-bundled；L10.3 第 1452 条。填 L5.2 EIP-7917 balance-still-moves not already scheduled / not already 196 / not already 27 正式三事（205 余量）。205 lookahead vs randao bundled unbundling 续（1483 item 2）。
+
+## 2026-09-19（续 1599）
+
+- 不变量 1482；语料 C1460；模式 name-the-lkah-notlock-bar；反模式 lkah-notlock-sold-as-bundled；L10.3 第 1451 条。填 L5.2 EIP-7917 seed-known not already schedule-locked / not already 157 / not already 205-bundled 正式三事（205 余量）。205 lookahead vs randao bundled unbundling 启动（1482 item 1）。
+
 ## 2026-09-19（续 1598）
 
 - 不变量 1481；语料 C1459；模式 name-the-exdom-notloss-bar；反模式 exdom-notloss-sold-as-bundled；L10.3 第 1450 条。填 L5.2 EIP-7044 replay-both not already lost-funds / not already safer / not already 6 正式三事（213 余量）。213 exit-domain vs fork bundled unbundling 完成（1481 item 3）。

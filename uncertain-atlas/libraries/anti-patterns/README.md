@@ -1,3 +1,6 @@
+- [`lkah-notpc-sold-as-bundled.md`](lkah-notpc-sold-as-bundled.md) — 前瞻名单 被写成已经是预确认 / 就已经更安全 / 就已经是 134（不变量 1484）
+- [`lkah-notbal-sold-as-bundled.md`](lkah-notbal-sold-as-bundled.md) — 余额还能变 被写成已经排完 / 就已经是 196 / 就已经是 27（不变量 1483）
+- [`lkah-notlock-sold-as-bundled.md`](lkah-notlock-sold-as-bundled.md) — 种子已知 被写成已经锁死日程 / 就已经是 157 / 就已经 205 bundled（不变量 1482）
 - [`exdom-notloss-sold-as-bundled.md`](exdom-notloss-sold-as-bundled.md) — 两边能重放 被写成已经丢资金 / 就已经更安全 / 就已经是 6（不变量 1481）
 - [`exdom-notel-sold-as-bundled.md`](exdom-notel-sold-as-bundled.md) — 域锁 被写成已经改了执行层 / 就已经是 154 / 就已经是 192（不变量 1480）
 - [`exdom-notperm-sold-as-bundled.md`](exdom-notperm-sold-as-bundled.md) — 签过的自愿退出 被写成已经永远有效 / 就已经是 193 / 就已经 213 bundled（不变量 1479）

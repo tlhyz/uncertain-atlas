@@ -87,7 +87,7 @@
 | 经济 | 不把预确认产品句写成已经随本页上线 |
 
 **推断：** 产品句若只写「出块人提前看得见了」，读者会把种子已知听成日程已锁，或把字段听成已经在做预确认。  
-**建议：** 第一版可以不抄信标出块日程。若对照，必须分开种子、有效余额、预存名单、应用层证明。不要发明「看见 7917 就已经锁死下一纪元出块人」。不要抄种子前瞻纪元数 / 余额台阶。不要把 7917 写成 4399。
+**建议：** 第一版可以不抄信标出块日程。若对照，必须分开种子、有效余额、预存名单、应用层证明。可以跳过「看见 7917 就已经锁死下一纪元出块人」。205 lookahead vs randao bundled unbundling 完成（1482 item 1 / 1483 item 2 / 1484 item 3）；精读 [`worked-example-lkah-notlock-vs-bundled.md`](worked-example-lkah-notlock-vs-bundled.md)（不变量 1482 item 1）、[`worked-example-lkah-notbal-vs-bundled.md`](worked-example-lkah-notbal-vs-bundled.md)（不变量 1483 item 2）、[`worked-example-lkah-notpc-vs-bundled.md`](worked-example-lkah-notpc-vs-bundled.md)（不变量 1484 item 3）。不要发明「看见 7917 就已经锁死下一纪元出块人」。不要抄种子前瞻纪元数 / 余额台阶。不要把 7917 写成 4399。
 
 ---
 
