@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ListSnapshots 回了不是已经有了全部快照 not already all-snapshots / not already no-cap / not already product-default-10 正式三事（322 余量），必须分开问了邻居 是不是 already all-snapshots interchangeable / 322 snapshotdiscover bundled interchangeable / snapshotdiscover-sold-as-listed interchangeable、回了 是不是 already no-cap interchangeable、看见 10 是不是 already product-default-10 interchangeable。可以跳过「看见问了邻居就已经有了全部快照 interchangeable / 就已经没有上限 interchangeable / 就已经是不确定默认 interchangeable」。不要另写怎样列快照。不要把每节点 10 份当不确定默认。322 snapshotdiscover vs offer bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotdiscover-notaccepted-vs-bundled.md`](worked-example-snapshotdiscover-notaccepted-vs-bundled.md)（不变量 723 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 ListSnapshots 回了不是已经有了全部快照 not already all-snapshots / not already no-cap / not already product-default-10 正式三事（322 余量），必须分开问了邻居 是不是 already all-snapshots interchangeable / 322 snapshotdiscover bundled interchangeable / snapshotdiscover-sold-as-listed interchangeable、回了 是不是 already no-cap interchangeable、看见 10 是不是 already product-default-10 interchangeable。可以跳过「看见问了邻居就已经有了全部快照 interchangeable / 就已经没有上限 interchangeable / 就已经是不确定默认 interchangeable」。不要另写怎样列快照。不要把每节点 10 份当不确定默认。322 snapshotdiscover vs offer bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotdiscover-notaccepted-vs-bundled.md`](worked-example-snapshotdiscover-notaccepted-vs-bundled.md)（不变量 723 item 2）。
 
 ## 本页不抄
 
