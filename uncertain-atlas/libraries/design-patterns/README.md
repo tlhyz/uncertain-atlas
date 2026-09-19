@@ -1,3 +1,6 @@
+- [`name-the-bfmkt-notmev-bar.md`](name-the-bfmkt-notmev-bar.md) — EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）（不变量 1487）
+- [`name-the-bfmkt-notmkt-bar.md`](name-the-bfmkt-notmkt-bar.md) — EIP-1559 elastic-size not already market-complete / not already 101 / not already 27 正式三事（158 余量）（不变量 1486）
+- [`name-the-bfmkt-notpay-bar.md`](name-the-bfmkt-notpay-bar.md) — EIP-1559 basefee-burned not already paid-to-proposer / not already 145 / not already 158-bundled 正式三事（158 余量）（不变量 1485）
 - [`name-the-lkah-notpc-bar.md`](name-the-lkah-notpc-bar.md) — EIP-7917 lookahead-list not already preconfirm / not already safer / not already 134 正式三事（205 余量）（不变量 1484）
 - [`name-the-lkah-notbal-bar.md`](name-the-lkah-notbal-bar.md) — EIP-7917 balance-still-moves not already scheduled / not already 196 / not already 27 正式三事（205 余量）（不变量 1483）
 - [`name-the-lkah-notlock-bar.md`](name-the-lkah-notlock-bar.md) — EIP-7917 seed-known not already schedule-locked / not already 157 / not already 205-bundled 正式三事（205 余量）（不变量 1482）

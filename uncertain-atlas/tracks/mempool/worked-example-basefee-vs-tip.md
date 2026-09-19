@@ -85,7 +85,7 @@
 | 经济 | 烧掉 ≠ 出块者进账；降低 MEV 风险 ≠ 已经解决 |
 
 **推断：** 产品句若只写「1559 之后费公平了」，读者会把烧掉听成插队消失。  
-**建议：** 第一版可以不抄烧掉基础费。若做费用市场，必须写清基础费和小费各给谁，并写清弹性只应对短期尖峰。不要抄倍数。不要发明「烧掉 = MEV 已解决」。
+**建议：** 第一版可以不抄烧掉基础费。若做费用市场，必须写清基础费和小费各给谁，并写清弹性只应对短期尖峰。不要抄倍数。可以跳过「烧掉 = MEV 已解决」。158 basefee vs tip bundled unbundling 完成（1485 item 1 / 1486 item 2 / 1487 item 3）；精读 [`worked-example-bfmkt-notpay-vs-bundled.md`](worked-example-bfmkt-notpay-vs-bundled.md)（不变量 1485 item 1）、[`worked-example-bfmkt-notmkt-vs-bundled.md`](worked-example-bfmkt-notmkt-vs-bundled.md)（不变量 1486 item 2）、[`worked-example-bfmkt-notmev-vs-bundled.md`](worked-example-bfmkt-notmev-vs-bundled.md)（不变量 1487 item 3）。不要发明「烧掉 = MEV 已解决」。
 
 ---
 

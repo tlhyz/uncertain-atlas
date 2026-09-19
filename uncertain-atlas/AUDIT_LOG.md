@@ -1,3 +1,18 @@
+| A7200 | 记录 | 会与 158 / 167 / 187 / 1485 / 1486 糊成「看见烧掉不是MEV已经解决就已经解决MEV interchangeable、就已经更安全 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。158 basefee vs tip bundled unbundling 完成（1487 item 3） |
+| A7201 | 高 | 看见烧掉不是MEV已经解决 会被写成已经解决MEV interchangeable / 167 interchangeable | 官方 EIP-1559 bfmkt item 3：not already 已经解决MEV / not 167 |
+| A7202 | 高 | 看见burning is not already MEV solved 会被写成已经更安全 interchangeable / 187 interchangeable | 官方 EIP-1559 bfmkt item 3：not already 已经更安全 / not 187 |
+| A7203 | 高 | 看见烧掉不是MEV已经解决 会被写成已经是不变量 144 interchangeable | 官方 EIP-1559 bfmkt item 3：not already settled |
+| A7204 | 中 | 怎样抬基础费、怎样排空块、怎样抢排序会被抄进不确定 | 不抄。不写 怎样抬基础费、怎样排空块、怎样抢排序。不另写 19 节 |
+| A7195 | 记录 | 会与 158 / 101 / 27 / 1485 / 1487 糊成「看见弹性块大小不是整套费用市场已经齐就已经齐 interchangeable、就已经是不变量 101 interchangeable、就已经是不变量 27 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1559 elastic-size not already market-complete / not already 101 / not already 27 正式三事（158 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。158 basefee vs tip bundled unbundling 续（1486 item 2） |
+| A7196 | 高 | 看见弹性块大小不是整套费用市场已经齐 会被写成已经齐 interchangeable / 101 interchangeable | 官方 EIP-1559 bfmkt item 2：not already 已经齐 / not 101 |
+| A7197 | 高 | 看见elastic block size is not already a complete fee market 会被写成已经是不变量 101 interchangeable / 27 interchangeable | 官方 EIP-1559 bfmkt item 2：not already 已经是不变量 101 / not 27 |
+| A7198 | 高 | 看见弹性块大小不是整套费用市场已经齐 会被写成已经是不变量 27 interchangeable | 官方 EIP-1559 bfmkt item 2：not already settled |
+| A7199 | 中 | 怎样抬基础费、怎样排空块、怎样抢排序会被抄进不确定 | 不抄。不写 怎样抬基础费、怎样排空块、怎样抢排序。不另写 19 节 |
+| A7190 | 记录 | 会与 158 / 145 / 144 / 1486 / 1487 糊成「看见基础费烧掉不是已经给了出块者就已经给了出块者 interchangeable、就已经是不变量 145 interchangeable、就已经 158 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1559 basefee-burned not already paid-to-proposer / not already 145 / not already 158-bundled 正式三事（158 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。158 basefee vs tip bundled unbundling 启动（1485 item 1） |
+| A7191 | 高 | 看见基础费烧掉不是已经给了出块者 会被写成已经给了出块者 interchangeable / 145 interchangeable | 官方 EIP-1559 bfmkt item 1：not already 已经给了出块者 / not 145 |
+| A7192 | 高 | 看见burned basefee is not already paid to the proposer 会被写成已经是不变量 145 interchangeable / 144 interchangeable | 官方 EIP-1559 bfmkt item 1：not already 已经是不变量 145 / not 144 |
+| A7193 | 高 | 看见基础费烧掉不是已经给了出块者 会被写成已经 158 bundled interchangeable | 官方 EIP-1559 bfmkt item 1：not already settled |
+| A7194 | 中 | 怎样抬基础费、怎样排空块、怎样抢排序会被抄进不确定 | 不抄。不写 怎样抬基础费、怎样排空块、怎样抢排序。不另写 19 节 |
 | A7185 | 记录 | 会与 205 / 27 / 134 / 1482 / 1483 糊成「看见信标状态里的前瞻名单不是已经是based预确认就已经是based预确认 interchangeable、就已经更安全 interchangeable、就已经是不变量 134 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7917 lookahead-list not already preconfirm / not already safer / not already 134 正式三事（205 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。205 lookahead vs randao bundled unbundling 完成（1484 item 3） |
 | A7186 | 高 | 看见信标状态里的前瞻名单不是已经是based预确认 会被写成已经是based预确认 interchangeable / 27 interchangeable | 官方 EIP-7917 lkah item 3：not already 已经是based预确认 / not 27 |
 | A7187 | 高 | 看见lookahead list is not already based preconfirmations 会被写成已经更安全 interchangeable / 134 interchangeable | 官方 EIP-7917 lkah item 3：not already 已经更安全 / not 134 |

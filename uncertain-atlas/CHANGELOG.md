@@ -1,3 +1,15 @@
+## 2026-09-19（续 1604）
+
+- 不变量 1487；语料 C1465；模式 name-the-bfmkt-notmev-bar；反模式 bfmkt-notmev-sold-as-bundled；L10.3 第 1456 条。填 L5.1 EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）。158 basefee vs tip bundled unbundling 完成（1487 item 3）。
+
+## 2026-09-19（续 1603）
+
+- 不变量 1486；语料 C1464；模式 name-the-bfmkt-notmkt-bar；反模式 bfmkt-notmkt-sold-as-bundled；L10.3 第 1455 条。填 L5.1 EIP-1559 elastic-size not already market-complete / not already 101 / not already 27 正式三事（158 余量）。158 basefee vs tip bundled unbundling 续（1486 item 2）。
+
+## 2026-09-19（续 1602）
+
+- 不变量 1485；语料 C1463；模式 name-the-bfmkt-notpay-bar；反模式 bfmkt-notpay-sold-as-bundled；L10.3 第 1454 条。填 L5.1 EIP-1559 basefee-burned not already paid-to-proposer / not already 145 / not already 158-bundled 正式三事（158 余量）。158 basefee vs tip bundled unbundling 启动（1485 item 1）。
+
 ## 2026-09-19（续 1601）
 
 - 不变量 1484；语料 C1462；模式 name-the-lkah-notpc-bar；反模式 lkah-notpc-sold-as-bundled；L10.3 第 1453 条。填 L5.2 EIP-7917 lookahead-list not already preconfirm / not already safer / not already 134 正式三事（205 余量）。205 lookahead vs randao bundled unbundling 完成（1484 item 3）。

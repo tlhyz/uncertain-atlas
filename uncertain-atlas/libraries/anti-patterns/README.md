@@ -1,3 +1,6 @@
+- [`bfmkt-notmev-sold-as-bundled.md`](bfmkt-notmev-sold-as-bundled.md) — 烧掉 被写成已经解决MEV / 就已经更安全 / 就已经是 144（不变量 1487）
+- [`bfmkt-notmkt-sold-as-bundled.md`](bfmkt-notmkt-sold-as-bundled.md) — 弹性块大小 被写成已经齐 / 就已经是 101 / 就已经是 27（不变量 1486）
+- [`bfmkt-notpay-sold-as-bundled.md`](bfmkt-notpay-sold-as-bundled.md) — 基础费烧掉 被写成已经给了出块者 / 就已经是 145 / 就已经 158 bundled（不变量 1485）
 - [`lkah-notpc-sold-as-bundled.md`](lkah-notpc-sold-as-bundled.md) — 前瞻名单 被写成已经是预确认 / 就已经更安全 / 就已经是 134（不变量 1484）
 - [`lkah-notbal-sold-as-bundled.md`](lkah-notbal-sold-as-bundled.md) — 余额还能变 被写成已经排完 / 就已经是 196 / 就已经是 27（不变量 1483）
 - [`lkah-notlock-sold-as-bundled.md`](lkah-notlock-sold-as-bundled.md) — 种子已知 被写成已经锁死日程 / 就已经是 157 / 就已经 205 bundled（不变量 1482）
