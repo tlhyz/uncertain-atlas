@@ -1,3 +1,15 @@
+## 2026-09-19（续 1643）
+
+- 不变量 1526；语料 C1504；模式 name-the-rbfs-notjoin-bar；反模式 rbfs-notjoin-sold-as-bundled；L10.3 第 1495 条。填 L3.2 BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）。166 rbf-signal vs replaced bundled unbundling 完成（1526 item 3）。
+
+## 2026-09-19（续 1642）
+
+- 不变量 1525；语料 C1503；模式 name-the-rbfs-notlock-bar；反模式 rbfs-notlock-sold-as-bundled；L10.3 第 1494 条。填 L3.2 BIP-125 nsequence-signal not already relative-lock / not already 165 / not already 164 正式三事（166 余量）。166 rbf-signal vs replaced bundled unbundling 续（1525 item 2）。
+
+## 2026-09-19（续 1641）
+
+- 不变量 1524；语料 C1502；模式 name-the-rbfs-notrep-bar；反模式 rbfs-notrep-sold-as-bundled；L10.3 第 1493 条。填 L3.2 BIP-125 opt-in-signal not already replaced / not already 144 / not already 166-bundled 正式三事（166 余量）。166 rbf-signal vs replaced bundled unbundling 启动（1524 item 1）。
+
 ## 2026-09-19（续 1640）
 
 - 不变量 1523；语料 C1501；模式 name-the-polc-notfee-bar；反模式 polc-notfee-sold-as-bundled；L10.3 第 1492 条。填 L3.2 Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）。144 policy vs consensus bundled unbundling 完成（1523 item 3）。

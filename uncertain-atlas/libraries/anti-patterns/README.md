@@ -1,3 +1,6 @@
+- [`rbfs-notjoin-sold-as-bundled.md`](rbfs-notjoin-sold-as-bundled.md) — 子孙继承信号 被写成已经明示加入 / 就已经是 144 / 就已经是 165（不变量 1526）
+- [`rbfs-notlock-sold-as-bundled.md`](rbfs-notlock-sold-as-bundled.md) — nSequence示意 被写成已经是相对锁 / 就已经是 165 / 就已经是 164（不变量 1525）
+- [`rbfs-notrep-sold-as-bundled.md`](rbfs-notrep-sold-as-bundled.md) — 选择加入替换信号 被写成已经换掉 / 就已经是 144 / 就已经 166 bundled（不变量 1524）
 - [`polc-notfee-sold-as-bundled.md`](polc-notfee-sold-as-bundled.md) — 费率高 被写成已经更正确 / 就已经是 245 / 就已经是 44（不变量 1523）
 - [`polc-notblk-sold-as-bundled.md`](polc-notblk-sold-as-bundled.md) — 策略通过 被写成已经进块 / 就已经是 25 / 就已经是 166（不变量 1522）
 - [`polc-notill-sold-as-bundled.md`](polc-notill-sold-as-bundled.md) — 策略拒绝 被写成已经共识非法 / 就已经是 44 / 就已经 144 bundled（不变量 1521）

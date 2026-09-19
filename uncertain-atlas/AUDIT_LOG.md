@@ -1,3 +1,18 @@
+| A7395 | 记录 | 会与 166 / 144 / 165 / 1524 / 1525 糊成「看见子孙继承信号不是自己已经明示加入就已经明示加入 interchangeable、就已经是不变量 144 interchangeable、就已经是不变量 165 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。166 rbf-signal vs replaced bundled unbundling 完成（1526 item 3） |
+| A7396 | 高 | 看见子孙继承信号不是自己已经明示加入 会被写成已经明示加入 interchangeable / 144 interchangeable | 官方 BIP-125 rbfs item 3：not already 已经明示加入 / not 144 |
+| A7397 | 高 | 看见an inherited replace signal is not already an explicit opt-in 会被写成已经是不变量 144 interchangeable / 165 interchangeable | 官方 BIP-125 rbfs item 3：not already 已经是不变量 144 / not 165 |
+| A7398 | 高 | 看见子孙继承信号不是自己已经明示加入 会被写成已经是不变量 165 interchangeable | 官方 BIP-125 rbfs item 3：not already settled |
+| A7399 | 中 | 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔会被抄进不确定 | 不抄。不写 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔。不另写 19 节 |
+| A7390 | 记录 | 会与 166 / 165 / 164 / 1524 / 1526 糊成「看见nSequence用来示意可替换不是已经是相对锁就已经是相对锁 interchangeable、就已经是不变量 165 interchangeable、就已经是不变量 164 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 BIP-125 nsequence-signal not already relative-lock / not already 165 / not already 164 正式三事（166 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。166 rbf-signal vs replaced bundled unbundling 续（1525 item 2） |
+| A7391 | 高 | 看见nSequence用来示意可替换不是已经是相对锁 会被写成已经是相对锁 interchangeable / 165 interchangeable | 官方 BIP-125 rbfs item 2：not already 已经是相对锁 / not 165 |
+| A7392 | 高 | 看见using nSequence to signal replaceability is not already a relative lock 会被写成已经是不变量 165 interchangeable / 164 interchangeable | 官方 BIP-125 rbfs item 2：not already 已经是不变量 165 / not 164 |
+| A7393 | 高 | 看见nSequence用来示意可替换不是已经是相对锁 会被写成已经是不变量 164 interchangeable | 官方 BIP-125 rbfs item 2：not already settled |
+| A7394 | 中 | 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔会被抄进不确定 | 不抄。不写 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔。不另写 19 节 |
+| A7385 | 记录 | 会与 166 / 144 / 165 / 1525 / 1526 糊成「看见选择加入替换信号不是已经换掉就已经换掉 interchangeable、就已经是不变量 144 interchangeable、就已经 166 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 BIP-125 opt-in-signal not already replaced / not already 144 / not already 166-bundled 正式三事（166 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。166 rbf-signal vs replaced bundled unbundling 启动（1524 item 1） |
+| A7386 | 高 | 看见选择加入替换信号不是已经换掉 会被写成已经换掉 interchangeable / 144 interchangeable | 官方 BIP-125 rbfs item 1：not already 已经换掉 / not 144 |
+| A7387 | 高 | 看见an opt-in replace signal is not already a replacement 会被写成已经是不变量 144 interchangeable / 165 interchangeable | 官方 BIP-125 rbfs item 1：not already 已经是不变量 144 / not 165 |
+| A7388 | 高 | 看见选择加入替换信号不是已经换掉 会被写成已经 166 bundled interchangeable | 官方 BIP-125 rbfs item 1：not already settled |
+| A7389 | 中 | 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔会被抄进不确定 | 不抄。不写 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔。不另写 19 节 |
 | A7380 | 记录 | 会与 144 / 245 / 44 / 1521 / 1522 糊成「看见费率高不是更正确就已经更正确 interchangeable、就已经是不变量 245 interchangeable、就已经是不变量 44 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。144 policy vs consensus bundled unbundling 完成（1523 item 3） |
 | A7381 | 高 | 看见费率高不是更正确 会被写成已经更正确 interchangeable / 245 interchangeable | 官方 Policy polc item 3：not already 已经更正确 / not 245 |
 | A7382 | 高 | 看见a higher fee is not already more correct 会被写成已经是不变量 245 interchangeable / 44 interchangeable | 官方 Policy polc item 3：not already 已经是不变量 245 / not 44 |

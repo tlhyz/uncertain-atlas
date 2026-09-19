@@ -1,3 +1,6 @@
+- [`name-the-rbfs-notjoin-bar.md`](name-the-rbfs-notjoin-bar.md) — BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）（不变量 1526）
+- [`name-the-rbfs-notlock-bar.md`](name-the-rbfs-notlock-bar.md) — BIP-125 nsequence-signal not already relative-lock / not already 165 / not already 164 正式三事（166 余量）（不变量 1525）
+- [`name-the-rbfs-notrep-bar.md`](name-the-rbfs-notrep-bar.md) — BIP-125 opt-in-signal not already replaced / not already 144 / not already 166-bundled 正式三事（166 余量）（不变量 1524）
 - [`name-the-polc-notfee-bar.md`](name-the-polc-notfee-bar.md) — Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）（不变量 1523）
 - [`name-the-polc-notblk-bar.md`](name-the-polc-notblk-bar.md) — Policy policy-pass not already in-block / not already 25 / not already 166 正式三事（144 余量）（不变量 1522）
 - [`name-the-polc-notill-bar.md`](name-the-polc-notill-bar.md) — Policy policy-reject not already consensus-illegal / not already 44 / not already 144-bundled 正式三事（144 余量）（不变量 1521）

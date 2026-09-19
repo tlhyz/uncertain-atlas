@@ -80,7 +80,7 @@
 | 经济 | 未确认加信号，收款方可以不当付款 |
 
 **推断：** 产品句若只写「支持 RBF」，读者会把盖章听成已经改址。  
-**建议：** 第一版必须把替换示意、本节点是否收替换、块内是否合法三套文案分开。不要发明「带了 RBF = 已经换掉」。不要把 nSequence 示意写成相对锁。不要抄替换条数。不要写怎样替换。
+**建议：** 第一版必须把替换示意、本节点是否收替换、块内是否合法三套文案分开。可以跳过「看见带了 RBF 就已经换掉」。166 rbf-signal vs replaced bundled unbundling 完成（1524 item 1 / 1525 item 2 / 1526 item 3）；精读 [`worked-example-rbfs-notrep-vs-bundled.md`](worked-example-rbfs-notrep-vs-bundled.md)（不变量 1524 item 1）、[`worked-example-rbfs-notlock-vs-bundled.md`](worked-example-rbfs-notlock-vs-bundled.md)（不变量 1525 item 2）、[`worked-example-rbfs-notjoin-vs-bundled.md`](worked-example-rbfs-notjoin-vs-bundled.md)（不变量 1526 item 3）。不要发明「带了 RBF = 已经换掉」。不要把 nSequence 示意写成相对锁。不要抄替换条数。不要写怎样替换。
 
 ---
 
