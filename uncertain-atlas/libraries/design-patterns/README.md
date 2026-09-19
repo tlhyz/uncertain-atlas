@@ -1,3 +1,6 @@
+- [`name-the-sder-notpol-bar.md`](name-the-sder-notpol-bar.md) — BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）（不变量 1550）
+- [`name-the-sder-notlib-bar.md`](name-the-sder-notlib-bar.md) — BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）（不变量 1549）
+- [`name-the-sder-notmath-bar.md`](name-the-sder-notmath-bar.md) — BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）（不变量 1548）
 - [`name-the-vb9-notfail-bar.md`](name-the-vb9-notfail-bar.md) — BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）（不变量 1547）
 - [`name-the-vb9-notact-bar.md`](name-the-vb9-notact-bar.md) — BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）（不变量 1546）
 - [`name-the-vb9-notlock-bar.md`](name-the-vb9-notlock-bar.md) — BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）（不变量 1545）

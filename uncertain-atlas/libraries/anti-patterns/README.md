@@ -1,3 +1,6 @@
+- [`sder-notpol-sold-as-bundled.md`](sder-notpol-sold-as-bundled.md) — 转发策略已经要 DER 被写成共识已经要 / 就已经是 144 / 就已经是 171（不变量 1550）
+- [`sder-notlib-sold-as-bundled.md`](sder-notlib-sold-as-bundled.md) — 库接受某种变形 被写成共识已经接受 / 就已经是 3 / 就已经是 152（不变量 1549）
+- [`sder-notmath-sold-as-bundled.md`](sder-notmath-sold-as-bundled.md) — ECDSA 验得过 被写成已经是严格 DER / 就已经是 144 / 就已经 172 bundled（不变量 1548）
 - [`vb9-notfail-sold-as-bundled.md`](vb9-notfail-sold-as-bundled.md) — 超时未锁定 被写成已经可以当激活 / 就已经是 173 / 就已经是 144（不变量 1547）
 - [`vb9-notact-sold-as-bundled.md`](vb9-notact-sold-as-bundled.md) — LOCKED_IN 被写成已经激活 / 就已经是 165 / 就已经是 41（不变量 1546）
 - [`vb9-notlock-sold-as-bundled.md`](vb9-notlock-sold-as-bundled.md) — 版本位被置上 被写成已经锁定 / 就已经是 173 / 就已经 171 bundled（不变量 1545）

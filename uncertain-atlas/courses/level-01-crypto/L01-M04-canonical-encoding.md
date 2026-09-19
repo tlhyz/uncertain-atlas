@@ -72,7 +72,7 @@ mempool 策略可以比共识更严。
 
 ## F. 真实项目
 
-- **Bitcoin（事实）**：BIP-66 严格 DER。ECDSA 验得过不是已经是严格 DER。库接受某种变形不是共识已经接受。精读：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md)（不变量 172）。SegWit 把见证数据和 txid 计算分开。  
+- **Bitcoin（事实）**：BIP-66 严格 DER。ECDSA 验得过不是已经是严格 DER。库接受某种变形不是共识已经接受。精读：[`../../tracks/implementation/worked-example-valid-vs-der.md`](../../tracks/implementation/worked-example-valid-vs-der.md) BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）：[`../../tracks/implementation/worked-example-sder-notmath-vs-bundled.md`](../../tracks/implementation/worked-example-sder-notmath-vs-bundled.md)（不变量 1548）。 BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）：[`../../tracks/implementation/worked-example-sder-notlib-vs-bundled.md`](../../tracks/implementation/worked-example-sder-notlib-vs-bundled.md)（不变量 1549）。 BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）：[`../../tracks/implementation/worked-example-sder-notpol-vs-bundled.md`](../../tracks/implementation/worked-example-sder-notpol-vs-bundled.md)（不变量 1550）。（不变量 172）。SegWit 把见证数据和 txid 计算分开。  
 - **Ethereum（事实）**：RLP 必须规范；非规范 RLP 应拒绝。Yellow Paper / 客户端实现对此敏感。  
 - **「不确定」（建议）**：选一种现成编码（例如规范的 protobuf / 明确的 length-prefix），写测试：随机加前导零、换字段序、复制签名，必须稳定拒绝。
 

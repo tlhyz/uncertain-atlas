@@ -1,3 +1,15 @@
+## 2026-09-19（续 1667）
+
+- 不变量 1550；语料 C1528；模式 name-the-sder-notpol-bar；反模式 sder-notpol-sold-as-bundled；L10.3 第 1519 条。填 L1.4 BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）。172 valid vs der bundled unbundling 完成（1550 item 3）。
+
+## 2026-09-19（续 1666）
+
+- 不变量 1549；语料 C1527；模式 name-the-sder-notlib-bar；反模式 sder-notlib-sold-as-bundled；L10.3 第 1518 条。填 L1.4 BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）。172 valid vs der bundled unbundling 续（1549 item 2）。
+
+## 2026-09-19（续 1665）
+
+- 不变量 1548；语料 C1526；模式 name-the-sder-notmath-bar；反模式 sder-notmath-sold-as-bundled；L10.3 第 1517 条。填 L1.4 BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）。172 valid vs der bundled unbundling 启动（1548 item 1）。
+
 ## 2026-09-19（续 1664）
 
 - 不变量 1547；语料 C1525；模式 name-the-vb9-notfail-bar；反模式 vb9-notfail-sold-as-bundled；L10.3 第 1516 条。填 L3.3 BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）。171 versionbit vs active bundled unbundling 完成（1547 item 3）。

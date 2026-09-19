@@ -838,6 +838,9 @@
 - [`worked-example-vb9-notact-vs-bundled.md`](worked-example-vb9-notact-vs-bundled.md) — BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）（不变量 1546）
 - [`worked-example-vb9-notfail-vs-bundled.md`](worked-example-vb9-notfail-vs-bundled.md) — BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）（不变量 1547）
 - [`worked-example-versionbit-vs-active.md`](worked-example-versionbit-vs-active.md) — 版本位被置上 ≠ 已经锁定；锁定 ≠ 已经激活；9 ≠ 34 ≠ 被部署的那条规则（不变量 171）
+- [`worked-example-sder-notmath-vs-bundled.md`](worked-example-sder-notmath-vs-bundled.md) — BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）（不变量 1548）
+- [`worked-example-sder-notlib-vs-bundled.md`](worked-example-sder-notlib-vs-bundled.md) — BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）（不变量 1549）
+- [`worked-example-sder-notpol-vs-bundled.md`](worked-example-sder-notpol-vs-bundled.md) — BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）（不变量 1550）
 - [`worked-example-valid-vs-der.md`](worked-example-valid-vs-der.md) — ECDSA 验得过 ≠ 已经是严格 DER；库收下 ≠ 共识已经接受；66 ≠ 62 ≠ 146 ≠ 34（不变量 172）
 - [`worked-example-dum147-notpol-vs-bundled.md`](worked-example-dum147-notpol-vs-bundled.md) — 转发策略≠already consensus/bip62/settled；≠264 bundled（不变量 1231）
 - [`worked-example-dum147-notwit-vs-bundled.md`](worked-example-dum147-notwit-vs-bundled.md) — 隔离见证≠already no-dummy-malleation/wtxid-fixed/settled；≠264 bundled（不变量 1230）

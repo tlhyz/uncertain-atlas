@@ -1,3 +1,18 @@
+| A7515 | 记录 | 会与 172 / 144 / 171 / 1548 / 1549 糊成「看见转发策略已经要DER不是共识已经要就共识已经要 interchangeable、就已经是不变量 144 interchangeable、就已经是不变量 171 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M1.4、L1.4。172 valid vs der bundled unbundling 完成（1550 item 3） |
+| A7516 | 高 | 看见转发策略已经要DER不是共识已经要 会被写成共识已经要 interchangeable / 144 interchangeable | 官方 BIP-66 sder item 3：not already 共识已经要 / not 144 |
+| A7517 | 高 | 看见relay already requiring DER is not already consensus requiring it 会被写成已经是不变量 144 interchangeable / 171 interchangeable | 官方 BIP-66 sder item 3：not already 已经是不变量 144 / not 171 |
+| A7518 | 高 | 看见转发策略已经要DER不是共识已经要 会被写成已经是不变量 171 interchangeable | 官方 BIP-66 sder item 3：not already settled |
+| A7519 | 中 | 怎样把非DER改成DER、怎样造能过库过不了共识的签会被抄进不确定 | 不抄。不写 怎样把非DER改成DER、怎样造能过库过不了共识的签。不另写 19 节 |
+| A7510 | 记录 | 会与 172 / 3 / 152 / 1548 / 1550 糊成「看见库接受某种变形不是共识已经接受就共识已经接受 interchangeable、就已经是不变量 3 interchangeable、就已经是不变量 152 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M1.4、L1.4。172 valid vs der bundled unbundling 续（1549 item 2） |
+| A7511 | 高 | 看见库接受某种变形不是共识已经接受 会被写成共识已经接受 interchangeable / 3 interchangeable | 官方 BIP-66 sder item 2：not already 共识已经接受 / not 3 |
+| A7512 | 高 | 看见a library accepting a variant is not already consensus accepting it 会被写成已经是不变量 3 interchangeable / 152 interchangeable | 官方 BIP-66 sder item 2：not already 已经是不变量 3 / not 152 |
+| A7513 | 高 | 看见库接受某种变形不是共识已经接受 会被写成已经是不变量 152 interchangeable | 官方 BIP-66 sder item 2：not already settled |
+| A7514 | 中 | 怎样把非DER改成DER、怎样造能过库过不了共识的签会被抄进不确定 | 不抄。不写 怎样把非DER改成DER、怎样造能过库过不了共识的签。不另写 19 节 |
+| A7505 | 记录 | 会与 172 / 144 / 3 / 1549 / 1550 糊成「看见ECDSA数学上验得过不是已经是严格DER就已经是严格DER interchangeable、就已经是不变量 144 interchangeable、就已经 172 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M1.4、L1.4。172 valid vs der bundled unbundling 启动（1548 item 1） |
+| A7506 | 高 | 看见ECDSA数学上验得过不是已经是严格DER 会被写成已经是严格DER interchangeable / 144 interchangeable | 官方 BIP-66 sder item 1：not already 已经是严格DER / not 144 |
+| A7507 | 高 | 看见ECDSA verifying is not already being strict DER 会被写成已经是不变量 144 interchangeable / 3 interchangeable | 官方 BIP-66 sder item 1：not already 已经是不变量 144 / not 3 |
+| A7508 | 高 | 看见ECDSA数学上验得过不是已经是严格DER 会被写成已经 172 bundled interchangeable | 官方 BIP-66 sder item 1：not already settled |
+| A7509 | 中 | 怎样把非DER改成DER、怎样造能过库过不了共识的签会被抄进不确定 | 不抄。不写 怎样把非DER改成DER、怎样造能过库过不了共识的签。不另写 19 节 |
 | A7500 | 记录 | 会与 171 / 173 / 144 / 1545 / 1546 糊成「看见超时未锁定不是已经可以当激活就已经可以当激活 interchangeable、就已经是不变量 173 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L3.3 BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.3、L3.3。171 versionbit vs active bundled unbundling 完成（1547 item 3） |
 | A7501 | 高 | 看见超时未锁定不是已经可以当激活 会被写成已经可以当激活 interchangeable / 173 interchangeable | 官方 BIP-9 vb9 item 3：not already 已经可以当激活 / not 173 |
 | A7502 | 高 | 看见timing out without lock is not already treating it as active 会被写成已经是不变量 173 interchangeable / 144 interchangeable | 官方 BIP-9 vb9 item 3：not already 已经是不变量 173 / not 144 |
