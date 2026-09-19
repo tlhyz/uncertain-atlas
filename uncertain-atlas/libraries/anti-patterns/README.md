@@ -1,3 +1,6 @@
+- [`blgas-notperm-sold-as-bundled.md`](blgas-notperm-sold-as-bundled.md) — 付了blob fee 被写成已经永存 / 就已经更安全 / 就已经是 101（不变量 1493）
+- [`blgas-notbyte-sold-as-bundled.md`](blgas-notbyte-sold-as-bundled.md) — BLOBHASH 被写成已经读到袋里字节 / 就已经是 197 / 就已经是 201（不变量 1492）
+- [`blgas-notexec-sold-as-bundled.md`](blgas-notexec-sold-as-bundled.md) — blob gas 被写成已经是普通执行气 / 就已经是 23 / 就已经 145 bundled（不变量 1491）
 - [`hwin-notsync-sold-as-bundled.md`](hwin-notsync-sold-as-bundled.md) — 握手无总难度 被写成已经能判断同步 / 就已经更安全 / 就已经是 167（不变量 1490）
 - [`hwin-notenc-sold-as-bundled.md`](hwin-notenc-sold-as-bundled.md) — 线上无布隆 被写成已经改了共识收据 / 就已经是 25 / 就已经是 195（不变量 1489）
 - [`hwin-notcons-sold-as-bundled.md`](hwin-notcons-sold-as-bundled.md) — 历史窗宣布 被写成已经改了共识历史 / 就已经是 23 / 就已经 207 bundled（不变量 1488）

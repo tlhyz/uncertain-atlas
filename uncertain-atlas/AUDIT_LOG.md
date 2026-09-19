@@ -1,3 +1,18 @@
+| A7230 | 记录 | 会与 145 / 101 / 144 / 1491 / 1492 糊成「看见付了blob fee不是数据已经永存就已经永存 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。145 blob-fee vs gas bundled unbundling 完成（1493 item 3） |
+| A7231 | 高 | 看见付了blob fee不是数据已经永存 会被写成已经永存 interchangeable / 101 interchangeable | 官方 EIP-4844 blgas item 3：not already 已经永存 / not 101 |
+| A7232 | 高 | 看见paying blob fee is not already perpetual data 会被写成已经更安全 interchangeable / 144 interchangeable | 官方 EIP-4844 blgas item 3：not already 已经更安全 / not 144 |
+| A7233 | 高 | 看见付了blob fee不是数据已经永存 会被写成已经是不变量 101 interchangeable | 官方 EIP-4844 blgas item 3：not already settled |
+| A7234 | 中 | 怎样扣 sidecar会被抄进不确定 | 不抄。不写 怎样扣 sidecar。不另写 19 节 |
+| A7225 | 记录 | 会与 145 / 197 / 201 / 1491 / 1493 糊成「看见EVM能访问承诺不是已经读到blob字节就已经读到blob字节 interchangeable、就已经是不变量 197 interchangeable、就已经是不变量 201 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-4844 blobhash not already sidecar-bytes / not already 197 / not already 201 正式三事（145 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。145 blob-fee vs gas bundled unbundling 续（1492 item 2） |
+| A7226 | 高 | 看见EVM能访问承诺不是已经读到blob字节 会被写成已经读到blob字节 interchangeable / 197 interchangeable | 官方 EIP-4844 blgas item 2：not already 已经读到blob字节 / not 197 |
+| A7227 | 高 | 看见EVM can read the commitment is not already sidecar bytes 会被写成已经是不变量 197 interchangeable / 201 interchangeable | 官方 EIP-4844 blgas item 2：not already 已经是不变量 197 / not 201 |
+| A7228 | 高 | 看见EVM能访问承诺不是已经读到blob字节 会被写成已经是不变量 201 interchangeable | 官方 EIP-4844 blgas item 2：not already settled |
+| A7229 | 中 | 怎样扣 sidecar会被抄进不确定 | 不抄。不写 怎样扣 sidecar。不另写 19 节 |
+| A7220 | 记录 | 会与 145 / 23 / 200 / 1492 / 1493 糊成「看见blob gas不是普通执行gas就已经是普通执行gas interchangeable、就已经是不变量 23 interchangeable、就已经 145 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-4844 blob-gas not already execution-gas / not already 23 / not already 145-bundled 正式三事（145 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。145 blob-fee vs gas bundled unbundling 启动（1491 item 1） |
+| A7221 | 高 | 看见blob gas不是普通执行gas 会被写成已经是普通执行gas interchangeable / 23 interchangeable | 官方 EIP-4844 blgas item 1：not already 已经是普通执行gas / not 23 |
+| A7222 | 高 | 看见blob gas is not already ordinary execution gas 会被写成已经是不变量 23 interchangeable / 200 interchangeable | 官方 EIP-4844 blgas item 1：not already 已经是不变量 23 / not 200 |
+| A7223 | 高 | 看见blob gas不是普通执行gas 会被写成已经 145 bundled interchangeable | 官方 EIP-4844 blgas item 1：not already settled |
+| A7224 | 中 | 怎样扣 sidecar会被抄进不确定 | 不抄。不写 怎样扣 sidecar。不另写 19 节 |
 | A7215 | 记录 | 会与 207 / 195 / 167 / 1488 / 1489 糊成「看见握手去掉总难度不是已经能判断同步完没完就已经能判断同步完没完 interchangeable、就已经更安全 interchangeable、就已经是不变量 167 interchangeable」 | 对照写清。不编博物馆页。写进 L5.3 EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。207 history-window vs consensus bundled unbundling 完成（1490 item 3） |
 | A7216 | 高 | 看见握手去掉总难度不是已经能判断同步完没完 会被写成已经能判断同步完没完 interchangeable / 195 interchangeable | 官方 EIP-7642 hwin item 3：not already 已经能判断同步完没完 / not 195 |
 | A7217 | 高 | 看见handshake without TD is not already sync-complete 会被写成已经更安全 interchangeable / 167 interchangeable | 官方 EIP-7642 hwin item 3：not already 已经更安全 / not 167 |

@@ -82,7 +82,7 @@
 | 经济 | 两套 1559 式目标；执行堵了不是 DA 已经贵 |
 
 **推断：** 产品句若只写「gas」或「付了 DA 费」，读者会把执行计量听成附录已入库。  
-**建议：** 不确定第一版不要把短时 blob 当默认 DA。若对照，必须点名两套气和 EVM 看得见哪一层。不要抄上限或官网倍数。不要写怎样扣 sidecar。
+**建议：** 不确定第一版不要把短时 blob 当默认 DA。若对照，必须点名两套气和 EVM 看得见哪一层。可以跳过「都叫 gas 就已经是同一本账」。145 blob-fee vs gas bundled unbundling 完成（1491 item 1 / 1492 item 2 / 1493 item 3）；精读 [`worked-example-blgas-notexec-vs-bundled.md`](worked-example-blgas-notexec-vs-bundled.md)（不变量 1491 item 1）、[`worked-example-blgas-notbyte-vs-bundled.md`](worked-example-blgas-notbyte-vs-bundled.md)（不变量 1492 item 2）、[`worked-example-blgas-notperm-vs-bundled.md`](worked-example-blgas-notperm-vs-bundled.md)（不变量 1493 item 3）。不要抄上限或官网倍数。不要写怎样扣 sidecar。
 
 ---
 

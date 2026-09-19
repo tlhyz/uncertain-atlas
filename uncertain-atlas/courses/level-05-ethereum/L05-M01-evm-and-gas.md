@@ -60,7 +60,7 @@ gas 是体力券，不是「越贵越正确」。
 
 | 是 | 不是 |
 |---|---|
-| 对 CPU / 内存 / 存储访问的计量 | 手续费市场的全部（小费、blob 费另算）。blob gas ≠ 普通执行 gas：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md)（不变量 145） |
+| 对 CPU / 内存 / 存储访问的计量 | 手续费市场的全部（小费、blob 费另算）。blob gas ≠ 普通执行 gas：[`../../tracks/light-clients/worked-example-blob-fee-vs-gas.md`](../../tracks/light-clients/worked-example-blob-fee-vs-gas.md) EIP-4844 blob-gas not already execution-gas / not already 23 / not already 145-bundled 正式三事（145 余量）：[`../../tracks/light-clients/worked-example-blgas-notexec-vs-bundled.md`](../../tracks/light-clients/worked-example-blgas-notexec-vs-bundled.md)（不变量 1491）。 EIP-4844 blobhash not already sidecar-bytes / not already 197 / not already 201 正式三事（145 余量）：[`../../tracks/light-clients/worked-example-blgas-notbyte-vs-bundled.md`](../../tracks/light-clients/worked-example-blgas-notbyte-vs-bundled.md)（不变量 1492）。 EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）：[`../../tracks/light-clients/worked-example-blgas-notperm-vs-bundled.md`](../../tracks/light-clients/worked-example-blgas-notperm-vs-bundled.md)（不变量 1493）。（不变量 145） |
 | 防无限循环变成网络武器 | 「付得起 = 交易正确」 |
 | 让恶意程序有上界 | 防合约逻辑偷钱 |
 

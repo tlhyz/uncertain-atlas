@@ -1,3 +1,15 @@
+## 2026-09-19（续 1610）
+
+- 不变量 1493；语料 C1471；模式 name-the-blgas-notperm-bar；反模式 blgas-notperm-sold-as-bundled；L10.3 第 1462 条。填 L5.1 EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）。145 blob-fee vs gas bundled unbundling 完成（1493 item 3）。
+
+## 2026-09-19（续 1609）
+
+- 不变量 1492；语料 C1470；模式 name-the-blgas-notbyte-bar；反模式 blgas-notbyte-sold-as-bundled；L10.3 第 1461 条。填 L5.1 EIP-4844 blobhash not already sidecar-bytes / not already 197 / not already 201 正式三事（145 余量）。145 blob-fee vs gas bundled unbundling 续（1492 item 2）。
+
+## 2026-09-19（续 1608）
+
+- 不变量 1491；语料 C1469；模式 name-the-blgas-notexec-bar；反模式 blgas-notexec-sold-as-bundled；L10.3 第 1460 条。填 L5.1 EIP-4844 blob-gas not already execution-gas / not already 23 / not already 145-bundled 正式三事（145 余量）。145 blob-fee vs gas bundled unbundling 启动（1491 item 1）。
+
 ## 2026-09-19（续 1607）
 
 - 不变量 1490；语料 C1468；模式 name-the-hwin-notsync-bar；反模式 hwin-notsync-sold-as-bundled；L10.3 第 1459 条。填 L5.3 EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）。207 history-window vs consensus bundled unbundling 完成（1490 item 3）。

@@ -1,3 +1,6 @@
+- [`name-the-blgas-notperm-bar.md`](name-the-blgas-notperm-bar.md) — EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）（不变量 1493）
+- [`name-the-blgas-notbyte-bar.md`](name-the-blgas-notbyte-bar.md) — EIP-4844 blobhash not already sidecar-bytes / not already 197 / not already 201 正式三事（145 余量）（不变量 1492）
+- [`name-the-blgas-notexec-bar.md`](name-the-blgas-notexec-bar.md) — EIP-4844 blob-gas not already execution-gas / not already 23 / not already 145-bundled 正式三事（145 余量）（不变量 1491）
 - [`name-the-hwin-notsync-bar.md`](name-the-hwin-notsync-bar.md) — EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）（不变量 1490）
 - [`name-the-hwin-notenc-bar.md`](name-the-hwin-notenc-bar.md) — EIP-7642 wire-no-bloom not already consensus-receipt / not already 25 / not already 195 正式三事（207 余量）（不变量 1489）
 - [`name-the-hwin-notcons-bar.md`](name-the-hwin-notcons-bar.md) — EIP-7642 history-window not already consensus-pruned / not already 23 / not already 207-bundled 正式三事（207 余量）（不变量 1488）
