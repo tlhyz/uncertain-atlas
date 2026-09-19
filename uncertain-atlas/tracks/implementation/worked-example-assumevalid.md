@@ -120,7 +120,7 @@ CometBFT **state sync** 是第五列：跳过历史块重放，锚是轻验 `App
 ## 7. 对不确定的意义（建议）
 
 - 第一版若从创世复算：默认不要跳脚本。若以后做 IBD 加速，产品句必须写：**跳过哪条规则、是否强迫链、如何关闭、背景是否补验**。
-- 不要把 assumevalid / assumeutxo / 弱主观检查点 / 旧 checkpoint 写成一个「检查点」模块。检查点还曾挡低难度头垃圾，见 [头工作量](worked-example-header-work.md) / [CVE-2019-25220](../failure-museum/cve-2019-25220.md)。
+- 可以跳过「看见同步快就已经从创世验了脚本」。25 assumevalid vs checkpoint bundled unbundling 完成（1518 item 1 / 1519 item 2 / 1520 item 3）；精读 [`worked-example-asv-notchk-vs-bundled.md`](worked-example-asv-notchk-vs-bundled.md)（不变量 1518 item 1）、[`worked-example-asv-notutxo-vs-bundled.md`](worked-example-asv-notutxo-vs-bundled.md)（不变量 1519 item 2）、[`worked-example-asv-notws-vs-bundled.md`](worked-example-asv-notws-vs-bundled.md)（不变量 1520 item 3）。不要把 assumevalid / assumeutxo / 弱主观检查点 / 旧 checkpoint 写成一个「检查点」模块。检查点还曾挡低难度头垃圾，见 [头工作量](worked-example-header-work.md) / [CVE-2019-25220](../failure-museum/cve-2019-25220.md)。
 - 硬编码哈希是发行物，不是共识对象。审查默认值，允许 `=0`。
 - 后量子验签更贵，会有人更积极推销跳过。句子必须先写死跳过的是什么。
 

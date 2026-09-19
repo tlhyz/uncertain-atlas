@@ -105,7 +105,7 @@ Sybil：身份便宜，抗 Sybil 主要靠算力成本，不是 KYC。
 
 ## 9. 存储
 
-区块原始数据可剪枝（pruning）但仍要能从创世验证到尖。加速同步是**实现开关**：assumevalid 跳祖先脚本且不强迫链；assumeutxo 先装 UTXO 快照、背景再验。不是弱主观周期，也不是旧 checkpoint。见 [`../../tracks/implementation/worked-example-assumevalid.md`](../../tracks/implementation/worked-example-assumevalid.md)。
+区块原始数据可剪枝（pruning）但仍要能从创世验证到尖。加速同步是**实现开关**：assumevalid 跳祖先脚本且不强迫链；assumeutxo 先装 UTXO 快照、背景再验。不是弱主观周期，也不是旧 checkpoint。见 [`../../tracks/implementation/worked-example-assumevalid.md`](../../tracks/implementation/worked-example-assumevalid.md) assumevalid assumevalid not already checkpoint-forced / not already 24 / not already 25-bundled 正式三事（25 余量）：[`../../tracks/implementation/worked-example-asv-notchk-vs-bundled.md`](../../tracks/implementation/worked-example-asv-notchk-vs-bundled.md)（不变量 1518）。 assumevalid assumevalid not already assumeutxo / not already 38 / not already 207 正式三事（25 余量）：[`../../tracks/implementation/worked-example-asv-notutxo-vs-bundled.md`](../../tracks/implementation/worked-example-asv-notutxo-vs-bundled.md)（不变量 1519）。 assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）：[`../../tracks/implementation/worked-example-asv-notws-vs-bundled.md`](../../tracks/implementation/worked-example-asv-notws-vs-bundled.md)（不变量 1520）。。
 
 UTXO 集在 chainstate。断电必须不出现「半个块」：Bitcoin Core 用库的原子与 flush 策略。具体崩溃语义属部署/实现，Level 9 再对照源码与测试。
 

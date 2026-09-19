@@ -806,6 +806,9 @@
 - [`worked-example-procend-notmaking-vs-bundled.md`](worked-example-procend-notmaking-vs-bundled.md) — proposer_address≠already making/header-known/settled；≠427 bundled（不变量 1059）
 - [`worked-example-procend-nothash-vs-bundled.md`](worked-example-procend-nothash-vs-bundled.md) — next_validators_hash≠already prepare-hash/finalize-hash/settled；≠427 bundled（不变量 1058）
 - [`worked-example-procreqend-vs-prepreq.md`](worked-example-procreqend-vs-prepreq.md) — ProcessProposalRequest.next_validators_hash 是下一验证者集合默克尔根 ≠ 已经是 Prepare 请求末栏的 next_validators_hash；ProcessProposalRequest.proposer_address 是造了这份提案的验证者地址 ≠ 已经正在造这份提案；PrepareProposalResponse.txs 是可能改过的、挑进拟议块的交易列表 ≠ 已经是初步交易列表（不变量 427）
+- [`worked-example-asv-notchk-vs-bundled.md`](worked-example-asv-notchk-vs-bundled.md) — assumevalid assumevalid not already checkpoint-forced / not already 24 / not already 25-bundled 正式三事（25 余量）（不变量 1518）
+- [`worked-example-asv-notutxo-vs-bundled.md`](worked-example-asv-notutxo-vs-bundled.md) — assumevalid assumevalid not already assumeutxo / not already 38 / not already 207 正式三事（25 余量）（不变量 1519）
+- [`worked-example-asv-notws-vs-bundled.md`](worked-example-asv-notws-vs-bundled.md) — assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）（不变量 1520）
 - [`worked-example-assumevalid.md`](worked-example-assumevalid.md) — 跳过签名 ≠ 换共识链；assumevalid ≠ assumeutxo ≠ 旧 checkpoint
 - [`worked-example-header-work.md`](worked-example-header-work.md) — 头先够工作量再入库；检查点第三份工作是反垃圾
 - [`worked-example-statesync.md`](worked-example-statesync.md) — 应用快照 ≠ 从创世重放；只有轻验 AppHash 可信。亲戚：轻验集合 ≠ 提议者选择，[ASA-2024-009](../failure-museum/asa-2024-009.md)

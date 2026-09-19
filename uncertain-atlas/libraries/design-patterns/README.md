@@ -1,3 +1,6 @@
+- [`name-the-asv-notws-bar.md`](name-the-asv-notws-bar.md) — assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）（不变量 1520）
+- [`name-the-asv-notutxo-bar.md`](name-the-asv-notutxo-bar.md) — assumevalid assumevalid not already assumeutxo / not already 38 / not already 207 正式三事（25 余量）（不变量 1519）
+- [`name-the-asv-notchk-bar.md`](name-the-asv-notchk-bar.md) — assumevalid assumevalid not already checkpoint-forced / not already 24 / not already 25-bundled 正式三事（25 余量）（不变量 1518）
 - [`name-the-kdas-notperm-bar.md`](name-the-kdas-notperm-bar.md) — EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）（不变量 1517）
 - [`name-the-kdas-notcel-bar.md`](name-the-kdas-notcel-bar.md) — EIP-4844 peerdas not already celestia-das / not already 124 / not already 200 正式三事（23 余量）（不变量 1516）
 - [`name-the-kdas-notpeer-bar.md`](name-the-kdas-notpeer-bar.md) — EIP-4844 sidecar not already peerdas / not already 145 / not already 23-bundled 正式三事（23 余量）（不变量 1515）

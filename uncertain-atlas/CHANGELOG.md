@@ -1,3 +1,15 @@
+## 2026-09-19（续 1637）
+
+- 不变量 1520；语料 C1498；模式 name-the-asv-notws-bar；反模式 asv-notws-sold-as-bundled；L10.3 第 1489 条。填 L3.5 assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）。25 assumevalid vs checkpoint bundled unbundling 完成（1520 item 3）。
+
+## 2026-09-19（续 1636）
+
+- 不变量 1519；语料 C1497；模式 name-the-asv-notutxo-bar；反模式 asv-notutxo-sold-as-bundled；L10.3 第 1488 条。填 L3.5 assumevalid assumevalid not already assumeutxo / not already 38 / not already 207 正式三事（25 余量）。25 assumevalid vs checkpoint bundled unbundling 续（1519 item 2）。
+
+## 2026-09-19（续 1635）
+
+- 不变量 1518；语料 C1496；模式 name-the-asv-notchk-bar；反模式 asv-notchk-sold-as-bundled；L10.3 第 1487 条。填 L3.5 assumevalid assumevalid not already checkpoint-forced / not already 24 / not already 25-bundled 正式三事（25 余量）。25 assumevalid vs checkpoint bundled unbundling 启动（1518 item 1）。
+
 ## 2026-09-19（续 1634）
 
 - 不变量 1517；语料 C1495；模式 name-the-kdas-notperm-bar；反模式 kdas-notperm-sold-as-bundled；L10.3 第 1486 条。填 L5.4 EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）。23 blob vs das bundled unbundling 完成（1517 item 3）。

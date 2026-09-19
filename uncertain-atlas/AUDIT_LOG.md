@@ -1,3 +1,18 @@
+| A7365 | 记录 | 会与 25 / 24 / 23 / 1518 / 1519 糊成「看见assumevalid不是已经弱主观检查点就已经是弱主观 interchangeable、就已经是不变量 24 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.5、L3.5。25 assumevalid vs checkpoint bundled unbundling 完成（1520 item 3） |
+| A7366 | 高 | 看见assumevalid不是已经弱主观检查点 会被写成已经是弱主观 interchangeable / 24 interchangeable | 官方 assumevalid asv item 3：not already 已经是弱主观 / not 24 |
+| A7367 | 高 | 看见assumevalid is not already a weak-subjectivity checkpoint 会被写成已经是不变量 24 interchangeable / 23 interchangeable | 官方 assumevalid asv item 3：not already 已经是不变量 24 / not 23 |
+| A7368 | 高 | 看见assumevalid不是已经弱主观检查点 会被写成已经是不变量 23 interchangeable | 官方 assumevalid asv item 3：not already settled |
+| A7369 | 中 | 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证会被抄进不确定 | 不抄。不写 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证。不另写 19 节 |
+| A7360 | 记录 | 会与 25 / 38 / 207 / 1518 / 1520 糊成「看见assumevalid不是已经assumeutxo就已经是assumeutxo interchangeable、就已经是不变量 38 interchangeable、就已经是不变量 207 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 assumevalid assumevalid not already assumeutxo / not already 38 / not already 207 正式三事（25 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.5、L3.5。25 assumevalid vs checkpoint bundled unbundling 续（1519 item 2） |
+| A7361 | 高 | 看见assumevalid不是已经assumeutxo 会被写成已经是assumeutxo interchangeable / 38 interchangeable | 官方 assumevalid asv item 2：not already 已经是assumeutxo / not 38 |
+| A7362 | 高 | 看见assumevalid is not already assumeutxo 会被写成已经是不变量 38 interchangeable / 207 interchangeable | 官方 assumevalid asv item 2：not already 已经是不变量 38 / not 207 |
+| A7363 | 高 | 看见assumevalid不是已经assumeutxo 会被写成已经是不变量 207 interchangeable | 官方 assumevalid asv item 2：not already settled |
+| A7364 | 中 | 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证会被抄进不确定 | 不抄。不写 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证。不另写 19 节 |
+| A7355 | 记录 | 会与 25 / 24 / 38 / 1519 / 1520 糊成「看见assumevalid不是已经旧checkpoint就已经强迫那条链 interchangeable、就已经是不变量 24 interchangeable、就已经 25 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 assumevalid assumevalid not already checkpoint-forced / not already 24 / not already 25-bundled 正式三事（25 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.5、L3.5。25 assumevalid vs checkpoint bundled unbundling 启动（1518 item 1） |
+| A7356 | 高 | 看见assumevalid不是已经旧checkpoint 会被写成已经强迫那条链 interchangeable / 24 interchangeable | 官方 assumevalid asv item 1：not already 已经强迫那条链 / not 24 |
+| A7357 | 高 | 看见assumevalid is not already the old checkpoint 会被写成已经是不变量 24 interchangeable / 38 interchangeable | 官方 assumevalid asv item 1：not already 已经是不变量 24 / not 38 |
+| A7358 | 高 | 看见assumevalid不是已经旧checkpoint 会被写成已经 25 bundled interchangeable | 官方 assumevalid asv item 1：not already settled |
+| A7359 | 中 | 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证会被抄进不确定 | 不抄。不写 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证。不另写 19 节 |
 | A7350 | 记录 | 会与 23 / 145 / 9 / 1515 / 1516 糊成「看见看见承诺哈希不是数据已经永存就已经永存 interchangeable、就已经是不变量 145 interchangeable、就已经是不变量 9 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。23 blob vs das bundled unbundling 完成（1517 item 3） |
 | A7351 | 高 | 看见看见承诺哈希不是数据已经永存 会被写成已经永存 interchangeable / 145 interchangeable | 官方 EIP-4844 kdas item 3：not already 已经永存 / not 145 |
 | A7352 | 高 | 看见seeing the commitment hash is not already perpetual data 会被写成已经是不变量 145 interchangeable / 9 interchangeable | 官方 EIP-4844 kdas item 3：not already 已经是不变量 145 / not 9 |

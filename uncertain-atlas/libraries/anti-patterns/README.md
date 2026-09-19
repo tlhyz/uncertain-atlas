@@ -1,3 +1,6 @@
+- [`asv-notws-sold-as-bundled.md`](asv-notws-sold-as-bundled.md) — assumevalid 被写成已经是弱主观 / 就已经是 24 / 就已经是 23（不变量 1520）
+- [`asv-notutxo-sold-as-bundled.md`](asv-notutxo-sold-as-bundled.md) — assumevalid 被写成已经是 assumeutxo / 就已经是 38 / 就已经是 207（不变量 1519）
+- [`asv-notchk-sold-as-bundled.md`](asv-notchk-sold-as-bundled.md) — assumevalid 被写成已经旧 checkpoint 强迫链 / 就已经是 24 / 就已经 25 bundled（不变量 1518）
 - [`kdas-notperm-sold-as-bundled.md`](kdas-notperm-sold-as-bundled.md) — 承诺哈希 被写成已经永存 / 就已经是 145 / 就已经是 9（不变量 1517）
 - [`kdas-notcel-sold-as-bundled.md`](kdas-notcel-sold-as-bundled.md) — PeerDAS 被写成已经是 Celestia 二维 DAS / 就已经是 124 / 就已经是 200（不变量 1516）
 - [`kdas-notpeer-sold-as-bundled.md`](kdas-notpeer-sold-as-bundled.md) — KZG sidecar 被写成已经是 PeerDAS / 就已经是 145 / 就已经 23 bundled（不变量 1515）
