@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看拍了这个高度不是已经交差之后拍的 not already post-commit / not already no-higher-height / not already height-isolated 正式三事（324 余量），必须分开标了这个高度 是不是 already post-commit interchangeable / 324 snapshottake bundled interchangeable / snapshottake-sold-as-committed interchangeable、拍了 是不是 already no-higher-height interchangeable、字段在 是不是 already height-isolated interchangeable。可以跳过「看见标了这个高度就已经交差之后拍 interchangeable / 就已经没有更高高度 interchangeable / 就已经隔离在这一高度 interchangeable」。不要另写怎样拍快照。324 snapshottake vs commit bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshottake-notconsistent-vs-bundled.md`](worked-example-snapshottake-notconsistent-vs-bundled.md)（不变量 729 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看拍了这个高度不是已经交差之后拍的 not already post-commit / not already no-higher-height / not already height-isolated 正式三事（324 余量），必须分开标了这个高度 是不是 already post-commit interchangeable / 324 snapshottake bundled interchangeable / snapshottake-sold-as-committed interchangeable、拍了 是不是 already no-higher-height interchangeable、字段在 是不是 already height-isolated interchangeable。可以跳过「看见标了这个高度就已经交差之后拍 interchangeable / 就已经没有更高高度 interchangeable / 就已经隔离在这一高度 interchangeable」。不要另写怎样拍快照。324 snapshottake vs commit bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshottake-notconsistent-vs-bundled.md`](worked-example-snapshottake-notconsistent-vs-bundled.md)（不变量 729 item 2）已写。
 
 ## 本页不抄
 

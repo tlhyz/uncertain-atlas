@@ -1,3 +1,4 @@
+- [`snapshottake-notconsistent-sold-as-bundled.md`](snapshottake-notconsistent-sold-as-bundled.md) — 没停链 被写成已经一致 / 后台拍 被写成已经 Asynchronous 交差 / 同一高度 被写成已经各节点字节相同（不变量 729）
 - [`snapshottake-notcommitted-sold-as-bundled.md`](snapshottake-notcommitted-sold-as-bundled.md) — 标了这个高度 被写成已经交差之后拍 / 拍了 被写成已经没有更高高度 / 字段在 被写成已经隔离在这一高度（不变量 728）
 - [`snapshotswitch-nothistory-sold-as-bundled.md`](snapshotswitch-nothistory-sold-as-bundled.md) — 能出块 被写成已经有完整历史 / 和其他节点一样跑 被写成已经从创世重放 / 透明 被写成已经不用管扩展高度（不变量 727）
 - [`snapshotswitch-notversion-sold-as-bundled.md`](snapshotswitch-notversion-sold-as-bundled.md) — AppHash 对上 被写成已经版本也对上 / 对了下一高度 被写成已经对了当前头 / Info 绿了 被写成已经本头交差（不变量 726）
