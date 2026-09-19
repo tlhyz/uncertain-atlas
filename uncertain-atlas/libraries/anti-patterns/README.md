@@ -1,3 +1,6 @@
+- [`bres-notsch-sold-as-bundled.md`](bres-notsch-sold-as-bundled.md) — 不算目标 被写成已经改了日程 / 就已经是 200 / 就已经是 23（不变量 1499）
+- [`bres-notgone-sold-as-bundled.md`](bres-notgone-sold-as-bundled.md) — 执行费主导 被写成已经没有blob价 / 就已经是 158 / 就已经是 197（不变量 1498）
+- [`bres-notacct-sold-as-bundled.md`](bres-notacct-sold-as-bundled.md) — blob底价 被写成已经并成一套气 / 就已经是 145 / 就已经 201 bundled（不变量 1497）
 - [`bsch-notel-sold-as-bundled.md`](bsch-notel-sold-as-bundled.md) — 共识层换名 被写成已经是执行层激活 / 就已经更安全 / 就已经是 145（不变量 1496）
 - [`bsch-notratio-sold-as-bundled.md`](bsch-notratio-sold-as-bundled.md) — 新目标上限比 被写成已经还是旧对称 / 就已经是 23 / 就已经是 197（不变量 1495）
 - [`bsch-notgas-sold-as-bundled.md`](bsch-notgas-sold-as-bundled.md) — 抬高日程 被写成已经改了气种拆分 / 就已经是 145 / 就已经 200 bundled（不变量 1494）

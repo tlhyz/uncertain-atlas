@@ -1,3 +1,15 @@
+## 2026-09-19（续 1616）
+
+- 不变量 1499；语料 C1477；模式 name-the-bres-notsch-bar；反模式 bres-notsch-sold-as-bundled；L10.3 第 1468 条。填 L5.4 EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）。201 blob-reserve vs execution bundled unbundling 完成（1499 item 3）。
+
+## 2026-09-19（续 1615）
+
+- 不变量 1498；语料 C1476；模式 name-the-bres-notgone-bar；反模式 bres-notgone-sold-as-bundled；L10.3 第 1467 条。填 L5.4 EIP-7918 exec-dominant not already blob-priceless / not already 158 / not already 197 正式三事（201 余量）。201 blob-reserve vs execution bundled unbundling 续（1498 item 2）。
+
+## 2026-09-19（续 1614）
+
+- 不变量 1497；语料 C1475；模式 name-the-bres-notacct-bar；反模式 bres-notacct-sold-as-bundled；L10.3 第 1466 条。填 L5.4 EIP-7918 reserve-floor not already gas-merged / not already 145 / not already 201-bundled 正式三事（201 余量）。201 blob-reserve vs execution bundled unbundling 启动（1497 item 1）。
+
 ## 2026-09-19（续 1613）
 
 - 不变量 1496；语料 C1474；模式 name-the-bsch-notel-bar；反模式 bsch-notel-sold-as-bundled；L10.3 第 1465 条。填 L5.4 EIP-7691 cl-rename not already el-activated / not already safer / not already 145 正式三事（200 余量）。200 blob-schedule vs 4844 bundled unbundling 完成（1496 item 3）。

@@ -1,3 +1,6 @@
+- [`name-the-bres-notsch-bar.md`](name-the-bres-notsch-bar.md) — EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）（不变量 1499）
+- [`name-the-bres-notgone-bar.md`](name-the-bres-notgone-bar.md) — EIP-7918 exec-dominant not already blob-priceless / not already 158 / not already 197 正式三事（201 余量）（不变量 1498）
+- [`name-the-bres-notacct-bar.md`](name-the-bres-notacct-bar.md) — EIP-7918 reserve-floor not already gas-merged / not already 145 / not already 201-bundled 正式三事（201 余量）（不变量 1497）
 - [`name-the-bsch-notel-bar.md`](name-the-bsch-notel-bar.md) — EIP-7691 cl-rename not already el-activated / not already safer / not already 145 正式三事（200 余量）（不变量 1496）
 - [`name-the-bsch-notratio-bar.md`](name-the-bsch-notratio-bar.md) — EIP-7691 new-ratio not already old-symmetric / not already 23 / not already 197 正式三事（200 余量）（不变量 1495）
 - [`name-the-bsch-notgas-bar.md`](name-the-bsch-notgas-bar.md) — EIP-7691 raise-schedule not already gas-split-changed / not already 145 / not already 200-bundled 正式三事（200 余量）（不变量 1494）

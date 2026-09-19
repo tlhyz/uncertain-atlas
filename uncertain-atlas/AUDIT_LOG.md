@@ -1,3 +1,18 @@
+| A7260 | 记录 | 会与 201 / 200 / 23 / 1497 / 1498 糊成「看见不算目标不是已经改了日程数字就已经改了日程数字 interchangeable、就已经是不变量 200 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。201 blob-reserve vs execution bundled unbundling 完成（1499 item 3） |
+| A7261 | 高 | 看见不算目标不是已经改了日程数字 会被写成已经改了日程数字 interchangeable / 200 interchangeable | 官方 EIP-7918 bres item 3：not already 已经改了日程数字 / not 200 |
+| A7262 | 高 | 看见not subtracting the target is not already a schedule change 会被写成已经是不变量 200 interchangeable / 23 interchangeable | 官方 EIP-7918 bres item 3：not already 已经是不变量 200 / not 23 |
+| A7263 | 高 | 看见不算目标不是已经改了日程数字 会被写成已经是不变量 23 interchangeable | 官方 EIP-7918 bres item 3：not already settled |
+| A7264 | 中 | 怎样等下限灌 blob、怎样绕过底价会被抄进不确定 | 不抄。不写 怎样等下限灌 blob、怎样绕过底价。不另写 19 节 |
+| A7255 | 记录 | 会与 201 / 158 / 197 / 1497 / 1499 糊成「看见执行费主导不是已经没有blob价就已经没有blob价 interchangeable、就已经是不变量 158 interchangeable、就已经是不变量 197 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7918 exec-dominant not already blob-priceless / not already 158 / not already 197 正式三事（201 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。201 blob-reserve vs execution bundled unbundling 续（1498 item 2） |
+| A7256 | 高 | 看见执行费主导不是已经没有blob价 会被写成已经没有blob价 interchangeable / 158 interchangeable | 官方 EIP-7918 bres item 2：not already 已经没有blob价 / not 158 |
+| A7257 | 高 | 看见execution-cost dominance is not already a missing blob price 会被写成已经是不变量 158 interchangeable / 197 interchangeable | 官方 EIP-7918 bres item 2：not already 已经是不变量 158 / not 197 |
+| A7258 | 高 | 看见执行费主导不是已经没有blob价 会被写成已经是不变量 197 interchangeable | 官方 EIP-7918 bres item 2：not already settled |
+| A7259 | 中 | 怎样等下限灌 blob、怎样绕过底价会被抄进不确定 | 不抄。不写 怎样等下限灌 blob、怎样绕过底价。不另写 19 节 |
+| A7250 | 记录 | 会与 201 / 145 / 200 / 1498 / 1499 糊成「看见blob底价不是已经并成一套气就已经并成一套气 interchangeable、就已经是不变量 145 interchangeable、就已经 201 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7918 reserve-floor not already gas-merged / not already 145 / not already 201-bundled 正式三事（201 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。201 blob-reserve vs execution bundled unbundling 启动（1497 item 1） |
+| A7251 | 高 | 看见blob底价不是已经并成一套气 会被写成已经并成一套气 interchangeable / 145 interchangeable | 官方 EIP-7918 bres item 1：not already 已经并成一套气 / not 145 |
+| A7252 | 高 | 看见a blob reserve floor is not already a merged gas ledger 会被写成已经是不变量 145 interchangeable / 200 interchangeable | 官方 EIP-7918 bres item 1：not already 已经是不变量 145 / not 200 |
+| A7253 | 高 | 看见blob底价不是已经并成一套气 会被写成已经 201 bundled interchangeable | 官方 EIP-7918 bres item 1：not already settled |
+| A7254 | 中 | 怎样等下限灌 blob、怎样绕过底价会被抄进不确定 | 不抄。不写 怎样等下限灌 blob、怎样绕过底价。不另写 19 节 |
 | A7245 | 记录 | 会与 200 / 145 / 201 / 1494 / 1495 糊成「看见共识层换名不是已经是执行层激活就已经是执行层激活 interchangeable、就已经更安全 interchangeable、就已经是不变量 145 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7691 cl-rename not already el-activated / not already safer / not already 145 正式三事（200 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。200 blob-schedule vs 4844 bundled unbundling 完成（1496 item 3） |
 | A7246 | 高 | 看见共识层换名不是已经是执行层激活 会被写成已经是执行层激活 interchangeable / 145 interchangeable | 官方 EIP-7691 bsch item 3：not already 已经是执行层激活 / not 145 |
 | A7247 | 高 | 看见CL rename is not already EL activation 会被写成已经更安全 interchangeable / 201 interchangeable | 官方 EIP-7691 bsch item 3：not already 已经更安全 / not 201 |
