@@ -145,6 +145,7 @@
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-consensusparams-notpartial-vs-bundled.md`](worked-example-consensusparams-notpartial-vs-bundled.md) — 只填一项≠只改这一项/没写字段≠保持原值/能整份套上≠按字段合并；≠319 bundled（不变量 718）
 - [`worked-example-consensusparams-notclear-vs-bundled.md`](worked-example-consensusparams-notclear-vs-bundled.md) — 没回≠清成默认/空着≠已经改过/能更新≠和InitChain空回包同一句；≠319 bundled（不变量 717）
 - [`worked-example-consensusparams-notempty-vs-bundled.md`](worked-example-consensusparams-notempty-vs-bundled.md) — 回了空≠没有参数/没回参数≠删掉创世参数/能设初始参数≠应用空参数；≠319 bundled（不变量 716）
 - [`worked-example-validatorupdate-notpower0-vs-bundled.md`](worked-example-validatorupdate-notpower0-vs-bundled.md) — 写成0≠能删不在名单里的人/看见总权≠没有上限/看见四种钥型≠选型；≠318 bundled（不变量 715）

@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Finalize 没回不是已经清掉 not already clear / not already changed / not already InitChain-empty-same 正式三事（319 余量），必须分开没回 是不是 already clear interchangeable / 319 consensusparams bundled interchangeable / consensusparams-sold-as-updated interchangeable、空着 是不是 already changed interchangeable、能更新 是不是 already InitChain-empty-same interchangeable。可以跳过「看见没回就已经清成默认 interchangeable / 就已经改过 interchangeable / 就已经和 InitChain 空回包同一句 interchangeable」。不要另写怎样编参数。319 consensusparams vs update bundled unbundling 在本页 item 2 完成；续 [`worked-example-consensusparams-notpartial-vs-bundled.md`](worked-example-consensusparams-notpartial-vs-bundled.md)（不变量 718 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Finalize 没回不是已经清掉 not already clear / not already changed / not already InitChain-empty-same 正式三事（319 余量），必须分开没回 是不是 already clear interchangeable / 319 consensusparams bundled interchangeable / consensusparams-sold-as-updated interchangeable、空着 是不是 already changed interchangeable、能更新 是不是 already InitChain-empty-same interchangeable。可以跳过「看见没回就已经清成默认 interchangeable / 就已经改过 interchangeable / 就已经和 InitChain 空回包同一句 interchangeable」。不要另写怎样编参数。319 consensusparams vs update bundled unbundling 在本页 item 2 完成；续 [`worked-example-consensusparams-notpartial-vs-bundled.md`](worked-example-consensusparams-notpartial-vs-bundled.md)（不变量 718 item 3）。319 consensusparams vs update bundled unbundling 在 716 + 717 + 718 完成。
 
 ## 本页不抄
 

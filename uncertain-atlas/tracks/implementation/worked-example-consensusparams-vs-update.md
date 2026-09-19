@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「ConsensusParams 已经回了」，必须分开 InitChain 空着是不是已经没有参数、Finalize 没回是不是已经清掉、只填一项是不是已经只改这一项。可以跳过「看见回了就已经改完」。不要另写怎样编参数或怎样选上限。不要把仓库默认 MaxBytes / MaxGas 当不确定默认。319 consensusparams vs update bundled unbundling 续（716 + 717）；精读 [`worked-example-consensusparams-notempty-vs-bundled.md`](worked-example-consensusparams-notempty-vs-bundled.md)（不变量 716 item 1）；[`worked-example-consensusparams-notclear-vs-bundled.md`](worked-example-consensusparams-notclear-vs-bundled.md)（不变量 717 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「ConsensusParams 已经回了」，必须分开 InitChain 空着是不是已经没有参数、Finalize 没回是不是已经清掉、只填一项是不是已经只改这一项。可以跳过「看见回了就已经改完」。不要另写怎样编参数或怎样选上限。不要把仓库默认 MaxBytes / MaxGas 当不确定默认。319 consensusparams vs update bundled unbundling 完成（716 + 717 + 718）；精读 [`worked-example-consensusparams-notempty-vs-bundled.md`](worked-example-consensusparams-notempty-vs-bundled.md)（不变量 716 item 1）；[`worked-example-consensusparams-notclear-vs-bundled.md`](worked-example-consensusparams-notclear-vs-bundled.md)（不变量 717 item 2）；[`worked-example-consensusparams-notpartial-vs-bundled.md`](worked-example-consensusparams-notpartial-vs-bundled.md)（不变量 718 item 3）。
 
 ## 本页不抄
 
