@@ -95,7 +95,7 @@ NMT 齐了，问的是「我这条命名空间有没有被扣了一截」。DAS 
 [blob-vs-das](worked-example-blob-vs-das.md) 钉的是三条**不同系统**的 DA 对象。  
 本页钉的是 Celestia **内部**两件套，外加编码诚实和历史检索。
 
-不要把 FAQ 里的百分比、方阵边长、中间根个数、论文加速句抄进不确定常量。也不要写怎样扣份额、怎样印错扩展。
+可以跳过「看见 NMT 齐了就已经整块可用」。124 nmt vs das bundled unbundling 完成（1512 item 1 / 1513 item 2 / 1514 item 3）；精读 [`worked-example-nmtd-notsq-vs-bundled.md`](worked-example-nmtd-notsq-vs-bundled.md)（不变量 1512 item 1）、[`worked-example-nmtd-notblob-vs-bundled.md`](worked-example-nmtd-notblob-vs-bundled.md)（不变量 1513 item 2）、[`worked-example-nmtd-notenc-vs-bundled.md`](worked-example-nmtd-notenc-vs-bundled.md)（不变量 1514 item 3）。不要把 FAQ 里的百分比、方阵边长、中间根个数、论文加速句抄进不确定常量。也不要写怎样扣份额、怎样印错扩展。
 
 ---
 

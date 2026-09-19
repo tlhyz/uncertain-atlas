@@ -1,3 +1,6 @@
+- [`name-the-nmtd-notenc-bar.md`](name-the-nmtd-notenc-bar.md) — NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）（不变量 1514）
+- [`name-the-nmtd-notblob-bar.md`](name-the-nmtd-notblob-bar.md) — NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）（不变量 1513）
+- [`name-the-nmtd-notsq-bar.md`](name-the-nmtd-notsq-bar.md) — NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）（不变量 1512）
 - [`name-the-dcert-notonly-bar.md`](name-the-dcert-notonly-bar.md) — AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）（不变量 1511）
 - [`name-the-dcert-notroll-bar.md`](name-the-dcert-notroll-bar.md) — AnyTrust anytrust not already rollup-da / not already 124 / not already 9 正式三事（142 余量）（不变量 1510）
 - [`name-the-dcert-notpost-bar.md`](name-the-dcert-notpost-bar.md) — AnyTrust dacert not already posted-full / not already 23 / not already 142-bundled 正式三事（142 余量）（不变量 1509）

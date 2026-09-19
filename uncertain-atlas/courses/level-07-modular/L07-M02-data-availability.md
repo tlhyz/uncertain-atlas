@@ -43,7 +43,7 @@ Merkle 路径证明「T 被头承诺过」。
 
 DAS：随机查询编码份额。安全是概率的，依赖参数与诚实应答节点。
 
-**NMT 完备性（另一问）：** 证明「这一命名空间的份额都给了」，不是证明扩展方阵已经可用。官方把 DAS 与 NMT 写成两件套。精读：[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md)（不变量 124）。
+**NMT 完备性（另一问）：** 证明「这一命名空间的份额都给了」，不是证明扩展方阵已经可用。官方把 DAS 与 NMT 写成两件套。精读：[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md) NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）：[`../../tracks/light-clients/worked-example-nmtd-notsq-vs-bundled.md`](../../tracks/light-clients/worked-example-nmtd-notsq-vs-bundled.md)（不变量 1512）。 NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）：[`../../tracks/light-clients/worked-example-nmtd-notblob-vs-bundled.md`](../../tracks/light-clients/worked-example-nmtd-notblob-vs-bundled.md)（不变量 1513）。 NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）：[`../../tracks/light-clients/worked-example-nmtd-notenc-vs-bundled.md`](../../tracks/light-clients/worked-example-nmtd-notenc-vs-bundled.md)（不变量 1514）。（不变量 124）。
 
 **事实：** 这是轻客户端安全的第三根柱子（另两根：共识证明、状态/包含证明）。
 **事实：** 抽样过关不是编码已经诚实（还要错误扩展欺诈证明 + 诚实桥节点），也不是历史已经有人存。

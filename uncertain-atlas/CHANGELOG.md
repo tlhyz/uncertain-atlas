@@ -1,3 +1,15 @@
+## 2026-09-19（续 1631）
+
+- 不变量 1514；语料 C1492；模式 name-the-nmtd-notenc-bar；反模式 nmtd-notenc-sold-as-bundled；L10.3 第 1483 条。填 L7.2 NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）。124 nmt vs das bundled unbundling 完成（1514 item 3）。
+
+## 2026-09-19（续 1630）
+
+- 不变量 1513；语料 C1491；模式 name-the-nmtd-notblob-bar；反模式 nmtd-notblob-sold-as-bundled；L10.3 第 1482 条。填 L7.2 NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）。124 nmt vs das bundled unbundling 续（1513 item 2）。
+
+## 2026-09-19（续 1629）
+
+- 不变量 1512；语料 C1490；模式 name-the-nmtd-notsq-bar；反模式 nmtd-notsq-sold-as-bundled；L10.3 第 1481 条。填 L7.2 NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）。124 nmt vs das bundled unbundling 启动（1512 item 1）。
+
 ## 2026-09-19（续 1628）
 
 - 不变量 1511；语料 C1489；模式 name-the-dcert-notonly-bar；反模式 dcert-notonly-sold-as-bundled；L10.3 第 1480 条。填 L7.2 AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）。142 dacert vs posted bundled unbundling 完成（1511 item 3）。

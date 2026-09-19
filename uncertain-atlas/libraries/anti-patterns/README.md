@@ -1,3 +1,6 @@
+- [`nmtd-notenc-sold-as-bundled.md`](nmtd-notenc-sold-as-bundled.md) — DAS抽样过关 被写成已经编码诚实 / 就已经是 23 / 就已经是 142（不变量 1514）
+- [`nmtd-notblob-sold-as-bundled.md`](nmtd-notblob-sold-as-bundled.md) — DAS抽样过关 被写成已经拿到自己的blob / 就已经是 142 / 就已经是 9（不变量 1513）
+- [`nmtd-notsq-sold-as-bundled.md`](nmtd-notsq-sold-as-bundled.md) — NMT命名空间齐了 被写成已经整块可用 / 就已经是 23 / 就已经 124 bundled（不变量 1512）
 - [`dcert-notonly-sold-as-bundled.md`](dcert-notonly-sold-as-bundled.md) — 回退贴全文 被写成已经只走委员会 / 就已经是 141 / 就已经是 23（不变量 1511）
 - [`dcert-notroll-sold-as-bundled.md`](dcert-notroll-sold-as-bundled.md) — AnyTrust 被写成已经是 Rollup DA / 就已经是 124 / 就已经是 9（不变量 1510）
 - [`dcert-notpost-sold-as-bundled.md`](dcert-notpost-sold-as-bundled.md) — DACert 被写成已经贴上全文 / 就已经是 23 / 就已经 142 bundled（不变量 1509）

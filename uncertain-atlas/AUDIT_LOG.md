@@ -1,3 +1,18 @@
+| A7335 | 记录 | 会与 124 / 23 / 142 / 1512 / 1513 糊成「看见DAS抽样过关不是扩展编码已经诚实就已经编码诚实 interchangeable、就已经是不变量 23 interchangeable、就已经是不变量 142 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。124 nmt vs das bundled unbundling 完成（1514 item 3） |
+| A7336 | 高 | 看见DAS抽样过关不是扩展编码已经诚实 会被写成已经编码诚实 interchangeable / 23 interchangeable | 官方 NMT nmtd item 3：not already 已经编码诚实 / not 23 |
+| A7337 | 高 | 看见a DAS sample pass is not already honest erasure encoding 会被写成已经是不变量 23 interchangeable / 142 interchangeable | 官方 NMT nmtd item 3：not already 已经是不变量 23 / not 142 |
+| A7338 | 高 | 看见DAS抽样过关不是扩展编码已经诚实 会被写成已经是不变量 142 interchangeable | 官方 NMT nmtd item 3：not already settled |
+| A7339 | 中 | 怎样扣份额、怎样印错扩展会被抄进不确定 | 不抄。不写 怎样扣份额、怎样印错扩展。不另写 19 节 |
+| A7330 | 记录 | 会与 124 / 142 / 9 / 1512 / 1514 糊成「看见DAS抽样过关不是已经拿到自己的blob就已经拿到自己的blob interchangeable、就已经是不变量 142 interchangeable、就已经是不变量 9 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。124 nmt vs das bundled unbundling 续（1513 item 2） |
+| A7331 | 高 | 看见DAS抽样过关不是已经拿到自己的blob 会被写成已经拿到自己的blob interchangeable / 142 interchangeable | 官方 NMT nmtd item 2：not already 已经拿到自己的blob / not 142 |
+| A7332 | 高 | 看见a DAS sample pass is not already holding your own blob 会被写成已经是不变量 142 interchangeable / 9 interchangeable | 官方 NMT nmtd item 2：not already 已经是不变量 142 / not 9 |
+| A7333 | 高 | 看见DAS抽样过关不是已经拿到自己的blob 会被写成已经是不变量 9 interchangeable | 官方 NMT nmtd item 2：not already settled |
+| A7334 | 中 | 怎样扣份额、怎样印错扩展会被抄进不确定 | 不抄。不写 怎样扣份额、怎样印错扩展。不另写 19 节 |
+| A7325 | 记录 | 会与 124 / 23 / 142 / 1513 / 1514 糊成「看见NMT证明命名空间齐了不是扩展方阵已经可用就已经整块可用 interchangeable、就已经是不变量 23 interchangeable、就已经 124 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。124 nmt vs das bundled unbundling 启动（1512 item 1） |
+| A7326 | 高 | 看见NMT证明命名空间齐了不是扩展方阵已经可用 会被写成已经整块可用 interchangeable / 23 interchangeable | 官方 NMT nmtd item 1：not already 已经整块可用 / not 23 |
+| A7327 | 高 | 看见an NMT namespace-complete proof is not already a usable extended square 会被写成已经是不变量 23 interchangeable / 142 interchangeable | 官方 NMT nmtd item 1：not already 已经是不变量 23 / not 142 |
+| A7328 | 高 | 看见NMT证明命名空间齐了不是扩展方阵已经可用 会被写成已经 124 bundled interchangeable | 官方 NMT nmtd item 1：not already settled |
+| A7329 | 中 | 怎样扣份额、怎样印错扩展会被抄进不确定 | 不抄。不写 怎样扣份额、怎样印错扩展。不另写 19 节 |
 | A7320 | 记录 | 会与 142 / 141 / 23 / 1509 / 1510 糊成「看见凑不齐签名回退贴全文不是已经只走委员会就已经只走委员会 interchangeable、就已经是不变量 141 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。142 dacert vs posted bundled unbundling 完成（1511 item 3） |
 | A7321 | 高 | 看见凑不齐签名回退贴全文不是已经只走委员会 会被写成已经只走委员会 interchangeable / 141 interchangeable | 官方 AnyTrust dcert item 3：not already 已经只走委员会 / not 141 |
 | A7322 | 高 | 看见falling back to posting the full batch is not already committee-only 会被写成已经是不变量 141 interchangeable / 23 interchangeable | 官方 AnyTrust dcert item 3：not already 已经是不变量 141 / not 23 |
