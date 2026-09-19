@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看没停链不是已经一致 not already consistent / not already async-safe / not already deterministic-bytes 正式三事（324 余量），必须分开没停链 是不是 already consistent interchangeable / 324 snapshottake bundled interchangeable / snapshottake-sold-as-committed interchangeable、后台拍 是不是 already async-safe interchangeable、同一高度 是不是 already deterministic-bytes interchangeable。可以跳过「看见没停链就已经一致 interchangeable / 就已经 Asynchronous 交差 interchangeable / 就已经各节点字节相同 interchangeable」。不要另写怎样拍快照。324 snapshottake vs commit bundled unbundling 在本页 item 2 续（728 + 729）；续 [`worked-example-snapshottake-notretained-vs-bundled.md`](worked-example-snapshottake-notretained-vs-bundled.md)（不变量 730 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看没停链不是已经一致 not already consistent / not already async-safe / not already deterministic-bytes 正式三事（324 余量），必须分开没停链 是不是 already consistent interchangeable / 324 snapshottake bundled interchangeable / snapshottake-sold-as-committed interchangeable、后台拍 是不是 already async-safe interchangeable、同一高度 是不是 already deterministic-bytes interchangeable。可以跳过「看见没停链就已经一致 interchangeable / 就已经 Asynchronous 交差 interchangeable / 就已经各节点字节相同 interchangeable」。不要另写怎样拍快照。324 snapshottake vs commit bundled unbundling 在本页 item 2 续（728 + 729）；续 [`worked-example-snapshottake-notretained-vs-bundled.md`](worked-example-snapshottake-notretained-vs-bundled.md)（不变量 730 item 3）已写；完成见 730。
 
 ## 本页不抄
 
