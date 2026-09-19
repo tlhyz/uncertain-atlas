@@ -1,3 +1,6 @@
+- [`tenv-notrcpt-sold-as-bundled.md`](tenv-notrcpt-sold-as-bundled.md) — 看见收据 被写成类型已经对上 / 就已经是 158 / 就已经是 161（不变量 1457）
+- [`tenv-notenv-sold-as-bundled.md`](tenv-notenv-sold-as-bundled.md) — 旧式 RLP 被写成已经是类型信封 / 就已经是 155 / 就已经把类型签进哈希（不变量 1456）
+- [`tenv-notinner-sold-as-bundled.md`](tenv-notinner-sold-as-bundled.md) — 类型字节 被写成已经解开内层 / 就已经是 1559 / 就已经 167 bundled（不变量 1455）
 - [`alist-notread-sold-as-bundled.md`](alist-notread-sold-as-bundled.md) — 预付列表费 被写成已经跑完读取 / 就已经更热 / 就已经是 2718 信封（不变量 1454）
 - [`alist-notban-sold-as-bundled.md`](alist-notban-sold-as-bundled.md) — 列表外 被写成已经不能碰 / 就已经非法 / 就已经是 1559（不变量 1453）
 - [`alist-notacc-sold-as-bundled.md`](alist-notacc-sold-as-bundled.md) — 列入 被写成已经访问过 / 就已经是 2929 第一次 / 就已经 168 bundled（不变量 1452）

@@ -1,3 +1,18 @@
+| A7050 | 记录 | 会与 167 / 158 / 161 / 1455 / 1456 糊成「看见看见收据不是收据类型已经对上该笔就收据类型已经对上该笔 interchangeable、就已经是不变量 158 interchangeable、就已经是不变量 161 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2718 seeing-receipt not already type-matched / not already 158 / not already 161 正式三事（167 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。167 typed vs legacy bundled unbundling 完成（1457 item 3） |
+| A7051 | 高 | 看见看见收据不是收据类型已经对上该笔 会被写成收据类型已经对上该笔 interchangeable / 158 interchangeable | 官方 EIP-2718 tenv item 3：not already 收据类型已经对上该笔 / not 158 |
+| A7052 | 高 | 看见seeing a receipt is not already type-matched 会被写成已经是不变量 158 interchangeable / 161 interchangeable | 官方 EIP-2718 tenv item 3：not already 已经是不变量 158 / not 161 |
+| A7053 | 高 | 看见看见收据不是收据类型已经对上该笔 会被写成已经是不变量 161 interchangeable | 官方 EIP-2718 tenv item 3：not already settled |
+| A7054 | 中 | 怎样跨类型复用签名会被抄进不确定 | 不抄。不写 怎样跨类型复用签名。不另写 19 节 |
+| A7045 | 记录 | 会与 167 / 161 / 158 / 1455 / 1457 糊成「看见旧式 RLP 列表不是已经是类型信封就已经是类型信封 interchangeable、就已经是 155 interchangeable、就已经把类型签进哈希 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2718 legacy-RLP not already envelope / not already 155 / not already signed-type 正式三事（167 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。167 typed vs legacy bundled unbundling 续（1456 item 2） |
+| A7046 | 高 | 看见旧式 RLP 列表不是已经是类型信封 会被写成已经是类型信封 interchangeable / 161 interchangeable | 官方 EIP-2718 tenv item 2：not already 已经是类型信封 / not 161 |
+| A7047 | 高 | 看见legacy RLP list is not already a typed envelope 会被写成已经是 155 interchangeable / 158 interchangeable | 官方 EIP-2718 tenv item 2：not already 已经是 155 / not 158 |
+| A7048 | 高 | 看见旧式 RLP 列表不是已经是类型信封 会被写成已经把类型签进哈希 interchangeable | 官方 EIP-2718 tenv item 2：not already settled |
+| A7049 | 中 | 怎样跨类型复用签名会被抄进不确定 | 不抄。不写 怎样跨类型复用签名。不另写 19 节 |
+| A7040 | 记录 | 会与 167 / 158 / 168 / 1456 / 1457 糊成「看见类型字节不是已经解开内层字段就已经解开内层字段 interchangeable、就已经是 1559 interchangeable、就已经 167 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2718 type-byte not already unpacked / not already 1559 / not already 167-bundled 正式三事（167 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。167 typed vs legacy bundled unbundling 启动（1455 item 1） |
+| A7041 | 高 | 看见类型字节不是已经解开内层字段 会被写成已经解开内层字段 interchangeable / 158 interchangeable | 官方 EIP-2718 tenv item 1：not already 已经解开内层字段 / not 158 |
+| A7042 | 高 | 看见type byte is not already unpacked inner fields 会被写成已经是 1559 interchangeable / 168 interchangeable | 官方 EIP-2718 tenv item 1：not already 已经是 1559 / not 168 |
+| A7043 | 高 | 看见类型字节不是已经解开内层字段 会被写成已经 167 bundled interchangeable | 官方 EIP-2718 tenv item 1：not already settled |
+| A7044 | 中 | 怎样跨类型复用签名会被抄进不确定 | 不抄。不写 怎样跨类型复用签名。不另写 19 节 |
 | A7035 | 记录 | 会与 168 / 167 / 169 / 1452 / 1453 糊成「看见预付列表费不是已经跑完读取就已经跑完读取 interchangeable、就已经更热 interchangeable、就已经是 2718 信封 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2930 list-fee not already ran-read / not already hotter / not already 2718 正式三事（168 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。168 listed vs accessed bundled unbundling 完成（1454 item 3） |
 | A7036 | 高 | 看见预付列表费不是已经跑完读取 会被写成已经跑完读取 interchangeable / 167 interchangeable | 官方 EIP-2930 alist item 3：not already 已经跑完读取 / not 167 |
 | A7037 | 高 | 看见prepaid list fee is not already having run the read 会被写成已经更热 interchangeable / 169 interchangeable | 官方 EIP-2930 alist item 3：not already 已经更热 / not 169 |

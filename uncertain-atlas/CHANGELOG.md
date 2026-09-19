@@ -1,3 +1,15 @@
+## 2026-09-19（续 1574）
+
+- 不变量 1457；语料 C1435；模式 name-the-tenv-notrcpt-bar；反模式 tenv-notrcpt-sold-as-bundled；L10.3 第 1426 条。填 L5.1 EIP-2718 seeing-receipt not already type-matched / not already 158 / not already 161 正式三事（167 余量）。167 typed vs legacy bundled unbundling 完成（1457 item 3）。
+
+## 2026-09-19（续 1573）
+
+- 不变量 1456；语料 C1434；模式 name-the-tenv-notenv-bar；反模式 tenv-notenv-sold-as-bundled；L10.3 第 1425 条。填 L5.1 EIP-2718 legacy-RLP not already envelope / not already 155 / not already signed-type 正式三事（167 余量）。167 typed vs legacy bundled unbundling 续（1456 item 2）。
+
+## 2026-09-19（续 1572）
+
+- 不变量 1455；语料 C1433；模式 name-the-tenv-notinner-bar；反模式 tenv-notinner-sold-as-bundled；L10.3 第 1424 条。填 L5.1 EIP-2718 type-byte not already unpacked / not already 1559 / not already 167-bundled 正式三事（167 余量）。167 typed vs legacy bundled unbundling 启动（1455 item 1）。
+
 ## 2026-09-19（续 1571）
 
 - 不变量 1454；语料 C1432；模式 name-the-alist-notread-bar；反模式 alist-notread-sold-as-bundled；L10.3 第 1423 条。填 L5.1 EIP-2930 list-fee not already ran-read / not already hotter / not already 2718 正式三事（168 余量）。168 listed vs accessed bundled unbundling 完成（1454 item 3）。

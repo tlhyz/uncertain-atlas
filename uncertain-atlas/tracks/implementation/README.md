@@ -813,6 +813,9 @@
 - [`worked-example-keypath-vs-scriptpath.md`](worked-example-keypath-vs-scriptpath.md) — 钥匙路径 ≠ 已经揭开脚本树；脚本路径 ≠ 已经揭开全部脚本（不变量 153）
 - [`worked-example-tapscript-vs-scriptpath.md`](worked-example-tapscript-vs-scriptpath.md) — 走脚本路径 ≠ 已经是 tapscript 语义；遇见成功操作码 ≠ 已经执行完；342 ≠ 341 ≠ 141 ≠ 16（不变量 189）
 - [`worked-example-miniscript-vs-script.md`](worked-example-miniscript-vs-script.md) — 看见 Miniscript ≠ 已经是链上脚本；共识健全 ≠ 已经是策略完备；379 ≠ 380 ≠ 342 ≠ 16（不变量 191）
+- [`worked-example-tenv-notinner-vs-bundled.md`](worked-example-tenv-notinner-vs-bundled.md) — 类型字节≠already 解开内层/1559/167 bundled；≠167 bundled（不变量 1455）
+- [`worked-example-tenv-notenv-vs-bundled.md`](worked-example-tenv-notenv-vs-bundled.md) — 旧式RLP≠already 类型信封/155/已签类型；≠167 bundled（不变量 1456）
+- [`worked-example-tenv-notrcpt-vs-bundled.md`](worked-example-tenv-notrcpt-vs-bundled.md) — 看见收据≠already 类型已对上/158/161；≠167 bundled（不变量 1457）
 - [`worked-example-typed-vs-legacy.md`](worked-example-typed-vs-legacy.md) — 类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封；2718 ≠ 1559 ≠ 155（不变量 167）
 - [`../finality/worked-example-request-vs-action.md`](../finality/worked-example-request-vs-action.md) — 看见头里的请求承诺 ≠ 已经由共识层处理完；请求 ≠ 已经有权单独促成动作；7685 ≠ 4895 ≠ 2718（不变量 192）
 - [`../state-models/worked-example-delegation-vs-code.md`](../state-models/worked-example-delegation-vs-code.md) — 看见授权名单 ≠ 已经委托成功；委托指示 ≠ 已经是目标代码；7702 ≠ 3607 ≠ 3541 ≠ 2718（不变量 190）
