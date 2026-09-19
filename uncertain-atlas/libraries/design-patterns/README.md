@@ -1,3 +1,6 @@
+- [`name-the-bsch-notel-bar.md`](name-the-bsch-notel-bar.md) — EIP-7691 cl-rename not already el-activated / not already safer / not already 145 正式三事（200 余量）（不变量 1496）
+- [`name-the-bsch-notratio-bar.md`](name-the-bsch-notratio-bar.md) — EIP-7691 new-ratio not already old-symmetric / not already 23 / not already 197 正式三事（200 余量）（不变量 1495）
+- [`name-the-bsch-notgas-bar.md`](name-the-bsch-notgas-bar.md) — EIP-7691 raise-schedule not already gas-split-changed / not already 145 / not already 200-bundled 正式三事（200 余量）（不变量 1494）
 - [`name-the-blgas-notperm-bar.md`](name-the-blgas-notperm-bar.md) — EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）（不变量 1493）
 - [`name-the-blgas-notbyte-bar.md`](name-the-blgas-notbyte-bar.md) — EIP-4844 blobhash not already sidecar-bytes / not already 197 / not already 201 正式三事（145 余量）（不变量 1492）
 - [`name-the-blgas-notexec-bar.md`](name-the-blgas-notexec-bar.md) — EIP-4844 blob-gas not already execution-gas / not already 23 / not already 145-bundled 正式三事（145 余量）（不变量 1491）

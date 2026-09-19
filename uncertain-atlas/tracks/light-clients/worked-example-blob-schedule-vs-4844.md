@@ -84,7 +84,7 @@
 | 经济 | 新比打破对称；不抄调价分母 |
 
 **推断：** 产品句若只写「blob 更多了」，读者会把日程听成已经改了气种，或把本页听成已经是 PeerDAS。  
-**建议：** 第一版不要把短时 blob 当默认 DA。若对照，必须分开日程、气种、抽样。不要发明「看见 7691 就已经上了 DAS」。不要抄条数。不要把 7691 写成 4844。
+**建议：** 第一版不要把短时 blob 当默认 DA。若对照，必须分开日程、气种、抽样。可以跳过「看见 7691 就已经上了 DAS」。200 blob-schedule vs 4844 bundled unbundling 完成（1494 item 1 / 1495 item 2 / 1496 item 3）；精读 [`worked-example-bsch-notgas-vs-bundled.md`](worked-example-bsch-notgas-vs-bundled.md)（不变量 1494 item 1）、[`worked-example-bsch-notratio-vs-bundled.md`](worked-example-bsch-notratio-vs-bundled.md)（不变量 1495 item 2）、[`worked-example-bsch-notel-vs-bundled.md`](worked-example-bsch-notel-vs-bundled.md)（不变量 1496 item 3）。不要发明「看见 7691 就已经上了 DAS」。不要抄条数。不要把 7691 写成 4844。
 
 ---
 

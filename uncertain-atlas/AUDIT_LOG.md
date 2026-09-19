@@ -1,3 +1,18 @@
+| A7245 | 记录 | 会与 200 / 145 / 201 / 1494 / 1495 糊成「看见共识层换名不是已经是执行层激活就已经是执行层激活 interchangeable、就已经更安全 interchangeable、就已经是不变量 145 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7691 cl-rename not already el-activated / not already safer / not already 145 正式三事（200 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。200 blob-schedule vs 4844 bundled unbundling 完成（1496 item 3） |
+| A7246 | 高 | 看见共识层换名不是已经是执行层激活 会被写成已经是执行层激活 interchangeable / 145 interchangeable | 官方 EIP-7691 bsch item 3：not already 已经是执行层激活 / not 145 |
+| A7247 | 高 | 看见CL rename is not already EL activation 会被写成已经更安全 interchangeable / 201 interchangeable | 官方 EIP-7691 bsch item 3：not already 已经更安全 / not 201 |
+| A7248 | 高 | 看见共识层换名不是已经是执行层激活 会被写成已经是不变量 145 interchangeable | 官方 EIP-7691 bsch item 3：not already settled |
+| A7249 | 中 | 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标会被抄进不确定 | 不抄。不写 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标。不另写 19 节 |
+| A7240 | 记录 | 会与 200 / 23 / 197 / 1494 / 1496 糊成「看见新的目标上限比不是已经还是旧的对称调价就已经还是旧对称 interchangeable、就已经是不变量 23 interchangeable、就已经是不变量 197 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7691 new-ratio not already old-symmetric / not already 23 / not already 197 正式三事（200 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。200 blob-schedule vs 4844 bundled unbundling 续（1495 item 2） |
+| A7241 | 高 | 看见新的目标上限比不是已经还是旧的对称调价 会被写成已经还是旧对称 interchangeable / 23 interchangeable | 官方 EIP-7691 bsch item 2：not already 已经还是旧对称 / not 23 |
+| A7242 | 高 | 看见the new target-max ratio is not already the old symmetric pricing 会被写成已经是不变量 23 interchangeable / 197 interchangeable | 官方 EIP-7691 bsch item 2：not already 已经是不变量 23 / not 197 |
+| A7243 | 高 | 看见新的目标上限比不是已经还是旧的对称调价 会被写成已经是不变量 197 interchangeable | 官方 EIP-7691 bsch item 2：not already settled |
+| A7244 | 中 | 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标会被抄进不确定 | 不抄。不写 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标。不另写 19 节 |
+| A7235 | 记录 | 会与 200 / 145 / 23 / 1495 / 1496 糊成「看见抬高blob目标上限不是已经改了两套气的拆分就已经改了两套气的拆分 interchangeable、就已经是不变量 145 interchangeable、就已经 200 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7691 raise-schedule not already gas-split-changed / not already 145 / not already 200-bundled 正式三事（200 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。200 blob-schedule vs 4844 bundled unbundling 启动（1494 item 1） |
+| A7236 | 高 | 看见抬高blob目标上限不是已经改了两套气的拆分 会被写成已经改了两套气的拆分 interchangeable / 145 interchangeable | 官方 EIP-7691 bsch item 1：not already 已经改了两套气的拆分 / not 145 |
+| A7237 | 高 | 看见raising the blob schedule is not already a gas-split change 会被写成已经是不变量 145 interchangeable / 23 interchangeable | 官方 EIP-7691 bsch item 1：not already 已经是不变量 145 / not 23 |
+| A7238 | 高 | 看见抬高blob目标上限不是已经改了两套气的拆分 会被写成已经 200 bundled interchangeable | 官方 EIP-7691 bsch item 1：not already settled |
+| A7239 | 中 | 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标会被抄进不确定 | 不抄。不写 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标。不另写 19 节 |
 | A7230 | 记录 | 会与 145 / 101 / 144 / 1491 / 1492 糊成「看见付了blob fee不是数据已经永存就已经永存 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。145 blob-fee vs gas bundled unbundling 完成（1493 item 3） |
 | A7231 | 高 | 看见付了blob fee不是数据已经永存 会被写成已经永存 interchangeable / 101 interchangeable | 官方 EIP-4844 blgas item 3：not already 已经永存 / not 101 |
 | A7232 | 高 | 看见paying blob fee is not already perpetual data 会被写成已经更安全 interchangeable / 144 interchangeable | 官方 EIP-4844 blgas item 3：not already 已经更安全 / not 144 |
