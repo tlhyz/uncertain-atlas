@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Code 非零不是已经没进块 not already excluded from block / not already excluded from consensus / not already same as CheckTx gate 正式三事（316 余量），必须分开标成无效 是不是 already excluded from block interchangeable / 316 exectxresult bundled interchangeable / exectxresult-sold-as-consensus interchangeable、没索引 是不是 already excluded from consensus interchangeable、类比 CheckTx 是不是 already same as CheckTx gate interchangeable。可以跳过「看见 Code 非零就已经没进块 interchangeable / 就已经没进共识 interchangeable / 就已经和池门同一把尺 interchangeable」。不要另写怎样建索引。316 exectxresult vs consensus bundled unbundling 在本页 item 2 完成；续 [`worked-example-exectxresult-notheader-vs-bundled.md`](worked-example-exectxresult-notheader-vs-bundled.md)（不变量 709 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Code 非零不是已经没进块 not already excluded from block / not already excluded from consensus / not already same as CheckTx gate 正式三事（316 余量），必须分开标成无效 是不是 already excluded from block interchangeable / 316 exectxresult bundled interchangeable / exectxresult-sold-as-consensus interchangeable、没索引 是不是 already excluded from consensus interchangeable、类比 CheckTx 是不是 already same as CheckTx gate interchangeable。可以跳过「看见 Code 非零就已经没进块 interchangeable / 就已经没进共识 interchangeable / 就已经和池门同一把尺 interchangeable」。不要另写怎样建索引。316 exectxresult vs consensus bundled unbundling 在本页 item 2 完成；续 [`worked-example-exectxresult-notheader-vs-bundled.md`](worked-example-exectxresult-notheader-vs-bundled.md)（不变量 709 item 3）。
 
 ## 本页不抄
 
