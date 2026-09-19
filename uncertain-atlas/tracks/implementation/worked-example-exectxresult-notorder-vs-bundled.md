@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看结果列表不是已经同一顺序 not already same order / not already count-implies-order / not already engine-ordered 正式三事（316 余量），必须分开回了列表 是不是 already same order interchangeable / 316 exectxresult bundled interchangeable / exectxresult-sold-as-consensus interchangeable、条数一样 是不是 already count-implies-order interchangeable、Finalize 回了 是不是 already engine-ordered interchangeable。可以跳过「看见回了就已经对上顺序 interchangeable / 就已经条数等于顺序 interchangeable / 就已经引擎排好 interchangeable」。不要另写怎样编回执。316 exectxresult vs consensus bundled unbundling 在本页 item 1 完成；续 [`worked-example-exectxresult-notexcluded-vs-bundled.md`](worked-example-exectxresult-notexcluded-vs-bundled.md)（不变量 708 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看结果列表不是已经同一顺序 not already same order / not already count-implies-order / not already engine-ordered 正式三事（316 余量），必须分开回了列表 是不是 already same order interchangeable / 316 exectxresult bundled interchangeable / exectxresult-sold-as-consensus interchangeable、条数一样 是不是 already count-implies-order interchangeable、Finalize 回了 是不是 already engine-ordered interchangeable。可以跳过「看见回了就已经对上顺序 interchangeable / 就已经条数等于顺序 interchangeable / 就已经引擎排好 interchangeable」。不要另写怎样编回执。316 exectxresult vs consensus bundled unbundling 在本页 item 1 完成；续 [`worked-example-exectxresult-notexcluded-vs-bundled.md`](worked-example-exectxresult-notexcluded-vs-bundled.md)（不变量 708 item 2）。
 
 ## 本页不抄
 
