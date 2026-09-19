@@ -1,3 +1,6 @@
+- [`name-the-alist-notread-bar.md`](name-the-alist-notread-bar.md) — EIP-2930 list-fee not already ran-read / not already hotter / not already 2718 正式三事（168 余量）（不变量 1454）
+- [`name-the-alist-notban-bar.md`](name-the-alist-notban-bar.md) — EIP-2930 outside-list not already forbidden / not already illegal / not already 1559 正式三事（168 余量）（不变量 1453）
+- [`name-the-alist-notacc-bar.md`](name-the-alist-notacc-bar.md) — EIP-2930 listed not already accessed / not already 2929-touch / not already 168-bundled 正式三事（168 余量）（不变量 1452）
 - [`name-the-cwarm-notany-bar.md`](name-the-cwarm-notany-bar.md) — EIP-2929 prefill not already any-address-warm / not already 2930 / not already 101 正式三事（169 余量）（不变量 1451）
 - [`name-the-cwarm-notrecold-bar.md`](name-the-cwarm-notrecold-bar.md) — EIP-2929 retouch not already cold-again / not already forever-warm / not already 168 正式三事（169 余量）（不变量 1450）
 - [`name-the-cwarm-notwarm-bar.md`](name-the-cwarm-notwarm-bar.md) — EIP-2929 first-touch not already warm / not already next-tx / not already 169-bundled 正式三事（169 余量）（不变量 1449）

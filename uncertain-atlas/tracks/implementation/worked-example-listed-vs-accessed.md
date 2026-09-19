@@ -83,7 +83,7 @@
 | 经济 | 列表费鼓励预声明；不列几乎不亏，不是已经强制 |
 
 **推断：** 产品句若只写「支持访问列表」，读者会把购物清单听成已经逛完。  
-**建议：** 第一版必须把计划访问、列表外仍能碰、已经读过三套文案分开。不要发明「列入 = 已经访问」。不要抄气价。不要写怎样生成列表。
+**建议：** 第一版必须把计划访问、列表外仍能碰、已经读过三套文案分开。可以跳过「列入 = 已经访问」。168 listed vs accessed bundled unbundling 完成（1452 item 1 / 1453 item 2 / 1454 item 3）；精读 [`worked-example-alist-notacc-vs-bundled.md`](worked-example-alist-notacc-vs-bundled.md)（不变量 1452 item 1）、[`worked-example-alist-notban-vs-bundled.md`](worked-example-alist-notban-vs-bundled.md)（不变量 1453 item 2）、[`worked-example-alist-notread-vs-bundled.md`](worked-example-alist-notread-vs-bundled.md)（不变量 1454 item 3）。不要发明「列入 = 已经访问」。不要抄气价。不要写怎样生成列表。
 
 ---
 

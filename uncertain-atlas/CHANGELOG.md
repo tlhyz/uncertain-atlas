@@ -1,3 +1,15 @@
+## 2026-09-19（续 1571）
+
+- 不变量 1454；语料 C1432；模式 name-the-alist-notread-bar；反模式 alist-notread-sold-as-bundled；L10.3 第 1423 条。填 L5.1 EIP-2930 list-fee not already ran-read / not already hotter / not already 2718 正式三事（168 余量）。168 listed vs accessed bundled unbundling 完成（1454 item 3）。
+
+## 2026-09-19（续 1570）
+
+- 不变量 1453；语料 C1431；模式 name-the-alist-notban-bar；反模式 alist-notban-sold-as-bundled；L10.3 第 1422 条。填 L5.1 EIP-2930 outside-list not already forbidden / not already illegal / not already 1559 正式三事（168 余量）。168 listed vs accessed bundled unbundling 续（1453 item 2）。
+
+## 2026-09-19（续 1569）
+
+- 不变量 1452；语料 C1430；模式 name-the-alist-notacc-bar；反模式 alist-notacc-sold-as-bundled；L10.3 第 1421 条。填 L5.1 EIP-2930 listed not already accessed / not already 2929-touch / not already 168-bundled 正式三事（168 余量）。168 listed vs accessed bundled unbundling 启动（1452 item 1）。
+
 ## 2026-09-19（续 1568）
 
 - 不变量 1451；语料 C1429；模式 name-the-cwarm-notany-bar；反模式 cwarm-notany-sold-as-bundled；L10.3 第 1420 条。填 L5.1 EIP-2929 prefill not already any-address-warm / not already 2930 / not already 101 正式三事（169 余量）。169 cold vs warm bundled unbundling 完成（1451 item 3）。

@@ -1,3 +1,18 @@
+| A7035 | 记录 | 会与 168 / 167 / 169 / 1452 / 1453 糊成「看见预付列表费不是已经跑完读取就已经跑完读取 interchangeable、就已经更热 interchangeable、就已经是 2718 信封 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2930 list-fee not already ran-read / not already hotter / not already 2718 正式三事（168 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。168 listed vs accessed bundled unbundling 完成（1454 item 3） |
+| A7036 | 高 | 看见预付列表费不是已经跑完读取 会被写成已经跑完读取 interchangeable / 167 interchangeable | 官方 EIP-2930 alist item 3：not already 已经跑完读取 / not 167 |
+| A7037 | 高 | 看见prepaid list fee is not already having run the read 会被写成已经更热 interchangeable / 169 interchangeable | 官方 EIP-2930 alist item 3：not already 已经更热 / not 169 |
+| A7038 | 高 | 看见预付列表费不是已经跑完读取 会被写成已经是 2718 信封 interchangeable | 官方 EIP-2930 alist item 3：not already settled |
+| A7039 | 中 | 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问会被抄进不确定 | 不抄。不写 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问。不另写 19 节 |
+| A7030 | 记录 | 会与 168 / 158 / 167 / 1452 / 1454 糊成「看见列表外不是已经不能碰就已经不能碰 interchangeable、就已经非法 interchangeable、就已经是 1559 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2930 outside-list not already forbidden / not already illegal / not already 1559 正式三事（168 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。168 listed vs accessed bundled unbundling 续（1453 item 2） |
+| A7031 | 高 | 看见列表外不是已经不能碰 会被写成已经不能碰 interchangeable / 158 interchangeable | 官方 EIP-2930 alist item 2：not already 已经不能碰 / not 158 |
+| A7032 | 高 | 看见outside the list is not already forbidden 会被写成已经非法 interchangeable / 167 interchangeable | 官方 EIP-2930 alist item 2：not already 已经非法 / not 167 |
+| A7033 | 高 | 看见列表外不是已经不能碰 会被写成已经是 1559 interchangeable | 官方 EIP-2930 alist item 2：not already settled |
+| A7034 | 中 | 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问会被抄进不确定 | 不抄。不写 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问。不另写 19 节 |
+| A7025 | 记录 | 会与 168 / 169 / 187 / 1453 / 1454 糊成「看见列出地址或槽不是已经访问过就已经访问过 interchangeable、就已经是 2929 本笔第一次碰 interchangeable、就已经 168 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2930 listed not already accessed / not already 2929-touch / not already 168-bundled 正式三事（168 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。168 listed vs accessed bundled unbundling 启动（1452 item 1） |
+| A7026 | 高 | 看见列出地址或槽不是已经访问过 会被写成已经访问过 interchangeable / 169 interchangeable | 官方 EIP-2930 alist item 1：not already 已经访问过 / not 169 |
+| A7027 | 高 | 看见listing an address or slot is not already accessed 会被写成已经是 2929 本笔第一次碰 interchangeable / 187 interchangeable | 官方 EIP-2930 alist item 1：not already 已经是 2929 本笔第一次碰 / not 187 |
+| A7028 | 高 | 看见列出地址或槽不是已经访问过 会被写成已经 168 bundled interchangeable | 官方 EIP-2930 alist item 1：not already settled |
+| A7029 | 中 | 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问会被抄进不确定 | 不抄。不写 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问。不另写 19 节 |
 | A7020 | 记录 | 会与 169 / 187 / 101 / 1449 / 1450 糊成「看见开跑预填不是任意地址已经热就任意地址已经热 interchangeable、就已经是 2930 名单 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2929 prefill not already any-address-warm / not already 2930 / not already 101 正式三事（169 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。169 cold vs warm bundled unbundling 完成（1451 item 3） |
 | A7021 | 高 | 看见开跑预填不是任意地址已经热 会被写成任意地址已经热 interchangeable / 187 interchangeable | 官方 EIP-2929 cwarm item 3：not already 任意地址已经热 / not 187 |
 | A7022 | 高 | 看见sender/to/precompile prefill is not any address already warm 会被写成已经是 2930 名单 interchangeable / 101 interchangeable | 官方 EIP-2929 cwarm item 3：not already 已经是 2930 名单 / not 101 |

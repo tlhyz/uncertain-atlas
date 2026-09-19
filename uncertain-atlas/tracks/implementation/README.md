@@ -816,6 +816,9 @@
 - [`worked-example-typed-vs-legacy.md`](worked-example-typed-vs-legacy.md) — 类型字节 ≠ 已经解开内层；旧式列表 ≠ 已经是信封；2718 ≠ 1559 ≠ 155（不变量 167）
 - [`../finality/worked-example-request-vs-action.md`](../finality/worked-example-request-vs-action.md) — 看见头里的请求承诺 ≠ 已经由共识层处理完；请求 ≠ 已经有权单独促成动作；7685 ≠ 4895 ≠ 2718（不变量 192）
 - [`../state-models/worked-example-delegation-vs-code.md`](../state-models/worked-example-delegation-vs-code.md) — 看见授权名单 ≠ 已经委托成功；委托指示 ≠ 已经是目标代码；7702 ≠ 3607 ≠ 3541 ≠ 2718（不变量 190）
+- [`worked-example-alist-notacc-vs-bundled.md`](worked-example-alist-notacc-vs-bundled.md) — 列入≠already 已访问/2929第一次/168 bundled；≠168 bundled（不变量 1452）
+- [`worked-example-alist-notban-vs-bundled.md`](worked-example-alist-notban-vs-bundled.md) — 列表外≠already 不能碰/非法/1559；≠168 bundled（不变量 1453）
+- [`worked-example-alist-notread-vs-bundled.md`](worked-example-alist-notread-vs-bundled.md) — 预付列表费≠already 跑完读取/更热/2718信封；≠168 bundled（不变量 1454）
 - [`worked-example-listed-vs-accessed.md`](worked-example-listed-vs-accessed.md) — 列出地址或槽 ≠ 已经访问过；列表外 ≠ 已经不能碰；2930 ≠ 2718 ≠ 1559（不变量 168）
 - [`worked-example-cwarm-notwarm-vs-bundled.md`](worked-example-cwarm-notwarm-vs-bundled.md) — 本笔第一次碰≠already 已热/下一笔还热/169 bundled；≠169 bundled（不变量 1449）
 - [`worked-example-cwarm-notrecold-vs-bundled.md`](worked-example-cwarm-notrecold-vs-bundled.md) — 本笔再碰≠already 又是冷的/永远热/168；≠169 bundled（不变量 1450）
