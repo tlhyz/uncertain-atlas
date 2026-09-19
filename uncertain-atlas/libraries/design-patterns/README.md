@@ -1,3 +1,4 @@
+- [`name-the-snapshotrestore-notresume-bar.md`](name-the-snapshotrestore-notresume-bar.md) — 拉失败换一份不是已经能接着装 not already can-resume / not already same-snapshot / not already prior-usable 正式三事（321 余量）（不变量 721）
 - [`name-the-snapshotrestore-notchunkcomplete-bar.md`](name-the-snapshotrestore-notchunkcomplete-bar.md) — 一块 chunk 收下不是已经齐 not already complete / not already banned / not already settled 正式三事（321 余量）（不变量 720）
 - [`name-the-snapshotrestore-notrestored-bar.md`](name-the-snapshotrestore-notrestored-bar.md) — Offer 收下不是已经装完 not already restored / not already all-chunks / not already AppHash-verified 正式三事（321 余量）（不变量 719）
 - [`name-the-consensusparams-notpartial-bar.md`](name-the-consensusparams-notpartial-bar.md) — 只改一个字段不是已经只改这一项 not already only-that / not already rest-unchanged / not already field-merge 正式三事（319 余量）（不变量 718）

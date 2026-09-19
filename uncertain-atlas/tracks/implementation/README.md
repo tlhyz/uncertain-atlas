@@ -145,6 +145,7 @@
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-snapshotrestore-notresume-vs-bundled.md`](worked-example-snapshotrestore-notresume-vs-bundled.md) — 换了一份≠能接着装/能重试≠同一份/失败了≠装过的还能用；≠321 bundled（不变量 721）
 - [`worked-example-snapshotrestore-notchunkcomplete-vs-bundled.md`](worked-example-snapshotrestore-notchunkcomplete-vs-bundled.md) — 收下一块≠齐/回了再拉≠封禁/能回指令≠交差；≠321 bundled（不变量 720）
 - [`worked-example-snapshotrestore-notrestored-vs-bundled.md`](worked-example-snapshotrestore-notrestored-vs-bundled.md) — Offer收下≠装完/选了这份≠全部块/元数据对上≠验过AppHash；≠321 bundled（不变量 719）
 - [`worked-example-consensusparams-notpartial-vs-bundled.md`](worked-example-consensusparams-notpartial-vs-bundled.md) — 只填一项≠只改这一项/没写字段≠保持原值/能整份套上≠按字段合并；≠319 bundled（不变量 718）
