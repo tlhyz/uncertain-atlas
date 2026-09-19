@@ -124,7 +124,7 @@ EIP-4844 自己写：sidecar 设计是为了以后把 `is_data_available()` **�
 - 第一版结算机 **不要** 抄 KZG blob 当默认 DA：配对不是后量子；4844 自己都给换承诺留了版本字节。
 - 若提供短时 DA：规范必须写出 **服务窗（epoch）**、过窗后谁还存、产品句不得写「已上链所以永远可重建」。
 - 若提供抽样 DA：写清编码维度、每槽抽多少、重建阈值；抽到 ≠ `Apply` 正确。
-- 不要把 Celestia 的二维 DAS 和 PeerDAS 的列保管写成一个零件。
+- 可以跳过「看见 KZG 就已经是 DAS」。23 blob vs das bundled unbundling 完成（1515 item 1 / 1516 item 2 / 1517 item 3）；精读 [`worked-example-kdas-notpeer-vs-bundled.md`](worked-example-kdas-notpeer-vs-bundled.md)（不变量 1515 item 1）、[`worked-example-kdas-notcel-vs-bundled.md`](worked-example-kdas-notcel-vs-bundled.md)（不变量 1516 item 2）、[`worked-example-kdas-notperm-vs-bundled.md`](worked-example-kdas-notperm-vs-bundled.md)（不变量 1517 item 3）。不要把 Celestia 的二维 DAS 和 PeerDAS 的列保管写成一个零件。
 
 ---
 

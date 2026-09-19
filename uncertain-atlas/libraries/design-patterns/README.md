@@ -1,3 +1,6 @@
+- [`name-the-kdas-notperm-bar.md`](name-the-kdas-notperm-bar.md) — EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）（不变量 1517）
+- [`name-the-kdas-notcel-bar.md`](name-the-kdas-notcel-bar.md) — EIP-4844 peerdas not already celestia-das / not already 124 / not already 200 正式三事（23 余量）（不变量 1516）
+- [`name-the-kdas-notpeer-bar.md`](name-the-kdas-notpeer-bar.md) — EIP-4844 sidecar not already peerdas / not already 145 / not already 23-bundled 正式三事（23 余量）（不变量 1515）
 - [`name-the-nmtd-notenc-bar.md`](name-the-nmtd-notenc-bar.md) — NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）（不变量 1514）
 - [`name-the-nmtd-notblob-bar.md`](name-the-nmtd-notblob-bar.md) — NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）（不变量 1513）
 - [`name-the-nmtd-notsq-bar.md`](name-the-nmtd-notsq-bar.md) — NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）（不变量 1512）

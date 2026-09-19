@@ -1,3 +1,18 @@
+| A7350 | 记录 | 会与 23 / 145 / 9 / 1515 / 1516 糊成「看见看见承诺哈希不是数据已经永存就已经永存 interchangeable、就已经是不变量 145 interchangeable、就已经是不变量 9 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。23 blob vs das bundled unbundling 完成（1517 item 3） |
+| A7351 | 高 | 看见看见承诺哈希不是数据已经永存 会被写成已经永存 interchangeable / 145 interchangeable | 官方 EIP-4844 kdas item 3：not already 已经永存 / not 145 |
+| A7352 | 高 | 看见seeing the commitment hash is not already perpetual data 会被写成已经是不变量 145 interchangeable / 9 interchangeable | 官方 EIP-4844 kdas item 3：not already 已经是不变量 145 / not 9 |
+| A7353 | 高 | 看见看见承诺哈希不是数据已经永存 会被写成已经是不变量 9 interchangeable | 官方 EIP-4844 kdas item 3：not already settled |
+| A7354 | 中 | 怎样扣列、怎样只问RPC就显示已抽样会被抄进不确定 | 不抄。不写 怎样扣列、怎样只问RPC就显示已抽样。不另写 19 节 |
+| A7345 | 记录 | 会与 23 / 124 / 200 / 1515 / 1517 糊成「看见PeerDAS不是已经Celestia二维DAS就已经是Celestia二维DAS interchangeable、就已经是不变量 124 interchangeable、就已经是不变量 200 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-4844 peerdas not already celestia-das / not already 124 / not already 200 正式三事（23 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。23 blob vs das bundled unbundling 续（1516 item 2） |
+| A7346 | 高 | 看见PeerDAS不是已经Celestia二维DAS 会被写成已经是Celestia二维DAS interchangeable / 124 interchangeable | 官方 EIP-4844 kdas item 2：not already 已经是Celestia二维DAS / not 124 |
+| A7347 | 高 | 看见PeerDAS is not already Celestia 2D DAS 会被写成已经是不变量 124 interchangeable / 200 interchangeable | 官方 EIP-4844 kdas item 2：not already 已经是不变量 124 / not 200 |
+| A7348 | 高 | 看见PeerDAS不是已经Celestia二维DAS 会被写成已经是不变量 200 interchangeable | 官方 EIP-4844 kdas item 2：not already settled |
+| A7349 | 中 | 怎样扣列、怎样只问RPC就显示已抽样会被抄进不确定 | 不抄。不写 怎样扣列、怎样只问RPC就显示已抽样。不另写 19 节 |
+| A7340 | 记录 | 会与 23 / 145 / 124 / 1516 / 1517 糊成「看见KZG sidecar不是已经PeerDAS就已经是PeerDAS interchangeable、就已经是不变量 145 interchangeable、就已经 23 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-4844 sidecar not already peerdas / not already 145 / not already 23-bundled 正式三事（23 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。23 blob vs das bundled unbundling 启动（1515 item 1） |
+| A7341 | 高 | 看见KZG sidecar不是已经PeerDAS 会被写成已经是PeerDAS interchangeable / 145 interchangeable | 官方 EIP-4844 kdas item 1：not already 已经是PeerDAS / not 145 |
+| A7342 | 高 | 看见a KZG sidecar is not already PeerDAS 会被写成已经是不变量 145 interchangeable / 124 interchangeable | 官方 EIP-4844 kdas item 1：not already 已经是不变量 145 / not 124 |
+| A7343 | 高 | 看见KZG sidecar不是已经PeerDAS 会被写成已经 23 bundled interchangeable | 官方 EIP-4844 kdas item 1：not already settled |
+| A7344 | 中 | 怎样扣列、怎样只问RPC就显示已抽样会被抄进不确定 | 不抄。不写 怎样扣列、怎样只问RPC就显示已抽样。不另写 19 节 |
 | A7335 | 记录 | 会与 124 / 23 / 142 / 1512 / 1513 糊成「看见DAS抽样过关不是扩展编码已经诚实就已经编码诚实 interchangeable、就已经是不变量 23 interchangeable、就已经是不变量 142 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。124 nmt vs das bundled unbundling 完成（1514 item 3） |
 | A7336 | 高 | 看见DAS抽样过关不是扩展编码已经诚实 会被写成已经编码诚实 interchangeable / 23 interchangeable | 官方 NMT nmtd item 3：not already 已经编码诚实 / not 23 |
 | A7337 | 高 | 看见a DAS sample pass is not already honest erasure encoding 会被写成已经是不变量 23 interchangeable / 142 interchangeable | 官方 NMT nmtd item 3：not already 已经是不变量 23 / not 142 |

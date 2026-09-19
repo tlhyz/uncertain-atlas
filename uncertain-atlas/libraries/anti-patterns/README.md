@@ -1,3 +1,6 @@
+- [`kdas-notperm-sold-as-bundled.md`](kdas-notperm-sold-as-bundled.md) — 承诺哈希 被写成已经永存 / 就已经是 145 / 就已经是 9（不变量 1517）
+- [`kdas-notcel-sold-as-bundled.md`](kdas-notcel-sold-as-bundled.md) — PeerDAS 被写成已经是 Celestia 二维 DAS / 就已经是 124 / 就已经是 200（不变量 1516）
+- [`kdas-notpeer-sold-as-bundled.md`](kdas-notpeer-sold-as-bundled.md) — KZG sidecar 被写成已经是 PeerDAS / 就已经是 145 / 就已经 23 bundled（不变量 1515）
 - [`nmtd-notenc-sold-as-bundled.md`](nmtd-notenc-sold-as-bundled.md) — DAS抽样过关 被写成已经编码诚实 / 就已经是 23 / 就已经是 142（不变量 1514）
 - [`nmtd-notblob-sold-as-bundled.md`](nmtd-notblob-sold-as-bundled.md) — DAS抽样过关 被写成已经拿到自己的blob / 就已经是 142 / 就已经是 9（不变量 1513）
 - [`nmtd-notsq-sold-as-bundled.md`](nmtd-notsq-sold-as-bundled.md) — NMT命名空间齐了 被写成已经整块可用 / 就已经是 23 / 就已经 124 bundled（不变量 1512）

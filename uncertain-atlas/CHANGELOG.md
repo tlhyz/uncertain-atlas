@@ -1,3 +1,15 @@
+## 2026-09-19（续 1634）
+
+- 不变量 1517；语料 C1495；模式 name-the-kdas-notperm-bar；反模式 kdas-notperm-sold-as-bundled；L10.3 第 1486 条。填 L5.4 EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）。23 blob vs das bundled unbundling 完成（1517 item 3）。
+
+## 2026-09-19（续 1633）
+
+- 不变量 1516；语料 C1494；模式 name-the-kdas-notcel-bar；反模式 kdas-notcel-sold-as-bundled；L10.3 第 1485 条。填 L5.4 EIP-4844 peerdas not already celestia-das / not already 124 / not already 200 正式三事（23 余量）。23 blob vs das bundled unbundling 续（1516 item 2）。
+
+## 2026-09-19（续 1632）
+
+- 不变量 1515；语料 C1493；模式 name-the-kdas-notpeer-bar；反模式 kdas-notpeer-sold-as-bundled；L10.3 第 1484 条。填 L5.4 EIP-4844 sidecar not already peerdas / not already 145 / not already 23-bundled 正式三事（23 余量）。23 blob vs das bundled unbundling 启动（1515 item 1）。
+
 ## 2026-09-19（续 1631）
 
 - 不变量 1514；语料 C1492；模式 name-the-nmtd-notenc-bar；反模式 nmtd-notenc-sold-as-bundled；L10.3 第 1483 条。填 L7.2 NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）。124 nmt vs das bundled unbundling 完成（1514 item 3）。
