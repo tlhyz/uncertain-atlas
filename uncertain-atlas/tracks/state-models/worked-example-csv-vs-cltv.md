@@ -84,7 +84,7 @@
 | 经济 | 相对锁的钟从确认才走；不是绝对日期已经到 |
 
 **推断：** 产品句若只写「有 CSV」，读者会把部署名、字段、脚本听成一盏灯。  
-**建议：** 第一版若做相对时间锁，必须写清锁的是被花输出的年龄，并且花费输入的 nSequence 要同类、没关掉、版本够。不要发明「CSV = CLTV」。不要把「CSV 之后」写成已经在讲操作码。不要抄位旗。
+**建议：** 第一版若做相对时间锁，必须写清锁的是被花输出的年龄，并且花费输入的 nSequence 要同类、没关掉、版本够。可以跳过「看见 CSV 就已经是 CLTV」。165 csv vs cltv bundled unbundling 完成（1527 item 1 / 1528 item 2 / 1529 item 3）；精读 [`worked-example-csvd-notseq-vs-bundled.md`](worked-example-csvd-notseq-vs-bundled.md)（不变量 1527 item 1）、[`worked-example-csvd-notabs-vs-bundled.md`](worked-example-csvd-notabs-vs-bundled.md)（不变量 1528 item 2）、[`worked-example-csvd-notdep-vs-bundled.md`](worked-example-csvd-notdep-vs-bundled.md)（不变量 1529 item 3）。不要发明「CSV = CLTV」。不要把「CSV 之后」写成已经在讲操作码。不要抄位旗。
 
 ---
 

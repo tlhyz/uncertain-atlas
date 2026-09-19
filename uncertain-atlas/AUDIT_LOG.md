@@ -1,3 +1,18 @@
+| A7410 | 记录 | 会与 165 / 41 / 164 / 1527 / 1528 糊成「看见CSV软分叉部署不是已经在讲CHECKSEQUENCEVERIFY操作码就已经是操作码 interchangeable、就已经是不变量 41 interchangeable、就已经是不变量 164 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。165 csv vs cltv bundled unbundling 完成（1529 item 3） |
+| A7411 | 高 | 看见CSV软分叉部署不是已经在讲CHECKSEQUENCEVERIFY操作码 会被写成已经是操作码 interchangeable / 41 interchangeable | 官方 BIP-112 csvd item 3：not already 已经是操作码 / not 41 |
+| A7412 | 高 | 看见the CSV soft-fork name is not already the CHECKSEQUENCEVERIFY opcode 会被写成已经是不变量 41 interchangeable / 164 interchangeable | 官方 BIP-112 csvd item 3：not already 已经是不变量 41 / not 164 |
+| A7413 | 高 | 看见CSV软分叉部署不是已经在讲CHECKSEQUENCEVERIFY操作码 会被写成已经是不变量 164 interchangeable | 官方 BIP-112 csvd item 3：not already settled |
+| A7414 | 中 | 怎样绕过相对锁会被抄进不确定 | 不抄。不写 怎样绕过相对锁。不另写 19 节 |
+| A7405 | 记录 | 会与 165 / 164 / 163 / 1527 / 1529 糊成「看见相对锁不是已经是绝对锁就已经是绝对锁 interchangeable、就已经是不变量 164 interchangeable、就已经是不变量 163 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-112 relative-lock not already absolute-lock / not already 164 / not already 163 正式三事（165 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。165 csv vs cltv bundled unbundling 续（1528 item 2） |
+| A7406 | 高 | 看见相对锁不是已经是绝对锁 会被写成已经是绝对锁 interchangeable / 164 interchangeable | 官方 BIP-112 csvd item 2：not already 已经是绝对锁 / not 164 |
+| A7407 | 高 | 看见a relative lock is not already an absolute lock 会被写成已经是不变量 164 interchangeable / 163 interchangeable | 官方 BIP-112 csvd item 2：not already 已经是不变量 164 / not 163 |
+| A7408 | 高 | 看见相对锁不是已经是绝对锁 会被写成已经是不变量 163 interchangeable | 官方 BIP-112 csvd item 2：not already settled |
+| A7409 | 中 | 怎样绕过相对锁会被抄进不确定 | 不抄。不写 怎样绕过相对锁。不另写 19 节 |
+| A7400 | 记录 | 会与 165 / 164 / 163 / 1528 / 1529 糊成「看见脚本里的CSV不是nSequence已经把输出相对锁住就已经相对锁住 interchangeable、就已经是不变量 164 interchangeable、就已经 165 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-112 script-csv not already nsequence-locked / not already 164 / not already 165-bundled 正式三事（165 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。165 csv vs cltv bundled unbundling 启动（1527 item 1） |
+| A7401 | 高 | 看见脚本里的CSV不是nSequence已经把输出相对锁住 会被写成已经相对锁住 interchangeable / 164 interchangeable | 官方 BIP-112 csvd item 1：not already 已经相对锁住 / not 164 |
+| A7402 | 高 | 看见script CSV is not already a relative lock from nSequence 会被写成已经是不变量 164 interchangeable / 163 interchangeable | 官方 BIP-112 csvd item 1：not already 已经是不变量 164 / not 163 |
+| A7403 | 高 | 看见脚本里的CSV不是nSequence已经把输出相对锁住 会被写成已经 165 bundled interchangeable | 官方 BIP-112 csvd item 1：not already settled |
+| A7404 | 中 | 怎样绕过相对锁会被抄进不确定 | 不抄。不写 怎样绕过相对锁。不另写 19 节 |
 | A7395 | 记录 | 会与 166 / 144 / 165 / 1524 / 1525 糊成「看见子孙继承信号不是自己已经明示加入就已经明示加入 interchangeable、就已经是不变量 144 interchangeable、就已经是不变量 165 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。166 rbf-signal vs replaced bundled unbundling 完成（1526 item 3） |
 | A7396 | 高 | 看见子孙继承信号不是自己已经明示加入 会被写成已经明示加入 interchangeable / 144 interchangeable | 官方 BIP-125 rbfs item 3：not already 已经明示加入 / not 144 |
 | A7397 | 高 | 看见an inherited replace signal is not already an explicit opt-in 会被写成已经是不变量 144 interchangeable / 165 interchangeable | 官方 BIP-125 rbfs item 3：not already 已经是不变量 144 / not 165 |

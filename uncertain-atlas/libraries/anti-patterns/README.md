@@ -1,3 +1,6 @@
+- [`csvd-notdep-sold-as-bundled.md`](csvd-notdep-sold-as-bundled.md) — CSV 部署名 被写成已经是操作码 / 就已经是 41 / 就已经是 164（不变量 1529）
+- [`csvd-notabs-sold-as-bundled.md`](csvd-notabs-sold-as-bundled.md) — 相对锁 被写成已经是绝对锁 / 就已经是 164 / 就已经是 163（不变量 1528）
+- [`csvd-notseq-sold-as-bundled.md`](csvd-notseq-sold-as-bundled.md) — 脚本里的 CSV 被写成 nSequence 已经相对锁住 / 就已经是 164 / 就已经 165 bundled（不变量 1527）
 - [`rbfs-notjoin-sold-as-bundled.md`](rbfs-notjoin-sold-as-bundled.md) — 子孙继承信号 被写成已经明示加入 / 就已经是 144 / 就已经是 165（不变量 1526）
 - [`rbfs-notlock-sold-as-bundled.md`](rbfs-notlock-sold-as-bundled.md) — nSequence示意 被写成已经是相对锁 / 就已经是 165 / 就已经是 164（不变量 1525）
 - [`rbfs-notrep-sold-as-bundled.md`](rbfs-notrep-sold-as-bundled.md) — 选择加入替换信号 被写成已经换掉 / 就已经是 144 / 就已经 166 bundled（不变量 1524）

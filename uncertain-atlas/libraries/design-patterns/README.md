@@ -1,3 +1,6 @@
+- [`name-the-csvd-notdep-bar.md`](name-the-csvd-notdep-bar.md) — BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）（不变量 1529）
+- [`name-the-csvd-notabs-bar.md`](name-the-csvd-notabs-bar.md) — BIP-112 relative-lock not already absolute-lock / not already 164 / not already 163 正式三事（165 余量）（不变量 1528）
+- [`name-the-csvd-notseq-bar.md`](name-the-csvd-notseq-bar.md) — BIP-112 script-csv not already nsequence-locked / not already 164 / not already 165-bundled 正式三事（165 余量）（不变量 1527）
 - [`name-the-rbfs-notjoin-bar.md`](name-the-rbfs-notjoin-bar.md) — BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）（不变量 1526）
 - [`name-the-rbfs-notlock-bar.md`](name-the-rbfs-notlock-bar.md) — BIP-125 nsequence-signal not already relative-lock / not already 165 / not already 164 正式三事（166 余量）（不变量 1525）
 - [`name-the-rbfs-notrep-bar.md`](name-the-rbfs-notrep-bar.md) — BIP-125 opt-in-signal not already replaced / not already 144 / not already 166-bundled 正式三事（166 余量）（不变量 1524）

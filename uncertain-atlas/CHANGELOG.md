@@ -1,3 +1,15 @@
+## 2026-09-19（续 1646）
+
+- 不变量 1529；语料 C1507；模式 name-the-csvd-notdep-bar；反模式 csvd-notdep-sold-as-bundled；L10.3 第 1498 条。填 L2.1 BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）。165 csv vs cltv bundled unbundling 完成（1529 item 3）。
+
+## 2026-09-19（续 1645）
+
+- 不变量 1528；语料 C1506；模式 name-the-csvd-notabs-bar；反模式 csvd-notabs-sold-as-bundled；L10.3 第 1497 条。填 L2.1 BIP-112 relative-lock not already absolute-lock / not already 164 / not already 163 正式三事（165 余量）。165 csv vs cltv bundled unbundling 续（1528 item 2）。
+
+## 2026-09-19（续 1644）
+
+- 不变量 1527；语料 C1505；模式 name-the-csvd-notseq-bar；反模式 csvd-notseq-sold-as-bundled；L10.3 第 1496 条。填 L2.1 BIP-112 script-csv not already nsequence-locked / not already 164 / not already 165-bundled 正式三事（165 余量）。165 csv vs cltv bundled unbundling 启动（1527 item 1）。
+
 ## 2026-09-19（续 1643）
 
 - 不变量 1526；语料 C1504；模式 name-the-rbfs-notjoin-bar；反模式 rbfs-notjoin-sold-as-bundled；L10.3 第 1495 条。填 L3.2 BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）。166 rbf-signal vs replaced bundled unbundling 完成（1526 item 3）。

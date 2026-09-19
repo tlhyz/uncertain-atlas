@@ -43,7 +43,7 @@ UTXO 把「钱」看成一张张还没被撕掉的支票，而不是账户里的
 
 进了块的 coinbase 不是已经能花。钱包看见奖励不是已经成熟。精读：[`../../tracks/economic/worked-example-coinbase-vs-mature.md`](../../tracks/economic/worked-example-coinbase-vs-mature.md)（不变量 163）。
 脚本里的 CLTV 不是交易 nLockTime 已经把输出锁住。精读：[`../../tracks/state-models/worked-example-cltv-vs-nlocktime.md`](../../tracks/state-models/worked-example-cltv-vs-nlocktime.md)（不变量 164）。
-脚本里的 CSV 不是绝对锁，也不是「CSV 部署」四个字。精读：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md)（不变量 165）。
+脚本里的 CSV 不是绝对锁，也不是「CSV 部署」四个字。精读：[`../../tracks/state-models/worked-example-csv-vs-cltv.md`](../../tracks/state-models/worked-example-csv-vs-cltv.md) BIP-112 script-csv not already nsequence-locked / not already 164 / not already 165-bundled 正式三事（165 余量）：[`../../tracks/state-models/worked-example-csvd-notseq-vs-bundled.md`](../../tracks/state-models/worked-example-csvd-notseq-vs-bundled.md)（不变量 1527）。 BIP-112 relative-lock not already absolute-lock / not already 164 / not already 163 正式三事（165 余量）：[`../../tracks/state-models/worked-example-csvd-notabs-vs-bundled.md`](../../tracks/state-models/worked-example-csvd-notabs-vs-bundled.md)（不变量 1528）。 BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）：[`../../tracks/state-models/worked-example-csvd-notdep-vs-bundled.md`](../../tracks/state-models/worked-example-csvd-notdep-vs-bundled.md)（不变量 1529）。（不变量 165）。
 付给脚本哈希不是已经揭开赎回脚本。旧节点 HASH160 EQUAL 通过不是新节点已经再跑。精读：[`../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md`](../../tracks/state-models/worked-example-p2sh-hash-vs-redeem.md)（不变量 170）。
 
 **事实：** Bitcoin 状态机可以这样理解。完整脚本与隔离见证细节在 `protocols/bitcoin/`。  
