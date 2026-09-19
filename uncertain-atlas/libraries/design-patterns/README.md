@@ -1,3 +1,4 @@
+- [`name-the-snapshotdiscover-notstop-bar.md`](name-the-snapshotdiscover-notstop-bar.md) — Offer 被拒不是已经停 not already no-snapshots / not already stopped / not already discovery-done 正式三事（322 余量）（不变量 724）
 - [`name-the-snapshotdiscover-notaccepted-bar.md`](name-the-snapshotdiscover-notaccepted-bar.md) — 挑了最高不是已经收下 not already accepted / not already restored / not already app-format 正式三事（322 余量）（不变量 723）
 - [`name-the-snapshotdiscover-notall-bar.md`](name-the-snapshotdiscover-notall-bar.md) — ListSnapshots 回了不是已经有了全部快照 not already all-snapshots / not already no-cap / not already product-default-10 正式三事（322 余量）（不变量 722）
 - [`name-the-snapshotrestore-notresume-bar.md`](name-the-snapshotrestore-notresume-bar.md) — 拉失败换一份不是已经能接着装 not already can-resume / not already same-snapshot / not already prior-usable 正式三事（321 余量）（不变量 721）

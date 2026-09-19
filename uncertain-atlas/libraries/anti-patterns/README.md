@@ -1,3 +1,4 @@
+- [`snapshotdiscover-notstop-sold-as-bundled.md`](snapshotdiscover-notstop-sold-as-bundled.md) — 被拒 被写成已经没有快照 / 拒了邻居 被写成已经停 / 能中止 被写成已经发现完（不变量 724）
 - [`snapshotdiscover-notaccepted-sold-as-bundled.md`](snapshotdiscover-notaccepted-sold-as-bundled.md) — 挑了 被写成已经收下 / 最高 被写成已经装完 / 排过了 被写成已经是应用要的格式（不变量 723）
 - [`snapshotdiscover-notall-sold-as-bundled.md`](snapshotdiscover-notall-sold-as-bundled.md) — 问了邻居 被写成已经有了全部快照 / 回了 被写成已经没有上限 / 看见 10 被写成已经是不确定默认（不变量 722）
 - [`snapshotrestore-notresume-sold-as-bundled.md`](snapshotrestore-notresume-sold-as-bundled.md) — 换了一份 被写成已经能接着装 / 能重试 被写成已经同一份 / 失败了 被写成已经装过的还能用（不变量 721）
