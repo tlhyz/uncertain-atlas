@@ -1,3 +1,6 @@
+- [`name-the-hhash-notsem-bar.md`](name-the-hhash-notsem-bar.md) — EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）（不变量 1502）
+- [`name-the-hhash-notfill-bar.md`](name-the-hhash-notfill-bar.md) — EIP-2935 sys-write not already window-full / not already 169 / not already 157 正式三事（195 余量）（不变量 1501）
+- [`name-the-hhash-notbh-bar.md`](name-the-hhash-notbh-bar.md) — EIP-2935 state-hash not already BLOCKHASH / not already 156 / not already 195-bundled 正式三事（195 余量）（不变量 1500）
 - [`name-the-bres-notsch-bar.md`](name-the-bres-notsch-bar.md) — EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）（不变量 1499）
 - [`name-the-bres-notgone-bar.md`](name-the-bres-notgone-bar.md) — EIP-7918 exec-dominant not already blob-priceless / not already 158 / not already 197 正式三事（201 余量）（不变量 1498）
 - [`name-the-bres-notacct-bar.md`](name-the-bres-notacct-bar.md) — EIP-7918 reserve-floor not already gas-merged / not already 145 / not already 201-bundled 正式三事（201 余量）（不变量 1497）

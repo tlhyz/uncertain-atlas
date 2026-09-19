@@ -1,3 +1,15 @@
+## 2026-09-19（续 1619）
+
+- 不变量 1502；语料 C1480；模式 name-the-hhash-notsem-bar；反模式 hhash-notsem-sold-as-bundled；L10.3 第 1471 条。填 L5.1 EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）。195 history-hash vs blockhash bundled unbundling 完成（1502 item 3）。
+
+## 2026-09-19（续 1618）
+
+- 不变量 1501；语料 C1479；模式 name-the-hhash-notfill-bar；反模式 hhash-notfill-sold-as-bundled；L10.3 第 1470 条。填 L5.1 EIP-2935 sys-write not already window-full / not already 169 / not already 157 正式三事（195 余量）。195 history-hash vs blockhash bundled unbundling 续（1501 item 2）。
+
+## 2026-09-19（续 1617）
+
+- 不变量 1500；语料 C1478；模式 name-the-hhash-notbh-bar；反模式 hhash-notbh-sold-as-bundled；L10.3 第 1469 条。填 L5.1 EIP-2935 state-hash not already BLOCKHASH / not already 156 / not already 195-bundled 正式三事（195 余量）。195 history-hash vs blockhash bundled unbundling 启动（1500 item 1）。
+
 ## 2026-09-19（续 1616）
 
 - 不变量 1499；语料 C1477；模式 name-the-bres-notsch-bar；反模式 bres-notsch-sold-as-bundled；L10.3 第 1468 条。填 L5.4 EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）。201 blob-reserve vs execution bundled unbundling 完成（1499 item 3）。

@@ -1,3 +1,18 @@
+| A7275 | 记录 | 会与 195 / 156 / 207 / 1500 / 1501 糊成「看见合约能查更长窗口不是已经改了操作码语义就已经改了操作码语义 interchangeable、就已经是不变量 156 interchangeable、就已经是不变量 207 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.1、L5.1。195 history-hash vs blockhash bundled unbundling 完成（1502 item 3） |
+| A7276 | 高 | 看见合约能查更长窗口不是已经改了操作码语义 会被写成已经改了操作码语义 interchangeable / 156 interchangeable | 官方 EIP-2935 hhash item 3：not already 已经改了操作码语义 / not 156 |
+| A7277 | 高 | 看见a longer contract window is not already an opcode change 会被写成已经是不变量 156 interchangeable / 207 interchangeable | 官方 EIP-2935 hhash item 3：not already 已经是不变量 156 / not 207 |
+| A7278 | 高 | 看见合约能查更长窗口不是已经改了操作码语义 会被写成已经是不变量 207 interchangeable | 官方 EIP-2935 hhash item 3：not already settled |
+| A7279 | 中 | 怎样构造系统调用、怎样填环、怎样打见证会被抄进不确定 | 不抄。不写 怎样构造系统调用、怎样填环、怎样打见证。不另写 19 节 |
+| A7270 | 记录 | 会与 195 / 169 / 157 / 1500 / 1502 糊成「看见系统写入父哈希不是已经填满窗口就已经填满窗口 interchangeable、就已经是不变量 169 interchangeable、就已经是不变量 157 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2935 sys-write not already window-full / not already 169 / not already 157 正式三事（195 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.1、L5.1。195 history-hash vs blockhash bundled unbundling 续（1501 item 2） |
+| A7271 | 高 | 看见系统写入父哈希不是已经填满窗口 会被写成已经填满窗口 interchangeable / 169 interchangeable | 官方 EIP-2935 hhash item 2：not already 已经填满窗口 / not 169 |
+| A7272 | 高 | 看见a system write of the parent hash is not already a full window 会被写成已经是不变量 169 interchangeable / 157 interchangeable | 官方 EIP-2935 hhash item 2：not already 已经是不变量 169 / not 157 |
+| A7273 | 高 | 看见系统写入父哈希不是已经填满窗口 会被写成已经是不变量 157 interchangeable | 官方 EIP-2935 hhash item 2：not already settled |
+| A7274 | 中 | 怎样构造系统调用、怎样填环、怎样打见证会被抄进不确定 | 不抄。不写 怎样构造系统调用、怎样填环、怎样打见证。不另写 19 节 |
+| A7265 | 记录 | 会与 195 / 156 / 157 / 1501 / 1502 糊成「看见状态里的历史执行哈希不是已经是BLOCKHASH就已经是BLOCKHASH interchangeable、就已经是不变量 156 interchangeable、就已经 195 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2935 state-hash not already BLOCKHASH / not already 156 / not already 195-bundled 正式三事（195 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.1、L5.1。195 history-hash vs blockhash bundled unbundling 启动（1500 item 1） |
+| A7266 | 高 | 看见状态里的历史执行哈希不是已经是BLOCKHASH 会被写成已经是BLOCKHASH interchangeable / 156 interchangeable | 官方 EIP-2935 hhash item 1：not already 已经是BLOCKHASH / not 156 |
+| A7267 | 高 | 看见a state history hash is not already BLOCKHASH 会被写成已经是不变量 156 interchangeable / 157 interchangeable | 官方 EIP-2935 hhash item 1：not already 已经是不变量 156 / not 157 |
+| A7268 | 高 | 看见状态里的历史执行哈希不是已经是BLOCKHASH 会被写成已经 195 bundled interchangeable | 官方 EIP-2935 hhash item 1：not already settled |
+| A7269 | 中 | 怎样构造系统调用、怎样填环、怎样打见证会被抄进不确定 | 不抄。不写 怎样构造系统调用、怎样填环、怎样打见证。不另写 19 节 |
 | A7260 | 记录 | 会与 201 / 200 / 23 / 1497 / 1498 糊成「看见不算目标不是已经改了日程数字就已经改了日程数字 interchangeable、就已经是不变量 200 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。201 blob-reserve vs execution bundled unbundling 完成（1499 item 3） |
 | A7261 | 高 | 看见不算目标不是已经改了日程数字 会被写成已经改了日程数字 interchangeable / 200 interchangeable | 官方 EIP-7918 bres item 3：not already 已经改了日程数字 / not 200 |
 | A7262 | 高 | 看见not subtracting the target is not already a schedule change 会被写成已经是不变量 200 interchangeable / 23 interchangeable | 官方 EIP-7918 bres item 3：not already 已经是不变量 200 / not 23 |

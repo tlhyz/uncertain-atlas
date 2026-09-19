@@ -30,7 +30,7 @@
 
 ## 建议（对「不确定」）
 
-第一版结算机若把最近哈希放进状态，先问四句：看见的是 `BLOCKHASH` 操作码，还是这份合约存储？系统刚写入父哈希，还是窗口已经填满？能查更长，还是已经改了操作码语义？这是执行块哈希，还是已经是 4788 那种信标根？四句各指各的对象。不要发明环槽配方或见证构造法。
+第一版结算机若把最近哈希放进状态，先问四句：看见的是 `BLOCKHASH` 操作码，还是这份合约存储？系统刚写入父哈希，还是窗口已经填满？能查更长，还是已经改了操作码语义？这是执行块哈希，还是已经是 4788 那种信标根？四句各指各的对象。可以跳过「看见状态槽就已经是 BLOCKHASH」。195 history-hash vs blockhash bundled unbundling 完成（1500 item 1 / 1501 item 2 / 1502 item 3）；精读 [`worked-example-hhash-notbh-vs-bundled.md`](worked-example-hhash-notbh-vs-bundled.md)（不变量 1500 item 1）、[`worked-example-hhash-notfill-vs-bundled.md`](worked-example-hhash-notfill-vs-bundled.md)（不变量 1501 item 2）、[`worked-example-hhash-notsem-vs-bundled.md`](worked-example-hhash-notsem-vs-bundled.md)（不变量 1502 item 3）。不要发明环槽配方或见证构造法。
 
 ## 五层（只展开本对象）
 
