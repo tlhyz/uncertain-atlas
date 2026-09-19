@@ -1,3 +1,6 @@
+- [`bpof-notver-sold-as-bundled.md`](bpof-notver-sold-as-bundled.md) — 摘要掺进上限 被写成已经换了版本号 / 就已经是 200 / 就已经是 207（不变量 1505）
+- [`bpof-notcfg-sold-as-bundled.md`](bpof-notcfg-sold-as-bundled.md) — 配置里的blob日程 被写成已经不需要分叉 / 就已经是 201 / 就已经是 23（不变量 1504）
+- [`bpof-notexec-sold-as-bundled.md`](bpof-notexec-sold-as-bundled.md) — BPO专用分叉 被写成已经改了执行 / 就已经是 200 / 就已经 209 bundled（不变量 1503）
 - [`hhash-notsem-sold-as-bundled.md`](hhash-notsem-sold-as-bundled.md) — 合约更长窗 被写成已经改了操作码 / 就已经是 156 / 就已经是 207（不变量 1502）
 - [`hhash-notfill-sold-as-bundled.md`](hhash-notfill-sold-as-bundled.md) — 系统写入父哈希 被写成已经填满窗口 / 就已经是 169 / 就已经是 157（不变量 1501）
 - [`hhash-notbh-sold-as-bundled.md`](hhash-notbh-sold-as-bundled.md) — 状态历史哈希 被写成已经是 BLOCKHASH / 就已经是 156 / 就已经 195 bundled（不变量 1500）

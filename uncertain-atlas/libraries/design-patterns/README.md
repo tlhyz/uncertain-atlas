@@ -1,3 +1,6 @@
+- [`name-the-bpof-notver-bar.md`](name-the-bpof-notver-bar.md) — EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）（不变量 1505）
+- [`name-the-bpof-notcfg-bar.md`](name-the-bpof-notcfg-bar.md) — EIP-7892 config-schedule not already forkless / not already 201 / not already 23 正式三事（209 余量）（不变量 1504）
+- [`name-the-bpof-notexec-bar.md`](name-the-bpof-notexec-bar.md) — EIP-7892 bpo-fork not already exec-changed / not already 200 / not already 209-bundled 正式三事（209 余量）（不变量 1503）
 - [`name-the-hhash-notsem-bar.md`](name-the-hhash-notsem-bar.md) — EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）（不变量 1502）
 - [`name-the-hhash-notfill-bar.md`](name-the-hhash-notfill-bar.md) — EIP-2935 sys-write not already window-full / not already 169 / not already 157 正式三事（195 余量）（不变量 1501）
 - [`name-the-hhash-notbh-bar.md`](name-the-hhash-notbh-bar.md) — EIP-2935 state-hash not already BLOCKHASH / not already 156 / not already 195-bundled 正式三事（195 余量）（不变量 1500）

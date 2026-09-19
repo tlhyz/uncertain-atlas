@@ -1,3 +1,15 @@
+## 2026-09-19（续 1622）
+
+- 不变量 1505；语料 C1483；模式 name-the-bpof-notver-bar；反模式 bpof-notver-sold-as-bundled；L10.3 第 1474 条。填 L5.4 EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）。209 bpo vs hardfork bundled unbundling 完成（1505 item 3）。
+
+## 2026-09-19（续 1621）
+
+- 不变量 1504；语料 C1482；模式 name-the-bpof-notcfg-bar；反模式 bpof-notcfg-sold-as-bundled；L10.3 第 1473 条。填 L5.4 EIP-7892 config-schedule not already forkless / not already 201 / not already 23 正式三事（209 余量）。209 bpo vs hardfork bundled unbundling 续（1504 item 2）。
+
+## 2026-09-19（续 1620）
+
+- 不变量 1503；语料 C1481；模式 name-the-bpof-notexec-bar；反模式 bpof-notexec-sold-as-bundled；L10.3 第 1472 条。填 L5.4 EIP-7892 bpo-fork not already exec-changed / not already 200 / not already 209-bundled 正式三事（209 余量）。209 bpo vs hardfork bundled unbundling 启动（1503 item 1）。
+
 ## 2026-09-19（续 1619）
 
 - 不变量 1502；语料 C1480；模式 name-the-hhash-notsem-bar；反模式 hhash-notsem-sold-as-bundled；L10.3 第 1471 条。填 L5.1 EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）。195 history-hash vs blockhash bundled unbundling 完成（1502 item 3）。

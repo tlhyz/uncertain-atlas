@@ -1,3 +1,18 @@
+| A7290 | 记录 | 会与 209 / 200 / 207 / 1503 / 1504 糊成「看见分叉摘要掺进当前blob上限不是已经换了分叉版本号就已经换了分叉版本号 interchangeable、就已经是不变量 200 interchangeable、就已经是不变量 207 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。209 bpo vs hardfork bundled unbundling 完成（1505 item 3） |
+| A7291 | 高 | 看见分叉摘要掺进当前blob上限不是已经换了分叉版本号 会被写成已经换了分叉版本号 interchangeable / 200 interchangeable | 官方 EIP-7892 bpof item 3：not already 已经换了分叉版本号 / not 200 |
+| A7292 | 高 | 看见including blob max in the fork digest is not already a version-number change 会被写成已经是不变量 200 interchangeable / 207 interchangeable | 官方 EIP-7892 bpof item 3：not already 已经是不变量 200 / not 207 |
+| A7293 | 高 | 看见分叉摘要掺进当前blob上限不是已经换了分叉版本号 会被写成已经是不变量 207 interchangeable | 官方 EIP-7892 bpof item 3：not already settled |
+| A7294 | 中 | 怎样把执行层和共识层的日程对不齐会被抄进不确定 | 不抄。不写 怎样把执行层和共识层的日程对不齐。不另写 19 节 |
+| A7285 | 记录 | 会与 209 / 201 / 23 / 1503 / 1505 糊成「看见配置里的blob日程不是已经不需要分叉就已经不需要分叉 interchangeable、就已经是不变量 201 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7892 config-schedule not already forkless / not already 201 / not already 23 正式三事（209 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。209 bpo vs hardfork bundled unbundling 续（1504 item 2） |
+| A7286 | 高 | 看见配置里的blob日程不是已经不需要分叉 会被写成已经不需要分叉 interchangeable / 201 interchangeable | 官方 EIP-7892 bpof item 2：not already 已经不需要分叉 / not 201 |
+| A7287 | 高 | 看见a config blob schedule is not already a forkless change 会被写成已经是不变量 201 interchangeable / 23 interchangeable | 官方 EIP-7892 bpof item 2：not already 已经是不变量 201 / not 23 |
+| A7288 | 高 | 看见配置里的blob日程不是已经不需要分叉 会被写成已经是不变量 23 interchangeable | 官方 EIP-7892 bpof item 2：not already settled |
+| A7289 | 中 | 怎样把执行层和共识层的日程对不齐会被抄进不确定 | 不抄。不写 怎样把执行层和共识层的日程对不齐。不另写 19 节 |
+| A7280 | 记录 | 会与 209 / 200 / 201 / 1504 / 1505 糊成「看见只改blob参数的专用分叉不是已经改了执行规则就已经改了执行规则 interchangeable、就已经是不变量 200 interchangeable、就已经 209 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7892 bpo-fork not already exec-changed / not already 200 / not already 209-bundled 正式三事（209 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。209 bpo vs hardfork bundled unbundling 启动（1503 item 1） |
+| A7281 | 高 | 看见只改blob参数的专用分叉不是已经改了执行规则 会被写成已经改了执行规则 interchangeable / 200 interchangeable | 官方 EIP-7892 bpof item 1：not already 已经改了执行规则 / not 200 |
+| A7282 | 高 | 看见a blob-parameter-only fork is not already an execution-rule change 会被写成已经是不变量 200 interchangeable / 201 interchangeable | 官方 EIP-7892 bpof item 1：not already 已经是不变量 200 / not 201 |
+| A7283 | 高 | 看见只改blob参数的专用分叉不是已经改了执行规则 会被写成已经 209 bundled interchangeable | 官方 EIP-7892 bpof item 1：not already settled |
+| A7284 | 中 | 怎样把执行层和共识层的日程对不齐会被抄进不确定 | 不抄。不写 怎样把执行层和共识层的日程对不齐。不另写 19 节 |
 | A7275 | 记录 | 会与 195 / 156 / 207 / 1500 / 1501 糊成「看见合约能查更长窗口不是已经改了操作码语义就已经改了操作码语义 interchangeable、就已经是不变量 156 interchangeable、就已经是不变量 207 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.1、L5.1。195 history-hash vs blockhash bundled unbundling 完成（1502 item 3） |
 | A7276 | 高 | 看见合约能查更长窗口不是已经改了操作码语义 会被写成已经改了操作码语义 interchangeable / 156 interchangeable | 官方 EIP-2935 hhash item 3：not already 已经改了操作码语义 / not 156 |
 | A7277 | 高 | 看见a longer contract window is not already an opcode change 会被写成已经是不变量 156 interchangeable / 207 interchangeable | 官方 EIP-2935 hhash item 3：not already 已经是不变量 156 / not 207 |
