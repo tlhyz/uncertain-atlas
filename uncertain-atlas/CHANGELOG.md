@@ -1,3 +1,7 @@
+## 2026-09-19（续 833）
+
+- 不变量 716；语料 C693；模式 name-the-consensusparams-notempty-bar；反模式 consensusparams-notempty-sold-as-bundled；L10.3 第 685 条。填 L4.4 / CometBFT 档案 InitChain 空参数不是已经没有参数 not already no params / not already deleted genesis params / not already app empty params 正式三事（319 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。319 consensusparams vs update bundled unbundling 启动（716 item 1）。
+
 ## 2026-09-19（续 832）
 
 - 不变量 715；语料 C692；模式 name-the-validatorupdate-notpower0-bar；反模式 validatorupdate-notpower0-sold-as-bundled；L10.3 第 684 条。填 L4.4 / L4.5 / CometBFT 档案 power 0 不是已经删掉不在集合里的人 not already delete outsider / not already no max / not already key-type chosen 正式三事（318 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。318 validatorupdate vs set bundled unbundling 完成（713 + 714 + 715）。

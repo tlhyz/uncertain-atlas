@@ -1,3 +1,4 @@
+- [`consensusparams-notempty-sold-as-bundled.md`](consensusparams-notempty-sold-as-bundled.md) — 回了空 被写成已经没有参数 / 没回参数 被写成已经删掉创世参数 / 能设初始参数 被写成已经用了应用自己的空参数（不变量 716）
 - [`validatorupdate-notpower0-sold-as-bundled.md`](validatorupdate-notpower0-sold-as-bundled.md) — 写成 0 被写成已经能删不在名单里的人 / 看见总权 被写成已经没有上限 / 看见四种钥型 被写成已经选型（不变量 715）
 - [`validatorupdate-notdup-sold-as-bundled.md`](validatorupdate-notdup-sold-as-bundled.md) — 看见重复 被写成已经按后一条改权 / 看见失败 被写成已经能重放修好 / 看见同一把钥 被写成已经能写两行（不变量 714）
 - [`validatorupdate-notempty-sold-as-bundled.md`](validatorupdate-notempty-sold-as-bundled.md) — 回了空 被写成已经没有集合 / 没回人 被写成已经删掉创世名单 / 能设初始集合 被写成已经用了应用自己的空集（不变量 713）
