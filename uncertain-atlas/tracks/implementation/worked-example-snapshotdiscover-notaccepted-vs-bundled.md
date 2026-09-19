@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看挑了最高不是已经收下 not already accepted / not already restored / not already app-format 正式三事（322 余量），必须分开挑了 是不是 already accepted interchangeable / 322 snapshotdiscover bundled interchangeable / snapshotdiscover-sold-as-listed interchangeable、最高 是不是 already restored interchangeable、排过了 是不是 already app-format interchangeable。可以跳过「看见挑了最高就已经收下 interchangeable / 就已经装完 interchangeable / 就已经是应用要的格式 interchangeable」。不要另写怎样挑。322 snapshotdiscover vs offer bundled unbundling 在本页 item 2 续；续 [`worked-example-snapshotdiscover-notstop-vs-bundled.md`](worked-example-snapshotdiscover-notstop-vs-bundled.md)（不变量 724 item 3，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看挑了最高不是已经收下 not already accepted / not already restored / not already app-format 正式三事（322 余量），必须分开挑了 是不是 already accepted interchangeable / 322 snapshotdiscover bundled interchangeable / snapshotdiscover-sold-as-listed interchangeable、最高 是不是 already restored interchangeable、排过了 是不是 already app-format interchangeable。可以跳过「看见挑了最高就已经收下 interchangeable / 就已经装完 interchangeable / 就已经是应用要的格式 interchangeable」。不要另写怎样挑。322 snapshotdiscover vs offer bundled unbundling 在本页 item 2 续；续 [`worked-example-snapshotdiscover-notstop-vs-bundled.md`](worked-example-snapshotdiscover-notstop-vs-bundled.md)（不变量 724 item 3）。322 snapshotdiscover vs offer bundled unbundling 在 722 + 723 + 724 完成。
 
 ## 本页不抄
 

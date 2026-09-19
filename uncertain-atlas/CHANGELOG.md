@@ -1,3 +1,7 @@
+## 2026-09-19（续 841）
+
+- 不变量 724；语料 C701；模式 name-the-snapshotdiscover-notstop-bar；反模式 snapshotdiscover-notstop-sold-as-bundled；L10.3 第 693 条。填 L4.4 / CometBFT 档案 Offer 被拒不是已经停 not already no-snapshots / not already stopped / not already discovery-done 正式三事（322 余量） / 实现表 / 05b / 共识专题 / 停链面地图。322 snapshotdiscover vs offer bundled unbundling 完成（724 item 3）。
+
 ## 2026-09-19（续 840）
 
 - 不变量 723；语料 C700；模式 name-the-snapshotdiscover-notaccepted-bar；反模式 snapshotdiscover-notaccepted-sold-as-bundled；L10.3 第 692 条。填 L4.4 / CometBFT 档案 挑了最高不是已经收下 not already accepted / not already restored / not already app-format 正式三事（322 余量） / 实现表 / 05b / 共识专题 / 停链面地图。322 snapshotdiscover vs offer bundled unbundling 续（723 item 2）。
