@@ -1,3 +1,6 @@
+- [`polc-notfee-sold-as-bundled.md`](polc-notfee-sold-as-bundled.md) — 费率高 被写成已经更正确 / 就已经是 245 / 就已经是 44（不变量 1523）
+- [`polc-notblk-sold-as-bundled.md`](polc-notblk-sold-as-bundled.md) — 策略通过 被写成已经进块 / 就已经是 25 / 就已经是 166（不变量 1522）
+- [`polc-notill-sold-as-bundled.md`](polc-notill-sold-as-bundled.md) — 策略拒绝 被写成已经共识非法 / 就已经是 44 / 就已经 144 bundled（不变量 1521）
 - [`asv-notws-sold-as-bundled.md`](asv-notws-sold-as-bundled.md) — assumevalid 被写成已经是弱主观 / 就已经是 24 / 就已经是 23（不变量 1520）
 - [`asv-notutxo-sold-as-bundled.md`](asv-notutxo-sold-as-bundled.md) — assumevalid 被写成已经是 assumeutxo / 就已经是 38 / 就已经是 207（不变量 1519）
 - [`asv-notchk-sold-as-bundled.md`](asv-notchk-sold-as-bundled.md) — assumevalid 被写成已经旧 checkpoint 强迫链 / 就已经是 24 / 就已经 25 bundled（不变量 1518）

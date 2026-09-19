@@ -15,9 +15,9 @@
 完成标准（事实 + 建议混合，见各条标注）：
 
 1. 五条轨（index / courses / protocols / tracks / libraries）互相指认，无孤立读书笔记。
-2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1520）。
+2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1523）。
 3. 决策矩阵「不确定候选」列填完**建议档**（非最终选型）。
-4. 对抗语料 C01–C1498+ 有 runner，能批量扫描文案/测试钩子。
+4. 对抗语料 C01–C1501+ 有 runner，能批量扫描文案/测试钩子。
 5. 过滤器页链（Cardano / Babylon / EigenLayer 等）要么补 19 节，要么在 index 明确「永久过滤器」。
 6. 单一 canonical 分支 + 清晰 merge 策略（见 Phase 0）。
 
@@ -34,7 +34,7 @@
 | 协议档案 | 20+ 链/品类 19 节模板 | 强 |
 | 横向专题 | 16 tracks；failure-museum 92+ 案 | 强 |
 | 模式/反模式 | 500+ design-patterns；650+ anti-patterns | 强 |
-| 不变量库 | 1520+ 可测试句；ABCI++ 主线 | 进行中（强） |
+| 不变量库 | 1523+ 可测试句；ABCI++ 主线 | 进行中（强） |
 | 通读路径 | `index/04-study-path.md` 六通 | 强 |
 
 ### 需调整
@@ -71,7 +71,7 @@
 |---|---|---|
 | P1-1 | 威胁模型 v1 | `libraries/threat-model/` _actor / _asset / _boundary 三页 |
 | P1-2 | settlement-copy 与矩阵对齐 | L10.3 清单 ↔ 矩阵行可互链 |
-| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325/127/137/70/38/13/321/322/352/353/47/30/147/155/130/133/338/434/339/330/159/144/111/35/61/31/14/324/157/158 1115–1282；EIP-8 1283–1285；EIP-2124 1286–1288；EIP-778 1289–1291；EIP-868 1292–1294；EIP-100 1295–1297；EIP-150 1298–1300；EIP-658 1301–1303；PrepareUsage 1304–1306；PrepareNochecks 1307–1309；PrepareWhen 1310–1312；PrepareWhenRet 1313–1315；SuggestValidate 1316–1318；LateUnverified 1319–1321；LateMay 1322–1324；VerifyDiscard 1325–1327；VerifyCall 1328–1330；VerifyStatusWhen 1331–1333；VerifyKeep 1334–1336；VerifyAcceptDef 1337–1339；ProcAcceptDef 1340–1342；ExtWhenBcast 1343–1345；EIP-2 Homestead 1346–1349；ExtAppGen 1350–1352；CiNotes 1353–1355；ExtCiNotes 1356–1358；CiFields 1359–1361；ExecTxEv 1362–1364；ExtViUse 1365–1367；PrepEv 1368–1370；ValUse 1371–1373；ViAvail 1374–1376；EIP-7 DELEGATECALL 1377–1379；EIP-140 REVERT 1380–1382；EIP-214 STATICCALL 1383–1385；EIP-211 returndata 1386–1388；EIP-1014 CREATE2 1389–1391；EIP-1052 EXTCODEHASH 1392–1394；EIP-1344 CHAINID 1395–1397；EIP-3198 BASEFEE 1398–1400；EIP-7516 BLOBBASEFEE 1401–1403；EIP-145 SHIFT 1404–1406；EIP-3855 PUSH0 1407–1409；EIP-5656 MCOPY 1410–1412；EIP-3529 refund 1413–1415；EIP-6049 deprecate 1416–1418；EIP-2200 net-meter 1419–1421；EIP-2028 calldata-cut 1422–1424；EIP-2565 modexp-price 1425–1427；EIP-1108 bn128-cut 1428–1430；EIP-1884 SELFBALANCE 1431–1433；EIP-152 BLAKE2F 1434–1436；EIP-3860 initcode 1437–1439；EIP-170 returned 1440–1442；EIP-3541 reserved-prefix 1443–1445；EIP-3651 coinbase 1446–1448；EIP-2929 cold-vs-warm 1449–1451；EIP-2930 listed 1452–1454；EIP-2718 typed-envelope 1455–1457；EIP-7935 default-gas 1458–1460；EIP-7825 tx-gas-cap 1461–1463；EIP-7934 rlp-cap 1464–1466；EIP-7623 calldata-floor 1467–1469；EIP-7939 clz 1470–1472；EIP-7823 modexp-bound 1473–1475；EIP-7928 block-list 1476–1478；EIP-7044 exit-domain 1479–1481；EIP-7917 lookahead 1482–1484；EIP-1559 basefee-vs-tip 1485–1487；EIP-7642 history-window 1488–1490；EIP-4844 blob-fee 1491–1493；EIP-7691 blob-schedule 1494–1496；EIP-7918 blob-reserve 1497–1499；EIP-2935 history-hash 1500–1502；EIP-7892 bpo 1503–1505；EIP-4788 parent-root 1506–1508；AnyTrust dacert 1509–1511；Celestia nmt 1512–1514；EIP-4844 blob-vs-das 1515–1517；assumevalid 1518–1520 | AUDIT_LOG 连续；invariants README 更新 |
+| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325/127/137/70/38/13/321/322/352/353/47/30/147/155/130/133/338/434/339/330/159/144/111/35/61/31/14/324/157/158 1115–1282；EIP-8 1283–1285；EIP-2124 1286–1288；EIP-778 1289–1291；EIP-868 1292–1294；EIP-100 1295–1297；EIP-150 1298–1300；EIP-658 1301–1303；PrepareUsage 1304–1306；PrepareNochecks 1307–1309；PrepareWhen 1310–1312；PrepareWhenRet 1313–1315；SuggestValidate 1316–1318；LateUnverified 1319–1321；LateMay 1322–1324；VerifyDiscard 1325–1327；VerifyCall 1328–1330；VerifyStatusWhen 1331–1333；VerifyKeep 1334–1336；VerifyAcceptDef 1337–1339；ProcAcceptDef 1340–1342；ExtWhenBcast 1343–1345；EIP-2 Homestead 1346–1349；ExtAppGen 1350–1352；CiNotes 1353–1355；ExtCiNotes 1356–1358；CiFields 1359–1361；ExecTxEv 1362–1364；ExtViUse 1365–1367；PrepEv 1368–1370；ValUse 1371–1373；ViAvail 1374–1376；EIP-7 DELEGATECALL 1377–1379；EIP-140 REVERT 1380–1382；EIP-214 STATICCALL 1383–1385；EIP-211 returndata 1386–1388；EIP-1014 CREATE2 1389–1391；EIP-1052 EXTCODEHASH 1392–1394；EIP-1344 CHAINID 1395–1397；EIP-3198 BASEFEE 1398–1400；EIP-7516 BLOBBASEFEE 1401–1403；EIP-145 SHIFT 1404–1406；EIP-3855 PUSH0 1407–1409；EIP-5656 MCOPY 1410–1412；EIP-3529 refund 1413–1415；EIP-6049 deprecate 1416–1418；EIP-2200 net-meter 1419–1421；EIP-2028 calldata-cut 1422–1424；EIP-2565 modexp-price 1425–1427；EIP-1108 bn128-cut 1428–1430；EIP-1884 SELFBALANCE 1431–1433；EIP-152 BLAKE2F 1434–1436；EIP-3860 initcode 1437–1439；EIP-170 returned 1440–1442；EIP-3541 reserved-prefix 1443–1445；EIP-3651 coinbase 1446–1448；EIP-2929 cold-vs-warm 1449–1451；EIP-2930 listed 1452–1454；EIP-2718 typed-envelope 1455–1457；EIP-7935 default-gas 1458–1460；EIP-7825 tx-gas-cap 1461–1463；EIP-7934 rlp-cap 1464–1466；EIP-7623 calldata-floor 1467–1469；EIP-7939 clz 1470–1472；EIP-7823 modexp-bound 1473–1475；EIP-7928 block-list 1476–1478；EIP-7044 exit-domain 1479–1481；EIP-7917 lookahead 1482–1484；EIP-1559 basefee-vs-tip 1485–1487；EIP-7642 history-window 1488–1490；EIP-4844 blob-fee 1491–1493；EIP-7691 blob-schedule 1494–1496；EIP-7918 blob-reserve 1497–1499；EIP-2935 history-hash 1500–1502；EIP-7892 bpo 1503–1505；EIP-4788 parent-root 1506–1508；AnyTrust dacert 1509–1511；Celestia nmt 1512–1514；EIP-4844 blob-vs-das 1515–1517；assumevalid 1518–1520；policy-vs-consensus 1521–1523 | AUDIT_LOG 连续；invariants README 更新 |
 | P1-4 | runner 接 pytest | 至少 10 条 Cxx 有占位测试 |
 | P1-5 | PQ 尺寸卡补 CPU 列 | `tracks/post-quantum/engineering-ledger.md` 有测量方法 |
 
@@ -383,8 +383,9 @@
 | 2026-09-19 | P1-3 1512–1514 Celestia nmt 不是已经整块可用 / DAS过关不是已经拿到自己的blob / DAS过关不是已经编码诚实 拆句（124 item 1/2/3） |
 | 2026-09-19 | P1-3 1515–1517 EIP-4844 blob-vs-das 不是已经PeerDAS / PeerDAS不是已经Celestia DAS / 承诺哈希不是已经永存 拆句（23 item 1/2/3） |
 | 2026-09-19 | P1-3 1518–1520 assumevalid 不是已经旧checkpoint强迫链 / 不是已经assumeutxo / 不是已经弱主观 拆句（25 item 1/2/3） |
+| 2026-09-19 | P1-3 1521–1523 policy 不是已经共识非法 / 策略通过不是已经进块 / 费率高不是已经更正确 拆句（144 item 1/2/3） |
 
-下一批默认：**P1-3 官方三事 1521+**（继续仍捆着的官方对象：policy-vs-consensus，或 P3-3 / P1-5）。
+下一批默认：**P1-3 官方三事 1524+**（继续仍捆着的官方对象：rbf-signal 166，或 P3-3 / P1-5）。
 唤醒后先跑 `python3 tools/review_audit.py`，见 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
 ---

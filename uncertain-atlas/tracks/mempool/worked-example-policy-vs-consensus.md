@@ -84,7 +84,7 @@
 | 经济 | 费率买空间，不是正确性 |
 
 **推断：** 产品句若只写「交易被拒绝」，读者会把保安手册听成法官。  
-**建议：** 不确定第一版必须把本地错 / 池拒绝 / 共识非法三套文案分开。不要抄默认费率。不要写怎样把非标准塞进块或怎样 RBF 钉死。
+**建议：** 不确定第一版必须把本地错 / 池拒绝 / 共识非法三套文案分开。可以跳过「看见邻居不转发就已经共识非法」。144 policy vs consensus bundled unbundling 完成（1521 item 1 / 1522 item 2 / 1523 item 3）；精读 [`worked-example-polc-notill-vs-bundled.md`](worked-example-polc-notill-vs-bundled.md)（不变量 1521 item 1）、[`worked-example-polc-notblk-vs-bundled.md`](worked-example-polc-notblk-vs-bundled.md)（不变量 1522 item 2）、[`worked-example-polc-notfee-vs-bundled.md`](worked-example-polc-notfee-vs-bundled.md)（不变量 1523 item 3）。不要抄默认费率。不要写怎样把非标准塞进块或怎样 RBF 钉死。
 
 ---
 

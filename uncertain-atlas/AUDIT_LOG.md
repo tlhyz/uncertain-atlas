@@ -1,3 +1,18 @@
+| A7380 | 记录 | 会与 144 / 245 / 44 / 1521 / 1522 糊成「看见费率高不是更正确就已经更正确 interchangeable、就已经是不变量 245 interchangeable、就已经是不变量 44 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。144 policy vs consensus bundled unbundling 完成（1523 item 3） |
+| A7381 | 高 | 看见费率高不是更正确 会被写成已经更正确 interchangeable / 245 interchangeable | 官方 Policy polc item 3：not already 已经更正确 / not 245 |
+| A7382 | 高 | 看见a higher fee is not already more correct 会被写成已经是不变量 245 interchangeable / 44 interchangeable | 官方 Policy polc item 3：not already 已经是不变量 245 / not 44 |
+| A7383 | 高 | 看见费率高不是更正确 会被写成已经是不变量 44 interchangeable | 官方 Policy polc item 3：not already settled |
+| A7384 | 中 | 怎样把非标准塞进块、怎样 RBF 钉死会被抄进不确定 | 不抄。不写 怎样把非标准塞进块、怎样 RBF 钉死。不另写 19 节 |
+| A7375 | 记录 | 会与 144 / 25 / 166 / 1521 / 1523 糊成「看见策略通过不是已经进块就已经进块 interchangeable、就已经是不变量 25 interchangeable、就已经是不变量 166 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 Policy policy-pass not already in-block / not already 25 / not already 166 正式三事（144 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。144 policy vs consensus bundled unbundling 续（1522 item 2） |
+| A7376 | 高 | 看见策略通过不是已经进块 会被写成已经进块 interchangeable / 25 interchangeable | 官方 Policy polc item 2：not already 已经进块 / not 25 |
+| A7377 | 高 | 看见a policy pass is not already inclusion in a block 会被写成已经是不变量 25 interchangeable / 166 interchangeable | 官方 Policy polc item 2：not already 已经是不变量 25 / not 166 |
+| A7378 | 高 | 看见策略通过不是已经进块 会被写成已经是不变量 166 interchangeable | 官方 Policy polc item 2：not already settled |
+| A7379 | 中 | 怎样把非标准塞进块、怎样 RBF 钉死会被抄进不确定 | 不抄。不写 怎样把非标准塞进块、怎样 RBF 钉死。不另写 19 节 |
+| A7370 | 记录 | 会与 144 / 44 / 25 / 1522 / 1523 糊成「看见策略拒绝不是共识非法就已经共识非法 interchangeable、就已经是不变量 44 interchangeable、就已经 144 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 Policy policy-reject not already consensus-illegal / not already 44 / not already 144-bundled 正式三事（144 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。144 policy vs consensus bundled unbundling 启动（1521 item 1） |
+| A7371 | 高 | 看见策略拒绝不是共识非法 会被写成已经共识非法 interchangeable / 44 interchangeable | 官方 Policy polc item 1：not already 已经共识非法 / not 44 |
+| A7372 | 高 | 看见a policy rejection is not already consensus-illegal 会被写成已经是不变量 44 interchangeable / 25 interchangeable | 官方 Policy polc item 1：not already 已经是不变量 44 / not 25 |
+| A7373 | 高 | 看见策略拒绝不是共识非法 会被写成已经 144 bundled interchangeable | 官方 Policy polc item 1：not already settled |
+| A7374 | 中 | 怎样把非标准塞进块、怎样 RBF 钉死会被抄进不确定 | 不抄。不写 怎样把非标准塞进块、怎样 RBF 钉死。不另写 19 节 |
 | A7365 | 记录 | 会与 25 / 24 / 23 / 1518 / 1519 糊成「看见assumevalid不是已经弱主观检查点就已经是弱主观 interchangeable、就已经是不变量 24 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.5、L3.5。25 assumevalid vs checkpoint bundled unbundling 完成（1520 item 3） |
 | A7366 | 高 | 看见assumevalid不是已经弱主观检查点 会被写成已经是弱主观 interchangeable / 24 interchangeable | 官方 assumevalid asv item 3：not already 已经是弱主观 / not 24 |
 | A7367 | 高 | 看见assumevalid is not already a weak-subjectivity checkpoint 会被写成已经是不变量 24 interchangeable / 23 interchangeable | 官方 assumevalid asv item 3：not already 已经是不变量 24 / not 23 |

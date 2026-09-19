@@ -1,3 +1,15 @@
+## 2026-09-19（续 1640）
+
+- 不变量 1523；语料 C1501；模式 name-the-polc-notfee-bar；反模式 polc-notfee-sold-as-bundled；L10.3 第 1492 条。填 L3.2 Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）。144 policy vs consensus bundled unbundling 完成（1523 item 3）。
+
+## 2026-09-19（续 1639）
+
+- 不变量 1522；语料 C1500；模式 name-the-polc-notblk-bar；反模式 polc-notblk-sold-as-bundled；L10.3 第 1491 条。填 L3.2 Policy policy-pass not already in-block / not already 25 / not already 166 正式三事（144 余量）。144 policy vs consensus bundled unbundling 续（1522 item 2）。
+
+## 2026-09-19（续 1638）
+
+- 不变量 1521；语料 C1499；模式 name-the-polc-notill-bar；反模式 polc-notill-sold-as-bundled；L10.3 第 1490 条。填 L3.2 Policy policy-reject not already consensus-illegal / not already 44 / not already 144-bundled 正式三事（144 余量）。144 policy vs consensus bundled unbundling 启动（1521 item 1）。
+
 ## 2026-09-19（续 1637）
 
 - 不变量 1520；语料 C1498；模式 name-the-asv-notws-bar；反模式 asv-notws-sold-as-bundled；L10.3 第 1489 条。填 L3.5 assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）。25 assumevalid vs checkpoint bundled unbundling 完成（1520 item 3）。

@@ -35,7 +35,7 @@ standardness / mempool 策略是保安：最小费、脚本模板、数据包大
 **policy：** 本地转发与 mempool 准入。各节点可不同。  
 **consensus rule：** 全节点验证块时必须一致，否则分裂。
 
-**事实：** 一笔非标准但共识合法的交易，仍可能被矿工直接打进块。轻钱包等不到转发，不代表永远无效。Bitcoin Core 官方：Policy 是共识之外、对未确认交易进 mempool 之前的本地可配置规则；**不作用于块内交易**。[精读](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。
+**事实：** 一笔非标准但共识合法的交易，仍可能被矿工直接打进块。轻钱包等不到转发，不代表永远无效。Bitcoin Core 官方：Policy 是共识之外、对未确认交易进 mempool 之前的本地可配置规则；**不作用于块内交易**。[精读](../../tracks/mempool/worked-example-policy-vs-consensus.md) Policy policy-reject not already consensus-illegal / not already 44 / not already 144-bundled 正式三事（144 余量）：[`../../tracks/mempool/worked-example-polc-notill-vs-bundled.md`](../../tracks/mempool/worked-example-polc-notill-vs-bundled.md)（不变量 1521）。 Policy policy-pass not already in-block / not already 25 / not already 166 正式三事（144 余量）：[`../../tracks/mempool/worked-example-polc-notblk-vs-bundled.md`](../../tracks/mempool/worked-example-polc-notblk-vs-bundled.md)（不变量 1522）。 Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）：[`../../tracks/mempool/worked-example-polc-notfee-vs-bundled.md`](../../tracks/mempool/worked-example-polc-notfee-vs-bundled.md)（不变量 1523）。（不变量 144）。
 
 ---
 
