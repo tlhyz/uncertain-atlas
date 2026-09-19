@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 CheckTx Data 不是已经被引擎用了 not already used by engine / not already ExecTxResult.Data / not already in LastResultsHash 正式三事（317 余量），必须分开回了字节 是不是 already used by engine interchangeable / 317 checktxresponse bundled interchangeable / checktxresponse-sold-as-exec interchangeable、字段名也叫 Data 是不是 already ExecTxResult.Data interchangeable、有结果 是不是 already in LastResultsHash interchangeable。可以跳过「看见回了就已经被引擎用了 interchangeable / 就已经是 Finalize Data interchangeable / 就已经进了下一头 interchangeable」。不要另写怎样编 Data。317 checktxresponse vs exec bundled unbundling 在本页 item 1 完成；续 [`worked-example-checktxresponse-notfork-vs-bundled.md`](worked-example-checktxresponse-notfork-vs-bundled.md)（不变量 711 item 2，待写）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 CheckTx Data 不是已经被引擎用了 not already used by engine / not already ExecTxResult.Data / not already in LastResultsHash 正式三事（317 余量），必须分开回了字节 是不是 already used by engine interchangeable / 317 checktxresponse bundled interchangeable / checktxresponse-sold-as-exec interchangeable、字段名也叫 Data 是不是 already ExecTxResult.Data interchangeable、有结果 是不是 already in LastResultsHash interchangeable。可以跳过「看见回了就已经被引擎用了 interchangeable / 就已经是 Finalize Data interchangeable / 就已经进了下一头 interchangeable」。不要另写怎样编 Data。317 checktxresponse vs exec bundled unbundling 在本页 item 1 完成；续 [`worked-example-checktxresponse-notfork-vs-bundled.md`](worked-example-checktxresponse-notfork-vs-bundled.md)（不变量 711 item 2）。
 
 ## 本页不抄
 
