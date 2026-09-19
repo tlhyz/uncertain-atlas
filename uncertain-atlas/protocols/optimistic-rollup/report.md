@@ -87,7 +87,7 @@ L1 只存：根、消息、桥余额。
 
 L2 全节点存 L2 状态。  
 L1 存根与（短时）blob。blob 过期后，历史 DA 靠谁档案，是另假设（L5.4）。  
-AnyTrust 父链常见只收 DACert，全文在委员会抽屉：[`../../tracks/light-clients/worked-example-dacert-vs-posted.md`](../../tracks/light-clients/worked-example-dacert-vs-posted.md)（不变量 142）。证书不是已经贴上全文。  
+AnyTrust 父链常见只收 DACert，全文在委员会抽屉：[`../../tracks/light-clients/worked-example-dacert-vs-posted.md`](../../tracks/light-clients/worked-example-dacert-vs-posted.md) AnyTrust dacert not already posted-full / not already 23 / not already 142-bundled 正式三事（142 余量）：[`../../tracks/light-clients/worked-example-dcert-notpost-vs-bundled.md`](../../tracks/light-clients/worked-example-dcert-notpost-vs-bundled.md)（不变量 1509）。 AnyTrust anytrust not already rollup-da / not already 124 / not already 9 正式三事（142 余量）：[`../../tracks/light-clients/worked-example-dcert-notroll-vs-bundled.md`](../../tracks/light-clients/worked-example-dcert-notroll-vs-bundled.md)（不变量 1510）。 AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）：[`../../tracks/light-clients/worked-example-dcert-notonly-vs-bundled.md`](../../tracks/light-clients/worked-example-dcert-notonly-vs-bundled.md)（不变量 1511）。（不变量 142）。证书不是已经贴上全文。  
 挑战者磁盘不够或历史被删，揭穿失败。
 
 ---

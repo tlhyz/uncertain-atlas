@@ -1,3 +1,18 @@
+| A7320 | 记录 | 会与 142 / 141 / 23 / 1509 / 1510 糊成「看见凑不齐签名回退贴全文不是已经只走委员会就已经只走委员会 interchangeable、就已经是不变量 141 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。142 dacert vs posted bundled unbundling 完成（1511 item 3） |
+| A7321 | 高 | 看见凑不齐签名回退贴全文不是已经只走委员会 会被写成已经只走委员会 interchangeable / 141 interchangeable | 官方 AnyTrust dcert item 3：not already 已经只走委员会 / not 141 |
+| A7322 | 高 | 看见falling back to posting the full batch is not already committee-only 会被写成已经是不变量 141 interchangeable / 23 interchangeable | 官方 AnyTrust dcert item 3：not already 已经是不变量 141 / not 23 |
+| A7323 | 高 | 看见凑不齐签名回退贴全文不是已经只走委员会 会被写成已经是不变量 23 interchangeable | 官方 AnyTrust dcert item 3：not already settled |
+| A7324 | 中 | 怎样让委员不给数据、怎样拼假证书会被抄进不确定 | 不抄。不写 怎样让委员不给数据、怎样拼假证书。不另写 19 节 |
+| A7315 | 记录 | 会与 142 / 124 / 9 / 1509 / 1511 糊成「看见AnyTrust不是已经Rollup DA就已经是Rollup DA interchangeable、就已经是不变量 124 interchangeable、就已经是不变量 9 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 AnyTrust anytrust not already rollup-da / not already 124 / not already 9 正式三事（142 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。142 dacert vs posted bundled unbundling 续（1510 item 2） |
+| A7316 | 高 | 看见AnyTrust不是已经Rollup DA 会被写成已经是Rollup DA interchangeable / 124 interchangeable | 官方 AnyTrust dcert item 2：not already 已经是Rollup DA / not 124 |
+| A7317 | 高 | 看见AnyTrust is not already Rollup DA 会被写成已经是不变量 124 interchangeable / 9 interchangeable | 官方 AnyTrust dcert item 2：not already 已经是不变量 124 / not 9 |
+| A7318 | 高 | 看见AnyTrust不是已经Rollup DA 会被写成已经是不变量 9 interchangeable | 官方 AnyTrust dcert item 2：not already settled |
+| A7319 | 中 | 怎样让委员不给数据、怎样拼假证书会被抄进不确定 | 不抄。不写 怎样让委员不给数据、怎样拼假证书。不另写 19 节 |
+| A7310 | 记录 | 会与 142 / 23 / 124 / 1510 / 1511 糊成「看见DACert不是全文已经贴上父链就已经贴上全文 interchangeable、就已经是不变量 23 interchangeable、就已经 142 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 AnyTrust dacert not already posted-full / not already 23 / not already 142-bundled 正式三事（142 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。142 dacert vs posted bundled unbundling 启动（1509 item 1） |
+| A7311 | 高 | 看见DACert不是全文已经贴上父链 会被写成已经贴上全文 interchangeable / 23 interchangeable | 官方 AnyTrust dcert item 1：not already 已经贴上全文 / not 23 |
+| A7312 | 高 | 看见a DACert is not already the full batch posted on the parent chain 会被写成已经是不变量 23 interchangeable / 124 interchangeable | 官方 AnyTrust dcert item 1：not already 已经是不变量 23 / not 124 |
+| A7313 | 高 | 看见DACert不是全文已经贴上父链 会被写成已经 142 bundled interchangeable | 官方 AnyTrust dcert item 1：not already settled |
+| A7314 | 中 | 怎样让委员不给数据、怎样拼假证书会被抄进不确定 | 不抄。不写 怎样让委员不给数据、怎样拼假证书。不另写 19 节 |
 | A7305 | 记录 | 会与 156 / 195 / 145 / 1506 / 1507 糊成「看见环缓冲过期不是根已经永久可查就已经永久可查 interchangeable、就已经是不变量 195 interchangeable、就已经是不变量 145 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.2、L5.2。156 parent-root vs head bundled unbundling 完成（1508 item 3） |
 | A7306 | 高 | 看见环缓冲过期不是根已经永久可查 会被写成已经永久可查 interchangeable / 195 interchangeable | 官方 EIP-4788 proot item 3：not already 已经永久可查 / not 195 |
 | A7307 | 高 | 看见a ring-buffer expiry is not already a permanent root 会被写成已经是不变量 195 interchangeable / 145 interchangeable | 官方 EIP-4788 proot item 3：not already 已经是不变量 195 / not 145 |

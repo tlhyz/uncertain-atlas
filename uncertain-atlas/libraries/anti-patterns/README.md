@@ -1,3 +1,6 @@
+- [`dcert-notonly-sold-as-bundled.md`](dcert-notonly-sold-as-bundled.md) — 回退贴全文 被写成已经只走委员会 / 就已经是 141 / 就已经是 23（不变量 1511）
+- [`dcert-notroll-sold-as-bundled.md`](dcert-notroll-sold-as-bundled.md) — AnyTrust 被写成已经是 Rollup DA / 就已经是 124 / 就已经是 9（不变量 1510）
+- [`dcert-notpost-sold-as-bundled.md`](dcert-notpost-sold-as-bundled.md) — DACert 被写成已经贴上全文 / 就已经是 23 / 就已经 142 bundled（不变量 1509）
 - [`proot-notperm-sold-as-bundled.md`](proot-notperm-sold-as-bundled.md) — 环缓冲过期 被写成已经永久可查 / 就已经是 195 / 就已经是 145（不变量 1508）
 - [`proot-notfin-sold-as-bundled.md`](proot-notfin-sold-as-bundled.md) — 合约读到的根 被写成已经 finalized / 就已经是 149 / 就已经是 154（不变量 1507）
 - [`proot-nothead-sold-as-bundled.md`](proot-nothead-sold-as-bundled.md) — 父信标根 被写成已经是当前头 / 就已经是 127 / 就已经 156 bundled（不变量 1506）

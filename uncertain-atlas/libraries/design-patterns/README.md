@@ -1,3 +1,6 @@
+- [`name-the-dcert-notonly-bar.md`](name-the-dcert-notonly-bar.md) — AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）（不变量 1511）
+- [`name-the-dcert-notroll-bar.md`](name-the-dcert-notroll-bar.md) — AnyTrust anytrust not already rollup-da / not already 124 / not already 9 正式三事（142 余量）（不变量 1510）
+- [`name-the-dcert-notpost-bar.md`](name-the-dcert-notpost-bar.md) — AnyTrust dacert not already posted-full / not already 23 / not already 142-bundled 正式三事（142 余量）（不变量 1509）
 - [`name-the-proot-notperm-bar.md`](name-the-proot-notperm-bar.md) — EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）（不变量 1508）
 - [`name-the-proot-notfin-bar.md`](name-the-proot-notfin-bar.md) — EIP-4788 contract-root not already finalized / not already 149 / not already 154 正式三事（156 余量）（不变量 1507）
 - [`name-the-proot-nothead-bar.md`](name-the-proot-nothead-bar.md) — EIP-4788 parent-root not already current-head / not already 127 / not already 156-bundled 正式三事（156 余量）（不变量 1506）

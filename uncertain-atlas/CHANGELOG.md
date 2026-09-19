@@ -1,3 +1,15 @@
+## 2026-09-19（续 1628）
+
+- 不变量 1511；语料 C1489；模式 name-the-dcert-notonly-bar；反模式 dcert-notonly-sold-as-bundled；L10.3 第 1480 条。填 L7.2 AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）。142 dacert vs posted bundled unbundling 完成（1511 item 3）。
+
+## 2026-09-19（续 1627）
+
+- 不变量 1510；语料 C1488；模式 name-the-dcert-notroll-bar；反模式 dcert-notroll-sold-as-bundled；L10.3 第 1479 条。填 L7.2 AnyTrust anytrust not already rollup-da / not already 124 / not already 9 正式三事（142 余量）。142 dacert vs posted bundled unbundling 续（1510 item 2）。
+
+## 2026-09-19（续 1626）
+
+- 不变量 1509；语料 C1487；模式 name-the-dcert-notpost-bar；反模式 dcert-notpost-sold-as-bundled；L10.3 第 1478 条。填 L7.2 AnyTrust dacert not already posted-full / not already 23 / not already 142-bundled 正式三事（142 余量）。142 dacert vs posted bundled unbundling 启动（1509 item 1）。
+
 ## 2026-09-19（续 1625）
 
 - 不变量 1508；语料 C1486；模式 name-the-proot-notperm-bar；反模式 proot-notperm-sold-as-bundled；L10.3 第 1477 条。填 L5.2 EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）。156 parent-root vs head bundled unbundling 完成（1508 item 3）。
