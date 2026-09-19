@@ -1,3 +1,4 @@
+- [`snapshotswitch-nothistory-sold-as-bundled.md`](snapshotswitch-nothistory-sold-as-bundled.md) — 能出块 被写成已经有完整历史 / 和其他节点一样跑 被写成已经从创世重放 / 透明 被写成已经不用管扩展高度（不变量 727）
 - [`snapshotswitch-notversion-sold-as-bundled.md`](snapshotswitch-notversion-sold-as-bundled.md) — AppHash 对上 被写成已经版本也对上 / 对了下一高度 被写成已经对了当前头 / Info 绿了 被写成已经本头交差（不变量 726）
 - [`snapshotswitch-notchainid-sold-as-bundled.md`](snapshotswitch-notchainid-sold-as-bundled.md) — 装完 被写成已经有了这些 / 状态机在 被写成已经能出块 / 有创世文件 被写成已经和轻客户端对过（不变量 725）
 - [`snapshotdiscover-notstop-sold-as-bundled.md`](snapshotdiscover-notstop-sold-as-bundled.md) — 被拒 被写成已经没有快照 / 拒了邻居 被写成已经停 / 能中止 被写成已经发现完（不变量 724）
