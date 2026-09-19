@@ -1,3 +1,15 @@
+## 2026-09-19（续 1625）
+
+- 不变量 1508；语料 C1486；模式 name-the-proot-notperm-bar；反模式 proot-notperm-sold-as-bundled；L10.3 第 1477 条。填 L5.2 EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）。156 parent-root vs head bundled unbundling 完成（1508 item 3）。
+
+## 2026-09-19（续 1624）
+
+- 不变量 1507；语料 C1485；模式 name-the-proot-notfin-bar；反模式 proot-notfin-sold-as-bundled；L10.3 第 1476 条。填 L5.2 EIP-4788 contract-root not already finalized / not already 149 / not already 154 正式三事（156 余量）。156 parent-root vs head bundled unbundling 续（1507 item 2）。
+
+## 2026-09-19（续 1623）
+
+- 不变量 1506；语料 C1484；模式 name-the-proot-nothead-bar；反模式 proot-nothead-sold-as-bundled；L10.3 第 1475 条。填 L5.2 EIP-4788 parent-root not already current-head / not already 127 / not already 156-bundled 正式三事（156 余量）。156 parent-root vs head bundled unbundling 启动（1506 item 1）。
+
 ## 2026-09-19（续 1622）
 
 - 不变量 1505；语料 C1483；模式 name-the-bpof-notver-bar；反模式 bpof-notver-sold-as-bundled；L10.3 第 1474 条。填 L5.4 EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）。209 bpo vs hardfork bundled unbundling 完成（1505 item 3）。

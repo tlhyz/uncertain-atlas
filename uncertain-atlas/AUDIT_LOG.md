@@ -1,3 +1,18 @@
+| A7305 | 记录 | 会与 156 / 195 / 145 / 1506 / 1507 糊成「看见环缓冲过期不是根已经永久可查就已经永久可查 interchangeable、就已经是不变量 195 interchangeable、就已经是不变量 145 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.2、L5.2。156 parent-root vs head bundled unbundling 完成（1508 item 3） |
+| A7306 | 高 | 看见环缓冲过期不是根已经永久可查 会被写成已经永久可查 interchangeable / 195 interchangeable | 官方 EIP-4788 proot item 3：not already 已经永久可查 / not 195 |
+| A7307 | 高 | 看见a ring-buffer expiry is not already a permanent root 会被写成已经是不变量 195 interchangeable / 145 interchangeable | 官方 EIP-4788 proot item 3：not already 已经是不变量 195 / not 145 |
+| A7308 | 高 | 看见环缓冲过期不是根已经永久可查 会被写成已经是不变量 145 interchangeable | 官方 EIP-4788 proot item 3：not already settled |
+| A7309 | 中 | 怎样塞假父根、怎样打环碰撞会被抄进不确定 | 不抄。不写 怎样塞假父根、怎样打环碰撞。不另写 19 节 |
+| A7300 | 记录 | 会与 156 / 149 / 154 / 1506 / 1508 糊成「看见合约里读到的根不是已经finalized就已经finalized interchangeable、就已经是不变量 149 interchangeable、就已经是不变量 154 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-4788 contract-root not already finalized / not already 149 / not already 154 正式三事（156 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.2、L5.2。156 parent-root vs head bundled unbundling 续（1507 item 2） |
+| A7301 | 高 | 看见合约里读到的根不是已经finalized 会被写成已经finalized interchangeable / 149 interchangeable | 官方 EIP-4788 proot item 2：not already 已经finalized / not 149 |
+| A7302 | 高 | 看见a root read from the contract is not already finalized 会被写成已经是不变量 149 interchangeable / 154 interchangeable | 官方 EIP-4788 proot item 2：not already 已经是不变量 149 / not 154 |
+| A7303 | 高 | 看见合约里读到的根不是已经finalized 会被写成已经是不变量 154 interchangeable | 官方 EIP-4788 proot item 2：not already settled |
+| A7304 | 中 | 怎样塞假父根、怎样打环碰撞会被抄进不确定 | 不抄。不写 怎样塞假父根、怎样打环碰撞。不另写 19 节 |
+| A7295 | 记录 | 会与 156 / 127 / 149 / 1507 / 1508 糊成「看见头里的父信标根不是当前信标头就已经是当前信标头 interchangeable、就已经是不变量 127 interchangeable、就已经 156 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-4788 parent-root not already current-head / not already 127 / not already 156-bundled 正式三事（156 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.2、L5.2。156 parent-root vs head bundled unbundling 启动（1506 item 1） |
+| A7296 | 高 | 看见头里的父信标根不是当前信标头 会被写成已经是当前信标头 interchangeable / 127 interchangeable | 官方 EIP-4788 proot item 1：not already 已经是当前信标头 / not 127 |
+| A7297 | 高 | 看见the parent beacon root is not already the current head 会被写成已经是不变量 127 interchangeable / 149 interchangeable | 官方 EIP-4788 proot item 1：not already 已经是不变量 127 / not 149 |
+| A7298 | 高 | 看见头里的父信标根不是当前信标头 会被写成已经 156 bundled interchangeable | 官方 EIP-4788 proot item 1：not already settled |
+| A7299 | 中 | 怎样塞假父根、怎样打环碰撞会被抄进不确定 | 不抄。不写 怎样塞假父根、怎样打环碰撞。不另写 19 节 |
 | A7290 | 记录 | 会与 209 / 200 / 207 / 1503 / 1504 糊成「看见分叉摘要掺进当前blob上限不是已经换了分叉版本号就已经换了分叉版本号 interchangeable、就已经是不变量 200 interchangeable、就已经是不变量 207 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。209 bpo vs hardfork bundled unbundling 完成（1505 item 3） |
 | A7291 | 高 | 看见分叉摘要掺进当前blob上限不是已经换了分叉版本号 会被写成已经换了分叉版本号 interchangeable / 200 interchangeable | 官方 EIP-7892 bpof item 3：not already 已经换了分叉版本号 / not 200 |
 | A7292 | 高 | 看见including blob max in the fork digest is not already a version-number change 会被写成已经是不变量 200 interchangeable / 207 interchangeable | 官方 EIP-7892 bpof item 3：not already 已经是不变量 200 / not 207 |

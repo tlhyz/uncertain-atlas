@@ -1,3 +1,6 @@
+- [`proot-notperm-sold-as-bundled.md`](proot-notperm-sold-as-bundled.md) — 环缓冲过期 被写成已经永久可查 / 就已经是 195 / 就已经是 145（不变量 1508）
+- [`proot-notfin-sold-as-bundled.md`](proot-notfin-sold-as-bundled.md) — 合约读到的根 被写成已经 finalized / 就已经是 149 / 就已经是 154（不变量 1507）
+- [`proot-nothead-sold-as-bundled.md`](proot-nothead-sold-as-bundled.md) — 父信标根 被写成已经是当前头 / 就已经是 127 / 就已经 156 bundled（不变量 1506）
 - [`bpof-notver-sold-as-bundled.md`](bpof-notver-sold-as-bundled.md) — 摘要掺进上限 被写成已经换了版本号 / 就已经是 200 / 就已经是 207（不变量 1505）
 - [`bpof-notcfg-sold-as-bundled.md`](bpof-notcfg-sold-as-bundled.md) — 配置里的blob日程 被写成已经不需要分叉 / 就已经是 201 / 就已经是 23（不变量 1504）
 - [`bpof-notexec-sold-as-bundled.md`](bpof-notexec-sold-as-bundled.md) — BPO专用分叉 被写成已经改了执行 / 就已经是 200 / 就已经 209 bundled（不变量 1503）

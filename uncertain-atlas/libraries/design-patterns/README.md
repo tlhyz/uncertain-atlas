@@ -1,3 +1,6 @@
+- [`name-the-proot-notperm-bar.md`](name-the-proot-notperm-bar.md) — EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）（不变量 1508）
+- [`name-the-proot-notfin-bar.md`](name-the-proot-notfin-bar.md) — EIP-4788 contract-root not already finalized / not already 149 / not already 154 正式三事（156 余量）（不变量 1507）
+- [`name-the-proot-nothead-bar.md`](name-the-proot-nothead-bar.md) — EIP-4788 parent-root not already current-head / not already 127 / not already 156-bundled 正式三事（156 余量）（不变量 1506）
 - [`name-the-bpof-notver-bar.md`](name-the-bpof-notver-bar.md) — EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）（不变量 1505）
 - [`name-the-bpof-notcfg-bar.md`](name-the-bpof-notcfg-bar.md) — EIP-7892 config-schedule not already forkless / not already 201 / not already 23 正式三事（209 余量）（不变量 1504）
 - [`name-the-bpof-notexec-bar.md`](name-the-bpof-notexec-bar.md) — EIP-7892 bpo-fork not already exec-changed / not already 200 / not already 209-bundled 正式三事（209 余量）（不变量 1503）

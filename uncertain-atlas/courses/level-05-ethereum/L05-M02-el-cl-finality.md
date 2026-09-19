@@ -85,7 +85,7 @@ Ethereum 合并后主网。PBS 之后，提议者可能不自己选交易（5.4�
 2. 执行引擎 API：共识层叫执行层「请对此载荷出状态根」。
 3. 客户端把「head 事件」和「finalized 事件」分成两条流。
 4. 执行载荷里的提款列表：系统操作，不是用户交易。精读：[`../../tracks/economic/worked-example-withdrawal-vs-tx.md`](../../tracks/economic/worked-example-withdrawal-vs-tx.md)（不变量 154）。
-5. 执行头里的父信标根：不是当前信标头，也不是已经 finalized。精读：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md)（不变量 156）。
+5. 执行头里的父信标根：不是当前信标头，也不是已经 finalized。精读：[`../../tracks/light-clients/worked-example-parent-root-vs-head.md`](../../tracks/light-clients/worked-example-parent-root-vs-head.md) EIP-4788 parent-root not already current-head / not already 127 / not already 156-bundled 正式三事（156 余量）：[`../../tracks/light-clients/worked-example-proot-nothead-vs-bundled.md`](../../tracks/light-clients/worked-example-proot-nothead-vs-bundled.md)（不变量 1506）。 EIP-4788 contract-root not already finalized / not already 149 / not already 154 正式三事（156 余量）：[`../../tracks/light-clients/worked-example-proot-notfin-vs-bundled.md`](../../tracks/light-clients/worked-example-proot-notfin-vs-bundled.md)（不变量 1507）。 EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）：[`../../tracks/light-clients/worked-example-proot-notperm-vs-bundled.md`](../../tracks/light-clients/worked-example-proot-notperm-vs-bundled.md)（不变量 1508）。（不变量 156）。
 6. 合并后旧 `DIFFICULTY` 指令：返回上一块 RANDAO mix，不是工作量，也不是无偏骰子。精读：[`../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md`](../../tracks/crypto/worked-example-prevrandao-vs-difficulty.md)（不变量 157）。
 
 ---
