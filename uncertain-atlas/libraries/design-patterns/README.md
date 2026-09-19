@@ -1,3 +1,4 @@
+- [`name-the-snapshotswitch-notversion-bar.md`](name-the-snapshotswitch-notversion-bar.md) — AppHash 对上不是已经版本也对上 not already version-matched / not already current-header / not already this-header-settled 正式三事（323 余量）（不变量 726）
 - [`name-the-snapshotswitch-notchainid-bar.md`](name-the-snapshotswitch-notchainid-bar.md) — 装完不是已经有了 ChainID not already has-ChainID / not already can-propose / not already genesis-RPC-checked 正式三事（323 余量）（不变量 725）
 - [`name-the-snapshotdiscover-notstop-bar.md`](name-the-snapshotdiscover-notstop-bar.md) — Offer 被拒不是已经停 not already no-snapshots / not already stopped / not already discovery-done 正式三事（322 余量）（不变量 724）
 - [`name-the-snapshotdiscover-notaccepted-bar.md`](name-the-snapshotdiscover-notaccepted-bar.md) — 挑了最高不是已经收下 not already accepted / not already restored / not already app-format 正式三事（322 余量）（不变量 723）

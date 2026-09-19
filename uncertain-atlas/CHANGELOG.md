@@ -1,3 +1,7 @@
+## 2026-09-19（续 843）
+
+- 不变量 726；语料 C703；模式 name-the-snapshotswitch-notversion-bar；反模式 snapshotswitch-notversion-sold-as-bundled；L10.3 第 695 条。填 L4.4 / CometBFT 档案 AppHash 对上不是已经版本也对上 not already version-matched / not already current-header / not already this-header-settled 正式三事（323 余量） / 实现表 / 05b / 共识专题 / 停链面地图。323 snapshotswitch vs history bundled unbundling 续（726 item 2）。
+
 ## 2026-09-19（续 842）
 
 - 不变量 725；语料 C702；模式 name-the-snapshotswitch-notchainid-bar；反模式 snapshotswitch-notchainid-sold-as-bundled；L10.3 第 694 条。填 L4.4 / CometBFT 档案 装完不是已经有了 ChainID not already has-ChainID / not already can-propose / not already genesis-RPC-checked 正式三事（323 余量） / 实现表 / 05b / 共识专题 / 停链面地图。323 snapshotswitch vs history bundled unbundling 启动（725 item 1）。
