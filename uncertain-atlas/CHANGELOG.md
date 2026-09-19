@@ -1,3 +1,7 @@
+## 2026-09-19（续 832）
+
+- 不变量 715；语料 C692；模式 name-the-validatorupdate-notpower0-bar；反模式 validatorupdate-notpower0-sold-as-bundled；L10.3 第 684 条。填 L4.4 / L4.5 / CometBFT 档案 power 0 不是已经删掉不在集合里的人 not already delete outsider / not already no max / not already key-type chosen 正式三事（318 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。318 validatorupdate vs set bundled unbundling 完成（713 + 714 + 715）。
+
 ## 2026-09-19（续 831）
 
 - 不变量 714；语料 C691；模式 name-the-validatorupdate-notdup-bar；反模式 validatorupdate-notdup-sold-as-bundled；L10.3 第 683 条。填 L4.4 / L4.5 / CometBFT 档案同一批重复公钥不是已经能恢复 not already last-wins / not already recoverable / not already two rows 正式三事（318 余量）/ 实现表 / 05b / 共识专题 / 停链面地图。318 validatorupdate vs set bundled unbundling 续（714 item 2）。
