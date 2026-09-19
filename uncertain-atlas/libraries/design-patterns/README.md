@@ -1,3 +1,6 @@
+- [`name-the-exdom-notloss-bar.md`](name-the-exdom-notloss-bar.md) — EIP-7044 replay-both not already lost-funds / not already safer / not already 6 正式三事（213 余量）（不变量 1481）
+- [`name-the-exdom-notel-bar.md`](name-the-exdom-notel-bar.md) — EIP-7044 domain-lock not already el-changed / not already 154 / not already 192 正式三事（213 余量）（不变量 1480）
+- [`name-the-exdom-notperm-bar.md`](name-the-exdom-notperm-bar.md) — EIP-7044 signed-exit not already perpetual / not already 193 / not already 213-bundled 正式三事（213 余量）（不变量 1479）
 - [`name-the-blal-notrun-bar.md`](name-the-blal-notrun-bar.md) — EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）（不变量 1478）
 - [`name-the-blal-not2930-bar.md`](name-the-blal-not2930-bar.md) — EIP-7928 forced-list not already 2930 / not already 143 / not already 122 正式三事（212 余量）（不变量 1477）
 - [`name-the-blal-notpar-bar.md`](name-the-blal-notpar-bar.md) — EIP-7928 block-list not already parallel-done / not already 168 / not already 212-bundled 正式三事（212 余量）（不变量 1476）

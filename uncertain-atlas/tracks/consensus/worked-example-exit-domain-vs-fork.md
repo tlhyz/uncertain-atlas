@@ -88,7 +88,7 @@
 | 经济 | 两边能重放不是已经丢资金；可以再质押 |
 
 **推断：** 产品句若只写「退出签一次就永远有效」，读者会把域锁听成已经办完退出，或把 7044 听成 7002。  
-**建议：** 第一版可以不抄信标自愿退出。若对照，必须分开活动钥预签、锁死的域、执行层请求、提款操作。不要发明「看见 7044 就已经永远退出」。不要抄分叉版本字节。不要写怎样重放。
+**建议：** 第一版可以不抄信标自愿退出。若对照，必须分开活动钥预签、锁死的域、执行层请求、提款操作。可以跳过「看见 7044 就已经永远退出」。213 exit-domain vs fork bundled unbundling 完成（1479 item 1 / 1480 item 2 / 1481 item 3）；精读 [`worked-example-exdom-notperm-vs-bundled.md`](worked-example-exdom-notperm-vs-bundled.md)（不变量 1479 item 1）、[`worked-example-exdom-notel-vs-bundled.md`](worked-example-exdom-notel-vs-bundled.md)（不变量 1480 item 2）、[`worked-example-exdom-notloss-vs-bundled.md`](worked-example-exdom-notloss-vs-bundled.md)（不变量 1481 item 3）。不要发明「看见 7044 就已经永远退出」。不要抄分叉版本字节。不要写怎样重放。
 
 ---
 

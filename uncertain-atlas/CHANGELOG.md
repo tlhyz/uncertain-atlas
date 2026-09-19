@@ -1,3 +1,15 @@
+## 2026-09-19（续 1598）
+
+- 不变量 1481；语料 C1459；模式 name-the-exdom-notloss-bar；反模式 exdom-notloss-sold-as-bundled；L10.3 第 1450 条。填 L5.2 EIP-7044 replay-both not already lost-funds / not already safer / not already 6 正式三事（213 余量）。213 exit-domain vs fork bundled unbundling 完成（1481 item 3）。
+
+## 2026-09-19（续 1597）
+
+- 不变量 1480；语料 C1458；模式 name-the-exdom-notel-bar；反模式 exdom-notel-sold-as-bundled；L10.3 第 1449 条。填 L5.2 EIP-7044 domain-lock not already el-changed / not already 154 / not already 192 正式三事（213 余量）。213 exit-domain vs fork bundled unbundling 续（1480 item 2）。
+
+## 2026-09-19（续 1596）
+
+- 不变量 1479；语料 C1457；模式 name-the-exdom-notperm-bar；反模式 exdom-notperm-sold-as-bundled；L10.3 第 1448 条。填 L5.2 EIP-7044 signed-exit not already perpetual / not already 193 / not already 213-bundled 正式三事（213 余量）。213 exit-domain vs fork bundled unbundling 启动（1479 item 1）。
+
 ## 2026-09-19（续 1595）
 
 - 不变量 1478；语料 C1456；模式 name-the-blal-notrun-bar；反模式 blal-notrun-sold-as-bundled；L10.3 第 1447 条。填 L5.1 EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）。212 block-list vs parallel bundled unbundling 完成（1478 item 3）。

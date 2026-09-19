@@ -1,3 +1,6 @@
+- [`exdom-notloss-sold-as-bundled.md`](exdom-notloss-sold-as-bundled.md) — 两边能重放 被写成已经丢资金 / 就已经更安全 / 就已经是 6（不变量 1481）
+- [`exdom-notel-sold-as-bundled.md`](exdom-notel-sold-as-bundled.md) — 域锁 被写成已经改了执行层 / 就已经是 154 / 就已经是 192（不变量 1480）
+- [`exdom-notperm-sold-as-bundled.md`](exdom-notperm-sold-as-bundled.md) — 签过的自愿退出 被写成已经永远有效 / 就已经是 193 / 就已经 213 bundled（不变量 1479）
 - [`blal-notrun-sold-as-bundled.md`](blal-notrun-sold-as-bundled.md) — 事后状态差 被写成已经不跑交易 / 就已经更安全 / 就已经是 96（不变量 1478）
 - [`blal-not2930-sold-as-bundled.md`](blal-not2930-sold-as-bundled.md) — 强制名单 被写成已经是 2930 / 就已经是 143 / 就已经是 122（不变量 1477）
 - [`blal-notpar-sold-as-bundled.md`](blal-notpar-sold-as-bundled.md) — 块级访问名单 被写成已经并行跑完 / 就已经是 168 / 就已经 212 bundled（不变量 1476）

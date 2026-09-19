@@ -1,3 +1,18 @@
+| A7170 | 记录 | 会与 213 / 192 / 6 / 1479 / 1480 糊成「看见分叉两边都能重放不是已经丢资金就已经丢资金 interchangeable、就已经更安全 interchangeable、就已经是不变量 6 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7044 replay-both not already lost-funds / not already safer / not already 6 正式三事（213 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。213 exit-domain vs fork bundled unbundling 完成（1481 item 3） |
+| A7171 | 高 | 看见分叉两边都能重放不是已经丢资金 会被写成已经丢资金 interchangeable / 192 interchangeable | 官方 EIP-7044 exdom item 3：not already 已经丢资金 / not 192 |
+| A7172 | 高 | 看见replay on both forks is not already lost funds 会被写成已经更安全 interchangeable / 6 interchangeable | 官方 EIP-7044 exdom item 3：not already 已经更安全 / not 6 |
+| A7173 | 高 | 看见分叉两边都能重放不是已经丢资金 会被写成已经是不变量 6 interchangeable | 官方 EIP-7044 exdom item 3：not already settled |
+| A7174 | 中 | 怎样造锁死域的签、怎样在分叉两边重放会被抄进不确定 | 不抄。不写 怎样造锁死域的签、怎样在分叉两边重放。不另写 19 节 |
+| A7165 | 记录 | 会与 213 / 154 / 192 / 1479 / 1481 糊成「看见域锁在某次分叉不是已经改了执行层就已经改了执行层 interchangeable、就已经是不变量 154 interchangeable、就已经是不变量 192 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7044 domain-lock not already el-changed / not already 154 / not already 192 正式三事（213 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。213 exit-domain vs fork bundled unbundling 续（1480 item 2） |
+| A7166 | 高 | 看见域锁在某次分叉不是已经改了执行层 会被写成已经改了执行层 interchangeable / 154 interchangeable | 官方 EIP-7044 exdom item 2：not already 已经改了执行层 / not 154 |
+| A7167 | 高 | 看见domain lock is not already an EL change 会被写成已经是不变量 154 interchangeable / 192 interchangeable | 官方 EIP-7044 exdom item 2：not already 已经是不变量 154 / not 192 |
+| A7168 | 高 | 看见域锁在某次分叉不是已经改了执行层 会被写成已经是不变量 192 interchangeable | 官方 EIP-7044 exdom item 2：not already settled |
+| A7169 | 中 | 怎样造锁死域的签、怎样在分叉两边重放会被抄进不确定 | 不抄。不写 怎样造锁死域的签、怎样在分叉两边重放。不另写 19 节 |
+| A7160 | 记录 | 会与 213 / 193 / 154 / 1480 / 1481 糊成「看见签过的自愿退出不是已经永远有效就已经永远有效 interchangeable、就已经是不变量 193 interchangeable、就已经 213 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7044 signed-exit not already perpetual / not already 193 / not already 213-bundled 正式三事（213 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。213 exit-domain vs fork bundled unbundling 启动（1479 item 1） |
+| A7161 | 高 | 看见签过的自愿退出不是已经永远有效 会被写成已经永远有效 interchangeable / 193 interchangeable | 官方 EIP-7044 exdom item 1：not already 已经永远有效 / not 193 |
+| A7162 | 高 | 看见signed voluntary exit is not already perpetually valid 会被写成已经是不变量 193 interchangeable / 154 interchangeable | 官方 EIP-7044 exdom item 1：not already 已经是不变量 193 / not 154 |
+| A7163 | 高 | 看见签过的自愿退出不是已经永远有效 会被写成已经 213 bundled interchangeable | 官方 EIP-7044 exdom item 1：not already settled |
+| A7164 | 中 | 怎样造锁死域的签、怎样在分叉两边重放会被抄进不确定 | 不抄。不写 怎样造锁死域的签、怎样在分叉两边重放。不另写 19 节 |
 | A7155 | 记录 | 会与 212 / 122 / 96 / 1476 / 1477 糊成「看见事后状态差不是已经不跑交易就已经不跑交易 interchangeable、就已经更安全 interchangeable、就已经是不变量 96 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。212 block-list vs parallel bundled unbundling 完成（1478 item 3） |
 | A7156 | 高 | 看见事后状态差不是已经不跑交易 会被写成已经不跑交易 interchangeable / 122 interchangeable | 官方 EIP-7928 blal item 3：not already 已经不跑交易 / not 122 |
 | A7157 | 高 | 看见post-state delta is not already skip-exec 会被写成已经更安全 interchangeable / 96 interchangeable | 官方 EIP-7928 blal item 3：not already 已经更安全 / not 96 |
