@@ -997,6 +997,9 @@
 - [`worked-example-modexp-bound-vs-price.md`](worked-example-modexp-bound-vs-price.md) — 看见 MODEXP 输入长度帽 ≠ 已经改了计价公式；超帽 ≠ 已经成功返回；长度有界 ≠ 已经换成 EVM；7823 ≠ 198 重定价 ≠ 7825 ≠ 7951（不变量 206）
 - [`worked-example-clz-vs-zk.md`](worked-example-clz-vs-zk.md) — 看见数前导零操作码 ≠ 已经更便宜的 ZK 证明；动机写了后量子签 ≠ 已经有后量子签名；能表达最低位 ≠ 已经有数尾零；7939 ≠ 206 ≠ 199 ≠ 204（不变量 208）
 - [`worked-example-config-rpc-vs-aligned.md`](worked-example-config-rpc-vs-aligned.md) — 看见分叉配置 RPC 对上了 ≠ 已经过多客户端同根；看见 current / next / last ≠ 已经改了共识；RPC 绿 ≠ 对等节点没有撒谎；7910 ≠ 149 ≠ 209 ≠ 207（不变量 210）
+- [`worked-example-dgas-notcap-vs-bundled.md`](worked-example-dgas-notcap-vs-bundled.md) — 客户端默认气限≠already 协议帽/203/211 bundled；≠211 bundled（不变量 1458）
+- [`worked-example-dgas-notcons-vs-bundled.md`](worked-example-dgas-notcons-vs-bundled.md) — 绑到硬分叉≠already 共识已改/202/96；≠211 bundled（不变量 1459）
+- [`worked-example-dgas-nottx-vs-bundled.md`](worked-example-dgas-nottx-vs-bundled.md) — 默认齐了≠already 单笔气帽/更安全/101；≠211 bundled（不变量 1460）
 - [`worked-example-default-gas-vs-cap.md`](worked-example-default-gas-vs-cap.md) — 看见客户端默认气限 ≠ 已经是协议帽；看见绑到硬分叉发布 ≠ 已经改了共识；看见默认配置齐了 ≠ 已经是单笔气帽；7935 ≠ 203 ≠ 202 ≠ 96（不变量 211）
 - [`worked-example-block-list-vs-parallel.md`](worked-example-block-list-vs-parallel.md) — 看见块级访问名单 ≠ 已经并行跑完；看见强制名单 ≠ 已经是 2930；看见事后状态差 ≠ 已经不跑交易；7928 ≠ 168 ≠ 143 ≠ 122（不变量 212）
 - [`worked-example-mcpy-notid-vs-bundled.md`](worked-example-mcpy-notid-vs-bundled.md) — 内存拷贝指令≠already 身份预编译/2929/216 bundled；≠216 bundled（不变量 1410）

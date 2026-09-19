@@ -1,3 +1,6 @@
+- [`name-the-dgas-nottx-bar.md`](name-the-dgas-nottx-bar.md) — EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）（不变量 1460）
+- [`name-the-dgas-notcons-bar.md`](name-the-dgas-notcons-bar.md) — EIP-7935 hardfork-bind not already consensus-changed / not already 202 / not already 96 正式三事（211 余量）（不变量 1459）
+- [`name-the-dgas-notcap-bar.md`](name-the-dgas-notcap-bar.md) — EIP-7935 default-gas not already protocol-cap / not already 203 / not already 211-bundled 正式三事（211 余量）（不变量 1458）
 - [`name-the-tenv-notrcpt-bar.md`](name-the-tenv-notrcpt-bar.md) — EIP-2718 seeing-receipt not already type-matched / not already 158 / not already 161 正式三事（167 余量）（不变量 1457）
 - [`name-the-tenv-notenv-bar.md`](name-the-tenv-notenv-bar.md) — EIP-2718 legacy-RLP not already envelope / not already 155 / not already signed-type 正式三事（167 余量）（不变量 1456）
 - [`name-the-tenv-notinner-bar.md`](name-the-tenv-notinner-bar.md) — EIP-2718 type-byte not already unpacked / not already 1559 / not already 167-bundled 正式三事（167 余量）（不变量 1455）

@@ -1,3 +1,18 @@
+| A7065 | 记录 | 会与 211 / 203 / 101 / 1458 / 1459 糊成「看见默认配置齐了不是已经是单笔气帽就已经是单笔气帽 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。211 default-gas vs cap bundled unbundling 完成（1460 item 3） |
+| A7066 | 高 | 看见默认配置齐了不是已经是单笔气帽 会被写成已经是单笔气帽 interchangeable / 203 interchangeable | 官方 EIP-7935 dgas item 3：not already 已经是单笔气帽 / not 203 |
+| A7067 | 高 | 看见aligned defaults are not already the tx gas cap 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7935 dgas item 3：not already 已经更安全 / not 101 |
+| A7068 | 高 | 看见默认配置齐了不是已经是单笔气帽 会被写成已经是不变量 101 interchangeable | 官方 EIP-7935 dgas item 3：not already settled |
+| A7069 | 中 | 怎样抬气限、怎样灌满块会被抄进不确定 | 不抄。不写 怎样抬气限、怎样灌满块。不另写 19 节 |
+| A7060 | 记录 | 会与 211 / 202 / 96 / 1458 / 1460 糊成「看见绑到硬分叉发布不是已经改了共识就已经改了共识 interchangeable、就已经是不变量 202 interchangeable、就已经是不变量 96 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7935 hardfork-bind not already consensus-changed / not already 202 / not already 96 正式三事（211 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。211 default-gas vs cap bundled unbundling 续（1459 item 2） |
+| A7061 | 高 | 看见绑到硬分叉发布不是已经改了共识 会被写成已经改了共识 interchangeable / 202 interchangeable | 官方 EIP-7935 dgas item 2：not already 已经改了共识 / not 202 |
+| A7062 | 高 | 看见binding to a hardfork release is not already consensus-changed 会被写成已经是不变量 202 interchangeable / 96 interchangeable | 官方 EIP-7935 dgas item 2：not already 已经是不变量 202 / not 96 |
+| A7063 | 高 | 看见绑到硬分叉发布不是已经改了共识 会被写成已经是不变量 96 interchangeable | 官方 EIP-7935 dgas item 2：not already settled |
+| A7064 | 中 | 怎样抬气限、怎样灌满块会被抄进不确定 | 不抄。不写 怎样抬气限、怎样灌满块。不另写 19 节 |
+| A7055 | 记录 | 会与 211 / 203 / 202 / 1459 / 1460 糊成「看见客户端默认气限不是已经是协议帽就已经是协议帽 interchangeable、就已经是不变量 203 interchangeable、就已经 211 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7935 default-gas not already protocol-cap / not already 203 / not already 211-bundled 正式三事（211 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。211 default-gas vs cap bundled unbundling 启动（1458 item 1） |
+| A7056 | 高 | 看见客户端默认气限不是已经是协议帽 会被写成已经是协议帽 interchangeable / 203 interchangeable | 官方 EIP-7935 dgas item 1：not already 已经是协议帽 / not 203 |
+| A7057 | 高 | 看见client default gas is not already a protocol cap 会被写成已经是不变量 203 interchangeable / 202 interchangeable | 官方 EIP-7935 dgas item 1：not already 已经是不变量 203 / not 202 |
+| A7058 | 高 | 看见客户端默认气限不是已经是协议帽 会被写成已经 211 bundled interchangeable | 官方 EIP-7935 dgas item 1：not already settled |
+| A7059 | 中 | 怎样抬气限、怎样灌满块会被抄进不确定 | 不抄。不写 怎样抬气限、怎样灌满块。不另写 19 节 |
 | A7050 | 记录 | 会与 167 / 158 / 161 / 1455 / 1456 糊成「看见看见收据不是收据类型已经对上该笔就收据类型已经对上该笔 interchangeable、就已经是不变量 158 interchangeable、就已经是不变量 161 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2718 seeing-receipt not already type-matched / not already 158 / not already 161 正式三事（167 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。167 typed vs legacy bundled unbundling 完成（1457 item 3） |
 | A7051 | 高 | 看见看见收据不是收据类型已经对上该笔 会被写成收据类型已经对上该笔 interchangeable / 158 interchangeable | 官方 EIP-2718 tenv item 3：not already 收据类型已经对上该笔 / not 158 |
 | A7052 | 高 | 看见seeing a receipt is not already type-matched 会被写成已经是不变量 158 interchangeable / 161 interchangeable | 官方 EIP-2718 tenv item 3：not already 已经是不变量 158 / not 161 |

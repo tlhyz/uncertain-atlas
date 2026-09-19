@@ -1,3 +1,15 @@
+## 2026-09-19（续 1577）
+
+- 不变量 1460；语料 C1438；模式 name-the-dgas-nottx-bar；反模式 dgas-nottx-sold-as-bundled；L10.3 第 1429 条。填 L5.1 EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）。211 default-gas vs cap bundled unbundling 完成（1460 item 3）。
+
+## 2026-09-19（续 1576）
+
+- 不变量 1459；语料 C1437；模式 name-the-dgas-notcons-bar；反模式 dgas-notcons-sold-as-bundled；L10.3 第 1428 条。填 L5.1 EIP-7935 hardfork-bind not already consensus-changed / not already 202 / not already 96 正式三事（211 余量）。211 default-gas vs cap bundled unbundling 续（1459 item 2）。
+
+## 2026-09-19（续 1575）
+
+- 不变量 1458；语料 C1436；模式 name-the-dgas-notcap-bar；反模式 dgas-notcap-sold-as-bundled；L10.3 第 1427 条。填 L5.1 EIP-7935 default-gas not already protocol-cap / not already 203 / not already 211-bundled 正式三事（211 余量）。211 default-gas vs cap bundled unbundling 启动（1458 item 1）。
+
 ## 2026-09-19（续 1574）
 
 - 不变量 1457；语料 C1435；模式 name-the-tenv-notrcpt-bar；反模式 tenv-notrcpt-sold-as-bundled；L10.3 第 1426 条。填 L5.1 EIP-2718 seeing-receipt not already type-matched / not already 158 / not already 161 正式三事（167 余量）。167 typed vs legacy bundled unbundling 完成（1457 item 3）。

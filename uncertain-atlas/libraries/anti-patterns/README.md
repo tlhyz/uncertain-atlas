@@ -1,3 +1,6 @@
+- [`dgas-nottx-sold-as-bundled.md`](dgas-nottx-sold-as-bundled.md) — 默认齐了 被写成已经是单笔气帽 / 就已经更安全 / 就已经是 101（不变量 1460）
+- [`dgas-notcons-sold-as-bundled.md`](dgas-notcons-sold-as-bundled.md) — 绑到硬分叉 被写成已经改了共识 / 就已经是 202 / 就已经是 96（不变量 1459）
+- [`dgas-notcap-sold-as-bundled.md`](dgas-notcap-sold-as-bundled.md) — 客户端默认气限 被写成已经是协议帽 / 就已经是 203 / 就已经 211 bundled（不变量 1458）
 - [`tenv-notrcpt-sold-as-bundled.md`](tenv-notrcpt-sold-as-bundled.md) — 看见收据 被写成类型已经对上 / 就已经是 158 / 就已经是 161（不变量 1457）
 - [`tenv-notenv-sold-as-bundled.md`](tenv-notenv-sold-as-bundled.md) — 旧式 RLP 被写成已经是类型信封 / 就已经是 155 / 就已经把类型签进哈希（不变量 1456）
 - [`tenv-notinner-sold-as-bundled.md`](tenv-notinner-sold-as-bundled.md) — 类型字节 被写成已经解开内层 / 就已经是 1559 / 就已经 167 bundled（不变量 1455）
