@@ -1,3 +1,7 @@
+## 2026-09-19（续 848）
+
+- 不变量 731；语料 C708；模式 name-the-queryproof-nottxmerkle-bar；反模式 queryproof-nottxmerkle-sold-as-bundled；L10.3 第 700 条。填 L4.4 / CometBFT 档案 头上有 AppHash 不是已经是交易默克尔 not already tx-merkle / not already validators-hash / not already separate-app-state 正式三事（325 余量） / 实现表 / 05b / 共识专题 / 停链面地图。325 queryproof vs apphash bundled unbundling 启动（731 item 1）。
+
 ## 2026-09-19（续 847）
 
 - 不变量 730；语料 C707；模式 name-the-snapshottake-notretained-bar；反模式 snapshottake-notretained-sold-as-bundled；L10.3 第 699 条。填 L4.4 / CometBFT 档案 只留最近两份不是已经有了全部历史快照 not already full-history-retained / not already five-field-same / not already apphash-light-check 正式三事（324 余量） / 实现表 / 05b / 共识专题 / 停链面地图。324 snapshottake vs commit bundled unbundling 完成（730 item 3）。
