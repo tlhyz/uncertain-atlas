@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [evidencemaxbytes-notunder-sold-as-bundled](evidencemaxbytes-notunder-sold-as-bundled.md) 是填了证据 MaxBytes 不是已经落在块上限下面 item 1 单句边界，不是本页 EvidenceParams.MaxBytes bundled 全段。
 - [evidence-sold-as-full-block](evidence-sold-as-full-block.md) 是先装证据 ≠ 已经装满交易、写成 -1 ≠ 已经没有上限，不是本页这种证据体积尺。
 - [evidence-default-sold-as-unbonding](evidence-default-sold-as-unbonding.md) 是默认证据窗已经够罚，不是本页。
 - [evidence-equals-slash](evidence-equals-slash.md) 是上链已经 slash，不是本页。
