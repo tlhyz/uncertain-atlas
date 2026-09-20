@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [query-notreplicated-sold-as-bundled](query-notreplicated-sold-as-bundled.md) 是 Query 回了不是已经复制到各节点 item 1 单句边界，不是本页 Query bundled 全段。
+- [query-notfresh-sold-as-bundled](query-notfresh-sold-as-bundled.md) 是查到了不是已经新鲜 item 2 单句边界，不是本页 Query bundled 全段。
 - [querystate-sold-as-execute](querystate-sold-as-execute.md) 是 QueryState ≠ 已经是 ExecuteTxState，不是本页这种本地查询。
 - [queryproof-sold-as-apphash](queryproof-sold-as-apphash.md) 是 Query 回了 Proof ≠ 已经对上 AppHash，不是本页。
 - [peerfilter-sold-as-connected](peerfilter-sold-as-connected.md) 是发了 addr 过滤查询 ≠ 已经收下这个人，不是本页。
