@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [query-notrequired-sold-as-bundled](query-notrequired-sold-as-bundled.md) 是必须有（329 item 3），不是本页新鲜 item 2单句边界。
 - [query-sold-as-replicated](query-sold-as-replicated.md) 是 Query bundled 全段，不是本页新鲜 item 2 单句边界。
 - [query-notreplicated-sold-as-bundled](query-notreplicated-sold-as-bundled.md) 是复制 item 1，不是本页查到了与新鲜边界。
 - [querystate-sold-as-execute](querystate-sold-as-execute.md) 是 QueryState ≠ ExecuteTxState（314），不是本页决定后状态边界。

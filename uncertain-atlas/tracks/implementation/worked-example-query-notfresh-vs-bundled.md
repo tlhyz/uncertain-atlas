@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看查到了不是已经新鲜 not already fresh / not already tip / not already decided-state 正式三事（329 余量），必须分开查到了 是不是 already fresh interchangeable / 329 query bundled interchangeable / query-sold-as-replicated interchangeable、跟上了尖 是不是 already tip interchangeable、决定块之后那份 是不是 already decided-state interchangeable。可以跳过「看见查到了就已经新鲜 interchangeable / 就已经是当前尖 interchangeable / 就已经是决定块之后那份 interchangeable」。不要另写怎样写 Query。329 query vs replicated bundled unbundling 在本页 item 2 续（743 + 744）；续 [`worked-example-query-notrequired-vs-bundled.md`](worked-example-query-notrequired-vs-bundled.md)（不变量 745 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看查到了不是已经新鲜 not already fresh / not already tip / not already decided-state 正式三事（329 余量），必须分开查到了 是不是 already fresh interchangeable / 329 query bundled interchangeable / query-sold-as-replicated interchangeable、跟上了尖 是不是 already tip interchangeable、决定块之后那份 是不是 already decided-state interchangeable。可以跳过「看见查到了就已经新鲜 interchangeable / 就已经是当前尖 interchangeable / 就已经是决定块之后那份 interchangeable」。不要另写怎样写 Query。329 query vs replicated bundled unbundling 在本页 item 2 续（743 + 744）；续 [`worked-example-query-notrequired-vs-bundled.md`](worked-example-query-notrequired-vs-bundled.md)（不变量 745 item 3）已写；完成见 745。
 
 ## 本页不抄
 

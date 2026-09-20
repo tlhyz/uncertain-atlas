@@ -1,3 +1,4 @@
+- [`name-the-query-notrequired-bar.md`](name-the-query-notrequired-bar.md) — 实现了 Query 不是已经是正常运转必须有 not already required / not already filter / not already proof 正式三事（329 余量）（不变量 745）
 - [`name-the-query-notfresh-bar.md`](name-the-query-notfresh-bar.md) — 查到了不是已经新鲜 not already fresh / not already tip / not already decided-state 正式三事（329 余量）（不变量 744）
 - [`name-the-query-notreplicated-bar.md`](name-the-query-notreplicated-bar.md) — Query 回了不是已经复制到各节点 not already replicated / not already consensus-passed / not already network-same 正式三事（329 余量）（不变量 743）
 - [`name-the-checktxoscillate-notsameb-bar.md`](name-the-checktxoscillate-notsameb-bar.md) — 本地不再振荡不是已经各节点同一份 b not already global-hstable / not already same-b / not already local-is-global 正式三事（328 余量）（不变量 742）
