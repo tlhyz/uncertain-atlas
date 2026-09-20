@@ -1,3 +1,7 @@
+## 2026-09-20（续 872）
+
+- 不变量 755；语料 C732；模式 name-the-paramsdelay-noth-bar；反模式 paramsdelay-noth-sold-as-bundled；L10.3 第 724 条。填 L4.4 / CometBFT 档案 本高回了 ConsensusParams 不是已经在本高生效 not already in-effect-at-h / not already prepare-new-at-h / not already tied-to-finalize 正式三事（333 余量） / 实现表 / 05b / 共识专题 / 停链面地图。333 paramsdelay vs set bundled unbundling 启动（755 item 1）。
+
 ## 2026-09-20（续 871）
 
 - 不变量 754；语料 C731；模式 name-the-snapshotverify-notnodod-bar；反模式 snapshotverify-notnodod-sold-as-bundled；L10.3 第 723 条。填 L4.4 / CometBFT 档案 封禁邻居不是已经没有快照 DoS not already no-snapshot-dos / not already trusted-list-is-accept / not already blocks-all-bad 正式三事（332 余量） / 实现表 / 05b / 共识专题 / 停链面地图。332 snapshotverify vs early bundled unbundling 完成（754 item 3）。
