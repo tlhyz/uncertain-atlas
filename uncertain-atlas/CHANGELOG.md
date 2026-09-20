@@ -1,3 +1,7 @@
+## 2026-09-20（续 867）
+
+- 不变量 750；语料 C727；模式 name-the-evidencemaxbytes-notunbonding-bar；反模式 evidencemaxbytes-notunbonding-sold-as-bundled；L10.3 第 719 条。填 L4.4 / CometBFT 档案 > 0 不是已经盖住解绑 not already covers-unbonding / not already enough-to-slash / not already window-covers 正式三事（331 余量） / 实现表 / 05b / 共识专题 / 停链面地图。331 evidencemaxbytes vs block bundled unbundling 续（750 item 2）。
+
 ## 2026-09-20（续 866）
 
 - 不变量 749；语料 C726；模式 name-the-evidencemaxbytes-notunder-bar；反模式 evidencemaxbytes-notunder-sold-as-bundled；L10.3 第 718 条。填 L4.4 / CometBFT 档案 填了证据 MaxBytes 不是已经落在块上限下面 not already under-block / not already overhead-deducted / not already fits-budget 正式三事（331 余量） / 实现表 / 05b / 共识专题 / 停链面地图。331 evidencemaxbytes vs block bundled unbundling 启动（749 item 1）。

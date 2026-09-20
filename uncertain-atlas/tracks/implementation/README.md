@@ -153,6 +153,7 @@
 - [`worked-example-veheight-notthissigned-vs-bundled.md`](worked-example-veheight-notthissigned-vs-bundled.md) — H+1带扩展≠本高度刚签/刚签那份≠本高e/列表有扩展≠同高e；≠330 bundled（不变量 747）
 - [`worked-example-veheight-notprepare-vs-bundled.md`](worked-example-veheight-notprepare-vs-bundled.md) — 到了H≠Prepare带扩展/叫了ExtendVote≠写进提议/调了Verify≠在提议里；≠330 bundled（不变量 746）
 - [`worked-example-ve-height-vs-prepare.md`](worked-example-ve-height-vs-prepare.md) — 到了 H ≠ 已经 Prepare 带了扩展；H+1 带了扩展 ≠ 已经是本高度刚签的；h < H 带了扩展 ≠ 已经合法（不变量 330）
+- [`worked-example-evidencemaxbytes-notunbonding-vs-bundled.md`](worked-example-evidencemaxbytes-notunbonding-vs-bundled.md) — >0≠盖住解绑/合法≠够罚/盖住解绑期≠窗盖住；≠331 bundled（不变量 750）
 - [`worked-example-evidencemaxbytes-notunder-vs-bundled.md`](worked-example-evidencemaxbytes-notunder-vs-bundled.md) — 填了证据MaxBytes≠落在块上限下/有上限≠扣开销/取值有顶≠装得下；≠331 bundled（不变量 749）
 - [`worked-example-evidence-maxbytes-vs-block.md`](worked-example-evidence-maxbytes-vs-block.md) — 填了证据 MaxBytes ≠ 已经落在块上限下面；> 0 ≠ 已经盖住解绑；证据 MaxBytes ≠ 已经是块 MaxBytes（不变量 331）
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）

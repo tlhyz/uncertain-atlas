@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [evidencemaxbytes-notunbonding-sold-as-bundled](evidencemaxbytes-notunbonding-sold-as-bundled.md) 是盖住解绑（331 item 2），不是本页落在块上限下面 item 1 单句边界。
 - [evidencemaxbytes-sold-as-blockmax](evidencemaxbytes-sold-as-blockmax.md) 是 EvidenceParams.MaxBytes bundled 全段，不是本页落在块上限下面 item 1 单句边界。
 - [evidence-sold-as-full-block](evidence-sold-as-full-block.md) 是先装证据 ≠ 已经装满交易（299），不是本页扣开销边界。
 - [veheight-notlegal-sold-as-bundled](veheight-notlegal-sold-as-bundled.md) 是 h < H 带了扩展不是已经合法（330 item 3），不是本页证据体积尺边界。
