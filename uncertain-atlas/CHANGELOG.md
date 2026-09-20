@@ -1,3 +1,7 @@
+## 2026-09-20（续 854）
+
+- 不变量 737；语料 C714；模式 name-the-preparetimeout-notcriticalpath-bar；反模式 preparetimeout-notcriticalpath-sold-as-bundled；L10.3 第 706 条。填 L4.4 / CometBFT 档案 立刻整块执行不是已经离开关键路径 not already left-critical-path / not already unblocks-propose-clock / not already candidate-settled 正式三事（327 余量） / 实现表 / 05b / 共识专题 / 停链面地图。327 preparetimeout vs liveness bundled unbundling 启动（737 item 1）。
+
 ## 2026-09-20（续 853）
 
 - 不变量 736；语料 C713；模式 name-the-peerfilter-notenginepath-bar；反模式 peerfilter-notenginepath-sold-as-bundled；L10.3 第 705 条。填 L4.4 / CometBFT 档案 有 /store 路径不是已经是引擎在用 not already all-paths-used / not already is-filter / not already filter-has-data 正式三事（326 余量） / 实现表 / 05b / 共识专题 / 停链面地图。326 peerfilter vs query bundled unbundling 完成（736 item 3）。

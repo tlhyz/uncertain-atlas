@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [preparetimeout-notcriticalpath-sold-as-bundled](preparetimeout-notcriticalpath-sold-as-bundled.md) 是立刻整块执行不是已经离开关键路径 item 1 单句边界，不是本页 PrepareProposal 及时性 bundled 全段。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种 Prepare 及时性。
 - [timeout-commit-sold-as-finality](timeout-commit-sold-as-finality.md) 是本地超时 ≠ 已经是最终性，不是本页。
 - [candidate-sold-as-execute](candidate-sold-as-execute.md) 是候选 ≠ 已经是 ExecuteTxState，不是本页。
