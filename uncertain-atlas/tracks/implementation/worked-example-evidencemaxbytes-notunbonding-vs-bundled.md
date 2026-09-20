@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 > 0 不是已经盖住解绑 not already covers-unbonding / not already enough-to-slash / not already window-covers 正式三事（331 余量），必须分开 MaxBytes > 0 是不是 already covers-unbonding interchangeable / 331 evidencemaxbytes bundled interchangeable / evidencemaxbytes-sold-as-blockmax interchangeable、合法 是不是 already enough-to-slash interchangeable、盖住解绑期 是不是 already window-covers interchangeable。可以跳过「看见 > 0 就已经盖住解绑 interchangeable / 就已经够罚 interchangeable / 就已经窗盖住 interchangeable」。不要另写怎样设 EvidenceParams.MaxBytes。331 evidencemaxbytes vs block bundled unbundling 在本页 item 2 续（749 + 750）；续 [`worked-example-evidencemaxbytes-notblockmax-vs-bundled.md`](worked-example-evidencemaxbytes-notblockmax-vs-bundled.md)（不变量 751 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 > 0 不是已经盖住解绑 not already covers-unbonding / not already enough-to-slash / not already window-covers 正式三事（331 余量），必须分开 MaxBytes > 0 是不是 already covers-unbonding interchangeable / 331 evidencemaxbytes bundled interchangeable / evidencemaxbytes-sold-as-blockmax interchangeable、合法 是不是 already enough-to-slash interchangeable、盖住解绑期 是不是 already window-covers interchangeable。可以跳过「看见 > 0 就已经盖住解绑 interchangeable / 就已经够罚 interchangeable / 就已经窗盖住 interchangeable」。不要另写怎样设 EvidenceParams.MaxBytes。331 evidencemaxbytes vs block bundled unbundling 在本页 item 2 续（749 + 750）；续 [`worked-example-evidencemaxbytes-notblockmax-vs-bundled.md`](worked-example-evidencemaxbytes-notblockmax-vs-bundled.md)（不变量 751 item 3）已写；完成见 751。
 
 ## 本页不抄
 

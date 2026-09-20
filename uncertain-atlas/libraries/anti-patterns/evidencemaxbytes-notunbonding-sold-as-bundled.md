@@ -20,4 +20,5 @@
 
 - [evidencemaxbytes-sold-as-blockmax](evidencemaxbytes-sold-as-blockmax.md) 是 EvidenceParams.MaxBytes bundled 全段，不是本页盖住解绑 item 2 单句边界。
 - [evidencemaxbytes-notunder-sold-as-bundled](evidencemaxbytes-notunder-sold-as-bundled.md) 是落在块上限下面 item 1，不是本页 > 0 与解绑边界。
+- [evidencemaxbytes-notblockmax-sold-as-bundled](evidencemaxbytes-notblockmax-sold-as-bundled.md) 是块 MaxBytes（331 item 3），不是本页盖住解绑 item 2 单句边界。
 - [evidence-default-sold-as-unbonding](evidence-default-sold-as-unbonding.md) 是默认证据窗已经够罚（46），不是本页 MaxBytes > 0 单句边界。
