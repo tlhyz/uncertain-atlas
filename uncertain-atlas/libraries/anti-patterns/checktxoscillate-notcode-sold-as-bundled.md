@@ -20,4 +20,5 @@
 
 - [checktxcode-sold-as-stable](checktxcode-sold-as-stable.md) 是 CheckTx 最终不再振荡 bundled 全段，不是本页有码 item 1 单句边界。
 - [checktxstate-sold-as-execute](checktxstate-sold-as-execute.md) 是 CheckTxState ≠ ExecuteTxState（312），不是本页集合与 CheckTxCode 边界。
+- [checktxoscillate-nothstable-sold-as-bundled](checktxoscillate-nothstable-sold-as-bundled.md) 是还在振荡过了 h_stable（328 item 2），不是本页有码 item 1 单句边界。
 - [preparetimeout-notlivenesslost-sold-as-bundled](preparetimeout-notlivenesslost-sold-as-bundled.md) 是又开一轮丢掉活性（327 item 3），不是本页 CheckTx 码集合边界。

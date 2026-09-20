@@ -1,3 +1,4 @@
+- [`name-the-checktxoscillate-nothstable-bar.md`](name-the-checktxoscillate-nothstable-bar.md) — 还在振荡不是已经过了 h_stable not already past-hstable / not already left-pool / not already in-block 正式三事（328 余量）（不变量 741）
 - [`name-the-checktxoscillate-notcode-bar.md`](name-the-checktxoscillate-notcode-bar.md) — 同一高度回了不同码不是已经有了 CheckTxCode not already has-checktxcode / not already ok-defined / not already singleton-set 正式三事（328 余量）（不变量 740）
 - [`name-the-preparetimeout-notlivenesslost-bar.md`](name-the-preparetimeout-notlivenesslost-bar.md) — 又开一轮不是已经丢了活性 not already liveness-lost / not already timeout-frozen / not already final-tier 正式三事（327 余量）（不变量 739）
 - [`name-the-preparetimeout-notfit-bar.md`](name-the-preparetimeout-notfit-bar.md) — 填了 TimeoutPropose 不是已经装得下 not already fits-execution / not already clock-silent / not already propose-bound 正式三事（327 余量）（不变量 738）
