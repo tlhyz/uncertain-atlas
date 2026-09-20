@@ -1,3 +1,4 @@
+- [`peerfilter-notenginepath-sold-as-bundled.md`](peerfilter-notenginepath-sold-as-bundled.md) — 规范写了三条路径 被写成已经三条都在用 / 有 /store 被写成已经是过滤 / 能带数据 被写成已经两道过滤带了数据（不变量 736）
 - [`peerfilter-notaddrpassed-sold-as-bundled.md`](peerfilter-notaddrpassed-sold-as-bundled.md) — id 绿了 被写成已经过了 addr / 公钥地址对上 被写成已经能交互 / 拒连 被写成已经写进持久封禁表（不变量 735）
 - [`peerfilter-notaccepted-sold-as-bundled.md`](peerfilter-notaccepted-sold-as-bundled.md) — 发了 addr 被写成已经收下 / TCP 连上 被写成已经过了 Query / 只问了地址 被写成已经问了 id（不变量 734）
 - [`queryproof-notfinalapphash-sold-as-bundled.md`](queryproof-notfinalapphash-sold-as-bundled.md) — 一层对上 被写成已经交给下一层 / 中间根对了 被写成已经对上最终 AppHash / 能证缺席 被写成已经比对着块哈希（不变量 733）

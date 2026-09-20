@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 id 过滤查询绿了不是已经过了 addr not already addr-passed / not already can-interact / not already persistent-ban 正式三事（326 余量），必须分开 id 绿了 是不是 already addr-passed interchangeable / 326 peerfilter bundled interchangeable / peerfilter-sold-as-connected interchangeable、公钥地址对上 是不是 already can-interact interchangeable、拒连 是不是 already persistent-ban interchangeable。可以跳过「看见 id 过滤查询绿了就已经过了 addr interchangeable / 就已经能交互 interchangeable / 就已经写进持久封禁表 interchangeable」。不要另写怎样写过滤。326 peerfilter vs query bundled unbundling 在本页 item 2 续（734 + 735）；续 [`worked-example-peerfilter-notenginepath-vs-bundled.md`](worked-example-peerfilter-notenginepath-vs-bundled.md)（不变量 736 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 id 过滤查询绿了不是已经过了 addr not already addr-passed / not already can-interact / not already persistent-ban 正式三事（326 余量），必须分开 id 绿了 是不是 already addr-passed interchangeable / 326 peerfilter bundled interchangeable / peerfilter-sold-as-connected interchangeable、公钥地址对上 是不是 already can-interact interchangeable、拒连 是不是 already persistent-ban interchangeable。可以跳过「看见 id 过滤查询绿了就已经过了 addr interchangeable / 就已经能交互 interchangeable / 就已经写进持久封禁表 interchangeable」。不要另写怎样写过滤。326 peerfilter vs query bundled unbundling 在本页 item 2 续（734 + 735）；续 [`worked-example-peerfilter-notenginepath-vs-bundled.md`](worked-example-peerfilter-notenginepath-vs-bundled.md)（不变量 736 item 3）已写；完成见 736。
 
 ## 本页不抄
 

@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Peer Filtering、Paths。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「发了 addr 过滤查询不是已经收下这个人 / id 过滤查询绿了不是已经过了 addr / 有 /store 路径不是已经是引擎在用」，不是自动封禁表已经有界，也不是 InitPeer 已经能交互。不要另写怎样写过滤或怎样配路径。 326 peerfilter vs query bundled unbundling 续（734 + 735）；精读 [`worked-example-peerfilter-notaccepted-vs-bundled.md`](worked-example-peerfilter-notaccepted-vs-bundled.md)（不变量 734 item 1）；[`worked-example-peerfilter-notaddrpassed-vs-bundled.md`](worked-example-peerfilter-notaddrpassed-vs-bundled.md)（不变量 735 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「发了 addr 过滤查询不是已经收下这个人 / id 过滤查询绿了不是已经过了 addr / 有 /store 路径不是已经是引擎在用」，不是自动封禁表已经有界，也不是 InitPeer 已经能交互。不要另写怎样写过滤或怎样配路径。 326 peerfilter vs query bundled unbundling 完成（734 + 735 + 736）；精读 [`worked-example-peerfilter-notaccepted-vs-bundled.md`](worked-example-peerfilter-notaccepted-vs-bundled.md)（不变量 734 item 1）；[`worked-example-peerfilter-notaddrpassed-vs-bundled.md`](worked-example-peerfilter-notaddrpassed-vs-bundled.md)（不变量 735 item 2）；[`worked-example-peerfilter-notenginepath-vs-bundled.md`](worked-example-peerfilter-notenginepath-vs-bundled.md)（不变量 736 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「连上就已经过滤过」，必须分开发了 addr 过滤查询是不是已经收下这个人、id 过滤查询绿了是不是已经过了 addr、有 /store 路径是不是已经是引擎在用。可以跳过「看见连上了就已经收下」。不要另写怎样写过滤或怎样配路径。 326 peerfilter vs query bundled unbundling 续（734 + 735 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「连上就已经过滤过」，必须分开发了 addr 过滤查询是不是已经收下这个人、id 过滤查询绿了是不是已经过了 addr、有 /store 路径是不是已经是引擎在用。可以跳过「看见连上了就已经收下」。不要另写怎样写过滤或怎样配路径。 326 peerfilter vs query bundled unbundling 完成（734 + 735 + 736）。
 
 ## 本页不抄
 
