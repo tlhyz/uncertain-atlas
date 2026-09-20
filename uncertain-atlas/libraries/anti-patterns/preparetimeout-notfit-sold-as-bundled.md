@@ -20,4 +20,5 @@
 
 - [preparetimeout-sold-as-liveness](preparetimeout-sold-as-liveness.md) 是 PrepareProposal 及时性 bundled 全段，不是本页装得下 item 2 单句边界。
 - [preparetimeout-notcriticalpath-sold-as-bundled](preparetimeout-notcriticalpath-sold-as-bundled.md) 是关键路径 item 1，不是本页填了 TimeoutPropose 与装得下边界。
+- [preparetimeout-notlivenesslost-sold-as-bundled](preparetimeout-notlivenesslost-sold-as-bundled.md) 是又开一轮丢掉活性（327 item 3），不是本页装得下 item 2 单句边界。
 - [proposetimeout-sold-as-process](proposetimeout-sold-as-process.md) 是进了这一轮会先设 ProposeTimeout（416），不是本页钟一响就 prevote nil 边界。

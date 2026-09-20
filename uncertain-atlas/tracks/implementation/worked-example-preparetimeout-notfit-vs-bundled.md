@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看填了 TimeoutPropose 不是已经装得下 not already fits-execution / not already clock-silent / not already propose-bound 正式三事（327 余量），必须分开填了 TimeoutPropose 是不是 already fits-execution interchangeable / 327 preparetimeout bundled interchangeable / preparetimeout-sold-as-liveness interchangeable、同步期 是不是 already clock-silent interchangeable、钟一响就 prevote nil 是不是 already propose-bound interchangeable。可以跳过「看见填了 TimeoutPropose 就已经装得下 interchangeable / 就已经钟不响 interchangeable / 就已经把提议绑死 interchangeable」。不要另写怎样设 TimeoutPropose。327 preparetimeout vs liveness bundled unbundling 在本页 item 2 续（737 + 738）；续 [`worked-example-preparetimeout-notlivenesslost-vs-bundled.md`](worked-example-preparetimeout-notlivenesslost-vs-bundled.md)（不变量 739 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看填了 TimeoutPropose 不是已经装得下 not already fits-execution / not already clock-silent / not already propose-bound 正式三事（327 余量），必须分开填了 TimeoutPropose 是不是 already fits-execution interchangeable / 327 preparetimeout bundled interchangeable / preparetimeout-sold-as-liveness interchangeable、同步期 是不是 already clock-silent interchangeable、钟一响就 prevote nil 是不是 already propose-bound interchangeable。可以跳过「看见填了 TimeoutPropose 就已经装得下 interchangeable / 就已经钟不响 interchangeable / 就已经把提议绑死 interchangeable」。不要另写怎样设 TimeoutPropose。327 preparetimeout vs liveness bundled unbundling 在本页 item 2 续（737 + 738）；续 [`worked-example-preparetimeout-notlivenesslost-vs-bundled.md`](worked-example-preparetimeout-notlivenesslost-vs-bundled.md)（不变量 739 item 3）已写；完成见 739。
 
 ## 本页不抄
 
