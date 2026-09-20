@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看头上有 AppHash 不是已经是交易默克尔 not already tx-merkle / not already validators-hash / not already separate-app-state 正式三事（325 余量），必须分开头上有 AppHash 是不是 already tx-merkle interchangeable / 325 queryproof bundled interchangeable / queryproof-sold-as-apphash interchangeable、并列 是不是 already validators-hash interchangeable、交易在 是不是 already separate-app-state interchangeable。可以跳过「看见头上有 AppHash 就已经是交易默克尔 interchangeable / 就已经是验证者集合锚 interchangeable / 就已经有分开的应用状态 interchangeable」。不要另写怎样编证明。325 queryproof vs apphash bundled unbundling 在本页 item 1 启动；续 [`worked-example-queryproof-notverified-vs-bundled.md`](worked-example-queryproof-notverified-vs-bundled.md)（不变量 732 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看头上有 AppHash 不是已经是交易默克尔 not already tx-merkle / not already validators-hash / not already separate-app-state 正式三事（325 余量），必须分开头上有 AppHash 是不是 already tx-merkle interchangeable / 325 queryproof bundled interchangeable / queryproof-sold-as-apphash interchangeable、并列 是不是 already validators-hash interchangeable、交易在 是不是 already separate-app-state interchangeable。可以跳过「看见头上有 AppHash 就已经是交易默克尔 interchangeable / 就已经是验证者集合锚 interchangeable / 就已经有分开的应用状态 interchangeable」。不要另写怎样编证明。325 queryproof vs apphash bundled unbundling 在本页 item 1 启动；续 [`worked-example-queryproof-notverified-vs-bundled.md`](worked-example-queryproof-notverified-vs-bundled.md)（不变量 732 item 2）已写。
 
 ## 本页不抄
 
