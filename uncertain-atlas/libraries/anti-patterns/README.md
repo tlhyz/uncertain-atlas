@@ -1,3 +1,4 @@
+- [`veheight-notlegal-sold-as-bundled.md`](veheight-notlegal-sold-as-bundled.md) — h < H 带了扩展 被写成已经合法 / 字段在 被写成已经启用 / 切到 ABCI 2.0 被写成已经切换（不变量 748）
 - [`veheight-notthissigned-sold-as-bundled.md`](veheight-notthissigned-sold-as-bundled.md) — H+1 带了扩展 被写成已经是本高度刚签 / 本高度刚签的那份 被写成已经是本高 e / 列表里有扩展 被写成已经是同高 e（不变量 747）
 - [`veheight-notprepare-sold-as-bundled.md`](veheight-notprepare-sold-as-bundled.md) — 到了 H 被写成已经 Prepare 带了扩展 / 已经叫了 ExtendVote 被写成已经写进本高提议 / 会调 Verify 被写成已经在提议里（不变量 746）
 - [`query-notrequired-sold-as-bundled.md`](query-notrequired-sold-as-bundled.md) — 实现了 Query 被写成已经是正常运转必须有 / 邻居过滤 被写成已经是过滤 / 默克尔证明 被写成已经是证明（不变量 745）

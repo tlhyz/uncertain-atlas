@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [veheight-notlegal-sold-as-bundled](veheight-notlegal-sold-as-bundled.md) 是合法（330 item 3），不是本页本高度刚签 item 2单句边界。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是 VoteExtensionsEnableHeight bundled 全段，不是本页本高度刚签 item 2 单句边界。
 - [veheight-notprepare-sold-as-bundled](veheight-notprepare-sold-as-bundled.md) 是到了 H item 1，不是本页 H+1 与本高度刚签边界。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收整张预提交（34），不是本页本高 e 边界。

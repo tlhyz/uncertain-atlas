@@ -149,6 +149,7 @@
 - [`worked-example-query-notfresh-vs-bundled.md`](worked-example-query-notfresh-vs-bundled.md) — 查到了≠已经新鲜/跟上尖≠当前尖/决定块之后≠决定后状态；≠329 bundled（不变量 744）
 - [`worked-example-query-notreplicated-vs-bundled.md`](worked-example-query-notreplicated-vs-bundled.md) — Query回了≠已经复制到各节点/RPC能查≠已经过了共识/本节点本地≠全网同一份；≠329 bundled（不变量 743）
 - [`worked-example-query-vs-replicated.md`](worked-example-query-vs-replicated.md) — Query 回了 ≠ 已经复制到各节点；查到了 ≠ 已经新鲜；实现了 Query ≠ 已经是正常运转必须有（不变量 329）
+- [`worked-example-veheight-notlegal-vs-bundled.md`](worked-example-veheight-notlegal-vs-bundled.md) — h<H带扩展≠合法/字段在≠启用/切ABCI2.0≠已切换；≠330 bundled（不变量 748）
 - [`worked-example-veheight-notthissigned-vs-bundled.md`](worked-example-veheight-notthissigned-vs-bundled.md) — H+1带扩展≠本高度刚签/刚签那份≠本高e/列表有扩展≠同高e；≠330 bundled（不变量 747）
 - [`worked-example-veheight-notprepare-vs-bundled.md`](worked-example-veheight-notprepare-vs-bundled.md) — 到了H≠Prepare带扩展/叫了ExtendVote≠写进提议/调了Verify≠在提议里；≠330 bundled（不变量 746）
 - [`worked-example-ve-height-vs-prepare.md`](worked-example-ve-height-vs-prepare.md) — 到了 H ≠ 已经 Prepare 带了扩展；H+1 带了扩展 ≠ 已经是本高度刚签的；h < H 带了扩展 ≠ 已经合法（不变量 330）

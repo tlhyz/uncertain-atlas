@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) List of Parameters / Application configuration required to switch to ABCI 2.0。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「到了 H 不是已经 Prepare 带了扩展 / H+1 带了扩展不是已经是本高度刚签的 / h < H 带了扩展不是已经合法」，不是验签拒收整张预提交，也不是治理改 enable-height 会 panic。不要另写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。 330 veheight vs prepare bundled unbundling 续（746 + 747）；精读 [`worked-example-veheight-notprepare-vs-bundled.md`](worked-example-veheight-notprepare-vs-bundled.md)；[`worked-example-veheight-notthissigned-vs-bundled.md`](worked-example-veheight-notthissigned-vs-bundled.md)（不变量 747 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「到了 H 不是已经 Prepare 带了扩展 / H+1 带了扩展不是已经是本高度刚签的 / h < H 带了扩展不是已经合法」，不是验签拒收整张预提交，也不是治理改 enable-height 会 panic。不要另写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。 330 veheight vs prepare bundled unbundling 完成（746 + 747 + 748）；精读 [`worked-example-veheight-notprepare-vs-bundled.md`](worked-example-veheight-notprepare-vs-bundled.md)；[`worked-example-veheight-notthissigned-vs-bundled.md`](worked-example-veheight-notthissigned-vs-bundled.md)（不变量 747 item 2）；[`worked-example-veheight-notlegal-vs-bundled.md`](worked-example-veheight-notlegal-vs-bundled.md)（不变量 748 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「到了 H 就已经 Prepare 带了扩展、已经是本高度刚签的、已经合法」，必须分开到了 H 是不是已经 Prepare 带了扩展、H+1 带了扩展是不是已经是本高度刚签的、h < H 带了扩展是不是已经合法。可以跳过「看见到了 H 就已经切到 ABCI 2.0」。不要另写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。 330 veheight vs prepare bundled unbundling 续（746 + 747 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「到了 H 就已经 Prepare 带了扩展、已经是本高度刚签的、已经合法」，必须分开到了 H 是不是已经 Prepare 带了扩展、H+1 带了扩展是不是已经是本高度刚签的、h < H 带了扩展是不是已经合法。可以跳过「看见到了 H 就已经切到 ABCI 2.0」。不要另写怎样设 VoteExtensionsEnableHeight 或怎样写空扩展。 330 veheight vs prepare bundled unbundling 完成（746 + 747 + 748 item 3）。
 
 ## 本页不抄
 

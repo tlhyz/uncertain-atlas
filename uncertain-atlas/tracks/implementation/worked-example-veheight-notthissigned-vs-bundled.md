@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 H+1 带了扩展不是已经是本高度刚签的 not already this-height-signed / not already local-e / not already same-h-e 正式三事（330 余量），必须分开 H+1 带了扩展 是不是 already this-height-signed interchangeable / 330 veheight bundled interchangeable / veheight-sold-as-prepared interchangeable、本高度刚签的那份 是不是 already local-e interchangeable、Prepare 列表里有扩展 是不是 already same-h-e interchangeable。可以跳过「看见 H+1 带了扩展就已经是本高度刚签 interchangeable / 就已经是本高 e interchangeable / 就已经是同高 e interchangeable」。不要另写怎样设 VoteExtensionsEnableHeight。330 veheight vs prepare bundled unbundling 在本页 item 2 续（746 + 747）；续 [`worked-example-veheight-notlegal-vs-bundled.md`](worked-example-veheight-notlegal-vs-bundled.md)（不变量 748 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 H+1 带了扩展不是已经是本高度刚签的 not already this-height-signed / not already local-e / not already same-h-e 正式三事（330 余量），必须分开 H+1 带了扩展 是不是 already this-height-signed interchangeable / 330 veheight bundled interchangeable / veheight-sold-as-prepared interchangeable、本高度刚签的那份 是不是 already local-e interchangeable、Prepare 列表里有扩展 是不是 already same-h-e interchangeable。可以跳过「看见 H+1 带了扩展就已经是本高度刚签 interchangeable / 就已经是本高 e interchangeable / 就已经是同高 e interchangeable」。不要另写怎样设 VoteExtensionsEnableHeight。330 veheight vs prepare bundled unbundling 在本页 item 2 续（746 + 747）；续 [`worked-example-veheight-notlegal-vs-bundled.md`](worked-example-veheight-notlegal-vs-bundled.md)（不变量 748 item 3）已写；完成见 748。
 
 ## 本页不抄
 
