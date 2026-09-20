@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Updating Consensus Parameters / `FinalizeBlock`, `PrepareProposal`/`ProcessProposal`。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「本高 Finalize 回了 ConsensusParams 不是已经在本高生效 / H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票 / 参数更新写了 H+1 不是已经是扩展启用高度那种切换，也不是已经只改填的那一项」，不是 InitChain 空参数已经没有参数，也不是验证人集合 H+1 / H+2 / H+3。不要另写怎样编 `ConsensusParams` 或怎样选启用高度。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「本高 Finalize 回了 ConsensusParams 不是已经在本高生效 / H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票 / 参数更新写了 H+1 不是已经是扩展启用高度那种切换，也不是已经只改填的那一项」，不是 InitChain 空参数已经没有参数，也不是验证人集合 H+1 / H+2 / H+3。不要另写怎样编 `ConsensusParams` 或怎样选启用高度。 333 paramsdelay vs set bundled unbundling 启动（755）；精读 [`worked-example-paramsdelay-noth-vs-bundled.md`](worked-example-paramsdelay-noth-vs-bundled.md)。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「本高回了 ConsensusParams 就已经在本高生效、已经是换人那种延迟、已经是扩展启用高度那种切换」，必须分开本高回了是不是已经在本高生效、H+1 立刻用了新参数是不是已经是验证人集合那种 H+2 才计票、参数更新写了 H+1 是不是已经是扩展启用高度那种切换。可以跳过「看见本高回了就已经在本高生效」。不要另写怎样编 `ConsensusParams` 或怎样选启用高度。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「本高回了 ConsensusParams 就已经在本高生效、已经是换人那种延迟、已经是扩展启用高度那种切换」，必须分开本高回了是不是已经在本高生效、H+1 立刻用了新参数是不是已经是验证人集合那种 H+2 才计票、参数更新写了 H+1 是不是已经是扩展启用高度那种切换。可以跳过「看见本高回了就已经在本高生效」。不要另写怎样编 `ConsensusParams` 或怎样选启用高度。 333 paramsdelay vs set bundled unbundling 启动（755 item 1）。
 
 ## 本页不抄
 
