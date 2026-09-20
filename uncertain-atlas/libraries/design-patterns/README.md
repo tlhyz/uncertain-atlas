@@ -1,3 +1,4 @@
+- [`name-the-queryproof-notverified-bar.md`](name-the-queryproof-notverified-bar.md) — Query 回了 Proof 不是已经对上 AppHash not already verified / not already same-tree / not already prove-absence 正式三事（325 余量）（不变量 732）
 - [`name-the-queryproof-nottxmerkle-bar.md`](name-the-queryproof-nottxmerkle-bar.md) — 头上有 AppHash 不是已经是交易默克尔 not already tx-merkle / not already validators-hash / not already separate-app-state 正式三事（325 余量）（不变量 731）
 - [`name-the-snapshottake-notretained-bar.md`](name-the-snapshottake-notretained-bar.md) — 只留最近两份不是已经有了全部历史快照 not already full-history-retained / not already five-field-same / not already apphash-light-check 正式三事（324 余量）（不变量 730）
 - [`name-the-snapshottake-notconsistent-bar.md`](name-the-snapshottake-notconsistent-bar.md) — 没停链不是已经一致 not already consistent / not already async-safe / not already deterministic-bytes 正式三事（324 余量）（不变量 729）

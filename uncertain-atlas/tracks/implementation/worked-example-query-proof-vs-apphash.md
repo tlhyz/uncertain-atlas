@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Query Proofs。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「头上有 AppHash 不是已经是交易默克尔 / Query 回了 Proof 不是已经对上 AppHash / 一层 ProofOp 的根不是已经对上最终 AppHash」，不是本头 AppHash 已经是本高度交差，也不是 QueryState 已经是 ExecuteTxState。不要另写怎样编证明或怎样种树。 325 queryproof vs apphash bundled unbundling 启动（731）；精读 [`worked-example-queryproof-nottxmerkle-vs-bundled.md`](worked-example-queryproof-nottxmerkle-vs-bundled.md)（不变量 731 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「头上有 AppHash 不是已经是交易默克尔 / Query 回了 Proof 不是已经对上 AppHash / 一层 ProofOp 的根不是已经对上最终 AppHash」，不是本头 AppHash 已经是本高度交差，也不是 QueryState 已经是 ExecuteTxState。不要另写怎样编证明或怎样种树。 325 queryproof vs apphash bundled unbundling 续（731 + 732）；精读 [`worked-example-queryproof-nottxmerkle-vs-bundled.md`](worked-example-queryproof-nottxmerkle-vs-bundled.md)（不变量 731 item 1）；[`worked-example-queryproof-notverified-vs-bundled.md`](worked-example-queryproof-notverified-vs-bundled.md)（不变量 732 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「查询已经带证明」，必须分开头上有 AppHash 是不是已经是交易默克尔、Query 回了 Proof 是不是已经对上 AppHash、一层 ProofOp 的根是不是已经对上最终 AppHash。可以跳过「看见头上有 AppHash 就已经能验应用」。不要另写怎样编证明或怎样种树。 325 queryproof vs apphash bundled unbundling 启动（731 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「查询已经带证明」，必须分开头上有 AppHash 是不是已经是交易默克尔、Query 回了 Proof 是不是已经对上 AppHash、一层 ProofOp 的根是不是已经对上最终 AppHash。可以跳过「看见头上有 AppHash 就已经能验应用」。不要另写怎样编证明或怎样种树。 325 queryproof vs apphash bundled unbundling 续（731 + 732 item 2）。
 
 ## 本页不抄
 

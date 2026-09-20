@@ -1,3 +1,7 @@
+## 2026-09-20（续 849）
+
+- 不变量 732；语料 C709；模式 name-the-queryproof-notverified-bar；反模式 queryproof-notverified-sold-as-bundled；L10.3 第 701 条。填 L4.4 / CometBFT 档案 Query 回了 Proof 不是已经对上 AppHash not already verified / not already same-tree / not already prove-absence 正式三事（325 余量） / 实现表 / 05b / 共识专题 / 停链面地图。325 queryproof vs apphash bundled unbundling 续（732 item 2）。
+
 ## 2026-09-19（续 848）
 
 - 不变量 731；语料 C708；模式 name-the-queryproof-nottxmerkle-bar；反模式 queryproof-nottxmerkle-sold-as-bundled；L10.3 第 700 条。填 L4.4 / CometBFT 档案 头上有 AppHash 不是已经是交易默克尔 not already tx-merkle / not already validators-hash / not already separate-app-state 正式三事（325 余量） / 实现表 / 05b / 共识专题 / 停链面地图。325 queryproof vs apphash bundled unbundling 启动（731 item 1）。
