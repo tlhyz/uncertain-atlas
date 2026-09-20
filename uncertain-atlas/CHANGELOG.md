@@ -1,3 +1,7 @@
+## 2026-09-20（续 866）
+
+- 不变量 749；语料 C726；模式 name-the-evidencemaxbytes-notunder-bar；反模式 evidencemaxbytes-notunder-sold-as-bundled；L10.3 第 718 条。填 L4.4 / CometBFT 档案 填了证据 MaxBytes 不是已经落在块上限下面 not already under-block / not already overhead-deducted / not already fits-budget 正式三事（331 余量） / 实现表 / 05b / 共识专题 / 停链面地图。331 evidencemaxbytes vs block bundled unbundling 启动（749 item 1）。
+
 ## 2026-09-20（续 865）
 
 - 不变量 748；语料 C725；模式 name-the-veheight-notlegal-bar；反模式 veheight-notlegal-sold-as-bundled；L10.3 第 717 条。填 L4.4 / CometBFT 档案 h < H 带了扩展不是已经合法 not already legal / not already enabled / not already abci20 正式三事（330 余量） / 实现表 / 05b / 共识专题 / 停链面地图。330 veheight vs prepare bundled unbundling 完成（748 item 3）。
