@@ -1,3 +1,4 @@
+- [`query-notreplicated-sold-as-bundled.md`](query-notreplicated-sold-as-bundled.md) — Query 回了 被写成已经复制到各节点 / RPC 能查 被写成已经过了共识 / 查的是本节点本地 被写成已经全网同一份（不变量 743）
 - [`checktxoscillate-notsameb-sold-as-bundled.md`](checktxoscillate-notsameb-sold-as-bundled.md) — 本地 h_p,stable 被写成已经是全局同一高度 / 本节点不再振荡 被写成已经同一份 b / 可以把 h_stable 看成 h_p,stable 被写成已经把本地当成全局（不变量 742）
 - [`checktxoscillate-nothstable-sold-as-bundled.md`](checktxoscillate-nothstable-sold-as-bundled.md) — 还在振荡 被写成已经过了 h_stable / 还在池里 被写成已经离池 / 最终不再振荡 被写成已经进了块（不变量 741）
 - [`checktxoscillate-notcode-sold-as-bundled.md`](checktxoscillate-notcode-sold-as-bundled.md) — 同一高度回了不同码 被写成已经有了 CheckTxCode / 集合在 被写成已经能说 OK / 回了两次 被写成已经是单元素（不变量 740）

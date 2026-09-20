@@ -1,3 +1,7 @@
+## 2026-09-20（续 860）
+
+- 不变量 743；语料 C720；模式 name-the-query-notreplicated-bar；反模式 query-notreplicated-sold-as-bundled；L10.3 第 712 条。填 L4.4 / CometBFT 档案 Query 回了不是已经复制到各节点 not already replicated / not already consensus-passed / not already network-same 正式三事（329 余量） / 实现表 / 05b / 共识专题 / 停链面地图。329 query vs replicated bundled unbundling 启动（743 item 1）。
+
 ## 2026-09-20（续 859）
 
 - 不变量 742；语料 C719；模式 name-the-checktxoscillate-notsameb-bar；反模式 checktxoscillate-notsameb-sold-as-bundled；L10.3 第 711 条。填 L4.4 / CometBFT 档案 本地不再振荡不是已经各节点同一份 b not already global-hstable / not already same-b / not already local-is-global 正式三事（328 余量） / 实现表 / 05b / 共识专题 / 停链面地图。328 checktxoscillate vs stable bundled unbundling 完成（742 item 3）。
