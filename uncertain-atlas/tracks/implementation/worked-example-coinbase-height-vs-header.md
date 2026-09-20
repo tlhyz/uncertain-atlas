@@ -80,7 +80,7 @@
 | 经济 | 写了高度不是已经能花 |
 
 **推断：** 产品句若只写「块有版本、coinbase 有高度」，读者会把头听成已经带楼层，或把写了高度听成已经能花。  
-**建议：** 第一版若块头不带高度，必须写清高度承诺在哪。不要发明「看见头 = 高度已在头上」。不要抄票数。不要把整数 version 写成 BIP-9。
+**建议：** 第一版若块头不带高度，必须写清高度承诺在哪。可以跳过「看见头就已经有高度字段」。173 coinbase height vs header bundled unbundling 完成（1542 item 1 / 1543 item 2 / 1544 item 3）；精读 [`worked-example-cbht-nothdr-vs-bundled.md`](worked-example-cbht-nothdr-vs-bundled.md)（不变量 1542 item 1）、[`worked-example-cbht-notv9-vs-bundled.md`](worked-example-cbht-notv9-vs-bundled.md)（不变量 1543 item 2）、[`worked-example-cbht-notmat-vs-bundled.md`](worked-example-cbht-notmat-vs-bundled.md)（不变量 1544 item 3）。不要发明「看见头 = 高度已在头上」。不要抄票数。不要把整数 version 写成 BIP-9。
 
 ---
 

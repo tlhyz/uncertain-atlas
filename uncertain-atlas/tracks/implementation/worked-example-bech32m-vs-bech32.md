@@ -85,7 +85,7 @@
 | 经济 | 认更高版本为可收款不是钱包已经该创建它们 |
 
 **推断：** 产品句若只写「支持 Bech32」，读者会把后继校验听成已经是 173，或把更高版本过了旧校验听成已经能付。  
-**建议：** 第一版若提供原生见证地址，必须分开旧校验和后继校验，并核版本配对。不要发明「过了校验 = 已经是同一套」。不要抄常数。不要把 350 写成 173。
+**建议：** 第一版若提供原生见证地址，必须分开旧校验和后继校验，并核版本配对。可以跳过「看见过了校验就已经是同一套」。181 bech32m vs bech32 bundled unbundling 完成（1539 item 1 / 1540 item 2 / 1541 item 3）；精读 [`worked-example-b32m-notold-vs-bundled.md`](worked-example-b32m-notold-vs-bundled.md)（不变量 1539 item 1）、[`worked-example-b32m-notv0-vs-bundled.md`](worked-example-b32m-notv0-vs-bundled.md)（不变量 1540 item 2）、[`worked-example-b32m-notutx-vs-bundled.md`](worked-example-b32m-notutx-vs-bundled.md)（不变量 1541 item 3）。不要发明「过了校验 = 已经是同一套」。不要抄常数。不要把 350 写成 173。
 
 ---
 

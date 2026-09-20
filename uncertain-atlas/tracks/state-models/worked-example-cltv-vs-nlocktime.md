@@ -79,7 +79,7 @@
 | 经济 | 退款 / 托管若只靠预签 nLockTime，官方写明不能证明现在不能花 |
 
 **推断：** 产品句若只写「有时间锁」，读者会把交易字段听成输出已经冻住。  
-**建议：** 第一版若做绝对时间锁，必须写清锁在输出脚本上，并且花费交易的 nLockTime 要同类且不更早。不要发明「填了 nLockTime = 输出已经锁住」。不要抄阈值。不要把输入 final 写成锁已经生效。
+**建议：** 第一版若做绝对时间锁，必须写清锁在输出脚本上，并且花费交易的 nLockTime 要同类且不更早。可以跳过「看见填了 nLockTime 就已经锁住输出」。164 cltv vs nlocktime bundled unbundling 完成（1530 item 1 / 1531 item 2 / 1532 item 3）；精读 [`worked-example-cl65-notfld-vs-bundled.md`](worked-example-cl65-notfld-vs-bundled.md)（不变量 1530 item 1）、[`worked-example-cl65-notnow-vs-bundled.md`](worked-example-cl65-notnow-vs-bundled.md)（不变量 1531 item 2）、[`worked-example-cl65-notclk-vs-bundled.md`](worked-example-cl65-notclk-vs-bundled.md)（不变量 1532 item 3）。不要发明「填了 nLockTime = 输出已经锁住」。不要抄阈值。不要把输入 final 写成锁已经生效。
 
 ---
 

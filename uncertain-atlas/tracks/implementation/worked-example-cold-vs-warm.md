@@ -84,7 +84,7 @@
 | 经济 | 冷访问更贵是为了逼近真实读盘；不是已经钉住墙钟 |
 
 **推断：** 产品句若只写「支持冷热访问」，读者会把这一趟的熟门听成永远开着。  
-**建议：** 第一版必须把本笔第一次、本笔再碰、下一笔重开三套文案分开。不要发明「碰过 = 已经永远热」。不要抄气价。不要写怎样灌冷访问。
+**建议：** 第一版必须把本笔第一次、本笔再碰、下一笔重开三套文案分开。可以跳过「碰过 = 已经永远热」。169 cold vs warm bundled unbundling 完成（1449 item 1 / 1450 item 2 / 1451 item 3）；精读 [`worked-example-cwarm-notwarm-vs-bundled.md`](worked-example-cwarm-notwarm-vs-bundled.md)（不变量 1449 item 1）、[`worked-example-cwarm-notrecold-vs-bundled.md`](worked-example-cwarm-notrecold-vs-bundled.md)（不变量 1450 item 2）、[`worked-example-cwarm-notany-vs-bundled.md`](worked-example-cwarm-notany-vs-bundled.md)（不变量 1451 item 3）。不要发明「碰过 = 已经永远热」。不要抄气价。不要写怎样灌冷访问。
 
 ---
 

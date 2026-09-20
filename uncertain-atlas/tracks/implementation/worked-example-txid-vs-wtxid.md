@@ -78,7 +78,7 @@
 | 经济 | 重量折扣是另一对象，本页不抄公式 |
 
 **推断：** 产品句若只写「交易 ID」，读者会把附件听成已经进编号。  
-**建议：** 第一版若把大签名放进「旧节点不理解的附件」，必须写清哪一个 ID 承诺了它。不要发明「旧节点也验了见证」。
+**建议：** 第一版若把大签名放进「旧节点不理解的附件」，必须写清哪一个 ID 承诺了它。可以跳过「看见旧节点也验了见证」。152 txid vs wtxid bundled unbundling 完成（1551 item 1 / 1552 item 2 / 1553 item 3）；精读 [`worked-example-twid-noteq-vs-bundled.md`](worked-example-twid-noteq-vs-bundled.md)（不变量 1551 item 1）、[`worked-example-twid-notchg-vs-bundled.md`](worked-example-twid-notchg-vs-bundled.md)（不变量 1552 item 2）、[`worked-example-twid-notmer-vs-bundled.md`](worked-example-twid-notmer-vs-bundled.md)（不变量 1553 item 3）。不要发明「旧节点也验了见证」。
 
 ---
 

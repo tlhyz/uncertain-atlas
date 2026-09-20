@@ -83,7 +83,7 @@
 | 经济 | 编码不唯一会让跟错根的人放货 |
 
 **推断：** 产品句若只写「验签用业界库」，读者会把库的宽松听成全网合法集。  
-**建议：** 第一版必须把签名编码写成共识谓词。不要发明「库验过 = 已经合法」。不要抄长度。不要写怎样改编码。
+**建议：** 第一版必须把签名编码写成共识谓词。可以跳过「看见库验过就已经合法」。172 valid vs der bundled unbundling 完成（1548 item 1 / 1549 item 2 / 1550 item 3）；精读 [`worked-example-sder-notmath-vs-bundled.md`](worked-example-sder-notmath-vs-bundled.md)（不变量 1548 item 1）、[`worked-example-sder-notlib-vs-bundled.md`](worked-example-sder-notlib-vs-bundled.md)（不变量 1549 item 2）、[`worked-example-sder-notpol-vs-bundled.md`](worked-example-sder-notpol-vs-bundled.md)（不变量 1550 item 3）。不要发明「库验过 = 已经合法」。不要抄长度。不要写怎样改编码。
 
 ---
 

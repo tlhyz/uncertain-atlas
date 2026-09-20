@@ -90,7 +90,7 @@
 | 经济 | 缓冲已在被调内存里付过；看见本页不是转发已经免费 |
 
 **推断：** 产品句若只写「终于能返回不定长了」，读者会把预留输出区听成已经是缓冲，或把能再取失败数据听成 140 已经齐。  
-**建议：** 第一版可以不另开返回缓冲。若对照，必须分开返回缓冲、内存 / 预留输出区、calldata / 两次调用、已经是 140。不要发明「看见 211 就已经是内存」。不要抄操作码号。不要写怎样做通用转发或怎样在失败后再抽超长回滚数据。
+**建议：** 第一版可以不另开返回缓冲。若对照，必须分开返回缓冲、内存 / 预留输出区、calldata / 两次调用、已经是 140。可以跳过「看见返回数据缓冲就已经是内存」。232 returndata buffer vs memory bundled unbundling 完成（1386 item 1 / 1387 item 2 / 1388 item 3）；精读 [`worked-example-rdata-notmem-vs-bundled.md`](worked-example-rdata-notmem-vs-bundled.md)（不变量 1386 item 1）、[`worked-example-rdata-notcalld-vs-bundled.md`](worked-example-rdata-notcalld-vs-bundled.md)（不变量 1387 item 2）、[`worked-example-rdata-not140-vs-bundled.md`](worked-example-rdata-not140-vs-bundled.md)（不变量 1388 item 3）。不要发明「看见 211 就已经是内存」。不要抄操作码号。不要写怎样做通用转发或怎样在失败后再抽超长回滚数据。
 
 ---
 

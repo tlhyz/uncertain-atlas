@@ -85,7 +85,7 @@
 | 经济 | 不把「默认抬了」写成已经更安全 |
 
 **推断：** 产品句若只写「气限已经抬到某一档」，读者会把客户端默认听成协议帽，或把绑到硬分叉听成共识已改。  
-**建议：** 第一版必须把客户端默认和协议帽分开写。不要发明「看见 7935 就已经改了块气」。不要抄默认取值。不要写怎样抬气限。
+**建议：** 第一版必须把客户端默认和协议帽分开写。可以跳过「看见 7935 就已经改了块气」。211 default-gas vs cap bundled unbundling 完成（1458 item 1 / 1459 item 2 / 1460 item 3）；精读 [`worked-example-dgas-notcap-vs-bundled.md`](worked-example-dgas-notcap-vs-bundled.md)（不变量 1458 item 1）、[`worked-example-dgas-notcons-vs-bundled.md`](worked-example-dgas-notcons-vs-bundled.md)（不变量 1459 item 2）、[`worked-example-dgas-nottx-vs-bundled.md`](worked-example-dgas-nottx-vs-bundled.md)（不变量 1460 item 3）。不要发明「看见 7935 就已经改了块气」。不要抄默认取值。不要写怎样抬气限。
 
 ---
 

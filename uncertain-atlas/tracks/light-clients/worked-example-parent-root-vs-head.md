@@ -84,7 +84,7 @@
 | 经济 | 合约能读根不是已经能当桥的最终性 |
 
 **推断：** 产品句若只写「EVM 能读信标」，读者会把昨天的拓片听成今天的课表。  
-**建议：** 第一版可以不把共识根暴露进执行 VM。若暴露，必须写清问的是父根、当前头还是 finalized，并写清环会过期。不要抄环长。不要发明「合约读到 = 已经最终」。
+**建议：** 第一版可以不把共识根暴露进执行 VM。若暴露，必须写清问的是父根、当前头还是 finalized，并写清环会过期。不要抄环长。可以跳过「看见合约读到就已经最终」。156 parent-root vs head bundled unbundling 完成（1506 item 1 / 1507 item 2 / 1508 item 3）；精读 [`worked-example-proot-nothead-vs-bundled.md`](worked-example-proot-nothead-vs-bundled.md)（不变量 1506 item 1）、[`worked-example-proot-notfin-vs-bundled.md`](worked-example-proot-notfin-vs-bundled.md)（不变量 1507 item 2）、[`worked-example-proot-notperm-vs-bundled.md`](worked-example-proot-notperm-vs-bundled.md)（不变量 1508 item 3）。不要发明「合约读到 = 已经最终」。
 
 ---
 

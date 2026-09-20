@@ -55,7 +55,7 @@ Rollup 排序者  --发布交易数据-->  Celestia 块
 
 Celestia 自己的应用状态很小（账户付 DA 费等），不是通用世界状态。  
 真正的用户余额在 rollup。  
-NMT：按 namespace 分的 Merkle。官方要求证明**这一命名空间给齐**，不是证明整块扩展方阵已经可用。精读：[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md)（不变量 124）。
+NMT：按 namespace 分的 Merkle。官方要求证明**这一命名空间给齐**，不是证明整块扩展方阵已经可用。精读：[`../../tracks/light-clients/worked-example-nmt-vs-das.md`](../../tracks/light-clients/worked-example-nmt-vs-das.md) NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）：[`../../tracks/light-clients/worked-example-nmtd-notsq-vs-bundled.md`](../../tracks/light-clients/worked-example-nmtd-notsq-vs-bundled.md)（不变量 1512）。 NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）：[`../../tracks/light-clients/worked-example-nmtd-notblob-vs-bundled.md`](../../tracks/light-clients/worked-example-nmtd-notblob-vs-bundled.md)（不变量 1513）。 NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）：[`../../tracks/light-clients/worked-example-nmtd-notenc-vs-bundled.md`](../../tracks/light-clients/worked-example-nmtd-notenc-vs-bundled.md)（不变量 1514）。（不变量 124）。
 
 ---
 

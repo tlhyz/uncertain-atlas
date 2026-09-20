@@ -84,7 +84,7 @@
 | 经济 | 超大块拖传播、加分叉风险；本页挡的是编码体积，不是气价 |
 
 **推断：** 产品句若只写「块不能太大」，读者会把编码帽听成已经改了气限，或把流言丢弃听成执行层已经非法。  
-**建议：** 第一版必须把编码体积和计量尺子分开写。若对照，必须分开编码帽、气限、流言丢弃、通道尺寸。不要发明「看见 7934 就已经改了气」。不要抄上限字节。不要把 7934 写成 7623 / 96。
+**建议：** 第一版必须把编码体积和计量尺子分开写。若对照，必须分开编码帽、气限、流言丢弃、通道尺寸。可以跳过「看见 7934 就已经改了气」。202 rlp-cap vs gas bundled unbundling 完成（1464 item 1 / 1465 item 2 / 1466 item 3）；精读 [`worked-example-rcap-notgas-vs-bundled.md`](worked-example-rcap-notgas-vs-bundled.md)（不变量 1464 item 1）、[`worked-example-rcap-notprop-vs-bundled.md`](worked-example-rcap-notprop-vs-bundled.md)（不变量 1465 item 2）、[`worked-example-rcap-notone-vs-bundled.md`](worked-example-rcap-notone-vs-bundled.md)（不变量 1466 item 3）。不要发明「看见 7934 就已经改了气」。不要抄上限字节。不要把 7934 写成 7623 / 96。
 
 ---
 

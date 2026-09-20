@@ -82,7 +82,7 @@
 | 经济 | 付款人不用携带任意脚本；不是赎回已经公开 |
 
 **推断：** 产品句若只写「支持 P2SH」，读者会把信封上的指纹听成里面的纸条已经摊开。  
-**建议：** 第一版可以不上付给脚本哈希。若做「付给哈希、花费时揭开」，必须把链上哈希、花费时揭开、旧节点只验哈希三套文案分开。不要发明「哈希对上 = 内层已经验过」。不要抄票数。不要写怎样构造旧合法新非法的赎回。
+**建议：** 第一版可以不上付给脚本哈希。若做「付给哈希、花费时揭开」，必须把链上哈希、花费时揭开、旧节点只验哈希三套文案分开。可以跳过「看见哈希对上就已经验过内层」。170 p2sh hash vs redeem bundled unbundling 完成（1533 item 1 / 1534 item 2 / 1535 item 3）；精读 [`worked-example-phsh-notrev-vs-bundled.md`](worked-example-phsh-notrev-vs-bundled.md)（不变量 1533 item 1）、[`worked-example-phsh-notrun-vs-bundled.md`](worked-example-phsh-notrun-vs-bundled.md)（不变量 1534 item 2）、[`worked-example-phsh-notinr-vs-bundled.md`](worked-example-phsh-notinr-vs-bundled.md)（不变量 1535 item 3）。不要发明「哈希对上 = 内层已经验过」。不要抄票数。不要写怎样构造旧合法新非法的赎回。
 
 ---
 

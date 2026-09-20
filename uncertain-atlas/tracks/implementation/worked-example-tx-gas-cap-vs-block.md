@@ -90,7 +90,7 @@
 | 经济 | 单笔吃整块气会让负载不均；本页挡的是单笔气，不是块气市场 |
 
 **推断：** 产品句若只写「交易不能太大」，读者会把单笔气帽听成已经改了块气限，或把本页听成已经是编码体积帽。  
-**建议：** 第一版必须把单笔计量帽和块计量帽分开写。若对照，必须分开单笔气帽、块气限、编码体积、通道尺寸。不要发明「看见 7825 就已经改了块气」。不要抄帽取值。不要把 7825 写成 7934 / 7623。
+**建议：** 第一版必须把单笔计量帽和块计量帽分开写。若对照，必须分开单笔气帽、块气限、编码体积、通道尺寸。可以跳过「看见 7825 就已经改了块气」。203 tx-gas-cap vs block bundled unbundling 完成（1461 item 1 / 1462 item 2 / 1463 item 3）；精读 [`worked-example-txcap-notblk-vs-bundled.md`](worked-example-txcap-notblk-vs-bundled.md)（不变量 1461 item 1）、[`worked-example-txcap-notpool-vs-bundled.md`](worked-example-txcap-notpool-vs-bundled.md)（不变量 1462 item 2）、[`worked-example-txcap-notpol-vs-bundled.md`](worked-example-txcap-notpol-vs-bundled.md)（不变量 1463 item 3）。不要发明「看见 7825 就已经改了块气」。不要抄帽取值。不要把 7825 写成 7934 / 7623。
 
 ---
 

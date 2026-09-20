@@ -1,3 +1,222 @@
+- [`name-the-tpsm-notmin-bar.md`](name-the-tpsm-notmin-bar.md) — BIP-342 minimalif not already p2wsh-policy-only / not already 191 / not already 144 正式三事（189 余量）（不变量 1559）
+- [`name-the-tpsm-notdone-bar.md`](name-the-tpsm-notdone-bar.md) — BIP-342 success-opcode not already executed / not already safe-upgrade / not already 189-bundled 正式三事（189 余量）（不变量 1558）
+- [`name-the-tpsm-notsem-bar.md`](name-the-tpsm-notsem-bar.md) — BIP-342 scriptpath not already tapscript-semantics / not already 153 / not already 189-bundled 正式三事（189 余量）（不变量 1557）
+- [`name-the-kpsp-notlook-bar.md`](name-the-kpsp-notlook-bar.md) — BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）（不变量 1556）
+- [`name-the-kpsp-notall-bar.md`](name-the-kpsp-notall-bar.md) — BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）（不变量 1555）
+- [`name-the-kpsp-notree-bar.md`](name-the-kpsp-notree-bar.md) — BIP-341 keypath not already revealed-tree / not already 189 / not already 153-bundled 正式三事（153 余量）（不变量 1554）
+- [`name-the-twid-notmer-bar.md`](name-the-twid-notmer-bar.md) — BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）（不变量 1553）
+- [`name-the-twid-notchg-bar.md`](name-the-twid-notchg-bar.md) — BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）（不变量 1552）
+- [`name-the-twid-noteq-bar.md`](name-the-twid-noteq-bar.md) — BIP-141 txid not already wtxid / not already 248 / not already 152-bundled 正式三事（152 余量）（不变量 1551）
+- [`name-the-sder-notpol-bar.md`](name-the-sder-notpol-bar.md) — BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）（不变量 1550）
+- [`name-the-sder-notlib-bar.md`](name-the-sder-notlib-bar.md) — BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）（不变量 1549）
+- [`name-the-sder-notmath-bar.md`](name-the-sder-notmath-bar.md) — BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）（不变量 1548）
+- [`name-the-vb9-notfail-bar.md`](name-the-vb9-notfail-bar.md) — BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）（不变量 1547）
+- [`name-the-vb9-notact-bar.md`](name-the-vb9-notact-bar.md) — BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）（不变量 1546）
+- [`name-the-vb9-notlock-bar.md`](name-the-vb9-notlock-bar.md) — BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）（不变量 1545）
+- [`name-the-cbht-notmat-bar.md`](name-the-cbht-notmat-bar.md) — BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）（不变量 1544）
+- [`name-the-cbht-notv9-bar.md`](name-the-cbht-notv9-bar.md) — BIP-34 block-version-bump not already bip9-bits / not already 171 / not already 172 正式三事（173 余量）（不变量 1543）
+- [`name-the-cbht-nothdr-bar.md`](name-the-cbht-nothdr-bar.md) — BIP-34 coinbase-height not already header-field / not already 171 / not already 173-bundled 正式三事（173 余量）（不变量 1542）
+- [`name-the-b32m-notutx-bar.md`](name-the-b32m-notutx-bar.md) — BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）（不变量 1541）
+- [`name-the-b32m-notv0-bar.md`](name-the-b32m-notv0-bar.md) — BIP-350 higher-ver-old-checksum not already legal / not already 174 / not already 152 正式三事（181 余量）（不变量 1540）
+- [`name-the-b32m-notold-bar.md`](name-the-b32m-notold-bar.md) — BIP-350 successor-pass not already old-bech32 / not already 174 / not already 181-bundled 正式三事（181 余量）（不变量 1539）
+- [`name-the-adut-notpay-bar.md`](name-the-adut-notpay-bar.md) — BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）（不变量 1538）
+- [`name-the-adut-notchk-bar.md`](name-the-adut-notchk-bar.md) — BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）（不变量 1537）
+- [`name-the-adut-notout-bar.md`](name-the-adut-notout-bar.md) — BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）（不变量 1536）
+- [`name-the-phsh-notinr-bar.md`](name-the-phsh-notinr-bar.md) — BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）（不变量 1535）
+- [`name-the-phsh-notrun-bar.md`](name-the-phsh-notrun-bar.md) — BIP-16 old-equal not already new-reran / not already 153 / not already 144 正式三事（170 余量）（不变量 1534）
+- [`name-the-phsh-notrev-bar.md`](name-the-phsh-notrev-bar.md) — BIP-16 hash-output not already redeem-revealed / not already 297 / not already 170-bundled 正式三事（170 余量）（不变量 1533）
+- [`name-the-cl65-notclk-bar.md`](name-the-cl65-notclk-bar.md) — BIP-65 cltv-compares-nlocktime not already wall-clock / not already 41 / not already 165 正式三事（164 余量）（不变量 1532）
+- [`name-the-cl65-notnow-bar.md`](name-the-cl65-notnow-bar.md) — BIP-65 nlocktime-future-spend not already present-unspendable / not already 163 / not already 41 正式三事（164 余量）（不变量 1531）
+- [`name-the-cl65-notfld-bar.md`](name-the-cl65-notfld-bar.md) — BIP-65 script-cltv not already nlocktime-locked / not already 165 / not already 164-bundled 正式三事（164 余量）（不变量 1530）
+- [`name-the-csvd-notdep-bar.md`](name-the-csvd-notdep-bar.md) — BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）（不变量 1529）
+- [`name-the-csvd-notabs-bar.md`](name-the-csvd-notabs-bar.md) — BIP-112 relative-lock not already absolute-lock / not already 164 / not already 163 正式三事（165 余量）（不变量 1528）
+- [`name-the-csvd-notseq-bar.md`](name-the-csvd-notseq-bar.md) — BIP-112 script-csv not already nsequence-locked / not already 164 / not already 165-bundled 正式三事（165 余量）（不变量 1527）
+- [`name-the-rbfs-notjoin-bar.md`](name-the-rbfs-notjoin-bar.md) — BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）（不变量 1526）
+- [`name-the-rbfs-notlock-bar.md`](name-the-rbfs-notlock-bar.md) — BIP-125 nsequence-signal not already relative-lock / not already 165 / not already 164 正式三事（166 余量）（不变量 1525）
+- [`name-the-rbfs-notrep-bar.md`](name-the-rbfs-notrep-bar.md) — BIP-125 opt-in-signal not already replaced / not already 144 / not already 166-bundled 正式三事（166 余量）（不变量 1524）
+- [`name-the-polc-notfee-bar.md`](name-the-polc-notfee-bar.md) — Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）（不变量 1523）
+- [`name-the-polc-notblk-bar.md`](name-the-polc-notblk-bar.md) — Policy policy-pass not already in-block / not already 25 / not already 166 正式三事（144 余量）（不变量 1522）
+- [`name-the-polc-notill-bar.md`](name-the-polc-notill-bar.md) — Policy policy-reject not already consensus-illegal / not already 44 / not already 144-bundled 正式三事（144 余量）（不变量 1521）
+- [`name-the-asv-notws-bar.md`](name-the-asv-notws-bar.md) — assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）（不变量 1520）
+- [`name-the-asv-notutxo-bar.md`](name-the-asv-notutxo-bar.md) — assumevalid assumevalid not already assumeutxo / not already 38 / not already 207 正式三事（25 余量）（不变量 1519）
+- [`name-the-asv-notchk-bar.md`](name-the-asv-notchk-bar.md) — assumevalid assumevalid not already checkpoint-forced / not already 24 / not already 25-bundled 正式三事（25 余量）（不变量 1518）
+- [`name-the-kdas-notperm-bar.md`](name-the-kdas-notperm-bar.md) — EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）（不变量 1517）
+- [`name-the-kdas-notcel-bar.md`](name-the-kdas-notcel-bar.md) — EIP-4844 peerdas not already celestia-das / not already 124 / not already 200 正式三事（23 余量）（不变量 1516）
+- [`name-the-kdas-notpeer-bar.md`](name-the-kdas-notpeer-bar.md) — EIP-4844 sidecar not already peerdas / not already 145 / not already 23-bundled 正式三事（23 余量）（不变量 1515）
+- [`name-the-nmtd-notenc-bar.md`](name-the-nmtd-notenc-bar.md) — NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）（不变量 1514）
+- [`name-the-nmtd-notblob-bar.md`](name-the-nmtd-notblob-bar.md) — NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）（不变量 1513）
+- [`name-the-nmtd-notsq-bar.md`](name-the-nmtd-notsq-bar.md) — NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）（不变量 1512）
+- [`name-the-dcert-notonly-bar.md`](name-the-dcert-notonly-bar.md) — AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）（不变量 1511）
+- [`name-the-dcert-notroll-bar.md`](name-the-dcert-notroll-bar.md) — AnyTrust anytrust not already rollup-da / not already 124 / not already 9 正式三事（142 余量）（不变量 1510）
+- [`name-the-dcert-notpost-bar.md`](name-the-dcert-notpost-bar.md) — AnyTrust dacert not already posted-full / not already 23 / not already 142-bundled 正式三事（142 余量）（不变量 1509）
+- [`name-the-proot-notperm-bar.md`](name-the-proot-notperm-bar.md) — EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）（不变量 1508）
+- [`name-the-proot-notfin-bar.md`](name-the-proot-notfin-bar.md) — EIP-4788 contract-root not already finalized / not already 149 / not already 154 正式三事（156 余量）（不变量 1507）
+- [`name-the-proot-nothead-bar.md`](name-the-proot-nothead-bar.md) — EIP-4788 parent-root not already current-head / not already 127 / not already 156-bundled 正式三事（156 余量）（不变量 1506）
+- [`name-the-bpof-notver-bar.md`](name-the-bpof-notver-bar.md) — EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）（不变量 1505）
+- [`name-the-bpof-notcfg-bar.md`](name-the-bpof-notcfg-bar.md) — EIP-7892 config-schedule not already forkless / not already 201 / not already 23 正式三事（209 余量）（不变量 1504）
+- [`name-the-bpof-notexec-bar.md`](name-the-bpof-notexec-bar.md) — EIP-7892 bpo-fork not already exec-changed / not already 200 / not already 209-bundled 正式三事（209 余量）（不变量 1503）
+- [`name-the-hhash-notsem-bar.md`](name-the-hhash-notsem-bar.md) — EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）（不变量 1502）
+- [`name-the-hhash-notfill-bar.md`](name-the-hhash-notfill-bar.md) — EIP-2935 sys-write not already window-full / not already 169 / not already 157 正式三事（195 余量）（不变量 1501）
+- [`name-the-hhash-notbh-bar.md`](name-the-hhash-notbh-bar.md) — EIP-2935 state-hash not already BLOCKHASH / not already 156 / not already 195-bundled 正式三事（195 余量）（不变量 1500）
+- [`name-the-bres-notsch-bar.md`](name-the-bres-notsch-bar.md) — EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）（不变量 1499）
+- [`name-the-bres-notgone-bar.md`](name-the-bres-notgone-bar.md) — EIP-7918 exec-dominant not already blob-priceless / not already 158 / not already 197 正式三事（201 余量）（不变量 1498）
+- [`name-the-bres-notacct-bar.md`](name-the-bres-notacct-bar.md) — EIP-7918 reserve-floor not already gas-merged / not already 145 / not already 201-bundled 正式三事（201 余量）（不变量 1497）
+- [`name-the-bsch-notel-bar.md`](name-the-bsch-notel-bar.md) — EIP-7691 cl-rename not already el-activated / not already safer / not already 145 正式三事（200 余量）（不变量 1496）
+- [`name-the-bsch-notratio-bar.md`](name-the-bsch-notratio-bar.md) — EIP-7691 new-ratio not already old-symmetric / not already 23 / not already 197 正式三事（200 余量）（不变量 1495）
+- [`name-the-bsch-notgas-bar.md`](name-the-bsch-notgas-bar.md) — EIP-7691 raise-schedule not already gas-split-changed / not already 145 / not already 200-bundled 正式三事（200 余量）（不变量 1494）
+- [`name-the-blgas-notperm-bar.md`](name-the-blgas-notperm-bar.md) — EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）（不变量 1493）
+- [`name-the-blgas-notbyte-bar.md`](name-the-blgas-notbyte-bar.md) — EIP-4844 blobhash not already sidecar-bytes / not already 197 / not already 201 正式三事（145 余量）（不变量 1492）
+- [`name-the-blgas-notexec-bar.md`](name-the-blgas-notexec-bar.md) — EIP-4844 blob-gas not already execution-gas / not already 23 / not already 145-bundled 正式三事（145 余量）（不变量 1491）
+- [`name-the-hwin-notsync-bar.md`](name-the-hwin-notsync-bar.md) — EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）（不变量 1490）
+- [`name-the-hwin-notenc-bar.md`](name-the-hwin-notenc-bar.md) — EIP-7642 wire-no-bloom not already consensus-receipt / not already 25 / not already 195 正式三事（207 余量）（不变量 1489）
+- [`name-the-hwin-notcons-bar.md`](name-the-hwin-notcons-bar.md) — EIP-7642 history-window not already consensus-pruned / not already 23 / not already 207-bundled 正式三事（207 余量）（不变量 1488）
+- [`name-the-bfmkt-notmev-bar.md`](name-the-bfmkt-notmev-bar.md) — EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）（不变量 1487）
+- [`name-the-bfmkt-notmkt-bar.md`](name-the-bfmkt-notmkt-bar.md) — EIP-1559 elastic-size not already market-complete / not already 101 / not already 27 正式三事（158 余量）（不变量 1486）
+- [`name-the-bfmkt-notpay-bar.md`](name-the-bfmkt-notpay-bar.md) — EIP-1559 basefee-burned not already paid-to-proposer / not already 145 / not already 158-bundled 正式三事（158 余量）（不变量 1485）
+- [`name-the-lkah-notpc-bar.md`](name-the-lkah-notpc-bar.md) — EIP-7917 lookahead-list not already preconfirm / not already safer / not already 134 正式三事（205 余量）（不变量 1484）
+- [`name-the-lkah-notbal-bar.md`](name-the-lkah-notbal-bar.md) — EIP-7917 balance-still-moves not already scheduled / not already 196 / not already 27 正式三事（205 余量）（不变量 1483）
+- [`name-the-lkah-notlock-bar.md`](name-the-lkah-notlock-bar.md) — EIP-7917 seed-known not already schedule-locked / not already 157 / not already 205-bundled 正式三事（205 余量）（不变量 1482）
+- [`name-the-exdom-notloss-bar.md`](name-the-exdom-notloss-bar.md) — EIP-7044 replay-both not already lost-funds / not already safer / not already 6 正式三事（213 余量）（不变量 1481）
+- [`name-the-exdom-notel-bar.md`](name-the-exdom-notel-bar.md) — EIP-7044 domain-lock not already el-changed / not already 154 / not already 192 正式三事（213 余量）（不变量 1480）
+- [`name-the-exdom-notperm-bar.md`](name-the-exdom-notperm-bar.md) — EIP-7044 signed-exit not already perpetual / not already 193 / not already 213-bundled 正式三事（213 余量）（不变量 1479）
+- [`name-the-blal-notrun-bar.md`](name-the-blal-notrun-bar.md) — EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）（不变量 1478）
+- [`name-the-blal-not2930-bar.md`](name-the-blal-not2930-bar.md) — EIP-7928 forced-list not already 2930 / not already 143 / not already 122 正式三事（212 余量）（不变量 1477）
+- [`name-the-blal-notpar-bar.md`](name-the-blal-notpar-bar.md) — EIP-7928 block-list not already parallel-done / not already 168 / not already 212-bundled 正式三事（212 余量）（不变量 1476）
+- [`name-the-mxbd-notevm-bar.md`](name-the-mxbd-notevm-bar.md) — EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）（不变量 1475）
+- [`name-the-mxbd-notok-bar.md`](name-the-mxbd-notok-bar.md) — EIP-7823 over-cap not already success / not already 177 / not already 204 正式三事（206 余量）（不变量 1474）
+- [`name-the-mxbd-notprice-bar.md`](name-the-mxbd-notprice-bar.md) — EIP-7823 input-bound not already price-changed / not already 227 / not already 206-bundled 正式三事（206 余量）（不变量 1473）
+- [`name-the-clz-notctz-bar.md`](name-the-clz-notctz-bar.md) — EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）（不变量 1472）
+- [`name-the-clz-notpq-bar.md`](name-the-clz-notpq-bar.md) — EIP-7939 pq-motive not already pq-sig / not already 199 / not already 204 正式三事（208 余量）（不变量 1471）
+- [`name-the-clz-notzk-bar.md`](name-the-clz-notzk-bar.md) — EIP-7939 clz not already cheaper-zk / not already 206 / not already 208-bundled 正式三事（208 余量）（不变量 1470）
+- [`name-the-cflr-notburn-bar.md`](name-the-cflr-notburn-bar.md) — EIP-7623 reserve-floor not already burned / not already safer / not already 101 正式三事（197 余量）（不变量 1469）
+- [`name-the-cflr-notxfer-bar.md`](name-the-cflr-notxfer-bar.md) — EIP-7623 data-heavy-dearer not already transfer-dearer / not already 158 / not already 226 正式三事（197 余量）（不变量 1468）
+- [`name-the-cflr-notexec-bar.md`](name-the-cflr-notexec-bar.md) — EIP-7623 calldata-floor not already execution-gas / not already 145 / not already 197-bundled 正式三事（197 余量）（不变量 1467）
+- [`name-the-rcap-notone-bar.md`](name-the-rcap-notone-bar.md) — EIP-7934 beacon-margin not already one-encoding / not already safer / not already 101 正式三事（202 余量）（不变量 1466）
+- [`name-the-rcap-notprop-bar.md`](name-the-rcap-notprop-bar.md) — EIP-7934 gossip-drop not already el-illegal / not already 96 / not already 158 正式三事（202 余量）（不变量 1465）
+- [`name-the-rcap-notgas-bar.md`](name-the-rcap-notgas-bar.md) — EIP-7934 rlp-cap not already gas-limit / not already 197 / not already 202-bundled 正式三事（202 余量）（不变量 1464）
+- [`name-the-txcap-notpol-bar.md`](name-the-txcap-notpol-bar.md) — EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）（不变量 1463）
+- [`name-the-txcap-notpool-bar.md`](name-the-txcap-notpool-bar.md) — EIP-7825 pool-reject not already block-verified / not already 197 / not already 96 正式三事（203 余量）（不变量 1462）
+- [`name-the-txcap-notblk-bar.md`](name-the-txcap-notblk-bar.md) — EIP-7825 tx-gas-cap not already block-gas / not already 202 / not already 203-bundled 正式三事（203 余量）（不变量 1461）
+- [`name-the-dgas-nottx-bar.md`](name-the-dgas-nottx-bar.md) — EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）（不变量 1460）
+- [`name-the-dgas-notcons-bar.md`](name-the-dgas-notcons-bar.md) — EIP-7935 hardfork-bind not already consensus-changed / not already 202 / not already 96 正式三事（211 余量）（不变量 1459）
+- [`name-the-dgas-notcap-bar.md`](name-the-dgas-notcap-bar.md) — EIP-7935 default-gas not already protocol-cap / not already 203 / not already 211-bundled 正式三事（211 余量）（不变量 1458）
+- [`name-the-tenv-notrcpt-bar.md`](name-the-tenv-notrcpt-bar.md) — EIP-2718 seeing-receipt not already type-matched / not already 158 / not already 161 正式三事（167 余量）（不变量 1457）
+- [`name-the-tenv-notenv-bar.md`](name-the-tenv-notenv-bar.md) — EIP-2718 legacy-RLP not already envelope / not already 155 / not already signed-type 正式三事（167 余量）（不变量 1456）
+- [`name-the-tenv-notinner-bar.md`](name-the-tenv-notinner-bar.md) — EIP-2718 type-byte not already unpacked / not already 1559 / not already 167-bundled 正式三事（167 余量）（不变量 1455）
+- [`name-the-alist-notread-bar.md`](name-the-alist-notread-bar.md) — EIP-2930 list-fee not already ran-read / not already hotter / not already 2718 正式三事（168 余量）（不变量 1454）
+- [`name-the-alist-notban-bar.md`](name-the-alist-notban-bar.md) — EIP-2930 outside-list not already forbidden / not already illegal / not already 1559 正式三事（168 余量）（不变量 1453）
+- [`name-the-alist-notacc-bar.md`](name-the-alist-notacc-bar.md) — EIP-2930 listed not already accessed / not already 2929-touch / not already 168-bundled 正式三事（168 余量）（不变量 1452）
+- [`name-the-cwarm-notany-bar.md`](name-the-cwarm-notany-bar.md) — EIP-2929 prefill not already any-address-warm / not already 2930 / not already 101 正式三事（169 余量）（不变量 1451）
+- [`name-the-cwarm-notrecold-bar.md`](name-the-cwarm-notrecold-bar.md) — EIP-2929 retouch not already cold-again / not already forever-warm / not already 168 正式三事（169 余量）（不变量 1450）
+- [`name-the-cwarm-notwarm-bar.md`](name-the-cwarm-notwarm-bar.md) — EIP-2929 first-touch not already warm / not already next-tx / not already 169-bundled 正式三事（169 余量）（不变量 1449）
+- [`name-the-cbase-not169-bar.md`](name-the-cbase-not169-bar.md) — EIP-3651 warm-start not already 169-prefill / not already 2930 / not already 163 正式三事（187 余量）（不变量 1448）
+- [`name-the-cbase-notpay-bar.md`](name-the-cbase-notpay-bar.md) — EIP-3651 warm-start not already paid / not already 1559 / not already 158 正式三事（187 余量）（不变量 1447）
+- [`name-the-cbase-notacc-bar.md`](name-the-cbase-notacc-bar.md) — EIP-3651 coinbase-warm not already accessed / not already 2929-first / not already 187-bundled 正式三事（187 余量）（不变量 1446）
+- [`name-the-rpfx-notinit-bar.md`](name-the-rpfx-notinit-bar.md) — EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）（不变量 1445）
+- [`name-the-rpfx-notold-bar.md`](name-the-rpfx-notold-bar.md) — EIP-3541 existing-code not already rewritten / not already revalidated / not already 3541-done 正式三事（188 余量）（不变量 1444）
+- [`name-the-rpfx-noteof-bar.md`](name-the-rpfx-noteof-bar.md) — EIP-3541 reserved-prefix not already EOF-deployed / not already validated / not already 188-bundled 正式三事（188 余量）（不变量 1443）
+- [`name-the-retc-notfree-bar.md`](name-the-retc-notfree-bar.md) — EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）（不变量 1442）
+- [`name-the-retc-nottx-bar.md`](name-the-retc-nottx-bar.md) — EIP-170 oog-fail not already whole-tx-illegal / not already leftover-gas / not already 177 正式三事（185 余量）（不变量 1441）
+- [`name-the-retc-notinit-bar.md`](name-the-retc-notinit-bar.md) — EIP-170 returned-bound not already initcode-bound / not already 3860 / not already 185-bundled 正式三事（185 余量）（不变量 1440）
+- [`name-the-icode-notrun-bar.md`](name-the-icode-notrun-bar.md) — EIP-3860 jumpdest-fee not already ran-initcode / not already CREATE2-hash-fee / not already created 正式三事（176 余量）（不变量 1439）
+- [`name-the-icode-nottx-bar.md`](name-the-icode-nottx-bar.md) — EIP-3860 create-tx-oversize not already CREATE-fail / not already 2681 / not already in-EVM 正式三事（176 余量）（不变量 1438）
+- [`name-the-icode-not170-bar.md`](name-the-icode-not170-bar.md) — EIP-3860 initcode-bound not already 170-runtime / not already 1014 / not already 176-bundled 正式三事（176 余量）（不变量 1437）
+- [`name-the-b2f-notapi-bar.md`](name-the-b2f-notapi-bar.md) — EIP-152 fixed-input not already generic-hash-API / not already digest / not already 199 正式三事（230 余量）（不变量 1436）
+- [`name-the-b2f-notprod-bar.md`](name-the-b2f-notprod-bar.md) — EIP-152 this-page not already Equihash / not already relay / not already privacy 正式三事（230 余量）（不变量 1435）
+- [`name-the-b2f-nothash-bar.md`](name-the-b2f-nothash-bar.md) — EIP-152 F not already BLAKE2b-hash / not already keccak / not already 230-bundled 正式三事（230 余量）（不变量 1434）
+- [`name-the-sbal-notwarm-bar.md`](name-the-sbal-notwarm-bar.md) — EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）（不变量 1433）
+- [`name-the-sbal-notself-bar.md`](name-the-sbal-notself-bar.md) — EIP-1884 self-query not already self-priced / not already cheaper-BALANCE / not already 1884-done 正式三事（229 余量）（不变量 1432）
+- [`name-the-sbal-notbal-bar.md`](name-the-sbal-notbal-bar.md) — EIP-1884 selfbalance not already BALANCE / not already stack-pop-balance / not already 229-bundled 正式三事（229 余量）（不变量 1431）
+- [`name-the-bn128-notgen-bar.md`](name-the-bn128-notgen-bar.md) — EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）（不变量 1430）
+- [`name-the-bn128-notsig-bar.md`](name-the-bn128-notsig-bar.md) — EIP-1108 cheaper not already verifying / not already privacy-live / not already 2537 正式三事（228 余量）（不变量 1429）
+- [`name-the-bn128-notalgo-bar.md`](name-the-bn128-notalgo-bar.md) — EIP-1108 bn128-cut not already algo-changed / not already 196-197-readded / not already 228-bundled 正式三事（228 余量）（不变量 1428）
+- [`name-the-mexp-notmin-bar.md`](name-the-mexp-notmin-bar.md) — EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）（不变量 1427）
+- [`name-the-mexp-notiface-bar.md`](name-the-mexp-notiface-bar.md) — EIP-2565 cheaper not already iface-changed / not already algo-changed / not already 206 正式三事（227 余量）（不变量 1426）
+- [`name-the-mexp-not198-bar.md`](name-the-mexp-not198-bar.md) — EIP-2565 reprice not already 198-formula / not already 7823 / not already 227-bundled 正式三事（227 余量）（不变量 1425）
+- [`name-the-cdcut-notsafe-bar.md`](name-the-cdcut-notsafe-bar.md) — EIP-2028 cheaper not already no-delay / not already no-security-change / not already 197 正式三事（226 余量）（不变量 1424）
+- [`name-the-cdcut-notcap-bar.md`](name-the-cdcut-notcap-bar.md) — EIP-2028 cheaper not already no-block-cap / not already DA-solved / not already 4844 正式三事（226 余量）（不变量 1423）
+- [`name-the-cdcut-notzero-bar.md`](name-the-cdcut-notzero-bar.md) — EIP-2028 nonzero-cut not already zero-cut / not already 7623 / not already 226-bundled 正式三事（226 余量）（不变量 1422）
+- [`name-the-nmet-notstip-bar.md`](name-the-nmet-notstip-bar.md) — EIP-2200 stipend-ban not already stipend-writable / not already 1283-hole / not already 223 正式三事（225 余量）（不变量 1421）
+- [`name-the-nmet-notcur-bar.md`](name-the-nmet-notcur-bar.md) — EIP-2200 orig-cur-new not already current-only / not already first-write / not already 2929 正式三事（225 余量）（不变量 1420）
+- [`name-the-nmet-not1153-bar.md`](name-the-nmet-not1153-bar.md) — EIP-2200 net-meter not already transient / not already 1153 / not already 225-bundled 正式三事（225 余量）（不变量 1419）
+- [`name-the-depre-notdone-bar.md`](name-the-depre-notdone-bar.md) — EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）（不变量 1418）
+- [`name-the-depre-notcli-bar.md`](name-the-depre-notcli-bar.md) — EIP-6049 meta-page not already client-changed / not already instruction-removed / not already 3529 正式三事（224 余量）（不变量 1417）
+- [`name-the-depre-notcons-bar.md`](name-the-depre-notcons-bar.md) — EIP-6049 deprecate-warn not already consensus-changed / not already 6780 / not already 224-bundled 正式三事（224 余量）（不变量 1416）
+- [`name-the-rfnd-notmid-bar.md`](name-the-rfnd-notmid-bar.md) — EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）（不变量 1415）
+- [`name-the-rfnd-not6780-bar.md`](name-the-rfnd-not6780-bar.md) — EIP-3529 drop-selfdestruct-refund not already 6780-semantics / not already 160 / not already 1559 正式三事（223 余量）（不变量 1414）
+- [`name-the-rfnd-notgone-bar.md`](name-the-rfnd-notgone-bar.md) — EIP-3529 refund-cut not already no-refund / not already 2200-rewritten / not already 223-bundled 正式三事（223 余量）（不变量 1413）
+- [`name-the-mcpy-notcd-bar.md`](name-the-mcpy-notcd-bar.md) — EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）（不变量 1412）
+- [`name-the-mcpy-notbuf-bar.md`](name-the-mcpy-notbuf-bar.md) — EIP-5656 as-if-buffer not already real-alloc / not already DoS / not already 208 正式三事（216 余量）（不变量 1411）
+- [`name-the-mcpy-notid-bar.md`](name-the-mcpy-notid-bar.md) — EIP-5656 MCOPY not already identity-precompile / not already 2929 / not already 216-bundled 正式三事（216 余量）（不变量 1410）
+- [`name-the-psh0-notold-bar.md`](name-the-psh0-notold-bar.md) — EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）（不变量 1409）
+- [`name-the-psh0-notjump-bar.md`](name-the-psh0-notjump-bar.md) — EIP-3855 no-immediate not already jumpdest-changed / not already shared-impl / not already 5656 正式三事（217 余量）（不变量 1408）
+- [`name-the-psh0-notimm-bar.md`](name-the-psh0-notimm-bar.md) — EIP-3855 PUSH0 not already immediate-push0 / not already 216 / not already 217-bundled 正式三事（217 余量）（不变量 1407）
+- [`name-the-shft-notpack-bar.md`](name-the-shft-notpack-bar.md) — EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）（不变量 1406）
+- [`name-the-shft-notsdiv-bar.md`](name-the-shft-notsdiv-bar.md) — EIP-145 SAR not already signed-div / not already same-rounding / not already same-operand-order 正式三事（231 余量）（不变量 1405）
+- [`name-the-shft-notarith-bar.md`](name-the-shft-notarith-bar.md) — EIP-145 native-shift not already arith-composed / not already one-shift / not already 231-bundled 正式三事（231 余量）（不变量 1404）
+- [`name-the-bbfee-not4844-bar.md`](name-the-bbfee-not4844-bar.md) — EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）（不变量 1403）
+- [`name-the-bbfee-notone-bar.md`](name-the-bbfee-notone-bar.md) — EIP-7516 read-blobbasefee not already one-gas / not already 145-bundled / not already 201 正式三事（219 余量）（不变量 1402）
+- [`name-the-bbfee-not3198-bar.md`](name-the-bbfee-not3198-bar.md) — EIP-7516 BLOBBASEFEE opcode not already 3198-basefee / not already 218-bundled / not already 219-bundled 正式三事（219 余量）（不变量 1401）
+- [`name-the-bfee-nothdr-bar.md`](name-the-bfee-nothdr-bar.md) — EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）（不变量 1400）
+- [`name-the-bfee-notprop-bar.md`](name-the-bfee-notprop-bar.md) — EIP-3198 read-basefee not already paid-to-proposer / not already blob-basefee / not already 219 正式三事（218 余量）（不变量 1399）
+- [`name-the-bfee-notmkt-bar.md`](name-the-bfee-notmkt-bar.md) — EIP-3198 BASEFEE opcode not already 1559-market / not already 158-bundled / not already 218-bundled 正式三事（218 余量）（不变量 1398）
+- [`name-the-chid-notfork-bar.md`](name-the-chid-notfork-bar.md) — EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）（不变量 1397）
+- [`name-the-chid-nottx-bar.md`](name-the-chid-nottx-bar.md) — EIP-1344 config-chainid not already this-tx-155 / not already default-value / not already 161 正式三事（220 余量）（不变量 1396）
+- [`name-the-chid-not155-bar.md`](name-the-chid-not155-bar.md) — EIP-1344 CHAINID opcode not already 155-signed / not already JSON-chainId / not already 220-bundled 正式三事（220 余量）（不变量 1395）
+- [`name-the-xhash-notmiss-bar.md`](name-the-xhash-notmiss-bar.md) — EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）（不变量 1394）
+- [`name-the-xhash-notzero-bar.md`](name-the-xhash-notzero-bar.md) — EIP-1052 return-0 not already no-code-account / not already empty-data-hash / not already 180 正式三事（221 余量）（不变量 1393）
+- [`name-the-xhash-notsee-bar.md`](name-the-xhash-notsee-bar.md) — EIP-1052 code-hash opcode not already saw-code / not already EXTCODECOPY / not already 221-bundled 正式三事（221 余量）（不变量 1392）
+- [`name-the-cr2-notover-bar.md`](name-the-cr2-notover-bar.md) — EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）（不变量 1391）
+- [`name-the-cr2-notexist-bar.md`](name-the-cr2-notexist-bar.md) — EIP-1014 salt-address not already created / not already has-code / not already paid-create 正式三事（222 余量）（不变量 1390）
+- [`name-the-cr2-notcre-bar.md`](name-the-cr2-notcre-bar.md) — EIP-1014 CREATE2 not already CREATE-nonce / not already sender-nonce / not already 222-bundled 正式三事（222 余量）（不变量 1389）
+- [`name-the-rdata-not140-bar.md`](name-the-rdata-not140-bar.md) — EIP-211 refetch-fail-data not already 140 / not already auto-sized-out / not already forwarder-product 正式三事（232 余量）（不变量 1388）
+- [`name-the-rdata-notcalld-bar.md`](name-the-rdata-notcalld-bar.md) — EIP-211 this-page not already calldata / not already two-call-length / not already still-after-next 正式三事（232 余量）（不变量 1387）
+- [`name-the-rdata-notmem-bar.md`](name-the-rdata-notmem-bar.md) — EIP-211 returndata-buffer not already memory / not already CALL-out / not already 232-bundled 正式三事（232 余量）（不变量 1386）
+- [`name-the-stcall-notchg-bar.md`](name-the-stcall-notchg-bar.md) — EIP-214 static-state-change not already applied / not already CALLCODE-value / not already 140 正式三事（178 余量）（不变量 1385）
+- [`name-the-stcall-notxfer-bar.md`](name-the-stcall-notxfer-bar.md) — EIP-214 zero-value-CALL not already static-flag / not already readonly / not already 214-bundled 正式三事（178 余量）（不变量 1384）
+- [`name-the-stcall-notview-bar.md`](name-the-stcall-notview-bar.md) — EIP-214 static-frame not already high-level-view / not already compiler-readonly / not already 178-bundled 正式三事（178 余量）（不变量 1383）
+- [`name-the-rvert-notdep-bar.md`](name-the-rvert-notdep-bar.md) — EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）（不变量 1382）
+- [`name-the-rvert-notfee-bar.md`](name-the-rvert-notfee-bar.md) — EIP-140 unpaid-self-fee not already leftover-semantics / not already 103 / not already free 正式三事（177 余量）（不变量 1381）
+- [`name-the-rvert-notburn-bar.md`](name-the-rvert-notburn-bar.md) — EIP-140 leftover-gas revert not already INVALID-burn / not already OOG-burn / not already 177-bundled 正式三事（177 余量）（不变量 1380）
+- [`name-the-dcall-not7702-bar.md`](name-the-dcall-not7702-bar.md) — EIP-7 mutable-code-source not already 7702 / not already product-shipped / not already calldata-replica 正式三事（233 余量）（不变量 1379）
+- [`name-the-dcall-notcall-bar.md`](name-the-dcall-notcall-bar.md) — EIP-7 parent-sender not already CALL / not already stipend / not already creates-account 正式三事（233 余量）（不变量 1378）
+- [`name-the-dcall-notcode-bar.md`](name-the-dcall-notcode-bar.md) — EIP-7 DELEGATECALL not already CALLCODE / not already same-sender-CALLCODE / not already 233-bundled 正式三事（233 余量）（不变量 1377）
+- [`name-the-viaext-notloc-bar.md`](name-the-viaext-notloc-bar.md) — ViAvail ExtendedVoteInfo from local process not already typically-from-block / not already Process VoteInfo / not already 425-flag 正式三事（442 余量）（不变量 1376）
+- [`name-the-viaext-notblk-bar.md`](name-the-viaext-notblk-bar.md) — ViAvail VoteInfo typically from block not already local-process / not already Prepare ExtendedVoteInfo / not already 369-path 正式三事（442 余量）（不变量 1375）
+- [`name-the-viaext-notrew-bar.md`](name-the-viaext-notrew-bar.md) — ViAvail availability same-sentence not already rewarded / not already settled / not already Finalize-computed 正式三事（442 余量）（不变量 1374）
+- [`name-the-valuse-notprep-bar.md`](name-the-valuse-notprep-bar.md) — ValUse Prepare ExtendedCommitInfo Validator not already Process-Finalize CommitInfo / not already interchangeable / not already 369-extract 正式三事（449 余量）（不变量 1373）
+- [`name-the-valuse-notfin-bar.md`](name-the-valuse-notfin-bar.md) — ValUse Finalize decided_last_commit Validator not already Process proposed / not already settled / not already Prepare-ext 正式三事（449 余量）（不变量 1372）
+- [`name-the-valuse-notproc-bar.md`](name-the-valuse-notproc-bar.md) — ValUse Process CommitInfo Validator not already Prepare ExtendedCommitInfo / not already local_last_commit / not already 364-pubkey 正式三事（449 余量）（不变量 1371）
+- [`name-the-prepev-notfin-bar.md`](name-the-prepev-notfin-bar.md) — PrepEv pass via FinalizeBlockResponse not already CheckTx events / not already ExecTxResult events / not already LastResultsHash 正式三事（448 余量）（不变量 1370）
+- [`name-the-prepev-notkeep-bar.md`](name-the-prepev-notkeep-bar.md) — PrepEv MUST keep until decided not already handed at Process / not already discarded-on-REJECT / not already settled 正式三事（448 余量）（不变量 1369）
+- [`name-the-prepev-notret-bar.md`](name-the-prepev-notret-bar.md) — PrepEv Prepare MAY produce events not already in PrepareProposalResponse / not already engine-received / not already 357-checked 正式三事（448 余量）（不变量 1368）
+- [`name-the-eviuse-nottwo-bar.md`](name-the-eviuse-nottwo-bar.md) — ExtViUse two sigs when enabled empty-slice if no non_rp not already one-sig / not already no-second / not already 358-replay 正式三事（447 余量）（不变量 1367）
+- [`name-the-eviuse-notexp-bar.md`](name-the-eviuse-notexp-bar.md) — ExtViUse extension_signature exposed for further processing not already app-verified / not already Verify / not already 421-handed 正式三事（447 余量）（不变量 1366）
+- [`name-the-eviuse-notapp-bar.md`](name-the-eviuse-notapp-bar.md) — ExtViUse vote_extension engine-verified can-be-empty not already app-verified / not already must-fill / not already Accept 正式三事（447 余量）（不变量 1365）
+- [`name-the-etxev-notlvl-bar.md`](name-the-etxev-notlvl-bar.md) — ExecTxEv per-tx events in tx_results not already block-level 431 / not already CheckTx 381 / not already interchangeable 正式三事（446 余量）（不变量 1364）
+- [`name-the-etxev-notdet-bar.md`](name-the-etxev-notdet-bar.md) — ExecTxEv tx events marked non-deterministic not already consensus-field / not already hashed / not already 316-det 正式三事（446 余量）（不变量 1363）
+- [`name-the-etxev-notidx-bar.md`](name-the-etxev-notidx-bar.md) — ExecTxEv tx events are index kv not already LastResultsHash / not already Code-Data-det / not already in-header 正式三事（446 余量）（不变量 1362）
+- [`name-the-cifields-notnts-bar.md`](name-the-cifields-notnts-bar.md) — CiFields Fields column not already Notes order / not already 444-bundled / not already 365-rewards 正式三事（445 余量）（不变量 1361）
+- [`name-the-cifields-notlst-bar.md`](name-the-cifields-notlst-bar.md) — CiFields votes is last-set voting-info not already in-block / not already settled / not already 444-notes-order 正式三事（445 余量）（不变量 1360）
+- [`name-the-cifields-notrnd-bar.md`](name-the-cifields-notrnd-bar.md) — CiFields round is commit-round not already voting-power-ordered / not already slashed / not already 394-ext-round 正式三事（445 余量）（不变量 1359）
+- [`name-the-extcnotes-notload-bar.md`](name-the-extcnotes-notload-bar.md) — ExtCiNotes rebuild ExtendedCommitInfo from store not already extracted-from-block / not already 365-path / not already 444-cinotes 正式三事（441 余量）（不变量 1358）
+- [`name-the-extcnotes-noteng-bar.md`](name-the-extcnotes-noteng-bar.md) — ExtCiNotes engine guarantees and persists ext order not already app-sorted / not already recv-order / not already Prepare-decided 正式三事（441 余量）（不变量 1357）
+- [`name-the-extcnotes-notord-bar.md`](name-the-extcnotes-notord-bar.md) — ExtCiNotes ext votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（441 余量）（不变量 1356）
+- [`name-the-cinotes-notstore-bar.md`](name-the-cinotes-notstore-bar.md) — CiNotes rebuild CommitInfo from store not already extracted-from-block / not already 365-path / not already extcinotes 正式三事（444 余量）（不变量 1355）
+- [`name-the-cinotes-notapp-bar.md`](name-the-cinotes-notapp-bar.md) — CiNotes engine guarantees and persists order not already app-sorted / not already recv-order / not already Process-decided 正式三事（444 余量）（不变量 1354）
+- [`name-the-cinotes-notblk-bar.md`](name-the-cinotes-notblk-bar.md) — CiNotes votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（444 余量）（不变量 1353）
+- [`name-the-eappgen-notbcast-bar.md`](name-the-eappgen-notbcast-bar.md) — ExtAppGen will-be-signed attached-to-Precommit not already broadcast / not already last_commit / not already 438-bundled 正式三事（439 余量）（不变量 1352）
+- [`name-the-eappgen-notnrp-bar.md`](name-the-eappgen-notnrp-bar.md) — ExtAppGen appgen non_rp will-be-signed-attached no-replay-prot not already same-sign / not already 358-raw / not already replay-prot 正式三事（439 余量）（不变量 1351）
+- [`name-the-eappgen-notsig-bar.md`](name-the-eappgen-notsig-bar.md) — ExtAppGen appgen vote_extension will-be-signed not already signed / not already 418-wrap / not already attached 正式三事（439 余量）（不变量 1350）
+- [`name-the-ext-appgen.md`](name-the-ext-appgen.md) — ExtendVote Response application-generated will-be-signed（快照 439）
+- [`name-the-ext-ci-notes-order.md`](name-the-ext-ci-notes-order.md) — ExtendedCommitInfo Notes 票序
+- [`name-the-ci-notes-order.md`](name-the-ci-notes-order.md) — CommitInfo Notes 票序（快照 444）
+- [`name-the-ci-fields-bar.md`](name-the-ci-fields-bar.md) — CommitInfo Fields 栏（快照 445）
+- [`name-the-exectx-events-bar.md`](name-the-exectx-events-bar.md) — ExecTxResult.events 栏（快照 446）
+- [`name-the-ext-vi-usage-expose.md`](name-the-ext-vi-usage-expose.md) — ExtendedVoteInfo Usage 暴露签
+- [`name-the-prepevents-retention-bar.md`](name-the-prepevents-retention-bar.md) — Prepare 事件保留到 Finalize
+- [`name-the-validatorusage-gates.md`](name-the-validatorusage-gates.md) — Validator Usage 四门映射
+- [`name-the-vi-usageavail-extract.md`](name-the-vi-usageavail-extract.md) — VoteInfo/ExtendedVoteInfo availability 同句抽取异路
 - [`name-the-hstead-notbomb-bar.md`](name-the-hstead-notbomb-bar.md) — EIP-2 diff-mean not already bomb-gone / not already bomb-delay / not already 234-bundled 正式四事（234 余量）（不变量 1349）
 - [`name-the-hstead-notfail-bar.md`](name-the-hstead-notfail-bar.md) — EIP-2 no-empty not already code-limit / not already initcode / not already empty-dead 正式四事（234 余量）（不变量 1348）
 - [`name-the-hstead-notsig-bar.md`](name-the-hstead-notsig-bar.md) — EIP-2 high-s not already ECRECOVER-rejects / not already BIP-66 / not already EIP-155 正式四事（234 余量）（不变量 1347）

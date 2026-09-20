@@ -85,7 +85,7 @@
 | 经济 | 更便宜不是中继、原子交换或隐私已经免费 |
 
 **推断：** 产品句若只写「以太坊终于有 BLAKE2 了」，读者会把压缩函数听成已经是哈希，或把动机听成 Equihash 中继和隐私已经齐。  
-**建议：** 第一版可以不加这条压缩预编译。若对照，必须分开压缩函数、完整哈希、工作量验证 / 中继、已经有隐私。不要发明「看见 152 就已经能验 Equihash」。不要抄预编译地址或测试向量。不要写怎样叠压缩函数去验工作量或做跨链交换。
+**建议：** 第一版可以不加这条压缩预编译。若对照，必须分开压缩函数、完整哈希、工作量验证 / 中继、已经有隐私。可以跳过「看见 152 就已经能验 Equihash」。230 blake2f vs hash bundled unbundling 完成（1434 item 1 / 1435 item 2 / 1436 item 3）；精读 [`worked-example-b2f-nothash-vs-bundled.md`](worked-example-b2f-nothash-vs-bundled.md)（不变量 1434 item 1）、[`worked-example-b2f-notprod-vs-bundled.md`](worked-example-b2f-notprod-vs-bundled.md)（不变量 1435 item 2）、[`worked-example-b2f-notapi-vs-bundled.md`](worked-example-b2f-notapi-vs-bundled.md)（不变量 1436 item 3）。不要发明「看见 152 就已经能验 Equihash」。不要抄预编译地址或测试向量。不要写怎样叠压缩函数去验工作量或做跨链交换。
 
 ---
 

@@ -87,7 +87,7 @@
 | 经济 | 底价让拍卖还能看见价；数据费仍单独定 |
 
 **推断：** 产品句若只写「blob 费跟执行费挂钩了」，读者会把底价听成已经并账，或把本页听成已经是 PeerDAS 的定价。  
-**建议：** 第一版不要把短时 blob 当默认 DA。若对照，必须分开底价、气种、日程、抽样。不要发明「看见 7918 就已经并了两套气」。不要抄底价常数。不要把 7918 写成 4844 / 7691。
+**建议：** 第一版不要把短时 blob 当默认 DA。若对照，必须分开底价、气种、日程、抽样。可以跳过「看见 7918 就已经并了两套气」。201 blob-reserve vs execution bundled unbundling 完成（1497 item 1 / 1498 item 2 / 1499 item 3）；精读 [`worked-example-bres-notacct-vs-bundled.md`](worked-example-bres-notacct-vs-bundled.md)（不变量 1497 item 1）、[`worked-example-bres-notgone-vs-bundled.md`](worked-example-bres-notgone-vs-bundled.md)（不变量 1498 item 2）、[`worked-example-bres-notsch-vs-bundled.md`](worked-example-bres-notsch-vs-bundled.md)（不变量 1499 item 3）。不要发明「看见 7918 就已经并了两套气」。不要抄底价常数。不要把 7918 写成 4844 / 7691。
 
 ---
 

@@ -92,7 +92,7 @@ DACert、父链上的全文、委员会诚实假设、纠删抽样、短时 blob
 | 经济 | 官方用信任假设换费用；TVL / 费率不是安全证明 |
 
 **推断：** 产品句若只写「也是 Arbitrum，数据在以太坊」，读者会把证书听成全文，或把委员会听成纠删抽样。  
-**建议：** 不确定第一版不要靠外部 DA 委员会。若对照，必须点名数据在父链还是在证书背后的抽屉；不要抄「温和信任」当优点。不要抄人数或过期天数。不要写怎样扣数据或伪造证书。
+**建议：** 不确定第一版不要靠外部 DA 委员会。若对照，必须点名数据在父链还是在证书背后的抽屉；可以跳过「看见 Inbox 有一笔就已经贴了全文」。142 dacert vs posted bundled unbundling 完成（1509 item 1 / 1510 item 2 / 1511 item 3）；精读 [`worked-example-dcert-notpost-vs-bundled.md`](worked-example-dcert-notpost-vs-bundled.md)（不变量 1509 item 1）、[`worked-example-dcert-notroll-vs-bundled.md`](worked-example-dcert-notroll-vs-bundled.md)（不变量 1510 item 2）、[`worked-example-dcert-notonly-vs-bundled.md`](worked-example-dcert-notonly-vs-bundled.md)（不变量 1511 item 3）。不要抄「温和信任」当优点。不要抄人数或过期天数。不要写怎样扣数据或伪造证书。
 
 ---
 

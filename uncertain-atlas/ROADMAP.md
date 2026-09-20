@@ -15,9 +15,9 @@
 完成标准（事实 + 建议混合，见各条标注）：
 
 1. 五条轨（index / courses / protocols / tracks / libraries）互相指认，无孤立读书笔记。
-2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1349）。
+2. CometBFT ABCI++ 不变量拆完（目标 ~793 句；当前 ~1559）。
 3. 决策矩阵「不确定候选」列填完**建议档**（非最终选型）。
-4. 对抗语料 C01–C1327+ 有 runner，能批量扫描文案/测试钩子。
+4. 对抗语料 C01–C1537+ 有 runner，能批量扫描文案/测试钩子。
 5. 过滤器页链（Cardano / Babylon / EigenLayer 等）要么补 19 节，要么在 index 明确「永久过滤器」。
 6. 单一 canonical 分支 + 清晰 merge 策略（见 Phase 0）。
 
@@ -34,7 +34,7 @@
 | 协议档案 | 20+ 链/品类 19 节模板 | 强 |
 | 横向专题 | 16 tracks；failure-museum 92+ 案 | 强 |
 | 模式/反模式 | 500+ design-patterns；650+ anti-patterns | 强 |
-| 不变量库 | 1349+ 可测试句；ABCI++ 主线 | 进行中（强） |
+| 不变量库 | 1559+ 可测试句；ABCI++ 主线 | 进行中（强） |
 | 通读路径 | `index/04-study-path.md` 六通 | 强 |
 
 ### 需调整
@@ -71,7 +71,7 @@
 |---|---|---|
 | P1-1 | 威胁模型 v1 | `libraries/threat-model/` _actor / _asset / _boundary 三页 |
 | P1-2 | settlement-copy 与矩阵对齐 | L10.3 清单 ↔ 矩阵行可互链 |
-| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325/127/137/70/38/13/321/322/352/353/47/30/147/155/130/133/338/434/339/330/159/144/111/35/61/31/14/324/157/158 1115–1282；EIP-8 1283–1285；EIP-2124 1286–1288；EIP-778 1289–1291；EIP-868 1292–1294；EIP-100 1295–1297；EIP-150 1298–1300；EIP-658 1301–1303；PrepareUsage 1304–1306；PrepareNochecks 1307–1309；PrepareWhen 1310–1312；PrepareWhenRet 1313–1315；SuggestValidate 1316–1318；LateUnverified 1319–1321；LateMay 1322–1324；VerifyDiscard 1325–1327；VerifyCall 1328–1330；VerifyStatusWhen 1331–1333；VerifyKeep 1334–1336；VerifyAcceptDef 1337–1339；ProcAcceptDef 1340–1342；ExtWhenBcast 1343–1345；EIP-2 Homestead 1346–1349 | AUDIT_LOG 连续；invariants README 更新 |
+| P1-3 | ABCI++ 拆完 677–1114；BIP-44/43/85/49/48/45/67/86/89/383/386/381/382/387/371/388/384/385/328/373/87/129/88/78/69/94/325/127/137/70/38/13/321/322/352/353/47/30/147/155/130/133/338/434/339/330/159/144/111/35/61/31/14/324/157/158 1115–1282；EIP-8 1283–1285；EIP-2124 1286–1288；EIP-778 1289–1291；EIP-868 1292–1294；EIP-100 1295–1297；EIP-150 1298–1300；EIP-658 1301–1303；PrepareUsage 1304–1306；PrepareNochecks 1307–1309；PrepareWhen 1310–1312；PrepareWhenRet 1313–1315；SuggestValidate 1316–1318；LateUnverified 1319–1321；LateMay 1322–1324；VerifyDiscard 1325–1327；VerifyCall 1328–1330；VerifyStatusWhen 1331–1333；VerifyKeep 1334–1336；VerifyAcceptDef 1337–1339；ProcAcceptDef 1340–1342；ExtWhenBcast 1343–1345；EIP-2 Homestead 1346–1349；ExtAppGen 1350–1352；CiNotes 1353–1355；ExtCiNotes 1356–1358；CiFields 1359–1361；ExecTxEv 1362–1364；ExtViUse 1365–1367；PrepEv 1368–1370；ValUse 1371–1373；ViAvail 1374–1376；EIP-7 DELEGATECALL 1377–1379；EIP-140 REVERT 1380–1382；EIP-214 STATICCALL 1383–1385；EIP-211 returndata 1386–1388；EIP-1014 CREATE2 1389–1391；EIP-1052 EXTCODEHASH 1392–1394；EIP-1344 CHAINID 1395–1397；EIP-3198 BASEFEE 1398–1400；EIP-7516 BLOBBASEFEE 1401–1403；EIP-145 SHIFT 1404–1406；EIP-3855 PUSH0 1407–1409；EIP-5656 MCOPY 1410–1412；EIP-3529 refund 1413–1415；EIP-6049 deprecate 1416–1418；EIP-2200 net-meter 1419–1421；EIP-2028 calldata-cut 1422–1424；EIP-2565 modexp-price 1425–1427；EIP-1108 bn128-cut 1428–1430；EIP-1884 SELFBALANCE 1431–1433；EIP-152 BLAKE2F 1434–1436；EIP-3860 initcode 1437–1439；EIP-170 returned 1440–1442；EIP-3541 reserved-prefix 1443–1445；EIP-3651 coinbase 1446–1448；EIP-2929 cold-vs-warm 1449–1451；EIP-2930 listed 1452–1454；EIP-2718 typed-envelope 1455–1457；EIP-7935 default-gas 1458–1460；EIP-7825 tx-gas-cap 1461–1463；EIP-7934 rlp-cap 1464–1466；EIP-7623 calldata-floor 1467–1469；EIP-7939 clz 1470–1472；EIP-7823 modexp-bound 1473–1475；EIP-7928 block-list 1476–1478；EIP-7044 exit-domain 1479–1481；EIP-7917 lookahead 1482–1484；EIP-1559 basefee-vs-tip 1485–1487；EIP-7642 history-window 1488–1490；EIP-4844 blob-fee 1491–1493；EIP-7691 blob-schedule 1494–1496；EIP-7918 blob-reserve 1497–1499；EIP-2935 history-hash 1500–1502；EIP-7892 bpo 1503–1505；EIP-4788 parent-root 1506–1508；AnyTrust dacert 1509–1511；Celestia nmt 1512–1514；EIP-4844 blob-vs-das 1515–1517；assumevalid 1518–1520；policy-vs-consensus 1521–1523；BIP-125 rbf-signal 1524–1526；BIP-112 csv 1527–1529；BIP-65 cltv 1530–1532；BIP-16 p2sh 1533–1535；BIP-173 bech32 1536–1538；BIP-350 bech32m 1539–1541；BIP-34 coinbase-height 1542–1544；BIP-9 versionbits 1545–1547；BIP-66 strict-DER 1548–1550；BIP-141 txid-wtxid 1551–1553；BIP-341 keypath-scriptpath 1554–1556；BIP-342 tapscript 1557–1559 | AUDIT_LOG 连续；invariants README 更新 |
 | P1-4 | runner 接 pytest | 至少 10 条 Cxx 有占位测试 |
 | P1-5 | PQ 尺寸卡补 CPU 列 | `tracks/post-quantum/engineering-ledger.md` 有测量方法 |
 
@@ -325,8 +325,79 @@
 | 2026-09-18 | P1-3 1340–1342 ProcAcceptDef SHOULD Accept 默认不是不能 Reject / REJECT assumes not valid 不是不能 Reject / 默认不是 340 通则 拆句（532 item 1/2/3） |
 | 2026-09-18 | P1-3 1343–1345 ExtWhenBcast 广播不是 constructs Precommit / step 7 顺序不是 construct CanonicalVote / 广播不是 last_commit 拆句（513 item 1/2/3） |
 | 2026-09-18 | P1-3 1346–1349 Homestead 交易创建费不是改 CREATE / 拒高 s 不是预编译拒 / 失败不留空合约不是限制代码 / 难度朝均值不是取消炸弹 拆句（234 item 1/2/3/4） |
+| 2026-09-18 | P3-3 库存 285 remote / 211 祖先 / 74 平行 / 107 缺失；unique 9 簇回收；不删 remote |
+| 2026-09-18 | P1-3 1350–1352 ExtAppGen 应用生成将签名不是已经签过 / non_rp 不是同一签法 / 将挂上不是已经广播 拆句（439 item 1/2/3） |
+| 2026-09-18 | P1-3 1353–1355 CiNotes 按投票权降序不是已经进块 / 引擎保证不是应用排过 / 从 store 再装不是从块抽出 拆句（444 item 1/2/3） |
+| 2026-09-18 | P1-3 1356–1358 ExtCiNotes Extended 按投票权降序不是已经进块 / 引擎保证不是应用排过 / 从 store 再装不是从块抽出 拆句（441 item 1/2/3） |
+| 2026-09-18 | P1-3 1359–1361 CiFields round 不是已经按投票权排 / votes 列表不是已经进块 / Fields 栏不是 Notes 票序 拆句（445 item 1/2/3） |
+| 2026-09-18 | P1-3 1362–1364 ExecTxEv 索引事件不是印进本头 / 非确定不是 Code-Data / 逐笔不是块级 events 拆句（446 item 1/2/3） |
+| 2026-09-18 | P1-3 1365–1367 ExtViUse 引擎已验可空不是应用验完 / 暴露再处理不是已 Verify / 两份签空切片不是只有一份 拆句（447 item 1/2/3） |
+| 2026-09-18 | P1-3 1368–1370 PrepEv MAY 产出不是回包交回 / MUST 留到决定不是 Process 就交 / Finalize 交回不是 CheckTx events 拆句（448 item 1/2/3） |
+| 2026-09-18 | P1-3 1371–1373 ValUse Process CommitInfo 不是 Prepare Extended / Finalize decided 不是 Process proposed / Prepare Extended 不是 CommitInfo 拆句（449 item 1/2/3） |
+| 2026-09-18 | P1-3 1374–1376 ViAvail availability 同句不是已经奖罚完 / VoteInfo from block 不是 local / ExtendedVoteInfo local 不是 from block 拆句（442 item 1/2/3） |
+| 2026-09-18 | P1-3 1377–1379 EIP-7 DELEGATECALL 不是已经是 CALLCODE / 父作用域发送者不是普通 CALL / 可变代码源不是 7702 拆句（233 item 1/2/3） |
+| 2026-09-18 | P1-3 1380–1382 EIP-140 REVERT 带回剩余气不是非法指令烧光 / 付不起自己的费不是留下剩余气 / 创建里回滚不是已经部署 拆句（177 item 1/2/3） |
+| 2026-09-18 | P1-3 1383–1385 EIP-214 STATICCALL 静态帧不是 view / 没转账不是已经静态 / 静态里改状态不是已经改成 拆句（178 item 1/2/3） |
+| 2026-09-18 | P1-3 1386–1388 EIP-211 返回缓冲不是内存 / 本页不是 calldata / 再取失败数据不是已经是 140 拆句（232 item 1/2/3） |
+| 2026-09-18 | P1-3 1389–1391 EIP-1014 CREATE2 不是按序号占址 / 算出盐地址不是已经创建 / 碰撞可能不是已经覆盖 拆句（222 item 1/2/3） |
+| 2026-09-18 | P1-3 1392–1394 EIP-1052 EXTCODEHASH 不是已经看见代码 / 返回 0 不是没代码账户 / 空数据哈希不是账户不存在 拆句（221 item 1/2/3） |
+| 2026-09-18 | P1-3 1395–1397 EIP-1344 CHAINID 不是已经签进哈希 / 返回配置链号不是这笔已绑 155 / 编译期写死不是分叉后仍安全 拆句（220 item 1/2/3） |
+| 2026-09-18 | P1-3 1398–1400 EIP-3198 BASEFEE 不是已经改了费用市场 / 能读本块基础费不是已经给了出块者 / 跑前就有这个数不是已经改了头 拆句（218 item 1/2/3） |
+| 2026-09-18 | P1-3 1401–1403 EIP-7516 BLOBBASEFEE 不是已经是 3198 / 能读 blob 基础费不是已经并成一套气 / 跑前就有这个数不是已经改了 4844 拆句（219 item 1/2/3） |
+| 2026-09-18 | P1-3 1404–1406 EIP-145 SHIFT 不是已经用算术拼过 / 算术右移不是已经是有符号除 / 更便宜不是已经是位域产品 拆句（231 item 1/2/3） |
+| 2026-09-18 | P1-3 1407–1409 EIP-3855 PUSH0 不是已经是带立即数的压 0 / 没有立即数不是已经改了跳转分析 / 旧字节碰巧用了这个码不是行为已经不变 拆句（217 item 1/2/3） |
+| 2026-09-18 | P1-3 1410–1412 EIP-5656 MCOPY 不是已经是身份预编译 / 像缓冲不是必须真分配 / 能重叠拷不是已经是 calldata 拷 拆句（216 item 1/2/3） |
+| 2026-09-18 | P1-3 1413–1415 EIP-3529 refund 不是已经没有退款 / 去掉自毁退款不是已经改了自毁语义 / 退款计数不是执行当中能用 拆句（223 item 1/2/3） |
+| 2026-09-18 | P1-3 1416–1418 EIP-6049 deprecate 不是已经改了共识 / 元层页不是已经改了客户端 / 以后可能变不是已经变了 拆句（224 item 1/2/3） |
+| 2026-09-18 | P1-3 1419–1421 EIP-2200 net-meter 不是已经是瞬时存储 / 三值不是已经只有当前值 / 津贴帧禁写不是已经能改槽 拆句（225 item 1/2/3） |
+| 2026-09-18 | P1-3 1422–1424 EIP-2028 calldata-cut 不是已经给零字节也降价 / 降价不是已经没有块上限 / 降价不是已经不伤延迟安全 拆句（226 item 1/2/3） |
+| 2026-09-18 | P1-3 1425–1427 EIP-2565 modexp-price 不是已经是 198 公式 / 更便宜不是已经改了接口 / 最低气价不是已经无限便宜 拆句（227 item 1/2/3） |
+| 2026-09-18 | P1-3 1428–1430 EIP-1108 bn128-cut 不是已经换了算法 / 更便宜不是已经在验签 / 本页不是已经是通用曲线算术 拆句（228 item 1/2/3） |
+| 2026-09-18 | P1-3 1431–1433 EIP-1884 SELFBALANCE 不是已经是按地址查余额 / 给自己查不是已经按本账户价扣 / 涨价不是已经是本笔冷热 拆句（229 item 1/2/3） |
+| 2026-09-18 | P1-3 1434–1436 EIP-152 BLAKE2F 不是已经是哈希 / 本页不是已经能验 Equihash / 定长输入不是已经是任意哈希 API 拆句（230 item 1/2/3） |
+| 2026-09-18 | P1-3 1437–1439 EIP-3860 initcode 不是已经是 170 运行时界 / 创建交易超界不是已经是 CREATE 失败 / 分析费不是已经跑完 拆句（176 item 1/2/3） |
+| 2026-09-18 | P1-3 1440–1442 EIP-170 returned 不是已经是 initcode 超界 / 耗尽气不是已经整笔非法 / 常数 CALL 气不是已经免费 拆句（185 item 1/2/3） |
+| 2026-09-18 | P1-3 1443–1445 EIP-3541 reserved-prefix 不是已经是对象格式已部署 / 已有同首字节不是已经被改 / initcode 出现该字节不是已经是本页失败 拆句（188 item 1/2/3） |
+| 2026-09-18 | P1-3 1446–1448 EIP-3651 coinbase 不是已经访问过 / 开跑已热不是已经付钱 / 开跑已热不是 169 预填已含出块者 拆句（187 item 1/2/3） |
+| 2026-09-19 | P1-3 1449–1451 EIP-2929 cold-vs-warm 不是已经热 / 再碰不是又是冷访问 / 开跑预填不是任意地址已热 拆句（169 item 1/2/3） |
+| 2026-09-19 | P1-3 1452–1454 EIP-2930 listed 不是已经访问过 / 列表外不是已经不能碰 / 预付列表费不是已经跑完读取 拆句（168 item 1/2/3） |
+| 2026-09-19 | P1-3 1455–1457 EIP-2718 typed-envelope 不是已经解开内层 / 旧式 RLP 不是已经是信封 / 看见收据不是类型已对上 拆句（167 item 1/2/3） |
+| 2026-09-19 | P1-3 1458–1460 EIP-7935 default-gas 不是已经是协议帽 / 绑到硬分叉不是已经改了共识 / 默认齐了不是已经是单笔帽 拆句（211 item 1/2/3） |
+| 2026-09-19 | P1-3 1461–1463 EIP-7825 tx-gas-cap 不是已经改了块气 / 入池拒掉不是已经验过块 / 块里超帽不是已经只是策略 拆句（203 item 1/2/3） |
+| 2026-09-19 | P1-3 1464–1466 EIP-7934 rlp-cap 不是已经改了气 / 流言不传不是已经执行层非法 / 留边不是已经一份编码 拆句（202 item 1/2/3） |
+| 2026-09-19 | P1-3 1467–1469 EIP-7623 calldata-floor 不是已经改了执行气 / 数据为主更贵不是已经普通转账更贵 / 预留不是已经烧到 拆句（197 item 1/2/3） |
+| 2026-09-19 | P1-3 1470–1472 EIP-7939 clz 不是已经更便宜ZK / 动机写了后量子不是已经有后量子签 / 能表达最低位不是已经有数尾零 拆句（208 item 1/2/3） |
+| 2026-09-19 | P1-3 1473–1475 EIP-7823 modexp-bound 不是已经改了计价 / 超帽不是已经成功返回 / 有界不是已经换成EVM 拆句（206 item 1/2/3） |
+| 2026-09-19 | P1-3 1476–1478 EIP-7928 block-list 不是已经并行跑完 / 强制名单不是已经是2930 / 事后差不是已经不跑 拆句（212 item 1/2/3） |
+| 2026-09-19 | P1-3 1479–1481 EIP-7044 exit-domain 不是已经永远有效 / 域锁不是已经改了执行层 / 两边重放不是已经丢资金 拆句（213 item 1/2/3） |
+| 2026-09-19 | P1-3 1482–1484 EIP-7917 lookahead 不是已经锁死日程 / 余额还能变不是已经排完 / 前瞻名单不是已经预确认 拆句（205 item 1/2/3） |
+| 2026-09-19 | P1-3 1485–1487 EIP-1559 basefee-vs-tip 烧掉不是已经给出块者 / 弹性不是市场已齐 / 烧掉不是MEV已解决 拆句（158 item 1/2/3） |
+| 2026-09-19 | P1-3 1488–1490 EIP-7642 history-window 不是已经改了共识历史 / 线上无布隆不是共识收据已改 / 去掉TD不是已经判断同步 拆句（207 item 1/2/3） |
+| 2026-09-19 | P1-3 1491–1493 EIP-4844 blob-fee 不是已经是普通执行气 / BLOBHASH不是已经读到袋里 / 付了费不是已经永存 拆句（145 item 1/2/3） |
+| 2026-09-19 | P1-3 1494–1496 EIP-7691 blob-schedule 不是已经改了气种拆分 / 新比不是旧对称 / 共识换名不是执行已激活 拆句（200 item 1/2/3） |
+| 2026-09-19 | P1-3 1497–1499 EIP-7918 blob-reserve 不是已经并成一套气 / 执行费主导不是已经没有blob价 / 不算目标不是已经改了日程 拆句（201 item 1/2/3） |
+| 2026-09-19 | P1-3 1500–1502 EIP-2935 history-hash 不是已经是 BLOCKHASH / 系统写入不是窗口已齐 / 合约更长窗不是已经改了操作码 拆句（195 item 1/2/3） |
+| 2026-09-19 | P1-3 1503–1505 EIP-7892 bpo 不是已经改了执行 / 配置日程不是已经不需要分叉 / 摘要掺上限不是已经换了版本号 拆句（209 item 1/2/3） |
+| 2026-09-19 | P1-3 1506–1508 EIP-4788 parent-root 不是已经是当前头 / 合约读到不是已经 finalized / 环过期不是已经永久可查 拆句（156 item 1/2/3） |
+| 2026-09-19 | P1-3 1509–1511 AnyTrust dacert 不是已经贴上全文 / AnyTrust不是已经Rollup DA / 回退贴全文不是已经只走委员会 拆句（142 item 1/2/3） |
+| 2026-09-19 | P1-3 1512–1514 Celestia nmt 不是已经整块可用 / DAS过关不是已经拿到自己的blob / DAS过关不是已经编码诚实 拆句（124 item 1/2/3） |
+| 2026-09-19 | P1-3 1515–1517 EIP-4844 blob-vs-das 不是已经PeerDAS / PeerDAS不是已经Celestia DAS / 承诺哈希不是已经永存 拆句（23 item 1/2/3） |
+| 2026-09-19 | P1-3 1518–1520 assumevalid 不是已经旧checkpoint强迫链 / 不是已经assumeutxo / 不是已经弱主观 拆句（25 item 1/2/3） |
+| 2026-09-19 | P1-3 1521–1523 policy 不是已经共识非法 / 策略通过不是已经进块 / 费率高不是已经更正确 拆句（144 item 1/2/3） |
+| 2026-09-19 | P1-3 1524–1526 BIP-125 rbf-signal 不是已经换掉 / nSequence示意不是已经相对锁 / 继承信号不是已经明示加入 拆句（166 item 1/2/3） |
+| 2026-09-19 | P1-3 1527–1529 BIP-112 csv 不是已经nSequence锁住 / 相对锁不是已经绝对锁 / 部署名不是已经操作码 拆句（165 item 1/2/3） |
+| 2026-09-19 | P1-3 1530–1532 BIP-65 cltv 不是已经nLockTime锁住输出 / 将来能花不是已经现在不能花 / 比nLockTime不是墙上现在 拆句（164 item 1/2/3） |
+| 2026-09-19 | P1-3 1533–1535 BIP-16 p2sh 不是已经揭开赎回 / 旧EQUAL不是已经再跑 / 哈希对上不是内层已验 拆句（170 item 1/2/3） |
+| 2026-09-19 | P1-3 1536–1538 BIP-173 bech32 不是已经有链上输出 / 校验过不是已经上链 / 编出程序不是已经付款 拆句（174 item 1/2/3） |
+| 2026-09-19 | P1-3 1539–1541 BIP-350 bech32m 不是已经是旧校验 / 更高版本旧校验过不是已经合法 / 后继串不是已经有UTXO 拆句（181 item 1/2/3） |
+| 2026-09-19 | P1-3 1542–1544 BIP-34 coinbase-height 不是已经头上有高度 / version加大不是已经BIP-9 / 写了高度不是已经能花 拆句（173 item 1/2/3） |
+| 2026-09-19 | P1-3 1545–1547 BIP-9 versionbits 不是已经锁定 / LOCKED_IN不是已经激活 / 超时失败不是已经当激活 拆句（171 item 1/2/3） |
+| 2026-09-19 | P1-3 1548–1550 BIP-66 strict-DER 不是已经是严格DER / 库收下不是共识已接受 / 转发要不是共识要 拆句（172 item 1/2/3） |
+| 2026-09-19 | P1-3 1551–1553 BIP-141 txid-wtxid 不是已经是wtxid / 改见证不是已经改txid / 头Merkle不是已经承诺wtxid 拆句（152 item 1/2/3） |
+| 2026-09-19 | P1-3 1554–1556 BIP-341 Taproot 钥匙路径不是已经揭树 / 脚本路径不是已经揭全部脚本 / 输出不是已经分辨钥或脚本 拆句（153 item 1/2/3） |
+| 2026-09-19 | P1-3 1557–1559 BIP-342 tapscript 走脚本路径不是已经语义 / 成功操作码不是已经执行完 / MINIMALIF不是只是P2WSH策略 拆句（189 item 1/2/3） |
 
-下一批默认：**P1-3 官方三事 1350+**（继续 cometbft 拆句）。  
+下一批默认：**P1-3 官方三事 1560+**（继续仍捆着的官方对象：dummy-vs-empty 264，或 P3-3 / P1-5）。
 唤醒后先跑 `python3 tools/review_audit.py`，见 [`REVIEW_LOOP.md`](REVIEW_LOOP.md)。
 
 ---

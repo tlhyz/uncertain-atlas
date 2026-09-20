@@ -86,7 +86,7 @@
 | 经济 | 旧脚本字节上限不再适用，不是见证预算已经消失 |
 
 **推断：** 产品句若只写「支持 Taproot / 脚本路径」，读者会把 341 的结构听成已经是本页语义，或把成功操作码听成已经执行完。  
-**建议：** 第一版若做脚本路径，必须分开 341 结构和本页语义。不要发明「走了脚本路径就是新脚本」。不要抄操作码号。不要把 342 写成 341 或 141。
+**建议：** 第一版若做脚本路径，必须分开 341 结构和本页语义。可以跳过「看见成功操作码就已经执行完」。189 tapscript vs scriptpath bundled unbundling 完成（1557 item 1 / 1558 item 2 / 1559 item 3）；精读 [`worked-example-tpsm-notsem-vs-bundled.md`](worked-example-tpsm-notsem-vs-bundled.md)（不变量 1557 item 1）、[`worked-example-tpsm-notdone-vs-bundled.md`](worked-example-tpsm-notdone-vs-bundled.md)（不变量 1558 item 2）、[`worked-example-tpsm-notmin-vs-bundled.md`](worked-example-tpsm-notmin-vs-bundled.md)（不变量 1559 item 3）。不要发明「走了脚本路径就是新脚本」。不要抄操作码号。不要把 342 写成 341 或 141。
 
 ---
 

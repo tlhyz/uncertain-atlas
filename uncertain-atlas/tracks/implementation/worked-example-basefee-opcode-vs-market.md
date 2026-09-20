@@ -83,7 +83,7 @@
 | 经济 | 能读基础费不是已经改了烧掉规则，也不是已经有气期货 |
 
 **推断：** 产品句若只写「能读基础费所以市场已经齐」，读者会把读数听成 1559，或把能读到听成已经给了出块者。  
-**建议：** 第一版可以不加这条读数指令。若对照，必须分开读数、市场、给谁、头怎么算。不要发明「看见 3198 就已经改了费用市场」。不要抄气价档或测试向量。不要写怎样设悬赏或做气期货。
+**建议：** 第一版可以不加这条读数指令。若对照，必须分开读数、市场、给谁、头怎么算。可以跳过「看见 3198 就已经改了费用市场」。218 BASEFEE opcode vs market bundled unbundling 完成（1398 item 1 / 1399 item 2 / 1400 item 3）；精读 [`worked-example-bfee-notmkt-vs-bundled.md`](worked-example-bfee-notmkt-vs-bundled.md)（不变量 1398 item 1）、[`worked-example-bfee-notprop-vs-bundled.md`](worked-example-bfee-notprop-vs-bundled.md)（不变量 1399 item 2）、[`worked-example-bfee-nothdr-vs-bundled.md`](worked-example-bfee-nothdr-vs-bundled.md)（不变量 1400 item 3）。不要发明「看见 3198 就已经改了费用市场」。不要抄气价档或测试向量。不要写怎样设悬赏或做气期货。
 
 ---
 

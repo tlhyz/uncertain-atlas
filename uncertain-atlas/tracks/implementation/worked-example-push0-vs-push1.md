@@ -86,7 +86,7 @@
 | 经济 | 专用压零不是已经改了取地址那一档的计价，也不是已经消灭部署浪费 |
 
 **推断：** 产品句若只写「有压零所以已经不用带立即数」，读者会把专用指令听成旧两字节写法，或把没有立即数听成跳转分析已经改。  
-**建议：** 第一版可以不加这条压零指令。若对照，必须分开常数零、带立即数的压 0、跳转分析、上下文相关凑零。不要发明「看见 3855 就已经是带立即数的压 0」。不要抄气价或栈深测试向量。不要写怎样在旧字节上赌分叉后行为。
+**建议：** 第一版可以不加这条压零指令。若对照，必须分开常数零、带立即数的压 0、跳转分析、上下文相关凑零。可以跳过「看见 3855 就已经是带立即数的压 0」。217 PUSH0 vs PUSH1 bundled unbundling 完成（1407 item 1 / 1408 item 2 / 1409 item 3）；精读 [`worked-example-psh0-notimm-vs-bundled.md`](worked-example-psh0-notimm-vs-bundled.md)（不变量 1407 item 1）、[`worked-example-psh0-notjump-vs-bundled.md`](worked-example-psh0-notjump-vs-bundled.md)（不变量 1408 item 2）、[`worked-example-psh0-notold-vs-bundled.md`](worked-example-psh0-notold-vs-bundled.md)（不变量 1409 item 3）。不要发明「看见 3855 就已经是带立即数的压 0」。不要抄气价或栈深测试向量。不要写怎样在旧字节上赌分叉后行为。
 
 ---
 

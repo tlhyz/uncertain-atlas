@@ -86,7 +86,7 @@
 | 经济 | 不把「更能跟上需求」写成已经更安全 |
 
 **推断：** 产品句若只写「blob 可以随时加容量」，读者会把专用分叉听成执行已经改了，或把配置听成已经不用分叉。  
-**建议：** 第一版不要把短时 blob 当默认 DA。若对照，必须分开专用分叉、常规抬日程、底价、抽样。不要发明「看见 7892 就已经改了执行」。不要抄目标条数 / 上限条数。不要写怎样把两边日程对不齐。
+**建议：** 第一版不要把短时 blob 当默认 DA。若对照，必须分开专用分叉、常规抬日程、底价、抽样。可以跳过「看见 7892 就已经改了执行」。209 bpo vs hardfork bundled unbundling 完成（1503 item 1 / 1504 item 2 / 1505 item 3）；精读 [`worked-example-bpof-notexec-vs-bundled.md`](worked-example-bpof-notexec-vs-bundled.md)（不变量 1503 item 1）、[`worked-example-bpof-notcfg-vs-bundled.md`](worked-example-bpof-notcfg-vs-bundled.md)（不变量 1504 item 2）、[`worked-example-bpof-notver-vs-bundled.md`](worked-example-bpof-notver-vs-bundled.md)（不变量 1505 item 3）。不要发明「看见 7892 就已经改了执行」。不要抄目标条数 / 上限条数。不要写怎样把两边日程对不齐。
 
 ---
 

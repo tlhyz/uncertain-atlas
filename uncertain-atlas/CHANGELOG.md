@@ -1,3 +1,843 @@
+## 2026-09-19（续 1676）
+
+- 不变量 1559；语料 C1537；模式 name-the-tpsm-notmin-bar；反模式 tpsm-notmin-sold-as-bundled；L10.3 第 1528 条。填 L3.7 BIP-342 minimalif not already p2wsh-policy-only / not already 191 / not already 144 正式三事（189 余量）。189 tapscript vs scriptpath bundled unbundling 完成（1559 item 3）。
+
+## 2026-09-19（续 1675）
+
+- 不变量 1558；语料 C1536；模式 name-the-tpsm-notdone-bar；反模式 tpsm-notdone-sold-as-bundled；L10.3 第 1527 条。填 L3.7 BIP-342 success-opcode not already executed / not already safe-upgrade / not already 189-bundled 正式三事（189 余量）。189 tapscript vs scriptpath bundled unbundling 续（1558 item 2）。
+
+## 2026-09-19（续 1674）
+
+- 不变量 1557；语料 C1535；模式 name-the-tpsm-notsem-bar；反模式 tpsm-notsem-sold-as-bundled；L10.3 第 1526 条。填 L3.7 BIP-342 scriptpath not already tapscript-semantics / not already 153 / not already 189-bundled 正式三事（189 余量）。189 tapscript vs scriptpath bundled unbundling 启动（1557 item 1）。
+
+## 2026-09-19（续 1673）
+
+- 不变量 1556；语料 C1534；模式 name-the-kpsp-notlook-bar；反模式 kpsp-notlook-sold-as-bundled；L10.3 第 1525 条。填 L3.7 BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）。153 keypath vs scriptpath bundled unbundling 完成（1556 item 3）。
+
+## 2026-09-19（续 1672）
+
+- 不变量 1555；语料 C1533；模式 name-the-kpsp-notall-bar；反模式 kpsp-notall-sold-as-bundled；L10.3 第 1524 条。填 L3.7 BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）。153 keypath vs scriptpath bundled unbundling 续（1555 item 2）。
+
+## 2026-09-19（续 1671）
+
+- 不变量 1554；语料 C1532；模式 name-the-kpsp-notree-bar；反模式 kpsp-notree-sold-as-bundled；L10.3 第 1523 条。填 L3.7 BIP-341 keypath not already revealed-tree / not already 189 / not already 153-bundled 正式三事（153 余量）。153 keypath vs scriptpath bundled unbundling 启动（1554 item 1）。
+
+## 2026-09-19（续 1670）
+
+- 不变量 1553；语料 C1531；模式 name-the-twid-notmer-bar；反模式 twid-notmer-sold-as-bundled；L10.3 第 1522 条。填 L3.7 BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）。152 txid vs wtxid bundled unbundling 完成（1553 item 3）。
+
+## 2026-09-19（续 1669）
+
+- 不变量 1552；语料 C1530；模式 name-the-twid-notchg-bar；反模式 twid-notchg-sold-as-bundled；L10.3 第 1521 条。填 L3.7 BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）。152 txid vs wtxid bundled unbundling 续（1552 item 2）。
+
+## 2026-09-19（续 1668）
+
+- 不变量 1551；语料 C1529；模式 name-the-twid-noteq-bar；反模式 twid-noteq-sold-as-bundled；L10.3 第 1520 条。填 L3.7 BIP-141 txid not already wtxid / not already 248 / not already 152-bundled 正式三事（152 余量）。152 txid vs wtxid bundled unbundling 启动（1551 item 1）。
+
+## 2026-09-19（续 1667）
+
+- 不变量 1550；语料 C1528；模式 name-the-sder-notpol-bar；反模式 sder-notpol-sold-as-bundled；L10.3 第 1519 条。填 L1.4 BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）。172 valid vs der bundled unbundling 完成（1550 item 3）。
+
+## 2026-09-19（续 1666）
+
+- 不变量 1549；语料 C1527；模式 name-the-sder-notlib-bar；反模式 sder-notlib-sold-as-bundled；L10.3 第 1518 条。填 L1.4 BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）。172 valid vs der bundled unbundling 续（1549 item 2）。
+
+## 2026-09-19（续 1665）
+
+- 不变量 1548；语料 C1526；模式 name-the-sder-notmath-bar；反模式 sder-notmath-sold-as-bundled；L10.3 第 1517 条。填 L1.4 BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）。172 valid vs der bundled unbundling 启动（1548 item 1）。
+
+## 2026-09-19（续 1664）
+
+- 不变量 1547；语料 C1525；模式 name-the-vb9-notfail-bar；反模式 vb9-notfail-sold-as-bundled；L10.3 第 1516 条。填 L3.3 BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）。171 versionbit vs active bundled unbundling 完成（1547 item 3）。
+
+## 2026-09-19（续 1663）
+
+- 不变量 1546；语料 C1524；模式 name-the-vb9-notact-bar；反模式 vb9-notact-sold-as-bundled；L10.3 第 1515 条。填 L3.3 BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）。171 versionbit vs active bundled unbundling 续（1546 item 2）。
+
+## 2026-09-19（续 1662）
+
+- 不变量 1545；语料 C1523；模式 name-the-vb9-notlock-bar；反模式 vb9-notlock-sold-as-bundled；L10.3 第 1514 条。填 L3.3 BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）。171 versionbit vs active bundled unbundling 启动（1545 item 1）。
+
+## 2026-09-19（续 1661）
+
+- 不变量 1544；语料 C1522；模式 name-the-cbht-notmat-bar；反模式 cbht-notmat-sold-as-bundled；L10.3 第 1513 条。填 L3.1 BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）。173 coinbase height vs header bundled unbundling 完成（1544 item 3）。
+
+## 2026-09-19（续 1660）
+
+- 不变量 1543；语料 C1521；模式 name-the-cbht-notv9-bar；反模式 cbht-notv9-sold-as-bundled；L10.3 第 1512 条。填 L3.1 BIP-34 block-version-bump not already bip9-bits / not already 171 / not already 172 正式三事（173 余量）。173 coinbase height vs header bundled unbundling 续（1543 item 2）。
+
+## 2026-09-19（续 1659）
+
+- 不变量 1542；语料 C1520；模式 name-the-cbht-nothdr-bar；反模式 cbht-nothdr-sold-as-bundled；L10.3 第 1511 条。填 L3.1 BIP-34 coinbase-height not already header-field / not already 171 / not already 173-bundled 正式三事（173 余量）。173 coinbase height vs header bundled unbundling 启动（1542 item 1）。
+
+## 2026-09-19（续 1658）
+
+- 不变量 1541；语料 C1519；模式 name-the-b32m-notutx-bar；反模式 b32m-notutx-sold-as-bundled；L10.3 第 1510 条。填 L3.7 BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）。181 bech32m vs bech32 bundled unbundling 完成（1541 item 3）。
+
+## 2026-09-19（续 1657）
+
+- 不变量 1540；语料 C1518；模式 name-the-b32m-notv0-bar；反模式 b32m-notv0-sold-as-bundled；L10.3 第 1509 条。填 L3.7 BIP-350 higher-ver-old-checksum not already legal / not already 174 / not already 152 正式三事（181 余量）。181 bech32m vs bech32 bundled unbundling 续（1540 item 2）。
+
+## 2026-09-19（续 1656）
+
+- 不变量 1539；语料 C1517；模式 name-the-b32m-notold-bar；反模式 b32m-notold-sold-as-bundled；L10.3 第 1508 条。填 L3.7 BIP-350 successor-pass not already old-bech32 / not already 174 / not already 181-bundled 正式三事（181 余量）。181 bech32m vs bech32 bundled unbundling 启动（1539 item 1）。
+
+## 2026-09-19（续 1655）
+
+- 不变量 1538；语料 C1516；模式 name-the-adut-notpay-bar；反模式 adut-notpay-sold-as-bundled；L10.3 第 1507 条。填 L3.7 BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）。174 address vs utxo bundled unbundling 完成（1538 item 3）。
+
+## 2026-09-19（续 1654）
+
+- 不变量 1537；语料 C1515；模式 name-the-adut-notchk-bar；反模式 adut-notchk-sold-as-bundled；L10.3 第 1506 条。填 L3.7 BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）。174 address vs utxo bundled unbundling 续（1537 item 2）。
+
+## 2026-09-19（续 1653）
+
+- 不变量 1536；语料 C1514；模式 name-the-adut-notout-bar；反模式 adut-notout-sold-as-bundled；L10.3 第 1505 条。填 L3.7 BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）。174 address vs utxo bundled unbundling 启动（1536 item 1）。
+
+## 2026-09-19（续 1652）
+
+- 不变量 1535；语料 C1513；模式 name-the-phsh-notinr-bar；反模式 phsh-notinr-sold-as-bundled；L10.3 第 1504 条。填 L2.1 BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）。170 p2sh hash vs redeem bundled unbundling 完成（1535 item 3）。
+
+## 2026-09-19（续 1651）
+
+- 不变量 1534；语料 C1512；模式 name-the-phsh-notrun-bar；反模式 phsh-notrun-sold-as-bundled；L10.3 第 1503 条。填 L2.1 BIP-16 old-equal not already new-reran / not already 153 / not already 144 正式三事（170 余量）。170 p2sh hash vs redeem bundled unbundling 续（1534 item 2）。
+
+## 2026-09-19（续 1650）
+
+- 不变量 1533；语料 C1511；模式 name-the-phsh-notrev-bar；反模式 phsh-notrev-sold-as-bundled；L10.3 第 1502 条。填 L2.1 BIP-16 hash-output not already redeem-revealed / not already 297 / not already 170-bundled 正式三事（170 余量）。170 p2sh hash vs redeem bundled unbundling 启动（1533 item 1）。
+
+## 2026-09-19（续 1649）
+
+- 不变量 1532；语料 C1510；模式 name-the-cl65-notclk-bar；反模式 cl65-notclk-sold-as-bundled；L10.3 第 1501 条。填 L2.1 BIP-65 cltv-compares-nlocktime not already wall-clock / not already 41 / not already 165 正式三事（164 余量）。164 cltv vs nlocktime bundled unbundling 完成（1532 item 3）。
+
+## 2026-09-19（续 1648）
+
+- 不变量 1531；语料 C1509；模式 name-the-cl65-notnow-bar；反模式 cl65-notnow-sold-as-bundled；L10.3 第 1500 条。填 L2.1 BIP-65 nlocktime-future-spend not already present-unspendable / not already 163 / not already 41 正式三事（164 余量）。164 cltv vs nlocktime bundled unbundling 续（1531 item 2）。
+
+## 2026-09-19（续 1647）
+
+- 不变量 1530；语料 C1508；模式 name-the-cl65-notfld-bar；反模式 cl65-notfld-sold-as-bundled；L10.3 第 1499 条。填 L2.1 BIP-65 script-cltv not already nlocktime-locked / not already 165 / not already 164-bundled 正式三事（164 余量）。164 cltv vs nlocktime bundled unbundling 启动（1530 item 1）。
+
+## 2026-09-19（续 1646）
+
+- 不变量 1529；语料 C1507；模式 name-the-csvd-notdep-bar；反模式 csvd-notdep-sold-as-bundled；L10.3 第 1498 条。填 L2.1 BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）。165 csv vs cltv bundled unbundling 完成（1529 item 3）。
+
+## 2026-09-19（续 1645）
+
+- 不变量 1528；语料 C1506；模式 name-the-csvd-notabs-bar；反模式 csvd-notabs-sold-as-bundled；L10.3 第 1497 条。填 L2.1 BIP-112 relative-lock not already absolute-lock / not already 164 / not already 163 正式三事（165 余量）。165 csv vs cltv bundled unbundling 续（1528 item 2）。
+
+## 2026-09-19（续 1644）
+
+- 不变量 1527；语料 C1505；模式 name-the-csvd-notseq-bar；反模式 csvd-notseq-sold-as-bundled；L10.3 第 1496 条。填 L2.1 BIP-112 script-csv not already nsequence-locked / not already 164 / not already 165-bundled 正式三事（165 余量）。165 csv vs cltv bundled unbundling 启动（1527 item 1）。
+
+## 2026-09-19（续 1643）
+
+- 不变量 1526；语料 C1504；模式 name-the-rbfs-notjoin-bar；反模式 rbfs-notjoin-sold-as-bundled；L10.3 第 1495 条。填 L3.2 BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）。166 rbf-signal vs replaced bundled unbundling 完成（1526 item 3）。
+
+## 2026-09-19（续 1642）
+
+- 不变量 1525；语料 C1503；模式 name-the-rbfs-notlock-bar；反模式 rbfs-notlock-sold-as-bundled；L10.3 第 1494 条。填 L3.2 BIP-125 nsequence-signal not already relative-lock / not already 165 / not already 164 正式三事（166 余量）。166 rbf-signal vs replaced bundled unbundling 续（1525 item 2）。
+
+## 2026-09-19（续 1641）
+
+- 不变量 1524；语料 C1502；模式 name-the-rbfs-notrep-bar；反模式 rbfs-notrep-sold-as-bundled；L10.3 第 1493 条。填 L3.2 BIP-125 opt-in-signal not already replaced / not already 144 / not already 166-bundled 正式三事（166 余量）。166 rbf-signal vs replaced bundled unbundling 启动（1524 item 1）。
+
+## 2026-09-19（续 1640）
+
+- 不变量 1523；语料 C1501；模式 name-the-polc-notfee-bar；反模式 polc-notfee-sold-as-bundled；L10.3 第 1492 条。填 L3.2 Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）。144 policy vs consensus bundled unbundling 完成（1523 item 3）。
+
+## 2026-09-19（续 1639）
+
+- 不变量 1522；语料 C1500；模式 name-the-polc-notblk-bar；反模式 polc-notblk-sold-as-bundled；L10.3 第 1491 条。填 L3.2 Policy policy-pass not already in-block / not already 25 / not already 166 正式三事（144 余量）。144 policy vs consensus bundled unbundling 续（1522 item 2）。
+
+## 2026-09-19（续 1638）
+
+- 不变量 1521；语料 C1499；模式 name-the-polc-notill-bar；反模式 polc-notill-sold-as-bundled；L10.3 第 1490 条。填 L3.2 Policy policy-reject not already consensus-illegal / not already 44 / not already 144-bundled 正式三事（144 余量）。144 policy vs consensus bundled unbundling 启动（1521 item 1）。
+
+## 2026-09-19（续 1637）
+
+- 不变量 1520；语料 C1498；模式 name-the-asv-notws-bar；反模式 asv-notws-sold-as-bundled；L10.3 第 1489 条。填 L3.5 assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）。25 assumevalid vs checkpoint bundled unbundling 完成（1520 item 3）。
+
+## 2026-09-19（续 1636）
+
+- 不变量 1519；语料 C1497；模式 name-the-asv-notutxo-bar；反模式 asv-notutxo-sold-as-bundled；L10.3 第 1488 条。填 L3.5 assumevalid assumevalid not already assumeutxo / not already 38 / not already 207 正式三事（25 余量）。25 assumevalid vs checkpoint bundled unbundling 续（1519 item 2）。
+
+## 2026-09-19（续 1635）
+
+- 不变量 1518；语料 C1496；模式 name-the-asv-notchk-bar；反模式 asv-notchk-sold-as-bundled；L10.3 第 1487 条。填 L3.5 assumevalid assumevalid not already checkpoint-forced / not already 24 / not already 25-bundled 正式三事（25 余量）。25 assumevalid vs checkpoint bundled unbundling 启动（1518 item 1）。
+
+## 2026-09-19（续 1634）
+
+- 不变量 1517；语料 C1495；模式 name-the-kdas-notperm-bar；反模式 kdas-notperm-sold-as-bundled；L10.3 第 1486 条。填 L5.4 EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）。23 blob vs das bundled unbundling 完成（1517 item 3）。
+
+## 2026-09-19（续 1633）
+
+- 不变量 1516；语料 C1494；模式 name-the-kdas-notcel-bar；反模式 kdas-notcel-sold-as-bundled；L10.3 第 1485 条。填 L5.4 EIP-4844 peerdas not already celestia-das / not already 124 / not already 200 正式三事（23 余量）。23 blob vs das bundled unbundling 续（1516 item 2）。
+
+## 2026-09-19（续 1632）
+
+- 不变量 1515；语料 C1493；模式 name-the-kdas-notpeer-bar；反模式 kdas-notpeer-sold-as-bundled；L10.3 第 1484 条。填 L5.4 EIP-4844 sidecar not already peerdas / not already 145 / not already 23-bundled 正式三事（23 余量）。23 blob vs das bundled unbundling 启动（1515 item 1）。
+
+## 2026-09-19（续 1631）
+
+- 不变量 1514；语料 C1492；模式 name-the-nmtd-notenc-bar；反模式 nmtd-notenc-sold-as-bundled；L10.3 第 1483 条。填 L7.2 NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）。124 nmt vs das bundled unbundling 完成（1514 item 3）。
+
+## 2026-09-19（续 1630）
+
+- 不变量 1513；语料 C1491；模式 name-the-nmtd-notblob-bar；反模式 nmtd-notblob-sold-as-bundled；L10.3 第 1482 条。填 L7.2 NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）。124 nmt vs das bundled unbundling 续（1513 item 2）。
+
+## 2026-09-19（续 1629）
+
+- 不变量 1512；语料 C1490；模式 name-the-nmtd-notsq-bar；反模式 nmtd-notsq-sold-as-bundled；L10.3 第 1481 条。填 L7.2 NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）。124 nmt vs das bundled unbundling 启动（1512 item 1）。
+
+## 2026-09-19（续 1628）
+
+- 不变量 1511；语料 C1489；模式 name-the-dcert-notonly-bar；反模式 dcert-notonly-sold-as-bundled；L10.3 第 1480 条。填 L7.2 AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）。142 dacert vs posted bundled unbundling 完成（1511 item 3）。
+
+## 2026-09-19（续 1627）
+
+- 不变量 1510；语料 C1488；模式 name-the-dcert-notroll-bar；反模式 dcert-notroll-sold-as-bundled；L10.3 第 1479 条。填 L7.2 AnyTrust anytrust not already rollup-da / not already 124 / not already 9 正式三事（142 余量）。142 dacert vs posted bundled unbundling 续（1510 item 2）。
+
+## 2026-09-19（续 1626）
+
+- 不变量 1509；语料 C1487；模式 name-the-dcert-notpost-bar；反模式 dcert-notpost-sold-as-bundled；L10.3 第 1478 条。填 L7.2 AnyTrust dacert not already posted-full / not already 23 / not already 142-bundled 正式三事（142 余量）。142 dacert vs posted bundled unbundling 启动（1509 item 1）。
+
+## 2026-09-19（续 1625）
+
+- 不变量 1508；语料 C1486；模式 name-the-proot-notperm-bar；反模式 proot-notperm-sold-as-bundled；L10.3 第 1477 条。填 L5.2 EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）。156 parent-root vs head bundled unbundling 完成（1508 item 3）。
+
+## 2026-09-19（续 1624）
+
+- 不变量 1507；语料 C1485；模式 name-the-proot-notfin-bar；反模式 proot-notfin-sold-as-bundled；L10.3 第 1476 条。填 L5.2 EIP-4788 contract-root not already finalized / not already 149 / not already 154 正式三事（156 余量）。156 parent-root vs head bundled unbundling 续（1507 item 2）。
+
+## 2026-09-19（续 1623）
+
+- 不变量 1506；语料 C1484；模式 name-the-proot-nothead-bar；反模式 proot-nothead-sold-as-bundled；L10.3 第 1475 条。填 L5.2 EIP-4788 parent-root not already current-head / not already 127 / not already 156-bundled 正式三事（156 余量）。156 parent-root vs head bundled unbundling 启动（1506 item 1）。
+
+## 2026-09-19（续 1622）
+
+- 不变量 1505；语料 C1483；模式 name-the-bpof-notver-bar；反模式 bpof-notver-sold-as-bundled；L10.3 第 1474 条。填 L5.4 EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）。209 bpo vs hardfork bundled unbundling 完成（1505 item 3）。
+
+## 2026-09-19（续 1621）
+
+- 不变量 1504；语料 C1482；模式 name-the-bpof-notcfg-bar；反模式 bpof-notcfg-sold-as-bundled；L10.3 第 1473 条。填 L5.4 EIP-7892 config-schedule not already forkless / not already 201 / not already 23 正式三事（209 余量）。209 bpo vs hardfork bundled unbundling 续（1504 item 2）。
+
+## 2026-09-19（续 1620）
+
+- 不变量 1503；语料 C1481；模式 name-the-bpof-notexec-bar；反模式 bpof-notexec-sold-as-bundled；L10.3 第 1472 条。填 L5.4 EIP-7892 bpo-fork not already exec-changed / not already 200 / not already 209-bundled 正式三事（209 余量）。209 bpo vs hardfork bundled unbundling 启动（1503 item 1）。
+
+## 2026-09-19（续 1619）
+
+- 不变量 1502；语料 C1480；模式 name-the-hhash-notsem-bar；反模式 hhash-notsem-sold-as-bundled；L10.3 第 1471 条。填 L5.1 EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）。195 history-hash vs blockhash bundled unbundling 完成（1502 item 3）。
+
+## 2026-09-19（续 1618）
+
+- 不变量 1501；语料 C1479；模式 name-the-hhash-notfill-bar；反模式 hhash-notfill-sold-as-bundled；L10.3 第 1470 条。填 L5.1 EIP-2935 sys-write not already window-full / not already 169 / not already 157 正式三事（195 余量）。195 history-hash vs blockhash bundled unbundling 续（1501 item 2）。
+
+## 2026-09-19（续 1617）
+
+- 不变量 1500；语料 C1478；模式 name-the-hhash-notbh-bar；反模式 hhash-notbh-sold-as-bundled；L10.3 第 1469 条。填 L5.1 EIP-2935 state-hash not already BLOCKHASH / not already 156 / not already 195-bundled 正式三事（195 余量）。195 history-hash vs blockhash bundled unbundling 启动（1500 item 1）。
+
+## 2026-09-19（续 1616）
+
+- 不变量 1499；语料 C1477；模式 name-the-bres-notsch-bar；反模式 bres-notsch-sold-as-bundled；L10.3 第 1468 条。填 L5.4 EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）。201 blob-reserve vs execution bundled unbundling 完成（1499 item 3）。
+
+## 2026-09-19（续 1615）
+
+- 不变量 1498；语料 C1476；模式 name-the-bres-notgone-bar；反模式 bres-notgone-sold-as-bundled；L10.3 第 1467 条。填 L5.4 EIP-7918 exec-dominant not already blob-priceless / not already 158 / not already 197 正式三事（201 余量）。201 blob-reserve vs execution bundled unbundling 续（1498 item 2）。
+
+## 2026-09-19（续 1614）
+
+- 不变量 1497；语料 C1475；模式 name-the-bres-notacct-bar；反模式 bres-notacct-sold-as-bundled；L10.3 第 1466 条。填 L5.4 EIP-7918 reserve-floor not already gas-merged / not already 145 / not already 201-bundled 正式三事（201 余量）。201 blob-reserve vs execution bundled unbundling 启动（1497 item 1）。
+
+## 2026-09-19（续 1613）
+
+- 不变量 1496；语料 C1474；模式 name-the-bsch-notel-bar；反模式 bsch-notel-sold-as-bundled；L10.3 第 1465 条。填 L5.4 EIP-7691 cl-rename not already el-activated / not already safer / not already 145 正式三事（200 余量）。200 blob-schedule vs 4844 bundled unbundling 完成（1496 item 3）。
+
+## 2026-09-19（续 1612）
+
+- 不变量 1495；语料 C1473；模式 name-the-bsch-notratio-bar；反模式 bsch-notratio-sold-as-bundled；L10.3 第 1464 条。填 L5.4 EIP-7691 new-ratio not already old-symmetric / not already 23 / not already 197 正式三事（200 余量）。200 blob-schedule vs 4844 bundled unbundling 续（1495 item 2）。
+
+## 2026-09-19（续 1611）
+
+- 不变量 1494；语料 C1472；模式 name-the-bsch-notgas-bar；反模式 bsch-notgas-sold-as-bundled；L10.3 第 1463 条。填 L5.4 EIP-7691 raise-schedule not already gas-split-changed / not already 145 / not already 200-bundled 正式三事（200 余量）。200 blob-schedule vs 4844 bundled unbundling 启动（1494 item 1）。
+
+## 2026-09-19（续 1610）
+
+- 不变量 1493；语料 C1471；模式 name-the-blgas-notperm-bar；反模式 blgas-notperm-sold-as-bundled；L10.3 第 1462 条。填 L5.1 EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）。145 blob-fee vs gas bundled unbundling 完成（1493 item 3）。
+
+## 2026-09-19（续 1609）
+
+- 不变量 1492；语料 C1470；模式 name-the-blgas-notbyte-bar；反模式 blgas-notbyte-sold-as-bundled；L10.3 第 1461 条。填 L5.1 EIP-4844 blobhash not already sidecar-bytes / not already 197 / not already 201 正式三事（145 余量）。145 blob-fee vs gas bundled unbundling 续（1492 item 2）。
+
+## 2026-09-19（续 1608）
+
+- 不变量 1491；语料 C1469；模式 name-the-blgas-notexec-bar；反模式 blgas-notexec-sold-as-bundled；L10.3 第 1460 条。填 L5.1 EIP-4844 blob-gas not already execution-gas / not already 23 / not already 145-bundled 正式三事（145 余量）。145 blob-fee vs gas bundled unbundling 启动（1491 item 1）。
+
+## 2026-09-19（续 1607）
+
+- 不变量 1490；语料 C1468；模式 name-the-hwin-notsync-bar；反模式 hwin-notsync-sold-as-bundled；L10.3 第 1459 条。填 L5.3 EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）。207 history-window vs consensus bundled unbundling 完成（1490 item 3）。
+
+## 2026-09-19（续 1606）
+
+- 不变量 1489；语料 C1467；模式 name-the-hwin-notenc-bar；反模式 hwin-notenc-sold-as-bundled；L10.3 第 1458 条。填 L5.3 EIP-7642 wire-no-bloom not already consensus-receipt / not already 25 / not already 195 正式三事（207 余量）。207 history-window vs consensus bundled unbundling 续（1489 item 2）。
+
+## 2026-09-19（续 1605）
+
+- 不变量 1488；语料 C1466；模式 name-the-hwin-notcons-bar；反模式 hwin-notcons-sold-as-bundled；L10.3 第 1457 条。填 L5.3 EIP-7642 history-window not already consensus-pruned / not already 23 / not already 207-bundled 正式三事（207 余量）。207 history-window vs consensus bundled unbundling 启动（1488 item 1）。
+
+## 2026-09-19（续 1604）
+
+- 不变量 1487；语料 C1465；模式 name-the-bfmkt-notmev-bar；反模式 bfmkt-notmev-sold-as-bundled；L10.3 第 1456 条。填 L5.1 EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）。158 basefee vs tip bundled unbundling 完成（1487 item 3）。
+
+## 2026-09-19（续 1603）
+
+- 不变量 1486；语料 C1464；模式 name-the-bfmkt-notmkt-bar；反模式 bfmkt-notmkt-sold-as-bundled；L10.3 第 1455 条。填 L5.1 EIP-1559 elastic-size not already market-complete / not already 101 / not already 27 正式三事（158 余量）。158 basefee vs tip bundled unbundling 续（1486 item 2）。
+
+## 2026-09-19（续 1602）
+
+- 不变量 1485；语料 C1463；模式 name-the-bfmkt-notpay-bar；反模式 bfmkt-notpay-sold-as-bundled；L10.3 第 1454 条。填 L5.1 EIP-1559 basefee-burned not already paid-to-proposer / not already 145 / not already 158-bundled 正式三事（158 余量）。158 basefee vs tip bundled unbundling 启动（1485 item 1）。
+
+## 2026-09-19（续 1601）
+
+- 不变量 1484；语料 C1462；模式 name-the-lkah-notpc-bar；反模式 lkah-notpc-sold-as-bundled；L10.3 第 1453 条。填 L5.2 EIP-7917 lookahead-list not already preconfirm / not already safer / not already 134 正式三事（205 余量）。205 lookahead vs randao bundled unbundling 完成（1484 item 3）。
+
+## 2026-09-19（续 1600）
+
+- 不变量 1483；语料 C1461；模式 name-the-lkah-notbal-bar；反模式 lkah-notbal-sold-as-bundled；L10.3 第 1452 条。填 L5.2 EIP-7917 balance-still-moves not already scheduled / not already 196 / not already 27 正式三事（205 余量）。205 lookahead vs randao bundled unbundling 续（1483 item 2）。
+
+## 2026-09-19（续 1599）
+
+- 不变量 1482；语料 C1460；模式 name-the-lkah-notlock-bar；反模式 lkah-notlock-sold-as-bundled；L10.3 第 1451 条。填 L5.2 EIP-7917 seed-known not already schedule-locked / not already 157 / not already 205-bundled 正式三事（205 余量）。205 lookahead vs randao bundled unbundling 启动（1482 item 1）。
+
+## 2026-09-19（续 1598）
+
+- 不变量 1481；语料 C1459；模式 name-the-exdom-notloss-bar；反模式 exdom-notloss-sold-as-bundled；L10.3 第 1450 条。填 L5.2 EIP-7044 replay-both not already lost-funds / not already safer / not already 6 正式三事（213 余量）。213 exit-domain vs fork bundled unbundling 完成（1481 item 3）。
+
+## 2026-09-19（续 1597）
+
+- 不变量 1480；语料 C1458；模式 name-the-exdom-notel-bar；反模式 exdom-notel-sold-as-bundled；L10.3 第 1449 条。填 L5.2 EIP-7044 domain-lock not already el-changed / not already 154 / not already 192 正式三事（213 余量）。213 exit-domain vs fork bundled unbundling 续（1480 item 2）。
+
+## 2026-09-19（续 1596）
+
+- 不变量 1479；语料 C1457；模式 name-the-exdom-notperm-bar；反模式 exdom-notperm-sold-as-bundled；L10.3 第 1448 条。填 L5.2 EIP-7044 signed-exit not already perpetual / not already 193 / not already 213-bundled 正式三事（213 余量）。213 exit-domain vs fork bundled unbundling 启动（1479 item 1）。
+
+## 2026-09-19（续 1595）
+
+- 不变量 1478；语料 C1456；模式 name-the-blal-notrun-bar；反模式 blal-notrun-sold-as-bundled；L10.3 第 1447 条。填 L5.1 EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）。212 block-list vs parallel bundled unbundling 完成（1478 item 3）。
+
+## 2026-09-19（续 1594）
+
+- 不变量 1477；语料 C1455；模式 name-the-blal-not2930-bar；反模式 blal-not2930-sold-as-bundled；L10.3 第 1446 条。填 L5.1 EIP-7928 forced-list not already 2930 / not already 143 / not already 122 正式三事（212 余量）。212 block-list vs parallel bundled unbundling 续（1477 item 2）。
+
+## 2026-09-19（续 1593）
+
+- 不变量 1476；语料 C1454；模式 name-the-blal-notpar-bar；反模式 blal-notpar-sold-as-bundled；L10.3 第 1445 条。填 L5.1 EIP-7928 block-list not already parallel-done / not already 168 / not already 212-bundled 正式三事（212 余量）。212 block-list vs parallel bundled unbundling 启动（1476 item 1）。
+
+## 2026-09-19（续 1592）
+
+- 不变量 1475；语料 C1453；模式 name-the-mxbd-notevm-bar；反模式 mxbd-notevm-sold-as-bundled；L10.3 第 1444 条。填 L5.1 EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）。206 modexp-bound vs price bundled unbundling 完成（1475 item 3）。
+
+## 2026-09-19（续 1591）
+
+- 不变量 1474；语料 C1452；模式 name-the-mxbd-notok-bar；反模式 mxbd-notok-sold-as-bundled；L10.3 第 1443 条。填 L5.1 EIP-7823 over-cap not already success / not already 177 / not already 204 正式三事（206 余量）。206 modexp-bound vs price bundled unbundling 续（1474 item 2）。
+
+## 2026-09-19（续 1590）
+
+- 不变量 1473；语料 C1451；模式 name-the-mxbd-notprice-bar；反模式 mxbd-notprice-sold-as-bundled；L10.3 第 1442 条。填 L5.1 EIP-7823 input-bound not already price-changed / not already 227 / not already 206-bundled 正式三事（206 余量）。206 modexp-bound vs price bundled unbundling 启动（1473 item 1）。
+
+## 2026-09-19（续 1589）
+
+- 不变量 1472；语料 C1450；模式 name-the-clz-notctz-bar；反模式 clz-notctz-sold-as-bundled；L10.3 第 1441 条。填 L5.1 EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）。208 clz vs zk bundled unbundling 完成（1472 item 3）。
+
+## 2026-09-19（续 1588）
+
+- 不变量 1471；语料 C1449；模式 name-the-clz-notpq-bar；反模式 clz-notpq-sold-as-bundled；L10.3 第 1440 条。填 L5.1 EIP-7939 pq-motive not already pq-sig / not already 199 / not already 204 正式三事（208 余量）。208 clz vs zk bundled unbundling 续（1471 item 2）。
+
+## 2026-09-19（续 1587）
+
+- 不变量 1470；语料 C1448；模式 name-the-clz-notzk-bar；反模式 clz-notzk-sold-as-bundled；L10.3 第 1439 条。填 L5.1 EIP-7939 clz not already cheaper-zk / not already 206 / not already 208-bundled 正式三事（208 余量）。208 clz vs zk bundled unbundling 启动（1470 item 1）。
+
+## 2026-09-19（续 1586）
+
+- 不变量 1469；语料 C1447；模式 name-the-cflr-notburn-bar；反模式 cflr-notburn-sold-as-bundled；L10.3 第 1438 条。填 L5.1 EIP-7623 reserve-floor not already burned / not already safer / not already 101 正式三事（197 余量）。197 calldata-floor vs execution bundled unbundling 完成（1469 item 3）。
+
+## 2026-09-19（续 1585）
+
+- 不变量 1468；语料 C1446；模式 name-the-cflr-notxfer-bar；反模式 cflr-notxfer-sold-as-bundled；L10.3 第 1437 条。填 L5.1 EIP-7623 data-heavy-dearer not already transfer-dearer / not already 158 / not already 226 正式三事（197 余量）。197 calldata-floor vs execution bundled unbundling 续（1468 item 2）。
+
+## 2026-09-19（续 1584）
+
+- 不变量 1467；语料 C1445；模式 name-the-cflr-notexec-bar；反模式 cflr-notexec-sold-as-bundled；L10.3 第 1436 条。填 L5.1 EIP-7623 calldata-floor not already execution-gas / not already 145 / not already 197-bundled 正式三事（197 余量）。197 calldata-floor vs execution bundled unbundling 启动（1467 item 1）。
+
+## 2026-09-19（续 1583）
+
+- 不变量 1466；语料 C1444；模式 name-the-rcap-notone-bar；反模式 rcap-notone-sold-as-bundled；L10.3 第 1435 条。填 L5.1 EIP-7934 beacon-margin not already one-encoding / not already safer / not already 101 正式三事（202 余量）。202 rlp-cap vs gas bundled unbundling 完成（1466 item 3）。
+
+## 2026-09-19（续 1582）
+
+- 不变量 1465；语料 C1443；模式 name-the-rcap-notprop-bar；反模式 rcap-notprop-sold-as-bundled；L10.3 第 1434 条。填 L5.1 EIP-7934 gossip-drop not already el-illegal / not already 96 / not already 158 正式三事（202 余量）。202 rlp-cap vs gas bundled unbundling 续（1465 item 2）。
+
+## 2026-09-19（续 1581）
+
+- 不变量 1464；语料 C1442；模式 name-the-rcap-notgas-bar；反模式 rcap-notgas-sold-as-bundled；L10.3 第 1433 条。填 L5.1 EIP-7934 rlp-cap not already gas-limit / not already 197 / not already 202-bundled 正式三事（202 余量）。202 rlp-cap vs gas bundled unbundling 启动（1464 item 1）。
+
+## 2026-09-19（续 1580）
+
+- 不变量 1463；语料 C1441；模式 name-the-txcap-notpol-bar；反模式 txcap-notpol-sold-as-bundled；L10.3 第 1432 条。填 L5.1 EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）。203 tx-gas-cap vs block bundled unbundling 完成（1463 item 3）。
+
+## 2026-09-19（续 1579）
+
+- 不变量 1462；语料 C1440；模式 name-the-txcap-notpool-bar；反模式 txcap-notpool-sold-as-bundled；L10.3 第 1431 条。填 L5.1 EIP-7825 pool-reject not already block-verified / not already 197 / not already 96 正式三事（203 余量）。203 tx-gas-cap vs block bundled unbundling 续（1462 item 2）。
+
+## 2026-09-19（续 1578）
+
+- 不变量 1461；语料 C1439；模式 name-the-txcap-notblk-bar；反模式 txcap-notblk-sold-as-bundled；L10.3 第 1430 条。填 L5.1 EIP-7825 tx-gas-cap not already block-gas / not already 202 / not already 203-bundled 正式三事（203 余量）。203 tx-gas-cap vs block bundled unbundling 启动（1461 item 1）。
+
+## 2026-09-19（续 1577）
+
+- 不变量 1460；语料 C1438；模式 name-the-dgas-nottx-bar；反模式 dgas-nottx-sold-as-bundled；L10.3 第 1429 条。填 L5.1 EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）。211 default-gas vs cap bundled unbundling 完成（1460 item 3）。
+
+## 2026-09-19（续 1576）
+
+- 不变量 1459；语料 C1437；模式 name-the-dgas-notcons-bar；反模式 dgas-notcons-sold-as-bundled；L10.3 第 1428 条。填 L5.1 EIP-7935 hardfork-bind not already consensus-changed / not already 202 / not already 96 正式三事（211 余量）。211 default-gas vs cap bundled unbundling 续（1459 item 2）。
+
+## 2026-09-19（续 1575）
+
+- 不变量 1458；语料 C1436；模式 name-the-dgas-notcap-bar；反模式 dgas-notcap-sold-as-bundled；L10.3 第 1427 条。填 L5.1 EIP-7935 default-gas not already protocol-cap / not already 203 / not already 211-bundled 正式三事（211 余量）。211 default-gas vs cap bundled unbundling 启动（1458 item 1）。
+
+## 2026-09-19（续 1574）
+
+- 不变量 1457；语料 C1435；模式 name-the-tenv-notrcpt-bar；反模式 tenv-notrcpt-sold-as-bundled；L10.3 第 1426 条。填 L5.1 EIP-2718 seeing-receipt not already type-matched / not already 158 / not already 161 正式三事（167 余量）。167 typed vs legacy bundled unbundling 完成（1457 item 3）。
+
+## 2026-09-19（续 1573）
+
+- 不变量 1456；语料 C1434；模式 name-the-tenv-notenv-bar；反模式 tenv-notenv-sold-as-bundled；L10.3 第 1425 条。填 L5.1 EIP-2718 legacy-RLP not already envelope / not already 155 / not already signed-type 正式三事（167 余量）。167 typed vs legacy bundled unbundling 续（1456 item 2）。
+
+## 2026-09-19（续 1572）
+
+- 不变量 1455；语料 C1433；模式 name-the-tenv-notinner-bar；反模式 tenv-notinner-sold-as-bundled；L10.3 第 1424 条。填 L5.1 EIP-2718 type-byte not already unpacked / not already 1559 / not already 167-bundled 正式三事（167 余量）。167 typed vs legacy bundled unbundling 启动（1455 item 1）。
+
+## 2026-09-19（续 1571）
+
+- 不变量 1454；语料 C1432；模式 name-the-alist-notread-bar；反模式 alist-notread-sold-as-bundled；L10.3 第 1423 条。填 L5.1 EIP-2930 list-fee not already ran-read / not already hotter / not already 2718 正式三事（168 余量）。168 listed vs accessed bundled unbundling 完成（1454 item 3）。
+
+## 2026-09-19（续 1570）
+
+- 不变量 1453；语料 C1431；模式 name-the-alist-notban-bar；反模式 alist-notban-sold-as-bundled；L10.3 第 1422 条。填 L5.1 EIP-2930 outside-list not already forbidden / not already illegal / not already 1559 正式三事（168 余量）。168 listed vs accessed bundled unbundling 续（1453 item 2）。
+
+## 2026-09-19（续 1569）
+
+- 不变量 1452；语料 C1430；模式 name-the-alist-notacc-bar；反模式 alist-notacc-sold-as-bundled；L10.3 第 1421 条。填 L5.1 EIP-2930 listed not already accessed / not already 2929-touch / not already 168-bundled 正式三事（168 余量）。168 listed vs accessed bundled unbundling 启动（1452 item 1）。
+
+## 2026-09-19（续 1568）
+
+- 不变量 1451；语料 C1429；模式 name-the-cwarm-notany-bar；反模式 cwarm-notany-sold-as-bundled；L10.3 第 1420 条。填 L5.1 EIP-2929 prefill not already any-address-warm / not already 2930 / not already 101 正式三事（169 余量）。169 cold vs warm bundled unbundling 完成（1451 item 3）。
+
+## 2026-09-19（续 1567）
+
+- 不变量 1450；语料 C1428；模式 name-the-cwarm-notrecold-bar；反模式 cwarm-notrecold-sold-as-bundled；L10.3 第 1419 条。填 L5.1 EIP-2929 retouch not already cold-again / not already forever-warm / not already 168 正式三事（169 余量）。169 cold vs warm bundled unbundling 续（1450 item 2）。
+
+## 2026-09-19（续 1566）
+
+- 不变量 1449；语料 C1427；模式 name-the-cwarm-notwarm-bar；反模式 cwarm-notwarm-sold-as-bundled；L10.3 第 1418 条。填 L5.1 EIP-2929 first-touch not already warm / not already next-tx / not already 169-bundled 正式三事（169 余量）。169 cold vs warm bundled unbundling 启动（1449 item 1）。
+
+## 2026-09-18（续 1565）
+
+- 不变量 1448；语料 C1426；模式 name-the-cbase-not169-bar；反模式 cbase-not169-sold-as-bundled；L10.3 第 1417 条。填 L5.1 EIP-3651 warm-start not already 169-prefill / not already 2930 / not already 163 正式三事（187 余量）。187 coinbase vs prefill bundled unbundling 完成（1448 item 3）。
+
+## 2026-09-18（续 1564）
+
+- 不变量 1447；语料 C1425；模式 name-the-cbase-notpay-bar；反模式 cbase-notpay-sold-as-bundled；L10.3 第 1416 条。填 L5.1 EIP-3651 warm-start not already paid / not already 1559 / not already 158 正式三事（187 余量）。187 coinbase vs prefill bundled unbundling 续（1447 item 2）。
+
+## 2026-09-18（续 1563）
+
+- 不变量 1446；语料 C1424；模式 name-the-cbase-notacc-bar；反模式 cbase-notacc-sold-as-bundled；L10.3 第 1415 条。填 L5.1 EIP-3651 coinbase-warm not already accessed / not already 2929-first / not already 187-bundled 正式三事（187 余量）。187 coinbase vs prefill bundled unbundling 启动（1446 item 1）。
+
+## 2026-09-18（续 1562）
+
+- 不变量 1445；语料 C1423；模式 name-the-rpfx-notinit-bar；反模式 rpfx-notinit-sold-as-bundled；L10.3 第 1414 条。填 L5.1 EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）。188 reserved-prefix vs eof bundled unbundling 完成（1445 item 3）。
+
+## 2026-09-18（续 1561）
+
+- 不变量 1444；语料 C1422；模式 name-the-rpfx-notold-bar；反模式 rpfx-notold-sold-as-bundled；L10.3 第 1413 条。填 L5.1 EIP-3541 existing-code not already rewritten / not already revalidated / not already 3541-done 正式三事（188 余量）。188 reserved-prefix vs eof bundled unbundling 续（1444 item 2）。
+
+## 2026-09-18（续 1560）
+
+- 不变量 1443；语料 C1421；模式 name-the-rpfx-noteof-bar；反模式 rpfx-noteof-sold-as-bundled；L10.3 第 1412 条。填 L5.1 EIP-3541 reserved-prefix not already EOF-deployed / not already validated / not already 188-bundled 正式三事（188 余量）。188 reserved-prefix vs eof bundled unbundling 启动（1443 item 1）。
+
+## 2026-09-18（续 1559）
+
+- 不变量 1442；语料 C1420；模式 name-the-retc-notfree-bar；反模式 retc-notfree-sold-as-bundled；L10.3 第 1411 条。填 L5.1 EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）。185 returned vs initcode bundled unbundling 完成（1442 item 3）。
+
+## 2026-09-18（续 1558）
+
+- 不变量 1441；语料 C1419；模式 name-the-retc-nottx-bar；反模式 retc-nottx-sold-as-bundled；L10.3 第 1410 条。填 L5.1 EIP-170 oog-fail not already whole-tx-illegal / not already leftover-gas / not already 177 正式三事（185 余量）。185 returned vs initcode bundled unbundling 续（1441 item 2）。
+
+## 2026-09-18（续 1557）
+
+- 不变量 1440；语料 C1418；模式 name-the-retc-notinit-bar；反模式 retc-notinit-sold-as-bundled；L10.3 第 1409 条。填 L5.1 EIP-170 returned-bound not already initcode-bound / not already 3860 / not already 185-bundled 正式三事（185 余量）。185 returned vs initcode bundled unbundling 启动（1440 item 1）。
+
+## 2026-09-18（续 1556）
+
+- 不变量 1439；语料 C1417；模式 name-the-icode-notrun-bar；反模式 icode-notrun-sold-as-bundled；L10.3 第 1408 条。填 L5.1 EIP-3860 jumpdest-fee not already ran-initcode / not already CREATE2-hash-fee / not already created 正式三事（176 余量）。176 initcode vs runtime bundled unbundling 完成（1439 item 3）。
+
+## 2026-09-18（续 1555）
+
+- 不变量 1438；语料 C1416；模式 name-the-icode-nottx-bar；反模式 icode-nottx-sold-as-bundled；L10.3 第 1407 条。填 L5.1 EIP-3860 create-tx-oversize not already CREATE-fail / not already 2681 / not already in-EVM 正式三事（176 余量）。176 initcode vs runtime bundled unbundling 续（1438 item 2）。
+
+## 2026-09-18（续 1554）
+
+- 不变量 1437；语料 C1415；模式 name-the-icode-not170-bar；反模式 icode-not170-sold-as-bundled；L10.3 第 1406 条。填 L5.1 EIP-3860 initcode-bound not already 170-runtime / not already 1014 / not already 176-bundled 正式三事（176 余量）。176 initcode vs runtime bundled unbundling 启动（1437 item 1）。
+
+## 2026-09-18（续 1553）
+
+- 不变量 1436；语料 C1414；模式 name-the-b2f-notapi-bar；反模式 b2f-notapi-sold-as-bundled；L10.3 第 1405 条。填 L5.1 EIP-152 fixed-input not already generic-hash-API / not already digest / not already 199 正式三事（230 余量）。230 blake2f vs hash bundled unbundling 完成（1436 item 3）。
+
+## 2026-09-18（续 1552）
+
+- 不变量 1435；语料 C1413；模式 name-the-b2f-notprod-bar；反模式 b2f-notprod-sold-as-bundled；L10.3 第 1404 条。填 L5.1 EIP-152 this-page not already Equihash / not already relay / not already privacy 正式三事（230 余量）。230 blake2f vs hash bundled unbundling 续（1435 item 2）。
+
+## 2026-09-18（续 1551）
+
+- 不变量 1434；语料 C1412；模式 name-the-b2f-nothash-bar；反模式 b2f-nothash-sold-as-bundled；L10.3 第 1403 条。填 L5.1 EIP-152 F not already BLAKE2b-hash / not already keccak / not already 230-bundled 正式三事（230 余量）。230 blake2f vs hash bundled unbundling 启动（1434 item 1）。
+
+## 2026-09-18（续 1550）
+
+- 不变量 1433；语料 C1411；模式 name-the-sbal-notwarm-bar；反模式 sbal-notwarm-sold-as-bundled；L10.3 第 1402 条。填 L5.1 EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）。229 selfbalance vs balance bundled unbundling 完成（1433 item 3）。
+
+## 2026-09-18（续 1549）
+
+- 不变量 1432；语料 C1410；模式 name-the-sbal-notself-bar；反模式 sbal-notself-sold-as-bundled；L10.3 第 1401 条。填 L5.1 EIP-1884 self-query not already self-priced / not already cheaper-BALANCE / not already 1884-done 正式三事（229 余量）。229 selfbalance vs balance bundled unbundling 续（1432 item 2）。
+
+## 2026-09-18（续 1548）
+
+- 不变量 1431；语料 C1409；模式 name-the-sbal-notbal-bar；反模式 sbal-notbal-sold-as-bundled；L10.3 第 1400 条。填 L5.1 EIP-1884 selfbalance not already BALANCE / not already stack-pop-balance / not already 229-bundled 正式三事（229 余量）。229 selfbalance vs balance bundled unbundling 启动（1431 item 1）。
+
+## 2026-09-18（续 1547）
+
+- 不变量 1430；语料 C1408；模式 name-the-bn128-notgen-bar；反模式 bn128-notgen-sold-as-bundled；L10.3 第 1399 条。填 L5.1 EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）。228 bn128-cut vs verify bundled unbundling 完成（1430 item 3）。
+
+## 2026-09-18（续 1546）
+
+- 不变量 1429；语料 C1407；模式 name-the-bn128-notsig-bar；反模式 bn128-notsig-sold-as-bundled；L10.3 第 1398 条。填 L5.1 EIP-1108 cheaper not already verifying / not already privacy-live / not already 2537 正式三事（228 余量）。228 bn128-cut vs verify bundled unbundling 续（1429 item 2）。
+
+## 2026-09-18（续 1545）
+
+- 不变量 1428；语料 C1406；模式 name-the-bn128-notalgo-bar；反模式 bn128-notalgo-sold-as-bundled；L10.3 第 1397 条。填 L5.1 EIP-1108 bn128-cut not already algo-changed / not already 196-197-readded / not already 228-bundled 正式三事（228 余量）。228 bn128-cut vs verify bundled unbundling 启动（1428 item 1）。
+
+## 2026-09-18（续 1544）
+
+- 不变量 1427；语料 C1405；模式 name-the-mexp-notmin-bar；反模式 mexp-notmin-sold-as-bundled；L10.3 第 1396 条。填 L5.1 EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）。227 modexp-price vs bound bundled unbundling 完成（1427 item 3）。
+
+## 2026-09-18（续 1543）
+
+- 不变量 1426；语料 C1404；模式 name-the-mexp-notiface-bar；反模式 mexp-notiface-sold-as-bundled；L10.3 第 1395 条。填 L5.1 EIP-2565 cheaper not already iface-changed / not already algo-changed / not already 206 正式三事（227 余量）。227 modexp-price vs bound bundled unbundling 续（1426 item 2）。
+
+## 2026-09-18（续 1542）
+
+- 不变量 1425；语料 C1403；模式 name-the-mexp-not198-bar；反模式 mexp-not198-sold-as-bundled；L10.3 第 1394 条。填 L5.1 EIP-2565 reprice not already 198-formula / not already 7823 / not already 227-bundled 正式三事（227 余量）。227 modexp-price vs bound bundled unbundling 启动（1425 item 1）。
+
+## 2026-09-18（续 1541）
+
+- 不变量 1424；语料 C1402；模式 name-the-cdcut-notsafe-bar；反模式 cdcut-notsafe-sold-as-bundled；L10.3 第 1393 条。填 L5.1 EIP-2028 cheaper not already no-delay / not already no-security-change / not already 197 正式三事（226 余量）。226 calldata-cut vs unlimited bundled unbundling 完成（1424 item 3）。
+
+## 2026-09-18（续 1540）
+
+- 不变量 1423；语料 C1401；模式 name-the-cdcut-notcap-bar；反模式 cdcut-notcap-sold-as-bundled；L10.3 第 1392 条。填 L5.1 EIP-2028 cheaper not already no-block-cap / not already DA-solved / not already 4844 正式三事（226 余量）。226 calldata-cut vs unlimited bundled unbundling 续（1423 item 2）。
+
+## 2026-09-18（续 1539）
+
+- 不变量 1422；语料 C1400；模式 name-the-cdcut-notzero-bar；反模式 cdcut-notzero-sold-as-bundled；L10.3 第 1391 条。填 L5.1 EIP-2028 nonzero-cut not already zero-cut / not already 7623 / not already 226-bundled 正式三事（226 余量）。226 calldata-cut vs unlimited bundled unbundling 启动（1422 item 1）。
+
+## 2026-09-18（续 1538）
+
+- 不变量 1421；语料 C1399；模式 name-the-nmet-notstip-bar；反模式 nmet-notstip-sold-as-bundled；L10.3 第 1390 条。填 L5.1 EIP-2200 stipend-ban not already stipend-writable / not already 1283-hole / not already 223 正式三事（225 余量）。225 net-meter vs transient bundled unbundling 完成（1421 item 3）。
+
+## 2026-09-18（续 1537）
+
+- 不变量 1420；语料 C1398；模式 name-the-nmet-notcur-bar；反模式 nmet-notcur-sold-as-bundled；L10.3 第 1389 条。填 L5.1 EIP-2200 orig-cur-new not already current-only / not already first-write / not already 2929 正式三事（225 余量）。225 net-meter vs transient bundled unbundling 续（1420 item 2）。
+
+## 2026-09-18（续 1536）
+
+- 不变量 1419；语料 C1397；模式 name-the-nmet-not1153-bar；反模式 nmet-not1153-sold-as-bundled；L10.3 第 1388 条。填 L5.1 EIP-2200 net-meter not already transient / not already 1153 / not already 225-bundled 正式三事（225 余量）。225 net-meter vs transient bundled unbundling 启动（1419 item 1）。
+
+## 2026-09-18（续 1535）
+
+- 不变量 1418；语料 C1396；模式 name-the-depre-notdone-bar；反模式 depre-notdone-sold-as-bundled；L10.3 第 1387 条。填 L5.1 EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）。224 deprecate vs changed bundled unbundling 完成（1418 item 3）。
+
+## 2026-09-18（续 1534）
+
+- 不变量 1417；语料 C1395；模式 name-the-depre-notcli-bar；反模式 depre-notcli-sold-as-bundled；L10.3 第 1386 条。填 L5.1 EIP-6049 meta-page not already client-changed / not already instruction-removed / not already 3529 正式三事（224 余量）。224 deprecate vs changed bundled unbundling 续（1417 item 2）。
+
+## 2026-09-18（续 1533）
+
+- 不变量 1416；语料 C1394；模式 name-the-depre-notcons-bar；反模式 depre-notcons-sold-as-bundled；L10.3 第 1385 条。填 L5.1 EIP-6049 deprecate-warn not already consensus-changed / not already 6780 / not already 224-bundled 正式三事（224 余量）。224 deprecate vs changed bundled unbundling 启动（1416 item 1）。
+
+## 2026-09-18（续 1532）
+
+- 不变量 1415；语料 C1393；模式 name-the-rfnd-notmid-bar；反模式 rfnd-notmid-sold-as-bundled；L10.3 第 1384 条。填 L5.1 EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）。223 refund vs gone bundled unbundling 完成（1415 item 3）。
+
+## 2026-09-18（续 1531）
+
+- 不变量 1414；语料 C1392；模式 name-the-rfnd-not6780-bar；反模式 rfnd-not6780-sold-as-bundled；L10.3 第 1383 条。填 L5.1 EIP-3529 drop-selfdestruct-refund not already 6780-semantics / not already 160 / not already 1559 正式三事（223 余量）。223 refund vs gone bundled unbundling 续（1414 item 2）。
+
+## 2026-09-18（续 1530）
+
+- 不变量 1413；语料 C1391；模式 name-the-rfnd-notgone-bar；反模式 rfnd-notgone-sold-as-bundled；L10.3 第 1382 条。填 L5.1 EIP-3529 refund-cut not already no-refund / not already 2200-rewritten / not already 223-bundled 正式三事（223 余量）。223 refund vs gone bundled unbundling 启动（1413 item 1）。
+
+## 2026-09-18（续 1529）
+
+- 不变量 1412；语料 C1390；模式 name-the-mcpy-notcd-bar；反模式 mcpy-notcd-sold-as-bundled；L10.3 第 1381 条。填 L5.1 EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）。216 MCOPY vs identity bundled unbundling 完成（1412 item 3）。
+
+## 2026-09-18（续 1528）
+
+- 不变量 1411；语料 C1389；模式 name-the-mcpy-notbuf-bar；反模式 mcpy-notbuf-sold-as-bundled；L10.3 第 1380 条。填 L5.1 EIP-5656 as-if-buffer not already real-alloc / not already DoS / not already 208 正式三事（216 余量）。216 MCOPY vs identity bundled unbundling 续（1411 item 2）。
+
+## 2026-09-18（续 1527）
+
+- 不变量 1410；语料 C1388；模式 name-the-mcpy-notid-bar；反模式 mcpy-notid-sold-as-bundled；L10.3 第 1379 条。填 L5.1 EIP-5656 MCOPY not already identity-precompile / not already 2929 / not already 216-bundled 正式三事（216 余量）。216 MCOPY vs identity bundled unbundling 启动（1410 item 1）。
+
+## 2026-09-18（续 1526）
+
+- 不变量 1409；语料 C1387；模式 name-the-psh0-notold-bar；反模式 psh0-notold-sold-as-bundled；L10.3 第 1378 条。填 L5.1 EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）。217 PUSH0 vs PUSH1 bundled unbundling 完成（1409 item 3）。
+
+## 2026-09-18（续 1525）
+
+- 不变量 1408；语料 C1386；模式 name-the-psh0-notjump-bar；反模式 psh0-notjump-sold-as-bundled；L10.3 第 1377 条。填 L5.1 EIP-3855 no-immediate not already jumpdest-changed / not already shared-impl / not already 5656 正式三事（217 余量）。217 PUSH0 vs PUSH1 bundled unbundling 续（1408 item 2）。
+
+## 2026-09-18（续 1524）
+
+- 不变量 1407；语料 C1385；模式 name-the-psh0-notimm-bar；反模式 psh0-notimm-sold-as-bundled；L10.3 第 1376 条。填 L5.1 EIP-3855 PUSH0 not already immediate-push0 / not already 216 / not already 217-bundled 正式三事（217 余量）。217 PUSH0 vs PUSH1 bundled unbundling 启动（1407 item 1）。
+
+## 2026-09-18（续 1523）
+
+- 不变量 1406；语料 C1384；模式 name-the-shft-notpack-bar；反模式 shft-notpack-sold-as-bundled；L10.3 第 1375 条。填 L5.1 EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）。231 SHIFT vs arithmetic bundled unbundling 完成（1406 item 3）。
+
+## 2026-09-18（续 1522）
+
+- 不变量 1405；语料 C1383；模式 name-the-shft-notsdiv-bar；反模式 shft-notsdiv-sold-as-bundled；L10.3 第 1374 条。填 L5.1 EIP-145 SAR not already signed-div / not already same-rounding / not already same-operand-order 正式三事（231 余量）。231 SHIFT vs arithmetic bundled unbundling 续（1405 item 2）。
+
+## 2026-09-18（续 1521）
+
+- 不变量 1404；语料 C1382；模式 name-the-shft-notarith-bar；反模式 shft-notarith-sold-as-bundled；L10.3 第 1373 条。填 L5.1 EIP-145 native-shift not already arith-composed / not already one-shift / not already 231-bundled 正式三事（231 余量）。231 SHIFT vs arithmetic bundled unbundling 启动（1404 item 1）。
+
+## 2026-09-18（续 1520）
+
+- 不变量 1403；语料 C1381；模式 name-the-bbfee-not4844-bar；反模式 bbfee-not4844-sold-as-bundled；L10.3 第 1372 条。填 L5.1 EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）。219 BLOBBASEFEE vs BASEFEE bundled unbundling 完成（1403 item 3）。
+
+## 2026-09-18（续 1519）
+
+- 不变量 1402；语料 C1380；模式 name-the-bbfee-notone-bar；反模式 bbfee-notone-sold-as-bundled；L10.3 第 1371 条。填 L5.1 EIP-7516 read-blobbasefee not already one-gas / not already 145-bundled / not already 201 正式三事（219 余量）。219 BLOBBASEFEE vs BASEFEE bundled unbundling 续（1402 item 2）。
+
+## 2026-09-18（续 1518）
+
+- 不变量 1401；语料 C1379；模式 name-the-bbfee-not3198-bar；反模式 bbfee-not3198-sold-as-bundled；L10.3 第 1370 条。填 L5.1 EIP-7516 BLOBBASEFEE opcode not already 3198-basefee / not already 218-bundled / not already 219-bundled 正式三事（219 余量）。219 BLOBBASEFEE vs BASEFEE bundled unbundling 启动（1401 item 1）。
+
+## 2026-09-18（续 1517）
+
+- 不变量 1400；语料 C1378；模式 name-the-bfee-nothdr-bar；反模式 bfee-nothdr-sold-as-bundled；L10.3 第 1369 条。填 L5.1 EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）。218 BASEFEE opcode vs market bundled unbundling 完成（1400 item 3）。
+
+## 2026-09-18（续 1516）
+
+- 不变量 1399；语料 C1377；模式 name-the-bfee-notprop-bar；反模式 bfee-notprop-sold-as-bundled；L10.3 第 1368 条。填 L5.1 EIP-3198 read-basefee not already paid-to-proposer / not already blob-basefee / not already 219 正式三事（218 余量）。218 BASEFEE opcode vs market bundled unbundling 续（1399 item 2）。
+
+## 2026-09-18（续 1515）
+
+- 不变量 1398；语料 C1376；模式 name-the-bfee-notmkt-bar；反模式 bfee-notmkt-sold-as-bundled；L10.3 第 1367 条。填 L5.1 EIP-3198 BASEFEE opcode not already 1559-market / not already 158-bundled / not already 218-bundled 正式三事（218 余量）。218 BASEFEE opcode vs market bundled unbundling 启动（1398 item 1）。
+
+## 2026-09-18（续 1514）
+
+- 不变量 1397；语料 C1375；模式 name-the-chid-notfork-bar；反模式 chid-notfork-sold-as-bundled；L10.3 第 1366 条。填 L5.1 EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）。220 CHAINID opcode vs signed bundled unbundling 完成（1397 item 3）。
+
+## 2026-09-18（续 1513）
+
+- 不变量 1396；语料 C1374；模式 name-the-chid-nottx-bar；反模式 chid-nottx-sold-as-bundled；L10.3 第 1365 条。填 L5.1 EIP-1344 config-chainid not already this-tx-155 / not already default-value / not already 161 正式三事（220 余量）。220 CHAINID opcode vs signed bundled unbundling 续（1396 item 2）。
+
+## 2026-09-18（续 1512）
+
+- 不变量 1395；语料 C1373；模式 name-the-chid-not155-bar；反模式 chid-not155-sold-as-bundled；L10.3 第 1364 条。填 L5.1 EIP-1344 CHAINID opcode not already 155-signed / not already JSON-chainId / not already 220-bundled 正式三事（220 余量）。220 CHAINID opcode vs signed bundled unbundling 启动（1395 item 1）。
+
+## 2026-09-18（续 1511）
+
+- 不变量 1394；语料 C1372；模式 name-the-xhash-notmiss-bar；反模式 xhash-notmiss-sold-as-bundled；L10.3 第 1363 条。填 L5.1 EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）。221 EXTCODEHASH vs copy bundled unbundling 完成（1394 item 3）。
+
+## 2026-09-18（续 1510）
+
+- 不变量 1393；语料 C1371；模式 name-the-xhash-notzero-bar；反模式 xhash-notzero-sold-as-bundled；L10.3 第 1362 条。填 L5.1 EIP-1052 return-0 not already no-code-account / not already empty-data-hash / not already 180 正式三事（221 余量）。221 EXTCODEHASH vs copy bundled unbundling 续（1393 item 2）。
+
+## 2026-09-18（续 1509）
+
+- 不变量 1392；语料 C1370；模式 name-the-xhash-notsee-bar；反模式 xhash-notsee-sold-as-bundled；L10.3 第 1361 条。填 L5.1 EIP-1052 code-hash opcode not already saw-code / not already EXTCODECOPY / not already 221-bundled 正式三事（221 余量）。221 EXTCODEHASH vs copy bundled unbundling 启动（1392 item 1）。
+
+## 2026-09-18（续 1508）
+
+- 不变量 1391；语料 C1369；模式 name-the-cr2-notover-bar；反模式 cr2-notover-sold-as-bundled；L10.3 第 1360 条。填 L5.1 EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）。222 CREATE2 salt-address vs created bundled unbundling 完成（1391 item 3）。
+
+## 2026-09-18（续 1507）
+
+- 不变量 1390；语料 C1368；模式 name-the-cr2-notexist-bar；反模式 cr2-notexist-sold-as-bundled；L10.3 第 1359 条。填 L5.1 EIP-1014 salt-address not already created / not already has-code / not already paid-create 正式三事（222 余量）。222 CREATE2 salt-address vs created bundled unbundling 续（1390 item 2）。
+
+## 2026-09-18（续 1506）
+
+- 不变量 1389；语料 C1367；模式 name-the-cr2-notcre-bar；反模式 cr2-notcre-sold-as-bundled；L10.3 第 1358 条。填 L5.1 EIP-1014 CREATE2 not already CREATE-nonce / not already sender-nonce / not already 222-bundled 正式三事（222 余量）。222 CREATE2 salt-address vs created bundled unbundling 启动（1389 item 1）。
+
+## 2026-09-18（续 1505）
+
+- 不变量 1388；语料 C1366；模式 name-the-rdata-not140-bar；反模式 rdata-not140-sold-as-bundled；L10.3 第 1357 条。填 L5.1 EIP-211 refetch-fail-data not already 140 / not already auto-sized-out / not already forwarder-product 正式三事（232 余量）。232 returndata buffer vs memory bundled unbundling 完成（1388 item 3）。
+
+## 2026-09-18（续 1504）
+
+- 不变量 1387；语料 C1365；模式 name-the-rdata-notcalld-bar；反模式 rdata-notcalld-sold-as-bundled；L10.3 第 1356 条。填 L5.1 EIP-211 this-page not already calldata / not already two-call-length / not already still-after-next 正式三事（232 余量）。232 returndata buffer vs memory bundled unbundling 续（1387 item 2）。
+
+## 2026-09-18（续 1503）
+
+- 不变量 1386；语料 C1364；模式 name-the-rdata-notmem-bar；反模式 rdata-notmem-sold-as-bundled；L10.3 第 1355 条。填 L5.1 EIP-211 returndata-buffer not already memory / not already CALL-out / not already 232-bundled 正式三事（232 余量）。232 returndata buffer vs memory bundled unbundling 启动（1386 item 1）。
+
+## 2026-09-18（续 1502）
+
+- 不变量 1385；语料 C1363；模式 name-the-stcall-notchg-bar；反模式 stcall-notchg-sold-as-bundled；L10.3 第 1354 条。填 L5.1 EIP-214 static-state-change not already applied / not already CALLCODE-value / not already 140 正式三事（178 余量）。178 STATICCALL flag vs view bundled unbundling 完成（1385 item 3）。
+
+## 2026-09-18（续 1501）
+
+- 不变量 1384；语料 C1362；模式 name-the-stcall-notxfer-bar；反模式 stcall-notxfer-sold-as-bundled；L10.3 第 1353 条。填 L5.1 EIP-214 zero-value-CALL not already static-flag / not already readonly / not already 214-bundled 正式三事（178 余量）。178 STATICCALL flag vs view bundled unbundling 续（1384 item 2）。
+
+## 2026-09-18（续 1500）
+
+- 不变量 1383；语料 C1361；模式 name-the-stcall-notview-bar；反模式 stcall-notview-sold-as-bundled；L10.3 第 1352 条。填 L5.1 EIP-214 static-frame not already high-level-view / not already compiler-readonly / not already 178-bundled 正式三事（178 余量）。178 STATICCALL flag vs view bundled unbundling 启动（1383 item 1）。
+
+## 2026-09-18（续 1499）
+
+- 不变量 1382；语料 C1360；模式 name-the-rvert-notdep-bar；反模式 rvert-notdep-sold-as-bundled；L10.3 第 1351 条。填 L5.1 EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）。177 REVERT leftover-gas vs burn bundled unbundling 完成（1382 item 3）。
+
+## 2026-09-18（续 1498）
+
+- 不变量 1381；语料 C1359；模式 name-the-rvert-notfee-bar；反模式 rvert-notfee-sold-as-bundled；L10.3 第 1350 条。填 L5.1 EIP-140 unpaid-self-fee not already leftover-semantics / not already 103 / not already free 正式三事（177 余量）。177 REVERT leftover-gas vs burn bundled unbundling 续（1381 item 2）。
+
+## 2026-09-18（续 1497）
+
+- 不变量 1380；语料 C1358；模式 name-the-rvert-notburn-bar；反模式 rvert-notburn-sold-as-bundled；L10.3 第 1349 条。填 L5.1 EIP-140 leftover-gas revert not already INVALID-burn / not already OOG-burn / not already 177-bundled 正式三事（177 余量）。177 REVERT leftover-gas vs burn bundled unbundling 启动（1380 item 1）。
+
+## 2026-09-18（续 1496）
+
+- 不变量 1379；语料 C1357；模式 name-the-dcall-not7702-bar；反模式 dcall-not7702-sold-as-bundled；L10.3 第 1348 条。填 L5.1 EIP-7 mutable-code-source not already 7702 / not already product-shipped / not already calldata-replica 正式三事（233 余量）。233 DELEGATECALL four objects bundled unbundling 完成（1379 item 3）。
+
+## 2026-09-18（续 1495）
+
+- 不变量 1378；语料 C1356；模式 name-the-dcall-notcall-bar；反模式 dcall-notcall-sold-as-bundled；L10.3 第 1347 条。填 L5.1 EIP-7 parent-sender not already CALL / not already stipend / not already creates-account 正式三事（233 余量）。233 DELEGATECALL four objects bundled unbundling 续（1378 item 2）。
+
+## 2026-09-18（续 1494）
+
+- 不变量 1377；语料 C1355；模式 name-the-dcall-notcode-bar；反模式 dcall-notcode-sold-as-bundled；L10.3 第 1346 条。填 L5.1 EIP-7 DELEGATECALL not already CALLCODE / not already same-sender-CALLCODE / not already 233-bundled 正式三事（233 余量）。233 DELEGATECALL four objects bundled unbundling 启动（1377 item 1）。
+
+## 2026-09-18（续 1493）
+
+- 不变量 1376；语料 C1354；模式 name-the-viaext-notloc-bar；反模式 viaext-notloc-sold-as-bundled；L10.3 第 1345 条。填 L4.4 ViAvail ExtendedVoteInfo from local process not already typically-from-block / not already Process VoteInfo / not already 425-flag 正式三事（442 余量）。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 完成（1376 item 3）。
+
+## 2026-09-18（续 1492）
+
+- 不变量 1375；语料 C1353；模式 name-the-viaext-notblk-bar；反模式 viaext-notblk-sold-as-bundled；L10.3 第 1344 条。填 L4.4 ViAvail VoteInfo typically from block not already local-process / not already Prepare ExtendedVoteInfo / not already 369-path 正式三事（442 余量）。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 续（1375 item 2）。
+
+## 2026-09-18（续 1491）
+
+- 不变量 1374；语料 C1352；模式 name-the-viaext-notrew-bar；反模式 viaext-notrew-sold-as-bundled；L10.3 第 1343 条。填 L4.4 ViAvail availability same-sentence not already rewarded / not already settled / not already Finalize-computed 正式三事（442 余量）。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 启动（1374 item 1）。
+
+## 2026-09-18（续 1490）
+
+- 不变量 1373；语料 C1351；模式 name-the-valuse-notprep-bar；反模式 valuse-notprep-sold-as-bundled；L10.3 第 1342 条。填 L4.4 ValUse Prepare ExtendedCommitInfo Validator not already Process-Finalize CommitInfo / not already interchangeable / not already 369-extract 正式三事（449 余量）。449 Validator Usage four-gate mapping bundled unbundling 完成（1373 item 3）。
+
+## 2026-09-18（续 1489）
+
+- 不变量 1372；语料 C1350；模式 name-the-valuse-notfin-bar；反模式 valuse-notfin-sold-as-bundled；L10.3 第 1341 条。填 L4.4 ValUse Finalize decided_last_commit Validator not already Process proposed / not already settled / not already Prepare-ext 正式三事（449 余量）。449 Validator Usage four-gate mapping bundled unbundling 续（1372 item 2）。
+
+## 2026-09-18（续 1488）
+
+- 不变量 1371；语料 C1349；模式 name-the-valuse-notproc-bar；反模式 valuse-notproc-sold-as-bundled；L10.3 第 1340 条。填 L4.4 ValUse Process CommitInfo Validator not already Prepare ExtendedCommitInfo / not already local_last_commit / not already 364-pubkey 正式三事（449 余量）。449 Validator Usage four-gate mapping bundled unbundling 启动（1371 item 1）。
+
+## 2026-09-18（续 1487）
+
+- 不变量 1370；语料 C1348；模式 name-the-prepev-notfin-bar；反模式 prepev-notfin-sold-as-bundled；L10.3 第 1339 条。填 L4.4 PrepEv pass via FinalizeBlockResponse not already CheckTx events / not already ExecTxResult events / not already LastResultsHash 正式三事（448 余量）。448 Prepare events retention until Finalize bundled unbundling 完成（1370 item 3）。
+
+## 2026-09-18（续 1486）
+
+- 不变量 1369；语料 C1347；模式 name-the-prepev-notkeep-bar；反模式 prepev-notkeep-sold-as-bundled；L10.3 第 1338 条。填 L4.4 PrepEv MUST keep until decided not already handed at Process / not already discarded-on-REJECT / not already settled 正式三事（448 余量）。448 Prepare events retention until Finalize bundled unbundling 续（1369 item 2）。
+
+## 2026-09-18（续 1485）
+
+- 不变量 1368；语料 C1346；模式 name-the-prepev-notret-bar；反模式 prepev-notret-sold-as-bundled；L10.3 第 1337 条。填 L4.4 PrepEv Prepare MAY produce events not already in PrepareProposalResponse / not already engine-received / not already 357-checked 正式三事（448 余量）。448 Prepare events retention until Finalize bundled unbundling 启动（1368 item 1）。
+
+## 2026-09-18（续 1484）
+
+- 不变量 1367；语料 C1345；模式 name-the-eviuse-nottwo-bar；反模式 eviuse-nottwo-sold-as-bundled；L10.3 第 1336 条。填 L4.4 ExtViUse two sigs when enabled empty-slice if no non_rp not already one-sig / not already no-second / not already 358-replay 正式三事（447 余量）。447 ExtendedVoteInfo Usage expose signature bundled unbundling 完成（1367 item 3）。
+
+## 2026-09-18（续 1483）
+
+- 不变量 1366；语料 C1344；模式 name-the-eviuse-notexp-bar；反模式 eviuse-notexp-sold-as-bundled；L10.3 第 1335 条。填 L4.4 ExtViUse extension_signature exposed for further processing not already app-verified / not already Verify / not already 421-handed 正式三事（447 余量）。447 ExtendedVoteInfo Usage expose signature bundled unbundling 续（1366 item 2）。
+
+## 2026-09-18（续 1482）
+
+- 不变量 1365；语料 C1343；模式 name-the-eviuse-notapp-bar；反模式 eviuse-notapp-sold-as-bundled；L10.3 第 1334 条。填 L4.4 ExtViUse vote_extension engine-verified can-be-empty not already app-verified / not already must-fill / not already Accept 正式三事（447 余量）。447 ExtendedVoteInfo Usage expose signature bundled unbundling 启动（1365 item 1）。
+
+## 2026-09-18（续 1481）
+
+- 不变量 1364；语料 C1342；模式 name-the-etxev-notlvl-bar；反模式 etxev-notlvl-sold-as-bundled；L10.3 第 1333 条。填 L4.4 ExecTxEv per-tx events in tx_results not already block-level 431 / not already CheckTx 381 / not already interchangeable 正式三事（446 余量）。446 ExecTxResult events vs header bundled unbundling 完成（1364 item 3）。
+
+## 2026-09-18（续 1480）
+
+- 不变量 1363；语料 C1341；模式 name-the-etxev-notdet-bar；反模式 etxev-notdet-sold-as-bundled；L10.3 第 1332 条。填 L4.4 ExecTxEv tx events marked non-deterministic not already consensus-field / not already hashed / not already 316-det 正式三事（446 余量）。446 ExecTxResult events vs header bundled unbundling 续（1363 item 2）。
+
+## 2026-09-18（续 1479）
+
+- 不变量 1362；语料 C1340；模式 name-the-etxev-notidx-bar；反模式 etxev-notidx-sold-as-bundled；L10.3 第 1331 条。填 L4.4 ExecTxEv tx events are index kv not already LastResultsHash / not already Code-Data-det / not already in-header 正式三事（446 余量）。446 ExecTxResult events vs header bundled unbundling 启动（1362 item 1）。
+
+## 2026-09-18（续 1478）
+
+- 不变量 1361；语料 C1339；模式 name-the-cifields-notnts-bar；反模式 cifields-notnts-sold-as-bundled；L10.3 第 1330 条。填 L4.4 CiFields Fields column not already Notes order / not already 444-bundled / not already 365-rewards 正式三事（445 余量）。445 CommitInfo Fields round-and-votes bundled unbundling 完成（1361 item 3）。
+
+## 2026-09-18（续 1477）
+
+- 不变量 1360；语料 C1338；模式 name-the-cifields-notlst-bar；反模式 cifields-notlst-sold-as-bundled；L10.3 第 1329 条。填 L4.4 CiFields votes is last-set voting-info not already in-block / not already settled / not already 444-notes-order 正式三事（445 余量）。445 CommitInfo Fields round-and-votes bundled unbundling 续（1360 item 2）。
+
+## 2026-09-18（续 1476）
+
+- 不变量 1359；语料 C1337；模式 name-the-cifields-notrnd-bar；反模式 cifields-notrnd-sold-as-bundled；L10.3 第 1328 条。填 L4.4 CiFields round is commit-round not already voting-power-ordered / not already slashed / not already 394-ext-round 正式三事（445 余量）。445 CommitInfo Fields round-and-votes bundled unbundling 启动（1359 item 1）。
+
+## 2026-09-18（续 1475）
+
+- 不变量 1358；语料 C1336；模式 name-the-extcnotes-notload-bar；反模式 extcnotes-notload-sold-as-bundled；L10.3 第 1327 条。填 L4.4 ExtCiNotes rebuild ExtendedCommitInfo from store not already extracted-from-block / not already 365-path / not already 444-cinotes 正式三事（441 余量）。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 完成（1358 item 3）。
+
+## 2026-09-18（续 1474）
+
+- 不变量 1357；语料 C1335；模式 name-the-extcnotes-noteng-bar；反模式 extcnotes-noteng-sold-as-bundled；L10.3 第 1326 条。填 L4.4 ExtCiNotes engine guarantees and persists ext order not already app-sorted / not already recv-order / not already Prepare-decided 正式三事（441 余量）。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 续（1357 item 2）。
+
+## 2026-09-18（续 1473）
+
+- 不变量 1356；语料 C1334；模式 name-the-extcnotes-notord-bar；反模式 extcnotes-notord-sold-as-bundled；L10.3 第 1325 条。填 L4.4 ExtCiNotes ext votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（441 余量）。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 启动（1356 item 1）。
+
+## 2026-09-18（续 1472）
+
+- 不变量 1355；语料 C1333；模式 name-the-cinotes-notstore-bar；反模式 cinotes-notstore-sold-as-bundled；L10.3 第 1324 条。填 L4.4 CiNotes rebuild CommitInfo from store not already extracted-from-block / not already 365-path / not already extcinotes 正式三事（444 余量）。444 CommitInfo Notes vote-power order bundled unbundling 完成（1355 item 3）。
+
+## 2026-09-18（续 1471）
+
+- 不变量 1354；语料 C1332；模式 name-the-cinotes-notapp-bar；反模式 cinotes-notapp-sold-as-bundled；L10.3 第 1323 条。填 L4.4 CiNotes engine guarantees and persists order not already app-sorted / not already recv-order / not already Process-decided 正式三事（444 余量）。444 CommitInfo Notes vote-power order bundled unbundling 续（1354 item 2）。
+
+## 2026-09-18（续 1470）
+
+- 不变量 1353；语料 C1331；模式 name-the-cinotes-notblk-bar；反模式 cinotes-notblk-sold-as-bundled；L10.3 第 1322 条。填 L4.4 CiNotes votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（444 余量）。444 CommitInfo Notes vote-power order bundled unbundling 启动（1353 item 1）。
+
+## 2026-09-18（续 1469）
+
+- 不变量 1352；语料 C1330；模式 name-the-eappgen-notbcast-bar；反模式 eappgen-notbcast-sold-as-bundled；L10.3 第 1321 条。填 L4.4 ExtAppGen will-be-signed attached-to-Precommit not already broadcast / not already last_commit / not already 438-bundled 正式三事（439 余量）。439 ExtendVote Response application-generated will-be-signed bundled unbundling 完成（1352 item 3）。
+
+## 2026-09-18（续 1468）
+
+- 不变量 1351；语料 C1329；模式 name-the-eappgen-notnrp-bar；反模式 eappgen-notnrp-sold-as-bundled；L10.3 第 1320 条。填 L4.4 ExtAppGen appgen non_rp will-be-signed-attached no-replay-prot not already same-sign / not already 358-raw / not already replay-prot 正式三事（439 余量）。439 ExtendVote Response application-generated will-be-signed bundled unbundling 续（1351 item 2）。
+
+## 2026-09-18（续 1467）
+
+- 不变量 1350；语料 C1328；模式 name-the-eappgen-notsig-bar；反模式 eappgen-notsig-sold-as-bundled；L10.3 第 1319 条。填 L4.4 ExtAppGen appgen vote_extension will-be-signed not already signed / not already 418-wrap / not already attached 正式三事（439 余量）。439 ExtendVote Response application-generated will-be-signed bundled unbundling 启动（1350 item 1）。
+
 ## 2026-09-18（续 1466）
 
 - 不变量 1349；语料 C1327；模式 name-the-hstead-notbomb-bar；反模式 hstead-notbomb-sold-as-bundled；L10.3 第 1318 条。填 L5.1 EIP-2 diff-mean not already bomb-gone / not already bomb-delay / not already 234-bundled 正式四事（234 余量）。234 Homestead 硬分叉四件事 bundled unbundling 完成（1349 item 4）。

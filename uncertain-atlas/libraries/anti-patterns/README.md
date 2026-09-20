@@ -1,3 +1,222 @@
+- [`tpsm-notmin-sold-as-bundled.md`](tpsm-notmin-sold-as-bundled.md) — MINIMALIF 被写成已经只是 P2WSH 策略 / 就已经是 191 / 就已经是 144（不变量 1559）
+- [`tpsm-notdone-sold-as-bundled.md`](tpsm-notdone-sold-as-bundled.md) — 遇见成功操作码 被写成已经执行完 / 就已经安全升级 / 就已经 189 bundled（不变量 1558）
+- [`tpsm-notsem-sold-as-bundled.md`](tpsm-notsem-sold-as-bundled.md) — 走脚本路径 被写成已经是 tapscript 语义 / 就已经是 153 / 就已经 189 bundled（不变量 1557）
+- [`kpsp-notlook-sold-as-bundled.md`](kpsp-notlook-sold-as-bundled.md) — Taproot 输出 被写成已经分辨付款给钥还是付款给脚本 / 就已经是 170 / 就已经是 174（不变量 1556）
+- [`kpsp-notall-sold-as-bundled.md`](kpsp-notall-sold-as-bundled.md) — 脚本路径 被写成已经揭开全部脚本 / 就已经是 189 / 就已经是 152（不变量 1555）
+- [`kpsp-notree-sold-as-bundled.md`](kpsp-notree-sold-as-bundled.md) — 钥匙路径 被写成已经揭开有没有脚本树 / 就已经是 189 / 就已经 153 bundled（不变量 1554）
+- [`twid-notmer-sold-as-bundled.md`](twid-notmer-sold-as-bundled.md) — 头上的 txid Merkle 被写成已经承诺 wtxid / 就已经是 145 / 就已经是 174（不变量 1553）
+- [`twid-notchg-sold-as-bundled.md`](twid-notchg-sold-as-bundled.md) — 改见证 被写成已经改 txid / 就已经是 144 / 就已经是 12（不变量 1552）
+- [`twid-noteq-sold-as-bundled.md`](twid-noteq-sold-as-bundled.md) — txid 被写成已经是 wtxid / 就已经是 248 / 就已经 152 bundled（不变量 1551）
+- [`sder-notpol-sold-as-bundled.md`](sder-notpol-sold-as-bundled.md) — 转发策略已经要 DER 被写成共识已经要 / 就已经是 144 / 就已经是 171（不变量 1550）
+- [`sder-notlib-sold-as-bundled.md`](sder-notlib-sold-as-bundled.md) — 库接受某种变形 被写成共识已经接受 / 就已经是 3 / 就已经是 152（不变量 1549）
+- [`sder-notmath-sold-as-bundled.md`](sder-notmath-sold-as-bundled.md) — ECDSA 验得过 被写成已经是严格 DER / 就已经是 144 / 就已经 172 bundled（不变量 1548）
+- [`vb9-notfail-sold-as-bundled.md`](vb9-notfail-sold-as-bundled.md) — 超时未锁定 被写成已经可以当激活 / 就已经是 173 / 就已经是 144（不变量 1547）
+- [`vb9-notact-sold-as-bundled.md`](vb9-notact-sold-as-bundled.md) — LOCKED_IN 被写成已经激活 / 就已经是 165 / 就已经是 41（不变量 1546）
+- [`vb9-notlock-sold-as-bundled.md`](vb9-notlock-sold-as-bundled.md) — 版本位被置上 被写成已经锁定 / 就已经是 173 / 就已经 171 bundled（不变量 1545）
+- [`cbht-notmat-sold-as-bundled.md`](cbht-notmat-sold-as-bundled.md) — 写了高度 被写成 coinbase 已经能花 / 就已经是 163 / 就已经是 144（不变量 1544）
+- [`cbht-notv9-sold-as-bundled.md`](cbht-notv9-sold-as-bundled.md) — 块 version 加大 被写成已经按 BIP-9 激活 / 就已经是 171 / 就已经是 172（不变量 1543）
+- [`cbht-nothdr-sold-as-bundled.md`](cbht-nothdr-sold-as-bundled.md) — coinbase 第一项写了高度 被写成头上已经有高度字段 / 就已经是 171 / 就已经 173 bundled（不变量 1542）
+- [`b32m-notutx-sold-as-bundled.md`](b32m-notutx-sold-as-bundled.md) — 看见后继地址串 被写成已经有 UTXO / 就已经是 174 / 就已经是 153（不变量 1541）
+- [`b32m-notv0-sold-as-bundled.md`](b32m-notv0-sold-as-bundled.md) — 更高版本过了旧校验 被写成已经合法 / 就已经是 174 / 就已经是 152（不变量 1540）
+- [`b32m-notold-sold-as-bundled.md`](b32m-notold-sold-as-bundled.md) — 后继校验过了 被写成已经是旧校验地址 / 就已经是 174 / 就已经 181 bundled（不变量 1539）
+- [`adut-notpay-sold-as-bundled.md`](adut-notpay-sold-as-bundled.md) — 编出版本和程序 被写成已经付过款 / 就已经是 179 / 就已经是 181（不变量 1538）
+- [`adut-notchk-sold-as-bundled.md`](adut-notchk-sold-as-bundled.md) — 校验过 被写成见证程序已经上链 / 就已经是 170 / 就已经是 152（不变量 1537）
+- [`adut-notout-sold-as-bundled.md`](adut-notout-sold-as-bundled.md) — Bech32 地址串 被写成已经有链上输出 / 就已经是 181 / 就已经 174 bundled（不变量 1536）
+- [`phsh-notinr-sold-as-bundled.md`](phsh-notinr-sold-as-bundled.md) — 哈希对上 被写成内层已经验过 / 就已经是 152 / 就已经是 297（不变量 1535）
+- [`phsh-notrun-sold-as-bundled.md`](phsh-notrun-sold-as-bundled.md) — 旧节点 EQUAL 通过 被写成新节点已经再跑 / 就已经是 153 / 就已经是 144（不变量 1534）
+- [`phsh-notrev-sold-as-bundled.md`](phsh-notrev-sold-as-bundled.md) — 付给脚本哈希 被写成已经揭开赎回 / 就已经是 297 / 就已经 170 bundled（不变量 1533）
+- [`cl65-notclk-sold-as-bundled.md`](cl65-notclk-sold-as-bundled.md) — CLTV 比 nLockTime 被写成已经在跟墙上现在比 / 就已经是 41 / 就已经是 165（不变量 1532）
+- [`cl65-notnow-sold-as-bundled.md`](cl65-notnow-sold-as-bundled.md) — nLockTime 将来能花 被写成已经证明现在不能花 / 就已经是 163 / 就已经是 41（不变量 1531）
+- [`cl65-notfld-sold-as-bundled.md`](cl65-notfld-sold-as-bundled.md) — 脚本里的 CLTV 被写成 nLockTime 已经锁住输出 / 就已经是 165 / 就已经 164 bundled（不变量 1530）
+- [`csvd-notdep-sold-as-bundled.md`](csvd-notdep-sold-as-bundled.md) — CSV 部署名 被写成已经是操作码 / 就已经是 41 / 就已经是 164（不变量 1529）
+- [`csvd-notabs-sold-as-bundled.md`](csvd-notabs-sold-as-bundled.md) — 相对锁 被写成已经是绝对锁 / 就已经是 164 / 就已经是 163（不变量 1528）
+- [`csvd-notseq-sold-as-bundled.md`](csvd-notseq-sold-as-bundled.md) — 脚本里的 CSV 被写成 nSequence 已经相对锁住 / 就已经是 164 / 就已经 165 bundled（不变量 1527）
+- [`rbfs-notjoin-sold-as-bundled.md`](rbfs-notjoin-sold-as-bundled.md) — 子孙继承信号 被写成已经明示加入 / 就已经是 144 / 就已经是 165（不变量 1526）
+- [`rbfs-notlock-sold-as-bundled.md`](rbfs-notlock-sold-as-bundled.md) — nSequence示意 被写成已经是相对锁 / 就已经是 165 / 就已经是 164（不变量 1525）
+- [`rbfs-notrep-sold-as-bundled.md`](rbfs-notrep-sold-as-bundled.md) — 选择加入替换信号 被写成已经换掉 / 就已经是 144 / 就已经 166 bundled（不变量 1524）
+- [`polc-notfee-sold-as-bundled.md`](polc-notfee-sold-as-bundled.md) — 费率高 被写成已经更正确 / 就已经是 245 / 就已经是 44（不变量 1523）
+- [`polc-notblk-sold-as-bundled.md`](polc-notblk-sold-as-bundled.md) — 策略通过 被写成已经进块 / 就已经是 25 / 就已经是 166（不变量 1522）
+- [`polc-notill-sold-as-bundled.md`](polc-notill-sold-as-bundled.md) — 策略拒绝 被写成已经共识非法 / 就已经是 44 / 就已经 144 bundled（不变量 1521）
+- [`asv-notws-sold-as-bundled.md`](asv-notws-sold-as-bundled.md) — assumevalid 被写成已经是弱主观 / 就已经是 24 / 就已经是 23（不变量 1520）
+- [`asv-notutxo-sold-as-bundled.md`](asv-notutxo-sold-as-bundled.md) — assumevalid 被写成已经是 assumeutxo / 就已经是 38 / 就已经是 207（不变量 1519）
+- [`asv-notchk-sold-as-bundled.md`](asv-notchk-sold-as-bundled.md) — assumevalid 被写成已经旧 checkpoint 强迫链 / 就已经是 24 / 就已经 25 bundled（不变量 1518）
+- [`kdas-notperm-sold-as-bundled.md`](kdas-notperm-sold-as-bundled.md) — 承诺哈希 被写成已经永存 / 就已经是 145 / 就已经是 9（不变量 1517）
+- [`kdas-notcel-sold-as-bundled.md`](kdas-notcel-sold-as-bundled.md) — PeerDAS 被写成已经是 Celestia 二维 DAS / 就已经是 124 / 就已经是 200（不变量 1516）
+- [`kdas-notpeer-sold-as-bundled.md`](kdas-notpeer-sold-as-bundled.md) — KZG sidecar 被写成已经是 PeerDAS / 就已经是 145 / 就已经 23 bundled（不变量 1515）
+- [`nmtd-notenc-sold-as-bundled.md`](nmtd-notenc-sold-as-bundled.md) — DAS抽样过关 被写成已经编码诚实 / 就已经是 23 / 就已经是 142（不变量 1514）
+- [`nmtd-notblob-sold-as-bundled.md`](nmtd-notblob-sold-as-bundled.md) — DAS抽样过关 被写成已经拿到自己的blob / 就已经是 142 / 就已经是 9（不变量 1513）
+- [`nmtd-notsq-sold-as-bundled.md`](nmtd-notsq-sold-as-bundled.md) — NMT命名空间齐了 被写成已经整块可用 / 就已经是 23 / 就已经 124 bundled（不变量 1512）
+- [`dcert-notonly-sold-as-bundled.md`](dcert-notonly-sold-as-bundled.md) — 回退贴全文 被写成已经只走委员会 / 就已经是 141 / 就已经是 23（不变量 1511）
+- [`dcert-notroll-sold-as-bundled.md`](dcert-notroll-sold-as-bundled.md) — AnyTrust 被写成已经是 Rollup DA / 就已经是 124 / 就已经是 9（不变量 1510）
+- [`dcert-notpost-sold-as-bundled.md`](dcert-notpost-sold-as-bundled.md) — DACert 被写成已经贴上全文 / 就已经是 23 / 就已经 142 bundled（不变量 1509）
+- [`proot-notperm-sold-as-bundled.md`](proot-notperm-sold-as-bundled.md) — 环缓冲过期 被写成已经永久可查 / 就已经是 195 / 就已经是 145（不变量 1508）
+- [`proot-notfin-sold-as-bundled.md`](proot-notfin-sold-as-bundled.md) — 合约读到的根 被写成已经 finalized / 就已经是 149 / 就已经是 154（不变量 1507）
+- [`proot-nothead-sold-as-bundled.md`](proot-nothead-sold-as-bundled.md) — 父信标根 被写成已经是当前头 / 就已经是 127 / 就已经 156 bundled（不变量 1506）
+- [`bpof-notver-sold-as-bundled.md`](bpof-notver-sold-as-bundled.md) — 摘要掺进上限 被写成已经换了版本号 / 就已经是 200 / 就已经是 207（不变量 1505）
+- [`bpof-notcfg-sold-as-bundled.md`](bpof-notcfg-sold-as-bundled.md) — 配置里的blob日程 被写成已经不需要分叉 / 就已经是 201 / 就已经是 23（不变量 1504）
+- [`bpof-notexec-sold-as-bundled.md`](bpof-notexec-sold-as-bundled.md) — BPO专用分叉 被写成已经改了执行 / 就已经是 200 / 就已经 209 bundled（不变量 1503）
+- [`hhash-notsem-sold-as-bundled.md`](hhash-notsem-sold-as-bundled.md) — 合约更长窗 被写成已经改了操作码 / 就已经是 156 / 就已经是 207（不变量 1502）
+- [`hhash-notfill-sold-as-bundled.md`](hhash-notfill-sold-as-bundled.md) — 系统写入父哈希 被写成已经填满窗口 / 就已经是 169 / 就已经是 157（不变量 1501）
+- [`hhash-notbh-sold-as-bundled.md`](hhash-notbh-sold-as-bundled.md) — 状态历史哈希 被写成已经是 BLOCKHASH / 就已经是 156 / 就已经 195 bundled（不变量 1500）
+- [`bres-notsch-sold-as-bundled.md`](bres-notsch-sold-as-bundled.md) — 不算目标 被写成已经改了日程 / 就已经是 200 / 就已经是 23（不变量 1499）
+- [`bres-notgone-sold-as-bundled.md`](bres-notgone-sold-as-bundled.md) — 执行费主导 被写成已经没有blob价 / 就已经是 158 / 就已经是 197（不变量 1498）
+- [`bres-notacct-sold-as-bundled.md`](bres-notacct-sold-as-bundled.md) — blob底价 被写成已经并成一套气 / 就已经是 145 / 就已经 201 bundled（不变量 1497）
+- [`bsch-notel-sold-as-bundled.md`](bsch-notel-sold-as-bundled.md) — 共识层换名 被写成已经是执行层激活 / 就已经更安全 / 就已经是 145（不变量 1496）
+- [`bsch-notratio-sold-as-bundled.md`](bsch-notratio-sold-as-bundled.md) — 新目标上限比 被写成已经还是旧对称 / 就已经是 23 / 就已经是 197（不变量 1495）
+- [`bsch-notgas-sold-as-bundled.md`](bsch-notgas-sold-as-bundled.md) — 抬高日程 被写成已经改了气种拆分 / 就已经是 145 / 就已经 200 bundled（不变量 1494）
+- [`blgas-notperm-sold-as-bundled.md`](blgas-notperm-sold-as-bundled.md) — 付了blob fee 被写成已经永存 / 就已经更安全 / 就已经是 101（不变量 1493）
+- [`blgas-notbyte-sold-as-bundled.md`](blgas-notbyte-sold-as-bundled.md) — BLOBHASH 被写成已经读到袋里字节 / 就已经是 197 / 就已经是 201（不变量 1492）
+- [`blgas-notexec-sold-as-bundled.md`](blgas-notexec-sold-as-bundled.md) — blob gas 被写成已经是普通执行气 / 就已经是 23 / 就已经 145 bundled（不变量 1491）
+- [`hwin-notsync-sold-as-bundled.md`](hwin-notsync-sold-as-bundled.md) — 握手无总难度 被写成已经能判断同步 / 就已经更安全 / 就已经是 167（不变量 1490）
+- [`hwin-notenc-sold-as-bundled.md`](hwin-notenc-sold-as-bundled.md) — 线上无布隆 被写成已经改了共识收据 / 就已经是 25 / 就已经是 195（不变量 1489）
+- [`hwin-notcons-sold-as-bundled.md`](hwin-notcons-sold-as-bundled.md) — 历史窗宣布 被写成已经改了共识历史 / 就已经是 23 / 就已经 207 bundled（不变量 1488）
+- [`bfmkt-notmev-sold-as-bundled.md`](bfmkt-notmev-sold-as-bundled.md) — 烧掉 被写成已经解决MEV / 就已经更安全 / 就已经是 144（不变量 1487）
+- [`bfmkt-notmkt-sold-as-bundled.md`](bfmkt-notmkt-sold-as-bundled.md) — 弹性块大小 被写成已经齐 / 就已经是 101 / 就已经是 27（不变量 1486）
+- [`bfmkt-notpay-sold-as-bundled.md`](bfmkt-notpay-sold-as-bundled.md) — 基础费烧掉 被写成已经给了出块者 / 就已经是 145 / 就已经 158 bundled（不变量 1485）
+- [`lkah-notpc-sold-as-bundled.md`](lkah-notpc-sold-as-bundled.md) — 前瞻名单 被写成已经是预确认 / 就已经更安全 / 就已经是 134（不变量 1484）
+- [`lkah-notbal-sold-as-bundled.md`](lkah-notbal-sold-as-bundled.md) — 余额还能变 被写成已经排完 / 就已经是 196 / 就已经是 27（不变量 1483）
+- [`lkah-notlock-sold-as-bundled.md`](lkah-notlock-sold-as-bundled.md) — 种子已知 被写成已经锁死日程 / 就已经是 157 / 就已经 205 bundled（不变量 1482）
+- [`exdom-notloss-sold-as-bundled.md`](exdom-notloss-sold-as-bundled.md) — 两边能重放 被写成已经丢资金 / 就已经更安全 / 就已经是 6（不变量 1481）
+- [`exdom-notel-sold-as-bundled.md`](exdom-notel-sold-as-bundled.md) — 域锁 被写成已经改了执行层 / 就已经是 154 / 就已经是 192（不变量 1480）
+- [`exdom-notperm-sold-as-bundled.md`](exdom-notperm-sold-as-bundled.md) — 签过的自愿退出 被写成已经永远有效 / 就已经是 193 / 就已经 213 bundled（不变量 1479）
+- [`blal-notrun-sold-as-bundled.md`](blal-notrun-sold-as-bundled.md) — 事后状态差 被写成已经不跑交易 / 就已经更安全 / 就已经是 96（不变量 1478）
+- [`blal-not2930-sold-as-bundled.md`](blal-not2930-sold-as-bundled.md) — 强制名单 被写成已经是 2930 / 就已经是 143 / 就已经是 122（不变量 1477）
+- [`blal-notpar-sold-as-bundled.md`](blal-notpar-sold-as-bundled.md) — 块级访问名单 被写成已经并行跑完 / 就已经是 168 / 就已经 212 bundled（不变量 1476）
+- [`mxbd-notevm-sold-as-bundled.md`](mxbd-notevm-sold-as-bundled.md) — 长度有界 被写成已经换成EVM / 就已经更安全 / 就已经是 199（不变量 1475）
+- [`mxbd-notok-sold-as-bundled.md`](mxbd-notok-sold-as-bundled.md) — 超帽 被写成已经成功返回 / 就已经是 177 / 就已经是 204（不变量 1474）
+- [`mxbd-notprice-sold-as-bundled.md`](mxbd-notprice-sold-as-bundled.md) — 输入长度帽 被写成已经改了计价 / 就已经是 227 / 就已经 206 bundled（不变量 1473）
+- [`clz-notctz-sold-as-bundled.md`](clz-notctz-sold-as-bundled.md) — 能表达最低位 被写成已经有数尾零 / 就已经更安全 / 就已经是 206（不变量 1472）
+- [`clz-notpq-sold-as-bundled.md`](clz-notpq-sold-as-bundled.md) — 动机写了后量子 被写成已经有后量子签名 / 就已经是 199 / 就已经是 204（不变量 1471）
+- [`clz-notzk-sold-as-bundled.md`](clz-notzk-sold-as-bundled.md) — 数前导零 被写成已经更便宜的ZK / 就已经是 206 / 就已经 208 bundled（不变量 1470）
+- [`cflr-notburn-sold-as-bundled.md`](cflr-notburn-sold-as-bundled.md) — 预留地板气限 被写成已经烧到地板 / 就已经更安全 / 就已经是 101（不变量 1469）
+- [`cflr-notxfer-sold-as-bundled.md`](cflr-notxfer-sold-as-bundled.md) — 数据为主更贵 被写成已经让普通转账更贵 / 就已经是 158 / 就已经是 226（不变量 1468）
+- [`cflr-notexec-sold-as-bundled.md`](cflr-notexec-sold-as-bundled.md) — calldata地板 被写成已经改了执行气 / 就已经是 145 / 就已经 197 bundled（不变量 1467）
+- [`rcap-notone-sold-as-bundled.md`](rcap-notone-sold-as-bundled.md) — 给信标留边 被写成已经并成一份编码 / 就已经更安全 / 就已经是 101（不变量 1466）
+- [`rcap-notprop-sold-as-bundled.md`](rcap-notprop-sold-as-bundled.md) — 流言不传 被写成已经让执行层非法 / 就已经是 96 / 就已经是 158（不变量 1465）
+- [`rcap-notgas-sold-as-bundled.md`](rcap-notgas-sold-as-bundled.md) — RLP编码硬帽 被写成已经改了气限 / 就已经是 197 / 就已经 202 bundled（不变量 1464）
+- [`txcap-notpol-sold-as-bundled.md`](txcap-notpol-sold-as-bundled.md) — 块里超帽 被写成已经只是策略拒绝 / 就已经更安全 / 就已经是 101（不变量 1463）
+- [`txcap-notpool-sold-as-bundled.md`](txcap-notpool-sold-as-bundled.md) — 入池拒掉 被写成已经验过块 / 就已经是 197 / 就已经是 96（不变量 1462）
+- [`txcap-notblk-sold-as-bundled.md`](txcap-notblk-sold-as-bundled.md) — 单笔气帽 被写成已经改了块气限 / 就已经是 202 / 就已经 203 bundled（不变量 1461）
+- [`dgas-nottx-sold-as-bundled.md`](dgas-nottx-sold-as-bundled.md) — 默认齐了 被写成已经是单笔气帽 / 就已经更安全 / 就已经是 101（不变量 1460）
+- [`dgas-notcons-sold-as-bundled.md`](dgas-notcons-sold-as-bundled.md) — 绑到硬分叉 被写成已经改了共识 / 就已经是 202 / 就已经是 96（不变量 1459）
+- [`dgas-notcap-sold-as-bundled.md`](dgas-notcap-sold-as-bundled.md) — 客户端默认气限 被写成已经是协议帽 / 就已经是 203 / 就已经 211 bundled（不变量 1458）
+- [`tenv-notrcpt-sold-as-bundled.md`](tenv-notrcpt-sold-as-bundled.md) — 看见收据 被写成类型已经对上 / 就已经是 158 / 就已经是 161（不变量 1457）
+- [`tenv-notenv-sold-as-bundled.md`](tenv-notenv-sold-as-bundled.md) — 旧式 RLP 被写成已经是类型信封 / 就已经是 155 / 就已经把类型签进哈希（不变量 1456）
+- [`tenv-notinner-sold-as-bundled.md`](tenv-notinner-sold-as-bundled.md) — 类型字节 被写成已经解开内层 / 就已经是 1559 / 就已经 167 bundled（不变量 1455）
+- [`alist-notread-sold-as-bundled.md`](alist-notread-sold-as-bundled.md) — 预付列表费 被写成已经跑完读取 / 就已经更热 / 就已经是 2718 信封（不变量 1454）
+- [`alist-notban-sold-as-bundled.md`](alist-notban-sold-as-bundled.md) — 列表外 被写成已经不能碰 / 就已经非法 / 就已经是 1559（不变量 1453）
+- [`alist-notacc-sold-as-bundled.md`](alist-notacc-sold-as-bundled.md) — 列入 被写成已经访问过 / 就已经是 2929 第一次 / 就已经 168 bundled（不变量 1452）
+- [`cwarm-notany-sold-as-bundled.md`](cwarm-notany-sold-as-bundled.md) — 开跑预填 被写成任意地址已经热 / 就已经是 2930 / 就已经是 101（不变量 1451）
+- [`cwarm-notrecold-sold-as-bundled.md`](cwarm-notrecold-sold-as-bundled.md) — 本笔再碰 被写成又是一次冷访问 / 就已经永远热 / 就已经是 168（不变量 1450）
+- [`cwarm-notwarm-sold-as-bundled.md`](cwarm-notwarm-sold-as-bundled.md) — 本笔第一次碰 被写成已经是热的 / 就已经是下一笔还热 / 就已经 169 bundled（不变量 1449）
+- [`cbase-not169-sold-as-bundled.md`](cbase-not169-sold-as-bundled.md) — 开跑已热 被写成已经是 169 预填含出块者 / 就已经是 2930 / 就已经是 163（不变量 1448）
+- [`cbase-notpay-sold-as-bundled.md`](cbase-notpay-sold-as-bundled.md) — 开跑已热 被写成已经付钱 / 就已经是 1559 / 就已经是 158（不变量 1447）
+- [`cbase-notacc-sold-as-bundled.md`](cbase-notacc-sold-as-bundled.md) — 出块者开跑已热 被写成已经访问过 / 就已经是 2929 第一次 / 就已经 187 bundled（不变量 1446）
+- [`rpfx-notinit-sold-as-bundled.md`](rpfx-notinit-sold-as-bundled.md) — initcode 出现该字节 被写成已经是本页失败 / 就已经是 170 / 就已经是 3860（不变量 1445）
+- [`rpfx-notold-sold-as-bundled.md`](rpfx-notold-sold-as-bundled.md) — 已有同首字节 被写成已经被改语义 / 就已经按新格式重验 / 就已经做完 3541（不变量 1444）
+- [`rpfx-noteof-sold-as-bundled.md`](rpfx-noteof-sold-as-bundled.md) — 保留首字节 被写成已经是对象格式已部署 / 就已经验过 / 就已经 188 bundled（不变量 1443）
+- [`retc-notfree-sold-as-bundled.md`](retc-notfree-sold-as-bundled.md) — CALL 气常数 被写成已经没有按长度代价 / 就已经是不变量 170 / 就已经免费（不变量 1442）
+- [`retc-nottx-sold-as-bundled.md`](retc-nottx-sold-as-bundled.md) — 耗尽气失败 被写成已经整笔非法 / 就已经是剩余气回滚 / 就已经是 177（不变量 1441）
+- [`retc-notinit-sold-as-bundled.md`](retc-notinit-sold-as-bundled.md) — 返回代码超界 被写成已经是 initcode 超界 / 就已经是 3860 / 就已经 185 bundled（不变量 1440）
+- [`icode-notrun-sold-as-bundled.md`](icode-notrun-sold-as-bundled.md) — 按字分析费 被写成已经跑完 initcode / 就已经是 CREATE2 哈希费 / 就已经创建（不变量 1439）
+- [`icode-nottx-sold-as-bundled.md`](icode-nottx-sold-as-bundled.md) — 创建交易超界 被写成已经是 CREATE 失败 / 就已经是 2681 / 就已经进 EVM（不变量 1438）
+- [`icode-not170-sold-as-bundled.md`](icode-not170-sold-as-bundled.md) — initcode 超界 被写成已经是部署代码超界 / 就已经是 1014 / 就已经 176 bundled（不变量 1437）
+- [`b2f-notapi-sold-as-bundled.md`](b2f-notapi-sold-as-bundled.md) — 定长输入 被写成已经是任意哈希 API / 就已经返回摘要 / 就已经是 199（不变量 1436）
+- [`b2f-notprod-sold-as-bundled.md`](b2f-notprod-sold-as-bundled.md) — 本页 被写成已经能验 Equihash / 就已经是中继交换 / 就已经有隐私（不变量 1435）
+- [`b2f-nothash-sold-as-bundled.md`](b2f-nothash-sold-as-bundled.md) — 压缩函数 F 被写成已经是 BLAKE2b 哈希 / 就已经是 keccak / 就已经 230 bundled（不变量 1434）
+- [`sbal-notwarm-sold-as-bundled.md`](sbal-notwarm-sold-as-bundled.md) — 树依赖涨价 被写成已经是本笔冷热 / 就已经是磁盘 O(1) / 就已经是 2929（不变量 1433）
+- [`sbal-notself-sold-as-bundled.md`](sbal-notself-sold-as-bundled.md) — 给自己查余额 被写成已经按本账户价扣 / 就已经是更便宜的按地址查 / 就已经做完 1884（不变量 1432）
+- [`sbal-notbal-sold-as-bundled.md`](sbal-notbal-sold-as-bundled.md) — 本账户余额指令 被写成已经是按地址查余额 / 就已经改了余额语义 / 就已经 229 bundled（不变量 1431）
+- [`bn128-notgen-sold-as-bundled.md`](bn128-notgen-sold-as-bundled.md) — 本页 被写成已经是通用曲线算术 / 就已经是 199 / 就已经是 227（不变量 1430）
+- [`bn128-notsig-sold-as-bundled.md`](bn128-notsig-sold-as-bundled.md) — 更便宜 被写成已经在验签 / 就已经上了隐私产品 / 就已经是 2537（不变量 1429）
+- [`bn128-notalgo-sold-as-bundled.md`](bn128-notalgo-sold-as-bundled.md) — bn128 降价 被写成已经换了算法 / 就已经重新加入预编译 / 就已经 228 bundled（不变量 1428）
+- [`mexp-notmin-sold-as-bundled.md`](mexp-notmin-sold-as-bundled.md) — 最低气价 被写成已经能无限便宜 / 就已经不伤安全 / 就已经是签名产品（不变量 1427）
+- [`mexp-notiface-sold-as-bundled.md`](mexp-notiface-sold-as-bundled.md) — 更便宜 被写成已经改了接口算法 / 就已经是 206 / 就已经换了得数（不变量 1426）
+- [`mexp-not198-sold-as-bundled.md`](mexp-not198-sold-as-bundled.md) — 模幂重计价 被写成已经是 198 公式 / 就已经是 7823 / 就已经 227 bundled（不变量 1425）
+- [`cdcut-notsafe-sold-as-bundled.md`](cdcut-notsafe-sold-as-bundled.md) — 降价 被写成已经不伤延迟 / 就已经不改安全 / 就已经是 197（不变量 1424）
+- [`cdcut-notcap-sold-as-bundled.md`](cdcut-notcap-sold-as-bundled.md) — 降价 被写成已经没有块上限 / 就已经解决 DA / 就已经是 4844（不变量 1423）
+- [`cdcut-notzero-sold-as-bundled.md`](cdcut-notzero-sold-as-bundled.md) — 非零 calldata 降价 被写成已经给零字节也降 / 就已经是 7623 / 就已经 226 bundled（不变量 1422）
+- [`nmet-notstip-sold-as-bundled.md`](nmet-notstip-sold-as-bundled.md) — 津贴帧禁写 被写成已经能在津贴里改槽 / 就已经是 1283 洞 / 就已经是 223（不变量 1421）
+- [`nmet-notcur-sold-as-bundled.md`](nmet-notcur-sold-as-bundled.md) — 三值 被写成已经只有当前值 / 就已经是第一次写 / 就已经是 2929（不变量 1420）
+- [`nmet-not1153-sold-as-bundled.md`](nmet-not1153-sold-as-bundled.md) — 净计量 被写成已经是瞬时存储 / 就已经是 1153 / 就已经 225 bundled（不变量 1419）
+- [`depre-notdone-sold-as-bundled.md`](depre-notdone-sold-as-bundled.md) — 以后可能变 被写成已经变了 / 就已经是 160 / 就已经是 223（不变量 1418）
+- [`depre-notcli-sold-as-bundled.md`](depre-notcli-sold-as-bundled.md) — 元层页 被写成已经改了客户端 / 就已经删掉指令 / 就已经是 3529（不变量 1417）
+- [`depre-notcons-sold-as-bundled.md`](depre-notcons-sold-as-bundled.md) — 弃用警告 被写成已经改了共识 / 就已经是 6780 / 就已经 224 bundled（不变量 1416）
+- [`rfnd-notmid-sold-as-bundled.md`](rfnd-notmid-sold-as-bundled.md) — 退款计数 被写成执行当中能用 / 就已经封死烧掉上限 / 就已经是 158（不变量 1415）
+- [`rfnd-not6780-sold-as-bundled.md`](rfnd-not6780-sold-as-bundled.md) — 去掉自毁退款 被写成已经改了自毁语义 / 就已经是 160 / 就已经是 1559（不变量 1414）
+- [`rfnd-notgone-sold-as-bundled.md`](rfnd-notgone-sold-as-bundled.md) — 退款削减 被写成已经没有退款 / 就已经重写 2200 / 就已经 223 bundled（不变量 1413）
+- [`mcpy-notcd-sold-as-bundled.md`](mcpy-notcd-sold-as-bundled.md) — 能重叠拷 被写成已经是 calldata 拷 / 就已经改了 CALL / 就已经是 169（不变量 1412）
+- [`mcpy-notbuf-sold-as-bundled.md`](mcpy-notbuf-sold-as-bundled.md) — 像用了中间缓冲 被写成必须真分配 / 就已经是 DoS / 就已经是 208（不变量 1411）
+- [`mcpy-notid-sold-as-bundled.md`](mcpy-notid-sold-as-bundled.md) — 内存拷贝指令 被写成已经是身份预编译 / 就已经是 2929 / 就已经 216 bundled（不变量 1410）
+- [`psh0-notold-sold-as-bundled.md`](psh0-notold-sold-as-bundled.md) — 旧字节碰巧用了这个码 被写成行为已经不变 / 就已经是常数零 / 就已经是 208（不变量 1409）
+- [`psh0-notjump-sold-as-bundled.md`](psh0-notjump-sold-as-bundled.md) — 没有立即数 被写成已经改了跳转分析 / 就已经共用实现 / 就已经是 5656（不变量 1408）
+- [`psh0-notimm-sold-as-bundled.md`](psh0-notimm-sold-as-bundled.md) — 压零指令 被写成已经是带立即数的压 0 / 就已经是 216 / 就已经 217 bundled（不变量 1407）
+- [`shft-notpack-sold-as-bundled.md`](shft-notpack-sold-as-bundled.md) — 更便宜 被写成已经是位域产品 / 就已经改了旧字节码 / 就已经是 208（不变量 1406）
+- [`shft-notsdiv-sold-as-bundled.md`](shft-notsdiv-sold-as-bundled.md) — 算术右移 被写成已经是有符号除 / 就已经是同一舍入 / 就已经和加减同一顺序（不变量 1405）
+- [`shft-notarith-sold-as-bundled.md`](shft-notarith-sold-as-bundled.md) — 原生移位 被写成已经用算术拼过 / 就已经只有一条 / 就已经 231 bundled（不变量 1404）
+- [`bbfee-not4844-sold-as-bundled.md`](bbfee-not4844-sold-as-bundled.md) — 跑前就有这个数 被写成已经改了 4844 / 就已经改了市场 / 就已经是 7918（不变量 1403）
+- [`bbfee-notone-sold-as-bundled.md`](bbfee-notone-sold-as-bundled.md) — 能读本块 blob 基础费 被写成已经并成一套气 / 就已经是 145 / 就已经是 201（不变量 1402）
+- [`bbfee-not3198-sold-as-bundled.md`](bbfee-not3198-sold-as-bundled.md) — blob 基础费指令 被写成已经是执行层基础费 / 就已经是 218 / 就已经 219 bundled（不变量 1401）
+- [`bfee-nothdr-sold-as-bundled.md`](bfee-nothdr-sold-as-bundled.md) — 跑前就有这个数 被写成已经改了头 / 就已经有气期货 / 就已经加长挑战期（不变量 1400）
+- [`bfee-notprop-sold-as-bundled.md`](bfee-notprop-sold-as-bundled.md) — 能读本块基础费 被写成已经给了出块者 / 就已经是 blob 基础费 / 就已经是 219（不变量 1399）
+- [`bfee-notmkt-sold-as-bundled.md`](bfee-notmkt-sold-as-bundled.md) — 基础费指令 被写成已经改了费用市场 / 就已经是 158 / 就已经 218 bundled（不变量 1398）
+- [`chid-notfork-sold-as-bundled.md`](chid-notfork-sold-as-bundled.md) — 编译期写死 被写成分叉后仍安全 / 就已经是 712 域 / 就已经处理好分裂（不变量 1397）
+- [`chid-nottx-sold-as-bundled.md`](chid-nottx-sold-as-bundled.md) — 返回配置链号 被写成这笔已经带了 155 / 就已经返回默认值 / 就已经是 161（不变量 1396）
+- [`chid-not155-sold-as-bundled.md`](chid-not155-sold-as-bundled.md) — 链号指令 被写成已经是签进哈希 / 就已经是 JSON chainId / 就已经 220 bundled（不变量 1395）
+- [`xhash-notmiss-sold-as-bundled.md`](xhash-notmiss-sold-as-bundled.md) — 空数据哈希 被写成已经是账户不存在 / 就已经改了 161 / 就已经是 3607（不变量 1394）
+- [`xhash-notzero-sold-as-bundled.md`](xhash-notzero-sold-as-bundled.md) — 返回 0 被写成已经是没代码账户 / 就已经是空数据哈希 / 就已经是 180（不变量 1393）
+- [`xhash-notsee-sold-as-bundled.md`](xhash-notsee-sold-as-bundled.md) — 代码哈希指令 被写成已经看见代码 / 就已经是整份拷 / 就已经 221 bundled（不变量 1392）
+- [`cr2-notover-sold-as-bundled.md`](cr2-notover-sold-as-bundled.md) — 碰撞变得可能 被写成已经覆盖 / 就已经是 684 本身 / 就已经是 3860（不变量 1391）
+- [`cr2-notexist-sold-as-bundled.md`](cr2-notexist-sold-as-bundled.md) — 算出来的盐地址 被写成已经创建 / 就已经有那份代码 / 就已经付过创建费（不变量 1390）
+- [`cr2-notcre-sold-as-bundled.md`](cr2-notcre-sold-as-bundled.md) — 盐创建指令 被写成已经是按序号占址 / 就已经能和旧式撞上 / 就已经 222 bundled（不变量 1389）
+- [`rdata-not140-sold-as-bundled.md`](rdata-not140-sold-as-bundled.md) — 失败数据能再取 被写成已经是 140 / 就已经输出区自动够大 / 就已经转发产品上线（不变量 1388）
+- [`rdata-notcalld-sold-as-bundled.md`](rdata-notcalld-sold-as-bundled.md) — 本页 被写成已经是 calldata / 就已经用两次调用先问长度 / 就已经下次调用后还在（不变量 1387）
+- [`rdata-notmem-sold-as-bundled.md`](rdata-notmem-sold-as-bundled.md) — 返回数据缓冲 被写成已经是内存 / 就已经是 CALL 预留输出区 / 就已经 232 bundled（不变量 1386）
+- [`stcall-notchg-sold-as-bundled.md`](stcall-notchg-sold-as-bundled.md) — 静态帧里改状态 被写成已经改成 / 就已经和 CALLCODE 带值同一盏灯 / 就已经是 140（不变量 1385）
+- [`stcall-notxfer-sold-as-bundled.md`](stcall-notxfer-sold-as-bundled.md) — 没转账的普通调用 被写成已经打开静态旗 / 就已经只读 / 就已经 214 bundled（不变量 1384）
+- [`stcall-notview-sold-as-bundled.md`](stcall-notview-sold-as-bundled.md) — 静态帧 被写成已经是高级语言只读 / 就已经是编译器 view / 就已经 178 bundled（不变量 1383）
+- [`rvert-notdep-sold-as-bundled.md`](rvert-notdep-sold-as-bundled.md) — 创建里回滚 被写成已经部署 / 就已经占址 / 就已经是另一条链 REVERTED（不变量 1382）
+- [`rvert-notfee-sold-as-bundled.md`](rvert-notfee-sold-as-bundled.md) — 不够付回滚自己的费 被写成已经留下剩余气 / 就已经是 103 / 就已经免费（不变量 1381）
+- [`rvert-notburn-sold-as-bundled.md`](rvert-notburn-sold-as-bundled.md) — 带回剩余气的回滚 被写成已经像非法指令烧光 / 就已经气耗尽烧光 / 就已经 177 bundled（不变量 1380）
+- [`dcall-not7702-sold-as-bundled.md`](dcall-not7702-sold-as-bundled.md) — 可变代码源 被写成已经是 7702 / 就已经产品上线 / 就已经能靠调用数据复刻（不变量 1379）
+- [`dcall-notcall-sold-as-bundled.md`](dcall-notcall-sold-as-bundled.md) — 父作用域发送者传到子作用域 被写成已经是普通 CALL / 就已经有 CALL 津贴 / 就已经创建账户（不变量 1378）
+- [`dcall-notcode-sold-as-bundled.md`](dcall-notcode-sold-as-bundled.md) — 委托调用 被写成已经是 CALLCODE / 就已经是同一发送者的 CALLCODE / 就已经 Homestead 委托 bundled（不变量 1377）
+- [`viaext-notloc-sold-as-bundled.md`](viaext-notloc-sold-as-bundled.md) — ExtendedVoteInfo from local 被写成已经 typically from block / 就已经是 Process VoteInfo / 就已经 425 罚没（不变量 1376）
+- [`viaext-notblk-sold-as-bundled.md`](viaext-notblk-sold-as-bundled.md) — VoteInfo typically from block 被写成已经从本进程抽出 / 就已经是 Prepare Extended / 就已经 369（不变量 1375）
+- [`viaext-notrew-sold-as-bundled.md`](viaext-notrew-sold-as-bundled.md) — availability 同句 被写成已经奖罚完 / 就已经交差 / 就已经 Finalize 算完（不变量 1374）
+- [`valuse-notprep-sold-as-bundled.md`](valuse-notprep-sold-as-bundled.md) — Prepare Extended Validator 被写成已经是 CommitInfo / 就已经可互换 / 就已经从块抽出（不变量 1373）
+- [`valuse-notfin-sold-as-bundled.md`](valuse-notfin-sold-as-bundled.md) — Finalize decided 被写成已经是 Process proposed / 就已经交差 / 就已经可拿 Prepare 代替（不变量 1372）
+- [`valuse-notproc-sold-as-bundled.md`](valuse-notproc-sold-as-bundled.md) — Process CommitInfo Validator 被写成已经是 Prepare Extended / 就已经是 local_last_commit / 就已经带公钥（不变量 1371）
+- [`prepev-notfin-sold-as-bundled.md`](prepev-notfin-sold-as-bundled.md) — 经 Finalize 交回 被写成已经是 CheckTx events / 就已经是 ExecTx events / 就已经印进本头（不变量 1370）
+- [`prepev-notkeep-sold-as-bundled.md`](prepev-notkeep-sold-as-bundled.md) — MUST 留到决定 被写成已经 Process 就交 / 就已经 REJECT 可丢 / 就已经交差（不变量 1369）
+- [`prepev-notret-sold-as-bundled.md`](prepev-notret-sold-as-bundled.md) — Prepare MAY 产出 被写成已经在回包里 / 就已经引擎收到 / 就已经 357 验过（不变量 1368）
+- [`eviuse-nottwo-sold-as-bundled.md`](eviuse-nottwo-sold-as-bundled.md) — 两份签都在 / 空切片 被写成已经只有一份签 / 就已经没有第二份 / 就已经跳过 Verify（不变量 1367）
+- [`eviuse-notexp-sold-as-bundled.md`](eviuse-notexp-sold-as-bundled.md) — 暴露给应用再处理 被写成已经应用验完 / 就已经 Verify / 就已经 421 交出（不变量 1366）
+- [`eviuse-notapp-sold-as-bundled.md`](eviuse-notapp-sold-as-bundled.md) — 引擎已验且可空 被写成已经应用验完 / 就必须填内容 / 就已经 Accept（不变量 1365）
+- [`etxev-notlvl-sold-as-bundled.md`](etxev-notlvl-sold-as-bundled.md) — 逐笔 events 被写成已经是块级 events / 就已经是 CheckTx events / 就已经 interchangeable（不变量 1364）
+- [`etxev-notdet-sold-as-bundled.md`](etxev-notdet-sold-as-bundled.md) — events 非确定 被写成已经是共识字段 / 就已经编进哈希 / 就已经必须确定（不变量 1363）
+- [`etxev-notidx-sold-as-bundled.md`](etxev-notidx-sold-as-bundled.md) — ExecTxResult.events 被写成已经印进本头 / 就已经像 Code/Data 必须确定 / 就已经交差（不变量 1362）
+- [`cifields-notnts-sold-as-bundled.md`](cifields-notnts-sold-as-bundled.md) — Fields 栏 被写成已经是 Notes 票序 / 就已经是 444 bundled / 就已经按到场定奖惩（不变量 1361）
+- [`cifields-notlst-sold-as-bundled.md`](cifields-notlst-sold-as-bundled.md) — CommitInfo.votes 列表含义 被写成已经进了块 / 就已经交差 / 就已经是 Notes 票序（不变量 1360）
+- [`cifields-notrnd-sold-as-bundled.md`](cifields-notrnd-sold-as-bundled.md) — CommitInfo.round 被写成已经按投票权排过 / 就已经罚没 / 就已经是 ExtendedCommitInfo.round（不变量 1359）
+- [`extcnotes-notload-sold-as-bundled.md`](extcnotes-notload-sold-as-bundled.md) — 从 store 再装 ExtendedCommitInfo 被写成已经从块抽出 / 就已经是 365 路径 / 就已经是 444 cinotes（不变量 1358）
+- [`extcnotes-noteng-sold-as-bundled.md`](extcnotes-noteng-sold-as-bundled.md) — 引擎保证并落盘 Extended 顺序 被写成已经由应用排过 / 就已经是收票顺序 / 就已经由 Prepare 决定（不变量 1357）
+- [`extcnotes-notord-sold-as-bundled.md`](extcnotes-notord-sold-as-bundled.md) — Extended 按投票权降序 被写成已经进了块 / 就已经交差 / 就已经写进 last_commit（不变量 1356）
+- [`cinotes-notstore-sold-as-bundled.md`](cinotes-notstore-sold-as-bundled.md) — 从 store 再装 被写成已经从块抽出 / 就已经是 365 路径 / 就已经是 ExtendedCommitInfo Notes（不变量 1355）
+- [`cinotes-notapp-sold-as-bundled.md`](cinotes-notapp-sold-as-bundled.md) — 引擎保证并落盘 被写成已经由应用排过 / 就已经是收票顺序 / 就已经由 Process 决定（不变量 1354）
+- [`cinotes-notblk-sold-as-bundled.md`](cinotes-notblk-sold-as-bundled.md) — 按投票权降序 被写成已经进了块 / 就已经交差 / 就已经写进 last_commit（不变量 1353）
+- [`eappgen-notbcast-sold-as-bundled.md`](eappgen-notbcast-sold-as-bundled.md) — 将签名并挂到 Precommit 被写成已经广播 / 就已经写进 last_commit / 就已经是 438 bundled（不变量 1352）
+- [`eappgen-notnrp-sold-as-bundled.md`](eappgen-notnrp-sold-as-bundled.md) — non_rp 将签名挂上且无重放保护 被写成已经同一签法 / 就已经 358 按原样签 / 就已经有重放保护（不变量 1351）
+- [`eappgen-notsig-sold-as-bundled.md`](eappgen-notsig-sold-as-bundled.md) — 应用生成 vote_extension 将签名 被写成已经签过 / 就已经包进包装 / 就已经挂上（不变量 1350）
+- [`extappgen-sold-as-signed.md`](extappgen-sold-as-signed.md) — 应用生成将签名 被写成已经签过
+- [`extcinotes-sold-as-inblock.md`](extcinotes-sold-as-inblock.md) — ExtendedCommitInfo Notes 被写成已经进块
+- [`cinotes-sold-as-inblock.md`](cinotes-sold-as-inblock.md) — CommitInfo Notes 被写成已经进块
+- [`cifields-sold-as-notes.md`](cifields-sold-as-notes.md) — CommitInfo Fields 被写成已经是 Notes
+- [`exectxevents-sold-as-header.md`](exectxevents-sold-as-header.md) — ExecTxResult.events 被写成已经印进本头
+- [`extviusage-sold-as-exposed.md`](extviusage-sold-as-exposed.md) — 暴露签 被写成已经应用验完
+- [`prepevents-sold-as-finalize.md`](prepevents-sold-as-finalize.md) — Prepare 事件 被写成已经交给引擎
+- [`validatorusage-sold-as-samegate.md`](validatorusage-sold-as-samegate.md) — Validator 四门 被写成已经同一路
+- [`viusageavail-sold-as-samepath.md`](viusageavail-sold-as-samepath.md) — 两条抽出路径 被写成已经同一路
 - [`hstead-notbomb-sold-as-bundled.md`](hstead-notbomb-sold-as-bundled.md) — 难度朝均值 被写成已经取消炸弹 / 就已经写了推迟炸弹分叉 / 就已经是 Homestead 四件 bundled（不变量 1349）
 - [`hstead-notfail-sold-as-bundled.md`](hstead-notfail-sold-as-bundled.md) — 失败不再留空合约 被写成已经限制代码长度 / 就已经限制 initcode / 就已经 empty/dead（不变量 1348）
 - [`hstead-notsig-sold-as-bundled.md`](hstead-notsig-sold-as-bundled.md) — 交易拒高 s 被写成已经让预编译拒 / 就已经是比特币 DER / 就已经是 EIP-155（不变量 1347）

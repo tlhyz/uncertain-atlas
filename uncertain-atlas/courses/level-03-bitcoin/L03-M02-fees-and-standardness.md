@@ -35,7 +35,7 @@ standardness / mempool 策略是保安：最小费、脚本模板、数据包大
 **policy：** 本地转发与 mempool 准入。各节点可不同。  
 **consensus rule：** 全节点验证块时必须一致，否则分裂。
 
-**事实：** 一笔非标准但共识合法的交易，仍可能被矿工直接打进块。轻钱包等不到转发，不代表永远无效。Bitcoin Core 官方：Policy 是共识之外、对未确认交易进 mempool 之前的本地可配置规则；**不作用于块内交易**。[精读](../../tracks/mempool/worked-example-policy-vs-consensus.md)（不变量 144）。
+**事实：** 一笔非标准但共识合法的交易，仍可能被矿工直接打进块。轻钱包等不到转发，不代表永远无效。Bitcoin Core 官方：Policy 是共识之外、对未确认交易进 mempool 之前的本地可配置规则；**不作用于块内交易**。[精读](../../tracks/mempool/worked-example-policy-vs-consensus.md) Policy policy-reject not already consensus-illegal / not already 44 / not already 144-bundled 正式三事（144 余量）：[`../../tracks/mempool/worked-example-polc-notill-vs-bundled.md`](../../tracks/mempool/worked-example-polc-notill-vs-bundled.md)（不变量 1521）。 Policy policy-pass not already in-block / not already 25 / not already 166 正式三事（144 余量）：[`../../tracks/mempool/worked-example-polc-notblk-vs-bundled.md`](../../tracks/mempool/worked-example-polc-notblk-vs-bundled.md)（不变量 1522）。 Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）：[`../../tracks/mempool/worked-example-polc-notfee-vs-bundled.md`](../../tracks/mempool/worked-example-polc-notfee-vs-bundled.md)（不变量 1523）。（不变量 144）。
 
 ---
 
@@ -49,7 +49,7 @@ T 共识合法，但费低于你邻居的 minrelaytxfee。
 
 ## F. 真实项目
 
-Bitcoin Core 的 mempool / 标准脚本模板。RBF 是策略与社交的混合物。选择加入替换信号不是已经换掉。nSequence 示意不是已经是相对锁。精读：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md)（不变量 166）。
+Bitcoin Core 的 mempool / 标准脚本模板。RBF 是策略与社交的混合物。选择加入替换信号不是已经换掉。nSequence 示意不是已经是相对锁。精读：[`../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md`](../../tracks/mempool/worked-example-rbf-signal-vs-replaced.md) BIP-125 opt-in-signal not already replaced / not already 144 / not already 166-bundled 正式三事（166 余量）：[`../../tracks/mempool/worked-example-rbfs-notrep-vs-bundled.md`](../../tracks/mempool/worked-example-rbfs-notrep-vs-bundled.md)（不变量 1524）。 BIP-125 nsequence-signal not already relative-lock / not already 165 / not already 164 正式三事（166 余量）：[`../../tracks/mempool/worked-example-rbfs-notlock-vs-bundled.md`](../../tracks/mempool/worked-example-rbfs-notlock-vs-bundled.md)（不变量 1525）。 BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）：[`../../tracks/mempool/worked-example-rbfs-notjoin-vs-bundled.md`](../../tracks/mempool/worked-example-rbfs-notjoin-vs-bundled.md)（不变量 1526）。（不变量 166）。
 Ethereum 的 mempool 替换更日常，但「策略 ≠ 共识」同一条。
 
 ---

@@ -83,7 +83,7 @@ blob 基础费指令、执行层基础费指令、两套气、4844 日程，是�
 | 经济 | 能读 blob 价不是已经并账，也不是已经改了底价规则 |
 
 **推断：** 产品句若只写「能读 blob 基础费所以已经是基础费」，读者会把两套气听成一本账，或把读数听成 3198。  
-**建议：** 第一版可以不加这条读数指令。若对照，必须分开读 blob 价、读执行层基础费、两套气、日程。不要发明「看见 7516 就已经是 3198」。不要抄气价档或测试向量。不要写怎样按 blob 价做产品。
+**建议：** 第一版可以不加这条读数指令。若对照，必须分开读 blob 价、读执行层基础费、两套气、日程。可以跳过「看见 7516 就已经是 3198」。219 BLOBBASEFEE vs BASEFEE bundled unbundling 完成（1401 item 1 / 1402 item 2 / 1403 item 3）；精读 [`worked-example-bbfee-not3198-vs-bundled.md`](worked-example-bbfee-not3198-vs-bundled.md)（不变量 1401 item 1）、[`worked-example-bbfee-notone-vs-bundled.md`](worked-example-bbfee-notone-vs-bundled.md)（不变量 1402 item 2）、[`worked-example-bbfee-not4844-vs-bundled.md`](worked-example-bbfee-not4844-vs-bundled.md)（不变量 1403 item 3）。不要发明「看见 7516 就已经是 3198」。不要抄气价档或测试向量。不要写怎样按 blob 价做产品。
 
 ---
 

@@ -82,7 +82,7 @@
 | 经济 | 不抄例气数；留下剩余气不是已经免费 |
 
 **推断：** 产品句若只写「执行失败」，读者会把退工时的回滚听成已经烧光，或把不够付自己的费听成已经享受退工时。  
-**建议：** 第一版必须分开带回剩余气的回滚和烧光剩余气的失败。不要发明「失败就是把气烧光」。不要抄操作码号。不要把 140 写成 103。
+**建议：** 第一版必须分开带回剩余气的回滚和烧光剩余气的失败。可以跳过「看见失败就已经烧光剩余气」。177 REVERT leftover-gas vs burn bundled unbundling 完成（1380 item 1 / 1381 item 2 / 1382 item 3）；精读 [`worked-example-rvert-notburn-vs-bundled.md`](worked-example-rvert-notburn-vs-bundled.md)（不变量 1380 item 1）、[`worked-example-rvert-notfee-vs-bundled.md`](worked-example-rvert-notfee-vs-bundled.md)（不变量 1381 item 2）、[`worked-example-rvert-notdep-vs-bundled.md`](worked-example-rvert-notdep-vs-bundled.md)（不变量 1382 item 3）。不要发明「失败就是把气烧光」。不要抄操作码号。不要把 140 写成 103。
 
 ---
 

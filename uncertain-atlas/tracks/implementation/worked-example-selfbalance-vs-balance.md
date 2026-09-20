@@ -87,7 +87,7 @@
 | 经济 | 涨价不是津贴帧已经永远够用，也不是块气限已经等于稳定墙钟 |
 
 **推断：** 产品句若只写「状态读终于涨价了」，读者会把涨价听成已经是冷热，或把本账户余额指令听成按地址查自己已经便宜，或把一次涨价听成磁盘已经是常数时间。  
-**建议：** 第一版必须把本账户读和按地址读分开写。若对照，必须分开本账户余额、按地址查余额、本笔冷热、磁盘已经是常数时间。不要发明「看见 1884 就已经是 2929」。不要抄新旧气价或津贴数字。不要写怎样绕过涨价或在津贴帧里再读槽。
+**建议：** 第一版必须把本账户读和按地址读分开写。若对照，必须分开本账户余额、按地址查余额、本笔冷热、磁盘已经是常数时间。可以跳过「看见 1884 就已经是 2929」。229 selfbalance vs balance bundled unbundling 完成（1431 item 1 / 1432 item 2 / 1433 item 3）；精读 [`worked-example-sbal-notbal-vs-bundled.md`](worked-example-sbal-notbal-vs-bundled.md)（不变量 1431 item 1）、[`worked-example-sbal-notself-vs-bundled.md`](worked-example-sbal-notself-vs-bundled.md)（不变量 1432 item 2）、[`worked-example-sbal-notwarm-vs-bundled.md`](worked-example-sbal-notwarm-vs-bundled.md)（不变量 1433 item 3）。不要发明「看见 1884 就已经是 2929」。不要抄新旧气价或津贴数字。不要写怎样绕过涨价或在津贴帧里再读槽。
 
 ---
 

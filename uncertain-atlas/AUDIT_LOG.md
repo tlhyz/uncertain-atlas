@@ -1,3 +1,1053 @@
+| A7560 | 记录 | 会与 189 / 191 / 144 / 1557 / 1558 糊成「看见MINIMALIF不是已经只是P2WSH策略就已经只是P2WSH策略 interchangeable、就已经是不变量 191 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-342 minimalif not already p2wsh-policy-only / not already 191 / not already 144 正式三事（189 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。189 tapscript vs scriptpath bundled unbundling 完成（1559 item 3） |
+| A7561 | 高 | 看见MINIMALIF不是已经只是P2WSH策略 会被写成已经只是P2WSH策略 interchangeable / 191 interchangeable | 官方 BIP-342 tpsm item 3：not already 已经只是P2WSH策略 / not 191 |
+| A7562 | 高 | 看见MINIMALIF is not already only a P2WSH policy 会被写成已经是不变量 191 interchangeable / 144 interchangeable | 官方 BIP-342 tpsm item 3：not already 已经是不变量 191 / not 144 |
+| A7563 | 高 | 看见MINIMALIF不是已经只是P2WSH策略 会被写成已经是不变量 144 interchangeable | 官方 BIP-342 tpsm item 3：not already settled |
+| A7564 | 中 | 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签会被抄进不确定 | 不抄。不写 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签。不另写 19 节 |
+| A7555 | 记录 | 会与 189 / 153 / 191 / 1557 / 1559 糊成「看见遇见成功操作码不是已经执行完就已经执行完 interchangeable、就已经安全升级 interchangeable、就已经 189 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-342 success-opcode not already executed / not already safe-upgrade / not already 189-bundled 正式三事（189 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。189 tapscript vs scriptpath bundled unbundling 续（1558 item 2） |
+| A7556 | 高 | 看见遇见成功操作码不是已经执行完 会被写成已经执行完 interchangeable / 153 interchangeable | 官方 BIP-342 tpsm item 2：not already 已经执行完 / not 153 |
+| A7557 | 高 | 看见encountering a success opcode is not already execution having completed 会被写成已经安全升级 interchangeable / 191 interchangeable | 官方 BIP-342 tpsm item 2：not already 已经安全升级 / not 191 |
+| A7558 | 高 | 看见遇见成功操作码不是已经执行完 会被写成已经 189 bundled interchangeable | 官方 BIP-342 tpsm item 2：not already settled |
+| A7559 | 中 | 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签会被抄进不确定 | 不抄。不写 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签。不另写 19 节 |
+| A7550 | 记录 | 会与 189 / 153 / 170 / 1558 / 1559 糊成「看见走脚本路径不是已经是本页这种脚本语义就已经是本页这种脚本语义 interchangeable、就已经是不变量 153 interchangeable、就已经 189 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-342 scriptpath not already tapscript-semantics / not already 153 / not already 189-bundled 正式三事（189 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。189 tapscript vs scriptpath bundled unbundling 启动（1557 item 1） |
+| A7551 | 高 | 看见走脚本路径不是已经是本页这种脚本语义 会被写成已经是本页这种脚本语义 interchangeable / 153 interchangeable | 官方 BIP-342 tpsm item 1：not already 已经是本页这种脚本语义 / not 153 |
+| A7552 | 高 | 看见taking the script path is not already this page's script semantics 会被写成已经是不变量 153 interchangeable / 170 interchangeable | 官方 BIP-342 tpsm item 1：not already 已经是不变量 153 / not 170 |
+| A7553 | 高 | 看见走脚本路径不是已经是本页这种脚本语义 会被写成已经 189 bundled interchangeable | 官方 BIP-342 tpsm item 1：not already settled |
+| A7554 | 中 | 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签会被抄进不确定 | 不抄。不写 怎样拼成功操作码、旧多重签改写、未知钥类型跳过验签。不另写 19 节 |
+| A7545 | 记录 | 会与 153 / 170 / 174 / 1554 / 1555 糊成「看见看见Taproot输出不是已经分辨付款给钥还是付款给脚本就已经分辨付款给钥还是付款给脚本 interchangeable、就已经是不变量 170 interchangeable、就已经是不变量 174 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-341 taproot-output not already look-pubkey-or-script / not already 170 / not already 174 正式三事（153 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。153 keypath vs scriptpath bundled unbundling 完成（1556 item 3） |
+| A7546 | 高 | 看见看见Taproot输出不是已经分辨付款给钥还是付款给脚本 会被写成已经分辨付款给钥还是付款给脚本 interchangeable / 170 interchangeable | 官方 BIP-341 kpsp item 3：not already 已经分辨付款给钥还是付款给脚本 / not 170 |
+| A7547 | 高 | 看见seeing a Taproot output is not already telling whether it pays to key or to script 会被写成已经是不变量 170 interchangeable / 174 interchangeable | 官方 BIP-341 kpsp item 3：not already 已经是不变量 170 / not 174 |
+| A7548 | 高 | 看见看见Taproot输出不是已经分辨付款给钥还是付款给脚本 会被写成已经是不变量 174 interchangeable | 官方 BIP-341 kpsp item 3：not already settled |
+| A7549 | 中 | 怎样藏一条别人看不见的脚本路径会被抄进不确定 | 不抄。不写 怎样藏一条别人看不见的脚本路径。不另写 19 节 |
+| A7540 | 记录 | 会与 153 / 189 / 152 / 1554 / 1556 糊成「看见脚本路径不是已经揭开全部脚本就已经揭开全部脚本 interchangeable、就已经是不变量 189 interchangeable、就已经是不变量 152 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-341 scriptpath not already all-scripts-exposed / not already 189 / not already 152 正式三事（153 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。153 keypath vs scriptpath bundled unbundling 续（1555 item 2） |
+| A7541 | 高 | 看见脚本路径不是已经揭开全部脚本 会被写成已经揭开全部脚本 interchangeable / 189 interchangeable | 官方 BIP-341 kpsp item 2：not already 已经揭开全部脚本 / not 189 |
+| A7542 | 高 | 看见scriptpath spend is not already revealing all scripts 会被写成已经是不变量 189 interchangeable / 152 interchangeable | 官方 BIP-341 kpsp item 2：not already 已经是不变量 189 / not 152 |
+| A7543 | 高 | 看见脚本路径不是已经揭开全部脚本 会被写成已经是不变量 152 interchangeable | 官方 BIP-341 kpsp item 2：not already settled |
+| A7544 | 中 | 怎样藏一条别人看不见的脚本路径会被抄进不确定 | 不抄。不写 怎样藏一条别人看不见的脚本路径。不另写 19 节 |
+| A7535 | 记录 | 会与 153 / 189 / 170 / 1555 / 1556 糊成「看见钥匙路径不是已经揭开有没有脚本树就已经揭开有没有脚本树 interchangeable、就已经是不变量 189 interchangeable、就已经 153 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-341 keypath not already revealed-tree / not already 189 / not already 153-bundled 正式三事（153 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。153 keypath vs scriptpath bundled unbundling 启动（1554 item 1） |
+| A7536 | 高 | 看见钥匙路径不是已经揭开有没有脚本树 会被写成已经揭开有没有脚本树 interchangeable / 189 interchangeable | 官方 BIP-341 kpsp item 1：not already 已经揭开有没有脚本树 / not 189 |
+| A7537 | 高 | 看见keypath spend is not already revealing whether a script tree exists 会被写成已经是不变量 189 interchangeable / 170 interchangeable | 官方 BIP-341 kpsp item 1：not already 已经是不变量 189 / not 170 |
+| A7538 | 高 | 看见钥匙路径不是已经揭开有没有脚本树 会被写成已经 153 bundled interchangeable | 官方 BIP-341 kpsp item 1：not already settled |
+| A7539 | 中 | 怎样藏一条别人看不见的脚本路径会被抄进不确定 | 不抄。不写 怎样藏一条别人看不见的脚本路径。不另写 19 节 |
+| A7530 | 记录 | 会与 152 / 145 / 174 / 1551 / 1552 糊成「看见头上的txid Merkle不是已经承诺wtxid就已经承诺wtxid interchangeable、就已经是不变量 145 interchangeable、就已经是不变量 174 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-141 header-txid-merkle not already wtxid-commit / not already 145 / not already 174 正式三事（152 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。152 txid vs wtxid bundled unbundling 完成（1553 item 3） |
+| A7531 | 高 | 看见头上的txid Merkle不是已经承诺wtxid 会被写成已经承诺wtxid interchangeable / 145 interchangeable | 官方 BIP-141 twid item 3：not already 已经承诺wtxid / not 145 |
+| A7532 | 高 | 看见the header txid Merkle is not already the wtxid commitment 会被写成已经是不变量 145 interchangeable / 174 interchangeable | 官方 BIP-141 twid item 3：not already 已经是不变量 145 / not 174 |
+| A7533 | 高 | 看见头上的txid Merkle不是已经承诺wtxid 会被写成已经是不变量 174 interchangeable | 官方 BIP-141 twid item 3：not already settled |
+| A7534 | 中 | 怎样改见证编码会被抄进不确定 | 不抄。不写 怎样改见证编码。不另写 19 节 |
+| A7525 | 记录 | 会与 152 / 144 / 12 / 1551 / 1553 糊成「看见改见证不是已经改交易身份就已经改txid interchangeable、就已经是不变量 144 interchangeable、就已经是不变量 12 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-141 change-witness not already change-txid / not already 144 / not already 12 正式三事（152 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。152 txid vs wtxid bundled unbundling 续（1552 item 2） |
+| A7526 | 高 | 看见改见证不是已经改交易身份 会被写成已经改txid interchangeable / 144 interchangeable | 官方 BIP-141 twid item 2：not already 已经改txid / not 144 |
+| A7527 | 高 | 看见changing the witness is not already changing the txid 会被写成已经是不变量 144 interchangeable / 12 interchangeable | 官方 BIP-141 twid item 2：not already 已经是不变量 144 / not 12 |
+| A7528 | 高 | 看见改见证不是已经改交易身份 会被写成已经是不变量 12 interchangeable | 官方 BIP-141 twid item 2：not already settled |
+| A7529 | 中 | 怎样改见证编码会被抄进不确定 | 不抄。不写 怎样改见证编码。不另写 19 节 |
+| A7520 | 记录 | 会与 152 / 248 / 144 / 1552 / 1553 糊成「看见txid不是wtxid就已经是wtxid interchangeable、就已经是不变量 248 interchangeable、就已经 152 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-141 txid not already wtxid / not already 248 / not already 152-bundled 正式三事（152 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。152 txid vs wtxid bundled unbundling 启动（1551 item 1） |
+| A7521 | 高 | 看见txid不是wtxid 会被写成已经是wtxid interchangeable / 248 interchangeable | 官方 BIP-141 twid item 1：not already 已经是wtxid / not 248 |
+| A7522 | 高 | 看见txid is not already wtxid 会被写成已经是不变量 248 interchangeable / 144 interchangeable | 官方 BIP-141 twid item 1：not already 已经是不变量 248 / not 144 |
+| A7523 | 高 | 看见txid不是wtxid 会被写成已经 152 bundled interchangeable | 官方 BIP-141 twid item 1：not already settled |
+| A7524 | 中 | 怎样改见证编码会被抄进不确定 | 不抄。不写 怎样改见证编码。不另写 19 节 |
+| A7515 | 记录 | 会与 172 / 144 / 171 / 1548 / 1549 糊成「看见转发策略已经要DER不是共识已经要就共识已经要 interchangeable、就已经是不变量 144 interchangeable、就已经是不变量 171 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 BIP-66 relay-der not already consensus-der / not already 144 / not already 171 正式三事（172 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M1.4、L1.4。172 valid vs der bundled unbundling 完成（1550 item 3） |
+| A7516 | 高 | 看见转发策略已经要DER不是共识已经要 会被写成共识已经要 interchangeable / 144 interchangeable | 官方 BIP-66 sder item 3：not already 共识已经要 / not 144 |
+| A7517 | 高 | 看见relay already requiring DER is not already consensus requiring it 会被写成已经是不变量 144 interchangeable / 171 interchangeable | 官方 BIP-66 sder item 3：not already 已经是不变量 144 / not 171 |
+| A7518 | 高 | 看见转发策略已经要DER不是共识已经要 会被写成已经是不变量 171 interchangeable | 官方 BIP-66 sder item 3：not already settled |
+| A7519 | 中 | 怎样把非DER改成DER、怎样造能过库过不了共识的签会被抄进不确定 | 不抄。不写 怎样把非DER改成DER、怎样造能过库过不了共识的签。不另写 19 节 |
+| A7510 | 记录 | 会与 172 / 3 / 152 / 1548 / 1550 糊成「看见库接受某种变形不是共识已经接受就共识已经接受 interchangeable、就已经是不变量 3 interchangeable、就已经是不变量 152 interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 BIP-66 library-accept not already consensus-accept / not already 3 / not already 152 正式三事（172 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M1.4、L1.4。172 valid vs der bundled unbundling 续（1549 item 2） |
+| A7511 | 高 | 看见库接受某种变形不是共识已经接受 会被写成共识已经接受 interchangeable / 3 interchangeable | 官方 BIP-66 sder item 2：not already 共识已经接受 / not 3 |
+| A7512 | 高 | 看见a library accepting a variant is not already consensus accepting it 会被写成已经是不变量 3 interchangeable / 152 interchangeable | 官方 BIP-66 sder item 2：not already 已经是不变量 3 / not 152 |
+| A7513 | 高 | 看见库接受某种变形不是共识已经接受 会被写成已经是不变量 152 interchangeable | 官方 BIP-66 sder item 2：not already settled |
+| A7514 | 中 | 怎样把非DER改成DER、怎样造能过库过不了共识的签会被抄进不确定 | 不抄。不写 怎样把非DER改成DER、怎样造能过库过不了共识的签。不另写 19 节 |
+| A7505 | 记录 | 会与 172 / 144 / 3 / 1549 / 1550 糊成「看见ECDSA数学上验得过不是已经是严格DER就已经是严格DER interchangeable、就已经是不变量 144 interchangeable、就已经 172 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L1.4 BIP-66 ecdsa-valid not already strict-der / not already 144 / not already 172-bundled 正式三事（172 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M1.4、L1.4。172 valid vs der bundled unbundling 启动（1548 item 1） |
+| A7506 | 高 | 看见ECDSA数学上验得过不是已经是严格DER 会被写成已经是严格DER interchangeable / 144 interchangeable | 官方 BIP-66 sder item 1：not already 已经是严格DER / not 144 |
+| A7507 | 高 | 看见ECDSA verifying is not already being strict DER 会被写成已经是不变量 144 interchangeable / 3 interchangeable | 官方 BIP-66 sder item 1：not already 已经是不变量 144 / not 3 |
+| A7508 | 高 | 看见ECDSA数学上验得过不是已经是严格DER 会被写成已经 172 bundled interchangeable | 官方 BIP-66 sder item 1：not already settled |
+| A7509 | 中 | 怎样把非DER改成DER、怎样造能过库过不了共识的签会被抄进不确定 | 不抄。不写 怎样把非DER改成DER、怎样造能过库过不了共识的签。不另写 19 节 |
+| A7500 | 记录 | 会与 171 / 173 / 144 / 1545 / 1546 糊成「看见超时未锁定不是已经可以当激活就已经可以当激活 interchangeable、就已经是不变量 173 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L3.3 BIP-9 timeout-failed not already treat-as-active / not already 173 / not already 144 正式三事（171 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.3、L3.3。171 versionbit vs active bundled unbundling 完成（1547 item 3） |
+| A7501 | 高 | 看见超时未锁定不是已经可以当激活 会被写成已经可以当激活 interchangeable / 173 interchangeable | 官方 BIP-9 vb9 item 3：not already 已经可以当激活 / not 173 |
+| A7502 | 高 | 看见timing out without lock is not already treating it as active 会被写成已经是不变量 173 interchangeable / 144 interchangeable | 官方 BIP-9 vb9 item 3：not already 已经是不变量 173 / not 144 |
+| A7503 | 高 | 看见超时未锁定不是已经可以当激活 会被写成已经是不变量 144 interchangeable | 官方 BIP-9 vb9 item 3：not already settled |
+| A7504 | 中 | 怎样假示意、怎样拖激活、怎样复用位去骗旧软件会被抄进不确定 | 不抄。不写 怎样假示意、怎样拖激活、怎样复用位去骗旧软件。不另写 19 节 |
+| A7495 | 记录 | 会与 171 / 165 / 41 / 1545 / 1547 糊成「看见锁定不是已经激活就已经激活 interchangeable、就已经是不变量 165 interchangeable、就已经是不变量 41 interchangeable」 | 对照写清。不编博物馆页。写进 L3.3 BIP-9 locked-in not already active / not already 165 / not already 41 正式三事（171 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.3、L3.3。171 versionbit vs active bundled unbundling 续（1546 item 2） |
+| A7496 | 高 | 看见锁定不是已经激活 会被写成已经激活 interchangeable / 165 interchangeable | 官方 BIP-9 vb9 item 2：not already 已经激活 / not 165 |
+| A7497 | 高 | 看见LOCKED_IN is not already ACTIVE 会被写成已经是不变量 165 interchangeable / 41 interchangeable | 官方 BIP-9 vb9 item 2：not already 已经是不变量 165 / not 41 |
+| A7498 | 高 | 看见锁定不是已经激活 会被写成已经是不变量 41 interchangeable | 官方 BIP-9 vb9 item 2：not already settled |
+| A7499 | 中 | 怎样假示意、怎样拖激活、怎样复用位去骗旧软件会被抄进不确定 | 不抄。不写 怎样假示意、怎样拖激活、怎样复用位去骗旧软件。不另写 19 节 |
+| A7490 | 记录 | 会与 171 / 173 / 165 / 1546 / 1547 糊成「看见版本位被置上不是已经锁定就已经锁定 interchangeable、就已经是不变量 173 interchangeable、就已经 171 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.3 BIP-9 bit-set not already locked-in / not already 173 / not already 171-bundled 正式三事（171 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.3、L3.3。171 versionbit vs active bundled unbundling 启动（1545 item 1） |
+| A7491 | 高 | 看见版本位被置上不是已经锁定 会被写成已经锁定 interchangeable / 173 interchangeable | 官方 BIP-9 vb9 item 1：not already 已经锁定 / not 173 |
+| A7492 | 高 | 看见setting a version bit is not already LOCKED_IN 会被写成已经是不变量 173 interchangeable / 165 interchangeable | 官方 BIP-9 vb9 item 1：not already 已经是不变量 173 / not 165 |
+| A7493 | 高 | 看见版本位被置上不是已经锁定 会被写成已经 171 bundled interchangeable | 官方 BIP-9 vb9 item 1：not already settled |
+| A7494 | 中 | 怎样假示意、怎样拖激活、怎样复用位去骗旧软件会被抄进不确定 | 不抄。不写 怎样假示意、怎样拖激活、怎样复用位去骗旧软件。不另写 19 节 |
+| A7485 | 记录 | 会与 173 / 163 / 144 / 1542 / 1543 糊成「看见写了高度不是coinbase已经能花就已经能花 interchangeable、就已经是不变量 163 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-34 wrote-height not already spendable / not already 163 / not already 144 正式三事（173 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.1、L3.1。173 coinbase height vs header bundled unbundling 完成（1544 item 3） |
+| A7486 | 高 | 看见写了高度不是coinbase已经能花 会被写成已经能花 interchangeable / 163 interchangeable | 官方 BIP-34 cbht item 3：not already 已经能花 / not 163 |
+| A7487 | 高 | 看见writing the height is not already making the coinbase spendable 会被写成已经是不变量 163 interchangeable / 144 interchangeable | 官方 BIP-34 cbht item 3：not already 已经是不变量 163 / not 144 |
+| A7488 | 高 | 看见写了高度不是coinbase已经能花 会被写成已经是不变量 144 interchangeable | 官方 BIP-34 cbht item 3：not already settled |
+| A7489 | 中 | 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份会被抄进不确定 | 不抄。不写 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份。不另写 19 节 |
+| A7480 | 记录 | 会与 173 / 171 / 172 / 1542 / 1544 糊成「看见块version加大不是已经按BIP-9位向量激活就已经按BIP-9激活 interchangeable、就已经是不变量 171 interchangeable、就已经是不变量 172 interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-34 block-version-bump not already bip9-bits / not already 171 / not already 172 正式三事（173 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.1、L3.1。173 coinbase height vs header bundled unbundling 续（1543 item 2） |
+| A7481 | 高 | 看见块version加大不是已经按BIP-9位向量激活 会被写成已经按BIP-9激活 interchangeable / 171 interchangeable | 官方 BIP-34 cbht item 2：not already 已经按BIP-9激活 / not 171 |
+| A7482 | 高 | 看见bumping block version is not already BIP-9 bitvector activation 会被写成已经是不变量 171 interchangeable / 172 interchangeable | 官方 BIP-34 cbht item 2：not already 已经是不变量 171 / not 172 |
+| A7483 | 高 | 看见块version加大不是已经按BIP-9位向量激活 会被写成已经是不变量 172 interchangeable | 官方 BIP-34 cbht item 2：not already settled |
+| A7484 | 中 | 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份会被抄进不确定 | 不抄。不写 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份。不另写 19 节 |
+| A7475 | 记录 | 会与 173 / 171 / 163 / 1543 / 1544 糊成「看见coinbase第一项写了高度不是头上已经有高度字段就已经有高度字段 interchangeable、就已经是不变量 171 interchangeable、就已经 173 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.1 BIP-34 coinbase-height not already header-field / not already 171 / not already 173-bundled 正式三事（173 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.1、L3.1。173 coinbase height vs header bundled unbundling 启动（1542 item 1） |
+| A7476 | 高 | 看见coinbase第一项写了高度不是头上已经有高度字段 会被写成已经有高度字段 interchangeable / 171 interchangeable | 官方 BIP-34 cbht item 1：not already 已经有高度字段 / not 171 |
+| A7477 | 高 | 看见writing height in coinbase is not already a height field in the header 会被写成已经是不变量 171 interchangeable / 163 interchangeable | 官方 BIP-34 cbht item 1：not already 已经是不变量 171 / not 163 |
+| A7478 | 高 | 看见coinbase第一项写了高度不是头上已经有高度字段 会被写成已经 173 bundled interchangeable | 官方 BIP-34 cbht item 1：not already settled |
+| A7479 | 中 | 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份会被抄进不确定 | 不抄。不写 怎样造不带头高度的coinbase、怎样靠重复coinbase撞身份。不另写 19 节 |
+| A7470 | 记录 | 会与 181 / 174 / 153 / 1539 / 1540 糊成「看见看见后继地址串不是已经有UTXO就已经有UTXO interchangeable、就已经是不变量 174 interchangeable、就已经是不变量 153 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-350 successor-string not already utxo / not already 174 / not already 153 正式三事（181 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。181 bech32m vs bech32 bundled unbundling 完成（1541 item 3） |
+| A7471 | 高 | 看见看见后继地址串不是已经有UTXO 会被写成已经有UTXO interchangeable / 174 interchangeable | 官方 BIP-350 b32m item 3：not already 已经有UTXO / not 174 |
+| A7472 | 高 | 看见seeing a Bech32m string is not already having a UTXO 会被写成已经是不变量 174 interchangeable / 153 interchangeable | 官方 BIP-350 b32m item 3：not already 已经是不变量 174 / not 153 |
+| A7473 | 高 | 看见看见后继地址串不是已经有UTXO 会被写成已经是不变量 153 interchangeable | 官方 BIP-350 b32m item 3：not already settled |
+| A7474 | 中 | 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串会被抄进不确定 | 不抄。不写 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串。不另写 19 节 |
+| A7465 | 记录 | 会与 181 / 174 / 152 / 1539 / 1541 糊成「看见更高版本过了旧校验不是已经合法就已经合法 interchangeable、就已经是不变量 174 interchangeable、就已经是不变量 152 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-350 higher-ver-old-checksum not already legal / not already 174 / not already 152 正式三事（181 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。181 bech32m vs bech32 bundled unbundling 续（1540 item 2） |
+| A7466 | 高 | 看见更高版本过了旧校验不是已经合法 会被写成已经合法 interchangeable / 174 interchangeable | 官方 BIP-350 b32m item 2：not already 已经合法 / not 174 |
+| A7467 | 高 | 看见a higher version passing old checksum is not already legal 会被写成已经是不变量 174 interchangeable / 152 interchangeable | 官方 BIP-350 b32m item 2：not already 已经是不变量 174 / not 152 |
+| A7468 | 高 | 看见更高版本过了旧校验不是已经合法 会被写成已经是不变量 152 interchangeable | 官方 BIP-350 b32m item 2：not already settled |
+| A7469 | 中 | 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串会被抄进不确定 | 不抄。不写 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串。不另写 19 节 |
+| A7460 | 记录 | 会与 181 / 174 / 170 / 1540 / 1541 糊成「看见后继校验过了不是已经是旧校验那套地址就已经是旧校验那套地址 interchangeable、就已经是不变量 174 interchangeable、就已经 181 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-350 successor-pass not already old-bech32 / not already 174 / not already 181-bundled 正式三事（181 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。181 bech32m vs bech32 bundled unbundling 启动（1539 item 1） |
+| A7461 | 高 | 看见后继校验过了不是已经是旧校验那套地址 会被写成已经是旧校验那套地址 interchangeable / 174 interchangeable | 官方 BIP-350 b32m item 1：not already 已经是旧校验那套地址 / not 174 |
+| A7462 | 高 | 看见passing Bech32m is not already being a Bech32 address 会被写成已经是不变量 174 interchangeable / 170 interchangeable | 官方 BIP-350 b32m item 1：not already 已经是不变量 174 / not 170 |
+| A7463 | 高 | 看见后继校验过了不是已经是旧校验那套地址 会被写成已经 181 bundled interchangeable | 官方 BIP-350 b32m item 1：not already settled |
+| A7464 | 中 | 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串会被抄进不确定 | 不抄。不写 怎样插删字符让旧校验仍过、怎样造版本与编码不对的串。不另写 19 节 |
+| A7455 | 记录 | 会与 174 / 179 / 181 / 1536 / 1537 糊成「看见编出版本和程序不是已经付过款就已经付过款 interchangeable、就已经是不变量 179 interchangeable、就已经是不变量 181 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-173 encoded-program not already paid / not already 179 / not already 181 正式三事（174 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。174 address vs utxo bundled unbundling 完成（1538 item 3） |
+| A7456 | 高 | 看见编出版本和程序不是已经付过款 会被写成已经付过款 interchangeable / 179 interchangeable | 官方 BIP-173 adut item 3：not already 已经付过款 / not 179 |
+| A7457 | 高 | 看见encoding version and program is not already having paid 会被写成已经是不变量 179 interchangeable / 181 interchangeable | 官方 BIP-173 adut item 3：not already 已经是不变量 179 / not 181 |
+| A7458 | 高 | 看见编出版本和程序不是已经付过款 会被写成已经是不变量 181 interchangeable | 官方 BIP-173 adut item 3：not already settled |
+| A7459 | 中 | 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法会被抄进不确定 | 不抄。不写 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法。不另写 19 节 |
+| A7450 | 记录 | 会与 174 / 170 / 152 / 1536 / 1538 糊成「看见校验过不是见证程序已经在链上就已经在链上 interchangeable、就已经是不变量 170 interchangeable、就已经是不变量 152 interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-173 checksum-pass not already program-on-chain / not already 170 / not already 152 正式三事（174 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。174 address vs utxo bundled unbundling 续（1537 item 2） |
+| A7451 | 高 | 看见校验过不是见证程序已经在链上 会被写成已经在链上 interchangeable / 170 interchangeable | 官方 BIP-173 adut item 2：not already 已经在链上 / not 170 |
+| A7452 | 高 | 看见passing the checksum is not already the witness program being on chain 会被写成已经是不变量 170 interchangeable / 152 interchangeable | 官方 BIP-173 adut item 2：not already 已经是不变量 170 / not 152 |
+| A7453 | 高 | 看见校验过不是见证程序已经在链上 会被写成已经是不变量 152 interchangeable | 官方 BIP-173 adut item 2：not already settled |
+| A7454 | 中 | 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法会被抄进不确定 | 不抄。不写 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法。不另写 19 节 |
+| A7445 | 记录 | 会与 174 / 181 / 170 / 1537 / 1538 糊成「看见Bech32地址串不是链上已经有这笔输出就已经有这笔输出 interchangeable、就已经是不变量 181 interchangeable、就已经 174 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.7 BIP-173 bech32-string not already on-chain-utxo / not already 181 / not already 174-bundled 正式三事（174 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.7、L3.7。174 address vs utxo bundled unbundling 启动（1536 item 1） |
+| A7446 | 高 | 看见Bech32地址串不是链上已经有这笔输出 会被写成已经有这笔输出 interchangeable / 181 interchangeable | 官方 BIP-173 adut item 1：not already 已经有这笔输出 / not 181 |
+| A7447 | 高 | 看见seeing a Bech32 string is not already having that output on chain 会被写成已经是不变量 181 interchangeable / 170 interchangeable | 官方 BIP-173 adut item 1：not already 已经是不变量 181 / not 170 |
+| A7448 | 高 | 看见Bech32地址串不是链上已经有这笔输出 会被写成已经 174 bundled interchangeable | 官方 BIP-173 adut item 1：not already settled |
+| A7449 | 中 | 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法会被抄进不确定 | 不抄。不写 怎样造能过校验却指错程序的串、怎样靠增删字符撞合法。不另写 19 节 |
+| A7440 | 记录 | 会与 170 / 152 / 297 / 1533 / 1534 糊成「看见哈希对上不是内层已经验过就已经验过内层 interchangeable、就已经是不变量 152 interchangeable、就已经是不变量 297 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-16 hash-match not already inner-verified / not already 152 / not already 297 正式三事（170 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。170 p2sh hash vs redeem bundled unbundling 完成（1535 item 3） |
+| A7441 | 高 | 看见哈希对上不是内层已经验过 会被写成已经验过内层 interchangeable / 152 interchangeable | 官方 BIP-16 phsh item 3：not already 已经验过内层 / not 152 |
+| A7442 | 高 | 看见hash matching is not already the inner script having been verified 会被写成已经是不变量 152 interchangeable / 297 interchangeable | 官方 BIP-16 phsh item 3：not already 已经是不变量 152 / not 297 |
+| A7443 | 高 | 看见哈希对上不是内层已经验过 会被写成已经是不变量 297 interchangeable | 官方 BIP-16 phsh item 3：not already settled |
+| A7444 | 中 | 怎样构造旧合法新非法的赎回、一确认攻击会被抄进不确定 | 不抄。不写 怎样构造旧合法新非法的赎回、一确认攻击。不另写 19 节 |
+| A7435 | 记录 | 会与 170 / 153 / 144 / 1533 / 1535 糊成「看见旧节点HASH160 EQUAL通过不是新节点已经再跑赎回就已经再跑过赎回 interchangeable、就已经是不变量 153 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-16 old-equal not already new-reran / not already 153 / not already 144 正式三事（170 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。170 p2sh hash vs redeem bundled unbundling 续（1534 item 2） |
+| A7436 | 高 | 看见旧节点HASH160 EQUAL通过不是新节点已经再跑赎回 会被写成已经再跑过赎回 interchangeable / 153 interchangeable | 官方 BIP-16 phsh item 2：not already 已经再跑过赎回 / not 153 |
+| A7437 | 高 | 看见old-node HASH160 EQUAL passing is not already the new node re-running redeem 会被写成已经是不变量 153 interchangeable / 144 interchangeable | 官方 BIP-16 phsh item 2：not already 已经是不变量 153 / not 144 |
+| A7438 | 高 | 看见旧节点HASH160 EQUAL通过不是新节点已经再跑赎回 会被写成已经是不变量 144 interchangeable | 官方 BIP-16 phsh item 2：not already settled |
+| A7439 | 中 | 怎样构造旧合法新非法的赎回、一确认攻击会被抄进不确定 | 不抄。不写 怎样构造旧合法新非法的赎回、一确认攻击。不另写 19 节 |
+| A7430 | 记录 | 会与 170 / 297 / 153 / 1534 / 1535 糊成「看见付给脚本哈希不是已经揭开赎回脚本就已经揭开赎回脚本 interchangeable、就已经是不变量 297 interchangeable、就已经 170 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-16 hash-output not already redeem-revealed / not already 297 / not already 170-bundled 正式三事（170 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。170 p2sh hash vs redeem bundled unbundling 启动（1533 item 1） |
+| A7431 | 高 | 看见付给脚本哈希不是已经揭开赎回脚本 会被写成已经揭开赎回脚本 interchangeable / 297 interchangeable | 官方 BIP-16 phsh item 1：not already 已经揭开赎回脚本 / not 297 |
+| A7432 | 高 | 看见paying a script hash is not already revealing the redeem script 会被写成已经是不变量 297 interchangeable / 153 interchangeable | 官方 BIP-16 phsh item 1：not already 已经是不变量 297 / not 153 |
+| A7433 | 高 | 看见付给脚本哈希不是已经揭开赎回脚本 会被写成已经 170 bundled interchangeable | 官方 BIP-16 phsh item 1：not already settled |
+| A7434 | 中 | 怎样构造旧合法新非法的赎回、一确认攻击会被抄进不确定 | 不抄。不写 怎样构造旧合法新非法的赎回、一确认攻击。不另写 19 节 |
+| A7425 | 记录 | 会与 164 / 41 / 165 / 1530 / 1531 糊成「看见CLTV比的是花费交易的nLockTime不是墙上现在就已经在跟墙上现在比 interchangeable、就已经是不变量 41 interchangeable、就已经是不变量 165 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-65 cltv-compares-nlocktime not already wall-clock / not already 41 / not already 165 正式三事（164 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。164 cltv vs nlocktime bundled unbundling 完成（1532 item 3） |
+| A7426 | 高 | 看见CLTV比的是花费交易的nLockTime不是墙上现在 会被写成已经在跟墙上现在比 interchangeable / 41 interchangeable | 官方 BIP-65 cl65 item 3：not already 已经在跟墙上现在比 / not 41 |
+| A7427 | 高 | 看见CLTV comparing against nLockTime is not already comparing against wall-clock now 会被写成已经是不变量 41 interchangeable / 165 interchangeable | 官方 BIP-65 cl65 item 3：not already 已经是不变量 41 / not 165 |
+| A7428 | 高 | 看见CLTV比的是花费交易的nLockTime不是墙上现在 会被写成已经是不变量 165 interchangeable | 官方 BIP-65 cl65 item 3：not already settled |
+| A7429 | 中 | 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款会被抄进不确定 | 不抄。不写 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款。不另写 19 节 |
+| A7420 | 记录 | 会与 164 / 163 / 41 / 1530 / 1532 糊成「看见nLockTime能证明将来能花不是已经证明现在不能花就已经证明现在不能花 interchangeable、就已经是不变量 163 interchangeable、就已经是不变量 41 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-65 nlocktime-future-spend not already present-unspendable / not already 163 / not already 41 正式三事（164 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。164 cltv vs nlocktime bundled unbundling 续（1531 item 2） |
+| A7421 | 高 | 看见nLockTime能证明将来能花不是已经证明现在不能花 会被写成已经证明现在不能花 interchangeable / 163 interchangeable | 官方 BIP-65 cl65 item 2：not already 已经证明现在不能花 / not 163 |
+| A7422 | 高 | 看见nLockTime proving a future spend is not already proving it cannot be spent now 会被写成已经是不变量 163 interchangeable / 41 interchangeable | 官方 BIP-65 cl65 item 2：not already 已经是不变量 163 / not 41 |
+| A7423 | 高 | 看见nLockTime能证明将来能花不是已经证明现在不能花 会被写成已经是不变量 41 interchangeable | 官方 BIP-65 cl65 item 2：not already settled |
+| A7424 | 中 | 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款会被抄进不确定 | 不抄。不写 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款。不另写 19 节 |
+| A7415 | 记录 | 会与 164 / 165 / 163 / 1531 / 1532 糊成「看见脚本里的CLTV不是交易nLockTime已经把输出锁到那时就已经把输出锁住 interchangeable、就已经是不变量 165 interchangeable、就已经 164 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-65 script-cltv not already nlocktime-locked / not already 165 / not already 164-bundled 正式三事（164 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。164 cltv vs nlocktime bundled unbundling 启动（1530 item 1） |
+| A7416 | 高 | 看见脚本里的CLTV不是交易nLockTime已经把输出锁到那时 会被写成已经把输出锁住 interchangeable / 165 interchangeable | 官方 BIP-65 cl65 item 1：not already 已经把输出锁住 / not 165 |
+| A7417 | 高 | 看见script CLTV is not already an output locked by nLockTime 会被写成已经是不变量 165 interchangeable / 163 interchangeable | 官方 BIP-65 cl65 item 1：not already 已经是不变量 165 / not 163 |
+| A7418 | 高 | 看见脚本里的CLTV不是交易nLockTime已经把输出锁到那时 会被写成已经 164 bundled interchangeable | 官方 BIP-65 cl65 item 1：not already settled |
+| A7419 | 中 | 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款会被抄进不确定 | 不抄。不写 怎样用final输入绕过CLTV、怎样拼托管或支付通道退款。不另写 19 节 |
+| A7410 | 记录 | 会与 165 / 41 / 164 / 1527 / 1528 糊成「看见CSV软分叉部署不是已经在讲CHECKSEQUENCEVERIFY操作码就已经是操作码 interchangeable、就已经是不变量 41 interchangeable、就已经是不变量 164 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-112 csv-deploy not already opcode / not already 41 / not already 164 正式三事（165 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。165 csv vs cltv bundled unbundling 完成（1529 item 3） |
+| A7411 | 高 | 看见CSV软分叉部署不是已经在讲CHECKSEQUENCEVERIFY操作码 会被写成已经是操作码 interchangeable / 41 interchangeable | 官方 BIP-112 csvd item 3：not already 已经是操作码 / not 41 |
+| A7412 | 高 | 看见the CSV soft-fork name is not already the CHECKSEQUENCEVERIFY opcode 会被写成已经是不变量 41 interchangeable / 164 interchangeable | 官方 BIP-112 csvd item 3：not already 已经是不变量 41 / not 164 |
+| A7413 | 高 | 看见CSV软分叉部署不是已经在讲CHECKSEQUENCEVERIFY操作码 会被写成已经是不变量 164 interchangeable | 官方 BIP-112 csvd item 3：not already settled |
+| A7414 | 中 | 怎样绕过相对锁会被抄进不确定 | 不抄。不写 怎样绕过相对锁。不另写 19 节 |
+| A7405 | 记录 | 会与 165 / 164 / 163 / 1527 / 1529 糊成「看见相对锁不是已经是绝对锁就已经是绝对锁 interchangeable、就已经是不变量 164 interchangeable、就已经是不变量 163 interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-112 relative-lock not already absolute-lock / not already 164 / not already 163 正式三事（165 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。165 csv vs cltv bundled unbundling 续（1528 item 2） |
+| A7406 | 高 | 看见相对锁不是已经是绝对锁 会被写成已经是绝对锁 interchangeable / 164 interchangeable | 官方 BIP-112 csvd item 2：not already 已经是绝对锁 / not 164 |
+| A7407 | 高 | 看见a relative lock is not already an absolute lock 会被写成已经是不变量 164 interchangeable / 163 interchangeable | 官方 BIP-112 csvd item 2：not already 已经是不变量 164 / not 163 |
+| A7408 | 高 | 看见相对锁不是已经是绝对锁 会被写成已经是不变量 163 interchangeable | 官方 BIP-112 csvd item 2：not already settled |
+| A7409 | 中 | 怎样绕过相对锁会被抄进不确定 | 不抄。不写 怎样绕过相对锁。不另写 19 节 |
+| A7400 | 记录 | 会与 165 / 164 / 163 / 1528 / 1529 糊成「看见脚本里的CSV不是nSequence已经把输出相对锁住就已经相对锁住 interchangeable、就已经是不变量 164 interchangeable、就已经 165 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L2.1 BIP-112 script-csv not already nsequence-locked / not already 164 / not already 165-bundled 正式三事（165 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M2.1、L2.1。165 csv vs cltv bundled unbundling 启动（1527 item 1） |
+| A7401 | 高 | 看见脚本里的CSV不是nSequence已经把输出相对锁住 会被写成已经相对锁住 interchangeable / 164 interchangeable | 官方 BIP-112 csvd item 1：not already 已经相对锁住 / not 164 |
+| A7402 | 高 | 看见script CSV is not already a relative lock from nSequence 会被写成已经是不变量 164 interchangeable / 163 interchangeable | 官方 BIP-112 csvd item 1：not already 已经是不变量 164 / not 163 |
+| A7403 | 高 | 看见脚本里的CSV不是nSequence已经把输出相对锁住 会被写成已经 165 bundled interchangeable | 官方 BIP-112 csvd item 1：not already settled |
+| A7404 | 中 | 怎样绕过相对锁会被抄进不确定 | 不抄。不写 怎样绕过相对锁。不另写 19 节 |
+| A7395 | 记录 | 会与 166 / 144 / 165 / 1524 / 1525 糊成「看见子孙继承信号不是自己已经明示加入就已经明示加入 interchangeable、就已经是不变量 144 interchangeable、就已经是不变量 165 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 BIP-125 inherited-signal not already explicit-join / not already 144 / not already 165 正式三事（166 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。166 rbf-signal vs replaced bundled unbundling 完成（1526 item 3） |
+| A7396 | 高 | 看见子孙继承信号不是自己已经明示加入 会被写成已经明示加入 interchangeable / 144 interchangeable | 官方 BIP-125 rbfs item 3：not already 已经明示加入 / not 144 |
+| A7397 | 高 | 看见an inherited replace signal is not already an explicit opt-in 会被写成已经是不变量 144 interchangeable / 165 interchangeable | 官方 BIP-125 rbfs item 3：not already 已经是不变量 144 / not 165 |
+| A7398 | 高 | 看见子孙继承信号不是自己已经明示加入 会被写成已经是不变量 165 interchangeable | 官方 BIP-125 rbfs item 3：not already settled |
+| A7399 | 中 | 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔会被抄进不确定 | 不抄。不写 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔。不另写 19 节 |
+| A7390 | 记录 | 会与 166 / 165 / 164 / 1524 / 1526 糊成「看见nSequence用来示意可替换不是已经是相对锁就已经是相对锁 interchangeable、就已经是不变量 165 interchangeable、就已经是不变量 164 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 BIP-125 nsequence-signal not already relative-lock / not already 165 / not already 164 正式三事（166 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。166 rbf-signal vs replaced bundled unbundling 续（1525 item 2） |
+| A7391 | 高 | 看见nSequence用来示意可替换不是已经是相对锁 会被写成已经是相对锁 interchangeable / 165 interchangeable | 官方 BIP-125 rbfs item 2：not already 已经是相对锁 / not 165 |
+| A7392 | 高 | 看见using nSequence to signal replaceability is not already a relative lock 会被写成已经是不变量 165 interchangeable / 164 interchangeable | 官方 BIP-125 rbfs item 2：not already 已经是不变量 165 / not 164 |
+| A7393 | 高 | 看见nSequence用来示意可替换不是已经是相对锁 会被写成已经是不变量 164 interchangeable | 官方 BIP-125 rbfs item 2：not already settled |
+| A7394 | 中 | 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔会被抄进不确定 | 不抄。不写 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔。不另写 19 节 |
+| A7385 | 记录 | 会与 166 / 144 / 165 / 1525 / 1526 糊成「看见选择加入替换信号不是已经换掉就已经换掉 interchangeable、就已经是不变量 144 interchangeable、就已经 166 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 BIP-125 opt-in-signal not already replaced / not already 144 / not already 166-bundled 正式三事（166 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。166 rbf-signal vs replaced bundled unbundling 启动（1524 item 1） |
+| A7386 | 高 | 看见选择加入替换信号不是已经换掉 会被写成已经换掉 interchangeable / 144 interchangeable | 官方 BIP-125 rbfs item 1：not already 已经换掉 / not 144 |
+| A7387 | 高 | 看见an opt-in replace signal is not already a replacement 会被写成已经是不变量 144 interchangeable / 165 interchangeable | 官方 BIP-125 rbfs item 1：not already 已经是不变量 144 / not 165 |
+| A7388 | 高 | 看见选择加入替换信号不是已经换掉 会被写成已经 166 bundled interchangeable | 官方 BIP-125 rbfs item 1：not already settled |
+| A7389 | 中 | 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔会被抄进不确定 | 不抄。不写 怎样构造替换、怎样钉死、怎样挤掉商家看见的那笔。不另写 19 节 |
+| A7380 | 记录 | 会与 144 / 245 / 44 / 1521 / 1522 糊成「看见费率高不是更正确就已经更正确 interchangeable、就已经是不变量 245 interchangeable、就已经是不变量 44 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 Policy higher-fee not already more-correct / not already 245 / not already 44 正式三事（144 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。144 policy vs consensus bundled unbundling 完成（1523 item 3） |
+| A7381 | 高 | 看见费率高不是更正确 会被写成已经更正确 interchangeable / 245 interchangeable | 官方 Policy polc item 3：not already 已经更正确 / not 245 |
+| A7382 | 高 | 看见a higher fee is not already more correct 会被写成已经是不变量 245 interchangeable / 44 interchangeable | 官方 Policy polc item 3：not already 已经是不变量 245 / not 44 |
+| A7383 | 高 | 看见费率高不是更正确 会被写成已经是不变量 44 interchangeable | 官方 Policy polc item 3：not already settled |
+| A7384 | 中 | 怎样把非标准塞进块、怎样 RBF 钉死会被抄进不确定 | 不抄。不写 怎样把非标准塞进块、怎样 RBF 钉死。不另写 19 节 |
+| A7375 | 记录 | 会与 144 / 25 / 166 / 1521 / 1523 糊成「看见策略通过不是已经进块就已经进块 interchangeable、就已经是不变量 25 interchangeable、就已经是不变量 166 interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 Policy policy-pass not already in-block / not already 25 / not already 166 正式三事（144 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。144 policy vs consensus bundled unbundling 续（1522 item 2） |
+| A7376 | 高 | 看见策略通过不是已经进块 会被写成已经进块 interchangeable / 25 interchangeable | 官方 Policy polc item 2：not already 已经进块 / not 25 |
+| A7377 | 高 | 看见a policy pass is not already inclusion in a block 会被写成已经是不变量 25 interchangeable / 166 interchangeable | 官方 Policy polc item 2：not already 已经是不变量 25 / not 166 |
+| A7378 | 高 | 看见策略通过不是已经进块 会被写成已经是不变量 166 interchangeable | 官方 Policy polc item 2：not already settled |
+| A7379 | 中 | 怎样把非标准塞进块、怎样 RBF 钉死会被抄进不确定 | 不抄。不写 怎样把非标准塞进块、怎样 RBF 钉死。不另写 19 节 |
+| A7370 | 记录 | 会与 144 / 44 / 25 / 1522 / 1523 糊成「看见策略拒绝不是共识非法就已经共识非法 interchangeable、就已经是不变量 44 interchangeable、就已经 144 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.2 Policy policy-reject not already consensus-illegal / not already 44 / not already 144-bundled 正式三事（144 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.2、L3.2。144 policy vs consensus bundled unbundling 启动（1521 item 1） |
+| A7371 | 高 | 看见策略拒绝不是共识非法 会被写成已经共识非法 interchangeable / 44 interchangeable | 官方 Policy polc item 1：not already 已经共识非法 / not 44 |
+| A7372 | 高 | 看见a policy rejection is not already consensus-illegal 会被写成已经是不变量 44 interchangeable / 25 interchangeable | 官方 Policy polc item 1：not already 已经是不变量 44 / not 25 |
+| A7373 | 高 | 看见策略拒绝不是共识非法 会被写成已经 144 bundled interchangeable | 官方 Policy polc item 1：not already settled |
+| A7374 | 中 | 怎样把非标准塞进块、怎样 RBF 钉死会被抄进不确定 | 不抄。不写 怎样把非标准塞进块、怎样 RBF 钉死。不另写 19 节 |
+| A7365 | 记录 | 会与 25 / 24 / 23 / 1518 / 1519 糊成「看见assumevalid不是已经弱主观检查点就已经是弱主观 interchangeable、就已经是不变量 24 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 assumevalid assumevalid not already weak-subjectivity / not already 24 / not already 23 正式三事（25 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.5、L3.5。25 assumevalid vs checkpoint bundled unbundling 完成（1520 item 3） |
+| A7366 | 高 | 看见assumevalid不是已经弱主观检查点 会被写成已经是弱主观 interchangeable / 24 interchangeable | 官方 assumevalid asv item 3：not already 已经是弱主观 / not 24 |
+| A7367 | 高 | 看见assumevalid is not already a weak-subjectivity checkpoint 会被写成已经是不变量 24 interchangeable / 23 interchangeable | 官方 assumevalid asv item 3：not already 已经是不变量 24 / not 23 |
+| A7368 | 高 | 看见assumevalid不是已经弱主观检查点 会被写成已经是不变量 23 interchangeable | 官方 assumevalid asv item 3：not already settled |
+| A7369 | 中 | 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证会被抄进不确定 | 不抄。不写 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证。不另写 19 节 |
+| A7360 | 记录 | 会与 25 / 38 / 207 / 1518 / 1520 糊成「看见assumevalid不是已经assumeutxo就已经是assumeutxo interchangeable、就已经是不变量 38 interchangeable、就已经是不变量 207 interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 assumevalid assumevalid not already assumeutxo / not already 38 / not already 207 正式三事（25 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.5、L3.5。25 assumevalid vs checkpoint bundled unbundling 续（1519 item 2） |
+| A7361 | 高 | 看见assumevalid不是已经assumeutxo 会被写成已经是assumeutxo interchangeable / 38 interchangeable | 官方 assumevalid asv item 2：not already 已经是assumeutxo / not 38 |
+| A7362 | 高 | 看见assumevalid is not already assumeutxo 会被写成已经是不变量 38 interchangeable / 207 interchangeable | 官方 assumevalid asv item 2：not already 已经是不变量 38 / not 207 |
+| A7363 | 高 | 看见assumevalid不是已经assumeutxo 会被写成已经是不变量 207 interchangeable | 官方 assumevalid asv item 2：not already settled |
+| A7364 | 中 | 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证会被抄进不确定 | 不抄。不写 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证。不另写 19 节 |
+| A7355 | 记录 | 会与 25 / 24 / 38 / 1519 / 1520 糊成「看见assumevalid不是已经旧checkpoint就已经强迫那条链 interchangeable、就已经是不变量 24 interchangeable、就已经 25 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L3.5 assumevalid assumevalid not already checkpoint-forced / not already 24 / not already 25-bundled 正式三事（25 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M3.5、L3.5。25 assumevalid vs checkpoint bundled unbundling 启动（1518 item 1） |
+| A7356 | 高 | 看见assumevalid不是已经旧checkpoint 会被写成已经强迫那条链 interchangeable / 24 interchangeable | 官方 assumevalid asv item 1：not already 已经强迫那条链 / not 24 |
+| A7357 | 高 | 看见assumevalid is not already the old checkpoint 会被写成已经是不变量 24 interchangeable / 38 interchangeable | 官方 assumevalid asv item 1：not already 已经是不变量 24 / not 38 |
+| A7358 | 高 | 看见assumevalid不是已经旧checkpoint 会被写成已经 25 bundled interchangeable | 官方 assumevalid asv item 1：not already settled |
+| A7359 | 中 | 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证会被抄进不确定 | 不抄。不写 怎样设一个无效历史里的哈希、怎样在背景验完前当已从创世验证。不另写 19 节 |
+| A7350 | 记录 | 会与 23 / 145 / 9 / 1515 / 1516 糊成「看见看见承诺哈希不是数据已经永存就已经永存 interchangeable、就已经是不变量 145 interchangeable、就已经是不变量 9 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-4844 hash-committed not already perpetual / not already 145 / not already 9 正式三事（23 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。23 blob vs das bundled unbundling 完成（1517 item 3） |
+| A7351 | 高 | 看见看见承诺哈希不是数据已经永存 会被写成已经永存 interchangeable / 145 interchangeable | 官方 EIP-4844 kdas item 3：not already 已经永存 / not 145 |
+| A7352 | 高 | 看见seeing the commitment hash is not already perpetual data 会被写成已经是不变量 145 interchangeable / 9 interchangeable | 官方 EIP-4844 kdas item 3：not already 已经是不变量 145 / not 9 |
+| A7353 | 高 | 看见看见承诺哈希不是数据已经永存 会被写成已经是不变量 9 interchangeable | 官方 EIP-4844 kdas item 3：not already settled |
+| A7354 | 中 | 怎样扣列、怎样只问RPC就显示已抽样会被抄进不确定 | 不抄。不写 怎样扣列、怎样只问RPC就显示已抽样。不另写 19 节 |
+| A7345 | 记录 | 会与 23 / 124 / 200 / 1515 / 1517 糊成「看见PeerDAS不是已经Celestia二维DAS就已经是Celestia二维DAS interchangeable、就已经是不变量 124 interchangeable、就已经是不变量 200 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-4844 peerdas not already celestia-das / not already 124 / not already 200 正式三事（23 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。23 blob vs das bundled unbundling 续（1516 item 2） |
+| A7346 | 高 | 看见PeerDAS不是已经Celestia二维DAS 会被写成已经是Celestia二维DAS interchangeable / 124 interchangeable | 官方 EIP-4844 kdas item 2：not already 已经是Celestia二维DAS / not 124 |
+| A7347 | 高 | 看见PeerDAS is not already Celestia 2D DAS 会被写成已经是不变量 124 interchangeable / 200 interchangeable | 官方 EIP-4844 kdas item 2：not already 已经是不变量 124 / not 200 |
+| A7348 | 高 | 看见PeerDAS不是已经Celestia二维DAS 会被写成已经是不变量 200 interchangeable | 官方 EIP-4844 kdas item 2：not already settled |
+| A7349 | 中 | 怎样扣列、怎样只问RPC就显示已抽样会被抄进不确定 | 不抄。不写 怎样扣列、怎样只问RPC就显示已抽样。不另写 19 节 |
+| A7340 | 记录 | 会与 23 / 145 / 124 / 1516 / 1517 糊成「看见KZG sidecar不是已经PeerDAS就已经是PeerDAS interchangeable、就已经是不变量 145 interchangeable、就已经 23 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-4844 sidecar not already peerdas / not already 145 / not already 23-bundled 正式三事（23 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。23 blob vs das bundled unbundling 启动（1515 item 1） |
+| A7341 | 高 | 看见KZG sidecar不是已经PeerDAS 会被写成已经是PeerDAS interchangeable / 145 interchangeable | 官方 EIP-4844 kdas item 1：not already 已经是PeerDAS / not 145 |
+| A7342 | 高 | 看见a KZG sidecar is not already PeerDAS 会被写成已经是不变量 145 interchangeable / 124 interchangeable | 官方 EIP-4844 kdas item 1：not already 已经是不变量 145 / not 124 |
+| A7343 | 高 | 看见KZG sidecar不是已经PeerDAS 会被写成已经 23 bundled interchangeable | 官方 EIP-4844 kdas item 1：not already settled |
+| A7344 | 中 | 怎样扣列、怎样只问RPC就显示已抽样会被抄进不确定 | 不抄。不写 怎样扣列、怎样只问RPC就显示已抽样。不另写 19 节 |
+| A7335 | 记录 | 会与 124 / 23 / 142 / 1512 / 1513 糊成「看见DAS抽样过关不是扩展编码已经诚实就已经编码诚实 interchangeable、就已经是不变量 23 interchangeable、就已经是不变量 142 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 NMT das-pass not already honest-encoding / not already 23 / not already 142 正式三事（124 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。124 nmt vs das bundled unbundling 完成（1514 item 3） |
+| A7336 | 高 | 看见DAS抽样过关不是扩展编码已经诚实 会被写成已经编码诚实 interchangeable / 23 interchangeable | 官方 NMT nmtd item 3：not already 已经编码诚实 / not 23 |
+| A7337 | 高 | 看见a DAS sample pass is not already honest erasure encoding 会被写成已经是不变量 23 interchangeable / 142 interchangeable | 官方 NMT nmtd item 3：not already 已经是不变量 23 / not 142 |
+| A7338 | 高 | 看见DAS抽样过关不是扩展编码已经诚实 会被写成已经是不变量 142 interchangeable | 官方 NMT nmtd item 3：not already settled |
+| A7339 | 中 | 怎样扣份额、怎样印错扩展会被抄进不确定 | 不抄。不写 怎样扣份额、怎样印错扩展。不另写 19 节 |
+| A7330 | 记录 | 会与 124 / 142 / 9 / 1512 / 1514 糊成「看见DAS抽样过关不是已经拿到自己的blob就已经拿到自己的blob interchangeable、就已经是不变量 142 interchangeable、就已经是不变量 9 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 NMT das-pass not already own-blob / not already 142 / not already 9 正式三事（124 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。124 nmt vs das bundled unbundling 续（1513 item 2） |
+| A7331 | 高 | 看见DAS抽样过关不是已经拿到自己的blob 会被写成已经拿到自己的blob interchangeable / 142 interchangeable | 官方 NMT nmtd item 2：not already 已经拿到自己的blob / not 142 |
+| A7332 | 高 | 看见a DAS sample pass is not already holding your own blob 会被写成已经是不变量 142 interchangeable / 9 interchangeable | 官方 NMT nmtd item 2：not already 已经是不变量 142 / not 9 |
+| A7333 | 高 | 看见DAS抽样过关不是已经拿到自己的blob 会被写成已经是不变量 9 interchangeable | 官方 NMT nmtd item 2：not already settled |
+| A7334 | 中 | 怎样扣份额、怎样印错扩展会被抄进不确定 | 不抄。不写 怎样扣份额、怎样印错扩展。不另写 19 节 |
+| A7325 | 记录 | 会与 124 / 23 / 142 / 1513 / 1514 糊成「看见NMT证明命名空间齐了不是扩展方阵已经可用就已经整块可用 interchangeable、就已经是不变量 23 interchangeable、就已经 124 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 NMT nmt-complete not already square-available / not already 23 / not already 124-bundled 正式三事（124 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。124 nmt vs das bundled unbundling 启动（1512 item 1） |
+| A7326 | 高 | 看见NMT证明命名空间齐了不是扩展方阵已经可用 会被写成已经整块可用 interchangeable / 23 interchangeable | 官方 NMT nmtd item 1：not already 已经整块可用 / not 23 |
+| A7327 | 高 | 看见an NMT namespace-complete proof is not already a usable extended square 会被写成已经是不变量 23 interchangeable / 142 interchangeable | 官方 NMT nmtd item 1：not already 已经是不变量 23 / not 142 |
+| A7328 | 高 | 看见NMT证明命名空间齐了不是扩展方阵已经可用 会被写成已经 124 bundled interchangeable | 官方 NMT nmtd item 1：not already settled |
+| A7329 | 中 | 怎样扣份额、怎样印错扩展会被抄进不确定 | 不抄。不写 怎样扣份额、怎样印错扩展。不另写 19 节 |
+| A7320 | 记录 | 会与 142 / 141 / 23 / 1509 / 1510 糊成「看见凑不齐签名回退贴全文不是已经只走委员会就已经只走委员会 interchangeable、就已经是不变量 141 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 AnyTrust fallback-post not already committee-only / not already 141 / not already 23 正式三事（142 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。142 dacert vs posted bundled unbundling 完成（1511 item 3） |
+| A7321 | 高 | 看见凑不齐签名回退贴全文不是已经只走委员会 会被写成已经只走委员会 interchangeable / 141 interchangeable | 官方 AnyTrust dcert item 3：not already 已经只走委员会 / not 141 |
+| A7322 | 高 | 看见falling back to posting the full batch is not already committee-only 会被写成已经是不变量 141 interchangeable / 23 interchangeable | 官方 AnyTrust dcert item 3：not already 已经是不变量 141 / not 23 |
+| A7323 | 高 | 看见凑不齐签名回退贴全文不是已经只走委员会 会被写成已经是不变量 23 interchangeable | 官方 AnyTrust dcert item 3：not already settled |
+| A7324 | 中 | 怎样让委员不给数据、怎样拼假证书会被抄进不确定 | 不抄。不写 怎样让委员不给数据、怎样拼假证书。不另写 19 节 |
+| A7315 | 记录 | 会与 142 / 124 / 9 / 1509 / 1511 糊成「看见AnyTrust不是已经Rollup DA就已经是Rollup DA interchangeable、就已经是不变量 124 interchangeable、就已经是不变量 9 interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 AnyTrust anytrust not already rollup-da / not already 124 / not already 9 正式三事（142 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。142 dacert vs posted bundled unbundling 续（1510 item 2） |
+| A7316 | 高 | 看见AnyTrust不是已经Rollup DA 会被写成已经是Rollup DA interchangeable / 124 interchangeable | 官方 AnyTrust dcert item 2：not already 已经是Rollup DA / not 124 |
+| A7317 | 高 | 看见AnyTrust is not already Rollup DA 会被写成已经是不变量 124 interchangeable / 9 interchangeable | 官方 AnyTrust dcert item 2：not already 已经是不变量 124 / not 9 |
+| A7318 | 高 | 看见AnyTrust不是已经Rollup DA 会被写成已经是不变量 9 interchangeable | 官方 AnyTrust dcert item 2：not already settled |
+| A7319 | 中 | 怎样让委员不给数据、怎样拼假证书会被抄进不确定 | 不抄。不写 怎样让委员不给数据、怎样拼假证书。不另写 19 节 |
+| A7310 | 记录 | 会与 142 / 23 / 124 / 1510 / 1511 糊成「看见DACert不是全文已经贴上父链就已经贴上全文 interchangeable、就已经是不变量 23 interchangeable、就已经 142 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L7.2 AnyTrust dacert not already posted-full / not already 23 / not already 142-bundled 正式三事（142 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M7.2、L7.2。142 dacert vs posted bundled unbundling 启动（1509 item 1） |
+| A7311 | 高 | 看见DACert不是全文已经贴上父链 会被写成已经贴上全文 interchangeable / 23 interchangeable | 官方 AnyTrust dcert item 1：not already 已经贴上全文 / not 23 |
+| A7312 | 高 | 看见a DACert is not already the full batch posted on the parent chain 会被写成已经是不变量 23 interchangeable / 124 interchangeable | 官方 AnyTrust dcert item 1：not already 已经是不变量 23 / not 124 |
+| A7313 | 高 | 看见DACert不是全文已经贴上父链 会被写成已经 142 bundled interchangeable | 官方 AnyTrust dcert item 1：not already settled |
+| A7314 | 中 | 怎样让委员不给数据、怎样拼假证书会被抄进不确定 | 不抄。不写 怎样让委员不给数据、怎样拼假证书。不另写 19 节 |
+| A7305 | 记录 | 会与 156 / 195 / 145 / 1506 / 1507 糊成「看见环缓冲过期不是根已经永久可查就已经永久可查 interchangeable、就已经是不变量 195 interchangeable、就已经是不变量 145 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-4788 ring-expire not already permanent / not already 195 / not already 145 正式三事（156 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.2、L5.2。156 parent-root vs head bundled unbundling 完成（1508 item 3） |
+| A7306 | 高 | 看见环缓冲过期不是根已经永久可查 会被写成已经永久可查 interchangeable / 195 interchangeable | 官方 EIP-4788 proot item 3：not already 已经永久可查 / not 195 |
+| A7307 | 高 | 看见a ring-buffer expiry is not already a permanent root 会被写成已经是不变量 195 interchangeable / 145 interchangeable | 官方 EIP-4788 proot item 3：not already 已经是不变量 195 / not 145 |
+| A7308 | 高 | 看见环缓冲过期不是根已经永久可查 会被写成已经是不变量 145 interchangeable | 官方 EIP-4788 proot item 3：not already settled |
+| A7309 | 中 | 怎样塞假父根、怎样打环碰撞会被抄进不确定 | 不抄。不写 怎样塞假父根、怎样打环碰撞。不另写 19 节 |
+| A7300 | 记录 | 会与 156 / 149 / 154 / 1506 / 1508 糊成「看见合约里读到的根不是已经finalized就已经finalized interchangeable、就已经是不变量 149 interchangeable、就已经是不变量 154 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-4788 contract-root not already finalized / not already 149 / not already 154 正式三事（156 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.2、L5.2。156 parent-root vs head bundled unbundling 续（1507 item 2） |
+| A7301 | 高 | 看见合约里读到的根不是已经finalized 会被写成已经finalized interchangeable / 149 interchangeable | 官方 EIP-4788 proot item 2：not already 已经finalized / not 149 |
+| A7302 | 高 | 看见a root read from the contract is not already finalized 会被写成已经是不变量 149 interchangeable / 154 interchangeable | 官方 EIP-4788 proot item 2：not already 已经是不变量 149 / not 154 |
+| A7303 | 高 | 看见合约里读到的根不是已经finalized 会被写成已经是不变量 154 interchangeable | 官方 EIP-4788 proot item 2：not already settled |
+| A7304 | 中 | 怎样塞假父根、怎样打环碰撞会被抄进不确定 | 不抄。不写 怎样塞假父根、怎样打环碰撞。不另写 19 节 |
+| A7295 | 记录 | 会与 156 / 127 / 149 / 1507 / 1508 糊成「看见头里的父信标根不是当前信标头就已经是当前信标头 interchangeable、就已经是不变量 127 interchangeable、就已经 156 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-4788 parent-root not already current-head / not already 127 / not already 156-bundled 正式三事（156 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.2、L5.2。156 parent-root vs head bundled unbundling 启动（1506 item 1） |
+| A7296 | 高 | 看见头里的父信标根不是当前信标头 会被写成已经是当前信标头 interchangeable / 127 interchangeable | 官方 EIP-4788 proot item 1：not already 已经是当前信标头 / not 127 |
+| A7297 | 高 | 看见the parent beacon root is not already the current head 会被写成已经是不变量 127 interchangeable / 149 interchangeable | 官方 EIP-4788 proot item 1：not already 已经是不变量 127 / not 149 |
+| A7298 | 高 | 看见头里的父信标根不是当前信标头 会被写成已经 156 bundled interchangeable | 官方 EIP-4788 proot item 1：not already settled |
+| A7299 | 中 | 怎样塞假父根、怎样打环碰撞会被抄进不确定 | 不抄。不写 怎样塞假父根、怎样打环碰撞。不另写 19 节 |
+| A7290 | 记录 | 会与 209 / 200 / 207 / 1503 / 1504 糊成「看见分叉摘要掺进当前blob上限不是已经换了分叉版本号就已经换了分叉版本号 interchangeable、就已经是不变量 200 interchangeable、就已经是不变量 207 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7892 digest-includes-max not already version-changed / not already 200 / not already 207 正式三事（209 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。209 bpo vs hardfork bundled unbundling 完成（1505 item 3） |
+| A7291 | 高 | 看见分叉摘要掺进当前blob上限不是已经换了分叉版本号 会被写成已经换了分叉版本号 interchangeable / 200 interchangeable | 官方 EIP-7892 bpof item 3：not already 已经换了分叉版本号 / not 200 |
+| A7292 | 高 | 看见including blob max in the fork digest is not already a version-number change 会被写成已经是不变量 200 interchangeable / 207 interchangeable | 官方 EIP-7892 bpof item 3：not already 已经是不变量 200 / not 207 |
+| A7293 | 高 | 看见分叉摘要掺进当前blob上限不是已经换了分叉版本号 会被写成已经是不变量 207 interchangeable | 官方 EIP-7892 bpof item 3：not already settled |
+| A7294 | 中 | 怎样把执行层和共识层的日程对不齐会被抄进不确定 | 不抄。不写 怎样把执行层和共识层的日程对不齐。不另写 19 节 |
+| A7285 | 记录 | 会与 209 / 201 / 23 / 1503 / 1505 糊成「看见配置里的blob日程不是已经不需要分叉就已经不需要分叉 interchangeable、就已经是不变量 201 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7892 config-schedule not already forkless / not already 201 / not already 23 正式三事（209 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。209 bpo vs hardfork bundled unbundling 续（1504 item 2） |
+| A7286 | 高 | 看见配置里的blob日程不是已经不需要分叉 会被写成已经不需要分叉 interchangeable / 201 interchangeable | 官方 EIP-7892 bpof item 2：not already 已经不需要分叉 / not 201 |
+| A7287 | 高 | 看见a config blob schedule is not already a forkless change 会被写成已经是不变量 201 interchangeable / 23 interchangeable | 官方 EIP-7892 bpof item 2：not already 已经是不变量 201 / not 23 |
+| A7288 | 高 | 看见配置里的blob日程不是已经不需要分叉 会被写成已经是不变量 23 interchangeable | 官方 EIP-7892 bpof item 2：not already settled |
+| A7289 | 中 | 怎样把执行层和共识层的日程对不齐会被抄进不确定 | 不抄。不写 怎样把执行层和共识层的日程对不齐。不另写 19 节 |
+| A7280 | 记录 | 会与 209 / 200 / 201 / 1504 / 1505 糊成「看见只改blob参数的专用分叉不是已经改了执行规则就已经改了执行规则 interchangeable、就已经是不变量 200 interchangeable、就已经 209 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7892 bpo-fork not already exec-changed / not already 200 / not already 209-bundled 正式三事（209 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。209 bpo vs hardfork bundled unbundling 启动（1503 item 1） |
+| A7281 | 高 | 看见只改blob参数的专用分叉不是已经改了执行规则 会被写成已经改了执行规则 interchangeable / 200 interchangeable | 官方 EIP-7892 bpof item 1：not already 已经改了执行规则 / not 200 |
+| A7282 | 高 | 看见a blob-parameter-only fork is not already an execution-rule change 会被写成已经是不变量 200 interchangeable / 201 interchangeable | 官方 EIP-7892 bpof item 1：not already 已经是不变量 200 / not 201 |
+| A7283 | 高 | 看见只改blob参数的专用分叉不是已经改了执行规则 会被写成已经 209 bundled interchangeable | 官方 EIP-7892 bpof item 1：not already settled |
+| A7284 | 中 | 怎样把执行层和共识层的日程对不齐会被抄进不确定 | 不抄。不写 怎样把执行层和共识层的日程对不齐。不另写 19 节 |
+| A7275 | 记录 | 会与 195 / 156 / 207 / 1500 / 1501 糊成「看见合约能查更长窗口不是已经改了操作码语义就已经改了操作码语义 interchangeable、就已经是不变量 156 interchangeable、就已经是不变量 207 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2935 longer-contract not already opcode-changed / not already 156 / not already 207 正式三事（195 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.1、L5.1。195 history-hash vs blockhash bundled unbundling 完成（1502 item 3） |
+| A7276 | 高 | 看见合约能查更长窗口不是已经改了操作码语义 会被写成已经改了操作码语义 interchangeable / 156 interchangeable | 官方 EIP-2935 hhash item 3：not already 已经改了操作码语义 / not 156 |
+| A7277 | 高 | 看见a longer contract window is not already an opcode change 会被写成已经是不变量 156 interchangeable / 207 interchangeable | 官方 EIP-2935 hhash item 3：not already 已经是不变量 156 / not 207 |
+| A7278 | 高 | 看见合约能查更长窗口不是已经改了操作码语义 会被写成已经是不变量 207 interchangeable | 官方 EIP-2935 hhash item 3：not already settled |
+| A7279 | 中 | 怎样构造系统调用、怎样填环、怎样打见证会被抄进不确定 | 不抄。不写 怎样构造系统调用、怎样填环、怎样打见证。不另写 19 节 |
+| A7270 | 记录 | 会与 195 / 169 / 157 / 1500 / 1502 糊成「看见系统写入父哈希不是已经填满窗口就已经填满窗口 interchangeable、就已经是不变量 169 interchangeable、就已经是不变量 157 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2935 sys-write not already window-full / not already 169 / not already 157 正式三事（195 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.1、L5.1。195 history-hash vs blockhash bundled unbundling 续（1501 item 2） |
+| A7271 | 高 | 看见系统写入父哈希不是已经填满窗口 会被写成已经填满窗口 interchangeable / 169 interchangeable | 官方 EIP-2935 hhash item 2：not already 已经填满窗口 / not 169 |
+| A7272 | 高 | 看见a system write of the parent hash is not already a full window 会被写成已经是不变量 169 interchangeable / 157 interchangeable | 官方 EIP-2935 hhash item 2：not already 已经是不变量 169 / not 157 |
+| A7273 | 高 | 看见系统写入父哈希不是已经填满窗口 会被写成已经是不变量 157 interchangeable | 官方 EIP-2935 hhash item 2：not already settled |
+| A7274 | 中 | 怎样构造系统调用、怎样填环、怎样打见证会被抄进不确定 | 不抄。不写 怎样构造系统调用、怎样填环、怎样打见证。不另写 19 节 |
+| A7265 | 记录 | 会与 195 / 156 / 157 / 1501 / 1502 糊成「看见状态里的历史执行哈希不是已经是BLOCKHASH就已经是BLOCKHASH interchangeable、就已经是不变量 156 interchangeable、就已经 195 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2935 state-hash not already BLOCKHASH / not already 156 / not already 195-bundled 正式三事（195 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.1、L5.1。195 history-hash vs blockhash bundled unbundling 启动（1500 item 1） |
+| A7266 | 高 | 看见状态里的历史执行哈希不是已经是BLOCKHASH 会被写成已经是BLOCKHASH interchangeable / 156 interchangeable | 官方 EIP-2935 hhash item 1：not already 已经是BLOCKHASH / not 156 |
+| A7267 | 高 | 看见a state history hash is not already BLOCKHASH 会被写成已经是不变量 156 interchangeable / 157 interchangeable | 官方 EIP-2935 hhash item 1：not already 已经是不变量 156 / not 157 |
+| A7268 | 高 | 看见状态里的历史执行哈希不是已经是BLOCKHASH 会被写成已经 195 bundled interchangeable | 官方 EIP-2935 hhash item 1：not already settled |
+| A7269 | 中 | 怎样构造系统调用、怎样填环、怎样打见证会被抄进不确定 | 不抄。不写 怎样构造系统调用、怎样填环、怎样打见证。不另写 19 节 |
+| A7260 | 记录 | 会与 201 / 200 / 23 / 1497 / 1498 糊成「看见不算目标不是已经改了日程数字就已经改了日程数字 interchangeable、就已经是不变量 200 interchangeable、就已经是不变量 23 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7918 no-subtract-target not already schedule-changed / not already 200 / not already 23 正式三事（201 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。201 blob-reserve vs execution bundled unbundling 完成（1499 item 3） |
+| A7261 | 高 | 看见不算目标不是已经改了日程数字 会被写成已经改了日程数字 interchangeable / 200 interchangeable | 官方 EIP-7918 bres item 3：not already 已经改了日程数字 / not 200 |
+| A7262 | 高 | 看见not subtracting the target is not already a schedule change 会被写成已经是不变量 200 interchangeable / 23 interchangeable | 官方 EIP-7918 bres item 3：not already 已经是不变量 200 / not 23 |
+| A7263 | 高 | 看见不算目标不是已经改了日程数字 会被写成已经是不变量 23 interchangeable | 官方 EIP-7918 bres item 3：not already settled |
+| A7264 | 中 | 怎样等下限灌 blob、怎样绕过底价会被抄进不确定 | 不抄。不写 怎样等下限灌 blob、怎样绕过底价。不另写 19 节 |
+| A7255 | 记录 | 会与 201 / 158 / 197 / 1497 / 1499 糊成「看见执行费主导不是已经没有blob价就已经没有blob价 interchangeable、就已经是不变量 158 interchangeable、就已经是不变量 197 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7918 exec-dominant not already blob-priceless / not already 158 / not already 197 正式三事（201 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。201 blob-reserve vs execution bundled unbundling 续（1498 item 2） |
+| A7256 | 高 | 看见执行费主导不是已经没有blob价 会被写成已经没有blob价 interchangeable / 158 interchangeable | 官方 EIP-7918 bres item 2：not already 已经没有blob价 / not 158 |
+| A7257 | 高 | 看见execution-cost dominance is not already a missing blob price 会被写成已经是不变量 158 interchangeable / 197 interchangeable | 官方 EIP-7918 bres item 2：not already 已经是不变量 158 / not 197 |
+| A7258 | 高 | 看见执行费主导不是已经没有blob价 会被写成已经是不变量 197 interchangeable | 官方 EIP-7918 bres item 2：not already settled |
+| A7259 | 中 | 怎样等下限灌 blob、怎样绕过底价会被抄进不确定 | 不抄。不写 怎样等下限灌 blob、怎样绕过底价。不另写 19 节 |
+| A7250 | 记录 | 会与 201 / 145 / 200 / 1498 / 1499 糊成「看见blob底价不是已经并成一套气就已经并成一套气 interchangeable、就已经是不变量 145 interchangeable、就已经 201 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7918 reserve-floor not already gas-merged / not already 145 / not already 201-bundled 正式三事（201 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。201 blob-reserve vs execution bundled unbundling 启动（1497 item 1） |
+| A7251 | 高 | 看见blob底价不是已经并成一套气 会被写成已经并成一套气 interchangeable / 145 interchangeable | 官方 EIP-7918 bres item 1：not already 已经并成一套气 / not 145 |
+| A7252 | 高 | 看见a blob reserve floor is not already a merged gas ledger 会被写成已经是不变量 145 interchangeable / 200 interchangeable | 官方 EIP-7918 bres item 1：not already 已经是不变量 145 / not 200 |
+| A7253 | 高 | 看见blob底价不是已经并成一套气 会被写成已经 201 bundled interchangeable | 官方 EIP-7918 bres item 1：not already settled |
+| A7254 | 中 | 怎样等下限灌 blob、怎样绕过底价会被抄进不确定 | 不抄。不写 怎样等下限灌 blob、怎样绕过底价。不另写 19 节 |
+| A7245 | 记录 | 会与 200 / 145 / 201 / 1494 / 1495 糊成「看见共识层换名不是已经是执行层激活就已经是执行层激活 interchangeable、就已经更安全 interchangeable、就已经是不变量 145 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7691 cl-rename not already el-activated / not already safer / not already 145 正式三事（200 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。200 blob-schedule vs 4844 bundled unbundling 完成（1496 item 3） |
+| A7246 | 高 | 看见共识层换名不是已经是执行层激活 会被写成已经是执行层激活 interchangeable / 145 interchangeable | 官方 EIP-7691 bsch item 3：not already 已经是执行层激活 / not 145 |
+| A7247 | 高 | 看见CL rename is not already EL activation 会被写成已经更安全 interchangeable / 201 interchangeable | 官方 EIP-7691 bsch item 3：not already 已经更安全 / not 201 |
+| A7248 | 高 | 看见共识层换名不是已经是执行层激活 会被写成已经是不变量 145 interchangeable | 官方 EIP-7691 bsch item 3：not already settled |
+| A7249 | 中 | 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标会被抄进不确定 | 不抄。不写 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标。不另写 19 节 |
+| A7240 | 记录 | 会与 200 / 23 / 197 / 1494 / 1496 糊成「看见新的目标上限比不是已经还是旧的对称调价就已经还是旧对称 interchangeable、就已经是不变量 23 interchangeable、就已经是不变量 197 interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7691 new-ratio not already old-symmetric / not already 23 / not already 197 正式三事（200 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。200 blob-schedule vs 4844 bundled unbundling 续（1495 item 2） |
+| A7241 | 高 | 看见新的目标上限比不是已经还是旧的对称调价 会被写成已经还是旧对称 interchangeable / 23 interchangeable | 官方 EIP-7691 bsch item 2：not already 已经还是旧对称 / not 23 |
+| A7242 | 高 | 看见the new target-max ratio is not already the old symmetric pricing 会被写成已经是不变量 23 interchangeable / 197 interchangeable | 官方 EIP-7691 bsch item 2：not already 已经是不变量 23 / not 197 |
+| A7243 | 高 | 看见新的目标上限比不是已经还是旧的对称调价 会被写成已经是不变量 197 interchangeable | 官方 EIP-7691 bsch item 2：not already settled |
+| A7244 | 中 | 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标会被抄进不确定 | 不抄。不写 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标。不另写 19 节 |
+| A7235 | 记录 | 会与 200 / 145 / 23 / 1495 / 1496 糊成「看见抬高blob目标上限不是已经改了两套气的拆分就已经改了两套气的拆分 interchangeable、就已经是不变量 145 interchangeable、就已经 200 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.4 EIP-7691 raise-schedule not already gas-split-changed / not already 145 / not already 200-bundled 正式三事（200 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。200 blob-schedule vs 4844 bundled unbundling 启动（1494 item 1） |
+| A7236 | 高 | 看见抬高blob目标上限不是已经改了两套气的拆分 会被写成已经改了两套气的拆分 interchangeable / 145 interchangeable | 官方 EIP-7691 bsch item 1：not already 已经改了两套气的拆分 / not 145 |
+| A7237 | 高 | 看见raising the blob schedule is not already a gas-split change 会被写成已经是不变量 145 interchangeable / 23 interchangeable | 官方 EIP-7691 bsch item 1：not already 已经是不变量 145 / not 23 |
+| A7238 | 高 | 看见抬高blob目标上限不是已经改了两套气的拆分 会被写成已经 200 bundled interchangeable | 官方 EIP-7691 bsch item 1：not already settled |
+| A7239 | 中 | 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标会被抄进不确定 | 不抄。不写 怎样灌满 blob、怎样空块压费、怎样给本地出块加旗标。不另写 19 节 |
+| A7230 | 记录 | 会与 145 / 101 / 144 / 1491 / 1492 糊成「看见付了blob fee不是数据已经永存就已经永存 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-4844 blob-fee-paid not already perpetual / not already safer / not already 101 正式三事（145 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。145 blob-fee vs gas bundled unbundling 完成（1493 item 3） |
+| A7231 | 高 | 看见付了blob fee不是数据已经永存 会被写成已经永存 interchangeable / 101 interchangeable | 官方 EIP-4844 blgas item 3：not already 已经永存 / not 101 |
+| A7232 | 高 | 看见paying blob fee is not already perpetual data 会被写成已经更安全 interchangeable / 144 interchangeable | 官方 EIP-4844 blgas item 3：not already 已经更安全 / not 144 |
+| A7233 | 高 | 看见付了blob fee不是数据已经永存 会被写成已经是不变量 101 interchangeable | 官方 EIP-4844 blgas item 3：not already settled |
+| A7234 | 中 | 怎样扣 sidecar会被抄进不确定 | 不抄。不写 怎样扣 sidecar。不另写 19 节 |
+| A7225 | 记录 | 会与 145 / 197 / 201 / 1491 / 1493 糊成「看见EVM能访问承诺不是已经读到blob字节就已经读到blob字节 interchangeable、就已经是不变量 197 interchangeable、就已经是不变量 201 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-4844 blobhash not already sidecar-bytes / not already 197 / not already 201 正式三事（145 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。145 blob-fee vs gas bundled unbundling 续（1492 item 2） |
+| A7226 | 高 | 看见EVM能访问承诺不是已经读到blob字节 会被写成已经读到blob字节 interchangeable / 197 interchangeable | 官方 EIP-4844 blgas item 2：not already 已经读到blob字节 / not 197 |
+| A7227 | 高 | 看见EVM can read the commitment is not already sidecar bytes 会被写成已经是不变量 197 interchangeable / 201 interchangeable | 官方 EIP-4844 blgas item 2：not already 已经是不变量 197 / not 201 |
+| A7228 | 高 | 看见EVM能访问承诺不是已经读到blob字节 会被写成已经是不变量 201 interchangeable | 官方 EIP-4844 blgas item 2：not already settled |
+| A7229 | 中 | 怎样扣 sidecar会被抄进不确定 | 不抄。不写 怎样扣 sidecar。不另写 19 节 |
+| A7220 | 记录 | 会与 145 / 23 / 200 / 1492 / 1493 糊成「看见blob gas不是普通执行gas就已经是普通执行gas interchangeable、就已经是不变量 23 interchangeable、就已经 145 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-4844 blob-gas not already execution-gas / not already 23 / not already 145-bundled 正式三事（145 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。145 blob-fee vs gas bundled unbundling 启动（1491 item 1） |
+| A7221 | 高 | 看见blob gas不是普通执行gas 会被写成已经是普通执行gas interchangeable / 23 interchangeable | 官方 EIP-4844 blgas item 1：not already 已经是普通执行gas / not 23 |
+| A7222 | 高 | 看见blob gas is not already ordinary execution gas 会被写成已经是不变量 23 interchangeable / 200 interchangeable | 官方 EIP-4844 blgas item 1：not already 已经是不变量 23 / not 200 |
+| A7223 | 高 | 看见blob gas不是普通执行gas 会被写成已经 145 bundled interchangeable | 官方 EIP-4844 blgas item 1：not already settled |
+| A7224 | 中 | 怎样扣 sidecar会被抄进不确定 | 不抄。不写 怎样扣 sidecar。不另写 19 节 |
+| A7215 | 记录 | 会与 207 / 195 / 167 / 1488 / 1489 糊成「看见握手去掉总难度不是已经能判断同步完没完就已经能判断同步完没完 interchangeable、就已经更安全 interchangeable、就已经是不变量 167 interchangeable」 | 对照写清。不编博物馆页。写进 L5.3 EIP-7642 handshake-no-td not already sync-done / not already safer / not already 167 正式三事（207 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。207 history-window vs consensus bundled unbundling 完成（1490 item 3） |
+| A7216 | 高 | 看见握手去掉总难度不是已经能判断同步完没完 会被写成已经能判断同步完没完 interchangeable / 195 interchangeable | 官方 EIP-7642 hwin item 3：not already 已经能判断同步完没完 / not 195 |
+| A7217 | 高 | 看见handshake without TD is not already sync-complete 会被写成已经更安全 interchangeable / 167 interchangeable | 官方 EIP-7642 hwin item 3：not already 已经更安全 / not 167 |
+| A7218 | 高 | 看见握手去掉总难度不是已经能判断同步完没完 会被写成已经是不变量 167 interchangeable | 官方 EIP-7642 hwin item 3：not already settled |
+| A7219 | 中 | 怎样丢历史、怎样谎报最早块会被抄进不确定 | 不抄。不写 怎样丢历史、怎样谎报最早块。不另写 19 节 |
+| A7210 | 记录 | 会与 207 / 25 / 195 / 1488 / 1490 糊成「看见线上收据没有布隆不是已经改了共识收据编码就已经改了共识收据编码 interchangeable、就已经是不变量 25 interchangeable、就已经是不变量 195 interchangeable」 | 对照写清。不编博物馆页。写进 L5.3 EIP-7642 wire-no-bloom not already consensus-receipt / not already 25 / not already 195 正式三事（207 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。207 history-window vs consensus bundled unbundling 续（1489 item 2） |
+| A7211 | 高 | 看见线上收据没有布隆不是已经改了共识收据编码 会被写成已经改了共识收据编码 interchangeable / 25 interchangeable | 官方 EIP-7642 hwin item 2：not already 已经改了共识收据编码 / not 25 |
+| A7212 | 高 | 看见wire receipts without bloom are not already consensus receipt encoding 会被写成已经是不变量 25 interchangeable / 195 interchangeable | 官方 EIP-7642 hwin item 2：not already 已经是不变量 25 / not 195 |
+| A7213 | 高 | 看见线上收据没有布隆不是已经改了共识收据编码 会被写成已经是不变量 195 interchangeable | 官方 EIP-7642 hwin item 2：not already settled |
+| A7214 | 中 | 怎样丢历史、怎样谎报最早块会被抄进不确定 | 不抄。不写 怎样丢历史、怎样谎报最早块。不另写 19 节 |
+| A7205 | 记录 | 会与 207 / 23 / 25 / 1489 / 1490 糊成「看见对等节点宣布历史窗不是已经改了共识历史就已经改了共识历史 interchangeable、就已经是不变量 23 interchangeable、就已经 207 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.3 EIP-7642 history-window not already consensus-pruned / not already 23 / not already 207-bundled 正式三事（207 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。207 history-window vs consensus bundled unbundling 启动（1488 item 1） |
+| A7206 | 高 | 看见对等节点宣布历史窗不是已经改了共识历史 会被写成已经改了共识历史 interchangeable / 23 interchangeable | 官方 EIP-7642 hwin item 1：not already 已经改了共识历史 / not 23 |
+| A7207 | 高 | 看见peer history window is not already consensus history changed 会被写成已经是不变量 23 interchangeable / 25 interchangeable | 官方 EIP-7642 hwin item 1：not already 已经是不变量 23 / not 25 |
+| A7208 | 高 | 看见对等节点宣布历史窗不是已经改了共识历史 会被写成已经 207 bundled interchangeable | 官方 EIP-7642 hwin item 1：not already settled |
+| A7209 | 中 | 怎样丢历史、怎样谎报最早块会被抄进不确定 | 不抄。不写 怎样丢历史、怎样谎报最早块。不另写 19 节 |
+| A7200 | 记录 | 会与 158 / 167 / 187 / 1485 / 1486 糊成「看见烧掉不是MEV已经解决就已经解决MEV interchangeable、就已经更安全 interchangeable、就已经是不变量 144 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1559 burn not already mev-solved / not already safer / not already 144 正式三事（158 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。158 basefee vs tip bundled unbundling 完成（1487 item 3） |
+| A7201 | 高 | 看见烧掉不是MEV已经解决 会被写成已经解决MEV interchangeable / 167 interchangeable | 官方 EIP-1559 bfmkt item 3：not already 已经解决MEV / not 167 |
+| A7202 | 高 | 看见burning is not already MEV solved 会被写成已经更安全 interchangeable / 187 interchangeable | 官方 EIP-1559 bfmkt item 3：not already 已经更安全 / not 187 |
+| A7203 | 高 | 看见烧掉不是MEV已经解决 会被写成已经是不变量 144 interchangeable | 官方 EIP-1559 bfmkt item 3：not already settled |
+| A7204 | 中 | 怎样抬基础费、怎样排空块、怎样抢排序会被抄进不确定 | 不抄。不写 怎样抬基础费、怎样排空块、怎样抢排序。不另写 19 节 |
+| A7195 | 记录 | 会与 158 / 101 / 27 / 1485 / 1487 糊成「看见弹性块大小不是整套费用市场已经齐就已经齐 interchangeable、就已经是不变量 101 interchangeable、就已经是不变量 27 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1559 elastic-size not already market-complete / not already 101 / not already 27 正式三事（158 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。158 basefee vs tip bundled unbundling 续（1486 item 2） |
+| A7196 | 高 | 看见弹性块大小不是整套费用市场已经齐 会被写成已经齐 interchangeable / 101 interchangeable | 官方 EIP-1559 bfmkt item 2：not already 已经齐 / not 101 |
+| A7197 | 高 | 看见elastic block size is not already a complete fee market 会被写成已经是不变量 101 interchangeable / 27 interchangeable | 官方 EIP-1559 bfmkt item 2：not already 已经是不变量 101 / not 27 |
+| A7198 | 高 | 看见弹性块大小不是整套费用市场已经齐 会被写成已经是不变量 27 interchangeable | 官方 EIP-1559 bfmkt item 2：not already settled |
+| A7199 | 中 | 怎样抬基础费、怎样排空块、怎样抢排序会被抄进不确定 | 不抄。不写 怎样抬基础费、怎样排空块、怎样抢排序。不另写 19 节 |
+| A7190 | 记录 | 会与 158 / 145 / 144 / 1486 / 1487 糊成「看见基础费烧掉不是已经给了出块者就已经给了出块者 interchangeable、就已经是不变量 145 interchangeable、就已经 158 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1559 basefee-burned not already paid-to-proposer / not already 145 / not already 158-bundled 正式三事（158 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。158 basefee vs tip bundled unbundling 启动（1485 item 1） |
+| A7191 | 高 | 看见基础费烧掉不是已经给了出块者 会被写成已经给了出块者 interchangeable / 145 interchangeable | 官方 EIP-1559 bfmkt item 1：not already 已经给了出块者 / not 145 |
+| A7192 | 高 | 看见burned basefee is not already paid to the proposer 会被写成已经是不变量 145 interchangeable / 144 interchangeable | 官方 EIP-1559 bfmkt item 1：not already 已经是不变量 145 / not 144 |
+| A7193 | 高 | 看见基础费烧掉不是已经给了出块者 会被写成已经 158 bundled interchangeable | 官方 EIP-1559 bfmkt item 1：not already settled |
+| A7194 | 中 | 怎样抬基础费、怎样排空块、怎样抢排序会被抄进不确定 | 不抄。不写 怎样抬基础费、怎样排空块、怎样抢排序。不另写 19 节 |
+| A7185 | 记录 | 会与 205 / 27 / 134 / 1482 / 1483 糊成「看见信标状态里的前瞻名单不是已经是based预确认就已经是based预确认 interchangeable、就已经更安全 interchangeable、就已经是不变量 134 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7917 lookahead-list not already preconfirm / not already safer / not already 134 正式三事（205 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。205 lookahead vs randao bundled unbundling 完成（1484 item 3） |
+| A7186 | 高 | 看见信标状态里的前瞻名单不是已经是based预确认 会被写成已经是based预确认 interchangeable / 27 interchangeable | 官方 EIP-7917 lkah item 3：not already 已经是based预确认 / not 27 |
+| A7187 | 高 | 看见lookahead list is not already based preconfirmations 会被写成已经更安全 interchangeable / 134 interchangeable | 官方 EIP-7917 lkah item 3：not already 已经更安全 / not 134 |
+| A7188 | 高 | 看见信标状态里的前瞻名单不是已经是based预确认 会被写成已经是不变量 134 interchangeable | 官方 EIP-7917 lkah item 3：not already settled |
+| A7189 | 中 | 怎样打磨有效余额会被抄进不确定 | 不抄。不写 怎样打磨有效余额。不另写 19 节 |
+| A7180 | 记录 | 会与 205 / 196 / 27 / 1482 / 1484 糊成「看见有效余额还能在本纪元变不是种子已知就已经排完就已经排完 interchangeable、就已经是不变量 196 interchangeable、就已经是不变量 27 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7917 balance-still-moves not already scheduled / not already 196 / not already 27 正式三事（205 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。205 lookahead vs randao bundled unbundling 续（1483 item 2） |
+| A7181 | 高 | 看见有效余额还能在本纪元变不是种子已知就已经排完 会被写成已经排完 interchangeable / 196 interchangeable | 官方 EIP-7917 lkah item 2：not already 已经排完 / not 196 |
+| A7182 | 高 | 看见balances still moving is not already a finished schedule 会被写成已经是不变量 196 interchangeable / 27 interchangeable | 官方 EIP-7917 lkah item 2：not already 已经是不变量 196 / not 27 |
+| A7183 | 高 | 看见有效余额还能在本纪元变不是种子已知就已经排完 会被写成已经是不变量 27 interchangeable | 官方 EIP-7917 lkah item 2：not already settled |
+| A7184 | 中 | 怎样打磨有效余额会被抄进不确定 | 不抄。不写 怎样打磨有效余额。不另写 19 节 |
+| A7175 | 记录 | 会与 205 / 157 / 196 / 1483 / 1484 糊成「看见RANDAO种子已经提前知道不是已经锁死下一纪元出块日程就已经锁死下一纪元出块日程 interchangeable、就已经是不变量 157 interchangeable、就已经 205 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7917 seed-known not already schedule-locked / not already 157 / not already 205-bundled 正式三事（205 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。205 lookahead vs randao bundled unbundling 启动（1482 item 1） |
+| A7176 | 高 | 看见RANDAO种子已经提前知道不是已经锁死下一纪元出块日程 会被写成已经锁死下一纪元出块日程 interchangeable / 157 interchangeable | 官方 EIP-7917 lkah item 1：not already 已经锁死下一纪元出块日程 / not 157 |
+| A7177 | 高 | 看见known RANDAO seed is not already a locked proposer schedule 会被写成已经是不变量 157 interchangeable / 196 interchangeable | 官方 EIP-7917 lkah item 1：not already 已经是不变量 157 / not 196 |
+| A7178 | 高 | 看见RANDAO种子已经提前知道不是已经锁死下一纪元出块日程 会被写成已经 205 bundled interchangeable | 官方 EIP-7917 lkah item 1：not already settled |
+| A7179 | 中 | 怎样打磨有效余额会被抄进不确定 | 不抄。不写 怎样打磨有效余额。不另写 19 节 |
+| A7170 | 记录 | 会与 213 / 192 / 6 / 1479 / 1480 糊成「看见分叉两边都能重放不是已经丢资金就已经丢资金 interchangeable、就已经更安全 interchangeable、就已经是不变量 6 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7044 replay-both not already lost-funds / not already safer / not already 6 正式三事（213 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。213 exit-domain vs fork bundled unbundling 完成（1481 item 3） |
+| A7171 | 高 | 看见分叉两边都能重放不是已经丢资金 会被写成已经丢资金 interchangeable / 192 interchangeable | 官方 EIP-7044 exdom item 3：not already 已经丢资金 / not 192 |
+| A7172 | 高 | 看见replay on both forks is not already lost funds 会被写成已经更安全 interchangeable / 6 interchangeable | 官方 EIP-7044 exdom item 3：not already 已经更安全 / not 6 |
+| A7173 | 高 | 看见分叉两边都能重放不是已经丢资金 会被写成已经是不变量 6 interchangeable | 官方 EIP-7044 exdom item 3：not already settled |
+| A7174 | 中 | 怎样造锁死域的签、怎样在分叉两边重放会被抄进不确定 | 不抄。不写 怎样造锁死域的签、怎样在分叉两边重放。不另写 19 节 |
+| A7165 | 记录 | 会与 213 / 154 / 192 / 1479 / 1481 糊成「看见域锁在某次分叉不是已经改了执行层就已经改了执行层 interchangeable、就已经是不变量 154 interchangeable、就已经是不变量 192 interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7044 domain-lock not already el-changed / not already 154 / not already 192 正式三事（213 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。213 exit-domain vs fork bundled unbundling 续（1480 item 2） |
+| A7166 | 高 | 看见域锁在某次分叉不是已经改了执行层 会被写成已经改了执行层 interchangeable / 154 interchangeable | 官方 EIP-7044 exdom item 2：not already 已经改了执行层 / not 154 |
+| A7167 | 高 | 看见domain lock is not already an EL change 会被写成已经是不变量 154 interchangeable / 192 interchangeable | 官方 EIP-7044 exdom item 2：not already 已经是不变量 154 / not 192 |
+| A7168 | 高 | 看见域锁在某次分叉不是已经改了执行层 会被写成已经是不变量 192 interchangeable | 官方 EIP-7044 exdom item 2：not already settled |
+| A7169 | 中 | 怎样造锁死域的签、怎样在分叉两边重放会被抄进不确定 | 不抄。不写 怎样造锁死域的签、怎样在分叉两边重放。不另写 19 节 |
+| A7160 | 记录 | 会与 213 / 193 / 154 / 1480 / 1481 糊成「看见签过的自愿退出不是已经永远有效就已经永远有效 interchangeable、就已经是不变量 193 interchangeable、就已经 213 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.2 EIP-7044 signed-exit not already perpetual / not already 193 / not already 213-bundled 正式三事（213 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。213 exit-domain vs fork bundled unbundling 启动（1479 item 1） |
+| A7161 | 高 | 看见签过的自愿退出不是已经永远有效 会被写成已经永远有效 interchangeable / 193 interchangeable | 官方 EIP-7044 exdom item 1：not already 已经永远有效 / not 193 |
+| A7162 | 高 | 看见signed voluntary exit is not already perpetually valid 会被写成已经是不变量 193 interchangeable / 154 interchangeable | 官方 EIP-7044 exdom item 1：not already 已经是不变量 193 / not 154 |
+| A7163 | 高 | 看见签过的自愿退出不是已经永远有效 会被写成已经 213 bundled interchangeable | 官方 EIP-7044 exdom item 1：not already settled |
+| A7164 | 中 | 怎样造锁死域的签、怎样在分叉两边重放会被抄进不确定 | 不抄。不写 怎样造锁死域的签、怎样在分叉两边重放。不另写 19 节 |
+| A7155 | 记录 | 会与 212 / 122 / 96 / 1476 / 1477 糊成「看见事后状态差不是已经不跑交易就已经不跑交易 interchangeable、就已经更安全 interchangeable、就已经是不变量 96 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7928 post-delta not already skip-exec / not already safer / not already 96 正式三事（212 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。212 block-list vs parallel bundled unbundling 完成（1478 item 3） |
+| A7156 | 高 | 看见事后状态差不是已经不跑交易 会被写成已经不跑交易 interchangeable / 122 interchangeable | 官方 EIP-7928 blal item 3：not already 已经不跑交易 / not 122 |
+| A7157 | 高 | 看见post-state delta is not already skip-exec 会被写成已经更安全 interchangeable / 96 interchangeable | 官方 EIP-7928 blal item 3：not already 已经更安全 / not 96 |
+| A7158 | 高 | 看见事后状态差不是已经不跑交易 会被写成已经是不变量 96 interchangeable | 官方 EIP-7928 blal item 3：not already settled |
+| A7159 | 中 | 怎样造名单、怎样申报从未碰过的只读槽会被抄进不确定 | 不抄。不写 怎样造名单、怎样申报从未碰过的只读槽。不另写 19 节 |
+| A7150 | 记录 | 会与 212 / 143 / 122 / 1476 / 1478 糊成「看见强制名单不是已经是2930就已经是2930 interchangeable、就已经是不变量 143 interchangeable、就已经是不变量 122 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7928 forced-list not already 2930 / not already 143 / not already 122 正式三事（212 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。212 block-list vs parallel bundled unbundling 续（1477 item 2） |
+| A7151 | 高 | 看见强制名单不是已经是2930 会被写成已经是2930 interchangeable / 143 interchangeable | 官方 EIP-7928 blal item 2：not already 已经是2930 / not 143 |
+| A7152 | 高 | 看见forced list is not already 2930 会被写成已经是不变量 143 interchangeable / 122 interchangeable | 官方 EIP-7928 blal item 2：not already 已经是不变量 143 / not 122 |
+| A7153 | 高 | 看见强制名单不是已经是2930 会被写成已经是不变量 122 interchangeable | 官方 EIP-7928 blal item 2：not already settled |
+| A7154 | 中 | 怎样造名单、怎样申报从未碰过的只读槽会被抄进不确定 | 不抄。不写 怎样造名单、怎样申报从未碰过的只读槽。不另写 19 节 |
+| A7145 | 记录 | 会与 212 / 168 / 143 / 1477 / 1478 糊成「看见块级访问名单不是已经并行跑完就已经并行跑完 interchangeable、就已经是不变量 168 interchangeable、就已经 212 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7928 block-list not already parallel-done / not already 168 / not already 212-bundled 正式三事（212 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。212 block-list vs parallel bundled unbundling 启动（1476 item 1） |
+| A7146 | 高 | 看见块级访问名单不是已经并行跑完 会被写成已经并行跑完 interchangeable / 168 interchangeable | 官方 EIP-7928 blal item 1：not already 已经并行跑完 / not 168 |
+| A7147 | 高 | 看见block-level access list is not already parallel-done 会被写成已经是不变量 168 interchangeable / 143 interchangeable | 官方 EIP-7928 blal item 1：not already 已经是不变量 168 / not 143 |
+| A7148 | 高 | 看见块级访问名单不是已经并行跑完 会被写成已经 212 bundled interchangeable | 官方 EIP-7928 blal item 1：not already settled |
+| A7149 | 中 | 怎样造名单、怎样申报从未碰过的只读槽会被抄进不确定 | 不抄。不写 怎样造名单、怎样申报从未碰过的只读槽。不另写 19 节 |
+| A7140 | 记录 | 会与 206 / 199 / 203 / 1473 / 1474 糊成「看见长度有界不是已经用EVM换掉预编译就已经用EVM换掉预编译 interchangeable、就已经更安全 interchangeable、就已经是不变量 199 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7823 bounded not already evm-replaced / not already safer / not already 199 正式三事（206 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。206 modexp-bound vs price bundled unbundling 完成（1475 item 3） |
+| A7141 | 高 | 看见长度有界不是已经用EVM换掉预编译 会被写成已经用EVM换掉预编译 interchangeable / 199 interchangeable | 官方 EIP-7823 mxbd item 3：not already 已经用EVM换掉预编译 / not 199 |
+| A7142 | 高 | 看见being bounded is not already EVM-replaced 会被写成已经更安全 interchangeable / 203 interchangeable | 官方 EIP-7823 mxbd item 3：not already 已经更安全 / not 203 |
+| A7143 | 高 | 看见长度有界不是已经用EVM换掉预编译 会被写成已经是不变量 199 interchangeable | 官方 EIP-7823 mxbd item 3：not already settled |
+| A7144 | 中 | 怎样造超长输入会被抄进不确定 | 不抄。不写 怎样造超长输入。不另写 19 节 |
+| A7135 | 记录 | 会与 206 / 177 / 204 / 1473 / 1475 糊成「看见超帽不是已经成功返回就已经成功返回 interchangeable、就已经是不变量 177 interchangeable、就已经是不变量 204 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7823 over-cap not already success / not already 177 / not already 204 正式三事（206 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。206 modexp-bound vs price bundled unbundling 续（1474 item 2） |
+| A7136 | 高 | 看见超帽不是已经成功返回 会被写成已经成功返回 interchangeable / 177 interchangeable | 官方 EIP-7823 mxbd item 2：not already 已经成功返回 / not 177 |
+| A7137 | 高 | 看见over-cap is not already a successful return 会被写成已经是不变量 177 interchangeable / 204 interchangeable | 官方 EIP-7823 mxbd item 2：not already 已经是不变量 177 / not 204 |
+| A7138 | 高 | 看见超帽不是已经成功返回 会被写成已经是不变量 204 interchangeable | 官方 EIP-7823 mxbd item 2：not already settled |
+| A7139 | 中 | 怎样造超长输入会被抄进不确定 | 不抄。不写 怎样造超长输入。不另写 19 节 |
+| A7130 | 记录 | 会与 206 / 227 / 203 / 1474 / 1475 糊成「看见MODEXP输入长度帽不是已经改了计价公式就已经改了计价公式 interchangeable、就已经是不变量 227 interchangeable、就已经 206 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7823 input-bound not already price-changed / not already 227 / not already 206-bundled 正式三事（206 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。206 modexp-bound vs price bundled unbundling 启动（1473 item 1） |
+| A7131 | 高 | 看见MODEXP输入长度帽不是已经改了计价公式 会被写成已经改了计价公式 interchangeable / 227 interchangeable | 官方 EIP-7823 mxbd item 1：not already 已经改了计价公式 / not 227 |
+| A7132 | 高 | 看见MODEXP input bound is not already a price change 会被写成已经是不变量 227 interchangeable / 203 interchangeable | 官方 EIP-7823 mxbd item 1：not already 已经是不变量 227 / not 203 |
+| A7133 | 高 | 看见MODEXP输入长度帽不是已经改了计价公式 会被写成已经 206 bundled interchangeable | 官方 EIP-7823 mxbd item 1：not already settled |
+| A7134 | 中 | 怎样造超长输入会被抄进不确定 | 不抄。不写 怎样造超长输入。不另写 19 节 |
+| A7125 | 记录 | 会与 208 / 204 / 206 / 1470 / 1471 糊成「看见能表达最低位不是已经有数尾零就已经有数尾零 interchangeable、就已经更安全 interchangeable、就已经是不变量 206 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7939 express-lsb not already ctz / not already safer / not already 206 正式三事（208 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。208 clz vs zk bundled unbundling 完成（1472 item 3） |
+| A7126 | 高 | 看见能表达最低位不是已经有数尾零 会被写成已经有数尾零 interchangeable / 204 interchangeable | 官方 EIP-7939 clz item 3：not already 已经有数尾零 / not 204 |
+| A7127 | 高 | 看见expressing LSB is not already a CTZ opcode 会被写成已经更安全 interchangeable / 206 interchangeable | 官方 EIP-7939 clz item 3：not already 已经更安全 / not 206 |
+| A7128 | 高 | 看见能表达最低位不是已经有数尾零 会被写成已经是不变量 206 interchangeable | 官方 EIP-7939 clz item 3：not already settled |
+| A7129 | 中 | 怎样用它拼数尾零、怎样压证明费会被抄进不确定 | 不抄。不写 怎样用它拼数尾零、怎样压证明费。不另写 19 节 |
+| A7120 | 记录 | 会与 208 / 199 / 204 / 1470 / 1472 糊成「看见动机写了后量子签不是已经有后量子签名就已经有后量子签名 interchangeable、就已经是不变量 199 interchangeable、就已经是不变量 204 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7939 pq-motive not already pq-sig / not already 199 / not already 204 正式三事（208 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。208 clz vs zk bundled unbundling 续（1471 item 2） |
+| A7121 | 高 | 看见动机写了后量子签不是已经有后量子签名 会被写成已经有后量子签名 interchangeable / 199 interchangeable | 官方 EIP-7939 clz item 2：not already 已经有后量子签名 / not 199 |
+| A7122 | 高 | 看见PQ motive is not already a PQ signature 会被写成已经是不变量 199 interchangeable / 204 interchangeable | 官方 EIP-7939 clz item 2：not already 已经是不变量 199 / not 204 |
+| A7123 | 高 | 看见动机写了后量子签不是已经有后量子签名 会被写成已经是不变量 204 interchangeable | 官方 EIP-7939 clz item 2：not already settled |
+| A7124 | 中 | 怎样用它拼数尾零、怎样压证明费会被抄进不确定 | 不抄。不写 怎样用它拼数尾零、怎样压证明费。不另写 19 节 |
+| A7115 | 记录 | 会与 208 / 206 / 199 / 1471 / 1472 糊成「看见数前导零操作码不是已经更便宜的ZK证明就已经更便宜的ZK证明 interchangeable、就已经是不变量 206 interchangeable、就已经 208 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7939 clz not already cheaper-zk / not already 206 / not already 208-bundled 正式三事（208 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。208 clz vs zk bundled unbundling 启动（1470 item 1） |
+| A7116 | 高 | 看见数前导零操作码不是已经更便宜的ZK证明 会被写成已经更便宜的ZK证明 interchangeable / 206 interchangeable | 官方 EIP-7939 clz item 1：not already 已经更便宜的ZK证明 / not 206 |
+| A7117 | 高 | 看见CLZ opcode is not already cheaper ZK 会被写成已经是不变量 206 interchangeable / 199 interchangeable | 官方 EIP-7939 clz item 1：not already 已经是不变量 206 / not 199 |
+| A7118 | 高 | 看见数前导零操作码不是已经更便宜的ZK证明 会被写成已经 208 bundled interchangeable | 官方 EIP-7939 clz item 1：not already settled |
+| A7119 | 中 | 怎样用它拼数尾零、怎样压证明费会被抄进不确定 | 不抄。不写 怎样用它拼数尾零、怎样压证明费。不另写 19 节 |
+| A7110 | 记录 | 会与 197 / 176 / 101 / 1467 / 1468 糊成「看见预留地板气限不是已经烧到地板就已经烧到地板 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7623 reserve-floor not already burned / not already safer / not already 101 正式三事（197 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。197 calldata-floor vs execution bundled unbundling 完成（1469 item 3） |
+| A7111 | 高 | 看见预留地板气限不是已经烧到地板 会被写成已经烧到地板 interchangeable / 176 interchangeable | 官方 EIP-7623 cflr item 3：not already 已经烧到地板 / not 176 |
+| A7112 | 高 | 看见reserved floor gasLimit is not already burned to the floor 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7623 cflr item 3：not already 已经更安全 / not 101 |
+| A7113 | 高 | 看见预留地板气限不是已经烧到地板 会被写成已经是不变量 101 interchangeable | 官方 EIP-7623 cflr item 3：not already settled |
+| A7114 | 中 | 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板会被抄进不确定 | 不抄。不写 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板。不另写 19 节 |
+| A7105 | 记录 | 会与 197 / 158 / 226 / 1467 / 1469 糊成「看见数据为主更贵不是已经让普通转账更贵就已经让普通转账更贵 interchangeable、就已经是不变量 158 interchangeable、就已经是不变量 226 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7623 data-heavy-dearer not already transfer-dearer / not already 158 / not already 226 正式三事（197 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。197 calldata-floor vs execution bundled unbundling 续（1468 item 2） |
+| A7106 | 高 | 看见数据为主更贵不是已经让普通转账更贵 会被写成已经让普通转账更贵 interchangeable / 158 interchangeable | 官方 EIP-7623 cflr item 2：not already 已经让普通转账更贵 / not 158 |
+| A7107 | 高 | 看见data-heavy dearer is not already transfer dearer 会被写成已经是不变量 158 interchangeable / 226 interchangeable | 官方 EIP-7623 cflr item 2：not already 已经是不变量 158 / not 226 |
+| A7108 | 高 | 看见数据为主更贵不是已经让普通转账更贵 会被写成已经是不变量 226 interchangeable | 官方 EIP-7623 cflr item 2：not already settled |
+| A7109 | 中 | 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板会被抄进不确定 | 不抄。不写 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板。不另写 19 节 |
+| A7100 | 记录 | 会与 197 / 145 / 202 / 1468 / 1469 糊成「看见calldata地板不是已经改了执行气就已经改了执行气 interchangeable、就已经是不变量 145 interchangeable、就已经 197 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7623 calldata-floor not already execution-gas / not already 145 / not already 197-bundled 正式三事（197 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。197 calldata-floor vs execution bundled unbundling 启动（1467 item 1） |
+| A7101 | 高 | 看见calldata地板不是已经改了执行气 会被写成已经改了执行气 interchangeable / 145 interchangeable | 官方 EIP-7623 cflr item 1：not already 已经改了执行气 / not 145 |
+| A7102 | 高 | 看见calldata floor is not already execution-gas changed 会被写成已经是不变量 145 interchangeable / 202 interchangeable | 官方 EIP-7623 cflr item 1：not already 已经是不变量 145 / not 202 |
+| A7103 | 高 | 看见calldata地板不是已经改了执行气 会被写成已经 197 bundled interchangeable | 官方 EIP-7623 cflr item 1：not already settled |
+| A7104 | 中 | 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板会被抄进不确定 | 不抄。不写 怎样堆零字节载荷、怎样停在阈值下走便宜 calldata、怎样把数据交易和计算交易捆在一起躲开地板。不另写 19 节 |
+| A7095 | 记录 | 会与 202 / 101 / 145 / 1464 / 1465 糊成「看见给信标块留边不是已经并成一份编码就已经并成一份编码 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7934 beacon-margin not already one-encoding / not already safer / not already 101 正式三事（202 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。202 rlp-cap vs gas bundled unbundling 完成（1466 item 3） |
+| A7096 | 高 | 看见给信标块留边不是已经并成一份编码 会被写成已经并成一份编码 interchangeable / 101 interchangeable | 官方 EIP-7934 rcap item 3：not already 已经并成一份编码 / not 101 |
+| A7097 | 高 | 看见beacon-block margin is not already one encoding 会被写成已经更安全 interchangeable / 145 interchangeable | 官方 EIP-7934 rcap item 3：not already 已经更安全 / not 145 |
+| A7098 | 高 | 看见给信标块留边不是已经并成一份编码 会被写成已经是不变量 101 interchangeable | 官方 EIP-7934 rcap item 3：not already settled |
+| A7099 | 中 | 怎样刚好塞进帽下会被抄进不确定 | 不抄。不写 怎样刚好塞进帽下。不另写 19 节 |
+| A7090 | 记录 | 会与 202 / 96 / 158 / 1464 / 1466 糊成「看见共识层流言不传不是已经让执行层非法就已经让执行层非法 interchangeable、就已经是不变量 96 interchangeable、就已经是不变量 158 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7934 gossip-drop not already el-illegal / not already 96 / not already 158 正式三事（202 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。202 rlp-cap vs gas bundled unbundling 续（1465 item 2） |
+| A7091 | 高 | 看见共识层流言不传不是已经让执行层非法 会被写成已经让执行层非法 interchangeable / 96 interchangeable | 官方 EIP-7934 rcap item 2：not already 已经让执行层非法 / not 96 |
+| A7092 | 高 | 看见consensus gossip drop is not already EL-illegal 会被写成已经是不变量 96 interchangeable / 158 interchangeable | 官方 EIP-7934 rcap item 2：not already 已经是不变量 96 / not 158 |
+| A7093 | 高 | 看见共识层流言不传不是已经让执行层非法 会被写成已经是不变量 158 interchangeable | 官方 EIP-7934 rcap item 2：not already settled |
+| A7094 | 中 | 怎样刚好塞进帽下会被抄进不确定 | 不抄。不写 怎样刚好塞进帽下。不另写 19 节 |
+| A7085 | 记录 | 会与 202 / 197 / 203 / 1465 / 1466 糊成「看见RLP编码硬帽不是已经改了气限就已经改了气限 interchangeable、就已经是不变量 197 interchangeable、就已经 202 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7934 rlp-cap not already gas-limit / not already 197 / not already 202-bundled 正式三事（202 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。202 rlp-cap vs gas bundled unbundling 启动（1464 item 1） |
+| A7086 | 高 | 看见RLP编码硬帽不是已经改了气限 会被写成已经改了气限 interchangeable / 197 interchangeable | 官方 EIP-7934 rcap item 1：not already 已经改了气限 / not 197 |
+| A7087 | 高 | 看见RLP encoding cap is not already a gas limit change 会被写成已经是不变量 197 interchangeable / 203 interchangeable | 官方 EIP-7934 rcap item 1：not already 已经是不变量 197 / not 203 |
+| A7088 | 高 | 看见RLP编码硬帽不是已经改了气限 会被写成已经 202 bundled interchangeable | 官方 EIP-7934 rcap item 1：not already settled |
+| A7089 | 中 | 怎样刚好塞进帽下会被抄进不确定 | 不抄。不写 怎样刚好塞进帽下。不另写 19 节 |
+| A7080 | 记录 | 会与 203 / 211 / 101 / 1461 / 1462 糊成「看见块里有一笔超帽不是已经只是策略拒绝就已经只是策略拒绝 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7825 one-over-cap not already policy-only / not already safer / not already 101 正式三事（203 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。203 tx-gas-cap vs block bundled unbundling 完成（1463 item 3） |
+| A7081 | 高 | 看见块里有一笔超帽不是已经只是策略拒绝 会被写成已经只是策略拒绝 interchangeable / 211 interchangeable | 官方 EIP-7825 txcap item 3：not already 已经只是策略拒绝 / not 211 |
+| A7082 | 高 | 看见one over-cap in a block is not already policy-only 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7825 txcap item 3：not already 已经更安全 / not 101 |
+| A7083 | 高 | 看见块里有一笔超帽不是已经只是策略拒绝 会被写成已经是不变量 101 interchangeable | 官方 EIP-7825 txcap item 3：not already settled |
+| A7084 | 中 | 怎样把一笔拆到帽下会被抄进不确定 | 不抄。不写 怎样把一笔拆到帽下。不另写 19 节 |
+| A7075 | 记录 | 会与 203 / 197 / 96 / 1461 / 1463 糊成「看见入池拒掉不是已经验过块就已经验过块 interchangeable、就已经是不变量 197 interchangeable、就已经是不变量 96 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7825 pool-reject not already block-verified / not already 197 / not already 96 正式三事（203 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。203 tx-gas-cap vs block bundled unbundling 续（1462 item 2） |
+| A7076 | 高 | 看见入池拒掉不是已经验过块 会被写成已经验过块 interchangeable / 197 interchangeable | 官方 EIP-7825 txcap item 2：not already 已经验过块 / not 197 |
+| A7077 | 高 | 看见pool reject is not already block-verified 会被写成已经是不变量 197 interchangeable / 96 interchangeable | 官方 EIP-7825 txcap item 2：not already 已经是不变量 197 / not 96 |
+| A7078 | 高 | 看见入池拒掉不是已经验过块 会被写成已经是不变量 96 interchangeable | 官方 EIP-7825 txcap item 2：not already settled |
+| A7079 | 中 | 怎样把一笔拆到帽下会被抄进不确定 | 不抄。不写 怎样把一笔拆到帽下。不另写 19 节 |
+| A7070 | 记录 | 会与 203 / 202 / 211 / 1462 / 1463 糊成「看见单笔气帽不是已经改了块气限就已经改了块气限 interchangeable、就已经是不变量 202 interchangeable、就已经 203 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7825 tx-gas-cap not already block-gas / not already 202 / not already 203-bundled 正式三事（203 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。203 tx-gas-cap vs block bundled unbundling 启动（1461 item 1） |
+| A7071 | 高 | 看见单笔气帽不是已经改了块气限 会被写成已经改了块气限 interchangeable / 202 interchangeable | 官方 EIP-7825 txcap item 1：not already 已经改了块气限 / not 202 |
+| A7072 | 高 | 看见tx gas cap is not already the block gas limit 会被写成已经是不变量 202 interchangeable / 211 interchangeable | 官方 EIP-7825 txcap item 1：not already 已经是不变量 202 / not 211 |
+| A7073 | 高 | 看见单笔气帽不是已经改了块气限 会被写成已经 203 bundled interchangeable | 官方 EIP-7825 txcap item 1：not already settled |
+| A7074 | 中 | 怎样把一笔拆到帽下会被抄进不确定 | 不抄。不写 怎样把一笔拆到帽下。不另写 19 节 |
+| A7065 | 记录 | 会与 211 / 203 / 101 / 1458 / 1459 糊成「看见默认配置齐了不是已经是单笔气帽就已经是单笔气帽 interchangeable、就已经更安全 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7935 defaults-aligned not already tx-gas-cap / not already safer / not already 101 正式三事（211 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。211 default-gas vs cap bundled unbundling 完成（1460 item 3） |
+| A7066 | 高 | 看见默认配置齐了不是已经是单笔气帽 会被写成已经是单笔气帽 interchangeable / 203 interchangeable | 官方 EIP-7935 dgas item 3：not already 已经是单笔气帽 / not 203 |
+| A7067 | 高 | 看见aligned defaults are not already the tx gas cap 会被写成已经更安全 interchangeable / 101 interchangeable | 官方 EIP-7935 dgas item 3：not already 已经更安全 / not 101 |
+| A7068 | 高 | 看见默认配置齐了不是已经是单笔气帽 会被写成已经是不变量 101 interchangeable | 官方 EIP-7935 dgas item 3：not already settled |
+| A7069 | 中 | 怎样抬气限、怎样灌满块会被抄进不确定 | 不抄。不写 怎样抬气限、怎样灌满块。不另写 19 节 |
+| A7060 | 记录 | 会与 211 / 202 / 96 / 1458 / 1460 糊成「看见绑到硬分叉发布不是已经改了共识就已经改了共识 interchangeable、就已经是不变量 202 interchangeable、就已经是不变量 96 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7935 hardfork-bind not already consensus-changed / not already 202 / not already 96 正式三事（211 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。211 default-gas vs cap bundled unbundling 续（1459 item 2） |
+| A7061 | 高 | 看见绑到硬分叉发布不是已经改了共识 会被写成已经改了共识 interchangeable / 202 interchangeable | 官方 EIP-7935 dgas item 2：not already 已经改了共识 / not 202 |
+| A7062 | 高 | 看见binding to a hardfork release is not already consensus-changed 会被写成已经是不变量 202 interchangeable / 96 interchangeable | 官方 EIP-7935 dgas item 2：not already 已经是不变量 202 / not 96 |
+| A7063 | 高 | 看见绑到硬分叉发布不是已经改了共识 会被写成已经是不变量 96 interchangeable | 官方 EIP-7935 dgas item 2：not already settled |
+| A7064 | 中 | 怎样抬气限、怎样灌满块会被抄进不确定 | 不抄。不写 怎样抬气限、怎样灌满块。不另写 19 节 |
+| A7055 | 记录 | 会与 211 / 203 / 202 / 1459 / 1460 糊成「看见客户端默认气限不是已经是协议帽就已经是协议帽 interchangeable、就已经是不变量 203 interchangeable、就已经 211 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7935 default-gas not already protocol-cap / not already 203 / not already 211-bundled 正式三事（211 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。211 default-gas vs cap bundled unbundling 启动（1458 item 1） |
+| A7056 | 高 | 看见客户端默认气限不是已经是协议帽 会被写成已经是协议帽 interchangeable / 203 interchangeable | 官方 EIP-7935 dgas item 1：not already 已经是协议帽 / not 203 |
+| A7057 | 高 | 看见client default gas is not already a protocol cap 会被写成已经是不变量 203 interchangeable / 202 interchangeable | 官方 EIP-7935 dgas item 1：not already 已经是不变量 203 / not 202 |
+| A7058 | 高 | 看见客户端默认气限不是已经是协议帽 会被写成已经 211 bundled interchangeable | 官方 EIP-7935 dgas item 1：not already settled |
+| A7059 | 中 | 怎样抬气限、怎样灌满块会被抄进不确定 | 不抄。不写 怎样抬气限、怎样灌满块。不另写 19 节 |
+| A7050 | 记录 | 会与 167 / 158 / 161 / 1455 / 1456 糊成「看见看见收据不是收据类型已经对上该笔就收据类型已经对上该笔 interchangeable、就已经是不变量 158 interchangeable、就已经是不变量 161 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2718 seeing-receipt not already type-matched / not already 158 / not already 161 正式三事（167 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。167 typed vs legacy bundled unbundling 完成（1457 item 3） |
+| A7051 | 高 | 看见看见收据不是收据类型已经对上该笔 会被写成收据类型已经对上该笔 interchangeable / 158 interchangeable | 官方 EIP-2718 tenv item 3：not already 收据类型已经对上该笔 / not 158 |
+| A7052 | 高 | 看见seeing a receipt is not already type-matched 会被写成已经是不变量 158 interchangeable / 161 interchangeable | 官方 EIP-2718 tenv item 3：not already 已经是不变量 158 / not 161 |
+| A7053 | 高 | 看见看见收据不是收据类型已经对上该笔 会被写成已经是不变量 161 interchangeable | 官方 EIP-2718 tenv item 3：not already settled |
+| A7054 | 中 | 怎样跨类型复用签名会被抄进不确定 | 不抄。不写 怎样跨类型复用签名。不另写 19 节 |
+| A7045 | 记录 | 会与 167 / 161 / 158 / 1455 / 1457 糊成「看见旧式 RLP 列表不是已经是类型信封就已经是类型信封 interchangeable、就已经是 155 interchangeable、就已经把类型签进哈希 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2718 legacy-RLP not already envelope / not already 155 / not already signed-type 正式三事（167 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。167 typed vs legacy bundled unbundling 续（1456 item 2） |
+| A7046 | 高 | 看见旧式 RLP 列表不是已经是类型信封 会被写成已经是类型信封 interchangeable / 161 interchangeable | 官方 EIP-2718 tenv item 2：not already 已经是类型信封 / not 161 |
+| A7047 | 高 | 看见legacy RLP list is not already a typed envelope 会被写成已经是 155 interchangeable / 158 interchangeable | 官方 EIP-2718 tenv item 2：not already 已经是 155 / not 158 |
+| A7048 | 高 | 看见旧式 RLP 列表不是已经是类型信封 会被写成已经把类型签进哈希 interchangeable | 官方 EIP-2718 tenv item 2：not already settled |
+| A7049 | 中 | 怎样跨类型复用签名会被抄进不确定 | 不抄。不写 怎样跨类型复用签名。不另写 19 节 |
+| A7040 | 记录 | 会与 167 / 158 / 168 / 1456 / 1457 糊成「看见类型字节不是已经解开内层字段就已经解开内层字段 interchangeable、就已经是 1559 interchangeable、就已经 167 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2718 type-byte not already unpacked / not already 1559 / not already 167-bundled 正式三事（167 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。167 typed vs legacy bundled unbundling 启动（1455 item 1） |
+| A7041 | 高 | 看见类型字节不是已经解开内层字段 会被写成已经解开内层字段 interchangeable / 158 interchangeable | 官方 EIP-2718 tenv item 1：not already 已经解开内层字段 / not 158 |
+| A7042 | 高 | 看见type byte is not already unpacked inner fields 会被写成已经是 1559 interchangeable / 168 interchangeable | 官方 EIP-2718 tenv item 1：not already 已经是 1559 / not 168 |
+| A7043 | 高 | 看见类型字节不是已经解开内层字段 会被写成已经 167 bundled interchangeable | 官方 EIP-2718 tenv item 1：not already settled |
+| A7044 | 中 | 怎样跨类型复用签名会被抄进不确定 | 不抄。不写 怎样跨类型复用签名。不另写 19 节 |
+| A7035 | 记录 | 会与 168 / 167 / 169 / 1452 / 1453 糊成「看见预付列表费不是已经跑完读取就已经跑完读取 interchangeable、就已经更热 interchangeable、就已经是 2718 信封 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2930 list-fee not already ran-read / not already hotter / not already 2718 正式三事（168 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。168 listed vs accessed bundled unbundling 完成（1454 item 3） |
+| A7036 | 高 | 看见预付列表费不是已经跑完读取 会被写成已经跑完读取 interchangeable / 167 interchangeable | 官方 EIP-2930 alist item 3：not already 已经跑完读取 / not 167 |
+| A7037 | 高 | 看见prepaid list fee is not already having run the read 会被写成已经更热 interchangeable / 169 interchangeable | 官方 EIP-2930 alist item 3：not already 已经更热 / not 169 |
+| A7038 | 高 | 看见预付列表费不是已经跑完读取 会被写成已经是 2718 信封 interchangeable | 官方 EIP-2930 alist item 3：not already settled |
+| A7039 | 中 | 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问会被抄进不确定 | 不抄。不写 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问。不另写 19 节 |
+| A7030 | 记录 | 会与 168 / 158 / 167 / 1452 / 1454 糊成「看见列表外不是已经不能碰就已经不能碰 interchangeable、就已经非法 interchangeable、就已经是 1559 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2930 outside-list not already forbidden / not already illegal / not already 1559 正式三事（168 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。168 listed vs accessed bundled unbundling 续（1453 item 2） |
+| A7031 | 高 | 看见列表外不是已经不能碰 会被写成已经不能碰 interchangeable / 158 interchangeable | 官方 EIP-2930 alist item 2：not already 已经不能碰 / not 158 |
+| A7032 | 高 | 看见outside the list is not already forbidden 会被写成已经非法 interchangeable / 167 interchangeable | 官方 EIP-2930 alist item 2：not already 已经非法 / not 167 |
+| A7033 | 高 | 看见列表外不是已经不能碰 会被写成已经是 1559 interchangeable | 官方 EIP-2930 alist item 2：not already settled |
+| A7034 | 中 | 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问会被抄进不确定 | 不抄。不写 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问。不另写 19 节 |
+| A7025 | 记录 | 会与 168 / 169 / 187 / 1453 / 1454 糊成「看见列出地址或槽不是已经访问过就已经访问过 interchangeable、就已经是 2929 本笔第一次碰 interchangeable、就已经 168 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2930 listed not already accessed / not already 2929-touch / not already 168-bundled 正式三事（168 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。168 listed vs accessed bundled unbundling 启动（1452 item 1） |
+| A7026 | 高 | 看见列出地址或槽不是已经访问过 会被写成已经访问过 interchangeable / 169 interchangeable | 官方 EIP-2930 alist item 1：not already 已经访问过 / not 169 |
+| A7027 | 高 | 看见listing an address or slot is not already accessed 会被写成已经是 2929 本笔第一次碰 interchangeable / 187 interchangeable | 官方 EIP-2930 alist item 1：not already 已经是 2929 本笔第一次碰 / not 187 |
+| A7028 | 高 | 看见列出地址或槽不是已经访问过 会被写成已经 168 bundled interchangeable | 官方 EIP-2930 alist item 1：not already settled |
+| A7029 | 中 | 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问会被抄进不确定 | 不抄。不写 怎样生成列表、怎样灌重复项、怎样靠名单绕过冷访问。不另写 19 节 |
+| A7020 | 记录 | 会与 169 / 187 / 101 / 1449 / 1450 糊成「看见开跑预填不是任意地址已经热就任意地址已经热 interchangeable、就已经是 2930 名单 interchangeable、就已经是不变量 101 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2929 prefill not already any-address-warm / not already 2930 / not already 101 正式三事（169 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。169 cold vs warm bundled unbundling 完成（1451 item 3） |
+| A7021 | 高 | 看见开跑预填不是任意地址已经热 会被写成任意地址已经热 interchangeable / 187 interchangeable | 官方 EIP-2929 cwarm item 3：not already 任意地址已经热 / not 187 |
+| A7022 | 高 | 看见sender/to/precompile prefill is not any address already warm 会被写成已经是 2930 名单 interchangeable / 101 interchangeable | 官方 EIP-2929 cwarm item 3：not already 已经是 2930 名单 / not 101 |
+| A7023 | 高 | 看见开跑预填不是任意地址已经热 会被写成已经是不变量 101 interchangeable | 官方 EIP-2929 cwarm item 3：not already settled |
+| A7024 | 中 | 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合会被抄进不确定 | 不抄。不写 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合。不另写 19 节 |
+| A7015 | 记录 | 会与 169 / 168 / 101 / 1449 / 1451 糊成「看见本笔再碰不是又是一次冷访问就又是一次冷访问 interchangeable、就已经永远热 interchangeable、就已经是不变量 168 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2929 retouch not already cold-again / not already forever-warm / not already 168 正式三事（169 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。169 cold vs warm bundled unbundling 续（1450 item 2） |
+| A7016 | 高 | 看见本笔再碰不是又是一次冷访问 会被写成又是一次冷访问 interchangeable / 168 interchangeable | 官方 EIP-2929 cwarm item 2：not already 又是一次冷访问 / not 168 |
+| A7017 | 高 | 看见retouch this tx is not another cold access 会被写成已经永远热 interchangeable / 101 interchangeable | 官方 EIP-2929 cwarm item 2：not already 已经永远热 / not 101 |
+| A7018 | 高 | 看见本笔再碰不是又是一次冷访问 会被写成已经是不变量 168 interchangeable | 官方 EIP-2929 cwarm item 2：not already settled |
+| A7019 | 中 | 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合会被抄进不确定 | 不抄。不写 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合。不另写 19 节 |
+| A7010 | 记录 | 会与 169 / 168 / 187 / 1450 / 1451 糊成「看见本笔第一次碰不是已经是热的就已经是热的 interchangeable、就已经是下一笔还热 interchangeable、就已经 169 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2929 first-touch not already warm / not already next-tx / not already 169-bundled 正式三事（169 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。169 cold vs warm bundled unbundling 启动（1449 item 1） |
+| A7011 | 高 | 看见本笔第一次碰不是已经是热的 会被写成已经是热的 interchangeable / 168 interchangeable | 官方 EIP-2929 cwarm item 1：not already 已经是热的 / not 168 |
+| A7012 | 高 | 看见first touch this tx is not already warm 会被写成已经是下一笔还热 interchangeable / 187 interchangeable | 官方 EIP-2929 cwarm item 1：not already 已经是下一笔还热 / not 187 |
+| A7013 | 高 | 看见本笔第一次碰不是已经是热的 会被写成已经 169 bundled interchangeable | 官方 EIP-2929 cwarm item 1：not already settled |
+| A7014 | 中 | 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合会被抄进不确定 | 不抄。不写 怎样灌大量冷账户、怎样预热救人、怎样靠回滚躲集合。不另写 19 节 |
+| A7005 | 记录 | 会与 187 / 169 / 163 / 1446 / 1447 糊成「看见开跑已热不是 169 预填已经覆盖出块者就已经是 169 预填覆盖出块者 interchangeable、就已经是 2930 名单 interchangeable、就已经是不变量 163 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3651 warm-start not already 169-prefill / not already 2930 / not already 163 正式三事（187 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。187 coinbase vs prefill bundled unbundling 完成（1448 item 3） |
+| A7006 | 高 | 看见开跑已热不是 169 预填已经覆盖出块者 会被写成已经是 169 预填覆盖出块者 interchangeable / 169 interchangeable | 官方 EIP-3651 cbase item 3：not already 已经是 169 预填覆盖出块者 / not 169 |
+| A7007 | 高 | 看见warm-at-start is not already the 169 prefills 会被写成已经是 2930 名单 interchangeable / 163 interchangeable | 官方 EIP-3651 cbase item 3：not already 已经是 2930 名单 / not 163 |
+| A7008 | 高 | 看见开跑已热不是 169 预填已经覆盖出块者 会被写成已经是不变量 163 interchangeable | 官方 EIP-3651 cbase item 3：not already settled |
+| A7009 | 中 | 怎样把付款指到出块者、怎样预热救人会被抄进不确定 | 不抄。不写 怎样把付款指到出块者、怎样预热救人。不另写 19 节 |
+| A7000 | 记录 | 会与 187 / 158 / 169 / 1446 / 1448 糊成「看见开跑已热不是已经付给出块者就已经付给出块者 interchangeable、就已经是 1559 小费 interchangeable、就已经是不变量 158 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3651 warm-start not already paid / not already 1559 / not already 158 正式三事（187 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。187 coinbase vs prefill bundled unbundling 续（1447 item 2） |
+| A7001 | 高 | 看见开跑已热不是已经付给出块者 会被写成已经付给出块者 interchangeable / 158 interchangeable | 官方 EIP-3651 cbase item 2：not already 已经付给出块者 / not 158 |
+| A7002 | 高 | 看见warm-at-start is not already paid to coinbase 会被写成已经是 1559 小费 interchangeable / 169 interchangeable | 官方 EIP-3651 cbase item 2：not already 已经是 1559 小费 / not 169 |
+| A7003 | 高 | 看见开跑已热不是已经付给出块者 会被写成已经是不变量 158 interchangeable | 官方 EIP-3651 cbase item 2：not already settled |
+| A7004 | 中 | 怎样把付款指到出块者、怎样预热救人会被抄进不确定 | 不抄。不写 怎样把付款指到出块者、怎样预热救人。不另写 19 节 |
+| A6995 | 记录 | 会与 187 / 169 / 168 / 1447 / 1448 糊成「看见出块者开跑已热不是已经访问过就已经访问过 interchangeable、就已经是 2929 第一次访问 interchangeable、就已经 187 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3651 coinbase-warm not already accessed / not already 2929-first / not already 187-bundled 正式三事（187 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。187 coinbase vs prefill bundled unbundling 启动（1446 item 1） |
+| A6996 | 高 | 看见出块者开跑已热不是已经访问过 会被写成已经访问过 interchangeable / 169 interchangeable | 官方 EIP-3651 cbase item 1：not already 已经访问过 / not 169 |
+| A6997 | 高 | 看见coinbase warm-at-start is not already accessed 会被写成已经是 2929 第一次访问 interchangeable / 168 interchangeable | 官方 EIP-3651 cbase item 1：not already 已经是 2929 第一次访问 / not 168 |
+| A6998 | 高 | 看见出块者开跑已热不是已经访问过 会被写成已经 187 bundled interchangeable | 官方 EIP-3651 cbase item 1：not already settled |
+| A6999 | 中 | 怎样把付款指到出块者、怎样预热救人会被抄进不确定 | 不抄。不写 怎样把付款指到出块者、怎样预热救人。不另写 19 节 |
+| A6990 | 记录 | 会与 188 / 176 / 185 / 1443 / 1444 糊成「看见initcode 里出现该字节不是已经是本页失败就已经是本页失败 interchangeable、就已经是 170 长度界 interchangeable、就已经是 3860 构造界 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3541 initcode-byte not already this-fail / not already 170 / not already 3860 正式三事（188 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。188 reserved-prefix vs eof bundled unbundling 完成（1445 item 3） |
+| A6991 | 高 | 看见initcode 里出现该字节不是已经是本页失败 会被写成已经是本页失败 interchangeable / 176 interchangeable | 官方 EIP-3541 rpfx item 3：not already 已经是本页失败 / not 176 |
+| A6992 | 高 | 看见initcode containing the byte is not already this-page fail 会被写成已经是 170 长度界 interchangeable / 185 interchangeable | 官方 EIP-3541 rpfx item 3：not already 已经是 170 长度界 / not 185 |
+| A6993 | 高 | 看见initcode 里出现该字节不是已经是本页失败 会被写成已经是 3860 构造界 interchangeable | 官方 EIP-3541 rpfx item 3：not already settled |
+| A6994 | 中 | 怎样造以该字节开头的返回代码会被抄进不确定 | 不抄。不写 怎样造以该字节开头的返回代码。不另写 19 节 |
+| A6985 | 记录 | 会与 188 / 185 / 177 / 1443 / 1445 糊成「看见已有同首字节代码不是已经被本页改语义就已经被本页改语义 interchangeable、就已经按新格式重验 interchangeable、就已经做完 3541 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3541 existing-code not already rewritten / not already revalidated / not already 3541-done 正式三事（188 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。188 reserved-prefix vs eof bundled unbundling 续（1444 item 2） |
+| A6986 | 高 | 看见已有同首字节代码不是已经被本页改语义 会被写成已经被本页改语义 interchangeable / 185 interchangeable | 官方 EIP-3541 rpfx item 2：not already 已经被本页改语义 / not 185 |
+| A6987 | 高 | 看见existing same-prefix code is not already rewritten 会被写成已经按新格式重验 interchangeable / 177 interchangeable | 官方 EIP-3541 rpfx item 2：not already 已经按新格式重验 / not 177 |
+| A6988 | 高 | 看见已有同首字节代码不是已经被本页改语义 会被写成已经做完 3541 interchangeable | 官方 EIP-3541 rpfx item 2：not already settled |
+| A6989 | 中 | 怎样造以该字节开头的返回代码会被抄进不确定 | 不抄。不写 怎样造以该字节开头的返回代码。不另写 19 节 |
+| A6980 | 记录 | 会与 188 / 185 / 176 / 1444 / 1445 糊成「看见新代码以保留首字节开头不是已经是对象格式已经部署就已经是对象格式已经部署 interchangeable、就已经按新格式验过 interchangeable、就已经 188 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3541 reserved-prefix not already EOF-deployed / not already validated / not already 188-bundled 正式三事（188 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。188 reserved-prefix vs eof bundled unbundling 启动（1443 item 1） |
+| A6981 | 高 | 看见新代码以保留首字节开头不是已经是对象格式已经部署 会被写成已经是对象格式已经部署 interchangeable / 185 interchangeable | 官方 EIP-3541 rpfx item 1：not already 已经是对象格式已经部署 / not 185 |
+| A6982 | 高 | 看见reserved prefix is not already EOF deployed 会被写成已经按新格式验过 interchangeable / 176 interchangeable | 官方 EIP-3541 rpfx item 1：not already 已经按新格式验过 / not 176 |
+| A6983 | 高 | 看见新代码以保留首字节开头不是已经是对象格式已经部署 会被写成已经 188 bundled interchangeable | 官方 EIP-3541 rpfx item 1：not already settled |
+| A6984 | 中 | 怎样造以该字节开头的返回代码会被抄进不确定 | 不抄。不写 怎样造以该字节开头的返回代码。不另写 19 节 |
+| A6975 | 记录 | 会与 185 / 170 / 176 / 1440 / 1441 糊成「看见CALL 气是常数不是已经没有按长度代价就已经没有按长度的磁盘/证明代价 interchangeable、就已经是不变量 170 interchangeable、就已经免费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-170 constant-CALL-gas not already free-disk / not already no-proof-cost / not already 170-inv 正式三事（185 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。185 returned vs initcode bundled unbundling 完成（1442 item 3） |
+| A6976 | 高 | 看见CALL 气是常数不是已经没有按长度代价 会被写成已经没有按长度的磁盘/证明代价 interchangeable / 170 interchangeable | 官方 EIP-170 retc item 3：not already 已经没有按长度的磁盘/证明代价 / not 170 |
+| A6977 | 高 | 看见constant CALL gas is not already free of length cost 会被写成已经是不变量 170 interchangeable / 176 interchangeable | 官方 EIP-170 retc item 3：not already 已经是不变量 170 / not 176 |
+| A6978 | 高 | 看见CALL 气是常数不是已经没有按长度代价 会被写成已经免费 interchangeable | 官方 EIP-170 retc item 3：not already settled |
+| A6979 | 中 | 怎样造超长返回代码会被抄进不确定 | 不抄。不写 怎样造超长返回代码。不另写 19 节 |
+| A6970 | 记录 | 会与 185 / 177 / 176 / 1440 / 1442 糊成「看见这次失败是耗尽气不是已经整笔非法就已经整笔非法 interchangeable、就已经是带回剩余气的回滚 interchangeable、就已经是不变量 177 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-170 oog-fail not already whole-tx-illegal / not already leftover-gas / not already 177 正式三事（185 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。185 returned vs initcode bundled unbundling 续（1441 item 2） |
+| A6971 | 高 | 看见这次失败是耗尽气不是已经整笔非法 会被写成已经整笔非法 interchangeable / 177 interchangeable | 官方 EIP-170 retc item 2：not already 已经整笔非法 / not 177 |
+| A6972 | 高 | 看见OOG fail is not already whole-tx illegal 会被写成已经是带回剩余气的回滚 interchangeable / 176 interchangeable | 官方 EIP-170 retc item 2：not already 已经是带回剩余气的回滚 / not 176 |
+| A6973 | 高 | 看见这次失败是耗尽气不是已经整笔非法 会被写成已经是不变量 177 interchangeable | 官方 EIP-170 retc item 2：not already settled |
+| A6974 | 中 | 怎样造超长返回代码会被抄进不确定 | 不抄。不写 怎样造超长返回代码。不另写 19 节 |
+| A6965 | 记录 | 会与 185 / 176 / 188 / 1441 / 1442 糊成「看见返回的运行时代码超界不是已经是 initcode 超界就已经是 initcode 超界 interchangeable、就已经是 3860 interchangeable、就已经 185 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-170 returned-bound not already initcode-bound / not already 3860 / not already 185-bundled 正式三事（185 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。185 returned vs initcode bundled unbundling 启动（1440 item 1） |
+| A6966 | 高 | 看见返回的运行时代码超界不是已经是 initcode 超界 会被写成已经是 initcode 超界 interchangeable / 176 interchangeable | 官方 EIP-170 retc item 1：not already 已经是 initcode 超界 / not 176 |
+| A6967 | 高 | 看见returned-code bound is not already initcode bound 会被写成已经是 3860 interchangeable / 188 interchangeable | 官方 EIP-170 retc item 1：not already 已经是 3860 / not 188 |
+| A6968 | 高 | 看见返回的运行时代码超界不是已经是 initcode 超界 会被写成已经 185 bundled interchangeable | 官方 EIP-170 retc item 1：not already settled |
+| A6969 | 中 | 怎样造超长返回代码会被抄进不确定 | 不抄。不写 怎样造超长返回代码。不另写 19 节 |
+| A6960 | 记录 | 会与 176 / 185 / 188 / 1437 / 1438 糊成「看见按字收跳转分析费不是已经跑完 initcode就已经跑完 initcode interchangeable、就已经是 CREATE2 算地址的哈希费 interchangeable、就已经创建 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3860 jumpdest-fee not already ran-initcode / not already CREATE2-hash-fee / not already created 正式三事（176 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。176 initcode vs runtime bundled unbundling 完成（1439 item 3） |
+| A6961 | 高 | 看见按字收跳转分析费不是已经跑完 initcode 会被写成已经跑完 initcode interchangeable / 185 interchangeable | 官方 EIP-3860 icode item 3：not already 已经跑完 initcode / not 185 |
+| A6962 | 高 | 看见jumpdest fee is not already having run initcode 会被写成已经是 CREATE2 算地址的哈希费 interchangeable / 188 interchangeable | 官方 EIP-3860 icode item 3：not already 已经是 CREATE2 算地址的哈希费 / not 188 |
+| A6963 | 高 | 看见按字收跳转分析费不是已经跑完 initcode 会被写成已经创建 interchangeable | 官方 EIP-3860 icode item 3：not already settled |
+| A6964 | 中 | 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界会被抄进不确定 | 不抄。不写 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界。不另写 19 节 |
+| A6955 | 记录 | 会与 176 / 175 / 169 / 1437 / 1439 糊成「看见创建交易超界不是已经是 CREATE 指令失败就已经是 CREATE 指令失败 interchangeable、就已经是 2681 序号上限 interchangeable、就已经进 EVM 再失败 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3860 create-tx-oversize not already CREATE-fail / not already 2681 / not already in-EVM 正式三事（176 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。176 initcode vs runtime bundled unbundling 续（1438 item 2） |
+| A6956 | 高 | 看见创建交易超界不是已经是 CREATE 指令失败 会被写成已经是 CREATE 指令失败 interchangeable / 175 interchangeable | 官方 EIP-3860 icode item 2：not already 已经是 CREATE 指令失败 / not 175 |
+| A6957 | 高 | 看见create-tx oversize is not already CREATE fail 会被写成已经是 2681 序号上限 interchangeable / 169 interchangeable | 官方 EIP-3860 icode item 2：not already 已经是 2681 序号上限 / not 169 |
+| A6958 | 高 | 看见创建交易超界不是已经是 CREATE 指令失败 会被写成已经进 EVM 再失败 interchangeable | 官方 EIP-3860 icode item 2：not already settled |
+| A6959 | 中 | 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界会被抄进不确定 | 不抄。不写 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界。不另写 19 节 |
+| A6950 | 记录 | 会与 176 / 185 / 175 / 1438 / 1439 糊成「看见initcode 超界不是已经是部署代码超界就已经是部署代码超界 interchangeable、就已经是 1014 哈希费 interchangeable、就已经 176 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3860 initcode-bound not already 170-runtime / not already 1014 / not already 176-bundled 正式三事（176 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。176 initcode vs runtime bundled unbundling 启动（1437 item 1） |
+| A6951 | 高 | 看见initcode 超界不是已经是部署代码超界 会被写成已经是部署代码超界 interchangeable / 185 interchangeable | 官方 EIP-3860 icode item 1：not already 已经是部署代码超界 / not 185 |
+| A6952 | 高 | 看见initcode bound is not already the 170 runtime bound 会被写成已经是 1014 哈希费 interchangeable / 175 interchangeable | 官方 EIP-3860 icode item 1：not already 已经是 1014 哈希费 / not 175 |
+| A6953 | 高 | 看见initcode 超界不是已经是部署代码超界 会被写成已经 176 bundled interchangeable | 官方 EIP-3860 icode item 1：not already settled |
+| A6954 | 中 | 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界会被抄进不确定 | 不抄。不写 怎样造超长 initcode、怎样用工厂一次塞多层合约去撞界。不另写 19 节 |
+| A6945 | 记录 | 会与 230 / 221 / 199 / 1434 / 1435 糊成「看见定长输入不是已经是任意哈希 API就已经是任意哈希 API interchangeable、就已经返回一份摘要 interchangeable、就已经是不变量 199 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-152 fixed-input not already generic-hash-API / not already digest / not already 199 正式三事（230 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。230 blake2f vs hash bundled unbundling 完成（1436 item 3） |
+| A6946 | 高 | 看见定长输入不是已经是任意哈希 API 会被写成已经是任意哈希 API interchangeable / 221 interchangeable | 官方 EIP-152 b2f item 3：not already 已经是任意哈希 API / not 221 |
+| A6947 | 高 | 看见fixed-length input is not already a generic hash API 会被写成已经返回一份摘要 interchangeable / 199 interchangeable | 官方 EIP-152 b2f item 3：not already 已经返回一份摘要 / not 199 |
+| A6948 | 高 | 看见定长输入不是已经是任意哈希 API 会被写成已经是不变量 199 interchangeable | 官方 EIP-152 b2f item 3：not already settled |
+| A6949 | 中 | 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换会被抄进不确定 | 不抄。不写 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换。不另写 19 节 |
+| A6940 | 记录 | 会与 230 / 199 / 229 / 1434 / 1436 糊成「看见本页不是已经能验 Equihash就已经能验 Equihash interchangeable、就已经是跨链中继 / 原子交换 interchangeable、就已经有隐私 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-152 this-page not already Equihash / not already relay / not already privacy 正式三事（230 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。230 blake2f vs hash bundled unbundling 续（1435 item 2） |
+| A6941 | 高 | 看见本页不是已经能验 Equihash 会被写成已经能验 Equihash interchangeable / 199 interchangeable | 官方 EIP-152 b2f item 2：not already 已经能验 Equihash / not 199 |
+| A6942 | 高 | 看见this page is not already Equihash-live 会被写成已经是跨链中继 / 原子交换 interchangeable / 229 interchangeable | 官方 EIP-152 b2f item 2：not already 已经是跨链中继 / 原子交换 / not 229 |
+| A6943 | 高 | 看见本页不是已经能验 Equihash 会被写成已经有隐私 interchangeable | 官方 EIP-152 b2f item 2：not already settled |
+| A6944 | 中 | 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换会被抄进不确定 | 不抄。不写 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换。不另写 19 节 |
+| A6935 | 记录 | 会与 230 / 199 / 228 / 1435 / 1436 糊成「看见BLAKE2 压缩函数 F 不是已经是 BLAKE2b 哈希就已经是 BLAKE2b 哈希 interchangeable、就已经是 keccak / SHA3 interchangeable、就已经 230 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-152 F not already BLAKE2b-hash / not already keccak / not already 230-bundled 正式三事（230 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。230 blake2f vs hash bundled unbundling 启动（1434 item 1） |
+| A6936 | 高 | 看见BLAKE2 压缩函数 F 不是已经是 BLAKE2b 哈希 会被写成已经是 BLAKE2b 哈希 interchangeable / 199 interchangeable | 官方 EIP-152 b2f item 1：not already 已经是 BLAKE2b 哈希 / not 199 |
+| A6937 | 高 | 看见F is not already BLAKE2b hash 会被写成已经是 keccak / SHA3 interchangeable / 228 interchangeable | 官方 EIP-152 b2f item 1：not already 已经是 keccak / SHA3 / not 228 |
+| A6938 | 高 | 看见BLAKE2 压缩函数 F 不是已经是 BLAKE2b 哈希 会被写成已经 230 bundled interchangeable | 官方 EIP-152 b2f item 1：not already settled |
+| A6939 | 中 | 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换会被抄进不确定 | 不抄。不写 怎样叠压缩函数去验工作量、怎样做跨链中继或原子交换。不另写 19 节 |
+| A6930 | 记录 | 会与 229 / 101 / 169 / 1431 / 1432 糊成「看见树依赖涨价不是已经是本笔冷热就已经是本笔冷热 interchangeable、就已经是磁盘 O(1) interchangeable、就已经是 2929 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1884 reprice not already cold-warm / not already disk-O1 / not already 2929 正式三事（229 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。229 selfbalance vs balance bundled unbundling 完成（1433 item 3） |
+| A6931 | 高 | 看见树依赖涨价不是已经是本笔冷热 会被写成已经是本笔冷热 interchangeable / 101 interchangeable | 官方 EIP-1884 sbal item 3：not already 已经是本笔冷热 / not 101 |
+| A6932 | 高 | 看见trie-dependent reprice is not already cold-warm 会被写成已经是磁盘 O(1) interchangeable / 169 interchangeable | 官方 EIP-1884 sbal item 3：not already 已经是磁盘 O(1) / not 169 |
+| A6933 | 高 | 看见树依赖涨价不是已经是本笔冷热 会被写成已经是 2929 interchangeable | 官方 EIP-1884 sbal item 3：not already settled |
+| A6934 | 中 | 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数会被抄进不确定 | 不抄。不写 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数。不另写 19 节 |
+| A6925 | 记录 | 会与 229 / 169 / 228 / 1431 / 1433 糊成「看见给自己查余额不是已经按本账户价扣就已经按本账户价扣 interchangeable、就已经是更便宜的按地址查 interchangeable、就已经做完 1884 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1884 self-query not already self-priced / not already cheaper-BALANCE / not already 1884-done 正式三事（229 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。229 selfbalance vs balance bundled unbundling 续（1432 item 2） |
+| A6926 | 高 | 看见给自己查余额不是已经按本账户价扣 会被写成已经按本账户价扣 interchangeable / 169 interchangeable | 官方 EIP-1884 sbal item 2：not already 已经按本账户价扣 / not 169 |
+| A6927 | 高 | 看见self-query is not already self-priced 会被写成已经是更便宜的按地址查 interchangeable / 228 interchangeable | 官方 EIP-1884 sbal item 2：not already 已经是更便宜的按地址查 / not 228 |
+| A6928 | 高 | 看见给自己查余额不是已经按本账户价扣 会被写成已经做完 1884 interchangeable | 官方 EIP-1884 sbal item 2：not already settled |
+| A6929 | 中 | 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数会被抄进不确定 | 不抄。不写 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数。不另写 19 节 |
+| A6920 | 记录 | 会与 229 / 169 / 221 / 1432 / 1433 糊成「看见本账户余额指令不是已经是按地址查余额就已经是按地址查余额 interchangeable、就已经改了余额语义 interchangeable、就已经 229 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1884 selfbalance not already BALANCE / not already stack-pop-balance / not already 229-bundled 正式三事（229 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。229 selfbalance vs balance bundled unbundling 启动（1431 item 1） |
+| A6921 | 高 | 看见本账户余额指令不是已经是按地址查余额 会被写成已经是按地址查余额 interchangeable / 169 interchangeable | 官方 EIP-1884 sbal item 1：not already 已经是按地址查余额 / not 169 |
+| A6922 | 高 | 看见SELFBALANCE is not already BALANCE 会被写成已经改了余额语义 interchangeable / 221 interchangeable | 官方 EIP-1884 sbal item 1：not already 已经改了余额语义 / not 221 |
+| A6923 | 高 | 看见本账户余额指令不是已经是按地址查余额 会被写成已经 229 bundled interchangeable | 官方 EIP-1884 sbal item 1：not already settled |
+| A6924 | 中 | 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数会被抄进不确定 | 不抄。不写 怎样绕过涨价、怎样在津贴帧里再读槽、怎样按旧价赌默认函数。不另写 19 节 |
+| A6915 | 记录 | 会与 228 / 199 / 206 / 1428 / 1429 糊成「看见本页不是已经是通用曲线算术就已经是通用曲线算术 interchangeable、就已经是不变量 199 interchangeable、就已经是不变量 227 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1108 this-page not already generic-curve / not already 199 / not already 227 正式三事（228 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。228 bn128-cut vs verify bundled unbundling 完成（1430 item 3） |
+| A6916 | 高 | 看见本页不是已经是通用曲线算术 会被写成已经是通用曲线算术 interchangeable / 199 interchangeable | 官方 EIP-1108 bn128 item 3：not already 已经是通用曲线算术 / not 199 |
+| A6917 | 高 | 看见this page is not already generic curve arithmetic 会被写成已经是不变量 199 interchangeable / 206 interchangeable | 官方 EIP-1108 bn128 item 3：not already 已经是不变量 199 / not 206 |
+| A6918 | 高 | 看见本页不是已经是通用曲线算术 会被写成已经是不变量 227 interchangeable | 官方 EIP-1108 bn128 item 3：not already settled |
+| A6919 | 中 | 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证会被抄进不确定 | 不抄。不写 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证。不另写 19 节 |
+| A6910 | 记录 | 会与 228 / 199 / 116 / 1428 / 1430 糊成「看见更便宜不是已经在验签就已经在验签 interchangeable、就已经上了隐私 / 扩容产品 interchangeable、就已经是 2537 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1108 cheaper not already verifying / not already privacy-live / not already 2537 正式三事（228 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。228 bn128-cut vs verify bundled unbundling 续（1429 item 2） |
+| A6911 | 高 | 看见更便宜不是已经在验签 会被写成已经在验签 interchangeable / 199 interchangeable | 官方 EIP-1108 bn128 item 2：not already 已经在验签 / not 199 |
+| A6912 | 高 | 看见cheaper is not already verifying signatures 会被写成已经上了隐私 / 扩容产品 interchangeable / 116 interchangeable | 官方 EIP-1108 bn128 item 2：not already 已经上了隐私 / 扩容产品 / not 116 |
+| A6913 | 高 | 看见更便宜不是已经在验签 会被写成已经是 2537 interchangeable | 官方 EIP-1108 bn128 item 2：not already settled |
+| A6914 | 中 | 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证会被抄进不确定 | 不抄。不写 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证。不另写 19 节 |
+| A6905 | 记录 | 会与 228 / 199 / 227 / 1429 / 1430 糊成「看见bn128 加 / 乘 / 配对降价不是已经换了算法就已经换了算法 interchangeable、就已经重新加入这三条预编译 interchangeable、就已经 228 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1108 bn128-cut not already algo-changed / not already 196-197-readded / not already 228-bundled 正式三事（228 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。228 bn128-cut vs verify bundled unbundling 启动（1428 item 1） |
+| A6906 | 高 | 看见bn128 加 / 乘 / 配对降价不是已经换了算法 会被写成已经换了算法 interchangeable / 199 interchangeable | 官方 EIP-1108 bn128 item 1：not already 已经换了算法 / not 199 |
+| A6907 | 高 | 看见bn128 cut is not already algo-changed 会被写成已经重新加入这三条预编译 interchangeable / 227 interchangeable | 官方 EIP-1108 bn128 item 1：not already 已经重新加入这三条预编译 / not 227 |
+| A6908 | 高 | 看见bn128 加 / 乘 / 配对降价不是已经换了算法 会被写成已经 228 bundled interchangeable | 官方 EIP-1108 bn128 item 1：not already settled |
+| A6909 | 中 | 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证会被抄进不确定 | 不抄。不写 怎样拼配对、怎样做机密交易、怎样把状态收成一棵树再上证。不另写 19 节 |
+| A6900 | 记录 | 会与 227 / 177 / 199 / 1425 / 1426 糊成「看见最低气价不是已经能对小输入无限便宜就已经能对小输入无限便宜 interchangeable、就已经不伤安全 interchangeable、就已经是签名产品 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2565 min-gas not already infinitely-cheap / not already no-DoS / not already product-live 正式三事（227 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。227 modexp-price vs bound bundled unbundling 完成（1427 item 3） |
+| A6901 | 高 | 看见最低气价不是已经能对小输入无限便宜 会被写成已经能对小输入无限便宜 interchangeable / 177 interchangeable | 官方 EIP-2565 mexp item 3：not already 已经能对小输入无限便宜 / not 177 |
+| A6902 | 高 | 看见min gas is not already infinitely cheap 会被写成已经不伤安全 interchangeable / 199 interchangeable | 官方 EIP-2565 mexp item 3：not already 已经不伤安全 / not 199 |
+| A6903 | 高 | 看见最低气价不是已经能对小输入无限便宜 会被写成已经是签名产品 interchangeable | 官方 EIP-2565 mexp item 3：not already settled |
+| A6904 | 中 | 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数会被抄进不确定 | 不抄。不写 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数。不另写 19 节 |
+| A6895 | 记录 | 会与 227 / 206 / 203 / 1425 / 1427 糊成「看见更便宜不是已经改了接口或算法就已经改了接口或算法 interchangeable、就已经是不变量 206 interchangeable、就已经换了得数 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2565 cheaper not already iface-changed / not already algo-changed / not already 206 正式三事（227 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。227 modexp-price vs bound bundled unbundling 续（1426 item 2） |
+| A6896 | 高 | 看见更便宜不是已经改了接口或算法 会被写成已经改了接口或算法 interchangeable / 206 interchangeable | 官方 EIP-2565 mexp item 2：not already 已经改了接口或算法 / not 206 |
+| A6897 | 高 | 看见cheaper is not already interface/algo-changed 会被写成已经是不变量 206 interchangeable / 203 interchangeable | 官方 EIP-2565 mexp item 2：not already 已经是不变量 206 / not 203 |
+| A6898 | 高 | 看见更便宜不是已经改了接口或算法 会被写成已经换了得数 interchangeable | 官方 EIP-2565 mexp item 2：not already settled |
+| A6899 | 中 | 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数会被抄进不确定 | 不抄。不写 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数。不另写 19 节 |
+| A6890 | 记录 | 会与 227 / 206 / 198 / 1426 / 1427 糊成「看见模幂重计价不是已经是 198 那道复杂度公式就已经是 198 那道复杂度公式 interchangeable、就已经是 7823 interchangeable、就已经 227 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2565 reprice not already 198-formula / not already 7823 / not already 227-bundled 正式三事（227 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。227 modexp-price vs bound bundled unbundling 启动（1425 item 1） |
+| A6891 | 高 | 看见模幂重计价不是已经是 198 那道复杂度公式 会被写成已经是 198 那道复杂度公式 interchangeable / 206 interchangeable | 官方 EIP-2565 mexp item 1：not already 已经是 198 那道复杂度公式 / not 206 |
+| A6892 | 高 | 看见reprice is not already the 198 formula 会被写成已经是 7823 interchangeable / 198 interchangeable | 官方 EIP-2565 mexp item 1：not already 已经是 7823 / not 198 |
+| A6893 | 高 | 看见模幂重计价不是已经是 198 那道复杂度公式 会被写成已经 227 bundled interchangeable | 官方 EIP-2565 mexp item 1：not already settled |
+| A6894 | 中 | 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数会被抄进不确定 | 不抄。不写 怎样造便宜模幂、怎样打满一块、怎样按新价实现签名或可验证延迟函数。不另写 19 节 |
+| A6885 | 记录 | 会与 226 / 197 / 225 / 1422 / 1423 糊成「看见降价不是已经不伤网络延迟 / 安全就已经不伤网络延迟 / 安全 interchangeable、就已经不改安全 interchangeable、就已经是不变量 197 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2028 cheaper not already no-delay / not already no-security-change / not already 197 正式三事（226 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。226 calldata-cut vs unlimited bundled unbundling 完成（1424 item 3） |
+| A6886 | 高 | 看见降价不是已经不伤网络延迟 / 安全 会被写成已经不伤网络延迟 / 安全 interchangeable / 197 interchangeable | 官方 EIP-2028 cdcut item 3：not already 已经不伤网络延迟 / 安全 / not 197 |
+| A6887 | 高 | 看见cheaper is not already no delay/security impact 会被写成已经不改安全 interchangeable / 225 interchangeable | 官方 EIP-2028 cdcut item 3：not already 已经不改安全 / not 225 |
+| A6888 | 高 | 看见降价不是已经不伤网络延迟 / 安全 会被写成已经是不变量 197 interchangeable | 官方 EIP-2028 cdcut item 3：not already settled |
+| A6889 | 中 | 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价会被抄进不确定 | 不抄。不写 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价。不另写 19 节 |
+| A6880 | 记录 | 会与 226 / 145 / 158 / 1422 / 1424 糊成「看见降价不是已经没有块大小上限就已经没有块大小上限 interchangeable、就已经解决数据可用性 interchangeable、就已经是 4844 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2028 cheaper not already no-block-cap / not already DA-solved / not already 4844 正式三事（226 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。226 calldata-cut vs unlimited bundled unbundling 续（1423 item 2） |
+| A6881 | 高 | 看见降价不是已经没有块大小上限 会被写成已经没有块大小上限 interchangeable / 145 interchangeable | 官方 EIP-2028 cdcut item 2：not already 已经没有块大小上限 / not 145 |
+| A6882 | 高 | 看见cheaper is not already no block-size cap 会被写成已经解决数据可用性 interchangeable / 158 interchangeable | 官方 EIP-2028 cdcut item 2：not already 已经解决数据可用性 / not 158 |
+| A6883 | 高 | 看见降价不是已经没有块大小上限 会被写成已经是 4844 interchangeable | 官方 EIP-2028 cdcut item 2：not already settled |
+| A6884 | 中 | 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价会被抄进不确定 | 不抄。不写 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价。不另写 19 节 |
+| A6875 | 记录 | 会与 226 / 197 / 145 / 1423 / 1424 糊成「看见非零 calldata 降价不是已经给零字节也降价就已经给零字节也降价 interchangeable、就已经是 7623 interchangeable、就已经 226 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2028 nonzero-cut not already zero-cut / not already 7623 / not already 226-bundled 正式三事（226 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。226 calldata-cut vs unlimited bundled unbundling 启动（1422 item 1） |
+| A6876 | 高 | 看见非零 calldata 降价不是已经给零字节也降价 会被写成已经给零字节也降价 interchangeable / 197 interchangeable | 官方 EIP-2028 cdcut item 1：not already 已经给零字节也降价 / not 197 |
+| A6877 | 高 | 看见nonzero cut is not already zero-byte cut 会被写成已经是 7623 interchangeable / 145 interchangeable | 官方 EIP-2028 cdcut item 1：not already 已经是 7623 / not 145 |
+| A6878 | 高 | 看见非零 calldata 降价不是已经给零字节也降价 会被写成已经 226 bundled interchangeable | 官方 EIP-2028 cdcut item 1：not already settled |
+| A6879 | 中 | 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价会被抄进不确定 | 不抄。不写 怎样往 calldata 里塞证明、怎样打满更大块、怎样按延迟模型定价。不另写 19 节 |
+| A6870 | 记录 | 会与 225 / 159 / 169 / 1419 / 1420 糊成「看见津贴帧里写存储会停不是已经能在转账津贴里改槽就已经能在转账津贴里改槽 interchangeable、就已经是 1283 那道洞 interchangeable、就已经是不变量 223 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2200 stipend-ban not already stipend-writable / not already 1283-hole / not already 223 正式三事（225 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。225 net-meter vs transient bundled unbundling 完成（1421 item 3） |
+| A6871 | 高 | 看见津贴帧里写存储会停不是已经能在转账津贴里改槽 会被写成已经能在转账津贴里改槽 interchangeable / 159 interchangeable | 官方 EIP-2200 nmet item 3：not already 已经能在转账津贴里改槽 / not 159 |
+| A6872 | 高 | 看见stipend ban is not already stipend-writable 会被写成已经是 1283 那道洞 interchangeable / 169 interchangeable | 官方 EIP-2200 nmet item 3：not already 已经是 1283 那道洞 / not 169 |
+| A6873 | 高 | 看见津贴帧里写存储会停不是已经能在转账津贴里改槽 会被写成已经是不变量 223 interchangeable | 官方 EIP-2200 nmet item 3：not already settled |
+| A6874 | 中 | 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图会被抄进不确定 | 不抄。不写 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图。不另写 19 节 |
+| A6865 | 记录 | 会与 225 / 169 / 223 / 1419 / 1421 糊成「看见原来值 / 当前值 / 新值不是已经只有当前值就已经只有当前值 interchangeable、就已经是这一上下文第一次写 interchangeable、就已经是 2929 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2200 orig-cur-new not already current-only / not already first-write / not already 2929 正式三事（225 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。225 net-meter vs transient bundled unbundling 续（1420 item 2） |
+| A6866 | 高 | 看见原来值 / 当前值 / 新值不是已经只有当前值 会被写成已经只有当前值 interchangeable / 169 interchangeable | 官方 EIP-2200 nmet item 2：not already 已经只有当前值 / not 169 |
+| A6867 | 高 | 看见three values are not already current-only 会被写成已经是这一上下文第一次写 interchangeable / 223 interchangeable | 官方 EIP-2200 nmet item 2：not already 已经是这一上下文第一次写 / not 223 |
+| A6868 | 高 | 看见原来值 / 当前值 / 新值不是已经只有当前值 会被写成已经是 2929 interchangeable | 官方 EIP-2200 nmet item 2：not already settled |
+| A6869 | 中 | 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图会被抄进不确定 | 不抄。不写 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图。不另写 19 节 |
+| A6860 | 记录 | 会与 225 / 159 / 223 / 1420 / 1421 糊成「看见净计量不是已经是瞬时存储就已经是瞬时存储 interchangeable、就已经是 1153 interchangeable、就已经 225 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2200 net-meter not already transient / not already 1153 / not already 225-bundled 正式三事（225 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。225 net-meter vs transient bundled unbundling 启动（1419 item 1） |
+| A6861 | 高 | 看见净计量不是已经是瞬时存储 会被写成已经是瞬时存储 interchangeable / 159 interchangeable | 官方 EIP-2200 nmet item 1：not already 已经是瞬时存储 / not 159 |
+| A6862 | 高 | 看见net metering is not already transient storage 会被写成已经是 1153 interchangeable / 223 interchangeable | 官方 EIP-2200 nmet item 1：not already 已经是 1153 / not 223 |
+| A6863 | 高 | 看见净计量不是已经是瞬时存储 会被写成已经 225 bundled interchangeable | 官方 EIP-2200 nmet item 1：not already settled |
+| A6864 | 中 | 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图会被抄进不确定 | 不抄。不写 怎样在津贴帧里改槽、怎样做重入、怎样实现脏图。不另写 19 节 |
+| A6855 | 记录 | 会与 224 / 160 / 223 / 1416 / 1417 糊成「看见「以后可能变」不是已经变了就已经变了 interchangeable、就已经是不变量 160 interchangeable、就已经是不变量 223 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-6049 later-may-change not already changed / not already 160 / not already 223 正式三事（224 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。224 deprecate vs changed bundled unbundling 完成（1418 item 3） |
+| A6856 | 高 | 看见「以后可能变」不是已经变了 会被写成已经变了 interchangeable / 160 interchangeable | 官方 EIP-6049 depre item 3：not already 已经变了 / not 160 |
+| A6857 | 高 | 看见later-may-change is not already changed 会被写成已经是不变量 160 interchangeable / 223 interchangeable | 官方 EIP-6049 depre item 3：not already 已经是不变量 160 / not 223 |
+| A6858 | 高 | 看见「以后可能变」不是已经变了 会被写成已经是不变量 223 interchangeable | 官方 EIP-6049 depre item 3：not already settled |
+| A6859 | 中 | 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动会被抄进不确定 | 不抄。不写 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动。不另写 19 节 |
+| A6850 | 记录 | 会与 224 / 160 / 223 / 1416 / 1418 糊成「看见本页不是已经改了客户端就已经改了客户端 interchangeable、就已经删掉这条指令 interchangeable、就已经是 3529 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-6049 meta-page not already client-changed / not already instruction-removed / not already 3529 正式三事（224 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。224 deprecate vs changed bundled unbundling 续（1417 item 2） |
+| A6851 | 高 | 看见本页不是已经改了客户端 会被写成已经改了客户端 interchangeable / 160 interchangeable | 官方 EIP-6049 depre item 2：not already 已经改了客户端 / not 160 |
+| A6852 | 高 | 看见this page is not already client-changed 会被写成已经删掉这条指令 interchangeable / 223 interchangeable | 官方 EIP-6049 depre item 2：not already 已经删掉这条指令 / not 223 |
+| A6853 | 高 | 看见本页不是已经改了客户端 会被写成已经是 3529 interchangeable | 官方 EIP-6049 depre item 2：not already settled |
+| A6854 | 中 | 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动会被抄进不确定 | 不抄。不写 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动。不另写 19 节 |
+| A6845 | 记录 | 会与 224 / 160 / 223 / 1417 / 1418 糊成「看见弃用警告不是已经改了共识行为就已经改了共识行为 interchangeable、就已经是 6780 interchangeable、就已经 224 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-6049 deprecate-warn not already consensus-changed / not already 6780 / not already 224-bundled 正式三事（224 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。224 deprecate vs changed bundled unbundling 启动（1416 item 1） |
+| A6846 | 高 | 看见弃用警告不是已经改了共识行为 会被写成已经改了共识行为 interchangeable / 160 interchangeable | 官方 EIP-6049 depre item 1：not already 已经改了共识行为 / not 160 |
+| A6847 | 高 | 看见deprecation is not already consensus-changed 会被写成已经是 6780 interchangeable / 223 interchangeable | 官方 EIP-6049 depre item 1：not already 已经是 6780 / not 223 |
+| A6848 | 高 | 看见弃用警告不是已经改了共识行为 会被写成已经 224 bundled interchangeable | 官方 EIP-6049 depre item 1：not already settled |
+| A6849 | 中 | 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动会被抄进不确定 | 不抄。不写 怎样继续用自毁、怎样迁合约、怎样实现以后那次破坏性改动。不另写 19 节 |
+| A6840 | 记录 | 会与 223 / 158 / 169 / 1413 / 1414 糊成「看见退款计数不是已经能在执行当中用就已经能在执行当中用 interchangeable、就已经是本块实际能烧掉的上限 interchangeable、就已经是不变量 158 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3529 refund-counter not already mid-exec-spendable / not already gaslimit-cap / not already 158 正式三事（223 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。223 refund vs gone bundled unbundling 完成（1415 item 3） |
+| A6841 | 高 | 看见退款计数不是已经能在执行当中用 会被写成已经能在执行当中用 interchangeable / 158 interchangeable | 官方 EIP-3529 rfnd item 3：not already 已经能在执行当中用 / not 158 |
+| A6842 | 高 | 看见refund counter is not already mid-exec spendable 会被写成已经是本块实际能烧掉的上限 interchangeable / 169 interchangeable | 官方 EIP-3529 rfnd item 3：not already 已经是本块实际能烧掉的上限 / not 169 |
+| A6843 | 高 | 看见退款计数不是已经能在执行当中用 会被写成已经是不变量 158 interchangeable | 官方 EIP-3529 rfnd item 3：not already settled |
+| A6844 | 中 | 怎样做气代币、怎样留灰、怎样用退款打满一块会被抄进不确定 | 不抄。不写 怎样做气代币、怎样留灰、怎样用退款打满一块。不另写 19 节 |
+| A6835 | 记录 | 会与 223 / 160 / 159 / 1413 / 1415 糊成「看见去掉自毁退款不是已经改了自毁语义就已经改了自毁语义 interchangeable、就已经是不变量 160 interchangeable、就已经是 1559 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3529 drop-selfdestruct-refund not already 6780-semantics / not already 160 / not already 1559 正式三事（223 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。223 refund vs gone bundled unbundling 续（1414 item 2） |
+| A6836 | 高 | 看见去掉自毁退款不是已经改了自毁语义 会被写成已经改了自毁语义 interchangeable / 160 interchangeable | 官方 EIP-3529 rfnd item 2：not already 已经改了自毁语义 / not 160 |
+| A6837 | 高 | 看见drop selfdestruct refund is not already 6780 会被写成已经是不变量 160 interchangeable / 159 interchangeable | 官方 EIP-3529 rfnd item 2：not already 已经是不变量 160 / not 159 |
+| A6838 | 高 | 看见去掉自毁退款不是已经改了自毁语义 会被写成已经是 1559 interchangeable | 官方 EIP-3529 rfnd item 2：not already settled |
+| A6839 | 中 | 怎样做气代币、怎样留灰、怎样用退款打满一块会被抄进不确定 | 不抄。不写 怎样做气代币、怎样留灰、怎样用退款打满一块。不另写 19 节 |
+| A6830 | 记录 | 会与 223 / 160 / 158 / 1414 / 1415 糊成「看见退款削减不是已经没有退款就已经没有退款 interchangeable、就已经重写 2200 interchangeable、就已经 223 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3529 refund-cut not already no-refund / not already 2200-rewritten / not already 223-bundled 正式三事（223 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。223 refund vs gone bundled unbundling 启动（1413 item 1） |
+| A6831 | 高 | 看见退款削减不是已经没有退款 会被写成已经没有退款 interchangeable / 160 interchangeable | 官方 EIP-3529 rfnd item 1：not already 已经没有退款 / not 160 |
+| A6832 | 高 | 看见refund cut is not already no refunds 会被写成已经重写 2200 interchangeable / 158 interchangeable | 官方 EIP-3529 rfnd item 1：not already 已经重写 2200 / not 158 |
+| A6833 | 高 | 看见退款削减不是已经没有退款 会被写成已经 223 bundled interchangeable | 官方 EIP-3529 rfnd item 1：not already settled |
+| A6834 | 中 | 怎样做气代币、怎样留灰、怎样用退款打满一块会被抄进不确定 | 不抄。不写 怎样做气代币、怎样留灰、怎样用退款打满一块。不另写 19 节 |
+| A6825 | 记录 | 会与 216 / 169 / 197 / 1410 / 1411 糊成「看见能重叠拷不是已经是 calldata / 返回数据拷就已经是 calldata / 返回数据拷 interchangeable、就已经改了 CALL 的效果 interchangeable、就已经是不变量 169 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-5656 overlap-copy not already calldata-copy / not already CALL-changed / not already 169 正式三事（216 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。216 MCOPY vs identity bundled unbundling 完成（1412 item 3） |
+| A6826 | 高 | 看见能重叠拷不是已经是 calldata / 返回数据拷 会被写成已经是 calldata / 返回数据拷 interchangeable / 169 interchangeable | 官方 EIP-5656 mcpy item 3：not already 已经是 calldata / 返回数据拷 / not 169 |
+| A6827 | 高 | 看见overlap copy is not already calldata copy 会被写成已经改了 CALL 的效果 interchangeable / 197 interchangeable | 官方 EIP-5656 mcpy item 3：not already 已经改了 CALL 的效果 / not 197 |
+| A6828 | 高 | 看见能重叠拷不是已经是 calldata / 返回数据拷 会被写成已经是不变量 169 interchangeable | 官方 EIP-5656 mcpy item 3：not already settled |
+| A6829 | 中 | 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果会被抄进不确定 | 不抄。不写 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果。不另写 19 节 |
+| A6820 | 记录 | 会与 216 / 208 / 176 / 1410 / 1412 糊成「看见「像用了中间缓冲」不是已经必须真分配一块缓冲就已经必须真分配一块缓冲 interchangeable、就已经是拒绝服务面 interchangeable、就已经是不变量 208 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-5656 as-if-buffer not already real-alloc / not already DoS / not already 208 正式三事（216 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。216 MCOPY vs identity bundled unbundling 续（1411 item 2） |
+| A6821 | 高 | 看见「像用了中间缓冲」不是已经必须真分配一块缓冲 会被写成已经必须真分配一块缓冲 interchangeable / 208 interchangeable | 官方 EIP-5656 mcpy item 2：not already 已经必须真分配一块缓冲 / not 208 |
+| A6822 | 高 | 看见as-if-buffer is not already real allocation 会被写成已经是拒绝服务面 interchangeable / 176 interchangeable | 官方 EIP-5656 mcpy item 2：not already 已经是拒绝服务面 / not 176 |
+| A6823 | 高 | 看见「像用了中间缓冲」不是已经必须真分配一块缓冲 会被写成已经是不变量 208 interchangeable | 官方 EIP-5656 mcpy item 2：not already settled |
+| A6824 | 中 | 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果会被抄进不确定 | 不抄。不写 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果。不另写 19 节 |
+| A6815 | 记录 | 会与 216 / 169 / 208 / 1411 / 1412 糊成「看见内存拷贝指令不是已经是身份预编译就已经是身份预编译 interchangeable、就已经是 2929 interchangeable、就已经 216 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-5656 MCOPY not already identity-precompile / not already 2929 / not already 216-bundled 正式三事（216 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。216 MCOPY vs identity bundled unbundling 启动（1410 item 1） |
+| A6816 | 高 | 看见内存拷贝指令不是已经是身份预编译 会被写成已经是身份预编译 interchangeable / 169 interchangeable | 官方 EIP-5656 mcpy item 1：not already 已经是身份预编译 / not 169 |
+| A6817 | 高 | 看见MCOPY is not already identity precompile 会被写成已经是 2929 interchangeable / 208 interchangeable | 官方 EIP-5656 mcpy item 1：not already 已经是 2929 / not 208 |
+| A6818 | 高 | 看见内存拷贝指令不是已经是身份预编译 会被写成已经 216 bundled interchangeable | 官方 EIP-5656 mcpy item 1：not already settled |
+| A6819 | 中 | 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果会被抄进不确定 | 不抄。不写 怎样造真缓冲、怎样打重叠拷、怎样改 CALL 效果。不另写 19 节 |
+| A6810 | 记录 | 会与 217 / 208 / 188 / 1407 / 1408 糊成「看见已经部署碰巧用了这个字节不是行为已经不变就行为已经不变 interchangeable、就已经是常数零 interchangeable、就已经是不变量 208 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3855 old-byte not already unchanged / not already context-zero / not already 208 正式三事（217 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。217 PUSH0 vs PUSH1 bundled unbundling 完成（1409 item 3） |
+| A6811 | 高 | 看见已经部署碰巧用了这个字节不是行为已经不变 会被写成行为已经不变 interchangeable / 208 interchangeable | 官方 EIP-3855 psh0 item 3：not already 行为已经不变 / not 208 |
+| A6812 | 高 | 看见old byte is not already unchanged 会被写成已经是常数零 interchangeable / 188 interchangeable | 官方 EIP-3855 psh0 item 3：not already 已经是常数零 / not 188 |
+| A6813 | 高 | 看见已经部署碰巧用了这个字节不是行为已经不变 会被写成已经是不变量 208 interchangeable | 官方 EIP-3855 psh0 item 3：not already settled |
+| A6814 | 中 | 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析会被抄进不确定 | 不抄。不写 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析。不另写 19 节 |
+| A6805 | 记录 | 会与 217 / 216 / 176 / 1407 / 1409 糊成「看见没有立即数不是已经改了跳转目的分析就已经改了跳转目的分析 interchangeable、就已经共用实现 interchangeable、就已经是 5656 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3855 no-immediate not already jumpdest-changed / not already shared-impl / not already 5656 正式三事（217 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。217 PUSH0 vs PUSH1 bundled unbundling 续（1408 item 2） |
+| A6806 | 高 | 看见没有立即数不是已经改了跳转目的分析 会被写成已经改了跳转目的分析 interchangeable / 216 interchangeable | 官方 EIP-3855 psh0 item 2：not already 已经改了跳转目的分析 / not 216 |
+| A6807 | 高 | 看见no immediate is not already jumpdest-changed 会被写成已经共用实现 interchangeable / 176 interchangeable | 官方 EIP-3855 psh0 item 2：not already 已经共用实现 / not 176 |
+| A6808 | 高 | 看见没有立即数不是已经改了跳转目的分析 会被写成已经是 5656 interchangeable | 官方 EIP-3855 psh0 item 2：not already settled |
+| A6809 | 中 | 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析会被抄进不确定 | 不抄。不写 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析。不另写 19 节 |
+| A6800 | 记录 | 会与 217 / 216 / 208 / 1408 / 1409 糊成「看见压零指令不是已经是带立即数的压 0就已经是带立即数的压 0 interchangeable、就已经是不变量 216 interchangeable、就已经 217 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3855 PUSH0 not already immediate-push0 / not already 216 / not already 217-bundled 正式三事（217 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。217 PUSH0 vs PUSH1 bundled unbundling 启动（1407 item 1） |
+| A6801 | 高 | 看见压零指令不是已经是带立即数的压 0 会被写成已经是带立即数的压 0 interchangeable / 216 interchangeable | 官方 EIP-3855 psh0 item 1：not already 已经是带立即数的压 0 / not 216 |
+| A6802 | 高 | 看见PUSH0 is not already immediate push-0 会被写成已经是不变量 216 interchangeable / 208 interchangeable | 官方 EIP-3855 psh0 item 1：not already 已经是不变量 216 / not 208 |
+| A6803 | 高 | 看见压零指令不是已经是带立即数的压 0 会被写成已经 217 bundled interchangeable | 官方 EIP-3855 psh0 item 1：not already settled |
+| A6804 | 中 | 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析会被抄进不确定 | 不抄。不写 怎样在旧字节上赌分叉后行为、怎样用上下文指令凑零、怎样改跳转目的分析。不另写 19 节 |
+| A6795 | 记录 | 会与 231 / 208 / 217 / 1404 / 1405 糊成「看见更便宜不是已经是位域打包产品就已经是位域打包产品 interchangeable、就已经改了旧字节码 interchangeable、就已经是不变量 208 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-145 cheaper not already bitfield-product / not already old-bytecode-changed / not already 208 正式三事（231 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。231 SHIFT vs arithmetic bundled unbundling 完成（1406 item 3） |
+| A6796 | 高 | 看见更便宜不是已经是位域打包产品 会被写成已经是位域打包产品 interchangeable / 208 interchangeable | 官方 EIP-145 shft item 3：not already 已经是位域打包产品 / not 208 |
+| A6797 | 高 | 看见cheaper is not already a bitfield product 会被写成已经改了旧字节码 interchangeable / 217 interchangeable | 官方 EIP-145 shft item 3：not already 已经改了旧字节码 / not 217 |
+| A6798 | 高 | 看见更便宜不是已经是位域打包产品 会被写成已经是不变量 208 interchangeable | 官方 EIP-145 shft item 3：not already settled |
+| A6799 | 中 | 怎样做位域打包、怎样抽字段、怎样用移位代替哈希会被抄进不确定 | 不抄。不写 怎样做位域打包、怎样抽字段、怎样用移位代替哈希。不另写 19 节 |
+| A6790 | 记录 | 会与 231 / 216 / 230 / 1404 / 1406 糊成「看见算术右移不是已经是有符号除就已经是有符号除 interchangeable、就已经是同一条舍入 interchangeable、就已经和加减同一套操作数顺序 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-145 SAR not already signed-div / not already same-rounding / not already same-operand-order 正式三事（231 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。231 SHIFT vs arithmetic bundled unbundling 续（1405 item 2） |
+| A6791 | 高 | 看见算术右移不是已经是有符号除 会被写成已经是有符号除 interchangeable / 216 interchangeable | 官方 EIP-145 shft item 2：not already 已经是有符号除 / not 216 |
+| A6792 | 高 | 看见SAR is not already signed division 会被写成已经是同一条舍入 interchangeable / 230 interchangeable | 官方 EIP-145 shft item 2：not already 已经是同一条舍入 / not 230 |
+| A6793 | 高 | 看见算术右移不是已经是有符号除 会被写成已经和加减同一套操作数顺序 interchangeable | 官方 EIP-145 shft item 2：not already settled |
+| A6794 | 中 | 怎样做位域打包、怎样抽字段、怎样用移位代替哈希会被抄进不确定 | 不抄。不写 怎样做位域打包、怎样抽字段、怎样用移位代替哈希。不另写 19 节 |
+| A6785 | 记录 | 会与 231 / 208 / 217 / 1405 / 1406 糊成「看见原生移位指令不是已经用算术拼过移位就已经用算术拼过移位 interchangeable、就已经只有一条移位 interchangeable、就已经 231 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-145 native-shift not already arith-composed / not already one-shift / not already 231-bundled 正式三事（231 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。231 SHIFT vs arithmetic bundled unbundling 启动（1404 item 1） |
+| A6786 | 高 | 看见原生移位指令不是已经用算术拼过移位 会被写成已经用算术拼过移位 interchangeable / 208 interchangeable | 官方 EIP-145 shft item 1：not already 已经用算术拼过移位 / not 208 |
+| A6787 | 高 | 看见native shift is not already arithmetic-composed 会被写成已经只有一条移位 interchangeable / 217 interchangeable | 官方 EIP-145 shft item 1：not already 已经只有一条移位 / not 217 |
+| A6788 | 高 | 看见原生移位指令不是已经用算术拼过移位 会被写成已经 231 bundled interchangeable | 官方 EIP-145 shft item 1：not already settled |
+| A6789 | 中 | 怎样做位域打包、怎样抽字段、怎样用移位代替哈希会被抄进不确定 | 不抄。不写 怎样做位域打包、怎样抽字段、怎样用移位代替哈希。不另写 19 节 |
+| A6780 | 记录 | 会与 219 / 218 / 201 / 1401 / 1402 糊成「看见跑 EVM 前就已经有这个数不是已经改了 4844 日程就已经改了 4844 日程 interchangeable、就已经改了费用市场 interchangeable、就已经是 7918 底价规则 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7516 pre-evm-value not already 4844-changed / not already market-changed / not already 7918 正式三事（219 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。219 BLOBBASEFEE vs BASEFEE bundled unbundling 完成（1403 item 3） |
+| A6781 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了 4844 日程 会被写成已经改了 4844 日程 interchangeable / 218 interchangeable | 官方 EIP-7516 bbfee item 3：not already 已经改了 4844 日程 / not 218 |
+| A6782 | 高 | 看见pre-EVM value is not already 4844-changed 会被写成已经改了费用市场 interchangeable / 201 interchangeable | 官方 EIP-7516 bbfee item 3：not already 已经改了费用市场 / not 201 |
+| A6783 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了 4844 日程 会被写成已经是 7918 底价规则 interchangeable | 官方 EIP-7516 bbfee item 3：not already settled |
+| A6784 | 中 | 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程会被抄进不确定 | 不抄。不写 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程。不另写 19 节 |
+| A6775 | 记录 | 会与 219 / 145 / 201 / 1401 / 1403 糊成「看见能读本块 blob 基础费不是已经并成一套气就已经并成一套气 interchangeable、就已经是不变量 145 interchangeable、就已经是不变量 201 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7516 read-blobbasefee not already one-gas / not already 145-bundled / not already 201 正式三事（219 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。219 BLOBBASEFEE vs BASEFEE bundled unbundling 续（1402 item 2） |
+| A6776 | 高 | 看见能读本块 blob 基础费不是已经并成一套气 会被写成已经并成一套气 interchangeable / 145 interchangeable | 官方 EIP-7516 bbfee item 2：not already 已经并成一套气 / not 145 |
+| A6777 | 高 | 看见readable blob basefee is not already one gas 会被写成已经是不变量 145 interchangeable / 201 interchangeable | 官方 EIP-7516 bbfee item 2：not already 已经是不变量 145 / not 201 |
+| A6778 | 高 | 看见能读本块 blob 基础费不是已经并成一套气 会被写成已经是不变量 201 interchangeable | 官方 EIP-7516 bbfee item 2：not already settled |
+| A6779 | 中 | 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程会被抄进不确定 | 不抄。不写 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程。不另写 19 节 |
+| A6770 | 记录 | 会与 219 / 218 / 158 / 1402 / 1403 糊成「看见blob 基础费指令不是已经是执行层基础费指令就已经是执行层基础费指令 interchangeable、就已经是不变量 218 interchangeable、就已经 219 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7516 BLOBBASEFEE opcode not already 3198-basefee / not already 218-bundled / not already 219-bundled 正式三事（219 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。219 BLOBBASEFEE vs BASEFEE bundled unbundling 启动（1401 item 1） |
+| A6771 | 高 | 看见blob 基础费指令不是已经是执行层基础费指令 会被写成已经是执行层基础费指令 interchangeable / 218 interchangeable | 官方 EIP-7516 bbfee item 1：not already 已经是执行层基础费指令 / not 218 |
+| A6772 | 高 | 看见BLOBBASEFEE is not already BASEFEE 会被写成已经是不变量 218 interchangeable / 158 interchangeable | 官方 EIP-7516 bbfee item 1：not already 已经是不变量 218 / not 158 |
+| A6773 | 高 | 看见blob 基础费指令不是已经是执行层基础费指令 会被写成已经 219 bundled interchangeable | 官方 EIP-7516 bbfee item 1：not already settled |
+| A6774 | 中 | 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程会被抄进不确定 | 不抄。不写 怎样按 blob 价做产品、怎样绕过两套气、怎样改 4844 日程。不另写 19 节 |
+| A6765 | 记录 | 会与 218 / 217 / 145 / 1398 / 1399 糊成「看见跑 EVM 前就已经有这个数不是已经改了头怎么算就已经改了头怎么算 interchangeable、就已经有气期货 interchangeable、就已经自动加长挑战期 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3198 pre-evm-value not already header-changed / not already futures / not already challenge-extended 正式三事（218 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。218 BASEFEE opcode vs market bundled unbundling 完成（1400 item 3） |
+| A6766 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了头怎么算 会被写成已经改了头怎么算 interchangeable / 217 interchangeable | 官方 EIP-3198 bfee item 3：not already 已经改了头怎么算 / not 217 |
+| A6767 | 高 | 看见pre-EVM value is not already header-changed 会被写成已经有气期货 interchangeable / 145 interchangeable | 官方 EIP-3198 bfee item 3：not already 已经有气期货 / not 145 |
+| A6768 | 高 | 看见跑 EVM 前就已经有这个数不是已经改了头怎么算 会被写成已经自动加长挑战期 interchangeable | 官方 EIP-3198 bfee item 3：not already settled |
+| A6769 | 中 | 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期会被抄进不确定 | 不抄。不写 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期。不另写 19 节 |
+| A6760 | 记录 | 会与 218 / 158 / 219 / 1398 / 1400 糊成「看见能读本块基础费不是已经给了出块者就已经给了出块者 interchangeable、就已经是 blob 基础费指令 interchangeable、就已经是不变量 219 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3198 read-basefee not already paid-to-proposer / not already blob-basefee / not already 219 正式三事（218 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。218 BASEFEE opcode vs market bundled unbundling 续（1399 item 2） |
+| A6761 | 高 | 看见能读本块基础费不是已经给了出块者 会被写成已经给了出块者 interchangeable / 158 interchangeable | 官方 EIP-3198 bfee item 2：not already 已经给了出块者 / not 158 |
+| A6762 | 高 | 看见readable basefee is not already paid to proposer 会被写成已经是 blob 基础费指令 interchangeable / 219 interchangeable | 官方 EIP-3198 bfee item 2：not already 已经是 blob 基础费指令 / not 219 |
+| A6763 | 高 | 看见能读本块基础费不是已经给了出块者 会被写成已经是不变量 219 interchangeable | 官方 EIP-3198 bfee item 2：not already settled |
+| A6764 | 中 | 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期会被抄进不确定 | 不抄。不写 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期。不另写 19 节 |
+| A6755 | 记录 | 会与 218 / 158 / 219 / 1399 / 1400 糊成「看见基础费指令不是已经改了费用市场就已经改了费用市场 interchangeable、就已经是不变量 158 interchangeable、就已经 218 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-3198 BASEFEE opcode not already 1559-market / not already 158-bundled / not already 218-bundled 正式三事（218 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。218 BASEFEE opcode vs market bundled unbundling 启动（1398 item 1） |
+| A6756 | 高 | 看见基础费指令不是已经改了费用市场 会被写成已经改了费用市场 interchangeable / 158 interchangeable | 官方 EIP-3198 bfee item 1：not already 已经改了费用市场 / not 158 |
+| A6757 | 高 | 看见BASEFEE is not already 1559 market 会被写成已经是不变量 158 interchangeable / 219 interchangeable | 官方 EIP-3198 bfee item 1：not already 已经是不变量 158 / not 219 |
+| A6758 | 高 | 看见基础费指令不是已经改了费用市场 会被写成已经 218 bundled interchangeable | 官方 EIP-3198 bfee item 1：not already settled |
+| A6759 | 中 | 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期会被抄进不确定 | 不抄。不写 怎样用基础费设悬赏、怎样做气期货、怎样按基础费加长挑战期。不另写 19 节 |
+| A6750 | 记录 | 会与 220 / 218 / 219 / 1395 / 1396 糊成「看见编译期写死的链号不是已经在硬分叉后仍安全就已经在硬分叉后仍安全 interchangeable、就已经是 712 域 interchangeable、就已经处理好有争议的分裂 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1344 compile-time chainid not already fork-safe / not already 712-domain / not already split-handled 正式三事（220 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。220 CHAINID opcode vs signed bundled unbundling 完成（1397 item 3） |
+| A6751 | 高 | 看见编译期写死的链号不是已经在硬分叉后仍安全 会被写成已经在硬分叉后仍安全 interchangeable / 218 interchangeable | 官方 EIP-1344 chid item 3：not already 已经在硬分叉后仍安全 / not 218 |
+| A6752 | 高 | 看见compile-time chainId is not already fork-safe 会被写成已经是 712 域 interchangeable / 219 interchangeable | 官方 EIP-1344 chid item 3：not already 已经是 712 域 / not 219 |
+| A6753 | 高 | 看见编译期写死的链号不是已经在硬分叉后仍安全 会被写成已经处理好有争议的分裂 interchangeable | 官方 EIP-1344 chid item 3：not already settled |
+| A6754 | 中 | 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放会被抄进不确定 | 不抄。不写 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放。不另写 19 节 |
+| A6745 | 记录 | 会与 220 / 161 / 218 / 1395 / 1397 糊成「看见指令返回配置链号不是这笔已经带了 155 标识就这笔交易已经带了 EIP-155 标识 interchangeable、就已经返回某个默认值 interchangeable、就已经是不变量 161 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1344 config-chainid not already this-tx-155 / not already default-value / not already 161 正式三事（220 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。220 CHAINID opcode vs signed bundled unbundling 续（1396 item 2） |
+| A6746 | 高 | 看见指令返回配置链号不是这笔已经带了 155 标识 会被写成这笔交易已经带了 EIP-155 标识 interchangeable / 161 interchangeable | 官方 EIP-1344 chid item 2：not already 这笔交易已经带了 EIP-155 标识 / not 161 |
+| A6747 | 高 | 看见config chainId is not already this-tx 155 会被写成已经返回某个默认值 interchangeable / 218 interchangeable | 官方 EIP-1344 chid item 2：not already 已经返回某个默认值 / not 218 |
+| A6748 | 高 | 看见指令返回配置链号不是这笔已经带了 155 标识 会被写成已经是不变量 161 interchangeable | 官方 EIP-1344 chid item 2：not already settled |
+| A6749 | 中 | 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放会被抄进不确定 | 不抄。不写 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放。不另写 19 节 |
+| A6740 | 记录 | 会与 220 / 161 / 18 / 1396 / 1397 糊成「看见链号指令不是已经是签进哈希的链号就已经是签进哈希的链号 interchangeable、就已经是钱包 JSON 里的 chainId interchangeable、就已经 220 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1344 CHAINID opcode not already 155-signed / not already JSON-chainId / not already 220-bundled 正式三事（220 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。220 CHAINID opcode vs signed bundled unbundling 启动（1395 item 1） |
+| A6741 | 高 | 看见链号指令不是已经是签进哈希的链号 会被写成已经是签进哈希的链号 interchangeable / 161 interchangeable | 官方 EIP-1344 chid item 1：not already 已经是签进哈希的链号 / not 161 |
+| A6742 | 高 | 看见CHAINID is not already signed chainId 会被写成已经是钱包 JSON 里的 chainId interchangeable / 18 interchangeable | 官方 EIP-1344 chid item 1：not already 已经是钱包 JSON 里的 chainId / not 18 |
+| A6743 | 高 | 看见链号指令不是已经是签进哈希的链号 会被写成已经 220 bundled interchangeable | 官方 EIP-1344 chid item 1：not already settled |
+| A6744 | 中 | 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放会被抄进不确定 | 不抄。不写 怎样实现链号预言机、怎样处理 Plasma 分裂、怎样拿未绑链号的签去另一条链重放。不另写 19 节 |
+| A6735 | 记录 | 会与 221 / 162 / 220 / 1392 / 1393 糊成「看见空数据哈希不是已经是账户不存在就已经是账户不存在 interchangeable、就已经改了 161 interchangeable、就已经是 3607 发送者规则 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1052 empty-data-hash not already missing / not already 161-changed / not already 3607 正式三事（221 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。221 EXTCODEHASH vs copy bundled unbundling 完成（1394 item 3） |
+| A6736 | 高 | 看见空数据哈希不是已经是账户不存在 会被写成已经是账户不存在 interchangeable / 162 interchangeable | 官方 EIP-1052 xhash item 3：not already 已经是账户不存在 / not 162 |
+| A6737 | 高 | 看见empty-data hash is not already missing 会被写成已经改了 161 interchangeable / 220 interchangeable | 官方 EIP-1052 xhash item 3：not already 已经改了 161 / not 220 |
+| A6738 | 高 | 看见空数据哈希不是已经是账户不存在 会被写成已经是 3607 发送者规则 interchangeable | 官方 EIP-1052 xhash item 3：not already settled |
+| A6739 | 中 | 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码会被抄进不确定 | 不抄。不写 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码。不另写 19 节 |
+| A6730 | 记录 | 会与 221 / 180 / 160 / 1392 / 1394 糊成「看见返回 0 不是已经是没代码的账户就已经是没代码的账户 interchangeable、就已经是空数据哈希 interchangeable、就已经是 180 空户三灯 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1052 return-0 not already no-code-account / not already empty-data-hash / not already 180 正式三事（221 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。221 EXTCODEHASH vs copy bundled unbundling 续（1393 item 2） |
+| A6731 | 高 | 看见返回 0 不是已经是没代码的账户 会被写成已经是没代码的账户 interchangeable / 180 interchangeable | 官方 EIP-1052 xhash item 2：not already 已经是没代码的账户 / not 180 |
+| A6732 | 高 | 看见return 0 is not already no-code account 会被写成已经是空数据哈希 interchangeable / 160 interchangeable | 官方 EIP-1052 xhash item 2：not already 已经是空数据哈希 / not 160 |
+| A6733 | 高 | 看见返回 0 不是已经是没代码的账户 会被写成已经是 180 空户三灯 interchangeable | 官方 EIP-1052 xhash item 2：not already settled |
+| A6734 | 中 | 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码会被抄进不确定 | 不抄。不写 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码。不另写 19 节 |
+| A6725 | 记录 | 会与 221 / 180 / 162 / 1393 / 1394 糊成「看见代码哈希指令不是已经看见代码就已经看见代码本身 interchangeable、就已经是整份拷代码 interchangeable、就已经 221 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1052 code-hash opcode not already saw-code / not already EXTCODECOPY / not already 221-bundled 正式三事（221 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。221 EXTCODEHASH vs copy bundled unbundling 启动（1392 item 1） |
+| A6726 | 高 | 看见代码哈希指令不是已经看见代码 会被写成已经看见代码本身 interchangeable / 180 interchangeable | 官方 EIP-1052 xhash item 1：not already 已经看见代码本身 / not 180 |
+| A6727 | 高 | 看见EXTCODEHASH is not already saw code 会被写成已经是整份拷代码 interchangeable / 162 interchangeable | 官方 EIP-1052 xhash item 1：not already 已经是整份拷代码 / not 162 |
+| A6728 | 高 | 看见代码哈希指令不是已经看见代码 会被写成已经 221 bundled interchangeable | 官方 EIP-1052 xhash item 1：not already settled |
+| A6729 | 中 | 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码会被抄进不确定 | 不抄。不写 怎样用本页探账户是否存在、怎样按哈希白名单实现、怎样复制整份代码。不另写 19 节 |
+| A6720 | 记录 | 会与 222 / 176 / 160 / 1389 / 1390 糊成「看见碰撞变得可能不是已经覆盖就已经覆盖已有代码 interchangeable、就已经是 684 本身 interchangeable、就已经是 3860 分析费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1014 collision-possible not already overwrite / not already 684 / not already 3860 正式三事（222 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。222 CREATE2 salt-address vs created bundled unbundling 完成（1391 item 3） |
+| A6721 | 高 | 看见碰撞变得可能不是已经覆盖 会被写成已经覆盖已有代码 interchangeable / 176 interchangeable | 官方 EIP-1014 cr2 item 3：not already 已经覆盖已有代码 / not 176 |
+| A6722 | 高 | 看见collision possible is not already overwrite 会被写成已经是 684 本身 interchangeable / 160 interchangeable | 官方 EIP-1014 cr2 item 3：not already 已经是 684 本身 / not 160 |
+| A6723 | 高 | 看见碰撞变得可能不是已经覆盖 会被写成已经是 3860 分析费 interchangeable | 官方 EIP-1014 cr2 item 3：not already settled |
+| A6724 | 中 | 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址会被抄进不确定 | 不抄。不写 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址。不另写 19 节 |
+| A6715 | 记录 | 会与 222 / 160 / 221 / 1389 / 1391 糊成「看见算出来的盐地址不是已经创建就已经创建 interchangeable、就已经有那份代码 interchangeable、就已经付过创建费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1014 salt-address not already created / not already has-code / not already paid-create 正式三事（222 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。222 CREATE2 salt-address vs created bundled unbundling 续（1390 item 2） |
+| A6716 | 高 | 看见算出来的盐地址不是已经创建 会被写成已经创建 interchangeable / 160 interchangeable | 官方 EIP-1014 cr2 item 2：not already 已经创建 / not 160 |
+| A6717 | 高 | 看见computed salt address is not already created 会被写成已经有那份代码 interchangeable / 221 interchangeable | 官方 EIP-1014 cr2 item 2：not already 已经有那份代码 / not 221 |
+| A6718 | 高 | 看见算出来的盐地址不是已经创建 会被写成已经付过创建费 interchangeable | 官方 EIP-1014 cr2 item 2：not already settled |
+| A6719 | 中 | 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址会被抄进不确定 | 不抄。不写 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址。不另写 19 节 |
+| A6710 | 记录 | 会与 222 / 175 / 176 / 1390 / 1391 糊成「看见盐创建指令不是已经是按序号占址就已经是按发送者加序号占址 interchangeable、就已经能和旧式创建地址撞上 interchangeable、就已经 222 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-1014 CREATE2 not already CREATE-nonce / not already sender-nonce / not already 222-bundled 正式三事（222 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。222 CREATE2 salt-address vs created bundled unbundling 启动（1389 item 1） |
+| A6711 | 高 | 看见盐创建指令不是已经是按序号占址 会被写成已经是按发送者加序号占址 interchangeable / 175 interchangeable | 官方 EIP-1014 cr2 item 1：not already 已经是按发送者加序号占址 / not 175 |
+| A6712 | 高 | 看见CREATE2 is not already CREATE 会被写成已经能和旧式创建地址撞上 interchangeable / 176 interchangeable | 官方 EIP-1014 cr2 item 1：not already 已经能和旧式创建地址撞上 / not 176 |
+| A6713 | 高 | 看见盐创建指令不是已经是按序号占址 会被写成已经 222 bundled interchangeable | 官方 EIP-1014 cr2 item 1：not already settled |
+| A6714 | 中 | 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址会被抄进不确定 | 不抄。不写 怎样做通道里的反事实交互、怎样制造碰撞、怎样拆户后再占同址。不另写 19 节 |
+| A6705 | 记录 | 会与 232 / 177 / 3 / 1386 / 1387 糊成「看见失败数据能再取不是已经是 140就已经是 EIP-140 interchangeable、就输出区已经自动够大 interchangeable、就通用转发产品已经上线 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-211 refetch-fail-data not already 140 / not already auto-sized-out / not already forwarder-product 正式三事（232 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。232 returndata buffer vs memory bundled unbundling 完成（1388 item 3） |
+| A6706 | 高 | 看见失败数据能再取不是已经是 140 会被写成已经是 EIP-140 interchangeable / 177 interchangeable | 官方 EIP-211 rdata item 3：not already 已经是 EIP-140 / not 177 |
+| A6707 | 高 | 看见refetch fail data is not already 140 会被写成输出区已经自动够大 interchangeable / 3 interchangeable | 官方 EIP-211 rdata item 3：not already 输出区已经自动够大 / not 3 |
+| A6708 | 高 | 看见失败数据能再取不是已经是 140 会被写成通用转发产品已经上线 interchangeable | 官方 EIP-211 rdata item 3：not already settled |
+| A6709 | 中 | 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备会被抄进不确定 | 不抄。不写 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备。不另写 19 节 |
+| A6700 | 记录 | 会与 232 / 217 / 231 / 1386 / 1388 糊成「看见本页不是已经是 calldata就已经是 calldata interchangeable、就已经用两次调用先问长度 interchangeable、就下一次类调用之后缓冲还在 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-211 this-page not already calldata / not already two-call-length / not already still-after-next 正式三事（232 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。232 returndata buffer vs memory bundled unbundling 续（1387 item 2） |
+| A6701 | 高 | 看见本页不是已经是 calldata 会被写成已经是 calldata interchangeable / 217 interchangeable | 官方 EIP-211 rdata item 2：not already 已经是 calldata / not 217 |
+| A6702 | 高 | 看见this page is not already calldata 会被写成已经用两次调用先问长度 interchangeable / 231 interchangeable | 官方 EIP-211 rdata item 2：not already 已经用两次调用先问长度 / not 231 |
+| A6703 | 高 | 看见本页不是已经是 calldata 会被写成下一次类调用之后缓冲还在 interchangeable | 官方 EIP-211 rdata item 2：not already settled |
+| A6704 | 中 | 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备会被抄进不确定 | 不抄。不写 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备。不另写 19 节 |
+| A6695 | 记录 | 会与 232 / 177 / 216 / 1387 / 1388 糊成「看见返回数据缓冲不是已经是内存就已经是内存 interchangeable、就已经是 CALL 预留输出区 interchangeable、就已经 232 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-211 returndata-buffer not already memory / not already CALL-out / not already 232-bundled 正式三事（232 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。232 returndata buffer vs memory bundled unbundling 启动（1386 item 1） |
+| A6696 | 高 | 看见返回数据缓冲不是已经是内存 会被写成已经是内存 interchangeable / 177 interchangeable | 官方 EIP-211 rdata item 1：not already 已经是内存 / not 177 |
+| A6697 | 高 | 看见returndata buffer is not already memory 会被写成已经是 CALL 预留输出区 interchangeable / 216 interchangeable | 官方 EIP-211 rdata item 1：not already 已经是 CALL 预留输出区 / not 216 |
+| A6698 | 高 | 看见返回数据缓冲不是已经是内存 会被写成已经 232 bundled interchangeable | 官方 EIP-211 rdata item 1：not already settled |
+| A6699 | 中 | 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备会被抄进不确定 | 不抄。不写 怎样做通用转发合约、怎样在失败后再抽超长回滚数据、怎样把缓冲和内存叠成同一块后备。不另写 19 节 |
+| A6690 | 记录 | 会与 178 / 160 / 177 / 1383 / 1384 糊成「看见静态帧里改状态不是已经改成就已经改成 interchangeable、就已经和 CALLCODE 带值同一盏灯 interchangeable、就已经是 140 回滚 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-214 static-state-change not already applied / not already CALLCODE-value / not already 140 正式三事（178 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。178 STATICCALL flag vs view bundled unbundling 完成（1385 item 3） |
+| A6691 | 高 | 看见静态帧里改状态不是已经改成 会被写成已经改成 interchangeable / 160 interchangeable | 官方 EIP-214 stcall item 3：not already 已经改成 / not 160 |
+| A6692 | 高 | 看见static state change is not already applied 会被写成已经和 CALLCODE 带值同一盏灯 interchangeable / 177 interchangeable | 官方 EIP-214 stcall item 3：not already 已经和 CALLCODE 带值同一盏灯 / not 177 |
+| A6693 | 高 | 看见静态帧里改状态不是已经改成 会被写成已经是 140 回滚 interchangeable | 官方 EIP-214 stcall item 3：not already settled |
+| A6694 | 中 | 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值会被抄进不确定 | 不抄。不写 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值。不另写 19 节 |
+| A6685 | 记录 | 会与 178 / 177 / 233 / 1383 / 1385 糊成「看见没转账的普通调用不是已经是静态帧就已经打开静态旗 interchangeable、就已经只读 interchangeable、就已经 214 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-214 zero-value-CALL not already static-flag / not already readonly / not already 214-bundled 正式三事（178 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。178 STATICCALL flag vs view bundled unbundling 续（1384 item 2） |
+| A6686 | 高 | 看见没转账的普通调用不是已经是静态帧 会被写成已经打开静态旗 interchangeable / 177 interchangeable | 官方 EIP-214 stcall item 2：not already 已经打开静态旗 / not 177 |
+| A6687 | 高 | 看见zero-value CALL is not already static 会被写成已经只读 interchangeable / 233 interchangeable | 官方 EIP-214 stcall item 2：not already 已经只读 / not 233 |
+| A6688 | 高 | 看见没转账的普通调用不是已经是静态帧 会被写成已经 214 bundled interchangeable | 官方 EIP-214 stcall item 2：not already settled |
+| A6689 | 中 | 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值会被抄进不确定 | 不抄。不写 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值。不另写 19 节 |
+| A6680 | 记录 | 会与 178 / 177 / 159 / 1384 / 1385 糊成「看见静态帧不是已经是高级语言只读就已经是高级语言的只读函数 interchangeable、就已经是编译器 view interchangeable、就已经 178 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-214 static-frame not already high-level-view / not already compiler-readonly / not already 178-bundled 正式三事（178 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。178 STATICCALL flag vs view bundled unbundling 启动（1383 item 1） |
+| A6681 | 高 | 看见静态帧不是已经是高级语言只读 会被写成已经是高级语言的只读函数 interchangeable / 177 interchangeable | 官方 EIP-214 stcall item 1：not already 已经是高级语言的只读函数 / not 177 |
+| A6682 | 高 | 看见static frame is not already view 会被写成已经是编译器 view interchangeable / 159 interchangeable | 官方 EIP-214 stcall item 1：not already 已经是编译器 view / not 159 |
+| A6683 | 高 | 看见静态帧不是已经是高级语言只读 会被写成已经 178 bundled interchangeable | 官方 EIP-214 stcall item 1：not already settled |
+| A6684 | 中 | 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值会被抄进不确定 | 不抄。不写 怎样把会改状态的被调包进静态帧、怎样靠 CALLCODE 带值。不另写 19 节 |
+| A6675 | 记录 | 会与 177 / 138 / 178 / 1380 / 1381 糊成「看见创建里回滚不是已经部署就已经部署 interchangeable、就已经占址 interchangeable、就已经是另一条链的 REVERTED 档 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-140 create-revert not already deployed / not already occupied / not already starknet-reverted 正式三事（177 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。177 REVERT leftover-gas vs burn bundled unbundling 完成（1382 item 3） |
+| A6676 | 高 | 看见创建里回滚不是已经部署 会被写成已经部署 interchangeable / 138 interchangeable | 官方 EIP-140 rvert item 3：not already 已经部署 / not 138 |
+| A6677 | 高 | 看见create revert is not already deployed 会被写成已经占址 interchangeable / 178 interchangeable | 官方 EIP-140 rvert item 3：not already 已经占址 / not 178 |
+| A6678 | 高 | 看见创建里回滚不是已经部署 会被写成已经是另一条链的 REVERTED 档 interchangeable | 官方 EIP-140 rvert item 3：not already settled |
+| A6679 | 中 | 怎样挑回滚或非法指令去留气或烧气会被抄进不确定 | 不抄。不写 怎样挑回滚或非法指令去留气或烧气。不另写 19 节 |
+| A6670 | 记录 | 会与 177 / 103 / 176 / 1380 / 1382 糊成「看见不够付回滚自己的费不是已经留下剩余气就已经按回滚语义留下剩余气 interchangeable、就已经是 103 空户回滚 interchangeable、就已经免费 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-140 unpaid-self-fee not already leftover-semantics / not already 103 / not already free 正式三事（177 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。177 REVERT leftover-gas vs burn bundled unbundling 续（1381 item 2） |
+| A6671 | 高 | 看见不够付回滚自己的费不是已经留下剩余气 会被写成已经按回滚语义留下剩余气 interchangeable / 103 interchangeable | 官方 EIP-140 rvert item 2：not already 已经按回滚语义留下剩余气 / not 103 |
+| A6672 | 高 | 看见unpaid revert fee is not already leftover 会被写成已经是 103 空户回滚 interchangeable / 176 interchangeable | 官方 EIP-140 rvert item 2：not already 已经是 103 空户回滚 / not 176 |
+| A6673 | 高 | 看见不够付回滚自己的费不是已经留下剩余气 会被写成已经免费 interchangeable | 官方 EIP-140 rvert item 2：not already settled |
+| A6674 | 中 | 怎样挑回滚或非法指令去留气或烧气会被抄进不确定 | 不抄。不写 怎样挑回滚或非法指令去留气或烧气。不另写 19 节 |
+| A6665 | 记录 | 会与 177 / 103 / 232 / 1381 / 1382 糊成「看见带回剩余气的回滚不是已经烧光就已经像非法指令那样烧光剩余气 interchangeable、就已经是气耗尽烧光 interchangeable、就已经 177 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-140 leftover-gas revert not already INVALID-burn / not already OOG-burn / not already 177-bundled 正式三事（177 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。177 REVERT leftover-gas vs burn bundled unbundling 启动（1380 item 1） |
+| A6666 | 高 | 看见带回剩余气的回滚不是已经烧光 会被写成已经像非法指令那样烧光剩余气 interchangeable / 103 interchangeable | 官方 EIP-140 rvert item 1：not already 已经像非法指令那样烧光剩余气 / not 103 |
+| A6667 | 高 | 看见leftover-gas revert is not already burn 会被写成已经是气耗尽烧光 interchangeable / 232 interchangeable | 官方 EIP-140 rvert item 1：not already 已经是气耗尽烧光 / not 232 |
+| A6668 | 高 | 看见带回剩余气的回滚不是已经烧光 会被写成已经 177 bundled interchangeable | 官方 EIP-140 rvert item 1：not already settled |
+| A6669 | 中 | 怎样挑回滚或非法指令去留气或烧气会被抄进不确定 | 不抄。不写 怎样挑回滚或非法指令去留气或烧气。不另写 19 节 |
+| A6660 | 记录 | 会与 233 / 234 / 190 / 1377 / 1378 糊成「看见可变代码源不是已经是 7702就已经是 7702 interchangeable、就可变代码源产品已经上线 interchangeable、就已经能靠调用数据复刻 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7 mutable-code-source not already 7702 / not already product-shipped / not already calldata-replica 正式三事（233 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。233 DELEGATECALL four objects bundled unbundling 完成（1379 item 3） |
+| A6661 | 高 | 看见可变代码源不是已经是 7702 会被写成已经是 7702 interchangeable / 234 interchangeable | 官方 EIP-7 dcall item 3：not already 已经是 7702 / not 234 |
+| A6662 | 高 | 看见mutable code source is not already 7702 会被写成可变代码源产品已经上线 interchangeable / 190 interchangeable | 官方 EIP-7 dcall item 3：not already 可变代码源产品已经上线 / not 190 |
+| A6663 | 高 | 看见可变代码源不是已经是 7702 会被写成已经能靠调用数据复刻 interchangeable | 官方 EIP-7 dcall item 3：not already settled |
+| A6664 | 中 | 怎样做可变代码源、怎样拆代码绕过计量墙、怎样靠调用数据复刻发送者会被抄进不确定 | 不抄。不写 怎样做可变代码源、怎样拆代码绕过计量墙、怎样靠调用数据复刻发送者。不另写 19 节 |
+| A6655 | 记录 | 会与 233 / 178 / 232 / 1377 / 1379 糊成「看见父作用域发送者传到子作用域不是已经是普通 CALL就已经是普通 CALL interchangeable、就已经有 CALL 那笔津贴 interchangeable、就已经因此创建账户 interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7 parent-sender not already CALL / not already stipend / not already creates-account 正式三事（233 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。233 DELEGATECALL four objects bundled unbundling 续（1378 item 2） |
+| A6656 | 高 | 看见父作用域发送者传到子作用域不是已经是普通 CALL 会被写成已经是普通 CALL interchangeable / 178 interchangeable | 官方 EIP-7 dcall item 2：not already 已经是普通 CALL / not 178 |
+| A6657 | 高 | 看见parent sender to child is not already CALL 会被写成已经有 CALL 那笔津贴 interchangeable / 232 interchangeable | 官方 EIP-7 dcall item 2：not already 已经有 CALL 那笔津贴 / not 232 |
+| A6658 | 高 | 看见父作用域发送者传到子作用域不是已经是普通 CALL 会被写成已经因此创建账户 interchangeable | 官方 EIP-7 dcall item 2：not already settled |
+| A6659 | 中 | 怎样做可变代码源、怎样拆代码绕过计量墙、怎样靠调用数据复刻发送者会被抄进不确定 | 不抄。不写 怎样做可变代码源、怎样拆代码绕过计量墙、怎样靠调用数据复刻发送者。不另写 19 节 |
+| A6650 | 记录 | 会与 233 / 119 / 190 / 1378 / 1379 糊成「看见委托调用不是已经是 CALLCODE就已经是 CALLCODE interchangeable、就已经是同一发送者的 CALLCODE interchangeable、就已经 Homestead 委托 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-7 DELEGATECALL not already CALLCODE / not already same-sender-CALLCODE / not already 233-bundled 正式三事（233 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。233 DELEGATECALL four objects bundled unbundling 启动（1377 item 1） |
+| A6651 | 高 | 看见委托调用不是已经是 CALLCODE 会被写成已经是 CALLCODE interchangeable / 119 interchangeable | 官方 EIP-7 dcall item 1：not already 已经是 CALLCODE / not 119 |
+| A6652 | 高 | 看见DELEGATECALL is not already CALLCODE 会被写成已经是同一发送者的 CALLCODE interchangeable / 190 interchangeable | 官方 EIP-7 dcall item 1：not already 已经是同一发送者的 CALLCODE / not 190 |
+| A6653 | 高 | 看见委托调用不是已经是 CALLCODE 会被写成已经 Homestead 委托 bundled interchangeable | 官方 EIP-7 dcall item 1：not already settled |
+| A6654 | 中 | 怎样做可变代码源、怎样拆代码绕过计量墙、怎样靠调用数据复刻发送者会被抄进不确定 | 不抄。不写 怎样做可变代码源、怎样拆代码绕过计量墙、怎样靠调用数据复刻发送者。不另写 19 节 |
+| A6645 | 记录 | 会与 442 / 425 / 365 / 1374 / 1375 糊成「看见ExtendedVoteInfo from local process 不是已经 typically from block就已经 typically extracted from block interchangeable、就已经是 Process VoteInfo 同一路 interchangeable、就已经表栏罚没 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ViAvail ExtendedVoteInfo from local process not already typically-from-block / not already Process VoteInfo / not already 425-flag 正式三事（442 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 完成（1376 item 3） |
+| A6646 | 高 | 看见ExtendedVoteInfo from local process 不是已经 typically from block 会被写成已经 typically extracted from block interchangeable / 425 interchangeable | 官方 ViAvail viaext item 3：not already 已经 typically extracted from block / not 425 |
+| A6647 | 高 | 看见ExtendedVoteInfo from local process is not already typically from block 会被写成已经是 Process VoteInfo 同一路 interchangeable / 365 interchangeable | 官方 ViAvail viaext item 3：not already 已经是 Process VoteInfo 同一路 / not 365 |
+| A6648 | 高 | 看见ExtendedVoteInfo from local process 不是已经 typically from block 会被写成已经表栏罚没 interchangeable | 官方 ViAvail viaext item 3：not already settled |
+| A6649 | 中 | 怎样把同一句 availability 写成已经奖罚完、怎样把两条抽出路径写成同一路、怎样按 block_id_flag 直接罚没会被抄进不确定 | 不抄。不写 怎样把同一句 availability 写成已经奖罚完、怎样把两条抽出路径写成同一路、怎样按 block_id_flag 直接罚没。不另写 19 节 |
+| A6640 | 记录 | 会与 442 / 369 / 449 / 1374 / 1376 糊成「看见VoteInfo typically from block 不是已经从本进程抽出就已经从本进程抽出 interchangeable、就已经是 Prepare ExtendedVoteInfo interchangeable、就已经一定从 local 结构来 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ViAvail VoteInfo typically from block not already local-process / not already Prepare ExtendedVoteInfo / not already 369-path 正式三事（442 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 续（1375 item 2） |
+| A6641 | 高 | 看见VoteInfo typically from block 不是已经从本进程抽出 会被写成已经从本进程抽出 interchangeable / 369 interchangeable | 官方 ViAvail viaext item 2：not already 已经从本进程抽出 / not 369 |
+| A6642 | 高 | 看见VoteInfo typically from block is not already extracted from local process 会被写成已经是 Prepare ExtendedVoteInfo interchangeable / 449 interchangeable | 官方 ViAvail viaext item 2：not already 已经是 Prepare ExtendedVoteInfo / not 449 |
+| A6643 | 高 | 看见VoteInfo typically from block 不是已经从本进程抽出 会被写成已经一定从 local 结构来 interchangeable | 官方 ViAvail viaext item 2：not already settled |
+| A6644 | 中 | 怎样把同一句 availability 写成已经奖罚完、怎样把两条抽出路径写成同一路、怎样按 block_id_flag 直接罚没会被抄进不确定 | 不抄。不写 怎样把同一句 availability 写成已经奖罚完、怎样把两条抽出路径写成同一路、怎样按 block_id_flag 直接罚没。不另写 19 节 |
+| A6635 | 记录 | 会与 442 / 365 / 425 / 1375 / 1376 糊成「看见availability 同句不是已经奖罚完就已经奖罚完 interchangeable、就已经交差 interchangeable、就已经 Finalize 算完奖惩 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ViAvail availability same-sentence not already rewarded / not already settled / not already Finalize-computed 正式三事（442 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。442 VoteInfo ExtendedVoteInfo availability same-sentence extract-paths bundled unbundling 启动（1374 item 1） |
+| A6636 | 高 | 看见availability 同句不是已经奖罚完 会被写成已经奖罚完 interchangeable / 365 interchangeable | 官方 ViAvail viaext item 1：not already 已经奖罚完 / not 365 |
+| A6637 | 高 | 看见availability same sentence is not already rewarded 会被写成已经交差 interchangeable / 425 interchangeable | 官方 ViAvail viaext item 1：not already 已经交差 / not 425 |
+| A6638 | 高 | 看见availability 同句不是已经奖罚完 会被写成已经 Finalize 算完奖惩 interchangeable | 官方 ViAvail viaext item 1：not already settled |
+| A6639 | 中 | 怎样把同一句 availability 写成已经奖罚完、怎样把两条抽出路径写成同一路、怎样按 block_id_flag 直接罚没会被抄进不确定 | 不抄。不写 怎样把同一句 availability 写成已经奖罚完、怎样把两条抽出路径写成同一路、怎样按 block_id_flag 直接罚没。不另写 19 节 |
+| A6630 | 记录 | 会与 449 / 369 / 442 / 1371 / 1372 糊成「看见Prepare ExtendedCommitInfo Validator 不是已经 Process/Finalize CommitInfo就已经是 Process/Finalize 的 CommitInfo interchangeable、就已经可以拿 CommitInfo 代替 interchangeable、就已经从块里抽出 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ValUse Prepare ExtendedCommitInfo Validator not already Process-Finalize CommitInfo / not already interchangeable / not already 369-extract 正式三事（449 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。449 Validator Usage four-gate mapping bundled unbundling 完成（1373 item 3） |
+| A6631 | 高 | 看见Prepare ExtendedCommitInfo Validator 不是已经 Process/Finalize CommitInfo 会被写成已经是 Process/Finalize 的 CommitInfo interchangeable / 369 interchangeable | 官方 ValUse valuse item 3：not already 已经是 Process/Finalize 的 CommitInfo / not 369 |
+| A6632 | 高 | 看见Prepare ExtendedCommitInfo Validator is not already Process/Finalize CommitInfo 会被写成已经可以拿 CommitInfo 代替 interchangeable / 442 interchangeable | 官方 ValUse valuse item 3：not already 已经可以拿 CommitInfo 代替 / not 442 |
+| A6633 | 高 | 看见Prepare ExtendedCommitInfo Validator 不是已经 Process/Finalize CommitInfo 会被写成已经从块里抽出 interchangeable | 官方 ValUse valuse item 3：not already settled |
+| A6634 | 中 | 怎样把四门 Validator 写成同一路、怎样拿 CommitInfo 代替 ExtendedCommitInfo、怎样把 decided 写成 proposed会被抄进不确定 | 不抄。不写 怎样把四门 Validator 写成同一路、怎样拿 CommitInfo 代替 ExtendedCommitInfo、怎样把 decided 写成 proposed。不另写 19 节 |
+| A6625 | 记录 | 会与 449 / 365 / 364 / 1371 / 1373 糊成「看见Finalize decided_last_commit 不是已经 Process proposed_last_commit就已经是 Process proposed_last_commit interchangeable、就已经交差 interchangeable、就已经可以拿 Prepare Extended 代替 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ValUse Finalize decided_last_commit Validator not already Process proposed / not already settled / not already Prepare-ext 正式三事（449 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。449 Validator Usage four-gate mapping bundled unbundling 续（1372 item 2） |
+| A6626 | 高 | 看见Finalize decided_last_commit 不是已经 Process proposed_last_commit 会被写成已经是 Process proposed_last_commit interchangeable / 365 interchangeable | 官方 ValUse valuse item 2：not already 已经是 Process proposed_last_commit / not 365 |
+| A6627 | 高 | 看见Finalize decided_last_commit is not already Process proposed_last_commit 会被写成已经交差 interchangeable / 364 interchangeable | 官方 ValUse valuse item 2：not already 已经交差 / not 364 |
+| A6628 | 高 | 看见Finalize decided_last_commit 不是已经 Process proposed_last_commit 会被写成已经可以拿 Prepare Extended 代替 interchangeable | 官方 ValUse valuse item 2：not already settled |
+| A6629 | 中 | 怎样把四门 Validator 写成同一路、怎样拿 CommitInfo 代替 ExtendedCommitInfo、怎样把 decided 写成 proposed会被抄进不确定 | 不抄。不写 怎样把四门 Validator 写成同一路、怎样拿 CommitInfo 代替 ExtendedCommitInfo、怎样把 decided 写成 proposed。不另写 19 节 |
+| A6620 | 记录 | 会与 449 / 364 / 369 / 1372 / 1373 糊成「看见Process 的 CommitInfo Validator 不是已经 Prepare ExtendedCommitInfo就已经是 Prepare 的 ExtendedCommitInfo interchangeable、就已经是 local_last_commit 同一份 interchangeable、就已经带了公钥 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ValUse Process CommitInfo Validator not already Prepare ExtendedCommitInfo / not already local_last_commit / not already 364-pubkey 正式三事（449 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。449 Validator Usage four-gate mapping bundled unbundling 启动（1371 item 1） |
+| A6621 | 高 | 看见Process 的 CommitInfo Validator 不是已经 Prepare ExtendedCommitInfo 会被写成已经是 Prepare 的 ExtendedCommitInfo interchangeable / 364 interchangeable | 官方 ValUse valuse item 1：not already 已经是 Prepare 的 ExtendedCommitInfo / not 364 |
+| A6622 | 高 | 看见Process CommitInfo Validator is not already Prepare ExtendedCommitInfo 会被写成已经是 local_last_commit 同一份 interchangeable / 369 interchangeable | 官方 ValUse valuse item 1：not already 已经是 local_last_commit 同一份 / not 369 |
+| A6623 | 高 | 看见Process 的 CommitInfo Validator 不是已经 Prepare ExtendedCommitInfo 会被写成已经带了公钥 interchangeable | 官方 ValUse valuse item 1：not already settled |
+| A6624 | 中 | 怎样把四门 Validator 写成同一路、怎样拿 CommitInfo 代替 ExtendedCommitInfo、怎样把 decided 写成 proposed会被抄进不确定 | 不抄。不写 怎样把四门 Validator 写成同一路、怎样拿 CommitInfo 代替 ExtendedCommitInfo、怎样把 decided 写成 proposed。不另写 19 节 |
+| A6615 | 记录 | 会与 448 / 431 / 381 / 1368 / 1369 糊成「看见经 FinalizeBlockResponse 交回不是已经是 CheckTx/ExecTx events就已经是 CheckTxResponse.events interchangeable、就已经是 ExecTxResult.events interchangeable、就已经印进 LastResultsHash interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 PrepEv pass via FinalizeBlockResponse not already CheckTx events / not already ExecTxResult events / not already LastResultsHash 正式三事（448 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。448 Prepare events retention until Finalize bundled unbundling 完成（1370 item 3） |
+| A6616 | 高 | 看见经 FinalizeBlockResponse 交回不是已经是 CheckTx/ExecTx events 会被写成已经是 CheckTxResponse.events interchangeable / 431 interchangeable | 官方 PrepEv prepev item 3：not already 已经是 CheckTxResponse.events / not 431 |
+| A6617 | 高 | 看见pass via FinalizeBlockResponse is not already CheckTx or ExecTx events 会被写成已经是 ExecTxResult.events interchangeable / 381 interchangeable | 官方 PrepEv prepev item 3：not already 已经是 ExecTxResult.events / not 381 |
+| A6618 | 高 | 看见经 FinalizeBlockResponse 交回不是已经是 CheckTx/ExecTx events 会被写成已经印进 LastResultsHash interchangeable | 官方 PrepEv prepev item 3：not already settled |
+| A6619 | 中 | 怎样把 Prepare 事件写进回包、怎样在 Process 时就索引、怎样把 Finalize events 写成 CheckTx events会被抄进不确定 | 不抄。不写 怎样把 Prepare 事件写进回包、怎样在 Process 时就索引、怎样把 Finalize events 写成 CheckTx events。不另写 19 节 |
+| A6610 | 记录 | 会与 448 / 357 / 431 / 1368 / 1370 糊成「看见MUST 留到块决定之后不是已经 Process 时就交出去就已经 Process 时就交出去 interchangeable、就已经 REJECT 丢掉可以不算 interchangeable、就已经因为 Prepare 过了就交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 PrepEv MUST keep until decided not already handed at Process / not already discarded-on-REJECT / not already settled 正式三事（448 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。448 Prepare events retention until Finalize bundled unbundling 续（1369 item 2） |
+| A6611 | 高 | 看见MUST 留到块决定之后不是已经 Process 时就交出去 会被写成已经 Process 时就交出去 interchangeable / 357 interchangeable | 官方 PrepEv prepev item 2：not already 已经 Process 时就交出去 / not 357 |
+| A6612 | 高 | 看见MUST keep until decided is not already handed at Process 会被写成已经 REJECT 丢掉可以不算 interchangeable / 431 interchangeable | 官方 PrepEv prepev item 2：not already 已经 REJECT 丢掉可以不算 / not 431 |
+| A6613 | 高 | 看见MUST 留到块决定之后不是已经 Process 时就交出去 会被写成已经因为 Prepare 过了就交差 interchangeable | 官方 PrepEv prepev item 2：not already settled |
+| A6614 | 中 | 怎样把 Prepare 事件写进回包、怎样在 Process 时就索引、怎样把 Finalize events 写成 CheckTx events会被抄进不确定 | 不抄。不写 怎样把 Prepare 事件写进回包、怎样在 Process 时就索引、怎样把 Finalize events 写成 CheckTx events。不另写 19 节 |
+| A6605 | 记录 | 会与 448 / 357 / 503 / 1369 / 1370 糊成「看见Prepare MAY 产出事件不是已经在回包里交回就已经在 PrepareProposalResponse 里交回 interchangeable、就已经 Prepare 返回时引擎收到 interchangeable、就已经验过重复 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 PrepEv Prepare MAY produce events not already in PrepareProposalResponse / not already engine-received / not already 357-checked 正式三事（448 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。448 Prepare events retention until Finalize bundled unbundling 启动（1368 item 1） |
+| A6606 | 高 | 看见Prepare MAY 产出事件不是已经在回包里交回 会被写成已经在 PrepareProposalResponse 里交回 interchangeable / 357 interchangeable | 官方 PrepEv prepev item 1：not already 已经在 PrepareProposalResponse 里交回 / not 357 |
+| A6607 | 高 | 看见Prepare MAY produce events is not already in the response 会被写成已经 Prepare 返回时引擎收到 interchangeable / 503 interchangeable | 官方 PrepEv prepev item 1：not already 已经 Prepare 返回时引擎收到 / not 503 |
+| A6608 | 高 | 看见Prepare MAY 产出事件不是已经在回包里交回 会被写成已经验过重复 interchangeable | 官方 PrepEv prepev item 1：not already settled |
+| A6609 | 中 | 怎样把 Prepare 事件写进回包、怎样在 Process 时就索引、怎样把 Finalize events 写成 CheckTx events会被抄进不确定 | 不抄。不写 怎样把 Prepare 事件写进回包、怎样在 Process 时就索引、怎样把 Finalize events 写成 CheckTx events。不另写 19 节 |
+| A6600 | 记录 | 会与 447 / 358 / 418 / 1365 / 1366 糊成「看见两份签都在且没 non_rp 就签空切片不是已经只有一份签就已经只有一份签 interchangeable、就已经没 non_rp 就没有第二份签 interchangeable、就已经 optional 就跳过 Verify interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtViUse two sigs when enabled empty-slice if no non_rp not already one-sig / not already no-second / not already 358-replay 正式三事（447 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。447 ExtendedVoteInfo Usage expose signature bundled unbundling 完成（1367 item 3） |
+| A6601 | 高 | 看见两份签都在且没 non_rp 就签空切片不是已经只有一份签 会被写成已经只有一份签 interchangeable / 358 interchangeable | 官方 ExtViUse eviuse item 3：not already 已经只有一份签 / not 358 |
+| A6602 | 高 | 看见two signatures present and empty-slice if no non_rp is not already one signature 会被写成已经没 non_rp 就没有第二份签 interchangeable / 418 interchangeable | 官方 ExtViUse eviuse item 3：not already 已经没 non_rp 就没有第二份签 / not 418 |
+| A6603 | 高 | 看见两份签都在且没 non_rp 就签空切片不是已经只有一份签 会被写成已经 optional 就跳过 Verify interchangeable | 官方 ExtViUse eviuse item 3：not already settled |
+| A6604 | 中 | 怎样让应用再验签、怎样把引擎验过当成应用验完、怎样把空切片当成没有第二份签会被抄进不确定 | 不抄。不写 怎样让应用再验签、怎样把引擎验过当成应用验完、怎样把空切片当成没有第二份签。不另写 19 节 |
+| A6595 | 记录 | 会与 447 / 421 / 353 / 1365 / 1367 糊成「看见extension_signature 暴露给应用再处理不是已经 Verify 过就已经应用 finished verifying interchangeable、就已经跑过 VerifyVoteExtension interchangeable、就已经按原样签 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtViUse extension_signature exposed for further processing not already app-verified / not already Verify / not already 421-handed 正式三事（447 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。447 ExtendedVoteInfo Usage expose signature bundled unbundling 续（1366 item 2） |
+| A6596 | 高 | 看见extension_signature 暴露给应用再处理不是已经 Verify 过 会被写成已经应用 finished verifying interchangeable / 421 interchangeable | 官方 ExtViUse eviuse item 2：not already 已经应用 finished verifying / not 421 |
+| A6597 | 高 | 看见extension_signature exposed for further processing is not already Verify 会被写成已经跑过 VerifyVoteExtension interchangeable / 353 interchangeable | 官方 ExtViUse eviuse item 2：not already 已经跑过 VerifyVoteExtension / not 353 |
+| A6598 | 高 | 看见extension_signature 暴露给应用再处理不是已经 Verify 过 会被写成已经按原样签 interchangeable | 官方 ExtViUse eviuse item 2：not already settled |
+| A6599 | 中 | 怎样让应用再验签、怎样把引擎验过当成应用验完、怎样把空切片当成没有第二份签会被抄进不确定 | 不抄。不写 怎样让应用再验签、怎样把引擎验过当成应用验完、怎样把空切片当成没有第二份签。不另写 19 节 |
+| A6590 | 记录 | 会与 447 / 369 / 435 / 1366 / 1367 糊成「看见vote_extension 签已由引擎验过且可以空不是已经应用验完就已经应用验完 interchangeable、就已经必须填内容 interchangeable、就已经 Verify Accept interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtViUse vote_extension engine-verified can-be-empty not already app-verified / not already must-fill / not already Accept 正式三事（447 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。447 ExtendedVoteInfo Usage expose signature bundled unbundling 启动（1365 item 1） |
+| A6591 | 高 | 看见vote_extension 签已由引擎验过且可以空不是已经应用验完 会被写成已经应用验完 interchangeable / 369 interchangeable | 官方 ExtViUse eviuse item 1：not already 已经应用验完 / not 369 |
+| A6592 | 高 | 看见vote_extension engine-verified and can be empty is not already app-verified 会被写成已经必须填内容 interchangeable / 435 interchangeable | 官方 ExtViUse eviuse item 1：not already 已经必须填内容 / not 435 |
+| A6593 | 高 | 看见vote_extension 签已由引擎验过且可以空不是已经应用验完 会被写成已经 Verify Accept interchangeable | 官方 ExtViUse eviuse item 1：not already settled |
+| A6594 | 中 | 怎样让应用再验签、怎样把引擎验过当成应用验完、怎样把空切片当成没有第二份签会被抄进不确定 | 不抄。不写 怎样让应用再验签、怎样把引擎验过当成应用验完、怎样把空切片当成没有第二份签。不另写 19 节 |
+| A6585 | 记录 | 会与 446 / 431 / 381 / 1362 / 1363 糊成「看见逐笔 events 不是已经是块级 Finalize events就已经是 FinalizeBlockResponse.events interchangeable、就已经是 CheckTxResponse.events interchangeable、就已经和池门回包 interchangeable interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExecTxEv per-tx events in tx_results not already block-level 431 / not already CheckTx 381 / not already interchangeable 正式三事（446 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。446 ExecTxResult events vs header bundled unbundling 完成（1364 item 3） |
+| A6586 | 高 | 看见逐笔 events 不是已经是块级 Finalize events 会被写成已经是 FinalizeBlockResponse.events interchangeable / 431 interchangeable | 官方 ExecTxEv etxev item 3：not already 已经是 FinalizeBlockResponse.events / not 431 |
+| A6587 | 高 | 看见per-tx events is not already FinalizeBlockResponse.events 会被写成已经是 CheckTxResponse.events interchangeable / 381 interchangeable | 官方 ExecTxEv etxev item 3：not already 已经是 CheckTxResponse.events / not 381 |
+| A6588 | 高 | 看见逐笔 events 不是已经是块级 Finalize events 会被写成已经和池门回包 interchangeable interchangeable | 官方 ExecTxEv etxev item 3：not already settled |
+| A6589 | 中 | 怎样把 events 印进 LastResultsHash、怎样把逐笔 events 写成块级 events、怎样把 Finalize events 写成 CheckTx events会被抄进不确定 | 不抄。不写 怎样把 events 印进 LastResultsHash、怎样把逐笔 events 写成块级 events、怎样把 Finalize events 写成 CheckTx events。不另写 19 节 |
+| A6580 | 记录 | 会与 446 / 431 / 316 / 1362 / 1364 糊成「看见ExecTxResult.events 标成非确定不是已经像 Code/Data 必须确定就已经是共识字段 interchangeable、就已经编进结构再哈希 interchangeable、就已经必须确定 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExecTxEv tx events marked non-deterministic not already consensus-field / not already hashed / not already 316-det 正式三事（446 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。446 ExecTxResult events vs header bundled unbundling 续（1363 item 2） |
+| A6581 | 高 | 看见ExecTxResult.events 标成非确定不是已经像 Code/Data 必须确定 会被写成已经是共识字段 interchangeable / 431 interchangeable | 官方 ExecTxEv etxev item 2：not already 已经是共识字段 / not 431 |
+| A6582 | 高 | 看见ExecTxResult.events marked non-deterministic is not already like Code/Data 会被写成已经编进结构再哈希 interchangeable / 316 interchangeable | 官方 ExecTxEv etxev item 2：not already 已经编进结构再哈希 / not 316 |
+| A6583 | 高 | 看见ExecTxResult.events 标成非确定不是已经像 Code/Data 必须确定 会被写成已经必须确定 interchangeable | 官方 ExecTxEv etxev item 2：not already settled |
+| A6584 | 中 | 怎样把 events 印进 LastResultsHash、怎样把逐笔 events 写成块级 events、怎样把 Finalize events 写成 CheckTx events会被抄进不确定 | 不抄。不写 怎样把 events 印进 LastResultsHash、怎样把逐笔 events 写成块级 events、怎样把 Finalize events 写成 CheckTx events。不另写 19 节 |
+| A6575 | 记录 | 会与 446 / 316 / 431 / 1363 / 1364 糊成「看见ExecTxResult.events 是给交易建索引的类型键值不是已经印进本头就已经印进本头 LastResultsHash interchangeable、就已经像 Code/Data 必须确定 interchangeable、就已经交差 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExecTxEv tx events are index kv not already LastResultsHash / not already Code-Data-det / not already in-header 正式三事（446 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。446 ExecTxResult events vs header bundled unbundling 启动（1362 item 1） |
+| A6576 | 高 | 看见ExecTxResult.events 是给交易建索引的类型键值不是已经印进本头 会被写成已经印进本头 LastResultsHash interchangeable / 316 interchangeable | 官方 ExecTxEv etxev item 1：not already 已经印进本头 LastResultsHash / not 316 |
+| A6577 | 高 | 看见ExecTxResult.events are type-kv index events is not already in the header 会被写成已经像 Code/Data 必须确定 interchangeable / 431 interchangeable | 官方 ExecTxEv etxev item 1：not already 已经像 Code/Data 必须确定 / not 431 |
+| A6578 | 高 | 看见ExecTxResult.events 是给交易建索引的类型键值不是已经印进本头 会被写成已经交差 interchangeable | 官方 ExecTxEv etxev item 1：not already settled |
+| A6579 | 中 | 怎样把 events 印进 LastResultsHash、怎样把逐笔 events 写成块级 events、怎样把 Finalize events 写成 CheckTx events会被抄进不确定 | 不抄。不写 怎样把 events 印进 LastResultsHash、怎样把逐笔 events 写成块级 events、怎样把 Finalize events 写成 CheckTx events。不另写 19 节 |
+| A6570 | 记录 | 会与 445 / 444 / 365 / 1359 / 1360 糊成「看见Fields 栏不是已经是 CommitInfo Notes 票序就已经是 CommitInfo Notes 那套票序话 interchangeable、就已经是 444 cinotes bundled interchangeable、就已经按到场定奖惩 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 CiFields Fields column not already Notes order / not already 444-bundled / not already 365-rewards 正式三事（445 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。445 CommitInfo Fields round-and-votes bundled unbundling 完成（1361 item 3） |
+| A6571 | 高 | 看见Fields 栏不是已经是 CommitInfo Notes 票序 会被写成已经是 CommitInfo Notes 那套票序话 interchangeable / 444 interchangeable | 官方 CiFields cifields item 3：not already 已经是 CommitInfo Notes 那套票序话 / not 444 |
+| A6572 | 高 | 看见Fields column is not already CommitInfo Notes order 会被写成已经是 444 cinotes bundled interchangeable / 365 interchangeable | 官方 CiFields cifields item 3：not already 已经是 444 cinotes bundled / not 365 |
+| A6573 | 高 | 看见Fields 栏不是已经是 CommitInfo Notes 票序 会被写成已经按到场定奖惩 interchangeable | 官方 CiFields cifields item 3：not already settled |
+| A6574 | 中 | 怎样填 CommitInfo.round、怎样读 votes 列表、怎样把 Fields 写成 Notes会被抄进不确定 | 不抄。不写 怎样填 CommitInfo.round、怎样读 votes 列表、怎样把 Fields 写成 Notes。不另写 19 节 |
+| A6565 | 记录 | 会与 445 / 444 / 365 / 1359 / 1361 糊成「看见CommitInfo.votes 是上一集合投票信息不是已经进了块就已经进了块 interchangeable、就已经交差 interchangeable、就已经是 Notes 票序 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 CiFields votes is last-set voting-info not already in-block / not already settled / not already 444-notes-order 正式三事（445 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。445 CommitInfo Fields round-and-votes bundled unbundling 续（1360 item 2） |
+| A6566 | 高 | 看见CommitInfo.votes 是上一集合投票信息不是已经进了块 会被写成已经进了块 interchangeable / 444 interchangeable | 官方 CiFields cifields item 2：not already 已经进了块 / not 444 |
+| A6567 | 高 | 看见CommitInfo.votes is last-set voting info is not already in the block 会被写成已经交差 interchangeable / 365 interchangeable | 官方 CiFields cifields item 2：not already 已经交差 / not 365 |
+| A6568 | 高 | 看见CommitInfo.votes 是上一集合投票信息不是已经进了块 会被写成已经是 Notes 票序 interchangeable | 官方 CiFields cifields item 2：not already settled |
+| A6569 | 中 | 怎样填 CommitInfo.round、怎样读 votes 列表、怎样把 Fields 写成 Notes会被抄进不确定 | 不抄。不写 怎样填 CommitInfo.round、怎样读 votes 列表、怎样把 Fields 写成 Notes。不另写 19 节 |
+| A6560 | 记录 | 会与 445 / 392 / 394 / 1360 / 1361 糊成「看见CommitInfo.round 是提交轮不是已经按投票权排过就已经按投票权排过 interchangeable、就已经罚没 interchangeable、就已经是 ExtendedCommitInfo.round interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 CiFields round is commit-round not already voting-power-ordered / not already slashed / not already 394-ext-round 正式三事（445 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。445 CommitInfo Fields round-and-votes bundled unbundling 启动（1359 item 1） |
+| A6561 | 高 | 看见CommitInfo.round 是提交轮不是已经按投票权排过 会被写成已经按投票权排过 interchangeable / 392 interchangeable | 官方 CiFields cifields item 1：not already 已经按投票权排过 / not 392 |
+| A6562 | 高 | 看见CommitInfo.round is commit round is not already ordered by voting power 会被写成已经罚没 interchangeable / 394 interchangeable | 官方 CiFields cifields item 1：not already 已经罚没 / not 394 |
+| A6563 | 高 | 看见CommitInfo.round 是提交轮不是已经按投票权排过 会被写成已经是 ExtendedCommitInfo.round interchangeable | 官方 CiFields cifields item 1：not already settled |
+| A6564 | 中 | 怎样填 CommitInfo.round、怎样读 votes 列表、怎样把 Fields 写成 Notes会被抄进不确定 | 不抄。不写 怎样填 CommitInfo.round、怎样读 votes 列表、怎样把 Fields 写成 Notes。不另写 19 节 |
+| A6555 | 记录 | 会与 441 / 444 / 365 / 1356 / 1357 糊成「看见造 ExtendedCommitInfo 时从 store 再装不是已经从块里抽出就已经从拟议块或已决块抽出 interchangeable、就已经是 VoteInfo Usage 抽出路径 interchangeable、就已经是 CommitInfo Notes 同一句 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtCiNotes rebuild ExtendedCommitInfo from store not already extracted-from-block / not already 365-path / not already 444-cinotes 正式三事（441 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 完成（1358 item 3） |
+| A6556 | 高 | 看见造 ExtendedCommitInfo 时从 store 再装不是已经从块里抽出 会被写成已经从拟议块或已决块抽出 interchangeable / 444 interchangeable | 官方 ExtCiNotes extcnotes item 3：not already 已经从拟议块或已决块抽出 / not 444 |
+| A6557 | 高 | 看见building ExtendedCommitInfo reloads the set from store is not extracted from the block 会被写成已经是 VoteInfo Usage 抽出路径 interchangeable / 365 interchangeable | 官方 ExtCiNotes extcnotes item 3：not already 已经是 VoteInfo Usage 抽出路径 / not 365 |
+| A6558 | 高 | 看见造 ExtendedCommitInfo 时从 store 再装不是已经从块里抽出 会被写成已经是 CommitInfo Notes 同一句 interchangeable | 官方 ExtCiNotes extcnotes item 3：not already settled |
+| A6559 | 中 | 怎样排 ExtendedVoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 ExtendedCommitInfo会被抄进不确定 | 不抄。不写 怎样排 ExtendedVoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 ExtendedCommitInfo。不另写 19 节 |
+| A6550 | 记录 | 会与 441 / 369 / 444 / 1356 / 1358 糊成「看见引擎保证并落盘 Extended 顺序不是已经由应用排过就已经由应用排过 interchangeable、就已经是收到票时的顺序 interchangeable、就已经由 Prepare 回包决定 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtCiNotes engine guarantees and persists ext order not already app-sorted / not already recv-order / not already Prepare-decided 正式三事（441 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 续（1357 item 2） |
+| A6551 | 高 | 看见引擎保证并落盘 Extended 顺序不是已经由应用排过 会被写成已经由应用排过 interchangeable / 369 interchangeable | 官方 ExtCiNotes extcnotes item 2：not already 已经由应用排过 / not 369 |
+| A6552 | 高 | 看见engine guarantees and persists Extended order is not already sorted by the app 会被写成已经是收到票时的顺序 interchangeable / 444 interchangeable | 官方 ExtCiNotes extcnotes item 2：not already 已经是收到票时的顺序 / not 444 |
+| A6553 | 高 | 看见引擎保证并落盘 Extended 顺序不是已经由应用排过 会被写成已经由 Prepare 回包决定 interchangeable | 官方 ExtCiNotes extcnotes item 2：not already settled |
+| A6554 | 中 | 怎样排 ExtendedVoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 ExtendedCommitInfo会被抄进不确定 | 不抄。不写 怎样排 ExtendedVoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 ExtendedCommitInfo。不另写 19 节 |
+| A6545 | 记录 | 会与 441 / 365 / 444 / 1357 / 1358 糊成「看见ExtendedCommitInfo.votes 按投票权降序排不是已经进了块就已经进了块 interchangeable、就已经交差 interchangeable、就已经写进 last_commit interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtCiNotes ext votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（441 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。441 ExtendedCommitInfo Notes vote-power order bundled unbundling 启动（1356 item 1） |
+| A6546 | 高 | 看见ExtendedCommitInfo.votes 按投票权降序排不是已经进了块 会被写成已经进了块 interchangeable / 365 interchangeable | 官方 ExtCiNotes extcnotes item 1：not already 已经进了块 / not 365 |
+| A6547 | 高 | 看见ExtendedCommitInfo.votes ordered by voting power is not already in the block 会被写成已经交差 interchangeable / 444 interchangeable | 官方 ExtCiNotes extcnotes item 1：not already 已经交差 / not 444 |
+| A6548 | 高 | 看见ExtendedCommitInfo.votes 按投票权降序排不是已经进了块 会被写成已经写进 last_commit interchangeable | 官方 ExtCiNotes extcnotes item 1：not already settled |
+| A6549 | 中 | 怎样排 ExtendedVoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 ExtendedCommitInfo会被抄进不确定 | 不抄。不写 怎样排 ExtendedVoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 ExtendedCommitInfo。不另写 19 节 |
+| A6540 | 记录 | 会与 444 / 365 / 439 / 1353 / 1354 糊成「看见造 CommitInfo 时从 store 再装不是已经从块里抽出就已经从拟议块或已决块抽出 interchangeable、就已经是 VoteInfo Usage 抽出路径 interchangeable、就已经是 ExtendedCommitInfo Notes 同一句 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 CiNotes rebuild CommitInfo from store not already extracted-from-block / not already 365-path / not already extcinotes 正式三事（444 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。444 CommitInfo Notes vote-power order bundled unbundling 完成（1355 item 3） |
+| A6541 | 高 | 看见造 CommitInfo 时从 store 再装不是已经从块里抽出 会被写成已经从拟议块或已决块抽出 interchangeable / 365 interchangeable | 官方 CiNotes cinotes item 3：not already 已经从拟议块或已决块抽出 / not 365 |
+| A6542 | 高 | 看见building CommitInfo reloads the set from store is not extracted from the block 会被写成已经是 VoteInfo Usage 抽出路径 interchangeable / 439 interchangeable | 官方 CiNotes cinotes item 3：not already 已经是 VoteInfo Usage 抽出路径 / not 439 |
+| A6543 | 高 | 看见造 CommitInfo 时从 store 再装不是已经从块里抽出 会被写成已经是 ExtendedCommitInfo Notes 同一句 interchangeable | 官方 CiNotes cinotes item 3：not already settled |
+| A6544 | 中 | 怎样排 VoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 CommitInfo会被抄进不确定 | 不抄。不写 怎样排 VoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 CommitInfo。不另写 19 节 |
+| A6535 | 记录 | 会与 444 / 365 / 445 / 1353 / 1355 糊成「看见引擎保证并落盘顺序不是已经由应用排过就已经由应用排过 interchangeable、就已经是收到票时的顺序 interchangeable、就已经由 Process 回包决定 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 CiNotes engine guarantees and persists order not already app-sorted / not already recv-order / not already Process-decided 正式三事（444 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。444 CommitInfo Notes vote-power order bundled unbundling 续（1354 item 2） |
+| A6536 | 高 | 看见引擎保证并落盘顺序不是已经由应用排过 会被写成已经由应用排过 interchangeable / 365 interchangeable | 官方 CiNotes cinotes item 2：not already 已经由应用排过 / not 365 |
+| A6537 | 高 | 看见engine guarantees and persists order is not already sorted by the app 会被写成已经是收到票时的顺序 interchangeable / 445 interchangeable | 官方 CiNotes cinotes item 2：not already 已经是收到票时的顺序 / not 445 |
+| A6538 | 高 | 看见引擎保证并落盘顺序不是已经由应用排过 会被写成已经由 Process 回包决定 interchangeable | 官方 CiNotes cinotes item 2：not already settled |
+| A6539 | 中 | 怎样排 VoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 CommitInfo会被抄进不确定 | 不抄。不写 怎样排 VoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 CommitInfo。不另写 19 节 |
+| A6530 | 记录 | 会与 444 / 365 / 392 / 1354 / 1355 糊成「看见CommitInfo.votes 按投票权降序排不是已经进了块就已经进了块 interchangeable、就已经交差 interchangeable、就已经写进 last_commit interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 CiNotes votes ordered by voting-power desc not already in-block / not already settled / not already last_commit 正式三事（444 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。444 CommitInfo Notes vote-power order bundled unbundling 启动（1353 item 1） |
+| A6531 | 高 | 看见CommitInfo.votes 按投票权降序排不是已经进了块 会被写成已经进了块 interchangeable / 365 interchangeable | 官方 CiNotes cinotes item 1：not already 已经进了块 / not 365 |
+| A6532 | 高 | 看见CommitInfo.votes ordered by voting power is not already in the block 会被写成已经交差 interchangeable / 392 interchangeable | 官方 CiNotes cinotes item 1：not already 已经交差 / not 392 |
+| A6533 | 高 | 看见CommitInfo.votes 按投票权降序排不是已经进了块 会被写成已经写进 last_commit interchangeable | 官方 CiNotes cinotes item 1：not already settled |
+| A6534 | 中 | 怎样排 VoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 CommitInfo会被抄进不确定 | 不抄。不写 怎样排 VoteInfo、怎样从 store 再装验证者集合、怎样从块里抽 CommitInfo。不另写 19 节 |
+| A6525 | 记录 | 会与 439 / 438 / 513 / 1350 / 1351 糊成「看见将签名并挂到 Precommit 不是已经广播就已经广播 Precommit interchangeable、就已经写进 last_commit interchangeable、就已经 ExtendVote When 正式流程 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtAppGen will-be-signed attached-to-Precommit not already broadcast / not already last_commit / not already 438-bundled 正式三事（439 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。439 ExtendVote Response application-generated will-be-signed bundled unbundling 完成（1352 item 3） |
+| A6526 | 高 | 看见将签名并挂到 Precommit 不是已经广播 会被写成已经广播 Precommit interchangeable / 438 interchangeable | 官方 ExtAppGen eappgen item 3：not already 已经广播 Precommit / not 438 |
+| A6527 | 高 | 看见will be signed and attached to Precommit is not already broadcast 会被写成已经写进 last_commit interchangeable / 513 interchangeable | 官方 ExtAppGen eappgen item 3：not already 已经写进 last_commit / not 513 |
+| A6528 | 高 | 看见将签名并挂到 Precommit 不是已经广播 会被写成已经 ExtendVote When 正式流程 bundled interchangeable | 官方 ExtAppGen eappgen item 3：not already settled |
+| A6529 | 中 | 怎样签 vote_extension、怎样包进 CanonicalVoteExtension、怎样广播 Precommit会被抄进不确定 | 不抄。不写 怎样签 vote_extension、怎样包进 CanonicalVoteExtension、怎样广播 Precommit。不另写 19 节 |
+| A6520 | 记录 | 会与 439 / 358 / 418 / 1350 / 1352 糊成「看见non_rp 将签名并挂上且不做重放保护不是已经同一份签法就已经和 vote_extension 同一份签法 interchangeable、就已经 non_rp 按原样签 bundled interchangeable、就已经有重放保护 interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtAppGen appgen non_rp will-be-signed-attached no-replay-prot not already same-sign / not already 358-raw / not already replay-prot 正式三事（439 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。439 ExtendVote Response application-generated will-be-signed bundled unbundling 续（1351 item 2） |
+| A6521 | 高 | 看见non_rp 将签名并挂上且不做重放保护不是已经同一份签法 会被写成已经和 vote_extension 同一份签法 interchangeable / 358 interchangeable | 官方 ExtAppGen eappgen item 2：not already 已经和 vote_extension 同一份签法 / not 358 |
+| A6522 | 高 | 看见non_rp will be signed and attached without replay-protection is not same signing 会被写成已经 non_rp 按原样签 bundled interchangeable / 418 interchangeable | 官方 ExtAppGen eappgen item 2：not already 已经 non_rp 按原样签 bundled / not 418 |
+| A6523 | 高 | 看见non_rp 将签名并挂上且不做重放保护不是已经同一份签法 会被写成已经有重放保护 interchangeable | 官方 ExtAppGen eappgen item 2：not already settled |
+| A6524 | 中 | 怎样签 vote_extension、怎样包进 CanonicalVoteExtension、怎样广播 Precommit会被抄进不确定 | 不抄。不写 怎样签 vote_extension、怎样包进 CanonicalVoteExtension、怎样广播 Precommit。不另写 19 节 |
+| A6515 | 记录 | 会与 439 / 418 / 358 / 1351 / 1352 糊成「看见应用生成 vote_extension 将签名不是已经签过就已经签过 interchangeable、就已经包进 CanonicalVoteExtension interchangeable、就已经 attached to Precommit interchangeable」 | 对照写清。不编博物馆页。写进 L4.4 ExtAppGen appgen vote_extension will-be-signed not already signed / not already 418-wrap / not already attached 正式三事（439 余量）/ 实现表 / 停链面地图。不写进 Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。439 ExtendVote Response application-generated will-be-signed bundled unbundling 启动（1350 item 1） |
+| A6516 | 高 | 看见应用生成 vote_extension 将签名不是已经签过 会被写成已经签过 interchangeable / 418 interchangeable | 官方 ExtAppGen eappgen item 1：not already 已经签过 / not 418 |
+| A6517 | 高 | 看见application-generated vote_extension will be signed is not already signed 会被写成已经包进 CanonicalVoteExtension interchangeable / 358 interchangeable | 官方 ExtAppGen eappgen item 1：not already 已经包进 CanonicalVoteExtension / not 358 |
+| A6518 | 高 | 看见应用生成 vote_extension 将签名不是已经签过 会被写成已经 attached to Precommit interchangeable | 官方 ExtAppGen eappgen item 1：not already settled |
+| A6519 | 中 | 怎样签 vote_extension、怎样包进 CanonicalVoteExtension、怎样广播 Precommit会被抄进不确定 | 不抄。不写 怎样签 vote_extension、怎样包进 CanonicalVoteExtension、怎样广播 Precommit。不另写 19 节 |
 | A6510 | 记录 | 会与 234 / 208 / 223 / 1346 / 1347 糊成「看见难度朝均值不是已经没有炸弹就已经取消指数炸弹 interchangeable、就已经写了推迟炸弹的分叉 interchangeable、就已经 Homestead 四件事 bundled interchangeable」 | 对照写清。不编博物馆页。写进 L5.1 EIP-2 diff-mean not already bomb-gone / not already bomb-delay / not already 234-bundled 正式四事（234 余量）/ 实现表 / 停链面地图。不写进 `index/03` 共识行、M5.4、L5.4。234 Homestead 硬分叉四件事 bundled unbundling 完成（1349 item 4） |
 | A6511 | 高 | 看见难度朝均值不是已经没有炸弹 会被写成已经取消指数炸弹 interchangeable / 208 interchangeable | 官方 EIP-2 hstead item 4：not already 已经取消指数炸弹 / not 208 |
 | A6512 | 高 | 看见difficulty toward mean is not bomb gone 会被写成已经写了推迟炸弹的分叉 interchangeable / 223 interchangeable | 官方 EIP-2 hstead item 4：not already 已经写了推迟炸弹的分叉 / not 223 |

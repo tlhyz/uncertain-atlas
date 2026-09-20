@@ -85,7 +85,7 @@
 | 经济 | 同帧再写更便宜不是已经能在转账津贴里改槽 |
 
 **推断：** 产品句若只写「净计量所以已经是瞬时存储」，读者会把三本账听成临时库房，或把 2200 听成 3529，或把津贴帧禁写听成已经能写。  
-**建议：** 第一版可以不抄这套三值表。若对照，必须分开原来值、当前值、新值、已经是瞬时存储。不要发明「看见 2200 就已经是 1153」。不要抄气价名取值或津贴数字。不要写怎样在津贴帧里改槽、做重入或实现脏图。
+**建议：** 第一版可以不抄这套三值表。若对照，必须分开原来值、当前值、新值、已经是瞬时存储。可以跳过「看见 2200 就已经是 1153」。225 net-meter vs transient bundled unbundling 完成（1419 item 1 / 1420 item 2 / 1421 item 3）；精读 [`worked-example-nmet-not1153-vs-bundled.md`](worked-example-nmet-not1153-vs-bundled.md)（不变量 1419 item 1）、[`worked-example-nmet-notcur-vs-bundled.md`](worked-example-nmet-notcur-vs-bundled.md)（不变量 1420 item 2）、[`worked-example-nmet-notstip-vs-bundled.md`](worked-example-nmet-notstip-vs-bundled.md)（不变量 1421 item 3）。不要发明「看见 2200 就已经是 1153」。不要抄气价名取值或津贴数字。不要写怎样在津贴帧里改槽、做重入或实现脏图。
 
 ---
 

@@ -87,7 +87,7 @@
 | 经济 | 不把省带宽写成已经更安全 |
 
 **推断：** 产品句若只写「历史可以过期了」，读者会把对等节点挂牌听成共识已经删书，或把线上收据听成账本收据已经改。  
-**建议：** 第一版必须写清全节点默认可从创世拉到哪。若允许剪历史，必须分开「这个对等节点还服哪一段」和「共识还认哪一段」。不要发明「看见 7642 就已经改了共识历史」。不要抄截止日期 / 带宽估算。不要把 7642 写成硬分叉。
+**建议：** 第一版必须写清全节点默认可从创世拉到哪。若允许剪历史，必须分开「这个对等节点还服哪一段」和「共识还认哪一段」。可以跳过「看见 7642 就已经改了共识历史」。207 history-window vs consensus bundled unbundling 完成（1488 item 1 / 1489 item 2 / 1490 item 3）；精读 [`worked-example-hwin-notcons-vs-bundled.md`](worked-example-hwin-notcons-vs-bundled.md)（不变量 1488 item 1）、[`worked-example-hwin-notenc-vs-bundled.md`](worked-example-hwin-notenc-vs-bundled.md)（不变量 1489 item 2）、[`worked-example-hwin-notsync-vs-bundled.md`](worked-example-hwin-notsync-vs-bundled.md)（不变量 1490 item 3）。不要发明「看见 7642 就已经改了共识历史」。不要抄截止日期 / 带宽估算。不要把 7642 写成硬分叉。
 
 ---
 

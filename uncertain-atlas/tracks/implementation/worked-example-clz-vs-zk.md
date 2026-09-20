@@ -82,7 +82,7 @@
 | 经济 | 不把「证明更便宜」写成已经更安全 |
 
 **推断：** 产品句若只写「有了数前导零」，读者会把一条栈操作听成证明系统已经便宜，或把动机里的后量子举例听成签名已经换完。  
-**建议：** 第一版可以不加这条操作码。若加，必须分开前导零、证明费、签名方案、尾零。不要发明「看见 7939 就已经更便宜的 ZK」。不要抄操作码号 / 气价。不要写怎样拼数尾零。
+**建议：** 第一版可以不加这条操作码。若加，必须分开前导零、证明费、签名方案、尾零。可以跳过「看见 7939 就已经更便宜的 ZK」。208 clz vs zk bundled unbundling 完成（1470 item 1 / 1471 item 2 / 1472 item 3）；精读 [`worked-example-clz-notzk-vs-bundled.md`](worked-example-clz-notzk-vs-bundled.md)（不变量 1470 item 1）、[`worked-example-clz-notpq-vs-bundled.md`](worked-example-clz-notpq-vs-bundled.md)（不变量 1471 item 2）、[`worked-example-clz-notctz-vs-bundled.md`](worked-example-clz-notctz-vs-bundled.md)（不变量 1472 item 3）。不要发明「看见 7939 就已经更便宜的 ZK」。不要抄操作码号 / 气价。不要写怎样拼数尾零。
 
 ---
 

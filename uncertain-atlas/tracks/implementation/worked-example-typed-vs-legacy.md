@@ -81,7 +81,7 @@
 | 经济 | 信封本身不改谁收费；1559 是另一页 |
 
 **推断：** 产品句若只写「支持 2718」，读者会把盖袋号听成已经拆信。  
-**建议：** 第一版必须把类型字节、载荷、旧式列表三套文案分开。不要发明「带了类型 = 已经是 1559」。不要抄类型取值范围。不要写怎样跨类型复用签名。
+**建议：** 第一版必须把类型字节、载荷、旧式列表三套文案分开。可以跳过「带了类型 = 已经是 1559」。167 typed vs legacy bundled unbundling 完成（1455 item 1 / 1456 item 2 / 1457 item 3）；精读 [`worked-example-tenv-notinner-vs-bundled.md`](worked-example-tenv-notinner-vs-bundled.md)（不变量 1455 item 1）、[`worked-example-tenv-notenv-vs-bundled.md`](worked-example-tenv-notenv-vs-bundled.md)（不变量 1456 item 2）、[`worked-example-tenv-notrcpt-vs-bundled.md`](worked-example-tenv-notrcpt-vs-bundled.md)（不变量 1457 item 3）。不要发明「带了类型 = 已经是 1559」。不要抄类型取值范围。不要写怎样跨类型复用签名。
 
 ---
 
