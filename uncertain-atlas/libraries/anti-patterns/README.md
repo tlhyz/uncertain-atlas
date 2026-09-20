@@ -1,3 +1,4 @@
+- [`preparetimeout-notfit-sold-as-bundled.md`](preparetimeout-notfit-sold-as-bundled.md) — 填了 TimeoutPropose 被写成已经装得下 / 同步期 被写成已经钟不响 / 钟一响就 prevote nil 被写成已经把提议绑死（不变量 738）
 - [`preparetimeout-notcriticalpath-sold-as-bundled.md`](preparetimeout-notcriticalpath-sold-as-bundled.md) — 立刻执行了 被写成已经离开关键路径 / 执行回了 被写成已经不挡提议钟 / 候选写进内存 被写成已经交差（不变量 737）
 - [`peerfilter-notenginepath-sold-as-bundled.md`](peerfilter-notenginepath-sold-as-bundled.md) — 规范写了三条路径 被写成已经三条都在用 / 有 /store 被写成已经是过滤 / 能带数据 被写成已经两道过滤带了数据（不变量 736）
 - [`peerfilter-notaddrpassed-sold-as-bundled.md`](peerfilter-notaddrpassed-sold-as-bundled.md) — id 绿了 被写成已经过了 addr / 公钥地址对上 被写成已经能交互 / 拒连 被写成已经写进持久封禁表（不变量 735）

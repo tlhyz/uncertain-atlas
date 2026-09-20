@@ -1,3 +1,4 @@
+- [`name-the-preparetimeout-notfit-bar.md`](name-the-preparetimeout-notfit-bar.md) — 填了 TimeoutPropose 不是已经装得下 not already fits-execution / not already clock-silent / not already propose-bound 正式三事（327 余量）（不变量 738）
 - [`name-the-preparetimeout-notcriticalpath-bar.md`](name-the-preparetimeout-notcriticalpath-bar.md) — 立刻整块执行不是已经离开关键路径 not already left-critical-path / not already unblocks-propose-clock / not already candidate-settled 正式三事（327 余量）（不变量 737）
 - [`name-the-peerfilter-notenginepath-bar.md`](name-the-peerfilter-notenginepath-bar.md) — 有 /store 路径不是已经是引擎在用 not already all-paths-used / not already is-filter / not already filter-has-data 正式三事（326 余量）（不变量 736）
 - [`name-the-peerfilter-notaddrpassed-bar.md`](name-the-peerfilter-notaddrpassed-bar.md) — id 过滤查询绿了不是已经过了 addr not already addr-passed / not already can-interact / not already persistent-ban 正式三事（326 余量）（不变量 735）
