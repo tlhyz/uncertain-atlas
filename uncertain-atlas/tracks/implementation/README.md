@@ -145,6 +145,7 @@
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
+- [`worked-example-peerfilter-notaddrpassed-vs-bundled.md`](worked-example-peerfilter-notaddrpassed-vs-bundled.md) — id绿了≠过了addr/公钥地址对上≠能交互/拒连≠持久封禁表；≠326 bundled（不变量 735）
 - [`worked-example-peerfilter-notaccepted-vs-bundled.md`](worked-example-peerfilter-notaccepted-vs-bundled.md) — 发了addr≠收下/TCP连上≠过了Query/只问地址≠问了id；≠326 bundled（不变量 734）
 - [`worked-example-queryproof-notfinalapphash-vs-bundled.md`](worked-example-queryproof-notfinalapphash-vs-bundled.md) — 一层对上≠交给下一层/中间根≠最终AppHash/能证缺席≠对着块哈希；≠325 bundled（不变量 733）
 - [`worked-example-queryproof-notverified-vs-bundled.md`](worked-example-queryproof-notverified-vs-bundled.md) — 回了Proof≠已验/有type≠同一棵树/能证存在≠能证不存在；≠325 bundled（不变量 732）

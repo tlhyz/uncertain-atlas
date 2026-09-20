@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看发了 addr 过滤查询不是已经收下这个人 not already accepted / not already query-passed / not already id-asked 正式三事（326 余量），必须分开发了 addr 是不是 already accepted interchangeable / 326 peerfilter bundled interchangeable / peerfilter-sold-as-connected interchangeable、TCP 连上 是不是 already query-passed interchangeable、只问了地址 是不是 already id-asked interchangeable。可以跳过「看见发了 addr 过滤查询就已经收下 interchangeable / 就已经过了 Query interchangeable / 就已经问了 id interchangeable」。不要另写怎样写过滤。326 peerfilter vs query bundled unbundling 在本页 item 1 启动；续 [`worked-example-peerfilter-notaddrpassed-vs-bundled.md`](worked-example-peerfilter-notaddrpassed-vs-bundled.md)（不变量 735 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看发了 addr 过滤查询不是已经收下这个人 not already accepted / not already query-passed / not already id-asked 正式三事（326 余量），必须分开发了 addr 是不是 already accepted interchangeable / 326 peerfilter bundled interchangeable / peerfilter-sold-as-connected interchangeable、TCP 连上 是不是 already query-passed interchangeable、只问了地址 是不是 already id-asked interchangeable。可以跳过「看见发了 addr 过滤查询就已经收下 interchangeable / 就已经过了 Query interchangeable / 就已经问了 id interchangeable」。不要另写怎样写过滤。326 peerfilter vs query bundled unbundling 在本页 item 1 启动；续 [`worked-example-peerfilter-notaddrpassed-vs-bundled.md`](worked-example-peerfilter-notaddrpassed-vs-bundled.md)（不变量 735 item 2）已写。
 
 ## 本页不抄
 

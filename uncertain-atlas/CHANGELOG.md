@@ -1,3 +1,7 @@
+## 2026-09-20（续 852）
+
+- 不变量 735；语料 C712；模式 name-the-peerfilter-notaddrpassed-bar；反模式 peerfilter-notaddrpassed-sold-as-bundled；L10.3 第 704 条。填 L4.4 / CometBFT 档案 id 过滤查询绿了不是已经过了 addr not already addr-passed / not already can-interact / not already persistent-ban 正式三事（326 余量） / 实现表 / 05b / 共识专题 / 停链面地图。326 peerfilter vs query bundled unbundling 续（735 item 2）。
+
 ## 2026-09-20（续 851）
 
 - 不变量 734；语料 C711；模式 name-the-peerfilter-notaccepted-bar；反模式 peerfilter-notaccepted-sold-as-bundled；L10.3 第 703 条。填 L4.4 / CometBFT 档案 发了 addr 过滤查询不是已经收下这个人 not already accepted / not already query-passed / not already id-asked 正式三事（326 余量） / 实现表 / 05b / 共识专题 / 停链面地图。326 peerfilter vs query bundled unbundling 启动（734 item 1）。
