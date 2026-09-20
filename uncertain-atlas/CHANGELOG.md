@@ -1,3 +1,7 @@
+## 2026-09-20（续 862）
+
+- 不变量 745；语料 C722；模式 name-the-query-notrequired-bar；反模式 query-notrequired-sold-as-bundled；L10.3 第 714 条。填 L4.4 / CometBFT 档案 实现了 Query 不是已经是正常运转必须有 not already required / not already filter / not already proof 正式三事（329 余量） / 实现表 / 05b / 共识专题 / 停链面地图。329 query vs replicated bundled unbundling 完成（745 item 3）。
+
 ## 2026-09-20（续 861）
 
 - 不变量 744；语料 C721；模式 name-the-query-notfresh-bar；反模式 query-notfresh-sold-as-bundled；L10.3 第 713 条。填 L4.4 / CometBFT 档案 查到了不是已经新鲜 not already fresh / not already tip / not already decided-state 正式三事（329 余量） / 实现表 / 05b / 共识专题 / 停链面地图。329 query vs replicated bundled unbundling 续（744 item 2）。
