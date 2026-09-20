@@ -1,3 +1,7 @@
+## 2026-09-20（续 853）
+
+- 不变量 736；语料 C713；模式 name-the-peerfilter-notenginepath-bar；反模式 peerfilter-notenginepath-sold-as-bundled；L10.3 第 705 条。填 L4.4 / CometBFT 档案 有 /store 路径不是已经是引擎在用 not already all-paths-used / not already is-filter / not already filter-has-data 正式三事（326 余量） / 实现表 / 05b / 共识专题 / 停链面地图。326 peerfilter vs query bundled unbundling 完成（736 item 3）。
+
 ## 2026-09-20（续 852）
 
 - 不变量 735；语料 C712；模式 name-the-peerfilter-notaddrpassed-bar；反模式 peerfilter-notaddrpassed-sold-as-bundled；L10.3 第 704 条。填 L4.4 / CometBFT 档案 id 过滤查询绿了不是已经过了 addr not already addr-passed / not already can-interact / not already persistent-ban 正式三事（326 余量） / 实现表 / 05b / 共识专题 / 停链面地图。326 peerfilter vs query bundled unbundling 续（735 item 2）。
