@@ -141,6 +141,7 @@
 - [`worked-example-preparetimeout-notfit-vs-bundled.md`](worked-example-preparetimeout-notfit-vs-bundled.md) — 填了TimeoutPropose≠装得下/同步期≠钟不响/钟响prevote nil≠提议绑死；≠327 bundled（不变量 738）
 - [`worked-example-preparetimeout-notcriticalpath-vs-bundled.md`](worked-example-preparetimeout-notcriticalpath-vs-bundled.md) — 立刻执行≠离开关键路径/执行回≠不挡提议钟/候选写进内存≠交差；≠327 bundled（不变量 737）
 - [`worked-example-prepare-timeout-vs-liveness.md`](worked-example-prepare-timeout-vs-liveness.md) — 立刻整块执行 ≠ 已经离开提议超时的关键路径；填了 TimeoutPropose ≠ 已经装得下；又开一轮 ≠ 已经丢了活性（不变量 327）
+- [`worked-example-checktxoscillate-notcode-vs-bundled.md`](worked-example-checktxoscillate-notcode-vs-bundled.md) — 回了不同码≠有CheckTxCode/集合在≠能说OK/回了两次≠单元素；≠328 bundled（不变量 740）
 - [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
 - [`worked-example-query-vs-replicated.md`](worked-example-query-vs-replicated.md) — Query 回了 ≠ 已经复制到各节点；查到了 ≠ 已经新鲜；实现了 Query ≠ 已经是正常运转必须有（不变量 329）
 - [`worked-example-ve-height-vs-prepare.md`](worked-example-ve-height-vs-prepare.md) — 到了 H ≠ 已经 Prepare 带了扩展；H+1 带了扩展 ≠ 已经是本高度刚签的；h < H 带了扩展 ≠ 已经合法（不变量 330）

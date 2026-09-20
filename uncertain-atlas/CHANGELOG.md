@@ -1,3 +1,7 @@
+## 2026-09-20（续 857）
+
+- 不变量 740；语料 C717；模式 name-the-checktxoscillate-notcode-bar；反模式 checktxoscillate-notcode-sold-as-bundled；L10.3 第 709 条。填 L4.4 / CometBFT 档案 同一高度回了不同码不是已经有了 CheckTxCode not already has-checktxcode / not already ok-defined / not already singleton-set 正式三事（328 余量） / 实现表 / 05b / 共识专题 / 停链面地图。328 checktxoscillate vs stable bundled unbundling 启动（740 item 1）。
+
 ## 2026-09-20（续 856）
 
 - 不变量 739；语料 C716；模式 name-the-preparetimeout-notlivenesslost-bar；反模式 preparetimeout-notlivenesslost-sold-as-bundled；L10.3 第 708 条。填 L4.4 / CometBFT 档案 又开一轮不是已经丢了活性 not already liveness-lost / not already timeout-frozen / not already final-tier 正式三事（327 余量） / 实现表 / 05b / 共识专题 / 停链面地图。327 preparetimeout vs liveness bundled unbundling 完成（739 item 3）。

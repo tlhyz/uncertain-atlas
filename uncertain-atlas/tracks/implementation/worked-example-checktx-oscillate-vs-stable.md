@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirement 13 [`CheckTx`, eventual non-oscillation]。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「同一高度回了不同码不是已经有了 CheckTxCode / 还在振荡不是已经过了 h_stable / 本地不再振荡不是已经各节点同一份 b」，不是 CheckTxState 已经是 ExecuteTxState，也不是提案收了已经从池里删掉。不要另写怎样实现 CheckTx 或怎样挑稳定高度。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「同一高度回了不同码不是已经有了 CheckTxCode / 还在振荡不是已经过了 h_stable / 本地不再振荡不是已经各节点同一份 b」，不是 CheckTxState 已经是 ExecuteTxState，也不是提案收了已经从池里删掉。不要另写怎样实现 CheckTx 或怎样挑稳定高度。 328 checktxoscillate vs stable bundled unbundling 启动（740）；精读 [`worked-example-checktxoscillate-notcode-vs-bundled.md`](worked-example-checktxoscillate-notcode-vs-bundled.md)（不变量 740 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「CheckTx 过了就已经稳定、已经离池、已经全网同一份」，必须分开同一高度回了不同码是不是已经有了 CheckTxCode、还在振荡是不是已经过了 h_stable、本地不再振荡是不是已经各节点同一份 b。可以跳过「看见过了就已经稳定」。不要另写怎样实现 CheckTx 或怎样挑稳定高度。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「CheckTx 过了就已经稳定、已经离池、已经全网同一份」，必须分开同一高度回了不同码是不是已经有了 CheckTxCode、还在振荡是不是已经过了 h_stable、本地不再振荡是不是已经各节点同一份 b。可以跳过「看见过了就已经稳定」。不要另写怎样实现 CheckTx 或怎样挑稳定高度。 328 checktxoscillate vs stable bundled unbundling 启动（740 item 1）。
 
 ## 本页不抄
 
