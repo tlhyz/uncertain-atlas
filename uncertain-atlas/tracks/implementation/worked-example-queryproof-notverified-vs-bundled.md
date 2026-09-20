@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Query 回了 Proof 不是已经对上 AppHash not already verified / not already same-tree / not already prove-absence 正式三事（325 余量），必须分开回了 Proof 是不是 already verified interchangeable / 325 queryproof bundled interchangeable / queryproof-sold-as-apphash interchangeable、有 type 是不是 already same-tree interchangeable、能证存在 是不是 already prove-absence interchangeable。可以跳过「看见 Query 回了 Proof 就已经对上 AppHash interchangeable / 就已经是一层树 interchangeable / 就已经能证不存在 interchangeable」。不要另写怎样编证明。325 queryproof vs apphash bundled unbundling 在本页 item 2 续（731 + 732）；续 [`worked-example-queryproof-notfinalapphash-vs-bundled.md`](worked-example-queryproof-notfinalapphash-vs-bundled.md)（不变量 733 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Query 回了 Proof 不是已经对上 AppHash not already verified / not already same-tree / not already prove-absence 正式三事（325 余量），必须分开回了 Proof 是不是 already verified interchangeable / 325 queryproof bundled interchangeable / queryproof-sold-as-apphash interchangeable、有 type 是不是 already same-tree interchangeable、能证存在 是不是 already prove-absence interchangeable。可以跳过「看见 Query 回了 Proof 就已经对上 AppHash interchangeable / 就已经是一层树 interchangeable / 就已经能证不存在 interchangeable」。不要另写怎样编证明。325 queryproof vs apphash bundled unbundling 在本页 item 2 续（731 + 732）；续 [`worked-example-queryproof-notfinalapphash-vs-bundled.md`](worked-example-queryproof-notfinalapphash-vs-bundled.md)（不变量 733 item 3）已写；完成见 733。
 
 ## 本页不抄
 

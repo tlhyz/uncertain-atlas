@@ -1,3 +1,7 @@
+## 2026-09-20（续 850）
+
+- 不变量 733；语料 C710；模式 name-the-queryproof-notfinalapphash-bar；反模式 queryproof-notfinalapphash-sold-as-bundled；L10.3 第 702 条。填 L4.4 / CometBFT 档案 一层 ProofOp 的根不是已经对上最终 AppHash not already next-layer / not already final-apphash / not already blockhash-compared 正式三事（325 余量） / 实现表 / 05b / 共识专题 / 停链面地图。325 queryproof vs apphash bundled unbundling 完成（733 item 3）。
+
 ## 2026-09-20（续 849）
 
 - 不变量 732；语料 C709；模式 name-the-queryproof-notverified-bar；反模式 queryproof-notverified-sold-as-bundled；L10.3 第 701 条。填 L4.4 / CometBFT 档案 Query 回了 Proof 不是已经对上 AppHash not already verified / not already same-tree / not already prove-absence 正式三事（325 余量） / 实现表 / 05b / 共识专题 / 停链面地图。325 queryproof vs apphash bundled unbundling 续（732 item 2）。
