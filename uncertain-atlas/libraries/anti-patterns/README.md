@@ -1,3 +1,4 @@
+- [`veheight-notprepare-sold-as-bundled.md`](veheight-notprepare-sold-as-bundled.md) — 到了 H 被写成已经 Prepare 带了扩展 / 已经叫了 ExtendVote 被写成已经写进本高提议 / 会调 Verify 被写成已经在提议里（不变量 746）
 - [`query-notrequired-sold-as-bundled.md`](query-notrequired-sold-as-bundled.md) — 实现了 Query 被写成已经是正常运转必须有 / 邻居过滤 被写成已经是过滤 / 默克尔证明 被写成已经是证明（不变量 745）
 - [`query-notfresh-sold-as-bundled.md`](query-notfresh-sold-as-bundled.md) — 查到了 被写成已经新鲜 / 跟上了尖 被写成已经是当前尖 / 决定块之后那份 被写成已经是决定块之后那份（不变量 744）
 - [`query-notreplicated-sold-as-bundled.md`](query-notreplicated-sold-as-bundled.md) — Query 回了 被写成已经复制到各节点 / RPC 能查 被写成已经过了共识 / 查的是本节点本地 被写成已经全网同一份（不变量 743）

@@ -1,3 +1,7 @@
+## 2026-09-20（续 863）
+
+- 不变量 746；语料 C723；模式 name-the-veheight-notprepare-bar；反模式 veheight-notprepare-sold-as-bundled；L10.3 第 715 条。填 L4.4 / CometBFT 档案 到了 H 不是已经 Prepare 带了扩展 not already prepare-ext / not already extend-called-is-prepare / not already in-proposal 正式三事（330 余量） / 实现表 / 05b / 共识专题 / 停链面地图。330 veheight vs prepare bundled unbundling 启动（746 item 1）。
+
 ## 2026-09-20（续 862）
 
 - 不变量 745；语料 C722；模式 name-the-query-notrequired-bar；反模式 query-notrequired-sold-as-bundled；L10.3 第 714 条。填 L4.4 / CometBFT 档案 实现了 Query 不是已经是正常运转必须有 not already required / not already filter / not already proof 正式三事（329 余量） / 实现表 / 05b / 共识专题 / 停链面地图。329 query vs replicated bundled unbundling 完成（745 item 3）。
