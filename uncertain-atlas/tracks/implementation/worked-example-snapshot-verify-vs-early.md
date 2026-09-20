@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Snapshot Verification。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「装完又对上 LastBlockAppHash 不是已经在装回当中验过 / 增量验了 chunk 不是已经是唯一可信的 AppHash / 封禁邻居不是已经没有快照 DoS」，不是 Offer 收下已经装完，也不是切进共识已经有完整历史。不要另写怎样做增量默克尔证明或怎样配受信邻居。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「装完又对上 LastBlockAppHash 不是已经在装回当中验过 / 增量验了 chunk 不是已经是唯一可信的 AppHash / 封禁邻居不是已经没有快照 DoS」，不是 Offer 收下已经装完，也不是切进共识已经有完整历史。不要另写怎样做增量默克尔证明或怎样配受信邻居。 332 snapshotverify vs early bundled unbundling 启动（752）；精读 [`worked-example-snapshotverify-notduringrestore-vs-bundled.md`](worked-example-snapshotverify-notduringrestore-vs-bundled.md)。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「快照已经对上就已经在装回当中验过、已经是唯一可信锚、已经没有有害快照」，必须分开装完又对上是不是已经在装回当中验过、增量验了 chunk 是不是已经是唯一可信的 AppHash、封禁邻居是不是已经没有快照 DoS。可以跳过「看见对上就已经早验过」。不要另写怎样做增量默克尔证明或怎样配受信邻居。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「快照已经对上就已经在装回当中验过、已经是唯一可信锚、已经没有有害快照」，必须分开装完又对上是不是已经在装回当中验过、增量验了 chunk 是不是已经是唯一可信的 AppHash、封禁邻居是不是已经没有快照 DoS。可以跳过「看见对上就已经早验过」。不要另写怎样做增量默克尔证明或怎样配受信邻居。 332 snapshotverify vs early bundled unbundling 启动（752 item 1）。
 
 ## 本页不抄
 
