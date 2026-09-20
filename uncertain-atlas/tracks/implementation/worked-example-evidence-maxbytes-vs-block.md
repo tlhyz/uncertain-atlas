@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) List of Parameters / EvidenceParams.MaxBytes。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「填了证据 MaxBytes 不是已经落在块上限下面 / > 0 不是已经盖住解绑 / 证据 MaxBytes 不是已经是块 MaxBytes」，不是先装证据已经装满交易，也不是默认证据窗已经够罚。不要另写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。 331 evidencemaxbytes vs block bundled unbundling 启动（749）；精读 [`worked-example-evidencemaxbytes-notunder-vs-bundled.md`](worked-example-evidencemaxbytes-notunder-vs-bundled.md)。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「填了证据 MaxBytes 不是已经落在块上限下面 / > 0 不是已经盖住解绑 / 证据 MaxBytes 不是已经是块 MaxBytes」，不是先装证据已经装满交易，也不是默认证据窗已经够罚。不要另写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。 331 evidencemaxbytes vs block bundled unbundling 续（749 + 750）；精读 [`worked-example-evidencemaxbytes-notunder-vs-bundled.md`](worked-example-evidencemaxbytes-notunder-vs-bundled.md)；[`worked-example-evidencemaxbytes-notunbonding-vs-bundled.md`](worked-example-evidencemaxbytes-notunbonding-vs-bundled.md)（不变量 750 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「填了证据体积上限就已经落在块上限下面、已经盖住解绑、已经是块 MaxBytes」，必须分开填了证据 MaxBytes 是不是已经落在块上限下面、> 0 是不是已经盖住解绑、证据 MaxBytes 是不是已经是块 MaxBytes。可以跳过「看见填了证据体积就已经和块上限同一把尺」。不要另写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。 331 evidencemaxbytes vs block bundled unbundling 启动（749 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「填了证据体积上限就已经落在块上限下面、已经盖住解绑、已经是块 MaxBytes」，必须分开填了证据 MaxBytes 是不是已经落在块上限下面、> 0 是不是已经盖住解绑、证据 MaxBytes 是不是已经是块 MaxBytes。可以跳过「看见填了证据体积就已经和块上限同一把尺」。不要另写怎样设 EvidenceParams.MaxBytes 或怎样算块开销。 331 evidencemaxbytes vs block bundled unbundling 续（749 + 750 item 2）。
 
 ## 本页不抄
 

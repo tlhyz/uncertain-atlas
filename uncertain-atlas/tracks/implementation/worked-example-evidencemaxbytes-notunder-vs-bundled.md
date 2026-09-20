@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看填了证据 MaxBytes 不是已经落在块上限下面 not already under-block / not already overhead-deducted / not already fits-budget 正式三事（331 余量），必须分开填了证据 MaxBytes 是不是 already under-block interchangeable / 331 evidencemaxbytes bundled interchangeable / evidencemaxbytes-sold-as-blockmax interchangeable、有上限 是不是 already overhead-deducted interchangeable、取值有顶 是不是 already fits-budget interchangeable。可以跳过「看见填了证据 MaxBytes 就已经落在块上限下面 interchangeable / 就已经扣掉开销 interchangeable / 就已经装得下预算 interchangeable」。不要另写怎样设 EvidenceParams.MaxBytes。331 evidencemaxbytes vs block bundled unbundling 在本页 item 1 启动；续 [`worked-example-evidencemaxbytes-notunbonding-vs-bundled.md`](worked-example-evidencemaxbytes-notunbonding-vs-bundled.md)（不变量 750 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看填了证据 MaxBytes 不是已经落在块上限下面 not already under-block / not already overhead-deducted / not already fits-budget 正式三事（331 余量），必须分开填了证据 MaxBytes 是不是 already under-block interchangeable / 331 evidencemaxbytes bundled interchangeable / evidencemaxbytes-sold-as-blockmax interchangeable、有上限 是不是 already overhead-deducted interchangeable、取值有顶 是不是 already fits-budget interchangeable。可以跳过「看见填了证据 MaxBytes 就已经落在块上限下面 interchangeable / 就已经扣掉开销 interchangeable / 就已经装得下预算 interchangeable」。不要另写怎样设 EvidenceParams.MaxBytes。331 evidencemaxbytes vs block bundled unbundling 在本页 item 1 启动；续 [`worked-example-evidencemaxbytes-notunbonding-vs-bundled.md`](worked-example-evidencemaxbytes-notunbonding-vs-bundled.md)（不变量 750 item 2）已写；完成见 751。
 
 ## 本页不抄
 
