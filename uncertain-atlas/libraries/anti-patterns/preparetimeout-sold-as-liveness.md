@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [preparetimeout-notlivenesslost-sold-as-bundled](preparetimeout-notlivenesslost-sold-as-bundled.md) 是又开一轮不是已经丢了活性 item 3 单句边界，不是本页 PrepareProposal 及时性 bundled 全段。
 - [preparetimeout-notfit-sold-as-bundled](preparetimeout-notfit-sold-as-bundled.md) 是填了 TimeoutPropose 不是已经装得下 item 2 单句边界，不是本页 PrepareProposal 及时性 bundled 全段。
 - [preparetimeout-notcriticalpath-sold-as-bundled](preparetimeout-notcriticalpath-sold-as-bundled.md) 是立刻整块执行不是已经离开关键路径 item 1 单句边界，不是本页 PrepareProposal 及时性 bundled 全段。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种 Prepare 及时性。

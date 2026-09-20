@@ -1,3 +1,7 @@
+## 2026-09-20（续 856）
+
+- 不变量 739；语料 C716；模式 name-the-preparetimeout-notlivenesslost-bar；反模式 preparetimeout-notlivenesslost-sold-as-bundled；L10.3 第 708 条。填 L4.4 / CometBFT 档案 又开一轮不是已经丢了活性 not already liveness-lost / not already timeout-frozen / not already final-tier 正式三事（327 余量） / 实现表 / 05b / 共识专题 / 停链面地图。327 preparetimeout vs liveness bundled unbundling 完成（739 item 3）。
+
 ## 2026-09-20（续 855）
 
 - 不变量 738；语料 C715；模式 name-the-preparetimeout-notfit-bar；反模式 preparetimeout-notfit-sold-as-bundled；L10.3 第 707 条。填 L4.4 / CometBFT 档案 填了 TimeoutPropose 不是已经装得下 not already fits-execution / not already clock-silent / not already propose-bound 正式三事（327 余量） / 实现表 / 05b / 共识专题 / 停链面地图。327 preparetimeout vs liveness bundled unbundling 续（738 item 2）。
