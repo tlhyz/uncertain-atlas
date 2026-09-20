@@ -157,6 +157,7 @@
 - [`worked-example-evidencemaxbytes-notunbonding-vs-bundled.md`](worked-example-evidencemaxbytes-notunbonding-vs-bundled.md) — >0≠盖住解绑/合法≠够罚/盖住解绑期≠窗盖住；≠331 bundled（不变量 750）
 - [`worked-example-evidencemaxbytes-notunder-vs-bundled.md`](worked-example-evidencemaxbytes-notunder-vs-bundled.md) — 填了证据MaxBytes≠落在块上限下/有上限≠扣开销/取值有顶≠装得下；≠331 bundled（不变量 749）
 - [`worked-example-evidence-maxbytes-vs-block.md`](worked-example-evidence-maxbytes-vs-block.md) — 填了证据 MaxBytes ≠ 已经落在块上限下面；> 0 ≠ 已经盖住解绑；证据 MaxBytes ≠ 已经是块 MaxBytes（不变量 331）
+- [`worked-example-snapshotverify-notduringrestore-vs-bundled.md`](worked-example-snapshotverify-notduringrestore-vs-bundled.md) — 装完又对上≠装回当中验过/Info绿了≠进了网/高度对上≠切进共识；≠332 bundled（不变量 752）
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）

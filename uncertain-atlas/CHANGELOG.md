@@ -1,3 +1,7 @@
+## 2026-09-20（续 869）
+
+- 不变量 752；语料 C729；模式 name-the-snapshotverify-notduringrestore-bar；反模式 snapshotverify-notduringrestore-sold-as-bundled；L10.3 第 721 条。填 L4.4 / CometBFT 档案 装完又对上不是已经在装回当中验过 not already incremental-verified / not already in-network / not already consensus-entered 正式三事（332 余量） / 实现表 / 05b / 共识专题 / 停链面地图。332 snapshotverify vs early bundled unbundling 启动（752 item 1）。
+
 ## 2026-09-20（续 868）
 
 - 不变量 751；语料 C728；模式 name-the-evidencemaxbytes-notblockmax-bar；反模式 evidencemaxbytes-notblockmax-sold-as-bundled；L10.3 第 720 条。填 L4.4 / CometBFT 档案 证据 MaxBytes 不是已经是块 MaxBytes not already block-maxbytes / not already minus-one / not already propose-sla 正式三事（331 余量） / 实现表 / 05b / 共识专题 / 停链面地图。331 evidencemaxbytes vs block bundled unbundling 完成（751 item 3）。

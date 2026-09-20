@@ -1,3 +1,4 @@
+- [`snapshotverify-notduringrestore-sold-as-bundled.md`](snapshotverify-notduringrestore-sold-as-bundled.md) — 装完又对上 被写成已经在装回当中验过 / Info 绿了 被写成已经进了网 / 高度对上 被写成已经切进共识（不变量 752）
 - [`evidencemaxbytes-notblockmax-sold-as-bundled.md`](evidencemaxbytes-notblockmax-sold-as-bundled.md) — 证据 MaxBytes 被写成已经是块 MaxBytes / 填了数 被写成已经是 -1 无上限 / 有上限 被写成已经是活性 SLA（不变量 751）
 - [`evidencemaxbytes-notunbonding-sold-as-bundled.md`](evidencemaxbytes-notunbonding-sold-as-bundled.md) — MaxBytes > 0 被写成已经盖住解绑 / 合法 被写成已经够罚 / 盖住解绑期 被写成已经窗盖住（不变量 750）
 - [`evidencemaxbytes-notunder-sold-as-bundled.md`](evidencemaxbytes-notunder-sold-as-bundled.md) — 填了证据 MaxBytes 被写成已经落在块上限下面 / 有上限 被写成已经扣掉开销 / 取值有顶 被写成已经装得下（不变量 749）

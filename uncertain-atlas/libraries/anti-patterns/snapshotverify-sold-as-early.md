@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [snapshotverify-notduringrestore-sold-as-bundled](snapshotverify-notduringrestore-sold-as-bundled.md) 是装完又对上不是已经在装回当中验过 item 1 单句边界，不是本页 Snapshot Verification bundled 全段。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下 ≠ 已经装完，不是本页这种进网前核对。
 - [snapshotswitch-sold-as-full-history](snapshotswitch-sold-as-full-history.md) 是装完 ≠ 已经有完整历史，不是本页。
 - [peerfilter-sold-as-connected](peerfilter-sold-as-connected.md) 是发了 addr 过滤查询 ≠ 已经收下这个人，不是本页这种快照 DoS。
