@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看还在振荡不是已经过了 h_stable not already past-hstable / not already left-pool / not already in-block 正式三事（328 余量），必须分开还在振荡 是不是 already past-hstable interchangeable / 328 checktxoscillate bundled interchangeable / checktxcode-sold-as-stable interchangeable、还在池里 是不是 already left-pool interchangeable、最终不再振荡 是不是 already in-block interchangeable。可以跳过「看见还在振荡就已经过了 h_stable interchangeable / 就已经离池 interchangeable / 就已经进了块 interchangeable」。不要另写怎样实现 CheckTx。328 checktxoscillate vs stable bundled unbundling 在本页 item 2 续（740 + 741）；续 [`worked-example-checktxoscillate-notsameb-vs-bundled.md`](worked-example-checktxoscillate-notsameb-vs-bundled.md)（不变量 742 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看还在振荡不是已经过了 h_stable not already past-hstable / not already left-pool / not already in-block 正式三事（328 余量），必须分开还在振荡 是不是 already past-hstable interchangeable / 328 checktxoscillate bundled interchangeable / checktxcode-sold-as-stable interchangeable、还在池里 是不是 already left-pool interchangeable、最终不再振荡 是不是 already in-block interchangeable。可以跳过「看见还在振荡就已经过了 h_stable interchangeable / 就已经离池 interchangeable / 就已经进了块 interchangeable」。不要另写怎样实现 CheckTx。328 checktxoscillate vs stable bundled unbundling 在本页 item 2 续（740 + 741）；续 [`worked-example-checktxoscillate-notsameb-vs-bundled.md`](worked-example-checktxoscillate-notsameb-vs-bundled.md)（不变量 742 item 3）已写；完成见 742。
 
 ## 本页不抄
 

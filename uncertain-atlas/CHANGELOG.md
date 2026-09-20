@@ -1,3 +1,7 @@
+## 2026-09-20（续 859）
+
+- 不变量 742；语料 C719；模式 name-the-checktxoscillate-notsameb-bar；反模式 checktxoscillate-notsameb-sold-as-bundled；L10.3 第 711 条。填 L4.4 / CometBFT 档案 本地不再振荡不是已经各节点同一份 b not already global-hstable / not already same-b / not already local-is-global 正式三事（328 余量） / 实现表 / 05b / 共识专题 / 停链面地图。328 checktxoscillate vs stable bundled unbundling 完成（742 item 3）。
+
 ## 2026-09-20（续 858）
 
 - 不变量 741；语料 C718；模式 name-the-checktxoscillate-nothstable-bar；反模式 checktxoscillate-nothstable-sold-as-bundled；L10.3 第 710 条。填 L4.4 / CometBFT 档案 还在振荡不是已经过了 h_stable not already past-hstable / not already left-pool / not already in-block 正式三事（328 余量） / 实现表 / 05b / 共识专题 / 停链面地图。328 checktxoscillate vs stable bundled unbundling 续（741 item 2）。

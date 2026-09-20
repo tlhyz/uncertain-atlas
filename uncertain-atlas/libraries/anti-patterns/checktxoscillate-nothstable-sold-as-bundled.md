@@ -20,4 +20,5 @@
 
 - [checktxcode-sold-as-stable](checktxcode-sold-as-stable.md) 是 CheckTx 最终不再振荡 bundled 全段，不是本页 h_stable item 2 单句边界。
 - [checktxoscillate-notcode-sold-as-bundled](checktxoscillate-notcode-sold-as-bundled.md) 是有码 item 1，不是本页还在振荡与过了 h_stable 边界。
+- [checktxoscillate-notsameb-sold-as-bundled](checktxoscillate-notsameb-sold-as-bundled.md) 是本地不再振荡同一份 b（328 item 3），不是本页 h_stable item 2 单句边界。
 - [proposed-sold-as-removed](proposed-sold-as-removed.md) 是提案收了已经从池里删掉（301），不是本页还在池里边界。

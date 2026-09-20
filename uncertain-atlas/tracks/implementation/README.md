@@ -141,6 +141,7 @@
 - [`worked-example-preparetimeout-notfit-vs-bundled.md`](worked-example-preparetimeout-notfit-vs-bundled.md) — 填了TimeoutPropose≠装得下/同步期≠钟不响/钟响prevote nil≠提议绑死；≠327 bundled（不变量 738）
 - [`worked-example-preparetimeout-notcriticalpath-vs-bundled.md`](worked-example-preparetimeout-notcriticalpath-vs-bundled.md) — 立刻执行≠离开关键路径/执行回≠不挡提议钟/候选写进内存≠交差；≠327 bundled（不变量 737）
 - [`worked-example-prepare-timeout-vs-liveness.md`](worked-example-prepare-timeout-vs-liveness.md) — 立刻整块执行 ≠ 已经离开提议超时的关键路径；填了 TimeoutPropose ≠ 已经装得下；又开一轮 ≠ 已经丢了活性（不变量 327）
+- [`worked-example-checktxoscillate-notsameb-vs-bundled.md`](worked-example-checktxoscillate-notsameb-vs-bundled.md) — 本地h_p,stable≠全局同一高/本节点不再振荡≠同一份b/本地化≠本地即全局；≠328 bundled（不变量 742）
 - [`worked-example-checktxoscillate-nothstable-vs-bundled.md`](worked-example-checktxoscillate-nothstable-vs-bundled.md) — 还在振荡≠过了h_stable/还在池里≠离池/最终不再振荡≠进块；≠328 bundled（不变量 741）
 - [`worked-example-checktxoscillate-notcode-vs-bundled.md`](worked-example-checktxoscillate-notcode-vs-bundled.md) — 回了不同码≠有CheckTxCode/集合在≠能说OK/回了两次≠单元素；≠328 bundled（不变量 740）
 - [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
