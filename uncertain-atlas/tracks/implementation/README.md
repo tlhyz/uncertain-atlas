@@ -157,6 +157,7 @@
 - [`worked-example-evidencemaxbytes-notunbonding-vs-bundled.md`](worked-example-evidencemaxbytes-notunbonding-vs-bundled.md) — >0≠盖住解绑/合法≠够罚/盖住解绑期≠窗盖住；≠331 bundled（不变量 750）
 - [`worked-example-evidencemaxbytes-notunder-vs-bundled.md`](worked-example-evidencemaxbytes-notunder-vs-bundled.md) — 填了证据MaxBytes≠落在块上限下/有上限≠扣开销/取值有顶≠装得下；≠331 bundled（不变量 749）
 - [`worked-example-evidence-maxbytes-vs-block.md`](worked-example-evidence-maxbytes-vs-block.md) — 填了证据 MaxBytes ≠ 已经落在块上限下面；> 0 ≠ 已经盖住解绑；证据 MaxBytes ≠ 已经是块 MaxBytes（不变量 331）
+- [`worked-example-snapshotverify-notnodod-vs-bundled.md`](worked-example-snapshotverify-notnodod-vs-bundled.md) — 封禁了≠没有快照DoS/配了受信名单≠过滤已收下/能挡一家≠挡全有害快照；≠332 bundled（不变量 754）
 - [`worked-example-snapshotverify-notuniqueapphash-vs-bundled.md`](worked-example-snapshotverify-notuniqueapphash-vs-bundled.md) — 增量验chunk≠唯一可信AppHash/checksum过了≠元数据不能伪造/证明绿了≠代替最后Info；≠332 bundled（不变量 753）
 - [`worked-example-snapshotverify-notduringrestore-vs-bundled.md`](worked-example-snapshotverify-notduringrestore-vs-bundled.md) — 装完又对上≠装回当中验过/Info绿了≠进了网/高度对上≠切进共识；≠332 bundled（不变量 752）
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）

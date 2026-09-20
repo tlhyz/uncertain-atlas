@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看增量验了 chunk 不是已经是唯一可信的 AppHash not already unique-apphash / not already metadata-unforgeable / not already replaces-final-info 正式三事（332 余量），必须分开增量验了 chunk 是不是 already unique-apphash interchangeable / 332 snapshotverify bundled interchangeable / snapshotverify-sold-as-early interchangeable、checksum 过了 是不是 already metadata-unforgeable interchangeable、证明绿了 是不是 already replaces-final-info interchangeable。可以跳过「看见增量验了 chunk 就已经是唯一可信的 AppHash interchangeable / 就已经不能伪造元数据 interchangeable / 就已经代替最后那次 Info interchangeable」。不要另写怎样做增量默克尔证明。332 snapshotverify vs early bundled unbundling 在本页 item 2 续（752 + 753）；续 [`worked-example-snapshotverify-notnodod-vs-bundled.md`](worked-example-snapshotverify-notnodod-vs-bundled.md)（不变量 754 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看增量验了 chunk 不是已经是唯一可信的 AppHash not already unique-apphash / not already metadata-unforgeable / not already replaces-final-info 正式三事（332 余量），必须分开增量验了 chunk 是不是 already unique-apphash interchangeable / 332 snapshotverify bundled interchangeable / snapshotverify-sold-as-early interchangeable、checksum 过了 是不是 already metadata-unforgeable interchangeable、证明绿了 是不是 already replaces-final-info interchangeable。可以跳过「看见增量验了 chunk 就已经是唯一可信的 AppHash interchangeable / 就已经不能伪造元数据 interchangeable / 就已经代替最后那次 Info interchangeable」。不要另写怎样做增量默克尔证明。332 snapshotverify vs early bundled unbundling 在本页 item 2 续（752 + 753）；续 [`worked-example-snapshotverify-notnodod-vs-bundled.md`](worked-example-snapshotverify-notnodod-vs-bundled.md)（不变量 754 item 3）已写；完成见 754。
 
 ## 本页不抄
 

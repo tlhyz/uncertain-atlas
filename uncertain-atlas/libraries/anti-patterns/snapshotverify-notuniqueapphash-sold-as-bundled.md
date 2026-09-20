@@ -20,4 +20,5 @@
 
 - [snapshotverify-sold-as-early](snapshotverify-sold-as-early.md) 是 Snapshot Verification bundled 全段，不是本页唯一可信 AppHash item 2 单句边界。
 - [snapshotverify-notduringrestore-sold-as-bundled](snapshotverify-notduringrestore-sold-as-bundled.md) 是装完又对上 item 1，不是本页装回当中增量验边界。
+- [snapshotverify-notnodod-sold-as-bundled](snapshotverify-notnodod-sold-as-bundled.md) 是封禁邻居（332 item 3），不是本页唯一可信 AppHash item 2 单句边界。
 - [snapshot-sold-as-identical](snapshot-sold-as-identical.md) 是快照身份边界，不是本页唯一可信锚边界。

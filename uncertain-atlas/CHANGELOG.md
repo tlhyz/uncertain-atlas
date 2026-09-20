@@ -1,3 +1,7 @@
+## 2026-09-20（续 871）
+
+- 不变量 754；语料 C731；模式 name-the-snapshotverify-notnodod-bar；反模式 snapshotverify-notnodod-sold-as-bundled；L10.3 第 723 条。填 L4.4 / CometBFT 档案 封禁邻居不是已经没有快照 DoS not already no-snapshot-dos / not already trusted-list-is-accept / not already blocks-all-bad 正式三事（332 余量） / 实现表 / 05b / 共识专题 / 停链面地图。332 snapshotverify vs early bundled unbundling 完成（754 item 3）。
+
 ## 2026-09-20（续 870）
 
 - 不变量 753；语料 C730；模式 name-the-snapshotverify-notuniqueapphash-bar；反模式 snapshotverify-notuniqueapphash-sold-as-bundled；L10.3 第 722 条。填 L4.4 / CometBFT 档案 增量验了 chunk 不是已经是唯一可信的 AppHash not already unique-apphash / not already metadata-unforgeable / not already replaces-final-info 正式三事（332 余量） / 实现表 / 05b / 共识专题 / 停链面地图。332 snapshotverify vs early bundled unbundling 续（753 item 2）。

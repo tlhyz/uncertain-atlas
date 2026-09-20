@@ -1,3 +1,4 @@
+- [`snapshotverify-notnodod-sold-as-bundled.md`](snapshotverify-notnodod-sold-as-bundled.md) — 封禁了 被写成已经没有快照 DoS / 配了受信名单 被写成已经是过滤已经收下 / 能挡一家 被写成已经能挡所有有害快照（不变量 754）
 - [`snapshotverify-notuniqueapphash-sold-as-bundled.md`](snapshotverify-notuniqueapphash-sold-as-bundled.md) — 增量验了 chunk 被写成已经是唯一可信的 AppHash / checksum 过了 被写成已经不能伪造元数据 / 证明绿了 被写成已经代替最后那次 Info（不变量 753）
 - [`snapshotverify-notduringrestore-sold-as-bundled.md`](snapshotverify-notduringrestore-sold-as-bundled.md) — 装完又对上 被写成已经在装回当中验过 / Info 绿了 被写成已经进了网 / 高度对上 被写成已经切进共识（不变量 752）
 - [`evidencemaxbytes-notblockmax-sold-as-bundled.md`](evidencemaxbytes-notblockmax-sold-as-bundled.md) — 证据 MaxBytes 被写成已经是块 MaxBytes / 填了数 被写成已经是 -1 无上限 / 有上限 被写成已经是活性 SLA（不变量 751）
