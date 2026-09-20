@@ -19,5 +19,6 @@
 ## 和相邻反模式
 
 - [preparetimeout-sold-as-liveness](preparetimeout-sold-as-liveness.md) 是 PrepareProposal 及时性 bundled 全段，不是本页关键路径 item 1 单句边界。
+- [preparetimeout-notfit-sold-as-bundled](preparetimeout-notfit-sold-as-bundled.md) 是填了 TimeoutPropose 装得下（327 item 2），不是本页关键路径 item 1 单句边界。
 - [proposetimeout-sold-as-process](proposetimeout-sold-as-process.md) 是提议超时另一边界，不是本页立刻整块执行站在关键路径上。
 - [peerfilter-notenginepath-sold-as-bundled](peerfilter-notenginepath-sold-as-bundled.md) 是 /store 路径（326 item 3），不是本页 Prepare 及时性边界。
