@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看同一高度回了不同码不是已经有了 CheckTxCode not already has-checktxcode / not already ok-defined / not already singleton-set 正式三事（328 余量），必须分开同一高度回了不同码 是不是 already has-checktxcode interchangeable / 328 checktxoscillate bundled interchangeable / checktxcode-sold-as-stable interchangeable、集合在 是不是 already ok-defined interchangeable、回了两次 是不是 already singleton-set interchangeable。可以跳过「看见同一高度回了不同码就已经有了 CheckTxCode interchangeable / 就已经能说 OK interchangeable / 就已经是单元素 interchangeable」。不要另写怎样实现 CheckTx。328 checktxoscillate vs stable bundled unbundling 在本页 item 1 启动；续 [`worked-example-checktxoscillate-nothstable-vs-bundled.md`](worked-example-checktxoscillate-nothstable-vs-bundled.md)（不变量 741 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看同一高度回了不同码不是已经有了 CheckTxCode not already has-checktxcode / not already ok-defined / not already singleton-set 正式三事（328 余量），必须分开同一高度回了不同码 是不是 already has-checktxcode interchangeable / 328 checktxoscillate bundled interchangeable / checktxcode-sold-as-stable interchangeable、集合在 是不是 already ok-defined interchangeable、回了两次 是不是 already singleton-set interchangeable。可以跳过「看见同一高度回了不同码就已经有了 CheckTxCode interchangeable / 就已经能说 OK interchangeable / 就已经是单元素 interchangeable」。不要另写怎样实现 CheckTx。328 checktxoscillate vs stable bundled unbundling 在本页 item 1 启动；续 [`worked-example-checktxoscillate-nothstable-vs-bundled.md`](worked-example-checktxoscillate-nothstable-vs-bundled.md)（不变量 741 item 2）已写；完成见 742。
 
 ## 本页不抄
 

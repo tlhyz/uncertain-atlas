@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [checktxoscillate-nothstable-sold-as-bundled](checktxoscillate-nothstable-sold-as-bundled.md) 是还在振荡不是已经过了 h_stable item 2 单句边界，不是本页 CheckTx 最终不再振荡 bundled 全段。
 - [checktxoscillate-notcode-sold-as-bundled](checktxoscillate-notcode-sold-as-bundled.md) 是同一高度回了不同码不是已经有了 CheckTxCode item 1 单句边界，不是本页 CheckTx 最终不再振荡 bundled 全段。
 - [checktxstate-sold-as-execute](checktxstate-sold-as-execute.md) 是 CheckTxState ≠ 已经是 ExecuteTxState，不是本页这种最终不再振荡。
 - [proposed-sold-as-removed](proposed-sold-as-removed.md) 是提案收了 ≠ 已经从池里删掉，不是本页。

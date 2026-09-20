@@ -1,3 +1,4 @@
+- [`checktxoscillate-nothstable-sold-as-bundled.md`](checktxoscillate-nothstable-sold-as-bundled.md) — 还在振荡 被写成已经过了 h_stable / 还在池里 被写成已经离池 / 最终不再振荡 被写成已经进了块（不变量 741）
 - [`checktxoscillate-notcode-sold-as-bundled.md`](checktxoscillate-notcode-sold-as-bundled.md) — 同一高度回了不同码 被写成已经有了 CheckTxCode / 集合在 被写成已经能说 OK / 回了两次 被写成已经是单元素（不变量 740）
 - [`preparetimeout-notlivenesslost-sold-as-bundled.md`](preparetimeout-notlivenesslost-sold-as-bundled.md) — 又开一轮 被写成已经丢了活性 / TimeoutPropose 只是初值 被写成已经超时不再涨 / 看见初值 被写成已经是最后那一档（不变量 739）
 - [`preparetimeout-notfit-sold-as-bundled.md`](preparetimeout-notfit-sold-as-bundled.md) — 填了 TimeoutPropose 被写成已经装得下 / 同步期 被写成已经钟不响 / 钟一响就 prevote nil 被写成已经把提议绑死（不变量 738）

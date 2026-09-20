@@ -1,3 +1,7 @@
+## 2026-09-20（续 858）
+
+- 不变量 741；语料 C718；模式 name-the-checktxoscillate-nothstable-bar；反模式 checktxoscillate-nothstable-sold-as-bundled；L10.3 第 710 条。填 L4.4 / CometBFT 档案 还在振荡不是已经过了 h_stable not already past-hstable / not already left-pool / not already in-block 正式三事（328 余量） / 实现表 / 05b / 共识专题 / 停链面地图。328 checktxoscillate vs stable bundled unbundling 续（741 item 2）。
+
 ## 2026-09-20（续 857）
 
 - 不变量 740；语料 C717；模式 name-the-checktxoscillate-notcode-bar；反模式 checktxoscillate-notcode-sold-as-bundled；L10.3 第 709 条。填 L4.4 / CometBFT 档案 同一高度回了不同码不是已经有了 CheckTxCode not already has-checktxcode / not already ok-defined / not already singleton-set 正式三事（328 余量） / 实现表 / 05b / 共识专题 / 停链面地图。328 checktxoscillate vs stable bundled unbundling 启动（740 item 1）。
