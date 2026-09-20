@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看装完又对上不是已经在装回当中验过 not already incremental-verified / not already in-network / not already consensus-entered 正式三事（332 余量），必须分开装完又对上 是不是 already incremental-verified interchangeable / 332 snapshotverify bundled interchangeable / snapshotverify-sold-as-early interchangeable、Info 绿了 是不是 already in-network interchangeable、高度对上 是不是 already consensus-entered interchangeable。可以跳过「看见装完又对上就已经在装回当中验过 interchangeable / 就已经进了网 interchangeable / 就已经切进共识 interchangeable」。不要另写怎样做增量默克尔证明。332 snapshotverify vs early bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotverify-notuniqueapphash-vs-bundled.md`](worked-example-snapshotverify-notuniqueapphash-vs-bundled.md)（不变量 753 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看装完又对上不是已经在装回当中验过 not already incremental-verified / not already in-network / not already consensus-entered 正式三事（332 余量），必须分开装完又对上 是不是 already incremental-verified interchangeable / 332 snapshotverify bundled interchangeable / snapshotverify-sold-as-early interchangeable、Info 绿了 是不是 already in-network interchangeable、高度对上 是不是 already consensus-entered interchangeable。可以跳过「看见装完又对上就已经在装回当中验过 interchangeable / 就已经进了网 interchangeable / 就已经切进共识 interchangeable」。不要另写怎样做增量默克尔证明。332 snapshotverify vs early bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotverify-notuniqueapphash-vs-bundled.md`](worked-example-snapshotverify-notuniqueapphash-vs-bundled.md)（不变量 753 item 2）已写；完成见 754。
 
 ## 本页不抄
 
