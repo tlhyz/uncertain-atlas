@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirement 1 [`PrepareProposal`, timeliness]。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「立刻整块执行不是已经离开关键路径 / 填了 TimeoutPropose 不是已经装得下 / 又开一轮不是已经丢了活性」，不是四门已经结算，也不是本地超时已经是最终性。不要另写怎样设 TimeoutPropose 或怎样抄默认秒数。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「立刻整块执行不是已经离开关键路径 / 填了 TimeoutPropose 不是已经装得下 / 又开一轮不是已经丢了活性」，不是四门已经结算，也不是本地超时已经是最终性。不要另写怎样设 TimeoutPropose 或怎样抄默认秒数。 327 preparetimeout vs liveness bundled unbundling 启动（737）；精读 [`worked-example-preparetimeout-notcriticalpath-vs-bundled.md`](worked-example-preparetimeout-notcriticalpath-vs-bundled.md)（不变量 737 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「立刻执行就已经来得及、超时已经够、再开一轮就已经停」，必须分开立刻整块执行是不是已经离开关键路径、填了 TimeoutPropose 是不是已经装得下、又开一轮是不是已经丢了活性。可以跳过「看见立刻执行了就已经离开关键路径」。不要另写怎样设 TimeoutPropose 或怎样抄默认秒数。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「立刻执行就已经来得及、超时已经够、再开一轮就已经停」，必须分开立刻整块执行是不是已经离开关键路径、填了 TimeoutPropose 是不是已经装得下、又开一轮是不是已经丢了活性。可以跳过「看见立刻执行了就已经离开关键路径」。不要另写怎样设 TimeoutPropose 或怎样抄默认秒数。 327 preparetimeout vs liveness bundled unbundling 启动（737 item 1）。
 
 ## 本页不抄
 
