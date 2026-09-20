@@ -20,4 +20,5 @@
 
 - [snapshotverify-sold-as-early](snapshotverify-sold-as-early.md) 是 Snapshot Verification bundled 全段，不是本页装完又对上 item 1 单句边界。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下 ≠ 已经装完（321），不是本页进网前核对边界。
+- [snapshotverify-notuniqueapphash-sold-as-bundled](snapshotverify-notuniqueapphash-sold-as-bundled.md) 是唯一可信 AppHash（332 item 2），不是本页装完又对上 item 1 单句边界。
 - [snapshotswitch-sold-as-full-history](snapshotswitch-sold-as-full-history.md) 是装完 ≠ 已经有完整历史（323），不是本页高度对上单句边界。
