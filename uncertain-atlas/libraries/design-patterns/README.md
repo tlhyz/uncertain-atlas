@@ -1,3 +1,4 @@
+- [`name-the-peerfilter-notaccepted-bar.md`](name-the-peerfilter-notaccepted-bar.md) — 发了 addr 过滤查询不是已经收下这个人 not already accepted / not already query-passed / not already id-asked 正式三事（326 余量）（不变量 734）
 - [`name-the-queryproof-notfinalapphash-bar.md`](name-the-queryproof-notfinalapphash-bar.md) — 一层 ProofOp 的根不是已经对上最终 AppHash not already next-layer / not already final-apphash / not already blockhash-compared 正式三事（325 余量）（不变量 733）
 - [`name-the-queryproof-notverified-bar.md`](name-the-queryproof-notverified-bar.md) — Query 回了 Proof 不是已经对上 AppHash not already verified / not already same-tree / not already prove-absence 正式三事（325 余量）（不变量 732）
 - [`name-the-queryproof-nottxmerkle-bar.md`](name-the-queryproof-nottxmerkle-bar.md) — 头上有 AppHash 不是已经是交易默克尔 not already tx-merkle / not already validators-hash / not already separate-app-state 正式三事（325 余量）（不变量 731）
