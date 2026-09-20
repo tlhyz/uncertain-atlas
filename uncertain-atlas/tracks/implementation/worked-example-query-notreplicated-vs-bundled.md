@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Query 回了不是已经复制到各节点 not already replicated / not already consensus-passed / not already network-same 正式三事（329 余量），必须分开 Query 回了 是不是 already replicated interchangeable / 329 query bundled interchangeable / query-sold-as-replicated interchangeable、RPC 能查 是不是 already consensus-passed interchangeable、查的是本节点本地 是不是 already network-same interchangeable。可以跳过「看见 Query 回了就已经复制到各节点 interchangeable / 就已经过了共识 interchangeable / 就已经全网同一份 interchangeable」。不要另写怎样写 Query。329 query vs replicated bundled unbundling 在本页 item 1 启动；续 [`worked-example-query-notfresh-vs-bundled.md`](worked-example-query-notfresh-vs-bundled.md)（不变量 744 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Query 回了不是已经复制到各节点 not already replicated / not already consensus-passed / not already network-same 正式三事（329 余量），必须分开 Query 回了 是不是 already replicated interchangeable / 329 query bundled interchangeable / query-sold-as-replicated interchangeable、RPC 能查 是不是 already consensus-passed interchangeable、查的是本节点本地 是不是 already network-same interchangeable。可以跳过「看见 Query 回了就已经复制到各节点 interchangeable / 就已经过了共识 interchangeable / 就已经全网同一份 interchangeable」。不要另写怎样写 Query。329 query vs replicated bundled unbundling 在本页 item 1 启动；续 [`worked-example-query-notfresh-vs-bundled.md`](worked-example-query-notfresh-vs-bundled.md)（不变量 744 item 2）已写；完成见 745。
 
 ## 本页不抄
 

@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Query。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「Query 回了不是已经复制到各节点 / 查到了不是已经新鲜 / 实现了 Query 不是已经是正常运转必须有」，不是 QueryState 已经是 ExecuteTxState，也不是 Query 回了 Proof 已经对上 AppHash。不要另写怎样写 Query 或怎样配 RPC。 329 query vs replicated bundled unbundling 启动（743）；精读 [`worked-example-query-notreplicated-vs-bundled.md`](worked-example-query-notreplicated-vs-bundled.md)。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行。本页是「Query 回了不是已经复制到各节点 / 查到了不是已经新鲜 / 实现了 Query 不是已经是正常运转必须有」，不是 QueryState 已经是 ExecuteTxState，也不是 Query 回了 Proof 已经对上 AppHash。不要另写怎样写 Query 或怎样配 RPC。 329 query vs replicated bundled unbundling 续（743 + 744）；精读 [`worked-example-query-notreplicated-vs-bundled.md`](worked-example-query-notreplicated-vs-bundled.md)；[`worked-example-query-notfresh-vs-bundled.md`](worked-example-query-notfresh-vs-bundled.md)（不变量 744 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「查到了就已经共识、已经新鲜、已经必须实现」，必须分开 Query 回了是不是已经复制到各节点、查到了是不是已经新鲜、实现了 Query 是不是已经是正常运转必须有。可以跳过「看见查到了就已经共识」。不要另写怎样写 Query 或怎样配 RPC。 329 query vs replicated bundled unbundling 启动（743 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「查到了就已经共识、已经新鲜、已经必须实现」，必须分开 Query 回了是不是已经复制到各节点、查到了是不是已经新鲜、实现了 Query 是不是已经是正常运转必须有。可以跳过「看见查到了就已经共识」。不要另写怎样写 Query 或怎样配 RPC。 329 query vs replicated bundled unbundling 续（743 + 744 item 2）。
 
 ## 本页不抄
 
