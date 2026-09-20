@@ -1,3 +1,4 @@
+- [`name-the-query-notreplicated-bar.md`](name-the-query-notreplicated-bar.md) — Query 回了不是已经复制到各节点 not already replicated / not already consensus-passed / not already network-same 正式三事（329 余量）（不变量 743）
 - [`name-the-checktxoscillate-notsameb-bar.md`](name-the-checktxoscillate-notsameb-bar.md) — 本地不再振荡不是已经各节点同一份 b not already global-hstable / not already same-b / not already local-is-global 正式三事（328 余量）（不变量 742）
 - [`name-the-checktxoscillate-nothstable-bar.md`](name-the-checktxoscillate-nothstable-bar.md) — 还在振荡不是已经过了 h_stable not already past-hstable / not already left-pool / not already in-block 正式三事（328 余量）（不变量 741）
 - [`name-the-checktxoscillate-notcode-bar.md`](name-the-checktxoscillate-notcode-bar.md) — 同一高度回了不同码不是已经有了 CheckTxCode not already has-checktxcode / not already ok-defined / not already singleton-set 正式三事（328 余量）（不变量 740）

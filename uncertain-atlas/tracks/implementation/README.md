@@ -145,6 +145,7 @@
 - [`worked-example-checktxoscillate-nothstable-vs-bundled.md`](worked-example-checktxoscillate-nothstable-vs-bundled.md) — 还在振荡≠过了h_stable/还在池里≠离池/最终不再振荡≠进块；≠328 bundled（不变量 741）
 - [`worked-example-checktxoscillate-notcode-vs-bundled.md`](worked-example-checktxoscillate-notcode-vs-bundled.md) — 回了不同码≠有CheckTxCode/集合在≠能说OK/回了两次≠单元素；≠328 bundled（不变量 740）
 - [`worked-example-checktx-oscillate-vs-stable.md`](worked-example-checktx-oscillate-vs-stable.md) — 同一高度回了不同码 ≠ 已经有了 CheckTxCode；还在振荡 ≠ 已经过了 h_stable；本地不再振荡 ≠ 已经各节点同一份 b（不变量 328）
+- [`worked-example-query-notreplicated-vs-bundled.md`](worked-example-query-notreplicated-vs-bundled.md) — Query回了≠已经复制到各节点/RPC能查≠已经过了共识/本节点本地≠全网同一份；≠329 bundled（不变量 743）
 - [`worked-example-query-vs-replicated.md`](worked-example-query-vs-replicated.md) — Query 回了 ≠ 已经复制到各节点；查到了 ≠ 已经新鲜；实现了 Query ≠ 已经是正常运转必须有（不变量 329）
 - [`worked-example-ve-height-vs-prepare.md`](worked-example-ve-height-vs-prepare.md) — 到了 H ≠ 已经 Prepare 带了扩展；H+1 带了扩展 ≠ 已经是本高度刚签的；h < H 带了扩展 ≠ 已经合法（不变量 330）
 - [`worked-example-evidence-maxbytes-vs-block.md`](worked-example-evidence-maxbytes-vs-block.md) — 填了证据 MaxBytes ≠ 已经落在块上限下面；> 0 ≠ 已经盖住解绑；证据 MaxBytes ≠ 已经是块 MaxBytes（不变量 331）
