@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看到了 H 不是已经 Prepare 带了扩展 not already prepare-ext / not already extend-called-is-prepare / not already in-proposal 正式三事（330 余量），必须分开到了 H 是不是 already prepare-ext interchangeable / 330 veheight bundled interchangeable / veheight-sold-as-prepared interchangeable、已经叫了 ExtendVote 是不是 already extend-called-is-prepare interchangeable、会调 VerifyVoteExtension 是不是 already in-proposal interchangeable。可以跳过「看见到了 H 就已经 Prepare 带了扩展 interchangeable / 就已经写进本高提议 interchangeable / 就已经在提议里 interchangeable」。不要另写怎样设 VoteExtensionsEnableHeight。330 veheight vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-veheight-notthissigned-vs-bundled.md`](worked-example-veheight-notthissigned-vs-bundled.md)（不变量 747 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看到了 H 不是已经 Prepare 带了扩展 not already prepare-ext / not already extend-called-is-prepare / not already in-proposal 正式三事（330 余量），必须分开到了 H 是不是 already prepare-ext interchangeable / 330 veheight bundled interchangeable / veheight-sold-as-prepared interchangeable、已经叫了 ExtendVote 是不是 already extend-called-is-prepare interchangeable、会调 VerifyVoteExtension 是不是 already in-proposal interchangeable。可以跳过「看见到了 H 就已经 Prepare 带了扩展 interchangeable / 就已经写进本高提议 interchangeable / 就已经在提议里 interchangeable」。不要另写怎样设 VoteExtensionsEnableHeight。330 veheight vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-veheight-notthissigned-vs-bundled.md`](worked-example-veheight-notthissigned-vs-bundled.md)（不变量 747 item 2）已写；完成见 748。
 
 ## 本页不抄
 

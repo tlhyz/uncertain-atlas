@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [veheight-notthissigned-sold-as-bundled](veheight-notthissigned-sold-as-bundled.md) 是本高度刚签（330 item 2），不是本页到了 H item 1 单句边界。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是 VoteExtensionsEnableHeight bundled 全段，不是本页到了 H item 1 单句边界。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收整张预提交（34），不是本页 Prepare 带扩展边界。
 - [query-notrequired-sold-as-bundled](query-notrequired-sold-as-bundled.md) 是实现了 Query 不是已经是正常运转必须有（329 item 3），不是本页到了 H 边界。

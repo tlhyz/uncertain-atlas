@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [veheight-notprepare-sold-as-bundled](veheight-notprepare-sold-as-bundled.md) 是到了 H 不是已经 Prepare 带了扩展 item 1 单句边界，不是本页 VoteExtensionsEnableHeight bundled 全段。
+- [veheight-notthissigned-sold-as-bundled](veheight-notthissigned-sold-as-bundled.md) 是 H+1 带了扩展不是已经是本高度刚签 item 2 单句边界，不是本页 VoteExtensionsEnableHeight bundled 全段。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收整张预提交、`s_h` 不得依赖本高收到的 *e*，不是本页这种 H / H+1 切换。
 - [enable-height-sold-as-safe](enable-height-sold-as-safe.md) 是治理改 enable-height 会让未升级节点 panic，不是本页。
 - [extension-sold-as-voting-power](extension-sold-as-voting-power.md) 是提议者注入的扩展不是投票权，不是本页。
