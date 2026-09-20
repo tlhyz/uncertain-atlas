@@ -1,3 +1,7 @@
+## 2026-09-20（续 864）
+
+- 不变量 747；语料 C724；模式 name-the-veheight-notthissigned-bar；反模式 veheight-notthissigned-sold-as-bundled；L10.3 第 716 条。填 L4.4 / CometBFT 档案 H+1 带了扩展不是已经是本高度刚签的 not already this-height-signed / not already local-e / not already same-h-e 正式三事（330 余量） / 实现表 / 05b / 共识专题 / 停链面地图。330 veheight vs prepare bundled unbundling 续（747 item 2）。
+
 ## 2026-09-20（续 863）
 
 - 不变量 746；语料 C723；模式 name-the-veheight-notprepare-bar；反模式 veheight-notprepare-sold-as-bundled；L10.3 第 715 条。填 L4.4 / CometBFT 档案 到了 H 不是已经 Prepare 带了扩展 not already prepare-ext / not already extend-called-is-prepare / not already in-proposal 正式三事（330 余量） / 实现表 / 05b / 共识专题 / 停链面地图。330 veheight vs prepare bundled unbundling 启动（746 item 1）。
