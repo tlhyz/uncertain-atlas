@@ -1,3 +1,4 @@
+- [`name-the-veheight-notprepare-bar.md`](name-the-veheight-notprepare-bar.md) — 到了 H 不是已经 Prepare 带了扩展 not already prepare-ext / not already extend-called-is-prepare / not already in-proposal 正式三事（330 余量）（不变量 746）
 - [`name-the-query-notrequired-bar.md`](name-the-query-notrequired-bar.md) — 实现了 Query 不是已经是正常运转必须有 not already required / not already filter / not already proof 正式三事（329 余量）（不变量 745）
 - [`name-the-query-notfresh-bar.md`](name-the-query-notfresh-bar.md) — 查到了不是已经新鲜 not already fresh / not already tip / not already decided-state 正式三事（329 余量）（不变量 744）
 - [`name-the-query-notreplicated-bar.md`](name-the-query-notreplicated-bar.md) — Query 回了不是已经复制到各节点 not already replicated / not already consensus-passed / not already network-same 正式三事（329 余量）（不变量 743）
