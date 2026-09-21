@@ -1,3 +1,7 @@
+## 2026-09-21（续 880）
+
+- 不变量 763；语料 C740；模式 name-the-precision-noteternal-bar；反模式 precision-noteternal-sold-as-bundled；L10.3 第 732 条。填 L4.4 / CometBFT 档案 用于 PBTS 不是已经是永恒常数 not already eternal-constant / not already bft-median / not already clock-adjust 正式三事（336 余量） / 实现表 / 05b / 共识专题 / 停链面地图。336 precision vs msgdelay bundled unbundling 完成（763 item 3）。
+
 ## 2026-09-21（续 879）
 
 - 不变量 762；语料 C739；模式 name-the-precision-notpbts-bar；反模式 precision-notpbts-sold-as-bundled；L10.3 第 731 条。填 L4.4 / CometBFT 档案 填了两个不是已经启用 PBTS not already pbts-enabled / not already switched / not already cannot-off 正式三事（336 余量） / 实现表 / 05b / 共识专题 / 停链面地图。336 precision vs msgdelay bundled unbundling 续（762 item 2）。
