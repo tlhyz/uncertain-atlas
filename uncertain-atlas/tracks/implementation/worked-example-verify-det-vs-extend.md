@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirements 7–8 [`VerifyVoteExtension`, determinism]。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 ExtendVote 那样依赖其它值 / 两边对任意扩展同一裁决不是已经只对诚实扩展同一裁决 / Verify 非确定会伤活性不是已经丢了安全性」，不是 ExtendVote 没有确定性要求，也不是验签拒收已经是块非法。不要另写怎样写 VerifyVoteExtension。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 ExtendVote 那样依赖其它值 / 两边对任意扩展同一裁决不是已经只对诚实扩展同一裁决 / Verify 非确定会伤活性不是已经丢了安全性」，不是 ExtendVote 没有确定性要求，也不是验签拒收已经是块非法。不要另写怎样写 VerifyVoteExtension。 341 verifydet vs extend bundled unbundling 启动（776）；精读 [`worked-example-verify-notlikeextend-vs-bundled.md`](worked-example-verify-notlikeextend-vs-bundled.md)（不变量 776 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 ExtendVote 那样、已经只对诚实扩展、已经丢了安全性」，必须分开 Verify 必须只依赖扩展、这块和上一份状态是不是已经可以像 ExtendVote 那样依赖其它值、两边对任意扩展同一裁决是不是已经只对诚实扩展同一裁决、Verify 非确定会伤活性是不是已经丢了安全性。可以跳过「看见必须确定就已经可以像 ExtendVote 那样」。不要把 SHOULD Accept 当不确定已经拒坏扩展。不要另写怎样写 VerifyVoteExtension。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 ExtendVote 那样、已经只对诚实扩展、已经丢了安全性」，必须分开 Verify 必须只依赖扩展、这块和上一份状态是不是已经可以像 ExtendVote 那样依赖其它值、两边对任意扩展同一裁决是不是已经只对诚实扩展同一裁决、Verify 非确定会伤活性是不是已经丢了安全性。可以跳过「看见必须确定就已经可以像 ExtendVote 那样」。不要把 SHOULD Accept 当不确定已经拒坏扩展。不要另写怎样写 VerifyVoteExtension。 341 verifydet vs extend bundled unbundling 启动（776 item 1）；续 [`worked-example-verify-nothonestonly-vs-bundled.md`](worked-example-verify-nothonestonly-vs-bundled.md)（不变量 777 item 2）。
 
 ## 本页不抄
 

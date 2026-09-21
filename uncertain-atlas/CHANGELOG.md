@@ -1,3 +1,7 @@
+## 2026-09-21（续 893）
+
+- 不变量 776；语料 C753；模式 name-the-verify-notlikeextend-bar；反模式 verify-notlikeextend-sold-as-bundled；L10.3 第 745 条。填 L4.4 / CometBFT 档案 Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 ExtendVote 那样依赖其它值 not already like-extend / not already same-as-nondet / not already settled 正式三事（341 余量） / 实现表 / 05b / 共识专题 / 停链面地图。341 verifydet vs extend bundled unbundling 启动（776 item 1）。
+
 ## 2026-09-21（续 892）
 
 - 不变量 775；语料 C752；模式 name-the-process-notlostsafety-bar；反模式 process-notlostsafety-sold-as-bundled；L10.3 第 744 条。填 L4.4 / CometBFT 档案 Process 非确定 bug 没有现成解法不是已经丢了安全性 not already lost-safety / not already has-patch / not already must-reject 正式三事（340 余量） / 实现表 / 05b / 共识专题 / 停链面地图。340 processdet vs prepare bundled unbundling 完成（775 item 3）。

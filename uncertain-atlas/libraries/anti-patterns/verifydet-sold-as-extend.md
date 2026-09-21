@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [verify-notlikeextend-sold-as-bundled](verify-notlikeextend-sold-as-bundled.md) 是 Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 ExtendVote 那样依赖其它值 item 1 单句边界，不是本页 VerifyVoteExtension 确定性 bundled 全段。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 ExtendVote 没有确定性要求 ≠ 已经必须确定，不是本页这种 Verify 必须确定 ≠ 已经可以像 ExtendVote 那样。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收已经是块非法，不是本页这种对任意扩展同判 ≠ 已经只对诚实扩展。
 - [processdet-sold-as-prepare](processdet-sold-as-prepare.md) 是 Process 非确定 bug 没有现成解法 ≠ 已经丢了安全性，不是本页这种 Verify 非确定会伤活性 ≠ 已经丢了安全性。
