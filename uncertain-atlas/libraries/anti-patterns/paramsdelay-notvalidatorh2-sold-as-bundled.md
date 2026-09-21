@@ -20,4 +20,5 @@
 
 - [paramsdelay-sold-as-validatordelay](paramsdelay-sold-as-validatordelay.md) 是 ConsensusParams 生效延迟 bundled 全段，不是本页 H+1 立刻用了新参数 item 2 单句边界。
 - [paramsdelay-noth-sold-as-bundled](paramsdelay-noth-sold-as-bundled.md) 是本高回了 item 1，不是本页参数与集合延迟边界。
+- [paramsdelay-notveheight-sold-as-bundled](paramsdelay-notveheight-sold-as-bundled.md) 是扩展启用高度（333 item 3），不是本页验证人 H+2 item 2 单句边界。
 - [validator-update-sold-as-immediate](validator-update-sold-as-immediate.md) 是验证人集合延迟（35），不是本页参数 H→H+1 单句边界。

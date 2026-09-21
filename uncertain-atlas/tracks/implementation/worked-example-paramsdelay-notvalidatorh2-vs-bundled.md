@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票 not already validator-h2 / not already last-commit-h3 / not already same-as-35 正式三事（333 余量），必须分开 H+1 立刻用了新参数 是不是 already validator-h2 interchangeable / 333 paramsdelay bundled interchangeable / paramsdelay-sold-as-validatordelay interchangeable、「立刻」 是不是 already last-commit-h3 interchangeable、参数延迟 是不是 already same-as-35 interchangeable。可以跳过「看见 H+1 立刻用了新参数就已经是验证人 H+2 interchangeable / 就已经是 H+3 last_commit interchangeable / 就已经是不变量 35 interchangeable」。不要另写怎样编 `ConsensusParams`。333 paramsdelay vs set bundled unbundling 在本页 item 2 续（755 + 756）；续 [`worked-example-paramsdelay-notveheight-vs-bundled.md`](worked-example-paramsdelay-notveheight-vs-bundled.md)（不变量 757 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票 not already validator-h2 / not already last-commit-h3 / not already same-as-35 正式三事（333 余量），必须分开 H+1 立刻用了新参数 是不是 already validator-h2 interchangeable / 333 paramsdelay bundled interchangeable / paramsdelay-sold-as-validatordelay interchangeable、「立刻」 是不是 already last-commit-h3 interchangeable、参数延迟 是不是 already same-as-35 interchangeable。可以跳过「看见 H+1 立刻用了新参数就已经是验证人 H+2 interchangeable / 就已经是 H+3 last_commit interchangeable / 就已经是不变量 35 interchangeable」。不要另写怎样编 `ConsensusParams`。333 paramsdelay vs set bundled unbundling 在本页 item 2 续（755 + 756）；续 [`worked-example-paramsdelay-notveheight-vs-bundled.md`](worked-example-paramsdelay-notveheight-vs-bundled.md)（不变量 757 item 3）已写；完成见 757。
 
 ## 本页不抄
 
