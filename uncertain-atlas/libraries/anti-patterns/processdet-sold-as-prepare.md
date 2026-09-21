@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [process-nothonestonly-sold-as-bundled](process-nothonestonly-sold-as-bundled.md) 是两边对任意块同一裁决不是已经只对诚实提案同一裁决 item 2 单句边界，不是本页 ProcessProposal 确定性 bundled 全段。
 - [process-notlikeprepare-sold-as-bundled](process-notlikeprepare-sold-as-bundled.md) 是 Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值 item 1 单句边界，不是本页 ProcessProposal 确定性 bundled 全段。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare 没有确定性要求 ≠ 已经必须确定，不是本页这种 Process 必须确定 ≠ 已经可以像 Prepare 那样。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种对任意块同判 ≠ 已经只对诚实提案。
