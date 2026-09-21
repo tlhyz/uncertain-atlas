@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Snapshot Connection。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「四门里有 Snapshot Connection 不是已经必须实现快照 / 给人快照或给自己装回不是已经必须两头都做 / 应用选择不实现不是已经没有 state sync 这条对象」，不是 ListSnapshots 已经齐，也不是只有 AppHash 可信任。不要另写怎样实现快照方法或怎样配 state sync。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「四门里有 Snapshot Connection 不是已经必须实现快照 / 给人快照或给自己装回不是已经必须两头都做 / 应用选择不实现不是已经没有 state sync 这条对象」，不是 ListSnapshots 已经齐，也不是只有 AppHash 可信任。不要另写怎样实现快照方法或怎样配 state sync。 334 snapshotconn vs required bundled unbundling 启动（758）；精读 [`worked-example-snapshotconn-notrequired-vs-bundled.md`](worked-example-snapshotconn-notrequired-vs-bundled.md)。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「四门里有 Snapshot Connection 就必须实现快照、必须两头都做、已经没有这条对象」，必须分开门在是不是已经必须实现、给人快照或给自己装回是不是已经必须两头都做、选择不实现是不是已经没有 state sync 这条对象。可以跳过「看见四门就已经必须做快照」。第一版默认可从创世。不要另写怎样实现快照方法或怎样配 state sync。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「四门里有 Snapshot Connection 就必须实现快照、必须两头都做、已经没有这条对象」，必须分开门在是不是已经必须实现、给人快照或给自己装回是不是已经必须两头都做、选择不实现是不是已经没有 state sync 这条对象。可以跳过「看见四门就已经必须做快照」。第一版默认可从创世。不要另写怎样实现快照方法或怎样配 state sync。 334 snapshotconn vs required bundled unbundling 启动（758 item 1）。
 
 ## 本页不抄
 

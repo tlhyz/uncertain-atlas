@@ -1,3 +1,7 @@
+## 2026-09-21（续 875）
+
+- 不变量 758；语料 C735；模式 name-the-snapshotconn-notrequired-bar；反模式 snapshotconn-notrequired-sold-as-bundled；L10.3 第 727 条。填 L4.4 / CometBFT 档案 四门里有 Snapshot Connection 不是已经必须实现快照 not already must-implement / not already snapshot-taken / not already conn-name-is-snap 正式三事（334 余量） / 实现表 / 05b / 共识专题 / 停链面地图。334 snapshotconn vs required bundled unbundling 启动（758 item 1）。
+
 ## 2026-09-21（续 874）
 
 - 不变量 757；语料 C734；模式 name-the-paramsdelay-notveheight-bar；反模式 paramsdelay-notveheight-sold-as-bundled；L10.3 第 726 条。填 L4.4 / CometBFT 档案 参数更新写了 H+1 不是已经是扩展启用高度那种切换 not already ve-height-switch / not already only-filled-field / not already abci20 正式三事（333 余量） / 实现表 / 05b / 共识专题 / 停链面地图。333 paramsdelay vs set bundled unbundling 完成（757 item 3）。

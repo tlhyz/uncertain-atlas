@@ -1,3 +1,4 @@
+- [`name-the-snapshotconn-notrequired-bar.md`](name-the-snapshotconn-notrequired-bar.md) — 四门里有 Snapshot Connection 不是已经必须实现快照 not already must-implement / not already snapshot-taken / not already conn-name-is-snap 正式三事（334 余量）（不变量 758）
 - [`name-the-paramsdelay-notveheight-bar.md`](name-the-paramsdelay-notveheight-bar.md) — 参数更新写了 H+1 不是已经是扩展启用高度那种切换 not already ve-height-switch / not already only-filled-field / not already abci20 正式三事（333 余量）（不变量 757）
 - [`name-the-paramsdelay-notvalidatorh2-bar.md`](name-the-paramsdelay-notvalidatorh2-bar.md) — H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票 not already validator-h2 / not already last-commit-h3 / not already same-as-35 正式三事（333 余量）（不变量 756）
 - [`name-the-paramsdelay-noth-bar.md`](name-the-paramsdelay-noth-bar.md) — 本高回了 ConsensusParams 不是已经在本高生效 not already in-effect-at-h / not already prepare-new-at-h / not already tied-to-finalize 正式三事（333 余量）（不变量 755）

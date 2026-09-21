@@ -165,6 +165,7 @@
 - [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md) — H+1立刻用了新参数≠验证人H+2/「立刻」≠H+3 last_commit/参数延迟≠不变量35；≠333 bundled（不变量 756）
 - [`worked-example-paramsdelay-noth-vs-bundled.md`](worked-example-paramsdelay-noth-vs-bundled.md) — 本高回了参数≠本高生效/Finalize绿了≠本高提议按新参数/能更新≠和本高交差同一句；≠333 bundled（不变量 755）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
+- [`worked-example-snapshotconn-notrequired-vs-bundled.md`](worked-example-snapshotconn-notrequired-vs-bundled.md) — 四门里有Snapshot Connection≠必须实现/四门齐了≠有快照/连接名在≠拍过或装过；≠334 bundled（不变量 758）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
 - [`worked-example-peerfilter-notenginepath-vs-bundled.md`](worked-example-peerfilter-notenginepath-vs-bundled.md) — 三条路径≠都在用/有/store≠是过滤/能带数据≠过滤已带数据；≠326 bundled（不变量 736）
 - [`worked-example-peerfilter-notaddrpassed-vs-bundled.md`](worked-example-peerfilter-notaddrpassed-vs-bundled.md) — id绿了≠过了addr/公钥地址对上≠能交互/拒连≠持久封禁表；≠326 bundled（不变量 735）
