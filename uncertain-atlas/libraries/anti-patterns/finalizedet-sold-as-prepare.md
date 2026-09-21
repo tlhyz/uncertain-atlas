@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [finalize-notlikeprepare-sold-as-bundled](finalize-notlikeprepare-sold-as-bundled.md) 是 Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 item 1 单句边界，不是本页 FinalizeBlock 确定性 bundled 全段。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare 没有确定性要求 ≠ 已经必须确定，不是本页这种 Finalize 必须确定 ≠ 已经可以像 Prepare 那样。
 - [exectxresult-sold-as-consensus](exectxresult-sold-as-consensus.md) 是结果列表已经同一顺序 / Code 非零已经没进块，不是本页这种结果必须只依赖上一份状态和决定块 ≠ 已经印进本头。
 - [processdet-sold-as-prepare](processdet-sold-as-prepare.md) 是 Process 必须只依赖请求和上一份状态 ≠ 已经可以像 Prepare 那样，不是本页这种状态机复制 ≠ 已经是 Process 同判。
