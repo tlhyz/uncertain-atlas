@@ -20,4 +20,5 @@
 
 - [snapshotconn-sold-as-required](snapshotconn-sold-as-required.md) 是 Snapshot Connection bundled 全段，不是本页四门里有 Snapshot Connection item 1 单句边界。
 - [snapshotdiscover-sold-as-listed](snapshotdiscover-sold-as-listed.md) 是 ListSnapshots 回了 ≠ 已经齐（322），不是本页门在 ≠ 必须实现边界。
+- [snapshotconn-notbothends-sold-as-bundled](snapshotconn-notbothends-sold-as-bundled.md) 是两头都做（334 item 2），不是本页四门里有 Snapshot Connection item 1 单句边界。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下 ≠ 已经装完（321），不是本页连接名边界。
