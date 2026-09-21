@@ -1,3 +1,4 @@
+- [`name-the-maxbytes-notunlimited-bar.md`](name-the-maxbytes-notunlimited-bar.md) — MaxBytes 写成 -1 就按 100 MB 验不是已经没有上限 not already unlimited / not already no-cap / not already free-return 正式三事（337 余量）（不变量 764）
 - [`name-the-precision-noteternal-bar.md`](name-the-precision-noteternal-bar.md) — 用于 PBTS 不是已经是永恒常数 not already eternal-constant / not already bft-median / not already clock-adjust 正式三事（336 余量）（不变量 763）
 - [`name-the-precision-notpbts-bar.md`](name-the-precision-notpbts-bar.md) — 填了两个不是已经启用 PBTS not already pbts-enabled / not already switched / not already cannot-off 正式三事（336 余量）（不变量 762）
 - [`name-the-precision-notmsgdelay-bar.md`](name-the-precision-notmsgdelay-bar.md) — 填了 Precision 不是已经是 MessageDelay not already message-delay / not already delay-bounded / not already timely 正式三事（336 余量）（不变量 761）

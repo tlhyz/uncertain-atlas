@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [maxbytes-notunlimited-sold-as-bundled](maxbytes-notunlimited-sold-as-bundled.md) 是 MaxBytes 写成 -1 就按 100 MB 验不是已经没有上限 item 1 单句边界，不是本页 MaxBytes cap bundled 全段。
 - [evidence-sold-as-full-block](evidence-sold-as-full-block.md) 是整池都给 Prepare ≠ 已经没有上限，不是本页这种 100 MB 引擎帽。
 - [maxbytes-sold-as-sla](maxbytes-sold-as-sla.md) 是仓库默认 MaxBytes ≠ 已经是活性 SLA，不是本页这种合法范围 ≠ 默认 21 MB。
 - [evidencemaxbytes-sold-as-blockmax](evidencemaxbytes-sold-as-blockmax.md) 是证据 MaxBytes ≠ 已经是块 MaxBytes，不是本页。
