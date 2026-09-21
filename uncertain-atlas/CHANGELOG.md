@@ -1,3 +1,7 @@
+## 2026-09-21（续 890）
+
+- 不变量 773；语料 C750；模式 name-the-process-notlikeprepare-bar；反模式 process-notlikeprepare-sold-as-bundled；L10.3 第 742 条。填 L4.4 / CometBFT 档案 Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（340 余量） / 实现表 / 05b / 共识专题 / 停链面地图。340 processdet vs prepare bundled unbundling 启动（773 item 1）。
+
 ## 2026-09-21（续 889）
 
 - 不变量 772；语料 C749；模式 name-the-checktx-notprocess-bar；反模式 checktx-notprocess-sold-as-bundled；L10.3 第 741 条。填 L4.4 / CometBFT 档案 ProcessProposal 对付这种行为不是已经是 CheckTx not already is-checktx / not already is-finalize / not already pool-done 正式三事（339 余量） / 实现表 / 05b / 共识专题 / 停链面地图。339 checktxweak vs process bundled unbundling 完成（772 item 3）。

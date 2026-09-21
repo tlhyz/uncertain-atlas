@@ -1,3 +1,4 @@
+- [`process-notlikeprepare-sold-as-bundled.md`](process-notlikeprepare-sold-as-bundled.md) — 必须确定 被写成已经可以像 Prepare 那样 / 只依赖请求和上一份状态 被写成已经和 Prepare nondet 同一句 / Process 回了 被写成已经交差（不变量 773）
 - [`checktx-notprocess-sold-as-bundled.md`](checktx-notprocess-sold-as-bundled.md) — 有 ProcessProposal 被写成已经是 CheckTx / 点名了这道门 被写成已经是 Finalize / 会拒提案 被写成已经在池子里挡完（不变量 772）
 - [`checktx-notblocked-sold-as-bundled.md`](checktx-notblocked-sold-as-bundled.md) — 拜占庭可以不在乎 / 池子会挡 被写成已经被池子挡住 / 能提案无效交易 被写成已经进不了共识 / 诚实过了 被写成已经同一把尺（不变量 771）
 - [`checktx-notordering-sold-as-bundled.md`](checktx-notordering-sold-as-bundled.md) — 不该验所有 被写成已经该在 CheckTx 里验 / 排序会改有效性 被写成已经按执行态验过 / 过了 CheckTx 被写成已经交差（不变量 770）
