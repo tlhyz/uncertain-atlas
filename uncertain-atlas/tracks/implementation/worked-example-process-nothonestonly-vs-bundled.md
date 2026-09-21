@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看两边对任意块同一裁决不是已经只对诚实提案同一裁决 not already honest-only / not already may-diverge / not already req3-same 正式三事（340 余量），必须分开两边同判 是不是 already honest-only interchangeable / 340 processdet bundled interchangeable / processdet-sold-as-prepare interchangeable、提议者坏了 是不是 already may-diverge interchangeable、任意块 是不是 already req3-same interchangeable。可以跳过「看见两边同判就已经只对诚实提案 interchangeable / 就可以各判各的 interchangeable / 就已经是 Req 3 interchangeable」。不要把 SHOULD Accept 当不确定已经拒坏块。不要另写怎样写 ProcessProposal。340 processdet vs prepare bundled unbundling 在本页 item 2 续（773 + 774）；续 [`worked-example-process-notlostsafety-vs-bundled.md`](worked-example-process-notlostsafety-vs-bundled.md)（不变量 775 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看两边对任意块同一裁决不是已经只对诚实提案同一裁决 not already honest-only / not already may-diverge / not already req3-same 正式三事（340 余量），必须分开两边同判 是不是 already honest-only interchangeable / 340 processdet bundled interchangeable / processdet-sold-as-prepare interchangeable、提议者坏了 是不是 already may-diverge interchangeable、任意块 是不是 already req3-same interchangeable。可以跳过「看见两边同判就已经只对诚实提案 interchangeable / 就可以各判各的 interchangeable / 就已经是 Req 3 interchangeable」。不要把 SHOULD Accept 当不确定已经拒坏块。不要另写怎样写 ProcessProposal。340 processdet vs prepare bundled unbundling 在本页 item 2 续（773 + 774）；续 [`worked-example-process-notlostsafety-vs-bundled.md`](worked-example-process-notlostsafety-vs-bundled.md)（不变量 775 item 3）已写；完成见 775。
 
 ## 本页不抄
 

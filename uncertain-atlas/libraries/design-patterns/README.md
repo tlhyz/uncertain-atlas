@@ -1,3 +1,4 @@
+- [`name-the-process-notlostsafety-bar.md`](name-the-process-notlostsafety-bar.md) — Process 非确定 bug 没有现成解法不是已经丢了安全性 not already lost-safety / not already has-patch / not already must-reject 正式三事（340 余量）（不变量 775）
 - [`name-the-process-nothonestonly-bar.md`](name-the-process-nothonestonly-bar.md) — 两边对任意块同一裁决不是已经只对诚实提案同一裁决 not already honest-only / not already may-diverge / not already req3-same 正式三事（340 余量）（不变量 774）
 - [`name-the-process-notlikeprepare-bar.md`](name-the-process-notlikeprepare-bar.md) — Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（340 余量）（不变量 773）
 - [`name-the-checktx-notprocess-bar.md`](name-the-checktx-notprocess-bar.md) — ProcessProposal 对付这种行为不是已经是 CheckTx not already is-checktx / not already is-finalize / not already pool-done 正式三事（339 余量）（不变量 772）

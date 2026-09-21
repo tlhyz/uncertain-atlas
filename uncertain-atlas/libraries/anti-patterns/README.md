@@ -1,3 +1,4 @@
+- [`process-notlostsafety-sold-as-bundled.md`](process-notlostsafety-sold-as-bundled.md) — 活性不能保证 被写成已经丢了安全性 / 没有现成解法 被写成已经有补丁 / SHOULD Accept 被写成已经必须拒坏块（不变量 775）
 - [`process-nothonestonly-sold-as-bundled.md`](process-nothonestonly-sold-as-bundled.md) — 两边同判 被写成已经只对诚实提案 / 提议者坏了 被写成已经可以各判各的 / 任意块 被写成已经是 Req 3（不变量 774）
 - [`process-notlikeprepare-sold-as-bundled.md`](process-notlikeprepare-sold-as-bundled.md) — 必须确定 被写成已经可以像 Prepare 那样 / 只依赖请求和上一份状态 被写成已经和 Prepare nondet 同一句 / Process 回了 被写成已经交差（不变量 773）
 - [`checktx-notprocess-sold-as-bundled.md`](checktx-notprocess-sold-as-bundled.md) — 有 ProcessProposal 被写成已经是 CheckTx / 点名了这道门 被写成已经是 Finalize / 会拒提案 被写成已经在池子里挡完（不变量 772）

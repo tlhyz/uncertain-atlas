@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [process-notlostsafety-sold-as-bundled](process-notlostsafety-sold-as-bundled.md) 是活性不能保证 ≠ 已经丢了安全性（340 item 3），不是本页两边同判 item 2 单句边界。
 - [processdet-sold-as-prepare](processdet-sold-as-prepare.md) 是 ProcessProposal 确定性 bundled 全段，不是本页两边同判 item 2 单句边界。
 - [process-notlikeprepare-sold-as-bundled](process-notlikeprepare-sold-as-bundled.md) 是必须确定 ≠ 已经可以像 Prepare 那样（340 item 1），不是本页两边同判 ≠ 已经只对诚实提案 边界。
 - [req3coherence-sold-as-accept](req3coherence-sold-as-accept.md) 是诚实 Prepare 必须被诚实 Process Accept（347），不是本页任意块 ≠ 已经是 Req 3 边界。
