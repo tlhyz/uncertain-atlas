@@ -1,3 +1,7 @@
+## 2026-09-21（续 876）
+
+- 不变量 759；语料 C736；模式 name-the-snapshotconn-notbothends-bar；反模式 snapshotconn-notbothends-sold-as-bundled；L10.3 第 728 条。填 L4.4 / CometBFT 档案 给人快照或给自己装回不是已经必须两头都做 not already both-ends / not already restored / not already and-or-done 正式三事（334 余量） / 实现表 / 05b / 共识专题 / 停链面地图。334 snapshotconn vs required bundled unbundling 续（759 item 2）。
+
 ## 2026-09-21（续 875）
 
 - 不变量 758；语料 C735；模式 name-the-snapshotconn-notrequired-bar；反模式 snapshotconn-notrequired-sold-as-bundled；L10.3 第 727 条。填 L4.4 / CometBFT 档案 四门里有 Snapshot Connection 不是已经必须实现快照 not already must-implement / not already snapshot-taken / not already conn-name-is-snap 正式三事（334 余量） / 实现表 / 05b / 共识专题 / 停链面地图。334 snapshotconn vs required bundled unbundling 启动（758 item 1）。

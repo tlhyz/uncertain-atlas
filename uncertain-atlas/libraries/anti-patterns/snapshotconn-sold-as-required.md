@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [snapshotconn-notrequired-sold-as-bundled](snapshotconn-notrequired-sold-as-bundled.md) 是四门里有 Snapshot Connection 不是已经必须实现快照 item 1 单句边界，不是本页 Snapshot Connection bundled 全段。
+- [snapshotconn-notbothends-sold-as-bundled](snapshotconn-notbothends-sold-as-bundled.md) 是给人快照或给自己装回不是已经必须两头都做 item 2 单句边界，不是本页 Snapshot Connection bundled 全段。
 - [snapshotdiscover-sold-as-listed](snapshotdiscover-sold-as-listed.md) 是 ListSnapshots 回了 ≠ 已经齐，不是本页这种门在 ≠ 必须实现。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下 ≠ 已经装完，不是本页。
 - [query-sold-as-replicated](query-sold-as-replicated.md) 是 Query 回了 ≠ 已经是正常运转必须有，不是本页这种快照连接可选。

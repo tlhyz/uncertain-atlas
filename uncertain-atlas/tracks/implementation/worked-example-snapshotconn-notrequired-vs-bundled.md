@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看四门里有 Snapshot Connection 不是已经必须实现快照 not already must-implement / not already snapshot-taken / not already conn-name-is-snap 正式三事（334 余量），必须分开四门里有 Snapshot Connection 是不是 already must-implement interchangeable / 334 snapshotconn bundled interchangeable / snapshotconn-sold-as-required interchangeable、四门齐了 是不是 already snapshot-taken interchangeable、连接名在 是不是 already conn-name-is-snap interchangeable。可以跳过「看见四门里有 Snapshot Connection 就已经必须实现快照 interchangeable / 就已经有快照 interchangeable / 就已经拍过或装过 interchangeable」。第一版默认可从创世。不要另写怎样实现快照方法。334 snapshotconn vs required bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotconn-notbothends-vs-bundled.md`](worked-example-snapshotconn-notbothends-vs-bundled.md)（不变量 759 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看四门里有 Snapshot Connection 不是已经必须实现快照 not already must-implement / not already snapshot-taken / not already conn-name-is-snap 正式三事（334 余量），必须分开四门里有 Snapshot Connection 是不是 already must-implement interchangeable / 334 snapshotconn bundled interchangeable / snapshotconn-sold-as-required interchangeable、四门齐了 是不是 already snapshot-taken interchangeable、连接名在 是不是 already conn-name-is-snap interchangeable。可以跳过「看见四门里有 Snapshot Connection 就已经必须实现快照 interchangeable / 就已经有快照 interchangeable / 就已经拍过或装过 interchangeable」。第一版默认可从创世。不要另写怎样实现快照方法。334 snapshotconn vs required bundled unbundling 在本页 item 1 启动；续 [`worked-example-snapshotconn-notbothends-vs-bundled.md`](worked-example-snapshotconn-notbothends-vs-bundled.md)（不变量 759 item 2）已写；完成见 760。
 
 ## 本页不抄
 
