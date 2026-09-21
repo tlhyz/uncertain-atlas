@@ -1,3 +1,4 @@
+- [`checktx-notordering-sold-as-bundled.md`](checktx-notordering-sold-as-bundled.md) — 不该验所有 被写成已经该在 CheckTx 里验 / 排序会改有效性 被写成已经按执行态验过 / 过了 CheckTx 被写成已经交差（不变量 770）
 - [`extend-notsameext-sold-as-bundled.md`](extend-notsameext-sold-as-bundled.md) — 同一块 被写成已经是同一份扩展 / 没有确定性要求 被写成已经必须同一份 / 能签扩展 被写成已经和 Verify 同一把尺（不变量 769）
 - [`prepare-notrawsame-sold-as-bundled.md`](prepare-notrawsame-sold-as-bundled.md) — 两边 raw 一样 被写成已经是同一份 prepared / 同一高度同一轮 被写成已经必须同一份 / 诚实准备 被写成已经同一份列表（不变量 768）
 - [`prepare-notmustdet-sold-as-bundled.md`](prepare-notmustdet-sold-as-bundled.md) — 没有确定性要求 被写成已经必须确定 / 可以依赖其它值 被写成已经和 Process 同一把尺 / Prepare 回了 被写成已经交差（不变量 767）
