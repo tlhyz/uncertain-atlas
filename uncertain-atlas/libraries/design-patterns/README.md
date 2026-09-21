@@ -1,3 +1,4 @@
+- [`name-the-precision-notmsgdelay-bar.md`](name-the-precision-notmsgdelay-bar.md) — 填了 Precision 不是已经是 MessageDelay not already message-delay / not already delay-bounded / not already timely 正式三事（336 余量）（不变量 761）
 - [`name-the-snapshotconn-notgone-bar.md`](name-the-snapshotconn-notgone-bar.md) — 应用选择不实现不是已经没有 state sync 这条对象 not already no-object / not already genesis-only / not already listed 正式三事（334 余量）（不变量 760）
 - [`name-the-snapshotconn-notbothends-bar.md`](name-the-snapshotconn-notbothends-bar.md) — 给人快照或给自己装回不是已经必须两头都做 not already both-ends / not already restored / not already and-or-done 正式三事（334 余量）（不变量 759）
 - [`name-the-snapshotconn-notrequired-bar.md`](name-the-snapshotconn-notrequired-bar.md) — 四门里有 Snapshot Connection 不是已经必须实现快照 not already must-implement / not already snapshot-taken / not already conn-name-is-snap 正式三事（334 余量）（不变量 758）
