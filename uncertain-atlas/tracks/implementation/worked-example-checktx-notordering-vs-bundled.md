@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看不该验排序相关有效性不是已经该在 CheckTx 里验 not already in-checktx / not already exec-state / not already settled 正式三事（339 余量），必须分开不该验所有 是不是 already in-checktx interchangeable / 339 checktxweak bundled interchangeable / checktxweak-sold-as-consensus interchangeable、排序会改有效性 是不是 already exec-state interchangeable、过了 CheckTx 是不是 already settled interchangeable。可以跳过「看见不该验所有就已经该在 CheckTx 里验 interchangeable / 就已经按执行态验过 interchangeable / 就已经交差 interchangeable」。不要把「不验排序」当不确定已经验完。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。339 checktxweak vs process bundled unbundling 在本页 item 1 启动；续 [`worked-example-checktx-notblocked-vs-bundled.md`](worked-example-checktx-notblocked-vs-bundled.md)（不变量 771 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看不该验排序相关有效性不是已经该在 CheckTx 里验 not already in-checktx / not already exec-state / not already settled 正式三事（339 余量），必须分开不该验所有 是不是 already in-checktx interchangeable / 339 checktxweak bundled interchangeable / checktxweak-sold-as-consensus interchangeable、排序会改有效性 是不是 already exec-state interchangeable、过了 CheckTx 是不是 already settled interchangeable。可以跳过「看见不该验所有就已经该在 CheckTx 里验 interchangeable / 就已经按执行态验过 interchangeable / 就已经交差 interchangeable」。不要把「不验排序」当不确定已经验完。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。339 checktxweak vs process bundled unbundling 在本页 item 1 启动；续 [`worked-example-checktx-notblocked-vs-bundled.md`](worked-example-checktx-notblocked-vs-bundled.md)（不变量 771 item 2）已写；完成见 772。
 
 ## 本页不抄
 

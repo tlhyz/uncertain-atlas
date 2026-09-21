@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Mempool Connection / CheckTx。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「不该验排序相关有效性不是已经该在 CheckTx 里验 / 拜占庭能提案一满块无效交易不是已经被池子挡住 / ProcessProposal 对付这种行为不是已经是 CheckTx」，不是 CheckTxState 已经是 ExecuteTxState，也不是四门已经结算。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。 339 checktxweak vs process bundled unbundling 启动（770）；精读 [`worked-example-checktx-notordering-vs-bundled.md`](worked-example-checktx-notordering-vs-bundled.md)（不变量 770 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「不该验排序相关有效性不是已经该在 CheckTx 里验 / 拜占庭能提案一满块无效交易不是已经被池子挡住 / ProcessProposal 对付这种行为不是已经是 CheckTx」，不是 CheckTxState 已经是 ExecuteTxState，也不是四门已经结算。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。 339 checktxweak vs process bundled unbundling 续（770 + 771）；精读 [`worked-example-checktx-notordering-vs-bundled.md`](worked-example-checktx-notordering-vs-bundled.md)；[`worked-example-checktx-notblocked-vs-bundled.md`](worked-example-checktx-notblocked-vs-bundled.md)（不变量 771 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见过了 CheckTx 就已经验完、已经被池子挡住、已经是 ProcessProposal」，必须分开不该验排序相关有效性是不是已经该在 CheckTx 里验、拜占庭能提案一满块无效交易是不是已经被池子挡住、ProcessProposal 对付这种行为是不是已经是 CheckTx。可以跳过「看见过了 CheckTx 就已经验完」。不要把「不验排序」当不确定已经验完。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。 339 checktxweak vs process bundled unbundling 启动（770 item 1）；续 [`worked-example-checktx-notblocked-vs-bundled.md`](worked-example-checktx-notblocked-vs-bundled.md)（不变量 771 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见过了 CheckTx 就已经验完、已经被池子挡住、已经是 ProcessProposal」，必须分开不该验排序相关有效性是不是已经该在 CheckTx 里验、拜占庭能提案一满块无效交易是不是已经被池子挡住、ProcessProposal 对付这种行为是不是已经是 CheckTx。可以跳过「看见过了 CheckTx 就已经验完」。不要把「不验排序」当不确定已经验完。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。 339 checktxweak vs process bundled unbundling 续（770 + 771 item 2）；续 [`worked-example-checktx-notprocess-vs-bundled.md`](worked-example-checktx-notprocess-vs-bundled.md)（不变量 772 item 3）。
 
 ## 本页不抄
 
