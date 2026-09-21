@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [verify-notlostsafety-sold-as-bundled](verify-notlostsafety-sold-as-bundled.md) 是活性会被伤 ≠ 已经丢了安全性（341 item 3），不是本页必须确定 item 1 单句边界。
 - [verify-nothonestonly-sold-as-bundled](verify-nothonestonly-sold-as-bundled.md) 是两边同判 ≠ 已经只对诚实扩展（341 item 2），不是本页必须确定 item 1 单句边界。
 - [verifydet-sold-as-extend](verifydet-sold-as-extend.md) 是 VerifyVoteExtension 确定性 bundled 全段，不是本页必须确定 item 1 单句边界。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare/ExtendVote 没有确定性要求 bundled（338），不是本页必须确定 ≠ 已经可以像 ExtendVote 那样 边界。

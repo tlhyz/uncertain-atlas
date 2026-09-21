@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看两边对任意扩展同一裁决不是已经只对诚实扩展同一裁决 not already honest-only / not already may-diverge / not already req6-same 正式三事（341 余量），必须分开两边同判 是不是 already honest-only interchangeable / 341 verifydet bundled interchangeable / verifydet-sold-as-extend interchangeable、扩展坏了 是不是 already may-diverge interchangeable、任意扩展 是不是 already req6-same interchangeable。可以跳过「看见两边同判就已经只对诚实扩展 interchangeable / 就可以各判各的 interchangeable / 就已经是 Req 6 interchangeable」。不要把 SHOULD Accept 当不确定已经拒坏扩展。不要另写怎样写 VerifyVoteExtension。341 verifydet vs extend bundled unbundling 在本页 item 2 续（776 + 777）；续 [`worked-example-verify-notlostsafety-vs-bundled.md`](worked-example-verify-notlostsafety-vs-bundled.md)（不变量 778 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看两边对任意扩展同一裁决不是已经只对诚实扩展同一裁决 not already honest-only / not already may-diverge / not already req6-same 正式三事（341 余量），必须分开两边同判 是不是 already honest-only interchangeable / 341 verifydet bundled interchangeable / verifydet-sold-as-extend interchangeable、扩展坏了 是不是 already may-diverge interchangeable、任意扩展 是不是 already req6-same interchangeable。可以跳过「看见两边同判就已经只对诚实扩展 interchangeable / 就可以各判各的 interchangeable / 就已经是 Req 6 interchangeable」。不要把 SHOULD Accept 当不确定已经拒坏扩展。不要另写怎样写 VerifyVoteExtension。341 verifydet vs extend bundled unbundling 在本页 item 2 续（776 + 777）；续 [`worked-example-verify-notlostsafety-vs-bundled.md`](worked-example-verify-notlostsafety-vs-bundled.md)（不变量 778 item 3）已写；完成见 778。
 
 ## 本页不抄
 
