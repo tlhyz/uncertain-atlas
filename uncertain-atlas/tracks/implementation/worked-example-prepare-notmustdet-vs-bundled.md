@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal 没有确定性要求不是已经必须确定 not already must-deterministic / not already same-as-process / not already settled 正式三事（338 余量），必须分开没有确定性要求 是不是 already must-deterministic interchangeable / 338 preparenondet bundled interchangeable / preparenondet-sold-as-deterministic interchangeable、可以依赖其它值 是不是 already same-as-process interchangeable、Prepare 回了 是不是 already settled interchangeable。可以跳过「看见可以不确定就必须确定 interchangeable / 就已经和 Process 同一把尺 interchangeable / 就已经交差 interchangeable」。不要把「其它值或操作」当不确定常数。不要另写怎样写 Prepare 或怎样写 ExtendVote。338 preparenondet vs process bundled unbundling 在本页 item 1 启动；续 [`worked-example-prepare-notrawsame-vs-bundled.md`](worked-example-prepare-notrawsame-vs-bundled.md)（不变量 768 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 PrepareProposal 没有确定性要求不是已经必须确定 not already must-deterministic / not already same-as-process / not already settled 正式三事（338 余量），必须分开没有确定性要求 是不是 already must-deterministic interchangeable / 338 preparenondet bundled interchangeable / preparenondet-sold-as-deterministic interchangeable、可以依赖其它值 是不是 already same-as-process interchangeable、Prepare 回了 是不是 already settled interchangeable。可以跳过「看见可以不确定就必须确定 interchangeable / 就已经和 Process 同一把尺 interchangeable / 就已经交差 interchangeable」。不要把「其它值或操作」当不确定常数。不要另写怎样写 Prepare 或怎样写 ExtendVote。338 preparenondet vs process bundled unbundling 在本页 item 1 启动；续 [`worked-example-prepare-notrawsame-vs-bundled.md`](worked-example-prepare-notrawsame-vs-bundled.md)（不变量 768 item 2）已写；完成见 769。
 
 ## 本页不抄
 

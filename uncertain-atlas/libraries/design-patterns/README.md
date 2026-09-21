@@ -1,3 +1,4 @@
+- [`name-the-prepare-notrawsame-bar.md`](name-the-prepare-notrawsame-bar.md) — 两边 raw 一样不是已经是同一份提案 not already same-prepared / not already must-same-u / not already same-list 正式三事（338 余量）（不变量 768）
 - [`name-the-prepare-notmustdet-bar.md`](name-the-prepare-notmustdet-bar.md) — PrepareProposal 没有确定性要求不是已经必须确定 not already must-deterministic / not already same-as-process / not already settled 正式三事（338 余量）（不变量 767）
 - [`name-the-maxbytes-notdefault21-bar.md`](name-the-maxbytes-notdefault21-bar.md) — 必须 -1 或不超过 100 MB 不是已经是默认 21 MB not already default-21 / not already bandwidth-assessed / not already tuned-down 正式三事（337 余量）（不变量 766）
 - [`name-the-maxbytes-notengineoff-bar.md`](name-the-maxbytes-notengineoff-bar.md) — 应用自己卡体积不是已经引擎不管了 not already engine-off / not already app-only-cap / not already no-100mb-ruler 正式三事（337 余量）（不变量 765）
