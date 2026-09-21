@@ -1,3 +1,7 @@
+## 2026-09-21（续 877）
+
+- 不变量 760；语料 C737；模式 name-the-snapshotconn-notgone-bar；反模式 snapshotconn-notgone-sold-as-bundled；L10.3 第 729 条。填 L4.4 / CometBFT 档案 应用选择不实现不是已经没有 state sync 这条对象 not already no-object / not already genesis-only / not already listed 正式三事（334 余量） / 实现表 / 05b / 共识专题 / 停链面地图。334 snapshotconn vs required bundled unbundling 完成（760 item 3）。
+
 ## 2026-09-21（续 876）
 
 - 不变量 759；语料 C736；模式 name-the-snapshotconn-notbothends-bar；反模式 snapshotconn-notbothends-sold-as-bundled；L10.3 第 728 条。填 L4.4 / CometBFT 档案 给人快照或给自己装回不是已经必须两头都做 not already both-ends / not already restored / not already and-or-done 正式三事（334 余量） / 实现表 / 05b / 共识专题 / 停链面地图。334 snapshotconn vs required bundled unbundling 续（759 item 2）。

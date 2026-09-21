@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看给人快照或给自己装回不是已经必须两头都做 not already both-ends / not already restored / not already and-or-done 正式三事（334 余量），必须分开用来给人快照 是不是 already both-ends interchangeable / 334 snapshotconn bundled interchangeable / snapshotconn-sold-as-required interchangeable、用来给自己装回 是不是 already restored interchangeable、写了「和 / 或」 是不是 already and-or-done interchangeable。可以跳过「看见给人快照或给自己装回就已经必须两头都做 interchangeable / 就已经装完 interchangeable / 就已经两头都做了 interchangeable」。不要另写怎样实现快照方法。334 snapshotconn vs required bundled unbundling 在本页 item 2 续（758 + 759）；续 [`worked-example-snapshotconn-notgone-vs-bundled.md`](worked-example-snapshotconn-notgone-vs-bundled.md)（不变量 760 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看给人快照或给自己装回不是已经必须两头都做 not already both-ends / not already restored / not already and-or-done 正式三事（334 余量），必须分开用来给人快照 是不是 already both-ends interchangeable / 334 snapshotconn bundled interchangeable / snapshotconn-sold-as-required interchangeable、用来给自己装回 是不是 already restored interchangeable、写了「和 / 或」 是不是 already and-or-done interchangeable。可以跳过「看见给人快照或给自己装回就已经必须两头都做 interchangeable / 就已经装完 interchangeable / 就已经两头都做了 interchangeable」。不要另写怎样实现快照方法。334 snapshotconn vs required bundled unbundling 在本页 item 2 续（758 + 759）；续 [`worked-example-snapshotconn-notgone-vs-bundled.md`](worked-example-snapshotconn-notgone-vs-bundled.md)（不变量 760 item 3）已写；完成见 760。
 
 ## 本页不抄
 
