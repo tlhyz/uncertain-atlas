@@ -1,3 +1,7 @@
+## 2026-09-21（续 885）
+
+- 不变量 768；语料 C745；模式 name-the-prepare-notrawsame-bar；反模式 prepare-notrawsame-sold-as-bundled；L10.3 第 737 条。填 L4.4 / CometBFT 档案 两边 raw 一样不是已经是同一份提案 not already same-prepared / not already must-same-u / not already same-list 正式三事（338 余量） / 实现表 / 05b / 共识专题 / 停链面地图。338 preparenondet vs process bundled unbundling 续（768 item 2）。
+
 ## 2026-09-21（续 884）
 
 - 不变量 767；语料 C744；模式 name-the-prepare-notmustdet-bar；反模式 prepare-notmustdet-sold-as-bundled；L10.3 第 736 条。填 L4.4 / CometBFT 档案 PrepareProposal 没有确定性要求不是已经必须确定 not already must-deterministic / not already same-as-process / not already settled 正式三事（338 余量） / 实现表 / 05b / 共识专题 / 停链面地图。338 preparenondet vs process bundled unbundling 启动（767 item 1）。

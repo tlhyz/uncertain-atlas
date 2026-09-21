@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [prepare-notrawsame-sold-as-bundled](prepare-notrawsame-sold-as-bundled.md) 是两边 raw 一样 ≠ 已经是同一份提案（338 item 2），不是本页没有确定性要求 item 1 单句边界。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare nondet bundled 全段，不是本页没有确定性要求 item 1 单句边界。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算（33），不是本页没有确定性要求 ≠ 已经必须确定 边界。
 - [preparetimeout-sold-as-liveness](preparetimeout-sold-as-liveness.md) 是立刻整块执行 ≠ 已经离开关键路径（327），不是本页可以依赖其它值边界。
