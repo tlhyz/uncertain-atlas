@@ -1,3 +1,7 @@
+## 2026-09-21（续 873）
+
+- 不变量 756；语料 C733；模式 name-the-paramsdelay-notvalidatorh2-bar；反模式 paramsdelay-notvalidatorh2-sold-as-bundled；L10.3 第 725 条。填 L4.4 / CometBFT 档案 H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票 not already validator-h2 / not already last-commit-h3 / not already same-as-35 正式三事（333 余量） / 实现表 / 05b / 共识专题 / 停链面地图。333 paramsdelay vs set bundled unbundling 续（756 item 2）。
+
 ## 2026-09-20（续 872）
 
 - 不变量 755；语料 C732；模式 name-the-paramsdelay-noth-bar；反模式 paramsdelay-noth-sold-as-bundled；L10.3 第 724 条。填 L4.4 / CometBFT 档案 本高回了 ConsensusParams 不是已经在本高生效 not already in-effect-at-h / not already prepare-new-at-h / not already tied-to-finalize 正式三事（333 余量） / 实现表 / 05b / 共识专题 / 停链面地图。333 paramsdelay vs set bundled unbundling 启动（755 item 1）。

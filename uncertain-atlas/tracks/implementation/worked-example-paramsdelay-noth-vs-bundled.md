@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看本高回了 ConsensusParams 不是已经在本高生效 not already in-effect-at-h / not already prepare-new-at-h / not already tied-to-finalize 正式三事（333 余量），必须分开本高回了参数 是不是 already in-effect-at-h interchangeable / 333 paramsdelay bundled interchangeable / paramsdelay-sold-as-validatordelay interchangeable、本高 Finalize 绿了 是不是 already prepare-new-at-h interchangeable、能更新 是不是 already tied-to-finalize interchangeable。可以跳过「看见本高回了就已经在本高生效 interchangeable / 就已经本高提议按新参数 interchangeable / 就已经和本高交差同一句 interchangeable」。不要另写怎样编 `ConsensusParams`。333 paramsdelay vs set bundled unbundling 在本页 item 1 启动；续 [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md)（不变量 756 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看本高回了 ConsensusParams 不是已经在本高生效 not already in-effect-at-h / not already prepare-new-at-h / not already tied-to-finalize 正式三事（333 余量），必须分开本高回了参数 是不是 already in-effect-at-h interchangeable / 333 paramsdelay bundled interchangeable / paramsdelay-sold-as-validatordelay interchangeable、本高 Finalize 绿了 是不是 already prepare-new-at-h interchangeable、能更新 是不是 already tied-to-finalize interchangeable。可以跳过「看见本高回了就已经在本高生效 interchangeable / 就已经本高提议按新参数 interchangeable / 就已经和本高交差同一句 interchangeable」。不要另写怎样编 `ConsensusParams`。333 paramsdelay vs set bundled unbundling 在本页 item 1 启动；续 [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md)（不变量 756 item 2）已写；完成见 757。
 
 ## 本页不抄
 
