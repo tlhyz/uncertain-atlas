@@ -1,3 +1,4 @@
+- [`precision-notmsgdelay-sold-as-bundled.md`](precision-notmsgdelay-sold-as-bundled.md) — 填了 Precision 被写成已经是 MessageDelay / 钟偏有界 被写成已经延迟有界 / 能出合法提案 被写成已经 timely（不变量 761）
 - [`snapshotconn-notgone-sold-as-bundled.md`](snapshotconn-notgone-sold-as-bundled.md) — 选择不实现 被写成已经没有 state sync 这条对象 / 可选就等于从创世 被写成已经从创世是唯一合法路径 / 可选就当成清单齐了 被写成已经 ListSnapshots 齐了（不变量 760）
 - [`snapshotconn-notbothends-sold-as-bundled.md`](snapshotconn-notbothends-sold-as-bundled.md) — 用来给人快照 被写成已经必须两头都做 / 用来给自己装回 被写成已经装完 / 写了「和 / 或」 被写成已经两头都做了（不变量 759）
 - [`snapshotconn-notrequired-sold-as-bundled.md`](snapshotconn-notrequired-sold-as-bundled.md) — 四门里有 Snapshot Connection 被写成已经必须实现 / 四门齐了 被写成已经有快照 / 连接名在 被写成已经拍过或装过（不变量 758）
