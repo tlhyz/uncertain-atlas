@@ -1,3 +1,7 @@
+## 2026-09-21（续 889）
+
+- 不变量 772；语料 C749；模式 name-the-checktx-notprocess-bar；反模式 checktx-notprocess-sold-as-bundled；L10.3 第 741 条。填 L4.4 / CometBFT 档案 ProcessProposal 对付这种行为不是已经是 CheckTx not already is-checktx / not already is-finalize / not already pool-done 正式三事（339 余量） / 实现表 / 05b / 共识专题 / 停链面地图。339 checktxweak vs process bundled unbundling 完成（772 item 3）。
+
 ## 2026-09-21（续 888）
 
 - 不变量 771；语料 C748；模式 name-the-checktx-notblocked-bar；反模式 checktx-notblocked-sold-as-bundled；L10.3 第 740 条。填 L4.4 / CometBFT 档案 拜占庭能提案一满块无效交易不是已经被池子挡住 not already pool-blocked / not already consensus-barred / not already same-ruler 正式三事（339 余量） / 实现表 / 05b / 共识专题 / 停链面地图。339 checktxweak vs process bundled unbundling 续（771 item 2）。

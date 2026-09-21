@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看拜占庭能提案一满块无效交易不是已经被池子挡住 not already pool-blocked / not already consensus-barred / not already same-ruler 正式三事（339 余量），必须分开拜占庭可以不在乎 / 池子会挡 是不是 already pool-blocked interchangeable / 339 checktxweak bundled interchangeable / checktxweak-sold-as-consensus interchangeable、能提案无效交易 是不是 already consensus-barred interchangeable、诚实节点过了 CheckTx 是不是 already same-ruler interchangeable。可以跳过「看见拜占庭能提案无效块就已经被池子挡住 interchangeable / 就已经进不了共识 interchangeable / 就已经同一把尺 interchangeable」。不要把「不验排序」当不确定已经验完。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。339 checktxweak vs process bundled unbundling 在本页 item 2 续（770 + 771）；续 [`worked-example-checktx-notprocess-vs-bundled.md`](worked-example-checktx-notprocess-vs-bundled.md)（不变量 772 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看拜占庭能提案一满块无效交易不是已经被池子挡住 not already pool-blocked / not already consensus-barred / not already same-ruler 正式三事（339 余量），必须分开拜占庭可以不在乎 / 池子会挡 是不是 already pool-blocked interchangeable / 339 checktxweak bundled interchangeable / checktxweak-sold-as-consensus interchangeable、能提案无效交易 是不是 already consensus-barred interchangeable、诚实节点过了 CheckTx 是不是 already same-ruler interchangeable。可以跳过「看见拜占庭能提案无效块就已经被池子挡住 interchangeable / 就已经进不了共识 interchangeable / 就已经同一把尺 interchangeable」。不要把「不验排序」当不确定已经验完。不要另写怎样写 CheckTx 或怎样写 ProcessProposal。339 checktxweak vs process bundled unbundling 在本页 item 2 续（770 + 771）；续 [`worked-example-checktx-notprocess-vs-bundled.md`](worked-example-checktx-notprocess-vs-bundled.md)（不变量 772 item 3）已写；完成见 772。
 
 ## 本页不抄
 

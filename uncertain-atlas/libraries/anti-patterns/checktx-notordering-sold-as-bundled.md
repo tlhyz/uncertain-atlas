@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [checktx-notprocess-sold-as-bundled](checktx-notprocess-sold-as-bundled.md) 是有 ProcessProposal ≠ 已经是 CheckTx（339 item 3），不是本页不该验所有 item 1 单句边界。
 - [checktx-notblocked-sold-as-bundled](checktx-notblocked-sold-as-bundled.md) 是拜占庭能提案无效块 ≠ 已经被池子挡住（339 item 2），不是本页不该验所有 item 1 单句边界。
 - [checktxweak-sold-as-consensus](checktxweak-sold-as-consensus.md) 是 CheckTx 弱过滤器 bundled 全段，不是本页不该验所有 item 1 单句边界。
 - [checktxstate-sold-as-execute](checktxstate-sold-as-execute.md) 是 CheckTxState ≠ 已经是 ExecuteTxState（312），不是本页不该验排序 ≠ 已经该在 CheckTx 里验 边界。
