@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [checktx-notprocess-sold-as-bundled](checktx-notprocess-sold-as-bundled.md) 是 ProcessProposal 对付这种行为不是已经是 CheckTx item 3 单句边界，不是本页 CheckTx 弱过滤器 bundled 全段。
 - [checktx-notblocked-sold-as-bundled](checktx-notblocked-sold-as-bundled.md) 是拜占庭能提案一满块无效交易不是已经被池子挡住 item 2 单句边界，不是本页 CheckTx 弱过滤器 bundled 全段。
 - [checktx-notordering-sold-as-bundled](checktx-notordering-sold-as-bundled.md) 是不该验排序相关有效性不是已经该在 CheckTx 里验 item 1 单句边界，不是本页 CheckTx 弱过滤器 bundled 全段。
 - [checktxstate-sold-as-execute](checktxstate-sold-as-execute.md) 是 CheckTxState ≠ 已经是 ExecuteTxState，不是本页这种不该验排序 ≠ 已经该在 CheckTx 里验。
