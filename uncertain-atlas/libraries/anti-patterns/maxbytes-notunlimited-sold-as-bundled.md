@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [maxbytes-notdefault21-sold-as-bundled](maxbytes-notdefault21-sold-as-bundled.md) 是合法范围 ≠ 已经是默认 21 MB（337 item 3），不是本页写成 -1 item 1 单句边界。
 - [maxbytes-notengineoff-sold-as-bundled](maxbytes-notengineoff-sold-as-bundled.md) 是应用自己卡体积 ≠ 已经引擎不管了（337 item 2），不是本页写成 -1 item 1 单句边界。
 - [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md) 是 MaxBytes cap bundled 全段，不是本页写成 -1 item 1 单句边界。
 - [evidence-sold-as-full-block](evidence-sold-as-full-block.md) 是整池都给 Prepare ≠ 已经没有上限（299），不是本页写成 -1 ≠ 已经没有上限 边界。

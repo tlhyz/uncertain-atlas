@@ -165,6 +165,7 @@
 - [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md) — H+1立刻用了新参数≠验证人H+2/「立刻」≠H+3 last_commit/参数延迟≠不变量35；≠333 bundled（不变量 756）
 - [`worked-example-paramsdelay-noth-vs-bundled.md`](worked-example-paramsdelay-noth-vs-bundled.md) — 本高回了参数≠本高生效/Finalize绿了≠本高提议按新参数/能更新≠和本高交差同一句；≠333 bundled（不变量 755）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
+- [`worked-example-maxbytes-notdefault21-vs-bundled.md`](worked-example-maxbytes-notdefault21-vs-bundled.md) — 合法范围≠已经是默认21MB/默认能接到21MB≠评估过带宽/建议下调≠已经下调；≠337 bundled（不变量 766）
 - [`worked-example-maxbytes-notengineoff-vs-bundled.md`](worked-example-maxbytes-notengineoff-vs-bundled.md) — 应用自己卡≠引擎不管了/MAY写-1≠只有应用尺/Process会拒≠没有100MB尺；≠337 bundled（不变量 765）
 - [`worked-example-maxbytes-notunlimited-vs-bundled.md`](worked-example-maxbytes-notunlimited-vs-bundled.md) — 写成-1≠已经没有上限/按100MB验≠没有引擎帽/能打满≠可以随便回；≠337 bundled（不变量 764）
 - [`worked-example-precision-noteternal-vs-bundled.md`](worked-example-precision-noteternal-vs-bundled.md) — 用于PBTS≠已经是永恒常数/能出合法提案≠BFT中位数/两把尺≠调整钟；≠336 bundled（不变量 763）
