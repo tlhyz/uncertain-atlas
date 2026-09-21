@@ -1,3 +1,4 @@
+- [`verify-nothonestonly-sold-as-bundled.md`](verify-nothonestonly-sold-as-bundled.md) — 两边同判 被写成已经只对诚实扩展 / 扩展坏了 被写成已经可以各判各的 / 任意扩展 被写成已经是 Req 6（不变量 777）
 - [`verify-notlikeextend-sold-as-bundled.md`](verify-notlikeextend-sold-as-bundled.md) — 必须确定 被写成已经可以像 ExtendVote 那样 / 只依赖扩展、这块和上一份状态 被写成已经和 ExtendVote nondet 同一句 / Verify 回了 被写成已经交差（不变量 776）
 - [`process-notlostsafety-sold-as-bundled.md`](process-notlostsafety-sold-as-bundled.md) — 活性不能保证 被写成已经丢了安全性 / 没有现成解法 被写成已经有补丁 / SHOULD Accept 被写成已经必须拒坏块（不变量 775）
 - [`process-nothonestonly-sold-as-bundled.md`](process-nothonestonly-sold-as-bundled.md) — 两边同判 被写成已经只对诚实提案 / 提议者坏了 被写成已经可以各判各的 / 任意块 被写成已经是 Req 3（不变量 774）

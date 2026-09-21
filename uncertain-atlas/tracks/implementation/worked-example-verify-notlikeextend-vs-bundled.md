@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 ExtendVote 那样依赖其它值 not already like-extend / not already same-as-nondet / not already settled 正式三事（341 余量），必须分开必须确定 是不是 already like-extend interchangeable / 341 verifydet bundled interchangeable / verifydet-sold-as-extend interchangeable、只依赖扩展、这块和上一份状态 是不是 already same-as-nondet interchangeable、Verify 回了 是不是 already settled interchangeable。可以跳过「看见必须确定就可以像 ExtendVote 那样 interchangeable / 就已经和 ExtendVote nondet 同一句 interchangeable / 就已经交差 interchangeable」。不要把 SHOULD Accept 当不确定已经拒坏扩展。不要另写怎样写 VerifyVoteExtension。341 verifydet vs extend bundled unbundling 在本页 item 1 启动；续 [`worked-example-verify-nothonestonly-vs-bundled.md`](worked-example-verify-nothonestonly-vs-bundled.md)（不变量 777 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Verify 必须只依赖扩展、这块和上一份状态不是已经可以像 ExtendVote 那样依赖其它值 not already like-extend / not already same-as-nondet / not already settled 正式三事（341 余量），必须分开必须确定 是不是 already like-extend interchangeable / 341 verifydet bundled interchangeable / verifydet-sold-as-extend interchangeable、只依赖扩展、这块和上一份状态 是不是 already same-as-nondet interchangeable、Verify 回了 是不是 already settled interchangeable。可以跳过「看见必须确定就可以像 ExtendVote 那样 interchangeable / 就已经和 ExtendVote nondet 同一句 interchangeable / 就已经交差 interchangeable」。不要把 SHOULD Accept 当不确定已经拒坏扩展。不要另写怎样写 VerifyVoteExtension。341 verifydet vs extend bundled unbundling 在本页 item 1 启动；续 [`worked-example-verify-nothonestonly-vs-bundled.md`](worked-example-verify-nothonestonly-vs-bundled.md)（不变量 777 item 2）已写；完成见 778。
 
 ## 本页不抄
 
