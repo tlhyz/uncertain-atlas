@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [maxbytes-notdefault21-sold-as-bundled](maxbytes-notdefault21-sold-as-bundled.md) 是合法范围 ≠ 已经是默认 21 MB（337 item 3），不是本页应用自己卡体积 item 2 单句边界。
 - [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md) 是 MaxBytes cap bundled 全段，不是本页应用自己卡体积 item 2 单句边界。
 - [maxbytes-notunlimited-sold-as-bundled](maxbytes-notunlimited-sold-as-bundled.md) 是写成 -1 ≠ 已经没有上限（337 item 1），不是本页应用自己卡 ≠ 已经引擎不管了 边界。
 - [maxbytes-sold-as-sla](maxbytes-sold-as-sla.md) 是仓库默认 MaxBytes ≠ 已经是活性 SLA（63），不是本页 MAY 写成 -1 边界。

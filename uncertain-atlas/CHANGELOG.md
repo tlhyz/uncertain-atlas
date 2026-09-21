@@ -1,3 +1,7 @@
+## 2026-09-21（续 883）
+
+- 不变量 766；语料 C743；模式 name-the-maxbytes-notdefault21-bar；反模式 maxbytes-notdefault21-sold-as-bundled；L10.3 第 735 条。填 L4.4 / CometBFT 档案 必须 -1 或不超过 100 MB 不是已经是默认 21 MB not already default-21 / not already bandwidth-assessed / not already tuned-down 正式三事（337 余量） / 实现表 / 05b / 共识专题 / 停链面地图。337 maxbytescap vs unlimited bundled unbundling 完成（766 item 3）。
+
 ## 2026-09-21（续 882）
 
 - 不变量 765；语料 C742；模式 name-the-maxbytes-notengineoff-bar；反模式 maxbytes-notengineoff-sold-as-bundled；L10.3 第 734 条。填 L4.4 / CometBFT 档案 应用自己卡体积不是已经引擎不管了 not already engine-off / not already app-only-cap / not already no-100mb-ruler 正式三事（337 余量） / 实现表 / 05b / 共识专题 / 停链面地图。337 maxbytescap vs unlimited bundled unbundling 续（765 item 2）。

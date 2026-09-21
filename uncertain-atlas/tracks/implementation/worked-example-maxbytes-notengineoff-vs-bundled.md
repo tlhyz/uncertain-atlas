@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看应用自己卡体积不是已经引擎不管了 not already engine-off / not already app-only-cap / not already no-100mb-ruler 正式三事（337 余量），必须分开应用自己卡体积 是不是 already engine-off interchangeable / 337 maxbytescap bundled interchangeable / maxbytescap-sold-as-unlimited interchangeable、MAY 写成 -1 是不是 already app-only-cap interchangeable、Process 会拒 是不是 already no-100mb-ruler interchangeable。可以跳过「看见应用自己卡体积就已经引擎不管了 interchangeable / 就已经只有应用这一把尺 interchangeable / 就已经没有 100 MB 那把尺 interchangeable」。不要把 100 MB / 21 MB 当不确定常数。不要另写怎样设 MaxBytes 或怎样算块开销。337 maxbytescap vs unlimited bundled unbundling 在本页 item 2 续（764 + 765）；续 [`worked-example-maxbytes-notdefault21-vs-bundled.md`](worked-example-maxbytes-notdefault21-vs-bundled.md)（不变量 766 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看应用自己卡体积不是已经引擎不管了 not already engine-off / not already app-only-cap / not already no-100mb-ruler 正式三事（337 余量），必须分开应用自己卡体积 是不是 already engine-off interchangeable / 337 maxbytescap bundled interchangeable / maxbytescap-sold-as-unlimited interchangeable、MAY 写成 -1 是不是 already app-only-cap interchangeable、Process 会拒 是不是 already no-100mb-ruler interchangeable。可以跳过「看见应用自己卡体积就已经引擎不管了 interchangeable / 就已经只有应用这一把尺 interchangeable / 就已经没有 100 MB 那把尺 interchangeable」。不要把 100 MB / 21 MB 当不确定常数。不要另写怎样设 MaxBytes 或怎样算块开销。337 maxbytescap vs unlimited bundled unbundling 在本页 item 2 续（764 + 765）；续 [`worked-example-maxbytes-notdefault21-vs-bundled.md`](worked-example-maxbytes-notdefault21-vs-bundled.md)（不变量 766 item 3）已写；完成见 766。
 
 ## 本页不抄
 
