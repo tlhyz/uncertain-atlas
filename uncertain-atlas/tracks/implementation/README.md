@@ -165,6 +165,7 @@
 - [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md) — H+1立刻用了新参数≠验证人H+2/「立刻」≠H+3 last_commit/参数延迟≠不变量35；≠333 bundled（不变量 756）
 - [`worked-example-paramsdelay-noth-vs-bundled.md`](worked-example-paramsdelay-noth-vs-bundled.md) — 本高回了参数≠本高生效/Finalize绿了≠本高提议按新参数/能更新≠和本高交差同一句；≠333 bundled（不变量 755）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
+- [`worked-example-process-nothonestonly-vs-bundled.md`](worked-example-process-nothonestonly-vs-bundled.md) — 两边同判≠只对诚实提案/提议者坏了≠可以各判各的/任意块≠已经是Req3；≠340 bundled（不变量 774）
 - [`worked-example-process-notlikeprepare-vs-bundled.md`](worked-example-process-notlikeprepare-vs-bundled.md) — 必须确定≠可以像Prepare那样/只依赖请求和上一份状态≠和Prepare nondet同一句/Process回了≠已经交差；≠340 bundled（不变量 773）
 - [`worked-example-checktx-notprocess-vs-bundled.md`](worked-example-checktx-notprocess-vs-bundled.md) — 有ProcessProposal≠已经是CheckTx/点名了这道门≠已经是Finalize/会拒提案≠池子里挡完；≠339 bundled（不变量 772）
 - [`worked-example-checktx-notblocked-vs-bundled.md`](worked-example-checktx-notblocked-vs-bundled.md) — 拜占庭可不管CheckTx≠已被池子挡住/能提案无效块≠进不了共识/诚实过了≠同一把尺；≠339 bundled（不变量 771）

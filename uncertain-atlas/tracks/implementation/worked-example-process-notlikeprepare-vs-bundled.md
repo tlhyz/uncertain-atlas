@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（340 余量），必须分开必须确定 是不是 already like-prepare interchangeable / 340 processdet bundled interchangeable / processdet-sold-as-prepare interchangeable、只依赖请求和上一份状态 是不是 already same-as-nondet interchangeable、Process 回了 是不是 already settled interchangeable。可以跳过「看见必须确定就可以像 Prepare 那样 interchangeable / 就已经和 Prepare nondet 同一句 interchangeable / 就已经交差 interchangeable」。不要把 SHOULD Accept 当不确定已经拒坏块。不要另写怎样写 ProcessProposal。340 processdet vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-process-nothonestonly-vs-bundled.md`](worked-example-process-nothonestonly-vs-bundled.md)（不变量 774 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（340 余量），必须分开必须确定 是不是 already like-prepare interchangeable / 340 processdet bundled interchangeable / processdet-sold-as-prepare interchangeable、只依赖请求和上一份状态 是不是 already same-as-nondet interchangeable、Process 回了 是不是 already settled interchangeable。可以跳过「看见必须确定就可以像 Prepare 那样 interchangeable / 就已经和 Prepare nondet 同一句 interchangeable / 就已经交差 interchangeable」。不要把 SHOULD Accept 当不确定已经拒坏块。不要另写怎样写 ProcessProposal。340 processdet vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-process-nothonestonly-vs-bundled.md`](worked-example-process-nothonestonly-vs-bundled.md)（不变量 774 item 2）已写；完成见 775。
 
 ## 本页不抄
 

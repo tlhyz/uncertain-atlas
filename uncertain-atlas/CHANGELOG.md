@@ -1,3 +1,7 @@
+## 2026-09-21（续 891）
+
+- 不变量 774；语料 C751；模式 name-the-process-nothonestonly-bar；反模式 process-nothonestonly-sold-as-bundled；L10.3 第 743 条。填 L4.4 / CometBFT 档案 两边对任意块同一裁决不是已经只对诚实提案同一裁决 not already honest-only / not already may-diverge / not already req3-same 正式三事（340 余量） / 实现表 / 05b / 共识专题 / 停链面地图。340 processdet vs prepare bundled unbundling 续（774 item 2）。
+
 ## 2026-09-21（续 890）
 
 - 不变量 773；语料 C750；模式 name-the-process-notlikeprepare-bar；反模式 process-notlikeprepare-sold-as-bundled；L10.3 第 742 条。填 L4.4 / CometBFT 档案 Process 必须只依赖请求和上一份状态不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（340 余量） / 实现表 / 05b / 共识专题 / 停链面地图。340 processdet vs prepare bundled unbundling 启动（773 item 1）。
