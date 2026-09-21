@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [checktx-notordering-sold-as-bundled](checktx-notordering-sold-as-bundled.md) 是不该验排序相关有效性不是已经该在 CheckTx 里验 item 1 单句边界，不是本页 CheckTx 弱过滤器 bundled 全段。
 - [checktxstate-sold-as-execute](checktxstate-sold-as-execute.md) 是 CheckTxState ≠ 已经是 ExecuteTxState，不是本页这种不该验排序 ≠ 已经该在 CheckTx 里验。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种拜占庭能提案无效块 ≠ 已经被池子挡住。
 - [indexer-sold-as-replay](indexer-sold-as-replay.md) 是索引器 ≠ 已经保证不重放，不是本页这种 ProcessProposal 对付这种行为 ≠ 已经是 CheckTx。

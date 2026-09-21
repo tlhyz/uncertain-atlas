@@ -1,3 +1,7 @@
+## 2026-09-21（续 887）
+
+- 不变量 770；语料 C747；模式 name-the-checktx-notordering-bar；反模式 checktx-notordering-sold-as-bundled；L10.3 第 739 条。填 L4.4 / CometBFT 档案 不该验排序相关有效性不是已经该在 CheckTx 里验 not already in-checktx / not already exec-state / not already settled 正式三事（339 余量） / 实现表 / 05b / 共识专题 / 停链面地图。339 checktxweak vs process bundled unbundling 启动（770 item 1）。
+
 ## 2026-09-21（续 886）
 
 - 不变量 769；语料 C746；模式 name-the-extend-notsameext-bar；反模式 extend-notsameext-sold-as-bundled；L10.3 第 738 条。填 L4.4 / CometBFT 档案 ExtendVote 没有确定性要求不是已经是同一份扩展 not already same-extension / not already must-same-e / not already same-as-verify 正式三事（338 余量） / 实现表 / 05b / 共识专题 / 停链面地图。338 preparenondet vs process bundled unbundling 完成（769 item 3）。
