@@ -1,3 +1,7 @@
+## 2026-09-21（续 879）
+
+- 不变量 762；语料 C739；模式 name-the-precision-notpbts-bar；反模式 precision-notpbts-sold-as-bundled；L10.3 第 731 条。填 L4.4 / CometBFT 档案 填了两个不是已经启用 PBTS not already pbts-enabled / not already switched / not already cannot-off 正式三事（336 余量） / 实现表 / 05b / 共识专题 / 停链面地图。336 precision vs msgdelay bundled unbundling 续（762 item 2）。
+
 ## 2026-09-21（续 878）
 
 - 不变量 761；语料 C738；模式 name-the-precision-notmsgdelay-bar；反模式 precision-notmsgdelay-sold-as-bundled；L10.3 第 730 条。填 L4.4 / CometBFT 档案 填了 Precision 不是已经是 MessageDelay not already message-delay / not already delay-bounded / not already timely 正式三事（336 余量） / 实现表 / 05b / 共识专题 / 停链面地图。336 precision vs msgdelay bundled unbundling 启动（761 item 1）。

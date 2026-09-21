@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [precision-notpbts-sold-as-bundled](precision-notpbts-sold-as-bundled.md) 是填了两个不是已经启用 PBTS item 2 单句边界，不是本页 Precision bundled 全段。
 - [precision-notmsgdelay-sold-as-bundled](precision-notmsgdelay-sold-as-bundled.md) 是填了 Precision 不是已经是 MessageDelay item 1 单句边界，不是本页 Precision bundled 全段。
 - [pbts-sold-as-mtp](pbts-sold-as-mtp.md) 是提议者时间被写成 MTP / 中位数 / 墙上现在，不是本页这种两把尺互替。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是到了 H ≠ 已经 Prepare 带了扩展，不是本页这种同步参数。
