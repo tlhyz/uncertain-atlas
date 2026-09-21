@@ -1,3 +1,7 @@
+## 2026-09-21（续 884）
+
+- 不变量 767；语料 C744；模式 name-the-prepare-notmustdet-bar；反模式 prepare-notmustdet-sold-as-bundled；L10.3 第 736 条。填 L4.4 / CometBFT 档案 PrepareProposal 没有确定性要求不是已经必须确定 not already must-deterministic / not already same-as-process / not already settled 正式三事（338 余量） / 实现表 / 05b / 共识专题 / 停链面地图。338 preparenondet vs process bundled unbundling 启动（767 item 1）。
+
 ## 2026-09-21（续 883）
 
 - 不变量 766；语料 C743；模式 name-the-maxbytes-notdefault21-bar；反模式 maxbytes-notdefault21-sold-as-bundled；L10.3 第 735 条。填 L4.4 / CometBFT 档案 必须 -1 或不超过 100 MB 不是已经是默认 21 MB not already default-21 / not already bandwidth-assessed / not already tuned-down 正式三事（337 余量） / 实现表 / 05b / 共识专题 / 停链面地图。337 maxbytescap vs unlimited bundled unbundling 完成（766 item 3）。

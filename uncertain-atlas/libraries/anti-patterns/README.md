@@ -1,3 +1,4 @@
+- [`prepare-notmustdet-sold-as-bundled.md`](prepare-notmustdet-sold-as-bundled.md) — 没有确定性要求 被写成已经必须确定 / 可以依赖其它值 被写成已经和 Process 同一把尺 / Prepare 回了 被写成已经交差（不变量 767）
 - [`maxbytes-notdefault21-sold-as-bundled.md`](maxbytes-notdefault21-sold-as-bundled.md) — 合法范围 被写成已经是默认 21 MB / 默认能接到 21 MB 被写成已经评估过带宽 / 建议下调 被写成已经下调（不变量 766）
 - [`maxbytes-notengineoff-sold-as-bundled.md`](maxbytes-notengineoff-sold-as-bundled.md) — 应用自己卡体积 被写成已经引擎不管了 / MAY 写成 -1 被写成已经只有应用这一把尺 / Process 会拒 被写成已经没有 100 MB 那把尺（不变量 765）
 - [`maxbytes-notunlimited-sold-as-bundled.md`](maxbytes-notunlimited-sold-as-bundled.md) — 写成 -1 被写成已经没有上限 / 按 100 MB 验 被写成已经没有引擎帽 / 能打满 被写成已经可以随便回（不变量 764）
