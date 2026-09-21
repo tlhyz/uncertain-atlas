@@ -1,3 +1,4 @@
+- [`snapshotconn-notrequired-sold-as-bundled.md`](snapshotconn-notrequired-sold-as-bundled.md) — 四门里有 Snapshot Connection 被写成已经必须实现 / 四门齐了 被写成已经有快照 / 连接名在 被写成已经拍过或装过（不变量 758）
 - [`paramsdelay-notveheight-sold-as-bundled.md`](paramsdelay-notveheight-sold-as-bundled.md) — 参数更新写了 H+1 被写成已经是扩展启用高度切换 / 立刻生效 被写成已经只改填的那一项 / 写了 H+1 就当成切换 被写成已经切到 ABCI 2.0（不变量 757）
 - [`paramsdelay-notvalidatorh2-sold-as-bundled.md`](paramsdelay-notvalidatorh2-sold-as-bundled.md) — H+1 立刻用了新参数 被写成已经是验证人 H+2 / 「立刻」 被写成已经是 H+3 last_commit / 参数延迟 被写成已经是不变量 35（不变量 756）
 - [`paramsdelay-noth-sold-as-bundled.md`](paramsdelay-noth-sold-as-bundled.md) — 本高回了参数 被写成已经在本高生效 / 本高 Finalize 绿了 被写成已经本高提议按新参数 / 能更新 被写成已经和本高交差同一句（不变量 755）
