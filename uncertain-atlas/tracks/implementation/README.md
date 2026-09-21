@@ -165,6 +165,7 @@
 - [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md) — H+1立刻用了新参数≠验证人H+2/「立刻」≠H+3 last_commit/参数延迟≠不变量35；≠333 bundled（不变量 756）
 - [`worked-example-paramsdelay-noth-vs-bundled.md`](worked-example-paramsdelay-noth-vs-bundled.md) — 本高回了参数≠本高生效/Finalize绿了≠本高提议按新参数/能更新≠和本高交差同一句；≠333 bundled（不变量 755）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
+- [`worked-example-finalize-notlikeprepare-vs-bundled.md`](worked-example-finalize-notlikeprepare-vs-bundled.md) — 必须确定≠可以像Prepare那样/只依赖上一份状态和决定块≠和Prepare nondet同一句/Finalize回了≠已经交差；≠342 bundled（不变量 779）
 - [`worked-example-verify-notlostsafety-vs-bundled.md`](worked-example-verify-notlostsafety-vs-bundled.md) — 活性会被伤≠已经丢了安全性/必须非常小心≠已经有补丁/SHOULD Accept≠必须拒坏扩展；≠341 bundled（不变量 778）
 - [`worked-example-verify-nothonestonly-vs-bundled.md`](worked-example-verify-nothonestonly-vs-bundled.md) — 两边同判≠只对诚实扩展/扩展坏了≠可以各判各的/任意扩展≠已经是Req6；≠341 bundled（不变量 777）
 - [`worked-example-verify-notlikeextend-vs-bundled.md`](worked-example-verify-notlikeextend-vs-bundled.md) — 必须确定≠可以像ExtendVote那样/只依赖扩展这块和上一份状态≠和ExtendVote nondet同一句/Verify回了≠已经交差；≠341 bundled（不变量 776）

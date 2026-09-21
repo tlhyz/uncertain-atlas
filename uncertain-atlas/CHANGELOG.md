@@ -1,3 +1,7 @@
+## 2026-09-21（续 896）
+
+- 不变量 779；语料 C756；模式 name-the-finalize-notlikeprepare-bar；反模式 finalize-notlikeprepare-sold-as-bundled；L10.3 第 748 条。填 L4.4 / CometBFT 档案 Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（342 余量） / 实现表 / 05b / 共识专题 / 停链面地图。342 finalizedet vs prepare bundled unbundling 启动（779 item 1）。
+
 ## 2026-09-21（续 895）
 
 - 不变量 778；语料 C755；模式 name-the-verify-notlostsafety-bar；反模式 verify-notlostsafety-sold-as-bundled；L10.3 第 747 条。填 L4.4 / CometBFT 档案 Verify 非确定会伤活性不是已经丢了安全性 not already lost-safety / not already has-patch / not already must-reject 正式三事（341 余量） / 实现表 / 05b / 共识专题 / 停链面地图。341 verifydet vs extend bundled unbundling 完成（778 item 3）。
