@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [precision-noteternal-sold-as-bundled](precision-noteternal-sold-as-bundled.md) 是用于 PBTS ≠ 已经是永恒常数（336 item 3），不是本页填了两个 item 2 单句边界。
 - [precision-sold-as-msgdelay](precision-sold-as-msgdelay.md) 是 Precision bundled 全段，不是本页填了两个 item 2 单句边界。
 - [precision-notmsgdelay-sold-as-bundled](precision-notmsgdelay-sold-as-bundled.md) 是填了 Precision ≠ 已经是 MessageDelay（336 item 1），不是本页填了两个 ≠ 已经启用 PBTS 边界。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是到了 H ≠ 已经 Prepare 带了扩展（330），不是本页写了用于 PBTS 边界。

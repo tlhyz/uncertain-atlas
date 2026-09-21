@@ -1,3 +1,4 @@
+- [`precision-noteternal-sold-as-bundled.md`](precision-noteternal-sold-as-bundled.md) — 用于 PBTS 被写成已经是永恒常数 / 能出合法提案 被写成已经是 BFT Time 中位数 / 两把尺 被写成已经是调整钟（不变量 763）
 - [`precision-notpbts-sold-as-bundled.md`](precision-notpbts-sold-as-bundled.md) — 填了两个 被写成已经启用 PBTS / 写了用于 PBTS 被写成已经切到 PBTS / 参数在 被写成已经不能关（不变量 762）
 - [`precision-notmsgdelay-sold-as-bundled.md`](precision-notmsgdelay-sold-as-bundled.md) — 填了 Precision 被写成已经是 MessageDelay / 钟偏有界 被写成已经延迟有界 / 能出合法提案 被写成已经 timely（不变量 761）
 - [`snapshotconn-notgone-sold-as-bundled.md`](snapshotconn-notgone-sold-as-bundled.md) — 选择不实现 被写成已经没有 state sync 这条对象 / 可选就等于从创世 被写成已经从创世是唯一合法路径 / 可选就当成清单齐了 被写成已经 ListSnapshots 齐了（不变量 760）

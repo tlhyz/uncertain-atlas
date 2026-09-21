@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [precision-noteternal-sold-as-bundled](precision-noteternal-sold-as-bundled.md) 是用于 PBTS ≠ 已经是永恒常数（336 item 3），不是本页填了 Precision item 1 单句边界。
 - [precision-notpbts-sold-as-bundled](precision-notpbts-sold-as-bundled.md) 是填了两个 ≠ 已经启用 PBTS（336 item 2），不是本页填了 Precision item 1 单句边界。
 - [precision-sold-as-msgdelay](precision-sold-as-msgdelay.md) 是 Precision bundled 全段，不是本页填了 Precision item 1 单句边界。
 - [pbts-sold-as-mtp](pbts-sold-as-mtp.md) 是块时间必须点名算法（40），不是本页填了 Precision ≠ 已经是 MessageDelay 边界。

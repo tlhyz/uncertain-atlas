@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看填了两个不是已经启用 PBTS not already pbts-enabled / not already switched / not already cannot-off 正式三事（336 余量），必须分开填了两个 是不是 already pbts-enabled interchangeable / 336 precision bundled interchangeable / precision-sold-as-msgdelay interchangeable、写了用于 PBTS 是不是 already switched interchangeable、参数在 是不是 already cannot-off interchangeable。可以跳过「看见填了两个就已经启用 PBTS interchangeable / 就已经切到 PBTS interchangeable / 就已经不能关 interchangeable」。可以跳过「看见填了同步参数就已经是 PBTS」。不要另写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。336 precision vs msgdelay bundled unbundling 在本页 item 2 续（761 + 762）；续 [`worked-example-precision-noteternal-vs-bundled.md`](worked-example-precision-noteternal-vs-bundled.md)（不变量 763 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看填了两个不是已经启用 PBTS not already pbts-enabled / not already switched / not already cannot-off 正式三事（336 余量），必须分开填了两个 是不是 already pbts-enabled interchangeable / 336 precision bundled interchangeable / precision-sold-as-msgdelay interchangeable、写了用于 PBTS 是不是 already switched interchangeable、参数在 是不是 already cannot-off interchangeable。可以跳过「看见填了两个就已经启用 PBTS interchangeable / 就已经切到 PBTS interchangeable / 就已经不能关 interchangeable」。可以跳过「看见填了同步参数就已经是 PBTS」。不要另写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。336 precision vs msgdelay bundled unbundling 在本页 item 2 续（761 + 762）；续 [`worked-example-precision-noteternal-vs-bundled.md`](worked-example-precision-noteternal-vs-bundled.md)（不变量 763 item 3）已写；完成见 763。
 
 ## 本页不抄
 
