@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirements，Req 11–12 之后。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Prepare 没有确定性要求不是已经必须确定 / 两边 raw 一样不是已经是同一份提案 / ExtendVote 没有确定性要求不是已经是同一份扩展」，不是四门已经结算，也不是立刻整块执行已经离开关键路径。不要另写怎样写 Prepare 或怎样写 ExtendVote。 338 preparenondet vs process bundled unbundling 续（767 + 768）；精读 [`worked-example-prepare-notmustdet-vs-bundled.md`](worked-example-prepare-notmustdet-vs-bundled.md)；[`worked-example-prepare-notrawsame-vs-bundled.md`](worked-example-prepare-notrawsame-vs-bundled.md)（不变量 768 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Prepare 没有确定性要求不是已经必须确定 / 两边 raw 一样不是已经是同一份提案 / ExtendVote 没有确定性要求不是已经是同一份扩展」，不是四门已经结算，也不是立刻整块执行已经离开关键路径。不要另写怎样写 Prepare 或怎样写 ExtendVote。 338 preparenondet vs process bundled unbundling 完成（767 + 768 + 769）；精读 [`worked-example-prepare-notmustdet-vs-bundled.md`](worked-example-prepare-notmustdet-vs-bundled.md)；[`worked-example-prepare-notrawsame-vs-bundled.md`](worked-example-prepare-notrawsame-vs-bundled.md)（不变量 768 item 2）；[`worked-example-extend-notsameext-vs-bundled.md`](worked-example-extend-notsameext-vs-bundled.md)（不变量 769 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见可以不确定就已经必须确定、已经是同一份提案、已经是同一份扩展」，必须分开 Prepare 没有确定性要求是不是已经必须确定、两边 raw 一样是不是已经是同一份提案、ExtendVote 没有确定性要求是不是已经是同一份扩展。可以跳过「看见可以不确定就必须确定」。不要把「其它值或操作」当不确定常数。不要另写怎样写 Prepare 或怎样写 ExtendVote。 338 preparenondet vs process bundled unbundling 续（767 + 768 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见可以不确定就已经必须确定、已经是同一份提案、已经是同一份扩展」，必须分开 Prepare 没有确定性要求是不是已经必须确定、两边 raw 一样是不是已经是同一份提案、ExtendVote 没有确定性要求是不是已经是同一份扩展。可以跳过「看见可以不确定就必须确定」。不要把「其它值或操作」当不确定常数。不要另写怎样写 Prepare 或怎样写 ExtendVote。 338 preparenondet vs process bundled unbundling 完成（767 + 768 + 769 item 3）。
 
 ## 本页不抄
 

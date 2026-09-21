@@ -165,6 +165,7 @@
 - [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md) — H+1立刻用了新参数≠验证人H+2/「立刻」≠H+3 last_commit/参数延迟≠不变量35；≠333 bundled（不变量 756）
 - [`worked-example-paramsdelay-noth-vs-bundled.md`](worked-example-paramsdelay-noth-vs-bundled.md) — 本高回了参数≠本高生效/Finalize绿了≠本高提议按新参数/能更新≠和本高交差同一句；≠333 bundled（不变量 755）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
+- [`worked-example-extend-notsameext-vs-bundled.md`](worked-example-extend-notsameext-vs-bundled.md) — 同一块≠同一份扩展/没有确定性要求≠必须同一份/能签扩展≠和Verify同一把尺；≠338 bundled（不变量 769）
 - [`worked-example-prepare-notrawsame-vs-bundled.md`](worked-example-prepare-notrawsame-vs-bundled.md) — 两边raw一样≠同一份prepared/同一高度同一轮≠必须同一份/诚实准备≠同一份列表；≠338 bundled（不变量 768）
 - [`worked-example-prepare-notmustdet-vs-bundled.md`](worked-example-prepare-notmustdet-vs-bundled.md) — Prepare没有确定性要求≠必须确定/可依赖其它值≠和Process同一把尺/Prepare回了≠已经交差；≠338 bundled（不变量 767）
 - [`worked-example-maxbytes-notdefault21-vs-bundled.md`](worked-example-maxbytes-notdefault21-vs-bundled.md) — 合法范围≠已经是默认21MB/默认能接到21MB≠评估过带宽/建议下调≠已经下调；≠337 bundled（不变量 766）

@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [extend-notsameext-sold-as-bundled](extend-notsameext-sold-as-bundled.md) 是同一块 ≠ 已经是同一份扩展（338 item 3），不是本页没有确定性要求 item 1 单句边界。
 - [prepare-notrawsame-sold-as-bundled](prepare-notrawsame-sold-as-bundled.md) 是两边 raw 一样 ≠ 已经是同一份提案（338 item 2），不是本页没有确定性要求 item 1 单句边界。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare nondet bundled 全段，不是本页没有确定性要求 item 1 单句边界。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算（33），不是本页没有确定性要求 ≠ 已经必须确定 边界。

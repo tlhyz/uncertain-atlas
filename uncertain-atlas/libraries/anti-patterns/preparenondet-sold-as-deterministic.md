@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [extend-notsameext-sold-as-bundled](extend-notsameext-sold-as-bundled.md) 是 ExtendVote 没有确定性要求不是已经是同一份扩展 item 3 单句边界，不是本页 Prepare nondet bundled 全段。
 - [prepare-notrawsame-sold-as-bundled](prepare-notrawsame-sold-as-bundled.md) 是两边 raw 一样不是已经是同一份提案 item 2 单句边界，不是本页 Prepare nondet bundled 全段。
 - [prepare-notmustdet-sold-as-bundled](prepare-notmustdet-sold-as-bundled.md) 是 PrepareProposal 没有确定性要求不是已经必须确定 item 1 单句边界，不是本页 Prepare nondet bundled 全段。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种没有确定性要求 ≠ 已经必须确定。

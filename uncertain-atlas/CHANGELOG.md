@@ -1,3 +1,7 @@
+## 2026-09-21（续 886）
+
+- 不变量 769；语料 C746；模式 name-the-extend-notsameext-bar；反模式 extend-notsameext-sold-as-bundled；L10.3 第 738 条。填 L4.4 / CometBFT 档案 ExtendVote 没有确定性要求不是已经是同一份扩展 not already same-extension / not already must-same-e / not already same-as-verify 正式三事（338 余量） / 实现表 / 05b / 共识专题 / 停链面地图。338 preparenondet vs process bundled unbundling 完成（769 item 3）。
+
 ## 2026-09-21（续 885）
 
 - 不变量 768；语料 C745；模式 name-the-prepare-notrawsame-bar；反模式 prepare-notrawsame-sold-as-bundled；L10.3 第 737 条。填 L4.4 / CometBFT 档案 两边 raw 一样不是已经是同一份提案 not already same-prepared / not already must-same-u / not already same-list 正式三事（338 余量） / 实现表 / 05b / 共识专题 / 停链面地图。338 preparenondet vs process bundled unbundling 续（768 item 2）。
