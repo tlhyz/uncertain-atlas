@@ -165,6 +165,7 @@
 - [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md) — H+1立刻用了新参数≠验证人H+2/「立刻」≠H+3 last_commit/参数延迟≠不变量35；≠333 bundled（不变量 756）
 - [`worked-example-paramsdelay-noth-vs-bundled.md`](worked-example-paramsdelay-noth-vs-bundled.md) — 本高回了参数≠本高生效/Finalize绿了≠本高提议按新参数/能更新≠和本高交差同一句；≠333 bundled（不变量 755）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
+- [`worked-example-maxbytes-notunlimited-vs-bundled.md`](worked-example-maxbytes-notunlimited-vs-bundled.md) — 写成-1≠已经没有上限/按100MB验≠没有引擎帽/能打满≠可以随便回；≠337 bundled（不变量 764）
 - [`worked-example-precision-noteternal-vs-bundled.md`](worked-example-precision-noteternal-vs-bundled.md) — 用于PBTS≠已经是永恒常数/能出合法提案≠BFT中位数/两把尺≠调整钟；≠336 bundled（不变量 763）
 - [`worked-example-precision-notpbts-vs-bundled.md`](worked-example-precision-notpbts-vs-bundled.md) — 填了两个≠已经启用PBTS/写了用于PBTS≠已经切到PBTS/参数在≠已经不能关；≠336 bundled（不变量 762）
 - [`worked-example-precision-notmsgdelay-vs-bundled.md`](worked-example-precision-notmsgdelay-vs-bundled.md) — 填了Precision≠已经是MessageDelay/钟偏有界≠延迟有界/能出合法提案≠已经timely；≠336 bundled（不变量 761）

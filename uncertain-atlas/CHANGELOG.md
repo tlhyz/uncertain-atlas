@@ -1,3 +1,7 @@
+## 2026-09-21（续 881）
+
+- 不变量 764；语料 C741；模式 name-the-maxbytes-notunlimited-bar；反模式 maxbytes-notunlimited-sold-as-bundled；L10.3 第 733 条。填 L4.4 / CometBFT 档案 MaxBytes 写成 -1 就按 100 MB 验不是已经没有上限 not already unlimited / not already no-cap / not already free-return 正式三事（337 余量） / 实现表 / 05b / 共识专题 / 停链面地图。337 maxbytescap vs unlimited bundled unbundling 启动（764 item 1）。
+
 ## 2026-09-21（续 880）
 
 - 不变量 763；语料 C740；模式 name-the-precision-noteternal-bar；反模式 precision-noteternal-sold-as-bundled；L10.3 第 732 条。填 L4.4 / CometBFT 档案 用于 PBTS 不是已经是永恒常数 not already eternal-constant / not already bft-median / not already clock-adjust 正式三事（336 余量） / 实现表 / 05b / 共识专题 / 停链面地图。336 precision vs msgdelay bundled unbundling 完成（763 item 3）。
