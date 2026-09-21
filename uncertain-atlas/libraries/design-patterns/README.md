@@ -1,3 +1,4 @@
+- [`name-the-checktx-notblocked-bar.md`](name-the-checktx-notblocked-bar.md) — 拜占庭能提案一满块无效交易不是已经被池子挡住 not already pool-blocked / not already consensus-barred / not already same-ruler 正式三事（339 余量）（不变量 771）
 - [`name-the-checktx-notordering-bar.md`](name-the-checktx-notordering-bar.md) — 不该验排序相关有效性不是已经该在 CheckTx 里验 not already in-checktx / not already exec-state / not already settled 正式三事（339 余量）（不变量 770）
 - [`name-the-extend-notsameext-bar.md`](name-the-extend-notsameext-bar.md) — ExtendVote 没有确定性要求不是已经是同一份扩展 not already same-extension / not already must-same-e / not already same-as-verify 正式三事（338 余量）（不变量 769）
 - [`name-the-prepare-notrawsame-bar.md`](name-the-prepare-notrawsame-bar.md) — 两边 raw 一样不是已经是同一份提案 not already same-prepared / not already must-same-u / not already same-list 正式三事（338 余量）（不变量 768）
