@@ -1,3 +1,4 @@
+- [`name-the-paramsdelay-notvalidatorh2-bar.md`](name-the-paramsdelay-notvalidatorh2-bar.md) — H+1 立刻用了新参数不是已经是验证人集合那种 H+2 才计票 not already validator-h2 / not already last-commit-h3 / not already same-as-35 正式三事（333 余量）（不变量 756）
 - [`name-the-paramsdelay-noth-bar.md`](name-the-paramsdelay-noth-bar.md) — 本高回了 ConsensusParams 不是已经在本高生效 not already in-effect-at-h / not already prepare-new-at-h / not already tied-to-finalize 正式三事（333 余量）（不变量 755）
 - [`name-the-snapshotverify-notnodod-bar.md`](name-the-snapshotverify-notnodod-bar.md) — 封禁邻居不是已经没有快照 DoS not already no-snapshot-dos / not already trusted-list-is-accept / not already blocks-all-bad 正式三事（332 余量）（不变量 754）
 - [`name-the-snapshotverify-notuniqueapphash-bar.md`](name-the-snapshotverify-notuniqueapphash-bar.md) — 增量验了 chunk 不是已经是唯一可信的 AppHash not already unique-apphash / not already metadata-unforgeable / not already replaces-final-info 正式三事（332 余量）（不变量 753）

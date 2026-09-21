@@ -20,4 +20,5 @@
 
 - [paramsdelay-sold-as-validatordelay](paramsdelay-sold-as-validatordelay.md) 是 ConsensusParams 生效延迟 bundled 全段，不是本页本高回了 item 1 单句边界。
 - [consensusparams-sold-as-updated](consensusparams-sold-as-updated.md) 是 InitChain 空 / Finalize 没回 / 只填一项（319），不是本页本高生效边界。
+- [paramsdelay-notvalidatorh2-sold-as-bundled](paramsdelay-notvalidatorh2-sold-as-bundled.md) 是验证人 H+2（333 item 2），不是本页本高回了 item 1 单句边界。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是到了 H 已经 Prepare 带了扩展（330），不是本页本高回了参数边界。

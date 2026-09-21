@@ -161,6 +161,7 @@
 - [`worked-example-snapshotverify-notuniqueapphash-vs-bundled.md`](worked-example-snapshotverify-notuniqueapphash-vs-bundled.md) — 增量验chunk≠唯一可信AppHash/checksum过了≠元数据不能伪造/证明绿了≠代替最后Info；≠332 bundled（不变量 753）
 - [`worked-example-snapshotverify-notduringrestore-vs-bundled.md`](worked-example-snapshotverify-notduringrestore-vs-bundled.md) — 装完又对上≠装回当中验过/Info绿了≠进了网/高度对上≠切进共识；≠332 bundled（不变量 752）
 - [`worked-example-snapshot-verify-vs-early.md`](worked-example-snapshot-verify-vs-early.md) — 装完又对上 LastBlockAppHash ≠ 已经在装回当中验过；增量验了 chunk ≠ 已经是唯一可信的 AppHash；封禁邻居 ≠ 已经没有快照 DoS（不变量 332）
+- [`worked-example-paramsdelay-notvalidatorh2-vs-bundled.md`](worked-example-paramsdelay-notvalidatorh2-vs-bundled.md) — H+1立刻用了新参数≠验证人H+2/「立刻」≠H+3 last_commit/参数延迟≠不变量35；≠333 bundled（不变量 756）
 - [`worked-example-paramsdelay-noth-vs-bundled.md`](worked-example-paramsdelay-noth-vs-bundled.md) — 本高回了参数≠本高生效/Finalize绿了≠本高提议按新参数/能更新≠和本高交差同一句；≠333 bundled（不变量 755）
 - [`worked-example-params-delay-vs-set.md`](worked-example-params-delay-vs-set.md) — 本高回了 ConsensusParams ≠ 已经在本高生效；H+1 立刻用了新参数 ≠ 已经是验证人集合那种 H+2 才计票；参数更新写了 H+1 ≠ 已经是扩展启用高度那种切换（不变量 333）
 - [`worked-example-snapshot-conn-vs-required.md`](worked-example-snapshot-conn-vs-required.md) — 四门里有 Snapshot Connection ≠ 已经必须实现快照；给人快照或给自己装回 ≠ 已经必须两头都做；应用选择不实现 ≠ 已经没有 state sync 这条对象（不变量 334）
