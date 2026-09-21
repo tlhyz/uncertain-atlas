@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看填了 Precision 不是已经是 MessageDelay not already message-delay / not already delay-bounded / not already timely 正式三事（336 余量），必须分开填了 Precision 是不是 already message-delay interchangeable / 336 precision bundled interchangeable / precision-sold-as-msgdelay interchangeable、钟偏有界 是不是 already delay-bounded interchangeable、能出合法提案 是不是 already timely interchangeable。可以跳过「看见填了 Precision 就已经是 MessageDelay interchangeable / 就已经延迟有界 interchangeable / 就已经 timely interchangeable」。可以跳过「看见填了同步参数就已经是 PBTS」。不要另写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。336 precision vs msgdelay bundled unbundling 在本页 item 1 启动；续 [`worked-example-precision-notpbts-vs-bundled.md`](worked-example-precision-notpbts-vs-bundled.md)（不变量 762 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看填了 Precision 不是已经是 MessageDelay not already message-delay / not already delay-bounded / not already timely 正式三事（336 余量），必须分开填了 Precision 是不是 already message-delay interchangeable / 336 precision bundled interchangeable / precision-sold-as-msgdelay interchangeable、钟偏有界 是不是 already delay-bounded interchangeable、能出合法提案 是不是 already timely interchangeable。可以跳过「看见填了 Precision 就已经是 MessageDelay interchangeable / 就已经延迟有界 interchangeable / 就已经 timely interchangeable」。可以跳过「看见填了同步参数就已经是 PBTS」。不要另写怎样设 PRECISION / MSGDELAY 或怎样选启用高度。336 precision vs msgdelay bundled unbundling 在本页 item 1 启动；续 [`worked-example-precision-notpbts-vs-bundled.md`](worked-example-precision-notpbts-vs-bundled.md)（不变量 762 item 2）已写；完成见 763。
 
 ## 本页不抄
 
