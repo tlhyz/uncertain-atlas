@@ -1,3 +1,7 @@
+## 2026-09-21（续 892）
+
+- 不变量 775；语料 C752；模式 name-the-process-notlostsafety-bar；反模式 process-notlostsafety-sold-as-bundled；L10.3 第 744 条。填 L4.4 / CometBFT 档案 Process 非确定 bug 没有现成解法不是已经丢了安全性 not already lost-safety / not already has-patch / not already must-reject 正式三事（340 余量） / 实现表 / 05b / 共识专题 / 停链面地图。340 processdet vs prepare bundled unbundling 完成（775 item 3）。
+
 ## 2026-09-21（续 891）
 
 - 不变量 774；语料 C751；模式 name-the-process-nothonestonly-bar；反模式 process-nothonestonly-sold-as-bundled；L10.3 第 743 条。填 L4.4 / CometBFT 档案 两边对任意块同一裁决不是已经只对诚实提案同一裁决 not already honest-only / not already may-diverge / not already req3-same 正式三事（340 余量） / 实现表 / 05b / 共识专题 / 停链面地图。340 processdet vs prepare bundled unbundling 续（774 item 2）。
