@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [extend-notsameext-sold-as-bundled](extend-notsameext-sold-as-bundled.md) 是同一块 ≠ 已经是同一份扩展（338 item 3），不是本页两边 raw 一样 item 2 单句边界。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare nondet bundled 全段，不是本页两边 raw 一样 item 2 单句边界。
 - [prepare-notmustdet-sold-as-bundled](prepare-notmustdet-sold-as-bundled.md) 是 Prepare 没有确定性要求 ≠ 已经必须确定（338 item 1），不是本页两边 raw 一样 ≠ 已经是同一份提案 边界。
 - [preparetimeout-sold-as-liveness](preparetimeout-sold-as-liveness.md) 是立刻整块执行 ≠ 已经离开关键路径（327），不是本页同一高度同一轮边界。

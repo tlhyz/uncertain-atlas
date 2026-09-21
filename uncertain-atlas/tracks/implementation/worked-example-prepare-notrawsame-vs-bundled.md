@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看两边 raw 一样不是已经是同一份提案 not already same-prepared / not already must-same-u / not already same-list 正式三事（338 余量），必须分开两边 raw 一样 是不是 already same-prepared interchangeable / 338 preparenondet bundled interchangeable / preparenondet-sold-as-deterministic interchangeable、同一高度同一轮 是不是 already must-same-u interchangeable、诚实准备 是不是 already same-list interchangeable。可以跳过「看见两边 raw 一样就已经是同一份提案 interchangeable / 就已经必须同一份 interchangeable / 就已经同一份列表 interchangeable」。不要把「其它值或操作」当不确定常数。不要另写怎样写 Prepare 或怎样写 ExtendVote。338 preparenondet vs process bundled unbundling 在本页 item 2 续（767 + 768）；续 [`worked-example-extend-notsameext-vs-bundled.md`](worked-example-extend-notsameext-vs-bundled.md)（不变量 769 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看两边 raw 一样不是已经是同一份提案 not already same-prepared / not already must-same-u / not already same-list 正式三事（338 余量），必须分开两边 raw 一样 是不是 already same-prepared interchangeable / 338 preparenondet bundled interchangeable / preparenondet-sold-as-deterministic interchangeable、同一高度同一轮 是不是 already must-same-u interchangeable、诚实准备 是不是 already same-list interchangeable。可以跳过「看见两边 raw 一样就已经是同一份提案 interchangeable / 就已经必须同一份 interchangeable / 就已经同一份列表 interchangeable」。不要把「其它值或操作」当不确定常数。不要另写怎样写 Prepare 或怎样写 ExtendVote。338 preparenondet vs process bundled unbundling 在本页 item 2 续（767 + 768）；续 [`worked-example-extend-notsameext-vs-bundled.md`](worked-example-extend-notsameext-vs-bundled.md)（不变量 769 item 3）已写；完成见 769。
 
 ## 本页不抄
 
