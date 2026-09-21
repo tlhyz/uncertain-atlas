@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) List of Parameters / BlockParams.MaxBytes。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「-1 就按 100 MB 验不是已经没有上限 / 应用自己卡体积不是已经引擎不管了 / 必须 -1 或不超过 100 MB 不是已经是默认 21 MB」，不是整池都给 Prepare 就已经没有上限，也不是仓库默认已经是活性 SLA。不要另写怎样设 MaxBytes 或怎样算块开销。 337 maxbytescap vs unlimited bundled unbundling 启动（764）；精读 [`worked-example-maxbytes-notunlimited-vs-bundled.md`](worked-example-maxbytes-notunlimited-vs-bundled.md)。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「-1 就按 100 MB 验不是已经没有上限 / 应用自己卡体积不是已经引擎不管了 / 必须 -1 或不超过 100 MB 不是已经是默认 21 MB」，不是整池都给 Prepare 就已经没有上限，也不是仓库默认已经是活性 SLA。不要另写怎样设 MaxBytes 或怎样算块开销。 337 maxbytescap vs unlimited bundled unbundling 续（764 + 765）；精读 [`worked-example-maxbytes-notunlimited-vs-bundled.md`](worked-example-maxbytes-notunlimited-vs-bundled.md)；[`worked-example-maxbytes-notengineoff-vs-bundled.md`](worked-example-maxbytes-notengineoff-vs-bundled.md)（不变量 765 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「写成 -1 就已经没有上限、已经引擎不管了、已经是默认 21 MB」，必须分开 -1 就按 100 MB 验是不是已经没有上限、应用自己卡体积是不是已经引擎不管了、必须 -1 或不超过 100 MB 是不是已经是默认 21 MB。可以跳过「看见写成 -1 就已经没有上限」。不要把 100 MB / 21 MB 当不确定常数。不要另写怎样设 MaxBytes 或怎样算块开销。 337 maxbytescap vs unlimited bundled unbundling 启动（764 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「写成 -1 就已经没有上限、已经引擎不管了、已经是默认 21 MB」，必须分开 -1 就按 100 MB 验是不是已经没有上限、应用自己卡体积是不是已经引擎不管了、必须 -1 或不超过 100 MB 是不是已经是默认 21 MB。可以跳过「看见写成 -1 就已经没有上限」。不要把 100 MB / 21 MB 当不确定常数。不要另写怎样设 MaxBytes 或怎样算块开销。 337 maxbytescap vs unlimited bundled unbundling 续（764 + 765 item 2）。
 
 ## 本页不抄
 

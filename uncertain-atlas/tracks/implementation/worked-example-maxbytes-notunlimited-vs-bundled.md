@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 MaxBytes 写成 -1 就按 100 MB 验不是已经没有上限 not already unlimited / not already no-cap / not already free-return 正式三事（337 余量），必须分开写成 -1 是不是 already unlimited interchangeable / 337 maxbytescap bundled interchangeable / maxbytescap-sold-as-unlimited interchangeable、按 100 MB 验 是不是 already no-cap interchangeable、能打满 是不是 already free-return interchangeable。可以跳过「看见写成 -1 就已经没有上限 interchangeable / 就已经没有引擎帽 interchangeable / 就已经可以随便回 interchangeable」。不要把 100 MB / 21 MB 当不确定常数。不要另写怎样设 MaxBytes 或怎样算块开销。337 maxbytescap vs unlimited bundled unbundling 在本页 item 1 启动；续 [`worked-example-maxbytes-notengineoff-vs-bundled.md`](worked-example-maxbytes-notengineoff-vs-bundled.md)（不变量 765 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 MaxBytes 写成 -1 就按 100 MB 验不是已经没有上限 not already unlimited / not already no-cap / not already free-return 正式三事（337 余量），必须分开写成 -1 是不是 already unlimited interchangeable / 337 maxbytescap bundled interchangeable / maxbytescap-sold-as-unlimited interchangeable、按 100 MB 验 是不是 already no-cap interchangeable、能打满 是不是 already free-return interchangeable。可以跳过「看见写成 -1 就已经没有上限 interchangeable / 就已经没有引擎帽 interchangeable / 就已经可以随便回 interchangeable」。不要把 100 MB / 21 MB 当不确定常数。不要另写怎样设 MaxBytes 或怎样算块开销。337 maxbytescap vs unlimited bundled unbundling 在本页 item 1 启动；续 [`worked-example-maxbytes-notengineoff-vs-bundled.md`](worked-example-maxbytes-notengineoff-vs-bundled.md)（不变量 765 item 2）已写；完成见 766。
 
 ## 本页不抄
 
