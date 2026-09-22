@@ -1,3 +1,4 @@
+- [`req9-notextstate-sold-as-bundled.md`](req9-notextstate-sold-as-bundled.md) — Extend 和 Verify 不得改已提交状态 被写成已经写进已提交状态 / Verify 过了 被写成已经进状态 / 扩展在 被写成已经是 34（不变量 802）
 - [`req9-notaccept-sold-as-bundled.md`](req9-notaccept-sold-as-bundled.md) — Process 不得改已提交状态 被写成已经改了已提交状态 / Reject 了 被写成已经回滚了已提交状态 / 跑过了 被写成已经进工作状态（不变量 801）
 - [`req9-notsettled-sold-as-bundled.md`](req9-notsettled-sold-as-bundled.md) — Prepare 不得改已提交状态 被写成已经交差 / 立刻执行了 被写成已经是 Finalize + Commit / 能改列表 被写成已经能改 *s*（不变量 800）
 - [`req6-notsafety-sold-as-bundled.md`](req6-notsafety-sold-as-bundled.md) — 会面对和 Req 5 同一类活性问题 被写成已经丢了安全性 / 和 Req 5 同一路 被写成已经是提案一致性 / 扩展这条 被写成已经是提案那条（不变量 799）

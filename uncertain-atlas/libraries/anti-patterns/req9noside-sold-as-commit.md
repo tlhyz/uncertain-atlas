@@ -19,6 +19,7 @@
 
 - [req9-notsettled-sold-as-bundled](req9-notsettled-sold-as-bundled.md) 是 Prepare 不得改已提交状态 not already settled / not already finalize-commit / not already mutate-s 正式三事（349 item 1），不是本页 bundled 全段 alone。
 - [req9-notaccept-sold-as-bundled](req9-notaccept-sold-as-bundled.md) 是 Process 不得改已提交状态 not already accept-mutated / not already reject-rollback / not already workstate 正式三事（349 item 2），不是本页 bundled 全段 alone。
+- [req9-notextstate-sold-as-bundled](req9-notextstate-sold-as-bundled.md) 是 Extend 和 Verify 不得改已提交状态 not already into-state / not already verified-in / not already ve-dep-34 正式三事（349 item 3），不是本页 bundled 全段 alone。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种 Prepare 不得改已提交状态不是已经立刻执行就已经交差。
 - [candidate-sold-as-execute](candidate-sold-as-execute.md) 是候选不是已经是 ExecuteTxState，不是本页这种 Process 不得改已提交状态不是已经 Accept 就已经改了。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是本高度状态不得依赖本高度收到的扩展，不是本页这种 Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态。
