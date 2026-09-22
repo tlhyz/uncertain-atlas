@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [prepare-notenginecut-sold-as-bundled](prepare-notenginecut-sold-as-bundled.md) 是 Req 2 保证回的列表不让块超 not already engine-cuts / not already overhead-deducted / not already four-gates-settled 正式三事（345 item 3），不是本页 bundled 全段 alone。
 - [prepare-notoversize-sold-as-bundled](prepare-notoversize-sold-as-bundled.md) 是聚合体积可以超过 max_tx_bytes not already can-return-oversize / not already request-trimmed / not already settled 正式三事（345 item 2），不是本页 bundled 全段 alone。
 - [prepare-notblocksubset-sold-as-bundled](prepare-notblocksubset-sold-as-bundled.md) 是整池可见 not already block-subset / not already no-cap / not already all-visible-is-uncapped 正式三事（345 item 1），不是本页 bundled 全段 alone。
 - [evidence-sold-as-full-block](evidence-sold-as-full-block.md) 是整池都给 Prepare 不是已经没有上限，不是本页这种整池可见不是已经只能看见装得进一块的子集。

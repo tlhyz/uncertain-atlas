@@ -1,3 +1,7 @@
+## 2026-09-22（续 907）
+
+- 不变量 790；语料 C767；模式 name-the-prepare-notenginecut-bar；反模式 prepare-notenginecut-sold-as-bundled；L10.3 第 759 条。填 L4.4 / CometBFT 档案 Req 2 保证回的列表不让块超字节上限不是已经是引擎会帮你裁 not already engine-cuts / not already overhead-deducted / not already four-gates-settled 正式三事（345 余量） / 实现表 / 05b / 共识专题 / 停链面地图。345 preparereturn vs pool bundled unbundling 完成（790 item 3）。
+
 ## 2026-09-22（续 906）
 
 - 不变量 789；语料 C766；模式 name-the-prepare-notoversize-bar；反模式 prepare-notoversize-sold-as-bundled；L10.3 第 758 条。填 L4.4 / CometBFT 档案 聚合体积可以超过 max_tx_bytes 不是已经能回超限列表 not already can-return-oversize / not already request-trimmed / not already settled 正式三事（345 余量） / 实现表 / 05b / 共识专题 / 停链面地图。345 preparereturn vs pool bundled unbundling 续（789 item 2）。
