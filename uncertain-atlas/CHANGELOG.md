@@ -1,3 +1,7 @@
+## 2026-09-22（续 921）
+
+- 不变量 804；语料 C781；模式 name-the-extend-notnil-bar；反模式 extend-notnil-sold-as-bundled；L10.3 第 773 条。填 L4.4 / CometBFT 档案 ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票 not already signed-nil / not already prevote-calls / not already vote-has-ext 正式三事（350 余量） / 实现表 / 05b / 共识专题 / 停链面地图。350 extendonce vs round bundled unbundling 续（804 item 2）。
+
 ## 2026-09-22（续 920）
 
 - 不变量 803；语料 C780；模式 name-the-extend-notresign-bar；反模式 extend-notresign-sold-as-bundled；L10.3 第 772 条。填 L4.4 / CometBFT 档案 一轮最多一张 Precommit 不是已经能再签一张 not already resign / not already is-extension / not already re-emit 正式三事（350 余量） / 实现表 / 05b / 共识专题 / 停链面地图。350 extendonce vs round bundled unbundling 启动（803 item 1）。
