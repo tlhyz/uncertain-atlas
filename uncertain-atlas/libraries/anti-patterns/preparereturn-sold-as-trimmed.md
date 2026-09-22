@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [prepare-notoversize-sold-as-bundled](prepare-notoversize-sold-as-bundled.md) 是聚合体积可以超过 max_tx_bytes not already can-return-oversize / not already request-trimmed / not already settled 正式三事（345 item 2），不是本页 bundled 全段 alone。
 - [prepare-notblocksubset-sold-as-bundled](prepare-notblocksubset-sold-as-bundled.md) 是整池可见 not already block-subset / not already no-cap / not already all-visible-is-uncapped 正式三事（345 item 1），不是本页 bundled 全段 alone。
 - [evidence-sold-as-full-block](evidence-sold-as-full-block.md) 是整池都给 Prepare 不是已经没有上限，不是本页这种整池可见不是已经只能看见装得进一块的子集。
 - [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md) 是 -1 就按 100 MB 验不是已经没有上限，不是本页这种聚合体积可以超过 max_tx_bytes 不是已经能回超限列表。
