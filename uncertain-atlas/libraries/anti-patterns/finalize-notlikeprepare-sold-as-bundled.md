@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [finalize-notprinted-sold-as-bundled](finalize-notprinted-sold-as-bundled.md) 是结果必须确定 ≠ 已经印进本头（342 item 2），不是本页必须确定 item 1 单句边界。
 - [finalizedet-sold-as-prepare](finalizedet-sold-as-prepare.md) 是 FinalizeBlock 确定性 bundled 全段，不是本页必须确定 item 1 单句边界。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare 没有确定性要求 bundled（338），不是本页必须确定 ≠ 已经可以像 Prepare 那样 边界。
 - [exectxresult-sold-as-consensus](exectxresult-sold-as-consensus.md) 是结果列表已经同一顺序（316），不是本页 Finalize 回了 ≠ 已经交差 边界。

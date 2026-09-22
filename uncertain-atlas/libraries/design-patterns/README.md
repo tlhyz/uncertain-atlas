@@ -1,3 +1,4 @@
+- [`name-the-finalize-notprinted-bar.md`](name-the-finalize-notprinted-bar.md) — Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 not already printed / not already same-order / not already persisted 正式三事（342 余量）（不变量 780）
 - [`name-the-finalize-notlikeprepare-bar.md`](name-the-finalize-notlikeprepare-bar.md) — Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（342 余量）（不变量 779）
 - [`name-the-verify-notlostsafety-bar.md`](name-the-verify-notlostsafety-bar.md) — Verify 非确定会伤活性不是已经丢了安全性 not already lost-safety / not already has-patch / not already must-reject 正式三事（341 余量）（不变量 778）
 - [`name-the-verify-nothonestonly-bar.md`](name-the-verify-nothonestonly-bar.md) — 两边对任意扩展同一裁决不是已经只对诚实扩展同一裁决 not already honest-only / not already may-diverge / not already req6-same 正式三事（341 余量）（不变量 777)

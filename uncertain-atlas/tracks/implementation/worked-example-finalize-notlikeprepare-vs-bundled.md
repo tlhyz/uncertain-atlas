@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（342 余量），必须分开必须确定 是不是 already like-prepare interchangeable / 342 finalizedet bundled interchangeable / finalizedet-sold-as-prepare interchangeable、只依赖上一份状态和决定块 是不是 already same-as-nondet interchangeable、Finalize 回了 是不是 already settled interchangeable。可以跳过「看见必须确定就可以像 Prepare 那样 interchangeable / 就已经和 Prepare nondet 同一句 interchangeable / 就已经交差 interchangeable」。不要把造出 *s_h* 当已经落盘。不要另写怎样写 FinalizeBlock。342 finalizedet vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-finalize-notprinted-vs-bundled.md`](worked-example-finalize-notprinted-vs-bundled.md)（不变量 780 item 2）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（342 余量），必须分开必须确定 是不是 already like-prepare interchangeable / 342 finalizedet bundled interchangeable / finalizedet-sold-as-prepare interchangeable、只依赖上一份状态和决定块 是不是 already same-as-nondet interchangeable、Finalize 回了 是不是 already settled interchangeable。可以跳过「看见必须确定就可以像 Prepare 那样 interchangeable / 就已经和 Prepare nondet 同一句 interchangeable / 就已经交差 interchangeable」。不要把造出 *s_h* 当已经落盘。不要另写怎样写 FinalizeBlock。342 finalizedet vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-finalize-notprinted-vs-bundled.md`](worked-example-finalize-notprinted-vs-bundled.md)（不变量 780 item 2）已写；完成见 781。
 
 ## 本页不抄
 
