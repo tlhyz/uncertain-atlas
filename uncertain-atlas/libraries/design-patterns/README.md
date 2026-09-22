@@ -1,3 +1,4 @@
+- [`name-the-pbtsheight-notbfttime-bar.md`](name-the-pbtsheight-notbfttime-bar.md) — H 之前仍用 BFT Time 不是已经切到 PBTS not already switched-to-pbts / not already mtp / not already clock-changed 正式三事（343 余量）（不变量 783）
 - [`name-the-pbtsheight-notzero-bar.md`](name-the-pbtsheight-notzero-bar.md) — 写成 0 不是已经启用 PBTS not already enabled / not already precision-pbts / not already switched 正式三事（343 余量）（不变量 782）
 - [`name-the-finalize-notprocesssame-bar.md`](name-the-finalize-notprocesssame-bar.md) — 两边状态机复制不是已经是 Process 对任意块同一裁决 not already process-same / not already prepare-nondet / not already settled 正式三事（342 余量）（不变量 781）
 - [`name-the-finalize-notprinted-bar.md`](name-the-finalize-notprinted-bar.md) — Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 not already printed / not already same-order / not already persisted 正式三事（342 余量）（不变量 780）

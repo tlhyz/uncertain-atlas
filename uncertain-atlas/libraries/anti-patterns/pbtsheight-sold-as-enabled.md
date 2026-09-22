@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [pbtsheight-notzero-sold-as-bundled](pbtsheight-notzero-sold-as-bundled.md) 是写成 0 not already enabled / not already precision-pbts / not already switched 正式三事（343 item 1），不是本页 bundled 全段 alone。
+- [pbtsheight-notbfttime-sold-as-bundled](pbtsheight-notbfttime-sold-as-bundled.md) 是 H 之前仍用 BFT Time not already switched-to-pbts / not already mtp / not already clock-changed 正式三事（343 item 2），不是本页 bundled 全段 alone。
 - [precision-sold-as-msgdelay](precision-sold-as-msgdelay.md) 是 Precision 不是已经是 MessageDelay，不是本页这种写成 0 不是已经启用。
 - [pbts-sold-as-mtp](pbts-sold-as-mtp.md) 是块时间必须点名算法，不是本页这种 H 之前仍用 BFT Time 不是已经切到 PBTS。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是到了 H 不是已经 Prepare 带了扩展，不是本页这种启用之后不能关不是已经是那种切换。
