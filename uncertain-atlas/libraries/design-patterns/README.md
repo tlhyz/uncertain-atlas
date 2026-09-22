@@ -1,3 +1,4 @@
+- [`name-the-abci20-notgenesiscfg-bar.md`](name-the-abci20-notgenesiscfg-bar.md) — 引擎按当前高度决定存什么要什么不是已经按创世配好了 not already genesiscfg / not already app-decides / not already settled 正式三事（346 余量）（不变量 793）
 - [`name-the-abci20-notwritecurrent-bar.md`](name-the-abci20-notwritecurrent-bar.md) — h_e 必须高于当前不是已经能写成当前高度 not already writecurrent / not already height-H-prepare / not already settled 正式三事（346 余量）（不变量 792）
 - [`name-the-abci20-notonlyveheight-bar.md`](name-the-abci20-notonlyveheight-bar.md) — 必须协调升级不是已经只改 VoteExtensionsEnableHeight not already only-veheight / not already single-node / not already field-filled 正式三事（346 余量）（不变量 791）
 - [`name-the-prepare-notenginecut-bar.md`](name-the-prepare-notenginecut-bar.md) — Req 2 保证回的列表不让块超字节上限不是已经是引擎会帮你裁 not already engine-cuts / not already overhead-deducted / not already four-gates-settled 正式三事（345 余量）（不变量 790）

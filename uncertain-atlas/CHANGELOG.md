@@ -1,3 +1,7 @@
+## 2026-09-22（续 910）
+
+- 不变量 793；语料 C770；模式 name-the-abci20-notgenesiscfg-bar；反模式 abci20-notgenesiscfg-sold-as-bundled；L10.3 第 762 条。填 L4.4 / CometBFT 档案 引擎按当前高度决定存什么要什么不是已经按创世配好了 not already genesiscfg / not already app-decides / not already settled 正式三事（346 余量） / 实现表 / 05b / 共识专题 / 停链面地图。346 abci20 vs height bundled unbundling 完成（793 item 3）。
+
 ## 2026-09-22（续 909）
 
 - 不变量 792；语料 C769；模式 name-the-abci20-notwritecurrent-bar；反模式 abci20-notwritecurrent-sold-as-bundled；L10.3 第 761 条。填 L4.4 / CometBFT 档案 h_e 必须高于当前不是已经能写成当前高度 not already writecurrent / not already height-H-prepare / not already settled 正式三事（346 余量） / 实现表 / 05b / 共识专题 / 停链面地图。346 abci20 vs height bundled unbundling 续（792 item 2）。
