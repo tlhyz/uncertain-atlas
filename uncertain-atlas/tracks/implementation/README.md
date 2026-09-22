@@ -1,3 +1,4 @@
+- [`worked-example-abci20-notwritecurrent-vs-bundled.md`](worked-example-abci20-notwritecurrent-vs-bundled.md) — h_e须高于当前≠能写成当前/须比当前高≠已是H Prepare切换/升级过了≠已交差；≠346 bundled（不变量 792）
 - [`worked-example-abci20-notonlyveheight-vs-bundled.md`](worked-example-abci20-notonlyveheight-vs-bundled.md) — 必须协调升级≠只改VE高度/单节点升≠单节点能切/能改启用高度≠已做升级；≠346 bundled（不变量 791）
 - [`worked-example-prepare-notenginecut-vs-bundled.md`](worked-example-prepare-notenginecut-vs-bundled.md) — Req2回包不超≠引擎帮裁/回包绿≠已扣开销/块不超≠四门结算；≠345 bundled（不变量 790）
 - [`worked-example-prepare-notoversize-vs-bundled.md`](worked-example-prepare-notoversize-vs-bundled.md) — 聚合体积可超max_tx_bytes≠能回超限列表/请求带上限≠已裁过/能看见超限池≠已交差；≠345 bundled（不变量 789）
