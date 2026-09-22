@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看写成 0 不是已经启用 PBTS not already enabled / not already precision-pbts / not already switched 正式三事（343 余量），必须分开写成 0 是不是 already enabled interchangeable / 343 pbtsheight bundled interchangeable / pbtsheight-sold-as-enabled interchangeable、填了 Precision 是不是 already precision-pbts interchangeable、字段在 是不是 already switched interchangeable。可以跳过「看见写成 0 就已经启用 interchangeable / 就已经填了 Precision 就是 PBTS interchangeable / 就已经切到 PBTS interchangeable」。不要把写成 0 当已经切到 PBTS。不要另写怎样设 PbtsEnableHeight。343 pbtsheight vs params bundled unbundling 在本页 item 1 启动；续 [`worked-example-pbtsheight-notbfttime-vs-bundled.md`](worked-example-pbtsheight-notbfttime-vs-bundled.md)（不变量 783 item 2）；完成见 784。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看写成 0 不是已经启用 PBTS not already enabled / not already precision-pbts / not already switched 正式三事（343 余量），必须分开写成 0 是不是 already enabled interchangeable / 343 pbtsheight bundled interchangeable / pbtsheight-sold-as-enabled interchangeable、填了 Precision 是不是 already precision-pbts interchangeable、字段在 是不是 already switched interchangeable。可以跳过「看见写成 0 就已经启用 interchangeable / 就已经填了 Precision 就是 PBTS interchangeable / 就已经切到 PBTS interchangeable」。不要把写成 0 当已经切到 PBTS。不要另写怎样设 PbtsEnableHeight。343 pbtsheight vs params bundled unbundling 在本页 item 1 启动；续 [`worked-example-pbtsheight-notbfttime-vs-bundled.md`](worked-example-pbtsheight-notbfttime-vs-bundled.md)（不变量 783 item 2）已写；完成见 784。
 
 ## 本页不抄
 

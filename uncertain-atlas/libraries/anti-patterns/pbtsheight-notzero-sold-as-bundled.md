@@ -18,6 +18,7 @@
 
 ## 和相邻反模式
 
+- [pbtsheight-notbfttime-sold-as-bundled](pbtsheight-notbfttime-sold-as-bundled.md) 是 H 之前仍用 BFT Time ≠ 已经切到 PBTS（343 item 2），不是本页写成 0 item 1 单句边界。
 - [pbtsheight-sold-as-enabled](pbtsheight-sold-as-enabled.md) 是 PbtsEnableHeight bundled 全段，不是本页写成 0 item 1 单句边界。
 - [precision-sold-as-msgdelay](precision-sold-as-msgdelay.md) 是 Precision 不是已经是 MessageDelay（336 / 761），不是本页填了 Precision ≠ PBTS 边界。
 - [pbts-sold-as-mtp](pbts-sold-as-mtp.md) 是块时间必须点名算法（40），不是本页字段在 ≠ 已经切算法 边界。

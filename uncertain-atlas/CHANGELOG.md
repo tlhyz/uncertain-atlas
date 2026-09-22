@@ -1,3 +1,7 @@
+## 2026-09-22（续 900）
+
+- 不变量 783；语料 C760；模式 name-the-pbtsheight-notbfttime-bar；反模式 pbtsheight-notbfttime-sold-as-bundled；L10.3 第 752 条。填 L4.4 / CometBFT 档案 H 之前仍用 BFT Time 不是已经切到 PBTS not already switched-to-pbts / not already mtp / not already clock-changed 正式三事（343 余量） / 实现表 / 05b / 共识专题 / 停链面地图。343 pbtsheight vs params bundled unbundling 续（783 item 2）。
+
 ## 2026-09-22（续 899）
 
 - 不变量 782；语料 C759；模式 name-the-pbtsheight-notzero-bar；反模式 pbtsheight-notzero-sold-as-bundled；L10.3 第 751 条。填 L4.4 / CometBFT 档案 写成 0 不是已经启用 PBTS not already enabled / not already precision-pbts / not already switched 正式三事（343 余量） / 实现表 / 05b / 共识专题 / 停链面地图。343 pbtsheight vs params bundled unbundling 启动（782 item 1）。

@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) List of Parameters / FeatureParams.PbtsEnableHeight。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「写成 0 不是已经启用 PBTS 不是已经填了 Precision 就是 PBTS / H 之前仍用 BFT Time 不是已经切到 PBTS / 启用之后不能关不是已经是扩展启用高度那种切换」，不是 Precision 已经是 MessageDelay，也不是到了 H 已经 Prepare 带了扩展。不要另写怎样设 PbtsEnableHeight。343 pbtsheight vs params bundled unbundling 启动（782 item 1）；精读 [`worked-example-pbtsheight-notzero-vs-bundled.md`](worked-example-pbtsheight-notzero-vs-bundled.md)（不变量 782 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「写成 0 不是已经启用 PBTS 不是已经填了 Precision 就是 PBTS / H 之前仍用 BFT Time 不是已经切到 PBTS / 启用之后不能关不是已经是扩展启用高度那种切换」，不是 Precision 已经是 MessageDelay，也不是到了 H 已经 Prepare 带了扩展。不要另写怎样设 PbtsEnableHeight。343 pbtsheight vs params bundled unbundling 续（782+783）；精读 [`worked-example-pbtsheight-notzero-vs-bundled.md`](worked-example-pbtsheight-notzero-vs-bundled.md)（不变量 782 item 1）、[`worked-example-pbtsheight-notbfttime-vs-bundled.md`](worked-example-pbtsheight-notbfttime-vs-bundled.md)（不变量 783 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了同步参数就已经启用、已经切到 PBTS、已经能关」，必须分开写成 0 不是已经启用 PBTS 是不是已经填了 Precision 就是 PBTS、H 之前仍用 BFT Time 是不是已经切到 PBTS、启用之后不能关是不是已经是扩展启用高度那种切换。可以跳过「看见填了同步参数就已经启用」。不要把写成 0 当已经切到 PBTS。不要另写怎样设 PbtsEnableHeight。343 pbtsheight vs params bundled unbundling 启动（782 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了同步参数就已经启用、已经切到 PBTS、已经能关」，必须分开写成 0 不是已经启用 PBTS 是不是已经填了 Precision 就是 PBTS、H 之前仍用 BFT Time 是不是已经切到 PBTS、启用之后不能关是不是已经是扩展启用高度那种切换。可以跳过「看见填了同步参数就已经启用」。不要把写成 0 当已经切到 PBTS。不要另写怎样设 PbtsEnableHeight。343 pbtsheight vs params bundled unbundling 续（782+783）。
 
 ## 本页不抄
 
