@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirement 2 [`PrepareProposal`, tx-size]。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「整池可见不是已经只能看见装得进一块的子集 / 聚合体积可以超过 max_tx_bytes 不是已经能回超限列表 / Req 2 保证回的列表不让块超字节上限不是已经是引擎会帮你裁」，不是整池都给 Prepare 就已经没有上限，也不是 -1 就按 100 MB 验已经没有上限。不要另写怎样裁回包。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「整池可见不是已经只能看见装得进一块的子集 / 聚合体积可以超过 max_tx_bytes 不是已经能回超限列表 / Req 2 保证回的列表不让块超字节上限不是已经是引擎会帮你裁」，不是整池都给 Prepare 就已经没有上限，也不是 -1 就按 100 MB 验已经没有上限。不要另写怎样裁回包。345 preparereturn vs pool bundled unbundling 启动（788 item 1）；精读 [`worked-example-prepare-notblocksubset-vs-bundled.md`](worked-example-prepare-notblocksubset-vs-bundled.md)（不变量 788 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见整池都给了就已经能整包交回去、已经超了就能回超限、已经是引擎会帮你裁」，必须分开整池可见是不是已经只能看见装得进一块的子集、聚合体积可以超过 max_tx_bytes 是不是已经能回超限列表、Req 2 保证回的列表不让块超字节上限是不是已经是引擎会帮你裁。可以跳过「看见整池都给了就已经能整包交回去」。不要另写怎样裁回包。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见整池都给了就已经能整包交回去、已经超了就能回超限、已经是引擎会帮你裁」，必须分开整池可见是不是已经只能看见装得进一块的子集、聚合体积可以超过 max_tx_bytes 是不是已经能回超限列表、Req 2 保证回的列表不让块超字节上限是不是已经是引擎会帮你裁。可以跳过「看见整池都给了就已经能整包交回去」。不要另写怎样裁回包。345 preparereturn vs pool bundled unbundling 启动（788 item 1）。
 
 ## 本页不抄
 
