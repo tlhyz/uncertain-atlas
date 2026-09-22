@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [abci20-notonlyveheight-sold-as-bundled](abci20-notonlyveheight-sold-as-bundled.md) 是必须协调升级 not already only-veheight / not already single-node / not already field-filled 正式三事（346 item 1），不是本页 bundled 全段 alone。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是到了 H 不是已经 Prepare 带了扩展，不是本页这种必须协调升级不是已经只改 VoteExtensionsEnableHeight。
 - [enable-height-sold-as-safe](enable-height-sold-as-safe.md) 是治理改 enable-height 会让未升级节点 panic，不是本页这种 h_e 必须高于当前不是已经能写成当前高度。
 - [pbtsheight-sold-as-enabled](pbtsheight-sold-as-enabled.md) 是写成 0 不是已经启用 PBTS，不是本页这种引擎按当前高度决定存什么要什么不是已经按创世配好了。
