@@ -1,3 +1,7 @@
+## 2026-09-22（续 906）
+
+- 不变量 789；语料 C766；模式 name-the-prepare-notoversize-bar；反模式 prepare-notoversize-sold-as-bundled；L10.3 第 758 条。填 L4.4 / CometBFT 档案 聚合体积可以超过 max_tx_bytes 不是已经能回超限列表 not already can-return-oversize / not already request-trimmed / not already settled 正式三事（345 余量） / 实现表 / 05b / 共识专题 / 停链面地图。345 preparereturn vs pool bundled unbundling 续（789 item 2）。
+
 ## 2026-09-22（续 905）
 
 - 不变量 788；语料 C765；模式 name-the-prepare-notblocksubset-bar；反模式 prepare-notblocksubset-sold-as-bundled；L10.3 第 757 条。填 L4.4 / CometBFT 档案 整池可见不是已经只能看见装得进一块的子集 not already block-subset / not already no-cap / not already all-visible-is-uncapped 正式三事（345 余量） / 实现表 / 05b / 共识专题 / 停链面地图。345 preparereturn vs pool bundled unbundling 启动（788 item 1）。
