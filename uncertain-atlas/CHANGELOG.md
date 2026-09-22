@@ -1,3 +1,7 @@
+## 2026-09-22（续 908）
+
+- 不变量 791；语料 C768；模式 name-the-abci20-notonlyveheight-bar；反模式 abci20-notonlyveheight-sold-as-bundled；L10.3 第 760 条。填 L4.4 / CometBFT 档案 必须协调升级不是已经只改 VoteExtensionsEnableHeight not already only-veheight / not already single-node / not already field-filled 正式三事（346 余量） / 实现表 / 05b / 共识专题 / 停链面地图。346 abci20 vs height bundled unbundling 启动（791 item 1）。
+
 ## 2026-09-22（续 907）
 
 - 不变量 790；语料 C767；模式 name-the-prepare-notenginecut-bar；反模式 prepare-notenginecut-sold-as-bundled；L10.3 第 759 条。填 L4.4 / CometBFT 档案 Req 2 保证回的列表不让块超字节上限不是已经是引擎会帮你裁 not already engine-cuts / not already overhead-deducted / not already four-gates-settled 正式三事（345 余量） / 实现表 / 05b / 共识专题 / 停链面地图。345 preparereturn vs pool bundled unbundling 完成（790 item 3）。

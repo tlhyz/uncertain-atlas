@@ -1,3 +1,4 @@
+- [`name-the-abci20-notonlyveheight-bar.md`](name-the-abci20-notonlyveheight-bar.md) — 必须协调升级不是已经只改 VoteExtensionsEnableHeight not already only-veheight / not already single-node / not already field-filled 正式三事（346 余量）（不变量 791）
 - [`name-the-prepare-notenginecut-bar.md`](name-the-prepare-notenginecut-bar.md) — Req 2 保证回的列表不让块超字节上限不是已经是引擎会帮你裁 not already engine-cuts / not already overhead-deducted / not already four-gates-settled 正式三事（345 余量）（不变量 790）
 - [`name-the-prepare-notoversize-bar.md`](name-the-prepare-notoversize-bar.md) — 聚合体积可以超过 max_tx_bytes 不是已经能回超限列表 not already can-return-oversize / not already request-trimmed / not already settled 正式三事（345 余量）（不变量 789）
 - [`name-the-prepare-notblocksubset-bar.md`](name-the-prepare-notblocksubset-bar.md) — 整池可见不是已经只能看见装得进一块的子集 not already block-subset / not already no-cap / not already all-visible-is-uncapped 正式三事（345 余量）（不变量 788）

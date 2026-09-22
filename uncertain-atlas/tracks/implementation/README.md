@@ -1,3 +1,4 @@
+- [`worked-example-abci20-notonlyveheight-vs-bundled.md`](worked-example-abci20-notonlyveheight-vs-bundled.md) — 必须协调升级≠只改VE高度/单节点升≠单节点能切/能改启用高度≠已做升级；≠346 bundled（不变量 791）
 - [`worked-example-prepare-notenginecut-vs-bundled.md`](worked-example-prepare-notenginecut-vs-bundled.md) — Req2回包不超≠引擎帮裁/回包绿≠已扣开销/块不超≠四门结算；≠345 bundled（不变量 790）
 - [`worked-example-prepare-notoversize-vs-bundled.md`](worked-example-prepare-notoversize-vs-bundled.md) — 聚合体积可超max_tx_bytes≠能回超限列表/请求带上限≠已裁过/能看见超限池≠已交差；≠345 bundled（不变量 789）
 - [`worked-example-prepare-notblocksubset-vs-bundled.md`](worked-example-prepare-notblocksubset-vs-bundled.md) — 整池可见≠只能看见一块子集/能看见全部≠无上限/整池都来了≠整包能回；≠345 bundled（不变量 788）
