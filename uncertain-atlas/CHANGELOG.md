@@ -1,3 +1,7 @@
+## 2026-09-22（续 911）
+
+- 不变量 794；语料 C771；模式 name-the-req3-notany-bar；反模式 req3-notany-sold-as-bundled；L10.3 第 763 条。填 L4.4 / CometBFT 档案 正确提议者的准备提案必须被正确接收者 Accept 不是已经是任意块都会 Accept not already any-block / not already default-accept / not already settled 正式三事（347 余量） / 实现表 / 05b / 共识专题 / 停链面地图。347 req3 vs accept bundled unbundling 启动（794 item 1）。
+
 ## 2026-09-22（续 910）
 
 - 不变量 793；语料 C770；模式 name-the-abci20-notgenesiscfg-bar；反模式 abci20-notgenesiscfg-sold-as-bundled；L10.3 第 762 条。填 L4.4 / CometBFT 档案 引擎按当前高度决定存什么要什么不是已经按创世配好了 not already genesiscfg / not already app-decides / not already settled 正式三事（346 余量） / 实现表 / 05b / 共识专题 / 停链面地图。346 abci20 vs height bundled unbundling 完成（793 item 3）。

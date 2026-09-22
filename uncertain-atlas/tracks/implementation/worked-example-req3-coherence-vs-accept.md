@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirement 3 [`PrepareProposal`, `ProcessProposal`, coherence]。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「正确提议者的准备提案必须被正确接收者 Accept 不是已经是任意块都会 Accept / Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭不是已经只是活性问题 / Req 3 是大量测试和自动验证的目标不是已经测过」，不是四门已经结算，也不是 Process 必须只依赖请求和上一份状态。不要另写怎样写 Prepare 或 Process。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「正确提议者的准备提案必须被正确接收者 Accept 不是已经是任意块都会 Accept / Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭不是已经只是活性问题 / Req 3 是大量测试和自动验证的目标不是已经测过」，不是四门已经结算，也不是 Process 必须只依赖请求和上一份状态。不要另写怎样写 Prepare 或 Process。347 req3 vs accept bundled unbundling 启动（794 item 1）；精读 [`worked-example-req3-notany-vs-bundled.md`](worked-example-req3-notany-vs-bundled.md)（不变量 794 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须 Accept 就已经任意块都会过、已经只是活性、已经测过」，必须分开正确提议者的准备提案必须被正确接收者 Accept 是不是已经是任意块都会 Accept、Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭是不是已经只是活性问题、Req 3 是大量测试和自动验证的目标是不是已经测过。可以跳过「看见必须 Accept 就已经交差」。不要另写怎样写 Prepare 或 Process。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须 Accept 就已经任意块都会过、已经只是活性、已经测过」，必须分开正确提议者的准备提案必须被正确接收者 Accept 是不是已经是任意块都会 Accept、Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭是不是已经只是活性问题、Req 3 是大量测试和自动验证的目标是不是已经测过。可以跳过「看见必须 Accept 就已经交差」。不要另写怎样写 Prepare 或 Process。347 req3 vs accept bundled unbundling 启动（794 item 1）。
 
 ## 本页不抄
 
