@@ -1,3 +1,7 @@
+## 2026-09-22（续 902）
+
+- 不变量 785；语料 C762；模式 name-the-maxbytes-notfulltx-bar；反模式 maxbytes-notfulltx-sold-as-bundled；L10.3 第 754 条。填 L4.4 / CometBFT 档案 MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易 not already full-tx / not already evidence-max / not already overhead-known 正式三事（344 余量） / 实现表 / 05b / 共识专题 / 停链面地图。344 maxbytesoverhead vs full bundled unbundling 启动（785 item 1）。
+
 ## 2026-09-22（续 901）
 
 - 不变量 784；语料 C761；模式 name-the-pbtsheight-notveheight-bar；反模式 pbtsheight-notveheight-sold-as-bundled；L10.3 第 753 条。填 L4.4 / CometBFT 档案 启用之后不能关不是已经是扩展启用高度那种切换 not already veheight-switch / not already can-disable / not already prepare-ext 正式三事（343 余量） / 实现表 / 05b / 共识专题 / 停链面地图。343 pbtsheight vs params bundled unbundling 完成（784 item 3）。

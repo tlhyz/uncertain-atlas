@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [maxbytes-notfulltx-sold-as-bundled](maxbytes-notfulltx-sold-as-bundled.md) 是 MaxBytes 减去头集合证据才是交易上限 not already full-tx / not already evidence-max / not already overhead-known 正式三事（344 item 1），不是本页 bundled 全段 alone。
 - [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md) 是 -1 就按 100 MB 验不是已经没有上限，不是本页这种扣掉开销才是交易上限。
 - [evidencemaxbytes-sold-as-blockmax](evidencemaxbytes-sold-as-blockmax.md) 是证据 MaxBytes 不是已经是块 MaxBytes，不是本页这种交易上限还要扣开销。
 - [preparetimeout-sold-as-liveness](preparetimeout-sold-as-liveness.md) 是立刻整块执行不是已经离开关键路径，不是本页这种满块投递延迟。

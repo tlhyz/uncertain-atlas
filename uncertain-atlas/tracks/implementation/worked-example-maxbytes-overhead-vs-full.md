@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) List of Parameters / BlockParams.MaxBytes。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易 / 诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB / timeout 必须按满块投递延迟算不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行」，不是 -1 就按 100 MB 验已经没有上限，也不是证据 MaxBytes 已经是块 MaxBytes。不要另写怎样算头和证据开销。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易 / 诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB / timeout 必须按满块投递延迟算不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行」，不是 -1 就按 100 MB 验已经没有上限，也不是证据 MaxBytes 已经是块 MaxBytes。不要另写怎样算头和证据开销。344 maxbytesoverhead vs full bundled unbundling 启动（785 item 1）；精读 [`worked-example-maxbytes-notfulltx-vs-bundled.md`](worked-example-maxbytes-notfulltx-vs-bundled.md)（不变量 785 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 MaxBytes 就已经整块都能装交易、已经只会出默认 21 MB、已经装得下这次 Prepare 执行」，必须分开 MaxBytes 减去头集合证据才是交易上限是不是已经整块都能装交易、诚实验证者 MAY 出满 MaxBytes 是不是已经只会出默认 21 MB、timeout 必须按满块投递延迟算是不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行。可以跳过「看见填了 MaxBytes 就已经整块都能装交易」。不要把 21 MB 当不确定常数。不要另写怎样算头和证据开销。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了 MaxBytes 就已经整块都能装交易、已经只会出默认 21 MB、已经装得下这次 Prepare 执行」，必须分开 MaxBytes 减去头集合证据才是交易上限是不是已经整块都能装交易、诚实验证者 MAY 出满 MaxBytes 是不是已经只会出默认 21 MB、timeout 必须按满块投递延迟算是不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行。可以跳过「看见填了 MaxBytes 就已经整块都能装交易」。不要另写怎样算头和证据开销。344 maxbytesoverhead vs full bundled unbundling 启动（785 item 1）。
 
 ## 本页不抄
 

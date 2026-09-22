@@ -1,3 +1,4 @@
+- [`maxbytes-notfulltx-sold-as-bundled.md`](maxbytes-notfulltx-sold-as-bundled.md) — 完整块上限 被写成已经整块都能装交易 / 能装交易 被写成已经是证据 MaxBytes / 扣了开销 被写成已经算出开销字节（不变量 785）
 - [`pbtsheight-notveheight-sold-as-bundled.md`](pbtsheight-notveheight-sold-as-bundled.md) — 启用之后不能关 被写成已经是扩展启用高度那种切换 / 必须比当前高 被写成已经能关 / 字段锁死 被写成已经 Prepare 带了扩展（不变量 784）
 - [`pbtsheight-notbfttime-sold-as-bundled.md`](pbtsheight-notbfttime-sold-as-bundled.md) — H 之前仍用 BFT Time 被写成已经切到 PBTS / 到了 H 被写成已经是 MTP / 能出合法提案 被写成已经换完钟（不变量 783）
 - [`pbtsheight-notzero-sold-as-bundled.md`](pbtsheight-notzero-sold-as-bundled.md) — 写成 0 被写成已经启用 PBTS / 填了 Precision 被写成已经是 PBTS / 字段在 被写成已经切到 PBTS（不变量 782）
