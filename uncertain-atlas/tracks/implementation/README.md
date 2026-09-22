@@ -1,3 +1,4 @@
+- [`worked-example-req9-notextstate-vs-bundled.md`](worked-example-req9-notextstate-vs-bundled.md) — Extend/Verify不得改已提交≠签了就进状态/Verify过≠已进状态/扩展在≠已是34；≠349 bundled（不变量 802）
 - [`worked-example-req9-notaccept-vs-bundled.md`](worked-example-req9-notaccept-vs-bundled.md) — Process不得改已提交≠Accept已改/Reject≠已回滚/跑过≠进工作状态；≠349 bundled（不变量 801）
 - [`worked-example-req9-notsettled-vs-bundled.md`](worked-example-req9-notsettled-vs-bundled.md) — Prepare不得改已提交≠已交差/立刻执行≠Finalize+Commit/能改列表≠能改s；≠349 bundled（不变量 800）
 - [`worked-example-req6-notsafety-vs-bundled.md`](worked-example-req6-notsafety-vs-bundled.md) — 面对Req5同类活性≠丢安全性/同路≠提案一致性/扩展条≠提案条；≠348 bundled（不变量 799）

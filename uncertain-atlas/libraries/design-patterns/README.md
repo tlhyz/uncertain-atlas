@@ -1,3 +1,4 @@
+- [`name-the-req9-notextstate-bar.md`](name-the-req9-notextstate-bar.md) — Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态 not already into-state / not already verified-in / not already ve-dep-34 正式三事（349 余量）（不变量 802）
 - [`name-the-req9-notaccept-bar.md`](name-the-req9-notaccept-bar.md) — Process 不得改已提交状态不是已经 Accept 就已经改了 not already accept-mutated / not already reject-rollback / not already workstate 正式三事（349 余量）（不变量 801）
 - [`name-the-req9-notsettled-bar.md`](name-the-req9-notsettled-bar.md) — Prepare 不得改已提交状态不是已经立刻执行就已经交差 not already settled / not already finalize-commit / not already mutate-s 正式三事（349 余量）（不变量 800）
 - [`name-the-req6-notsafety-bar.md`](name-the-req6-notsafety-bar.md) — 会面对和 Req 5 同一类活性问题不是已经丢了安全性 not already lost-safety / not already req3-same / not already proposal-path 正式三事（348 余量）（不变量 799）
