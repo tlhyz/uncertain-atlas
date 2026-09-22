@@ -1,3 +1,4 @@
+- [`req3-notbyz-sold-as-bundled.md`](req3-notbyz-sold-as-bundled.md) — Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭 被写成已经只是活性问题 / 算拜占庭 被写成已经是非确定 bug / Prepare 也能踩中 被写成已经交差（不变量 795）
 - [`req3-notany-sold-as-bundled.md`](req3-notany-sold-as-bundled.md) — 正确提议者的准备提案必须被正确接收者 Accept 被写成已经是任意块都会 Accept / 必须 Accept 被写成已经写了默认 Accept / 正确进程之间过 被写成已经交差（不变量 794）
 - [`abci20-notgenesiscfg-sold-as-bundled.md`](abci20-notgenesiscfg-sold-as-bundled.md) — 引擎按当前高度决定存什么要什么 被写成已经按创世配好了 / 应用配了参数 被写成已经是应用自己决定存什么 / 当前高度在 被写成已经按将来的 h_e 在要扩展（不变量 793）
 - [`abci20-notwritecurrent-sold-as-bundled.md`](abci20-notwritecurrent-sold-as-bundled.md) — h_e 必须高于当前 被写成已经能写成当前高度 / 必须比当前高 被写成已经是到了 H 才 Prepare 带扩展 / 升级过了 被写成已经交差（不变量 792）
