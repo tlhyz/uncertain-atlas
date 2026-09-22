@@ -1,3 +1,4 @@
+- [`prepare-notenginecut-sold-as-bundled.md`](prepare-notenginecut-sold-as-bundled.md) — Req 2 保证回的列表不让块超 被写成已经是引擎会帮你裁 / 回包绿了 被写成已经扣过开销 / 块不会超 被写成已经四门结算（不变量 790）
 - [`prepare-notoversize-sold-as-bundled.md`](prepare-notoversize-sold-as-bundled.md) — 聚合体积可以超过 max_tx_bytes 被写成已经能回超限列表 / 请求里带了上限 被写成已经按上限裁过 / 能看见超限的池 被写成已经交差（不变量 789）
 - [`prepare-notblocksubset-sold-as-bundled.md`](prepare-notblocksubset-sold-as-bundled.md) — 整池可见 被写成已经只能看见装得进一块的子集 / 能看见全部 被写成已经没有上限 / 整池都来了 被写成已经整包能回（不变量 788）
 - [`maxbytes-nottimeoutfit-sold-as-bundled.md`](maxbytes-nottimeoutfit-sold-as-bundled.md) — timeout 必须按满块投递 被写成已经装得下 Prepare / 超时在 被写成已经是 Prepare 执行超时 / 投递延迟 被写成已经离开关键路径（不变量 787）
