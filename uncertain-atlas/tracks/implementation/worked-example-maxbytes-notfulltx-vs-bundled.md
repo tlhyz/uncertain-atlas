@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易 not already full-tx / not already evidence-max / not already overhead-known 正式三事（344 余量），必须分开完整块上限 是不是 already full-tx interchangeable / 344 maxbytesoverhead bundled interchangeable / maxbytesoverhead-sold-as-full interchangeable、能装交易 是不是 already evidence-max interchangeable、扣了开销 是不是 already overhead-known interchangeable。可以跳过「看见填了 MaxBytes 就已经整块都能装交易 interchangeable / 就已经是证据 MaxBytes interchangeable / 就已经算出开销字节 interchangeable」。不要把 21 MB 当不确定常数。不要另写怎样算头和证据开销。344 maxbytesoverhead vs full bundled unbundling 在本页 item 1 启动；续 [`worked-example-maxbytes-notdefault21-vs-bundled.md`](worked-example-maxbytes-notdefault21-vs-bundled.md)（不变量 786 item 2）；完成见 787。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易 not already full-tx / not already evidence-max / not already overhead-known 正式三事（344 余量），必须分开完整块上限 是不是 already full-tx interchangeable / 344 maxbytesoverhead bundled interchangeable / maxbytesoverhead-sold-as-full interchangeable、能装交易 是不是 already evidence-max interchangeable、扣了开销 是不是 already overhead-known interchangeable。可以跳过「看见填了 MaxBytes 就已经整块都能装交易 interchangeable / 就已经是证据 MaxBytes interchangeable / 就已经算出开销字节 interchangeable」。不要把 21 MB 当不确定常数。不要另写怎样算头和证据开销。344 maxbytesoverhead vs full bundled unbundling 在本页 item 1 启动；续 [`worked-example-maxbytes-notonly21-vs-bundled.md`](worked-example-maxbytes-notonly21-vs-bundled.md)（不变量 786 item 2）已写；完成见 787。
 
 ## 本页不抄
 
