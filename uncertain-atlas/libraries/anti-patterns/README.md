@@ -1,3 +1,4 @@
+- [`req9-notsettled-sold-as-bundled.md`](req9-notsettled-sold-as-bundled.md) — Prepare 不得改已提交状态 被写成已经交差 / 立刻执行了 被写成已经是 Finalize + Commit / 能改列表 被写成已经能改 *s*（不变量 800）
 - [`req6-notsafety-sold-as-bundled.md`](req6-notsafety-sold-as-bundled.md) — 会面对和 Req 5 同一类活性问题 被写成已经丢了安全性 / 和 Req 5 同一路 被写成已经是提案一致性 / 扩展这条 被写成已经是提案那条（不变量 799）
 - [`req6-notliveness-sold-as-bundled.md`](req6-notliveness-sold-as-bundled.md) — Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 被写成已经只是活性问题 / Precommit 被丢掉 被写成已经是块非法 / 有确定 bug 被写成已经是非确定 bug（不变量 798）
 - [`req6-notany-sold-as-bundled.md`](req6-notany-sold-as-bundled.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept 被写成已经是任意扩展都会 Accept / 必须 Accept 被写成已经写了默认 Accept / 正确进程之间过 被写成已经交差（不变量 797）
