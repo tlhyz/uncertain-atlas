@@ -1,3 +1,7 @@
+## 2026-09-22（续 912）
+
+- 不变量 795；语料 C772；模式 name-the-req3-notbyz-bar；反模式 req3-notbyz-sold-as-bundled；L10.3 第 764 条。填 L4.4 / CometBFT 档案 Prepare 或 Process 里有确定 bug 会让踩中的人算拜占庭不是已经只是活性问题 not already only-liveness / not already process-nondet / not already settled 正式三事（347 余量） / 实现表 / 05b / 共识专题 / 停链面地图。347 req3 vs accept bundled unbundling 续（795 item 2）。
+
 ## 2026-09-22（续 911）
 
 - 不变量 794；语料 C771；模式 name-the-req3-notany-bar；反模式 req3-notany-sold-as-bundled；L10.3 第 763 条。填 L4.4 / CometBFT 档案 正确提议者的准备提案必须被正确接收者 Accept 不是已经是任意块都会 Accept not already any-block / not already default-accept / not already settled 正式三事（347 余量） / 实现表 / 05b / 共识专题 / 停链面地图。347 req3 vs accept bundled unbundling 启动（794 item 1）。
