@@ -1,3 +1,4 @@
+- [`worked-example-pbtsheight-notveheight-vs-bundled.md`](worked-example-pbtsheight-notveheight-vs-bundled.md) — 启用后不能关≠扩展启用高度切换/必须比当前高≠已能关/字段锁死≠Prepare带扩展；≠343 bundled（不变量 784）
 - [`worked-example-pbtsheight-notbfttime-vs-bundled.md`](worked-example-pbtsheight-notbfttime-vs-bundled.md) — H前仍用BFT Time≠已切PBTS/到了H≠MTP/能提案≠已换钟；≠343 bundled（不变量 783）
 - [`worked-example-pbtsheight-notzero-vs-bundled.md`](worked-example-pbtsheight-notzero-vs-bundled.md) — 写成0≠已启用/填Precision≠PBTS/字段在≠已切换；≠343 bundled（不变量 782）
 - [`worked-example-infousage-notappversion-vs-bundled.md`](worked-example-infousage-notappversion-vs-bundled.md) — app_version in Header≠370 last_block persisted/389 Info response version/147 AppHash in header；≠494 bundled（不变量 670）
