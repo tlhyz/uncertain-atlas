@@ -1,3 +1,4 @@
+- [`worked-example-req3-nottested-vs-bundled.md`](worked-example-req3-nottested-vs-bundled.md) — Req3是测试目标≠已测过/会prevote nil≠引擎会挡/写了测试目标≠已交差；≠347 bundled（不变量 796）
 - [`worked-example-req3-notbyz-vs-bundled.md`](worked-example-req3-notbyz-vs-bundled.md) — 确定bug踩中算拜占庭≠只是活性/算拜占庭≠Process非确定bug/Prepare也能踩≠已交差；≠347 bundled（不变量 795）
 - [`worked-example-req3-notany-vs-bundled.md`](worked-example-req3-notany-vs-bundled.md) — 正确提议者提案须Accept≠任意块都会过/须Accept≠已写默认Accept/正确进程之间过≠已交差；≠347 bundled（不变量 794）
 - [`worked-example-abci20-notgenesiscfg-vs-bundled.md`](worked-example-abci20-notgenesiscfg-vs-bundled.md) — 引擎按当前高度存要≠按创世配好/应用配参数≠应用自己决定存/当前高度在≠按将来h_e要扩展；≠346 bundled（不变量 793）
