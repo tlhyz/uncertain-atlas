@@ -1,3 +1,7 @@
+## 2026-09-22（续 915）
+
+- 不变量 798；语料 C775；模式 name-the-req6-notliveness-bar；反模式 req6-notliveness-sold-as-bundled；L10.3 第 767 条。填 L4.4 / CometBFT 档案 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题 not already only-liveness / not already block-invalid / not already nondet 正式三事（348 余量） / 实现表 / 05b / 共识专题 / 停链面地图。348 req6 vs accept bundled unbundling 续（798 item 2）。
+
 ## 2026-09-22（续 914）
 
 - 不变量 797；语料 C774；模式 name-the-req6-notany-bar；反模式 req6-notany-sold-as-bundled；L10.3 第 766 条。填 L4.4 / CometBFT 档案 正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept not already any-extension / not already default-accept / not already settled 正式三事（348 余量） / 实现表 / 05b / 共识专题 / 停链面地图。348 req6 vs accept bundled unbundling 启动（797 item 1）。
