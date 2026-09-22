@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirements 11–12 [`FinalizeBlock`, determinism]。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 / Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 / 两边状态机复制不是已经是 Process 对任意块同一裁决」，不是 Prepare 没有确定性要求，也不是回执已经交差。不要另写怎样写 FinalizeBlock。 342 finalizedet vs prepare bundled unbundling 续（779+780）；精读 [`worked-example-finalize-notlikeprepare-vs-bundled.md`](worked-example-finalize-notlikeprepare-vs-bundled.md)（不变量 779 item 1）、[`worked-example-finalize-notprinted-vs-bundled.md`](worked-example-finalize-notprinted-vs-bundled.md)（不变量 780 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 / Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 / 两边状态机复制不是已经是 Process 对任意块同一裁决」，不是 Prepare 没有确定性要求，也不是回执已经交差。不要另写怎样写 FinalizeBlock。 342 finalizedet vs prepare bundled unbundling 完成（779+780+781）；精读 [`worked-example-finalize-notlikeprepare-vs-bundled.md`](worked-example-finalize-notlikeprepare-vs-bundled.md)（不变量 779 item 1）、[`worked-example-finalize-notprinted-vs-bundled.md`](worked-example-finalize-notprinted-vs-bundled.md)（不变量 780 item 2）、[`worked-example-finalize-notprocesssame-vs-bundled.md`](worked-example-finalize-notprocesssame-vs-bundled.md)（不变量 781 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 Prepare 那样、已经印进本头、已经是 Process 同判」，必须分开 Finalize 算出的状态必须只依赖上一份状态和决定块是不是已经可以像 Prepare 那样依赖其它值、Finalize 算出的结果必须只依赖上一份状态和决定块是不是已经是 Code/Data 印进本头、两边状态机复制是不是已经是 Process 对任意块同一裁决。可以跳过「看见必须确定就已经可以像 Prepare 那样」。不要把造出 *s_h* 当已经落盘。不要另写怎样写 FinalizeBlock。 342 finalizedet vs prepare bundled unbundling 续（779+780）；续 [`worked-example-finalize-notprocesssame-vs-bundled.md`](worked-example-finalize-notprocesssame-vs-bundled.md)（不变量 781 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须确定就已经可以像 Prepare 那样、已经印进本头、已经是 Process 同判」，必须分开 Finalize 算出的状态必须只依赖上一份状态和决定块是不是已经可以像 Prepare 那样依赖其它值、Finalize 算出的结果必须只依赖上一份状态和决定块是不是已经是 Code/Data 印进本头、两边状态机复制是不是已经是 Process 对任意块同一裁决。可以跳过「看见必须确定就已经可以像 Prepare 那样」。不要把造出 *s_h* 当已经落盘。不要另写怎样写 FinalizeBlock。 342 finalizedet vs prepare bundled unbundling 完成（779+780+781）。
 
 ## 本页不抄
 

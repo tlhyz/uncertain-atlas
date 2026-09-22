@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 not already printed / not already same-order / not already persisted 正式三事（342 余量），必须分开结果必须确定 是不是 already printed interchangeable / 342 finalizedet bundled interchangeable / finalizedet-sold-as-prepare interchangeable、只依赖这两份 是不是 already same-order interchangeable、造出了 *T* 是不是 already persisted interchangeable。可以跳过「看见结果必须确定就已经印进本头 interchangeable / 就已经是回执顺序对上 interchangeable / 就已经落盘 interchangeable」。不要把造出 *T* 当已经落盘。不要另写怎样写 FinalizeBlock。342 finalizedet vs prepare bundled unbundling 在本页 item 2 续（779 + 780）；续 [`worked-example-finalize-notprocesssame-vs-bundled.md`](worked-example-finalize-notprocesssame-vs-bundled.md)（不变量 781 item 3）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 not already printed / not already same-order / not already persisted 正式三事（342 余量），必须分开结果必须确定 是不是 already printed interchangeable / 342 finalizedet bundled interchangeable / finalizedet-sold-as-prepare interchangeable、只依赖这两份 是不是 already same-order interchangeable、造出了 *T* 是不是 already persisted interchangeable。可以跳过「看见结果必须确定就已经印进本头 interchangeable / 就已经是回执顺序对上 interchangeable / 就已经落盘 interchangeable」。不要把造出 *T* 当已经落盘。不要另写怎样写 FinalizeBlock。342 finalizedet vs prepare bundled unbundling 在本页 item 2 续（779 + 780）；续 [`worked-example-finalize-notprocesssame-vs-bundled.md`](worked-example-finalize-notprocesssame-vs-bundled.md)（不变量 781 item 3）已写；完成见 781。
 
 ## 本页不抄
 

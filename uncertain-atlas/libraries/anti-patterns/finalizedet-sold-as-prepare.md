@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [finalize-notprocesssame-sold-as-bundled](finalize-notprocesssame-sold-as-bundled.md) 是两边状态机复制不是已经是 Process 对任意块同一裁决 item 3 单句边界，不是本页 FinalizeBlock 确定性 bundled 全段。
 - [finalize-notprinted-sold-as-bundled](finalize-notprinted-sold-as-bundled.md) 是 Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 item 2 单句边界，不是本页 FinalizeBlock 确定性 bundled 全段。
 - [finalize-notlikeprepare-sold-as-bundled](finalize-notlikeprepare-sold-as-bundled.md) 是 Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 item 1 单句边界，不是本页 FinalizeBlock 确定性 bundled 全段。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare 没有确定性要求 ≠ 已经必须确定，不是本页这种 Finalize 必须确定 ≠ 已经可以像 Prepare 那样。

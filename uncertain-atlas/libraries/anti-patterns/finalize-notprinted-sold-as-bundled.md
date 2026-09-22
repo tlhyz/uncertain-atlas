@@ -19,6 +19,7 @@
 ## 和相邻反模式
 
 - [finalize-notprocesssame-sold-as-bundled](finalize-notprocesssame-sold-as-bundled.md) 是状态机复制 ≠ 已经是 Process 同判（342 item 3），不是本页结果必须确定 item 2 单句边界。
+- [finalize-notprocesssame-sold-as-bundled](finalize-notprocesssame-sold-as-bundled.md) 是状态机复制 ≠ 已经是 Process 同判（342 item 3），不是本页结果必须确定 item 2 单句边界。
 - [finalizedet-sold-as-prepare](finalizedet-sold-as-prepare.md) 是 FinalizeBlock 确定性 bundled 全段，不是本页结果必须确定 item 2 单句边界。
 - [finalize-notlikeprepare-sold-as-bundled](finalize-notlikeprepare-sold-as-bundled.md) 是必须确定 ≠ 已经可以像 Prepare 那样（342 item 1），不是本页结果必须确定 ≠ 已经印进本头 边界。
 - [exectxresult-sold-as-consensus](exectxresult-sold-as-consensus.md) 是结果列表已经同一顺序（316），不是本页只依赖这两份 ≠ 已经是回执顺序对上 边界。
