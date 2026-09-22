@@ -1,3 +1,7 @@
+## 2026-09-22（续 918）
+
+- 不变量 801；语料 C778；模式 name-the-req9-notaccept-bar；反模式 req9-notaccept-sold-as-bundled；L10.3 第 770 条。填 L4.4 / CometBFT 档案 Process 不得改已提交状态不是已经 Accept 就已经改了 not already accept-mutated / not already reject-rollback / not already workstate 正式三事（349 余量） / 实现表 / 05b / 共识专题 / 停链面地图。349 req9 vs commit bundled unbundling 续（801 item 2）。
+
 ## 2026-09-22（续 917）
 
 - 不变量 800；语料 C777；模式 name-the-req9-notsettled-bar；反模式 req9-notsettled-sold-as-bundled；L10.3 第 769 条。填 L4.4 / CometBFT 档案 Prepare 不得改已提交状态不是已经立刻执行就已经交差 not already settled / not already finalize-commit / not already mutate-s 正式三事（349 余量） / 实现表 / 05b / 共识专题 / 停链面地图。349 req9 vs commit bundled unbundling 启动（800 item 1）。

@@ -1,3 +1,4 @@
+- [`name-the-req9-notaccept-bar.md`](name-the-req9-notaccept-bar.md) — Process 不得改已提交状态不是已经 Accept 就已经改了 not already accept-mutated / not already reject-rollback / not already workstate 正式三事（349 余量）（不变量 801）
 - [`name-the-req9-notsettled-bar.md`](name-the-req9-notsettled-bar.md) — Prepare 不得改已提交状态不是已经立刻执行就已经交差 not already settled / not already finalize-commit / not already mutate-s 正式三事（349 余量）（不变量 800）
 - [`name-the-req6-notsafety-bar.md`](name-the-req6-notsafety-bar.md) — 会面对和 Req 5 同一类活性问题不是已经丢了安全性 not already lost-safety / not already req3-same / not already proposal-path 正式三事（348 余量）（不变量 799）
 - [`name-the-req6-notliveness-bar.md`](name-the-req6-notliveness-bar.md) — Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题 not already only-liveness / not already block-invalid / not already nondet 正式三事（348 余量）（不变量 798）
