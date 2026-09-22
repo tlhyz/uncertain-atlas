@@ -1,3 +1,7 @@
+## 2026-09-22（续 922）
+
+- 不变量 805；语料 C782；模式 name-the-extend-notperheight-bar；反模式 extend-notperheight-sold-as-bundled；L10.3 第 774 条。填 L4.4 / CometBFT 档案 一轮只能交出一份扩展不是已经是每一高度一份 not already per-height / not already re-extend-round / not already req6-accept 正式三事（350 余量） / 实现表 / 05b / 共识专题 / 停链面地图。350 extendonce vs round bundled unbundling 完成（805 item 3）。
+
 ## 2026-09-22（续 921）
 
 - 不变量 804；语料 C781；模式 name-the-extend-notnil-bar；反模式 extend-notnil-sold-as-bundled；L10.3 第 773 条。填 L4.4 / CometBFT 档案 ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票 not already signed-nil / not already prevote-calls / not already vote-has-ext 正式三事（350 余量） / 实现表 / 05b / 共识专题 / 停链面地图。350 extendonce vs round bundled unbundling 续（804 item 2）。
