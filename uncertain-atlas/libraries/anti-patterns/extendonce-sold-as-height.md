@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [extend-notresign-sold-as-bundled](extend-notresign-sold-as-bundled.md) 是一轮最多一张 Precommit not already resign / not already is-extension / not already re-emit 正式三事（350 item 1），不是本页 bundled 全段 alone。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收整张预提交就已经是块非法，不是本页这种一轮最多一张 Precommit 不是已经能再签一张。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是同一块不是已经是同一份扩展，不是本页这种 ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票。
 - [req6coherence-sold-as-accept](req6coherence-sold-as-accept.md) 是正确进程交出的扩展必须被正确接收者 Verify Accept，不是本页这种一轮只能交出一份扩展不是已经是每一高度一份。

@@ -1,3 +1,4 @@
+- [`worked-example-extend-notresign-vs-bundled.md`](worked-example-extend-notresign-vs-bundled.md) — 一轮最多一张Precommit≠能再签/有票≠已是扩展/还能换轮≠本轮再出；≠350 bundled（不变量 803）
 - [`worked-example-req9-notextstate-vs-bundled.md`](worked-example-req9-notextstate-vs-bundled.md) — Extend/Verify不得改已提交≠签了就进状态/Verify过≠已进状态/扩展在≠已是34；≠349 bundled（不变量 802）
 - [`worked-example-req9-notaccept-vs-bundled.md`](worked-example-req9-notaccept-vs-bundled.md) — Process不得改已提交≠Accept已改/Reject≠已回滚/跑过≠进工作状态；≠349 bundled（不变量 801）
 - [`worked-example-req9-notsettled-vs-bundled.md`](worked-example-req9-notsettled-vs-bundled.md) — Prepare不得改已提交≠已交差/立刻执行≠Finalize+Commit/能改列表≠能改s；≠349 bundled（不变量 800）

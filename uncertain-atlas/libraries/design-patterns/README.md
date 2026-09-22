@@ -1,3 +1,4 @@
+- [`name-the-extend-notresign-bar.md`](name-the-extend-notresign-bar.md) — 一轮最多一张 Precommit 不是已经能再签一张 not already resign / not already is-extension / not already re-emit 正式三事（350 余量）（不变量 803）
 - [`name-the-req9-notextstate-bar.md`](name-the-req9-notextstate-bar.md) — Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态 not already into-state / not already verified-in / not already ve-dep-34 正式三事（349 余量）（不变量 802）
 - [`name-the-req9-notaccept-bar.md`](name-the-req9-notaccept-bar.md) — Process 不得改已提交状态不是已经 Accept 就已经改了 not already accept-mutated / not already reject-rollback / not already workstate 正式三事（349 余量）（不变量 801）
 - [`name-the-req9-notsettled-bar.md`](name-the-req9-notsettled-bar.md) — Prepare 不得改已提交状态不是已经立刻执行就已经交差 not already settled / not already finalize-commit / not already mutate-s 正式三事（349 余量）（不变量 800）

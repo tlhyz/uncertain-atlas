@@ -1,3 +1,4 @@
+- [`extend-notresign-sold-as-bundled.md`](extend-notresign-sold-as-bundled.md) — 一轮最多一张 Precommit 被写成已经能再签一张 / 有一张票 被写成已经是扩展本身 / 还能换轮 被写成已经这一轮能再出一张（不变量 803）
 - [`req9-notextstate-sold-as-bundled.md`](req9-notextstate-sold-as-bundled.md) — Extend 和 Verify 不得改已提交状态 被写成已经写进已提交状态 / Verify 过了 被写成已经进状态 / 扩展在 被写成已经是 34（不变量 802）
 - [`req9-notaccept-sold-as-bundled.md`](req9-notaccept-sold-as-bundled.md) — Process 不得改已提交状态 被写成已经改了已提交状态 / Reject 了 被写成已经回滚了已提交状态 / 跑过了 被写成已经进工作状态（不变量 801）
 - [`req9-notsettled-sold-as-bundled.md`](req9-notsettled-sold-as-bundled.md) — Prepare 不得改已提交状态 被写成已经交差 / 立刻执行了 被写成已经是 Finalize + Commit / 能改列表 被写成已经能改 *s*（不变量 800）
