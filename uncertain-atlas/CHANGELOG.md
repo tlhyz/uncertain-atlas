@@ -1,3 +1,7 @@
+## 2026-09-22（续 897）
+
+- 不变量 780；语料 C757；模式 name-the-finalize-notprinted-bar；反模式 finalize-notprinted-sold-as-bundled；L10.3 第 749 条。填 L4.4 / CometBFT 档案 Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 not already printed / not already same-order / not already persisted 正式三事（342 余量） / 实现表 / 05b / 共识专题 / 停链面地图。342 finalizedet vs prepare bundled unbundling 续（780 item 2）。
+
 ## 2026-09-21（续 896）
 
 - 不变量 779；语料 C756；模式 name-the-finalize-notlikeprepare-bar；反模式 finalize-notlikeprepare-sold-as-bundled；L10.3 第 748 条。填 L4.4 / CometBFT 档案 Finalize 算出的状态必须只依赖上一份状态和决定块不是已经可以像 Prepare 那样依赖其它值 not already like-prepare / not already same-as-nondet / not already settled 正式三事（342 余量） / 实现表 / 05b / 共识专题 / 停链面地图。342 finalizedet vs prepare bundled unbundling 启动（779 item 1）。
