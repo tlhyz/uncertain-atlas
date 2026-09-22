@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirements，Requirement 6 之前。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「一轮最多一张 Precommit 不是已经能再签一张 / ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票 / 一轮只能交出一份扩展不是已经是每一高度一份」，不是验签拒收整张预提交就已经是块非法，也不是正确进程交出的扩展必须被正确接收者 Verify Accept。不要另写怎样写 ExtendVote。350 extendonce vs round bundled unbundling 续（803+804）；精读 [`worked-example-extend-notresign-vs-bundled.md`](worked-example-extend-notresign-vs-bundled.md)（不变量 803 item 1）；精读 [`worked-example-extend-notnil-vs-bundled.md`](worked-example-extend-notnil-vs-bundled.md)（不变量 804 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「一轮最多一张 Precommit 不是已经能再签一张 / ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票 / 一轮只能交出一份扩展不是已经是每一高度一份」，不是验签拒收整张预提交就已经是块非法，也不是正确进程交出的扩展必须被正确接收者 Verify Accept。不要另写怎样写 ExtendVote。350 extendonce vs round bundled unbundling 完成（803+804+805）；精读 [`worked-example-extend-notresign-vs-bundled.md`](worked-example-extend-notresign-vs-bundled.md)（不变量 803 item 1）；精读 [`worked-example-extend-notnil-vs-bundled.md`](worked-example-extend-notnil-vs-bundled.md)（不变量 804 item 2）；精读 [`worked-example-extend-notperheight-vs-bundled.md`](worked-example-extend-notperheight-vs-bundled.md)（不变量 805 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 Precommit 就已经能再签一张、已经签了 nil 票、已经是每一高度一份」，必须分开一轮最多一张 Precommit 是不是已经能再签一张、ExtendVote 只在即将广播非 nil Precommit 时才叫是不是已经签了 nil 票、一轮只能交出一份扩展是不是已经是每一高度一份。可以跳过「看见到了 Precommit 就已经能再签一张」。不要另写怎样写 ExtendVote。350 extendonce vs round bundled unbundling 续（803+804）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 Precommit 就已经能再签一张、已经签了 nil 票、已经是每一高度一份」，必须分开一轮最多一张 Precommit 是不是已经能再签一张、ExtendVote 只在即将广播非 nil Precommit 时才叫是不是已经签了 nil 票、一轮只能交出一份扩展是不是已经是每一高度一份。可以跳过「看见到了 Precommit 就已经能再签一张」。不要另写怎样写 ExtendVote。350 extendonce vs round bundled unbundling 完成（803+804+805）。
 
 ## 本页不抄
 

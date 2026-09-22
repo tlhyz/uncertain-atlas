@@ -1,3 +1,4 @@
+- [`worked-example-extend-notperheight-vs-bundled.md`](worked-example-extend-notperheight-vs-bundled.md) — 一轮一份扩展≠每高一份/又能换轮≠本轮再交/交出来≠348必须Accept；≠350 bundled（不变量 805）
 - [`worked-example-extend-notnil-vs-bundled.md`](worked-example-extend-notnil-vs-bundled.md) — ExtendVote非nil才叫≠已签nil/启用扩展≠prevote会叫/有票≠票已带扩展；≠350 bundled（不变量 804）
 - [`worked-example-extend-notresign-vs-bundled.md`](worked-example-extend-notresign-vs-bundled.md) — 一轮最多一张Precommit≠能再签/有票≠已是扩展/还能换轮≠本轮再出；≠350 bundled（不变量 803）
 - [`worked-example-req9-notextstate-vs-bundled.md`](worked-example-req9-notextstate-vs-bundled.md) — Extend/Verify不得改已提交≠签了就进状态/Verify过≠已进状态/扩展在≠已是34；≠349 bundled（不变量 802）
