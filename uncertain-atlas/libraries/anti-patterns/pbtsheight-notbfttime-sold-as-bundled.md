@@ -19,6 +19,7 @@
 ## 和相邻反模式
 
 - [pbtsheight-notzero-sold-as-bundled](pbtsheight-notzero-sold-as-bundled.md) 是写成 0 ≠ 已启用（343 item 1），不是本页 H 之前仍用 BFT Time item 2 单句边界。
+- [pbtsheight-notveheight-sold-as-bundled](pbtsheight-notveheight-sold-as-bundled.md) 是启用之后不能关 ≠ 扩展启用高度那种切换（343 item 3），不是本页 H 之前仍用 BFT Time item 2 单句边界。
 - [pbtsheight-sold-as-enabled](pbtsheight-sold-as-enabled.md) 是 PbtsEnableHeight bundled 全段，不是本页 item 2 单句边界。
 - [pbts-sold-as-mtp](pbts-sold-as-mtp.md) 是块时间必须点名算法（40），不是本页到了 H ≠ 已经是 MTP 边界。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是到了 H 不是已经 Prepare 带了扩展（330），不是本页旧钟还在边界。

@@ -1,3 +1,7 @@
+## 2026-09-22（续 901）
+
+- 不变量 784；语料 C761；模式 name-the-pbtsheight-notveheight-bar；反模式 pbtsheight-notveheight-sold-as-bundled；L10.3 第 753 条。填 L4.4 / CometBFT 档案 启用之后不能关不是已经是扩展启用高度那种切换 not already veheight-switch / not already can-disable / not already prepare-ext 正式三事（343 余量） / 实现表 / 05b / 共识专题 / 停链面地图。343 pbtsheight vs params bundled unbundling 完成（784 item 3）。
+
 ## 2026-09-22（续 900）
 
 - 不变量 783；语料 C760；模式 name-the-pbtsheight-notbfttime-bar；反模式 pbtsheight-notbfttime-sold-as-bundled；L10.3 第 752 条。填 L4.4 / CometBFT 档案 H 之前仍用 BFT Time 不是已经切到 PBTS not already switched-to-pbts / not already mtp / not already clock-changed 正式三事（343 余量） / 实现表 / 05b / 共识专题 / 停链面地图。343 pbtsheight vs params bundled unbundling 续（783 item 2）。

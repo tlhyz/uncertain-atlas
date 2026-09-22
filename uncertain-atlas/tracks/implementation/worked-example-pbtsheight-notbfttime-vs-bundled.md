@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 H 之前仍用 BFT Time 不是已经切到 PBTS not already switched-to-pbts / not already mtp / not already clock-changed 正式三事（343 余量），必须分开 H 之前仍用 BFT Time 是不是 already switched-to-pbts interchangeable / 343 pbtsheight bundled interchangeable / pbtsheight-sold-as-enabled interchangeable、到了 H 是不是 already mtp interchangeable、能出合法提案 是不是 already clock-changed interchangeable。可以跳过「看见 H 之前仍用 BFT Time 就已经切到 PBTS interchangeable / 就已经是 MTP interchangeable / 就已经换完钟 interchangeable」。不要把到了 H 当已经是 MTP。不要另写怎样设 PbtsEnableHeight。343 pbtsheight vs params bundled unbundling 在本页 item 2 续（782 + 783）；续 [`worked-example-pbtsheight-notveheight-vs-bundled.md`](worked-example-pbtsheight-notveheight-vs-bundled.md)（不变量 784 item 3）；完成见 784。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 H 之前仍用 BFT Time 不是已经切到 PBTS not already switched-to-pbts / not already mtp / not already clock-changed 正式三事（343 余量），必须分开 H 之前仍用 BFT Time 是不是 already switched-to-pbts interchangeable / 343 pbtsheight bundled interchangeable / pbtsheight-sold-as-enabled interchangeable、到了 H 是不是 already mtp interchangeable、能出合法提案 是不是 already clock-changed interchangeable。可以跳过「看见 H 之前仍用 BFT Time 就已经切到 PBTS interchangeable / 就已经是 MTP interchangeable / 就已经换完钟 interchangeable」。不要把到了 H 当已经是 MTP。不要另写怎样设 PbtsEnableHeight。343 pbtsheight vs params bundled unbundling 在本页 item 2 续（782 + 783）；续 [`worked-example-pbtsheight-notveheight-vs-bundled.md`](worked-example-pbtsheight-notveheight-vs-bundled.md)（不变量 784 item 3）已写；完成见 784。
 
 ## 本页不抄
 
