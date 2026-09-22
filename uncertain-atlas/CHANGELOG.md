@@ -1,3 +1,7 @@
+## 2026-09-22（续 899）
+
+- 不变量 782；语料 C759；模式 name-the-pbtsheight-notzero-bar；反模式 pbtsheight-notzero-sold-as-bundled；L10.3 第 751 条。填 L4.4 / CometBFT 档案 写成 0 不是已经启用 PBTS not already enabled / not already precision-pbts / not already switched 正式三事（343 余量） / 实现表 / 05b / 共识专题 / 停链面地图。343 pbtsheight vs params bundled unbundling 启动（782 item 1）。
+
 ## 2026-09-22（续 898）
 
 - 不变量 781；语料 C758；模式 name-the-finalize-notprocesssame-bar；反模式 finalize-notprocesssame-sold-as-bundled；L10.3 第 750 条。填 L4.4 / CometBFT 档案 两边状态机复制不是已经是 Process 对任意块同一裁决 not already process-same / not already prepare-nondet / not already settled 正式三事（342 余量） / 实现表 / 05b / 共识专题 / 停链面地图。342 finalizedet vs prepare bundled unbundling 完成（781 item 3）。
