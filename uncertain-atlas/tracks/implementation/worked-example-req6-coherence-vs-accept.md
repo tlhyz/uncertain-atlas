@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirement 6 [`ExtendVote`, `VerifyVoteExtension`, coherence]。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept / Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题 / 会面对和 Req 5 同一类活性问题不是已经丢了安全性」，不是验签拒收整张预提交就已经是块非法，也不是 Verify 必须只依赖扩展、这块和上一份状态。不要另写怎样写 Extend 或 Verify。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept / Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题 / 会面对和 Req 5 同一类活性问题不是已经丢了安全性」，不是验签拒收整张预提交就已经是块非法，也不是 Verify 必须只依赖扩展、这块和上一份状态。不要另写怎样写 Extend 或 Verify。348 req6 vs accept bundled unbundling 启动（797 item 1）；精读 [`worked-example-req6-notany-vs-bundled.md`](worked-example-req6-notany-vs-bundled.md)（不变量 797 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须 Accept 就已经任意扩展都会过、已经只是活性、已经丢了安全性」，必须分开正确进程交出的扩展必须被正确接收者 Verify Accept 是不是已经是任意扩展都会 Accept、Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉是不是已经只是活性问题、会面对和 Req 5 同一类活性问题是不是已经丢了安全性。可以跳过「看见必须 Accept 就已经交差」。不要另写怎样写 Extend 或 Verify。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见必须 Accept 就已经任意扩展都会过、已经只是活性、已经丢了安全性」，必须分开正确进程交出的扩展必须被正确接收者 Verify Accept 是不是已经是任意扩展都会 Accept、Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉是不是已经只是活性问题、会面对和 Req 5 同一类活性问题是不是已经丢了安全性。可以跳过「看见必须 Accept 就已经交差」。不要另写怎样写 Extend 或 Verify。348 req6 vs accept bundled unbundling 启动（797 item 1）。
 
 ## 本页不抄
 

@@ -1,3 +1,7 @@
+## 2026-09-22（续 914）
+
+- 不变量 797；语料 C774；模式 name-the-req6-notany-bar；反模式 req6-notany-sold-as-bundled；L10.3 第 766 条。填 L4.4 / CometBFT 档案 正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept not already any-extension / not already default-accept / not already settled 正式三事（348 余量） / 实现表 / 05b / 共识专题 / 停链面地图。348 req6 vs accept bundled unbundling 启动（797 item 1）。
+
 ## 2026-09-22（续 913）
 
 - 不变量 796；语料 C773；模式 name-the-req3-nottested-bar；反模式 req3-nottested-sold-as-bundled；L10.3 第 765 条。填 L4.4 / CometBFT 档案 Req 3 是大量测试和自动验证的目标不是已经测过 not already tested / not already engine-blocks / not already settled 正式三事（347 余量） / 实现表 / 05b / 共识专题 / 停链面地图。347 req3 vs accept bundled unbundling 完成（796 item 3）。
