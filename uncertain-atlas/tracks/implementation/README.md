@@ -1,3 +1,4 @@
+- [`worked-example-prepare-notblocksubset-vs-bundled.md`](worked-example-prepare-notblocksubset-vs-bundled.md) — 整池可见≠只能看见一块子集/能看见全部≠无上限/整池都来了≠整包能回；≠345 bundled（不变量 788）
 - [`worked-example-maxbytes-nottimeoutfit-vs-bundled.md`](worked-example-maxbytes-nottimeoutfit-vs-bundled.md) — 满块投递timeout≠装得下Prepare/超时在≠Prepare执行/投递延迟≠离开关键路径；≠344 bundled（不变量 787）
 - [`worked-example-maxbytes-notonly21-vs-bundled.md`](worked-example-maxbytes-notonly21-vs-bundled.md) — MAY出满≠只会出默认21MB/能打到配置上限≠无上限/写了MAY≠必须打满；≠344 bundled（不变量 786）
 - [`worked-example-maxbytes-notfulltx-vs-bundled.md`](worked-example-maxbytes-notfulltx-vs-bundled.md) — 完整块上限≠整块都能装交易/能装交易≠证据MaxBytes/扣开销≠已算出开销字节；≠344 bundled（不变量 785）

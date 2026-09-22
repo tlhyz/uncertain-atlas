@@ -1,3 +1,4 @@
+- [`prepare-notblocksubset-sold-as-bundled.md`](prepare-notblocksubset-sold-as-bundled.md) — 整池可见 被写成已经只能看见装得进一块的子集 / 能看见全部 被写成已经没有上限 / 整池都来了 被写成已经整包能回（不变量 788）
 - [`maxbytes-nottimeoutfit-sold-as-bundled.md`](maxbytes-nottimeoutfit-sold-as-bundled.md) — timeout 必须按满块投递 被写成已经装得下 Prepare / 超时在 被写成已经是 Prepare 执行超时 / 投递延迟 被写成已经离开关键路径（不变量 787）
 - [`maxbytes-notonly21-sold-as-bundled.md`](maxbytes-notonly21-sold-as-bundled.md) — 诚实验证者 MAY 出满 被写成已经只会出默认 21 MB / 能打到配置上限 被写成已经没有上限 / 写了 MAY 被写成已经必须打满（不变量 786）
 - [`maxbytes-notfulltx-sold-as-bundled.md`](maxbytes-notfulltx-sold-as-bundled.md) — 完整块上限 被写成已经整块都能装交易 / 能装交易 被写成已经是证据 MaxBytes / 扣了开销 被写成已经算出开销字节（不变量 785）

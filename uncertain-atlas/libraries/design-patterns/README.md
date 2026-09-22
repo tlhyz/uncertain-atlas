@@ -1,3 +1,4 @@
+- [`name-the-prepare-notblocksubset-bar.md`](name-the-prepare-notblocksubset-bar.md) — 整池可见不是已经只能看见装得进一块的子集 not already block-subset / not already no-cap / not already all-visible-is-uncapped 正式三事（345 余量）（不变量 788）
 - [`name-the-maxbytes-nottimeoutfit-bar.md`](name-the-maxbytes-nottimeoutfit-bar.md) — timeout 必须按满块投递延迟算不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行 not already timeoutpropose-fit / not already prepare-exec / not already critical-path 正式三事（344 余量）（不变量 787）
 - [`name-the-maxbytes-notonly21-bar.md`](name-the-maxbytes-notonly21-bar.md) — 诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB not already default-21 / not already unlimited / not already may-is-must 正式三事（344 余量）（不变量 786）
 - [`name-the-maxbytes-notfulltx-bar.md`](name-the-maxbytes-notfulltx-bar.md) — MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易 not already full-tx / not already evidence-max / not already overhead-known 正式三事（344 余量）（不变量 785）
