@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [req6-notany-sold-as-bundled](req6-notany-sold-as-bundled.md) 是正确进程交出的扩展必须被正确接收者 Verify Accept not already any-extension / not already default-accept / not already settled 正式三事（348 item 1），不是本页 bundled 全段 alone。
+- [req6-notliveness-sold-as-bundled](req6-notliveness-sold-as-bundled.md) 是 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉 not already only-liveness / not already block-invalid / not already nondet 正式三事（348 item 2），不是本页 bundled 全段 alone。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收整张预提交不是已经是块非法，不是本页这种正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept。
 - [verifydet-sold-as-extend](verifydet-sold-as-extend.md) 是 Verify 必须只依赖扩展、这块和上一份状态，不是本页这种 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题。
 - [req3coherence-sold-as-accept](req3coherence-sold-as-accept.md) 是正确提议者的准备提案必须被正确接收者 Accept，不是本页这种会面对和 Req 5 同一类活性问题不是已经丢了安全性。
