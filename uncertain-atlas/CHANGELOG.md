@@ -1,3 +1,7 @@
+## 2026-09-22（续 920）
+
+- 不变量 803；语料 C780；模式 name-the-extend-notresign-bar；反模式 extend-notresign-sold-as-bundled；L10.3 第 772 条。填 L4.4 / CometBFT 档案 一轮最多一张 Precommit 不是已经能再签一张 not already resign / not already is-extension / not already re-emit 正式三事（350 余量） / 实现表 / 05b / 共识专题 / 停链面地图。350 extendonce vs round bundled unbundling 启动（803 item 1）。
+
 ## 2026-09-22（续 919）
 
 - 不变量 802；语料 C779；模式 name-the-req9-notextstate-bar；反模式 req9-notextstate-sold-as-bundled；L10.3 第 771 条。填 L4.4 / CometBFT 档案 Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态 not already into-state / not already verified-in / not already ve-dep-34 正式三事（349 余量） / 实现表 / 05b / 共识专题 / 停链面地图。349 req9 vs commit bundled unbundling 完成（802 item 3）。
