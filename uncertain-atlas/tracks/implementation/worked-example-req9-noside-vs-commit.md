@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Formal Requirement 9 [*all*, no-side-effects]。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Prepare 不得改已提交状态不是已经立刻执行就已经交差 / Process 不得改已提交状态不是已经 Accept 就已经改了 / Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态」，不是四门已经结算，也不是候选已经是 ExecuteTxState。不要另写怎样守 Req 9。349 req9 vs commit bundled unbundling 启动（800 item 1）；精读 [`worked-example-req9-notsettled-vs-bundled.md`](worked-example-req9-notsettled-vs-bundled.md)（不变量 800 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Prepare 不得改已提交状态不是已经立刻执行就已经交差 / Process 不得改已提交状态不是已经 Accept 就已经改了 / Extend 和 Verify 不得改已提交状态不是已经签了扩展就已经进状态」，不是四门已经结算，也不是候选已经是 ExecuteTxState。不要另写怎样守 Req 9。349 req9 vs commit bundled unbundling 续（800+801）；精读 [`worked-example-req9-notsettled-vs-bundled.md`](worked-example-req9-notsettled-vs-bundled.md)（不变量 800 item 1）；精读 [`worked-example-req9-notaccept-vs-bundled.md`](worked-example-req9-notaccept-vs-bundled.md)（不变量 801 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见立刻执行了就已经交差、已经 Accept 就已经改了、已经签了扩展就已经进状态」，必须分开 Prepare 不得改已提交状态是不是已经立刻执行就已经交差、Process 不得改已提交状态是不是已经 Accept 就已经改了、Extend 和 Verify 不得改已提交状态是不是已经签了扩展就已经进状态。可以跳过「看见立刻执行了就已经交差」。不要另写怎样守 Req 9。349 req9 vs commit bundled unbundling 启动（800 item 1）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见立刻执行了就已经交差、已经 Accept 就已经改了、已经签了扩展就已经进状态」，必须分开 Prepare 不得改已提交状态是不是已经立刻执行就已经交差、Process 不得改已提交状态是不是已经 Accept 就已经改了、Extend 和 Verify 不得改已提交状态是不是已经签了扩展就已经进状态。可以跳过「看见立刻执行了就已经交差」。不要另写怎样守 Req 9。349 req9 vs commit bundled unbundling 续（800+801）。
 
 ## 本页不抄
 
