@@ -1,3 +1,7 @@
+## 2026-09-22（续 903）
+
+- 不变量 786；语料 C763；模式 name-the-maxbytes-notonly21-bar；反模式 maxbytes-notonly21-sold-as-bundled；L10.3 第 755 条。填 L4.4 / CometBFT 档案 诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB not already default-21 / not already unlimited / not already may-is-must 正式三事（344 余量） / 实现表 / 05b / 共识专题 / 停链面地图。344 maxbytesoverhead vs full bundled unbundling 续（786 item 2）。
+
 ## 2026-09-22（续 902）
 
 - 不变量 785；语料 C762；模式 name-the-maxbytes-notfulltx-bar；反模式 maxbytes-notfulltx-sold-as-bundled；L10.3 第 754 条。填 L4.4 / CometBFT 档案 MaxBytes 减去头集合证据才是交易上限不是已经整块都能装交易 not already full-tx / not already evidence-max / not already overhead-known 正式三事（344 余量） / 实现表 / 05b / 共识专题 / 停链面地图。344 maxbytesoverhead vs full bundled unbundling 启动（785 item 1）。
@@ -76,7 +80,7 @@
 
 ## 2026-09-21（续 883）
 
-- 不变量 766；语料 C743；模式 name-the-maxbytes-notdefault21-bar；反模式 maxbytes-notdefault21-sold-as-bundled；L10.3 第 735 条。填 L4.4 / CometBFT 档案 必须 -1 或不超过 100 MB 不是已经是默认 21 MB not already default-21 / not already bandwidth-assessed / not already tuned-down 正式三事（337 余量） / 实现表 / 05b / 共识专题 / 停链面地图。337 maxbytescap vs unlimited bundled unbundling 完成（766 item 3）。
+- 不变量 766；语料 C743；模式 name-the-maxbytes-notonly21-bar；反模式 maxbytes-notonly21-sold-as-bundled；L10.3 第 735 条。填 L4.4 / CometBFT 档案 必须 -1 或不超过 100 MB 不是已经是默认 21 MB not already default-21 / not already bandwidth-assessed / not already tuned-down 正式三事（337 余量） / 实现表 / 05b / 共识专题 / 停链面地图。337 maxbytescap vs unlimited bundled unbundling 完成（766 item 3）。
 
 ## 2026-09-21（续 882）
 

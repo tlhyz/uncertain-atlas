@@ -1,3 +1,4 @@
+- [`worked-example-maxbytes-notonly21-vs-bundled.md`](worked-example-maxbytes-notonly21-vs-bundled.md) — MAY出满≠只会出默认21MB/能打到配置上限≠无上限/写了MAY≠必须打满；≠344 bundled（不变量 786）
 - [`worked-example-maxbytes-notfulltx-vs-bundled.md`](worked-example-maxbytes-notfulltx-vs-bundled.md) — 完整块上限≠整块都能装交易/能装交易≠证据MaxBytes/扣开销≠已算出开销字节；≠344 bundled（不变量 785）
 - [`worked-example-pbtsheight-notveheight-vs-bundled.md`](worked-example-pbtsheight-notveheight-vs-bundled.md) — 启用后不能关≠扩展启用高度切换/必须比当前高≠已能关/字段锁死≠Prepare带扩展；≠343 bundled（不变量 784）
 - [`worked-example-pbtsheight-notbfttime-vs-bundled.md`](worked-example-pbtsheight-notbfttime-vs-bundled.md) — H前仍用BFT Time≠已切PBTS/到了H≠MTP/能提案≠已换钟；≠343 bundled（不变量 783）
