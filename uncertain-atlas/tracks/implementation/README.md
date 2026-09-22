@@ -1,3 +1,4 @@
+- [`worked-example-abci20-notgenesiscfg-vs-bundled.md`](worked-example-abci20-notgenesiscfg-vs-bundled.md) — 引擎按当前高度存要≠按创世配好/应用配参数≠应用自己决定存/当前高度在≠按将来h_e要扩展；≠346 bundled（不变量 793）
 - [`worked-example-abci20-notwritecurrent-vs-bundled.md`](worked-example-abci20-notwritecurrent-vs-bundled.md) — h_e须高于当前≠能写成当前/须比当前高≠已是H Prepare切换/升级过了≠已交差；≠346 bundled（不变量 792）
 - [`worked-example-abci20-notonlyveheight-vs-bundled.md`](worked-example-abci20-notonlyveheight-vs-bundled.md) — 必须协调升级≠只改VE高度/单节点升≠单节点能切/能改启用高度≠已做升级；≠346 bundled（不变量 791）
 - [`worked-example-prepare-notenginecut-vs-bundled.md`](worked-example-prepare-notenginecut-vs-bundled.md) — Req2回包不超≠引擎帮裁/回包绿≠已扣开销/块不超≠四门结算；≠345 bundled（不变量 790）

@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [Requirements for the Application](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md) Application configuration required to switch to ABCI 2.0。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「必须协调升级不是已经只改 VoteExtensionsEnableHeight / h_e 必须高于当前不是已经能写成当前高度 / 引擎按当前高度决定存什么要什么不是已经按创世配好了」，不是到了 H 就已经 Prepare 带了扩展，也不是治理改 enable-height 会 panic。不要另写怎样做协调升级。346 abci20 vs height bundled unbundling 续（791+792）；精读 [`worked-example-abci20-notonlyveheight-vs-bundled.md`](worked-example-abci20-notonlyveheight-vs-bundled.md)（不变量 791 item 1）、[`worked-example-abci20-notwritecurrent-vs-bundled.md`](worked-example-abci20-notwritecurrent-vs-bundled.md)（不变量 792 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「必须协调升级不是已经只改 VoteExtensionsEnableHeight / h_e 必须高于当前不是已经能写成当前高度 / 引擎按当前高度决定存什么要什么不是已经按创世配好了」，不是到了 H 就已经 Prepare 带了扩展，也不是治理改 enable-height 会 panic。不要另写怎样做协调升级。346 abci20 vs height bundled unbundling 完成（791+792+793）；精读 [`worked-example-abci20-notonlyveheight-vs-bundled.md`](worked-example-abci20-notonlyveheight-vs-bundled.md)（不变量 791 item 1）、[`worked-example-abci20-notwritecurrent-vs-bundled.md`](worked-example-abci20-notwritecurrent-vs-bundled.md)（不变量 792 item 2）、[`worked-example-abci20-notgenesiscfg-vs-bundled.md`](worked-example-abci20-notgenesiscfg-vs-bundled.md)（不变量 793 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了启用高度就已经切完、已经能写成当前、已经按创世配好了存什么」，必须分开必须协调升级是不是已经只改 VoteExtensionsEnableHeight、h_e 必须高于当前是不是已经能写成当前高度、引擎按当前高度决定存什么要什么是不是已经按创世配好了。可以跳过「看见填了启用高度就已经切到 ABCI 2.0」。不要另写怎样做协调升级。346 abci20 vs height bundled unbundling 续（791+792）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见填了启用高度就已经切完、已经能写成当前、已经按创世配好了存什么」，必须分开必须协调升级是不是已经只改 VoteExtensionsEnableHeight、h_e 必须高于当前是不是已经能写成当前高度、引擎按当前高度决定存什么要什么是不是已经按创世配好了。可以跳过「看见填了启用高度就已经切到 ABCI 2.0」。不要另写怎样做协调升级。346 abci20 vs height bundled unbundling 完成（791+792+793）。
 
 ## 本页不抄
 
