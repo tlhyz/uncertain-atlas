@@ -1,3 +1,7 @@
+## 2026-09-22（续 898）
+
+- 不变量 781；语料 C758；模式 name-the-finalize-notprocesssame-bar；反模式 finalize-notprocesssame-sold-as-bundled；L10.3 第 750 条。填 L4.4 / CometBFT 档案 两边状态机复制不是已经是 Process 对任意块同一裁决 not already process-same / not already prepare-nondet / not already settled 正式三事（342 余量） / 实现表 / 05b / 共识专题 / 停链面地图。342 finalizedet vs prepare bundled unbundling 完成（781 item 3）。
+
 ## 2026-09-22（续 897）
 
 - 不变量 780；语料 C757；模式 name-the-finalize-notprinted-bar；反模式 finalize-notprinted-sold-as-bundled；L10.3 第 749 条。填 L4.4 / CometBFT 档案 Finalize 算出的结果必须只依赖上一份状态和决定块不是已经是 Code/Data 印进本头 not already printed / not already same-order / not already persisted 正式三事（342 余量） / 实现表 / 05b / 共识专题 / 停链面地图。342 finalizedet vs prepare bundled unbundling 续（780 item 2）。
