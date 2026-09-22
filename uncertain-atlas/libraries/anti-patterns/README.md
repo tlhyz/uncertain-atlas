@@ -1,3 +1,4 @@
+- [`pbtsheight-notzero-sold-as-bundled.md`](pbtsheight-notzero-sold-as-bundled.md) — 写成 0 被写成已经启用 PBTS / 填了 Precision 被写成已经是 PBTS / 字段在 被写成已经切到 PBTS（不变量 782）
 - [`finalize-notprocesssame-sold-as-bundled.md`](finalize-notprocesssame-sold-as-bundled.md) — 状态机复制 被写成已经是 Process 同判 / 状态一起演化 被写成已经是 Prepare nondet / Agreement 被写成已经交差（不变量 781）
 - [`finalize-notprinted-sold-as-bundled.md`](finalize-notprinted-sold-as-bundled.md) — 结果必须确定 被写成已经印进本头 / 只依赖这两份 被写成已经是回执顺序对上 / 造出了 *T* 被写成已经落盘（不变量 780）
 - [`finalize-notlikeprepare-sold-as-bundled.md`](finalize-notlikeprepare-sold-as-bundled.md) — 必须确定 被写成已经可以像 Prepare 那样 / 只依赖上一份状态和决定块 被写成已经和 Prepare nondet 同一句 / Finalize 回了 被写成已经交差（不变量 779）
