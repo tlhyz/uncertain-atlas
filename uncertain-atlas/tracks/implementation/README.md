@@ -1,3 +1,4 @@
+- [`worked-example-req9-notsettled-vs-bundled.md`](worked-example-req9-notsettled-vs-bundled.md) — Prepare不得改已提交≠已交差/立刻执行≠Finalize+Commit/能改列表≠能改s；≠349 bundled（不变量 800）
 - [`worked-example-req6-notsafety-vs-bundled.md`](worked-example-req6-notsafety-vs-bundled.md) — 面对Req5同类活性≠丢安全性/同路≠提案一致性/扩展条≠提案条；≠348 bundled（不变量 799）
 - [`worked-example-req6-notliveness-vs-bundled.md`](worked-example-req6-notliveness-vs-bundled.md) — 确定bug丢掉Precommit≠只是活性/丢掉≠块非法/确定bug≠非确定bug；≠348 bundled（不变量 798）
 - [`worked-example-req6-notany-vs-bundled.md`](worked-example-req6-notany-vs-bundled.md) — 正确进程扩展须Verify Accept≠任意扩展都会过/须Accept≠已写默认Accept/正确进程之间过≠已交差；≠348 bundled（不变量 797）

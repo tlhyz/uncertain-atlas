@@ -1,3 +1,7 @@
+## 2026-09-22（续 917）
+
+- 不变量 800；语料 C777；模式 name-the-req9-notsettled-bar；反模式 req9-notsettled-sold-as-bundled；L10.3 第 769 条。填 L4.4 / CometBFT 档案 Prepare 不得改已提交状态不是已经立刻执行就已经交差 not already settled / not already finalize-commit / not already mutate-s 正式三事（349 余量） / 实现表 / 05b / 共识专题 / 停链面地图。349 req9 vs commit bundled unbundling 启动（800 item 1）。
+
 ## 2026-09-22（续 916）
 
 - 不变量 799；语料 C776；模式 name-the-req6-notsafety-bar；反模式 req6-notsafety-sold-as-bundled；L10.3 第 768 条。填 L4.4 / CometBFT 档案 会面对和 Req 5 同一类活性问题不是已经丢了安全性 not already lost-safety / not already req3-same / not already proposal-path 正式三事（348 余量） / 实现表 / 05b / 共识专题 / 停链面地图。348 req6 vs accept bundled unbundling 完成（799 item 3）。
