@@ -1,3 +1,4 @@
+- [`name-the-req6-notsafety-bar.md`](name-the-req6-notsafety-bar.md) — 会面对和 Req 5 同一类活性问题不是已经丢了安全性 not already lost-safety / not already req3-same / not already proposal-path 正式三事（348 余量）（不变量 799）
 - [`name-the-req6-notliveness-bar.md`](name-the-req6-notliveness-bar.md) — Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题 not already only-liveness / not already block-invalid / not already nondet 正式三事（348 余量）（不变量 798）
 - [`name-the-req6-notany-bar.md`](name-the-req6-notany-bar.md) — 正确进程交出的扩展必须被正确接收者 Verify Accept 不是已经是任意扩展都会 Accept not already any-extension / not already default-accept / not already settled 正式三事（348 余量）（不变量 797）
 - [`name-the-req3-nottested-bar.md`](name-the-req3-nottested-bar.md) — Req 3 是大量测试和自动验证的目标不是已经测过 not already tested / not already engine-blocks / not already settled 正式三事（347 余量）（不变量 796）

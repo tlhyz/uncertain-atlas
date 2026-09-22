@@ -1,3 +1,7 @@
+## 2026-09-22（续 916）
+
+- 不变量 799；语料 C776；模式 name-the-req6-notsafety-bar；反模式 req6-notsafety-sold-as-bundled；L10.3 第 768 条。填 L4.4 / CometBFT 档案 会面对和 Req 5 同一类活性问题不是已经丢了安全性 not already lost-safety / not already req3-same / not already proposal-path 正式三事（348 余量） / 实现表 / 05b / 共识专题 / 停链面地图。348 req6 vs accept bundled unbundling 完成（799 item 3）。
+
 ## 2026-09-22（续 915）
 
 - 不变量 798；语料 C775；模式 name-the-req6-notliveness-bar；反模式 req6-notliveness-sold-as-bundled；L10.3 第 767 条。填 L4.4 / CometBFT 档案 Extend 或 Verify 里有确定 bug 会让带无效扩展的 Precommit 被丢掉不是已经只是活性问题 not already only-liveness / not already block-invalid / not already nondet 正式三事（348 余量） / 实现表 / 05b / 共识专题 / 停链面地图。348 req6 vs accept bundled unbundling 续（798 item 2）。
