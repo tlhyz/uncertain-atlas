@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB not already default-21 / not already unlimited / not already may-is-must 正式三事（344 余量），必须分开诚实验证者 MAY 出满 是不是 already default-21 interchangeable / 344 maxbytesoverhead bundled interchangeable / maxbytesoverhead-sold-as-full interchangeable、能打到配置上限 是不是 already unlimited interchangeable、写了 MAY 是不是 already may-is-must interchangeable。可以跳过「看见诚实验证者 MAY 出满就已经只会出默认 21 MB interchangeable / 就已经没有上限 interchangeable / 就已经必须打满 interchangeable」。不要把 21 MB 当不确定常数。不要另写怎样算头和证据开销。344 maxbytesoverhead vs full bundled unbundling 在本页 item 2 续（785 + 786）；续 [`worked-example-maxbytes-nottimeoutfit-vs-bundled.md`](worked-example-maxbytes-nottimeoutfit-vs-bundled.md)（不变量 787 item 3）；完成见 787。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB not already default-21 / not already unlimited / not already may-is-must 正式三事（344 余量），必须分开诚实验证者 MAY 出满 是不是 already default-21 interchangeable / 344 maxbytesoverhead bundled interchangeable / maxbytesoverhead-sold-as-full interchangeable、能打到配置上限 是不是 already unlimited interchangeable、写了 MAY 是不是 already may-is-must interchangeable。可以跳过「看见诚实验证者 MAY 出满就已经只会出默认 21 MB interchangeable / 就已经没有上限 interchangeable / 就已经必须打满 interchangeable」。不要把 21 MB 当不确定常数。不要另写怎样算头和证据开销。344 maxbytesoverhead vs full bundled unbundling 在本页 item 2 续（785 + 786）；续 [`worked-example-maxbytes-nottimeoutfit-vs-bundled.md`](worked-example-maxbytes-nottimeoutfit-vs-bundled.md)（不变量 787 item 3）已写；完成见 787。
 
 ## 本页不抄
 

@@ -1,3 +1,7 @@
+## 2026-09-22（续 904）
+
+- 不变量 787；语料 C764；模式 name-the-maxbytes-nottimeoutfit-bar；反模式 maxbytes-nottimeoutfit-sold-as-bundled；L10.3 第 756 条。填 L4.4 / CometBFT 档案 timeout 必须按满块投递延迟算不是已经填了 TimeoutPropose 就装得下这次 Prepare 执行 not already timeoutpropose-fit / not already prepare-exec / not already critical-path 正式三事（344 余量） / 实现表 / 05b / 共识专题 / 停链面地图。344 maxbytesoverhead vs full bundled unbundling 完成（787 item 3）。
+
 ## 2026-09-22（续 903）
 
 - 不变量 786；语料 C763；模式 name-the-maxbytes-notonly21-bar；反模式 maxbytes-notonly21-sold-as-bundled；L10.3 第 755 条。填 L4.4 / CometBFT 档案 诚实验证者 MAY 出满 MaxBytes 不是已经只会出默认 21 MB not already default-21 / not already unlimited / not already may-is-must 正式三事（344 余量） / 实现表 / 05b / 共识专题 / 停链面地图。344 maxbytesoverhead vs full bundled unbundling 续（786 item 2）。

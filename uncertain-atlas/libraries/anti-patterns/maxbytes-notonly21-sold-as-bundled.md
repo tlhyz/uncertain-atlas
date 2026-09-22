@@ -19,6 +19,7 @@
 ## 和相邻反模式
 
 - [maxbytes-notfulltx-sold-as-bundled](maxbytes-notfulltx-sold-as-bundled.md) 是完整块上限 ≠ 整块都能装交易（344 item 1），不是本页 MAY 出满 item 2 单句边界。
+- [maxbytes-nottimeoutfit-sold-as-bundled](maxbytes-nottimeoutfit-sold-as-bundled.md) 是 timeout 必须按满块投递 ≠ 装得下 Prepare（344 item 3），不是本页 MAY 出满 item 2 单句边界。
 - [maxbytesoverhead-sold-as-full](maxbytesoverhead-sold-as-full.md) 是 MaxBytes 开销与投递 bundled 全段，不是本页 item 2 单句边界。
 - [maxbytes-notdefault21-sold-as-bundled](maxbytes-notdefault21-sold-as-bundled.md) 是必须 -1 或不超过 100 MB ≠ 默认 21 MB（766 / 337 item 3），不是本页诚实 MAY 出满边界。
 - [maxbytescap-sold-as-unlimited](maxbytescap-sold-as-unlimited.md) 是 -1 就按 100 MB 验不是已经没有上限（337），不是本页能打到配置上限 ≠ 无上限 边界。
