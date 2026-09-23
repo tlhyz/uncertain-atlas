@@ -4670,6 +4670,31 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
+---
+
+## 2026-09-17 · Round 448 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 448 / 语料 C456 / 模式 name-the-synchrony-bounds / 反模式 impl-bound-sold-as-consensus / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2198 | 高 | 看见 `precision` 上界 `30s` / 看见这个数 会被写成已经是协议常数，或已经是共识值 | 官方把它写在 `Note:` 里，不是共识参数语义 |
+| A2199 | 高 | 看见「在实现里强制」会被写成已经进了共识，或已经是协议保证 | 官方原句：upper bounds **enforced in the implementation**。防的是本实现算时间戳时溢出 |
+| A2200 | 高 | 看见目的是防溢出 会被写成已经选型，或已经是活性 / 安全下界 | 官方原句：to prevent **overflow errors** during timestamp validation。守卫存在不告诉你该填多少 |
+| A2201 | 中 | 怎样设 precision / message_delay / 怎样选启用高度 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2202 | 记录 | 会与 336 / 343 / 211 糊成「看见同步参数有上界就已经是共识规则」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 SynchronyParams 的两个上界 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是协议常数 / 已经进了共识 / 已经选型 标成另一对象。与 336 的分界：336 挖的是 Precision / MessageDelay 的**语义**与「用于 PBTS」，448 挖的是**数值上界及其层级** |
+| A2203 | 记录 | 去重预检：`30s` 全库 0 命中、`overflow errors` 0 命中、`实现强制` 0 命中、`enforced in the implementation` 0 命中 | 无撞车 |
+| A2204 | 高 | 本波命中 GOAL.md 失败清单第 6 类（混用实现保证 / 协议保证）与第 7 条同类（把官网上限当事实） | 产品禁令写死：`30s` / `24h` **不得抄成「不确定」的共识常数或产品建议值**；若引用须标明是 CometBFT 实现的上界并写出处与版本 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/abci/abci++_methods.md 与 spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

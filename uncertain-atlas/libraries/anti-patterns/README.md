@@ -450,5 +450,6 @@
 - [lightblock-sold-as-both-present](lightblock-sold-as-both-present.md)
 - [pubkeytypes-sold-as-in-use](pubkeytypes-sold-as-in-use.md)
 - [paramsdocs-sold-as-one-table](paramsdocs-sold-as-one-table.md)
+- [impl-bound-sold-as-consensus](impl-bound-sold-as-consensus.md)
 - [lightblock-sold-as-both-present](lightblock-sold-as-both-present.md)
 - [pubkeytypes-sold-as-in-use](pubkeytypes-sold-as-in-use.md)

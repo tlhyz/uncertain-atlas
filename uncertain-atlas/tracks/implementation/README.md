@@ -238,6 +238,7 @@
 - [`worked-example-lightblock-vs-binding.md`](worked-example-lightblock-vs-binding.md) — 看见 LightBlock 有 SignedHeader ≠ 已经有头；看见两件都在 ≠ 已经是同一高；看见绑定是 ValidatorsHash == ValidatorSet.Hash() ≠ 已经非 nil 就够（不变量 445）
 - [`worked-example-validatorparams-vs-naming.md`](worked-example-validatorparams-vs-naming.md) — 看见 ValidatorParams.pub_key_types 是接受列表 ≠ 已经有这种钥；看见命名按 ABCI ≠ 是 Amino 名；看见列了类型 ≠ 已经接受每一种（不变量 446）
 - [`worked-example-consensusparams-vs-docs.md`](worked-example-consensusparams-vs-docs.md) — 看见 ConsensusParams.version 有这一栏 ≠ 已经知道看的是哪一份；看见字段号 5 相同 ≠ 已经是同一个内嵌类型；看见 spec 内部写法不齐 ≠ 已经能挑一份照做（不变量 447）
+- [`worked-example-synchrony-bounds-vs-consensus.md`](worked-example-synchrony-bounds-vs-consensus.md) — 看见 precision 上界 30s ≠ 已经是协议常数；看见写的是实现强制 ≠ 已经进了共识；看见防溢出 ≠ 已经选型（不变量 448）
 
 平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
 外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  

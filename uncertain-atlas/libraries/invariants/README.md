@@ -760,6 +760,8 @@
 
 第 430 条：第一版可以不抄这次 Process 回包栏当「看见回了 ProcessProposalResponse.status 就已经当成块非法」。若对照，必须分开 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不是已经当成块非法、ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不是已经可以像 Prepare 那样依赖其它值、应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不是已经 honest proposal 必须 Accept。看见 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不得写成已经当成块非法。看见 ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不得写成已经可以像 Prepare 那样依赖其它值。看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不得写成已经 honest proposal 必须 Accept。不要抄怎样写 Process 回包栏。不要另写 19 节。不要写怎样写 Process 回包栏。
 
+第 448 条：第一版可以不抄这次同步参数上界当「看见同步参数有上界就已经是共识规则」。若对照，必须分开 precision 上界 30s 不是已经是协议常数、写的是实现强制不是已经进了共识、防溢出不是已经选型。看见 30s 不得写成已经是协议常数。看见实现里强制不得写成已经进了共识。看见防溢出不得写成已经给出活性或安全下界。这两个数不得抄成「不确定」的共识常数或产品建议值。不要抄怎样设上界。不要另写 19 节。不要写怎样选启用高度。Precision 语义是另一条（336），PbtsEnableHeight 是另一条（343），客户端默认不是协议帽是另一条（211）。
+
 第 447 条：第一版可以不抄这次共识参数跨文档当「看见字段号对上就已经是同一个对象」。若对照，必须分开 ConsensusParams.version 有这一栏不是已经知道看的是哪一份、字段号 5 相同不是已经是同一个内嵌类型、spec 内部写法不齐不是已经能挑一份照做。看见有这一栏不得写成已经知道看的是哪一份。看见号相同不得写成已经是同一个类型。看见两份都在不得写成能任选一份。实现里必须点名依据哪一份文档、哪一版。不要抄怎样编 ConsensusParams。不要另写 19 节。不要写怎样补折中定义。ConsensusParams.abci 是另一条（386），ConsensusParams.version 是另一条（385），app_version 进头是另一条（370）。
 
 第 446 条：第一版可以不抄这次公钥类型表当「看见类型表里有这种钥就已经在用」。若对照，必须分开 ValidatorParams.pub_key_types 是接受列表不是已经有这种钥、命名按 ABCI 不是 Amino、列了类型不是已经接受每一种。看见列表里有某一项不得写成已经在用。看见名字像旧的不得写成已经是 Amino 名。看见勾了类型不得写成已经能验。不要抄怎样配公钥类型。不要另写 19 节。不要写怎样加一种算法。Validator 认人是另一条（364），集合更新延迟是另一条（35），Finalize 回集合更新是另一条（428）。

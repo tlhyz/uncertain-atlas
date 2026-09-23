@@ -260,6 +260,9 @@ invariant：这是**接受的**公钥类型列表，规范另起一句写明**�
 **`ConsensusParams` 的跨文档差异**  
 invariant：同一个 `ConsensusParams` 在两份官方文档里内嵌了**不同的类型表**——`abci++_methods.md` 有字段 5 `abci`（`ABCIParams`，那里写明**自 v1.0 起已弃用**），`data_structures.md` 字段 5 空档、改把字段 7 写成 `feature`（`FeatureParams`）。同一字段号不是同一个内嵌类型；两份都是官方，实现必须点名依据哪一份、哪一版：见 [`../../tracks/implementation/worked-example-consensusparams-vs-docs.md`](../../tracks/implementation/worked-example-consensusparams-vs-docs.md)（不变量 447）。
 
+**`SynchronyParams` 的两个上界**  
+invariant：规范在 `Note:` 里写明 `precision` 不得超过 `30s`、`message_delay` 不得超过 `24h`，且这两个上界是**在实现里强制的，目的是防止时间戳校验时的溢出错误**。它们是实现约束，不是协议常数，不是共识值，也不是活性/安全下界或选型建议：见 [`../../tracks/implementation/worked-example-synchrony-bounds-vs-consensus.md`](../../tracks/implementation/worked-example-synchrony-bounds-vs-consensus.md)（不变量 448）。
+
 ---
 
 ## 18. 如何测试

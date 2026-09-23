@@ -3,7 +3,7 @@
 目的 B：把不变量和博物馆收成**命名用例**。  
 不是 `exams/`。正文不穿插试题。实现仓库还不存在时，本目录只规定输入形状与期望，不写利用包。
 
-覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–447。
+覆盖知识树 M10.5。方法：L9.7。来源：博物馆 7 问第 7 条、不变量 1–448。
 
 **允许 skip：** 仅当日志写明「没有第二实现」或「没有崩溃注入框架」。skip 不得当 PASS（反模式 test-skip-as-pass）。
 
@@ -452,6 +452,7 @@
 | C434 | 426 | ProcessProposalResponse.status是应用认为这份提案合法还是非法≠已经当成块非法 | 文案把 ProcessProposalResponse.status 是应用认为这份提案合法还是非法 / 回了 REJECT 写成已经当成块非法 或已经不能整块执行候选；或把 ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态 / 回了 status 写成已经可以像 Prepare 那样依赖其它值 或已经和对任意块同一裁决一回事；或把应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价 / 写了默认 Accept 写成已经 honest proposal 必须 Accept 或已经是 Req 3 已经测过；或把 Process 回包栏写成不变量 376 / 338 / 347 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C433 | 429 FinalizeBlockRequest.proposer_address是造了这份提案的验证者地址≠已经正在造这份提案 | 文案把 FinalizeBlockRequest.proposer_address 是造了这份提案的验证者地址 / 填了 proposer_address 写成已经正在造这份提案 或已经知道本头哈希；或把 FinalizeBlockRequest.time 是已决块的时间戳 / 填了 time 写成已经对上了拟议块头 或已经是 PrepareProposalRequest.time；或把 FinalizeBlockRequest.syncing_to_height 同步或重放时是目标高、否则等于本高 / 填了 syncing_to_height 写成已经有完整历史 或已经是快照重放；或把 Finalize 请求末栏写成不变量 427 / 426 / 382 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
 | C432 | 428 FinalizeBlockRequest.hash是已决块的哈希≠已经是ProcessProposalRequest.hash | 文案把 FinalizeBlockRequest.hash 是已决块的哈希 / 填了 hash 写成已经是 ProcessProposalRequest.hash 或已经跑过 Process；或把 FinalizeBlockRequest.misbehavior 是过错验证者信息列表 / 填了 misbehavior 写成已经定奖惩 或已经是 ProcessProposalRequest.misbehavior；或把 FinalizeBlockRequest.next_validators_hash 是下一验证者集合默克尔根 / 填了 next_validators_hash 写成已经是 Process 请求末栏的 next_validators_hash 或已经是 Prepare 请求末栏的 next_validators_hash；或把 Finalize 请求余栏写成不变量 419 / 420 / 427 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md |
+| C456 | 448 precision上界30s≠已经是协议常数 | 文案把 precision 上界 30s / 看见这个数 写成已经是协议常数 或已经是共识值；或把「在实现里强制」/ 看见这半句 写成已经进了共识 或已经是协议保证；或把目的是防溢出 / 看见这半句 写成已经选型 或已经是活性安全下界；或把同步参数上界写成不变量 336 / 343 / 211 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/core/data_structures.md |
 | C455 | 447 ConsensusParams.version有这一栏≠已经知道看的是哪一份 | 文案把 ConsensusParams.version 有这一栏 写成已经知道看的是哪一份文档；或把字段号 5 相同 / 看见号相同 写成已经是同一个内嵌类型 或已经能按号对齐；或把 spec 内部写法不齐 / 看见两份都在 写成已经能挑一份照做 或已经可以自己补折中定义；或把共识参数跨文档写成不变量 386 / 385 / 370 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/abci/abci++_methods.md + spec/core/data_structures.md |
 | C454 | 446 ValidatorParams.pub_key_types是接受列表≠已经有这种钥 | 文案把 pub_key_types 是列表 / 看见有列表 写成已经有这种钥 或已经在用；或把命名按 ABCI / 看见名字像旧的 写成已经是 Amino 名 或两个名字能互换；或把列了类型 / 看见一项在里面 写成已经接受每一种 或已经不需要点名是哪一种；或把公钥类型表写成不变量 364 / 35 / 428 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/core/data_structures.md |
 | C453 | 445 LightBlock有SignedHeader≠已经有头 | 文案把 LightBlock 有 SignedHeader / 看见有头 写成已经有头 或已经有 Commit；或把两件都在 / 看见都非 nil 写成已经是同一高 或已经能验；或把绑定是 SignedHeader.ValidatorsHash == ValidatorSet.Hash() / 看见哈希相等 写成已经非 nil 就够 或已经不需要两边都拿；或把 LightBlock 绑定写成不变量 444 / 148 / 35 | 必须红 | 协议+文案 | github.com/cometbft/cometbft spec/core/data_structures.md |

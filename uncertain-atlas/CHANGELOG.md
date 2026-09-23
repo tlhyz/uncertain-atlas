@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 448）
+
+- CometBFT 同步参数上界工作实例（官方 Core Data Structures SynchronyParams，实现 / 同步参数上界，不另写 19 节）：看见 precision 上界 30s 不是已经是协议常数。看见写的是实现强制不是已经进了共识。看见防溢出不是已经选型。同步参数上界不是不变量 336，也不是不变量 343，也不是不变量 211。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 448；语料 C456；模式 name-the-synchrony-bounds；反模式 impl-bound-sold-as-consensus；L10.3 第 446 条。填 L4.4 / CometBFT 档案 SynchronyParams 的两个上界 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样设上界、怎样设 precision / message_delay、怎样选启用高度。不编博物馆页。不另写 19 节。不与 336 / 343 / 211 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是协议常数、已经进了共识、已经选型 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范原文的一句实现标注：`precision` 不得超过 `30s`、`message_delay` 不得超过 `24h`，且这两个上界是「**在实现里强制的**」，目的是「防止时间戳校验时的**溢出错误**」。这正是 GOAL.md 失败清单第 6 类混用（实现保证 / 协议保证）的教科书例子，也是第 7 条「把官网上限当事实」的同类。既有不变量 336 只挖了 Precision / MessageDelay 的**语义**与「用于 PBTS」，从未挖数值上界及其层级。去重预检确认 `30s` 全库 0 命中、`overflow errors` 0 命中、`实现强制` 0 命中。
+- 产品禁令已写死：这两个数**不得抄成「不确定」的共识常数或产品建议值**；若引用，必须标明是 CometBFT 实现的上界并写出处与版本。
+
 ## 2026-09-17（续 447）
 
 - CometBFT 共识参数跨文档工作实例（官方 abci++_methods.md 与 core/data_structures.md 的 ConsensusParams，实现 / 共识参数跨文档，不另写 19 节）：看见 ConsensusParams.version 有这一栏不是已经知道看的是哪一份。看见字段号 5 相同不是已经是同一个内嵌类型。看见 spec 内部写法不齐不是已经能挑一份照做。共识参数跨文档不是不变量 386，也不是不变量 385，也不是不变量 370。出处 github.com/cometbft/cometbft spec（两份）。
