@@ -1,3 +1,7 @@
+## 2026-09-23（续 930）
+
+- 不变量 813；语料 C790；模式 name-the-empty-notlocal-bar；反模式 empty-notlocal-sold-as-bundled；L10.3 第 782 条。填 L4.4 / CometBFT 档案 不对本进程自己发出的 Precommit 调用不是已经自己验过 not already self-verified / not already accept / not already req6-done 正式三事（353 余量） / 实现表 / 05b / 共识专题 / 停链面地图。353 verifywhen vs empty bundled unbundling 续（813 item 2）。
+
 ## 2026-09-23（续 929）
 
 - 不变量 812；语料 C789；模式 name-the-empty-notskip-bar；反模式 empty-notskip-sold-as-bundled；L10.3 第 781 条。填 L4.4 / CometBFT 档案 空扩展仍会调 Verify 不是已经跳过 Verify not already skip-verify / not already no-call / not already empty-signed 正式三事（353 余量） / 实现表 / 05b / 共识专题 / 停链面地图。353 verifywhen vs empty bundled unbundling 启动（812 item 1）。
