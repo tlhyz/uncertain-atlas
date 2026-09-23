@@ -1,3 +1,4 @@
+- [`process-notguaranteed-sold-as-bundled.md`](process-notguaranteed-sold-as-bundled.md) — 通常紧跟 Prepare、列表对得上 被写成已经保证是这一次 / txs 一样 被写成已经必须一样 / 刚 Prepare 完 被写成已经是同一份调用（不变量 807）
 - [`process-notskip-sold-as-bundled.md`](process-notskip-sold-as-bundled.md) — Process 也会在提议者那边叫 被写成已经不用再 Process / 是提议者 被写成已经交差 / 列表自己编的 被写成已经过了 Process（不变量 806）
 - [`extend-notperheight-sold-as-bundled.md`](extend-notperheight-sold-as-bundled.md) — 一轮只能交出一份扩展 被写成已经是每一高度一份 / 又能换一轮 被写成已经这一轮能再交一份 / 交出来了 被写成已经是 348 必须 Accept（不变量 805）
 - [`extend-notnil-sold-as-bundled.md`](extend-notnil-sold-as-bundled.md) — ExtendVote 只在即将广播非 nil Precommit 时才叫 被写成已经在签 nil / 启用了扩展 被写成已经 prevote 会叫 / 有一张票 被写成已经这张票带了扩展（不变量 804）
