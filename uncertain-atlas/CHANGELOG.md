@@ -2,6 +2,14 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 446）
+
+- CometBFT 公钥类型表工作实例（官方 Core Data Structures ValidatorParams，实现 / 公钥类型命名，不另写 19 节）：看见 pub_key_types 是列表不是已经有这种钥。看见命名按 ABCI 不是 Amino。看见列了类型不是已经接受每一种。公钥类型表不是不变量 364，也不是不变量 35，也不是不变量 428。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 446；语料 C454；模式 name-the-pubkey-types；反模式 pubkeytypes-sold-as-in-use；L10.3 第 444 条。填 L4.4 / CometBFT 档案 ValidatorParams.pub_key_types / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样配公钥类型、怎样命名、怎样加一种算法。不编博物馆页。不另写 19 节。不与 364 / 35 / 428 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经有这种钥、已经是 Amino 名、已经接受每一种 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范里专起一句写的命名约束：pub_key_types **用的是 ABCI 公钥命名，不是 Amino 名**。`Amino` / `amino` 全库 0 命中 —— 这个十年老坑从未被挖。旧文档的 `ValidatorUpdate.pub_key_type` 表给的字幕例子是 `"tendermint/PubKeyEd25519"`（Amino 形），两节命名并不一致；本波按原文写，不替规范自圆。
+- 审慎记录：既有 `worked-example-validator-delay.md:61` 有一句旁注提到 `ValidatorParams.PubKeyTypes`，但只作为「加算法是协议对象」的举例，从未把该字段当条目主语挖过。
+
 ## 2026-09-17（续 445）
 
 - CometBFT LightBlock 绑定工作实例（官方 Core Data Structures LightBlock / SignedHeader，实现 / LightBlock 绑定，不另写 19 节）：看见 LightBlock 有 SignedHeader 不是已经有头。看见两件都在不是已经是同一高。看见绑定的那一句是哈希相等不是已经非 nil 就够。LightBlock 绑定不是不变量 444，也不是不变量 148，也不是不变量 35。出处 github.com/cometbft/cometbft spec/core/data_structures.md。

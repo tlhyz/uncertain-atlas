@@ -4626,15 +4626,23 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。
 
-**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+---
 
-未做：写出题、实现 runner、填 CPU、选型、改交易代码。
+## 2026-09-17 · Round 446 审核
 
-**结论：** 复审按 GOAL 门禁通过。事实 / 推断 / 建议已分开。发现的债全部处置，无遗留假引用。
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 446 / 语料 C454 / 模式 name-the-pubkey-types / 反模式 pubkeytypes-sold-as-in-use / 六处回填
 
-未做：写出题、实现 runner、填 CPU、选型、改交易代码。
-
-**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2182 | 高 | 看见 `pub_key_types` 是列表 / 看见有列表 会被写成已经有这种钥，或已经在用 | 官方：这是**接受的**公钥类型列表。列在表里 ≠ 在用 |
+| A2183 | 高 | 命名会被写成 Amino 名（例如把 `tendermint/PubKeyEd25519` 那种字样当本字段的合法取值） | 官方专起一句：`pub_key_types` **用的是 ABCI 公钥命名，不是 Amino 名**。跨实现对不能把「名字对得上」当成「算法对得上」 |
+| A2184 | 高 | 看见列了类型 / 看见一项在里面 会被写成已经接受每一种，或已经不需要点名是哪一种 | 官方把它写成列表，本身不是承诺 |
+| A2185 | 中 | 怎样配公钥类型 / 怎样命名 / 怎样加一种算法 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2186 | 记录 | 会与 364 / 35 / 428 糊成「看见类型表里有这种钥就已经在用」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ValidatorParams.pub_key_types / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经有这种钥 / 已经是 Amino 名 / 已经接受每一种 标成另一对象 |
+| A2187 | 记录 | 去重预检：`Amino` / `amino` 全库 **0 命中**，`pub_key_types` 全库 0 命中；`ValidatorParams` 仅 1 处旁注（`worked-example-validator-delay.md:61`，只作「加算法是协议对象」举例，不是条目主语） | 无撞车 |
+| A2188 | 记录 | 规范内部命名不一致：`ValidatorParams.pub_key_types` 一行说用 ABCI 命名，而 `ValidatorUpdate.pub_key_type` 表给的字幕例子写成 `"tendermint/PubKeyEd25519"`（Amino 形） | 本波**按原文分别记录**，不替规范自圆；写进 CHANGELOG 存档 |
+| A2189 | 中 | 本轮追加 AUDIT_LOG 时误把 Round 446 段落插到 Round 445 的结论之前，并在尾部留下孤立重复块（4 组「结论 + 未做」） | 已整段重写尾部：445 结论归位，446 段落紧随其后，删掉全部重复块 |
 
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 

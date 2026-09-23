@@ -254,6 +254,9 @@ invariant：官方明写它是 `SimpleValidator` 叶子的默克尔根，每片�
 **`LightBlock` 的绑定**  
 invariant：`LightBlock` 把验证所需的两个数据结构合起来（`SignedHeader` 与 `ValidatorSet`），两者都不得为 nil，并由**一句哈希相等**连接：`SignedHeader.ValidatorsHash == ValidatorSet.Hash()`。两件都在不是已经是同一高，不是已经绑上；`SignedHeader` 本身是头**加上**证明它的 `Commit`：见 [`../../tracks/implementation/worked-example-lightblock-vs-binding.md`](../../tracks/implementation/worked-example-lightblock-vs-binding.md)（不变量 445）。
 
+**`ValidatorParams.pub_key_types`**  
+invariant：这是**接受的**公钥类型列表，规范另起一句写明**用的是 ABCI 公钥命名，不是 Amino 名**。列表里有不是已经在用，不是已经接受每一种；跨实现对齐时不能把「名字对得上」当成「算法对得上」：见 [`../../tracks/implementation/worked-example-validatorparams-vs-naming.md`](../../tracks/implementation/worked-example-validatorparams-vs-naming.md)（不变量 446）。
+
 ---
 
 ## 18. 如何测试

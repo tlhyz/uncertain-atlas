@@ -57,3 +57,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 `ValidatorSet.Hash()` 是 `SimpleValidator` 叶子的根，叶子只编码 `pub_key` 与 `voting_power`；**地址与提议者优先不在里面** ≠ 已经是整套集合、≠ 已经不需要交叉核对：[`../implementation/worked-example-validatorset-hash-vs-whole-set.md`](../implementation/worked-example-validatorset-hash-vs-whole-set.md)（不变量 444）。
 
 轻客户端的 `LightBlock` 把 `SignedHeader` 与 `ValidatorSet` 合起来，两者都不得为 nil，并且由**一句哈希相等**绑定（`SignedHeader.ValidatorsHash == ValidatorSet.Hash()`）：两件都在 ≠ 已经是同一高 ≠ 已经绑上：[`../implementation/worked-example-lightblock-vs-binding.md`](../implementation/worked-example-lightblock-vs-binding.md)（不变量 445）。
+
+`ValidatorParams.pub_key_types` 是**接受的**公钥类型列表，命名按 **ABCI 公钥命名、不是 Amino 名**：列表里有 ≠ 已经在用 ≠ 已经接受每一种：[`../implementation/worked-example-validatorparams-vs-naming.md`](../implementation/worked-example-validatorparams-vs-naming.md)（不变量 446）。
