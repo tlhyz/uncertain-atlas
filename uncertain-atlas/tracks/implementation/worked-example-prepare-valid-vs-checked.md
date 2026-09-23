@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) PrepareProposal Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「引擎没有再验重复交易不是已经验过重复 / Prepare 回包验不过引擎崩溃不是已经是 Process REJECT / Prepare 里产出了事件不是已经交给引擎」，不是内存池去重就已经保证不重放，也不是正确提议者的准备提案必须被正确接收者 Accept。不要另写怎样再验 Prepare 回包。357 prepare-valid vs checked bundled unbundling 启动（824）；精读 [`worked-example-prepvalid-notdedup-vs-bundled.md`](worked-example-prepvalid-notdedup-vs-bundled.md)（不变量 824 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「引擎没有再验重复交易不是已经验过重复 / Prepare 回包验不过引擎崩溃不是已经是 Process REJECT / Prepare 里产出了事件不是已经交给引擎」，不是内存池去重就已经保证不重放，也不是正确提议者的准备提案必须被正确接收者 Accept。不要另写怎样再验 Prepare 回包。357 prepare-valid vs checked bundled unbundling 续（824+825）；精读 [`worked-example-prepvalid-notdedup-vs-bundled.md`](worked-example-prepvalid-notdedup-vs-bundled.md)（不变量 824 item 1）；精读 [`worked-example-prepvalid-notreject-vs-bundled.md`](worked-example-prepvalid-notreject-vs-bundled.md)（不变量 825 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了提案就已经验过重复、已经是 Process REJECT、已经交给引擎」，必须分开引擎没有再验重复交易是不是已经验过重复、Prepare 回包验不过引擎崩溃是不是已经是 Process REJECT、Prepare 里产出了事件是不是已经交给引擎。可以跳过「看见回了提案就已经验过重复」。不要另写怎样再验 Prepare 回包。357 prepare-valid vs checked bundled unbundling 启动（824）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了提案就已经验过重复、已经是 Process REJECT、已经交给引擎」，必须分开引擎没有再验重复交易是不是已经验过重复、Prepare 回包验不过引擎崩溃是不是已经是 Process REJECT、Prepare 里产出了事件是不是已经交给引擎。可以跳过「看见回了提案就已经验过重复」。不要另写怎样再验 Prepare 回包。357 prepare-valid vs checked bundled unbundling 续（824+825）。
 
 ## 本页不抄
 
