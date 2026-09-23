@@ -263,6 +263,9 @@ invariant：同一个 `ConsensusParams` 在两份官方文档里内嵌了**不�
 **`SynchronyParams` 的两个上界**  
 invariant：规范在 `Note:` 里写明 `precision` 不得超过 `30s`、`message_delay` 不得超过 `24h`，且这两个上界是**在实现里强制的，目的是防止时间戳校验时的溢出错误**。它们是实现约束，不是协议常数，不是共识值，也不是活性/安全下界或选型建议：见 [`../../tracks/implementation/worked-example-synchrony-bounds-vs-consensus.md`](../../tracks/implementation/worked-example-synchrony-bounds-vs-consensus.md)（不变量 448）。
 
+**`LightClientAttackEvidence` 的指控栏**  
+invariant：`Byzantine Validators` 是「acted maliciously 的验证者」——是**主张**，不是已成立；同一张表里 `ConflictingBlock` / `CommonHeight` / `Byzantine Validators` 三个字段的说明或校验写成 `Read Below`，那是指针不是内容；`data_structures.md` 的摘要断言三类攻击**穷尽**并把详情指向问责文，而问责文里还有 **phantom validators** 并对是否单列留了一个 **Q** 开放问题。实现不要只按摘要写证据校验：见 [`../../tracks/implementation/worked-example-byzantine-vs-accusation.md`](../../tracks/implementation/worked-example-byzantine-vs-accusation.md)（不变量 449）。
+
 ---
 
 ## 18. 如何测试

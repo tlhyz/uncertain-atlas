@@ -346,6 +346,7 @@
 - [name-the-pubkey-types](name-the-pubkey-types.md)
 - [name-the-params-docs](name-the-params-docs.md)
 - [name-the-synchrony-bounds](name-the-synchrony-bounds.md)
+- [name-the-accusation-bar](name-the-accusation-bar.md)
 - [name-the-validatorset-hash](name-the-validatorset-hash.md)
 - [name-the-lightblock-binding](name-the-lightblock-binding.md)
 - [name-the-pubkey-types](name-the-pubkey-types.md)

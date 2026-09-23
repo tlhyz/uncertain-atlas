@@ -63,3 +63,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 `ConsensusParams` 在**两份官方文档里内嵌类型表不同**：`abci++_methods.md` 字段 5 是 `abci`（`ABCIParams`，自 v1.0 弃用），`data_structures.md` 字段 5 空档、字段 7 是 `feature`（`FeatureParams`）。字段号相同 ≠ 同一个内嵌类型；实现须点名依据哪一份、哪一版：[`../implementation/worked-example-consensusparams-vs-docs.md`](../implementation/worked-example-consensusparams-vs-docs.md)（不变量 447）。
 
 `SynchronyParams.precision` 上界 `30s`、`message_delay` 上界 `24h` 是**在实现里强制的**，目的是防时间戳校验溢出 —— 不是协议常数、不是共识规则、不是选型建议值：[`../implementation/worked-example-synchrony-bounds-vs-consensus.md`](../implementation/worked-example-synchrony-bounds-vs-consensus.md)（不变量 448）。
+
+`LightClientAttackEvidence.Byzantine Validators` 是**主张**（acted maliciously）≠ 已经成立；同一张表里三个字段的说明或校验写 `Read Below` ≠ 已经给出定义；摘要说三种攻击穷尽，而问责文里还有 **phantom validators** 并留了开放问题 ≠ 已经验完：[`../implementation/worked-example-byzantine-vs-accusation.md`](../implementation/worked-example-byzantine-vs-accusation.md)（不变量 449）。

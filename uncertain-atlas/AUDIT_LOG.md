@@ -4691,6 +4691,31 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
+---
+
+## 2026-09-17 · Round 449 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 449 / 语料 C457 / 模式 name-the-accusation-bar / 反模式 accusation-sold-as-established / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2205 | 高 | 看见 `Byzantine Validators` / 看见名单 会被写成此人作恶已经成立，或已经定奖惩 | 官方只写「acted maliciously 的验证者」，那是**主张**；判定在别处 |
+| A2206 | 高 | 看见校验栏写 `Read Below` 会被当成「下文已给出定义」 | 同一张表里三个字段（`ConflictingBlock` / `CommonHeight` / `Byzantine Validators`）的说明或校验都指向「下文」，但 `data_structures.md` 的下文只有 `CommonHeight` 的 > 0 与 `ConflictingBlock` 的 LightBlock 校验 —— **没有**那套定义 |
+| A2207 | 高 | 只按 `data_structures.md` 摘要的「三种攻击穷尽」写证据校验 | 摘要断言 exhaustive 并把详情指向问责文；问责文里还有 **phantom validators**（不在当前集合、仍在解绑期内可签名的人，带 Scenario 6），且对是否单列留了一个 **Q** 开放问题。只看摘要会漏掉那一类 |
+| A2208 | 中 | 怎样构造 LightClientAttackEvidence / 怎样算 CommonHeight / 怎样挑指控名单 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2209 | 记录 | 会与 443 / 445 / 21 糊成「看见名单就已经坐实」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 LightClientAttackEvidence 的指控栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经成立 / 已经给出了定义 / 已经验完 标成另一对象 |
+| A2210 | 记录 | 去重预检：`Byzantine Validators` / `acted maliciously` / `accuse` / `exhaustive` / `Read Below` / `separate kind` 全库 0 命中。`phantom` 仅 2 处，且都是 **Kaspa 的 PHANTOM / GHOSTDAG**（另一套东西） | 无撞车。本页开篇**显式区分**两个 phantom，防止后人混同 |
+| A2211 | 记录 | 相邻候选 `EvidenceParams` 推荐解绑值（recommended value … should correspond to the unbonding period）经查与不变量 46 重叠 | **弃**，改挖证据指控栏 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md 与 spec/light-client/accountability/README.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/abci/abci++_methods.md 与 spec/core/data_structures.md）。
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

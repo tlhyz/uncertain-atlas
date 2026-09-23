@@ -2,6 +2,18 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 449）
+
+- CometBFT 证据指控栏工作实例（官方 Core Data Structures LightClientAttackEvidence + Light Client Accountability，实现 / 证据指控栏，不另写 19 节）：看见 Byzantine Validators 是过错名单不是已经成立。看见 Read Below 不是已经给出了定义。看见摘要说三种穷尽不是已经验完。证据指控栏不是不变量 443，也不是不变量 445，也不是不变量 21。出处 github.com/cometbft/cometbft spec/core/data_structures.md 与 spec/light-client/accountability/README.md。
+- 不变量 449；语料 C457；模式 name-the-accusation-bar；反模式 accusation-sold-as-established；L10.3 第 447 条。填 L4.4 / CometBFT 档案 LightClientAttackEvidence 的指控栏 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样构造 LightClientAttackEvidence、怎样算 CommonHeight、怎样挑指控名单。不编博物馆页。不另写 19 节。不与 443 / 445 / 21 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经成立、已经给出了定义、已经验完 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范里的**悬空引用与摘要/详情不一致**：
+  - `Byzantine Validators` 的校验栏直接写 `Read Below`；同一张表里三个字段（`ConflictingBlock`、`CommonHeight`、`Byzantine Validators`）的说明或校验都指向「下文」。
+  - 但 `data_structures.md` 里 `CommonHeight` 只有「must be > 0」、`ConflictingBlock` 只有 LightBlock 校验，**下文并没有那套定义** —— 详情实际在问责文。
+  - 摘要写 Lunatic / Equivocation / Amnesia 三种并断言 **These attacks are exhaustive**，同时把详情指向问责文；问责文里却有 **phantom validators**（不在当前集合、但仍在解绑期内仍可签名的人，带 Scenario 6），并对「要不要把它当成单独一类」留了一个 **Q** 开放问题。
+- 实施含义（写进产品禁令）：**不要只按摘要写证据校验**，必须读问责文，并把 phantom validator 当待决问题。
+- 去重预检：`Byzantine Validators` / `acted maliciously` / `accuse` / `exhaustive` / `Read Below` / `separate kind` 全库 0 命中；`phantom` 仅 2 处且都是 **Kaspa 的 PHANTOM / GHOSTDAG**（另一套东西），本页已显式区分。
+
 ## 2026-09-17（续 448）
 
 - CometBFT 同步参数上界工作实例（官方 Core Data Structures SynchronyParams，实现 / 同步参数上界，不另写 19 节）：看见 precision 上界 30s 不是已经是协议常数。看见写的是实现强制不是已经进了共识。看见防溢出不是已经选型。同步参数上界不是不变量 336，也不是不变量 343，也不是不变量 211。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
