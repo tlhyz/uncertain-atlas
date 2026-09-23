@@ -1,3 +1,4 @@
+- [`worked-example-async-notreject-vs-bundled.md`](worked-example-async-notreject-vs-bundled.md) — 异步了≠还能改票/先回了≠还能Reject/还在跑≠能强迫nil；≠354 bundled（不变量 816）
 - [`worked-example-sync-notlater-vs-bundled.md`](worked-example-sync-notlater-vs-bundled.md) — 是同步的≠稍后改裁决/引擎在等≠离开关键路径/立刻执行≠立刻整块离开关键路径；≠354 bundled（不变量 815）
 - [`worked-example-hash-notprocess-vs-bundled.md`](worked-example-hash-notprocess-vs-bundled.md) — 有hash≠已Process/同一块≠对上这次Process/不保证≠提议者也会叫Process；≠353 bundled（不变量 814）
 - [`worked-example-empty-notlocal-vs-bundled.md`](worked-example-empty-notlocal-vs-bundled.md) — 不调本地票≠自己验过/是自己签的≠Accept/跳过本地≠过了Req6；≠353 bundled（不变量 813）

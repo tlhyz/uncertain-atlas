@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Process 调用是同步的不是已经能在返回之后再改裁决 not already later-revise / not already left-critical / not already full-exec 正式三事（354 余量），必须分开是同步的 是不是 already later-revise interchangeable / 354 processwhen bundled interchangeable / processwhen-sold-as-later interchangeable、引擎在等 是不是 already left-critical interchangeable、立刻执行 是不是 already full-exec interchangeable。可以跳过「看见是同步的就已经能稍后改裁决 interchangeable / 就已经离开关键路径 interchangeable / 就已经是立刻整块执行就已经离开关键路径 interchangeable」。不要另写怎样写 Process 何时调用。354 processwhen vs later bundled unbundling 在本页 item 1 启动；续 [`worked-example-async-notreject-vs-bundled.md`](worked-example-async-notreject-vs-bundled.md)（不变量 816 item 2）；完成见 817。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Process 调用是同步的不是已经能在返回之后再改裁决 not already later-revise / not already left-critical / not already full-exec 正式三事（354 余量），必须分开是同步的 是不是 already later-revise interchangeable / 354 processwhen bundled interchangeable / processwhen-sold-as-later interchangeable、引擎在等 是不是 already left-critical interchangeable、立刻执行 是不是 already full-exec interchangeable。可以跳过「看见是同步的就已经能稍后改裁决 interchangeable / 就已经离开关键路径 interchangeable / 就已经是立刻整块执行就已经离开关键路径 interchangeable」。不要另写怎样写 Process 何时调用。354 processwhen vs later bundled unbundling 在本页 item 1 启动（815 + 816）；续 [`worked-example-async-notreject-vs-bundled.md`](worked-example-async-notreject-vs-bundled.md)（不变量 816 item 2）；完成见 817。
 
 ## 本页不抄
 
