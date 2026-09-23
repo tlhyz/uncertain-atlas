@@ -1,3 +1,4 @@
+- [`name-the-process-notalways-bar.md`](name-the-process-notalways-bar.md) — 失败时可能对上更早一次或根本不调不是已经每轮都会叫 not already every-round / not already this-prepare / not already crossed 正式三事（351 余量）（不变量 808）
 - [`name-the-process-notguaranteed-bar.md`](name-the-process-notguaranteed-bar.md) — 通常紧跟 Prepare、列表对得上不是已经保证是这一次 not already guaranteed-this / not already must-match / not already same-call 正式三事（351 余量）（不变量 807）
 - [`name-the-process-notskip-bar.md`](name-the-process-notskip-bar.md) — Process 也会在提议者那边叫不是已经不用再 Process not already skip-process / not already settled / not already already-processed 正式三事（351 余量）（不变量 806）
 - [`name-the-extend-notperheight-bar.md`](name-the-extend-notperheight-bar.md) — 一轮只能交出一份扩展不是已经是每一高度一份 not already per-height / not already re-extend-round / not already req6-accept 正式三事（350 余量）（不变量 805）

@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Process 也会在提议者那边叫不是已经不用再 Process not already skip-process / not already settled / not already already-processed 正式三事（351 余量），必须分开 Process 也会在提议者那边叫 是不是 already skip-process interchangeable / 351 processalso bundled interchangeable / processalso-sold-as-matched interchangeable、是提议者 是不是 already settled interchangeable、列表自己编的 是不是 already already-processed interchangeable。可以跳过「看见自己刚 Prepare 过就已经不用再 Process interchangeable / 就已经交差 interchangeable / 就已经过了 Process interchangeable」。不要另写怎样写 Process。351 processalso vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-process-notguaranteed-vs-bundled.md`](worked-example-process-notguaranteed-vs-bundled.md)（不变量 807 item 2）；完成见 808。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 Process 也会在提议者那边叫不是已经不用再 Process not already skip-process / not already settled / not already already-processed 正式三事（351 余量），必须分开 Process 也会在提议者那边叫 是不是 already skip-process interchangeable / 351 processalso bundled interchangeable / processalso-sold-as-matched interchangeable、是提议者 是不是 already settled interchangeable、列表自己编的 是不是 already already-processed interchangeable。可以跳过「看见自己刚 Prepare 过就已经不用再 Process interchangeable / 就已经交差 interchangeable / 就已经过了 Process interchangeable」。不要另写怎样写 Process。351 processalso vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-process-notguaranteed-vs-bundled.md`](worked-example-process-notguaranteed-vs-bundled.md)（不变量 807 item 2）；完成 [`worked-example-process-notalways-vs-bundled.md`](worked-example-process-notalways-vs-bundled.md)（不变量 808 item 3）。
 
 ## 本页不抄
 
