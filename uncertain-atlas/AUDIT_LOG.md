@@ -4451,6 +4451,26 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 | A2128 | 中 | 怎样写 ExtendVote When 正式流程 / 怎样填 CanonicalVoteExtension / 怎样构造 Precommit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
 | A2129 | 记录 | 会与 358 / 361 / 34 糊成「看见 ExtendVote 回了 extension 就已经广播 Precommit」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ExtendVote When 正式流程 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经按原样签 / 已经验过扩展 / 已经写进 last_commit 标成另一对象 |
 
+---
+
+## 2026-09-17 · Round 439 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 439 / 语料 C447 / 模式 name-the-misbehaviortype / 反模式 misbehaviortype-sold-as-enum / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2130 | 高 | 看见 MisbehaviorType 只有三个枚举名 / 看见名字在 会被写成已经能认过错种类，或已经验过是哪一类 | 官方表：MisbehaviorType is an enum with UNKNOWN / DUPLICATE_VOTE / LIGHT_CLIENT_ATTACK |
+| A2131 | 高 | 看见 UNKNOWN 是第 0 项 会被写成已经是引擎判的应用坏了，或当成已经是 VerifyStatus 那种「一律是错」 | 官方 MisbehaviorType 一节只列枚举项，未写该语义；与不变量 434 的 VerifyStatus.UNKNOWN 分开 |
+| A2132 | 高 | 看见 DUPLICATE_VOTE / LIGHT_CLIENT_ATTACK 是枚举名 会被写成已经是双签证据已经成立，或已经罚没 | 官方表：这两项是枚举名；证据形状与罚没是另一对象（不变量 21） |
+| A2133 | 中 | 怎样写 MisbehaviorType / 怎样挑枚举 / 怎样把过错归进这三类 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2134 | 记录 | 会与 364 / 434 / 21 糊成「看见有枚举名就已经能认过错种类」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 MisbehaviorType / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经能认过错种类 / 已经是引擎判的应用坏了 / 已经是双签证据已经成立 标成另一对象 |
+| A2135 | 中 | 本波发现 `L10-M03` 目录缺 435 / 436 两条（438 波在 CHANGELOG 自称「L10.3 第 434 条」，但目录里没有 434 以外的对应条目）；且目录尾部 425–434 为降序排列，与全文其余部分的升序不一致 | 已补 437（不变量 439）。435 / 436 缺条目与尾部排序列为遗留债，本波不改，留给下一波处理 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/abci/abci++_methods.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
 
 
 

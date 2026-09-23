@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 439）
+
+- CometBFT MisbehaviorType 枚举工作实例（官方 ABCI++ Methods Data Types MisbehaviorType，实现 / MisbehaviorType，不另写 19 节）：看见 MisbehaviorType 只有三个枚举名不是已经能认过错种类。看见 UNKNOWN 是第 0 项不是已经是引擎判的应用坏了，也不是已经是 VerifyStatus 那种「一律是错」。看见 DUPLICATE_VOTE 和 LIGHT_CLIENT_ATTACK 是枚举名不是已经是双签证据已经成立。MisbehaviorType 不是不变量 364，也不是不变量 434，也不是不变量 21。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 439；语料 C447；模式 name-the-misbehaviortype；反模式 misbehaviortype-sold-as-enum；L10.3 第 437 条。填 L4.4 / CometBFT 档案 MisbehaviorType / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 MisbehaviorType、怎样挑枚举、怎样把过错归进这三类。不编博物馆页。不另写 19 节。不与 364 / 434 / 21 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经能认过错种类、已经是引擎判的应用坏了、已经是双签证据已经成立 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 清账：`ARCHITECTURE.md` 与 `index/03-knowledge-assets.md` 的库计数长期滞后（写「模式 12 + 反模式 13」「324 / 431」），改为与磁盘一致。
+
 ## 2026-09-17
 
 - 仓库改为只含本知识库；对外介绍改为「不确定图谱 · Uncertain Atlas」。

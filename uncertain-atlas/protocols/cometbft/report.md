@@ -233,6 +233,9 @@ invariant：扩展是另一份签；Verify REJECT 丢整张 precommit，不是�
 **`validator_updates` 生效高度**  
 invariant：H 返回的更新，H+1 改 `NextValidatorsHash`，H+2 才按新集合计票，H+3 `*_last_commit` 带新集合（不变量 35）。见 [`../../tracks/consensus/worked-example-validator-delay.md`](../../tracks/consensus/worked-example-validator-delay.md)。同一高度各轮用同一套，不是已经换成应用刚回的那套；新加入不是已经能跳到队头：见 [`../../tracks/consensus/worked-example-round-vs-set.md`](../../tracks/consensus/worked-example-round-vs-set.md)（不变量 302）。
 
+**`MisbehaviorType` 枚举**  
+invariant：看见 `MisbehaviorType` 只有三个枚举名不是已经能认过错种类；看见 `UNKNOWN` 是第 0 项不是已经是引擎判的应用坏了（这一节没有写 `VerifyStatus` 那种「一律是错」）；看见 `DUPLICATE_VOTE` / `LIGHT_CLIENT_ATTACK` 是枚举名不是已经是双签证据已经成立：见 [`../../tracks/implementation/worked-example-misbehaviortype-vs-enum.md`](../../tracks/implementation/worked-example-misbehaviortype-vs-enum.md)（不变量 439）。
+
 ---
 
 ## 18. 如何测试

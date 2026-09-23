@@ -441,3 +441,4 @@
 - [extvirest-sold-as-voteinfo](extvirest-sold-as-voteinfo.md)
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
+- [misbehaviortype-sold-as-enum](misbehaviortype-sold-as-enum.md)

@@ -43,3 +43,5 @@ Celestia 排序属 CometBFT 家族，最终的是 DA 承诺不是 rollup 余额�
 Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。出块 ≠ 最终：[`worked-example-babe-vs-grandpa.md`](worked-example-babe-vs-grandpa.md)（不变量 126）。NPoS 当选 ≠ 共识已经按质押加权：[`worked-example-npos-equal-weight.md`](worked-example-npos-equal-weight.md)（不变量 129）。
 
 安全 / 活性 / 同步模型见 L0.6。锁见 CometBFT 档案与模式 locking-in-bft。
+
+`MisbehaviorType` 只有三个枚举名 ≠ 已经能认过错种类；`UNKNOWN` 是第 0 项 ≠ 已经是引擎判的应用坏了（这一节没有写 `VerifyStatus` 那种「一律是错」）；`DUPLICATE_VOTE` / `LIGHT_CLIENT_ATTACK` 是枚举名 ≠ 已经是双签证据已经成立：[`../implementation/worked-example-misbehaviortype-vs-enum.md`](../implementation/worked-example-misbehaviortype-vs-enum.md)（不变量 439）。
