@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) PrepareProposal When / VerifyVoteExtension When。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「+2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过 / 建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify / 下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify」，不是验签拒收整张预提交就已经是块非法，也不是正确进程交出的扩展必须被正确接收者 Verify Accept。不要另写怎样再验迟到扩展。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「+2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过 / 建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify / 下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify」，不是验签拒收整张预提交就已经是块非法，也不是正确进程交出的扩展必须被正确接收者 Verify Accept。不要另写怎样再验迟到扩展。352 lateext vs verified bundled unbundling 启动（809）；精读 [`worked-example-lateext-notverified-vs-bundled.md`](worked-example-lateext-notverified-vs-bundled.md)（不变量 809 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 last_commit 里有扩展就已经 Verify 过、已经是引擎会再 Verify、已经又叫了 Verify」，必须分开 +2/3 之后才进来的扩展写进了 commit info 是不是已经 Verify 过、建议按 Verify 同款逻辑再看一遍是不是已经是引擎会再 Verify、下一高度 round 0 写进 ExtendedCommitInfo 是不是已经又叫了 Verify。可以跳过「看见 last_commit 里有扩展就已经 Verify 过」。不要另写怎样再验迟到扩展。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 last_commit 里有扩展就已经 Verify 过、已经是引擎会再 Verify、已经又叫了 Verify」，必须分开 +2/3 之后才进来的扩展写进了 commit info 是不是已经 Verify 过、建议按 Verify 同款逻辑再看一遍是不是已经是引擎会再 Verify、下一高度 round 0 写进 ExtendedCommitInfo 是不是已经又叫了 Verify。可以跳过「看见 last_commit 里有扩展就已经 Verify 过」。不要另写怎样再验迟到扩展。352 lateext vs verified bundled unbundling 启动（809）。
 
 ## 本页不抄
 
