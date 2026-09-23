@@ -4588,6 +4588,26 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
+---
+
+## 2026-09-17 · 网络事故与推送工具
+
+审核人：DeepSeek Agent
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2173 | 高 | 波 444 提交后 `git push` 连续失败：`Failed to connect to github.com port 443`。`git ls-remote` 同样失败，**无法验证远程状态** | 诊断为**本机网络环境**问题，非仓库问题、非认证问题。实测：`github.com:443` 不通；`api.github.com:443`、`raw.githubusercontent.com:443` 通；本地 `127.0.0.1:7897` 有代理（Clash 默认端口）；`github.com:22` 与 `ssh.github.com:443` 也通 |
+| A2174 | 中 | 用 `git -c http.proxy=http://127.0.0.1:7897` 推送成功；随后把代理写进**本仓库 local 配置** `http.https://github.com/.proxy`，只影响 github.com，不动全局 | 已验证：不带参数直接 `git push` 返回 `Everything up-to-date`；`git ls-remote` 证实 `origin/main == 8e679983` |
+| A2175 | 记录 | 前几波「推送成功」的结论当时成立（复核：波 439–443 与复审的 6 个提交都已在远程）。本次是**推送时刻**的网络变化，不是历史误报 | 无 |
+
+**新增过程资产：** `uncertain-atlas/tools/push-atlas.ps1` —— 推送闸门。先直连试推；失败则按常见度逐个探测本地代理端口（7897 / 7890 / 10809 / 10808 / 2080 / 1080 / 8080）重试；成功则把代理记进 local 配置；最后用 `git ls-remote` 验证远程真实 ref（不看本地缓存）。远程已同提交时直接跳过。同样必须带 UTF-8 BOM。
+
+**教训：** 「推送成功」必须以 `git ls-remote` 的远程真实 ref 为准；只看 `git push` 的退出码不够 —— 本机 PowerShell 会把 git 的进度输出当 stderr，导致**成功的推送也报 exit code 1**，反之网络失败时退出码也可能被管道吞掉。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。
 
 **结论：** 复审按 GOAL 门禁通过。事实 / 推断 / 建议已分开。发现的债全部处置，无遗留假引用。

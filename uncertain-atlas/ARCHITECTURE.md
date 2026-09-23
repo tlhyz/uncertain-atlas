@@ -23,6 +23,7 @@ uncertain-atlas/
   exams/                 统一题库（后置，现在不要做）
   tools/                 过程工具
     check-atlas.ps1      每波提交前的机械一致性闸门
+    push-atlas.ps1       推送（自动探测网络 / 代理，并验证远程 ref）
 ```
 
 **每波提交前跑一次：** 在仓库根（含 `uncertain-atlas/` 的那一层）跑
@@ -34,6 +35,11 @@ uncertain-atlas/
 它查库计数、不变量/语料最大号、frontier 行、活边界标记、全库链接与行尾，
 全通过（exit 0）才提交。脚本必须带 **UTF-8 BOM** 保存：它含中文，而
 Windows PowerShell 5.1 会把无 BOM 的 `.ps1` 按 ANSI 解码（`pwsh` 不存在时尤其要注意）。
+
+**推送到 GitHub：** `& .\uncertain-atlas\tools\push-atlas.ps1`。它先直连试推，
+失败则探测本地代理端口重试，最后用 `git ls-remote` 验证远程真实 ref。
+2026-09-17 实测本机 `github.com:443` 直连不通（`api.github.com` 与
+`raw.githubusercontent.com` 通），本地代理在 `127.0.0.1:7897`。
 
 读法：
 
