@@ -1,6 +1,11 @@
+## 2026-09-23（续 942）
+
+- 不变量 825；语料 C802；模式 name-the-prepvalid-notreject-bar；反模式 prepvalid-notreject-sold-as-bundled；L10.3 第 794 条。填 L4.4 / CometBFT 档案 Prepare 回包验不过引擎崩溃不是已经是 Process REJECT not already process-reject / not already req3-accept / not already settled 正式三事（357 余量） / 实现表 / 05b / 共识专题 / 停链面地图。357 prepare-valid vs checked bundled unbundling 续（825 item 2）。
+
 ## 2026-09-23（续 941）
 
 - 不变量 824；语料 C801；模式 name-the-prepvalid-notdedup-bar；反模式 prepvalid-notdedup-sold-as-bundled；L10.3 第 793 条。填 L4.4 / CometBFT 档案 引擎没有再验重复交易不是已经验过重复 not already dedup-checked / not already app-replay / not already settled 正式三事（357 余量） / 实现表 / 05b / 共识专题 / 停链面地图。357 prepare-valid vs checked bundled unbundling 启动（824 item 1）。
+
 ## 2026-09-23（续 940）
 
 - 不变量 823；语料 C800；模式 name-the-vv-notraw-bar；反模式 vv-notraw-sold-as-bundled；L10.3 第 792 条。填 L4.4 / CometBFT 档案 没调 Prepare 不是已经又装了一份 raw 提案 not already reap-again / not already new-raw / not already preparedrop 正式三事（356 余量） / 实现表 / 05b / 共识专题 / 停链面地图。356 validvalue vs prepare bundled unbundling 完成（823 item 3）。

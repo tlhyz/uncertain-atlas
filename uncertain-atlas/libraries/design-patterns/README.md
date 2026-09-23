@@ -1,3 +1,4 @@
+- [`name-the-prepvalid-notreject-bar.md`](name-the-prepvalid-notreject-bar.md) — Prepare 回包验不过引擎崩溃不是已经是 Process REJECT not already process-reject / not already req3-accept / not already settled 正式三事（357 余量）（不变量 825）
 - [`name-the-prepvalid-notdedup-bar.md`](name-the-prepvalid-notdedup-bar.md) — 引擎没有再验重复交易不是已经验过重复 not already dedup-checked / not already app-replay / not already settled 正式三事（357 余量）（不变量 824）
 - [`name-the-vv-notraw-bar.md`](name-the-vv-notraw-bar.md) — 没调 Prepare 不是已经又装了一份 raw 提案 not already reap-again / not already new-raw / not already preparedrop 正式三事（356 余量）（不变量 823）
 - [`name-the-vv-noteveryround-bar.md`](name-the-vv-noteveryround-bar.md) — 自己是提议者不是已经每轮都会调 Prepare not already will-call / not already vv-nil / not already every-round 正式三事（356 余量）（不变量 822）
