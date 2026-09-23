@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看不对本进程自己发出的 Precommit 调用不是已经自己验过 not already self-verified / not already accept / not already req6-done 正式三事（353 余量），必须分开不调本地票 是不是 already self-verified interchangeable / 353 verifywhen bundled interchangeable / verifywhen-sold-as-skipped interchangeable、是自己签的 是不是 already accept interchangeable、跳过本地 是不是 already req6-done interchangeable。可以跳过「看见不调本地票就已经自己验过 interchangeable / 就已经 Accept interchangeable / 就已经过了 Req 6 interchangeable」。不要另写怎样写 Verify 何时调用。353 verifywhen vs empty bundled unbundling 在本页 item 2 续（812 + 813）；续 [`worked-example-hash-notprocess-vs-bundled.md`](worked-example-hash-notprocess-vs-bundled.md)（不变量 814 item 3）；完成见 814。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看不对本进程自己发出的 Precommit 调用不是已经自己验过 not already self-verified / not already accept / not already req6-done 正式三事（353 余量），必须分开不调本地票 是不是 already self-verified interchangeable / 353 verifywhen bundled interchangeable / verifywhen-sold-as-skipped interchangeable、是自己签的 是不是 already accept interchangeable、跳过本地 是不是 already req6-done interchangeable。可以跳过「看见不调本地票就已经自己验过 interchangeable / 就已经 Accept interchangeable / 就已经过了 Req 6 interchangeable」。不要另写怎样写 Verify 何时调用。353 verifywhen vs empty bundled unbundling 在本页 item 2 续（812 + 813）；完成 [`worked-example-hash-notprocess-vs-bundled.md`](worked-example-hash-notprocess-vs-bundled.md)（不变量 814 item 3）。
 
 ## 本页不抄
 

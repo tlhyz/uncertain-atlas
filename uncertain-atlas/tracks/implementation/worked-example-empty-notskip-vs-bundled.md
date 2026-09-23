@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看空扩展仍会调 Verify 不是已经跳过 Verify not already skip-verify / not already no-call / not already empty-signed 正式三事（353 余量），必须分开是空的 是不是 already skip-verify interchangeable / 353 verifywhen bundled interchangeable / verifywhen-sold-as-skipped interchangeable、选择不扩 是不是 already no-call interchangeable、仍会调 是不是 already empty-signed interchangeable。可以跳过「看见是空的就已经跳过 Verify interchangeable / 就已经不用调 interchangeable / 就已经是空扩展仍验签 interchangeable」。不要另写怎样写 Verify 何时调用。353 verifywhen vs empty bundled unbundling 在本页 item 1 启动（812 + 813）；续 [`worked-example-empty-notlocal-vs-bundled.md`](worked-example-empty-notlocal-vs-bundled.md)（不变量 813 item 2）；完成见 814。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看空扩展仍会调 Verify 不是已经跳过 Verify not already skip-verify / not already no-call / not already empty-signed 正式三事（353 余量），必须分开是空的 是不是 already skip-verify interchangeable / 353 verifywhen bundled interchangeable / verifywhen-sold-as-skipped interchangeable、选择不扩 是不是 already no-call interchangeable、仍会调 是不是 already empty-signed interchangeable。可以跳过「看见是空的就已经跳过 Verify interchangeable / 就已经不用调 interchangeable / 就已经是空扩展仍验签 interchangeable」。不要另写怎样写 Verify 何时调用。353 verifywhen vs empty bundled unbundling 在本页 item 1 启动；完成 [`worked-example-empty-notlocal-vs-bundled.md`](worked-example-empty-notlocal-vs-bundled.md)（不变量 813 item 2）；完成 [`worked-example-hash-notprocess-vs-bundled.md`](worked-example-hash-notprocess-vs-bundled.md)（不变量 814 item 3）。
 
 ## 本页不抄
 

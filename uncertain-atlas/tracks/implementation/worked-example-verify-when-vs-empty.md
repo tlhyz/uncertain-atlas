@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) VerifyVoteExtension Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「空扩展仍会调 Verify 不是已经跳过 Verify / 不对本进程自己发出的 Precommit 调用不是已经自己验过 / 请求里的 hash 不是已经对该块跑过 Process」，不是验签拒收整张预提交就已经是块非法，也不是正确进程交出的扩展必须被正确接收者 Verify Accept。不要另写怎样写 Verify 何时调用。353 verifywhen vs empty bundled unbundling 续（812+813）；精读 [`worked-example-empty-notskip-vs-bundled.md`](worked-example-empty-notskip-vs-bundled.md)（不变量 812 item 1）；精读 [`worked-example-empty-notlocal-vs-bundled.md`](worked-example-empty-notlocal-vs-bundled.md)（不变量 813 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「空扩展仍会调 Verify 不是已经跳过 Verify / 不对本进程自己发出的 Precommit 调用不是已经自己验过 / 请求里的 hash 不是已经对该块跑过 Process」，不是验签拒收整张预提交就已经是块非法，也不是正确进程交出的扩展必须被正确接收者 Verify Accept。不要另写怎样写 Verify 何时调用。353 verifywhen vs empty bundled unbundling 完成（812+813+814）；精读 [`worked-example-empty-notskip-vs-bundled.md`](worked-example-empty-notskip-vs-bundled.md)（不变量 812 item 1）；精读 [`worked-example-empty-notlocal-vs-bundled.md`](worked-example-empty-notlocal-vs-bundled.md)（不变量 813 item 2）；精读 [`worked-example-hash-notprocess-vs-bundled.md`](worked-example-hash-notprocess-vs-bundled.md)（不变量 814 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见空扩展就已经跳过 Verify、已经自己验过、已经对该块跑过 Process」，必须分开空扩展仍会调 Verify 是不是已经跳过 Verify、不对本进程自己发出的 Precommit 调用是不是已经自己验过、请求里的 hash 是不是已经对该块跑过 Process。可以跳过「看见空扩展就已经跳过 Verify」。不要另写怎样写 Verify 何时调用。353 verifywhen vs empty bundled unbundling 续（812+813）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见空扩展就已经跳过 Verify、已经自己验过、已经对该块跑过 Process」，必须分开空扩展仍会调 Verify 是不是已经跳过 Verify、不对本进程自己发出的 Precommit 调用是不是已经自己验过、请求里的 hash 是不是已经对该块跑过 Process。可以跳过「看见空扩展就已经跳过 Verify」。不要另写怎样写 Verify 何时调用。353 verifywhen vs empty bundled unbundling 完成（812+813+814）。
 
 ## 本页不抄
 

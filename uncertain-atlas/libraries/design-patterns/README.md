@@ -1,3 +1,4 @@
+- [`name-the-hash-notprocess-bar.md`](name-the-hash-notprocess-bar.md) — 请求里的 hash 不是已经对该块跑过 Process not already ran-process / not already this-process / not already processalso 正式三事（353 余量）（不变量 814）
 - [`name-the-empty-notlocal-bar.md`](name-the-empty-notlocal-bar.md) — 不对本进程自己发出的 Precommit 调用不是已经自己验过 not already self-verified / not already accept / not already req6-done 正式三事（353 余量）（不变量 813）
 - [`name-the-empty-notskip-bar.md`](name-the-empty-notskip-bar.md) — 空扩展仍会调 Verify 不是已经跳过 Verify not already skip-verify / not already no-call / not already empty-signed 正式三事（353 余量）（不变量 812）
 - [`name-the-lateext-notrecall-bar.md`](name-the-lateext-notrecall-bar.md) — 下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify not already called-again / not already must-recall / not already this-round-verify 正式三事（352 余量）（不变量 811）
