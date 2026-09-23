@@ -1,3 +1,7 @@
+## 2026-09-23（续 929）
+
+- 不变量 812；语料 C789；模式 name-the-empty-notskip-bar；反模式 empty-notskip-sold-as-bundled；L10.3 第 781 条。填 L4.4 / CometBFT 档案 空扩展仍会调 Verify 不是已经跳过 Verify not already skip-verify / not already no-call / not already empty-signed 正式三事（353 余量） / 实现表 / 05b / 共识专题 / 停链面地图。353 verifywhen vs empty bundled unbundling 启动（812 item 1）。
+
 ## 2026-09-23（续 928）
 
 - 不变量 811；语料 C788；模式 name-the-lateext-notrecall-bar；反模式 lateext-notrecall-sold-as-bundled；L10.3 第 780 条。填 L4.4 / CometBFT 档案 下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify not already called-again / not already must-recall / not already this-round-verify 正式三事（352 余量） / 实现表 / 05b / 共识专题 / 停链面地图。352 lateext vs verified bundled unbundling 完成（811 item 3）。

@@ -1,3 +1,4 @@
+- [`worked-example-empty-notskip-vs-bundled.md`](worked-example-empty-notskip-vs-bundled.md) — 是空的≠跳过Verify/选择不扩≠不用调/仍会调≠空扩展仍验签；≠353 bundled（不变量 812）
 - [`worked-example-lateext-notrecall-vs-bundled.md`](worked-example-lateext-notrecall-vs-bundled.md) — 写进ExtendedCommitInfo≠又叫了Verify/规范允许≠必须再叫/上一高度≠本轮那次Verify；≠352 bundled（不变量 811）
 - [`worked-example-lateext-notreverify-vs-bundled.md`](worked-example-lateext-notreverify-vs-bundled.md) — 建议再看≠引擎会再Verify/Prepare用扩展≠过了Req6/能改提案≠已交差；≠352 bundled（不变量 810）
 - [`worked-example-lateext-notverified-vs-bundled.md`](worked-example-lateext-notverified-vs-bundled.md) — 写进last_commit≠已Verify/有扩展≠已Accept/凑齐+2/3≠后来也验过；≠352 bundled（不变量 809）
