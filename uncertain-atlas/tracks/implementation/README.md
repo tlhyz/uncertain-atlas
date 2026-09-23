@@ -1,3 +1,4 @@
+- [`worked-example-lateext-notrecall-vs-bundled.md`](worked-example-lateext-notrecall-vs-bundled.md) — 写进ExtendedCommitInfo≠又叫了Verify/规范允许≠必须再叫/上一高度≠本轮那次Verify；≠352 bundled（不变量 811）
 - [`worked-example-lateext-notreverify-vs-bundled.md`](worked-example-lateext-notreverify-vs-bundled.md) — 建议再看≠引擎会再Verify/Prepare用扩展≠过了Req6/能改提案≠已交差；≠352 bundled（不变量 810）
 - [`worked-example-lateext-notverified-vs-bundled.md`](worked-example-lateext-notverified-vs-bundled.md) — 写进last_commit≠已Verify/有扩展≠已Accept/凑齐+2/3≠后来也验过；≠352 bundled（不变量 809）
 - [`worked-example-process-notalways-vs-bundled.md`](worked-example-process-notalways-vs-bundled.md) — 进了这一轮≠每轮都会叫/叫了Process≠这一次刚回/失败了≠已交差；≠351 bundled（不变量 808）

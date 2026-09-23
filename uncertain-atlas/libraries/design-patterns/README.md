@@ -1,3 +1,4 @@
+- [`name-the-lateext-notrecall-bar.md`](name-the-lateext-notrecall-bar.md) — 下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify not already called-again / not already must-recall / not already this-round-verify 正式三事（352 余量）（不变量 811）
 - [`name-the-lateext-notreverify-bar.md`](name-the-lateext-notreverify-bar.md) — 建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify not already engine-reverify / not already req6-done / not already settled 正式三事（352 余量）（不变量 810）
 - [`name-the-lateext-notverified-bar.md`](name-the-lateext-notverified-bar.md) — +2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过 not already verified / not already accept / not already later-verified 正式三事（352 余量）（不变量 809）
 - [`name-the-process-notalways-bar.md`](name-the-process-notalways-bar.md) — 失败时可能对上更早一次或根本不调不是已经每轮都会叫 not already every-round / not already this-prepare / not already crossed 正式三事（351 余量）（不变量 808）
