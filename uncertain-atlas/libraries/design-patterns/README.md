@@ -341,3 +341,4 @@
 - [name-the-signedmsgtype](name-the-signedmsgtype.md)
 - [name-the-blockid-parts](name-the-blockid-parts.md)
 - [name-the-evidence-fields](name-the-evidence-fields.md)
+- [name-the-validatorset-hash](name-the-validatorset-hash.md)

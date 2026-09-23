@@ -760,6 +760,8 @@
 
 第 430 条：第一版可以不抄这次 Process 回包栏当「看见回了 ProcessProposalResponse.status 就已经当成块非法」。若对照，必须分开 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不是已经当成块非法、ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不是已经可以像 Prepare 那样依赖其它值、应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不是已经 honest proposal 必须 Accept。看见 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不得写成已经当成块非法。看见 ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不得写成已经可以像 Prepare 那样依赖其它值。看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不得写成已经 honest proposal 必须 Accept。不要抄怎样写 Process 回包栏。不要另写 19 节。不要写怎样写 Process 回包栏。
 
+第 444 条：第一版可以不抄这次集合哈希覆盖面当「看见集合哈希对上就已经是同一套验证者」。若对照，必须分开 ValidatorSet.Hash() 是叶子根不是已经是整套集合、叶子只编码 pub_key 与 voting_power 不是已经是完整验证者、不含地址与提议者优先不是已经不需要交叉核对。看见集合哈希对上不得写成已经是整套集合。看见叶子有权与钥不得写成已经是完整验证者。看见不含地址与提议者优先不得写成已经不需要交叉核对。不要抄怎样算 ValidatorSet 哈希。不要另写 19 节。不要写怎样种树。提议者选择交叉核对是另一条（56），Validator 认人是另一条（364），votes 降序是另一条（365）。
+
 第 443 条：第一版可以不抄这次证据字段可信性当「看见证据里有这些数就已经是证据自带权威」。若对照，必须分开证据里有 TotalVotingPower / ValidatorPower 不是这些数已经自证、要求与本节点自己那份数据相等不是已经能独立验证、Timestamp 是过错那块的凭证时间不是已经由证据自带。看见证据里填了权不得写成这些数已经自证。看见要求与本节点自己那份数据相等不得写成已经能独立验证。看见 Timestamp 不得写成已经由证据自带。不要抄怎样构造证据。不要另写 19 节。不要写怎样算投票权。双签证据形状是另一条（21），证据窗是另一条（46），证据身份是另一条（64）。
 
 第 442 条：第一版可以不抄这次 BlockID 双根当「看见一个根对上就已经是同一块」。若对照，必须分开 BlockID.Hash 是头字段的默克尔根不是已经是整块的根、PartSetHeader 是整块的根不是已经是头、两块的 BlockID 有一个根对上不是已经是同一块。看见 BlockID.Hash 是头字段的默克尔根不得写成已经是整块的根。看见 PartSetHeader 是整块的根不得写成已经是头。看见一个根对上不得写成已经是同一块。不要抄怎样算 BlockID。不要另写 19 节。不要写怎样切片。双签证据谓词是另一条（21），Part 下标对齐是另一条（59），宣布≠收到是另一条（36）。

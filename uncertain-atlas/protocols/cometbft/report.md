@@ -248,6 +248,9 @@ invariant：官方明写 `BlockID` 含**两个不同的默克尔根**。`Hash` �
 **证据字段可信性**  
 invariant：`DuplicateVoteEvidence` / `LightClientAttackEvidence` 的 `TotalVotingPower` / `ValidatorPower` / `Timestamp` 校验都写成**必须与节点自己那份数据相等**（Must be equal to nodes own copy of the data）：证据里的数字是被对照对象，不是权威来源；不是这些数已经自证，也不是已经能独立验证：见 [`../../tracks/implementation/worked-example-evidencefields-vs-selfcertified.md`](../../tracks/implementation/worked-example-evidencefields-vs-selfcertified.md)（不变量 443）。
 
+**`ValidatorSet.Hash()` 的覆盖面**  
+invariant：官方明写它是 `SimpleValidator` 叶子的默克尔根，每片叶子只是该验证者 `pub_key` 与 `voting_power` 的 protobuf 编码，**验证者地址与提议者优先不包含在这份哈希里**：哈希对上不是已经是整套集合，不是已经含地址或提议者日程：见 [`../../tracks/implementation/worked-example-validatorset-hash-vs-whole-set.md`](../../tracks/implementation/worked-example-validatorset-hash-vs-whole-set.md)（不变量 444）。
+
 ---
 
 ## 18. 如何测试

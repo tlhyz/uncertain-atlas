@@ -4570,6 +4570,26 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 **脚本位置：** `uncertain-atlas/tools/check-atlas.ps1`。初版误放在仓库根 `tools/`，与 `ARCHITECTURE.md` 的目录图不一致；已迁入知识库内，并把根定位逻辑改成「脚本目录的上一级须有 `GOAL.md`」，同时兼容旧布局。
 
+---
+
+## 2026-09-17 · Round 444 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 444 / 语料 C452 / 模式 name-the-validatorset-hash / 反模式 validatorset-hash-sold-as-whole-set / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2167 | 高 | 看见 ValidatorSet.Hash() 是叶子根 / 看见哈希对上 会被写成已经是整套集合，或已经含地址 | 官方：Hash() 是 SimpleValidator 叶子的默克尔根。根对上 ≠ 覆盖每个字段 |
+| A2168 | 高 | 看见叶子只编码 pub_key 与 voting_power / 看见两样都在 会被写成已经是完整验证者，或已经是 Validator 那个对象 | 官方：每片叶子只是该验证者 pub_key 与 voting_power 的 protobuf 编码 |
+| A2169 | 高 | 看见不含地址与提议者优先 会被写成已经不需要交叉核对，或已经不会认错人 | 官方明写：Validator addresses and proposer priorities are not included in this hash。这正是 ASA-2024-009 的设计根源 |
+| A2170 | 中 | 怎样算 ValidatorSet 哈希 / 怎样编叶子 / 怎样种树 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2171 | 记录 | 会与 56 / 364 / 365 糊成「看见集合哈希对上就已经是同一套验证者」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ValidatorSet.Hash() 的覆盖面 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是整套集合 / 已经是完整验证者 / 已经不需要交叉核对 标成另一对象。与 56 的分界：56 是事故与修复（状态同步要交叉核对），444 是规范里的设计事实（哈希覆盖面） |
+| A2172 | 记录 | 本波去重预检拦下**两处**撞车：`FeatureParams` 已被不变量 343 覆盖（343 正文含「FeatureParams.PbtsEnableHeight」），`PbtsEnableHeight` 本身也已是 343 | 两处均弃，改挖 ValidatorSet 哈希覆盖面 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。
+
 **结论：** 复审按 GOAL 门禁通过。事实 / 推断 / 建议已分开。发现的债全部处置，无遗留假引用。
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。

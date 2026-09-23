@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 444）
+
+- CometBFT 集合哈希覆盖面工作实例（官方 Core Data Structures ValidatorSet，实现 / 集合哈希覆盖面，不另写 19 节）：看见 ValidatorSet.Hash() 是叶子根不是已经是整套集合。看见叶子只编码 pub_key 与 voting_power 不是已经是完整验证者。看见不含地址与提议者优先不是已经不需要交叉核对。集合哈希覆盖面不是不变量 56，也不是不变量 364，也不是不变量 365。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 444；语料 C452；模式 name-the-validatorset-hash；反模式 validatorset-hash-sold-as-whole-set；L10.3 第 442 条。填 L4.4 / CometBFT 档案 ValidatorSet.Hash() 的覆盖面 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样算 ValidatorSet 哈希、怎样编叶子、怎样种树。不编博物馆页。不另写 19 节。不与 56 / 364 / 365 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是整套集合、已经是完整验证者、已经不需要交叉核对 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范里一句被长期绕过的设计事实：ValidatorSet.Hash() 的叶子只编码 pub_key 与 voting_power，**地址与提议者优先不在里面**。它正是不变量 56（ASA-2024-009 状态同步）那条事故的设计根源。去重预检拦下两处撞车：`FeatureParams` 已被不变量 343 覆盖（343 明写 FeatureParams.PbtsEnableHeight），`PbtsEnableHeight` 本身也已挖。
+
 ## 2026-09-17（全库复审）
 
 - **范围改为全库。** 439–443 五波的自检只扫改动文件，两次复审各发现一批自动波遗留的机械债。这次扫全库 1392 个 Markdown。

@@ -53,3 +53,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 `BlockID` 含两个不同的默克尔根。`BlockID.Hash` 是头字段的根（`MerkleRoot(header)`）≠ 已经是整块的根；`PartSetHeader` 是完整序列化块的根（`MerkleRoot(MakeParts(block))`）≠ 已经是头；`Total` 是片数 ≠ 已经收到那些片：[`../implementation/worked-example-blockid-vs-roots.md`](../implementation/worked-example-blockid-vs-roots.md)（不变量 442）。
 
 证据里的 `TotalVotingPower` / `ValidatorPower` ≠ 这些数已经自证（校验要求是**与本节点自己那份数据相等**）；`Timestamp` 是过错那块的凭证时间 ≠ 已经由证据自带：[`../implementation/worked-example-evidencefields-vs-selfcertified.md`](../implementation/worked-example-evidencefields-vs-selfcertified.md)（不变量 443）。
+
+`ValidatorSet.Hash()` 是 `SimpleValidator` 叶子的根，叶子只编码 `pub_key` 与 `voting_power`；**地址与提议者优先不在里面** ≠ 已经是整套集合、≠ 已经不需要交叉核对：[`../implementation/worked-example-validatorset-hash-vs-whole-set.md`](../implementation/worked-example-validatorset-hash-vs-whole-set.md)（不变量 444）。
