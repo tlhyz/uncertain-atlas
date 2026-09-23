@@ -4648,6 +4648,32 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
+---
+
+## 2026-09-17 · Round 447 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 447 / 语料 C455 / 模式 name-the-params-docs / 反模式 paramsdocs-sold-as-one-table / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2190 | 高 | 看见 `ConsensusParams.version` 有这一栏 会被写成已经知道看的是哪一份官方文档 | 两份官方文档都列这一栏、都叫 `version`，但内嵌类型表不同 |
+| A2191 | 高 | 看见字段号 5 相同 会被写成已经是同一个内嵌类型 | `abci++_methods.md` 字段 5 = `abci`（`ABCIParams`，注明自 v1.0 起弃用）；`data_structures.md` 字段 5 空档、字段 7 = `feature`（`FeatureParams`） |
+| A2192 | 高 | 看见 spec 内部写法不齐 会被写成已经能挑一份照做，或自己补一个折中定义 | 两份都是官方。实现必须**点名依据哪一份、哪一版** |
+| A2193 | 中 | 怎样编 ConsensusParams / 怎样处理字段 5 与 7 / 怎样补折中定义 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2194 | 记录 | 会与 386 / 385 / 370 糊成「看见字段号对上就已经是同一个对象」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 ConsensusParams 的跨文档差异 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经知道看的是哪一份 / 已经是同一个内嵌类型 / 已经能挑一份照做 标成另一对象。与 386 的分界：386 挖的是 `ConsensusParams.abci` 的**语义**（走 abci++_methods 那条线），447 挖的是**两份文档不一致本身** |
+| A2195 | 记录 | 去重预检：「字段号相同」「两份文档」「VersionsParams」「polymorphic」「多态」全库 0 命中 | 无撞车 |
+| A2196 | 记录 | 另记一种**不同**的坑，明确不当同一条：`VersionParams.app` 在 CometBFT 0.34 里叫 `app_version` —— 同义不同名（跨版本）；本波是同名不同义（跨文档） | 写进边界表与 CHANGELOG，防止后人把两种坑混成一句 |
+| A2197 | 记录 | 原文两处小疵，按原文记录不代改：① `abci++_methods.md` 把类型写成 `VersionsParams`（多个 s）而锚点是 `#versionparams`；② `data_structures.md` 的锚点写成 `#featureparms`（少个 a） | 记进 CHANGELOG |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/abci/abci++_methods.md 与 spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
 
 
 

@@ -59,3 +59,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 轻客户端的 `LightBlock` 把 `SignedHeader` 与 `ValidatorSet` 合起来，两者都不得为 nil，并且由**一句哈希相等**绑定（`SignedHeader.ValidatorsHash == ValidatorSet.Hash()`）：两件都在 ≠ 已经是同一高 ≠ 已经绑上：[`../implementation/worked-example-lightblock-vs-binding.md`](../implementation/worked-example-lightblock-vs-binding.md)（不变量 445）。
 
 `ValidatorParams.pub_key_types` 是**接受的**公钥类型列表，命名按 **ABCI 公钥命名、不是 Amino 名**：列表里有 ≠ 已经在用 ≠ 已经接受每一种：[`../implementation/worked-example-validatorparams-vs-naming.md`](../implementation/worked-example-validatorparams-vs-naming.md)（不变量 446）。
+
+`ConsensusParams` 在**两份官方文档里内嵌类型表不同**：`abci++_methods.md` 字段 5 是 `abci`（`ABCIParams`，自 v1.0 弃用），`data_structures.md` 字段 5 空档、字段 7 是 `feature`（`FeatureParams`）。字段号相同 ≠ 同一个内嵌类型；实现须点名依据哪一份、哪一版：[`../implementation/worked-example-consensusparams-vs-docs.md`](../implementation/worked-example-consensusparams-vs-docs.md)（不变量 447）。

@@ -237,6 +237,7 @@
 - [`worked-example-validatorset-hash-vs-whole-set.md`](worked-example-validatorset-hash-vs-whole-set.md) — 看见 ValidatorSet.Hash() 是叶子根 ≠ 已经是整套集合；看见叶子只编码 pub_key 与 voting_power ≠ 已经是完整验证者；看见不含地址与提议者优先 ≠ 已经不需要交叉核对（不变量 444）
 - [`worked-example-lightblock-vs-binding.md`](worked-example-lightblock-vs-binding.md) — 看见 LightBlock 有 SignedHeader ≠ 已经有头；看见两件都在 ≠ 已经是同一高；看见绑定是 ValidatorsHash == ValidatorSet.Hash() ≠ 已经非 nil 就够（不变量 445）
 - [`worked-example-validatorparams-vs-naming.md`](worked-example-validatorparams-vs-naming.md) — 看见 ValidatorParams.pub_key_types 是接受列表 ≠ 已经有这种钥；看见命名按 ABCI ≠ 是 Amino 名；看见列了类型 ≠ 已经接受每一种（不变量 446）
+- [`worked-example-consensusparams-vs-docs.md`](worked-example-consensusparams-vs-docs.md) — 看见 ConsensusParams.version 有这一栏 ≠ 已经知道看的是哪一份；看见字段号 5 相同 ≠ 已经是同一个内嵌类型；看见 spec 内部写法不齐 ≠ 已经能挑一份照做（不变量 447）
 
 平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
 外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  

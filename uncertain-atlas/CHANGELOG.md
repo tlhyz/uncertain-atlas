@@ -2,6 +2,15 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 447）
+
+- CometBFT 共识参数跨文档工作实例（官方 abci++_methods.md 与 core/data_structures.md 的 ConsensusParams，实现 / 共识参数跨文档，不另写 19 节）：看见 ConsensusParams.version 有这一栏不是已经知道看的是哪一份。看见字段号 5 相同不是已经是同一个内嵌类型。看见 spec 内部写法不齐不是已经能挑一份照做。共识参数跨文档不是不变量 386，也不是不变量 385，也不是不变量 370。出处 github.com/cometbft/cometbft spec（两份）。
+- 不变量 447；语料 C455；模式 name-the-params-docs；反模式 paramsdocs-sold-as-one-table；L10.3 第 445 条。填 L4.4 / CometBFT 档案 ConsensusParams 的跨文档差异 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编 ConsensusParams、怎样处理字段 5 与 7、怎样补折中定义。不编博物馆页。不另写 19 节。不与 386 / 385 / 370 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经知道看的是哪一份、已经是同一个内嵌类型、已经能挑一份照做 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是**两份官方文档互相矛盾**这个事实本身：`abci++_methods.md` 的 ConsensusParams 有字段 5 `abci`（`ABCIParams`，并注明自 v1.0 起已弃用）；`data_structures.md` 的字段 5 是空档，改把字段 7 写成 `feature`（`FeatureParams`）。同一个类型名、同一段字段号，内嵌类型表不同。既有不变量 386 只挖了 `ConsensusParams.abci` 的**语义**（走 abci++_methods 那条线），从未挖两份文档不一致。「字段号相同」「两份文档」「VersionsParams」全库 0 命中。
+- 另记一种不同的坑，不当同一条：`VersionParams.app` 在 CometBFT 0.34 里叫 `app_version` —— 那是**同义不同名（跨版本）**，与本波的**同名不同义（跨文档）**不是一回事。
+- 顺带记录两处原文小疵，不代改：`abci++_methods.md` 把类型写成 `VersionsParams`（多个 s），锚点却是 `#versionparams`；`data_structures.md` 的锚点写成 `#featureparms`（少个 a）。
+
 ## 2026-09-17（续 446）
 
 - CometBFT 公钥类型表工作实例（官方 Core Data Structures ValidatorParams，实现 / 公钥类型命名，不另写 19 节）：看见 pub_key_types 是列表不是已经有这种钥。看见命名按 ABCI 不是 Amino。看见列了类型不是已经接受每一种。公钥类型表不是不变量 364，也不是不变量 35，也不是不变量 428。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
