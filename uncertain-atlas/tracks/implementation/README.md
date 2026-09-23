@@ -1,3 +1,4 @@
+- [`worked-example-retarget-nottraceable-vs-bundled.md`](worked-example-retarget-nottraceable-vs-bundled.md) — t1没进块≠还能按t1查到/t2进了块≠有人知道来源/改了≠交差；≠355 bundled（不变量 820）
 - [`worked-example-add-notmempool-vs-bundled.md`](worked-example-add-notmempool-vs-bundled.md) — 回包里有它≠进池/能提≠过了CheckTx/加进去了≠交差；≠355 bundled（不变量 819）
 - [`worked-example-drop-notmempool-vs-bundled.md`](worked-example-drop-notmempool-vs-bundled.md) — 本块不提≠出池/拿掉了≠永远不提/回包没有它≠交差；≠355 bundled（不变量 818）
 - [`worked-example-nonval-notverified-vs-bundled.md`](worked-example-nonval-notverified-vs-bundled.md) — 立刻ACCEPT≠已验过/不是验证者≠已交差/规范允许≠提议者也会叫Process；≠354 bundled（不变量 817）

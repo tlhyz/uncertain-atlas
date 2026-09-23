@@ -1,3 +1,7 @@
+## 2026-09-23（续 937）
+
+- 不变量 820；语料 C797；模式 name-the-retarget-nottraceable-bar；反模式 retarget-nottraceable-sold-as-bundled；L10.3 第 789 条。填 L4.4 / CometBFT 档案 把 t1 改成 t2 不是已经还能按 t1 查到 not already t1-lookup / not already origin-known / not already settled 正式三事（355 余量） / 实现表 / 05b / 共识专题 / 停链面地图。355 preparedrop vs mempool bundled unbundling 完成（820 item 3）。
+
 ## 2026-09-23（续 936）
 
 - 不变量 819；语料 C796；模式 name-the-add-notmempool-bar；反模式 add-notmempool-sold-as-bundled；L10.3 第 788 条。填 L4.4 / CometBFT 档案 往提案加了一笔新的不是已经进了内存池 not already in-pool / not already checktx / not already settled 正式三事（355 余量） / 实现表 / 05b / 共识专题 / 停链面地图。355 preparedrop vs mempool bundled unbundling 续（819 item 2）。

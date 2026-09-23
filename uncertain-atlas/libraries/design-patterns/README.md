@@ -1,3 +1,4 @@
+- [`name-the-retarget-nottraceable-bar.md`](name-the-retarget-nottraceable-bar.md) — 把 t1 改成 t2 不是已经还能按 t1 查到 not already t1-lookup / not already origin-known / not already settled 正式三事（355 余量）（不变量 820）
 - [`name-the-add-notmempool-bar.md`](name-the-add-notmempool-bar.md) — 往提案加了一笔新的不是已经进了内存池 not already in-pool / not already checktx / not already settled 正式三事（355 余量）（不变量 819）
 - [`name-the-drop-notmempool-bar.md`](name-the-drop-notmempool-bar.md) — 从提案拿掉 tx 不是已经从内存池删掉 not already out-of-pool / not already never-propose / not already settled 正式三事（355 余量）（不变量 818）
 - [`name-the-nonval-notverified-bar.md`](name-the-nonval-notverified-bar.md) — 非验证者可以立刻回 ACCEPT 不是已经验过这块 not already verified / not already settled / not already processalso 正式三事（354 余量）（不变量 817）
