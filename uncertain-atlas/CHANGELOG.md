@@ -1,3 +1,7 @@
+## 2026-09-23（续 925）
+
+- 不变量 808；语料 C785；模式 name-the-process-notalways-bar；反模式 process-notalways-sold-as-bundled；L10.3 第 777 条。填 L4.4 / CometBFT 档案 失败时可能对上更早一次或根本不调不是已经每轮都会叫 not already every-round / not already this-prepare / not already crossed 正式三事（351 余量） / 实现表 / 05b / 共识专题 / 停链面地图。351 processalso vs prepare bundled unbundling 完成（808 item 3）。
+
 ## 2026-09-23（续 924）
 
 - 不变量 807；语料 C784；模式 name-the-process-notguaranteed-bar；反模式 process-notguaranteed-sold-as-bundled；L10.3 第 776 条。填 L4.4 / CometBFT 档案 通常紧跟 Prepare、列表对得上不是已经保证是这一次 not already guaranteed-this / not already must-match / not already same-call 正式三事（351 余量） / 实现表 / 05b / 共识专题 / 停链面地图。351 processalso vs prepare bundled unbundling 续（807 item 2）。

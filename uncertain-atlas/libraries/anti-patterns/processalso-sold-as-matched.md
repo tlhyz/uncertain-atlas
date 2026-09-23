@@ -19,6 +19,7 @@
 
 - [process-notskip-sold-as-bundled](process-notskip-sold-as-bundled.md) 是 Process 也会在提议者那边叫 not already skip-process / not already settled / not already already-processed 正式三事（351 item 1），不是本页 bundled 全段 alone。
 - [process-notguaranteed-sold-as-bundled](process-notguaranteed-sold-as-bundled.md) 是通常紧跟 Prepare、列表对得上 not already guaranteed-this / not already must-match / not already same-call 正式三事（351 item 2），不是本页 bundled 全段 alone。
+- [process-notalways-sold-as-bundled](process-notalways-sold-as-bundled.md) 是失败时可能对上更早一次或根本不调 not already every-round / not already this-prepare / not already crossed 正式三事（351 item 3），不是本页 bundled 全段 alone。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种 Process 也会在提议者那边叫不是已经不用再 Process。
 - [req3coherence-sold-as-accept](req3coherence-sold-as-accept.md) 是正确提议者的准备提案必须被正确接收者 Accept，不是本页这种通常紧跟 Prepare、列表对得上不是已经保证是这一次。
 - [candidate-sold-as-execute](candidate-sold-as-execute.md) 是候选不是已经是 ExecuteTxState，不是本页这种失败时可能对上更早一次或根本不调不是已经每轮都会叫。

@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看通常紧跟 Prepare、列表对得上不是已经保证是这一次 not already guaranteed-this / not already must-match / not already same-call 正式三事（351 余量），必须分开通常紧跟 Prepare、列表对得上 是不是 already guaranteed-this interchangeable / 351 processalso bundled interchangeable / processalso-sold-as-matched interchangeable、txs 一样 是不是 already must-match interchangeable、刚 Prepare 完 是不是 already same-call interchangeable。可以跳过「看见通常对得上就已经保证是这一次 interchangeable / 就已经必须一样 interchangeable / 就已经是同一份调用 interchangeable」。不要另写怎样写 Process。351 processalso vs prepare bundled unbundling 在本页 item 2 续（806 + 807）；续 [`worked-example-process-notalways-vs-bundled.md`](worked-example-process-notalways-vs-bundled.md)（不变量 808 item 3）；完成见 808。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看通常紧跟 Prepare、列表对得上不是已经保证是这一次 not already guaranteed-this / not already must-match / not already same-call 正式三事（351 余量），必须分开通常紧跟 Prepare、列表对得上 是不是 already guaranteed-this interchangeable / 351 processalso bundled interchangeable / processalso-sold-as-matched interchangeable、txs 一样 是不是 already must-match interchangeable、刚 Prepare 完 是不是 already same-call interchangeable。可以跳过「看见通常对得上就已经保证是这一次 interchangeable / 就已经必须一样 interchangeable / 就已经是同一份调用 interchangeable」。不要另写怎样写 Process。351 processalso vs prepare bundled unbundling 在本页 item 2 续（806 + 807）；完成 [`worked-example-process-notalways-vs-bundled.md`](worked-example-process-notalways-vs-bundled.md)（不变量 808 item 3）。
 
 ## 本页不抄
 
