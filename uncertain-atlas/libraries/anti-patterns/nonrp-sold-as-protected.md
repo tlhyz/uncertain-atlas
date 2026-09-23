@@ -19,6 +19,7 @@
 
 - [nonrp-notraw-sold-as-bundled](nonrp-notraw-sold-as-bundled.md) 是 vote_extension 包进 CanonicalVoteExtension not already raw-signed / not already canon-vote / not already settled 正式三事（358 item 1），不是本页 bundled 全段 alone。
 - [nonrp-notprotected-sold-as-bundled](nonrp-notprotected-sold-as-bundled.md) 是 non_rp_extension 按原样签 not already replay-protected / not already must-fill / not already settled 正式三事（358 item 2），不是本页 bundled 全段 alone。
+- [nonrp-notsame-sold-as-bundled](nonrp-notsame-sold-as-bundled.md) 是要签原样数据可以用 non_rp not already same-as-ve / not already empty-verify / not already settled 正式三事（358 item 3），不是本页 bundled 全段 alone。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是 CanonicalVoteExtension 就已经是 CanonicalVote，不是本页这种 vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签。
 - [extendonce-sold-as-height](extendonce-sold-as-height.md) 是一轮只能交出一份扩展就已经是每一高度一份，不是本页这种 non_rp_extension 按原样签不是已经有重放保护。
 - [verifywhen-sold-as-skipped](verifywhen-sold-as-skipped.md) 是空扩展仍会调 Verify 就已经跳过 Verify，不是本页这种要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份。

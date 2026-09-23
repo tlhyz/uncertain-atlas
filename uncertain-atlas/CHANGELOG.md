@@ -1,3 +1,7 @@
+## 2026-09-23（续 946）
+
+- 不变量 829；语料 C806；模式 name-the-nonrp-notsame-bar；反模式 nonrp-notsame-sold-as-bundled；L10.3 第 798 条。填 L4.4 / CometBFT 档案 要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份 not already same-as-ve / not already empty-verify / not already settled 正式三事（358 余量） / 实现表 / 05b / 共识专题 / 停链面地图。358 nonrp vs wrapped bundled unbundling 完成（829 item 3）。
+
 ## 2026-09-23（续 945）
 
 - 不变量 828；语料 C805；模式 name-the-nonrp-notprotected-bar；反模式 nonrp-notprotected-sold-as-bundled；L10.3 第 797 条。填 L4.4 / CometBFT 档案 non_rp_extension 按原样签不是已经有重放保护 not already replay-protected / not already must-fill / not already settled 正式三事（358 余量） / 实现表 / 05b / 共识专题 / 停链面地图。358 nonrp vs wrapped bundled unbundling 续（828 item 2）。

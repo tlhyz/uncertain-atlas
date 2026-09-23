@@ -1,3 +1,4 @@
+- [`nonrp-notsame-sold-as-bundled.md`](nonrp-notsame-sold-as-bundled.md) — 有第二份被写成已经和 vote_extension 同一份 / 能空被写成已经是空扩展仍验签 / 能用被写成已经交差（不变量 829）
 - [`nonrp-notprotected-sold-as-bundled.md`](nonrp-notprotected-sold-as-bundled.md) — 按原样签了被写成已经有重放保护 / 字段在被写成已经必须填 / 没有包装被写成已经交差（不变量 828）
 - [`nonrp-notraw-sold-as-bundled.md`](nonrp-notraw-sold-as-bundled.md) — 绑了这些字段被写成已经按原样签 / 有包装被写成已经是 CanonicalVote / 签了被写成已经交差（不变量 827）
 - [`prepvalid-notfinalize-sold-as-bundled.md`](prepvalid-notfinalize-sold-as-bundled.md) — 先跑了被写成已经交出去 / 有事件被写成已经印进 LastResultsHash / 留着被写成已经交差（不变量 826）
