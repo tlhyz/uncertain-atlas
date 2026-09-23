@@ -1,3 +1,7 @@
+## 2026-09-23（续 931）
+
+- 不变量 814；语料 C791；模式 name-the-hash-notprocess-bar；反模式 hash-notprocess-sold-as-bundled；L10.3 第 783 条。填 L4.4 / CometBFT 档案 请求里的 hash 不是已经对该块跑过 Process not already ran-process / not already this-process / not already processalso 正式三事（353 余量） / 实现表 / 05b / 共识专题 / 停链面地图。353 verifywhen vs empty bundled unbundling 完成（814 item 3）。
+
 ## 2026-09-23（续 930）
 
 - 不变量 813；语料 C790；模式 name-the-empty-notlocal-bar；反模式 empty-notlocal-sold-as-bundled；L10.3 第 782 条。填 L4.4 / CometBFT 档案 不对本进程自己发出的 Precommit 调用不是已经自己验过 not already self-verified / not already accept / not already req6-done 正式三事（353 余量） / 实现表 / 05b / 共识专题 / 停链面地图。353 verifywhen vs empty bundled unbundling 续（813 item 2）。
