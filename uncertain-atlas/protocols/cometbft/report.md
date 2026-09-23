@@ -269,6 +269,9 @@ invariant：`Byzantine Validators` 是「acted maliciously 的验证者」——
 **`Part.index`**  
 invariant：`Part` 是块的一片，`index` 的校验只有 `Must be >= 0` —— 一条**下限**，不是范围上界也不是顺序保证。而 `Part` 表的校验栏与说明栏本身有复制粘贴错位：`bytes`（bytes）与 `proof`（`[Proof]` **结构**）都被写成「Must be of length 32 / MerkleRoot of a serialized block」，那两条语义按下文属于 `PartSetHeader`。实现以下文为准，不照抄该表：见 [`../../tracks/implementation/worked-example-partindex-vs-whole.md`](../../tracks/implementation/worked-example-partindex-vs-whole.md)（不变量 450）。
 
+**`BlockIDFlag`**  
+invariant：它表示这份签是**对着哪个 `BlockID`** 的，不是「这个人参与了」。枚举注释把三件事分开：`ABSENT = 1` 是 the vote was not received、`COMMIT = 2` 是 voted for the block that received the majority、`NIL = 3` 是 voted for nil，而 `UNKNOWN = 0` **indicates an error condition** —— 不得与 `ABSENT` 归成一类。另：`ExtendedCommitSig` 的 `Extension` / `NonRpExtension` 校验是「标志不是 `COMMIT` 时必须为 0」，两个签名「是 `COMMIT` 时有效、否则为 0」：见 [`../../tracks/implementation/worked-example-blockidflag-vs-vote.md`](../../tracks/implementation/worked-example-blockidflag-vs-vote.md)（不变量 451）。
+
 ---
 
 ## 18. 如何测试

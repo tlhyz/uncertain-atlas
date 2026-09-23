@@ -2,6 +2,15 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 451）
+
+- CometBFT 票标志枚举工作实例（官方 Core Data Structures BlockIDFlag / CommitSig / ExtendedCommitSig，实现 / 票标志枚举，不另写 19 节）：看见 BlockIDFlag 是这份签对着哪个 BlockID 不是已经投过。看见 ABSENT 是票没收到不是已经投了 nil。看见 UNKNOWN 是错误状态不是另一种缺席。票标志枚举不是不变量 365，也不是不变量 425，也不是不变量 441。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 451；语料 C459；模式 name-the-blockidflag；反模式 absent-sold-as-nil；L10.3 第 449 条。填 L4.4 / CometBFT 档案 BlockIDFlag / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编 BlockIDFlag、怎样重建票集、怎样算到场。不编博物馆页。不另写 19 节。不与 365 / 425 / 441 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经投过、已经投了 nil、另一种缺席 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是枚举注释里的**三层区分**：`BLOCK_ID_FLAG_ABSENT = 1` 注释写 the vote was not received；`BLOCK_ID_FLAG_COMMIT = 2` 写 voted for the block that received the majority；`BLOCK_ID_FLAG_NIL = 3` 写 voted for nil；而 `BLOCK_ID_FLAG_UNKNOWN = 0` 写 **indicates an error condition**。把 `UNKNOWN` 与 `ABSENT` 都当「没投票」，会把错误状态洗成正常缺席。另记一条**条件校验**（属 `ExtendedCommitSig`）：`Extension` / `NonRpExtension` 的校验是「标志不是 `Commit` 时必须为 0」，两个签名是「是 `Commit` 时有效、否则为 0」——字段能不能非空取决于标志。
+- 去重预检：`BlockIDFlag` / `ABSENT` / `LastBlockID` / `ConsensusHash` / `EvidenceHash` / `Header.Version` / `ExtendedCommitSig` 全库 0 命中；`block_id_flag` 只在 365 / 425 作为 `VoteInfo` / `ExtendedVoteInfo` 的**字段存在性**出现过，未挖枚举语义。
+- 顺带记两处原文小疵，不代改：`Header` 表把两个字段写成 `ValidatorHash` / `NextValidatorHash`（规范别处叫 `ValidatorsHash` / `NextValidatorsHash`）；`ExtendedCommitSig` 的校验措辞用 `Commit` 指代枚举值 `BLOCK_ID_FLAG_COMMIT`。
+
 ## 2026-09-17（续 450）
 
 - CometBFT 片下标工作实例（官方 Core Data Structures Part，实现 / 片下标，不另写 19 节）：看见 Part.index 是这片的下标不是已经有整叠。看见写成 ≥ 0 不是已经有序。看见 Part 表的校验栏不是已经是本对象的校验。片下标不是不变量 59，也不是不变量 60，也不是不变量 442。出处 github.com/cometbft/cometbft spec/core/data_structures.md。

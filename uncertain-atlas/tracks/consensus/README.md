@@ -67,3 +67,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 `LightClientAttackEvidence.Byzantine Validators` 是**主张**（acted maliciously）≠ 已经成立；同一张表里三个字段的说明或校验写 `Read Below` ≠ 已经给出定义；摘要说三种攻击穷尽，而问责文里还有 **phantom validators** 并留了开放问题 ≠ 已经验完：[`../implementation/worked-example-byzantine-vs-accusation.md`](../implementation/worked-example-byzantine-vs-accusation.md)（不变量 449）。
 
 `Part.index` 是**这一片**的下标 ≠ 已经有整叠；校验只有 `Must be >= 0`（下限）≠ 已经有序；`Part` 表的校验栏与说明栏本身有复制粘贴错位（把 `PartSetHeader` 的「32 字节 / 序列化块的默克尔根」抄到了 `bytes` / `proof` 行上，而 `proof` 的类型是结构）≠ 已经是本对象的校验：[`../implementation/worked-example-partindex-vs-whole.md`](../implementation/worked-example-partindex-vs-whole.md)（不变量 450）。
+
+`BlockIDFlag` 表示**这份签对着哪个 BlockID** ≠ 已经投过；官方枚举注释把 `ABSENT`（the vote was not received）与 `UNKNOWN`（**indicates an error condition**）分开 —— 把两者都当「没投票」会把错误状态洗成缺席；`ExtendedCommitSig` 里 `Extension` / `NonRpExtension` 则**取决于标志是不是 `COMMIT`**：[`../implementation/worked-example-blockidflag-vs-vote.md`](../implementation/worked-example-blockidflag-vs-vote.md)（不变量 451）。

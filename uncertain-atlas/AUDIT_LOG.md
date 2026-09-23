@@ -4733,6 +4733,32 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
+---
+
+## 2026-09-17 · Round 451 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 451 / 语料 C459 / 模式 name-the-blockidflag / 反模式 absent-sold-as-nil / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2219 | 高 | 看见 `BlockIDFlag` / 看见标志 会被写成已经投过，或已经计过票 | 官方：它表示这份签名是**对着哪个 `BlockID`** 的，不是「这个人参与了」 |
+| A2220 | 高 | 看见 `BLOCK_ID_FLAG_ABSENT`（= 1，注释 the vote was not received）会被写成已经投了 nil | 没收到与明确反对在到场算法上不是一回事，把它当 nil 会计错 |
+| A2221 | 高 | 看见 `BLOCK_ID_FLAG_UNKNOWN`（= 0，注释 **indicates an error condition**）会被当成另一种缺席 | 官方把它与正常的 `ABSENT` 分开。把错误状态洗成正常缺席是到场统计的实质错误 |
+| A2222 | 中 | 怎样编 BlockIDFlag / 怎样重建票集 / 怎样算到场 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2223 | 记录 | 会与 365 / 425 / 441 糊成「看见标志就有票」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 BlockIDFlag / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经投过 / 已经投了 nil / 另一种缺席 标成另一对象 |
+| A2224 | 记录 | 去重预检：`BlockIDFlag` / `ABSENT` / `LastBlockID` / `ConsensusHash` / `EvidenceHash` / `Header.Version` / `ExtendedCommitSig` 全库 0 命中。`block_id_flag` 只在 365 / 425 作为**字段存在性**出现，未挖枚举语义 | 无撞车 |
+| A2225 | 记录 | 本波另记 `ExtendedCommitSig` 的**条件校验**：`Extension` / `NonRpExtension` 必须「标志不是 `Commit` 时为 0」，两个签名「是 `Commit` 时有效、否则为 0」 | 写进页面与档案。字段能不能非空取决于标志，是又一层「看见字段在就已经填了」 |
+| A2226 | 记录 | 原文两处小疵，按原文记录不代改：① `Header` 表把两个字段写成 `ValidatorHash` / `NextValidatorHash`（规范别处叫 `ValidatorsHash` / `NextValidatorsHash`）；② `ExtendedCommitSig` 校验措辞用 `Commit` 指代枚举值 `BLOCK_ID_FLAG_COMMIT` | 记进 CHANGELOG |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md 与 spec/light-client/accountability/README.md）。
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
