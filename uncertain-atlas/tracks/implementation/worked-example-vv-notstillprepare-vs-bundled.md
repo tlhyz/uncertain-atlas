@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 validValue 非 nil 不是已经还会调 Prepare not already still-prepare / not already can-revise / not already settled 正式三事（356 余量），必须分开直接用了 是不是 already still-prepare interchangeable / 356 validvalue bundled interchangeable / validvalue-sold-as-prepared interchangeable、有 validValue 是不是 already can-revise interchangeable、锁住了 是不是 already settled interchangeable。可以跳过「看见直接用了就已经还会调 Prepare interchangeable / 就已经能再改列表 interchangeable / 就已经交差 interchangeable」。不要另写怎样设 validValue。356 validvalue vs prepare bundled unbundling 在本页 item 1 启动；续 [`worked-example-vv-noteveryround-vs-bundled.md`](worked-example-vv-noteveryround-vs-bundled.md)（不变量 822 item 2）；完成见 823。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 validValue 非 nil 不是已经还会调 Prepare not already still-prepare / not already can-revise / not already settled 正式三事（356 余量），必须分开直接用了 是不是 already still-prepare interchangeable / 356 validvalue bundled interchangeable / validvalue-sold-as-prepared interchangeable、有 validValue 是不是 already can-revise interchangeable、锁住了 是不是 already settled interchangeable。可以跳过「看见直接用了就已经还会调 Prepare interchangeable / 就已经能再改列表 interchangeable / 就已经交差 interchangeable」。不要另写怎样设 validValue。356 validvalue vs prepare bundled unbundling 在本页 item 1 启动（821 + 822）；续 [`worked-example-vv-noteveryround-vs-bundled.md`](worked-example-vv-noteveryround-vs-bundled.md)（不变量 822 item 2）；完成见 823。
 
 ## 本页不抄
 
