@@ -1,3 +1,4 @@
+- [`worked-example-nonrp-notprotected-vs-bundled.md`](worked-example-nonrp-notprotected-vs-bundled.md) — non_rp按原样签≠已有重放保护/字段在≠必须填/没有包装≠已经交差；≠358 bundled（不变量 828）
 - [`worked-example-nonrp-notraw-vs-bundled.md`](worked-example-nonrp-notraw-vs-bundled.md) — vote_extension包进CanonicalVoteExtension≠按原样签/有包装≠CanonicalVote/签了≠已经交差；≠358 bundled（不变量 827）
 - [`worked-example-prepvalid-notfinalize-vs-bundled.md`](worked-example-prepvalid-notfinalize-vs-bundled.md) — Prepare里产出事件≠已经交给引擎/有事件≠印进LastResultsHash/留着≠已经交差；≠357 bundled（不变量 826）
 - [`worked-example-prepvalid-notreject-vs-bundled.md`](worked-example-prepvalid-notreject-vs-bundled.md) — Prepare回包验不过崩溃≠Process REJECT/回包坏了≠Req3必须Accept/引擎停了≠已经交差；≠357 bundled（不变量 825）
