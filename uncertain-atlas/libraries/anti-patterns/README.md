@@ -444,3 +444,4 @@
 - [misbehaviortype-sold-as-enum](misbehaviortype-sold-as-enum.md)
 - [proofops-sold-as-chain](proofops-sold-as-chain.md)
 - [signedmsgtype-sold-as-verified](signedmsgtype-sold-as-verified.md)
+- [blockid-sold-as-one-root](blockid-sold-as-one-root.md)

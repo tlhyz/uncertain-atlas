@@ -49,3 +49,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 `ProofOps.ops` 是多条证明 ≠ 已经串上了；各条的 `type` 可以不同 ≠ 已经是同一棵树；最后一条的根才该等于待验根 ≠ 已经对了中间某一条：[`../implementation/worked-example-proofops-vs-chain.md`](../implementation/worked-example-proofops-vs-chain.md)（不变量 440）。
 
 `Vote.Type` 是这张票的类型 ≠ 已经按那条路径验过；`CanonicalVote.Type` 是同一个枚举 ≠ 已经是同一个对象（后者不会出现在块里，字段顺序不同、含 `ChainID`）；枚举里写着 PREVOTE ≠ 已经证明签名只在这一步有效：[`../implementation/worked-example-signedmsgtype-vs-verify.md`](../implementation/worked-example-signedmsgtype-vs-verify.md)（不变量 441）。
+
+`BlockID` 含两个不同的默克尔根。`BlockID.Hash` 是头字段的根（`MerkleRoot(header)`）≠ 已经是整块的根；`PartSetHeader` 是完整序列化块的根（`MerkleRoot(MakeParts(block))`）≠ 已经是头；`Total` 是片数 ≠ 已经收到那些片：[`../implementation/worked-example-blockid-vs-roots.md`](../implementation/worked-example-blockid-vs-roots.md)（不变量 442）。

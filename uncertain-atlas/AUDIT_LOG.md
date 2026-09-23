@@ -4505,6 +4505,24 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
+---
+
+## 2026-09-17 · Round 442 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 442 / 语料 C450 / 模式 name-the-blockid-parts / 反模式 blockid-sold-as-one-root / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2148 | 高 | 看见 BlockID.Hash 是头字段的默克尔根 / 看见有哈希 会被写成已经是整块的根，或已经覆盖交易 | 官方：Hash 是 MerkleRoot(header)，长度必须 32。头字段的根 ≠ 整块的根 |
+| A2149 | 高 | 看见 PartSetHeader 是完整序列化块的根 / 看见有它 会被写成已经是头，或已经是共识里那份头哈希 | 官方：PartSetHeader 用于共识期间安全流言，是 MerkleRoot(MakeParts(block))。整块根 ≠ 头哈希 |
+| A2150 | 高 | 看见 PartSetHeader.Total 是片数 / 看见数对上 会被写成已经收到那些片，或已经齐 | 官方：Total 是这块的片数，校验必须 > 0。报了片数 ≠ 已拼出块 |
+| A2151 | 中 | 怎样算 BlockID / 怎样切片 / 怎样流言 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2152 | 记录 | 会与 21 / 59 / 36 糊成「看见一个根对上就已经是同一块」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 BlockID 的两个根 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经是整块的根 / 已经是头 / 已经收到那些片 标成另一对象。与 21 的分界：21 是证据谓词用「不同 BlockID」，442 是 BlockID 本身有两个根 |
+| A2153 | 记录 | 本波挖的是规范里一句长期被绕过的写法：BlockID 含「两个不同的默克尔根」（two distinct Merkle roots） | 去重预检确认 `PartSetHeader` / `BlockID.Hash` / `MakeParts` / 「序列化块的默克尔根」全库 0 命中，无撞车 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
 

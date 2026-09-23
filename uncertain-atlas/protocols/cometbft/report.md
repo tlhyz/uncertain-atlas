@@ -242,6 +242,9 @@ invariant：看见 `ProofOps.ops` 是多条证明不是已经串上了；各条�
 **`SignedMsgType`**  
 invariant：看见 `Vote.Type` 是这张票的类型不是已经按那条路径验过；`CanonicalVote.Type` 是同一个枚举不是已经是同一个对象（官方明写后者**不会出现在块里**，`SignBytes` 含 `ChainID` 且字段顺序不同）；枚举里写着 `PREVOTE` 不是已经证明签名只在这一步有效：见 [`../../tracks/implementation/worked-example-signedmsgtype-vs-verify.md`](../../tracks/implementation/worked-example-signedmsgtype-vs-verify.md)（不变量 441）。
 
+**`BlockID` 的两个根**  
+invariant：官方明写 `BlockID` 含**两个不同的默克尔根**。`Hash` 是头里全部字段的根（`MerkleRoot(header)`）不是已经是整块的根；`PartSetHeader` 是完整序列化块切片后的根（`MerkleRoot(MakeParts(block))`）不是已经是头；`Total` 是片数不是已经收到那些片：见 [`../../tracks/implementation/worked-example-blockid-vs-roots.md`](../../tracks/implementation/worked-example-blockid-vs-roots.md)（不变量 442）。
+
 ---
 
 ## 18. 如何测试

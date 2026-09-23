@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 442）
+
+- CometBFT BlockID 双根工作实例（官方 Core Data Structures BlockID / PartSetHeader，实现 / BlockID 双根，不另写 19 节）：看见 BlockID.Hash 是头字段的默克尔根不是已经是整块的根。看见 PartSetHeader 是完整序列化块的根不是已经是头。看见 PartSetHeader.Total 是片数不是已经收到那些片。BlockID 双根不是不变量 21，也不是不变量 59，也不是不变量 36。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 442；语料 C450；模式 name-the-blockid-parts；反模式 blockid-sold-as-one-root；L10.3 第 440 条。填 L4.4 / CometBFT 档案 BlockID 的两个根 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样算 BlockID、怎样切片、怎样流言。不编博物馆页。不另写 19 节。不与 21 / 59 / 36 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经是整块的根、已经是头、已经收到那些片 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范原文里一句被长期绕过的写法：`BlockID` 含「**两个不同的默克尔根**」。去重预检确认 `PartSetHeader` / `BlockID.Hash` / `MakeParts` / 「序列化块的默克尔根」全库 0 命中。
+
 ## 2026-09-17（续 441）
 
 - CometBFT SignedMsgType 工作实例（官方 Core Data Structures SignedMsgType / Vote / CanonicalVote，实现 / SignedMsgType，不另写 19 节）：看见 Vote.Type 是这张票的类型不是已经按那条路径验过。看见 CanonicalVote.Type 是同一个枚举不是已经是同一个对象。看见枚举里写着 PREVOTE 不是已经证明签名只在这一步有效。SignedMsgType 不是不变量 6，也不是不变量 19，也不是不变量 65。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
