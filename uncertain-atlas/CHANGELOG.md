@@ -1,3 +1,7 @@
+## 2026-09-23（续 928）
+
+- 不变量 811；语料 C788；模式 name-the-lateext-notrecall-bar；反模式 lateext-notrecall-sold-as-bundled；L10.3 第 780 条。填 L4.4 / CometBFT 档案 下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify not already called-again / not already must-recall / not already this-round-verify 正式三事（352 余量） / 实现表 / 05b / 共识专题 / 停链面地图。352 lateext vs verified bundled unbundling 完成（811 item 3）。
+
 ## 2026-09-23（续 927）
 
 - 不变量 810；语料 C787；模式 name-the-lateext-notreverify-bar；反模式 lateext-notreverify-sold-as-bundled；L10.3 第 779 条。填 L4.4 / CometBFT 档案 建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify not already engine-reverify / not already req6-done / not already settled 正式三事（352 余量） / 实现表 / 05b / 共识专题 / 停链面地图。352 lateext vs verified bundled unbundling 续（810 item 2）。

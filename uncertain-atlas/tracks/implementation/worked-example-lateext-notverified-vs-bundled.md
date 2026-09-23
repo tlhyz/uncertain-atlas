@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看 +2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过 not already verified / not already accept / not already later-verified 正式三事（352 余量），必须分开写进了 last_commit 是不是 already verified interchangeable / 352 lateext bundled interchangeable / lateext-sold-as-verified interchangeable、有扩展 是不是 already accept interchangeable、凑齐了 +2/3 是不是 already later-verified interchangeable。可以跳过「看见写进了 last_commit 就已经 Verify 过 interchangeable / 就已经 Accept interchangeable / 就已经后来的也验过 interchangeable」。不要另写怎样再验迟到扩展。352 lateext vs verified bundled unbundling 在本页 item 1 启动（809 + 810）；续 [`worked-example-lateext-notreverify-vs-bundled.md`](worked-example-lateext-notreverify-vs-bundled.md)（不变量 810 item 2）；完成见 811。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看 +2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过 not already verified / not already accept / not already later-verified 正式三事（352 余量），必须分开写进了 last_commit 是不是 already verified interchangeable / 352 lateext bundled interchangeable / lateext-sold-as-verified interchangeable、有扩展 是不是 already accept interchangeable、凑齐了 +2/3 是不是 already later-verified interchangeable。可以跳过「看见写进了 last_commit 就已经 Verify 过 interchangeable / 就已经 Accept interchangeable / 就已经后来的也验过 interchangeable」。不要另写怎样再验迟到扩展。352 lateext vs verified bundled unbundling 在本页 item 1 启动；完成 [`worked-example-lateext-notreverify-vs-bundled.md`](worked-example-lateext-notreverify-vs-bundled.md)（不变量 810 item 2）；完成 [`worked-example-lateext-notrecall-vs-bundled.md`](worked-example-lateext-notrecall-vs-bundled.md)（不变量 811 item 3）。
 
 ## 本页不抄
 

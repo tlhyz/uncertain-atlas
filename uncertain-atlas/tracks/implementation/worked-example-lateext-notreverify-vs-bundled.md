@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify not already engine-reverify / not already req6-done / not already settled 正式三事（352 余量），必须分开建议再看 是不是 already engine-reverify interchangeable / 352 lateext bundled interchangeable / lateext-sold-as-verified interchangeable、Prepare 在用扩展 是不是 already req6-done interchangeable、能改提案 是不是 already settled interchangeable。可以跳过「看见建议再看就已经是引擎会再 Verify interchangeable / 就已经过了 Req 6 interchangeable / 就已经交差 interchangeable」。不要另写怎样再验迟到扩展。352 lateext vs verified bundled unbundling 在本页 item 2 续（809 + 810）；续 [`worked-example-lateext-notrecall-vs-bundled.md`](worked-example-lateext-notrecall-vs-bundled.md)（不变量 811 item 3）；完成见 811。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify not already engine-reverify / not already req6-done / not already settled 正式三事（352 余量），必须分开建议再看 是不是 already engine-reverify interchangeable / 352 lateext bundled interchangeable / lateext-sold-as-verified interchangeable、Prepare 在用扩展 是不是 already req6-done interchangeable、能改提案 是不是 already settled interchangeable。可以跳过「看见建议再看就已经是引擎会再 Verify interchangeable / 就已经过了 Req 6 interchangeable / 就已经交差 interchangeable」。不要另写怎样再验迟到扩展。352 lateext vs verified bundled unbundling 在本页 item 2 续（809 + 810）；完成 [`worked-example-lateext-notrecall-vs-bundled.md`](worked-example-lateext-notrecall-vs-bundled.md)（不变量 811 item 3）。
 
 ## 本页不抄
 
