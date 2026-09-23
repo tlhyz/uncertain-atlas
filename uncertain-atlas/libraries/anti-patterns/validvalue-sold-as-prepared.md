@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [vv-notstillprepare-sold-as-bundled](vv-notstillprepare-sold-as-bundled.md) 是 validValue 非 nil not already still-prepare / not already can-revise / not already settled 正式三事（356 item 1），不是本页 bundled 全段 alone。
+- [vv-noteveryround-sold-as-bundled](vv-noteveryround-sold-as-bundled.md) 是自己是提议者 not already will-call / not already vv-nil / not already every-round 正式三事（356 item 2），不是本页 bundled 全段 alone。
 - [candidate-sold-as-execute](candidate-sold-as-execute.md) 是候选已经是 ExecuteTxState，不是本页这种 validValue 非 nil 不是已经还会调 Prepare。
 - [preparenondet-sold-as-deterministic](preparenondet-sold-as-deterministic.md) 是 Prepare 没有确定性要求，不是本页这种自己是提议者不是已经每轮都会调 Prepare。
 - [preparedrop-sold-as-evicted](preparedrop-sold-as-evicted.md) 是从提案拿掉 tx 不是已经从内存池删掉，不是本页这种没调 Prepare 不是已经又装了一份 raw 提案。

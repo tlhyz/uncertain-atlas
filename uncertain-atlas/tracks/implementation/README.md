@@ -1,3 +1,4 @@
+- [`worked-example-vv-noteveryround-vs-bundled.md`](worked-example-vv-noteveryround-vs-bundled.md) — 是提议者≠会调Prepare/进了这一轮≠validValue为nil/规范写了When≠每轮都会叫；≠356 bundled（不变量 822）
 - [`worked-example-vv-notstillprepare-vs-bundled.md`](worked-example-vv-notstillprepare-vs-bundled.md) — 直接用了≠还会调Prepare/有validValue≠能再改列表/锁住了≠交差；≠356 bundled（不变量 821）
 - [`worked-example-retarget-nottraceable-vs-bundled.md`](worked-example-retarget-nottraceable-vs-bundled.md) — t1没进块≠还能按t1查到/t2进了块≠有人知道来源/改了≠交差；≠355 bundled（不变量 820）
 - [`worked-example-add-notmempool-vs-bundled.md`](worked-example-add-notmempool-vs-bundled.md) — 回包里有它≠进池/能提≠过了CheckTx/加进去了≠交差；≠355 bundled（不变量 819）
