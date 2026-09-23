@@ -4712,6 +4712,31 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
+---
+
+## 2026-09-17 · Round 450 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 450 / 语料 C458 / 模式 name-the-part-index / 反模式 partindex-sold-as-whole / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2212 | 高 | 看见 `Part.index` / 看见有下标 会被写成已经有整叠，或已经齐 | 官方：`Part` 定义块的**一片**，块切成 parts 用来流言。一片 ≠ 整叠 |
+| A2213 | 高 | 看见校验写 `Must be >= 0` 会被写成已经有序，或已经在范围内 | 那是一条**下限**，不是范围上界，也不是顺序保证 |
+| A2214 | 高 | 照抄 `Part` 表的校验栏与说明栏 | 该表有复制粘贴错位：`index` 的说明写成「Total amount of parts for a block」；`bytes`（bytes）与 `proof`（`[Proof]` **结构**）的说明都写成「MerkleRoot of a serialized block」、校验都写「Must be of length 32」。按下文那两条语义属于 `PartSetHeader.Total` 与 `PartSetHeader.Hash`；「32 字节」对 `Proof` 结构不成立 |
+| A2215 | 中 | 怎样切片 / 怎样算片根 / 怎样流言 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2216 | 记录 | 会与 59 / 60 / 442 糊成「看见片下标在就已经有整叠」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Part.index / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经有整叠 / 已经有序 / 已经是本对象的校验 标成另一对象。与 59 的分界：59 只把 `Part.Index` 当**对齐检查对象**（`Part.Index == Part.Proof.Index`），从未把该字段作为语义条目挖过 |
+| A2217 | 记录 | 去重预检：`Part.bytes` / `Part 表` / `aunts` / `leaf_hash` / `总片数` / `片的数据` 全库 0 命中；`看见 Part.index` 0 命中 | 无撞车 |
+| A2218 | 记录 | 规范表格的错位**按原文记录、不代改**，落成实现禁令：不要照抄 `Part` 表，以下文 `PartSetHeader` 为准 | 写进 CHANGELOG 与页面 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md 与 spec/light-client/accountability/README.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

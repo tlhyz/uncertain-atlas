@@ -2,6 +2,15 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 450）
+
+- CometBFT 片下标工作实例（官方 Core Data Structures Part，实现 / 片下标，不另写 19 节）：看见 Part.index 是这片的下标不是已经有整叠。看见写成 ≥ 0 不是已经有序。看见 Part 表的校验栏不是已经是本对象的校验。片下标不是不变量 59，也不是不变量 60，也不是不变量 442。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 450；语料 C458；模式 name-the-part-index；反模式 partindex-sold-as-whole；L10.3 第 448 条。填 L4.4 / CometBFT 档案 Part.index / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样切片、怎样算片根、怎样流言。不编博物馆页。不另写 19 节。不与 59 / 60 / 442 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经有整叠、已经有序、已经是本对象的校验 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范 Part **表自身的复制粘贴错位**：`index` 的说明写成「Total amount of parts for a block」、`bytes`（bytes 类型）与 `proof`（`[Proof]` **结构**类型）的说明都写成「MerkleRoot of a serialized block」、且两者校验都写「Must be of length 32」。按下文，这两条语义分别属于 `PartSetHeader.Total` 与 `PartSetHeader.Hash`；「32 字节」对 `Proof` 结构根本不成立。**按原文记录，不代改**，并落成实现禁令：不要照抄该表，以下文 `PartSetHeader` 为准。
+- 边界：不变量 59 只把 `Part.Index` 当作**对齐检查对象**（`Part.Index == Part.Proof.Index`），从未把该字段作为语义条目挖过；`Part.index` 作为条目主语全库 0 命中。
+- 去重预检：`Part.bytes` / `Part 表` / `aunts` / `leaf_hash` / `总片数` 全库 0 命中。
+
 ## 2026-09-17（续 449）
 
 - CometBFT 证据指控栏工作实例（官方 Core Data Structures LightClientAttackEvidence + Light Client Accountability，实现 / 证据指控栏，不另写 19 节）：看见 Byzantine Validators 是过错名单不是已经成立。看见 Read Below 不是已经给出了定义。看见摘要说三种穷尽不是已经验完。证据指控栏不是不变量 443，也不是不变量 445，也不是不变量 21。出处 github.com/cometbft/cometbft spec/core/data_structures.md 与 spec/light-client/accountability/README.md。

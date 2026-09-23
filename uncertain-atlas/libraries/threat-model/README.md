@@ -428,6 +428,7 @@
 | 419 | Prepare 请求余栏被写成已经交差 proposed_last_commit | 协议 + 文案 | 看见 PrepareProposalRequest.local_last_commit 是从本进程 CometBFT 数据结构拿到的上一份提交信息 / PrepareProposalRequest.time 是将要提议那块的时间戳 / PrepareProposalRequest.misbehavior 是过错验证者信息列表 / Prepare 请求余栏当成已经交差 proposed_last_commit或已经对上了拟议块头或已经定奖惩 | 不变量 424；语料 C428 |
 | 420 | ExtendedVoteInfo 表余栏被写成已经带了公钥 | 协议 + 文案 | 看见 ExtendedVoteInfo.validator 是发了这张票的验证者 / ExtendedVoteInfo.block_id_flag 标明投了上一块、nil、还是没收到票 / ExtendedVoteInfo.non_rp_extension_signature 是发送验证者造、CometBFT 验过的非重放保护扩展签 / ExtendedVoteInfo 表余栏当成已经带了公钥或已经罚没或已经把验过的签交给应用 | 不变量 425；语料 C429 |
 | 421 | Prepare 请求末栏被写成已经是 Finalize 请求栏的 next_validators_hash | 协议 + 文案 | 看见 PrepareProposalRequest.next_validators_hash 是下一验证者集合默克尔根 / PrepareProposalRequest.proposer_address 是正在造这份提案的验证者地址 / FinalizeBlockRequest.time 是已决块的时间戳 / Prepare 请求末栏当成已经是 Finalize 请求栏的 next_validators_hash或已经造了这份提案或已经对上了拟议块头 | 不变量 426；语料 C430 |
+| 446 | 片下标被当成已经有整叠 | 协议 + 文案 | 看见 Part.index 是这片的下标是已经有整叠 / 写成 ≥ 0 是已经有序 / Part 表的校验栏是已经是本对象的校验 / 片下标当成照抄该表就够 | 不变量 450；语料 C458 |
 | 445 | 证据指控名单被当成已经坐实 | 协议 + 文案 | 看见 Byzantine Validators 是过错名单是已经成立 / Read Below 是已经给出了定义 / 摘要说三种穷尽不是已经验完 / 证据指控栏当成只看摘要就够 | 不变量 449；语料 C457 |
 | 444 | 实现上限被当成共识常数 | 协议 + 文案 | 看见 precision 上界 30s 是已经是协议常数 / 在实现里强制是已经进了共识 / 目的是防溢出是已经选型 / 同步参数上界当成产品建议值 | 不变量 448；语料 C456 |
 | 443 | 字段号对上被当成同一个内嵌类型 | 协议 + 文案 | 看见 ConsensusParams.version 有这一栏是已经知道看的是哪一份 / 字段号 5 相同是已经是同一个内嵌类型 / spec 内部写法不齐是已经能挑一份照做 / 共识参数跨文档当成可以自己补折中定义 | 不变量 447；语料 C455 |

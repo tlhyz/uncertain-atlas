@@ -452,5 +452,6 @@
 - [paramsdocs-sold-as-one-table](paramsdocs-sold-as-one-table.md)
 - [impl-bound-sold-as-consensus](impl-bound-sold-as-consensus.md)
 - [accusation-sold-as-established](accusation-sold-as-established.md)
+- [partindex-sold-as-whole](partindex-sold-as-whole.md)
 - [lightblock-sold-as-both-present](lightblock-sold-as-both-present.md)
 - [pubkeytypes-sold-as-in-use](pubkeytypes-sold-as-in-use.md)

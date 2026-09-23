@@ -65,3 +65,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 `SynchronyParams.precision` 上界 `30s`、`message_delay` 上界 `24h` 是**在实现里强制的**，目的是防时间戳校验溢出 —— 不是协议常数、不是共识规则、不是选型建议值：[`../implementation/worked-example-synchrony-bounds-vs-consensus.md`](../implementation/worked-example-synchrony-bounds-vs-consensus.md)（不变量 448）。
 
 `LightClientAttackEvidence.Byzantine Validators` 是**主张**（acted maliciously）≠ 已经成立；同一张表里三个字段的说明或校验写 `Read Below` ≠ 已经给出定义；摘要说三种攻击穷尽，而问责文里还有 **phantom validators** 并留了开放问题 ≠ 已经验完：[`../implementation/worked-example-byzantine-vs-accusation.md`](../implementation/worked-example-byzantine-vs-accusation.md)（不变量 449）。
+
+`Part.index` 是**这一片**的下标 ≠ 已经有整叠；校验只有 `Must be >= 0`（下限）≠ 已经有序；`Part` 表的校验栏与说明栏本身有复制粘贴错位（把 `PartSetHeader` 的「32 字节 / 序列化块的默克尔根」抄到了 `bytes` / `proof` 行上，而 `proof` 的类型是结构）≠ 已经是本对象的校验：[`../implementation/worked-example-partindex-vs-whole.md`](../implementation/worked-example-partindex-vs-whole.md)（不变量 450）。
