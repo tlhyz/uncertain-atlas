@@ -1,3 +1,4 @@
+- [`vv-notraw-sold-as-bundled.md`](vv-notraw-sold-as-bundled.md) — 没调 Prepare 被写成已经又收了一遍池子 / 用了 validValue 被写成已经是一份新的 raw 提案 / 跳过了 被写成已经从提案拿掉 tx（不变量 823）
 - [`vv-noteveryround-sold-as-bundled.md`](vv-noteveryround-sold-as-bundled.md) — 是提议者 被写成已经会调 / 进了这一轮 被写成已经是 validValue 为 nil / 规范写了 When 被写成已经每轮都会叫（不变量 822）
 - [`vv-notstillprepare-sold-as-bundled.md`](vv-notstillprepare-sold-as-bundled.md) — 直接用了 被写成已经还会调 Prepare / 有 validValue 被写成已经能再改列表 / 锁住了 被写成已经交差（不变量 821）
 - [`retarget-nottraceable-sold-as-bundled.md`](retarget-nottraceable-sold-as-bundled.md) — t1 没进块 被写成已经还能按 t1 查到 / t2 进了块 被写成已经有人知道来源 / 改了 被写成已经交差（不变量 820）

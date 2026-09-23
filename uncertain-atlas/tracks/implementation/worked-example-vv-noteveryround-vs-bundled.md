@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看自己是提议者不是已经每轮都会调 Prepare not already will-call / not already vv-nil / not already every-round 正式三事（356 余量），必须分开是提议者 是不是 already will-call interchangeable / 356 validvalue bundled interchangeable / validvalue-sold-as-prepared interchangeable、进了这一轮 是不是 already vv-nil interchangeable、规范写了 When 是不是 already every-round interchangeable。可以跳过「看见是提议者就已经会调 interchangeable / 就已经是 validValue 为 nil interchangeable / 就已经每轮都会叫 interchangeable」。不要另写怎样设 validValue。356 validvalue vs prepare bundled unbundling 在本页 item 2 续（821 + 822）；续 [`worked-example-vv-notraw-vs-bundled.md`](worked-example-vv-notraw-vs-bundled.md)（不变量 823 item 3）；完成见 823。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看自己是提议者不是已经每轮都会调 Prepare not already will-call / not already vv-nil / not already every-round 正式三事（356 余量），必须分开是提议者 是不是 already will-call interchangeable / 356 validvalue bundled interchangeable / validvalue-sold-as-prepared interchangeable、进了这一轮 是不是 already vv-nil interchangeable、规范写了 When 是不是 already every-round interchangeable。可以跳过「看见是提议者就已经会调 interchangeable / 就已经是 validValue 为 nil interchangeable / 就已经每轮都会叫 interchangeable」。不要另写怎样设 validValue。356 validvalue vs prepare bundled unbundling 在本页 item 2 续（821 + 822）；完成 [`worked-example-vv-notraw-vs-bundled.md`](worked-example-vv-notraw-vs-bundled.md)（不变量 823 item 3）。
 
 ## 本页不抄
 
