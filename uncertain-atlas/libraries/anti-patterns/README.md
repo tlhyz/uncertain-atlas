@@ -1,3 +1,4 @@
+- [`empty-notskip-sold-as-bundled.md`](empty-notskip-sold-as-bundled.md) — 是空的 被写成已经跳过 Verify / 选择不扩 被写成已经不用调 / 仍会调 被写成已经是空扩展仍验签（不变量 812）
 - [`lateext-notrecall-sold-as-bundled.md`](lateext-notrecall-sold-as-bundled.md) — 写进去了 被写成已经又叫了 Verify / 规范允许 被写成已经必须再叫 / 是上一高度 被写成已经是本轮那次 Verify（不变量 811）
 - [`lateext-notreverify-sold-as-bundled.md`](lateext-notreverify-sold-as-bundled.md) — 建议再看 被写成已经是引擎会再 Verify / Prepare 在用扩展 被写成已经过了 Req 6 / 能改提案 被写成已经交差（不变量 810）
 - [`lateext-notverified-sold-as-bundled.md`](lateext-notverified-sold-as-bundled.md) — 写进了 last_commit 被写成已经 Verify 过 / 有扩展 被写成已经 Accept / 凑齐了 +2/3 被写成已经后来的也验过（不变量 809）

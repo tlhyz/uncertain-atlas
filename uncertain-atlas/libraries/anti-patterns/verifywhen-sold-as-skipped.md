@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [empty-notskip-sold-as-bundled](empty-notskip-sold-as-bundled.md) 是空扩展仍会调 Verify not already skip-verify / not already no-call / not already empty-signed 正式三事（353 item 1），不是本页 bundled 全段 alone。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收整张预提交就已经是块非法，不是本页这种空扩展仍会调 Verify 不是已经跳过 Verify。
 - [req6coherence-sold-as-accept](req6coherence-sold-as-accept.md) 是正确进程交出的扩展必须被正确接收者 Verify Accept，不是本页这种不对本进程自己发出的 Precommit 调用不是已经自己验过。
 - [processalso-sold-as-matched](processalso-sold-as-matched.md) 是 Process 也会在提议者那边叫不是已经不用再 Process，不是本页这种请求里的 hash 不是已经对该块跑过 Process。
