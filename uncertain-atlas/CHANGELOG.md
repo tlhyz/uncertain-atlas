@@ -1,3 +1,7 @@
+## 2026-09-23（续 940）
+
+- 不变量 823；语料 C800；模式 name-the-vv-notraw-bar；反模式 vv-notraw-sold-as-bundled；L10.3 第 792 条。填 L4.4 / CometBFT 档案 没调 Prepare 不是已经又装了一份 raw 提案 not already reap-again / not already new-raw / not already preparedrop 正式三事（356 余量） / 实现表 / 05b / 共识专题 / 停链面地图。356 validvalue vs prepare bundled unbundling 完成（823 item 3）。
+
 ## 2026-09-23（续 939）
 
 - 不变量 822；语料 C799；模式 name-the-vv-noteveryround-bar；反模式 vv-noteveryround-sold-as-bundled；L10.3 第 791 条。填 L4.4 / CometBFT 档案 自己是提议者不是已经每轮都会调 Prepare not already will-call / not already vv-nil / not already every-round 正式三事（356 余量） / 实现表 / 05b / 共识专题 / 停链面地图。356 validvalue vs prepare bundled unbundling 续（822 item 2）。

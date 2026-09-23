@@ -1,3 +1,4 @@
+- [`name-the-vv-notraw-bar.md`](name-the-vv-notraw-bar.md) — 没调 Prepare 不是已经又装了一份 raw 提案 not already reap-again / not already new-raw / not already preparedrop 正式三事（356 余量）（不变量 823）
 - [`name-the-vv-noteveryround-bar.md`](name-the-vv-noteveryround-bar.md) — 自己是提议者不是已经每轮都会调 Prepare not already will-call / not already vv-nil / not already every-round 正式三事（356 余量）（不变量 822）
 - [`name-the-vv-notstillprepare-bar.md`](name-the-vv-notstillprepare-bar.md) — validValue 非 nil 不是已经还会调 Prepare not already still-prepare / not already can-revise / not already settled 正式三事（356 余量）（不变量 821）
 - [`name-the-retarget-nottraceable-bar.md`](name-the-retarget-nottraceable-bar.md) — 把 t1 改成 t2 不是已经还能按 t1 查到 not already t1-lookup / not already origin-known / not already settled 正式三事（355 余量）（不变量 820）
