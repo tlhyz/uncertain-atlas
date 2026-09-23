@@ -1,3 +1,7 @@
+## 2026-09-23（续 924）
+
+- 不变量 807；语料 C784；模式 name-the-process-notguaranteed-bar；反模式 process-notguaranteed-sold-as-bundled；L10.3 第 776 条。填 L4.4 / CometBFT 档案 通常紧跟 Prepare、列表对得上不是已经保证是这一次 not already guaranteed-this / not already must-match / not already same-call 正式三事（351 余量） / 实现表 / 05b / 共识专题 / 停链面地图。351 processalso vs prepare bundled unbundling 续（807 item 2）。
+
 ## 2026-09-23（续 923）
 
 - 不变量 806；语料 C783；模式 name-the-process-notskip-bar；反模式 process-notskip-sold-as-bundled；L10.3 第 775 条。填 L4.4 / CometBFT 档案 Process 也会在提议者那边叫不是已经不用再 Process not already skip-process / not already settled / not already already-processed 正式三事（351 余量） / 实现表 / 05b / 共识专题 / 停链面地图。351 processalso vs prepare bundled unbundling 启动（806 item 1）。
