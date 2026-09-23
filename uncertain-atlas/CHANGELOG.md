@@ -1,3 +1,7 @@
+## 2026-09-23（续 935）
+
+- 不变量 818；语料 C795；模式 name-the-drop-notmempool-bar；反模式 drop-notmempool-sold-as-bundled；L10.3 第 787 条。填 L4.4 / CometBFT 档案 从提案拿掉 tx 不是已经从内存池删掉 not already out-of-pool / not already never-propose / not already settled 正式三事（355 余量） / 实现表 / 05b / 共识专题 / 停链面地图。355 preparedrop vs mempool bundled unbundling 启动（818 item 1）。
+
 ## 2026-09-23（续 934）
 
 - 不变量 817；语料 C794；模式 name-the-nonval-notverified-bar；反模式 nonval-notverified-sold-as-bundled；L10.3 第 786 条。填 L4.4 / CometBFT 档案 非验证者可以立刻回 ACCEPT 不是已经验过这块 not already verified / not already settled / not already processalso 正式三事（354 余量） / 实现表 / 05b / 共识专题 / 停链面地图。354 processwhen vs later bundled unbundling 完成（817 item 3）。
