@@ -1,3 +1,4 @@
+- [`worked-example-nonval-notverified-vs-bundled.md`](worked-example-nonval-notverified-vs-bundled.md) — 立刻ACCEPT≠已验过/不是验证者≠已交差/规范允许≠提议者也会叫Process；≠354 bundled（不变量 817）
 - [`worked-example-async-notreject-vs-bundled.md`](worked-example-async-notreject-vs-bundled.md) — 异步了≠还能改票/先回了≠还能Reject/还在跑≠能强迫nil；≠354 bundled（不变量 816）
 - [`worked-example-sync-notlater-vs-bundled.md`](worked-example-sync-notlater-vs-bundled.md) — 是同步的≠稍后改裁决/引擎在等≠离开关键路径/立刻执行≠立刻整块离开关键路径；≠354 bundled（不变量 815）
 - [`worked-example-hash-notprocess-vs-bundled.md`](worked-example-hash-notprocess-vs-bundled.md) — 有hash≠已Process/同一块≠对上这次Process/不保证≠提议者也会叫Process；≠353 bundled（不变量 814）

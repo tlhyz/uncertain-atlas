@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看只做基本检查再异步 Process 不是已经还能再 Reject not already still-revise / not already still-reject / not already force-nil 正式三事（354 余量），必须分开异步了 是不是 already still-revise interchangeable / 354 processwhen bundled interchangeable / processwhen-sold-as-later interchangeable、先回了 是不是 already still-reject interchangeable、还在跑 是不是 already force-nil interchangeable。可以跳过「看见异步了就已经还能改票 interchangeable / 就已经还能 Reject interchangeable / 就已经能强迫 nil interchangeable」。不要另写怎样写 Process 何时调用。354 processwhen vs later bundled unbundling 在本页 item 2 续（815 + 816）；续 [`worked-example-nonval-notverified-vs-bundled.md`](worked-example-nonval-notverified-vs-bundled.md)（不变量 817 item 3）；完成见 817。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看只做基本检查再异步 Process 不是已经还能再 Reject not already still-revise / not already still-reject / not already force-nil 正式三事（354 余量），必须分开异步了 是不是 already still-revise interchangeable / 354 processwhen bundled interchangeable / processwhen-sold-as-later interchangeable、先回了 是不是 already still-reject interchangeable、还在跑 是不是 already force-nil interchangeable。可以跳过「看见异步了就已经还能改票 interchangeable / 就已经还能 Reject interchangeable / 就已经能强迫 nil interchangeable」。不要另写怎样写 Process 何时调用。354 processwhen vs later bundled unbundling 在本页 item 2 续（815 + 816）；完成 [`worked-example-nonval-notverified-vs-bundled.md`](worked-example-nonval-notverified-vs-bundled.md)（不变量 817 item 3）。
 
 ## 本页不抄
 
