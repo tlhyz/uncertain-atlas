@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [sync-notlater-sold-as-bundled](sync-notlater-sold-as-bundled.md) 是 Process 调用是同步的 not already later-revise / not already left-critical / not already full-exec 正式三事（354 item 1），不是本页 bundled 全段 alone。
+- [async-notreject-sold-as-bundled](async-notreject-sold-as-bundled.md) 是只做基本检查再异步 Process not already still-revise / not already still-reject / not already force-nil 正式三事（354 item 2），不是本页 bundled 全段 alone。
 - [preparetimeout-sold-as-liveness](preparetimeout-sold-as-liveness.md) 是立刻整块执行就已经离开关键路径，不是本页这种 Process 调用是同步的不是已经能在返回之后再改裁决。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种只做基本检查再异步 Process 不是已经还能再 Reject。
 - [processalso-sold-as-matched](processalso-sold-as-matched.md) 是 Process 也会在提议者那边叫不是已经不用再 Process，不是本页这种非验证者可以立刻回 ACCEPT 不是已经验过这块。

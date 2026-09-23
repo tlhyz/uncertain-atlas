@@ -1,3 +1,4 @@
+- [`name-the-async-notreject-bar.md`](name-the-async-notreject-bar.md) — 只做基本检查再异步 Process 不是已经还能再 Reject not already still-revise / not already still-reject / not already force-nil 正式三事（354 余量）（不变量 816）
 - [`name-the-sync-notlater-bar.md`](name-the-sync-notlater-bar.md) — Process 调用是同步的不是已经能在返回之后再改裁决 not already later-revise / not already left-critical / not already full-exec 正式三事（354 余量）（不变量 815）
 - [`name-the-hash-notprocess-bar.md`](name-the-hash-notprocess-bar.md) — 请求里的 hash 不是已经对该块跑过 Process not already ran-process / not already this-process / not already processalso 正式三事（353 余量）（不变量 814）
 - [`name-the-empty-notlocal-bar.md`](name-the-empty-notlocal-bar.md) — 不对本进程自己发出的 Precommit 调用不是已经自己验过 not already self-verified / not already accept / not already req6-done 正式三事（353 余量）（不变量 813）
