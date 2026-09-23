@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [lateext-notverified-sold-as-bundled](lateext-notverified-sold-as-bundled.md) 是 +2/3 之后才进来的扩展写进了 commit info not already verified / not already accept / not already later-verified 正式三事（352 item 1），不是本页 bundled 全段 alone。
+- [lateext-notreverify-sold-as-bundled](lateext-notreverify-sold-as-bundled.md) 是建议按 Verify 同款逻辑再看一遍 not already engine-reverify / not already req6-done / not already settled 正式三事（352 item 2），不是本页 bundled 全段 alone。
 - [vote-extension-sold-as-block](vote-extension-sold-as-block.md) 是验签拒收整张预提交就已经是块非法，不是本页这种 +2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过。
 - [req6coherence-sold-as-accept](req6coherence-sold-as-accept.md) 是正确进程交出的扩展必须被正确接收者 Verify Accept，不是本页这种建议按 Verify 同款逻辑再看一遍不是已经是引擎会再 Verify。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是到了 H 不是已经 Prepare 带了扩展，不是本页这种下一高度 round 0 写进 ExtendedCommitInfo 不是已经又叫了 Verify。
