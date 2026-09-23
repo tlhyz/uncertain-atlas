@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) PrepareProposal Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「从提案拿掉 tx 不是已经从内存池删掉 / 往提案加了一笔新的不是已经进了内存池 / 把 t1 改成 t2 不是已经还能按 t1 查到」，不是提案收了就已经从池里删掉，也不是整池可见就已经只能看见装得进一块的子集。不要另写怎样改 Prepare 列表。355 preparedrop vs mempool bundled unbundling 续（818+819）；精读 [`worked-example-drop-notmempool-vs-bundled.md`](worked-example-drop-notmempool-vs-bundled.md)（不变量 818 item 1）；精读 [`worked-example-add-notmempool-vs-bundled.md`](worked-example-add-notmempool-vs-bundled.md)（不变量 819 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「从提案拿掉 tx 不是已经从内存池删掉 / 往提案加了一笔新的不是已经进了内存池 / 把 t1 改成 t2 不是已经还能按 t1 查到」，不是提案收了就已经从池里删掉，也不是整池可见就已经只能看见装得进一块的子集。不要另写怎样改 Prepare 列表。355 preparedrop vs mempool bundled unbundling 完成（818+819+820）；精读 [`worked-example-drop-notmempool-vs-bundled.md`](worked-example-drop-notmempool-vs-bundled.md)（不变量 818 item 1）；精读 [`worked-example-add-notmempool-vs-bundled.md`](worked-example-add-notmempool-vs-bundled.md)（不变量 819 item 2）；精读 [`worked-example-retarget-nottraceable-vs-bundled.md`](worked-example-retarget-nottraceable-vs-bundled.md)（不变量 820 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见本块不提就已经从池里删掉、已经进了内存池、已经还能按原哈希查到」，必须分开从提案拿掉 tx 是不是已经从内存池删掉、往提案加了一笔新的是不是已经进了内存池、把 t1 改成 t2 是不是已经还能按 t1 查到。可以跳过「看见本块不提就已经从池里删掉」。不要另写怎样改 Prepare 列表。355 preparedrop vs mempool bundled unbundling 续（818+819）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见本块不提就已经从池里删掉、已经进了内存池、已经还能按原哈希查到」，必须分开从提案拿掉 tx 是不是已经从内存池删掉、往提案加了一笔新的是不是已经进了内存池、把 t1 改成 t2 是不是已经还能按 t1 查到。可以跳过「看见本块不提就已经从池里删掉」。不要另写怎样改 Prepare 列表。355 preparedrop vs mempool bundled unbundling 完成（818+819+820）。
 
 ## 本页不抄
 

@@ -37,7 +37,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看往提案加了一笔新的不是已经进了内存池 not already in-pool / not already checktx / not already settled 正式三事（355 余量），必须分开回包里有它 是不是 already in-pool interchangeable / 355 preparedrop bundled interchangeable / preparedrop-sold-as-evicted interchangeable、能提 是不是 already checktx interchangeable、加进去了 是不是 already settled interchangeable。可以跳过「看见回包里有它就已经进池 interchangeable / 就已经过了 CheckTx interchangeable / 就已经交差 interchangeable」。不要另写怎样改 Prepare 列表。355 preparedrop vs mempool bundled unbundling 在本页 item 2 续（818 + 819）；续 [`worked-example-retarget-nottraceable-vs-bundled.md`](worked-example-retarget-nottraceable-vs-bundled.md)（不变量 820 item 3）；完成见 820。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看往提案加了一笔新的不是已经进了内存池 not already in-pool / not already checktx / not already settled 正式三事（355 余量），必须分开回包里有它 是不是 already in-pool interchangeable / 355 preparedrop bundled interchangeable / preparedrop-sold-as-evicted interchangeable、能提 是不是 already checktx interchangeable、加进去了 是不是 already settled interchangeable。可以跳过「看见回包里有它就已经进池 interchangeable / 就已经过了 CheckTx interchangeable / 就已经交差 interchangeable」。不要另写怎样改 Prepare 列表。355 preparedrop vs mempool bundled unbundling 在本页 item 2 续（818 + 819）；完成 [`worked-example-retarget-nottraceable-vs-bundled.md`](worked-example-retarget-nottraceable-vs-bundled.md)（不变量 820 item 3）。
 
 ## 本页不抄
 

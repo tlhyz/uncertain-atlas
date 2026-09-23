@@ -1,3 +1,4 @@
+- [`retarget-nottraceable-sold-as-bundled.md`](retarget-nottraceable-sold-as-bundled.md) — t1 没进块 被写成已经还能按 t1 查到 / t2 进了块 被写成已经有人知道来源 / 改了 被写成已经交差（不变量 820）
 - [`add-notmempool-sold-as-bundled.md`](add-notmempool-sold-as-bundled.md) — 回包里有它 被写成已经进池 / 能提 被写成已经过了 CheckTx / 加进去了 被写成已经交差（不变量 819）
 - [`drop-notmempool-sold-as-bundled.md`](drop-notmempool-sold-as-bundled.md) — 本块不提 被写成已经出池 / 拿掉了 被写成已经永远不提 / 回包没有它 被写成已经交差（不变量 818）
 - [`nonval-notverified-sold-as-bundled.md`](nonval-notverified-sold-as-bundled.md) — 立刻 ACCEPT 被写成已经验过这块 / 不是验证者 被写成已经交差 / 规范允许 被写成已经是提议者那边也会叫 Process（不变量 817）
