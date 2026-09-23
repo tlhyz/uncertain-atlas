@@ -1,3 +1,4 @@
+- [`worked-example-process-notskip-vs-bundled.md`](worked-example-process-notskip-vs-bundled.md) — 提议者也会叫Process≠不用再Process/是提议者≠已交差/列表自己编≠已过Process；≠351 bundled（不变量 806）
 - [`worked-example-extend-notperheight-vs-bundled.md`](worked-example-extend-notperheight-vs-bundled.md) — 一轮一份扩展≠每高一份/又能换轮≠本轮再交/交出来≠348必须Accept；≠350 bundled（不变量 805）
 - [`worked-example-extend-notnil-vs-bundled.md`](worked-example-extend-notnil-vs-bundled.md) — ExtendVote非nil才叫≠已签nil/启用扩展≠prevote会叫/有票≠票已带扩展；≠350 bundled（不变量 804）
 - [`worked-example-extend-notresign-vs-bundled.md`](worked-example-extend-notresign-vs-bundled.md) — 一轮最多一张Precommit≠能再签/有票≠已是扩展/还能换轮≠本轮再出；≠350 bundled（不变量 803）
