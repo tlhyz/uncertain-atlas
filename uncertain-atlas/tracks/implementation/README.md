@@ -235,6 +235,7 @@
 - [`worked-example-blockid-vs-roots.md`](worked-example-blockid-vs-roots.md) — 看见 BlockID.Hash 是头字段的默克尔根 ≠ 已经是整块的根；看见 PartSetHeader 是整块的根 ≠ 已经是头；看见两块的 BlockID 有一个根对上 ≠ 已经是同一块（不变量 442）
 - [`worked-example-evidencefields-vs-selfcertified.md`](worked-example-evidencefields-vs-selfcertified.md) — 看见证据里有 TotalVotingPower / ValidatorPower ≠ 这些数已经自证；看见要求「与本节点自己那份数据相等」≠ 已经能独立验证；看见 Timestamp ≠ 已经由证据自带（不变量 443）
 - [`worked-example-validatorset-hash-vs-whole-set.md`](worked-example-validatorset-hash-vs-whole-set.md) — 看见 ValidatorSet.Hash() 是叶子根 ≠ 已经是整套集合；看见叶子只编码 pub_key 与 voting_power ≠ 已经是完整验证者；看见不含地址与提议者优先 ≠ 已经不需要交叉核对（不变量 444）
+- [`worked-example-lightblock-vs-binding.md`](worked-example-lightblock-vs-binding.md) — 看见 LightBlock 有 SignedHeader ≠ 已经有头；看见两件都在 ≠ 已经是同一高；看见绑定是 ValidatorsHash == ValidatorSet.Hash() ≠ 已经非 nil 就够（不变量 445）
 
 平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
 外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  

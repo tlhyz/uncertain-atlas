@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 445）
+
+- CometBFT LightBlock 绑定工作实例（官方 Core Data Structures LightBlock / SignedHeader，实现 / LightBlock 绑定，不另写 19 节）：看见 LightBlock 有 SignedHeader 不是已经有头。看见两件都在不是已经是同一高。看见绑定的那一句是哈希相等不是已经非 nil 就够。LightBlock 绑定不是不变量 444，也不是不变量 148，也不是不变量 35。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 445；语料 C453；模式 name-the-lightblock-binding；反模式 lightblock-sold-as-both-present；L10.3 第 443 条。填 L4.4 / CometBFT 档案 LightBlock 的绑定 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样构造 LightBlock、怎样算集合哈希、怎样切 Header/Commit。不编博物馆页。不另写 19 节。不与 444 / 148 / 35 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经有头、已经是同一高、已经非 nil 就够 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范的绑定额：LightBlock 把 SignedHeader 与 ValidatorSet 合起来，两者都不得为 nil，并且由**一句哈希相等**连接（SignedHeader.ValidatorsHash == ValidatorSet.Hash()）。既有经济证据页只提过「冲突的 LightBlock」与三种攻击穷尽性，结构绑定未挖。去重预检确认 SignedHeader、「由哈希绑定」全库 0 命中。
+
 ## 2026-09-17（续 444）
 
 - CometBFT 集合哈希覆盖面工作实例（官方 Core Data Structures ValidatorSet，实现 / 集合哈希覆盖面，不另写 19 节）：看见 ValidatorSet.Hash() 是叶子根不是已经是整套集合。看见叶子只编码 pub_key 与 voting_power 不是已经是完整验证者。看见不含地址与提议者优先不是已经不需要交叉核对。集合哈希覆盖面不是不变量 56，也不是不变量 364，也不是不变量 365。出处 github.com/cometbft/cometbft spec/core/data_structures.md。

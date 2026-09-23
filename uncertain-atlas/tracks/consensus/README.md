@@ -55,3 +55,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 证据里的 `TotalVotingPower` / `ValidatorPower` ≠ 这些数已经自证（校验要求是**与本节点自己那份数据相等**）；`Timestamp` 是过错那块的凭证时间 ≠ 已经由证据自带：[`../implementation/worked-example-evidencefields-vs-selfcertified.md`](../implementation/worked-example-evidencefields-vs-selfcertified.md)（不变量 443）。
 
 `ValidatorSet.Hash()` 是 `SimpleValidator` 叶子的根，叶子只编码 `pub_key` 与 `voting_power`；**地址与提议者优先不在里面** ≠ 已经是整套集合、≠ 已经不需要交叉核对：[`../implementation/worked-example-validatorset-hash-vs-whole-set.md`](../implementation/worked-example-validatorset-hash-vs-whole-set.md)（不变量 444）。
+
+轻客户端的 `LightBlock` 把 `SignedHeader` 与 `ValidatorSet` 合起来，两者都不得为 nil，并且由**一句哈希相等**绑定（`SignedHeader.ValidatorsHash == ValidatorSet.Hash()`）：两件都在 ≠ 已经是同一高 ≠ 已经绑上：[`../implementation/worked-example-lightblock-vs-binding.md`](../implementation/worked-example-lightblock-vs-binding.md)（不变量 445）。

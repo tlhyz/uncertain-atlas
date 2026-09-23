@@ -251,6 +251,9 @@ invariant：`DuplicateVoteEvidence` / `LightClientAttackEvidence` 的 `TotalVoti
 **`ValidatorSet.Hash()` 的覆盖面**  
 invariant：官方明写它是 `SimpleValidator` 叶子的默克尔根，每片叶子只是该验证者 `pub_key` 与 `voting_power` 的 protobuf 编码，**验证者地址与提议者优先不包含在这份哈希里**：哈希对上不是已经是整套集合，不是已经含地址或提议者日程：见 [`../../tracks/implementation/worked-example-validatorset-hash-vs-whole-set.md`](../../tracks/implementation/worked-example-validatorset-hash-vs-whole-set.md)（不变量 444）。
 
+**`LightBlock` 的绑定**  
+invariant：`LightBlock` 把验证所需的两个数据结构合起来（`SignedHeader` 与 `ValidatorSet`），两者都不得为 nil，并由**一句哈希相等**连接：`SignedHeader.ValidatorsHash == ValidatorSet.Hash()`。两件都在不是已经是同一高，不是已经绑上；`SignedHeader` 本身是头**加上**证明它的 `Commit`：见 [`../../tracks/implementation/worked-example-lightblock-vs-binding.md`](../../tracks/implementation/worked-example-lightblock-vs-binding.md)（不变量 445）。
+
 ---
 
 ## 18. 如何测试

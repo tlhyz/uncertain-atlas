@@ -4606,6 +4606,26 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。
 
+---
+
+## 2026-09-17 · Round 445 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 445 / 语料 C453 / 模式 name-the-lightblock-binding / 反模式 lightblock-sold-as-both-present / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2176 | 高 | 看见 LightBlock 有 SignedHeader / 看见有头 会被写成已经有头，或已经有 `Commit` | 官方：`SignedHeader` 是头**加上**用来证明它的 `Commit`，两者各自不得为 nil 且各自合规 |
+| A2177 | 高 | 看见两件都在 / 看见都非 nil 会被写成已经是同一高，或已经能验 | 官方：两件都不得为 nil 并各自合规。都在 ≠ 属于同一高度 |
+| A2178 | 高 | 看见绑定额会被降成「两边都填了」，漏掉 `SignedHeader.ValidatorsHash == ValidatorSet.Hash()` | 官方明写由集合哈希连接。缺这句相等，这份结构没有证明力 |
+| A2179 | 中 | 怎样构造 LightBlock / 怎样算集合哈希 / 怎样切 Header、Commit 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2180 | 记录 | 会与 444 / 148 / 35 糊成「看见两件都在就已经是一份可验对象」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 LightBlock 的绑定 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经有头 / 已经是同一高 / 已经非 nil 就够 标成另一对象 |
+| A2181 | 记录 | 去重预检确认 `SignedHeader`、「由哈希绑定」、「两个数据结构」全库 0 命中；`LightBlock` 仅 3 处命中且都不是条目主语（都在经济证据页与本页的字段引用里） | 无撞车。经济证据页挖的是三种攻击穷尽性与 sidecar；本波挖结构绑定，层级不同 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。
+
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。

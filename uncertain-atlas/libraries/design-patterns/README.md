@@ -342,3 +342,4 @@
 - [name-the-blockid-parts](name-the-blockid-parts.md)
 - [name-the-evidence-fields](name-the-evidence-fields.md)
 - [name-the-validatorset-hash](name-the-validatorset-hash.md)
+- [name-the-lightblock-binding](name-the-lightblock-binding.md)
