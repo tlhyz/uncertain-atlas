@@ -1,3 +1,4 @@
+- [`worked-example-prepvalid-notdedup-vs-bundled.md`](worked-example-prepvalid-notdedup-vs-bundled.md) — 引擎没有再验重复交易≠已经验过重复/能提≠已经有应用级重放保护/没有再验≠已经交差；≠357 bundled（不变量 824）
 - [`worked-example-vv-notraw-vs-bundled.md`](worked-example-vv-notraw-vs-bundled.md) — 没调Prepare≠又收池子/用了validValue≠新raw提案/跳过了≠从提案拿掉tx；≠356 bundled（不变量 823）
 - [`worked-example-vv-noteveryround-vs-bundled.md`](worked-example-vv-noteveryround-vs-bundled.md) — 是提议者≠会调Prepare/进了这一轮≠validValue为nil/规范写了When≠每轮都会叫；≠356 bundled（不变量 822）
 - [`worked-example-vv-notstillprepare-vs-bundled.md`](worked-example-vv-notstillprepare-vs-bundled.md) — 直接用了≠还会调Prepare/有validValue≠能再改列表/锁住了≠交差；≠356 bundled（不变量 821）
