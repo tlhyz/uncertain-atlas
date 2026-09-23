@@ -374,6 +374,7 @@
 | 看见 FinalizeBlockResponse.events 是给索引用的类型键值事件 / FinalizeBlockResponse.tx_results 是执行这块各笔交易得到的结果列表 / FinalizeBlockResponse.validator_updates 是对验证者集合的改动 / Finalize 回包栏 | 不是已经印进本头，也不是已经是 CheckTx 回包，也不是已经在 H+1 换人，也不是已经是 357 / 316 / 35，也不是高度已经停 | [FinalizeBlockResponse.events 是给索引用的类型键值事件 ≠ 已经印进本头](../implementation/worked-example-finrespbar-vs-header.md) 精读，不是新馆藏 | 431 |
 | 看见 ProcessProposalResponse.status 是应用认为这份提案合法还是非法 / ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态 / 应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价 / Process 回包栏 | 不是已经当成块非法，也不是已经可以像 Prepare 那样依赖其它值，也不是已经 honest proposal 必须 Accept，也不是已经是 376 / 338 / 347，也不是高度已经停 | [ProcessProposalResponse.status 是应用认为这份提案合法还是非法 ≠ 已经当成块非法](../implementation/worked-example-procresp-vs-status.md) 精读，不是新馆藏 | 430 |
 | 看见 MisbehaviorType 只有三个枚举名 / UNKNOWN 是第 0 项（这一节没有写 VerifyStatus 那种「一律是错」） / DUPLICATE_VOTE 和 LIGHT_CLIENT_ATTACK 是枚举名 / MisbehaviorType | 不是已经能认过错种类，也不是已经是引擎判的应用坏了，也不是已经是双签证据已经成立，也不是已经是 364 / 434 / 21，也不是高度已经停 | [MisbehaviorType 只有三个枚举名 ≠ 已经能认过错种类](../implementation/worked-example-misbehaviortype-vs-enum.md) 精读，不是新馆藏 | 439 |
+| 看见 ProofOps.ops 是多条证明 / 各条的 type 可以不同 / 最后一条的根才该对上待验根 / ProofOps 链 | 不是已经串上了，也不是已经是同一棵树，也不是已经对了中间某一条，也不是已经是 325 / 390 / 405，也不是高度已经停 | [ProofOps.ops 是多条证明 ≠ 已经串上了](../implementation/worked-example-proofops-vs-chain.md) 精读，不是新馆藏 | 440 |
 
 ---
 

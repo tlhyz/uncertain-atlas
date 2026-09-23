@@ -442,3 +442,4 @@
 - [prepreqend-sold-as-finreq](prepreqend-sold-as-finreq.md)
 - [procreqend-sold-as-prepreq](procreqend-sold-as-prepreq.md)
 - [misbehaviortype-sold-as-enum](misbehaviortype-sold-as-enum.md)
+- [proofops-sold-as-chain](proofops-sold-as-chain.md)

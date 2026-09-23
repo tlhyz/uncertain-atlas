@@ -230,6 +230,7 @@
 - [`worked-example-psbt-vs-broadcast.md`](worked-example-psbt-vs-broadcast.md) — 看见部分签名包 ≠ 已经能广播；有几张签 ≠ 已经凑齐；174 ≠ 173 ≠ 125（不变量 179）
 - [`worked-example-psbtv2-vs-v0.md`](worked-example-psbtv2-vs-v0.md) — 看见后继版本工作包 ≠ 已经是旧版那份固定未签交易；能再加输入输出 ≠ 已经能广播；370 ≠ 174 ≠ 173 ≠ 125（不变量 186）
 - [`worked-example-misbehaviortype-vs-enum.md`](worked-example-misbehaviortype-vs-enum.md) — 看见 MisbehaviorType 只有三个枚举名 ≠ 已经能认过错种类；UNKNOWN 是第 0 项 ≠ 已经是引擎判的应用坏了；DUPLICATE_VOTE 和 LIGHT_CLIENT_ATTACK 是枚举名 ≠ 已经是双签证据已经成立（不变量 439）
+- [`worked-example-proofops-vs-chain.md`](worked-example-proofops-vs-chain.md) — 看见 ProofOps.ops 是多条证明 ≠ 已经串上了；看见各条的 type 可以不同 ≠ 已经是同一棵树；看见最后一条的根才该对上待验根 ≠ 已经对了中间某一条（不变量 440）
 
 平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
 外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  

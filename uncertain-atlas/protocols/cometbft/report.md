@@ -236,6 +236,9 @@ invariant：H 返回的更新，H+1 改 `NextValidatorsHash`，H+2 才按新集�
 **`MisbehaviorType` 枚举**  
 invariant：看见 `MisbehaviorType` 只有三个枚举名不是已经能认过错种类；看见 `UNKNOWN` 是第 0 项不是已经是引擎判的应用坏了（这一节没有写 `VerifyStatus` 那种「一律是错」）；看见 `DUPLICATE_VOTE` / `LIGHT_CLIENT_ATTACK` 是枚举名不是已经是双签证据已经成立：见 [`../../tracks/implementation/worked-example-misbehaviortype-vs-enum.md`](../../tracks/implementation/worked-example-misbehaviortype-vs-enum.md)（不变量 439）。
 
+**`ProofOps` 链**  
+invariant：看见 `ProofOps.ops` 是多条证明不是已经串上了；各条的 `type` 可以不同不是已经是同一棵树（`ProofOp.type` 是证明类型**以及它怎样编码**）；最后一条的默克尔根才该等于正在核对的最终根，不是已经对了中间某一条：见 [`../../tracks/implementation/worked-example-proofops-vs-chain.md`](../../tracks/implementation/worked-example-proofops-vs-chain.md)（不变量 440）。
+
 ---
 
 ## 18. 如何测试

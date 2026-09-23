@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 440）
+
+- CometBFT ProofOps 链工作实例（官方 ABCI++ Methods Data Types ProofOps，实现 / ProofOps 链，不另写 19 节）：看见 ProofOps.ops 是多条证明不是已经串上了。看见各条的 type 可以不同不是已经是同一棵树。看见最后一条的根才该对上待验根不是已经对了中间某一条。ProofOps 链不是不变量 325，也不是不变量 390，也不是不变量 405。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
+- 不变量 440；语料 C448；模式 name-the-proofops-ops；反模式 proofops-sold-as-chain；L10.3 第 438 条。填 L4.4 / CometBFT 档案 ProofOps 链 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样写 ProofOps 链、怎样种多层树、怎样挑 type。不编博物馆页。不另写 19 节。不与 325 / 390 / 405 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经串上了、已经是同一棵树、已经对了中间某一条 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 去重预检拦下三次撞车：`retain_height` 已是不变量 366、`Validator` 不带后量子公钥已是不变量 364、`ProofOp.key` 已是不变量 390。本波边界引用经原文核对，不靠推测。
+
 ## 2026-09-17（续 439）
 
 - CometBFT MisbehaviorType 枚举工作实例（官方 ABCI++ Methods Data Types MisbehaviorType，实现 / MisbehaviorType，不另写 19 节）：看见 MisbehaviorType 只有三个枚举名不是已经能认过错种类。看见 UNKNOWN 是第 0 项不是已经是引擎判的应用坏了，也不是已经是 VerifyStatus 那种「一律是错」。看见 DUPLICATE_VOTE 和 LIGHT_CLIENT_ATTACK 是枚举名不是已经是双签证据已经成立。MisbehaviorType 不是不变量 364，也不是不变量 434，也不是不变量 21。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。
