@@ -11,7 +11,7 @@
 ## 0. 先修
 
 - [L4.2](../../courses/level-04-bft/L04-M02-rounds-and-steps.md)
-- [L0.6](../../courses/level-00-machine/L00-M06-consistency.md)
+- [L0.6](../../courses/level-00-machine/L00-M06-agreement-problem.md)
 - [不变量 29](../../libraries/invariants/README.md#29-网络调整钟不得绕过上限)
 
 ---

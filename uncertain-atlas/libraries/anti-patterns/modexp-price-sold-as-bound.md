@@ -26,4 +26,4 @@
 
 ## 考试怎么挖
 
-[`C231`](../../adversarial-corpus/README.md)。
+[`C231`](../adversarial-corpus/README.md)。

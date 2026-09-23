@@ -21,7 +21,19 @@ uncertain-atlas/
   tracks/                横向专题：对照表必须随各波更新
   libraries/             可复用结论：模式 / 反模式 / 决策矩阵
   exams/                 统一题库（后置，现在不要做）
+  tools/                 过程工具
+    check-atlas.ps1      每波提交前的机械一致性闸门
 ```
+
+**每波提交前跑一次：** 在仓库根（含 `uncertain-atlas/` 的那一层）跑
+
+```powershell
+& .\uncertain-atlas\tools\check-atlas.ps1
+```
+
+它查库计数、不变量/语料最大号、frontier 行、活边界标记、全库链接与行尾，
+全通过（exit 0）才提交。脚本必须带 **UTF-8 BOM** 保存：它含中文，而
+Windows PowerShell 5.1 会把无 BOM 的 `.ps1` 按 ANSI 解码（`pwsh` 不存在时尤其要注意）。
 
 读法：
 

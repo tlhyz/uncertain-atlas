@@ -2,6 +2,15 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（全库复审）
+
+- **范围改为全库。** 439–443 五波的自检只扫改动文件，两次复审各发现一批自动波遗留的机械债。这次扫全库 1392 个 Markdown。
+- **修 33 条断链**：21 条是 `libraries/anti-patterns/` 下 `../../adversarial-corpus/` 多退一层；5 条是目标文件真实名字不同（`empty-sold-as-dead`→`empty-addr-sold-as-untyped`、`L00-M06-consistency`→`L00-M06-agreement-problem`、`level-02-accounts`→`level-02-state`、`level-05-execution`→`level-05-ethereum`、`name-the-tx-identifier`→`name-the-txid`）；**7 条是指向从未写过的页面的假引用**（`bech32-sold-as-utxo`、`segwit-sold-as-txid`、`create-size-sold-as-already-capped`、`initcode-sold-as-already-bounded`、`chainid-sold-as-already-signed`、`validator-sold-as-pubkey`）。假引用整条删除，不留着假装覆盖过。修后 8747 条链接 0 断链。
+- **修 5 处活边界标记滞后**：`index/03` 的 05b 行与 Cosmos / CometBFT 行各停在 438（439–443 五波全漏更）；`halt-surfaces` 的「不变量 84–438；语料 C88–C442」；`adversarial-corpus` 的「来源：…不变量 1–226」；`threat-model` 表内最大 `#` 停在 434。
+- `threat-model` 只补 #437–439（对应不变量 441–443）。`MisbehaviorType`（不变量 439）**故意不补**：该表要求存在用户可受害的错认路径，枚举名对不上验证过错没有这条路径，强行补会造假条目。
+- **新增过程资产** [`tools/check-atlas.ps1`](tools/check-atlas.ps1)：每波提交前的机械一致性闸门，查 8 项，当前全通过。它把「前沿行必须跟到最大号」「活边界标记必须跟随」写成可回归的规则，避免同类债再累积。
+- 记两个坑：脚本含中文，Windows PowerShell 5.1 按 ANSI 读无 BOM 的 `.ps1`，必须带 UTF-8 BOM（`edit` 工具改过会丢 BOM）；脚本内按行正则必须带 `(?m)`，否则 `^` 只匹配整串开头，静默 0 命中并误报。
+
 ## 2026-09-17（续 443）
 
 - CometBFT 证据字段可信性工作实例（官方 Core Data Structures DuplicateVoteEvidence / LightClientAttackEvidence，实现 / 证据字段可信性，不另写 19 节）：看见证据里有 TotalVotingPower / ValidatorPower 不是这些数已经自证。看见要求「与本节点自己那份数据相等」不是已经能独立验证。看见 Timestamp 是过错那块的凭证时间不是已经由证据自带。证据字段可信性不是不变量 21，也不是不变量 46，也不是不变量 64。出处 github.com/cometbft/cometbft spec/core/data_structures.md。

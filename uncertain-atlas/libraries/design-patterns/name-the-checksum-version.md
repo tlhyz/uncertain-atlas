@@ -19,7 +19,7 @@
 
 - 不要和 [`name-the-address-object.md`](name-the-address-object.md) 弄混：那一页管的是看见地址 ≠ 已经有 UTXO；本页管的是看见后继地址 ≠ 已经是旧校验和方案。
 - 不要和 [`name-the-psbt-role.md`](name-the-psbt-role.md) 弄混：那一页管的是未完成交易对象。
-- 不要和 [`name-the-tx-identifier.md`](name-the-tx-identifier.md) 弄混：那一页管的是交易标识。
+- 不要和 [`name-the-txid.md`](name-the-txid.md) 弄混：那一页管的是交易标识。
 
 ## 对 Uncertain 的建议
 

@@ -20,4 +20,4 @@
 - [extreqmis-sold-as-reward](extreqmis-sold-as-reward.md) 是 ExtendVoteRequest.proposer_address 就已经知道本头哈希，不是本页这种 validator_address 不是已经带了公钥。
 - [verifyheight-sold-as-extheight](verifyheight-sold-as-extheight.md) 是 Verify 请求余栏三列，不是本页这种 non_rp_vote_extension 不是已经是 vote_extension。
 - [extresp-sold-as-wrap](extresp-sold-as-wrap.md) 是 ExtendVoteResponse.vote_extension 就已经会包进 CanonicalVoteExtension，不是本页这种 non_rp 不加元信息不是已经按原样签。
-- [validator-sold-as-pubkey](validator-sold-as-pubkey.md) 是 VoteInfo 里 Validator 就已经带了公钥，不是本页这种 Verify 请求栏 validator_address 不是已经带了公钥。
+- [validator-sold-as-update](validator-sold-as-update.md) 是 VoteInfo 里 Validator 就已经带了公钥，不是本页这种 Verify 请求栏 validator_address 不是已经带了公钥。

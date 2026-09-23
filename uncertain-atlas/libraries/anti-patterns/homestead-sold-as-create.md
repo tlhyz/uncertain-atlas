@@ -19,9 +19,6 @@
 
 ## 和相邻反模式
 
-- [create-size-sold-as-already-capped](create-size-sold-as-already-capped.md) 是 170，不是本页。
-- [initcode-sold-as-already-bounded](initcode-sold-as-already-bounded.md) 是 3860，不是本页。
-- [empty-sold-as-dead](empty-sold-as-dead.md) 是 161，不是本页。
-- [der-sold-as-already-strict](der-sold-as-already-strict.md) 是比特币 BIP-66，不是本页。
-- [chainid-sold-as-already-signed](chainid-sold-as-already-signed.md) 是 155，不是本页。
+- [empty-addr-sold-as-untyped](empty-addr-sold-as-untyped.md) 是 161，不是本页。
+- [valid-sold-as-der](valid-sold-as-der.md) 是比特币 BIP-66，不是本页。
 - [delegatecall-sold-as-callcode](delegatecall-sold-as-callcode.md) 是同一分叉的另一份规范。

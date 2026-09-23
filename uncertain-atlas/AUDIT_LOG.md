@@ -4541,6 +4541,41 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
+---
+
+## 2026-09-17 · 全库复审（用户要求「复审优化」）
+
+审核人：DeepSeek Agent（自审）
+范围：全库 Markdown，重点查**前 439 波累积的机械债**
+
+**触发原因：** 439–443 五波的自检只扫「本次改动文件」，范围太窄，导致两次复审各发现一批自动波遗留的滞后项。本次改为全库范围。
+
+### 发现与处置
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2160 | 高 | **33 条断链**。其中 21 条是同一错误：`libraries/anti-patterns/` 下写成 `../../adversarial-corpus/README.md`（`../..` 退到知识库根）。另 12 条分两类：目标文件真实名字不同（如 `empty-sold-as-dead` → `empty-addr-sold-as-untyped`、`L00-M06-consistency` → `L00-M06-agreement-problem`、`level-02-accounts` → `level-02-state`），以及**指向从未写过的页面的假引用**（`bech32-sold-as-utxo`、`segwit-sold-as-txid`、`create-size-sold-as-already-capped`、`initcode-sold-as-already-bounded`、`chainid-sold-as-already-signed`、`validator-sold-as-pubkey`、`name-the-tx-identifier`） | 21 条批量改路径；真实改名的一条条改对；假引用**整条删除**（不能留着假装覆盖过）。修后 8747 条链接 0 断链 |
+| A2161 | 高 | `index/03-knowledge-assets.md` 的 **05b（实现保证精读）行**停在 438。该行记录每一波，435–438 波都更新过它，而 439–443 五波**全部漏更** | 已补 439–443。同时把「前沿行必须跟到最大号」写成校验规则 |
+| A2162 | 中 | 同一文件 **Cosmos / CometBFT 行**同样停在 438 | 已补 439–443 |
+| A2163 | 中 | `tracks/failure-museum/worked-example-halt-surfaces.md` 的活边界标记写「不变量 84–438；语料 C88–C442」 | 已改 84–443 / C88–C451 |
+| A2164 | 中 | `libraries/adversarial-corpus/README.md` 的方法行写「来源：…不变量 1–226」 | 已改 1–443 |
+| A2165 | 中 | `libraries/threat-model/README.md` 表内最大 `#` 停在 434 | 已补 #437–439（对应不变量 441–443）。`MisbehaviorType`（不变量 439）**故意不补**：该表「用户侧失败」列要求存在用户可受害的错认路径，而「枚举名 ≠ 验证过错」没有，强行补会造假条目。表内 `#436` 本来就缺，非本次引入 |
+| A2166 | 记录 | 前 439 波的波次自检声称「链接 0 断链」，但当时只扫改动文件 —— 该说法对全库**不成立** | 自检范围改为全库。新增 `tools/check-atlas.ps1` 作为机械闸门 |
+
+### 新增过程资产
+
+`tools/check-atlas.ps1` —— 每波提交前的机械一致性闸门，查 8 项：库计数、不变量/语料最大号、L10.3 缺号、ARCHITECTURE 计数行、index/03 计数与两个前沿行、四处活边界标记、全库链接、全库行尾。当前**全通过（exit 0）**。
+
+**两个坑记下来：** ① 脚本含中文，而 Windows PowerShell 5.1 按 ANSI 读无 BOM 的 `.ps1` —— 必须带 **UTF-8 BOM**；用 `edit` 工具改过后 BOM 会丢，需重加。② 脚本内所有按行正则必须带 `(?m)`（.NET 正则默认不启用多行模式，`^` 只匹配整串开头，曾因此静默返回 0 命中并误报全 FAIL）。
+
+**脚本位置：** `uncertain-atlas/tools/check-atlas.ps1`。初版误放在仓库根 `tools/`，与 `ARCHITECTURE.md` 的目录图不一致；已迁入知识库内，并把根定位逻辑改成「脚本目录的上一级须有 `GOAL.md`」，同时兼容旧布局。
+
+**结论：** 复审按 GOAL 门禁通过。事实 / 推断 / 建议已分开。发现的债全部处置，无遗留假引用。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

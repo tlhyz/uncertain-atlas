@@ -24,6 +24,5 @@
 
 ## 和相邻坑的差别
 
-- 和 [`bech32-sold-as-utxo.md`](bech32-sold-as-utxo.md) 不同：那一条把地址写成已经有 UTXO；本条把后继校验和写成已经是旧方案。
 - 和 [`psbt-sold-as-broadcast.md`](psbt-sold-as-broadcast.md) 不同：那一条把未完成交易对象写成已经能广播。
-- 和 [`segwit-sold-as-txid.md`](segwit-sold-as-txid.md) 不同：那一条把隔离见证标识写成已经是旧交易标识。
+- 和 [`txid-sold-as-wtxid.md`](txid-sold-as-wtxid.md) 不同：那一条把隔离见证标识写成已经是旧交易标识，不是本条这种把后继校验和写成已经是旧方案。

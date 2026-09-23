@@ -4,7 +4,7 @@
 > 范围：只写 [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) 官方页已经写明的对象。不写怎么构造授权元组、怎么抢先初始化、怎么把 `tx.origin` 当成可设代码的发送方、怎么代付、怎么让委托存储撞车。  
 > 五层：协议（新类型交易、授权名单、委托指示） / 实现（代码执行操作必须加载并执行所指代码；失败元组跳过继续） / 钱包（不得暴露「签这个授权」界面） / 应用（名单里有一项不是已经委托成功） / 威胁（把看见名单写成已经委托，或把本笔失败写成已经撤回委托）。  
 > 分类标签：事实 / 推断 / 建议 已分开。  
-> 对读：[`../../libraries/invariants/README.md`](../../libraries/invariants/README.md) 不变量 190；[`../../libraries/adversarial-corpus/README.md`](../../libraries/adversarial-corpus/README.md) C194；[`../../libraries/anti-patterns/auth-sold-as-delegated.md`](../../libraries/anti-patterns/auth-sold-as-delegated.md)；[`../../libraries/design-patterns/name-the-delegation.md`](../../libraries/design-patterns/name-the-delegation.md)；课 [`../../courses/level-02-accounts/L02-M02-account.md`](../../courses/level-02-accounts/L02-M02-account.md)、[`../../courses/level-05-execution/L05-M01-evm-and-gas.md`](../../courses/level-05-execution/L05-M01-evm-and-gas.md)；档案 [`../../protocols/ethereum/README.md`](../../protocols/ethereum/README.md)。
+> 对读：[`../../libraries/invariants/README.md`](../../libraries/invariants/README.md) 不变量 190；[`../../libraries/adversarial-corpus/README.md`](../../libraries/adversarial-corpus/README.md) C194；[`../../libraries/anti-patterns/auth-sold-as-delegated.md`](../../libraries/anti-patterns/auth-sold-as-delegated.md)；[`../../libraries/design-patterns/name-the-delegation.md`](../../libraries/design-patterns/name-the-delegation.md)；课 [`../../courses/level-02-state/L02-M02-account.md`](../../courses/level-02-state/L02-M02-account.md)、[`../../courses/level-05-ethereum/L05-M01-evm-and-gas.md`](../../courses/level-05-ethereum/L05-M01-evm-and-gas.md)；档案 [`../../protocols/ethereum/README.md`](../../protocols/ethereum/README.md)。
 
 ## 事实（官方页能指回去）
 
