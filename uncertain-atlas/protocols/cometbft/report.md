@@ -245,6 +245,9 @@ invariant：看见 `Vote.Type` 是这张票的类型不是已经按那条路径�
 **`BlockID` 的两个根**  
 invariant：官方明写 `BlockID` 含**两个不同的默克尔根**。`Hash` 是头里全部字段的根（`MerkleRoot(header)`）不是已经是整块的根；`PartSetHeader` 是完整序列化块切片后的根（`MerkleRoot(MakeParts(block))`）不是已经是头；`Total` 是片数不是已经收到那些片：见 [`../../tracks/implementation/worked-example-blockid-vs-roots.md`](../../tracks/implementation/worked-example-blockid-vs-roots.md)（不变量 442）。
 
+**证据字段可信性**  
+invariant：`DuplicateVoteEvidence` / `LightClientAttackEvidence` 的 `TotalVotingPower` / `ValidatorPower` / `Timestamp` 校验都写成**必须与节点自己那份数据相等**（Must be equal to nodes own copy of the data）：证据里的数字是被对照对象，不是权威来源；不是这些数已经自证，也不是已经能独立验证：见 [`../../tracks/implementation/worked-example-evidencefields-vs-selfcertified.md`](../../tracks/implementation/worked-example-evidencefields-vs-selfcertified.md)（不变量 443）。
+
 ---
 
 ## 18. 如何测试

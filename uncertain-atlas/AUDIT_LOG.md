@@ -4523,6 +4523,26 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
+---
+
+## 2026-09-17 · Round 443 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 443 / 语料 C451 / 模式 name-the-evidence-fields / 反模式 evidencefields-sold-as-selfcertified / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2154 | 高 | 看见证据里有 TotalVotingPower / ValidatorPower / 看见有数 会被写成这些数已经自证，或已经能自己算 | 官方校验：Must be equal to nodes own copy of the data。字段存在 ≠ 值可信 |
+| A2155 | 高 | 看见要求「与本节点自己那份数据相等」会被写成已经能独立验证，或已经不看本地状态 | 官方把这几个字段的校验钉在本地那份数据上，不是钉在证据内容上 |
+| A2156 | 高 | 看见 Timestamp 是过错那块的凭证时间 会被写成已经由证据自带，或已经能自己定 | 官方把 Timestamp 同样列入「与自己那份相等」的三个字段之一 |
+| A2157 | 中 | 怎样构造证据 / 怎样算投票权 / 怎样挑时间戳 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2158 | 记录 | 会与 21 / 46 / 64 糊成「看见证据里有这些数就已经能罚」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 证据字段可信性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。这些数已经自证 / 已经能独立验证 / 已经由证据自带 标成另一对象。与 21 的分界：21 是签名谓词层面的形状，443 是证据对象字段的可信性 |
+| A2159 | 记录 | 本波挖的是规范校验列里反复出现五次的写法：Must be equal to nodes own copy of the data | 去重预检确认 `EvidenceList` / `nodes own copy` / 「本节点自己那份」/「自己那份数据」全库 0 命中，无撞车 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
 

@@ -445,3 +445,4 @@
 - [proofops-sold-as-chain](proofops-sold-as-chain.md)
 - [signedmsgtype-sold-as-verified](signedmsgtype-sold-as-verified.md)
 - [blockid-sold-as-one-root](blockid-sold-as-one-root.md)
+- [evidencefields-sold-as-selfcertified](evidencefields-sold-as-selfcertified.md)

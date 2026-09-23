@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 443）
+
+- CometBFT 证据字段可信性工作实例（官方 Core Data Structures DuplicateVoteEvidence / LightClientAttackEvidence，实现 / 证据字段可信性，不另写 19 节）：看见证据里有 TotalVotingPower / ValidatorPower 不是这些数已经自证。看见要求「与本节点自己那份数据相等」不是已经能独立验证。看见 Timestamp 是过错那块的凭证时间不是已经由证据自带。证据字段可信性不是不变量 21，也不是不变量 46，也不是不变量 64。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 443；语料 C451；模式 name-the-evidence-fields；反模式 evidencefields-sold-as-selfcertified；L10.3 第 441 条。填 L4.4 / CometBFT 档案 证据字段可信性 / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样构造证据、怎样算投票权、怎样挑时间戳。不编博物馆页。不另写 19 节。不与 21 / 46 / 64 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。这些数已经自证、已经能独立验证、已经由证据自带 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范校验列里反复出现五次的写法：**Must be equal to nodes own copy of the data**。去重预检确认 `EvidenceList` / `nodes own copy` / 「本节点自己那份」全库 0 命中。
+
 ## 2026-09-17（续 442）
 
 - CometBFT BlockID 双根工作实例（官方 Core Data Structures BlockID / PartSetHeader，实现 / BlockID 双根，不另写 19 节）：看见 BlockID.Hash 是头字段的默克尔根不是已经是整块的根。看见 PartSetHeader 是完整序列化块的根不是已经是头。看见 PartSetHeader.Total 是片数不是已经收到那些片。BlockID 双根不是不变量 21，也不是不变量 59，也不是不变量 36。出处 github.com/cometbft/cometbft spec/core/data_structures.md。

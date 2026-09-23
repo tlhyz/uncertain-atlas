@@ -377,6 +377,7 @@
 | 看见 ProofOps.ops 是多条证明 / 各条的 type 可以不同 / 最后一条的根才该对上待验根 / ProofOps 链 | 不是已经串上了，也不是已经是同一棵树，也不是已经对了中间某一条，也不是已经是 325 / 390 / 405，也不是高度已经停 | [ProofOps.ops 是多条证明 ≠ 已经串上了](../implementation/worked-example-proofops-vs-chain.md) 精读，不是新馆藏 | 440 |
 | 看见 Vote.Type 是这张票的类型 / CanonicalVote.Type 是同一个枚举 / 枚举里写着 PREVOTE / SignedMsgType | 不是已经按那条路径验过，也不是已经是同一个对象，也不是已经证明签名只在这一步有效，也不是已经是 6 / 19 / 65，也不是高度已经停 | [Vote.Type 是这张票的类型 ≠ 已经按那条路径验过](../implementation/worked-example-signedmsgtype-vs-verify.md) 精读，不是新馆藏 | 441 |
 | 看见 BlockID.Hash 是头字段的默克尔根 / PartSetHeader 是完整序列化块的根 / PartSetHeader.Total 是片数 / BlockID 双根 | 不是已经是整块的根，也不是已经是头，也不是已经收到那些片，也不是已经是 21 / 59 / 36，也不是高度已经停 | [BlockID.Hash 是头字段的默克尔根 ≠ 已经是整块的根](../implementation/worked-example-blockid-vs-roots.md) 精读，不是新馆藏 | 442 |
+| 看见证据里有 TotalVotingPower / ValidatorPower / 要求与本节点自己那份数据相等 / Timestamp 是过错那块的凭证时间 / 证据字段可信性 | 不是这些数已经自证，也不是已经能独立验证，也不是已经由证据自带，也不是已经是 21 / 46 / 64，也不是高度已经停 | [证据里有 TotalVotingPower ≠ 这些数已经自证](../implementation/worked-example-evidencefields-vs-selfcertified.md) 精读，不是新馆藏 | 443 |
 
 ---
 
