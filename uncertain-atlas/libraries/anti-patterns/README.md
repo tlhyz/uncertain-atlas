@@ -1,3 +1,4 @@
+- [`drop-notmempool-sold-as-bundled.md`](drop-notmempool-sold-as-bundled.md) — 本块不提 被写成已经出池 / 拿掉了 被写成已经永远不提 / 回包没有它 被写成已经交差（不变量 818）
 - [`nonval-notverified-sold-as-bundled.md`](nonval-notverified-sold-as-bundled.md) — 立刻 ACCEPT 被写成已经验过这块 / 不是验证者 被写成已经交差 / 规范允许 被写成已经是提议者那边也会叫 Process（不变量 817）
 - [`async-notreject-sold-as-bundled.md`](async-notreject-sold-as-bundled.md) — 异步了 被写成已经还能改票 / 先回了 被写成已经还能 Reject / 还在跑 被写成已经能强迫 nil（不变量 816）
 - [`sync-notlater-sold-as-bundled.md`](sync-notlater-sold-as-bundled.md) — 是同步的 被写成已经能稍后改裁决 / 引擎在等 被写成已经离开关键路径 / 立刻执行 被写成已经是立刻整块执行就已经离开关键路径（不变量 815）
