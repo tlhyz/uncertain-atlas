@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) PrepareProposal When。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「validValue 非 nil 不是已经还会调 Prepare / 自己是提议者不是已经每轮都会调 Prepare / 没调 Prepare 不是已经又从池子装了一份 raw 提案」，不是候选已经是 ExecuteTxState，也不是 Prepare 没有确定性要求。不要另写怎样设 validValue。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「validValue 非 nil 不是已经还会调 Prepare / 自己是提议者不是已经每轮都会调 Prepare / 没调 Prepare 不是已经又从池子装了一份 raw 提案」，不是候选已经是 ExecuteTxState，也不是 Prepare 没有确定性要求。不要另写怎样设 validValue。356 validvalue vs prepare bundled unbundling 启动（821）；精读 [`worked-example-vv-notstillprepare-vs-bundled.md`](worked-example-vv-notstillprepare-vs-bundled.md)（不变量 821 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见本轮直接用它就已经还会调 Prepare、已经每轮都会调、已经又装了一份 raw 提案」，必须分开 validValue 非 nil 是不是已经还会调 Prepare、自己是提议者是不是已经每轮都会调 Prepare、没调 Prepare 是不是已经又装了一份 raw 提案。可以跳过「看见本轮直接用它就已经还会调 Prepare」。不要另写怎样设 validValue。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见本轮直接用它就已经还会调 Prepare、已经每轮都会调、已经又装了一份 raw 提案」，必须分开 validValue 非 nil 是不是已经还会调 Prepare、自己是提议者是不是已经每轮都会调 Prepare、没调 Prepare 是不是已经又装了一份 raw 提案。可以跳过「看见本轮直接用它就已经还会调 Prepare」。不要另写怎样设 validValue。356 validvalue vs prepare bundled unbundling 启动（821）。
 
 ## 本页不抄
 

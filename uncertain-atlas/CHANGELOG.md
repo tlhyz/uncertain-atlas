@@ -1,3 +1,7 @@
+## 2026-09-23（续 938）
+
+- 不变量 821；语料 C798；模式 name-the-vv-notstillprepare-bar；反模式 vv-notstillprepare-sold-as-bundled；L10.3 第 790 条。填 L4.4 / CometBFT 档案 validValue 非 nil 不是已经还会调 Prepare not already still-prepare / not already can-revise / not already settled 正式三事（356 余量） / 实现表 / 05b / 共识专题 / 停链面地图。356 validvalue vs prepare bundled unbundling 启动（821 item 1）。
+
 ## 2026-09-23（续 937）
 
 - 不变量 820；语料 C797；模式 name-the-retarget-nottraceable-bar；反模式 retarget-nottraceable-sold-as-bundled；L10.3 第 789 条。填 L4.4 / CometBFT 档案 把 t1 改成 t2 不是已经还能按 t1 查到 not already t1-lookup / not already origin-known / not already settled 正式三事（355 余量） / 实现表 / 05b / 共识专题 / 停链面地图。355 preparedrop vs mempool bundled unbundling 完成（820 item 3）。
