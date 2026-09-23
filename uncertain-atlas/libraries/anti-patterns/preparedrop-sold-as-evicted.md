@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [drop-notmempool-sold-as-bundled](drop-notmempool-sold-as-bundled.md) 是从提案拿掉 tx not already out-of-pool / not already never-propose / not already settled 正式三事（355 item 1），不是本页 bundled 全段 alone。
+- [add-notmempool-sold-as-bundled](add-notmempool-sold-as-bundled.md) 是往提案加了一笔新的 not already in-pool / not already checktx / not already settled 正式三事（355 item 2），不是本页 bundled 全段 alone。
 - [proposed-sold-as-removed](proposed-sold-as-removed.md) 是提案收了就已经从池里删掉，不是本页这种从提案拿掉 tx 不是已经从内存池删掉。
 - [preparereturn-sold-as-trimmed](preparereturn-sold-as-trimmed.md) 是整池可见就已经只能看见装得进一块的子集，不是本页这种往提案加了一笔新的不是已经进了内存池。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种把 t1 改成 t2 不是已经还能按 t1 查到。
