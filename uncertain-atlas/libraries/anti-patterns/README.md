@@ -1,3 +1,4 @@
+- [`vv-notstillprepare-sold-as-bundled.md`](vv-notstillprepare-sold-as-bundled.md) — 直接用了 被写成已经还会调 Prepare / 有 validValue 被写成已经能再改列表 / 锁住了 被写成已经交差（不变量 821）
 - [`retarget-nottraceable-sold-as-bundled.md`](retarget-nottraceable-sold-as-bundled.md) — t1 没进块 被写成已经还能按 t1 查到 / t2 进了块 被写成已经有人知道来源 / 改了 被写成已经交差（不变量 820）
 - [`add-notmempool-sold-as-bundled.md`](add-notmempool-sold-as-bundled.md) — 回包里有它 被写成已经进池 / 能提 被写成已经过了 CheckTx / 加进去了 被写成已经交差（不变量 819）
 - [`drop-notmempool-sold-as-bundled.md`](drop-notmempool-sold-as-bundled.md) — 本块不提 被写成已经出池 / 拿掉了 被写成已经永远不提 / 回包没有它 被写成已经交差（不变量 818）
