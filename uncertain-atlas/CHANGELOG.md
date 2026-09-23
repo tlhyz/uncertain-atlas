@@ -2,6 +2,15 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 452）
+
+- CometBFT 头版本栏工作实例（官方 Core Data Structures Header / Version，实现 / 头版本栏，不另写 19 节）：看见 Header.Version 是应用与块版本不是已经知道是哪一版的什么。看见 Version.Block 必须全网一致不是 App 也走同一条。看见一个版本号不是已经点名了整个协议。头版本栏不是不变量 370，也不是不变量 385，也不是不变量 447。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 452；语料 C460；模式 name-the-version-split；反模式 one-version-sold-as-whole-protocol；L10.3 第 450 条。填 L4.4 / CometBFT 档案 Header.Version / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样填版本、怎样做版本升级。不编博物馆页。不另写 19 节。不与 370 / 385 / 447 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经知道是哪一版的什么、App 也走同一条、已经点名了整个协议 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 本波挖的是规范自己的**两条 TODO**：Version 一节顶上写明「这一节更确切地说是**共识版本**，不包含 P2P 版本这类信息」，并留「(TODO: we should write a comprehensive document about versioning that this can refer to)」。也就是说**版本通论尚未成文** —— 看见一个版本号不得写成已经点名了整个协议。
+- 同一张表里两个子字段**权威来源不同**：`Version.Block` 描述写「must be the same throughout an operational network」、校验是等于网络在用的块版本；`Version.App` 描述写「App version is decided on by the application」。看见 `Block` 一致不是 `App` 也一致。
+- 去重预检：`Version.Block` / `Version.App` / `operational network` / `BlockID 对象` 全库 0 命中。相邻候选 `DataHash`（叶子是交易的哈希不是交易本身）经查与不变量 147 / 325 重叠，**弃**。
+
 ## 2026-09-17（续 451）
 
 - CometBFT 票标志枚举工作实例（官方 Core Data Structures BlockIDFlag / CommitSig / ExtendedCommitSig，实现 / 票标志枚举，不另写 19 节）：看见 BlockIDFlag 是这份签对着哪个 BlockID 不是已经投过。看见 ABSENT 是票没收到不是已经投了 nil。看见 UNKNOWN 是错误状态不是另一种缺席。票标志枚举不是不变量 365，也不是不变量 425，也不是不变量 441。出处 github.com/cometbft/cometbft spec/core/data_structures.md。

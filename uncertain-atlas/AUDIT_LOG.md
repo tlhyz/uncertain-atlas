@@ -4755,6 +4755,32 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
+---
+
+## 2026-09-17 · Round 452 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 452 / 语料 C460 / 模式 name-the-version-split / 反模式 one-version-sold-as-whole-protocol / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2227 | 高 | 看见 `Version` 表头「应用与块版本」/ 看见这一栏 会被写成已经知道是哪一版的什么，或已经拿到完整版本信息 | 官方在这一节顶上写明它**更确切地说是共识版本**、**不包含 P2P 版本**这类信息 |
+| A2228 | 高 | 看见 `Version.Block` 必须全网一致 会被写成 `Version.App` 也走同一条 | 同一张表两种权威来源：`Block` 要整个运行网络一致；`App` 描述写 "App version is decided on by the application" |
+| A2229 | 高 | 看见一个版本号就会被写成已经点名了整个协议 | 官方在这一节留了**两条 TODO**（版本通论尚未成文）。这一节自己声明了不完整 |
+| A2230 | 中 | 怎样填版本 / 怎样做版本升级 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2231 | 记录 | 会与 370 / 385 / 447 糊成「看见版本号就知道是哪一版」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 Header.Version / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经知道是哪一版的什么 / App 也走同一条 / 已经点名了整个协议 标成另一对象 |
+| A2232 | 记录 | 去重预检：`Version.Block` / `Version.App` / `operational network` / `BlockID 对象` 全库 0 命中 | 无撞车 |
+| A2233 | 记录 | 相邻候选 `DataHash`（叶子是交易的哈希不是交易本身）经查与不变量 **147 / 325** 重叠 | **弃**，改挖头版本栏 |
+| A2234 | 高 | 产品句若只写一个版本号就声称「协议版本已点名」 | 落成产品禁令：必须说明是块版本 / 应用版本 / P2P 版本 / ABCI 版本，并写出处 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
+未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
+
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
 
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。

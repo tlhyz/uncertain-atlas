@@ -760,6 +760,8 @@
 
 第 430 条：第一版可以不抄这次 Process 回包栏当「看见回了 ProcessProposalResponse.status 就已经当成块非法」。若对照，必须分开 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不是已经当成块非法、ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不是已经可以像 Prepare 那样依赖其它值、应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不是已经 honest proposal 必须 Accept。看见 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不得写成已经当成块非法。看见 ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不得写成已经可以像 Prepare 那样依赖其它值。看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不得写成已经 honest proposal 必须 Accept。不要抄怎样写 Process 回包栏。不要另写 19 节。不要写怎样写 Process 回包栏。
 
+第 452 条：第一版可以不抄这次头版本栏当「看见版本号就知道是哪一版」。若对照，必须分开 Header.Version 是应用与块版本不是已经知道是哪一版的什么、Block 必须全网一致不是 App 也走同一条、一个版本号不是已经点名了整个协议。看见这一栏不得写成已经拿到完整版本信息。看见 Block 一致不得写成 App 也一致。看见一个版本号不得写成已经点名了整个协议。产品句不得只写一个版本号就声称协议版本已点名。不要抄怎样填版本。不要另写 19 节。不要写怎样做版本升级。Info 版本是另一条（370），ConsensusParams.version 是另一条（385），跨文档不齐是另一条（447）。
+
 第 451 条：第一版可以不抄这次票标志枚举当「看见标志就有票」。若对照，必须分开 BlockIDFlag 是这份签对着哪个 BlockID 不是已经投过、ABSENT 是票没收到不是已经投了 nil、UNKNOWN 是错误状态不是另一种缺席。看见标志不得写成已经计过票。看见 ABSENT 不得写成投了 nil。看见 UNKNOWN 不得写成另一种缺席。实现里不得把 UNKNOWN 与 ABSENT 归成一类。ExtendedCommitSig 的非空校验必须按标志是不是 COMMIT 来做。不要抄怎样编 BlockIDFlag。不要另写 19 节。不要写怎样重建票集。到场计奖是另一条（365），扩展表是另一条（425），SignedMsgType 是另一条（441）。
 
 第 450 条：第一版可以不抄这次片下标当「看见片下标在就已经有整叠」。若对照，必须分开 Part.index 是这片的下标不是已经有整叠、写成 ≥ 0 不是已经有序、Part 表的校验栏不是已经是本对象的校验。看见有下标不得写成已经有整叠。看见 ≥ 0 不得写成已经在范围内。看见「长度必须是 32」不得写成已经是本对象的校验。实现里不要照抄 Part 表的校验栏与说明栏，以下文 PartSetHeader 为准。不要抄怎样切片。不要另写 19 节。不要写怎样流言。下标对齐是另一条（59），先验再传是另一条（60），PartSetHeader 是另一条（442）。

@@ -242,6 +242,7 @@
 - [`worked-example-byzantine-vs-accusation.md`](worked-example-byzantine-vs-accusation.md) — 看见 Byzantine Validators 是过错名单 ≠ 已经成立；看见 Read Below ≠ 已经给出了定义；看见摘要说三种穷尽 ≠ 已经验完（不变量 449）
 - [`worked-example-partindex-vs-whole.md`](worked-example-partindex-vs-whole.md) — 看见 Part.index 是这片的下标 ≠ 已经有整叠；看见写成 ≥ 0 ≠ 已经有序；看见 Part 表的校验栏 ≠ 已经是本对象的校验（不变量 450）
 - [`worked-example-blockidflag-vs-vote.md`](worked-example-blockidflag-vs-vote.md) — 看见 BlockIDFlag 是这份签对着哪个 BlockID ≠ 已经投过；看见 ABSENT ≠ 已经投了 nil；看见 UNKNOWN ≠ 另一种缺席（不变量 451）
+- [`worked-example-headerversion-vs-whole.md`](worked-example-headerversion-vs-whole.md) — 看见 Header.Version ≠ 已经知道是哪一版的什么；看见 Version.Block 必须全网一致 ≠ App 也走同一条；看见一个版本号 ≠ 已经点名了整个协议（不变量 452）
 
 平台宽度尺寸检查：[`../failure-museum/cve-2025-46597.md`](../failure-museum/cve-2025-46597.md)（卡住内存池旋钮 ≠ 固定宽度）。  
 外层交易上限 ≠ 内层解码已有界：[`../failure-museum/asa-2024-0012.md`](../failure-museum/asa-2024-0012.md)（`max_tx_bytes` 不管 UnpackAny / 内部消息）。  

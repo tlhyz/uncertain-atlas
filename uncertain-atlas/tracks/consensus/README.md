@@ -69,3 +69,5 @@ Polkadot 中继是 BABE + GRANDPA，不要和每高一 commit 混成一张表。
 `Part.index` 是**这一片**的下标 ≠ 已经有整叠；校验只有 `Must be >= 0`（下限）≠ 已经有序；`Part` 表的校验栏与说明栏本身有复制粘贴错位（把 `PartSetHeader` 的「32 字节 / 序列化块的默克尔根」抄到了 `bytes` / `proof` 行上，而 `proof` 的类型是结构）≠ 已经是本对象的校验：[`../implementation/worked-example-partindex-vs-whole.md`](../implementation/worked-example-partindex-vs-whole.md)（不变量 450）。
 
 `BlockIDFlag` 表示**这份签对着哪个 BlockID** ≠ 已经投过；官方枚举注释把 `ABSENT`（the vote was not received）与 `UNKNOWN`（**indicates an error condition**）分开 —— 把两者都当「没投票」会把错误状态洗成缺席；`ExtendedCommitSig` 里 `Extension` / `NonRpExtension` 则**取决于标志是不是 `COMMIT`**：[`../implementation/worked-example-blockidflag-vs-vote.md`](../implementation/worked-example-blockidflag-vs-vote.md)（不变量 451）。
+
+`Header.Version` 官方写明**更确切地说是共识版本**、**不含 P2P 版本**，并在那一节留了**两条 TODO**（版本通论尚未成文）；表里 `Version.Block` 必须**整个运行网络一致**，而 `Version.App` **由应用决定** —— 同一张表两种权威来源：一个版本号 ≠ 点名了整个协议：[`../implementation/worked-example-headerversion-vs-whole.md`](../implementation/worked-example-headerversion-vs-whole.md)（不变量 452）。

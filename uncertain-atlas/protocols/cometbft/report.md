@@ -272,6 +272,9 @@ invariant：`Part` 是块的一片，`index` 的校验只有 `Must be >= 0` —�
 **`BlockIDFlag`**  
 invariant：它表示这份签是**对着哪个 `BlockID`** 的，不是「这个人参与了」。枚举注释把三件事分开：`ABSENT = 1` 是 the vote was not received、`COMMIT = 2` 是 voted for the block that received the majority、`NIL = 3` 是 voted for nil，而 `UNKNOWN = 0` **indicates an error condition** —— 不得与 `ABSENT` 归成一类。另：`ExtendedCommitSig` 的 `Extension` / `NonRpExtension` 校验是「标志不是 `COMMIT` 时必须为 0」，两个签名「是 `COMMIT` 时有效、否则为 0」：见 [`../../tracks/implementation/worked-example-blockidflag-vs-vote.md`](../../tracks/implementation/worked-example-blockidflag-vs-vote.md)（不变量 451）。
 
+**`Header.Version`**  
+invariant：官方在这一节顶上写明它**更确切地说是共识版本**，且**不包含 P2P 版本**这类信息，并留了**两条 TODO**（版本通论尚未成文）。表里两个子字段权威来源不同：`Version.Block` 代表块版本、**必须在整个运行网络里一致**；`Version.App` **由应用决定**。所以一个版本号不是完整版本信息，也不代表整条链的「版本」：见 [`../../tracks/implementation/worked-example-headerversion-vs-whole.md`](../../tracks/implementation/worked-example-headerversion-vs-whole.md)（不变量 452）。
+
 ---
 
 ## 18. 如何测试

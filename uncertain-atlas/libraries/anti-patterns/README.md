@@ -454,5 +454,6 @@
 - [accusation-sold-as-established](accusation-sold-as-established.md)
 - [partindex-sold-as-whole](partindex-sold-as-whole.md)
 - [absent-sold-as-nil](absent-sold-as-nil.md)
+- [one-version-sold-as-whole-protocol](one-version-sold-as-whole-protocol.md)
 - [lightblock-sold-as-both-present](lightblock-sold-as-both-present.md)
 - [pubkeytypes-sold-as-in-use](pubkeytypes-sold-as-in-use.md)
