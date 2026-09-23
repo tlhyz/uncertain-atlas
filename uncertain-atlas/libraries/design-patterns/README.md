@@ -1,3 +1,4 @@
+- [`name-the-lateext-notverified-bar.md`](name-the-lateext-notverified-bar.md) — +2/3 之后才进来的扩展写进了 commit info 不是已经 Verify 过 not already verified / not already accept / not already later-verified 正式三事（352 余量）（不变量 809）
 - [`name-the-process-notalways-bar.md`](name-the-process-notalways-bar.md) — 失败时可能对上更早一次或根本不调不是已经每轮都会叫 not already every-round / not already this-prepare / not already crossed 正式三事（351 余量）（不变量 808）
 - [`name-the-process-notguaranteed-bar.md`](name-the-process-notguaranteed-bar.md) — 通常紧跟 Prepare、列表对得上不是已经保证是这一次 not already guaranteed-this / not already must-match / not already same-call 正式三事（351 余量）（不变量 807）
 - [`name-the-process-notskip-bar.md`](name-the-process-notskip-bar.md) — Process 也会在提议者那边叫不是已经不用再 Process not already skip-process / not already settled / not already already-processed 正式三事（351 余量）（不变量 806）
