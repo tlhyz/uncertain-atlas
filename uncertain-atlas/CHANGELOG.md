@@ -1,3 +1,7 @@
+## 2026-09-23（续 923）
+
+- 不变量 806；语料 C783；模式 name-the-process-notskip-bar；反模式 process-notskip-sold-as-bundled；L10.3 第 775 条。填 L4.4 / CometBFT 档案 Process 也会在提议者那边叫不是已经不用再 Process not already skip-process / not already settled / not already already-processed 正式三事（351 余量） / 实现表 / 05b / 共识专题 / 停链面地图。351 processalso vs prepare bundled unbundling 启动（806 item 1）。
+
 ## 2026-09-22（续 922）
 
 - 不变量 805；语料 C782；模式 name-the-extend-notperheight-bar；反模式 extend-notperheight-sold-as-bundled；L10.3 第 774 条。填 L4.4 / CometBFT 档案 一轮只能交出一份扩展不是已经是每一高度一份 not already per-height / not already re-extend-round / not already req6-accept 正式三事（350 余量） / 实现表 / 05b / 共识专题 / 停链面地图。350 extendonce vs round bundled unbundling 完成（805 item 3）。

@@ -1,3 +1,4 @@
+- [`name-the-process-notskip-bar.md`](name-the-process-notskip-bar.md) — Process 也会在提议者那边叫不是已经不用再 Process not already skip-process / not already settled / not already already-processed 正式三事（351 余量）（不变量 806）
 - [`name-the-extend-notperheight-bar.md`](name-the-extend-notperheight-bar.md) — 一轮只能交出一份扩展不是已经是每一高度一份 not already per-height / not already re-extend-round / not already req6-accept 正式三事（350 余量）（不变量 805）
 - [`name-the-extend-notnil-bar.md`](name-the-extend-notnil-bar.md) — ExtendVote 只在即将广播非 nil Precommit 时才叫不是已经签了 nil 票 not already signed-nil / not already prevote-calls / not already vote-has-ext 正式三事（350 余量）（不变量 804）
 - [`name-the-extend-notresign-bar.md`](name-the-extend-notresign-bar.md) — 一轮最多一张 Precommit 不是已经能再签一张 not already resign / not already is-extension / not already re-emit 正式三事（350 余量）（不变量 803）
