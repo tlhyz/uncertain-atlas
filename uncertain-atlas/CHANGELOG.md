@@ -1,3 +1,7 @@
+## 2026-09-23（续 934）
+
+- 不变量 817；语料 C794；模式 name-the-nonval-notverified-bar；反模式 nonval-notverified-sold-as-bundled；L10.3 第 786 条。填 L4.4 / CometBFT 档案 非验证者可以立刻回 ACCEPT 不是已经验过这块 not already verified / not already settled / not already processalso 正式三事（354 余量） / 实现表 / 05b / 共识专题 / 停链面地图。354 processwhen vs later bundled unbundling 完成（817 item 3）。
+
 ## 2026-09-23（续 933）
 
 - 不变量 816；语料 C793；模式 name-the-async-notreject-bar；反模式 async-notreject-sold-as-bundled；L10.3 第 785 条。填 L4.4 / CometBFT 档案 只做基本检查再异步 Process 不是已经还能再 Reject not already still-revise / not already still-reject / not already force-nil 正式三事（354 余量） / 实现表 / 05b / 共识专题 / 停链面地图。354 processwhen vs later bundled unbundling 续（816 item 2）。
