@@ -1,3 +1,4 @@
+- [`name-the-nonrp-notraw-bar.md`](name-the-nonrp-notraw-bar.md) — vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签 not already raw-signed / not already canon-vote / not already settled 正式三事（358 余量）（不变量 827）
 - [`name-the-prepvalid-notfinalize-bar.md`](name-the-prepvalid-notfinalize-bar.md) — Prepare 里产出了事件不是已经交给引擎 not already handed-over / not already results-hash / not already settled 正式三事（357 余量）（不变量 826）
 - [`name-the-prepvalid-notreject-bar.md`](name-the-prepvalid-notreject-bar.md) — Prepare 回包验不过引擎崩溃不是已经是 Process REJECT not already process-reject / not already req3-accept / not already settled 正式三事（357 余量）（不变量 825）
 - [`name-the-prepvalid-notdedup-bar.md`](name-the-prepvalid-notdedup-bar.md) — 引擎没有再验重复交易不是已经验过重复 not already dedup-checked / not already app-replay / not already settled 正式三事（357 余量）（不变量 824）

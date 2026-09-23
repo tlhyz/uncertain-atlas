@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) ExtendVote Usage / VerifyVoteExtension Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签 / non_rp_extension 按原样签不是已经有重放保护 / 要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份」，不是 CanonicalVoteExtension 就已经是 CanonicalVote，也不是空扩展仍验签。不要另写怎样编两份扩展。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签 / non_rp_extension 按原样签不是已经有重放保护 / 要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份」，不是 CanonicalVoteExtension 就已经是 CanonicalVote，也不是空扩展仍验签。不要另写怎样编两份扩展。358 nonrp vs wrapped bundled unbundling 启动（827）；精读 [`worked-example-nonrp-notraw-vs-bundled.md`](worked-example-nonrp-notraw-vs-bundled.md)（不变量 827 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见有扩展就已经按原样签、已经有重放保护、已经和 vote_extension 同一份」，必须分开 vote_extension 会包进 CanonicalVoteExtension 是不是已经按原样签、non_rp_extension 按原样签是不是已经有重放保护、要签原样数据可以用 non_rp 是不是已经和 vote_extension 同一份。可以跳过「看见有扩展就已经按原样签」。不要另写怎样编两份扩展。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见有扩展就已经按原样签、已经有重放保护、已经和 vote_extension 同一份」，必须分开 vote_extension 会包进 CanonicalVoteExtension 是不是已经按原样签、non_rp_extension 按原样签是不是已经有重放保护、要签原样数据可以用 non_rp 是不是已经和 vote_extension 同一份。可以跳过「看见有扩展就已经按原样签」。不要另写怎样编两份扩展。358 nonrp vs wrapped bundled unbundling 启动（827）。
 
 ## 本页不抄
 

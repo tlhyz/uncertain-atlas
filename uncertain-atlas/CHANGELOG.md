@@ -1,3 +1,7 @@
+## 2026-09-23（续 944）
+
+- 不变量 827；语料 C804；模式 name-the-nonrp-notraw-bar；反模式 nonrp-notraw-sold-as-bundled；L10.3 第 796 条。填 L4.4 / CometBFT 档案 vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签 not already raw-signed / not already canon-vote / not already settled 正式三事（358 余量） / 实现表 / 05b / 共识专题 / 停链面地图。358 nonrp vs wrapped bundled unbundling 启动（827 item 1）。
+
 ## 2026-09-23（续 943）
 
 - 不变量 826；语料 C803；模式 name-the-prepvalid-notfinalize-bar；反模式 prepvalid-notfinalize-sold-as-bundled；L10.3 第 795 条。填 L4.4 / CometBFT 档案 Prepare 里产出了事件不是已经交给引擎 not already handed-over / not already results-hash / not already settled 正式三事（357 余量） / 实现表 / 05b / 共识专题 / 停链面地图。357 prepare-valid vs checked bundled unbundling 完成（826 item 3）。
