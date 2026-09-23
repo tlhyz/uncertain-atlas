@@ -2,6 +2,13 @@
 
 只记知识库结构与内容，不记交易回测。细节审核见 [`AUDIT_LOG.md`](AUDIT_LOG.md)。
 
+## 2026-09-17（续 441）
+
+- CometBFT SignedMsgType 工作实例（官方 Core Data Structures SignedMsgType / Vote / CanonicalVote，实现 / SignedMsgType，不另写 19 节）：看见 Vote.Type 是这张票的类型不是已经按那条路径验过。看见 CanonicalVote.Type 是同一个枚举不是已经是同一个对象。看见枚举里写着 PREVOTE 不是已经证明签名只在这一步有效。SignedMsgType 不是不变量 6，也不是不变量 19，也不是不变量 65。出处 github.com/cometbft/cometbft spec/core/data_structures.md。
+- 不变量 441；语料 C449；模式 name-the-signedmsgtype；反模式 signedmsgtype-sold-as-verified；L10.3 第 439 条。填 L4.4 / CometBFT 档案 SignedMsgType / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。
+- 不抄怎样编 SignedMsgType、怎样构造 CanonicalVote、怎样算 SignBytes。不编博物馆页。不另写 19 节。不与 6 / 19 / 65 糊成一句。不写进 03 共识图谱、Bitcoin 行、Ethereum 行、L5.1、M5.4、L5.4、L9.1、L4.5、mempool。已经按那条路径验过、已经是同一个对象、已经证明签名只在这一步有效 标成另一对象。决策矩阵末列仍空。未写试题。未改交易代码。
+- 去重预检拦下五个撞车：`CommitInfo.round` 是 392、`ExtendedCommitInfo.round` 是 394、`votes` 按投票权降序是 365、`Echo` 是 399、`Flush` 是 374。初稿两处相对链接指向不存在的文件，已改为核实过的真实路径。
+
 ## 2026-09-17（续 440）
 
 - CometBFT ProofOps 链工作实例（官方 ABCI++ Methods Data Types ProofOps，实现 / ProofOps 链，不另写 19 节）：看见 ProofOps.ops 是多条证明不是已经串上了。看见各条的 type 可以不同不是已经是同一棵树。看见最后一条的根才该对上待验根不是已经对了中间某一条。ProofOps 链不是不变量 325，也不是不变量 390，也不是不变量 405。出处 github.com/cometbft/cometbft spec/abci/abci++_methods.md。

@@ -4487,6 +4487,24 @@ Goal 保持 active。图谱主体（L0–L10 课文 + 主线档案 + 横表）�
 
 **结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/abci/abci++_methods.md）。去重预检拦下三次撞车（366 / 364 / 390）。
 
+---
+
+## 2026-09-17 · Round 441 审核
+
+审核人：DeepSeek Agent（本波作者自审）
+范围：不变量 441 / 语料 C449 / 模式 name-the-signedmsgtype / 反模式 signedmsgtype-sold-as-verified / 六处回填
+
+| 编号 | 级别 | 问题 | 处置 |
+|---|---|---|---|
+| A2142 | 高 | 看见 Vote.Type 是这张票的类型 / 看见写了类型 会被写成已经按那条路径验过，或已经交差 | 官方表：Type 是这张票指向的消息类型，校验要求必须是 Prevote 或 Precommit。字段写着哪种票 ≠ 验签走了哪条路径 |
+| A2143 | 高 | 看见 CanonicalVote.Type 是同一个枚举 / 看见两边值一样 会被写成已经是同一个对象，或已经同一种序列化 | 官方：CanonicalVote 是给验证者签名用的表示，**不会出现在块里**；SignBytes 含 ChainID 且字段顺序不同 |
+| A2144 | 高 | 看见枚举里写着 PREVOTE / 看见只有三个值 会被写成已经证明签名只在这一步有效，或已经验过域分离 | 官方枚举：UNKNOWN=0 / PREVOTE=1 / PRECOMMIT=2 / PROPOSAL=32。枚举值 ≠ 域分离已成立（不变量 19） |
+| A2145 | 中 | 怎样编 SignedMsgType / 怎样构造 CanonicalVote / 怎样算 SignBytes 会被抄进不确定 | 不抄。不写怎样写四门。不另写 19 节 |
+| A2146 | 记录 | 会与 6 / 19 / 65 糊成「看见票上写了 PREVOTE 就已经验过」 | 对照写清。不编博物馆页。写进 L4.4 / CometBFT 档案 SignedMsgType / 实现表 / 停链面地图 / CometBFT 行 / 05b / 共识专题。不写进 03 共识图谱 / Bitcoin 行 / Ethereum 行 / L5.1 / M5.4 / L5.4 / L9.1 / L4.5 / mempool。已经按那条路径验过 / 已经是同一个对象 / 已经证明签名只在这一步有效 标成另一对象 |
+| A2147 | 中 | 本波去重预检拦下五个撞车（`CommitInfo.round` 是 392、`ExtendedCommitInfo.round` 是 394、`votes` 按投票权降序是 365、`Echo` 是 399、`Flush` 是 374）；初稿两处相对链接指向不存在的文件（`vote-signbytes.md` / `reverse-order-is-vote.md`） | 已改为核实过的真实路径（`missing-domain-separation.md` / `extresp-sold-as-wrap.md` / `../consensus/worked-example-vote-signbytes.md`）。全部链接经脚本核对后才落盘 |
+
+**结论：** 本波按 GOAL 门禁通过。事实 / 推断 / 建议已分开。未堆术语、未抄营销稿、未只讲优点、未把测试通过当协议安全、未混用五层保证。资料为规范原文（github.com/cometbft/cometbft spec/core/data_structures.md）。
+
 未做：写出题、实现 runner、填 CPU、选型、改交易代码。用户未答 exams/。Goal 保持 active。
 
 

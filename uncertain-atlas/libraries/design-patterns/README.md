@@ -338,3 +338,4 @@
 - [name-the-proc-req-end](name-the-proc-req-end.md)
 - [name-the-misbehaviortype](name-the-misbehaviortype.md)
 - [name-the-proofops-ops](name-the-proofops-ops.md)
+- [name-the-signedmsgtype](name-the-signedmsgtype.md)

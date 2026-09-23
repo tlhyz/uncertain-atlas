@@ -239,6 +239,9 @@ invariant：看见 `MisbehaviorType` 只有三个枚举名不是已经能认过�
 **`ProofOps` 链**  
 invariant：看见 `ProofOps.ops` 是多条证明不是已经串上了；各条的 `type` 可以不同不是已经是同一棵树（`ProofOp.type` 是证明类型**以及它怎样编码**）；最后一条的默克尔根才该等于正在核对的最终根，不是已经对了中间某一条：见 [`../../tracks/implementation/worked-example-proofops-vs-chain.md`](../../tracks/implementation/worked-example-proofops-vs-chain.md)（不变量 440）。
 
+**`SignedMsgType`**  
+invariant：看见 `Vote.Type` 是这张票的类型不是已经按那条路径验过；`CanonicalVote.Type` 是同一个枚举不是已经是同一个对象（官方明写后者**不会出现在块里**，`SignBytes` 含 `ChainID` 且字段顺序不同）；枚举里写着 `PREVOTE` 不是已经证明签名只在这一步有效：见 [`../../tracks/implementation/worked-example-signedmsgtype-vs-verify.md`](../../tracks/implementation/worked-example-signedmsgtype-vs-verify.md)（不变量 441）。
+
 ---
 
 ## 18. 如何测试

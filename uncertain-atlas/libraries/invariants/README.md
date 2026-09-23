@@ -760,6 +760,8 @@
 
 第 430 条：第一版可以不抄这次 Process 回包栏当「看见回了 ProcessProposalResponse.status 就已经当成块非法」。若对照，必须分开 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不是已经当成块非法、ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不是已经可以像 Prepare 那样依赖其它值、应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不是已经 honest proposal 必须 Accept。看见 ProcessProposalResponse.status 是应用认为这份提案合法还是非法不得写成已经当成块非法。看见 ProcessProposalResponse.status 必须只依赖 ProcessProposalRequest 和上一份已提交状态不得写成已经可以像 Prepare 那样依赖其它值。看见应用 SHOULD 总是设 ACCEPT 除非真的知道 REJECT 的活性代价不得写成已经 honest proposal 必须 Accept。不要抄怎样写 Process 回包栏。不要另写 19 节。不要写怎样写 Process 回包栏。
 
+第 441 条：第一版可以不抄这次 SignedMsgType 当「看见票上写了 PREVOTE 就已经按那条路径验过」。若对照，必须分开 Vote.Type 是这张票的类型不是已经按那条路径验过、CanonicalVote.Type 是同一个枚举不是已经是同一个对象、枚举里写着 PREVOTE 不是已经证明签名只在这一步有效。看见 Vote.Type 是这张票的类型不得写成已经按那条路径验过。看见 CanonicalVote.Type 是同一个枚举不得写成已经是同一个对象。看见枚举里写着 PREVOTE 不得写成已经验过域分离。不要抄怎样编 SignedMsgType。不要另写 19 节。不要写怎样构造 CanonicalVote。域分离是另一条（6），投票步类型进被签字节是另一条（19），Commit 槽位是另一条（65）。
+
 第 440 条：第一版可以不抄这次 ProofOps 链当「看见 ops 有多条就已经串上了」。若对照，必须分开 ProofOps.ops 是多条证明不是已经串上了、各条的 type 可以不同不是已经是同一棵树、最后一条的根才该对上待验根不是已经对了中间某一条。看见 ProofOps.ops 是多条证明不得写成已经串上了。看见各条 type 可以不同不得写成已经是同一棵树。看见中间某条的根对上不得写成已经整链对上。不要抄怎样编 ProofOps 链。不要另写 19 节。不要写怎样种多层树。Query 回了 Proof 就已经对上 AppHash 是另一条（325），ProofOp.key 不是 Query 回包键是另一条（390）。
 
 第 439 条：第一版可以不抄这次 MisbehaviorType 当「看见有枚举名就已经能认过错种类」。若对照，必须分开 MisbehaviorType 只有三个枚举名不是已经能认过错种类、UNKNOWN 是第 0 项不是已经是引擎判的应用坏了、DUPLICATE_VOTE 和 LIGHT_CLIENT_ATTACK 是枚举名不是已经是双签证据已经成立。看见 MisbehaviorType 只有三个枚举名不得写成已经能认过错种类。看见 UNKNOWN 是第 0 项不得写成一律是错。看见枚举名对上不得写成已经罚没。不要抄怎样编 MisbehaviorType。不要另写 19 节。不要写怎样挑枚举。证据上链就已经罚没是另一条（21），Misbehavior.type 只是过错枚举是另一条（364），VerifyStatus 的 UNKNOWN 一律是错是另一条（434）。
