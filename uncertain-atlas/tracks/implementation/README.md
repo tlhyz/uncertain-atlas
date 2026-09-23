@@ -1,3 +1,4 @@
+- [`worked-example-empty-notlocal-vs-bundled.md`](worked-example-empty-notlocal-vs-bundled.md) — 不调本地票≠自己验过/是自己签的≠Accept/跳过本地≠过了Req6；≠353 bundled（不变量 813）
 - [`worked-example-empty-notskip-vs-bundled.md`](worked-example-empty-notskip-vs-bundled.md) — 是空的≠跳过Verify/选择不扩≠不用调/仍会调≠空扩展仍验签；≠353 bundled（不变量 812）
 - [`worked-example-lateext-notrecall-vs-bundled.md`](worked-example-lateext-notrecall-vs-bundled.md) — 写进ExtendedCommitInfo≠又叫了Verify/规范允许≠必须再叫/上一高度≠本轮那次Verify；≠352 bundled（不变量 811）
 - [`worked-example-lateext-notreverify-vs-bundled.md`](worked-example-lateext-notreverify-vs-bundled.md) — 建议再看≠引擎会再Verify/Prepare用扩展≠过了Req6/能改提案≠已交差；≠352 bundled（不变量 810）
