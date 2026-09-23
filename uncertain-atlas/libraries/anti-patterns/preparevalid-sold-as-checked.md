@@ -19,6 +19,7 @@
 
 - [prepvalid-notdedup-sold-as-bundled](prepvalid-notdedup-sold-as-bundled.md) 是引擎没有再验重复交易 not already dedup-checked / not already app-replay / not already settled 正式三事（357 item 1），不是本页 bundled 全段 alone。
 - [prepvalid-notreject-sold-as-bundled](prepvalid-notreject-sold-as-bundled.md) 是 Prepare 回包验不过引擎崩溃 not already process-reject / not already req3-accept / not already settled 正式三事（357 item 2），不是本页 bundled 全段 alone。
+- [prepvalid-notfinalize-sold-as-bundled](prepvalid-notfinalize-sold-as-bundled.md) 是 Prepare 里产出了事件 not already handed-over / not already results-hash / not already settled 正式三事（357 item 3），不是本页 bundled 全段 alone。
 - [indexer-sold-as-replay](indexer-sold-as-replay.md) 是内存池去重就已经保证不重放，不是本页这种引擎没有再验重复交易不是已经验过重复。
 - [req3coherence-sold-as-accept](req3coherence-sold-as-accept.md) 是正确提议者的准备提案必须被正确接收者 Accept，不是本页这种 Prepare 回包验不过引擎崩溃不是已经是 Process REJECT。
 - [exectxresult-sold-as-consensus](exectxresult-sold-as-consensus.md) 是 Code / Data 就已经印进本头，不是本页这种 Prepare 里产出了事件不是已经交给引擎。

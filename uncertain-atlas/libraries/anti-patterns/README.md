@@ -1,3 +1,4 @@
+- [`prepvalid-notfinalize-sold-as-bundled.md`](prepvalid-notfinalize-sold-as-bundled.md) — 先跑了被写成已经交出去 / 有事件被写成已经印进 LastResultsHash / 留着被写成已经交差（不变量 826）
 - [`prepvalid-notreject-sold-as-bundled.md`](prepvalid-notreject-sold-as-bundled.md) — 崩溃了被写成已经是 Process REJECT / 回包坏了被写成已经是 Req 3 必须 Accept / 引擎停了被写成已经交差（不变量 825）
 - [`prepvalid-notdedup-sold-as-bundled.md`](prepvalid-notdedup-sold-as-bundled.md) — 引擎没有再验重复交易被写成已经验过重复 / 能提被写成已经有应用级重放保护 / 没有再验被写成已经交差（不变量 824）
 - [`vv-notraw-sold-as-bundled.md`](vv-notraw-sold-as-bundled.md) — 没调 Prepare 被写成已经又收了一遍池子 / 用了 validValue 被写成已经是一份新的 raw 提案 / 跳过了 被写成已经从提案拿掉 tx（不变量 823）
