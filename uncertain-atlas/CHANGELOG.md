@@ -1,3 +1,7 @@
+## 2026-09-23（续 932）
+
+- 不变量 815；语料 C792；模式 name-the-sync-notlater-bar；反模式 sync-notlater-sold-as-bundled；L10.3 第 784 条。填 L4.4 / CometBFT 档案 Process 调用是同步的不是已经能在返回之后再改裁决 not already later-revise / not already left-critical / not already full-exec 正式三事（354 余量） / 实现表 / 05b / 共识专题 / 停链面地图。354 processwhen vs later bundled unbundling 启动（815 item 1）。
+
 ## 2026-09-23（续 931）
 
 - 不变量 814；语料 C791；模式 name-the-hash-notprocess-bar；反模式 hash-notprocess-sold-as-bundled；L10.3 第 783 条。填 L4.4 / CometBFT 档案 请求里的 hash 不是已经对该块跑过 Process not already ran-process / not already this-process / not already processalso 正式三事（353 余量） / 实现表 / 05b / 共识专题 / 停链面地图。353 verifywhen vs empty bundled unbundling 完成（814 item 3）。

@@ -1,3 +1,4 @@
+- [`sync-notlater-sold-as-bundled.md`](sync-notlater-sold-as-bundled.md) — 是同步的 被写成已经能稍后改裁决 / 引擎在等 被写成已经离开关键路径 / 立刻执行 被写成已经是立刻整块执行就已经离开关键路径（不变量 815）
 - [`hash-notprocess-sold-as-bundled.md`](hash-notprocess-sold-as-bundled.md) — 有 hash 被写成已经 Process 过 / 是同一块 被写成已经对上这次 Process / 不保证 被写成已经是提议者那边也会叫 Process（不变量 814）
 - [`empty-notlocal-sold-as-bundled.md`](empty-notlocal-sold-as-bundled.md) — 不调本地票 被写成已经自己验过 / 是自己签的 被写成已经 Accept / 跳过本地 被写成已经过了 Req 6（不变量 813）
 - [`empty-notskip-sold-as-bundled.md`](empty-notskip-sold-as-bundled.md) — 是空的 被写成已经跳过 Verify / 选择不扩 被写成已经不用调 / 仍会调 被写成已经是空扩展仍验签（不变量 812）
