@@ -1,3 +1,7 @@
+## 2026-09-24（续 954）
+
+- 不变量 837；语料 C814；模式 name-the-finwhen-notpersist-bar；反模式 finwhen-notpersist-sold-as-bundled；L10.3 第 806 条。填 L4.4 / CometBFT 档案 先把 v 落成这一高的决定再同步调 Finalize 不是已经交差 not already settled / not already app-persist / not already sync-settled 正式三事（362 余量） / 实现表 / 05b / 共识专题 / 停链面地图。362 finalize-when vs decided bundled unbundling 续（836+837 item 2）。
+
 ## 2026-09-24（续 953）
 
 - 不变量 836；语料 C813；模式 name-the-finwhen-notwillcall-bar；反模式 finwhen-notwillcall-sold-as-bundled；L10.3 第 805 条。填 L4.4 / CometBFT 档案 +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize not already will-call / not already decided / not already settled 正式三事（362 余量） / 实现表 / 05b / 共识专题 / 停链面地图。362 finalize-when vs decided bundled unbundling 启动（836 item 1）。
