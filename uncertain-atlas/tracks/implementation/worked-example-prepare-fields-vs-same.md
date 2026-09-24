@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) PrepareProposal Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process / local_last_commit 是上一高度的预提交带扩展不是已经是本高度刚签的扩展 / height / time / proposer_address 对上拟议头不是已经知道本头哈希」，不是 Process 也会在提议者那边叫，也不是到了 H 就已经 Prepare 带了扩展。不要另写怎样填 Prepare 请求字段。359 prepare-fields vs same bundled unbundling 启动（830）；精读 [`worked-example-prepfields-notprocess-vs-bundled.md`](worked-example-prepfields-notprocess-vs-bundled.md)（不变量 830 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process / local_last_commit 是上一高度的预提交带扩展不是已经是本高度刚签的扩展 / height / time / proposer_address 对上拟议头不是已经知道本头哈希」，不是 Process 也会在提议者那边叫，也不是到了 H 就已经 Prepare 带了扩展。不要另写怎样填 Prepare 请求字段。359 prepare-fields vs same bundled unbundling 续（830+831）；精读 [`worked-example-prepfields-notprocess-vs-bundled.md`](worked-example-prepfields-notprocess-vs-bundled.md)（不变量 830 item 1）；精读 [`worked-example-prepfields-notthissigned-vs-bundled.md`](worked-example-prepfields-notthissigned-vs-bundled.md)（不变量 831 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见字段名对得上就已经跑过 Process、已经是本高度刚签的扩展、已经知道本头哈希」，必须分开 Prepare 和 Process / Finalize 同一套字段是不是已经跑过 Process、local_last_commit 是上一高度的预提交带扩展是不是已经是本高度刚签的扩展、height / time / proposer_address 对上拟议头是不是已经知道本头哈希。可以跳过「看见字段名对得上就已经跑过 Process」。不要另写怎样填 Prepare 请求字段。359 prepare-fields vs same bundled unbundling 启动（830）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见字段名对得上就已经跑过 Process、已经是本高度刚签的扩展、已经知道本头哈希」，必须分开 Prepare 和 Process / Finalize 同一套字段是不是已经跑过 Process、local_last_commit 是上一高度的预提交带扩展是不是已经是本高度刚签的扩展、height / time / proposer_address 对上拟议头是不是已经知道本头哈希。可以跳过「看见字段名对得上就已经跑过 Process」。不要另写怎样填 Prepare 请求字段。359 prepare-fields vs same bundled unbundling 续（830+831）。
 
 ## 本页不抄
 

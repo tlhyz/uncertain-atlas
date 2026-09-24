@@ -1,3 +1,4 @@
+- [`worked-example-prepfields-notthissigned-vs-bundled.md`](worked-example-prepfields-notthissigned-vs-bundled.md) — local_last_commit上一高预提交带扩展≠本高度刚签扩展/带了扩展≠已到H Prepare带扩展/能用上一高≠已经交差；≠359 bundled（不变量 831）
 - [`worked-example-prepfields-notprocess-vs-bundled.md`](worked-example-prepfields-notprocess-vs-bundled.md) — Prepare与Process/Finalize同一套字段≠已跑过Process/同一套≠已Finalize/请求在≠已经交差；≠359 bundled（不变量 830）
 - [`worked-example-nonrp-notsame-vs-bundled.md`](worked-example-nonrp-notsame-vs-bundled.md) — 要签原样可用non_rp≠和vote_extension同一份/能空≠空扩展仍验签/能用≠已经交差；≠358 bundled（不变量 829）
 - [`worked-example-nonrp-notprotected-vs-bundled.md`](worked-example-nonrp-notprotected-vs-bundled.md) — non_rp按原样签≠已有重放保护/字段在≠必须填/没有包装≠已经交差；≠358 bundled（不变量 828）
