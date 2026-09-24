@@ -1,3 +1,4 @@
+- [`name-the-snapident-notcomplete-bar.md`](name-the-snapident-notcomplete-bar.md) — 空快照也至少 1 块不是已经齐 not already complete / not already consensus-const / not already restored 正式三事（368 余量）（不变量 853）
 - [`name-the-snapident-notapphash-bar.md`](name-the-snapident-notapphash-bar.md) — 引擎不解释 format / hash 不是已经轻验 AppHash not already apphash-light / not already algo / not already genesis-replay 正式三事（368 余量）（不变量 852）
 - [`name-the-snapident-notrestored-bar.md`](name-the-snapident-notrestored-bar.md) — 快照全字段含 Metadata 对上不是已经装完 not already restored / not already settled / not already complete 正式三事（368 余量）（不变量 851）
 - [`name-the-lane-notinblock-bar.md`](name-the-lane-notinblock-bar.md) — 优先级 0 留给不设道不是已经进了块 not already in-block / not already removed / not already consensus-order 正式三事（367 余量）（不变量 850）
