@@ -1,3 +1,7 @@
+## 2026-09-24（续 949）
+
+- 不变量 832；语料 C809；模式 name-the-prepfields-nothash-bar；反模式 prepfields-nothash-sold-as-bundled；L10.3 第 801 条。填 L4.4 / CometBFT 档案 height / time / proposer_address 对上拟议头不是已经知道本头哈希 not already header-hash / not already execute / not already settled 正式三事（359 余量） / 实现表 / 05b / 共识专题 / 停链面地图。359 prepare-fields vs same bundled unbundling 完成（830+831+832 item 3）。
+
 ## 2026-09-24（续 948）
 
 - 不变量 831；语料 C808；模式 name-the-prepfields-notthissigned-bar；反模式 prepfields-notthissigned-sold-as-bundled；L10.3 第 800 条。填 L4.4 / CometBFT 档案 local_last_commit 是上一高度的预提交带扩展不是已经是本高度刚签的扩展 not already this-signed / not already ve-at-h / not already settled 正式三事（359 余量） / 实现表 / 05b / 共识专题 / 停链面地图。359 prepare-fields vs same bundled unbundling 续（830+831 item 2）。
