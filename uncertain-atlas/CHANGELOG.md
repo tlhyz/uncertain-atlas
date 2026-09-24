@@ -1,3 +1,7 @@
+## 2026-09-24（续 953）
+
+- 不变量 836；语料 C813；模式 name-the-finwhen-notwillcall-bar；反模式 finwhen-notwillcall-sold-as-bundled；L10.3 第 805 条。填 L4.4 / CometBFT 档案 +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize not already will-call / not already decided / not already settled 正式三事（362 余量） / 实现表 / 05b / 共识专题 / 停链面地图。362 finalize-when vs decided bundled unbundling 启动（836 item 1）。
+
 ## 2026-09-24（续 952）
 
 - 不变量 835；语料 C812；模式 name-the-extwhen-notsameext-bar；反模式 extwhen-notsameext-sold-as-bundled；L10.3 第 804 条。填 L4.4 / CometBFT 档案 回包字节不被共识算法解释不是已经是同一份扩展 not already same-ext / not already canon-ve / not already settled 正式三事（361 余量） / 实现表 / 05b / 共识专题 / 停链面地图。361 extend-when vs locked bundled unbundling 完成（833+834+835 item 3）。

@@ -1,3 +1,4 @@
+- [`finwhen-notwillcall-sold-as-bundled.md`](finwhen-notwillcall-sold-as-bundled.md) — 到了这一高被写成已经会调 Finalize / 有提案被写成已经决定 / 规范写了 When 被写成已经交差（不变量 836）
 - [`extwhen-notsameext-sold-as-bundled.md`](extwhen-notsameext-sold-as-bundled.md) — 回了被写成已经是同一份扩展 / 不解释被写成已经包进 CanonicalVoteExtension / 有字节被写成已经交差（不变量 835）
 - [`extwhen-notlaterrevise-sold-as-bundled.md`](extwhen-notlaterrevise-sold-as-bundled.md) — 是同步的被写成已经能稍后改扩展 / 引擎在等被写成已经离开关键路径 / 回了被写成已经交差（不变量 834）
 - [`extwhen-notwillcall-sold-as-bundled.md`](extwhen-notwillcall-sold-as-bundled.md) — 到了 prevote 步被写成已经会调 ExtendVote / 有提案被写成已经锁住 / 规范写了 When 被写成已经交差（不变量 833）
