@@ -1,3 +1,4 @@
+- [`valnopub-notalgo-sold-as-bundled.md`](valnopub-notalgo-sold-as-bundled.md) — 省了字段被写成已经选型 / 提到后量子公钥被写成已经没有后量子钥 / ABCI 不传公钥被写成已经交差（不变量 840）
 - [`valaddr-notpubkey-sold-as-bundled.md`](valaddr-notpubkey-sold-as-bundled.md) — 有结构被写成已经带了公钥 / 有 address 被写成已经能验签 / 有 power 被写成已经是 ValidatorUpdate（不变量 839）
 - [`finwhen-notprinted-sold-as-bundled.md`](finwhen-notprinted-sold-as-bundled.md) — 回了被写成已经印进本头 / 有 ResultHash 被写成已经是本头 AppHash / 哈希了被写成已经交差（不变量 838）
 - [`finwhen-notpersist-sold-as-bundled.md`](finwhen-notpersist-sold-as-bundled.md) — 决定了被写成已经交差 / 先落了决定被写成已经落盘应用状态 / 是同步的被写成已经交差（不变量 837）

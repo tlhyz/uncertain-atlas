@@ -1,3 +1,4 @@
+- [`worked-example-valnopub-notalgo-vs-bundled.md`](worked-example-valnopub-notalgo-vs-bundled.md) — 省了PubKey字段≠已选型/提到后量子公钥≠已没有后量子钥/ABCI不传公钥≠已交差；≠364 bundled（不变量 840）
 - [`worked-example-valaddr-notpubkey-vs-bundled.md`](worked-example-valaddr-notpubkey-vs-bundled.md) — VoteInfo有Validator≠已带公钥/有address≠已能验签/有power≠已是ValidatorUpdate；≠364 bundled（不变量 839）
 - [`worked-example-finwhen-notprinted-vs-bundled.md`](worked-example-finwhen-notprinted-vs-bundled.md) — 回了AppHash与各笔输出≠已印进本头/有ResultHash≠已是本头AppHash/哈希了≠已交差；≠362 bundled（不变量 838）
 - [`worked-example-finwhen-notpersist-vs-bundled.md`](worked-example-finwhen-notpersist-vs-bundled.md) — 落决定再同步调Finalize≠已交差/先落了决定≠已落盘应用状态/是同步的≠已交差；≠362 bundled（不变量 837）
