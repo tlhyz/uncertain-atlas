@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) ExtendVote When。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「收到提案和全部块片并且 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote / ExtendVote 调用是同步的不是已经能在返回之后再改扩展 / 应用回了一串字节共识算法不解释不是已经是同一份扩展」，不是一轮只能交出一份扩展，也不是 Process 调用是同步的。不要另写怎样写 ExtendVote 何时调用。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「收到提案和全部块片并且 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote / ExtendVote 调用是同步的不是已经能在返回之后再改扩展 / 应用回了一串字节共识算法不解释不是已经是同一份扩展」，不是一轮只能交出一份扩展，也不是 Process 调用是同步的。不要另写怎样写 ExtendVote 何时调用。361 extend-when vs locked bundled unbundling 启动（833）；精读 [`worked-example-extwhen-notwillcall-vs-bundled.md`](worked-example-extwhen-notwillcall-vs-bundled.md)（不变量 833 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 prevote 步就已经会调 ExtendVote、已经能稍后改扩展、已经是同一份扩展」，必须分开 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 是不是已经会调 ExtendVote、ExtendVote 调用是同步的是不是已经能在返回之后再改扩展、回包字节不被共识算法解释是不是已经是同一份扩展。可以跳过「看见到了 prevote 步就已经会调 ExtendVote」。不要另写怎样写 ExtendVote 何时调用。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了 prevote 步就已经会调 ExtendVote、已经能稍后改扩展、已经是同一份扩展」，必须分开 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 是不是已经会调 ExtendVote、ExtendVote 调用是同步的是不是已经能在返回之后再改扩展、回包字节不被共识算法解释是不是已经是同一份扩展。可以跳过「看见到了 prevote 步就已经会调 ExtendVote」。不要另写怎样写 ExtendVote 何时调用。361 extend-when vs locked bundled unbundling 启动（833）。
 
 ## 本页不抄
 

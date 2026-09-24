@@ -1,3 +1,7 @@
+## 2026-09-24（续 950）
+
+- 不变量 833；语料 C810；模式 name-the-extwhen-notwillcall-bar；反模式 extwhen-notwillcall-sold-as-bundled；L10.3 第 802 条。填 L4.4 / CometBFT 档案 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote not already will-call / not already locked-value / not already settled 正式三事（361 余量） / 实现表 / 05b / 共识专题 / 停链面地图。360 finalize-vs-processed bundled unbundling 完成（582+583+584）；361 extend-when vs locked bundled unbundling 启动（833 item 1）。
+
 ## 2026-09-24（续 949）
 
 - 不变量 832；语料 C809；模式 name-the-prepfields-nothash-bar；反模式 prepfields-nothash-sold-as-bundled；L10.3 第 801 条。填 L4.4 / CometBFT 档案 height / time / proposer_address 对上拟议头不是已经知道本头哈希 not already header-hash / not already execute / not already settled 正式三事（359 余量） / 实现表 / 05b / 共识专题 / 停链面地图。359 prepare-fields vs same bundled unbundling 完成（830+831+832 item 3）。
