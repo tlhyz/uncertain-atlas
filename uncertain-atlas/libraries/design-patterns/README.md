@@ -1,3 +1,4 @@
+- [`name-the-valaddr-notpubkey-bar.md`](name-the-valaddr-notpubkey-bar.md) — Validator 用 address 认人不是已经带了公钥 not already pubkey / not already verify / not already update 正式三事（364 余量）（不变量 839）
 - [`name-the-finwhen-notprinted-bar.md`](name-the-finwhen-notprinted-bar.md) — 应用回了 AppHash 和各笔输出引擎哈希进 ResultHash 不是已经印进本头 not already printed / not already header / not already settled 正式三事（362 余量）（不变量 838）
 - [`name-the-finwhen-notpersist-bar.md`](name-the-finwhen-notpersist-bar.md) — 先把 v 落成这一高的决定再同步调 Finalize 不是已经交差 not already settled / not already app-persist / not already sync-settled 正式三事（362 余量）（不变量 837）
 - [`name-the-finwhen-notwillcall-bar.md`](name-the-finwhen-notwillcall-bar.md) — +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize not already will-call / not already decided / not already settled 正式三事（362 余量）（不变量 836）

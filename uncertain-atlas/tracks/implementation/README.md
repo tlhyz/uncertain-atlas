@@ -1,3 +1,4 @@
+- [`worked-example-valaddr-notpubkey-vs-bundled.md`](worked-example-valaddr-notpubkey-vs-bundled.md) — VoteInfo有Validator≠已带公钥/有address≠已能验签/有power≠已是ValidatorUpdate；≠364 bundled（不变量 839）
 - [`worked-example-finwhen-notprinted-vs-bundled.md`](worked-example-finwhen-notprinted-vs-bundled.md) — 回了AppHash与各笔输出≠已印进本头/有ResultHash≠已是本头AppHash/哈希了≠已交差；≠362 bundled（不变量 838）
 - [`worked-example-finwhen-notpersist-vs-bundled.md`](worked-example-finwhen-notpersist-vs-bundled.md) — 落决定再同步调Finalize≠已交差/先落了决定≠已落盘应用状态/是同步的≠已交差；≠362 bundled（不变量 837）
 - [`worked-example-finwhen-notwillcall-vs-bundled.md`](worked-example-finwhen-notwillcall-vs-bundled.md) — +2/3 precommit才决定再调Finalize≠已会调/有提案≠已决定/规范写了When≠已经交差；≠362 bundled（不变量 836）
