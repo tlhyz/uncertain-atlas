@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) FinalizeBlock When。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「收到提案和全部块片并且 +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize / 先把 v 落成这一高的决定再同步调 Finalize 不是已经交差 / 应用回了 AppHash 和各笔输出引擎把输出哈希进 ResultHash 不是已经印进本头」，不是 +2/3 prevote 才锁住再调 ExtendVote，也不是 Finalize 改了就已经落盘。不要另写怎样写 Finalize 何时调用。362 finalize-when vs decided bundled unbundling 续（836+837）；精读 [`worked-example-finwhen-notwillcall-vs-bundled.md`](worked-example-finwhen-notwillcall-vs-bundled.md)（不变量 836 item 1）；精读 [`worked-example-finwhen-notpersist-vs-bundled.md`](worked-example-finwhen-notpersist-vs-bundled.md)（不变量 837 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「收到提案和全部块片并且 +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize / 先把 v 落成这一高的决定再同步调 Finalize 不是已经交差 / 应用回了 AppHash 和各笔输出引擎把输出哈希进 ResultHash 不是已经印进本头」，不是 +2/3 prevote 才锁住再调 ExtendVote，也不是 Finalize 改了就已经落盘。不要另写怎样写 Finalize 何时调用。362 finalize-when vs decided bundled unbundling 完成（836+837+838）；精读 [`worked-example-finwhen-notwillcall-vs-bundled.md`](worked-example-finwhen-notwillcall-vs-bundled.md)（不变量 836 item 1）；精读 [`worked-example-finwhen-notpersist-vs-bundled.md`](worked-example-finwhen-notpersist-vs-bundled.md)（不变量 837 item 2）；精读 [`worked-example-finwhen-notprinted-vs-bundled.md`](worked-example-finwhen-notprinted-vs-bundled.md)（不变量 838 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了这一高就已经会调 Finalize、已经交差、已经印进本头」，必须分开 +2/3 precommit 同一 id(v) 才决定再调 Finalize 是不是已经会调 Finalize、先把 v 落成这一高的决定再同步调 Finalize 是不是已经交差、应用回了 AppHash 和各笔输出引擎哈希进 ResultHash 是不是已经印进本头。可以跳过「看见到了这一高就已经会调 Finalize」。不要另写怎样写 Finalize 何时调用。362 finalize-when vs decided bundled unbundling 续（836+837）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见到了这一高就已经会调 Finalize、已经交差、已经印进本头」，必须分开 +2/3 precommit 同一 id(v) 才决定再调 Finalize 是不是已经会调 Finalize、先把 v 落成这一高的决定再同步调 Finalize 是不是已经交差、应用回了 AppHash 和各笔输出引擎哈希进 ResultHash 是不是已经印进本头。可以跳过「看见到了这一高就已经会调 Finalize」。不要另写怎样写 Finalize 何时调用。362 finalize-when vs decided bundled unbundling 完成（836+837+838）。
 
 ## 本页不抄
 
