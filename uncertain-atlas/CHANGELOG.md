@@ -1,3 +1,7 @@
+## 2026-09-24（续 959）
+
+- 不变量 842；语料 C819；模式 name-the-voteinfo-notslashed-bar；反模式 voteinfo-notslashed-sold-as-bundled；L10.3 第 811 条。填 L4.4 / CometBFT 档案 VoteInfo 能按到场定奖惩不是已经罚没 not already slashed / not already decided-commit / not already settled 正式三事（365 余量） / 实现表 / 05b / 共识专题 / 停链面地图。365 voteinfo-vs-reward bundled unbundling 启动（842 item 1）。
+
 ## 2026-09-24（续 958）
 
 - 不变量 841；语料 C818；模式 name-the-valupdate-notset-bar；反模式 valupdate-notset-sold-as-bundled；L10.3 第 810 条。填 L4.4 / CometBFT 档案 ValidatorUpdate 用公钥认人不是已经改了集合 not already same-val / not already changed-set / not already algo 正式三事（364 余量） / 实现表 / 05b / 共识专题 / 停链面地图。364 validator-vs-update bundled unbundling 完成（839+840+841 item 3）。

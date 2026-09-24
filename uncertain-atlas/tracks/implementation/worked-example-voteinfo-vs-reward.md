@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Data Types VoteInfo / CommitInfo。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「VoteInfo 能按到场定奖惩不是已经罚没 / 从拟议块或已决块抽出不是已经带了公钥 / 按投票权降序排不是已经进了块」，不是必须回四列就已经改了集合，也不是 Validator 用 address 认人就已经带了公钥。不要另写怎样写 VoteInfo。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「VoteInfo 能按到场定奖惩不是已经罚没 / 从拟议块或已决块抽出不是已经带了公钥 / 按投票权降序排不是已经进了块」，不是必须回四列就已经改了集合，也不是 Validator 用 address 认人就已经带了公钥。不要另写怎样写 VoteInfo。365 voteinfo-vs-reward bundled unbundling 启动（842）；精读 [`worked-example-voteinfo-notslashed-vs-bundled.md`](worked-example-voteinfo-notslashed-vs-bundled.md)（不变量 842 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CommitInfo 里有票就已经罚没、已经带了公钥、已经进了块」，必须分开 VoteInfo 能按到场定奖惩是不是已经罚没、从拟议块或已决块抽出是不是已经带了公钥、按投票权降序排是不是已经进了块。可以跳过「看见 CommitInfo 里有票就已经罚没」。不要另写怎样写 VoteInfo。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CommitInfo 里有票就已经罚没、已经带了公钥、已经进了块」，必须分开 VoteInfo 能按到场定奖惩是不是已经罚没、从拟议块或已决块抽出是不是已经带了公钥、按投票权降序排是不是已经进了块。可以跳过「看见 CommitInfo 里有票就已经罚没」。不要另写怎样写 VoteInfo。365 voteinfo-vs-reward bundled unbundling 启动（842）。
 
 ## 本页不抄
 
