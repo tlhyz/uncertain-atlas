@@ -1,3 +1,4 @@
+- [`retain-notdeleted-sold-as-bundled.md`](retain-notdeleted-sold-as-bundled.md) — 能删被写成已经删完 / 回了高度被写成已经是快照截断 / 能剪被写成已经没有历史（不变量 846）
 - [`retain-notpruning-sold-as-bundled.md`](retain-notpruning-sold-as-bundled.md) — 默认 0 全留被写成已经在剪 / 没填被写成已经交差 / Commit 回了被写成已经没有历史（不变量 845）
 - [`voteinfo-notinblock-sold-as-bundled.md`](voteinfo-notinblock-sold-as-bundled.md) — 排好了被写成已经进了块 / 从 store 再装被写成已经交差 / 顺序在被写成已经罚没（不变量 844）
 - [`voteinfo-notpubkey-sold-as-bundled.md`](voteinfo-notpubkey-sold-as-bundled.md) — 从块抽出被写成已经带了公钥 / 有 VoteInfo.validator 被写成已经是 ValidatorUpdate / 块里有票被写成已经改了集合（不变量 843）

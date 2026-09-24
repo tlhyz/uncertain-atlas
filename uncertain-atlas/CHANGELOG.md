@@ -1,3 +1,7 @@
+## 2026-09-24（续 963）
+
+- 不变量 846；语料 C823；模式 name-the-retain-notdeleted-bar；反模式 retain-notdeleted-sold-as-bundled；L10.3 第 815 条。填 L4.4 / CometBFT 档案 低于这个高度的块可以被删不是已经没有历史 not already deleted / not already snapshot-trunc / not already no-history 正式三事（366 余量） / 实现表 / 05b / 共识专题 / 停链面地图。366 retain-vs-kept bundled unbundling 续（845+846 item 2）。
+
 ## 2026-09-24（续 962）
 
 - 不变量 845；语料 C822；模式 name-the-retain-notpruning-bar；反模式 retain-notpruning-sold-as-bundled；L10.3 第 814 条。填 L4.4 / CometBFT 档案 retain_height 默认 0 不是已经在剪 not already pruning / not already settled / not already no-history 正式三事（366 余量） / 实现表 / 05b / 共识专题 / 停链面地图。366 retain-vs-kept bundled unbundling 启动（845 item 1）。

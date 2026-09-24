@@ -1,3 +1,4 @@
+- [`worked-example-retain-notdeleted-vs-bundled.md`](worked-example-retain-notdeleted-vs-bundled.md) — 能删≠已删完/回了高度≠已快照截断/能剪≠已没有历史；≠366 bundled（不变量 846）
 - [`worked-example-retain-notpruning-vs-bundled.md`](worked-example-retain-notpruning-vs-bundled.md) — 默认0全留≠已在剪/没填≠已交差/Commit回了≠已没有历史；≠366 bundled（不变量 845）
 - [`worked-example-voteinfo-notinblock-vs-bundled.md`](worked-example-voteinfo-notinblock-vs-bundled.md) — 排好了≠已进块/从store再装≠已交差/顺序在≠已罚没；≠365 bundled（不变量 844）
 - [`worked-example-voteinfo-notpubkey-vs-bundled.md`](worked-example-voteinfo-notpubkey-vs-bundled.md) — 从块抽出≠已带公钥/有VoteInfo.validator≠已是ValidatorUpdate/块里有票≠已改集合；≠365 bundled（不变量 843）
