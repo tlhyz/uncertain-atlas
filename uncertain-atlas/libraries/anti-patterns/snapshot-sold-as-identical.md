@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [snapident-notrestored-sold-as-bundled](snapident-notrestored-sold-as-bundled.md) 是快照全字段含 Metadata 对上 not already restored / not already settled / not already complete 正式三事（368 item 1），不是本页 bundled 全段 alone。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下就已经装完，不是本页这种全字段（含 Metadata）对上不是已经装完。
 - [snapshotdiscover-sold-as-listed](snapshotdiscover-sold-as-listed.md) 是 ListSnapshots 回了就已经齐，不是本页这种引擎不解释 format / hash 不是已经轻验 AppHash。
 - [statesync-sold-as-genesis](statesync-sold-as-genesis.md) 是应用快照就已经从创世重放，不是本页这种空快照也至少 1 块不是已经齐。
