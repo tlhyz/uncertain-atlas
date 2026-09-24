@@ -1,3 +1,4 @@
+- [`worked-example-voteinfo-notpubkey-vs-bundled.md`](worked-example-voteinfo-notpubkey-vs-bundled.md) — 从块抽出≠已带公钥/有VoteInfo.validator≠已是ValidatorUpdate/块里有票≠已改集合；≠365 bundled（不变量 843）
 - [`worked-example-voteinfo-notslashed-vs-bundled.md`](worked-example-voteinfo-notslashed-vs-bundled.md) — 有block_id_flag列≠已罚没/能定奖惩≠已用decided_last_commit算完/有flag≠已交差；≠365 bundled（不变量 842）
 - [`worked-example-valupdate-notset-vs-bundled.md`](worked-example-valupdate-notset-vs-bundled.md) — 有公钥字段≠已是VoteInfo那份Validator/回了更新≠已改集合/有pub_key_type≠已选型；≠364 bundled（不变量 841）
 - [`worked-example-valnopub-notalgo-vs-bundled.md`](worked-example-valnopub-notalgo-vs-bundled.md) — 省了PubKey字段≠已选型/提到后量子公钥≠已没有后量子钥/ABCI不传公钥≠已交差；≠364 bundled（不变量 840）
