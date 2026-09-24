@@ -1,3 +1,4 @@
+- [`extwhen-notsameext-sold-as-bundled.md`](extwhen-notsameext-sold-as-bundled.md) — 回了被写成已经是同一份扩展 / 不解释被写成已经包进 CanonicalVoteExtension / 有字节被写成已经交差（不变量 835）
 - [`extwhen-notlaterrevise-sold-as-bundled.md`](extwhen-notlaterrevise-sold-as-bundled.md) — 是同步的被写成已经能稍后改扩展 / 引擎在等被写成已经离开关键路径 / 回了被写成已经交差（不变量 834）
 - [`extwhen-notwillcall-sold-as-bundled.md`](extwhen-notwillcall-sold-as-bundled.md) — 到了 prevote 步被写成已经会调 ExtendVote / 有提案被写成已经锁住 / 规范写了 When 被写成已经交差（不变量 833）
 - [`prepfields-nothash-sold-as-bundled.md`](prepfields-nothash-sold-as-bundled.md) — 对得上被写成已经知道本头哈希 / 头上有这些被写成已经是 ExecuteTxState / 拟议头被写成已经交差（不变量 832）

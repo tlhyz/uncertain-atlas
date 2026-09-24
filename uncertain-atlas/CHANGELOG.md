@@ -1,3 +1,7 @@
+## 2026-09-24（续 952）
+
+- 不变量 835；语料 C812；模式 name-the-extwhen-notsameext-bar；反模式 extwhen-notsameext-sold-as-bundled；L10.3 第 804 条。填 L4.4 / CometBFT 档案 回包字节不被共识算法解释不是已经是同一份扩展 not already same-ext / not already canon-ve / not already settled 正式三事（361 余量） / 实现表 / 05b / 共识专题 / 停链面地图。361 extend-when vs locked bundled unbundling 完成（833+834+835 item 3）。
+
 ## 2026-09-24（续 951）
 
 - 不变量 834；语料 C811；模式 name-the-extwhen-notlaterrevise-bar；反模式 extwhen-notlaterrevise-sold-as-bundled；L10.3 第 803 条。填 L4.4 / CometBFT 档案 ExtendVote 调用是同步的不是已经能在返回之后再改扩展 not already later-revise / not already left-critical / not already settled 正式三事（361 余量） / 实现表 / 05b / 共识专题 / 停链面地图。361 extend-when vs locked bundled unbundling 续（833+834 item 2）。
