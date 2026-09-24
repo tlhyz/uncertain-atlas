@@ -1,3 +1,4 @@
+- [`name-the-prepfields-notprocess-bar.md`](name-the-prepfields-notprocess-bar.md) — Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process not already ran-process / not already finalize / not already settled 正式三事（359 余量）（不变量 830）
 - [`name-the-nonrp-notsame-bar.md`](name-the-nonrp-notsame-bar.md) — 要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份 not already same-as-ve / not already empty-verify / not already settled 正式三事（358 余量）（不变量 829）
 - [`name-the-nonrp-notprotected-bar.md`](name-the-nonrp-notprotected-bar.md) — non_rp_extension 按原样签不是已经有重放保护 not already replay-protected / not already must-fill / not already settled 正式三事（358 余量）（不变量 828）
 - [`name-the-nonrp-notraw-bar.md`](name-the-nonrp-notraw-bar.md) — vote_extension 会包进 CanonicalVoteExtension 不是已经按原样签 not already raw-signed / not already canon-vote / not already settled 正式三事（358 余量）（不变量 827）
