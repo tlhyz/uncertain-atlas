@@ -1,3 +1,7 @@
+## 2026-09-24（续 960）
+
+- 不变量 843；语料 C820；模式 name-the-voteinfo-notpubkey-bar；反模式 voteinfo-notpubkey-sold-as-bundled；L10.3 第 812 条。填 L4.4 / CometBFT 档案 从拟议块或已决块抽出不是已经带了公钥 not already pubkey / not already update / not already changed-set 正式三事（365 余量） / 实现表 / 05b / 共识专题 / 停链面地图。365 voteinfo-vs-reward bundled unbundling 续（842+843 item 2）。
+
 ## 2026-09-24（续 959）
 
 - 不变量 842；语料 C819；模式 name-the-voteinfo-notslashed-bar；反模式 voteinfo-notslashed-sold-as-bundled；L10.3 第 811 条。填 L4.4 / CometBFT 档案 VoteInfo 能按到场定奖惩不是已经罚没 not already slashed / not already decided-commit / not already settled 正式三事（365 余量） / 实现表 / 05b / 共识专题 / 停链面地图。365 voteinfo-vs-reward bundled unbundling 启动（842 item 1）。
