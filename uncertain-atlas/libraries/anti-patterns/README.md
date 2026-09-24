@@ -1,3 +1,4 @@
+- [`lane-notpriority-sold-as-bundled.md`](lane-notpriority-sold-as-bundled.md) — 没填表被写成已经排了优先 / 并成一条道被写成已经是 CheckTx Priority / Info 回了被写成已经交差（不变量 848）
 - [`retain-notgenesis-sold-as-bundled.md`](retain-notgenesis-sold-as-bundled.md) — 全网都删会永久丢被写成已经能从创世再装 / 开了 state sync 被写成已经能给轻客户端验 / 能丢被写成已经交差（不变量 847）
 - [`retain-notdeleted-sold-as-bundled.md`](retain-notdeleted-sold-as-bundled.md) — 能删被写成已经删完 / 回了高度被写成已经是快照截断 / 能剪被写成已经没有历史（不变量 846）
 - [`retain-notpruning-sold-as-bundled.md`](retain-notpruning-sold-as-bundled.md) — 默认 0 全留被写成已经在剪 / 没填被写成已经交差 / Commit 回了被写成已经没有历史（不变量 845）
