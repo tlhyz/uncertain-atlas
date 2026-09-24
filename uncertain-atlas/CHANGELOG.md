@@ -1,3 +1,7 @@
+## 2026-09-24（续 951）
+
+- 不变量 834；语料 C811；模式 name-the-extwhen-notlaterrevise-bar；反模式 extwhen-notlaterrevise-sold-as-bundled；L10.3 第 803 条。填 L4.4 / CometBFT 档案 ExtendVote 调用是同步的不是已经能在返回之后再改扩展 not already later-revise / not already left-critical / not already settled 正式三事（361 余量） / 实现表 / 05b / 共识专题 / 停链面地图。361 extend-when vs locked bundled unbundling 续（833+834 item 2）。
+
 ## 2026-09-24（续 950）
 
 - 不变量 833；语料 C810；模式 name-the-extwhen-notwillcall-bar；反模式 extwhen-notwillcall-sold-as-bundled；L10.3 第 802 条。填 L4.4 / CometBFT 档案 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote not already will-call / not already locked-value / not already settled 正式三事（361 余量） / 实现表 / 05b / 共识专题 / 停链面地图。360 finalize-vs-processed bundled unbundling 完成（582+583+584）；361 extend-when vs locked bundled unbundling 启动（833 item 1）。

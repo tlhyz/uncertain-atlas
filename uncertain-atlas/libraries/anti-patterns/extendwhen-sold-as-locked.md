@@ -18,6 +18,7 @@
 ## 和相邻反模式
 
 - [extwhen-notwillcall-sold-as-bundled](extwhen-notwillcall-sold-as-bundled.md) 是 +2/3 prevote 才锁住再调 not already will-call / not already locked-value / not already settled 正式三事（361 item 1），不是本页 bundled 全段 alone。
+- [extwhen-notlaterrevise-sold-as-bundled](extwhen-notlaterrevise-sold-as-bundled.md) 是 ExtendVote 同步 not already later-revise / not already left-critical / not already settled 正式三事（361 item 2），不是本页 bundled 全段 alone。
 - [extendonce-sold-as-height](extendonce-sold-as-height.md) 是一轮只能交出一份扩展就已经是每一高度一份，不是本页这种 +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote。
 - [processwhen-sold-as-later](processwhen-sold-as-later.md) 是 Process 调用是同步的就已经能稍后改裁决，不是本页这种 ExtendVote 调用是同步的不是已经能在返回之后再改扩展。
 - [nonrp-sold-as-protected](nonrp-sold-as-protected.md) 是 vote_extension 会包进 CanonicalVoteExtension 就已经按原样签，不是本页这种回包字节不被共识算法解释不是已经是同一份扩展。
