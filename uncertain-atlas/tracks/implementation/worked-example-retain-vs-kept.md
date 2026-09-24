@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Commit Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「retain_height 默认 0 不是已经在剪 / 低于这个高度的块可以被删不是已经没有历史 / 全网都删了会永久丢不是已经能从创世再装」，不是崩溃三步就已经 Commit，也不是切进共识就已经有完整历史。不要另写怎样写 Commit 保留高度。366 retain-vs-kept bundled unbundling 续（845+846）；精读 [`worked-example-retain-notpruning-vs-bundled.md`](worked-example-retain-notpruning-vs-bundled.md)（不变量 845 item 1）；精读 [`worked-example-retain-notdeleted-vs-bundled.md`](worked-example-retain-notdeleted-vs-bundled.md)（不变量 846 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「retain_height 默认 0 不是已经在剪 / 低于这个高度的块可以被删不是已经没有历史 / 全网都删了会永久丢不是已经能从创世再装」，不是崩溃三步就已经 Commit，也不是切进共识就已经有完整历史。不要另写怎样写 Commit 保留高度。366 retain-vs-kept bundled unbundling 完成（845+846+847）；精读 [`worked-example-retain-notpruning-vs-bundled.md`](worked-example-retain-notpruning-vs-bundled.md)（不变量 845 item 1）；精读 [`worked-example-retain-notdeleted-vs-bundled.md`](worked-example-retain-notdeleted-vs-bundled.md)（不变量 846 item 2）；精读 [`worked-example-retain-notgenesis-vs-bundled.md`](worked-example-retain-notgenesis-vs-bundled.md)（不变量 847 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Commit 回了高度就已经在剪、已经没有历史、已经能从创世再装」，必须分开 retain_height 默认 0 是不是已经在剪、低于这个高度的块可以被删是不是已经没有历史、全网都删了会永久丢是不是已经能从创世再装。可以跳过「看见 Commit 回了高度就已经在剪」。不要另写怎样写 Commit 保留高度。366 retain-vs-kept bundled unbundling 续（845+846）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Commit 回了高度就已经在剪、已经没有历史、已经能从创世再装」，必须分开 retain_height 默认 0 是不是已经在剪、低于这个高度的块可以被删是不是已经没有历史、全网都删了会永久丢是不是已经能从创世再装。可以跳过「看见 Commit 回了高度就已经在剪」。不要另写怎样写 Commit 保留高度。366 retain-vs-kept bundled unbundling 完成（845+846+847）。
 
 ## 本页不抄
 

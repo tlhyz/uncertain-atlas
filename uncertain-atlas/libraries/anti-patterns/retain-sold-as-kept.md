@@ -19,6 +19,7 @@
 
 - [retain-notpruning-sold-as-bundled](retain-notpruning-sold-as-bundled.md) 是 retain_height 默认 0 not already pruning / not already settled / not already no-history 正式三事（366 item 1），不是本页 bundled 全段 alone。
 - [retain-notdeleted-sold-as-bundled](retain-notdeleted-sold-as-bundled.md) 是低于这个高度的块可以被删 not already deleted / not already snapshot-trunc / not already no-history 正式三事（366 item 2），不是本页 bundled 全段 alone。
+- [retain-notgenesis-sold-as-bundled](retain-notgenesis-sold-as-bundled.md) 是全网都删了会永久丢 not already genesis-replay / not already light-check / not already settled 正式三事（366 item 3），不是本页 bundled 全段 alone。
 - [crashsteps-sold-as-committed](crashsteps-sold-as-committed.md) 是崩溃三步就已经 Commit，不是本页这种 retain_height 默认 0 不是已经在剪。
 - [snapshotswitch-sold-as-full-history](snapshotswitch-sold-as-full-history.md) 是切进共识就已经有完整历史，不是本页这种低于这个高度的块可以被删不是已经没有历史。
 - [statesync-sold-as-genesis](statesync-sold-as-genesis.md) 是应用快照就已经从创世重放，不是本页这种全网都删了会永久丢不是已经能从创世再装。

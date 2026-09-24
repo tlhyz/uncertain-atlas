@@ -1,3 +1,4 @@
+- [`name-the-retain-notgenesis-bar.md`](name-the-retain-notgenesis-bar.md) — 全网都删了会永久丢不是已经能从创世再装 not already genesis-replay / not already light-check / not already settled 正式三事（366 余量）（不变量 847）
 - [`name-the-retain-notdeleted-bar.md`](name-the-retain-notdeleted-bar.md) — 低于这个高度的块可以被删不是已经没有历史 not already deleted / not already snapshot-trunc / not already no-history 正式三事（366 余量）（不变量 846）
 - [`name-the-retain-notpruning-bar.md`](name-the-retain-notpruning-bar.md) — retain_height 默认 0 不是已经在剪 not already pruning / not already settled / not already no-history 正式三事（366 余量）（不变量 845）
 - [`name-the-voteinfo-notinblock-bar.md`](name-the-voteinfo-notinblock-bar.md) — 按投票权降序排不是已经进了块 not already in-block / not already settled / not already slashed 正式三事（365 余量）（不变量 844）
