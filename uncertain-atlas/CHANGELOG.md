@@ -1,3 +1,7 @@
+## 2026-09-24（续 968）
+
+- 不变量 851；语料 C828；模式 name-the-snapident-notrestored-bar；反模式 snapident-notrestored-sold-as-bundled；L10.3 第 820 条。填 L4.4 / CometBFT 档案 快照全字段含 Metadata 对上不是已经装完 not already restored / not already settled / not already complete 正式三事（368 余量） / 实现表 / 05b / 共识专题 / 停链面地图。368 snapshot-vs-identical bundled unbundling 启动（851 item 1）。
+
 ## 2026-09-24（续 967）
 
 - 不变量 850；语料 C827；模式 name-the-lane-notinblock-bar；反模式 lane-notinblock-sold-as-bundled；L10.3 第 819 条。填 L4.4 / CometBFT 档案 优先级 0 留给不设道不是已经进了块 not already in-block / not already removed / not already consensus-order 正式三事（367 余量） / 实现表 / 05b / 共识专题 / 停链面地图。367 lane-vs-priority bundled unbundling 完成（848+849+850 item 3）。

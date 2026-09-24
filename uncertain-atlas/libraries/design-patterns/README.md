@@ -1,3 +1,4 @@
+- [`name-the-snapident-notrestored-bar.md`](name-the-snapident-notrestored-bar.md) — 快照全字段含 Metadata 对上不是已经装完 not already restored / not already settled / not already complete 正式三事（368 余量）（不变量 851）
 - [`name-the-lane-notinblock-bar.md`](name-the-lane-notinblock-bar.md) — 优先级 0 留给不设道不是已经进了块 not already in-block / not already removed / not already consensus-order 正式三事（367 余量）（不变量 850）
 - [`name-the-lane-notalgo-bar.md`](name-the-lane-notalgo-bar.md) — 空表对空默认不是已经选型 not already algo / not already prioritized / not already in-block 正式三事（367 余量）（不变量 849）
 - [`name-the-lane-notpriority-bar.md`](name-the-lane-notpriority-bar.md) — 没定义 lane_priorities 不是已经排了优先 not already prioritized / not already checktx-priority / not already settled 正式三事（367 余量）（不变量 848）

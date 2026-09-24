@@ -1,3 +1,4 @@
+- [`worked-example-snapident-notrestored-vs-bundled.md`](worked-example-snapident-notrestored-vs-bundled.md) — 对上了≠已装完/能拉≠已交差/Metadata在≠已齐；≠368 bundled（不变量 851）
 - [`worked-example-lane-notinblock-vs-bundled.md`](worked-example-lane-notinblock-vs-bundled.md) — 写了0≠已进块/空lane_id≠已从池删/有优先级≠已是共识顺序；≠367 bundled（不变量 850）
 - [`worked-example-lane-notalgo-vs-bundled.md`](worked-example-lane-notalgo-vs-bundled.md) — 空对空≠已选型/默认道在表里≠已排优先/对上了≠已进块；≠367 bundled（不变量 849）
 - [`worked-example-lane-notpriority-vs-bundled.md`](worked-example-lane-notpriority-vs-bundled.md) — 没填表≠已排优先/并成一条道≠已是CheckTx Priority/Info回了≠已交差；≠367 bundled（不变量 848）
