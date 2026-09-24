@@ -1,3 +1,4 @@
+- [`name-the-finwhen-notwillcall-bar.md`](name-the-finwhen-notwillcall-bar.md) — +2/3 precommit 同一 id(v) 才决定再调 Finalize 不是已经会调 Finalize not already will-call / not already decided / not already settled 正式三事（362 余量）（不变量 836）
 - [`name-the-extwhen-notsameext-bar.md`](name-the-extwhen-notsameext-bar.md) — 回包字节不被共识算法解释不是已经是同一份扩展 not already same-ext / not already canon-ve / not already settled 正式三事（361 余量）（不变量 835）
 - [`name-the-extwhen-notlaterrevise-bar.md`](name-the-extwhen-notlaterrevise-bar.md) — ExtendVote 调用是同步的不是已经能在返回之后再改扩展 not already later-revise / not already left-critical / not already settled 正式三事（361 余量）（不变量 834）
 - [`name-the-extwhen-notwillcall-bar.md`](name-the-extwhen-notwillcall-bar.md) — +2/3 prevote 同一 id(v) 才锁住再调 ExtendVote 不是已经会调 ExtendVote not already will-call / not already locked-value / not already settled 正式三事（361 余量）（不变量 833）

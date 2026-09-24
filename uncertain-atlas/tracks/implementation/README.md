@@ -1,3 +1,4 @@
+- [`worked-example-finwhen-notwillcall-vs-bundled.md`](worked-example-finwhen-notwillcall-vs-bundled.md) — +2/3 precommit才决定再调Finalize≠已会调/有提案≠已决定/规范写了When≠已经交差；≠362 bundled（不变量 836）
 - [`worked-example-extwhen-notsameext-vs-bundled.md`](worked-example-extwhen-notsameext-vs-bundled.md) — 回包字节不被共识算法解释≠已是同一份扩展/不解释≠已包进CanonicalVoteExtension/有字节≠已经交差；≠361 bundled（不变量 835）
 - [`worked-example-extwhen-notlaterrevise-vs-bundled.md`](worked-example-extwhen-notlaterrevise-vs-bundled.md) — ExtendVote调用是同步的≠已能稍后改扩展/引擎在等≠已离开关键路径/回了≠已经交差；≠361 bundled（不变量 834）
 - [`worked-example-extwhen-notwillcall-vs-bundled.md`](worked-example-extwhen-notwillcall-vs-bundled.md) — +2/3 prevote才锁住再调ExtendVote≠已会调/有提案≠已锁住/规范写了When≠已经交差；≠361 bundled（不变量 833）
