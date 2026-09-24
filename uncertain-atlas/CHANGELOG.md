@@ -1,3 +1,7 @@
+## 2026-09-24（续 947）
+
+- 不变量 830；语料 C807；模式 name-the-prepfields-notprocess-bar；反模式 prepfields-notprocess-sold-as-bundled；L10.3 第 799 条。填 L4.4 / CometBFT 档案 Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process not already ran-process / not already finalize / not already settled 正式三事（359 余量） / 实现表 / 05b / 共识专题 / 停链面地图。359 prepare-fields vs same bundled unbundling 启动（830 item 1）。
+
 ## 2026-09-23（续 946）
 
 - 不变量 829；语料 C806；模式 name-the-nonrp-notsame-bar；反模式 nonrp-notsame-sold-as-bundled；L10.3 第 798 条。填 L4.4 / CometBFT 档案 要签原样数据可以用 non_rp 不是已经和 vote_extension 同一份 not already same-as-ve / not already empty-verify / not already settled 正式三事（358 余量） / 实现表 / 05b / 共识专题 / 停链面地图。358 nonrp vs wrapped bundled unbundling 完成（829 item 3）。
