@@ -1,3 +1,7 @@
+## 2026-09-24（续 967）
+
+- 不变量 850；语料 C827；模式 name-the-lane-notinblock-bar；反模式 lane-notinblock-sold-as-bundled；L10.3 第 819 条。填 L4.4 / CometBFT 档案 优先级 0 留给不设道不是已经进了块 not already in-block / not already removed / not already consensus-order 正式三事（367 余量） / 实现表 / 05b / 共识专题 / 停链面地图。367 lane-vs-priority bundled unbundling 完成（848+849+850 item 3）。
+
 ## 2026-09-24（续 966）
 
 - 不变量 849；语料 C826；模式 name-the-lane-notalgo-bar；反模式 lane-notalgo-sold-as-bundled；L10.3 第 818 条。填 L4.4 / CometBFT 档案 空表对空默认不是已经选型 not already algo / not already prioritized / not already in-block 正式三事（367 余量） / 实现表 / 05b / 共识专题 / 停链面地图。367 lane-vs-priority bundled unbundling 续（848+849 item 2）。
