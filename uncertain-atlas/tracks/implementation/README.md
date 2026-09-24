@@ -1,3 +1,4 @@
+- [`worked-example-lane-notalgo-vs-bundled.md`](worked-example-lane-notalgo-vs-bundled.md) — 空对空≠已选型/默认道在表里≠已排优先/对上了≠已进块；≠367 bundled（不变量 849）
 - [`worked-example-lane-notpriority-vs-bundled.md`](worked-example-lane-notpriority-vs-bundled.md) — 没填表≠已排优先/并成一条道≠已是CheckTx Priority/Info回了≠已交差；≠367 bundled（不变量 848）
 - [`worked-example-retain-notgenesis-vs-bundled.md`](worked-example-retain-notgenesis-vs-bundled.md) — 全网都删会永久丢≠已能从创世再装/开了state sync≠已能给轻客户端验/能丢≠已交差；≠366 bundled（不变量 847）
 - [`worked-example-retain-notdeleted-vs-bundled.md`](worked-example-retain-notdeleted-vs-bundled.md) — 能删≠已删完/回了高度≠已快照截断/能剪≠已没有历史；≠366 bundled（不变量 846）

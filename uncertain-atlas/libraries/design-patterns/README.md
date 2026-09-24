@@ -1,3 +1,4 @@
+- [`name-the-lane-notalgo-bar.md`](name-the-lane-notalgo-bar.md) — 空表对空默认不是已经选型 not already algo / not already prioritized / not already in-block 正式三事（367 余量）（不变量 849）
 - [`name-the-lane-notpriority-bar.md`](name-the-lane-notpriority-bar.md) — 没定义 lane_priorities 不是已经排了优先 not already prioritized / not already checktx-priority / not already settled 正式三事（367 余量）（不变量 848）
 - [`name-the-retain-notgenesis-bar.md`](name-the-retain-notgenesis-bar.md) — 全网都删了会永久丢不是已经能从创世再装 not already genesis-replay / not already light-check / not already settled 正式三事（366 余量）（不变量 847）
 - [`name-the-retain-notdeleted-bar.md`](name-the-retain-notdeleted-bar.md) — 低于这个高度的块可以被删不是已经没有历史 not already deleted / not already snapshot-trunc / not already no-history 正式三事（366 余量）（不变量 846）
