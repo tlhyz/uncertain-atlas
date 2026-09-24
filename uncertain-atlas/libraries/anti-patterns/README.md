@@ -1,3 +1,4 @@
+- [`valupdate-notset-sold-as-bundled.md`](valupdate-notset-sold-as-bundled.md) — 有公钥字段被写成已经是那份 Validator / 回了更新被写成已经改了集合 / 有 pub_key_type 被写成已经选型（不变量 841）
 - [`valnopub-notalgo-sold-as-bundled.md`](valnopub-notalgo-sold-as-bundled.md) — 省了字段被写成已经选型 / 提到后量子公钥被写成已经没有后量子钥 / ABCI 不传公钥被写成已经交差（不变量 840）
 - [`valaddr-notpubkey-sold-as-bundled.md`](valaddr-notpubkey-sold-as-bundled.md) — 有结构被写成已经带了公钥 / 有 address 被写成已经能验签 / 有 power 被写成已经是 ValidatorUpdate（不变量 839）
 - [`finwhen-notprinted-sold-as-bundled.md`](finwhen-notprinted-sold-as-bundled.md) — 回了被写成已经印进本头 / 有 ResultHash 被写成已经是本头 AppHash / 哈希了被写成已经交差（不变量 838）

@@ -1,3 +1,7 @@
+## 2026-09-24（续 958）
+
+- 不变量 841；语料 C818；模式 name-the-valupdate-notset-bar；反模式 valupdate-notset-sold-as-bundled；L10.3 第 810 条。填 L4.4 / CometBFT 档案 ValidatorUpdate 用公钥认人不是已经改了集合 not already same-val / not already changed-set / not already algo 正式三事（364 余量） / 实现表 / 05b / 共识专题 / 停链面地图。364 validator-vs-update bundled unbundling 完成（839+840+841 item 3）。
+
 ## 2026-09-24（续 957）
 
 - 不变量 840；语料 C817；模式 name-the-valnopub-notalgo-bar；反模式 valnopub-notalgo-sold-as-bundled；L10.3 第 809 条。填 L4.4 / CometBFT 档案 不带 PubKey 不是已经选型 not already algo / not already no-pq / not already settled 正式三事（364 余量） / 实现表 / 05b / 共识专题 / 停链面地图。364 validator-vs-update bundled unbundling 续（839+840 item 2）。
