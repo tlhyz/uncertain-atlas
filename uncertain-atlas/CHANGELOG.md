@@ -1,3 +1,7 @@
+## 2026-09-24（续 964）
+
+- 不变量 847；语料 C824；模式 name-the-retain-notgenesis-bar；反模式 retain-notgenesis-sold-as-bundled；L10.3 第 816 条。填 L4.4 / CometBFT 档案 全网都删了会永久丢不是已经能从创世再装 not already genesis-replay / not already light-check / not already settled 正式三事（366 余量） / 实现表 / 05b / 共识专题 / 停链面地图。366 retain-vs-kept bundled unbundling 完成（845+846+847 item 3）。
+
 ## 2026-09-24（续 963）
 
 - 不变量 846；语料 C823；模式 name-the-retain-notdeleted-bar；反模式 retain-notdeleted-sold-as-bundled；L10.3 第 815 条。填 L4.4 / CometBFT 档案 低于这个高度的块可以被删不是已经没有历史 not already deleted / not already snapshot-trunc / not already no-history 正式三事（366 余量） / 实现表 / 05b / 共识专题 / 停链面地图。366 retain-vs-kept bundled unbundling 续（845+846 item 2）。
