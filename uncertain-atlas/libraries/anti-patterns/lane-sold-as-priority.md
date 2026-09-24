@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [lane-notpriority-sold-as-bundled](lane-notpriority-sold-as-bundled.md) 是没定义 lane_priorities not already prioritized / not already checktx-priority / not already settled 正式三事（367 item 1），不是本页 bundled 全段 alone。
 - [checktxresponse-sold-as-exec](checktxresponse-sold-as-exec.md) 是 CheckTx 的 Priority 就已经是共识顺序，不是本页这种没定义 lane_priorities 不是已经排了优先。
 - [checktxstate-sold-as-execute](checktxstate-sold-as-execute.md) 是 CheckTxState 就已经是 ExecuteTxState，不是本页这种空表对空默认不是已经选型。
 - [proposed-sold-as-removed](proposed-sold-as-removed.md) 是提案收了就已经从池里删掉，不是本页这种优先级 0 留给不设道不是已经进了块。

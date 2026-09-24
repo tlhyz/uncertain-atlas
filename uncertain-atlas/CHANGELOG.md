@@ -1,3 +1,7 @@
+## 2026-09-24（续 965）
+
+- 不变量 848；语料 C825；模式 name-the-lane-notpriority-bar；反模式 lane-notpriority-sold-as-bundled；L10.3 第 817 条。填 L4.4 / CometBFT 档案 没定义 lane_priorities 不是已经排了优先 not already prioritized / not already checktx-priority / not already settled 正式三事（367 余量） / 实现表 / 05b / 共识专题 / 停链面地图。367 lane-vs-priority bundled unbundling 启动（848 item 1）。
+
 ## 2026-09-24（续 964）
 
 - 不变量 847；语料 C824；模式 name-the-retain-notgenesis-bar；反模式 retain-notgenesis-sold-as-bundled；L10.3 第 816 条。填 L4.4 / CometBFT 档案 全网都删了会永久丢不是已经能从创世再装 not already genesis-replay / not already light-check / not already settled 正式三事（366 余量） / 实现表 / 05b / 共识专题 / 停链面地图。366 retain-vs-kept bundled unbundling 完成（845+846+847 item 3）。

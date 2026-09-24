@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Info Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「没定义 lane_priorities 不是已经排了优先 / 空表对空默认不是已经选型 / 优先级 0 留给不设道不是已经进了块」，不是 CheckTx 的 Priority 就已经是共识顺序，也不是提案收了就已经从池里删掉。不要另写怎样写 Info 车道。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「没定义 lane_priorities 不是已经排了优先 / 空表对空默认不是已经选型 / 优先级 0 留给不设道不是已经进了块」，不是 CheckTx 的 Priority 就已经是共识顺序，也不是提案收了就已经从池里删掉。不要另写怎样写 Info 车道。367 lane-vs-priority bundled unbundling 启动（848）；精读 [`worked-example-lane-notpriority-vs-bundled.md`](worked-example-lane-notpriority-vs-bundled.md)（不变量 848 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Info 回了车道就已经排了优先、已经选型、已经进了块」，必须分开没定义 lane_priorities 是不是已经排了优先、空表对空默认是不是已经选型、优先级 0 留给不设道是不是已经进了块。可以跳过「看见 Info 回了车道就已经排了优先」。不要另写怎样写 Info 车道。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Info 回了车道就已经排了优先、已经选型、已经进了块」，必须分开没定义 lane_priorities 是不是已经排了优先、空表对空默认是不是已经选型、优先级 0 留给不设道是不是已经进了块。可以跳过「看见 Info 回了车道就已经排了优先」。不要另写怎样写 Info 车道。367 lane-vs-priority bundled unbundling 启动（848）。
 
 ## 本页不抄
 
