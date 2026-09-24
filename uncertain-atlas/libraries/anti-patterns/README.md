@@ -1,3 +1,4 @@
+- [`valaddr-notpubkey-sold-as-bundled.md`](valaddr-notpubkey-sold-as-bundled.md) — 有结构被写成已经带了公钥 / 有 address 被写成已经能验签 / 有 power 被写成已经是 ValidatorUpdate（不变量 839）
 - [`finwhen-notprinted-sold-as-bundled.md`](finwhen-notprinted-sold-as-bundled.md) — 回了被写成已经印进本头 / 有 ResultHash 被写成已经是本头 AppHash / 哈希了被写成已经交差（不变量 838）
 - [`finwhen-notpersist-sold-as-bundled.md`](finwhen-notpersist-sold-as-bundled.md) — 决定了被写成已经交差 / 先落了决定被写成已经落盘应用状态 / 是同步的被写成已经交差（不变量 837）
 - [`finwhen-notwillcall-sold-as-bundled.md`](finwhen-notwillcall-sold-as-bundled.md) — 到了这一高被写成已经会调 Finalize / 有提案被写成已经决定 / 规范写了 When 被写成已经交差（不变量 836）

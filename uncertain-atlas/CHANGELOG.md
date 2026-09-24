@@ -1,3 +1,7 @@
+## 2026-09-24（续 956）
+
+- 不变量 839；语料 C816；模式 name-the-valaddr-notpubkey-bar；反模式 valaddr-notpubkey-sold-as-bundled；L10.3 第 808 条。填 L4.4 / CometBFT 档案 Validator 用 address 认人不是已经带了公钥 not already pubkey / not already verify / not already update 正式三事（364 余量） / 实现表 / 05b / 共识专题 / 停链面地图。363 finalize-equiv / finresp bundled unbundling 完成（600+463+601）；364 validator-vs-update bundled unbundling 启动（839 item 1）。
+
 ## 2026-09-24（续 955）
 
 - 不变量 838；语料 C815；模式 name-the-finwhen-notprinted-bar；反模式 finwhen-notprinted-sold-as-bundled；L10.3 第 807 条。填 L4.4 / CometBFT 档案 应用回了 AppHash 和各笔输出引擎哈希进 ResultHash 不是已经印进本头 not already printed / not already header / not already settled 正式三事（362 余量） / 实现表 / 05b / 共识专题 / 停链面地图。362 finalize-when vs decided bundled unbundling 完成（836+837+838 item 3）。

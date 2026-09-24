@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Data Types Validator / ValidatorUpdate。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Validator 用 address 认人不是已经带了公钥 / 不带 PubKey 不是已经选型 / ValidatorUpdate 用公钥认人不是已经改了集合」，不是 H 的更新已经在 H+1 计票，也不是 InitChain 空名单就已经没有集合。不要另写怎样写 Validator 类型。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Validator 用 address 认人不是已经带了公钥 / 不带 PubKey 不是已经选型 / ValidatorUpdate 用公钥认人不是已经改了集合」，不是 H 的更新已经在 H+1 计票，也不是 InitChain 空名单就已经没有集合。不要另写怎样写 Validator 类型。364 validator-vs-update bundled unbundling 启动（839）；精读 [`worked-example-valaddr-notpubkey-vs-bundled.md`](worked-example-valaddr-notpubkey-vs-bundled.md)（不变量 839 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 VoteInfo 里有验证者就已经带了公钥、已经选型、已经改了集合」，必须分开 Validator 用 address 认人是不是已经带了公钥、不带 PubKey 是不是已经选型、ValidatorUpdate 用公钥认人是不是已经改了集合。可以跳过「看见 VoteInfo 里有验证者就已经带了公钥」。不要另写怎样写 Validator 类型。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 VoteInfo 里有验证者就已经带了公钥、已经选型、已经改了集合」，必须分开 Validator 用 address 认人是不是已经带了公钥、不带 PubKey 是不是已经选型、ValidatorUpdate 用公钥认人是不是已经改了集合。可以跳过「看见 VoteInfo 里有验证者就已经带了公钥」。不要另写怎样写 Validator 类型。364 validator-vs-update bundled unbundling 启动（839）。
 
 ## 本页不抄
 
