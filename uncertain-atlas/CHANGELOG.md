@@ -1,3 +1,7 @@
+## 2026-09-24（续 948）
+
+- 不变量 831；语料 C808；模式 name-the-prepfields-notthissigned-bar；反模式 prepfields-notthissigned-sold-as-bundled；L10.3 第 800 条。填 L4.4 / CometBFT 档案 local_last_commit 是上一高度的预提交带扩展不是已经是本高度刚签的扩展 not already this-signed / not already ve-at-h / not already settled 正式三事（359 余量） / 实现表 / 05b / 共识专题 / 停链面地图。359 prepare-fields vs same bundled unbundling 续（830+831 item 2）。
+
 ## 2026-09-24（续 947）
 
 - 不变量 830；语料 C807；模式 name-the-prepfields-notprocess-bar；反模式 prepfields-notprocess-sold-as-bundled；L10.3 第 799 条。填 L4.4 / CometBFT 档案 Prepare 和 Process / Finalize 同一套字段不是已经跑过 Process not already ran-process / not already finalize / not already settled 正式三事（359 余量） / 实现表 / 05b / 共识专题 / 停链面地图。359 prepare-fields vs same bundled unbundling 启动（830 item 1）。
