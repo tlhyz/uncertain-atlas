@@ -1,3 +1,4 @@
+- [`worked-example-extwhen-notlaterrevise-vs-bundled.md`](worked-example-extwhen-notlaterrevise-vs-bundled.md) — ExtendVote调用是同步的≠已能稍后改扩展/引擎在等≠已离开关键路径/回了≠已经交差；≠361 bundled（不变量 834）
 - [`worked-example-extwhen-notwillcall-vs-bundled.md`](worked-example-extwhen-notwillcall-vs-bundled.md) — +2/3 prevote才锁住再调ExtendVote≠已会调/有提案≠已锁住/规范写了When≠已经交差；≠361 bundled（不变量 833）
 - [`worked-example-prepfields-nothash-vs-bundled.md`](worked-example-prepfields-nothash-vs-bundled.md) — height/time/proposer_address对上拟议头≠已知道本头哈希/头上有这些≠已是ExecuteTxState/拟议头≠已经交差；≠359 bundled（不变量 832）
 - [`worked-example-prepfields-notthissigned-vs-bundled.md`](worked-example-prepfields-notthissigned-vs-bundled.md) — local_last_commit上一高预提交带扩展≠本高度刚签扩展/带了扩展≠已到H Prepare带扩展/能用上一高≠已经交差；≠359 bundled（不变量 831）
