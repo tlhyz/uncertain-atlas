@@ -19,6 +19,7 @@
 
 - [voteinfo-notslashed-sold-as-bundled](voteinfo-notslashed-sold-as-bundled.md) 是 VoteInfo 能按到场定奖惩 not already slashed / not already decided-commit / not already settled 正式三事（365 item 1），不是本页 bundled 全段 alone。
 - [voteinfo-notpubkey-sold-as-bundled](voteinfo-notpubkey-sold-as-bundled.md) 是从拟议块或已决块抽出 not already pubkey / not already update / not already changed-set 正式三事（365 item 2），不是本页 bundled 全段 alone。
+- [voteinfo-notinblock-sold-as-bundled](voteinfo-notinblock-sold-as-bundled.md) 是按投票权降序排 not already in-block / not already settled / not already slashed 正式三事（365 item 3），不是本页 bundled 全段 alone。
 - [finalizeequiv-sold-as-gates](finalizeequiv-sold-as-gates.md) 是必须回四列就已经改了集合，不是本页这种 VoteInfo 能按到场定奖惩不是已经罚没。
 - [validator-sold-as-update](validator-sold-as-update.md) 是 Validator 用 address 认人就已经带了公钥，不是本页这种从拟议块或已决块抽出不是已经带了公钥。
 - [state-sold-as-block](state-sold-as-block.md) 是本地 State 就已经进了块，不是本页这种按投票权降序排不是已经进了块。
