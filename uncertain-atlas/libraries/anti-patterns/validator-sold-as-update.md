@@ -19,6 +19,7 @@
 
 - [valaddr-notpubkey-sold-as-bundled](valaddr-notpubkey-sold-as-bundled.md) 是 Validator 用 address 认人 not already pubkey / not already verify / not already update 正式三事（364 item 1），不是本页 bundled 全段 alone。
 - [valnopub-notalgo-sold-as-bundled](valnopub-notalgo-sold-as-bundled.md) 是不带 PubKey not already algo / not already no-pq / not already settled 正式三事（364 item 2），不是本页 bundled 全段 alone。
+- [valupdate-notset-sold-as-bundled](valupdate-notset-sold-as-bundled.md) 是 ValidatorUpdate 用公钥认人 not already same-val / not already changed-set / not already algo 正式三事（364 item 3），不是本页 bundled 全段 alone。
 - [validator-update-sold-as-immediate](validator-update-sold-as-immediate.md) 是 H 的更新已经在 H+1 计票，不是本页这种 Validator 用 address 认人不是已经带了公钥。
 - [validatorupdate-sold-as-set](validatorupdate-sold-as-set.md) 是 InitChain 空名单就已经没有集合，不是本页这种不带 PubKey 不是已经选型。
 - [finalizeequiv-sold-as-gates](finalizeequiv-sold-as-gates.md) 是必须回四列就已经改了集合，不是本页这种 ValidatorUpdate 用公钥认人不是已经改了集合。
