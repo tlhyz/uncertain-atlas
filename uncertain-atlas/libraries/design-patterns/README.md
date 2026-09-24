@@ -1,3 +1,4 @@
+- [`name-the-voteinfo-notinblock-bar.md`](name-the-voteinfo-notinblock-bar.md) — 按投票权降序排不是已经进了块 not already in-block / not already settled / not already slashed 正式三事（365 余量）（不变量 844）
 - [`name-the-voteinfo-notpubkey-bar.md`](name-the-voteinfo-notpubkey-bar.md) — 从拟议块或已决块抽出不是已经带了公钥 not already pubkey / not already update / not already changed-set 正式三事（365 余量）（不变量 843）
 - [`name-the-voteinfo-notslashed-bar.md`](name-the-voteinfo-notslashed-bar.md) — VoteInfo 能按到场定奖惩不是已经罚没 not already slashed / not already decided-commit / not already settled 正式三事（365 余量）（不变量 842）
 - [`name-the-valupdate-notset-bar.md`](name-the-valupdate-notset-bar.md) — ValidatorUpdate 用公钥认人不是已经改了集合 not already same-val / not already changed-set / not already algo 正式三事（364 余量）（不变量 841）
