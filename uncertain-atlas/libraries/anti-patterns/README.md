@@ -1,3 +1,4 @@
+- [`snapident-notapphash-sold-as-bundled.md`](snapident-notapphash-sold-as-bundled.md) — 有哈希被写成已经轻验 AppHash / 有 format 被写成已经选型 / 比过了被写成已经从创世重放（不变量 852）
 - [`snapident-notrestored-sold-as-bundled.md`](snapident-notrestored-sold-as-bundled.md) — 对上了被写成已经装完 / 能拉被写成已经交差 / Metadata 在被写成已经齐（不变量 851）
 - [`lane-notinblock-sold-as-bundled.md`](lane-notinblock-sold-as-bundled.md) — 写了 0 被写成已经进了块 / 空 lane_id 被写成已经从池里删掉 / 有优先级被写成已经是共识顺序（不变量 850）
 - [`lane-notalgo-sold-as-bundled.md`](lane-notalgo-sold-as-bundled.md) — 空对空被写成已经选型 / 默认道在表里被写成已经排了优先 / 对上了被写成已经进了块（不变量 849）

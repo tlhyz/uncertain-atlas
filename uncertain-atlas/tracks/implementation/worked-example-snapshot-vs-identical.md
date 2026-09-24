@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Data Types Snapshot。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「快照全字段（含 Metadata）对上不是已经装完 / 引擎不解释 format / hash 不是已经轻验 AppHash / 空快照也至少 1 块不是已经齐」，不是 Offer 收下就已经装完，也不是 ListSnapshots 回了就已经齐。不要另写怎样写 Snapshot 类型。368 snapshot-vs-identical bundled unbundling 启动（851）；精读 [`worked-example-snapident-notrestored-vs-bundled.md`](worked-example-snapident-notrestored-vs-bundled.md)（不变量 851 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「快照全字段（含 Metadata）对上不是已经装完 / 引擎不解释 format / hash 不是已经轻验 AppHash / 空快照也至少 1 块不是已经齐」，不是 Offer 收下就已经装完，也不是 ListSnapshots 回了就已经齐。不要另写怎样写 Snapshot 类型。368 snapshot-vs-identical bundled unbundling 续（851+852）；精读 [`worked-example-snapident-notrestored-vs-bundled.md`](worked-example-snapident-notrestored-vs-bundled.md)（不变量 851 item 1）；精读 [`worked-example-snapident-notapphash-vs-bundled.md`](worked-example-snapident-notapphash-vs-bundled.md)（不变量 852 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见快照对上就已经装完、已经轻验 AppHash、已经齐」，必须分开全字段（含 Metadata）对上是不是已经装完、引擎不解释 format / hash 是不是已经轻验 AppHash、空快照也至少 1 块是不是已经齐。可以跳过「看见快照对上就已经装完」。不要另写怎样写 Snapshot 类型。368 snapshot-vs-identical bundled unbundling 启动（851）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见快照对上就已经装完、已经轻验 AppHash、已经齐」，必须分开全字段（含 Metadata）对上是不是已经装完、引擎不解释 format / hash 是不是已经轻验 AppHash、空快照也至少 1 块是不是已经齐。可以跳过「看见快照对上就已经装完」。不要另写怎样写 Snapshot 类型。368 snapshot-vs-identical bundled unbundling 续（851+852）。
 
 ## 本页不抄
 

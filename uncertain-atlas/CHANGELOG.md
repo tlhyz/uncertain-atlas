@@ -1,3 +1,7 @@
+## 2026-09-24（续 969）
+
+- 不变量 852；语料 C829；模式 name-the-snapident-notapphash-bar；反模式 snapident-notapphash-sold-as-bundled；L10.3 第 821 条。填 L4.4 / CometBFT 档案 引擎不解释 format / hash 不是已经轻验 AppHash not already apphash-light / not already algo / not already genesis-replay 正式三事（368 余量） / 实现表 / 05b / 共识专题 / 停链面地图。368 snapshot-vs-identical bundled unbundling 续（851+852 item 2）。
+
 ## 2026-09-24（续 968）
 
 - 不变量 851；语料 C828；模式 name-the-snapident-notrestored-bar；反模式 snapident-notrestored-sold-as-bundled；L10.3 第 820 条。填 L4.4 / CometBFT 档案 快照全字段含 Metadata 对上不是已经装完 not already restored / not already settled / not already complete 正式三事（368 余量） / 实现表 / 05b / 共识专题 / 停链面地图。368 snapshot-vs-identical bundled unbundling 启动（851 item 1）。
