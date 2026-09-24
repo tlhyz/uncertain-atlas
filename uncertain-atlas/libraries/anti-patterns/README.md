@@ -1,3 +1,4 @@
+- [`extwhen-notwillcall-sold-as-bundled.md`](extwhen-notwillcall-sold-as-bundled.md) — 到了 prevote 步被写成已经会调 ExtendVote / 有提案被写成已经锁住 / 规范写了 When 被写成已经交差（不变量 833）
 - [`prepfields-nothash-sold-as-bundled.md`](prepfields-nothash-sold-as-bundled.md) — 对得上被写成已经知道本头哈希 / 头上有这些被写成已经是 ExecuteTxState / 拟议头被写成已经交差（不变量 832）
 - [`prepfields-notthissigned-sold-as-bundled.md`](prepfields-notthissigned-sold-as-bundled.md) — 有上一高的票被写成已经是本高度刚签的扩展 / 带了扩展被写成已经到了 H 就已经 Prepare 带了扩展 / 能用上一高被写成已经交差（不变量 831）
 - [`prepfields-notprocess-sold-as-bundled.md`](prepfields-notprocess-sold-as-bundled.md) — 字段名对得上被写成已经跑过 Process / 同一套被写成已经 Finalize / 请求在被写成已经交差（不变量 830）

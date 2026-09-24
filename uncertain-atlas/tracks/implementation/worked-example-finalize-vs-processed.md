@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) FinalizeBlock Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「引擎保证至少一名非拜占庭验证者对这块跑过 Process 不是已经每个验证者都跑过 Process / Finalize 请求把字段再填一遍不是已经不用再给 / 可以套用先前 Prepare / Process 的候选不是已经是 ExecuteTxState」，不是 Process 也会在提议者那边叫，也不是 Prepare 和 Process / Finalize 同一套字段就已经跑过 Process。不要另写怎样写 Finalize。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「引擎保证至少一名非拜占庭验证者对这块跑过 Process 不是已经每个验证者都跑过 Process / Finalize 请求把字段再填一遍不是已经不用再给 / 可以套用先前 Prepare / Process 的候选不是已经是 ExecuteTxState」，不是 Process 也会在提议者那边叫，也不是 Prepare 和 Process / Finalize 同一套字段就已经跑过 Process。不要另写怎样写 Finalize。360 finalize-vs-processed bundled unbundling 完成（582+583+584）；精读 [`worked-example-finprocgua-notallproc-vs-bundled.md`](worked-example-finprocgua-notallproc-vs-bundled.md)（不变量 582 item 1）；精读 [`worked-example-finprocgua-notrefill-vs-bundled.md`](worked-example-finprocgua-notrefill-vs-bundled.md)（不变量 583 item 2）；精读 [`worked-example-finprocgua-notcand-vs-bundled.md`](worked-example-finprocgua-notcand-vs-bundled.md)（不变量 584 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见要 Finalize 了就已经每个验证者都跑过 Process、已经不用再给、已经是 ExecuteTxState」，必须分开至少一名非拜占庭验证者跑过 Process 是不是已经每个验证者都跑过 Process、Finalize 请求把字段再填一遍是不是已经不用再给、可以套用先前候选是不是已经是 ExecuteTxState。可以跳过「看见要 Finalize 了就已经每个验证者都跑过 Process」。不要另写怎样写 Finalize。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见要 Finalize 了就已经每个验证者都跑过 Process、已经不用再给、已经是 ExecuteTxState」，必须分开至少一名非拜占庭验证者跑过 Process 是不是已经每个验证者都跑过 Process、Finalize 请求把字段再填一遍是不是已经不用再给、可以套用先前候选是不是已经是 ExecuteTxState。可以跳过「看见要 Finalize 了就已经每个验证者都跑过 Process」。不要另写怎样写 Finalize。360 finalize-vs-processed bundled unbundling 完成（582+583+584）。
 
 ## 本页不抄
 
