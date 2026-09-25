@@ -1,3 +1,7 @@
+## 2026-09-25（续 989）
+
+- 不变量 872；语料 C849；模式 name-the-loadchunk-notcomplete-bar；反模式 loadchunk-notcomplete-sold-as-bundled；L10.3 第 841 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk 用来从邻居拉快照块不是已经齐 not already complete / not already all / not already restored 正式三事（375 余量） / 实现表 / 05b / 共识专题 / 停链面地图。375 loadchunk-vs-retrieved bundled unbundling 启动（872 item 1）。
+
 ## 2026-09-25（续 988）
 
 - 不变量 871；语料 C848；模式 name-the-flush-notproceed-bar；反模式 flush-notproceed-sold-as-bundled；L10.3 第 840 条。填 L4.4 / CometBFT 档案 立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走 not already proceed / not already commit / not already unlocked 正式三事（374 余量） / 实现表 / 05b / 共识专题 / 停链面地图。374 flush-vs-sent bundled unbundling 完成（869+870+871 item 3）。

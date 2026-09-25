@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [loadchunk-notcomplete-sold-as-bundled](loadchunk-notcomplete-sold-as-bundled.md) 是 LoadSnapshotChunk 用来从邻居拉快照块不是已经齐 not already complete / not already all / not already restored 正式三事（375 item 1），不是本页 bundled 全段 alone。
 - [snapshotdiscover-sold-as-listed](snapshotdiscover-sold-as-listed.md) 是 ListSnapshots 回了就已经齐，不是本页这种 LoadSnapshotChunk 用来从邻居拉快照块不是已经齐。
 - [snapshot-sold-as-identical](snapshot-sold-as-identical.md) 是全字段（含 Metadata）对上就已经装完，不是本页这种请求用 height / format / chunk（从 0 起）认这块不是已经是同一份。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下就已经装完，不是本页这种回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB。
