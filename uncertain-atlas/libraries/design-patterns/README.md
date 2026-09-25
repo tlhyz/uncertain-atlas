@@ -1,3 +1,4 @@
+- [`name-the-queryheight-notfresh-bar.md`](name-the-queryheight-notfresh-bar.md) — height 默认 0 回最新已提交不是已经新鲜 not already fresh / not already caught-up / not already info-handshake 正式三事（371 余量）（不变量 861）
 - [`name-the-queryheight-notquerystate-bar.md`](name-the-queryheight-notquerystate-bar.md) — Query 可以对当前或过去高度查不是已经是 QueryState not already querystate / not already replicated / not already settled 正式三事（371 余量）（不变量 860）
 - [`name-the-info-notpersist-bar.md`](name-the-info-notpersist-bar.md) — last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差 not already settled / not already crash-commit / not already pruning 正式三事（370 余量）（不变量 859）
 - [`name-the-info-notapphash-bar.md`](name-the-info-notapphash-bar.md) — app_version 进每块头不是已经印进本头 AppHash not already apphash / not already settled / not already algo 正式三事（370 余量）（不变量 858）
