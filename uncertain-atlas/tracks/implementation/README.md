@@ -1,3 +1,4 @@
+- [`worked-example-misbehavior-notverified-vs-bundled.md`](worked-example-misbehavior-notverified-vs-bundled.md) — 有高度≠已验过票上时间/有时间≠已交差/对上高度≠已是本高+2/3；≠372 bundled（不变量 864）
 - [`worked-example-misbehavior-notslashed-vs-bundled.md`](worked-example-misbehavior-notslashed-vs-bundled.md) — 有类型≠已罚没/写成双签≠已交差/枚举在≠已定奖惩；≠372 bundled（不变量 863）
 - [`worked-example-queryheight-notapphash-vs-bundled.md`](worked-example-queryheight-notapphash-vs-bundled.md) — 填了高度≠已印进本头AppHash/有根≠已对上Proof/Height-1≠已是本高度交差；≠371 bundled（不变量 862）
 - [`worked-example-queryheight-notfresh-vs-bundled.md`](worked-example-queryheight-notfresh-vs-bundled.md) — 没填≠已新鲜/回了最新已提交≠已跟上尖/默认0≠已是Info握手那两列；≠371 bundled（不变量 861）
