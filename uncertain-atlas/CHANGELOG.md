@@ -1,3 +1,7 @@
+## 2026-09-25（续 986）
+
+- 不变量 869；语料 C846；模式 name-the-flush-notsent-bar；反模式 flush-notsent-sold-as-bundled；L10.3 第 838 条。填 L4.4 / CometBFT 档案 Flush 要把客户端排队的消息冲到服务端不是已经送到 not already sent / not already queued / not already disconnected 正式三事（374 余量） / 实现表 / 05b / 共识专题 / 停链面地图。374 flush-vs-sent bundled unbundling 启动（869 item 1）。
+
 ## 2026-09-25（续 985）
 
 - 不变量 868；语料 C845；模式 name-the-checktxopt-notused-bar；反模式 checktxopt-notused-sold-as-bundled；L10.3 第 837 条。填 L4.4 / CometBFT 档案 引擎对回包码不再赋予别的含义不是已经被引擎用了 Data not already used / not already consensus / not already fork 正式三事（373 余量） / 实现表 / 05b / 共识专题 / 停链面地图。373 checktxopt-vs-block bundled unbundling 完成（866+867+868 item 3）。

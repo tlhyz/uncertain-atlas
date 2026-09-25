@@ -1,3 +1,4 @@
+- [`flush-notsent-sold-as-bundled.md`](flush-notsent-sold-as-bundled.md) — 叫了被写成已经送到 / 在冲被写成已经入队 / 排队了被写成已经断开（不变量 869）
 - [`checktxopt-notused-sold-as-bundled.md`](checktxopt-notused-sold-as-bundled.md) — 有码被写成已经被引擎用了 Data / 码在被写成已经是共识顺序 / 拒了被写成已经分叉（不变量 868）
 - [`checktxopt-notexcluded-sold-as-bundled.md`](checktxopt-notexcluded-sold-as-bundled.md) — 拒了被写成已经没进块 / 没广播被写成已经挡住拜占庭 / 没进提案被写成已经交差（不变量 867）
 - [`checktxopt-notfourgates-sold-as-bundled.md`](checktxopt-notfourgates-sold-as-bundled.md) — 能回被写成已经是四门已经结算 / 可选被写成已经交差 / 没参与处理块被写成已经从池里删掉（不变量 866）
