@@ -1,3 +1,4 @@
+- [`worked-example-loadchunk-notcomplete-vs-bundled.md`](worked-example-loadchunk-notcomplete-vs-bundled.md) — 在拉≠已齐/问了邻居≠已有全部快照/能拉≠已装完；≠375 bundled（不变量 872）
 - [`worked-example-flush-notproceed-vs-bundled.md`](worked-example-flush-notproceed-vs-bundled.md) — 立刻叫了≠已能往下走/回包回来≠已Commit/同步了≠已解锁；≠374 bundled（不变量 871）
 - [`worked-example-flush-notfourgates-vs-bundled.md`](worked-example-flush-notfourgates-vs-bundled.md) — 定期在冲≠已是四门/发出去了≠已收到/异步≠已交差；≠374 bundled（不变量 870）
 - [`worked-example-flush-notsent-vs-bundled.md`](worked-example-flush-notsent-vs-bundled.md) — 叫了≠已送到/在冲≠已入队/排队了≠已断开；≠374 bundled（不变量 869）
