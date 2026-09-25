@@ -1,3 +1,7 @@
+## 2026-09-25（续 992）
+
+- 不变量 875；语料 C852；模式 name-the-proposalstatus-notfourgates-bar；反模式 proposalstatus-notfourgates-sold-as-bundled；L10.3 第 844 条。填 L4.4 / CometBFT 档案 UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算 not already fourgates / not already settled / not already selected 正式三事（376 余量） / 实现表 / 05b / 共识专题 / 停链面地图。376 proposalstatus-vs-prevote bundled unbundling 启动（875 item 1）。
+
 ## 2026-09-25（续 991）
 
 - 不变量 874；语料 C851；模式 name-the-loadchunk-not4mb-bar；反模式 loadchunk-not4mb-sold-as-bundled；L10.3 第 843 条。填 L4.4 / CometBFT 档案 回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB not already 4mb / not already constant / not already restored 正式三事（375 余量） / 实现表 / 05b / 共识专题 / 停链面地图。375 loadchunk-vs-retrieved bundled unbundling 完成（872+873+874 item 3）。
