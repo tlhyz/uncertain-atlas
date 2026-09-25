@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [queryheight-notquerystate-sold-as-bundled](queryheight-notquerystate-sold-as-bundled.md) 是 Query 可以对当前或过去高度查不是已经是 QueryState not already querystate / not already replicated / not already settled not already querystate / not already replicated / not already settled 正式三事（371 item 1），不是本页 bundled 全段 alone。
 - [query-sold-as-replicated](query-sold-as-replicated.md) 是 Query 回了就已经复制到各节点，不是本页这种 Query 可以对当前或过去高度查不是已经是 QueryState。
 - [apphash-sold-as-this-block](apphash-sold-as-this-block.md) 是本头 AppHash 就已经是本高度交差，不是本页这种 height 默认 0 回最新已提交不是已经新鲜。
 - [queryproof-sold-as-apphash](queryproof-sold-as-apphash.md) 是 Query 回了 Proof 就已经对上 AppHash，不是本页这种这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态不是已经印进本头 AppHash。
