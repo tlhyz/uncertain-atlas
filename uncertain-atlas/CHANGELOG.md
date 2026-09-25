@@ -1,3 +1,7 @@
+## 2026-09-25（续 984）
+
+- 不变量 867；语料 C844；模式 name-the-checktxopt-notexcluded-bar；反模式 checktxopt-notexcluded-sold-as-bundled；L10.3 第 836 条。填 L4.4 / CometBFT 档案 Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块 not already excluded / not already blocked / not already settled 正式三事（373 余量） / 实现表 / 05b / 共识专题 / 停链面地图。373 checktxopt-vs-block bundled unbundling 续（866+867 item 2）。
+
 ## 2026-09-25（续 983）
 
 - 不变量 866；语料 C843；模式 name-the-checktxopt-notfourgates-bar；反模式 checktxopt-notfourgates-sold-as-bundled；L10.3 第 835 条。填 L4.4 / CometBFT 档案 CheckTx 技术上可选、不参与处理块不是已经是四门已经结算 not already fourgates / not already settled / not already removed 正式三事（373 余量） / 实现表 / 05b / 共识专题 / 停链面地图。373 checktxopt-vs-block bundled unbundling 启动（866 item 1）。

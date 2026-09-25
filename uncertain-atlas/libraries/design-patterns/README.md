@@ -1,3 +1,4 @@
+- [`name-the-checktxopt-notexcluded-bar.md`](name-the-checktxopt-notexcluded-bar.md) — Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块 not already excluded / not already blocked / not already settled 正式三事（373 余量）（不变量 867）
 - [`name-the-checktxopt-notfourgates-bar.md`](name-the-checktxopt-notfourgates-bar.md) — CheckTx 技术上可选、不参与处理块不是已经是四门已经结算 not already fourgates / not already settled / not already removed 正式三事（373 余量）（不变量 866）
 - [`name-the-misbehavior-notrewarded-bar.md`](name-the-misbehavior-notrewarded-bar.md) — total_voting_power 是那一高验证者集合的总权不是已经按到场定奖惩 not already rewarded / not already setchanged / not already slashed 正式三事（372 余量）（不变量 865）
 - [`name-the-misbehavior-notverified-bar.md`](name-the-misbehavior-notverified-bar.md) — height 是过错发生的高度、time 是那一高已提交块的时间不是已经验过这个时间 not already verified / not already settled / not already plus23 正式三事（372 余量）（不变量 864）

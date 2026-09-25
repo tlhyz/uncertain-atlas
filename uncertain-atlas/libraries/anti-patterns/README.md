@@ -1,3 +1,4 @@
+- [`checktxopt-notexcluded-sold-as-bundled.md`](checktxopt-notexcluded-sold-as-bundled.md) — 拒了被写成已经没进块 / 没广播被写成已经挡住拜占庭 / 没进提案被写成已经交差（不变量 867）
 - [`checktxopt-notfourgates-sold-as-bundled.md`](checktxopt-notfourgates-sold-as-bundled.md) — 能回被写成已经是四门已经结算 / 可选被写成已经交差 / 没参与处理块被写成已经从池里删掉（不变量 866）
 - [`misbehavior-notrewarded-sold-as-bundled.md`](misbehavior-notrewarded-sold-as-bundled.md) — 有总权被写成已经按到场定奖惩 / 填了权被写成已经改了集合 / 有集合被写成已经罚没（不变量 865）
 - [`misbehavior-notverified-sold-as-bundled.md`](misbehavior-notverified-sold-as-bundled.md) — 有高度被写成已经验过票上的时间 / 有时间被写成已经交差 / 对上高度被写成已经是本高 +2/3（不变量 864）
