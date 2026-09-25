@@ -1,3 +1,7 @@
+## 2026-09-25（续 979）
+
+- 不变量 862；语料 C839；模式 name-the-queryheight-notapphash-bar；反模式 queryheight-notapphash-sold-as-bundled；L10.3 第 831 条。填 L4.4 / CometBFT 档案 这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态不是已经印进本头 AppHash not already apphash / not already proof / not already settled 正式三事（371 余量） / 实现表 / 05b / 共识专题 / 停链面地图。371 queryheight-vs-committed bundled unbundling 完成（860+861+862 item 3）。
+
 ## 2026-09-25（续 978）
 
 - 不变量 861；语料 C838；模式 name-the-queryheight-notfresh-bar；反模式 queryheight-notfresh-sold-as-bundled；L10.3 第 830 条。填 L4.4 / CometBFT 档案 height 默认 0 回最新已提交不是已经新鲜 not already fresh / not already caught-up / not already info-handshake 正式三事（371 余量） / 实现表 / 05b / 共识专题 / 停链面地图。371 queryheight-vs-committed bundled unbundling 续（860+861 item 2）。

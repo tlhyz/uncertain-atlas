@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Query Request。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Query 可以对当前或过去高度查不是已经是 QueryState / height 默认 0 回最新已提交不是已经新鲜 / 这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态不是已经印进本头 AppHash」，不是 Query 回了就已经复制到各节点，也不是 Query 回了 Proof 就已经对上 AppHash。不要另写怎样写 Query 高度。371 queryheight-vs-committed bundled unbundling 续（860+861）；精读 [`worked-example-queryheight-notquerystate-vs-bundled.md`](worked-example-queryheight-notquerystate-vs-bundled.md)（不变量 860 item 1）；精读 [`worked-example-queryheight-notfresh-vs-bundled.md`](worked-example-queryheight-notfresh-vs-bundled.md)（不变量 861 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Query 可以对当前或过去高度查不是已经是 QueryState / height 默认 0 回最新已提交不是已经新鲜 / 这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态不是已经印进本头 AppHash」，不是 Query 回了就已经复制到各节点，也不是 Query 回了 Proof 就已经对上 AppHash。不要另写怎样写 Query 高度。371 queryheight-vs-committed bundled unbundling 完成（860+861+862）；精读 [`worked-example-queryheight-notquerystate-vs-bundled.md`](worked-example-queryheight-notquerystate-vs-bundled.md)（不变量 860 item 1）；精读 [`worked-example-queryheight-notfresh-vs-bundled.md`](worked-example-queryheight-notfresh-vs-bundled.md)（不变量 861 item 2）；精读 [`worked-example-queryheight-notapphash-vs-bundled.md`](worked-example-queryheight-notapphash-vs-bundled.md)（不变量 862 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能查就已经是 QueryState、已经新鲜、已经印进本头 AppHash」，必须分开 Query 可以对当前或过去高度查是不是已经是 QueryState、height 默认 0 回最新已提交是不是已经新鲜、这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态是不是已经印进本头 AppHash。可以跳过「看见能查就已经是 QueryState」。不要另写怎样写 Query 高度。371 queryheight-vs-committed bundled unbundling 续（860+861）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能查就已经是 QueryState、已经新鲜、已经印进本头 AppHash」，必须分开 Query 可以对当前或过去高度查是不是已经是 QueryState、height 默认 0 回最新已提交是不是已经新鲜、这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态是不是已经印进本头 AppHash。可以跳过「看见能查就已经是 QueryState」。不要另写怎样写 Query 高度。371 queryheight-vs-committed bundled unbundling 完成（860+861+862）。
 
 ## 本页不抄
 

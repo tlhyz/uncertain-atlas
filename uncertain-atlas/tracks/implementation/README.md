@@ -1,3 +1,4 @@
+- [`worked-example-queryheight-notapphash-vs-bundled.md`](worked-example-queryheight-notapphash-vs-bundled.md) — 填了高度≠已印进本头AppHash/有根≠已对上Proof/Height-1≠已是本高度交差；≠371 bundled（不变量 862）
 - [`worked-example-queryheight-notfresh-vs-bundled.md`](worked-example-queryheight-notfresh-vs-bundled.md) — 没填≠已新鲜/回了最新已提交≠已跟上尖/默认0≠已是Info握手那两列；≠371 bundled（不变量 861）
 - [`worked-example-queryheight-notquerystate-vs-bundled.md`](worked-example-queryheight-notquerystate-vs-bundled.md) — 能查≠已是QueryState/填了高度≠已复制到各节点/能回≠已交差；≠371 bundled（不变量 860）
 - [`worked-example-info-notpersist-vs-bundled.md`](worked-example-info-notpersist-vs-bundled.md) — 回了这两列≠已交差/要在Commit里落≠已是崩溃三步Commit/有高度≠已在剪；≠370 bundled（不变量 859）
