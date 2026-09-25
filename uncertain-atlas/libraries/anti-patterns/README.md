@@ -1,3 +1,4 @@
+- [`info-notpersist-sold-as-bundled.md`](info-notpersist-sold-as-bundled.md) — 回了这两列被写成已经交差 / 要在 Commit 里落被写成已经是崩溃三步已经 Commit / 有高度被写成已经在剪（不变量 859）
 - [`info-notapphash-sold-as-bundled.md`](info-notapphash-sold-as-bundled.md) — 有版本被写成已经印进本头 AppHash / 进了头被写成已经是本高度交差 / 字段在被写成已经选型（不变量 858）
 - [`info-notstatesync-sold-as-bundled.md`](info-notstatesync-sold-as-bundled.md) — 能回被写成已经是快照重放 / 握手了被写成已经是 QueryState / 对齐了被写成已经交差（不变量 857）
 - [`extvoteinfo-notveheight-sold-as-bundled.md`](extvoteinfo-notveheight-sold-as-bundled.md) — 空着被写成已经到了启用高度 / 关掉了被写成已经交差 / 字段在被写成已经从块里抽出（不变量 856）

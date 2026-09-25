@@ -1,3 +1,4 @@
+- [`worked-example-info-notpersist-vs-bundled.md`](worked-example-info-notpersist-vs-bundled.md) — 回了这两列≠已交差/要在Commit里落≠已是崩溃三步Commit/有高度≠已在剪；≠370 bundled（不变量 859）
 - [`worked-example-info-notapphash-vs-bundled.md`](worked-example-info-notapphash-vs-bundled.md) — 有版本≠已印进本头AppHash/进了头≠已是本高度交差/字段在≠已选型；≠370 bundled（不变量 858）
 - [`worked-example-info-notstatesync-vs-bundled.md`](worked-example-info-notstatesync-vs-bundled.md) — 能回≠已是快照重放/握手了≠已是QueryState/对齐了≠已交差；≠370 bundled（不变量 857）
 - [`worked-example-extvoteinfo-notveheight-vs-bundled.md`](worked-example-extvoteinfo-notveheight-vs-bundled.md) — 空着≠已到启用高度/关掉了≠已交差/字段在≠已从块抽出；≠369 bundled（不变量 856）

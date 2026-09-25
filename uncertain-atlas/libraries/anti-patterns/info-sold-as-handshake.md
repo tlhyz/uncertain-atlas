@@ -19,6 +19,7 @@
 
 - [info-notstatesync-sold-as-bundled](info-notstatesync-sold-as-bundled.md) 是 Info 用来握手对齐不是已经是快照重放 not already statesync / not already querystate / not already settled not already statesync / not already querystate / not already settled 正式三事（370 item 1），不是本页 bundled 全段 alone。
 - [info-notapphash-sold-as-bundled](info-notapphash-sold-as-bundled.md) 是 app_version 进每块头不是已经印进本头 AppHash not already apphash / not already settled / not already algo not already apphash / not already settled / not already algo 正式三事（370 item 2），不是本页 bundled 全段 alone。
+- [info-notpersist-sold-as-bundled](info-notpersist-sold-as-bundled.md) 是 last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差 not already settled / not already crash-commit / not already pruning not already settled / not already crash-commit / not already pruning 正式三事（370 item 3），不是本页 bundled 全段 alone。
 - [querystate-sold-as-execute](querystate-sold-as-execute.md) 是 QueryState 就已经是 ExecuteTxState，不是本页这种 Info 用来握手对齐不是已经是快照重放。
 - [apphash-sold-as-this-block](apphash-sold-as-this-block.md) 是本头 AppHash 就已经是本高度交差，不是本页这种 app_version 进每块头不是已经印进本头 AppHash。
 - [crashsteps-sold-as-committed](crashsteps-sold-as-committed.md) 是崩溃三步就已经 Commit，不是本页这种 last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差。
