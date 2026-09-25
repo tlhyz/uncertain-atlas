@@ -1,3 +1,4 @@
+- [`queryheight-notfresh-sold-as-bundled.md`](queryheight-notfresh-sold-as-bundled.md) — 没填被写成已经新鲜 / 回了最新已提交被写成已经跟上正在跑的块 / 默认 0 被写成已经是 Info 握手那两列（不变量 861）
 - [`queryheight-notquerystate-sold-as-bundled.md`](queryheight-notquerystate-sold-as-bundled.md) — 能查被写成已经是 QueryState / 填了高度被写成已经复制到各节点 / 能回被写成已经交差（不变量 860）
 - [`info-notpersist-sold-as-bundled.md`](info-notpersist-sold-as-bundled.md) — 回了这两列被写成已经交差 / 要在 Commit 里落被写成已经是崩溃三步已经 Commit / 有高度被写成已经在剪（不变量 859）
 - [`info-notapphash-sold-as-bundled.md`](info-notapphash-sold-as-bundled.md) — 有版本被写成已经印进本头 AppHash / 进了头被写成已经是本高度交差 / 字段在被写成已经选型（不变量 858）
