@@ -1,3 +1,7 @@
+## 2026-09-25（续 974）
+
+- 不变量 857；语料 C834；模式 name-the-info-notstatesync-bar；反模式 info-notstatesync-sold-as-bundled；L10.3 第 826 条。填 L4.4 / CometBFT 档案 Info 用来握手对齐不是已经是快照重放 not already statesync / not already querystate / not already settled 正式三事（370 余量） / 实现表 / 05b / 共识专题 / 停链面地图。370 info-vs-handshake bundled unbundling 启动（857 item 1）。
+
 ## 2026-09-25（续 973）
 
 - 不变量 856；语料 C833；模式 name-the-extvoteinfo-notveheight-bar；反模式 extvoteinfo-notveheight-sold-as-bundled；L10.3 第 825 条。填 L4.4 / CometBFT 档案 扩展关掉则字段全空不是已经到了启用高度 not already ve-height / not already settled / not already from-block 正式三事（369 余量） / 实现表 / 05b / 共识专题 / 停链面地图。369 extvoteinfo-vs-local bundled unbundling 完成（854+855+856 item 3）。

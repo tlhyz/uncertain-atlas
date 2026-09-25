@@ -1,3 +1,4 @@
+- [`info-notstatesync-sold-as-bundled.md`](info-notstatesync-sold-as-bundled.md) — 能回被写成已经是快照重放 / 握手了被写成已经是 QueryState / 对齐了被写成已经交差（不变量 857）
 - [`extvoteinfo-notveheight-sold-as-bundled.md`](extvoteinfo-notveheight-sold-as-bundled.md) — 空着被写成已经到了启用高度 / 关掉了被写成已经交差 / 字段在被写成已经从块里抽出（不变量 856）
 - [`extvoteinfo-notraw-sold-as-bundled.md`](extvoteinfo-notraw-sold-as-bundled.md) — 有签被写成已经按原样签 / 交给应用被写成已经有重放保护 / 签了空切片被写成已经必须填（不变量 855）
 - [`extvoteinfo-notfromblock-sold-as-bundled.md`](extvoteinfo-notfromblock-sold-as-bundled.md) — Prepare 里有这份被写成已经从块里抽出 / 有 ExtendedVoteInfo.validator 被写成已经带了公钥 / 能抽被写成已经交差（不变量 854）
