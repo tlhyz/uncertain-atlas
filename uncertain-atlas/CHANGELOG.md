@@ -1,3 +1,7 @@
+## 2026-09-25（续 983）
+
+- 不变量 866；语料 C843；模式 name-the-checktxopt-notfourgates-bar；反模式 checktxopt-notfourgates-sold-as-bundled；L10.3 第 835 条。填 L4.4 / CometBFT 档案 CheckTx 技术上可选、不参与处理块不是已经是四门已经结算 not already fourgates / not already settled / not already removed 正式三事（373 余量） / 实现表 / 05b / 共识专题 / 停链面地图。373 checktxopt-vs-block bundled unbundling 启动（866 item 1）。
+
 ## 2026-09-25（续 982）
 
 - 不变量 865；语料 C842；模式 name-the-misbehavior-notrewarded-bar；反模式 misbehavior-notrewarded-sold-as-bundled；L10.3 第 834 条。填 L4.4 / CometBFT 档案 total_voting_power 是那一高验证者集合的总权不是已经按到场定奖惩 not already rewarded / not already setchanged / not already slashed 正式三事（372 余量） / 实现表 / 05b / 共识专题 / 停链面地图。372 misbehavior-vs-enum bundled unbundling 完成（863+864+865 item 3）。
