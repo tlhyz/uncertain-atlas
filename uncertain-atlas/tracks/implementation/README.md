@@ -1,3 +1,4 @@
+- [`worked-example-extvoteinfo-notveheight-vs-bundled.md`](worked-example-extvoteinfo-notveheight-vs-bundled.md) — 空着≠已到启用高度/关掉了≠已交差/字段在≠已从块抽出；≠369 bundled（不变量 856）
 - [`worked-example-extvoteinfo-notraw-vs-bundled.md`](worked-example-extvoteinfo-notraw-vs-bundled.md) — 有签≠已按原样签/交给应用≠已有重放保护/签了空切片≠已必须填；≠369 bundled（不变量 855）
 - [`worked-example-extvoteinfo-notfromblock-vs-bundled.md`](worked-example-extvoteinfo-notfromblock-vs-bundled.md) — Prepare里有这份≠已从块抽出/有validator≠已带公钥/能抽≠已交差；≠369 bundled（不变量 854）
 - [`worked-example-snapident-notcomplete-vs-bundled.md`](worked-example-snapident-notcomplete-vs-bundled.md) — 写成1≠已齐/有上限≠已是共识常数/能发≠已装完；≠368 bundled（不变量 853）

@@ -1,3 +1,4 @@
+- [`name-the-extvoteinfo-notveheight-bar.md`](name-the-extvoteinfo-notveheight-bar.md) — 扩展关掉则字段全空不是已经到了启用高度 not already ve-height / not already settled / not already from-block 正式三事（369 余量）（不变量 856）
 - [`name-the-extvoteinfo-notraw-bar.md`](name-the-extvoteinfo-notraw-bar.md) — 把验过的签交给应用不是已经按原样签 not already raw / not already protected / not already must-fill 正式三事（369 余量）（不变量 855）
 - [`name-the-extvoteinfo-notfromblock-bar.md`](name-the-extvoteinfo-notfromblock-bar.md) — ExtendedVoteInfo 从本进程抽出不是已经从块里抽出 not already from-block / not already pubkey / not already settled 正式三事（369 余量）（不变量 854）
 - [`name-the-snapident-notcomplete-bar.md`](name-the-snapident-notcomplete-bar.md) — 空快照也至少 1 块不是已经齐 not already complete / not already consensus-const / not already restored 正式三事（368 余量）（不变量 853）

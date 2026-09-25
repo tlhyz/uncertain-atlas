@@ -19,6 +19,7 @@
 
 - [extvoteinfo-notfromblock-sold-as-bundled](extvoteinfo-notfromblock-sold-as-bundled.md) 是 ExtendedVoteInfo 从本进程抽出不是已经从块里抽出 not already from-block / not already pubkey / not already settled not already from-block / not already pubkey / not already settled 正式三事（369 item 1），不是本页 bundled 全段 alone。
 - [extvoteinfo-notraw-sold-as-bundled](extvoteinfo-notraw-sold-as-bundled.md) 是 把验过的签交给应用不是已经按原样签 not already raw / not already protected / not already must-fill not already raw / not already protected / not already must-fill 正式三事（369 item 2），不是本页 bundled 全段 alone。
+- [extvoteinfo-notveheight-sold-as-bundled](extvoteinfo-notveheight-sold-as-bundled.md) 是 扩展关掉则字段全空不是已经到了启用高度 not already ve-height / not already settled / not already from-block not already ve-height / not already settled / not already from-block 正式三事（369 item 3），不是本页 bundled 全段 alone。
 - [voteinfo-sold-as-rewarded](voteinfo-sold-as-rewarded.md) 是从拟议块或已决块抽出就已经带了公钥，不是本页这种从本进程抽出不是已经从块里抽出。
 - [nonrp-sold-as-protected](nonrp-sold-as-protected.md) 是 vote_extension 会包进 CanonicalVoteExtension 就已经按原样签，不是本页这种把验过的签交给应用不是已经按原样签。
 - [veheight-sold-as-prepared](veheight-sold-as-prepared.md) 是到了 H 就已经 Prepare 带了扩展，不是本页这种扩展关掉则字段全空不是已经到了启用高度。
