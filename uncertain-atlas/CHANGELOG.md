@@ -1,3 +1,7 @@
+## 2026-09-25（续 975）
+
+- 不变量 858；语料 C835；模式 name-the-info-notapphash-bar；反模式 info-notapphash-sold-as-bundled；L10.3 第 827 条。填 L4.4 / CometBFT 档案 app_version 进每块头不是已经印进本头 AppHash not already apphash / not already settled / not already algo 正式三事（370 余量） / 实现表 / 05b / 共识专题 / 停链面地图。370 info-vs-handshake bundled unbundling 续（857+858 item 2）。
+
 ## 2026-09-25（续 974）
 
 - 不变量 857；语料 C834；模式 name-the-info-notstatesync-bar；反模式 info-notstatesync-sold-as-bundled；L10.3 第 826 条。填 L4.4 / CometBFT 档案 Info 用来握手对齐不是已经是快照重放 not already statesync / not already querystate / not already settled 正式三事（370 余量） / 实现表 / 05b / 共识专题 / 停链面地图。370 info-vs-handshake bundled unbundling 启动（857 item 1）。
