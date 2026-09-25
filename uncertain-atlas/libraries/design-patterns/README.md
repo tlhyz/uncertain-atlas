@@ -1,3 +1,4 @@
+- [`name-the-loadchunk-not4mb-bar.md`](name-the-loadchunk-not4mb-bar.md) — 回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB not already 4mb / not already constant / not already restored 正式三事（375 余量）（不变量 874）
 - [`name-the-loadchunk-notidentical-bar.md`](name-the-loadchunk-notidentical-bar.md) — 请求用 height / format / chunk（从 0 起）认这块不是已经是同一份 not already identical / not already complete / not already selected 正式三事（375 余量）（不变量 873）
 - [`name-the-loadchunk-notcomplete-bar.md`](name-the-loadchunk-notcomplete-bar.md) — LoadSnapshotChunk 用来从邻居拉快照块不是已经齐 not already complete / not already all / not already restored 正式三事（375 余量）（不变量 872）
 - [`name-the-flush-notproceed-bar.md`](name-the-flush-notproceed-bar.md) — 立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走 not already proceed / not already commit / not already unlocked 正式三事（374 余量）（不变量 871）

@@ -1,3 +1,4 @@
+- [`worked-example-loadchunk-not4mb-vs-bundled.md`](worked-example-loadchunk-not4mb-vs-bundled.md) — 有上限≠已是快照报文4MB/10MB≠已是共识常数/回了字节≠已装完；≠375 bundled（不变量 874）
 - [`worked-example-loadchunk-notidentical-vs-bundled.md`](worked-example-loadchunk-notidentical-vs-bundled.md) — 填了三列≠已是同一份/从0起≠已齐/有format≠已选型；≠375 bundled（不变量 873）
 - [`worked-example-loadchunk-notcomplete-vs-bundled.md`](worked-example-loadchunk-notcomplete-vs-bundled.md) — 在拉≠已齐/问了邻居≠已有全部快照/能拉≠已装完；≠375 bundled（不变量 872）
 - [`worked-example-flush-notproceed-vs-bundled.md`](worked-example-flush-notproceed-vs-bundled.md) — 立刻叫了≠已能往下走/回包回来≠已Commit/同步了≠已解锁；≠374 bundled（不变量 871）

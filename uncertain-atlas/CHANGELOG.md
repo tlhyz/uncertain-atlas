@@ -1,3 +1,7 @@
+## 2026-09-25（续 991）
+
+- 不变量 874；语料 C851；模式 name-the-loadchunk-not4mb-bar；反模式 loadchunk-not4mb-sold-as-bundled；L10.3 第 843 条。填 L4.4 / CometBFT 档案 回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB not already 4mb / not already constant / not already restored 正式三事（375 余量） / 实现表 / 05b / 共识专题 / 停链面地图。375 loadchunk-vs-retrieved bundled unbundling 完成（872+873+874 item 3）。
+
 ## 2026-09-25（续 990）
 
 - 不变量 873；语料 C850；模式 name-the-loadchunk-notidentical-bar；反模式 loadchunk-notidentical-sold-as-bundled；L10.3 第 842 条。填 L4.4 / CometBFT 档案 请求用 height / format / chunk（从 0 起）认这块不是已经是同一份 not already identical / not already complete / not already selected 正式三事（375 余量） / 实现表 / 05b / 共识专题 / 停链面地图。375 loadchunk-vs-retrieved bundled unbundling 续（872+873 item 2）。
