@@ -1,3 +1,4 @@
+- [`worked-example-proposalstatus-notsettled-vs-bundled.md`](worked-example-proposalstatus-notsettled-vs-bundled.md) — 回了ACCEPT≠已交差/会发Prevote≠已必须Accept/合法≠已过四门；≠376 bundled（不变量 876）
 - [`worked-example-proposalstatus-notfourgates-vs-bundled.md`](worked-example-proposalstatus-notfourgates-vs-bundled.md) — 回了UNKNOWN≠已是四门已结算/崩了≠已交差/有枚举≠已选型；≠376 bundled（不变量 875）
 - [`worked-example-loadchunk-not4mb-vs-bundled.md`](worked-example-loadchunk-not4mb-vs-bundled.md) — 有上限≠已是快照报文4MB/10MB≠已是共识常数/回了字节≠已装完；≠375 bundled（不变量 874）
 - [`worked-example-loadchunk-notidentical-vs-bundled.md`](worked-example-loadchunk-notidentical-vs-bundled.md) — 填了三列≠已是同一份/从0起≠已齐/有format≠已选型；≠375 bundled（不变量 873）

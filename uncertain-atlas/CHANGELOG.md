@@ -1,3 +1,7 @@
+## 2026-09-25（续 993）
+
+- 不变量 876；语料 C853；模式 name-the-proposalstatus-notsettled-bar；反模式 proposalstatus-notsettled-sold-as-bundled；L10.3 第 845 条。填 L4.4 / CometBFT 档案 ACCEPT 表示应用认为提案合法、共识会发 Prevote 不是已经交差 not already settled / not already mustaccept / not already fourgates 正式三事（376 余量） / 实现表 / 05b / 共识专题 / 停链面地图。376 proposalstatus-vs-prevote bundled unbundling 续（875+876 item 2）。
+
 ## 2026-09-25（续 992）
 
 - 不变量 875；语料 C852；模式 name-the-proposalstatus-notfourgates-bar；反模式 proposalstatus-notfourgates-sold-as-bundled；L10.3 第 844 条。填 L4.4 / CometBFT 档案 UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算 not already fourgates / not already settled / not already selected 正式三事（376 余量） / 实现表 / 05b / 共识专题 / 停链面地图。376 proposalstatus-vs-prevote bundled unbundling 启动（875 item 1）。

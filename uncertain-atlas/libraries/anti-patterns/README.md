@@ -1,3 +1,4 @@
+- [`proposalstatus-notsettled-sold-as-bundled.md`](proposalstatus-notsettled-sold-as-bundled.md) — 回了 ACCEPT 被写成已经交差 / 会发 Prevote 被写成已经必须 Accept / 合法被写成已经过了四门（不变量 876）
 - [`proposalstatus-notfourgates-sold-as-bundled.md`](proposalstatus-notfourgates-sold-as-bundled.md) — 回了 UNKNOWN 被写成已经是四门已经结算 / 崩了被写成已经交差 / 有枚举被写成已经选型（不变量 875）
 - [`loadchunk-not4mb-sold-as-bundled.md`](loadchunk-not4mb-sold-as-bundled.md) — 有上限被写成已经是快照报文 4 MB / 10 MB 被写成已经是共识常数 / 回了字节被写成已经装完（不变量 874）
 - [`loadchunk-notidentical-sold-as-bundled.md`](loadchunk-notidentical-sold-as-bundled.md) — 填了三列被写成已经是同一份 / 从 0 起被写成已经齐 / 有 format 被写成已经选型（不变量 873）
