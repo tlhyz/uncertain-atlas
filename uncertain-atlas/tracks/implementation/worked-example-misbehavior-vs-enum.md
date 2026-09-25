@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Data Types Misbehavior。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Misbehavior.type 只是过错枚举不是已经罚没 / height 是过错发生的高度、time 是那一高已提交块的时间不是已经验过这个时间 / total_voting_power 是那一高验证者集合的总权不是已经按到场定奖惩」，不是证据上链就已经罚没，也不是票上 Timestamp 就已经验过。不要另写怎样写 Misbehavior。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Misbehavior.type 只是过错枚举不是已经罚没 / height 是过错发生的高度、time 是那一高已提交块的时间不是已经验过这个时间 / total_voting_power 是那一高验证者集合的总权不是已经按到场定奖惩」，不是证据上链就已经罚没，也不是票上 Timestamp 就已经验过。不要另写怎样写 Misbehavior。372 misbehavior-vs-enum bundled unbundling 启动（863）；精读 [`worked-example-misbehavior-notslashed-vs-bundled.md`](worked-example-misbehavior-notslashed-vs-bundled.md)（不变量 863 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见有 Misbehavior 就已经罚没、已经验过时间、已经按到场定奖惩」，必须分开 Misbehavior.type 只是过错枚举是不是已经罚没、height 是过错发生的高度、time 是那一高已提交块的时间是不是已经验过这个时间、total_voting_power 是那一高验证者集合的总权是不是已经按到场定奖惩。可以跳过「看见有 Misbehavior 就已经罚没」。不要另写怎样写 Misbehavior。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见有 Misbehavior 就已经罚没、已经验过时间、已经按到场定奖惩」，必须分开 Misbehavior.type 只是过错枚举是不是已经罚没、height 是过错发生的高度、time 是那一高已提交块的时间是不是已经验过这个时间、total_voting_power 是那一高验证者集合的总权是不是已经按到场定奖惩。可以跳过「看见有 Misbehavior 就已经罚没」。不要另写怎样写 Misbehavior。372 misbehavior-vs-enum bundled unbundling 启动（863）。
 
 ## 本页不抄
 
