@@ -1,3 +1,4 @@
+- [`name-the-extvoteinfo-notfromblock-bar.md`](name-the-extvoteinfo-notfromblock-bar.md) — ExtendedVoteInfo 从本进程抽出不是已经从块里抽出 not already from-block / not already pubkey / not already settled 正式三事（369 余量）（不变量 854）
 - [`name-the-snapident-notcomplete-bar.md`](name-the-snapident-notcomplete-bar.md) — 空快照也至少 1 块不是已经齐 not already complete / not already consensus-const / not already restored 正式三事（368 余量）（不变量 853）
 - [`name-the-snapident-notapphash-bar.md`](name-the-snapident-notapphash-bar.md) — 引擎不解释 format / hash 不是已经轻验 AppHash not already apphash-light / not already algo / not already genesis-replay 正式三事（368 余量）（不变量 852）
 - [`name-the-snapident-notrestored-bar.md`](name-the-snapident-notrestored-bar.md) — 快照全字段含 Metadata 对上不是已经装完 not already restored / not already settled / not already complete 正式三事（368 余量）（不变量 851）
