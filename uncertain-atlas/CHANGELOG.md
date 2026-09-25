@@ -1,3 +1,7 @@
+## 2026-09-25（续 977）
+
+- 不变量 860；语料 C837；模式 name-the-queryheight-notquerystate-bar；反模式 queryheight-notquerystate-sold-as-bundled；L10.3 第 829 条。填 L4.4 / CometBFT 档案 Query 可以对当前或过去高度查不是已经是 QueryState not already querystate / not already replicated / not already settled 正式三事（371 余量） / 实现表 / 05b / 共识专题 / 停链面地图。371 queryheight-vs-committed bundled unbundling 启动（860 item 1）。
+
 ## 2026-09-25（续 976）
 
 - 不变量 859；语料 C836；模式 name-the-info-notpersist-bar；反模式 info-notpersist-sold-as-bundled；L10.3 第 828 条。填 L4.4 / CometBFT 档案 last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差 not already settled / not already crash-commit / not already pruning 正式三事（370 余量） / 实现表 / 05b / 共识专题 / 停链面地图。370 info-vs-handshake bundled unbundling 完成（857+858+859 item 3）。
