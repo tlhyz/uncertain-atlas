@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [checktxopt-notexcluded-sold-as-bundled](checktxopt-notexcluded-sold-as-bundled.md) 是 Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块 not already excluded / not already blocked / not already settled 正式三事（373 item 2），不是本页 bundled 全段 alone。
 - [checktxopt-notfourgates-sold-as-bundled](checktxopt-notfourgates-sold-as-bundled.md) 是 CheckTx 技术上可选、不参与处理块不是已经是四门已经结算 not already fourgates / not already settled / not already removed 正式三事（373 item 1），不是本页 bundled 全段 alone。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种 CheckTx 技术上可选、不参与处理块不是已经是四门已经结算。
 - [exectxresult-sold-as-consensus](exectxresult-sold-as-consensus.md) 是 Finalize 的 Code 非零就已经没进块，不是本页这种 Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块。

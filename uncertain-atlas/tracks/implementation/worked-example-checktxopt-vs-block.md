@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) CheckTx Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「CheckTx 技术上可选、不参与处理块不是已经是四门已经结算 / Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块 / 引擎对回包码不再赋予别的含义不是已经被引擎用了 Data」，不是 CheckTx 的 Data 就已经被引擎用了，也不是 Finalize 的 Code 非零就已经没进块。不要另写怎样写 CheckTx 可选。373 checktxopt-vs-block bundled unbundling 启动（866）；精读 [`worked-example-checktxopt-notfourgates-vs-bundled.md`](worked-example-checktxopt-notfourgates-vs-bundled.md)（不变量 866 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「CheckTx 技术上可选、不参与处理块不是已经是四门已经结算 / Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块 / 引擎对回包码不再赋予别的含义不是已经被引擎用了 Data」，不是 CheckTx 的 Data 就已经被引擎用了，也不是 Finalize 的 Code 非零就已经没进块。不要另写怎样写 CheckTx 可选。373 checktxopt-vs-block bundled unbundling 续（866+867）；精读 [`worked-example-checktxopt-notfourgates-vs-bundled.md`](worked-example-checktxopt-notfourgates-vs-bundled.md)（不变量 866 item 1）；精读 [`worked-example-checktxopt-notexcluded-vs-bundled.md`](worked-example-checktxopt-notexcluded-vs-bundled.md)（不变量 867 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能回 CheckTx 就已经是四门已经结算、已经没进块、已经被引擎用了 Data」，必须分开 CheckTx 技术上可选、不参与处理块是不是已经是四门已经结算、Code ≠ 0 会被拒、不会广播也不会进提案是不是已经没进块、引擎对回包码不再赋予别的含义是不是已经被引擎用了 Data。可以跳过「看见能回 CheckTx 就已经是四门已经结算」。不要另写怎样写 CheckTx 可选。373 checktxopt-vs-block bundled unbundling 启动（866）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能回 CheckTx 就已经是四门已经结算、已经没进块、已经被引擎用了 Data」，必须分开 CheckTx 技术上可选、不参与处理块是不是已经是四门已经结算、Code ≠ 0 会被拒、不会广播也不会进提案是不是已经没进块、引擎对回包码不再赋予别的含义是不是已经被引擎用了 Data。可以跳过「看见能回 CheckTx 就已经是四门已经结算」。不要另写怎样写 CheckTx 可选。373 checktxopt-vs-block bundled unbundling 续（866+867）。
 
 ## 本页不抄
 
