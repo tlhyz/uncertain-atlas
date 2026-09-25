@@ -1,3 +1,7 @@
+## 2026-09-25（续 985）
+
+- 不变量 868；语料 C845；模式 name-the-checktxopt-notused-bar；反模式 checktxopt-notused-sold-as-bundled；L10.3 第 837 条。填 L4.4 / CometBFT 档案 引擎对回包码不再赋予别的含义不是已经被引擎用了 Data not already used / not already consensus / not already fork 正式三事（373 余量） / 实现表 / 05b / 共识专题 / 停链面地图。373 checktxopt-vs-block bundled unbundling 完成（866+867+868 item 3）。
+
 ## 2026-09-25（续 984）
 
 - 不变量 867；语料 C844；模式 name-the-checktxopt-notexcluded-bar；反模式 checktxopt-notexcluded-sold-as-bundled；L10.3 第 836 条。填 L4.4 / CometBFT 档案 Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块 not already excluded / not already blocked / not already settled 正式三事（373 余量） / 实现表 / 05b / 共识专题 / 停链面地图。373 checktxopt-vs-block bundled unbundling 续（866+867 item 2）。
