@@ -1,3 +1,7 @@
+## 2026-09-25（续 972）
+
+- 不变量 855；语料 C832；模式 name-the-extvoteinfo-notraw-bar；反模式 extvoteinfo-notraw-sold-as-bundled；L10.3 第 824 条。填 L4.4 / CometBFT 档案 把验过的签交给应用不是已经按原样签 not already raw / not already protected / not already must-fill 正式三事（369 余量） / 实现表 / 05b / 共识专题 / 停链面地图。369 extvoteinfo-vs-local bundled unbundling 续（854+855 item 2）。
+
 ## 2026-09-25（续 971）
 
 - 不变量 854；语料 C831；模式 name-the-extvoteinfo-notfromblock-bar；反模式 extvoteinfo-notfromblock-sold-as-bundled；L10.3 第 823 条。填 L4.4 / CometBFT 档案 ExtendedVoteInfo 从本进程抽出不是已经从块里抽出 not already from-block / not already pubkey / not already settled 正式三事（369 余量） / 实现表 / 05b / 共识专题 / 停链面地图。369 extvoteinfo-vs-local bundled unbundling 启动（854 item 1）。
