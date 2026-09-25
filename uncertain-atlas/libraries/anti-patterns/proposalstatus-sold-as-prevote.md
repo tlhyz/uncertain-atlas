@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [proposalstatus-notlater-sold-as-bundled](proposalstatus-notlater-sold-as-bundled.md) 是 REJECT 表示应用认为提案非法、共识会发 Prevote nil 不是已经能稍后改裁决 not already later / not already outofblock / not already settled 正式三事（376 item 3），不是本页 bundled 全段 alone。
 - [proposalstatus-notsettled-sold-as-bundled](proposalstatus-notsettled-sold-as-bundled.md) 是 ACCEPT 表示应用认为提案合法、共识会发 Prevote 不是已经交差 not already settled / not already mustaccept / not already fourgates 正式三事（376 item 2），不是本页 bundled 全段 alone。
 - [proposalstatus-notfourgates-sold-as-bundled](proposalstatus-notfourgates-sold-as-bundled.md) 是 UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算 not already fourgates / not already settled / not already selected 正式三事（376 item 1），不是本页 bundled 全段 alone。
 - [checktx-sold-as-prepared](checktx-sold-as-prepared.md) 是四门已经结算，不是本页这种 UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算。
