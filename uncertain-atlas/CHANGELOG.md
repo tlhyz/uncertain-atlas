@@ -1,3 +1,7 @@
+## 2026-09-25（续 973）
+
+- 不变量 856；语料 C833；模式 name-the-extvoteinfo-notveheight-bar；反模式 extvoteinfo-notveheight-sold-as-bundled；L10.3 第 825 条。填 L4.4 / CometBFT 档案 扩展关掉则字段全空不是已经到了启用高度 not already ve-height / not already settled / not already from-block 正式三事（369 余量） / 实现表 / 05b / 共识专题 / 停链面地图。369 extvoteinfo-vs-local bundled unbundling 完成（854+855+856 item 3）。
+
 ## 2026-09-25（续 972）
 
 - 不变量 855；语料 C832；模式 name-the-extvoteinfo-notraw-bar；反模式 extvoteinfo-notraw-sold-as-bundled；L10.3 第 824 条。填 L4.4 / CometBFT 档案 把验过的签交给应用不是已经按原样签 not already raw / not already protected / not already must-fill 正式三事（369 余量） / 实现表 / 05b / 共识专题 / 停链面地图。369 extvoteinfo-vs-local bundled unbundling 续（854+855 item 2）。
