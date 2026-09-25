@@ -1,3 +1,4 @@
+- [`worked-example-checktxopt-notused-vs-bundled.md`](worked-example-checktxopt-notused-vs-bundled.md) — 有码≠已被引擎用了Data/码在≠已是共识顺序/拒了≠已分叉；≠373 bundled（不变量 868）
 - [`worked-example-checktxopt-notexcluded-vs-bundled.md`](worked-example-checktxopt-notexcluded-vs-bundled.md) — 拒了≠已没进块/没广播≠已挡住拜占庭/没进提案≠已交差；≠373 bundled（不变量 867）
 - [`worked-example-checktxopt-notfourgates-vs-bundled.md`](worked-example-checktxopt-notfourgates-vs-bundled.md) — 能回≠已是四门结算/可选≠已交差/没参与处理块≠已从池里删掉；≠373 bundled（不变量 866）
 - [`worked-example-misbehavior-notrewarded-vs-bundled.md`](worked-example-misbehavior-notrewarded-vs-bundled.md) — 有总权≠已按到场定奖惩/填了权≠已改集合/有集合≠已罚没；≠372 bundled（不变量 865）
