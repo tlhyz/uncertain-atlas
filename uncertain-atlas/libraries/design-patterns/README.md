@@ -1,3 +1,4 @@
+- [`name-the-flush-notfourgates-bar.md`](name-the-flush-notfourgates-bar.md) — 定期 Flush 是为了让异步请求真发出去不是已经是四门 not already fourgates / not already received / not already settled 正式三事（374 余量）（不变量 870）
 - [`name-the-flush-notsent-bar.md`](name-the-flush-notsent-bar.md) — Flush 要把客户端排队的消息冲到服务端不是已经送到 not already sent / not already queued / not already disconnected 正式三事（374 余量）（不变量 869）
 - [`name-the-checktxopt-notused-bar.md`](name-the-checktxopt-notused-bar.md) — 引擎对回包码不再赋予别的含义不是已经被引擎用了 Data not already used / not already consensus / not already fork 正式三事（373 余量）（不变量 868）
 - [`name-the-checktxopt-notexcluded-bar.md`](name-the-checktxopt-notexcluded-bar.md) — Code ≠ 0 会被拒、不会广播也不会进提案不是已经没进块 not already excluded / not already blocked / not already settled 正式三事（373 余量）（不变量 867）
