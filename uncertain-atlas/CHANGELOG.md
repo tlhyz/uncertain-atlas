@@ -1,3 +1,7 @@
+## 2026-09-25（续 982）
+
+- 不变量 865；语料 C842；模式 name-the-misbehavior-notrewarded-bar；反模式 misbehavior-notrewarded-sold-as-bundled；L10.3 第 834 条。填 L4.4 / CometBFT 档案 total_voting_power 是那一高验证者集合的总权不是已经按到场定奖惩 not already rewarded / not already setchanged / not already slashed 正式三事（372 余量） / 实现表 / 05b / 共识专题 / 停链面地图。372 misbehavior-vs-enum bundled unbundling 完成（863+864+865 item 3）。
+
 ## 2026-09-25（续 981）
 
 - 不变量 864；语料 C841；模式 name-the-misbehavior-notverified-bar；反模式 misbehavior-notverified-sold-as-bundled；L10.3 第 833 条。填 L4.4 / CometBFT 档案 height 是过错发生的高度、time 是那一高已提交块的时间不是已经验过这个时间 not already verified / not already settled / not already plus23 正式三事（372 余量） / 实现表 / 05b / 共识专题 / 停链面地图。372 misbehavior-vs-enum bundled unbundling 续（863+864 item 2）。
