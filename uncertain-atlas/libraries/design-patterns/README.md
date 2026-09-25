@@ -1,3 +1,4 @@
+- [`name-the-info-notapphash-bar.md`](name-the-info-notapphash-bar.md) — app_version 进每块头不是已经印进本头 AppHash not already apphash / not already settled / not already algo 正式三事（370 余量）（不变量 858）
 - [`name-the-info-notstatesync-bar.md`](name-the-info-notstatesync-bar.md) — Info 用来握手对齐不是已经是快照重放 not already statesync / not already querystate / not already settled 正式三事（370 余量）（不变量 857）
 - [`name-the-extvoteinfo-notveheight-bar.md`](name-the-extvoteinfo-notveheight-bar.md) — 扩展关掉则字段全空不是已经到了启用高度 not already ve-height / not already settled / not already from-block 正式三事（369 余量）（不变量 856）
 - [`name-the-extvoteinfo-notraw-bar.md`](name-the-extvoteinfo-notraw-bar.md) — 把验过的签交给应用不是已经按原样签 not already raw / not already protected / not already must-fill 正式三事（369 余量）（不变量 855）

@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Info Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Info 用来握手对齐不是已经是快照重放 / app_version 进每块头不是已经印进本头 AppHash / last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差」，不是 QueryState 就已经是 ExecuteTxState，也不是崩溃三步就已经 Commit。不要另写怎样写 Info 握手。370 info-vs-handshake bundled unbundling 启动（857）；精读 [`worked-example-info-notstatesync-vs-bundled.md`](worked-example-info-notstatesync-vs-bundled.md)（不变量 857 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Info 用来握手对齐不是已经是快照重放 / app_version 进每块头不是已经印进本头 AppHash / last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差」，不是 QueryState 就已经是 ExecuteTxState，也不是崩溃三步就已经 Commit。不要另写怎样写 Info 握手。370 info-vs-handshake bundled unbundling 续（857+858）；精读 [`worked-example-info-notstatesync-vs-bundled.md`](worked-example-info-notstatesync-vs-bundled.md)（不变量 857 item 1）；精读 [`worked-example-info-notapphash-vs-bundled.md`](worked-example-info-notapphash-vs-bundled.md)（不变量 858 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能回 Info 就已经是快照重放、已经印进本头 AppHash、已经交差」，必须分开 Info 用来握手对齐是不是已经是快照重放、app_version 进每块头是不是已经印进本头 AppHash、last_block_app_hash / last_block_height 要在 Commit 里落盘是不是已经交差。可以跳过「看见能回 Info 就已经是快照重放」。不要另写怎样写 Info 握手。370 info-vs-handshake bundled unbundling 启动（857）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能回 Info 就已经是快照重放、已经印进本头 AppHash、已经交差」，必须分开 Info 用来握手对齐是不是已经是快照重放、app_version 进每块头是不是已经印进本头 AppHash、last_block_app_hash / last_block_height 要在 Commit 里落盘是不是已经交差。可以跳过「看见能回 Info 就已经是快照重放」。不要另写怎样写 Info 握手。370 info-vs-handshake bundled unbundling 续（857+858）。
 
 ## 本页不抄
 
