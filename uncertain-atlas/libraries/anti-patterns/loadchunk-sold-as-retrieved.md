@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [loadchunk-not4mb-sold-as-bundled](loadchunk-not4mb-sold-as-bundled.md) 是回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB not already 4mb / not already constant / not already restored 正式三事（375 item 3），不是本页 bundled 全段 alone。
 - [loadchunk-notidentical-sold-as-bundled](loadchunk-notidentical-sold-as-bundled.md) 是请求用 height / format / chunk（从 0 起）认这块不是已经是同一份 not already identical / not already complete / not already selected 正式三事（375 item 2），不是本页 bundled 全段 alone。
 - [loadchunk-notcomplete-sold-as-bundled](loadchunk-notcomplete-sold-as-bundled.md) 是 LoadSnapshotChunk 用来从邻居拉快照块不是已经齐 not already complete / not already all / not already restored 正式三事（375 item 1），不是本页 bundled 全段 alone。
 - [snapshotdiscover-sold-as-listed](snapshotdiscover-sold-as-listed.md) 是 ListSnapshots 回了就已经齐，不是本页这种 LoadSnapshotChunk 用来从邻居拉快照块不是已经齐。
