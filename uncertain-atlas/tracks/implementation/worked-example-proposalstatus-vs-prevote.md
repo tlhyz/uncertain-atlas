@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Data Types ProposalStatus。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算 / ACCEPT 表示应用认为提案合法、共识会发 Prevote 不是已经交差 / REJECT 表示应用认为提案非法、共识会发 Prevote nil 不是已经能稍后改裁决」，不是四门已经结算，也不是正确提议者的准备提案必须被正确接收者 Accept。不要另写怎样写 ProposalStatus。376 proposalstatus-vs-prevote bundled unbundling 启动（875）；精读 [`worked-example-proposalstatus-notfourgates-vs-bundled.md`](worked-example-proposalstatus-notfourgates-vs-bundled.md)（不变量 875 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算 / ACCEPT 表示应用认为提案合法、共识会发 Prevote 不是已经交差 / REJECT 表示应用认为提案非法、共识会发 Prevote nil 不是已经能稍后改裁决」，不是四门已经结算，也不是正确提议者的准备提案必须被正确接收者 Accept。不要另写怎样写 ProposalStatus。376 proposalstatus-vs-prevote bundled unbundling 续（875+876）；精读 [`worked-example-proposalstatus-notfourgates-vs-bundled.md`](worked-example-proposalstatus-notfourgates-vs-bundled.md)（不变量 875 item 1）；精读 [`worked-example-proposalstatus-notsettled-vs-bundled.md`](worked-example-proposalstatus-notsettled-vs-bundled.md)（不变量 876 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 ProposalStatus 就已经是四门已经结算、已经交差、已经能稍后改裁决」，必须分开 UNKNOWN 一律是错、引擎当应用坏了会崩是不是已经是四门已经结算、ACCEPT 表示应用认为提案合法、共识会发 Prevote 是不是已经交差、REJECT 表示应用认为提案非法、共识会发 Prevote nil 是不是已经能稍后改裁决。可以跳过「看见回了 ProposalStatus 就已经是四门已经结算」。不要另写怎样写 ProposalStatus。376 proposalstatus-vs-prevote bundled unbundling 启动（875）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了 ProposalStatus 就已经是四门已经结算、已经交差、已经能稍后改裁决」，必须分开 UNKNOWN 一律是错、引擎当应用坏了会崩是不是已经是四门已经结算、ACCEPT 表示应用认为提案合法、共识会发 Prevote 是不是已经交差、REJECT 表示应用认为提案非法、共识会发 Prevote nil 是不是已经能稍后改裁决。可以跳过「看见回了 ProposalStatus 就已经是四门已经结算」。不要另写怎样写 ProposalStatus。376 proposalstatus-vs-prevote bundled unbundling 续（875+876）。
 
 ## 本页不抄
 

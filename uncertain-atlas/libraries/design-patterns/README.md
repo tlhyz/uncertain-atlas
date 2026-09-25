@@ -1,3 +1,4 @@
+- [`name-the-proposalstatus-notsettled-bar.md`](name-the-proposalstatus-notsettled-bar.md) — ACCEPT 表示应用认为提案合法、共识会发 Prevote 不是已经交差 not already settled / not already mustaccept / not already fourgates 正式三事（376 余量）（不变量 876）
 - [`name-the-proposalstatus-notfourgates-bar.md`](name-the-proposalstatus-notfourgates-bar.md) — UNKNOWN 一律是错、引擎当应用坏了会崩不是已经是四门已经结算 not already fourgates / not already settled / not already selected 正式三事（376 余量）（不变量 875）
 - [`name-the-loadchunk-not4mb-bar.md`](name-the-loadchunk-not4mb-bar.md) — 回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB not already 4mb / not already constant / not already restored 正式三事（375 余量）（不变量 874）
 - [`name-the-loadchunk-notidentical-bar.md`](name-the-loadchunk-notidentical-bar.md) — 请求用 height / format / chunk（从 0 起）认这块不是已经是同一份 not already identical / not already complete / not already selected 正式三事（375 余量）（不变量 873）
