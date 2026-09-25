@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) LoadSnapshotChunk Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「LoadSnapshotChunk 用来从邻居拉快照块不是已经齐 / 请求用 height / format / chunk（从 0 起）认这块不是已经是同一份 / 回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB」，不是 ListSnapshots 回了就已经齐，也不是快照全字段对上就已经装完。不要另写怎样写 LoadSnapshotChunk。375 loadchunk-vs-retrieved bundled unbundling 启动（872）；精读 [`worked-example-loadchunk-notcomplete-vs-bundled.md`](worked-example-loadchunk-notcomplete-vs-bundled.md)（不变量 872 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「LoadSnapshotChunk 用来从邻居拉快照块不是已经齐 / 请求用 height / format / chunk（从 0 起）认这块不是已经是同一份 / 回包块含元数据不能超过 16 MB 不是已经是快照报文 4 MB」，不是 ListSnapshots 回了就已经齐，也不是快照全字段对上就已经装完。不要另写怎样写 LoadSnapshotChunk。375 loadchunk-vs-retrieved bundled unbundling 续（872+873）；精读 [`worked-example-loadchunk-notcomplete-vs-bundled.md`](worked-example-loadchunk-notcomplete-vs-bundled.md)（不变量 872 item 1）；精读 [`worked-example-loadchunk-notidentical-vs-bundled.md`](worked-example-loadchunk-notidentical-vs-bundled.md)（不变量 873 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 LoadSnapshotChunk 就已经齐、已经是同一份、已经是快照报文 4 MB」，必须分开 LoadSnapshotChunk 用来从邻居拉快照块是不是已经齐、请求用 height / format / chunk（从 0 起）认这块是不是已经是同一份、回包块含元数据不能超过 16 MB 是不是已经是快照报文 4 MB。可以跳过「看见叫了 LoadSnapshotChunk 就已经齐」。不要另写怎样写 LoadSnapshotChunk。375 loadchunk-vs-retrieved bundled unbundling 启动（872）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 LoadSnapshotChunk 就已经齐、已经是同一份、已经是快照报文 4 MB」，必须分开 LoadSnapshotChunk 用来从邻居拉快照块是不是已经齐、请求用 height / format / chunk（从 0 起）认这块是不是已经是同一份、回包块含元数据不能超过 16 MB 是不是已经是快照报文 4 MB。可以跳过「看见叫了 LoadSnapshotChunk 就已经齐」。不要另写怎样写 LoadSnapshotChunk。375 loadchunk-vs-retrieved bundled unbundling 续（872+873）。
 
 ## 本页不抄
 

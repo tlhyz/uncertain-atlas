@@ -1,3 +1,7 @@
+## 2026-09-25（续 990）
+
+- 不变量 873；语料 C850；模式 name-the-loadchunk-notidentical-bar；反模式 loadchunk-notidentical-sold-as-bundled；L10.3 第 842 条。填 L4.4 / CometBFT 档案 请求用 height / format / chunk（从 0 起）认这块不是已经是同一份 not already identical / not already complete / not already selected 正式三事（375 余量） / 实现表 / 05b / 共识专题 / 停链面地图。375 loadchunk-vs-retrieved bundled unbundling 续（872+873 item 2）。
+
 ## 2026-09-25（续 989）
 
 - 不变量 872；语料 C849；模式 name-the-loadchunk-notcomplete-bar；反模式 loadchunk-notcomplete-sold-as-bundled；L10.3 第 841 条。填 L4.4 / CometBFT 档案 LoadSnapshotChunk 用来从邻居拉快照块不是已经齐 not already complete / not already all / not already restored 正式三事（375 余量） / 实现表 / 05b / 共识专题 / 停链面地图。375 loadchunk-vs-retrieved bundled unbundling 启动（872 item 1）。
