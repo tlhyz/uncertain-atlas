@@ -1,3 +1,7 @@
+## 2026-09-25（续 976）
+
+- 不变量 859；语料 C836；模式 name-the-info-notpersist-bar；反模式 info-notpersist-sold-as-bundled；L10.3 第 828 条。填 L4.4 / CometBFT 档案 last_block_app_hash / last_block_height 要在 Commit 里落盘不是已经交差 not already settled / not already crash-commit / not already pruning 正式三事（370 余量） / 实现表 / 05b / 共识专题 / 停链面地图。370 info-vs-handshake bundled unbundling 完成（857+858+859 item 3）。
+
 ## 2026-09-25（续 975）
 
 - 不变量 858；语料 C835；模式 name-the-info-notapphash-bar；反模式 info-notapphash-sold-as-bundled；L10.3 第 827 条。填 L4.4 / CometBFT 档案 app_version 进每块头不是已经印进本头 AppHash not already apphash / not already settled / not already algo 正式三事（370 余量） / 实现表 / 05b / 共识专题 / 停链面地图。370 info-vs-handshake bundled unbundling 续（857+858 item 2）。
