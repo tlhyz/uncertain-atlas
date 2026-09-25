@@ -1,3 +1,4 @@
+- [`flush-notproceed-sold-as-bundled.md`](flush-notproceed-sold-as-bundled.md) — 立刻叫了被写成已经能往下走 / 回包回来被写成已经 Commit / 同步了被写成已经解锁（不变量 871）
 - [`flush-notfourgates-sold-as-bundled.md`](flush-notfourgates-sold-as-bundled.md) — 定期在冲被写成已经是四门 / 发出去了被写成已经收到 / 异步被写成已经交差（不变量 870）
 - [`flush-notsent-sold-as-bundled.md`](flush-notsent-sold-as-bundled.md) — 叫了被写成已经送到 / 在冲被写成已经入队 / 排队了被写成已经断开（不变量 869）
 - [`checktxopt-notused-sold-as-bundled.md`](checktxopt-notused-sold-as-bundled.md) — 有码被写成已经被引擎用了 Data / 码在被写成已经是共识顺序 / 拒了被写成已经分叉（不变量 868）

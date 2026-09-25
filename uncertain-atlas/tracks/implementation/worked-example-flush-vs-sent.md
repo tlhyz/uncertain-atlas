@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Flush Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Flush 要把客户端排队的消息冲到服务端不是已经送到 / 定期 Flush 是为了让异步请求真发出去不是已经是四门 / 立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走」，不是 HasChannel 就已经入队，也不是一条连接就已经是四门。不要另写怎样写 Flush。374 flush-vs-sent bundled unbundling 续（869+870）；精读 [`worked-example-flush-notsent-vs-bundled.md`](worked-example-flush-notsent-vs-bundled.md)（不变量 869 item 1）；精读 [`worked-example-flush-notfourgates-vs-bundled.md`](worked-example-flush-notfourgates-vs-bundled.md)（不变量 870 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Flush 要把客户端排队的消息冲到服务端不是已经送到 / 定期 Flush 是为了让异步请求真发出去不是已经是四门 / 立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走」，不是 HasChannel 就已经入队，也不是一条连接就已经是四门。不要另写怎样写 Flush。374 flush-vs-sent bundled unbundling 完成（869+870+871）；精读 [`worked-example-flush-notsent-vs-bundled.md`](worked-example-flush-notsent-vs-bundled.md)（不变量 869 item 1）；精读 [`worked-example-flush-notfourgates-vs-bundled.md`](worked-example-flush-notfourgates-vs-bundled.md)（不变量 870 item 2）；精读 [`worked-example-flush-notproceed-vs-bundled.md`](worked-example-flush-notproceed-vs-bundled.md)（不变量 871 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 Flush 就已经送到、已经是四门、已经能往下走」，必须分开 Flush 要把客户端排队的消息冲到服务端是不是已经送到、定期 Flush 是为了让异步请求真发出去是不是已经是四门、立刻 Flush 是为了做成同步请求、回包回来才算这次同步是不是已经能往下走。可以跳过「看见叫了 Flush 就已经送到」。不要另写怎样写 Flush。374 flush-vs-sent bundled unbundling 续（869+870）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见叫了 Flush 就已经送到、已经是四门、已经能往下走」，必须分开 Flush 要把客户端排队的消息冲到服务端是不是已经送到、定期 Flush 是为了让异步请求真发出去是不是已经是四门、立刻 Flush 是为了做成同步请求、回包回来才算这次同步是不是已经能往下走。可以跳过「看见叫了 Flush 就已经送到」。不要另写怎样写 Flush。374 flush-vs-sent bundled unbundling 完成（869+870+871）。
 
 ## 本页不抄
 

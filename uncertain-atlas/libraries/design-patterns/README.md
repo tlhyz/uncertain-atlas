@@ -1,3 +1,4 @@
+- [`name-the-flush-notproceed-bar.md`](name-the-flush-notproceed-bar.md) — 立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走 not already proceed / not already commit / not already unlocked 正式三事（374 余量）（不变量 871）
 - [`name-the-flush-notfourgates-bar.md`](name-the-flush-notfourgates-bar.md) — 定期 Flush 是为了让异步请求真发出去不是已经是四门 not already fourgates / not already received / not already settled 正式三事（374 余量）（不变量 870）
 - [`name-the-flush-notsent-bar.md`](name-the-flush-notsent-bar.md) — Flush 要把客户端排队的消息冲到服务端不是已经送到 not already sent / not already queued / not already disconnected 正式三事（374 余量）（不变量 869）
 - [`name-the-checktxopt-notused-bar.md`](name-the-checktxopt-notused-bar.md) — 引擎对回包码不再赋予别的含义不是已经被引擎用了 Data not already used / not already consensus / not already fork 正式三事（373 余量）（不变量 868）

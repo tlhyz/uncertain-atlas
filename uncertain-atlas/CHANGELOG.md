@@ -1,3 +1,7 @@
+## 2026-09-25（续 988）
+
+- 不变量 871；语料 C848；模式 name-the-flush-notproceed-bar；反模式 flush-notproceed-sold-as-bundled；L10.3 第 840 条。填 L4.4 / CometBFT 档案 立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走 not already proceed / not already commit / not already unlocked 正式三事（374 余量） / 实现表 / 05b / 共识专题 / 停链面地图。374 flush-vs-sent bundled unbundling 完成（869+870+871 item 3）。
+
 ## 2026-09-25（续 987）
 
 - 不变量 870；语料 C847；模式 name-the-flush-notfourgates-bar；反模式 flush-notfourgates-sold-as-bundled；L10.3 第 839 条。填 L4.4 / CometBFT 档案 定期 Flush 是为了让异步请求真发出去不是已经是四门 not already fourgates / not already received / not already settled 正式三事（374 余量） / 实现表 / 05b / 共识专题 / 停链面地图。374 flush-vs-sent bundled unbundling 续（869+870 item 2）。
