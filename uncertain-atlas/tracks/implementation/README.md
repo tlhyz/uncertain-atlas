@@ -1,3 +1,4 @@
+- [`worked-example-checktxopt-notfourgates-vs-bundled.md`](worked-example-checktxopt-notfourgates-vs-bundled.md) — 能回≠已是四门结算/可选≠已交差/没参与处理块≠已从池里删掉；≠373 bundled（不变量 866）
 - [`worked-example-misbehavior-notrewarded-vs-bundled.md`](worked-example-misbehavior-notrewarded-vs-bundled.md) — 有总权≠已按到场定奖惩/填了权≠已改集合/有集合≠已罚没；≠372 bundled（不变量 865）
 - [`worked-example-misbehavior-notverified-vs-bundled.md`](worked-example-misbehavior-notverified-vs-bundled.md) — 有高度≠已验过票上时间/有时间≠已交差/对上高度≠已是本高+2/3；≠372 bundled（不变量 864）
 - [`worked-example-misbehavior-notslashed-vs-bundled.md`](worked-example-misbehavior-notslashed-vs-bundled.md) — 有类型≠已罚没/写成双签≠已交差/枚举在≠已定奖惩；≠372 bundled（不变量 863）
