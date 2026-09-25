@@ -1,3 +1,4 @@
+- [`worked-example-flush-notfourgates-vs-bundled.md`](worked-example-flush-notfourgates-vs-bundled.md) — 定期在冲≠已是四门/发出去了≠已收到/异步≠已交差；≠374 bundled（不变量 870）
 - [`worked-example-flush-notsent-vs-bundled.md`](worked-example-flush-notsent-vs-bundled.md) — 叫了≠已送到/在冲≠已入队/排队了≠已断开；≠374 bundled（不变量 869）
 - [`worked-example-checktxopt-notused-vs-bundled.md`](worked-example-checktxopt-notused-vs-bundled.md) — 有码≠已被引擎用了Data/码在≠已是共识顺序/拒了≠已分叉；≠373 bundled（不变量 868）
 - [`worked-example-checktxopt-notexcluded-vs-bundled.md`](worked-example-checktxopt-notexcluded-vs-bundled.md) — 拒了≠已没进块/没广播≠已挡住拜占庭/没进提案≠已交差；≠373 bundled（不变量 867）

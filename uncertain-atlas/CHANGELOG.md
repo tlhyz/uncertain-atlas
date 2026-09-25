@@ -1,3 +1,7 @@
+## 2026-09-25（续 987）
+
+- 不变量 870；语料 C847；模式 name-the-flush-notfourgates-bar；反模式 flush-notfourgates-sold-as-bundled；L10.3 第 839 条。填 L4.4 / CometBFT 档案 定期 Flush 是为了让异步请求真发出去不是已经是四门 not already fourgates / not already received / not already settled 正式三事（374 余量） / 实现表 / 05b / 共识专题 / 停链面地图。374 flush-vs-sent bundled unbundling 续（869+870 item 2）。
+
 ## 2026-09-25（续 986）
 
 - 不变量 869；语料 C846；模式 name-the-flush-notsent-bar；反模式 flush-notsent-sold-as-bundled；L10.3 第 838 条。填 L4.4 / CometBFT 档案 Flush 要把客户端排队的消息冲到服务端不是已经送到 not already sent / not already queued / not already disconnected 正式三事（374 余量） / 实现表 / 05b / 共识专题 / 停链面地图。374 flush-vs-sent bundled unbundling 启动（869 item 1）。
