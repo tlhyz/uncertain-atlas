@@ -1,3 +1,4 @@
+- [`worked-example-extvoteinfo-notfromblock-vs-bundled.md`](worked-example-extvoteinfo-notfromblock-vs-bundled.md) — Prepare里有这份≠已从块抽出/有validator≠已带公钥/能抽≠已交差；≠369 bundled（不变量 854）
 - [`worked-example-snapident-notcomplete-vs-bundled.md`](worked-example-snapident-notcomplete-vs-bundled.md) — 写成1≠已齐/有上限≠已是共识常数/能发≠已装完；≠368 bundled（不变量 853）
 - [`worked-example-snapident-notapphash-vs-bundled.md`](worked-example-snapident-notapphash-vs-bundled.md) — 有哈希≠已轻验AppHash/有format≠已选型/比过了≠已从创世重放；≠368 bundled（不变量 852）
 - [`worked-example-snapident-notrestored-vs-bundled.md`](worked-example-snapident-notrestored-vs-bundled.md) — 对上了≠已装完/能拉≠已交差/Metadata在≠已齐；≠368 bundled（不变量 851）

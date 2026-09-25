@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Data Types ExtendedVoteInfo。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「ExtendedVoteInfo 从本进程抽出不是已经从块里抽出 / 把验过的签交给应用不是已经按原样签 / 扩展关掉则字段全空不是已经到了启用高度」，不是 VoteInfo 从拟议块或已决块抽出就已经带了公钥，也不是 vote_extension 会包进 CanonicalVoteExtension 就已经按原样签。不要另写怎样写 ExtendedVoteInfo。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「ExtendedVoteInfo 从本进程抽出不是已经从块里抽出 / 把验过的签交给应用不是已经按原样签 / 扩展关掉则字段全空不是已经到了启用高度」，不是 VoteInfo 从拟议块或已决块抽出就已经带了公钥，也不是 vote_extension 会包进 CanonicalVoteExtension 就已经按原样签。不要另写怎样写 ExtendedVoteInfo。369 extvoteinfo-vs-local bundled unbundling 启动（854）；精读 [`worked-example-extvoteinfo-notfromblock-vs-bundled.md`](worked-example-extvoteinfo-notfromblock-vs-bundled.md)（不变量 854 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里有扩展就已经从块里抽出、已经按原样签、已经到了启用高度」，必须分开从本进程抽出是不是已经从块里抽出、把验过的签交给应用是不是已经按原样签、扩展关掉则字段全空是不是已经到了启用高度。可以跳过「看见 Prepare 里有扩展就已经从块里抽出」。不要另写怎样写 ExtendedVoteInfo。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Prepare 里有扩展就已经从块里抽出、已经按原样签、已经到了启用高度」，必须分开从本进程抽出是不是已经从块里抽出、把验过的签交给应用是不是已经按原样签、扩展关掉则字段全空是不是已经到了启用高度。可以跳过「看见 Prepare 里有扩展就已经从块里抽出」。不要另写怎样写 ExtendedVoteInfo。369 extvoteinfo-vs-local bundled unbundling 启动（854）。
 
 ## 本页不抄
 
