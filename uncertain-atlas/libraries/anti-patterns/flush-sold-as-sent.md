@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [flush-notproceed-sold-as-bundled](flush-notproceed-sold-as-bundled.md) 是立刻 Flush 是为了做成同步请求、回包回来才算这次同步不是已经能往下走 not already proceed / not already commit / not already unlocked 正式三事（374 item 3），不是本页 bundled 全段 alone。
 - [flush-notfourgates-sold-as-bundled](flush-notfourgates-sold-as-bundled.md) 是定期 Flush 是为了让异步请求真发出去不是已经是四门 not already fourgates / not already received / not already settled 正式三事（374 item 2），不是本页 bundled 全段 alone。
 - [flush-notsent-sold-as-bundled](flush-notsent-sold-as-bundled.md) 是 Flush 要把客户端排队的消息冲到服务端不是已经送到 not already sent / not already queued / not already disconnected 正式三事（374 item 1），不是本页 bundled 全段 alone。
 - [send-sold-as-enqueued](send-sold-as-enqueued.md) 是 HasChannel 就已经入队，不是本页这种 Flush 要把客户端排队的消息冲到服务端不是已经送到。
