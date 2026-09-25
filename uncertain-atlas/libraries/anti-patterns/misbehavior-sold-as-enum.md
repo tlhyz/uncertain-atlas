@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [misbehavior-notslashed-sold-as-bundled](misbehavior-notslashed-sold-as-bundled.md) 是 Misbehavior.type 只是过错枚举不是已经罚没 not already slashed / not already settled / not already rewarded 正式三事（372 item 1），不是本页 bundled 全段 alone。
 - [evidence-equals-slash](evidence-equals-slash.md) 是证据上链就已经罚没，不是本页这种 Misbehavior.type 只是过错枚举不是已经罚没。
 - [timestamp-sold-as-checked](timestamp-sold-as-checked.md) 是票上 Timestamp 就已经验过，不是本页这种 height 是过错发生的高度、time 是那一高已提交块的时间不是已经验过这个时间。
 - [voteinfo-sold-as-rewarded](voteinfo-sold-as-rewarded.md) 是 VoteInfo 能按到场定奖惩就已经罚没，不是本页这种 total_voting_power 是那一高验证者集合的总权不是已经按到场定奖惩。

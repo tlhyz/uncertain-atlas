@@ -1,3 +1,7 @@
+## 2026-09-25（续 980）
+
+- 不变量 863；语料 C840；模式 name-the-misbehavior-notslashed-bar；反模式 misbehavior-notslashed-sold-as-bundled；L10.3 第 832 条。填 L4.4 / CometBFT 档案 Misbehavior.type 只是过错枚举不是已经罚没 not already slashed / not already settled / not already rewarded 正式三事（372 余量） / 实现表 / 05b / 共识专题 / 停链面地图。372 misbehavior-vs-enum bundled unbundling 启动（863 item 1）。
+
 ## 2026-09-25（续 979）
 
 - 不变量 862；语料 C839；模式 name-the-queryheight-notapphash-bar；反模式 queryheight-notapphash-sold-as-bundled；L10.3 第 831 条。填 L4.4 / CometBFT 档案 这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态不是已经印进本头 AppHash not already apphash / not already proof / not already settled 正式三事（371 余量） / 实现表 / 05b / 共识专题 / 停链面地图。371 queryheight-vs-committed bundled unbundling 完成（860+861+862 item 3）。

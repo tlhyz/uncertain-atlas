@@ -1,3 +1,4 @@
+- [`name-the-misbehavior-notslashed-bar.md`](name-the-misbehavior-notslashed-bar.md) — Misbehavior.type 只是过错枚举不是已经罚没 not already slashed / not already settled / not already rewarded 正式三事（372 余量）（不变量 863）
 - [`name-the-queryheight-notapphash-bar.md`](name-the-queryheight-notapphash-bar.md) — 这个 height 是含 Merkle 根的那块、代表 Height-1 提交后的状态不是已经印进本头 AppHash not already apphash / not already proof / not already settled 正式三事（371 余量）（不变量 862）
 - [`name-the-queryheight-notfresh-bar.md`](name-the-queryheight-notfresh-bar.md) — height 默认 0 回最新已提交不是已经新鲜 not already fresh / not already caught-up / not already info-handshake 正式三事（371 余量）（不变量 861）
 - [`name-the-queryheight-notquerystate-bar.md`](name-the-queryheight-notquerystate-bar.md) — Query 可以对当前或过去高度查不是已经是 QueryState not already querystate / not already replicated / not already settled 正式三事（371 余量）（不变量 860）

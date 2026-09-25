@@ -1,3 +1,4 @@
+- [`misbehavior-notslashed-sold-as-bundled.md`](misbehavior-notslashed-sold-as-bundled.md) — 有类型被写成已经罚没 / 写成双签被写成已经交差 / 枚举在被写成已经定了奖惩（不变量 863）
 - [`queryheight-notapphash-sold-as-bundled.md`](queryheight-notapphash-sold-as-bundled.md) — 填了高度被写成已经印进本头 AppHash / 有根被写成已经对上 Proof / Height-1 被写成已经是本高度交差（不变量 862）
 - [`queryheight-notfresh-sold-as-bundled.md`](queryheight-notfresh-sold-as-bundled.md) — 没填被写成已经新鲜 / 回了最新已提交被写成已经跟上正在跑的块 / 默认 0 被写成已经是 Info 握手那两列（不变量 861）
 - [`queryheight-notquerystate-sold-as-bundled.md`](queryheight-notquerystate-sold-as-bundled.md) — 能查被写成已经是 QueryState / 填了高度被写成已经复制到各节点 / 能回被写成已经交差（不变量 860）
