@@ -1,3 +1,4 @@
+- [`name-the-checktxspace-notunset-bar.md`](name-the-checktxspace-notunset-bar.md) — CheckTx 的 lane_id 必须在 Info 回包车道范围内不是已经不设道 not already unset / not already priority / not already included 正式三事（381 余量）（不变量 892）
 - [`name-the-checktxspace-notsettled-bar.md`](name-the-checktxspace-notsettled-bar.md) — CheckTx 回包 events 是给索引用的类型键值不是已经交差 not already settled / not already excluded / not already ordered 正式三事（381 余量）（不变量 891）
 - [`name-the-checktxspace-notcode-bar.md`](name-the-checktxspace-notcode-bar.md) — CheckTx 回包 codespace 是码的命名空间不是已经是回包码 not already code / not already excluded / not already settled 正式三事（381 余量）（不变量 890）
 - [`name-the-queryindex-notmatched-bar.md`](name-the-queryindex-notmatched-bar.md) — Query 回包 value 是对上的那份数据的值不是已经对上 AppHash not already matched / not already replicated / not already settled 正式三事（380 余量）（不变量 889）

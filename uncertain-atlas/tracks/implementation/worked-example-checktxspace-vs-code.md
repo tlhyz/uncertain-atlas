@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) CheckTx Response。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「CheckTx 回包 codespace 是码的命名空间不是已经是回包码 / CheckTx 回包 events 是给索引用的类型键值不是已经交差 / CheckTx 的 lane_id 必须在 Info 回包车道范围内不是已经不设道」，不是引擎对回包码不再赋予别的含义就已经被引擎用了 Data，也不是没定义 lane_priorities 就已经排了优先。不要另写怎样写 CheckTx 回包。381 checktxspace-vs-code bundled unbundling 续（890+891）；精读 [`worked-example-checktxspace-notcode-vs-bundled.md`](worked-example-checktxspace-notcode-vs-bundled.md)（不变量 890 item 1）；精读 [`worked-example-checktxspace-notsettled-vs-bundled.md`](worked-example-checktxspace-notsettled-vs-bundled.md)（不变量 891 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5、mempool。本页是「CheckTx 回包 codespace 是码的命名空间不是已经是回包码 / CheckTx 回包 events 是给索引用的类型键值不是已经交差 / CheckTx 的 lane_id 必须在 Info 回包车道范围内不是已经不设道」，不是引擎对回包码不再赋予别的含义就已经被引擎用了 Data，也不是没定义 lane_priorities 就已经排了优先。不要另写怎样写 CheckTx 回包。381 checktxspace-vs-code bundled unbundling 完成（890+891+892）；精读 [`worked-example-checktxspace-notcode-vs-bundled.md`](worked-example-checktxspace-notcode-vs-bundled.md)（不变量 890 item 1）；精读 [`worked-example-checktxspace-notsettled-vs-bundled.md`](worked-example-checktxspace-notsettled-vs-bundled.md)（不变量 891 item 2）；精读 [`worked-example-checktxspace-notunset-vs-bundled.md`](worked-example-checktxspace-notunset-vs-bundled.md)（不变量 892 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CheckTx 回了码空间就已经是回包码、已经交差、已经不设道」，必须分开 CheckTx 回包 codespace 是码的命名空间是不是已经是回包码、CheckTx 回包 events 是给索引用的类型键值是不是已经交差、CheckTx 的 lane_id 必须在 Info 回包车道范围内是不是已经不设道。可以跳过「看见 CheckTx 回了码空间就已经是回包码」。不要另写怎样写 CheckTx 回包。381 checktxspace-vs-code bundled unbundling 续（890+891）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 CheckTx 回了码空间就已经是回包码、已经交差、已经不设道」，必须分开 CheckTx 回包 codespace 是码的命名空间是不是已经是回包码、CheckTx 回包 events 是给索引用的类型键值是不是已经交差、CheckTx 的 lane_id 必须在 Info 回包车道范围内是不是已经不设道。可以跳过「看见 CheckTx 回了码空间就已经是回包码」。不要另写怎样写 CheckTx 回包。381 checktxspace-vs-code bundled unbundling 完成（890+891+892）。
 
 ## 本页不抄
 

@@ -1,3 +1,4 @@
+- [`worked-example-checktxspace-notunset-vs-bundled.md`](worked-example-checktxspace-notunset-vs-bundled.md) — 填了道≠已不设道/在范围内≠已排了优先/能指道≠已进了块；≠381 bundled（不变量 892）
 - [`worked-example-checktxspace-notsettled-vs-bundled.md`](worked-example-checktxspace-notsettled-vs-bundled.md) — 回了事件≠已交差/能按账户查≠已没进块/有类型键值≠已是共识顺序；≠381 bundled（不变量 891）
 - [`worked-example-checktxspace-notcode-vs-bundled.md`](worked-example-checktxspace-notcode-vs-bundled.md) — 写了空间≠已是回包码/有命名空间≠已没进块/能回≠已交差；≠381 bundled（不变量 890）
 - [`worked-example-queryindex-notmatched-vs-bundled.md`](worked-example-queryindex-notmatched-vs-bundled.md) — 回了值≠已对上 AppHash/有字节≠已复制到各节点/能读≠已交差；≠380 bundled（不变量 889）
