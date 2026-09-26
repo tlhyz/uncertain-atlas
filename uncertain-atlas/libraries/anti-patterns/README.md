@@ -1,3 +1,4 @@
+- [`infover-nothandshake-sold-as-bundled.md`](infover-nothandshake-sold-as-bundled.md) — 写了 ABCI 版本被写成已经是握手对齐 / 显示成 X.X.x 被写成已经排了优先 / 有脚注被写成已经交差（不变量 886）
 - [`infover-notmatched-sold-as-bundled.md`](infover-notmatched-sold-as-bundled.md) — 填了两列被写成已经版本也对上 / 有块版本被写成已经有完整历史 / 有 P2P 版本被写成已经交差（不变量 885）
 - [`infover-notappversion-sold-as-bundled.md`](infover-notappversion-sold-as-bundled.md) — 填了 version 被写成已经是 app_version / 有软件版本被写成已经印进本头 AppHash / 能回被写成已经交差（不变量 884）
 - [`refetch-notproceed-sold-as-bundled.md`](refetch-notproceed-sold-as-bundled.md) — 拒了人被写成已经能接着装 / 丢掉排队被写成已经停 / 已装的还在被写成已经齐（不变量 883）
