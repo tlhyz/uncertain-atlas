@@ -1,3 +1,4 @@
+- [`worked-example-queryindex-notmatched-vs-bundled.md`](worked-example-queryindex-notmatched-vs-bundled.md) — 回了值≠已对上 AppHash/有字节≠已复制到各节点/能读≠已交差；≠380 bundled（不变量 889）
 - [`worked-example-queryindex-notheight-vs-bundled.md`](worked-example-queryindex-notheight-vs-bundled.md) — 回了键≠已是 Query 高度/有键≠已新鲜/能回≠已交差；≠380 bundled（不变量 888）
 - [`worked-example-queryindex-notstore-vs-bundled.md`](worked-example-queryindex-notstore-vs-bundled.md) — 有下标≠已是按键查/填了下标≠已对上 AppHash/有数≠已交差；≠380 bundled（不变量 887）
 - [`worked-example-infover-nothandshake-vs-bundled.md`](worked-example-infover-nothandshake-vs-bundled.md) — 写了 ABCI 版本≠已是握手对齐/显示成 X.X.x≠已排了优先/有脚注≠已交差；≠379 bundled（不变量 886）

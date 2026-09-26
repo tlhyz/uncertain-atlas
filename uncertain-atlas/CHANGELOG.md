@@ -1,3 +1,7 @@
+## 2026-09-26（续 1006）
+
+- 不变量 889；语料 C866；模式 name-the-queryindex-notmatched-bar；反模式 queryindex-notmatched-sold-as-bundled；L10.3 第 858 条。填 L4.4 / CometBFT 档案 Query 回包 value 是对上的那份数据的值不是已经对上 AppHash not already matched / not already replicated / not already settled 正式三事（380 余量） / 实现表 / 05b / 共识专题 / 停链面地图。380 queryindex-vs-store bundled unbundling 完成（887+888+889 item 3）。
+
 ## 2026-09-26（续 1005）
 
 - 不变量 888；语料 C865；模式 name-the-queryindex-notheight-bar；反模式 queryindex-notheight-sold-as-bundled；L10.3 第 857 条。填 L4.4 / CometBFT 档案 Query 回包 key 是对上的那份数据的键不是已经是 Query 高度 not already height / not already fresh / not already settled 正式三事（380 余量） / 实现表 / 05b / 共识专题 / 停链面地图。380 queryindex-vs-store bundled unbundling 续（887+888 item 2）。
