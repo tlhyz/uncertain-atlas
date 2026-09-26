@@ -1,3 +1,4 @@
+- [`checktxspace-notunset-sold-as-bundled.md`](checktxspace-notunset-sold-as-bundled.md) — 填了道被写成已经不设道 / 在范围内被写成已经排了优先 / 能指道被写成已经进了块（不变量 892）
 - [`checktxspace-notsettled-sold-as-bundled.md`](checktxspace-notsettled-sold-as-bundled.md) — 回了事件被写成已经交差 / 能按账户查被写成已经没进块 / 有类型键值被写成已经是共识顺序（不变量 891）
 - [`checktxspace-notcode-sold-as-bundled.md`](checktxspace-notcode-sold-as-bundled.md) — 写了空间被写成已经是回包码 / 有命名空间被写成已经没进块 / 能回被写成已经交差（不变量 890）
 - [`queryindex-notmatched-sold-as-bundled.md`](queryindex-notmatched-sold-as-bundled.md) — 回了值被写成已经对上 AppHash / 有字节被写成已经复制到各节点 / 能读被写成已经交差（不变量 889）
