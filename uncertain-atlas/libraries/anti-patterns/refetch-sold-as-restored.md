@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [refetch-notbanned-sold-as-bundled](refetch-notbanned-sold-as-bundled.md) 是应用可以再拉块或封邻居、引擎不自己做不是已经封了 not already banned / not already complete / not already settled 正式三事（378 item 1），不是本页 bundled 全段 alone。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下就已经装完，不是本页这种应用可以再拉块或封邻居、引擎不自己做不是已经封了。
 - [snapshotverify-sold-as-early](snapshotverify-sold-as-early.md) 是封禁邻居就已经没有快照 DoS，不是本页这种 refetch_chunks 不论 result 都再拉再装不是已经齐。
 - [loadchunk-sold-as-retrieved](loadchunk-sold-as-retrieved.md) 是 LoadSnapshotChunk 用来从邻居拉快照块就已经齐，不是本页这种 reject_senders 不论 Result 都拒这些人不是已经能接着装。
