@@ -1,3 +1,4 @@
+- [`querypath-notheight-sold-as-bundled.md`](querypath-notheight-sold-as-bundled.md) — 填了 data 被写成已经是 Query 高度 / 能代替 path 被写成已经新鲜 / 有字节被写成已经交差（不变量 878）
 - [`proposalstatus-notlater-sold-as-bundled.md`](proposalstatus-notlater-sold-as-bundled.md) — 回了 REJECT 被写成已经能稍后改裁决 / 发了 nil 被写成已经没进块 / 非法被写成已经交差（不变量 877）
 - [`proposalstatus-notsettled-sold-as-bundled.md`](proposalstatus-notsettled-sold-as-bundled.md) — 回了 ACCEPT 被写成已经交差 / 会发 Prevote 被写成已经必须 Accept / 合法被写成已经过了四门（不变量 876）
 - [`proposalstatus-notfourgates-sold-as-bundled.md`](proposalstatus-notfourgates-sold-as-bundled.md) — 回了 UNKNOWN 被写成已经是四门已经结算 / 崩了被写成已经交差 / 有枚举被写成已经选型（不变量 875）

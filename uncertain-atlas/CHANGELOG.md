@@ -1,3 +1,7 @@
+## 2026-09-26（续 995）
+
+- 不变量 878；语料 C855；模式 name-the-querypath-notheight-bar；反模式 querypath-notheight-sold-as-bundled；L10.3 第 847 条。填 L4.4 / CometBFT 档案 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度 not already height / not already fresh / not already settled 正式三事（377 余量） / 实现表 / 05b / 共识专题 / 停链面地图。377 querypath-vs-store bundled unbundling 启动（878 item 1）。
+
 ## 2026-09-25（续 994）
 
 - 不变量 877；语料 C854；模式 name-the-proposalstatus-notlater-bar；反模式 proposalstatus-notlater-sold-as-bundled；L10.3 第 846 条。填 L4.4 / CometBFT 档案 REJECT 表示应用认为提案非法、共识会发 Prevote nil 不是已经能稍后改裁决 not already later / not already outofblock / not already settled 正式三事（376 余量） / 实现表 / 05b / 共识专题 / 停链面地图。376 proposalstatus-vs-prevote bundled unbundling 完成（875+876+877 item 3）。
