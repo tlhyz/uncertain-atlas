@@ -1,3 +1,4 @@
+- [`name-the-refetch-notcomplete-bar.md`](name-the-refetch-notcomplete-bar.md) — refetch_chunks 不论 result 都再拉再装、按顺序不是已经齐 not already complete / not already settled / not already identical 正式三事（378 余量）（不变量 882）
 - [`name-the-refetch-notbanned-bar.md`](name-the-refetch-notbanned-bar.md) — 应用可以再拉块或封邻居、引擎不自己做不是已经封了 not already banned / not already complete / not already settled 正式三事（378 余量）（不变量 881）
 - [`name-the-querypath-notrequired-bar.md`](name-the-querypath-notrequired-bar.md) — 规范建议允许 /accounts / /votes 这类查询不是已经是正常运转必须有 not already required / not already replicated / not already fresh 正式三事（377 余量）（不变量 880）
 - [`name-the-querypath-notengine-bar.md`](name-the-querypath-notengine-bar.md) — path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用 not already engine / not already filter / not already settled 正式三事（377 余量）（不变量 879）

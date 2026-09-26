@@ -1,3 +1,4 @@
+- [`refetch-notcomplete-sold-as-bundled.md`](refetch-notcomplete-sold-as-bundled.md) — 列了块号被写成已经齐 / 再装被写成已经交差 / 按顺序被写成已经是同一份（不变量 882）
 - [`refetch-notbanned-sold-as-bundled.md`](refetch-notbanned-sold-as-bundled.md) — 能再拉被写成已经封了 / 能封被写成已经齐 / 有指令被写成已经交差（不变量 881）
 - [`querypath-notrequired-sold-as-bundled.md`](querypath-notrequired-sold-as-bundled.md) — 写了类型路径被写成已经是正常运转必须有 / 建议允许被写成已经复制到各节点 / 能查账户被写成已经新鲜（不变量 880）
 - [`querypath-notengine-sold-as-bundled.md`](querypath-notengine-sold-as-bundled.md) — 写了 /store 被写成已经是引擎在用 / 能带路径被写成已经是过滤 / 键在 data 被写成已经交差（不变量 879）
