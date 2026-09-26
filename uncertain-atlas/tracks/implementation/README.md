@@ -1,3 +1,4 @@
+- [`worked-example-refetch-notcomplete-vs-bundled.md`](worked-example-refetch-notcomplete-vs-bundled.md) — 列了块号≠已齐/再装≠已交差/按顺序≠已是同一份；≠378 bundled（不变量 882）
 - [`worked-example-refetch-notbanned-vs-bundled.md`](worked-example-refetch-notbanned-vs-bundled.md) — 能再拉≠已封了/能封≠已齐/有指令≠已交差；≠378 bundled（不变量 881）
 - [`worked-example-querypath-notrequired-vs-bundled.md`](worked-example-querypath-notrequired-vs-bundled.md) — 写了类型路径≠已是正常运转必须有/建议允许≠已复制到各节点/能查账户≠已新鲜；≠377 bundled（不变量 880）
 - [`worked-example-querypath-notengine-vs-bundled.md`](worked-example-querypath-notengine-vs-bundled.md) — 写了/store≠已是引擎在用/能带路径≠已是过滤/键在data≠已交差；≠377 bundled（不变量 879）

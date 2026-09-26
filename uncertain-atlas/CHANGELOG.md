@@ -1,3 +1,7 @@
+## 2026-09-26（续 999）
+
+- 不变量 882；语料 C859；模式 name-the-refetch-notcomplete-bar；反模式 refetch-notcomplete-sold-as-bundled；L10.3 第 851 条。填 L4.4 / CometBFT 档案 refetch_chunks 不论 result 都再拉再装、按顺序不是已经齐 not already complete / not already settled / not already identical 正式三事（378 余量） / 实现表 / 05b / 共识专题 / 停链面地图。378 refetch-vs-restored bundled unbundling 续（881+882 item 2）。
+
 ## 2026-09-26（续 998）
 
 - 不变量 881；语料 C858；模式 name-the-refetch-notbanned-bar；反模式 refetch-notbanned-sold-as-bundled；L10.3 第 850 条。填 L4.4 / CometBFT 档案 应用可以再拉块或封邻居、引擎不自己做不是已经封了 not already banned / not already complete / not already settled 正式三事（378 余量） / 实现表 / 05b / 共识专题 / 停链面地图。378 refetch-vs-restored bundled unbundling 启动（881 item 1）。
