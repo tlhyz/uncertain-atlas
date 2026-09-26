@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [queryindex-notstore-sold-as-bundled](queryindex-notstore-sold-as-bundled.md) 是 Query 回包 index 是树里这个键的下标不是已经是按键查 not already store / not already matched / not already settled 正式三事（380 item 1），不是本页 bundled 全段 alone。
 - [querypath-sold-as-store](querypath-sold-as-store.md) 是 path /store 就必须按键查就已经是引擎在用，不是本页这种 Query 回包 index 是树里这个键的下标不是已经是按键查。
 - [queryheight-sold-as-committed](queryheight-sold-as-committed.md) 是 Query 可以对当前或过去高度查就已经是 QueryState，不是本页这种 Query 回包 key 是对上的那份数据的键不是已经是 Query 高度。
 - [queryproof-sold-as-apphash](queryproof-sold-as-apphash.md) 是 Query 回了 Proof 就已经对上 AppHash，不是本页这种 Query 回包 value 是对上的那份数据的值不是已经对上 AppHash。

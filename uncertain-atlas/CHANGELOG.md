@@ -1,3 +1,7 @@
+## 2026-09-26（续 1004）
+
+- 不变量 887；语料 C864；模式 name-the-queryindex-notstore-bar；反模式 queryindex-notstore-sold-as-bundled；L10.3 第 856 条。填 L4.4 / CometBFT 档案 Query 回包 index 是树里这个键的下标不是已经是按键查 not already store / not already matched / not already settled 正式三事（380 余量） / 实现表 / 05b / 共识专题 / 停链面地图。380 queryindex-vs-store bundled unbundling 启动（887 item 1）。
+
 ## 2026-09-26（续 1003）
 
 - 不变量 886；语料 C863；模式 name-the-infover-nothandshake-bar；反模式 infover-nothandshake-sold-as-bundled；L10.3 第 855 条。填 L4.4 / CometBFT 档案 abci_version 是 ABCI 语义版本、按 X.X.x 显示不是已经是握手对齐 not already handshake / not already priority / not already settled 正式三事（379 余量） / 实现表 / 05b / 共识专题 / 停链面地图。379 infover-vs-appversion bundled unbundling 完成（884+885+886 item 3）。
