@@ -1,3 +1,4 @@
+- [`worked-example-queryindex-notstore-vs-bundled.md`](worked-example-queryindex-notstore-vs-bundled.md) — 有下标≠已是按键查/填了下标≠已对上 AppHash/有数≠已交差；≠380 bundled（不变量 887）
 - [`worked-example-infover-nothandshake-vs-bundled.md`](worked-example-infover-nothandshake-vs-bundled.md) — 写了 ABCI 版本≠已是握手对齐/显示成 X.X.x≠已排了优先/有脚注≠已交差；≠379 bundled（不变量 886）
 - [`worked-example-infover-notmatched-vs-bundled.md`](worked-example-infover-notmatched-vs-bundled.md) — 填了两列≠已版本也对上/有块版本≠已有完整历史/有 P2P 版本≠已交差；≠379 bundled（不变量 885）
 - [`worked-example-infover-notappversion-vs-bundled.md`](worked-example-infover-notappversion-vs-bundled.md) — 填了 version≠已是 app_version/有软件版本≠已印进本头 AppHash/能回≠已交差；≠379 bundled（不变量 884）
