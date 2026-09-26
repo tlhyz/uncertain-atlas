@@ -1,3 +1,4 @@
+- [`name-the-querypath-notrequired-bar.md`](name-the-querypath-notrequired-bar.md) — 规范建议允许 /accounts / /votes 这类查询不是已经是正常运转必须有 not already required / not already replicated / not already fresh 正式三事（377 余量）（不变量 880）
 - [`name-the-querypath-notengine-bar.md`](name-the-querypath-notengine-bar.md) — path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用 not already engine / not already filter / not already settled 正式三事（377 余量）（不变量 879）
 - [`name-the-querypath-notheight-bar.md`](name-the-querypath-notheight-bar.md) — data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度 not already height / not already fresh / not already settled 正式三事（377 余量）（不变量 878）
 - [`name-the-proposalstatus-notlater-bar.md`](name-the-proposalstatus-notlater-bar.md) — REJECT 表示应用认为提案非法、共识会发 Prevote nil 不是已经能稍后改裁决 not already later / not already outofblock / not already settled 正式三事（376 余量）（不变量 877）
