@@ -1,3 +1,4 @@
+- [`worked-example-refetch-notbanned-vs-bundled.md`](worked-example-refetch-notbanned-vs-bundled.md) — 能再拉≠已封了/能封≠已齐/有指令≠已交差；≠378 bundled（不变量 881）
 - [`worked-example-querypath-notrequired-vs-bundled.md`](worked-example-querypath-notrequired-vs-bundled.md) — 写了类型路径≠已是正常运转必须有/建议允许≠已复制到各节点/能查账户≠已新鲜；≠377 bundled（不变量 880）
 - [`worked-example-querypath-notengine-vs-bundled.md`](worked-example-querypath-notengine-vs-bundled.md) — 写了/store≠已是引擎在用/能带路径≠已是过滤/键在data≠已交差；≠377 bundled（不变量 879）
 - [`worked-example-querypath-notheight-vs-bundled.md`](worked-example-querypath-notheight-vs-bundled.md) — 填了data≠已是Query高度/能代替path≠已新鲜/有字节≠已交差；≠377 bundled（不变量 878）
