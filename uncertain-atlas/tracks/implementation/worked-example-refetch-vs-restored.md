@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) ApplySnapshotChunk Usage。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「应用可以再拉块或封邻居、引擎不自己做不是已经封了 / refetch_chunks 不论 result 都再拉再装、按顺序不是已经齐 / reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名不是已经能接着装」，不是 Offer 收下就已经装完，也不是封禁邻居就已经没有快照 DoS。不要另写怎样写 ApplySnapshotChunk。378 refetch-vs-restored bundled unbundling 续（881+882）；精读 [`worked-example-refetch-notbanned-vs-bundled.md`](worked-example-refetch-notbanned-vs-bundled.md)（不变量 881 item 1）；精读 [`worked-example-refetch-notcomplete-vs-bundled.md`](worked-example-refetch-notcomplete-vs-bundled.md)（不变量 882 item 2）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「应用可以再拉块或封邻居、引擎不自己做不是已经封了 / refetch_chunks 不论 result 都再拉再装、按顺序不是已经齐 / reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名不是已经能接着装」，不是 Offer 收下就已经装完，也不是封禁邻居就已经没有快照 DoS。不要另写怎样写 ApplySnapshotChunk。378 refetch-vs-restored bundled unbundling 完成（881+882+883）；精读 [`worked-example-refetch-notbanned-vs-bundled.md`](worked-example-refetch-notbanned-vs-bundled.md)（不变量 881 item 1）；精读 [`worked-example-refetch-notcomplete-vs-bundled.md`](worked-example-refetch-notcomplete-vs-bundled.md)（不变量 882 item 2）；精读 [`worked-example-refetch-notproceed-vs-bundled.md`](worked-example-refetch-notproceed-vs-bundled.md)（不变量 883 item 3）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了再拉就已经封了、已经齐、已经能接着装」，必须分开应用可以再拉块或封邻居、引擎不自己做是不是已经封了、refetch_chunks 不论 result 都再拉再装是不是已经齐、reject_senders 不论 Result 都拒这些人是不是已经能接着装。可以跳过「看见回了再拉就已经封了」。不要另写怎样写 ApplySnapshotChunk。378 refetch-vs-restored bundled unbundling 续（881+882）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见回了再拉就已经封了、已经齐、已经能接着装」，必须分开应用可以再拉块或封邻居、引擎不自己做是不是已经封了、refetch_chunks 不论 result 都再拉再装是不是已经齐、reject_senders 不论 Result 都拒这些人是不是已经能接着装。可以跳过「看见回了再拉就已经封了」。不要另写怎样写 ApplySnapshotChunk。378 refetch-vs-restored bundled unbundling 完成（881+882+883）。
 
 ## 本页不抄
 

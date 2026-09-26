@@ -1,3 +1,7 @@
+## 2026-09-26（续 1000）
+
+- 不变量 883；语料 C860；模式 name-the-refetch-notproceed-bar；反模式 refetch-notproceed-sold-as-bundled；L10.3 第 852 条。填 L4.4 / CometBFT 档案 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名不是已经能接着装 not already proceed / not already stopped / not already complete 正式三事（378 余量） / 实现表 / 05b / 共识专题 / 停链面地图。378 refetch-vs-restored bundled unbundling 完成（881+882+883 item 3）。
+
 ## 2026-09-26（续 999）
 
 - 不变量 882；语料 C859；模式 name-the-refetch-notcomplete-bar；反模式 refetch-notcomplete-sold-as-bundled；L10.3 第 851 条。填 L4.4 / CometBFT 档案 refetch_chunks 不论 result 都再拉再装、按顺序不是已经齐 not already complete / not already settled / not already identical 正式三事（378 余量） / 实现表 / 05b / 共识专题 / 停链面地图。378 refetch-vs-restored bundled unbundling 续（881+882 item 2）。
