@@ -1,3 +1,4 @@
+- [`worked-example-checktxspace-notcode-vs-bundled.md`](worked-example-checktxspace-notcode-vs-bundled.md) — 写了空间≠已是回包码/有命名空间≠已没进块/能回≠已交差；≠381 bundled（不变量 890）
 - [`worked-example-queryindex-notmatched-vs-bundled.md`](worked-example-queryindex-notmatched-vs-bundled.md) — 回了值≠已对上 AppHash/有字节≠已复制到各节点/能读≠已交差；≠380 bundled（不变量 889）
 - [`worked-example-queryindex-notheight-vs-bundled.md`](worked-example-queryindex-notheight-vs-bundled.md) — 回了键≠已是 Query 高度/有键≠已新鲜/能回≠已交差；≠380 bundled（不变量 888）
 - [`worked-example-queryindex-notstore-vs-bundled.md`](worked-example-queryindex-notstore-vs-bundled.md) — 有下标≠已是按键查/填了下标≠已对上 AppHash/有数≠已交差；≠380 bundled（不变量 887）
