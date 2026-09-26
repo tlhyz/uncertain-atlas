@@ -1,3 +1,7 @@
+## 2026-09-26（续 996）
+
+- 不变量 879；语料 C856；模式 name-the-querypath-notengine-bar；反模式 querypath-notengine-sold-as-bundled；L10.3 第 848 条。填 L4.4 / CometBFT 档案 path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用 not already engine / not already filter / not already settled 正式三事（377 余量） / 实现表 / 05b / 共识专题 / 停链面地图。377 querypath-vs-store bundled unbundling 续（878+879 item 2）。
+
 ## 2026-09-26（续 995）
 
 - 不变量 878；语料 C855；模式 name-the-querypath-notheight-bar；反模式 querypath-notheight-sold-as-bundled；L10.3 第 847 条。填 L4.4 / CometBFT 档案 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度 not already height / not already fresh / not already settled 正式三事（377 余量） / 实现表 / 05b / 共识专题 / 停链面地图。377 querypath-vs-store bundled unbundling 启动（878 item 1）。

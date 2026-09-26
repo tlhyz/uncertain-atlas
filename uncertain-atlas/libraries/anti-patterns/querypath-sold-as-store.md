@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [querypath-notengine-sold-as-bundled](querypath-notengine-sold-as-bundled.md) 是 path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用 not already engine / not already filter / not already settled 正式三事（377 item 2），不是本页 bundled 全段 alone。
 - [querypath-notheight-sold-as-bundled](querypath-notheight-sold-as-bundled.md) 是 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度 not already height / not already fresh / not already settled 正式三事（377 item 1），不是本页 bundled 全段 alone。
 - [queryheight-sold-as-committed](queryheight-sold-as-committed.md) 是 Query 可以对当前或过去高度查就已经是 QueryState，不是本页这种 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度。
 - [peerfilter-sold-as-connected](peerfilter-sold-as-connected.md) 是有 /store 路径就已经是引擎在用，不是本页这种 path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用。
