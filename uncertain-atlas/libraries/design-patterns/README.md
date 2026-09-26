@@ -1,3 +1,4 @@
+- [`name-the-syncingheight-nothistory-bar.md`](name-the-syncingheight-nothistory-bar.md) — syncing_to_height 同步或重放时是目标高、否则等于本高不是已经有完整历史 not already history / not already restored / not already settled 正式三事（382 余量）（不变量 893）
 - [`name-the-checktxspace-notunset-bar.md`](name-the-checktxspace-notunset-bar.md) — CheckTx 的 lane_id 必须在 Info 回包车道范围内不是已经不设道 not already unset / not already priority / not already included 正式三事（381 余量）（不变量 892）
 - [`name-the-checktxspace-notsettled-bar.md`](name-the-checktxspace-notsettled-bar.md) — CheckTx 回包 events 是给索引用的类型键值不是已经交差 not already settled / not already excluded / not already ordered 正式三事（381 余量）（不变量 891）
 - [`name-the-checktxspace-notcode-bar.md`](name-the-checktxspace-notcode-bar.md) — CheckTx 回包 codespace 是码的命名空间不是已经是回包码 not already code / not already excluded / not already settled 正式三事（381 余量）（不变量 890）
