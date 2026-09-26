@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [refetch-notproceed-sold-as-bundled](refetch-notproceed-sold-as-bundled.md) 是 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名不是已经能接着装 not already proceed / not already stopped / not already complete 正式三事（378 item 3），不是本页 bundled 全段 alone。
 - [refetch-notcomplete-sold-as-bundled](refetch-notcomplete-sold-as-bundled.md) 是 refetch_chunks 不论 result 都再拉再装、按顺序不是已经齐 not already complete / not already settled / not already identical 正式三事（378 item 2），不是本页 bundled 全段 alone。
 - [refetch-notbanned-sold-as-bundled](refetch-notbanned-sold-as-bundled.md) 是应用可以再拉块或封邻居、引擎不自己做不是已经封了 not already banned / not already complete / not already settled 正式三事（378 item 1），不是本页 bundled 全段 alone。
 - [snapshotrestore-sold-as-offered](snapshotrestore-sold-as-offered.md) 是 Offer 收下就已经装完，不是本页这种应用可以再拉块或封邻居、引擎不自己做不是已经封了。
