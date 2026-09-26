@@ -1,3 +1,4 @@
+- [`name-the-queryprove-notmatched-bar.md`](name-the-queryprove-notmatched-bar.md) — Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash not already matched / not already tree / not already settled 正式三事（383 余量）（不变量 896）
 - [`name-the-syncingheight-notmustdet-bar.md`](name-the-syncingheight-notmustdet-bar.md) — Finalize 回包 events 标成非确定不是已经必须确定 not already mustdet / not already settled / not already ordered 正式三事（382 余量）（不变量 895）
 - [`name-the-syncingheight-notempty-bar.md`](name-the-syncingheight-notempty-bar.md) — validator_updates 空则引擎保持当前集合不是已经没有集合 not already empty / not already changed / not already genesis 正式三事（382 余量）（不变量 894）
 - [`name-the-syncingheight-nothistory-bar.md`](name-the-syncingheight-nothistory-bar.md) — syncing_to_height 同步或重放时是目标高、否则等于本高不是已经有完整历史 not already history / not already restored / not already settled 正式三事（382 余量）（不变量 893）

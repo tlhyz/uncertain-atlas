@@ -1,3 +1,7 @@
+## 2026-09-26（续 1013）
+
+- 不变量 896；语料 C873；模式 name-the-queryprove-notmatched-bar；反模式 queryprove-notmatched-sold-as-bundled；L10.3 第 865 条。填 L4.4 / CometBFT 档案 Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash not already matched / not already tree / not already settled 正式三事（383 余量） / 实现表 / 05b / 共识专题 / 停链面地图。383 queryprove-vs-proof bundled unbundling 启动（896 item 1）。
+
 ## 2026-09-26（续 1012）
 
 - 不变量 895；语料 C872；模式 name-the-syncingheight-notmustdet-bar；反模式 syncingheight-notmustdet-sold-as-bundled；L10.3 第 864 条。填 L4.4 / CometBFT 档案 Finalize 回包 events 标成非确定不是已经必须确定 not already mustdet / not already settled / not already ordered 正式三事（382 余量） / 实现表 / 05b / 共识专题 / 停链面地图。382 syncingheight-vs-history bundled unbundling 完成（893+894+895 item 3）。
