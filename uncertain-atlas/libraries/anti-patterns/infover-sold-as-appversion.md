@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [infover-notmatched-sold-as-bundled](infover-notmatched-sold-as-bundled.md) 是 block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上 not already matched / not already history / not already settled 正式三事（379 item 2），不是本页 bundled 全段 alone。
 - [infover-notappversion-sold-as-bundled](infover-notappversion-sold-as-bundled.md) 是 Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version not already appversion / not already matched / not already settled 正式三事（379 item 1），不是本页 bundled 全段 alone。
 - [info-sold-as-handshake](info-sold-as-handshake.md) 是 Info 用来握手对齐就已经是快照重放，不是本页这种 Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version。
 - [snapshotswitch-sold-as-full-history](snapshotswitch-sold-as-full-history.md) 是 Info 的 AppHash 对上就已经是版本也对上，不是本页这种 block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上。
