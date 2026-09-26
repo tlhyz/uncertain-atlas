@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [queryprove-notmatched-sold-as-bundled](queryprove-notmatched-sold-as-bundled.md) 是 Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash not already matched / not already tree / not already settled 正式三事（383 item 1），不是本页 bundled 全段 alone。
 - [queryproof-sold-as-apphash](queryproof-sold-as-apphash.md) 是 Query 回了 Proof 就已经对上 AppHash，不是本页这种 Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash。
 - [queryindex-sold-as-store](queryindex-sold-as-store.md) 是 Query 回包 value 就已经对上 AppHash，不是本页这种 Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明不是已经是按键查。
 - [queryheight-sold-as-committed](queryheight-sold-as-committed.md) 是 Query 可以对当前或过去高度查就已经是 QueryState，不是本页这种 Query 回包 height 是数据来自哪一高不是已经是请求高度。
