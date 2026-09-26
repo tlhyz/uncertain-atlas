@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [checktxspace-notsettled-sold-as-bundled](checktxspace-notsettled-sold-as-bundled.md) 是 CheckTx 回包 events 是给索引用的类型键值不是已经交差 not already settled / not already excluded / not already ordered 正式三事（381 item 2），不是本页 bundled 全段 alone。
 - [checktxspace-notcode-sold-as-bundled](checktxspace-notcode-sold-as-bundled.md) 是 CheckTx 回包 codespace 是码的命名空间不是已经是回包码 not already code / not already excluded / not already settled 正式三事（381 item 1），不是本页 bundled 全段 alone。
 - [checktxopt-sold-as-block](checktxopt-sold-as-block.md) 是引擎对回包码不再赋予别的含义就已经被引擎用了 Data，不是本页这种 CheckTx 回包 codespace 是码的命名空间不是已经是回包码。
 - [exectxresult-sold-as-consensus](exectxresult-sold-as-consensus.md) 是结果列表就已经同一顺序，不是本页这种 CheckTx 回包 events 是给索引用的类型键值不是已经交差。

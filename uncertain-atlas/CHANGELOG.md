@@ -1,3 +1,7 @@
+## 2026-09-26（续 1008）
+
+- 不变量 891；语料 C868；模式 name-the-checktxspace-notsettled-bar；反模式 checktxspace-notsettled-sold-as-bundled；L10.3 第 860 条。填 L4.4 / CometBFT 档案 CheckTx 回包 events 是给索引用的类型键值不是已经交差 not already settled / not already excluded / not already ordered 正式三事（381 余量） / 实现表 / 05b / 共识专题 / 停链面地图。381 checktxspace-vs-code bundled unbundling 续（890+891 item 2）。
+
 ## 2026-09-26（续 1007）
 
 - 不变量 890；语料 C867；模式 name-the-checktxspace-notcode-bar；反模式 checktxspace-notcode-sold-as-bundled；L10.3 第 859 条。填 L4.4 / CometBFT 档案 CheckTx 回包 codespace 是码的命名空间不是已经是回包码 not already code / not already excluded / not already settled 正式三事（381 余量） / 实现表 / 05b / 共识专题 / 停链面地图。381 checktxspace-vs-code bundled unbundling 启动（890 item 1）。
