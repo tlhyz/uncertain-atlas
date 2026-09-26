@@ -1,3 +1,7 @@
+## 2026-09-26（续 1001）
+
+- 不变量 884；语料 C861；模式 name-the-infover-notappversion-bar；反模式 infover-notappversion-sold-as-bundled；L10.3 第 853 条。填 L4.4 / CometBFT 档案 Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version not already appversion / not already matched / not already settled 正式三事（379 余量） / 实现表 / 05b / 共识专题 / 停链面地图。379 infover-vs-appversion bundled unbundling 启动（884 item 1）。
+
 ## 2026-09-26（续 1000）
 
 - 不变量 883；语料 C860；模式 name-the-refetch-notproceed-bar；反模式 refetch-notproceed-sold-as-bundled；L10.3 第 852 条。填 L4.4 / CometBFT 档案 reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名不是已经能接着装 not already proceed / not already stopped / not already complete 正式三事（378 余量） / 实现表 / 05b / 共识专题 / 停链面地图。378 refetch-vs-restored bundled unbundling 完成（881+882+883 item 3）。

@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Info Request。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version / block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上 / abci_version 是 ABCI 语义版本、按 X.X.x 显示不是已经是握手对齐」，不是 Info 用来握手对齐就已经是快照重放，也不是 Info 的 AppHash 对上就已经是版本也对上。不要另写怎样写 Info 请求版本。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version / block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上 / abci_version 是 ABCI 语义版本、按 X.X.x 显示不是已经是握手对齐」，不是 Info 用来握手对齐就已经是快照重放，也不是 Info 的 AppHash 对上就已经是版本也对上。不要另写怎样写 Info 请求版本。379 infover-vs-appversion bundled unbundling 启动（884）；精读 [`worked-example-infover-notappversion-vs-bundled.md`](worked-example-infover-notappversion-vs-bundled.md)（不变量 884 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Info 请求带了版本就已经是 app_version、已经版本也对上、已经是握手对齐」，必须分开 Info 请求 version 是 CometBFT 软件语义版本是不是已经是 app_version、block_version / p2p_version 是引擎块版本和 P2P 版本是不是已经版本也对上、abci_version 是 ABCI 语义版本、按 X.X.x 显示是不是已经是握手对齐。可以跳过「看见 Info 请求带了版本就已经是 app_version」。不要另写怎样写 Info 请求版本。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见 Info 请求带了版本就已经是 app_version、已经版本也对上、已经是握手对齐」，必须分开 Info 请求 version 是 CometBFT 软件语义版本是不是已经是 app_version、block_version / p2p_version 是引擎块版本和 P2P 版本是不是已经版本也对上、abci_version 是 ABCI 语义版本、按 X.X.x 显示是不是已经是握手对齐。可以跳过「看见 Info 请求带了版本就已经是 app_version」。不要另写怎样写 Info 请求版本。379 infover-vs-appversion bundled unbundling 启动（884）。
 
 ## 本页不抄
 

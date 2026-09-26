@@ -1,3 +1,4 @@
+- [`infover-notappversion-sold-as-bundled.md`](infover-notappversion-sold-as-bundled.md) — 填了 version 被写成已经是 app_version / 有软件版本被写成已经印进本头 AppHash / 能回被写成已经交差（不变量 884）
 - [`refetch-notproceed-sold-as-bundled.md`](refetch-notproceed-sold-as-bundled.md) — 拒了人被写成已经能接着装 / 丢掉排队被写成已经停 / 已装的还在被写成已经齐（不变量 883）
 - [`refetch-notcomplete-sold-as-bundled.md`](refetch-notcomplete-sold-as-bundled.md) — 列了块号被写成已经齐 / 再装被写成已经交差 / 按顺序被写成已经是同一份（不变量 882）
 - [`refetch-notbanned-sold-as-bundled.md`](refetch-notbanned-sold-as-bundled.md) — 能再拉被写成已经封了 / 能封被写成已经齐 / 有指令被写成已经交差（不变量 881）
