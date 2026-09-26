@@ -1,3 +1,4 @@
+- [`queryprove-notkey-sold-as-bundled.md`](queryprove-notkey-sold-as-bundled.md) — 回了证明被写成已经是按键查 / 有序列化证明被写成已经对上 AppHash / 能回被写成已经交差（不变量 897）
 - [`queryprove-notmatched-sold-as-bundled.md`](queryprove-notmatched-sold-as-bundled.md) — 勾了 prove 被写成已经对上 AppHash / 能回证明被写成已经是一层树 / 请求了被写成已经交差（不变量 896）
 - [`syncingheight-notmustdet-sold-as-bundled.md`](syncingheight-notmustdet-sold-as-bundled.md) — 回了事件被写成已经必须确定 / 标成非确定被写成已经交差 / 能按类型键值索引被写成已经是结果列表同一顺序（不变量 895）
 - [`syncingheight-notempty-sold-as-bundled.md`](syncingheight-notempty-sold-as-bundled.md) — 空着被写成已经没有集合 / 没回人被写成已经改了集合 / 能空被写成已经是 InitChain 空名单（不变量 894）

@@ -1,3 +1,4 @@
+- [`worked-example-queryprove-notkey-vs-bundled.md`](worked-example-queryprove-notkey-vs-bundled.md) — 回了证明≠已是按键查/有序列化证明≠已对上 AppHash/能回≠已交差；≠383 bundled（不变量 897）
 - [`worked-example-queryprove-notmatched-vs-bundled.md`](worked-example-queryprove-notmatched-vs-bundled.md) — 勾了 prove≠已对上 AppHash/能回证明≠已是一层树/请求了≠已交差；≠383 bundled（不变量 896）
 - [`worked-example-syncingheight-notmustdet-vs-bundled.md`](worked-example-syncingheight-notmustdet-vs-bundled.md) — 回了事件≠已必须确定/标成非确定≠已交差/能按类型键值索引≠已是结果列表同一顺序；≠382 bundled（不变量 895）
 - [`worked-example-syncingheight-notempty-vs-bundled.md`](worked-example-syncingheight-notempty-vs-bundled.md) — 空着≠已没有集合/没回人≠已改了集合/能空≠已是 InitChain 空名单；≠382 bundled（不变量 894）

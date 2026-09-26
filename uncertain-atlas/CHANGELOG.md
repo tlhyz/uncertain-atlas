@@ -1,3 +1,7 @@
+## 2026-09-26（续 1014）
+
+- 不变量 897；语料 C874；模式 name-the-queryprove-notkey-bar；反模式 queryprove-notkey-sold-as-bundled；L10.3 第 866 条。填 L4.4 / CometBFT 档案 Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明不是已经是按键查 not already key / not already matched / not already settled 正式三事（383 余量） / 实现表 / 05b / 共识专题 / 停链面地图。383 queryprove-vs-proof bundled unbundling 续（896+897 item 2）。
+
 ## 2026-09-26（续 1013）
 
 - 不变量 896；语料 C873；模式 name-the-queryprove-notmatched-bar；反模式 queryprove-notmatched-sold-as-bundled；L10.3 第 865 条。填 L4.4 / CometBFT 档案 Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash not already matched / not already tree / not already settled 正式三事（383 余量） / 实现表 / 05b / 共识专题 / 停链面地图。383 queryprove-vs-proof bundled unbundling 启动（896 item 1）。

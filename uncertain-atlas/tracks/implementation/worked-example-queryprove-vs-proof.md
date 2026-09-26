@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Query Request / Query Response。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash / Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明不是已经是按键查 / Query 回包 height 是数据来自哪一高不是已经是请求高度」，不是 Query 回了 Proof 就已经对上 AppHash，也不是 Query 回包 value 就已经对上 AppHash。不要另写怎样写 Query 证明回包。383 queryprove-vs-proof bundled unbundling 启动（896）；精读 [`worked-example-queryprove-notmatched-vs-bundled.md`](worked-example-queryprove-notmatched-vs-bundled.md)（不变量 896 item 1）。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「Query 请求 prove 是能回就回默克尔证明不是已经对上 AppHash / Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明不是已经是按键查 / Query 回包 height 是数据来自哪一高不是已经是请求高度」，不是 Query 回了 Proof 就已经对上 AppHash，也不是 Query 回包 value 就已经对上 AppHash。不要另写怎样写 Query 证明回包。383 queryprove-vs-proof bundled unbundling 续（896+897）；精读 [`worked-example-queryprove-notmatched-vs-bundled.md`](worked-example-queryprove-notmatched-vs-bundled.md)（不变量 896 item 1）；精读 [`worked-example-queryprove-notkey-vs-bundled.md`](worked-example-queryprove-notkey-vs-bundled.md)（不变量 897 item 2）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见勾了 prove 就已经对上 AppHash、已经是按键查、已经是请求高度」，必须分开 Query 请求 prove 是能回就回默克尔证明是不是已经对上 AppHash、Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明是不是已经是按键查、Query 回包 height 是数据来自哪一高是不是已经是请求高度。可以跳过「看见勾了 prove 就已经对上 AppHash」。不要另写怎样写 Query 证明回包。383 queryprove-vs-proof bundled unbundling 启动（896）。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见勾了 prove 就已经对上 AppHash、已经是按键查、已经是请求高度」，必须分开 Query 请求 prove 是能回就回默克尔证明是不是已经对上 AppHash、Query 回包 proof_ops 是按请求回的、要对这一高 AppHash 验的序列化证明是不是已经是按键查、Query 回包 height 是数据来自哪一高是不是已经是请求高度。可以跳过「看见勾了 prove 就已经对上 AppHash」。不要另写怎样写 Query 证明回包。383 queryprove-vs-proof bundled unbundling 续（896+897）。
 
 ## 本页不抄
 
