@@ -1,3 +1,4 @@
+- [`worked-example-infover-notmatched-vs-bundled.md`](worked-example-infover-notmatched-vs-bundled.md) — 填了两列≠已版本也对上/有块版本≠已有完整历史/有 P2P 版本≠已交差；≠379 bundled（不变量 885）
 - [`worked-example-infover-notappversion-vs-bundled.md`](worked-example-infover-notappversion-vs-bundled.md) — 填了 version≠已是 app_version/有软件版本≠已印进本头 AppHash/能回≠已交差；≠379 bundled（不变量 884）
 - [`worked-example-refetch-notproceed-vs-bundled.md`](worked-example-refetch-notproceed-vs-bundled.md) — 拒了人≠已能接着装/丢掉排队≠已停/已装的还在≠已齐；≠378 bundled（不变量 883）
 - [`worked-example-refetch-notcomplete-vs-bundled.md`](worked-example-refetch-notcomplete-vs-bundled.md) — 列了块号≠已齐/再装≠已交差/按顺序≠已是同一份；≠378 bundled（不变量 882）

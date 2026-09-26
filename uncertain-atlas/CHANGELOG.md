@@ -1,3 +1,7 @@
+## 2026-09-26（续 1002）
+
+- 不变量 885；语料 C862；模式 name-the-infover-notmatched-bar；反模式 infover-notmatched-sold-as-bundled；L10.3 第 854 条。填 L4.4 / CometBFT 档案 block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上 not already matched / not already history / not already settled 正式三事（379 余量） / 实现表 / 05b / 共识专题 / 停链面地图。379 infover-vs-appversion bundled unbundling 续（884+885 item 2）。
+
 ## 2026-09-26（续 1001）
 
 - 不变量 884；语料 C861；模式 name-the-infover-notappversion-bar；反模式 infover-notappversion-sold-as-bundled；L10.3 第 853 条。填 L4.4 / CometBFT 档案 Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version not already appversion / not already matched / not already settled 正式三事（379 余量） / 实现表 / 05b / 共识专题 / 停链面地图。379 infover-vs-appversion bundled unbundling 启动（884 item 1）。
