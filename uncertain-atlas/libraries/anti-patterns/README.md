@@ -1,3 +1,4 @@
+- [`syncingheight-notmustdet-sold-as-bundled.md`](syncingheight-notmustdet-sold-as-bundled.md) — 回了事件被写成已经必须确定 / 标成非确定被写成已经交差 / 能按类型键值索引被写成已经是结果列表同一顺序（不变量 895）
 - [`syncingheight-notempty-sold-as-bundled.md`](syncingheight-notempty-sold-as-bundled.md) — 空着被写成已经没有集合 / 没回人被写成已经改了集合 / 能空被写成已经是 InitChain 空名单（不变量 894）
 - [`syncingheight-nothistory-sold-as-bundled.md`](syncingheight-nothistory-sold-as-bundled.md) — 填了目标被写成已经有完整历史 / 在同步被写成已经是快照重放 / 等于本高被写成已经交差（不变量 893）
 - [`checktxspace-notunset-sold-as-bundled.md`](checktxspace-notunset-sold-as-bundled.md) — 填了道被写成已经不设道 / 在范围内被写成已经排了优先 / 能指道被写成已经进了块（不变量 892）

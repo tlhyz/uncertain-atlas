@@ -1,3 +1,7 @@
+## 2026-09-26（续 1012）
+
+- 不变量 895；语料 C872；模式 name-the-syncingheight-notmustdet-bar；反模式 syncingheight-notmustdet-sold-as-bundled；L10.3 第 864 条。填 L4.4 / CometBFT 档案 Finalize 回包 events 标成非确定不是已经必须确定 not already mustdet / not already settled / not already ordered 正式三事（382 余量） / 实现表 / 05b / 共识专题 / 停链面地图。382 syncingheight-vs-history bundled unbundling 完成（893+894+895 item 3）。
+
 ## 2026-09-26（续 1011）
 
 - 不变量 894；语料 C871；模式 name-the-syncingheight-notempty-bar；反模式 syncingheight-notempty-sold-as-bundled；L10.3 第 863 条。填 L4.4 / CometBFT 档案 validator_updates 空则引擎保持当前集合不是已经没有集合 not already empty / not already changed / not already genesis 正式三事（382 余量） / 实现表 / 05b / 共识专题 / 停链面地图。382 syncingheight-vs-history bundled unbundling 续（893+894 item 2）。
