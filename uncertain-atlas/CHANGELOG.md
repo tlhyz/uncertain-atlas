@@ -1,3 +1,7 @@
+## 2026-09-26（续 997）
+
+- 不变量 880；语料 C857；模式 name-the-querypath-notrequired-bar；反模式 querypath-notrequired-sold-as-bundled；L10.3 第 849 条。填 L4.4 / CometBFT 档案 规范建议允许 /accounts / /votes 这类查询不是已经是正常运转必须有 not already required / not already replicated / not already fresh 正式三事（377 余量） / 实现表 / 05b / 共识专题 / 停链面地图。377 querypath-vs-store bundled unbundling 完成（878+879+880 item 3）。
+
 ## 2026-09-26（续 996）
 
 - 不变量 879；语料 C856；模式 name-the-querypath-notengine-bar；反模式 querypath-notengine-sold-as-bundled；L10.3 第 848 条。填 L4.4 / CometBFT 档案 path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用 not already engine / not already filter / not already settled 正式三事（377 余量） / 实现表 / 05b / 共识专题 / 停链面地图。377 querypath-vs-store bundled unbundling 续（878+879 item 2）。
