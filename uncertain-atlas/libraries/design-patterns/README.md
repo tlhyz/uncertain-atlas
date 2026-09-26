@@ -1,3 +1,4 @@
+- [`name-the-infover-nothandshake-bar.md`](name-the-infover-nothandshake-bar.md) — abci_version 是 ABCI 语义版本、按 X.X.x 显示不是已经是握手对齐 not already handshake / not already priority / not already settled 正式三事（379 余量）（不变量 886）
 - [`name-the-infover-notmatched-bar.md`](name-the-infover-notmatched-bar.md) — block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上 not already matched / not already history / not already settled 正式三事（379 余量）（不变量 885）
 - [`name-the-infover-notappversion-bar.md`](name-the-infover-notappversion-bar.md) — Info 请求 version 是 CometBFT 软件语义版本不是已经是 app_version not already appversion / not already matched / not already settled 正式三事（379 余量）（不变量 884）
 - [`name-the-refetch-notproceed-bar.md`](name-the-refetch-notproceed-bar.md) — reject_senders 不论 Result 都拒这些人、已装的不重拉除非点名不是已经能接着装 not already proceed / not already stopped / not already complete 正式三事（378 余量）（不变量 883）
