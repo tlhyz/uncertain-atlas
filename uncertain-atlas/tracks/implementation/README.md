@@ -1,3 +1,4 @@
+- [`worked-example-syncingheight-nothistory-vs-bundled.md`](worked-example-syncingheight-nothistory-vs-bundled.md) — 填了目标≠已有完整历史/在同步≠已是快照重放/等于本高≠已交差；≠382 bundled（不变量 893）
 - [`worked-example-checktxspace-notunset-vs-bundled.md`](worked-example-checktxspace-notunset-vs-bundled.md) — 填了道≠已不设道/在范围内≠已排了优先/能指道≠已进了块；≠381 bundled（不变量 892）
 - [`worked-example-checktxspace-notsettled-vs-bundled.md`](worked-example-checktxspace-notsettled-vs-bundled.md) — 回了事件≠已交差/能按账户查≠已没进块/有类型键值≠已是共识顺序；≠381 bundled（不变量 891）
 - [`worked-example-checktxspace-notcode-vs-bundled.md`](worked-example-checktxspace-notcode-vs-bundled.md) — 写了空间≠已是回包码/有命名空间≠已没进块/能回≠已交差；≠381 bundled（不变量 890）

@@ -1,3 +1,7 @@
+## 2026-09-26（续 1010）
+
+- 不变量 893；语料 C870；模式 name-the-syncingheight-nothistory-bar；反模式 syncingheight-nothistory-sold-as-bundled；L10.3 第 862 条。填 L4.4 / CometBFT 档案 syncing_to_height 同步或重放时是目标高、否则等于本高不是已经有完整历史 not already history / not already restored / not already settled 正式三事（382 余量） / 实现表 / 05b / 共识专题 / 停链面地图。382 syncingheight-vs-history bundled unbundling 启动（893 item 1）。
+
 ## 2026-09-26（续 1009）
 
 - 不变量 892；语料 C869；模式 name-the-checktxspace-notunset-bar；反模式 checktxspace-notunset-sold-as-bundled；L10.3 第 861 条。填 L4.4 / CometBFT 档案 CheckTx 的 lane_id 必须在 Info 回包车道范围内不是已经不设道 not already unset / not already priority / not already included 正式三事（381 余量） / 实现表 / 05b / 共识专题 / 停链面地图。381 checktxspace-vs-code bundled unbundling 完成（890+891+892 item 3）。
