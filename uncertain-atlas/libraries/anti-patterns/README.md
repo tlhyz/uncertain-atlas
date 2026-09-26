@@ -1,3 +1,4 @@
+- [`checktxspace-notcode-sold-as-bundled.md`](checktxspace-notcode-sold-as-bundled.md) — 写了空间被写成已经是回包码 / 有命名空间被写成已经没进块 / 能回被写成已经交差（不变量 890）
 - [`queryindex-notmatched-sold-as-bundled.md`](queryindex-notmatched-sold-as-bundled.md) — 回了值被写成已经对上 AppHash / 有字节被写成已经复制到各节点 / 能读被写成已经交差（不变量 889）
 - [`queryindex-notheight-sold-as-bundled.md`](queryindex-notheight-sold-as-bundled.md) — 回了键被写成已经是 Query 高度 / 有键被写成已经新鲜 / 能回被写成已经交差（不变量 888）
 - [`queryindex-notstore-sold-as-bundled.md`](queryindex-notstore-sold-as-bundled.md) — 有下标被写成已经是按键查 / 填了下标被写成已经对上 AppHash / 有数被写成已经交差（不变量 887）

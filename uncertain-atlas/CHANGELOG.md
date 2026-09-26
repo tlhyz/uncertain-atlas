@@ -1,3 +1,7 @@
+## 2026-09-26（续 1007）
+
+- 不变量 890；语料 C867；模式 name-the-checktxspace-notcode-bar；反模式 checktxspace-notcode-sold-as-bundled；L10.3 第 859 条。填 L4.4 / CometBFT 档案 CheckTx 回包 codespace 是码的命名空间不是已经是回包码 not already code / not already excluded / not already settled 正式三事（381 余量） / 实现表 / 05b / 共识专题 / 停链面地图。381 checktxspace-vs-code bundled unbundling 启动（890 item 1）。
+
 ## 2026-09-26（续 1006）
 
 - 不变量 889；语料 C866；模式 name-the-queryindex-notmatched-bar；反模式 queryindex-notmatched-sold-as-bundled；L10.3 第 858 条。填 L4.4 / CometBFT 档案 Query 回包 value 是对上的那份数据的值不是已经对上 AppHash not already matched / not already replicated / not already settled 正式三事（380 余量） / 实现表 / 05b / 共识专题 / 停链面地图。380 queryindex-vs-store bundled unbundling 完成（887+888+889 item 3）。

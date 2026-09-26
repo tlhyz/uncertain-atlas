@@ -1,3 +1,4 @@
+- [`name-the-checktxspace-notcode-bar.md`](name-the-checktxspace-notcode-bar.md) — CheckTx 回包 codespace 是码的命名空间不是已经是回包码 not already code / not already excluded / not already settled 正式三事（381 余量）（不变量 890）
 - [`name-the-queryindex-notmatched-bar.md`](name-the-queryindex-notmatched-bar.md) — Query 回包 value 是对上的那份数据的值不是已经对上 AppHash not already matched / not already replicated / not already settled 正式三事（380 余量）（不变量 889）
 - [`name-the-queryindex-notheight-bar.md`](name-the-queryindex-notheight-bar.md) — Query 回包 key 是对上的那份数据的键不是已经是 Query 高度 not already height / not already fresh / not already settled 正式三事（380 余量）（不变量 888）
 - [`name-the-queryindex-notstore-bar.md`](name-the-queryindex-notstore-bar.md) — Query 回包 index 是树里这个键的下标不是已经是按键查 not already store / not already matched / not already settled 正式三事（380 余量）（不变量 887）
