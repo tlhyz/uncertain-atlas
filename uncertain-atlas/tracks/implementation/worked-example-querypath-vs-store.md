@@ -4,7 +4,7 @@
 **分类**：事实（对象边界）+ 推断（产品）+ 建议（产品）。  
 **来源**：CometBFT 官方 [ABCI++ Methods](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_methods.md) Query Request。  
 **对应课文**：[L4.4](../../courses/level-04-bft/L04-M04-abci-and-wal.md)。  
-**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度 / path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用 / 规范建议允许 /accounts / /votes 这类查询不是已经是正常运转必须有」，不是 Query 高度就已经是 QueryState，也不是有 /store 路径就已经是引擎在用。不要另写怎样写 Query 路径。
+**不要写进**：Ethereum 行、L5.1、M5.4、L5.4、03 共识图谱、Bitcoin 行、L4.5。本页是「data 按 URI 查询分量解释、可以和 path 一起或代替 path 用不是已经是 Query 高度 / path 按 URI 路径解释、/store 必须按键查不是已经是引擎在用 / 规范建议允许 /accounts / /votes 这类查询不是已经是正常运转必须有」，不是 Query 高度就已经是 QueryState，也不是有 /store 路径就已经是引擎在用。不要另写怎样写 Query 路径。377 querypath-vs-store bundled unbundling 启动（878）；精读 [`worked-example-querypath-notheight-vs-bundled.md`](worked-example-querypath-notheight-vs-bundled.md)（不变量 878 item 1）。
 
 ## 官方三件事
 
@@ -35,7 +35,7 @@
 
 ## 产品
 
-**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能带 data / path 就已经是 Query 高度、已经是引擎在用、已经是正常运转必须有」，必须分开 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用是不是已经是 Query 高度、path 按 URI 路径解释、/store 必须按键查是不是已经是引擎在用、规范建议允许 /accounts / /votes 这类查询是不是已经是正常运转必须有。可以跳过「看见能带 data / path 就已经是 Query 高度」。不要另写怎样写 Query 路径。
+**建议（产品，不是事实）**：不确定第一条结算机如果给人看「看见能带 data / path 就已经是 Query 高度、已经是引擎在用、已经是正常运转必须有」，必须分开 data 按 URI 查询分量解释、可以和 path 一起或代替 path 用是不是已经是 Query 高度、path 按 URI 路径解释、/store 必须按键查是不是已经是引擎在用、规范建议允许 /accounts / /votes 这类查询是不是已经是正常运转必须有。可以跳过「看见能带 data / path 就已经是 Query 高度」。不要另写怎样写 Query 路径。377 querypath-vs-store bundled unbundling 启动（878）。
 
 ## 本页不抄
 
