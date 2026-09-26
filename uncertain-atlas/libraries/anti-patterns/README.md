@@ -1,3 +1,4 @@
+- [`queryindex-notheight-sold-as-bundled.md`](queryindex-notheight-sold-as-bundled.md) — 回了键被写成已经是 Query 高度 / 有键被写成已经新鲜 / 能回被写成已经交差（不变量 888）
 - [`queryindex-notstore-sold-as-bundled.md`](queryindex-notstore-sold-as-bundled.md) — 有下标被写成已经是按键查 / 填了下标被写成已经对上 AppHash / 有数被写成已经交差（不变量 887）
 - [`infover-nothandshake-sold-as-bundled.md`](infover-nothandshake-sold-as-bundled.md) — 写了 ABCI 版本被写成已经是握手对齐 / 显示成 X.X.x 被写成已经排了优先 / 有脚注被写成已经交差（不变量 886）
 - [`infover-notmatched-sold-as-bundled.md`](infover-notmatched-sold-as-bundled.md) — 填了两列被写成已经版本也对上 / 有块版本被写成已经有完整历史 / 有 P2P 版本被写成已经交差（不变量 885）

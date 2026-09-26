@@ -1,3 +1,4 @@
+- [`name-the-queryindex-notheight-bar.md`](name-the-queryindex-notheight-bar.md) — Query 回包 key 是对上的那份数据的键不是已经是 Query 高度 not already height / not already fresh / not already settled 正式三事（380 余量）（不变量 888）
 - [`name-the-queryindex-notstore-bar.md`](name-the-queryindex-notstore-bar.md) — Query 回包 index 是树里这个键的下标不是已经是按键查 not already store / not already matched / not already settled 正式三事（380 余量）（不变量 887）
 - [`name-the-infover-nothandshake-bar.md`](name-the-infover-nothandshake-bar.md) — abci_version 是 ABCI 语义版本、按 X.X.x 显示不是已经是握手对齐 not already handshake / not already priority / not already settled 正式三事（379 余量）（不变量 886）
 - [`name-the-infover-notmatched-bar.md`](name-the-infover-notmatched-bar.md) — block_version / p2p_version 是引擎块版本和 P2P 版本不是已经版本也对上 not already matched / not already history / not already settled 正式三事（379 余量）（不变量 885）
