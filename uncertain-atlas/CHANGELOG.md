@@ -1,3 +1,7 @@
+## 2026-09-26（续 1011）
+
+- 不变量 894；语料 C871；模式 name-the-syncingheight-notempty-bar；反模式 syncingheight-notempty-sold-as-bundled；L10.3 第 863 条。填 L4.4 / CometBFT 档案 validator_updates 空则引擎保持当前集合不是已经没有集合 not already empty / not already changed / not already genesis 正式三事（382 余量） / 实现表 / 05b / 共识专题 / 停链面地图。382 syncingheight-vs-history bundled unbundling 续（893+894 item 2）。
+
 ## 2026-09-26（续 1010）
 
 - 不变量 893；语料 C870；模式 name-the-syncingheight-nothistory-bar；反模式 syncingheight-nothistory-sold-as-bundled；L10.3 第 862 条。填 L4.4 / CometBFT 档案 syncing_to_height 同步或重放时是目标高、否则等于本高不是已经有完整历史 not already history / not already restored / not already settled 正式三事（382 余量） / 实现表 / 05b / 共识专题 / 停链面地图。382 syncingheight-vs-history bundled unbundling 启动（893 item 1）。

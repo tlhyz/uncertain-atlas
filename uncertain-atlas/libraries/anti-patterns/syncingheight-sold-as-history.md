@@ -17,6 +17,7 @@
 
 ## 和相邻反模式
 
+- [syncingheight-notempty-sold-as-bundled](syncingheight-notempty-sold-as-bundled.md) 是 validator_updates 空则引擎保持当前集合不是已经没有集合 not already empty / not already changed / not already genesis 正式三事（382 item 2），不是本页 bundled 全段 alone。
 - [syncingheight-nothistory-sold-as-bundled](syncingheight-nothistory-sold-as-bundled.md) 是 syncing_to_height 同步或重放时是目标高、否则等于本高不是已经有完整历史 not already history / not already restored / not already settled 正式三事（382 item 1），不是本页 bundled 全段 alone。
 - [snapshotswitch-sold-as-full-history](snapshotswitch-sold-as-full-history.md) 是切进共识就已经有从创世的完整历史，不是本页这种 syncing_to_height 同步或重放时是目标高、否则等于本高不是已经有完整历史。
 - [validatorupdate-sold-as-set](validatorupdate-sold-as-set.md) 是 InitChain 空名单就已经没有集合，不是本页这种 validator_updates 空则引擎保持当前集合不是已经没有集合。
